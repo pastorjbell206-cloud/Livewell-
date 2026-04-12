@@ -1,25 +1,33 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <title>Livewell by James Bell</title>
     <meta name="description" content="American Christianity has domesticated Jesus. This is an attempt to recover what we've lost. Writing, teaching, and resources by James Bell." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400;1,8..60,500;1,8..60,600;1,8..60,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      /* CSS overrides for sections where inline styles are not compiled correctly */
+      section[data-loc="client/src/pages/Home.tsx:522"] {
+        background: linear-gradient(135deg, #2D4A3E 0%, #1A2E22 100%) !important;
+        color: #F7F5F0 !important;
+      }
+      section[data-loc="client/src/pages/Home.tsx:522"] h2,
+      section[data-loc="client/src/pages/Home.tsx:522"] h3,
+      section[data-loc="client/src/pages/Home.tsx:522"] p {
+        color: #F7F5F0 !important;
+      }
+      section[data-loc="client/src/pages/Home.tsx:642"] {
+        background: #F0EDE6 !important;
+        color: #1C1510 !important;
+      }
+    </style>
   </head>
-
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+    <script defer src="%VITE_ANALYTICS_ENDPOINT%/umami" data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
   </body>
-
 </html>
