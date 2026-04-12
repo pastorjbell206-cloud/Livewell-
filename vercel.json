@@ -1,6 +1,7 @@
 {
   "buildCommand": "pnpm run build",
   "outputDirectory": "dist/public",
+  "installCommand": "pnpm install",
   "rewrites": [
     {
       "source": "/((?!assets/).*)",
