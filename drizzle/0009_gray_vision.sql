@@ -1,0 +1,1 @@
+ALTER TABLE `posts` ADD `contentType` enum('pastoral','general') DEFAULT 'general' NOT NULL;

@@ -1,0 +1,1 @@
+ALTER TABLE `posts` ADD `audience_type` varchar(64) DEFAULT 'general' NOT NULL;

@@ -1,0 +1,15 @@
+# Robots.txt for Livewell by James Bell
+# Allow all search engines to crawl and index the site
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api
+Disallow: /.env
+Disallow: /node_modules
+
+# Sitemap
+Sitemap: https://thelivewell.manus.space/sitemap.xml
+
+# Crawl delay (optional - adjust based on server capacity)
+Crawl-delay: 1
