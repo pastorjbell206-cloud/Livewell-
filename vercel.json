@@ -1,7 +1,7 @@
 {
-  "buildCommand": "pnpm run build",
+  "buildCommand": "rm -rf node_modules/.vite .vite dist && pnpm run build",
   "outputDirectory": "dist/public",
-  "installCommand": "pnpm install",
+  "installCommand": "pnpm install --force",
   "rewrites": [
     {
       "source": "/((?!assets/).*)",
