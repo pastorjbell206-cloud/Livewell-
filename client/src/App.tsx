@@ -43,6 +43,10 @@ import Pillars from "./pages/Pillars";
 import ForPastors from "./pages/ForPastors";
 import ForLeaders from "./pages/ForLeaders";
 import Membership from "./pages/Membership";
+import Marriage from "./pages/Marriage";
+import Parenting from "./pages/Parenting";
+import Doubt from "./pages/Doubt";
+import StartHereQuiz from "./pages/StartHereQuiz";
 
 // /articles redirects to /writing for backwards compatibility
 function ArticlesRedirect() {
@@ -51,10 +55,22 @@ function ArticlesRedirect() {
   return null;
 }
 
+// /for-families redirects to /parenting
+function ForFamiliesRedirect() {
+  const [, navigate] = useLocation();
+  useEffect(() => { navigate("/parenting", { replace: true }); }, [navigate]);
+  return null;
+}
+
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/marriage" component={Marriage} />
+      <Route path="/parenting" component={Parenting} />
+      <Route path="/doubt" component={Doubt} />
+      <Route path="/start" component={StartHereQuiz} />
+      <Route path="/for-families" component={ForFamiliesRedirect} />
       <Route path="/pillars" component={Pillars} />
       <Route path="/for-pastors" component={ForPastors} />
       <Route path="/for-leaders" component={ForLeaders} />
