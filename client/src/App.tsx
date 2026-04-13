@@ -1,12 +1,12 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import { Route, Switch, useLocation } from "wouter";
+import { useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { ToastProvider } from "./contexts/ToastContext";
 import { ToastContainer } from "./components/ToastContainer";
-
 import Home from "./pages/Home";
 import Writing from "./pages/Writing";
 import Resources from "./pages/Resources";
@@ -44,6 +44,13 @@ import ForPastors from "./pages/ForPastors";
 import ForLeaders from "./pages/ForLeaders";
 import Membership from "./pages/Membership";
 
+// /articles redirects to /writing for backwards compatibility
+function ArticlesRedirect() {
+  const [, navigate] = useLocation();
+  useEffect(() => { navigate("/writing", { replace: true }); }, [navigate]);
+  return null;
+}
+
 function Router() {
   return (
     <Switch>
@@ -54,6 +61,7 @@ function Router() {
       <Route path="/membership" component={Membership} />
       <Route path="/writing" component={Writing} />
       <Route path="/writing/:slug" component={ArticleDetail} />
+      <Route path="/articles" component={ArticlesRedirect} />
       <Route path="/reading-paths" component={ReadingPaths} />
       <Route path="/reading-paths/:slug" component={ReadingPathDetail} />
       <Route path="/authors/:slug" component={AuthorProfile} />
@@ -71,8 +79,6 @@ function Router() {
       <Route path="/search" component={SearchPage} />
       <Route path="/quiz" component={TheologyQuiz} />
       <Route path="/resources-for-pastors" component={ResourcesForPastors} />
-      
-      {/* Admin Routes */}
       <Route path="/admin" component={AdminDashboard} />
       <Route path="/admin/posts" component={AdminPosts} />
       <Route path="/admin/posts/new" component={AdminPostEditor} />
@@ -88,7 +94,6 @@ function Router() {
       <Route path="/admin/sync" component={AdminContentSync} />
       <Route path="/admin/moderation" component={ModerationAdmin} />
       <Route path="/admin/notifications" component={NotificationsAdmin} />
-      
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
