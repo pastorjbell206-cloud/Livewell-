@@ -13,3 +13,5 @@ Sitemap: https://livewellbyjamesbell.com/sitemap.xml
 
 # Crawl delay (optional - adjust based on server capacity)
 Crawl-delay: 1
+
+# Cache bust: 2026-04-13T17:16:56.815Z
