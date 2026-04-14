@@ -128,7 +128,7 @@ async function adminSeedArticles(req: VercelRequest, res: VercelResponse) {
     { slug: "god-bless-america-replaces-thy-kingdom-come", title: "When God Bless America Replaces Thy Kingdom Come", subtitle: "How patriotism became our practical savior", excerpt: "Civil religion is idolatry with a flag for a shroud. America is not Israel. The new covenant is made with people through Christ's blood, not with nations.", topic: "prophetic", pillar: "Prophetic Justice", word_count: 3100 },
     { slug: "the-generational-cost", title: "The Generational Cost", subtitle: "When hypocrisy makes the gospel unbelievable", excerpt: "Our children do not leave the faith because they have heard too little. They leave because they have seen too much.", topic: "leadership", pillar: "Leadership Formation", word_count: 2800 },
     { slug: "hustle-culture-is-idolatry", title: "Hustle Culture Is Idolatry", subtitle: "The Protestant work ethic never meant this", excerpt: "We baptized exhaustion. We called overwork faithful. We dressed burnout in vocational language and handed it to pastors with a smile.", topic: "integrated-life", pillar: "Integrated Life", word_count: 2200 },
-    { slug: "zanah-when-you-keep-the-vows", title: "Zanah: When You Keep the Vows and Give Away the Heart", subtitle: "On fidelity, resentment, and the slow drift", excerpt: "The Hebrew prophets used one word for a particular kind of unfaithfulness — the kind that keeps the address and gives the rest away.", topic: "marriage", pillar: "Integrated Life", word_count: 2600 },
+    { slug: "zanah-when-you-keep-the-vows", title: "Zanah: When You Keep the Vows and Give Away the Heart", subtitle: "On fidelity, resentment, and the slow drift", excerpt: "The Hebrew prophets used one word for a particular kind of unfaithfulness â the kind that keeps the address and gives the rest away.", topic: "marriage", pillar: "Integrated Life", word_count: 2600 },
     { slug: "why-we-need-each-other", title: "Why We Need Each Other", subtitle: "Pastor loneliness is a crisis. Brotherhood is the answer.", excerpt: "Pastors are dying in isolation and nobody is saying it loud enough. The network exists because the crisis is real.", topic: "pcn", pillar: "Leadership Formation", word_count: 2100 },
     { slug: "germanys-warning", title: "Germany's Warning", subtitle: "Baptized nationalism and moral catastrophe", excerpt: "They sang hymns on Sunday. They saluted on Monday. They did not see the contradiction until it was too late. We are not smarter than they were.", topic: "prophetic", pillar: "Prophetic Disruption", word_count: 2900 },
     { slug: "the-mirror-doesnt-lie", title: "The Mirror Doesn't Lie", subtitle: "But we keep trying to bribe it", excerpt: "The problem is not that we cannot see ourselves. The problem is that we have edited the reflection so long we no longer recognize the cost.", topic: "theological", pillar: "Theological Depth", word_count: 2500 },
@@ -281,22 +281,183 @@ async function sitemap(_req: VercelRequest, res: VercelResponse) {
   } catch (e: any) { json(res, 500, { ok: false, error: String(e?.message || e) }); }
 }
 
+// ---------- tRPC-compatible layer ----------
+// The existing client uses @trpc/client httpBatchLink with superjson.
+// We only need to shape responses so it reads data.json â no transformer needed on read.
+// Response shape for a single-procedure batch: [{ result: { data: { json: <payload> } } }]
+
+function readTime(words: number | null | undefined): number {
+  const w = Number(words || 2000);
+  return Math.max(3, Math.round(w / 225));
+}
+
+function toPostCard(row: any): any {
+  return {
+    id: row.id,
+    slug: row.slug,
+    title: row.title,
+    subtitle: row.subtitle || null,
+    excerpt: row.excerpt || "",
+    pillar: row.pillar || "Theological Depth",
+    topic: row.topic || "",
+    readTime: readTime(row.word_count),
+    imageUrl: row.image_url || null,
+    author: "James Bell",
+    createdAt: row.published_at || row.created_at || new Date().toISOString(),
+    publishedAt: row.published_at || row.created_at || new Date().toISOString(),
+    wordCount: row.word_count || null,
+  };
+}
+
+async function trpcListPosts(): Promise<any[]> {
+  return await withConn(async (c) => {
+    const [rows]: any = await c.execute(
+      "SELECT id, slug, title, subtitle, excerpt, topic, pillar, source, external_url, image_url, word_count, published_at, created_at FROM articles ORDER BY published_at DESC LIMIT 500"
+    );
+    return (rows as any[]).map(toPostCard);
+  });
+}
+
+async function trpcGetPost(id: number | string): Promise<any | null> {
+  return await withConn(async (c) => {
+    const isNum = /^\d+$/.test(String(id));
+    const sql = isNum
+      ? "SELECT * FROM articles WHERE id = ? LIMIT 1"
+      : "SELECT * FROM articles WHERE slug = ? LIMIT 1";
+    const [rows]: any = await c.execute(sql, [id]);
+    if (!rows[0]) return null;
+    const row = rows[0];
+    return { ...toPostCard(row), body: row.body || null, content: row.body || null };
+  });
+}
+
+async function trpcListBooks(): Promise<any[]> {
+  // Hardcoded in-voice book list keyed off CLAUDE.md projects. Database-backed later.
+  return [
+    { id: 1, slug: "the-monster-in-the-mirror", title: "The Monster in the Mirror", subtitle: "How Culture Shapes the God We Think We See", status: "published", pillar: "Prophetic Disruption", coverImage: null, description: "The monster is never in the mirror. That is the problem. A book that names six American cultural lenses distorting Scripture â and shows what reading against our own assumptions looks like.", releaseDate: "2025-09-01", createdAt: "2025-09-01T00:00:00Z" },
+    { id: 2, slug: "when-god-bless-america-replaces-thy-kingdom-come", title: "When God Bless America Replaces Thy Kingdom Come", subtitle: "How Patriotism Became Our Practical Savior", status: "in-development", pillar: "Prophetic Justice", coverImage: null, description: "Civil religion is idolatry with a flag for a shroud. America is not Israel. The new covenant is made with people through Christ's blood â not with nations.", releaseDate: "2026-11-01", createdAt: "2026-01-01T00:00:00Z" },
+    { id: 3, slug: "why-we-need-each-other", title: "Why We Need Each Other", subtitle: "Pastor Loneliness and the Case for Brotherhood", status: "in-development", pillar: "Leadership Formation", coverImage: null, description: "Pastor loneliness is a crisis. Brotherhood is the answer. The case for the Pastors Connection Network and the men it was built to carry.", releaseDate: "2026-06-01", createdAt: "2026-02-01T00:00:00Z" },
+    { id: 4, slug: "healwell-devotionals", title: "HealWell: 52 Weeks in Costly Hope", subtitle: "A Year of Honest Devotionals for Tired Believers", status: "in-development", pillar: "Integrated Life", coverImage: null, description: "Fifty-two weeks of devotionals for people who have stopped pretending. Written from the room where people fall apart and the room where they find their footing.", releaseDate: "2026-12-01", createdAt: "2026-03-01T00:00:00Z" },
+  ];
+}
+
+function trpcOk(res: VercelResponse, payload: any, status = 200) {
+  for (const [k, v] of Object.entries(CORS)) res.setHeader(k, v);
+  res.setHeader("Content-Type", "application/json; charset=utf-8");
+  res.setHeader("Cache-Control", "public, s-maxage=120, stale-while-revalidate=600");
+  res.status(status).send(JSON.stringify([{ result: { data: { json: payload } } }]));
+}
+
+function trpcErr(res: VercelResponse, code: string, message: string, status = 500) {
+  for (const [k, v] of Object.entries(CORS)) res.setHeader(k, v);
+  res.setHeader("Content-Type", "application/json; charset=utf-8");
+  res.status(status).send(JSON.stringify([{ error: { message, code: -32603, data: { code, httpStatus: status } } }]));
+}
+
+async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string) {
+  try {
+    // Parse input from query string (GET batch). POST mutations carry body.
+    let input: any = null;
+    if (req.method === "GET") {
+      const raw = (req.query.input as string) || "";
+      if (raw) {
+        try {
+          const parsed = JSON.parse(raw);
+          input = parsed["0"]?.json ?? null;
+        } catch { /* ignore */ }
+      }
+    } else if (req.method === "POST") {
+      const body = await readBody(req);
+      // Batch POST: { "0": { "json": ... } } OR bare { json: ... }
+      input = body?.["0"]?.json ?? body?.json ?? body ?? null;
+    }
+
+    switch (proc) {
+      case "posts.listPublished":
+      case "posts.listAll": {
+        const data = await trpcListPosts();
+        return trpcOk(res, data);
+      }
+      case "posts.getById": {
+        const id = input?.id ?? input;
+        const row = await trpcGetPost(id);
+        if (!row) return trpcErr(res, "NOT_FOUND", "post not found", 404);
+        return trpcOk(res, row);
+      }
+      case "posts.bySlug":
+      case "posts.getBySlug": {
+        const slug = input?.slug ?? input;
+        const row = await trpcGetPost(slug);
+        if (!row) return trpcErr(res, "NOT_FOUND", "post not found", 404);
+        return trpcOk(res, row);
+      }
+      case "books.listPublished":
+      case "books.listAll": {
+        const data = await trpcListBooks();
+        return trpcOk(res, data);
+      }
+      case "books.getById": {
+        const id = input?.id ?? input;
+        const all = await trpcListBooks();
+        const row = all.find((b: any) => String(b.id) === String(id) || b.slug === String(id));
+        if (!row) return trpcErr(res, "NOT_FOUND", "book not found", 404);
+        return trpcOk(res, row);
+      }
+      case "subscribe":
+      case "subscribe.subscribe": {
+        const email = String(input?.email || "").trim().toLowerCase();
+        if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return trpcErr(res, "BAD_REQUEST", "invalid email", 400);
+        const name = input?.name ? String(input.name).slice(0, 200) : null;
+        const source = input?.source ? String(input.source).slice(0, 64) : "site";
+        await withConn(async (c) => {
+          await c.execute(
+            "INSERT INTO subscribers (email, name, source) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE name=COALESCE(VALUES(name), name), source=VALUES(source)",
+            [email, name, source]
+          );
+        });
+        return trpcOk(res, { ok: true });
+      }
+      default:
+        // Empty list fallback for unknown list procedures so the UI degrades gracefully.
+        if (proc.endsWith(".listPublished") || proc.endsWith(".listAll")) return trpcOk(res, []);
+        return trpcErr(res, "NOT_FOUND", "procedure not found: " + proc, 404);
+    }
+  } catch (e: any) {
+    return trpcErr(res, "INTERNAL_SERVER_ERROR", String(e?.message || e), 500);
+  }
+}
+
+async function robotsTxt(_req: VercelRequest, res: VercelResponse) {
+  const body = [
+    "User-agent: *",
+    "Allow: /",
+    "Disallow: /api/admin/",
+    "",
+    "Sitemap: https://www.livewellbyjamesbell.co/api/sitemap.xml",
+    "",
+  ].join("\n");
+  res.setHeader("Content-Type", "text/plain; charset=utf-8");
+  res.setHeader("Cache-Control", "public, s-maxage=3600, stale-while-revalidate=86400");
+  res.status(200).send(body);
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method === "OPTIONS") { for (const [k, v] of Object.entries(CORS)) res.setHeader(k, v); return res.status(204).end(); }
   try {
     const url = (req.url || "").split("?")[0];
     if (url === "/api/health" || url.startsWith("/api/health")) return health(req, res);
-    if (url === "/api/admin/seed" || url.startsWith("/api/admin/seed-articles")) {
-      if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
-      return adminSeed(req, res);
-    }
+    if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
+    if (url === "/api/admin/seed") return adminSeed(req, res);
     if (url === "/api/rss" || url === "/api/rss/substack") return substackRss(req, res);
     if (url === "/api/subscribe") return subscribe(req, res);
     if (url === "/api/pcn/signup") return pcnSignup(req, res);
     if (url === "/api/sitemap.xml" || url === "/api/sitemap") return sitemap(req, res);
+    if (url === "/api/robots.txt" || url === "/api/robots") return robotsTxt(req, res);
     if (url === "/api/articles") return listArticles(req, res);
-    const m = url.match(/^\/api\/articles\/([^\/]+)/);
-    if (m) return getArticle(req, res, decodeURIComponent(m[1]));
+    const ma = url.match(/^\/api\/articles\/([^\/]+)/);
+    if (ma) return getArticle(req, res, decodeURIComponent(ma[1]));
+    const mt = url.match(/^\/api\/trpc\/([^\/]+)/);
+    if (mt) return trpcHandler(req, res, decodeURIComponent(mt[1]));
     json(res, 404, { error: "Not found", url });
   } catch (e: any) { json(res, 500, { error: "handler crashed", message: String(e?.message || e) }); }
 }
