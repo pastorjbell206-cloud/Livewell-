@@ -3,9 +3,7 @@
   "outputDirectory": "dist/public",
   "installCommand": "pnpm install --force",
   "rewrites": [
-    {
-      "source": "/((?!assets/).*)",
-      "destination": "/index.html"
-    }
+    { "source": "/api/(.*)", "destination": "/api/index.ts" },
+    { "source": "/((?!assets/|api/).*)", "destination": "/index.html" }
   ]
 }
