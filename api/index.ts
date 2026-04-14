@@ -159,8 +159,7 @@ async function listArticles(req: VercelRequest, res: VercelResponse) {
       let sql = "SELECT id, slug, title, subtitle, excerpt, topic, pillar, source, external_url, image_url, word_count, published_at FROM articles";
       const params: any[] = [];
       if (topic) { sql += " WHERE topic = ?"; params.push(topic); }
-      sql += " ORDER BY published_at DESC LIMIT ?";
-      params.push(limit);
+      sql += ` ORDER BY published_at DESC LIMIT ${limit}`;
       const [rows] = await c.execute(sql, params);
       return rows;
     });
