@@ -1,6 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
+import ProtectedRoute from "./components/ProtectedRoute";
 import { Route, Switch, useLocation } from "wouter";
 import { useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -95,21 +96,21 @@ function Router() {
       <Route path="/search" component={SearchPage} />
       <Route path="/quiz" component={TheologyQuiz} />
       <Route path="/resources-for-pastors" component={ResourcesForPastors} />
-      <Route path="/admin" component={AdminDashboard} />
-      <Route path="/admin/posts" component={AdminPosts} />
-      <Route path="/admin/posts/new" component={AdminPostEditor} />
-      <Route path="/admin/posts/:id/edit" component={AdminPostEditor} />
-      <Route path="/admin/resources" component={AdminResources} />
-      <Route path="/admin/resources/new" component={AdminResourceEditor} />
-      <Route path="/admin/resources/:id/edit" component={AdminResourceEditor} />
-      <Route path="/admin/books" component={AdminBooks} />
-      <Route path="/admin/books/new" component={AdminBookEditor} />
-      <Route path="/admin/books/:id/edit" component={AdminBookEditor} />
-      <Route path="/admin/about" component={AdminAbout} />
-      <Route path="/admin/settings" component={AdminSettings} />
-      <Route path="/admin/sync" component={AdminContentSync} />
-      <Route path="/admin/moderation" component={ModerationAdmin} />
-      <Route path="/admin/notifications" component={NotificationsAdmin} />
+      <Route path="/admin"><ProtectedRoute component={AdminDashboard} requireAdmin /></Route>
+      <Route path="/admin/posts"><ProtectedRoute component={AdminPosts} requireAdmin /></Route>
+      <Route path="/admin/posts/new"><ProtectedRoute component={AdminPostEditor} requireAdmin /></Route>
+      <Route path="/admin/posts/:id/edit"><ProtectedRoute component={AdminPostEditor} requireAdmin /></Route>
+      <Route path="/admin/resources"><ProtectedRoute component={AdminResources} requireAdmin /></Route>
+      <Route path="/admin/resources/new"><ProtectedRoute component={AdminResourceEditor} requireAdmin /></Route>
+      <Route path="/admin/resources/:id/edit"><ProtectedRoute component={AdminResourceEditor} requireAdmin /></Route>
+      <Route path="/admin/books"><ProtectedRoute component={AdminBooks} requireAdmin /></Route>
+      <Route path="/admin/books/new"><ProtectedRoute component={AdminBookEditor} requireAdmin /></Route>
+      <Route path="/admin/books/:id/edit"><ProtectedRoute component={AdminBookEditor} requireAdmin /></Route>
+      <Route path="/admin/about"><ProtectedRoute component={AdminAbout} requireAdmin /></Route>
+      <Route path="/admin/settings"><ProtectedRoute component={AdminSettings} requireAdmin /></Route>
+      <Route path="/admin/sync"><ProtectedRoute component={AdminContentSync} requireAdmin /></Route>
+      <Route path="/admin/moderation"><ProtectedRoute component={ModerationAdmin} requireAdmin /></Route>
+      <Route path="/admin/notifications"><ProtectedRoute component={NotificationsAdmin} requireAdmin /></Route>
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
