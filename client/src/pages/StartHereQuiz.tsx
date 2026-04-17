@@ -47,56 +47,56 @@ export default function StartHereQuiz() {
 
   const READING_PATHS = {
     "marriage-crisis-articles": {
-      title: "Marriage Crisis & Recovery",
+      title: "Marriage Under Strain",
       articles: [
-        { title: "The Slow Drift That Ends More Marriages Than Dramatic Betrayal Does", slug: "the-slow-drift-that-ends-marriages" },
-        { title: "When You Married Someone You No Longer Recognize", slug: "when-you-married-someone-you-no-longer-recognize" },
-        { title: "The Resentment in Your Marriage Is Telling You Something Worth Hearing", slug: "the-resentment-in-your-marriage" }
+        { title: "Zanah: When You Keep the Vows and Give Away the Heart", slug: "zanah-when-you-keep-the-vows" },
+        { title: "The Mirror Doesn't Lie", slug: "the-mirror-doesnt-lie" },
+        { title: "Hustle Culture Is Idolatry", slug: "hustle-culture-is-idolatry" }
       ],
       book: "What If We're Wrong?"
     },
     "marriage-searching-articles": {
       title: "Building Covenant Strength",
       articles: [
-        { title: "What the Bible Actually Says About Submission and What It Doesn't", slug: "what-the-bible-says-about-submission" },
-        { title: "When One Spouse Carries the Emotional Labor and the Other Doesn't Know It", slug: "emotional-labor-in-marriage" },
-        { title: "Protecting Your Marriage When Ministry Demands Everything", slug: "protecting-marriage-in-ministry" }
+        { title: "Zanah: When You Keep the Vows and Give Away the Heart", slug: "zanah-when-you-keep-the-vows" },
+        { title: "The Mirror Doesn't Lie", slug: "the-mirror-doesnt-lie" },
+        { title: "The Generational Cost", slug: "the-generational-cost" }
       ],
       book: "The Monster in the Mirror"
     },
     "parenting-crisis-articles": {
       title: "Parenting Through Uncertainty",
       articles: [
-        { title: "When Your Teenager Says They Don't Believe Anymore", slug: "teenager-losing-faith" },
-        { title: "How to Talk to Your Kids About Faith When You're Not Sure What You Believe", slug: "how-to-talk-kids-faith-doubt" },
-        { title: "The Pastor's Kids Are Watching What Are They Seeing?", slug: "the-pastors-kids-are-watching" }
+        { title: "The Generational Cost", slug: "the-generational-cost" },
+        { title: "The Mirror Doesn't Lie", slug: "the-mirror-doesnt-lie" },
+        { title: "Hustle Culture Is Idolatry", slug: "hustle-culture-is-idolatry" }
       ],
       book: "When God Bless America Replaces Thy Kingdom Come"
     },
     "doubt-crisis-articles": {
       title: "Finding Faith in the Questions",
       articles: [
-        { title: "When Fear Rewrites Theology", slug: "when-fear-rewrites-theology" },
-        { title: "The Dark Night of the Soul When God Feels Absent", slug: "dark-night-god-feels-absent" },
-        { title: "When the Church Married Empire", slug: "when-church-married-empire" }
+        { title: "The Mirror Doesn't Lie", slug: "the-mirror-doesnt-lie" },
+        { title: "Constantine's Bargain", slug: "constantines-bargain" },
+        { title: "Germany's Warning", slug: "germanys-warning" }
       ],
       book: "What If We're Wrong?"
     },
     "pastoral-articles": {
       title: "Pastoral Leadership & Burnout",
       articles: [
-        { title: "The Difference Between Being Tired and Being Done", slug: "difference-between-tired-and-done" },
-        { title: "What Pastors Fear Most (That They Never Say Out Loud)", slug: "what-pastors-fear-most" },
-        { title: "Why Pastors Quit (And How to Stay)", slug: "why-pastors-quit" }
+        { title: "Why We Need Each Other", slug: "why-we-need-each-other" },
+        { title: "Hustle Culture Is Idolatry", slug: "hustle-culture-is-idolatry" },
+        { title: "The Generational Cost", slug: "the-generational-cost" }
       ],
       book: "The Monster in the Mirror"
     },
     "default": {
       title: "Essential LiveWell Collection",
       articles: [
-        { title: "When Fear Rewrites Theology", slug: "when-fear-rewrites-theology" },
-        { title: "The Slow Drift That Ends More Marriages Than Dramatic Betrayal Does", slug: "the-slow-drift-that-ends-marriages" },
-        { title: "When the Church Married Empire", slug: "when-church-married-empire" }
+        { title: "The Mirror Doesn't Lie", slug: "the-mirror-doesnt-lie" },
+        { title: "Zanah: When You Keep the Vows and Give Away the Heart", slug: "zanah-when-you-keep-the-vows" },
+        { title: "Germany's Warning", slug: "germanys-warning" }
       ],
       book: "The Monster in the Mirror"
     }
@@ -137,9 +137,9 @@ export default function StartHereQuiz() {
     <div style={{ background: "#F7F5F0", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       <SEOMeta
         title="Find Your Path | LiveWell by James Bell"
-        description="Personalized reading paths based on where you are in faith, marriage, parenting, and ministry. Get matched with articles and resources tailored to your journey."
-        keywords="Christian resources, faith journey, where to start reading, personalized articles, LiveWell"
-        url="https://livewellbyjamesbell.com/start-here-quiz"
+        description="Find where to start. Tell us what is weighing on you and we point you toward the writing that meets you there."
+        keywords="where to start, Christian writing, marriage, parenting, doubt, pastoral burnout, LiveWell, James Bell"
+        url="https://www.livewellbyjamesbell.co/start"
         type="webpage"
       />
 
@@ -271,7 +271,7 @@ export default function StartHereQuiz() {
                         </p>
                       </div>
                       <span style={{ color: "#B8963E", fontWeight: "bold", marginLeft: "16px", whiteSpace: "nowrap" }}>
-                        Read →
+                        Read â
                       </span>
                     </div>
                   </Link>
