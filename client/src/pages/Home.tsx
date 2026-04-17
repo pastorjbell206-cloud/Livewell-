@@ -70,7 +70,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "James Bell",
-    "url": "https://livewellbyjamesbell.com",
+    "url": "https://livewellbyjamesbell.co",
     "jobTitle": "Lead Pastor, Author",
     "description": "Lead Teaching Pastor at First Baptist Church of Fenton, founder of the Pastors Connection Network, and author of 25 books on theology, pastoral ministry, marriage, and Christian living.",
     "sameAs": ["https://pastorsconnectionnetwork.com", "https://substack.com/@jamesbell333289"]
@@ -80,9 +80,9 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "LiveWell by James Bell",
-    "url": "https://livewellbyjamesbell.com",
+    "url": "https://livewellbyjamesbell.co",
     "description": "Theology that carries the weight of everyday life. 880+ essays on marriage, parenting, faith, justice, and pastoral ministry.",
-    "potentialAction": { "@type": "SearchAction", "target": "https://livewellbyjamesbell.com/writing?q={search_term_string}", "query-input": "required name=search_term_string" }
+    "potentialAction": { "@type": "SearchAction", "target": "https://livewellbyjamesbell.co/writing?q={search_term_string}", "query-input": "required name=search_term_string" }
   };
 
   return (
@@ -91,7 +91,7 @@ export default function Home() {
         title="LiveWell by James Bell — Theology for Marriage, Family, Faith & Pastoral Ministry"
         description="Theology that carries the weight of everyday life. 880+ essays on marriage, parenting, faith crisis, justice, and pastoral ministry. By James Bell, author of 25 books."
         keywords="Christian marriage help, Christian parenting, faith crisis, pastor resources, theology, James Bell, biblical marriage, doubting God, pastoral burnout"
-        url="https://livewellbyjamesbell.com"
+        url="https://livewellbyjamesbell.co"
         type="website"
         structuredData={websiteSchema}
       />
