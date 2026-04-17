@@ -75,7 +75,7 @@ export default function Parenting() {
         title="Christian Parenting Help | LiveWell by James Bell"
         description="Raising kids who think, question, and believe. Christian parenting articles on faith formation, doubt, technology, and loving your children through every season."
         keywords="Christian parenting, raising kids in faith, how to talk to kids about God, faith and teenagers, parenting resources, Christian family"
-        url="https://livewellbyjamesbell.com/parenting"
+        url="https://livewellbyjamesbell.co/parenting"
         type="webpage"
       />
 
