@@ -64,7 +64,7 @@ export default function TheologyQuiz() {
         title="Theological Position Quiz"
         description="Discover which of LiveWell's five pillars resonates most with your faith journey. Take the free quiz and get personalized article recommendations."
         keywords="theology quiz, faith assessment, James Bell, theological position"
-        url="https://livewellbyjamesbell.com/quiz"
+        url="https://livewellbyjamesbell.co/quiz"
       />
       <MinimalNav />
 
