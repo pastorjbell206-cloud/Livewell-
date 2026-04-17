@@ -86,7 +86,7 @@ export default function Doubt() {
         title="Faith Crisis & Doubt | LiveWell by James Bell"
         description="Honest theology for those with questions. Articles on faith crisis, doubting God, deconstructing faith, and finding honest belief when doubt won't go away."
         keywords="faith crisis, doubting God, deconstructing faith, is it okay to doubt, hard questions about Christianity, faith and doubt"
-        url="https://livewellbyjamesbell.com/doubt"
+        url="https://livewellbyjamesbell.co/doubt"
         type="webpage"
       />
 
