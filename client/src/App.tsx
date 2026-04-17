@@ -16,6 +16,7 @@ import BookDetail from "./pages/BookDetail";
 import SubstackPage from "./pages/Substack";
 import Pastors from "./pages/Pastors";
 import About from "./pages/About";
+import Tools from "./pages/Tools";
 import FileStorage from "./pages/FileStorage";
 import AdminDashboard from "./pages/AdminDashboard";
 import AdminPosts from "./pages/AdminPosts";
@@ -95,6 +96,7 @@ function Router() {
       <Route path="/books-store" component={BooksStore} />
       <Route path="/search" component={SearchPage} />
       <Route path="/quiz" component={TheologyQuiz} />
+          <Route path="/tools" component={Tools} />
       <Route path="/resources-for-pastors" component={ResourcesForPastors} />
       <Route path="/admin"><ProtectedRoute component={AdminDashboard} requireAdmin /></Route>
       <Route path="/admin/posts"><ProtectedRoute component={AdminPosts} requireAdmin /></Route>
