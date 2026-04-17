@@ -354,6 +354,59 @@ function trpcErr(res: VercelResponse, code: string, message: string, status = 50
   res.status(status).send(JSON.stringify([{ error: { message, code: -32603, data: { code, httpStatus: status } } }]));
 }
 
+
+// ----- Theology Quiz: questions, scoring, helper functions -----
+// Self-contained: kept in api/index.ts to avoid importing from ../server/*.
+// Source of truth for the same data lives at server/quiz-router.ts; if you
+// change one, change the other (they are intentionally duplicated to keep
+// the serverless function bundle small and import-free).
+interface QuizQuestion {
+  id: number;
+  question: string;
+  options: string[];
+  pillarWeights: Record<string, number[]>;
+}
+
+const THEOLOGY_QUIZ_QUESTIONS: QuizQuestion[] = undefined;
+
+function quizPillarMessage(pillar: string): string {
+  const messages: Record<string, string> = {
+    "Theological Depth": "You're drawn to deep theological understanding and biblical truth. These articles explore the foundational questions of faith, God's character, and Scripture.",
+    "Prophetic Disruption": "You're called to prophetic challenge and truth-telling. These articles address the uncomfortable questions the church needs to face.",
+    "Integrated Life": "You're seeking to live out your faith in every area of life. These articles help bridge the gap between belief and practice.",
+  };
+  return messages[pillar] || "Here are some articles tailored to your interests.";
+}
+
+async function quizGetRecommendations(input: any) {
+  const answers: number[] = Array.isArray(input?.answers) ? input.answers : [];
+  const pillarScores: Record<string, number> = {
+    "Theological Depth": 0,
+    "Prophetic Disruption": 0,
+    "Integrated Life": 0,
+  };
+  answers.forEach((answerIndex, questionIndex) => {
+    const q = THEOLOGY_QUIZ_QUESTIONS[questionIndex];
+    if (!q) return;
+    Object.entries(q.pillarWeights).forEach(([pillar, weights]) => {
+      const w = (weights as number[])[answerIndex];
+      if (typeof w === "number") pillarScores[pillar] = (pillarScores[pillar] || 0) + w;
+    });
+  });
+  const sorted = Object.entries(pillarScores).sort(([, a], [, b]) => (b as number) - (a as number));
+  const topPillar = sorted[0]?.[0] || "Theological Depth";
+  const allPosts = await trpcListPosts();
+  const recommendedArticles = (Array.isArray(allPosts) ? allPosts : [])
+    .filter((p: any) => p && p.pillar === topPillar)
+    .slice(0, 6);
+  return {
+    topPillar,
+    pillarScores,
+    recommendedArticles,
+    message: quizPillarMessage(topPillar),
+  };
+}
+
 async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string) {
   try {
     // Parse input from query string (GET batch). POST mutations carry body.
@@ -416,6 +469,13 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
           );
         });
         return trpcOk(res, { ok: true });
+      }
+      case "quiz.getQuestions": {
+        return trpcOk(res, THEOLOGY_QUIZ_QUESTIONS);
+      }
+      case "quiz.getRecommendations": {
+        const data = await quizGetRecommendations(input);
+        return trpcOk(res, data);
       }
       default:
         // Empty list fallback for unknown list procedures so the UI degrades gracefully.
