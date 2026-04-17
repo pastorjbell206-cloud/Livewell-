@@ -20,7 +20,7 @@ export function SEOMeta({
   description,
   keywords,
   image = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/hero-study-YwtdpEbWhEmpeN5eiD8U69.webp',
-  url = typeof window !== 'undefined' ? window.location.href : 'https://livewellbyjamesbell.com',
+  url = typeof window !== 'undefined' ? window.location.href : 'https://livewellbyjamesbell.co',
   type = 'website',
   author = 'James Bell',
   publishedDate,
@@ -119,7 +119,7 @@ export function getPersonSchema() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'James Bell',
-    url: 'https://livewellbyjamesbell.com',
+    url: 'https://livewellbyjamesbell.co',
     jobTitle: 'Lead Pastor, Author, Founder',
     description: 'Lead Teaching Pastor at First Baptist Church of Fenton, author of 25 books, and founder of the Pastors Connection Network.',
     sameAs: [
@@ -139,11 +139,11 @@ export function getWebSiteSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'LiveWell by James Bell',
-    url: 'https://livewellbyjamesbell.com',
+    url: 'https://livewellbyjamesbell.co',
     description: 'Theology that actually works. 880+ essays on faith, marriage, justice, pastoral ministry, and the Christian life.',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://livewellbyjamesbell.com/writing?q={search_term_string}',
+      target: 'https://livewellbyjamesbell.co/writing?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   };
@@ -170,14 +170,14 @@ export function getArticleSchema(
     author: {
       '@type': 'Person',
       name: 'James Bell',
-      url: 'https://livewellbyjamesbell.com/about',
+      url: 'https://livewellbyjamesbell.co/about',
     },
     publisher: {
       '@type': 'Organization',
       name: 'LiveWell by James Bell',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://livewellbyjamesbell.com/favicon.svg',
+        url: 'https://livewellbyjamesbell.co/favicon.svg',
       },
     },
   };

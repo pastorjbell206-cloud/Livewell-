@@ -78,7 +78,7 @@ export default function Marriage() {
         title="Christian Marriage Help | LiveWell by James Bell"
         description="Covenant theology applied to marriage. Articles on communication, conflict resolution, emotional labor, and biblical marriage for couples seeking more than advice."
         keywords="Christian marriage help, biblical marriage, marriage counseling, marriage conflict, marriage communication, keeping marriage vows"
-        url="https://livewellbyjamesbell.com/marriage"
+        url="https://livewellbyjamesbell.co/marriage"
         type="webpage"
       />
 
