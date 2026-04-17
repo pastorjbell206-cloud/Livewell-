@@ -9,9 +9,9 @@ Disallow: /.env
 Disallow: /node_modules
 
 # Sitemap
-Sitemap: https://livewellbyjamesbell.com/sitemap.xml
+Sitemap: https://www.livewellbyjamesbell.co/sitemap.xml
 
 # Crawl delay (optional - adjust based on server capacity)
 Crawl-delay: 1
 
-# Cache bust: 2026-04-13T17:16:56.815Z
+# Cache bust: 2026-04-17T00:00:00.000Z
