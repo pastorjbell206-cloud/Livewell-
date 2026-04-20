@@ -68,7 +68,7 @@ async function health(_req: VercelRequest, res: VercelResponse) {
 // DB uses the Drizzle `posts` table or the flat `articles` table.
 // ---------------------------------------------------------------------------
 async function dbInventory(req: VercelRequest, res: VercelResponse) {
-  // TEMP: auth removed for schema inventory read — WILL BE RESTORED
+  if (!authed(req)) return json(res, 401, { error: "unauthorized" });
   try {
     const out = await withConn(async (c) => {
       const [tablesRaw] = await c.query("SHOW TABLES");
