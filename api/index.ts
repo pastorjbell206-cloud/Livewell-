@@ -684,6 +684,66 @@ async function authLogout(_req: VercelRequest, res: VercelResponse) {
 
 }
 
+async function authLogin(req: VercelRequest, res: VercelResponse) {
+  if (req.method !== "POST") {
+    res.status(405).json({ error: "method not allowed" });
+    return;
+  }
+  try {
+    const body = await readBody(req);
+    const password = typeof body?.password === "string" ? body.password : "";
+    const hash = process.env.ADMIN_PASSWORD_HASH || "";
+    if (!hash) {
+      res.status(500).json({ error: "server misconfigured", message: "ADMIN_PASSWORD_HASH not set" });
+      return;
+    }
+    if (!password) {
+      res.status(400).json({ error: "password required" });
+      return;
+    }
+    const ok = await bcrypt.compare(password, hash);
+    if (!ok) {
+      res.status(401).json({ error: "invalid credentials" });
+      return;
+    }
+    const token = signSession("admin", 7 * 24 * 60 * 60 * 1000);
+    const cookie = [
+      `session=${token}`,
+      "HttpOnly",
+      "Secure",
+      "SameSite=Lax",
+      "Path=/",
+      "Max-Age=604800"
+    ].join("; ");
+    res.setHeader("Set-Cookie", cookie);
+    res.status(200).json({ ok: true, user: "admin" });
+  } catch (err: any) {
+    res.status(500).json({ error: "login failed", message: String(err?.message || err) });
+  }
+}
+
+async function authMe(req: VercelRequest, res: VercelResponse) {
+  const session = authedSession(req);
+  if (!session) {
+    res.status(401).json({ error: "unauthenticated" });
+    return;
+  }
+  res.status(200).json({ user: session.user });
+}
+
+async function authLogout(_req: VercelRequest, res: VercelResponse) {
+  const cookie = [
+    "session=",
+    "HttpOnly",
+    "Secure",
+    "SameSite=Lax",
+    "Path=/",
+    "Max-Age=0"
+  ].join("; ");
+  res.setHeader("Set-Cookie", cookie);
+  res.status(200).json({ ok: true });
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method === "OPTIONS") {
     for (const [k, v] of Object.entries(CORS)) res.setHeader(k, v);
