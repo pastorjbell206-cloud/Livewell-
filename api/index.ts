@@ -2,6 +2,8 @@
 // Self-contained: no ../server/* imports. Uses only package deps.
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import mysql from "mysql2/promise";
+import crypto from "node:crypto";
+import bcrypt from "bcryptjs";
 
 async function withConn<T>(fn: (c: mysql.Connection) => Promise<T>): Promise<T> {
   const url = process.env.DATABASE_URL;
@@ -601,6 +603,85 @@ async function robotsTxt(_req: VercelRequest, res: VercelResponse) {
   res.setHeader("Content-Type", "text/plain; charset=utf-8");
   res.setHeader("Cache-Control", "public, s-maxage=3600, stale-while-revalidate=86400");
   res.status(200).send(body);
+
+// ---------------------------------------------------------------------------
+// Session auth (cookie-based) for /admin UI.
+// Distinct from authed() which uses JWT_SECRET as a query/header key for one-shot endpoints.
+// Issue an HMAC-signed cookie on login, verify on subsequent requests.
+// ---------------------------------------------------------------------------
+
+const SESSION_COOKIE = "lw_session";
+const SESSION_TTL_MS = 1000 * 60 * 60 * 24 * 7; // 7 days
+
+function getJwtSecret(): string {
+  const s = process.env.JWT_SECRET;
+  if (!s) throw new Error("JWT_SECRET missing");
+  return s;
+}
+
+function signSession(user: string, expMs: number): string {
+  const payload = JSON.stringify({ u: user, e: expMs });
+  const b64 = Buffer.from(payload).toString("base64url");
+  const sig = crypto.createHmac("sha256", getJwtSecret()).update(b64).digest("base64url");
+  return b64 + "." + sig;
+}
+
+function verifySession(token: string | undefined): { user: string } | null {
+  if (!token) return null;
+  const parts = token.split(".");
+  if (parts.length !== 2) return null;
+  const [b64, sig] = parts;
+  const expected = crypto.createHmac("sha256", getJwtSecret()).update(b64).digest("base64url");
+  if (sig !== expected) return null;
+  try {
+    const payload = JSON.parse(Buffer.from(b64, "base64url").toString());
+    if (typeof payload.e !== "number" || payload.e < Date.now()) return null;
+    if (typeof payload.u !== "string") return null;
+    return { user: payload.u };
+  } catch { return null; }
+}
+
+function getCookie(req: VercelRequest, name: string): string | undefined {
+  const raw = req.headers.cookie || "";
+  for (const part of raw.split(";")) {
+    const [k, ...v] = part.trim().split("=");
+    if (k === name) return decodeURIComponent(v.join("="));
+  }
+  return undefined;
+}
+
+function authedSession(req: VercelRequest): { user: string } | null {
+  return verifySession(getCookie(req, SESSION_COOKIE));
+}
+
+async function authLogin(req: VercelRequest, res: VercelResponse) {
+  if (req.method !== "POST") return json(res, 405, { error: "method not allowed" });
+  const body = await readBody(req);
+  const password = body?.password;
+  if (typeof password !== "string" || !password) return json(res, 400, { error: "password required" });
+  const hash = process.env.ADMIN_PASSWORD_HASH;
+  if (!hash) return json(res, 500, { error: "ADMIN_PASSWORD_HASH not configured" });
+  const ok = await bcrypt.compare(password, hash);
+  if (!ok) return json(res, 401, { error: "invalid credentials" });
+  const exp = Date.now() + SESSION_TTL_MS;
+  const token = signSession("admin", exp);
+  const cookie = `${SESSION_COOKIE}=${encodeURIComponent(token)}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=${Math.floor(SESSION_TTL_MS/1000)}`;
+  res.setHeader("Set-Cookie", cookie);
+  return json(res, 200, { ok: true, user: "admin" });
+}
+
+async function authMe(req: VercelRequest, res: VercelResponse) {
+  const session = authedSession(req);
+  if (!session) return json(res, 401, { authenticated: false });
+  return json(res, 200, { authenticated: true, user: session.user });
+}
+
+async function authLogout(_req: VercelRequest, res: VercelResponse) {
+  const cookie = `${SESSION_COOKIE}=; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=0`;
+  res.setHeader("Set-Cookie", cookie);
+  return json(res, 200, { ok: true });
+}
+
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
@@ -610,6 +691,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
   try {
     const url = (req.url || "").split("?")[0];
+    if (url === "/api/auth/login") return authLogin(req, res);
+    if (url === "/api/auth/me") return authMe(req, res);
+    if (url === "/api/auth/logout") return authLogout(req, res);
     if (url === "/api/health" || url.startsWith("/api/health")) return health(req, res);
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
