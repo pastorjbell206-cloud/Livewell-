@@ -61,6 +61,83 @@ async function health(_req: VercelRequest, res: VercelResponse) {
   json(res, 200, out);
 }
 
+// ---------------------------------------------------------------------------
+// Read-only schema inventory. Requires ?key=<JWT_SECRET> or x-seed-key header.
+// Performs only SHOW / SELECT COUNT / DESCRIBE / SELECT ... LIMIT 1 queries.
+// No writes. Used by the content-migration project to decide whether the live
+// DB uses the Drizzle `posts` table or the flat `articles` table.
+// ---------------------------------------------------------------------------
+async function dbInventory(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req)) return json(res, 401, { error: "unauthorized" });
+  try {
+    const out = await withConn(async (c) => {
+      const [tablesRaw] = await c.query("SHOW TABLES");
+      const tables = Array.isArray(tablesRaw)
+        ? (tablesRaw as any[]).map((row) => Object.values(row)[0] as string)
+        : [];
+
+      const inspectTargets = ["posts", "articles"];
+      const tableInfo: Record<string, any> = {};
+
+      for (const name of inspectTargets) {
+        if (!tables.includes(name)) {
+          tableInfo[name] = { exists: false };
+          continue;
+        }
+        const info: any = { exists: true };
+        try {
+          const [countRows]: any = await c.query(
+            `SELECT COUNT(*) AS n FROM \`${name}\``
+          );
+          info.rowCount = countRows?.[0]?.n ?? null;
+        } catch (e: any) {
+          info.rowCountError = String(e?.message || e).slice(0, 300);
+        }
+        try {
+          const [descRows]: any = await c.query(`DESCRIBE \`${name}\``);
+          info.columns = Array.isArray(descRows)
+            ? descRows.map((r: any) => ({
+                field: r.Field,
+                type: r.Type,
+                nullable: r.Null,
+                key: r.Key,
+                default: r.Default,
+              }))
+            : [];
+        } catch (e: any) {
+          info.describeError = String(e?.message || e).slice(0, 300);
+        }
+        try {
+          const [sampleRows]: any = await c.query(
+            `SELECT * FROM \`${name}\` ORDER BY 1 DESC LIMIT 1`
+          );
+          const row = Array.isArray(sampleRows) ? sampleRows[0] ?? null : null;
+          if (row) {
+            const redacted: Record<string, any> = {};
+            for (const [k, v] of Object.entries(row)) {
+              if (typeof v === "string" && v.length > 120) {
+                redacted[k] = v.slice(0, 120) + `…(+${v.length - 120} chars)`;
+              } else {
+                redacted[k] = v;
+              }
+            }
+            info.sampleRow = redacted;
+          } else {
+            info.sampleRow = null;
+          }
+        } catch (e: any) {
+          info.sampleError = String(e?.message || e).slice(0, 300);
+        }
+      }
+
+      return { tables, tableInfo };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e).slice(0, 500) });
+  }
+}
+
 const SCHEMA_SQL = [
   `CREATE TABLE IF NOT EXISTS articles (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -118,7 +195,9 @@ async function adminSeed(req: VercelRequest, res: VercelResponse) {
       return { tables };
     });
     json(res, 200, { ok: true, ...out });
-  } catch (e: any) { json(res, 500, { ok: false, error: String(e?.message || e) }); }
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
 }
 
 async function adminSeedArticles(req: VercelRequest, res: VercelResponse) {
@@ -128,7 +207,7 @@ async function adminSeedArticles(req: VercelRequest, res: VercelResponse) {
     { slug: "god-bless-america-replaces-thy-kingdom-come", title: "When God Bless America Replaces Thy Kingdom Come", subtitle: "How patriotism became our practical savior", excerpt: "Civil religion is idolatry with a flag for a shroud. America is not Israel. The new covenant is made with people through Christ's blood, not with nations.", topic: "prophetic", pillar: "Prophetic Justice", word_count: 3100 },
     { slug: "the-generational-cost", title: "The Generational Cost", subtitle: "When hypocrisy makes the gospel unbelievable", excerpt: "Our children do not leave the faith because they have heard too little. They leave because they have seen too much.", topic: "leadership", pillar: "Leadership Formation", word_count: 2800 },
     { slug: "hustle-culture-is-idolatry", title: "Hustle Culture Is Idolatry", subtitle: "The Protestant work ethic never meant this", excerpt: "We baptized exhaustion. We called overwork faithful. We dressed burnout in vocational language and handed it to pastors with a smile.", topic: "integrated-life", pillar: "Integrated Life", word_count: 2200 },
-    { slug: "zanah-when-you-keep-the-vows", title: "Zanah: When You Keep the Vows and Give Away the Heart", subtitle: "On fidelity, resentment, and the slow drift", excerpt: "The Hebrew prophets used one word for a particular kind of unfaithfulness Ã¢ÂÂ the kind that keeps the address and gives the rest away.", topic: "marriage", pillar: "Integrated Life", word_count: 2600 },
+    { slug: "zanah-when-you-keep-the-vows", title: "Zanah: When You Keep the Vows and Give Away the Heart", subtitle: "On fidelity, resentment, and the slow drift", excerpt: "The Hebrew prophets used one word for a particular kind of unfaithfulness — the kind that keeps the address and gives the rest away.", topic: "marriage", pillar: "Integrated Life", word_count: 2600 },
     { slug: "why-we-need-each-other", title: "Why We Need Each Other", subtitle: "Pastor loneliness is a crisis. Brotherhood is the answer.", excerpt: "Pastors are dying in isolation and nobody is saying it loud enough. The network exists because the crisis is real.", topic: "pcn", pillar: "Leadership Formation", word_count: 2100 },
     { slug: "germanys-warning", title: "Germany's Warning", subtitle: "Baptized nationalism and moral catastrophe", excerpt: "They sang hymns on Sunday. They saluted on Monday. They did not see the contradiction until it was too late. We are not smarter than they were.", topic: "prophetic", pillar: "Prophetic Disruption", word_count: 2900 },
     { slug: "the-mirror-doesnt-lie", title: "The Mirror Doesn't Lie", subtitle: "But we keep trying to bribe it", excerpt: "The problem is not that we cannot see ourselves. The problem is that we have edited the reflection so long we no longer recognize the cost.", topic: "theological", pillar: "Theological Depth", word_count: 2500 },
@@ -148,7 +227,9 @@ async function adminSeedArticles(req: VercelRequest, res: VercelResponse) {
       return { inserted, total: (rows as any)[0].n };
     });
     json(res, 200, { ok: true, ...out });
-  } catch (e: any) { json(res, 500, { ok: false, error: String(e?.message || e) }); }
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
 }
 
 async function listArticles(req: VercelRequest, res: VercelResponse) {
@@ -165,7 +246,9 @@ async function listArticles(req: VercelRequest, res: VercelResponse) {
     });
     res.setHeader("Cache-Control", "public, s-maxage=300, stale-while-revalidate=600");
     json(res, 200, { ok: true, articles: out });
-  } catch (e: any) { json(res, 500, { ok: false, error: String(e?.message || e) }); }
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
 }
 
 async function getArticle(req: VercelRequest, res: VercelResponse, slug: string) {
@@ -177,7 +260,9 @@ async function getArticle(req: VercelRequest, res: VercelResponse, slug: string)
     if (!out) return json(res, 404, { ok: false, error: "not found" });
     res.setHeader("Cache-Control", "public, s-maxage=300, stale-while-revalidate=600");
     json(res, 200, { ok: true, article: out });
-  } catch (e: any) { json(res, 500, { ok: false, error: String(e?.message || e) }); }
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
 }
 
 async function substackRss(_req: VercelRequest, res: VercelResponse) {
@@ -223,7 +308,9 @@ async function substackRss(_req: VercelRequest, res: VercelResponse) {
     });
     res.setHeader("Cache-Control", "public, s-maxage=600, stale-while-revalidate=1800");
     json(res, 200, { ok: true, cached: false, ...payload });
-  } catch (e: any) { json(res, 500, { ok: false, error: String(e?.message || e) }); }
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
 }
 
 async function subscribe(req: VercelRequest, res: VercelResponse) {
@@ -240,7 +327,9 @@ async function subscribe(req: VercelRequest, res: VercelResponse) {
       );
     });
     json(res, 200, { ok: true });
-  } catch (e: any) { json(res, 500, { ok: false, error: String(e?.message || e) }); }
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
 }
 
 async function pcnSignup(req: VercelRequest, res: VercelResponse) {
@@ -259,7 +348,9 @@ async function pcnSignup(req: VercelRequest, res: VercelResponse) {
       );
     });
     json(res, 200, { ok: true });
-  } catch (e: any) { json(res, 500, { ok: false, error: String(e?.message || e) }); }
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
 }
 
 async function sitemap(_req: VercelRequest, res: VercelResponse) {
@@ -278,14 +369,15 @@ async function sitemap(_req: VercelRequest, res: VercelResponse) {
     res.setHeader("Content-Type", "application/xml; charset=utf-8");
     res.setHeader("Cache-Control", "public, s-maxage=1800, stale-while-revalidate=3600");
     res.status(200).send(body);
-  } catch (e: any) { json(res, 500, { ok: false, error: String(e?.message || e) }); }
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
 }
 
 // ---------- tRPC-compatible layer ----------
 // The existing client uses @trpc/client httpBatchLink with superjson.
-// We only need to shape responses so it reads data.json Ã¢ÂÂ no transformer needed on read.
+// We only need to shape responses so it reads data.json — no transformer needed on read.
 // Response shape for a single-procedure batch: [{ result: { data: { json: <payload> } } }]
-
 function readTime(words: number | null | undefined): number {
   const w = Number(words || 2000);
   return Math.max(3, Math.round(w / 225));
@@ -334,8 +426,8 @@ async function trpcGetPost(id: number | string): Promise<any | null> {
 async function trpcListBooks(): Promise<any[]> {
   // Hardcoded in-voice book list keyed off CLAUDE.md projects. Database-backed later.
   return [
-    { id: 1, slug: "the-monster-in-the-mirror", title: "The Monster in the Mirror", subtitle: "How Culture Shapes the God We Think We See", status: "published", pillar: "Prophetic Disruption", coverImage: null, description: "The monster is never in the mirror. That is the problem. A book that names six American cultural lenses distorting Scripture Ã¢ÂÂ and shows what reading against our own assumptions looks like.", releaseDate: "2025-09-01", createdAt: "2025-09-01T00:00:00Z" },
-    { id: 2, slug: "when-god-bless-america-replaces-thy-kingdom-come", title: "When God Bless America Replaces Thy Kingdom Come", subtitle: "How Patriotism Became Our Practical Savior", status: "in-development", pillar: "Prophetic Justice", coverImage: null, description: "Civil religion is idolatry with a flag for a shroud. America is not Israel. The new covenant is made with people through Christ's blood Ã¢ÂÂ not with nations.", releaseDate: "2026-11-01", createdAt: "2026-01-01T00:00:00Z" },
+    { id: 1, slug: "the-monster-in-the-mirror", title: "The Monster in the Mirror", subtitle: "How Culture Shapes the God We Think We See", status: "published", pillar: "Prophetic Disruption", coverImage: null, description: "The monster is never in the mirror. That is the problem. A book that names six American cultural lenses distorting Scripture — and shows what reading against our own assumptions looks like.", releaseDate: "2025-09-01", createdAt: "2025-09-01T00:00:00Z" },
+    { id: 2, slug: "when-god-bless-america-replaces-thy-kingdom-come", title: "When God Bless America Replaces Thy Kingdom Come", subtitle: "How Patriotism Became Our Practical Savior", status: "in-development", pillar: "Prophetic Justice", coverImage: null, description: "Civil religion is idolatry with a flag for a shroud. America is not Israel. The new covenant is made with people through Christ's blood — not with nations.", releaseDate: "2026-11-01", createdAt: "2026-01-01T00:00:00Z" },
     { id: 3, slug: "why-we-need-each-other", title: "Why We Need Each Other", subtitle: "Pastor Loneliness and the Case for Brotherhood", status: "in-development", pillar: "Leadership Formation", coverImage: null, description: "Pastor loneliness is a crisis. Brotherhood is the answer. The case for the Pastors Connection Network and the men it was built to carry.", releaseDate: "2026-06-01", createdAt: "2026-02-01T00:00:00Z" },
     { id: 4, slug: "healwell-devotionals", title: "HealWell: 52 Weeks in Costly Hope", subtitle: "A Year of Honest Devotionals for Tired Believers", status: "in-development", pillar: "Integrated Life", coverImage: null, description: "Fifty-two weeks of devotionals for people who have stopped pretending. Written from the room where people fall apart and the room where they find their footing.", releaseDate: "2026-12-01", createdAt: "2026-03-01T00:00:00Z" },
   ];
@@ -354,7 +446,6 @@ function trpcErr(res: VercelResponse, code: string, message: string, status = 50
   res.status(status).send(JSON.stringify([{ error: { message, code: -32603, data: { code, httpStatus: status } } }]));
 }
 
-
 // ----- Theology Quiz: questions, scoring, helper functions -----
 // Self-contained: kept in api/index.ts to avoid importing from ../server/*.
 // Source of truth for the same data lives at server/quiz-router.ts; if you
@@ -368,157 +459,17 @@ interface QuizQuestion {
 }
 
 const THEOLOGY_QUIZ_QUESTIONS: QuizQuestion[] = [
-  {
-    id: 1,
-    question: "How do you approach biblical interpretation?",
-    options: [
-      "Literal, word-for-word reading",
-      "Historical-critical scholarship",
-      "Theological and pastoral application",
-      "Combination of all approaches"
-    ],
-    pillarWeights: {
-      "Theological Depth": [3, 2, 2, 3],
-      "Prophetic Disruption": [1, 2, 3, 2],
-      "Integrated Life": [1, 1, 3, 2]
-    }
-  },
-  {
-    id: 2,
-    question: "What's your primary concern about the American church?",
-    options: [
-      "Theological decline and biblical illiteracy",
-      "Political compromise and cultural captivity",
-      "Lack of practical discipleship",
-      "Institutional irrelevance"
-    ],
-    pillarWeights: {
-      "Theological Depth": [3, 1, 1, 1],
-      "Prophetic Disruption": [2, 3, 2, 3],
-      "Integrated Life": [1, 1, 3, 1]
-    }
-  },
-  {
-    id: 3,
-    question: "How do you view the relationship between faith and justice?",
-    options: [
-      "Personal salvation is primary",
-      "Systemic justice is essential to the gospel",
-      "Both equally important but distinct",
-      "Justice flows from transformed hearts"
-    ],
-    pillarWeights: {
-      "Theological Depth": [2, 2, 3, 2],
-      "Prophetic Disruption": [1, 3, 2, 2],
-      "Integrated Life": [2, 2, 2, 3]
-    }
-  },
-  {
-    id: 4,
-    question: "What's your biggest question about God?",
-    options: [
-      "How can God be both just and merciful?",
-      "Why does God permit suffering?",
-      "What does God's kingdom actually look like?",
-      "How should God's character shape my life?"
-    ],
-    pillarWeights: {
-      "Theological Depth": [3, 3, 2, 2],
-      "Prophetic Disruption": [1, 2, 3, 1],
-      "Integrated Life": [1, 2, 2, 3]
-    }
-  },
-  {
-    id: 5,
-    question: "How do you respond to cultural issues (LGBTQ, race, politics)?",
-    options: [
-      "Apply biblical principles directly",
-      "Listen to marginalized voices first",
-      "Seek nuance and complexity",
-      "Avoid taking strong positions"
-    ],
-    pillarWeights: {
-      "Theological Depth": [2, 1, 3, 1],
-      "Prophetic Disruption": [1, 3, 2, 1],
-      "Integrated Life": [2, 2, 3, 1]
-    }
-  },
-  {
-    id: 6,
-    question: "What does spiritual maturity look like?",
-    options: [
-      "Deep theological knowledge",
-      "Prophetic courage and truth-telling",
-      "Integrated faith affecting all of life",
-      "Radical obedience to Jesus"
-    ],
-    pillarWeights: {
-      "Theological Depth": [3, 1, 1, 2],
-      "Prophetic Disruption": [1, 3, 1, 2],
-      "Integrated Life": [1, 1, 3, 2]
-    }
-  },
-  {
-    id: 7,
-    question: "How should the church engage politics?",
-    options: [
-      "Remain neutral and apolitical",
-      "Prophetically critique all political systems",
-      "Engage selectively on moral issues",
-      "Partner with one political movement"
-    ],
-    pillarWeights: {
-      "Theological Depth": [2, 2, 3, 1],
-      "Prophetic Disruption": [1, 3, 2, 1],
-      "Integrated Life": [1, 2, 3, 1]
-    }
-  },
-  {
-    id: 8,
-    question: "What's your biggest struggle in faith?",
-    options: [
-      "Doubts about biblical reliability",
-      "Anger at injustice and suffering",
-      "Living out faith in daily decisions",
-      "Finding authentic Christian community"
-    ],
-    pillarWeights: {
-      "Theological Depth": [3, 1, 1, 1],
-      "Prophetic Disruption": [1, 3, 1, 1],
-      "Integrated Life": [1, 1, 3, 2]
-    }
-  },
-  {
-    id: 9,
-    question: "How do you define Christian freedom?",
-    options: [
-      "Freedom from sin through Christ",
-      "Freedom to challenge unjust systems",
-      "Freedom to live authentically",
-      "Freedom to follow Jesus fully"
-    ],
-    pillarWeights: {
-      "Theological Depth": [3, 1, 1, 2],
-      "Prophetic Disruption": [1, 3, 1, 2],
-      "Integrated Life": [1, 1, 3, 2]
-    }
-  },
-  {
-    id: 10,
-    question: "What would help your faith most right now?",
-    options: [
-      "Deeper theological understanding",
-      "Prophetic challenge to status quo",
-      "Practical guidance for daily living",
-      "Community and authentic relationships"
-    ],
-    pillarWeights: {
-      "Theological Depth": [3, 1, 1, 1],
-      "Prophetic Disruption": [1, 3, 1, 1],
-      "Integrated Life": [1, 1, 3, 2]
-    }
-  }
-];;
+  { id: 1, question: "How do you approach biblical interpretation?", options: [ "Literal, word-for-word reading", "Historical-critical scholarship", "Theological and pastoral application", "Combination of all approaches" ], pillarWeights: { "Theological Depth": [3, 2, 2, 3], "Prophetic Disruption": [1, 2, 3, 2], "Integrated Life": [1, 1, 3, 2] } },
+  { id: 2, question: "What's your primary concern about the American church?", options: [ "Theological decline and biblical illiteracy", "Political compromise and cultural captivity", "Lack of practical discipleship", "Institutional irrelevance" ], pillarWeights: { "Theological Depth": [3, 1, 1, 1], "Prophetic Disruption": [2, 3, 2, 3], "Integrated Life": [1, 1, 3, 1] } },
+  { id: 3, question: "How do you view the relationship between faith and justice?", options: [ "Personal salvation is primary", "Systemic justice is essential to the gospel", "Both equally important but distinct", "Justice flows from transformed hearts" ], pillarWeights: { "Theological Depth": [2, 2, 3, 2], "Prophetic Disruption": [1, 3, 2, 2], "Integrated Life": [2, 2, 2, 3] } },
+  { id: 4, question: "What's your biggest question about God?", options: [ "How can God be both just and merciful?", "Why does God permit suffering?", "What does God's kingdom actually look like?", "How should God's character shape my life?" ], pillarWeights: { "Theological Depth": [3, 3, 2, 2], "Prophetic Disruption": [1, 2, 3, 1], "Integrated Life": [1, 2, 2, 3] } },
+  { id: 5, question: "How do you respond to cultural issues (LGBTQ, race, politics)?", options: [ "Apply biblical principles directly", "Listen to marginalized voices first", "Seek nuance and complexity", "Avoid taking strong positions" ], pillarWeights: { "Theological Depth": [2, 1, 3, 1], "Prophetic Disruption": [1, 3, 2, 1], "Integrated Life": [2, 2, 3, 1] } },
+  { id: 6, question: "What does spiritual maturity look like?", options: [ "Deep theological knowledge", "Prophetic courage and truth-telling", "Integrated faith affecting all of life", "Radical obedience to Jesus" ], pillarWeights: { "Theological Depth": [3, 1, 1, 2], "Prophetic Disruption": [1, 3, 1, 2], "Integrated Life": [1, 1, 3, 2] } },
+  { id: 7, question: "How should the church engage politics?", options: [ "Remain neutral and apolitical", "Prophetically critique all political systems", "Engage selectively on moral issues", "Partner with one political movement" ], pillarWeights: { "Theological Depth": [2, 2, 3, 1], "Prophetic Disruption": [1, 3, 2, 1], "Integrated Life": [1, 2, 3, 1] } },
+  { id: 8, question: "What's your biggest struggle in faith?", options: [ "Doubts about biblical reliability", "Anger at injustice and suffering", "Living out faith in daily decisions", "Finding authentic Christian community" ], pillarWeights: { "Theological Depth": [3, 1, 1, 1], "Prophetic Disruption": [1, 3, 1, 1], "Integrated Life": [1, 1, 3, 2] } },
+  { id: 9, question: "How do you define Christian freedom?", options: [ "Freedom from sin through Christ", "Freedom to challenge unjust systems", "Freedom to live authentically", "Freedom to follow Jesus fully" ], pillarWeights: { "Theological Depth": [3, 1, 1, 2], "Prophetic Disruption": [1, 3, 1, 2], "Integrated Life": [1, 1, 3, 2] } },
+  { id: 10, question: "What would help your faith most right now?", options: [ "Deeper theological understanding", "Prophetic challenge to status quo", "Practical guidance for daily living", "Community and authentic relationships" ], pillarWeights: { "Theological Depth": [3, 1, 1, 1], "Prophetic Disruption": [1, 3, 1, 1], "Integrated Life": [1, 1, 3, 2] } }
+];
 
 function quizPillarMessage(pillar: string): string {
   const messages: Record<string, string> = {
@@ -653,10 +604,14 @@ async function robotsTxt(_req: VercelRequest, res: VercelResponse) {
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-  if (req.method === "OPTIONS") { for (const [k, v] of Object.entries(CORS)) res.setHeader(k, v); return res.status(204).end(); }
+  if (req.method === "OPTIONS") {
+    for (const [k, v] of Object.entries(CORS)) res.setHeader(k, v);
+    return res.status(204).end();
+  }
   try {
     const url = (req.url || "").split("?")[0];
     if (url === "/api/health" || url.startsWith("/api/health")) return health(req, res);
+    if (url === "/api/admin/db-inventory") return dbInventory(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
     if (url === "/api/admin/seed") return adminSeed(req, res);
     if (url === "/api/rss" || url === "/api/rss/substack") return substackRss(req, res);
@@ -670,5 +625,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const mt = url.match(/^\/api\/trpc\/([^\/]+)/);
     if (mt) return trpcHandler(req, res, decodeURIComponent(mt[1]));
     json(res, 404, { error: "Not found", url });
-  } catch (e: any) { json(res, 500, { error: "handler crashed", message: String(e?.message || e) }); }
+  } catch (e: any) {
+    json(res, 500, { error: "handler crashed", message: String(e?.message || e) });
+  }
 }
