@@ -655,36 +655,6 @@ function authedSession(req: VercelRequest): { user: string } | null {
 }
 
 async function authLogin(req: VercelRequest, res: VercelResponse) {
-  if (req.method !== "POST") return json(res, 405, { error: "method not allowed" });
-  const body = await readBody(req);
-  const password = body?.password;
-  if (typeof password !== "string" || !password) return json(res, 400, { error: "password required" });
-  const hash = process.env.ADMIN_PASSWORD_HASH;
-  if (!hash) return json(res, 500, { error: "ADMIN_PASSWORD_HASH not configured" });
-  const ok = await bcrypt.compare(password, hash);
-  if (!ok) return json(res, 401, { error: "invalid credentials" });
-  const exp = Date.now() + SESSION_TTL_MS;
-  const token = signSession("admin", exp);
-  const cookie = `${SESSION_COOKIE}=${encodeURIComponent(token)}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=${Math.floor(SESSION_TTL_MS/1000)}`;
-  res.setHeader("Set-Cookie", cookie);
-  return json(res, 200, { ok: true, user: "admin" });
-}
-
-async function authMe(req: VercelRequest, res: VercelResponse) {
-  const session = authedSession(req);
-  if (!session) return json(res, 401, { authenticated: false });
-  return json(res, 200, { authenticated: true, user: session.user });
-}
-
-async function authLogout(_req: VercelRequest, res: VercelResponse) {
-  const cookie = `${SESSION_COOKIE}=; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=0`;
-  res.setHeader("Set-Cookie", cookie);
-  return json(res, 200, { ok: true });
-}
-
-}
-
-async function authLogin(req: VercelRequest, res: VercelResponse) {
   if (req.method !== "POST") {
     res.status(405).json({ error: "method not allowed" });
     return;
