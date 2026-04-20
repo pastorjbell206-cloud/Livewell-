@@ -1,7 +1,7 @@
 {
   "buildCommand": "rm -rf node_modules/.vite .vite dist && pnpm run build",
   "outputDirectory": "dist/public",
-  "installCommand": "pnpm install --force",
+  "installCommand": "pnpm install --no-frozen-lockfile",
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/index.ts" },
     { "source": "/((?!assets/|api/).*)", "destination": "/index.html" }
