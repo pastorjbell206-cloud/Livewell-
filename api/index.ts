@@ -234,6 +234,51 @@ async function adminSeedArticles(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+async function importArticles(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req)) return res.status(401).json({ error: "unauthorized" });
+  if (req.method !== "POST") return res.status(405).json({ error: "method not allowed" });
+  try {
+    const fs = await import("node:fs/promises");
+    const path = await import("node:path");
+    const filePath = path.join(process.cwd(), "content", "articles-to-import.json");
+    const raw = await fs.readFile(filePath, "utf8");
+    const articles = JSON.parse(raw);
+    if (!Array.isArray(articles)) {
+      return res.status(500).json({ error: "bad json", message: "expected array" });
+    }
+    let inserted = 0;
+    let skipped = 0;
+    const failures: any[] = [];
+    await withConn(async (c) => {
+      for (const a of articles) {
+        try {
+          const [r]: any = await c.execute(
+            "INSERT IGNORE INTO articles (slug, title, subtitle, excerpt, body, topic, pillar, source, word_count, published_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, NOW())",
+            [
+              a.slug || null,
+              a.title || null,
+              a.subtitle || null,
+              a.excerpt || null,
+              a.body || null,
+              a.topic || null,
+              a.pillar || null,
+              a.source || "livewell",
+              a.word_count || (a.body ? String(a.body).split(/\s+/).length : 0)
+            ]
+          );
+          if (r && r.affectedRows > 0) inserted++;
+          else skipped++;
+        } catch (err: any) {
+          failures.push({ slug: a.slug, error: String(err?.message || err) });
+        }
+      }
+    });
+    res.status(200).json({ ok: true, inserted, skipped, totalInFile: articles.length, failures: failures.slice(0, 10), failureCount: failures.length });
+  } catch (err: any) {
+    res.status(500).json({ error: "import failed", message: String(err?.message || err) });
+  }
+}
+
 async function listArticles(req: VercelRequest, res: VercelResponse) {
   try {
     const limit = Math.min(parseInt(String(req.query.limit || "50"), 10) || 50, 200);
@@ -727,6 +772,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/health" || url.startsWith("/api/health")) return health(req, res);
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
+    if (url.startsWith("/api/admin/import-articles")) return importArticles(req, res);
     if (url === "/api/admin/seed") return adminSeed(req, res);
     if (url === "/api/rss" || url === "/api/rss/substack") return substackRss(req, res);
     if (url === "/api/subscribe") return subscribe(req, res);
