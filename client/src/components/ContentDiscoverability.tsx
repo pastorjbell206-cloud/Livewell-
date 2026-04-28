@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Star, TrendingUp, Flame } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { trpc } from "@/lib/trpc";
 
 interface FeaturedArticle {
   id: string;
@@ -128,14 +129,46 @@ export function ContentDiscoverability({
 }
 
 /**
- * Hook to get featured articles
+ * Hook to get featured articles. Maps server Post records to the
+ * FeaturedArticle shape used by ContentDiscoverability.
  */
 export function useFeaturedArticles(type: "trending" | "editors-picks" | "featured") {
-  const [articles, setArticles] = useState<FeaturedArticle[]>([]);
-  const [loading, setLoading] = useState(true);
+  // The "featured" tab uses the dedicated featured-post endpoint.
+  const featuredQuery = trpc.posts.getFeatured.useQuery(undefined, {
+    enabled: type === "featured",
+  });
 
-  // TODO: Replace with actual API call
-  // const { data } = trpc.articles.getFeatured.useQuery({ type });
+  // "trending" and "editors-picks" both source from published posts;
+  // we differentiate client-side until dedicated endpoints exist.
+  const listQuery = trpc.posts.listPublished.useQuery(undefined, {
+    enabled: type !== "featured",
+  });
+
+  const toArticle = (p: any): FeaturedArticle => ({
+    id: String(p?.id ?? p?.slug ?? ""),
+    title: p?.title ?? "",
+    excerpt: p?.summary ?? p?.excerpt ?? "",
+    pillar: p?.pillar ?? "",
+    readTime: typeof p?.readTime === "number" ? p.readTime : 0,
+    views: typeof p?.views === "number" ? p.views : 0,
+    featured: Boolean(p?.featured),
+  });
+
+  let articles: FeaturedArticle[] = [];
+  if (type === "featured") {
+    articles = featuredQuery.data ? [toArticle(featuredQuery.data)] : [];
+  } else if (type === "trending") {
+    // Most recently published posts as a stand-in for "trending".
+    articles = (listQuery.data ?? []).slice(0, 6).map(toArticle);
+  } else {
+    // editors-picks: prefer posts with a pillar set, fall back to all.
+    const list = listQuery.data ?? [];
+    const picks = list.filter((p: any) => p?.pillar).slice(0, 6);
+    articles = (picks.length > 0 ? picks : list.slice(0, 6)).map(toArticle);
+  }
+
+  const loading =
+    type === "featured" ? featuredQuery.isLoading : listQuery.isLoading;
 
   return { articles, loading };
 }
