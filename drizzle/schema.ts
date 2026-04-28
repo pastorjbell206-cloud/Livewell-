@@ -384,3 +384,32 @@ export const bundleBooks = mysqlTable("bundle_books", {
 
 export type BundleBook = typeof bundleBooks.$inferSelect;
 export type InsertBundleBook = typeof bundleBooks.$inferInsert;
+
+// ─── Lead Magnet Signups ────────────────────────────────────────────
+/**
+ * Email signups captured from lead-magnet landing pages.
+ *
+ * Persisted by `leadMagnetsRouter.signup` in server/routers/lead-magnets.ts
+ * and aggregated by `leadMagnetsRouter.getStats`. The router falls back to
+ * notify-only behavior when the database (or this table) is unavailable,
+ * so writes are best-effort and non-blocking for the signup flow.
+ *
+ * NOTE: After adding this table, run `drizzle-kit generate` to produce the
+ * matching SQL migration file in drizzle/ and the meta snapshot. This file
+ * intentionally does not hand-author the migration to avoid corrupting the
+ * drizzle-kit journal.
+ */
+export const leadMagnetSignups = mysqlTable("lead_magnet_signups", {
+  id: int("id").autoincrement().primaryKey(),
+  /** UUID assigned at request time so we can dedupe / correlate. */
+  publicId: varchar("publicId", { length: 64 }).notNull().unique(),
+  /** Email address of the signup. Not unique — same person can grab multiple magnets. */
+  email: varchar("email", { length: 320 }).notNull(),
+  /** Identifier of the lead magnet (e.g. "leadership-audit"). */
+  magnetId: varchar("magnetId", { length: 128 }).notNull(),
+  /** When the signup occurred. */
+  signedUpAt: timestamp("signedUpAt").defaultNow().notNull(),
+});
+
+export type LeadMagnetSignup = typeof leadMagnetSignups.$inferSelect;
+export type InsertLeadMagnetSignup = typeof leadMagnetSignups.$inferInsert;
