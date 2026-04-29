@@ -19,6 +19,7 @@ import About from "./pages/About";
 import Tools from "./pages/Tools";
 import FileStorage from "./pages/FileStorage";
 import AdminDashboard from "./pages/AdminDashboard";
+import AdminLogin from "./pages/AdminLogin";
 import AdminPosts from "./pages/AdminPosts";
 import AdminPostEditor from "./pages/AdminPostEditor";
 import AdminResources from "./pages/AdminResources";
@@ -98,6 +99,7 @@ function Router() {
       <Route path="/quiz" component={TheologyQuiz} />
           <Route path="/tools" component={Tools} />
       <Route path="/resources-for-pastors" component={ResourcesForPastors} />
+      <Route path="/admin/login" component={AdminLogin} />
       <Route path="/admin"><ProtectedRoute component={AdminDashboard} requireAdmin /></Route>
       <Route path="/admin/posts"><ProtectedRoute component={AdminPosts} requireAdmin /></Route>
       <Route path="/admin/posts/new"><ProtectedRoute component={AdminPostEditor} requireAdmin /></Route>
