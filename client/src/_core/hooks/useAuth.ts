@@ -1,6 +1,9 @@
 import { getLoginUrl } from "@/const";
-import { trpc } from "@/lib/trpc";
-import { TRPCClientError } from "@trpc/client";
+import {
+  useMutation,
+  useQuery,
+  useQueryClient,
+} from "@tanstack/react-query";
 import { useCallback, useEffect, useMemo } from "react";
 
 type UseAuthOptions = {
@@ -8,40 +11,71 @@ type UseAuthOptions = {
   redirectPath?: string;
 };
 
+type AuthUser = {
+  id?: number | string;
+  name?: string | null;
+  email?: string | null;
+  role?: string | null;
+};
+
+const AUTH_ME_KEY = ["auth.me"] as const;
+
+// The deployed REST endpoint returns { user: "admin" } (string) for a valid
+// cookie session. The legacy tRPC auth.me returned a full User object. Adapt
+// either wire shape into the AuthUser shape consumers expect (role/name/email).
+function normalizeMeResponse(payload: unknown): AuthUser | null {
+  if (payload == null || typeof payload !== "object") return null;
+  const raw = (payload as { user?: unknown }).user;
+  if (raw == null) return null;
+  if (typeof raw === "string") {
+    return { name: raw, role: "admin" };
+  }
+  if (typeof raw === "object") {
+    return raw as AuthUser;
+  }
+  return null;
+}
+
 export function useAuth(options?: UseAuthOptions) {
   const opts = options ?? {};
   const redirectOnUnauthenticated = opts.redirectOnUnauthenticated ?? false;
   // Lazily resolve redirectPath so getLoginUrl() is only called when needed.
   // This avoids a render-time crash if VITE_OAUTH_PORTAL_URL / VITE_APP_ID are missing.
-  const utils = trpc.useUtils();
+  const queryClient = useQueryClient();
 
-  const meQuery = trpc.auth.me.useQuery(undefined, {
+  const meQuery = useQuery<AuthUser | null>({
+    queryKey: AUTH_ME_KEY,
+    queryFn: async () => {
+      const r = await fetch("/api/auth/me", { credentials: "include" });
+      if (r.status === 401) return null;
+      if (!r.ok) throw new Error(`auth.me failed: ${r.status}`);
+      return normalizeMeResponse(await r.json());
+    },
     retry: false,
     refetchOnWindowFocus: false,
   });
 
-  const logoutMutation = trpc.auth.logout.useMutation({
+  const logoutMutation = useMutation({
+    mutationFn: async () => {
+      const r = await fetch("/api/auth/logout", {
+        method: "POST",
+        credentials: "include",
+      });
+      if (!r.ok) throw new Error(`logout failed: ${r.status}`);
+    },
     onSuccess: () => {
-      utils.auth.me.setData(undefined, null);
+      queryClient.setQueryData(AUTH_ME_KEY, null);
     },
   });
 
   const logout = useCallback(async () => {
     try {
       await logoutMutation.mutateAsync();
-    } catch (error: unknown) {
-      if (
-        error instanceof TRPCClientError &&
-        error.data?.code === "UNAUTHORIZED"
-      ) {
-        return;
-      }
-      throw error;
     } finally {
-      utils.auth.me.setData(undefined, null);
-      await utils.auth.me.invalidate();
+      queryClient.setQueryData(AUTH_ME_KEY, null);
+      await queryClient.invalidateQueries({ queryKey: AUTH_ME_KEY });
     }
-  }, [logoutMutation, utils]);
+  }, [logoutMutation, queryClient]);
 
   const state = useMemo(() => {
     localStorage.setItem(
