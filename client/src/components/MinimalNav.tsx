@@ -14,6 +14,7 @@ interface NavLink {
   dropdown?: DropdownItem[];
 }
 
+// Design token: gold = var(--gold) / #B8963E — keep in sync with index.css :root
 export default function MinimalNav() {
   const [location] = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);

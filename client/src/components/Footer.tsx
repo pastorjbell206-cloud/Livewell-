@@ -1,6 +1,9 @@
 import { Link } from "wouter";
+import { useTheme } from "@/contexts/ThemeContext";
+import { Sun, Moon } from "lucide-react";
 
 export default function Footer() {
+  const { theme, toggleTheme } = useTheme();
   return (
     <footer style={{ background: "#1A1A1A", color: "#F7F5F0", padding: "60px 20px 20px", marginTop: "60px", borderTop: "4px solid #B8963E" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
@@ -77,6 +80,12 @@ export default function Footer() {
           <div style={{ display: "flex", gap: "16px" }}>
             <a href="/privacy" style={{ color: "#D1C9BB", textDecoration: "none" }}>Privacy Policy</a>
             <a href="/terms" style={{ color: "#D1C9BB", textDecoration: "none" }}>Terms of Service</a>
+            {toggleTheme && (
+              <button onClick={toggleTheme} style={{ color: "#D1C9BB", display: "flex", alignItems: "center", gap: "4px", fontSize: "12px" }} title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}>
+                {theme === "dark" ? <Sun size={14} /> : <Moon size={14} />}
+                {theme === "dark" ? "Light" : "Dark"}
+              </button>
+            )}
           </div>
         </div>
       </div>
