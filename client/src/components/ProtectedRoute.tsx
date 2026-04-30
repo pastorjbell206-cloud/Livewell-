@@ -26,7 +26,7 @@ export default function ProtectedRoute({
   component: Component,
   requireAdmin = false,
 }: ProtectedRouteProps) {
-  const { user, isLoading } = useAuth();
+  const { user, loading: isLoading } = useAuth();
   const [, setLocation] = useLocation();
 
   useEffect(() => {
