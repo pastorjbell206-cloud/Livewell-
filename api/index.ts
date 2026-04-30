@@ -4,6 +4,7 @@ import type { VercelRequest, VercelResponse } from "@vercel/node";
 import mysql from "mysql2/promise";
 import crypto from "node:crypto";
 import bcrypt from "bcryptjs";
+import superjson from "superjson";
 
 async function withConn<T>(fn: (c: mysql.Connection) => Promise<T>): Promise<T> {
   const url = process.env.DATABASE_URL;
@@ -424,6 +425,19 @@ function toPostCard(row: any): any {
 
 async function trpcListPosts(): Promise<any[]> {
   return await withConn(async (c) => {
+    try {
+      const [rows]: any = await c.execute(
+        "SELECT id, slug, title, excerpt, body, pillar, readTime, published, featured, publishedAt, createdAt FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 500"
+      );
+      if (Array.isArray(rows) && rows.length > 0) {
+        return (rows as any[]).map((r) => ({
+          id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
+          pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
+          published: r.published, featured: r.featured,
+          createdAt: r.createdAt || r.publishedAt, publishedAt: r.publishedAt || r.createdAt,
+        }));
+      }
+    } catch { /* posts table may not exist, fall through to articles */ }
     const [rows]: any = await c.execute(
       "SELECT id, slug, title, subtitle, excerpt, topic, pillar, source, external_url, image_url, word_count, published_at, created_at FROM articles ORDER BY published_at DESC LIMIT 500"
     );
@@ -434,6 +448,22 @@ async function trpcListPosts(): Promise<any[]> {
 async function trpcGetPost(id: number | string): Promise<any | null> {
   return await withConn(async (c) => {
     const isNum = /^\d+$/.test(String(id));
+    try {
+      const sql = isNum
+        ? "SELECT * FROM posts WHERE id = ? LIMIT 1"
+        : "SELECT * FROM posts WHERE slug = ? LIMIT 1";
+      const [rows]: any = await c.execute(sql, [id]);
+      if (rows[0]) {
+        const r = rows[0];
+        return {
+          id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
+          body: r.body || null, content: r.body || null,
+          pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
+          published: r.published, featured: r.featured,
+          createdAt: r.createdAt, publishedAt: r.publishedAt || r.createdAt,
+        };
+      }
+    } catch { /* posts table may not exist */ }
     const sql = isNum
       ? "SELECT * FROM articles WHERE id = ? LIMIT 1"
       : "SELECT * FROM articles WHERE slug = ? LIMIT 1";
@@ -444,20 +474,30 @@ async function trpcGetPost(id: number | string): Promise<any | null> {
   });
 }
 
-async function trpcListBooks(): Promise<any[]> {
-  // Hardcoded in-voice book list keyed off CLAUDE.md projects. Database-backed later.
-  return [
+const FALLBACK_BOOKS = [
     { id: 1, slug: "the-monster-in-the-mirror", title: "The Monster in the Mirror", subtitle: "How Culture Shapes the God We Think We See", status: "published", pillar: "Prophetic Disruption", coverImage: null, description: "The monster is never in the mirror. That is the problem. A book that names six American cultural lenses distorting Scripture â and shows what reading against our own assumptions looks like.", releaseDate: "2025-09-01", createdAt: "2025-09-01T00:00:00Z" },
     { id: 2, slug: "when-god-bless-america-replaces-thy-kingdom-come", title: "When God Bless America Replaces Thy Kingdom Come", subtitle: "How Patriotism Became Our Practical Savior", status: "in-development", pillar: "Prophetic Justice", coverImage: null, description: "Civil religion is idolatry with a flag for a shroud. America is not Israel. The new covenant is made with people through Christ's blood â not with nations.", releaseDate: "2026-11-01", createdAt: "2026-01-01T00:00:00Z" },
     { id: 3, slug: "why-we-need-each-other", title: "Why We Need Each Other", subtitle: "Pastor Loneliness and the Case for Brotherhood", status: "in-development", pillar: "Leadership Formation", coverImage: null, description: "Pastor loneliness is a crisis. Brotherhood is the answer. The case for the Pastors Connection Network and the men it was built to carry.", releaseDate: "2026-06-01", createdAt: "2026-02-01T00:00:00Z" },
     { id: 4, slug: "healwell-devotionals", title: "HealWell: 52 Weeks in Costly Hope", subtitle: "A Year of Honest Devotionals for Tired Believers", status: "in-development", pillar: "Integrated Life", coverImage: null, description: "Fifty-two weeks of devotionals for people who have stopped pretending. Written from the room where people fall apart and the room where they find their footing.", releaseDate: "2026-12-01", createdAt: "2026-03-01T00:00:00Z" },
-  ];
+];
+
+async function trpcListBooks(): Promise<any[]> {
+  try {
+    return await withConn(async (c) => {
+      const [rows]: any = await c.execute("SELECT * FROM books ORDER BY sortOrder ASC, createdAt DESC");
+      if (Array.isArray(rows) && rows.length > 0) return rows;
+      return FALLBACK_BOOKS;
+    });
+  } catch {
+    return FALLBACK_BOOKS;
+  }
 }
 
 function trpcOk(res: VercelResponse, payload: any, status = 200) {
   res.setHeader("Content-Type", "application/json; charset=utf-8");
   res.setHeader("Cache-Control", "public, s-maxage=120, stale-while-revalidate=600");
-  res.status(status).send(JSON.stringify([{ result: { data: { json: payload } } }]));
+  const serialized = superjson.serialize(payload);
+  res.status(status).send(JSON.stringify([{ result: { data: serialized } }]));
 }
 
 function trpcErr(res: VercelResponse, code: string, message: string, status = 500) {
@@ -547,6 +587,33 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
     }
 
     switch (proc) {
+      case "auth.me": {
+        const session = authedSession(req);
+        if (!session) return trpcOk(res, null);
+        return trpcOk(res, {
+          id: 1,
+          openId: "admin",
+          name: "Admin",
+          email: null,
+          loginMethod: "password",
+          role: "admin" as const,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+          lastSignedIn: new Date(),
+        });
+      }
+      case "auth.logout": {
+        const logoutCookie = [
+          `${SESSION_COOKIE}=`,
+          "HttpOnly",
+          "Secure",
+          "SameSite=Lax",
+          "Path=/",
+          "Max-Age=0"
+        ].join("; ");
+        res.setHeader("Set-Cookie", logoutCookie);
+        return trpcOk(res, { ok: true });
+      }
       case "posts.listPublished":
       case "posts.listAll": {
         const data = await trpcListPosts();
@@ -598,8 +665,200 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         const data = await quizGetRecommendations(input);
         return trpcOk(res, data);
       }
+      case "posts.create": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const slug = input?.slug || input?.title?.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+        return await withConn(async (c) => {
+          const [r]: any = await c.execute(
+            `INSERT INTO posts (title, slug, body, excerpt, pillar, readTime, published, createdAt, updatedAt)
+             VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())`,
+            [input?.title || "", slug, input?.body || "", input?.excerpt || "", input?.pillar || "Theological Depth", input?.readTime || "5 min", input?.published ?? false]
+          );
+          const created = await trpcGetPost(r.insertId);
+          return trpcOk(res, created);
+        });
+      }
+      case "posts.update": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const postId = input?.id;
+        if (!postId) return trpcErr(res, "BAD_REQUEST", "id required", 400);
+        return await withConn(async (c) => {
+          const sets: string[] = [];
+          const params: any[] = [];
+          for (const field of ["title", "slug", "body", "excerpt", "pillar", "readTime", "published", "featured"]) {
+            if (input?.[field] !== undefined) {
+              sets.push(`${field} = ?`);
+              params.push(input[field]);
+            }
+          }
+          if (sets.length === 0) return trpcOk(res, { ok: true });
+          sets.push("updatedAt = NOW()");
+          params.push(postId);
+          await c.execute(`UPDATE posts SET ${sets.join(", ")} WHERE id = ?`, params);
+          const updated = await trpcGetPost(postId);
+          return trpcOk(res, updated);
+        });
+      }
+      case "posts.delete": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const delId = input?.id ?? input;
+        await withConn(async (c) => { await c.execute("DELETE FROM posts WHERE id = ?", [delId]); });
+        return trpcOk(res, { ok: true });
+      }
+      case "books.create": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        return await withConn(async (c) => {
+          const slug = input?.slug || input?.title?.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+          const [r]: any = await c.execute(
+            `INSERT INTO books (title, slug, author, description, coverImage, bookType, published, createdAt, updatedAt)
+             VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())`,
+            [input?.title || "", slug, input?.author || "James Bell", input?.description || "", input?.coverImage || null, input?.bookType || "authored", input?.published ?? false]
+          );
+          const [rows]: any = await c.execute("SELECT * FROM books WHERE id = ?", [r.insertId]);
+          return trpcOk(res, rows[0] || null);
+        });
+      }
+      case "books.update": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const bookId = input?.id;
+        if (!bookId) return trpcErr(res, "BAD_REQUEST", "id required", 400);
+        return await withConn(async (c) => {
+          const sets: string[] = [];
+          const params: any[] = [];
+          for (const field of ["title", "slug", "author", "description", "coverImage", "purchaseUrl", "bookType", "published"]) {
+            if (input?.[field] !== undefined) {
+              sets.push(`${field} = ?`);
+              params.push(input[field]);
+            }
+          }
+          if (sets.length === 0) return trpcOk(res, { ok: true });
+          sets.push("updatedAt = NOW()");
+          params.push(bookId);
+          await c.execute(`UPDATE books SET ${sets.join(", ")} WHERE id = ?`, params);
+          const [rows]: any = await c.execute("SELECT * FROM books WHERE id = ?", [bookId]);
+          return trpcOk(res, rows[0] || null);
+        });
+      }
+      case "books.delete": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const bDelId = input?.id ?? input;
+        await withConn(async (c) => { await c.execute("DELETE FROM books WHERE id = ?", [bDelId]); });
+        return trpcOk(res, { ok: true });
+      }
+      case "resources.create": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        return await withConn(async (c) => {
+          const [r]: any = await c.execute(
+            `INSERT INTO resources (title, description, category, fileType, url, published, createdAt, updatedAt)
+             VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())`,
+            [input?.title || "", input?.description || "", input?.category || "", input?.fileType || "", input?.url || "", input?.published ?? false]
+          );
+          const [rows]: any = await c.execute("SELECT * FROM resources WHERE id = ?", [r.insertId]);
+          return trpcOk(res, rows[0] || null);
+        });
+      }
+      case "resources.getById": {
+        const rId = input?.id ?? input;
+        return await withConn(async (c) => {
+          const [rows]: any = await c.execute("SELECT * FROM resources WHERE id = ?", [rId]);
+          if (!rows[0]) return trpcErr(res, "NOT_FOUND", "resource not found", 404);
+          return trpcOk(res, rows[0]);
+        });
+      }
+      case "resources.update": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const resId = input?.id;
+        if (!resId) return trpcErr(res, "BAD_REQUEST", "id required", 400);
+        return await withConn(async (c) => {
+          const sets: string[] = [];
+          const params: any[] = [];
+          for (const field of ["title", "description", "category", "fileType", "url", "published"]) {
+            if (input?.[field] !== undefined) {
+              sets.push(`${field} = ?`);
+              params.push(input[field]);
+            }
+          }
+          if (sets.length === 0) return trpcOk(res, { ok: true });
+          sets.push("updatedAt = NOW()");
+          params.push(resId);
+          await c.execute(`UPDATE resources SET ${sets.join(", ")} WHERE id = ?`, params);
+          const [rows]: any = await c.execute("SELECT * FROM resources WHERE id = ?", [resId]);
+          return trpcOk(res, rows[0] || null);
+        });
+      }
+      case "resources.delete": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const rDelId = input?.id ?? input;
+        await withConn(async (c) => { await c.execute("DELETE FROM resources WHERE id = ?", [rDelId]); });
+        return trpcOk(res, { ok: true });
+      }
+      case "settings.get": {
+        const key = input?.key ?? input;
+        return await withConn(async (c) => {
+          const [rows]: any = await c.execute("SELECT settingValue FROM site_settings WHERE settingKey = ?", [key]);
+          return trpcOk(res, rows[0]?.settingValue ?? null);
+        });
+      }
+      case "settings.getAll": {
+        return await withConn(async (c) => {
+          const [rows]: any = await c.execute("SELECT settingKey, settingValue FROM site_settings");
+          const settings: Record<string, string> = {};
+          for (const r of rows as any[]) settings[r.settingKey] = r.settingValue;
+          return trpcOk(res, settings);
+        });
+      }
+      case "settings.set": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const sKey = input?.key;
+        const sVal = input?.value;
+        if (!sKey) return trpcErr(res, "BAD_REQUEST", "key required", 400);
+        await withConn(async (c) => {
+          await c.execute(
+            "INSERT INTO site_settings (settingKey, settingValue, updatedAt) VALUES (?, ?, NOW()) ON DUPLICATE KEY UPDATE settingValue = VALUES(settingValue), updatedAt = NOW()",
+            [sKey, sVal ?? ""]
+          );
+        });
+        return trpcOk(res, { ok: true });
+      }
+      case "settings.setMultiple": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const entries = input?.settings ?? input;
+        if (!entries || typeof entries !== "object") return trpcErr(res, "BAD_REQUEST", "settings required", 400);
+        await withConn(async (c) => {
+          for (const [k, v] of Object.entries(entries)) {
+            await c.execute(
+              "INSERT INTO site_settings (settingKey, settingValue, updatedAt) VALUES (?, ?, NOW()) ON DUPLICATE KEY UPDATE settingValue = VALUES(settingValue), updatedAt = NOW()",
+              [k, String(v ?? "")]
+            );
+          }
+        });
+        return trpcOk(res, { ok: true });
+      }
+      case "notifications.listAll": {
+        return await withConn(async (c) => {
+          const [rows]: any = await c.execute("SELECT * FROM notifications ORDER BY createdAt DESC LIMIT 50");
+          return trpcOk(res, rows);
+        });
+      }
+      case "notifications.create": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        return await withConn(async (c) => {
+          await c.execute(
+            "INSERT INTO notifications (type, title, message, showAsBanner, createdAt) VALUES (?, ?, ?, ?, NOW())",
+            [input?.type || "info", input?.title || "", input?.message || "", input?.showAsBanner ?? false]
+          );
+          return trpcOk(res, { ok: true });
+        });
+      }
+      case "posts.getFeatured": {
+        return await withConn(async (c) => {
+          const [rows]: any = await c.execute(
+            "SELECT id, slug, title, excerpt, pillar, published_at, created_at, word_count FROM posts WHERE featured = true AND published = true ORDER BY created_at DESC LIMIT 10"
+          );
+          return trpcOk(res, (rows as any[]).map(toPostCard));
+        });
+      }
       default:
-        // Empty list fallback for unknown list procedures so the UI degrades gracefully.
         if (proc.endsWith(".listPublished") || proc.endsWith(".listAll")) return trpcOk(res, []);
         return trpcErr(res, "NOT_FOUND", "procedure not found: " + proc, 404);
     }
@@ -695,7 +954,7 @@ async function authLogin(req: VercelRequest, res: VercelResponse) {
     }
     const token = signSession("admin", Date.now() + SESSION_TTL_MS);
     const cookie = [
-      `session=${token}`,
+      `${SESSION_COOKIE}=${token}`,
       "HttpOnly",
       "Secure",
       "SameSite=Lax",
@@ -720,7 +979,7 @@ async function authMe(req: VercelRequest, res: VercelResponse) {
 
 async function authLogout(_req: VercelRequest, res: VercelResponse) {
   const cookie = [
-    "session=",
+    `${SESSION_COOKIE}=`,
     "HttpOnly",
     "Secure",
     "SameSite=Lax",
