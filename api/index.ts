@@ -264,6 +264,82 @@ async function adminSeedContent(req: VercelRequest, res: VercelResponse) {
     const resourcesData: any[] = body?.resources || [];
 
     const out = await withConn(async (c) => {
+      // Create tables if they don't exist
+      await c.execute(`CREATE TABLE IF NOT EXISTS site_settings (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        settingKey VARCHAR(191) NOT NULL UNIQUE,
+        settingValue TEXT,
+        updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`);
+      await c.execute(`CREATE TABLE IF NOT EXISTS posts (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        title VARCHAR(500) NOT NULL,
+        slug VARCHAR(191) NOT NULL UNIQUE,
+        body LONGTEXT,
+        excerpt TEXT,
+        pillar VARCHAR(64),
+        readTime VARCHAR(20),
+        published BOOLEAN DEFAULT false,
+        featured BOOLEAN DEFAULT false,
+        contentType VARCHAR(32) DEFAULT 'general',
+        audience VARCHAR(64) DEFAULT 'general',
+        topic VARCHAR(64),
+        publishedAt DATETIME,
+        createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+        updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`);
+      await c.execute(`CREATE TABLE IF NOT EXISTS books (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        title VARCHAR(500) NOT NULL,
+        slug VARCHAR(191) UNIQUE,
+        author VARCHAR(200) DEFAULT 'James Bell',
+        description TEXT,
+        coverImage VARCHAR(1000),
+        purchaseUrl VARCHAR(1000),
+        bookType VARCHAR(32) DEFAULT 'authored',
+        sortOrder INT DEFAULT 0,
+        published BOOLEAN DEFAULT true,
+        createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+        updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`);
+      await c.execute(`CREATE TABLE IF NOT EXISTS resources (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        title VARCHAR(500) NOT NULL,
+        description TEXT,
+        category VARCHAR(64),
+        fileType VARCHAR(32),
+        url VARCHAR(1000),
+        published BOOLEAN DEFAULT true,
+        createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+        updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`);
+      await c.execute(`CREATE TABLE IF NOT EXISTS notifications (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        type VARCHAR(32) DEFAULT 'info',
+        title VARCHAR(500),
+        message TEXT,
+        showAsBanner BOOLEAN DEFAULT false,
+        active BOOLEAN DEFAULT true,
+        createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`);
+      await c.execute(`CREATE TABLE IF NOT EXISTS testimonials (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        name VARCHAR(200),
+        content TEXT,
+        approved BOOLEAN DEFAULT false,
+        featured BOOLEAN DEFAULT false,
+        imageUrl VARCHAR(1000),
+        createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`);
+      await c.execute(`CREATE TABLE IF NOT EXISTS comments (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        postId INT,
+        name VARCHAR(200),
+        content TEXT,
+        approved BOOLEAN DEFAULT false,
+        createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`);
+
       let postsInserted = 0, booksInserted = 0, settingsSet = 0, resourcesInserted = 0;
 
       for (const p of posts) {
