@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
+import { trpc } from "@/lib/trpc";
 
 export default function AdminLogin() {
   const [, navigate] = useLocation();
+  const utils = trpc.useUtils();
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -32,6 +34,12 @@ export default function AdminLogin() {
         const data = await res.json().catch(() => ({}));
         throw new Error(data.message || data.error || `Login failed (${res.status})`);
       }
+      const verify = await fetch("/api/auth/me", { credentials: "include" });
+      const verifyData = await verify.json().catch(() => ({}));
+      if (!verify.ok || !verifyData.user) {
+        throw new Error("Login succeeded but session cookie was not saved. Check browser cookie settings.");
+      }
+      await utils.auth.me.invalidate();
       navigate("/admin");
     } catch (err: any) {
       setError(err?.message || "Login failed");
