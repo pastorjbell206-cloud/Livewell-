@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import ReadingProgressBar from "@/components/ReadingProgressBar";
 import { SEOMeta, getArticleSchema } from "@/components/SEOMeta";
 import { useParams, useLocation } from "wouter";
 import { useMemo, useState } from "react";
@@ -133,6 +134,7 @@ export default function ArticleDetail() {
 
   return (
     <Layout>
+      <ReadingProgressBar />
       <SEOMeta
         title={post.title}
         description={post.excerpt || post.title}

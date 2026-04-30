@@ -518,14 +518,32 @@ async function pcnSignup(req: VercelRequest, res: VercelResponse) {
 async function sitemap(_req: VercelRequest, res: VercelResponse) {
   try {
     const base = "https://www.livewellbyjamesbell.co";
-    const staticPaths = ["/", "/writing", "/books", "/about", "/pcn", "/tools", "/kits", "/marriage", "/parenting", "/doubt", "/start-here"];
-    const articles = await withConn(async (c) => {
-      const [rows]: any = await c.execute("SELECT slug, updated_at FROM articles ORDER BY updated_at DESC LIMIT 1000");
-      return rows;
-    });
+    const staticPaths = ["/", "/writing", "/books", "/about", "/quiz", "/search", "/marriage", "/parenting", "/doubt", "/start", "/for-pastors", "/for-leaders", "/membership", "/reading-paths", "/resources"];
+    let articles: any[] = [];
+    try {
+      articles = await withConn(async (c) => {
+        const [rows]: any = await c.execute("SELECT slug, updatedAt FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 2000");
+        return rows;
+      });
+    } catch {
+      try {
+        articles = await withConn(async (c) => {
+          const [rows]: any = await c.execute("SELECT slug, updated_at as updatedAt FROM articles ORDER BY updated_at DESC LIMIT 2000");
+          return rows;
+        });
+      } catch { /* no articles table either */ }
+    }
+    let bookSlugs: any[] = [];
+    try {
+      bookSlugs = await withConn(async (c) => {
+        const [rows]: any = await c.execute("SELECT slug FROM books WHERE published = true");
+        return rows;
+      });
+    } catch { /* no books table */ }
     const urls = [
       ...staticPaths.map(p => ({ loc: base + p, pri: p === "/" ? "1.0" : "0.8" })),
-      ...articles.map((a: any) => ({ loc: `${base}/writing/${a.slug}`, pri: "0.7", mod: new Date(a.updated_at).toISOString() })),
+      ...articles.map((a: any) => ({ loc: `${base}/writing/${a.slug}`, pri: "0.7", mod: a.updatedAt ? new Date(a.updatedAt).toISOString() : undefined })),
+      ...bookSlugs.filter((b: any) => b.slug).map((b: any) => ({ loc: `${base}/books/${b.slug}`, pri: "0.6" })),
     ];
     const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${u.loc}</loc>${u.mod ? `<lastmod>${u.mod}</lastmod>` : ""}<priority>${u.pri}</priority></url>`).join("\n")}\n</urlset>`;
     res.setHeader("Content-Type", "application/xml; charset=utf-8");
