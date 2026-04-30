@@ -10,7 +10,7 @@ interface EmailCapturePopupProps {
 }
 
 export function EmailCapturePopup({
-  triggerAfterSeconds = 120,
+  triggerAfterSeconds = 300,
   articleTitle,
 }: EmailCapturePopupProps) {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,13 +33,12 @@ export function EmailCapturePopup({
   });
 
   useEffect(() => {
-    // Check if user has already seen this popup
-    const hasSeenPopup = localStorage.getItem("emailCapturePopupSeen");
-    if (hasSeenPopup) return;
+    const lastShown = localStorage.getItem("lw_email_popup_last");
+    if (lastShown && Date.now() - Number(lastShown) < 7 * 24 * 60 * 60 * 1000) return;
 
     const timer = setTimeout(() => {
       setIsOpen(true);
-      localStorage.setItem("emailCapturePopupSeen", "true");
+      localStorage.setItem("lw_email_popup_last", String(Date.now()));
     }, triggerAfterSeconds * 1000);
 
     return () => clearTimeout(timer);

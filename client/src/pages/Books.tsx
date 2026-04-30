@@ -60,7 +60,7 @@ export default function Books() {
         {featuredBook && (
           <section style={{ background: "#2D4A3E", color: "#F7F5F0", padding: "60px 20px" }}>
             <div className="wrap" style={{ maxWidth: "1000px", margin: "0 auto" }}>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px", alignItems: "center" }}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
                 <div>
                   <img 
                     src={featuredBook.cover} 
@@ -282,7 +282,7 @@ export default function Books() {
                 <X size={24} />
               </button>
 
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "32px", marginBottom: "32px" }}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div>
                   <img 
                     src={selectedBook.cover} 

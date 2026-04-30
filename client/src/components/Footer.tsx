@@ -75,8 +75,8 @@ export default function Footer() {
         <div style={{ borderTop: "1px solid #B8963E", paddingTop: "20px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", fontSize: "12px", color: "#D1C9BB" }}>
           <span>&copy; 2026 LiveWell by James Bell. All rights reserved.</span>
           <div style={{ display: "flex", gap: "16px" }}>
-            <a href="#" style={{ color: "#D1C9BB", textDecoration: "none" }}>Privacy Policy</a>
-            <a href="#" style={{ color: "#D1C9BB", textDecoration: "none" }}>Terms of Service</a>
+            <a href="/privacy" style={{ color: "#D1C9BB", textDecoration: "none" }}>Privacy Policy</a>
+            <a href="/terms" style={{ color: "#D1C9BB", textDecoration: "none" }}>Terms of Service</a>
           </div>
         </div>
       </div>

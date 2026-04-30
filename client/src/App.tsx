@@ -33,6 +33,8 @@ const Marriage = lazy(() => import("./pages/Marriage"));
 const Parenting = lazy(() => import("./pages/Parenting"));
 const Doubt = lazy(() => import("./pages/Doubt"));
 const StartHereQuiz = lazy(() => import("./pages/StartHereQuiz"));
+const Privacy = lazy(() => import("./pages/Privacy"));
+const Terms = lazy(() => import("./pages/Terms"));
 const ReadingPathDetail = lazy(() =>
   import("./pages/ReadingPathDetail").then((m) => ({ default: m.ReadingPathDetail }))
 );
@@ -121,6 +123,8 @@ function Router() {
         <Route path="/search" component={SearchPage} />
         <Route path="/quiz" component={TheologyQuiz} />
         <Route path="/tools" component={Tools} />
+        <Route path="/privacy" component={Privacy} />
+        <Route path="/terms" component={Terms} />
         <Route path="/resources-for-pastors" component={ResourcesForPastors} />
         <Route path="/admin/login" component={AdminLogin} />
         <Route path="/admin"><ProtectedRoute component={AdminDashboard} requireAdmin /></Route>
