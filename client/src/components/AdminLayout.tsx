@@ -1,6 +1,5 @@
 import { Link, useLocation } from "wouter";
 import { useAuth } from "@/_core/hooks/useAuth";
-import { getLoginUrl } from "@/const";
 import {
   LayoutDashboard,
   PenLine,
@@ -10,7 +9,6 @@ import {
   Settings,
   ArrowLeft,
   LogOut,
-  Loader2,
   RefreshCw,
   Bell,
   MessageSquare,
@@ -30,59 +28,7 @@ const ADMIN_NAV = [
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
-  const { user, loading, isAuthenticated, logout } = useAuth();
-
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: "#F7F5F0" }}>
-        <Loader2 size={32} className="animate-spin" style={{ color: "#B8963E" }} />
-      </div>
-    );
-  }
-
-  if (!isAuthenticated) {
-    return (
-      <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: "#F7F5F0" }}>
-        <div className="text-center max-w-md">
-          <h1 className="font-display text-2xl font-bold mb-4" style={{ color: "#1A1A1A" }}>
-            Admin Access Required
-          </h1>
-          <p className="font-body mb-6" style={{ color: "#6B7280" }}>
-            Please sign in with an admin account to access the dashboard.
-          </p>
-          <a
-            href={getLoginUrl()}
-            className="inline-flex items-center gap-2 px-6 py-3 font-ui text-sm font-medium no-underline"
-            style={{ backgroundColor: "#1A1A1A", color: "#F7F5F0" }}
-          >
-            Sign In
-          </a>
-        </div>
-      </div>
-    );
-  }
-
-  if (user?.role !== "admin") {
-    return (
-      <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: "#F7F5F0" }}>
-        <div className="text-center max-w-md">
-          <h1 className="font-display text-2xl font-bold mb-4" style={{ color: "#1A1A1A" }}>
-            Access Denied
-          </h1>
-          <p className="font-body mb-6" style={{ color: "#6B7280" }}>
-            You don't have admin privileges. Please contact the site owner.
-          </p>
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 px-6 py-3 font-ui text-sm font-medium no-underline"
-            style={{ backgroundColor: "#1A1A1A", color: "#F7F5F0" }}
-          >
-            <ArrowLeft size={14} /> Back to Site
-          </Link>
-        </div>
-      </div>
-    );
-  }
+  const { user, logout } = useAuth();
 
   return (
     <div className="min-h-screen flex" style={{ backgroundColor: "#F7F5F0" }}>
