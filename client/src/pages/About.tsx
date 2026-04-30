@@ -66,7 +66,7 @@ This is a space for serious theological thinking that doesn't require a seminary
         {/* Hero Section */}
         <section className="py-20" style={{ backgroundColor: "#F7F5F0" }}>
           <div className="container">
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px", alignItems: "start" }}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
               {/* Portrait */}
               <div >
                 <div className="relative">

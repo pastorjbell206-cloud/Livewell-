@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { SEOMeta, getArticleSchema } from "@/components/SEOMeta";
 import { useParams, useLocation } from "wouter";
 import { useMemo, useState } from "react";
 import { Streamdown } from "streamdown";
@@ -10,7 +11,9 @@ import { ArrowLeft, Share2, Bookmark, Clock, User } from "lucide-react";
 function SocialShareButtons({ title, url }: { title: string; url: string }) {
   const handleCopyLink = () => {
     navigator.clipboard.writeText(url);
-    alert('Link copied to clipboard!');
+    // show inline feedback instead of alert
+    const el = document.getElementById('copy-toast');
+    if (el) { el.style.opacity = '1'; setTimeout(() => { el.style.opacity = '0'; }, 2000); }
   };
 
   const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`;
@@ -130,6 +133,21 @@ export default function ArticleDetail() {
 
   return (
     <Layout>
+      <SEOMeta
+        title={post.title}
+        description={post.excerpt || post.title}
+        type="article"
+        author="James Bell"
+        publishedDate={String(post.publishedAt || post.createdAt || "")}
+        structuredData={getArticleSchema(
+          post.title,
+          post.excerpt || post.title,
+          String(post.publishedAt || post.createdAt || new Date().toISOString()),
+          undefined,
+          undefined,
+          `https://www.livewellbyjamesbell.co/writing/${post.slug}`
+        )}
+      />
       <article>
         {/* BACK BUTTON */}
         <div style={{ padding: "20px 32px", borderBottom: "1px solid var(--border)" }}>
@@ -408,7 +426,8 @@ export default function ArticleDetail() {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                alert("Thank you for subscribing!");
+                const btn = e.currentTarget.querySelector('button');
+                if (btn) { btn.textContent = '✓ Subscribed!'; btn.style.background = 'var(--forest)'; btn.style.color = 'white'; }
               }}
               style={{
                 display: "flex",
@@ -478,7 +497,7 @@ export default function ArticleDetail() {
                   cursor: "pointer",
                   transition: "all 0.2s ease"
                 }}
-                  onClick={() => navigate(`/articles/${relatedPost.slug}`)}
+                  onClick={() => navigate(`/writing/${relatedPost.slug}`)}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.borderColor = "var(--gold)";
                     e.currentTarget.style.boxShadow = "0 4px 12px rgba(184,150,62,0.1)";

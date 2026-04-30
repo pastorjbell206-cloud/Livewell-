@@ -50,11 +50,16 @@ export function ExitIntentModal({ articlePillar = "Leadership Formation", articl
   useEffect(() => {
     if (hasShown) return;
 
+    const lastShown = localStorage.getItem("lw_exit_modal_last");
+    if (lastShown && Date.now() - Number(lastShown) < 7 * 24 * 60 * 60 * 1000) return;
+
+    const pageLoadTime = Date.now();
+
     const handleMouseLeave = (e: MouseEvent) => {
-      // Only trigger if mouse leaves from top of page
-      if (e.clientY <= 0 && !hasShown) {
+      if (e.clientY <= 0 && !hasShown && Date.now() - pageLoadTime > 60000) {
         setIsVisible(true);
         setHasShown(true);
+        localStorage.setItem("lw_exit_modal_last", String(Date.now()));
       }
     };
 
