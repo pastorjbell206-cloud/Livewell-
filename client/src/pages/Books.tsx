@@ -36,6 +36,13 @@ export default function Books() {
         title="Books"
         description="Published works by James Bell and curated reading list. Explore books on theology, faith, leadership, and Christian thought."
         keywords="books, theology, faith, Christian leadership, reading list"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "Books by James Bell",
+          description: "Published works by James Bell and curated reading list.",
+          url: "https://www.livewellbyjamesbell.co/books",
+        }}
       />
       <div>
         {/* HERO SECTION */}

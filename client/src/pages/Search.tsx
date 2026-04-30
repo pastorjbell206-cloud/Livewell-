@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
 import Layout from "@/components/Layout";
+import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
 import { ArrowLeft, Search as SearchIcon } from "lucide-react";
 
@@ -68,6 +69,7 @@ export default function SearchPage() {
 
   return (
     <Layout>
+      <SEOMeta title="Search" description="Search 880+ essays on faith, theology, and the Christian life." />
       <div className="container py-16 max-w-4xl mx-auto">
         {/* Back button */}
         <button
