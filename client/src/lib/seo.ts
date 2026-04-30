@@ -8,7 +8,7 @@ export interface SEOMetadata {
   keywords?: string[];
   image?: string;
   url?: string;
-  type?: "article" | "website" | "profile";
+  type?: "article" | "website" | "profile" | "webpage" | "book";
   author?: string;
   publishedDate?: string;
   modifiedDate?: string;

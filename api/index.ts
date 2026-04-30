@@ -17,14 +17,33 @@ function authed(req: VercelRequest): boolean {
   return Boolean(process.env.JWT_SECRET) && key === process.env.JWT_SECRET;
 }
 
-const CORS = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type,x-seed-key",
-};
+function getAllowedOrigin(req: VercelRequest): string {
+  const origin = req.headers.origin || "";
+  const allowed = [
+    "https://www.livewellbyjamesbell.co",
+    "https://livewellbyjamesbell.co",
+  ];
+  if (process.env.NODE_ENV === "development") {
+    allowed.push("http://localhost:3000", "http://localhost:5173");
+  }
+  return allowed.includes(origin) ? origin : allowed[0];
+}
+
+function corsHeaders(req: VercelRequest) {
+  return {
+    "Access-Control-Allow-Origin": getAllowedOrigin(req),
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type,x-seed-key",
+    "Access-Control-Allow-Credentials": "true",
+    "Vary": "Origin",
+  };
+}
+
+function applyCors(req: VercelRequest, res: VercelResponse) {
+  for (const [k, v] of Object.entries(corsHeaders(req))) res.setHeader(k, v);
+}
 
 function json(res: VercelResponse, status: number, body: any) {
-  for (const [k, v] of Object.entries(CORS)) res.setHeader(k, v);
   res.setHeader("Content-Type", "application/json; charset=utf-8");
   res.status(status).send(JSON.stringify(body));
 }
@@ -436,14 +455,12 @@ async function trpcListBooks(): Promise<any[]> {
 }
 
 function trpcOk(res: VercelResponse, payload: any, status = 200) {
-  for (const [k, v] of Object.entries(CORS)) res.setHeader(k, v);
   res.setHeader("Content-Type", "application/json; charset=utf-8");
   res.setHeader("Cache-Control", "public, s-maxage=120, stale-while-revalidate=600");
   res.status(status).send(JSON.stringify([{ result: { data: { json: payload } } }]));
 }
 
 function trpcErr(res: VercelResponse, code: string, message: string, status = 500) {
-  for (const [k, v] of Object.entries(CORS)) res.setHeader(k, v);
   res.setHeader("Content-Type", "application/json; charset=utf-8");
   res.status(status).send(JSON.stringify([{ error: { message, code: -32603, data: { code, httpStatus: status } } }]));
 }
@@ -676,7 +693,7 @@ async function authLogin(req: VercelRequest, res: VercelResponse) {
       res.status(401).json({ error: "invalid credentials" });
       return;
     }
-    const token = signSession("admin", 7 * 24 * 60 * 60 * 1000);
+    const token = signSession("admin", Date.now() + SESSION_TTL_MS);
     const cookie = [
       `session=${token}`,
       "HttpOnly",
@@ -715,8 +732,8 @@ async function authLogout(_req: VercelRequest, res: VercelResponse) {
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  applyCors(req, res);
   if (req.method === "OPTIONS") {
-    for (const [k, v] of Object.entries(CORS)) res.setHeader(k, v);
     return res.status(204).end();
   }
   try {

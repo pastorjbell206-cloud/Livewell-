@@ -106,5 +106,8 @@ temp/
 *.sqlite
 *.sqlite3
 
+# Vercel
+.vercel
+
 # Webdev artifacts (checkpoint zips, migrations, etc.)
 .webdev/

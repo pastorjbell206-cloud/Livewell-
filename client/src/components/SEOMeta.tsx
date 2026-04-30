@@ -8,7 +8,7 @@ interface SEOMetaProps {
   keywords?: string;
   image?: string;
   url?: string;
-  type?: 'website' | 'article' | 'book';
+  type?: 'website' | 'article' | 'book' | 'webpage';
   author?: string;
   publishedDate?: string;
   modifiedDate?: string;
