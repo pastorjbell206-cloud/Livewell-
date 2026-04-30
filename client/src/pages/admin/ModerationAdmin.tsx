@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { AdminTestimonialsPanel } from "@/components/AdminTestimonialsPanel";
 import { AdminCommentsPanel } from "@/components/AdminCommentsPanel";
+import AdminLayout from "@/components/AdminLayout";
 
 export function ModerationAdmin() {
   const [activeTab, setActiveTab] = useState<"testimonials" | "comments">("testimonials");
 
   return (
+    <AdminLayout>
     <div className="space-y-8">
       {/* Tabs */}
       <div className="flex gap-4 border-b" style={{ borderColor: "#D1C9BB" }}>
@@ -41,5 +43,6 @@ export function ModerationAdmin() {
         {activeTab === "comments" && <AdminCommentsPanel />}
       </div>
     </div>
+    </AdminLayout>
   );
 }

@@ -1146,6 +1146,67 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
           return { result: { data: superjson.serialize((rows as any[]).map(toPostCard)) } };
         });
       } catch { return { result: { data: superjson.serialize([]) } }; }
+    case "community.testimonials.listAll":
+      try {
+        return await withConn(async (c) => {
+          const [pending]: any = await c.execute("SELECT * FROM testimonials WHERE approved = false ORDER BY createdAt DESC");
+          const [approved]: any = await c.execute("SELECT * FROM testimonials WHERE approved = true ORDER BY createdAt DESC");
+          return { result: { data: superjson.serialize({ pending, approved }) } };
+        });
+      } catch { return { result: { data: superjson.serialize({ pending: [], approved: [] }) } }; }
+    case "community.testimonials.approve":
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
+      try {
+        await withConn(async (c) => { await c.execute("UPDATE testimonials SET approved = true WHERE id = ?", [input?.id ?? input]); });
+        return { result: { data: superjson.serialize({ ok: true }) } };
+      } catch (e: any) { return { error: { message: String(e?.message), code: -32603, data: { code: "INTERNAL_SERVER_ERROR", httpStatus: 500 } } }; }
+    case "community.testimonials.delete":
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
+      try {
+        await withConn(async (c) => { await c.execute("DELETE FROM testimonials WHERE id = ?", [input?.id ?? input]); });
+        return { result: { data: superjson.serialize({ ok: true }) } };
+      } catch (e: any) { return { error: { message: String(e?.message), code: -32603, data: { code: "INTERNAL_SERVER_ERROR", httpStatus: 500 } } }; }
+    case "community.testimonials.toggleFeatured":
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
+      try {
+        await withConn(async (c) => { await c.execute("UPDATE testimonials SET featured = NOT featured WHERE id = ?", [input?.id ?? input]); });
+        return { result: { data: superjson.serialize({ ok: true }) } };
+      } catch (e: any) { return { error: { message: String(e?.message), code: -32603, data: { code: "INTERNAL_SERVER_ERROR", httpStatus: 500 } } }; }
+    case "community.comments.listAll":
+      try {
+        return await withConn(async (c) => {
+          const [pending]: any = await c.execute("SELECT * FROM comments WHERE approved = false ORDER BY createdAt DESC");
+          const [approved]: any = await c.execute("SELECT * FROM comments WHERE approved = true ORDER BY createdAt DESC");
+          return { result: { data: superjson.serialize({ pending, approved }) } };
+        });
+      } catch { return { result: { data: superjson.serialize({ pending: [], approved: [] }) } }; }
+    case "community.comments.approve":
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
+      try {
+        await withConn(async (c) => { await c.execute("UPDATE comments SET approved = true WHERE id = ?", [input?.id ?? input]); });
+        return { result: { data: superjson.serialize({ ok: true }) } };
+      } catch (e: any) { return { error: { message: String(e?.message), code: -32603, data: { code: "INTERNAL_SERVER_ERROR", httpStatus: 500 } } }; }
+    case "community.comments.delete":
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
+      try {
+        await withConn(async (c) => { await c.execute("DELETE FROM comments WHERE id = ?", [input?.id ?? input]); });
+        return { result: { data: superjson.serialize({ ok: true }) } };
+      } catch (e: any) { return { error: { message: String(e?.message), code: -32603, data: { code: "INTERNAL_SERVER_ERROR", httpStatus: 500 } } }; }
+    case "feedSync.getStatus":
+      return { result: { data: superjson.serialize({ sources: [{ name: "Substack", url: "https://livewellbyjamesbell.substack.com/feed", lastSync: null, status: "idle" }], schedule: "Manual" }) } };
+    case "feedSync.syncAll":
+    case "feedSync.syncSource":
+      return { result: { data: superjson.serialize({ ok: true, message: "Feed sync not yet configured. Use the admin panel to add articles manually." }) } };
+    case "notifications.delete":
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
+      try {
+        await withConn(async (c) => { await c.execute("DELETE FROM notifications WHERE id = ?", [input?.id ?? input]); });
+        return { result: { data: superjson.serialize({ ok: true }) } };
+      } catch (e: any) { return { error: { message: String(e?.message), code: -32603, data: { code: "INTERNAL_SERVER_ERROR", httpStatus: 500 } } }; }
+    case "adminNotifications.list":
+    case "adminNotifications.unread":
+    case "adminNotifications.markAsRead":
+      return { result: { data: superjson.serialize([]) } };
     default:
       if (proc.endsWith(".listPublished") || proc.endsWith(".listAll")) return { result: { data: superjson.serialize([]) } };
       return { error: { message: "procedure not found: " + proc, code: -32603, data: { code: "NOT_FOUND", httpStatus: 404 } } };
@@ -1209,6 +1270,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
     if (url === "/api/admin/seed-content") return adminSeedContent(req, res);
+    const notifMatch = url.match(/^\/api\/admin\/notifications\/(\d+)$/);
+    if (notifMatch && req.method === "DELETE") {
+      if (!authedSession(req)) return json(res, 401, { error: "unauthorized" });
+      const nId = notifMatch[1];
+      await withConn(async (c) => { await c.execute("DELETE FROM notifications WHERE id = ?", [nId]); });
+      return json(res, 200, { ok: true });
+    }
     if (url === "/api/admin/seed") return adminSeed(req, res);
     if (url === "/api/rss" || url === "/api/rss/substack") return substackRss(req, res);
     if (url === "/api/subscribe") return subscribe(req, res);
