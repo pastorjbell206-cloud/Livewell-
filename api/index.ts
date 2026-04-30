@@ -1054,6 +1054,133 @@ async function authLogout(_req: VercelRequest, res: VercelResponse) {
   res.status(200).json({ ok: true });
 }
 
+async function processProc(req: VercelRequest, res: VercelResponse, proc: string, input: any): Promise<any> {
+  switch (proc) {
+    case "auth.me": {
+      const session = authedSession(req);
+      if (!session) return { result: { data: superjson.serialize(null) } };
+      return { result: { data: superjson.serialize({
+        id: 1, openId: "admin", name: "Admin", email: null,
+        loginMethod: "password", role: "admin" as const,
+        createdAt: new Date(), updatedAt: new Date(), lastSignedIn: new Date(),
+      })}};
+    }
+    case "auth.logout": {
+      res.setHeader("Set-Cookie", [`${SESSION_COOKIE}=`, "HttpOnly", "Secure", "SameSite=Lax", "Path=/", "Max-Age=0"].join("; "));
+      return { result: { data: superjson.serialize({ ok: true }) } };
+    }
+    case "posts.listPublished":
+    case "posts.listAll":
+      return { result: { data: superjson.serialize(await trpcListPosts()) } };
+    case "posts.getById": {
+      const row = await trpcGetPost(input?.id ?? input);
+      if (!row) return { error: { message: "post not found", code: -32603, data: { code: "NOT_FOUND", httpStatus: 404 } } };
+      return { result: { data: superjson.serialize(row) } };
+    }
+    case "posts.bySlug":
+    case "posts.getBySlug": {
+      const row = await trpcGetPost(input?.slug ?? input);
+      if (!row) return { error: { message: "post not found", code: -32603, data: { code: "NOT_FOUND", httpStatus: 404 } } };
+      return { result: { data: superjson.serialize(row) } };
+    }
+    case "books.listPublished":
+    case "books.listAll":
+      return { result: { data: superjson.serialize(await trpcListBooks()) } };
+    case "books.getById": {
+      const all = await trpcListBooks();
+      const row = all.find((b: any) => String(b.id) === String(input?.id ?? input) || b.slug === String(input?.id ?? input));
+      if (!row) return { error: { message: "book not found", code: -32603, data: { code: "NOT_FOUND", httpStatus: 404 } } };
+      return { result: { data: superjson.serialize(row) } };
+    }
+    case "resources.listPublished":
+    case "resources.listAll":
+      try {
+        return await withConn(async (c) => {
+          const [rows]: any = await c.execute("SELECT * FROM resources ORDER BY createdAt DESC");
+          return { result: { data: superjson.serialize(rows) } };
+        });
+      } catch { return { result: { data: superjson.serialize([]) } }; }
+    case "settings.get": {
+      const key = input?.key ?? input;
+      try {
+        return await withConn(async (c) => {
+          const [rows]: any = await c.execute("SELECT settingValue FROM site_settings WHERE settingKey = ?", [key]);
+          return { result: { data: superjson.serialize(rows[0]?.settingValue ?? null) } };
+        });
+      } catch { return { result: { data: superjson.serialize(null) } }; }
+    }
+    case "settings.getAll":
+      try {
+        return await withConn(async (c) => {
+          const [rows]: any = await c.execute("SELECT settingKey, settingValue FROM site_settings");
+          const settings: Record<string, string> = {};
+          for (const r of rows as any[]) settings[r.settingKey] = r.settingValue;
+          return { result: { data: superjson.serialize(settings) } };
+        });
+      } catch { return { result: { data: superjson.serialize({}) } }; }
+    case "subscribers.subscribe": {
+      const email = String(input?.email || "").trim().toLowerCase();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return { error: { message: "invalid email", code: -32603, data: { code: "BAD_REQUEST", httpStatus: 400 } } };
+      try {
+        await withConn(async (c) => {
+          await c.execute("INSERT INTO subscribers (email, name, source) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE name=COALESCE(VALUES(name), name)", [email, input?.name || null, input?.source || "site"]);
+        });
+      } catch { /* ignore */ }
+      return { result: { data: superjson.serialize({ ok: true }) } };
+    }
+    case "quiz.getQuestions":
+      return { result: { data: superjson.serialize(THEOLOGY_QUIZ_QUESTIONS) } };
+    case "quiz.getRecommendations":
+      return { result: { data: superjson.serialize(await quizGetRecommendations(input)) } };
+    case "notifications.listAll":
+      try {
+        return await withConn(async (c) => {
+          const [rows]: any = await c.execute("SELECT * FROM notifications ORDER BY createdAt DESC LIMIT 50");
+          return { result: { data: superjson.serialize(rows) } };
+        });
+      } catch { return { result: { data: superjson.serialize([]) } }; }
+    case "posts.getFeatured":
+      try {
+        return await withConn(async (c) => {
+          const [rows]: any = await c.execute("SELECT id, slug, title, excerpt, pillar, published_at, created_at, word_count FROM posts WHERE featured = true AND published = true ORDER BY created_at DESC LIMIT 10");
+          return { result: { data: superjson.serialize((rows as any[]).map(toPostCard)) } };
+        });
+      } catch { return { result: { data: superjson.serialize([]) } }; }
+    default:
+      if (proc.endsWith(".listPublished") || proc.endsWith(".listAll")) return { result: { data: superjson.serialize([]) } };
+      return { error: { message: "procedure not found: " + proc, code: -32603, data: { code: "NOT_FOUND", httpStatus: 404 } } };
+  }
+}
+
+async function trpcBatchHandler(req: VercelRequest, res: VercelResponse, procs: string[]) {
+  try {
+    let parsedInputs: Record<string, any> = {};
+    if (req.method === "GET") {
+      const raw = (req.query.input as string) || "";
+      if (raw) { try { parsedInputs = JSON.parse(raw); } catch { /* ignore */ } }
+    } else if (req.method === "POST") {
+      parsedInputs = await readBody(req) || {};
+    }
+
+    const results = await Promise.all(
+      procs.map(async (proc, i) => {
+        const input = parsedInputs?.[String(i)]?.json ?? null;
+        try {
+          return await processProc(req, res, proc, input);
+        } catch (e: any) {
+          return { error: { message: String(e?.message || e), code: -32603, data: { code: "INTERNAL_SERVER_ERROR", httpStatus: 500 } } };
+        }
+      })
+    );
+
+    res.setHeader("Content-Type", "application/json; charset=utf-8");
+    res.status(200).send(JSON.stringify(results));
+  } catch (e: any) {
+    res.setHeader("Content-Type", "application/json; charset=utf-8");
+    res.status(500).send(JSON.stringify(procs.map(() => ({ error: { message: String(e?.message || e), code: -32603, data: { code: "INTERNAL_SERVER_ERROR", httpStatus: 500 } } }))));
+  }
+}
+
 async function adminStatus(_req: VercelRequest, res: VercelResponse) {
   json(res, 200, {
     ok: true,
@@ -1092,7 +1219,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const ma = url.match(/^\/api\/articles\/([^\/]+)/);
     if (ma) return getArticle(req, res, decodeURIComponent(ma[1]));
     const mt = url.match(/^\/api\/trpc\/([^\/]+)/);
-    if (mt) return trpcHandler(req, res, decodeURIComponent(mt[1]));
+    if (mt) {
+      const procNames = decodeURIComponent(mt[1]).split(",");
+      if (procNames.length === 1) {
+        return trpcHandler(req, res, procNames[0]);
+      }
+      return trpcBatchHandler(req, res, procNames);
+    }
     json(res, 404, { error: "Not found", url });
   } catch (e: any) {
     json(res, 500, { error: "handler crashed", message: String(e?.message || e) });
