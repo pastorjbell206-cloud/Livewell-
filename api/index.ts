@@ -255,7 +255,7 @@ async function adminSeedArticles(req: VercelRequest, res: VercelResponse) {
 }
 
 async function adminSeedContent(req: VercelRequest, res: VercelResponse) {
-  if (!authed(req)) return json(res, 401, { error: "unauthorized" });
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
   try {
     const body = await readBody(req);
     const posts: any[] = body?.posts || [];
