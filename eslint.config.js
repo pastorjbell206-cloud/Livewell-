@@ -1,0 +1,90 @@
+import js from "@eslint/js";
+import tsPlugin from "@typescript-eslint/eslint-plugin";
+import tsParser from "@typescript-eslint/parser";
+import reactHooks from "eslint-plugin-react-hooks";
+import prettier from "eslint-config-prettier";
+
+export default [
+  {
+    ignores: [
+      "dist/**",
+      "node_modules/**",
+      "*.mjs",
+      "scripts/**",
+      "patches/**",
+      "content/**",
+      "drizzle/migrations/**",
+    ],
+  },
+  js.configs.recommended,
+  {
+    files: ["**/*.ts", "**/*.tsx"],
+    languageOptions: {
+      parser: tsParser,
+      parserOptions: {
+        ecmaVersion: "latest",
+        sourceType: "module",
+        ecmaFeatures: { jsx: true },
+      },
+      globals: {
+        console: "readonly",
+        process: "readonly",
+        Buffer: "readonly",
+        setTimeout: "readonly",
+        clearTimeout: "readonly",
+        setInterval: "readonly",
+        clearInterval: "readonly",
+        fetch: "readonly",
+        URL: "readonly",
+        URLSearchParams: "readonly",
+        Response: "readonly",
+        Request: "readonly",
+        Headers: "readonly",
+        FormData: "readonly",
+        Blob: "readonly",
+        window: "readonly",
+        document: "readonly",
+        localStorage: "readonly",
+        HTMLElement: "readonly",
+        HTMLMetaElement: "readonly",
+        HTMLLinkElement: "readonly",
+        HTMLScriptElement: "readonly",
+        HTMLInputElement: "readonly",
+        HTMLTextAreaElement: "readonly",
+        HTMLButtonElement: "readonly",
+        HTMLDivElement: "readonly",
+        HTMLFormElement: "readonly",
+        Event: "readonly",
+        KeyboardEvent: "readonly",
+        MouseEvent: "readonly",
+        MutationObserver: "readonly",
+        IntersectionObserver: "readonly",
+        ResizeObserver: "readonly",
+        navigator: "readonly",
+        location: "readonly",
+        history: "readonly",
+        requestAnimationFrame: "readonly",
+        cancelAnimationFrame: "readonly",
+        RegExpExecArray: "readonly",
+      },
+    },
+    plugins: {
+      "@typescript-eslint": tsPlugin,
+      "react-hooks": reactHooks,
+    },
+    rules: {
+      ...tsPlugin.configs.recommended.rules,
+      ...reactHooks.configs.recommended.rules,
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
+      ],
+      "@typescript-eslint/no-explicit-any": "warn",
+      "@typescript-eslint/no-require-imports": "off",
+      "no-undef": "off",
+      "no-unused-vars": "off",
+      "no-redeclare": "off",
+    },
+  },
+  prettier,
+];
