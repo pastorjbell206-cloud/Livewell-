@@ -1054,6 +1054,19 @@ async function authLogout(_req: VercelRequest, res: VercelResponse) {
   res.status(200).json({ ok: true });
 }
 
+async function adminStatus(_req: VercelRequest, res: VercelResponse) {
+  json(res, 200, {
+    ok: true,
+    configured: {
+      DATABASE_URL: Boolean(process.env.DATABASE_URL),
+      JWT_SECRET: Boolean(process.env.JWT_SECRET),
+      ADMIN_PASSWORD_HASH: Boolean(process.env.ADMIN_PASSWORD_HASH),
+      STRIPE_SECRET_KEY: Boolean(process.env.STRIPE_SECRET_KEY),
+    },
+    adminReady: Boolean(process.env.JWT_SECRET && process.env.ADMIN_PASSWORD_HASH),
+  });
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   applyCors(req, res);
   if (req.method === "OPTIONS") {
@@ -1065,6 +1078,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/auth/me") return authMe(req, res);
     if (url === "/api/auth/logout") return authLogout(req, res);
     if (url === "/api/health" || url.startsWith("/api/health")) return health(req, res);
+    if (url === "/api/admin/status") return adminStatus(req, res);
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
     if (url === "/api/admin/seed-content") return adminSeedContent(req, res);

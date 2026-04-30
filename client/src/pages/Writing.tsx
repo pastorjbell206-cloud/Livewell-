@@ -123,6 +123,13 @@ export default function Writing() {
         title="Writing"
         description="Essays and articles on faith, theology, culture, and Christian living by James Bell"
         keywords="essays, articles, theology, faith, Christian life, culture"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "Essays and Articles by James Bell",
+          description: "880+ essays on faith, theology, marriage, justice, and pastoral ministry.",
+          url: "https://www.livewellbyjamesbell.co/writing",
+        }}
       />
       <div>
         {/* HERO SECTION */}
