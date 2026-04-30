@@ -12,7 +12,8 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "test": "vitest run",
-    "db:push": "drizzle-kit generate && drizzle-kit migrate"
+    "db:push": "drizzle-kit generate && drizzle-kit migrate",
+    "db:seed": "node scripts/seed-all-content.mjs"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.693.0",

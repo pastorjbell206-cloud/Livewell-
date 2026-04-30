@@ -254,6 +254,70 @@ async function adminSeedArticles(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+async function adminSeedContent(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req)) return json(res, 401, { error: "unauthorized" });
+  try {
+    const body = await readBody(req);
+    const posts: any[] = body?.posts || [];
+    const booksData: any[] = body?.books || [];
+    const settings: Record<string, string> = body?.settings || {};
+    const resourcesData: any[] = body?.resources || [];
+
+    const out = await withConn(async (c) => {
+      let postsInserted = 0, booksInserted = 0, settingsSet = 0, resourcesInserted = 0;
+
+      for (const p of posts) {
+        try {
+          const slug = p.slug || p.title?.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+          await c.execute(
+            `INSERT IGNORE INTO posts (title, slug, body, excerpt, pillar, readTime, published, createdAt, updatedAt)
+             VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())`,
+            [p.title || "", slug, p.body || "", p.excerpt || "", p.pillar || "Theological Depth", p.readTime || "5 min", p.published ?? true]
+          );
+          postsInserted++;
+        } catch { /* skip duplicates */ }
+      }
+
+      for (const b of booksData) {
+        try {
+          const slug = b.slug || b.title?.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+          await c.execute(
+            `INSERT IGNORE INTO books (title, slug, author, description, coverImage, bookType, published, createdAt, updatedAt)
+             VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())`,
+            [b.title || "", slug, b.author || "James Bell", b.description || "", b.coverImage || null, b.bookType || "authored", b.published ?? true]
+          );
+          booksInserted++;
+        } catch { /* skip duplicates */ }
+      }
+
+      for (const [key, value] of Object.entries(settings)) {
+        await c.execute(
+          "INSERT INTO site_settings (settingKey, settingValue, updatedAt) VALUES (?, ?, NOW()) ON DUPLICATE KEY UPDATE settingValue = VALUES(settingValue), updatedAt = NOW()",
+          [key, value]
+        );
+        settingsSet++;
+      }
+
+      for (const r of resourcesData) {
+        try {
+          await c.execute(
+            `INSERT IGNORE INTO resources (title, description, category, fileType, url, published, createdAt, updatedAt)
+             VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())`,
+            [r.title || "", r.description || "", r.category || "", r.fileType || "", r.url || "", r.published ?? true]
+          );
+          resourcesInserted++;
+        } catch { /* skip duplicates */ }
+      }
+
+      return { postsInserted, booksInserted, settingsSet, resourcesInserted };
+    });
+
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
 async function listArticles(req: VercelRequest, res: VercelResponse) {
   try {
     const limit = Math.min(parseInt(String(req.query.limit || "50"), 10) || 50, 200);
@@ -1003,6 +1067,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/health" || url.startsWith("/api/health")) return health(req, res);
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
+    if (url === "/api/admin/seed-content") return adminSeedContent(req, res);
     if (url === "/api/admin/seed") return adminSeed(req, res);
     if (url === "/api/rss" || url === "/api/rss/substack") return substackRss(req, res);
     if (url === "/api/subscribe") return subscribe(req, res);
