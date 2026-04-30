@@ -16,7 +16,7 @@
     "db:seed": "node scripts/seed-all-content.mjs"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.693.0",
+    "@aws-sdk/client-s3": "^3.1040.0",
     "@aws-sdk/s3-request-presigner": "^3.693.0",
     "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-accordion": "^1.2.12",
