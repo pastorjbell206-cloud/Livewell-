@@ -35,6 +35,9 @@ const Doubt = lazy(() => import("./pages/Doubt"));
 const StartHereQuiz = lazy(() => import("./pages/StartHereQuiz"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Terms = lazy(() => import("./pages/Terms"));
+const ToolsHub = lazy(() => import("./pages/ToolsHub"));
+const VerseFinder = lazy(() => import("./pages/tools/VerseFinder"));
+const WorkWithJames = lazy(() => import("./pages/WorkWithJames"));
 const ReadingPathDetail = lazy(() =>
   import("./pages/ReadingPathDetail").then((m) => ({ default: m.ReadingPathDetail }))
 );
@@ -122,7 +125,9 @@ function Router() {
         <Route path="/books-store" component={BooksStore} />
         <Route path="/search" component={SearchPage} />
         <Route path="/quiz" component={TheologyQuiz} />
-        <Route path="/tools" component={Tools} />
+        <Route path="/tools" component={ToolsHub} />
+        <Route path="/tools/verse-finder" component={VerseFinder} />
+        <Route path="/work-with-james" component={WorkWithJames} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/terms" component={Terms} />
         <Route path="/resources-for-pastors" component={ResourcesForPastors} />

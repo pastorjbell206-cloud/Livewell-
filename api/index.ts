@@ -1349,6 +1349,39 @@ async function adminStatus(_req: VercelRequest, res: VercelResponse) {
   });
 }
 
+async function contactForm(req: VercelRequest, res: VercelResponse) {
+  if (req.method !== "POST") return json(res, 405, { error: "method not allowed" });
+  try {
+    const body = await readBody(req);
+    const name = String(body?.name || "").trim();
+    const email = String(body?.email || "").trim().toLowerCase();
+    const subject = String(body?.subject || "").trim();
+    const message = String(body?.message || "").trim();
+    if (!email || !message) return json(res, 400, { error: "Email and message are required" });
+    try {
+      await withConn(async (c) => {
+        await c.execute(
+          `CREATE TABLE IF NOT EXISTS contact_messages (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            name VARCHAR(200),
+            email VARCHAR(320) NOT NULL,
+            subject VARCHAR(500),
+            message TEXT NOT NULL,
+            createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
+          ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`
+        );
+        await c.execute(
+          "INSERT INTO contact_messages (name, email, subject, message) VALUES (?, ?, ?, ?)",
+          [name || null, email, subject || null, message]
+        );
+      });
+    } catch { /* DB save is best-effort */ }
+    json(res, 200, { ok: true, message: "Message received. Thank you!" });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   applyCors(req, res);
   if (req.method === "OPTIONS") {
@@ -1373,6 +1406,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
     if (url === "/api/admin/seed") return adminSeed(req, res);
     if (url === "/api/rss" || url === "/api/rss/substack") return substackRss(req, res);
+    if (url === "/api/contact") return contactForm(req, res);
     if (url === "/api/subscribe") return subscribe(req, res);
     if (url === "/api/pcn/signup") return pcnSignup(req, res);
     if (url === "/api/sitemap.xml" || url === "/api/sitemap") return sitemap(req, res);
