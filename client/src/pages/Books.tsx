@@ -65,7 +65,7 @@ export default function Books() {
 
         {/* FEATURED BOOK SECTION */}
         {featuredBook && (
-          <section style={{ background: "#2D4A3E", color: "#F7F5F0", padding: "60px 20px" }}>
+          <section style={{ background: "var(--ink)", color: "var(--paper)", padding: "60px 20px" }}>
             <div className="wrap" style={{ maxWidth: "1000px", margin: "0 auto" }}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
                 <div>
@@ -77,13 +77,13 @@ export default function Books() {
                 </div>
                 <div>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "16px" }}>
-                    <Star size={20} fill="#B8963E" color="#B8963E" />
-                    <span style={{ fontSize: "14px", fontWeight: "bold", color: "#B8963E", textTransform: "uppercase", letterSpacing: "0.1em" }}>Featured Book</span>
+                    <Star size={20} fill="var(--gold)" color="var(--gold)" />
+                    <span style={{ fontSize: "14px", fontWeight: "bold", color: "var(--gold)", textTransform: "uppercase", letterSpacing: "0.1em" }}>Featured Book</span>
                   </div>
                   <h2 style={{ fontSize: "32px", fontWeight: "bold", marginBottom: "8px", lineHeight: "1.2" }}>
                     {featuredBook.title}
                   </h2>
-                  <p style={{ fontSize: "18px", color: "#D1C9BB", marginBottom: "24px", fontStyle: "italic" }}>
+                  <p style={{ fontSize: "18px", color: "var(--stone2)", marginBottom: "24px", fontStyle: "italic" }}>
                     {featuredBook.subtitle}
                   </p>
                   <p style={{ fontSize: "16px", lineHeight: "1.6", marginBottom: "32px" }}>
@@ -97,8 +97,8 @@ export default function Books() {
                       display: "inline-flex",
                       alignItems: "center",
                       gap: "8px",
-                      background: "#B8963E",
-                      color: "#1A1A1A",
+                      background: "var(--gold)",
+                      color: "var(--ink)",
                       padding: "12px 24px",
                       borderRadius: "4px",
                       textDecoration: "none",
@@ -107,7 +107,7 @@ export default function Books() {
                       transition: "background 0.2s"
                     }}
                     onMouseEnter={(e) => e.currentTarget.style.background = "#D4A574"}
-                    onMouseLeave={(e) => e.currentTarget.style.background = "#B8963E"}
+                    onMouseLeave={(e) => e.currentTarget.style.background = "var(--gold)"}
                   >
                     Buy on Amazon
                     <ExternalLink size={16} />
@@ -119,7 +119,7 @@ export default function Books() {
         )}
 
         {/* START HERE SECTION */}
-        <section style={{ background: "#F7F5F0", padding: "60px 20px" }}>
+        <section style={{ background: "var(--paper)", padding: "60px 20px" }}>
           <div className="wrap" style={{ maxWidth: "1000px", margin: "0 auto" }}>
             <div style={{ marginBottom: "48px" }}>
               <div className="kicker" style={{ marginBottom: "12px" }}>
@@ -143,13 +143,13 @@ export default function Books() {
                   border: "1px solid #E5DDD0",
                   textAlign: "center"
                 }}>
-                  <div style={{ fontSize: "48px", fontWeight: "bold", color: "#B8963E", marginBottom: "12px" }}>
+                  <div style={{ fontSize: "48px", fontWeight: "bold", color: "var(--gold)", marginBottom: "12px" }}>
                     {item.order}
                   </div>
-                  <h3 style={{ fontSize: "18px", fontWeight: "bold", color: "#1A1A1A", marginBottom: "8px" }}>
+                  <h3 style={{ fontSize: "18px", fontWeight: "bold", color: "var(--ink)", marginBottom: "8px" }}>
                     {item.title}
                   </h3>
-                  <p style={{ fontSize: "14px", color: "#6B7280" }}>
+                  <p style={{ fontSize: "14px", color: "var(--ink3)" }}>
                     {item.reason}
                   </p>
                 </div>
@@ -199,10 +199,10 @@ export default function Books() {
                       style={{ width: "100%", height: "100%", objectFit: "cover" }}
                     />
                   </div>
-                  <h3 style={{ fontSize: "16px", fontWeight: "bold", color: "#1A1A1A", marginBottom: "4px", lineHeight: "1.3" }}>
+                  <h3 style={{ fontSize: "16px", fontWeight: "bold", color: "var(--ink)", marginBottom: "4px", lineHeight: "1.3" }}>
                     {book.title}
                   </h3>
-                  <p style={{ fontSize: "12px", color: "#6B7280", lineHeight: "1.4" }}>
+                  <p style={{ fontSize: "12px", color: "var(--ink3)", lineHeight: "1.4" }}>
                     {book.subtitle}
                   </p>
                 </button>
@@ -213,7 +213,7 @@ export default function Books() {
 
         {/* RECOMMENDED BOOKS SECTION */}
         {recommendedBooks.length > 0 && (
-          <section style={{ background: "#F7F5F0", padding: "60px 20px" }}>
+          <section style={{ background: "var(--paper)", padding: "60px 20px" }}>
             <div className="wrap">
               <div style={{ marginBottom: "48px" }}>
                 <div className="kicker" style={{ marginBottom: "12px" }}>
@@ -232,13 +232,13 @@ export default function Books() {
                     borderRadius: "8px",
                     border: "1px solid #E5DDD0"
                   }}>
-                    <h3 style={{ fontSize: "16px", fontWeight: "bold", color: "#1A1A1A", marginBottom: "4px" }}>
+                    <h3 style={{ fontSize: "16px", fontWeight: "bold", color: "var(--ink)", marginBottom: "4px" }}>
                       {book.title}
                     </h3>
-                    <p style={{ fontSize: "12px", color: "#6B7280", marginBottom: "12px" }}>
+                    <p style={{ fontSize: "12px", color: "var(--ink3)", marginBottom: "12px" }}>
                       by {book.author}
                     </p>
-                    <p style={{ fontSize: "13px", color: "#2C3E50", lineHeight: "1.5" }}>
+                    <p style={{ fontSize: "13px", color: "var(--ink2)", lineHeight: "1.5" }}>
                       {book.description}
                     </p>
                   </div>
@@ -283,7 +283,7 @@ export default function Books() {
                   border: "none",
                   cursor: "pointer",
                   padding: "0",
-                  color: "#6B7280"
+                  color: "var(--ink3)"
                 }}
               >
                 <X size={24} />
@@ -298,13 +298,13 @@ export default function Books() {
                   />
                 </div>
                 <div>
-                  <h2 style={{ fontSize: "24px", fontWeight: "bold", color: "#1A1A1A", marginBottom: "8px", lineHeight: "1.3" }}>
+                  <h2 style={{ fontSize: "24px", fontWeight: "bold", color: "var(--ink)", marginBottom: "8px", lineHeight: "1.3" }}>
                     {selectedBook.title}
                   </h2>
-                  <p style={{ fontSize: "16px", color: "#6B7280", marginBottom: "24px", fontStyle: "italic" }}>
+                  <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "24px", fontStyle: "italic" }}>
                     {selectedBook.subtitle}
                   </p>
-                  <p style={{ fontSize: "15px", color: "#2C3E50", lineHeight: "1.6", marginBottom: "24px" }}>
+                  <p style={{ fontSize: "15px", color: "var(--ink2)", lineHeight: "1.6", marginBottom: "24px" }}>
                     {selectedBook.description}
                   </p>
                   <a 
@@ -315,7 +315,7 @@ export default function Books() {
                       display: "inline-flex",
                       alignItems: "center",
                       gap: "8px",
-                      background: "#B8963E",
+                      background: "var(--gold)",
                       color: "white",
                       padding: "12px 24px",
                       borderRadius: "4px",
@@ -325,7 +325,7 @@ export default function Books() {
                       transition: "background 0.2s"
                     }}
                     onMouseEnter={(e) => e.currentTarget.style.background = "#A0824F"}
-                    onMouseLeave={(e) => e.currentTarget.style.background = "#B8963E"}
+                    onMouseLeave={(e) => e.currentTarget.style.background = "var(--gold)"}
                   >
                     Buy on Amazon
                     <ExternalLink size={16} />

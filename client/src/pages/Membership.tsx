@@ -143,27 +143,27 @@ export default function Membership() {
       />
       <div>
         {/* HERO SECTION WITH PHOTO */}
-        <section style={{ background: "#2D4A3E", color: "#F7F5F0", padding: "60px 20px" }}>
+        <section style={{ background: "var(--ink)", color: "var(--paper)", padding: "60px 20px" }}>
           <div className="wrap" style={{ maxWidth: "1200px", margin: "0 auto" }}>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px", alignItems: "center" }}>
               <div>
                 <div className="kicker" style={{ marginBottom: "16px" }}>
-                  <div className="kicker-line" style={{ background: "#B8963E" }}></div>
-                  <div className="kicker-txt" style={{ color: "#B8963E" }}>JOIN OUR COMMUNITY</div>
+                  <div className="kicker-line" style={{ background: "var(--gold)" }}></div>
+                  <div className="kicker-txt" style={{ color: "var(--gold)" }}>JOIN OUR COMMUNITY</div>
                 </div>
                 <h1 style={{ fontSize: "48px", fontWeight: "bold", marginBottom: "16px", lineHeight: "1.2" }}>
                   Go deeper with LiveWell
                 </h1>
-                <p style={{ fontSize: "18px", color: "#D1C9BB", marginBottom: "32px", lineHeight: "1.6" }}>
+                <p style={{ fontSize: "18px", color: "var(--stone2)", marginBottom: "32px", lineHeight: "1.6" }}>
                   Join our growing community of pastors, leaders, and families committed to theological depth, spiritual formation, and faithful living in a changing world.
                 </p>
                 <div style={{ display: "flex", gap: "16px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                    <Check size={20} color="#B8963E" />
+                    <Check size={20} color="var(--gold)" />
                     <span>4,200+ members</span>
                   </div>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                    <Check size={20} color="#B8963E" />
+                    <Check size={20} color="var(--gold)" />
                     <span>50+ countries</span>
                   </div>
                 </div>
@@ -180,13 +180,13 @@ export default function Membership() {
         </section>
 
         {/* MEMBERSHIP TIERS */}
-        <section style={{ padding: "80px 20px", background: "#F7F5F0" }}>
+        <section style={{ padding: "80px 20px", background: "var(--paper)" }}>
           <div className="wrap" style={{ maxWidth: "1200px", margin: "0 auto" }}>
             <div style={{ textAlign: "center", marginBottom: "60px" }}>
-              <h2 style={{ fontSize: "40px", fontWeight: "bold", color: "#1A1A1A", marginBottom: "16px" }}>
+              <h2 style={{ fontSize: "40px", fontWeight: "bold", color: "var(--ink)", marginBottom: "16px" }}>
                 Simple, Transparent Pricing
               </h2>
-              <p style={{ fontSize: "18px", color: "#6B7280", maxWidth: "600px", margin: "0 auto" }}>
+              <p style={{ fontSize: "18px", color: "var(--ink3)", maxWidth: "600px", margin: "0 auto" }}>
                 Choose the plan that works for you. Upgrade or downgrade anytime.
               </p>
             </div>
@@ -196,8 +196,8 @@ export default function Membership() {
                 <div
                   key={tier.name}
                   style={{
-                    background: tier.highlighted ? "#1A1A1A" : "white",
-                    color: tier.highlighted ? "#F7F5F0" : "#1A1A1A",
+                    background: tier.highlighted ? "var(--ink)" : "white",
+                    color: tier.highlighted ? "var(--paper)" : "var(--ink)",
                     padding: "48px 32px",
                     borderRadius: "12px",
                     border: tier.highlighted ? "2px solid #B8963E" : "1px solid #E5DDD0",
@@ -212,8 +212,8 @@ export default function Membership() {
                       top: "-16px",
                       left: "50%",
                       transform: "translateX(-50%)",
-                      background: "#B8963E",
-                      color: "#1A1A1A",
+                      background: "var(--gold)",
+                      color: "var(--ink)",
                       padding: "4px 16px",
                       borderRadius: "20px",
                       fontSize: "12px",
@@ -247,8 +247,8 @@ export default function Membership() {
                     style={{
                       width: "100%",
                       padding: "12px 24px",
-                      background: tier.highlighted ? "#B8963E" : tier.price === "0" ? "transparent" : "#1A1A1A",
-                      color: tier.highlighted ? "#1A1A1A" : tier.price === "0" ? "#1A1A1A" : "#F7F5F0",
+                      background: tier.highlighted ? "var(--gold)" : tier.price === "0" ? "transparent" : "var(--ink)",
+                      color: tier.highlighted ? "var(--ink)" : tier.price === "0" ? "var(--ink)" : "var(--paper)",
                       border: tier.price === "0" ? "2px solid #1A1A1A" : "none",
                       borderRadius: "4px",
                       fontWeight: "bold",
@@ -270,7 +270,7 @@ export default function Membership() {
                   <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                     {tier.features.map((feature, idx) => (
                       <div key={idx} style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
-                        <Check size={20} color={tier.highlighted ? "#B8963E" : "#2D4A3E"} style={{ flexShrink: 0, marginTop: "2px" }} />
+                        <Check size={20} color={tier.highlighted ? "var(--gold)" : "var(--ink)"} style={{ flexShrink: 0, marginTop: "2px" }} />
                         <span style={{ fontSize: "14px" }}>{feature}</span>
                       </div>
                     ))}
@@ -285,10 +285,10 @@ export default function Membership() {
         <section style={{ padding: "80px 20px", background: "white" }}>
           <div className="wrap" style={{ maxWidth: "1200px", margin: "0 auto" }}>
             <div style={{ textAlign: "center", marginBottom: "60px" }}>
-              <h2 style={{ fontSize: "40px", fontWeight: "bold", color: "#1A1A1A", marginBottom: "16px" }}>
+              <h2 style={{ fontSize: "40px", fontWeight: "bold", color: "var(--ink)", marginBottom: "16px" }}>
                 Loved by Pastors & Leaders
               </h2>
-              <p style={{ fontSize: "18px", color: "#6B7280" }}>
+              <p style={{ fontSize: "18px", color: "var(--ink3)" }}>
                 Hear from members of the LiveWell community
               </p>
             </div>
@@ -296,24 +296,24 @@ export default function Membership() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "32px" }}>
               {TESTIMONIALS.map((testimonial, idx) => (
                 <div key={idx} style={{
-                  background: "#F7F5F0",
+                  background: "var(--paper)",
                   padding: "32px",
                   borderRadius: "8px",
                   border: "1px solid #E5DDD0"
                 }}>
                   <div style={{ display: "flex", gap: "4px", marginBottom: "16px" }}>
                     {Array(testimonial.rating).fill(0).map((_, i) => (
-                      <Star key={i} size={16} fill="#B8963E" color="#B8963E" />
+                      <Star key={i} size={16} fill="var(--gold)" color="var(--gold)" />
                     ))}
                   </div>
-                  <p style={{ fontSize: "15px", color: "#2C3E50", lineHeight: "1.6", marginBottom: "16px", fontStyle: "italic" }}>
+                  <p style={{ fontSize: "15px", color: "var(--ink2)", lineHeight: "1.6", marginBottom: "16px", fontStyle: "italic" }}>
                     "{testimonial.quote}"
                   </p>
                   <div>
-                    <p style={{ fontSize: "14px", fontWeight: "bold", color: "#1A1A1A" }}>
+                    <p style={{ fontSize: "14px", fontWeight: "bold", color: "var(--ink)" }}>
                       {testimonial.author}
                     </p>
-                    <p style={{ fontSize: "12px", color: "#6B7280" }}>
+                    <p style={{ fontSize: "12px", color: "var(--ink3)" }}>
                       {testimonial.role}
                     </p>
                   </div>
@@ -324,9 +324,9 @@ export default function Membership() {
         </section>
 
         {/* FAQ SECTION */}
-        <section style={{ padding: "80px 20px", background: "#F7F5F0" }}>
+        <section style={{ padding: "80px 20px", background: "var(--paper)" }}>
           <div className="wrap" style={{ maxWidth: "800px", margin: "0 auto" }}>
-            <h2 style={{ fontSize: "40px", fontWeight: "bold", color: "#1A1A1A", marginBottom: "60px", textAlign: "center" }}>
+            <h2 style={{ fontSize: "40px", fontWeight: "bold", color: "var(--ink)", marginBottom: "60px", textAlign: "center" }}>
               Frequently Asked Questions
             </h2>
 
@@ -359,10 +359,10 @@ export default function Membership() {
                   borderRadius: "8px",
                   border: "1px solid #E5DDD0"
                 }}>
-                  <h3 style={{ fontSize: "16px", fontWeight: "bold", color: "#1A1A1A", marginBottom: "8px" }}>
+                  <h3 style={{ fontSize: "16px", fontWeight: "bold", color: "var(--ink)", marginBottom: "8px" }}>
                     {item.q}
                   </h3>
-                  <p style={{ fontSize: "14px", color: "#6B7280", lineHeight: "1.6" }}>
+                  <p style={{ fontSize: "14px", color: "var(--ink3)", lineHeight: "1.6" }}>
                     {item.a}
                   </p>
                 </div>
@@ -372,20 +372,20 @@ export default function Membership() {
         </section>
 
         {/* CTA SECTION */}
-        <section style={{ background: "#2D4A3E", color: "#F7F5F0", padding: "60px 20px", textAlign: "center" }}>
+        <section style={{ background: "var(--ink)", color: "var(--paper)", padding: "60px 20px", textAlign: "center" }}>
           <div className="wrap" style={{ maxWidth: "800px", margin: "0 auto" }}>
             <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "16px" }}>
               Ready to Join?
             </h2>
-            <p style={{ fontSize: "18px", color: "#D1C9BB", marginBottom: "32px" }}>
+            <p style={{ fontSize: "18px", color: "var(--stone2)", marginBottom: "32px" }}>
               Start your journey toward deeper faith and more faithful ministry today.
             </p>
             <button
               onClick={() => handleUpgrade("LiveWell Membership", "14.99")}
               disabled={loadingTier === "LiveWell Membership"}
               style={{
-                background: "#B8963E",
-                color: "#1A1A1A",
+                background: "var(--gold)",
+                color: "var(--ink)",
                 padding: "14px 32px",
                 borderRadius: "4px",
                 border: "none",

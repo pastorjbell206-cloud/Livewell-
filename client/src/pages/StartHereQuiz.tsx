@@ -15,7 +15,7 @@ export default function StartHereQuiz() {
       id: "concern",
       title: "What's weighing heaviest right now?",
       options: [
-        { label: "Marriage", value: "marriage", color: "#B8963E" },
+        { label: "Marriage", value: "marriage", color: "var(--gold)" },
         { label: "Parenting", value: "parenting", color: "#9B8BA8" },
         { label: "Faith & Doubt", value: "doubt", color: "#8B6B7F" },
         { label: "Calling & Purpose", value: "calling", color: "#6B8E6F" },
@@ -29,7 +29,7 @@ export default function StartHereQuiz() {
       options: [
         { label: "In Crisis", value: "crisis", color: "#8B4545" },
         { label: "Searching for Answers", value: "searching", color: "#6B8E6F" },
-        { label: "Growing Deeper", value: "growing", color: "#2D4A3E" },
+        { label: "Growing Deeper", value: "growing", color: "var(--ink)" },
         { label: "Leading Others", value: "leading", color: "#6B8E6F" }
       ]
     },
@@ -37,7 +37,7 @@ export default function StartHereQuiz() {
       id: "format",
       title: "What kind of content helps you most?",
       options: [
-        { label: "Deep Articles", value: "articles", color: "#B8963E" },
+        { label: "Deep Articles", value: "articles", color: "var(--gold)" },
         { label: "Practical Tools", value: "tools", color: "#6B8E6F" },
         { label: "Books", value: "books", color: "#8B6B7F" },
         { label: "Devotionals", value: "devotionals", color: "#6B9B8B" }
@@ -134,7 +134,7 @@ export default function StartHereQuiz() {
   const isComplete = Object.keys(answers).length === QUESTIONS.length;
 
   return (
-    <div style={{ background: "#F7F5F0", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+    <div style={{ background: "var(--paper)", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       <SEOMeta
         title="Find Your Path | LiveWell by James Bell"
         description="Find where to start. Tell us what is weighing on you and we point you toward the writing that meets you there."
@@ -157,20 +157,20 @@ export default function StartHereQuiz() {
                     style={{
                       flex: 1,
                       height: "4px",
-                      background: i <= currentStep ? "#B8963E" : "#E0D9CC",
+                      background: i <= currentStep ? "var(--gold)" : "var(--line)",
                       borderRadius: "2px"
                     }}
                   />
                 ))}
               </div>
-              <p style={{ fontSize: "12px", color: "#6B7280", margin: 0 }}>
+              <p style={{ fontSize: "12px", color: "var(--ink3)", margin: 0 }}>
                 Step {currentStep + 1} of {QUESTIONS.length}
               </p>
             </div>
 
             {/* QUESTION */}
             <div style={{ marginBottom: "48px" }}>
-              <h1 style={{ fontSize: "36px", fontWeight: "bold", color: "#1A1A1A", marginBottom: "32px", fontFamily: "Georgia, serif" }}>
+              <h1 style={{ fontSize: "36px", fontWeight: "bold", color: "var(--ink)", marginBottom: "32px", fontFamily: "Georgia, serif" }}>
                 {QUESTIONS[currentStep].title}
               </h1>
 
@@ -181,7 +181,7 @@ export default function StartHereQuiz() {
                     onClick={() => handleSelect(option.value)}
                     style={{
                       background: answers[QUESTIONS[currentStep].id] === option.value ? option.color : "#FFF",
-                      color: answers[QUESTIONS[currentStep].id] === option.value ? "#FFF" : "#1A1A1A",
+                      color: answers[QUESTIONS[currentStep].id] === option.value ? "#FFF" : "var(--ink)",
                       border: answers[QUESTIONS[currentStep].id] === option.value ? "none" : "1px solid #E0D9CC",
                       borderLeft: answers[QUESTIONS[currentStep].id] === option.value ? "none" : `6px solid ${option.color}`,
                       padding: "24px",
@@ -204,8 +204,8 @@ export default function StartHereQuiz() {
                 onClick={handleBack}
                 disabled={currentStep === 0}
                 style={{
-                  background: currentStep === 0 ? "#E0D9CC" : "#2D4A3E",
-                  color: currentStep === 0 ? "#6B7280" : "#F7F5F0",
+                  background: currentStep === 0 ? "var(--line)" : "var(--ink)",
+                  color: currentStep === 0 ? "var(--ink3)" : "var(--paper)",
                   border: "none",
                   padding: "12px 24px",
                   fontSize: "14px",
@@ -224,8 +224,8 @@ export default function StartHereQuiz() {
                 }}
                 disabled={!answers[QUESTIONS[currentStep].id]}
                 style={{
-                  background: !answers[QUESTIONS[currentStep].id] ? "#E0D9CC" : "#B8963E",
-                  color: "#1A1A1A",
+                  background: !answers[QUESTIONS[currentStep].id] ? "var(--line)" : "var(--gold)",
+                  color: "var(--ink)",
                   border: "none",
                   padding: "12px 24px",
                   fontSize: "14px",
@@ -242,20 +242,20 @@ export default function StartHereQuiz() {
           <>
             {/* RESULTS PAGE */}
             <div style={{ textAlign: "center", marginBottom: "48px" }}>
-              <h1 style={{ fontSize: "36px", fontWeight: "bold", color: "#1A1A1A", marginBottom: "16px", fontFamily: "Georgia, serif" }}>
+              <h1 style={{ fontSize: "36px", fontWeight: "bold", color: "var(--ink)", marginBottom: "16px", fontFamily: "Georgia, serif" }}>
                 Your Personalized Reading Path
               </h1>
-              <p style={{ fontSize: "16px", color: "#6B7280", marginBottom: "24px" }}>
+              <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "24px" }}>
                 Based on where you are, here's where to start:
               </p>
-              <h2 style={{ fontSize: "24px", fontWeight: "bold", color: "#2D4A3E", marginBottom: "32px", fontFamily: "Georgia, serif" }}>
+              <h2 style={{ fontSize: "24px", fontWeight: "bold", color: "var(--ink)", marginBottom: "32px", fontFamily: "Georgia, serif" }}>
                 {readingPath.title}
               </h2>
             </div>
 
             {/* ARTICLES */}
             <div style={{ marginBottom: "48px" }}>
-              <h3 style={{ fontSize: "18px", fontWeight: "bold", color: "#1A1A1A", marginBottom: "24px" }}>
+              <h3 style={{ fontSize: "18px", fontWeight: "bold", color: "var(--ink)", marginBottom: "24px" }}>
                 Start with these articles:
               </h3>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -263,14 +263,14 @@ export default function StartHereQuiz() {
                   <Link key={i} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
                     <div style={{ background: "#FFF", padding: "24px", borderRadius: "8px", border: "1px solid #E0D9CC", cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "start" }}>
                       <div style={{ textAlign: "left" }}>
-                        <h4 style={{ fontSize: "16px", fontWeight: "bold", color: "#1A1A1A", margin: "0 0 8px 0" }}>
+                        <h4 style={{ fontSize: "16px", fontWeight: "bold", color: "var(--ink)", margin: "0 0 8px 0" }}>
                           {article.title}
                         </h4>
-                        <p style={{ fontSize: "13px", color: "#6B7280", margin: 0 }}>
+                        <p style={{ fontSize: "13px", color: "var(--ink3)", margin: 0 }}>
                           7-12 min read
                         </p>
                       </div>
-                      <span style={{ color: "#B8963E", fontWeight: "bold", marginLeft: "16px", whiteSpace: "nowrap" }}>
+                      <span style={{ color: "var(--gold)", fontWeight: "bold", marginLeft: "16px", whiteSpace: "nowrap" }}>
                         Read â
                       </span>
                     </div>
@@ -280,33 +280,33 @@ export default function StartHereQuiz() {
             </div>
 
             {/* BOOK RECOMMENDATION */}
-            <div style={{ background: "#F0EDE5", padding: "32px", borderRadius: "8px", marginBottom: "48px", textAlign: "center" }}>
-              <p style={{ fontSize: "12px", fontWeight: "bold", color: "#B8963E", marginBottom: "8px", textTransform: "uppercase" }}>
+            <div style={{ background: "var(--paper2)", padding: "32px", borderRadius: "8px", marginBottom: "48px", textAlign: "center" }}>
+              <p style={{ fontSize: "12px", fontWeight: "bold", color: "var(--gold)", marginBottom: "8px", textTransform: "uppercase" }}>
                 Then read this book
               </p>
-              <h3 style={{ fontSize: "20px", fontWeight: "bold", color: "#1A1A1A", marginBottom: "12px" }}>
+              <h3 style={{ fontSize: "20px", fontWeight: "bold", color: "var(--ink)", marginBottom: "12px" }}>
                 {readingPath.book}
               </h3>
-              <p style={{ fontSize: "14px", color: "#6B7280", marginBottom: "16px" }}>
+              <p style={{ fontSize: "14px", color: "var(--ink3)", marginBottom: "16px" }}>
                 Go deeper with James Bell's most comprehensive work on this topic.
               </p>
               <Link href="/books" style={{ textDecoration: "none" }}>
-                <button style={{ background: "#2D4A3E", color: "#F7F5F0", border: "none", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
+                <button style={{ background: "var(--ink)", color: "var(--paper)", border: "none", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
                   View Books
                 </button>
               </Link>
             </div>
 
             {/* EMAIL CAPTURE */}
-            <div style={{ background: "#2D4A3E", color: "#F7F5F0", padding: "48px", borderRadius: "8px", textAlign: "center" }}>
+            <div style={{ background: "var(--ink)", color: "var(--paper)", padding: "48px", borderRadius: "8px", textAlign: "center" }}>
               <h3 style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "16px" }}>
                 Want this path emailed to you?
               </h3>
-              <p style={{ fontSize: "14px", lineHeight: "1.6", marginBottom: "24px", color: "#D1C9BB" }}>
+              <p style={{ fontSize: "14px", lineHeight: "1.6", marginBottom: "24px", color: "var(--stone2)" }}>
                 We'll send you direct links to all three articles plus James's latest essays related to your path.
               </p>
               {emailSubmitted ? (
-                <p style={{ color: "#B8963E", fontWeight: "bold", fontSize: "16px" }}>
+                <p style={{ color: "var(--gold)", fontWeight: "bold", fontSize: "16px" }}>
                   Check your inbox. Your path is on the way.
                 </p>
               ) : (
@@ -319,7 +319,7 @@ export default function StartHereQuiz() {
                     required
                     style={{ flex: 1, minWidth: "200px", padding: "12px 16px", border: "none", borderRadius: "4px", fontSize: "14px" }}
                   />
-                  <button type="submit" style={{ background: "#B8963E", color: "#1A1A1A", border: "none", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer", whiteSpace: "nowrap" }}>
+                  <button type="submit" style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer", whiteSpace: "nowrap" }}>
                     Email Me
                   </button>
                 </form>
@@ -333,7 +333,7 @@ export default function StartHereQuiz() {
                   setCurrentStep(0);
                   setAnswers({});
                 }}
-                style={{ background: "#FFF", color: "#1A1A1A", border: "1px solid #E0D9CC", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}
+                style={{ background: "#FFF", color: "var(--ink)", border: "1px solid #E0D9CC", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}
               >
                 Start Over
               </button>

@@ -70,7 +70,7 @@ export default function Parenting() {
   };
 
   return (
-    <div style={{ background: "#F7F5F0" }}>
+    <div style={{ background: "var(--paper)" }}>
       <SEOMeta
         title="Christian Parenting Help | LiveWell by James Bell"
         description="Raising kids who think, question, and believe. Christian parenting articles on faith formation, doubt, technology, and loving your children through every season."
@@ -82,34 +82,34 @@ export default function Parenting() {
       <MinimalNav />
 
       {/* HERO SECTION */}
-      <section style={{ background: "#2D4A3E", color: "#F7F5F0", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
+      <section style={{ background: "var(--ink)", color: "var(--paper)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <h1 style={{ fontSize: "clamp(36px, 5vw, 56px)", fontWeight: "bold", lineHeight: "1.2", marginBottom: "24px", fontFamily: "Georgia, serif" }}>
             Raising Kids Who Think, Question, and Believe
           </h1>
-          <p style={{ fontSize: "18px", lineHeight: "1.8", marginBottom: "32px", color: "#D1C9BB" }}>
+          <p style={{ fontSize: "18px", lineHeight: "1.8", marginBottom: "32px", color: "var(--stone2)" }}>
             Parenting is theology in practice. What you do at the dinner table matters more than what happens on Sunday morning.
           </p>
         </div>
       </section>
 
       {/* FEATURED ARTICLES */}
-      <section style={{ background: "#F7F5F0", padding: "80px 20px" }}>
+      <section style={{ background: "var(--paper)", padding: "80px 20px" }}>
         <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "48px", fontFamily: "Georgia, serif", color: "#1A1A1A" }}>
+          <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "48px", fontFamily: "Georgia, serif", color: "var(--ink)" }}>
             Essential Reading for Parents
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "32px" }}>
             {FEATURED_ARTICLES.map((article, i) => (
               <Link key={i} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
                 <div style={{ background: "#FFF", padding: "32px", borderRadius: "8px", border: "1px solid #E0D9CC", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column" }}>
-                  <div style={{ fontSize: "11px", fontWeight: "bold", color: "#B8963E", marginBottom: "12px", textTransform: "uppercase" }}>
+                  <div style={{ fontSize: "11px", fontWeight: "bold", color: "var(--gold)", marginBottom: "12px", textTransform: "uppercase" }}>
                     {article.topic}
                   </div>
-                  <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "16px", color: "#1A1A1A", flex: 1, lineHeight: "1.4" }}>
+                  <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "16px", color: "var(--ink)", flex: 1, lineHeight: "1.4" }}>
                     {article.title}
                   </h3>
-                  <div style={{ fontSize: "12px", color: "#6B7280" }}>
+                  <div style={{ fontSize: "12px", color: "var(--ink3)" }}>
                     {article.readTime}
                   </div>
                 </div>
@@ -120,23 +120,23 @@ export default function Parenting() {
       </section>
 
       {/* CONVERSATION STARTERS BY AGE */}
-      <section style={{ background: "#F0EDE5", padding: "80px 20px" }}>
+      <section style={{ background: "var(--paper2)", padding: "80px 20px" }}>
         <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "12px", fontFamily: "Georgia, serif", color: "#1A1A1A" }}>
+          <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "12px", fontFamily: "Georgia, serif", color: "var(--ink)" }}>
             Parenting Conversation Starters
           </h2>
-          <p style={{ fontSize: "16px", color: "#6B7280", marginBottom: "48px" }}>
+          <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "48px" }}>
             Age-appropriate ways to talk about faith, doubt, and what your kids are really thinking.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "32px" }}>
             {AGE_GROUPS.map((group, i) => (
               <div key={i} style={{ background: "#FFF", borderRadius: "8px", overflow: "hidden", border: "1px solid #E0D9CC", borderLeft: "8px solid #9B8BA8", padding: "28px" }}>
-                <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "16px", color: "#1A1A1A" }}>
+                <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "16px", color: "var(--ink)" }}>
                   {group.range}
                 </h3>
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                   {group.topics.map((topic, j) => (
-                    <div key={j} style={{ fontSize: "14px", color: "#6B7280", paddingLeft: "16px" }}>
+                    <div key={j} style={{ fontSize: "14px", color: "var(--ink3)", paddingLeft: "16px" }}>
                       • {topic}
                     </div>
                   ))}
@@ -148,16 +148,16 @@ export default function Parenting() {
       </section>
 
       {/* NEWSLETTER STRIP */}
-      <section style={{ background: "#2D4A3E", color: "#F7F5F0", padding: "60px 20px" }}>
+      <section style={{ background: "var(--ink)", color: "var(--paper)", padding: "60px 20px" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontSize: "32px", fontWeight: "bold", marginBottom: "16px", fontFamily: "Georgia, serif" }}>
             Parenting resources for the long haul.
           </h2>
-          <p style={{ fontSize: "14px", lineHeight: "1.8", marginBottom: "32px", color: "#D1C9BB" }}>
+          <p style={{ fontSize: "14px", lineHeight: "1.8", marginBottom: "32px", color: "var(--stone2)" }}>
             Twice-weekly essays, devotionals for families, and conversation starters. For parents who care more about character than compliance.
           </p>
           {emailSubmitted ? (
-            <p style={{ color: "#B8963E", fontWeight: "bold", fontSize: "16px" }}>
+            <p style={{ color: "var(--gold)", fontWeight: "bold", fontSize: "16px" }}>
               Check your inbox. Welcome to the journey.
             </p>
           ) : (
@@ -170,7 +170,7 @@ export default function Parenting() {
                 required
                 style={{ flex: 1, minWidth: "200px", padding: "12px 16px", border: "none", borderRadius: "4px", fontSize: "14px" }}
               />
-              <button type="submit" style={{ background: "#B8963E", color: "#1A1A1A", border: "none", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer", whiteSpace: "nowrap" }}>
+              <button type="submit" style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer", whiteSpace: "nowrap" }}>
                 Subscribe
               </button>
             </form>
@@ -179,16 +179,16 @@ export default function Parenting() {
       </section>
 
       {/* CTA SECTION */}
-      <section style={{ background: "#F7F5F0", padding: "80px 20px" }}>
+      <section style={{ background: "var(--paper)", padding: "80px 20px" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontSize: "32px", fontWeight: "bold", marginBottom: "16px", fontFamily: "Georgia, serif", color: "#1A1A1A" }}>
+          <h2 style={{ fontSize: "32px", fontWeight: "bold", marginBottom: "16px", fontFamily: "Georgia, serif", color: "var(--ink)" }}>
             Your children will inherit your doubts before they inherit your certainty.
           </h2>
-          <p style={{ fontSize: "16px", lineHeight: "1.8", marginBottom: "32px", color: "#6B7280" }}>
+          <p style={{ fontSize: "16px", lineHeight: "1.8", marginBottom: "32px", color: "var(--ink3)" }}>
             That's not a problem. That's an opportunity to model what genuine faith actually looks like—honest, tested, and holding on anyway.
           </p>
           <Link href="/writing?topic=parenting" style={{ textDecoration: "none" }}>
-            <button style={{ background: "#2D4A3E", color: "#F7F5F0", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
+            <button style={{ background: "var(--ink)", color: "var(--paper)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
               Browse All Parenting Articles
             </button>
           </Link>
