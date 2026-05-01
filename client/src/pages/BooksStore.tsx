@@ -74,20 +74,20 @@ export default function BooksStore() {
 
   return (
     <Layout>
-      <section className="py-24" style={{ backgroundColor: "#F7F5F0" }}>
+      <section className="py-24" style={{ backgroundColor: "var(--bone)" }}>
         <div className="container">
           <div className="max-w-3xl mx-auto mb-16">
             <h1
               className="font-display font-bold mb-6"
               style={{
-                color: "#1A1A1A",
+                color: "var(--ink)",
                 fontSize: "clamp(2rem, 4vw, 2.75rem)",
                 lineHeight: 1.15,
               }}
             >
               Books & Resources
             </h1>
-            <p style={{ color: "#2C3E50", fontSize: "18px", lineHeight: 1.6 }}>
+            <p style={{ color: "var(--charcoal)", fontSize: "18px", lineHeight: 1.6 }}>
               Explore James Bell's published works and recommended reading for deeper theological
               engagement and spiritual growth.
             </p>
@@ -95,8 +95,8 @@ export default function BooksStore() {
 
           {/* Email Capture Form */}
           {showCheckoutForm && (
-            <div className="max-w-md mx-auto mb-12 p-6 bg-white rounded-lg shadow-md border-l-4" style={{ borderColor: "#B8963E" }}>
-              <h3 style={{ color: "#1A1A1A", fontSize: "18px", fontWeight: "bold", marginBottom: "12px" }}>
+            <div className="max-w-md mx-auto mb-12 p-6 bg-white rounded-lg shadow-md border-l-4" style={{ borderColor: "var(--gold)" }}>
+              <h3 style={{ color: "var(--ink)", fontSize: "18px", fontWeight: "bold", marginBottom: "12px" }}>
                 Complete Your Purchase
               </h3>
               <div className="space-y-4">
@@ -106,7 +106,7 @@ export default function BooksStore() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="w-full px-4 py-2 border rounded"
-                  style={{ borderColor: "#D1C9BB" }}
+                  style={{ borderColor: "rgba(244,241,234,0.7)" }}
                 />
                 <input
                   type="email"
@@ -114,13 +114,13 @@ export default function BooksStore() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full px-4 py-2 border rounded"
-                  style={{ borderColor: "#D1C9BB" }}
+                  style={{ borderColor: "rgba(244,241,234,0.7)" }}
                 />
                 <Button
                   onClick={() => handleBuyBook(showCheckoutForm, "")}
                   disabled={loadingBookId !== null}
                   className="w-full"
-                  style={{ backgroundColor: "#B8963E" }}
+                  style={{ backgroundColor: "var(--gold)" }}
                 >
                   {loadingBookId ? <Loader2 className="w-4 h-4 animate-spin mr-2" /> : null}
                   Proceed to Checkout
@@ -128,7 +128,7 @@ export default function BooksStore() {
                 <button
                   onClick={() => setShowCheckoutForm(null)}
                   className="w-full text-sm"
-                  style={{ color: "#6B7280" }}
+                  style={{ color: "var(--ink-muted)" }}
                 >
                   Cancel
                 </button>
@@ -139,7 +139,7 @@ export default function BooksStore() {
           {/* Authored Books */}
           {authoredBooks.length > 0 && (
             <div className="mb-24">
-              <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-12" style={{ color: "#B8963E" }}>
+              <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-12" style={{ color: "var(--gold)" }}>
                 James Bell's Books
               </div>
 
@@ -163,20 +163,20 @@ export default function BooksStore() {
                     <div className="p-6">
                       <h3
                         className="font-display font-bold mb-2"
-                        style={{ color: "#1A1A1A", fontSize: "18px" }}
+                        style={{ color: "var(--ink)", fontSize: "18px" }}
                       >
                         {book.title}
                       </h3>
 
                       {book.author && (
-                        <p style={{ color: "#B8963E", fontSize: "14px", marginBottom: "12px" }}>
+                        <p style={{ color: "var(--gold)", fontSize: "14px", marginBottom: "12px" }}>
                           by {book.author}
                         </p>
                       )}
 
                       {book.description && (
                         <p
-                          style={{ color: "#2C3E50", fontSize: "14px", lineHeight: 1.6, marginBottom: "16px" }}
+                          style={{ color: "var(--charcoal)", fontSize: "14px", lineHeight: 1.6, marginBottom: "16px" }}
                         >
                           {book.description}
                         </p>
@@ -197,7 +197,7 @@ export default function BooksStore() {
                           onClick={() => handleBuyBook(book.id, book.title)}
                           disabled={loadingBookId === book.id}
                           className="flex-1 flex items-center justify-center gap-2"
-                          style={{ backgroundColor: "#B8963E" }}
+                          style={{ backgroundColor: "var(--gold)" }}
                         >
                           {loadingBookId === book.id ? (
                             <Loader2 className="w-4 h-4 animate-spin" />
@@ -219,7 +219,7 @@ export default function BooksStore() {
           {/* Recommended Books */}
           {recommendedBooks.length > 0 && (
             <div>
-              <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-12" style={{ color: "#B8963E" }}>
+              <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-12" style={{ color: "var(--gold)" }}>
                 Recommended Reading
               </div>
 
@@ -243,20 +243,20 @@ export default function BooksStore() {
                     <div className="p-6">
                       <h3
                         className="font-display font-bold mb-2"
-                        style={{ color: "#1A1A1A", fontSize: "18px" }}
+                        style={{ color: "var(--ink)", fontSize: "18px" }}
                       >
                         {book.title}
                       </h3>
 
                       {book.author && (
-                        <p style={{ color: "#B8963E", fontSize: "14px", marginBottom: "12px" }}>
+                        <p style={{ color: "var(--gold)", fontSize: "14px", marginBottom: "12px" }}>
                           by {book.author}
                         </p>
                       )}
 
                       {book.description && (
                         <p
-                          style={{ color: "#2C3E50", fontSize: "14px", lineHeight: 1.6, marginBottom: "16px" }}
+                          style={{ color: "var(--charcoal)", fontSize: "14px", lineHeight: 1.6, marginBottom: "16px" }}
                         >
                           {book.description}
                         </p>
@@ -266,7 +266,7 @@ export default function BooksStore() {
                         <Button
                           onClick={() => handleAmazonLink(book.purchaseUrl!)}
                           className="w-full flex items-center justify-center gap-2"
-                          style={{ backgroundColor: "#B8963E" }}
+                          style={{ backgroundColor: "var(--gold)" }}
                         >
                           <ExternalLink className="w-4 h-4" />
                           Get on Amazon
@@ -281,7 +281,7 @@ export default function BooksStore() {
 
           {!authoredBooks.length && !recommendedBooks.length && (
             <div className="text-center py-12">
-              <p style={{ color: "#6B7280", fontSize: "16px" }}>No books available yet.</p>
+              <p style={{ color: "var(--ink-muted)", fontSize: "16px" }}>No books available yet.</p>
             </div>
           )}
         </div>

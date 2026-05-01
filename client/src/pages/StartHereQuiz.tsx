@@ -170,7 +170,7 @@ export default function StartHereQuiz() {
 
             {/* QUESTION */}
             <div style={{ marginBottom: "48px" }}>
-              <h1 style={{ fontSize: "36px", fontWeight: "bold", color: "var(--ink)", marginBottom: "32px", fontFamily: "Georgia, serif" }}>
+              <h1 style={{ fontSize: "36px", fontWeight: "bold", color: "var(--ink)", marginBottom: "32px", fontFamily: "var(--F)" }}>
                 {QUESTIONS[currentStep].title}
               </h1>
 
@@ -242,13 +242,13 @@ export default function StartHereQuiz() {
           <>
             {/* RESULTS PAGE */}
             <div style={{ textAlign: "center", marginBottom: "48px" }}>
-              <h1 style={{ fontSize: "36px", fontWeight: "bold", color: "var(--ink)", marginBottom: "16px", fontFamily: "Georgia, serif" }}>
+              <h1 style={{ fontSize: "36px", fontWeight: "bold", color: "var(--ink)", marginBottom: "16px", fontFamily: "var(--F)" }}>
                 Your Personalized Reading Path
               </h1>
               <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "24px" }}>
                 Based on where you are, here's where to start:
               </p>
-              <h2 style={{ fontSize: "24px", fontWeight: "bold", color: "var(--ink)", marginBottom: "32px", fontFamily: "Georgia, serif" }}>
+              <h2 style={{ fontSize: "24px", fontWeight: "bold", color: "var(--ink)", marginBottom: "32px", fontFamily: "var(--F)" }}>
                 {readingPath.title}
               </h2>
             </div>

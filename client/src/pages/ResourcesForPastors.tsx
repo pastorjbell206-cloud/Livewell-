@@ -37,13 +37,13 @@ export default function ResourcesForPastors() {
           </div>
           <div className="relative container flex items-end" style={{ minHeight: "50vh" }}>
             <div className="max-w-2xl pb-16">
-              <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-4" style={{ color: "#B8963E" }}>
+              <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-4" style={{ color: "var(--gold)" }}>
                 Resources for Pastors
               </div>
-              <h1 className="font-display font-bold mb-4" style={{ color: "#F7F5F0", fontSize: "clamp(2.25rem, 4vw, 3rem)" }}>
+              <h1 className="font-display font-bold mb-4" style={{ color: "var(--bone)", fontSize: "clamp(2.25rem, 4vw, 3rem)" }}>
                 Tools for the work
               </h1>
-              <p className="font-body text-lg" style={{ color: "#D1C9BB", lineHeight: 1.8 }}>
+              <p className="font-body text-lg" style={{ color: "rgba(244,241,234,0.7)", lineHeight: 1.8 }}>
                 Free resources to support your ministry — guides, essays, and collections from James Bell and the Livewell community.
               </p>
             </div>
@@ -51,7 +51,7 @@ export default function ResourcesForPastors() {
         </section>
 
         {/* Resources */}
-        <section className="py-24" style={{ backgroundColor: "#F7F5F0" }}>
+        <section className="py-24" style={{ backgroundColor: "var(--bone)" }}>
           <div className="container">
             <div className="max-w-4xl mx-auto">
               <div className="space-y-16">
@@ -60,14 +60,14 @@ export default function ResourcesForPastors() {
                   return (
                     <div key={idx} className="bg-white rounded-lg p-8 border" style={{ borderColor: "#E5DDD0" }}>
                       <div className="flex gap-6 mb-6">
-                        <div style={{ color: "#B8963E" }}>
+                        <div style={{ color: "var(--gold)" }}>
                           <Icon size={32} />
                         </div>
                         <div className="flex-1">
-                          <h2 className="font-display font-bold mb-3" style={{ color: "#1A1A1A", fontSize: "clamp(1.25rem, 2vw, 1.75rem)" }}>
+                          <h2 className="font-display font-bold mb-3" style={{ color: "var(--ink)", fontSize: "clamp(1.25rem, 2vw, 1.75rem)" }}>
                             {resource.title}
                           </h2>
-                          <p className="font-body text-lg" style={{ color: "#2C3E50", lineHeight: 1.8 }}>
+                          <p className="font-body text-lg" style={{ color: "var(--charcoal)", lineHeight: 1.8 }}>
                             {resource.description}
                           </p>
                         </div>
@@ -82,7 +82,7 @@ export default function ResourcesForPastors() {
                             download
                             className="flex items-center justify-between p-4 rounded border transition-colors"
                             style={{
-                              borderColor: "#D1C9BB",
+                              borderColor: "rgba(244,241,234,0.7)",
                               backgroundColor: "#FAFAF8",
                             }}
                             onMouseEnter={(e) => {
@@ -93,17 +93,17 @@ export default function ResourcesForPastors() {
                             }}
                           >
                             <div className="flex items-center gap-3">
-                              <FileText size={20} style={{ color: "#B8963E" }} />
+                              <FileText size={20} style={{ color: "var(--gold)" }} />
                               <div>
-                                <p className="font-ui font-medium" style={{ color: "#1A1A1A" }}>
+                                <p className="font-ui font-medium" style={{ color: "var(--ink)" }}>
                                   {download.label}
                                 </p>
-                                <p className="font-ui text-xs" style={{ color: "#6B7280" }}>
+                                <p className="font-ui text-xs" style={{ color: "var(--ink-muted)" }}>
                                   {download.format} • {download.size}
                                 </p>
                               </div>
                             </div>
-                            <Download size={20} style={{ color: "#B8963E" }} />
+                            <Download size={20} style={{ color: "var(--gold)" }} />
                           </a>
                         ))}
                       </div>
@@ -114,23 +114,23 @@ export default function ResourcesForPastors() {
 
               {/* Coming Soon */}
               <div className="mt-16 pt-16 border-t" style={{ borderColor: "#E5DDD0" }}>
-                <h2 className="font-display font-bold mb-8" style={{ color: "#1A1A1A", fontSize: "clamp(1.5rem, 2vw, 1.75rem)" }}>
+                <h2 className="font-display font-bold mb-8" style={{ color: "var(--ink)", fontSize: "clamp(1.5rem, 2vw, 1.75rem)" }}>
                   Coming soon
                 </h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="p-6 rounded" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5DDD0" }}>
-                    <h3 className="font-display font-semibold mb-3" style={{ color: "#2C3E50" }}>
+                    <h3 className="font-display font-semibold mb-3" style={{ color: "var(--charcoal)" }}>
                       Sermon Study Guides
                     </h3>
-                    <p className="font-body text-sm" style={{ color: "#6B7280" }}>
+                    <p className="font-body text-sm" style={{ color: "var(--ink-muted)" }}>
                       Downloadable guides to help you teach through key passages and theological topics with your congregation.
                     </p>
                   </div>
                   <div className="p-6 rounded" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5DDD0" }}>
-                    <h3 className="font-display font-semibold mb-3" style={{ color: "#2C3E50" }}>
+                    <h3 className="font-display font-semibold mb-3" style={{ color: "var(--charcoal)" }}>
                       Leadership Curriculum
                     </h3>
-                    <p className="font-body text-sm" style={{ color: "#6B7280" }}>
+                    <p className="font-body text-sm" style={{ color: "var(--ink-muted)" }}>
                       Multi-week curriculum for developing leaders in your congregation around biblical theology and ministry.
                     </p>
                   </div>

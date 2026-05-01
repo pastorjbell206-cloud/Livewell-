@@ -50,7 +50,7 @@ export default function TheologyQuiz() {
         <div style={{ minHeight: "60vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--paper)" }}>
           <div style={{ textAlign: "center" }}>
             <div style={{ width: "40px", height: "40px", border: "3px solid #E0D9CC", borderTop: "3px solid #B8963E", borderRadius: "50%", animation: "spin 1s linear infinite", margin: "0 auto 16px" }} />
-            <p style={{ color: "var(--ink3)", fontFamily: "Georgia, serif" }}>Loading your quiz...</p>
+            <p style={{ color: "var(--ink3)", fontFamily: "var(--F)" }}>Loading your quiz...</p>
           </div>
         </div>
         <Footer />
@@ -72,7 +72,7 @@ export default function TheologyQuiz() {
       <section style={{ background: "var(--ink)", padding: "60px 20px 40px", textAlign: "center" }}>
         <div style={{ maxWidth: "700px", margin: "0 auto" }}>
           <div style={{ fontSize: "12px", letterSpacing: "2px", color: "var(--gold)", fontWeight: "bold", marginBottom: "12px", textTransform: "uppercase" }}>FREE ASSESSMENT</div>
-          <h1 style={{ fontSize: "clamp(32px, 5vw, 48px)", fontWeight: "bold", color: "var(--paper)", fontFamily: "Georgia, serif", marginBottom: "16px" }}>
+          <h1 style={{ fontSize: "clamp(32px, 5vw, 48px)", fontWeight: "bold", color: "var(--paper)", fontFamily: "var(--F)", marginBottom: "16px" }}>
             Where Do You Stand Theologically?
           </h1>
           <p style={{ fontSize: "16px", color: "rgba(255,255,255,0.75)", lineHeight: "1.7" }}>
@@ -101,7 +101,7 @@ export default function TheologyQuiz() {
               {/* Question Card */}
               {questions[currentQuestion] && (
                 <div style={{ background: "white", borderRadius: "8px", border: "1px solid #E0D9CC", padding: "40px", boxShadow: "0 4px 24px rgba(26,51,40,0.06)" }}>
-                  <h2 style={{ fontSize: "22px", fontWeight: "bold", color: "var(--ink)", fontFamily: "Georgia, serif", marginBottom: "32px", lineHeight: "1.4" }}>
+                  <h2 style={{ fontSize: "22px", fontWeight: "bold", color: "var(--ink)", fontFamily: "var(--F)", marginBottom: "32px", lineHeight: "1.4" }}>
                     {questions[currentQuestion].question}
                   </h2>
                   <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -156,7 +156,7 @@ export default function TheologyQuiz() {
               {/* Results */}
               <div style={{ textAlign: "center", marginBottom: "40px" }}>
                 <div style={{ fontSize: "48px", marginBottom: "16px" }}>✓</div>
-                <h2 style={{ fontSize: "32px", fontWeight: "bold", color: "var(--ink)", fontFamily: "Georgia, serif", marginBottom: "8px" }}>Your Results</h2>
+                <h2 style={{ fontSize: "32px", fontWeight: "bold", color: "var(--ink)", fontFamily: "var(--F)", marginBottom: "8px" }}>Your Results</h2>
                 <p style={{ color: "var(--ink3)", fontSize: "16px" }}>Here's what your answers reveal about your theological inclinations.</p>
               </div>
 
@@ -165,7 +165,7 @@ export default function TheologyQuiz() {
                   {/* Top Pillar */}
                   <div style={{ background: "white", borderRadius: "8px", border: "2px solid #B8963E", padding: "32px", marginBottom: "32px" }}>
                     <div style={{ fontSize: "12px", letterSpacing: "2px", color: "var(--gold)", fontWeight: "bold", marginBottom: "8px", textTransform: "uppercase" }}>Your Primary Pillar</div>
-                    <h3 style={{ fontSize: "24px", fontWeight: "bold", color: "var(--gold)", fontFamily: "Georgia, serif", marginBottom: "12px" }}>
+                    <h3 style={{ fontSize: "24px", fontWeight: "bold", color: "var(--gold)", fontFamily: "var(--F)", marginBottom: "12px" }}>
                       {recommendationsQuery.data.topPillar}
                     </h3>
                     <p style={{ fontSize: "15px", color: "var(--ink3)", lineHeight: "1.7" }}>{recommendationsQuery.data.message}</p>
@@ -188,7 +188,7 @@ export default function TheologyQuiz() {
                   {/* Recommended Articles */}
                   {recommendationsQuery.data.recommendedArticles?.length > 0 && (
                     <div style={{ marginBottom: "40px" }}>
-                      <h3 style={{ fontSize: "22px", fontWeight: "bold", color: "var(--ink)", fontFamily: "Georgia, serif", marginBottom: "24px" }}>Recommended Reading For You</h3>
+                      <h3 style={{ fontSize: "22px", fontWeight: "bold", color: "var(--ink)", fontFamily: "var(--F)", marginBottom: "24px" }}>Recommended Reading For You</h3>
                       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "20px" }}>
                         {recommendationsQuery.data.recommendedArticles.slice(0, 4).map((article: any) => (
                           <Link key={article.slug} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>

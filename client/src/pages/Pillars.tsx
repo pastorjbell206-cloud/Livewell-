@@ -8,7 +8,7 @@ const PILLARS = [
   {
     id: "prophetic-disruption",
     name: "Prophetic Disruption",
-    color: "#1A1A1A",
+    color: "var(--ink)",
     description: "What needs to be challenged. The comfortable assumptions, the unexamined traditions, the systems that serve institutions more than people. This pillar exposes the places where the church has adopted the world's values and called it Christianity.",
     keyThemes: ["Cultural critique", "Challenging assumptions", "Biblical clarity", "Prophetic witness", "Uncomfortable truths"],
   },
@@ -16,28 +16,28 @@ const PILLARS = [
     id: "theological-depth",
     name: "Theological Depth",
     description: "What needs to be understood. Greek and Hebrew, church fathers, and serious theology—translated into language anyone can grasp on the first read. This pillar builds theological literacy and grounds faith in Scripture and tradition.",
-    color: "#2C3E50",
+    color: "var(--charcoal)",
     keyThemes: ["Biblical languages", "Church history", "Systematic theology", "Scriptural foundation", "Doctrinal clarity"],
   },
   {
     id: "prophetic-justice",
     name: "Prophetic Justice",
     description: "What needs to be named. The places where the church has been silent when it should have spoken, complicit when it should have resisted. This pillar calls the church to prophetic action on behalf of the vulnerable and marginalized.",
-    color: "#2D4A3E",
+    color: "var(--charcoal)",
     keyThemes: ["Social justice", "Racial reconciliation", "Economic justice", "Systemic injustice", "Prophetic action"],
   },
   {
     id: "integrated-life",
     name: "Integrated Life",
     description: "What needs to be lived. Marriage, parenting, finances, daily existence—theology that doesn't stay theoretical but walks through your front door. This pillar helps you apply faith to every dimension of life.",
-    color: "#B8963E",
+    color: "var(--gold)",
     keyThemes: ["Marriage and family", "Personal finance", "Work and calling", "Spiritual disciplines", "Practical faith"],
   },
   {
     id: "leadership-formation",
     name: "Leadership Formation",
     description: "What leaders need to face. Not management techniques or growth strategies, but the interior work that makes a leader worth following. This pillar develops leaders who lead from conviction, not just competence.",
-    color: "#2C3E50",
+    color: "var(--charcoal)",
     keyThemes: ["Character development", "Spiritual leadership", "Vision and strategy", "Team building", "Pastoral care"],
   },
 ];
@@ -51,10 +51,10 @@ export default function Pillars() {
         <div className="container max-w-4xl">
           {/* Header */}
           <div className="mb-16 text-center">
-            <h1 className="text-5xl font-bold mb-6" style={{ color: "#1A1A1A" }}>
+            <h1 className="text-5xl font-bold mb-6" style={{ color: "var(--ink)" }}>
               The Five Pillars of LiveWell
             </h1>
-            <p className="text-xl" style={{ color: "#6B7280" }}>
+            <p className="text-xl" style={{ color: "var(--ink-muted)" }}>
               Everything at LiveWell is organized around five core pillars. Understanding these will help you navigate the content and find what matters most to you.
             </p>
           </div>
@@ -72,13 +72,13 @@ export default function Pillars() {
                     <h2 className="text-3xl font-bold mb-2" style={{ color: pillar.color }}>
                       {pillar.name}
                     </h2>
-                    <p className="text-lg" style={{ color: "#6B7280" }}>
+                    <p className="text-lg" style={{ color: "var(--ink-muted)" }}>
                       Pillar {index + 1} of 5
                     </p>
                   </div>
                 </div>
 
-                <p className="text-lg mb-6" style={{ color: "#1A1A1A", lineHeight: 1.8 }}>
+                <p className="text-lg mb-6" style={{ color: "var(--ink)", lineHeight: 1.8 }}>
                   {pillar.description}
                 </p>
 
@@ -91,7 +91,7 @@ export default function Pillars() {
                       <span
                         key={theme}
                         className="px-3 py-1 rounded-full text-sm font-medium"
-                        style={{ backgroundColor: pillar.color, color: "#F7F5F0" }}
+                        style={{ backgroundColor: pillar.color, color: "var(--bone)" }}
                       >
                         {theme}
                       </span>
@@ -112,13 +112,13 @@ export default function Pillars() {
           </div>
 
           {/* How to Use */}
-          <div className="mt-16 p-8 rounded-lg" style={{ backgroundColor: "#F7F5F0" }}>
-            <h2 className="text-2xl font-bold mb-4" style={{ color: "#1A1A1A" }}>
+          <div className="mt-16 p-8 rounded-lg" style={{ backgroundColor: "var(--bone)" }}>
+            <h2 className="text-2xl font-bold mb-4" style={{ color: "var(--ink)" }}>
               How to Use These Pillars
             </h2>
-            <ul className="space-y-3" style={{ color: "#1A1A1A" }}>
+            <ul className="space-y-3" style={{ color: "var(--ink)" }}>
               <li className="flex gap-3">
-                <span style={{ color: "#B8963E" }} className="font-bold">
+                <span style={{ color: "var(--gold)" }} className="font-bold">
                   1.
                 </span>
                 <span>
@@ -126,7 +126,7 @@ export default function Pillars() {
                 </span>
               </li>
               <li className="flex gap-3">
-                <span style={{ color: "#B8963E" }} className="font-bold">
+                <span style={{ color: "var(--gold)" }} className="font-bold">
                   2.
                 </span>
                 <span>
@@ -134,7 +134,7 @@ export default function Pillars() {
                 </span>
               </li>
               <li className="flex gap-3">
-                <span style={{ color: "#B8963E" }} className="font-bold">
+                <span style={{ color: "var(--gold)" }} className="font-bold">
                   3.
                 </span>
                 <span>
@@ -142,7 +142,7 @@ export default function Pillars() {
                 </span>
               </li>
               <li className="flex gap-3">
-                <span style={{ color: "#B8963E" }} className="font-bold">
+                <span style={{ color: "var(--gold)" }} className="font-bold">
                   4.
                 </span>
                 <span>
@@ -157,25 +157,25 @@ export default function Pillars() {
             <Link
               href="/writing"
               className="inline-block px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition-shadow"
-              style={{ backgroundColor: "#B8963E", color: "#F7F5F0" }}
+              style={{ backgroundColor: "var(--gold)", color: "var(--bone)" }}
             >
               Start Reading
             </Link>
           </div>
 
           {/* Email Signup CTA */}
-          <div className="mt-20 py-12 rounded-lg" style={{ backgroundColor: "#F7F5F0" }}>
+          <div className="mt-20 py-12 rounded-lg" style={{ backgroundColor: "var(--bone)" }}>
             <div className="text-center">
-              <h2 className="font-display text-3xl font-bold mb-4" style={{ color: "#1A1A1A" }}>
+              <h2 className="font-display text-3xl font-bold mb-4" style={{ color: "var(--ink)" }}>
                 Ready to Transform Your Life?
               </h2>
-              <p className="font-body text-lg mb-8" style={{ color: "#6B7280" }}>
+              <p className="font-body text-lg mb-8" style={{ color: "var(--ink-muted)" }}>
                 Get a free PDF guide explaining all 5 pillars and how to use them to deepen your faith and impact.
               </p>
               <button
                 onClick={() => setShowEmailSignup(true)}
                 className="px-8 py-3 rounded font-ui font-medium text-white transition-all hover:opacity-90"
-                style={{ backgroundColor: "#B8963E" }}
+                style={{ backgroundColor: "var(--gold)" }}
               >
                 Get Free Guide
               </button>

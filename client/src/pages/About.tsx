@@ -64,7 +64,7 @@ This is a space for serious theological thinking that doesn't require a seminary
       />
       <Layout>
         {/* Hero Section */}
-        <section className="py-20" style={{ backgroundColor: "#F7F5F0" }}>
+        <section className="py-20" style={{ backgroundColor: "var(--bone)" }}>
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
               {/* Portrait */}
@@ -85,16 +85,16 @@ This is a space for serious theological thinking that doesn't require a seminary
 
               {/* Story */}
               <div >
-                <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-4" style={{ color: "#B8963E" }}>
+                <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-4" style={{ color: "var(--gold)" }}>
                   About
                 </div>
 
                 {(contentQuery.isLoading || imageQuery.isLoading) ? (
                   <div className="flex justify-center py-16">
-                    <Loader2 size={32} className="animate-spin" style={{ color: "#B8963E" }} />
+                    <Loader2 size={32} className="animate-spin" style={{ color: "var(--gold)" }} />
                   </div>
                 ) : (
-                  <div className="font-body text-lg" style={{ color: "#1C1510", lineHeight: 1.85 }}>
+                  <div className="font-body text-lg" style={{ color: "var(--ink)", lineHeight: 1.85 }}>
                     <Streamdown>{content}</Streamdown>
                   </div>
                 )}
@@ -104,23 +104,23 @@ This is a space for serious theological thinking that doesn't require a seminary
         </section>
 
         {/* CTA Section */}
-        <section className="py-16" style={{ backgroundColor: "#1A1A1A" }}>
+        <section className="py-16" style={{ backgroundColor: "var(--ink)" }}>
           <div className="container">
             <div className="max-w-2xl mx-auto text-center">
-              <p className="font-body text-lg mb-8" style={{ color: "#F7F5F0", lineHeight: 1.85 }}>
+              <p className="font-body text-lg mb-8" style={{ color: "var(--bone)", lineHeight: 1.85 }}>
                 Whatever brought you here â a ministry on the edge, a marriage under strain, a faith that needs more room than it has been given â there is something here for you. Start reading.
               </p>
               <Link href="/writing">
                 <a className="inline-flex items-center gap-3 px-8 py-4 font-ui font-semibold uppercase tracking-[0.1em] transition-all duration-300"
                    style={{
-                     backgroundColor: "#B8963E",
-                     color: "#1A1A1A",
+                     backgroundColor: "var(--gold)",
+                     color: "var(--ink)",
                    }}
                    onMouseEnter={(e) => {
                      e.currentTarget.style.backgroundColor = "#D4A574";
                    }}
                    onMouseLeave={(e) => {
-                     e.currentTarget.style.backgroundColor = "#B8963E";
+                     e.currentTarget.style.backgroundColor = "var(--gold)";
                    }}
                 >
                   Start Reading â
