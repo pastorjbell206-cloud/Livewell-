@@ -9,21 +9,21 @@ const TOOLS = [
     description: "Find Scripture for any season of life. Search by topic — anxiety, grief, hope, courage, marriage, and more — and get curated verses you can copy and share.",
     href: "/tools/verse-finder",
     icon: BookOpen,
-    color: "#2C3E50",
+    color: "var(--ink2)",
   },
   {
     title: "Prayer Generator",
     description: "Guided prayers for every occasion. Choose a prayer type — morning, evening, strength, guidance, gratitude — and receive a theologically rich prayer you can personalize.",
     href: "/tools/prayer-generator",
     icon: Heart,
-    color: "#2D4A3E",
+    color: "var(--ink)",
   },
   {
     title: "Family Devotion Builder",
     description: "Build a 15-minute family devotion in seconds. Pick your kids' age group and a theme, and get a complete devotion with Scripture, teaching, activity, and prayer.",
     href: "/tools/family-devotions",
     icon: Users,
-    color: "#B8963E",
+    color: "var(--gold)",
   },
 ];
 

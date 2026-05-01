@@ -5,10 +5,10 @@ import { Clock, Search, X, ChevronDown, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 
 const TOPIC_COLORS: Record<string, string> = {
-  "theology": "#2D4A3E",
+  "theology": "var(--ink)",
   "justice": "#8B4545",
   "pastoral-ministry": "#6B8E6F",
-  "marriage": "#B8963E",
+  "marriage": "var(--gold)",
   "parenting": "#9B8BA8",
   "finances": "#6B9B8B",
   "devotionals": "#8B9B6F",

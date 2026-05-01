@@ -101,7 +101,7 @@ export default function MinimalNav() {
                 placeholder="Search 880+ essays..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                style={{ width: "100%", background: "transparent", border: "none", borderBottom: "2px solid #D4A017", fontSize: "clamp(28px,4vw,48px)", color: "white", outline: "none", padding: "8px 0 16px", caretColor: "#D4A017", fontFamily: "Georgia, serif" }}
+                style={{ width: "100%", background: "transparent", border: "none", borderBottom: "2px solid #D4A017", fontSize: "clamp(28px,4vw,48px)", color: "white", outline: "none", padding: "8px 0 16px", caretColor: "var(--gold)", fontFamily: "Georgia, serif" }}
               />
             </form>
             <div style={{ display: "flex", gap: "10px", marginTop: "24px", flexWrap: "wrap" }}>
@@ -127,8 +127,8 @@ export default function MinimalNav() {
           {/* Logo */}
           <Link href="/" style={{ textDecoration: "none" }}>
             <div>
-              <div style={{ fontSize: "20px", fontWeight: "bold", color: "#D4A017", cursor: "pointer", fontFamily: "Georgia, serif", lineHeight: 1 }}>LiveWell</div>
-              <div style={{ fontSize: "9px", color: "#D1C9BB", letterSpacing: "0.5px" }}>by James Bell</div>
+              <div style={{ fontSize: "20px", fontWeight: "bold", color: "var(--gold)", cursor: "pointer", fontFamily: "Georgia, serif", lineHeight: 1 }}>LiveWell</div>
+              <div style={{ fontSize: "9px", color: "var(--stone2)", letterSpacing: "0.5px" }}>by James Bell</div>
             </div>
           </Link>
 
@@ -143,7 +143,7 @@ export default function MinimalNav() {
                       onMouseEnter={() => setOpenDropdown(link.label)}
                       style={{
                         display: "flex", alignItems: "center", gap: "4px",
-                        color: openDropdown === link.label ? "#D4A017" : "#F7F5F0",
+                        color: openDropdown === link.label ? "var(--gold)" : "var(--paper)",
                         fontSize: "13px", padding: "8px 12px", borderRadius: "3px",
                         background: "none", border: "none", cursor: "pointer",
                         transition: "color 0.2s", fontWeight: "400"
@@ -173,9 +173,9 @@ export default function MinimalNav() {
                               onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(45,74,62,0.4)")}
                               onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
                             >
-                              <div style={{ fontSize: "13px", fontWeight: "600", color: "#111111", marginBottom: "2px" }}>{item.label}</div>
+                              <div style={{ fontSize: "13px", fontWeight: "600", color: "var(--ink)", marginBottom: "2px" }}>{item.label}</div>
                               {item.description && (
-                                <div style={{ fontSize: "11px", color: "#D1C9BB", lineHeight: "1.4" }}>{item.description}</div>
+                                <div style={{ fontSize: "11px", color: "var(--stone2)", lineHeight: "1.4" }}>{item.description}</div>
                               )}
                             </div>
                           </Link>
@@ -186,7 +186,7 @@ export default function MinimalNav() {
                 ) : (
                   <Link href={link.href!} style={{ textDecoration: "none" }}>
                     <span style={{
-                      color: isActive(link.href!) ? "#D4A017" : "#F7F5F0",
+                      color: isActive(link.href!) ? "var(--gold)" : "var(--paper)",
                       fontSize: "13px", padding: "8px 12px", borderRadius: "3px",
                       display: "block", transition: "color 0.2s",
                       fontWeight: isActive(link.href!) ? "600" : "400",
@@ -201,7 +201,7 @@ export default function MinimalNav() {
             {/* Search Icon */}
             <button
               onClick={() => setSearchOpen(true)}
-              style={{ background: "none", border: "none", color: "#111111", cursor: "pointer", padding: "8px", display: "flex", alignItems: "center", marginLeft: "4px" }}
+              style={{ background: "none", border: "none", color: "var(--ink)", cursor: "pointer", padding: "8px", display: "flex", alignItems: "center", marginLeft: "4px" }}
               aria-label="Search essays"
             >
               <Search size={18} />
@@ -209,7 +209,7 @@ export default function MinimalNav() {
 
             {/* Subscribe CTA */}
             <Link href="/start" style={{ textDecoration: "none" }}>
-              <button style={{ background: "#D4A017", color: "#1A1A1A", border: "none", padding: "9px 20px", fontSize: "13px", fontWeight: "bold", borderRadius: "3px", cursor: "pointer", marginLeft: "8px" }}>
+              <button style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "9px 20px", fontSize: "13px", fontWeight: "bold", borderRadius: "3px", cursor: "pointer", marginLeft: "8px" }}>
                 Start Here
               </button>
             </Link>
@@ -217,10 +217,10 @@ export default function MinimalNav() {
 
           {/* Mobile: search + hamburger */}
           <div style={{ display: "flex", gap: "8px", alignItems: "center" }} className="mobile-nav">
-            <button onClick={() => setSearchOpen(true)} style={{ background: "none", border: "none", color: "#111111", cursor: "pointer", padding: "8px" }} aria-label="Search">
+            <button onClick={() => setSearchOpen(true)} style={{ background: "none", border: "none", color: "var(--ink)", cursor: "pointer", padding: "8px" }} aria-label="Search">
               <Search size={20} />
             </button>
-            <button onClick={() => setMobileOpen(!mobileOpen)} style={{ background: "none", border: "none", color: "#111111", cursor: "pointer", padding: "8px" }} aria-label="Menu">
+            <button onClick={() => setMobileOpen(!mobileOpen)} style={{ background: "none", border: "none", color: "var(--ink)", cursor: "pointer", padding: "8px" }} aria-label="Menu">
               {mobileOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>
@@ -235,7 +235,7 @@ export default function MinimalNav() {
                   <>
                     <div
                       onClick={() => setOpenDropdown(openDropdown === link.label ? null : link.label)}
-                      style={{ color: "#D4A017", fontSize: "14px", padding: "12px 0", borderBottom: "1px solid #2D4A3E", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "center" }}
+                      style={{ color: "var(--gold)", fontSize: "14px", padding: "12px 0", borderBottom: "1px solid #2D4A3E", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "center" }}
                     >
                       {link.label}
                       <ChevronDown size={16} style={{ transform: openDropdown === link.label ? "rotate(180deg)" : "none", transition: "transform 0.2s" }} />
@@ -245,8 +245,8 @@ export default function MinimalNav() {
                         {link.dropdown.map((item) => (
                           <Link key={item.href + item.label} href={item.href} onClick={() => { setMobileOpen(false); setOpenDropdown(null); }} style={{ textDecoration: "none" }}>
                             <div style={{ padding: "10px 0", borderBottom: "1px solid rgba(45,74,62,0.3)" }}>
-                              <div style={{ color: "#111111", fontSize: "14px" }}>{item.label}</div>
-                              {item.description && <div style={{ color: "#D1C9BB", fontSize: "12px", marginTop: "2px" }}>{item.description}</div>}
+                              <div style={{ color: "var(--ink)", fontSize: "14px" }}>{item.label}</div>
+                              {item.description && <div style={{ color: "var(--stone2)", fontSize: "12px", marginTop: "2px" }}>{item.description}</div>}
                             </div>
                           </Link>
                         ))}
@@ -255,7 +255,7 @@ export default function MinimalNav() {
                   </>
                 ) : (
                   <Link href={link.href!} onClick={() => setMobileOpen(false)} style={{ textDecoration: "none" }}>
-                    <div style={{ color: isActive(link.href!) ? "#D4A017" : "#F7F5F0", fontSize: "14px", padding: "12px 0", borderBottom: "1px solid #2D4A3E", fontWeight: isActive(link.href!) ? "600" : "400" }}>
+                    <div style={{ color: isActive(link.href!) ? "var(--gold)" : "var(--paper)", fontSize: "14px", padding: "12px 0", borderBottom: "1px solid #2D4A3E", fontWeight: isActive(link.href!) ? "600" : "400" }}>
                       {link.label}
                     </div>
                   </Link>
@@ -264,12 +264,12 @@ export default function MinimalNav() {
             ))}
             <div style={{ display: "flex", gap: "8px", marginTop: "16px" }}>
               <Link href="/start" onClick={() => setMobileOpen(false)} style={{ textDecoration: "none", flex: 1 }}>
-                <button style={{ background: "#D4A017", color: "#1A1A1A", border: "none", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "3px", cursor: "pointer", width: "100%" }}>
+                <button style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "3px", cursor: "pointer", width: "100%" }}>
                   Start Here
                 </button>
               </Link>
               <Link href="/membership" onClick={() => setMobileOpen(false)} style={{ textDecoration: "none", flex: 1 }}>
-                <button style={{ background: "transparent", color: "#D4A017", border: "1px solid #D4A017", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "3px", cursor: "pointer", width: "100%" }}>
+                <button style={{ background: "transparent", color: "var(--gold)", border: "1px solid #D4A017", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "3px", cursor: "pointer", width: "100%" }}>
                   Membership
                 </button>
               </Link>

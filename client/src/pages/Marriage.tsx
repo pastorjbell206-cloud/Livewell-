@@ -85,16 +85,16 @@ export default function Marriage() {
       <MinimalNav />
 
       {/* HERO SECTION */}
-      <section style={{ background: "#111111", color: "#ffffff", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
+      <section style={{ background: "var(--ink)", color: "#ffffff", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <h1 style={{ fontSize: "clamp(36px, 5vw, 56px)", fontWeight: "bold", lineHeight: "1.2", marginBottom: "24px", fontFamily: "Georgia, serif" }}>
             When Your Marriage Needs More Than Advice
           </h1>
-          <p style={{ fontSize: "18px", lineHeight: "1.8", marginBottom: "32px", color: "#999999" }}>
+          <p style={{ fontSize: "18px", lineHeight: "1.8", marginBottom: "32px", color: "var(--stone2)" }}>
             Covenant theology applied to the actual experience of marriage — the drift, the conflict, the repair, and the costly love that holds.
           </p>
           <Link href="/quiz" style={{ textDecoration: "none" }}>
-            <button style={{ background: "#D4A017", color: "#1A1A1A", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
+            <button style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
               Marriage Health Assessment
             </button>
           </Link>
@@ -104,20 +104,20 @@ export default function Marriage() {
       {/* FEATURED ARTICLES */}
       <section style={{ background: "#ffffff", padding: "80px 20px" }}>
         <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "48px", fontFamily: "Georgia, serif", color: "#1A1A1A" }}>
+          <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "48px", fontFamily: "Georgia, serif", color: "var(--ink)" }}>
             Essential Reading
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "32px" }}>
             {FEATURED_ARTICLES.map((article, i) => (
               <Link key={i} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
                 <div style={{ background: "#FFF", padding: "32px", borderRadius: "8px", border: "1px solid #e5e5e5", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column", transition: "all 0.3s ease" }}>
-                  <div style={{ fontSize: "11px", fontWeight: "bold", color: "#D4A017", marginBottom: "12px", textTransform: "uppercase" }}>
+                  <div style={{ fontSize: "11px", fontWeight: "bold", color: "var(--gold)", marginBottom: "12px", textTransform: "uppercase" }}>
                     {article.topic}
                   </div>
-                  <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "16px", color: "#1A1A1A", flex: 1, lineHeight: "1.4" }}>
+                  <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "16px", color: "var(--ink)", flex: 1, lineHeight: "1.4" }}>
                     {article.title}
                   </h3>
-                  <div style={{ fontSize: "12px", color: "#6B7280" }}>
+                  <div style={{ fontSize: "12px", color: "var(--ink3)" }}>
                     {article.readTime}
                   </div>
                 </div>
@@ -128,24 +128,24 @@ export default function Marriage() {
       </section>
 
       {/* READING PATHS */}
-      <section style={{ background: "#f8f8f6", padding: "80px 20px" }}>
+      <section style={{ background: "var(--paper2)", padding: "80px 20px" }}>
         <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "12px", fontFamily: "Georgia, serif", color: "#1A1A1A" }}>
+          <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "12px", fontFamily: "Georgia, serif", color: "var(--ink)" }}>
             Curated Reading Paths
           </h2>
-          <p style={{ fontSize: "16px", color: "#6B7280", marginBottom: "48px" }}>
+          <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "48px" }}>
             Thematic collections to go deeper on specific areas of your marriage.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "32px" }}>
             {READING_PATHS.map((path, i) => (
               <div key={i} style={{ background: "#FFF", borderRadius: "8px", overflow: "hidden", border: "1px solid #e5e5e5", borderLeft: "8px solid #D4A017", padding: "28px", cursor: "pointer" }}>
-                <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "12px", color: "#1A1A1A" }}>
+                <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "12px", color: "var(--ink)" }}>
                   {path.title}
                 </h3>
-                <p style={{ fontSize: "14px", lineHeight: "1.6", color: "#6B7280", marginBottom: "16px" }}>
+                <p style={{ fontSize: "14px", lineHeight: "1.6", color: "var(--ink3)", marginBottom: "16px" }}>
                   {path.description}
                 </p>
-                <div style={{ fontSize: "12px", fontWeight: "bold", color: "#D4A017" }}>
+                <div style={{ fontSize: "12px", fontWeight: "bold", color: "var(--gold)" }}>
                   {path.articles} articles in this path
                 </div>
               </div>
@@ -155,16 +155,16 @@ export default function Marriage() {
       </section>
 
       {/* NEWSLETTER STRIP */}
-      <section style={{ background: "#111111", color: "#ffffff", padding: "60px 20px" }}>
+      <section style={{ background: "var(--ink)", color: "#ffffff", padding: "60px 20px" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontSize: "32px", fontWeight: "bold", marginBottom: "16px", fontFamily: "Georgia, serif" }}>
             Marriage insights for your inbox.
           </h2>
-          <p style={{ fontSize: "14px", lineHeight: "1.8", marginBottom: "32px", color: "#999999" }}>
+          <p style={{ fontSize: "14px", lineHeight: "1.8", marginBottom: "32px", color: "var(--stone2)" }}>
             Essays, devotionals, and conversation starters delivered twice a week. For couples ready to go deeper.
           </p>
           {emailSubmitted ? (
-            <p style={{ color: "#D4A017", fontWeight: "bold", fontSize: "16px" }}>
+            <p style={{ color: "var(--gold)", fontWeight: "bold", fontSize: "16px" }}>
               Check your inbox. You're in.
             </p>
           ) : (
@@ -177,7 +177,7 @@ export default function Marriage() {
                 required
                 style={{ flex: 1, minWidth: "200px", padding: "12px 16px", border: "none", borderRadius: "4px", fontSize: "14px" }}
               />
-              <button type="submit" style={{ background: "#D4A017", color: "#1A1A1A", border: "none", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer", whiteSpace: "nowrap" }}>
+              <button type="submit" style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer", whiteSpace: "nowrap" }}>
                 Subscribe
               </button>
             </form>
@@ -188,14 +188,14 @@ export default function Marriage() {
       {/* CTA SECTION */}
       <section style={{ background: "#ffffff", padding: "80px 20px" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontSize: "32px", fontWeight: "bold", marginBottom: "16px", fontFamily: "Georgia, serif", color: "#1A1A1A" }}>
+          <h2 style={{ fontSize: "32px", fontWeight: "bold", marginBottom: "16px", fontFamily: "Georgia, serif", color: "var(--ink)" }}>
             Your marriage can be more than you thought possible.
           </h2>
-          <p style={{ fontSize: "16px", lineHeight: "1.8", marginBottom: "32px", color: "#6B7280" }}>
+          <p style={{ fontSize: "16px", lineHeight: "1.8", marginBottom: "32px", color: "var(--ink3)" }}>
             Start with the Marriage Health Assessment. It takes 10 minutes and will show you exactly where your marriage is strongest and where repair work begins.
           </p>
           <Link href="/quiz" style={{ textDecoration: "none" }}>
-            <button style={{ background: "#111111", color: "#ffffff", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
+            <button style={{ background: "var(--ink)", color: "#ffffff", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
               Take the Assessment
             </button>
           </Link>
