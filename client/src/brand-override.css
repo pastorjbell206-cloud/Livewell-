@@ -1,6 +1,6 @@
-/* LiveWell Brand Override — Cream-dominant, dark accent sections
-   Cream #F5F0E6 · Ink #14110C · Mustard #D4A017
-   Read CLAUDE.md for the full brand system. */
+/* LiveWell Brand Override — cascade wins for elements with competing styles.
+   All values reference the token system in index.css :root.
+   Read CLAUDE.md for rules. Mustard < 8%. No pure white bg. No pure black. */
 
 html, body {
   background: #F5F0E6 !important;
@@ -17,7 +17,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a { transition: color 240ms cubic-bezier(0.22,1,0.36,1); }
-a:hover { color: #D4A017 !important; }
 
 article a, .prose a {
   text-decoration: none;
@@ -39,8 +38,6 @@ blockquote {
 }
 
 hr { border: none; border-top: 1px solid #D9D3C4; margin: 3rem 0; }
-
-::selection { background: #D4A017; color: #14110C; }
 
 :focus-visible {
   outline: 2px solid #D4A017 !important;
