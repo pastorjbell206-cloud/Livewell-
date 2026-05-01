@@ -1,9 +1,9 @@
-/* LiveWell Design System — Bone-dominant with charcoal accents
-   Bone #F4F1EA background · Ink #14110C text · Mustard #C8A951 accent
-   Charcoal sections used sparingly for impact. */
+/* LiveWell Brand Override — Cream-dominant, dark accent sections
+   Cream #F5F0E6 · Ink #14110C · Mustard #D4A017
+   Read CLAUDE.md for the full brand system. */
 
 html, body {
-  background: #F4F1EA !important;
+  background: #F5F0E6 !important;
   color: #14110C !important;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif !important;
   -webkit-font-smoothing: antialiased;
@@ -17,11 +17,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a { transition: color 240ms cubic-bezier(0.22,1,0.36,1); }
-a:hover { color: #A88838 !important; }
+a:hover { color: #D4A017 !important; }
 
 article a, .prose a {
   text-decoration: none;
-  background-image: linear-gradient(#C8A951, #C8A951);
+  background-image: linear-gradient(#D4A017, #D4A017);
   background-repeat: no-repeat;
   background-position: 0 calc(100% - 0.5em);
   background-size: 100% 1px;
@@ -33,18 +33,17 @@ blockquote {
   font-style: italic;
   font-size: 1.25rem;
   line-height: 1.55;
-  color: #14110C !important;
-  border-left: 2px solid #C8A951 !important;
+  border-left: 2px solid #D4A017 !important;
   padding: 0.5rem 0 0.5rem 1.5rem;
   margin: 2rem 0;
 }
 
 hr { border: none; border-top: 1px solid #D9D3C4; margin: 3rem 0; }
 
-::selection { background: #C8A951; color: #14110C; }
+::selection { background: #D4A017; color: #14110C; }
 
 :focus-visible {
-  outline: 2px solid #C8A951 !important;
+  outline: 2px solid #D4A017 !important;
   outline-offset: 4px !important;
   border-radius: 2px;
 }
