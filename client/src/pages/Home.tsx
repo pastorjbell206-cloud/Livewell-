@@ -31,9 +31,22 @@ export default function Home() {
 
   const S = { eyebrow: { fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase" as const, color: "var(--goldlt)", marginBottom: "1rem" } };
 
+  const faqSchema = {
+    "@context": "https://schema.org", "@type": "FAQPage",
+    mainEntity: [
+      { "@type": "Question", name: "Who is James Bell?", acceptedAnswer: { "@type": "Answer", text: "James Bell is the Lead Teaching Pastor at First Baptist Church of Fenton, Michigan, founder of the Pastors Connection Network, and author of 25 books on theology, pastoral ministry, marriage, and faith. He came to faith from atheism and was raised without a father. Those facts shape everything he writes." } },
+      { "@type": "Question", name: "What is LiveWell by James Bell?", acceptedAnswer: { "@type": "Answer", text: "LiveWell is a theological writing platform with 880+ essays on marriage, parenting, faith, justice, and pastoral ministry. It connects the depth of theology to the weight of everyday life — for skeptics, Christians, pastors, and anyone trying to live well." } },
+      { "@type": "Question", name: "What kind of theology does James Bell write?", acceptedAnswer: { "@type": "Answer", text: "Bell writes in a prophetic-pastoral register that holds intellectual depth and lived experience simultaneously. His intellectual lineage includes Tim Keller, Walter Brueggemann, Eugene Peterson, and Dietrich Bonhoeffer. The writing uses named scholars, specific historical dates, and technical theological vocabulary — without condescending." } },
+      { "@type": "Question", name: "Who is LiveWell for?", acceptedAnswer: { "@type": "Answer", text: "Four audiences: skeptics tired of bad Christian arguments, Christians past slogan-faith who want theological architecture, pastors burning out in silence who need a peer who tells the truth, and anyone trying to live well in marriage, parenting, and vocation." } },
+      { "@type": "Question", name: "How is LiveWell different from a regular Christian blog?", acceptedAnswer: { "@type": "Answer", text: "LiveWell refuses to separate intellectual depth from lived experience. Unlike devotional platforms that offer comfort without cost, or academic journals that offer rigor without warmth, Bell writes from inside the room where people fall apart — as a working pastor with 15 years of ministry and 25 books that prove theology can carry the weight of a Tuesday afternoon." } },
+      { "@type": "Question", name: "What books has James Bell written?", acceptedAnswer: { "@type": "Answer", text: "James Bell has authored 25 books including Dangerous Calling, The Hidden Life, The First Flock, Earthen Vessels, The Undershepherd, Preach the Word, Necessary Words, One Body Many Churches, The Pruning, Faithful in Exile, Common Grace, The Unfinished Church, Sent Into the City, and To the Ends of the Earth." } },
+    ],
+  };
+
   return (
     <div>
-      <SEOMeta title="LiveWell by James Bell — Theology for Marriage, Family, Faith & Pastoral Ministry" description="Connecting the depth of theology to the weight of everyday life. 880+ essays on marriage, parenting, faith, justice, and pastoral ministry." url="https://livewellbyjamesbell.co" type="website" structuredData={personSchema} />
+      <SEOMeta title="LiveWell by James Bell — Theology for Marriage, Family, Faith & Pastoral Ministry" description="880+ essays for the skeptic tired of bad arguments, the Christian past slogans, the pastor burning out in silence. Theology that carries the weight of everyday life. By James Bell, author of 25 books." url="https://livewellbyjamesbell.co" type="website" structuredData={personSchema} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <MinimalNav />
 
       {/* ═══ 1. HERO ═══ */}
