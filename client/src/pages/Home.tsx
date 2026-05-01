@@ -12,28 +12,17 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState("all");
   const { data: articles } = trpc.posts.listPublished.useQuery();
 
-  const FEATURED_ARTICLES = [
-    "The Slow Drift That Ends More Marriages Than Dramatic Betrayal Does",
-    "When You Married Someone You No Longer Recognize",
-    "The Resentment in Your Marriage Is Telling You Something Worth Hearing",
-    "When Fear Rewrites Theology",
-    "When the Church Married Empire",
-    "The Dark Night of the Soul When God Feels Absent and You Still Have to Preach",
-    "What the Bible Actually Says About Submission and What It Doesn't",
-    "When One Spouse Carries the Emotional Labor and the Other Doesn't Know It",
-    "The Pastor's Kids Are Watching What Are They Seeing?",
-    "Your Church Needs You Healthy More Than It Needs You Busy",
-    "The Difference Between Being Tired and Being Done",
-    "What Pastors Fear Most (That They Never Say Out Loud)",
-    "The Conversation You Need to Have With Yourself About Money",
-    "Protecting Your Marriage When Ministry Demands Everything",
-    "How to Pastor a Congregation That Is Politically Divided",
-    "What a Consistent Pro-Life Ethic Requires Beyond Opposition to Abortion",
-  ];
-
-  const filteredArticles = articles?.filter((a: any) =>
-    FEATURED_ARTICLES.includes(a.title)
-  ) || [];
+  const filteredArticles = articles?.filter((a: any) => {
+    if (activeTab === "all") return true;
+    const pillar = (a.pillar || "").toLowerCase();
+    const topic = (a.topic || "").toLowerCase();
+    if (activeTab === "marriage") return pillar.includes("life") || topic.includes("marriage") || topic.includes("family");
+    if (activeTab === "parenting") return topic.includes("parent") || topic.includes("family");
+    if (activeTab === "theology") return pillar.includes("theolog") || topic.includes("theolog");
+    if (activeTab === "justice") return pillar.includes("justice") || topic.includes("justice");
+    if (activeTab === "pastoral") return pillar.includes("leadership") || topic.includes("pastor") || topic.includes("leadership");
+    return true;
+  })?.slice(0, 12) || [];
 
   const PATH_CARDS = [
     { title: "Your Marriage", description: "Covenant, conflict, and the costly love that holds. For couples who need more than tips.", href: "/marriage", color: "#B8963E", icon: "💍" },
@@ -210,16 +199,7 @@ export default function Home() {
             </div>
           ) : (
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "24px" }}>
-              {filteredArticles.slice(0, 12).filter((article: any) => {
-                if (activeTab === 'all') return true;
-                const topic = (article.topic || '').toLowerCase();
-                if (activeTab === 'marriage') return topic.includes('marriage') || topic.includes('family');
-                if (activeTab === 'parenting') return topic.includes('parent');
-                if (activeTab === 'theology') return topic.includes('theolog');
-                if (activeTab === 'justice') return topic.includes('justice');
-                if (activeTab === 'pastoral') return topic.includes('pastoral');
-                return true;
-              }).map((article: any, i: number) => (
+              {filteredArticles.map((article: any, i: number) => (
                 <Link key={i} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
                   <div style={{ background: "#FFF", padding: "24px", borderRadius: "8px", border: "1px solid #E0D9CC", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column" }}>
                     <div style={{ fontSize: "11px", fontWeight: "bold", color: "#B8963E", marginBottom: "8px", textTransform: "uppercase" }}>{article.topic || 'ESSAY'}</div>

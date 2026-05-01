@@ -50,7 +50,7 @@ export default function Writing() {
 
   // Get unique values from data
   const topics = useMemo(() => {
-    const unique = new Set(postsQuery.data?.map((p) => p.topic).filter(Boolean) || []);
+    const unique = new Set(postsQuery.data?.map((p) => p.topic || p.pillar).filter(Boolean) || []);
     return Array.from(unique) as string[];
   }, [postsQuery.data]);
 
@@ -75,7 +75,8 @@ export default function Writing() {
       const matchesSearch =
         post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         post.excerpt?.toLowerCase().includes(searchTerm.toLowerCase());
-      const matchesTopic = selectedTopics.length === 0 || (post.topic && selectedTopics.includes(post.topic));
+      const postTopic = post.topic || post.pillar || "";
+      const matchesTopic = selectedTopics.length === 0 || selectedTopics.includes(postTopic);
       const matchesFormat = selectedFormats.length === 0 || (post.format && selectedFormats.includes(post.format));
       const matchesAudience = selectedAudiences.length === 0 || (post.audience && selectedAudiences.includes(post.audience));
       const matchesDifficulty = selectedDifficulty.length === 0 || (post.difficulty && selectedDifficulty.includes(post.difficulty));

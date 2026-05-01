@@ -200,7 +200,7 @@ export default function ArticleDetail() {
                   fontFamily: "var(--U)",
                 }}
               >
-                {post.topic?.replace(/-/g, " ").toUpperCase() || "Featured"}
+                {(post.topic || post.pillar || "Featured").replace(/-/g, " ").toUpperCase()}
               </span>
             </div>
 
@@ -491,7 +491,7 @@ export default function ArticleDetail() {
               gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
               gap: "24px"
             }}>
-              {postsQuery.data?.filter(p => p.slug !== slug && p.topic === post.topic).slice(0, 3).map(relatedPost => (
+              {postsQuery.data?.filter(p => p.slug !== slug && (p.pillar === post.pillar || p.topic === post.topic)).slice(0, 3).map(relatedPost => (
                 <div key={relatedPost.id} style={{
                   padding: "20px",
                   border: "1px solid var(--border)",
