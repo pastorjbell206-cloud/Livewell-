@@ -104,7 +104,7 @@ const COLLECTIONS: ArticleCollection[] = [
     slug: "marriage-family-ministry",
     title: "Marriage & Family in Ministry",
     description: "Protecting and strengthening your marriage and family while serving in ministry",
-    icon: "❤️",
+    icon: "",
     price: 11.99,
     articles: [
       {
@@ -141,7 +141,7 @@ const COLLECTIONS: ArticleCollection[] = [
     slug: "prophetic-witness",
     title: "Prophetic Witness in Culture",
     description: "Speaking truth in a confused age with courage and clarity",
-    icon: "🔥",
+    icon: "",
     price: 10.99,
     articles: [
       {
@@ -178,7 +178,7 @@ const COLLECTIONS: ArticleCollection[] = [
     slug: "spiritual-formation",
     title: "Spiritual Formation & Prayer",
     description: "Deepening your interior life and prayer practice",
-    icon: "📖",
+    icon: "",
     price: 9.99,
     articles: [
       {

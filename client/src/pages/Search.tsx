@@ -59,9 +59,9 @@ export default function SearchPage() {
       case "article":
         return "📄";
       case "resource":
-        return "📚";
+        return "";
       case "book":
-        return "📖";
+        return "";
       default:
         return "🔍";
     }

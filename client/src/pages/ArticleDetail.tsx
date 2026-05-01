@@ -78,7 +78,7 @@ function SocialShareButtons({ title, url }: { title: string; url: string }) {
         color: "var(--ink)",
         transition: "all 0.2s"
       }} onMouseEnter={(e) => { e.currentTarget.style.background = "var(--gold)"; }} onMouseLeave={(e) => { e.currentTarget.style.background = "var(--cream)"; }}>
-        🔗 Copy Link
+        Copy Link
       </button>
     </div>
   );
