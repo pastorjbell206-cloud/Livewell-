@@ -1,136 +1,94 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { trpc } from "@/lib/trpc";
-import { Loader2, ArrowRight } from "lucide-react";
-import { Streamdown } from "streamdown";
 import { Link } from "wouter";
+import { ArrowRight } from "lucide-react";
 
-const PORTRAIT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/about-portrait-g9MmXvPzi8UsUT7TiPbn9U.webp";
-
-const CREDENTIALS = [
-  { label: "Lead Pastor", detail: "First Baptist Church of Fenton, Michigan (since 2016)" },
-  { label: "Founder", detail: "Pastors Connection Network â connecting pastors globally" },
-  { label: "Author", detail: "25 published books on pastoral ministry, theology, marriage, and faith" },
-  { label: "Trainer", detail: "Global pastoral training with focus on remote regions and indigenous tribes" },
-  { label: "Speaker", detail: "National and international conferences on leadership, theology, and pastoral care" },
-  { label: "Husband & Father", detail: "Married to Susanna; father of five sons" },
-];
-
-const TESTIMONIALS = [
-  { quote: "James doesn't just write about theology â he lives it. His work has shaped how I lead my church and how I pastor my own family.", author: "Pastor R.M.", role: "Lead Pastor, Ohio" },
-  { quote: "The most important voice in evangelical Christianity right now. Prophetic, pastoral, and deeply biblical.", author: "Dr. T.K.", role: "Seminary Professor" },
-  { quote: "James has the rare gift of making complex theology accessible without dumbing it down. His writing changed my faith.", author: "S.W.", role: "Church Member, California" },
-  { quote: "I've been in ministry 30 years. James's insights on pastoral burnout and calling saved my ministry and my marriage.", author: "Rev. J.L.", role: "Senior Pastor, Texas" },
-];
+const PORTRAIT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg";
 
 export default function About() {
-  const contentQuery = trpc.settings.get.useQuery({ key: "aboutContent" });
-  const imageQuery = trpc.settings.get.useQuery({ key: "aboutImage" });
-
-  const defaultContent = `# The short version is: I couldn't keep quiet.
-
-I grew up in the kind of church where the rules were clear and the questions were discouraged. Fundamentalism gave me structure, but it also gave me a version of God who was more interested in my behavior than my heart. It took me years to realize that the system I was defending was the very thing keeping me from the Jesus I claimed to follow.
-
-Leaving that world cost me. It cost relationships, positions, and the kind of certainty that makes life feel manageable. But it gave me something I didn't know I was missing: freedom. Not the reckless kind â the kind that comes from finally being honest about what you believe and why.
-
-## What I do now
-
-I write. I teach. I lead. But always from one conviction: behavior modification was never the point. Heart transformation is.
-
-This site is the intellectual and pastoral home of that voice. It's where I think out loud about theology, justice, leadership, and what it looks like to follow Jesus in a world that's forgotten what his kingdom actually stands for.
-
-## Why I Write
-
-There was a momentâI can still see it clearlyâwhen I realized that the American church had made a catastrophic mistake. We had confused our political preferences with our theological convictions. We had baptized nationalism as if it were gospel. We had prioritized institutional protection over prophetic witness. And most painfully, we had done it all while quoting Scripture.
-
-That moment broke something open in me. I couldn't unsee it. I couldn't go back to the comfortable certainty that had defined so much of my faith life. I realized that silence was complicity, and complicity was a kind of betrayalânot just of my own conscience, but of the Jesus I actually believed in.
-
-So I started writing. Not because I have all the answersâI don't. But because I believe the church needs voices willing to ask the hard questions, to name the uncomfortable truths, and to insist that following Jesus means something radically different than what we've been sold. I write because I love the church enough to grieve what she's become, and I believe she can become something better. I write because someone needs to say the things that are being whispered in coffee shops and small group meetings but never from the pulpit. And I write because I genuinely believe that heart transformationâreal, deep, costly transformationâis still possible.
-
-## What You'll Find Here
-
-This is a space for serious theological thinking that doesn't require a seminary degree to understand. You'll find essays organized around five core convictions: **Prophetic Disruption** (what needs to be challenged), **Theological Depth** (what needs to be understood), **Prophetic Justice** (what needs to be named), **Integrated Life** (what needs to be lived), and **Leadership Formation** (what leaders need to face). Some articles will comfort you. Some will challenge you. Some might make you angry. All of them are written by someone who believes that faith should be intellectually honest, pastorally compassionate, and prophetically courageous.`;
-
-  const content = contentQuery.data || defaultContent;
-  const portraitUrl = imageQuery.data || PORTRAIT;
-
   return (
-    <>
+    <Layout>
       <SEOMeta
-        title="About James Bell"
-        description="Learn about James Bell's journey, theology, and mission. Exploring prophetic disruption, theological depth, and authentic Christian faith."
-        keywords="James Bell, theology, faith, Christian leadership, about"
+        title="About James Bell — Pastor, Author, Writer"
+        description="From atheism to the pulpit. Raised without a father. Five sons. 25 books. 15 years in ministry. The story behind the writing."
         type="website"
       />
-      <Layout>
-        {/* Hero Section */}
-        <section className="py-20" style={{ backgroundColor: "var(--bone)" }}>
-          <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
-              {/* Portrait */}
-              <div >
-                <div className="relative">
-                  <img
-                    src={portraitUrl}
-                    alt="James Bell"
-                    className="w-full object-cover"
-                    style={{ maxHeight: "600px" }}
-                  />
-                  <div
-                    className="absolute -bottom-3 -right-3 w-full h-full -z-10"
-                    style={{ border: "2px solid #B8963E" }}
-                  />
-                </div>
-              </div>
 
-              {/* Story */}
-              <div >
-                <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-4" style={{ color: "var(--gold)" }}>
-                  About
-                </div>
+      {/* ORIGIN */}
+      <section style={{ background: "var(--charcoal)", padding: "6rem 1.5rem 5rem" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+          <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", fontFamily: "var(--U)", marginBottom: "2rem" }}>About</div>
 
-                {(contentQuery.isLoading || imageQuery.isLoading) ? (
-                  <div className="flex justify-center py-16">
-                    <Loader2 size={32} className="animate-spin" style={{ color: "var(--gold)" }} />
-                  </div>
-                ) : (
-                  <div className="font-body text-lg" style={{ color: "var(--ink)", lineHeight: 1.85 }}>
-                    <Streamdown>{content}</Streamdown>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-16" style={{ backgroundColor: "var(--ink)" }}>
-          <div className="container">
-            <div className="max-w-2xl mx-auto text-center">
-              <p className="font-body text-lg mb-8" style={{ color: "var(--bone)", lineHeight: 1.85 }}>
-                Whatever brought you here â a ministry on the edge, a marriage under strain, a faith that needs more room than it has been given â there is something here for you. Start reading.
+          <div style={{ display: "flex", gap: "2.5rem", alignItems: "flex-start", flexWrap: "wrap", marginBottom: "3rem" }}>
+            <img src={PORTRAIT} alt="James Bell" loading="eager" style={{ width: "160px", height: "210px", objectFit: "cover", objectPosition: "center top", borderRadius: "2px", border: "1px solid rgba(244,241,234,0.1)", flexShrink: 0 }} />
+            <div style={{ flex: 1, minWidth: "260px" }}>
+              <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1rem" }}>James Bell</h1>
+              <p style={{ fontSize: "0.875rem", color: "var(--bone)", opacity: 0.5, fontFamily: "var(--U)", lineHeight: 1.5 }}>
+                Lead Pastor, First Baptist Church of Fenton<br />
+                Founder, Pastors Connection Network<br />
+                Author of 25 books
               </p>
-              <Link href="/writing">
-                <a className="inline-flex items-center gap-3 px-8 py-4 font-ui font-semibold uppercase tracking-[0.1em] transition-all duration-300"
-                   style={{
-                     backgroundColor: "var(--gold)",
-                     color: "var(--ink)",
-                   }}
-                   onMouseEnter={(e) => {
-                     e.currentTarget.style.backgroundColor = "#D4A574";
-                   }}
-                   onMouseLeave={(e) => {
-                     e.currentTarget.style.backgroundColor = "var(--gold)";
-                   }}
-                >
-                  Start Reading â
-                  <ArrowRight size={18} />
-                </a>
-              </Link>
             </div>
           </div>
-        </section>
-      </Layout>
-    </>
+
+          <div style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--bone)", opacity: 0.85 }}>
+            <p style={{ marginBottom: "1.5rem" }}>
+              The first honest prayer I ever prayed was an argument. I was twenty-three, an atheist by conviction, and I was losing the argument with a God I did not believe in. That is not a testimony. It is a fact. The intellectual position I had held for years — that faith was a category error made by people who could not face the absence of meaning — collapsed not under emotional pressure but under the weight of its own assumptions. I did not find God. I ran out of reasons to pretend the evidence pointed nowhere.
+            </p>
+            <p style={{ marginBottom: "1.5rem" }}>
+              I was raised without a father. That is not background. It is architecture. It shaped what I hear when Scripture speaks of a Father who does not leave. It shaped what I refuse to tolerate in a church culture that sentimentalizes fatherhood while ignoring the men who never had one. It shaped the way I raise my five sons — not with the confidence of a man who knows what he is doing, but with the terror of a man who knows what happens when no one does it at all.
+            </p>
+            <p style={{ marginBottom: "1.5rem" }}>
+              This is not a platform built on certainty. It is built on the conviction that certainty is often the enemy of honest faith — and that the church needs voices willing to name what they see, even when what they see is the church itself failing the people it was supposed to serve.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* THE WORK */}
+      <section style={{ background: "var(--bone)", padding: "5rem 1.5rem" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+          <div style={{ width: "40px", height: "2px", background: "var(--mustard)", marginBottom: "2rem" }} />
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)", marginBottom: "2rem" }}>
+            LiveWell exists for the reader whose faith has outgrown the answers they were given. For the pastor burning out in silence. For the couple keeping vows they no longer understand. For the skeptic who cannot stop reading the words of a tradition they are not sure they believe in. The writing connects the depth of theology — Keller's architecture, Brueggemann's prophetic imagination, Peterson's pastoral texture, Bonhoeffer's willingness to name the thing at cost — to the weight of an actual Tuesday afternoon.
+          </p>
+
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "1.5rem", fontWeight: 400, color: "var(--ink)", marginBottom: "2rem" }}>What the work carries</h2>
+
+          {[
+            { name: "The full arc", def: "Every essay starts at the root, not the symptom. The church's failure to speak on justice did not begin in 2020. It began with Constantine. The marriage that is drifting did not start with the argument last Tuesday. It started with the vow neither partner understood when they made it." },
+            { name: "Self-implication", def: "The writer is inside the indictment. When the essay names what the church has gotten wrong, the writer is part of the church that got it wrong. When the essay names what pastors hide, the writer is a pastor who has hidden it." },
+            { name: "Verdicts, not summaries", def: "The last paragraph does not restate the thesis. It names what remains after the evidence has been laid out. Three to eight words. The reader carries it out of the room." },
+          ].map((v, i) => (
+            <div key={i} style={{ marginBottom: "2rem" }}>
+              <h3 style={{ fontFamily: "var(--F)", fontSize: "1.125rem", fontWeight: 500, fontStyle: "italic", color: "var(--ink)", marginBottom: "0.5rem" }}>{v.name}</h3>
+              <p style={{ fontSize: "0.9rem", lineHeight: 1.7, color: "var(--ink-muted)" }}>{v.def}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* WHAT WE ARE NOT */}
+      <section style={{ background: "var(--bone-warm)", padding: "4rem 1.5rem" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)" }}>
+            LiveWell is not therapy. It is not a Christian self-help platform. It is not a place to be told what to think. It is not gospel-centered slogan content dressed in better fonts. It is a writing desk where a pastor with fifteen years of failure and five sons he is trying not to ruin thinks out loud about what it means to follow Jesus in a culture that has forgotten what his kingdom actually stands for.
+          </p>
+        </div>
+      </section>
+
+      {/* CLOSING */}
+      <section style={{ background: "var(--charcoal)", padding: "5rem 1.5rem", textAlign: "center" }}>
+        <div style={{ maxWidth: "560px", margin: "0 auto" }}>
+          <div style={{ width: "40px", height: "2px", background: "var(--mustard)", margin: "0 auto 2rem" }} />
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.65, color: "var(--bone)", fontStyle: "italic", marginBottom: "2rem" }}>
+            You are still deciding whether to trust the voice. That is the right instinct. The writing will either carry weight for you or it will not. Begin where you are.
+          </p>
+          <Link href="/writing" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
+            Read the writing <ArrowRight size={14} style={{ display: "inline", verticalAlign: "middle" }} />
+          </Link>
+        </div>
+      </section>
+    </Layout>
   );
 }

@@ -1,341 +1,144 @@
-import { ExternalLink, BookOpen, ArrowRight, X, Star } from "lucide-react";
-import { useState } from "react";
-import { Link, useLocation } from "wouter";
+import { ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { trpc } from "@/lib/trpc";
 
-const AUTHORED_BOOKS = [
-  { id: 1, title: "The Unfinished Church", subtitle: "Calling, Vision, and the Future God Is Building", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6105(1)_c43867fd.jpeg", description: "A compelling exploration of how God calls His church to vision and purpose in an ever-changing world.", amazonUrl: "https://www.amazon.com/s?k=james+bell+unfinished+church", featured: true },
-  { id: 2, title: "Common Grace", subtitle: "What Pastors Learn When They Listen to the World", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6104(1)_d3e28653.jpeg", description: "Learn how pastors can engage with culture and the world around them with theological depth and prophetic witness.", amazonUrl: "https://www.amazon.com/s?k=james+bell+common+grace" },
-  { id: 3, title: "Faithful in Exile", subtitle: "Pastoral Leadership and the Church's Witness in a Post-Christian Age", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6103(1)_c6081150.jpeg", description: "Navigate pastoral leadership in a rapidly secularizing culture with biblical wisdom and practical guidance.", amazonUrl: "https://www.amazon.com/s?k=james+bell+faithful+exile" },
-  { id: 4, title: "To the Ends of the Earth", subtitle: "Global Mission, National Partnership, and the Sent Church", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6102(1)_5d27f987.jpeg", description: "Discover how local churches participate in God's global mission and partner with other believers worldwide.", amazonUrl: "https://www.amazon.com/s?k=james+bell+ends+earth" },
-  { id: 5, title: "Sent Into the City", subtitle: "The Church's Calling to Its Neighborhood and World", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6101(1)_826f5a0f.jpeg", description: "Understand how the church is called to engage its community with the gospel and prophetic witness.", amazonUrl: "https://www.amazon.com/s?k=james+bell+sent+city" },
-  { id: 6, title: "Necessary Words", subtitle: "A Pastoral Theology of Courage and Difficult Conversations", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6100(1)_2e31f72f.jpeg", description: "Learn how to speak truth with love and courage in difficult conversations that matter.", amazonUrl: "https://www.amazon.com/s?k=james+bell+necessary+words" },
-  { id: 7, title: "One Body, Many Churches", subtitle: "A Theology of Unity for a Fractured Church", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6099(1)_26ff2b07.jpeg", description: "Explore biblical theology of church unity and how local churches can work together for kingdom purposes.", amazonUrl: "https://www.amazon.com/s?k=james+bell+one+body" },
-  { id: 8, title: "The Pruning", subtitle: "Church Decline, Faithful Endurance, and the Promise of Renewal", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6098(1)_d320cdd1.jpeg", description: "Find hope and guidance for churches facing decline, with biblical perspective on renewal and restoration.", amazonUrl: "https://www.amazon.com/s?k=james+bell+pruning" },
-  { id: 9, title: "The Undershepherd", subtitle: "Pastoral Leadership, Authority, and the Care of God's People", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6097(1)_49657a50.jpeg", description: "Understand biblical pastoral leadership and how to shepherd God's flock with wisdom and compassion.", amazonUrl: "https://www.amazon.com/s?k=james+bell+undershepherd" },
-  { id: 10, title: "Preach the Word", subtitle: "A Theology and Practice of Gospel Proclamation", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6096(1)_ee39cea8.jpeg", description: "Develop a theology of preaching that transforms lives and proclaims the gospel with power.", amazonUrl: "https://www.amazon.com/s?k=james+bell+preach+word" },
-  { id: 11, title: "Earthen Vessels", subtitle: "Mental Health, Human Weakness, and the Grace That Sustains", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6095(1)_9b633d06.jpeg", description: "Explore mental health, human weakness, and the sustaining grace of God in pastoral ministry.", amazonUrl: "https://www.amazon.com/s?k=james+bell+earthen+vessels" },
-  { id: 12, title: "The First Flock", subtitle: "A Pastor's Theology of Marriage, Family, and Home", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6094(1)_cf6b80e2.jpeg", description: "Develop a biblical theology of marriage and family as the pastor's first ministry responsibility.", amazonUrl: "https://www.amazon.com/s?k=james+bell+first+flock" },
-  { id: 13, title: "The Hidden Life", subtitle: "Spiritual Formation for the Pastor No One Sees", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6093(1)_43043b66.jpeg", description: "Cultivate spiritual depth and formation in the hidden life that sustains public ministry.", amazonUrl: "https://www.amazon.com/s?k=james+bell+hidden+life" },
-  { id: 14, title: "Dangerous Calling", subtitle: "Why Pastors Burn Out, Walk Away, and How to Stay", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6092(1)_aed4b669.jpeg", description: "Understand pastor burnout and discover biblical pathways to sustainable, faithful ministry.", amazonUrl: "https://www.amazon.com/s?k=james+bell+dangerous+calling", featured: true },
+const BOOKS = [
+  { id: 1, title: "The Unfinished Church", subtitle: "Calling, Vision, and the Future God Is Building", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6105(1)_c43867fd.jpeg", amazonUrl: "https://www.amazon.com/s?k=james+bell+unfinished+church" },
+  { id: 2, title: "Common Grace", subtitle: "What Pastors Learn When They Listen to the World", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6104(1)_d3e28653.jpeg", amazonUrl: "https://www.amazon.com/s?k=james+bell+common+grace" },
+  { id: 3, title: "Faithful in Exile", subtitle: "Pastoral Leadership and the Church's Witness in a Post-Christian Age", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6103(1)_c6081150.jpeg", amazonUrl: "https://www.amazon.com/s?k=james+bell+faithful+exile" },
+  { id: 4, title: "To the Ends of the Earth", subtitle: "Global Mission, National Partnership, and the Sent Church", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6102(1)_5d27f987.jpeg", amazonUrl: "https://www.amazon.com/s?k=james+bell+ends+earth" },
+  { id: 5, title: "Sent Into the City", subtitle: "The Church's Calling to Its Neighborhood and World", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6101(1)_826f5a0f.jpeg", amazonUrl: "https://www.amazon.com/s?k=james+bell+sent+city" },
+  { id: 6, title: "Necessary Words", subtitle: "A Pastoral Theology of Courage and Difficult Conversations", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6100(1)_2e31f72f.jpeg", amazonUrl: "https://www.amazon.com/s?k=james+bell+necessary+words" },
+  { id: 7, title: "One Body, Many Churches", subtitle: "A Theology of Unity for a Fractured Church", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6099(1)_26ff2b07.jpeg", amazonUrl: "https://www.amazon.com/s?k=james+bell+one+body" },
+  { id: 8, title: "The Pruning", subtitle: "Church Decline, Faithful Endurance, and the Promise of Renewal", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6098(1)_d320cdd1.jpeg", amazonUrl: "https://www.amazon.com/s?k=james+bell+pruning" },
+  { id: 9, title: "The Undershepherd", subtitle: "Pastoral Leadership, Authority, and the Care of God's People", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6097(1)_49657a50.jpeg", amazonUrl: "https://www.amazon.com/s?k=james+bell+undershepherd" },
+  { id: 10, title: "Preach the Word", subtitle: "A Theology and Practice of Gospel Proclamation", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6096(1)_ee39cea8.jpeg", amazonUrl: "https://www.amazon.com/s?k=james+bell+preach+word" },
+  { id: 11, title: "Earthen Vessels", subtitle: "Mental Health, Human Weakness, and the Grace That Sustains", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6095(1)_9b633d06.jpeg", amazonUrl: "https://www.amazon.com/s?k=james+bell+earthen+vessels" },
+  { id: 12, title: "The First Flock", subtitle: "A Pastor's Theology of Marriage, Family, and Home", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6094(1)_cf6b80e2.jpeg", amazonUrl: "https://www.amazon.com/s?k=james+bell+first+flock" },
+  { id: 13, title: "The Hidden Life", subtitle: "Spiritual Formation for the Pastor No One Sees", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6093(1)_43043b66.jpeg", amazonUrl: "https://www.amazon.com/s?k=james+bell+hidden+life" },
+  { id: 14, title: "Dangerous Calling", subtitle: "Why Pastors Burn Out, Walk Away, and How to Stay", cover: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_6092(1)_aed4b669.jpeg", amazonUrl: "https://www.amazon.com/s?k=james+bell+dangerous+calling" },
+];
+
+const PATHS = [
+  {
+    title: "If you are a pastor on the edge of burnout",
+    desc: "Start here. These three books were written inside the crisis, not about it. Dangerous Calling names what you are afraid to say out loud. The Hidden Life names what you have stopped tending. Earthen Vessels names the weakness you have been taught to hide.",
+    bookIds: [14, 13, 11],
+  },
+  {
+    title: "If you are leading a church and the numbers are not working",
+    desc: "The church growth playbook failed. These books name why, and what faithful leadership looks like when the metrics stop cooperating.",
+    bookIds: [8, 1, 9],
+  },
+  {
+    title: "If your family is paying the price for your ministry",
+    desc: "The pastor's home is often the last place the pastor pastors. The First Flock is where that reckoning begins.",
+    bookIds: [12, 14, 11],
+  },
+  {
+    title: "If you need to say something hard and you do not know how",
+    desc: "Courage in the pulpit and in the elder meeting. Necessary Words is the book for the conversation you have been avoiding.",
+    bookIds: [6, 10, 2],
+  },
+  {
+    title: "If you believe the church is called to more than survival",
+    desc: "Mission, unity, and the post-Christian witness. These books ask what the church is for — and whether we have forgotten.",
+    bookIds: [5, 4, 7, 3],
+  },
 ];
 
 export default function Books() {
-  const [, navigate] = useLocation();
-  const booksQuery = trpc.books.listPublished.useQuery();
-  const [selectedBook, setSelectedBook] = useState<typeof AUTHORED_BOOKS[0] | null>(null);
-
-  const recommendedBooks = booksQuery.data?.filter((b: any) => b.bookType === "recommended") || [];
-  const featuredBook = AUTHORED_BOOKS.find((b) => b.featured);
-
   return (
     <Layout>
       <SEOMeta
-        title="Books"
-        description="Published works by James Bell and curated reading list. Explore books on theology, faith, leadership, and Christian thought."
-        keywords="books, theology, faith, Christian leadership, reading list"
+        title="Books — James Bell"
+        description="25 books on pastoral ministry, theology, marriage, and the weight of faithful leadership. Read them as paths, not a list."
+        type="webpage"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
           name: "Books by James Bell",
-          description: "Published works by James Bell and curated reading list.",
+          description: "25 books on pastoral ministry, theology, and the Christian life.",
           url: "https://www.livewellbyjamesbell.co/books",
         }}
       />
-      <div>
-        {/* HERO SECTION */}
-        <section className="hero">
-          <div className="hero__inner" style={{ gridTemplateColumns: "1fr" }}>
-            <div>
-              <div className="kicker">
-                <div className="kicker-line"></div>
-                <div className="kicker-txt">PUBLISHED WORKS</div>
-              </div>
-              <h1 className="hero-h">
-                Explore <strong>Books</strong> by James Bell
-              </h1>
-              <p className="hero-sub">
-                Published titles, books in development, and the reading list that shaped everything I think and teach.
-              </p>
-            </div>
-          </div>
-        </section>
 
-        {/* FEATURED BOOK SECTION */}
-        {featuredBook && (
-          <section style={{ background: "var(--ink)", color: "var(--paper)", padding: "60px 20px" }}>
-            <div className="wrap" style={{ maxWidth: "1000px", margin: "0 auto" }}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-                <div>
-                  <img 
-                    src={featuredBook.cover} 
-                    alt={featuredBook.title}
-                    style={{ width: "100%", borderRadius: "8px", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}
-                  />
-                </div>
-                <div>
-                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "16px" }}>
-                    <Star size={20} fill="var(--gold)" color="var(--gold)" />
-                    <span style={{ fontSize: "14px", fontWeight: "bold", color: "var(--gold)", textTransform: "uppercase", letterSpacing: "0.1em" }}>Featured Book</span>
-                  </div>
-                  <h2 style={{ fontSize: "32px", fontWeight: "bold", marginBottom: "8px", lineHeight: "1.2" }}>
-                    {featuredBook.title}
-                  </h2>
-                  <p style={{ fontSize: "18px", color: "var(--stone2)", marginBottom: "24px", fontStyle: "italic" }}>
-                    {featuredBook.subtitle}
-                  </p>
-                  <p style={{ fontSize: "16px", lineHeight: "1.6", marginBottom: "32px" }}>
-                    {featuredBook.description}
-                  </p>
-                  <a 
-                    href={featuredBook.amazonUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "8px",
-                      background: "var(--gold)",
-                      color: "var(--ink)",
-                      padding: "12px 24px",
-                      borderRadius: "4px",
-                      textDecoration: "none",
-                      fontWeight: "bold",
-                      fontSize: "14px",
-                      transition: "background 0.2s"
-                    }}
-                    onMouseEnter={(e) => e.currentTarget.style.background = "#D4A574"}
-                    onMouseLeave={(e) => e.currentTarget.style.background = "var(--gold)"}
-                  >
-                    Buy on Amazon
-                    <ExternalLink size={16} />
-                  </a>
+      {/* HEADER */}
+      <section style={{ background: "var(--charcoal)", padding: "6rem 1.5rem 5rem" }}>
+        <div style={{ maxWidth: "880px", margin: "0 auto" }}>
+          <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", fontFamily: "var(--U)", marginBottom: "1.5rem" }}>The Books</div>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1.5rem" }}>
+            Twenty-five books written across fifteen years of ministry
+          </h1>
+          <p style={{ fontSize: "1rem", lineHeight: 1.7, color: "var(--bone)", opacity: 0.65, maxWidth: "600px" }}>
+            Every book asks the same question from a different angle: what does it look like to follow Jesus when the answers are harder than the songs we sing on Sunday? Read them as paths, not a list.
+          </p>
+        </div>
+      </section>
+
+      {/* READING PATHS */}
+      <section style={{ background: "var(--bone)", padding: "5rem 1.5rem" }}>
+        <div style={{ maxWidth: "880px", margin: "0 auto" }}>
+          <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard-text)", fontFamily: "var(--U)", marginBottom: "1rem" }}>Reading Paths</div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, color: "var(--ink)", marginBottom: "3rem" }}>Start where you are</h2>
+
+          {PATHS.map((path, i) => {
+            const books = path.bookIds.map(id => BOOKS.find(b => b.id === id)!).filter(Boolean);
+            return (
+              <div key={i} style={{ marginBottom: "3rem", paddingBottom: "3rem", borderBottom: i < PATHS.length - 1 ? "1px solid var(--bone-muted)" : "none" }}>
+                <h3 style={{ fontFamily: "var(--F)", fontSize: "1.25rem", fontWeight: 400, fontStyle: "italic", color: "var(--ink)", marginBottom: "0.75rem", lineHeight: 1.35 }}>{path.title}</h3>
+                <p style={{ fontSize: "0.9rem", lineHeight: 1.7, color: "var(--ink-muted)", marginBottom: "1.5rem", maxWidth: "600px" }}>{path.desc}</p>
+                <div style={{ display: "flex", gap: "1rem", overflowX: "auto", paddingBottom: "0.5rem" }}>
+                  {books.map((book) => (
+                    <a key={book.id} href={book.amazonUrl} target="_blank" rel="noopener noreferrer" style={{ flexShrink: 0, textDecoration: "none" }}>
+                      <img src={book.cover} alt={book.title} loading="lazy" style={{ width: "120px", height: "180px", objectFit: "cover", borderRadius: "2px", border: "1px solid var(--bone-muted)", transition: "all 240ms cubic-bezier(0.22,1,0.36,1)" }}
+                        onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-4px)"; e.currentTarget.style.boxShadow = "0 8px 20px rgba(0,0,0,0.1)"; }}
+                        onMouseLeave={(e) => { e.currentTarget.style.transform = "none"; e.currentTarget.style.boxShadow = "none"; }}
+                      />
+                      <div style={{ fontSize: "0.7rem", color: "var(--ink-muted)", marginTop: "0.5rem", maxWidth: "120px", lineHeight: 1.3, fontFamily: "var(--U)" }}>{book.title}</div>
+                    </a>
+                  ))}
                 </div>
               </div>
-            </div>
-          </section>
-        )}
+            );
+          })}
+        </div>
+      </section>
 
-        {/* START HERE SECTION */}
-        <section style={{ background: "var(--paper)", padding: "60px 20px" }}>
-          <div className="wrap" style={{ maxWidth: "1000px", margin: "0 auto" }}>
-            <div style={{ marginBottom: "48px" }}>
-              <div className="kicker" style={{ marginBottom: "12px" }}>
-                <div className="kicker-line"></div>
-                <div className="kicker-txt">NEW TO JAMES BELL?</div>
-              </div>
-              <h2 className="section-title">Start Here</h2>
-              <p className="section-sub">Recommended reading order for first-time readers</p>
-            </div>
-
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "32px" }}>
-              {[
-                { order: "1st", title: "The Unfinished Church", reason: "Foundation for understanding James's vision" },
-                { order: "2nd", title: "Dangerous Calling", reason: "Practical wisdom for pastoral ministry" },
-                { order: "3rd", title: "The Hidden Life", reason: "Spiritual formation and personal growth" },
-              ].map((item) => (
-                <div key={item.order} style={{
-                  background: "white",
-                  padding: "32px",
-                  borderRadius: "8px",
-                  border: "1px solid #E5DDD0",
-                  textAlign: "center"
-                }}>
-                  <div style={{ fontSize: "48px", fontWeight: "bold", color: "var(--gold)", marginBottom: "12px" }}>
-                    {item.order}
-                  </div>
-                  <h3 style={{ fontSize: "18px", fontWeight: "bold", color: "var(--ink)", marginBottom: "8px" }}>
-                    {item.title}
-                  </h3>
-                  <p style={{ fontSize: "14px", color: "var(--ink3)" }}>
-                    {item.reason}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* AUTHORED BOOKS SECTION */}
-        <section className="section">
-          <div className="wrap">
-            <div style={{ marginBottom: "48px" }}>
-              <div className="kicker" style={{ marginBottom: "12px" }}>
-                <div className="kicker-line"></div>
-                <div className="kicker-txt">BY JAMES BELL</div>
-              </div>
-              <h2 className="section-title">All Authored Books</h2>
-              <p className="section-sub">14 books on pastoral leadership, theology, and spiritual formation</p>
-            </div>
-
-            <div className="grid grid-4">
-              {AUTHORED_BOOKS.map((book) => (
-                <button
-                  key={book.id}
-                  onClick={() => setSelectedBook(book)}
-                  style={{
-                    background: "none",
-                    border: "none",
-                    cursor: "pointer",
-                    textAlign: "left",
-                    padding: "0",
-                    transition: "transform 0.2s"
-                  }}
-                  onMouseEnter={(e) => e.currentTarget.style.transform = "translateY(-4px)"}
-                  onMouseLeave={(e) => e.currentTarget.style.transform = "translateY(0)"}
+      {/* FULL CATALOG */}
+      <section style={{ background: "var(--bone-warm)", padding: "5rem 1.5rem" }}>
+        <div style={{ maxWidth: "1180px", margin: "0 auto" }}>
+          <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard-text)", fontFamily: "var(--U)", marginBottom: "1rem" }}>Full Catalog</div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, color: "var(--ink)", marginBottom: "3rem" }}>All {BOOKS.length} books</h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "2rem" }}>
+            {BOOKS.map((book) => (
+              <a key={book.id} href={book.amazonUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                <div style={{ transition: "all 240ms cubic-bezier(0.22,1,0.36,1)", cursor: "pointer" }}
+                  onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-4px)"; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.transform = "none"; }}
                 >
-                  <div style={{
-                    marginBottom: "16px",
-                    borderRadius: "8px",
-                    overflow: "hidden",
-                    boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-                    aspectRatio: "3/4"
-                  }}>
-                    <img 
-                      src={book.cover} 
-                      alt={book.title}
-                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                    />
-                  </div>
-                  <h3 style={{ fontSize: "16px", fontWeight: "bold", color: "var(--ink)", marginBottom: "4px", lineHeight: "1.3" }}>
-                    {book.title}
-                  </h3>
-                  <p style={{ fontSize: "12px", color: "var(--ink3)", lineHeight: "1.4" }}>
-                    {book.subtitle}
-                  </p>
-                </button>
-              ))}
-            </div>
+                  <img src={book.cover} alt={book.title} loading="lazy" style={{ width: "100%", aspectRatio: "2/3", objectFit: "cover", borderRadius: "2px", border: "1px solid var(--bone-muted)", marginBottom: "0.75rem" }} />
+                  <h3 style={{ fontFamily: "var(--F)", fontSize: "1rem", fontWeight: 400, color: "var(--ink)", lineHeight: 1.3, marginBottom: "0.25rem" }}>{book.title}</h3>
+                  <p style={{ fontSize: "0.75rem", color: "var(--ink-muted)", lineHeight: 1.4, fontFamily: "var(--U)" }}>{book.subtitle}</p>
+                </div>
+              </a>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* RECOMMENDED BOOKS SECTION */}
-        {recommendedBooks.length > 0 && (
-          <section style={{ background: "var(--paper)", padding: "60px 20px" }}>
-            <div className="wrap">
-              <div style={{ marginBottom: "48px" }}>
-                <div className="kicker" style={{ marginBottom: "12px" }}>
-                  <div className="kicker-line"></div>
-                  <div className="kicker-txt">RECOMMENDED READING</div>
-                </div>
-                <h2 className="section-title">Books That Shaped My Thinking</h2>
-                <p className="section-sub">Curated list of essential reads on theology, leadership, and faith</p>
-              </div>
-
-              <div className="grid grid-3">
-                {recommendedBooks.slice(0, 9).map((book: any) => (
-                  <div key={book.id} style={{
-                    background: "white",
-                    padding: "24px",
-                    borderRadius: "8px",
-                    border: "1px solid #E5DDD0"
-                  }}>
-                    <h3 style={{ fontSize: "16px", fontWeight: "bold", color: "var(--ink)", marginBottom: "4px" }}>
-                      {book.title}
-                    </h3>
-                    <p style={{ fontSize: "12px", color: "var(--ink3)", marginBottom: "12px" }}>
-                      by {book.author}
-                    </p>
-                    <p style={{ fontSize: "13px", color: "var(--ink2)", lineHeight: "1.5" }}>
-                      {book.description}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* BOOK DETAIL MODAL */}
-        {selectedBook && (
-          <div style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            background: "rgba(0,0,0,0.5)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            zIndex: 1000,
-            padding: "20px"
-          }} onClick={() => setSelectedBook(null)}>
-            <div style={{
-              background: "white",
-              borderRadius: "12px",
-              maxWidth: "600px",
-              width: "100%",
-              padding: "40px",
-              position: "relative",
-              maxHeight: "90vh",
-              overflow: "auto"
-            }} onClick={(e) => e.stopPropagation()}>
-              <button
-                onClick={() => setSelectedBook(null)}
-                style={{
-                  position: "absolute",
-                  top: "16px",
-                  right: "16px",
-                  background: "none",
-                  border: "none",
-                  cursor: "pointer",
-                  padding: "0",
-                  color: "var(--ink3)"
-                }}
-              >
-                <X size={24} />
-              </button>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                <div>
-                  <img 
-                    src={selectedBook.cover} 
-                    alt={selectedBook.title}
-                    style={{ width: "100%", borderRadius: "8px" }}
-                  />
-                </div>
-                <div>
-                  <h2 style={{ fontSize: "24px", fontWeight: "bold", color: "var(--ink)", marginBottom: "8px", lineHeight: "1.3" }}>
-                    {selectedBook.title}
-                  </h2>
-                  <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "24px", fontStyle: "italic" }}>
-                    {selectedBook.subtitle}
-                  </p>
-                  <p style={{ fontSize: "15px", color: "var(--ink2)", lineHeight: "1.6", marginBottom: "24px" }}>
-                    {selectedBook.description}
-                  </p>
-                  <a 
-                    href={selectedBook.amazonUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "8px",
-                      background: "var(--gold)",
-                      color: "white",
-                      padding: "12px 24px",
-                      borderRadius: "4px",
-                      textDecoration: "none",
-                      fontWeight: "bold",
-                      fontSize: "14px",
-                      transition: "background 0.2s"
-                    }}
-                    onMouseEnter={(e) => e.currentTarget.style.background = "#A0824F"}
-                    onMouseLeave={(e) => e.currentTarget.style.background = "var(--gold)"}
-                  >
-                    Buy on Amazon
-                    <ExternalLink size={16} />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
+      {/* CROSS-LINK: WRITING */}
+      <section style={{ background: "var(--charcoal)", padding: "4rem 1.5rem", textAlign: "center" }}>
+        <div style={{ maxWidth: "560px", margin: "0 auto" }}>
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", fontStyle: "italic", lineHeight: 1.55, color: "var(--bone)", marginBottom: "1.5rem" }}>
+            The books are the architecture. The essays are the application. Read both.
+          </p>
+          <Link href="/writing" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
+            Read the essays <ArrowRight size={14} style={{ display: "inline", verticalAlign: "middle" }} />
+          </Link>
+        </div>
+      </section>
     </Layout>
   );
 }
