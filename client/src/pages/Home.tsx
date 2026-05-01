@@ -102,7 +102,7 @@ export default function Home() {
             {recentArticles.map((article: any, i: number) => (
               <Link key={i} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
                 <article style={{
-                  background: "var(--charcoal-soft)", padding: "2rem", borderRadius: "2px",
+                  background: "var(--card)", padding: "2rem", borderRadius: "2px",
                   transition: "all 240ms cubic-bezier(0.22,1,0.36,1)", cursor: "pointer", height: "100%",
                   display: "flex", flexDirection: "column",
                 }}
