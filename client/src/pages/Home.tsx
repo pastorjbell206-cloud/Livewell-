@@ -5,6 +5,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { trpc } from "@/lib/trpc";
 import Footer from "@/components/Footer";
 import MinimalNav from "@/components/MinimalNav";
+import StickyMobileCTA from "@/components/StickyMobileCTA";
 
 export default function Home() {
   const [emailInput, setEmailInput] = useState("");
@@ -272,6 +273,7 @@ export default function Home() {
       </section>
 
       <Footer />
+      <StickyMobileCTA />
     </div>
   );
 }
