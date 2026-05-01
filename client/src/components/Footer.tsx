@@ -5,12 +5,12 @@ import { Sun, Moon } from "lucide-react";
 export default function Footer() {
   const { theme, toggleTheme } = useTheme();
   return (
-    <footer style={{ background: "var(--ink)", color: "#ffffff", padding: "60px 20px 20px", marginTop: "60px", borderTop: "3px solid #D4A017" }}>
+    <footer style={{ background: "var(--ink)", color: "#ffffff", padding: "60px 20px 20px", marginTop: "60px", borderTop: "2px solid var(--gold)" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "40px", marginBottom: "40px" }}>
           {/* Column 1 - Brand */}
           <div>
-            <div style={{ fontSize: "22px", fontWeight: "bold", color: "var(--gold)", marginBottom: "12px", fontFamily: "Georgia, serif" }}>LiveWell</div>
+            <div style={{ fontSize: "22px", fontWeight: "bold", color: "var(--gold)", marginBottom: "12px", fontFamily: "var(--F)" }}>LiveWell</div>
             <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.7", marginBottom: "16px" }}>Theology that carries the weight of everyday life.</p>
             <div style={{ display: "flex", gap: "12px" }}>
               <a href="https://substack.com/@jamesbell333289" target="_blank" rel="noopener noreferrer" style={{ color: "var(--gold)", fontSize: "12px", textDecoration: "none", fontWeight: "600" }}>Substack →</a>
@@ -77,7 +77,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div style={{ borderTop: "1px solid #D4A017", paddingTop: "20px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", fontSize: "12px", color: "rgba(255,255,255,0.75)" }}>
+        <div style={{ borderTop: "1px solid rgba(255,255,255,0.12)", paddingTop: "20px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", fontSize: "12px", color: "rgba(255,255,255,0.75)" }}>
           <span>&copy; 2026 LiveWell by James Bell. All rights reserved.</span>
           <div style={{ display: "flex", gap: "16px" }}>
             <a href="/privacy" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none" }}>Privacy Policy</a>
