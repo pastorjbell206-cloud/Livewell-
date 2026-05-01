@@ -44,9 +44,11 @@ export default function Footer() {
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
               <Link href="/books" style={{ color: "#D1C9BB", textDecoration: "none", fontSize: "13px" }}>Books</Link>
               <Link href="/reading-paths" style={{ color: "#D1C9BB", textDecoration: "none", fontSize: "13px" }}>Reading Paths</Link>
-              <Link href="/resources" style={{ color: "#D1C9BB", textDecoration: "none", fontSize: "13px" }}>Tools & Resources</Link>
+              <Link href="/tools" style={{ color: "#D1C9BB", textDecoration: "none", fontSize: "13px" }}>Ministry Tools</Link>
+              <Link href="/tools/verse-finder" style={{ color: "#D1C9BB", textDecoration: "none", fontSize: "13px" }}>Bible Verse Finder</Link>
+              <Link href="/tools/prayer-generator" style={{ color: "#D1C9BB", textDecoration: "none", fontSize: "13px" }}>Prayer Generator</Link>
               <Link href="/quiz" style={{ color: "#D1C9BB", textDecoration: "none", fontSize: "13px" }}>Theology Quiz</Link>
-              <Link href="/start" style={{ color: "#D1C9BB", textDecoration: "none", fontSize: "13px" }}>Start Here</Link>
+              <Link href="/work-with-james" style={{ color: "#D1C9BB", textDecoration: "none", fontSize: "13px" }}>Work With James</Link>
             </div>
           </div>
 
