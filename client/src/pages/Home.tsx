@@ -41,7 +41,7 @@ export default function Home() {
       {/* ═══ HERO ═══ */}
       <section style={{ background: "var(--charcoal)", minHeight: "calc(100vh - 64px)", display: "flex", alignItems: "center", padding: "6rem 1.5rem 8rem" }}>
         <div style={{ maxWidth: "880px", margin: "0 auto" }}>
-          <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "2rem" }}>
+          <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--goldlt)", marginBottom: "2rem" }}>
             James Bell — Pastor, Author, Writer
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(3rem, 8vw, 7rem)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "2rem" }}>
@@ -92,7 +92,7 @@ export default function Home() {
       {/* ═══ RECENT WRITING ═══ */}
       <section style={{ background: "var(--bone-warm)", padding: "6rem 1.5rem" }}>
         <div style={{ maxWidth: "1180px", margin: "0 auto" }}>
-          <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "1rem" }}>
+          <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--goldlt)", marginBottom: "1rem" }}>
             Recent Writing
           </div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "3rem" }}>
@@ -109,7 +109,7 @@ export default function Home() {
                   onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.08)"; }}
                   onMouseLeave={(e) => { e.currentTarget.style.transform = "none"; e.currentTarget.style.boxShadow = "none"; }}
                 >
-                  <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "0.75rem" }}>
+                  <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--goldlt)", marginBottom: "0.75rem" }}>
                     {article.pillar || article.topic || "Essay"}
                   </div>
                   <h3 style={{ fontFamily: "var(--F)", fontSize: "1.375rem", fontWeight: 400, color: "var(--ink)", lineHeight: 1.3, marginBottom: "0.75rem", flex: 1 }}>
@@ -123,7 +123,7 @@ export default function Home() {
             ))}
           </div>
           <div style={{ marginTop: "3rem", textAlign: "center" }}>
-            <Link href="/writing" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
+            <Link href="/writing" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--goldlt)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
               Continue reading
             </Link>
           </div>
@@ -138,7 +138,7 @@ export default function Home() {
             <div style={{ width: "60px", height: "2px", background: "var(--mustard)", marginTop: "1.5rem" }} />
           </div>
           <div>
-            <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "1rem" }}>
+            <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--goldlt)", marginBottom: "1rem" }}>
               The Work
             </div>
             <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1.5rem" }}>
@@ -164,7 +164,7 @@ export default function Home() {
       {/* ═══ MEMBERSHIP ═══ */}
       <section style={{ background: "var(--bone)", padding: "6rem 1.5rem" }}>
         <div style={{ maxWidth: "680px", margin: "0 auto", textAlign: "center" }}>
-          <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "1rem" }}>
+          <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--goldlt)", marginBottom: "1rem" }}>
             Membership
           </div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "2.5rem" }}>
@@ -203,7 +203,7 @@ export default function Home() {
           <p style={{ fontSize: "0.875rem", color: "var(--bone)", opacity: 0.5, marginBottom: "1.5rem" }}>
             James Bell — Lead Teaching Pastor, First Baptist Church of Fenton
           </p>
-          <Link href="/about" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
+          <Link href="/about" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--goldlt)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
             More about James
           </Link>
         </div>
@@ -221,7 +221,7 @@ export default function Home() {
             </div>
           </div>
           {emailSubmitted ? (
-            <div style={{ fontSize: "0.875rem", color: "var(--mustard)", fontWeight: 500 }}>Welcome. Check your inbox.</div>
+            <div style={{ fontSize: "0.875rem", color: "var(--goldlt)", fontWeight: 500 }}>Welcome. Check your inbox.</div>
           ) : (
             <form onSubmit={handleEmailSubmit} style={{ display: "flex", gap: "0" }}>
               <input type="email" placeholder="your@email.com" value={emailInput} onChange={(e) => setEmailInput(e.target.value)} required
