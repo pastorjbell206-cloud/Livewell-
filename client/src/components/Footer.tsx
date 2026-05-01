@@ -5,7 +5,7 @@ import { Sun, Moon } from "lucide-react";
 export default function Footer() {
   const { theme, toggleTheme } = useTheme();
   return (
-    <footer style={{ background: "var(--ink)", color: "#ffffff", padding: "60px 20px 20px", marginTop: "60px", borderTop: "2px solid var(--gold)" }}>
+    <footer style={{ background: "var(--ink)", color: "#ffffff", padding: "60px 20px 20px", marginTop: "60px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "40px", marginBottom: "40px" }}>
           {/* Column 1 - Brand */}
@@ -77,7 +77,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div style={{ borderTop: "1px solid rgba(255,255,255,0.12)", paddingTop: "20px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", fontSize: "12px", color: "rgba(255,255,255,0.75)" }}>
+        <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: "20px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", fontSize: "12px", color: "rgba(255,255,255,0.75)" }}>
           <span>&copy; 2026 LiveWell by James Bell. All rights reserved.</span>
           <div style={{ display: "flex", gap: "16px" }}>
             <a href="/privacy" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none" }}>Privacy Policy</a>
