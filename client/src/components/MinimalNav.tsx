@@ -143,7 +143,7 @@ export default function MinimalNav() {
                       onMouseEnter={() => setOpenDropdown(link.label)}
                       style={{
                         display: "flex", alignItems: "center", gap: "4px",
-                        color: openDropdown === link.label ? "var(--gold)" : "var(--paper)",
+                        color: openDropdown === link.label ? "var(--gold)" : "var(--ink)",
                         fontSize: "13px", padding: "8px 12px", borderRadius: "3px",
                         background: "none", border: "none", cursor: "pointer",
                         transition: "color 0.2s", fontWeight: "400"
@@ -186,7 +186,7 @@ export default function MinimalNav() {
                 ) : (
                   <Link href={link.href!} style={{ textDecoration: "none" }}>
                     <span style={{
-                      color: isActive(link.href!) ? "var(--gold)" : "var(--paper)",
+                      color: isActive(link.href!) ? "var(--gold)" : "var(--ink)",
                       fontSize: "13px", padding: "8px 12px", borderRadius: "3px",
                       display: "block", transition: "color 0.2s",
                       fontWeight: isActive(link.href!) ? "600" : "400",
@@ -255,7 +255,7 @@ export default function MinimalNav() {
                   </>
                 ) : (
                   <Link href={link.href!} onClick={() => setMobileOpen(false)} style={{ textDecoration: "none" }}>
-                    <div style={{ color: isActive(link.href!) ? "var(--gold)" : "var(--paper)", fontSize: "14px", padding: "12px 0", borderBottom: "1px solid rgba(255,255,255,0.06)", fontWeight: isActive(link.href!) ? "600" : "400" }}>
+                    <div style={{ color: isActive(link.href!) ? "var(--gold)" : "var(--ink)", fontSize: "14px", padding: "12px 0", borderBottom: "1px solid rgba(255,255,255,0.06)", fontWeight: isActive(link.href!) ? "600" : "400" }}>
                       {link.label}
                     </div>
                   </Link>
