@@ -590,8 +590,9 @@ async function trpcListPosts(): Promise<any[]> {
       if (Array.isArray(rows) && rows.length > 0) {
         return (rows as any[]).map((r) => ({
           id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
+          body: r.body || null, content: r.body || null,
           pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
-          published: r.published, featured: r.featured,
+          published: r.published, featured: r.featured, topic: r.topic || null,
           createdAt: r.createdAt || r.publishedAt, publishedAt: r.publishedAt || r.createdAt,
         }));
       }
