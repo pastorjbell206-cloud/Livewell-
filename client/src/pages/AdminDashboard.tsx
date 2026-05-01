@@ -129,7 +129,7 @@ export default function AdminDashboard() {
               + New Book
             </Link>
             <Link href="/admin/settings" className="p-4 rounded-lg font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "#2C3E50", color: "#F7F5F0" }}>
-              ⚙️ Site Settings
+              Site Settings
             </Link>
           </div>
         </div>

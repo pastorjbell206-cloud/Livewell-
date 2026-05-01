@@ -2,16 +2,16 @@
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --ink:#1a1a1a;--ink2:#2a2a2c;--ink3:#4a4a4e;
-  --paper:#f5f1ea;--paper2:#ebe5d9;
-  --cream:#fbf8f2;--card:#ffffff;
-  --line:#d8d1c2;--border:#d8d1c2;--borderdk:#b8b2a3;
-  --stone:#6e6a60;--stone2:#b8b2a3;
-  --gold:#c9a24a;--goldlt:#a8852f;--goldpale:#f5f1ea;
-  --oxblood:#6b2517;
-  --forest:#1a3328;--forest2:#234535;--forest3:#2e5c47;
-  --ivory:#f5f1ea;--rust:#6b2517;--rustlt:#a04030;
-  --sage:#4a6a55;--plum:#4a2d4a;
+  --ink:#111111;--ink2:#222222;--ink3:#666666;
+  --paper:#ffffff;--paper2:#f8f8f6;
+  --cream:#f8f8f6;--card:#ffffff;
+  --line:#e5e5e5;--border:#e5e5e5;--borderdk:#cccccc;
+  --stone:#666666;--stone2:#999999;
+  --gold:#D4A017;--goldlt:#C49000;--goldpale:#FFF8E7;
+  --oxblood:#D4A017;
+  --forest:#111111;--forest2:#222222;--forest3:#333333;
+  --ivory:#ffffff;--rust:#D4A017;--rustlt:#C49000;
+  --sage:#444444;--plum:#333333;
   --F:"Fraunces","Iowan Old Style",Georgia,serif;
   --B:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   --U:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
@@ -24,16 +24,16 @@
   --ease:cubic-bezier(0.2,0.8,0.2,1);
 }
 html.dark{
-  --ink:#e8e4dc;--ink2:#c8c0b4;--ink3:#9a9080;
-  --paper:#151512;--paper2:#1e1e1a;
-  --cream:#252520;--card:#1e1e1a;
-  --line:#3a3530;--border:#3a3530;--borderdk:#4a4540;
-  --stone:#9a9080;--stone2:#6e6a60;
-  --gold:#d4a84f;--goldlt:#e0bf70;--goldpale:#3d3422;
-  --oxblood:#d4705e;
-  --forest:#a8d4b8;--forest2:#8bc4a0;--forest3:#6db088;
-  --ivory:#1a1a1a;--rust:#d4705e;--rustlt:#c05040;
-  --sage:#6db088;--plum:#9a6d9a;
+  --ink:#f0f0f0;--ink2:#d0d0d0;--ink3:#999999;
+  --paper:#111111;--paper2:#1a1a1a;
+  --cream:#1a1a1a;--card:#1a1a1a;
+  --line:#333333;--border:#333333;--borderdk:#444444;
+  --stone:#999999;--stone2:#666666;
+  --gold:#D4A017;--goldlt:#E5B828;--goldpale:#2a2200;
+  --oxblood:#D4A017;
+  --forest:#f0f0f0;--forest2:#d0d0d0;--forest3:#aaaaaa;
+  --ivory:#111111;--rust:#D4A017;--rustlt:#E5B828;
+  --sage:#aaaaaa;--plum:#888888;
 }
 :focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .skip-link{position:absolute;top:-100%;left:16px;z-index:9999;background:var(--gold);color:var(--ink);padding:8px 16px;font-family:var(--U);font-size:14px;font-weight:600;border-radius:0 0 4px 4px;text-decoration:none;transition:top .2s}

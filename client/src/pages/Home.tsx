@@ -25,10 +25,10 @@ export default function Home() {
   })?.slice(0, 12) || [];
 
   const PATH_CARDS = [
-    { title: "Your Marriage", description: "Covenant, conflict, and the costly love that holds. For couples who need more than tips.", href: "/marriage", color: "#B8963E", icon: "💍" },
-    { title: "Your Family", description: "Parenting is theology in practice. Raising kids who think, question, and believe.", href: "/parenting", color: "#9B8BA8", icon: "🏠" },
-    { title: "Your Faith", description: "For the honest, the questioning, and those who refuse to pretend. Theology for doubt.", href: "/doubt", color: "#2D4A3E", icon: "✝️" },
-    { title: "Your Calling", description: "If you're a pastor, you don't have to lead alone. Resources, community, and honest help.", href: "/pastors", color: "#6B8E6F", icon: "⛪" },
+    { title: "Your Marriage", description: "Covenant, conflict, and the costly love that holds. For couples who need more than tips.", href: "/marriage", color: "#D4A017" },
+    { title: "Your Family", description: "Parenting is theology in practice. Raising kids who think, question, and believe.", href: "/parenting", color: "#111111" },
+    { title: "Your Faith", description: "For the honest, the questioning, and those who refuse to pretend. Theology for doubt.", href: "/doubt", color: "#333333" },
+    { title: "Your Calling", description: "If you're a pastor, you don't have to lead alone. Resources, community, and honest help.", href: "/pastors", color: "#D4A017" },
   ];
 
   const TESTIMONIALS = [
@@ -39,13 +39,13 @@ export default function Home() {
   ];
 
   const TOPICS = [
-    { name: "Marriage", slug: "marriage", color: "#B8963E", count: "50+", description: "Covenant, conflict, intimacy, and the long haul." },
-    { name: "Parenting", slug: "parenting", color: "#9B8BA8", count: "40+", description: "Faith formation, discipline, and loving your children well." },
-    { name: "Theology", slug: "theology", color: "#2D4A3E", count: "80+", description: "Greek, Hebrew, church history, and hard questions." },
-    { name: "Justice", slug: "justice", color: "#8B4545", count: "65+", description: "Where the church has been silent when it should have spoken." },
-    { name: "Pastoral Ministry", slug: "pastoral-ministry", color: "#6B8E6F", count: "90+", description: "Burnout, preaching, conflict, and the soul beneath the calling." },
-    { name: "Finances", slug: "finances", color: "#6B9B8B", count: "30+", description: "Biblical stewardship and the theology beneath every financial decision." },
-    { name: "Devotionals", slug: "devotionals", color: "#8B9B6F", count: "Daily", description: "Short, substantive readings rooted in Scripture." },
+    { name: "Marriage", slug: "marriage", color: "#D4A017", count: "50+", description: "Covenant, conflict, intimacy, and the long haul." },
+    { name: "Parenting", slug: "parenting", color: "#111111", count: "40+", description: "Faith formation, discipline, and loving your children well." },
+    { name: "Theology", slug: "theology", color: "#333333", count: "80+", description: "Greek, Hebrew, church history, and hard questions." },
+    { name: "Justice", slug: "justice", color: "#D4A017", count: "65+", description: "Where the church has been silent when it should have spoken." },
+    { name: "Pastoral Ministry", slug: "pastoral-ministry", color: "#111111", count: "90+", description: "Burnout, preaching, conflict, and the soul beneath the calling." },
+    { name: "Finances", slug: "finances", color: "#333333", count: "30+", description: "Biblical stewardship and the theology beneath every financial decision." },
+    { name: "Devotionals", slug: "devotionals", color: "#D4A017", count: "Daily", description: "Short, substantive readings rooted in Scripture." },
   ];
 
   const handleEmailSubmit = (e: React.FormEvent) => {
@@ -89,7 +89,7 @@ export default function Home() {
       <MinimalNav />
 
       {/* HERO SECTION */}
-      <section style={{ background: "linear-gradient(135deg, #2D4A3E 0%, #1A2E22 100%)", color: "#F7F5F0", padding: "80px 20px", display: "flex", alignItems: "center", gap: "80px", maxWidth: "1400px", margin: "0 auto", minHeight: "600px", flexWrap: "wrap" }}>
+      <section style={{ background: "#111111", color: "#F7F5F0", padding: "80px 20px", display: "flex", alignItems: "center", gap: "80px", maxWidth: "1400px", margin: "0 auto", minHeight: "600px", flexWrap: "wrap" }}>
         <div style={{ flex: 1, minWidth: "280px" }}>
           <h1 style={{ fontSize: "clamp(36px, 5vw, 54px)", fontWeight: "bold", lineHeight: "1.15", marginBottom: "24px", fontFamily: "Georgia, serif" }}>
             Theology That Carries the Weight of Everyday Life
@@ -137,7 +137,7 @@ export default function Home() {
                   onMouseEnter={(e) => (e.currentTarget.style.boxShadow = "0 8px 30px rgba(0,0,0,0.08)")}
                   onMouseLeave={(e) => (e.currentTarget.style.boxShadow = "none")}
                 >
-                  <div style={{ fontSize: "28px", marginBottom: "16px" }}>{card.icon}</div>
+                  <div style={{ width: "40px", height: "3px", background: card.color, marginBottom: "16px" }} />
                   <h3 style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "10px", color: "#1A1A1A", fontFamily: "Georgia, serif" }}>{card.title}</h3>
                   <p style={{ fontSize: "14px", lineHeight: "1.7", color: "#6B7280", flex: 1 }}>{card.description}</p>
                   <div style={{ display: "flex", alignItems: "center", gap: "6px", marginTop: "16px", color: card.color, fontWeight: "600", fontSize: "14px" }}>

@@ -20,12 +20,12 @@ const PILLAR_COLORS: Record<string, { bg: string; text: string; icon: string }> 
   "Prophetic Disruption": {
     bg: "bg-[#1A1A1A]",
     text: "text-white",
-    icon: "🔥",
+    icon: "",
   },
   "Theological Depth": {
     bg: "bg-[#2C3E50]",
     text: "text-white",
-    icon: "📚",
+    icon: "",
   },
   "Prophetic Justice": {
     bg: "bg-[#2D4A3E]",
@@ -35,7 +35,7 @@ const PILLAR_COLORS: Record<string, { bg: string; text: string; icon: string }> 
   "Integrated Life": {
     bg: "bg-[#B8963E]",
     text: "text-white",
-    icon: "🏠",
+    icon: "",
   },
   "Leadership Formation": {
     bg: "bg-[#6B7280]",
