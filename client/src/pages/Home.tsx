@@ -89,31 +89,34 @@ export default function Home() {
       <MinimalNav />
 
       {/* HERO SECTION */}
-      <section style={{ background: "#ffffff", color: "var(--ink)", padding: "80px 20px", display: "flex", alignItems: "center", gap: "80px", maxWidth: "1400px", margin: "0 auto", minHeight: "600px", flexWrap: "wrap" }}>
-        <div style={{ flex: 1, minWidth: "280px" }}>
-          <h1 style={{ fontSize: "clamp(36px, 5vw, 54px)", fontWeight: "bold", lineHeight: "1.15", marginBottom: "24px", fontFamily: "Georgia, serif" }}>
-            Theology That Carries the Weight of Everyday Life
+      <section style={{ background: "var(--paper)", padding: "96px 20px 80px" }}>
+        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+          <div style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--goldlt)", fontFamily: "var(--U)", marginBottom: "24px" }}>
+            LIVE WELL BY JAMES BELL
+          </div>
+          <h1 style={{ fontSize: "clamp(40px, 6vw, 64px)", fontWeight: 300, lineHeight: 1.08, letterSpacing: "-0.025em", color: "var(--ink)", fontFamily: "var(--F)", marginBottom: "24px" }}>
+            Theology That Carries the Weight of <em style={{ fontWeight: 600, fontStyle: "italic" }}>Everyday Life</em>
           </h1>
-          <p style={{ fontSize: "17px", lineHeight: "1.8", marginBottom: "32px", color: "var(--ink3)" }}>
-            Your marriage is under pressure. Your kids are watching. Your faith has questions it didn't used to have. You need theology that holds — not platitudes that crumble. 880+ essays. 25 books. Free to start.
+          <div style={{ width: "48px", height: "2px", background: "var(--gold)", marginBottom: "24px" }} />
+          <p style={{ fontSize: "18px", lineHeight: 1.75, color: "var(--ink3)", maxWidth: "600px", marginBottom: "40px", fontFamily: "var(--F)" }}>
+            Your marriage is under pressure. Your kids are watching. Your faith has questions it didn't used to have. You need theology that holds — not platitudes that crumble.
           </p>
-          <div style={{ display: "flex", gap: "12px", marginBottom: "40px", flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: "16px", marginBottom: "48px", flexWrap: "wrap" }}>
             <Link href="/start" style={{ textDecoration: "none" }}>
-              <button style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "16px 32px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
+              <button style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "14px 28px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", letterSpacing: "0.04em", borderRadius: "6px", cursor: "pointer", transition: "all 0.2s" }}>
                 Find Your Path
               </button>
             </Link>
             <Link href="/writing" style={{ textDecoration: "none" }}>
-              <button style={{ background: "transparent", color: "var(--ink)", border: "1px solid #e5e5e5", padding: "16px 32px", fontSize: "16px", borderRadius: "4px", cursor: "pointer" }}>
+              <button style={{ background: "transparent", color: "var(--ink)", border: "1px solid var(--line)", padding: "14px 28px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", letterSpacing: "0.04em", borderRadius: "6px", cursor: "pointer", transition: "all 0.2s" }}>
                 Browse All Essays
               </button>
             </Link>
           </div>
-          <div style={{ display: "flex", gap: "40px", fontSize: "14px", color: "var(--ink3)", borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "24px", flexWrap: "wrap" }}>
-            <div><div style={{ fontSize: "24px", fontWeight: "bold", color: "var(--gold)" }}>880+</div><div>Essays</div></div>
-            <div><div style={{ fontSize: "24px", fontWeight: "bold", color: "var(--gold)" }}>25</div><div>Books</div></div>
-            <div><div style={{ fontSize: "24px", fontWeight: "bold", color: "var(--gold)" }}>4,200+</div><div>Readers</div></div>
-            <div><div style={{ fontSize: "24px", fontWeight: "bold", color: "var(--gold)" }}>Free</div><div>to Start</div></div>
+          <div style={{ display: "flex", gap: "40px", borderTop: "1px solid var(--line)", paddingTop: "24px", flexWrap: "wrap" }}>
+            <div><div style={{ fontSize: "28px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--F)" }}>880+</div><div style={{ fontSize: "11px", color: "var(--ink3)", letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "var(--U)" }}>Essays</div></div>
+            <div><div style={{ fontSize: "28px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--F)" }}>25</div><div style={{ fontSize: "11px", color: "var(--ink3)", letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "var(--U)" }}>Books</div></div>
+            <div><div style={{ fontSize: "28px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--F)" }}>Free</div><div style={{ fontSize: "11px", color: "var(--ink3)", letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "var(--U)" }}>to Start</div></div>
           </div>
         </div>
         <div style={{ flex: 1, display: "flex", justifyContent: "center", alignItems: "flex-start", paddingTop: "20px", minWidth: "260px" }}>
