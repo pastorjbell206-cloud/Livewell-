@@ -66,7 +66,7 @@ export default function Home() {
               { title: "Theological Depth", desc: "Hard questions. Real scholarship. Reading the Bible without shortcuts.", href: "/writing?topic=theology", keyword: "deep theology" },
               { title: "Prophetic Justice", desc: "Where the church has been silent and what faithfulness demands now.", href: "/writing?topic=justice", keyword: "faith and justice" },
               { title: "Faith & Theology", desc: "Doubt, deconstruction, and the intellectual architecture of belief.", href: "/doubt", keyword: "faith crisis" },
-              { title: "Marriage, Family & Parenting", desc: "Covenant, conflict, and raising kids who think theologically.", href: "/marriage", keyword: "Christian marriage help" },
+              { title: "Living Well", desc: "Marriage, parenting, finances, emotional health, and the theology beneath everyday decisions.", href: "/marriage", keyword: "Christian living" },
             ].map((p, i) => (
               <Link key={i} href={p.href} style={{ textDecoration: "none" }}>
                 <div style={{ padding: "1.75rem", background: "var(--card)", border: "1px solid var(--bone-muted)", borderRadius: "2px", height: "100%", cursor: "pointer", transition: "all 240ms cubic-bezier(0.22,1,0.36,1)" }}
