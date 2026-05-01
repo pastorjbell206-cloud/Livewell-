@@ -89,7 +89,7 @@ export default function MinimalNav() {
       {/* Search Overlay */}
       {searchOpen && (
         <div
-          style={{ position: "fixed", inset: 0, background: "rgba(255,255,255,0.98)", zIndex: 500, display: "flex", alignItems: "flex-start", justifyContent: "center", paddingTop: "120px" }}
+          style={{ position: "fixed", inset: 0, background: "rgba(10,10,10,0.98)", zIndex: 500, display: "flex", alignItems: "flex-start", justifyContent: "center", paddingTop: "120px" }}
           onClick={(e) => { if (e.target === e.currentTarget) setSearchOpen(false); }}
         >
           <div style={{ width: "100%", maxWidth: "680px", padding: "0 32px" }}>
@@ -122,13 +122,13 @@ export default function MinimalNav() {
       )}
 
       {/* Main Nav */}
-      <nav style={{ position: "sticky", top: 0, zIndex: 200, background: "rgba(245,241,234,0.97)", backdropFilter: "blur(12px)", borderBottom: "1px solid var(--line)", width: "100%" }}>
+      <nav style={{ position: "sticky", top: 0, zIndex: 200, background: "rgba(15,15,15,0.95)", backdropFilter: "blur(16px)", borderBottom: "1px solid rgba(255,255,255,0.06)", width: "100%" }}>
         <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 20px", display: "flex", justifyContent: "space-between", alignItems: "center", height: "64px" }}>
           {/* Logo with gold rule */}
           <Link href="/" style={{ textDecoration: "none" }}>
             <div>
-              <div style={{ fontSize: "20px", fontWeight: 700, color: "var(--ink)", fontFamily: "var(--F)", lineHeight: 1, paddingBottom: "4px", borderBottom: "2px solid var(--gold)" }}>Live Well</div>
-              <div style={{ fontSize: "9px", color: "var(--ink3)", letterSpacing: "0.15em", textTransform: "uppercase", marginTop: "4px", fontFamily: "var(--U)", fontWeight: 500 }}>by James Bell</div>
+              <div style={{ fontSize: "20px", fontWeight: 700, color: "#f0ece4", fontFamily: "var(--F)", lineHeight: 1, paddingBottom: "4px", borderBottom: "2px solid var(--gold)" }}>Live Well</div>
+              <div style={{ fontSize: "9px", color: "rgba(240,236,228,0.5)", letterSpacing: "0.15em", textTransform: "uppercase", marginTop: "4px", fontFamily: "var(--U)", fontWeight: 500 }}>by James Bell</div>
             </div>
           </Link>
 
@@ -159,8 +159,8 @@ export default function MinimalNav() {
                         onMouseLeave={() => setOpenDropdown(null)}
                         style={{
                           position: "absolute", top: "100%", left: "50%", transform: "translateX(-50%)",
-                          background: "var(--card)", border: "1px solid var(--line)", borderTop: "2px solid var(--gold)", borderRadius: "8px",
-                          padding: "8px", minWidth: "280px", boxShadow: "0 12px 40px rgba(26,26,26,0.12)",
+                          background: "#1a1a1a", border: "1px solid rgba(255,255,255,0.08)", borderTop: "2px solid var(--gold)", borderRadius: "8px",
+                          padding: "8px", minWidth: "280px", boxShadow: "0 12px 40px rgba(0,0,0,0.5)",
                           marginTop: "4px", zIndex: 300
                         }}
                       >
@@ -235,7 +235,7 @@ export default function MinimalNav() {
                   <>
                     <div
                       onClick={() => setOpenDropdown(openDropdown === link.label ? null : link.label)}
-                      style={{ color: "var(--gold)", fontSize: "14px", padding: "12px 0", borderBottom: "1px solid var(--line)", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "center" }}
+                      style={{ color: "var(--gold)", fontSize: "14px", padding: "12px 0", borderBottom: "1px solid rgba(255,255,255,0.06)", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "center" }}
                     >
                       {link.label}
                       <ChevronDown size={16} style={{ transform: openDropdown === link.label ? "rotate(180deg)" : "none", transition: "transform 0.2s" }} />
@@ -255,7 +255,7 @@ export default function MinimalNav() {
                   </>
                 ) : (
                   <Link href={link.href!} onClick={() => setMobileOpen(false)} style={{ textDecoration: "none" }}>
-                    <div style={{ color: isActive(link.href!) ? "var(--gold)" : "var(--paper)", fontSize: "14px", padding: "12px 0", borderBottom: "1px solid var(--line)", fontWeight: isActive(link.href!) ? "600" : "400" }}>
+                    <div style={{ color: isActive(link.href!) ? "var(--gold)" : "var(--paper)", fontSize: "14px", padding: "12px 0", borderBottom: "1px solid rgba(255,255,255,0.06)", fontWeight: isActive(link.href!) ? "600" : "400" }}>
                       {link.label}
                     </div>
                   </Link>
