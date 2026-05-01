@@ -235,7 +235,7 @@ export default function MinimalNav() {
                   <>
                     <div
                       onClick={() => setOpenDropdown(openDropdown === link.label ? null : link.label)}
-                      style={{ color: "var(--gold)", fontSize: "14px", padding: "12px 0", borderBottom: "1px solid #2D4A3E", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "center" }}
+                      style={{ color: "var(--gold)", fontSize: "14px", padding: "12px 0", borderBottom: "1px solid var(--line)", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "center" }}
                     >
                       {link.label}
                       <ChevronDown size={16} style={{ transform: openDropdown === link.label ? "rotate(180deg)" : "none", transition: "transform 0.2s" }} />
@@ -255,7 +255,7 @@ export default function MinimalNav() {
                   </>
                 ) : (
                   <Link href={link.href!} onClick={() => setMobileOpen(false)} style={{ textDecoration: "none" }}>
-                    <div style={{ color: isActive(link.href!) ? "var(--gold)" : "var(--paper)", fontSize: "14px", padding: "12px 0", borderBottom: "1px solid #2D4A3E", fontWeight: isActive(link.href!) ? "600" : "400" }}>
+                    <div style={{ color: isActive(link.href!) ? "var(--gold)" : "var(--paper)", fontSize: "14px", padding: "12px 0", borderBottom: "1px solid var(--line)", fontWeight: isActive(link.href!) ? "600" : "400" }}>
                       {link.label}
                     </div>
                   </Link>
