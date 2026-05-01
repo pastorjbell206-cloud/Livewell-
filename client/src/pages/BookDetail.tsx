@@ -20,7 +20,7 @@ export default function BookDetail() {
     return (
       <Layout>
         <div className="flex justify-center py-32">
-          <Loader2 size={32} className="animate-spin" style={{ color: "#B8963E" }} />
+          <Loader2 size={32} className="animate-spin" style={{ color: "var(--gold)" }} />
         </div>
       </Layout>
     );
@@ -32,15 +32,15 @@ export default function BookDetail() {
         <section className="py-16">
           <div className="container">
             <Link href="/books">
-              <a className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "#F7F5F0", color: "#1A1A1A" }}>
+              <a className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "var(--bone)", color: "var(--ink)" }}>
                 <ArrowLeft size={16} /> Back to Books
               </a>
             </Link>
             <div className="text-center">
-              <h1 className="font-display text-3xl font-bold mb-4" style={{ color: "#1A1A1A" }}>
+              <h1 className="font-display text-3xl font-bold mb-4" style={{ color: "var(--ink)" }}>
                 Book Not Found
               </h1>
-              <p className="font-body text-lg" style={{ color: "#6B7280" }}>
+              <p className="font-body text-lg" style={{ color: "var(--ink-muted)" }}>
                 The book you're looking for doesn't exist.
               </p>
             </div>
@@ -88,10 +88,10 @@ export default function BookDetail() {
       />
       <Layout>
         {/* Back Button */}
-        <section className="py-8" style={{ backgroundColor: "#F7F5F0" }}>
+        <section className="py-8" style={{ backgroundColor: "var(--bone)" }}>
           <div className="container">
             <Link href="/books">
-              <a className="inline-flex items-center gap-2 px-4 py-2 rounded font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "#FFFFFF", color: "#1A1A1A" }}>
+              <a className="inline-flex items-center gap-2 px-4 py-2 rounded font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "#FFFFFF", color: "var(--ink)" }}>
                 <ArrowLeft size={16} /> Back to Books
               </a>
             </Link>
@@ -117,7 +117,7 @@ export default function BookDetail() {
                     <button
                       onClick={() => setIsPreviewOpen(true)}
                       className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded font-ui font-medium transition-colors"
-                      style={{ backgroundColor: "#F7F5F0", color: "#1A1A1A" }}
+                      style={{ backgroundColor: "var(--bone)", color: "var(--ink)" }}
                     >
                       <BookOpen size={18} /> Read Sample
                     </button>
@@ -128,7 +128,7 @@ export default function BookDetail() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded font-ui font-medium no-underline transition-colors"
-                      style={{ backgroundColor: "#1A1A1A", color: "#F7F5F0" }}
+                      style={{ backgroundColor: "var(--ink)", color: "var(--bone)" }}
                     >
                       <ExternalLink size={18} /> Purchase Now
                     </a>
@@ -138,21 +138,21 @@ export default function BookDetail() {
 
               {/* Book Info */}
               <div className="md:col-span-2">
-                <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-2" style={{ color: "#B8963E" }}>
+                <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-2" style={{ color: "var(--gold)" }}>
                   Published Book
                 </div>
-                <h1 className="font-display text-4xl font-bold mb-2" style={{ color: "#1A1A1A" }}>
+                <h1 className="font-display text-4xl font-bold mb-2" style={{ color: "var(--ink)" }}>
                   {book.title}
                 </h1>
                 {book.author && (
-                  <p className="font-ui text-lg mb-6" style={{ color: "#6B7280" }}>
+                  <p className="font-ui text-lg mb-6" style={{ color: "var(--ink-muted)" }}>
                     by {book.author}
                   </p>
                 )}
 
                 {book.description && (
                   <div className="mb-8">
-                    <p className="font-body text-lg leading-relaxed" style={{ color: "#2C3E50", lineHeight: 1.8 }}>
+                    <p className="font-body text-lg leading-relaxed" style={{ color: "var(--charcoal)", lineHeight: 1.8 }}>
                       {book.description}
                     </p>
                   </div>
@@ -161,7 +161,7 @@ export default function BookDetail() {
                 {/* Key Topics */}
                 {topics.length > 0 && (
                   <div>
-                    <h3 className="font-display text-xl font-bold mb-4" style={{ color: "#1A1A1A" }}>
+                    <h3 className="font-display text-xl font-bold mb-4" style={{ color: "var(--ink)" }}>
                       What You'll Discover
                     </h3>
                     <ul className="space-y-3">
@@ -169,9 +169,9 @@ export default function BookDetail() {
                         <li key={idx} className="flex gap-3 items-start">
                           <div
                             className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                            style={{ backgroundColor: "#B8963E" }}
+                            style={{ backgroundColor: "var(--gold)" }}
                           />
-                          <span className="font-body" style={{ color: "#2C3E50" }}>
+                          <span className="font-body" style={{ color: "var(--charcoal)" }}>
                             {topic}
                           </span>
                         </li>
@@ -185,12 +185,12 @@ export default function BookDetail() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16" style={{ backgroundColor: "#1A1A1A" }}>
+        <section className="py-16" style={{ backgroundColor: "var(--ink)" }}>
           <div className="container text-center">
-            <h2 className="font-display text-3xl font-bold mb-4" style={{ color: "#F7F5F0" }}>
+            <h2 className="font-display text-3xl font-bold mb-4" style={{ color: "var(--bone)" }}>
               Ready to Transform Your Leadership?
             </h2>
-            <p className="font-body text-lg mb-8 max-w-2xl mx-auto" style={{ color: "#D1C9BB" }}>
+            <p className="font-body text-lg mb-8 max-w-2xl mx-auto" style={{ color: "rgba(244,241,234,0.7)" }}>
               This book provides the biblical foundation and practical roadmap you need to lead with clarity and conviction.
             </p>
             {book.purchaseUrl && (
@@ -199,7 +199,7 @@ export default function BookDetail() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded font-ui font-medium no-underline transition-colors"
-                style={{ backgroundColor: "#B8963E", color: "#1A1A1A" }}
+                style={{ backgroundColor: "var(--gold)", color: "var(--ink)" }}
               >
                 <ExternalLink size={18} /> Get Your Copy
               </a>
@@ -208,7 +208,7 @@ export default function BookDetail() {
         </section>
 
         {/* Book Recommendations */}
-        <section className="py-16" style={{ backgroundColor: "#F7F5F0" }}>
+        <section className="py-16" style={{ backgroundColor: "var(--bone)" }}>
           <div className="container">
             <BookRecommendations currentBookId={book.id} limit={3} />
           </div>

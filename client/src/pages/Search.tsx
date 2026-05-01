@@ -75,7 +75,7 @@ export default function SearchPage() {
         <button
           onClick={() => navigate("/")}
           className="flex items-center gap-2 mb-8 font-ui text-sm font-medium uppercase tracking-wider hover:opacity-70 transition-opacity"
-          style={{ color: "#B8963E" }}
+          style={{ color: "var(--gold)" }}
         >
           <ArrowLeft size={20} />
           Back
@@ -86,7 +86,7 @@ export default function SearchPage() {
           <h1
             className="font-display font-bold mb-6"
             style={{
-              color: "#1A1A1A",
+              color: "var(--ink)",
               fontSize: "clamp(2rem, 4vw, 3rem)",
               lineHeight: 1.2,
             }}
@@ -99,7 +99,7 @@ export default function SearchPage() {
             <SearchIcon
               size={20}
               className="absolute left-4 top-1/2 transform -translate-y-1/2 pointer-events-none"
-              style={{ color: "#6B7280" }}
+              style={{ color: "var(--ink-muted)" }}
             />
             <input
               type="text"
@@ -108,9 +108,9 @@ export default function SearchPage() {
               onChange={(e) => setQuery(e.target.value)}
               className="w-full pl-12 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 text-lg"
               style={{
-                borderColor: "#D1C9BB",
-                backgroundColor: "#F7F5F0",
-                color: "#1A1A1A",
+                borderColor: "rgba(244,241,234,0.7)",
+                backgroundColor: "var(--bone)",
+                color: "var(--ink)",
               }}
             />
           </div>
@@ -123,8 +123,8 @@ export default function SearchPage() {
                 onClick={() => setSearchType(type)}
                 className="px-4 py-2 rounded-full font-ui text-sm font-medium uppercase tracking-wider transition-all"
                 style={{
-                  backgroundColor: searchType === type ? "#B8963E" : "#E5E7EB",
-                  color: searchType === type ? "#F7F5F0" : "#1A1A1A",
+                  backgroundColor: searchType === type ? "var(--gold)" : "var(--bone-muted)",
+                  color: searchType === type ? "var(--bone)" : "var(--ink)",
                 }}
               >
                 {type === "all" ? "All" : type === "articles" ? "Articles" : "Resources"}
@@ -136,21 +136,21 @@ export default function SearchPage() {
         {/* Results */}
         <div>
           {query === "" ? (
-            <div className="text-center py-12" style={{ color: "#6B7280" }}>
+            <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
               <p className="text-lg">Enter a search term to get started</p>
             </div>
           ) : isLoading ? (
-            <div className="text-center py-12" style={{ color: "#6B7280" }}>
+            <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
               <p className="text-lg">Searching...</p>
             </div>
           ) : results.length === 0 ? (
-            <div className="text-center py-12" style={{ color: "#6B7280" }}>
+            <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
               <p className="text-lg">No results found for "{query}"</p>
               <p className="text-sm mt-2">Try different keywords or browse our content</p>
             </div>
           ) : (
             <div>
-              <p className="text-sm font-ui mb-6" style={{ color: "#6B7280" }}>
+              <p className="text-sm font-ui mb-6" style={{ color: "var(--ink-muted)" }}>
                 Found {results.length} result{results.length !== 1 ? "s" : ""}
               </p>
 
@@ -161,8 +161,8 @@ export default function SearchPage() {
                     href={getResultLink(result)}
                     className="block p-4 border rounded-lg hover:shadow-md transition-shadow"
                     style={{
-                      borderColor: "#D1C9BB",
-                      backgroundColor: "#F7F5F0",
+                      borderColor: "rgba(244,241,234,0.7)",
+                      backgroundColor: "var(--bone)",
                     }}
                   >
                     <div className="flex items-start gap-4">
@@ -170,14 +170,14 @@ export default function SearchPage() {
                       <div className="flex-1">
                         <h3
                           className="font-display font-bold mb-2"
-                          style={{ color: "#1A1A1A" }}
+                          style={{ color: "var(--ink)" }}
                         >
                           {result.title}
                         </h3>
                         {result.excerpt && (
                           <p
                             className="text-sm line-clamp-2"
-                            style={{ color: "#6B7280" }}
+                            style={{ color: "var(--ink-muted)" }}
                           >
                             {result.excerpt}
                           </p>
@@ -185,7 +185,7 @@ export default function SearchPage() {
                         {result.category && (
                           <p
                             className="text-xs font-ui mt-2 uppercase tracking-wider"
-                            style={{ color: "#B8963E" }}
+                            style={{ color: "var(--gold)" }}
                           >
                             {result.category}
                           </p>

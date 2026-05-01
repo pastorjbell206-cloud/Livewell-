@@ -24,13 +24,13 @@ export default function Pastors() {
         </div>
         <div className="relative container flex items-end" style={{ minHeight: "55vh" }}>
           <div className="max-w-2xl pb-16">
-            <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-4" style={{ color: "#B8963E" }}>
+            <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-4" style={{ color: "var(--gold)" }}>
               Pastors Connection Network
             </div>
-            <h1 className="font-display font-bold mb-4" style={{ color: "#F7F5F0", fontSize: "clamp(2.25rem, 4vw, 3rem)" }}>
+            <h1 className="font-display font-bold mb-4" style={{ color: "var(--bone)", fontSize: "clamp(2.25rem, 4vw, 3rem)" }}>
               You weren't meant to lead alone
             </h1>
-            <p className="font-body text-lg" style={{ color: "#D1C9BB", lineHeight: 1.8 }}>
+            <p className="font-body text-lg" style={{ color: "rgba(244,241,234,0.7)", lineHeight: 1.8 }}>
               Connecting pastors across denominational and background lines around the gospel and kingdom advancement — not around theological tribalism or institutional loyalty.
             </p>
           </div>
@@ -38,14 +38,14 @@ export default function Pastors() {
       </section>
 
       {/* What the Network Is */}
-      <section className="py-24" style={{ backgroundColor: "#F7F5F0" }}>
+      <section className="py-24" style={{ backgroundColor: "var(--bone)" }}>
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <h2 className="font-display font-bold mb-8" style={{ color: "#1A1A1A", fontSize: "clamp(1.75rem, 3vw, 2.25rem)" }}>
+            <h2 className="font-display font-bold mb-8" style={{ color: "var(--ink)", fontSize: "clamp(1.75rem, 3vw, 2.25rem)" }}>
               What the Pastors Connection is
             </h2>
 
-            <div className="font-body text-lg" style={{ color: "#2C3E50", lineHeight: 1.85 }}>
+            <div className="font-body text-lg" style={{ color: "var(--charcoal)", lineHeight: 1.85 }}>
               <p>
                 The Pastors Connection Network exists because too many pastors lead in isolation. They carry the weight of congregations, families, and communities without anyone who understands what that weight actually feels like.
               </p>
@@ -60,11 +60,11 @@ export default function Pastors() {
             <div className="gold-rule" style={{ maxWidth: "120px" }} />
 
             {/* Who It's For */}
-            <h2 className="font-display font-bold mb-8 mt-16" style={{ color: "#1A1A1A", fontSize: "clamp(1.75rem, 3vw, 2.25rem)" }}>
+            <h2 className="font-display font-bold mb-8 mt-16" style={{ color: "var(--ink)", fontSize: "clamp(1.75rem, 3vw, 2.25rem)" }}>
               Who this is for
             </h2>
 
-            <div className="font-body text-lg" style={{ color: "#2C3E50", lineHeight: 1.85 }}>
+            <div className="font-body text-lg" style={{ color: "var(--charcoal)", lineHeight: 1.85 }}>
               <p>
                 If you're a pastor who feels isolated. If you lead in a context where there's no peer community. If you're carrying questions you can't ask in your denomination. If you're wondering whether you're the only one wrestling with these things.
               </p>
@@ -76,32 +76,32 @@ export default function Pastors() {
             <div className="gold-rule" style={{ maxWidth: "120px" }} />
 
             {/* What Happens When You Join */}
-            <h2 className="font-display font-bold mb-8 mt-16" style={{ color: "#1A1A1A", fontSize: "clamp(1.75rem, 3vw, 2.25rem)" }}>
+            <h2 className="font-display font-bold mb-8 mt-16" style={{ color: "var(--ink)", fontSize: "clamp(1.75rem, 3vw, 2.25rem)" }}>
               What happens when you join
             </h2>
 
             <div className="space-y-6 mb-12">
               <div>
-                <h3 className="font-display font-semibold mb-3" style={{ color: "#2C3E50" }}>
+                <h3 className="font-display font-semibold mb-3" style={{ color: "var(--charcoal)" }}>
                   Monthly Peer Calls
                 </h3>
-                <p className="font-body" style={{ color: "#2C3E50", lineHeight: 1.8 }}>
+                <p className="font-body" style={{ color: "var(--charcoal)", lineHeight: 1.8 }}>
                   Connect with other pastors in intimate group settings where real conversations happen. No agenda, no performance — just pastors being honest about the work.
                 </p>
               </div>
               <div>
-                <h3 className="font-display font-semibold mb-3" style={{ color: "#2C3E50" }}>
+                <h3 className="font-display font-semibold mb-3" style={{ color: "var(--charcoal)" }}>
                   Peer Mentorship & Accountability
                 </h3>
-                <p className="font-body" style={{ color: "#2C3E50", lineHeight: 1.8 }}>
+                <p className="font-body" style={{ color: "var(--charcoal)", lineHeight: 1.8 }}>
                   Get paired with other leaders who understand your context and will ask the hard questions. Real mentorship that helps you lead better and live better.
                 </p>
               </div>
               <div>
-                <h3 className="font-display font-semibold mb-3" style={{ color: "#2C3E50" }}>
+                <h3 className="font-display font-semibold mb-3" style={{ color: "var(--charcoal)" }}>
                   Private Community Access
                 </h3>
-                <p className="font-body" style={{ color: "#2C3E50", lineHeight: 1.8 }}>
+                <p className="font-body" style={{ color: "var(--charcoal)", lineHeight: 1.8 }}>
                   Join a private community of pastors where you can ask questions, share struggles, and find resources from leaders who've walked similar paths.
                 </p>
               </div>
@@ -109,14 +109,14 @@ export default function Pastors() {
 
             {/* CTA */}
             <div className="mt-16">
-              <h2 className="font-display font-bold mb-8" style={{ color: "#1A1A1A", fontSize: "clamp(1.75rem, 3vw, 2.25rem)" }}>
+              <h2 className="font-display font-bold mb-8" style={{ color: "var(--ink)", fontSize: "clamp(1.75rem, 3vw, 2.25rem)" }}>
                 Join the network
               </h2>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 {settingQuery.isLoading ? (
                   <div className="flex justify-center py-8">
-                    <Loader2 size={24} className="animate-spin" style={{ color: "#B8963E" }} />
+                    <Loader2 size={24} className="animate-spin" style={{ color: "var(--gold)" }} />
                   </div>
                 ) : settingQuery.data ? (
                   <>
@@ -125,20 +125,20 @@ export default function Pastors() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded font-ui font-medium no-underline transition-colors"
-                      style={{ backgroundColor: "#2D4A3E", color: "#F7F5F0" }}
+                      style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)" }}
                     >
                       <ExternalLink size={18} /> Join the Network
                     </a>
                     <a
                       href="mailto:james@thelivewell.com"
                       className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded font-ui font-medium no-underline transition-colors border"
-                      style={{ borderColor: "#2D4A3E", color: "#2D4A3E", backgroundColor: "transparent" }}
+                      style={{ borderColor: "var(--charcoal)", color: "var(--charcoal)", backgroundColor: "transparent" }}
                     >
                       Email James Directly
                     </a>
                   </>
                 ) : (
-                  <p className="font-body" style={{ color: "#6B7280" }}>
+                  <p className="font-body" style={{ color: "var(--ink-muted)" }}>
                     Network link not configured yet.
                   </p>
                 )}
