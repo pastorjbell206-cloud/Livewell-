@@ -249,3 +249,19 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
   img { max-width: 100%; page-break-inside: avoid; }
   h1, h2, h3 { page-break-after: avoid; }
 }
+
+/*
+  EASY EDITS
+  Change these values in :root at the top of this file to update the whole site.
+
+  --mustard:#D4A017       Accent color (buttons, links, dividers)
+  --bone:#F5F0E6          Page background
+  --charcoal:#1A1A1A      Dark sections (hero, footer)
+  --ink:#14110C           Body text color
+  --F:font family         Heading font (Cormorant Garamond)
+  --B:font family         Body font (Inter)
+  --radius-sm:2px         Button/input corner radius
+  --s-7:6rem              Section padding (mobile)
+  --s-9:12rem             Section padding (desktop)
+  --w-prose:680px         Reading column max width
+*/

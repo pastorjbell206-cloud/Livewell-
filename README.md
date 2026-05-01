@@ -1,62 +1,95 @@
 # LiveWell by James Bell
 
-The writing and resource platform of James C. Bell — pastor, author of 25 books, founder of the Pastors Connection Network. Production site: [livewellbyjamesbell.co](https://www.livewellbyjamesbell.co).
+Connecting the depth of theology to the weight of everyday life. 880+ essays on marriage, parenting, faith, justice, and pastoral ministry.
 
-> American Christianity has domesticated Jesus. This is an attempt to recover what we've lost.
+**Live site:** [livewellbyjamesbell.co](https://www.livewellbyjamesbell.co)
 
-## What this repo is
+---
 
-A React + tRPC application deployed on Vercel that hosts:
+## Step 1 — Verify deployment target
 
-- 880+ essays on faith, pastoral ministry, marriage, justice, and the Christian life
-- A theology positioning quiz
-- Reading paths for pastors, leaders, families, and seekers
-- Resources, kits, and books store
-- Lead magnets and an email list
-- An admin surface for moderation, notifications, and content management
+Before making any changes, confirm Vercel is deploying to the live domain:
 
-## Architecture
+1. Go to [vercel.com/dashboard](https://vercel.com/dashboard)
+2. Find the LiveWell project
+3. Confirm the production domain is `www.livewellbyjamesbell.co`
+4. After merging a PR, wait 1-2 minutes, then hard refresh (`Ctrl+Shift+R`)
 
-- **Client**: React + Vite + Wouter routing + TailwindCSS, in `client/`
-- **Server**: Vercel serverless function in `api/index.ts` with self-contained DB access (mysql2), tRPC routers in `server/`, OAuth, and admin seed endpoints
-- **Database**: MySQL via Drizzle ORM, schema in `drizzle/` and `shared/`
-- **Hosting**: Vercel project `livewell-tn9v`, domain `livewellbyjamesbell.co` (apex 308 → `www.livewellbyjamesbell.co`)
-- **Build**: `pnpm run build` produces `dist/public` for static assets; serverless runtime serves the API
+---
 
-## Local development
+## How to edit copy
 
-```
-pnpm install
-pnpm run dev
-```
+All page content is in `client/src/pages/`. Open the file for the page you want to edit:
 
-Required environment variables (set in Vercel for production, in `.env.local` for dev):
+- **Homepage:** `client/src/pages/Home.tsx`
+- **About:** `client/src/pages/About.tsx`
+- **Marriage:** `client/src/pages/Marriage.tsx`
+- **Writing:** `client/src/pages/Writing.tsx`
+- **Books:** `client/src/pages/Books.tsx`
 
-- `DATABASE_URL` — MySQL connection string
-- `JWT_SECRET` — used by both auth and admin seed endpoints
-- `NODE_ENV`
+Text is inside quote marks. Change the text between the quotes. Do not change the code structure around it.
 
-Optional, for full feature parity (not required to boot):
+---
 
-- `MAILCHIMP_API_KEY`, `MAILCHIMP_AUDIENCE_ID` — email capture
-- `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET` — paid resources and books
-- `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_S3_BUCKET` — file uploads
-- `SESSION_SECRET` — cookie sessions
+## How to change colors
 
-## Deployment
+All brand colors are in one place: `client/src/index.css` at the top in the `:root` block. See the EASY EDITS comment at the bottom of that file.
 
-Push to `main` triggers an automatic Vercel deploy. Branch deploys are previewed on PRs.
+| Variable | What it controls |
+|----------|-----------------|
+| `--mustard` | Accent color (buttons, links, dividers) |
+| `--bone` | Page background |
+| `--charcoal` | Dark sections (hero, footer) |
+| `--ink` | Body text color |
 
-To verify a deploy:
+Change the hex code. The change propagates site-wide.
 
-```
-curl https://www.livewellbyjamesbell.co/api/health
-```
+---
 
-## Repository status
+## How to add content
 
-This repo (`Livewell-`) is the canonical source of truth as of April 2026. The lowercase `livewell` repository was an incomplete migration attempt; relevant improvements have been cherry-picked here and the lowercase repo will be archived.
+1. Log in at `/admin/login`
+2. Click **Writing** in the sidebar, then **New Post**
+3. Fill in title, body (markdown), pillar, click Save
 
-## Voice and editorial standards
+Or use the **Import All Content** button on the admin dashboard.
 
-All content on this site follows a specific editorial voice. See `docs/VOICE.md` (forthcoming) for the full guide. Short version: prophetic and direct, pastoral and warm, intellectually curious, vulnerable. Name the problem, reframe with theological depth, end with costly hope. No platitudes, no therapy-speak, no AI-style padding.
+---
+
+## What to test before publishing
+
+1. Hard refresh the live site after deploy (`Ctrl+Shift+R`)
+2. Homepage hero text is readable (bone on charcoal)
+3. Nav links are readable (dark on bone)
+4. Click every nav link — no 404s
+5. Open an article — body text renders
+6. Mobile layout at 375px — no horizontal scroll
+7. Footer links all work
+8. Tools load (`/tools`, `/tools/verse-finder`, `/tools/prayer-generator`)
+9. Contact form works at `/work-with-james`
+10. Admin login works at `/admin/login`
+11. Dark mode toggle in footer works
+12. Text selection is mustard-highlighted
+
+---
+
+## Tech stack
+
+React 19 + Vite 7 + TypeScript + Wouter + tRPC + Drizzle ORM + MySQL on Vercel.
+
+## Scripts
+
+| Command | What it does |
+|---------|-------------|
+| `pnpm dev` | Start local dev server |
+| `pnpm build` | Production build |
+| `pnpm check` | TypeScript type check |
+| `pnpm test` | Run tests |
+| `pnpm lint` | ESLint |
+| `pnpm db:seed` | Seed content |
+
+## Brand reference
+
+- `CLAUDE.md` — voice, palette, typography, forbidden language
+- `design-system.md` — visual token reference
+- `client/src/index.css` — CSS token source of truth
