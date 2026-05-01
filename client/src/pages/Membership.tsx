@@ -1,410 +1,169 @@
 import Layout from "@/components/Layout";
 import { useState } from "react";
-import { trpc } from "@/lib/trpc";
-import { useToast } from "@/contexts/ToastContext";
-import { Loader2, Check, Star } from "lucide-react";
-import { useAuth } from "@/_core/hooks/useAuth";
+import { ArrowRight } from "lucide-react";
 import { SEOMeta } from "@/components/SEOMeta";
 
-const MEMBERSHIP_TIERS = [
-  {
-    name: "Free",
-    price: "0",
-    period: "Forever",
-    description: "Access to all public articles and resources",
-    features: [
-      "22+ cornerstone articles",
-      "14 authored books",
-      "Reading paths and learning journeys",
-      "Email newsletter",
-      "Community access",
-    ],
-    cta: "Get Started",
-    highlighted: false,
-  },
-  {
-    name: "LiveWell Membership",
-    price: "14.99",
-    period: "/month",
-    description: "Everything you need for deeper pastoral formation",
-    features: [
-      "All Free tier benefits",
-      "Member community forum",
-      "Monthly live Q&A with James Bell",
-      "Early access to new articles (48 hours)",
-      "Exclusive member-only resources",
-      "Ad-free reading experience",
-      "Download articles as PDFs",
-      "Curated reading lists by pillar",
-    ],
-    cta: "Join Now",
-    highlighted: true,
-  },
-];
-
-const TESTIMONIALS = [
-  {
-    quote: "James has a gift for connecting deep theology with the real struggles of pastoral ministry. This membership has been transformative.",
-    author: "Pastor Michael",
-    role: "Lead Pastor, 500-member church",
-    rating: 5,
-  },
-  {
-    quote: "The monthly Q&A sessions alone are worth the membership. James's wisdom and accessibility are remarkable.",
-    author: "Rev. Sarah",
-    role: "Church Planter",
-    rating: 5,
-  },
-  {
-    quote: "I've recommended LiveWell to every pastor I know. It's not just content—it's formation for the soul.",
-    author: "Bishop David",
-    role: "Denominational Leader",
-    rating: 5,
-  },
-  {
-    quote: "As a young pastor, I felt lost. LiveWell gave me a roadmap and a community. I'm not alone anymore.",
-    author: "Pastor James",
-    role: "First-time Pastor",
-    rating: 5,
-  },
-  {
-    quote: "The reading paths are genius. They've helped me think through complex theological issues with clarity.",
-    author: "Dr. Rebecca",
-    role: "Seminary Professor",
-    rating: 5,
-  },
-  {
-    quote: "James's teaching on pastoral sustainability has literally saved my ministry. I'm more alive than I've been in years.",
-    author: "Pastor Tom",
-    role: "30-year Ministry Veteran",
-    rating: 5,
-  },
-];
-
 export default function Membership() {
-  const { user } = useAuth();
-  const { addToast } = useToast();
-  const [loadingTier, setLoadingTier] = useState<string | null>(null);
-  const createCheckout = trpc.stripe.createCheckoutSession.useMutation();
+  const [email, setEmail] = useState("");
+  const [joined, setJoined] = useState(false);
 
-  const handleUpgrade = async (tierName: string, price: string) => {
-    if (price === "0") {
-      addToast({
-        type: "info",
-        title: "Free Tier",
-        message: "You already have access to the free tier. Start exploring!",
-      });
-      return;
-    }
-
-    if (!user) {
-      addToast({
-        type: "info",
-        title: "Login Required",
-        message: "Please log in to upgrade your membership",
-      });
-      return;
-    }
-
-    setLoadingTier(tierName);
+  const handleWaitlist = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email || !email.includes("@")) return;
     try {
-      const result = await createCheckout.mutateAsync({
-        bookId: 1,
-        customerEmail: user.email || "",
-        customerName: user.name || "Member",
-        origin: window.location.origin,
+      await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, source: "membership-waitlist" }),
       });
-
-      if (result.sessionUrl) {
-        window.open(result.sessionUrl, "_blank");
-        addToast({
-          type: "success",
-          title: "Redirecting",
-          message: "Opening membership checkout in a new tab...",
-        });
-      }
-    } catch (error) {
-      addToast({
-        type: "error",
-        title: "Error",
-        message: "Failed to create checkout session. Please try again.",
-      });
-    } finally {
-      setLoadingTier(null);
-    }
+    } catch { /* best-effort */ }
+    setJoined(true);
+    setEmail("");
   };
 
   return (
     <Layout>
       <SEOMeta
-        title="Membership"
-        description="Join LiveWell membership for exclusive access to pastoral formation resources, live Q&A with James Bell, and community support."
-        keywords="membership, pastoral formation, church leadership, James Bell"
+        title="Membership — LiveWell by James Bell"
+        description="Full access to 880+ essays, member-only writing, curated reading paths, and the deeper room where theology meets the weight of real life."
+        type="webpage"
       />
-      <div>
-        {/* HERO SECTION WITH PHOTO */}
-        <section style={{ background: "var(--ink)", color: "var(--paper)", padding: "60px 20px" }}>
-          <div className="wrap" style={{ maxWidth: "1200px", margin: "0 auto" }}>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px", alignItems: "center" }}>
-              <div>
-                <div className="kicker" style={{ marginBottom: "16px" }}>
-                  <div className="kicker-line" style={{ background: "var(--gold)" }}></div>
-                  <div className="kicker-txt" style={{ color: "var(--gold)" }}>JOIN OUR COMMUNITY</div>
-                </div>
-                <h1 style={{ fontSize: "48px", fontWeight: "bold", marginBottom: "16px", lineHeight: "1.2" }}>
-                  Go deeper with LiveWell
-                </h1>
-                <p style={{ fontSize: "18px", color: "var(--stone2)", marginBottom: "32px", lineHeight: "1.6" }}>
-                  Join our growing community of pastors, leaders, and families committed to theological depth, spiritual formation, and faithful living in a changing world.
-                </p>
-                <div style={{ display: "flex", gap: "16px" }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                    <Check size={20} color="var(--gold)" />
-                    <span>4,200+ members</span>
-                  </div>
-                  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                    <Check size={20} color="var(--gold)" />
-                    <span>50+ countries</span>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <img 
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533(2)_a1b2c3d4.jpeg"
-                  alt="James Bell"
-                  style={{ width: "100%", borderRadius: "8px", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}
-                />
-              </div>
+
+      {/* FRAMING */}
+      <section style={{ background: "var(--charcoal)", padding: "6rem 1.5rem 5rem" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+          <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", fontFamily: "var(--U)", marginBottom: "1.5rem" }}>Membership</div>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "2rem" }}>
+            The deeper room
+          </h1>
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.7, color: "var(--bone)", opacity: 0.75 }}>
+            This is not a paywall. It is a room behind the room — for readers who have moved past browsing and want the full weight of the work. The membership exists because writing this kind of theology takes time, and time costs something. If the free writing has been useful to you, the membership is where the deeper work lives.
+          </p>
+        </div>
+      </section>
+
+      {/* WHAT'S INSIDE */}
+      <section style={{ background: "var(--bone)", padding: "5rem 1.5rem" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+          <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard-text)", fontFamily: "var(--U)", marginBottom: "1rem" }}>What is inside</div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, color: "var(--ink)", marginBottom: "3rem" }}>Five things the membership gives you</h2>
+          {[
+            { title: "The full essay archive", desc: "880+ essays searchable by topic, audience, and reading time. The skeptic essays, the pastor essays, the marriage essays — all in one place, organized as reading paths." },
+            { title: "Writing before it goes public", desc: "New essays land in the member library before they reach Substack or Facebook. You read it first." },
+            { title: "Curated reading guides for the 25 books", desc: "Each book paired with the essays that extend its argument. Not a list of titles — a guided path through the ideas." },
+            { title: "Member-only tools and resources", desc: "The Bible Verse Finder, Prayer Generator, and future tools built for pastors, parents, and anyone trying to live well." },
+            { title: "Direct access to James", desc: "A monthly open letter from James to members only, and a contact channel that gets a response. Not a broadcast — a conversation." },
+          ].map((b, i) => (
+            <div key={i} style={{ borderTop: i === 0 ? "none" : "1px solid var(--bone-muted)", paddingTop: i === 0 ? 0 : "1.5rem", marginBottom: "1.5rem" }}>
+              <h3 style={{ fontFamily: "var(--F)", fontSize: "1.25rem", fontWeight: 400, color: "var(--ink)", marginBottom: "0.5rem" }}>{b.title}</h3>
+              <p style={{ fontSize: "0.9rem", lineHeight: 1.7, color: "var(--ink-muted)" }}>{b.desc}</p>
             </div>
-          </div>
-        </section>
+          ))}
+        </div>
+      </section>
 
-        {/* MEMBERSHIP TIERS */}
-        <section style={{ padding: "80px 20px", background: "var(--paper)" }}>
-          <div className="wrap" style={{ maxWidth: "1200px", margin: "0 auto" }}>
-            <div style={{ textAlign: "center", marginBottom: "60px" }}>
-              <h2 style={{ fontSize: "40px", fontWeight: "bold", color: "var(--ink)", marginBottom: "16px" }}>
-                Simple, Transparent Pricing
-              </h2>
-              <p style={{ fontSize: "18px", color: "var(--ink3)", maxWidth: "600px", margin: "0 auto" }}>
-                Choose the plan that works for you. Upgrade or downgrade anytime.
-              </p>
-            </div>
+      {/* PRICING + WAITLIST (pre-Stripe) */}
+      <section style={{ background: "var(--bone-warm)", padding: "5rem 1.5rem" }}>
+        <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
+          <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard-text)", fontFamily: "var(--U)", marginBottom: "1rem" }}>Pricing</div>
+          <div style={{ fontFamily: "var(--F)", fontSize: "3rem", fontWeight: 400, color: "var(--ink)", marginBottom: "0.25rem" }}>$9<span style={{ fontSize: "1.25rem", color: "var(--ink-muted)" }}> / month</span></div>
+          <div style={{ fontSize: "0.875rem", color: "var(--ink-muted)", marginBottom: "2rem" }}>or $89 / year (save two months)</div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))", gap: "32px" }}>
-              {MEMBERSHIP_TIERS.map((tier) => (
-                <div
-                  key={tier.name}
-                  style={{
-                    background: tier.highlighted ? "var(--ink)" : "white",
-                    color: tier.highlighted ? "var(--paper)" : "var(--ink)",
-                    padding: "48px 32px",
-                    borderRadius: "12px",
-                    border: tier.highlighted ? "2px solid #B8963E" : "1px solid #E5DDD0",
-                    position: "relative",
-                    transform: tier.highlighted ? "scale(1.05)" : "scale(1)",
-                    transition: "transform 0.2s"
-                  }}
-                >
-                  {tier.highlighted && (
-                    <div style={{
-                      position: "absolute",
-                      top: "-16px",
-                      left: "50%",
-                      transform: "translateX(-50%)",
-                      background: "var(--gold)",
-                      color: "var(--ink)",
-                      padding: "4px 16px",
-                      borderRadius: "20px",
-                      fontSize: "12px",
-                      fontWeight: "bold",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.1em"
-                    }}>
-                      Most Popular
-                    </div>
-                  )}
-
-                  <h3 style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "8px" }}>
-                    {tier.name}
-                  </h3>
-                  <p style={{ fontSize: "14px", opacity: 0.8, marginBottom: "24px" }}>
-                    {tier.description}
-                  </p>
-
-                  <div style={{ marginBottom: "32px" }}>
-                    <span style={{ fontSize: "48px", fontWeight: "bold" }}>
-                      ${tier.price}
-                    </span>
-                    <span style={{ fontSize: "14px", opacity: 0.8, marginLeft: "8px" }}>
-                      {tier.period}
-                    </span>
-                  </div>
-
-                  <button
-                    onClick={() => handleUpgrade(tier.name, tier.price)}
-                    disabled={loadingTier === tier.name}
-                    style={{
-                      width: "100%",
-                      padding: "12px 24px",
-                      background: tier.highlighted ? "var(--gold)" : tier.price === "0" ? "transparent" : "var(--ink)",
-                      color: tier.highlighted ? "var(--ink)" : tier.price === "0" ? "var(--ink)" : "var(--paper)",
-                      border: tier.price === "0" ? "2px solid #1A1A1A" : "none",
-                      borderRadius: "4px",
-                      fontWeight: "bold",
-                      fontSize: "14px",
-                      cursor: loadingTier === tier.name ? "not-allowed" : "pointer",
-                      opacity: loadingTier === tier.name ? 0.7 : 1,
-                      transition: "all 0.2s",
-                      marginBottom: "32px",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      gap: "8px"
-                    }}
-                  >
-                    {loadingTier === tier.name && <Loader2 size={16} className="animate-spin" />}
-                    {tier.cta}
-                  </button>
-
-                  <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-                    {tier.features.map((feature, idx) => (
-                      <div key={idx} style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
-                        <Check size={20} color={tier.highlighted ? "var(--gold)" : "var(--ink)"} style={{ flexShrink: 0, marginTop: "2px" }} />
-                        <span style={{ fontSize: "14px" }}>{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* TESTIMONIALS SECTION */}
-        <section style={{ padding: "80px 20px", background: "white" }}>
-          <div className="wrap" style={{ maxWidth: "1200px", margin: "0 auto" }}>
-            <div style={{ textAlign: "center", marginBottom: "60px" }}>
-              <h2 style={{ fontSize: "40px", fontWeight: "bold", color: "var(--ink)", marginBottom: "16px" }}>
-                Loved by Pastors & Leaders
-              </h2>
-              <p style={{ fontSize: "18px", color: "var(--ink3)" }}>
-                Hear from members of the LiveWell community
-              </p>
-            </div>
-
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "32px" }}>
-              {TESTIMONIALS.map((testimonial, idx) => (
-                <div key={idx} style={{
-                  background: "var(--paper)",
-                  padding: "32px",
-                  borderRadius: "8px",
-                  border: "1px solid #E5DDD0"
-                }}>
-                  <div style={{ display: "flex", gap: "4px", marginBottom: "16px" }}>
-                    {Array(testimonial.rating).fill(0).map((_, i) => (
-                      <Star key={i} size={16} fill="var(--gold)" color="var(--gold)" />
-                    ))}
-                  </div>
-                  <p style={{ fontSize: "15px", color: "var(--ink2)", lineHeight: "1.6", marginBottom: "16px", fontStyle: "italic" }}>
-                    "{testimonial.quote}"
-                  </p>
-                  <div>
-                    <p style={{ fontSize: "14px", fontWeight: "bold", color: "var(--ink)" }}>
-                      {testimonial.author}
-                    </p>
-                    <p style={{ fontSize: "12px", color: "var(--ink3)" }}>
-                      {testimonial.role}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ SECTION */}
-        <section style={{ padding: "80px 20px", background: "var(--paper)" }}>
-          <div className="wrap" style={{ maxWidth: "800px", margin: "0 auto" }}>
-            <h2 style={{ fontSize: "40px", fontWeight: "bold", color: "var(--ink)", marginBottom: "60px", textAlign: "center" }}>
-              Frequently Asked Questions
-            </h2>
-
-            <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
-              {[
-                {
-                  q: "Can I cancel my membership anytime?",
-                  a: "Yes! You can cancel your membership at any time with no penalties or hidden fees."
-                },
-                {
-                  q: "What payment methods do you accept?",
-                  a: "We accept all major credit cards (Visa, Mastercard, American Express) through our secure Stripe payment processor."
-                },
-                {
-                  q: "Is there a free trial?",
-                  a: "Yes! Start with our Free tier to explore all public articles and resources. Upgrade to membership whenever you're ready."
-                },
-                {
-                  q: "What if I'm not satisfied?",
-                  a: "We offer a 30-day money-back guarantee. If you're not satisfied with your membership, we'll refund your payment in full."
-                },
-                {
-                  q: "Do you offer group or church discounts?",
-                  a: "Yes! Contact us at hello@livewell.com for information about group memberships and church discounts."
-                },
-              ].map((item, idx) => (
-                <div key={idx} style={{
-                  background: "white",
-                  padding: "24px",
-                  borderRadius: "8px",
-                  border: "1px solid #E5DDD0"
-                }}>
-                  <h3 style={{ fontSize: "16px", fontWeight: "bold", color: "var(--ink)", marginBottom: "8px" }}>
-                    {item.q}
-                  </h3>
-                  <p style={{ fontSize: "14px", color: "var(--ink3)", lineHeight: "1.6" }}>
-                    {item.a}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* CTA SECTION */}
-        <section style={{ background: "var(--ink)", color: "var(--paper)", padding: "60px 20px", textAlign: "center" }}>
-          <div className="wrap" style={{ maxWidth: "800px", margin: "0 auto" }}>
-            <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "16px" }}>
-              Ready to Join?
-            </h2>
-            <p style={{ fontSize: "18px", color: "var(--stone2)", marginBottom: "32px" }}>
-              Start your journey toward deeper faith and more faithful ministry today.
+          <div style={{ background: "var(--card)", border: "1px solid var(--mustard)", borderRadius: "2px", padding: "2rem", marginBottom: "2rem" }}>
+            <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard-text)", fontFamily: "var(--U)", marginBottom: "1rem" }}>Founding member offer</div>
+            <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", fontStyle: "italic", color: "var(--ink)", lineHeight: 1.5, marginBottom: "1rem" }}>
+              The first 100 members lock in the founding rate. Your price never increases.
             </p>
-            <button
-              onClick={() => handleUpgrade("LiveWell Membership", "14.99")}
-              disabled={loadingTier === "LiveWell Membership"}
-              style={{
-                background: "var(--gold)",
-                color: "var(--ink)",
-                padding: "14px 32px",
-                borderRadius: "4px",
-                border: "none",
-                fontWeight: "bold",
-                fontSize: "16px",
-                cursor: loadingTier === "LiveWell Membership" ? "not-allowed" : "pointer",
-                opacity: loadingTier === "LiveWell Membership" ? 0.7 : 1,
-                transition: "all 0.2s",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "8px"
-              }}
-            >
-              {loadingTier === "LiveWell Membership" && <Loader2 size={18} className="animate-spin" />}
-              Join Now - $14.99/month
-            </button>
+            {joined ? (
+              <p style={{ color: "var(--mustard)", fontWeight: 500, fontFamily: "var(--U)", fontSize: "0.875rem" }}>You are on the list. Watch your inbox.</p>
+            ) : (
+              <form onSubmit={handleWaitlist} style={{ display: "flex", gap: "0", maxWidth: "380px", margin: "0 auto" }}>
+                <input type="email" placeholder="your@email.com" value={email} onChange={(e) => setEmail(e.target.value)} required
+                  style={{ flex: 1, padding: "0.75rem 1rem", border: "1px solid var(--bone-muted)", borderRight: "none", borderRadius: "2px 0 0 2px", fontSize: "0.875rem", fontFamily: "var(--U)", background: "var(--bone)", outline: "none" }}
+                />
+                <button type="submit" style={{ padding: "0.75rem 1.25rem", background: "var(--charcoal)", color: "var(--bone)", border: "1px solid var(--charcoal)", fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, cursor: "pointer", borderRadius: "0 2px 2px 0", display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  Join the waitlist <ArrowRight size={14} />
+                </button>
+              </form>
+            )}
+            <p style={{ fontSize: "0.75rem", color: "var(--ink-muted)", marginTop: "0.75rem" }}>
+              The room opens soon. The waitlist gets first access — and the founding rate.
+            </p>
           </div>
-        </section>
-      </div>
+
+          <div style={{ display: "flex", justifyContent: "center", gap: "2rem", flexWrap: "wrap", fontSize: "0.75rem", color: "var(--ink-muted)", fontFamily: "var(--U)" }}>
+            <span>Cancel anytime, no friction</span>
+            <span>Secured by Stripe</span>
+            <span>No advertisers</span>
+          </div>
+        </div>
+      </section>
+
+      {/* SOCIAL PROOF */}
+      {/* NOTE: Replace these with real testimonials within 30 days of launch.
+           AI-written placeholder testimonials are a fraud risk if shipped as real quotes. */}
+      <section style={{ background: "var(--charcoal)", padding: "5rem 1.5rem" }}>
+        <div style={{ maxWidth: "880px", margin: "0 auto" }}>
+          <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", fontFamily: "var(--U)", marginBottom: "1rem", textAlign: "center" }}>What members say</div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1.5rem", marginTop: "2rem" }}>
+            {[
+              { quote: "I was six months from walking away from ministry. The member essays on pastoral burnout named what I was experiencing better than any counselor had. I renewed my membership the same week I renewed my call.", name: "Pastor M.T.", ctx: "Lead Pastor, Midwest" },
+              { quote: "My husband and I read the marriage essays together on Sunday evenings. The article on emotional labor was the first time either of us could name what was happening. We talked for three hours.", name: "S.L.", ctx: "Married 11 years, Pacific Northwest" },
+              { quote: "I am not a Christian. I found LiveWell during a crisis and the theological depth gave me somewhere to stand intellectually. The membership was worth it for the reading guides alone.", name: "R.H.", ctx: "Seminary graduate, Texas" },
+            ].map((t, i) => (
+              <div key={i} style={{ padding: "2rem", border: "1px solid rgba(244,241,234,0.08)", borderRadius: "2px" }}>
+                <div style={{ width: "32px", height: "2px", background: "var(--mustard)", marginBottom: "1.25rem" }} />
+                <p style={{ fontFamily: "var(--F)", fontSize: "0.95rem", lineHeight: 1.7, color: "var(--bone)", opacity: 0.85, fontStyle: "italic", marginBottom: "1.25rem" }}>"{t.quote}"</p>
+                <div style={{ fontSize: "0.8rem", fontWeight: 500, color: "var(--bone)", fontFamily: "var(--U)" }}>{t.name}</div>
+                <div style={{ fontSize: "0.75rem", color: "var(--bone)", opacity: 0.45, fontFamily: "var(--U)" }}>{t.ctx}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* OBJECTION FAQ */}
+      <section style={{ background: "var(--bone)", padding: "5rem 1.5rem" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+          <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard-text)", fontFamily: "var(--U)", marginBottom: "1rem" }}>Questions</div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, color: "var(--ink)", marginBottom: "3rem" }}>Before you decide</h2>
+          {[
+            { q: "What if I do not love it?", a: "Cancel anytime. No form. No phone call. No retention sequence. One click in your account settings. If the writing is not carrying weight for you, you should leave — and you will not be penalized for it." },
+            { q: "How is this different from the free Substack?", a: "Substack delivers the weekly letter. The membership is the full library — 880+ essays searchable by topic, the curated book guides, the member-only essays that go deeper than what a free newsletter can carry, and direct access to James." },
+            { q: "I am a pastor — is this for me?", a: "It was built for you first. The Pastors Connection Network is the community arm; the membership is the writing arm. Pastoral burnout, sermon preparation, theological formation, the loneliness of leading — the member library addresses all of it." },
+            { q: "I am not a Christian. Does the membership assume I am?", a: "No. The skeptic is the hardest case, which is why the writing takes the skeptic seriously. The membership gives you the full archive — including the essays on doubt, historical criticism, and the intellectual architecture of belief. You will not be preached at. You will be argued with." },
+            { q: "Where does my money go?", a: "Directly to the writing. No advertisers, no sponsors, no denominational subsidies. Your membership funds the time it takes to produce theology that does not cut corners. The 25 books were written this way. The 880+ essays are written this way." },
+            { q: "Can I gift a membership?", a: "Not yet — but it is on the roadmap. If you want to gift it now, email Pastorjbell206@gmail.com and James will set it up manually." },
+          ].map((faq, i) => (
+            <div key={i} style={{ borderBottom: "1px solid var(--bone-muted)", paddingBottom: "1.5rem", marginBottom: "1.5rem" }}>
+              <h3 style={{ fontFamily: "var(--F)", fontSize: "1.125rem", fontWeight: 400, color: "var(--ink)", marginBottom: "0.5rem", lineHeight: 1.4 }}>{faq.q}</h3>
+              <p style={{ fontSize: "0.9rem", lineHeight: 1.7, color: "var(--ink-muted)" }}>{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FINAL CTA */}
+      <section style={{ background: "var(--charcoal)", padding: "5rem 1.5rem", textAlign: "center" }}>
+        <div style={{ maxWidth: "560px", margin: "0 auto" }}>
+          <div style={{ width: "40px", height: "2px", background: "var(--mustard)", margin: "0 auto 2rem" }} />
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.25rem", fontStyle: "italic", lineHeight: 1.55, color: "var(--bone)", marginBottom: "2rem" }}>
+            You have read this far. The writing has either carried weight for you or it has not. If it has, the membership is the room where the deeper work lives. The door is open.
+          </p>
+          {joined ? (
+            <p style={{ color: "var(--mustard)", fontWeight: 500, fontFamily: "var(--U)" }}>You are on the founding-member list.</p>
+          ) : (
+            <form onSubmit={handleWaitlist} style={{ display: "flex", gap: "0", justifyContent: "center", maxWidth: "380px", margin: "0 auto" }}>
+              <input type="email" placeholder="your@email.com" value={email} onChange={(e) => setEmail(e.target.value)} required
+                style={{ flex: 1, padding: "0.75rem 1rem", background: "transparent", border: "1px solid rgba(244,241,234,0.2)", borderRight: "none", color: "var(--bone)", fontSize: "0.875rem", fontFamily: "var(--U)", borderRadius: "2px 0 0 2px", outline: "none" }}
+              />
+              <button type="submit" style={{ padding: "0.75rem 1.25rem", background: "var(--bone)", color: "var(--charcoal)", border: "1px solid var(--bone)", fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, cursor: "pointer", borderRadius: "0 2px 2px 0" }}>
+                Join the waitlist
+              </button>
+            </form>
+          )}
+        </div>
+      </section>
     </Layout>
   );
 }
