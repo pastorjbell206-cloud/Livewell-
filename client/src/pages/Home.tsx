@@ -63,10 +63,10 @@ export default function Home() {
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.75rem, 3vw, 2.25rem)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "3rem" }}>Four doors. Same room.</h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1.5rem" }}>
             {[
-              { label: "I am skeptical of all of this", desc: "You have been handed answers that insult your intelligence. Start with essays that name the problem honestly.", href: "/doubt" },
-              { label: "I am a Christian who wants depth", desc: "Slogans stopped working. You need theology that holds the weight of a real Tuesday afternoon.", href: "/writing" },
-              { label: "I am a pastor", desc: "You preach every Sunday and nobody preaches to you. The Pastors Connection Network was built because that silence is killing leaders.", href: "/pastors" },
-              { label: "I am trying to live well", desc: "Marriage. Parenting. Vocation. You need someone who writes about faith the way you actually live it.", href: "/marriage" },
+              { label: "I have heard every argument and I am tired of bad ones", desc: "You are not hostile to faith. You are hostile to the version of it being sold. Start with essays that name the problem without performing piety at you.", href: "/doubt" },
+              { label: "I am past slogans and I want the architecture", desc: "The answers you were given stopped working. You need theology that holds the weight of a real week — not a Sunday morning.", href: "/writing" },
+              { label: "I preach every Sunday and nobody preaches to me", desc: "The loneliness of ministry is a crisis nobody says out loud. The Pastors Connection Network was built because that silence is killing leaders.", href: "/pastors" },
+              { label: "I am trying to hold my life together and the available help is thin", desc: "Marriage. Parenting. Vocation. You need someone who writes about faith the way you actually live it — not the way it looks in a sermon illustration.", href: "/marriage" },
             ].map((route, i) => (
               <Link key={i} href={route.href} style={{ textDecoration: "none" }}>
                 <div style={{ background: "var(--card)", border: "1px solid var(--bone-muted)", padding: "2rem", borderRadius: "2px", height: "100%", display: "flex", flexDirection: "column", cursor: "pointer", transition: "all 240ms cubic-bezier(0.22,1,0.36,1)" }}
@@ -80,6 +80,28 @@ export default function Home() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ═══ THE PROBLEM ═══ */}
+      <section style={{ background: "var(--bone-warm)", padding: "6rem 1.5rem" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+          <div style={{ width: "40px", height: "2px", background: "var(--mustard)", marginBottom: "2rem" }} />
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.25rem", lineHeight: 1.65, color: "var(--ink)", marginBottom: "1.5rem" }}>
+            Something broke in the way we talk about faith. Not all at once. Slowly — the way a marriage drifts before anyone notices the silence. The words kept coming from pulpits and platforms, but the weight behind them thinned. Slogans replaced arguments. Positivity replaced honesty. The people who needed the most from the church started getting the least.
+          </p>
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.25rem", lineHeight: 1.65, color: "var(--ink)", marginBottom: "1.5rem" }}>
+            This is not about the death of Christianity. It is about the failure of its public voice to carry the weight that actual human life demands of it. The pastor burning out in silence while preaching resilience. The couple who kept the vows but lost the thread. The skeptic who is not hostile to faith but hostile to the version of it being sold. I know this room. I have sat in every seat in it.
+          </p>
+        </div>
+      </section>
+
+      {/* ═══ THE COST ═══ */}
+      <section style={{ background: "var(--bone)", padding: "4rem 1.5rem" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.7, color: "var(--ink)", marginBottom: "1.5rem" }}>
+            The cost of that failure is not abstract. It is a pastor who stops saying what he actually believes because the board prefers something safer. It is a woman who stops bringing her hardest questions to church because the last time she did, someone handed her a verse and changed the subject. It is a man who reads theology alone because every public conversation about God feels like a campaign rally with a hymn attached. The gap between what is being said and what people actually need is not shrinking. It is widening. And the people inside it are not leaving the faith. They are leaving the room where faith is discussed — because that room stopped telling the truth.
+          </p>
         </div>
       </section>
 
