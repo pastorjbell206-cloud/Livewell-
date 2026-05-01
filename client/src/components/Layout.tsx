@@ -5,8 +5,9 @@ import Footer from "./Footer";
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+      <a href="#main" className="skip-link">Skip to content</a>
       <MinimalNav />
-      <main style={{ flex: 1 }}>
+      <main id="main" style={{ flex: 1 }}>
         {children}
       </main>
       <Footer />
