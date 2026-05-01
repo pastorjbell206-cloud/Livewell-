@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Column 1 - Brand */}
           <div>
             <div style={{ fontSize: "22px", fontWeight: "bold", color: "var(--gold)", marginBottom: "12px", fontFamily: "Georgia, serif" }}>LiveWell</div>
-            <p style={{ fontSize: "13px", color: "var(--stone2)", lineHeight: "1.7", marginBottom: "16px" }}>Theology that carries the weight of everyday life.</p>
+            <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.7", marginBottom: "16px" }}>Theology that carries the weight of everyday life.</p>
             <div style={{ display: "flex", gap: "12px" }}>
               <a href="https://substack.com/@jamesbell333289" target="_blank" rel="noopener noreferrer" style={{ color: "var(--gold)", fontSize: "12px", textDecoration: "none", fontWeight: "600" }}>Substack →</a>
             </div>
@@ -21,9 +21,9 @@ export default function Footer() {
           <div>
             <h3 style={{ fontSize: "13px", fontWeight: "bold", marginBottom: "16px", color: "#ffffff", textTransform: "uppercase", letterSpacing: "1px" }}>Marriage & Family</h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <Link href="/marriage" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Marriage</Link>
-              <Link href="/parenting" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Parenting</Link>
-              <Link href="/writing?topic=devotionals" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Family Devotionals</Link>
+              <Link href="/marriage" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Marriage</Link>
+              <Link href="/parenting" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Parenting</Link>
+              <Link href="/writing?topic=devotionals" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Family Devotionals</Link>
             </div>
           </div>
 
@@ -31,10 +31,10 @@ export default function Footer() {
           <div>
             <h3 style={{ fontSize: "13px", fontWeight: "bold", marginBottom: "16px", color: "#ffffff", textTransform: "uppercase", letterSpacing: "1px" }}>Faith & Theology</h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <Link href="/doubt" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Doubt & Questions</Link>
-              <Link href="/writing?topic=theology" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Theological Depth</Link>
-              <Link href="/writing?topic=justice" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Justice & Culture</Link>
-              <Link href="/writing?topic=devotionals" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Devotionals</Link>
+              <Link href="/doubt" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Doubt & Questions</Link>
+              <Link href="/writing?topic=theology" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Theological Depth</Link>
+              <Link href="/writing?topic=justice" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Justice & Culture</Link>
+              <Link href="/writing?topic=devotionals" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Devotionals</Link>
             </div>
           </div>
 
@@ -42,13 +42,13 @@ export default function Footer() {
           <div>
             <h3 style={{ fontSize: "13px", fontWeight: "bold", marginBottom: "16px", color: "#ffffff", textTransform: "uppercase", letterSpacing: "1px" }}>Resources</h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <Link href="/books" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Books</Link>
-              <Link href="/reading-paths" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Reading Paths</Link>
-              <Link href="/tools" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Ministry Tools</Link>
-              <Link href="/tools/verse-finder" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Bible Verse Finder</Link>
-              <Link href="/tools/prayer-generator" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Prayer Generator</Link>
-              <Link href="/quiz" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Theology Quiz</Link>
-              <Link href="/work-with-james" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Work With James</Link>
+              <Link href="/books" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Books</Link>
+              <Link href="/reading-paths" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Reading Paths</Link>
+              <Link href="/tools" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Ministry Tools</Link>
+              <Link href="/tools/verse-finder" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Bible Verse Finder</Link>
+              <Link href="/tools/prayer-generator" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Prayer Generator</Link>
+              <Link href="/quiz" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Theology Quiz</Link>
+              <Link href="/work-with-james" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Work With James</Link>
             </div>
           </div>
 
@@ -56,10 +56,10 @@ export default function Footer() {
           <div>
             <h3 style={{ fontSize: "13px", fontWeight: "bold", marginBottom: "16px", color: "#ffffff", textTransform: "uppercase", letterSpacing: "1px" }}>For Pastors</h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <Link href="/writing?topic=pastoral-ministry" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Pastoral Ministry</Link>
-              <Link href="/pastors" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Pastors Connection Network</Link>
-              <Link href="/for-leaders" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Church Leadership</Link>
-              <Link href="/resources" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Sermon Resources</Link>
+              <Link href="/writing?topic=pastoral-ministry" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Pastoral Ministry</Link>
+              <Link href="/pastors" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Pastors Connection Network</Link>
+              <Link href="/for-leaders" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Church Leadership</Link>
+              <Link href="/resources" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Sermon Resources</Link>
             </div>
           </div>
 
@@ -67,23 +67,23 @@ export default function Footer() {
           <div>
             <h3 style={{ fontSize: "13px", fontWeight: "bold", marginBottom: "16px", color: "#ffffff", textTransform: "uppercase", letterSpacing: "1px" }}>Connect</h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <Link href="/about" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>About James Bell</Link>
-              <Link href="/membership" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Membership</Link>
-              <a href="https://pastorsconnectionnetwork.com" target="_blank" rel="noopener noreferrer" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Pastors Network</a>
-              <a href="https://substack.com/@jamesbell333289" target="_blank" rel="noopener noreferrer" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Substack Newsletter</a>
-              <a href="mailto:contact@livewellbyjamesbell.com" style={{ color: "var(--stone2)", textDecoration: "none", fontSize: "13px" }}>Contact</a>
+              <Link href="/about" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>About James Bell</Link>
+              <Link href="/membership" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Membership</Link>
+              <a href="https://pastorsconnectionnetwork.com" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Pastors Network</a>
+              <a href="https://substack.com/@jamesbell333289" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Substack Newsletter</a>
+              <a href="mailto:contact@livewellbyjamesbell.com" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Contact</a>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div style={{ borderTop: "1px solid #D4A017", paddingTop: "20px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", fontSize: "12px", color: "var(--stone2)" }}>
+        <div style={{ borderTop: "1px solid #D4A017", paddingTop: "20px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", fontSize: "12px", color: "rgba(255,255,255,0.75)" }}>
           <span>&copy; 2026 LiveWell by James Bell. All rights reserved.</span>
           <div style={{ display: "flex", gap: "16px" }}>
-            <a href="/privacy" style={{ color: "var(--stone2)", textDecoration: "none" }}>Privacy Policy</a>
-            <a href="/terms" style={{ color: "var(--stone2)", textDecoration: "none" }}>Terms of Service</a>
+            <a href="/privacy" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none" }}>Privacy Policy</a>
+            <a href="/terms" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none" }}>Terms of Service</a>
             {toggleTheme && (
-              <button onClick={toggleTheme} style={{ color: "var(--stone2)", display: "flex", alignItems: "center", gap: "4px", fontSize: "12px" }} title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}>
+              <button onClick={toggleTheme} style={{ color: "rgba(255,255,255,0.75)", display: "flex", alignItems: "center", gap: "4px", fontSize: "12px" }} title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}>
                 {theme === "dark" ? <Sun size={14} /> : <Moon size={14} />}
                 {theme === "dark" ? "Light" : "Dark"}
               </button>

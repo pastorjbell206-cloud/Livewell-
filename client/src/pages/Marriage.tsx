@@ -90,7 +90,7 @@ export default function Marriage() {
           <h1 style={{ fontSize: "clamp(36px, 5vw, 56px)", fontWeight: "bold", lineHeight: "1.2", marginBottom: "24px", fontFamily: "Georgia, serif" }}>
             When Your Marriage Needs More Than Advice
           </h1>
-          <p style={{ fontSize: "18px", lineHeight: "1.8", marginBottom: "32px", color: "var(--stone2)" }}>
+          <p style={{ fontSize: "18px", lineHeight: "1.8", marginBottom: "32px", color: "rgba(255,255,255,0.75)" }}>
             Covenant theology applied to the actual experience of marriage — the drift, the conflict, the repair, and the costly love that holds.
           </p>
           <Link href="/quiz" style={{ textDecoration: "none" }}>
@@ -160,7 +160,7 @@ export default function Marriage() {
           <h2 style={{ fontSize: "32px", fontWeight: "bold", marginBottom: "16px", fontFamily: "Georgia, serif" }}>
             Marriage insights for your inbox.
           </h2>
-          <p style={{ fontSize: "14px", lineHeight: "1.8", marginBottom: "32px", color: "var(--stone2)" }}>
+          <p style={{ fontSize: "14px", lineHeight: "1.8", marginBottom: "32px", color: "rgba(255,255,255,0.75)" }}>
             Essays, devotionals, and conversation starters delivered twice a week. For couples ready to go deeper.
           </p>
           {emailSubmitted ? (
