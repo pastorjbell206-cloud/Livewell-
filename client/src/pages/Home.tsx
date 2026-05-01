@@ -82,7 +82,7 @@ export default function Home() {
         <div style={{ maxWidth: "1180px", margin: "0 auto", display: "flex", justifyContent: "center", alignItems: "center", gap: "0", flexWrap: "wrap", fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink-muted)" }}>
           {["25 books published", "Founder, Pastors Connection Network", "Lead Pastor, First Baptist Church of Fenton"].map((item, i) => (
             <span key={i} style={{ padding: "0.5rem 1.25rem" }}>
-              {i > 0 && <span style={{ color: "var(--bone-muted)", marginRight: "1.25rem" }}>&middot;</span>}
+              {i > 0 && <span style={{ color: "var(--ink-muted)", marginRight: "1.25rem" }}>&middot;</span>}
               {item}
             </span>
           ))}
@@ -106,16 +106,16 @@ export default function Home() {
                   transition: "all 240ms cubic-bezier(0.22,1,0.36,1)", cursor: "pointer", height: "100%",
                   display: "flex", flexDirection: "column",
                 }}
-                  onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.4)"; }}
+                  onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.08)"; }}
                   onMouseLeave={(e) => { e.currentTarget.style.transform = "none"; e.currentTarget.style.boxShadow = "none"; }}
                 >
                   <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "0.75rem" }}>
                     {article.pillar || article.topic || "Essay"}
                   </div>
-                  <h3 style={{ fontFamily: "var(--F)", fontSize: "1.375rem", fontWeight: 400, color: "var(--bone)", lineHeight: 1.3, marginBottom: "0.75rem", flex: 1 }}>
+                  <h3 style={{ fontFamily: "var(--F)", fontSize: "1.375rem", fontWeight: 400, color: "var(--ink)", lineHeight: 1.3, marginBottom: "0.75rem", flex: 1 }}>
                     {article.title}
                   </h3>
-                  <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", color: "var(--bone-muted)" }}>
+                  <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", color: "var(--ink-muted)" }}>
                     {article.readTime || "5 min read"}
                   </div>
                 </article>
