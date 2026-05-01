@@ -121,13 +121,12 @@ export default function Writing() {
   return (
     <>
       <SEOMeta
-        title="Writing"
-        description="Essays and articles on faith, theology, culture, and Christian living by James Bell"
-        keywords="essays, articles, theology, faith, Christian life, culture"
+        title="Writing on Theology, Doubt, and the Weight of Everyday Life"
+        description="880+ essays for the skeptic tired of bad arguments, the Christian past slogans, the pastor burning out in silence, and anyone trying to live well. By James Bell."
         structuredData={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          name: "Essays and Articles by James Bell",
+          name: "Writing by James Bell",
           description: "880+ essays on faith, theology, marriage, justice, and pastoral ministry.",
           url: "https://www.livewellbyjamesbell.co/writing",
         }}
@@ -142,10 +141,10 @@ export default function Writing() {
                 <div className="kicker-txt">ESSAYS & ARTICLES</div>
               </div>
               <h1 className="hero-h">
-                Writing by James Bell
+                Writing
               </h1>
               <p className="hero-sub">
-                {filteredPosts.length}+ essays exploring theology, justice, pastoral ministry, marriage, parenting, finances, and the Christian life. Find articles by topic, format, and audience.
+                {filteredPosts.length}+ essays. Theology that carries weight, not slogans that crumble. Find what you need by topic, audience, or reading time.
               </p>
             </div>
           </div>
@@ -509,8 +508,11 @@ export default function Writing() {
               </div>
             ) : (
               <div style={{ textAlign: "center", paddingTop: "60px", paddingBottom: "60px" }}>
-                <p style={{ fontSize: "17px", color: "var(--ink3)", marginBottom: "24px" }}>
-                  No articles match your filters.
+                <p style={{ fontFamily: "var(--F)", fontSize: "1.25rem", fontStyle: "italic", color: "var(--ink)", marginBottom: "8px" }}>
+                  Nothing here yet.
+                </p>
+                <p style={{ fontSize: "0.875rem", color: "var(--ink-muted)", marginBottom: "24px" }}>
+                  But it is on the list. Clear the filters or subscribe to the writing — you will be first to know when it lands.
                 </p>
                 <button
                   onClick={clearFilters}
