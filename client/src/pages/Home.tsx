@@ -9,20 +9,8 @@ import MinimalNav from "@/components/MinimalNav";
 export default function Home() {
   const [emailInput, setEmailInput] = useState("");
   const [emailSubmitted, setEmailSubmitted] = useState(false);
-  const [activeTab, setActiveTab] = useState("all");
   const { data: articles } = trpc.posts.listPublished.useQuery();
-
-  const filteredArticles = articles?.filter((a: any) => {
-    if (activeTab === "all") return true;
-    const pillar = (a.pillar || "").toLowerCase();
-    const topic = (a.topic || "").toLowerCase();
-    if (activeTab === "marriage") return pillar.includes("life") || topic.includes("marriage") || topic.includes("family");
-    if (activeTab === "parenting") return topic.includes("parent") || topic.includes("family");
-    if (activeTab === "theology") return pillar.includes("theolog") || topic.includes("theolog");
-    if (activeTab === "justice") return pillar.includes("justice") || topic.includes("justice");
-    if (activeTab === "pastoral") return pillar.includes("leadership") || topic.includes("pastor") || topic.includes("leadership");
-    return true;
-  })?.slice(0, 9) || [];
+  const recentArticles = articles?.slice(0, 3) || [];
 
   const handleEmailSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -36,201 +24,214 @@ export default function Home() {
     name: "James Bell", url: "https://livewellbyjamesbell.co",
     jobTitle: "Lead Pastor, Author",
     description: "Lead Teaching Pastor at First Baptist Church of Fenton, founder of the Pastors Connection Network, and author of 25 books.",
-    sameAs: ["https://pastorsconnectionnetwork.com", "https://substack.com/@jamesbell333289", "https://www.facebook.com/james.bell.609252"],
-  };
-  const websiteSchema = {
-    "@context": "https://schema.org", "@type": "WebSite",
-    name: "LiveWell by James Bell", url: "https://livewellbyjamesbell.co",
-    description: "Theology that carries the weight of everyday life. 880+ essays on marriage, parenting, faith, justice, and pastoral ministry.",
-    potentialAction: { "@type": "SearchAction", target: "https://livewellbyjamesbell.co/writing?q={search_term_string}", "query-input": "required name=search_term_string" },
+    sameAs: ["https://pastorsconnectionnetwork.com", "https://www.facebook.com/james.bell.609252"],
   };
 
   return (
-    <div style={{ background: "var(--paper)" }}>
+    <div>
       <SEOMeta
         title="LiveWell by James Bell — Theology for Marriage, Family, Faith & Pastoral Ministry"
-        description="Theology that carries the weight of everyday life. 880+ essays on marriage, parenting, faith crisis, justice, and pastoral ministry. By James Bell, author of 25 books."
+        description="Connecting the depth of theology to the weight of everyday life. 880+ essays on marriage, parenting, faith, justice, and pastoral ministry."
         url="https://livewellbyjamesbell.co"
         type="website"
-        structuredData={websiteSchema}
+        structuredData={personSchema}
       />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
       <MinimalNav />
 
-      {/* ───── HERO: Problem + Agitation ───── */}
-      <section style={{ padding: "96px 20px 80px" }}>
-        <div style={{ maxWidth: "780px", margin: "0 auto" }}>
-          <div style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--goldlt)", fontFamily: "var(--U)", marginBottom: "28px" }}>
-            LIVE WELL BY JAMES BELL
+      {/* ═══ HERO ═══ */}
+      <section style={{ background: "var(--charcoal)", minHeight: "calc(100vh - 64px)", display: "flex", alignItems: "center", padding: "6rem 1.5rem 8rem" }}>
+        <div style={{ maxWidth: "880px", margin: "0 auto" }}>
+          <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "2rem" }}>
+            James Bell — Pastor, Author, Writer
           </div>
-          <h1 style={{ fontSize: "clamp(36px, 5.5vw, 60px)", fontWeight: 300, lineHeight: 1.08, letterSpacing: "-0.025em", color: "var(--ink)", fontFamily: "var(--F)", marginBottom: "28px" }}>
-            Your faith deserves more than platitudes. Your marriage deserves more than tips. <em style={{ fontWeight: 600, fontStyle: "italic" }}>Start here.</em>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(3rem, 8vw, 7rem)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "2rem" }}>
+            Connecting the depth of theology to the weight of <em style={{ fontStyle: "italic" }}>everyday life</em>
           </h1>
-          <div style={{ width: "48px", height: "2px", background: "var(--gold)", marginBottom: "28px" }} />
-          <p style={{ fontSize: "18px", lineHeight: 1.75, color: "var(--ink3)", maxWidth: "580px", marginBottom: "40px", fontFamily: "var(--F)" }}>
-            880+ essays on the things that actually keep you up at night — marriage under pressure, kids who are watching, faith that has more questions than it used to, and a calling that costs more than anyone told you it would.
+          <p style={{ fontSize: "1.125rem", lineHeight: 1.7, color: "var(--bone)", opacity: 0.7, maxWidth: "580px", marginBottom: "3rem" }}>
+            880+ essays on the things that keep you up at night — marriage under pressure, faith with more questions than answers, and a calling that costs more than anyone told you.
           </p>
-          <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
             <Link href="/writing" style={{ textDecoration: "none" }}>
-              <button style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "14px 28px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", letterSpacing: "0.04em", borderRadius: "6px", cursor: "pointer" }}>
-                Start Reading
+              <button style={{
+                background: "var(--bone)", color: "var(--charcoal)",
+                border: "none", padding: "1rem 2.5rem",
+                fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, letterSpacing: "0.02em",
+                borderRadius: "2px", cursor: "pointer",
+                transition: "all 240ms cubic-bezier(0.22,1,0.36,1)",
+              }}>
+                Read the Writing
               </button>
             </Link>
-            <Link href="/start" style={{ textDecoration: "none" }}>
-              <button style={{ background: "transparent", color: "var(--ink)", border: "1px solid var(--line)", padding: "14px 28px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", letterSpacing: "0.04em", borderRadius: "6px", cursor: "pointer" }}>
-                Find Your Path
+            <Link href="/membership" style={{ textDecoration: "none" }}>
+              <button style={{
+                background: "transparent", color: "var(--bone)",
+                border: "1px solid var(--bone)", padding: "1rem 2.5rem",
+                fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, letterSpacing: "0.02em",
+                borderRadius: "2px", cursor: "pointer",
+                transition: "all 240ms cubic-bezier(0.22,1,0.36,1)",
+              }}>
+                Become a Member
               </button>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* ───── TRUST STRIP ───── */}
-      <section style={{ borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)", padding: "32px 20px" }}>
-        <div style={{ maxWidth: "900px", margin: "0 auto", display: "flex", justifyContent: "center", gap: "48px", flexWrap: "wrap" }}>
-          {[
-            { n: "880+", l: "Essays" },
-            { n: "25", l: "Books Published" },
-            { n: "15+", l: "Years in Ministry" },
-            { n: "Free", l: "to Start" },
-          ].map((s, i) => (
-            <div key={i} style={{ textAlign: "center" }}>
-              <div style={{ fontSize: "28px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--F)", lineHeight: 1 }}>{s.n}</div>
-              <div style={{ fontSize: "11px", color: "var(--ink3)", letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "var(--U)", marginTop: "4px" }}>{s.l}</div>
-            </div>
+      {/* ═══ TRUST STRIP ═══ */}
+      <section style={{ background: "var(--bone)", padding: "1.5rem" }}>
+        <div style={{ maxWidth: "1180px", margin: "0 auto", display: "flex", justifyContent: "center", alignItems: "center", gap: "0", flexWrap: "wrap", fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink-muted)" }}>
+          {["25 books published", "Founder, Pastors Connection Network", "Lead Pastor, First Baptist Church of Fenton"].map((item, i) => (
+            <span key={i} style={{ padding: "0.5rem 1.25rem" }}>
+              {i > 0 && <span style={{ color: "var(--bone-muted)", marginRight: "1.25rem" }}>&middot;</span>}
+              {item}
+            </span>
           ))}
         </div>
       </section>
 
-      {/* ───── HOW IT WORKS (3 steps) ───── */}
-      <section style={{ padding: "80px 20px" }}>
-        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <div style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--goldlt)", fontFamily: "var(--U)", marginBottom: "16px" }}>HOW IT WORKS</div>
-          <h2 style={{ fontSize: "32px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--F)", marginBottom: "48px", lineHeight: 1.15 }}>Three ways in. No prerequisites.</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "32px" }}>
-            {[
-              { step: "01", title: "Pick what you're carrying", desc: "Marriage. Parenting. Doubt. Pastoral burnout. Choose the topic that's weighing on you right now.", href: "/start" },
-              { step: "02", title: "Read something that holds weight", desc: "Every essay is written by a working pastor with 15 years of ministry, five kids, and no patience for shallow theology.", href: "/writing" },
-              { step: "03", title: "Use a tool that helps", desc: "Bible verse finder, prayer generator, theology quiz. Built for the moments when you need something practical, not another sermon.", href: "/tools" },
-            ].map((item) => (
-              <Link key={item.step} href={item.href} style={{ textDecoration: "none" }}>
-                <div style={{ padding: "32px", background: "var(--card)", border: "1px solid var(--line)", borderRadius: "12px", height: "100%", transition: "box-shadow 0.2s, transform 0.2s", cursor: "pointer" }}
-                  onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 8px 24px rgba(26,26,26,0.08)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.transform = "none"; }}
+      {/* ═══ RECENT WRITING ═══ */}
+      <section style={{ background: "var(--bone-warm)", padding: "6rem 1.5rem" }}>
+        <div style={{ maxWidth: "1180px", margin: "0 auto" }}>
+          <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "1rem" }}>
+            Recent Writing
+          </div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "3rem" }}>
+            Essays that hold weight
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "1.5rem" }}>
+            {recentArticles.map((article: any, i: number) => (
+              <Link key={i} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
+                <article style={{
+                  background: "var(--charcoal-soft)", padding: "2rem", borderRadius: "2px",
+                  transition: "all 240ms cubic-bezier(0.22,1,0.36,1)", cursor: "pointer", height: "100%",
+                  display: "flex", flexDirection: "column",
+                }}
+                  onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.4)"; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.transform = "none"; e.currentTarget.style.boxShadow = "none"; }}
                 >
-                  <div style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.15em", color: "var(--gold)", fontFamily: "var(--U)", marginBottom: "16px" }}>{item.step}</div>
-                  <h3 style={{ fontSize: "20px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--F)", marginBottom: "12px", lineHeight: 1.3 }}>{item.title}</h3>
-                  <p style={{ fontSize: "15px", lineHeight: 1.7, color: "var(--ink3)", fontFamily: "var(--B)" }}>{item.desc}</p>
-                </div>
+                  <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "0.75rem" }}>
+                    {article.pillar || article.topic || "Essay"}
+                  </div>
+                  <h3 style={{ fontFamily: "var(--F)", fontSize: "1.375rem", fontWeight: 400, color: "var(--bone)", lineHeight: 1.3, marginBottom: "0.75rem", flex: 1 }}>
+                    {article.title}
+                  </h3>
+                  <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", color: "var(--bone-muted)" }}>
+                    {article.readTime || "5 min read"}
+                  </div>
+                </article>
               </Link>
             ))}
           </div>
+          <div style={{ marginTop: "3rem", textAlign: "center" }}>
+            <Link href="/writing" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
+              Continue reading
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* ───── FEATURED ESSAYS ───── */}
-      <section style={{ padding: "80px 20px", background: "var(--paper2)" }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <div style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--goldlt)", fontFamily: "var(--U)", marginBottom: "16px" }}>FEATURED WRITING</div>
-          <h2 style={{ fontSize: "32px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--F)", marginBottom: "32px", lineHeight: 1.15 }}>Recent essays</h2>
-          <div style={{ display: "flex", gap: "16px", marginBottom: "32px", borderBottom: "1px solid var(--line)", paddingBottom: "12px", overflowX: "auto" }}>
-            {["All", "Marriage", "Parenting", "Theology", "Justice", "Pastoral"].map((tab) => (
-              <button key={tab} onClick={() => setActiveTab(tab.toLowerCase())} style={{
-                padding: "6px 0", background: "none", border: "none", fontSize: "13px", fontFamily: "var(--U)", fontWeight: 500, cursor: "pointer", whiteSpace: "nowrap",
-                color: activeTab === tab.toLowerCase() ? "var(--ink)" : "var(--ink3)",
-                borderBottom: activeTab === tab.toLowerCase() ? "2px solid var(--gold)" : "2px solid transparent",
-                paddingBottom: activeTab === tab.toLowerCase() ? "10px" : "12px",
-              }}>{tab}</button>
-            ))}
+      {/* ═══ BOOKS / AUTHOR ═══ */}
+      <section style={{ background: "var(--charcoal)", padding: "6rem 1.5rem" }}>
+        <div style={{ maxWidth: "1180px", margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4rem", alignItems: "center" }} className="grid grid-cols-1 md:grid-cols-2">
+          <div>
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg" alt="James Bell, Lead Pastor and Author" loading="lazy" style={{ width: "100%", maxWidth: "400px", aspectRatio: "3/4", objectFit: "cover", objectPosition: "center top", borderRadius: "2px" }} />
+            <div style={{ width: "60px", height: "2px", background: "var(--mustard)", marginTop: "1.5rem" }} />
           </div>
-          {filteredArticles.length === 0 ? (
-            <div style={{ textAlign: "center", padding: "48px 0", color: "var(--ink3)" }}>
-              <p style={{ marginBottom: "12px" }}>Loading essays...</p>
-              <Link href="/writing" style={{ color: "var(--gold)", fontWeight: 600 }}>Browse all essays</Link>
+          <div>
+            <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "1rem" }}>
+              The Work
             </div>
-          ) : (
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "24px" }}>
-              {filteredArticles.map((article: any, i: number) => (
-                <Link key={i} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
-                  <div style={{ background: "var(--card)", padding: "28px", borderRadius: "12px", border: "1px solid var(--line)", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column", transition: "box-shadow 0.2s, transform 0.2s" }}
-                    onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 8px 24px rgba(26,26,26,0.08)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
-                    onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.transform = "none"; }}
-                  >
-                    <div style={{ fontSize: "11px", fontWeight: 600, color: "var(--goldlt)", marginBottom: "10px", textTransform: "uppercase", letterSpacing: "0.1em", fontFamily: "var(--U)" }}>{article.topic || article.pillar || "Essay"}</div>
-                    <h3 style={{ fontSize: "18px", fontWeight: 600, marginBottom: "10px", color: "var(--ink)", flex: 1, lineHeight: 1.35, fontFamily: "var(--F)" }}>{article.title}</h3>
-                    <div style={{ fontSize: "12px", color: "var(--ink3)", fontFamily: "var(--U)" }}>{article.readTime || "5 min read"}</div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          )}
-          <div style={{ textAlign: "center", marginTop: "40px" }}>
-            <Link href="/writing" style={{ textDecoration: "none" }}>
-              <button style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "13px 28px", background: "var(--ink)", color: "var(--paper)", border: "none", borderRadius: "6px", fontWeight: 600, fontSize: "13px", fontFamily: "var(--U)", letterSpacing: "0.04em", cursor: "pointer" }}>
-                Browse All Essays <ArrowRight size={14} />
+            <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1.5rem" }}>
+              Twenty-five books. One question.
+            </h2>
+            <p style={{ fontSize: "1rem", lineHeight: 1.7, color: "var(--bone)", opacity: 0.7, marginBottom: "2.5rem", maxWidth: "480px" }}>
+              Every book asks the same question from a different angle: What does it look like to follow Jesus when the answers are harder than the songs we sing on Sunday? Theology for marriage. Leadership for pastors. Justice for the silent. Faith for the honest.
+            </p>
+            <Link href="/books" style={{ textDecoration: "none" }}>
+              <button style={{
+                background: "var(--bone)", color: "var(--charcoal)",
+                border: "none", padding: "1rem 2.5rem",
+                fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500,
+                borderRadius: "2px", cursor: "pointer",
+              }}>
+                See all books
               </button>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* ───── TESTIMONIALS ───── */}
-      <section style={{ padding: "80px 20px", background: "var(--ink)" }}>
-        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <div style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--gold)", fontFamily: "var(--U)", marginBottom: "16px", textAlign: "center" }}>WHAT READERS SAY</div>
-          <h2 style={{ fontSize: "32px", fontWeight: 600, color: "var(--paper)", fontFamily: "var(--F)", marginBottom: "48px", textAlign: "center", lineHeight: 1.15 }}>From pastors in crisis to couples on the edge</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
-            {[
-              { quote: "I was six months from walking away from ministry entirely. James's writing named what I was experiencing better than any counselor had.", name: "Pastor M.T.", role: "Lead Pastor, Midwest" },
-              { quote: "My husband and I were living like roommates. The article on emotional labor was the first time either of us could name what was happening. We talked for three hours.", name: "S.L.", role: "Married 11 years" },
-              { quote: "I found LiveWell during a crisis of faith. The theological depth gave me somewhere to stand. I'm still wrestling — but toward something now, not away from it.", name: "R.H.", role: "Seminary graduate, Texas" },
-            ].map((t, i) => (
-              <div key={i} style={{ padding: "28px", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.04)" }}>
-                <div style={{ width: "32px", height: "2px", background: "var(--gold)", marginBottom: "20px" }} />
-                <p style={{ fontSize: "15px", lineHeight: 1.75, color: "rgba(255,255,255,0.85)", marginBottom: "20px", fontFamily: "var(--F)", fontStyle: "italic" }}>"{t.quote}"</p>
-                <div style={{ fontSize: "13px", fontWeight: 600, color: "var(--paper)", fontFamily: "var(--U)" }}>{t.name}</div>
-                <div style={{ fontSize: "12px", color: "rgba(255,255,255,0.5)", fontFamily: "var(--U)" }}>{t.role}</div>
+      {/* ═══ MEMBERSHIP ═══ */}
+      <section style={{ background: "var(--bone)", padding: "6rem 1.5rem" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto", textAlign: "center" }}>
+          <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "1rem" }}>
+            Membership
+          </div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "2.5rem" }}>
+            For readers who want the full library
+          </h2>
+          <div style={{ display: "flex", flexDirection: "column", gap: "0", marginBottom: "2.5rem", textAlign: "left", maxWidth: "480px", margin: "0 auto 2.5rem" }}>
+            {["Full access to 880+ essays across every topic", "Weekly letter with new writing before it goes public", "Member-only tools, reading paths, and resources"].map((line, i) => (
+              <div key={i} style={{ padding: "1rem 0", borderTop: i === 0 ? "none" : "1px solid var(--mustard)", fontSize: "1rem", color: "var(--ink)", lineHeight: 1.6 }}>
+                {line}
               </div>
             ))}
           </div>
+          <Link href="/membership" style={{ textDecoration: "none" }}>
+            <button style={{
+              background: "var(--ink)", color: "var(--bone)",
+              border: "none", padding: "1rem 2.5rem",
+              fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500,
+              borderRadius: "2px", cursor: "pointer",
+            }}>
+              Become a member
+            </button>
+          </Link>
+          <p style={{ marginTop: "1rem", fontSize: "0.875rem", color: "var(--ink-muted)" }}>
+            Stripe-secured. Cancel anytime.
+          </p>
         </div>
       </section>
 
-      {/* ───── NEWSLETTER CTA ───── */}
-      <section style={{ padding: "80px 20px" }}>
-        <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
-          <div style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--goldlt)", fontFamily: "var(--U)", marginBottom: "16px" }}>WEEKLY LETTER</div>
-          <h2 style={{ fontSize: "32px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--F)", marginBottom: "16px", lineHeight: 1.15 }}>One essay a week. For what you're carrying.</h2>
-          <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "32px", lineHeight: 1.7, fontFamily: "var(--B)" }}>Marriage, parenting, faith, justice, pastoral ministry. No spam. Unsubscribe anytime.</p>
+      {/* ═══ PASTORAL NOTE ═══ */}
+      <section style={{ background: "var(--charcoal)", padding: "6rem 1.5rem" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto", textAlign: "center" }}>
+          <blockquote style={{ fontFamily: "var(--F)", fontStyle: "italic", fontSize: "clamp(1.25rem, 3vw, 1.5rem)", lineHeight: 1.65, color: "var(--bone)", borderLeft: "none", padding: 0, margin: "0 0 2rem", position: "relative" }}>
+            <div style={{ width: "40px", height: "2px", background: "var(--mustard)", margin: "0 auto 2rem" }} />
+            "I write for people who take faith seriously enough to let it cost them something. For the pastor who preached last Sunday with a broken heart. For the couple who kept the vows but lost the thread. For the parent raising questions they cannot answer. For the skeptic who cannot stop reading the words of a man they are not sure they believe in."
+          </blockquote>
+          <p style={{ fontSize: "0.875rem", color: "var(--bone)", opacity: 0.5, marginBottom: "1.5rem" }}>
+            James Bell — Lead Teaching Pastor, First Baptist Church of Fenton
+          </p>
+          <Link href="/about" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
+            More about James
+          </Link>
+        </div>
+      </section>
+
+      {/* ═══ NEWSLETTER ═══ */}
+      <section style={{ background: "var(--charcoal-deep)", padding: "4rem 1.5rem" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto", display: "flex", alignItems: "center", gap: "1.5rem", flexWrap: "wrap" }}>
+          <div style={{ flex: 1, minWidth: "200px" }}>
+            <div style={{ fontFamily: "var(--F)", fontSize: "1.25rem", color: "var(--bone)", marginBottom: "0.25rem" }}>
+              Weekly letter
+            </div>
+            <div style={{ fontSize: "0.875rem", color: "var(--bone)", opacity: 0.5 }}>
+              One essay. For what you are carrying.
+            </div>
+          </div>
           {emailSubmitted ? (
-            <p style={{ color: "var(--gold)", fontWeight: 600, fontSize: "16px", fontFamily: "var(--F)" }}>Welcome. Check your inbox.</p>
+            <div style={{ fontSize: "0.875rem", color: "var(--mustard)", fontWeight: 500 }}>Welcome. Check your inbox.</div>
           ) : (
-            <form onSubmit={handleEmailSubmit} style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+            <form onSubmit={handleEmailSubmit} style={{ display: "flex", gap: "0" }}>
               <input type="email" placeholder="your@email.com" value={emailInput} onChange={(e) => setEmailInput(e.target.value)} required
-                style={{ flex: 1, minWidth: "200px", maxWidth: "300px", padding: "13px 16px", border: "1px solid var(--line)", borderRadius: "6px", fontSize: "14px", fontFamily: "var(--U)", background: "var(--card)" }}
+                style={{ padding: "0.75rem 1rem", background: "transparent", border: "1px solid var(--bone-muted)", borderRight: "none", color: "var(--bone)", fontSize: "0.875rem", fontFamily: "var(--U)", minWidth: "200px", borderRadius: "2px 0 0 2px", outline: "none" }}
               />
-              <button type="submit" style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "13px 24px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", letterSpacing: "0.04em", borderRadius: "6px", cursor: "pointer", whiteSpace: "nowrap" }}>
-                Get the Letter
+              <button type="submit" style={{ padding: "0.75rem 1.25rem", background: "var(--mustard)", color: "var(--charcoal)", border: "1px solid var(--mustard)", fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 600, cursor: "pointer", borderRadius: "0 2px 2px 0", display: "flex", alignItems: "center" }}>
+                <ArrowRight size={16} />
               </button>
             </form>
           )}
-        </div>
-      </section>
-
-      {/* ───── ABOUT STRIP ───── */}
-      <section style={{ padding: "80px 20px", background: "var(--paper2)", borderTop: "1px solid var(--line)" }}>
-        <div style={{ maxWidth: "900px", margin: "0 auto", display: "flex", gap: "48px", alignItems: "center", flexWrap: "wrap" }}>
-          <div style={{ flex: "0 0 auto" }}>
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg" alt="James Bell, Lead Pastor and Author" loading="lazy" style={{ borderRadius: "12px", width: "200px", height: "260px", objectFit: "cover", objectPosition: "center top", border: "1px solid var(--line)" }} />
-          </div>
-          <div style={{ flex: 1, minWidth: "280px" }}>
-            <div style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--goldlt)", fontFamily: "var(--U)", marginBottom: "12px" }}>ABOUT THE AUTHOR</div>
-            <p style={{ fontSize: "20px", lineHeight: 1.55, marginBottom: "16px", color: "var(--ink)", fontFamily: "var(--F)", fontStyle: "italic" }}>"I write for people who take faith seriously enough to let it cost them something."</p>
-            <p style={{ fontSize: "15px", lineHeight: 1.75, marginBottom: "24px", color: "var(--ink3)" }}>Lead Teaching Pastor. Founder of the Pastors Connection Network. Author of 25 books. Father of five. Writing from where people fall apart and where they find their footing.</p>
-            <Link href="/about" style={{ textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "13px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--U)" }}>
-              Read the full story <ArrowRight size={14} />
-            </Link>
-          </div>
         </div>
       </section>
 

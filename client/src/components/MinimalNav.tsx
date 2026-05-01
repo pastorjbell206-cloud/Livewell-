@@ -122,13 +122,13 @@ export default function MinimalNav() {
       )}
 
       {/* Main Nav */}
-      <nav style={{ position: "sticky", top: 0, zIndex: 200, background: "rgba(15,15,15,0.95)", backdropFilter: "blur(16px)", borderBottom: "1px solid rgba(255,255,255,0.06)", width: "100%" }}>
+      <nav style={{ position: "sticky", top: 0, zIndex: 200, background: "rgba(26,26,26,0.97)", backdropFilter: "blur(16px)", borderBottom: "1px solid rgba(255,255,255,0.06)", width: "100%" }}>
         <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 20px", display: "flex", justifyContent: "space-between", alignItems: "center", height: "64px" }}>
           {/* Logo with gold rule */}
           <Link href="/" style={{ textDecoration: "none" }}>
             <div>
-              <div style={{ fontSize: "20px", fontWeight: 700, color: "#f0ece4", fontFamily: "var(--F)", lineHeight: 1, paddingBottom: "4px", borderBottom: "2px solid var(--gold)" }}>Live Well</div>
-              <div style={{ fontSize: "9px", color: "rgba(240,236,228,0.5)", letterSpacing: "0.15em", textTransform: "uppercase", marginTop: "4px", fontFamily: "var(--U)", fontWeight: 500 }}>by James Bell</div>
+              <div style={{ fontSize: "20px", fontWeight: 700, color: "#F4F1EA", fontFamily: "var(--F)", lineHeight: 1, paddingBottom: "4px", borderBottom: "2px solid var(--gold)" }}>Live Well</div>
+              <div style={{ fontSize: "9px", color: "rgba(244,241,234,0.4)", letterSpacing: "0.15em", textTransform: "uppercase", marginTop: "4px", fontFamily: "var(--U)", fontWeight: 500 }}>by James Bell</div>
             </div>
           </Link>
 
@@ -159,7 +159,7 @@ export default function MinimalNav() {
                         onMouseLeave={() => setOpenDropdown(null)}
                         style={{
                           position: "absolute", top: "100%", left: "50%", transform: "translateX(-50%)",
-                          background: "#1a1a1a", border: "1px solid rgba(255,255,255,0.08)", borderTop: "2px solid var(--gold)", borderRadius: "8px",
+                          background: "#2A2A2A", border: "1px solid rgba(255,255,255,0.08)", borderTop: "2px solid var(--gold)", borderRadius: "8px",
                           padding: "8px", minWidth: "280px", boxShadow: "0 12px 40px rgba(0,0,0,0.5)",
                           marginTop: "4px", zIndex: 300
                         }}
