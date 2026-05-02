@@ -48,6 +48,8 @@ const SermonOutline = lazy(() => import("./pages/tools/SermonOutline"));
 const ScriptureMemory = lazy(() => import("./pages/tools/ScriptureMemory"));
 const ConflictGuide = lazy(() => import("./pages/tools/ConflictGuide"));
 const PastorBurnoutTool = lazy(() => import("./pages/tools/PastorBurnout"));
+const LifeAudit = lazy(() => import("./pages/tools/LifeAudit"));
+const ChurchHealth = lazy(() => import("./pages/tools/ChurchHealth"));
 const WorkWithJames = lazy(() => import("./pages/WorkWithJames"));
 const PastoralBurnout = lazy(() => import("./pages/landing/PastoralBurnout"));
 const FaithCrisis = lazy(() => import("./pages/landing/FaithCrisis"));
@@ -154,6 +156,8 @@ function Router() {
         <Route path="/tools/scripture-memory" component={ScriptureMemory} />
         <Route path="/tools/conflict-guide" component={ConflictGuide} />
         <Route path="/tools/pastor-burnout" component={PastorBurnoutTool} />
+        <Route path="/tools/life-audit" component={LifeAudit} />
+        <Route path="/tools/church-health" component={ChurchHealth} />
         <Route path="/work-with-james" component={WorkWithJames} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/terms" component={Terms} />
