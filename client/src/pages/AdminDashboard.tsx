@@ -102,6 +102,23 @@ export default function AdminDashboard() {
               {seeding ? <Loader2 size={16} className="animate-spin" /> : <Upload size={16} />}
               {seeding ? "Importing..." : "Import All Content"}
             </button>
+            <button
+              onClick={async () => {
+                setSeedStatus("Organizing articles into pillars...");
+                try {
+                  const r = await fetch("/api/admin/organize-articles", { credentials: "include" });
+                  const d = await r.json();
+                  if (d.ok) {
+                    setSeedStatus(`Organized! ${d.updated} articles updated. Distribution: ${d.distribution?.map((x: any) => `${x.pillar}: ${x.n}`).join(", ")}`);
+                    postsQuery.refetch();
+                  } else { setSeedStatus(`Error: ${d.error}`); }
+                } catch (e: any) { setSeedStatus(`Failed: ${e.message}`); }
+              }}
+              className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-ui font-semibold text-sm transition-colors"
+              style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)", cursor: "pointer" }}
+            >
+              Organize into Pillars
+            </button>
           </div>
           {seedStatus && (
             <div className="mt-3 p-3 rounded text-sm font-ui" style={{
