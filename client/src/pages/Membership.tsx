@@ -25,7 +25,7 @@ export default function Membership() {
     <Layout>
       <SEOMeta
         title="Membership — LiveWell by James Bell"
-        description="Full access to 880+ essays, member-only writing, curated reading paths, and the deeper room where theology meets the weight of real life."
+        description="Full access to 160+ essays, member-only writing, curated reading paths, and the deeper room where theology meets the weight of real life."
         type="webpage"
       />
 
@@ -48,7 +48,7 @@ export default function Membership() {
           <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard-text)", fontFamily: "var(--U)", marginBottom: "1rem" }}>What is inside</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, color: "var(--ink)", marginBottom: "3rem" }}>Five things the membership gives you</h2>
           {[
-            { title: "The full essay archive", desc: "880+ essays searchable by topic, audience, and reading time. The skeptic essays, the pastor essays, the marriage essays — all in one place, organized as reading paths." },
+            { title: "The full essay archive", desc: "160+ essays searchable by topic, audience, and reading time. The skeptic essays, the pastor essays, the marriage essays — all in one place, organized as reading paths." },
             { title: "Writing before it goes public", desc: "New essays land in the member library before they reach Substack or Facebook. You read it first." },
             { title: "Curated reading guides for the 25 books", desc: "Each book paired with the essays that extend its argument. Not a list of titles — a guided path through the ideas." },
             { title: "Member-only tools and resources", desc: "The Bible Verse Finder, Prayer Generator, and future tools built for pastors, parents, and anyone trying to live well." },
@@ -129,10 +129,10 @@ export default function Membership() {
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, color: "var(--ink)", marginBottom: "3rem" }}>Before you decide</h2>
           {[
             { q: "What if I do not love it?", a: "Cancel anytime. No form. No phone call. No retention sequence. One click in your account settings. If the writing is not carrying weight for you, you should leave — and you will not be penalized for it." },
-            { q: "How is this different from the free Substack?", a: "Substack delivers the weekly letter. The membership is the full library — 880+ essays searchable by topic, the curated book guides, the member-only essays that go deeper than what a free newsletter can carry, and direct access to James." },
+            { q: "How is this different from the free Substack?", a: "Substack delivers the weekly letter. The membership is the full library — 160+ essays searchable by topic, the curated book guides, the member-only essays that go deeper than what a free newsletter can carry, and direct access to James." },
             { q: "I am a pastor — is this for me?", a: "It was built for you first. The Pastors Connection Network is the community arm; the membership is the writing arm. Pastoral burnout, sermon preparation, theological formation, the loneliness of leading — the member library addresses all of it." },
             { q: "I am not a Christian. Does the membership assume I am?", a: "No. The skeptic is the hardest case, which is why the writing takes the skeptic seriously. The membership gives you the full archive — including the essays on doubt, historical criticism, and the intellectual architecture of belief. You will not be preached at. You will be argued with." },
-            { q: "Where does my money go?", a: "Directly to the writing. No advertisers, no sponsors, no denominational subsidies. Your membership funds the time it takes to produce theology that does not cut corners. The 25 books were written this way. The 880+ essays are written this way." },
+            { q: "Where does my money go?", a: "Directly to the writing. No advertisers, no sponsors, no denominational subsidies. Your membership funds the time it takes to produce theology that does not cut corners. The 25 books were written this way. The 160+ essays are written this way." },
             { q: "Can I gift a membership?", a: "Not yet — but it is on the roadmap. If you want to gift it now, email Pastorjbell206@gmail.com and James will set it up manually." },
           ].map((faq, i) => (
             <div key={i} style={{ borderBottom: "1px solid var(--bone-muted)", paddingBottom: "1.5rem", marginBottom: "1.5rem" }}>

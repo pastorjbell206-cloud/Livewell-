@@ -71,7 +71,7 @@ export default function Footer() {
               <Link href="/membership" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Membership</Link>
               <a href="https://pastorsconnectionnetwork.com" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Pastors Network</a>
               <a href="https://substack.com/@jamesbell333289" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Substack Newsletter</a>
-              <a href="mailto:contact@livewellbyjamesbell.com" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Contact</a>
+              <a href="mailto:Pastorjbell206@gmail.com" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Contact</a>
             </div>
           </div>
         </div>

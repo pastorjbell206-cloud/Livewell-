@@ -122,12 +122,12 @@ export default function Writing() {
     <>
       <SEOMeta
         title="Writing on Theology, Doubt, and the Weight of Everyday Life"
-        description="880+ essays for the skeptic tired of bad arguments, the Christian past slogans, the pastor burning out in silence, and anyone trying to live well. By James Bell."
+        description="160+ essays for the skeptic tired of bad arguments, the Christian past slogans, the pastor burning out in silence, and anyone trying to live well. By James Bell."
         structuredData={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
           name: "Writing by James Bell",
-          description: "880+ essays on faith, theology, marriage, justice, and pastoral ministry.",
+          description: "160+ essays on faith, theology, marriage, justice, and pastoral ministry.",
           url: "https://www.livewellbyjamesbell.co/writing",
         }}
       />
