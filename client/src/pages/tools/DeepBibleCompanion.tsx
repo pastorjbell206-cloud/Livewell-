@@ -262,7 +262,92 @@ const BOOKS: BibleBook[] = [
   },
   {
     name: "Exodus", testament: "OT", hook: "The story of liberation that shaped every liberation since",
-    passages: [],
+    passages: [
+      {
+        ref: "Exodus 3:1-15",
+        summary: "The burning bush and the God who names himself",
+        text: "Now Moses was tending the flock of Jethro his father-in-law, the priest of Midian, and he led the flock to the far side of the wilderness and came to Horeb, the mountain of God. There the angel of the Lord appeared to him in flames of fire from within a bush. Moses saw that though the bush was on fire it did not burn up...",
+        paraphrase: "Moses was a fugitive working his father-in-law's sheep in the middle of nowhere. God showed up in a bush that burned without being consumed and told Moses to go back to the place he had fled. Moses asked for God's name. God gave him one that refuses to be pinned down: I AM WHO I AM.",
+        keyWords: [
+          { word: "I AM WHO I AM", original: "ehyeh asher ehyeh (Hebrew)", meaning: "The most debated phrase in the Old Testament. It can mean 'I am who I am,' 'I will be what I will be,' or 'I cause to be what I cause to be.' God's name is not a label. It is an unfinished sentence. He refuses to be categorized." },
+          { word: "holy ground", original: "admat qodesh (Hebrew)", meaning: "Qodesh means 'set apart.' The ground was not inherently sacred. It became holy because God was present. Holiness in the Bible is not a property of places. It is a consequence of presence." },
+          { word: "burning bush", original: "seneh bo'er (Hebrew)", meaning: "The bush (seneh) may be a wordplay on Sinai. The fire that does not consume is a theophany, a visible manifestation of God. Fire in the Old Testament signals God's presence and his refusal to be domesticated." },
+        ],
+        historical: [
+          "Moses had been in Midian for forty years. He was eighty years old. He had killed an Egyptian, fled Pharaoh, and settled into obscurity. God's call came not at the height of Moses' competence but at the far end of his failure.",
+          "The name YHWH (the tetragrammaton) revealed here became so sacred that Jews stopped pronouncing it, substituting 'Adonai' (Lord) instead. The name God gave to invite intimacy became the name humans were too reverent to speak.",
+          "Horeb and Sinai are likely the same mountain. The place where God revealed his name is the same place where God would later give the law. The personal encounter precedes the public covenant. Name before command. Relationship before obligation.",
+          "The burning bush as theophany distinguishes Israel's God from every other ancient Near Eastern deity. Egyptian gods were carved in stone. Canaanite gods were represented by fertility symbols. Israel's God shows up in fire that does not destroy what it touches.",
+        ],
+        literary: {
+          genre: "Call narrative. The passage follows the classic prophetic call pattern: divine encounter, commission, objection, reassurance, sign. Moses' reluctance is not humility. It is resistance. God overrules it without dismissing it.",
+          devices: "Dialogue drives the entire scene. God speaks, Moses objects, God responds. Five times Moses resists. The bush itself is a literary symbol: fire that does not consume mirrors a God who draws near without destroying.",
+          keyTerms: [
+            { term: "ehyeh", language: "Hebrew", meaning: "'I AM' or 'I will be.' The first person form of the verb 'to be.' God names himself not with a noun but with a verb. He is not a thing. He is an act. An ongoing, unfinished act of being." },
+            { term: "seneh", language: "Hebrew", meaning: "The bush. Possibly a pun on Sinai. A lowly desert shrub, not a cedar or an oak. God reveals himself in what is small and overlooked. The pattern holds through the entire Bible." },
+            { term: "YHWH", language: "Hebrew", meaning: "The personal name of God, related to the verb 'to be.' Not a title (like 'Lord' or 'Almighty') but a name. God gives Moses something no other deity in the ancient world offered: a personal name to call him by." },
+          ],
+          structure: "The passage moves from ordinary labor (v.1) to extraordinary encounter (v.2-6) to divine commission (v.7-10) to human objection (v.11-12) to divine self-revelation (v.13-15). The climax is not the commission. It is the name.",
+        },
+        scholars: [
+          { view: "Revelatory theology", summary: "The name 'I AM WHO I AM' is God's definitive self-disclosure. It establishes God as self-existent, uncaused, and sovereign. The name is both an invitation and a boundary: God reveals enough to relate but not enough to control.", proponents: "Brevard Childs, Walter Brueggemann" },
+          { view: "Liberation theology reading", summary: "The burning bush is inseparable from the cry of the enslaved (v.7-9). God reveals his name in the context of hearing suffering. The name is not abstract philosophy. It is a promise of action: 'I will be present with you in the work of liberation.'", proponents: "Gustavo Gutiérrez, James Cone" },
+          { view: "Mosaic vocation reading", summary: "The passage is primarily about call, not theology. Moses' five objections mirror every human resistance to divine vocation. God does not remove the inadequacy. He promises his presence alongside it.", proponents: "Terence Fretheim, Dennis Olson" },
+        ],
+        application: {
+          question: "Moses was eighty and hiding when God called him. Where have you decided you are too old, too failed, or too far gone to be used?",
+          connection: "We want God to call us at our best. God called Moses at his worst. Forty years of tending someone else's sheep. The burning bush did not appear to the young, ambitious Moses in Pharaoh's court. It appeared to the old, broken Moses in the wilderness. God's timing looks like waste until it looks like wisdom.",
+          thisWeek: "Identify one area of your life where you have been telling God 'send someone else.' Write it down. Then read Exodus 3:12 again: 'I will be with you.' Sit with that promise for five minutes each day.",
+        },
+        deeper: {
+          books: ["Exodus (Old Testament Library) by Brevard Childs", "Exodus: A Theological Commentary by Dennis Olson", "The God Who Acts by G. Ernest Wright"],
+          studyQuestion: "God gives Moses a name that is essentially a verb: 'I AM.' What does it mean to worship a God who refuses to be a noun, who defines himself not as a thing but as an ongoing act of presence?",
+          prayer: "God who burns without consuming, I confess I have been hiding in Midian. I have called my fear humility and my avoidance wisdom. You know my name. You have told me yours. That is enough to start. Amen.",
+        },
+      },
+      {
+        ref: "Exodus 20:1-17",
+        summary: "The Ten Commandments and why they are gift before demand",
+        text: "And God spoke all these words: 'I am the Lord your God, who brought you out of Egypt, out of the land of slavery. You shall have no other gods before me...'",
+        paraphrase: "Before God gave a single command, he reminded Israel who he was and what he had already done. The law begins with grace. The first word is not 'thou shalt.' It is 'I am the Lord who set you free.' Every command that follows is built on that foundation.",
+        keyWords: [
+          { word: "I am the Lord your God", original: "anokhi YHWH elohekha (Hebrew)", meaning: "The prologue before the commands. In ancient suzerainty treaties, the great king identified himself and named what he had done for the vassal before listing obligations. God follows the same pattern: identity, then history, then expectation." },
+          { word: "You shall not", original: "lo (Hebrew)", meaning: "The Hebrew commands are apodictic law: absolute, unconditional, without exceptions or penalties listed. 'You shall not murder' does not say 'or else.' It describes the kind of people a redeemed community becomes." },
+          { word: "covet", original: "chamad (Hebrew)", meaning: "Not merely wanting. Chamad means to desire with intent to acquire. The tenth commandment is the only one that legislates the interior life. It is the hinge between external behavior and internal formation." },
+        ],
+        historical: [
+          "The Ten Commandments follow the exact structure of ancient Near Eastern suzerainty treaties: preamble ('I am the Lord'), historical prologue ('who brought you out'), stipulations (the commands), and implied blessings and curses. Israel would have recognized this form immediately. God is making a covenant, not issuing a memo.",
+          "The distinction between apodictic law ('You shall not murder') and casuistic law ('If a man does X, then Y shall happen') matters. The Ten Commandments are entirely apodictic: absolute principles with no case-by-case conditions. They define identity, not just behavior. The casuistic applications come later in Exodus 21-23.",
+          "The prologue, 'I am the Lord your God, who brought you out of Egypt,' means every command rests on prior deliverance. Israel does not obey in order to be saved. Israel obeys because it has already been saved. The order is grace first, then law. Always.",
+          "The command about Sabbath is the longest of the ten. In a world where Pharaoh demanded seven-day-a-week labor from enslaved people, a mandatory day of rest was revolutionary. Sabbath is not a spiritual luxury. It is a refusal to let any human system own all your time.",
+        ],
+        literary: {
+          genre: "Covenant law / treaty stipulations. The Ten Commandments are not a legal code in the modern sense. They are the terms of a relationship between a liberating God and a liberated people. The genre is relational before it is legal.",
+          devices: "The prologue establishes the relationship before the requirements. The commands move from God-directed (1-4) to human-directed (5-10), establishing vertical relationship as the foundation for horizontal ethics. The tenth command (coveting) turns inward, making the list a journey from worship to the human heart.",
+          keyTerms: [
+            { term: "anokhi", language: "Hebrew", meaning: "'I myself.' The emphatic first person pronoun. God does not begin with 'You must.' He begins with 'I am.' The commands are grounded in God's character, not human capacity." },
+            { term: "berith", language: "Hebrew", meaning: "'Covenant.' The Ten Commandments are covenant stipulations, not abstract moral principles. They make sense only inside a relationship. Outside the covenant, they are just rules. Inside it, they are the shape of love." },
+            { term: "pesel", language: "Hebrew", meaning: "'Carved image.' The command against idols is not about statues. It is about any attempt to make God manageable, predictable, small enough to fit in a shrine. Every generation carves its own version." },
+          ],
+          structure: "The two-tablet structure divides the commands between duties to God (1-4) and duties to neighbor (5-10). Jesus later summarized this same structure: love God, love neighbor. The entire law hangs on these two movements.",
+        },
+        scholars: [
+          { view: "Covenant treaty reading", summary: "The Ten Commandments follow the Hittite suzerainty treaty format. They are not timeless moral principles dropped from heaven but covenant terms given to a specific people at a specific time, with universal implications that emerge from the particular.", proponents: "George Mendenhall, Dennis McCarthy, Meredith Kline" },
+          { view: "Gift theology", summary: "The commands are not burdens but gifts. They describe the shape of a free life. A people just liberated from slavery need to know what freedom looks like in practice. The law is the architecture of liberty.", proponents: "Walter Brueggemann, Patrick Miller" },
+          { view: "Moral law tradition", summary: "The Ten Commandments reflect the eternal moral law of God, valid across all times and cultures. While the ceremonial and civil laws of Israel were fulfilled in Christ, the moral law remains binding.", proponents: "John Calvin, Westminster Confession, traditional Reformed theology" },
+        ],
+        application: {
+          question: "Which commandment have you reduced to a rule you keep rather than a relationship it was meant to protect?",
+          connection: "We read the Ten Commandments as restrictions. They were given as the architecture of freedom. A people who had been slaves for four hundred years did not need more commands. They needed a framework for living as free people. Every 'you shall not' is protecting something precious: life, marriage, truth, contentment, worship.",
+          thisWeek: "Pick one commandment and spend the week asking not 'Am I obeying this?' but 'What is this protecting in my life?' Move from compliance to understanding. Let the command become a gift.",
+        },
+        deeper: {
+          books: ["The Ten Commandments by Patrick Miller", "Theology of the Old Testament by Walter Brueggemann", "Treaty of the Great King by Meredith Kline"],
+          studyQuestion: "If the prologue ('I am the Lord who brought you out') is removed, the commandments become generic moral rules. What changes when every command is read as spoken by a God who has already rescued you?",
+          prayer: "God who freed Israel before you instructed Israel, free me from reading your commands as a checklist. Show me what each one protects. Let me live as a free person, not a compliant one. Amen.",
+        },
+      },
+    ],
   },
   {
     name: "Proverbs", testament: "OT", hook: "Wisdom for people who have to make decisions today",
