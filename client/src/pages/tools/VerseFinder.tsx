@@ -1,7 +1,9 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { useState } from "react";
-import { BookOpen, Copy, Check } from "lucide-react";
+import { BookOpen, Copy, Check, Heart } from "lucide-react";
+import { useFavorites } from "@/hooks/useFavorites";
+import { Link } from "wouter";
 
 const VERSES: Record<string, { ref: string; text: string }[]> = {
   Anxiety: [
@@ -81,6 +83,16 @@ const TOPICS = Object.keys(VERSES);
 export default function VerseFinder() {
   const [selected, setSelected] = useState<string | null>(null);
   const [copied, setCopied] = useState<string | null>(null);
+  const { favorites, addFavorite, removeFavorite, isFavorite } = useFavorites("livewell-saved-verses");
+
+  const handleToggleSave = (ref: string, text: string) => {
+    const id = `verse-${ref}`;
+    if (isFavorite(id)) {
+      removeFavorite(id);
+    } else {
+      addFavorite({ id, type: "verse", content: { ref, text } });
+    }
+  };
 
   const handleCopy = (ref: string, text: string) => {
     navigator.clipboard.writeText(`${ref} — ${text}`);
@@ -116,6 +128,19 @@ export default function VerseFinder() {
           <p style={{ fontSize: "17px", lineHeight: 1.7, opacity: 0.85, fontFamily: "var(--B)" }}>
             Select a topic and find curated Scripture for every season of life.
           </p>
+          {favorites.length > 0 && (
+            <Link
+              href="/tools/saved"
+              style={{
+                display: "inline-block", marginTop: "16px",
+                fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)",
+                color: "var(--gold)", textDecoration: "underline",
+                textUnderlineOffset: "3px",
+              }}
+            >
+              Saved Verses ({favorites.length})
+            </Link>
+          )}
         </div>
       </section>
 
@@ -155,12 +180,30 @@ export default function VerseFinder() {
                   <div key={v.ref} style={{ padding: "24px", background: "white", border: "1px solid var(--border)", borderRadius: "8px", borderLeft: "4px solid var(--gold)" }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "12px" }}>
                       <span style={{ fontSize: "14px", fontWeight: 700, color: "var(--gold)", fontFamily: "var(--U)" }}>{v.ref}</span>
-                      <button
-                        onClick={() => handleCopy(v.ref, v.text)}
-                        style={{ display: "flex", alignItems: "center", gap: "4px", padding: "4px 10px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
-                      >
-                        {copied === v.ref ? <><Check size={12} /> Copied</> : <><Copy size={12} /> Copy</>}
-                      </button>
+                      <div style={{ display: "flex", gap: "6px" }}>
+                        <button
+                          onClick={() => handleCopy(v.ref, v.text)}
+                          style={{ display: "flex", alignItems: "center", gap: "4px", padding: "4px 10px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
+                        >
+                          {copied === v.ref ? <><Check size={12} /> Copied</> : <><Copy size={12} /> Copy</>}
+                        </button>
+                        <button
+                          onClick={() => handleToggleSave(v.ref, v.text)}
+                          style={{
+                            display: "flex", alignItems: "center", gap: "4px",
+                            padding: "4px 10px", background: isFavorite(`verse-${v.ref}`) ? "var(--gold)" : "var(--cream)",
+                            border: `1px solid ${isFavorite(`verse-${v.ref}`) ? "var(--gold)" : "var(--border)"}`,
+                            borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)",
+                            fontWeight: 600,
+                            color: isFavorite(`verse-${v.ref}`) ? "var(--charcoal)" : "var(--ink3)",
+                            cursor: "pointer", transition: "all 0.2s",
+                          }}
+                          title={isFavorite(`verse-${v.ref}`) ? "Remove from saved" : "Save verse"}
+                        >
+                          <Heart size={12} fill={isFavorite(`verse-${v.ref}`) ? "var(--charcoal)" : "none"} />
+                          {isFavorite(`verse-${v.ref}`) ? "Saved" : "Save"}
+                        </button>
+                      </div>
                     </div>
                     <p style={{ fontSize: "16px", lineHeight: 1.8, color: "var(--ink)", fontFamily: "var(--B)", fontStyle: "italic" }}>
                       "{v.text}"

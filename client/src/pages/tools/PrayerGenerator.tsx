@@ -2,6 +2,8 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { useState } from "react";
 import { Heart, Copy, Check, RefreshCw } from "lucide-react";
+import { useFavorites } from "@/hooks/useFavorites";
+import { Link } from "wouter";
 
 const PRAYERS: Record<string, string[]> = {
   "Morning Prayer": [
@@ -52,8 +54,22 @@ export default function PrayerGenerator() {
   const [selected, setSelected] = useState<string | null>(null);
   const [index, setIndex] = useState(0);
   const [copied, setCopied] = useState(false);
+  const { favorites, addFavorite, removeFavorite, isFavorite } = useFavorites("livewell-saved-prayers");
 
   const prayer = selected ? PRAYERS[selected][index % PRAYERS[selected].length] : null;
+
+  const currentPrayerId = selected && prayer
+    ? `prayer-${selected}-${index % PRAYERS[selected].length}`
+    : null;
+
+  const handleToggleSavePrayer = () => {
+    if (!prayer || !selected || !currentPrayerId) return;
+    if (isFavorite(currentPrayerId)) {
+      removeFavorite(currentPrayerId);
+    } else {
+      addFavorite({ id: currentPrayerId, type: "prayer", content: { type: selected, text: prayer } });
+    }
+  };
 
   const handleCopy = () => {
     if (prayer) {
@@ -94,6 +110,19 @@ export default function PrayerGenerator() {
           <p style={{ fontSize: "17px", lineHeight: 1.7, opacity: 0.85, fontFamily: "var(--B)" }}>
             Select a prayer type and receive a guided prayer you can personalize and make your own.
           </p>
+          {favorites.length > 0 && (
+            <Link
+              href="/tools/saved"
+              style={{
+                display: "inline-block", marginTop: "16px",
+                fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)",
+                color: "var(--gold)", textDecoration: "underline",
+                textUnderlineOffset: "3px",
+              }}
+            >
+              Saved Prayers ({favorites.length})
+            </Link>
+          )}
         </div>
       </section>
 
@@ -135,6 +164,22 @@ export default function PrayerGenerator() {
               <div style={{ display: "flex", gap: "12px", marginTop: "28px", flexWrap: "wrap" }}>
                 <button onClick={handleCopy} style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}>
                   {copied ? <><Check size={14} /> Copied</> : <><Copy size={14} /> Copy Prayer</>}
+                </button>
+                <button
+                  onClick={handleToggleSavePrayer}
+                  style={{
+                    display: "flex", alignItems: "center", gap: "6px",
+                    padding: "10px 20px",
+                    background: currentPrayerId && isFavorite(currentPrayerId) ? "var(--gold)" : "var(--cream)",
+                    border: `1px solid ${currentPrayerId && isFavorite(currentPrayerId) ? "var(--gold)" : "var(--border)"}`,
+                    borderRadius: "6px", fontSize: "13px", fontWeight: 600,
+                    fontFamily: "var(--U)",
+                    color: currentPrayerId && isFavorite(currentPrayerId) ? "var(--charcoal)" : "var(--ink)",
+                    cursor: "pointer", transition: "all 0.2s",
+                  }}
+                >
+                  <Heart size={14} fill={currentPrayerId && isFavorite(currentPrayerId) ? "var(--charcoal)" : "none"} />
+                  {currentPrayerId && isFavorite(currentPrayerId) ? "Saved" : "Save Prayer"}
                 </button>
                 <button onClick={handleAnother} style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--gold)", border: "none", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}>
                   <RefreshCw size={14} /> Another Prayer

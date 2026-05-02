@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
 import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby, Brain } from "lucide-react";
+import { useFavorites } from "@/hooks/useFavorites";
 
 const TOOLS = [
   {
@@ -63,6 +64,10 @@ const TOOLS = [
 ];
 
 export default function ToolsHub() {
+  const verses = useFavorites("livewell-saved-verses");
+  const prayers = useFavorites("livewell-saved-prayers");
+  const totalSaved = verses.favorites.length + prayers.favorites.length;
+
   return (
     <Layout>
       <SEOMeta
@@ -129,6 +134,21 @@ export default function ToolsHub() {
               );
             })}
           </div>
+
+          {totalSaved > 0 && (
+            <div style={{ textAlign: "center", marginTop: "32px" }}>
+              <Link
+                href="/tools/saved"
+                style={{
+                  fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)",
+                  color: "var(--mustard)", textDecoration: "underline",
+                  textUnderlineOffset: "3px",
+                }}
+              >
+                Saved Items ({totalSaved})
+              </Link>
+            </div>
+          )}
         </div>
       </section>
 

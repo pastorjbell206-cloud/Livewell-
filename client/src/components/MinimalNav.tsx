@@ -201,8 +201,11 @@ export default function MinimalNav() {
             {/* Search Icon */}
             <button
               onClick={() => setSearchOpen(true)}
-              style={{ background: "none", border: "none", color: "var(--ink)", cursor: "pointer", padding: "8px", display: "flex", alignItems: "center", marginLeft: "4px" }}
+              onMouseEnter={(e) => { e.currentTarget.style.color = "var(--gold)"; e.currentTarget.style.background = "rgba(212,160,23,0.08)"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.color = "var(--ink)"; e.currentTarget.style.background = "none"; }}
+              style={{ background: "none", border: "none", color: "var(--ink)", cursor: "pointer", padding: "8px", display: "flex", alignItems: "center", marginLeft: "4px", borderRadius: "4px", transition: "color 0.2s, background 0.2s" }}
               aria-label="Search essays"
+              title="Search essays"
             >
               <Search size={18} />
             </button>
