@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
-import { BookOpen, Heart, Users, Search, HeartHandshake } from "lucide-react";
+import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby } from "lucide-react";
 
 const TOOLS = [
   {
@@ -38,6 +38,20 @@ const TOOLS = [
     href: "/tools/marriage-assessment",
     icon: HeartHandshake,
     color: "var(--gold)",
+  },
+  {
+    title: "Financial Health Check",
+    description: "A biblical stewardship assessment across generosity, contentment, stewardship, and family provision. Scripture-grounded with practical next steps.",
+    href: "/tools/financial-health",
+    icon: DollarSign,
+    color: "var(--ink2)",
+  },
+  {
+    title: "Parenting Stage Guide",
+    description: "Age-specific guidance from toddlers to young adults. What your child needs, how to talk about God, common mistakes, and one practice to start this week.",
+    href: "/tools/parenting-guide",
+    icon: Baby,
+    color: "var(--ink)",
   },
 ];
 
