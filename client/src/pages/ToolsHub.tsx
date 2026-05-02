@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
-import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby, Brain, Mic, BookMarked, MessageCircle, Shield } from "lucide-react";
+import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby, Brain, Mic, BookMarked, MessageCircle, Shield, Target, Church } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
 
 const TOOLS = [
@@ -88,6 +88,20 @@ const TOOLS = [
     href: "/tools/pastor-burnout",
     icon: Shield,
     color: "var(--ink2)",
+  },
+  {
+    title: "Life Audit",
+    description: "24 questions across 8 life areas: spiritual, marriage, parenting, physical, financial, emotional, vocational, community. Your strengths and growth areas identified.",
+    href: "/tools/life-audit",
+    icon: Target,
+    color: "var(--gold)",
+  },
+  {
+    title: "Church Health Check",
+    description: "18 questions across worship, discipleship, outreach, leadership, stewardship, and congregational care. For pastors assessing their church.",
+    href: "/tools/church-health",
+    icon: Church,
+    color: "var(--ink)",
   },
 ];
 
