@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
-import { BookOpen, Heart, Users, Search } from "lucide-react";
+import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby, Brain } from "lucide-react";
 
 const TOOLS = [
   {
@@ -31,6 +31,34 @@ const TOOLS = [
     href: "/tools/bible-study",
     icon: Search,
     color: "var(--ink)",
+  },
+  {
+    title: "Marriage Health Assessment",
+    description: "A 15-question diagnostic across communication, intimacy, trust, shared vision, and conflict. Not a quiz — a real assessment with actionable recommendations.",
+    href: "/tools/marriage-assessment",
+    icon: HeartHandshake,
+    color: "var(--gold)",
+  },
+  {
+    title: "Financial Health Check",
+    description: "A biblical stewardship assessment across generosity, contentment, stewardship, and family provision. Scripture-grounded with practical next steps.",
+    href: "/tools/financial-health",
+    icon: DollarSign,
+    color: "var(--ink2)",
+  },
+  {
+    title: "Parenting Stage Guide",
+    description: "Age-specific guidance from toddlers to young adults. What your child needs, how to talk about God, common mistakes, and one practice to start this week.",
+    href: "/tools/parenting-guide",
+    icon: Baby,
+    color: "var(--ink)",
+  },
+  {
+    title: "Emotional Health Assessment",
+    description: "15 questions across self-awareness, boundaries, grief, forgiveness, and rest. Scripture-grounded diagnostic with practical next steps.",
+    href: "/tools/emotional-health",
+    icon: Brain,
+    color: "var(--gold)",
   },
 ];
 

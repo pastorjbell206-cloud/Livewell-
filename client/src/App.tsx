@@ -39,6 +39,10 @@ const ToolsHub = lazy(() => import("./pages/ToolsHub"));
 const VerseFinder = lazy(() => import("./pages/tools/VerseFinder"));
 const PrayerGenerator = lazy(() => import("./pages/tools/PrayerGenerator"));
 const BibleStudy = lazy(() => import("./pages/tools/BibleStudy"));
+const MarriageAssessment = lazy(() => import("./pages/tools/MarriageAssessment"));
+const FinancialHealth = lazy(() => import("./pages/tools/FinancialHealth"));
+const ParentingGuide = lazy(() => import("./pages/tools/ParentingGuide"));
+const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const WorkWithJames = lazy(() => import("./pages/WorkWithJames"));
 const ReadingPathDetail = lazy(() =>
   import("./pages/ReadingPathDetail").then((m) => ({ default: m.ReadingPathDetail }))
@@ -131,6 +135,10 @@ function Router() {
         <Route path="/tools/verse-finder" component={VerseFinder} />
         <Route path="/tools/prayer-generator" component={PrayerGenerator} />
         <Route path="/tools/bible-study" component={BibleStudy} />
+        <Route path="/tools/marriage-assessment" component={MarriageAssessment} />
+        <Route path="/tools/financial-health" component={FinancialHealth} />
+        <Route path="/tools/parenting-guide" component={ParentingGuide} />
+        <Route path="/tools/emotional-health" component={EmotionalHealth} />
         <Route path="/work-with-james" component={WorkWithJames} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/terms" component={Terms} />
