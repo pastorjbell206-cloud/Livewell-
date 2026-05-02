@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { ToolActions } from "@/components/ToolActions";
 import { useState, useRef } from "react";
 import {
   ArrowLeft,
@@ -9,6 +10,7 @@ import {
   AlertTriangle,
   Phone,
 } from "lucide-react";
+import { EmailResults } from "@/components/EmailResults";
 
 /* ── Types ─────────────────────────────────────────────────────── */
 
@@ -891,6 +893,8 @@ export default function PastorBurnout() {
           style={{ padding: "48px 32px 80px", background: "var(--bone)" }}
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
+            <ToolActions toolName="Pastor Burnout Diagnostic" />
+
             {/* Overall Score */}
             <div
               style={{
@@ -1540,6 +1544,24 @@ export default function PastorBurnout() {
                 Retake Assessment
               </button>
             </div>
+
+            {/* Email Results */}
+            <EmailResults
+              toolName="Pastor Burnout Diagnostic"
+              resultsSummary={
+                `Pastor Burnout Diagnostic Results\n\nOverall: ${totalScore}/120 (${overall.label})\n\n` +
+                CATEGORIES.map(
+                  (cat) => {
+                    const score = getCategoryScore(cat);
+                    const level = getScoreLevel(score, 15);
+                    return `${cat.name}: ${score}/15 (${getLevelLabel(level)})`;
+                  }
+                ).join("\n") +
+                (burnoutDrivers.length > 0
+                  ? `\n\nBurnout Signature: ${burnoutDrivers.map((d) => `${d.cat.name} (${d.score}/15)`).join(", ")}`
+                  : "")
+              }
+            />
 
             {/* Next Step CTAs */}
             <div

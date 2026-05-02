@@ -1,7 +1,9 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { ToolActions } from "@/components/ToolActions";
 import { useState, useRef } from "react";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer } from "lucide-react";
+import { EmailResults } from "@/components/EmailResults";
 
 /* ── Types ─────────────────────────────────────────────────────── */
 
@@ -700,6 +702,8 @@ export default function MarriageAssessment() {
           style={{ padding: "48px 32px 80px", background: "var(--bone)" }}
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
+            <ToolActions toolName="Marriage Health Assessment" />
+
             {/* Overall Score */}
             <div
               style={{
@@ -1063,6 +1067,18 @@ export default function MarriageAssessment() {
                 Retake Assessment
               </button>
             </div>
+
+            {/* Email Results */}
+            <EmailResults
+              toolName="Marriage Health Assessment"
+              resultsSummary={
+                `Marriage Health Assessment Results\n\nOverall: ${totalScore}/75 (${overall.label})\n\n` +
+                CATEGORIES.map(
+                  (cat) =>
+                    `${cat.name}: ${getCategoryScore(cat)}/15 (${getScoreLevel(getCategoryScore(cat), 15) === "high" ? "Strength" : getScoreLevel(getCategoryScore(cat), 15) === "mid" ? "Growing" : "Needs Attention"})`
+                ).join("\n")
+              }
+            />
 
             {/* Next Step CTA */}
             <a

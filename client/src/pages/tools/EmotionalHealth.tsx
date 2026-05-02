@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { ToolActions } from "@/components/ToolActions";
 import { useState } from "react";
 import { ArrowLeft, ChevronRight } from "lucide-react";
 
@@ -473,6 +474,8 @@ export default function EmotionalHealth() {
           ) : (
             <>
               {/* Results */}
+              <ToolActions toolName="Emotional Health Assessment" />
+
               <button
                 onClick={handleReset}
                 style={{

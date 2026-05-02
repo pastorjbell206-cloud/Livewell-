@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { ToolActions } from "@/components/ToolActions";
 import { useState, useRef } from "react";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer } from "lucide-react";
 
@@ -712,6 +713,8 @@ export default function FinancialHealth() {
           style={{ padding: "48px 32px 80px", background: "var(--bone)" }}
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
+            <ToolActions toolName="Financial Health Check" />
+
             {/* Overall Score */}
             <div
               style={{

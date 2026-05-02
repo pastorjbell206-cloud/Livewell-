@@ -76,6 +76,76 @@ const VERSES: Record<string, { ref: string; text: string }[]> = {
     { ref: "Psalm 37:5", text: "Commit your way to the Lord; trust in him and he will do this." },
     { ref: "Romans 12:2", text: "Do not conform to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God's will is." },
   ],
+  Loneliness: [
+    { ref: "Psalm 68:6", text: "God sets the lonely in families, he leads out the prisoners with singing; but the rebellious live in a sun-scorched land." },
+    { ref: "Deuteronomy 31:8", text: "The Lord himself goes before you and will be with you; he will never leave you nor forsake you. Do not be afraid; do not be discouraged." },
+    { ref: "Psalm 25:16-17", text: "Turn to me and be gracious to me, for I am lonely and afflicted. Relieve the troubles of my heart and free me from my anguish." },
+    { ref: "Matthew 28:20", text: "And surely I am with you always, to the very end of the age." },
+    { ref: "Psalm 139:7-10", text: "Where can I go from your Spirit? Where can I flee from your presence? If I go up to the heavens, you are there; if I make my bed in the depths, you are there." },
+  ],
+  Temptation: [
+    { ref: "1 Corinthians 10:13", text: "No temptation has overtaken you except what is common to mankind. And God is faithful; he will not let you be tempted beyond what you can bear." },
+    { ref: "James 1:12", text: "Blessed is the one who perseveres under trial because, having stood the test, that person will receive the crown of life that the Lord has promised to those who love him." },
+    { ref: "Hebrews 4:15-16", text: "For we do not have a high priest who is unable to empathize with our weaknesses, but we have one who has been tempted in every way, just as we are — yet he did not sin." },
+    { ref: "Matthew 26:41", text: "Watch and pray so that you will not fall into temptation. The spirit is willing, but the flesh is weak." },
+    { ref: "James 4:7", text: "Submit yourselves, then, to God. Resist the devil, and he will flee from you." },
+  ],
+  Identity: [
+    { ref: "2 Corinthians 5:17", text: "Therefore, if anyone is in Christ, the new creation has come: The old has gone, the new is here!" },
+    { ref: "Ephesians 2:10", text: "For we are God's handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do." },
+    { ref: "1 Peter 2:9", text: "But you are a chosen people, a royal priesthood, a holy nation, God's special possession, that you may declare the praises of him who called you out of darkness into his wonderful light." },
+    { ref: "Galatians 2:20", text: "I have been crucified with Christ and I no longer live, but Christ lives in me. The life I now live in the body, I live by faith in the Son of God, who loved me and gave himself for me." },
+    { ref: "Psalm 139:14", text: "I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well." },
+  ],
+  Purpose: [
+    { ref: "Jeremiah 1:5", text: "Before I formed you in the womb I knew you, before you were born I set you apart; I appointed you as a prophet to the nations." },
+    { ref: "Ephesians 1:11", text: "In him we were also chosen, having been predestined according to the plan of him who works out everything in conformity with the purpose of his will." },
+    { ref: "Philippians 1:6", text: "Being confident of this, that he who began a good work in you will carry it on to completion until the day of Christ Jesus." },
+    { ref: "Proverbs 19:21", text: "Many are the plans in a person's heart, but it is the Lord's purpose that prevails." },
+    { ref: "Romans 8:28", text: "And we know that in all things God works for the good of those who love him, who have been called according to his purpose." },
+  ],
+  Anger: [
+    { ref: "James 1:19-20", text: "My dear brothers and sisters, take note of this: Everyone should be quick to listen, slow to speak and slow to become angry, because human anger does not produce the righteousness that God desires." },
+    { ref: "Proverbs 15:1", text: "A gentle answer turns away wrath, but a harsh word stirs up anger." },
+    { ref: "Ephesians 4:26-27", text: "In your anger do not sin: Do not let the sun go down while you are still angry, and do not give the devil a foothold." },
+    { ref: "Proverbs 14:29", text: "Whoever is patient has great understanding, but one who is quick-tempered displays folly." },
+    { ref: "Psalm 37:8", text: "Refrain from anger and turn from wrath; do not fret — it leads only to evil." },
+  ],
+  Jealousy: [
+    { ref: "Proverbs 14:30", text: "A heart at peace gives life to the body, but envy rots the bones." },
+    { ref: "Galatians 5:26", text: "Let us not become conceited, provoking and envying each other." },
+    { ref: "James 3:16", text: "For where you have envy and selfish ambition, there you find disorder and every evil practice." },
+    { ref: "1 Corinthians 13:4", text: "Love is patient, love is kind. It does not envy, it does not boast, it is not proud." },
+    { ref: "Psalm 37:1-4", text: "Do not fret because of those who are evil or be envious of those who do wrong. Trust in the Lord and do good; dwell in the land and enjoy safe pasture. Take delight in the Lord, and he will give you the desires of your heart." },
+  ],
+  Depression: [
+    { ref: "Psalm 42:11", text: "Why, my soul, are you downcast? Why so disturbed within me? Put your hope in God, for I will yet praise him, my Savior and my God." },
+    { ref: "Psalm 40:1-2", text: "I waited patiently for the Lord; he turned to me and heard my cry. He lifted me out of the slimy pit, out of the mud and mire; he set my feet on a rock and gave me a firm place to stand." },
+    { ref: "Isaiah 61:3", text: "To bestow on them a crown of beauty instead of ashes, the oil of joy instead of mourning, and a garment of praise instead of a spirit of despair." },
+    { ref: "Psalm 34:17-18", text: "The righteous cry out, and the Lord hears them; he delivers them from all their troubles. The Lord is close to the brokenhearted and saves those who are crushed in spirit." },
+    { ref: "Romans 8:38-39", text: "For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord." },
+  ],
+  Parenting: [
+    { ref: "Proverbs 22:6", text: "Start children off on the way they should go, and even when they are old they will not turn from it." },
+    { ref: "Deuteronomy 6:6-7", text: "These commandments that I give you today are to be on your hearts. Impress them on your children. Talk about them when you sit at home and when you walk along the road, when you lie down and when you get up." },
+    { ref: "Psalm 127:3", text: "Children are a heritage from the Lord, offspring a reward from him." },
+    { ref: "Ephesians 6:4", text: "Fathers, do not exasperate your children; instead, bring them up in the training and instruction of the Lord." },
+    { ref: "3 John 1:4", text: "I have no greater joy than to hear that my children are walking in the truth." },
+  ],
+  "Work & Vocation": [
+    { ref: "Colossians 3:23-24", text: "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters, since you know that you will receive an inheritance from the Lord as a reward. It is the Lord Christ you are serving." },
+    { ref: "Proverbs 16:3", text: "Commit to the Lord whatever you do, and he will establish your plans." },
+    { ref: "Genesis 2:15", text: "The Lord God took the man and put him in the Garden of Eden to work it and take care of it." },
+    { ref: "Ecclesiastes 9:10", text: "Whatever your hand finds to do, do it with all your might, for in the realm of the dead, where you are going, there is neither working nor planning nor knowledge nor wisdom." },
+    { ref: "1 Corinthians 10:31", text: "So whether you eat or drink or whatever you do, do it all for the glory of God." },
+  ],
+  "End Times": [
+    { ref: "Revelation 21:1-2", text: "Then I saw a new heaven and a new earth, for the first heaven and the first earth had passed away, and there was no longer any sea. I saw the Holy City, the new Jerusalem, coming down out of heaven from God, prepared as a bride beautifully dressed for her husband." },
+    { ref: "1 Thessalonians 4:16-17", text: "For the Lord himself will come down from heaven, with a loud command, with the voice of the archangel and with the trumpet call of God, and the dead in Christ will rise first. After that, we who are still alive and are left will be caught up together with them in the clouds to meet the Lord in the air." },
+    { ref: "Matthew 24:42", text: "Therefore keep watch, because you do not know on what day your Lord will come." },
+    { ref: "2 Peter 3:13", text: "But in keeping with his promise we are looking forward to a new heaven and a new earth, where righteousness dwells." },
+    { ref: "Revelation 22:12", text: "Look, I am coming soon! My reward is with me, and I will give to each person according to what they have done." },
+  ],
 };
 
 const TOPICS = Object.keys(VERSES);
@@ -83,7 +153,22 @@ const TOPICS = Object.keys(VERSES);
 export default function VerseFinder() {
   const [selected, setSelected] = useState<string | null>(null);
   const [copied, setCopied] = useState<string | null>(null);
+  const [shared, setShared] = useState<string | null>(null);
+  const [searchFilter, setSearchFilter] = useState("");
   const { favorites, addFavorite, removeFavorite, isFavorite } = useFavorites("livewell-saved-verses");
+
+  // Daily Verse — cycles through all verses based on day of year
+  const dailyVerse = useMemo(() => {
+    const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000);
+    const allVerses = Object.values(VERSES).flat();
+    return allVerses[dayOfYear % allVerses.length];
+  }, []);
+
+  // Filter topics by search input
+  const filteredTopics = useMemo(() => {
+    if (!searchFilter.trim()) return TOPICS;
+    return TOPICS.filter((t) => t.toLowerCase().includes(searchFilter.toLowerCase()));
+  }, [searchFilter]);
 
   const handleToggleSave = (ref: string, text: string) => {
     const id = `verse-${ref}`;
@@ -98,6 +183,13 @@ export default function VerseFinder() {
     navigator.clipboard.writeText(`${ref} — ${text}`);
     setCopied(ref);
     setTimeout(() => setCopied(null), 2000);
+  };
+
+  const handleShare = (ref: string, text: string) => {
+    const shareText = `\u{1F4D6} ${ref} — ${text} — via LiveWell by James Bell (livewellbyjamesbell.co/tools/verse-finder)`;
+    navigator.clipboard.writeText(shareText);
+    setShared(ref);
+    setTimeout(() => setShared(null), 2000);
   };
 
   return (
@@ -144,10 +236,72 @@ export default function VerseFinder() {
         </div>
       </section>
 
+      {/* Daily Verse */}
+      <section style={{ padding: "36px 32px 0", background: "var(--paper)" }}>
+        <div className="wrap" style={{ maxWidth: "900px" }}>
+          <div style={{
+            padding: "28px 32px",
+            background: "white",
+            border: "1px solid var(--border)",
+            borderRadius: "10px",
+            borderLeft: "4px solid var(--gold)",
+          }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "14px" }}>
+              <Sun size={16} style={{ color: "var(--gold)" }} />
+              <span style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.18em", color: "var(--gold)", fontFamily: "var(--U)", textTransform: "uppercase" }}>
+                Verse of the Day
+              </span>
+            </div>
+            <span style={{ fontSize: "14px", fontWeight: 700, color: "var(--gold)", fontFamily: "var(--U)", display: "block", marginBottom: "8px" }}>
+              {dailyVerse.ref}
+            </span>
+            <p style={{ fontSize: "16px", lineHeight: 1.8, color: "var(--ink)", fontFamily: "var(--B)", fontStyle: "italic", margin: 0 }}>
+              "{dailyVerse.text}"
+            </p>
+            <div style={{ display: "flex", gap: "8px", marginTop: "16px" }}>
+              <button
+                onClick={() => handleCopy(dailyVerse.ref, dailyVerse.text)}
+                style={{ display: "flex", alignItems: "center", gap: "4px", padding: "6px 14px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
+              >
+                {copied === dailyVerse.ref ? <><Check size={12} /> Copied</> : <><Copy size={12} /> Copy</>}
+              </button>
+              <button
+                onClick={() => handleShare(dailyVerse.ref, dailyVerse.text)}
+                style={{ display: "flex", alignItems: "center", gap: "4px", padding: "6px 14px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
+              >
+                {shared === dailyVerse.ref ? <><Check size={12} /> Copied</> : <><Share2 size={12} /> Share</>}
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section style={{ padding: "48px 32px", background: "var(--paper)" }}>
         <div className="wrap" style={{ maxWidth: "900px" }}>
+          {/* Search / Filter */}
+          <div style={{ position: "relative", marginBottom: "20px" }}>
+            <Search size={16} style={{ position: "absolute", left: "14px", top: "50%", transform: "translateY(-50%)", color: "var(--ink3)", pointerEvents: "none" }} />
+            <input
+              type="text"
+              placeholder="Filter topics..."
+              value={searchFilter}
+              onChange={(e) => setSearchFilter(e.target.value)}
+              style={{
+                width: "100%",
+                padding: "12px 16px 12px 40px",
+                background: "white",
+                border: "1px solid var(--border)",
+                borderRadius: "6px",
+                fontSize: "14px",
+                fontFamily: "var(--B)",
+                color: "var(--ink)",
+                outline: "none",
+                boxSizing: "border-box",
+              }}
+            />
+          </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))", gap: "12px", marginBottom: "40px" }}>
-            {TOPICS.map((topic) => (
+            {filteredTopics.map((topic) => (
               <button
                 key={topic}
                 onClick={() => setSelected(topic)}
@@ -188,6 +342,12 @@ export default function VerseFinder() {
                           {copied === v.ref ? <><Check size={12} /> Copied</> : <><Copy size={12} /> Copy</>}
                         </button>
                         <button
+                          onClick={() => handleShare(v.ref, v.text)}
+                          style={{ display: "flex", alignItems: "center", gap: "4px", padding: "4px 10px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
+                        >
+                          {shared === v.ref ? <><Check size={12} /> Copied</> : <><Share2 size={12} /> Share</>}
+                        </button>
+                        <button
                           onClick={() => handleToggleSave(v.ref, v.text)}
                           style={{
                             display: "flex", alignItems: "center", gap: "4px",
@@ -214,7 +374,14 @@ export default function VerseFinder() {
             </div>
           )}
 
-          {!selected && (
+          {!selected && filteredTopics.length === 0 && (
+            <div style={{ textAlign: "center", padding: "40px", color: "var(--ink3)" }}>
+              <Search size={48} style={{ margin: "0 auto 16px", opacity: 0.3 }} />
+              <p style={{ fontFamily: "var(--B)", fontSize: "16px" }}>No topics match "{searchFilter}"</p>
+            </div>
+          )}
+
+          {!selected && filteredTopics.length > 0 && (
             <div style={{ textAlign: "center", padding: "40px", color: "var(--ink3)" }}>
               <BookOpen size={48} style={{ margin: "0 auto 16px", opacity: 0.3 }} />
               <p style={{ fontFamily: "var(--B)", fontSize: "16px" }}>Select a topic above to find verses</p>
