@@ -93,7 +93,7 @@ export default function Marriage() {
           <p style={{ fontSize: "18px", lineHeight: "1.8", marginBottom: "32px", color: "rgba(255,255,255,0.75)" }}>
             Covenant theology applied to the actual experience of marriage — the drift, the conflict, the repair, and the costly love that holds.
           </p>
-          <Link href="/quiz" style={{ textDecoration: "none" }}>
+          <Link href="/tools/marriage-assessment" style={{ textDecoration: "none" }}>
             <button style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
               Marriage Health Assessment
             </button>
@@ -194,7 +194,7 @@ export default function Marriage() {
           <p style={{ fontSize: "16px", lineHeight: "1.8", marginBottom: "32px", color: "var(--ink3)" }}>
             Start with the Marriage Health Assessment. It takes 10 minutes and will show you exactly where your marriage is strongest and where repair work begins.
           </p>
-          <Link href="/quiz" style={{ textDecoration: "none" }}>
+          <Link href="/tools/marriage-assessment" style={{ textDecoration: "none" }}>
             <button style={{ background: "var(--ink)", color: "#ffffff", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
               Take the Assessment
             </button>

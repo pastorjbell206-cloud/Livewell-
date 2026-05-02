@@ -23,7 +23,7 @@ export default function Home() {
   const schema = {
     "@context": "https://schema.org", "@type": "WebSite",
     name: "LiveWell by James Bell", url: "https://livewellbyjamesbell.co",
-    description: "Theology for marriage, parenting, faith crisis, and doubt. 880+ free essays by James Bell.",
+    description: "Theology for marriage, parenting, faith crisis, and doubt. 160+ free essays by James Bell.",
     potentialAction: { "@type": "SearchAction", target: "https://livewellbyjamesbell.co/writing?q={search_term_string}", "query-input": "required name=search_term_string" },
   };
 
@@ -31,7 +31,7 @@ export default function Home() {
     <div>
       <SEOMeta
         title="LiveWell by James Bell — Theology for Marriage, Parenting, Faith & Doubt"
-        description="Free theology for your actual life. 880+ essays on Christian marriage, parenting with faith, doubt and deconstruction, and reading the Bible honestly. By James Bell, author of 25 books."
+        description="Free theology for your actual life. 160+ essays on Christian marriage, parenting with faith, doubt and deconstruction, and reading the Bible honestly. By James Bell, author of 25 books."
         url="https://livewellbyjamesbell.co"
         type="website"
         structuredData={schema}
@@ -45,7 +45,7 @@ export default function Home() {
             Theology for your actual life.
           </h1>
           <p style={{ fontSize: "1.05rem", lineHeight: 1.7, color: "var(--bone)", opacity: 0.6, maxWidth: "520px", marginBottom: "2rem" }}>
-            Christian marriage help. Parenting with theological depth. Faith crisis and honest doubt. 880+ free essays. 25 books.
+            Christian marriage help. Parenting with theological depth. Faith crisis and honest doubt. 160+ free essays. 25 books.
           </p>
           <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
             <Link href="/writing" style={{ textDecoration: "none" }}>
@@ -103,7 +103,7 @@ export default function Home() {
           </div>
           <div style={{ marginTop: "2rem", textAlign: "center" }}>
             <Link href="/writing" style={{ fontFamily: "var(--U)", fontSize: "0.85rem", fontWeight: 500, color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.2rem" }}>
-              All 880+ essays <ArrowRight size={12} style={{ display: "inline", verticalAlign: "middle" }} />
+              All 160+ essays <ArrowRight size={12} style={{ display: "inline", verticalAlign: "middle" }} />
             </Link>
           </div>
         </div>
