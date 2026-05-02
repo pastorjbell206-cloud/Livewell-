@@ -44,6 +44,10 @@ const FinancialHealth = lazy(() => import("./pages/tools/FinancialHealth"));
 const ParentingGuide = lazy(() => import("./pages/tools/ParentingGuide"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
+const SermonOutline = lazy(() => import("./pages/tools/SermonOutline"));
+const ScriptureMemory = lazy(() => import("./pages/tools/ScriptureMemory"));
+const ConflictGuide = lazy(() => import("./pages/tools/ConflictGuide"));
+const PastorBurnoutTool = lazy(() => import("./pages/tools/PastorBurnout"));
 const WorkWithJames = lazy(() => import("./pages/WorkWithJames"));
 const PastoralBurnout = lazy(() => import("./pages/landing/PastoralBurnout"));
 const FaithCrisis = lazy(() => import("./pages/landing/FaithCrisis"));
@@ -146,6 +150,10 @@ function Router() {
         <Route path="/tools/parenting-guide" component={ParentingGuide} />
         <Route path="/tools/emotional-health" component={EmotionalHealth} />
         <Route path="/tools/saved" component={SavedItems} />
+        <Route path="/tools/sermon-outline" component={SermonOutline} />
+        <Route path="/tools/scripture-memory" component={ScriptureMemory} />
+        <Route path="/tools/conflict-guide" component={ConflictGuide} />
+        <Route path="/tools/pastor-burnout" component={PastorBurnoutTool} />
         <Route path="/work-with-james" component={WorkWithJames} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/terms" component={Terms} />

@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
-import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby, Brain } from "lucide-react";
+import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby, Brain, Mic, BookMarked, MessageCircle, Shield } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
 
 const TOOLS = [
@@ -60,6 +60,34 @@ const TOOLS = [
     href: "/tools/emotional-health",
     icon: Brain,
     color: "var(--gold)",
+  },
+  {
+    title: "Sermon Outline Generator",
+    description: "Enter a topic and audience, get a structured 3-point sermon outline with Scripture, illustrations, and application questions.",
+    href: "/tools/sermon-outline",
+    icon: Mic,
+    color: "var(--ink2)",
+  },
+  {
+    title: "Scripture Memory System",
+    description: "Memorize 40 key verses across 8 categories. First-letter mode, fill-in-the-blank, and full recall practice with progress tracking.",
+    href: "/tools/scripture-memory",
+    icon: BookMarked,
+    color: "var(--ink)",
+  },
+  {
+    title: "Conflict Resolution Guide",
+    description: "A 5-step guided process for 8 common conflict types. Name what happened, name what you feel, agree on one next step.",
+    href: "/tools/conflict-guide",
+    icon: MessageCircle,
+    color: "var(--gold)",
+  },
+  {
+    title: "Pastor Burnout Diagnostic",
+    description: "24 questions across calling, isolation, marriage impact, board relations, and more. Your burnout signature with a recovery roadmap.",
+    href: "/tools/pastor-burnout",
+    icon: Shield,
+    color: "var(--ink2)",
   },
 ];
 
