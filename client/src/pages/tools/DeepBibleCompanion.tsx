@@ -351,15 +351,268 @@ const BOOKS: BibleBook[] = [
   },
   {
     name: "Proverbs", testament: "OT", hook: "Wisdom for people who have to make decisions today",
-    passages: [],
+    passages: [
+      {
+        ref: "Proverbs 1:1-7",
+        summary: "The thesis statement of the entire book and what fear actually means",
+        text: "The proverbs of Solomon son of David, king of Israel: for gaining wisdom and instruction; for understanding words of insight; for receiving instruction in prudent behavior... The fear of the Lord is the beginning of knowledge, but fools despise wisdom and instruction.",
+        paraphrase: "Before any advice is given, the book tells you why it exists: to make you wise, not just informed. And the foundation of all wisdom is this: take God seriously. Not terror. Reverence. The posture of someone who knows they are not the smartest person in the room, because God is.",
+        keyWords: [
+          { word: "fear", original: "yirah (Hebrew)", meaning: "Not terror or dread. Yirah is reverence, awe, the proper response to standing before something vastly greater than yourself. It is the posture of a student before a master, a creature before a Creator. Fear in this sense is not the opposite of love. It is the beginning of it." },
+          { word: "wisdom", original: "chokmah (Hebrew)", meaning: "Not intelligence or education. Chokmah is skill for living. It is the ability to navigate the world as it actually is, not as you wish it were. In the ancient world, the same word was used for a craftsman's skill. Wisdom is practical, not abstract." },
+          { word: "beginning", original: "reshith (Hebrew)", meaning: "Can mean 'beginning,' 'first principle,' or 'foundation.' The fear of the Lord is not where wisdom starts and then moves past. It is the foundation on which every other insight is built. Remove it and the structure collapses." },
+        ],
+        historical: [
+          "Solomon's association with Proverbs is real but complex. He authored many proverbs, but the book was compiled over centuries. Chapters 25-29 are attributed to Solomon but collected by 'the men of Hezekiah,' two hundred years later. Proverbs is not one author's work. It is a tradition's accumulated wisdom.",
+          "Wisdom literature was an international genre in the ancient Near East. Egypt had 'The Instruction of Amenemope,' which shares striking parallels with Proverbs 22-24. Israel participated in a broader wisdom tradition but anchored it in covenant theology: wisdom begins with YHWH, not with human observation alone.",
+          "Proverbs is structured in two main sections: chapters 1-9 are extended instruction speeches from a father (or teacher) to a son, personifying wisdom as a woman who calls out in the streets. Chapters 10-31 shift to sentence proverbs, short two-line observations. The instruction speeches set the theological framework. The sentence proverbs apply it to daily life.",
+        ],
+        literary: {
+          genre: "Wisdom literature. Proverbs is not prophecy, not law, not narrative. It is observation refined into instruction. The genre assumes that the world has a moral order built into it by God, and that attentive people can discern that order and live accordingly.",
+          devices: "Parallelism is the primary device: synonymous (line B restates line A), antithetic (line B contrasts line A), and synthetic (line B completes line A). The personification of Wisdom as a woman (Lady Wisdom in chapter 1) creates a dramatic contrast with the 'forbidden woman' who represents folly.",
+          keyTerms: [
+            { term: "yirah", language: "Hebrew", meaning: "'Fear, reverence, awe.' The controlling concept of the entire book. Without this orientation toward God, all other wisdom becomes mere cleverness, and cleverness without reverence is dangerous." },
+            { term: "chokmah", language: "Hebrew", meaning: "'Wisdom, skill.' The ability to live well in God's world. Not theoretical knowledge but practical competence. A wise person is not someone who knows facts. A wise person is someone who knows what to do next." },
+            { term: "musar", language: "Hebrew", meaning: "'Discipline, instruction, correction.' Wisdom does not come free. It requires submission to correction, which is why fools despise it. The fool's problem is not ignorance. It is refusal." },
+          ],
+          structure: "Verses 1-6 are the preamble: purpose and audience. Verse 7 is the thesis: the fear of the Lord is the beginning of knowledge. Everything that follows in the entire book is commentary on verse 7. The structure is foundation first, application second.",
+        },
+        scholars: [
+          { view: "Theological wisdom", summary: "Verse 7 is not merely an introduction but the hermeneutical key to the entire book. All practical wisdom in Proverbs flows from and returns to the fear of the Lord. Wisdom without God is not wisdom at all.", proponents: "Tremper Longman III, Bruce Waltke" },
+          { view: "Pedagogical reading", summary: "Proverbs 1-9 functions as a curriculum introduction. The father-to-son speeches are a teaching method, preparing the student to receive the sentence proverbs that follow. The structure is intentionally educational.", proponents: "Roland Murphy, Michael Fox" },
+          { view: "Ancient Near Eastern context", summary: "Proverbs participates in a wider wisdom tradition shared across the ancient Near East. Israel's distinctive contribution is grounding wisdom in covenant relationship with YHWH rather than in human reason alone.", proponents: "James Crenshaw, John Walton" },
+        ],
+        application: {
+          question: "Where in your life are you trying to be wise without being reverent? Where have you substituted cleverness for the kind of humility that actually produces good decisions?",
+          connection: "Our culture prizes intelligence, information, and expertise. Proverbs says none of those are wisdom. Wisdom begins with a posture: acknowledging that you are not the final authority on your own life. In a world that tells you to trust yourself above all, verse 7 is a quiet act of rebellion.",
+          thisWeek: "Each morning this week, before you check your phone, pause and say: 'I am not the wisest person in this room. God, teach me what I cannot teach myself.' See if the day unfolds differently when it begins with that posture.",
+        },
+        deeper: {
+          books: ["The Book of Proverbs: Chapters 1-15 by Bruce Waltke", "Proverbs (Old Testament Library) by Roland Murphy", "The Fear of the Lord Is Wisdom by Tremper Longman III"],
+          studyQuestion: "If 'the fear of the Lord is the beginning of knowledge,' what does that say about the kind of knowledge available to someone who has no reverence for anything greater than themselves? Is secular wisdom incomplete, or is it a different thing entirely?",
+          prayer: "God, I confess I have often chosen cleverness over wisdom. I have trusted my own judgment and called it discernment. Teach me the fear that is not terror but awe, the kind that makes me quiet enough to hear you. Amen.",
+        },
+      },
+      {
+        ref: "Proverbs 31:10-31",
+        summary: "The woman of valor and what the passage actually celebrates",
+        text: "A wife of noble character who can find? She is worth far more than rubies. Her husband has full confidence in her and lacks nothing of value...",
+        paraphrase: "This is not a checklist for women. It is a poem of admiration for a person of strength, resourcefulness, and fearless competence. The Hebrew calls her a warrior. The church turned her into a homemaker. The text says something far more dangerous.",
+        keyWords: [
+          { word: "noble character", original: "eshet chayil (Hebrew)", meaning: "Chayil means 'valor, strength, might.' It is the same word used for warriors and armies throughout the Old Testament. Ruth is called an eshet chayil. Boaz is called a gibbor chayil (mighty warrior). The word is military before it is domestic. This woman is not merely virtuous. She is formidable." },
+          { word: "she laughs at the days to come", original: "vatischaq leyom acharon (Hebrew)", meaning: "Not naivety. This woman can laugh at the future because she has done the work of preparation. Her confidence is earned. She faces what is coming without anxiety because she has been faithful in what is present." },
+          { word: "fears the Lord", original: "yirat YHWH (Hebrew)", meaning: "Verse 30 is the interpretive key. 'Charm is deceptive and beauty is fleeting, but a woman who fears the Lord is to be praised.' The entire poem hangs on this verse. Her strength, her commerce, her generosity, her wisdom — all of it flows from the same foundation Proverbs 1:7 established." },
+        ],
+        historical: [
+          "This passage is an acrostic poem: each verse begins with a successive letter of the Hebrew alphabet, aleph through tav. It is not a list of requirements. It is a literary celebration, an A-to-Z portrait meant to say: 'This woman is everything, from beginning to end.'",
+          "In Jewish tradition, 'eshet chayil' is sung by husbands to their wives every Friday evening at the Sabbath table. It is not a standard to meet. It is a blessing spoken over someone. The tradition understood what the modern church often misses: this is praise, not prescription.",
+          "The woman in this poem is an entrepreneur (she buys fields, trades goods, manages a household economy), a teacher ('faithful instruction is on her tongue'), and a community leader ('she extends her hands to the needy'). Reducing her to a domestic ideal requires ignoring two-thirds of the text.",
+        ],
+        literary: {
+          genre: "Acrostic poem / heroic portrait. The acrostic structure is not decorative. In Hebrew literature, an A-to-Z poem signifies completeness. This woman embodies wisdom from aleph to tav. She is the human fulfillment of Lady Wisdom from Proverbs 1-9.",
+          devices: "Acrostic (each verse begins with the next Hebrew letter), hyperbole (not meant as a literal daily schedule), inclusio (the poem begins with her value — 'worth far more than rubies' — and ends with the reason — 'a woman who fears the Lord').",
+          keyTerms: [
+            { term: "chayil", language: "Hebrew", meaning: "'Valor, strength, might, wealth.' Used 243 times in the Old Testament, overwhelmingly in military contexts. Translating it as 'noble character' or 'virtuous' domesticates a word that means something far stronger." },
+            { term: "sadin", language: "Hebrew", meaning: "'Fine linen garments.' She makes and sells them. She is not merely crafting for her family. She is running a business. The text describes economic agency, not domestic confinement." },
+            { term: "oz vehadar", language: "Hebrew", meaning: "'Strength and dignity are her clothing.' Oz means 'fierce strength.' Hadar means 'splendor, majesty.' The same words are used of God elsewhere. Her character is her adornment." },
+          ],
+          structure: "The poem moves from her economic activity (v.10-18) to her community engagement (v.19-22) to her public reputation (v.23-27) to the verdict (v.28-31). The structure builds outward: home, marketplace, city gate, divine evaluation. The final word is praise.",
+        },
+        scholars: [
+          { view: "Wisdom personified", summary: "The eshet chayil is the human embodiment of Lady Wisdom from Proverbs 1-9. The book opens with Wisdom calling out and closes with a woman who lives it. She is the thesis made flesh.", proponents: "Christine Roy Yoder, Tremper Longman III" },
+          { view: "Household economics", summary: "The passage reflects the economic realities of ancient Israelite life, where the household was the primary unit of production. The woman's activities are not exceptional. They describe the skilled management of a household economy.", proponents: "Carol Meyers, Victor Matthews" },
+          { view: "Feminist recovery", summary: "The passage has been misused as a checklist to measure women's performance. Read in its original context, it celebrates female agency, economic power, public voice, and intellectual strength. The text is more feminist than the church has allowed it to be.", proponents: "Ellen Davis, Kathleen O'Connor" },
+        ],
+        application: {
+          question: "Have you been reading this passage as a standard to meet or a song of praise for strength already present? What changes if you read it as celebration rather than expectation?",
+          connection: "The church has too often turned this poem into a performance review. Women hear it and feel inadequate. Men hear it and build a checklist for a future wife. But the poem is not a job description. It is a standing ovation. The Jewish tradition gets it right: you sing this over someone you love. You do not hand it to them as a to-do list.",
+          thisWeek: "If you are married, read this poem to your spouse this week, not as a standard but as a blessing. If you are not, read it as a description of wisdom embodied. Ask: where do I see this kind of strength in the women around me? Name it. Tell them.",
+        },
+        deeper: {
+          books: ["Proverbs 31: Discovering the Joys of a Faithful Life by Ellen Davis", "The Book of Proverbs: Chapters 15-31 by Bruce Waltke", "Discovering Biblical Equality edited by Ronald Pierce and Rebecca Merrill Groothuis"],
+          studyQuestion: "If 'eshet chayil' means 'woman of valor' or 'warrior woman,' how does that change what the passage is celebrating? What is lost when we translate chayil as 'virtuous' or 'noble character'?",
+          prayer: "God, forgive me for turning your songs of praise into performance reviews. Teach me to see strength where I have only looked for compliance. And where I see that strength, give me the courage to name it. Amen.",
+        },
+      },
+    ],
   },
   {
     name: "Isaiah", testament: "OT", hook: "The prophet who saw further than anyone",
-    passages: [],
+    passages: [
+      {
+        ref: "Isaiah 53:1-12",
+        summary: "The Suffering Servant and the scandal of vicarious suffering",
+        text: "Who has believed our message and to whom has the arm of the Lord been revealed? He grew up before him like a tender shoot, and like a root out of dry ground. He had no beauty or majesty to attract us to him, nothing in his appearance that we should desire him. He was despised and rejected by mankind, a man of suffering, and familiar with pain...",
+        paraphrase: "The servant of God does not arrive the way power always arrives. He comes without beauty, without army, without credentials. He is crushed not for his own failures but for ours. The logic is backward: the innocent suffers so the guilty can be healed. No one asked for this. No one expected it. It offends every system of justice we have built.",
+        keyWords: [
+          { word: "pierced", original: "mecholal (Hebrew)", meaning: "From the root chalal, meaning 'to pierce, to wound fatally.' The word implies violent, deliberate wounding. 'He was pierced for our transgressions' — the preposition 'for' (min) indicates substitution. He was pierced instead of us, on account of us." },
+          { word: "bore", original: "nasa (Hebrew)", meaning: "To carry, to lift, to bear the weight of. The same word is used for the scapegoat carrying Israel's sins into the wilderness (Leviticus 16). The servant carries what does not belong to him. The sin is ours. The weight is his." },
+          { word: "it was the Lord's will to crush him", original: "YHWH chaphets dak'o (Hebrew)", meaning: "The most disturbing line in the passage. Chaphets means 'to delight in, to desire.' God willed the servant's suffering. This is not passive permission. It is active purpose. The scandal is that God's plan for redemption runs through suffering, not around it." },
+        ],
+        historical: [
+          "Isaiah 53 is the fourth of four 'Servant Songs' in Isaiah (42:1-9, 49:1-7, 50:4-9, 52:13-53:12). The identity of the servant is the most debated question in Old Testament scholarship. Is the servant Israel as a nation? A faithful remnant? The prophet himself? A future messianic figure? The text sustains multiple readings because the servant functions on multiple levels.",
+          "In Jewish interpretation, the servant has most often been identified with Israel itself — the nation suffers vicariously for the world. The Targum Jonathan (Aramaic translation) identifies the servant as the Messiah but reassigns the suffering to Israel's enemies. The idea that the Messiah himself would suffer was deeply scandalous.",
+          "Early Christians read Isaiah 53 as the clearest Old Testament prophecy of Jesus' crucifixion. The Ethiopian eunuch in Acts 8 is reading this exact passage when Philip explains it to him. The New Testament writers saw in Isaiah 53 the theological framework for understanding why the Messiah had to die.",
+          "The concept of vicarious suffering — the innocent bearing the punishment of the guilty — was rare in the ancient world. Justice systems were built on retribution: the guilty suffer for their own crimes. Isaiah 53 introduces a logic that overturns retribution with substitution. It is the theological earthquake beneath the entire gospel.",
+        ],
+        literary: {
+          genre: "Prophetic poetry / Servant Song. The passage is part of a larger literary unit (the four Servant Songs) embedded within Isaiah 40-55, often called 'Deutero-Isaiah' or the 'Book of Comfort.' The genre is prophetic oracle with lyric intensity.",
+          devices: "Contrast (exalted/humiliated, guilty/innocent, many/one), substitutionary language ('for our transgressions,' 'for our iniquities'), simile (lamb to slaughter, sheep before shearers), irony (the silent sufferer accomplishes what all the loud prophets could not).",
+          keyTerms: [
+            { term: "eved YHWH", language: "Hebrew", meaning: "'Servant of the Lord.' The title carries echoes of Moses, David, and the prophets — all called 'servants.' But this servant surpasses them all: he does not merely speak God's word. He embodies God's redemption in his own body." },
+            { term: "asham", language: "Hebrew", meaning: "'Guilt offering.' In verse 10, the servant's life is made an asham — the specific sacrifice for trespass against God. The servant does not just die. He becomes the sacrifice itself. The categories of temple worship are applied to a human life." },
+            { term: "yatsa'", language: "Hebrew", meaning: "The servant 'poured out his life unto death' (v.12). The verb suggests voluntary self-emptying. This is not victimhood. It is agency. He chose it." },
+          ],
+          structure: "The passage moves from rejection (v.1-3) to substitutionary suffering (v.4-6) to silent endurance (v.7-9) to vindication and purpose (v.10-12). The low point is the center. The resolution is not escape from suffering but meaning within it.",
+        },
+        scholars: [
+          { view: "Messianic prophecy", summary: "The servant is a prophetic portrait of Jesus Christ. The details — rejection, silent suffering, substitutionary death, vindication — correspond too precisely to be coincidence. Isaiah saw the cross seven hundred years before it happened.", proponents: "J. Alec Motyer, Edward Young, traditional Christian reading" },
+          { view: "Corporate Israel reading", summary: "The servant is Israel, suffering in exile for the eventual benefit of the nations. The passage describes the vocation of God's people to suffer faithfully as a witness to the world. This does not exclude a messianic reading but begins with a national one.", proponents: "H.H. Rowley, John Goldingay" },
+          { view: "Both/and reading", summary: "The servant operates on multiple levels: Israel, the prophet, and the coming Messiah. The ambiguity is intentional. The servant is whoever fulfills the vocation of faithful suffering on behalf of others. Jesus is the final and fullest embodiment of a pattern that runs through Israel's entire story.", proponents: "Brevard Childs, N.T. Wright, Richard Bauckham" },
+        ],
+        application: {
+          question: "Where in your life are you bearing a cost that is not yours to bear? And where have you refused to bear a cost that love requires?",
+          connection: "We want a God who removes suffering. Isaiah 53 gives us a God who enters it. The servant does not explain pain. He absorbs it. For those who follow Jesus, this is not just theology. It is a vocation. There are burdens that love requires you to carry for someone else. Not as a doormat. As a servant.",
+          thisWeek: "Read Isaiah 53 slowly, once each day. On the first reading, let it describe Jesus. On the second, ask where you see innocent suffering around you. On the third, ask what burden you might be called to carry for someone else this week.",
+        },
+        deeper: {
+          books: ["The Prophecy of Isaiah by J. Alec Motyer", "Isaiah 40-66 (New International Commentary) by John Goldingay", "Jesus and the Suffering Servant edited by William Bellinger Jr. and William Farmer"],
+          studyQuestion: "If the servant's suffering is both Israel's vocation and Jesus' mission, what does that say about the vocation of the church? Are Christians called to vicarious suffering, or was that unique to Christ?",
+          prayer: "God, I do not understand the logic of vicarious suffering. I want justice, not substitution. But you have carried what I could not. Teach me what it means to bear someone else's weight without resentment, without martyrdom, and without losing myself. Amen.",
+        },
+      },
+      {
+        ref: "Isaiah 6:1-8",
+        summary: "Isaiah's call and what holiness does to a person",
+        text: "In the year that King Uzziah died, I saw the Lord, high and exalted, seated on a throne; and the train of his robe filled the temple. Above him were seraphim, each with six wings: With two wings they covered their faces, with two they covered their feet, and with two they were flying...",
+        paraphrase: "The king was dead. The nation was unstable. And in that political vacuum, Isaiah saw the real King. The vision did not comfort him. It undid him. He saw God's holiness and his first response was not worship. It was terror. He knew he was unclean. God did not argue the point. He sent fire to burn the guilt away. Then he asked for a volunteer.",
+        keyWords: [
+          { word: "holy, holy, holy", original: "qadosh, qadosh, qadosh (Hebrew)", meaning: "The trisagion — the only attribute of God repeated three times in Scripture. Hebrew uses repetition for emphasis. To say something twice is to intensify it. To say it three times is to make it absolute. God is not merely holy. Holiness is what God is. It is not one of his attributes. It is the attribute that defines all the others." },
+          { word: "unclean lips", original: "tame sephataim (Hebrew)", meaning: "Tame means 'ritually impure, defiled.' Isaiah's confession is specific: his lips are the problem. He is a prophet. His lips are his instrument. The very tool of his calling is the site of his contamination. He cannot fix this himself." },
+          { word: "whom shall I send", original: "et mi eshlach (Hebrew)", meaning: "God does not command Isaiah. He asks. The commission is framed as an invitation, not a conscription. After the cleansing, Isaiah is free to choose. His response, 'Here am I, send me' (hineni shelacheni), uses hineni — the same word Abraham used. It means total availability." },
+        ],
+        historical: [
+          "King Uzziah reigned for fifty-two years (792-740 BC). His death was not just a personal loss. It was a national crisis. Uzziah had been a strong king. Without him, Judah faced Assyrian expansion under Tiglath-Pileser III. Isaiah's vision came at a moment when the earthly throne was empty and the nation was afraid.",
+          "Uzziah died a leper, struck by God for entering the temple to burn incense — a priestly duty the king had no right to perform (2 Chronicles 26:16-21). The irony is heavy: the king who trespassed in the temple is dead, and now Isaiah sees the true King in that same temple. One entered presumptuously. The other enters trembling.",
+          "Seraphim appear only here in the entire Bible. The word saraph means 'burning one.' They are not the gentle angels of Christmas cards. They are creatures of fire who cover their own faces before God's holiness. If the seraphim cannot look at God uncovered, Isaiah's terror makes complete sense.",
+          "The coal taken from the altar (v.6-7) connects to the sacrificial system. The altar fire consumed offerings for sin. The same fire that accepts sacrifice now purifies the prophet. Atonement and calling are linked: you cannot be sent until you have been cleansed.",
+        ],
+        literary: {
+          genre: "Prophetic call narrative / throne-room vision. The passage follows the pattern of prophetic commissions (compare Jeremiah 1, Ezekiel 1-3) but with distinctive intensity. The vision is not of a garden or a battlefield. It is of the divine throne room. The setting establishes the authority behind everything Isaiah will say.",
+          devices: "Sensory overload (sight, sound, physical sensation — the doorposts shake), contrast (God's holiness / Isaiah's uncleanness), dialogue (the seraphim's cry, Isaiah's confession, God's question), the number three (trisagion, six wings in three pairs).",
+          keyTerms: [
+            { term: "qadosh", language: "Hebrew", meaning: "'Holy, set apart, wholly other.' Not moral purity in the narrow sense. Holiness is God's radical otherness, the quality that makes God God and not anything else. It is the weight of his reality." },
+            { term: "saraph", language: "Hebrew", meaning: "'Burning one.' The seraphim are fire-creatures. Even they cover themselves before God. The same root gives us the 'fiery serpents' in Numbers 21. These are not safe beings. They are dangerous, and they worship." },
+            { term: "hineni", language: "Hebrew", meaning: "'Here I am.' The word of total availability. Abraham said it (Genesis 22). Moses said it (Exodus 3). Samuel said it (1 Samuel 3). It is the most dangerous word in the Hebrew Bible because it means 'I am holding nothing back.'" },
+          ],
+          structure: "The passage has five movements: vision (v.1-2), worship (v.3-4), confession (v.5), cleansing (v.6-7), commission (v.8). The structure is the anatomy of a calling: you see God, you see yourself, you are undone, you are restored, you are sent. The order cannot be rearranged.",
+        },
+        scholars: [
+          { view: "Throne-room commissioning", summary: "Isaiah 6 is a royal court scene. Isaiah is being commissioned as God's herald, like a messenger sent from a king's throne room. The vision establishes Isaiah's authority: he speaks for the King who sits above all kings.", proponents: "John Oswalt, Brevard Childs" },
+          { view: "Liturgical reading", summary: "The passage reflects the worship of the Jerusalem temple. The seraphim's cry ('Holy, holy, holy') may be a liturgical formula used in temple worship. Isaiah's vision is an intensified experience of what Israel encountered in worship.", proponents: "Joseph Blenkinsopp, Marvin Sweeney" },
+          { view: "Woe oracle reversed", summary: "Isaiah has just pronounced six 'woe' oracles against others (chapter 5). Now the seventh 'woe' falls on himself: 'Woe to me! I am ruined!' The prophet who judged others is judged. The pattern is self-implication before commission.", proponents: "Walter Brueggemann, Christopher Seitz" },
+        ],
+        application: {
+          question: "When was the last time an encounter with God undid you rather than merely comforted you? If the answer is never, is the God you are worshipping large enough?",
+          connection: "We have domesticated worship. We come to God for comfort, encouragement, a boost for the week. Isaiah came to the temple and was wrecked. The holiness of God did not affirm him. It exposed him. Real encounter with God does not leave you feeling better about yourself. It leaves you on the floor. And then — only then — it rebuilds you for a purpose you could not have imagined.",
+          thisWeek: "Before you worship this week — whether in church or in private — pause and read Isaiah 6:1-4. Let the weight of holiness land before you start asking for things. Begin with awe. See if your prayers change when they start from the floor instead of from a wish list.",
+        },
+        deeper: {
+          books: ["The Book of Isaiah: Chapters 1-39 by John Oswalt", "Isaiah 1-39 (Anchor Bible) by Joseph Blenkinsopp", "The Holy One of Israel by Richard Bauckham"],
+          studyQuestion: "Isaiah's lips — the tool of his prophetic calling — are the specific site of his uncleanness. What is the equivalent for you? Where is your greatest gift also your greatest vulnerability to sin?",
+          prayer: "Holy God, I have come to worship casually. I have treated your presence like a comfort station. Undo me. Show me what the seraphim see. And when I am on the floor, send the coal. I need to be burned clean before I can be sent. Hineni. Amen.",
+        },
+      },
+    ],
   },
   {
     name: "Daniel", testament: "OT", hook: "Faithfulness when the empire demands your worship",
-    passages: [],
+    passages: [
+      {
+        ref: "Daniel 3:1-30",
+        summary: "The fiery furnace and faithfulness without guarantee",
+        text: "King Nebuchadnezzar made an image of gold, sixty cubits high and six cubits wide, and set it up on the plain of Dura in the province of Babylon... Shadrach, Meshach and Abednego replied to him, 'King Nebuchadnezzar, we do not need to defend ourselves before you in this matter. If we are thrown into the blazing furnace, the God we serve is able to deliver us from it, and he will deliver us from Your Majesty's hand. But even if he does not, we want you to know, Your Majesty, that we will not serve your gods or worship the image of gold you have set up.'",
+        paraphrase: "The empire built a statue and demanded everyone worship it. Three Jewish exiles refused. When threatened with incineration, they gave one of the most remarkable speeches in Scripture: God can save us. But even if he does not, we will not bow. That 'even if he does not' is the entire theology of faithfulness without guarantee.",
+        keyWords: [
+          { word: "even if he does not", original: "hen la (Aramaic)", meaning: "The most theologically loaded two words in the book of Daniel. 'Hen' means 'if' or 'behold.' 'La' means 'not.' The three men separate God's ability from God's obligation. He can save them. He is not required to. They will obey regardless. This is faith without a safety net." },
+          { word: "image of gold", original: "tselem di dehav (Aramaic)", meaning: "The statue was ninety feet tall and nine feet wide — absurdly disproportionate, more obelisk than human form. It was not art. It was a loyalty test. Bowing was not worship in the private sense. It was political submission. The empire does not care what you believe. It cares that you bow." },
+          { word: "a fourth figure", original: "revei (Aramaic)", meaning: "Nebuchadnezzar sees four figures in the furnace, though only three were thrown in. He describes the fourth as looking like 'a son of the gods' (bar elahin). The text does not identify him. Jewish tradition sees an angel. Christian tradition sees a pre-incarnate Christ. The text leaves it open. The point is: God is in the fire." },
+        ],
+        historical: [
+          "The Babylonian exile (586-539 BC) was the defining crisis of ancient Israel. The temple was destroyed, the monarchy ended, and the people were deported to Babylon. Daniel and his friends were among the first wave of exiles, taken as young men and trained in Babylonian culture. The book of Daniel is a manual for faithfulness under empire.",
+          "Nebuchadnezzar's statue was not unusual. Imperial religion in the ancient Near East required conquered peoples to acknowledge the gods of the conqueror. Refusal was not merely religious dissent. It was political treason. The furnace was not a punishment for bad theology. It was the penalty for insurrection.",
+          "The plain of Dura was likely a flat area near Babylon used for public ceremonies. The musical instruments listed (horn, flute, zither, lyre, harp, pipes) represent a multicultural orchestra, drawing from the diverse peoples of the empire. The message was clear: everyone is here, everyone plays, everyone bows. Uniformity is the empire's liturgy.",
+          "The names Shadrach, Meshach, and Abednego are Babylonian names assigned to replace their Hebrew names (Hananiah, Mishael, Azariah). The empire renames you before it tries to reshape you. The first act of assimilation is the loss of your name. But the three men carried their Hebrew identity beneath their Babylonian labels.",
+        ],
+        literary: {
+          genre: "Court tale / resistance narrative. Daniel 1-6 consists of court tales: stories of Jewish exiles navigating the dangers of foreign imperial service while maintaining faithfulness to God. The genre exists to answer the question: how do you live faithfully when the empire controls everything except your conscience?",
+          devices: "Repetition (the list of officials and instruments is repeated to comic effect, satirizing imperial bureaucracy), irony (the fire meant to destroy becomes the place of divine encounter), contrast (the empire's coercion versus the exiles' calm defiance), the 'even if he does not' as narrative pivot.",
+          keyTerms: [
+            { term: "tselem", language: "Aramaic", meaning: "'Image, statue.' The same root as the 'image of God' in Genesis 1 (tselem Elohim). The empire builds its own image and demands worship. The theological conflict is between two images: God's image borne by humans, and the empire's image demanding human submission." },
+            { term: "pelach", language: "Aramaic", meaning: "'To serve, to worship.' The word appears throughout the chapter, used for both serving the king and worshipping his gods. In the empire's vocabulary, there is no difference. Service to the state is worship of its gods. The three men insist on the distinction." },
+            { term: "shezib", language: "Aramaic", meaning: "'To deliver, to rescue.' God is able to shezib. But the three men do not make their obedience contingent on rescue. The verb acknowledges God's power without presuming his plan." },
+          ],
+          structure: "The chapter follows a clear arc: imperial command (v.1-7), accusation (v.8-12), confrontation (v.13-15), confession of faith (v.16-18), punishment (v.19-23), divine rescue (v.24-27), royal reversal (v.28-30). The theological climax is not the rescue. It is the confession: 'even if he does not.'",
+        },
+        scholars: [
+          { view: "Resistance literature", summary: "Daniel 3 was written for Jewish communities under imperial pressure — first Babylon, later the Seleucid persecution under Antiochus IV Epiphanes (167 BC). The story models faithful resistance without violence: you do not rebel, you do not fight, and you do not bow.", proponents: "John Collins, Daniel Smith-Christopher" },
+          { view: "Theology of presence", summary: "The fourth figure in the fire is the theological center. God does not prevent the furnace. He enters it. The text does not promise rescue from suffering but divine presence within it. This is the pattern of biblical theology: God with us in the fire, not God removing the fire.", proponents: "Tremper Longman III, Ernest Lucas" },
+          { view: "Imperial critique", summary: "The chapter satirizes empire through literary exaggeration: the absurd dimensions of the statue, the exhaustive lists of officials and instruments, the king's rage. The empire takes itself with deadly seriousness. The text does not. This is subversive humor, written by the colonized about the colonizer.", proponents: "Daniel Smith-Christopher, Anathea Portier-Young" },
+        ],
+        application: {
+          question: "What is the furnace you are avoiding because you are not sure God will rescue you from it? What would it look like to obey without the guarantee?",
+          connection: "Most of us practice conditional faithfulness: I will obey God as long as it works out. The three men practiced unconditional faithfulness: we will obey God regardless of the outcome. 'Even if he does not' is the line that separates faith from transaction. God is not a vending machine. Sometimes you put in the obedience and nothing comes out. You obey anyway.",
+          thisWeek: "Identify one act of faithfulness you have been delaying because you are not sure it will turn out well. This week, take one step toward it. Not because God has promised a rescue, but because he is worth obeying even without one.",
+        },
+        deeper: {
+          books: ["Daniel (Hermeneia Commentary) by John Collins", "A Faith Among Empires by Daniel Smith-Christopher", "Daniel (Tyndale Old Testament Commentary) by Ernest Lucas"],
+          studyQuestion: "The three men said 'even if he does not.' What does that phrase cost to say? What does it mean to worship a God who can rescue but might not? How is that different from worshipping a God who is powerless?",
+          prayer: "God who walked in the fire with three men who did not know you would show up, I name the furnace I am afraid of. I do not know if you will rescue me. I know you are able. That is enough. Even if you do not, I will not bow. Help me mean it. Amen.",
+        },
+      },
+      {
+        ref: "Daniel 7:1-14",
+        summary: "The Son of Man vision and the kingdom that outlasts every empire",
+        text: "In the first year of Belshazzar king of Babylon, Daniel had a dream and visions of his head as he lay in bed... In my vision at night I looked, and there before me was one like a son of man, coming with the clouds of heaven. He approached the Ancient of Days and was led into his presence. He was given authority, glory and sovereign power; all nations and peoples of every language worshiped him. His dominion is an everlasting dominion that will not pass away, and his kingdom is one that will never be destroyed.",
+        paraphrase: "Daniel sees four beasts rise from the sea — each one more terrifying than the last, each one representing an empire that devours the world. Then the scene shifts to a courtroom in heaven. An ancient figure takes his seat. The books are opened. And into that courtroom comes a human figure, 'one like a son of man,' who receives a kingdom that never ends. The beasts are temporary. The son of man is forever.",
+        keyWords: [
+          { word: "son of man", original: "bar enash (Aramaic)", meaning: "Literally 'son of a human being,' meaning simply 'a human figure.' In a vision full of beasts (empires as monsters), the one who receives the eternal kingdom looks human. The contrast is deliberate: empires are bestial. God's kingdom is humane. Jesus chose this as his primary self-designation, using it over eighty times in the Gospels." },
+          { word: "Ancient of Days", original: "attiq yomin (Aramaic)", meaning: "A title for God that appears only in Daniel 7. It emphasizes God's eternal nature and judicial authority. The white hair and clothing signal purity and age beyond measure. This is not a frail elder. This is the one who was old when the mountains were young." },
+          { word: "the great sea", original: "yamma rabba (Aramaic)", meaning: "In the ancient Near East, the sea represented chaos, evil, and the forces opposed to God. The four beasts rise from the sea — they emerge from chaos. They are chaos organized into political power. Every empire is ultimately chaos wearing a crown." },
+        ],
+        historical: [
+          "The four beasts are most commonly identified with four successive empires: Babylon (lion with eagle's wings), Media or Medo-Persia (bear raised on one side), Persia or Greece (leopard with four wings), and Greece or Rome (the terrifying fourth beast with iron teeth). The specific identifications are debated, but the pattern is clear: empires rise, devour, and fall. All of them.",
+          "Apocalyptic literature emerged during periods of intense persecution, when normal prophetic speech was insufficient. Daniel 7-12 shifts from court tales to apocalyptic visions. The genre uses symbolic imagery — beasts, numbers, cosmic battles — to communicate a subversive message: the empires that seem invincible are already judged in heaven's courtroom.",
+          "Jesus' use of 'Son of Man' (bar enash) as his primary title draws directly from Daniel 7:13. When Jesus told the high priest 'you will see the Son of Man sitting at the right hand of the Mighty One and coming on the clouds of heaven' (Mark 14:62), he was quoting Daniel 7. The high priest understood immediately: Jesus was claiming to be the figure who receives an everlasting kingdom. That is why he tore his robes.",
+          "The 'ten horns' and the 'little horn' of the fourth beast (v.7-8) have been interpreted as ten kings and a particularly arrogant ruler. Many scholars identify the little horn with Antiochus IV Epiphanes, the Seleucid king who desecrated the Jerusalem temple in 167 BC. The text insists: even this horn will be broken. No tyrant outlasts the courtroom of God.",
+        ],
+        literary: {
+          genre: "Apocalyptic vision. Apocalyptic is not fortune-telling. It is a genre of resistance. It uses coded imagery to say what cannot be said openly under imperial surveillance: the empire will fall, God will judge, and the kingdom will belong to the faithful. It is the literature of the oppressed, not the comfortable.",
+          devices: "Symbolic beasts (political empires as monsters), numerical symbolism (four beasts = totality of earthly power; ten horns = completeness of political authority), contrast (beasts from the sea vs. the human figure from heaven; temporary kingdoms vs. eternal kingdom), courtroom imagery (thrones, books, judgment).",
+          keyTerms: [
+            { term: "bar enash", language: "Aramaic", meaning: "'Son of man,' a human figure. The phrase is generic — 'a human being.' But the context makes it extraordinary: this human figure receives what no human has ever held — universal, eternal dominion. The ordinary term carries an extraordinary claim." },
+            { term: "attiq yomin", language: "Aramaic", meaning: "'Ancient of Days.' Used three times in Daniel 7, nowhere else in Scripture. The title places God outside of time. The empires are trapped in history. God presides over it." },
+            { term: "malku", language: "Aramaic", meaning: "'Kingdom, sovereignty, dominion.' The word appears throughout the chapter, applied first to the beasts (temporary dominion) and then to the son of man (everlasting dominion). The same word. Two different durations. The chapter is about which kingdom lasts." },
+          ],
+          structure: "The vision has two scenes: earth (v.1-8) and heaven (v.9-14). On earth, beasts rise and devour. In heaven, the court sits and judges. The movement from earth to heaven is the movement from appearance to reality. The beasts look powerful from below. From above, they are already sentenced.",
+        },
+        scholars: [
+          { view: "Historical-critical reading", summary: "The four beasts represent Babylon, Media, Persia, and Greece. The vision was composed during the Maccabean crisis (160s BC) to encourage Jewish resistance against Antiochus IV. The 'son of man' represents the faithful community of Israel who will inherit the kingdom.", proponents: "John Collins, Carol Newsom" },
+          { view: "Messianic reading", summary: "The 'one like a son of man' is an individual messianic figure who receives universal authority from God. Jesus' adoption of the title confirms this reading. The vision is predictive prophecy pointing to Christ's exaltation.", proponents: "E.J. Young, Stephen Miller, traditional evangelical reading" },
+          { view: "Both corporate and individual", summary: "The son of man is both a symbol for faithful Israel (the 'saints of the Most High' in v.18) and a messianic figure who represents and leads them. The corporate and individual readings are not mutually exclusive. Jesus embodies Israel's vocation and fulfills it.", proponents: "N.T. Wright, Richard Bauckham, George Ladd" },
+        ],
+        application: {
+          question: "Which beast is your generation most tempted to worship? Which empire — political, economic, cultural — looks so dominant that you have started to believe it will last forever?",
+          connection: "Every generation has its beast. Every era has an empire that seems invincible. Daniel 7 says: they all fall. The beast with iron teeth looked eternal to the people under its heel. It was not. The kingdom that lasts is not the one with the largest army or the strongest economy. It is the one given to the son of man in heaven's courtroom. We live between the beasts and the kingdom. The question is which one we are organizing our lives around.",
+          thisWeek: "This week, notice one place where you have been living as though a human institution, system, or power is permanent and ultimate. Name it. Then read Daniel 7:14 again: 'His dominion is an everlasting dominion that will not pass away.' Let that sentence relativize what felt absolute.",
+        },
+        deeper: {
+          books: ["Daniel (Hermeneia Commentary) by John Collins", "The Old Testament Pseudepigrapha and the New Testament by James Charlesworth", "Jesus and the Victory of God by N.T. Wright"],
+          studyQuestion: "Jesus chose 'Son of Man' as his primary self-designation over 'Messiah' or 'Son of God.' Why? What does Daniel 7 communicate about Jesus' mission that the other titles do not? And why would the high priest tear his robes when Jesus quoted this passage?",
+          prayer: "Ancient of Days, I confess I have been intimidated by beasts. I have organized my life around kingdoms that will not last. Give me the vision Daniel had: to see the courtroom behind the chaos, the throne above the beasts, and the kingdom that will not be destroyed. Amen.",
+        },
+      },
+    ],
   },
 ];
 
