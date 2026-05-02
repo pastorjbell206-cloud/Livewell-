@@ -1337,6 +1337,36 @@ async function trpcBatchHandler(req: VercelRequest, res: VercelResponse, procs: 
   }
 }
 
+async function organizeArticles(req: VercelRequest, res: VercelResponse) {
+  if (!authedSession(req) && !authed(req)) return json(res, 401, { error: "unauthorized" });
+  try {
+    const out = await withConn(async (c) => {
+      const [rows]: any = await c.execute("SELECT id, title, body, pillar FROM posts");
+      let updated = 0;
+      for (const row of rows as any[]) {
+        const text = ((row.title || "") + " " + (row.body || "")).toLowerCase();
+        let pillar = row.pillar;
+        if (text.match(/marriage|spouse|husband|wife|divorce|covenant|intimacy|emotional labor|wedding|vow/)) pillar = "Living Well";
+        else if (text.match(/parent|child|son|daughter|family|fatherhood|motherhood|raising|teenager/)) pillar = "Living Well";
+        else if (text.match(/finances|money|stewardship|budget|tithe|giving|debt/)) pillar = "Living Well";
+        else if (text.match(/justice|racism|inequality|oppression|silent|prophetic|politics|nationalism|empire|complicit/)) pillar = "Prophetic Justice";
+        else if (text.match(/doubt|skeptic|atheist|deconstruct|crisis|question|believe|faith.*crisis|dark night/)) pillar = "Faith & Theology";
+        else if (text.match(/pastor|ministry|burnout|church.*lead|shepherd|preach|sermon|congregation|elder|deacon/)) pillar = "Pastoral Ministry";
+        else if (text.match(/theology|scripture|bible|hermeneutic|doctrine|atonement|trinity|creation|eschatology|soteriology/)) pillar = "Theological Depth";
+        if (pillar !== row.pillar) {
+          await c.execute("UPDATE posts SET pillar = ? WHERE id = ?", [pillar, row.id]);
+          updated++;
+        }
+      }
+      const [counts]: any = await c.execute("SELECT pillar, COUNT(*) as n FROM posts GROUP BY pillar ORDER BY n DESC");
+      return { updated, total: rows.length, distribution: counts };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
 async function adminStatus(_req: VercelRequest, res: VercelResponse) {
   json(res, 200, {
     ok: true,
@@ -1395,6 +1425,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/auth/logout") return authLogout(req, res);
     if (url === "/api/health" || url.startsWith("/api/health")) return health(req, res);
     if (url === "/api/admin/status") return adminStatus(req, res);
+    if (url === "/api/admin/organize-articles") return organizeArticles(req, res);
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
     if (url === "/api/admin/seed-content") return adminSeedContent(req, res);
