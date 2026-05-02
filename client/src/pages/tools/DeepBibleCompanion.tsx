@@ -351,7 +351,90 @@ const BOOKS: BibleBook[] = [
   },
   {
     name: "Proverbs", testament: "OT", hook: "Wisdom for people who have to make decisions today",
-    passages: [],
+    passages: [
+      {
+        ref: "Proverbs 1:1-7",
+        summary: "The thesis statement of the entire book and what fear actually means",
+        text: "The proverbs of Solomon son of David, king of Israel: for gaining wisdom and instruction; for understanding words of insight; for receiving instruction in prudent behavior... The fear of the Lord is the beginning of knowledge, but fools despise wisdom and instruction.",
+        paraphrase: "Before any advice is given, the book tells you why it exists: to make you wise, not just informed. And the foundation of all wisdom is this: take God seriously. Not terror. Reverence. The posture of someone who knows they are not the smartest person in the room, because God is.",
+        keyWords: [
+          { word: "fear", original: "yirah (Hebrew)", meaning: "Not terror or dread. Yirah is reverence, awe, the proper response to standing before something vastly greater than yourself. It is the posture of a student before a master, a creature before a Creator. Fear in this sense is not the opposite of love. It is the beginning of it." },
+          { word: "wisdom", original: "chokmah (Hebrew)", meaning: "Not intelligence or education. Chokmah is skill for living. It is the ability to navigate the world as it actually is, not as you wish it were. In the ancient world, the same word was used for a craftsman's skill. Wisdom is practical, not abstract." },
+          { word: "beginning", original: "reshith (Hebrew)", meaning: "Can mean 'beginning,' 'first principle,' or 'foundation.' The fear of the Lord is not where wisdom starts and then moves past. It is the foundation on which every other insight is built. Remove it and the structure collapses." },
+        ],
+        historical: [
+          "Solomon's association with Proverbs is real but complex. He authored many proverbs, but the book was compiled over centuries. Chapters 25-29 are attributed to Solomon but collected by 'the men of Hezekiah,' two hundred years later. Proverbs is not one author's work. It is a tradition's accumulated wisdom.",
+          "Wisdom literature was an international genre in the ancient Near East. Egypt had 'The Instruction of Amenemope,' which shares striking parallels with Proverbs 22-24. Israel participated in a broader wisdom tradition but anchored it in covenant theology: wisdom begins with YHWH, not with human observation alone.",
+          "Proverbs is structured in two main sections: chapters 1-9 are extended instruction speeches from a father (or teacher) to a son, personifying wisdom as a woman who calls out in the streets. Chapters 10-31 shift to sentence proverbs, short two-line observations. The instruction speeches set the theological framework. The sentence proverbs apply it to daily life.",
+        ],
+        literary: {
+          genre: "Wisdom literature. Proverbs is not prophecy, not law, not narrative. It is observation refined into instruction. The genre assumes that the world has a moral order built into it by God, and that attentive people can discern that order and live accordingly.",
+          devices: "Parallelism is the primary device: synonymous (line B restates line A), antithetic (line B contrasts line A), and synthetic (line B completes line A). The personification of Wisdom as a woman (Lady Wisdom in chapter 1) creates a dramatic contrast with the 'forbidden woman' who represents folly.",
+          keyTerms: [
+            { term: "yirah", language: "Hebrew", meaning: "'Fear, reverence, awe.' The controlling concept of the entire book. Without this orientation toward God, all other wisdom becomes mere cleverness, and cleverness without reverence is dangerous." },
+            { term: "chokmah", language: "Hebrew", meaning: "'Wisdom, skill.' The ability to live well in God's world. Not theoretical knowledge but practical competence. A wise person is not someone who knows facts. A wise person is someone who knows what to do next." },
+            { term: "musar", language: "Hebrew", meaning: "'Discipline, instruction, correction.' Wisdom does not come free. It requires submission to correction, which is why fools despise it. The fool's problem is not ignorance. It is refusal." },
+          ],
+          structure: "Verses 1-6 are the preamble: purpose and audience. Verse 7 is the thesis: the fear of the Lord is the beginning of knowledge. Everything that follows in the entire book is commentary on verse 7. The structure is foundation first, application second.",
+        },
+        scholars: [
+          { view: "Theological wisdom", summary: "Verse 7 is not merely an introduction but the hermeneutical key to the entire book. All practical wisdom in Proverbs flows from and returns to the fear of the Lord. Wisdom without God is not wisdom at all.", proponents: "Tremper Longman III, Bruce Waltke" },
+          { view: "Pedagogical reading", summary: "Proverbs 1-9 functions as a curriculum introduction. The father-to-son speeches are a teaching method, preparing the student to receive the sentence proverbs that follow. The structure is intentionally educational.", proponents: "Roland Murphy, Michael Fox" },
+          { view: "Ancient Near Eastern context", summary: "Proverbs participates in a wider wisdom tradition shared across the ancient Near East. Israel's distinctive contribution is grounding wisdom in covenant relationship with YHWH rather than in human reason alone.", proponents: "James Crenshaw, John Walton" },
+        ],
+        application: {
+          question: "Where in your life are you trying to be wise without being reverent? Where have you substituted cleverness for the kind of humility that actually produces good decisions?",
+          connection: "Our culture prizes intelligence, information, and expertise. Proverbs says none of those are wisdom. Wisdom begins with a posture: acknowledging that you are not the final authority on your own life. In a world that tells you to trust yourself above all, verse 7 is a quiet act of rebellion.",
+          thisWeek: "Each morning this week, before you check your phone, pause and say: 'I am not the wisest person in this room. God, teach me what I cannot teach myself.' See if the day unfolds differently when it begins with that posture.",
+        },
+        deeper: {
+          books: ["The Book of Proverbs: Chapters 1-15 by Bruce Waltke", "Proverbs (Old Testament Library) by Roland Murphy", "The Fear of the Lord Is Wisdom by Tremper Longman III"],
+          studyQuestion: "If 'the fear of the Lord is the beginning of knowledge,' what does that say about the kind of knowledge available to someone who has no reverence for anything greater than themselves? Is secular wisdom incomplete, or is it a different thing entirely?",
+          prayer: "God, I confess I have often chosen cleverness over wisdom. I have trusted my own judgment and called it discernment. Teach me the fear that is not terror but awe, the kind that makes me quiet enough to hear you. Amen.",
+        },
+      },
+      {
+        ref: "Proverbs 31:10-31",
+        summary: "The woman of valor and what the passage actually celebrates",
+        text: "A wife of noble character who can find? She is worth far more than rubies. Her husband has full confidence in her and lacks nothing of value...",
+        paraphrase: "This is not a checklist for women. It is a poem of admiration for a person of strength, resourcefulness, and fearless competence. The Hebrew calls her a warrior. The church turned her into a homemaker. The text says something far more dangerous.",
+        keyWords: [
+          { word: "noble character", original: "eshet chayil (Hebrew)", meaning: "Chayil means 'valor, strength, might.' It is the same word used for warriors and armies throughout the Old Testament. Ruth is called an eshet chayil. Boaz is called a gibbor chayil (mighty warrior). The word is military before it is domestic. This woman is not merely virtuous. She is formidable." },
+          { word: "she laughs at the days to come", original: "vatischaq leyom acharon (Hebrew)", meaning: "Not naivety. This woman can laugh at the future because she has done the work of preparation. Her confidence is earned. She faces what is coming without anxiety because she has been faithful in what is present." },
+          { word: "fears the Lord", original: "yirat YHWH (Hebrew)", meaning: "Verse 30 is the interpretive key. 'Charm is deceptive and beauty is fleeting, but a woman who fears the Lord is to be praised.' The entire poem hangs on this verse. Her strength, her commerce, her generosity, her wisdom — all of it flows from the same foundation Proverbs 1:7 established." },
+        ],
+        historical: [
+          "This passage is an acrostic poem: each verse begins with a successive letter of the Hebrew alphabet, aleph through tav. It is not a list of requirements. It is a literary celebration, an A-to-Z portrait meant to say: 'This woman is everything, from beginning to end.'",
+          "In Jewish tradition, 'eshet chayil' is sung by husbands to their wives every Friday evening at the Sabbath table. It is not a standard to meet. It is a blessing spoken over someone. The tradition understood what the modern church often misses: this is praise, not prescription.",
+          "The woman in this poem is an entrepreneur (she buys fields, trades goods, manages a household economy), a teacher ('faithful instruction is on her tongue'), and a community leader ('she extends her hands to the needy'). Reducing her to a domestic ideal requires ignoring two-thirds of the text.",
+        ],
+        literary: {
+          genre: "Acrostic poem / heroic portrait. The acrostic structure is not decorative. In Hebrew literature, an A-to-Z poem signifies completeness. This woman embodies wisdom from aleph to tav. She is the human fulfillment of Lady Wisdom from Proverbs 1-9.",
+          devices: "Acrostic (each verse begins with the next Hebrew letter), hyperbole (not meant as a literal daily schedule), inclusio (the poem begins with her value — 'worth far more than rubies' — and ends with the reason — 'a woman who fears the Lord').",
+          keyTerms: [
+            { term: "chayil", language: "Hebrew", meaning: "'Valor, strength, might, wealth.' Used 243 times in the Old Testament, overwhelmingly in military contexts. Translating it as 'noble character' or 'virtuous' domesticates a word that means something far stronger." },
+            { term: "sadin", language: "Hebrew", meaning: "'Fine linen garments.' She makes and sells them. She is not merely crafting for her family. She is running a business. The text describes economic agency, not domestic confinement." },
+            { term: "oz vehadar", language: "Hebrew", meaning: "'Strength and dignity are her clothing.' Oz means 'fierce strength.' Hadar means 'splendor, majesty.' The same words are used of God elsewhere. Her character is her adornment." },
+          ],
+          structure: "The poem moves from her economic activity (v.10-18) to her community engagement (v.19-22) to her public reputation (v.23-27) to the verdict (v.28-31). The structure builds outward: home, marketplace, city gate, divine evaluation. The final word is praise.",
+        },
+        scholars: [
+          { view: "Wisdom personified", summary: "The eshet chayil is the human embodiment of Lady Wisdom from Proverbs 1-9. The book opens with Wisdom calling out and closes with a woman who lives it. She is the thesis made flesh.", proponents: "Christine Roy Yoder, Tremper Longman III" },
+          { view: "Household economics", summary: "The passage reflects the economic realities of ancient Israelite life, where the household was the primary unit of production. The woman's activities are not exceptional. They describe the skilled management of a household economy.", proponents: "Carol Meyers, Victor Matthews" },
+          { view: "Feminist recovery", summary: "The passage has been misused as a checklist to measure women's performance. Read in its original context, it celebrates female agency, economic power, public voice, and intellectual strength. The text is more feminist than the church has allowed it to be.", proponents: "Ellen Davis, Kathleen O'Connor" },
+        ],
+        application: {
+          question: "Have you been reading this passage as a standard to meet or a song of praise for strength already present? What changes if you read it as celebration rather than expectation?",
+          connection: "The church has too often turned this poem into a performance review. Women hear it and feel inadequate. Men hear it and build a checklist for a future wife. But the poem is not a job description. It is a standing ovation. The Jewish tradition gets it right: you sing this over someone you love. You do not hand it to them as a to-do list.",
+          thisWeek: "If you are married, read this poem to your spouse this week, not as a standard but as a blessing. If you are not, read it as a description of wisdom embodied. Ask: where do I see this kind of strength in the women around me? Name it. Tell them.",
+        },
+        deeper: {
+          books: ["Proverbs 31: Discovering the Joys of a Faithful Life by Ellen Davis", "The Book of Proverbs: Chapters 15-31 by Bruce Waltke", "Discovering Biblical Equality edited by Ronald Pierce and Rebecca Merrill Groothuis"],
+          studyQuestion: "If 'eshet chayil' means 'woman of valor' or 'warrior woman,' how does that change what the passage is celebrating? What is lost when we translate chayil as 'virtuous' or 'noble character'?",
+          prayer: "God, forgive me for turning your songs of praise into performance reviews. Teach me to see strength where I have only looked for compliance. And where I see that strength, give me the courage to name it. Amen.",
+        },
+      },
+    ],
   },
   {
     name: "Isaiah", testament: "OT", hook: "The prophet who saw further than anyone",
