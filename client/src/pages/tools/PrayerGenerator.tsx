@@ -310,12 +310,51 @@ export default function PrayerGenerator() {
               <div style={{ fontSize: "13px", fontWeight: 700, color: "var(--gold)", fontFamily: "var(--U)", marginBottom: "20px", letterSpacing: "0.1em" }}>
                 {selected?.toUpperCase()}
               </div>
-              <p style={{ fontSize: "18px", lineHeight: 2, color: "var(--ink)", fontFamily: "var(--B)", fontStyle: "italic" }}>
-                {prayer}
-              </p>
+
+              {/* Pray Along mode */}
+              {prayAlongActive ? (
+                <div style={{ minHeight: "120px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "20px 0" }}>
+                  <p style={{
+                    fontSize: "22px", lineHeight: 1.9, color: "var(--ink)", fontFamily: "var(--B)", fontStyle: "italic",
+                    textAlign: "center", maxWidth: "600px",
+                    transition: "opacity 0.5s ease",
+                    opacity: 1,
+                  }}>
+                    {phrases[phraseIndex]}
+                  </p>
+                  <div style={{ marginTop: "16px", fontSize: "12px", color: "var(--ink3)", fontFamily: "var(--U)", fontWeight: 600 }}>
+                    {phraseIndex + 1} of {phrases.length}
+                  </div>
+                  <div style={{ display: "flex", gap: "10px", marginTop: "16px" }}>
+                    <button
+                      onClick={togglePausePrayAlong}
+                      style={{ display: "flex", alignItems: "center", gap: "6px", padding: "8px 18px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}
+                    >
+                      {prayAlongPaused ? <><Play size={14} /> Resume</> : <><Pause size={14} /> Pause</>}
+                    </button>
+                    <button
+                      onClick={stopPrayAlong}
+                      style={{ display: "flex", alignItems: "center", gap: "6px", padding: "8px 18px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}
+                    >
+                      <RotateCcw size={14} /> Exit
+                    </button>
+                  </div>
+                </div>
+              ) : (
+                <p style={{ fontSize: "18px", lineHeight: 2, color: "var(--ink)", fontFamily: "var(--B)", fontStyle: "italic" }}>
+                  {prayer}
+                </p>
+              )}
+
               <div style={{ display: "flex", gap: "12px", marginTop: "28px", flexWrap: "wrap" }}>
                 <button onClick={handleCopy} style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}>
                   {copied ? <><Check size={14} /> Copied</> : <><Copy size={14} /> Copy Prayer</>}
+                </button>
+                <button
+                  onClick={() => handleShare(prayer)}
+                  style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}
+                >
+                  {shared ? <><Check size={14} /> Copied</> : <><Share2 size={14} /> Share Prayer</>}
                 </button>
                 <button
                   onClick={handleToggleSavePrayer}
@@ -333,6 +372,14 @@ export default function PrayerGenerator() {
                   <Heart size={14} fill={currentPrayerId && isFavorite(currentPrayerId) ? "var(--charcoal)" : "none"} />
                   {currentPrayerId && isFavorite(currentPrayerId) ? "Saved" : "Save Prayer"}
                 </button>
+                {!prayAlongActive && (
+                  <button
+                    onClick={startPrayAlong}
+                    style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--forest)", border: "none", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ivory)", cursor: "pointer" }}
+                  >
+                    <Play size={14} /> Pray Along
+                  </button>
+                )}
                 <button onClick={handleAnother} style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--gold)", border: "none", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}>
                   <RefreshCw size={14} /> Another Prayer
                 </button>
