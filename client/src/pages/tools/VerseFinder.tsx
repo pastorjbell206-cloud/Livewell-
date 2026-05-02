@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { useState } from "react";
-import { BookOpen, Copy, Check, Heart } from "lucide-react";
+import { useState, useMemo } from "react";
+import { BookOpen, Copy, Check, Heart, Search, Share2, Sun } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
 import { Link } from "wouter";
 
