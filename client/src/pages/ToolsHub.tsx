@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
-import { BookOpen, Heart, Users, Search } from "lucide-react";
+import { BookOpen, Heart, Users, Search, HeartHandshake } from "lucide-react";
 
 const TOOLS = [
   {
@@ -31,6 +31,13 @@ const TOOLS = [
     href: "/tools/bible-study",
     icon: Search,
     color: "var(--ink)",
+  },
+  {
+    title: "Marriage Health Assessment",
+    description: "A 15-question diagnostic across communication, intimacy, trust, shared vision, and conflict. Not a quiz — a real assessment with actionable recommendations.",
+    href: "/tools/marriage-assessment",
+    icon: HeartHandshake,
+    color: "var(--gold)",
   },
 ];
 
