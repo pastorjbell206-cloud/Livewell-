@@ -1,7 +1,9 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { ToolActions } from "@/components/ToolActions";
 import { useState, useRef } from "react";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer } from "lucide-react";
+import { EmailResults } from "@/components/EmailResults";
 
 /* ── Types ─────────────────────────────────────────────────────── */
 
@@ -886,6 +888,8 @@ export default function LifeAudit() {
           style={{ padding: "48px 32px 80px", background: "var(--bone)" }}
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
+            <ToolActions toolName="Life Audit" />
+
             {/* Overall Score */}
             <div
               style={{
@@ -1386,6 +1390,23 @@ export default function LifeAudit() {
                 Retake Assessment
               </button>
             </div>
+
+            {/* Email Results */}
+            <EmailResults
+              toolName="Life Audit"
+              resultsSummary={
+                `Life Audit Results\n\nOverall: ${totalScore}/120 (${overall.label})\n\n` +
+                CATEGORIES.map(
+                  (cat) => {
+                    const score = getCategoryScore(cat);
+                    const level = getScoreLevel(score);
+                    return `${cat.name}: ${score}/15 (${getLevelLabel(level)})`;
+                  }
+                ).join("\n") +
+                `\n\nTop Strengths: ${strengths.map((s) => `${s.category.name} (${s.score}/15)`).join(", ")}` +
+                `\nGrowth Areas: ${growthAreas.map((g) => `${g.category.name} (${g.score}/15)`).join(", ")}`
+              }
+            />
 
             {/* Bottom CTA */}
             <a

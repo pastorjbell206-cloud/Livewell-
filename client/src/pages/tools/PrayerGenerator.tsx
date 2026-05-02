@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { useState } from "react";
-import { Heart, Copy, Check, RefreshCw } from "lucide-react";
+import { useState, useMemo, useEffect, useRef, useCallback } from "react";
+import { Heart, Copy, Check, RefreshCw, Share2, Sun, Play, Pause, RotateCcw } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
 import { Link } from "wouter";
 
@@ -46,6 +46,26 @@ const PRAYERS: Record<string, string[]> = {
     "Father, the weight of ministry is real. The loneliness is real. The criticism is real. But so is Your faithfulness. For every shepherd who feels unseen today, let them know that You see. For every leader who feels unqualified, remind them that You don't call the qualified — You qualify the called. Renew their passion for the work. Amen.",
     "God, I pray for the pastor's family — the spouse who shares them with the church, the children who wonder why Dad or Mom is always at the hospital, the marriage that gets the leftovers. Protect what the enemy wants to destroy. Let the pastor's home be a place of rest, not another arena of performance. Amen.",
   ],
+  "Prayer for Your Children": [
+    "Lord, I bring my children before You — the ones who carry my name and my mistakes. Protect them from the wounds I have inflicted without knowing. Give them faith that is their own, not borrowed from mine. Where I have failed them, let Your grace fill the gap. Make them brave enough to follow You even when the cost is high. I cannot be everywhere. You can. Watch over them when I cannot. Amen.",
+    "Father, my children are growing faster than I can keep up. The world is forming them in ways I cannot always see. I ask You to anchor them in truth before the lies take root. Give them friends who sharpen them, mentors who challenge them, and a conscience that will not let them sleep when they have wandered. I release them to You — not because I want to, but because they were always Yours. Amen.",
+    "God, I confess I have made idols of my children's success, their safety, their happiness. Forgive me. What I want most is not that they would be comfortable but that they would be faithful. Give me the courage to parent for their character, not their comfort. And when they struggle — because they will — remind me that You are doing a work in them that my hovering cannot accomplish. Amen.",
+  ],
+  "Prayer Before a Hard Conversation": [
+    "Lord, I am about to walk into a conversation I have been avoiding. My stomach is tight and my words are not ready. Go before me. Give me the courage to speak truth and the humility to hear it. Guard me from saying things I cannot take back. Let love be the posture, even when the content is difficult. If reconciliation is possible, let it begin here. If it is not, give me peace. Amen.",
+    "Father, I need wisdom for what I am about to say. The relationship matters more than being right, but the truth matters too. Help me hold both. Remove the anger that wants to take over and replace it with clarity. Let my tone carry what my words cannot. And if I am wrong, give me the grace to say so quickly. Amen.",
+    "God, this conversation could go badly. I know that. But silence has already done its damage. Give me the first sentence — the rest will follow if You are in it. Protect the other person from my worst impulses. Protect me from theirs. Let something be healed today that has been broken for too long. Amen.",
+  ],
+  "Prayer for Financial Provision": [
+    "Lord, the numbers do not add up and I am afraid. I have done the math and it does not work. But You have never operated within my math. I confess that I have trusted my income more than I have trusted You. Forgive me. Provide for my family in ways I cannot predict. Give me wisdom with what I have and faith for what I lack. I am not asking for wealth. I am asking for enough — and the peace that comes with trusting the Provider. Amen.",
+    "Father, the bills are real and the anxiety is loud. I do not want to spiritualize away a concrete need. My family needs to eat. My obligations are due. But I have seen You provide before — in ways that made no earthly sense. Do it again. And while I wait, keep me from the desperation that leads to foolish decisions. You are a Father who feeds sparrows. I am worth more than sparrows. Amen.",
+    "God, I confess I have tied my worth to my earning and my peace to my balance. Both are broken anchors. Teach me contentment that does not depend on circumstances. Give me the discipline to steward well and the faith to give even when it feels reckless. Open doors I cannot see. Close the ones that would cost me more than money. You own the cattle on a thousand hills. I am asking for one. Amen.",
+  ],
+  "Prayer for the Church": [
+    "Lord, I pray for Your church — not the building, but the body. We are fractured, distracted, and too often known for what we are against rather than who we are for. Forgive us. Restore the unity that the world cannot manufacture and the enemy cannot destroy. Raise up leaders with integrity, congregations with courage, and a witness that makes the watching world pause. We are Yours. Act like it through us. Amen.",
+    "Father, the church I love is imperfect. She has wounded people I care about. She has disappointed me. And I have disappointed her. But she is still the bride of Christ, and I will not abandon her. Heal what is broken in our fellowships. Remove the politics, the posturing, the performance. Replace it with the raw, costly, beautiful thing You intended from the beginning. Amen.",
+    "God, I pray for churches I will never attend — in cities I have never visited, among people I will never meet. Strengthen the believers in places where faith costs everything. Embolden the pastors who preach under threat. Multiply the small gatherings that meet in living rooms and basements. Your church is bigger than any one tradition, and I ask You to move across every tribe, tongue, and denomination with power that cannot be explained by human effort. Amen.",
+  ],
 };
 
 const TYPES = Object.keys(PRAYERS);
@@ -54,13 +74,92 @@ export default function PrayerGenerator() {
   const [selected, setSelected] = useState<string | null>(null);
   const [index, setIndex] = useState(0);
   const [copied, setCopied] = useState(false);
+  const [shared, setShared] = useState(false);
   const { favorites, addFavorite, removeFavorite, isFavorite } = useFavorites("livewell-saved-prayers");
+
+  // Pray Along state
+  const [prayAlongActive, setPrayAlongActive] = useState(false);
+  const [prayAlongPaused, setPrayAlongPaused] = useState(false);
+  const [phraseIndex, setPhraseIndex] = useState(0);
+  const [phrases, setPhrases] = useState<string[]>([]);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const prayer = selected ? PRAYERS[selected][index % PRAYERS[selected].length] : null;
 
   const currentPrayerId = selected && prayer
     ? `prayer-${selected}-${index % PRAYERS[selected].length}`
     : null;
+
+  // Prayer of the Day — cycles through all prayers based on day of year
+  const dailyPrayer = useMemo(() => {
+    const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000);
+    const allPrayers = Object.entries(PRAYERS).flatMap(([type, prayers]) =>
+      prayers.map((text) => ({ type, text }))
+    );
+    return allPrayers[dayOfYear % allPrayers.length];
+  }, []);
+
+  // Pray Along: split prayer into phrases and auto-advance
+  const startPrayAlong = useCallback(() => {
+    if (!prayer) return;
+    // Split on sentences (period followed by space) and meaningful pauses (semicolons)
+    const splitPhrases = prayer
+      .split(/(?<=[.;!?])\s+/)
+      .map((p) => p.trim())
+      .filter((p) => p.length > 0);
+    setPhrases(splitPhrases);
+    setPhraseIndex(0);
+    setPrayAlongActive(true);
+    setPrayAlongPaused(false);
+  }, [prayer]);
+
+  const stopPrayAlong = useCallback(() => {
+    setPrayAlongActive(false);
+    setPrayAlongPaused(false);
+    setPhraseIndex(0);
+    setPhrases([]);
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+  }, []);
+
+  const togglePausePrayAlong = useCallback(() => {
+    setPrayAlongPaused((p) => !p);
+  }, []);
+
+  // Auto-advance phrases
+  useEffect(() => {
+    if (prayAlongActive && !prayAlongPaused && phrases.length > 0) {
+      intervalRef.current = setInterval(() => {
+        setPhraseIndex((prev) => {
+          if (prev >= phrases.length - 1) {
+            // Reached the end — stop
+            if (intervalRef.current) clearInterval(intervalRef.current);
+            intervalRef.current = null;
+            setPrayAlongActive(false);
+            setPrayAlongPaused(false);
+            return prev;
+          }
+          return prev + 1;
+        });
+      }, 3000);
+    } else if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    };
+  }, [prayAlongActive, prayAlongPaused, phrases.length]);
+
+  // Reset pray-along when prayer changes
+  useEffect(() => {
+    stopPrayAlong();
+  }, [selected, index, stopPrayAlong]);
 
   const handleToggleSavePrayer = () => {
     if (!prayer || !selected || !currentPrayerId) return;
@@ -79,9 +178,18 @@ export default function PrayerGenerator() {
     }
   };
 
+  const handleShare = (text: string, type?: string) => {
+    const label = type || selected || "Prayer";
+    const shareText = `\u{1F64F} ${label} — ${text} — via LiveWell by James Bell (livewellbyjamesbell.co/tools/prayer-generator)`;
+    navigator.clipboard.writeText(shareText);
+    setShared(true);
+    setTimeout(() => setShared(false), 2000);
+  };
+
   const handleAnother = () => {
     setIndex((i) => i + 1);
     setCopied(false);
+    setShared(false);
   };
 
   return (
@@ -123,6 +231,50 @@ export default function PrayerGenerator() {
               Saved Prayers ({favorites.length})
             </Link>
           )}
+        </div>
+      </section>
+
+      {/* Prayer of the Day */}
+      <section style={{ padding: "36px 32px 0", background: "var(--paper)" }}>
+        <div className="wrap" style={{ maxWidth: "800px" }}>
+          <div style={{
+            padding: "28px 32px",
+            background: "white",
+            border: "1px solid var(--border)",
+            borderRadius: "10px",
+            borderTop: "4px solid var(--gold)",
+          }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "14px" }}>
+              <Sun size={16} style={{ color: "var(--gold)" }} />
+              <span style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.18em", color: "var(--gold)", fontFamily: "var(--U)", textTransform: "uppercase" }}>
+                Prayer of the Day
+              </span>
+            </div>
+            <div style={{ fontSize: "12px", fontWeight: 700, color: "var(--ink3)", fontFamily: "var(--U)", marginBottom: "12px", letterSpacing: "0.08em" }}>
+              {dailyPrayer.type.toUpperCase()}
+            </div>
+            <p style={{ fontSize: "16px", lineHeight: 1.9, color: "var(--ink)", fontFamily: "var(--B)", fontStyle: "italic", margin: 0 }}>
+              {dailyPrayer.text}
+            </p>
+            <div style={{ display: "flex", gap: "8px", marginTop: "16px" }}>
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(dailyPrayer.text);
+                  setCopied(true);
+                  setTimeout(() => setCopied(false), 2000);
+                }}
+                style={{ display: "flex", alignItems: "center", gap: "4px", padding: "6px 14px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
+              >
+                <Copy size={12} /> Copy
+              </button>
+              <button
+                onClick={() => handleShare(dailyPrayer.text, dailyPrayer.type)}
+                style={{ display: "flex", alignItems: "center", gap: "4px", padding: "6px 14px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
+              >
+                <Share2 size={12} /> Share
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
