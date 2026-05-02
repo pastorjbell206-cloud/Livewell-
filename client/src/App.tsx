@@ -43,7 +43,13 @@ const MarriageAssessment = lazy(() => import("./pages/tools/MarriageAssessment")
 const FinancialHealth = lazy(() => import("./pages/tools/FinancialHealth"));
 const ParentingGuide = lazy(() => import("./pages/tools/ParentingGuide"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
+const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
 const WorkWithJames = lazy(() => import("./pages/WorkWithJames"));
+const PastoralBurnout = lazy(() => import("./pages/landing/PastoralBurnout"));
+const FaithCrisis = lazy(() => import("./pages/landing/FaithCrisis"));
+const MarriageCrisis = lazy(() => import("./pages/landing/MarriageCrisis"));
+const GriefLanding = lazy(() => import("./pages/landing/Grief"));
+const ParentingStruggles = lazy(() => import("./pages/landing/ParentingStruggles"));
 const ReadingPathDetail = lazy(() =>
   import("./pages/ReadingPathDetail").then((m) => ({ default: m.ReadingPathDetail }))
 );
@@ -139,10 +145,16 @@ function Router() {
         <Route path="/tools/financial-health" component={FinancialHealth} />
         <Route path="/tools/parenting-guide" component={ParentingGuide} />
         <Route path="/tools/emotional-health" component={EmotionalHealth} />
+        <Route path="/tools/saved" component={SavedItems} />
         <Route path="/work-with-james" component={WorkWithJames} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/terms" component={Terms} />
         <Route path="/resources-for-pastors" component={ResourcesForPastors} />
+        <Route path="/pastoral-burnout" component={PastoralBurnout} />
+        <Route path="/faith-crisis" component={FaithCrisis} />
+        <Route path="/marriage-crisis" component={MarriageCrisis} />
+        <Route path="/grief" component={GriefLanding} />
+        <Route path="/parenting-help" component={ParentingStruggles} />
 <Route path="/admin/login" component={AdminLogin} />
         <Route path="/admin"><ProtectedRoute component={AdminDashboard} requireAdmin /></Route>
         <Route path="/admin/posts"><ProtectedRoute component={AdminPosts} requireAdmin /></Route>
