@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
-import { BookOpen, Heart, Users } from "lucide-react";
+import { BookOpen, Heart, Users, Search } from "lucide-react";
 
 const TOOLS = [
   {
@@ -24,6 +24,13 @@ const TOOLS = [
     href: "/tools/family-devotions",
     icon: Users,
     color: "var(--gold)",
+  },
+  {
+    title: "Bible Study Guide",
+    description: "Study any book of the Bible with theological depth. Key themes, study questions, and reading strategies for 12 essential books.",
+    href: "/tools/bible-study",
+    icon: Search,
+    color: "var(--ink)",
   },
 ];
 
