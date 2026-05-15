@@ -1,17 +1,9 @@
-# Robots.txt for Livewell by James Bell
-# Allow all search engines to crawl and index the site
+# robots.txt for LiveWell by James Bell
+# https://www.livewellbyjamesbell.co/
 
 User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /api
-Disallow: /.env
-Disallow: /node_modules
 
-# Sitemap
 Sitemap: https://www.livewellbyjamesbell.co/sitemap.xml
-
-# Crawl delay (optional - adjust based on server capacity)
-Crawl-delay: 1
-
-# Cache bust: 2026-04-17T00:00:00.000Z
