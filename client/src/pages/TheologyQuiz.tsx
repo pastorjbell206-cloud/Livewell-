@@ -62,7 +62,7 @@ export default function TheologyQuiz() {
     <>
       <SEOMeta
         title="Theological Position Quiz"
-        description="Discover which of LiveWell's five pillars resonates most with your faith journey. Take the free quiz and get personalized article recommendations."
+        description="Discover which of LiveWell's tracks lands closest to where your faith is right now. Take the free quiz and get personalized article recommendations."
         keywords="theology quiz, faith assessment, James Bell, theological position"
         url="https://livewellbyjamesbell.co/quiz"
       />
@@ -76,7 +76,7 @@ export default function TheologyQuiz() {
             Where Do You Stand Theologically?
           </h1>
           <p style={{ fontSize: "16px", color: "rgba(255,255,255,0.75)", lineHeight: "1.7" }}>
-            Discover which of LiveWell's pillars resonates most with your faith journey. 10 questions. Personalized reading recommendations.
+            Discover which of LiveWell's tracks lands closest to where your faith is right now. 10 questions. Personalized reading recommendations.
           </p>
         </div>
       </section>

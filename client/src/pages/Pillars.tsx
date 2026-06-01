@@ -138,7 +138,7 @@ export default function Pillars() {
                   3.
                 </span>
                 <span>
-                  <strong>Follow reading paths:</strong> Our curated reading paths combine articles from multiple pillars to take you on a spiritual journey.
+                  <strong>Follow reading paths:</strong> Curated reading paths combine articles from multiple pillars into a sequenced argument that takes you where the work lands.
                 </span>
               </li>
               <li className="flex gap-3">

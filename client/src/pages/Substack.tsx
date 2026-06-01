@@ -60,7 +60,7 @@ export default function SubstackPage() {
                   Personal reflections
                 </h3>
                 <p className="font-body" style={{ color: "var(--ink-muted)" }}>
-                  Stories from my own journey — the kind of honesty that's harder to share publicly, but matters deeply.
+                  Stories from inside the work — the kind of honesty that is harder to share publicly, but carries weight.
                 </p>
               </div>
 

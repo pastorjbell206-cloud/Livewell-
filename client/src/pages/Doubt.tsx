@@ -1,12 +1,10 @@
 import { Link } from "wouter";
-import { useState } from "react";
 import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 export default function Doubt() {
-  const [emailInput, setEmailInput] = useState("");
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   const FEATURED_ARTICLES = [
     {
@@ -50,7 +48,7 @@ export default function Doubt() {
   const START_HERE_PATHS = [
     {
       title: "I used to believe, but now I'm not sure",
-      description: "For those who had faith and are now questioning. You're not alone. And this might be the most honest part of your journey.",
+      description: "For those who had faith and are now questioning. You're not alone. And this might be the most honest part of what you are walking through.",
       icon: "←"
     },
     {
@@ -72,13 +70,6 @@ export default function Doubt() {
     "What about other religions?",
     "Can I doubt and still have faith?"
   ];
-
-  const handleEmailSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!emailInput || !emailInput.includes('@')) return;
-    setEmailSubmitted(true);
-    setEmailInput('');
-  };
 
   return (
     <div style={{ background: "var(--paper)" }}>
@@ -183,34 +174,15 @@ export default function Doubt() {
         </div>
       </section>
 
-      {/* NEWSLETTER STRIP */}
-      <section style={{ background: "var(--ink)", color: "var(--paper)", padding: "60px 20px" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontSize: "32px", fontWeight: "bold", marginBottom: "16px", fontFamily: "var(--F)" }}>
-            Theology for the honest.
-          </h2>
-          <p style={{ fontSize: "14px", lineHeight: "1.8", marginBottom: "32px", color: "var(--stone2)" }}>
-            Essays on faith, doubt, Scripture, and what to do when your questions feel dangerous. Twice weekly to your inbox.
-          </p>
-          {emailSubmitted ? (
-            <p style={{ color: "var(--gold)", fontWeight: "bold", fontSize: "16px" }}>
-              Check your inbox. Your questions matter.
-            </p>
-          ) : (
-            <form onSubmit={handleEmailSubmit} style={{ display: "flex", gap: "12px", maxWidth: "500px", margin: "0 auto", flexWrap: "wrap", justifyContent: "center" }}>
-              <input
-                type="email"
-                placeholder="your@email.com"
-                value={emailInput}
-                onChange={(e) => setEmailInput(e.target.value)}
-                required
-                style={{ flex: 1, minWidth: "200px", padding: "12px 16px", border: "none", borderRadius: "4px", fontSize: "14px" }}
-              />
-              <button type="submit" style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer", whiteSpace: "nowrap" }}>
-                Subscribe
-              </button>
-            </form>
-          )}
+      {/* NEWSLETTER STRIP — real form */}
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+          <NewsletterSignup
+            variant="inline"
+            source="doubt"
+            title="Theology for the honest."
+            description="When the questions outgrow the answers. One essay a week. Written without conversion bait."
+          />
         </div>
       </section>
 

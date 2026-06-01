@@ -99,26 +99,22 @@ export default function Membership() {
         </div>
       </section>
 
-      {/* SOCIAL PROOF */}
-      {/* NOTE: Replace these with real testimonials within 30 days of launch.
-           AI-written placeholder testimonials are a fraud risk if shipped as real quotes. */}
-      <section style={{ background: "var(--charcoal)", padding: "5rem 1.5rem" }}>
-        <div style={{ maxWidth: "880px", margin: "0 auto" }}>
-          <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", fontFamily: "var(--U)", marginBottom: "1rem", textAlign: "center" }}>What members say</div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1.5rem", marginTop: "2rem" }}>
-            {[
-              { quote: "I was six months from walking away from ministry. The member essays on pastoral burnout named what I was experiencing better than any counselor had. I renewed my membership the same week I renewed my call.", name: "Pastor M.T.", ctx: "Lead Pastor, Midwest" },
-              { quote: "My husband and I read the marriage essays together on Sunday evenings. The article on emotional labor was the first time either of us could name what was happening. We talked for three hours.", name: "S.L.", ctx: "Married 11 years, Pacific Northwest" },
-              { quote: "I am not a Christian. I found LiveWell during a crisis and the theological depth gave me somewhere to stand intellectually. The membership was worth it for the reading guides alone.", name: "R.H.", ctx: "Seminary graduate, Texas" },
-            ].map((t, i) => (
-              <div key={i} style={{ padding: "2rem", border: "1px solid rgba(244,241,234,0.08)", borderRadius: "2px" }}>
-                <div style={{ width: "32px", height: "2px", background: "var(--mustard)", marginBottom: "1.25rem" }} />
-                <p style={{ fontFamily: "var(--F)", fontSize: "0.95rem", lineHeight: 1.7, color: "var(--bone)", opacity: 0.85, fontStyle: "italic", marginBottom: "1.25rem" }}>"{t.quote}"</p>
-                <div style={{ fontSize: "0.8rem", fontWeight: 500, color: "var(--bone)", fontFamily: "var(--U)" }}>{t.name}</div>
-                <div style={{ fontSize: "0.75rem", color: "var(--bone)", opacity: 0.45, fontFamily: "var(--U)" }}>{t.ctx}</div>
-              </div>
-            ))}
+      {/* MEMBERSHIP PROMISE — honest framing while real testimonials come in.
+           The previous block shipped AI-written placeholder quotes from
+           fictional pastors; that was a fraud risk per the original comment.
+           This section will be replaced with real member quotes once they
+           arrive (see admin/testimonials). */}
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4)" }}>
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", textAlign: "center" }}>
+          <div className="eyebrow" style={{ marginBottom: "20px", color: "var(--mustard)" }}>
+            The Founding Cohort
           </div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 400, color: "var(--bone)", letterSpacing: "-0.015em", marginBottom: "20px", maxWidth: "20ch", margin: "0 auto 20px" }}>
+            The first members shape what membership becomes.
+          </h2>
+          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,0.7)", maxWidth: "55ch", margin: "0 auto" }}>
+            No paid testimonials. No invented quotes. When the founding cohort signs up, this space holds their real words. Until then, the writing speaks for itself — read three essays first.
+          </p>
         </div>
       </section>
 

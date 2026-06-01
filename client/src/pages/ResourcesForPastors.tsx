@@ -1,145 +1,322 @@
+/**
+ * ResourcesForPastors — the strategic page that should grow with the PCN
+ * library. Was hardcoded to a single resource; now queries the DB so admins
+ * can publish new resources without a redeploy.
+ *
+ * Categorization heuristic: any resource whose category mentions "pastor",
+ * "ministry", "leadership", or "sermon" is considered pastor-facing. The
+ * fully-typed solution is to add an `audience` enum column to resources;
+ * until that migration, the heuristic is good enough.
+ */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { Download, FileText, BookOpen } from "lucide-react";
+import { trpc } from "@/lib/trpc";
+import { BookOpen, Download, FileText } from "lucide-react";
 
-const RESOURCES_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/pastors-network-DhRzFbE8YzSg9o7MLtigko.webp";
+const RESOURCES_HERO =
+  "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/pastors-network-DhRzFbE8YzSg9o7MLtigko.webp";
+
+const PASTOR_CATEGORY_RE = /pastor|ministry|leadership|sermon|preach|trench/i;
 
 export default function ResourcesForPastors() {
-  const resources = [
-    {
-      title: "Trench Work Series — Complete Collection",
-      description: "The complete Trench Work series (Volumes 1-15) — practical, biblical guidance for pastors navigating real challenges in ministry. Essays on leadership, theology, culture, and the Christian life.",
-      icon: BookOpen,
-      downloads: [
-        {
-          label: "PDF Version",
-          url: "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/TWCompleteCollectionVol01-15_ecae02c3.pdf",
-          format: "PDF",
-          size: "1.5 MB",
-        },
-      ],
-    },
-  ];
+  const { data: resources, isLoading } =
+    trpc.resources.listPublished.useQuery();
+
+  const pastorResources =
+    resources?.filter(r =>
+      r.category ? PASTOR_CATEGORY_RE.test(r.category) : false
+    ) ?? [];
 
   return (
     <>
       <SEOMeta
         title="Resources for Pastors"
-        description="Free downloadable resources for pastors — guides, collections, and tools to support your ministry leadership."
-        keywords="pastor resources, ministry tools, leadership guides, church leadership"
+        description="Free downloadable resources for pastors and church leaders — guides, sermon collections, and tools for the work."
+        keywords="pastor resources, ministry tools, sermon resources, leadership guides"
       />
       <Layout>
-        {/* Hero */}
-        <section className="relative overflow-hidden" style={{ minHeight: "50vh" }}>
-          <div className="absolute inset-0">
-            <img src={RESOURCES_IMAGE} alt="" className="w-full h-full object-cover" />
-            <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(26,26,26,0.95) 0%, rgba(26,26,26,0.65) 50%, rgba(26,26,26,0.35) 100%)" }} />
-          </div>
-          <div className="relative container flex items-end" style={{ minHeight: "50vh" }}>
-            <div className="max-w-2xl pb-16">
-              <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-4" style={{ color: "var(--gold)" }}>
-                Resources for Pastors
-              </div>
-              <h1 className="font-display font-bold mb-4" style={{ color: "var(--bone)", fontSize: "clamp(2.25rem, 4vw, 3rem)" }}>
-                Tools for the work
-              </h1>
-              <p className="font-body text-lg" style={{ color: "rgba(244,241,234,0.7)", lineHeight: 1.8 }}>
-                Free resources to support your ministry — guides, essays, and collections from James Bell and the Livewell community.
-              </p>
+        {/* HERO */}
+        <section
+          style={{
+            position: "relative",
+            minHeight: "44vh",
+            overflow: "hidden",
+            background: "var(--charcoal)",
+          }}
+        >
+          <img
+            src={RESOURCES_HERO}
+            alt=""
+            aria-hidden
+            style={{
+              position: "absolute",
+              inset: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              opacity: 0.45,
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              background:
+                "linear-gradient(to top, var(--charcoal) 0%, rgba(26,26,26,0.6) 60%, rgba(26,26,26,0.25) 100%)",
+            }}
+          />
+          <div
+            style={{
+              position: "relative",
+              maxWidth: "var(--w-default)",
+              margin: "0 auto",
+              padding: "var(--s-7) var(--s-4) var(--s-6)",
+              color: "var(--bone)",
+            }}
+          >
+            <div className="eyebrow" style={{ marginBottom: "16px" }}>
+              For Pastors
             </div>
+            <h1
+              style={{
+                fontFamily: "var(--F)",
+                fontSize: "clamp(40px, 5vw, 60px)",
+                fontWeight: 400,
+                lineHeight: 1.1,
+                letterSpacing: "-0.02em",
+                marginBottom: "20px",
+                maxWidth: "20ch",
+              }}
+            >
+              Tools for the work.
+            </h1>
+            <p
+              style={{
+                fontFamily: "var(--B)",
+                fontSize: "18px",
+                lineHeight: 1.7,
+                maxWidth: "55ch",
+                color: "rgba(245,240,230,0.78)",
+              }}
+            >
+              Sermon collections, leadership guides, and pastoral resources —
+              free, downloadable, written for the pastor who is actually doing
+              the work.
+            </p>
           </div>
         </section>
 
-        {/* Resources */}
-        <section className="py-24" style={{ backgroundColor: "var(--bone)" }}>
-          <div className="container">
-            <div className="max-w-4xl mx-auto">
-              <div className="space-y-16">
-                {resources.map((resource, idx) => {
-                  const Icon = resource.icon;
-                  return (
-                    <div key={idx} className="bg-white rounded-lg p-8 border" style={{ borderColor: "#E5DDD0" }}>
-                      <div className="flex gap-6 mb-6">
-                        <div style={{ color: "var(--gold)" }}>
-                          <Icon size={32} />
-                        </div>
-                        <div className="flex-1">
-                          <h2 className="font-display font-bold mb-3" style={{ color: "var(--ink)", fontSize: "clamp(1.25rem, 2vw, 1.75rem)" }}>
-                            {resource.title}
-                          </h2>
-                          <p className="font-body text-lg" style={{ color: "var(--charcoal)", lineHeight: 1.8 }}>
-                            {resource.description}
-                          </p>
-                        </div>
-                      </div>
+        {/* LIST */}
+        <section
+          style={{
+            background: "var(--bone)",
+            padding: "var(--s-7) var(--s-4)",
+          }}
+        >
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+            {isLoading && (
+              <p
+                style={{
+                  fontFamily: "var(--U)",
+                  color: "var(--ink-muted)",
+                  textAlign: "center",
+                  padding: "var(--s-5) 0",
+                }}
+              >
+                Loading resources…
+              </p>
+            )}
 
-                      {/* Download Buttons */}
-                      <div className="space-y-3">
-                        {resource.downloads.map((download, didx) => (
-                          <a
-                            key={didx}
-                            href={download.url}
-                            download
-                            className="flex items-center justify-between p-4 rounded border transition-colors"
+            {!isLoading && pastorResources.length === 0 && (
+              <div
+                style={{
+                  textAlign: "center",
+                  padding: "var(--s-6) 0",
+                  fontFamily: "var(--B)",
+                  fontSize: "16px",
+                  color: "var(--ink-muted)",
+                }}
+              >
+                <p>Resources are being prepared. Check back soon.</p>
+              </div>
+            )}
+
+            {pastorResources.length > 0 && (
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr",
+                  gap: "var(--s-4)",
+                }}
+              >
+                {pastorResources.map(resource => (
+                  <article
+                    key={resource.id}
+                    style={{
+                      background: "var(--card)",
+                      border: "1px solid var(--border)",
+                      borderLeft: "2px solid var(--mustard)",
+                      borderRadius: "var(--radius-sm)",
+                      padding: "var(--s-4)",
+                    }}
+                  >
+                    <header
+                      style={{
+                        display: "flex",
+                        gap: "16px",
+                        alignItems: "flex-start",
+                        marginBottom: "16px",
+                      }}
+                    >
+                      <BookOpen
+                        size={28}
+                        aria-hidden
+                        style={{ color: "var(--mustard)", flexShrink: 0 }}
+                      />
+                      <div style={{ flex: 1, minWidth: 0 }}>
+                        {resource.category && (
+                          <div className="eyebrow" style={{ marginBottom: "8px" }}>
+                            {resource.category}
+                          </div>
+                        )}
+                        <h2
+                          style={{
+                            fontFamily: "var(--F)",
+                            fontSize: "26px",
+                            fontWeight: 500,
+                            color: "var(--ink)",
+                            letterSpacing: "-0.01em",
+                            marginBottom: "8px",
+                          }}
+                        >
+                          {resource.title}
+                        </h2>
+                        {resource.description && (
+                          <p
                             style={{
-                              borderColor: "rgba(244,241,234,0.7)",
-                              backgroundColor: "#FAFAF8",
-                            }}
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.backgroundColor = "#F0EBE3";
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.backgroundColor = "#FAFAF8";
+                              fontFamily: "var(--B)",
+                              fontSize: "15px",
+                              lineHeight: 1.65,
+                              color: "var(--ink-muted)",
+                              maxWidth: "65ch",
                             }}
                           >
-                            <div className="flex items-center gap-3">
-                              <FileText size={20} style={{ color: "var(--gold)" }} />
-                              <div>
-                                <p className="font-ui font-medium" style={{ color: "var(--ink)" }}>
-                                  {download.label}
-                                </p>
-                                <p className="font-ui text-xs" style={{ color: "var(--ink-muted)" }}>
-                                  {download.format} • {download.size}
-                                </p>
-                              </div>
-                            </div>
-                            <Download size={20} style={{ color: "var(--gold)" }} />
-                          </a>
-                        ))}
+                            {resource.description}
+                          </p>
+                        )}
                       </div>
-                    </div>
-                  );
-                })}
+                    </header>
+                    {resource.url && (
+                      <a
+                        href={resource.url}
+                        download
+                        style={{
+                          display: "inline-flex",
+                          alignItems: "center",
+                          gap: "10px",
+                          background: "var(--ink)",
+                          color: "var(--bone)",
+                          fontFamily: "var(--U)",
+                          fontSize: "13px",
+                          fontWeight: 600,
+                          padding: "12px 22px",
+                          borderRadius: "var(--radius-sm)",
+                          textDecoration: "none",
+                          transition: "background 0.2s",
+                        }}
+                      >
+                        <FileText size={14} aria-hidden />
+                        Download {resource.fileType || "File"}
+                        <Download size={14} aria-hidden />
+                      </a>
+                    )}
+                  </article>
+                ))}
               </div>
+            )}
 
-              {/* Coming Soon */}
-              <div className="mt-16 pt-16 border-t" style={{ borderColor: "#E5DDD0" }}>
-                <h2 className="font-display font-bold mb-8" style={{ color: "var(--ink)", fontSize: "clamp(1.5rem, 2vw, 1.75rem)" }}>
-                  Coming soon
-                </h2>
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div className="p-6 rounded" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5DDD0" }}>
-                    <h3 className="font-display font-semibold mb-3" style={{ color: "var(--charcoal)" }}>
-                      Sermon Study Guides
-                    </h3>
-                    <p className="font-body text-sm" style={{ color: "var(--ink-muted)" }}>
-                      Downloadable guides to help you teach through key passages and theological topics with your congregation.
-                    </p>
-                  </div>
-                  <div className="p-6 rounded" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5DDD0" }}>
-                    <h3 className="font-display font-semibold mb-3" style={{ color: "var(--charcoal)" }}>
-                      Leadership Curriculum
-                    </h3>
-                    <p className="font-body text-sm" style={{ color: "var(--ink-muted)" }}>
-                      Multi-week curriculum for developing leaders in your congregation around biblical theology and ministry.
-                    </p>
-                  </div>
-                </div>
+            {/* Coming Soon block — preserved from the previous version */}
+            <div
+              style={{
+                marginTop: "var(--s-6)",
+                paddingTop: "var(--s-6)",
+                borderTop: "1px solid var(--border)",
+              }}
+            >
+              <h2
+                style={{
+                  fontFamily: "var(--F)",
+                  fontSize: "28px",
+                  fontWeight: 500,
+                  color: "var(--ink)",
+                  letterSpacing: "-0.01em",
+                  marginBottom: "24px",
+                }}
+              >
+                Coming soon
+              </h2>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+                  gap: "24px",
+                }}
+              >
+                <ComingSoonCard
+                  title="Sermon Study Guides"
+                  description="Companion guides for teaching through key passages with your congregation."
+                />
+                <ComingSoonCard
+                  title="Leadership Curriculum"
+                  description="Multi-week curriculum for developing elders, deacons, and lay leaders in your church."
+                />
               </div>
             </div>
           </div>
         </section>
       </Layout>
     </>
+  );
+}
+
+function ComingSoonCard({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) {
+  return (
+    <div
+      style={{
+        background: "var(--card)",
+        border: "1px solid var(--border)",
+        borderRadius: "var(--radius-sm)",
+        padding: "24px",
+      }}
+    >
+      <h3
+        style={{
+          fontFamily: "var(--F)",
+          fontSize: "20px",
+          fontWeight: 500,
+          color: "var(--ink)",
+          marginBottom: "12px",
+          letterSpacing: "-0.01em",
+        }}
+      >
+        {title}
+      </h3>
+      <p
+        style={{
+          fontFamily: "var(--B)",
+          fontSize: "14px",
+          color: "var(--ink-muted)",
+          lineHeight: 1.65,
+        }}
+      >
+        {description}
+      </p>
+    </div>
   );
 }

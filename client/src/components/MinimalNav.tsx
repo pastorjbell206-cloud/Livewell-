@@ -1,6 +1,18 @@
+/**
+ * Primary navigation. Reflects the Substack-shaped positioning:
+ *
+ *   Essays → After Christendom + Politics + American Church + Justice + Theology + Doubt
+ *   Pastoring → PCN + Resources for the work
+ *   Marriage & Family → Marriage + Parenting + Devotionals
+ *   Books → flat link
+ *
+ * Track definitions live in `lib/taxonomy.ts`; this file just renders them.
+ */
 import { Link, useLocation } from "wouter";
-import { useState, useRef, useEffect } from "react";
-import { Search, Menu, X, ChevronDown } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { ChevronDown, Menu, Search, X } from "lucide-react";
+
+import { TRACKS, trackUrl } from "@/lib/taxonomy";
 
 interface DropdownItem {
   label: string;
@@ -14,7 +26,72 @@ interface NavLink {
   dropdown?: DropdownItem[];
 }
 
-// Design token: gold = var(--gold) / #D4A017 — keep in sync with index.css :root
+function buildNavLinks(): NavLink[] {
+  const trackItem = (slug: string): DropdownItem => {
+    const t = TRACKS.find(x => x.slug === slug);
+    return {
+      label: t?.title ?? slug,
+      href: trackUrl(slug),
+      description: t?.description,
+    };
+  };
+
+  return [
+    {
+      label: "Essays",
+      dropdown: [
+        trackItem("after-christendom"),
+        trackItem("politics"),
+        trackItem("american-church"),
+        trackItem("prophetic-justice"),
+        trackItem("theology"),
+        trackItem("doubt"),
+        {
+          label: "All writing",
+          href: "/writing",
+          description: "Browse the full essay archive",
+        },
+        {
+          label: "Start here if you're skeptical",
+          href: "/skeptic-track",
+          description: "Seven essays in argument order",
+        },
+      ],
+    },
+    {
+      label: "Pastoring",
+      dropdown: [
+        trackItem("pastoral-ministry"),
+        {
+          label: "Pastors Connection Network",
+          href: "/pastors",
+          description: "You don't have to lead alone",
+        },
+        {
+          label: "Pastor's Resource Wall",
+          href: "/pastors-resource-wall",
+          description: "Sermon prep, study guides, citation tools",
+        },
+        {
+          label: "Resources for pastors",
+          href: "/resources-for-pastors",
+          description: "Downloadable guides and tools",
+        },
+      ],
+    },
+    {
+      label: "Marriage & Family",
+      dropdown: [
+        trackItem("marriage"),
+        trackItem("parenting"),
+        trackItem("devotionals"),
+      ],
+    },
+    { label: "Books", href: "/books" },
+    { label: "About", href: "/about" },
+  ];
+}
+
 export default function MinimalNav() {
   const [location] = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -22,58 +99,20 @@ export default function MinimalNav() {
   const [searchQuery, setSearchQuery] = useState("");
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const navLinks = buildNavLinks();
 
-  const navLinks: NavLink[] = [
-    {
-      label: "Marriage & Family",
-      dropdown: [
-        { label: "Marriage", href: "/marriage", description: "Covenant, conflict, and costly love" },
-        { label: "Parenting", href: "/parenting", description: "Raising kids who think and believe" },
-        { label: "Family Devotions", href: "/writing?topic=devotionals", description: "Daily readings for your family" },
-        { label: "All Family Articles", href: "/writing?topic=marriage", description: "Browse all marriage & family writing" },
-      ]
-    },
-    {
-      label: "Faith & Theology",
-      dropdown: [
-        { label: "Doubt & Questions", href: "/doubt", description: "When the questions won't stop" },
-        { label: "Theological Depth", href: "/writing?topic=theology", description: "Greek, Hebrew, and hard questions" },
-        { label: "Spiritual Growth", href: "/writing?topic=devotionals", description: "Devotionals and formation" },
-        { label: "All Theology Articles", href: "/writing?topic=theology", description: "Browse all theology writing" },
-      ]
-    },
-    {
-      label: "Justice & Culture",
-      dropdown: [
-        { label: "Prophetic Justice", href: "/writing?topic=justice", description: "Where the church must speak" },
-        { label: "Faith & Politics", href: "/writing?topic=justice", description: "When flag and cross compete" },
-        { label: "Cultural Analysis", href: "/writing?topic=justice", description: "Reading the moment theologically" },
-      ]
-    },
-    {
-      label: "For Pastors",
-      dropdown: [
-        { label: "Pastoral Ministry", href: "/writing?topic=pastoral-ministry", description: "Burnout, preaching, and the soul beneath the calling" },
-        { label: "Pastors Connection Network", href: "/pastors", description: "You don't have to lead alone" },
-        { label: "Church Leadership", href: "/for-leaders", description: "Vision, governance, and team health" },
-        { label: "Sermon Resources", href: "/resources", description: "Frameworks, guides, and tools" },
-        { label: "Pastor Toolkit", href: "/resources", description: "Practical ministry resources" },
-      ]
-    },
-    { label: "Books", href: "/books" },
-  ];
-
-  const isActive = (href: string) => location === href || location.startsWith(href + "/");
+  const isActive = (href: string) =>
+    location === href || location.startsWith(href + "/");
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      window.location.href = "/writing?q=" + encodeURIComponent(searchQuery.trim());
+      // Use replaceState to avoid full page reload
+      window.location.href = "/search?q=" + encodeURIComponent(searchQuery.trim());
     }
     setSearchOpen(false);
   };
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
@@ -89,93 +128,294 @@ export default function MinimalNav() {
       {/* Search Overlay */}
       {searchOpen && (
         <div
-          style={{ position: "fixed", inset: 0, background: "rgba(10,10,10,0.98)", zIndex: 500, display: "flex", alignItems: "flex-start", justifyContent: "center", paddingTop: "120px" }}
-          onClick={(e) => { if (e.target === e.currentTarget) setSearchOpen(false); }}
+          style={{
+            position: "fixed",
+            inset: 0,
+            background: "rgba(10,10,10,0.98)",
+            zIndex: 500,
+            display: "flex",
+            alignItems: "flex-start",
+            justifyContent: "center",
+            paddingTop: "120px",
+          }}
+          onClick={e => {
+            if (e.target === e.currentTarget) setSearchOpen(false);
+          }}
         >
           <div style={{ width: "100%", maxWidth: "680px", padding: "0 32px" }}>
-            <p style={{ fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "rgba(255,255,255,0.45)", marginBottom: "16px" }}>SEARCH ARTICLES</p>
+            <p
+              style={{
+                fontFamily: "var(--U)",
+                fontSize: "11px",
+                letterSpacing: "0.2em",
+                textTransform: "uppercase",
+                color: "rgba(245,240,230,0.45)",
+                marginBottom: "16px",
+              }}
+            >
+              Search the writing
+            </p>
             <form onSubmit={handleSearch}>
+              <label
+                htmlFor="nav-search-input"
+                style={{
+                  position: "absolute",
+                  width: "1px",
+                  height: "1px",
+                  overflow: "hidden",
+                  clip: "rect(0,0,0,0)",
+                }}
+              >
+                Search essays and books
+              </label>
               <input
+                id="nav-search-input"
                 autoFocus
                 type="text"
-                placeholder="Search 880+ essays..."
+                placeholder="What are you looking for?"
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                style={{ width: "100%", background: "transparent", border: "none", borderBottom: "2px solid #D4A017", fontSize: "clamp(28px,4vw,48px)", color: "white", outline: "none", padding: "8px 0 16px", caretColor: "var(--gold)", fontFamily: "Georgia, serif" }}
+                onChange={e => setSearchQuery(e.target.value)}
+                style={{
+                  width: "100%",
+                  background: "transparent",
+                  border: "none",
+                  borderBottom: "2px solid var(--mustard)",
+                  fontSize: "clamp(28px, 4vw, 48px)",
+                  color: "var(--bone)",
+                  outline: "none",
+                  padding: "8px 0 16px",
+                  caretColor: "var(--mustard)",
+                  fontFamily: "var(--F)",
+                }}
               />
             </form>
-            <div style={{ display: "flex", gap: "10px", marginTop: "24px", flexWrap: "wrap" }}>
-              {["Marriage", "Parenting", "Faith & Doubt", "Theology", "Justice", "Pastoral Ministry"].map((tag) => (
+            <div
+              style={{
+                display: "flex",
+                gap: "10px",
+                marginTop: "24px",
+                flexWrap: "wrap",
+              }}
+            >
+              {[
+                "After Christendom",
+                "Politics",
+                "Pastoring",
+                "Justice",
+                "Theology",
+                "Marriage",
+              ].map(tag => (
                 <Link
                   key={tag}
-                  href={"/writing?topic=" + tag.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-")}
+                  href={
+                    "/writing?track=" +
+                    tag.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-")
+                  }
                   onClick={() => setSearchOpen(false)}
-                  style={{ fontSize: "12px", border: "1px solid rgba(255,255,255,0.2)", color: "rgba(255,255,255,0.6)", padding: "6px 14px", borderRadius: "20px", textDecoration: "none" }}
+                  style={{
+                    fontFamily: "var(--U)",
+                    fontSize: "12px",
+                    border: "1px solid rgba(245,240,230,0.2)",
+                    color: "rgba(245,240,230,0.6)",
+                    padding: "6px 14px",
+                    borderRadius: "999px",
+                    textDecoration: "none",
+                  }}
                 >
                   {tag}
                 </Link>
               ))}
             </div>
-            <button onClick={() => setSearchOpen(false)} style={{ position: "fixed", top: "32px", right: "40px", color: "rgba(255,255,255,0.45)", fontSize: "30px", background: "none", border: "none", cursor: "pointer", lineHeight: 1 }}>×</button>
+            <button
+              onClick={() => setSearchOpen(false)}
+              aria-label="Close search"
+              style={{
+                position: "fixed",
+                top: "32px",
+                right: "40px",
+                color: "rgba(245,240,230,0.45)",
+                fontSize: "30px",
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                lineHeight: 1,
+              }}
+            >
+              ×
+            </button>
           </div>
         </div>
       )}
 
       {/* Main Nav */}
-      <nav style={{ position: "sticky", top: 0, zIndex: 200, background: "rgba(244,241,234,0.97)", backdropFilter: "blur(16px)", borderBottom: "1px solid rgba(255,255,255,0.06)", width: "100%" }}>
-        <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 20px", display: "flex", justifyContent: "space-between", alignItems: "center", height: "64px" }}>
-          {/* Logo with gold rule */}
+      <nav
+        style={{
+          position: "sticky",
+          top: 0,
+          zIndex: 200,
+          background: "rgba(245,240,230,0.97)",
+          backdropFilter: "blur(16px)",
+          borderBottom: "1px solid var(--border)",
+          width: "100%",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1400px",
+            margin: "0 auto",
+            padding: "0 20px",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            height: "64px",
+          }}
+        >
           <Link href="/" style={{ textDecoration: "none" }}>
             <div>
-              <div style={{ fontSize: "20px", fontWeight: 700, color: "#14110C", fontFamily: "var(--F)", lineHeight: 1, paddingBottom: "4px", borderBottom: "2px solid var(--gold)" }}>Live Well</div>
-              <div style={{ fontSize: "9px", color: "#5A5448", letterSpacing: "0.15em", textTransform: "uppercase", marginTop: "4px", fontFamily: "var(--U)", fontWeight: 500 }}>by James Bell</div>
+              <div
+                style={{
+                  fontFamily: "var(--F)",
+                  fontSize: "20px",
+                  fontWeight: 600,
+                  color: "var(--ink)",
+                  lineHeight: 1,
+                  paddingBottom: "4px",
+                  borderBottom: "2px solid var(--mustard)",
+                }}
+              >
+                Live Well
+              </div>
+              <div
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "9px",
+                  color: "var(--ink-muted)",
+                  letterSpacing: "0.15em",
+                  textTransform: "uppercase",
+                  marginTop: "4px",
+                  fontWeight: 500,
+                }}
+              >
+                by James Bell
+              </div>
             </div>
           </Link>
 
-          {/* Desktop Nav Links */}
-          <div ref={dropdownRef} style={{ display: "flex", gap: "2px", alignItems: "center" }} className="desktop-nav">
-            {navLinks.map((link) => (
+          <div
+            ref={dropdownRef}
+            style={{ display: "flex", gap: "2px", alignItems: "center" }}
+            className="desktop-nav"
+          >
+            {navLinks.map(link => (
               <div key={link.label} style={{ position: "relative" }}>
                 {link.dropdown ? (
                   <>
                     <button
-                      onClick={() => setOpenDropdown(openDropdown === link.label ? null : link.label)}
+                      onClick={() =>
+                        setOpenDropdown(
+                          openDropdown === link.label ? null : link.label
+                        )
+                      }
                       onMouseEnter={() => setOpenDropdown(link.label)}
+                      aria-haspopup="menu"
+                      aria-expanded={openDropdown === link.label}
                       style={{
-                        display: "flex", alignItems: "center", gap: "4px",
-                        color: openDropdown === link.label ? "var(--gold)" : "var(--ink)",
-                        fontSize: "13px", padding: "8px 12px", borderRadius: "3px",
-                        background: "none", border: "none", cursor: "pointer",
-                        transition: "color 0.2s", fontWeight: "400"
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "4px",
+                        color:
+                          openDropdown === link.label
+                            ? "var(--mustard-text)"
+                            : "var(--ink)",
+                        fontFamily: "var(--U)",
+                        fontSize: "13px",
+                        padding: "8px 12px",
+                        borderRadius: "var(--radius-sm)",
+                        background: "none",
+                        border: "none",
+                        cursor: "pointer",
+                        transition: "color 0.2s",
+                        fontWeight: 500,
                       }}
                     >
                       {link.label}
-                      <ChevronDown size={14} style={{ opacity: 0.6, transform: openDropdown === link.label ? "rotate(180deg)" : "none", transition: "transform 0.2s" }} />
+                      <ChevronDown
+                        size={14}
+                        style={{
+                          opacity: 0.6,
+                          transform:
+                            openDropdown === link.label
+                              ? "rotate(180deg)"
+                              : "none",
+                          transition: "transform 0.2s",
+                        }}
+                      />
                     </button>
-
-                    {/* Dropdown Menu */}
                     {openDropdown === link.label && (
                       <div
+                        role="menu"
                         onMouseLeave={() => setOpenDropdown(null)}
                         style={{
-                          position: "absolute", top: "100%", left: "50%", transform: "translateX(-50%)",
-                          background: "#FFFFFF", border: "1px solid rgba(255,255,255,0.08)", borderTop: "2px solid var(--gold)", borderRadius: "8px",
-                          padding: "8px", minWidth: "280px", boxShadow: "0 12px 40px rgba(0,0,0,0.5)",
-                          marginTop: "4px", zIndex: 300
+                          position: "absolute",
+                          top: "100%",
+                          left: "50%",
+                          transform: "translateX(-50%)",
+                          background: "var(--card)",
+                          border: "1px solid var(--border)",
+                          borderTop: "2px solid var(--mustard)",
+                          borderRadius: "var(--radius-sm)",
+                          padding: "8px",
+                          minWidth: "320px",
+                          boxShadow: "var(--shadow-modal)",
+                          marginTop: "4px",
+                          zIndex: 300,
                         }}
                       >
-                        {link.dropdown.map((item) => (
-                          <Link key={item.href + item.label} href={item.href} onClick={() => setOpenDropdown(null)} style={{ textDecoration: "none" }}>
-                            <div style={{
-                              padding: "10px 14px", borderRadius: "6px", cursor: "pointer",
-                              transition: "background 0.15s"
-                            }}
-                              onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(45,74,62,0.4)")}
-                              onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
+                        {link.dropdown.map(item => (
+                          <Link
+                            key={item.href + item.label}
+                            href={item.href}
+                            onClick={() => setOpenDropdown(null)}
+                            style={{ textDecoration: "none" }}
+                            role="menuitem"
+                          >
+                            <div
+                              style={{
+                                padding: "10px 14px",
+                                borderRadius: "var(--radius-sm)",
+                                cursor: "pointer",
+                                transition: "background 0.15s",
+                              }}
+                              onMouseEnter={e =>
+                                (e.currentTarget.style.background =
+                                  "var(--bone-warm)")
+                              }
+                              onMouseLeave={e =>
+                                (e.currentTarget.style.background = "transparent")
+                              }
                             >
-                              <div style={{ fontSize: "13px", fontWeight: "600", color: "var(--ink)", marginBottom: "2px" }}>{item.label}</div>
+                              <div
+                                style={{
+                                  fontFamily: "var(--U)",
+                                  fontSize: "13px",
+                                  fontWeight: 600,
+                                  color: "var(--ink)",
+                                  marginBottom: "2px",
+                                }}
+                              >
+                                {item.label}
+                              </div>
                               {item.description && (
-                                <div style={{ fontSize: "11px", color: "var(--stone2)", lineHeight: "1.4" }}>{item.description}</div>
+                                <div
+                                  style={{
+                                    fontFamily: "var(--B)",
+                                    fontSize: "11px",
+                                    color: "var(--ink-muted)",
+                                    lineHeight: 1.5,
+                                  }}
+                                >
+                                  {item.description}
+                                </div>
                               )}
                             </div>
                           </Link>
@@ -185,12 +425,19 @@ export default function MinimalNav() {
                   </>
                 ) : (
                   <Link href={link.href!} style={{ textDecoration: "none" }}>
-                    <span style={{
-                      color: isActive(link.href!) ? "var(--gold)" : "var(--ink)",
-                      fontSize: "13px", padding: "8px 12px", borderRadius: "3px",
-                      display: "block", transition: "color 0.2s",
-                      fontWeight: isActive(link.href!) ? "600" : "400",
-                    }}>
+                    <span
+                      style={{
+                        color: isActive(link.href!)
+                          ? "var(--mustard-text)"
+                          : "var(--ink)",
+                        fontFamily: "var(--U)",
+                        fontSize: "13px",
+                        padding: "8px 12px",
+                        borderRadius: "var(--radius-sm)",
+                        display: "block",
+                        fontWeight: 500,
+                      }}
+                    >
                       {link.label}
                     </span>
                   </Link>
@@ -198,58 +445,172 @@ export default function MinimalNav() {
               </div>
             ))}
 
-            {/* Search Icon */}
             <button
+              type="button"
               onClick={() => setSearchOpen(true)}
-              onMouseEnter={(e) => { e.currentTarget.style.color = "var(--gold)"; e.currentTarget.style.background = "rgba(212,160,23,0.08)"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.color = "var(--ink)"; e.currentTarget.style.background = "none"; }}
-              style={{ background: "none", border: "none", color: "var(--ink)", cursor: "pointer", padding: "8px", display: "flex", alignItems: "center", marginLeft: "4px", borderRadius: "4px", transition: "color 0.2s, background 0.2s" }}
-              aria-label="Search essays"
-              title="Search essays"
+              aria-label="Search essays and books"
+              title="Search"
+              style={{
+                background: "none",
+                border: "none",
+                color: "var(--ink)",
+                cursor: "pointer",
+                padding: "8px",
+                display: "flex",
+                alignItems: "center",
+                marginLeft: "4px",
+                borderRadius: "var(--radius-sm)",
+                transition: "color 0.2s, background 0.2s",
+              }}
             >
-              <Search size={18} />
+              <Search size={18} aria-hidden />
             </button>
 
-            {/* Subscribe CTA */}
             <Link href="/start" style={{ textDecoration: "none" }}>
-              <button style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "9px 20px", fontSize: "13px", fontWeight: "bold", borderRadius: "3px", cursor: "pointer", marginLeft: "8px" }}>
-                Start Here
+              <button
+                type="button"
+                style={{
+                  background: "var(--ink)",
+                  color: "var(--bone)",
+                  border: "none",
+                  borderBottom: "2px solid var(--mustard)",
+                  padding: "9px 20px",
+                  fontFamily: "var(--U)",
+                  fontSize: "13px",
+                  fontWeight: 600,
+                  borderRadius: "var(--radius-sm)",
+                  cursor: "pointer",
+                  marginLeft: "8px",
+                }}
+              >
+                Subscribe
               </button>
             </Link>
           </div>
 
-          {/* Mobile: search + hamburger */}
-          <div style={{ display: "flex", gap: "8px", alignItems: "center" }} className="mobile-nav">
-            <button onClick={() => setSearchOpen(true)} style={{ background: "none", border: "none", color: "var(--ink)", cursor: "pointer", padding: "8px" }} aria-label="Search">
-              <Search size={20} />
+          {/* Mobile */}
+          <div
+            style={{ display: "flex", gap: "8px", alignItems: "center" }}
+            className="mobile-nav"
+          >
+            <button
+              type="button"
+              onClick={() => setSearchOpen(true)}
+              aria-label="Search"
+              style={{
+                background: "none",
+                border: "none",
+                color: "var(--ink)",
+                cursor: "pointer",
+                padding: "8px",
+              }}
+            >
+              <Search size={20} aria-hidden />
             </button>
-            <button onClick={() => setMobileOpen(!mobileOpen)} style={{ background: "none", border: "none", color: "var(--ink)", cursor: "pointer", padding: "8px" }} aria-label="Menu">
-              {mobileOpen ? <X size={22} /> : <Menu size={22} />}
+            <button
+              type="button"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileOpen}
+              style={{
+                background: "none",
+                border: "none",
+                color: "var(--ink)",
+                cursor: "pointer",
+                padding: "8px",
+              }}
+            >
+              {mobileOpen ? <X size={22} aria-hidden /> : <Menu size={22} aria-hidden />}
             </button>
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {mobileOpen && (
-          <div style={{ background: "#ffffff", borderTop: "1px solid #e5e5e5", padding: "8px 20px 24px", maxHeight: "80vh", overflowY: "auto" }}>
-            {navLinks.map((link) => (
+          <div
+            style={{
+              background: "var(--card)",
+              borderTop: "1px solid var(--border)",
+              padding: "8px 20px 24px",
+              maxHeight: "80vh",
+              overflowY: "auto",
+            }}
+          >
+            {navLinks.map(link => (
               <div key={link.label}>
                 {link.dropdown ? (
                   <>
                     <div
-                      onClick={() => setOpenDropdown(openDropdown === link.label ? null : link.label)}
-                      style={{ color: "var(--gold)", fontSize: "14px", padding: "12px 0", borderBottom: "1px solid rgba(255,255,255,0.06)", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "center" }}
+                      onClick={() =>
+                        setOpenDropdown(
+                          openDropdown === link.label ? null : link.label
+                        )
+                      }
+                      style={{
+                        fontFamily: "var(--U)",
+                        color: "var(--ink)",
+                        fontSize: "14px",
+                        padding: "12px 0",
+                        borderBottom: "1px solid var(--border)",
+                        fontWeight: 600,
+                        cursor: "pointer",
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                      }}
                     >
                       {link.label}
-                      <ChevronDown size={16} style={{ transform: openDropdown === link.label ? "rotate(180deg)" : "none", transition: "transform 0.2s" }} />
+                      <ChevronDown
+                        size={16}
+                        aria-hidden
+                        style={{
+                          transform:
+                            openDropdown === link.label
+                              ? "rotate(180deg)"
+                              : "none",
+                          transition: "transform 0.2s",
+                        }}
+                      />
                     </div>
                     {openDropdown === link.label && (
                       <div style={{ paddingLeft: "16px", paddingBottom: "8px" }}>
-                        {link.dropdown.map((item) => (
-                          <Link key={item.href + item.label} href={item.href} onClick={() => { setMobileOpen(false); setOpenDropdown(null); }} style={{ textDecoration: "none" }}>
-                            <div style={{ padding: "10px 0", borderBottom: "1px solid rgba(45,74,62,0.3)" }}>
-                              <div style={{ color: "var(--ink)", fontSize: "14px" }}>{item.label}</div>
-                              {item.description && <div style={{ color: "var(--stone2)", fontSize: "12px", marginTop: "2px" }}>{item.description}</div>}
+                        {link.dropdown.map(item => (
+                          <Link
+                            key={item.href + item.label}
+                            href={item.href}
+                            onClick={() => {
+                              setMobileOpen(false);
+                              setOpenDropdown(null);
+                            }}
+                            style={{ textDecoration: "none" }}
+                          >
+                            <div
+                              style={{
+                                padding: "10px 0",
+                                borderBottom: "1px solid var(--border)",
+                              }}
+                            >
+                              <div
+                                style={{
+                                  fontFamily: "var(--U)",
+                                  color: "var(--ink)",
+                                  fontSize: "14px",
+                                  fontWeight: 500,
+                                }}
+                              >
+                                {item.label}
+                              </div>
+                              {item.description && (
+                                <div
+                                  style={{
+                                    fontFamily: "var(--B)",
+                                    color: "var(--ink-muted)",
+                                    fontSize: "12px",
+                                    marginTop: "2px",
+                                  }}
+                                >
+                                  {item.description}
+                                </div>
+                              )}
                             </div>
                           </Link>
                         ))}
@@ -257,8 +618,23 @@ export default function MinimalNav() {
                     )}
                   </>
                 ) : (
-                  <Link href={link.href!} onClick={() => setMobileOpen(false)} style={{ textDecoration: "none" }}>
-                    <div style={{ color: isActive(link.href!) ? "var(--gold)" : "var(--ink)", fontSize: "14px", padding: "12px 0", borderBottom: "1px solid rgba(255,255,255,0.06)", fontWeight: isActive(link.href!) ? "600" : "400" }}>
+                  <Link
+                    href={link.href!}
+                    onClick={() => setMobileOpen(false)}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <div
+                      style={{
+                        fontFamily: "var(--U)",
+                        color: isActive(link.href!)
+                          ? "var(--mustard-text)"
+                          : "var(--ink)",
+                        fontSize: "14px",
+                        padding: "12px 0",
+                        borderBottom: "1px solid var(--border)",
+                        fontWeight: isActive(link.href!) ? 600 : 500,
+                      }}
+                    >
                       {link.label}
                     </div>
                   </Link>
@@ -266,13 +642,50 @@ export default function MinimalNav() {
               </div>
             ))}
             <div style={{ display: "flex", gap: "8px", marginTop: "16px" }}>
-              <Link href="/start" onClick={() => setMobileOpen(false)} style={{ textDecoration: "none", flex: 1 }}>
-                <button style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "3px", cursor: "pointer", width: "100%" }}>
-                  Start Here
+              <Link
+                href="/start"
+                onClick={() => setMobileOpen(false)}
+                style={{ textDecoration: "none", flex: 1 }}
+              >
+                <button
+                  type="button"
+                  style={{
+                    background: "var(--ink)",
+                    color: "var(--bone)",
+                    border: "none",
+                    borderBottom: "2px solid var(--mustard)",
+                    padding: "12px 24px",
+                    fontFamily: "var(--U)",
+                    fontSize: "14px",
+                    fontWeight: 600,
+                    borderRadius: "var(--radius-sm)",
+                    cursor: "pointer",
+                    width: "100%",
+                  }}
+                >
+                  Subscribe
                 </button>
               </Link>
-              <Link href="/membership" onClick={() => setMobileOpen(false)} style={{ textDecoration: "none", flex: 1 }}>
-                <button style={{ background: "transparent", color: "var(--gold)", border: "1px solid #D4A017", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "3px", cursor: "pointer", width: "100%" }}>
+              <Link
+                href="/membership"
+                onClick={() => setMobileOpen(false)}
+                style={{ textDecoration: "none", flex: 1 }}
+              >
+                <button
+                  type="button"
+                  style={{
+                    background: "transparent",
+                    color: "var(--ink)",
+                    border: "1px solid var(--ink)",
+                    padding: "12px 24px",
+                    fontFamily: "var(--U)",
+                    fontSize: "14px",
+                    fontWeight: 600,
+                    borderRadius: "var(--radius-sm)",
+                    cursor: "pointer",
+                    width: "100%",
+                  }}
+                >
                   Membership
                 </button>
               </Link>
@@ -282,8 +695,8 @@ export default function MinimalNav() {
       </nav>
 
       <style>{
-        "@media (max-width: 768px) { .desktop-nav { display: none !important; } .mobile-nav { display: flex !important; } }" +
-        "@media (min-width: 769px) { .mobile-nav { display: none !important; } .desktop-nav { display: flex !important; } }"
+        "@media (max-width: 900px) { .desktop-nav { display: none !important; } .mobile-nav { display: flex !important; } }" +
+        "@media (min-width: 901px) { .mobile-nav { display: none !important; } .desktop-nav { display: flex !important; } }"
       }</style>
     </>
   );

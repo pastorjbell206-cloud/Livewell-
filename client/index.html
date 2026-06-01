@@ -4,29 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <title>LiveWell by James Bell — Theology That Actually Works</title>
-    <meta name="description" content="160+ essays on faith, pastoral ministry, marriage, justice, and the Christian life. By James Bell, Lead Pastor, author of 25 books, and founder of the Pastors Connection Network." />
+    <title>LiveWell by James Bell — Theology That Carries the Weight of Everyday Life</title>
+    <meta name="description" content="Essays on theology, justice, marriage, parenting, and pastoral ministry. By James Bell, Lead Pastor and founder of the Pastors Connection Network." />
     <meta name="author" content="James Bell" />
     <link rel="canonical" href="https://www.livewellbyjamesbell.co" />
+
+    <!-- Preconnect to font hosts so first paint isn't blocked on DNS+TLS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonts: load explicitly in <head> with display=swap so the SPA boot
+         doesn't hold paint behind a blocking @import in index.css. -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap"
+    />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.livewellbyjamesbell.co/" />
-    <meta property="og:title" content="LiveWell by James Bell — Theology That Actually Works" />
-    <meta property="og:description" content="160+ essays on faith, pastoral ministry, marriage, justice, and the Christian life. By James Bell, Lead Pastor and author of 25 books." />
-    <meta property="og:image" content="https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/hero-study-YwtdpEbWhEmpeN5eiD8U69.webp" />
+    <meta property="og:title" content="LiveWell by James Bell" />
+    <meta property="og:description" content="Theology that carries the weight of everyday life. Essays on faith, justice, marriage, parenting, and pastoral ministry." />
+    <meta property="og:image" content="https://www.livewellbyjamesbell.co/og-default.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="LiveWell by James Bell" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="LiveWell by James Bell — Theology That Actually Works" />
-    <meta name="twitter:description" content="160+ essays on faith, pastoral ministry, marriage, justice, and the Christian life." />
-    <meta name="twitter:image" content="https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/hero-study-YwtdpEbWhEmpeN5eiD8U69.webp" />
+    <meta name="twitter:title" content="LiveWell by James Bell" />
+    <meta name="twitter:description" content="Theology that carries the weight of everyday life." />
+    <meta name="twitter:image" content="https://www.livewellbyjamesbell.co/og-default.png" />
 
-    <!-- Sitemap -->
+    <!-- Sitemap + RSS -->
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="alternate" type="application/rss+xml" title="LiveWell by James Bell" href="/rss.xml" />
 
     <!-- Organization Schema -->
     <script type="application/ld+json">
@@ -35,7 +47,7 @@
       "@type": "Organization",
       "name": "LiveWell by James Bell",
       "url": "https://www.livewellbyjamesbell.co",
-      "description": "Connecting the depth of theology to the weight of everyday life. 160+ essays on marriage, parenting, faith, justice, and pastoral ministry.",
+      "description": "Connecting the depth of theology to the weight of everyday life.",
       "founder": {
         "@type": "Person",
         "name": "James Bell",

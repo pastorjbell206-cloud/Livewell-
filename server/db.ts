@@ -117,6 +117,40 @@ export async function listPosts(onlyPublished = false) {
   return db.select().from(posts).orderBy(desc(posts.createdAt));
 }
 
+/**
+ * Slim list for the /writing index. Excludes the body field so the index
+ * page doesn't ship ~50MB of markdown over the wire when there are 200+
+ * articles in the DB. Use this everywhere the page only renders cards.
+ */
+export async function listPostsForIndex() {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  return db
+    .select({
+      id: posts.id,
+      slug: posts.slug,
+      title: posts.title,
+      excerpt: posts.excerpt,
+      pillar: posts.pillar,
+      topic: posts.topic,
+      coverImage: posts.coverImage,
+      readingTimeMinutes: posts.readingTimeMinutes,
+      readTime: posts.readTime,
+      format: posts.format,
+      audience: posts.audience,
+      audience_type: posts.audience_type,
+      contentType: posts.contentType,
+      difficulty: posts.difficulty,
+      publishedAt: posts.publishedAt,
+      featured: posts.featured,
+      createdAt: posts.createdAt,
+      updatedAt: posts.updatedAt,
+    })
+    .from(posts)
+    .where(eq(posts.published, true))
+    .orderBy(desc(posts.publishedAt));
+}
+
 export async function getPostById(id: number) {
   const db = await getDb();
   if (!db) throw new Error("Database not available");
@@ -213,6 +247,13 @@ export async function getBookById(id: number) {
   const db = await getDb();
   if (!db) throw new Error("Database not available");
   const rows = await db.select().from(books).where(eq(books.id, id)).limit(1);
+  return rows.length > 0 ? rows[0] : null;
+}
+
+export async function getBookBySlug(slug: string) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  const rows = await db.select().from(books).where(eq(books.slug, slug)).limit(1);
   return rows.length > 0 ? rows[0] : null;
 }
 

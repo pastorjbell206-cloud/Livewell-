@@ -1,5 +1,5 @@
 {
-    "buildCommand": "rm -rf node_modules/.vite .vite dist && pnpm run build",
+    "buildCommand": "rm -rf node_modules/.vite .vite dist && pnpm run sitemap && pnpm run build && pnpm run prerender",
     "outputDirectory": "dist/public",
     "installCommand": "pnpm install --no-frozen-lockfile",
     "headers": [
@@ -18,10 +18,19 @@
           { "source": "/articles", "destination": "/writing", "permanent": true },
           { "source": "/articles/:slug", "destination": "/writing/:slug", "permanent": true },
           { "source": "/for-families", "destination": "/parenting", "permanent": true },
-          { "source": "/books-store", "destination": "/books", "permanent": true }
+          { "source": "/books-store", "destination": "/books", "permanent": true },
+          {
+                  "source": "/(.*)",
+                  "has": [{ "type": "host", "value": "livewellbyjamesbell.co" }],
+                  "destination": "https://www.livewellbyjamesbell.co/$1",
+                  "permanent": true
+          }
     ],
     "rewrites": [
           { "source": "/api/(.*)", "destination": "/api/index.ts" },
+          { "source": "/rss.xml", "destination": "/api/index.ts" },
+          { "source": "/feed", "destination": "/api/index.ts" },
+          { "source": "/feed.xml", "destination": "/api/index.ts" },
           { "source": "/((?!assets/|api/).*)", "destination": "/index.html" }
     ]
 }

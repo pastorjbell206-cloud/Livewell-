@@ -3,12 +3,11 @@ import { useState } from "react";
 import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 export default function StartHereQuiz() {
   const [currentStep, setCurrentStep] = useState(0);
   const [answers, setAnswers] = useState<{ [key: string]: string }>({});
-  const [emailInput, setEmailInput] = useState("");
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   const QUESTIONS = [
     {
@@ -115,13 +114,6 @@ export default function StartHereQuiz() {
     if (currentStep < QUESTIONS.length - 1) {
       setCurrentStep(currentStep + 1);
     }
-  };
-
-  const handleEmailSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!emailInput || !emailInput.includes('@')) return;
-    setEmailSubmitted(true);
-    setEmailInput('');
   };
 
   const handleBack = () => {
@@ -297,33 +289,14 @@ export default function StartHereQuiz() {
               </Link>
             </div>
 
-            {/* EMAIL CAPTURE */}
-            <div style={{ background: "var(--ink)", color: "var(--paper)", padding: "48px", borderRadius: "8px", textAlign: "center" }}>
-              <h3 style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "16px" }}>
-                Want this path emailed to you?
-              </h3>
-              <p style={{ fontSize: "14px", lineHeight: "1.6", marginBottom: "24px", color: "var(--stone2)" }}>
-                We'll send you direct links to all three articles plus James's latest essays related to your path.
-              </p>
-              {emailSubmitted ? (
-                <p style={{ color: "var(--gold)", fontWeight: "bold", fontSize: "16px" }}>
-                  Check your inbox. Your path is on the way.
-                </p>
-              ) : (
-                <form onSubmit={handleEmailSubmit} style={{ display: "flex", gap: "12px", maxWidth: "500px", margin: "0 auto", flexWrap: "wrap", justifyContent: "center" }}>
-                  <input
-                    type="email"
-                    placeholder="your@email.com"
-                    value={emailInput}
-                    onChange={(e) => setEmailInput(e.target.value)}
-                    required
-                    style={{ flex: 1, minWidth: "200px", padding: "12px 16px", border: "none", borderRadius: "4px", fontSize: "14px" }}
-                  />
-                  <button type="submit" style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer", whiteSpace: "nowrap" }}>
-                    Email Me
-                  </button>
-                </form>
-              )}
+            {/* EMAIL CAPTURE — real subscribe (was: setEmailSubmitted no-op) */}
+            <div>
+              <NewsletterSignup
+                variant="inline"
+                source="start-here-quiz"
+                title="Want this path emailed to you?"
+                description="Direct links to the essays on your path, plus the weekly letter when new pieces land."
+              />
             </div>
 
             {/* RESTART BUTTON */}

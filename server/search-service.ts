@@ -1,6 +1,13 @@
+/**
+ * Search service — FULLTEXT MATCH/AGAINST with a graceful fallback to LIKE.
+ *
+ * If the FULLTEXT indexes from drizzle/0014_fulltext_search.sql have been
+ * applied, search returns results ranked by relevance score (the second
+ * column in MATCH/AGAINST). If the indexes are missing, we fall back to
+ * the previous LIKE-based search so nothing breaks during the rollout.
+ */
+import { sql } from "drizzle-orm";
 import { getDb } from "./db";
-import { posts, resources, books } from "../drizzle/schema";
-import { like, or, and, eq, desc } from "drizzle-orm";
 
 export interface SearchResult {
   id: number;
@@ -11,251 +18,271 @@ export interface SearchResult {
   url?: string;
   category?: string;
   publishedAt?: Date;
+  relevance?: number;
 }
 
-/**
- * Search across articles, resources, and books
- */
-export async function globalSearch(query: string, limit = 20): Promise<SearchResult[]> {
+interface RawDb {
+  execute<T = unknown>(query: ReturnType<typeof sql>): Promise<T>;
+}
+
+function asArray<T = Record<string, unknown>>(rows: unknown): T[] {
+  if (Array.isArray(rows)) return rows as T[];
+  if (rows && typeof rows === "object" && "rows" in rows) {
+    const r = (rows as { rows: unknown }).rows;
+    if (Array.isArray(r)) return r as T[];
+  }
+  // mysql2 driver returns [rows, fields]
+  if (Array.isArray((rows as unknown as unknown[])?.[0])) {
+    return (rows as unknown[][])[0] as T[];
+  }
+  return [];
+}
+
+// ─── ARTICLES ────────────────────────────────────────────────────────────
+
+async function searchArticlesFulltext(
+  db: RawDb,
+  query: string,
+  limit: number
+): Promise<SearchResult[]> {
+  const result = await db.execute(sql`
+    SELECT
+      id,
+      title,
+      excerpt,
+      slug,
+      pillar,
+      topic,
+      publishedAt,
+      MATCH(title, excerpt, body) AGAINST(${query} IN NATURAL LANGUAGE MODE) AS relevance
+    FROM posts
+    WHERE published = true
+      AND MATCH(title, excerpt, body) AGAINST(${query} IN NATURAL LANGUAGE MODE)
+    ORDER BY relevance DESC
+    LIMIT ${limit}
+  `);
+  const rows = asArray<{
+    id: number;
+    title: string;
+    excerpt: string | null;
+    slug: string;
+    pillar: string | null;
+    topic: string | null;
+    publishedAt: Date | null;
+    relevance: number;
+  }>(result);
+  return rows.map(a => ({
+    id: a.id,
+    type: "article",
+    title: a.title,
+    excerpt: a.excerpt ?? undefined,
+    slug: a.slug,
+    category: a.topic ?? a.pillar ?? undefined,
+    publishedAt: a.publishedAt ?? undefined,
+    relevance: a.relevance,
+  }));
+}
+
+async function searchArticlesLike(
+  db: RawDb,
+  query: string,
+  limit: number
+): Promise<SearchResult[]> {
+  const term = `%${query}%`;
+  const result = await db.execute(sql`
+    SELECT id, title, excerpt, slug, pillar, topic, publishedAt
+    FROM posts
+    WHERE published = true
+      AND (title LIKE ${term} OR excerpt LIKE ${term} OR body LIKE ${term})
+    ORDER BY publishedAt DESC
+    LIMIT ${limit}
+  `);
+  const rows = asArray<{
+    id: number;
+    title: string;
+    excerpt: string | null;
+    slug: string;
+    pillar: string | null;
+    topic: string | null;
+    publishedAt: Date | null;
+  }>(result);
+  return rows.map(a => ({
+    id: a.id,
+    type: "article",
+    title: a.title,
+    excerpt: a.excerpt ?? undefined,
+    slug: a.slug,
+    category: a.topic ?? a.pillar ?? undefined,
+    publishedAt: a.publishedAt ?? undefined,
+  }));
+}
+
+export async function searchArticles(
+  query: string,
+  limit = 20
+): Promise<SearchResult[]> {
+  const db = (await getDb()) as RawDb | null;
+  if (!db) return [];
   try {
-    const db = await getDb();
-    if (!db) throw new Error("Database not available");
-
-    const searchTerm = `%${query}%`;
-    const results: SearchResult[] = [];
-
-    // Search articles
-    const articles = await db
-      .select({
-        id: posts.id,
-        title: posts.title,
-        excerpt: posts.excerpt,
-        slug: posts.slug,
-        publishedAt: posts.publishedAt,
-        pillar: posts.pillar,
-      })
-      .from(posts)
-      .where(
-        and(
-          eq(posts.published, true),
-          or(
-            like(posts.title, searchTerm),
-            like(posts.excerpt, searchTerm),
-            like(posts.body, searchTerm)
-          )
-        )
-      )
-      .orderBy(desc(posts.publishedAt))
-      .limit(limit);
-
-    results.push(
-      ...articles.map((a) => ({
-        id: a.id,
-        type: "article" as const,
-        title: a.title,
-        excerpt: a.excerpt || undefined,
-        slug: a.slug,
-        category: a.pillar || undefined,
-        publishedAt: a.publishedAt || undefined,
-      }))
+    return await searchArticlesFulltext(db, query, limit);
+  } catch (err) {
+    // FULLTEXT index not present yet — fall back to LIKE
+    console.warn(
+      `[search] FULLTEXT unavailable, falling back to LIKE: ${(err as Error).message}`
     );
-
-    // Search resources
-    const resourceResults = await db
-      .select({
-        id: resources.id,
-        title: resources.title,
-        description: resources.description,
-        category: resources.category,
-        url: resources.url,
-      })
-      .from(resources)
-      .where(
-        and(
-          eq(resources.published, true),
-          or(
-            like(resources.title, searchTerm),
-            like(resources.description, searchTerm)
-          )
-        )
-      )
-      .limit(limit);
-
-    results.push(
-      ...resourceResults.map((r) => ({
-        id: r.id,
-        type: "resource" as const,
-        title: r.title,
-        excerpt: r.description || undefined,
-        category: r.category || undefined,
-        url: r.url || undefined,
-      }))
-    );
-
-    // Search books
-    const bookResults = await db
-      .select({
-        id: books.id,
-        title: books.title,
-        description: books.description,
-        author: books.author,
-      })
-      .from(books)
-      .where(
-        and(
-          eq(books.published, true),
-          or(
-            like(books.title, searchTerm),
-            like(books.description, searchTerm),
-            like(books.author, searchTerm)
-          )
-        )
-      )
-      .limit(limit);
-
-    results.push(
-      ...bookResults.map((b) => ({
-        id: b.id,
-        type: "book" as const,
-        title: b.title,
-        excerpt: b.description || undefined,
-        category: b.author || undefined,
-      }))
-    );
-
-    // Sort by relevance (articles first, then resources, then books)
-    return results.slice(0, limit);
-  } catch (error: any) {
-    console.error("[Search] Error performing global search:", error);
-    throw new Error(error.message || "Search failed");
+    return searchArticlesLike(db, query, limit);
   }
 }
 
-/**
- * Search only articles
- */
-export async function searchArticles(query: string, limit = 20): Promise<SearchResult[]> {
-  try {
-    const db = await getDb();
-    if (!db) throw new Error("Database not available");
+// ─── RESOURCES ───────────────────────────────────────────────────────────
 
-    const searchTerm = `%${query}%`;
-
-    const articles = await db
-      .select({
-        id: posts.id,
-        title: posts.title,
-        excerpt: posts.excerpt,
-        slug: posts.slug,
-        publishedAt: posts.publishedAt,
-        pillar: posts.pillar,
-      })
-      .from(posts)
-      .where(
-        and(
-          eq(posts.published, true),
-          or(
-            like(posts.title, searchTerm),
-            like(posts.excerpt, searchTerm),
-            like(posts.body, searchTerm)
-          )
-        )
-      )
-      .orderBy(desc(posts.publishedAt))
-      .limit(limit);
-
-    return articles.map((a) => ({
-      id: a.id,
-      type: "article" as const,
-      title: a.title,
-      excerpt: a.excerpt || undefined,
-      slug: a.slug,
-      category: a.pillar || undefined,
-      publishedAt: a.publishedAt || undefined,
-    }));
-  } catch (error: any) {
-    console.error("[Search] Error searching articles:", error);
-    throw new Error(error.message || "Article search failed");
-  }
+export async function searchResources(
+  query: string,
+  limit = 20
+): Promise<SearchResult[]> {
+  const db = (await getDb()) as RawDb | null;
+  if (!db) return [];
+  const term = `%${query}%`;
+  const result = await db.execute(sql`
+    SELECT id, title, description, category, url
+    FROM resources
+    WHERE published = true
+      AND (title LIKE ${term} OR description LIKE ${term})
+    LIMIT ${limit}
+  `);
+  const rows = asArray<{
+    id: number;
+    title: string;
+    description: string | null;
+    category: string | null;
+    url: string | null;
+  }>(result);
+  return rows.map(r => ({
+    id: r.id,
+    type: "resource",
+    title: r.title,
+    excerpt: r.description ?? undefined,
+    category: r.category ?? undefined,
+    url: r.url ?? undefined,
+  }));
 }
 
-/**
- * Search only resources
- */
-export async function searchResources(query: string, limit = 20): Promise<SearchResult[]> {
-  try {
-    const db = await getDb();
-    if (!db) throw new Error("Database not available");
+// ─── BOOKS ───────────────────────────────────────────────────────────────
 
-    const searchTerm = `%${query}%`;
-
-    const resourceResults = await db
-      .select({
-        id: resources.id,
-        title: resources.title,
-        description: resources.description,
-        category: resources.category,
-        url: resources.url,
-      })
-      .from(resources)
-      .where(
-        and(
-          eq(resources.published, true),
-          or(
-            like(resources.title, searchTerm),
-            like(resources.description, searchTerm)
-          )
-        )
-      )
-      .limit(limit);
-
-    return resourceResults.map((r) => ({
-      id: r.id,
-      type: "resource" as const,
-      title: r.title,
-      excerpt: r.description || undefined,
-      category: r.category || undefined,
-      url: r.url || undefined,
-    }));
-  } catch (error: any) {
-    console.error("[Search] Error searching resources:", error);
-    throw new Error(error.message || "Resource search failed");
-  }
+async function searchBooksFulltext(
+  db: RawDb,
+  query: string,
+  limit: number
+): Promise<SearchResult[]> {
+  const result = await db.execute(sql`
+    SELECT
+      id, title, description, author, slug,
+      MATCH(title, description, sampleExcerpt) AGAINST(${query} IN NATURAL LANGUAGE MODE) AS relevance
+    FROM books
+    WHERE published = true
+      AND MATCH(title, description, sampleExcerpt) AGAINST(${query} IN NATURAL LANGUAGE MODE)
+    ORDER BY relevance DESC
+    LIMIT ${limit}
+  `);
+  const rows = asArray<{
+    id: number;
+    title: string;
+    description: string | null;
+    author: string | null;
+    slug: string | null;
+    relevance: number;
+  }>(result);
+  return rows.map(b => ({
+    id: b.id,
+    type: "book",
+    title: b.title,
+    excerpt: b.description ?? undefined,
+    category: b.author ?? undefined,
+    slug: b.slug ?? undefined,
+    relevance: b.relevance,
+  }));
 }
 
-/**
- * Get trending articles (most viewed, most recent)
- */
+async function searchBooksLike(
+  db: RawDb,
+  query: string,
+  limit: number
+): Promise<SearchResult[]> {
+  const term = `%${query}%`;
+  const result = await db.execute(sql`
+    SELECT id, title, description, author, slug
+    FROM books
+    WHERE published = true
+      AND (title LIKE ${term} OR description LIKE ${term} OR author LIKE ${term})
+    LIMIT ${limit}
+  `);
+  const rows = asArray<{
+    id: number;
+    title: string;
+    description: string | null;
+    author: string | null;
+    slug: string | null;
+  }>(result);
+  return rows.map(b => ({
+    id: b.id,
+    type: "book",
+    title: b.title,
+    excerpt: b.description ?? undefined,
+    category: b.author ?? undefined,
+    slug: b.slug ?? undefined,
+  }));
+}
+
+// ─── GLOBAL ──────────────────────────────────────────────────────────────
+
+export async function globalSearch(
+  query: string,
+  limit = 20
+): Promise<SearchResult[]> {
+  const db = (await getDb()) as RawDb | null;
+  if (!db) return [];
+
+  const [articles, resources, books] = await Promise.all([
+    searchArticles(query, limit).catch(() => []),
+    searchResources(query, limit).catch(() => []),
+    searchBooksFulltext(db, query, limit).catch(() =>
+      searchBooksLike(db, query, limit).catch(() => [])
+    ),
+  ]);
+
+  // Articles first (the product), then books, then resources. Within each
+  // bucket, relevance from FULLTEXT determines order — fallback uses date.
+  return [...articles, ...books, ...resources].slice(0, limit);
+}
+
+// ─── TRENDING ────────────────────────────────────────────────────────────
+
 export async function getTrendingArticles(limit = 5): Promise<SearchResult[]> {
-  try {
-    const db = await getDb();
-    if (!db) throw new Error("Database not available");
-
-    const articles = await db
-      .select({
-        id: posts.id,
-        title: posts.title,
-        excerpt: posts.excerpt,
-        slug: posts.slug,
-        publishedAt: posts.publishedAt,
-        pillar: posts.pillar,
-      })
-      .from(posts)
-      .where(eq(posts.published, true))
-      .orderBy(desc(posts.publishedAt))
-      .limit(limit);
-
-    return articles.map((a) => ({
-      id: a.id,
-      type: "article" as const,
-      title: a.title,
-      excerpt: a.excerpt || undefined,
-      slug: a.slug,
-      category: a.pillar || undefined,
-      publishedAt: a.publishedAt || undefined,
-    }));
-  } catch (error: any) {
-    console.error("[Search] Error fetching trending articles:", error);
-    throw new Error(error.message || "Failed to fetch trending articles");
-  }
+  const db = (await getDb()) as RawDb | null;
+  if (!db) return [];
+  const result = await db.execute(sql`
+    SELECT id, title, excerpt, slug, pillar, topic, publishedAt
+    FROM posts
+    WHERE published = true
+    ORDER BY publishedAt DESC
+    LIMIT ${limit}
+  `);
+  const rows = asArray<{
+    id: number;
+    title: string;
+    excerpt: string | null;
+    slug: string;
+    pillar: string | null;
+    topic: string | null;
+    publishedAt: Date | null;
+  }>(result);
+  return rows.map(a => ({
+    id: a.id,
+    type: "article",
+    title: a.title,
+    excerpt: a.excerpt ?? undefined,
+    slug: a.slug,
+    category: a.topic ?? a.pillar ?? undefined,
+    publishedAt: a.publishedAt ?? undefined,
+  }));
 }

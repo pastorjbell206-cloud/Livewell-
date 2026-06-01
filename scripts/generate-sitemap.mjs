@@ -1,116 +1,134 @@
-import mysql from 'mysql2/promise';
-import fs from 'fs';
-import dotenv from 'dotenv';
+#!/usr/bin/env node
+/**
+ * generate-sitemap.mjs
+ *
+ * Builds /sitemap.xml from the database. Runs before `vite build` so the file
+ * lands in client/public/sitemap.xml and is copied into the deploy output.
+ *
+ * If DATABASE_URL is missing or unreachable at build time, falls back to a
+ * minimal static sitemap so the build does not fail.
+ */
+import mysql from "mysql2/promise";
+import fs from "node:fs";
+import dotenv from "dotenv";
 
 dotenv.config();
 
-const BASE_URL = 'https://thelivewell.manus.space';
+const BASE_URL = "https://www.livewellbyjamesbell.co";
+const OUTPUT_PATH = "client/public/sitemap.xml";
 
-async function generateSitemap() {
-  const connection = await mysql.createConnection(process.env.DATABASE_URL);
-  
+const STATIC_PAGES = [
+  { url: "", priority: "1.0", changefreq: "weekly" },
+  { url: "/writing", priority: "0.9", changefreq: "daily" },
+  { url: "/books", priority: "0.9", changefreq: "weekly" },
+  { url: "/skeptic-track", priority: "0.9", changefreq: "monthly" },
+  { url: "/pastors-resource-wall", priority: "0.85", changefreq: "weekly" },
+  { url: "/roadmap", priority: "0.8", changefreq: "monthly" },
+  { url: "/library", priority: "0.8", changefreq: "weekly" },
+  { url: "/diagnostic", priority: "0.8", changefreq: "monthly" },
+  { url: "/reading-paths", priority: "0.8", changefreq: "weekly" },
+  { url: "/about", priority: "0.7", changefreq: "monthly" },
+  { url: "/marriage", priority: "0.7", changefreq: "monthly" },
+  { url: "/parenting", priority: "0.7", changefreq: "monthly" },
+  { url: "/doubt", priority: "0.7", changefreq: "monthly" },
+  { url: "/writing?track=manhood", priority: "0.7", changefreq: "weekly" },
+  { url: "/writing?track=womanhood", priority: "0.7", changefreq: "weekly" },
+  { url: "/writing?track=finances", priority: "0.7", changefreq: "weekly" },
+  { url: "/for-pastors", priority: "0.75", changefreq: "weekly" },
+  { url: "/pastors", priority: "0.7", changefreq: "monthly" },
+  { url: "/tools", priority: "0.6", changefreq: "monthly" },
+  { url: "/work-with-james", priority: "0.6", changefreq: "monthly" },
+  { url: "/membership", priority: "0.7", changefreq: "monthly" },
+  { url: "/resources", priority: "0.7", changefreq: "monthly" },
+];
+
+function urlEntry(loc, lastmod, changefreq, priority) {
+  let entry = "  <url>\n";
+  entry += `    <loc>${loc}</loc>\n`;
+  if (lastmod) entry += `    <lastmod>${lastmod}</lastmod>\n`;
+  entry += `    <changefreq>${changefreq}</changefreq>\n`;
+  entry += `    <priority>${priority}</priority>\n`;
+  entry += "  </url>\n";
+  return entry;
+}
+
+function buildXml(staticPages, articles, books, readingPaths) {
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+  for (const page of staticPages) {
+    xml += urlEntry(`${BASE_URL}${page.url}`, null, page.changefreq, page.priority);
+  }
+  for (const a of articles) {
+    const lastmod = new Date(a.updatedAt).toISOString().split("T")[0];
+    xml += urlEntry(`${BASE_URL}/writing/${a.slug}`, lastmod, "monthly", "0.8");
+  }
+  for (const b of books) {
+    const lastmod = new Date(b.updatedAt).toISOString().split("T")[0];
+    xml += urlEntry(`${BASE_URL}/books/${b.slug}`, lastmod, "monthly", "0.7");
+  }
+  for (const p of readingPaths) {
+    const lastmod = new Date(p.updatedAt).toISOString().split("T")[0];
+    xml += urlEntry(`${BASE_URL}/reading-paths/${p.slug}`, lastmod, "monthly", "0.7");
+  }
+  xml += "</urlset>\n";
+  return xml;
+}
+
+async function main() {
+  if (!process.env.DATABASE_URL) {
+    console.warn("[sitemap] DATABASE_URL not set — writing fallback sitemap (static pages only)");
+    const xml = buildXml(STATIC_PAGES, [], [], []);
+    fs.writeFileSync(OUTPUT_PATH, xml);
+    return;
+  }
+
+  let conn;
   try {
-    console.log('Generating sitemap...\n');
-    
-    // Get all published articles
-    const [articles] = await connection.query(
-      'SELECT slug, updatedAt FROM posts WHERE published = true ORDER BY updatedAt DESC'
+    conn = await mysql.createConnection({
+      uri: process.env.DATABASE_URL,
+      ssl: { rejectUnauthorized: true },
+    });
+  } catch (err) {
+    console.warn(`[sitemap] DB connect failed (${err.message}) — writing fallback sitemap`);
+    fs.writeFileSync(OUTPUT_PATH, buildXml(STATIC_PAGES, [], [], []));
+    return;
+  }
+
+  try {
+    const [articles] = await conn.query(
+      "SELECT slug, updatedAt FROM posts WHERE published = true ORDER BY updatedAt DESC"
     );
-    
-    // Get all published books
-    const [books] = await connection.query(
-      'SELECT slug, updatedAt FROM books WHERE published = true ORDER BY updatedAt DESC'
+    const [books] = await conn.query(
+      "SELECT slug, updatedAt FROM books WHERE published = true AND slug IS NOT NULL ORDER BY updatedAt DESC"
     );
-    
-    // Get all reading paths (if table exists)
+
     let readingPaths = [];
     try {
-      const [paths] = await connection.query(
-        'SELECT slug, updatedAt FROM reading_paths ORDER BY updatedAt DESC'
+      const [paths] = await conn.query(
+        "SELECT slug, updatedAt FROM reading_paths WHERE published = true ORDER BY updatedAt DESC"
       );
       readingPaths = paths;
-    } catch (e) {
-      console.log('Note: reading_paths table not found, skipping...');
+    } catch {
+      // table may not exist on legacy DBs — skip silently
     }
-    
-    // Build sitemap XML
-    let sitemapXml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-    sitemapXml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
-    
-    // Add static pages
-    const staticPages = [
-      { url: '', priority: '1.0', changefreq: 'weekly' },
-      { url: '/writing', priority: '0.9', changefreq: 'daily' },
-      { url: '/books', priority: '0.9', changefreq: 'weekly' },
-      { url: '/reading-paths', priority: '0.8', changefreq: 'weekly' },
-      { url: '/membership', priority: '0.8', changefreq: 'monthly' },
-      { url: '/resources', priority: '0.7', changefreq: 'monthly' },
-      { url: '/about', priority: '0.7', changefreq: 'monthly' },
-    ];
-    
-    staticPages.forEach(page => {
-      sitemapXml += '  <url>\n';
-      sitemapXml += `    <loc>${BASE_URL}${page.url}</loc>\n`;
-      sitemapXml += `    <changefreq>${page.changefreq}</changefreq>\n`;
-      sitemapXml += `    <priority>${page.priority}</priority>\n`;
-      sitemapXml += '  </url>\n';
-    });
-    
-    // Add articles
-    articles.forEach(article => {
-      sitemapXml += '  <url>\n';
-      sitemapXml += `    <loc>${BASE_URL}/article/${article.slug}</loc>\n`;
-      sitemapXml += `    <lastmod>${new Date(article.updatedAt).toISOString().split('T')[0]}</lastmod>\n`;
-      sitemapXml += '    <changefreq>monthly</changefreq>\n';
-      sitemapXml += '    <priority>0.8</priority>\n';
-      sitemapXml += '  </url>\n';
-    });
-    
-    // Add books
-    books.forEach(book => {
-      sitemapXml += '  <url>\n';
-      sitemapXml += `    <loc>${BASE_URL}/book/${book.slug}</loc>\n`;
-      sitemapXml += `    <lastmod>${new Date(book.updatedAt).toISOString().split('T')[0]}</lastmod>\n`;
-      sitemapXml += '    <changefreq>monthly</changefreq>\n';
-      sitemapXml += '    <priority>0.7</priority>\n';
-      sitemapXml += '  </url>\n';
-    });
-    
-    // Add reading paths
-    if (readingPaths && readingPaths.length > 0) {
-      readingPaths.forEach(path => {
-        sitemapXml += '  <url>\n';
-        sitemapXml += `    <loc>${BASE_URL}/reading-path/${path.slug}</loc>\n`;
-        sitemapXml += `    <lastmod>${new Date(path.updatedAt).toISOString().split('T')[0]}</lastmod>\n`;
-        sitemapXml += '    <changefreq>monthly</changefreq>\n';
-        sitemapXml += '    <priority>0.7</priority>\n';
-        sitemapXml += '  </url>\n';
-      });
-    }
-    
-    sitemapXml += '</urlset>';
-    
-    // Write sitemap to public directory
-    fs.writeFileSync('client/public/sitemap.xml', sitemapXml);
-    
-    console.log(`✓ Sitemap generated successfully!`);
-    console.log(`  - ${staticPages.length} static pages`);
-    console.log(`  - ${articles.length} articles`);
-    console.log(`  - ${books.length} books`);
-    console.log(`  - ${readingPaths?.length || 0} reading paths`);
-    console.log(`\n✓ Saved to: client/public/sitemap.xml`);
-    
-  } catch (error) {
-    console.error('Error generating sitemap:', error);
-    throw error;
+
+    const xml = buildXml(STATIC_PAGES, articles, books, readingPaths);
+    fs.writeFileSync(OUTPUT_PATH, xml);
+
+    console.log("[sitemap] generated");
+    console.log(`  static: ${STATIC_PAGES.length}`);
+    console.log(`  articles: ${articles.length}`);
+    console.log(`  books: ${books.length}`);
+    console.log(`  reading paths: ${readingPaths.length}`);
+    console.log(`  written to: ${OUTPUT_PATH}`);
   } finally {
-    await connection.end();
+    await conn.end();
   }
 }
 
-generateSitemap().then(() => {
+main().catch(err => {
+  console.error("[sitemap] failed:", err.message);
+  // write fallback so build doesn't break
+  fs.writeFileSync(OUTPUT_PATH, buildXml(STATIC_PAGES, [], [], []));
   process.exit(0);
-}).catch(error => {
-  console.error('Failed:', error);
-  process.exit(1);
 });

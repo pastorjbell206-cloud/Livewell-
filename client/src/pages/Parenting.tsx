@@ -1,12 +1,10 @@
 import { Link } from "wouter";
-import { useState } from "react";
 import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 export default function Parenting() {
-  const [emailInput, setEmailInput] = useState("");
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   const FEATURED_ARTICLES = [
     {
@@ -61,13 +59,6 @@ export default function Parenting() {
       topics: ["Deconstruction", "Real questions", "Peer pressure", "Finding your own faith"]
     }
   ];
-
-  const handleEmailSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!emailInput || !emailInput.includes('@')) return;
-    setEmailSubmitted(true);
-    setEmailInput('');
-  };
 
   return (
     <div style={{ background: "var(--paper)" }}>
@@ -147,34 +138,15 @@ export default function Parenting() {
         </div>
       </section>
 
-      {/* NEWSLETTER STRIP */}
-      <section style={{ background: "var(--ink)", color: "var(--paper)", padding: "60px 20px" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontSize: "32px", fontWeight: "bold", marginBottom: "16px", fontFamily: "var(--F)" }}>
-            Parenting resources for the long haul.
-          </h2>
-          <p style={{ fontSize: "14px", lineHeight: "1.8", marginBottom: "32px", color: "var(--stone2)" }}>
-            Twice-weekly essays, devotionals for families, and conversation starters. For parents who care more about character than compliance.
-          </p>
-          {emailSubmitted ? (
-            <p style={{ color: "var(--gold)", fontWeight: "bold", fontSize: "16px" }}>
-              Check your inbox. Welcome to the journey.
-            </p>
-          ) : (
-            <form onSubmit={handleEmailSubmit} style={{ display: "flex", gap: "12px", maxWidth: "500px", margin: "0 auto", flexWrap: "wrap", justifyContent: "center" }}>
-              <input
-                type="email"
-                placeholder="your@email.com"
-                value={emailInput}
-                onChange={(e) => setEmailInput(e.target.value)}
-                required
-                style={{ flex: 1, minWidth: "200px", padding: "12px 16px", border: "none", borderRadius: "4px", fontSize: "14px" }}
-              />
-              <button type="submit" style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer", whiteSpace: "nowrap" }}>
-                Subscribe
-              </button>
-            </form>
-          )}
+      {/* NEWSLETTER STRIP — real form, no silent failures */}
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+          <NewsletterSignup
+            variant="inline"
+            source="parenting"
+            title="Parenting essays from a father of five."
+            description="Formation over performance. Presence over advice. One essay a week to your inbox."
+          />
         </div>
       </section>
 

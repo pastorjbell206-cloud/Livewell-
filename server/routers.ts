@@ -22,11 +22,11 @@ import {
   // Files
   createFileRecord, listUserFiles, getFileById, deleteFileRecord, updateFileDescription,
   // Posts
-  createPost, listPosts, getPostById, getPostBySlug, getFeaturedPost, updatePost, deletePost,
+  createPost, listPosts, listPostsForIndex, getPostById, getPostBySlug, getFeaturedPost, updatePost, deletePost,
   // Resources
   createResource, listResources, getResourceById, updateResource, deleteResource,
   // Books
-  createBook, listBooks, getBookById, updateBook, deleteBook,
+  createBook, listBooks, getBookById, getBookBySlug, updateBook, deleteBook,
   // Settings
   getSetting, setSetting, getAllSettings,
   // Subscribers & Notifications
@@ -106,8 +106,11 @@ export const appRouter = router({
 
   // ─── Posts (Writing) ─────────────────────────────────────────────
   posts: router({
-    /** Public: list published posts */
+    /** Public: list published posts (FULL — includes body; use sparingly) */
     listPublished: publicProcedure.query(async () => listPosts(true)),
+
+    /** Public: slim list for the /writing index — no body */
+    listForIndex: publicProcedure.query(async () => listPostsForIndex()),
 
     /** Public: get a single post by slug */
     getBySlug: publicProcedure
@@ -245,6 +248,15 @@ export const appRouter = router({
   books: router({
     /** Public: list published books */
     listPublished: publicProcedure.query(async () => listBooks(true)),
+
+    /** Public: get a single book by slug */
+    getBySlug: publicProcedure
+      .input(z.object({ slug: z.string() }))
+      .query(async ({ input }) => {
+        const book = await getBookBySlug(input.slug);
+        if (!book || !book.published) return null;
+        return book;
+      }),
 
     /** Admin: list all books */
     listAll: adminProcedure.query(async () => listBooks(false)),

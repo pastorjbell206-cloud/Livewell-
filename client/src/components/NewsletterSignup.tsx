@@ -1,36 +1,47 @@
-import { useState } from 'react';
-import { trpc } from '@/lib/trpc';
-import { useToast } from '@/contexts/ToastContext';
-import { Button } from '@/components/ui/button';
-import { Mail } from 'lucide-react';
+/**
+ * NewsletterSignup — the single, real newsletter form.
+ *
+ * All other (fake) forms in the codebase have been replaced with this
+ * component. The submit handler calls the real trpc.subscribers.subscribe
+ * mutation; no silent failures.
+ */
+import { useState } from "react";
+import { Mail } from "lucide-react";
+
+import { trpc } from "@/lib/trpc";
+import { useToast } from "@/contexts/ToastContext";
 
 interface NewsletterSignupProps {
-  variant?: 'inline' | 'modal' | 'footer';
+  variant?: "inline" | "footer" | "minimal";
   title?: string;
   description?: string;
+  /** Where this signup was placed; helps with conversion attribution. */
+  source?: string;
 }
 
 export function NewsletterSignup({
-  variant = 'inline',
-  title = 'Join the Community',
-  description = 'Get new articles, resources, and insights delivered to your inbox.',
+  variant = "inline",
+  title = "Get new essays in your inbox",
+  description = "Long-form theology delivered the way you'd want to read it: unhurried, weighted, no spam.",
+  source,
 }: NewsletterSignupProps) {
-  const [email, setEmail] = useState('');
-  const { addToast } = useToast();
+  const [email, setEmail] = useState("");
+  const toastCtx = useToast();
+  const addToast = toastCtx?.addToast;
   const subscribe = trpc.subscribers.subscribe.useMutation({
     onSuccess: () => {
-      addToast({
-        type: 'success',
-        title: 'Subscribed!',
-        message: 'Check your email for a welcome message.',
+      addToast?.({
+        type: "success",
+        title: "Subscribed",
+        message: "Check your inbox for a confirmation.",
       });
-      setEmail('');
+      setEmail("");
     },
-    onError: (error) => {
-      addToast({
-        type: 'error',
-        title: 'Subscription failed',
-        message: error.message || 'Please try again later.',
+    onError: error => {
+      addToast?.({
+        type: "error",
+        title: "Subscription failed",
+        message: error.message || "Please try again later.",
       });
     },
   });
@@ -39,61 +50,201 @@ export function NewsletterSignup({
     e.preventDefault();
     if (!email) return;
     subscribe.mutate({ email });
+    if (source && typeof window !== "undefined") {
+      // best-effort attribution; safe to ignore failures
+      try {
+        window.dispatchEvent(
+          new CustomEvent("newsletter_signup", { detail: { source } })
+        );
+      } catch {
+        /* noop */
+      }
+    }
   };
 
-  if (variant === 'inline') {
+  if (variant === "footer") {
     return (
-      <div className="bg-[#F7F5F0] border border-[#B8963E] rounded-lg p-6">
-        <h3 className="text-lg font-semibold text-[#1A1A1A] mb-2">{title}</h3>
-        <p className="text-[#2C3E50] text-sm mb-4">{description}</p>
-        <form onSubmit={handleSubmit} className="flex gap-2">
-          <input
-            type="email"
-            placeholder="your@email.com"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="flex-1 px-3 py-2 border border-[#B8963E] rounded text-sm focus:outline-none focus:ring-2 focus:ring-[#B8963E]"
-            required
-          />
-          <Button
-            type="submit"
-            disabled={subscribe.isPending}
-            className="bg-[#B8963E] hover:bg-[#1A1A1A] text-white"
+      <form
+        onSubmit={handleSubmit}
+        style={{ display: "flex", flexDirection: "column", gap: "12px" }}
+      >
+        <div
+          style={{ display: "flex", alignItems: "center", gap: "8px" }}
+        >
+          <Mail size={18} aria-hidden style={{ color: "var(--mustard)" }} />
+          <span
+            style={{
+              fontFamily: "var(--F)",
+              fontWeight: 500,
+              fontSize: "16px",
+              color: "var(--bone)",
+            }}
           >
-            {subscribe.isPending ? 'Subscribing...' : 'Subscribe'}
-          </Button>
-        </form>
-      </div>
-    );
-  }
-
-  if (variant === 'footer') {
-    return (
-      <div className="flex flex-col gap-3">
-        <div className="flex items-center gap-2">
-          <Mail className="w-5 h-5 text-[#B8963E]" />
-          <h4 className="font-semibold text-[#F7F5F0]">{title}</h4>
+            {title}
+          </span>
         </div>
-        <form onSubmit={handleSubmit} className="flex gap-2">
+        <div style={{ display: "flex", gap: "8px" }}>
           <input
             type="email"
+            required
             placeholder="your@email.com"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="flex-1 px-3 py-2 bg-[#2C3E50] border border-[#B8963E] rounded text-sm text-[#F7F5F0] placeholder-[#6B7280] focus:outline-none focus:ring-2 focus:ring-[#B8963E]"
-            required
+            onChange={e => setEmail(e.target.value)}
+            aria-label="Email address"
+            style={{
+              flex: 1,
+              padding: "10px 12px",
+              background: "var(--charcoal-soft)",
+              border: "1px solid var(--charcoal-soft)",
+              borderRadius: "var(--radius-sm)",
+              fontFamily: "var(--B)",
+              fontSize: "13px",
+              color: "var(--bone)",
+              outline: "none",
+            }}
           />
-          <Button
+          <button
             type="submit"
             disabled={subscribe.isPending}
-            className="bg-[#B8963E] hover:bg-[#1A1A1A] text-white"
+            style={{
+              padding: "10px 18px",
+              background: "var(--mustard)",
+              color: "var(--ink)",
+              border: "none",
+              borderRadius: "var(--radius-sm)",
+              fontFamily: "var(--U)",
+              fontSize: "13px",
+              fontWeight: 600,
+              cursor: subscribe.isPending ? "wait" : "pointer",
+            }}
           >
-            {subscribe.isPending ? '...' : 'Go'}
-          </Button>
-        </form>
-      </div>
+            {subscribe.isPending ? "…" : "Go"}
+          </button>
+        </div>
+      </form>
     );
   }
 
-  return null;
+  if (variant === "minimal") {
+    return (
+      <form
+        onSubmit={handleSubmit}
+        style={{ display: "flex", gap: "8px", maxWidth: "420px" }}
+      >
+        <input
+          type="email"
+          required
+          placeholder="your@email.com"
+          value={email}
+          onChange={e => setEmail(e.target.value)}
+          aria-label="Email address"
+          style={{
+            flex: 1,
+            padding: "12px 14px",
+            background: "var(--card)",
+            border: "1px solid var(--border)",
+            borderRadius: "var(--radius-sm)",
+            fontFamily: "var(--B)",
+            fontSize: "14px",
+            color: "var(--ink)",
+            outline: "none",
+          }}
+        />
+        <button
+          type="submit"
+          disabled={subscribe.isPending}
+          style={{
+            padding: "12px 22px",
+            background: "var(--ink)",
+            color: "var(--bone)",
+            border: "none",
+            borderRadius: "var(--radius-sm)",
+            fontFamily: "var(--U)",
+            fontSize: "13px",
+            fontWeight: 600,
+            cursor: subscribe.isPending ? "wait" : "pointer",
+          }}
+        >
+          {subscribe.isPending ? "Subscribing…" : "Subscribe"}
+        </button>
+      </form>
+    );
+  }
+
+  // inline (default)
+  return (
+    <div
+      style={{
+        background: "var(--card)",
+        border: "1px solid var(--border)",
+        borderLeft: "2px solid var(--mustard)",
+        padding: "var(--s-4)",
+        borderRadius: "var(--radius-sm)",
+      }}
+    >
+      <h3
+        style={{
+          fontFamily: "var(--F)",
+          fontSize: "22px",
+          fontWeight: 500,
+          color: "var(--ink)",
+          marginBottom: "8px",
+          letterSpacing: "-0.01em",
+        }}
+      >
+        {title}
+      </h3>
+      <p
+        style={{
+          fontSize: "14px",
+          lineHeight: 1.6,
+          color: "var(--ink-muted)",
+          marginBottom: "16px",
+          maxWidth: "55ch",
+        }}
+      >
+        {description}
+      </p>
+      <form onSubmit={handleSubmit} style={{ display: "flex", gap: "8px" }}>
+        <input
+          type="email"
+          required
+          placeholder="your@email.com"
+          value={email}
+          onChange={e => setEmail(e.target.value)}
+          aria-label="Email address"
+          style={{
+            flex: 1,
+            padding: "12px 14px",
+            background: "var(--bone)",
+            border: "1px solid var(--border)",
+            borderRadius: "var(--radius-sm)",
+            fontFamily: "var(--B)",
+            fontSize: "14px",
+            color: "var(--ink)",
+            outline: "none",
+          }}
+        />
+        <button
+          type="submit"
+          disabled={subscribe.isPending}
+          style={{
+            padding: "12px 22px",
+            background: "var(--ink)",
+            color: "var(--bone)",
+            border: "none",
+            borderRadius: "var(--radius-sm)",
+            fontFamily: "var(--U)",
+            fontSize: "13px",
+            fontWeight: 600,
+            cursor: subscribe.isPending ? "wait" : "pointer",
+          }}
+        >
+          {subscribe.isPending ? "Subscribing…" : "Subscribe"}
+        </button>
+      </form>
+    </div>
+  );
 }
+
+export default NewsletterSignup;

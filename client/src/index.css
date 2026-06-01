@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap');
+/* Fonts are loaded from <link rel="stylesheet"> in index.html, which lets us
+ * preconnect to fonts.gstatic.com. Importing fonts from CSS blocks first
+ * paint on the stylesheet AND the font request. */
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
@@ -57,13 +59,24 @@
   --w-prose:680px;--w-content:880px;--w-default:1180px;--w-wide:1440px;
 }
 html.dark{
-  --ink:#F4F1EA;--ink2:#D9D3C4;--ink3:#9A968E;
-  --paper:#1A1A1A;--paper2:#0F0F0F;--cream:#2A2A2A;--card:#2A2A2A;
-  --line:#333333;--border:#333333;--borderdk:#444444;
+  /* Surface */
+  --charcoal:#0F0F0F;--charcoal-deep:#070707;--charcoal-soft:#1A1A1A;
+  --bone:#14110C;--bone-warm:#1A1608;--bone-muted:#2A2418;
+  --card:#1A1A1A;
+  /* Text */
+  --ink:#F4F1EA;--ink-muted:#9A968E;
+  /* Mustard — slightly desaturated for dark mode to keep WCAG AA */
+  --mustard:#D4A017;--mustard-deep:#B08A12;--mustard-text:#E0B945;
+  /* Legacy aliases */
+  --paper:#14110C;--paper2:#1A1608;--cream:#2A2418;
+  --line:#3A3328;--border:#3A3328;--borderdk:#4A4232;
+  --gold:#D4A017;--goldlt:#E0B945;--goldpale:#1A1608;
+  --ink2:#9A968E;--ink3:#9A968E;
   --stone:#9A968E;--stone2:#6A6660;
-  --gold:#C8A951;--goldlt:#C8A951;--goldpale:#1A1608;
-  --forest:#1A1A1A;--forest2:#0F0F0F;--forest3:#2A2A2A;
-  --ivory:#F4F1EA;
+  --forest:#0F0F0F;--forest2:#070707;--forest3:#1A1A1A;
+  --ivory:#F4F1EA;--oxblood:#D4A017;
+  --rust:#D4A017;--rustlt:#E0B945;
+  --sage:#9A968E;--plum:#1A1A1A;
 }
 :focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .skip-link{position:absolute;top:-100%;left:16px;z-index:9999;background:var(--gold);color:var(--ink);padding:8px 16px;font-family:var(--U);font-size:14px;font-weight:600;border-radius:0 0 4px 4px;text-decoration:none;transition:top .2s}
@@ -113,8 +126,11 @@ nav{display:flex;align-items:center;justify-content:space-between;height:70px;ma
 .btn-nv{font-family:var(--U);font-size:13px;font-weight:600;padding:10px 20px;border-radius:2px;letter-spacing:.04em;transition:.2s}
 .btn-nv--out{border:1px solid var(--forest);color:var(--forest)}
 .btn-nv--out:hover{background:var(--forest);color:var(--ivory)}
-.btn-nv--fill{background:var(--gold);color:var(--ink)}
-.btn-nv--fill:hover{background:var(--goldlt)}
+/* Primary CTA per CLAUDE.md: bone-on-ink with mustard underline.
+ * Mustard is punctuation, not paragraph. Reserve gold fills for the
+ * announce bar and small tag chips. */
+.btn-nv--fill{background:var(--ink);color:var(--bone);border-bottom:2px solid var(--mustard)}
+.btn-nv--fill:hover{background:var(--charcoal-deep)}
 .srch-btn{font-size:19px;color:var(--ink3);padding:6px;transition:color .2s;cursor:pointer}
 .srch-btn:hover{color:var(--forest)}
 .ham{display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
@@ -158,8 +174,10 @@ nav{display:flex;align-items:center;justify-content:space-between;height:70px;ma
 .hero-h strong{font-weight:600;font-style:italic;color:var(--goldlt)}
 .hero-sub{font-size:17px;color:rgba(255,255,255,.7);max-width:500px;line-height:1.8;margin-bottom:40px}
 .hero-ctas{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:52px}
-.btn-gold{background:var(--gold);color:var(--ink);font-family:var(--U);font-size:13px;font-weight:600;letter-spacing:.06em;padding:15px 32px;border-radius:2px;display:inline-flex;align-items:center;gap:10px;transition:.25s}
-.btn-gold:hover{background:var(--goldlt);transform:translateY(-1px)}
+/* Hero primary CTA — bone-on-ink with a thin mustard rule. Pulls weight
+ * from typography and contrast, not from a chromatic fill. */
+.btn-gold{background:var(--bone);color:var(--ink);font-family:var(--U);font-size:13px;font-weight:600;letter-spacing:.06em;padding:15px 32px;border-radius:2px;display:inline-flex;align-items:center;gap:10px;transition:.25s;border-bottom:2px solid var(--mustard)}
+.btn-gold:hover{background:white;transform:translateY(-1px)}
 .btn-ghost{font-family:var(--U);font-size:13px;color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.2);padding:14px 26px;border-radius:2px;transition:.2s}
 .btn-ghost:hover{border-color:rgba(255,255,255,.5);color:white}
 .hero-stats{display:flex;align-items:center;gap:28px;padding-top:32px;border-top:1px solid rgba(255,255,255,.1)}
@@ -249,6 +267,48 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
   img { max-width: 100%; page-break-inside: avoid; }
   h1, h2, h3 { page-break-after: avoid; }
 }
+
+/* ─── EDITORIAL TYPOGRAPHY ────────────────────────────────────────
+ * Applies inside .article-body — the Streamdown wrapper used by
+ * ArticleDetail. Designed for "the feeling of opening a serious
+ * book in a quiet room where the light is good." */
+
+.article-body{font-family:var(--B);font-size:18px;line-height:1.75;color:var(--ink)}
+.article-body > * + *{margin-top:1.25em}
+.article-body h2{font-family:var(--F);font-size:30px;font-weight:500;letter-spacing:-.01em;line-height:1.2;color:var(--ink);margin-top:2.4em;margin-bottom:.6em;position:relative;padding-top:.6em}
+.article-body h2::before{content:"";position:absolute;top:0;left:0;width:32px;height:1px;background:var(--mustard)}
+.article-body h3{font-family:var(--F);font-size:22px;font-weight:500;letter-spacing:-.005em;line-height:1.3;color:var(--ink);margin-top:1.8em;margin-bottom:.4em}
+.article-body p{max-width:62ch}
+.article-body p:first-of-type::first-letter{font-family:var(--F);font-size:4.6em;float:left;line-height:.92;padding:.04em .08em 0 0;color:var(--ink);font-weight:400}
+.article-body blockquote{font-family:var(--F);font-size:24px;font-style:italic;font-weight:400;line-height:1.4;color:var(--ink);max-width:60ch;border-left:2px solid var(--mustard);padding:.2em 0 .2em 1.4em;margin:2em 0;letter-spacing:-.005em}
+.article-body blockquote p{max-width:none}
+.article-body a{color:var(--ink);border-bottom:1px solid var(--mustard);transition:background-color .2s}
+.article-body a:hover{background:rgba(212,160,23,.12)}
+.article-body ul,.article-body ol{padding-left:1.6em;max-width:62ch}
+.article-body li{margin-top:.4em}
+.article-body strong{font-weight:600;color:var(--ink)}
+.article-body em{font-style:italic}
+.article-body code{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.92em;background:var(--bone-warm);padding:.12em .35em;border-radius:2px}
+.article-body hr{border:0;height:1px;background:var(--border);margin:3em auto;max-width:120px}
+.article-body img{margin:2em 0;border-radius:var(--radius-sm)}
+
+/* Footnotes (when Streamdown emits them via remark-footnotes) */
+.article-body .footnotes{margin-top:4em;padding-top:1.6em;border-top:1px solid var(--border);font-size:14px;line-height:1.7;color:var(--ink-muted)}
+.article-body .footnotes ol{padding-left:1.4em}
+.article-body sup a{border-bottom:none;color:var(--mustard-text);font-weight:600;padding:0 .15em}
+
+/* Scripture reference inline (added by Streamdown plugin in v2) */
+.article-body .scripture-ref{border-bottom:1px dotted var(--mustard);cursor:help}
+
+/* Pull quote utility — wrap a quote in <figure class="pullquote"> in markdown */
+.article-body .pullquote{font-family:var(--F);font-size:32px;font-style:italic;font-weight:400;line-height:1.3;color:var(--ink);text-align:center;margin:3em 0;padding:1.4em 0;border-top:1px solid var(--mustard);border-bottom:1px solid var(--mustard);max-width:none;letter-spacing:-.01em}
+
+/* Eyebrow utility — small all-caps label with mustard rule */
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--U);font-size:11px;font-weight:600;color:var(--mustard-text);text-transform:uppercase;letter-spacing:.18em}
+.eyebrow::before{content:"";width:32px;height:1px;background:var(--mustard)}
+
+/* Reading progress (top-of-viewport bar) */
+.reading-progress{position:fixed;top:0;left:0;right:0;height:2px;background:var(--mustard);transform-origin:0 50%;z-index:1000;transition:transform .1s linear}
 
 /*
   EASY EDITS

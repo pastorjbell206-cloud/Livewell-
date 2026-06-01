@@ -29,17 +29,17 @@ const READING_PATH_CONFIGS: Record<string, { title: string; description: string;
   },
   "new-to-ministry": {
     title: "New to Ministry",
-    description: "Foundational teaching for those starting their pastoral journey",
+    description: "Foundational teaching for those entering pastoral work",
     topics: ["leadership", "pastoral-care"],
   },
   "cultural-engagement": {
     title: "Cultural Engagement & Justice",
-    description: "Navigating cultural issues, social justice, and prophetic witness in a divided world",
+    description: "Reading the cultural moment biblically: justice, prophetic witness, and the church's posture in a divided world",
     topics: ["justice"],
   },
   "editors-picks": {
     title: "Editor's Picks",
-    description: "Our handpicked selection of the most transformative articles on the site",
+    description: "Hand-selected essays that carry the most weight — the writing that has shaped how readers think",
     topics: [], // Will show featured articles
   },
 };
@@ -101,7 +101,7 @@ export function ReadingPathDetail() {
       <SEOMeta
         title={pathConfig.title}
         description={pathConfig.description}
-        keywords={`reading path, ${pathConfig.topics.join(", ")}, articles, learning journey`}
+        keywords={`reading path, ${pathConfig.topics.join(", ")}, articles, theological formation`}
       />
       <div>
         {/* HERO SECTION */}

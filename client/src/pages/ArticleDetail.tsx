@@ -1,106 +1,157 @@
+/**
+ * ArticleDetail — single article page.
+ *
+ * Architectural notes:
+ * - Fetches the post by slug (was: full listPublished + .find())
+ * - Related articles uses the relatedArticles router
+ * - Emits Article schema + Open Graph via SEOMeta (React 19 head JSX)
+ * - Body width is 680px (var(--w-prose)) per CLAUDE.md
+ * - Bookmark + reading progress persist in localStorage
+ */
+import { useEffect, useState } from "react";
+import { useLocation, useParams } from "wouter";
+import { Streamdown } from "streamdown";
+import { ArrowLeft, Bookmark, Clock, Share2, User } from "lucide-react";
+
 import Layout from "@/components/Layout";
 import ReadingProgressBar from "@/components/ReadingProgressBar";
 import { SEOMeta, getArticleSchema } from "@/components/SEOMeta";
-import { useParams, useLocation } from "wouter";
-import { useMemo, useState } from "react";
-import { Streamdown } from "streamdown";
+import { AuthorBio } from "@/components/AuthorBio";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { CitationCopy } from "@/components/CitationCopy";
+import { AudienceShare } from "@/components/AudienceShare";
+import { AudienceLabel } from "@/components/AudienceLabel";
+import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
-import { ArrowLeft, Share2, Bookmark, Clock, User } from "lucide-react";
+import { articleUrl, OG_DEFAULT_IMAGE } from "@/lib/site";
 
+function ShareButton({ title, url }: { title: string; url: string }) {
+  const [copied, setCopied] = useState(false);
+  return (
+    <button
+      type="button"
+      onClick={async () => {
+        if (typeof navigator !== "undefined" && navigator.share) {
+          try {
+            await navigator.share({ title, url, text: title });
+            return;
+          } catch {
+            // user cancelled — fall through to clipboard copy
+          }
+        }
+        try {
+          await navigator.clipboard.writeText(url);
+          setCopied(true);
+          setTimeout(() => setCopied(false), 1500);
+        } catch {
+          // clipboard unavailable
+        }
+      }}
+      aria-label="Share this article"
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        gap: "8px",
+        background: "transparent",
+        border: "1px solid var(--border)",
+        borderRadius: "var(--radius-sm)",
+        padding: "10px 16px",
+        fontFamily: "var(--U)",
+        fontSize: "13px",
+        fontWeight: 600,
+        color: "var(--ink-muted)",
+        cursor: "pointer",
+        transition: "all 0.2s",
+      }}
+    >
+      <Share2 size={14} aria-hidden />
+      {copied ? "Link copied" : "Share"}
+    </button>
+  );
+}
 
-// Social sharing component
-function SocialShareButtons({ title, url }: { title: string; url: string }) {
-  const handleCopyLink = () => {
-    navigator.clipboard.writeText(url);
-    // show inline feedback instead of alert
-    const el = document.getElementById('copy-toast');
-    if (el) { el.style.opacity = '1'; setTimeout(() => { el.style.opacity = '0'; }, 2000); }
+function BookmarkButton({ slug }: { slug: string }) {
+  const [bookmarked, setBookmarked] = useState(false);
+
+  useEffect(() => {
+    try {
+      const stored = JSON.parse(
+        localStorage.getItem("livewell:bookmarks") || "[]"
+      ) as string[];
+      setBookmarked(stored.includes(slug));
+    } catch {
+      // localStorage may be unavailable (private mode, sandbox)
+    }
+  }, [slug]);
+
+  const toggle = () => {
+    setBookmarked(prev => {
+      const next = !prev;
+      try {
+        const stored = JSON.parse(
+          localStorage.getItem("livewell:bookmarks") || "[]"
+        ) as string[];
+        const updated = next
+          ? Array.from(new Set([...stored, slug]))
+          : stored.filter(s => s !== slug);
+        localStorage.setItem("livewell:bookmarks", JSON.stringify(updated));
+      } catch {
+        // ignore
+      }
+      return next;
+    });
   };
 
-  const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`;
-  const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
-
   return (
-    <div style={{
-      display: "flex",
-      gap: "16px",
-      alignItems: "center",
-      marginTop: "24px",
-      paddingTop: "24px",
-      borderTop: "1px solid var(--border)"
-    }}>
-      <span style={{ fontSize: "12px", fontWeight: "600", color: "var(--ink3)", textTransform: "uppercase" }}>Share:</span>
-      <a href={twitterUrl} target="_blank" rel="noopener noreferrer" style={{
+    <button
+      type="button"
+      onClick={toggle}
+      aria-pressed={bookmarked}
+      aria-label={bookmarked ? "Remove bookmark" : "Bookmark this article"}
+      style={{
         display: "inline-flex",
         alignItems: "center",
-        gap: "6px",
-        padding: "8px 12px",
-        background: "var(--cream)",
-        border: "1px solid var(--border)",
-        borderRadius: "2px",
-        cursor: "pointer",
+        gap: "8px",
+        background: "transparent",
+        border: `1px solid ${bookmarked ? "var(--mustard)" : "var(--border)"}`,
+        borderRadius: "var(--radius-sm)",
+        padding: "10px 16px",
+        fontFamily: "var(--U)",
         fontSize: "13px",
-        fontWeight: "600",
-        color: "var(--ink)",
-        textDecoration: "none",
-        transition: "all 0.2s"
-      }} onMouseEnter={(e) => { e.currentTarget.style.background = "var(--gold)"; }} onMouseLeave={(e) => { e.currentTarget.style.background = "var(--cream)"; }}>
-        𝕏 Twitter
-      </a>
-      <a href={facebookUrl} target="_blank" rel="noopener noreferrer" style={{
-        display: "inline-flex",
-        alignItems: "center",
-        gap: "6px",
-        padding: "8px 12px",
-        background: "var(--cream)",
-        border: "1px solid var(--border)",
-        borderRadius: "2px",
+        fontWeight: 600,
+        color: bookmarked ? "var(--ink)" : "var(--ink-muted)",
         cursor: "pointer",
-        fontSize: "13px",
-        fontWeight: "600",
-        color: "var(--ink)",
-        textDecoration: "none",
-        transition: "all 0.2s"
-      }} onMouseEnter={(e) => { e.currentTarget.style.background = "var(--gold)"; }} onMouseLeave={(e) => { e.currentTarget.style.background = "var(--cream)"; }}>
-        f Facebook
-      </a>
-      <button onClick={handleCopyLink} style={{
-        display: "inline-flex",
-        alignItems: "center",
-        gap: "6px",
-        padding: "8px 12px",
-        background: "var(--cream)",
-        border: "1px solid var(--border)",
-        borderRadius: "2px",
-        cursor: "pointer",
-        fontSize: "13px",
-        fontWeight: "600",
-        color: "var(--ink)",
-        transition: "all 0.2s"
-      }} onMouseEnter={(e) => { e.currentTarget.style.background = "var(--gold)"; }} onMouseLeave={(e) => { e.currentTarget.style.background = "var(--cream)"; }}>
-        Copy Link
-      </button>
-    </div>
+        transition: "all 0.2s",
+      }}
+    >
+      <Bookmark
+        size={14}
+        aria-hidden
+        fill={bookmarked ? "currentColor" : "none"}
+      />
+      {bookmarked ? "Saved" : "Save"}
+    </button>
   );
 }
 
 export default function ArticleDetail() {
   const { slug } = useParams<{ slug: string }>();
   const [, navigate] = useLocation();
-  const [bookmarked, setBookmarked] = useState(false);
-  const postsQuery = trpc.posts.listPublished.useQuery();
+  const postQuery = trpc.posts.getBySlug.useQuery(
+    { slug: slug ?? "" },
+    { enabled: Boolean(slug) }
+  );
+  const post = postQuery.data ?? null;
+  const relatedQuery = trpc.relatedArticles.getRelated.useQuery(
+    { slug: slug ?? "", pillar: post?.pillar ?? "" },
+    { enabled: Boolean(post?.pillar) }
+  );
 
-  // Find the post by slug
-  const post = useMemo(() => {
-    if (!postsQuery.data || !slug) return null;
-    return postsQuery.data.find((p) => p.slug === slug);
-  }, [postsQuery.data, slug]);
-
-  if (postsQuery.isLoading) {
+  if (postQuery.isLoading) {
     return (
       <Layout>
-        <div style={{ padding: "80px 32px", textAlign: "center" }}>
-          <div style={{ color: "var(--ink3)" }}>Loading article...</div>
+        <div style={{ padding: "var(--s-6) var(--s-4)", textAlign: "center" }}>
+          <div style={{ color: "var(--ink-muted)" }}>Loading article…</div>
         </div>
       </Layout>
     );
@@ -109,20 +160,31 @@ export default function ArticleDetail() {
   if (!post) {
     return (
       <Layout>
-        <div style={{ padding: "80px 32px", textAlign: "center" }}>
-          <h2 style={{ color: "var(--ink)", fontSize: "28px", marginBottom: "20px" }}>Article not found</h2>
+        <div style={{ padding: "var(--s-6) var(--s-4)", textAlign: "center" }}>
+          <h2
+            style={{
+              fontFamily: "var(--F)",
+              fontSize: "28px",
+              fontWeight: 500,
+              color: "var(--ink)",
+              marginBottom: "20px",
+            }}
+          >
+            Article not found
+          </h2>
           <button
+            type="button"
             onClick={() => navigate("/writing")}
             style={{
               padding: "12px 24px",
-              background: "var(--gold)",
-              color: "var(--ink)",
+              background: "var(--ink)",
+              color: "var(--bone)",
               border: "none",
-              borderRadius: "2px",
+              borderRadius: "var(--radius-sm)",
               cursor: "pointer",
-              fontWeight: "600",
-              fontSize: "14px",
               fontFamily: "var(--U)",
+              fontWeight: 600,
+              fontSize: "13px",
             }}
           >
             Back to Writing
@@ -132,134 +194,140 @@ export default function ArticleDetail() {
     );
   }
 
+  const canonical = articleUrl(post.slug);
+  const description = post.excerpt || post.title;
+  const ogImage = post.coverImage || OG_DEFAULT_IMAGE;
+  const publishedIso = String(post.publishedAt || post.createdAt || "");
+
   return (
     <Layout>
       <ReadingProgressBar />
       <SEOMeta
         title={post.title}
-        description={post.excerpt || post.title}
+        description={description}
+        image={ogImage}
+        url={canonical}
         type="article"
         author="James Bell"
-        publishedDate={String(post.publishedAt || post.createdAt || "")}
+        publishedDate={publishedIso}
+        modifiedDate={String(post.updatedAt || publishedIso)}
         structuredData={getArticleSchema(
           post.title,
-          post.excerpt || post.title,
-          String(post.publishedAt || post.createdAt || new Date().toISOString()),
-          undefined,
-          undefined,
-          `https://www.livewellbyjamesbell.co/writing/${post.slug}`
+          description,
+          publishedIso,
+          String(post.updatedAt || publishedIso),
+          ogImage,
+          canonical
         )}
       />
       <article>
         {/* BACK BUTTON */}
-        <div style={{ padding: "20px 32px", borderBottom: "1px solid var(--border)" }}>
+        <div
+          style={{
+            padding: "20px var(--s-4)",
+            borderBottom: "1px solid var(--border)",
+          }}
+        >
           <button
+            type="button"
             onClick={() => navigate("/writing")}
             style={{
               display: "flex",
               alignItems: "center",
               gap: "8px",
-              background: "none",
+              background: "transparent",
               border: "none",
-              color: "var(--ink3)",
+              color: "var(--ink-muted)",
               cursor: "pointer",
-              fontSize: "14px",
-              fontWeight: "600",
-              padding: "0",
               fontFamily: "var(--U)",
+              fontSize: "13px",
+              fontWeight: 600,
+              padding: 0,
               transition: "color 0.2s",
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = "var(--ink)")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "var(--ink3)")}
+            onMouseEnter={e => (e.currentTarget.style.color = "var(--ink)")}
+            onMouseLeave={e =>
+              (e.currentTarget.style.color = "var(--ink-muted)")
+            }
           >
-            <ArrowLeft size={16} />
-            Back to Articles
+            <ArrowLeft size={16} aria-hidden />
+            Back to Writing
           </button>
         </div>
 
-        {/* ARTICLE HEADER */}
-        <section style={{ padding: "60px 32px 40px", background: "var(--paper)", borderBottom: "1px solid var(--border)" }}>
-          <div className="wrap" style={{ maxWidth: "800px" }}>
-            {/* TOPIC TAG */}
-            <div
-              style={{
-                display: "inline-block",
-                padding: "6px 12px",
-                background: "var(--cream)",
-                borderRadius: "2px",
-                marginBottom: "20px",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "11px",
-                  fontWeight: "700",
-                  color: "var(--ink3)",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.5px",
-                  fontFamily: "var(--U)",
-                }}
-              >
-                {(post.topic || post.pillar || "Featured").replace(/-/g, " ").toUpperCase()}
-              </span>
+        {/* HEADER */}
+        <section
+          style={{
+            padding: "var(--s-6) var(--s-4) var(--s-5)",
+            background: "var(--bone)",
+            borderBottom: "1px solid var(--border)",
+          }}
+        >
+          <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+            {/* Eyebrow chip — links to the canonical track */}
+            <div style={{ marginBottom: "20px" }}>
+              <TrackChip pillarOrTrack={post.pillar} />
             </div>
 
-            {/* TITLE */}
+            {/* Title */}
             <h1
               style={{
-                fontSize: "clamp(36px, 5vw, 52px)",
-                fontWeight: "300",
-                lineHeight: "1.15",
-                marginBottom: "28px",
-                color: "var(--ink)",
                 fontFamily: "var(--F)",
-                letterSpacing: "-0.015em",
+                fontSize: "clamp(36px, 5vw, 56px)",
+                fontWeight: 400,
+                lineHeight: 1.1,
+                letterSpacing: "-0.02em",
+                color: "var(--ink)",
+                marginBottom: "24px",
               }}
             >
               {post.title}
             </h1>
 
-            {/* META INFO */}
+            {/* Meta info — byline + audience + date */}
             <div
               style={{
                 display: "flex",
                 alignItems: "center",
-                gap: "24px",
-                paddingBottom: "24px",
+                gap: "20px",
+                paddingBottom: "20px",
                 borderBottom: "1px solid var(--border)",
                 flexWrap: "wrap",
-                fontSize: "14px",
                 fontFamily: "var(--U)",
+                fontSize: "13px",
+                color: "var(--ink-muted)",
               }}
             >
-              <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "var(--ink3)" }}>
-                <User size={16} />
-                <span>James Bell</span>
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "var(--ink3)" }}>
-                <Clock size={16} />
-                <span>{post.readingTimeMinutes || 5} min read</span>
-              </div>
-              <div style={{ color: "var(--ink3)" }}>
-                {post.publishedAt
-                  ? new Date(post.publishedAt).toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })
-                  : ""}
-              </div>
+              <span style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                <User size={14} aria-hidden />
+                James Bell
+              </span>
+              <AudienceLabel
+                audience={post.audience}
+                readingTimeMinutes={post.readingTimeMinutes ?? 5}
+              />
+              {post.publishedAt && (
+                <time dateTime={publishedIso}>
+                  {new Date(post.publishedAt).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </time>
+              )}
             </div>
 
-            {/* EXCERPT */}
+            {/* Standfirst / excerpt */}
             {post.excerpt && (
               <p
                 style={{
-                  fontSize: "18px",
-                  lineHeight: "1.7",
-                  color: "var(--ink3)",
+                  fontFamily: "var(--F)",
+                  fontSize: "21px",
+                  lineHeight: 1.55,
+                  color: "var(--ink-muted)",
                   fontStyle: "italic",
                   marginTop: "24px",
+                  maxWidth: "60ch",
                 }}
               >
                 {post.excerpt}
@@ -268,321 +336,191 @@ export default function ArticleDetail() {
           </div>
         </section>
 
-        {/* FEATURED IMAGE */}
+        {/* HERO IMAGE */}
         {post.coverImage && (
-          <section style={{ padding: "40px 32px 0" }}>
-            <div className="wrap" style={{ maxWidth: "800px" }}>
+          <section style={{ padding: "var(--s-5) var(--s-4) 0" }}>
+            <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
               <img
                 src={post.coverImage}
                 alt={post.title}
+                width={1200}
+                height={630}
+                loading="eager"
+                fetchPriority="high"
                 style={{
                   width: "100%",
-                  borderRadius: "4px",
-                  objectFit: "cover",
+                  height: "auto",
                   aspectRatio: "16 / 9",
-                  marginBottom: "40px",
+                  objectFit: "cover",
+                  borderRadius: "var(--radius-sm)",
+                  display: "block",
                 }}
               />
             </div>
           </section>
         )}
 
-        {/* ARTICLE CONTENT */}
-        <section style={{ padding: "60px 32px" }}>
-          <div className="wrap" style={{ maxWidth: "800px" }}>
-            <div
-              style={{
-                fontSize: "17px",
-                lineHeight: "1.85",
-                color: "var(--ink)",
-                marginBottom: "60px",
-              }}
-            >
-              {post.body ? (
-                <Streamdown>{post.body}</Streamdown>
-              ) : (
-                <div style={{ color: "var(--ink3)", fontStyle: "italic", padding: "40px 0" }}>
-                  <p>This article content is coming soon.</p>
-                </div>
-              )}
-            </div>
+        {/* BODY */}
+        <section style={{ padding: "var(--s-6) var(--s-4)" }}>
+          <div
+            className="article-body"
+            style={{
+              maxWidth: "var(--w-prose)",
+              margin: "0 auto",
+              fontFamily: "var(--B)",
+              fontSize: "18px",
+              lineHeight: 1.75,
+              color: "var(--ink)",
+            }}
+          >
+            {post.body ? (
+              <Streamdown>{post.body}</Streamdown>
+            ) : (
+              <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
+                This article is in preparation.
+              </p>
+            )}
+          </div>
 
-            {/* ARTICLE FOOTER */}
-            <div
-              style={{
-                paddingTop: "32px",
-                borderTop: "1px solid var(--border)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                flexWrap: "wrap",
-                gap: "16px",
-              }}
-            >
-              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                <button
-                  onClick={() => setBookmarked(!bookmarked)}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    background: "none",
-                    border: "1px solid var(--border)",
-                    borderRadius: "2px",
-                    padding: "10px 16px",
-                    cursor: "pointer",
-                    color: bookmarked ? "var(--gold)" : "var(--ink3)",
-                    fontSize: "13px",
-                    fontWeight: "600",
-                    fontFamily: "var(--U)",
-                    transition: "all 0.2s ease",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = "var(--gold)";
-                    e.currentTarget.style.background = "rgba(196,146,59,0.05)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = "var(--border)";
-                    e.currentTarget.style.background = "none";
-                  }}
-                >
-                  <Bookmark size={16} fill={bookmarked ? "currentColor" : "none"} />
-                  {bookmarked ? "Saved" : "Save"}
-                </button>
-                <button
-                  onClick={() => {
-                    const url = window.location.href;
-                    const text = `Check out: ${post.title} by James Bell`;
-                    if (navigator.share) {
-                      navigator.share({ title: post.title, text, url });
-                    } else {
-                      navigator.clipboard.writeText(`${text}\n${url}`);
-                      alert("Link copied to clipboard!");
-                    }
-                  }}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    background: "none",
-                    border: "1px solid var(--border)",
-                    borderRadius: "2px",
-                    padding: "10px 16px",
-                    cursor: "pointer",
-                    color: "var(--ink3)",
-                    fontSize: "13px",
-                    fontWeight: "600",
-                    fontFamily: "var(--U)",
-                    transition: "all 0.2s ease",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = "var(--ink3)";
-                    e.currentTarget.style.background = "rgba(26,26,26,0.05)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = "var(--border)";
-                    e.currentTarget.style.background = "none";
-                  }}
-                >
-                  <Share2 size={16} />
-                  Share
-                </button>
+          {/* Reader actions */}
+          <div
+            style={{
+              maxWidth: "var(--w-prose)",
+              margin: "var(--s-5) auto 0",
+              paddingTop: "var(--s-4)",
+              borderTop: "1px solid var(--border)",
+              display: "flex",
+              flexWrap: "wrap",
+              alignItems: "center",
+              gap: "12px",
+            }}
+          >
+            <BookmarkButton slug={post.slug} />
+            <ShareButton title={post.title} url={canonical} />
+            <CitationCopy
+              title={post.title}
+              url={canonical}
+              publishedDate={publishedIso}
+            />
+            {/* Three-audience share replaces the single SendToPastor button */}
+            <AudienceShare title={post.title} url={canonical} />
+          </div>
+        </section>
+
+        {/* NEWSLETTER (single CTA — no fake form) */}
+        <section
+          style={{
+            background: "var(--bone-warm)",
+            padding: "var(--s-6) var(--s-4)",
+          }}
+        >
+          <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+            <NewsletterSignup
+              variant="inline"
+              title="Get new essays in your inbox"
+              description="Long-form theology delivered the way you'd want to read it: unhurried, weighted, no spam."
+            />
+          </div>
+        </section>
+
+        {/* RELATED */}
+        {(relatedQuery.data?.length ?? 0) > 0 && (
+          <section
+            style={{
+              background: "var(--card)",
+              padding: "var(--s-6) var(--s-4)",
+              borderTop: "1px solid var(--border)",
+            }}
+          >
+            <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+              <h2
+                style={{
+                  fontFamily: "var(--F)",
+                  fontSize: "28px",
+                  fontWeight: 500,
+                  color: "var(--ink)",
+                  marginBottom: "32px",
+                  letterSpacing: "-0.01em",
+                }}
+              >
+                Related essays
+              </h2>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+                  gap: "24px",
+                }}
+              >
+                {relatedQuery.data?.slice(0, 3).map(related => (
+                  <button
+                    key={related.id}
+                    type="button"
+                    onClick={() => navigate(`/writing/${related.slug}`)}
+                    style={{
+                      textAlign: "left",
+                      padding: "20px",
+                      background: "var(--bone)",
+                      border: "1px solid var(--border)",
+                      borderRadius: "var(--radius-sm)",
+                      cursor: "pointer",
+                      transition: "all 0.2s",
+                    }}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.borderColor = "var(--mustard)";
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.borderColor = "var(--border)";
+                    }}
+                  >
+                    {(related.topic || related.pillar) && (
+                      <div
+                        style={{
+                          fontFamily: "var(--U)",
+                          fontSize: "10px",
+                          fontWeight: 600,
+                          color: "var(--mustard-text)",
+                          textTransform: "uppercase",
+                          letterSpacing: "0.18em",
+                          marginBottom: "10px",
+                        }}
+                      >
+                        {(related.topic ?? related.pillar)?.replace(/-/g, " ")}
+                      </div>
+                    )}
+                    <h3
+                      style={{
+                        fontFamily: "var(--F)",
+                        fontSize: "20px",
+                        fontWeight: 500,
+                        color: "var(--ink)",
+                        marginBottom: "12px",
+                        lineHeight: 1.25,
+                        letterSpacing: "-0.01em",
+                      }}
+                    >
+                      {related.title}
+                    </h3>
+                    {related.readingTimeMinutes && (
+                      <div
+                        style={{
+                          fontFamily: "var(--U)",
+                          fontSize: "12px",
+                          color: "var(--ink-muted)",
+                        }}
+                      >
+                        {related.readingTimeMinutes} min read
+                      </div>
+                    )}
+                  </button>
+                ))}
               </div>
-
-              <button
-                onClick={() => navigate("/writing")}
-                style={{
-                  padding: "10px 20px",
-                  background: "var(--gold)",
-                  color: "var(--ink)",
-                  border: "none",
-                  borderRadius: "2px",
-                  cursor: "pointer",
-                  fontWeight: "600",
-                  fontSize: "13px",
-                  fontFamily: "var(--U)",
-                  transition: "all 0.2s ease",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = "var(--goldlt)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "var(--gold)";
-                }}
-              >
-                Read More Articles
-              </button>
             </div>
-          </div>
-        </section>
-
-        {/* EMAIL CAPTURE */}
-        <section style={{ background: "linear-gradient(135deg, var(--forest) 0%, var(--ink) 100%)", padding: "60px 32px", color: "white" }}>
-          <div className="wrap" style={{ maxWidth: "600px", textAlign: "center" }}>
-            <h2 style={{ fontSize: "28px", fontWeight: "600", marginBottom: "16px", fontFamily: "var(--F)" }}>
-              Get Essays in Your Inbox
-            </h2>
-            <p style={{ fontSize: "16px", marginBottom: "32px", opacity: 0.95, lineHeight: "1.6" }}>
-              Subscribe to receive new essays on faith, culture, and Christian leadership delivered directly to you.
-            </p>
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                const btn = e.currentTarget.querySelector('button');
-                if (btn) { btn.textContent = '✓ Subscribed!'; btn.style.background = 'var(--forest)'; btn.style.color = 'white'; }
-              }}
-              style={{
-                display: "flex",
-                gap: "8px",
-                flexDirection: "row",
-                flexWrap: "wrap",
-                justifyContent: "center",
-              }}
-            >
-              <input
-                type="email"
-                placeholder="Your email address"
-                required
-                style={{
-                  flex: "1 1 250px",
-                  padding: "12px 16px",
-                  border: "none",
-                  borderRadius: "2px",
-                  fontSize: "14px",
-                  outline: "none",
-                  fontFamily: "inherit",
-                }}
-              />
-              <button
-                type="submit"
-                style={{
-                  padding: "12px 32px",
-                  background: "var(--gold)",
-                  color: "var(--ink)",
-                  border: "none",
-                  borderRadius: "2px",
-                  fontWeight: "600",
-                  fontSize: "14px",
-                  cursor: "pointer",
-                  fontFamily: "var(--U)",
-                  transition: "all 0.2s ease",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.opacity = "0.9";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.opacity = "1";
-                }}
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </section>
-
-        {/* RELATED ARTICLES */}
-        <section style={{ background: "white", padding: "60px 32px", borderTop: "1px solid var(--border)" }}>
-          <div className="wrap" style={{ maxWidth: "800px" }}>
-            <h2 style={{ fontSize: "28px", fontWeight: "600", marginBottom: "40px", color: "var(--ink)", fontFamily: "var(--F)" }}>
-              Related Articles
-            </h2>
-            <div style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-              gap: "24px"
-            }}>
-              {postsQuery.data?.filter(p => p.slug !== slug && (p.pillar === post.pillar || p.topic === post.topic)).slice(0, 3).map(relatedPost => (
-                <div key={relatedPost.id} style={{
-                  padding: "20px",
-                  border: "1px solid var(--border)",
-                  borderRadius: "4px",
-                  cursor: "pointer",
-                  transition: "all 0.2s ease"
-                }}
-                  onClick={() => navigate(`/writing/${relatedPost.slug}`)}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = "var(--gold)";
-                    e.currentTarget.style.boxShadow = "0 4px 12px rgba(184,150,62,0.1)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = "var(--border)";
-                    e.currentTarget.style.boxShadow = "none";
-                  }}
-                >
-                  <div style={{ fontSize: "12px", color: "var(--gold)", fontWeight: "600", marginBottom: "8px", fontFamily: "var(--U)" }}>
-                    {relatedPost.topic?.toUpperCase()}
-                  </div>
-                  <h3 style={{ fontSize: "16px", fontWeight: "600", marginBottom: "12px", color: "var(--ink)", lineHeight: "1.4" }}>
-                    {relatedPost.title}
-                  </h3>
-                  <div style={{ fontSize: "12px", color: "var(--ink3)" }}>
-                    {relatedPost.readTime} min read
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+          </section>
+        )}
 
         {/* AUTHOR BIO */}
-        <section style={{ background: "var(--cream)", padding: "60px 32px" }}>
-          <div className="wrap" style={{ maxWidth: "800px" }}>
-            <div
-              style={{
-                display: "flex",
-                gap: "24px",
-                alignItems: "flex-start",
-              }}
-            >
-              <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg"
-                alt="James Bell"
-                style={{
-                  width: "120px",
-                  height: "160px",
-                  borderRadius: "4px",
-                  objectFit: "cover",
-                  objectPosition: "center top",
-                  flexShrink: 0,
-                }}
-              />
-              <div>
-                <h3 style={{ fontSize: "18px", fontWeight: "700", marginBottom: "8px", color: "var(--ink)", fontFamily: "var(--F)" }}>
-                  James Bell
-                </h3>
-                <div style={{ fontSize: "12px", color: "var(--gold)", fontWeight: "600", fontFamily: "var(--U)", letterSpacing: ".05em", marginBottom: "12px" }}>
-                  LEAD TEACHING PASTOR • FOUNDER
-                </div>
-                <p style={{ fontSize: "14px", color: "var(--ink3)", lineHeight: "1.6", marginBottom: "16px" }}>
-                  Lead Teaching Pastor at First Baptist Church in Fenton, Michigan, and founder of the Pastors Connection Network. For over 15 years, James has served in full-time ministry—planting churches, leading revitalization efforts, and consulting with pastors and ministry leaders across the country. Out of his own seasons of burnout and isolation, he founded the Pastors Connection Network, a growing community of leaders committed to gospel-centered relationships and long-term faithfulness in ministry.
-                </p>
-                <button
-                  onClick={() => navigate("/books")}
-                  style={{
-                    padding: "10px 20px",
-                    background: "var(--gold)",
-                    color: "var(--ink)",
-                    border: "none",
-                    borderRadius: "2px",
-                    cursor: "pointer",
-                    fontWeight: "600",
-                    fontSize: "13px",
-                    fontFamily: "var(--U)",
-                    transition: "all 0.2s ease",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.background = "var(--goldlt)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background = "var(--gold)";
-                  }}
-                >
-                  View All Books
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
+        <AuthorBio />
       </article>
     </Layout>
   );

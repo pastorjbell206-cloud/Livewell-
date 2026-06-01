@@ -13,7 +13,16 @@
     "format": "prettier --write .",
     "test": "vitest run",
     "db:push": "drizzle-kit generate && drizzle-kit migrate",
-    "db:seed": "node scripts/seed-all-content.mjs"
+    "db:seed": "node scripts/seed-all-content.mjs",
+    "sitemap": "node scripts/generate-sitemap.mjs",
+    "prerender": "node scripts/prerender-heads.mjs",
+    "publish:docx": "tsx scripts/publish-docx.ts",
+    "publish:book": "tsx scripts/publish-book.ts",
+    "publish:md": "tsx scripts/publish-md.ts",
+    "publish:drafts": "node scripts/publish-all-drafts.mjs",
+    "publish:all": "node scripts/publish-from-plan.mjs",
+    "survey": "node scripts/survey-manuscripts.mjs",
+    "seed:paths": "node scripts/seed-reading-paths.mjs"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.693.0",
@@ -62,6 +71,7 @@
     "input-otp": "^1.4.2",
     "jose": "6.1.0",
     "lucide-react": "^0.453.0",
+    "mammoth": "^1.8.0",
     "mysql2": "^3.15.0",
     "nanoid": "^5.1.5",
     "next-themes": "^0.4.6",

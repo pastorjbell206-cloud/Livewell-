@@ -1,81 +1,557 @@
+/**
+ * Home — Substack-shaped landing page.
+ *
+ * Per James's brief: "Pastor and essayist writing on theology, politics, and
+ * the American church after Christendom. New essays weekly." The homepage
+ * leads with the lede track, surfaces the latest essays, and converts via
+ * the segmented signup form (skeptic / Christian / pastor / exploring).
+ */
 import { Link } from "wouter";
-import { useState } from "react";
 import { ArrowRight } from "lucide-react";
-import { SEOMeta } from "@/components/SEOMeta";
-import { trpc } from "@/lib/trpc";
+
 import Footer from "@/components/Footer";
 import MinimalNav from "@/components/MinimalNav";
-import StickyMobileCTA from "@/components/StickyMobileCTA";
+import { SegmentedSignup } from "@/components/SegmentedSignup";
+import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
+import { TrackChip } from "@/components/TrackChip";
+import { trpc } from "@/lib/trpc";
+import {
+  META_DESCRIPTION,
+  PRIMARY_HEADLINE,
+  PRIMARY_KICKER,
+  PRIMARY_SUBHEAD,
+} from "@/lib/positioning";
+import { FEATURED_TRACKS, PRIMARY_TRACKS, trackUrl } from "@/lib/taxonomy";
 
 export default function Home() {
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-  const { data: articles } = trpc.posts.listPublished.useQuery();
-  const recent = articles?.slice(0, 6) || [];
+  // Recent essays for the "Recent" rail.
+  const articlesQuery = trpc.posts.listPublished.useQuery();
+  const all = articlesQuery.data ?? [];
 
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email.includes("@")) return;
-    setSubscribed(true);
-    setEmail("");
-  };
-
-  const schema = {
-    "@context": "https://schema.org", "@type": "WebSite",
-    name: "LiveWell by James Bell", url: "https://livewellbyjamesbell.co",
-    description: "Theology for marriage, parenting, faith crisis, and doubt. 160+ free essays by James Bell.",
-    potentialAction: { "@type": "SearchAction", target: "https://livewellbyjamesbell.co/writing?q={search_term_string}", "query-input": "required name=search_term_string" },
-  };
+  const lede = all[0];
+  const recent = all.slice(1, 7);
 
   return (
     <div>
       <SEOMeta
-        title="LiveWell by James Bell — Theology for Marriage, Parenting, Faith & Doubt"
-        description="Free theology for your actual life. 160+ essays on Christian marriage, parenting with faith, doubt and deconstruction, and reading the Bible honestly. By James Bell, author of 25 books."
-        url="https://livewellbyjamesbell.co"
+        title="LiveWell by James Bell"
+        description={META_DESCRIPTION}
+        url="https://www.livewellbyjamesbell.co"
         type="website"
-        structuredData={schema}
+        structuredData={[getOrganizationSchema(), getWebSiteSchema()]}
       />
       <MinimalNav />
 
-      {/* ═══ HERO — short, clear, shows content fast ═══ */}
-      <section style={{ background: "var(--charcoal)", padding: "5rem 1.5rem 4rem" }}>
-        <div style={{ maxWidth: "740px", margin: "0 auto" }}>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.25rem, 6vw, 4rem)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1.25rem" }}>
-            Theology for your actual life.
-          </h1>
-          <p style={{ fontSize: "1.05rem", lineHeight: 1.7, color: "var(--bone)", opacity: 0.6, maxWidth: "520px", marginBottom: "2rem" }}>
-            Christian marriage help. Parenting with theological depth. Faith crisis and honest doubt. 160+ free essays. 25 books.
-          </p>
-          <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
-            <Link href="/writing" style={{ textDecoration: "none" }}>
-              <button style={{ background: "var(--bone)", color: "var(--charcoal)", border: "none", padding: "0.85rem 2rem", fontFamily: "var(--U)", fontSize: "0.85rem", fontWeight: 500, borderRadius: "2px", cursor: "pointer" }}>Read the essays</button>
+      {/* HERO — Substack-shaped lede */}
+      <section
+        style={{
+          background: "var(--charcoal)",
+          color: "var(--bone)",
+          padding: "var(--s-7) var(--s-4) var(--s-6)",
+          position: "relative",
+          overflow: "hidden",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "var(--w-default)",
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "minmax(0, 1fr)",
+            gap: "var(--s-6)",
+          }}
+        >
+          <div style={{ maxWidth: "780px" }}>
+            <div
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "12px",
+                marginBottom: "20px",
+              }}
+            >
+              <span
+                aria-hidden
+                style={{
+                  width: "32px",
+                  height: "1px",
+                  background: "var(--mustard)",
+                }}
+              />
+              <span
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  letterSpacing: "0.22em",
+                  textTransform: "uppercase",
+                  color: "var(--mustard)",
+                }}
+              >
+                {PRIMARY_KICKER}
+              </span>
+            </div>
+
+            <h1
+              style={{
+                fontFamily: "var(--F)",
+                fontSize: "clamp(40px, 6vw, 76px)",
+                fontWeight: 400,
+                lineHeight: 1.05,
+                letterSpacing: "-0.025em",
+                color: "var(--bone)",
+                marginBottom: "24px",
+              }}
+            >
+              {PRIMARY_HEADLINE}
+            </h1>
+
+            <p
+              style={{
+                fontFamily: "var(--B)",
+                fontSize: "19px",
+                lineHeight: 1.65,
+                color: "rgba(245,240,230,0.75)",
+                maxWidth: "62ch",
+                marginBottom: "40px",
+              }}
+            >
+              {PRIMARY_SUBHEAD}
+            </p>
+
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "12px",
+                alignItems: "center",
+              }}
+            >
+              <Link href="/writing" style={{ textDecoration: "none" }}>
+                <button
+                  type="button"
+                  style={{
+                    background: "var(--bone)",
+                    color: "var(--ink)",
+                    border: "none",
+                    borderBottom: "2px solid var(--mustard)",
+                    padding: "14px 28px",
+                    fontFamily: "var(--U)",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    letterSpacing: "0.04em",
+                    borderRadius: "var(--radius-sm)",
+                    cursor: "pointer",
+                  }}
+                >
+                  Read the essays
+                </button>
+              </Link>
+              <Link href="/skeptic-track" style={{ textDecoration: "none" }}>
+                <button
+                  type="button"
+                  style={{
+                    background: "transparent",
+                    color: "var(--bone)",
+                    border: "1px solid rgba(245,240,230,0.25)",
+                    padding: "14px 28px",
+                    fontFamily: "var(--U)",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    letterSpacing: "0.04em",
+                    borderRadius: "var(--radius-sm)",
+                    cursor: "pointer",
+                  }}
+                >
+                  Start here if you're a skeptic
+                </button>
+              </Link>
+            </div>
+          </div>
+
+          {/* Lede essay card — replaces decorative author card */}
+          {lede && (
+            <Link
+              href={`/writing/${lede.slug}`}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <article
+                style={{
+                  background: "rgba(245,240,230,0.06)",
+                  border: "1px solid rgba(245,240,230,0.14)",
+                  borderTop: "2px solid var(--mustard)",
+                  padding: "var(--s-5)",
+                  borderRadius: "var(--radius-sm)",
+                  cursor: "pointer",
+                  transition: "all 0.2s",
+                  maxWidth: "640px",
+                }}
+              >
+                <div style={{ marginBottom: "16px" }}>
+                  <TrackChip pillarOrTrack={lede.pillar} inverted asLink={false} />
+                </div>
+                <h2
+                  style={{
+                    fontFamily: "var(--F)",
+                    fontSize: "28px",
+                    fontWeight: 500,
+                    lineHeight: 1.2,
+                    letterSpacing: "-0.01em",
+                    color: "var(--bone)",
+                    marginBottom: "12px",
+                  }}
+                >
+                  {lede.title}
+                </h2>
+                {lede.excerpt && (
+                  <p
+                    style={{
+                      fontFamily: "var(--B)",
+                      fontSize: "15px",
+                      lineHeight: 1.65,
+                      color: "rgba(245,240,230,0.7)",
+                      marginBottom: "16px",
+                      maxWidth: "55ch",
+                    }}
+                  >
+                    {lede.excerpt}
+                  </p>
+                )}
+                <div
+                  style={{
+                    fontFamily: "var(--U)",
+                    fontSize: "12px",
+                    color: "rgba(245,240,230,0.55)",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "6px",
+                  }}
+                >
+                  {(lede.readingTimeMinutes ?? 5)} min read · Continue
+                  <ArrowRight size={12} aria-hidden />
+                </div>
+              </article>
             </Link>
-            <Link href="/pastors" style={{ textDecoration: "none" }}>
-              <button style={{ background: "transparent", color: "var(--bone)", border: "1px solid rgba(244,241,234,0.2)", padding: "0.85rem 2rem", fontFamily: "var(--U)", fontSize: "0.85rem", fontWeight: 500, borderRadius: "2px", cursor: "pointer" }}>For pastors</button>
-            </Link>
+          )}
+        </div>
+      </section>
+
+      {/* FEATURED TRACK STRIP — three primary Substack-aligned arcs */}
+      <section
+        style={{
+          background: "var(--bone)",
+          padding: "var(--s-6) var(--s-4)",
+          borderBottom: "1px solid var(--border)",
+        }}
+      >
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <div className="eyebrow" style={{ marginBottom: "12px" }}>
+            The Lede Arcs
+          </div>
+          <h2
+            style={{
+              fontFamily: "var(--F)",
+              fontSize: "clamp(28px, 4vw, 38px)",
+              fontWeight: 400,
+              letterSpacing: "-0.015em",
+              color: "var(--ink)",
+              marginBottom: "var(--s-4)",
+              maxWidth: "32ch",
+            }}
+          >
+            The three threads the weekly essays trace.
+          </h2>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: "24px",
+            }}
+          >
+            {FEATURED_TRACKS.map(track => (
+              <Link
+                key={track.slug}
+                href={trackUrl(track.slug)}
+                style={{ textDecoration: "none" }}
+              >
+                <article
+                  style={{
+                    padding: "var(--s-4)",
+                    background: "var(--card)",
+                    border: "1px solid var(--border)",
+                    borderLeft: "2px solid var(--mustard)",
+                    borderRadius: "var(--radius-sm)",
+                    height: "100%",
+                    transition: "all 0.2s",
+                    cursor: "pointer",
+                  }}
+                  onMouseEnter={e => {
+                    e.currentTarget.style.background = "var(--bone-warm)";
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.background = "var(--card)";
+                  }}
+                >
+                  <h3
+                    style={{
+                      fontFamily: "var(--F)",
+                      fontSize: "26px",
+                      fontWeight: 500,
+                      letterSpacing: "-0.01em",
+                      color: "var(--ink)",
+                      marginBottom: "12px",
+                    }}
+                  >
+                    {track.title}
+                  </h3>
+                  <p
+                    style={{
+                      fontFamily: "var(--B)",
+                      fontSize: "15px",
+                      lineHeight: 1.65,
+                      color: "var(--ink-muted)",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    {track.description}
+                  </p>
+                  <span
+                    style={{
+                      fontFamily: "var(--U)",
+                      fontSize: "12px",
+                      fontWeight: 600,
+                      letterSpacing: "0.12em",
+                      textTransform: "uppercase",
+                      color: "var(--ink)",
+                      borderBottom: "1px solid var(--mustard)",
+                      paddingBottom: "2px",
+                    }}
+                  >
+                    Read this track →
+                  </span>
+                </article>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ═══ FOUR PILLARS — the clear path ═══ */}
-      <section style={{ background: "var(--bone)", padding: "4rem 1.5rem" }}>
-        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1.25rem" }}>
-            {[
-              { title: "Theological Depth", desc: "Hard questions. Real scholarship. Reading the Bible without shortcuts.", href: "/writing?topic=theology", keyword: "deep theology" },
-              { title: "Prophetic Justice", desc: "Where the church has been silent and what faithfulness demands now.", href: "/writing?topic=justice", keyword: "faith and justice" },
-              { title: "Faith & Theology", desc: "Doubt, deconstruction, and the intellectual architecture of belief.", href: "/doubt", keyword: "faith crisis" },
-              { title: "Living Well", desc: "Marriage, parenting, finances, emotional health, and the theology beneath everyday decisions.", href: "/marriage", keyword: "Christian living" },
-            ].map((p, i) => (
-              <Link key={i} href={p.href} style={{ textDecoration: "none" }}>
-                <div style={{ padding: "1.75rem", background: "var(--card)", border: "1px solid var(--bone-muted)", borderRadius: "2px", height: "100%", cursor: "pointer", transition: "all 240ms cubic-bezier(0.22,1,0.36,1)" }}
-                  onMouseEnter={(e) => { e.currentTarget.style.borderColor = "var(--mustard)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.borderColor = "var(--bone-muted)"; e.currentTarget.style.transform = "none"; }}
+      {/* RECENT ESSAYS */}
+      <section
+        style={{
+          background: "var(--bone-warm)",
+          padding: "var(--s-6) var(--s-4)",
+        }}
+      >
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "baseline",
+              marginBottom: "var(--s-4)",
+              flexWrap: "wrap",
+              gap: "12px",
+            }}
+          >
+            <h2
+              style={{
+                fontFamily: "var(--F)",
+                fontSize: "32px",
+                fontWeight: 400,
+                letterSpacing: "-0.015em",
+                color: "var(--ink)",
+              }}
+            >
+              Recent essays
+            </h2>
+            <Link
+              href="/writing"
+              style={{
+                fontFamily: "var(--U)",
+                fontSize: "13px",
+                fontWeight: 600,
+                color: "var(--ink-muted)",
+                textDecoration: "none",
+                borderBottom: "1px solid var(--mustard)",
+                paddingBottom: "2px",
+              }}
+            >
+              All writing →
+            </Link>
+          </div>
+
+          {articlesQuery.isLoading && (
+            <p
+              style={{
+                fontFamily: "var(--U)",
+                color: "var(--ink-muted)",
+                padding: "var(--s-5) 0",
+              }}
+            >
+              Loading…
+            </p>
+          )}
+
+          {recent.length > 0 && (
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+                gap: "24px",
+              }}
+            >
+              {recent.map(a => (
+                <Link
+                  key={a.id}
+                  href={`/writing/${a.slug}`}
+                  style={{ textDecoration: "none", color: "inherit" }}
                 >
-                  <h2 style={{ fontFamily: "var(--F)", fontSize: "1.35rem", fontWeight: 400, color: "var(--ink)", marginBottom: "0.5rem" }}>{p.title}</h2>
-                  <p style={{ fontSize: "0.85rem", lineHeight: 1.6, color: "var(--ink-muted)", marginBottom: "0.75rem" }}>{p.desc}</p>
-                  <span style={{ fontSize: "0.7rem", fontWeight: 500, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--mustard-text)", fontFamily: "var(--U)" }}>Read essays <ArrowRight size={11} style={{ display: "inline", verticalAlign: "middle" }} /></span>
+                  <article
+                    style={{
+                      background: "var(--card)",
+                      padding: "var(--s-4)",
+                      border: "1px solid var(--border)",
+                      borderRadius: "var(--radius-sm)",
+                      height: "100%",
+                      display: "flex",
+                      flexDirection: "column",
+                      cursor: "pointer",
+                      transition: "all 0.2s",
+                    }}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.borderColor = "var(--mustard)";
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.borderColor = "var(--border)";
+                    }}
+                  >
+                    <div style={{ marginBottom: "12px" }}>
+                      <TrackChip pillarOrTrack={a.pillar} asLink={false} />
+                    </div>
+                    <h3
+                      style={{
+                        fontFamily: "var(--F)",
+                        fontSize: "22px",
+                        fontWeight: 500,
+                        letterSpacing: "-0.005em",
+                        lineHeight: 1.25,
+                        color: "var(--ink)",
+                        marginBottom: "12px",
+                        flex: 1,
+                      }}
+                    >
+                      {a.title}
+                    </h3>
+                    <div
+                      style={{
+                        fontFamily: "var(--U)",
+                        fontSize: "12px",
+                        color: "var(--ink-muted)",
+                      }}
+                    >
+                      {a.readingTimeMinutes ?? 5} min read
+                    </div>
+                  </article>
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* SEGMENTED SUBSCRIBE — the single most important conversion surface */}
+      <section
+        style={{
+          background: "var(--charcoal)",
+          padding: "var(--s-7) var(--s-4)",
+        }}
+      >
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+          <SegmentedSignup
+            variant="panel"
+            title="One essay a week. Pick your track."
+            description="New essays land Tuesday morning. Different lead essay depending on who you are. Skeptics get the questions taken seriously. Christians get depth. Pastors get the letter and the resources for the work."
+          />
+        </div>
+      </section>
+
+      {/* SECONDARY TRACKS — the rest of what Bell writes */}
+      <section
+        style={{
+          background: "var(--bone)",
+          padding: "var(--s-6) var(--s-4)",
+        }}
+      >
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <div className="eyebrow" style={{ marginBottom: "12px" }}>
+            Also Writing On
+          </div>
+          <h2
+            style={{
+              fontFamily: "var(--F)",
+              fontSize: "clamp(28px, 4vw, 38px)",
+              fontWeight: 400,
+              letterSpacing: "-0.015em",
+              color: "var(--ink)",
+              marginBottom: "var(--s-4)",
+              maxWidth: "32ch",
+            }}
+          >
+            Pastoring, marriage, parenting, prophetic justice, deep theology.
+          </h2>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+              gap: "16px",
+            }}
+          >
+            {PRIMARY_TRACKS.filter(t => !t.featured).map(track => (
+              <Link
+                key={track.slug}
+                href={trackUrl(track.slug)}
+                style={{ textDecoration: "none" }}
+              >
+                <div
+                  style={{
+                    padding: "20px",
+                    background: "var(--card)",
+                    border: "1px solid var(--border)",
+                    borderRadius: "var(--radius-sm)",
+                    height: "100%",
+                    transition: "all 0.2s",
+                    cursor: "pointer",
+                  }}
+                  onMouseEnter={e => {
+                    e.currentTarget.style.borderColor = "var(--mustard)";
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.borderColor = "var(--border)";
+                  }}
+                >
+                  <h3
+                    style={{
+                      fontFamily: "var(--F)",
+                      fontSize: "20px",
+                      fontWeight: 500,
+                      letterSpacing: "-0.005em",
+                      color: "var(--ink)",
+                      marginBottom: "8px",
+                    }}
+                  >
+                    {track.title}
+                  </h3>
+                  <p
+                    style={{
+                      fontFamily: "var(--B)",
+                      fontSize: "13px",
+                      lineHeight: 1.6,
+                      color: "var(--ink-muted)",
+                    }}
+                  >
+                    {track.description}
+                  </p>
                 </div>
               </Link>
             ))}
@@ -83,69 +559,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══ RECENT ESSAYS — show content immediately ═══ */}
-      <section style={{ background: "var(--bone-warm)", padding: "4rem 1.5rem" }}>
-        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "1.5rem", fontWeight: 400, color: "var(--ink)", marginBottom: "2rem" }}>Recent essays</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1.25rem" }}>
-            {recent.map((a: any, i: number) => (
-              <Link key={i} href={"/writing/" + a.slug} style={{ textDecoration: "none" }}>
-                <article style={{ background: "var(--card)", padding: "1.5rem", border: "1px solid var(--bone-muted)", borderRadius: "2px", height: "100%", display: "flex", flexDirection: "column", cursor: "pointer", transition: "all 240ms cubic-bezier(0.22,1,0.36,1)" }}
-                  onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 4px 16px rgba(20,17,12,0.06)"; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.transform = "none"; e.currentTarget.style.boxShadow = "none"; }}
-                >
-                  <div style={{ fontSize: "0.7rem", fontWeight: 500, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--mustard-text)", fontFamily: "var(--U)", marginBottom: "0.5rem" }}>{a.pillar || a.topic || "Essay"}</div>
-                  <h3 style={{ fontFamily: "var(--F)", fontSize: "1.1rem", fontWeight: 400, color: "var(--ink)", lineHeight: 1.3, flex: 1, marginBottom: "0.5rem" }}>{a.title}</h3>
-                  <div style={{ fontSize: "0.7rem", color: "var(--ink-muted)", fontFamily: "var(--U)" }}>{a.readTime || "5 min read"}</div>
-                </article>
-              </Link>
-            ))}
-          </div>
-          <div style={{ marginTop: "2rem", textAlign: "center" }}>
-            <Link href="/writing" style={{ fontFamily: "var(--U)", fontSize: "0.85rem", fontWeight: 500, color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.2rem" }}>
-              All 160+ essays <ArrowRight size={12} style={{ display: "inline", verticalAlign: "middle" }} />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══ SUBSCRIBE — one form, no noise ═══ */}
-      <section style={{ background: "var(--charcoal)", padding: "4rem 1.5rem" }}>
-        <div style={{ maxWidth: "520px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "1.5rem", fontWeight: 400, color: "var(--bone)", marginBottom: "0.75rem" }}>Weekly essay. Free.</h2>
-          <p style={{ fontSize: "0.875rem", color: "var(--bone)", opacity: 0.5, marginBottom: "1.5rem" }}>One essay a week on marriage, parenting, faith, or theology. No spam.</p>
-          {subscribed ? (
-            <p style={{ color: "var(--mustard)", fontWeight: 500, fontFamily: "var(--U)", fontSize: "0.875rem" }}>You are in. Check your inbox.</p>
-          ) : (
-            <form onSubmit={handleSubscribe} style={{ display: "flex", gap: "0", maxWidth: "380px", margin: "0 auto" }}>
-              <input type="email" placeholder="your@email.com" value={email} onChange={(e) => setEmail(e.target.value)} required
-                style={{ flex: 1, padding: "0.7rem 1rem", background: "transparent", border: "1px solid rgba(244,241,234,0.15)", borderRight: "none", color: "var(--bone)", fontSize: "0.85rem", fontFamily: "var(--U)", borderRadius: "2px 0 0 2px", outline: "none" }}
-              />
-              <button type="submit" style={{ padding: "0.7rem 1rem", background: "var(--bone)", color: "var(--charcoal)", border: "1px solid var(--bone)", fontFamily: "var(--U)", fontSize: "0.85rem", fontWeight: 500, cursor: "pointer", borderRadius: "0 2px 2px 0" }}>
-                Subscribe
-              </button>
-            </form>
-          )}
-        </div>
-      </section>
-
-      {/* ═══ ABOUT — two sentences, not a biography ═══ */}
-      <section style={{ background: "var(--bone)", padding: "4rem 1.5rem" }}>
-        <div style={{ maxWidth: "680px", margin: "0 auto", display: "flex", gap: "2rem", alignItems: "center", flexWrap: "wrap" }}>
-          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg" alt="James Bell" loading="lazy" style={{ width: "100px", height: "130px", objectFit: "cover", objectPosition: "center top", borderRadius: "2px", flexShrink: 0 }} />
-          <div style={{ flex: 1, minWidth: "240px" }}>
-            <p style={{ fontFamily: "var(--F)", fontSize: "1rem", lineHeight: 1.65, color: "var(--ink)", marginBottom: "0.75rem" }}>
-              James Bell. Lead Pastor. Author of 25 books. Came to faith from atheism. Father of five. Writing from where people fall apart and where they find their footing.
-            </p>
-            <Link href="/about" style={{ fontFamily: "var(--U)", fontSize: "0.8rem", fontWeight: 500, color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.15rem" }}>
-              Full story
-            </Link>
-          </div>
-        </div>
-      </section>
-
       <Footer />
-      <StickyMobileCTA />
     </div>
   );
 }

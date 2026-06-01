@@ -1,542 +1,618 @@
-import { trpc } from "@/lib/trpc";
-import { SEOMeta } from "@/components/SEOMeta";
-import { useState, useMemo } from "react";
-import { Clock, Search, X, ChevronDown, ArrowRight } from "lucide-react";
-import { Link } from "wouter";
+/**
+ * Writing — the essay index.
+ *
+ * Was the single biggest perf issue on the site: fetched the entire posts
+ * table including bodies on every visit. Now uses the slim
+ * `posts.listForIndex` endpoint (no body field) and reads filters from
+ * the URL so `/writing?track=after-christendom` actually filters.
+ *
+ * Palette honored throughout (no `#8B4545` etc.) — everything renders in
+ * charcoal / cream / mustard / ink / stone via design tokens.
+ */
+import { useEffect, useMemo, useState } from "react";
+import { Link, useLocation } from "wouter";
+import { Search, SlidersHorizontal, X } from "lucide-react";
 
-const TOPIC_COLORS: Record<string, string> = {
-  "theology": "var(--ink)",
-  "justice": "#8B4545",
-  "pastoral-ministry": "#6B8E6F",
-  "marriage": "var(--gold)",
-  "parenting": "#9B8BA8",
-  "finances": "#6B9B8B",
-  "devotionals": "#8B9B6F",
+import Layout from "@/components/Layout";
+import { SEOMeta } from "@/components/SEOMeta";
+import { TrackChip } from "@/components/TrackChip";
+import { trpc } from "@/lib/trpc";
+import { PRIMARY_TRACKS, pillarToTrack, resolveTrack } from "@/lib/taxonomy";
+
+const AUDIENCE_LABELS: Record<string, string> = {
+  individuals: "Anyone",
+  pastors: "Pastors",
+  "church-leaders": "Church leaders",
+  couples: "Couples",
+  "small-groups": "Small groups",
 };
 
 const FORMAT_LABELS: Record<string, string> = {
-  "article": "Article",
-  "book-chapter": "Book Chapter",
-  "study-guide": "Study Guide",
-  "sermon-series": "Sermon Series",
-  "devotional": "Devotional",
-  "podcast": "Podcast",
+  article: "Essay",
+  "book-chapter": "Book chapter",
+  "study-guide": "Study guide",
+  "sermon-series": "Sermon",
+  devotional: "Devotional",
+  podcast: "Podcast",
 };
 
-const AUDIENCE_LABELS: Record<string, string> = {
-  "pastors": "For Pastors",
-  "leaders": "For Leaders",
-  "families": "For Families",
-  "couples": "For Couples",
-  "seekers": "For Seekers",
-  "small-groups": "For Small Groups",
-  "everyone": "For Everyone",
-};
-
-const DIFFICULTY_LABELS: Record<string, string> = {
-  "beginner": "Beginner",
-  "intermediate": "Intermediate",
-  "advanced": "Advanced",
-};
+function parseSearchParams(): URLSearchParams {
+  if (typeof window === "undefined") return new URLSearchParams();
+  return new URLSearchParams(window.location.search);
+}
 
 export default function Writing() {
-  const postsQuery = trpc.posts.listPublished.useQuery();
-  const [searchTerm, setSearchTerm] = useState("");
-  const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
-  const [selectedFormats, setSelectedFormats] = useState<string[]>([]);
-  const [selectedAudiences, setSelectedAudiences] = useState<string[]>([]);
-  const [selectedDifficulty, setSelectedDifficulty] = useState<string[]>([]);
+  const [location] = useLocation();
+  const postsQuery = trpc.posts.listForIndex.useQuery();
+  const [search, setSearch] = useState("");
   const [showFilters, setShowFilters] = useState(false);
 
-  // Get unique values from data
-  const topics = useMemo(() => {
-    const unique = new Set(postsQuery.data?.map((p) => p.topic || p.pillar).filter(Boolean) || []);
-    return Array.from(unique) as string[];
-  }, [postsQuery.data]);
+  // URL-driven filter state. Reads ?track=, ?audience=, ?format=, ?q=
+  const [params, setParams] = useState(() => parseSearchParams());
+  useEffect(() => {
+    setParams(parseSearchParams());
+  }, [location]);
 
-  const formats = useMemo(() => {
-    const unique = new Set(postsQuery.data?.map((p) => p.format).filter(Boolean) || []);
-    return Array.from(unique) as string[];
-  }, [postsQuery.data]);
+  const activeTrack = params.get("track");
+  const activeAudience = params.get("audience");
+  const activeFormat = params.get("format");
+  const urlSearch = params.get("q") ?? "";
+  const effectiveSearch = search || urlSearch;
 
-  const audiences = useMemo(() => {
-    const unique = new Set(postsQuery.data?.map((p) => p.audience).filter(Boolean) || []);
-    return Array.from(unique) as string[];
-  }, [postsQuery.data]);
+  const posts = postsQuery.data ?? [];
 
-  const difficulties = useMemo(() => {
-    const unique = new Set(postsQuery.data?.map((p) => p.difficulty).filter(Boolean) || []);
-    return Array.from(unique) as string[];
-  }, [postsQuery.data]);
-
-  const filteredPosts = useMemo(() => {
-    if (!postsQuery.data) return [];
-    return postsQuery.data.filter((post) => {
-      const matchesSearch =
-        post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        post.excerpt?.toLowerCase().includes(searchTerm.toLowerCase());
-      const postTopic = post.topic || post.pillar || "";
-      const matchesTopic = selectedTopics.length === 0 || selectedTopics.includes(postTopic);
-      const matchesFormat = selectedFormats.length === 0 || (post.format && selectedFormats.includes(post.format));
-      const matchesAudience = selectedAudiences.length === 0 || (post.audience && selectedAudiences.includes(post.audience));
-      const matchesDifficulty = selectedDifficulty.length === 0 || (post.difficulty && selectedDifficulty.includes(post.difficulty));
-      return matchesSearch && matchesTopic && matchesFormat && matchesAudience && matchesDifficulty;
+  const filtered = useMemo(() => {
+    return posts.filter(p => {
+      // Track
+      if (activeTrack) {
+        const track = pillarToTrack(p.pillar);
+        if (track !== activeTrack) return false;
+      }
+      // Audience
+      if (activeAudience && p.audience !== activeAudience) return false;
+      // Format
+      if (activeFormat && p.format !== activeFormat) return false;
+      // Search (title + excerpt)
+      if (effectiveSearch) {
+        const term = effectiveSearch.toLowerCase();
+        const titleMatch = p.title.toLowerCase().includes(term);
+        const excerptMatch = (p.excerpt ?? "").toLowerCase().includes(term);
+        if (!titleMatch && !excerptMatch) return false;
+      }
+      return true;
     });
-  }, [postsQuery.data, searchTerm, selectedTopics, selectedFormats, selectedAudiences, selectedDifficulty]);
+  }, [posts, activeTrack, activeAudience, activeFormat, effectiveSearch]);
 
-  const hasActiveFilters = selectedTopics.length > 0 || selectedFormats.length > 0 || selectedAudiences.length > 0 || selectedDifficulty.length > 0;
+  const featured = useMemo(
+    () => filtered.filter(p => p.featured).slice(0, 1)[0],
+    [filtered]
+  );
+  const rest = useMemo(
+    () => filtered.filter(p => !p.featured || p.id !== featured?.id),
+    [filtered, featured]
+  );
 
-  const toggleTopic = (topic: string) => {
-    setSelectedTopics((prev) =>
-      prev.includes(topic) ? prev.filter((t) => t !== topic) : [...prev, topic]
-    );
-  };
-
-  const toggleFormat = (format: string) => {
-    setSelectedFormats((prev) =>
-      prev.includes(format) ? prev.filter((f) => f !== format) : [...prev, format]
-    );
-  };
-
-  const toggleAudience = (audience: string) => {
-    setSelectedAudiences((prev) =>
-      prev.includes(audience) ? prev.filter((a) => a !== audience) : [...prev, audience]
-    );
-  };
-
-  const toggleDifficulty = (difficulty: string) => {
-    setSelectedDifficulty((prev) =>
-      prev.includes(difficulty) ? prev.filter((d) => d !== difficulty) : [...prev, difficulty]
-    );
-  };
-
-  const clearFilters = () => {
-    setSearchTerm("");
-    setSelectedTopics([]);
-    setSelectedFormats([]);
-    setSelectedAudiences([]);
-    setSelectedDifficulty([]);
-  };
+  const activeTrackInfo = activeTrack ? resolveTrack(activeTrack) : null;
 
   return (
-    <>
+    <Layout>
       <SEOMeta
-        title="Writing on Theology, Doubt, and the Weight of Everyday Life"
-        description="160+ essays for the skeptic tired of bad arguments, the Christian past slogans, the pastor burning out in silence, and anyone trying to live well. By James Bell."
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "CollectionPage",
-          name: "Writing by James Bell",
-          description: "160+ essays on faith, theology, marriage, justice, and pastoral ministry.",
-          url: "https://www.livewellbyjamesbell.co/writing",
-        }}
+        title={
+          activeTrackInfo
+            ? `${activeTrackInfo.title} — Writing`
+            : "Writing — All essays"
+        }
+        description={
+          activeTrackInfo?.description ??
+          "Every essay by James Bell — on theology, politics, the American church after Christendom, pastoring, marriage, and parenting."
+        }
+        url={`https://www.livewellbyjamesbell.co${location}`}
       />
-      <div>
-        {/* HERO SECTION */}
-        <section className="hero">
-          <div className="hero__inner" style={{ gridTemplateColumns: "1fr" }}>
-            <div>
-              <div className="kicker">
-                <div className="kicker-line"></div>
-                <div className="kicker-txt">ESSAYS & ARTICLES</div>
-              </div>
-              <h1 className="hero-h">
-                Writing
-              </h1>
-              <p className="hero-sub">
-                {filteredPosts.length}+ essays. Theology that carries weight, not slogans that crumble. Find what you need by topic, audience, or reading time.
-              </p>
-            </div>
+
+      {/* HERO */}
+      <section
+        style={{
+          background: "var(--charcoal)",
+          padding: "var(--s-6) var(--s-4) var(--s-5)",
+          color: "var(--bone)",
+        }}
+      >
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <div
+            className="eyebrow"
+            style={{ marginBottom: "16px", color: "var(--mustard)" }}
+          >
+            Writing
           </div>
-        </section>
+          <h1
+            style={{
+              fontFamily: "var(--F)",
+              fontSize: "clamp(36px, 5vw, 56px)",
+              fontWeight: 400,
+              lineHeight: 1.05,
+              letterSpacing: "-0.025em",
+              marginBottom: "16px",
+              maxWidth: "22ch",
+            }}
+          >
+            {activeTrackInfo
+              ? activeTrackInfo.title
+              : "Every essay, in one place."}
+          </h1>
+          <p
+            style={{
+              fontFamily: "var(--B)",
+              fontSize: "17px",
+              lineHeight: 1.7,
+              color: "rgba(245,240,230,0.75)",
+              maxWidth: "62ch",
+            }}
+          >
+            {activeTrackInfo
+              ? activeTrackInfo.description
+              : "Theology, politics, the American church after Christendom. Pastoring, marriage, parenting, prophetic justice, doubt. Sorted newest first."}
+          </p>
+          <div
+            style={{
+              marginTop: "20px",
+              fontFamily: "var(--U)",
+              fontSize: "13px",
+              color: "rgba(245,240,230,0.55)",
+            }}
+          >
+            {postsQuery.isLoading
+              ? "Loading…"
+              : `${filtered.length} of ${posts.length} essays shown`}
+          </div>
+        </div>
+      </section>
 
-        {/* SEARCH & FILTERS SECTION */}
-        <section style={{ background: "var(--paper)", padding: "40px 0", borderBottom: "1px solid var(--border)" }}>
-          <div className="wrap">
-            {/* Search Bar */}
-            <div style={{ marginBottom: "24px" }}>
-              <div style={{ position: "relative" }}>
-                <Search
-                  size={20}
-                  style={{
-                    position: "absolute",
-                    left: "12px",
-                    top: "50%",
-                    transform: "translateY(-50%)",
-                    color: "var(--ink3)"
-                  }}
-                />
-                <input
-                  type="text"
-                  placeholder="Search articles..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  style={{
-                    width: "100%",
-                    paddingLeft: "40px",
-                    paddingRight: "16px",
-                    paddingTop: "12px",
-                    paddingBottom: "12px",
-                    border: "1px solid var(--border)",
-                    background: "white",
-                    color: "var(--ink)",
-                    fontSize: "15px",
-                    outline: "none",
-                    transition: "border-color 0.2s"
-                  }}
-                  onFocus={(e) => (e.currentTarget.style.borderColor = "var(--gold)")}
-                  onBlur={(e) => (e.currentTarget.style.borderColor = "var(--border)")}
-                />
-              </div>
-            </div>
+      {/* TRACK CHIPS */}
+      <section
+        style={{
+          background: "var(--bone)",
+          padding: "var(--s-4) var(--s-4) 0",
+          borderBottom: "1px solid var(--border)",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "var(--w-default)",
+            margin: "0 auto",
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "8px",
+            alignItems: "center",
+          }}
+        >
+          <Link
+            href="/writing"
+            style={{
+              fontFamily: "var(--U)",
+              fontSize: "12px",
+              fontWeight: 600,
+              letterSpacing: "0.08em",
+              textTransform: "uppercase",
+              padding: "8px 14px",
+              borderRadius: "999px",
+              border: `1px solid ${!activeTrack ? "var(--mustard)" : "var(--border)"}`,
+              background: !activeTrack ? "var(--bone-warm)" : "transparent",
+              color: "var(--ink)",
+              textDecoration: "none",
+            }}
+          >
+            All
+          </Link>
+          {PRIMARY_TRACKS.map(t => (
+            <Link
+              key={t.slug}
+              href={`/writing?track=${t.slug}`}
+              style={{
+                fontFamily: "var(--U)",
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                padding: "8px 14px",
+                borderRadius: "999px",
+                border: `1px solid ${activeTrack === t.slug ? "var(--mustard)" : "var(--border)"}`,
+                background:
+                  activeTrack === t.slug ? "var(--bone-warm)" : "transparent",
+                color: "var(--ink)",
+                textDecoration: "none",
+              }}
+            >
+              {t.kicker}
+            </Link>
+          ))}
+        </div>
+      </section>
 
-            {/* Filter Toggle & Results */}
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "16px" }}>
+      {/* SEARCH + FILTER TOGGLE */}
+      <section
+        style={{
+          background: "var(--bone)",
+          padding: "var(--s-3) var(--s-4)",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "var(--w-default)",
+            margin: "0 auto",
+            display: "flex",
+            gap: "12px",
+            alignItems: "center",
+            flexWrap: "wrap",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
+              background: "var(--card)",
+              border: "1px solid var(--border)",
+              borderRadius: "var(--radius-sm)",
+              padding: "10px 14px",
+              flex: "1 1 280px",
+            }}
+          >
+            <Search size={14} aria-hidden style={{ color: "var(--ink-muted)" }} />
+            <input
+              type="search"
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+              placeholder="Search the writing…"
+              aria-label="Search the essays"
+              style={{
+                flex: 1,
+                border: "none",
+                outline: "none",
+                background: "transparent",
+                fontFamily: "var(--B)",
+                fontSize: "14px",
+                color: "var(--ink)",
+              }}
+            />
+            {search && (
               <button
-                onClick={() => setShowFilters(!showFilters)}
+                type="button"
+                onClick={() => setSearch("")}
+                aria-label="Clear search"
                 style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "8px",
                   background: "none",
                   border: "none",
                   cursor: "pointer",
-                  fontWeight: "600",
-                  fontSize: "14px",
-                  color: "var(--ink)",
-                  padding: "0"
+                  color: "var(--ink-muted)",
+                  padding: 0,
                 }}
               >
-                <ChevronDown
-                  size={18}
-                  style={{
-                    transition: "transform 0.25s",
-                    transform: showFilters ? "rotate(180deg)" : "rotate(0deg)"
-                  }}
-                />
-                Filters
+                <X size={14} aria-hidden />
               </button>
-              <p style={{ fontSize: "14px", color: "var(--ink3)" }}>
-                {filteredPosts.length} {filteredPosts.length === 1 ? "article" : "articles"}
-              </p>
-            </div>
-
-            {/* Filters */}
-            {showFilters && (
-              <div style={{ paddingTop: "16px", borderTop: "1px solid var(--border)" }}>
-                {/* Topics */}
-                {topics.length > 0 && (
-                  <div style={{ marginBottom: "24px" }}>
-                    <h3 style={{
-                      fontWeight: "600",
-                      color: "var(--ink)",
-                      marginBottom: "12px",
-                      fontSize: "12px",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.1em"
-                    }}>
-                      By Topic
-                    </h3>
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                      {topics.map((topic) => (
-                        <button
-                          key={topic}
-                          onClick={() => toggleTopic(topic)}
-                          style={{
-                            padding: "6px 12px",
-                            fontSize: "12px",
-                            fontWeight: "600",
-                            textTransform: "uppercase",
-                            letterSpacing: "0.05em",
-                            border: "1px solid var(--border)",
-                            background: selectedTopics.includes(topic) ? "var(--ink)" : "white",
-                            color: selectedTopics.includes(topic) ? "white" : "var(--ink)",
-                            cursor: "pointer",
-                            transition: "all 0.2s",
-                            borderRadius: "2px"
-                          }}
-                          onMouseEnter={(e) => {
-                            if (!selectedTopics.includes(topic)) {
-                              e.currentTarget.style.background = "var(--cream)";
-                            }
-                          }}
-                          onMouseLeave={(e) => {
-                            if (!selectedTopics.includes(topic)) {
-                              e.currentTarget.style.background = "white";
-                            }
-                          }}
-                        >
-                          {topic.replace(/-/g, " ")}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Formats */}
-                {formats.length > 0 && (
-                  <div style={{ marginBottom: "24px" }}>
-                    <h3 style={{
-                      fontWeight: "600",
-                      color: "var(--ink)",
-                      marginBottom: "12px",
-                      fontSize: "12px",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.1em"
-                    }}>
-                      By Format
-                    </h3>
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                      {formats.map((format) => (
-                        <button
-                          key={format}
-                          onClick={() => toggleFormat(format)}
-                          style={{
-                            padding: "6px 12px",
-                            fontSize: "12px",
-                            fontWeight: "600",
-                            textTransform: "uppercase",
-                            letterSpacing: "0.05em",
-                            border: "1px solid var(--border)",
-                            background: selectedFormats.includes(format) ? "var(--ink)" : "white",
-                            color: selectedFormats.includes(format) ? "white" : "var(--ink)",
-                            cursor: "pointer",
-                            transition: "all 0.2s",
-                            borderRadius: "2px"
-                          }}
-                          onMouseEnter={(e) => {
-                            if (!selectedFormats.includes(format)) {
-                              e.currentTarget.style.background = "var(--cream)";
-                            }
-                          }}
-                          onMouseLeave={(e) => {
-                            if (!selectedFormats.includes(format)) {
-                              e.currentTarget.style.background = "white";
-                            }
-                          }}
-                        >
-                          {FORMAT_LABELS[format] || format}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Audiences */}
-                {audiences.length > 0 && (
-                  <div style={{ marginBottom: "24px" }}>
-                    <h3 style={{
-                      fontWeight: "600",
-                      color: "var(--ink)",
-                      marginBottom: "12px",
-                      fontSize: "12px",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.1em"
-                    }}>
-                      For Whom
-                    </h3>
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                      {audiences.map((audience) => (
-                        <button
-                          key={audience}
-                          onClick={() => toggleAudience(audience)}
-                          style={{
-                            padding: "6px 12px",
-                            fontSize: "12px",
-                            fontWeight: "600",
-                            textTransform: "uppercase",
-                            letterSpacing: "0.05em",
-                            border: "1px solid var(--border)",
-                            background: selectedAudiences.includes(audience) ? "var(--ink)" : "white",
-                            color: selectedAudiences.includes(audience) ? "white" : "var(--ink)",
-                            cursor: "pointer",
-                            transition: "all 0.2s",
-                            borderRadius: "2px"
-                          }}
-                          onMouseEnter={(e) => {
-                            if (!selectedAudiences.includes(audience)) {
-                              e.currentTarget.style.background = "var(--cream)";
-                            }
-                          }}
-                          onMouseLeave={(e) => {
-                            if (!selectedAudiences.includes(audience)) {
-                              e.currentTarget.style.background = "white";
-                            }
-                          }}
-                        >
-                          {AUDIENCE_LABELS[audience] || audience}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Difficulty */}
-                {difficulties.length > 0 && (
-                  <div style={{ marginBottom: "24px" }}>
-                    <h3 style={{
-                      fontWeight: "600",
-                      color: "var(--ink)",
-                      marginBottom: "12px",
-                      fontSize: "12px",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.1em"
-                    }}>
-                      Difficulty
-                    </h3>
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                      {difficulties.map((difficulty) => (
-                        <button
-                          key={difficulty}
-                          onClick={() => toggleDifficulty(difficulty)}
-                          style={{
-                            padding: "6px 12px",
-                            fontSize: "12px",
-                            fontWeight: "600",
-                            textTransform: "uppercase",
-                            letterSpacing: "0.05em",
-                            border: "1px solid var(--border)",
-                            background: selectedDifficulty.includes(difficulty) ? "var(--ink)" : "white",
-                            color: selectedDifficulty.includes(difficulty) ? "white" : "var(--ink)",
-                            cursor: "pointer",
-                            transition: "all 0.2s",
-                            borderRadius: "2px"
-                          }}
-                          onMouseEnter={(e) => {
-                            if (!selectedDifficulty.includes(difficulty)) {
-                              e.currentTarget.style.background = "var(--cream)";
-                            }
-                          }}
-                          onMouseLeave={(e) => {
-                            if (!selectedDifficulty.includes(difficulty)) {
-                              e.currentTarget.style.background = "white";
-                            }
-                          }}
-                        >
-                          {DIFFICULTY_LABELS[difficulty] || difficulty}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Clear Filters */}
-                {hasActiveFilters && (
-                  <button
-                    onClick={clearFilters}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "8px",
-                      color: "var(--gold)",
-                      fontWeight: "600",
-                      fontSize: "14px",
-                      background: "none",
-                      border: "none",
-                      cursor: "pointer",
-                      padding: "0"
-                    }}
-                  >
-                    <X size={16} />
-                    Clear All Filters
-                  </button>
-                )}
-              </div>
             )}
           </div>
-        </section>
+          <button
+            type="button"
+            onClick={() => setShowFilters(s => !s)}
+            aria-expanded={showFilters}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "8px",
+              background: "transparent",
+              border: "1px solid var(--border)",
+              borderRadius: "var(--radius-sm)",
+              padding: "10px 16px",
+              fontFamily: "var(--U)",
+              fontSize: "13px",
+              fontWeight: 600,
+              color: "var(--ink)",
+              cursor: "pointer",
+            }}
+          >
+            <SlidersHorizontal size={14} aria-hidden />
+            More filters
+          </button>
+        </div>
 
-        {/* ARTICLES GRID */}
-        <section className="section">
-          <div className="wrap">
-            {filteredPosts.length > 0 ? (
-              <div className="grid grid-3">
-                {filteredPosts.map((post: any) => (
-                  <Link key={post.id} href={`/writing/${post.slug}`}>
-                    <div className="card">
-                      {/* Article Card */}
-                      <div
-                        className="card-body"
-                        style={{
-                          borderLeft: `4px solid ${TOPIC_COLORS[post.topic] || "var(--gold)"}`,
-                          display: "flex",
-                          flexDirection: "column",
-                          height: "100%"
-                        }}
-                      >
-                        {/* Topic Badge */}
-                        {post.topic && (
-                          <div
-                            className="card-cat"
-                            style={{
-                              background: TOPIC_COLORS[post.topic] || "var(--gold)",
-                              color: "white",
-                              display: "inline-block",
-                              marginBottom: "12px"
-                            }}
-                          >
-                            {post.topic.replace(/-/g, " ")}
-                          </div>
-                        )}
+        {/* Sub-filters: audience + format */}
+        {showFilters && (
+          <div
+            style={{
+              maxWidth: "var(--w-default)",
+              margin: "var(--s-3) auto 0",
+              padding: "16px",
+              background: "var(--card)",
+              border: "1px solid var(--border)",
+              borderRadius: "var(--radius-sm)",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                gap: "24px",
+                flexWrap: "wrap",
+              }}
+            >
+              <FilterColumn
+                label="Audience"
+                items={Object.entries(AUDIENCE_LABELS)}
+                active={activeAudience}
+                paramKey="audience"
+                location={location}
+              />
+              <FilterColumn
+                label="Format"
+                items={Object.entries(FORMAT_LABELS)}
+                active={activeFormat}
+                paramKey="format"
+                location={location}
+              />
+            </div>
+          </div>
+        )}
+      </section>
 
-                        {/* Title */}
-                        <h3 className="card-title" style={{ flex: "1" }}>
-                          {post.title}
-                        </h3>
-
-                        {/* Excerpt */}
-                        <p className="card-desc" style={{ flex: "1" }}>
-                          {post.excerpt || post.body.substring(0, 150)}...
-                        </p>
-
-                        {/* Meta */}
-                        <div className="card-meta" style={{ paddingTop: "12px", borderTop: "1px solid var(--border)" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                            <Clock size={14} />
-                            <span>{post.readingTimeMinutes || 5} min</span>
-                          </div>
-                          {post.difficulty && (
-                            <span style={{ fontSize: "11px", textTransform: "uppercase", fontWeight: "600", letterSpacing: "0.05em" }}>
-                              {DIFFICULTY_LABELS[post.difficulty] || post.difficulty}
-                            </span>
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            ) : (
-              <div style={{ textAlign: "center", paddingTop: "60px", paddingBottom: "60px" }}>
-                <p style={{ fontFamily: "var(--F)", fontSize: "1.25rem", fontStyle: "italic", color: "var(--ink)", marginBottom: "8px" }}>
-                  Nothing here yet.
-                </p>
-                <p style={{ fontSize: "0.875rem", color: "var(--ink-muted)", marginBottom: "24px" }}>
-                  But it is on the list. Clear the filters or subscribe to the writing — you will be first to know when it lands.
-                </p>
-                <button
-                  onClick={clearFilters}
+      {/* FEATURED */}
+      {featured && (
+        <section
+          style={{
+            background: "var(--bone)",
+            padding: "var(--s-5) var(--s-4) 0",
+          }}
+        >
+          <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+            <Link
+              href={`/writing/${featured.slug}`}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <article
+                style={{
+                  background: "var(--card)",
+                  border: "1px solid var(--border)",
+                  borderTop: "2px solid var(--mustard)",
+                  borderRadius: "var(--radius-sm)",
+                  padding: "var(--s-5)",
+                  cursor: "pointer",
+                  display: "grid",
+                  gridTemplateColumns: "1fr",
+                  gap: "16px",
+                  transition: "all 0.2s",
+                }}
+              >
+                <div style={{ marginBottom: 0 }}>
+                  <TrackChip pillarOrTrack={featured.pillar} asLink={false} />
+                </div>
+                <h2
                   style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    color: "var(--gold)",
-                    fontWeight: "600",
-                    fontSize: "14px",
-                    background: "none",
-                    border: "none",
-                    cursor: "pointer",
-                    padding: "0"
+                    fontFamily: "var(--F)",
+                    fontSize: "clamp(28px, 4vw, 40px)",
+                    fontWeight: 400,
+                    letterSpacing: "-0.02em",
+                    lineHeight: 1.15,
+                    color: "var(--ink)",
                   }}
                 >
-                  Clear Filters
-                  <ArrowRight size={16} />
-                </button>
-              </div>
-            )}
+                  {featured.title}
+                </h2>
+                {featured.excerpt && (
+                  <p
+                    style={{
+                      fontFamily: "var(--F)",
+                      fontSize: "19px",
+                      fontStyle: "italic",
+                      lineHeight: 1.55,
+                      color: "var(--ink-muted)",
+                      maxWidth: "62ch",
+                    }}
+                  >
+                    {featured.excerpt}
+                  </p>
+                )}
+                <div
+                  style={{
+                    fontFamily: "var(--U)",
+                    fontSize: "12px",
+                    color: "var(--ink-muted)",
+                  }}
+                >
+                  {featured.readingTimeMinutes ?? 5} min read
+                </div>
+              </article>
+            </Link>
           </div>
         </section>
+      )}
+
+      {/* INDEX */}
+      <section
+        style={{
+          background: "var(--bone)",
+          padding: "var(--s-5) var(--s-4) var(--s-7)",
+        }}
+      >
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          {postsQuery.isLoading && (
+            <p
+              style={{
+                fontFamily: "var(--U)",
+                color: "var(--ink-muted)",
+                textAlign: "center",
+                padding: "var(--s-6) 0",
+              }}
+            >
+              Loading the writing…
+            </p>
+          )}
+
+          {!postsQuery.isLoading && rest.length === 0 && (
+            <p
+              style={{
+                fontFamily: "var(--B)",
+                color: "var(--ink-muted)",
+                textAlign: "center",
+                padding: "var(--s-6) 0",
+              }}
+            >
+              No essays match. Try a different filter.
+            </p>
+          )}
+
+          {rest.length > 0 && (
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+                gap: "24px",
+              }}
+            >
+              {rest.map(post => (
+                <Link
+                  key={post.id}
+                  href={`/writing/${post.slug}`}
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  <article
+                    style={{
+                      background: "var(--card)",
+                      border: "1px solid var(--border)",
+                      borderRadius: "var(--radius-sm)",
+                      padding: "var(--s-4)",
+                      height: "100%",
+                      display: "flex",
+                      flexDirection: "column",
+                      cursor: "pointer",
+                      transition: "border-color 0.2s",
+                    }}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.borderColor = "var(--mustard)";
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.borderColor = "var(--border)";
+                    }}
+                  >
+                    <div style={{ marginBottom: "12px" }}>
+                      <TrackChip pillarOrTrack={post.pillar} asLink={false} />
+                    </div>
+                    <h3
+                      style={{
+                        fontFamily: "var(--F)",
+                        fontSize: "22px",
+                        fontWeight: 500,
+                        letterSpacing: "-0.005em",
+                        lineHeight: 1.25,
+                        color: "var(--ink)",
+                        marginBottom: "12px",
+                      }}
+                    >
+                      {post.title}
+                    </h3>
+                    {post.excerpt && (
+                      <p
+                        style={{
+                          fontFamily: "var(--B)",
+                          fontSize: "14px",
+                          lineHeight: 1.6,
+                          color: "var(--ink-muted)",
+                          marginBottom: "16px",
+                          flex: 1,
+                        }}
+                      >
+                        {post.excerpt.slice(0, 140)}
+                        {post.excerpt.length > 140 ? "…" : ""}
+                      </p>
+                    )}
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        fontFamily: "var(--U)",
+                        fontSize: "12px",
+                        color: "var(--ink-muted)",
+                      }}
+                    >
+                      <span>{post.readingTimeMinutes ?? 5} min read</span>
+                      {post.format && post.format !== "article" && (
+                        <span>{FORMAT_LABELS[post.format] ?? post.format}</span>
+                      )}
+                    </div>
+                  </article>
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+    </Layout>
+  );
+}
+
+function FilterColumn({
+  label,
+  items,
+  active,
+  paramKey,
+  location,
+}: {
+  label: string;
+  items: [string, string][];
+  active: string | null;
+  paramKey: string;
+  location: string;
+}) {
+  const buildUrl = (val: string | null) => {
+    const params = new URLSearchParams(
+      typeof window !== "undefined" ? window.location.search : ""
+    );
+    if (val) params.set(paramKey, val);
+    else params.delete(paramKey);
+    const qs = params.toString();
+    const base = location.split("?")[0];
+    return qs ? `${base}?${qs}` : base;
+  };
+
+  return (
+    <div style={{ minWidth: "200px" }}>
+      <div className="eyebrow" style={{ marginBottom: "8px" }}>
+        {label}
       </div>
-    </>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
+        <Link
+          href={buildUrl(null)}
+          style={{
+            fontFamily: "var(--U)",
+            fontSize: "11px",
+            fontWeight: 600,
+            padding: "5px 10px",
+            borderRadius: "999px",
+            border: `1px solid ${active === null ? "var(--mustard)" : "var(--border)"}`,
+            background: active === null ? "var(--bone-warm)" : "transparent",
+            color: "var(--ink)",
+            textDecoration: "none",
+          }}
+        >
+          All
+        </Link>
+        {items.map(([value, lbl]) => (
+          <Link
+            key={value}
+            href={buildUrl(value)}
+            style={{
+              fontFamily: "var(--U)",
+              fontSize: "11px",
+              fontWeight: 600,
+              padding: "5px 10px",
+              borderRadius: "999px",
+              border: `1px solid ${active === value ? "var(--mustard)" : "var(--border)"}`,
+              background: active === value ? "var(--bone-warm)" : "transparent",
+              color: "var(--ink)",
+              textDecoration: "none",
+            }}
+          >
+            {lbl}
+          </Link>
+        ))}
+      </div>
+    </div>
   );
 }

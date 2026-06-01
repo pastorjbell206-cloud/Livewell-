@@ -1413,6 +1413,78 @@ async function contactForm(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+// ---------------------------------------------------------------------------
+// LiveWell RSS feed at /api/rss.xml (the rewrite below also catches /rss.xml).
+// Returns RSS 2.0 with full <content:encoded> CDATA bodies — the elite cut for
+// feed readers like Feedly, NetNewsWire, etc.
+// ---------------------------------------------------------------------------
+function escapeXml(s: string): string {
+  return String(s ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
+async function rssLiveWell(_req: VercelRequest, res: VercelResponse) {
+  const SITE_URL = "https://www.livewellbyjamesbell.co";
+  const SITE_NAME = "LiveWell by James Bell";
+  const DESC = "Theology that carries the weight of everyday life. Essays on faith, justice, marriage, parenting, and pastoral ministry by James Bell.";
+  try {
+    const rows: any[] = await withConn(async (c) => {
+      const [posts]: any = await c.query(
+        `SELECT slug, title, excerpt, body, coverImage, publishedAt, updatedAt
+           FROM posts
+          WHERE published = true
+          ORDER BY publishedAt DESC, updatedAt DESC
+          LIMIT 50`
+      );
+      return Array.isArray(posts) ? posts : [];
+    });
+    const buildDate = new Date().toUTCString();
+    const items = rows
+      .map((p) => {
+        const url = `${SITE_URL}/writing/${p.slug}`;
+        const pubDate = (p.publishedAt ? new Date(p.publishedAt) : new Date(p.updatedAt || Date.now())).toUTCString();
+        const excerpt = p.excerpt || (p.body || "").slice(0, 280);
+        return `    <item>
+      <title>${escapeXml(p.title)}</title>
+      <link>${escapeXml(url)}</link>
+      <guid isPermaLink="true">${escapeXml(url)}</guid>
+      <pubDate>${pubDate}</pubDate>
+      <description>${escapeXml(excerpt)}</description>
+      <content:encoded><![CDATA[${p.body || ""}]]></content:encoded>
+      <dc:creator>James Bell</dc:creator>
+    </item>`;
+      })
+      .join("\n");
+
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>${escapeXml(SITE_NAME)}</title>
+    <link>${SITE_URL}</link>
+    <description>${escapeXml(DESC)}</description>
+    <language>en-us</language>
+    <lastBuildDate>${buildDate}</lastBuildDate>
+    <atom:link href="${SITE_URL}/rss.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>Pastorjbell206@gmail.com (James Bell)</managingEditor>
+${items}
+  </channel>
+</rss>`;
+    res.setHeader("Content-Type", "application/rss+xml; charset=utf-8");
+    res.setHeader("Cache-Control", "public, max-age=300, s-maxage=600");
+    res.status(200).send(xml);
+  } catch (e: any) {
+    res.setHeader("Content-Type", "application/xml; charset=utf-8");
+    res.status(500).send(`<?xml version="1.0"?><error>${escapeXml(String(e?.message || e))}</error>`);
+  }
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   applyCors(req, res);
   if (req.method === "OPTIONS") {
@@ -1424,6 +1496,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/auth/me") return authMe(req, res);
     if (url === "/api/auth/logout") return authLogout(req, res);
     if (url === "/api/health" || url.startsWith("/api/health")) return health(req, res);
+    if (url === "/api/rss.xml" || url === "/rss.xml" || url === "/feed" || url === "/feed.xml") return rssLiveWell(req, res);
     if (url === "/api/admin/status") return adminStatus(req, res);
     if (url === "/api/admin/organize-articles") return organizeArticles(req, res);
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);

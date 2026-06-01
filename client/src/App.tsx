@@ -18,8 +18,12 @@ import About from "./pages/About";
 const Resources = lazy(() => import("./pages/Resources"));
 const SubstackPage = lazy(() => import("./pages/Substack"));
 const Pastors = lazy(() => import("./pages/Pastors"));
-const Tools = lazy(() => import("./pages/Tools"));
 const FileStorage = lazy(() => import("./pages/FileStorage"));
+const SkepticTrack = lazy(() => import("./pages/SkepticTrack"));
+const PastorsResourceWall = lazy(() => import("./pages/PastorsResourceWall"));
+const RoadMap = lazy(() => import("./pages/RoadMap"));
+const Library = lazy(() => import("./pages/Library"));
+const Diagnostic = lazy(() => import("./pages/Diagnostic"));
 const BooksStore = lazy(() => import("./pages/BooksStore"));
 const SearchPage = lazy(() => import("./pages/Search"));
 const TheologyQuiz = lazy(() => import("./pages/TheologyQuiz"));
@@ -144,6 +148,11 @@ function Router() {
         <Route path="/books-store" component={BooksStore} />
         <Route path="/search" component={SearchPage} />
         <Route path="/quiz" component={TheologyQuiz} />
+        <Route path="/skeptic-track" component={SkepticTrack} />
+        <Route path="/pastors-resource-wall" component={PastorsResourceWall} />
+        <Route path="/roadmap" component={RoadMap} />
+        <Route path="/library" component={Library} />
+        <Route path="/diagnostic" component={Diagnostic} />
         <Route path="/tools" component={ToolsHub} />
         <Route path="/tools/verse-finder" component={VerseFinder} />
         <Route path="/tools/prayer-generator" component={PrayerGenerator} />

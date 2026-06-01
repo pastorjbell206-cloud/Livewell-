@@ -1,22 +1,27 @@
 import Layout from "@/components/Layout";
-import { SEOMeta } from "@/components/SEOMeta";
+import { SEOMeta, getBookSchema } from "@/components/SEOMeta";
 import { trpc } from "@/lib/trpc";
-import { useRoute } from "wouter";
-import { ExternalLink, Loader2, ArrowLeft, BookOpen } from "lucide-react";
-import { Link } from "wouter";
+import { Link, useRoute } from "wouter";
+import { ArrowLeft, BookOpen, ExternalLink, Loader2 } from "lucide-react";
 import { useState } from "react";
 import BookPreview from "@/components/BookPreview";
 import BookRecommendations from "@/components/BookRecommendations";
+import { SampleChapterForm } from "@/components/SampleChapterForm";
+import { bookUrl } from "@/lib/site";
 
 export default function BookDetail() {
-  const [match, params] = useRoute("/books/:slug");
-  const bookSlug = params?.slug;
+  const [, params] = useRoute("/books/:slug");
+  const bookSlug = params?.slug ?? "";
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
 
-  const booksQuery = trpc.books.listPublished.useQuery();
-  const book = booksQuery.data?.find((b) => b.slug === bookSlug);
+  // Fetch a single book by slug instead of pulling the whole catalog.
+  const bookQuery = trpc.books.getBySlug.useQuery(
+    { slug: bookSlug },
+    { enabled: Boolean(bookSlug) }
+  );
+  const book = bookQuery.data ?? null;
 
-  if (booksQuery.isLoading) {
+  if (bookQuery.isLoading) {
     return (
       <Layout>
         <div className="flex justify-center py-32">
@@ -79,12 +84,24 @@ export default function BookDetail() {
 
   const topics = bookTopics[book.title] || [];
 
+  const canonical = book.slug ? bookUrl(book.slug) : undefined;
+
   return (
     <>
       <SEOMeta
         title={book.title}
-        description={book.description || ""}
-        keywords={`${book.title}, ${book.author}, church leadership, pastoral resources`}
+        description={book.description || `${book.title} by ${book.author || "James Bell"}.`}
+        keywords={`${book.title}, ${book.author}, theology, pastoral, books`}
+        image={book.coverImage || undefined}
+        url={canonical}
+        type="book"
+        structuredData={getBookSchema(
+          book.title,
+          book.description || "",
+          book.author || "James Bell",
+          book.coverImage || undefined,
+          canonical
+        )}
       />
       <Layout>
         {/* Back Button */}
@@ -184,24 +201,67 @@ export default function BookDetail() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-16" style={{ backgroundColor: "var(--ink)" }}>
-          <div className="container text-center">
-            <h2 className="font-display text-3xl font-bold mb-4" style={{ color: "var(--bone)" }}>
-              Ready to Transform Your Leadership?
+        {/* SAMPLE CHAPTER FORM (the conversion mechanic) */}
+        <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
+          <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+            <SampleChapterForm
+              bookTitle={book.title}
+              bookSlug={book.slug ?? ""}
+              sampleUrl={null}
+            />
+          </div>
+        </section>
+
+        {/* CTA — bone on charcoal with mustard rule (palette honored) */}
+        <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4)" }}>
+          <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
+            <h2
+              style={{
+                fontFamily: "var(--F)",
+                fontSize: "clamp(28px, 4vw, 38px)",
+                fontWeight: 400,
+                letterSpacing: "-0.015em",
+                color: "var(--bone)",
+                marginBottom: "16px",
+              }}
+            >
+              The work the book asks of you starts now.
             </h2>
-            <p className="font-body text-lg mb-8 max-w-2xl mx-auto" style={{ color: "rgba(244,241,234,0.7)" }}>
-              This book provides the biblical foundation and practical roadmap you need to lead with clarity and conviction.
+            <p
+              style={{
+                fontFamily: "var(--B)",
+                fontSize: "16px",
+                lineHeight: 1.7,
+                color: "rgba(245,240,230,0.7)",
+                maxWidth: "55ch",
+                margin: "0 auto 28px",
+              }}
+            >
+              Read the first chapter free above. If it carries weight, buy the rest.
             </p>
             {book.purchaseUrl && (
               <a
                 href={book.purchaseUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded font-ui font-medium no-underline transition-colors"
-                style={{ backgroundColor: "var(--gold)", color: "var(--ink)" }}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "10px",
+                  background: "var(--bone)",
+                  color: "var(--ink)",
+                  border: "none",
+                  borderBottom: "2px solid var(--mustard)",
+                  padding: "14px 28px",
+                  fontFamily: "var(--U)",
+                  fontSize: "13px",
+                  fontWeight: 600,
+                  letterSpacing: "0.04em",
+                  borderRadius: "var(--radius-sm)",
+                  textDecoration: "none",
+                }}
               >
-                <ExternalLink size={18} /> Get Your Copy
+                <ExternalLink size={16} aria-hidden /> Buy the book
               </a>
             )}
           </div>
