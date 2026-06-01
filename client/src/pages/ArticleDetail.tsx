@@ -374,7 +374,7 @@ export default function ArticleDetail() {
             }}
           >
             {post.body ? (
-              <Streamdown>{post.body}</Streamdown>
+              <Streamdown>{post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")</Streamdown>
             ) : (
               <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
                 This article is in preparation.
