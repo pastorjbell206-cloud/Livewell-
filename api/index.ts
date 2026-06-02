@@ -13,9 +13,21 @@ async function withConn<T>(fn: (c: mysql.Connection) => Promise<T>): Promise<T> 
   try { return await fn(conn); } finally { await conn.end(); }
 }
 
+function constantTimeEqual(a: string, b: string): boolean {
+  const ab = Buffer.from(a, "utf8");
+  const bb = Buffer.from(b, "utf8");
+  if (ab.length !== bb.length) return false;
+  return crypto.timingSafeEqual(ab, bb);
+}
+
 function authed(req: VercelRequest): boolean {
-  const key = (req.query.key as string) || (req.headers["x-seed-key"] as string) || "";
-  return Boolean(process.env.JWT_SECRET) && key === process.env.JWT_SECRET;
+  // Read the key ONLY from the x-seed-key header so it never leaks into URLs/logs.
+  const key = (req.headers["x-seed-key"] as string) || "";
+  if (!key) return false;
+  // Prefer a dedicated SEED_KEY when set; otherwise fall back to JWT_SECRET.
+  const expected = process.env.SEED_KEY || process.env.JWT_SECRET || "";
+  if (!expected) return false;
+  return constantTimeEqual(key, expected);
 }
 
 function getAllowedOrigin(req: VercelRequest): string {
@@ -27,17 +39,23 @@ function getAllowedOrigin(req: VercelRequest): string {
   if (process.env.NODE_ENV === "development") {
     allowed.push("http://localhost:3000", "http://localhost:5173");
   }
-  return allowed.includes(origin) ? origin : allowed[0];
+  // Do NOT fall back to the production origin for unknown origins.
+  return allowed.includes(origin) ? origin : "";
 }
 
-function corsHeaders(req: VercelRequest) {
-  return {
-    "Access-Control-Allow-Origin": getAllowedOrigin(req),
+function corsHeaders(req: VercelRequest): Record<string, string> {
+  const origin = getAllowedOrigin(req);
+  const headers: Record<string, string> = {
     "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type,x-seed-key",
-    "Access-Control-Allow-Credentials": "true",
     "Vary": "Origin",
   };
+  // Only set Allow-Origin (and credentials) when the origin is on the allow-list.
+  if (origin) {
+    headers["Access-Control-Allow-Origin"] = origin;
+    headers["Access-Control-Allow-Credentials"] = "true";
+  }
+  return headers;
 }
 
 function applyCors(req: VercelRequest, res: VercelResponse) {
@@ -77,14 +95,14 @@ async function health(_req: VercelRequest, res: VercelResponse) {
       out.tableCount = Array.isArray(tables) ? tables.length : 0;
     } catch (e: any) {
       out.dbReachable = false;
-      out.dbError = String(e?.message || e).slice(0, 400);
+      out.dbError = "db unavailable";
     }
   }
   json(res, 200, out);
 }
 
 // ---------------------------------------------------------------------------
-// Read-only schema inventory. Requires ?key=<JWT_SECRET> or x-seed-key header.
+// Read-only schema inventory. Requires the x-seed-key header (SEED_KEY or JWT_SECRET).
 // Performs only SHOW / SELECT COUNT / DESCRIBE / SELECT ... LIMIT 1 queries.
 // No writes. Used by the content-migration project to decide whether the live
 // DB uses the Drizzle `posts` table or the flat `articles` table.
@@ -540,7 +558,7 @@ async function sitemap(_req: VercelRequest, res: VercelResponse) {
         return rows;
       });
     } catch { /* no books table */ }
-    const urls = [
+    const urls: { loc: string; pri: string; mod?: string }[] = [
       ...staticPaths.map(p => ({ loc: base + p, pri: p === "/" ? "1.0" : "0.8" })),
       ...articles.map((a: any) => ({ loc: `${base}/writing/${a.slug}`, pri: "0.7", mod: a.updatedAt ? new Date(a.updatedAt).toISOString() : undefined })),
       ...bookSlugs.filter((b: any) => b.slug).map((b: any) => ({ loc: `${base}/books/${b.slug}`, pri: "0.6" })),
@@ -604,6 +622,31 @@ async function trpcListPosts(): Promise<any[]> {
   });
 }
 
+// Slim list for index/listing pages: every column EXCEPT `body` so the
+// frontend stops downloading full article bodies for 161+ posts at once.
+async function trpcListPostsForIndex(): Promise<any[]> {
+  return await withConn(async (c) => {
+    try {
+      const [rows]: any = await c.execute(
+        "SELECT id, slug, title, excerpt, pillar, readTime, published, featured, publishedAt, createdAt FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 500"
+      );
+      if (Array.isArray(rows) && rows.length > 0) {
+        return (rows as any[]).map((r) => ({
+          id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
+          pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
+          published: r.published, featured: r.featured, topic: r.topic || null,
+          createdAt: r.createdAt || r.publishedAt, publishedAt: r.publishedAt || r.createdAt,
+        }));
+      }
+    } catch { /* posts table may not exist, fall through to articles */ }
+    // articles fallback already excludes body (toPostCard never selects/returns it)
+    const [rows]: any = await c.execute(
+      "SELECT id, slug, title, subtitle, excerpt, topic, pillar, source, external_url, image_url, word_count, published_at, created_at FROM articles ORDER BY published_at DESC LIMIT 500"
+    );
+    return (rows as any[]).map(toPostCard);
+  });
+}
+
 async function trpcGetPost(id: number | string): Promise<any | null> {
   return await withConn(async (c) => {
     const isNum = /^\d+$/.test(String(id));
@@ -649,6 +692,20 @@ async function trpcListBooks(): Promise<any[]> {
     });
   } catch {
     return FALLBACK_BOOKS;
+  }
+}
+
+// Public path: only published books. DB rows use a `published` column;
+// the FALLBACK_BOOKS use a `status` string ("published" vs in-development).
+async function trpcListPublishedBooks(): Promise<any[]> {
+  try {
+    return await withConn(async (c) => {
+      const [rows]: any = await c.execute("SELECT * FROM books WHERE published = true ORDER BY sortOrder ASC, createdAt DESC");
+      if (Array.isArray(rows) && rows.length > 0) return rows;
+      return FALLBACK_BOOKS.filter((b) => b.status === "published");
+    });
+  } catch {
+    return FALLBACK_BOOKS.filter((b) => b.status === "published");
   }
 }
 
@@ -773,9 +830,17 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         res.setHeader("Set-Cookie", logoutCookie);
         return trpcOk(res, { ok: true });
       }
-      case "posts.listPublished":
-      case "posts.listAll": {
+      case "posts.listPublished": {
         const data = await trpcListPosts();
+        return trpcOk(res, data);
+      }
+      case "posts.listAll": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const data = await trpcListPosts();
+        return trpcOk(res, data);
+      }
+      case "posts.listForIndex": {
+        const data = await trpcListPostsForIndex();
         return trpcOk(res, data);
       }
       case "posts.getById": {
@@ -791,8 +856,12 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         if (!row) return trpcErr(res, "NOT_FOUND", "post not found", 404);
         return trpcOk(res, row);
       }
-      case "books.listPublished":
+      case "books.listPublished": {
+        const data = await trpcListPublishedBooks();
+        return trpcOk(res, data);
+      }
       case "books.listAll": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
         const data = await trpcListBooks();
         return trpcOk(res, data);
       }
@@ -994,6 +1063,7 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         return trpcOk(res, { ok: true });
       }
       case "notifications.listAll": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
         return await withConn(async (c) => {
           const [rows]: any = await c.execute("SELECT * FROM notifications ORDER BY createdAt DESC LIMIT 50");
           return trpcOk(res, rows);
@@ -1165,8 +1235,13 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
       return { result: { data: superjson.serialize({ ok: true }) } };
     }
     case "posts.listPublished":
-    case "posts.listAll":
       return { result: { data: superjson.serialize(await trpcListPosts()) } };
+    case "posts.listAll": {
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
+      return { result: { data: superjson.serialize(await trpcListPosts()) } };
+    }
+    case "posts.listForIndex":
+      return { result: { data: superjson.serialize(await trpcListPostsForIndex()) } };
     case "posts.getById": {
       const row = await trpcGetPost(input?.id ?? input);
       if (!row) return { error: { message: "post not found", code: -32603, data: { code: "NOT_FOUND", httpStatus: 404 } } };
@@ -1179,7 +1254,9 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
       return { result: { data: superjson.serialize(row) } };
     }
     case "books.listPublished":
+      return { result: { data: superjson.serialize(await trpcListPublishedBooks()) } };
     case "books.listAll":
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
       return { result: { data: superjson.serialize(await trpcListBooks()) } };
     case "books.getById": {
       const all = await trpcListBooks();
@@ -1188,7 +1265,16 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
       return { result: { data: superjson.serialize(row) } };
     }
     case "resources.listPublished":
+      // Public path: only published resources.
+      try {
+        return await withConn(async (c) => {
+          const [rows]: any = await c.execute("SELECT * FROM resources WHERE published = true ORDER BY createdAt DESC");
+          return { result: { data: superjson.serialize(rows) } };
+        });
+      } catch { return { result: { data: superjson.serialize([]) } }; }
     case "resources.listAll":
+      // Admin-only: returns unpublished rows.
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
       try {
         return await withConn(async (c) => {
           const [rows]: any = await c.execute("SELECT * FROM resources ORDER BY createdAt DESC");
@@ -1228,6 +1314,7 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
     case "quiz.getRecommendations":
       return { result: { data: superjson.serialize(await quizGetRecommendations(input)) } };
     case "notifications.listAll":
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
       try {
         return await withConn(async (c) => {
           const [rows]: any = await c.execute("SELECT * FROM notifications ORDER BY createdAt DESC LIMIT 50");
@@ -1242,6 +1329,8 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
         });
       } catch { return { result: { data: superjson.serialize([]) } }; }
     case "community.testimonials.listAll":
+      // Moderation queue: includes pending/unapproved rows + submitter PII. Admin-only.
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
       try {
         return await withConn(async (c) => {
           const [pending]: any = await c.execute("SELECT * FROM testimonials WHERE approved = false ORDER BY createdAt DESC");
@@ -1268,6 +1357,8 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
         return { result: { data: superjson.serialize({ ok: true }) } };
       } catch (e: any) { return { error: { message: String(e?.message), code: -32603, data: { code: "INTERNAL_SERVER_ERROR", httpStatus: 500 } } }; }
     case "community.comments.listAll":
+      // Moderation queue: includes pending/unapproved rows + submitter PII. Admin-only.
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
       try {
         return await withConn(async (c) => {
           const [pending]: any = await c.execute("SELECT * FROM comments WHERE approved = false ORDER BY createdAt DESC");
@@ -1367,7 +1458,8 @@ async function organizeArticles(req: VercelRequest, res: VercelResponse) {
   }
 }
 
-async function adminStatus(_req: VercelRequest, res: VercelResponse) {
+async function adminStatus(req: VercelRequest, res: VercelResponse) {
+  if (!authedSession(req)) return json(res, 401, { error: "unauthorized" });
   json(res, 200, {
     ok: true,
     configured: {
