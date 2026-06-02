@@ -23,7 +23,7 @@ import { AudienceShare } from "@/components/AudienceShare";
 import { AudienceLabel } from "@/components/AudienceLabel";
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
-import { articleUrl, OG_DEFAULT_IMAGE } from "@/lib/site";
+import { articleUrl, ogImageUrl } from "@/lib/site";
 
 function ShareButton({ title, url }: { title: string; url: string }) {
   const [copied, setCopied] = useState(false);
@@ -196,7 +196,9 @@ export default function ArticleDetail() {
 
   const canonical = articleUrl(post.slug);
   const description = post.excerpt || post.title;
-  const ogImage = post.coverImage || OG_DEFAULT_IMAGE;
+  // Prefer a real cover image; otherwise render a branded per-essay card via
+  // the dynamic OG endpoint (api/og.tsx) instead of the single static default.
+  const ogImage = post.coverImage || ogImageUrl(post.title, post.pillar ?? undefined);
   const publishedIso = String(post.publishedAt || post.createdAt || "");
 
   return (

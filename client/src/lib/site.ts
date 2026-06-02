@@ -24,6 +24,16 @@ export function articleUrl(slug: string): string {
   return `${SITE_URL}/writing/${slug}`;
 }
 
+// Dynamic, per-essay Open Graph image rendered by the Vercel Edge function at
+// /api/og (see api/og.tsx). Produces a branded 1200×630 card from the title
+// and pillar, so each essay gets a unique social card instead of the single
+// static og-default.png.
+export function ogImageUrl(title: string, pillar?: string): string {
+  const params = new URLSearchParams({ title });
+  if (pillar) params.set("pillar", pillar);
+  return `${SITE_URL}/api/og?${params.toString()}`;
+}
+
 // Canonical URL for a book slug.
 export function bookUrl(slug: string): string {
   return `${SITE_URL}/books/${slug}`;
