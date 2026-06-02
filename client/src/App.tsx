@@ -12,11 +12,12 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import { ToastProvider } from "./contexts/ToastContext";
 import { ToastContainer } from "./components/ToastContainer";
 import Home from "./pages/Home";
-import Writing from "./pages/Writing";
-import ArticleDetail from "./pages/ArticleDetail";
-import Books from "./pages/Books";
-import BookDetail from "./pages/BookDetail";
-import About from "./pages/About";
+
+const Writing = lazy(() => import("./pages/Writing"));
+const ArticleDetail = lazy(() => import("./pages/ArticleDetail"));
+const Books = lazy(() => import("./pages/Books"));
+const BookDetail = lazy(() => import("./pages/BookDetail"));
+const About = lazy(() => import("./pages/About"));
 
 const Resources = lazy(() => import("./pages/Resources"));
 const SubstackPage = lazy(() => import("./pages/Substack"));

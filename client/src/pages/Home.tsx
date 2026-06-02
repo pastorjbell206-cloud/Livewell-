@@ -25,7 +25,7 @@ import { FEATURED_TRACKS, PRIMARY_TRACKS, trackUrl } from "@/lib/taxonomy";
 
 export default function Home() {
   // Recent essays for the "Recent" rail.
-  const articlesQuery = trpc.posts.listPublished.useQuery();
+  const articlesQuery = trpc.posts.listForIndex.useQuery();
   const all = articlesQuery.data ?? [];
 
   const lede = all[0];

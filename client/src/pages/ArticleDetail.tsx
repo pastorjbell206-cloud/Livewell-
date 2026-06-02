@@ -8,10 +8,50 @@
  * - Body width is 680px (var(--w-prose)) per CLAUDE.md
  * - Bookmark + reading progress persist in localStorage
  */
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
 import { useLocation, useParams } from "wouter";
-import { Streamdown } from "streamdown";
 import { ArrowLeft, Bookmark, Clock, Share2, User } from "lucide-react";
+
+// Lazy-load the heavy markdown renderer (pulls in shiki/mermaid/katex) so the
+// article shell + SEO head paint before ~1MB of renderer code loads.
+const Streamdown = lazy(() =>
+  import("streamdown").then(m => ({ default: m.Streamdown }))
+);
+
+/**
+ * Security hardening for the markdown renderer.
+ *
+ * In streamdown@1.4.0 the link/image prefix allowlists are NOT top-level
+ * <Streamdown> props — they are options on the bundled `rehype-harden`
+ * plugin, which streamdown ships pre-configured to allow EVERYTHING
+ * (allowedLinkPrefixes: ["*"], allowedImagePrefixes: ["*"]). Passing the
+ * prefixes as component props would be silently spread into react-markdown
+ * and ignored, so `javascript:` links would still render.
+ *
+ * To actually block them we rebuild `rehypePlugins` from streamdown's
+ * `defaultRehypePlugins`, overriding only the `harden` entry's config with
+ * a real allowlist. Option names (`allowedLinkPrefixes`,
+ * `allowedImagePrefixes`, `defaultOrigin`, `allowDataImages`) confirmed
+ * against the streamdown dist bundle.
+ */
+const ALLOWED_LINK_PREFIXES = ["https://", "http://", "mailto:", "/", "#"];
+const ALLOWED_IMAGE_PREFIXES = ["https://", "/", "data:"];
+
+const hardenedRehypePluginsPromise = import("streamdown").then(m => {
+  const plugins = { ...m.defaultRehypePlugins } as Record<string, unknown>;
+  const harden = plugins.harden as [unknown, Record<string, unknown>] | undefined;
+  if (Array.isArray(harden)) {
+    plugins.harden = [
+      harden[0],
+      {
+        ...harden[1],
+        allowedLinkPrefixes: ALLOWED_LINK_PREFIXES,
+        allowedImagePrefixes: ALLOWED_IMAGE_PREFIXES,
+      },
+    ];
+  }
+  return Object.values(plugins);
+});
 
 import Layout from "@/components/Layout";
 import ReadingProgressBar from "@/components/ReadingProgressBar";
@@ -137,6 +177,19 @@ function BookmarkButton({ slug }: { slug: string }) {
 export default function ArticleDetail() {
   const { slug } = useParams<{ slug: string }>();
   const [, navigate] = useLocation();
+  // Hardened rehype plugins resolve alongside the lazy Streamdown chunk.
+  // Until they load we hold off rendering the body (the page shell/SEO still
+  // paints), guaranteeing the allowlist is in force before any markdown runs.
+  const [rehypePlugins, setRehypePlugins] = useState<unknown[] | null>(null);
+  useEffect(() => {
+    let active = true;
+    hardenedRehypePluginsPromise.then(plugins => {
+      if (active) setRehypePlugins(plugins as unknown[]);
+    });
+    return () => {
+      active = false;
+    };
+  }, []);
   const postQuery = trpc.posts.getBySlug.useQuery(
     { slug: slug ?? "" },
     { enabled: Boolean(slug) }
@@ -376,7 +429,22 @@ export default function ArticleDetail() {
             }}
           >
             {post.body ? (
-                                                        <Streamdown>{post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}</Streamdown>
+              <Suspense
+                fallback={
+                  <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
+                    Loading…
+                  </p>
+                }
+              >
+                {rehypePlugins && (
+                  <Streamdown
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                    rehypePlugins={rehypePlugins as any}
+                  >
+                    {post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}
+                  </Streamdown>
+                )}
+              </Suspense>
             ) : (
               <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
                 This article is in preparation.
