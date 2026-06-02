@@ -183,7 +183,33 @@ function webSiteSchema() {
   };
 }
 
+// Strip common Markdown syntax to plain text so the JSON-LD articleBody is
+// readable prose for non-JS / AI crawlers. Best-effort; not a full parser.
+function markdownToPlainText(md) {
+  return String(md ?? "")
+    .replace(/```[\s\S]*?```/g, " ")          // fenced code blocks
+    .replace(/`([^`]+)`/g, "$1")               // inline code
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")     // images
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")   // links → text
+    .replace(/^\s{0,3}#{1,6}\s+/gm, "")         // ATX headings
+    .replace(/^\s{0,3}>\s?/gm, "")              // blockquotes
+    .replace(/^\s{0,3}[-*+]\s+/gm, "")          // bullet markers
+    .replace(/^\s{0,3}\d+\.\s+/gm, "")          // ordered markers
+    .replace(/(\*\*|__)(.*?)\1/g, "$2")         // bold
+    .replace(/(\*|_)(.*?)\1/g, "$2")            // italic
+    .replace(/~~(.*?)~~/g, "$1")                // strikethrough
+    .replace(/^\s{0,3}([-*_])\s*(\1\s*){2,}$/gm, " ") // hr
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function countWords(text) {
+  const t = String(text ?? "").trim();
+  return t ? t.split(/\s+/).length : 0;
+}
+
 function articleSchema(post, url, image) {
+  const bodyText = markdownToPlainText(post.body);
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -191,12 +217,15 @@ function articleSchema(post, url, image) {
     description: post.excerpt || post.title,
     image: image || OG_DEFAULT,
     url,
+    inLanguage: "en",
     datePublished: post.publishedAt
       ? new Date(post.publishedAt).toISOString()
       : new Date(post.createdAt).toISOString(),
     dateModified: post.updatedAt
       ? new Date(post.updatedAt).toISOString()
       : new Date(post.createdAt).toISOString(),
+    ...(post.pillar ? { articleSection: post.pillar } : {}),
+    ...(bodyText ? { articleBody: bodyText, wordCount: countWords(bodyText) } : {}),
     author: {
       "@type": "Person",
       name: AUTHOR_NAME,
@@ -347,7 +376,7 @@ async function main() {
   if (conn) {
     try {
       const [posts] = await conn.query(
-        "SELECT slug, title, excerpt, pillar, coverImage, publishedAt, updatedAt, createdAt FROM posts WHERE published = true"
+        "SELECT slug, title, excerpt, pillar, body, coverImage, publishedAt, updatedAt, createdAt FROM posts WHERE published = true"
       );
       for (const post of posts) {
         const url = `${SITE_URL}/writing/${post.slug}`;

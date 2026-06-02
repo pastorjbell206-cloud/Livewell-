@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { SEOMeta, getBookSchema } from "@/components/SEOMeta";
+import { SEOMeta, getBookSchema, getBreadcrumbSchema } from "@/components/SEOMeta";
 import { trpc } from "@/lib/trpc";
 import { Link, useRoute } from "wouter";
 import { ArrowLeft, BookOpen, ExternalLink, Loader2 } from "lucide-react";
@@ -7,7 +7,7 @@ import { useState } from "react";
 import BookPreview from "@/components/BookPreview";
 import BookRecommendations from "@/components/BookRecommendations";
 import { SampleChapterForm } from "@/components/SampleChapterForm";
-import { bookUrl } from "@/lib/site";
+import { bookUrl, SITE_URL } from "@/lib/site";
 
 export default function BookDetail() {
   const [, params] = useRoute("/books/:slug");
@@ -95,13 +95,20 @@ export default function BookDetail() {
         image={book.coverImage || undefined}
         url={canonical}
         type="book"
-        structuredData={getBookSchema(
-          book.title,
-          book.description || "",
-          book.author || "James Bell",
-          book.coverImage || undefined,
-          canonical
-        )}
+        structuredData={[
+          getBookSchema(
+            book.title,
+            book.description || "",
+            book.author || "James Bell",
+            book.coverImage || undefined,
+            canonical
+          ),
+          getBreadcrumbSchema([
+            { name: "Home", url: SITE_URL },
+            { name: "Books", url: `${SITE_URL}/books` },
+            { name: book.title, url: canonical ?? `${SITE_URL}/books` },
+          ]),
+        ]}
       />
       <Layout>
         {/* Back Button */}
