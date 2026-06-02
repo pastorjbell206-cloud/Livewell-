@@ -458,7 +458,7 @@ async function substackRss(_req: VercelRequest, res: VercelResponse) {
       res.setHeader("Cache-Control", "public, s-maxage=600, stale-while-revalidate=1800");
       return json(res, 200, { ok: true, cached: true, ...JSON.parse(cached.payload) });
     }
-    const feedUrl = "https://livewellbyjamesbell.substack.com/feed";
+    const feedUrl = "https://jamesbell333289.substack.com/feed";
     const r = await fetch(feedUrl, { headers: { "User-Agent": "LiveWellSite/1.0" } });
     if (!r.ok) throw new Error(`substack feed ${r.status}`);
     const xml = await r.text();
@@ -1379,7 +1379,7 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
         return { result: { data: superjson.serialize({ ok: true }) } };
       } catch (e: any) { return { error: { message: String(e?.message), code: -32603, data: { code: "INTERNAL_SERVER_ERROR", httpStatus: 500 } } }; }
     case "feedSync.getStatus":
-      return { result: { data: superjson.serialize({ sources: [{ name: "Substack", url: "https://livewellbyjamesbell.substack.com/feed", lastSync: null, status: "idle" }], schedule: "Manual" }) } };
+      return { result: { data: superjson.serialize({ sources: [{ name: "Substack", url: "https://jamesbell333289.substack.com/feed", lastSync: null, status: "idle" }], schedule: "Manual" }) } };
     case "feedSync.syncAll":
     case "feedSync.syncSource":
       return { result: { data: superjson.serialize({ ok: true, message: "Feed sync not yet configured. Use the admin panel to add articles manually." }) } };

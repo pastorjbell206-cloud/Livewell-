@@ -108,7 +108,7 @@ export function AdminSyncPanel() {
                 Substack
               </h4>
               <p style={{ color: "var(--ink-muted)", fontSize: "0.875rem" }}>
-                https://jamesbell.substack.com/feed
+                https://jamesbell333289.substack.com/feed
               </p>
             </div>
             <div

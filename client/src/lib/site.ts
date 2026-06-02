@@ -11,11 +11,12 @@ export const SITE_TAGLINE =
   "Connecting the depth of theology to the weight of everyday life.";
 
 // Substack — the newsletter channel (CLAUDE.md §Strategic Reminders).
-// NOTE (owner): the codebase carried two handles — `jamesbell333289` (used by
-// rss-service.ts and content-data.json's open.substack.com/pub link) and
-// `jamesbell.substack.com` (used by the feed-sync scheduler). We standardize on
-// jamesbell333289 here because the live RSS feed resolves there. If that's
-// wrong, change SUBSTACK_HANDLE and everything below follows.
+// The codebase previously carried three handles (`jamesbell333289`,
+// `jamesbell.substack.com`, `livewellbyjamesbell.substack.com`); all RSS/feed
+// references are now standardized on jamesbell333289 — the handle whose live
+// feed actually resolves (rss-service.ts, content-data.json). If the canonical
+// handle ever changes, update SUBSTACK_HANDLE here and the feed URLs in
+// server/feed-sync-*.ts and api/index.ts to match.
 export const SUBSTACK_HANDLE = "jamesbell333289";
 export const SUBSTACK_URL = `https://${SUBSTACK_HANDLE}.substack.com`;
 

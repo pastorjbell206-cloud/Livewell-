@@ -39,7 +39,7 @@ export const feedSyncRouter = router({
         if (ctx.user?.role !== "admin") throw new Error("Unauthorized");
 
         const feedUrls = {
-          substack: "https://jamesbell.substack.com/feed",
+          substack: "https://jamesbell333289.substack.com/feed",
           "pastors-connection": "https://www.pastorsconnection.com/feed",
         };
 
@@ -72,7 +72,7 @@ export const feedSyncRouter = router({
           {
             name: "Substack",
             id: "substack",
-            url: "https://jamesbell.substack.com/feed",
+            url: "https://jamesbell333289.substack.com/feed",
             status: "active",
           },
           {
