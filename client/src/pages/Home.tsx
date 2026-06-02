@@ -200,7 +200,9 @@ export default function Home() {
                 alignItems: "center",
               }}
             >
-              <Link href="/writing" style={{ textDecoration: "none" }}>
+              {/* Primary path into the book-in-public. /start is the Start Here
+                  experience (Phase 3 makes it the Blind Spots reader's guide). */}
+              <Link href="/start" style={{ textDecoration: "none" }}>
                 <button
                   type="button"
                   style={{
@@ -217,10 +219,11 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  Read the essays
+                  Start Here
                 </button>
               </Link>
-              <Link href="/skeptic-track" style={{ textDecoration: "none" }}>
+              {/* Single clear subscribe action — scrolls to the segmented form. */}
+              <a href="#subscribe" style={{ textDecoration: "none" }}>
                 <button
                   type="button"
                   style={{
@@ -236,9 +239,9 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  Start here if you're a skeptic
+                  Subscribe
                 </button>
-              </Link>
+              </a>
             </div>
 
             {/* GUIDED ENTRY — "Where are you starting from?" */}
@@ -709,9 +712,11 @@ export default function Home() {
 
       {/* SEGMENTED SUBSCRIBE — the single most important conversion surface */}
       <section
+        id="subscribe"
         style={{
           background: "var(--charcoal)",
           padding: "var(--s-7) var(--s-4)",
+          scrollMarginTop: "80px",
         }}
       >
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>

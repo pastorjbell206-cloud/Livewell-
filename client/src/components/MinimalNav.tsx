@@ -47,7 +47,15 @@ function buildNavLinks(): NavLink[] {
     };
   };
 
+  // Focused primary nav (Phase 2): foreground the book-in-public. The pastoral
+  // and household sections remain fully reachable by URL (/for-pastors,
+  // /marriage, /parenting and their tracks) and through the footer — they're
+  // just lifted off the primary path so the vision reads in one breath.
   return [
+    {
+      label: "Start Here",
+      href: "/start",
+    },
     {
       label: "Essays",
       dropdown: [
@@ -88,68 +96,14 @@ function buildNavLinks(): NavLink[] {
       ],
       featured: {
         eyebrow: "Read first",
-        title: "The Skeptic's Track",
+        title: "Blind Spots",
         blurb:
-          "The seven essays Bell would hand a doubting friend, in the order he'd hand them.",
-        href: "/skeptic-track",
-      },
-    },
-    {
-      label: "Pastoring",
-      dropdown: [
-        trackItem(
-          "pastoral-ministry",
-          "Burnout, board conflict, preaching, and the calling underneath."
-        ),
-        {
-          label: "Pastors Connection Network",
-          href: "/pastors",
-          description: "A network for pastors who refuse to lead alone.",
-        },
-        {
-          label: "Pastor's Resource Wall",
-          href: "/pastors-resource-wall",
-          description: "Sermon prep, study guides, and citation tools.",
-        },
-        {
-          label: "Resources for pastors",
-          href: "/resources-for-pastors",
-          description: "Guides and downloads for the weekly work.",
-        },
-      ],
-      featured: {
-        eyebrow: "For pastors",
-        title: "Join the PCN",
-        blurb:
-          "Thousands of pastors carrying the same weight. The letter, the resources, the room.",
-        href: "/for-pastors",
-      },
-    },
-    {
-      label: "Marriage & Family",
-      dropdown: [
-        trackItem(
-          "marriage",
-          "Covenant, conflict, and the costly love that holds two lives."
-        ),
-        trackItem(
-          "parenting",
-          "Five sons in. Formation over performance, presence over advice."
-        ),
-        trackItem(
-          "devotionals",
-          "Short readings for the actual Tuesday, not the imagined retreat."
-        ),
-      ],
-      featured: {
-        eyebrow: "Live well",
-        title: "Theology for the household",
-        blurb:
-          "The same scholarly weight as the political pieces, brought home to the kitchen table.",
-        href: "/marriage",
+          "The serialized book, in reading order. Start at the first chapter and move through the argument.",
+        href: "/start",
       },
     },
     { label: "Books", href: "/books" },
+    { label: "For Pastors", href: "/for-pastors" },
     { label: "About", href: "/about" },
   ];
 }
@@ -593,7 +547,7 @@ export default function MinimalNav() {
               <Search size={18} aria-hidden />
             </button>
 
-            <Link href="/start" style={{ textDecoration: "none" }}>
+            <a href="/#subscribe" style={{ textDecoration: "none" }}>
               <button
                 type="button"
                 style={{
@@ -612,7 +566,7 @@ export default function MinimalNav() {
               >
                 Subscribe
               </button>
-            </Link>
+            </a>
           </div>
 
           {/* Mobile */}
@@ -827,8 +781,8 @@ export default function MinimalNav() {
               </div>
             ))}
             <div style={{ display: "flex", gap: "8px", marginTop: "16px" }}>
-              <Link
-                href="/start"
+              <a
+                href="/#subscribe"
                 onClick={() => setMobileOpen(false)}
                 style={{ textDecoration: "none", flex: 1 }}
               >
@@ -850,7 +804,7 @@ export default function MinimalNav() {
                 >
                   Subscribe
                 </button>
-              </Link>
+              </a>
               <Link
                 href="/membership"
                 onClick={() => setMobileOpen(false)}
