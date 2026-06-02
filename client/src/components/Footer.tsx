@@ -5,7 +5,7 @@ import { Sun, Moon } from "lucide-react";
 export default function Footer() {
   const { theme, toggleTheme } = useTheme();
   return (
-    <footer style={{ background: "var(--ink)", color: "#ffffff", padding: "60px 20px 20px", marginTop: "60px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+    <footer style={{ background: "#14110C", color: "#F4F1EA", padding: "60px 20px 20px", marginTop: "60px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "40px", marginBottom: "40px" }}>
           {/* Column 1 - Brand */}
