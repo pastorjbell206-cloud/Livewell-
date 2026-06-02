@@ -25,16 +25,16 @@ export function AdminTestimonialsPanel() {
     <div className="space-y-6">
       {/* Header */}
       <div>
-        <h2 className="text-2xl font-bold mb-2" style={{ color: "#1A1A1A" }}>
+        <h2 className="text-2xl font-bold mb-2" style={{ color: "var(--ink)" }}>
           Testimonials Management
         </h2>
-        <p style={{ color: "#6B7280" }}>
+        <p style={{ color: "var(--ink-muted)" }}>
           Manage reader testimonials and social proof for your site
         </p>
       </div>
 
       {/* Tabs */}
-      <div className="flex gap-4 border-b" style={{ borderColor: "#D1C9BB" }}>
+      <div className="flex gap-4 border-b" style={{ borderColor: "var(--line)" }}>
         <button
           onClick={() => setActiveTab("pending")}
           className={`px-4 py-2 font-medium transition-colors ${
@@ -43,8 +43,8 @@ export function AdminTestimonialsPanel() {
               : "text-gray-500"
           }`}
           style={{
-            borderColor: activeTab === "pending" ? "#B8963E" : "transparent",
-            color: activeTab === "pending" ? "#1A1A1A" : "#6B7280",
+            borderColor: activeTab === "pending" ? "var(--mustard)" : "transparent",
+            color: activeTab === "pending" ? "var(--ink)" : "var(--ink-muted)",
           }}
         >
           Pending ({pending.length})
@@ -57,8 +57,8 @@ export function AdminTestimonialsPanel() {
               : "text-gray-500"
           }`}
           style={{
-            borderColor: activeTab === "approved" ? "#B8963E" : "transparent",
-            color: activeTab === "approved" ? "#1A1A1A" : "#6B7280",
+            borderColor: activeTab === "approved" ? "var(--mustard)" : "transparent",
+            color: activeTab === "approved" ? "var(--ink)" : "var(--ink-muted)",
           }}
         >
           Approved ({approved.length})
@@ -69,10 +69,10 @@ export function AdminTestimonialsPanel() {
       {currentList.length === 0 && (
         <div
           className="text-center py-12 rounded-lg"
-          style={{ backgroundColor: "#F7F5F0" }}
+          style={{ backgroundColor: "var(--bone)" }}
         >
-          <AlertCircle size={48} style={{ color: "#B8963E", margin: "0 auto 1rem" }} />
-          <p style={{ color: "#6B7280" }}>
+          <AlertCircle size={48} style={{ color: "var(--mustard)", margin: "0 auto 1rem" }} />
+          <p style={{ color: "var(--ink-muted)" }}>
             {activeTab === "pending"
               ? "No pending testimonials"
               : "No approved testimonials"}
@@ -87,28 +87,28 @@ export function AdminTestimonialsPanel() {
             key={testimonial.id}
             className="p-6 rounded-lg border"
             style={{
-              backgroundColor: "#F7F5F0",
-              borderColor: "#D1C9BB",
+              backgroundColor: "var(--bone)",
+              borderColor: "var(--line)",
             }}
           >
             {/* Header with Featured Badge */}
             <div className="flex items-start justify-between mb-4">
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-2">
-                  <h3 className="font-semibold" style={{ color: "#1A1A1A" }}>
+                  <h3 className="font-semibold" style={{ color: "var(--ink)" }}>
                     {testimonial.authorName}
                   </h3>
                   {testimonial.featured && (
                     <span
                       className="px-2 py-1 text-xs font-medium rounded"
-                      style={{ backgroundColor: "#B8963E", color: "#F7F5F0" }}
+                      style={{ backgroundColor: "var(--mustard)", color: "var(--bone)" }}
                     >
                       Featured
                     </span>
                   )}
                 </div>
                 {testimonial.authorRole && (
-                  <p style={{ color: "#6B7280", fontSize: "0.875rem" }}>
+                  <p style={{ color: "var(--ink-muted)", fontSize: "0.875rem" }}>
                     {testimonial.authorRole}
                   </p>
                 )}
@@ -132,7 +132,7 @@ export function AdminTestimonialsPanel() {
                   className="flex items-center gap-2"
                   style={{
                     backgroundColor: "#10B981",
-                    color: "#F7F5F0",
+                    color: "var(--bone)",
                   }}
                 >
                   <Check size={16} />
@@ -151,8 +151,8 @@ export function AdminTestimonialsPanel() {
                   disabled={toggleFeaturedMutation.isPending}
                   className="flex items-center gap-2"
                   style={{
-                    backgroundColor: testimonial.featured ? "#B8963E" : "#D1C9BB",
-                    color: testimonial.featured ? "#F7F5F0" : "#1A1A1A",
+                    backgroundColor: testimonial.featured ? "var(--mustard)" : "var(--line)",
+                    color: testimonial.featured ? "var(--bone)" : "var(--ink)",
                   }}
                 >
                   <Star size={16} />
@@ -166,7 +166,7 @@ export function AdminTestimonialsPanel() {
                 className="flex items-center gap-2"
                 style={{
                   backgroundColor: "#EF4444",
-                  color: "#F7F5F0",
+                  color: "var(--bone)",
                 }}
               >
                 <Trash2 size={16} />

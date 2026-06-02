@@ -39,32 +39,32 @@ export function TestimonialsCarousel() {
         <div className="text-center mb-12">
           <h2
             className="font-display text-3xl md:text-4xl font-bold mb-4"
-            style={{ color: "#F7F5F0" }}
+            style={{ color: "var(--bone)" }}
           >
             What Readers Say
           </h2>
           <div
             className="w-16 h-1 mx-auto"
-            style={{ backgroundColor: "#B8963E" }}
+            style={{ backgroundColor: "var(--mustard)" }}
           />
         </div>
 
         {/* Testimonial Card */}
         <div
           className="relative p-8 md:p-12 rounded-lg"
-          style={{ backgroundColor: "#1A1A1A" }}
+          style={{ backgroundColor: "var(--charcoal)" }}
         >
           {/* Quote Icon */}
           <Quote
             size={48}
-            style={{ color: "#B8963E", opacity: 0.3 }}
+            style={{ color: "var(--mustard)", opacity: 0.3 }}
             className="mb-4"
           />
 
           {/* Testimonial Content */}
           <p
             className="font-body text-lg md:text-xl leading-relaxed mb-8"
-            style={{ color: "#F7F5F0" }}
+            style={{ color: "var(--bone)" }}
           >
             "{current.content}"
           </p>
@@ -81,14 +81,14 @@ export function TestimonialsCarousel() {
             <div>
               <div
                 className="font-semibold"
-                style={{ color: "#F7F5F0" }}
+                style={{ color: "var(--bone)" }}
               >
                 {current.authorName}
               </div>
               {current.authorRole && (
                 <div
                   className="text-sm"
-                  style={{ color: "#B8963E" }}
+                  style={{ color: "var(--mustard)" }}
                 >
                   {current.authorRole}
                 </div>
@@ -102,8 +102,8 @@ export function TestimonialsCarousel() {
               onClick={goToPrevious}
               className="p-2 rounded-full transition-colors"
               style={{
-                backgroundColor: "#B8963E",
-                color: "#1A1A1A",
+                backgroundColor: "var(--mustard)",
+                color: "var(--ink)",
               }}
               aria-label="Previous testimonial"
             >
@@ -113,8 +113,8 @@ export function TestimonialsCarousel() {
               onClick={goToNext}
               className="p-2 rounded-full transition-colors"
               style={{
-                backgroundColor: "#B8963E",
-                color: "#1A1A1A",
+                backgroundColor: "var(--mustard)",
+                color: "var(--ink)",
               }}
               aria-label="Next testimonial"
             >
@@ -130,7 +130,7 @@ export function TestimonialsCarousel() {
                 onClick={() => setCurrentIndex(index)}
                 className="w-2 h-2 rounded-full transition-all"
                 style={{
-                  backgroundColor: index === currentIndex ? "#B8963E" : "#6B7280",
+                  backgroundColor: index === currentIndex ? "var(--mustard)" : "var(--ink-muted)",
                 }}
                 aria-label={`Go to testimonial ${index + 1}`}
               />
@@ -141,7 +141,7 @@ export function TestimonialsCarousel() {
         {/* Counter */}
         <div
           className="text-center mt-8 text-sm"
-          style={{ color: "#B8963E" }}
+          style={{ color: "var(--mustard)" }}
         >
           {currentIndex + 1} / {testimonials.length}
         </div>

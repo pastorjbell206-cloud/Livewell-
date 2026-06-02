@@ -42,13 +42,13 @@ export function CommentsSection({ postId }: CommentsSectionProps) {
   };
 
   return (
-    <div className="mt-12 pt-8 border-t" style={{ borderColor: "#D1C9BB" }}>
+    <div className="mt-12 pt-8 border-t" style={{ borderColor: "var(--line)" }}>
       {/* Comments Header */}
       <div className="flex items-center gap-2 mb-8">
-        <MessageCircle size={24} style={{ color: "#B8963E" }} />
+        <MessageCircle size={24} style={{ color: "var(--mustard)" }} />
         <h3
           className="font-display text-2xl font-bold"
-          style={{ color: "#1A1A1A" }}
+          style={{ color: "var(--ink)" }}
         >
           Comments
         </h3>
@@ -56,26 +56,26 @@ export function CommentsSection({ postId }: CommentsSectionProps) {
 
       {/* Comments List */}
       {isLoading ? (
-        <div style={{ color: "#6B7280" }}>Loading comments...</div>
+        <div style={{ color: "var(--ink-muted)" }}>Loading comments...</div>
       ) : commentsData?.comments && commentsData.comments.length > 0 ? (
         <div className="space-y-6 mb-12">
           {commentsData.comments.map((comment) => (
             <div
               key={comment.id}
               className="p-4 rounded-lg"
-              style={{ backgroundColor: "#F7F5F0" }}
+              style={{ backgroundColor: "var(--bone)" }}
             >
               <div className="flex items-start justify-between mb-2">
                 <div>
                   <div
                     className="font-semibold"
-                    style={{ color: "#1A1A1A" }}
+                    style={{ color: "var(--ink)" }}
                   >
                     {comment.authorName}
                   </div>
                   <div
                     className="text-sm"
-                    style={{ color: "#6B7280" }}
+                    style={{ color: "var(--ink-muted)" }}
                   >
                     {new Date(comment.createdAt).toLocaleDateString()}
                   </div>
@@ -93,7 +93,7 @@ export function CommentsSection({ postId }: CommentsSectionProps) {
       ) : (
         <div
           className="text-center py-8"
-          style={{ color: "#6B7280" }}
+          style={{ color: "var(--ink-muted)" }}
         >
           No comments yet. Be the first to share your thoughts!
         </div>
@@ -102,11 +102,11 @@ export function CommentsSection({ postId }: CommentsSectionProps) {
       {/* Comment Form */}
       <div
         className="p-6 rounded-lg"
-        style={{ backgroundColor: "#F7F5F0" }}
+        style={{ backgroundColor: "var(--bone)" }}
       >
         <h4
           className="font-semibold mb-4"
-          style={{ color: "#1A1A1A" }}
+          style={{ color: "var(--ink)" }}
         >
           Leave a Comment
         </h4>
@@ -133,8 +133,8 @@ export function CommentsSection({ postId }: CommentsSectionProps) {
               onChange={(e) => setAuthorName(e.target.value)}
               className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
               style={{
-                borderColor: "#D1C9BB",
-                color: "#1A1A1A",
+                borderColor: "var(--line)",
+                color: "var(--ink)",
               }}
               required
             />
@@ -145,8 +145,8 @@ export function CommentsSection({ postId }: CommentsSectionProps) {
               onChange={(e) => setAuthorEmail(e.target.value)}
               className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
               style={{
-                borderColor: "#D1C9BB",
-                color: "#1A1A1A",
+                borderColor: "var(--line)",
+                color: "var(--ink)",
               }}
               required
             />
@@ -159,8 +159,8 @@ export function CommentsSection({ postId }: CommentsSectionProps) {
             rows={4}
             className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 resize-none"
             style={{
-              borderColor: "#D1C9BB",
-              color: "#1A1A1A",
+              borderColor: "var(--line)",
+              color: "var(--ink)",
             }}
             required
           />
@@ -170,8 +170,8 @@ export function CommentsSection({ postId }: CommentsSectionProps) {
             disabled={submitMutation.isPending}
             className="flex items-center gap-2 px-6 py-2 rounded-lg font-medium transition-all"
             style={{
-              backgroundColor: "#B8963E",
-              color: "#F7F5F0",
+              backgroundColor: "var(--mustard)",
+              color: "var(--bone)",
             }}
           >
             <Send size={16} />
@@ -181,7 +181,7 @@ export function CommentsSection({ postId }: CommentsSectionProps) {
 
         <p
           className="text-xs mt-4"
-          style={{ color: "#6B7280" }}
+          style={{ color: "var(--ink-muted)" }}
         >
           Comments are moderated and will appear after approval.
         </p>

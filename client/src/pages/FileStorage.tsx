@@ -32,12 +32,12 @@ function formatFileSize(bytes: number): string {
 
 function getFileIcon(mimeType: string) {
   if (mimeType.startsWith("image/")) return <Image size={20} style={{ color: "#2D4A3E" }} />;
-  if (mimeType.startsWith("video/")) return <Film size={20} style={{ color: "#B8963E" }} />;
+  if (mimeType.startsWith("video/")) return <Film size={20} style={{ color: "var(--mustard)" }} />;
   if (mimeType.startsWith("audio/")) return <Music size={20} style={{ color: "#2C3E50" }} />;
   if (mimeType.includes("pdf")) return <FileText size={20} style={{ color: "#C0392B" }} />;
   if (mimeType.includes("zip") || mimeType.includes("tar") || mimeType.includes("rar"))
-    return <Archive size={20} style={{ color: "#6B7280" }} />;
-  return <File size={20} style={{ color: "#6B7280" }} />;
+    return <Archive size={20} style={{ color: "var(--ink-muted)" }} />;
+  return <File size={20} style={{ color: "var(--ink-muted)" }} />;
 }
 
 function formatDate(date: Date | string): string {
@@ -98,14 +98,14 @@ function FileRow({
       className="p-5 transition-all duration-200"
       style={{
         backgroundColor: "#FFFFFF",
-        border: "1px solid #D1C9BB",
+        border: "1px solid var(--line)",
       }}
     >
       <div className="flex items-start gap-4">
         {/* Thumbnail or icon */}
         <div
           className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-sm overflow-hidden"
-          style={{ backgroundColor: "#F7F5F0", border: "1px solid #D1C9BB" }}
+          style={{ backgroundColor: "var(--bone)", border: "1px solid var(--line)" }}
         >
           {isImage ? (
             <img
@@ -123,7 +123,7 @@ function FileRow({
           <div className="flex items-center gap-3 mb-1">
             <h3
               className="font-ui text-sm font-semibold truncate"
-              style={{ color: "#1A1A1A" }}
+              style={{ color: "var(--ink)" }}
               title={file.filename}
             >
               {file.filename}
@@ -145,7 +145,7 @@ function FileRow({
                 onChange={(e) => setDesc(e.target.value)}
                 placeholder="Add a description..."
                 className="flex-1 px-3 py-1.5 font-ui text-sm border"
-                style={{ borderColor: "#D1C9BB", color: "#1A1A1A" }}
+                style={{ borderColor: "var(--line)", color: "var(--ink)" }}
                 autoFocus
                 onKeyDown={(e) => {
                   if (e.key === "Enter") handleSaveDesc();
@@ -163,7 +163,7 @@ function FileRow({
               <button
                 onClick={handleCancelEdit}
                 className="p-1.5 transition-colors"
-                style={{ color: "#6B7280" }}
+                style={{ color: "var(--ink-muted)" }}
                 title="Cancel"
               >
                 <X size={16} />
@@ -174,7 +174,7 @@ function FileRow({
               <p
                 className="font-body text-sm"
                 style={{
-                  color: file.description ? "#2C3E50" : "#6B7280",
+                  color: file.description ? "#2C3E50" : "var(--ink-muted)",
                   marginBottom: 0,
                   fontStyle: file.description ? "normal" : "italic",
                 }}
@@ -184,7 +184,7 @@ function FileRow({
               <button
                 onClick={() => setEditing(true)}
                 className="p-1 transition-colors"
-                style={{ color: "#6B7280" }}
+                style={{ color: "var(--ink-muted)" }}
                 title="Edit description"
               >
                 <Pencil size={12} />
@@ -200,7 +200,7 @@ function FileRow({
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 transition-colors rounded-sm"
-            style={{ color: "#2C3E50", backgroundColor: "#F7F5F0" }}
+            style={{ color: "#2C3E50", backgroundColor: "var(--bone)" }}
             title="Download"
           >
             <Download size={16} />
@@ -209,8 +209,8 @@ function FileRow({
             onClick={handleDelete}
             className="p-2 transition-colors rounded-sm"
             style={{
-              color: confirmDelete ? "#FFFFFF" : "#6B7280",
-              backgroundColor: confirmDelete ? "#C0392B" : "#F7F5F0",
+              color: confirmDelete ? "#FFFFFF" : "var(--ink-muted)",
+              backgroundColor: confirmDelete ? "#C0392B" : "var(--bone)",
             }}
             title={confirmDelete ? "Click again to confirm" : "Delete"}
           >
@@ -336,13 +336,13 @@ export default function FileStorage() {
   if (!authLoading && !isAuthenticated) {
     return (
       <Layout>
-        <section className="py-24" style={{ backgroundColor: "#F7F5F0" }}>
+        <section className="py-24" style={{ backgroundColor: "var(--bone)" }}>
           <div className="container">
             <div className="max-w-xl mx-auto text-center">
-              <HardDrive size={48} style={{ color: "#B8963E" }} className="mx-auto mb-6" />
+              <HardDrive size={48} style={{ color: "var(--mustard)" }} className="mx-auto mb-6" />
               <h1
                 className="font-display font-bold mb-4"
-                style={{ color: "#1A1A1A", fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
+                style={{ color: "var(--ink)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
               >
                 File Storage
               </h1>
@@ -352,7 +352,7 @@ export default function FileStorage() {
               <a
                 href={getLoginUrl()}
                 className="inline-flex items-center gap-2 px-7 py-3.5 font-ui text-sm font-medium no-underline transition-all duration-200"
-                style={{ backgroundColor: "#1A1A1A", color: "#F7F5F0" }}
+                style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)" }}
               >
                 Sign In to Continue
               </a>
@@ -369,18 +369,18 @@ export default function FileStorage() {
   return (
     <Layout>
       {/* Page Header */}
-      <section className="pt-16 pb-12" style={{ backgroundColor: "#F7F5F0" }}>
+      <section className="pt-16 pb-12" style={{ backgroundColor: "var(--bone)" }}>
         <div className="container">
           <div className="max-w-3xl">
             <div
               className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-4"
-              style={{ color: "#B8963E" }}
+              style={{ color: "var(--mustard)" }}
             >
               File Storage
             </div>
             <h1
               className="font-display font-bold mb-4"
-              style={{ color: "#1A1A1A", fontSize: "clamp(2rem, 4vw, 2.75rem)" }}
+              style={{ color: "var(--ink)", fontSize: "clamp(2rem, 4vw, 2.75rem)" }}
             >
               Your files, securely stored
             </h1>
@@ -404,12 +404,12 @@ export default function FileStorage() {
       <div className="gold-rule container" style={{ margin: "0 auto" }} />
 
       {/* Upload Zone */}
-      <section className="py-8" style={{ backgroundColor: "#F7F5F0" }}>
+      <section className="py-8" style={{ backgroundColor: "var(--bone)" }}>
         <div className="container">
           <div
             className="relative p-8 text-center transition-all duration-200 rounded-sm"
             style={{
-              border: `2px dashed ${dragOver ? "#B8963E" : "#D1C9BB"}`,
+              border: `2px dashed ${dragOver ? "var(--mustard)" : "var(--line)"}`,
               backgroundColor: dragOver ? "rgba(184,150,62,0.05)" : "#FFFFFF",
             }}
             onDrop={handleDrop}
@@ -426,26 +426,26 @@ export default function FileStorage() {
 
             {uploading ? (
               <div className="flex flex-col items-center gap-3">
-                <Loader2 size={32} className="animate-spin" style={{ color: "#B8963E" }} />
-                <p className="font-ui text-sm font-medium" style={{ color: "#1A1A1A" }}>
+                <Loader2 size={32} className="animate-spin" style={{ color: "var(--mustard)" }} />
+                <p className="font-ui text-sm font-medium" style={{ color: "var(--ink)" }}>
                   Uploading...
                 </p>
               </div>
             ) : (
               <div className="flex flex-col items-center gap-3">
-                <CloudUpload size={32} style={{ color: "#B8963E" }} />
+                <CloudUpload size={32} style={{ color: "var(--mustard)" }} />
                 <div>
-                  <p className="font-ui text-sm font-medium mb-1" style={{ color: "#1A1A1A" }}>
+                  <p className="font-ui text-sm font-medium mb-1" style={{ color: "var(--ink)" }}>
                     Drag and drop files here, or{" "}
                     <button
                       onClick={() => fileInputRef.current?.click()}
                       className="font-medium underline"
-                      style={{ color: "#B8963E" }}
+                      style={{ color: "var(--mustard)" }}
                     >
                       browse
                     </button>
                   </p>
-                  <p className="font-ui text-xs" style={{ color: "#6B7280" }}>
+                  <p className="font-ui text-xs" style={{ color: "var(--ink-muted)" }}>
                     Maximum file size: 16MB
                   </p>
                 </div>
@@ -456,22 +456,22 @@ export default function FileStorage() {
       </section>
 
       {/* Files List */}
-      <section className="pb-24" style={{ backgroundColor: "#F7F5F0" }}>
+      <section className="pb-24" style={{ backgroundColor: "var(--bone)" }}>
         <div className="container">
           {authLoading || filesQuery.isLoading ? (
             <div className="flex items-center justify-center py-16">
-              <Loader2 size={24} className="animate-spin" style={{ color: "#B8963E" }} />
-              <span className="ml-3 font-ui text-sm" style={{ color: "#6B7280" }}>
+              <Loader2 size={24} className="animate-spin" style={{ color: "var(--mustard)" }} />
+              <span className="ml-3 font-ui text-sm" style={{ color: "var(--ink-muted)" }}>
                 Loading files...
               </span>
             </div>
           ) : filesList.length === 0 ? (
             <div className="text-center py-16">
-              <Upload size={40} style={{ color: "#D1C9BB" }} className="mx-auto mb-4" />
-              <p className="font-body text-lg mb-2" style={{ color: "#6B7280" }}>
+              <Upload size={40} style={{ color: "var(--line)" }} className="mx-auto mb-4" />
+              <p className="font-body text-lg mb-2" style={{ color: "var(--ink-muted)" }}>
                 No files yet
               </p>
-              <p className="font-body text-sm" style={{ color: "#6B7280" }}>
+              <p className="font-body text-sm" style={{ color: "var(--ink-muted)" }}>
                 Upload your first file using the area above.
               </p>
             </div>

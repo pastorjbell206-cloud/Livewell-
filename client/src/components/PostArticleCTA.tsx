@@ -9,13 +9,13 @@ interface PostArticleCTAProps {
 
 export function PostArticleCTA({ articleTitle, articleSlug, pillar }: PostArticleCTAProps) {
   return (
-    <div className="my-16 py-12 border-t border-b" style={{ borderColor: "#D1C9BB" }}>
+    <div className="my-16 py-12 border-t border-b" style={{ borderColor: "var(--line)" }}>
       {/* Main CTA Section */}
       <div className="mb-12">
-        <h3 className="font-display font-bold text-2xl mb-4" style={{ color: "#1A1A1A" }}>
+        <h3 className="font-display font-bold text-2xl mb-4" style={{ color: "var(--ink)" }}>
           Continue Your Journey
         </h3>
-        <p className="text-lg mb-6" style={{ color: "#6B7280" }}>
+        <p className="text-lg mb-6" style={{ color: "var(--ink-muted)" }}>
           Ready to explore more on {pillar}? Discover our curated reading paths and deepen your understanding.
         </p>
         
@@ -23,7 +23,7 @@ export function PostArticleCTA({ articleTitle, articleSlug, pillar }: PostArticl
           <Link
             href="/reading-paths"
             className="inline-flex items-center justify-center gap-2 px-6 py-3 font-medium rounded transition-all hover:opacity-90"
-            style={{ backgroundColor: "#B8963E", color: "#F7F5F0" }}
+            style={{ backgroundColor: "var(--mustard)", color: "var(--bone)" }}
           >
             <BookOpen size={18} />
             Explore Reading Paths
@@ -33,7 +33,7 @@ export function PostArticleCTA({ articleTitle, articleSlug, pillar }: PostArticl
           <a
             href="#subscribe"
             className="inline-flex items-center justify-center gap-2 px-6 py-3 font-medium rounded border transition-all hover:opacity-90"
-            style={{ borderColor: "#B8963E", color: "#B8963E" }}
+            style={{ borderColor: "var(--mustard)", color: "var(--mustard)" }}
           >
             <Mail size={18} />
             Get Weekly Essays
@@ -42,38 +42,38 @@ export function PostArticleCTA({ articleTitle, articleSlug, pillar }: PostArticl
       </div>
 
       {/* Social Proof Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 py-8 border-t" style={{ borderColor: "#D1C9BB" }}>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 py-8 border-t" style={{ borderColor: "var(--line)" }}>
         <div className="text-center">
-          <div className="text-2xl font-bold mb-1" style={{ color: "#B8963E" }}>
+          <div className="text-2xl font-bold mb-1" style={{ color: "var(--mustard)" }}>
             225+
           </div>
-          <p className="text-sm" style={{ color: "#6B7280" }}>
+          <p className="text-sm" style={{ color: "var(--ink-muted)" }}>
             Articles Across 5 Pillars
           </p>
         </div>
         
         <div className="text-center">
-          <div className="text-2xl font-bold mb-1" style={{ color: "#B8963E" }}>
+          <div className="text-2xl font-bold mb-1" style={{ color: "var(--mustard)" }}>
             1,200+
           </div>
-          <p className="text-sm" style={{ color: "#6B7280" }}>
+          <p className="text-sm" style={{ color: "var(--ink-muted)" }}>
             Substack Subscribers
           </p>
         </div>
         
         <div className="text-center">
-          <div className="text-2xl font-bold mb-1" style={{ color: "#B8963E" }}>
+          <div className="text-2xl font-bold mb-1" style={{ color: "var(--mustard)" }}>
             12+
           </div>
-          <p className="text-sm" style={{ color: "#6B7280" }}>
+          <p className="text-sm" style={{ color: "var(--ink-muted)" }}>
             Countries Represented
           </p>
         </div>
       </div>
 
       {/* Share Section */}
-      <div className="mt-8 pt-8 border-t" style={{ borderColor: "#D1C9BB" }}>
-        <p className="text-sm font-medium mb-4" style={{ color: "#6B7280" }}>
+      <div className="mt-8 pt-8 border-t" style={{ borderColor: "var(--line)" }}>
+        <p className="text-sm font-medium mb-4" style={{ color: "var(--ink-muted)" }}>
           Share this article:
         </p>
         <div className="flex flex-wrap gap-3">
@@ -82,7 +82,7 @@ export function PostArticleCTA({ articleTitle, articleSlug, pillar }: PostArticl
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium transition-all hover:opacity-75"
-            style={{ backgroundColor: "#F7F5F0", color: "#1A1A1A" }}
+            style={{ backgroundColor: "var(--bone)", color: "var(--ink)" }}
           >
             <Share2 size={16} />
             Twitter
@@ -93,7 +93,7 @@ export function PostArticleCTA({ articleTitle, articleSlug, pillar }: PostArticl
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium transition-all hover:opacity-75"
-            style={{ backgroundColor: "#F7F5F0", color: "#1A1A1A" }}
+            style={{ backgroundColor: "var(--bone)", color: "var(--ink)" }}
           >
             <Share2 size={16} />
             LinkedIn
@@ -104,7 +104,7 @@ export function PostArticleCTA({ articleTitle, articleSlug, pillar }: PostArticl
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium transition-all hover:opacity-75"
-            style={{ backgroundColor: "#F7F5F0", color: "#1A1A1A" }}
+            style={{ backgroundColor: "var(--bone)", color: "var(--ink)" }}
           >
             <Share2 size={16} />
             Facebook

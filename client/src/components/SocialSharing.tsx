@@ -34,7 +34,7 @@ export function SocialSharing({ title, url, excerpt }: SocialSharingProps) {
 
   return (
     <div className="flex items-center gap-3 py-4">
-      <span style={{ color: "#6B7280", fontSize: "14px", fontWeight: 500 }}>Share:</span>
+      <span style={{ color: "var(--ink-muted)", fontSize: "14px", fontWeight: 500 }}>Share:</span>
       
       <button
         onClick={shareTwitter}
@@ -42,7 +42,7 @@ export function SocialSharing({ title, url, excerpt }: SocialSharingProps) {
         title="Share on Twitter"
         aria-label="Share on Twitter"
       >
-        <Twitter size={18} style={{ color: "#1A1A1A" }} />
+        <Twitter size={18} style={{ color: "var(--ink)" }} />
       </button>
 
       <button
@@ -51,7 +51,7 @@ export function SocialSharing({ title, url, excerpt }: SocialSharingProps) {
         title="Share on LinkedIn"
         aria-label="Share on LinkedIn"
       >
-        <Linkedin size={18} style={{ color: "#1A1A1A" }} />
+        <Linkedin size={18} style={{ color: "var(--ink)" }} />
       </button>
 
       <button
@@ -60,7 +60,7 @@ export function SocialSharing({ title, url, excerpt }: SocialSharingProps) {
         title="Share on Facebook"
         aria-label="Share on Facebook"
       >
-        <Facebook size={18} style={{ color: "#1A1A1A" }} />
+        <Facebook size={18} style={{ color: "var(--ink)" }} />
       </button>
 
       <button
@@ -70,9 +70,9 @@ export function SocialSharing({ title, url, excerpt }: SocialSharingProps) {
         aria-label="Copy link"
       >
         {copied ? (
-          <Check size={18} style={{ color: "#B8963E" }} />
+          <Check size={18} style={{ color: "var(--mustard)" }} />
         ) : (
-          <Copy size={18} style={{ color: "#1A1A1A" }} />
+          <Copy size={18} style={{ color: "var(--ink)" }} />
         )}
       </button>
     </div>

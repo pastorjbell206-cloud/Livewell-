@@ -49,7 +49,7 @@ export default function TheologyQuiz() {
         <MinimalNav />
         <div style={{ minHeight: "60vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--paper)" }}>
           <div style={{ textAlign: "center" }}>
-            <div style={{ width: "40px", height: "40px", border: "3px solid #E0D9CC", borderTop: "3px solid #B8963E", borderRadius: "50%", animation: "spin 1s linear infinite", margin: "0 auto 16px" }} />
+            <div style={{ width: "40px", height: "40px", border: "3px solid #E0D9CC", borderTop: "3px solid var(--mustard)", borderRadius: "50%", animation: "spin 1s linear infinite", margin: "0 auto 16px" }} />
             <p style={{ color: "var(--ink3)", fontFamily: "var(--F)" }}>Loading your quiz...</p>
           </div>
         </div>
@@ -163,7 +163,7 @@ export default function TheologyQuiz() {
               {recommendationsQuery.data && (
                 <>
                   {/* Top Pillar */}
-                  <div style={{ background: "white", borderRadius: "8px", border: "2px solid #B8963E", padding: "32px", marginBottom: "32px" }}>
+                  <div style={{ background: "white", borderRadius: "8px", border: "2px solid var(--mustard)", padding: "32px", marginBottom: "32px" }}>
                     <div style={{ fontSize: "12px", letterSpacing: "2px", color: "var(--gold)", fontWeight: "bold", marginBottom: "8px", textTransform: "uppercase" }}>Your Primary Pillar</div>
                     <h3 style={{ fontSize: "24px", fontWeight: "bold", color: "var(--gold)", fontFamily: "var(--F)", marginBottom: "12px" }}>
                       {recommendationsQuery.data.topPillar}
@@ -209,7 +209,7 @@ export default function TheologyQuiz() {
               <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
                 <button
                   onClick={handleReset}
-                  style={{ padding: "12px 24px", border: "2px solid #B8963E", background: "white", color: "var(--gold)", borderRadius: "4px", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}
+                  style={{ padding: "12px 24px", border: "2px solid var(--mustard)", background: "white", color: "var(--gold)", borderRadius: "4px", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}
                 >
                   Retake Quiz
                 </button>

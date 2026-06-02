@@ -72,14 +72,14 @@ export default function AdminPostEditor() {
   return (
     <AdminLayout>
       <div>
-        <h1 className="font-display text-4xl font-bold mb-8" style={{ color: "#1A1A1A" }}>
+        <h1 className="font-display text-4xl font-bold mb-8" style={{ color: "var(--ink)" }}>
           {postId ? "Edit Post" : "New Post"}
         </h1>
 
         <form onSubmit={handleSubmit} className="max-w-3xl space-y-6">
           {/* Title */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               Title
             </label>
             <input
@@ -87,14 +87,14 @@ export default function AdminPostEditor() {
               value={form.title}
               onChange={(e) => setForm({ ...form, title: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               placeholder="Post title"
             />
           </div>
 
           {/* Slug */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               URL Slug
             </label>
             <input
@@ -102,21 +102,21 @@ export default function AdminPostEditor() {
               value={form.slug}
               onChange={(e) => setForm({ ...form, slug: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               placeholder="url-friendly-slug"
             />
           </div>
 
           {/* Excerpt */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               Excerpt
             </label>
             <textarea
               value={form.excerpt}
               onChange={(e) => setForm({ ...form, excerpt: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               rows={3}
               placeholder="Short summary for cards"
             />
@@ -124,14 +124,14 @@ export default function AdminPostEditor() {
 
           {/* Body */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               Body (Markdown)
             </label>
             <textarea
               value={form.body}
               onChange={(e) => setForm({ ...form, body: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               rows={12}
               placeholder="Write your post in Markdown..."
             />
@@ -139,14 +139,14 @@ export default function AdminPostEditor() {
 
           {/* Pillar */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               Content Pillar
             </label>
             <select
               value={form.pillar}
               onChange={(e) => setForm({ ...form, pillar: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
             >
               <option value="">Select a pillar...</option>
               <option value="Prophetic Disruption">Prophetic Disruption</option>
@@ -159,7 +159,7 @@ export default function AdminPostEditor() {
 
           {/* Read Time */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               Read Time
             </label>
             <input
@@ -167,14 +167,14 @@ export default function AdminPostEditor() {
               value={form.readTime}
               onChange={(e) => setForm({ ...form, readTime: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               placeholder="e.g., 8 min read"
             />
           </div>
 
           {/* Cover Image */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               Cover Image URL
             </label>
             <input
@@ -182,7 +182,7 @@ export default function AdminPostEditor() {
               value={form.coverImage}
               onChange={(e) => setForm({ ...form, coverImage: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               placeholder="https://..."
             />
           </div>
@@ -195,7 +195,7 @@ export default function AdminPostEditor() {
                 checked={form.published}
                 onChange={(e) => setForm({ ...form, published: e.target.checked })}
               />
-              <span style={{ color: "#1A1A1A" }}>Published</span>
+              <span style={{ color: "var(--ink)" }}>Published</span>
             </label>
             <label className="flex items-center gap-2 cursor-pointer font-ui text-sm">
               <input
@@ -203,7 +203,7 @@ export default function AdminPostEditor() {
                 checked={form.featured}
                 onChange={(e) => setForm({ ...form, featured: e.target.checked })}
               />
-              <span style={{ color: "#1A1A1A" }}>Featured</span>
+              <span style={{ color: "var(--ink)" }}>Featured</span>
             </label>
           </div>
 
@@ -213,7 +213,7 @@ export default function AdminPostEditor() {
               type="submit"
               disabled={isLoading}
               className="flex items-center gap-2 px-6 py-3 rounded font-ui font-medium transition-opacity disabled:opacity-50"
-              style={{ backgroundColor: "#1A1A1A", color: "#F7F5F0" }}
+              style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)" }}
             >
               {isLoading ? <Loader2 size={16} className="animate-spin" /> : <Save size={16} />}
               {postId ? "Update Post" : "Create Post"}
@@ -222,7 +222,7 @@ export default function AdminPostEditor() {
               type="button"
               onClick={() => navigate("/admin/posts")}
               className="px-6 py-3 rounded font-ui font-medium"
-              style={{ backgroundColor: "#D1C9BB", color: "#1A1A1A" }}
+              style={{ backgroundColor: "var(--line)", color: "var(--ink)" }}
             >
               Cancel
             </button>

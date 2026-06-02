@@ -35,28 +35,28 @@ export default function AdminAbout() {
   return (
     <AdminLayout>
       <div>
-        <h1 className="font-display text-4xl font-bold mb-2" style={{ color: "#1A1A1A" }}>
+        <h1 className="font-display text-4xl font-bold mb-2" style={{ color: "var(--ink)" }}>
           About Page
         </h1>
-        <p className="font-body mb-8" style={{ color: "#6B7280" }}>
+        <p className="font-body mb-8" style={{ color: "var(--ink-muted)" }}>
           Edit the content that appears on your About page. Use Markdown for formatting.
         </p>
 
         <form onSubmit={handleSubmit} className="max-w-3xl space-y-6">
           {/* Content Editor */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               About Content (Markdown)
             </label>
             <textarea
               value={content}
               onChange={(e) => setContent(e.target.value)}
               className="w-full px-4 py-3 rounded border font-mono text-sm"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               rows={16}
               placeholder="Write your about page content here in Markdown..."
             />
-            <p className="font-ui text-xs mt-2" style={{ color: "#6B7280" }}>
+            <p className="font-ui text-xs mt-2" style={{ color: "var(--ink-muted)" }}>
               Supports Markdown formatting: **bold**, *italic*, # headings, - lists, [links](url), etc.
             </p>
           </div>
@@ -67,7 +67,7 @@ export default function AdminAbout() {
               type="submit"
               disabled={isLoading || getSettingQuery.isLoading}
               className="flex items-center gap-2 px-6 py-3 rounded font-ui font-medium transition-opacity disabled:opacity-50"
-              style={{ backgroundColor: "#1A1A1A", color: "#F7F5F0" }}
+              style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)" }}
             >
               {isLoading ? <Loader2 size={16} className="animate-spin" /> : <Save size={16} />}
               Save About Page

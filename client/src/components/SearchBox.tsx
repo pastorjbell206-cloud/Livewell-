@@ -68,7 +68,7 @@ export function SearchBox() {
         <Search
           size={18}
           className="absolute left-3 top-1/2 transform -translate-y-1/2 pointer-events-none"
-          style={{ color: "#6B7280" }}
+          style={{ color: "var(--ink-muted)" }}
         />
         <input
           type="text"
@@ -81,18 +81,18 @@ export function SearchBox() {
           }}
           onFocus={(e) => {
             setIsOpen(true);
-            e.currentTarget.style.borderColor = "#B8963E";
+            e.currentTarget.style.borderColor = "var(--mustard)";
             e.currentTarget.style.boxShadow = "0 0 0 2px rgba(184, 150, 62, 0.1)";
           }}
           onBlur={(e) => {
-            e.currentTarget.style.borderColor = "#D1C9BB";
+            e.currentTarget.style.borderColor = "var(--line)";
             e.currentTarget.style.boxShadow = "none";
           }}
           className="w-full pl-10 pr-10 py-2 border rounded-lg focus:outline-none focus:ring-2"
           style={{
-            borderColor: "#D1C9BB",
-            backgroundColor: "#F7F5F0",
-            color: "#1A1A1A",
+            borderColor: "var(--line)",
+            backgroundColor: "var(--bone)",
+            color: "var(--ink)",
           }}
         />
         {query && (
@@ -100,7 +100,7 @@ export function SearchBox() {
             onClick={handleClear}
             className="absolute right-3 top-1/2 transform -translate-y-1/2 p-1 hover:bg-gray-200 rounded"
           >
-            <X size={18} style={{ color: "#6B7280" }} />
+            <X size={18} style={{ color: "var(--ink-muted)" }} />
           </button>
         )}
       </div>
@@ -109,10 +109,10 @@ export function SearchBox() {
       {isOpen && query && (
         <div
           className="absolute top-full left-0 right-0 mt-2 bg-white border rounded-lg shadow-lg z-50 max-h-96 overflow-y-auto"
-          style={{ borderColor: "#D1C9BB" }}
+          style={{ borderColor: "var(--line)" }}
         >
           {searchQuery.isLoading && (
-            <div className="p-4 text-center" style={{ color: "#6B7280" }}>
+            <div className="p-4 text-center" style={{ color: "var(--ink-muted)" }}>
               Searching...
             </div>
           )}
@@ -124,7 +124,7 @@ export function SearchBox() {
           )}
 
           {results.length === 0 && !searchQuery.isLoading && (
-            <div className="p-4 text-center" style={{ color: "#6B7280" }}>
+            <div className="p-4 text-center" style={{ color: "var(--ink-muted)" }}>
               No results found for "{query}"
             </div>
           )}
@@ -141,14 +141,14 @@ export function SearchBox() {
                 <div className="flex-1">
                   <div
                     className="font-medium text-sm"
-                    style={{ color: "#1A1A1A" }}
+                    style={{ color: "var(--ink)" }}
                   >
                     {result.title}
                   </div>
                   {result.excerpt && (
                     <div
                       className="text-xs mt-1 line-clamp-2"
-                      style={{ color: "#6B7280" }}
+                      style={{ color: "var(--ink-muted)" }}
                     >
                       {result.excerpt}
                     </div>
@@ -158,7 +158,7 @@ export function SearchBox() {
                   className="text-xs font-medium ml-2 px-2 py-1 rounded"
                   style={{
                     backgroundColor: "#F3E8D8",
-                    color: "#B8963E",
+                    color: "var(--mustard)",
                   }}
                 >
                   {getResultLabel(result)}

@@ -27,20 +27,20 @@ export default function BookPreview({
       >
         {/* Modal Header */}
         <div className="sticky top-0 flex items-center justify-between p-6 border-b" style={{ borderColor: "#E5E7EB" }}>
-          <h2 className="font-display text-xl font-bold" style={{ color: "#1A1A1A" }}>
+          <h2 className="font-display text-xl font-bold" style={{ color: "var(--ink)" }}>
             Sample Chapter
           </h2>
           <button
             onClick={onClose}
             className="p-2 hover:bg-gray-100 rounded transition-colors"
           >
-            <X size={24} style={{ color: "#1A1A1A" }} />
+            <X size={24} style={{ color: "var(--ink)" }} />
           </button>
         </div>
 
         {/* Modal Content */}
         <div className="p-8">
-          <h3 className="font-display text-lg font-bold mb-6" style={{ color: "#1A1A1A" }}>
+          <h3 className="font-display text-lg font-bold mb-6" style={{ color: "var(--ink)" }}>
             {title}
           </h3>
 
@@ -57,7 +57,7 @@ export default function BookPreview({
             </div>
           ) : (
             <div className="text-center py-12">
-              <p className="font-body text-base" style={{ color: "#6B7280" }}>
+              <p className="font-body text-base" style={{ color: "var(--ink-muted)" }}>
                 Sample chapter coming soon. Check back later for a preview of this book.
               </p>
             </div>
@@ -65,7 +65,7 @@ export default function BookPreview({
 
           {/* Footer */}
           <div className="mt-8 pt-6 border-t" style={{ borderColor: "#E5E7EB" }}>
-            <p className="font-ui text-sm" style={{ color: "#6B7280" }}>
+            <p className="font-ui text-sm" style={{ color: "var(--ink-muted)" }}>
               This is a sample excerpt. Purchase the full book to read the complete content.
             </p>
           </div>

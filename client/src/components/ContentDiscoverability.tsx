@@ -58,14 +58,14 @@ export function ContentDiscoverability({
   };
 
   return (
-    <section className="py-8 px-4 bg-gradient-to-br from-[#F7F5F0] to-white rounded-lg">
+    <section className="py-8 px-4 bg-gradient-to-br from-[var(--bone)] to-white rounded-lg">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="flex items-center gap-3 mb-8">
           {getIcon()}
           <div>
-            <h2 className="text-2xl font-bold text-[#1A1A1A]">{getTitle()}</h2>
-            <p className="text-sm text-[#6B7280]">{getDescription()}</p>
+            <h2 className="text-2xl font-bold text-[var(--ink)]">{getTitle()}</h2>
+            <p className="text-sm text-[var(--ink-muted)]">{getDescription()}</p>
           </div>
         </div>
 
@@ -80,18 +80,18 @@ export function ContentDiscoverability({
               <div className="p-6">
                 {/* Pillar Badge */}
                 <div className="inline-block mb-3">
-                  <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#B8963E]/10 text-[#B8963E]">
+                  <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[var(--mustard)]/10 text-[var(--mustard)]">
                     {article.pillar}
                   </span>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-lg font-bold text-[#1A1A1A] mb-2 line-clamp-2">
+                <h3 className="text-lg font-bold text-[var(--ink)] mb-2 line-clamp-2">
                   {article.title}
                 </h3>
 
                 {/* Excerpt */}
-                <p className="text-sm text-[#6B7280] mb-4 line-clamp-2">
+                <p className="text-sm text-[var(--ink-muted)] mb-4 line-clamp-2">
                   {article.excerpt}
                 </p>
 
@@ -105,7 +105,7 @@ export function ContentDiscoverability({
                 <Button
                   variant="outline"
                   size="sm"
-                  className="w-full mt-4 text-[#B8963E] border-[#B8963E] hover:bg-[#B8963E]/5"
+                  className="w-full mt-4 text-[var(--mustard)] border-[var(--mustard)] hover:bg-[var(--mustard)]/5"
                 >
                   Read Article
                 </Button>
@@ -118,7 +118,7 @@ export function ContentDiscoverability({
         <div className="text-center mt-8">
           <Button
             variant="ghost"
-            className="text-[#B8963E] hover:text-[#9d7d35]"
+            className="text-[var(--mustard)] hover:text-[#9d7d35]"
           >
             View all {type === "trending" ? "trending" : type === "editors-picks" ? "editor's picks" : "featured"} articles →
           </Button>

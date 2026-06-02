@@ -264,7 +264,7 @@ export function ArticleCollections() {
                       key={article.id}
                       className="text-sm text-muted-foreground flex items-start gap-2"
                     >
-                      <span className="text-[#B8963E] mt-1">•</span>
+                      <span className="text-[var(--mustard)] mt-1">•</span>
                       <span>{article.title}</span>
                     </li>
                   ))}
@@ -279,7 +279,7 @@ export function ArticleCollections() {
                   )}{" "}
                   hours of reading
                 </div>
-                <div className="text-2xl font-bold text-[#B8963E]">
+                <div className="text-2xl font-bold text-[var(--mustard)]">
                   ${collection.price.toFixed(2)}
                 </div>
               </div>
@@ -306,19 +306,19 @@ export function ArticleCollections() {
           </h2>
           <ul className="space-y-3 text-muted-foreground">
             <li className="flex items-start gap-3">
-              <span className="text-[#B8963E] font-bold">✓</span>
+              <span className="text-[var(--mustard)] font-bold">✓</span>
               <span>Curated articles on a specific topic</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-[#B8963E] font-bold">✓</span>
+              <span className="text-[var(--mustard)] font-bold">✓</span>
               <span>Professional PDF formatting for easy reading</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-[#B8963E] font-bold">✓</span>
+              <span className="text-[var(--mustard)] font-bold">✓</span>
               <span>Discussion questions for small groups</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-[#B8963E] font-bold">✓</span>
+              <span className="text-[var(--mustard)] font-bold">✓</span>
               <span>Lifetime access to download anytime</span>
             </li>
           </ul>

@@ -29,11 +29,11 @@ export function ArticleReadingProgress({ articleId }: ArticleReadingProgressProp
   }, [articleId]);
 
   return (
-    <div className="fixed top-0 left-0 right-0 h-1 bg-gray-200 z-50" style={{ backgroundColor: "#D1C9BB" }}>
+    <div className="fixed top-0 left-0 right-0 h-1 bg-gray-200 z-50" style={{ backgroundColor: "var(--line)" }}>
       <div
         className="h-full transition-all duration-300"
         style={{
-          backgroundColor: "#B8963E",
+          backgroundColor: "var(--mustard)",
           width: `${progress}%`,
         }}
       />

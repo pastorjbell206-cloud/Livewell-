@@ -18,8 +18,8 @@ export function ArticleFilters({ pillars, selectedPillar, onPillarChange }: Arti
             : "text-gray-600 hover:text-gray-900 border border-gray-300"
         }`}
         style={{
-          backgroundColor: selectedPillar === null ? "#B8963E" : "transparent",
-          borderColor: selectedPillar === null ? "#B8963E" : "#D1C9BB",
+          backgroundColor: selectedPillar === null ? "var(--mustard)" : "transparent",
+          borderColor: selectedPillar === null ? "var(--mustard)" : "var(--line)",
         }}
       >
         All Articles
@@ -35,8 +35,8 @@ export function ArticleFilters({ pillars, selectedPillar, onPillarChange }: Arti
               : "text-gray-600 hover:text-gray-900 border border-gray-300"
           }`}
           style={{
-            backgroundColor: selectedPillar === pillar ? "#B8963E" : "transparent",
-            borderColor: selectedPillar === pillar ? "#B8963E" : "#D1C9BB",
+            backgroundColor: selectedPillar === pillar ? "var(--mustard)" : "transparent",
+            borderColor: selectedPillar === pillar ? "var(--mustard)" : "var(--line)",
           }}
         >
           {pillar}
@@ -53,10 +53,10 @@ export function RelatedArticles({ articles, currentSlug }: { articles: any[]; cu
   if (related.length === 0) return null;
 
   return (
-    <div className="mt-16 pt-8 border-t" style={{ borderColor: "#D1C9BB" }}>
+    <div className="mt-16 pt-8 border-t" style={{ borderColor: "var(--line)" }}>
       <h3
         className="font-display font-bold mb-6"
-        style={{ color: "#1A1A1A", fontSize: "20px" }}
+        style={{ color: "var(--ink)", fontSize: "20px" }}
       >
         Related Articles
       </h3>
@@ -69,17 +69,17 @@ export function RelatedArticles({ articles, currentSlug }: { articles: any[]; cu
           >
             <p
               className="text-xs font-medium uppercase tracking-[0.1em] mb-2"
-              style={{ color: "#B8963E" }}
+              style={{ color: "var(--mustard)" }}
             >
               {article.pillar}
             </p>
             <h4
               className="font-display font-bold mb-2 group-hover:underline"
-              style={{ color: "#1A1A1A", fontSize: "16px" }}
+              style={{ color: "var(--ink)", fontSize: "16px" }}
             >
               {article.title}
             </h4>
-            <p style={{ color: "#6B7280", fontSize: "14px" }}>
+            <p style={{ color: "var(--ink-muted)", fontSize: "14px" }}>
               {article.readTime}
             </p>
           </a>

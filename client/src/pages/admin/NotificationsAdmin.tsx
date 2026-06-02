@@ -56,10 +56,10 @@ export function NotificationsAdmin() {
     <AdminLayout>
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h1 className="text-3xl font-bold text-[#1A1A1A]">Notifications</h1>
+        <h1 className="text-3xl font-bold text-[var(--ink)]">Notifications</h1>
         <Button
           onClick={() => setShowForm(!showForm)}
-          className="bg-[#B8963E] hover:bg-[#1A1A1A] text-white flex items-center gap-2"
+          className="bg-[var(--mustard)] hover:bg-[var(--charcoal)] text-white flex items-center gap-2"
         >
           <Plus className="w-4 h-4" />
           New Notification
@@ -67,13 +67,13 @@ export function NotificationsAdmin() {
       </div>
 
       {showForm && (
-        <form onSubmit={handleSubmit} className="bg-[#F7F5F0] border border-[#B8963E] rounded-lg p-6 space-y-4">
+        <form onSubmit={handleSubmit} className="bg-[var(--bone)] border border-[var(--mustard)] rounded-lg p-6 space-y-4">
           <div>
-            <label className="block text-sm font-semibold text-[#1A1A1A] mb-2">Type</label>
+            <label className="block text-sm font-semibold text-[var(--ink)] mb-2">Type</label>
             <select
               value={formData.type}
               onChange={(e) => setFormData({ ...formData, type: e.target.value })}
-              className="w-full px-3 py-2 border border-[#B8963E] rounded focus:outline-none focus:ring-2 focus:ring-[#B8963E]"
+              className="w-full px-3 py-2 border border-[var(--mustard)] rounded focus:outline-none focus:ring-2 focus:ring-[var(--mustard)]"
             >
               <option value="announcement">Announcement</option>
               <option value="update">Update</option>
@@ -82,22 +82,22 @@ export function NotificationsAdmin() {
             </select>
           </div>
           <div>
-            <label className="block text-sm font-semibold text-[#1A1A1A] mb-2">Title *</label>
+            <label className="block text-sm font-semibold text-[var(--ink)] mb-2">Title *</label>
             <input
               type="text"
               value={formData.title}
               onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-              className="w-full px-3 py-2 border border-[#B8963E] rounded focus:outline-none focus:ring-2 focus:ring-[#B8963E]"
+              className="w-full px-3 py-2 border border-[var(--mustard)] rounded focus:outline-none focus:ring-2 focus:ring-[var(--mustard)]"
               placeholder="Notification title"
               required
             />
           </div>
           <div>
-            <label className="block text-sm font-semibold text-[#1A1A1A] mb-2">Message *</label>
+            <label className="block text-sm font-semibold text-[var(--ink)] mb-2">Message *</label>
             <textarea
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              className="w-full px-3 py-2 border border-[#B8963E] rounded focus:outline-none focus:ring-2 focus:ring-[#B8963E] h-24"
+              className="w-full px-3 py-2 border border-[var(--mustard)] rounded focus:outline-none focus:ring-2 focus:ring-[var(--mustard)] h-24"
               placeholder="Notification message"
               required
             />
@@ -109,10 +109,10 @@ export function NotificationsAdmin() {
               onChange={(e) => setFormData({ ...formData, showAsBanner: e.target.checked })}
               className="w-4 h-4"
             />
-            <span className="text-sm text-[#1A1A1A]">Show as site-wide banner</span>
+            <span className="text-sm text-[var(--ink)]">Show as site-wide banner</span>
           </label>
           <div className="flex gap-2">
-            <Button type="submit" disabled={createNotification.isPending} className="bg-[#B8963E] hover:bg-[#1A1A1A] text-white">
+            <Button type="submit" disabled={createNotification.isPending} className="bg-[var(--mustard)] hover:bg-[var(--charcoal)] text-white">
               {createNotification.isPending ? 'Creating...' : 'Create Notification'}
             </Button>
             <Button type="button" onClick={() => setShowForm(false)} variant="outline">Cancel</Button>
@@ -126,9 +126,9 @@ export function NotificationsAdmin() {
             <div key={notification.id} className="bg-white border border-gray-200 rounded-lg p-4 flex items-start justify-between hover:shadow-md transition-shadow">
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-1">
-                  <h3 className="font-semibold text-[#1A1A1A]">{notification.title}</h3>
+                  <h3 className="font-semibold text-[var(--ink)]">{notification.title}</h3>
                   {notification.showAsBanner && (
-                    <span className="px-2 py-1 bg-[#B8963E] text-white text-xs rounded">Banner</span>
+                    <span className="px-2 py-1 bg-[var(--mustard)] text-white text-xs rounded">Banner</span>
                   )}
                 </div>
                 <p className="text-gray-600 text-sm mb-2">{notification.message}</p>

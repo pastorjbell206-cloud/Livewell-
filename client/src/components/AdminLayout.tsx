@@ -31,20 +31,20 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   const { user, logout } = useAuth();
 
   return (
-    <div className="min-h-screen flex" style={{ backgroundColor: "#F7F5F0" }}>
+    <div className="min-h-screen flex" style={{ backgroundColor: "var(--bone)" }}>
       {/* Sidebar */}
       <aside
         className="w-64 flex-shrink-0 flex flex-col"
-        style={{ backgroundColor: "#1A1A1A", minHeight: "100vh" }}
+        style={{ backgroundColor: "var(--charcoal)", minHeight: "100vh" }}
       >
         {/* Brand */}
         <div className="p-6 pb-4">
           <Link href="/" className="flex items-center gap-2 no-underline group">
-            <span className="font-display text-xl font-black tracking-tight" style={{ color: "#F7F5F0" }}>
+            <span className="font-display text-xl font-black tracking-tight" style={{ color: "var(--bone)" }}>
               livewell
             </span>
           </Link>
-          <div className="mt-2 font-ui text-[10px] uppercase tracking-[0.15em]" style={{ color: "#B8963E" }}>
+          <div className="mt-2 font-ui text-[10px] uppercase tracking-[0.15em]" style={{ color: "var(--mustard)" }}>
             Admin Dashboard
           </div>
         </div>
@@ -62,7 +62,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                 href={item.href}
                 className="flex items-center gap-3 px-3 py-2.5 mb-1 rounded-sm font-ui text-sm no-underline transition-all duration-150"
                 style={{
-                  color: isActive ? "#F7F5F0" : "#6B7280",
+                  color: isActive ? "var(--bone)" : "var(--ink-muted)",
                   backgroundColor: isActive ? "#2C3E50" : "transparent",
                 }}
               >
@@ -78,18 +78,18 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           <Link
             href="/"
             className="flex items-center gap-2 px-3 py-2 mb-2 font-ui text-xs no-underline transition-colors"
-            style={{ color: "#6B7280" }}
+            style={{ color: "var(--ink-muted)" }}
           >
             <ArrowLeft size={14} /> Back to Site
           </Link>
           <button
             onClick={() => logout()}
             className="flex items-center gap-2 px-3 py-2 w-full font-ui text-xs transition-colors text-left"
-            style={{ color: "#6B7280" }}
+            style={{ color: "var(--ink-muted)" }}
           >
             <LogOut size={14} /> Sign Out
           </button>
-          <div className="mt-3 px-3 font-ui text-[10px]" style={{ color: "#6B7280" }}>
+          <div className="mt-3 px-3 font-ui text-[10px]" style={{ color: "var(--ink-muted)" }}>
             {user?.name || user?.email || "Admin"}
           </div>
         </div>

@@ -31,23 +31,23 @@ export function TrustSignals() {
   ];
 
   return (
-    <section className="py-12 bg-white rounded-lg border" style={{ borderColor: "#D1C9BB" }}>
+    <section className="py-12 bg-white rounded-lg border" style={{ borderColor: "var(--line)" }}>
       <div className="px-6">
-        <h3 className="font-display font-bold text-2xl mb-8 text-center" style={{ color: "#1A1A1A" }}>
+        <h3 className="font-display font-bold text-2xl mb-8 text-center" style={{ color: "var(--ink)" }}>
           Why Readers Trust LiveWell
         </h3>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {signals.map((signal, index) => (
             <div key={index} className="flex gap-4">
-              <div style={{ color: "#B8963E" }}>
+              <div style={{ color: "var(--mustard)" }}>
                 {signal.icon}
               </div>
               <div>
-                <h4 className="font-bold mb-1" style={{ color: "#1A1A1A" }}>
+                <h4 className="font-bold mb-1" style={{ color: "var(--ink)" }}>
                   {signal.title}
                 </h4>
-                <p className="text-sm" style={{ color: "#6B7280" }}>
+                <p className="text-sm" style={{ color: "var(--ink-muted)" }}>
                   {signal.description}
                 </p>
               </div>

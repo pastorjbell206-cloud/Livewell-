@@ -35,35 +35,35 @@ export function PillarsEmailSignup({ isOpen, onClose }: PillarsEmailSignupProps)
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
       <div
         className="bg-white rounded-lg shadow-xl max-w-md w-full p-8 relative"
-        style={{ backgroundColor: "#F7F5F0" }}
+        style={{ backgroundColor: "var(--bone)" }}
       >
         <button
           onClick={onClose}
           className="absolute top-4 right-4 p-1 hover:bg-gray-200 rounded-full transition-colors"
         >
-          <X size={20} style={{ color: "#6B7280" }} />
+          <X size={20} style={{ color: "var(--ink-muted)" }} />
         </button>
 
         <div className="flex items-center gap-3 mb-4">
-          <Mail size={24} style={{ color: "#B8963E" }} />
-          <h2 className="font-display text-2xl font-bold" style={{ color: "#1A1A1A" }}>
+          <Mail size={24} style={{ color: "var(--mustard)" }} />
+          <h2 className="font-display text-2xl font-bold" style={{ color: "var(--ink)" }}>
             Understanding the 5 Pillars
           </h2>
         </div>
 
         {submitted ? (
           <div className="text-center py-8">
-            <CheckCircle size={48} style={{ color: "#B8963E" }} className="mx-auto mb-4" />
+            <CheckCircle size={48} style={{ color: "var(--mustard)" }} className="mx-auto mb-4" />
             <p className="font-body text-lg mb-2" style={{ color: "#2D4A3E" }}>
               Check your email!
             </p>
-            <p className="font-body text-sm" style={{ color: "#6B7280" }}>
+            <p className="font-body text-sm" style={{ color: "var(--ink-muted)" }}>
               Your free guide is on the way.
             </p>
           </div>
         ) : (
           <>
-            <p className="font-body text-base mb-6" style={{ color: "#6B7280" }}>
+            <p className="font-body text-base mb-6" style={{ color: "var(--ink-muted)" }}>
               Get a free PDF guide explaining all 5 pillars of LiveWell and how to use them to transform your spiritual life.
             </p>
 
@@ -75,13 +75,13 @@ export function PillarsEmailSignup({ isOpen, onClose }: PillarsEmailSignupProps)
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 className="w-full px-4 py-3 rounded border font-body"
-                style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+                style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               />
               <button
                 type="submit"
                 disabled={subscribeMutation.isPending}
                 className="w-full py-3 rounded font-ui font-medium transition-all text-white disabled:opacity-50"
-                style={{ backgroundColor: "#B8963E" }}
+                style={{ backgroundColor: "var(--mustard)" }}
               >
                 {subscribeMutation.isPending ? "Subscribing..." : "Get Free Guide"}
               </button>
@@ -92,7 +92,7 @@ export function PillarsEmailSignup({ isOpen, onClose }: PillarsEmailSignupProps)
               )}
             </form>
 
-            <p className="font-ui text-xs text-center mt-4" style={{ color: "#6B7280" }}>
+            <p className="font-ui text-xs text-center mt-4" style={{ color: "var(--ink-muted)" }}>
               We respect your privacy. Unsubscribe anytime.
             </p>
           </>

@@ -7,15 +7,15 @@ interface BadgeProps {
 }
 
 const Badge = ({ icon, label, value }: BadgeProps) => (
-  <div className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white border" style={{ borderColor: "#D1C9BB" }}>
-    <div style={{ color: "#B8963E" }}>
+  <div className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white border" style={{ borderColor: "var(--line)" }}>
+    <div style={{ color: "var(--mustard)" }}>
       {icon}
     </div>
     <div>
-      <p className="text-xs font-medium uppercase tracking-wide" style={{ color: "#6B7280" }}>
+      <p className="text-xs font-medium uppercase tracking-wide" style={{ color: "var(--ink-muted)" }}>
         {label}
       </p>
-      <p className="text-lg font-bold" style={{ color: "#1A1A1A" }}>
+      <p className="text-lg font-bold" style={{ color: "var(--ink)" }}>
         {value}
       </p>
     </div>

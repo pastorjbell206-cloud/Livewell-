@@ -33,10 +33,10 @@ export function MobileDeepLinks({ articleTitle, articleUrl, articleExcerpt = "" 
   ];
 
   return (
-    <div className="my-8 p-6 rounded-lg border bg-white" style={{ borderColor: "#D1C9BB" }}>
+    <div className="my-8 p-6 rounded-lg border bg-white" style={{ borderColor: "var(--line)" }}>
       <div className="flex items-center gap-2 mb-4">
-        <Share2 size={18} style={{ color: "#B8963E" }} />
-        <h4 className="font-bold" style={{ color: "#1A1A1A" }}>
+        <Share2 size={18} style={{ color: "var(--mustard)" }} />
+        <h4 className="font-bold" style={{ color: "var(--ink)" }}>
           Share to Apps
         </h4>
       </div>
@@ -61,7 +61,7 @@ export function MobileDeepLinks({ articleTitle, articleUrl, articleExcerpt = "" 
         })}
       </div>
 
-      <p className="text-xs mt-4" style={{ color: "#6B7280" }}>
+      <p className="text-xs mt-4" style={{ color: "var(--ink-muted)" }}>
         Share this article directly to messaging apps on your phone
       </p>
     </div>

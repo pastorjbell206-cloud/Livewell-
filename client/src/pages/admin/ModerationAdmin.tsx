@@ -10,15 +10,15 @@ export function ModerationAdmin() {
     <AdminLayout>
     <div className="space-y-8">
       {/* Tabs */}
-      <div className="flex gap-4 border-b" style={{ borderColor: "#D1C9BB" }}>
+      <div className="flex gap-4 border-b" style={{ borderColor: "var(--line)" }}>
         <button
           onClick={() => setActiveTab("testimonials")}
           className={`px-4 py-2 font-medium transition-colors ${
             activeTab === "testimonials" ? "border-b-2" : "text-gray-500"
           }`}
           style={{
-            borderColor: activeTab === "testimonials" ? "#B8963E" : "transparent",
-            color: activeTab === "testimonials" ? "#1A1A1A" : "#6B7280",
+            borderColor: activeTab === "testimonials" ? "var(--mustard)" : "transparent",
+            color: activeTab === "testimonials" ? "var(--ink)" : "var(--ink-muted)",
           }}
         >
           Testimonials
@@ -29,8 +29,8 @@ export function ModerationAdmin() {
             activeTab === "comments" ? "border-b-2" : "text-gray-500"
           }`}
           style={{
-            borderColor: activeTab === "comments" ? "#B8963E" : "transparent",
-            color: activeTab === "comments" ? "#1A1A1A" : "#6B7280",
+            borderColor: activeTab === "comments" ? "var(--mustard)" : "transparent",
+            color: activeTab === "comments" ? "var(--ink)" : "var(--ink-muted)",
           }}
         >
           Comments

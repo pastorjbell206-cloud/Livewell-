@@ -31,7 +31,7 @@ export function ReaderTestimonials() {
 
   return (
     <section className="py-12">
-      <h3 className="font-display font-bold text-2xl mb-8 text-center" style={{ color: "#1A1A1A" }}>
+      <h3 className="font-display font-bold text-2xl mb-8 text-center" style={{ color: "var(--ink)" }}>
         What Readers Are Saying
       </h3>
       
@@ -40,26 +40,26 @@ export function ReaderTestimonials() {
           <div
             key={index}
             className="p-6 rounded-lg border bg-white hover:shadow-lg transition-shadow"
-            style={{ borderColor: "#D1C9BB" }}
+            style={{ borderColor: "var(--line)" }}
           >
             {/* Rating */}
             <div className="flex gap-1 mb-4">
               {Array.from({ length: testimonial.rating }).map((_, i) => (
-                <Star key={i} size={16} fill="#B8963E" style={{ color: "#B8963E" }} />
+                <Star key={i} size={16} fill="var(--mustard)" style={{ color: "var(--mustard)" }} />
               ))}
             </div>
 
             {/* Testimonial text */}
-            <p className="mb-4 italic" style={{ color: "#6B7280" }}>
+            <p className="mb-4 italic" style={{ color: "var(--ink-muted)" }}>
               "{testimonial.text}"
             </p>
 
             {/* Author */}
             <div>
-              <p className="font-bold" style={{ color: "#1A1A1A" }}>
+              <p className="font-bold" style={{ color: "var(--ink)" }}>
                 {testimonial.name}
               </p>
-              <p className="text-sm" style={{ color: "#6B7280" }}>
+              <p className="text-sm" style={{ color: "var(--ink-muted)" }}>
                 {testimonial.role}
               </p>
             </div>

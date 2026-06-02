@@ -38,17 +38,17 @@ export default function AdminResources() {
       <div>
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h1 className="font-display text-4xl font-bold mb-2" style={{ color: "#1A1A1A" }}>
+            <h1 className="font-display text-4xl font-bold mb-2" style={{ color: "var(--ink)" }}>
               Resources
             </h1>
-            <p className="font-body" style={{ color: "#6B7280" }}>
+            <p className="font-body" style={{ color: "var(--ink-muted)" }}>
               Manage downloadable resources and study materials
             </p>
           </div>
           <Link
             href="/admin/resources/new"
             className="flex items-center gap-2 px-4 py-2 rounded font-ui font-medium no-underline"
-            style={{ backgroundColor: "#2D4A3E", color: "#F7F5F0" }}
+            style={{ backgroundColor: "#2D4A3E", color: "var(--bone)" }}
           >
             <Plus size={16} /> New Resource
           </Link>
@@ -56,17 +56,17 @@ export default function AdminResources() {
 
         {resourcesQuery.isLoading ? (
           <div className="flex justify-center py-12">
-            <Loader2 size={32} className="animate-spin" style={{ color: "#B8963E" }} />
+            <Loader2 size={32} className="animate-spin" style={{ color: "var(--mustard)" }} />
           </div>
         ) : resourcesQuery.data?.length === 0 ? (
           <div className="text-center py-12" style={{ backgroundColor: "#FFFFFF", borderRadius: "8px" }}>
-            <p className="font-body mb-4" style={{ color: "#6B7280" }}>
+            <p className="font-body mb-4" style={{ color: "var(--ink-muted)" }}>
               No resources yet. Create your first resource.
             </p>
             <Link
               href="/admin/resources/new"
               className="inline-flex items-center gap-2 px-4 py-2 rounded font-ui font-medium no-underline"
-              style={{ backgroundColor: "#2D4A3E", color: "#F7F5F0" }}
+              style={{ backgroundColor: "#2D4A3E", color: "var(--bone)" }}
             >
               <Plus size={16} /> Create Resource
             </Link>
@@ -77,13 +77,13 @@ export default function AdminResources() {
               <div
                 key={resource.id}
                 className="flex items-center justify-between p-4 rounded-lg"
-                style={{ backgroundColor: "#FFFFFF", borderLeft: `4px solid ${resource.published ? "#2D4A3E" : "#D1C9BB"}` }}
+                style={{ backgroundColor: "#FFFFFF", borderLeft: `4px solid ${resource.published ? "#2D4A3E" : "var(--line)"}` }}
               >
                 <div className="flex-1">
-                  <h3 className="font-display text-lg font-bold mb-1" style={{ color: "#1A1A1A" }}>
+                  <h3 className="font-display text-lg font-bold mb-1" style={{ color: "var(--ink)" }}>
                     {resource.title}
                   </h3>
-                  <div className="flex items-center gap-3 font-ui text-sm" style={{ color: "#6B7280" }}>
+                  <div className="flex items-center gap-3 font-ui text-sm" style={{ color: "var(--ink-muted)" }}>
                     <span>{resource.category || "Uncategorized"}</span>
                     <span>•</span>
                     <span>{resource.fileType || "—"}</span>
@@ -96,7 +96,7 @@ export default function AdminResources() {
                   <button
                     onClick={() => handleTogglePublish(resource)}
                     className="p-2 rounded transition-colors"
-                    style={{ backgroundColor: "#F0F0F0", color: "#6B7280" }}
+                    style={{ backgroundColor: "#F0F0F0", color: "var(--ink-muted)" }}
                   >
                     {resource.published ? <Eye size={16} /> : <EyeOff size={16} />}
                   </button>
@@ -104,7 +104,7 @@ export default function AdminResources() {
                   <Link
                     href={`/admin/resources/${resource.id}/edit`}
                     className="p-2 rounded transition-colors no-underline"
-                    style={{ backgroundColor: "#F0F0F0", color: "#6B7280" }}
+                    style={{ backgroundColor: "#F0F0F0", color: "var(--ink-muted)" }}
                   >
                     <Edit2 size={16} />
                   </Link>

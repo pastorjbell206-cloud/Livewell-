@@ -27,7 +27,7 @@ export function BannerNotification({ dismissedIds = new Set(), onDismiss }: Bann
   };
 
   return (
-    <div className="bg-gradient-to-r from-[#B8963E] to-[#1A1A1A] text-[#F7F5F0] px-4 py-3 flex items-center justify-between gap-4">
+    <div className="bg-gradient-to-r from-[var(--mustard)] to-[var(--charcoal)] text-[var(--bone)] px-4 py-3 flex items-center justify-between gap-4">
       <div className="flex-1">
         <p className="font-semibold">{activeBanner.title}</p>
         {activeBanner.message && (

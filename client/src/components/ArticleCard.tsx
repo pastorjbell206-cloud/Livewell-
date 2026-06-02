@@ -18,7 +18,7 @@ interface ArticleCardProps {
 
 const PILLAR_COLORS: Record<string, { bg: string; text: string; icon: string }> = {
   "Prophetic Disruption": {
-    bg: "bg-[#1A1A1A]",
+    bg: "bg-[var(--charcoal)]",
     text: "text-white",
     icon: "",
   },
@@ -33,12 +33,12 @@ const PILLAR_COLORS: Record<string, { bg: string; text: string; icon: string }> 
     icon: "⚖️",
   },
   "Integrated Life": {
-    bg: "bg-[#B8963E]",
+    bg: "bg-[var(--mustard)]",
     text: "text-white",
     icon: "",
   },
   "Leadership Formation": {
-    bg: "bg-[#6B7280]",
+    bg: "bg-[var(--ink-muted)]",
     text: "text-white",
     icon: "👥",
   },
@@ -66,7 +66,7 @@ export function ArticleCard({
     <Link href={`/writing/${slug}`}>
       <a className={cn(
         "group block h-full rounded-lg border border-border bg-card p-6 transition-all hover:shadow-lg hover:border-accent",
-        isFeatured && "ring-2 ring-[#B8963E] ring-offset-2",
+        isFeatured && "ring-2 ring-[var(--mustard)] ring-offset-2",
         className
       )}>
         {/* Header with pillar badge and featured star */}
@@ -80,7 +80,7 @@ export function ArticleCard({
             <span className="truncate">{pillar}</span>
           </div>
           {isFeatured && (
-            <div className="flex items-center gap-1 rounded-full bg-[#B8963E] px-2 py-1 text-white">
+            <div className="flex items-center gap-1 rounded-full bg-[var(--mustard)] px-2 py-1 text-white">
               <Star size={14} className="fill-current" />
               <span className="text-xs font-semibold">Editor's Pick</span>
             </div>

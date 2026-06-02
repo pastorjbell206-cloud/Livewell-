@@ -170,7 +170,7 @@ export function BookBundles() {
                         key={book.id}
                         className="text-sm text-muted-foreground flex items-start gap-2"
                       >
-                        <span className="text-[#B8963E] mt-1">•</span>
+                        <span className="text-[var(--mustard)] mt-1">•</span>
                         <div>
                           <span className="font-medium text-foreground">
                             {book.title}
@@ -187,7 +187,7 @@ export function BookBundles() {
                 {/* Pricing */}
                 <div className="mb-6 border-t border-border pt-6">
                   <div className="flex items-baseline gap-3 mb-2">
-                    <div className="text-3xl font-bold text-[#B8963E]">
+                    <div className="text-3xl font-bold text-[var(--mustard)]">
                       ${bundle.bundlePrice.toFixed(2)}
                     </div>
                     <div className="text-lg text-muted-foreground line-through">
@@ -212,24 +212,24 @@ export function BookBundles() {
         {/* Info Section */}
         <div className="mt-12 rounded-lg border border-border bg-card p-8">
           <h2 className="mb-4 text-2xl font-bold text-foreground flex items-center gap-2">
-            <Gift className="text-[#B8963E]" />
+            <Gift className="text-[var(--mustard)]" />
             Why Buy Bundles?
           </h2>
           <ul className="space-y-3 text-muted-foreground">
             <li className="flex items-start gap-3">
-              <span className="text-[#B8963E] font-bold">✓</span>
+              <span className="text-[var(--mustard)] font-bold">✓</span>
               <span>Save up to 40% compared to buying books individually</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-[#B8963E] font-bold">✓</span>
+              <span className="text-[var(--mustard)] font-bold">✓</span>
               <span>Curated collections on specific topics for focused learning</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-[#B8963E] font-bold">✓</span>
+              <span className="text-[var(--mustard)] font-bold">✓</span>
               <span>Perfect for small groups, church libraries, or personal study</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-[#B8963E] font-bold">✓</span>
+              <span className="text-[var(--mustard)] font-bold">✓</span>
               <span>Lifetime access to all books in your bundle</span>
             </li>
           </ul>

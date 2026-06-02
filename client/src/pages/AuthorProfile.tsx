@@ -124,7 +124,7 @@ export function AuthorProfile() {
               <h1 className="mb-2 text-4xl font-bold text-foreground">
                 {author.name}
               </h1>
-              <p className="mb-4 text-lg font-semibold text-[#B8963E]">
+              <p className="mb-4 text-lg font-semibold text-[var(--mustard)]">
                 {author.role}
               </p>
               <p className="mb-6 text-lg text-muted-foreground">
@@ -171,13 +171,13 @@ export function AuthorProfile() {
             {/* Stats */}
             <div className="rounded-lg border border-border bg-background p-6">
               <div className="mb-6">
-                <div className="text-3xl font-bold text-[#B8963E]">
+                <div className="text-3xl font-bold text-[var(--mustard)]">
                   {author.articles.length}
                 </div>
                 <p className="text-sm text-muted-foreground">Articles Published</p>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[#B8963E]">
+                <div className="text-3xl font-bold text-[var(--mustard)]">
                   {Math.round(
                     author.articles.reduce((sum, a) => sum + (a.readTime || 5), 0) / 5
                   )}

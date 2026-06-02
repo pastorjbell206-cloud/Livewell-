@@ -15,7 +15,7 @@ export default function AdminDashboard() {
   const stats = [
     { label: "Writing Posts", value: postsQuery.data?.length ?? 0, icon: PenLine, href: "/admin/posts", color: "#2C3E50" },
     { label: "Resources", value: resourcesQuery.data?.length ?? 0, icon: FolderOpen, href: "/admin/resources", color: "#2D4A3E" },
-    { label: "Books", value: booksQuery.data?.length ?? 0, icon: BookOpen, href: "/admin/books", color: "#B8963E" },
+    { label: "Books", value: booksQuery.data?.length ?? 0, icon: BookOpen, href: "/admin/books", color: "var(--mustard)" },
   ];
 
   const handleSeedContent = async () => {
@@ -47,10 +47,10 @@ export default function AdminDashboard() {
   return (
     <AdminLayout>
       <div>
-        <h1 className="font-display text-4xl font-bold mb-2" style={{ color: "#1A1A1A" }}>
+        <h1 className="font-display text-4xl font-bold mb-2" style={{ color: "var(--ink)" }}>
           Dashboard
         </h1>
-        <p className="font-body text-lg mb-8" style={{ color: "#6B7280" }}>
+        <p className="font-body text-lg mb-8" style={{ color: "var(--ink-muted)" }}>
           Welcome to the Livewell admin panel. Manage your content below.
         </p>
 
@@ -68,7 +68,7 @@ export default function AdminDashboard() {
               >
                 <div className="flex items-start justify-between">
                   <div>
-                    <div className="font-ui text-xs uppercase tracking-wider mb-2" style={{ color: "#6B7280" }}>
+                    <div className="font-ui text-xs uppercase tracking-wider mb-2" style={{ color: "var(--ink-muted)" }}>
                       {stat.label}
                     </div>
                     <div className="font-display text-4xl font-bold" style={{ color: stat.color }}>
@@ -86,10 +86,10 @@ export default function AdminDashboard() {
         <div className="mb-12 p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB" }}>
           <div className="flex items-center justify-between mb-2">
             <div>
-              <h2 className="font-display text-xl font-bold" style={{ color: "#1A1A1A" }}>
+              <h2 className="font-display text-xl font-bold" style={{ color: "var(--ink)" }}>
                 Import Content
               </h2>
-              <p className="font-body text-sm" style={{ color: "#6B7280" }}>
+              <p className="font-body text-sm" style={{ color: "var(--ink-muted)" }}>
                 Load {contentData.posts.length} articles, {contentData.books.length} books, and site settings. Duplicates are skipped.
               </p>
             </div>
@@ -97,7 +97,7 @@ export default function AdminDashboard() {
               onClick={handleSeedContent}
               disabled={seeding}
               className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-ui font-semibold text-sm transition-colors"
-              style={{ backgroundColor: seeding ? "#9CA3AF" : "#2D4A3E", color: "#F7F5F0", cursor: seeding ? "default" : "pointer" }}
+              style={{ backgroundColor: seeding ? "#9CA3AF" : "#2D4A3E", color: "var(--bone)", cursor: seeding ? "default" : "pointer" }}
             >
               {seeding ? <Loader2 size={16} className="animate-spin" /> : <Upload size={16} />}
               {seeding ? "Importing..." : "Import All Content"}
@@ -132,20 +132,20 @@ export default function AdminDashboard() {
 
         {/* Quick Actions */}
         <div>
-          <h2 className="font-display text-2xl font-bold mb-4" style={{ color: "#1A1A1A" }}>
+          <h2 className="font-display text-2xl font-bold mb-4" style={{ color: "var(--ink)" }}>
             Quick Actions
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/admin/posts/new" className="p-4 rounded-lg font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "#1A1A1A", color: "#F7F5F0" }}>
+            <Link href="/admin/posts/new" className="p-4 rounded-lg font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)" }}>
               + New Writing Post
             </Link>
-            <Link href="/admin/resources/new" className="p-4 rounded-lg font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "#2D4A3E", color: "#F7F5F0" }}>
+            <Link href="/admin/resources/new" className="p-4 rounded-lg font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "#2D4A3E", color: "var(--bone)" }}>
               + New Resource
             </Link>
-            <Link href="/admin/books/new" className="p-4 rounded-lg font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "#B8963E", color: "#1A1A1A" }}>
+            <Link href="/admin/books/new" className="p-4 rounded-lg font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "var(--mustard)", color: "var(--ink)" }}>
               + New Book
             </Link>
-            <Link href="/admin/settings" className="p-4 rounded-lg font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "#2C3E50", color: "#F7F5F0" }}>
+            <Link href="/admin/settings" className="p-4 rounded-lg font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "#2C3E50", color: "var(--bone)" }}>
               Site Settings
             </Link>
           </div>

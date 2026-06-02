@@ -22,16 +22,16 @@ export function AdminCommentsPanel() {
     <div className="space-y-6">
       {/* Header */}
       <div>
-        <h2 className="text-2xl font-bold mb-2" style={{ color: "#1A1A1A" }}>
+        <h2 className="text-2xl font-bold mb-2" style={{ color: "var(--ink)" }}>
           Comments Moderation
         </h2>
-        <p style={{ color: "#6B7280" }}>
+        <p style={{ color: "var(--ink-muted)" }}>
           Review and moderate reader comments on your articles
         </p>
       </div>
 
       {/* Tabs */}
-      <div className="flex gap-4 border-b" style={{ borderColor: "#D1C9BB" }}>
+      <div className="flex gap-4 border-b" style={{ borderColor: "var(--line)" }}>
         <button
           onClick={() => setActiveTab("pending")}
           className={`px-4 py-2 font-medium transition-colors ${
@@ -40,8 +40,8 @@ export function AdminCommentsPanel() {
               : "text-gray-500"
           }`}
           style={{
-            borderColor: activeTab === "pending" ? "#B8963E" : "transparent",
-            color: activeTab === "pending" ? "#1A1A1A" : "#6B7280",
+            borderColor: activeTab === "pending" ? "var(--mustard)" : "transparent",
+            color: activeTab === "pending" ? "var(--ink)" : "var(--ink-muted)",
           }}
         >
           Pending ({pending.length})
@@ -54,8 +54,8 @@ export function AdminCommentsPanel() {
               : "text-gray-500"
           }`}
           style={{
-            borderColor: activeTab === "approved" ? "#B8963E" : "transparent",
-            color: activeTab === "approved" ? "#1A1A1A" : "#6B7280",
+            borderColor: activeTab === "approved" ? "var(--mustard)" : "transparent",
+            color: activeTab === "approved" ? "var(--ink)" : "var(--ink-muted)",
           }}
         >
           Approved ({approved.length})
@@ -66,10 +66,10 @@ export function AdminCommentsPanel() {
       {currentList.length === 0 && (
         <div
           className="text-center py-12 rounded-lg"
-          style={{ backgroundColor: "#F7F5F0" }}
+          style={{ backgroundColor: "var(--bone)" }}
         >
-          <AlertCircle size={48} style={{ color: "#B8963E", margin: "0 auto 1rem" }} />
-          <p style={{ color: "#6B7280" }}>
+          <AlertCircle size={48} style={{ color: "var(--mustard)", margin: "0 auto 1rem" }} />
+          <p style={{ color: "var(--ink-muted)" }}>
             {activeTab === "pending"
               ? "No pending comments"
               : "No approved comments"}
@@ -84,21 +84,21 @@ export function AdminCommentsPanel() {
             key={comment.id}
             className="p-6 rounded-lg border"
             style={{
-              backgroundColor: "#F7F5F0",
-              borderColor: "#D1C9BB",
+              backgroundColor: "var(--bone)",
+              borderColor: "var(--line)",
             }}
           >
             {/* Header */}
             <div className="mb-4">
               <div className="flex items-center justify-between mb-2">
-                <h3 className="font-semibold" style={{ color: "#1A1A1A" }}>
+                <h3 className="font-semibold" style={{ color: "var(--ink)" }}>
                   {comment.authorName}
                 </h3>
-                <span style={{ color: "#6B7280", fontSize: "0.875rem" }}>
+                <span style={{ color: "var(--ink-muted)", fontSize: "0.875rem" }}>
                   on Article #{comment.postId}
                 </span>
               </div>
-              <p style={{ color: "#6B7280", fontSize: "0.875rem" }}>
+              <p style={{ color: "var(--ink-muted)", fontSize: "0.875rem" }}>
                 {comment.authorEmail}
               </p>
             </div>
@@ -120,7 +120,7 @@ export function AdminCommentsPanel() {
                   className="flex items-center gap-2"
                   style={{
                     backgroundColor: "#10B981",
-                    color: "#F7F5F0",
+                    color: "var(--bone)",
                   }}
                 >
                   <Check size={16} />
@@ -134,7 +134,7 @@ export function AdminCommentsPanel() {
                 className="flex items-center gap-2"
                 style={{
                   backgroundColor: "#EF4444",
-                  color: "#F7F5F0",
+                  color: "var(--bone)",
                 }}
               >
                 <Trash2 size={16} />

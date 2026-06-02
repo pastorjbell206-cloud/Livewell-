@@ -62,7 +62,7 @@ export default function AdminLogin() {
             fontFamily: "system-ui, sans-serif",
           }}
         >
-          <h1 style={{ fontSize: 24, fontWeight: 700, marginBottom: 8, color: "#1A1A1A" }}>Admin Login</h1>
+          <h1 style={{ fontSize: 24, fontWeight: 700, marginBottom: 8, color: "var(--ink)" }}>Admin Login</h1>
           <p style={{ fontSize: 14, color: "#555", marginBottom: 24 }}>Enter your admin password to continue.</p>
 
           {setupNeeded && (
@@ -118,7 +118,7 @@ export default function AdminLogin() {
               fontSize: 16,
               fontWeight: 600,
               color: "white",
-              background: loading ? "#888" : "#1A1A1A",
+              background: loading ? "#888" : "var(--ink)",
               border: "none",
               borderRadius: 6,
               cursor: loading ? "default" : "pointer",

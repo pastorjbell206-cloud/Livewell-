@@ -53,17 +53,17 @@ export default function AdminPosts() {
       <div>
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h1 className="font-display text-4xl font-bold mb-2" style={{ color: "#1A1A1A" }}>
+            <h1 className="font-display text-4xl font-bold mb-2" style={{ color: "var(--ink)" }}>
               Writing Posts
             </h1>
-            <p className="font-body" style={{ color: "#6B7280" }}>
+            <p className="font-body" style={{ color: "var(--ink-muted)" }}>
               Manage your blog posts and articles
             </p>
           </div>
           <Link
             href="/admin/posts/new"
             className="flex items-center gap-2 px-4 py-2 rounded font-ui font-medium no-underline"
-            style={{ backgroundColor: "#1A1A1A", color: "#F7F5F0" }}
+            style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)" }}
           >
             <Plus size={16} /> New Post
           </Link>
@@ -71,17 +71,17 @@ export default function AdminPosts() {
 
         {postsQuery.isLoading ? (
           <div className="flex justify-center py-12">
-            <Loader2 size={32} className="animate-spin" style={{ color: "#B8963E" }} />
+            <Loader2 size={32} className="animate-spin" style={{ color: "var(--mustard)" }} />
           </div>
         ) : postsQuery.data?.length === 0 ? (
           <div className="text-center py-12" style={{ backgroundColor: "#FFFFFF", borderRadius: "8px" }}>
-            <p className="font-body mb-4" style={{ color: "#6B7280" }}>
+            <p className="font-body mb-4" style={{ color: "var(--ink-muted)" }}>
               No posts yet. Create your first post to get started.
             </p>
             <Link
               href="/admin/posts/new"
               className="inline-flex items-center gap-2 px-4 py-2 rounded font-ui font-medium no-underline"
-              style={{ backgroundColor: "#1A1A1A", color: "#F7F5F0" }}
+              style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)" }}
             >
               <Plus size={16} /> Create Post
             </Link>
@@ -92,16 +92,16 @@ export default function AdminPosts() {
               <div
                 key={post.id}
                 className="flex items-center justify-between p-4 rounded-lg"
-                style={{ backgroundColor: "#FFFFFF", borderLeft: `4px solid ${post.published ? "#2C3E50" : "#D1C9BB"}` }}
+                style={{ backgroundColor: "#FFFFFF", borderLeft: `4px solid ${post.published ? "#2C3E50" : "var(--line)"}` }}
               >
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-1">
-                    <h3 className="font-display text-lg font-bold" style={{ color: "#1A1A1A" }}>
+                    <h3 className="font-display text-lg font-bold" style={{ color: "var(--ink)" }}>
                       {post.title}
                     </h3>
-                    {post.featured && <Star size={16} style={{ color: "#B8963E" }} fill="#B8963E" />}
+                    {post.featured && <Star size={16} style={{ color: "var(--mustard)" }} fill="var(--mustard)" />}
                   </div>
-                  <div className="flex items-center gap-3 font-ui text-sm" style={{ color: "#6B7280" }}>
+                  <div className="flex items-center gap-3 font-ui text-sm" style={{ color: "var(--ink-muted)" }}>
                     <span>{post.pillar || "Uncategorized"}</span>
                     <span>•</span>
                     <span>{post.readTime || "—"}</span>
@@ -114,7 +114,7 @@ export default function AdminPosts() {
                   <button
                     onClick={() => handleTogglePublish(post)}
                     className="p-2 rounded transition-colors"
-                    style={{ backgroundColor: "#F0F0F0", color: "#6B7280" }}
+                    style={{ backgroundColor: "#F0F0F0", color: "var(--ink-muted)" }}
                     title={post.published ? "Unpublish" : "Publish"}
                   >
                     {post.published ? <Eye size={16} /> : <EyeOff size={16} />}
@@ -123,7 +123,7 @@ export default function AdminPosts() {
                   <button
                     onClick={() => handleToggleFeatured(post)}
                     className="p-2 rounded transition-colors"
-                    style={{ backgroundColor: post.featured ? "#B8963E" : "#F0F0F0", color: post.featured ? "#FFFFFF" : "#6B7280" }}
+                    style={{ backgroundColor: post.featured ? "var(--mustard)" : "#F0F0F0", color: post.featured ? "#FFFFFF" : "var(--ink-muted)" }}
                     title={post.featured ? "Remove featured" : "Set featured"}
                   >
                     <Star size={16} />
@@ -132,7 +132,7 @@ export default function AdminPosts() {
                   <Link
                     href={`/admin/posts/${post.id}/edit`}
                     className="p-2 rounded transition-colors no-underline"
-                    style={{ backgroundColor: "#F0F0F0", color: "#6B7280" }}
+                    style={{ backgroundColor: "#F0F0F0", color: "var(--ink-muted)" }}
                   >
                     <Edit2 size={16} />
                   </Link>
