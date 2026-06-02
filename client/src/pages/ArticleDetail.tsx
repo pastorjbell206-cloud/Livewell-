@@ -103,6 +103,7 @@ import { CitationCopy } from "@/components/CitationCopy";
 import { AudienceShare } from "@/components/AudienceShare";
 import { ArticleHero } from "@/components/ArticleHero";
 import { ArticleNav } from "@/components/ArticleNav";
+import { SeriesBanner } from "@/components/SeriesBanner";
 import {
   TableOfContents,
   buildToc,
@@ -241,6 +242,27 @@ export default function ArticleDetail() {
     { enabled: Boolean(slug) }
   );
   const post = postQuery.data ?? null;
+
+  // Persist the last-read article so the homepage can offer "continue reading".
+  // Runs only once a real post is loaded; never while loading or when null.
+  useEffect(() => {
+    if (!post) return;
+    if (typeof window === "undefined") return;
+    try {
+      localStorage.setItem(
+        "livewell:last-read",
+        JSON.stringify({
+          slug: post.slug,
+          title: post.title,
+          pillar: post.pillar ?? "",
+          ts: Date.now(),
+        })
+      );
+    } catch {
+      // localStorage may be unavailable (private mode, sandbox) — ignore.
+    }
+  }, [post]);
+
   const relatedQuery = trpc.relatedArticles.getRelated.useQuery(
     { slug: slug ?? "", pillar: post?.pillar ?? "" },
     { enabled: Boolean(post?.pillar) }
@@ -401,6 +423,9 @@ export default function ArticleDetail() {
           publishedAt={post.publishedAt}
           publishedIso={publishedIso}
         />
+
+        {/* SERIES BANNER — renders nothing unless this essay is in a series */}
+        <SeriesBanner articleSlug={post.slug} />
 
         {/* COVER IMAGE — framed figure below the band, never under text */}
         {post.coverImage && (

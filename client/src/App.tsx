@@ -16,6 +16,7 @@ import Home from "./pages/Home";
 const Writing = lazy(() => import("./pages/Writing"));
 const ArticleDetail = lazy(() => import("./pages/ArticleDetail"));
 const Books = lazy(() => import("./pages/Books"));
+const Series = lazy(() => import("./pages/Series"));
 const BookDetail = lazy(() => import("./pages/BookDetail"));
 const About = lazy(() => import("./pages/About"));
 
@@ -124,6 +125,8 @@ function Router() {
         <Route path="/membership" component={Membership} />
         <Route path="/writing" component={Writing} />
         <Route path="/writing/:slug" component={ArticleDetail} />
+        <Route path="/series" component={Series} />
+        <Route path="/series/:slug" component={Series} />
         <Route path="/articles"><Redirect to="/writing" /></Route>
         <Route path="/reading-paths" component={ReadingPaths} />
         <Route path="/reading-paths/:slug" component={ReadingPathDetail} />
