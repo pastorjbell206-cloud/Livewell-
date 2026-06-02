@@ -4,6 +4,9 @@ import NotFound from "@/pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { Route, Switch, useLocation } from "wouter";
 import { Suspense, lazy, useEffect } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
+import { getOrganizationSchema, getWebSiteSchema } from "./components/SEOMeta";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { ToastProvider } from "./contexts/ToastContext";
@@ -201,15 +204,39 @@ function Router() {
   );
 }
 
+/**
+ * Site-wide structured data. Organization + WebSite are emitted exactly once
+ * here at the app root (not per-page) so no page ships duplicate @type blocks.
+ * Per-page Article/Book/Breadcrumb schema still lives on the relevant pages.
+ * React 19 hoists these <script> tags into <head>.
+ */
+function SiteStructuredData() {
+  const schemas = [getOrganizationSchema(), getWebSiteSchema()];
+  return (
+    <>
+      {schemas.map((s, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }}
+        />
+      ))}
+    </>
+  );
+}
+
 function App() {
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light" switchable>
         <ToastProvider>
           <TooltipProvider>
+            <SiteStructuredData />
             <Toaster />
             <ToastContainer />
             <Router />
+            <SpeedInsights />
+            <Analytics />
           </TooltipProvider>
         </ToastProvider>
       </ThemeProvider>

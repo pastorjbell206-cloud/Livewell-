@@ -12,7 +12,7 @@ import { ArrowRight } from "lucide-react";
 import Footer from "@/components/Footer";
 import MinimalNav from "@/components/MinimalNav";
 import { SegmentedSignup } from "@/components/SegmentedSignup";
-import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
+import { SEOMeta } from "@/components/SEOMeta";
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
 import {
@@ -38,10 +38,13 @@ export default function Home() {
         description={META_DESCRIPTION}
         url="https://www.livewellbyjamesbell.co"
         type="website"
-        structuredData={[getOrganizationSchema(), getWebSiteSchema()]}
       />
+      {/* Organization + WebSite schema is emitted once at the app root
+          (see App.tsx → SiteStructuredData), so it is intentionally omitted here. */}
+      <a href="#main" className="skip-link">Skip to content</a>
       <MinimalNav />
 
+      <main id="main">
       {/* HERO — Substack-shaped lede */}
       <section
         style={{
@@ -558,6 +561,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

@@ -72,6 +72,7 @@ export function SearchBox() {
         />
         <input
           type="text"
+          aria-label="Search articles and resources"
           placeholder="Search articles, resources..."
           value={query}
           onChange={(e) => {
