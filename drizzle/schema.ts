@@ -1,4 +1,4 @@
-import { bigint, boolean, int, mysqlEnum, mysqlTable, text, timestamp, varchar } from "drizzle-orm/mysql-core";
+import { bigint, boolean, index, int, mysqlEnum, mysqlTable, text, timestamp, varchar } from "drizzle-orm/mysql-core";
 
 // ─── Users ───────────────────────────────────────────────────────────
 export const users = mysqlTable("users", {
@@ -72,7 +72,16 @@ export const posts = mysqlTable("posts", {
   publishedAt: timestamp("publishedAt"),
   createdAt: timestamp("createdAt").defaultNow().notNull(),
   updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
-});
+}, (table) => ({
+  /** Published list ordering: filter by published, sort by publishedAt. */
+  publishedPublishedAtIdx: index("posts_published_published_at_idx").on(table.published, table.publishedAt),
+  /** Featured-post lookup: filter by published + featured. */
+  publishedFeaturedIdx: index("posts_published_featured_idx").on(table.published, table.featured),
+  /** Track/pillar filtering on /writing. */
+  pillarIdx: index("posts_pillar_idx").on(table.pillar),
+  /** Topic facet filtering. */
+  topicIdx: index("posts_topic_idx").on(table.topic),
+}));
 
 export type Post = typeof posts.$inferSelect;
 export type InsertPost = typeof posts.$inferInsert;
