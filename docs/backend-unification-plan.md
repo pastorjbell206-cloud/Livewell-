@@ -47,12 +47,24 @@ the tRPC layer.* More moving parts, no real upside over just deploying tRPC.
 Before any unification, the data must be reconciled. Production reads from BOTH
 a `posts` table and an `articles` table; the schema/ORM only knows `posts`.
 
-**Step 0 — investigate (read-only, do first):**
-1. `SELECT COUNT(*) FROM posts; SELECT COUNT(*) FROM articles;`
-2. Compare slugs: which rows exist in `articles` but not `posts`, and vice-versa.
+**Step 0 — investigate (read-only, do first):** a ready-to-run script does
+1, 2, and 4 below in one command (SELECT/SHOW only — it writes nothing and is
+safe against production):
+
+```
+DATABASE_URL='mysql://user:pass@host:3306/db' node scripts/backend-step0-investigate.mjs
+```
+
+It reports row counts (`posts` total/published vs `articles`), the column-set
+diff, and the slug divergence in both directions. It has **not** been run yet —
+no database was reachable from the environment where this plan was written.
+
+1. `SELECT COUNT(*) FROM posts; SELECT COUNT(*) FROM articles;` *(scripted)*
+2. Compare slugs: which rows exist in `articles` but not `posts`, and vice-versa. *(scripted)*
 3. Determine which table the live site is actually serving from (instrument
-   `trpcListPosts` / check which branch returns rows in prod logs).
-4. Diff the column sets of the two tables.
+   `trpcListPosts` / check which branch returns rows in prod logs). *(manual —
+   needs prod logs)*
+4. Diff the column sets of the two tables. *(scripted)*
 
 **Step 1 — decide the canonical table.** Almost certainly `posts` (it is the
 ORM-managed one with the migration history). `articles` is treated as legacy.

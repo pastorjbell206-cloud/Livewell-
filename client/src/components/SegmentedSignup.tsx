@@ -13,6 +13,7 @@ import { useState } from "react";
 
 import { trpc } from "@/lib/trpc";
 import { useToast } from "@/contexts/ToastContext";
+import { substackSubscribeUrl } from "@/lib/site";
 
 type Audience = "skeptic" | "christian" | "pastor" | "exploring";
 
@@ -52,36 +53,31 @@ export function SegmentedSignup({
 }: SegmentedSignupProps) {
   const [email, setEmail] = useState("");
   const [audience, setAudience] = useState<Audience | null>(null);
+  const [handoffUrl, setHandoffUrl] = useState<string | null>(null);
   const toastCtx = useToast();
   const addToast = toastCtx?.addToast;
 
+  // Records the email + segment in our own subscribers table. The actual
+  // newsletter lives on Substack (which has no public signup API), so the real
+  // subscription is completed by the handoff below — this just keeps a local
+  // record so the segment is ours too.
   const subscribe = trpc.subscribers.subscribe.useMutation({
-    onSuccess: () => {
-      addToast?.({
-        type: "success",
-        title: "Subscribed",
-        message:
-          "Check your inbox for the first essay in your track. Real one is on the way.",
-      });
-      setEmail("");
-      setAudience(null);
-    },
     onError: err => {
-      addToast?.({
-        type: "error",
-        title: "Subscription failed",
-        message: err.message || "Please try again later.",
-      });
+      // The DB record is best-effort; the Substack handoff is what subscribes
+      // them. Don't block the reader on our own write failing.
+      // eslint-disable-next-line no-console
+      console.warn("local subscriber record failed:", err.message);
     },
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !audience) return;
+
+    // 1. Best-effort: record the email in our own table.
     subscribe.mutate({ email });
-    // The server-side audience routing is wired through the same mutation
-    // once `email-sequences.ts` is rewritten. For now, fire a custom event
-    // so any client-side analytics can capture the segment.
+
+    // 2. Analytics: capture the segment client-side.
     if (typeof window !== "undefined") {
       try {
         window.dispatchEvent(
@@ -89,13 +85,88 @@ export function SegmentedSignup({
             detail: { audience, email },
           })
         );
+        window.localStorage.setItem("livewell:audience", audience);
       } catch {
         /* noop */
       }
     }
+
+    // 3. Hand off to Substack to complete the real subscription. Opened inside
+    //    the click gesture so it isn't blocked; the success panel keeps a
+    //    manual link in case the popup is suppressed.
+    const url = substackSubscribeUrl(email, audience);
+    if (typeof window !== "undefined") {
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+    setHandoffUrl(url);
+    addToast?.({
+      type: "success",
+      title: "One more step",
+      message: "Confirm your subscription in the Substack tab we just opened.",
+    });
   };
 
   const isPanel = variant === "panel";
+
+  // After handoff, replace the form with a confirmation + manual fallback link.
+  if (handoffUrl) {
+    return (
+      <div
+        style={{
+          background: isPanel ? "var(--charcoal)" : "var(--card)",
+          color: isPanel ? "var(--bone)" : "var(--ink)",
+          border: isPanel ? "none" : "1px solid var(--border)",
+          borderLeft: isPanel ? "none" : "2px solid var(--mustard)",
+          padding: isPanel ? "var(--s-6) var(--s-5)" : "var(--s-4)",
+          borderRadius: "var(--radius-sm)",
+        }}
+      >
+        <h3
+          style={{
+            fontFamily: "var(--F)",
+            fontSize: isPanel ? "28px" : "22px",
+            fontWeight: 500,
+            letterSpacing: "-0.01em",
+            marginBottom: "10px",
+            color: isPanel ? "var(--bone)" : "var(--ink)",
+          }}
+        >
+          One more step
+        </h3>
+        <p
+          style={{
+            fontFamily: "var(--B)",
+            fontSize: "14px",
+            lineHeight: 1.65,
+            color: isPanel ? "rgba(245,240,230,0.7)" : "var(--ink-muted)",
+            marginBottom: "18px",
+            maxWidth: "55ch",
+          }}
+        >
+          We opened Substack in a new tab to confirm your subscription. If it
+          did not open, finish here.
+        </p>
+        <a
+          href={handoffUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: "inline-block",
+            padding: "12px 22px",
+            background: "var(--mustard)",
+            color: "var(--ink)",
+            textDecoration: "none",
+            borderRadius: "var(--radius-sm)",
+            fontFamily: "var(--U)",
+            fontSize: "13px",
+            fontWeight: 600,
+          }}
+        >
+          Confirm on Substack
+        </a>
+      </div>
+    );
+  }
 
   return (
     <div

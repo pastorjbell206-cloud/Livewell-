@@ -25,26 +25,56 @@ export interface Series {
 }
 
 /**
- * The curated series. Seeded with one EXAMPLE so the page and banner render.
+ * The curated series. Each arc below is built from real published essay slugs
+ * (drawn from the existing catalogue), grouped and ordered as a proposed
+ * reading sequence.
  *
- * TODO (owner): replace the `articleSlugs` below with your real essay slugs,
- * in the order you want readers to move through them. The placeholder slugs
- * are plausible but almost certainly do not exist in the database yet — swap
- * them for actual post slugs from /writing. Add more Series objects to this
- * array to create additional arcs.
+ * TODO (owner — James): this ORDER is a proposal. Reorder, add, or drop slugs
+ * freely; add new Series objects for other arcs. If a slug here ever stops
+ * resolving at /writing/:slug (e.g. an essay is unpublished or its slug
+ * changes), that one entry simply won't link — nothing else breaks.
  */
 export const SERIES: Series[] = [
   {
-    slug: "the-reconstruction-project",
-    title: "The Reconstruction Project",
+    slug: "church-after-christendom",
+    title: "The Church After Christendom",
     description:
-      "For the reader whose faith has come apart — not a way back to certainty, but a way forward through it.",
-    // TODO (owner): replace these placeholder slugs with real essay slugs.
+      "How the American church traded the kingdom for the flag — and what is left to confess.",
     articleSlugs: [
-      "when-the-answers-stopped-working",
-      "doubt-is-not-the-enemy",
-      "rebuilding-on-the-rubble",
-      "a-faith-that-can-be-questioned",
+      "when-god-bless-america-replaces-thy-kingdom-come",
+      "not-persecuted-seduced-crisis-american-christianity",
+      "church-political-brand-step-back",
+      "where-church-was-silent",
+      "complicity-not-innocence",
+      "church-credibility-problem",
+    ],
+  },
+  {
+    slug: "justice-as-doctrine",
+    title: "Justice as a Doctrine of God",
+    description:
+      "Not a political category bolted onto the gospel — a word about who God is, read from the text on its own terms.",
+    articleSlugs: [
+      "justice-not-political-theological",
+      "mishpat-tsedaqah",
+      "micah-6-8-demands",
+      "widow-orphan-stranger",
+      "stranger-at-gate",
+      "leviticus-19-border-crisis",
+    ],
+  },
+  {
+    slug: "staying-in-ministry",
+    title: "Staying in Ministry",
+    description:
+      "For the pastor who is tired and not yet done — the long road through burnout and back.",
+    articleSlugs: [
+      "why-pastors-quit-and-how-to-stay",
+      "hidden-pain-successful-pastor",
+      "slow-burn-ministry-exhaustion",
+      "return-ministry-after-burnout",
+      "okay-to-see-counselor",
+      "church-needs-you-healthy-not-busy",
     ],
   },
 ];

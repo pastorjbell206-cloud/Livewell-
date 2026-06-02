@@ -10,6 +10,28 @@ export const AUTHOR_EMAIL = "Pastorjbell206@gmail.com";
 export const SITE_TAGLINE =
   "Connecting the depth of theology to the weight of everyday life.";
 
+// Substack — the newsletter channel (CLAUDE.md §Strategic Reminders).
+// NOTE (owner): the codebase carried two handles — `jamesbell333289` (used by
+// rss-service.ts and content-data.json's open.substack.com/pub link) and
+// `jamesbell.substack.com` (used by the feed-sync scheduler). We standardize on
+// jamesbell333289 here because the live RSS feed resolves there. If that's
+// wrong, change SUBSTACK_HANDLE and everything below follows.
+export const SUBSTACK_HANDLE = "jamesbell333289";
+export const SUBSTACK_URL = `https://${SUBSTACK_HANDLE}.substack.com`;
+
+// Substack subscribe handoff. Substack has no public signup API, so the
+// genuine subscription has to complete on Substack. We prefill the email and
+// tag the source so the segment carries through.
+export function substackSubscribeUrl(email?: string, source?: string): string {
+  const params = new URLSearchParams();
+  if (email) params.set("email", email);
+  // Substack reads utm_source/medium on the subscribe page.
+  params.set("utm_source", "livewell");
+  if (source) params.set("utm_medium", source);
+  const qs = params.toString();
+  return `${SUBSTACK_URL}/subscribe${qs ? `?${qs}` : ""}`;
+}
+
 // Default open-graph image when an article has no coverImage of its own.
 // Rendered by the dynamic OG Edge function (see api/og.tsx) so the brand card
 // always exists — there is no static og-default.png in the repo.
