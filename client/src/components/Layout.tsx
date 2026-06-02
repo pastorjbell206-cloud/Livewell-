@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import MinimalNav from "./MinimalNav";
 import Footer from "./Footer";
+import CommandPalette from "./CommandPalette";
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
@@ -11,6 +12,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         {children}
       </main>
       <Footer />
+      <CommandPalette />
     </div>
   );
 }

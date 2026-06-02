@@ -9,6 +9,7 @@
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 
+import CommandPalette from "@/components/CommandPalette";
 import Footer from "@/components/Footer";
 import MinimalNav from "@/components/MinimalNav";
 import { SegmentedSignup } from "@/components/SegmentedSignup";
@@ -23,6 +24,72 @@ import {
 } from "@/lib/positioning";
 import { FEATURED_TRACKS, PRIMARY_TRACKS, trackUrl } from "@/lib/taxonomy";
 
+interface LastRead {
+  slug: string;
+  title: string;
+  pillar?: string;
+  ts?: number;
+}
+
+/**
+ * Read the "pick up where you left off" pointer from localStorage. Guarded for
+ * SSR (no window), missing/empty values, and malformed JSON. Returns null when
+ * there is nothing valid to surface.
+ */
+function readLastRead(): LastRead | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = window.localStorage.getItem("livewell:last-read");
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as Partial<LastRead> | null;
+    if (
+      !parsed ||
+      typeof parsed.slug !== "string" ||
+      !parsed.slug.trim() ||
+      typeof parsed.title !== "string" ||
+      !parsed.title.trim()
+    ) {
+      return null;
+    }
+    return {
+      slug: parsed.slug,
+      title: parsed.title,
+      pillar: typeof parsed.pillar === "string" ? parsed.pillar : undefined,
+      ts: typeof parsed.ts === "number" ? parsed.ts : undefined,
+    };
+  } catch {
+    return null;
+  }
+}
+
+/** Guided-entry chips — "Where are you starting from?" Each routes to a real page. */
+const ENTRY_POINTS: {
+  label: string;
+  sub: string;
+  href: string;
+}[] = [
+  {
+    label: "A skeptic",
+    sub: "Seven essays in argument order.",
+    href: "/skeptic-track",
+  },
+  {
+    label: "Faith with hard questions",
+    sub: "For doubt that outgrew its answers.",
+    href: "/doubt",
+  },
+  {
+    label: "A pastor",
+    sub: "The letter and the resources for the work.",
+    href: "/for-pastors",
+  },
+  {
+    label: "Seeking to live well",
+    sub: "Marriage, money, parenting, the Tuesday afternoon.",
+    href: "/writing",
+  },
+];
+
 export default function Home() {
   // Recent essays for the "Recent" rail.
   const articlesQuery = trpc.posts.listForIndex.useQuery();
@@ -30,6 +97,8 @@ export default function Home() {
 
   const lede = all[0];
   const recent = all.slice(1, 7);
+
+  const lastRead = readLastRead();
 
   return (
     <div>
@@ -43,6 +112,7 @@ export default function Home() {
           (see App.tsx → SiteStructuredData), so it is intentionally omitted here. */}
       <a href="#main" className="skip-link">Skip to content</a>
       <MinimalNav />
+      <CommandPalette />
 
       <main id="main">
       {/* HERO — Substack-shaped lede */}
@@ -169,6 +239,106 @@ export default function Home() {
                   Start here if you're a skeptic
                 </button>
               </Link>
+            </div>
+
+            {/* GUIDED ENTRY — "Where are you starting from?" */}
+            <div style={{ marginTop: "48px" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "12px",
+                  marginBottom: "20px",
+                }}
+              >
+                <span
+                  aria-hidden
+                  style={{
+                    width: "24px",
+                    height: "1px",
+                    background: "rgba(245,240,230,0.3)",
+                  }}
+                />
+                <span
+                  style={{
+                    fontFamily: "var(--U)",
+                    fontSize: "11px",
+                    fontWeight: 600,
+                    letterSpacing: "0.18em",
+                    textTransform: "uppercase",
+                    color: "rgba(245,240,230,0.55)",
+                  }}
+                >
+                  Where are you starting from?
+                </span>
+              </div>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns:
+                    "repeat(auto-fit, minmax(200px, 1fr))",
+                  gap: "1px",
+                  background: "rgba(245,240,230,0.12)",
+                  border: "1px solid rgba(245,240,230,0.12)",
+                  borderRadius: "var(--radius-sm)",
+                  overflow: "hidden",
+                  maxWidth: "880px",
+                }}
+              >
+                {ENTRY_POINTS.map(entry => (
+                  <Link
+                    key={entry.href + entry.label}
+                    href={entry.href}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    <div
+                      style={{
+                        background: "var(--charcoal)",
+                        padding: "18px 18px 20px",
+                        height: "100%",
+                        cursor: "pointer",
+                        transition: "background 0.2s",
+                        borderTop: "2px solid transparent",
+                      }}
+                      onMouseEnter={e => {
+                        e.currentTarget.style.background =
+                          "rgba(245,240,230,0.05)";
+                        e.currentTarget.style.borderTop =
+                          "2px solid var(--mustard)";
+                      }}
+                      onMouseLeave={e => {
+                        e.currentTarget.style.background = "var(--charcoal)";
+                        e.currentTarget.style.borderTop =
+                          "2px solid transparent";
+                      }}
+                    >
+                      <div
+                        style={{
+                          fontFamily: "var(--F)",
+                          fontSize: "20px",
+                          fontWeight: 500,
+                          letterSpacing: "-0.01em",
+                          color: "var(--bone)",
+                          marginBottom: "8px",
+                          lineHeight: 1.2,
+                        }}
+                      >
+                        {entry.label}
+                      </div>
+                      <div
+                        style={{
+                          fontFamily: "var(--B)",
+                          fontSize: "13px",
+                          lineHeight: 1.55,
+                          color: "rgba(245,240,230,0.6)",
+                        }}
+                      >
+                        {entry.sub}
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -383,6 +553,80 @@ export default function Home() {
               All writing →
             </Link>
           </div>
+
+          {lastRead && (
+            <Link
+              href={`/writing/${lastRead.slug}`}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <article
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  gap: "16px",
+                  flexWrap: "wrap",
+                  background: "var(--card)",
+                  border: "1px solid var(--border)",
+                  borderLeft: "2px solid var(--mustard)",
+                  borderRadius: "var(--radius-sm)",
+                  padding: "16px 20px",
+                  marginBottom: "var(--s-4)",
+                  cursor: "pointer",
+                  transition: "border-color 0.2s",
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.borderColor = "var(--mustard)";
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.borderColor = "var(--border)";
+                }}
+              >
+                <div style={{ minWidth: 0 }}>
+                  <div
+                    style={{
+                      fontFamily: "var(--U)",
+                      fontSize: "11px",
+                      fontWeight: 600,
+                      letterSpacing: "0.18em",
+                      textTransform: "uppercase",
+                      color: "var(--mustard-text)",
+                      marginBottom: "6px",
+                    }}
+                  >
+                    Pick up where you left off
+                  </div>
+                  <div
+                    style={{
+                      fontFamily: "var(--F)",
+                      fontSize: "20px",
+                      fontWeight: 500,
+                      letterSpacing: "-0.01em",
+                      lineHeight: 1.25,
+                      color: "var(--ink)",
+                    }}
+                  >
+                    {lastRead.title}
+                  </div>
+                </div>
+                <span
+                  style={{
+                    fontFamily: "var(--U)",
+                    fontSize: "12px",
+                    fontWeight: 600,
+                    color: "var(--ink-muted)",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "6px",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  Continue
+                  <ArrowRight size={14} aria-hidden />
+                </span>
+              </article>
+            </Link>
+          )}
 
           {articlesQuery.isLoading && (
             <p

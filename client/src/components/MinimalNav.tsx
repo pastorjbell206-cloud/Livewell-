@@ -20,19 +20,30 @@ interface DropdownItem {
   description?: string;
 }
 
+/** A highlighted tile that anchors a dropdown — one key destination per group. */
+interface FeaturedTile {
+  eyebrow: string;
+  title: string;
+  blurb: string;
+  href: string;
+}
+
 interface NavLink {
   label: string;
   href?: string;
   dropdown?: DropdownItem[];
+  featured?: FeaturedTile;
 }
 
 function buildNavLinks(): NavLink[] {
-  const trackItem = (slug: string): DropdownItem => {
+  // A track item for the dropdown. `description` overrides the (often long)
+  // taxonomy description with a tighter nav-sized line where useful.
+  const trackItem = (slug: string, description?: string): DropdownItem => {
     const t = TRACKS.find(x => x.slug === slug);
     return {
       label: t?.title ?? slug,
       href: trackUrl(slug),
-      description: t?.description,
+      description: description ?? t?.description,
     };
   };
 
@@ -40,52 +51,103 @@ function buildNavLinks(): NavLink[] {
     {
       label: "Essays",
       dropdown: [
-        trackItem("after-christendom"),
-        trackItem("politics"),
-        trackItem("american-church"),
-        trackItem("prophetic-justice"),
-        trackItem("theology"),
-        trackItem("doubt"),
+        trackItem(
+          "after-christendom",
+          "The collapse of cultural Christianity and what faithfulness costs now."
+        ),
+        trackItem(
+          "politics",
+          "The American moment read from inside the room, not the cable panel."
+        ),
+        trackItem(
+          "american-church",
+          "The habits and drift of the church as it actually exists here."
+        ),
+        trackItem(
+          "prophetic-justice",
+          "Mishpat and tsedaqah — where the church went quiet and what it owes."
+        ),
+        trackItem(
+          "theology",
+          "Hard questions and real scholarship. The text without shortcuts."
+        ),
+        trackItem(
+          "doubt",
+          "For the deconstructor and the skeptic whose questions deserve weight."
+        ),
         {
           label: "All writing",
           href: "/writing",
-          description: "Browse the full essay archive",
+          description: "Every essay, by track and by date.",
         },
         {
           label: "Start here if you're skeptical",
           href: "/skeptic-track",
-          description: "Seven essays in argument order",
+          description: "Seven essays in argument order — no conversion bait.",
         },
       ],
+      featured: {
+        eyebrow: "Read first",
+        title: "The Skeptic's Track",
+        blurb:
+          "The seven essays Bell would hand a doubting friend, in the order he'd hand them.",
+        href: "/skeptic-track",
+      },
     },
     {
       label: "Pastoring",
       dropdown: [
-        trackItem("pastoral-ministry"),
+        trackItem(
+          "pastoral-ministry",
+          "Burnout, board conflict, preaching, and the calling underneath."
+        ),
         {
           label: "Pastors Connection Network",
           href: "/pastors",
-          description: "You don't have to lead alone",
+          description: "A network for pastors who refuse to lead alone.",
         },
         {
           label: "Pastor's Resource Wall",
           href: "/pastors-resource-wall",
-          description: "Sermon prep, study guides, citation tools",
+          description: "Sermon prep, study guides, and citation tools.",
         },
         {
           label: "Resources for pastors",
           href: "/resources-for-pastors",
-          description: "Downloadable guides and tools",
+          description: "Guides and downloads for the weekly work.",
         },
       ],
+      featured: {
+        eyebrow: "For pastors",
+        title: "Join the PCN",
+        blurb:
+          "Thousands of pastors carrying the same weight. The letter, the resources, the room.",
+        href: "/for-pastors",
+      },
     },
     {
       label: "Marriage & Family",
       dropdown: [
-        trackItem("marriage"),
-        trackItem("parenting"),
-        trackItem("devotionals"),
+        trackItem(
+          "marriage",
+          "Covenant, conflict, and the costly love that holds two lives."
+        ),
+        trackItem(
+          "parenting",
+          "Five sons in. Formation over performance, presence over advice."
+        ),
+        trackItem(
+          "devotionals",
+          "Short readings for the actual Tuesday, not the imagined retreat."
+        ),
       ],
+      featured: {
+        eyebrow: "Live well",
+        title: "Theology for the household",
+        blurb:
+          "The same scholarly weight as the political pieces, brought home to the kitchen table.",
+        href: "/marriage",
+      },
     },
     { label: "Books", href: "/books" },
     { label: "About", href: "/about" },
@@ -420,6 +482,71 @@ export default function MinimalNav() {
                             </div>
                           </Link>
                         ))}
+
+                        {link.featured && (
+                          <Link
+                            href={link.featured.href}
+                            onClick={() => setOpenDropdown(null)}
+                            style={{ textDecoration: "none" }}
+                            role="menuitem"
+                          >
+                            <div
+                              style={{
+                                marginTop: "8px",
+                                padding: "14px",
+                                background: "var(--bone-warm)",
+                                borderTop: "2px solid var(--mustard)",
+                                borderRadius: "var(--radius-sm)",
+                                cursor: "pointer",
+                                transition: "background 0.15s",
+                              }}
+                              onMouseEnter={e =>
+                                (e.currentTarget.style.background = "var(--bone)")
+                              }
+                              onMouseLeave={e =>
+                                (e.currentTarget.style.background =
+                                  "var(--bone-warm)")
+                              }
+                            >
+                              <div
+                                style={{
+                                  fontFamily: "var(--U)",
+                                  fontSize: "10px",
+                                  fontWeight: 600,
+                                  letterSpacing: "0.18em",
+                                  textTransform: "uppercase",
+                                  color: "var(--mustard-text)",
+                                  marginBottom: "6px",
+                                }}
+                              >
+                                {link.featured.eyebrow}
+                              </div>
+                              <div
+                                style={{
+                                  fontFamily: "var(--F)",
+                                  fontSize: "18px",
+                                  fontWeight: 500,
+                                  letterSpacing: "-0.01em",
+                                  color: "var(--ink)",
+                                  marginBottom: "4px",
+                                  lineHeight: 1.2,
+                                }}
+                              >
+                                {link.featured.title}
+                              </div>
+                              <div
+                                style={{
+                                  fontFamily: "var(--B)",
+                                  fontSize: "12px",
+                                  lineHeight: 1.5,
+                                  color: "var(--ink-muted)",
+                                }}
+                              >
+                                {link.featured.blurb}
+                              </div>
+                            </div>
+                          </Link>
+                        )}
                       </div>
                     )}
                   </>
@@ -614,6 +741,64 @@ export default function MinimalNav() {
                             </div>
                           </Link>
                         ))}
+
+                        {link.featured && (
+                          <Link
+                            href={link.featured.href}
+                            onClick={() => {
+                              setMobileOpen(false);
+                              setOpenDropdown(null);
+                            }}
+                            style={{ textDecoration: "none" }}
+                          >
+                            <div
+                              style={{
+                                marginTop: "8px",
+                                padding: "14px",
+                                background: "var(--bone-warm)",
+                                borderTop: "2px solid var(--mustard)",
+                                borderRadius: "var(--radius-sm)",
+                              }}
+                            >
+                              <div
+                                style={{
+                                  fontFamily: "var(--U)",
+                                  fontSize: "10px",
+                                  fontWeight: 600,
+                                  letterSpacing: "0.18em",
+                                  textTransform: "uppercase",
+                                  color: "var(--mustard-text)",
+                                  marginBottom: "6px",
+                                }}
+                              >
+                                {link.featured.eyebrow}
+                              </div>
+                              <div
+                                style={{
+                                  fontFamily: "var(--F)",
+                                  fontSize: "18px",
+                                  fontWeight: 500,
+                                  letterSpacing: "-0.01em",
+                                  color: "var(--ink)",
+                                  marginBottom: "4px",
+                                  lineHeight: 1.2,
+                                }}
+                              >
+                                {link.featured.title}
+                              </div>
+                              <div
+                                style={{
+                                  fontFamily: "var(--B)",
+                                  fontSize: "12px",
+                                  lineHeight: 1.5,
+                                  color: "var(--ink-muted)",
+                                }}
+                              >
+                                {link.featured.blurb}
+                              </div>
+                            </div>
+                          </Link>
+                        )}
                       </div>
                     )}
                   </>
