@@ -2,8 +2,8 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
-import { Route, Switch, useLocation } from "wouter";
-import { Suspense, lazy, useEffect } from "react";
+import { Route, Switch, Redirect } from "wouter";
+import { Suspense, lazy } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
 import { getOrganizationSchema, getWebSiteSchema } from "./components/SEOMeta";
@@ -99,18 +99,6 @@ const ModerationAdmin = lazy(() =>
   import("./pages/admin/ModerationAdmin").then((m) => ({ default: m.ModerationAdmin }))
 );
 
-function ArticlesRedirect() {
-  const [, navigate] = useLocation();
-  useEffect(() => { navigate("/writing", { replace: true }); }, [navigate]);
-  return null;
-}
-
-function ForFamiliesRedirect() {
-  const [, navigate] = useLocation();
-  useEffect(() => { navigate("/parenting", { replace: true }); }, [navigate]);
-  return null;
-}
-
 function PageFallback() {
   return (
     <div className="flex items-center justify-center min-h-screen">
@@ -122,20 +110,21 @@ function PageFallback() {
 function Router() {
   return (
     <Suspense fallback={<PageFallback />}>
+      <ErrorBoundary>
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/marriage" component={Marriage} />
         <Route path="/parenting" component={Parenting} />
         <Route path="/doubt" component={Doubt} />
         <Route path="/start" component={StartHereQuiz} />
-        <Route path="/for-families" component={ForFamiliesRedirect} />
+        <Route path="/for-families"><Redirect to="/parenting" /></Route>
         <Route path="/pillars" component={Pillars} />
         <Route path="/for-pastors" component={ForPastors} />
         <Route path="/for-leaders" component={ForLeaders} />
         <Route path="/membership" component={Membership} />
         <Route path="/writing" component={Writing} />
         <Route path="/writing/:slug" component={ArticleDetail} />
-        <Route path="/articles" component={ArticlesRedirect} />
+        <Route path="/articles"><Redirect to="/writing" /></Route>
         <Route path="/reading-paths" component={ReadingPaths} />
         <Route path="/reading-paths/:slug" component={ReadingPathDetail} />
         <Route path="/authors/:slug" component={AuthorProfile} />
@@ -201,6 +190,7 @@ function Router() {
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>
+      </ErrorBoundary>
     </Suspense>
   );
 }

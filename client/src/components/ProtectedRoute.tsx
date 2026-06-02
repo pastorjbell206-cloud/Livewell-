@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useLocation } from "wouter";
+import { Redirect } from "wouter";
 import { useAuth } from "@/_core/hooks/useAuth";
 
 interface ProtectedRouteProps {
@@ -12,18 +11,6 @@ export default function ProtectedRoute({
   requireAdmin = false,
 }: ProtectedRouteProps) {
   const { user, loading: isLoading } = useAuth();
-  const [, setLocation] = useLocation();
-
-  useEffect(() => {
-    if (isLoading) return;
-    if (!user) {
-      setLocation("/admin/login");
-      return;
-    }
-    if (requireAdmin && user.role !== "admin") {
-      setLocation("/");
-    }
-  }, [user, isLoading, requireAdmin, setLocation]);
 
   if (isLoading) {
     return (
@@ -33,8 +20,8 @@ export default function ProtectedRoute({
     );
   }
 
-  if (!user) return null;
-  if (requireAdmin && user.role !== "admin") return null;
+  if (!user) return <Redirect to="/admin/login" />;
+  if (requireAdmin && user.role !== "admin") return <Redirect to="/" />;
 
   return <Component />;
 }
