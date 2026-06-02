@@ -13,7 +13,9 @@ import {
   deleteTestimonial,
 } from "./db-community";
 
-describe("Community Features - Comments & Testimonials", () => {
+// Every test here calls db-community functions that hit MySQL; skip the whole
+// suite when DATABASE_URL is absent (e.g. CI without a live DB).
+describe.skipIf(!process.env.DATABASE_URL)("Community Features - Comments & Testimonials", () => {
   describe("Comments", () => {
     it("should create a new comment with correct properties", async () => {
       const comment = await createComment({

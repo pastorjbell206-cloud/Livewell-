@@ -2,7 +2,9 @@ import { describe, it, expect, beforeAll, afterAll } from "vitest";
 import { generateSitemap, generateRobotsTxt } from "./sitemap-generator";
 
 describe("SEO Features", () => {
-  describe("Sitemap Generation", () => {
+  // generateSitemap() queries the DB for published posts/books, so skip when
+  // DATABASE_URL is absent (e.g. CI without a live DB).
+  describe.skipIf(!process.env.DATABASE_URL)("Sitemap Generation", () => {
     it("should generate valid XML sitemap", async () => {
       const sitemap = await generateSitemap("https://livewell.com");
       

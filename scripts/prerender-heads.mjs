@@ -31,7 +31,9 @@ const DIST_DIR = path.join(REPO_ROOT, "dist/public");
 const SITE_URL = "https://www.livewellbyjamesbell.co";
 const SITE_NAME = "LiveWell by James Bell";
 const AUTHOR_NAME = "James Bell";
-const OG_DEFAULT = `${SITE_URL}/og-default.png`;
+// Branded default card rendered by the dynamic OG Edge function (api/og.tsx).
+// There is no static og-default.png in the repo; this endpoint always renders.
+const OG_DEFAULT = ogImageUrl("LiveWell by James Bell", "Theology for everyday life");
 const FALLBACK_DESC =
   "Theology that carries the weight of everyday life. Essays on faith, justice, marriage, parenting, and pastoral ministry by James Bell.";
 
@@ -123,6 +125,15 @@ const STATIC_PAGES = [
     type: "website",
   },
 ];
+
+// Dynamic per-essay Open Graph card via the /api/og Edge function (api/og.tsx).
+// Mirrors client/src/lib/site.ts → ogImageUrl so essays without a coverImage
+// still get a unique branded social card instead of a missing static image.
+function ogImageUrl(title, pillar) {
+  const params = new URLSearchParams({ title });
+  if (pillar) params.set("pillar", pillar);
+  return `${SITE_URL}/api/og?${params.toString()}`;
+}
 
 function personSchema() {
   return {
@@ -336,11 +347,14 @@ async function main() {
   if (conn) {
     try {
       const [posts] = await conn.query(
-        "SELECT slug, title, excerpt, coverImage, publishedAt, updatedAt, createdAt FROM posts WHERE published = true"
+        "SELECT slug, title, excerpt, pillar, coverImage, publishedAt, updatedAt, createdAt FROM posts WHERE published = true"
       );
       for (const post of posts) {
         const url = `${SITE_URL}/writing/${post.slug}`;
-        const image = post.coverImage || OG_DEFAULT;
+        // Use the essay's own cover when present; otherwise render a per-essay
+        // branded card from its title (+ pillar) via the dynamic OG endpoint.
+        const image =
+          post.coverImage || ogImageUrl(post.title, post.pillar || undefined);
         const description = post.excerpt || post.title;
         const publishedIso = post.publishedAt
           ? new Date(post.publishedAt).toISOString()

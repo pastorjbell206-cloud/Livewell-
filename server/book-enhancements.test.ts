@@ -27,7 +27,9 @@ function createTestContext(): TrpcContext {
   };
 }
 
-describe("Book Display Enhancements", () => {
+// Every test calls books.listPublished() which queries MySQL; skip the whole
+// suite when DATABASE_URL is absent (e.g. CI without a live DB).
+describe.skipIf(!process.env.DATABASE_URL)("Book Display Enhancements", () => {
   const ctx = createTestContext();
   const caller = appRouter.createCaller(ctx);
 

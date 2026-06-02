@@ -3,7 +3,9 @@ import { relatedArticlesRouter } from "./related-articles-router";
 import { quizRouter } from "./quiz-router";
 import { listPosts } from "./db";
 
-describe("Engagement Features", () => {
+// The related-articles and quiz routers read posts from MySQL; skip the whole
+// suite when DATABASE_URL is absent (e.g. CI without a live DB).
+describe.skipIf(!process.env.DATABASE_URL)("Engagement Features", () => {
   describe("Related Articles Router", () => {
     it("should return related articles from the same pillar", async () => {
       const caller = relatedArticlesRouter.createCaller({} as any);

@@ -11,8 +11,9 @@ export const SITE_TAGLINE =
   "Connecting the depth of theology to the weight of everyday life.";
 
 // Default open-graph image when an article has no coverImage of its own.
-// Place /public/og-default.png to override; see scripts/prerender-heads.mjs.
-export const OG_DEFAULT_IMAGE = `${SITE_URL}/og-default.png`;
+// Rendered by the dynamic OG Edge function (see api/og.tsx) so the brand card
+// always exists — there is no static og-default.png in the repo.
+export const OG_DEFAULT_IMAGE = `${SITE_URL}/api/og?title=${encodeURIComponent("LiveWell by James Bell")}&pillar=${encodeURIComponent("Theology for everyday life")}`;
 
 // Don't lie about the corpus size. Treat this as a floor; the writing index
 // renders the actual count from the DB. Used only for static SEO descriptions.

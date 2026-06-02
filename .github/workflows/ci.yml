@@ -27,6 +27,9 @@ jobs:
       - name: Typecheck
         run: pnpm run check
 
+      - name: Typecheck api
+        run: pnpm exec tsc -p api/tsconfig.json --noEmit
+
       - name: Test
         run: pnpm test
 
