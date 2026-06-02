@@ -209,7 +209,7 @@ export default function PrayerGenerator() {
         }}
       />
 
-      <section style={{ background: "var(--forest)", color: "var(--ivory)", padding: "80px 32px 60px", textAlign: "center" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--ivory)", padding: "80px 32px 60px", textAlign: "center" }}>
         <div className="wrap" style={{ maxWidth: "700px" }}>
           <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.2em", color: "var(--gold)", fontFamily: "var(--U)", marginBottom: "16px" }}>FREE TOOL</div>
           <h1 style={{ fontSize: "clamp(32px, 5vw, 48px)", fontWeight: 300, fontFamily: "var(--F)", lineHeight: 1.15, marginBottom: "16px" }}>
@@ -375,7 +375,7 @@ export default function PrayerGenerator() {
                 {!prayAlongActive && (
                   <button
                     onClick={startPrayAlong}
-                    style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--forest)", border: "none", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ivory)", cursor: "pointer" }}
+                    style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--charcoal)", border: "none", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ivory)", cursor: "pointer" }}
                   >
                     <Play size={14} /> Pray Along
                   </button>

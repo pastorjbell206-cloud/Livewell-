@@ -105,7 +105,7 @@ export function ReadingPathDetail() {
       />
       <div>
         {/* HERO SECTION */}
-        <section className="hero" style={{ background: "linear-gradient(135deg, var(--forest) 0%, var(--ink) 100%)" }}>
+        <section className="hero" style={{ background: "linear-gradient(135deg, var(--charcoal) 0%, var(--ink) 100%)" }}>
           <div className="wrap">
             <Link href="/reading-paths">
               <button style={{ 
@@ -194,7 +194,7 @@ export function ReadingPathDetail() {
         </section>
 
         {/* CTA SECTION */}
-        <section className="section" style={{ background: "var(--forest)", color: "white", textAlign: "center" }}>
+        <section className="section" style={{ background: "var(--charcoal)", color: "white", textAlign: "center" }}>
           <div className="wrap">
             <h2 className="section-title" style={{ color: "white", marginBottom: "16px" }}>
               Ready to Go Deeper?
