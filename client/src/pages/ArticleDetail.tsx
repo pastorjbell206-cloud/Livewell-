@@ -8,9 +8,9 @@
  * - Body width is 680px (var(--w-prose)) per CLAUDE.md
  * - Bookmark + reading progress persist in localStorage
  */
-import { useEffect, useState, lazy, Suspense } from "react";
+import { useEffect, useMemo, useState, lazy, Suspense } from "react";
 import { useLocation, useParams } from "wouter";
-import { ArrowLeft, Bookmark, Clock, Share2, User } from "lucide-react";
+import { ArrowLeft, Bookmark, Share2 } from "lucide-react";
 
 // Lazy-load the heavy markdown renderer (pulls in shiki/mermaid/katex) so the
 // article shell + SEO head paint before ~1MB of renderer code loads.
@@ -37,6 +37,46 @@ const Streamdown = lazy(() =>
 const ALLOWED_LINK_PREFIXES = ["https://", "http://", "mailto:", "/", "#"];
 const ALLOWED_IMAGE_PREFIXES = ["https://", "/", "data:"];
 
+/**
+ * Hand-written rehype visitor that stamps stable ids onto h2/h3 elements so the
+ * Table of Contents anchors resolve. No new dependency: we recurse the hast
+ * tree, collect text from child text nodes, and slugify with the SAME slugify
+ * the ToC uses (imported from TableOfContents) so ids line up exactly. It runs
+ * AFTER harden in the rehypePlugins chain, so it never weakens the allowlist.
+ */
+type HastNode = {
+  type?: string;
+  tagName?: string;
+  value?: string;
+  properties?: Record<string, unknown>;
+  children?: HastNode[];
+};
+
+function collectText(node: HastNode): string {
+  if (node.type === "text") return node.value ?? "";
+  if (!node.children) return "";
+  return node.children.map(collectText).join("");
+}
+
+function rehypeHeadingIds() {
+  return (tree: HastNode) => {
+    const visit = (node: HastNode) => {
+      if (
+        node.type === "element" &&
+        (node.tagName === "h2" || node.tagName === "h3")
+      ) {
+        const id = slugify(collectText(node));
+        if (id) {
+          node.properties = node.properties ?? {};
+          if (!node.properties.id) node.properties.id = id;
+        }
+      }
+      node.children?.forEach(visit);
+    };
+    visit(tree);
+  };
+}
+
 const hardenedRehypePluginsPromise = import("streamdown").then(m => {
   const plugins = { ...m.defaultRehypePlugins } as Record<string, unknown>;
   const harden = plugins.harden as [unknown, Record<string, unknown>] | undefined;
@@ -50,7 +90,8 @@ const hardenedRehypePluginsPromise = import("streamdown").then(m => {
       },
     ];
   }
-  return Object.values(plugins);
+  // Heading-id injector runs last, after harden, purely additive.
+  return [...Object.values(plugins), rehypeHeadingIds];
 });
 
 import Layout from "@/components/Layout";
@@ -60,8 +101,13 @@ import { AuthorBio } from "@/components/AuthorBio";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { CitationCopy } from "@/components/CitationCopy";
 import { AudienceShare } from "@/components/AudienceShare";
-import { AudienceLabel } from "@/components/AudienceLabel";
-import { TrackChip } from "@/components/TrackChip";
+import { ArticleHero } from "@/components/ArticleHero";
+import { ArticleNav } from "@/components/ArticleNav";
+import {
+  TableOfContents,
+  buildToc,
+  slugify,
+} from "@/components/TableOfContents";
 import { trpc } from "@/lib/trpc";
 import { articleUrl, ogImageUrl, SITE_URL } from "@/lib/site";
 
@@ -199,6 +245,35 @@ export default function ArticleDetail() {
     { slug: slug ?? "", pillar: post?.pillar ?? "" },
     { enabled: Boolean(post?.pillar) }
   );
+  // Shared/cached index list — powers prev/next "Keep reading" flow.
+  const indexQuery = trpc.posts.listForIndex.useQuery();
+
+  // Body with the leading duplicate H1 stripped (same transform used to render).
+  const bodyForRender = useMemo(
+    () => (post?.body ? post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "") : ""),
+    [post?.body]
+  );
+
+  // Table of contents from level-2 headings (rendered only when >= 3 exist).
+  const tocItems = useMemo(() => buildToc(bodyForRender), [bodyForRender]);
+  const hasToc = tocItems.length >= 3;
+
+  // Prev (older) / next (newer) by publishedAt desc, fallback createdAt.
+  const { prevPost, nextPost } = useMemo(() => {
+    const list = indexQuery.data;
+    if (!list || !post) return { prevPost: null, nextPost: null };
+    const sorted = [...list].sort((a, b) => {
+      const ta = new Date(String(a.publishedAt || a.createdAt || 0)).getTime();
+      const tb = new Date(String(b.publishedAt || b.createdAt || 0)).getTime();
+      return tb - ta;
+    });
+    const i = sorted.findIndex(p => p.slug === post.slug);
+    if (i === -1) return { prevPost: null, nextPost: null };
+    return {
+      prevPost: sorted[i + 1] ?? null, // older
+      nextPost: i > 0 ? sorted[i - 1] : null, // newer
+    };
+  }, [indexQuery.data, post]);
 
   if (postQuery.isLoading) {
     return (
@@ -317,91 +392,25 @@ export default function ArticleDetail() {
           </button>
         </div>
 
-        {/* HEADER */}
-        <section
-          style={{
-            padding: "var(--s-6) var(--s-4) var(--s-5)",
-            background: "var(--bone)",
-            borderBottom: "1px solid var(--border)",
-          }}
-        >
-          <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-            {/* Eyebrow chip — links to the canonical track */}
-            <div style={{ marginBottom: "20px" }}>
-              <TrackChip pillarOrTrack={post.pillar} />
-            </div>
+        {/* HEADER — branded charcoal band (the "image" for each essay) */}
+        <ArticleHero
+          title={post.title}
+          pillar={post.pillar}
+          excerpt={post.excerpt}
+          readingTimeMinutes={post.readingTimeMinutes ?? 5}
+          publishedAt={post.publishedAt}
+          publishedIso={publishedIso}
+        />
 
-            {/* Title */}
-            <h1
-              style={{
-                fontFamily: "var(--F)",
-                fontSize: "clamp(36px, 5vw, 56px)",
-                fontWeight: 400,
-                lineHeight: 1.1,
-                letterSpacing: "-0.02em",
-                color: "var(--ink)",
-                marginBottom: "24px",
-              }}
-            >
-              {post.title}
-            </h1>
-
-            {/* Meta info — byline + audience + date */}
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "20px",
-                paddingBottom: "20px",
-                borderBottom: "1px solid var(--border)",
-                flexWrap: "wrap",
-                fontFamily: "var(--U)",
-                fontSize: "13px",
-                color: "var(--ink-muted)",
-              }}
-            >
-              <span style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                <User size={14} aria-hidden />
-                James Bell
-              </span>
-              <AudienceLabel
-                audience={post.audience}
-                readingTimeMinutes={post.readingTimeMinutes ?? 5}
-              />
-              {post.publishedAt && (
-                <time dateTime={publishedIso}>
-                  {new Date(post.publishedAt).toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </time>
-              )}
-            </div>
-
-            {/* Standfirst / excerpt */}
-            {post.excerpt && (
-              <p
-                style={{
-                  fontFamily: "var(--F)",
-                  fontSize: "21px",
-                  lineHeight: 1.55,
-                  color: "var(--ink-muted)",
-                  fontStyle: "italic",
-                  marginTop: "24px",
-                  maxWidth: "60ch",
-                }}
-              >
-                {post.excerpt}
-              </p>
-            )}
-          </div>
-        </section>
-
-        {/* HERO IMAGE */}
+        {/* COVER IMAGE — framed figure below the band, never under text */}
         {post.coverImage && (
           <section style={{ padding: "var(--s-5) var(--s-4) 0" }}>
-            <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+            <figure
+              style={{
+                maxWidth: "var(--w-content)",
+                margin: "0 auto",
+              }}
+            >
               <img
                 src={post.coverImage}
                 alt={post.title}
@@ -416,71 +425,80 @@ export default function ArticleDetail() {
                   objectFit: "cover",
                   borderRadius: "var(--radius-sm)",
                   display: "block",
+                  border: "1px solid var(--border)",
                 }}
               />
-            </div>
+            </figure>
           </section>
         )}
 
-        {/* BODY */}
+        {/* BODY — sticky ToC rail + prose in a centered desktop grid */}
         <section style={{ padding: "var(--s-6) var(--s-4)" }}>
           <div
-            className="article-body"
-            style={{
-              maxWidth: "var(--w-prose)",
-              margin: "0 auto",
-              fontFamily: "var(--B)",
-              fontSize: "18px",
-              lineHeight: 1.75,
-              color: "var(--ink)",
-            }}
+            className={hasToc ? "article-layout article-layout--toc" : "article-layout"}
           >
-            {post.body ? (
-              <Suspense
-                fallback={
-                  <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
-                    Loading…
-                  </p>
-                }
-              >
-                {rehypePlugins && (
-                  <Streamdown
-                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                    rehypePlugins={rehypePlugins as any}
-                  >
-                    {post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}
-                  </Streamdown>
-                )}
-              </Suspense>
-            ) : (
-              <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
-                This article is in preparation.
-              </p>
-            )}
-          </div>
+            {hasToc && <TableOfContents items={tocItems} />}
 
-          {/* Reader actions */}
-          <div
-            style={{
-              maxWidth: "var(--w-prose)",
-              margin: "var(--s-5) auto 0",
-              paddingTop: "var(--s-4)",
-              borderTop: "1px solid var(--border)",
-              display: "flex",
-              flexWrap: "wrap",
-              alignItems: "center",
-              gap: "12px",
-            }}
-          >
-            <BookmarkButton slug={post.slug} />
-            <ShareButton title={post.title} url={canonical} />
-            <CitationCopy
-              title={post.title}
-              url={canonical}
-              publishedDate={publishedIso}
-            />
-            {/* Three-audience share replaces the single SendToPastor button */}
-            <AudienceShare title={post.title} url={canonical} />
+            <div>
+              <div
+                className="article-body"
+                style={{
+                  fontFamily: "var(--B)",
+                  fontSize: "18px",
+                  lineHeight: 1.75,
+                  color: "var(--ink)",
+                }}
+              >
+                {post.body ? (
+                  <Suspense
+                    fallback={
+                      <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
+                        Loading…
+                      </p>
+                    }
+                  >
+                    {rehypePlugins && (
+                      <Streamdown
+                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                        rehypePlugins={rehypePlugins as any}
+                      >
+                        {bodyForRender}
+                      </Streamdown>
+                    )}
+                  </Suspense>
+                ) : (
+                  <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
+                    This article is in preparation.
+                  </p>
+                )}
+              </div>
+
+              {/* Reader actions */}
+              <div
+                style={{
+                  margin: "var(--s-5) 0 0",
+                  paddingTop: "var(--s-4)",
+                  borderTop: "1px solid var(--border)",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  alignItems: "center",
+                  gap: "12px",
+                }}
+              >
+                <BookmarkButton slug={post.slug} />
+                <ShareButton title={post.title} url={canonical} />
+                <CitationCopy
+                  title={post.title}
+                  url={canonical}
+                  publishedDate={publishedIso}
+                />
+                {/* Three-audience share replaces the single SendToPastor button */}
+                <AudienceShare title={post.title} url={canonical} />
+              </div>
+
+              {/* Keep reading — prev/next flow between essays */}
+              <ArticleNav prev={prevPost} next={nextPost} />
+            </div>
           </div>
         </section>
 

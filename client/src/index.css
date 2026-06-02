@@ -280,11 +280,14 @@ footer{background-color:#14110C;color:#F4F1EA;padding:60px 0 40px}
 
 .article-body{font-family:var(--B);font-size:18px;line-height:1.75;color:var(--ink)}
 .article-body > * + *{margin-top:1.25em}
-.article-body h2{font-family:var(--F);font-size:30px;font-weight:500;letter-spacing:-.01em;line-height:1.2;color:var(--ink);margin-top:2.4em;margin-bottom:.6em;position:relative;padding-top:.6em}
+.article-body h2{font-family:var(--F);font-size:30px;font-weight:500;letter-spacing:-.01em;line-height:1.2;color:var(--ink);margin-top:2.4em;margin-bottom:.6em;position:relative;padding-top:.6em;scroll-margin-top:96px}
 .article-body h2::before{content:"";position:absolute;top:0;left:0;width:32px;height:1px;background:var(--mustard)}
-.article-body h3{font-family:var(--F);font-size:22px;font-weight:500;letter-spacing:-.005em;line-height:1.3;color:var(--ink);margin-top:1.8em;margin-bottom:.4em}
+.article-body h3{font-family:var(--F);font-size:22px;font-weight:500;letter-spacing:-.005em;line-height:1.3;color:var(--ink);margin-top:1.8em;margin-bottom:.4em;scroll-margin-top:96px}
 .article-body p{max-width:62ch}
-.article-body p:first-of-type::first-letter{font-family:var(--F);font-size:4.6em;float:left;line-height:.92;padding:.04em .08em 0 0;color:var(--ink);font-weight:400}
+/* First paragraph reads as a subtle lead — larger, a touch more open. The
+ * drop-cap below targets the same :first-of-type and stays compatible. */
+.article-body p:first-of-type{font-size:1.05em;line-height:1.7;color:var(--ink)}
+.article-body p:first-of-type::first-letter{font-family:var(--F);font-size:4.4em;float:left;line-height:.9;padding:.04em .09em 0 0;color:var(--ink);font-weight:400}
 .article-body blockquote{font-family:var(--F);font-size:24px;font-style:italic;font-weight:400;line-height:1.4;color:var(--ink);max-width:60ch;border-left:2px solid var(--mustard);padding:.2em 0 .2em 1.4em;margin:2em 0;letter-spacing:-.005em}
 .article-body blockquote p{max-width:none}
 .article-body a{color:var(--ink);border-bottom:1px solid var(--mustard);transition:background-color .2s}
@@ -307,6 +310,44 @@ footer{background-color:#14110C;color:#F4F1EA;padding:60px 0 40px}
 
 /* Pull quote utility — wrap a quote in <figure class="pullquote"> in markdown */
 .article-body .pullquote{font-family:var(--F);font-size:32px;font-style:italic;font-weight:400;line-height:1.3;color:var(--ink);text-align:center;margin:3em 0;padding:1.4em 0;border-top:1px solid var(--mustard);border-bottom:1px solid var(--mustard);max-width:none;letter-spacing:-.01em}
+
+/* ─── ARTICLE HERO (branded charcoal band, the "image" per essay) ─── */
+.article-hero{position:relative;overflow:hidden;background:var(--charcoal);padding:var(--s-7) var(--s-4) var(--s-6);border-bottom:1px solid rgba(212,160,23,.18)}
+.article-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 90% at 85% 50%,rgba(212,160,23,.07),transparent),radial-gradient(ellipse 40% 60% at 5% 90%,rgba(212,160,23,.05),transparent);pointer-events:none}
+.article-hero::after{content:"";position:absolute;inset:0;opacity:.4;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");pointer-events:none}
+.article-hero__inner{position:relative;z-index:1;max-width:var(--w-content);margin:0 auto}
+.article-hero__title{font-family:var(--F);font-weight:400;font-size:clamp(40px,5.5vw,68px);line-height:1.08;letter-spacing:-.02em;color:var(--bone);margin-bottom:var(--s-3);max-width:18ch}
+.article-hero__meta{display:flex;align-items:center;flex-wrap:wrap;gap:10px;font-family:var(--U);font-size:13px;color:rgba(245,240,230,.6)}
+.article-hero__meta time{color:rgba(245,240,230,.6)}
+.article-hero__dot{color:var(--mustard)}
+.article-hero__standfirst{font-family:var(--F);font-style:italic;font-weight:400;font-size:21px;line-height:1.5;color:rgba(245,240,230,.8);max-width:60ch;margin-top:var(--s-3)}
+
+/* ─── READING LAYOUT (ToC rail + prose) ─── */
+.article-layout{max-width:var(--w-prose);margin:0 auto}
+@media(min-width:1024px){
+  .article-layout--toc{max-width:none;display:grid;grid-template-columns:220px minmax(0,var(--w-prose));justify-content:center;gap:var(--s-5);align-items:start}
+}
+
+/* ─── TABLE OF CONTENTS ─── */
+.toc{display:none}
+@media(min-width:1024px){
+  .toc{display:block;position:sticky;top:90px;max-height:calc(100vh - 120px);overflow:auto;padding-left:18px;border-left:1px solid var(--line)}
+}
+.toc__label{font-family:var(--U);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.18em;color:var(--mustard-text);margin-bottom:16px}
+.toc__list{list-style:none}
+.toc__item{position:relative}
+.toc__link{display:block;font-family:var(--U);font-size:12.5px;line-height:1.45;color:var(--ink-muted);padding:7px 0 7px 12px;margin-left:-19px;border-left:1px solid transparent;transition:color .2s,border-color .2s}
+.toc__link:hover{color:var(--ink);border-left-color:var(--mustard)}
+
+/* ─── KEEP READING (prev/next flow) ─── */
+.article-nav{margin-top:var(--s-5);padding-top:var(--s-4);border-top:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:560px){.article-nav{grid-template-columns:1fr}}
+.article-nav__card{display:flex;flex-direction:column;gap:8px;padding:22px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);transition:border-color .2s,transform .2s}
+.article-nav__card:hover{border-color:var(--mustard);transform:translateY(-1px)}
+.article-nav__card--next{text-align:right;align-items:flex-end}
+.article-nav__dir{font-family:var(--U);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--mustard-text)}
+.article-nav__kicker{font-family:var(--U);font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.18em;color:var(--ink-muted)}
+.article-nav__title{font-family:var(--F);font-size:21px;font-weight:500;line-height:1.25;letter-spacing:-.01em;color:var(--ink)}
 
 /* Eyebrow utility — small all-caps label with mustard rule */
 .eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--U);font-size:11px;font-weight:600;color:var(--mustard-text);text-transform:uppercase;letter-spacing:.18em}
