@@ -14,7 +14,7 @@ interface AuthorBioProps {
 }
 
 const JAMES_BELL_BIO =
-  "James Bell is Lead Pastor of First Baptist Church of Fenton and founder of the Pastors Connection Network. He came to faith from atheism, was raised without a father, and has five sons. Those last two facts shape everything he writes. He has been in ministry for over fifteen years and is the author of twenty-five books.";
+  "James Bell came to faith from atheism, was raised without a father, and has five sons — the last two facts shape everything he writes. He is Lead Pastor of First Baptist Church of Fenton and founder of the Pastors Connection Network, and after fifteen years in ministry he writes where ancient Christianity meets the Tuesday afternoon: the biblical text read in its own world, justice read out of the character of God, and the long work of living well in an age that has forgotten the story it was built on. He is the author of twenty-five books.";
 
 const JAMES_BELL_IMAGE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg";

@@ -10,7 +10,7 @@ export default function About() {
     <Layout>
       <SEOMeta
         title="About James Bell — Pastor, Author, Writer"
-        description="From atheism to the pulpit. Raised without a father. Five sons. 25 books. 15 years in ministry. The story behind the writing."
+        description="From atheism to the pulpit — raised without a father, five sons, twenty-five books. James Bell writes where ancient Christianity meets the Tuesday afternoon: biblical theology in its own world, justice as a doctrine of God, and living well in a contested age."
         type="website"
       />
 
@@ -63,6 +63,30 @@ export default function About() {
             <div key={i} style={{ marginBottom: "2rem" }}>
               <h3 style={{ fontFamily: "var(--F)", fontSize: "1.125rem", fontWeight: 500, fontStyle: "italic", color: "var(--ink)", marginBottom: "0.5rem" }}>{v.name}</h3>
               <p style={{ fontSize: "0.9rem", lineHeight: 1.7, color: "var(--ink-muted)" }}>{v.def}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* WHERE THE WRITING LIVES — the intellectual range */}
+      <section style={{ background: "var(--charcoal)", padding: "5rem 1.5rem" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+          <div style={{ width: "40px", height: "2px", background: "var(--mustard)", marginBottom: "2rem" }} />
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.75rem, 3vw, 2.25rem)", fontWeight: 400, lineHeight: 1.15, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1.5rem" }}>Where the writing lives</h2>
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--bone)", opacity: 0.85, marginBottom: "2.5rem" }}>
+            The writing refuses a choice the modern church keeps making — between the academy and the pew, between the ancient text and the present crisis, between the doctrine of God and the price of rent. It holds them together. The gospel was never a private comfort. It was a public claim about the world.
+          </p>
+
+          {[
+            { name: "Ancient and historical Christianity", def: "Before there was a Christendom to defend, there was a church that out-thought, out-suffered, and out-loved an empire. The writing returns to that church — to Athanasius and Augustine, to the centuries most American Christians have forgotten — because a faith with no memory will believe whatever the present tells it." },
+            { name: "The biblical text in its own world", def: "Scripture was written to people who were not us, in a world that was not ours, and it means more, not less, when we let it stay strange. The work reads the text in its own context first — the exile, the occupation, the table — before it reaches for the application." },
+            { name: "Theology for everyday life", def: "Marriage, money, parenting, vocation, the ordinary failures of a Wednesday. These are not lesser subjects. They are where doctrine either carries weight or proves it never weighed anything at all." },
+            { name: "Justice as a doctrine of God", def: "Justice here is not borrowed from a party. It is read out of the character of God and the witness of the prophets — Amos before any newsroom, Isaiah before any slogan. The church did not learn justice from the culture. It forgot what it already held." },
+            { name: "Living well in a contested age", def: "We are the first people in a thousand years to build a civilization on the assumption that there is no one to answer to. The writing does not pretend that is simple. It asks how a person actually lives well — faithfully, honestly, with their eyes open — inside a story the West told itself and stopped believing." },
+          ].map((v, i) => (
+            <div key={i} style={{ marginBottom: "1.75rem", borderLeft: "2px solid var(--mustard)", paddingLeft: "1.25rem" }}>
+              <h3 style={{ fontFamily: "var(--F)", fontSize: "1.25rem", fontWeight: 500, fontStyle: "italic", color: "var(--bone)", marginBottom: "0.5rem" }}>{v.name}</h3>
+              <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--bone)", opacity: 0.7 }}>{v.def}</p>
             </div>
           ))}
         </div>
