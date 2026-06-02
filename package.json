@@ -109,7 +109,6 @@
     "@typescript-eslint/parser": "^8.59.1",
     "@vercel/node": "^5.8.9",
     "@vitejs/plugin-react": "^5.0.4",
-    "add": "^2.0.6",
     "autoprefixer": "^10.4.20",
     "dotenv": "^17.4.2",
     "drizzle-kit": "^0.31.4",

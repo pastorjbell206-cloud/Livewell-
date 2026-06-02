@@ -46,7 +46,7 @@ const READING_PATH_CONFIGS: Record<string, { title: string; description: string;
 
 export function ReadingPathDetail() {
   const [match, params] = useRoute("/reading-paths/:slug");
-  const { data: allPosts, isLoading } = trpc.posts.listPublished.useQuery();
+  const { data: allPosts, isLoading } = trpc.posts.listForIndex.useQuery();
 
   if (!match) {
     return (
