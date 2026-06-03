@@ -353,7 +353,9 @@ export default function ArticleDetail() {
 
   return (
     <Layout>
-      <ReadingProgressBar />
+      <div className="no-print">
+        <ReadingProgressBar />
+      </div>
       <SEOMeta
         title={post.title}
         description={description}
@@ -425,7 +427,9 @@ export default function ArticleDetail() {
         />
 
         {/* SERIES BANNER — renders nothing unless this essay is in a series */}
-        <SeriesBanner articleSlug={post.slug} />
+        <div className="no-print">
+          <SeriesBanner articleSlug={post.slug} />
+        </div>
 
         {/* COVER IMAGE — framed figure below the band, never under text */}
         {post.coverImage && (
@@ -518,7 +522,9 @@ export default function ArticleDetail() {
                   publishedDate={publishedIso}
                 />
                 {/* Three-audience share replaces the single SendToPastor button */}
-                <AudienceShare title={post.title} url={canonical} />
+                <div className="no-print">
+                  <AudienceShare title={post.title} url={canonical} />
+                </div>
               </div>
 
               {/* Keep reading — prev/next flow between essays */}
@@ -529,6 +535,7 @@ export default function ArticleDetail() {
 
         {/* NEWSLETTER (single CTA — no fake form) */}
         <section
+          className="no-print"
           style={{
             background: "var(--bone-warm)",
             padding: "var(--s-6) var(--s-4)",
@@ -546,6 +553,7 @@ export default function ArticleDetail() {
         {/* RELATED */}
         {(relatedQuery.data?.length ?? 0) > 0 && (
           <section
+            className="no-print"
             style={{
               background: "var(--card)",
               padding: "var(--s-6) var(--s-4)",
@@ -640,7 +648,9 @@ export default function ArticleDetail() {
         )}
 
         {/* AUTHOR BIO */}
-        <AuthorBio />
+        <div className="no-print">
+          <AuthorBio />
+        </div>
       </article>
     </Layout>
   );
