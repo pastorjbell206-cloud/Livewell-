@@ -42,4 +42,16 @@ These three figures are not a ministry category. They are not a demographic for 
 
 Every congregation has a widow. Has a fatherless child. Has a stranger. The question is not whether they are present. The question is whether we are.
 
+The Mosaic law built structures around this care that went beyond individual generosity. The gleaning laws required landowners to leave the edges of their fields unharvested so that the poor and the stranger could take what they needed (Leviticus 19:9-10). This was not charity in the sense of voluntary giving. It was a built-in provision of the economic system itself — a structural acknowledgment that access to resources is a justice matter, not merely a philanthropic one. The poor were not waiting at the door for handouts. They were taking their portion from a system designed to include them.
+
+The tithe of Deuteronomy 14:28-29 goes further: every third year, the tithe was stored locally and distributed to the Levite, the stranger, the fatherless, and the widow. This is institutional provision at scale — not the spontaneous generosity of individuals moved by immediate need, but the deliberate organization of community resources to ensure that the most vulnerable had their needs met on a regular cycle. Israel was being taught that the welfare of the vulnerable was not a personal option. It was a communal obligation.
+
+When the prophets accuse Israel of failing, they are not accusing individuals of failing to be generous. They are accusing the community of allowing its structures to become indifferent to the specific people those structures were designed to protect. The merchants who used dishonest scales (Amos 8:5) were not simply greedy individuals. They were participants in and beneficiaries of an economic arrangement that systematically transferred wealth from the vulnerable to the comfortable. The prophets understood that structural indifference is a form of active injustice.
+
+The contemporary church has recovered much of the language of care for the vulnerable and much less of the structural imagination. We have recovered charity — the food pantry, the clothes closet, the emergency assistance fund — while being considerably less willing to examine the systems that make the food pantry necessary every week. Both are needed. But the prophets were considerably more interested in the latter than in the former.
+
+Ask who the widow, orphan, and stranger are in your specific community. Ask not only what your church provides for them but what systems in your community consistently produce their vulnerability — and whether the church is willing to say anything about those systems.
+
 They are watching too.
+
+The same God who catalogued their suffering in Deuteronomy and Zechariah and James is watching what we do with it.

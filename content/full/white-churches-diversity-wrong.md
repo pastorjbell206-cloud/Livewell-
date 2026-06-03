@@ -57,3 +57,11 @@ The work required to get there is harder than any program. It requires the white
 It is loss. That is what repentance costs. It is also what fellowship requires.
 
 The church that wants the multiethnic vision of Revelation without the redistribution of power that makes it possible has not yet understood what it is asking for. It is asking for the appearance of the kingdom while keeping the structure of the present age. That is not something the kingdom can be made to provide.
+
+The concrete question — for the white pastor reading this, for the white congregation that has said the right things for several years without the structure changing — is what specifically you are willing to give up. Not: are you open to diversity? Not: do you believe every person is created in God's image? Those answers are easy. The hard question is: who is on your elder board? Whose theology shapes your preaching curriculum? Whose tradition is treated as the center and whose as the supplement? Whose discomfort is addressed when a sermon causes friction, and whose is absorbed?
+
+These are not questions about intention. They are questions about structure. The structure tells the truth.
+
+The path toward the eschatological vision is not a diversity initiative. It is a sustained, costly, generative process of shared power — the white church genuinely learning from the Black church, from the immigrant church, from the traditions it has historically treated as mission fields rather than teachers. The path requires being changed, not merely being expanded.
+
+We are not there. Most of us are not even close. But the verdict has been clear since Ephesians 2, and the work required to approach it has not changed because we have found it difficult.

@@ -14,7 +14,7 @@ Jesus told a story instead of giving a definition. That is significant. A defini
 
 ## The World the Parable Assumes
 
-The road from Jerusalem to Jericho descended approximately 3,300 feet over seventeen miles through terrain that provided cover for bandits. [cite — confirm the geographical details] It was genuinely dangerous, genuinely isolated, a road where a man could be robbed and left for dead and no one would know for hours. The parable is not set in a hypothetical landscape. It is set on an actual road that every person in Jesus's audience would have walked or known.
+The road from Jerusalem to Jericho descended approximately 3,300 feet over seventeen miles through terrain that provided cover for bandits. [cite — confirm the geographical details] It was genuinely dangerous, genuinely isolated, a road where a man could be robbed and left for dead and no one would know for hours. The parable is not set in a hypothetical location. It is set on an actual road that every person in Jesus's audience would have walked or known.
 
 The man who falls among robbers is unspecified. He has no name, no ethnicity, no religious identity. He is a person in need, and his need is total — he is stripped, beaten, and left half dead. He cannot advocate for himself. He cannot explain his background or establish his credentials. He is simply a body on the road, and the question of what his life is worth will be answered entirely by the choices of the next people who pass.
 
