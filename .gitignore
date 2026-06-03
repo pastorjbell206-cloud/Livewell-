@@ -127,3 +127,5 @@ scripts/.fill-assignments.json
 scripts/.fill-spec.md
 scripts/.ghostwrite-spec.md
 scripts/.draft-assignments.json
+scripts/.fill2-assignments.json
+scripts/.fill2-spec.md
