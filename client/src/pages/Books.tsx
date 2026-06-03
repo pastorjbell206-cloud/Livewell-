@@ -10,6 +10,7 @@
  * renders empty — no broken images.
  */
 import { ArrowRight } from "lucide-react";
+import { BookCover } from "@/components/BookCover";
 import { Link } from "wouter";
 
 import Layout from "@/components/Layout";
@@ -209,42 +210,7 @@ export default function Books() {
                         width: "140px",
                       }}
                     >
-                      {book.coverImage ? (
-                        <img
-                          src={book.coverImage}
-                          alt={book.title}
-                          loading="lazy"
-                          width={140}
-                          height={210}
-                          style={{
-                            width: "140px",
-                            height: "210px",
-                            objectFit: "cover",
-                            borderRadius: "var(--radius-sm)",
-                            border: "1px solid var(--border)",
-                          }}
-                        />
-                      ) : (
-                        <div
-                          style={{
-                            width: "140px",
-                            height: "210px",
-                            background: "var(--bone-warm)",
-                            border: "1px solid var(--border)",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            fontFamily: "var(--F)",
-                            color: "var(--ink-muted)",
-                            fontStyle: "italic",
-                            padding: "12px",
-                            textAlign: "center",
-                            borderRadius: "var(--radius-sm)",
-                          }}
-                        >
-                          {book.title}
-                        </div>
-                      )}
+                      <BookCover coverImage={book.coverImage} title={book.title} author={book.author} fixed />
                       <div
                         style={{
                           fontFamily: "var(--F)",
@@ -325,42 +291,7 @@ export default function Books() {
                     e.currentTarget.style.transform = "none";
                   }}
                 >
-                  {book.coverImage ? (
-                    <img
-                      src={book.coverImage}
-                      alt={book.title}
-                      loading="lazy"
-                      style={{
-                        width: "100%",
-                        aspectRatio: "2/3",
-                        objectFit: "cover",
-                        borderRadius: "var(--radius-sm)",
-                        border: "1px solid var(--border)",
-                        marginBottom: "12px",
-                      }}
-                    />
-                  ) : (
-                    <div
-                      style={{
-                        width: "100%",
-                        aspectRatio: "2/3",
-                        background: "var(--card)",
-                        border: "1px solid var(--border)",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        fontFamily: "var(--F)",
-                        color: "var(--ink-muted)",
-                        fontStyle: "italic",
-                        padding: "16px",
-                        textAlign: "center",
-                        borderRadius: "var(--radius-sm)",
-                        marginBottom: "12px",
-                      }}
-                    >
-                      {book.title}
-                    </div>
-                  )}
+                  <BookCover coverImage={book.coverImage} title={book.title} author={book.author} style={{ marginBottom: "12px" }} />
                   <h3
                     style={{
                       fontFamily: "var(--F)",
@@ -431,21 +362,7 @@ export default function Books() {
                   style={{ textDecoration: "none" }}
                 >
                   <div style={{ cursor: "pointer" }}>
-                    {book.coverImage && (
-                      <img
-                        src={book.coverImage}
-                        alt={book.title}
-                        loading="lazy"
-                        style={{
-                          width: "100%",
-                          aspectRatio: "2/3",
-                          objectFit: "cover",
-                          borderRadius: "var(--radius-sm)",
-                          border: "1px solid var(--border)",
-                          marginBottom: "10px",
-                        }}
-                      />
-                    )}
+                    <BookCover coverImage={book.coverImage} title={book.title} author={book.author} style={{ marginBottom: "10px" }} />
                     <h3
                       style={{
                         fontFamily: "var(--F)",
