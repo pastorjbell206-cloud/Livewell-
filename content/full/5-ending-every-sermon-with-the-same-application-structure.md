@@ -8,7 +8,7 @@ words: 1680
 
 If your sermons consistently end with three practical steps, or a salvation invitation, or a call to join a small group, or any other fixed application structure, you are training your congregation to anticipate the landing rather than be genuinely surprised by where the text takes them.
 
-The congregation learns this faster than the preacher realizes. After a few months — sometimes a few weeks — the experienced attender knows what is coming. They can feel when the third point is being made, when the illustration is wrapping up, when the shift to application is about to occur. The sermon becomes a format they navigate rather than a word that arrives. And once that happens, the preaching has lost its capacity to disrupt, because disruption requires surprise — and the structure has made the ending predictable.
+The congregation learns this faster than the preacher realizes. After a few months — sometimes a few weeks — the experienced attender knows what is coming. They can feel when the third point is being made, when the illustration is wrapping up, when the shift to application is about to occur. The sermon becomes a format they process rather than a word that arrives. And once that happens, the preaching has lost its capacity to disrupt, because disruption requires surprise — and the structure has made the ending predictable.
 
 This is not a minor craft problem. It is a formation problem.
 
