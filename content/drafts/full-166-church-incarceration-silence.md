@@ -45,7 +45,7 @@ These silences are choices. They are shaped by who is in the pews and who is not
 
 Not silence. Not the silence of confusion or the silence of overextension or the silence of "we don't want to be political." The silence of the prophets was not a posture they adopted when the situation was complex. They named what the system was doing to the vulnerable, and they named it specifically.
 
-Matthew 25 does not ask the church to have a nuanced position on sentencing reform. It asks whether we visited. Whether we came. Whether the man in the cell knew that there were people outside it who had not forgotten him.
+Matthew 25 does not ask the church to have a carefully calibrated position on sentencing reform. It asks whether we visited. Whether we came. Whether the man in the cell knew that there were people outside it who had not forgotten him.
 
 That is where it starts. The policy work is downstream from the visiting. The advocacy is downstream from the relationship. The reformation of an unjust system is downstream from the church deciding that the people inside it are not invisible.
 
