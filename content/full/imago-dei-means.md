@@ -48,7 +48,7 @@ The standard account of this failure is that the theology was right but the prac
 
 This is the pattern that the doctrine, rightly understood, is designed to prevent. The imago Dei is not a flexible concept. It does not expand and contract based on the requirements of the powerful. The person in front of you bears it. Full stop. The implications of that fact are not optional.
 
-I have failed to receive this in full myself. I have treated the image of God as a theological affirmation while organizing my actual practices around a much more qualified version — spending more energy on people who seemed more likely to produce a return on that investment, more comfortable with the people who occupied roles in the social order I could navigate, less genuinely present to the people whose conditions demanded a kind of presence that would cost me something.
+I have failed to receive this in full myself. I have treated the image of God as a theological affirmation while organizing my actual practices around a much more qualified version — spending more energy on people who seemed more likely to produce a return on that investment, more comfortable with the people who occupied roles in the social order I understood, less genuinely present to the people whose conditions demanded a kind of presence that would cost me something.
 
 The doctrine demands more than I have given it.
 
