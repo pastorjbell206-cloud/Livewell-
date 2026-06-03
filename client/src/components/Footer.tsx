@@ -42,6 +42,8 @@ export default function Footer() {
           <div>
             <h3 style={{ fontSize: "13px", fontWeight: "bold", marginBottom: "16px", color: "#ffffff", textTransform: "uppercase", letterSpacing: "1px" }}>Resources</h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+              <Link href="/start" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Start Here · Blind Spots</Link>
+              <Link href="/pillars" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>The Five Pillars</Link>
               <Link href="/books" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Books</Link>
               <Link href="/reading-paths" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Reading Paths</Link>
               <Link href="/tools" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Ministry Tools</Link>

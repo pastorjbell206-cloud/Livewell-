@@ -18,6 +18,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
 import { PRIMARY_TRACKS, pillarToTrack, resolveTrack } from "@/lib/taxonomy";
+import { getPillar, postMatchesPillar } from "@/lib/pillars";
 
 const AUDIENCE_LABELS: Record<string, string> = {
   individuals: "Anyone",
@@ -54,6 +55,7 @@ export default function Writing() {
   }, [location]);
 
   const activeTrack = params.get("track");
+  const activePillar = params.get("pillar");
   const activeAudience = params.get("audience");
   const activeFormat = params.get("format");
   const urlSearch = params.get("q") ?? "";
@@ -68,6 +70,8 @@ export default function Writing() {
         const track = pillarToTrack(p.pillar);
         if (track !== activeTrack) return false;
       }
+      // Pillar (the five top-level pillars — see lib/pillars.ts)
+      if (activePillar && !postMatchesPillar(p, activePillar)) return false;
       // Audience
       if (activeAudience && p.audience !== activeAudience) return false;
       // Format
@@ -81,7 +85,7 @@ export default function Writing() {
       }
       return true;
     });
-  }, [posts, activeTrack, activeAudience, activeFormat, effectiveSearch]);
+  }, [posts, activeTrack, activePillar, activeAudience, activeFormat, effectiveSearch]);
 
   const featured = useMemo(
     () => filtered.filter(p => p.featured).slice(0, 1)[0],
@@ -93,16 +97,20 @@ export default function Writing() {
   );
 
   const activeTrackInfo = activeTrack ? resolveTrack(activeTrack) : null;
+  const activePillarInfo = activePillar ? getPillar(activePillar) : undefined;
 
   return (
     <Layout>
       <SEOMeta
         title={
-          activeTrackInfo
-            ? `${activeTrackInfo.title} — Writing`
-            : "Writing — All essays"
+          activePillarInfo
+            ? `${activePillarInfo.title} — Writing`
+            : activeTrackInfo
+              ? `${activeTrackInfo.title} — Writing`
+              : "Writing — All essays"
         }
         description={
+          activePillarInfo?.description ??
           activeTrackInfo?.description ??
           "Every essay by James Bell — on theology, politics, the American church after Christendom, pastoring, marriage, and parenting."
         }
@@ -135,9 +143,11 @@ export default function Writing() {
               maxWidth: "22ch",
             }}
           >
-            {activeTrackInfo
-              ? activeTrackInfo.title
-              : "Every essay, in one place."}
+            {activePillarInfo
+              ? activePillarInfo.title
+              : activeTrackInfo
+                ? activeTrackInfo.title
+                : "Every essay, in one place."}
           </h1>
           <p
             style={{
@@ -148,9 +158,11 @@ export default function Writing() {
               maxWidth: "62ch",
             }}
           >
-            {activeTrackInfo
-              ? activeTrackInfo.description
-              : "Theology, politics, the American church after Christendom. Pastoring, marriage, parenting, prophetic justice, doubt. Sorted newest first."}
+            {activePillarInfo
+              ? activePillarInfo.description
+              : activeTrackInfo
+                ? activeTrackInfo.description
+                : "Theology, politics, the American church after Christendom. Pastoring, marriage, parenting, prophetic justice, doubt. Sorted newest first."}
           </p>
           <div
             style={{
@@ -163,6 +175,22 @@ export default function Writing() {
             {postsQuery.isLoading
               ? "Loading…"
               : `${filtered.length} of ${posts.length} essays shown`}
+          </div>
+          <div style={{ marginTop: "12px" }}>
+            <Link
+              href="/pillars"
+              style={{
+                fontFamily: "var(--U)",
+                fontSize: "13px",
+                fontWeight: 500,
+                color: "var(--mustard)",
+                textDecoration: "none",
+                borderBottom: "1px solid var(--mustard)",
+                paddingBottom: "2px",
+              }}
+            >
+              Browse by pillar →
+            </Link>
           </div>
         </div>
       </section>
