@@ -111,3 +111,6 @@ temp/
 
 # Webdev artifacts (checkpoint zips, migrations, etc.)
 .webdev/
+
+# Voice-audit: exported full essay text (read-only DB pull), never commit
+.essays-export.json
