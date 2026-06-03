@@ -121,3 +121,9 @@ scripts/voice-audit-report.json
 scripts/.draft-queue.json
 scripts/.draft-assignments.json
 scripts/.ghostwrite-spec.md
+
+# Content-fill scratch (regenerable)
+scripts/.fill-assignments.json
+scripts/.fill-spec.md
+scripts/.ghostwrite-spec.md
+scripts/.draft-assignments.json
