@@ -6,7 +6,7 @@ source: fill-1500
 words: 1750
 ---
 
-There is a congregation in nearly every American city that understands itself to be doing the work of the kingdom by bringing wealthy, educated, culturally influential people into the church. The strategic logic is coherent: if you can reach the people with resources and influence, they will fund the mission and shape the culture. Leaders matter. Resources matter. A church that influences the powerful has, in theory, outsized kingdom leverage.
+There is a congregation in nearly every American city that understands itself to be doing the work of the kingdom by bringing wealthy, educated, culturally influential people into the church. The strategic logic is coherent: if you can reach the people with resources and influence, they will fund the mission and shape the culture. Leaders matter. Resources matter. A church that influences the powerful has, in theory, outsized kingdom reach.
 
 I have heard this argument from serious people who genuinely love God. I have made versions of it myself. It contains real truth, and the truth in it has made it possible to ignore the theological problem at its center for most of American church history.
 

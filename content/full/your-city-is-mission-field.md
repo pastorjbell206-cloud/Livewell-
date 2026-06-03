@@ -44,4 +44,14 @@ The exiles in Babylon did not choose Babylon. They were sent. Most of us did not
 
 Go where you are. Look at what is actually there. Begin with that.
 
+The practical shape of this begins with something embarrassingly simple: learn the names of the people who live around your church building. Not as a program. Not as a canvassing strategy. As the basic human practice of knowing your neighbors, which the whole law and the prophets hang on (Matthew 22:39-40). Walk the blocks. Eat at the restaurants. Attend the community meetings. Read the local newspaper. Find out what the residents of the neighborhood think the neighborhood needs, and what they have already tried, and what they wish someone had offered ten years ago.
+
+That listening — slow, patient, extending over months rather than launching in a campaign — is itself a form of witness. It says: we are here. We are not performing presence. We intend to stay. We are willing to be changed by what we learn. A congregation that has done this work for five years begins to understand its neighborhood in a way that no demographic survey can replicate, because it has developed actual relationships with actual people who have permitted the congregation into their actual lives.
+
+The mission field is not abstract. It is the homeless man outside your building who sees the congregation arrive and depart each Sunday without eye contact. It is the apartment complex three streets over where no one from the congregation has ever been. It is the school where the neighborhood's children spend their days, where the teachers are desperate for partners. It is the small business owner who serves the neighborhood but does not know a single person in the church. It is the family that moved in eight months ago and has not spoken to a neighbor.
+
+These are not secondary mission concerns while the real work happens elsewhere. These are the first call.
+
+The exiles in Babylon did not choose Babylon. They were sent. Most of us did not choose our zip codes for missiological reasons. We went where the housing was affordable, where the schools were acceptable, where our people were. We were sent anyway. The sending is real regardless of the original intention.
+
 The ends of the earth can wait. Jerusalem cannot.

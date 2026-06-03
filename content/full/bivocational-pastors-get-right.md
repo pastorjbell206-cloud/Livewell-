@@ -36,7 +36,7 @@ There is a theological dimension to this that the pastoral tradition has not alw
 
 The tent-making was not separate from the apostolic work. It was part of the posture: the apostle who does not depend on the congregation has a kind of freedom in relation to them that dependency forecloses. He can speak without self-interest in a way that the pastor whose salary depends on keeping his people happy structurally cannot.
 
-This is not a minor point. The entanglement of pastoral authority with congregational financial support creates pressures that most full-time pastors have felt but few have named clearly. The truthfulness of pastoral counsel is sometimes compromised by the fact that the pastor cannot afford to lose the relationship. The prophetic edge of preaching is sometimes dulled by the knowledge of who is in the front row. These pressures are not irresistible — good pastors navigate them with integrity — but they are real, and the bivocational pastor's structural independence from them is a genuine pastoral advantage.
+This is not a minor point. The entanglement of pastoral authority with congregational financial support creates pressures that most full-time pastors have felt but few have named clearly. The truthfulness of pastoral counsel is sometimes compromised by the fact that the pastor cannot afford to lose the relationship. The prophetic edge of preaching is sometimes dulled by the knowledge of who is in the front row. These pressures are not irresistible — good pastors move through them with integrity — but they are real, and the bivocational pastor's structural independence from them is a genuine pastoral advantage.
 
 ---
 

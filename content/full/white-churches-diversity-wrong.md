@@ -64,4 +64,4 @@ These are not questions about intention. They are questions about structure. The
 
 The path toward the eschatological vision is not a diversity initiative. It is a sustained, costly, generative process of shared power — the white church genuinely learning from the Black church, from the immigrant church, from the traditions it has historically treated as mission fields rather than teachers. The path requires being changed, not merely being expanded.
 
-We are not there. Most of us are not even close. But the verdict has been clear since Ephesians 2, and the work required to approach it has not changed because we have found it difficult.
+We are not there. Most of us are not even close. But the verdict has been clear since Ephesians 2, and the work required to approach it has not become optional because we have found it difficult. The wall came down at the cross. We have been rebuilding it with programs and good intentions for generations. The honest question is whether we are willing to stop.
