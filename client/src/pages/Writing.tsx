@@ -17,7 +17,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
-import { PRIMARY_TRACKS, pillarToTrack, resolveTrack, pillarForPost, PILLAR_BY_SLUG } from "@/lib/taxonomy";
+import { PRIMARY_TRACKS, pillarToTrack, resolveTrack, pillarForPost, PILLAR_BY_SLUG, subThemesForPost, SUBTHEMES } from "@/lib/taxonomy";
 
 const AUDIENCE_LABELS: Record<string, string> = {
   individuals: "Anyone",
@@ -55,6 +55,7 @@ export default function Writing() {
 
   const activeTrack = params.get("track");
   const activePillar = params.get("pillar");
+  const activeSubTheme = params.get("subTheme");
   const activeAudience = params.get("audience");
   const activeFormat = params.get("format");
   const urlSearch = params.get("q") ?? "";
@@ -74,6 +75,8 @@ export default function Writing() {
         const pl = pillarForPost(p);
         if (!pl || pl.slug !== activePillar) return false;
       }
+      // Sub-theme (primarily Pillar 6: marriage, fatherhood, parenting…)
+      if (activeSubTheme && !subThemesForPost(p).includes(activeSubTheme)) return false;
       // Audience
       if (activeAudience && p.audience !== activeAudience) return false;
       // Format
@@ -87,7 +90,7 @@ export default function Writing() {
       }
       return true;
     });
-  }, [posts, activeTrack, activePillar, activeAudience, activeFormat, effectiveSearch]);
+  }, [posts, activeTrack, activePillar, activeSubTheme, activeAudience, activeFormat, effectiveSearch]);
 
   const activePillarInfo = activePillar ? PILLAR_BY_SLUG.get(activePillar) ?? null : null;
 
@@ -180,6 +183,57 @@ export default function Writing() {
               ? "Loading…"
               : `${filtered.length} of ${posts.length} essays shown`}
           </div>
+
+          {/* Pillar 6 sub-theme chips */}
+          {activePillar === "living-well-after-christendom" && (
+            <div
+              style={{
+                marginTop: "20px",
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "8px",
+                alignItems: "center",
+              }}
+            >
+              <Link
+                href="/writing?pillar=living-well-after-christendom"
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  letterSpacing: "0.08em",
+                  textTransform: "uppercase",
+                  padding: "6px 12px",
+                  borderRadius: "999px",
+                  border: `1px solid ${!activeSubTheme ? "var(--mustard)" : "rgba(245,240,230,0.25)"}`,
+                  color: "var(--bone)",
+                  textDecoration: "none",
+                }}
+              >
+                All
+              </Link>
+              {SUBTHEMES.map(st => (
+                <Link
+                  key={st}
+                  href={`/writing?pillar=living-well-after-christendom&subTheme=${st}`}
+                  style={{
+                    fontFamily: "var(--U)",
+                    fontSize: "11px",
+                    fontWeight: 600,
+                    letterSpacing: "0.08em",
+                    textTransform: "uppercase",
+                    padding: "6px 12px",
+                    borderRadius: "999px",
+                    border: `1px solid ${activeSubTheme === st ? "var(--mustard)" : "rgba(245,240,230,0.25)"}`,
+                    color: "var(--bone)",
+                    textDecoration: "none",
+                  }}
+                >
+                  {st.replace(/-/g, " ")}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 

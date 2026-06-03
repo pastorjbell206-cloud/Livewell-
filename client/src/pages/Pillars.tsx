@@ -1,16 +1,29 @@
 import Layout from "@/components/Layout";
 import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
+import { useMemo } from "react";
+import { trpc } from "@/lib/trpc";
 import {
   MOVEMENTS,
   PILLARS_BY_MOVEMENT,
   pillarUrl,
+  pillarForPost,
   type Movement,
 } from "@/lib/taxonomy";
 
 const MOVEMENT_ORDER: Movement[] = ["diagnosis", "formation"];
 
 export default function Pillars() {
+  const postsQuery = trpc.posts.listPublished.useQuery();
+  const counts = useMemo(() => {
+    const c: Record<number, number> = {};
+    for (const p of postsQuery.data ?? []) {
+      const pl = pillarForPost(p);
+      if (pl) c[pl.id] = (c[pl.id] ?? 0) + 1;
+    }
+    return c;
+  }, [postsQuery.data]);
+
   return (
     <Layout>
       <div style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
@@ -122,7 +135,19 @@ export default function Pillars() {
                         </span>
                         {pillar.name}
                       </h3>
-                      <ArrowRight size={18} aria-hidden style={{ color: "var(--ink-muted)", flexShrink: 0 }} />
+                      <div style={{ display: "flex", alignItems: "center", gap: "12px", flexShrink: 0 }}>
+                        <span
+                          style={{
+                            fontFamily: "var(--U)",
+                            fontSize: "12px",
+                            color: "var(--ink-muted)",
+                            whiteSpace: "nowrap",
+                          }}
+                        >
+                          {counts[pillar.id] ?? 0} {counts[pillar.id] === 1 ? "essay" : "essays"}
+                        </span>
+                        <ArrowRight size={18} aria-hidden style={{ color: "var(--ink-muted)" }} />
+                      </div>
                     </div>
                     {/* Intro placeholder — James supplies the final on-voice copy. */}
                     <p
