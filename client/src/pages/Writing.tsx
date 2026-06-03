@@ -17,7 +17,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
-import { PRIMARY_TRACKS, pillarToTrack, resolveTrack } from "@/lib/taxonomy";
+import { PRIMARY_TRACKS, pillarToTrack, resolveTrack, pillarForPost, PILLAR_BY_SLUG } from "@/lib/taxonomy";
 
 const AUDIENCE_LABELS: Record<string, string> = {
   individuals: "Anyone",
@@ -54,6 +54,7 @@ export default function Writing() {
   }, [location]);
 
   const activeTrack = params.get("track");
+  const activePillar = params.get("pillar");
   const activeAudience = params.get("audience");
   const activeFormat = params.get("format");
   const urlSearch = params.get("q") ?? "";
@@ -68,6 +69,11 @@ export default function Writing() {
         const track = pillarToTrack(p.pillar);
         if (track !== activeTrack) return false;
       }
+      // Pillar (new two-movement / six-pillar taxonomy)
+      if (activePillar) {
+        const pl = pillarForPost(p);
+        if (!pl || pl.slug !== activePillar) return false;
+      }
       // Audience
       if (activeAudience && p.audience !== activeAudience) return false;
       // Format
@@ -81,7 +87,9 @@ export default function Writing() {
       }
       return true;
     });
-  }, [posts, activeTrack, activeAudience, activeFormat, effectiveSearch]);
+  }, [posts, activeTrack, activePillar, activeAudience, activeFormat, effectiveSearch]);
+
+  const activePillarInfo = activePillar ? PILLAR_BY_SLUG.get(activePillar) ?? null : null;
 
   const featured = useMemo(
     () => filtered.filter(p => p.featured).slice(0, 1)[0],
@@ -98,13 +106,17 @@ export default function Writing() {
     <Layout>
       <SEOMeta
         title={
-          activeTrackInfo
-            ? `${activeTrackInfo.title} — Writing`
-            : "Writing — All essays"
+          activePillarInfo
+            ? `${activePillarInfo.name} — Writing`
+            : activeTrackInfo
+              ? `${activeTrackInfo.title} — Writing`
+              : "Writing — All essays"
         }
         description={
-          activeTrackInfo?.description ??
-          "Every essay by James Bell — on theology, politics, the American church after Christendom, pastoring, marriage, and parenting."
+          activePillarInfo
+            ? `Essays filed under ${activePillarInfo.name}.`
+            : activeTrackInfo?.description ??
+              "Every essay by James Bell — on theology, politics, the American church after Christendom, pastoring, marriage, and parenting."
         }
         url={`https://www.livewellbyjamesbell.co${location}`}
       />
@@ -135,9 +147,11 @@ export default function Writing() {
               maxWidth: "22ch",
             }}
           >
-            {activeTrackInfo
-              ? activeTrackInfo.title
-              : "Every essay, in one place."}
+            {activePillarInfo
+              ? activePillarInfo.name
+              : activeTrackInfo
+                ? activeTrackInfo.title
+                : "Every essay, in one place."}
           </h1>
           <p
             style={{
@@ -148,9 +162,11 @@ export default function Writing() {
               maxWidth: "62ch",
             }}
           >
-            {activeTrackInfo
-              ? activeTrackInfo.description
-              : "Theology, politics, the American church after Christendom. Pastoring, marriage, parenting, prophetic justice, doubt. Sorted newest first."}
+            {activePillarInfo
+              ? `Essays filed under ${activePillarInfo.name}. Sorted newest first.`
+              : activeTrackInfo
+                ? activeTrackInfo.description
+                : "Theology, politics, the American church after Christendom. Pastoring, marriage, parenting, prophetic justice, doubt. Sorted newest first."}
           </p>
           <div
             style={{
