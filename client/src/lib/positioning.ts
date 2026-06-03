@@ -12,18 +12,18 @@
  */
 
 export const PRIMARY_HEADLINE =
-  "A faith that isn't downstream of a political tribe.";
+  "Theology that carries the weight of everyday life.";
 
-export const PRIMARY_KICKER = "LiveWell · James Bell";
+export const PRIMARY_KICKER = "New essays weekly";
 
 export const PRIMARY_SUBHEAD =
-  "A pastor's reckoning with American Christianity after Christendom — left and right, and the blind spots in both.";
+  "After Christendom essays on theology, politics, and the American church — and the actual Tuesday afternoon of marriage, money, parenting, manhood, womanhood, doubt, and pastoring. From a pastor and essayist tracing the collapse of cultural Christianity, the rise of Christian nationalism, and the long work of forming people who can carry weight.";
 
 export const SHORT_BIO =
   "James Bell is Lead Pastor of First Baptist Church of Fenton and founder of the Pastors Connection Network. He came to faith from atheism, was raised without a father, and has five sons. He writes where ancient Christianity meets the Tuesday afternoon — the biblical text in its own world, justice as a doctrine of God, and living well in a contested age — and is the author of twenty-five books.";
 
 export const META_DESCRIPTION =
-  "A pastor's reckoning with American Christianity after Christendom — left and right, and the blind spots in both. Essays by James Bell, serialized as the book Blind Spots. New essays weekly.";
+  "Deep theology for everyday life. Essays on theology, politics, and the American church after Christendom — plus marriage, money, parenting, manhood, womanhood, and the long work of pastoring. By James Bell. New essays weekly.";
 
 export const NEWSLETTER_PITCH = {
   title: "Get new essays in your inbox",
