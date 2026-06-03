@@ -94,6 +94,27 @@ export default function Writing() {
 
   const activePillarInfo = activePillar ? PILLAR_BY_SLUG.get(activePillar) ?? null : null;
 
+  // Counts for hiding empty filter chips (so chips never lead to 0 results).
+  const pillarCounts = useMemo(() => {
+    const c: Record<number, number> = {};
+    for (const p of posts) {
+      const pl = pillarForPost(p);
+      if (pl) c[pl.id] = (c[pl.id] ?? 0) + 1;
+    }
+    return c;
+  }, [posts]);
+  const subThemeCounts = useMemo(() => {
+    const c: Record<string, number> = {};
+    for (const p of posts) for (const st of subThemesForPost(p)) c[st] = (c[st] ?? 0) + 1;
+    return c;
+  }, [posts]);
+  const visiblePillars = PILLARS_V2.filter(
+    p => (pillarCounts[p.id] ?? 0) > 0 || activePillar === p.slug
+  );
+  const visibleSubThemes = SUBTHEMES.filter(
+    st => (subThemeCounts[st] ?? 0) > 0 || activeSubTheme === st
+  );
+
   const featured = useMemo(
     () => filtered.filter(p => p.featured).slice(0, 1)[0],
     [filtered]
@@ -212,7 +233,7 @@ export default function Writing() {
               >
                 All
               </Link>
-              {SUBTHEMES.map(st => (
+              {visibleSubThemes.map(st => (
                 <Link
                   key={st}
                   href={`/writing?pillar=living-well-after-christendom&subTheme=${st}`}
@@ -273,10 +294,10 @@ export default function Writing() {
           >
             All
           </Link>
-          {PILLARS_V2.map((p, i) => (
+          {visiblePillars.map((p, i) => (
             <span key={p.slug} style={{ display: "contents" }}>
               {/* light divider between the two movements */}
-              {i > 0 && PILLARS_V2[i - 1].movement !== p.movement && (
+              {i > 0 && visiblePillars[i - 1].movement !== p.movement && (
                 <span
                   aria-hidden
                   style={{
@@ -468,7 +489,7 @@ export default function Writing() {
                 }}
               >
                 <div style={{ marginBottom: 0 }}>
-                  <TrackChip pillarOrTrack={featured.pillar} asLink={false} />
+                  <TrackChip pillarOrTrack={featured.pillar} slug={featured.slug} asLink={false} />
                 </div>
                 <h2
                   style={{
@@ -579,7 +600,7 @@ export default function Writing() {
                     }}
                   >
                     <div style={{ marginBottom: "12px" }}>
-                      <TrackChip pillarOrTrack={post.pillar} asLink={false} />
+                      <TrackChip pillarOrTrack={post.pillar} slug={post.slug} asLink={false} />
                     </div>
                     <h3
                       style={{

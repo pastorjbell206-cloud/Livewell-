@@ -1,14 +1,18 @@
 /**
- * Eyebrow chip showing which track an article belongs to. Used in cards,
- * article headers, and hero strips. All variants render in the brand palette
- * (mustard rule + ink-muted text + Inter all-caps).
+ * Eyebrow chip showing which pillar an article belongs to. Used in cards,
+ * article headers, and hero strips. Renders the canonical two-movement /
+ * six-pillar taxonomy (short label), in the brand palette (mustard rule +
+ * mustard text + Inter all-caps).
  */
 import { Link } from "wouter";
-import { resolveTrack, trackUrl } from "@/lib/taxonomy";
+import { pillarForPost, pillarUrl } from "@/lib/taxonomy";
 
 interface TrackChipProps {
+  /** Legacy `posts.pillar` value (kept for backward compatibility). */
   pillarOrTrack: string | null | undefined;
-  /** If true, renders as a link to the track-filtered /writing page. */
+  /** Post slug — enables precise per-essay pillar resolution. */
+  slug?: string | null;
+  /** If true, renders as a link to the pillar-filtered /writing page. */
   asLink?: boolean;
   /** Inverted styling for dark backgrounds (charcoal hero). */
   inverted?: boolean;
@@ -16,11 +20,12 @@ interface TrackChipProps {
 
 export function TrackChip({
   pillarOrTrack,
+  slug,
   asLink = true,
   inverted = false,
 }: TrackChipProps) {
-  const track = resolveTrack(pillarOrTrack);
-  const kicker = track?.kicker ?? "Essay";
+  const pillar = pillarForPost({ slug, pillar: pillarOrTrack });
+  const kicker = pillar?.short ?? "Essay";
 
   const textColor = inverted ? "var(--mustard)" : "var(--mustard-text)";
   const ruleColor = "var(--mustard)";
@@ -47,9 +52,9 @@ export function TrackChip({
     </span>
   );
 
-  if (asLink && track) {
+  if (asLink && pillar) {
     return (
-      <Link href={trackUrl(track.slug)} style={{ textDecoration: "none" }}>
+      <Link href={pillarUrl(pillar.slug)} style={{ textDecoration: "none" }}>
         {content}
       </Link>
     );
