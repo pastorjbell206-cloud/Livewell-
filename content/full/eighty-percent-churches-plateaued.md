@@ -58,4 +58,18 @@ Plateau is a message. It is not comfortable. It is not delivered with cruelty, b
 
 The question is whether the pastor is willing to hear it.
 
+---
+
+There is a specific move that the diagnostic process requires, and most plateaued pastors skip it because it is the most personally costly step: the community audit. Not a survey. Not a focus group. A genuine attempt to understand, from the perspective of people who visited and did not return, what they encountered. Why they left. What they found that they were not looking for, and what they were looking for that they did not find.
+
+Most pastors do not do this because the honest answers are painful. The visitor who attended once and never came back is not invested in protecting the pastor's feelings. They will say directly what the loyal congregation member will never say — that the community felt closed, that the service felt performative, that the connection between what was preached and the actual lives of the people preaching it was not visible, that the community's real priorities were legible in its use of time and money even when the stated priorities were different.
+
+Those answers are a gift. They are delivered without cruelty because they are delivered by people who are no longer invested enough in the community to be cruel. They are simply reporting what they observed before they left.
+
+The pastor who receives those reports honestly — who does not deflect them into the narrative of "people want something easier" or "the culture is moving away from the church" — has access to diagnostic information that no internal process can produce. He can begin to see the gap between what the congregation believes it is and what the person in the parking lot on their way out actually encountered.
+
+That gap is where the plateau lives.
+
+Closing it requires the pastor to lead the congregation into a form of institutional self-examination that feels, to many long-tenured members, like criticism of something they love. It is criticism of something they love. Delivered carefully, with genuine affection and genuine hope, it is also the most loving thing the pastor can do for the community — to name what is true about what they have become, and to call them toward what they were created to be.
+
 The willingness is the beginning of everything that follows.

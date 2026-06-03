@@ -41,3 +41,11 @@ That world has not arrived. It is arriving. The church that holds both of those 
 That church is dangerous to the dominant consciousness.
 
 That is exactly what it ought to be.
+
+The prophetic imagination is not a temperament. Some people are more naturally inclined toward it than others, but Jeremiah, who wept through his entire prophetic career, was not a naturally combative personality. He did not want the calling he received. He tried to refuse it (Jeremiah 1:6). The imagination that seized him was not his own preference. It was the consequence of genuine encounter with the God whose vision for the world cannot coexist with the world's complacent self-assessment.
+
+The church that cultivates prophetic imagination is the church that puts itself regularly in the presence of that God — not the God who endorses the status quo, not the God who is happy with our current arrangements, but the God who asks Ezekiel's valley of dry bones whether those bones can live (Ezekiel 37:3) and means the question seriously. Can these institutions live? Can these relationships live? Can this congregation be more than a gathering of people who happen to share a liturgy?
+
+The prophetic answer is: yes. But not as they are. Not without the breath of God. Not without someone willing to prophesy over the dry bones until the breath enters them.
+
+That is the pastor's work. It is not comfortable. It is necessary.

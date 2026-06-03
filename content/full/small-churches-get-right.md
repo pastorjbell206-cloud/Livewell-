@@ -40,7 +40,7 @@ What he is doing is community. Not as a program. As a practice. As the thing its
 
 That is not nothing. That is actually the point.
 
-There is one more thing worth naming: the small church is, in most of America, the only church that will ever serve certain communities. The rural county where there is no megachurch campus, the urban neighborhood where the building is aging and the demographics have shifted, the town that is not on a growth trajectory and never will be — these communities are served by small churches or they are not served at all. The pastor who treats his small church as a failure has misread the landscape he is actually standing in. He may be the only sustained institutional presence for the gospel in a five-mile radius.
+There is one more thing worth naming: the small church is, in most of America, the only church that will ever serve certain communities. The rural county where there is no megachurch campus, the urban neighborhood where the building is aging and the demographics have shifted, the town that is not on a growth trajectory and never will be — these communities are served by small churches or they are not served at all. The pastor who treats his small church as a failure has misread the territory he is actually standing in. He may be the only sustained institutional presence for the gospel in a five-mile radius.
 
 That is not a consolation. That is a calling.
 

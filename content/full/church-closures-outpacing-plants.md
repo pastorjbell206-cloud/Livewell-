@@ -64,6 +64,24 @@ Are we forming consumers who need our product, or disciples who carry the Gospel
 
 The answer to that question will determine whether the institution closes and the mission dies with it, or whether the institution closes — as institutions eventually do — and the mission continues because it was never actually located in the institution.
 
+---
+
+There is a pastoral practice that grows out of this reckoning, and it is deceptively simple: start treating the small gathering as the unit of formation rather than the large gathering. The Sunday morning service is visible and measurable and satisfying to institutional metrics. The small gathering — the dinner table, the accountability group, the two or three gathered in Jesus's name (Matthew 18:20) — is not. It does not appear in the annual report. It does not justify the building's square footage. It does not impress the denomination's regional leadership.
+
+But it is where people are actually formed. It is where the text meets the specific life of a specific person, where accountability has a face and a name, where the mutual burden-bearing that Paul describes in Galatians 6:2 can actually happen between people who know each other's actual burdens. The large gathering is the occasion; the small gathering is the formation. The church that invests its pastoral energy in the large gathering and treats the small gathering as an optional supplement is investing backward.
+
+The pastor who wants to matter when the institutions are contracting must spend his energy building the thing that survives the contraction. That thing is not the program. It is not the building. It is the community of people who are accountable to each other in Christ — who know how to pray together without him, who know how to read the text together without a professional's guidance, who know how to carry grief together and hope together and sustain each other's faith when the institutional scaffolding comes down.
+
+This is the form of Christian community that has survived every persecution, every institutional collapse, every cultural shift that made public Christianity costly or unavailable. It is the form that met in the catacombs, in the fields, in the house churches of the first century and the house churches of the persecuted church today. It does not close. It cannot be closed. It is the thing that cannot be taken by the mechanisms that take buildings.
+
+I am not certain I have built it. I am certain I need to.
+
+The church that is serious about the mission must become serious about the question: What are we actually forming?
+
+Are we forming consumers who need our product, or disciples who carry the Gospel?
+
+The answer to that question will determine whether the institution closes and the mission dies with it, or whether the institution closes — as institutions eventually do — and the mission continues because it was never actually located in the institution.
+
 Everything else is maintenance.
 
 And maintenance ends.

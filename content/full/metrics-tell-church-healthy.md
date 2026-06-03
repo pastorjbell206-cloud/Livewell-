@@ -43,3 +43,11 @@ Name what you are measuring. Then ask whether those measurements are capturing t
 That conversation, between a pastor and his governing board, about what success actually means, is one of the most important conversations most churches have never had.
 
 It is not too late to have it.
+
+Here is what that conversation might begin with. Not "our attendance is up seven percent" and not "our attendance is down." Begin with a story. Tell the board about a specific person in the congregation who is different this year than they were a year ago — who is more generous, who is more honest, who handled a crisis differently, who reached out to a neighbor in a way they would not have done before. That story is a data point. It is a different kind of data point than a headcount, but it is evidence of the same thing the headcount is supposed to measure: whether the gospel is doing anything real.
+
+Then ask the board to bring their own stories. The board member who only knows how to read the spreadsheet will struggle with this. Good. That struggle is the beginning of the conversation the board actually needs to have about what it is governing and why.
+
+The church is not a business. The board that governs it as though it were a business — measuring inputs and outputs, tracking attendance as a performance indicator, optimizing the organization for growth — is applying a framework to the thing that the thing was not designed to fit. The church is an organism. Organisms are measured by their health, not their size. Health is not always visible from the outside. It requires the kind of sustained, inside knowledge that comes from genuine pastoral attention.
+
+That is what the pastor is for. Not the attendance counter. The shepherd who knows his sheep by name.
