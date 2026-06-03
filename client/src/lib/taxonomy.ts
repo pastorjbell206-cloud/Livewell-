@@ -234,3 +234,88 @@ export const TRACK_GROUPS: Record<Track["group"], Track[]> = {
   ministry: TRACKS.filter(t => t.group === "ministry"),
   everyday: TRACKS.filter(t => t.group === "everyday"),
 };
+
+// ─────────────────────────────────────────────────────────────────────────
+// Two-movement / six-pillar model (2026 library restructure)
+//
+// This is the new canonical taxonomy. Like the track layer above, it resolves
+// per-essay in CODE — PILLAR_ASSIGNMENTS first, then a coarse legacy fallback —
+// so the legacy `posts.pillar` values in the database keep working and no
+// migration is required for the site to render the new structure.
+// ─────────────────────────────────────────────────────────────────────────
+
+import { PILLAR_ASSIGNMENTS } from "./pillar-assignments";
+
+export type Movement = "diagnosis" | "formation";
+
+export interface Pillar {
+  id: number;
+  slug: string;
+  name: string;
+  movement: Movement;
+  /** Neutral placeholder — James supplies the final on-voice intro. */
+  blurb: string;
+}
+
+export const MOVEMENTS: Record<Movement, { title: string; subtitle: string }> = {
+  diagnosis: { title: "Diagnosis", subtitle: "What was lost and why" },
+  formation: { title: "Formation", subtitle: "How to live well on the other side" },
+};
+
+export const PILLARS_V2: Pillar[] = [
+  { id: 1, slug: "capture-by-the-right", name: "The Capture by the Right", movement: "diagnosis", blurb: "[Intro copy to come.]" },
+  { id: 2, slug: "capture-by-the-left", name: "The Capture by the Left", movement: "diagnosis", blurb: "[Intro copy to come.]" },
+  { id: 3, slug: "reading-scripture-past-our-politics", name: "Reading Scripture Past Our Politics", movement: "diagnosis", blurb: "[Intro copy to come.]" },
+  { id: 4, slug: "after-christendom-pillar", name: "After Christendom", movement: "diagnosis", blurb: "[Intro copy to come.]" },
+  { id: 5, slug: "the-pastoral-angle", name: "The Pastoral Angle", movement: "diagnosis", blurb: "[Intro copy to come.]" },
+  { id: 6, slug: "living-well-after-christendom", name: "Living Well After Christendom", movement: "formation", blurb: "[Intro copy to come.]" },
+];
+
+export const SUBTHEMES = [
+  "marriage-covenant",
+  "fatherhood",
+  "parenting",
+  "family-household",
+  "friendship-community",
+  "vocation-work",
+  "practices",
+] as const;
+export type SubTheme = (typeof SUBTHEMES)[number];
+
+export const PILLAR_BY_ID: Map<number, Pillar> = new Map(PILLARS_V2.map(p => [p.id, p]));
+export const PILLAR_BY_SLUG: Map<string, Pillar> = new Map(PILLARS_V2.map(p => [p.slug, p]));
+
+/** Coarse fallback for any essay not in PILLAR_ASSIGNMENTS, by legacy pillar. */
+const LEGACY_TO_V2: Record<string, number> = {
+  "Prophetic Disruption": 1,
+  "Prophetic Justice": 1,
+  "Theological Depth": 3,
+  "Leadership Formation": 5,
+  "Integrated Life": 6,
+};
+
+interface PostLike { slug?: string | null; pillar?: string | null }
+
+/** Resolve a post to its primary Pillar under the new taxonomy. */
+export function pillarForPost(post: PostLike): Pillar | null {
+  const bySlug = post.slug ? PILLAR_ASSIGNMENTS[post.slug] : undefined;
+  let id = bySlug?.pillar;
+  if (!id && post.pillar) id = LEGACY_TO_V2[post.pillar.trim()];
+  if (!id) id = 5; // default: The Pastoral Angle
+  return PILLAR_BY_ID.get(id) ?? null;
+}
+
+/** Sub-themes for a post (primarily Pillar 6). */
+export function subThemesForPost(post: PostLike): string[] {
+  return (post.slug && PILLAR_ASSIGNMENTS[post.slug]?.subThemes) || [];
+}
+
+export const PILLARS_BY_MOVEMENT: Record<Movement, Pillar[]> = {
+  diagnosis: PILLARS_V2.filter(p => p.movement === "diagnosis"),
+  formation: PILLARS_V2.filter(p => p.movement === "formation"),
+};
+
+/** Canonical URL for filtering /writing by a pillar. */
+export function pillarUrl(slug: string): string {
+  return `/writing?pillar=${slug}`;
+}
