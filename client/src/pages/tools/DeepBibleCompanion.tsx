@@ -359,7 +359,7 @@ const BOOKS: BibleBook[] = [
         paraphrase: "Before any advice is given, the book tells you why it exists: to make you wise, not just informed. And the foundation of all wisdom is this: take God seriously. Not terror. Reverence. The posture of someone who knows they are not the smartest person in the room, because God is.",
         keyWords: [
           { word: "fear", original: "yirah (Hebrew)", meaning: "Not terror or dread. Yirah is reverence, awe, the proper response to standing before something vastly greater than yourself. It is the posture of a student before a master, a creature before a Creator. Fear in this sense is not the opposite of love. It is the beginning of it." },
-          { word: "wisdom", original: "chokmah (Hebrew)", meaning: "Not intelligence or education. Chokmah is skill for living. It is the ability to navigate the world as it actually is, not as you wish it were. In the ancient world, the same word was used for a craftsman's skill. Wisdom is practical, not abstract." },
+          { word: "wisdom", original: "chokmah (Hebrew)", meaning: "Not intelligence or education. Chokmah is skill for living. It is the ability to meet the world as it actually is, not as you wish it were. In the ancient world, the same word was used for a craftsman's skill. Wisdom is practical, not abstract." },
           { word: "beginning", original: "reshith (Hebrew)", meaning: "Can mean 'beginning,' 'first principle,' or 'foundation.' The fear of the Lord is not where wisdom starts and then moves past. It is the foundation on which every other insight is built. Remove it and the structure collapses." },
         ],
         historical: [

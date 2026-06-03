@@ -55,7 +55,7 @@ export default function Pillars() {
               The Five Pillars of LiveWell
             </h1>
             <p className="text-xl" style={{ color: "var(--ink-muted)" }}>
-              Everything at LiveWell is organized around five core pillars. Understanding these will help you navigate the content and find what matters most to you.
+              Everything at LiveWell is organized around five core pillars. Understanding these will help you find your way around the content and find what matters most to you.
             </p>
           </div>
 

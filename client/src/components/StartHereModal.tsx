@@ -65,7 +65,7 @@ export function StartHereModal({ isOpen, onClose }: StartHereModalProps) {
         <DialogHeader>
           <DialogTitle className="text-3xl font-serif">Start Here</DialogTitle>
           <DialogDescription className="text-base mt-2">
-            Choose your path to find the most relevant articles and resources for your journey
+            Choose your path to find the most relevant articles and resources for where you are
           </DialogDescription>
         </DialogHeader>
 

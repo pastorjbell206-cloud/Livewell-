@@ -424,7 +424,7 @@ const CONFLICT_TYPES: ConflictType[] = [
         number: 1,
         title: "Name what happened",
         description:
-          "Was it a comment at dinner? An uninvited opinion about your parenting? A financial arrangement that gave someone leverage? Name the specific boundary that was crossed.",
+          "Was it a comment at dinner? An uninvited opinion about your parenting? A financial arrangement that gave someone the upper hand? Name the specific boundary that was crossed.",
         questions: [
           { text: "What did the in-law say or do that caused the conflict between you and your spouse?" },
           { text: "Is this a one-time boundary violation, or has it been happening for years?" },

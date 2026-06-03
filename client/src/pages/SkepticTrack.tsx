@@ -33,7 +33,7 @@ const STOPS: Stop[] = [
     slug: "the-questions-that-actually-matter",
     title: "1. The questions that actually matter.",
     pitch:
-      "Most defenses of Christianity answer questions skeptics aren't asking. Here are the ones that actually do the work.",
+      "Most defenses of Christianity answer questions skeptics aren't asking. Here are the ones that actually land.",
   },
   {
     slug: "what-secular-explanations-still-have-to-explain",
