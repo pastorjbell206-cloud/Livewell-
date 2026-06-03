@@ -1,36 +1,91 @@
 {
-    "buildCommand": "rm -rf node_modules/.vite .vite dist && pnpm run sitemap && pnpm run build && pnpm run prerender",
-    "outputDirectory": "dist/public",
-    "installCommand": "pnpm install --no-frozen-lockfile",
-    "headers": [
-          {
-                  "source": "/(.*)",
-                  "headers": [
-                            { "key": "X-Content-Type-Options", "value": "nosniff" },
-                            { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-                            { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-                            { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=()" },
-                            { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" }
-                  ]
-          }
-    ],
-    "redirects": [
-          { "source": "/articles", "destination": "/writing", "permanent": true },
-          { "source": "/articles/:slug", "destination": "/writing/:slug", "permanent": true },
-          { "source": "/for-families", "destination": "/parenting", "permanent": true },
-          { "source": "/books-store", "destination": "/books", "permanent": true },
-          {
-                  "source": "/(.*)",
-                  "has": [{ "type": "host", "value": "livewellbyjamesbell.co" }],
-                  "destination": "https://www.livewellbyjamesbell.co/$1",
-                  "permanent": true
-          }
-    ],
-    "rewrites": [
-          { "source": "/api/(.*)", "destination": "/api/index.ts" },
-          { "source": "/rss.xml", "destination": "/api/index.ts" },
-          { "source": "/feed", "destination": "/api/index.ts" },
-          { "source": "/feed.xml", "destination": "/api/index.ts" },
-          { "source": "/((?!assets/|api/).*)", "destination": "/index.html" }
-    ]
+  "buildCommand": "rm -rf node_modules/.vite .vite dist && pnpm run sitemap && pnpm run build && pnpm run prerender",
+  "outputDirectory": "dist/public",
+  "installCommand": "pnpm install --frozen-lockfile",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "Content-Security-Policy-Report-Only",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://js.stripe.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https:; frame-src https://js.stripe.com; object-src 'none'; base-uri 'self'; form-action 'self'"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/articles",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/articles/:slug",
+      "destination": "/writing/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/for-families",
+      "destination": "/parenting",
+      "permanent": true
+    },
+    {
+      "source": "/books-store",
+      "destination": "/books",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "livewellbyjamesbell.co"
+        }
+      ],
+      "destination": "https://www.livewellbyjamesbell.co/$1",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.ts"
+    },
+    {
+      "source": "/rss.xml",
+      "destination": "/api/index.ts"
+    },
+    {
+      "source": "/feed",
+      "destination": "/api/index.ts"
+    },
+    {
+      "source": "/feed.xml",
+      "destination": "/api/index.ts"
+    },
+    {
+      "source": "/((?!assets/|api/).*)",
+      "destination": "/index.html"
+    }
+  ]
 }
