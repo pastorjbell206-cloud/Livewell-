@@ -218,6 +218,24 @@ function main() {
     for (const item of harvestJson(jsonPath)) add(item, "content-data.json");
   }
 
+  // 4. books (title + description) from the JSON seed set
+  if (existsSync(jsonPath)) {
+    const data = JSON.parse(readFileSync(jsonPath, "utf8"));
+    for (const b of data.books || []) {
+      if (!b.description) continue;
+      add(
+        {
+          title: b.title || "",
+          slug: `book:${(b.title || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`,
+          pillar: "Book",
+          body: String(b.description).trim(),
+          published: b.published !== false,
+        },
+        "content-data.json (books)"
+      );
+    }
+  }
+
   const corpus = [...bySlug.values()].sort((a, b) => b.body.length - a.body.length);
   writeFileSync(OUT, JSON.stringify(corpus, null, 2));
 

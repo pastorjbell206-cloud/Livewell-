@@ -2,7 +2,7 @@
 
 Source corpus: `/home/user/Livewell-/scripts/.essays-corpus.json`
 
-**308 essays scanned** — 29 need a human pass, 279 are mechanically clean. 36 hard forbidden hits, 12 judgment-call flags.
+**329 essays scanned** — 32 need a human pass, 297 are mechanically clean. 38 hard forbidden hits, 13 judgment-call flags.
 
 _Mechanical only. A clean score means no banned words — not that the prose carries Bell's voice. Read the top of this list first._
 
@@ -18,27 +18,30 @@ _Mechanical only. A clean score means no banned words — not that the prose car
 | 6 | What Healthy Conflict in a Marriage Actually Looks Like | 2 | 0 | 2.4 |
 | 7 | When One Partner Has Grown and the Other Hasn't | 2 | 0 | 2.4 |
 | 8 | When You Married Someone You No Longer Recognize | 2 | 0 | 2.3 |
-| 9 | When a Church Split Happens — Surviving It, Learning From It, Moving Forward | 1 | 0 | 27.8 |
-| 10 | Why the Future of Missions Is Already There | 1 | 0 | 27.0 |
-| 11 | Church Closures Are Outpacing Church Plants 3 to 1 — What That Means for the Mission | 1 | 0 | 25.0 |
-| 12 | Why Addressing Symptoms Without Causes Is Charity, Not Justice | 1 | 0 | 21.3 |
-| 13 | The Church's Response to Culture | 1 | 0 | 20.0 |
-| 14 | 4. Navigating Conflict Alone | 1 | 0 | 12.2 |
-| 15 | What the Church Owes the Woman in Crisis Pregnancy Beyond Its Political Position | 1 | 0 | 2.8 |
-| 16 | 33. The Case for Doing City-Wide Church Together at Least Once a Year | 1 | 0 | 1.7 |
-| 17 | 34. What a Healthy Pastor Referral Network Actually Looks Like | 1 | 0 | 1.7 |
-| 18 | 39. Church Closures Are Outpacing Church Plants 3 to 1 — What That Means for the Mission | 1 | 0 | 1.6 |
-| 19 | 31. When a Church Split Happens — Surviving It, Learning From It, Moving Forward | 1 | 0 | 1.6 |
-| 20 | 38. What I Learned About Unity From Pastoring Across Cultural Lines | 1 | 0 | 1.5 |
-| 21 | 19. What Small Churches Get Right That Large Churches Rarely Talk About | 1 | 0 | 1.4 |
-| 22 | When the Romance Has Left and Only the Covenant Remains | 1 | 0 | 1.3 |
-| 23 | 50. How to Lead When Trust in Institutions — Including the Church — Is at an All-Time Low | 1 | 0 | 1.2 |
-| 24 | What the Beatitudes Are Actually Promising | 0 | 3 | 0.0 |
-| 25 | Foster Care and the Church's Unfinished Mandate | 0 | 2 | 0.0 |
-| 26 | 47. Engaging the 'Nones' — What Research Tells Us About Reaching the Religiously Unaffiliated | 0 | 1 | 0.0 |
-| 27 | What a Consistent Pro-Life Ethic Requires Beyond Opposition to Abortion | 0 | 1 | 0.0 |
-| 28 | When God Bless America Replaces Thy Kingdom Come | 0 | 1 | 0.0 |
-| 29 | How I Learned to Stop Performing and Start Pastoring | 0 | 1 | 0.0 |
+| 9 | Changing the Unchangeable | 1 | 0 | 34.5 |
+| 10 | When a Church Split Happens — Surviving It, Learning From It, Moving Forward | 1 | 0 | 27.8 |
+| 11 | Why the Future of Missions Is Already There | 1 | 0 | 27.0 |
+| 12 | Church Closures Are Outpacing Church Plants 3 to 1 — What That Means for the Mission | 1 | 0 | 25.0 |
+| 13 | Why Addressing Symptoms Without Causes Is Charity, Not Justice | 1 | 0 | 21.3 |
+| 14 | The Church's Response to Culture | 1 | 0 | 20.0 |
+| 15 | Earthen Vessels: Why Our Bodies Matter to Our Faith | 1 | 0 | 19.6 |
+| 16 | 4. Navigating Conflict Alone | 1 | 0 | 12.2 |
+| 17 | What the Church Owes the Woman in Crisis Pregnancy Beyond Its Political Position | 1 | 0 | 2.8 |
+| 18 | 33. The Case for Doing City-Wide Church Together at Least Once a Year | 1 | 0 | 1.7 |
+| 19 | 34. What a Healthy Pastor Referral Network Actually Looks Like | 1 | 0 | 1.7 |
+| 20 | 39. Church Closures Are Outpacing Church Plants 3 to 1 — What That Means for the Mission | 1 | 0 | 1.6 |
+| 21 | 31. When a Church Split Happens — Surviving It, Learning From It, Moving Forward | 1 | 0 | 1.6 |
+| 22 | 38. What I Learned About Unity From Pastoring Across Cultural Lines | 1 | 0 | 1.5 |
+| 23 | 19. What Small Churches Get Right That Large Churches Rarely Talk About | 1 | 0 | 1.4 |
+| 24 | When the Romance Has Left and Only the Covenant Remains | 1 | 0 | 1.3 |
+| 25 | 50. How to Lead When Trust in Institutions — Including the Church — Is at an All-Time Low | 1 | 0 | 1.2 |
+| 26 | What the Beatitudes Are Actually Promising | 0 | 3 | 0.0 |
+| 27 | Foster Care and the Church's Unfinished Mandate | 0 | 2 | 0.0 |
+| 28 | 47. Engaging the 'Nones' — What Research Tells Us About Reaching the Religiously Unaffiliated | 0 | 1 | 0.0 |
+| 29 | What a Consistent Pro-Life Ethic Requires Beyond Opposition to Abortion | 0 | 1 | 0.0 |
+| 30 | When God Bless America Replaces Thy Kingdom Come | 0 | 1 | 0.0 |
+| 31 | The Unfinished Church: Calling, Vision, and the Future God Is Building | 0 | 1 | 0.0 |
+| 32 | How I Learned to Stop Performing and Start Pastoring | 0 | 1 | 0.0 |
 
 ## Detail (flagged essays only)
 
@@ -116,6 +119,12 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - …disorientation of finding that the landscape has changed without warning. Psalm…
   - …t holds even when the recognizable landscape does not. The person you no longe…
 
+### Changing the Unchangeable
+`book:changing-the-unchangeable`
+
+- **FORBIDDEN** · `navigate` · 1× · forbidden-word
+  - …Book 12 in The Hard Issues Series. Navigate institutional resistance and lead…
+
 ### When a Church Split Happens — Surviving It, Learning From It, Moving Forward
 `church-split-surviving-learning-forward`
 
@@ -145,6 +154,12 @@ _Mechanical only. A clean score means no banned words — not that the prose car
 
 - **FORBIDDEN** · `navigate` · 1× · forbidden-word
   - …The pastor who can help his church navigate cultural change will lead a church…
+
+### Earthen Vessels: Why Our Bodies Matter to Our Faith
+`book:earthen-vessels-why-our-bodies-matter-to-our-faith`
+
+- **FORBIDDEN** · `holistic` · 1× · forbidden-word
+  - …es spirit from body, arguing for a holistic Christianity that honors the physi…
 
 ### 4. Navigating Conflict Alone
 `4-navigating-conflict-alone`
@@ -243,6 +258,13 @@ _Mechanical only. A clean score means no banned words — not that the prose car
 - _review_ · `authentic` · 1× · review-word
   - forbidden as filler; 'authentic community' is a hard ban (caught separately)
   - …urch culture and what it means for authentic Christian witness.…
+
+### The Unfinished Church: Calling, Vision, and the Future God Is Building
+`book:the-unfinished-church-calling-vision-and-the-future-god-is-building`
+
+- _review_ · `journey` · 1× · review-word
+  - forbidden only as a metaphor — fine if literal travel
+  - …work. Bell reflects on the churchs journey, current challenges, and Gods prom…
 
 ### How I Learned to Stop Performing and Start Pastoring
 `stop-performing-start-pastoring`
