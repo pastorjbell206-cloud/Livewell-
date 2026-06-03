@@ -33,7 +33,7 @@ Those people are in your congregation. Finding them requires looking rather than
 
 Once found, they must be developed rather than just deployed. The pastor who adds people to a leadership team without investing in their formation is creating committee members, not leaders. The formation is the work — the long, patient work of shared discernment, honest conversation, accountability, and the kind of trust that only accumulates through time and repeated decisions made together. You cannot shortcut it and get the real thing.
 
-What you get when you do the work is something worth protecting: a room of people who care about the mission as much as you do, who know the congregation's real condition, who can speak honestly to you when you are wrong, and who can carry the work when you cannot. That room is not a threat to your leadership. It is what makes your leadership worth having.
+What this patient formation produces is something worth protecting: a room of people who care about the mission as much as you do, who know the congregation's real condition, who can speak honestly to you when you are wrong, and who can carry the work when you cannot. That room is not a threat to your leadership. It is what makes your leadership worth having.
 
 The pastor who fears the leadership team fears being known too well. That fear is worth examining. The leaders who outlast their churches are almost always men who gathered people around them who knew their limitations and believed in their calling anyway — and who were empowered to fill what the pastor could not.
 
