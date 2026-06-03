@@ -88,6 +88,39 @@ React 19 + Vite 7 + TypeScript + Wouter + tRPC + Drizzle ORM + MySQL on Vercel.
 | `pnpm lint` | ESLint |
 | `pnpm db:seed` | Seed content |
 
+## Content taxonomy — two movements, six pillars
+
+The library is organized as two movements, each containing pillars. Every essay
+resolves to exactly one primary pillar.
+
+**Diagnosis** (what was lost and why)
+1. The Capture by the Right · 2. The Capture by the Left · 3. Reading Scripture
+Past Our Politics · 4. After Christendom · 5. The Pastoral Angle
+
+**Formation** (how to live well on the other side)
+6. Living Well After Christendom — with sub-themes: `marriage-covenant`,
+`fatherhood`, `parenting`, `family-household`, `friendship-community`,
+`vocation-work`, `practices`.
+
+Source of truth: `client/src/lib/taxonomy.ts` (`PILLARS_V2`, `MOVEMENTS`,
+`SUBTHEMES`, `pillarForPost`). Filing resolves **in code** — per-essay
+assignments first, then a legacy-pillar fallback — so the legacy `posts.pillar`
+values in the database keep working with no migration.
+
+### Filing a piece
+
+1. **Assign a pillar.** Add the slug to `client/src/lib/pillar-assignments.ts`:
+   `"my-essay-slug": { pillar: 6, subThemes: ["fatherhood"], confidence: "high" }`.
+   If absent, it falls back to its legacy pillar (and defaults to Pillar 5).
+2. **Sub-themes** apply mainly to Pillar 6; list one or more.
+3. It then appears automatically on `/pillars` (with a live count) and is
+   filterable at `/writing?pillar=<slug>` and `/writing?pillar=living-well-after-christendom&subTheme=<sub>`.
+
+No database migration is needed: the resolver reads `pillar-assignments.ts` and
+leaves the legacy `posts.pillar` values untouched (they still drive the legacy
+track layer). `scripts/classify-pillars.mjs` regenerates a proposed mapping
+(`scripts/pillar-mapping.md`) for review; correct calls in `pillar-assignments.ts`.
+
 ## Brand reference
 
 - `CLAUDE.md` — voice, palette, typography, forbidden language
