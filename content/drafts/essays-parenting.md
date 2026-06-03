@@ -64,7 +64,7 @@ for the eventual book *Raising Five Sons*.
 **Slug:** `the-family-worship-that-survives-adolescence`
 **Track:** `parenting` · **Audience:** `individuals` · **Reading time:** ~9 min
 
-**Positioning sentence:** Family worship — the daily practice of prayer and scripture inside the household — is the practice that survives the rest. Most evangelical families have lost it. Recovering it is the highest-leverage parenting work available.
+**Positioning sentence:** Family worship — the daily practice of prayer and scripture inside the household — is the practice that survives the rest. Most evangelical families have lost it. Recovering it is the highest-impact parenting work available.
 
 **Argument beats:**
 1. The historical practice: the daily family altar. Father, mother, children. Scripture read. Prayer prayed. This was nearly universal in Protestant households for three hundred years. It has nearly disappeared in two generations.

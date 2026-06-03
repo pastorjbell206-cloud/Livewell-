@@ -6,12 +6,12 @@ audience: individuals
 format: article
 status: draft-final
 read_time_minutes: 9
-excerpt: "Family worship is the daily practice that survives the rest. Most evangelical families have lost it. Recovering it is the highest-leverage parenting work available."
+excerpt: "Family worship is the daily practice that survives the rest. Most evangelical families have lost it. Recovering it is the highest-impact parenting work available."
 seo_keywords: "family worship, family devotions, family Bible time, household worship, Christian family devotion"
 publish_at: null
 ---
 
-Family worship — the daily practice of prayer and scripture inside the household — is the practice that survives the rest. Most evangelical families have lost it. Recovering it is the highest-leverage parenting work available in our generation, and almost no one is naming it as the highest-leverage work.
+Family worship — the daily practice of prayer and scripture inside the household — is the practice that survives the rest. Most evangelical families have lost it. Recovering it is the highest-impact parenting work available in our generation, and almost no one is naming it as the highest-impact work.
 
 I want to write this essay for the Christian parent who has been doing the youth-group circuit and the Christian-school enrollment and is watching her teenagers drift in ways the strategy was supposed to prevent. The strategy was incomplete. The daily household practice of worship is the missing piece, and the missing piece is what the data suggests is doing most of the actual formation work in the families whose children hold the faith into adulthood.
 
@@ -37,7 +37,7 @@ The data converges on a simple claim. The household is the basic unit of religio
 
 The contemporary American evangelical household has been operating, on the whole, on the assumption that the verbal affirmation plus the institutional involvement would be sufficient. The assumption has been wrong. The next generation has been leaving in numbers the assumption did not predict, and the leaving is, in significant respects, the predictable consequence of the missing household practice.
 
-The recovery of family worship is, on the available evidence, the single most leveraged thing Christian parents can do to support the formation of their children's faith. The leverage is not theoretical. The leverage is documented across multiple research traditions. The leverage is being ignored in most contemporary Christian parenting literature, which has emphasized the institutional pieces over the household practice. The emphasis has been mistaken, and the mistake has had consequences.
+The recovery of family worship is, on the available evidence, the single most leveraged thing Christian parents can do to support the formation of their children's faith. The impact is not theoretical. The impact is documented across multiple research traditions. This impact is being ignored in most contemporary Christian parenting literature, which has emphasized the institutional pieces over the household practice. The emphasis has been mistaken, and the mistake has had consequences.
 
 ## How to start, concretely
 

@@ -32,7 +32,7 @@ The first seven years are about discovering that your spouse is not the person y
 
 This is not poetic. It is operational.
 
-Your spouse will fail you. You will fail your spouse. The failure is not the end of the marriage; the failure is where the marriage begins to be real. Eugene Peterson called marriage "a long obedience in the same direction," borrowing the phrase from Nietzsche on purpose. The borrowing is the point. The shape of obedience inside a marriage is the same shape it takes everywhere else: showing up after you said you would, after you no longer want to, after you have nothing left to give to it.
+Your spouse will fail you. You will fail your spouse. The failure is not the end of the marriage; the failure is where the marriage begins to be real. Eugene Peterson called marriage "a long obedience in the same direction," borrowing the phrase from Nietzsche on purpose. The borrowing is the point. The shape of obedience inside a marriage is the same shape it takes everywhere else: being there after you said you would, after you no longer want to, after you have nothing left to give to it.
 
 Conflict is not a sign the marriage is broken. Conflict is the friction of the carving. The marriages that survive are not the ones with the least conflict; they are the ones in which conflict has been honored — fought through, repaired from, learned from. The marriages that end are usually the ones in which conflict was avoided until the avoidance was the whole relationship and there was nothing left underneath.
 

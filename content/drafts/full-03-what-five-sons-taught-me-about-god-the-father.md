@@ -30,7 +30,7 @@ The night my first son was born, Susanna handed him to me, and I held him, and t
 
 Most of what I have learned about God the Father in the twenty-two years since I have learned in the failing.
 
-The first son taught me that fathering is not primarily about doing. It is about being there. He did not need me to know what I was doing. He needed me to keep showing up while I did not know what I was doing. The Father in the Trinity does not give Israel a set of instructions and step away. He stays. The staying is most of the fathering.
+The first son taught me that fathering is not primarily about doing. It is about being there. He did not need me to know what I was doing. He needed me to keep being there while I did not know what I was doing. The Father in the Trinity does not give Israel a set of instructions and step away. He stays. The staying is most of the fathering.
 
 The second son taught me that the father is the one who carries weight the children should not yet have to carry. There is a difference between *the work you do for your family* and *the work you let your family see you carry.* The second is the formative one. He has watched me carry weight. He watched the way I held my own composure during a season of conflict in the church, and he was nine, and I did not know he was watching, and he told me eight years later that he had been watching. The Father in the Trinity carries the weight no one else can carry. The Son sees it. The Son becomes the man who can carry that weight, because he saw it carried first.
 
@@ -44,7 +44,7 @@ The fifth son taught me about waiting. He came later than the others. There was 
 
 If I could write a letter to the man I was the night my first son was born, the letter would be short. It would say four things.
 
-You do not have to know what you are doing. You have to keep showing up while you do not. The showing up is most of it.
+You do not have to know what you are doing. You have to keep being there while you do not. Being there is most of it.
 
 The man you are now is not the father your son needs. He cannot be. He is too young, too unfinished, too false. The fathering will form you. You will be a different man at forty-six than you are at twenty-four, and the difference will be because of the boys in the next room.
 

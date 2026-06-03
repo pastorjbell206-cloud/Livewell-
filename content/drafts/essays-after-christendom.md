@@ -117,7 +117,7 @@ Full draft in `full-01-the-god-who-doesnt-bless-america.md`. The lede essay of t
 1. The remnant motif in scripture. Isaiah 10:20–22. Romans 11. The seven thousand who had not bowed to Baal.
 2. The historical pattern: the church has been a minority almost everywhere except Christendom. Even within Christendom, the *living* church (the actual disciples) has usually been a minority within the named church.
 3. The cure for the lost-majority panic: we never had what we think we had. The mid-twentieth-century American church appeared majoritarian; most of its members were not, by any operational measurement, disciples.
-4. What minority church looks like: deeper formation, less assumed knowledge, more explicit commitment, less political leverage, more pastoral cost.
+4. What minority church looks like: deeper formation, less assumed knowledge, more explicit commitment, less political power, more pastoral cost.
 5. The North African church example. The Coptic church. The Chinese house church. The Korean church under Japanese occupation. These are the models, not 1955 American suburban congregationalism.
 6. Self-implication: I have spent half my pastoral life mourning a majority that was never real, and I should have spent it pastoring the people in front of me.
 7. The verdict: minority is fine. It is more than fine. It is most of what the church has ever been.
