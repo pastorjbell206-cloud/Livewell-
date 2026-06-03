@@ -20,7 +20,7 @@ The Hebrew word is *shamar* — to keep, to guard, to watch over (Genesis 2:15).
 
 When Ezekiel 34 accuses the shepherds of Israel of ruining the pastures and fouling the water with their feet so the sheep must drink what the shepherds have muddied (Ezekiel 34:18), it is speaking of leaders, not of factory owners. But the logic maps precisely. Power fouling what others must drink. That is the structure of environmental racism — not in every case the product of deliberate malice, but the predictable output of systems in which the powerful do not have to live downstream of the decisions they make.
 
-The poor communities, the communities of color, the communities without political leverage — they live downstream. They always have.
+The poor communities, the communities of color, the communities without political weight — they live downstream. They always have.
 
 ---
 
@@ -44,7 +44,7 @@ Charity distributes bottled water. Justice asks why the lead is in the pipes.
 
 ---
 
-The steel-man case against calling this a justice issue worth prophetic attention goes roughly like this: these are complex policy questions involving competing economic interests, regulatory tradeoffs, and technical expertise. The church should not oversimplify them. The pattern, while real, does not always reflect explicit racial intent — often it reflects poverty, since poor communities of any race have less political leverage. The church risks politicization when it takes up these issues under a justice frame.
+The steel-man case against calling this a justice issue worth prophetic attention goes roughly like this: these are complex policy questions involving competing economic interests, regulatory tradeoffs, and technical expertise. The church should not oversimplify them. The pattern, while real, does not always reflect explicit racial intent — often it reflects poverty, since poor communities of any race have less political power. The church risks politicization when it takes up these issues under a justice frame.
 
 There is something to this. Policy is complex. Correlation does not always indicate explicit discriminatory intent. The church should speak with humility about mechanisms it does not fully understand.
 
