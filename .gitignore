@@ -119,3 +119,5 @@ scripts/voice-audit-report.json
 
 # Draft work-queue (regenerable from classify-pillars/content-data)
 scripts/.draft-queue.json
+scripts/.draft-assignments.json
+scripts/.ghostwrite-spec.md
