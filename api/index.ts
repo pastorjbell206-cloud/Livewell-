@@ -1067,7 +1067,7 @@ function verifySession(token: string | undefined): { user: string } | null {
   if (parts.length !== 2) return null;
   const [b64, sig] = parts;
   const expected = crypto.createHmac("sha256", getJwtSecret()).update(b64).digest("base64url");
-  if (sig !== expected) return null;
+  if (sig.length !== expected.length || !crypto.timingSafeEqual(Buffer.from(sig), Buffer.from(expected))) return null;
   try {
     const payload = JSON.parse(Buffer.from(b64, "base64url").toString());
     if (typeof payload.e !== "number" || payload.e < Date.now()) return null;
