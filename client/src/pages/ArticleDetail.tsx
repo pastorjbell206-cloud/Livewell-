@@ -255,7 +255,7 @@ export default function ArticleDetail() {
           </button>
         </div>
 
-        {/* HEADER */}
+        {/* HEADER — centered editorial */}
         <section
           style={{
             padding: "var(--s-6) var(--s-4) var(--s-5)",
@@ -263,9 +263,21 @@ export default function ArticleDetail() {
             borderBottom: "1px solid var(--border)",
           }}
         >
-          <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-            {/* Eyebrow chip — links to the canonical track */}
-            <div style={{ marginBottom: "20px" }}>
+          <div
+            style={{
+              maxWidth: "var(--w-prose)",
+              margin: "0 auto",
+              textAlign: "center",
+            }}
+          >
+            {/* Kicker — pillar */}
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                marginBottom: "24px",
+              }}
+            >
               <TrackChip pillarOrTrack={post.pillar} />
             </div>
 
@@ -278,61 +290,75 @@ export default function ArticleDetail() {
                 lineHeight: 1.1,
                 letterSpacing: "-0.02em",
                 color: "var(--ink)",
-                marginBottom: "24px",
+                marginBottom: post.excerpt ? "24px" : "28px",
               }}
             >
               {post.title}
             </h1>
 
-            {/* Meta info — byline + audience + date */}
+            {/* Standfirst / dek */}
+            {post.excerpt && (
+              <p
+                style={{
+                  fontFamily: "var(--F)",
+                  fontSize: "22px",
+                  lineHeight: 1.5,
+                  color: "var(--ink-muted)",
+                  fontStyle: "italic",
+                  maxWidth: "32em",
+                  margin: "0 auto 28px",
+                }}
+              >
+                {post.excerpt}
+              </p>
+            )}
+
+            {/* Mustard rule */}
+            <div
+              aria-hidden
+              style={{
+                width: "64px",
+                height: "2px",
+                background: "var(--mustard)",
+                margin: "0 auto 20px",
+              }}
+            />
+
+            {/* Meta row — byline · audience/reading time · date */}
             <div
               style={{
                 display: "flex",
+                justifyContent: "center",
                 alignItems: "center",
-                gap: "20px",
-                paddingBottom: "20px",
-                borderBottom: "1px solid var(--border)",
+                gap: "16px",
                 flexWrap: "wrap",
                 fontFamily: "var(--U)",
                 fontSize: "13px",
                 color: "var(--ink-muted)",
               }}
             >
-              <span style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+              <span style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
                 <User size={14} aria-hidden />
                 James Bell
               </span>
+              <span aria-hidden style={{ opacity: 0.5 }}>·</span>
               <AudienceLabel
                 audience={post.audience}
                 readingTimeMinutes={post.readingTimeMinutes ?? 5}
               />
               {post.publishedAt && (
-                <time dateTime={publishedIso}>
-                  {new Date(post.publishedAt).toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </time>
+                <>
+                  <span aria-hidden style={{ opacity: 0.5 }}>·</span>
+                  <time dateTime={publishedIso}>
+                    {new Date(post.publishedAt).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </time>
+                </>
               )}
             </div>
-
-            {/* Standfirst / excerpt */}
-            {post.excerpt && (
-              <p
-                style={{
-                  fontFamily: "var(--F)",
-                  fontSize: "21px",
-                  lineHeight: 1.55,
-                  color: "var(--ink-muted)",
-                  fontStyle: "italic",
-                  marginTop: "24px",
-                  maxWidth: "60ch",
-                }}
-              >
-                {post.excerpt}
-              </p>
-            )}
           </div>
         </section>
 
