@@ -17,7 +17,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
-import { PRIMARY_TRACKS, pillarToTrack, resolveTrack, pillarForPost, PILLAR_BY_SLUG, subThemesForPost, SUBTHEMES } from "@/lib/taxonomy";
+import { pillarToTrack, resolveTrack, pillarForPost, PILLAR_BY_SLUG, subThemesForPost, SUBTHEMES, PILLARS_V2, MOVEMENTS } from "@/lib/taxonomy";
 
 const AUDIENCE_LABELS: Record<string, string> = {
   individuals: "Anyone",
@@ -237,7 +237,7 @@ export default function Writing() {
         </div>
       </section>
 
-      {/* TRACK CHIPS */}
+      {/* PILLAR CHIPS — the two-movement / six-pillar taxonomy */}
       <section
         style={{
           background: "var(--bone)",
@@ -265,35 +265,52 @@ export default function Writing() {
               textTransform: "uppercase",
               padding: "8px 14px",
               borderRadius: "999px",
-              border: `1px solid ${!activeTrack ? "var(--mustard)" : "var(--border)"}`,
-              background: !activeTrack ? "var(--bone-warm)" : "transparent",
+              border: `1px solid ${!activePillar && !activeTrack ? "var(--mustard)" : "var(--border)"}`,
+              background: !activePillar && !activeTrack ? "var(--bone-warm)" : "transparent",
               color: "var(--ink)",
               textDecoration: "none",
             }}
           >
             All
           </Link>
-          {PRIMARY_TRACKS.map(t => (
-            <Link
-              key={t.slug}
-              href={`/writing?track=${t.slug}`}
-              style={{
-                fontFamily: "var(--U)",
-                fontSize: "12px",
-                fontWeight: 600,
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-                padding: "8px 14px",
-                borderRadius: "999px",
-                border: `1px solid ${activeTrack === t.slug ? "var(--mustard)" : "var(--border)"}`,
-                background:
-                  activeTrack === t.slug ? "var(--bone-warm)" : "transparent",
-                color: "var(--ink)",
-                textDecoration: "none",
-              }}
-            >
-              {t.kicker}
-            </Link>
+          {PILLARS_V2.map((p, i) => (
+            <span key={p.slug} style={{ display: "contents" }}>
+              {/* light divider between the two movements */}
+              {i > 0 && PILLARS_V2[i - 1].movement !== p.movement && (
+                <span
+                  aria-hidden
+                  style={{
+                    fontFamily: "var(--U)",
+                    fontSize: "10px",
+                    letterSpacing: "0.12em",
+                    textTransform: "uppercase",
+                    color: "var(--mustard-text)",
+                    padding: "0 4px",
+                  }}
+                >
+                  {MOVEMENTS[p.movement].title}
+                </span>
+              )}
+              <Link
+                href={`/writing?pillar=${p.slug}`}
+                title={p.name}
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "12px",
+                  fontWeight: 600,
+                  letterSpacing: "0.08em",
+                  textTransform: "uppercase",
+                  padding: "8px 14px",
+                  borderRadius: "999px",
+                  border: `1px solid ${activePillar === p.slug ? "var(--mustard)" : "var(--border)"}`,
+                  background: activePillar === p.slug ? "var(--bone-warm)" : "transparent",
+                  color: "var(--ink)",
+                  textDecoration: "none",
+                }}
+              >
+                {p.name.replace(/^The /, "")}
+              </Link>
+            </span>
           ))}
         </div>
       </section>
