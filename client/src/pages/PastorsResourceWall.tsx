@@ -194,7 +194,7 @@ export default function PastorsResourceWall() {
     <Layout>
       <SEOMeta
         title="Pastor's Resource Wall"
-        description="Sermon prep, citation tools, discussion guides, and the Pastors Connection Network — built so pastors don't have to do the work alone."
+        description="Sermon prep, citation tools, discussion guides, and the Pastors Connection Network — built so pastors don't have to do it alone."
         url="https://www.livewellbyjamesbell.co/pastors-resource-wall"
       />
 

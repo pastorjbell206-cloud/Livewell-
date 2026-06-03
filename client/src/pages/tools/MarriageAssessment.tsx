@@ -99,7 +99,7 @@ const CATEGORIES: Category[] = [
         "If physical intimacy has become transactional or absent, consider that the problem is rarely physical. Emotional disconnection shows up in the bedroom because the bedroom is where pretending gets hardest.",
       ],
       mid: [
-        "Schedule a weekly date that requires no planning beyond showing up. The couples who wait for the perfect evening never have one.",
+        "Schedule a weekly date that requires no planning beyond being there. The couples who wait for the perfect evening never have one.",
         "Reintroduce non-sexual touch. A hand on the shoulder. Sitting close enough that your knees touch. These small gestures rebuild the neural pathways of connection.",
         "Ask your spouse: 'When did you last feel truly close to me?' Their answer will tell you more than any book.",
       ],
@@ -264,7 +264,7 @@ function getOverallLabel(score: number): {
       label: "Growing",
       color: "var(--mustard)",
       description:
-        "Your marriage has genuine strengths and identifiable growth areas. This is not a crisis -- it is an opportunity. Most marriages live here. The question is whether you will stay here or do the work to move toward something deeper. The fact that you took this assessment suggests you are ready for the work.",
+        "Your marriage has genuine strengths and identifiable growth areas. This is not a crisis -- it is an opportunity. Most marriages live here. The question is whether you will stay here or move toward something deeper. The fact that you took this assessment suggests you are ready for it.",
     };
   if (pct >= 0.4)
     return {

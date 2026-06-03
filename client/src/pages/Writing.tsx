@@ -17,7 +17,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
-import { PRIMARY_TRACKS, pillarToTrack, resolveTrack } from "@/lib/taxonomy";
+import { pillarToTrack, resolveTrack, pillarForPost, PILLAR_BY_SLUG, subThemesForPost, SUBTHEMES, PILLARS_V2, MOVEMENTS } from "@/lib/taxonomy";
 
 const AUDIENCE_LABELS: Record<string, string> = {
   individuals: "Anyone",
@@ -54,6 +54,8 @@ export default function Writing() {
   }, [location]);
 
   const activeTrack = params.get("track");
+  const activePillar = params.get("pillar");
+  const activeSubTheme = params.get("subTheme");
   const activeAudience = params.get("audience");
   const activeFormat = params.get("format");
   const urlSearch = params.get("q") ?? "";
@@ -68,6 +70,13 @@ export default function Writing() {
         const track = pillarToTrack(p.pillar);
         if (track !== activeTrack) return false;
       }
+      // Pillar (new two-movement / six-pillar taxonomy)
+      if (activePillar) {
+        const pl = pillarForPost(p);
+        if (!pl || pl.slug !== activePillar) return false;
+      }
+      // Sub-theme (primarily Pillar 6: marriage, fatherhood, parenting…)
+      if (activeSubTheme && !subThemesForPost(p).includes(activeSubTheme)) return false;
       // Audience
       if (activeAudience && p.audience !== activeAudience) return false;
       // Format
@@ -81,7 +90,9 @@ export default function Writing() {
       }
       return true;
     });
-  }, [posts, activeTrack, activeAudience, activeFormat, effectiveSearch]);
+  }, [posts, activeTrack, activePillar, activeSubTheme, activeAudience, activeFormat, effectiveSearch]);
+
+  const activePillarInfo = activePillar ? PILLAR_BY_SLUG.get(activePillar) ?? null : null;
 
   const featured = useMemo(
     () => filtered.filter(p => p.featured).slice(0, 1)[0],
@@ -98,13 +109,17 @@ export default function Writing() {
     <Layout>
       <SEOMeta
         title={
-          activeTrackInfo
-            ? `${activeTrackInfo.title} — Writing`
-            : "Writing — All essays"
+          activePillarInfo
+            ? `${activePillarInfo.name} — Writing`
+            : activeTrackInfo
+              ? `${activeTrackInfo.title} — Writing`
+              : "Writing — All essays"
         }
         description={
-          activeTrackInfo?.description ??
-          "Every essay by James Bell — on theology, politics, the American church after Christendom, pastoring, marriage, and parenting."
+          activePillarInfo
+            ? `Essays filed under ${activePillarInfo.name}.`
+            : activeTrackInfo?.description ??
+              "Every essay by James Bell — on theology, politics, the American church after Christendom, pastoring, marriage, and parenting."
         }
         url={`https://www.livewellbyjamesbell.co${location}`}
       />
@@ -135,9 +150,11 @@ export default function Writing() {
               maxWidth: "22ch",
             }}
           >
-            {activeTrackInfo
-              ? activeTrackInfo.title
-              : "Every essay, in one place."}
+            {activePillarInfo
+              ? activePillarInfo.name
+              : activeTrackInfo
+                ? activeTrackInfo.title
+                : "Every essay, in one place."}
           </h1>
           <p
             style={{
@@ -148,9 +165,11 @@ export default function Writing() {
               maxWidth: "62ch",
             }}
           >
-            {activeTrackInfo
-              ? activeTrackInfo.description
-              : "Theology, politics, the American church after Christendom. Pastoring, marriage, parenting, prophetic justice, doubt. Sorted newest first."}
+            {activePillarInfo
+              ? `Essays filed under ${activePillarInfo.name}. Sorted newest first.`
+              : activeTrackInfo
+                ? activeTrackInfo.description
+                : "Theology, politics, the American church after Christendom. Pastoring, marriage, parenting, prophetic justice, doubt. Sorted newest first."}
           </p>
           <div
             style={{
@@ -164,10 +183,61 @@ export default function Writing() {
               ? "Loading…"
               : `${filtered.length} of ${posts.length} essays shown`}
           </div>
+
+          {/* Pillar 6 sub-theme chips */}
+          {activePillar === "living-well-after-christendom" && (
+            <div
+              style={{
+                marginTop: "20px",
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "8px",
+                alignItems: "center",
+              }}
+            >
+              <Link
+                href="/writing?pillar=living-well-after-christendom"
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  letterSpacing: "0.08em",
+                  textTransform: "uppercase",
+                  padding: "6px 12px",
+                  borderRadius: "999px",
+                  border: `1px solid ${!activeSubTheme ? "var(--mustard)" : "rgba(245,240,230,0.25)"}`,
+                  color: "var(--bone)",
+                  textDecoration: "none",
+                }}
+              >
+                All
+              </Link>
+              {SUBTHEMES.map(st => (
+                <Link
+                  key={st}
+                  href={`/writing?pillar=living-well-after-christendom&subTheme=${st}`}
+                  style={{
+                    fontFamily: "var(--U)",
+                    fontSize: "11px",
+                    fontWeight: 600,
+                    letterSpacing: "0.08em",
+                    textTransform: "uppercase",
+                    padding: "6px 12px",
+                    borderRadius: "999px",
+                    border: `1px solid ${activeSubTheme === st ? "var(--mustard)" : "rgba(245,240,230,0.25)"}`,
+                    color: "var(--bone)",
+                    textDecoration: "none",
+                  }}
+                >
+                  {st.replace(/-/g, " ")}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
-      {/* TRACK CHIPS */}
+      {/* PILLAR CHIPS — the two-movement / six-pillar taxonomy */}
       <section
         style={{
           background: "var(--bone)",
@@ -195,35 +265,52 @@ export default function Writing() {
               textTransform: "uppercase",
               padding: "8px 14px",
               borderRadius: "999px",
-              border: `1px solid ${!activeTrack ? "var(--mustard)" : "var(--border)"}`,
-              background: !activeTrack ? "var(--bone-warm)" : "transparent",
+              border: `1px solid ${!activePillar && !activeTrack ? "var(--mustard)" : "var(--border)"}`,
+              background: !activePillar && !activeTrack ? "var(--bone-warm)" : "transparent",
               color: "var(--ink)",
               textDecoration: "none",
             }}
           >
             All
           </Link>
-          {PRIMARY_TRACKS.map(t => (
-            <Link
-              key={t.slug}
-              href={`/writing?track=${t.slug}`}
-              style={{
-                fontFamily: "var(--U)",
-                fontSize: "12px",
-                fontWeight: 600,
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-                padding: "8px 14px",
-                borderRadius: "999px",
-                border: `1px solid ${activeTrack === t.slug ? "var(--mustard)" : "var(--border)"}`,
-                background:
-                  activeTrack === t.slug ? "var(--bone-warm)" : "transparent",
-                color: "var(--ink)",
-                textDecoration: "none",
-              }}
-            >
-              {t.kicker}
-            </Link>
+          {PILLARS_V2.map((p, i) => (
+            <span key={p.slug} style={{ display: "contents" }}>
+              {/* light divider between the two movements */}
+              {i > 0 && PILLARS_V2[i - 1].movement !== p.movement && (
+                <span
+                  aria-hidden
+                  style={{
+                    fontFamily: "var(--U)",
+                    fontSize: "10px",
+                    letterSpacing: "0.12em",
+                    textTransform: "uppercase",
+                    color: "var(--mustard-text)",
+                    padding: "0 4px",
+                  }}
+                >
+                  {MOVEMENTS[p.movement].title}
+                </span>
+              )}
+              <Link
+                href={`/writing?pillar=${p.slug}`}
+                title={p.name}
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "12px",
+                  fontWeight: 600,
+                  letterSpacing: "0.08em",
+                  textTransform: "uppercase",
+                  padding: "8px 14px",
+                  borderRadius: "999px",
+                  border: `1px solid ${activePillar === p.slug ? "var(--mustard)" : "var(--border)"}`,
+                  background: activePillar === p.slug ? "var(--bone-warm)" : "transparent",
+                  color: "var(--ink)",
+                  textDecoration: "none",
+                }}
+              >
+                {p.name.replace(/^The /, "")}
+              </Link>
+            </span>
           ))}
         </div>
       </section>

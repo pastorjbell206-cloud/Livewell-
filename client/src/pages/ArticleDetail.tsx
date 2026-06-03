@@ -8,7 +8,7 @@
  * - Body width is 680px (var(--w-prose)) per CLAUDE.md
  * - Bookmark + reading progress persist in localStorage
  */
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useLocation, useParams } from "wouter";
 import { Streamdown } from "streamdown";
 import { ArrowLeft, Bookmark, Clock, Share2, User } from "lucide-react";
@@ -23,6 +23,7 @@ import { AudienceShare } from "@/components/AudienceShare";
 import { AudienceLabel } from "@/components/AudienceLabel";
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
+import { pillarForPost } from "@/lib/taxonomy";
 import { articleUrl, OG_DEFAULT_IMAGE } from "@/lib/site";
 
 function ShareButton({ title, url }: { title: string; url: string }) {
@@ -142,10 +143,17 @@ export default function ArticleDetail() {
     { enabled: Boolean(slug) }
   );
   const post = postQuery.data ?? null;
-  const relatedQuery = trpc.relatedArticles.getRelated.useQuery(
-    { slug: slug ?? "", pillar: post?.pillar ?? "" },
-    { enabled: Boolean(post?.pillar) }
-  );
+  // Related essays grouped by the NEW pillar taxonomy, resolved client-side
+  // from the slim index so it tracks pillarForPost without a backend change.
+  const indexQuery = trpc.posts.listForIndex.useQuery();
+  const related = useMemo(() => {
+    if (!post) return [];
+    const myPillar = pillarForPost(post);
+    if (!myPillar) return [];
+    return (indexQuery.data ?? [])
+      .filter(p => p.slug !== post.slug && pillarForPost(p)?.id === myPillar.id)
+      .slice(0, 3);
+  }, [indexQuery.data, post]);
 
   if (postQuery.isLoading) {
     return (
@@ -255,7 +263,7 @@ export default function ArticleDetail() {
           </button>
         </div>
 
-        {/* HEADER */}
+        {/* HEADER — centered editorial */}
         <section
           style={{
             padding: "var(--s-6) var(--s-4) var(--s-5)",
@@ -263,9 +271,21 @@ export default function ArticleDetail() {
             borderBottom: "1px solid var(--border)",
           }}
         >
-          <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-            {/* Eyebrow chip — links to the canonical track */}
-            <div style={{ marginBottom: "20px" }}>
+          <div
+            style={{
+              maxWidth: "var(--w-prose)",
+              margin: "0 auto",
+              textAlign: "center",
+            }}
+          >
+            {/* Kicker — pillar */}
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                marginBottom: "24px",
+              }}
+            >
               <TrackChip pillarOrTrack={post.pillar} />
             </div>
 
@@ -278,61 +298,75 @@ export default function ArticleDetail() {
                 lineHeight: 1.1,
                 letterSpacing: "-0.02em",
                 color: "var(--ink)",
-                marginBottom: "24px",
+                marginBottom: post.excerpt ? "24px" : "28px",
               }}
             >
               {post.title}
             </h1>
 
-            {/* Meta info — byline + audience + date */}
+            {/* Standfirst / dek */}
+            {post.excerpt && (
+              <p
+                style={{
+                  fontFamily: "var(--F)",
+                  fontSize: "22px",
+                  lineHeight: 1.5,
+                  color: "var(--ink-muted)",
+                  fontStyle: "italic",
+                  maxWidth: "32em",
+                  margin: "0 auto 28px",
+                }}
+              >
+                {post.excerpt}
+              </p>
+            )}
+
+            {/* Mustard rule */}
+            <div
+              aria-hidden
+              style={{
+                width: "64px",
+                height: "2px",
+                background: "var(--mustard)",
+                margin: "0 auto 20px",
+              }}
+            />
+
+            {/* Meta row — byline · audience/reading time · date */}
             <div
               style={{
                 display: "flex",
+                justifyContent: "center",
                 alignItems: "center",
-                gap: "20px",
-                paddingBottom: "20px",
-                borderBottom: "1px solid var(--border)",
+                gap: "16px",
                 flexWrap: "wrap",
                 fontFamily: "var(--U)",
                 fontSize: "13px",
                 color: "var(--ink-muted)",
               }}
             >
-              <span style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+              <span style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
                 <User size={14} aria-hidden />
                 James Bell
               </span>
+              <span aria-hidden style={{ opacity: 0.5 }}>·</span>
               <AudienceLabel
                 audience={post.audience}
                 readingTimeMinutes={post.readingTimeMinutes ?? 5}
               />
               {post.publishedAt && (
-                <time dateTime={publishedIso}>
-                  {new Date(post.publishedAt).toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </time>
+                <>
+                  <span aria-hidden style={{ opacity: 0.5 }}>·</span>
+                  <time dateTime={publishedIso}>
+                    {new Date(post.publishedAt).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </time>
+                </>
               )}
             </div>
-
-            {/* Standfirst / excerpt */}
-            {post.excerpt && (
-              <p
-                style={{
-                  fontFamily: "var(--F)",
-                  fontSize: "21px",
-                  lineHeight: 1.55,
-                  color: "var(--ink-muted)",
-                  fontStyle: "italic",
-                  marginTop: "24px",
-                  maxWidth: "60ch",
-                }}
-              >
-                {post.excerpt}
-              </p>
-            )}
           </div>
         </section>
 
@@ -424,7 +458,7 @@ export default function ArticleDetail() {
         </section>
 
         {/* RELATED */}
-        {(relatedQuery.data?.length ?? 0) > 0 && (
+        {related.length > 0 && (
           <section
             style={{
               background: "var(--card)",
@@ -452,11 +486,11 @@ export default function ArticleDetail() {
                   gap: "24px",
                 }}
               >
-                {relatedQuery.data?.slice(0, 3).map(related => (
+                {related.map(item => (
                   <button
-                    key={related.id}
+                    key={item.id}
                     type="button"
-                    onClick={() => navigate(`/writing/${related.slug}`)}
+                    onClick={() => navigate(`/writing/${item.slug}`)}
                     style={{
                       textAlign: "left",
                       padding: "20px",
@@ -473,7 +507,7 @@ export default function ArticleDetail() {
                       e.currentTarget.style.borderColor = "var(--border)";
                     }}
                   >
-                    {(related.topic || related.pillar) && (
+                    {pillarForPost(item) && (
                       <div
                         style={{
                           fontFamily: "var(--U)",
@@ -485,7 +519,7 @@ export default function ArticleDetail() {
                           marginBottom: "10px",
                         }}
                       >
-                        {(related.topic ?? related.pillar)?.replace(/-/g, " ")}
+                        {pillarForPost(item)?.name}
                       </div>
                     )}
                     <h3
@@ -499,9 +533,9 @@ export default function ArticleDetail() {
                         letterSpacing: "-0.01em",
                       }}
                     >
-                      {related.title}
+                      {item.title}
                     </h3>
-                    {related.readingTimeMinutes && (
+                    {item.readingTimeMinutes && (
                       <div
                         style={{
                           fontFamily: "var(--U)",
@@ -509,7 +543,7 @@ export default function ArticleDetail() {
                           color: "var(--ink-muted)",
                         }}
                       >
-                        {related.readingTimeMinutes} min read
+                        {item.readingTimeMinutes} min read
                       </div>
                     )}
                   </button>

@@ -1,0 +1,61 @@
+{
+  "_comment": "Reviewed voice edits from the LiveWell voice audit. Each edit is an EXACT find->replace within one essay (matched by slug), never a global swap. severity 'forbidden' = a banned word is actually present; these default to apply. 'review' items are intentionally NOT listed here (e.g. Beatitudes 'Blessed', literal 'foster care') because they should stay. The applier refuses any edit whose 'find' does not occur exactly once, so a stale slug or reworded sentence is skipped, never guessed.",
+  "edits": [
+    { "slug": "5-neglecting-their-own-spiritual-life", "find": "navigate a significant church crisis", "replace": "face a significant church crisis", "word": "navigate" },
+    { "slug": "5-neglecting-their-own-spiritual-life", "find": "less able to see the landscape clearly", "replace": "less able to see clearly", "word": "landscape" },
+    { "slug": "5-neglecting-their-own-spiritual-life", "find": "navigate the same religious and political landscape", "replace": "live within the same religious and political world", "word": "navigate+landscape" },
+    { "slug": "5-neglecting-their-own-spiritual-life", "find": "the ecclesiastical landscape in their region", "replace": "the churches in their region", "word": "landscape" },
+    { "slug": "5-neglecting-their-own-spiritual-life", "find": "Leverage What You Already Have", "replace": "Use What You Already Have", "word": "leverage" },
+
+    { "slug": "17-mobilizing-your-church-for-world-missions-without-a-big-budget", "find": "name keeps showing up", "replace": "name keeps coming up", "word": "showing up" },
+    { "slug": "17-mobilizing-your-church-for-world-missions-without-a-big-budget", "find": "keep showing up anyway", "replace": "keep turning up anyway", "word": "showing up" },
+
+    { "slug": "50-how-to-lead-when-trust-in-institutions-including-the-church-is-at-an-all-time-low", "find": "from the landscape of institutional performance", "replace": "from the field of institutional performance", "word": "landscape" },
+
+    { "slug": "married-someone-no-longer-recognize", "find": "the landscape has changed without warning", "replace": "the ground has changed without warning", "word": "landscape" },
+    { "slug": "married-someone-no-longer-recognize", "find": "the recognizable landscape does not", "replace": "the recognizable ground does not", "word": "landscape" },
+
+    { "slug": "healthy-conflict-marriage", "find": "who navigate conflict well", "replace": "who handle conflict well", "word": "navigate" },
+    { "slug": "healthy-conflict-marriage", "find": "don't navigate it well", "replace": "don't handle it well", "word": "navigate" },
+
+    { "slug": "when-one-partner-has-grown", "find": "used as leverage rather than offered as invitation", "replace": "used to gain the upper hand rather than offered as invitation", "word": "leverage" },
+    { "slug": "when-one-partner-has-grown", "find": "who navigate this don't erase the gap", "replace": "who manage this don't erase the gap", "word": "navigate" },
+
+    { "slug": "19-what-small-churches-get-right-that-large-churches-rarely-talk-about", "find": "has to navigate staff structures", "replace": "has to work through staff structures", "word": "navigate" },
+
+    { "slug": "when-romance-left-covenant-remains", "find": "who navigate this season well", "replace": "who move through this season well", "word": "navigate" },
+
+    { "slug": "38-what-i-learned-about-unity-from-pastoring-across-cultural-lines", "find": "Learning to navigate conflict across cultural lines", "replace": "Learning to work through conflict across cultural lines", "word": "navigate" },
+
+    { "slug": "34-what-a-healthy-pastor-referral-network-actually-looks-like", "find": "navigate healthcare systems", "replace": "work through healthcare systems", "word": "navigate" },
+
+    { "slug": "39-church-closures-are-outpacing-church-plants-3-to-1-what-that-means-for-the-mission", "find": "the 2025 church landscape", "replace": "the church in 2025", "word": "landscape" },
+
+    { "slug": "27-what-gen-z-actually-wants-from-a-church-and-why-its-not-what-you-think", "find": "They are showing up, and they are also showing up with different expectations", "replace": "They are coming, and they are coming with different expectations", "word": "showing up" },
+
+    { "slug": "37-what-predominantly-white-churches-get-wrong-when-they-talk-about-diversity", "find": "genuinely transformative engagement with Scripture", "replace": "genuinely life-altering engagement with Scripture", "word": "transformative" },
+    { "slug": "37-what-predominantly-white-churches-get-wrong-when-they-talk-about-diversity", "find": "The more transformative and genuinely biblical vision", "replace": "The more demanding and genuinely biblical vision", "word": "transformative" },
+
+    { "slug": "31-when-a-church-split-happens-surviving-it-learning-from-it-moving-forward", "find": "Find your witness. Do the work.", "replace": "Find your witness. Do what remains.", "word": "do the work" },
+
+    { "slug": "33-the-case-for-doing-city-wide-church-together-at-least-once-a-year", "find": "trust to navigate the inevitable decisions", "replace": "trust to work through the inevitable decisions", "word": "navigate" },
+
+    { "slug": "church-crisis-pregnancy", "find": "requires showing up — not once", "replace": "requires presence — not once", "word": "showing up" },
+
+    { "slug": "post-roe-church-responsibility", "field": "title", "find": "The Post-Roe Landscape and What the Church Is Now Actually Required to Do", "replace": "After Roe: What the Church Is Now Required to Do", "word": "landscape (title)" },
+    { "slug": "post-roe-church-responsibility", "find": "the post-Roe landscape revealed", "replace": "the months after Roe revealed", "word": "landscape" },
+    { "slug": "post-roe-church-responsibility", "find": "resources to navigate around them", "replace": "resources to get around them", "word": "navigate" },
+
+    { "slug": "4-navigating-conflict-alone", "find": "trying to navigate it in isolation", "replace": "trying to face it in isolation", "word": "navigate" },
+
+    { "slug": "symptoms-without-causes-charity", "find": "only justice is transformative", "replace": "only justice transforms", "word": "transformative" },
+
+    { "slug": "church-response-to-culture", "find": "help his church navigate cultural change", "replace": "help his church move through cultural change", "word": "navigate" },
+
+    { "slug": "future-of-missions-already-there", "find": "The missionary landscape is shifting", "replace": "The missionary world is shifting", "word": "landscape" },
+
+    { "slug": "church-split-surviving-learning-forward", "find": "how to navigate them with integrity", "replace": "how to face them with integrity", "word": "navigate" },
+
+    { "slug": "church-closures-outpacing-plants", "find": "The American church landscape is contracting", "replace": "The American church is contracting", "word": "landscape" }
+  ]
+}

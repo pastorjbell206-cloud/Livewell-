@@ -111,3 +111,8 @@ temp/
 
 # Webdev artifacts (checkpoint zips, migrations, etc.)
 .webdev/
+
+# Voice-audit working files (regenerable; export may hold unpublished drafts)
+scripts/.essays-export.json
+scripts/.essays-corpus.json
+scripts/voice-audit-report.json

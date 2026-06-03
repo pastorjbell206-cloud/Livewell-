@@ -83,7 +83,7 @@ const BUNDLES: BookBundle[] = [
   {
     id: "5",
     title: "Change Management Series",
-    description: "Navigate change in your church without losing people or your mind",
+    description: "Lead change in your church without losing people or your mind",
     icon: "🔄",
     regularPrice: 39.98,
     bundlePrice: 24.99,

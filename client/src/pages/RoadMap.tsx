@@ -77,7 +77,7 @@ const PLANNED: PlannedBook[] = [
   },
   {
     title: "Raising Five Sons",
-    pitch: "What I learned from showing up every day for two decades. Formation over performance.",
+    pitch: "What I learned from being there every day for two decades. Formation over performance.",
     for: "parents",
   },
 ];
