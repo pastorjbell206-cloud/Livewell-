@@ -72,6 +72,21 @@ function classify(post) {
     scores[id] = t.score * 3 + b.score; // weight title
     hits[id] = [...new Set([...t.hit, ...b.hit])];
   }
+
+  // Prior from the essay's existing pillar — it already encodes the topic, so
+  // it anchors the call and keeps keyword noise from dominating. Strong
+  // political keyword signals can still override it.
+  const LEGACY_PRIOR = {
+    "Leadership Formation": 5,
+    "Integrated Life": 6,
+    "Theological Depth": 3,
+    "Prophetic Justice": 1,
+    "Prophetic Disruption": 4,
+  };
+  const priorId = LEGACY_PRIOR[(post.pillar || "").trim()];
+  const PRIOR_WEIGHT = 4;
+  if (priorId) scores[priorId] = (scores[priorId] || 0) + PRIOR_WEIGHT;
+
   const ranked = Object.entries(scores).sort((a, b) => b[1] - a[1]);
   const [topId, topScore] = ranked[0];
   const second = ranked[1][1];
@@ -81,7 +96,8 @@ function classify(post) {
     if (countHits(title + " " + body, kws).score >= (topId === "6" ? 1 : 2)) subs.push(name);
   }
   const margin = topScore - second;
-  const lowConf = topScore === 0 || (topScore <= 2 && margin <= 1) || margin === 0;
+  // With a prior in play, only flag when there's genuinely no clear signal.
+  const lowConf = topScore === 0 || (!priorId && topScore <= 2 && margin <= 1) || margin === 0;
   return {
     slug: post.slug,
     title: post.title,
@@ -89,10 +105,11 @@ function classify(post) {
     proposedPillar: Number(topId),
     proposedName: PILLARS[topId].name,
     movement: PILLARS[topId].movement,
-    subThemes: Number(topId) === 6 ? subs : subs.filter((s) => false), // sub-themes primarily on P6
+    subThemes: Number(topId) === 6 ? subs : [],
     secondarySignals: ranked.filter(([, s]) => s > 0 && s !== topScore).slice(0, 2).map(([id]) => Number(id)),
-    confidence: lowConf ? "LOW" : margin >= 4 ? "high" : "med",
-    rationale: hits[topId].slice(0, 4).join(", ") || "no strong signal",
+    naturalHome: priorId || null,
+    confidence: lowConf ? "LOW" : margin >= 5 ? "high" : "med",
+    rationale: (priorId === Number(topId) ? "current-pillar prior; " : "") + (hits[topId].slice(0, 3).join(", ") || "no strong signal"),
   };
 }
 
@@ -127,7 +144,24 @@ for (const r of rows) {
 }
 writeFileSync(join(__dirname, "pillar-mapping.md"), md.join("\n"));
 
+// ── Decisions-needed shortlist: still-LOW, or moved off their natural home ──
+const opening = (slug, body) => {
+  const t = (bodyBySlug[slug] || body || "").replace(/^\s*From the PCN Articles Library:\s*/i, "").replace(/\s+/g, " ").trim();
+  return t.slice(0, 130) + (t.length > 130 ? "…" : "");
+};
+const shortlist = rows.filter((r) => r.confidence === "LOW" || (r.naturalHome && r.naturalHome !== r.proposedPillar));
+const sl = ["# Pillar filing — decisions needed", "",
+  `${shortlist.length} of ${rows.length} essays want your eye: either the classifier was unsure (LOW), or a keyword signal moved the essay OFF the pillar its current category implies. Everything else filed with confidence. Correct any in client/src/lib/pillar-assignments.ts.`, "",
+  "| Essay | → Proposed | Natural home | Why flagged | Opening line |",
+  "|-------|-----------|--------------|-------------|--------------|"];
+for (const r of shortlist) {
+  const why = r.confidence === "LOW" ? "LOW signal" : `moved off ${PILLARS[r.naturalHome].name}`;
+  sl.push(`| ${r.title} | P${r.proposedPillar} ${PILLARS[r.proposedPillar].name} | ${r.naturalHome ? "P" + r.naturalHome : "—"} | ${why} | ${opening(r.slug).replace(/\|/g, "\\|")} |`);
+}
+writeFileSync(join(__dirname, "pillar-review-shortlist.md"), sl.join("\n"));
+
 console.log("Proposed pillar distribution (NOTHING re-filed):");
 for (const id of [1, 2, 3, 4, 5, 6]) console.log(`  ${id}. ${PILLARS[id].name.padEnd(34)} ${dist[id] || 0}`);
-console.log(`\n${flagged.length} LOW-confidence rows need your judgment.`);
+console.log(`\n${flagged.length} LOW-confidence + overrides → ${shortlist.length} need review.`);
+console.log("Decisions sheet → scripts/pillar-review-shortlist.md");
 console.log("Full table → scripts/pillar-mapping.md");

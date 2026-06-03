@@ -1,9 +1,9 @@
 /**
  * Per-essay pillar assignments under the two-movement / six-pillar taxonomy.
- * Generated from scripts/classify-pillars.mjs (Step 0 proposal, approved to
- * proceed). Edit freely to correct a filing — the resolver in taxonomy.ts reads
- * this first, then falls back to the legacy pillar map. "confidence": "LOW"
- * marks rows the classifier was unsure about; correct those as you review.
+ * Generated from scripts/classify-pillars.mjs (uses each essay's current pillar
+ * as a prior, with keyword overrides). Edit freely to correct a filing — the
+ * resolver in taxonomy.ts reads this first, then falls back to the legacy map.
+ * confidence "LOW" marks rows still worth your eye (see pillar-review-shortlist.md).
  */
 export interface PillarAssignment { pillar: number; subThemes: string[]; confidence: "high" | "med" | "LOW"; }
 export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
@@ -15,12 +15,12 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "the-monster-in-the-mirror": {
     "pillar": 3,
     "subThemes": [],
-    "confidence": "med"
+    "confidence": "high"
   },
   "not-persecuted-seduced-crisis-american-christianity": {
-    "pillar": 1,
+    "pillar": 4,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "you-are-not-the-exception": {
     "pillar": 3,
@@ -37,7 +37,7 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "why-pastors-quit-and-how-to-stay": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "med"
+    "confidence": "high"
   },
   "hidden-pain-successful-pastor": {
     "pillar": 5,
@@ -47,7 +47,7 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "church-needs-you-healthy-not-busy": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "med"
+    "confidence": "high"
   },
   "stop-performing-start-pastoring": {
     "pillar": 5,
@@ -57,12 +57,12 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "personal-board-accountability": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "med"
+    "confidence": "high"
   },
   "five-biggest-mistakes-new-pastors": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "lead-through-church-crisis": {
     "pillar": 5,
@@ -72,7 +72,7 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "art-of-saying-no-without-guilt": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "culture-discipleship-not-attendance": {
     "pillar": 5,
@@ -82,12 +82,12 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "bivocational-pastors-get-right": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "stopped-competing-church-across-town": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "med"
+    "confidence": "high"
   },
   "learned-from-pastor-disagrees": {
     "pillar": 5,
@@ -100,11 +100,9 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "high"
   },
   "sabbatical-why-church-should-require": {
-    "pillar": 6,
-    "subThemes": [
-      "practices"
-    ],
-    "confidence": "LOW"
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "med"
   },
   "return-ministry-after-burnout": {
     "pillar": 5,
@@ -114,46 +112,42 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "difference-tired-and-done": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "when-man-pulpit-falling-apart": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "med"
+    "confidence": "high"
   },
   "spouse-wishes-knew-parsonage": {
-    "pillar": 6,
-    "subThemes": [
-      "marriage-covenant"
-    ],
+    "pillar": 5,
+    "subThemes": [],
     "confidence": "med"
   },
   "protecting-marriage-ministry-demands": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "med"
+    "confidence": "high"
   },
   "pastors-kids-watching-what-seeing": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "med"
+    "confidence": "high"
   },
   "present-at-home-mind-never-leaves": {
-    "pillar": 6,
-    "subThemes": [
-      "family-household"
-    ],
+    "pillar": 5,
+    "subThemes": [],
     "confidence": "med"
   },
   "okay-to-see-counselor": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "pastors-depression-not-faith-problem": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "med"
+    "confidence": "high"
   },
   "anxiety-perfectionism-pastor-breaking-cycle": {
     "pillar": 5,
@@ -163,12 +157,12 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "not-your-churchs-attendance-numbers": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "med"
+    "confidence": "high"
   },
   "preach-same-gospel-different-people": {
-    "pillar": 3,
+    "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "when-preaching-gets-stale": {
     "pillar": 5,
@@ -186,34 +180,34 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "high"
   },
   "eighty-percent-churches-plateaued": {
-    "pillar": 4,
+    "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "small-churches-get-right": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "metrics-tell-church-healthy": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "revitalize-or-replant": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "lead-church-decline-without-losing-hope": {
-    "pillar": 4,
+    "pillar": 5,
     "subThemes": [],
     "confidence": "med"
   },
   "give-feedback-changes-behavior": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "most-dangerous-person-church-staff": {
     "pillar": 5,
@@ -223,7 +217,7 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "when-fire-someone-with-integrity": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "med"
+    "confidence": "high"
   },
   "staff-culture-no-burnout": {
     "pillar": 5,
@@ -233,37 +227,37 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "gen-z-wants-from-church": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "young-adults-coming-back-church": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "scandals-teaching-accountability": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "talk-politics-pulpit-without-destroying": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "church-split-surviving-learning-forward": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "reformed-charismatic-pastors-same-table": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "city-wide-church-together": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "healthy-pastor-referral-network": {
     "pillar": 5,
@@ -281,17 +275,17 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "high"
   },
   "white-churches-wrong-about-diversity": {
-    "pillar": 2,
-    "subThemes": [],
-    "confidence": "LOW"
-  },
-  "learned-unity-pastoring-across-cultures": {
     "pillar": 5,
     "subThemes": [],
     "confidence": "med"
   },
+  "learned-unity-pastoring-across-cultures": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
   "church-closures-outpacing-plants": {
-    "pillar": 4,
+    "pillar": 5,
     "subThemes": [],
     "confidence": "med"
   },
@@ -303,12 +297,12 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "short-term-mission-trips-help-hurt": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "med"
+    "confidence": "high"
   },
   "unreached-people-groups-closest-to-you": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "national-pastors-redefining-missionary": {
     "pillar": 5,
@@ -318,12 +312,12 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "global-south-church-teach-suffering": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "mission-sending-culture-never-sent": {
-    "pillar": 3,
+    "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "pastor-politically-divided-gospel-central": {
     "pillar": 5,
@@ -333,7 +327,7 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "engaging-nones-religiously-unaffiliated": {
     "pillar": 4,
     "subThemes": [],
-    "confidence": "high"
+    "confidence": "med"
   },
   "ai-authenticity-pastor-artificial-intelligence": {
     "pillar": 5,
@@ -343,12 +337,12 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "church-political-brand-step-back": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "lead-when-trust-institutions-low": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "17-mobilizing-your-church-for-world-missions-without-a-big-budget": {
     "pillar": 5,
@@ -356,120 +350,114 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "high"
   },
   "where-church-was-silent": {
-    "pillar": 3,
+    "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "justice-not-political-theological": {
-    "pillar": 3,
+    "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "complicity-not-innocence": {
-    "pillar": 4,
+    "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "poor-not-ministry-category": {
-    "pillar": 3,
+    "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "creation-care-not-optional": {
-    "pillar": 6,
-    "subThemes": [
-      "vocation-work"
-    ],
-    "confidence": "LOW"
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "med"
   },
   "widow-orphan-stranger": {
-    "pillar": 3,
+    "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "mishpat-tsedaqah": {
-    "pillar": 3,
+    "pillar": 1,
     "subThemes": [],
     "confidence": "med"
   },
   "micah-6-8-demands": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "church-credibility-problem": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "racial-reconciliation-without-repentance": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "prophetic-tradition-economic-justice": {
-    "pillar": 3,
+    "pillar": 1,
     "subThemes": [],
     "confidence": "med"
   },
   "what-jubilee-means": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "stranger-at-gate": {
-    "pillar": 3,
+    "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "individual-sin-systemic-sin-2": {
-    "pillar": 3,
+    "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "why-poverty-political": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "church-wealth-world-poverty": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "payday-lending-christians": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "silence-abuse-church": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "imago-dei-means-more": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "good-samaritan-arguing": {
-    "pillar": 6,
-    "subThemes": [
-      "friendship-community"
-    ],
-    "confidence": "LOW"
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "med"
   },
   "solidarity-theological-virtue": {
-    "pillar": 6,
-    "subThemes": [
-      "vocation-work"
-    ],
-    "confidence": "LOW"
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "med"
   },
   "most-prophetic-live-differently": {
-    "pillar": 6,
+    "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "children-poverty-prophetic-indictment": {
     "pillar": 6,
@@ -477,108 +465,102 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
       "parenting",
       "vocation-work"
     ],
-    "confidence": "high"
+    "confidence": "med"
   },
   "symptoms-without-causes-charity": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "church-mental-health-justice": {
-    "pillar": 6,
-    "subThemes": [
-      "vocation-work"
-    ],
-    "confidence": "LOW"
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "med"
   },
   "church-megaproject-widows-mite": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "white-churches-diversity": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "reaching-rich-comfortable": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "theology-of-repair": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "hospitality-not-optional": {
-    "pillar": 3,
+    "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "disability-justice-theological": {
-    "pillar": 2,
+    "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "earth-is-lords": {
-    "pillar": 6,
-    "subThemes": [
-      "practices"
-    ],
-    "confidence": "LOW"
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "med"
   },
   "ruth-gleaning-laws": {
-    "pillar": 6,
-    "subThemes": [
-      "practices"
-    ],
-    "confidence": "LOW"
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "med"
   },
   "church-comfort-inequality": {
-    "pillar": 3,
+    "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "prophetic-pastor": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "high"
+    "confidence": "med"
   },
   "justice-without-love-ideology": {
     "pillar": 2,
     "subThemes": [],
-    "confidence": "high"
+    "confidence": "med"
   },
   "beatitudes-actually-promising": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "black-church-prophetic-justice": {
-    "pillar": 3,
+    "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "color-blindness-not-virtue": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "vulnerable-people-not-in-pews": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "prophets-expelled-sanctuary": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "exodus-demands-church-today": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "sabbath-is-resistance": {
     "pillar": 6,
@@ -586,45 +568,40 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
       "vocation-work",
       "practices"
     ],
-    "confidence": "high"
+    "confidence": "med"
   },
   "pastoral-care-wealthy-congregant": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "high"
+    "confidence": "med"
   },
   "church-response-poverty-charity": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "leviticus-19-border-crisis": {
-    "pillar": 3,
+    "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "church-incarceration-silence": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "church-must-speak-housing": {
-    "pillar": 6,
-    "subThemes": [
-      "vocation-work"
-    ],
-    "confidence": "LOW"
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "med"
   },
   "what-we-owe-generations": {
-    "pillar": 6,
-    "subThemes": [
-      "parenting",
-      "vocation-work"
-    ],
+    "pillar": 1,
+    "subThemes": [],
     "confidence": "med"
   },
   "the-long-arc": {
-    "pillar": 3,
+    "pillar": 1,
     "subThemes": [],
     "confidence": "med"
   },
@@ -636,54 +613,52 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "church-fathers-not-boring": {
     "pillar": 3,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "reformation-actually-about": {
     "pillar": 3,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "atonement-more-than-one-model": {
     "pillar": 3,
     "subThemes": [],
-    "confidence": "med"
+    "confidence": "high"
   },
   "kingdom-of-god-not-what-you-think": {
-    "pillar": 6,
-    "subThemes": [
-      "vocation-work"
-    ],
-    "confidence": "LOW"
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "med"
   },
   "psalms-as-prayer-not-poetry": {
-    "pillar": 1,
+    "pillar": 3,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "holy-spirit-not-feeling": {
-    "pillar": 1,
+    "pillar": 3,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "sin-not-just-what-you-do": {
-    "pillar": 1,
+    "pillar": 3,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "eschatology-matters-end-shapes-now": {
-    "pillar": 1,
+    "pillar": 3,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "incarnation-changes-everything": {
-    "pillar": 1,
+    "pillar": 3,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "when-shepherd-needs-shepherding": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "high"
+    "confidence": "med"
   },
   "burnout-nobody-talks-about": {
     "pillar": 5,
@@ -695,22 +670,27 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "subThemes": [
       "practices"
     ],
-    "confidence": "med"
+    "confidence": "high"
   },
   "your-marriage-is-ministry-too": {
-    "pillar": 5,
-    "subThemes": [],
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "family-household"
+    ],
     "confidence": "med"
   },
   "weight-of-what-you-cant-say": {
-    "pillar": 5,
-    "subThemes": [],
-    "confidence": "LOW"
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant"
+    ],
+    "confidence": "med"
   },
   "finding-your-barnabas": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "med"
+    "confidence": "high"
   },
   "loneliness-of-leadership": {
     "pillar": 5,
@@ -720,24 +700,22 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
   "delegation-is-not-weakness": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "high"
   },
   "vision-without-community-fantasy": {
-    "pillar": 6,
-    "subThemes": [
-      "friendship-community"
-    ],
+    "pillar": 5,
+    "subThemes": [],
     "confidence": "med"
   },
   "pastors-authority-relational": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "med"
+    "confidence": "high"
   },
   "conflict-is-not-failure": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "building-leadership-team": {
     "pillar": 5,
@@ -750,88 +728,90 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "confidence": "high"
   },
   "unity-without-uniformity": {
-    "pillar": 1,
+    "pillar": 4,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "courage-to-be-different": {
-    "pillar": 5,
+    "pillar": 4,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "collaboration-across-denominations": {
-    "pillar": 5,
+    "pillar": 4,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "global-church-is-your-church": {
-    "pillar": 1,
+    "pillar": 4,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "mission-is-not-optional": {
-    "pillar": 1,
+    "pillar": 4,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "your-city-is-mission-field": {
-    "pillar": 1,
+    "pillar": 4,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "church-response-to-culture": {
-    "pillar": 5,
+    "pillar": 4,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "truth-in-post-truth-world": {
-    "pillar": 5,
+    "pillar": 4,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "interior-life-of-pastor": {
     "pillar": 5,
     "subThemes": [],
-    "confidence": "high"
+    "confidence": "med"
   },
   "prayer-is-not-optional": {
-    "pillar": 5,
-    "subThemes": [],
+    "pillar": 6,
+    "subThemes": [
+      "practices"
+    ],
     "confidence": "med"
   },
   "scripture-meditation": {
     "pillar": 3,
     "subThemes": [],
-    "confidence": "med"
+    "confidence": "LOW"
   },
   "spiritual-disciplines-for-pastors": {
-    "pillar": 5,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
   "the-examined-life": {
-    "pillar": 5,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
   "repentance-and-renewal": {
-    "pillar": 5,
+    "pillar": 6,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "hope-of-resurrection": {
-    "pillar": 5,
+    "pillar": 6,
     "subThemes": [],
     "confidence": "med"
   },
   "justice-not-political": {
     "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   },
   "poor-not-ministry": {
-    "pillar": 3,
+    "pillar": 1,
     "subThemes": [],
-    "confidence": "LOW"
+    "confidence": "med"
   }
 };
