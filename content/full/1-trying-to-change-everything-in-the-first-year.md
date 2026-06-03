@@ -70,12 +70,12 @@ Listen before you lead. Learn before you change.
 
 A year of genuine relationship-building will accomplish more than five years of vision-casting to a congregation that doesn't trust you yet. Not because the vision is less important than the relationships, but because the vision cannot travel without the relationships. The preacher can say the right things from the pulpit every Sunday and produce no change in the congregation if the congregation has not decided — through the slow accumulation of trust-building experiences — that this is a person worth following.
 
-The pastoral relationship is irreducibly personal. The congregation is not following the vision. They are following the person. And the person is only known over time, through the kind of presence that cannot be hurried or manufactured, that builds in the specific hours of showing up for specific people in specific need.
+The pastoral relationship is irreducibly personal. The congregation is not following the vision. They are following the person. And the person is only known over time, through the kind of presence that cannot be hurried or manufactured, that builds in the specific hours of being present for specific people in specific need.
 
 The new pastor who understands this is not abandoning their vision. They are protecting it — building the relational foundation that will carry it when the time comes for it to be offered. The vision that is offered too soon, to people who do not yet know the person offering it, will be received as imposition. The same vision, offered after a year of earned trust, will be received as invitation.
 
 That difference — imposition versus invitation — is the difference between the pastor who changes everything in the first year and creates resistance that never fully resolves, and the pastor who changes everything in the third or fifth year and carries the congregation with them.
 
-Both have the same vision. One of them has built the road. That road is trust, and it is built the old way — in hours, in presence, in the quiet accumulation of showing up, one person at a time, until the congregation knows that the person they called knows them.
+Both have the same vision. One of them has built the road. That road is trust, and it is built the old way — in hours, in presence, in the quiet accumulation of arriving, one person at a time, until the congregation knows that the person they called knows them.
 
 That knowledge changes everything. It just takes longer than the new pastor wants it to.
