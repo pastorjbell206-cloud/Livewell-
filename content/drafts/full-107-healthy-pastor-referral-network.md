@@ -35,7 +35,7 @@ It includes honest feedback loops. If you refer someone to a counselor and that 
 
 And it includes reciprocity. I do not mean the transactional reciprocity of professional referrals. I mean the theological reciprocity of pastors who regard each other as co-workers rather than competitors. The pastor who refers well but is never referred to has built a one-directional relationship that is really just a professional courtesy. A real network moves in all directions. The person who lands in the therapist's office with pastoral questions gets referred to a pastor. The person who arrives in a pastor's office with clinical needs gets referred to a therapist. Both of them are served well.
 
-Building this takes years. It requires showing up for things that have no immediate payoff. It requires being honest about your own limitations — which means first having to face them. It requires treating other professionals in your city, including ones with no religious affiliation, as people worth knowing rather than people to be evangelized at professional distance.
+Building this takes years. It requires being present for things that have no immediate payoff. It requires being honest about your own limitations — which means first having to face them. It requires treating other professionals in your city, including ones with no religious affiliation, as people worth knowing rather than people to be evangelized at professional distance.
 
 Most pastors have the referral network they have invested in building. The man who sat in my office on that Tuesday deserved better than what my negligence had prepared me to offer him.
 

@@ -35,7 +35,7 @@ The more difficult question is what to do when the program that already exists i
 
 A food pantry run by a Catholic parish and a Baptist church together, with their theological differences fully acknowledged and their practical cooperation fully real, is a more honest picture of the kingdom than either of them running a separate pantry. A recovery program run in partnership with a secular counseling center, where the church provides community and spiritual formation and the center provides clinical expertise, may serve the person in front of you better than the church's attempt to do both alone.
 
-This requires conversations that are awkward. It requires phone calls to pastors you do not know well. It requires showing up to meetings where you are not in charge. It requires being the person who said, "Tell me what you are already doing and what you need, before I tell you what I am thinking of launching."
+This requires conversations that are awkward. It requires phone calls to pastors you do not know well. It requires walking into meetings where you are not in charge. It requires being the person who said, "Tell me what you are already doing and what you need, before I tell you what I am thinking of launching."
 
 Most pastors never make that call. It feels like weakness. It is not weakness. It is the posture of someone who actually believes the kingdom belongs to God rather than to his church's portfolio.
 
