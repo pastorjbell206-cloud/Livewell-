@@ -116,3 +116,6 @@ temp/
 scripts/.essays-export.json
 scripts/.essays-corpus.json
 scripts/voice-audit-report.json
+
+# Draft work-queue (regenerable from classify-pillars/content-data)
+scripts/.draft-queue.json
