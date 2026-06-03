@@ -286,7 +286,7 @@ export default function ArticleDetail() {
                 marginBottom: "24px",
               }}
             >
-              <TrackChip pillarOrTrack={post.pillar} />
+              <TrackChip pillarOrTrack={post.pillar} slug={post.slug} />
             </div>
 
             {/* Title */}

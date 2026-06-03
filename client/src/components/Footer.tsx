@@ -1,6 +1,9 @@
 import { Link } from "wouter";
 import { useTheme } from "@/contexts/ThemeContext";
 import { Sun, Moon } from "lucide-react";
+import { PILLARS_BY_MOVEMENT, pillarUrl } from "@/lib/taxonomy";
+
+const footerLink = { color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" } as const;
 
 export default function Footer() {
   const { theme, toggleTheme } = useTheme();
@@ -17,24 +20,24 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2 - Marriage & Family */}
+          {/* Column 2 - Diagnosis (canonical pillars) */}
           <div>
-            <h3 style={{ fontSize: "13px", fontWeight: "bold", marginBottom: "16px", color: "#ffffff", textTransform: "uppercase", letterSpacing: "1px" }}>Marriage & Family</h3>
+            <h3 style={{ fontSize: "13px", fontWeight: "bold", marginBottom: "16px", color: "#ffffff", textTransform: "uppercase", letterSpacing: "1px" }}>Diagnosis</h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <Link href="/marriage" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Marriage</Link>
-              <Link href="/parenting" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Parenting</Link>
-              <Link href="/writing?topic=devotionals" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Family Devotionals</Link>
+              {PILLARS_BY_MOVEMENT.diagnosis.map(p => (
+                <Link key={p.slug} href={pillarUrl(p.slug)} style={footerLink}>{p.name}</Link>
+              ))}
             </div>
           </div>
 
-          {/* Column 3 - Faith & Theology */}
+          {/* Column 3 - Formation */}
           <div>
-            <h3 style={{ fontSize: "13px", fontWeight: "bold", marginBottom: "16px", color: "#ffffff", textTransform: "uppercase", letterSpacing: "1px" }}>Faith & Theology</h3>
+            <h3 style={{ fontSize: "13px", fontWeight: "bold", marginBottom: "16px", color: "#ffffff", textTransform: "uppercase", letterSpacing: "1px" }}>Formation</h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <Link href="/doubt" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Doubt & Questions</Link>
-              <Link href="/writing?topic=theology" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Theological Depth</Link>
-              <Link href="/writing?topic=justice" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Justice & Culture</Link>
-              <Link href="/writing?topic=devotionals" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Devotionals</Link>
+              <Link href={pillarUrl("living-well-after-christendom")} style={footerLink}>Living Well After Christendom</Link>
+              <Link href="/marriage" style={footerLink}>Marriage</Link>
+              <Link href="/parenting" style={footerLink}>Parenting</Link>
+              <Link href="/writing?pillar=living-well-after-christendom&subTheme=practices" style={footerLink}>Devotionals</Link>
             </div>
           </div>
 
@@ -56,7 +59,7 @@ export default function Footer() {
           <div>
             <h3 style={{ fontSize: "13px", fontWeight: "bold", marginBottom: "16px", color: "#ffffff", textTransform: "uppercase", letterSpacing: "1px" }}>For Pastors</h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <Link href="/writing?topic=pastoral-ministry" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Pastoral Ministry</Link>
+              <Link href={pillarUrl("the-pastoral-angle")} style={footerLink}>The Pastoral Angle</Link>
               <Link href="/pastors" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Pastors Connection Network</Link>
               <Link href="/for-leaders" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Church Leadership</Link>
               <Link href="/resources" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Sermon Resources</Link>

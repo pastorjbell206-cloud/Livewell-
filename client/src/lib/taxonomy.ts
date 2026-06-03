@@ -252,6 +252,8 @@ export interface Pillar {
   id: number;
   slug: string;
   name: string;
+  /** Concise label for space-constrained contexts (card eyebrow chips). */
+  short: string;
   movement: Movement;
   /** Neutral placeholder — James supplies the final on-voice intro. */
   blurb: string;
@@ -263,12 +265,12 @@ export const MOVEMENTS: Record<Movement, { title: string; subtitle: string }> = 
 };
 
 export const PILLARS_V2: Pillar[] = [
-  { id: 1, slug: "capture-by-the-right", name: "The Capture by the Right", movement: "diagnosis", blurb: "Christian nationalism, the gospel of patriotism, and restoration politics." },
-  { id: 2, slug: "capture-by-the-left", name: "The Capture by the Left", movement: "diagnosis", blurb: "Progressive orthodoxy, compassion become coercion, and the sins of omission." },
-  { id: 3, slug: "reading-scripture-past-our-politics", name: "Reading Scripture Past Our Politics", movement: "diagnosis", blurb: "How tradition, translation, and tribe quietly edit the text." },
-  { id: 4, slug: "after-christendom-pillar", name: "After Christendom", movement: "diagnosis", blurb: "The dissolution of the old arrangement — and what comes after it." },
-  { id: 5, slug: "the-pastoral-angle", name: "The Pastoral Angle", movement: "diagnosis", blurb: "How an ordinary believer or pastor lives inside all of this." },
-  { id: 6, slug: "living-well-after-christendom", name: "Living Well After Christendom", movement: "formation", blurb: "Faithful life now that cultural Christianity is gone and the old scaffolding no longer forms us by default." },
+  { id: 1, slug: "capture-by-the-right", name: "The Capture by the Right", short: "The Right", movement: "diagnosis", blurb: "Christian nationalism, the gospel of patriotism, and restoration politics." },
+  { id: 2, slug: "capture-by-the-left", name: "The Capture by the Left", short: "The Left", movement: "diagnosis", blurb: "Progressive orthodoxy, compassion become coercion, and the sins of omission." },
+  { id: 3, slug: "reading-scripture-past-our-politics", name: "Reading Scripture Past Our Politics", short: "Scripture & Politics", movement: "diagnosis", blurb: "How tradition, translation, and tribe quietly edit the text." },
+  { id: 4, slug: "after-christendom-pillar", name: "After Christendom", short: "After Christendom", movement: "diagnosis", blurb: "The dissolution of the old arrangement — and what comes after it." },
+  { id: 5, slug: "the-pastoral-angle", name: "The Pastoral Angle", short: "Pastoral", movement: "diagnosis", blurb: "How an ordinary believer or pastor lives inside all of this." },
+  { id: 6, slug: "living-well-after-christendom", name: "Living Well After Christendom", short: "Living Well", movement: "formation", blurb: "Faithful life now that cultural Christianity is gone and the old scaffolding no longer forms us by default." },
 ];
 
 export const SUBTHEMES = [

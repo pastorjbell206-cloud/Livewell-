@@ -1,18 +1,18 @@
 /**
- * Primary navigation. Reflects the Substack-shaped positioning:
+ * Primary navigation. Uses the canonical two-movement / six-pillar taxonomy
+ * (lib/taxonomy.ts) so nav, footer, archive chips, and card tags all speak the
+ * same labels:
  *
- *   Essays → After Christendom + Politics + American Church + Justice + Theology + Doubt
- *   Pastoring → PCN + Resources for the work
- *   Marriage & Family → Marriage + Parenting + Devotionals
- *   Books → flat link
- *
- * Track definitions live in `lib/taxonomy.ts`; this file just renders them.
+ *   Essays → the six pillars (Diagnosis + Formation) + All writing + Skeptic
+ *   For Pastors → The Pastoral Angle + PCN + resources
+ *   Living Well → Pillar 6 + Marriage/Parenting landing pages + Devotionals
+ *   Books / About → flat links
  */
 import { Link, useLocation } from "wouter";
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown, Menu, Search, X } from "lucide-react";
 
-import { TRACKS, trackUrl } from "@/lib/taxonomy";
+import { PILLARS_V2, PILLAR_BY_SLUG, pillarUrl } from "@/lib/taxonomy";
 
 interface DropdownItem {
   label: string;
@@ -27,12 +27,12 @@ interface NavLink {
 }
 
 function buildNavLinks(): NavLink[] {
-  const trackItem = (slug: string): DropdownItem => {
-    const t = TRACKS.find(x => x.slug === slug);
+  const pillarItem = (slug: string): DropdownItem => {
+    const p = PILLAR_BY_SLUG.get(slug);
     return {
-      label: t?.title ?? slug,
-      href: trackUrl(slug),
-      description: t?.description,
+      label: p?.name ?? slug,
+      href: pillarUrl(slug),
+      description: p?.blurb,
     };
   };
 
@@ -40,12 +40,11 @@ function buildNavLinks(): NavLink[] {
     {
       label: "Essays",
       dropdown: [
-        trackItem("after-christendom"),
-        trackItem("politics"),
-        trackItem("american-church"),
-        trackItem("prophetic-justice"),
-        trackItem("theology"),
-        trackItem("doubt"),
+        ...PILLARS_V2.map(p => ({
+          label: p.name,
+          href: pillarUrl(p.slug),
+          description: p.blurb,
+        })),
         {
           label: "All writing",
           href: "/writing",
@@ -59,9 +58,9 @@ function buildNavLinks(): NavLink[] {
       ],
     },
     {
-      label: "Pastoring",
+      label: "For Pastors",
       dropdown: [
-        trackItem("pastoral-ministry"),
+        pillarItem("the-pastoral-angle"),
         {
           label: "Pastors Connection Network",
           href: "/pastors",
@@ -80,11 +79,15 @@ function buildNavLinks(): NavLink[] {
       ],
     },
     {
-      label: "Marriage & Family",
+      label: "Living Well",
       dropdown: [
-        trackItem("marriage"),
-        trackItem("parenting"),
-        trackItem("devotionals"),
+        pillarItem("living-well-after-christendom"),
+        { label: "Marriage", href: "/marriage" },
+        { label: "Parenting", href: "/parenting" },
+        {
+          label: "Devotionals",
+          href: "/writing?pillar=living-well-after-christendom&subTheme=practices",
+        },
       ],
     },
     { label: "Books", href: "/books" },
@@ -197,20 +200,10 @@ export default function MinimalNav() {
                 flexWrap: "wrap",
               }}
             >
-              {[
-                "After Christendom",
-                "Politics",
-                "Pastoring",
-                "Justice",
-                "Theology",
-                "Marriage",
-              ].map(tag => (
+              {PILLARS_V2.map(p => (
                 <Link
-                  key={tag}
-                  href={
-                    "/writing?track=" +
-                    tag.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-")
-                  }
+                  key={p.slug}
+                  href={pillarUrl(p.slug)}
                   onClick={() => setSearchOpen(false)}
                   style={{
                     fontFamily: "var(--U)",
@@ -222,7 +215,7 @@ export default function MinimalNav() {
                     textDecoration: "none",
                   }}
                 >
-                  {tag}
+                  {p.short}
                 </Link>
               ))}
             </div>
@@ -283,7 +276,7 @@ export default function MinimalNav() {
                   borderBottom: "2px solid var(--mustard)",
                 }}
               >
-                Live Well
+                LiveWell
               </div>
               <div
                 style={{

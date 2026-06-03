@@ -468,7 +468,7 @@ export default function Writing() {
                 }}
               >
                 <div style={{ marginBottom: 0 }}>
-                  <TrackChip pillarOrTrack={featured.pillar} asLink={false} />
+                  <TrackChip pillarOrTrack={featured.pillar} slug={featured.slug} asLink={false} />
                 </div>
                 <h2
                   style={{
@@ -579,7 +579,7 @@ export default function Writing() {
                     }}
                   >
                     <div style={{ marginBottom: "12px" }}>
-                      <TrackChip pillarOrTrack={post.pillar} asLink={false} />
+                      <TrackChip pillarOrTrack={post.pillar} slug={post.slug} asLink={false} />
                     </div>
                     <h3
                       style={{

@@ -212,7 +212,7 @@ export default function ForPastors() {
                     }}
                   >
                     <div style={{ marginBottom: "12px" }}>
-                      <TrackChip pillarOrTrack={post.pillar} asLink={false} />
+                      <TrackChip pillarOrTrack={post.pillar} slug={post.slug} asLink={false} />
                     </div>
                     <h3
                       style={{
@@ -363,7 +363,7 @@ export default function ForPastors() {
                         transition: "border-color 0.2s",
                       }}
                     >
-                      <TrackChip pillarOrTrack={post.pillar} asLink={false} />
+                      <TrackChip pillarOrTrack={post.pillar} slug={post.slug} asLink={false} />
                       <h4
                         style={{
                           fontFamily: "var(--F)",

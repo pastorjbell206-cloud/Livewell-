@@ -188,7 +188,7 @@ export default function Home() {
                 }}
               >
                 <div style={{ marginBottom: "16px" }}>
-                  <TrackChip pillarOrTrack={lede.pillar} inverted asLink={false} />
+                  <TrackChip pillarOrTrack={lede.pillar} slug={lede.slug} inverted asLink={false} />
                 </div>
                 <h2
                   style={{
@@ -427,7 +427,7 @@ export default function Home() {
                     }}
                   >
                     <div style={{ marginBottom: "12px" }}>
-                      <TrackChip pillarOrTrack={a.pillar} asLink={false} />
+                      <TrackChip pillarOrTrack={a.pillar} slug={a.slug} asLink={false} />
                     </div>
                     <h3
                       style={{
