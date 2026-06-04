@@ -6,7 +6,7 @@ source: fill-1500
 words: 1760
 ---
 
-There is a particular dread that arrives on Thursday afternoon. The text is open. The commentary stack is there. And nothing comes — not the electricity that used to arrive, not the sense that this passage is hunting you, that it needs to be preached. Just words. Just obligation. Just the crushing awareness that Sunday is three days away and you have nothing that will cost you anything to say.
+By Thursday afternoon the dread has arrived. The text is open. The commentary stack is there. And nothing comes — not the electricity that used to arrive, not the sense that this passage is hunting you, that it needs to be preached. Just words. Just obligation. Just the crushing awareness that Sunday is three days away and you have nothing that will cost you anything to say.
 
 Every honest preacher knows that chair. The question is not whether you will sit in it, but whether you will tell yourself the truth about why you are there.
 

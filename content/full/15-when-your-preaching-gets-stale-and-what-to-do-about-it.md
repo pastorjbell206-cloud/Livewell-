@@ -6,7 +6,7 @@ source: fill-1500
 words: 1870
 ---
 
-There is a particular shame that accompanies the recognition that your preaching has gone stale. You are a minister of the Word — your whole vocation is organized around the conviction that these ancient texts have living power, that the God who speaks through Scripture is still speaking, that the gospel is inexhaustible. And yet you are sitting in your study on a Tuesday afternoon and you cannot make yourself care about the passage you are supposed to preach on Sunday. You have said this before. You know what you think it means. You are going through the motions of a process that used to feel alive.
+Admitting your preaching has gone stale carries a shame all its own. You are a minister of the Word — your whole vocation is organized around the conviction that these ancient texts have living power, that the God who speaks through Scripture is still speaking, that the gospel is inexhaustible. And yet you are sitting in your study on a Tuesday afternoon and you cannot make yourself care about the passage you are supposed to preach on Sunday. You have said this before. You know what you think it means. You are going through the motions of a process that used to feel alive.
 
 This is a more common experience than most pastors will admit publicly, and it is not a sign that the calling has ended or that the faith is gone. It is a sign that something in the preaching ecology has stopped being fed, and that a change — not a dramatic one, necessarily, but a real one — is needed.
 

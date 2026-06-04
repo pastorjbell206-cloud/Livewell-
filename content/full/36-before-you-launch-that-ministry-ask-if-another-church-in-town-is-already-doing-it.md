@@ -6,7 +6,7 @@ source: fill-1500
 words: 1700
 ---
 
-There is a particular kind of pastoral excitement that accompanies the vision for a new ministry initiative. The need is clear, the gifting is present, the timing feels right, and the energy in the room when the idea is presented confirms that something real is being tapped. The next steps are obvious: form a team, develop a plan, build a budget, launch.
+Few things energize a pastor like the vision for a new ministry. The need is clear, the gifting is present, the timing feels right, and the energy in the room when the idea is presented confirms that something real is being tapped. The next steps are obvious: form a team, develop a plan, build a budget, launch.
 
 Before those next steps happen, there is a question worth asking that pastoral culture almost never asks: Is someone else already doing this? Not as a reason to abandon the idea — the need may be genuinely larger than any one church can meet — but as a starting point that might lead somewhere much more effective than a separate launch.
 

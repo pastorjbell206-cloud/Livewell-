@@ -6,7 +6,7 @@ source: fill-1500
 words: 1850
 ---
 
-There is a particular loneliness to standing on the other side of a ministry burnout. You have left, or been asked to leave, or simply stopped being able to show up in the ways the role required. You are out, in one form or another, and the question that eventually emerges — quietly at first, then with increasing urgency — is whether you ever go back.
+Standing on the other side of a ministry burnout is its own kind of loneliness. You have left, or been asked to leave, or simply stopped being able to show up in the ways the role required. You are out, in one form or another, and the question that eventually emerges — quietly at first, then with increasing urgency — is whether you ever go back.
 
 The answer to that question is not simple, and anyone who gives you a simple answer is not taking the complexity seriously enough. Some pastors who burn out should return to ministry. Some should not — at least not to the same kind of ministry they left, in the same capacity. Some need years before the question is even worth asking honestly. What matters is that the return, if it comes, is built on a foundation that the original tenure lacked. The same conditions that produced the burnout cannot be carried unchanged into whatever comes next.
 

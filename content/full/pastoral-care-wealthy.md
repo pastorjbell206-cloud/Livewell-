@@ -6,7 +6,7 @@ source: fill-1500
 words: 1720
 ---
 
-There is a particular kind of pastoral avoidance that looks like respect. You do not press on certain areas. You keep the conversation in safe waters. You visit when called, offer what is asked, and take careful note of the check in the offering plate. You are professionally warm and spiritually incurious about the one domain of this person's life that Jesus spent more time on than almost any other.
+There is a cowardice that dresses itself as respect. You do not press on certain areas. You keep the conversation in safe waters. You visit when called, offer what is asked, and take careful note of the check in the offering plate. You are professionally warm and spiritually incurious about the one domain of this person's life that Jesus spent more time on than almost any other.
 
 We call this pastoral care. The Gospels would not recognize it.
 
