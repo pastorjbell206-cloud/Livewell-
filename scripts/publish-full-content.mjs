@@ -101,34 +101,47 @@ if (!process.env.DATABASE_URL) {
 
 const conn = await mysql.createConnection(process.env.DATABASE_URL);
 try {
-  let matched = 0, updated = 0, missing = [];
-  const backup = [];
+  // ── PASS 1: read current state of every matched post (no writes yet) ──
+  const matchedItems = [];
+  const missing = [];
   for (const it of items) {
     const [rows] = await conn.execute(
       "SELECT id, published, body, readingTimeMinutes FROM posts WHERE slug = ? LIMIT 1", [it.slug]);
     if (!rows.length) { missing.push(it.slug); continue; }
-    matched++;
-    if (!APPLY) continue;
-    // Save the current (pre-publish) state so we can roll back.
-    backup.push({ slug: it.slug, body: rows[0].body, readingTimeMinutes: rows[0].readingTimeMinutes });
+    matchedItems.push({ ...it, oldBody: rows[0].body, oldReadingTimeMinutes: rows[0].readingTimeMinutes });
+  }
+  console.log(`\nmatched ${matchedItems.length} existing posts by slug; ${missing.length} not found in posts table.`);
+  if (missing.length) console.log("  missing slugs:\n   " + missing.join("\n   "));
+
+  if (!APPLY) {
+    console.log(`\nDry-run: re-run with --apply to update ${matchedItems.length} post bodies.`);
+    console.log("Fields that would be written: body, readingTimeMinutes (and updatedAt). Nothing else.");
+    await conn.end();
+    process.exit(0);
+  }
+
+  // ── Write the rollback file to DISK *before* any overwrite happens ──
+  const ts = new Date().toISOString().replace(/[:.]/g, "-");
+  const bpath = path.resolve(__dirname, `.publish-backup-${ts}.json`);
+  const backup = matchedItems.map((it) => ({
+    slug: it.slug, body: it.oldBody, readingTimeMinutes: it.oldReadingTimeMinutes,
+  }));
+  fs.writeFileSync(bpath, JSON.stringify(backup, null, 0));
+  console.log(`\nROLLBACK SAVED (before any write): ${bpath}`);
+  console.log(`  Captured ${backup.length} pre-publish bodies.`);
+  console.log(`  To undo everything:  node scripts/publish-full-content.mjs --restore=${bpath}`);
+
+  // ── PASS 2: now perform the updates ──
+  let updated = 0;
+  for (const it of matchedItems) {
     await conn.execute(
       "UPDATE posts SET body = ?, readingTimeMinutes = ?, updatedAt = NOW() WHERE slug = ?",
       [it.body, it.readingTimeMinutes, it.slug]
     );
     updated++;
   }
-  console.log(`\nmatched ${matched} existing posts by slug; ${missing.length} not found in posts table.`);
-  if (missing.length) console.log("  missing slugs:\n   " + missing.join("\n   "));
-  if (APPLY) {
-    const ts = new Date().toISOString().replace(/[:.]/g, "-");
-    const bpath = path.resolve(__dirname, `.publish-backup-${ts}.json`);
-    fs.writeFileSync(bpath, JSON.stringify(backup, null, 0));
-    console.log(`\nROLLBACK SAVED: ${bpath}`);
-    console.log(`  To undo everything:  node scripts/publish-full-content.mjs --restore=${bpath}`);
-    console.log(`\nAPPLIED: ${updated} post bodies updated.`);
-  } else {
-    console.log(`\nDry-run: re-run with --apply to update ${matched} post bodies.`);
-  }
+  console.log(`\nAPPLIED: ${updated} post bodies updated (of ${backup.length} backed up).`);
+  console.log(`Restore command:  node scripts/publish-full-content.mjs --restore=${bpath}`);
 } finally {
   await conn.end();
 }
