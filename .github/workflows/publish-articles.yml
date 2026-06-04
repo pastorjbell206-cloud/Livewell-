@@ -1,0 +1,54 @@
+name: Publish articles
+
+# Run this by hand from the GitHub "Actions" tab — no terminal needed.
+# It fills the empty/short articles with the finished 1,500+ word bodies in
+# content/full/. Safe by default (dry-run); writes to the live site only when
+# you type "yes" in the apply box. A rollback file is saved as a downloadable
+# artifact on every run.
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: 'Type "yes" to write to the LIVE site. Leave blank for a safe dry-run.'
+        required: false
+        default: ""
+      only:
+        description: "Optional: one slug to publish (for testing a single article)."
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Publish article bodies
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          if [ -z "$DATABASE_URL" ]; then
+            echo "ERROR: no DATABASE_URL secret set. Add it in Settings -> Secrets and variables -> Actions."
+            exit 1
+          fi
+          ARGS=""
+          if [ "${{ inputs.apply }}" = "yes" ]; then ARGS="$ARGS --apply"; fi
+          if [ -n "${{ inputs.only }}" ]; then ARGS="$ARGS --only=${{ inputs.only }}"; fi
+          echo "Running: node scripts/publish-full-content.mjs $ARGS"
+          node scripts/publish-full-content.mjs $ARGS
+      - name: Save rollback file (download it from this run if you need to undo)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rollback-backup
+          path: scripts/.publish-backup-*.json
+          if-no-files-found: ignore
