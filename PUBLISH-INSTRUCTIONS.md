@@ -37,7 +37,7 @@ node scripts/publish-full-content.mjs
 
 # 5. TEST ONE ARTICLE first (optional but recommended).
 #    Writes a rollback file, updates a single post, prints the restore command.
-node scripts/publish-full-content.mjs --apply --only=church-and-the-death-penalty
+node scripts/publish-full-content.mjs --apply --only=church-death-penalty
 #    ^ replace with any slug from content/full/. Verify it on the live site.
 
 # 6. FULL RUN — publishes all 306. Saves a rollback file FIRST, then updates.
