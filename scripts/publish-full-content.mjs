@@ -31,7 +31,31 @@ const ONLY = (() => {
   const a = args.find((x) => x.startsWith("--only="));
   return a ? new Set(a.slice(7).split(",").map((s) => s.trim()).filter(Boolean)) : null;
 })();
+const RESTORE = (() => {
+  const a = args.find((x) => x.startsWith("--restore="));
+  return a ? a.slice(10) : null;
+})();
 const MIN_WORDS = 1500;
+
+// ── Restore mode: put back the bodies saved in a backup file ──────────────
+if (RESTORE) {
+  if (!process.env.DATABASE_URL) { console.error("DATABASE_URL required for --restore."); process.exit(1); }
+  const backup = JSON.parse(fs.readFileSync(RESTORE, "utf8"));
+  console.log(`Restoring ${backup.length} post bodies from ${RESTORE} ...`);
+  const conn = await mysql.createConnection(process.env.DATABASE_URL);
+  try {
+    let n = 0;
+    for (const b of backup) {
+      await conn.execute(
+        "UPDATE posts SET body = ?, readingTimeMinutes = ?, updatedAt = NOW() WHERE slug = ?",
+        [b.body, b.readingTimeMinutes, b.slug]
+      );
+      n++;
+    }
+    console.log(`Restored ${n} bodies to their pre-publish state.`);
+  } finally { await conn.end(); }
+  process.exit(0);
+}
 
 function parse(raw) {
   if (!raw.startsWith("---")) return { fm: {}, body: raw };
@@ -78,11 +102,15 @@ if (!process.env.DATABASE_URL) {
 const conn = await mysql.createConnection(process.env.DATABASE_URL);
 try {
   let matched = 0, updated = 0, missing = [];
+  const backup = [];
   for (const it of items) {
-    const [rows] = await conn.execute("SELECT id, published FROM posts WHERE slug = ? LIMIT 1", [it.slug]);
+    const [rows] = await conn.execute(
+      "SELECT id, published, body, readingTimeMinutes FROM posts WHERE slug = ? LIMIT 1", [it.slug]);
     if (!rows.length) { missing.push(it.slug); continue; }
     matched++;
     if (!APPLY) continue;
+    // Save the current (pre-publish) state so we can roll back.
+    backup.push({ slug: it.slug, body: rows[0].body, readingTimeMinutes: rows[0].readingTimeMinutes });
     await conn.execute(
       "UPDATE posts SET body = ?, readingTimeMinutes = ?, updatedAt = NOW() WHERE slug = ?",
       [it.body, it.readingTimeMinutes, it.slug]
@@ -91,8 +119,16 @@ try {
   }
   console.log(`\nmatched ${matched} existing posts by slug; ${missing.length} not found in posts table.`);
   if (missing.length) console.log("  missing slugs:\n   " + missing.join("\n   "));
-  if (APPLY) console.log(`\nAPPLIED: ${updated} post bodies updated.`);
-  else console.log(`\nDry-run: re-run with --apply to update ${matched} post bodies.`);
+  if (APPLY) {
+    const ts = new Date().toISOString().replace(/[:.]/g, "-");
+    const bpath = path.resolve(__dirname, `.publish-backup-${ts}.json`);
+    fs.writeFileSync(bpath, JSON.stringify(backup, null, 0));
+    console.log(`\nROLLBACK SAVED: ${bpath}`);
+    console.log(`  To undo everything:  node scripts/publish-full-content.mjs --restore=${bpath}`);
+    console.log(`\nAPPLIED: ${updated} post bodies updated.`);
+  } else {
+    console.log(`\nDry-run: re-run with --apply to update ${matched} post bodies.`);
+  }
 } finally {
   await conn.end();
 }
