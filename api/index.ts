@@ -13,6 +13,30 @@ async function withConn<T>(fn: (c: mysql.Connection) => Promise<T>): Promise<T> 
   try { return await fn(conn); } finally { await conn.end(); }
 }
 
+// A connection cached across warm invocations, used by the bulk publish path so
+// it does not open (and exhaust) a fresh DB connection on every batch request.
+let _pubConn: mysql.Connection | null = null;
+async function withPubConn<T>(fn: (c: mysql.Connection) => Promise<T>): Promise<T> {
+  const url = process.env.DATABASE_URL;
+  if (!url) throw new Error("DATABASE_URL missing");
+  if (_pubConn) {
+    try { await _pubConn.query("SELECT 1"); }
+    catch { try { await _pubConn.end(); } catch { /* ignore */ } _pubConn = null; }
+  }
+  if (!_pubConn) {
+    _pubConn = await mysql.createConnection({ uri: url, ssl: { rejectUnauthorized: true } });
+  }
+  try {
+    return await fn(_pubConn);
+  } catch (e: any) {
+    if (e?.fatal || e?.code === "PROTOCOL_CONNECTION_LOST") {
+      try { await _pubConn?.end(); } catch { /* ignore */ }
+      _pubConn = null;
+    }
+    throw e;
+  }
+}
+
 function authed(req: VercelRequest): boolean {
   const key = (req.query.key as string) || (req.headers["x-seed-key"] as string) || "";
   return Boolean(process.env.JWT_SECRET) && key === process.env.JWT_SECRET;
@@ -877,7 +901,7 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         let dbError: string | null = null;
         if (items.length) {
           try {
-            await withConn(async (c) => {
+            await withPubConn(async (c) => {
               const slugs = items.map((i) => i.slug);
               const placeholders = slugs.map(() => "?").join(",");
               const [existRows]: any = await c.execute(
