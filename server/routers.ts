@@ -23,7 +23,7 @@ import {
   createFileRecord, listUserFiles, getFileById, deleteFileRecord, updateFileDescription,
   // Posts
   createPost, listPosts, listPostsForIndex, getPostById, getPostBySlug, getFeaturedPost, updatePost, deletePost,
-  bulkUpdatePostBodies,
+  bulkUpdatePostBodies, listNavIndex, migrateTaxonomy, backfillSubPathways,
   // Resources
   createResource, listResources, getResourceById, updateResource, deleteResource,
   // Books
@@ -124,6 +124,24 @@ export const appRouter = router({
 
     /** Public: get featured post */
     getFeatured: publicProcedure.query(async () => getFeaturedPost()),
+
+    /** Public: slim per-post feed for the primary nav (pillar/subPathway/series). */
+    navIndex: publicProcedure.query(async () => listNavIndex()),
+
+    /** Admin: idempotently add the two-level taxonomy columns. */
+    migrateTaxonomy: adminProcedure.mutation(async () => migrateTaxonomy()),
+
+    /** Admin: backfill subPathway + isSeries from the mapping (batched by client). */
+    backfillSubPathways: adminProcedure
+      .input(z.object({
+        items: z.array(z.object({
+          id: z.number().optional(),
+          slug: z.string().optional(),
+          sub: z.string().nullable().optional(),
+          series: z.boolean().optional(),
+        })),
+      }))
+      .mutation(async ({ input }) => backfillSubPathways(input.items)),
 
     /** Admin: list all posts (including drafts) */
     listAll: adminProcedure.query(async () => listPosts(false)),
