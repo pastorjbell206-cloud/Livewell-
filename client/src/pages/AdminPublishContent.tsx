@@ -22,7 +22,7 @@ export default function AdminPublishContent() {
     setMode(dryRun ? "test" : "publish");
     setResult(null);
     setProgress(null);
-    const BATCH = 25;
+    const BATCH = 6;
     let all: { slug: string; body: string; readingTimeMinutes: number }[];
     try {
       // Download the finished content once in the browser, then send small
@@ -35,12 +35,27 @@ export default function AdminPublishContent() {
       setMode(null);
       return;
     }
+    // Send one batch, retrying a few times if a call stalls (the database can be
+    // slow and an occasional request times out — a retry on a warm function
+    // succeeds). Idempotent, so retries are safe.
+    const sendBatch = async (items: typeof all) => {
+      let lastErr: any;
+      for (let attempt = 0; attempt < 4; attempt++) {
+        try {
+          return await publish.mutateAsync({ dryRun, items });
+        } catch (e) {
+          lastErr = e;
+          await new Promise((r) => setTimeout(r, 700 * (attempt + 1)));
+        }
+      }
+      throw lastErr;
+    };
     let matched = 0, updated = 0;
     const missing: string[] = [];
     try {
       for (let i = 0; i < all.length; i += BATCH) {
         const items = all.slice(i, i + BATCH);
-        const r = await publish.mutateAsync({ dryRun, items });
+        const r = await sendBatch(items);
         matched += r.matched;
         updated += r.updated;
         missing.push(...r.missing);
@@ -53,7 +68,7 @@ export default function AdminPublishContent() {
           : `Done — ${updated} articles published.`
       );
     } catch (e: any) {
-      toast.error(e?.message || "Something interrupted it — it's safe to click again to continue.");
+      toast.error(e?.message || "Some batches kept failing — it's safe to click again to finish the rest.");
     } finally {
       setMode(null);
       setProgress(null);
