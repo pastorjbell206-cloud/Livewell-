@@ -1,0 +1,58 @@
+name: Apply two-level nav (migrate + backfill)
+
+# Run by hand from the "Actions" tab — no terminal needed.
+# Step 1 adds the subPathway + isSeries columns (idempotent).
+# Step 2 backfills them from scripts/subpathway-mapping.json.
+# Safe by default (dry-run backfill); writes only when you type "yes".
+# A rollback file is saved as a downloadable artifact.
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: 'Type "yes" to write to the LIVE database. Blank = migrate + dry-run only.'
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Check DATABASE_URL is set
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          if [ -z "$DATABASE_URL" ]; then
+            echo "ERROR: no DATABASE_URL secret. Add it in Settings -> Secrets and variables -> Actions."
+            exit 1
+          fi
+      - name: Add columns (idempotent migration)
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: node scripts/migrate-two-level.mjs
+      - name: Backfill sub-pathways + series
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          if [ "${{ inputs.apply }}" = "yes" ]; then
+            node scripts/backfill-subpathways.mjs --apply
+          else
+            node scripts/backfill-subpathways.mjs
+          fi
+      - name: Save rollback file (download to undo the backfill)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: subpathway-rollback
+          path: scripts/.subpathway-backup-*.json
+          if-no-files-found: ignore
