@@ -68,7 +68,7 @@ export const PILLAR_BY_SLUG: Record<string, string> = Object.fromEntries(
 );
 
 export const STUDY_GUIDES_LABEL = "Study Guides & Series";
-export const STUDY_GUIDES_HREF = "/series";
+export const STUDY_GUIDES_HREF = "/writing?series=true";
 
 /** Sub-pathways defined for a pillar (empty if the pillar is unknown). */
 export function subPathwaysForPillar(pillar: string | null | undefined): SubPathway[] {

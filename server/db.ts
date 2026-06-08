@@ -132,6 +132,8 @@ export async function listPostsForIndex() {
       title: posts.title,
       excerpt: posts.excerpt,
       pillar: posts.pillar,
+      subPathway: posts.subPathway,
+      isSeries: posts.isSeries,
       topic: posts.topic,
       coverImage: posts.coverImage,
       readingTimeMinutes: posts.readingTimeMinutes,

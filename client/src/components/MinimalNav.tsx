@@ -12,7 +12,14 @@ import { Link, useLocation } from "wouter";
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown, Menu, Search, X } from "lucide-react";
 
-import { PILLARS_V2, PILLAR_BY_SLUG, pillarUrl } from "@/lib/taxonomy";
+import { trpc } from "@/lib/trpc";
+import {
+  PILLAR_ORDER,
+  subPathwaysForPillar,
+  pillarListingUrl,
+  STUDY_GUIDES_LABEL,
+  STUDY_GUIDES_HREF,
+} from "@/lib/subPathways";
 
 interface DropdownItem {
   label: string;
@@ -26,73 +33,39 @@ interface NavLink {
   dropdown?: DropdownItem[];
 }
 
-function buildNavLinks(): NavLink[] {
-  const pillarItem = (slug: string): DropdownItem => {
-    const p = PILLAR_BY_SLUG.get(slug);
-    return {
-      label: p?.name ?? slug,
-      href: pillarUrl(slug),
-      description: p?.blurb,
-    };
-  };
+interface NavPost {
+  pillar?: string | null;
+  subPathway?: string | null;
+  isSeries?: boolean | null;
+}
 
-  return [
-    {
-      label: "Essays",
+/**
+ * Two-level nav: the 5 pillars (raw posts.pillar) each open a dropdown of their
+ * sub-pathways that have >= 1 published post, plus a "Study Guides & Series"
+ * menu for any post flagged isSeries. Pillars with no populated sub-pathway yet
+ * render as a plain link to the pillar listing.
+ */
+function buildNavLinks(posts: NavPost[]): NavLink[] {
+  const links: NavLink[] = PILLAR_ORDER.map((pillar): NavLink => {
+    const subs = subPathwaysForPillar(pillar).filter((sp) =>
+      posts.some((p) => (p.pillar ?? "").trim() === pillar && p.subPathway === sp.label)
+    );
+    if (subs.length === 0) {
+      return { label: pillar, href: pillarListingUrl(pillar) };
+    }
+    return {
+      label: pillar,
       dropdown: [
-        ...PILLARS_V2.map(p => ({
-          label: p.name,
-          href: pillarUrl(p.slug),
-          description: p.blurb,
-        })),
-        {
-          label: "All writing",
-          href: "/writing",
-          description: "Browse the full essay archive",
-        },
-        {
-          label: "Start here if you're skeptical",
-          href: "/skeptic-track",
-          description: "Seven essays in argument order",
-        },
+        { label: `All ${pillar}`, href: pillarListingUrl(pillar) },
+        ...subs.map((sp) => ({ label: sp.label, href: pillarListingUrl(pillar, sp.slug) })),
       ],
-    },
-    {
-      label: "For Pastors",
-      dropdown: [
-        pillarItem("the-pastoral-angle"),
-        {
-          label: "Pastors Connection Network",
-          href: "/pastors",
-          description: "You don't have to lead alone",
-        },
-        {
-          label: "Pastor's Resource Wall",
-          href: "/pastors-resource-wall",
-          description: "Sermon prep, study guides, citation tools",
-        },
-        {
-          label: "Resources for pastors",
-          href: "/resources-for-pastors",
-          description: "Downloadable guides and tools",
-        },
-      ],
-    },
-    {
-      label: "Living Well",
-      dropdown: [
-        pillarItem("living-well-after-christendom"),
-        { label: "Marriage", href: "/marriage" },
-        { label: "Parenting", href: "/parenting" },
-        {
-          label: "Devotionals",
-          href: "/writing?pillar=living-well-after-christendom&subTheme=practices",
-        },
-      ],
-    },
-    { label: "Books", href: "/books" },
-    { label: "About", href: "/about" },
-  ];
+    };
+  });
+
+  links.push({ label: STUDY_GUIDES_LABEL, href: STUDY_GUIDES_HREF });
+  links.push({ label: "Books", href: "/books" });
+  links.push({ label: "About", href: "/about" });
+  return links;
 }
 
 export default function MinimalNav() {
@@ -102,7 +75,8 @@ export default function MinimalNav() {
   const [searchQuery, setSearchQuery] = useState("");
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const navLinks = buildNavLinks();
+  const indexQuery = trpc.posts.listForIndex.useQuery();
+  const navLinks = buildNavLinks(indexQuery.data ?? []);
 
   const isActive = (href: string) =>
     location === href || location.startsWith(href + "/");
@@ -200,10 +174,10 @@ export default function MinimalNav() {
                 flexWrap: "wrap",
               }}
             >
-              {PILLARS_V2.map(p => (
+              {PILLAR_ORDER.map(pillar => (
                 <Link
-                  key={p.slug}
-                  href={pillarUrl(p.slug)}
+                  key={pillar}
+                  href={pillarListingUrl(pillar)}
                   onClick={() => setSearchOpen(false)}
                   style={{
                     fontFamily: "var(--U)",
@@ -215,7 +189,7 @@ export default function MinimalNav() {
                     textDecoration: "none",
                   }}
                 >
-                  {p.short}
+                  {pillar}
                 </Link>
               ))}
             </div>
