@@ -89,6 +89,7 @@ const AdminAbout = lazy(() => import("./pages/AdminAbout"));
 const AdminSettings = lazy(() => import("./pages/AdminSettings"));
 const AdminContentSync = lazy(() => import("./pages/AdminContentSync"));
 const AdminPublishContent = lazy(() => import("./pages/AdminPublishContent"));
+const AdminSetupNavigation = lazy(() => import("./pages/AdminSetupNavigation"));
 const NotificationsAdmin = lazy(() =>
   import("./pages/admin/NotificationsAdmin").then((m) => ({ default: m.NotificationsAdmin }))
 );
@@ -194,6 +195,7 @@ function Router() {
         <Route path="/admin/settings"><ProtectedRoute component={AdminSettings} requireAdmin /></Route>
         <Route path="/admin/sync"><ProtectedRoute component={AdminContentSync} requireAdmin /></Route>
         <Route path="/admin/publish-content"><ProtectedRoute component={AdminPublishContent} requireAdmin /></Route>
+        <Route path="/admin/setup-navigation"><ProtectedRoute component={AdminSetupNavigation} requireAdmin /></Route>
         <Route path="/admin/moderation"><ProtectedRoute component={ModerationAdmin} requireAdmin /></Route>
         <Route path="/admin/notifications"><ProtectedRoute component={NotificationsAdmin} requireAdmin /></Route>
         <Route path="/404" component={NotFound} />

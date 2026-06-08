@@ -1,18 +1,31 @@
 /**
- * Primary navigation. Uses the canonical two-movement / six-pillar taxonomy
- * (lib/taxonomy.ts) so nav, footer, archive chips, and card tags all speak the
- * same labels:
+ * Primary navigation. A clean two-level menu mapped to the five content pillars
+ * and their sub-pathways (lib/subPathways.ts), plus a dedicated home for the
+ * long-form study guides and series:
  *
- *   Essays → the six pillars (Diagnosis + Formation) + All writing + Skeptic
- *   For Pastors → The Pastoral Angle + PCN + resources
- *   Living Well → Pillar 6 + Marriage/Parenting landing pages + Devotionals
+ *   Theological Depth ▸ Doctrine & Scripture · Church History · Biblical Theology
+ *   Prophetic Justice ▸ Economic Justice · Race & Reconciliation · The Vulnerable · Systemic Sin
+ *   Prophetic Disruption ▸ Church & Empire · Christian Nationalism · Cultural Captivity
+ *   Leadership Formation ▸ Pastoral Health · Staff & Teams · Preaching · Church Revitalization
+ *   Integrated Life ▸ Marriage & Family · Rhythms & Sabbath · Vocation & Money
+ *   Study Guides & Series → every multi-part guide/devotional in one place
  *   Books / About → flat links
+ *
+ * The dropdowns only list sub-pathways that have at least one published post
+ * (counted from `posts.navIndex`); a pillar with none renders as a plain link.
  */
 import { Link, useLocation } from "wouter";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ChevronDown, Menu, Search, X } from "lucide-react";
 
-import { PILLARS_V2, PILLAR_BY_SLUG, pillarUrl } from "@/lib/taxonomy";
+import { trpc } from "@/lib/trpc";
+import {
+  PILLAR_ORDER,
+  subPathwaysForPillar,
+  pillarListingUrl,
+  STUDY_GUIDES_LABEL,
+  STUDY_GUIDES_HREF,
+} from "@/lib/subPathways";
 
 interface DropdownItem {
   label: string;
@@ -26,70 +39,32 @@ interface NavLink {
   dropdown?: DropdownItem[];
 }
 
-function buildNavLinks(): NavLink[] {
-  const pillarItem = (slug: string): DropdownItem => {
-    const p = PILLAR_BY_SLUG.get(slug);
+/**
+ * Build the nav from the live sub-pathway counts. `counts` maps a sub-pathway
+ * label → number of published posts. Until the feed loads (`hasData` false) we
+ * optimistically show every sub-pathway so the menu is never barren.
+ */
+function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLink[] {
+  const pillarLinks: NavLink[] = PILLAR_ORDER.map(pillar => {
+    const subs = subPathwaysForPillar(pillar).filter(
+      s => !hasData || (counts[s.label] ?? 0) > 0
+    );
+    if (subs.length === 0) {
+      // No populated sub-pathway — a plain link to the pillar listing.
+      return { label: pillar, href: pillarListingUrl(pillar) };
+    }
     return {
-      label: p?.name ?? slug,
-      href: pillarUrl(slug),
-      description: p?.blurb,
+      label: pillar,
+      dropdown: [
+        { label: `All ${pillar}`, href: pillarListingUrl(pillar) },
+        ...subs.map(s => ({ label: s.label, href: pillarListingUrl(pillar, s.slug) })),
+      ],
     };
-  };
+  });
 
   return [
-    {
-      label: "Essays",
-      dropdown: [
-        ...PILLARS_V2.map(p => ({
-          label: p.name,
-          href: pillarUrl(p.slug),
-          description: p.blurb,
-        })),
-        {
-          label: "All writing",
-          href: "/writing",
-          description: "Browse the full essay archive",
-        },
-        {
-          label: "Start here if you're skeptical",
-          href: "/skeptic-track",
-          description: "Seven essays in argument order",
-        },
-      ],
-    },
-    {
-      label: "For Pastors",
-      dropdown: [
-        pillarItem("the-pastoral-angle"),
-        {
-          label: "Pastors Connection Network",
-          href: "/pastors",
-          description: "You don't have to lead alone",
-        },
-        {
-          label: "Pastor's Resource Wall",
-          href: "/pastors-resource-wall",
-          description: "Sermon prep, study guides, citation tools",
-        },
-        {
-          label: "Resources for pastors",
-          href: "/resources-for-pastors",
-          description: "Downloadable guides and tools",
-        },
-      ],
-    },
-    {
-      label: "Living Well",
-      dropdown: [
-        pillarItem("living-well-after-christendom"),
-        { label: "Marriage", href: "/marriage" },
-        { label: "Parenting", href: "/parenting" },
-        {
-          label: "Devotionals",
-          href: "/writing?pillar=living-well-after-christendom&subTheme=practices",
-        },
-      ],
-    },
+    ...pillarLinks,
+    { label: STUDY_GUIDES_LABEL, href: STUDY_GUIDES_HREF },
     { label: "Books", href: "/books" },
     { label: "About", href: "/about" },
   ];
@@ -102,7 +77,21 @@ export default function MinimalNav() {
   const [searchQuery, setSearchQuery] = useState("");
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const navLinks = buildNavLinks();
+
+  // Live sub-pathway counts drive which dropdowns appear.
+  const navIndexQuery = trpc.posts.navIndex.useQuery(undefined, {
+    staleTime: 5 * 60 * 1000,
+  });
+  const { counts, hasData } = useMemo(() => {
+    const rows = navIndexQuery.data ?? [];
+    const c: Record<string, number> = {};
+    for (const r of rows) {
+      const label = (r as any).subPathway as string | null;
+      if (label) c[label] = (c[label] ?? 0) + 1;
+    }
+    return { counts: c, hasData: rows.length > 0 };
+  }, [navIndexQuery.data]);
+  const navLinks = useMemo(() => buildNavLinks(counts, hasData), [counts, hasData]);
 
   const isActive = (href: string) =>
     location === href || location.startsWith(href + "/");
@@ -200,10 +189,10 @@ export default function MinimalNav() {
                 flexWrap: "wrap",
               }}
             >
-              {PILLARS_V2.map(p => (
+              {PILLAR_ORDER.map(pillar => (
                 <Link
-                  key={p.slug}
-                  href={pillarUrl(p.slug)}
+                  key={pillar}
+                  href={pillarListingUrl(pillar)}
                   onClick={() => setSearchOpen(false)}
                   style={{
                     fontFamily: "var(--U)",
@@ -215,7 +204,7 @@ export default function MinimalNav() {
                     textDecoration: "none",
                   }}
                 >
-                  {p.short}
+                  {pillar}
                 </Link>
               ))}
             </div>

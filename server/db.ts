@@ -185,6 +185,44 @@ export async function deletePost(id: number) {
   await db.delete(posts).where(eq(posts.id, id));
 }
 
+// ─── Two-level taxonomy (sub-pathway nav) ────────────────────────────
+/** Slim per-post feed for the primary nav: pillar + sub-pathway + series flag. */
+export async function listNavIndex() {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  return db
+    .select({ slug: posts.slug, pillar: posts.pillar, subPathway: posts.subPathway, isSeries: posts.isSeries })
+    .from(posts)
+    .where(eq(posts.published, true));
+}
+
+/** Idempotently add the subPathway + isSeries columns (dev path). */
+export async function migrateTaxonomy() {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  const added: string[] = [];
+  try { await db.execute(sql`ALTER TABLE \`posts\` ADD COLUMN \`subPathway\` varchar(128) NULL`); added.push("subPathway"); } catch { /* exists */ }
+  try { await db.execute(sql`ALTER TABLE \`posts\` ADD COLUMN \`isSeries\` boolean NOT NULL DEFAULT false`); added.push("isSeries"); } catch { /* exists */ }
+  return { added, alreadyPresent: added.length === 0, error: null as string | null };
+}
+
+/** Backfill subPathway + isSeries by id (or slug). Never touches pillar. */
+export async function backfillSubPathways(
+  items: { id?: number; slug?: string; sub?: string | null; series?: boolean }[]
+) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  let updated = 0;
+  const missing: (number | string)[] = [];
+  for (const it of items) {
+    const set = { subPathway: it.sub ?? null, isSeries: !!it.series };
+    if (it.id != null) { await db.update(posts).set(set).where(eq(posts.id, it.id)); updated++; }
+    else if (it.slug) { await db.update(posts).set(set).where(eq(posts.slug, it.slug)); updated++; }
+    else missing.push("?");
+  }
+  return { updated, missing, error: null as string | null };
+}
+
 /**
  * Bulk-update post bodies by slug (used by the admin "Publish article content"
  * button). Updates ONLY body + readingTimeMinutes; never touches published

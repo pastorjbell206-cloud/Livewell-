@@ -18,6 +18,12 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
 import { pillarToTrack, resolveTrack, pillarForPost, PILLAR_BY_SLUG, subThemesForPost, SUBTHEMES, PILLARS_V2, MOVEMENTS } from "@/lib/taxonomy";
+import {
+  PILLAR_BY_SLUG as NEW_PILLAR_BY_SLUG,
+  PILLAR_SUBPATHWAYS,
+  SUBPATHWAY_LABEL_BY_SLUG,
+  STUDY_GUIDES_LABEL,
+} from "@/lib/subPathways";
 
 const AUDIENCE_LABELS: Record<string, string> = {
   individuals: "Anyone",
@@ -61,6 +67,14 @@ export default function Writing() {
   const urlSearch = params.get("q") ?? "";
   const effectiveSearch = search || urlSearch;
 
+  // New two-level sub-pathway taxonomy (disjoint slugs from the legacy pillars).
+  const activeSub = params.get("sub");
+  const activeSeries = params.get("series") === "true";
+  const newPillarName = activePillar ? NEW_PILLAR_BY_SLUG[activePillar] ?? null : null;
+  const isNewPillar = !!newPillarName;
+  const subLabel = activeSub ? SUBPATHWAY_LABEL_BY_SLUG[activeSub] ?? null : null;
+  const newHeading = activeSeries ? STUDY_GUIDES_LABEL : subLabel ?? newPillarName;
+
   const posts = postsQuery.data ?? [];
 
   const filtered = useMemo(() => {
@@ -70,11 +84,24 @@ export default function Writing() {
         const track = pillarToTrack(p.pillar);
         if (track !== activeTrack) return false;
       }
-      // Pillar (new two-movement / six-pillar taxonomy)
-      if (activePillar) {
+      // Pillar (legacy two-movement / six-pillar taxonomy)
+      if (activePillar && !isNewPillar) {
         const pl = pillarForPost(p);
         if (!pl || pl.slug !== activePillar) return false;
       }
+      // Pillar (new five-pillar / sub-pathway taxonomy): a post belongs to the
+      // pillar when its sub-pathway is one of that pillar's sub-pathways.
+      if (isNewPillar && newPillarName) {
+        const postSub = (p as any).subPathway as string | null;
+        const subs = PILLAR_SUBPATHWAYS[newPillarName] ?? [];
+        if (!postSub || !subs.some(s => s.label === postSub)) return false;
+      }
+      // Specific sub-pathway
+      if (activeSub) {
+        if (((p as any).subPathway ?? "") !== subLabel) return false;
+      }
+      // Study Guides & Series
+      if (activeSeries && !(p as any).isSeries) return false;
       // Sub-theme (primarily Pillar 6: marriage, fatherhood, parenting…)
       if (activeSubTheme && !subThemesForPost(p).includes(activeSubTheme)) return false;
       // Audience
@@ -90,7 +117,7 @@ export default function Writing() {
       }
       return true;
     });
-  }, [posts, activeTrack, activePillar, activeSubTheme, activeAudience, activeFormat, effectiveSearch]);
+  }, [posts, activeTrack, activePillar, activeSubTheme, activeAudience, activeFormat, effectiveSearch, isNewPillar, newPillarName, activeSub, subLabel, activeSeries]);
 
   const activePillarInfo = activePillar ? PILLAR_BY_SLUG.get(activePillar) ?? null : null;
 
@@ -130,17 +157,23 @@ export default function Writing() {
     <Layout>
       <SEOMeta
         title={
-          activePillarInfo
-            ? `${activePillarInfo.name} — Writing`
-            : activeTrackInfo
-              ? `${activeTrackInfo.title} — Writing`
-              : "Writing — All essays"
+          newHeading
+            ? `${newHeading} — Writing`
+            : activePillarInfo
+              ? `${activePillarInfo.name} — Writing`
+              : activeTrackInfo
+                ? `${activeTrackInfo.title} — Writing`
+                : "Writing — All essays"
         }
         description={
-          activePillarInfo
-            ? `Essays filed under ${activePillarInfo.name}.`
-            : activeTrackInfo?.description ??
-              "Every essay by James Bell — on theology, politics, the American church after Christendom, pastoring, marriage, and parenting."
+          activeSeries
+            ? "Every multi-part study guide and series by James Bell, in one place."
+            : newHeading
+              ? `Essays filed under ${newHeading}.`
+              : activePillarInfo
+                ? `Essays filed under ${activePillarInfo.name}.`
+                : activeTrackInfo?.description ??
+                  "Every essay by James Bell — on theology, politics, the American church after Christendom, pastoring, marriage, and parenting."
         }
         url={`https://www.livewellbyjamesbell.co${location}`}
       />
@@ -171,11 +204,13 @@ export default function Writing() {
               maxWidth: "22ch",
             }}
           >
-            {activePillarInfo
-              ? activePillarInfo.name
-              : activeTrackInfo
-                ? activeTrackInfo.title
-                : "Every essay, in one place."}
+            {newHeading
+              ? newHeading
+              : activePillarInfo
+                ? activePillarInfo.name
+                : activeTrackInfo
+                  ? activeTrackInfo.title
+                  : "Every essay, in one place."}
           </h1>
           <p
             style={{
@@ -186,11 +221,15 @@ export default function Writing() {
               maxWidth: "62ch",
             }}
           >
-            {activePillarInfo
-              ? `Essays filed under ${activePillarInfo.name}. Sorted newest first.`
-              : activeTrackInfo
-                ? activeTrackInfo.description
-                : "Theology, politics, the American church after Christendom. Pastoring, marriage, parenting, prophetic justice, doubt. Sorted newest first."}
+            {activeSeries
+              ? "Every multi-part study guide and series, gathered in one place. Sorted newest first."
+              : newHeading
+                ? `Essays filed under ${newHeading}. Sorted newest first.`
+                : activePillarInfo
+                  ? `Essays filed under ${activePillarInfo.name}. Sorted newest first.`
+                  : activeTrackInfo
+                    ? activeTrackInfo.description
+                    : "Theology, politics, the American church after Christendom. Pastoring, marriage, parenting, prophetic justice, doubt. Sorted newest first."}
           </p>
           <div
             style={{

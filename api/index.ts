@@ -607,20 +607,31 @@ function toPostCard(row: any): any {
 
 async function trpcListPosts(): Promise<any[]> {
   return await withConn(async (c) => {
+    const base = "id, slug, title, excerpt, body, pillar, readTime, published, featured, publishedAt, createdAt";
+    // Try with the two-level columns; if they don't exist yet, fall back without
+    // them so the site keeps working before the taxonomy migration is run.
+    let rows: any = null;
     try {
-      const [rows]: any = await c.execute(
-        "SELECT id, slug, title, excerpt, body, pillar, readTime, published, featured, publishedAt, createdAt FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 500"
+      [rows] = await c.execute(
+        `SELECT ${base}, subPathway, isSeries FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 500`
       );
-      if (Array.isArray(rows) && rows.length > 0) {
-        return (rows as any[]).map((r) => ({
-          id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
-          body: r.body || null, content: r.body || null,
-          pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
-          published: r.published, featured: r.featured, topic: r.topic || null,
-          createdAt: r.createdAt || r.publishedAt, publishedAt: r.publishedAt || r.createdAt,
-        }));
-      }
-    } catch { /* posts table may not exist, fall through to articles */ }
+    } catch {
+      try {
+        [rows] = await c.execute(
+          `SELECT ${base} FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 500`
+        );
+      } catch { rows = null; }
+    }
+    if (Array.isArray(rows) && rows.length > 0) {
+      return (rows as any[]).map((r) => ({
+        id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
+        body: r.body || null, content: r.body || null,
+        pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
+        published: r.published, featured: r.featured, topic: r.topic || null,
+        subPathway: r.subPathway ?? null, isSeries: !!r.isSeries,
+        createdAt: r.createdAt || r.publishedAt, publishedAt: r.publishedAt || r.createdAt,
+      }));
+    }
     const [rows]: any = await c.execute(
       "SELECT id, slug, title, subtitle, excerpt, topic, pillar, source, external_url, image_url, word_count, published_at, created_at FROM articles ORDER BY published_at DESC LIMIT 500"
     );
@@ -931,6 +942,79 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
           }
         }
         return trpcOk(res, { matched, updated, missing, dryRun, error: dbError });
+      }
+      case "posts.navIndex": {
+        // Slim per-post feed for the primary nav: just what's needed to know
+        // which pillars/sub-pathways/series have published posts. Defensive: if
+        // the two-level columns don't exist yet, returns them as null/false.
+        let rows: any = [];
+        await withConn(async (c) => {
+          try {
+            [rows] = await c.execute(
+              "SELECT slug, pillar, subPathway, isSeries FROM posts WHERE published = true LIMIT 2000"
+            );
+          } catch {
+            try {
+              const [r2]: any = await c.execute("SELECT slug, pillar FROM posts WHERE published = true LIMIT 2000");
+              rows = (r2 as any[]).map((r) => ({ ...r, subPathway: null, isSeries: 0 }));
+            } catch { rows = []; }
+          }
+        });
+        return trpcOk(res, (rows as any[]).map((r) => ({
+          slug: r.slug, pillar: r.pillar ?? null,
+          subPathway: r.subPathway ?? null, isSeries: !!r.isSeries,
+        })));
+      }
+      case "posts.migrateTaxonomy": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const added: string[] = [];
+        let migErr: string | null = null;
+        try {
+          await withConn(async (c) => {
+            const [db]: any = await c.query("SELECT DATABASE() AS db");
+            const dbName = db[0].db;
+            const has = async (col: string) => {
+              const [r]: any = await c.execute(
+                "SELECT 1 FROM information_schema.COLUMNS WHERE TABLE_SCHEMA=? AND TABLE_NAME='posts' AND COLUMN_NAME=? LIMIT 1",
+                [dbName, col]
+              );
+              return r.length > 0;
+            };
+            if (!(await has("subPathway"))) { await c.query("ALTER TABLE `posts` ADD COLUMN `subPathway` varchar(128) NULL"); added.push("subPathway"); }
+            if (!(await has("isSeries"))) { await c.query("ALTER TABLE `posts` ADD COLUMN `isSeries` boolean NOT NULL DEFAULT false"); added.push("isSeries"); }
+          });
+        } catch (e: any) {
+          migErr = String(e?.sqlMessage || e?.message || e);
+          console.error("migrateTaxonomy error:", migErr);
+        }
+        return trpcOk(res, { added, alreadyPresent: added.length === 0, error: migErr });
+      }
+      case "posts.backfillSubPathways": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const items: { id?: number; slug?: string; sub?: string | null; series?: boolean }[] =
+          Array.isArray(input?.items) ? input.items : [];
+        let updated = 0;
+        const missing: (number | string)[] = [];
+        let bErr: string | null = null;
+        try {
+          await withConn(async (c) => {
+            for (const it of items) {
+              const sub = it.sub ?? null;
+              const series = it.series ? 1 : 0;
+              let res2: any;
+              if (it.id != null) {
+                [res2] = await c.execute("UPDATE posts SET subPathway = ?, isSeries = ? WHERE id = ?", [sub, series, it.id]);
+              } else if (it.slug) {
+                [res2] = await c.execute("UPDATE posts SET subPathway = ?, isSeries = ? WHERE slug = ?", [sub, series, it.slug]);
+              } else { continue; }
+              if (res2 && res2.affectedRows > 0) updated++; else missing.push(it.id ?? it.slug ?? "?");
+            }
+          });
+        } catch (e: any) {
+          bErr = String(e?.sqlMessage || e?.message || e);
+          console.error("backfillSubPathways error:", bErr);
+        }
+        return trpcOk(res, { updated, missing, error: bErr });
       }
       case "books.create": {
         if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
