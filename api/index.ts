@@ -874,38 +874,39 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
           Array.isArray(input?.items) ? input.items : [];
         let matched = 0, updated = 0;
         const missing: string[] = [];
+        let dbError: string | null = null;
         if (items.length) {
-          await withConn(async (c) => {
-            const slugs = items.map((i) => i.slug);
-            const placeholders = slugs.map(() => "?").join(",");
-            const [existRows]: any = await c.execute(
-              `SELECT slug FROM posts WHERE slug IN (${placeholders})`, slugs
-            );
-            const existing = new Set(existRows.map((r: any) => r.slug));
-            const toUpdate = items.filter((it) => existing.has(it.slug));
-            for (const it of items) if (!existing.has(it.slug)) missing.push(it.slug);
-            matched = toUpdate.length;
-            if (!dryRun && toUpdate.length) {
-              // One UPDATE for the whole batch (a CASE per slug) instead of one
-              // query per article — far fewer round trips to the slow remote DB,
-              // so the batch finishes quickly and never times out.
-              const caseExpr = toUpdate.map(() => "WHEN ? THEN ?").join(" ");
-              const whereIn = toUpdate.map(() => "?").join(",");
-              const params: any[] = [];
-              for (const it of toUpdate) params.push(it.slug, it.body);
-              for (const it of toUpdate) params.push(it.slug, it.readingTimeMinutes);
-              for (const it of toUpdate) params.push(it.slug);
-              await c.execute(
-                `UPDATE posts SET body = CASE slug ${caseExpr} ELSE body END, ` +
-                `readingTimeMinutes = CASE slug ${caseExpr} ELSE readingTimeMinutes END, ` +
-                `updatedAt = NOW() WHERE slug IN (${whereIn})`,
-                params
+          try {
+            await withConn(async (c) => {
+              const slugs = items.map((i) => i.slug);
+              const placeholders = slugs.map(() => "?").join(",");
+              const [existRows]: any = await c.execute(
+                `SELECT slug FROM posts WHERE slug IN (${placeholders})`, slugs
               );
-              updated = toUpdate.length;
-            }
-          });
+              const existing = new Set(existRows.map((r: any) => r.slug));
+              const toUpdate = items.filter((it) => existing.has(it.slug));
+              for (const it of items) if (!existing.has(it.slug)) missing.push(it.slug);
+              matched = toUpdate.length;
+              if (!dryRun && toUpdate.length) {
+                // One UPDATE per article keeps each statement tiny and avoids
+                // huge multi-row CASE statements that some MySQL hosts reject.
+                for (const it of toUpdate) {
+                  await c.execute(
+                    "UPDATE posts SET body = ?, readingTimeMinutes = ?, updatedAt = NOW() WHERE slug = ?",
+                    [it.body, it.readingTimeMinutes, it.slug]
+                  );
+                  updated++;
+                }
+              }
+            });
+          } catch (e: any) {
+            // Surface the real DB error instead of letting it become an opaque
+            // 500 ("unable to transform" on the client). Logged for diagnosis.
+            dbError = String(e?.code ? e.code + " " : "") + String(e?.sqlMessage || e?.message || e);
+            console.error("publishFullBodies DB error:", dbError, "| firstSlug:", items[0]?.slug);
+          }
         }
-        return trpcOk(res, { matched, updated, missing, dryRun });
+        return trpcOk(res, { matched, updated, missing, dryRun, error: dbError });
       }
       case "books.create": {
         if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);

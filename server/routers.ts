@@ -204,8 +204,14 @@ export const appRouter = router({
       .mutation(async ({ input }) => {
         // The client downloads the content file once and sends small batches of
         // items here, so each call only does a handful of quick DB writes — no
-        // per-call content fetch, no timeout.
-        return bulkUpdatePostBodies(input.items, input.dryRun ?? false);
+        // per-call content fetch, no timeout. DB errors are returned (not thrown)
+        // so the client can show the real reason.
+        try {
+          const r = await bulkUpdatePostBodies(input.items, input.dryRun ?? false);
+          return { ...r, error: null as string | null };
+        } catch (e: any) {
+          return { matched: 0, updated: 0, missing: [] as string[], error: String(e?.message || e) };
+        }
       }),
   }),
 

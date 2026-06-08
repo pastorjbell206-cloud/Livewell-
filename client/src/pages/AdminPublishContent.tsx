@@ -42,8 +42,11 @@ export default function AdminPublishContent() {
       let lastErr: any;
       for (let attempt = 0; attempt < 4; attempt++) {
         try {
-          return await publish.mutateAsync({ dryRun, items });
-        } catch (e) {
+          const r = await publish.mutateAsync({ dryRun, items });
+          // A returned DB error (not a thrown one) — retry, then surface it.
+          if ((r as any).error) throw new Error((r as any).error);
+          return r;
+        } catch (e: any) {
           lastErr = e;
           await new Promise((r) => setTimeout(r, 700 * (attempt + 1)));
         }
