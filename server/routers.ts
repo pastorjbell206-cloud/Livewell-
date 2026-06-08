@@ -18,8 +18,6 @@ import { leadMagnetsRouter } from "./routers/lead-magnets";
 import { recommendationRouter } from "./recommendation-router";
 import { analyticsRouter } from "./analytics-router";
 import { emailRouter } from "./email-router";
-import { readFileSync } from "node:fs";
-import { resolve } from "node:path";
 import {
   // Files
   createFileRecord, listUserFiles, getFileById, deleteFileRecord, updateFileDescription,
@@ -197,21 +195,17 @@ export const appRouter = router({
     publishFullBodies: adminProcedure
       .input(z.object({
         dryRun: z.boolean().optional(),
-        offset: z.number().optional(),
-        limit: z.number().optional(),
+        items: z.array(z.object({
+          slug: z.string(),
+          body: z.string(),
+          readingTimeMinutes: z.number(),
+        })),
       }))
       .mutation(async ({ input }) => {
-        // Dev/server path reads the bundled content file from disk. (Production
-        // runs through api/index.ts, which fetches the same file statically.)
-        // Processed in batches (offset/limit) so each call stays well under the
-        // serverless time limit; the client loops until done.
-        const file = resolve(process.cwd(), "client/public/admin-article-bodies.json");
-        const items = JSON.parse(readFileSync(file, "utf8")) as { slug: string; body: string; readingTimeMinutes: number }[];
-        return bulkUpdatePostBodies(items, {
-          dryRun: input.dryRun ?? false,
-          offset: input.offset ?? 0,
-          limit: input.limit ?? 30,
-        });
+        // The client downloads the content file once and sends small batches of
+        // items here, so each call only does a handful of quick DB writes — no
+        // per-call content fetch, no timeout.
+        return bulkUpdatePostBodies(input.items, input.dryRun ?? false);
       }),
   }),
 

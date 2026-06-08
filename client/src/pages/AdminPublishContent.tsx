@@ -22,23 +22,31 @@ export default function AdminPublishContent() {
     setMode(dryRun ? "test" : "publish");
     setResult(null);
     setProgress(null);
-    const limit = 30;
-    let offset = 0;
-    let total = 0, matched = 0, updated = 0;
+    const BATCH = 10;
+    let all: { slug: string; body: string; readingTimeMinutes: number }[];
+    try {
+      // Download the finished content once in the browser, then send small
+      // batches to the server so each request only does a few quick DB writes.
+      const resp = await fetch("/admin-article-bodies.json", { cache: "no-store" });
+      if (!resp.ok) throw new Error(`couldn't load content file (${resp.status})`);
+      all = await resp.json();
+    } catch (e: any) {
+      toast.error(e?.message || "Couldn't load the article content file.");
+      setMode(null);
+      return;
+    }
+    let matched = 0, updated = 0;
     const missing: string[] = [];
     try {
-      // Process in small batches so the server never times out; loop until done.
-      for (;;) {
-        const r = await publish.mutateAsync({ dryRun, offset, limit });
-        total = r.total;
-        matched += r.batchMatched;
-        updated += r.batchUpdated;
-        missing.push(...r.batchMissing);
-        setProgress({ processed: r.processed, total: r.total });
-        if (r.done) break;
-        offset = r.processed;
+      for (let i = 0; i < all.length; i += BATCH) {
+        const items = all.slice(i, i + BATCH);
+        const r = await publish.mutateAsync({ dryRun, items });
+        matched += r.matched;
+        updated += r.updated;
+        missing.push(...r.missing);
+        setProgress({ processed: Math.min(i + BATCH, all.length), total: all.length });
       }
-      setResult({ total, matched, updated, missing, dryRun });
+      setResult({ total: all.length, matched, updated, missing, dryRun });
       toast.success(
         dryRun
           ? `Test complete — ${matched} articles ready to fill.`
@@ -52,7 +60,7 @@ export default function AdminPublishContent() {
     }
   };
 
-  const busy = publish.isPending;
+  const busy = mode !== null;
 
   return (
     <AdminLayout>
