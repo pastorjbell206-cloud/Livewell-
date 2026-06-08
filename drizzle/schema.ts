@@ -60,6 +60,12 @@ export const posts = mysqlTable("posts", {
   audience_type: varchar("audience_type", { length: 64 }).default("general").notNull(),
   /** Topic: justice, leadership, spiritual-formation, church-health, personal-growth, pastoral-care */
   topic: mysqlEnum("topic", ["justice", "leadership", "spiritual-formation", "church-health", "personal-growth", "pastoral-care"]),
+  /** Sub-pathway within a pillar (two-level nav). Free-form string; the valid
+   *  values per pillar live in client/src/lib/subPathways.ts. */
+  subPathway: varchar("subPathway", { length: 128 }),
+  /** Whether this post is part of a study guide / long-form series. Surfaced in
+   *  the "Study Guides & Series" nav menu regardless of pillar. */
+  isSeries: boolean("isSeries").default(false).notNull(),
   /** Format: article, book-chapter, study-guide, sermon-series, devotional, podcast */
   format: mysqlEnum("format", ["article", "book-chapter", "study-guide", "sermon-series", "devotional", "podcast"]).default("article").notNull(),
   /** Audience: pastors, church-leaders, small-groups, individuals, couples */
