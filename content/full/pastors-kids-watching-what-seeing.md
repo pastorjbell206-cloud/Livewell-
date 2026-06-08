@@ -1,0 +1,45 @@
+---
+slug: pastors-kids-watching-what-seeing
+title: "The Pastor's Kids Are Watching — What Are They Seeing?"
+pillar: Leadership Formation
+source: fill-1500
+words: 1720
+---
+
+My sons know things about ministry that the congregation does not know, because they have watched it from a distance of about three feet. They were in the kitchen when the difficult phone calls came in. They were in the car when the elder board meeting's aftermath was visible on my face. They watched me leave for hospital visits on birthdays and return from conferences tired in a way that Sunday's sermon did not show. They have the data of proximity, and they will draw conclusions from it for the rest of their lives.
+
+The question "what are your kids seeing?" is not sentimental. It is theological.
+
+The pastoral vocation, in the theological tradition that takes it seriously, is not just a job a man does. It is a shape that a life takes. The Pastoral Letters to Timothy and Titus are explicit about this: the bishop must manage his own household well, with all dignity, keeping his children submissive (1 Timothy 3:4-5). Paul is not adding a domestic footnote to a professional checklist. He is identifying the household as a diagnostic test. The household management reveals whether the character is real or performed, whether the theology has been internalized or merely processed. And the first people to know the answer to that question are the children.
+
+The children are always watching. What they are watching for — though they could not name it this way — is whether the man who preaches on Sunday is the same man who eats breakfast on Tuesday. Whether the faith that gets articulated from the platform is the faith that operates in the kitchen when no one outside the family is present. Whether the grace he extends to grieving strangers extends also to the people he comes home to. The children are the most rigorous theologians in the household, because they are conducting the experiment under uncontrolled conditions, and they are keeping very good notes.
+
+The PKs — pastor's kids — carry a particular burden that most congregations underestimate. They have the calling loaded onto them without their consent. The congregation expects something of them by virtue of parentage. They are watched in a way that other children are not. The PK who misbehaves in the pew is not just a child misbehaving in a pew; the congregation reads it as a reflection on the pastor, and the pastor knows they are reading it that way, and the child knows the pastor knows, and the whole arrangement creates a pressure that no child should carry alone.
+
+Eugene Peterson, who spent decades thinking about what pastoral formation actually requires, drew a distinction between the pastor's congregation and the pastor's family that was, in his view, the difference between sustainability and collapse [cite — confirm]. The congregation gets the office. The family gets the man. The two are not the same, and a man who does not protect that distinction — who performs the pastoral role at the kitchen table, who brings the platform self home and leaves the actual self outside, who turns every family conversation into a teaching moment or a sermon illustration — will eventually find that his children have concluded the actual man does not exist. That they have been pastored all their lives and never actually known their father.
+
+This is the wound that research on pastor's kids returns to repeatedly [cite — confirm]. Not the missed events, though those leave marks. Not the fishbowl visibility, though that creates real pressure. The primary wound is the gap — the distance between the public man and the private one, when that distance is large enough to feel like deception. The child who discovers that the man in the pulpit was a performance, that the warmth and wisdom the congregation received were not available at home, does not easily recover that faith. Not in the father. Often not in the institution the father represented. Sometimes not in the God the institution was supposed to represent.
+
+I have not always been the same man at home as at church. The gap has been smaller in some seasons than others. My sons are old enough now to tell me when it is larger than it should be, and when they do, it lands with the weight it deserves. They are not wrong. The gap is real. And the ministry of closing it — slowly, repeatedly, across the years of a family's life together — is among the most important ministry I do, because it is the ministry that shapes the people closest to me.
+
+What does it mean to pastor your own children well?
+
+It means they know, from direct experience, that the faith is real in the private life, not just the public one. That you pray when you are alone, not just when you are performing the pastoral function. That the Scripture you open Monday morning is opened to speak to you, not to produce a sermon for Sunday. That the God you describe from the platform is the God you actually lean on at midnight when you are afraid.
+
+It means you ask for forgiveness, specifically, when you have wronged them — not a generic pastoral acknowledgment of imperfection, but an actual apology for an actual failure, offered to an actual person who was actually hurt. This is harder than it sounds, because the pastoral identity can produce a reflexive paternal authority that makes genuine apology feel like loss of standing. It is not. The father who repents to his child is not losing authority. He is modeling the thing the Gospel claims is central — that we are all inside the need for forgiveness, not outside it, and that saying so to the people who are watching is not weakness. It is the most convincing evidence they will ever receive that the faith is real.
+
+It means you protect their experience of childhood from the congregation's expectations, which can be voracious. The congregation's hunger for the pastor's family to be a visible embodiment of the church's values is not malicious. But it is real, and if it is not managed by the pastor himself, it will consume the family. Your children are not the congregation's illustration. They are people who did not choose the visibility and deserve the privacy to grow up without performing for an audience.
+
+It means you are curious about who they are becoming, not anxious about whether they are representing you well. The pastor who reads his children primarily as a reflection of his ministry success will produce children who are performing rather than forming. The pastor who is genuinely curious — who asks questions he doesn't already know the answers to, who listens to the answer rather than framing a response, who is interested in the actual person rather than the person he wishes were there — gives his children something rarer than the children of public figures often receive: the experience of being seen.
+
+The theological tradition that most clearly names this is the tradition of vocation as whole-life faithfulness. Luther's insistence that the common life was not spiritually inferior to the religious life — that the father feeding his child was doing holy work, that the mother nursing her infant was doing holy work, that the ordinary materials of household life were the primary theater of Christian formation — was a revolutionary claim in the sixteenth century and has not been fully absorbed by the pastoral culture that descended from it [cite — confirm]. The pastor who treats the congregation as the real ministry and the family as the supportive context has not escaped the medieval hierarchy Luther was opposing. He has simply moved the sacred location from the monastery to the pulpit.
+
+The household is a call. The children are a congregation. Not in the sense that reduces them to objects of ministry rather than subjects of relationship, but in the sense that they are people in your care who are being formed by what they see in you. The formation is happening whether you intend it or not. The question is only what kind.
+
+The PK who grows up knowing that his father's faith was real — tested in the ordinary materials of family life and found genuine — has received something no congregational program can supply. He has watched a man believe it on a Tuesday. He has evidence from the inside of the life that the sermon was not a performance but a report. He carries that evidence with him through the seasons when his own faith is under pressure, and it is more durable than the sermon he watched from the pew, because it is not doctrine. It is data. He was there.
+
+The PK who grows up knowing that the sermon and the kitchen table were different countries lives with that knowledge for the rest of his life. Some of them eventually forgive it. Some of them leave the faith entirely, and when researchers ask why, the private gap is often part of the answer.
+
+Your children are your first congregation. Not because they have rights over your ministry, but because what they see will form them in ways that outlast everything you preach.
+
+What they are seeing is the question that matters most.

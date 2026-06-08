@@ -5,7 +5,7 @@ atheist at twenty-four. No conversion bait. No bad apologetics. The skeptic
 on-ramp the site is built around.
 
 These slugs match the seven stops on the `/skeptic-track` page. Writing all
-seven is the highest-leverage move on the site — the page only works once
+seven is the highest-impact move on the site — the page only works once
 they exist.
 
 ---
@@ -72,7 +72,7 @@ they exist.
 
 **Opening sketch:** "The problem of suffering is not a debating question. It is the condition we live inside. Cancer kills children. Tsunamis kill villages. The Holocaust happened, and the Christians of Germany mostly did not stop it, and that fact alone should disqualify the easy apologetic answers most of us have been taught to give. I want to give a different answer. It will not satisfy you intellectually. It is, I think, the only honest answer the Christian tradition has."
 
-**Closing weight:** I will not give you a reason for the suffering you are inside of. The Bible does not. Job did not get one. He got God — who showed up, who answered him, who never told him *why.* God showed up. God is still showing up. The God who walks through the suffering with you is not a theodicy. He is a presence. He is the only theodicy that has ever been enough, and he is enough for the same reason he was enough for Job — not because he gave an answer, but because he was there.
+**Closing weight:** I will not give you a reason for the suffering you are inside of. The Bible does not. Job did not get one. He got God — who showed up, who answered him, who never told him *why.* God showed up. God is still moving. The God who walks through the suffering with you is not a theodicy. He is a presence. He is the only theodicy that has ever been enough, and he is enough for the same reason he was enough for Job — not because he gave an answer, but because he was there.
 
 **Sources:** Job; Lamentations; C.S. Lewis (*A Grief Observed*); David Bentley Hart (*The Doors of the Sea*); Eleonore Stump (*Wandering in Darkness*); Marilyn McCord Adams (*Horrendous Evils and the Goodness of God*).
 

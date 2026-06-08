@@ -73,4 +73,4 @@ I am writing this for the reader who has tried before and quit, for the reader w
 
 Begin tomorrow morning. Mark 1, verses 1 through 8. Ten minutes. The rest is months of consistent return. The return is what the Christian tradition has been doing for two thousand years, and the return is what produces, over time, the readers who actually know what scripture says rather than the readers who have read it once quickly and forgotten.
 
-The next essay in this writing project takes up the related question of what to do when, in the middle of a sustained reading practice, God feels distant — the spiritual condition the historic Christian tradition has called *the dark night of the soul*, and which most contemporary Christian readers have not been given adequate resources to navigate when it arrives.
+The next essay in this writing project takes up the related question of what to do when, in the middle of a sustained reading practice, God feels distant — the spiritual condition the historic Christian tradition has called *the dark night of the soul*, and which most contemporary Christian readers have not been given adequate resources to weather when it arrives.
