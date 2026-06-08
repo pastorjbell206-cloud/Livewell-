@@ -206,7 +206,7 @@ export async function bulkUpdatePostBodies(
     matched++;
     if (!dryRun) {
       await db.update(posts)
-        .set({ body: it.body, readingTimeMinutes: it.readingTimeMinutes })
+        .set({ body: it.body, readTime: `${it.readingTimeMinutes} min read` })
         .where(eq(posts.slug, it.slug));
       updated++;
     }
