@@ -43,7 +43,7 @@ function parseSearchParams(): URLSearchParams {
 
 export default function Writing() {
   const [location] = useLocation();
-  const postsQuery = trpc.posts.listPublished.useQuery();
+  const postsQuery = trpc.posts.listForIndex.useQuery();
   const [search, setSearch] = useState("");
   const [showFilters, setShowFilters] = useState(false);
 

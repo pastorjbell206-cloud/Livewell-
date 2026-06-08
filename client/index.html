@@ -13,12 +13,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Fonts: load explicitly in <head> with display=swap so the SPA boot
-         doesn't hold paint behind a blocking @import in index.css. -->
+    <!-- Fonts: loaded non-render-blocking via the preload+swap pattern so first
+         paint never waits on the third-party CSS. display=swap shows fallback
+         text immediately, then swaps to the brand fonts when they arrive. -->
     <link
-      rel="stylesheet"
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap"
+      />
+    </noscript>
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />

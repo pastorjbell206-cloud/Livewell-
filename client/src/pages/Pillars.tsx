@@ -14,7 +14,7 @@ import {
 const MOVEMENT_ORDER: Movement[] = ["diagnosis", "formation"];
 
 export default function Pillars() {
-  const postsQuery = trpc.posts.listPublished.useQuery();
+  const postsQuery = trpc.posts.listForIndex.useQuery();
   const counts = useMemo(() => {
     const c: Record<number, number> = {};
     for (const p of postsQuery.data ?? []) {

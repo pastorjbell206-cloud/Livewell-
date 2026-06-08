@@ -58,6 +58,7 @@ export function AuthorBio({
           {resolvedImage && (
             <img
               src={resolvedImage}
+                decoding="async"
               alt=""
               width={96}
               height={128}

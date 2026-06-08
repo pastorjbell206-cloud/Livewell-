@@ -74,7 +74,7 @@ const STOPS: Stop[] = [
 ];
 
 export default function SkepticTrack() {
-  const { data: articles } = trpc.posts.listPublished.useQuery();
+  const { data: articles } = trpc.posts.listForIndex.useQuery();
   const bySlug = new Map((articles ?? []).map(a => [a.slug, a]));
 
   const trackUrl = `${SITE_URL}/skeptic-track`;
