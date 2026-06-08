@@ -192,31 +192,26 @@ export async function deletePost(id: number) {
  * writing. Returns a summary.
  */
 export async function bulkUpdatePostBodies(
-  allItems: { slug: string; body: string; readingTimeMinutes: number }[],
-  opts: { dryRun?: boolean; offset?: number; limit?: number } = {}
+  items: { slug: string; body: string; readingTimeMinutes: number }[],
+  dryRun = false
 ) {
   const db = await getDb();
   if (!db) throw new Error("Database not available");
-  const dryRun = opts.dryRun ?? false;
-  const offset = Math.max(0, opts.offset ?? 0);
-  const limit = Math.min(100, Math.max(1, opts.limit ?? 30));
-  const slice = allItems.slice(offset, offset + limit);
-  let batchMatched = 0;
-  let batchUpdated = 0;
-  const batchMissing: string[] = [];
-  for (const it of slice) {
+  let matched = 0;
+  let updated = 0;
+  const missing: string[] = [];
+  for (const it of items) {
     const rows = await db.select({ id: posts.id }).from(posts).where(eq(posts.slug, it.slug)).limit(1);
-    if (!rows.length) { batchMissing.push(it.slug); continue; }
-    batchMatched++;
+    if (!rows.length) { missing.push(it.slug); continue; }
+    matched++;
     if (!dryRun) {
       await db.update(posts)
         .set({ body: it.body, readingTimeMinutes: it.readingTimeMinutes })
         .where(eq(posts.slug, it.slug));
-      batchUpdated++;
+      updated++;
     }
   }
-  const processed = Math.min(offset + limit, allItems.length);
-  return { total: allItems.length, processed, done: processed >= allItems.length, batchMatched, batchUpdated, batchMissing, dryRun };
+  return { matched, updated, missing };
 }
 
 // ─── Resources ───────────────────────────────────────────────────────
