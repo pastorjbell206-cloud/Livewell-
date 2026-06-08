@@ -18,6 +18,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
 import { pillarToTrack, resolveTrack, pillarForPost, PILLAR_BY_SLUG, subThemesForPost, SUBTHEMES, PILLARS_V2, MOVEMENTS } from "@/lib/taxonomy";
+import { PILLAR_BY_SLUG as SUBPATHWAY_PILLAR_BY_SLUG, subPathwaySlug } from "@/lib/subPathways";
 
 const AUDIENCE_LABELS: Record<string, string> = {
   individuals: "Anyone",
@@ -55,6 +56,8 @@ export default function Writing() {
 
   const activeTrack = params.get("track");
   const activePillar = params.get("pillar");
+  const activeSub = params.get("sub");
+  const activeSeries = params.get("series");
   const activeSubTheme = params.get("subTheme");
   const activeAudience = params.get("audience");
   const activeFormat = params.get("format");
@@ -70,11 +73,19 @@ export default function Writing() {
         const track = pillarToTrack(p.pillar);
         if (track !== activeTrack) return false;
       }
-      // Pillar (new two-movement / six-pillar taxonomy)
-      if (activePillar) {
+      // Two-level taxonomy: ?pillar=<5-pillar-slug>&sub=<subslug>. The 5-pillar
+      // slugs are disjoint from the legacy six-pillar slugs, so they coexist.
+      if (activePillar && SUBPATHWAY_PILLAR_BY_SLUG[activePillar]) {
+        const pillarName = SUBPATHWAY_PILLAR_BY_SLUG[activePillar];
+        if ((p.pillar ?? "").trim() !== pillarName) return false;
+        if (activeSub && subPathwaySlug(pillarName, p.subPathway ?? "") !== activeSub) return false;
+      } else if (activePillar) {
+        // Legacy two-movement / six-pillar taxonomy
         const pl = pillarForPost(p);
         if (!pl || pl.slug !== activePillar) return false;
       }
+      // Study guides / series
+      if (activeSeries === "true" && !p.isSeries) return false;
       // Sub-theme (primarily Pillar 6: marriage, fatherhood, parenting…)
       if (activeSubTheme && !subThemesForPost(p).includes(activeSubTheme)) return false;
       // Audience
@@ -90,7 +101,7 @@ export default function Writing() {
       }
       return true;
     });
-  }, [posts, activeTrack, activePillar, activeSubTheme, activeAudience, activeFormat, effectiveSearch]);
+  }, [posts, activeTrack, activePillar, activeSub, activeSeries, activeSubTheme, activeAudience, activeFormat, effectiveSearch]);
 
   const activePillarInfo = activePillar ? PILLAR_BY_SLUG.get(activePillar) ?? null : null;
 

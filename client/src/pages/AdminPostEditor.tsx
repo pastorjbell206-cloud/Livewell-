@@ -4,6 +4,7 @@ import { trpc } from "@/lib/trpc";
 import { useState, useEffect } from "react";
 import { Loader2, Save } from "lucide-react";
 import { toast } from "sonner";
+import { subPathwaysForPillar } from "@/lib/subPathways";
 
 export default function AdminPostEditor() {
   const [location, navigate] = useLocation();
@@ -16,10 +17,12 @@ export default function AdminPostEditor() {
     body: "",
     excerpt: "",
     pillar: "",
+    subPathway: "",
     readTime: "",
     coverImage: "",
     published: false,
     featured: false,
+    isSeries: false,
   });
 
   const getPostQuery = trpc.posts.getById.useQuery(
@@ -38,10 +41,12 @@ export default function AdminPostEditor() {
         body: getPostQuery.data.body,
         excerpt: getPostQuery.data.excerpt || "",
         pillar: getPostQuery.data.pillar || "",
+        subPathway: getPostQuery.data.subPathway || "",
         readTime: getPostQuery.data.readTime || "",
         coverImage: getPostQuery.data.coverImage || "",
-        published: getPostQuery.data.published,
-        featured: getPostQuery.data.featured,
+        published: Boolean(getPostQuery.data.published),
+        featured: Boolean(getPostQuery.data.featured),
+        isSeries: Boolean(getPostQuery.data.isSeries),
       });
     }
   }, [getPostQuery.data]);
@@ -144,7 +149,7 @@ export default function AdminPostEditor() {
             </label>
             <select
               value={form.pillar}
-              onChange={(e) => setForm({ ...form, pillar: e.target.value })}
+              onChange={(e) => setForm({ ...form, pillar: e.target.value, subPathway: "" })}
               className="w-full px-4 py-2 rounded border font-body"
               style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
             >
@@ -154,6 +159,29 @@ export default function AdminPostEditor() {
               <option value="Prophetic Justice">Prophetic Justice</option>
               <option value="Integrated Life">Integrated Life</option>
               <option value="Leadership Formation">Leadership Formation</option>
+            </select>
+          </div>
+
+          {/* Sub-pathway (options depend on the chosen pillar) */}
+          <div>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+              Sub-pathway
+            </label>
+            <select
+              value={form.subPathway}
+              onChange={(e) => setForm({ ...form, subPathway: e.target.value })}
+              disabled={!form.pillar}
+              className="w-full px-4 py-2 rounded border font-body disabled:opacity-50"
+              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+            >
+              <option value="">
+                {form.pillar ? "Select a sub-pathway..." : "Choose a pillar first"}
+              </option>
+              {subPathwaysForPillar(form.pillar).map((sp) => (
+                <option key={sp.slug} value={sp.label}>
+                  {sp.label}
+                </option>
+              ))}
             </select>
           </div>
 
@@ -204,6 +232,14 @@ export default function AdminPostEditor() {
                 onChange={(e) => setForm({ ...form, featured: e.target.checked })}
               />
               <span style={{ color: "#1A1A1A" }}>Featured</span>
+            </label>
+            <label className="flex items-center gap-2 cursor-pointer font-ui text-sm">
+              <input
+                type="checkbox"
+                checked={form.isSeries}
+                onChange={(e) => setForm({ ...form, isSeries: e.target.checked })}
+              />
+              <span style={{ color: "#1A1A1A" }}>Part of a study guide / series</span>
             </label>
           </div>
 
