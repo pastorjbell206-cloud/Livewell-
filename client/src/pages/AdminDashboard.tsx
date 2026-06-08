@@ -1,7 +1,7 @@
 import AdminLayout from "@/components/AdminLayout";
 import { Link } from "wouter";
 import { trpc } from "@/lib/trpc";
-import { PenLine, FolderOpen, BookOpen, Loader2, Upload, Wand2 } from "lucide-react";
+import { PenLine, FolderOpen, BookOpen, Loader2, Upload, Wand2, Copy } from "lucide-react";
 import { useState } from "react";
 import contentData from "@/data/content-data.json";
 
@@ -80,6 +80,21 @@ export default function AdminDashboard() {
             <div className="font-display text-xl font-bold" style={{ color: "#1A1A1A" }}>Set up navigation</div>
             <div className="font-body text-sm" style={{ color: "#5A5448" }}>
               Organize articles into the new pillar and sub-pathway menus, plus Study Guides &amp; Series. Safe to run anytime.
+            </div>
+          </div>
+        </Link>
+
+        {/* Find duplicate articles */}
+        <Link
+          href="/admin/deduplicate"
+          className="flex items-center gap-4 p-6 mb-8 rounded-lg no-underline transition-transform hover:scale-[1.01]"
+          style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}
+        >
+          <Copy size={28} style={{ color: "#D4A017" }} />
+          <div>
+            <div className="font-display text-xl font-bold" style={{ color: "#1A1A1A" }}>Find duplicate articles</div>
+            <div className="font-body text-sm" style={{ color: "#5A5448" }}>
+              See every repeated title, keep the best copy, and retire the rest. Reversible &mdash; nothing is deleted.
             </div>
           </div>
         </Link>

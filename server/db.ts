@@ -223,6 +223,60 @@ export async function backfillSubPathways(
   return { updated, missing, error: null as string | null };
 }
 
+/** Group posts by normalized title; return groups with more than one copy. */
+export async function findDuplicatePosts() {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  const rows = await db
+    .select({
+      id: posts.id, slug: posts.slug, title: posts.title, pillar: posts.pillar,
+      published: posts.published, featured: posts.featured,
+      publishedAt: posts.publishedAt, createdAt: posts.createdAt, body: posts.body,
+    })
+    .from(posts);
+  const norm = (t: any) =>
+    String(t || "").toLowerCase().replace(/[‘’“”]/g, "'").replace(/[^a-z0-9]+/g, " ").trim();
+  const map: Record<string, any[]> = {};
+  for (const r of rows) {
+    const k = norm(r.title);
+    if (!k) continue;
+    (map[k] = map[k] || []).push({ ...r, bodyLen: (r.body ?? "").length });
+  }
+  const groups = Object.values(map)
+    .filter((g) => g.length > 1)
+    .map((g) => {
+      const sorted = [...g].sort(
+        (a, b) =>
+          (Number(b.published) - Number(a.published)) ||
+          (b.bodyLen - a.bodyLen) ||
+          (new Date(b.publishedAt || b.createdAt).getTime() -
+            new Date(a.publishedAt || a.createdAt).getTime())
+      );
+      return {
+        title: sorted[0].title,
+        keepId: sorted[0].id,
+        copies: sorted.map((r) => ({
+          id: r.id, slug: r.slug, pillar: r.pillar ?? null,
+          published: !!r.published, featured: !!r.featured, bodyLen: r.bodyLen,
+        })),
+      };
+    })
+    .sort((a, b) => b.copies.length - a.copies.length);
+  return { groups, error: null as string | null };
+}
+
+/** Unpublish (never delete) the given post ids. Reversible duplicate cleanup. */
+export async function retirePosts(ids: number[]) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  let updated = 0;
+  for (const id of ids) {
+    await db.update(posts).set({ published: false }).where(eq(posts.id, id));
+    updated++;
+  }
+  return { updated, error: null as string | null };
+}
+
 /**
  * Bulk-update post bodies by slug (used by the admin "Publish article content"
  * button). Updates ONLY body + readingTimeMinutes; never touches published
