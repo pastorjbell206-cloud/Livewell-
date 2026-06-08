@@ -24,7 +24,7 @@ import {
   // Posts
   createPost, listPosts, listPostsForIndex, getPostById, getPostBySlug, getFeaturedPost, updatePost, deletePost,
   bulkUpdatePostBodies, listNavIndex, migrateTaxonomy, backfillSubPathways,
-  findDuplicatePosts, retirePosts,
+  findDuplicatePosts, retirePosts, createDraftPosts,
   // Resources
   createResource, listResources, getResourceById, updateResource, deleteResource,
   // Books
@@ -151,6 +151,21 @@ export const appRouter = router({
     retirePosts: adminProcedure
       .input(z.object({ ids: z.array(z.number()) }))
       .mutation(async ({ input }) => retirePosts(input.ids)),
+
+    /** Admin: insert essays as unpublished drafts (idempotent by slug). */
+    createDrafts: adminProcedure
+      .input(z.object({
+        items: z.array(z.object({
+          slug: z.string(),
+          title: z.string(),
+          body: z.string(),
+          excerpt: z.string().nullable().optional(),
+          pillar: z.string().nullable().optional(),
+          subPathway: z.string().nullable().optional(),
+          readTime: z.string().nullable().optional(),
+        })),
+      }))
+      .mutation(async ({ input }) => createDraftPosts(input.items)),
 
     /** Admin: list all posts (including drafts) */
     listAll: adminProcedure.query(async () => listPosts(false)),

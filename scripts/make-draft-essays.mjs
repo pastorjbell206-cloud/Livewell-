@@ -1,0 +1,67 @@
+import { writeFileSync } from "node:fs";
+
+// Two flagship essays for the thin pillars, written in the LiveWell long-form
+// register. Delivered as unpublished posts so James can preview, tune, publish.
+
+const constantinian = [
+`The church did not lose its nerve in a single year. But if you wanted a date, you could do worse than 312.`,
+`That October, Constantine marched on the Milvian Bridge and won. According to Eusebius — who is not a neutral witness, who is in fact the emperor's admirer and biographer — he won under a sign: a cross laid over the sun, and the words *in this sign conquer*. Within a decade the faith that had been illegal became favored. Within a lifetime it became the religion of the throne. Within a century, under Theodosius, it became mandatory. The Christians who had refused to drop a pinch of incense on Caesar's altar — who had been fed to lions for that refusal — now had great-grandchildren who could not picture a Caesar who was not Christian.`,
+`Something was gained. Something was traded. We have spent seventeen hundred years declining to name the trade.`,
+`This is not an argument about politics. It is a question about worship.`,
+`William Cavanaugh has spent a career on that question, and his answer is uncomfortable: the modern state did not liberate the church so much as domesticate it. It offered protection, position, a seat near the power — and asked in exchange only that the church's final loyalty be quietly transferred to the nation. Stanley Hauerwas put the same point with less patience. The great achievement of Constantinianism, he said, was to make the church invisible — not by persecuting it but by absorbing it, until being Christian and being a good citizen of the empire meant the same thing, and the gospel had nothing left to say that the culture had not already said louder.`,
+`Notice what the bargain does to God. The God of the exodus, who hears slaves and drowns chariots, who in Walter Brueggemann's phrase shatters the royal consciousness — this God becomes useful. He becomes the one who blesses the army before it marches, who sanctifies the borders, who can be relied upon to want what the nation already wants. Brueggemann called the alternative prophetic imagination, and he meant it against exactly this: the imagination of empire, which cannot conceive of a future it does not already control, and which therefore needs a god small enough to manage.`,
+`America did not invent civil religion. It perfected it.`,
+`Robert Bellah named it in 1967 — a working faith, threaded through the speeches and the holidays and the coinage, not quite Christianity and not quite secular but a third thing, a religion of the nation with the nation as its god. The dates are not ancient. "Under God" entered the Pledge of Allegiance in 1954. "In God We Trust" became the national motto in 1956. Eisenhower is said to have insisted that our form of government makes no sense unless it is founded in a deeply felt religious faith — and then to have added, and I don't care what it is. That last clause is the whole confession. A god who can be any god is a god who asks nothing. He is the god of the empire, and he is on the coins because he has already agreed to the terms.`,
+`I am not writing this from outside the room. I grew up with no church and no father, came to Christ out of unbelief, and the first version of the faith handed to me was already fused with the flag — God and country spoken in a single breath, as if the and were the gospel. I believed it for years. I led others into it. When I stand in a sanctuary now and feel the pull to make Jesus the chaplain of something larger and more popular than Jesus, I am not describing a temptation I have escaped. I am describing one I have to refuse on a Tuesday.`,
+`Lesslie Newbigin, who gave forty years to India and came home to find England a mission field, saw the cost on the far end. A church wedded to its culture, he wrote, has no hold on that culture at all — it can only echo. It cannot call a nation to repentance when its own identity is borrowed from the nation. The moment the church needs the empire's approval to feel real, it has already lost the one thing that made it worth approving.`,
+`Here is the part we do not want. The early Christians were not killed for believing in a god. The empire had gods to spare. They were killed for believing in a king — *kyrios Iēsous*, Jesus is Lord, a sentence with a second, unspoken half: and Caesar is not. They were executed not for their theology but for their treason, and their treason was only that they would not say the empire was ultimate. The blood that built the church was spilled over a refusal we have made optional.`,
+`We did not lose that refusal to an enemy. We sold it. We sold it for relevance, for a place at the table, for the comfort of a country that would say our own words back to us. And the receipt has come due in public — in a faith that can fill a stadium for the nation and cannot fill a prayer closet for the kingdom, that knows the anthem by heart and has misplaced the Beatitudes, that carries a cross up the steps of a capitol and does not hear the contradiction.`,
+`The cross was never a weapon. It was the thing the empire did to the people it wanted to silence.`,
+`A church that cannot tell the difference is not too political. It is not political enough. It has a king it has agreed not to mention in mixed company, and a country it will defend to the death, and it holds them in the wrong order, and it calls the disorder faith.`,
+`The bargain is still on the table. It always is. The question Constantine answered for us, and that we keep answering after him, is whether we will worship a God who blesses what we already are — or the One who stood in front of Pilate, refused the empire's terms, and let it kill him rather than take them.`,
+`Choose the second, and you will not be comfortable. That is how you will know He is real.`,
+].join("\n\n");
+
+const dividedLife = [
+`We are the first people who can be in two places at once. We have not admitted what it is doing to us.`,
+`There is the self that works and the self that prays. The self that answers email at the dinner table and the self that means every word when it sings on Sunday. The self that spends and the self that tithes, and a thin wall between them we have learned to call maturity. Charles Taylor has a name for the person this produces. He calls it the buffered self — the modern individual sealed off from anything that might reach in and lay a total claim, insulated, protected, finally alone. We did not become this way by accident. We built it.`,
+`Read about the world before the factory and you find something strange: people did not have a job and a life. They had a life, and work happened inside it. The forge was in the house. The field was the family. Then the machine arrived, and with it the clock — not the sundial that tells you where you stand in the day, but the time-clock that tells you when you are owned and when you are free. The most consequential wall in the modern world is not between nations. It is the one the eighteenth century built between work and home, the one that taught us to leave one self at the door and pick up another, and to call the division grown-up.`,
+`Max Weber saw where it ends. The Protestant work ethic, he argued, outlived its Protestantism — the discipline remained after the faith that gave it meaning had drained away, and what was left was the iron cage: relentless labor with nothing at the center of it, productivity as its own and only god. He wrote that in 1905. He would not be surprised by us. We have only made the cage portable. It fits in a pocket now. It glows.`,
+`The Sabbath was the wall coming down.`,
+`Abraham Joshua Heschel called it a palace in time — not a day off, not a battery recharging so the machine can run again Monday, but a sanctuary you enter, built of hours instead of stones. The fourth commandment is the longest of the ten, and it is the one we treat as negotiable. Six days you shall labor, but the seventh is a Sabbath to the Lord your God. Not to your rest. Not to your hobbies. To the Lord. The day refuses the partition. It insists there is no hour that belongs to your work and no hour that belongs to God, because every hour already belongs to God, and one day in seven you stop pretending otherwise long enough to remember it.`,
+`Josef Pieper saw the same thing from the other side. Writing in the rubble of 1948, in a Germany that had worked itself into catastrophe, he insisted that leisure is not idleness and not the wage paid for labor — it is the basis of culture, the open ground on which a human being remembers he is not a tool. A people who cannot rest cannot worship, because worship is the one act that produces nothing. You cannot monetize a doxology. That is the point of it.`,
+`James K.A. Smith would press the question onto our loves. We are not, he argues, primarily thinkers who happen to act. We are lovers, formed by what we do again and again — by liturgies, the small repeated rituals that aim the heart whether we notice or not. The phone reached for before the eyes are fully open is a liturgy. The calendar with no white space is a liturgy. We are being discipled all day long by rhythms we did not choose and will not question, and then we wonder why one hour on Sunday cannot undo what the other hundred and sixty-seven have built.`,
+`I am not standing outside this. I am a pastor, which means I have a public reputation for a faith I am tempted to practice everywhere except at my own table. I grew up without a father, and I have five sons, and I know precisely how a man can be present in a building full of strangers and absent in a house full of his own children — can preach integration on Sunday and live in pieces by Thursday. The hardest sermon I preach is the one my calendar preaches back to me. It is not subtle. It says my work is ultimate and my family is the leftover, and it says it in the only language a life actually speaks, which is where the hours go.`,
+`Wendell Berry has spent fifty years refusing the split the rest of us made our peace with. He will not separate the economy from the household, the work from the place, the man from the membership that holds him. A culture, he writes, is not a heap of individuals who have negotiated terms; it is a fabric of mutual belonging, and we have been tearing it for profit and calling the tear progress. He is describing farms. He is also describing souls.`,
+`Here is what the divided life costs, and it is not efficiency. It is presence. A self cut in half is not twice as useful. It is half as real — at the desk and at the table both, never entirely anywhere, buffered, managed, unreachable. We did not get more life by partitioning it. We got less of it, in more places.`,
+`The gospel will not bless the wall. It comes for the whole man — the bank account and the calendar and the marriage and the ambition and the Tuesday — and it refuses to be quarantined in the one hour we set aside to feel forgiven. A faith that touches only Sunday is not a small faith. It is a different religion, and its god is the one Eisenhower would not trouble to name, the one who asks nothing because he has agreed to stay in his room.`,
+`You cannot follow the living God into a divided life. He keeps walking through the wall.`,
+].join("\n\n");
+
+const items = [
+  {
+    slug: "the-constantinian-bargain",
+    title: "The Constantinian Bargain",
+    pillar: "Prophetic Disruption",
+    subPathway: "Church & Empire",
+    excerpt: "The church did not lose its nerve in a single year. But the trade it made with the empire has been coming due for seventeen hundred years.",
+    readTime: "6 min read",
+    body: constantinian,
+  },
+  {
+    slug: "a-life-you-cannot-cut-in-half",
+    title: "A Life You Cannot Cut in Half",
+    pillar: "Integrated Life",
+    subPathway: "Rhythms & Sabbath",
+    excerpt: "We are the first people who can be in two places at once. We have not admitted what it is doing to us.",
+    readTime: "6 min read",
+    body: dividedLife,
+  },
+];
+
+writeFileSync(
+  new URL("../client/public/draft-essays.json", import.meta.url),
+  JSON.stringify(items, null, 2) + "\n"
+);
+console.log("wrote", items.length, "draft essays:");
+for (const it of items) console.log(" -", it.title, "(" + it.body.split(/\s+/).length + " words)");

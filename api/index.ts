@@ -1090,6 +1090,41 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         }
         return trpcOk(res, { updated, error: rErr });
       }
+      case "posts.createDrafts": {
+        // Insert essays as UNPUBLISHED posts (idempotent by slug). Used by the
+        // admin "Load draft essays" button. Inserts the core columns only, then
+        // best-effort tags subPathway/isSeries if those columns exist.
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const items: any[] = Array.isArray(input?.items) ? input.items : [];
+        let inserted = 0;
+        const skipped: string[] = [];
+        let cErr: string | null = null;
+        try {
+          await withConn(async (c) => {
+            for (const it of items) {
+              if (!it?.slug || !it?.title || !it?.body) continue;
+              const [ex]: any = await c.execute("SELECT id FROM posts WHERE slug = ? LIMIT 1", [it.slug]);
+              if (Array.isArray(ex) && ex.length > 0) { skipped.push(it.slug); continue; }
+              await c.execute(
+                "INSERT INTO posts (title, slug, body, excerpt, pillar, readTime, published, featured, createdAt, updatedAt) VALUES (?, ?, ?, ?, ?, ?, 0, 0, NOW(), NOW())",
+                [it.title, it.slug, it.body, it.excerpt ?? null, it.pillar ?? null, it.readTime ?? null]
+              );
+              inserted++;
+              // Tag taxonomy if those columns exist (post-migration); harmless otherwise.
+              try {
+                await c.execute(
+                  "UPDATE posts SET subPathway = ?, isSeries = 0 WHERE slug = ?",
+                  [it.subPathway ?? null, it.slug]
+                );
+              } catch { /* columns not migrated yet — safe to ignore */ }
+            }
+          });
+        } catch (e: any) {
+          cErr = String(e?.sqlMessage || e?.message || e);
+          console.error("createDrafts error:", cErr);
+        }
+        return trpcOk(res, { inserted, skipped, error: cErr });
+      }
       case "books.create": {
         if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
         return await withConn(async (c) => {
