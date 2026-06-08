@@ -265,6 +265,29 @@ export async function findDuplicatePosts() {
   return { groups, error: null as string | null };
 }
 
+/** Insert essays as UNPUBLISHED posts, idempotent by slug. Returns a summary. */
+export async function createDraftPosts(
+  items: { slug: string; title: string; body: string; excerpt?: string | null; pillar?: string | null; subPathway?: string | null; readTime?: string | null }[]
+) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  let inserted = 0;
+  const skipped: string[] = [];
+  for (const it of items) {
+    if (!it?.slug || !it?.title || !it?.body) continue;
+    const existing = await db.select({ id: posts.id }).from(posts).where(eq(posts.slug, it.slug)).limit(1);
+    if (existing.length > 0) { skipped.push(it.slug); continue; }
+    await db.insert(posts).values({
+      title: it.title, slug: it.slug, body: it.body,
+      excerpt: it.excerpt ?? null, pillar: it.pillar ?? null,
+      readTime: it.readTime ?? null, subPathway: it.subPathway ?? null,
+      published: false, featured: false,
+    } as any);
+    inserted++;
+  }
+  return { inserted, skipped, error: null as string | null };
+}
+
 /** Unpublish (never delete) the given post ids. Reversible duplicate cleanup. */
 export async function retirePosts(ids: number[]) {
   const db = await getDb();
