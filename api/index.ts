@@ -892,8 +892,8 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
                 // huge multi-row CASE statements that some MySQL hosts reject.
                 for (const it of toUpdate) {
                   await c.execute(
-                    "UPDATE posts SET body = ?, readingTimeMinutes = ?, updatedAt = NOW() WHERE slug = ?",
-                    [it.body, it.readingTimeMinutes, it.slug]
+                    "UPDATE posts SET body = ?, readTime = ?, updatedAt = NOW() WHERE slug = ?",
+                    [it.body, `${it.readingTimeMinutes} min read`, it.slug]
                   );
                   updated++;
                 }
