@@ -864,6 +864,45 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         await withConn(async (c) => { await c.execute("DELETE FROM posts WHERE id = ?", [delId]); });
         return trpcOk(res, { ok: true });
       }
+      case "posts.publishFullBodies": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const dryRun = !!(input?.dryRun);
+        // Load the finished article bodies from the deployed static file
+        // (served by Vercel's CDN from client/public/). Avoids bundling 3MB
+        // of content into this function or any fragile cross-dir JSON import.
+        const proto = (req.headers["x-forwarded-proto"] as string) || "https";
+        const host = req.headers.host;
+        let items: { slug: string; body: string; readingTimeMinutes: number }[];
+        try {
+          const resp = await fetch(`${proto}://${host}/admin-article-bodies.json`);
+          if (!resp.ok) return trpcErr(res, "INTERNAL_SERVER_ERROR", `could not load content (${resp.status})`, 500);
+          items = await resp.json();
+        } catch (e: any) {
+          return trpcErr(res, "INTERNAL_SERVER_ERROR", "could not load content: " + (e?.message || "fetch failed"), 500);
+        }
+        let matched = 0, updated = 0;
+        const missing: string[] = [];
+        await withConn(async (c) => {
+          const slugs = items.map((i) => i.slug);
+          const placeholders = slugs.map(() => "?").join(",");
+          const [existRows]: any = await c.execute(
+            `SELECT slug FROM posts WHERE slug IN (${placeholders})`, slugs
+          );
+          const existing = new Set(existRows.map((r: any) => r.slug));
+          for (const it of items) {
+            if (!existing.has(it.slug)) { missing.push(it.slug); continue; }
+            matched++;
+            if (!dryRun) {
+              await c.execute(
+                "UPDATE posts SET body = ?, readingTimeMinutes = ?, updatedAt = NOW() WHERE slug = ?",
+                [it.body, it.readingTimeMinutes, it.slug]
+              );
+              updated++;
+            }
+          }
+        });
+        return trpcOk(res, { total: items.length, matched, updated, missing, dryRun });
+      }
       case "books.create": {
         if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
         return await withConn(async (c) => {

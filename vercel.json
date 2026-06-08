@@ -2,6 +2,9 @@
     "buildCommand": "rm -rf node_modules/.vite .vite dist && pnpm run sitemap && pnpm run build && pnpm run prerender",
     "outputDirectory": "dist/public",
     "installCommand": "pnpm install --no-frozen-lockfile",
+    "functions": {
+        "api/index.ts": { "maxDuration": 60 }
+    },
     "headers": [
           {
                   "source": "/(.*)",
@@ -31,6 +34,6 @@
           { "source": "/rss.xml", "destination": "/api/index.ts" },
           { "source": "/feed", "destination": "/api/index.ts" },
           { "source": "/feed.xml", "destination": "/api/index.ts" },
-          { "source": "/((?!assets/|api/).*)", "destination": "/index.html" }
+          { "source": "/((?!assets/|api/|admin-article-bodies\\.json).*)", "destination": "/index.html" }
     ]
 }
