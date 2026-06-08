@@ -18,11 +18,14 @@ import { leadMagnetsRouter } from "./routers/lead-magnets";
 import { recommendationRouter } from "./recommendation-router";
 import { analyticsRouter } from "./analytics-router";
 import { emailRouter } from "./email-router";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import {
   // Files
   createFileRecord, listUserFiles, getFileById, deleteFileRecord, updateFileDescription,
   // Posts
   createPost, listPosts, listPostsForIndex, getPostById, getPostBySlug, getFeaturedPost, updatePost, deletePost,
+  bulkUpdatePostBodies,
   // Resources
   createResource, listResources, getResourceById, updateResource, deleteResource,
   // Books
@@ -182,6 +185,23 @@ export const appRouter = router({
       .mutation(async ({ input }) => {
         await deletePost(input.id);
         return { success: true };
+      }),
+
+    /**
+     * Admin: publish the bundled long-form article bodies into matching posts.
+     * Fills the empty/short published articles with their finished 1,500+ word
+     * bodies. Updates only body + read time, matched by slug. dryRun reports
+     * matches without writing. Uses the server's own DATABASE_URL — no secret
+     * to copy anywhere.
+     */
+    publishFullBodies: adminProcedure
+      .input(z.object({ dryRun: z.boolean().optional() }))
+      .mutation(async ({ input }) => {
+        // Dev/server path reads the bundled content file from disk. (Production
+        // runs through api/index.ts, which fetches the same file statically.)
+        const file = resolve(process.cwd(), "client/public/admin-article-bodies.json");
+        const items = JSON.parse(readFileSync(file, "utf8")) as { slug: string; body: string; readingTimeMinutes: number }[];
+        return bulkUpdatePostBodies(items, input.dryRun ?? false);
       }),
   }),
 

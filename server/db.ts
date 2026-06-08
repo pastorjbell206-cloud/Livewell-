@@ -185,6 +185,35 @@ export async function deletePost(id: number) {
   await db.delete(posts).where(eq(posts.id, id));
 }
 
+/**
+ * Bulk-update post bodies by slug (used by the admin "Publish article content"
+ * button). Updates ONLY body + readingTimeMinutes; never touches published
+ * status, title, taxonomy, or any other field. dryRun reports matches without
+ * writing. Returns a summary.
+ */
+export async function bulkUpdatePostBodies(
+  items: { slug: string; body: string; readingTimeMinutes: number }[],
+  dryRun = false
+) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  let matched = 0;
+  let updated = 0;
+  const missing: string[] = [];
+  for (const it of items) {
+    const rows = await db.select({ id: posts.id }).from(posts).where(eq(posts.slug, it.slug)).limit(1);
+    if (!rows.length) { missing.push(it.slug); continue; }
+    matched++;
+    if (!dryRun) {
+      await db.update(posts)
+        .set({ body: it.body, readingTimeMinutes: it.readingTimeMinutes })
+        .where(eq(posts.slug, it.slug));
+      updated++;
+    }
+  }
+  return { total: items.length, matched, updated, missing, dryRun };
+}
+
 // ─── Resources ───────────────────────────────────────────────────────
 
 export async function createResource(data: InsertResource) {

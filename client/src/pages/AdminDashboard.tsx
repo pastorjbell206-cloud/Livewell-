@@ -54,6 +54,21 @@ export default function AdminDashboard() {
           Welcome to the Livewell admin panel. Manage your content below.
         </p>
 
+        {/* Publish finished article content */}
+        <Link
+          href="/admin/publish-content"
+          className="flex items-center gap-4 p-6 mb-8 rounded-lg no-underline transition-transform hover:scale-[1.01]"
+          style={{ backgroundColor: "#1A1A1A", color: "#F5F0E6" }}
+        >
+          <Upload size={28} style={{ color: "#D4A017" }} />
+          <div>
+            <div className="font-display text-xl font-bold">Publish article content</div>
+            <div className="font-body text-sm" style={{ color: "rgba(245,240,230,0.75)" }}>
+              Fill your empty and short articles with their finished long-form versions. Safe test first, then publish.
+            </div>
+          </div>
+        </Link>
+
         {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {stats.map((stat) => {
