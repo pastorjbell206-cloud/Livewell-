@@ -16,21 +16,39 @@ export default function AdminPublishContent() {
   const publish = trpc.posts.publishFullBodies.useMutation();
   const [result, setResult] = useState<PublishResult | null>(null);
   const [mode, setMode] = useState<"test" | "publish" | null>(null);
+  const [progress, setProgress] = useState<{ processed: number; total: number } | null>(null);
 
   const run = async (dryRun: boolean) => {
     setMode(dryRun ? "test" : "publish");
+    setResult(null);
+    setProgress(null);
+    const limit = 30;
+    let offset = 0;
+    let total = 0, matched = 0, updated = 0;
+    const missing: string[] = [];
     try {
-      const r = await publish.mutateAsync({ dryRun });
-      setResult(r);
+      // Process in small batches so the server never times out; loop until done.
+      for (;;) {
+        const r = await publish.mutateAsync({ dryRun, offset, limit });
+        total = r.total;
+        matched += r.batchMatched;
+        updated += r.batchUpdated;
+        missing.push(...r.batchMissing);
+        setProgress({ processed: r.processed, total: r.total });
+        if (r.done) break;
+        offset = r.processed;
+      }
+      setResult({ total, matched, updated, missing, dryRun });
       toast.success(
         dryRun
-          ? `Test complete — ${r.matched} articles ready to fill.`
-          : `Done — ${r.updated} articles published.`
+          ? `Test complete — ${matched} articles ready to fill.`
+          : `Done — ${updated} articles published.`
       );
     } catch (e: any) {
-      toast.error(e?.message || "Something went wrong. Nothing was changed.");
+      toast.error(e?.message || "Something interrupted it — it's safe to click again to continue.");
     } finally {
       setMode(null);
+      setProgress(null);
     }
   };
 
@@ -74,6 +92,19 @@ export default function AdminPublishContent() {
             Publish all article content
           </button>
         </div>
+
+        {busy && progress && (
+          <div className="mb-8 font-body" style={{ color: "#5A5448" }}>
+            <div className="flex items-center gap-2">
+              <Loader2 size={16} className="animate-spin" />
+              {mode === "publish" ? "Publishing" : "Checking"} — {progress.processed} of {progress.total}…
+            </div>
+            <div style={{ height: 8, background: "#EDE8DC", borderRadius: 999, marginTop: 8, overflow: "hidden" }}>
+              <div style={{ height: "100%", width: `${Math.round((progress.processed / Math.max(1, progress.total)) * 100)}%`, background: "#D4A017", transition: "width .2s" }} />
+            </div>
+            <p className="text-sm mt-2">Please keep this page open until it finishes.</p>
+          </div>
+        )}
 
         {result && (
           <div

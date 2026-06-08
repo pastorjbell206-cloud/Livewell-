@@ -867,41 +867,51 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
       case "posts.publishFullBodies": {
         if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
         const dryRun = !!(input?.dryRun);
+        const offset = Math.max(0, parseInt(String(input?.offset ?? 0), 10) || 0);
+        const limit = Math.min(100, Math.max(1, parseInt(String(input?.limit ?? 30), 10) || 30));
         // Load the finished article bodies from the deployed static file
-        // (served by Vercel's CDN from client/public/). Avoids bundling 3MB
-        // of content into this function or any fragile cross-dir JSON import.
+        // (served by Vercel's CDN from client/public/). Processed in small
+        // batches (offset/limit) so each call stays well under the function
+        // time limit; the client loops until done.
         const proto = (req.headers["x-forwarded-proto"] as string) || "https";
         const host = req.headers.host;
-        let items: { slug: string; body: string; readingTimeMinutes: number }[];
+        let all: { slug: string; body: string; readingTimeMinutes: number }[];
         try {
           const resp = await fetch(`${proto}://${host}/admin-article-bodies.json`);
           if (!resp.ok) return trpcErr(res, "INTERNAL_SERVER_ERROR", `could not load content (${resp.status})`, 500);
-          items = await resp.json();
+          all = await resp.json();
         } catch (e: any) {
           return trpcErr(res, "INTERNAL_SERVER_ERROR", "could not load content: " + (e?.message || "fetch failed"), 500);
         }
-        let matched = 0, updated = 0;
-        const missing: string[] = [];
+        const slice = all.slice(offset, offset + limit);
+        let batchMatched = 0, batchUpdated = 0;
+        const batchMissing: string[] = [];
         await withConn(async (c) => {
-          const slugs = items.map((i) => i.slug);
-          const placeholders = slugs.map(() => "?").join(",");
-          const [existRows]: any = await c.execute(
-            `SELECT slug FROM posts WHERE slug IN (${placeholders})`, slugs
-          );
-          const existing = new Set(existRows.map((r: any) => r.slug));
-          for (const it of items) {
-            if (!existing.has(it.slug)) { missing.push(it.slug); continue; }
-            matched++;
-            if (!dryRun) {
-              await c.execute(
-                "UPDATE posts SET body = ?, readingTimeMinutes = ?, updatedAt = NOW() WHERE slug = ?",
-                [it.body, it.readingTimeMinutes, it.slug]
-              );
-              updated++;
+          const slugs = slice.map((i) => i.slug);
+          if (slugs.length) {
+            const placeholders = slugs.map(() => "?").join(",");
+            const [existRows]: any = await c.execute(
+              `SELECT slug FROM posts WHERE slug IN (${placeholders})`, slugs
+            );
+            const existing = new Set(existRows.map((r: any) => r.slug));
+            for (const it of slice) {
+              if (!existing.has(it.slug)) { batchMissing.push(it.slug); continue; }
+              batchMatched++;
+              if (!dryRun) {
+                await c.execute(
+                  "UPDATE posts SET body = ?, readingTimeMinutes = ?, updatedAt = NOW() WHERE slug = ?",
+                  [it.body, it.readingTimeMinutes, it.slug]
+                );
+                batchUpdated++;
+              }
             }
           }
         });
-        return trpcOk(res, { total: items.length, matched, updated, missing, dryRun });
+        const processed = Math.min(offset + limit, all.length);
+        return trpcOk(res, {
+          total: all.length, processed, done: processed >= all.length,
+          batchMatched, batchUpdated, batchMissing, dryRun,
+        });
       }
       case "books.create": {
         if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
