@@ -10,7 +10,8 @@
  */
 import { useEffect, useMemo, useState } from "react";
 import { useLocation, useParams } from "wouter";
-import { Streamdown } from "streamdown";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { ArrowLeft, Bookmark, Clock, Share2, User } from "lucide-react";
 
 import Layout from "@/components/Layout";
@@ -413,7 +414,9 @@ export default function ArticleDetail() {
             }}
           >
             {post.body ? (
-                                                        <Streamdown>{post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}</Streamdown>
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}
+              </ReactMarkdown>
             ) : (
               <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
                 This article is in preparation.
