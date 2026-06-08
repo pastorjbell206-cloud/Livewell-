@@ -901,7 +901,7 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         let dbError: string | null = null;
         if (items.length) {
           try {
-            await withPubConn(async (c) => {
+            await withConn(async (c) => {
               const slugs = items.map((i) => i.slug);
               const placeholders = slugs.map(() => "?").join(",");
               const [existRows]: any = await c.execute(

@@ -59,6 +59,9 @@ export default function AdminPublishContent() {
     // request can't stop the whole run.
     const batches: (typeof all)[] = [];
     for (let i = 0; i < all.length; i += BATCH) batches.push(all.slice(i, i + BATCH));
+    // Process last-to-first: the still-unfilled articles are at the end of the
+    // list, so doing the tail first gets them in before any late-run slowdown.
+    batches.reverse();
     let done = 0;
     let pending = batches.slice();
     try {
