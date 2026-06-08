@@ -882,16 +882,26 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
               `SELECT slug FROM posts WHERE slug IN (${placeholders})`, slugs
             );
             const existing = new Set(existRows.map((r: any) => r.slug));
-            for (const it of items) {
-              if (!existing.has(it.slug)) { missing.push(it.slug); continue; }
-              matched++;
-              if (!dryRun) {
-                await c.execute(
-                  "UPDATE posts SET body = ?, readingTimeMinutes = ?, updatedAt = NOW() WHERE slug = ?",
-                  [it.body, it.readingTimeMinutes, it.slug]
-                );
-                updated++;
-              }
+            const toUpdate = items.filter((it) => existing.has(it.slug));
+            for (const it of items) if (!existing.has(it.slug)) missing.push(it.slug);
+            matched = toUpdate.length;
+            if (!dryRun && toUpdate.length) {
+              // One UPDATE for the whole batch (a CASE per slug) instead of one
+              // query per article — far fewer round trips to the slow remote DB,
+              // so the batch finishes quickly and never times out.
+              const caseExpr = toUpdate.map(() => "WHEN ? THEN ?").join(" ");
+              const whereIn = toUpdate.map(() => "?").join(",");
+              const params: any[] = [];
+              for (const it of toUpdate) params.push(it.slug, it.body);
+              for (const it of toUpdate) params.push(it.slug, it.readingTimeMinutes);
+              for (const it of toUpdate) params.push(it.slug);
+              await c.execute(
+                `UPDATE posts SET body = CASE slug ${caseExpr} ELSE body END, ` +
+                `readingTimeMinutes = CASE slug ${caseExpr} ELSE readingTimeMinutes END, ` +
+                `updatedAt = NOW() WHERE slug IN (${whereIn})`,
+                params
+              );
+              updated = toUpdate.length;
             }
           });
         }
