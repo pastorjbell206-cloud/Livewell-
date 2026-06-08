@@ -40,38 +40,58 @@ export default function AdminPublishContent() {
     // succeeds). Idempotent, so retries are safe.
     const sendBatch = async (items: typeof all) => {
       let lastErr: any;
-      for (let attempt = 0; attempt < 4; attempt++) {
+      for (let attempt = 0; attempt < 3; attempt++) {
         try {
           const r = await publish.mutateAsync({ dryRun, items });
-          // A returned DB error (not a thrown one) — retry, then surface it.
           if ((r as any).error) throw new Error((r as any).error);
           return r;
         } catch (e: any) {
           lastErr = e;
-          await new Promise((r) => setTimeout(r, 700 * (attempt + 1)));
+          await new Promise((r) => setTimeout(r, 600 * (attempt + 1)));
         }
       }
       throw lastErr;
     };
     let matched = 0, updated = 0;
     const missing: string[] = [];
+    // Build the batches, then process them. A batch that keeps failing is set
+    // aside (not aborted) and retried in sweeps at the end, so one slow/stalled
+    // request can't stop the whole run.
+    const batches: (typeof all)[] = [];
+    for (let i = 0; i < all.length; i += BATCH) batches.push(all.slice(i, i + BATCH));
+    let done = 0;
+    let pending = batches.slice();
     try {
-      for (let i = 0; i < all.length; i += BATCH) {
-        const items = all.slice(i, i + BATCH);
-        const r = await sendBatch(items);
-        matched += r.matched;
-        updated += r.updated;
-        missing.push(...r.missing);
-        setProgress({ processed: Math.min(i + BATCH, all.length), total: all.length });
+      for (let sweep = 0; sweep < 5 && pending.length; sweep++) {
+        const stillFailing: (typeof all)[] = [];
+        for (const items of pending) {
+          try {
+            const r = await sendBatch(items);
+            matched += r.matched;
+            updated += r.updated;
+            missing.push(...r.missing);
+          } catch {
+            stillFailing.push(items);
+          }
+          done++;
+          setProgress({ processed: Math.min(done * BATCH, all.length), total: all.length });
+        }
+        pending = stillFailing;
+        if (pending.length) await new Promise((r) => setTimeout(r, 1500));
       }
       setResult({ total: all.length, matched, updated, missing, dryRun });
-      toast.success(
-        dryRun
-          ? `Test complete — ${matched} articles ready to fill.`
-          : `Done — ${updated} articles published.`
-      );
+      const stragglers = pending.reduce((n, b) => n + b.length, 0);
+      if (stragglers > 0) {
+        toast.error(`${updated} done; ${stragglers} kept stalling — click Publish once more to finish them.`);
+      } else {
+        toast.success(
+          dryRun
+            ? `Test complete — ${matched} articles ready to fill.`
+            : `Done — ${updated} articles published.`
+        );
+      }
     } catch (e: any) {
-      toast.error(e?.message || "Some batches kept failing — it's safe to click again to finish the rest.");
+      toast.error(e?.message || "Something interrupted it — it's safe to click again to continue.");
     } finally {
       setMode(null);
       setProgress(null);
