@@ -195,13 +195,23 @@ export const appRouter = router({
      * to copy anywhere.
      */
     publishFullBodies: adminProcedure
-      .input(z.object({ dryRun: z.boolean().optional() }))
+      .input(z.object({
+        dryRun: z.boolean().optional(),
+        offset: z.number().optional(),
+        limit: z.number().optional(),
+      }))
       .mutation(async ({ input }) => {
         // Dev/server path reads the bundled content file from disk. (Production
         // runs through api/index.ts, which fetches the same file statically.)
+        // Processed in batches (offset/limit) so each call stays well under the
+        // serverless time limit; the client loops until done.
         const file = resolve(process.cwd(), "client/public/admin-article-bodies.json");
         const items = JSON.parse(readFileSync(file, "utf8")) as { slug: string; body: string; readingTimeMinutes: number }[];
-        return bulkUpdatePostBodies(items, input.dryRun ?? false);
+        return bulkUpdatePostBodies(items, {
+          dryRun: input.dryRun ?? false,
+          offset: input.offset ?? 0,
+          limit: input.limit ?? 30,
+        });
       }),
   }),
 
