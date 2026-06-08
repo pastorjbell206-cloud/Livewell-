@@ -24,6 +24,7 @@ import {
   // Posts
   createPost, listPosts, listPostsForIndex, getPostById, getPostBySlug, getFeaturedPost, updatePost, deletePost,
   bulkUpdatePostBodies, listNavIndex, migrateTaxonomy, backfillSubPathways,
+  findDuplicatePosts, retirePosts,
   // Resources
   createResource, listResources, getResourceById, updateResource, deleteResource,
   // Books
@@ -142,6 +143,14 @@ export const appRouter = router({
         })),
       }))
       .mutation(async ({ input }) => backfillSubPathways(input.items)),
+
+    /** Admin: read-only report of posts that share a normalized title. */
+    findDuplicates: adminProcedure.query(async () => findDuplicatePosts()),
+
+    /** Admin: unpublish (never delete) the given post ids. */
+    retirePosts: adminProcedure
+      .input(z.object({ ids: z.array(z.number()) }))
+      .mutation(async ({ input }) => retirePosts(input.ids)),
 
     /** Admin: list all posts (including drafts) */
     listAll: adminProcedure.query(async () => listPosts(false)),

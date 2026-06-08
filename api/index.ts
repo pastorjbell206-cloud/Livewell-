@@ -1016,6 +1016,80 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         }
         return trpcOk(res, { updated, missing, error: bErr });
       }
+      case "posts.findDuplicates": {
+        // Read-only: group posts by normalized title and return groups that
+        // have more than one copy, with a suggested "keep" per group. Nothing
+        // is modified. Admin-gated because it exposes the full post inventory.
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        let groups: any[] = [];
+        let dErr: string | null = null;
+        try {
+          await withConn(async (c) => {
+            const [rows]: any = await c.execute(
+              "SELECT id, slug, title, pillar, published, featured, publishedAt, createdAt, CHAR_LENGTH(COALESCE(body,'')) AS bodyLen FROM posts"
+            );
+            const norm = (t: any) =>
+              String(t || "").toLowerCase().replace(/[‘’“”]/g, "'").replace(/[^a-z0-9]+/g, " ").trim();
+            const map: Record<string, any[]> = {};
+            for (const r of rows as any[]) {
+              const k = norm(r.title);
+              if (!k) continue;
+              (map[k] = map[k] || []).push(r);
+            }
+            groups = Object.values(map)
+              .filter((g) => g.length > 1)
+              .map((g) => {
+                // Suggested keep: published first, then longest body, then newest.
+                const sorted = [...g].sort(
+                  (a, b) =>
+                    (Number(b.published) - Number(a.published)) ||
+                    (Number(b.bodyLen) - Number(a.bodyLen)) ||
+                    (new Date(b.publishedAt || b.createdAt).getTime() -
+                      new Date(a.publishedAt || a.createdAt).getTime())
+                );
+                return {
+                  title: sorted[0].title,
+                  keepId: sorted[0].id,
+                  copies: sorted.map((r) => ({
+                    id: r.id, slug: r.slug, pillar: r.pillar ?? null,
+                    published: !!r.published, featured: !!r.featured,
+                    bodyLen: Number(r.bodyLen) || 0,
+                  })),
+                };
+              })
+              .sort((a, b) => b.copies.length - a.copies.length);
+          });
+        } catch (e: any) {
+          dErr = String(e?.sqlMessage || e?.message || e);
+          console.error("findDuplicates error:", dErr);
+        }
+        return trpcOk(res, { groups, error: dErr });
+      }
+      case "posts.retirePosts": {
+        // Unpublish (never delete) the given post ids — reversible cleanup for
+        // duplicate rows. Returns how many rows were actually changed.
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const ids: number[] = (Array.isArray(input?.ids) ? input.ids : [])
+          .map((n: any) => Number(n))
+          .filter((n: number) => Number.isFinite(n));
+        let updated = 0;
+        let rErr: string | null = null;
+        try {
+          await withConn(async (c) => {
+            for (const id of ids) {
+              const [r]: any = await c.execute(
+                "UPDATE posts SET published = false, updatedAt = NOW() WHERE id = ?",
+                [id]
+              );
+              updated += r?.affectedRows || 0;
+            }
+          });
+        } catch (e: any) {
+          rErr = String(e?.sqlMessage || e?.message || e);
+          console.error("retirePosts error:", rErr);
+        }
+        return trpcOk(res, { updated, error: rErr });
+      }
       case "books.create": {
         if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
         return await withConn(async (c) => {
