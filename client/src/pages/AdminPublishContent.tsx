@@ -22,7 +22,7 @@ export default function AdminPublishContent() {
     setMode(dryRun ? "test" : "publish");
     setResult(null);
     setProgress(null);
-    const BATCH = 10;
+    const BATCH = 25;
     let all: { slug: string; body: string; readingTimeMinutes: number }[];
     try {
       // Download the finished content once in the browser, then send small
