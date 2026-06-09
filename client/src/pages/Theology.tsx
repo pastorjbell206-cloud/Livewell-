@@ -85,6 +85,22 @@ export default function Theology() {
         </div>
       </section>
 
+      {/* FLAGSHIP TOOL */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) 0" }}>
+        <div style={wrap}>
+          <Link href="/theology/passage" style={{ ...card, borderTop: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)" }}>
+            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>The tool</div>
+            <div style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 500, color: "var(--ink)", marginBottom: "8px" }}>
+              The Passage Context Tool
+            </div>
+            <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "66ch", marginBottom: "10px" }}>
+              Enter any verse and see it back where it belongs: inside its paragraph, its book, its author's purpose, and the wider witness of Scripture. It breaks the habit of reading a verse alone, and teaches the questions a careful reader always asks.
+            </p>
+            <span style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)" }}>Open the tool →</span>
+          </Link>
+        </div>
+      </section>
+
       {/* THE PILLARS */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={wrap}>

@@ -1,0 +1,37 @@
+{
+  "romans 9": {
+    "flow": "Romans 9 opens a three-chapter section, chapters 9 to 11, where Paul wrestles with why so much of Israel has not believed. He is not starting a freestanding lecture on predestination. He is defending the faithfulness of God. Read it as the answer to a grief, the question of whether God's word has failed, and watch how it lands in chapter 11 on mercy for all.",
+    "crossRefs": ["Exodus 33:19", "Malachi 1:2-3", "Isaiah 29:16", "Romans 11:32"],
+    "spectrum": { "note": "Reformed readers hear unconditional election of individuals. Others hear God's freedom to choose the line of promise, or election to a role rather than to final salvation. The doctrine page lays out each reading side by side.", "doctrine": "soteriology", "doctrineTitle": "How Are We Saved?" }
+  },
+  "john 6": {
+    "flow": "This chapter follows the feeding of the five thousand. The bread Jesus gives points to himself as the bread of life. The hard sayings about the Father drawing people and no one coming unless granted sit inside a scene about belief and unbelief among the crowds, not inside a treatise on the order of salvation.",
+    "crossRefs": ["John 6:37", "John 6:44", "John 6:65", "John 12:32", "Isaiah 54:13"],
+    "spectrum": { "note": "Some read the drawing of the Father as an effective call that always brings a person to Christ. Others read it as a gracious enabling that can still be resisted. See the doctrine page for how each view handles it.", "doctrine": "soteriology", "doctrineTitle": "How Are We Saved?" }
+  },
+  "ephesians 2": {
+    "flow": "Paul moves from what we were, dead in sin, to what God did, made us alive by grace, to the new people he is building. Verses eight and nine, saved by grace through faith, not of works, are the hinge. The chapter ends with Jew and non-Jew made one, which is the point Paul is driving toward.",
+    "crossRefs": ["Ephesians 1:4-5", "Titus 3:5", "Romans 6:23", "Philippians 2:13"],
+    "spectrum": { "note": "All sides love this passage. The debate is narrower than it looks. Is faith itself the gift, or is salvation the gift received through faith. The doctrine page works through both readings.", "doctrine": "soteriology", "doctrineTitle": "How Are We Saved?" }
+  },
+  "romans 8": {
+    "flow": "Chapter 8 is the high point of the letter, moving from no condemnation at the start to nothing able to separate us from God's love at the end. The golden chain in verses 29 and 30, foreknew, predestined, called, justified, glorified, sits inside a passage written to comfort suffering believers, not to settle a debate.",
+    "crossRefs": ["Romans 5:1", "Romans 8:1", "John 10:28-29", "Philippians 1:6"],
+    "spectrum": { "note": "Read as assurance, every side agrees this passage is meant to steady a frightened heart. The disagreement is over whether foreknew means foresaw faith or set love upon. See the doctrine page.", "doctrine": "soteriology", "doctrineTitle": "How Are We Saved?" }
+  },
+  "matthew 23": {
+    "flow": "Jesus pronounces a series of woes on the religious leaders, then breaks into lament over Jerusalem. The cry that he longed to gather her children but they were not willing comes at the end of public confrontation, in tears, not in a lecture on the will.",
+    "crossRefs": ["Luke 13:34", "Ezekiel 18:23", "2 Peter 3:9", "Isaiah 65:2"],
+    "spectrum": { "note": "Some hear here a genuine desire of God for all to be saved, which presses hard on certain views. Others distinguish God's revealed will from his hidden purpose. The doctrine page handles the hard texts for every side.", "doctrine": "soteriology", "doctrineTitle": "How Are We Saved?" }
+  },
+  "hebrews 6": {
+    "flow": "The warning about those who fall away comes inside a call to grow up and press on to maturity. The writer is urging a tempted, drifting community forward. Whatever the warning means, it is doing pastoral work, not laying out an abstract theory of whether a believer can be lost.",
+    "crossRefs": ["Hebrews 3:14", "Hebrews 10:26-27", "John 10:28", "Hebrews 6:9"],
+    "spectrum": { "note": "Some read a real possibility of apostasy for true believers. Others read a warning about those who tasted but never truly belonged, or a hypothetical that God uses to keep his people. See the related debate on perseverance.", "doctrine": "soteriology", "doctrineTitle": "How Are We Saved?" }
+  },
+  "genesis 1": {
+    "flow": "The opening chapter is ordered and rhythmic, structured in days that move from forming to filling, ending in rest. It is making a claim about who made the world and that it is good. Notice the shape before you press it for the mechanics of how.",
+    "crossRefs": ["John 1:1-3", "Psalm 33:6", "Hebrews 11:3", "Colossians 1:16"],
+    "spectrum": { "note": "Faithful Christians read the days as ordinary days, as long ages, or as a literary framework, and they disagree about the age of the earth. This is a third-order matter where the room is wide.", "doctrine": "creation", "doctrineTitle": "Creation and Providence" }
+  }
+}

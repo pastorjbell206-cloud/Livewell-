@@ -191,9 +191,11 @@ to teach, by repetition, the questions a careful reader always asks.
 ### Data
 - `client/public/theology/bible-books.json`: per-book metadata (author,
   audience, occasion, date range, genre, one-line section outline).
-- Passage text: a public-domain translation (for example the WEB) shipped as
-  static JSON, so the tool needs no external call and stays inside the Vercel
-  function budget. Translation credit shown in the footer.
+- Passage text: the public-domain World English Bible, fetched at runtime in
+  the reader's browser from a free, no-key endpoint. The site never stores or
+  invents Scripture. If the fetch fails, every teaching panel still renders and
+  the reader is pointed to the reference to open their own Bible. Translation
+  credit is shown under the text.
 - `client/public/theology/passage-notes.json`: optional per-passage notes and
   the interpretation-spectrum links, keyed by reference. Absent keys simply
   render the structural panels without the contested-reading panel.
@@ -258,7 +260,9 @@ always labeled as a judgment held tentatively, never as settled fact.
 - [x] Hub landing with the full doctrine map
 - [x] Worked example: soteriology (Calvinism, Arminianism, Provisionism)
 - [x] Routes and the Theological Depth nav entry
-- [ ] Passage Context Tool
+- [x] Passage Context Tool (book metadata for all 66 books, genre guidance,
+      contested-passage notes, runtime WEB text fetch with fallback, surfaced
+      on the hub and in the Tools hub)
 - [ ] Remaining Pillar 1 doctrines, then Pillars 2 and 3
 - [ ] Companion interactive tools
 
