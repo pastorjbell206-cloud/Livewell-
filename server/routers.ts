@@ -163,6 +163,7 @@ export const appRouter = router({
           excerpt: z.string().nullable().optional(),
           pillar: z.string().nullable().optional(),
           subPathway: z.string().nullable().optional(),
+          series: z.boolean().optional(),
           readTime: z.string().nullable().optional(),
         })),
       }))

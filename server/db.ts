@@ -268,7 +268,7 @@ export async function findDuplicatePosts() {
 
 /** Insert essays as UNPUBLISHED posts, idempotent by slug. Returns a summary. */
 export async function createDraftPosts(
-  items: { slug: string; title: string; body: string; excerpt?: string | null; pillar?: string | null; subPathway?: string | null; readTime?: string | null }[]
+  items: { slug: string; title: string; body: string; excerpt?: string | null; pillar?: string | null; subPathway?: string | null; series?: boolean; readTime?: string | null }[]
 ) {
   const db = await getDb();
   if (!db) throw new Error("Database not available");
@@ -282,7 +282,7 @@ export async function createDraftPosts(
       title: it.title, slug: it.slug, body: it.body,
       excerpt: it.excerpt ?? null, pillar: it.pillar ?? null,
       readTime: it.readTime ?? null, subPathway: it.subPathway ?? null,
-      published: false, featured: false,
+      isSeries: !!it.series, published: false, featured: false,
     } as any);
     inserted++;
   }

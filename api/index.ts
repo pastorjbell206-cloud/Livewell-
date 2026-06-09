@@ -454,8 +454,11 @@ async function getArticle(req: VercelRequest, res: VercelResponse, slug: string)
 async function substackRss(req: VercelRequest, res: VercelResponse) {
   const CACHE_TTL = 30 * 60 * 1000;
   const fresh = /[?&]fresh=1/.test(req.url || "");
+  // full=1 includes each post's complete body (content:encoded) for the
+  // importer. It's large, so it bypasses the lightweight DB cache entirely.
+  const full = /[?&]full=1/.test(req.url || "");
   try {
-    const cached = fresh ? null : await withConn(async (c) => {
+    const cached = fresh || full ? null : await withConn(async (c) => {
       const [rows]: any = await c.execute(
         "SELECT payload, fetched_at FROM rss_cache WHERE source = 'substack' ORDER BY fetched_at DESC LIMIT 1"
       );
@@ -480,20 +483,24 @@ async function substackRss(req: VercelRequest, res: VercelResponse) {
         if (!x) return "";
         return x[1].replace(/^<!\[CDATA\[/, "").replace(/\]\]>$/, "").trim();
       };
-      items.push({
+      const item: any = {
         title: pick("title"),
         link: pick("link"),
         pubDate: pick("pubDate"),
         description: pick("description").replace(/<[^>]+>/g, "").slice(0, 400),
         guid: pick("guid"),
-      });
+      };
+      if (full) item.content = pick("content:encoded");
+      items.push(item);
     }
     const payload = { items, fetchedAt: new Date().toISOString() };
-    await withConn(async (c) => {
-      await c.execute("INSERT INTO rss_cache (source, payload) VALUES ('substack', ?)", [JSON.stringify(payload)]);
-      await c.execute("DELETE FROM rss_cache WHERE source='substack' AND id NOT IN (SELECT id FROM (SELECT id FROM rss_cache WHERE source='substack' ORDER BY fetched_at DESC LIMIT 3) t)");
-    });
-    res.setHeader("Cache-Control", "public, s-maxage=600, stale-while-revalidate=1800");
+    if (!full) {
+      await withConn(async (c) => {
+        await c.execute("INSERT INTO rss_cache (source, payload) VALUES ('substack', ?)", [JSON.stringify(payload)]);
+        await c.execute("DELETE FROM rss_cache WHERE source='substack' AND id NOT IN (SELECT id FROM (SELECT id FROM rss_cache WHERE source='substack' ORDER BY fetched_at DESC LIMIT 3) t)");
+      });
+    }
+    res.setHeader("Cache-Control", full ? "no-store" : "public, s-maxage=600, stale-while-revalidate=1800");
     json(res, 200, { ok: true, cached: false, ...payload });
   } catch (e: any) {
     json(res, 500, { ok: false, error: String(e?.message || e) });
@@ -1119,8 +1126,8 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
               // Tag taxonomy if those columns exist (post-migration); harmless otherwise.
               try {
                 await c.execute(
-                  "UPDATE posts SET subPathway = ?, isSeries = 0 WHERE slug = ?",
-                  [it.subPathway ?? null, it.slug]
+                  "UPDATE posts SET subPathway = ?, isSeries = ? WHERE slug = ?",
+                  [it.subPathway ?? null, it.series ? 1 : 0, it.slug]
                 );
               } catch { /* columns not migrated yet — safe to ignore */ }
             }
