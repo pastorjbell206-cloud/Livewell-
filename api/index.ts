@@ -632,10 +632,10 @@ async function trpcListPosts(): Promise<any[]> {
         createdAt: r.createdAt || r.publishedAt, publishedAt: r.publishedAt || r.createdAt,
       }));
     }
-    const [rows]: any = await c.execute(
+    const [arows]: any = await c.execute(
       "SELECT id, slug, title, subtitle, excerpt, topic, pillar, source, external_url, image_url, word_count, published_at, created_at FROM articles ORDER BY published_at DESC LIMIT 500"
     );
-    return (rows as any[]).map(toPostCard);
+    return (arows as any[]).map(toPostCard);
   });
 }
 
