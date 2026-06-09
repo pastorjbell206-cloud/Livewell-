@@ -128,7 +128,39 @@ export default function PropheticTopic({ config }: { config: SectionConfig }) {
         </div>
       </section>
 
-      <section style={section}>
+      {/* CAPTURE DETAIL: what it looks like, past and present, each side */}
+      {t.captureDetail && (
+        <section style={section}>
+          <div style={wrap}>
+            <Head kicker="What it looks like" title="The capture in detail, past and present" />
+            <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "66ch", marginBottom: "var(--s-4)", fontStyle: "italic" }}>
+              The same sin, named on each side with equal candor. Movements and documented record, not private accusation.
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "16px" }}>
+              {[t.captureDetail.right, t.captureDetail.left].map((s, i) => (
+                <div key={i} style={{ ...card, padding: "var(--s-4)", borderTop: "3px solid var(--mustard)" }}>
+                  <div style={{ fontFamily: "var(--F)", fontSize: "21px", fontWeight: 500, color: "var(--ink)", marginBottom: "10px" }}>{s.label}</div>
+                  <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", marginBottom: "14px" }}>{s.whatItLooksLike}</p>
+                  <div className="eyebrow" style={{ marginBottom: "4px" }}>In the past</div>
+                  <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.65, color: "var(--ink-muted)", marginBottom: "12px" }}>{s.inThePast}</p>
+                  <div className="eyebrow" style={{ marginBottom: "4px" }}>Now</div>
+                  <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.65, color: "var(--ink-muted)", marginBottom: "12px" }}>{s.now}</p>
+                  {s.named?.length > 0 && (
+                    <>
+                      <div className="eyebrow" style={{ marginBottom: "6px" }}>Named</div>
+                      <ul style={{ margin: 0, paddingLeft: "18px", fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.6, color: "var(--ink-muted)" }}>
+                        {s.named.map((n, j) => <li key={j} style={{ marginBottom: "4px" }}>{n}</li>)}
+                      </ul>
+                    </>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <section style={sectionAlt}>
         <div style={wrap}>
           <Head kicker="The cost" title="What truth costs here" />
           <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "68ch" }}>{t.theCost}</p>

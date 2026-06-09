@@ -1,0 +1,456 @@
+{
+  "intro": "This is not a list made to teach you to despise the church, or capitalism, or the left, or the right. It is a mirror. It is the discipline at the center of this whole section, the willingness to tell the truth about your own side, turned on the largest scale there is.\n\nRead it slowly. Notice the instinct to skip the column that indicts your tribe and linger on the one that indicts theirs. That instinct is the disease. Every human system on this table promised a better world, and every one of them, when it grasped for power or for utopia, spilled blood. The church is here too, named first and most plainly, because we of all people should be able to say it.",
+  "events": [
+    {
+      "year": "4th century",
+      "sortYear": 313,
+      "era": "Ancient",
+      "title": "The Constantinian Shift",
+      "category": "church",
+      "summary": "With the Edict of Milan in 313 and the favor of the emperor Constantine, a persecuted minority became a privileged church and then, under Theodosius in 380, the official faith of the Roman state. Within a few generations the church that had refused the sword learned to wield it, and pagans, heretics, and dissenters who had once shared its suffering became targets of imperial coercion it now welcomed. The marriage of cross and crown gave the church reach it had never known and a habit of force it has never fully shed.",
+      "scale": "Not a single atrocity but a structural turn whose consequences ran for sixteen centuries.",
+      "theReckoning": "When the church accepts the protection of the powerful it begins to imagine that its truth needs their sword. We have rarely turned down that offer, and we did not turn it down here."
+    },
+    {
+      "year": "772 to 804",
+      "sortYear": 772,
+      "era": "Medieval",
+      "title": "The Forced Conversion of the Saxons under Charlemagne",
+      "category": "church",
+      "summary": "During three decades of war against the Saxons, Charlemagne tied baptism to surrender and made refusal of the faith a capital crime under the Capitulatio de partibus Saxoniae. The campaign included the massacre at Verden in 782, where Frankish chronicles record the killing of some 4,500 Saxon captives. Conversion at the point of a Frankish spear was blessed by churchmen who should have known that faith cannot be conscripted.",
+      "scale": "Roughly 4,500 reportedly killed at Verden, with decades of coerced baptism across Saxony.",
+      "theReckoning": "A baptism demanded under threat of death is not a baptism. When the church lets a king do its evangelism, it forgets that the gospel it preaches was spread by martyrs, not by executioners."
+    },
+    {
+      "year": "1096 to 1099",
+      "sortYear": 1096,
+      "era": "Medieval",
+      "title": "The First Crusade and the Massacre at Jerusalem",
+      "category": "church",
+      "summary": "Summoned by Urban II at Clermont in 1095 with the promise that killing in this cause remitted sin, the First Crusade left a trail of slaughter that began in the Rhineland with massacres of Jewish communities and ended in Jerusalem in July 1099. When the city fell, crusaders killed Muslim and Jewish inhabitants in numbers that contemporary accounts describe as blood running in the streets. The same men wept with joy at the Holy Sepulchre while the bodies were still warm.",
+      "scale": "Jerusalem death toll is contested, with credible estimates ranging from several thousand to tens of thousands of inhabitants.",
+      "theReckoning": "A faith that can pray and kill in the same afternoon has confused the cross with the sword. We told ourselves God willed it, and we believed our own telling."
+    },
+    {
+      "year": "1204",
+      "sortYear": 1204,
+      "era": "Medieval",
+      "title": "The Sack of Constantinople",
+      "category": "church",
+      "summary": "The Fourth Crusade, launched to recover Jerusalem, instead turned on the greatest Christian city in the world and sacked Constantinople in April 1204. Latin Christians looted churches, desecrated the altar of Hagia Sophia, and carried off relics and treasure while killing fellow believers. The wound to relations between East and West has never fully healed, and a sitting pope only apologized for it eight centuries later.",
+      "scale": "Three days of looting that crippled the Byzantine Empire and deepened a schism still felt today.",
+      "theReckoning": "When a holy war runs out of infidels it will find heretics, and when it runs out of those it will turn on its own. The crusade meant to save Christendom plundered it instead."
+    },
+    {
+      "year": "1209 to 1229",
+      "sortYear": 1209,
+      "era": "Medieval",
+      "title": "The Albigensian Crusade",
+      "category": "church",
+      "summary": "Innocent III called a crusade against the Cathars of southern France, the first time the church turned the crusade inward against baptized Christians it judged heretical. At Beziers in 1209 the city was put to the sword, and a papal legate is reported to have said that God would know his own. The war broke the culture of Languedoc and helped birth the machinery of inquisition that would outlive it.",
+      "scale": "Tens of thousands killed across two decades, with whole towns massacred at Beziers and Marmande.",
+      "theReckoning": "Heresy is a sin against truth, but a massacre is a sin against the body of Christ. We answered error with extermination and called it defense of the faith."
+    },
+    {
+      "year": "12th to 16th century",
+      "sortYear": 1144,
+      "era": "Medieval",
+      "title": "The Persecution and Expulsion of Jews and the Blood Libel",
+      "category": "church",
+      "summary": "Across medieval Europe the church taught contempt for the Jewish people as Christ killers, and that teaching bore its predictable fruit. The blood libel, the lie that Jews murdered Christian children for their blood, began at Norwich in 1144 and spread for centuries, igniting massacres. England expelled its Jews in 1290, France repeatedly across the same era, and Spain in 1492, while ghettos, forced sermons, and pogroms became ordinary features of Christian life.",
+      "scale": "Centuries of recurring massacres, expulsions of entire communities, and a slander that killed across the continent.",
+      "theReckoning": "The contempt the church taught for the people of Jesus prepared the soil that the twentieth century would harvest. We did not light every fire, but we kept the kindling dry for a thousand years."
+    },
+    {
+      "year": "1478 onward",
+      "sortYear": 1478,
+      "era": "Early Modern",
+      "title": "The Spanish Inquisition",
+      "category": "church",
+      "summary": "Established in 1478 under the Catholic monarchs and the church, the Spanish Inquisition policed the sincerity of converts from Judaism and Islam and later other suspected heretics, using torture, secret trials, and public burnings. Recent archival scholarship has lowered older inflated figures, estimating roughly 3,000 to 5,000 executions over more than three centuries, though the wider toll of imprisonment, confiscation, and fear was vast. It made the interrogation of conscience an instrument of the state and the church together.",
+      "scale": "Around 3,000 to 5,000 executed, with tens of thousands tried, over more than three hundred years.",
+      "theReckoning": "When the church appoints itself judge of what a soul secretly believes, it builds a courtroom God never authorized. We tortured people into the words we wanted and called the confession faith."
+    },
+    {
+      "year": "1450 to 1750",
+      "sortYear": 1450,
+      "era": "Early Modern",
+      "title": "The Witch Trials of Europe and New England",
+      "category": "church",
+      "summary": "For three centuries Protestant and Catholic communities alike hunted, tried, and executed people accused of witchcraft, the great majority of them women. Theological treatises, sermons, and church courts lent the work their authority, and the panic reached the colonies at Salem in 1692. Scholars now estimate roughly 40,000 to 60,000 executions across the whole period.",
+      "scale": "Roughly 40,000 to 60,000 executed across Europe and the colonies, the large majority women.",
+      "theReckoning": "We taught people to see the devil in their neighbor, especially when the neighbor was a poor old woman with no one to defend her. The church that should have protected the vulnerable led the mob instead."
+    },
+    {
+      "year": "1492 onward",
+      "sortYear": 1492,
+      "era": "Early Modern",
+      "title": "The Conquest of the Americas Blessed by the Church",
+      "category": "church",
+      "summary": "As Spain and Portugal conquered the Americas, churchmen accompanied the conquistadors and too often blessed the violence, the forced labor of the encomienda, and the demand that native peoples submit or be subjugated. Disease, slaughter, and exploitation collapsed indigenous populations by tens of millions over the following century. A few like Bartolome de las Casas and Antonio de Montesinos protested from within, proof that the church knew better even as it profited.",
+      "scale": "Indigenous population decline across the Americas estimated in the tens of millions across the century after contact, from disease and violence combined.",
+      "theReckoning": "We sent the cross ahead of the sword and pretended the two were unrelated. The voices that cried out against it were ours too, which means we cannot claim we did not know."
+    },
+    {
+      "year": "1452 to 1493",
+      "sortYear": 1452,
+      "era": "Early Modern",
+      "title": "The Doctrine of Discovery",
+      "category": "church",
+      "summary": "In a series of papal bulls including Dum Diversas in 1452 and Inter Caetera in 1493, the papacy granted Christian monarchs the right to claim non-Christian lands and to subjugate their peoples. This doctrine of discovery became a legal foundation for centuries of colonial dispossession and was cited in courts well into the modern era. The Vatican only formally repudiated it in 2023.",
+      "scale": "A legal and theological framework that underwrote five centuries of colonial seizure of indigenous land.",
+      "theReckoning": "We wrote a theology that turned other people's homelands into our God given property. That a pope had to renounce it in our own lifetime tells us how long the church lived comfortably with the lie."
+    },
+    {
+      "year": "16th to 19th century",
+      "sortYear": 1501,
+      "era": "Early Modern",
+      "title": "The Transatlantic Slave Trade Defended from Pulpits",
+      "category": "church",
+      "summary": "Over more than three centuries the transatlantic trade carried roughly twelve and a half million enslaved Africans across the ocean, with around ten and a half million surviving the crossing. Churches and churchmen of many nations baptized the trade, owned enslaved people, and preached that bondage was God's order. The Church of England held slaves on its Codrington plantation in Barbados, branding them with the word Society.",
+      "scale": "Roughly 12.5 million Africans embarked, with about 1.8 million dying in the Middle Passage and around 10.5 million surviving the crossing.",
+      "theReckoning": "We read the Bible to enslaved people while withholding the parts about Exodus. A church that can bless a slave ship has learned to silence its own scriptures."
+    },
+    {
+      "year": "1830 to 1865",
+      "sortYear": 1830,
+      "era": "Modern",
+      "title": "The Proslavery Theology of the American South",
+      "category": "church",
+      "summary": "In the decades before the Civil War, leading Southern theologians built a careful biblical case that slavery was sanctioned by God, and major denominations split North and South over the question. Men respected for their learning, among them James Henley Thornwell and Robert Lewis Dabney, lent their full intellectual weight to the defense of human bondage. The most sophisticated theology in America was deployed to keep millions in chains.",
+      "scale": "Roughly four million people held in slavery in the United States by 1860, defended by the South's pulpits and seminaries.",
+      "theReckoning": "Sound doctrine in able hands defended an atrocity, which should frighten anyone who trusts their own theological confidence. We proved that you can be biblically literate and utterly lost at the same time."
+    },
+    {
+      "year": "1857 to 1994",
+      "sortYear": 1857,
+      "era": "Modern",
+      "title": "The Dutch Reformed Defense of Apartheid",
+      "category": "church",
+      "summary": "The Dutch Reformed Church in South Africa gave apartheid its theological covering, beginning with the 1857 decision to allow separate worship by race and culminating in a doctrine that read racial separation as the will of God. The church supplied the moral architecture for a system of legal oppression that lasted until 1994. In 1982 the World Alliance of Reformed Churches declared the theological defense of apartheid a heresy, and the church itself later confessed its guilt.",
+      "scale": "A theological justification that helped sustain decades of legalized racial oppression over millions.",
+      "theReckoning": "We dressed a sin against our neighbor in the language of God's design for the nations. That a global church had to name it heresy reminds us how easily we baptize our own prejudice."
+    },
+    {
+      "year": "1819 to 1996",
+      "sortYear": 1819,
+      "era": "Modern",
+      "title": "The Indian Residential and Boarding Schools",
+      "category": "church",
+      "summary": "In the United States, Canada, and Australia, churches ran boarding schools designed to strip indigenous children of their languages, families, and faith, often under the motto of killing the Indian to save the man. Children were taken from their parents, punished for speaking their own tongues, and subjected to neglect, abuse, and deadly conditions, with thousands dying and many buried in unmarked graves. Canada's last federally funded residential school closed in 1996, and a Truth and Reconciliation Commission later named the policy cultural genocide.",
+      "scale": "Hundreds of thousands of children passed through the schools, with thousands of documented deaths and many unmarked graves still being identified.",
+      "theReckoning": "We called the destruction of a child's family and language a mission. A church that takes children to save them has lost the gospel it claims to carry."
+    },
+    {
+      "year": "1933 to 1945",
+      "sortYear": 1933,
+      "era": "Modern",
+      "title": "The German Christian Movement and Complicity with Nazism",
+      "category": "church",
+      "summary": "The Deutsche Christen movement sought to fuse Christianity with Nazi ideology, purging the church of Jewish influence and even of the Old Testament, while much of the wider German church accommodated or stayed silent before Hitler. The Confessing Church and figures like Bonhoeffer and Niemoller resisted, but they were a minority within a body that largely went along. After the war the surviving leadership confessed at Stuttgart in 1945 that they had not resisted as they should.",
+      "scale": "The dominant Protestant body in Germany largely accommodated a regime that murdered six million Jews and millions of others.",
+      "theReckoning": "When the church loves its nation more than its Lord it will hand the cross to whoever holds power. The German church's own confession is the verdict, and we are not sure we would have done better."
+    },
+    {
+      "year": "1954 to 1968",
+      "sortYear": 1954,
+      "era": "Modern",
+      "title": "White Churches and the Civil Rights Era",
+      "category": "church",
+      "summary": "During the American civil rights movement, most white churches defended segregation, counseled patience, or kept silent while Black Christians marched and died. King's Letter from a Birmingham Jail in 1963 was written to white moderate clergy who urged him to wait, and Sunday morning remained the most segregated hour in America. The most explicitly Christian region of the country was also the one that fought hardest to keep its churches and its laws divided by race.",
+      "scale": "The overwhelming majority of white congregations across the South either defended or declined to oppose segregation.",
+      "theReckoning": "The sin here was often not the burning cross but the quiet pew that would not speak. We were the white moderate King wrote to, and we asked him to wait."
+    },
+    {
+      "year": "20th century onward",
+      "sortYear": 1950,
+      "era": "Modern",
+      "title": "The Clergy Sexual Abuse Crises and Their Cover Up",
+      "category": "church",
+      "summary": "Across Catholic, Protestant, and other denominations, clergy and church workers sexually abused children and vulnerable adults over decades, and church authorities repeatedly hid the crimes, moved offenders, and protected institutions over victims. The 2002 Boston Globe reporting, the Pennsylvania grand jury report of 2018 naming roughly 300 priests and over 1,000 identified victims, and the 2022 Guidepost report on the Southern Baptist Convention exposed the same pattern of concealment. The wound is not only the abuse but the betrayal of children by the very people charged to protect them.",
+      "scale": "Tens of thousands of credible accusations documented across denominations and decades, with the true number widely believed to be higher.",
+      "theReckoning": "An institution that protects its reputation over its children has already lost the thing it was trying to save. We covered for predators in God's name, and the cover up was a second sin laid on the first."
+    },
+    {
+      "year": "1503 to 1542",
+      "sortYear": 1503,
+      "era": "Early Modern",
+      "title": "The Encomienda System in Spanish America",
+      "category": "empire",
+      "summary": "Beginning shortly after Columbus, the Spanish crown granted colonists the labor and tribute of Indigenous peoples in exchange for a promise of protection and Christian instruction. In practice it became a regime of forced labor in fields and silver mines that the Dominican friar Bartolome de las Casas condemned as cruelty. Disease, overwork, and violence combined to collapse Indigenous populations across the Caribbean and Mesoamerica. The New Laws of 1542 sought reform but faced fierce settler resistance.",
+      "scale": "Indigenous population decline across the Americas in the century after contact is estimated by many scholars at well over half, with some regional estimates far higher, driven mainly by epidemic disease compounded by forced labor and dispossession.",
+      "theReckoning": "When the law that should have protected the weak was rewritten to serve the profit of the strong, instruction became a cover for extraction. Mishpat cannot be granted as a favor by the powerful and withdrawn at their convenience."
+    },
+    {
+      "year": "1526 to 1867",
+      "sortYear": 1526,
+      "era": "Early Modern",
+      "title": "The Transatlantic Slave Trade as an Economic Engine",
+      "category": "empire",
+      "summary": "Over more than three centuries, European traders and their partners shipped enslaved Africans across the Atlantic to feed the labor demand of New World plantations and mines. Human beings were priced, insured, and traded as cargo, with the Middle Passage killing a large share before any landfall. Sugar, tobacco, and later cotton profits flowed back to ports in Europe and the Americas and helped finance early industrial growth.",
+      "scale": "Roughly 12.5 million Africans were embarked and about 10.7 million survived the crossing, according to the Trans Atlantic Slave Trade Database. Deaths during the Middle Passage are commonly estimated at around 1.8 million, with further enormous mortality during capture and forced marches to the coast.",
+      "theReckoning": "A market that can assign a price to a person has already lost the capacity to see one. Greed unrestrained by justice will commodify whatever it can reach, and it reached as far as the human soul."
+    },
+    {
+      "year": "17th to 19th centuries",
+      "sortYear": 1640,
+      "era": "Early Modern",
+      "title": "The Atlantic Plantation Economy",
+      "category": "capitalism",
+      "summary": "The sugar islands of the Caribbean and the tobacco and cotton fields of the American mainland built a system of production that depended on enslaved labor worked to exhaustion. Caribbean sugar plantations were so lethal that planters relied on continual new arrivals to replace the dead. The wealth generated underwrote banks, insurers, and merchant houses far from the fields. This was an early model of industrial scale enterprise organized around the total ownership of workers.",
+      "scale": "Mortality on Caribbean sugar estates was severe enough that enslaved populations often did not sustain themselves without constant new importation. Tens of billions of pounds of sugar, tobacco, and cotton moved through Atlantic trade over the period.",
+      "theReckoning": "Efficiency measured only in output will treat a human life as a replaceable input. When the books balance but the graves multiply, the accounting itself is the crime."
+    },
+    {
+      "year": "1769 to 1770",
+      "sortYear": 1769,
+      "era": "Early Modern",
+      "title": "The East India Company and the Bengal Famine of 1770",
+      "category": "empire",
+      "summary": "After the East India Company gained the right to collect revenue in Bengal in 1765, it continued to extract heavy taxation even as harvests failed. When drought struck, the Company kept demanding revenue and some agents profited from grain speculation while the people starved. A chartered trading corporation wielding the powers of a government placed shareholder returns above the survival of those it ruled.",
+      "scale": "Contemporary and later estimates put the death toll at roughly one third of the population of Bengal, commonly cited as around 10 million people, though precise figures are debated.",
+      "theReckoning": "When a corporation is handed the sword of the state and answers only to its investors, the poor become a line item to be squeezed. Power without accountability to the vulnerable is famine waiting for a dry season."
+    },
+    {
+      "year": "1839 to 1860",
+      "sortYear": 1839,
+      "era": "Modern",
+      "title": "The Opium Wars and the Forced Opium Trade",
+      "category": "empire",
+      "summary": "To correct a trade imbalance, British merchants sold Indian grown opium into China on a vast scale, creating widespread addiction. When Chinese officials moved to halt the trade and destroyed confiscated opium, Britain went to war twice to keep the drug flowing and to force open Chinese ports. The treaties that followed extracted indemnities, territory, and trading rights at gunpoint.",
+      "scale": "Opium imports into China rose into the tens of thousands of chests per year, and addiction reached millions of users. The wars ended in Chinese defeat, large indemnity payments, the cession of Hong Kong, and a long period later called the century of humiliation.",
+      "theReckoning": "When profit requires a nation to be kept sick, the seller has chosen money over every life it ruins. A trade defended by warships is not commerce. It is conquest with a ledger."
+    },
+    {
+      "year": "1845 to 1852",
+      "sortYear": 1845,
+      "era": "Modern",
+      "title": "British Policy Failures in the Irish Potato Famine",
+      "category": "empire",
+      "summary": "A potato blight destroyed the staple crop of Ireland's poor, but the catastrophe that followed was shaped by policy as much as by fungus. Through the worst years, Ireland continued to export grain, cattle, and other food under the protection of property and market doctrine, while relief was kept minimal and tied to harsh conditions. Officials influenced by a strict faith in markets and by contempt for the Irish poor let starvation run its course.",
+      "scale": "Roughly 1 million people died from starvation and disease, and around 1 to 2 million emigrated, reducing Ireland's population by about a quarter within a decade.",
+      "theReckoning": "When food leaves a starving country because the market says it must, the market has become an idol that eats children. Mishpat asks who is dying while the ledger is balanced, and refuses to look away."
+    },
+    {
+      "year": "1830s onward",
+      "sortYear": 1834,
+      "era": "Modern",
+      "title": "Indentured Labor That Replaced Slavery",
+      "category": "capitalism",
+      "summary": "As Britain and other powers abolished slavery, plantation owners turned to indentured workers recruited from India, China, and the Pacific to keep the same fields and the same profits running. Bound by contracts they often could not read, transported across oceans, and held under penal labor codes, many endured conditions that critics at the time called a new system of slavery. The demand for cheap, controllable labor had outlived the formal institution that once supplied it.",
+      "scale": "Over roughly a century, more than 1.5 million Indian indentured workers alone were shipped to colonies across the Caribbean, the Indian Ocean, the Pacific, and Africa, alongside large numbers of Chinese and other laborers.",
+      "theReckoning": "Abolishing the word for a sin does not abolish the appetite behind it. When the demand for disposable labor survives, it simply finds a contract to hide inside."
+    },
+    {
+      "year": "1860 to 1900",
+      "sortYear": 1860,
+      "era": "Modern",
+      "title": "The Gilded Age Robber Barons and Widespread Child Labor",
+      "category": "capitalism",
+      "summary": "Rapid American industrialization concentrated immense fortunes in the hands of a few railroad, oil, and steel magnates while workers labored long hours for low wages in dangerous mills, mines, and factories. Children as young as five or six worked in textile mills, coal breakers, and canneries, losing fingers, lungs, and schooling. Strikes were broken by force, and the gap between owner and worker widened into a chasm.",
+      "scale": "By 1900 roughly 1.7 million children under the age of sixteen were employed in American industry and agriculture. Industrial accident rates were among the highest in the world, with thousands of railroad and mining deaths each year.",
+      "theReckoning": "Wealth that is built on the bodies of children is not prosperity. It is theft with a longer time horizon. Mishpat measures an economy by what it does to its weakest worker, not its richest owner."
+    },
+    {
+      "year": "1885 to 1908",
+      "sortYear": 1885,
+      "era": "Modern",
+      "title": "King Leopold's Exploitation of the Congo Free State",
+      "category": "empire",
+      "summary": "King Leopold the Second of Belgium held the Congo as his personal property and ran it as a private extraction enterprise for rubber and ivory. Quotas were enforced through hostage taking, mutilation, and killing, with severed hands collected as proof that bullets had not been wasted. International outcry, documented by missionaries and reformers such as those in the Congo Reform Association, eventually forced Belgium to take the colony from Leopold in 1908.",
+      "scale": "Estimates of the population decline during this period range widely, with figures often cited from several million up to around 10 million deaths from killing, starvation, disease, and falling birth rates. The exact toll remains contested among historians.",
+      "theReckoning": "When a man can own a country the way he owns a warehouse, profit becomes the only law and the human hand becomes a receipt. Greed given absolute power will count its rubber and never its dead."
+    },
+    {
+      "year": "Late 19th to mid 20th century",
+      "sortYear": 1885,
+      "era": "Modern",
+      "title": "Colonial Extraction Across Africa and Asia",
+      "category": "empire",
+      "summary": "Following the partition of Africa and the consolidation of empire across Asia, European powers organized whole territories around the cheap removal of minerals, rubber, cotton, tea, and other commodities. Forced labor, punitive taxation that drove people into wage work, and land seizure reshaped societies to serve distant markets. Famines in colonial India and elsewhere were worsened by export priorities and rigid market policy during years of drought.",
+      "scale": "Major famines in British India in the 1870s and 1890s killed in the millions, with combined estimates across the late nineteenth century reaching the tens of millions. Vast wealth in raw materials flowed outward while local manufacturing and food security were undermined.",
+      "theReckoning": "An empire that organizes a continent for someone else's profit has decided that distant shareholders matter more than nearby children. Extraction without justice is robbery dressed as development."
+    },
+    {
+      "year": "1911",
+      "sortYear": 1911,
+      "era": "Modern",
+      "title": "The Triangle Shirtwaist Factory Fire",
+      "category": "capitalism",
+      "summary": "On March 25, 1911, a fire swept through the Triangle Shirtwaist factory in New York City, where mostly young immigrant women sewed garments. Exit doors had been locked to prevent unauthorized breaks and theft, trapping workers inside, and many leaped to their deaths from upper floors. The disaster exposed how cost cutting and contempt for worker safety could turn a workplace into a tomb.",
+      "scale": "146 workers died, most of them young immigrant women and girls. The tragedy spurred a wave of fire safety, building, and labor reforms in New York and beyond.",
+      "theReckoning": "A locked door that protects inventory from workers will not protect workers from fire. When the cheapest path treats safety as waste, the bill comes due in coffins."
+    },
+    {
+      "year": "Late 20th century to present",
+      "sortYear": 1980,
+      "era": "Contemporary",
+      "title": "Modern Sweatshops and Forced Labor in Global Supply Chains",
+      "category": "capitalism",
+      "summary": "As production moved to wherever labor was cheapest, global brands sourced goods from factories where wages were low, hours were long, and safety was an afterthought. The collapse of the Rana Plaza building in Bangladesh in 2013, which the owners had been warned was unsafe, killed garment workers making clothing for Western markets. Forced labor and trafficking persist in fields, fisheries, mines, and factories that feed familiar supply chains.",
+      "scale": "The Rana Plaza collapse killed 1,134 people and injured thousands more. The International Labour Organization estimates that around 28 million people were in forced labor in recent years, including forced labor in private industry supply chains.",
+      "theReckoning": "Distance does not dissolve responsibility. When the lowest price is purchased with someone else's unsafe shift, the buyer has simply moved the suffering out of sight. Mishpat follows the supply chain all the way to the hand that sewed the seam."
+    },
+    {
+      "year": "2007 to 2009",
+      "sortYear": 2007,
+      "era": "Contemporary",
+      "title": "The Human Cost of the 2008 Financial Crisis and Predatory Lending",
+      "category": "capitalism",
+      "summary": "In the years before the crash, lenders aggressively marketed subprime mortgages with hidden costs and terms designed to fail, often targeting poor and minority neighborhoods. These loans were bundled, rated, and sold across the financial system until the housing bubble burst and the global economy nearly collapsed. Families lost homes and savings while many of the institutions that engineered the risk were rescued with public money.",
+      "scale": "Millions of American homes entered foreclosure, and U.S. household wealth fell by trillions of dollars, with losses concentrated among lower income and minority borrowers. Global unemployment rose sharply as the crisis spread.",
+      "theReckoning": "A system that privatizes the profit and socializes the ruin has inverted justice itself. When the people who designed the harm are made whole and the people who trusted them are foreclosed upon, greed has captured the rules that were meant to restrain it."
+    },
+    {
+      "year": "1915",
+      "sortYear": 1915,
+      "era": "Modern",
+      "title": "The Armenian Genocide",
+      "category": "nation",
+      "summary": "Under the cover of the First World War, the Ottoman government deported and exterminated its Armenian population, alongside Assyrian and Greek Christians. Men were killed outright while women, children, and the elderly were driven on death marches into the Syrian desert, where most died of starvation, exposure, and massacre. The ideology was a hardening Turkish nationalism that treated a Christian minority as an enemy within the body of the nation.",
+      "scale": "Most scholars estimate between 600,000 and 1.5 million Armenian deaths, with around 1 million the most widely cited figure. The total is contested and some governments still deny that genocide occurred.",
+      "theReckoning": "When a nation decides that belonging requires sameness, the stranger becomes a threat to be removed rather than a neighbor to be loved. Blood and soil is an old god, and it always asks for blood."
+    },
+    {
+      "year": "1918 to 1922",
+      "sortYear": 1918,
+      "era": "Modern",
+      "title": "The Red Terror",
+      "category": "communism",
+      "summary": "After the Bolsheviks seized power in Russia, the new secret police, the Cheka, launched a campaign of arrests, hostage-taking, and summary executions against real and imagined enemies of the revolution. Class origin alone could mark a person for death, and whole categories of people were treated as obstacles to the coming workers paradise. The terror was defended openly as a tool for building the new order.",
+      "scale": "Estimates of Cheka executions during this period range from roughly 50,000 to several hundred thousand, with the wider Civil War costing millions of lives. Figures are debated and records are incomplete.",
+      "theReckoning": "A society that believes it is birthing utopia will excuse any cruelty as the cost of the future. The revolution that promised liberation began by deciding which human beings did not deserve to live."
+    },
+    {
+      "year": "1932 to 1933",
+      "sortYear": 1932,
+      "era": "Modern",
+      "title": "Forced Collectivization and the Holodomor",
+      "category": "communism",
+      "summary": "Stalin abolished private farms and forced peasants into collective ones, seizing grain even as the countryside starved. In Ukraine the requisitions, sealed borders, and confiscation of all food produced a famine, the Holodomor, that historians widely judge to have been man-made and aimed at breaking Ukrainian resistance. Peasants who resisted were branded class enemies and deported or shot.",
+      "scale": "The Holodomor killed an estimated 3.5 to 5 million people in Ukraine, with collectivization famines across the Soviet Union claiming millions more. Many nations now recognize the Holodomor as genocide, though the precise toll and intent remain debated.",
+      "theReckoning": "A command economy that treats grain as a weapon will treat people as numbers, and starvation becomes policy. The plan demanded sacrifice, and the planners chose who would be sacrificed."
+    },
+    {
+      "year": "1918 to 1956",
+      "sortYear": 1930,
+      "era": "Modern",
+      "title": "The Gulag System",
+      "category": "communism",
+      "summary": "The Soviet state built a vast network of forced-labor camps stretching across Siberia and the Arctic, where prisoners were worked, frozen, and starved while the regime called it correction. Political prisoners, peasants, believers, and ordinary citizens swept up in quotas filled the camps. Aleksandr Solzhenitsyn gave the system its name in the conscience of the world.",
+      "scale": "Roughly 18 million people passed through the Gulag across its history, with deaths in the camps and labor settlements estimated in the millions. Exact mortality figures are still debated by historians.",
+      "theReckoning": "When the state owns the future, it owns the body, and human beings become raw material for the plan. A philosophy that begins by abolishing the soul will end by abolishing the person."
+    },
+    {
+      "year": "1936 to 1938",
+      "sortYear": 1936,
+      "era": "Modern",
+      "title": "Stalin's Great Purge",
+      "category": "communism",
+      "summary": "Stalin turned the terror inward, accusing party members, military officers, intellectuals, and ordinary citizens of being spies and wreckers. Show trials produced confessions extracted by torture, and execution quotas were sent down like industrial targets. The revolution devoured its own builders.",
+      "scale": "Historians estimate that around 700,000 to over 1 million people were executed during the Great Terror, with hundreds of thousands more dying in the camps. Some estimates of total deaths run higher and remain contested.",
+      "theReckoning": "A regime that justifies murder for the sake of paradise cannot stop, because paradise never arrives and someone must always be blamed. The utopia that needs enemies will manufacture them without end."
+    },
+    {
+      "year": "1958 to 1962",
+      "sortYear": 1958,
+      "era": "Modern",
+      "title": "The Great Leap Forward and Famine",
+      "category": "communism",
+      "summary": "Mao Zedong forced China into collective farming and backyard industry overnight, demanding impossible grain and steel quotas to overtake the West. Local officials reported fictional harvests to please the center, the state seized grain that did not exist, and the countryside collapsed into the deadliest famine in recorded history. Those who told the truth were punished as defeatists.",
+      "scale": "Scholarly estimates of famine deaths range from roughly 15 million to 45 million, with figures around 30 million commonly cited. The toll is genuinely debated and depends on contested demographic methods.",
+      "theReckoning": "When ideology overrules reality, the harvest fails and the people die while the slogans continue. No five-year plan can repeal the truth that bread must be grown before it can be shared."
+    },
+    {
+      "year": "1966 to 1976",
+      "sortYear": 1966,
+      "era": "Modern",
+      "title": "The Cultural Revolution",
+      "category": "communism",
+      "summary": "Mao mobilized the young Red Guards to purge Chinese society of old culture, religion, and supposed counter-revolutionaries, turning children against parents and students against teachers. Temples and churches were destroyed, intellectuals were humiliated and beaten, and millions were sent to the countryside for re-education. The country tore at itself in the name of ideological purity.",
+      "scale": "Estimates of deaths from violence, persecution, and suicide range from several hundred thousand to roughly 2 million, with far more imprisoned or ruined. The figures are uncertain and disputed.",
+      "theReckoning": "A movement that promises to remake human nature by force ends by setting neighbors at one another's throats. When the revolution becomes the religion, every conscience becomes a heresy to be crushed."
+    },
+    {
+      "year": "1975 to 1979",
+      "sortYear": 1975,
+      "era": "Modern",
+      "title": "The Khmer Rouge in Cambodia",
+      "category": "communism",
+      "summary": "Pol Pot and the Khmer Rouge emptied Cambodia's cities and forced the population into rural labor camps to build an agrarian communist utopia from zero. Money, religion, schools, and family were abolished, and anyone marked as educated, foreign, or disloyal was worked to death or executed in the killing fields. Wearing glasses could be a death sentence.",
+      "scale": "Around 1.5 to 2 million people died from execution, starvation, and forced labor, roughly a quarter of the population. The numbers are estimates drawn from mass graves and demographic study.",
+      "theReckoning": "The dream of starting history over from year zero requires erasing everyone who remembers the world before. Utopia by the calendar is built on a foundation of corpses."
+    },
+    {
+      "year": "20th Century",
+      "sortYear": 1920,
+      "era": "Modern",
+      "title": "The Persecution of Believers Under Communist States",
+      "category": "communism",
+      "summary": "Marxist-Leninist regimes treated religion as a rival faith to be uprooted, closing churches, seminaries, mosques, and temples and imprisoning clergy and laity who would not recant. In the Soviet Union, China, Albania, North Korea, and beyond, believers were surveilled, sent to camps, and executed, while underground congregations met at the risk of their lives. The state demanded the worship that belongs to God alone.",
+      "scale": "Tens of thousands of clergy and an unknown but large number of ordinary believers were killed across many regimes over the century, with millions more persecuted. Precise totals are impossible to fix.",
+      "theReckoning": "Every totalizing ideology eventually meets the one rival it cannot tolerate, a people who answer to a higher throne. The state that demands to be worshiped will always come for the church."
+    },
+    {
+      "year": "1915 to 1945",
+      "sortYear": 1933,
+      "era": "Modern",
+      "title": "The Holocaust",
+      "category": "nation",
+      "summary": "Nazi Germany, driven by racial nationalism and centuries of accumulated antisemitism, organized the industrial murder of Europe's Jews. Citizens were stripped of rights, ghettoized, deported, and killed in death camps built for the purpose, alongside Roma, the disabled, Slavs, and others judged unworthy of life. The machinery of a modern state was turned entirely to extermination.",
+      "scale": "Approximately six million Jews were murdered, alongside millions of other victims of Nazi persecution. These figures are among the most carefully documented atrocities in history.",
+      "theReckoning": "When a nation makes blood the measure of worth, it will eventually decide that some blood has no right to exist. The Holocaust is the verdict on every ideology that sorts human beings into the saved race and the disposable one."
+    },
+    {
+      "year": "1994",
+      "sortYear": 1994,
+      "era": "Contemporary",
+      "title": "The Rwandan Genocide",
+      "category": "nation",
+      "summary": "Over roughly a hundred days, extremists from Rwanda's Hutu majority slaughtered the Tutsi minority and moderate Hutus, often with machetes and often neighbor against neighbor. State radio dehumanized Tutsis as cockroaches and called ordinary people to the killing. The world watched and largely declined to intervene.",
+      "scale": "An estimated 500,000 to 800,000 people were killed in about a hundred days, with some estimates approaching one million. The exact toll is debated.",
+      "theReckoning": "Genocide does not require advanced weapons, only an ideology that turns a neighbor into vermin. When identity becomes a license to kill, the machete is enough."
+    },
+    {
+      "year": "1992 to 1995",
+      "sortYear": 1992,
+      "era": "Contemporary",
+      "title": "Ethnic Cleansing in the Balkans",
+      "category": "nation",
+      "summary": "As Yugoslavia broke apart, ethnic nationalism set Serbs, Croats, and Bosniaks against one another in wars marked by mass expulsion, siege, and systematic rape. At Srebrenica in 1995, Bosnian Serb forces murdered thousands of Muslim men and boys after the town had been declared a United Nations safe area. The phrase ethnic cleansing entered the world's vocabulary here.",
+      "scale": "Around 100,000 people died in the Bosnian war, including roughly 8,000 killed at Srebrenica, a massacre that international courts have ruled was genocide. Millions were displaced.",
+      "theReckoning": "When a flag becomes more sacred than a face, people who shared streets and marriages become targets overnight. Nationalism promises a pure homeland and delivers a mass grave."
+    },
+    {
+      "year": "1948 to present",
+      "sortYear": 1948,
+      "era": "Contemporary",
+      "title": "Repression in North Korea",
+      "category": "communism",
+      "summary": "North Korea remains the most closed command economy and total state on earth, ruling through a dynastic cult, mass surveillance, and a network of political prison camps. Whole families are imprisoned for the supposed crimes of a relative, citizens are starved by the failures of central control, and any hint of faith or dissent is punished severely. A United Nations inquiry found crimes against humanity without parallel in the modern world.",
+      "scale": "An estimated 80,000 to 120,000 people are held in political prison camps, and a famine in the 1990s killed several hundred thousand to over a million. Reliable figures are scarce because the state conceals nearly everything.",
+      "theReckoning": "A regime that fuses ideology, economy, and worship into one closed fist shows where the dream of the total state finally arrives. When the leader becomes a god, the people become his property."
+    },
+    {
+      "year": "2013 to present",
+      "sortYear": 2013,
+      "era": "Contemporary",
+      "title": "The Collapse of Venezuela",
+      "category": "communism",
+      "summary": "Venezuela's government pursued sweeping price controls, nationalizations, and central command of the economy, and the result was hyperinflation, the collapse of food and medicine supplies, and the unraveling of public services. Shortages and repression drove one of the largest migration crises in the hemisphere's history. This was not a death-camp regime but the slow ruin of a command economy that promised plenty and produced hunger.",
+      "scale": "More than seven million people have fled the country, and infant and adult mortality rose sharply amid shortages of food and medicine. Economic figures are extreme and contested, with inflation reaching well into the hundreds of thousands of percent.",
+      "theReckoning": "You do not need camps to immiserate a nation, only the arrogance to believe planners can command abundance into being. The promise of bread for all, enforced by the state, emptied the shelves."
+    },
+    {
+      "year": "20th Century",
+      "sortYear": 1900,
+      "era": "Modern",
+      "title": "Democratic Socialism and the Honest Distinction",
+      "category": "communism",
+      "summary": "Not every movement that called itself socialist built a hell, and honesty requires the distinction. The democratic socialist and social democratic parties of Western Europe and Scandinavia worked within elections, free speech, and the rule of law, and they did not run camps or kill their populations. The horrors recorded here belong to authoritarian Marxist-Leninist regimes that abolished freedom, not to peaceful movements that submitted to the ballot and the courts.",
+      "scale": "No mass atrocities are attributed to democratic socialist governance, though debate over the wisdom and economic outcomes of various policies continues. This entry exists to keep the timeline truthful rather than to settle that debate.",
+      "theReckoning": "The line that kills is not left versus right but the willingness to seize total power and silence dissent in the name of the cause. Tyranny is the common thread, and a movement that submits to a vote it might lose has not crossed that line."
+    }
+  ],
+  "closing": "Read the whole thing and one verdict becomes hard to avoid. It was never only the system. It was us, in every system, reaching for heaven on our own terms and building a hell for someone weaker.\n\nNo nation is the new Israel. No economy is the kingdom of God. No party carries the future on its back, and the church itself, for all its glory, is not yet the kingdom either. Each one on this table believed, for a while, that it was.\n\nThe cross stands over every column here, judging the church that wielded it as a sword and the empires and ideologies that thought they had outgrown it. That is the strange hope hidden in this grim accounting. The only one in all of history whose hands were truly clean let them be nailed open, for the people on both sides of every line."
+}
