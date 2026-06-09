@@ -62,6 +62,10 @@ const TheologyGlossary = lazy(() => import("./pages/TheologyGlossary"));
 const TheologyCreeds = lazy(() => import("./pages/TheologyCreeds"));
 const TheologyHermeneutics = lazy(() => import("./pages/TheologyHermeneutics"));
 const TheologyDiagnostic = lazy(() => import("./pages/TheologyDiagnostic"));
+const TheologyQuestions = lazy(() => import("./pages/TheologyQuestions"));
+const TheologyTraditions = lazy(() => import("./pages/TheologyTraditions"));
+const TheologySearch = lazy(() => import("./pages/TheologySearch"));
+const TheologyPaths = lazy(() => import("./pages/TheologyPaths"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
 const SermonOutline = lazy(() => import("./pages/tools/SermonOutline"));
@@ -155,6 +159,10 @@ function Router() {
         <Route path="/theology/creeds" component={TheologyCreeds} />
         <Route path="/theology/hermeneutics" component={TheologyHermeneutics} />
         <Route path="/theology/which-view" component={TheologyDiagnostic} />
+        <Route path="/theology/questions" component={TheologyQuestions} />
+        <Route path="/theology/traditions" component={TheologyTraditions} />
+        <Route path="/theology/search" component={TheologySearch} />
+        <Route path="/theology/paths" component={TheologyPaths} />
         <Route path="/theology/how-to-use" component={TheologyMethodology} />
         <Route path="/theology/doctrine/:slug" component={TheologyDoctrine} />
         <Route path="/theology" component={Theology} />

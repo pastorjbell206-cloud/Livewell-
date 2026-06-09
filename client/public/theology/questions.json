@@ -1,0 +1,447 @@
+{
+  "questions": [
+    {
+      "id": "what-is-the-gospel",
+      "question": "What is the gospel, in plain words?",
+      "category": "Salvation and the Christian life",
+      "shortAnswer": "The gospel is the announcement that God has acted to rescue people who could not rescue themselves, through the life, death, and resurrection of Jesus. It is news before it is advice.",
+      "answer": "The word gospel means good news. Not good advice, not a set of rules to try harder at, but news about something that has already happened. The Christian claim is that the God who made the world entered it as a man named Jesus, lived the life we failed to live, died the death our sin earned, and rose again, breaking the power of death itself.\n\nThat last part matters. The gospel is not mainly about how to be a better person. It is about what God has done for people who, left to themselves, could not get back to him. You are loved before you are good. You are accepted on the strength of what Jesus did, not on the strength of your performance.\n\nThe right response to news is not effort first. It is trust. You hear what God has done, you stop trying to save yourself, and you put your weight on Jesus the way you put your weight on a chair you trust to hold you.\n\nThat is the whole thing in one sentence. God came to get us. The rest of the Christian life grows out of that root.",
+      "whereChristiansDiffer": "",
+      "doctrine": "soteriology",
+      "doctrineTitle": "How Are We Saved?",
+      "passages": [
+        "1 Corinthians 15:3-4",
+        "John 3:16",
+        "Romans 5:8",
+        "Ephesians 2:8-9"
+      ]
+    },
+    {
+      "id": "lose-salvation",
+      "question": "Can I lose my salvation?",
+      "category": "Salvation and the Christian life",
+      "shortAnswer": "Faithful Christians genuinely disagree on this. Some hold that a true believer is kept secure by God forever, and others hold that a person can finally walk away from faith.",
+      "answer": "This is one of the questions where sincere, Bible-loving Christians land in different places, and it is worth saying that plainly rather than pretending the answer is obvious.\n\nOne stream, often called Reformed or Calvinist, points to passages where Jesus says no one can snatch his sheep out of his hand, and where Paul says God will finish the work he began. On this reading, if you are truly saved, God will keep you to the end. The people who seem to fall away were never finally his.\n\nThe other stream, often Arminian or Wesleyan, points to the many warnings in Scripture against falling away, and argues that love must be free, which means a person can in the end refuse the God who never stops reaching. On this reading, salvation can be forfeited by a settled turning away, though not lost by a single failure or a season of doubt.\n\nHere is what both sides agree on, and it is most of what you need. God is faithful. He does not let go casually. Ordinary sin, real doubt, and hard seasons do not undo a life turned toward Christ. If you are worried you have lost your salvation, that worry is itself a sign of a heart still turned toward him. Bring it to him and keep walking.",
+      "whereChristiansDiffer": "Reformed Christians hold to the perseverance of the saints, that the truly saved are kept secure forever, while Arminian and Wesleyan Christians hold that a person can finally and freely turn away from faith.",
+      "doctrine": "soteriology",
+      "doctrineTitle": "How Are We Saved?",
+      "passages": [
+        "John 10:28-29",
+        "Philippians 1:6",
+        "Hebrews 6:4-6",
+        "Romans 8:38-39"
+      ]
+    },
+    {
+      "id": "know-im-saved",
+      "question": "How can I know I am really saved?",
+      "category": "Salvation and the Christian life",
+      "shortAnswer": "Assurance rests mainly on what Christ has done and promised, not on the temperature of your feelings, though a changing life and an inward witness can confirm it over time.",
+      "answer": "A lot of honest people get stuck here, lying awake wondering whether they really meant it, whether they believe enough, whether it took. If that is you, you are in good company, and the New Testament writers knew that ache.\n\nThe first place to look is not inward but outward, to the promise. Jesus said that whoever comes to him he will never cast out. Your assurance rests on his faithfulness to keep his word, not on your skill at producing the right emotion. Feelings rise and fall. The promise does not.\n\nAlongside the promise, the Bible names other signs that grow quietly over time. A new hunger for God. A growing hatred of your own sin. A love for other believers. None of these is perfect in anyone, and you should not grade yourself harshly. They are confirmations, not entrance exams.\n\nSo if you have turned from going your own way and put your trust in Jesus, you are his, even on the days it does not feel like it. Doubt is not the opposite of faith. Walking away is. Keep coming back to the promise.",
+      "whereChristiansDiffer": "Christians differ in emphasis, with some grounding assurance chiefly in Christ's objective promise and others looking also to the inward witness of the Spirit and the evidence of a changed life.",
+      "doctrine": "soteriology",
+      "doctrineTitle": "How Are We Saved?",
+      "passages": [
+        "John 6:37",
+        "1 John 5:13",
+        "Romans 8:16",
+        "2 Corinthians 13:5"
+      ]
+    },
+    {
+      "id": "good-enough",
+      "question": "Do I have to be good enough for God to accept me?",
+      "category": "Salvation and the Christian life",
+      "shortAnswer": "No. The heart of the Christian message is that God accepts you on the basis of Christ's goodness, not yours, and the goodness then grows out of being accepted.",
+      "answer": "This question carries a lot of pain, because most of us have spent our lives being measured. We assume God works the same way, keeping a ledger, waiting for us to earn our place. The gospel says the opposite, and it is harder to believe precisely because it is so different from everything else.\n\nIf you had to be good enough, no one would make it. The Bible is honest that every person falls short, the respectable and the wreck alike. That is not meant to crush you. It is meant to take the impossible weight off your shoulders, because the standard was never going to be met by your effort.\n\nSo God accepts you on the strength of what Jesus did, received by trust, not by your track record. This is the old word justification, which simply means that God declares you right with him as a gift, before you have cleaned yourself up.\n\nThe goodness still comes, but it comes second, as a response, not a price. You do not get good to be loved. You are loved, and then you slowly become good. Get the order wrong and you will be exhausted. Get it right and you can finally breathe.",
+      "whereChristiansDiffer": "Protestants and Catholics frame the relationship between faith and works differently, yet both deny that you earn God's love and both affirm that genuine faith bears fruit.",
+      "doctrine": "soteriology",
+      "doctrineTitle": "How Are We Saved?",
+      "passages": [
+        "Romans 3:23-24",
+        "Titus 3:5",
+        "Ephesians 2:8-10",
+        "Luke 18:13-14"
+      ]
+    },
+    {
+      "id": "go-to-church",
+      "question": "Do I really have to go to church?",
+      "category": "Salvation and the Christian life",
+      "shortAnswer": "You are not saved by attendance, but the Christian life was never meant to be lived alone, and gathering with other believers is one of the chief means God uses to hold and grow you.",
+      "answer": "Plenty of people who love God carry real wounds from church, so this question often is not lazy. It is honest, and sometimes it is grief. Take that seriously before you take the answer.\n\nGoing to church does not earn your standing with God. You are accepted in Christ whether or not you show up on a given Sunday. So in that narrow sense, no, your salvation does not hang on attendance.\n\nAnd yet the New Testament never imagines a solitary Christian. From the start, to belong to Christ was to belong to his people, a body where each part needs the others. You were made to be known, corrected, carried, and fed in a way that is nearly impossible alone, and the church, for all its failures, is where that ordinarily happens. The instruction not to neglect meeting together is not about filling seats. It is about not trying to survive a hard road by yourself.\n\nSo the better question is not whether you have to, but whether you will let yourself be helped. Find a community that handles Scripture honestly and treats people like people. Go not to be inspected, but to belong.",
+      "whereChristiansDiffer": "Christians differ on church government and exactly what a healthy congregation looks like, but across traditions they agree that belonging to a local body is normal and good for the believer, not optional decoration.",
+      "doctrine": "church",
+      "doctrineTitle": "What Is the Church?",
+      "passages": [
+        "Hebrews 10:24-25",
+        "1 Corinthians 12:12-27",
+        "Acts 2:42",
+        "Ephesians 4:15-16"
+      ]
+    },
+    {
+      "id": "why-pray",
+      "question": "Why pray if God already knows everything?",
+      "category": "Salvation and the Christian life",
+      "shortAnswer": "Prayer is less about informing God and more about being with him, and the Bible teaches that God genuinely chooses to work through the prayers of his people.",
+      "answer": "It is a fair question, and it usually hides a deeper one. If God already knows what I need, and already plans what he will do, what is the point of asking. Behind that is often a picture of prayer as sending information to a distant office.\n\nStart with the relationship. You do not talk with someone you love only to deliver facts they lack. You talk to be with them. Jesus called God Father and taught his followers to do the same, and a child does not stop speaking to a father just because the father already understands. Much of prayer is simply presence, gratitude, and honesty, including the honesty of complaint.\n\nThen there is the part that surprises people. Scripture repeatedly says that God acts in response to prayer, that we have not because we ask not, that the prayers of ordinary people matter to what happens. God, in his freedom, has chosen to weave our asking into the way he works. He did not need to. He did.\n\nSo pray plainly. Tell him what you want. Thank him. Sit in silence. You are not updating a database. You are spending time with the One who made you and chose to listen.",
+      "whereChristiansDiffer": "Christians hold differing accounts of how prayer and God's sovereign plan fit together, yet all the major streams affirm both that God knows all things and that he truly invites and responds to prayer.",
+      "doctrine": "god-and-trinity",
+      "doctrineTitle": "Who Is God? The Trinity",
+      "passages": [
+        "Matthew 6:7-9",
+        "Philippians 4:6-7",
+        "James 4:2",
+        "1 John 5:14-15"
+      ]
+    },
+    {
+      "id": "disagree-charitably",
+      "question": "How should Christians treat people who disagree with them?",
+      "category": "Salvation and the Christian life",
+      "shortAnswer": "With honesty about the disagreement and unmistakable love toward the person, holding conviction and kindness together rather than trading one for the other.",
+      "answer": "The temptation runs in two directions. One is to win at any cost, treating the person on the other side as an enemy to be beaten. The other is to keep the peace by pretending nothing is at stake. Jesus refused both. He was full of grace and full of truth at once, and he did not split the difference.\n\nStart with the dignity of the other person. Whoever disagrees with you, however sharply, is someone made in the image of God and someone Christ died for. That does not vanish when they are wrong. Paul tells us to speak the truth, and in the same breath to do it in love, because truth delivered as a weapon stops being a witness.\n\nThis includes disagreement among Christians. On the central things, the church should be clear. On the many secondary things, where godly believers read the same Bible and reach different conclusions, the older wisdom holds. Unity in essentials, freedom in non-essentials, and in all things love.\n\nThe hardest test is the person who will not extend you the same grace. The Christian standard does not wait for the other side to earn it. You answer with patience and respect first, not because they deserve it, but because that is the One you follow. People will know whose you are less by your arguments than by how you treat the people you argue with.",
+      "whereChristiansDiffer": "Christians draw the line differently between essential matters worth dividing over and secondary matters that call for forbearance, which is one reason humility about your own placement of that line is itself part of charity.",
+      "doctrine": "church",
+      "doctrineTitle": "What Is the Church?",
+      "passages": [
+        "Ephesians 4:15",
+        "Colossians 4:6",
+        "1 Peter 3:15-16",
+        "John 13:34-35"
+      ]
+    },
+    {
+      "id": "why-suffering",
+      "question": "Why does God allow suffering and evil?",
+      "category": "Suffering, evil, and death",
+      "shortAnswer": "The Bible never treats suffering as a tidy problem to be solved, and neither will we. It refuses easy explanation and instead points to a God who entered the suffering himself rather than explaining it from a distance.",
+      "answer": "The honest place to begin is that Scripture does not give us a formula. It gives us Job, who demanded an answer and was given a whirlwind and the presence of God instead of a reason. If you came here wanting the equation that makes your pain add up, the Bible withholds it on purpose. That withholding is not cruelty. It is mercy that refuses to hand you a sentence small enough to insult what you have lost.\n\nWhat Christians have said for centuries is that God permits evil without authoring it, and that he can bring good out of what he never approved. A world with real freedom and real love is also a world where both can be broken, and they have been, by us and against us. That answers something. It does not answer everything, and any pastor who tells you it does is selling you comfort without cost.\n\nThe deepest Christian answer is not a theory but a person. God did not stay above the wreckage. He came into it, was betrayed in it, and died inside it. The cross does not explain your suffering. It tells you that God is not a stranger to it, and that the same God who let his own Son go down into the dark went down with him.\n\nYou are allowed to be angry about this. The Psalms are full of people who were, and God kept their words in his book.",
+      "whereChristiansDiffer": "Christians differ on how much God ordains versus merely permits, with some emphasizing his sovereign purpose in all things and others emphasizing human and demonic freedom as the source of evil. Both hold that God is good and that evil is real.",
+      "doctrine": "creation",
+      "doctrineTitle": "Creation and Providence",
+      "passages": [
+        "Job 38 to 42",
+        "Romans 8:18 to 28",
+        "Genesis 50:20",
+        "Psalm 13"
+      ]
+    },
+    {
+      "id": "bad-things-good-people",
+      "question": "Why do bad things happen to good people?",
+      "category": "Suffering, evil, and death",
+      "shortAnswer": "Jesus directly rejected the idea that suffering measures a person's goodness. The tower that fell and the lives it took proved nothing about the ones who died, and he said so plainly.",
+      "answer": "The question carries an old and painful assumption, that pain is the wage of being bad and safety is the reward for being good. Almost every culture has believed some version of this, and the book of Job exists mainly to take it apart. Job's friends insisted his suffering proved his guilt. God said his friends were wrong and Job was right to refuse their math.\n\nJesus was asked this directly. People wanted to know whether some Galileans died because they were worse sinners. He said no, then turned the question back on the living. Suffering is not a scoreboard. It falls on the faithful and the faithless, the kind and the cruel, the careful and the reckless, because we live in a world that is genuinely broken and not yet healed.\n\nThere is also a harder truth underneath the question. By the Bible's own account none of us is simply good in the way the question assumes. That is not meant to add guilt to grief. It is meant to take away the cruelest part of the lie, the part that whispers your suffering is your fault, that you earned this. You did not earn this.\n\nWhat the faith offers is not an explanation for why it landed on you. It offers a God who counts the suffering of the innocent as real and promises that it will be answered, not ignored.",
+      "whereChristiansDiffer": "Christians differ on how to read suffering in a believer's life, with some seeing specific divine discipline or formation in it and others seeing mostly the random fallout of a fallen world. Both reject the claim that suffering proves a person deserved it.",
+      "doctrine": "sin",
+      "doctrineTitle": "Sin and the Fall",
+      "passages": [
+        "Luke 13:1 to 5",
+        "Job 1 to 2",
+        "Matthew 5:45",
+        "Ecclesiastes 9:11"
+      ]
+    },
+    {
+      "id": "god-hidden",
+      "question": "Why does God feel so silent when I need him?",
+      "category": "Suffering, evil, and death",
+      "shortAnswer": "The silence of God is one of the most common experiences in the Bible, not one of the rarest. The people closest to God in Scripture are often the ones crying into what feels like an empty sky.",
+      "answer": "If God feels silent, you are in older and better company than you know. David asks how long God will hide his face. The book of Lamentations describes prayers that seem to bounce off the ceiling. Even Jesus, on the cross, cried out asking why God had forsaken him. The faith does not treat this experience as a failure of belief. It treats it as part of the life of belief.\n\nSometimes the silence has a reason we can name later, and sometimes it does not. Be careful of anyone who rushes to fill it with explanations, because often the kindest and truest thing is to say we do not know why he feels far right now. What Scripture insists on is that the felt absence of God and the real absence of God are not the same thing. Jesus quoted a Psalm of abandonment, and that Psalm ends in rescue.\n\nThere is a strange mercy in the fact that the Bible records these cries instead of editing them out. It means God is not offended by them. It means the prayer that says where are you is still a prayer, and it is heard even when it does not feel heard.\n\nIf you can pray nothing else right now, pray the words of the man who said he believed and asked God to help his unbelief. That sentence has carried a great many people through the silence.",
+      "whereChristiansDiffer": "Christians differ on whether seasons of God's felt absence are mainly a refining work he intends or simply the ordinary weather of faith in a broken world. Both affirm that God remains present even when he cannot be felt.",
+      "doctrine": "god-and-trinity",
+      "doctrineTitle": "Who Is God? The Trinity",
+      "passages": [
+        "Psalm 22",
+        "Psalm 13",
+        "Lamentations 3:1 to 26",
+        "Mark 9:24"
+      ]
+    },
+    {
+      "id": "loving-god-hell",
+      "question": "How can a loving God send people to hell?",
+      "category": "Suffering, evil, and death",
+      "shortAnswer": "This is one of the heaviest questions a person can ask, and it deserves more than a slogan. Christians have wrestled hard with it and do not all land in the same place.",
+      "answer": "Start with what the question gets right. A God who shrugged at evil, who let cruelty and abuse and the crushing of the weak go unanswered forever, would not be loving. He would be indifferent. The same justice that makes us ache for the world to be set right is the justice that stands behind the Bible's language of judgment. A love that never says no to evil is not love.\n\nMany Christians also stress that hell is not God hunting people down. C. S. Lewis put it that the doors of hell are locked from the inside, that God honors, terribly, the human choice to live without him. Others hold that the language is more about God's direct judgment than human choice. The faith has always held both that God takes no pleasure in the death of the wicked and that he does not force himself on those who refuse him.\n\nWhat Scripture does not let us do is be glib about this in either direction. We are not permitted to enjoy the idea of anyone's ruin, and we are not permitted to pretend the warnings are not there. Jesus, the most loving figure in human history, spoke of judgment more than anyone in the Bible. That should make us slow and serious, not certain and casual.\n\nIf you are asking this because you fear for someone you love, hold onto this. The God who judges is also the God who went to a cross to make a way out, and his mercy runs wider and deeper than ours.",
+      "whereChristiansDiffer": "Faithful Christians hold different views on the nature and duration of final judgment, including eternal conscious torment, conditional immortality or annihilationism in which the lost finally cease to be, and a wider hope that God's mercy may reach further than we can see. Scripture is taken seriously by all three, and none should be declared the obvious reading.",
+      "doctrine": "last-things",
+      "doctrineTitle": "How Does It End?",
+      "passages": [
+        "Matthew 25:31 to 46",
+        "2 Peter 3:9",
+        "Luke 15:11 to 32",
+        "Revelation 21:1 to 8"
+      ]
+    },
+    {
+      "id": "hell-eternal",
+      "question": "Is hell really eternal?",
+      "category": "Suffering, evil, and death",
+      "shortAnswer": "This is a genuine question within historic Christianity, not a settled one, and honest believers read the same passages and reach different conclusions. We will lay out the main positions fairly rather than pretend there is only one.",
+      "answer": "The traditional view, held by most Christians through history, is eternal conscious torment, that the final separation from God is conscious and unending. Its defenders point to the language of eternal punishment and unquenchable fire, and to the weight Jesus himself gives these warnings.\n\nA second view, often called conditional immortality or annihilationism, holds that immortality is a gift God gives the saved and that the finally unrepentant come to an end rather than suffering forever. Its defenders point to the Bible's language of destruction, perishing, and death, and argue that only God is inherently immortal. This view has a long minority history and serious modern defenders.\n\nA third stream holds a wider hope, that God's mercy may finally reach more than we expect, while still taking judgment seriously. Most who hold this offer it as hope rather than certainty, careful not to empty the warnings of their force.\n\nWhat unites faithful Christians across these views is more important than what divides them. All agree that judgment is real, that God is just and merciful, that no one is saved by their own goodness, and that the cross is God's answer to the problem the question raises. Where you land should be held with humility, because better people than us have stood on each side.",
+      "whereChristiansDiffer": "This question is itself a place of genuine difference, between eternal conscious torment, conditional immortality or annihilationism, and a wider hope. The doctrine of last things is where the church has worked through these readings, and none should be presented as plainly obvious.",
+      "doctrine": "last-things",
+      "doctrineTitle": "How Does It End?",
+      "passages": [
+        "Matthew 25:46",
+        "2 Thessalonians 1:6 to 9",
+        "John 3:16",
+        "Revelation 20:11 to 15"
+      ]
+    },
+    {
+      "id": "what-happens-when-we-die",
+      "question": "What happens to us when we die?",
+      "category": "Suffering, evil, and death",
+      "shortAnswer": "The Christian hope is not mainly about a soul drifting off to a distant heaven. It is about resurrection, the promise that God will one day raise and restore the whole person, body included.",
+      "answer": "Many people assume the Christian answer is that we become spirits in the sky. The Bible's deepest hope is larger and stranger than that. The center of Christian teaching is resurrection, that death is real and grievous and not the end, and that God will raise the dead and make a new creation, healed and physical and good. Death is named as an enemy, not a friend, which means your grief is not a lack of faith.\n\nAbout the time between death and that final resurrection, Scripture says less, and Christians fill that quiet differently. Jesus told the man dying beside him that he would be with him in paradise that very day, which has given many believers confidence that those who die in Christ are at once present with him. The picture is one of rest and nearness, with the fullness still to come.\n\nIf you have lost someone, hold the two halves of this together. The faith does not ask you to pretend death is gentle. It calls death an enemy and weeps at the grave, as Jesus did at his friend's tomb before he raised him. And then it dares to say the enemy is already defeated and its defeat will one day be complete.\n\nThe Christian word for the dead in Christ is not gone. It is asleep, awaiting a morning.",
+      "whereChristiansDiffer": "Christians differ on the intermediate state, with most holding that believers are consciously present with Christ between death and resurrection and some holding a view of soul sleep until the resurrection. All hold the bodily resurrection as the final hope.",
+      "doctrine": "last-things",
+      "doctrineTitle": "How Does It End?",
+      "passages": [
+        "1 Corinthians 15:12 to 26",
+        "Luke 23:43",
+        "John 11:1 to 44",
+        "1 Thessalonians 4:13 to 18"
+      ]
+    },
+    {
+      "id": "unanswered-prayer",
+      "question": "Why didn't God answer my prayer?",
+      "category": "Suffering, evil, and death",
+      "shortAnswer": "Sometimes the most faithful prayer, prayed by the most faithful person, still gets a no, and the Bible does not hide this from us. Jesus himself asked for a cup to pass and it did not.",
+      "answer": "It helps to name how much this hurts before reaching for any reason. You asked for healing, for a marriage, for a child, for a life, and the answer did not come, or came as no. The faith does not tell you to feel fine about that. Paul asked three times for a thorn to be removed and it stayed. Jesus, in the garden, asked his Father to take the cup, and the cup came anyway.\n\nSo the New Testament's own heroes prayed prayers that were not granted as asked, which means an unanswered prayer is not proof that God is absent or that you prayed wrong. Sometimes the answer is no, and the reason is hidden from us in this life. Sometimes it is not yet. Sometimes, in ways we only see much later, the thing we begged for would have cost us more than we knew. And sometimes we simply do not get to know, and the faith does not pretend otherwise.\n\nWhat it refuses is the cruel teaching that enough faith always gets the result. That teaching turns God into a machine and turns your grief into your failure. Jesus prayed with perfect faith and still drank the cup. Your unanswered prayer puts you beside him, not outside the family.\n\nKeep praying anyway, even the angry prayers, even the ones that feel like talking to a closed door. The Bible is full of them, and they were heard.",
+      "whereChristiansDiffer": "Christians differ on how directly to expect God to intervene in response to prayer, with some emphasizing expectant prayer for healing and provision and others emphasizing trust in God's hidden purpose when prayers go unanswered. Both affirm that God hears and that faith does not guarantee the outcome we ask for.",
+      "doctrine": "creation",
+      "doctrineTitle": "Creation and Providence",
+      "passages": [
+        "2 Corinthians 12:7 to 10",
+        "Matthew 26:36 to 44",
+        "James 4:1 to 3",
+        "Romans 8:26 to 28"
+      ]
+    },
+    {
+      "id": "bible-reliable",
+      "question": "Can I actually trust the Bible?",
+      "category": "The Bible and science",
+      "shortAnswer": "Trusting the Bible is reasonable, not blind. The texts we have are remarkably well preserved, written close to the events they describe, and willing to record things no one inventing a religion would invent.",
+      "answer": "Start with the honest version of the question. You are not asking whether every word is easy. You are asking whether the book is reliable enough to build a life on. That is a fair thing to ask before you trust anything.\n\nThe New Testament survives in thousands of early manuscript copies, far more than any other ancient writing, and they agree to a degree that lets scholars reconstruct the text with confidence. The places where copies differ are mostly spelling and word order, and none of them put any major Christian claim in doubt. The Gospels were written within the lifetime of people who were there, people who could have called the bluff.\n\nThere is also the strange honesty of the thing. The first witnesses to the resurrection are women, in a culture that did not count female testimony in court. The disciples come off as slow, fearful, and proud. People who are fabricating a hero do not write themselves as the fools.\n\nNone of this forces faith. Evidence rarely does that on its own. But it clears the ground so that trust is not a leap into the dark. It is a step toward something that has stood under a great deal of weight.",
+      "whereChristiansDiffer": "Christians hold differing views on exactly how to describe the Bible as inspired, from strict inerrancy to a focus on its trustworthiness in all it teaches, while sharing the conviction that it is God's reliable word.",
+      "doctrine": "scripture",
+      "doctrineTitle": "What Is the Bible, and Can We Trust It?",
+      "passages": [
+        "2 Timothy 3:16-17",
+        "Luke 1:1-4",
+        "2 Peter 1:16-21"
+      ]
+    },
+    {
+      "id": "four-gospels-contradict",
+      "question": "Why are there four Gospels, and do they contradict each other?",
+      "category": "The Bible and science",
+      "shortAnswer": "There are four accounts because four witnesses tell one story from different angles, and the differences between them look like real testimony rather than a rehearsed script.",
+      "answer": "If four people described the same week and matched word for word, you would suspect they had agreed on a story beforehand. Honest witnesses differ in detail because they stood in different places and remembered what struck them. That is what the four Gospels look like.\n\nThe differences are real, and it helps to name them honestly. The accounts vary in the order of some events, in how many angels stood at the tomb, in the exact wording of a saying. These are the kinds of variation you find in any cluster of true reports of the same event. Notice that they never disagree on what matters. Jesus lived, taught, was crucified, and rose.\n\nThe four exist because each writer aimed at different readers. Matthew writes to show Jesus as the promised king of Israel. Mark moves fast and plain. Luke writes as a careful historian for an outsider. John steps back and tells you who Jesus is underneath it all. One portrait would have flattened him.\n\nSo the four are not a problem to solve. They are four witnesses in the same courtroom, and the small differences are part of why their agreement on the center carries weight.",
+      "whereChristiansDiffer": "Christians differ on how to harmonize particular details, such as the order of events or the exact wording of sayings, while agreeing the four accounts give one coherent witness to Jesus.",
+      "doctrine": "christology",
+      "doctrineTitle": "Who Is Jesus?",
+      "passages": [
+        "John 20:30-31",
+        "Matthew 1:1",
+        "Mark 1:1",
+        "Luke 1:1-4"
+      ]
+    },
+    {
+      "id": "old-testament-god",
+      "question": "Is the God of the Old Testament a different, angry God?",
+      "category": "The Bible and science",
+      "shortAnswer": "It is the same God across both Testaments, and the Old Testament shows that God to be patient and merciful far more often than wrathful. The contrast people feel is real, but it is not a change in character.",
+      "answer": "The worry is old. A man named Marcion raised it in the second century and argued for two Gods, a harsh one in the old books and a kind one in the new. The church rejected him, and for good reason. The God who judges in the Old Testament is the same God who weeps over a city in the New.\n\nRead the Old Testament slowly and the picture that forms is mostly patience. God describes himself to Moses as slow to anger and abounding in steadfast love. The judgments that trouble us come after centuries of warning, and against real cruelty, not against the innocent. His anger in Scripture is never moody. It is the response of love to what destroys the people love is for.\n\nAnd the same Jesus people reach for as the gentle one spoke more about judgment than anyone else in the Bible. The two Testaments are not soft and hard. They are one story, told across a long time, of a God who keeps his covenant with people who keep breaking theirs.",
+      "whereChristiansDiffer": "Christians differ on how to read the hardest passages of conquest and judgment, but they agree the God of both Testaments is one and unchanging in character.",
+      "doctrine": "covenant-frameworks",
+      "doctrineTitle": "How the Whole Story Fits",
+      "passages": [
+        "Exodus 34:6-7",
+        "Psalm 103:8-14",
+        "John 3:16-18"
+      ]
+    },
+    {
+      "id": "science-disproved-bible",
+      "question": "Hasn't science disproved the Bible?",
+      "category": "The Bible and science",
+      "shortAnswer": "Science and the Bible answer different kinds of questions, and many of the people who built modern science read the Bible as true. What science describes is how the world works, not whether it was made or why.",
+      "answer": "The claim usually rests on a misunderstanding of what each side is doing. Science tells you the mechanism, the how of a process you can measure and repeat. The Bible tells you the meaning, the who and the why behind a world that did not have to exist. A recipe and a reason for the meal are not in conflict.\n\nIt is worth remembering who started modern science. Kepler, Newton, Faraday, and many others studied nature precisely because they expected an ordered world made by a rational God. They did not see their faith and their work as rivals. The idea of a permanent war between the two is mostly a story from the late nineteenth century, and historians have shown how thin it is.\n\nWhere the Bible touches the physical world, faithful readers have always asked what kind of writing they are reading. Poetry, narrative, and law each speak truly in their own way. The God who gave the world also gave us the minds to study it, and honest study has never managed to retire him.",
+      "whereChristiansDiffer": "Faithful Christians hold young-earth, old-earth, and evolutionary-creation views of how God made the world, and most treat this as a third-order matter that does not divide the church.",
+      "doctrine": "creation",
+      "doctrineTitle": "Creation and Providence",
+      "passages": [
+        "Genesis 1:1",
+        "Psalm 19:1-4",
+        "Colossians 1:16-17"
+      ]
+    },
+    {
+      "id": "evolution-genesis",
+      "question": "Do I have to choose between evolution and Genesis?",
+      "category": "The Bible and science",
+      "shortAnswer": "No. Genesis tells you that God made everything and made it good, and faithful Christians disagree about the mechanism and the timing without breaking fellowship over it.",
+      "answer": "Genesis 1 and 2 were written to tell Israel who made the world and what it is for, against neighbors who worshiped the sun and the sea. The text presses a few claims hard. God made all that exists. He made it out of love and called it good. He made human beings in his image. On those points the church has never wavered.\n\nHow and over what span of time God did it is a second question, and here faithful believers land in different places. Some read the six days as ordinary days and hold to a young earth. Some read the days as long ages or as a literary frame and accept the old earth that geology describes. Some believe God worked through the process of evolution itself, guiding it toward his ends. Each of these tries to honor both the text and the world.\n\nThis is a third-order matter. It is not the gospel, and it is not a test of whether someone is a Christian. You can hold it with conviction and still hold it with an open hand. What you cannot lose is the center, that the world is made, not random, and that you are made on purpose.",
+      "whereChristiansDiffer": "Christians hold young-earth, old-earth, and evolutionary-creation views, and treat the question of mechanism and age as a third-order matter rather than a dividing line.",
+      "doctrine": "creation",
+      "doctrineTitle": "Creation and Providence",
+      "passages": [
+        "Genesis 1:1",
+        "Genesis 2:7",
+        "Psalm 104:24-30"
+      ]
+    },
+    {
+      "id": "miracles-real",
+      "question": "Did the miracles really happen?",
+      "category": "The Bible and science",
+      "shortAnswer": "If there is a God who made the world, then a miracle is not a broken law of nature but the maker acting freely within his own house. The real question is not whether miracles can happen, but whether this one, the resurrection, did.",
+      "answer": "The common objection says miracles violate the laws of nature, so they cannot happen. But a law of nature describes what usually occurs when nothing interferes. It does not promise that nothing ever will. If a personal God exists, his acting in the world is no stranger than your hand catching a falling cup. The cup was going to keep falling until something free reached in.\n\nSo the question is not abstract. It is historical. Did Jesus rise from the dead. That single claim is the one the whole faith rests on, and it was made in public, in a known city, weeks after the event, in front of people who had every reason to produce the body and could not. The earliest followers died holding to it.\n\nYou do not have to settle every healing and every sign at once. Start with the one that matters most and follow the evidence. If the tomb was empty and the witnesses were not lying and were not deceived, then the smaller miracles are no longer hard to believe. The hard part has already happened.",
+      "whereChristiansDiffer": "Christians agree the resurrection is real and central, while differing on how to read certain other miracle accounts and how God works through ordinary means today.",
+      "doctrine": "christology",
+      "doctrineTitle": "Who Is Jesus?",
+      "passages": [
+        "1 Corinthians 15:3-8",
+        "John 11:25-26",
+        "Acts 2:22-24"
+      ]
+    },
+    {
+      "id": "where-start-reading",
+      "question": "Where do I even start reading the Bible?",
+      "category": "The Bible and science",
+      "shortAnswer": "Start with a Gospel, not at page one. Read Mark or John first to meet Jesus, then Genesis for the beginning of the story, then Psalms for prayer and Romans for the heart of the message.",
+      "answer": "Most people open to Genesis, push through to the middle of the law, and quietly give up. There is a better way in. Begin with one of the four Gospels, because the whole book is finally about the person they describe. Mark is short and fast and good if you want the bones of it. John is slower and deeper and good if you want to sit with who Jesus claims to be.\n\nOnce you have met him, go back to Genesis to see where the story starts, how the world was made and how it broke. Then let the Psalms teach you how to pray, since they give honest words for joy, anger, grief, and trust without pretending. After that, read Romans slowly, because it lays out the core of the message more directly than anywhere else.\n\nRead a little at a time and ask one question of each passage. What does this show me about God, and what does it ask of me. If a reference or a piece of background trips you up, use the Passage Context Tool on this site to see where a verse sits in the larger story before you draw a conclusion from it. The goal is not to finish fast. It is to be changed.",
+      "whereChristiansDiffer": "",
+      "doctrine": "scripture",
+      "doctrineTitle": "What Is the Bible, and Can We Trust It?",
+      "passages": [
+        "Mark 1",
+        "John 1",
+        "Genesis 1",
+        "Romans 1"
+      ]
+    },
+    {
+      "id": "is-jesus-god",
+      "question": "Was Jesus really God, or just a good teacher?",
+      "category": "God, Jesus, and other religions",
+      "shortAnswer": "The 'good teacher' option is the one the evidence does not allow, because Jesus claimed an identity no merely good teacher would claim. Christians believe he was telling the truth.",
+      "answer": "Many people want to keep Jesus as a wise moral guide while setting aside the claims about his divinity. The trouble is that those claims are not a later addition. They run through the earliest record. He forgave sins that were not committed against him. He accepted worship. He spoke of existing before Abraham was born. He told a paralyzed man to stand and a dead man to come out of his grave.\n\nA good teacher who said those things about himself, and was wrong, would not be good. He would be either deceived or dishonest. So the gentle middle road, the one that keeps the ethics and drops the deity, turns out to be the least stable place to stand.\n\nThe first followers were Jewish monotheists, the last people on earth who would casually call a man God. And yet within a few short years they were praying to him, singing to him, dying rather than deny him. Something happened that they could not explain any other way.\n\nThe question is not really whether Jesus was a good teacher. It is whether he was who he said he was. That is a different and harder question, and it deserves to be asked honestly rather than avoided.",
+      "whereChristiansDiffer": "",
+      "doctrine": "christology",
+      "doctrineTitle": "Who Is Jesus?",
+      "passages": [
+        "John 8:58",
+        "Mark 2:5-7",
+        "John 20:28",
+        "Colossians 1:15-17"
+      ]
+    },
+    {
+      "id": "jesus-rose",
+      "question": "How do we know Jesus actually rose from the dead?",
+      "category": "God, Jesus, and other religions",
+      "shortAnswer": "No one can hand you a video, but the historical case rests on facts most scholars grant and asks which explanation accounts for all of them. The empty tomb and the changed witnesses are hard to dismiss.",
+      "answer": "Start with what is widely agreed, even among historians who are not believers. Jesus was crucified and buried. His tomb was found empty. His followers were convinced they saw him alive afterward, and they said so at the cost of their lives. The movement exploded in the very city where the body could have been produced to end it.\n\nThe alternative theories each strain against one of these facts. The disciples stole the body, yet died for what they would have known to be a lie. They hallucinated, yet hallucinations are not shared by crowds over weeks. The wrong tomb was visited, yet the authorities had every reason to correct that and could not.\n\nWomen were named as the first witnesses, which no one inventing a story in that culture would have chosen, because their testimony carried little legal weight. That detail reads like memory, not marketing.\n\nNone of this forces belief. It does mean the resurrection is not a fairy tale told by simple people. It is a claim with evidence behind it, and the honest skeptic owes it a real look before deciding what to do with it.",
+      "whereChristiansDiffer": "",
+      "doctrine": "christology",
+      "doctrineTitle": "Who Is Jesus?",
+      "passages": [
+        "1 Corinthians 15:3-8",
+        "Luke 24:1-12",
+        "Matthew 28:11-15",
+        "Acts 2:22-32"
+      ]
+    },
+    {
+      "id": "the-trinity",
+      "question": "How can God be three and one at the same time?",
+      "category": "God, Jesus, and other religions",
+      "shortAnswer": "Christians do not claim God is three of the same thing and one of the same thing, which would be a contradiction. We claim one God in three persons, which is a mystery the church confesses without pretending to exhaust it.",
+      "answer": "The word Trinity is not in the Bible, but the pattern is everywhere. There is one God. The Father is God. The Son is God. The Spirit is God. And these three are not masks worn by one actor in turn, because they speak to one another and love one another. The early church spent centuries working out language careful enough to hold all of that together.\n\nThe settled confession is this. God is one in essence and three in person. One what, three whos. So the unity and the threeness are not claimed at the same level, and the apparent contradiction dissolves once you see that.\n\nThis is not a riddle the church solved and filed away. It is a description of a God who is greater than our categories. A God small enough to fully understand would not be worth worshiping.\n\nThe surprising part is what it means. If God is three persons in eternal love, then love is not something God started doing when he made us. Love is what God has always been. That is the ground a whole life can stand on.",
+      "whereChristiansDiffer": "",
+      "doctrine": "god-and-trinity",
+      "doctrineTitle": "Who Is God? The Trinity",
+      "passages": [
+        "Matthew 28:19",
+        "John 1:1-3",
+        "2 Corinthians 13:14",
+        "John 17:24"
+      ]
+    },
+    {
+      "id": "why-jesus-die",
+      "question": "Why did Jesus have to die?",
+      "category": "God, Jesus, and other religions",
+      "shortAnswer": "Because sin is a real debt against a real God, and Jesus chose to pay it himself rather than leave us to. The cross is where God's justice and God's mercy meet instead of cancel each other.",
+      "answer": "It can sound strange, even harsh, that a death was required. But consider how we already feel about wrongs done to us. We want them answered. We do not think serious evil should simply be waved away. A God who shrugged at cruelty and betrayal would not be loving. He would be indifferent.\n\nSo God faces what we face but cannot resolve. How do you forgive without pretending the wrong did not happen. The Christian answer is the cross. God does not lower the standard. He meets it himself, in his Son, taking the weight that was ours.\n\nThis is not an angry God punishing an innocent bystander. The one on the cross is God himself, the Son freely giving his life, the Father giving up what is dearest to him. It costs God everything. That is the measure of the love.\n\nThe death of Jesus is not a tragedy that interrupted a good story. It is the center of the story. It says the wrong in you is serious enough to require a death, and you are loved enough that God was willing to die it.",
+      "whereChristiansDiffer": "Christians describe how the cross works in more than one way, from substitution to victory over evil to a demonstration of love, and most hold these together rather than choosing only one.",
+      "doctrine": "soteriology",
+      "doctrineTitle": "How Are We Saved?",
+      "passages": [
+        "Isaiah 53:4-6",
+        "Romans 3:23-26",
+        "1 Peter 2:24",
+        "John 10:17-18"
+      ]
+    },
+    {
+      "id": "only-way",
+      "question": "Is Jesus really the only way to God?",
+      "category": "God, Jesus, and other religions",
+      "shortAnswer": "Christians hold that Jesus is the one savior of the world, not because Christianity is one club among many, but because of who they believe Jesus is. If he is God come to rescue us, then he is not one road among several.",
+      "answer": "This claim sounds arrogant until you see where it comes from. It is not the boast that our group is better than yours. It is a statement about what God did. If God himself came, lived, died, and rose to reconcile us, then that act is the way back, the way no human effort could build.\n\nNotice that the exclusiveness cuts against pride rather than feeding it. Every other path is some version of climbing toward God by being good enough or wise enough or disciplined enough. The Christian claim is that no one climbs. God came down. The door is opened from the other side, and it is opened to anyone, which is the most inclusive thing about it.\n\nIt is fair to feel the weight of this. Honest Christians do too. We are not relieved that many sincere people look elsewhere. We hold the claim with grief and humility, not with a sneer.\n\nWhat we do not get to do is soften it into 'all roads lead home,' because Jesus did not leave that option open. He said he was the way. The kindest thing is to tell you plainly what he claimed, and let you weigh it.",
+      "whereChristiansDiffer": "Faithful Christians agree Christ is the one savior but differ on the fate of those who never hear of him, a question taken up in the next entry.",
+      "doctrine": "soteriology",
+      "doctrineTitle": "How Are We Saved?",
+      "passages": [
+        "John 14:6",
+        "Acts 4:12",
+        "1 Timothy 2:5",
+        "John 3:16-17"
+      ]
+    },
+    {
+      "id": "never-heard",
+      "question": "What about people who never heard of Jesus?",
+      "category": "God, Jesus, and other religions",
+      "shortAnswer": "This is one of the most pressing questions a thoughtful person can ask, and Scripture does not give a tidy formula. What it does promise is that the Judge of all the earth will do right.",
+      "answer": "Begin where the Bible begins. God is just, and God is good, and no one will be treated unfairly. People are not condemned for failing to answer a message that never reached them. They are accountable for what they were actually given, the light of conscience and creation that speaks to every person.\n\nFrom there, faithful Christians who all honor the Bible land in different places. Some hold that explicit faith in Christ is required to be saved, so the unevangelized are lost apart from the church carrying the message to them, which is why mission matters so urgently. Others hold that God may save some through Christ who never heard his name, on the basis of his work alone, responding to the light they had. Between these sit a range of views held by serious believers.\n\nWhat unites them is the conviction that whoever is saved is saved through Christ, never apart from him, even if the how remains hidden from us. The savior is settled. The reach of his mercy in cases we cannot see is left in God's hands.\n\nIf the question moves you, let it move you toward the people who still have not heard, rather than toward worry about a verdict that is God's to give and not yours.",
+      "whereChristiansDiffer": "Some hold explicit faith in Christ is necessary for salvation, others that God may justly save some who never heard through Christ's work on the basis of the light they were given, with various positions in between, while all agree salvation comes only through Christ.",
+      "doctrine": "soteriology",
+      "doctrineTitle": "How Are We Saved?",
+      "passages": [
+        "Genesis 18:25",
+        "Romans 1:19-20",
+        "Romans 2:14-16",
+        "Acts 17:26-27"
+      ]
+    },
+    {
+      "id": "other-religions",
+      "question": "Aren't all religions basically saying the same thing?",
+      "category": "God, Jesus, and other religions",
+      "shortAnswer": "They share real moral wisdom, and that common ground is worth honoring. But on the questions that matter most, who God is and how we are made right with him, they say genuinely different things.",
+      "answer": "It is true that the great faiths often agree about kindness, honesty, generosity, and the dignity of human life. That overlap is not nothing. A person who treats those agreements as a sign of shared conscience is seeing something true. We should not flatten other believers into caricatures or pretend they teach nothing good.\n\nBut to say all religions are the same is, in its own way, disrespectful to each of them. It tells the Muslim, the Hindu, the Buddhist, and the Jew that the very thing they hold most precious does not really matter. They would not recognize themselves in the claim that the differences are cosmetic.\n\nThe differences are real and they are deep. Is God personal or impersonal. Is the human problem ignorance, or imbalance, or guilt before a holy God. Is salvation something we achieve or something we receive. These are not the same answer in different clothes. They are different answers, and they cannot all be true at once.\n\nRespecting another faith means taking its actual claims seriously enough to disagree where you must. The Christian claim is specific. God came to us in Jesus and did for us what we could not do for ourselves. That is either true or it is not, and it is worth examining on its own terms rather than dissolving into a vague sameness no one actually believes.",
+      "whereChristiansDiffer": "Christians agree the faiths genuinely differ on God and salvation, while differing among themselves over how much truth God has made available within other religious traditions.",
+      "doctrine": "christology",
+      "doctrineTitle": "Who Is Jesus?",
+      "passages": [
+        "John 14:6",
+        "Acts 17:22-31",
+        "1 Corinthians 8:5-6",
+        "Hebrews 1:1-3"
+      ]
+    }
+  ]
+}

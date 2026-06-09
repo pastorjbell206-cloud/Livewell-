@@ -69,6 +69,26 @@ export default function Theology() {
         </div>
       </section>
 
+      {/* FIND YOUR WAY IN */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) 0" }}>
+        <div style={wrap}>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "var(--s-3)" }}>Find your way in</h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "12px" }}>
+            {[
+              { href: "/theology/search", title: "Search everything", desc: "One box across the doctrines, all 230 passages, the glossary, and more." },
+              { href: "/theology/paths", title: "Where do I start?", desc: "Short guided paths for the new believer and the curious." },
+              { href: "/theology/questions", title: "Hard questions", desc: "Honest answers to what people actually ask, routed into the study." },
+              { href: "/theology/traditions", title: "Why so many churches?", desc: "An irenic guide to the traditions and the core they share." },
+            ].map((t) => (
+              <Link key={t.href} href={t.href} style={{ ...card, borderTop: "3px solid var(--mustard)" }}>
+                <div style={{ fontFamily: "var(--F)", fontSize: "19px", fontWeight: 500, color: "var(--ink)", marginBottom: "6px" }}>{t.title}</div>
+                <div style={{ fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.55, color: "var(--ink-muted)" }}>{t.desc}</div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* PILLAR 0 — START HERE */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) 0" }}>
         <div style={wrap}>
