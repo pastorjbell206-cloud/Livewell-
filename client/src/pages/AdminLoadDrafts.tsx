@@ -22,9 +22,45 @@ interface DraftItem {
  */
 export default function AdminLoadDrafts() {
   const create = trpc.posts.createDrafts.useMutation();
+  const publish = trpc.posts.publishBySlugs.useMutation();
   const [items, setItems] = useState<DraftItem[]>([]);
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<{ inserted: number; skipped: string[] } | null>(null);
+  const [pubResult, setPubResult] = useState<{ updated: number; published: boolean } | null>(null);
+
+  // Publish (or unpublish) every loaded article + essay, by slug, in batches.
+  const setPublishedAll = async (published: boolean) => {
+    const verb = published ? "Publish" : "Unpublish";
+    if (!window.confirm(`${verb} all loaded articles and essays now? You can reverse this here anytime.`)) return;
+    setBusy(true);
+    setPubResult(null);
+    try {
+      const list = await loadAll();
+      const slugs = list.map((i) => i.slug);
+      const BATCH = 20;
+      let updated = 0;
+      for (let i = 0; i < slugs.length; i += BATCH) {
+        const chunk = slugs.slice(i, i + BATCH);
+        let lastErr: any;
+        for (let a = 0; a < 3; a++) {
+          try {
+            const r = await publish.mutateAsync({ slugs: chunk, published });
+            if ((r as any).error) throw new Error((r as any).error);
+            updated += r.updated;
+            lastErr = null;
+            break;
+          } catch (e: any) { lastErr = e; await new Promise((res) => setTimeout(res, 600 * (a + 1))); }
+        }
+        if (lastErr) throw lastErr;
+      }
+      setPubResult({ updated, published });
+      toast.success(`${published ? "Published" : "Unpublished"} ${updated} ${updated === 1 ? "post" : "posts"}.`);
+    } catch (e: any) {
+      toast.error(e?.message || `Couldn't ${verb.toLowerCase()} them — it's safe to try again.`);
+    } finally {
+      setBusy(false);
+    }
+  };
 
   // Load the personal essays and the SEO article library together.
   const loadAll = async (): Promise<DraftItem[]> => {
@@ -127,6 +163,39 @@ export default function AdminLoadDrafts() {
             {busy ? <Loader2 size={16} className="animate-spin" /> : <FilePlus2 size={16} />}
             Load as unpublished drafts
           </button>
+        </div>
+
+        <div className="rounded p-5 mb-8" style={{ backgroundColor: "#F1F7F1", border: "1px solid #2E7D32" }}>
+          <p className="font-body text-sm mb-3" style={{ color: "#1A1A1A", lineHeight: 1.6 }}>
+            Done previewing? Take every loaded essay and article <strong>live in one click</strong>.
+            This sets all of them to published. You can undo it here too.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <button
+              type="button"
+              onClick={() => setPublishedAll(true)}
+              disabled={busy}
+              className="flex items-center gap-2 px-6 py-3 rounded font-ui font-medium disabled:opacity-50"
+              style={{ backgroundColor: "#2E7D32", color: "#FFFFFF" }}
+            >
+              {busy ? <Loader2 size={16} className="animate-spin" /> : <CheckCircle2 size={16} />}
+              Publish all now
+            </button>
+            <button
+              type="button"
+              onClick={() => setPublishedAll(false)}
+              disabled={busy}
+              className="flex items-center gap-2 px-5 py-3 rounded font-ui font-medium disabled:opacity-50"
+              style={{ backgroundColor: "#EDE8DC", color: "#1A1A1A", border: "1px solid #D1C9BB" }}
+            >
+              Unpublish all
+            </button>
+          </div>
+          {pubResult && (
+            <p className="font-body text-sm mt-3" style={{ color: "#2E7D32" }}>
+              {pubResult.published ? "Published" : "Unpublished"} {pubResult.updated} {pubResult.updated === 1 ? "post" : "posts"}. Refresh your site to see them.
+            </p>
+          )}
         </div>
 
         {items.length > 0 && !result && (

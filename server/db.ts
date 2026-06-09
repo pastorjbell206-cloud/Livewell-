@@ -289,6 +289,20 @@ export async function createDraftPosts(
   return { inserted, skipped, error: null as string | null };
 }
 
+/** Bulk publish/unpublish posts by slug. On publish, stamps publishedAt if unset. */
+export async function publishBySlugs(slugs: string[], published: boolean) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  let updated = 0;
+  for (const slug of slugs) {
+    const set: any = { published };
+    if (published) set.publishedAt = sql`COALESCE(publishedAt, NOW())`;
+    await db.update(posts).set(set).where(eq(posts.slug, slug));
+    updated++;
+  }
+  return { updated, error: null as string | null };
+}
+
 /** Unpublish (never delete) the given post ids. Reversible duplicate cleanup. */
 export async function retirePosts(ids: number[]) {
   const db = await getDb();
