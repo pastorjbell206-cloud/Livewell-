@@ -21,6 +21,38 @@
   "captureLeft": "On the left, the unborn child is the life most easily set aside, spoken of as tissue rather than neighbor, defended in every other case of the voiceless and quietly excepted in this one. A consistency that reaches the prisoner and the refugee but stops at the womb is not yet consistent.",
   "captureRight": "On the right, the lives most easily set aside are the born poor, the immigrant at the border, the condemned man in his cell, and the refugee at the door, lives spoken of as burdens or threats. A concern for life that ends at birth and grows cold toward the breathing is not yet a concern for life.",
   "whereWeDiffer": "Honest people who hold the same high view of life still differ on the hard cases, on what the law should compel, and on how mercy and justice meet in policy. The rape of a child, the dying mother, the immigration statute, the death penalty, these are places where serious Christians reason in good faith and reach different ends. We can hold the same reverence and still argue about the road.",
+  "captureDetail": {
+    "right": {
+      "label": "Defends the unborn, neglects the life once it is born",
+      "whatItLooksLike": "A fierce and costly devotion to the child in the womb that thins to nothing the moment that child is born poor, or brown, or behind a border, or behind bars. The same voice that calls abortion the great evil of the age will defend the execution of the condemned, the separation of the migrant child from his mother, and the cutting of the bread that keeps the born child alive. Life becomes a single issue rather than a single thread, and the issue is always the one that costs the voter least.",
+      "inThePast": "The modern pro-life movement, as it organized after Roe in 1973, drew its energy from a real conviction that the unborn are neighbors. But it bound itself to a political coalition that also championed the return of the death penalty after Gregg in 1976, the harsh welfare retrenchment of the 1980s and the 1996 reform, and a hard line on the immigrant. The 1980s saw the Moral Majority preach the sanctity of the womb while baptizing an economics indifferent to the mother. The whole life witness was available the entire time and was largely refused.",
+      "now": "The 2018 family separation policy at the southern border was defended or excused by many who name themselves the most pro-life. Capital punishment retains majority support among white evangelicals even as exonerations from the Innocence Project mount and Justice Harry Blackmun's late dissent in Callins haunts the record. Figures such as Robert Jeffress and Franklin Graham have offered theological cover for the harshest border and refugee restrictions, including the 2017 travel ban and reductions in refugee admissions, while abortion is treated as the lone test of a candidate's worth.",
+      "named": [
+        "Moral Majority and the single-issue voter bloc",
+        "1996 welfare retrenchment baptized as virtue",
+        "white evangelical support for the death penalty",
+        "2018 family separation at the southern border",
+        "the 2017 travel ban and slashed refugee numbers",
+        "Robert Jeffress and Franklin Graham on immigration",
+        "abortion treated as the only life issue"
+      ]
+    },
+    "left": {
+      "label": "Defends the vulnerable adult, sets aside the unborn",
+      "whatItLooksLike": "A genuine tenderness toward the refugee, the prisoner, and the poor that goes quiet at the womb, where the unborn life is renamed as tissue, a clump of cells, a matter settled by the word choice. Autonomy is raised to an absolute, and the question of whether a second life is present is answered by refusing to ask it. The vulnerable who cannot speak for themselves are defended everywhere except the one place they are smallest.",
+      "inThePast": "The framing hardened over decades. The 1973 settlement treated the unborn as a private matter rather than a public neighbor, and the rhetoric of choice steadily erased the language of the child. NARAL and Planned Parenthood as an advocacy arm moved from the early plea of safe, legal, and rare toward a frame in which the second life is not mentioned at all. The shift was deliberate, and the cost was a vocabulary in which the unborn could no longer be named.",
+      "now": "The push to remove rare from the older formula, and campaigns such as Shout Your Abortion since 2015, mark a frame in which the unborn life is no longer weighed. At the other edge, assisted death has spread, and Canada's MAID regime, expanded in 2021 with a planned track for mental illness, has drawn alarm from disability advocates like the group Not Dead Yet, who document people choosing death for want of housing or care. Prenatal screening has driven Down syndrome to near disappearance in Iceland and Denmark, a quiet verdict on which lives are wanted.",
+      "named": [
+        "the choice frame that erases the second life",
+        "dropping rare from safe, legal, and rare",
+        "Shout Your Abortion and the no-apology turn",
+        "Canada's MAID expansion and the 2021 mental illness track",
+        "disability advocates such as Not Dead Yet",
+        "near elimination of Down syndrome births in Iceland",
+        "autonomy absolutized over the voiceless"
+      ]
+    }
+  },
   "theCost": "A consistent ethic of life will cost you your tribe. It will make you suspect to both sides, too pro-life for the one and not pro-life enough for the other, because you refuse to trade the immigrant for the unborn or the unborn for the immigrant. It costs more than a vote. It costs the casserole carried to the frightened pregnant teenager, the visit to the man on death row, the years given to the parent who no longer knows you, the open door to the family who crossed a border. It asks you to be inconvenienced by lives the world has agreed not to see. I have found it easier to hold the right opinion than to answer the phone at two in the morning.",
   "charge": "So go and find the edge you have been avoiding. Not the one your tribe already defends, but the one it has taught you to walk past. Learn the name of one life the world has set aside, the unborn or the undocumented, the condemned or the dying, and let that name cost you something this week. The measure of what we believe about the image of God is not the argument we win. It is the body we are willing to carry home in the dark.",
   "furtherReading": [

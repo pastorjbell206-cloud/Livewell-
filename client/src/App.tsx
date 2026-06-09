@@ -79,6 +79,7 @@ const NationHub = lazy(() => import("./pages/nation/NationHub"));
 const NationEssay = lazy(() => import("./pages/nation/NationEssay"));
 const NationScorecard = lazy(() => import("./pages/nation/NationScorecard"));
 const NationPolicy = lazy(() => import("./pages/nation/NationPolicy"));
+const PropheticLament = lazy(() => import("./pages/prophetic/PropheticLament"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
 const SermonOutline = lazy(() => import("./pages/tools/SermonOutline"));
@@ -190,6 +191,9 @@ function Router() {
         <Route path="/nation/christian-nation"><NationEssay slug="christian-nation" /></Route>
         <Route path="/nation/theocracy"><NationEssay slug="theocracy" /></Route>
         <Route path="/nation/empire"><NationEssay slug="empire" /></Route>
+        <Route path="/nation/which-party"><NationEssay slug="which-party" /></Route>
+        <Route path="/nation/render"><NationEssay slug="render" /></Route>
+        <Route path="/lament"><PropheticLament /></Route>
         <Route path="/nation/scorecard"><NationScorecard /></Route>
         <Route path="/nation/policy"><NationPolicy /></Route>
         <Route path="/nation"><NationHub /></Route>

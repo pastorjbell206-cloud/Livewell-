@@ -30,5 +30,35 @@
     { "title": "The Cost of Discipleship", "author": "Dietrich Bonhoeffer" },
     { "title": "The Myth of a Christian Nation", "author": "Gregory Boyd" },
     { "title": "Resident Aliens", "author": "Stanley Hauerwas and William Willimon" }
-  ]
+  ],
+  "captureDetail": {
+    "right": {
+      "label": "The restorationist myth",
+      "whatItLooksLike": "This is the story that America was founded as a Christian nation and must be returned to that founding before God can bless it again. It treats the founders as inspired authors and the founding documents as something close to a second Scripture, then reads every law and court ruling as a step toward or away from a covenant the country supposedly signed. The danger is not the love of country but the fusion, the moment when defending the flag becomes indistinguishable from defending the Lord.",
+      "inThePast": "The doctrine of Manifest Destiny in the 1840s, named by John O Sullivan, cast westward conquest as a providential errand and gave a holy gloss to the dispossession of native peoples. Generations of providential-nation sermons, stretching back to John Winthrop and his city on a hill in 1630, taught that this land carried a covenant other lands lacked. The Cold War welded God and country together in 1954 when Congress added under God to the Pledge of Allegiance and in 1956 when In God We Trust became the national motto, fusing anti-communism with Christian identity. The Moral Majority, founded by Jerry Falwell in 1979, organized that fusion into a voting bloc and made the nation itself an object of religious defense.",
+      "now": "The contemporary movement to restore a Christian America has grown more explicit, with some figures now embracing the label of Christian nationalism rather than refusing it. The New Apostolic Reformation and the Seven Mountain Mandate teach believers to take dominion over the spheres of government and culture as a religious assignment. Project Blitz, a model-legislation effort documented by the Congressional Prosperity Caucus network, has pushed bills to post In God We Trust in schools and write a single national religious story into law. The founders are mined for quotations as proof texts, often stripped of context, by organizations like WallBuilders and its founder David Barton, whose historical claims have been disputed by Christian historians such as John Fea and Mark Noll.",
+      "named": [
+        "Manifest Destiny, the 1840s doctrine framing conquest as providence",
+        "Moral Majority, Jerry Falwell's 1979 political fusion of church and party",
+        "New Apostolic Reformation and the Seven Mountain Mandate, a dominion theology of cultural spheres",
+        "Project Blitz, a model-legislation effort to write a single religious story into law",
+        "WallBuilders and David Barton, founders-as-proof-text history disputed by John Fea and Mark Noll",
+        "Under God added to the Pledge in 1954 and In God We Trust as motto in 1956"
+      ]
+    },
+    "left": {
+      "label": "The erasing counter-myth",
+      "whatItLooksLike": "This is the opposite distortion, the story that flattens a complicated history into a single account of guilt and treats the nation as nothing but an engine of oppression. It erases the documented role of Christian conviction in the very reforms it most admires, and it often carries its own quasi-religious national narrative, a salvation story of a country forever arriving at a justice it invents for itself. The danger is a different idol, a redemption located in the state and its verdicts rather than in the cross.",
+      "inThePast": "Much secular historiography long minimized how thoroughly Christian faith drove abolition, even though Frederick Douglass argued from Scripture, the Grimke sisters wrote from their Quaker conviction, and the American Anti-Slavery Society drew heavily on church networks. The same erasure has been applied to the civil rights movement, where the Southern Christian Leadership Conference was an explicitly church-led body and Martin Luther King Jr framed the cause in the language of the prophets and the beloved community. A purely secular telling treats these as political movements that happened to use religious words, rather than movements that existed because of religious belief. That reading cannot account for why the marches began in sanctuaries.",
+      "now": "Some strands of contemporary progressive history flatten the whole American story into a single narrative of guilt, where the religious roots of reform are passed over and faith appears only as the oppressor's tool. At the same time the left carries its own national mythology, a civic religion with its own saints, sins, and rites of confession, where the state becomes the agent of redemption and the church is welcome only as long as it ratifies the latest verdict. Movements that began as honest reckonings with documented injustice can harden into a creed that permits no complication and no countervailing good. It is a salvation story with the cross removed and the government installed in its place.",
+      "named": [
+        "Secular abolition histories that minimize Frederick Douglass and the Grimke sisters",
+        "American Anti-Slavery Society, a church-networked body often read as merely political",
+        "Southern Christian Leadership Conference, the explicitly Christian engine of civil rights",
+        "Beloved community, the prophetic theology of Martin Luther King Jr flattened into secular politics",
+        "Civic-religion narratives that locate redemption in the state and its verdicts",
+        "Single-story tellings that reduce a complicated history to guilt alone"
+      ]
+    }
+  }
 }
