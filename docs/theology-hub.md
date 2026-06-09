@@ -211,11 +211,16 @@ questions and surrounds the verse with its context, then points to the doctrine
 page where the views are laid out fairly. It forms a reader, it does not settle
 a debate.
 
-### Companion tools (later, same section)
-Interpretation-spectrum viewer, hermeneutics trainer, doctrine-comparison
-table, interpretive-error checker, word study, glossary, creeds and confessions
-library, a 'which view am I' diagnostic, and a reading-plan generator. Each is
-additive and shares the doctrine JSON and the triage vocabulary.
+### Companion tools
+Built: the doctrine-comparison table (/theology/compare, reuses the doctrine
+JSON), the glossary (/theology/glossary, 114 terms linked to their doctrines),
+the creeds and confessions library (/theology/creeds, four creeds in full plus
+nine confessions), the hermeneutics trainer (/theology/hermeneutics, twelve
+principles and a nine-item error checklist, which absorbs the
+interpretive-error checker), and the 'which view am I' diagnostic
+(/theology/which-view, quizzes for soteriology, baptism, and the end times).
+All are surfaced in the Study tools grid on the hub. A word-study tool and a
+reading-plan generator remain optional future additions.
 
 ---
 
@@ -281,7 +286,12 @@ always labeled as a judgment held tentatively, never as settled fact.
       books, plus the contested frameworks worked as a doctrine (covenant
       theology, dispensationalism, progressive covenantalism, new covenant
       theology)
-- [ ] Companion interactive tools
+- [x] Companion study tools: the comparison table (/theology/compare), the
+      glossary (/theology/glossary, 114 terms), the creeds and confessions
+      library (/theology/creeds), the hermeneutics trainer
+      (/theology/hermeneutics), and the which-view diagnostic
+      (/theology/which-view), all surfaced in the Study tools grid on the hub
+- [ ] Optional future: a word-study tool and a reading-plan generator
 
 Drafts for James to confirm and personalize: the Pillar 0 author's lens and the
 soteriology Weighing It section. Both state his own theological judgments.

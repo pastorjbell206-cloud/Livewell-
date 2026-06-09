@@ -101,6 +101,28 @@ export default function Theology() {
         </div>
       </section>
 
+      {/* STUDY TOOLS */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) 0" }}>
+        <div style={wrap}>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "var(--s-3)" }}>Study tools</h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "12px" }}>
+            {[
+              { href: "/theology/passage", title: "Passage Context Tool", desc: "Read any verse back inside its paragraph, book, and the whole story." },
+              { href: "/theology/compare", title: "Compare the views", desc: "Lay any doctrine's positions side by side in a table." },
+              { href: "/theology/glossary", title: "Glossary", desc: "Every term, defined plainly and searchable." },
+              { href: "/theology/creeds", title: "Creeds and confessions", desc: "The historic creeds in full, and the great confessions." },
+              { href: "/theology/hermeneutics", title: "How to read the Bible well", desc: "The rules of interpretation and the mistakes to avoid." },
+              { href: "/theology/which-view", title: "Which view am I?", desc: "Answer a few questions and see where you lean." },
+            ].map((t) => (
+              <Link key={t.href} href={t.href} style={{ ...card, borderTop: "1px solid var(--border)" }}>
+                <div style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, color: "var(--ink)", marginBottom: "6px" }}>{t.title}</div>
+                <div style={{ fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.55, color: "var(--ink-muted)" }}>{t.desc}</div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* THE PILLARS */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={wrap}>

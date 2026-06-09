@@ -57,6 +57,11 @@ const TheologyDoctrine = lazy(() => import("./pages/TheologyDoctrine"));
 const PassageContext = lazy(() => import("./pages/tools/PassageContext"));
 const TheologyHistory = lazy(() => import("./pages/TheologyHistory"));
 const TheologyBiblical = lazy(() => import("./pages/TheologyBiblical"));
+const TheologyCompare = lazy(() => import("./pages/TheologyCompare"));
+const TheologyGlossary = lazy(() => import("./pages/TheologyGlossary"));
+const TheologyCreeds = lazy(() => import("./pages/TheologyCreeds"));
+const TheologyHermeneutics = lazy(() => import("./pages/TheologyHermeneutics"));
+const TheologyDiagnostic = lazy(() => import("./pages/TheologyDiagnostic"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
 const SermonOutline = lazy(() => import("./pages/tools/SermonOutline"));
@@ -145,6 +150,11 @@ function Router() {
         <Route path="/theology/passage" component={PassageContext} />
         <Route path="/theology/history" component={TheologyHistory} />
         <Route path="/theology/biblical" component={TheologyBiblical} />
+        <Route path="/theology/compare" component={TheologyCompare} />
+        <Route path="/theology/glossary" component={TheologyGlossary} />
+        <Route path="/theology/creeds" component={TheologyCreeds} />
+        <Route path="/theology/hermeneutics" component={TheologyHermeneutics} />
+        <Route path="/theology/which-view" component={TheologyDiagnostic} />
         <Route path="/theology/how-to-use" component={TheologyMethodology} />
         <Route path="/theology/doctrine/:slug" component={TheologyDoctrine} />
         <Route path="/theology" component={Theology} />

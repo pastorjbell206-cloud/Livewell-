@@ -1,0 +1,84 @@
+{
+  "creeds": [
+    {
+      "name": "The Apostles' Creed",
+      "era": "Early church, with roots in the second century and the received form settled by roughly the eighth century",
+      "note": "This is the oldest and simplest summary of the faith, used at baptism long before it reached its final wording. It does not come word for word from the apostles, but it carries what the apostles taught in the shortest possible form. It guards the basic story of God as Father, Son, and Holy Spirit and the bodily resurrection of the dead.",
+      "text": "I believe in God, the Father almighty, creator of heaven and earth.\n\nI believe in Jesus Christ, his only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried, he descended to the dead. On the third day he rose again, he ascended into heaven, he is seated at the right hand of the Father, and he will come again to judge the living and the dead.\n\nI believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting. Amen."
+    },
+    {
+      "name": "The Nicene Creed (Niceno-Constantinopolitan, 381)",
+      "era": "Council of Nicaea 325, completed at the Council of Constantinople 381",
+      "note": "This creed was written to answer Arius, who taught that the Son was a created being and not fully God. The church gathered and declared the Son to be of one being with the Father, true God from true God. The form below uses the we believe of the original conciliar text, the wording most often recited in worship.",
+      "text": "We believe in one God, the Father almighty, maker of heaven and earth, of all things visible and invisible.\n\nAnd in one Lord Jesus Christ, the only-begotten Son of God, begotten of the Father before all worlds, God of God, Light of Light, very God of very God, begotten, not made, being of one substance with the Father, by whom all things were made. Who, for us men and for our salvation, came down from heaven, and was incarnate by the Holy Spirit of the Virgin Mary, and was made man, and was crucified also for us under Pontius Pilate, he suffered and was buried, and the third day he rose again, according to the Scriptures, and ascended into heaven, and sitteth on the right hand of the Father, and he shall come again, with glory, to judge both the quick and the dead, whose kingdom shall have no end.\n\nAnd we believe in the Holy Spirit, the Lord and Giver of life, who proceedeth from the Father and the Son, who with the Father and the Son together is worshipped and glorified, who spake by the prophets. And we believe in one holy catholic and apostolic Church. We acknowledge one baptism for the remission of sins, and we look for the resurrection of the dead, and the life of the world to come. Amen."
+    },
+    {
+      "name": "The Athanasian Creed",
+      "era": "Western church, likely composed in the fifth or sixth century",
+      "note": "Though it bears the name of Athanasius, it was written after his death and gathers the settled teaching he defended. It states the doctrine of the Trinity and the two natures of Christ with great care, leaving no room for confusion. It guards against any teaching that would divide the one God or collapse the three persons into one.",
+      "text": "Whosoever will be saved, before all things it is necessary that he hold the catholic faith.\n\nWhich faith except every one do keep whole and undefiled, without doubt he shall perish everlastingly.\n\nAnd the catholic faith is this: That we worship one God in Trinity, and Trinity in Unity, neither confounding the persons, nor dividing the substance.\n\nFor there is one person of the Father, another of the Son, and another of the Holy Spirit.\n\nBut the Godhead of the Father, of the Son, and of the Holy Spirit, is all one, the glory equal, the majesty coeternal.\n\nSuch as the Father is, such is the Son, and such is the Holy Spirit.\n\nThe Father uncreate, the Son uncreate, and the Holy Spirit uncreate.\n\nThe Father incomprehensible, the Son incomprehensible, and the Holy Spirit incomprehensible.\n\nThe Father eternal, the Son eternal, and the Holy Spirit eternal.\n\nAnd yet they are not three eternals, but one eternal.\n\nAs also there are not three incomprehensibles, nor three uncreated, but one uncreated, and one incomprehensible.\n\nSo likewise the Father is almighty, the Son almighty, and the Holy Spirit almighty.\n\nAnd yet they are not three almighties, but one almighty.\n\nSo the Father is God, the Son is God, and the Holy Spirit is God.\n\nAnd yet they are not three Gods, but one God.\n\nSo likewise the Father is Lord, the Son Lord, and the Holy Spirit Lord.\n\nAnd yet not three Lords, but one Lord.\n\nFor like as we are compelled by the Christian verity to acknowledge every person by himself to be God and Lord, so are we forbidden by the catholic religion to say, There be three Gods, or three Lords.\n\nThe Father is made of none, neither created, nor begotten.\n\nThe Son is of the Father alone, not made, nor created, but begotten.\n\nThe Holy Spirit is of the Father and of the Son, neither made, nor created, nor begotten, but proceeding.\n\nSo there is one Father, not three Fathers, one Son, not three Sons, one Holy Spirit, not three Holy Spirits.\n\nAnd in this Trinity none is afore, or after another, none is greater, or less than another.\n\nBut the whole three persons are coeternal, and coequal.\n\nSo that in all things, as aforesaid, the Unity in Trinity, and the Trinity in Unity, is to be worshipped.\n\nHe therefore that will be saved, let him thus think of the Trinity.\n\nFurthermore, it is necessary to everlasting salvation, that he also believe rightly the incarnation of our Lord Jesus Christ.\n\nFor the right faith is, that we believe and confess, that our Lord Jesus Christ, the Son of God, is God and man.\n\nGod, of the substance of the Father, begotten before the worlds, and man, of the substance of his mother, born in the world.\n\nPerfect God, and perfect man, of a reasonable soul and human flesh subsisting.\n\nEqual to the Father, as touching his Godhead, and inferior to the Father, as touching his manhood.\n\nWho, although he be God and man, yet he is not two, but one Christ.\n\nOne, not by conversion of the Godhead into flesh, but by taking of the manhood into God.\n\nOne altogether, not by confusion of substance, but by unity of person.\n\nFor as the reasonable soul and flesh is one man, so God and man is one Christ.\n\nWho suffered for our salvation, descended into hell, rose again the third day from the dead.\n\nHe ascended into heaven, he sitteth on the right hand of the Father, God Almighty, from whence he shall come to judge the quick and the dead.\n\nAt whose coming all men shall rise again with their bodies, and shall give account for their own works.\n\nAnd they that have done good shall go into life everlasting, and they that have done evil into everlasting fire.\n\nThis is the catholic faith, which except a man believe faithfully, he cannot be saved."
+    },
+    {
+      "name": "The Chalcedonian Definition",
+      "era": "Council of Chalcedon, 451",
+      "note": "This statement settled how Christ can be both fully God and fully man at the same time. The church confessed one person in two natures, not mixed together and not split apart. It guards against teaching that would make Jesus less than God, less than man, or somehow two persons stitched together.",
+      "text": "Following, then, the holy fathers, we all unanimously teach that our Lord Jesus Christ is to us one and the same Son, the self-same perfect in Godhead, the self-same perfect in manhood, truly God and truly man, the self-same of a reasonable soul and body, consubstantial with the Father according to the Godhead, the self-same consubstantial with us according to the manhood, like us in all things, sin apart, before the ages begotten of the Father as to the Godhead, but in the last days, the self-same, for us and for our salvation, born of Mary the Virgin Theotokos as to the manhood.\n\nOne and the same Christ, Son, Lord, Only-begotten, acknowledged in two natures unconfusedly, unchangeably, indivisibly, inseparably, the difference of the natures being in no way removed because of the union, but rather the property of each nature being preserved, and concurring into one person and one subsistence, not as parted or separated into two persons, but one and the self-same Son and Only-begotten God, Word, Lord, Jesus Christ, even as the prophets from of old have spoken concerning him, and as the Lord Jesus Christ himself hath taught us, and as the creed of the fathers hath delivered to us."
+    }
+  ],
+  "confessions": [
+    {
+      "name": "The Augsburg Confession",
+      "tradition": "Lutheran",
+      "year": "1530",
+      "summary": "This is the founding doctrinal statement of the Lutheran churches, presented to the Holy Roman Emperor by the German reformers. Written mainly by Philip Melanchthon, it sets out the core of the Reformation reading of the gospel, above all that sinners are made right with God by grace through faith. It remains the standard confession of Lutheran bodies worldwide."
+    },
+    {
+      "name": "The Heidelberg Catechism",
+      "tradition": "Reformed",
+      "year": "1563",
+      "summary": "A warm and personal teaching tool written in Germany to instruct ordinary believers in the Reformed faith. It is arranged in question and answer form around three themes, the greatness of human sin, the rescue God provides in Christ, and the life of gratitude that follows. It is held by Reformed and Presbyterian churches in the Continental tradition and is still used to teach the young."
+    },
+    {
+      "name": "The Belgic Confession",
+      "tradition": "Reformed",
+      "year": "1561",
+      "summary": "Written by Guido de Bres in the Low Countries during a time when Reformed believers faced persecution, it was meant to show that their faith was orderly and biblical rather than rebellious. It moves through the doctrines of God, Scripture, sin, Christ, the church, and the last things. Along with the Heidelberg Catechism and the Canons of Dort it forms the Three Forms of Unity held by Dutch Reformed churches."
+    },
+    {
+      "name": "The Canons of Dort",
+      "tradition": "Reformed",
+      "year": "1619",
+      "summary": "These canons came from an international Reformed synod held in the Dutch city of Dordrecht to answer the teaching of the followers of Jacobus Arminius. They set out the points often summarized as the doctrines of grace, including unconditional election and the perseverance of the saints. They are confessed by Reformed churches that stand in the Dutch tradition."
+    },
+    {
+      "name": "The Westminster Confession of Faith",
+      "tradition": "Presbyterian",
+      "year": "1646",
+      "summary": "Produced by an assembly of pastors and scholars meeting in London during the English civil wars, this is the most detailed of the Reformed confessions. It treats the whole range of Christian doctrine in careful chapters, from Scripture and the eternal decree of God to salvation, the church, and the final judgment. It is the principal doctrinal standard of Presbyterian churches around the world."
+    },
+    {
+      "name": "The Westminster Shorter Catechism",
+      "tradition": "Presbyterian",
+      "year": "1647",
+      "summary": "A companion to the Westminster Confession, written by the same assembly to teach the faith to children and new believers in plain question and answer form. Its opening line, that the chief end of man is to glorify God and to enjoy him forever, is among the most quoted in the English-speaking church. Presbyterian and Reformed churches still use it for instruction."
+    },
+    {
+      "name": "The Thirty-nine Articles of Religion",
+      "tradition": "Anglican",
+      "year": "1571",
+      "summary": "These articles set the doctrinal position of the Church of England as it took shape after the break with Rome. They steer a course that keeps the ancient creeds and the Reformation recovery of grace while rejecting certain medieval errors. They remain a defining standard for Anglican and Episcopal churches."
+    },
+    {
+      "name": "The Second London Baptist Confession",
+      "tradition": "Particular Baptist",
+      "year": "1689",
+      "summary": "This confession follows the structure and much of the wording of the Westminster Confession, adjusted by English Baptists on matters such as baptism and the gathered church. It shows that Baptists shared the broad Reformed faith while holding that baptism belongs to those who profess belief. It is still confessed by Reformed Baptist churches today."
+    },
+    {
+      "name": "The Baptist Faith and Message",
+      "tradition": "Southern Baptist",
+      "year": "1925, revised 1963 and 2000",
+      "summary": "This is the doctrinal statement of the Southern Baptist Convention, first adopted in 1925 and revised in the years that followed to address new questions. It affirms the authority of Scripture, salvation through Christ, believer baptism, and the local church. It serves as the shared confession of the largest body of Baptists in the United States."
+    }
+  ]
+}
