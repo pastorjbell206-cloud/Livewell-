@@ -17,6 +17,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { trpc } from "@/lib/trpc";
 import { bookUrl } from "@/lib/site";
+import { SITE_STATS, bookCountWordCap } from "@/config/siteStats";
 
 interface ReadingPath {
   title: string;
@@ -69,13 +70,12 @@ export default function Books() {
     <Layout>
       <SEOMeta
         title="Books — James Bell"
-        description="Twenty-five books on pastoral ministry, theology, marriage, and the weight of faithful leadership. Read them as paths, not a list."
+        description={`${bookCountWordCap} books on pastoral ministry, theology, marriage, and the weight of faithful leadership. Read them as paths, not a list.`}
         structuredData={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
           name: "Books by James Bell",
-          description:
-            "Twenty-five books on pastoral ministry, theology, and the Christian life.",
+          description: `${bookCountWordCap} books on pastoral ministry, theology, and the Christian life.`,
           url: "https://www.livewellbyjamesbell.co/books",
         }}
       />
@@ -102,7 +102,7 @@ export default function Books() {
               marginBottom: "20px",
             }}
           >
-            Twenty-five books across fifteen years of ministry.
+            {bookCountWordCap} books across {SITE_STATS.yearsInMinistryWord} years of ministry.
           </h1>
           <p
             style={{

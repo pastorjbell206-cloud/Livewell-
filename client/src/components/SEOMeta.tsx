@@ -12,6 +12,7 @@
  * mounts on a route, it overrides them.
  */
 import { SITE_URL, SITE_NAME, AUTHOR_NAME, OG_DEFAULT_IMAGE } from "@/lib/site";
+import { SITE_STATS } from "@/config/siteStats";
 
 interface SEOMetaProps {
   title: string;
@@ -110,8 +111,7 @@ export function getPersonSchema() {
     name: AUTHOR_NAME,
     url: SITE_URL,
     jobTitle: "Lead Pastor, Author, Founder",
-    description:
-      "Lead Pastor at First Baptist Church of Fenton, author of 25 books, and founder of the Pastors Connection Network.",
+    description: `Lead Pastor at First Baptist Church of Fenton, author of ${SITE_STATS.bookCount} books, and founder of the Pastors Connection Network.`,
     sameAs: [
       "https://pastorsconnectionnetwork.com",
       "https://substack.com/@jamesbell333289",

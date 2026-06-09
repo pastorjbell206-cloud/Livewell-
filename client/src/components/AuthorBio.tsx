@@ -5,6 +5,7 @@
  * no "journey," no therapy-speak. Self-implicating, weighted, unhurried.
  */
 import { Link } from "wouter";
+import { SITE_STATS } from "@/config/siteStats";
 
 interface AuthorBioProps {
   author?: string;
@@ -14,7 +15,7 @@ interface AuthorBioProps {
 }
 
 const JAMES_BELL_BIO =
-  "James Bell is Lead Pastor of First Baptist Church of Fenton and founder of the Pastors Connection Network. He came to faith from atheism, was raised without a father, and has five sons. Those last two facts shape everything he writes. He has been in ministry for over fifteen years and is the author of twenty-five books.";
+  `James Bell is Lead Pastor of First Baptist Church of Fenton and founder of the Pastors Connection Network. He came to faith from atheism, was raised without a father, and has five sons. Those last two facts shape everything he writes. He has been in ministry for over ${SITE_STATS.yearsInMinistryWord} years and is the author of ${SITE_STATS.bookCountWord} books.`;
 
 const JAMES_BELL_IMAGE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg";

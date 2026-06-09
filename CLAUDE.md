@@ -6,7 +6,7 @@
 
 ## Platform & Founder
 
-**LiveWell by James Bell** is the digital home of James Bell — Lead Pastor of First Baptist Church of Fenton (Michigan), founder of the Pastors Connection Network (PCN), author of 25 books. He came to faith from atheism. He was raised without a father. He has five sons. Those last two facts shape everything he writes.
+**LiveWell by James Bell** is the digital home of James Bell — Lead Pastor of First Baptist Church of Fenton (Michigan), founder of the Pastors Connection Network (PCN), author of 21 books. He came to faith from atheism. He was raised without a father. He has five sons. Those last two facts shape everything he writes.
 
 **Tagline:** Connecting the depth of theology to the weight of everyday life.
 
