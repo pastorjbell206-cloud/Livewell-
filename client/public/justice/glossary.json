@@ -1,0 +1,179 @@
+{
+  "terms": [
+    {
+      "term": "Anawim",
+      "hebrew": "anawim",
+      "short": "A Hebrew word for the poor, lowly, and powerless whom God is repeatedly shown to defend.",
+      "definition": "The anawim are the bent-down ones, the people who have no power of their own and so depend on God. In the Psalms and the Prophets, God hears their cry and takes their side, not because they are morally better but because no one else will protect them. Mary echoes this word in her song when she speaks of God lifting up the lowly. The term names a posture of dependence as much as a social rank.",
+      "seeAlso": ["Oppression", "The cry of the oppressed", "Mishpat", "Ger"]
+    },
+    {
+      "term": "Chesed",
+      "hebrew": "chesed",
+      "short": "Steadfast love, mercy, and covenant loyalty that keeps faith even when it is costly.",
+      "definition": "Chesed is the love that stays. It is the loyalty God shows to a people who break the covenant again and again, and the kindness He asks His people to show one another. English translations reach for several words at once, steadfast love, mercy, lovingkindness, because no single English word holds it. When the prophet Micah says God requires us to love mercy, the word is chesed.",
+      "seeAlso": ["Tsedaqah", "Mishpat", "Shalom"]
+    },
+    {
+      "term": "Christian nationalism",
+      "hebrew": "",
+      "short": "A contested term for the belief that a nation should be defined, governed, or privileged as explicitly Christian.",
+      "definition": "Christian nationalism describes the fusing of Christian identity with national identity, so that being a good citizen and being a faithful Christian are treated as the same thing. Supporters often mean only that faith should shape public life and that a country has Christian roots worth honoring, which many Christians across history have affirmed. Critics warn that the term, in its stronger forms, can baptize state power, blur the church into the flag, and treat religious minorities as outsiders in their own land. The phrase is used as both a self-description and an accusation, so it helps to ask what a given speaker actually means by it.",
+      "seeAlso": ["The two kingdoms", "The common good", "Natural law"]
+    },
+    {
+      "term": "Common grace",
+      "hebrew": "",
+      "short": "The idea that God gives gifts of goodness, order, and wisdom to all people, not only believers.",
+      "definition": "Common grace is the rain that falls on the just and the unjust alike. It names the conviction that God restrains evil and grants beauty, justice, art, and reason even outside the church, so that an unbeliever can build a fair law or a true bridge. The doctrine lets Christians honor what is good in the wider world without claiming it as their own possession. It is often paired with the recognition that this grace is real but not the same as saving grace.",
+      "seeAlso": ["Natural law", "The common good", "The image of God"]
+    },
+    {
+      "term": "Gleaning",
+      "hebrew": "",
+      "short": "The biblical practice of leaving the edges of a harvest unpicked so the poor and the foreigner could gather food.",
+      "definition": "Gleaning was a law in Israel, not a charity drive. Landowners were told to leave the corners of their fields and the dropped grain for the poor, the widow, and the resident foreigner to collect with their own hands. It preserved dignity, since people worked for what they gathered, while building care for the vulnerable into the economy itself. The book of Ruth turns on this law, as a foreign widow gleans in the field of a man who will become her protector.",
+      "seeAlso": ["Jubilee", "Ger", "Anawim", "Tsedaqah"]
+    },
+    {
+      "term": "Jubilee",
+      "hebrew": "yovel",
+      "short": "A commanded year of release in ancient Israel when debts were forgiven, slaves freed, and land returned to its original families.",
+      "definition": "Every fiftieth year, the law of Jubilee was meant to reset the economy so that no family stayed permanently trapped in debt or landlessness. Land went back to the households it had belonged to, indentured servants went free, and the accumulated weight of misfortune was lifted. Scholars debate how fully Israel ever practiced it, yet its vision shaped the prophets and the words of Jesus when He announced good news to the poor. It stands as a picture of a society that builds release and second chances into its laws.",
+      "seeAlso": ["Gleaning", "Shalom", "The prophetic tradition", "Mishpat"]
+    },
+    {
+      "term": "Lament",
+      "hebrew": "",
+      "short": "The honest, grieving cry to God over loss, injustice, and unanswered pain.",
+      "definition": "Lament is prayer that refuses to pretend everything is fine. A large share of the Psalms are laments, and a whole book is named for it, where the people sit in the rubble of a fallen city and tell God the truth about their grief. Lament holds together two things at once, real trust in God and real protest at the way things are. It is the language faith uses when comfort would be a lie.",
+      "seeAlso": ["The cry of the oppressed", "The prophetic tradition", "Oppression"]
+    },
+    {
+      "term": "Liberation theology",
+      "hebrew": "",
+      "short": "A contested movement, rooted in Latin America, that reads the Bible as God taking the side of the poor against oppression.",
+      "definition": "Liberation theology arose among Catholic thinkers in twentieth century Latin America who insisted that the gospel speaks directly to poverty, hunger, and political cruelty, and that God shows a preferential love for the poor. Its defenders point to the exodus, the prophets, and the words of Jesus to argue that faith must confront unjust structures, not only private sin. Its critics worry that some versions borrowed too heavily from Marxist analysis, reduced salvation to economics, or excused violence. The truth in it and the danger in it are both real, which is why careful readers neither swallow it whole nor dismiss it outright.",
+      "seeAlso": ["The social gospel", "Anawim", "Oppression", "The prophetic tradition"]
+    },
+    {
+      "term": "Mishpat",
+      "hebrew": "mishpat",
+      "short": "Justice as right judgment and right action, giving each person what they are due.",
+      "definition": "Mishpat is the Hebrew word usually translated justice. It means more than punishing wrongdoing, though it includes that. It means treating people equitably, defending the weak, and ordering a community so that the widow, the orphan, the foreigner, and the poor are not crushed. When the prophets demand that justice roll down like waters, mishpat is the word, and it always carries a concern for those who cannot defend themselves.",
+      "seeAlso": ["Tsedaqah", "Chesed", "Retributive justice", "Restorative justice", "Anawim"]
+    },
+    {
+      "term": "Natural law",
+      "hebrew": "",
+      "short": "The idea that there is a moral order built into creation and human nature, knowable in part by reason.",
+      "definition": "Natural law holds that right and wrong are not invented by governments but woven into the way things are, so that even people without the Bible can sense that murder and theft are wrong. Thinkers from Aristotle to Thomas Aquinas developed it, and it has shaped Western law and ideas of human rights. It offers common ground for moral argument between believers and unbelievers. Critics note that people disagree sharply about what nature actually requires, which can make appeals to it less settled than they sound.",
+      "seeAlso": ["Common grace", "The common good", "The image of God"]
+    },
+    {
+      "term": "Oppression",
+      "hebrew": "ashaq",
+      "short": "The biblical category for the crushing or exploiting of the weak by those with more power.",
+      "definition": "In Scripture oppression is a specific sin, not a vague mood. The Hebrew words picture the strong pressing down on the weak, withholding wages, seizing land, perverting courts, and grinding the faces of the poor. It can be done by individuals or built into laws and systems, and the prophets condemn both. The Bible treats oppression as something God sees, hears, and moves against, which is why the cry of the oppressed is never ignored in its pages.",
+      "seeAlso": ["The cry of the oppressed", "Anawim", "Mishpat", "The prophetic tradition"]
+    },
+    {
+      "term": "Restorative justice",
+      "hebrew": "",
+      "short": "An approach to justice that aims to repair harm and restore relationships rather than only to punish.",
+      "definition": "Restorative justice asks who was hurt, what they need, and how the offender can help make it right, often bringing victim and wrongdoer into direct conversation. Supporters see deep biblical roots in it, since the law often required a thief to repay what was taken and then some, restoring the victim rather than merely jailing the offender. Critics caution that it can be applied in ways that pressure victims, downplay accountability, or fail to protect a community from real danger. At its best it seeks repair, at its worst it can blur the line between mercy and excuse, so it is worth asking how a given program actually works.",
+      "seeAlso": ["Retributive justice", "Mishpat", "Shalom", "Chesed"]
+    },
+    {
+      "term": "Retributive justice",
+      "hebrew": "",
+      "short": "Justice understood as giving wrongdoers the punishment they deserve, in proportion to the wrong.",
+      "definition": "Retributive justice rests on the conviction that wrongdoing deserves a response and that the response should fit the crime, no more and no less. The old rule of an eye for an eye was actually a limit on revenge, capping punishment so it could not exceed the offense. Scripture takes guilt and consequence seriously, and many Christians hold that fair punishment honors both the victim and the moral order. Others stress that retribution alone, cut off from mercy and repair, can harden into mere vengeance, which is why it is often weighed alongside restorative aims.",
+      "seeAlso": ["Restorative justice", "Mishpat", "Oppression"]
+    },
+    {
+      "term": "Shalom",
+      "hebrew": "shalom",
+      "short": "Peace understood as wholeness, flourishing, and right relationship in every direction.",
+      "definition": "Shalom is far wider than the absence of conflict. It is the way things are meant to be, where people are at peace with God, with one another, with themselves, and with the land. It includes health, fairness, safety, and enough for everyone, a world without the cracks that injustice opens. When the prophets condemn those who say peace, peace, when there is no peace, they are mourning a counterfeit shalom that papers over real wounds.",
+      "seeAlso": ["Tsedaqah", "Mishpat", "Jubilee", "The common good"]
+    },
+    {
+      "term": "Solidarity",
+      "hebrew": "",
+      "short": "The commitment to stand with others as bound to them, sharing their burdens as if they were our own.",
+      "definition": "Solidarity names the truth that we belong to one another and are responsible for one another. It treats another person's hunger or grief not as a distant problem but as a claim on me, because we are members of one body. In Christian thought it flows from the conviction that all people bear the image of God and that Christ joined Himself to human suffering. It asks more than sympathy, calling for the kind of love that shows up and stays.",
+      "seeAlso": ["Subsidiarity", "The common good", "Chesed", "The image of God"]
+    },
+    {
+      "term": "Subsidiarity",
+      "hebrew": "",
+      "short": "The principle that decisions and care should rest at the most local level able to handle them well.",
+      "definition": "Subsidiarity holds that families, congregations, and neighborhoods should not be swallowed up by distant authorities when they can act for themselves. Higher powers exist to help and protect the smaller communities, stepping in only when those nearer the need cannot meet it. It is meant to guard human dignity against both an overbearing state and a society where no one helps anyone. Paired with solidarity, it keeps care close without abandoning those whose local supports have failed.",
+      "seeAlso": ["Solidarity", "The common good", "Natural law"]
+    },
+    {
+      "term": "The anawim",
+      "hebrew": "anawim",
+      "short": "See Anawim, the poor and lowly whom God is shown to defend.",
+      "definition": "This is the same term as Anawim, listed here as readers often meet it with the English article attached. It refers to the humble and afflicted of the Old Testament, those without power who put their hope in God. The Prophets and the Psalms present God as their defender, and the New Testament carries the theme forward in the lowly people who first receive the gospel.",
+      "seeAlso": ["Anawim", "Oppression", "The cry of the oppressed"]
+    },
+    {
+      "term": "The common good",
+      "hebrew": "",
+      "short": "The shared conditions of life that let every member of a community flourish, not just the powerful or the majority.",
+      "definition": "The common good is what is good for all of us together, the roads, laws, trust, and safety that no one builds alone and everyone depends on. It is not simply the greatest good for the greatest number, since it refuses to trade away the weak for the comfort of the strong. Christian thought ties it to the truth that each person matters and that we are made for life with others. Seeking it means asking not only what helps me but what helps the whole body thrive.",
+      "seeAlso": ["Solidarity", "Subsidiarity", "Shalom", "Common grace"]
+    },
+    {
+      "term": "The cry of the oppressed",
+      "hebrew": "",
+      "short": "The biblical theme that God hears and answers the voice of those who are wronged and have no other help.",
+      "definition": "Again and again Scripture says that the cry of the suffering rises to God and that He responds. He hears the groaning of slaves in Egypt, the blood of the murdered crying from the ground, and the wages of workers held back by the rich. The cry need not be a formal prayer, since God is moved by the sheer fact of unanswered injustice. This theme tells the powerless that their pain is seen even when no human court will hear it.",
+      "seeAlso": ["Oppression", "Anawim", "Lament", "The prophetic tradition"]
+    },
+    {
+      "term": "The image of God",
+      "hebrew": "tselem elohim",
+      "short": "The teaching that every human being is made in God's image and so carries inviolable worth and dignity.",
+      "definition": "The phrase comes from the opening pages of the Bible, where humanity is made in the image of God, often given in its Latin form as imago Dei. It means that every person, regardless of usefulness, status, ability, or behavior, bears a likeness to God that grants them dignity no one may erase. This conviction grounds much of the case against oppression, since to crush a person is to assault the image they carry. It is one of the deepest reasons Scripture treats justice as a matter of how we treat the least powerful.",
+      "seeAlso": ["Solidarity", "The common good", "Natural law", "Oppression"]
+    },
+    {
+      "term": "The prophetic tradition",
+      "hebrew": "",
+      "short": "The line of biblical voices who confronted kings and crowds with God's demand for justice and faithfulness.",
+      "definition": "The prophets were not mainly fortune-tellers but truth-tellers, sent to name the sins a society had learned to ignore. Figures like Amos, Isaiah, Micah, and Jeremiah indicted empty worship that ran alongside cheating the poor and bending the courts. They spoke with grief and fire, refusing to soften the verdict, yet they also held out a hope that the world could be set right. To stand in the prophetic tradition is to tell that same hard truth about the present, including one's own complicity.",
+      "seeAlso": ["Lament", "Mishpat", "Oppression", "The social gospel"]
+    },
+    {
+      "term": "The social gospel",
+      "hebrew": "",
+      "short": "A contested movement that stressed applying the gospel to social ills like poverty, labor abuse, and injustice.",
+      "definition": "The social gospel arose mainly among Protestants in the late nineteenth and early twentieth centuries, insisting that following Jesus meant confronting slums, child labor, and exploitation, not only saving individual souls. Its strength was recovering the biblical link between faith and justice that comfortable churches had let slip. Its weakness, in some forms, was reducing salvation to social reform and losing the call to personal repentance and the cross. Many Christians today try to keep its concern for the poor while rejecting the parts that hollowed out the gospel.",
+      "seeAlso": ["Liberation theology", "The prophetic tradition", "Mishpat", "The common good"]
+    },
+    {
+      "term": "The two kingdoms",
+      "hebrew": "",
+      "short": "A framework, strongest in Lutheran thought, that distinguishes how God rules through the church from how He rules through worldly government.",
+      "definition": "The two kingdoms doctrine teaches that God governs in two ways at once, through the gospel in the church and through law and the sword in civil society. It tries to keep the church from grabbing political power and the state from claiming the role of the gospel, giving each its proper work. Supporters value how it guards against tying faith too tightly to any regime. Critics worry it can be used to silence Christian witness on public injustice, and Christians disagree about exactly where the line between the kingdoms falls.",
+      "seeAlso": ["Christian nationalism", "Natural law", "The common good"]
+    },
+    {
+      "term": "Tsedaqah",
+      "hebrew": "tsedaqah",
+      "short": "Righteousness understood as living rightly within relationships and dealing fairly with others.",
+      "definition": "Tsedaqah is often translated righteousness, but it is not mainly private piety. It describes right relationship, the conduct of a person who meets their duties to God and neighbor and so keeps the community whole. In the Bible it is almost a twin of mishpat, the two words appearing side by side, so that doing justice and being righteous are nearly the same act. To practice tsedaqah is to live in a way that gives others their due and repairs what is broken between people.",
+      "seeAlso": ["Mishpat", "Chesed", "Shalom"]
+    },
+    {
+      "term": "Ger",
+      "hebrew": "ger",
+      "short": "The sojourner or resident foreigner living among God's people, given special protection in the law.",
+      "definition": "The ger is the outsider who has come to live in the land without the standing of a native, often vulnerable and easy to exploit. The law repeatedly commands Israel to love the ger, to leave food for them, and to treat them fairly, grounding the command in memory, since Israel was once a foreigner in Egypt. The ger stands with the widow and the orphan as one of the people God watches over with particular care. The term shapes much biblical reflection on how a community treats those who do not yet belong.",
+      "seeAlso": ["Gleaning", "Anawim", "Oppression", "Mishpat"]
+    }
+  ]
+}

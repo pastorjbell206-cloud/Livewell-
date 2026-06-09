@@ -63,6 +63,12 @@ function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLin
             { label: "Hard Questions", href: "/theology/questions", description: "Honest answers to what people actually ask — suffering, salvation, the Bible, death, and doubt." },
             { label: "Why So Many Churches?", href: "/theology/traditions", description: "An irenic guide to the great traditions and the core they all share." },
           ]
+        : pillar === "Prophetic Justice"
+        ? [
+            { label: "The Justice Hub", href: "/justice", description: "The gospel's call to justice and honest truth, without taking a tribe — the left and the right indicted alike." },
+            { label: "The Consistency Check", href: "/justice/consistency", description: "A mirror, not a scorecard: do you defend truth selectively, one standard for your side and another for theirs?" },
+            { label: "Justice Questions", href: "/justice/questions", description: "Is the gospel political? Is Christianity left or right? What even is social justice?" },
+          ]
         : [];
     if (subs.length === 0) {
       // No populated sub-pathway. Still surface Family for Integrated Life.
