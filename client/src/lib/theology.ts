@@ -96,16 +96,16 @@ export interface DoctrineIndexEntry {
  */
 export const DOCTRINE_INDEX: DoctrineIndexEntry[] = [
   // Pillar 1 — Systematic theology
-  { slug: "scripture", pillar: "Systematic", title: "What Is the Bible, and Can We Trust It?", blurb: "Revelation, inspiration, inerrancy and infallibility, and how the church received the canon.", triage: "second-order", ready: false },
-  { slug: "god-and-trinity", pillar: "Systematic", title: "Who Is God? The Trinity", blurb: "One God in three persons. The doctrine that holds the whole faith together.", triage: "first-order", ready: false },
-  { slug: "creation", pillar: "Systematic", title: "Creation and Providence", blurb: "How God made the world and how he holds it, including the age-of-the-earth debate.", triage: "third-order", ready: false },
-  { slug: "anthropology", pillar: "Systematic", title: "What Is a Human Being?", blurb: "The image of God, body and soul, male and female.", triage: "second-order", ready: false },
-  { slug: "sin", pillar: "Systematic", title: "Sin and the Fall", blurb: "What went wrong, original sin, and the reach of the damage.", triage: "second-order", ready: false },
-  { slug: "christology", pillar: "Systematic", title: "Who Is Jesus?", blurb: "Fully God and fully man, and why the church fought so hard to say it right.", triage: "first-order", ready: false },
-  { slug: "holy-spirit", pillar: "Systematic", title: "The Holy Spirit and His Gifts", blurb: "The person of the Spirit, and whether the miraculous gifts continue today.", triage: "second-order", ready: false },
+  { slug: "scripture", pillar: "Systematic", title: "What Is the Bible, and Can We Trust It?", blurb: "Revelation, inspiration, inerrancy and infallibility, and how the church received the canon.", triage: "second-order", ready: true },
+  { slug: "god-and-trinity", pillar: "Systematic", title: "Who Is God? The Trinity", blurb: "One God in three persons. The doctrine that holds the whole faith together.", triage: "first-order", ready: true },
+  { slug: "creation", pillar: "Systematic", title: "Creation and Providence", blurb: "How God made the world and how he holds it, including the age-of-the-earth debate.", triage: "third-order", ready: true },
+  { slug: "anthropology", pillar: "Systematic", title: "What Is a Human Being?", blurb: "The image of God, body and soul, male and female.", triage: "second-order", ready: true },
+  { slug: "sin", pillar: "Systematic", title: "Sin and the Fall", blurb: "What went wrong, original sin, and the reach of the damage.", triage: "second-order", ready: true },
+  { slug: "christology", pillar: "Systematic", title: "Who Is Jesus?", blurb: "Fully God and fully man, and why the church fought so hard to say it right.", triage: "first-order", ready: true },
+  { slug: "holy-spirit", pillar: "Systematic", title: "The Holy Spirit and His Gifts", blurb: "The person of the Spirit, and whether the miraculous gifts continue today.", triage: "second-order", ready: true },
   { slug: "soteriology", pillar: "Systematic", title: "How Are We Saved?", blurb: "Grace, election, and the human will. The deepest of the family disagreements.", triage: "second-order", ready: true },
-  { slug: "church", pillar: "Systematic", title: "What Is the Church?", blurb: "Baptism, the Lord's Supper, government, and who belongs.", triage: "second-order", ready: false },
-  { slug: "last-things", pillar: "Systematic", title: "How Does It End?", blurb: "Death, the return of Christ, the millennium, judgment, and the new creation.", triage: "third-order", ready: false },
+  { slug: "church", pillar: "Systematic", title: "What Is the Church?", blurb: "Baptism, the Lord's Supper, government, and who belongs.", triage: "second-order", ready: true },
+  { slug: "last-things", pillar: "Systematic", title: "How Does It End?", blurb: "Death, the return of Christ, the millennium, judgment, and the new creation.", triage: "third-order", ready: true },
   // Pillar 2 — Church history
   { slug: "early-church", pillar: "History", title: "The Early Church and the Councils", blurb: "From the apostles to Nicaea and Chalcedon, and the heresies that forced the church to speak.", triage: "first-order", ready: false },
   // Pillar 3 — Biblical theology

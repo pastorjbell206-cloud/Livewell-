@@ -258,12 +258,16 @@ always labeled as a judgment held tentatively, never as settled fact.
 - [x] Doctrine page template (renders any doctrine JSON through the six steps)
 - [x] Triage badge component and triage vocabulary
 - [x] Hub landing with the full doctrine map
-- [x] Worked example: soteriology (Calvinism, Arminianism, Provisionism)
+- [x] Pillar 1 systematic theology complete: Scripture, God and the Trinity,
+      creation, anthropology, sin, Christology, the Holy Spirit, soteriology,
+      the church, and the last things, each worked end to end in the six-step
+      method (around 42,000 words). First-order doctrines present orthodoxy in
+      its own voice, then the historic heresies as teaching tools.
 - [x] Routes and the Theological Depth nav entry
 - [x] Passage Context Tool (book metadata for all 66 books, genre guidance,
       contested-passage notes, runtime WEB text fetch with fallback, surfaced
       on the hub and in the Tools hub)
-- [ ] Remaining Pillar 1 doctrines, then Pillars 2 and 3
+- [ ] Pillar 2 (church history) and Pillar 3 (biblical theology)
 - [ ] Companion interactive tools
 
 Drafts for James to confirm and personalize: the Pillar 0 author's lens and the
