@@ -59,10 +59,22 @@ function LinkCard({ href, title, desc, external }: { href: string; title: string
 
 const grid = { display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px" } as const;
 
+function PostCard({ slug, title, excerpt }: { slug: string; title: string; excerpt?: string | null }) {
+  return (
+    <Link href={`/writing/${slug}`} style={card}>
+      <div style={{ fontFamily: "var(--F)", fontSize: "19px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px", lineHeight: 1.25 }}>{title}</div>
+      {excerpt && <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{excerpt.slice(0, 130)}{excerpt.length > 130 ? "…" : ""}</div>}
+    </Link>
+  );
+}
+
 export default function Family() {
   const postsQuery = trpc.posts.listPublished.useQuery();
   const posts = postsQuery.data ?? [];
   const teen = posts.filter((p) => p.slug.startsWith("teen-"));
+  const apologetics = posts.filter((p) => p.slug.startsWith("apologetics-"));
+  const parentingArticles = posts.filter((p) => p.slug.startsWith("parenting-"));
+  const marriageArticles = posts.filter((p) => p.slug.startsWith("marriage-"));
 
   const [devotions, setDevotions] = useState<Devotion[]>([]);
   const [openDev, setOpenDev] = useState<string | null>(null);
@@ -183,11 +195,24 @@ export default function Family() {
         </div>
       </section>
 
+      {/* APOLOGETICS LIBRARY */}
+      {apologetics.length > 0 && (
+        <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
+          <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+            <SectionHead kicker="For the asking" title="The apologetics library" blurb="The hardest questions, answered honestly — morality, suffering, hell, miracles, the hiddenness of God, the failures of the church, and whether faith is reasonable at all. For the teenager and the skeptic both." />
+            <div style={grid}>
+              {apologetics.map((p) => <PostCard key={p.slug} slug={p.slug} title={p.title} excerpt={p.excerpt} />)}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* PARENTING */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <SectionHead kicker="Raising them in the faith" title="Parenting" blurb="The work no one applauds, done where no congregation watches. Scripture for the real moments, plus writing and tools for the long obedience of raising children who can carry weight." />
           <div style={grid}>
+            {parentingArticles.map((p) => <PostCard key={p.slug} slug={p.slug} title={p.title} excerpt={p.excerpt} />)}
             <LinkCard href="/tools/parenting-verses" title="Parenting Bible verses" desc="Scripture for fear, anger, identity, obedience, screens, and doubt — each with a short note for the parent." />
             <LinkCard href="/parenting" title="On parenting" desc="Essays on raising children in the faith without crushing them." />
             <LinkCard href="/tools/parenting-guide" title="Parenting stage guide" desc="Age-specific guidance from toddlers to young adults, and one practice to start this week." />
@@ -201,6 +226,7 @@ export default function Family() {
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <SectionHead kicker="The center of the home" title="Marriage" blurb="A home is built on a covenant before it is built on anything else. Writing and a real assessment for the marriage your family is standing on." />
           <div style={grid}>
+            {marriageArticles.map((p) => <PostCard key={p.slug} slug={p.slug} title={p.title} excerpt={p.excerpt} />)}
             <LinkCard href="/marriage" title="On marriage" desc="Covenant, not contract. Marriage through the long middle." />
             <LinkCard href="/tools/marriage-assessment" title="Marriage health assessment" desc="A 15-question diagnostic across communication, trust, conflict, and shared vision." />
             <LinkCard href="/writing/covenant-vs-contract-what-marriage-is" title="Covenant vs. contract" desc="What marriage actually is, and why the difference holds it together." />
