@@ -63,11 +63,16 @@ function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLin
             { label: "Hard Questions", href: "/theology/questions", description: "Honest answers to what people actually ask — suffering, salvation, the Bible, death, and doubt." },
             { label: "Why So Many Churches?", href: "/theology/traditions", description: "An irenic guide to the great traditions and the core they all share." },
           ]
+        : pillar === "Prophetic Disruption"
+        ? [
+            { label: "The Disruption Hub", href: "/disruption", description: "The church's captivity to tribe, nation, and culture — truth defended selectively, the left and the right indicted alike." },
+            { label: "The Consistency Check", href: "/disruption/consistency", description: "A mirror, not a scorecard: do you defend truth selectively, one standard for your side and another for theirs?" },
+            { label: "Hard Questions", href: "/disruption/questions", description: "Is the gospel political? Is Christianity left or right? What even is social justice?" },
+          ]
         : pillar === "Prophetic Justice"
         ? [
-            { label: "The Justice Hub", href: "/justice", description: "The gospel's call to justice and honest truth, without taking a tribe — the left and the right indicted alike." },
-            { label: "The Consistency Check", href: "/justice/consistency", description: "A mirror, not a scorecard: do you defend truth selectively, one standard for your side and another for theirs?" },
-            { label: "Justice Questions", href: "/justice/questions", description: "Is the gospel political? Is Christianity left or right? What even is social justice?" },
+            { label: "The Justice Hub", href: "/justice", description: "Mishpat and tsedaqah — the poor at the gate, the worker, the vulnerable, and the church's silence." },
+            { label: "The Call", href: "/justice/posture", description: "Biblical justice defined from the text up, and God's lean toward the poor and the foreigner." },
           ]
         : [];
     if (subs.length === 0) {

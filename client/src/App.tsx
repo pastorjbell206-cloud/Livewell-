@@ -4,6 +4,7 @@ import NotFound from "@/pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { Route, Switch, useLocation } from "wouter";
 import { Suspense, lazy, useEffect } from "react";
+import { JUSTICE, DISRUPTION } from "./lib/prophetic";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { ToastProvider } from "./contexts/ToastContext";
@@ -66,12 +67,12 @@ const TheologyQuestions = lazy(() => import("./pages/TheologyQuestions"));
 const TheologyTraditions = lazy(() => import("./pages/TheologyTraditions"));
 const TheologySearch = lazy(() => import("./pages/TheologySearch"));
 const TheologyPaths = lazy(() => import("./pages/TheologyPaths"));
-const Justice = lazy(() => import("./pages/justice/Justice"));
-const JusticePosture = lazy(() => import("./pages/justice/JusticePosture"));
-const JusticeTopic = lazy(() => import("./pages/justice/JusticeTopic"));
-const JusticeConsistency = lazy(() => import("./pages/justice/JusticeConsistency"));
-const JusticeGlossary = lazy(() => import("./pages/justice/JusticeGlossary"));
-const JusticeQuestions = lazy(() => import("./pages/justice/JusticeQuestions"));
+const PropheticHub = lazy(() => import("./pages/prophetic/PropheticHub"));
+const PropheticPosture = lazy(() => import("./pages/prophetic/PropheticPosture"));
+const PropheticTopic = lazy(() => import("./pages/prophetic/PropheticTopic"));
+const PropheticConsistency = lazy(() => import("./pages/prophetic/PropheticConsistency"));
+const PropheticGlossary = lazy(() => import("./pages/prophetic/PropheticGlossary"));
+const PropheticQuestions = lazy(() => import("./pages/prophetic/PropheticQuestions"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
 const SermonOutline = lazy(() => import("./pages/tools/SermonOutline"));
@@ -169,12 +170,16 @@ function Router() {
         <Route path="/theology/traditions" component={TheologyTraditions} />
         <Route path="/theology/search" component={TheologySearch} />
         <Route path="/theology/paths" component={TheologyPaths} />
-        <Route path="/justice/posture" component={JusticePosture} />
-        <Route path="/justice/consistency" component={JusticeConsistency} />
-        <Route path="/justice/glossary" component={JusticeGlossary} />
-        <Route path="/justice/questions" component={JusticeQuestions} />
-        <Route path="/justice/topic/:slug" component={JusticeTopic} />
-        <Route path="/justice" component={Justice} />
+        <Route path="/disruption/posture"><PropheticPosture config={DISRUPTION} /></Route>
+        <Route path="/disruption/consistency"><PropheticConsistency config={DISRUPTION} /></Route>
+        <Route path="/disruption/glossary"><PropheticGlossary config={DISRUPTION} /></Route>
+        <Route path="/disruption/questions"><PropheticQuestions config={DISRUPTION} /></Route>
+        <Route path="/disruption/topic/:slug"><PropheticTopic config={DISRUPTION} /></Route>
+        <Route path="/disruption"><PropheticHub config={DISRUPTION} /></Route>
+        <Route path="/justice/posture"><PropheticPosture config={JUSTICE} /></Route>
+        <Route path="/justice/glossary"><PropheticGlossary config={JUSTICE} /></Route>
+        <Route path="/justice/topic/:slug"><PropheticTopic config={JUSTICE} /></Route>
+        <Route path="/justice"><PropheticHub config={JUSTICE} /></Route>
         <Route path="/theology/how-to-use" component={TheologyMethodology} />
         <Route path="/theology/doctrine/:slug" component={TheologyDoctrine} />
         <Route path="/theology" component={Theology} />
