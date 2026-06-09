@@ -291,7 +291,13 @@ always labeled as a judgment held tentatively, never as settled fact.
       library (/theology/creeds), the hermeneutics trainer
       (/theology/hermeneutics), and the which-view diagnostic
       (/theology/which-view), all surfaced in the Study tools grid on the hub
-- [ ] Optional future: a word-study tool and a reading-plan generator
+- [x] Front-door additions: a Hard Questions hub (/theology/questions, 28
+      questions answered fairly and routed into the doctrines and passages), a
+      'Why so many churches?' traditions guide (/theology/traditions), a
+      unified section search (/theology/search), and guided learning paths
+      (/theology/paths). The Passage Context Tool now accepts /theology/passage
+      ?ref= deep links so search and questions can link straight to a passage.
+- [ ] Optional future: a standalone word-study tool
 
 Drafts for James to confirm and personalize: the Pillar 0 author's lens and the
 soteriology Weighing It section. Both state his own theological judgments.

@@ -131,6 +131,15 @@ export default function PassageContext() {
   const books = data?.books ?? [];
   const pickBookMeta = books.find((b) => b.book === pickBook);
 
+  // Deep link: /theology/passage?ref=John 3:16 resolves automatically once the
+  // book metadata has loaded, so search results and other pages can link in.
+  useEffect(() => {
+    if (books.length === 0 || parsed) return;
+    const ref = new URLSearchParams(window.location.search).get("ref");
+    if (ref) { setInput(ref); resolve(parseReference(ref, books), ref); }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [books.length]);
+
   function resolve(p: Parsed | null, raw: string) {
     if (!p) { setError(`Could not read '${raw}'. Try a form like John 6:44 or Romans 9:14-18.`); return; }
     setError(null);

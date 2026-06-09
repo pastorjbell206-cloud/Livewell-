@@ -26,6 +26,13 @@ export default function TheologyGlossary() {
       .catch(() => {});
   }, []);
 
+  // Scroll to a term if the URL carries its anchor (used by search deep links).
+  useEffect(() => {
+    if (terms.length === 0) return;
+    const hash = window.location.hash.replace("#", "");
+    if (hash) setTimeout(() => document.getElementById(hash)?.scrollIntoView({ behavior: "smooth", block: "start" }), 80);
+  }, [terms]);
+
   const docTitle = (slug: string) => DOCTRINE_INDEX.find((d) => d.slug === slug && d.ready)?.title;
 
   const filtered = useMemo(() => {
@@ -81,7 +88,7 @@ export default function TheologyGlossary() {
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 400, color: "var(--mustard-text)", marginBottom: "var(--s-3)", paddingBottom: "6px", borderBottom: "2px solid var(--mustard)" }}>{letter}</h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                 {items.map((t) => (
-                  <div key={t.term} id={t.term.toLowerCase().replace(/\s+/g, "-")} style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)" }}>
+                  <div key={t.term} id={t.term.toLowerCase().replace(/\s+/g, "-")} style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)", scrollMarginTop: "90px" }}>
                     <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: "10px", marginBottom: "6px" }}>
                       <span style={{ fontFamily: "var(--F)", fontSize: "21px", fontWeight: 500, color: "var(--ink)" }}>{t.term}</span>
                       {t.pronunciation && <span style={{ fontFamily: "var(--B)", fontSize: "13px", fontStyle: "italic", color: "var(--ink-muted)" }}>{t.pronunciation}</span>}
