@@ -991,7 +991,7 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
       }
       case "posts.backfillSubPathways": {
         if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
-        const items: { id?: number; slug?: string; sub?: string | null; series?: boolean }[] =
+        const items: { id?: number; slug?: string; pillar?: string | null; sub?: string | null; series?: boolean }[] =
           Array.isArray(input?.items) ? input.items : [];
         let updated = 0;
         const missing: (number | string)[] = [];
@@ -1001,11 +1001,16 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
             for (const it of items) {
               const sub = it.sub ?? null;
               const series = it.series ? 1 : 0;
+              const pillar = it.pillar ?? null;
+              // When a pillar is supplied, correct it too (many posts move out of
+              // the catch-all). Otherwise only tag the sub-pathway + series flag.
+              const cols = pillar ? "pillar = ?, subPathway = ?, isSeries = ?" : "subPathway = ?, isSeries = ?";
+              const vals = pillar ? [pillar, sub, series] : [sub, series];
               let res2: any;
               if (it.id != null) {
-                [res2] = await c.execute("UPDATE posts SET subPathway = ?, isSeries = ? WHERE id = ?", [sub, series, it.id]);
+                [res2] = await c.execute(`UPDATE posts SET ${cols} WHERE id = ?`, [...vals, it.id]);
               } else if (it.slug) {
-                [res2] = await c.execute("UPDATE posts SET subPathway = ?, isSeries = ? WHERE slug = ?", [sub, series, it.slug]);
+                [res2] = await c.execute(`UPDATE posts SET ${cols} WHERE slug = ?`, [...vals, it.slug]);
               } else { continue; }
               if (res2 && res2.affectedRows > 0) updated++; else missing.push(it.id ?? it.slug ?? "?");
             }

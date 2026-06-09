@@ -206,16 +206,17 @@ export async function migrateTaxonomy() {
   return { added, alreadyPresent: added.length === 0, error: null as string | null };
 }
 
-/** Backfill subPathway + isSeries by id (or slug). Never touches pillar. */
+/** Backfill pillar (optional) + subPathway + isSeries by id (or slug). */
 export async function backfillSubPathways(
-  items: { id?: number; slug?: string; sub?: string | null; series?: boolean }[]
+  items: { id?: number; slug?: string; pillar?: string | null; sub?: string | null; series?: boolean }[]
 ) {
   const db = await getDb();
   if (!db) throw new Error("Database not available");
   let updated = 0;
   const missing: (number | string)[] = [];
   for (const it of items) {
-    const set = { subPathway: it.sub ?? null, isSeries: !!it.series };
+    const set: any = { subPathway: it.sub ?? null, isSeries: !!it.series };
+    if (it.pillar) set.pillar = it.pillar;
     if (it.id != null) { await db.update(posts).set(set).where(eq(posts.id, it.id)); updated++; }
     else if (it.slug) { await db.update(posts).set(set).where(eq(posts.slug, it.slug)); updated++; }
     else missing.push("?");

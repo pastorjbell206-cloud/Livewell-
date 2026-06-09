@@ -138,6 +138,7 @@ export const appRouter = router({
         items: z.array(z.object({
           id: z.number().optional(),
           slug: z.string().optional(),
+          pillar: z.string().nullable().optional(),
           sub: z.string().nullable().optional(),
           series: z.boolean().optional(),
         })),
