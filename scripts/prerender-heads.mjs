@@ -46,7 +46,7 @@ const STATIC_PAGES = [
   {
     path: "/about",
     title: "About James Bell",
-    description: "Lead Pastor of First Baptist Church of Fenton, founder of the Pastors Connection Network, author of twenty-five books. Came to faith from atheism. Raised without a father. Five sons.",
+    description: "Lead Pastor of First Baptist Church of Fenton, founder of the Pastors Connection Network, author of twenty-one books. Came to faith from atheism. Raised without a father. Five sons.",
     type: "profile",
     schemas: [personSchema()],
   },
@@ -59,7 +59,7 @@ const STATIC_PAGES = [
   {
     path: "/books",
     title: "Books — by James Bell",
-    description: "Books on theology, ministry, marriage, and the Christian life. Twenty-five titles spanning church leadership, prophetic justice, and the integrated life.",
+    description: "Books on theology, ministry, marriage, and the Christian life. Twenty-one titles spanning church leadership, prophetic justice, and the integrated life.",
     type: "website",
   },
   {
@@ -132,7 +132,7 @@ function personSchema() {
     url: SITE_URL,
     jobTitle: "Lead Pastor, Author, Founder",
     description:
-      "Lead Pastor at First Baptist Church of Fenton, author of twenty-five books, and founder of the Pastors Connection Network.",
+      "Lead Pastor at First Baptist Church of Fenton, author of twenty-one books, and founder of the Pastors Connection Network.",
     sameAs: [
       "https://pastorsconnectionnetwork.com",
       "https://substack.com/@jamesbell333289",
