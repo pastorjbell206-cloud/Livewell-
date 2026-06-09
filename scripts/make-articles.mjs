@@ -154,6 +154,50 @@ const reformation = [
 `Taylor, Charles. 2007. A Secular Age. Cambridge, MA: Belknap Press.`,
 ].join("\n\n");
 
+const greatAwakenings = [
+`American Christianity was born in fire, and the fire left a mark that is both its genius and its wound.`,
+`Twice the country was swept by mass revival, and both times it changed not only how many Americans believed but what believing was. The First Great Awakening broke out in the 1730s and 1740s, when Jonathan Edwards preached and a young Anglican named George Whitefield crossed the colonies drawing crowds of thousands in open fields, and people wept and collapsed and were converted where they stood. The Second came around the turn of the next century, the camp meetings on the frontier, Cane Ridge in Kentucky in 1801 where thousands gathered for days, and the revivalism of Charles Finney, who taught that a revival was not a miracle to be awaited but a result a preacher could produce with the right methods. Out of these two fires came the recognizable shape of American faith. Personal. Emotional. Built on a datable conversion, a moment you were born again.`,
+`Take the strongest case for the revivals, because there is a real one. The conversions were often genuine and lasting, and the awakened faith poured itself into reform. The Second Great Awakening fueled the abolitionist movement, the founding of colleges, the care of the poor, the missionary surge that carried the gospel around the world. A faith of the heart rather than a merely inherited and formal religion is exactly what Edwards was defending, and Scripture is on his side, since the first commandment is to love God with all your heart. Pentecost itself, in the second chapter of Acts, was a public outpouring that looked like drunken chaos to the onlookers before it looked like God.`,
+`But Edwards, the greatest mind the awakenings produced, spent his best book warning that not every flame is the Spirit. In his treatise on the religious affections, in 1746, he set himself the hardest question a revival raises, how to tell true religious feeling from false, and his answer was unflinching. The test of a genuine work of God is not the intensity of the emotion. Tears and trembling and ecstasy can all be counterfeited or self-produced. The test is the fruit, a changed life and a new and lasting love for God and neighbor that remains after the meeting ends (Edwards 1959). Heat is not light. A strong feeling is not the Holy Spirit.`,
+`And here the wound shows itself. Nathan Hatch has shown how the awakenings democratized American religion, stripping authority from the educated clergy and the old institutions and handing it to the individual, the itinerant, the common person and his experience (Hatch 1989). This was liberating, and it was corrosive. Finney's new measures treated conversion as a technique to be engineered. The line from there runs straight to revivalism as manipulation, to a deep anti-intellectualism, and to the believer who trusts the warmth in his chest over the creed, the Scripture, and the church. Mark Noll's verdict on the long result is severe, that American evangelicalism, for all its energy, became a movement that never learned to love God with its mind (Noll 1994).`,
+`Here is the reversal. The thing that looks like America's most authentic religious genius, the personal experience, the unmediated encounter, the faith you can feel, is also the taproot of its deepest distortion. The buffered modern believer who needs no church and no tradition because he has his own experience of Jesus did not come from secular culture. He came from the revival tent. The awakening that freed the believer from dead formalism also cut him loose from the one community that could ever test whether his feeling was the Spirit or only himself.`,
+`I preach for conversions, and I want the room to feel something, and I know exactly how to manufacture the feeling, the music under the appeal, the pause, the story, the lowered voice. I have at times mistaken the warmth I produced for the work only God can do. Edwards's question is the one I have to keep asking of my own ministry, and it does not flatter me. Is this fruit, or is it only heat.`,
+`The awakenings gave America a faith that could be personally and urgently real, and in a world full of dead religion that is no small gift. They also taught it to trust the fire over the hearth, the moment over the long obedience, the feeling over the body of Christ. We are still living in both halves of that inheritance, and the test Edwards left is still the only way to tell them apart. Not how hot it burned. What it grew.`,
+`### Works Cited`,
+`Edwards, Jonathan. 1959. A Treatise Concerning Religious Affections. Edited by John E. Smith. New Haven: Yale University Press.`,
+`Hatch, Nathan O. 1989. The Democratization of American Christianity. New Haven: Yale University Press.`,
+`Noll, Mark A. 1994. The Scandal of the Evangelical Mind. Grand Rapids: Eerdmans.`,
+].join("\n\n");
+
+const denominations = [
+`Someone always brings up the number. There are thirty thousand Protestant denominations, the line goes, so how could anyone possibly know which one is right, and does the chaos not prove the whole thing is just people making it up as they go.`,
+`Start by being honest about the wound, because it is real and the New Testament treats it as a scandal. The night before he died, Jesus prayed that his people would be one as he and the Father are one, so that the world would believe (John 17:21). And the first generation was already failing him. In Corinth they were splitting into rival fan clubs, I follow Paul, I follow Apollos, I follow Cephas, and Paul turned on them with a question that should still sting. Is Christ divided (1 Corinthians 1:13 ESV). A fractured church is not a neutral fact. It is a contradiction of the gospel it preaches, and every honest Christian should feel the shame of it.`,
+`Steel-man the Catholic and Orthodox critique, which is the serious one. Protestantism cut the authority of the church loose and put a Bible in every hand, and the predictable result was fragmentation without end, because once every believer is his own final interpreter there is no one left to settle the disputes, and so the body keeps dividing. The visible oneness Christ prayed for is precisely the thing Protestantism seems unable to deliver. That argument has real force, and a Protestant who does not feel its weight is not paying attention.`,
+`But the famous number is a misuse, and the kind of misuse matters. The thirty thousand figure traces to a particular reference work that counts denominations nation by nation, so that one global communion present in a hundred countries gets counted a hundred times, and that folds in every small independent congregation that ever registered its own name. The source was measuring something other than what the slogan claims. Count actual distinct traditions, the real families of Christian conviction, and the figure is in the dozens, not the tens of thousands. The statistic is not evidence. It is a number stripped of its method and waved like a flag.`,
+`Now the reversal, the thing the division cannot hide. Take a Pentecostal in Lagos, a Greek Orthodox in Thessaloniki, a Catholic in Manila, and a Baptist in Alabama, traditions that have argued bitterly for centuries, and put them in one room, and watch how much they still hold in common. They confess the same creed, that God is Father, Son, and Spirit, that Christ was crucified and raised. They baptize. They break bread. They read the same Scriptures and pray to the same Lord. The remarkable thing is not that Christians have disagreed about church government and the mode of baptism. The remarkable thing is that, across two thousand years and every culture on earth and all the blood they have shed, they have kept the same center. Lesslie Newbigin, who gave his life to Christian unity, insisted that the church is meant to be a sign of the reconciliation God intends for the whole human race, and that its divisions are a wound to be healed, not a reason to abandon the body (Newbigin 1989).`,
+`The denominations, then, are scar tissue. They mark real injuries, genuine disagreements about baptism and authority and the supper, things that mattered enough to fight over because they touched the truth. Pretending the disagreements do not matter is not unity. It is indifference, and indifference is not what Jesus prayed for. He prayed for oneness in the truth, which is harder and costlier than a vague agreement to stop arguing.`,
+`I am a pastor of one particular tradition, and I have at times worn its distinctives like a team jersey, defined more by what I am against than by the Lord I am for, which is the Corinthian disease exactly. The slogan I follow Paul is alive and well. It has only changed names.`,
+`A divided church is a scandal, and the answer is neither to deny it nor to despair of it. It is to grieve it, to refuse both the cheap unity that pretends truth does not matter and the cheap cynicism that pretends the divisions are the whole story, and to live toward the day Christ prayed for. The number was always a distraction. The real and stubborn fact, the one the skeptic should have to explain, is not that Christians divided. It is that after everything, underneath all of it, they are still confessing the same crucified and risen Lord.`,
+`### Works Cited`,
+`Newbigin, Lesslie. 1989. The Gospel in a Pluralist Society. Grand Rapids: Eerdmans.`,
+`Vanhoozer, Kevin J. 2016. Biblical Authority after Babel. Grand Rapids: Brazos Press.`,
+].join("\n\n");
+
+const crusades = [
+`The Crusades are the club. Raise the violence of religion in any argument and they arrive within a sentence, offered as the proof that faith makes people kill. The honest history is worse than the cliche and also more complicated than it, and a Christianity that cannot tell the truth about its own worst chapters has no business asking anyone to trust it about anything.`,
+`So tell the truth. The First Crusade took Jerusalem in 1099, and the soldiers massacred the city, Muslims and Jews together, in a slaughter the chroniclers describe with horror and pride in the same sentence. On the way there, in 1096, crusaders in the Rhineland turned on the Jewish communities and murdered thousands, among the first great pogroms of European history, carried out by men wearing the cross. And the Fourth Crusade, in 1204, never reached a Muslim army at all. It sacked Constantinople, the greatest Christian city in the world, and Christians looted and desecrated the churches of other Christians. None of this can be explained away, and the attempt to explain it away is itself a second offense.`,
+`Steel-man the critic fully. The argument made by Christopher Hitchens and Sam Harris is that here is religion doing exactly what religion does, sanctifying slaughter with the name of God, and that the Crusades are not an aberration but a revelation of what belief licenses (Hitchens 2007). Give it its weight. The atrocities were real, they were vast, and they were done explicitly in the name of Christ with the promise of heaven attached. A believer who shrugs that off has not reckoned with it.`,
+`Now the other correction, because the cartoon is false in the opposite direction. The popular picture of the Crusades as unprovoked Western colonial aggression against a peaceful East is bad history. The historians, Thomas Madden and Christopher Tyerman among them, point out that the Crusades came after four centuries of conquest that had taken three-quarters of the formerly Christian world, including the Holy Land itself, and that the First Crusade was called in answer to an appeal from the Christian East against advancing armies (Madden 2005). The medieval crusader was not a modern colonialist. Most went bankrupt going, and many went believing they were defending their brothers and reclaiming stolen ground. The history is a tangle of real grievance and real horror, and both are true at once.`,
+`But here is the reversal that neither the atheist nor the defensive apologist wants to hear. The Crusades do not indict Christianity by being too Christian. They indict it by being a betrayal of Christianity, the photographic negative of its own Lord. On the night he was arrested, Peter drew a sword to defend him, the one moment in the Gospels a disciple takes up arms for Jesus, and Jesus stopped him cold. Put your sword back into its place, he said, for all who take the sword will perish by the sword (Matthew 26:52 ESV). Standing before Pilate he said that his kingdom was not of this world, and that if it were, his servants would fight (John 18:36). The whole logic of the cross is a king who conquers by dying rather than by killing, who refuses the legions he could have called down. Measure the Crusades against that and they are not the fruit of the faith. They are its inversion.`,
+`Which means the most devastating critique of the Crusades is not the atheist's. It is the Christian one. The atheist says religion made them violent. The gospel says they abandoned the religion the moment they raised a sword in its name, because the founder of it went unarmed to his own execution and told his followers the world would know them by their love and not by their conquests. You cannot use the Crusades to refute a faith whose Lord and whose earliest martyrs died precisely by refusing to do what the crusaders did.`,
+`It is easy to condemn men dead a thousand years. The harder thing is to notice that the crusading impulse, the certainty that God's cause can be advanced by force and that our enemies are therefore his, did not die in the Middle Ages. It only traded the sword for other weapons, the culture war waged as though it were a holy war, the opponent to be crushed rather than the neighbor to be loved. We did this. Some version of we keeps doing it.`,
+`The church should not flinch from the Crusades, and it should not excuse them. It should own them, and then it should say the one thing that is both true and damning. They were done in the name of a Lord who would have stopped them, who did stop Peter, who chose the cross over the sword and asked his people to do the same. The kingdom of God has never once advanced by killing for him. It has only ever advanced by people willing to die for him. The crusaders forgot which one they were called to. So, often, do we.`,
+`### Works Cited`,
+`Hitchens, Christopher. 2007. God Is Not Great. New York: Twelve.`,
+`Madden, Thomas F. 2005. The New Concise History of the Crusades. Lanham, MD: Rowman and Littlefield.`,
+`Tyerman, Christopher. 2006. God's War: A New History of the Crusades. Cambridge, MA: Belknap Press.`,
+].join("\n\n");
+
 const items = [
   {
     slug: "how-to-read-the-bible-without-making-it-say-what-you-want",
@@ -217,6 +261,33 @@ const items = [
     excerpt: "The Reformation was not mainly about corruption. It was about one question: how is a person made right with God. That question is still keeping you awake.",
     readTime: "10 min read",
     body: reformation,
+  },
+  {
+    slug: "the-great-awakenings-and-the-making-of-american-faith",
+    title: "The Great Awakenings and the Making of American Faith",
+    pillar: "Theological Depth",
+    subPathway: "Church History",
+    excerpt: "American Christianity was born in revival. That fire gave it a faith of the heart, and it also taught it to trust feeling over the church. We live in both.",
+    readTime: "8 min read",
+    body: greatAwakenings,
+  },
+  {
+    slug: "why-there-are-so-many-christian-denominations",
+    title: "Why There Are So Many Christian Denominations",
+    pillar: "Theological Depth",
+    subPathway: "Church History",
+    excerpt: "The thirty-thousand-denominations number is a misused statistic. The real and stubborn fact is how much wildly divided Christians still confess in common.",
+    readTime: "8 min read",
+    body: denominations,
+  },
+  {
+    slug: "the-crusades-what-actually-happened",
+    title: "The Crusades: What Actually Happened",
+    pillar: "Theological Depth",
+    subPathway: "Church History",
+    excerpt: "The Crusades are the favorite club used against the faith. The honest history is worse than the cliche, and its deepest critique is Christian, not secular.",
+    readTime: "9 min read",
+    body: crusades,
   },
 ];
 
