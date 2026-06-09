@@ -23,6 +23,38 @@
   "whereWeDiffer": "We part from both not because we want people to suffer but because we believe the self enthroned is the self destroyed, and that the only love strong enough to save is a love willing to kill what is killing us. The cross is not the absence of comfort. It is the price of the deepest comfort there is.",
   "theCost": "To preach this is to lose the crowd that came for relief and stayed for nothing. It costs the pastor his numbers and the believer his illusions. It means telling someone who came to feel better that the road runs through a death first, and trusting that the resurrection on the far side is worth the grief of the crossing. It is easier, every single week, to offer the cheaper thing.",
   "charge": "Stop asking whether your faith makes you feel better and start asking whether it is making you holy. Find the cross you have been avoiding and pick it up. Then go and tell the truth gently to someone who has only ever been handed comfort, and stay with them while it costs.",
+  "captureDetail": {
+    "right": {
+      "label": "Best Life Now and the Prosperity of the Soul",
+      "whatItLooksLike": "Here faith becomes a tool for personal flourishing, where God is enlisted to underwrite health, wealth, and an upward arc of success. The sermon promises that right thinking and enough belief will produce favor, increase, and breakthrough. The book table fills with self-improvement wrapped in scripture, and the cross recedes behind the promise of a better Monday.",
+      "inThePast": "The lineage runs through Norman Vincent Peale, whose 1952 bestseller The Power of Positive Thinking fused popular psychology with Christian language and sold by the millions. It deepened with the mid-century prosperity preachers Oral Roberts and Kenneth Hagin, whose Word of Faith teaching held that confession and faith could command material results. Robert Schuller built the Crystal Cathedral on a theology of self-esteem he called possibility thinking, broadcasting the Hour of Power to millions.",
+      "now": "The stream continues in Joel Osteen, whose Lakewood Church and books such as Your Best Life Now frame faith as the path to personal favor and victory. Word of Faith figures including Kenneth Copeland and Creflo Dollar carry the prosperity message on television and in conferences. Sociologists Bradley Koch and others have documented the prosperity gospel as a measurable strand of American religious life, and Kate Bowler has chronicled its history in her study Blessed.",
+      "named": [
+        "Norman Vincent Peale and positive thinking",
+        "Word of Faith movement",
+        "Oral Roberts and Kenneth Hagin",
+        "Robert Schuller and the Crystal Cathedral",
+        "Joel Osteen and Lakewood Church",
+        "Kenneth Copeland and Creflo Dollar",
+        "the prosperity gospel"
+      ]
+    },
+    "left": {
+      "label": "The Affirmation-Only Gospel and Demandless Spirituality",
+      "whatItLooksLike": "Here God becomes a mirror who validates whatever the self already is, a love that affirms but never calls anyone to change. Deconstruction that began with honest questions ends in a vague spirituality that asks nothing and rules out nothing. The sacred is reduced to self-acceptance, and any claim that something might need to die in a person is treated as harm.",
+      "inThePast": "The therapeutic turn was named early by Philip Rieff in his 1966 study The Triumph of the Therapeutic, which traced the replacement of moral authority with the goal of feeling well. Sociologist Robert Bellah and colleagues described the same drift in Habits of the Heart in 1985, coining the figure of Sheila who built a private faith she called Sheilaism. Liberal Protestantism had already, in H. Richard Niebuhr's 1937 verdict, risked preaching a God without wrath who brought men without sin into a kingdom without judgment through a Christ without a cross.",
+      "now": "Christian Smith and Melinda Lundquist Denton named the present form in 2005 as moralistic therapeutic deism, the working creed in which God wants people to be nice, to feel good about themselves, and to stay distant until needed. The broad exvangelical and deconstruction movements, documented across podcasts and books, sometimes settle into a demandless spirituality after leaving rigid systems. Tara Isabella Burton's study Strange Rites maps the rise of remixed and self-authored faiths that center personal feeling over any external claim.",
+      "named": [
+        "moralistic therapeutic deism (Christian Smith)",
+        "Philip Rieff and The Triumph of the Therapeutic",
+        "Robert Bellah and Sheilaism",
+        "H. Richard Niebuhr's critique of liberal Protestantism",
+        "the exvangelical and deconstruction movements",
+        "therapeutic deism in progressive dress",
+        "Tara Isabella Burton and remixed religion"
+      ]
+    }
+  },
   "furtherReading": [
     {
       "title": "The Cost of Discipleship",

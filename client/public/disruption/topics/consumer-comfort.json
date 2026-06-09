@@ -28,5 +28,37 @@
     { "title": "Counterfeit Gods", "author": "Timothy Keller" },
     { "title": "The Prophetic Imagination", "author": "Walter Brueggemann" },
     { "title": "Desiring the Kingdom", "author": "James K. A. Smith" }
-  ]
+  ],
+  "captureDetail": {
+    "right": {
+      "label": "The Consumer Church",
+      "whatItLooksLike": "On this side the captivity wears the clothes of growth and excellence. The church is built as a product with a coffee bar in the lobby, a parking ministry to ease the arrival, and a worship set engineered to move a crowd from anticipation to release. The believer is treated as a sovereign customer whose felt needs set the agenda, and the cross becomes one feature among many in a faith marketed as personal enhancement.",
+      "inThePast": "The seeker-sensitive movement built at Willow Creek Community Church under Bill Hybels in the 1970s and after applied consumer research to the unchurched, designing services around the preferences of a man the planners called Unchurched Harry. Robert Schuller preached possibility thinking from the Crystal Cathedral and told pastors to think of the church as a retail business meeting consumer needs. The Church Growth movement that traced back to Donald McGavran and was carried forward at Fuller Seminary by C. Peter Wagner made numerical increase a measurable science. Rick Warren codified the model for tens of thousands of congregations through The Purpose Driven Church.",
+      "now": "In 2018 Willow Creek itself published the Reveal study, which found that programming attendance did not reliably produce spiritual maturity, an admission from inside the movement that the metrics had measured the wrong thing. The prosperity gospel associated with figures such as Joel Osteen and Kenneth Copeland turned God into a vendor and faith into a strategy for return. Multi-site and broadcast churches now run worship as a rated experience, and the language of branding, customer experience, and attendance analytics has become ordinary in church management circles.",
+      "named": [
+        "Willow Creek and the seeker-sensitive model",
+        "the Church Growth movement",
+        "The Purpose Driven Church",
+        "the Reveal study admission",
+        "Crystal Cathedral possibility thinking",
+        "the prosperity gospel",
+        "megachurch consumer branding"
+      ]
+    },
+    "left": {
+      "label": "The Comfortable Progressive",
+      "whatItLooksLike": "On this side the captivity wears the clothes of conscience and inclusion. The radicalism is verbal and the cost is rhetorical, a faith that keeps the vocabulary of justice while asking nothing the congregation has not already decided to give. Spirituality becomes therapeutic and curated, a practice of affirmation in which grace confirms the self rather than crucifying it.",
+      "inThePast": "The sociologist Robert Bellah and his coauthors in Habits of the Heart in 1985 named the figure of Sheila, who described her private religion as Sheilaism, a faith of one. Christian Smith and the National Study of Youth and Religion in 2005 documented Moralistic Therapeutic Deism, a creed in which God wants people to be nice and happy and stays mostly out of the way. Philip Rieff in The Triumph of the Therapeutic in 1966 had already traced the replacement of the believer who sacrifices with the consumer who seeks well-being. Affluent mainline and progressive congregations long combined comfortable circumstances with the language of prophetic critique.",
+      "now": "The rise of those who claim to be spiritual but not religious, tracked in Pew Research Center surveys, marks a boutique spirituality assembled from preference. Wellness culture has absorbed religious practice into self-care, with meditation apps and curated retreats selling interior calm as a product. Progressive congregations can pass resolutions on justice while their own wealth, real estate, and patterns of life remain untouched, and the call to die to self quietly drops out while the moral language stays.",
+      "named": [
+        "Sheilaism in Habits of the Heart",
+        "Moralistic Therapeutic Deism",
+        "The Triumph of the Therapeutic",
+        "spiritual but not religious",
+        "wellness and self-care spirituality",
+        "affluent mainline congregations",
+        "therapeutic affirmation culture"
+      ]
+    }
+  }
 }

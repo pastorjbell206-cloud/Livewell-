@@ -23,6 +23,37 @@
   "whereWeDiffer": "Honest people who agree on all of the above still differ on which specific structures today are unjust, how much present harm traces to inherited arrangements, and what remedy is faithful rather than merely fashionable. Those are real disagreements that deserve argument and evidence, not the assumption that the other side is either heartless or naive.",
   "theCost": "Holding both truths at once will cost you the comfort of a team. The crowd that loves the word systemic will be impatient when you insist on personal responsibility, and the crowd that loves personal responsibility will call you compromised the moment you name a structure. To stand where Daniel stood, faithful yet confessing 'we have sinned,' is to be claimed by your people's wrong without being crushed by it, and to refuse the easy exits of either total guilt or total innocence. Almost no one will thank you for that.",
   "charge": "Go look for the wrong you did not choose but still live inside, the arrangement that pays you quietly while it costs someone else. Name it without pretending you are its only author and without pretending you are its blameless victim. Confess in the first person plural, like the faithful men did, and then do the one thing in front of you that loosens its grip. The system will outlast your repentance. Repent anyway.",
+  "captureDetail": {
+    "right": {
+      "label": "The denial that sin can be structural",
+      "whatItLooksLike": "Here the whole of evil is reduced to the private choice of a single will, and any law, market, or institution is treated as a morally neutral pipe that only carries what individuals pour into it. Injustice is real only when a particular person decides to be cruel, so the camera never pulls back far enough to see the arrangement itself. The cumulative harm of an ordinary, legal system becomes invisible because no single actor confesses to it.",
+      "inThePast": "A strong individualist strand has run through American Christianity since the revivalism of Charles Finney and the frontier camp meetings, where salvation was framed almost entirely as a transaction between one soul and God. In the antebellum South that instinct let preachers defend slavery as a question of how kindly a master treated his slaves rather than the wrong of the institution, so that a man could own human beings and still consider himself personally upright. After the Civil War the same reflex let many white churches treat segregation as the settled law of the land and not a sin they were obligated to attack. The reduction of every wrong to private vice gave the structure cover precisely because it was a structure.",
+      "now": "The same move surfaces today when commentators insist that since the Civil Rights Act ended legal segregation, any remaining disparity must trace only to individual decisions, a position visible in long-running disputes over the very phrase systemic racism. Documented patterns in redlining maps preserved by the federal Home Owners Loan Corporation, in the racial wealth gap measured by the Federal Reserve Survey of Consumer Finances, and in sentencing disparities studied by the United States Sentencing Commission do not vanish because no living official signed them. A theology that cannot read Isaiah's woe against unjust decrees has no category for harm that outlives its authors.",
+      "named": [
+        "Finney-style frontier individualism",
+        "antebellum proslavery 'kind master' theology",
+        "pure private-vice reductionism",
+        "denial of systemic racism as a category",
+        "prosperity-gospel bootstrap moralism",
+        "color-blind 'law and order' defenses of segregation"
+      ]
+    },
+    "left": {
+      "label": "The dissolving of the person into the system",
+      "whatItLooksLike": "Here the individual disappears into the group, and guilt is assigned by category, ancestry, or birth rather than by anything a person actually chose. Responsibility becomes a property of skin or class or lineage, so that one man is condemned for an arrangement he never built and another is absolved of his own acts because his group is counted among the wronged. The structure swallows the soul until moral agency itself dissolves.",
+      "inThePast": "Collective blood-guilt has an old and bitter record, from medieval charges that condemned entire Jewish communities for the death of Christ to the Soviet practice of class enemy designation, where being born a kulak or to the wrong parents was itself the offense. The Stalinist category of enemy of the people punished people for ancestry and association rather than deeds, and Mao's Cultural Revolution pressed families to denounce one another on the strength of class background. These were not failures of compassion but the inverted mirror of it, a structural determinism that erased the person Ezekiel insisted on protecting.",
+      "now": "A softer version appears in strands of contemporary identity discourse, where some applications of standpoint epistemology and of frameworks descended from critical theory treat membership in a category as fixing a person's moral standing in advance. Debates over the academic field of critical race theory, over Robin DiAngelo's account of white fragility, and over Ibram X. Kendi's claim that present discrimination is the only remedy for past discrimination all turn on this question of whether the group can bear guilt the individual did not earn. Critics across the spectrum, including writers like John McWhorter, argue as a matter of ideas that collective ascription of guilt repeats the inherited curse rather than ending it.",
+      "named": [
+        "Stalinist 'enemy of the people' designation",
+        "Maoist class-background struggle sessions",
+        "medieval collective blood-guilt charges",
+        "rigid standpoint-epistemology determinism",
+        "DiAngelo-style fragility framing",
+        "Kendi's present-discrimination remedy",
+        "category-based ascription of guilt"
+      ]
+    }
+  },
   "furtherReading": [
     { "title": "Generous Justice", "author": "Timothy Keller" },
     { "title": "The Prophetic Imagination", "author": "Walter Brueggemann" },

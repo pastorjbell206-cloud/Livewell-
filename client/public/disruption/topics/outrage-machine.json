@@ -28,6 +28,38 @@
   "whereWeDiffer": "Faithful Christians will disagree, honestly, about when public anger is righteous and when silence is cowardice. Some injustices demand a loud and named response, and the prophets did not whisper. The line between prophetic anger and the works of the flesh is real but not always obvious, and humility means admitting we have all drawn it to flatter ourselves. That argument is worth having. It is a different thing from the reflexive daily rage the machine sells us.",
   "theCost": "Stepping off the wheel costs you the tribe's applause and the small narcotic hit of being right out loud. You will watch a controversy go by and say nothing, and your people will wonder whose side you are on. You will be called soft, compromised, asleep. The cost is that you become, for a while, no one's combatant, and that is a lonely place. It is also the only place from which you can love the person on the other side.",
   "charge": "Before you reply, ask what is being formed in you by the act of replying. Be the strange person who logs off mid-fight, who reads the whole thing, who lets the wrong opinion go unanswered because the soul is worth more than the win. The forest is already burning. Do not be conformed to its temper. Carry the slower fire instead.",
+  "captureDetail": {
+    "right": {
+      "label": "The outrage of grievance and siege",
+      "whatItLooksLike": "It is the permanent posture of being under attack, the conviction that hostile forces have taken the institutions and only constant vigilance and fury can hold the line. It treats contempt as courage and the sharp insult as a form of truth-telling, where the goal of a reply is to own and humiliate rather than to persuade. The soft answer reads as surrender, and gentleness reads as collaboration with the enemy.",
+      "inThePast": "The grievance current is old. The talk radio era that grew after the 1987 repeal of the Fairness Doctrine gave figures like Rush Limbaugh a national platform built on a sense of besiegement, and cable followed when Fox News launched in 1996 and built ratings on a steady drumbeat of threat and resentment. Chain emails and forwarded warnings carried the same charge through the 1990s and 2000s. The form changes, the appeal to the embattled in-group does not.",
+      "now": "Documented work on the attention economy shows that anger and moral-emotional language travel farther and faster, a pattern named in research on moral contagion by William Brady and Jay Van Bavel. On the right this surfaces as siege-framed feeds, the rage-bait clip stripped of context, and outrage-driven sites and shows that depend on a sense of constant cultural threat. The 2016 Macedonian fake-news operations that targeted pro-Trump audiences showed how purely engagement-driven actors could profit by manufacturing grievance with no ideological stake at all.",
+      "named": [
+        "Talk radio after the Fairness Doctrine repeal",
+        "Cable rage programming",
+        "Rush Limbaugh",
+        "Forwarded chain-email panic",
+        "Engagement-driven outrage clips",
+        "Macedonian fake-news operations of 2016",
+        "Culture-war grievance media"
+      ]
+    },
+    "left": {
+      "label": "The outrage of moral vigilance and purity",
+      "whatItLooksLike": "It is the conviction that to fail to denounce in real time is to be complicit, so the offense must be named at once and the offender publicly marked. It rewards the call-out, the pile-on, and the swift exile of the impure, where grace toward the wrong person reads as betrayal of the cause. The performance of alarm becomes its own currency, and the most condemning take wins the thread.",
+      "inThePast": "The purity current is also old. The struggle sessions of the Chinese Cultural Revolution forced public self-criticism and denunciation as proof of loyalty, and the social shaming of the colonial stocks and the scarlet letter punished by exposure long before any feed existed. The political correctness debates of the early 1990s named an earlier version of the same anxiety about policing speech. The technology amplified an instinct that was already human.",
+      "now": "The same moral-contagion research shows that the most morally charged condemnation spreads fastest, which rewards the harshest framing of a target. On the left this surfaces as the call-out and cancellation cycle, the quote-tweet dogpile, and the viral shaming case that documented work by Jon Ronson and by Cancel Culture critics across the spectrum has traced. Platform design that surfaces the most-shared reply means a single misjudged sentence can draw a coordinated dogpile from strangers who were never part of the original quarrel.",
+      "named": [
+        "The call-out and cancellation cycle",
+        "The quote-tweet dogpile",
+        "Performative public denunciation",
+        "Struggle sessions of the Cultural Revolution",
+        "Early-1990s speech-policing debates",
+        "Viral shaming documented by Jon Ronson",
+        "Condemnation-rewarding platform design"
+      ]
+    }
+  },
   "furtherReading": [
     { "title": "The Shallows: What the Internet Is Doing to Our Brains", "author": "Nicholas Carr" },
     { "title": "Stolen Focus: Why You Can't Pay Attention", "author": "Johann Hari" },

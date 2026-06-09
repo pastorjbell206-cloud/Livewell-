@@ -32,5 +32,37 @@
     { "title": "Generous Justice", "author": "Timothy Keller" },
     { "title": "The Prophetic Imagination", "author": "Walter Brueggemann" },
     { "title": "Work and Worship", "author": "Matthew Kaemingk and Cory Willson" }
-  ]
+  ],
+  "captureDetail": {
+    "right": {
+      "label": "The market as providence",
+      "whatItLooksLike": "Here the wage that clears the market is treated as the wage God intended, so any concern for the worker becomes envy and any call for mercy becomes a demand to steal. Wealth is read as a sign of virtue and poverty as a sign of failure or sloth. The diligence passages in Proverbs and Paul get quoted while the fraud passages in James and the wage law in Deuteronomy stay closed.",
+      "inThePast": "The Gilded Age dressed this up with respectability. Herbert Spencer coined the phrase survival of the fittest and applied it to society, and William Graham Sumner at Yale taught that the millionaire was the product of natural selection and that helping the poor only propped up the unfit. Russell Conwell preached his Acres of Diamonds sermon thousands of times, telling audiences it was their Christian duty to get rich and that the poor were largely poor through their own shortcomings. Andrew Carnegie wrote The Gospel of Wealth, defending the concentration of fortunes as the working out of a beneficent law.",
+      "now": "The prosperity gospel carries the same logic into the pew, with figures like Kenneth Copeland and the late Oral Roberts teaching that faith produces wealth and that lack signals weak belief. Libertarian and free market advocacy that fuses laissez-faire economics with Christian language can present deregulation as a near sacred cause and treat the minimum wage or the union as an offense against liberty itself. Prosperity teaching has spread widely through television and through churches in the global south, documented by researchers like Kate Bowler.",
+      "named": [
+        "Social Darwinism",
+        "Herbert Spencer and William Graham Sumner",
+        "Russell Conwell, Acres of Diamonds",
+        "Andrew Carnegie, The Gospel of Wealth",
+        "the prosperity gospel",
+        "laissez-faire economics",
+        "the Gilded Age"
+      ]
+    },
+    "left": {
+      "label": "The worker as grievance",
+      "whatItLooksLike": "Here the worker with a name and a calling shrinks into a unit of class, and his labor becomes mainly a site of conflict rather than a place of dignity. Enterprise itself is treated with suspicion, as if every profit were extraction and every owner a thief. Hope is located almost entirely in the state, as if a statute could mend the heart that withholds the wage.",
+      "inThePast": "The labor and socialist movements carried real moral weight and also real overreach. Karl Marx reduced history to class struggle and read religion as the opium of the people, and the regimes built in his name under Lenin and Stalin collectivized farms and crushed the very workers they claimed to free, with the Soviet famines and the gulag as the result. The Industrial Workers of the World and parts of the early labor left at times romanticized class war as the engine of all progress. The worker became a symbol to be marched behind rather than a person to be paid.",
+      "now": "Contemporary movements continue the older tension between defending labor and instrumentalizing it. Some strands of the modern left treat any defense of markets or private enterprise as inherently oppressive and frame economic questions almost wholly as identity and power, a tendency critics describe as a class reductionism in reverse. State centered solutions can grow into a confidence that regulation and redistribution alone will deliver justice, leaving little room for the repentance of the individual employer or the dignity of ownership.",
+      "named": [
+        "Karl Marx and historical materialism",
+        "religion as the opium of the people",
+        "Marxist-Leninist collectivization under Lenin and Stalin",
+        "the Industrial Workers of the World",
+        "class reductionism",
+        "statism and central planning",
+        "the worker as political symbol"
+      ]
+    }
+  }
 }

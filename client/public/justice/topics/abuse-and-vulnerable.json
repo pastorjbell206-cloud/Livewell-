@@ -36,5 +36,36 @@
       "title": "A Church Called Tov: Forming a Goodness Culture That Resists Abuses of Power",
       "author": "Scot McKnight and Laura Barringer"
     }
-  ]
+  ],
+  "captureDetail": {
+    "right": {
+      "label": "Protecting the institution and the anointed",
+      "whatItLooksLike": "On the right the reflex is to guard the standing of the ministry and the man who leads it, treating his fruitfulness and sound doctrine as reasons to doubt the one he harmed. Authority structures meant to shepherd are turned into shields, and the abused person becomes the threat to be managed. The 'touch not the Lord's anointed' verse from 1 Samuel and Psalm 105 gets pulled out of its setting and used to place a leader beyond ordinary accountability.",
+      "inThePast": "The pattern is old and well attested. For decades Bob Jones University, by its own commissioned GRACE report released in 2014, counseled abuse survivors to repent and stay silent rather than report. Bill Gothard resigned from the Institute in Basic Life Principles in 2014 after dozens of women came forward, a matter later litigated in public court filings. The defense in each case was the same instinct, that the ministry and its message mattered more than the people it crushed.",
+      "now": "The 2022 Guidepost Solutions report, commissioned by the Southern Baptist Convention itself, documented that leaders of its Executive Committee kept a private list of accused ministers while resisting reform and treating survivors and advocates as adversaries. The 2018 investigations into Bill Hybels at Willow Creek and the posthumous findings against Ravi Zacharias, confirmed by his own organization in 2021, showed how a celebrated leader's reputation delayed and deflected credible reports. Sovereign Grace Ministries faced years of unresolved cover-up allegations that critics say were shielded behind procedural and theological arguments.",
+      "named": [
+        "SBC Guidepost Solutions report (2022)",
+        "Ravi Zacharias (RZIM-confirmed findings, 2021)",
+        "Bill Hybels and Willow Creek (2018)",
+        "Bob Jones University GRACE report (2014)",
+        "Bill Gothard and IBLP",
+        "Sovereign Grace Ministries allegations",
+        "'touch not the Lord's anointed' misuse"
+      ]
+    },
+    "left": {
+      "label": "Protecting the progressive institution and its team",
+      "whatItLooksLike": "On the left the same protective instinct attaches to the progressive institution and the people seen as being on the right side of history. Credibly raised concerns can be buried or slow-walked when the accused is a valued ally, and the worthy slogan 'believe survivors' can harden into a refusal to do the careful work of establishing what happened. The tension between believing the wounded and granting due process is real, and it is not honored by simply choosing the side that protects one's own coalition.",
+      "inThePast": "The Roman Catholic abuse crisis, exposed by the Boston Globe Spotlight team in 2002 and confirmed by the 2018 Pennsylvania grand jury report covering more than 1000 victims, crossed every political line and showed that institutional self-protection is not the property of one wing. Within progressive and mainline circles, figures such as theologian John Howard Yoder were sheltered for years by institutions and admirers who valued his pacifist witness, with a formal Mennonite Church USA reckoning only arriving decades later in 2015. The lesson is that a cause believed to be righteous can become its own reason to look away.",
+      "now": "The ChurchToo movement, named by survivors Emily Joy Allison and Hannah Paasch in 2017, pressed the whole church to confront abuse, and it also surfaced cases inside progressive spaces where allegations against allied figures met hesitation. Reporting on Jean Vanier, whose abuse was confirmed by L'Arche's own commissioned investigation in 2020 and again in 2023, showed how a celebrated humanitarian admired across the spectrum was protected by reverence for his work. Across institutions the documented risk is that 'on the right team' quietly becomes a reason to delay the same scrutiny demanded of opponents.",
+      "named": [
+        "Roman Catholic abuse crisis and Boston Globe Spotlight (2002)",
+        "Pennsylvania grand jury report (2018)",
+        "ChurchToo movement (2017)",
+        "Jean Vanier and L'Arche investigations (2020, 2023)",
+        "John Howard Yoder and the 2015 MC USA reckoning",
+        "'believe survivors' versus due process tension"
+      ]
+    }
+  }
 }
