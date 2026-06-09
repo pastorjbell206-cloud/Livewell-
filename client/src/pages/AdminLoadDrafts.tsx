@@ -37,6 +37,16 @@ export default function AdminLoadDrafts() {
     try {
       const list = await loadAll();
       const slugs = list.map((i) => i.slug);
+      // Also include any Substack imports (publishing a slug not in the DB is a
+      // harmless no-op, so this safely covers them once they've been imported).
+      try {
+        const r = await fetch("/api/rss/substack", { cache: "no-store" });
+        const d = await r.json();
+        for (const it of (d?.items ?? [])) {
+          const m = String(it.link || "").match(/\/p\/([^/?#]+)/);
+          if (m && !slugs.includes(m[1])) slugs.push(m[1]);
+        }
+      } catch { /* feed unavailable — just publish essays + articles */ }
       const BATCH = 20;
       let updated = 0;
       for (let i = 0; i < slugs.length; i += BATCH) {
