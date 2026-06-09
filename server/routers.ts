@@ -24,7 +24,7 @@ import {
   // Posts
   createPost, listPosts, listPostsForIndex, getPostById, getPostBySlug, getFeaturedPost, updatePost, deletePost,
   bulkUpdatePostBodies, listNavIndex, migrateTaxonomy, backfillSubPathways,
-  findDuplicatePosts, retirePosts, createDraftPosts,
+  findDuplicatePosts, retirePosts, createDraftPosts, publishBySlugs,
   // Resources
   createResource, listResources, getResourceById, updateResource, deleteResource,
   // Books
@@ -168,6 +168,11 @@ export const appRouter = router({
         })),
       }))
       .mutation(async ({ input }) => createDraftPosts(input.items)),
+
+    /** Admin: bulk publish/unpublish posts by slug. */
+    publishBySlugs: adminProcedure
+      .input(z.object({ slugs: z.array(z.string()), published: z.boolean() }))
+      .mutation(async ({ input }) => publishBySlugs(input.slugs, input.published)),
 
     /** Admin: list all posts (including drafts) */
     listAll: adminProcedure.query(async () => listPosts(false)),

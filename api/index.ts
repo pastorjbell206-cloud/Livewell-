@@ -1138,6 +1138,35 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         }
         return trpcOk(res, { inserted, skipped, error: cErr });
       }
+      case "posts.publishBySlugs": {
+        // Bulk publish/unpublish by slug (the admin "Publish all" button).
+        // Sets published, and on publish stamps publishedAt if not already set.
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const slugs: string[] = Array.isArray(input?.slugs) ? input.slugs.filter((s: any) => typeof s === "string") : [];
+        const publish = input?.published !== false; // default true
+        let updated = 0;
+        let pErr: string | null = null;
+        try {
+          await withConn(async (c) => {
+            for (const slug of slugs) {
+              const [r]: any = publish
+                ? await c.execute(
+                    "UPDATE posts SET published = 1, publishedAt = COALESCE(publishedAt, NOW()), updatedAt = NOW() WHERE slug = ?",
+                    [slug]
+                  )
+                : await c.execute(
+                    "UPDATE posts SET published = 0, updatedAt = NOW() WHERE slug = ?",
+                    [slug]
+                  );
+              updated += r?.affectedRows || 0;
+            }
+          });
+        } catch (e: any) {
+          pErr = String(e?.sqlMessage || e?.message || e);
+          console.error("publishBySlugs error:", pErr);
+        }
+        return trpcOk(res, { updated, error: pErr });
+      }
       case "books.create": {
         if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
         return await withConn(async (c) => {
