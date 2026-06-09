@@ -27,5 +27,35 @@
     { "title": "The Cost of Discipleship", "author": "Dietrich Bonhoeffer" },
     { "title": "The Prophetic Imagination", "author": "Walter Brueggemann" },
     { "title": "The Righteous Mind", "author": "Jonathan Haidt" }
-  ]
+  ],
+  "captureDetail": {
+    "right": {
+      "label": "The right and the loyalty weight",
+      "whatItLooksLike": "The pattern on the right runs a damning claim through a fast filter when it threatens its own and a slow one when it threatens the other side. A documented falsehood from a leader on the team gets reframed as fighting talk, owning the libs, or four-dimensional strategy, while the same conduct in a rival becomes proof of a corrupt establishment. The figure who insists on the awkward fact is recast as a squish, a traitor, or a tool of the enemy.",
+      "inThePast": "The pattern is old. In the 1950s much of the anti-communist right defended Senator Joseph McCarthy long after his charges collapsed, because he was hitting the approved target, and only a few conservatives such as those at the time who broke with him paid a cost for saying so. Talk radio after the 1987 repeal of the Fairness Doctrine, led by Rush Limbaugh, built an audience by treating its own side gently and the other side without mercy. The Moral Majority and later coalitions learned to forgive an ally's private conduct while condemning the identical conduct in an opponent.",
+      "now": "Studies of the post-2015 information world document the asymmetry. The Berkman Klein Center report Network Propaganda described an insulated right-wing media sphere anchored by Fox News and Breitbart that amplified claims and resisted correction more than the rest of the press. Fact-checking organizations such as PolitiFact and the Washington Post Fact Checker logged thousands of false or misleading statements from the Trump White House, and a large share of the base treated those counts as attacks rather than data. The Stop the Steal movement after 2020 showed how a checkable claim, rejected by dozens of courts and Republican election officials, survived because believing it signaled loyalty.",
+      "named": [
+        "McCarthyism and the 1950s anti-communist right",
+        "1987 repeal of the Fairness Doctrine and talk radio",
+        "Network Propaganda study of the right-wing media sphere",
+        "PolitiFact and Washington Post Fact Checker tallies",
+        "Stop the Steal and the 2020 election denial movement",
+        "Fox News and Breitbart as confirmation outlets"
+      ]
+    },
+    "left": {
+      "label": "The left and the loyalty weight",
+      "whatItLooksLike": "The same double standard runs in the other direction on the left. An opponent gets canceled over an old offense surfaced and circulated within hours, while an ally who did something worse is shielded by context, growth, or the importance of the cause. Outrage runs hot for a rival's misconduct and cold for a friend's, and the person who points out the inconsistency is told the comparison itself is in bad faith.",
+      "inThePast": "This too has history. During the Moscow show trials of the 1930s, parts of the Western progressive intelligentsia, including writers who visited the Soviet Union, excused or minimized the purges because the regime was nominally on the side of the future. In the 1990s many of the same commentators who demanded accountability from Republican figures over personal conduct defended President Bill Clinton through the Lewinsky scandal because he advanced their policy aims. Movements policed their opponents' records far more carefully than their own.",
+      "now": "Recent scholarship documents motivated reasoning on the left as well. Researchers such as Peter Ditto and colleagues found in a large meta-analysis that partisan bias in evaluating evidence is roughly symmetric across left and right. Surveys by More in Common in the Hidden Tribes report and survey work on self-censorship found many Americans afraid to speak honestly for fear of social penalty inside progressive spaces. High-profile cases gathered by the Foundation for Individual Rights and Expression show selective application of speech standards, where an offense by an ideological ally is contextualized and the same offense by an opponent ends a career.",
+      "named": [
+        "1930s fellow-traveler defense of the Moscow show trials",
+        "Selective accountability during the Clinton-Lewinsky scandal",
+        "Ditto et al. meta-analysis on symmetric partisan bias",
+        "More in Common Hidden Tribes report on self-censorship",
+        "Foundation for Individual Rights and Expression case files",
+        "Call-out and cancellation campaigns with uneven standards"
+      ]
+    }
+  }
 }

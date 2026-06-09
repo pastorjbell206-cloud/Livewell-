@@ -23,6 +23,38 @@
   "whereWeDiffer": "Christians of good faith will disagree about how close is too close, and that range is legitimate. Some are called to run for office, to draft the law, to sit in the room where the budget is decided. Some are called to stand outside the room and name what is being done inside it. The faith does not require withdrawal from public life, and the demand that Christians stay out of politics is itself a kind of capture, the privatized faith the powers find most convenient. The difference that matters is not engagement versus withdrawal. It is whether the church has kept the freedom to tell its own side the truth, or whether it has sold that freedom for a seat.",
   "theCost": "The cost of distance is real and it should not be minimized. A church that will not be owned by either party will be useful to neither, and both will call it a traitor. It will lose its access, its favor, and a good portion of its congregation, the ones who came for the politics and stayed only as long as the church agreed with them. It will be lonely in an age that demands a side. But the cost of the marriage is higher, because a church wedded to power cannot speak truth to it, and a church that cannot speak truth to power has nothing left to say that the power could not have said for itself.",
   "charge": "Find the power you have stopped being able to criticize, and look hard at why. It will be the one you feel you must defend, the side you cannot bear to see indicted, the leader whose faults you have learned to explain. That is where the marriage already happened. I have my own, and naming yours will not absolve me of mine. The church does not lose its voice in one dramatic surrender. It loses it one comfortable silence at a time, and the silence always feels like loyalty while it is happening.",
+  "captureDetail": {
+    "right": {
+      "label": "The Church Courting the Party and the State on the Right",
+      "whatItLooksLike": "The church seeks influence through the political party and the offices of the state, and the pastor becomes the figure with access to the powerful. The prophetic voice gets traded for a seat at the table, for the promise of favorable rulers, sympathetic judges, and protection from a hostile culture. Belonging to the faith and belonging to the nation begin to blur until the cross is hard to distinguish from the flag.",
+      "inThePast": "After Constantine issued the Edict of Milan in 313 and Theodosius made Christianity the official religion of the empire by 380, bishops who had once faced the arena gained imperial standing and the power to send dissenters into exile. The court chaplaincy of Christendom continued through the medieval alliance of throne and altar and into the divine right of kings claimed by figures like James I of England. In the twentieth century the German Christians movement draped the swastika over the altar and read Romans 13 to a regime building camps, while many Afrikaner Reformed churches gave theological cover to apartheid until the Dutch Reformed Mission Church declared it a heresy in the Belhar Confession of 1986.",
+      "now": "The Moral Majority founded by Jerry Falwell in 1979 and the later Christian Coalition organized white evangelicals as a voting bloc tied to one party. Christian nationalism, documented by sociologists such as Andrew Whitehead and Samuel Perry in Taking America Back for God, fuses national identity with Christian identity, and was visible in the prayers and crosses carried at the United States Capitol on January 6, 2021. The court evangelical access of advisory boards to recent presidents, and the close alignment of some hierarchs with Vladimir Putin through the Russian Orthodox Church, show the same trade of distance for proximity.",
+      "named": [
+        "Constantine and the Edict of Milan, 313",
+        "The German Christians under the Reich",
+        "Afrikaner churches and apartheid",
+        "The Moral Majority and Christian Coalition",
+        "Documented Christian nationalism",
+        "Court evangelical advisory boards",
+        "Russian Orthodox alignment with the Kremlin"
+      ]
+    },
+    "left": {
+      "label": "The Church Courting the Academy and the Progressive State on the Left",
+      "whatItLooksLike": "The church seeks the same proximity to power through different institutions, the academy, the cultural establishment, and the progressive arm of the state. It becomes a chaplaincy to a program of respectability and influence, its prophets reduced to activists who never have a discouraging word for their own coalition. The kingdom of God gets quietly renamed as the platform, and dissent from the platform is read as dissent from Christ.",
+      "inThePast": "The Social Gospel of Walter Rauschenbusch at the turn of the twentieth century carried real moral force yet often collapsed the kingdom of God into a program of social progress. Protestant liberalism in the German academy, against which Karl Barth wrote his commentary on Romans in 1919, had so accommodated the surrounding culture that many of its leading theologians signed the manifesto endorsing the Kaiser's war policy in 1914. Mainline denominations through the mid twentieth century frequently took their cues from the prevailing assumptions of the educated establishment rather than from a voice that could stand outside it.",
+      "now": "Some progressive mainline bodies and parachurch movements function as a religious wing of a political coalition, echoing the consensus of foundations, universities, and nonprofit funders without naming where that consensus has gone wrong. The phenomenon of moralistic therapeutic deism, named by sociologist Christian Smith in his study of American youth, describes a faith reduced to affirmation and self-fulfillment that asks nothing the surrounding culture would not already grant. The chaplaincy of respectability trades prophetic distance for a seat among the credentialed in the same way the right trades it for a seat in the party.",
+      "named": [
+        "The Social Gospel of Walter Rauschenbusch",
+        "German Protestant liberalism and the manifesto of 1914",
+        "Mainline accommodation to the establishment",
+        "Religious wings of progressive coalitions",
+        "Moralistic therapeutic deism, named by Christian Smith",
+        "The chaplaincy of respectability",
+        "Foundation and university funded advocacy"
+      ]
+    }
+  },
   "furtherReading": [
     {
       "title": "Ethics",

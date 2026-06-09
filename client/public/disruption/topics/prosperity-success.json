@@ -23,6 +23,38 @@
   "whereWeDiffer": "One side wants the approval of the cultured despisers and the other wants the rewards of the market, but both have agreed that the church should be winning by a scoreboard the world already keeps. The cross keeps a different scoreboard, and it is not one either party wants to read aloud.",
   "theCost": "To preach against the gospel of success is to indict your own ministry, because the metrics that flatter you are the ones you must repent of. It means telling a growing church that growth is not proof of anything, and telling a shrinking one that smallness is not failure. It means losing the comfort of the numbers, and standing before God without the scoreboard you have been hiding behind. I do not write this from above it. I write it as a man still learning to want the right things.",
   "charge": "Go and look honestly at what makes your chest swell on a Sunday. If it is the size of the room, the reach of the platform, the sense that you are winning, then you have found the idol, and it has your name on it. The crucified servant had no beauty that we should desire him. Follow Him anyway, downward, toward the cross you were told to carry and not to escape.",
+  "captureDetail": {
+    "right": {
+      "label": "Prosperity, platform, and the church measured by its size",
+      "whatItLooksLike": "On the right the gospel of success speaks plainly about wealth, health, and increase as the visible proof of God's favor. A full auditorium, a rising budget, a pastor with a recognizable brand and a publishing deal become the working evidence that God is present and pleased. The crude version promises a healing or a financial breakthrough in exchange for a seed offering, and the respectable version simply assumes that growth is vindication.",
+      "inThePast": "The lineage runs through the New Thought currents of the late nineteenth century and into the post war healing revivals, where figures like Oral Roberts built ministries around seed faith giving and the promise of physical and financial return. Kenneth Hagin systematized the Word of Faith teaching, and Kenneth Copeland carried it onto television and into a global broadcast ministry. The 1980s televangelism boom, and the 1987 to 1989 collapse of the PTL ministry under Jim Bakker, exposed how far the equation of wealth with blessing had traveled. Kate Bowler's history Blessed traces this as a distinctly American theology rather than a fringe accident.",
+      "now": "Today the teaching reaches mass audiences through broadcast and online ministries associated with figures who have stated these views publicly, including Creflo Dollar, who in 2015 solicited donations toward a Gulfstream jet, and Joel Osteen, whose Lakewood Church fills a former sports arena in Houston. The wider current is the megachurch measured by attendance and the pastor measured as a personal brand, documented in reporting on church planting metrics, multisite expansion, and conference circuits. The same logic surfaced in scandals at large churches such as Mars Hill in Seattle and at Hillsong, where institutional growth and celebrity leadership were later examined as the very pressures that broke them.",
+      "named": [
+        "Word of Faith movement",
+        "Kenneth Hagin and Kenneth Copeland",
+        "Oral Roberts and seed faith",
+        "Creflo Dollar and Joel Osteen",
+        "PTL and Jim Bakker",
+        "Lakewood and the megachurch metric",
+        "Mars Hill and Hillsong"
+      ]
+    },
+    "left": {
+      "label": "Relevance, influence, and the platform as the measure of a ministry that matters",
+      "whatItLooksLike": "On the left the success gospel trades the private jet for cultural cachet, measuring a ministry by its standing among the admired and the educated. The proof of favor becomes being on the right side of history, holding a platform on the issues that signal seriousness, and earning a seat at the tables the culture respects. It rarely names money as the prize, which is exactly what makes it easier to keep.",
+      "inThePast": "The pattern has older roots in the early twentieth century Social Gospel and in the mainline Protestant assumption that respectability and progress went together, a confidence Reinhold Niebuhr criticized for overestimating its own righteousness. The mid century alliance between Protestant establishment and cultural prestige gave the church proximity to power that it read as relevance. The emergent church conversation of the 2000s, associated with figures like Brian McLaren, reframed faithfulness partly as cultural credibility and being heard by skeptics.",
+      "now": "Now the measure is platform itself, documented in the rise of the influencer pastor and the Instagram ministry where reach and follower count function as currency. The deconstruction movement and a wave of celebrity progressive Christian voices have built large audiences on Substack, podcasts, and social media, where being quoted approvingly by mainstream outlets reads as proof that the message is working. The same scoreboard runs through the platform and creator church economy, where conference invitations, book deals, and verified accounts confer the authority that attendance once did.",
+      "named": [
+        "Social Gospel and mainline respectability",
+        "Reinhold Niebuhr's critique",
+        "emergent church conversation",
+        "Brian McLaren",
+        "the influencer pastor and Instagram ministry",
+        "deconstruction celebrity voices",
+        "the platform and creator church economy"
+      ]
+    }
+  },
   "furtherReading": [
     {
       "title": "The Cost of Discipleship",

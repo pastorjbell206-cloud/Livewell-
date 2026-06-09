@@ -25,6 +25,38 @@
   "whereWeAgree": "Across almost every tradition that takes the text seriously, one thing holds. The defenseless have a particular claim on the people of God, and a faith that does not show up for them has already stopped being faith.",
   "captureLeft": "The left will march for the trafficked woman and the refugee child and the disabled adult denied care, and it should. But it has learned to look past the unborn, the most defenseless human there is, and to treat the child in the womb as an inconvenience to a larger argument. It defends the vulnerable it can see and quietly redefines the ones it would rather not.",
   "captureRight": "The right will defend the unborn with real conviction, and it should. But the same conviction often cools the moment the child is born poor, or arrives at a border, or comes home disabled and expensive, or turns out to be the woman trafficked across that border. It guards life before birth and grows strangely quiet about life that costs something afterward.",
+  "captureDetail": {
+    "right": {
+      "label": "How the right narrows the list",
+      "whatItLooksLike": "The right names the unborn and the persecuted Christian abroad as the vulnerable who matter most, and it defends them with money, votes, and real risk. The trouble is where the concern thins. The same child, once born poor, once arrived at a border, once disabled and expensive, slips off the list of those worth protecting at public cost.",
+      "inThePast": "In 1980s and 1990s evangelical politics the pro-life cause became the organizing center of groups like the Moral Majority and later the Christian Coalition, and the energy was genuine. Yet the same coalition often supported deep cuts to programs serving poor children and resisted the disability accommodations that became the 1990 Americans with Disabilities Act. The persecuted church abroad drew passionate advocacy through groups like Voice of the Martyrs, while persecuted believers seeking asylum at the southern border found a colder welcome. The selectivity was visible long before anyone named it.",
+      "now": "Polling from Pew and others has documented that white evangelical Protestants are among the groups most resistant to refugee admission and most supportive of restrictive immigration policy, even as the same group reports the highest commitment to ending abortion. The 2018 family separation policy split evangelical leaders, with some defending it and others, including the Southern Baptist Convention through its resolutions, objecting. Coverage of persecuted Christians abroad has at times been folded into a domestic culture war frame, so that the suffering believer is championed when useful and forgotten when not.",
+      "named": [
+        "Moral Majority",
+        "Christian Coalition",
+        "selective immigration restriction",
+        "2018 family separation policy",
+        "cuts to child welfare programs",
+        "Voice of the Martyrs framing",
+        "disability cost aversion"
+      ]
+    },
+    "left": {
+      "label": "How the left narrows the list",
+      "whatItLooksLike": "The left names the trafficked woman, the refugee child, the marginalized identity group, and the disabled adult denied care, and it defends them with real institutional weight. The trouble is the unborn, the most defenseless human there is, who is treated as an inconvenience to a larger argument about autonomy. The persecuted Christian abroad becomes awkward to champion when that believer does not fit the preferred picture of who counts as oppressed.",
+      "inThePast": "From the 1973 Roe decision forward, mainstream progressive politics moved from describing abortion as tragic and rare toward defending it as a positive good, and the language of the unborn as a rights-bearing party was steadily edged out. Groups like NARAL, now Reproductive Freedom for All, and Planned Parenthood organized around that shift. At the same time, secular human rights advocacy was sometimes slow to name anti-Christian persecution in places like the Middle East, where the decimation of ancient Christian communities after 2014 drew muted attention compared with other causes.",
+      "now": "Documented reporting has noted that international religious freedom advocacy for persecuted Christians has at times sat uneasily on the left because the victims do not match a familiar oppression narrative, a pattern groups like Open Doors and the bipartisan US Commission on International Religious Freedom have tried to correct. The expansion of late-term and on-demand frameworks in some state laws after the 2022 Dobbs decision moved the unborn further from the protected list rather than nearer. Disability advocates within the movement have also raised that some abortion rhetoric treats a prenatal disability diagnosis as a settled reason to end the pregnancy, which sits in tension with disability rights itself.",
+      "named": [
+        "post-Roe rights framing",
+        "NARAL and Planned Parenthood advocacy",
+        "abortion as positive good",
+        "muted response to Middle East Christian persecution",
+        "post-Dobbs state expansions",
+        "prenatal disability selection",
+        "selective oppression narrative"
+      ]
+    }
+  },
   "whereWeDiffer": "Honest people disagree about the means. What the state should do and what the church should do, where law protects and where it overreaches, how to help in a way that lifts rather than holds down. These are real arguments worth having with patience.",
   "theCost": "Consistency about the vulnerable is exactly where both tribes fail, because each has learned to love its preferred victim and to look away from the other's. To defend them all is to lose the comfort of belonging cleanly to either side. The cost is your tribe's approval, and most of us will not pay it.",
   "charge": "Pick the vulnerable person your own side has taught you to ignore. Start there. Visit, in the old sense, the one it costs you something to see.",

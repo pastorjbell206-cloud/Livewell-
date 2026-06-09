@@ -33,5 +33,35 @@
     { "title": "The Color of Compromise", "author": "Jemar Tisby" },
     { "title": "Letter from Birmingham Jail", "author": "Martin Luther King Jr." },
     { "title": "Life Together", "author": "Dietrich Bonhoeffer" }
-  ]
+  ],
+  "captureDetail": {
+    "right": {
+      "label": "When the right captures the doctrine",
+      "whatItLooksLike": "The image of God is affirmed in the abstract and then used to shut down any honest reckoning with history. Colorblindness, which began as an aspiration that a person not be judged by skin, gets bent into a refusal to look at evidence of harm. The subject of race itself becomes the threat, so that the one who names a wound is treated as the troublemaker and the wound is left to fester.",
+      "inThePast": "In the antebellum South, pastors and theologians built a proslavery theology from the pulpit, men like James Henley Thornwell and Robert Lewis Dabney arguing that bondage was a divinely sanctioned order. After emancipation, white churches across the South blessed Jim Crow and the doctrine of separate but equal, and many drew on a misreading of the so called curse of Ham to justify it. During the civil rights years, most white churches were silent or hostile, which is the indifference Martin Luther King Jr. named in his Letter from Birmingham Jail as the great stumbling block.",
+      "now": "The contemporary form often appears as a flat insistence that the Civil Rights Act of 1964 closed the account and nothing structural remains to discuss. A weaponized colorblindness treats any mention of race as itself divisive, and campaigns against critical race theory in some churches and denominations have at times swept up ordinary lament and honest history along with the academic theory they target. The reflex names the questioner as the problem and leaves the underlying sin unexamined.",
+      "named": [
+        "proslavery theology of Thornwell and Dabney",
+        "curse of Ham misreading",
+        "Jim Crow segregation blessed by white churches",
+        "white church silence in the civil rights era",
+        "weaponized colorblindness",
+        "anti CRT campaigns that suppress honest history"
+      ]
+    },
+    "left": {
+      "label": "When the left captures the doctrine",
+      "whatItLooksLike": "The person made in God's image gets reduced to a group identity, so guilt or innocence is assigned by category before the individual has spoken. Racial essentialism can harden into a kind of determinism, treating people as fixed by ancestry rather than free and accountable souls. And the gospel can collapse into a politics, where salvation is recast as a program and the cross becomes a slogan.",
+      "inThePast": "Older forms of racial essentialism on the left mirror the very pseudoscience that once served racism, the idea that race carries an essential nature rather than being a social and historical construction. Some strands of mid twentieth century liberal Protestantism reduced the faith to a social program and lost the language of sin and grace, a hollowing out that thinkers in the Niebuhr tradition warned against. The pattern is old, the temptation to make the church an arm of a movement and let doctrine follow the cause.",
+      "now": "Identity reductionism in current debate can flatten persons into representatives of a category, judging the man by the group rather than the deed. Certain popular framings tie moral standing to ancestry in ways critics across the spectrum, including writers like John McWhorter and Thomas Chatterton Williams, have challenged as a new essentialism. When churches adopt these frames uncritically, the gospel of grace can be quietly displaced by a politics of grievance and the prophets left disappointed.",
+      "named": [
+        "identity reductionism",
+        "racial essentialism as determinism",
+        "the gospel collapsed into a politics",
+        "the social gospel hollowed of sin and grace",
+        "critiques from John McWhorter",
+        "critiques from Thomas Chatterton Williams"
+      ]
+    }
+  }
 }
