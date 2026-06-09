@@ -66,6 +66,12 @@ const TheologyQuestions = lazy(() => import("./pages/TheologyQuestions"));
 const TheologyTraditions = lazy(() => import("./pages/TheologyTraditions"));
 const TheologySearch = lazy(() => import("./pages/TheologySearch"));
 const TheologyPaths = lazy(() => import("./pages/TheologyPaths"));
+const Justice = lazy(() => import("./pages/justice/Justice"));
+const JusticePosture = lazy(() => import("./pages/justice/JusticePosture"));
+const JusticeTopic = lazy(() => import("./pages/justice/JusticeTopic"));
+const JusticeConsistency = lazy(() => import("./pages/justice/JusticeConsistency"));
+const JusticeGlossary = lazy(() => import("./pages/justice/JusticeGlossary"));
+const JusticeQuestions = lazy(() => import("./pages/justice/JusticeQuestions"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
 const SermonOutline = lazy(() => import("./pages/tools/SermonOutline"));
@@ -163,6 +169,12 @@ function Router() {
         <Route path="/theology/traditions" component={TheologyTraditions} />
         <Route path="/theology/search" component={TheologySearch} />
         <Route path="/theology/paths" component={TheologyPaths} />
+        <Route path="/justice/posture" component={JusticePosture} />
+        <Route path="/justice/consistency" component={JusticeConsistency} />
+        <Route path="/justice/glossary" component={JusticeGlossary} />
+        <Route path="/justice/questions" component={JusticeQuestions} />
+        <Route path="/justice/topic/:slug" component={JusticeTopic} />
+        <Route path="/justice" component={Justice} />
         <Route path="/theology/how-to-use" component={TheologyMethodology} />
         <Route path="/theology/doctrine/:slug" component={TheologyDoctrine} />
         <Route path="/theology" component={Theology} />

@@ -1,0 +1,72 @@
+{
+  "intro": "There is a kind of honesty that costs nothing. We defend the truth when the truth happens to wound the people we already wanted to see wounded. We demand the receipts when the accusation lands on the other side, and we wave the receipts away when it lands on ours. We call this conviction. Scripture calls it a false balance, and it says the Lord hates it. The prophets did not reserve their fire for the foreign king. They turned it on the house of God first, on the people who assumed their tribe was the exception.\n\nThe gospel does not let us keep a second standard in our back pocket. It asks for truthfulness even when truth becomes expensive to our own people, even when the honest word loses us the room, the donor, the friend, the seat at the table. Selective truth-defending does not just damage the people we aim it at. It hollows out our own credibility, until the watching world hears our justice talk and rightly suspects it is only tribe talk wearing a Sunday coat.\n\nThis is not a quiz about politics, and it is not built to confirm what you already think about the other side. It is an examen, a slow and prayerful searching of your own conscience in the old tradition, the kind that asks God to show you the thing you have been careful not to see. Read each test slowly. Sit in the discomfort of the ones that sting. The sting is the point.",
+  "note": "This is a mirror, not a weapon. You are searching your own heart here, not building a case against anyone else, and the moment you start picturing someone who needs to read this more than you do, that is the moment to turn it back on yourself.",
+  "tests": [
+    {
+      "id": "scrutiny",
+      "prompt": "When an accusation threatens someone on your side, do you suddenly become a careful investigator who needs more evidence, while an accusation against the other side needs almost none to earn your belief?",
+      "tell": "If your appetite for proof rises and falls depending on whose reputation is at stake, your standard was never proof. It was loyalty wearing the costume of caution."
+    },
+    {
+      "id": "sharing",
+      "prompt": "Have you passed along a damning story about an opponent before you checked whether it was true, simply because it confirmed what you already believed about them?",
+      "tell": "The speed at which you share a thing tracks how badly you wanted it to be true, and a heart that wanted it that badly was not after the truth. It was after the satisfaction."
+    },
+    {
+      "id": "leaders",
+      "prompt": "Do you excuse in your own leaders the very things you condemn in theirs, the cruelty, the dishonesty, the contempt, telling yourself it is different when your man does it?",
+      "tell": "If the same act is a scandal across the aisle and a strategy on your own bench, you have stopped judging the act and started judging the jersey."
+    },
+    {
+      "id": "grace",
+      "prompt": "When your side fails, do you reach for the language of grace and growth, and when their side fails, do you reach for the language of hypocrisy and exposure?",
+      "tell": "Grace is real, but grace that only ever runs in one direction is not grace. It is favoritism that learned to quote the right verses."
+    },
+    {
+      "id": "outrage",
+      "prompt": "Does an injustice move you to public anger when the victim belongs to your group, and to silence or quiet rationalizing when the victim belongs to theirs?",
+      "tell": "Selective outrage tells on you. It reveals that the suffering was never the thing that moved you. The political usefulness of the suffering was."
+    },
+    {
+      "id": "sources",
+      "prompt": "Do you treat a source as reliable when it flatters your conclusions and dismiss the same kind of source as biased the moment it indicts them?",
+      "tell": "When your trust in a witness depends entirely on the verdict the witness delivers, you are not weighing evidence. You are commissioning a conclusion you already reached."
+    },
+    {
+      "id": "context",
+      "prompt": "Do you generously supply context and good intentions for words spoken by your own, while reading the other side in the least charitable way their words could possibly bear?",
+      "tell": "The charity you extend in one direction and withhold in the other is the exact measure of the partiality you keep insisting you do not have."
+    },
+    {
+      "id": "policy",
+      "prompt": "When a policy you favor causes harm, do you call it an unfortunate side effect, and when a policy they favor causes the same harm, do you call it the cruelty you always knew was in their hearts?",
+      "tell": "If the consequence stays constant but the verdict swings with the party, you are not evaluating the policy. You are protecting the team that owns it."
+    },
+    {
+      "id": "process",
+      "prompt": "Do you defend fair process, due hearing, and the benefit of the doubt loudly when your people are accused, then grow impatient with all of it when theirs are?",
+      "tell": "Principles you only invoke in your own defense were never principles. They were tools, and a tool gets put down the moment it stops being useful to you."
+    },
+    {
+      "id": "silence",
+      "prompt": "Are you quick to demand that the other side denounce the worst voices among them, while staying carefully quiet about the worst voices among your own?",
+      "tell": "The denunciation you require of others and excuse in yourself marks the precise line where your courage stops and your tribe begins."
+    },
+    {
+      "id": "motive",
+      "prompt": "Do you assume noble motives behind the actions of your own and sinister motives behind the identical actions of theirs?",
+      "tell": "Reading every heart on your side as well-meaning and every heart on theirs as scheming is not discernment. It is the oldest flattery, the one that always casts you among the good."
+    },
+    {
+      "id": "correction",
+      "prompt": "When someone corrects a falsehood that helped your side, do you thank them, or do you treat the correction itself as a kind of betrayal?",
+      "tell": "If the truth feels like an attack whenever it costs you, then you have quietly traded the love of truth for the love of winning, and the trade is hard to feel from the inside."
+    },
+    {
+      "id": "memory",
+      "prompt": "Do you keep a long and exact memory of the other side's sins and a short, forgiving memory of your own, so the ledger always reads in your favor?",
+      "tell": "A conscience that files their failures in permanent ink and yours in pencil is not keeping an honest account. It is keeping a case for the prosecution."
+    }
+  ],
+  "closing": "You will not finish this clean. No one does. If you came through it certain you passed, go back, because the certainty is the symptom. The whole point of an examen is that it finds the false balance you have been carrying so long you stopped feeling its weight, the second standard you reach for without deciding to, the loyalty you mistook for conviction.\n\nSo here is the charge, and it is not comfortable. Tell the truth that costs you your own side. Defend the person you cannot stand when the accusation against them is false, and refuse to defend the person you love when the accusation against them is true. Do this and you will lose ground with your tribe, and you will gain something the tribe can never give, a justice that does not flinch and a witness no one can dismiss as merely partisan. The prophets paid for that ground. The cross is what it costs. Go and weigh honestly, beginning with yourself."
+}
