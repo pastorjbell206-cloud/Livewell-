@@ -1,0 +1,135 @@
+{
+  "slug": "church",
+  "title": "What Is the Church?",
+  "subtitle": "Three traditions on the nature, government, and sacraments of the people Christ calls his own, written for someone who just walked in the door.",
+  "triage": "second-order",
+  "triageNote": "That Christ has one church, marked by the gospel, baptism, and the Lord's Supper, is shared ground. How the church is governed and how the sacraments work is what divides the great traditions. This is second-order. It is not the line between believer and unbeliever. It is the line between one congregation and another.",
+  "question": "What is the church, who rules it under Christ, and what happens at the water and the table? The word for this whole subject is ecclesiology, the doctrine of the church, from the Greek word for an assembly that has been called together. You cannot answer it by reading one verse. You have to ask what Christ founded, how he meant it to be ordered, and what he was doing when he gave his people two signs to keep.",
+  "whyItMatters": "Here is the thing nobody tells the new believer plainly. You cannot follow Jesus alone. The New Testament has no category for the solitary Christian, the believer who loves God in private and never joins a body. When you came to faith you were not handed a hobby. You were born into a family, and a family has a shape, a table, and a front door.\n\nThe church is that family. It is where the word is preached to you when you cannot preach to yourself, where bread is broken and you are reminded whose body was broken for you, where older saints carry you and you will one day carry the younger. To ask what the church is, then, is to ask what kind of house you now live in.\n\nAnd the traditions disagree about the house. Not about whether you need it, but about how it is built, who holds the keys, and what God is doing at its two great signs. These differences are not trivial. They will shape which church you can in good conscience join. But they do not, for most of us across these three families, unchurch one another. That distinction is the whole burden of this entry."
+  ,
+  "positions": [
+    {
+      "name": "The Catholic and Sacramental Tradition",
+      "inOneLine": "The church is a visible body governed by bishops in unbroken succession from the apostles, and the sacraments are real channels through which God hands grace to his people.",
+      "bestCase": "Start with what we mean by a sacrament. A sacrament is a visible sign instituted by Christ that does not merely point to grace but actually conveys it, the way a wedding ring does not only symbolize a marriage but seals it. We call the sacraments means of grace, ordinary instruments God has chosen to bring his life to you. He could have done it another way. He chose water, bread, wine, oil, and the laying on of hands.\n\nWe believe Christ founded one visible church and gave it a structure that has never been re-invented from scratch. That structure is episcopal, meaning it is governed by bishops, from the Greek episkopos, overseer. A bishop is not a regional manager. He stands in apostolic succession, an unbroken line of ordination reaching back through the laying on of hands to the apostles themselves. When our bishops teach together with the bishop of Rome, we trust that Christ keeps his promise that the gates of hell will not prevail. The Eastern Orthodox share this conviction of bishops and succession while ordering the bishops as a communion of equals rather than under one earthly head, and high Anglicans keep the threefold order of bishop, priest, and deacon for the same reason.\n\nAt the table we confess the real presence, the teaching that the risen Christ is truly and substantially given in the bread and wine, not merely remembered. Rome states this with the word transubstantiation, the conviction that while the bread and wine keep every appearance of bread and wine, their underlying reality is changed into the body and blood of Christ. The Orthodox affirm the same gift without pinning it to that particular philosophy, content to call it a mystery. Either way, when you come to the altar you do not come to a memory. You come to a meal that feeds you with the One who died.\n\nWe practice paedobaptism, the baptism of infants, from the Latin and Greek for child. We do this because grace runs ahead of our deciding. Baptism is not a reward we hand a person for believing well. It is God laying claim to a life, washing away original sin and grafting the child into the body of Christ, as circumcision once marked the children of Abraham before they could choose anything.\n\nWhat the new believer should feel in our tradition is the weight of objectivity. Your standing does not rest on the temperature of your feelings on a given Sunday. It rests on what God has done to you in water and what he does for you at the altar, again and again, whether you feel it or not.",
+      "advocates": ["The Catechism of the Catholic Church", "The Eastern Orthodox tradition and the early church fathers", "John Henry Newman", "high Anglican writers in the catholic stream"],
+      "keyTexts": ["Matthew 16:18-19", "John 6:53-56", "Acts 2:38-39", "1 Corinthians 11:23-26", "John 20:21-23"]
+    },
+    {
+      "name": "The Reformed and Presbyterian Tradition",
+      "inOneLine": "The church is the covenant community of believers and their children, governed by elders, where the sacraments are true signs and seals that feed the soul on Christ by faith.",
+      "bestCase": "We begin where Scripture begins, with covenant, the binding relationship God makes with a people and their households. From Abraham forward, God has dealt with families. He gave Abraham a sign, circumcision, and laid it on the children before they could understand it, because the promise was made to him and to his children after him. We read the church as the continuation of that one covenant people, now opened to the nations in Christ.\n\nThat covenant logic is why we practice paedobaptism. Baptism has taken the place of circumcision as the sign of belonging to God's people, and so we give it to the children of believers. We are not claiming the child is already saved. We are saying the child is set apart, marked, raised inside the promises, called to grow up and own for himself the faith into which he was baptized. Colossians 2 ties baptism and circumcision together in a single breath, and we cannot read that and then bar the children our God has always included.\n\nOur government is presbyterian, from the Greek presbyteros, elder. Christ rules his church not through one bishop and not through the raw vote of the crowd but through a plurality of ordained elders, men examined and set apart to shepherd, who are accountable to one another in graded assemblies. No elder is a pope. No congregation is an island. This guards the people from the tyranny of one strong personality and from the chaos of every member doing what is right in his own eyes.\n\nAt the table we hold the spiritual presence, sometimes called the Reformed view, taught most clearly by John Calvin. We do not say the bread becomes Christ's body. We do say the Supper is far more than a memory. By the Holy Spirit, the believer who eats in faith is lifted up to feed truly on the crucified and risen Christ. The presence is real. The location is not in the elements but in the Spirit who joins us to our Lord in heaven. So the table is a true spiritual feeding, and the bread is a sign and seal that confirms the promise to those who take it believing.\n\nWhat the new believer gains here is a God who keeps covenant across generations, a church that is neither a dictatorship nor a mob, and a table where Christ genuinely nourishes you without your having to swallow a philosophy about how the bread has changed.",
+      "advocates": ["John Calvin, Institutes of the Christian Religion", "The Westminster Confession of Faith", "the Heidelberg Catechism", "Michael Horton and contemporary Presbyterian writers"],
+      "keyTexts": ["Genesis 17:7", "Acts 2:38-39", "Colossians 2:11-12", "1 Corinthians 10:16", "Ephesians 4:11-13"]
+    },
+    {
+      "name": "The Baptist and Free-Church Tradition",
+      "inOneLine": "The church is a gathered company of professing believers, governed congregationally under the headship of Christ alone, where baptism is for those who personally believe and the Supper is a remembering and a communion.",
+      "bestCase": "We prefer the word ordinance to sacrament, though many of us will use either. An ordinance is a practice the Lord ordained and commanded, baptism and the Supper, kept in obedience as acts that proclaim and confirm faith rather than as mechanisms that pour grace into a person regardless of belief. We do not deny that God meets his people in them. We deny that the sign works on someone who has not believed.\n\nWe read the church as a gathered body. Read Acts. The church is born when people hear the word, repent, believe, and are added. It is a fellowship of those who have personally trusted Christ, not a population into which one is born. That conviction is the root of everything else we hold.\n\nSo we practice credobaptism, believer's baptism, from the Latin credo, I believe. We baptize those who can profess faith for themselves, and we baptize them by immersion, lowered under the water and raised again, because the act pictures dying and rising with Christ as Romans 6 describes. To us the order in the New Testament is fixed and never reversed. They believed, then they were baptized. An infant cannot believe, so the infant waits, loved and taught, until faith is his own.\n\nOur government is congregational, meaning Christ rules his gathered people through the whole membership under his word, not through bishops above them and not through assemblies of elders beyond them. We have pastors and we honor them, but final earthly authority under Christ rests with the gathered congregation, who together guard the gospel, receive members, and when necessary remove them. Every member is a priest, as Peter says, and the keys were given to the church.\n\nAt the table we hold the memorial view, taught by men like the Swiss reformer Zwingli, that the Supper is first a remembering. Do this in remembrance of me, the Lord said, and we take him at his word. The bread and cup proclaim his death until he comes. Many of us add that it is also a genuine communion, a real fellowship with Christ and with one another, even as we deny that his body is bodily present in the bread. The power is in the faith and the proclaiming, not in the elements.\n\nWhat the new believer finds here is a church you join by your own confession, a baptism that means you have personally said yes to Christ, and a table where the focus falls squarely on the cross you are called to remember and trust.",
+      "advocates": ["The Second London Baptist Confession of 1689", "John Bunyan", "Charles Spurgeon", "John Piper and contemporary Baptist writers"],
+      "keyTexts": ["Acts 2:41", "Matthew 28:19", "Romans 6:3-4", "1 Corinthians 11:23-26", "1 Peter 2:9"]
+    }
+  ],
+  "biblicalEvidence": [
+    {
+      "passage": "Matthew 16:18-19",
+      "leansToward": "The catholic and sacramental tradition, with all three claiming it",
+      "summary": "Jesus tells Peter, on this rock I will build my church, and gives him the keys of the kingdom, with the power to bind and loose. This is the founding charter. Christ builds one church and entrusts authority to it.",
+      "hardFor": "It is hardest for any view that treats the church as optional or invisible only. Christ plainly intends to build something with structure and authority. For Baptists the verse is hard if it is taken to seat all authority in one man.",
+      "howOthersRead": "The catholic reading sees Peter as the first in a line of bishops who carry the keys. Presbyterians answer that the rock is Peter's confession of Christ, and that the keys are given to the apostles as a group and through them to the elders. Baptists answer that two chapters later, in Matthew 18, the same binding and loosing is handed to the whole gathered church, so the keys belong to the congregation, not to one office."
+    },
+    {
+      "passage": "Acts 2:38-39",
+      "leansToward": "Contested, and central to the baptism debate",
+      "summary": "Peter preaches, Repent and be baptized every one of you for the forgiveness of your sins, and you will receive the Holy Spirit. For the promise is for you and for your children and for all who are far off.",
+      "hardFor": "This is the great pressure point. It is hard for Baptists because the promise is named for you and for your children in the same breath, the very household language paedobaptists build on. It is hard for paedobaptists because the command runs repent, then be baptized, and infants cannot repent.",
+      "howOthersRead": "Paedobaptists read for your children as proof that the covenant still reaches households, so the children belong inside the sign. Baptists read it as a promise offered to the children when they too repent and believe, and note that everyone actually baptized in the chapter first received the word. Both agree baptism and the gift of the Spirit belong together. They divide on who is ready to receive it."
+    },
+    {
+      "passage": "Matthew 28:19",
+      "leansToward": "Shared ground, read differently",
+      "summary": "The risen Christ commands the church to go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey.",
+      "hardFor": "It is hard for the Baptist if read make disciples by baptizing, as though baptism is the doorway rather than the seal of discipleship. It is hard for the paedobaptist if read disciple first, then baptize, since infants are baptized before they can be taught.",
+      "howOthersRead": "Baptists emphasize the order, make disciples and then baptize and teach, fitting believer's baptism. Paedobaptists emphasize the nations, whole peoples and households drawn in, and read the participles as describing how disciples are made, by baptizing them into the community and teaching them within it over a lifetime."
+    },
+    {
+      "passage": "Acts 2:42",
+      "leansToward": "Shared ground for all three",
+      "summary": "The first believers devoted themselves to the apostles' teaching and the fellowship, to the breaking of bread and the prayers. Here is the church's basic life, word, fellowship, table, and prayer.",
+      "hardFor": "It is not hard for anyone. It is the common floor every tradition stands on, which is exactly why it belongs here. It shows the disputed questions sit on top of deep agreement.",
+      "howOthersRead": "All three read this as the picture of a healthy church. The catholic stream hears the breaking of bread as the early Eucharist. The Reformed hear word and sacrament held together. Baptists hear a gathered, devoted, committed body. The text bears all three emphases without contradiction."
+    },
+    {
+      "passage": "1 Corinthians 11:23-26",
+      "leansToward": "Contested, and central to the Supper debate",
+      "summary": "Paul hands on the words of institution. This is my body, which is for you. Do this in remembrance of me. As often as you eat this bread and drink the cup, you proclaim the Lord's death until he comes.",
+      "hardFor": "It is hard for the memorial view because Paul says this is my body, not this represents my body. It is hard for the real-presence view because Jesus also says do this in remembrance of me, the language of memory, and Paul says we proclaim his death, the language of preaching.",
+      "howOthersRead": "The catholic reading takes this is my body at full strength and finds the real presence. The Reformed take it as a true feeding on Christ by the Spirit, neither bare memory nor changed bread. Baptists take in remembrance of me and proclaim his death as the controlling note and read this is my body as the natural figure of speech a teacher uses while holding up the bread, the way one points at a photograph and says, that is my father."
+    },
+    {
+      "passage": "Ephesians 4:11-13",
+      "leansToward": "Bears on government for all three",
+      "summary": "The ascended Christ gives the church apostles, prophets, evangelists, shepherds, and teachers, to equip the saints for the work of ministry, until we all attain to the unity of the faith and maturity.",
+      "hardFor": "It is hard for any view that flattens all ministry into one office, since Christ gives differing gifts and roles. It presses every tradition to take ordered ministry seriously rather than treating leadership as informal.",
+      "howOthersRead": "The catholic stream sees a gift of ordered offices flowing from Christ through the apostles to bishops. Presbyterians see Christ appointing teaching and ruling roles, grounding government by elders. Baptists see Christ gifting the body to equip every member, which fits a congregation in which gifted leaders serve but the whole body shares the work."
+    },
+    {
+      "passage": "Colossians 2:11-12",
+      "leansToward": "The Reformed and paedobaptist tradition",
+      "summary": "In Christ you were circumcised with a circumcision made without hands, having been buried with him in baptism, in which you were also raised with him through faith.",
+      "hardFor": "It is hard for the Baptist because Paul links baptism directly to circumcision, the very sign given to infants, which seems to carry the household principle straight into baptism. It is hard for the paedobaptist because the same verse ties baptism to faith, buried and raised through faith, which sounds like believer's baptism.",
+      "howOthersRead": "Paedobaptists read the circumcision-baptism link as decisive, the new sign replacing the old, children included as before. Baptists answer that the circumcision here is made without hands, an inward work of the heart, not the physical rite, and that Paul roots the whole thing in faith, which an infant does not yet exercise. So the same verse anchors both cases, which is why the debate endures."
+    },
+    {
+      "passage": "1 Peter 2:9",
+      "leansToward": "The Baptist and congregational tradition, claimed by all",
+      "summary": "Peter calls the whole people a chosen race, a royal priesthood, a holy nation, a people for God's own possession, called to proclaim the excellencies of him who called you out of darkness.",
+      "hardFor": "It is hard for any view that locates priesthood only in an ordained clergy set above the people, since Peter makes the whole church a priesthood. It presses the catholic stream to hold its ordained priesthood together with the priesthood of all.",
+      "howOthersRead": "Baptists read the priesthood of all believers as support for congregational rule, every member a priest with a stake in the church's life. Presbyterians agree on the universal priesthood while insisting Christ still appoints elders to govern. The catholic stream affirms the priesthood of all the baptized while teaching that the ordained priest serves a distinct role within that one priestly people, not above it but for it."
+    }
+  ],
+  "weighing": "Now the part where I tell you what I actually think, and label it plainly as my own judgment rather than the verdict of the whole church. Take it as the considered opinion of one pastor, not as a wall you must stand against.\n\nI find the Baptist reading of baptism the most natural fit for the pattern of Acts, where the order is consistently hearing, believing, then water. The household texts are real and I do not wave them off, but Acts 2:39 holds out the promise to the children when they too are far off and called, and the actual baptisms in the chapter follow the word being received. I land on credobaptism while granting that Colossians 2 and the covenant argument give the paedobaptist a serious case I cannot dismiss as careless. Honest readers sit on both sides of this, and they always have.\n\nOn the table I cannot rest in bare memorialism, and I find myself drawn toward the Reformed spiritual presence. Do this in remembrance is plainly there, so the memory is not wrong. But Paul treats the cup as a participation in the blood of Christ in 1 Corinthians 10, which is more than recollection. Something is given at the table, received by faith, that mere remembering does not exhaust. I want to keep the memory and add the feeding.\n\nOn government I am persuaded that the New Testament shows a plurality of elders shepherding each church, which checks both the lone strong pastor and the unaccountable crowd. Whether that plurality answers upward to a wider assembly or rests finally in the local congregation is the live question between Presbyterian and Baptist, and here I hold my conviction with an open hand, because godly churches have flourished under each. These are my judgments. They are held with conviction and offered without contempt."
+  ,
+  "charitableDisagreement": "Hear me carefully on how to hold all this. The man across town who baptizes his infant is not playing at faith, and the woman who waited to be immersed as an adult is not despising the children of the covenant. Each is trying with everything in them to obey the same Lord and read the same book faithfully, and each can give you chapter and verse. When you have sat, as I have, with a Presbyterian saint dying in peace and a Baptist saint dying in the same peace, you stop pretending these differences mark the line between the saved and the lost. They mark the line between one faithful house and another.\n\nSo is this a hill to die on? No, and yes, and you must hold both. No, in that none of these three traditions unchurches the others. We will stand together at the resurrection and laugh at how much we argued. But yes in a smaller and practical sense, because you cannot be baptized two ways at once or hold two doctrines of the table in one membership, and so these convictions will shape which church you can join in good conscience and serve with a clear heart. Choose a church whose reading of the water and the table you can say amen to without crossing your fingers. Then love the believers down the road who chose differently, and call them what they are, your brothers and sisters in the one church Christ promised to build."
+  ,
+  "relatedDebates": [
+    {
+      "topic": "The mode and subjects of baptism",
+      "note": "Two questions, not one. The mode asks how, by immersion under the water, by pouring, or by sprinkling, with Baptists pressing immersion as the picture of death and resurrection and others allowing any application of water. The subjects asks who, believers only or believers and their children. A church's answers to both decide who stands at the font and how."
+    },
+    {
+      "topic": "The four main views of the Lord's Supper",
+      "note": "Transubstantiation, the Roman teaching that the bread and wine become the body and blood while keeping their appearance. The Lutheran sacramental union, that Christ is truly present in, with, and under the bread without the bread ceasing to be bread. The Reformed spiritual presence, that the believer feeds on Christ truly by the Spirit though the elements are unchanged. And the memorial view, that the Supper is chiefly a remembering and proclaiming of Christ's death. Where you land shapes how you approach the table."
+    },
+    {
+      "topic": "Women in the offices of the church",
+      "note": "Whether the offices of elder or pastor are open to women, or reserved to men, turns on reading 1 Timothy 2, Galatians 3:28, and the example of women who plainly served and led in the New Testament. Sincere believers divide. It is its own study and deserves more than a footnote, but you should know it sits inside the doctrine of the church and will differ from congregation to congregation."
+    },
+    {
+      "topic": "The marks of a true church",
+      "note": "How do you know a gathering is a real church and not a club or a cult? The Reformers named the marks, the signs by which a true church is recognized, classically the word of God rightly preached and the sacraments rightly administered, with church discipline often added as a third. The marks let you affirm a church across these very disagreements, since a faithful Baptist and a faithful Presbyterian church both display them."
+    }
+  ],
+  "furtherReading": [
+    {
+      "side": "On church government, all sides together",
+      "title": "Perspectives on Church Government: Five Views of Church Polity",
+      "author": "edited by Chad Owen Brand and R. Stanton Norman"
+    },
+    {
+      "side": "On the Lord's Supper, all sides together",
+      "title": "Understanding Four Views on the Lord's Supper",
+      "author": "edited by John H. Armstrong"
+    },
+    {
+      "side": "A strong single-tradition case, Baptist and congregational",
+      "title": "Nine Marks of a Healthy Church",
+      "author": "Mark Dever"
+    },
+    {
+      "side": "A strong single-tradition case, catholic and sacramental",
+      "title": "The Catechism of the Catholic Church, the section on the church and the sacraments",
+      "author": "the Roman Catholic Church"
+    }
+  ]
+}
