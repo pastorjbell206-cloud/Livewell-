@@ -27,6 +27,7 @@ import {
   STUDY_GUIDES_HREF,
 } from "@/lib/subPathways";
 import { SUBPATHWAY_BY_SLUG } from "@/lib/subpathwayMap.generated";
+import { HIDDEN_SLUGS } from "@/lib/hiddenSlugs";
 
 interface DropdownItem {
   label: string;
@@ -87,6 +88,7 @@ export default function MinimalNav() {
     const rows = navIndexQuery.data ?? [];
     const c: Record<string, number> = {};
     for (const r of rows) {
+      if (HIDDEN_SLUGS.has((r as any).slug)) continue;
       // Prefer a sub-pathway written to the DB; otherwise fall back to the
       // static slug→category map so the menu works without a DB backfill.
       const label =

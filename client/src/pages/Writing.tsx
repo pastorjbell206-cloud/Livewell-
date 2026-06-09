@@ -25,6 +25,7 @@ import {
   STUDY_GUIDES_LABEL,
 } from "@/lib/subPathways";
 import { SUBPATHWAY_BY_SLUG } from "@/lib/subpathwayMap.generated";
+import { HIDDEN_SLUGS } from "@/lib/hiddenSlugs";
 
 /** A post's sub-pathway: the DB value if set, else the static slug map. */
 function resolveSub(p: any): string | null {
@@ -89,6 +90,8 @@ export default function Writing() {
 
   const filtered = useMemo(() => {
     return posts.filter(p => {
+      // Hidden duplicate stubs never appear in the listing.
+      if (HIDDEN_SLUGS.has(p.slug)) return false;
       // Track
       if (activeTrack) {
         const track = pillarToTrack(p.pillar);
