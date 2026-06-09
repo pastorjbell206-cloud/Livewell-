@@ -106,10 +106,9 @@ export const DOCTRINE_INDEX: DoctrineIndexEntry[] = [
   { slug: "soteriology", pillar: "Systematic", title: "How Are We Saved?", blurb: "Grace, election, and the human will. The deepest of the family disagreements.", triage: "second-order", ready: true },
   { slug: "church", pillar: "Systematic", title: "What Is the Church?", blurb: "Baptism, the Lord's Supper, government, and who belongs.", triage: "second-order", ready: true },
   { slug: "last-things", pillar: "Systematic", title: "How Does It End?", blurb: "Death, the return of Christ, the millennium, judgment, and the new creation.", triage: "third-order", ready: true },
-  // Pillar 2 — Church history
-  { slug: "early-church", pillar: "History", title: "The Early Church and the Councils", blurb: "From the apostles to Nicaea and Chalcedon, and the heresies that forced the church to speak.", triage: "first-order", ready: false },
+  // Pillar 2 — Church history lives as its own narrative page at /theology/history
   // Pillar 3 — Biblical theology
-  { slug: "covenant-frameworks", pillar: "Biblical", title: "How the Whole Story Fits", blurb: "Covenant theology, dispensationalism, and progressive covenantalism as three ways to read the one story.", triage: "second-order", ready: false },
+  { slug: "covenant-frameworks", pillar: "Biblical", title: "How the Whole Story Fits", blurb: "Covenant theology, dispensationalism, and progressive covenantalism as three ways to read the one story.", triage: "second-order", ready: true },
 ];
 
 export function triageOf(t: Triage): TriageMeta {

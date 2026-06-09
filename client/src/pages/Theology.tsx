@@ -21,7 +21,7 @@ const card = {
 const PILLARS = [
   { key: "Systematic", n: "One", title: "Systematic theology", blurb: "The faith laid out in order, from Scripture and the Trinity to creation, sin, Christ, the Spirit, salvation, the church, and the last things.", href: "" },
   { key: "History", n: "Two", title: "Church history", blurb: "How the church got here. The councils that fixed the creeds, the heresies that forced them, and the people who carried the faith through twenty centuries.", href: "/theology/history" },
-  { key: "Biblical", n: "Three", title: "Biblical theology", blurb: "How the whole Bible fits as one story. Covenant, dispensational, and progressive-covenantal frameworks, the canonical themes, and how the New Testament reads the Old.", href: "" },
+  { key: "Biblical", n: "Three", title: "Biblical theology", blurb: "How the whole Bible fits as one story. Covenant, dispensational, and progressive-covenantal frameworks, the canonical themes, and how the New Testament reads the Old.", href: "/theology/biblical" },
 ];
 
 function DoctrineCard({ d }: { d: DoctrineIndexEntry }) {

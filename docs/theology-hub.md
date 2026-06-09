@@ -59,6 +59,8 @@ book each side has written, plus one irenic overview).
 /theology/passage                 The Passage Context Tool.
 /theology/history                 Pillar 2, church history: timeline, councils,
                                   heresies, and figures (four tabs).
+/theology/biblical                Pillar 3, biblical theology: the storyline,
+                                  themes, NT use of the OT, and book overviews.
 ```
 
 ### Pillar 0 — How to use this section  (`/theology/how-to-use`)
@@ -273,7 +275,12 @@ always labeled as a judgment held tentatively, never as settled fact.
 - [x] Pillar 2 church history (/theology/history): a walkable narrative
       timeline of seven eras, the great councils, the heresies as a teaching
       tool, and 36 figure profiles, on a four-tab page
-- [ ] Pillar 3 (biblical theology)
+- [x] Pillar 3 biblical theology (/theology/biblical): the one story in
+      eleven acts, ten canonical themes traced across the canon, how the New
+      Testament reads the Old, and a biblical-theology overview of all 66
+      books, plus the contested frameworks worked as a doctrine (covenant
+      theology, dispensationalism, progressive covenantalism, new covenant
+      theology)
 - [ ] Companion interactive tools
 
 Drafts for James to confirm and personalize: the Pillar 0 author's lens and the
