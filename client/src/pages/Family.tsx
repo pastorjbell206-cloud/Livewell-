@@ -94,6 +94,24 @@ export default function Family() {
         </div>
       </section>
 
+      {/* CATECHISM — featured */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) 0" }}>
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <Link href="/family/catechism" style={{ ...card, borderTop: "2px solid var(--mustard)", padding: "var(--s-5)" }}>
+            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>Learn the faith together</div>
+            <div style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.5vw, 32px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "10px" }}>
+              The Family Catechism
+            </div>
+            <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "12px" }}>
+              Fifty-two questions, one a week, in the New City Catechism tradition. An answer for the grown-ups and one for the little ones, a verse, a short reflection, and a prayer. The oldest way a family has ever learned the faith.
+            </p>
+            <span style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", display: "inline-flex", alignItems: "center", gap: "6px" }}>
+              Start the catechism <ArrowRight size={14} />
+            </span>
+          </Link>
+        </div>
+      </section>
+
       {/* FAMILY DEVOTIONS */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
