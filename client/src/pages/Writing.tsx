@@ -188,7 +188,12 @@ export default function Writing() {
                 : activeTrackInfo?.description ??
                   "Every essay by James Bell — on theology, politics, the American church after Christendom, pastoring, marriage, and parenting."
         }
-        url={`https://www.livewellbyjamesbell.co${location}`}
+        url={`https://www.livewellbyjamesbell.co/writing${
+          activePillar ? `?pillar=${activePillar}`
+          : activeTrack ? `?track=${activeTrack}`
+          : activeSeries ? `?series=true`
+          : ""
+        }`}
       />
 
       {/* HERO */}
