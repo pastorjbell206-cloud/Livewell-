@@ -38,6 +38,53 @@ const dividedLife = [
 `You cannot follow the living God into a divided life. He keeps walking through the wall.`,
 ].join("\n\n");
 
+const churchHistory = [
+`Every generation is certain it is the one watching the church die.`,
+`The conviction is old. In the year 250 the emperor Decius required every soul in the empire to sacrifice to the gods and carry a certificate proving it. Christians who refused were killed; the thousands who did not refuse — the lapsi, the lapsed — burned the pinch of incense, kept the certificate, and walked home alive. When the persecution lifted, the church that remained had to decide what to do with the ones who had folded. Cyprian of Carthage spent the rest of his life on that question, and it nearly tore the church in two.`,
+`It was not the last time.`,
+`Sixty years later Diocletian tried again, harder — the Great Persecution of 303, churches leveled, Scriptures burned, clergy jailed. And again some handed the sacred books to the fire rather than die. The traditores, the ones who handed over: the word is the root of traitor. When that storm passed, the Donatists declared that a church led by traitors was no church, that a sacrament from a coward's hands was empty water. Augustine answered them. The church is a field of wheat and weeds grown together, he said, and the holiness of the sacrament belongs to Christ, not to the priest. The fight was about purity. It is always about purity.`,
+`Then the floor of the world cracked. On the twenty-fourth of August, 410, Alaric's Goths walked into Rome and sacked the eternal city, and an empire that had felt permanent went suddenly mortal. The pagans blamed the Christians — Rome had abandoned the old gods and the old gods had abandoned Rome. The Christians were not much steadier; if a Christian empire could fall, what exactly had they been promised? Augustine, an old man by then, watched the panic and wrote twenty-two books against it. The City of God is not a consolation. It is a demolition. There are two cities, he said, built by two loves — the earthly city by love of self to the contempt of God, the City of God by love of God to the contempt of self — and they have been tangled since Cain and will not be sorted until the end. Rome was never the City of God. It had only looked like it for a while.`,
+`That is the sentence the church keeps forgetting. It only looked like it for a while.`,
+`I have stood in a sanctuary and felt the floor crack — the pews thinner, the culture turned, the young gone, the name "Christian" become a liability where it had been a credential — and felt the old panic climb my throat, the certainty that this is the end and no one has ever stood where I am standing. It is a lie, and it flatters me. It tells me my moment is the hinge of history. The history tells me my moment is a rerun.`,
+`And the history says something worse than that. The church has rarely died from persecution; it grew under Decius and Diocletian, and Tertullian was right that the blood was seed. Where the church has actually died, it has usually died from comfort — from the long centuries when it was the establishment and forgot it had ever been anything else, when it mistook the empire's survival for its own. North Africa, the church of Tertullian and Cyprian and Augustine, the most brilliant Christianity on earth in its hour, is gone. Not martyred. Absorbed, satisfied, and then erased, and it left almost nothing behind but the names of its dead.`,
+`So the real question was never whether the church can survive the end of its cultural power. It has survived far worse, and it has been killed by far less. The question is what it loved while it held the power.`,
+`We are not the first to think it was ending. We will not be the last. The funerals keep coming early — and the danger keeps being the one nobody preaches at the graveside: that the church most likely to die is the one too comfortable to notice it already has.`,
+].join("\n\n");
+
+const vocationMoney = [
+`Ask a man who he is and he will tell you what he does. Watch where the answer goes.`,
+`He will not lead with husband, or son, or member of a congregation. He will say he is an engineer, a contractor, a pastor — and he will say it the way you state a fact about your own substance, as if the job were not what he does but what he is made of. We did not always talk like this. The change has a history, and like most of the histories that shape us, it began as something good and then curdled.`,
+`It was not always a confession of identity. It was once a confession of faith.`,
+`Before the Reformation the holy work belonged to the monk — to pray, to copy Scripture, to leave the field and the forge for the cloister. That was vocation, a calling; the farmer and the blacksmith merely had jobs. Luther tore the wall down. The milkmaid at her pail and the cobbler at his bench, he said, do work as holy as the priest at the altar, because vocation is not the labor you perform but the neighbor your labor serves. Beruf — the German word that means both job and calling — carried the whole conviction: that God feeds the world through ordinary hands, that the baker is part of the answer to the prayer give us this day our daily bread. Dorothy Sayers said it again in wartime England: work is not, primarily, a thing one does to live, but the thing one lives to do. She meant it as dignity. She would be appalled at what we made of it.`,
+`We kept the intensity and discarded the neighbor. Max Weber watched it happen and named it — the Protestant certainty that diligent work glorified God outlived the God it was meant to glorify, and what remained was the iron cage: labor as proof of worth, with nothing at the center but the labor itself. The calling became a career. The neighbor became a market. And the question vocation existed to answer — who does my work serve — was quietly swapped for the only question a career knows how to ask, which is what does my work make of me.`,
+`Money is where the substitution is easiest to see. Jesus spoke of it more than almost anything, and never because it is dirty. He called it dangerous because it is a rival — you cannot serve God and mammon, not because money is wicked but because it offers precisely what God offers, security and identity and a future, and offers them now, on terms you appear to control. Mammon is not the opposite of God. It is the counterfeit. A counterfeit only works because it resembles the real thing.`,
+`I am a pastor, which is supposed to be immune to this and is not. I have measured myself by the size of the room, the count in the seats, the reach of the name — which is only the career disease in a clerical collar, the same idol holding a different paycheck. I have told a congregation their worth is not their work, then gone home and quietly priced my own by mine. The sermon I cannot preach is the one I have not finished hearing.`,
+`Your work is real. Your work matters. Your work cannot carry the weight you are loading onto it — it was built to serve your neighbor, not to justify your existence, and the moment you ask it to justify you it will take everything you have and still not absolve you.`,
+`The grace the gospel offers and the wage the work offers look alike from across the room. They are not alike. One is earned, and it runs out. The other is given, and it cannot. You will spend your life confusing them. The only mercy is that the One who made you never does.`,
+].join("\n\n");
+
+const preaching = [
+`There is a kind of sermon that does everything right and costs the preacher nothing. It is the most dangerous kind there is.`,
+`It is well-built and clear, it lands each point, the room nods along — and the man who preached it steps off the platform exactly as he stepped on, untouched. Nothing in it asked anything of him. Phillips Brooks, lecturing at Yale in 1877, gave the definition no one has improved: preaching is truth through personality. Not truth beside personality. Not truth performed by personality. Through — the word of God passing across a particular human being who has been altered by carrying it. Remove the second half and you do not get weak preaching. You get something else entirely, wearing its clothes.`,
+`Not weak preaching. Something else.`,
+`What it is wearing is the conference stage. The pulpit has been quietly colonized by the keynote — the polished twenty minutes engineered for retention and applause. Fred Craddock saw the shift coming and named the alternative: preaching as one without authority, not the expert descending to the ignorant with answers but a witness standing inside the same darkness the congregation stands in, working aloud toward a light he does not own. Craddock's preacher is exposed. The keynote speaker is not. The keynote speaker has mastered his material; the preacher is being mastered by his.`,
+`Karl Barth said the preacher works with the Bible in one hand and the newspaper in the other, and the line is quoted to death and rarely obeyed. It does not mean decorate the text with current events. It means stand in the collision — the eternal word and the morning's wreckage — and refuse to release the tension early, refuse the tidy application, refuse to send the people home with a task when what the text hands them is a verdict. Walter Brueggemann said that finally comes the poet, that the prophetic word cannot be argued into a room, it has to be spoken in a language the empire has not yet learned to capture. That is the preacher's actual assignment, and the one he is most tempted to skip.`,
+`I have skipped it. I have stood with a text that meant to break something in the room and softened it on the way out of my mouth, because I wanted to be liked, or invited back, or simply spared the silence that follows a word that will not resolve. I have preached the sermon that cost me nothing and watched it change no one, and then told myself the absence of fruit was the hardness of the soil. Sometimes the soil is hard. Sometimes the seed was never planted, only displayed.`,
+`The test of a sermon is not whether it was good. Plenty of empty sermons are good. The test is whether the man preaching it had anything at stake — whether the word had already done its work on him before he asked it to do its work on them. A preacher who has not been wounded by his text can only ever describe the wound.`,
+`The congregation can tell. They always can. They have sat through a thousand performances and they know the difference between a man telling them about the fire and a man who walks in smelling of smoke. The pulpit does not need better speakers; it is drowning in good speakers. It needs the rarer and costlier thing — a witness who went through what he is about to ask them to go through, and came back, and will not pretend the walk was short.`,
+].join("\n\n");
+
+const marriageFamily = [
+`I was raised without a father. I was given five sons. Everything I understand about covenant lives in the gap between those two sentences.`,
+`The culture has a word for what a father is meant to leave behind — inheritance — and it means money. The Bible uses the same word for something far heavier: a name, a blessing, a debt of love or the wound of its absence, handed down whether or not anyone signs for it. I received the absence. A boy who grows up without a father does not grow up with a clean hole where the father should be. He grows up with a set of instructions he never chose, written by a man who was not there, and he will follow them to the letter until the day he decides not to. That decision is the whole of it.`,
+`That decision is the whole of it.`,
+`We have made marriage small in order to make it safe. Somewhere in the last century the covenant quietly became a contract — a mutual arrangement between two people for their mutual benefit, dissolvable the moment the benefit runs thin. Christopher Lasch watched it happen and called the family a haven in a heartless world that the heartless world had finally broken into, hollowed from the inside until it kept the furniture of intimacy and lost the load-bearing walls. A contract asks what I am getting. A covenant asks what I am bound to. These are not two strengths of the same thing. They are opposites, and a marriage built on the first will not survive the first winter the second was made for.`,
+`Wendell Berry has written about marriage more honestly than most theologians: it is not a private happiness but a form — like a field, like a membership — a shape you enter that is older than you and will outlast you, and that holds you to people precisely when feeling alone would let you walk. Stanley Hauerwas put the same truth to the blade: we always marry the wrong person, because the one we vowed to is not the one we wake beside a decade on, and the entire point of the vow is that it was made to someone we did not yet know. Romance promises that love will hold the marriage. The vow knows better. The marriage holds the love.`,
+`I have not done this well by being naturally good at it. I had no template; I had a wound where the template goes. I have sat at my own table physically present and ten miles gone, carrying the church home in my chest, and watched one of my sons clock the distance in my eyes — the same distance I once measured in a man who was not even in the room. The thing you swore you would never pass down is the thing your hands already know how to do. You do not escape the inheritance by hating it. You escape it by burying it on purpose, one ordinary Tuesday at a time, and the burial is never quite finished.`,
+`This is the work no one applauds. It is done where no congregation can watch, in the unglamorous hours, in the apology a father makes to a child who will not remember the offense but will remember that the man knelt. That is the gospel a family can actually see — not a lecture about grace but a man who will not leave, breaking a chain in the only place a chain is ever broken, which is at home.`,
+`I cannot give my sons the father I did not have. That man is gone; that gift was never mine to hand on. I can only do the one thing the absence taught me by its lack — stay. Be in the room. Be in the room again tomorrow. It is a smaller inheritance than the one I wanted to leave and a larger one than the one I got, and on the days I manage it, it is enough, and on the days I fail it, the staying is still the only repair. The covenant is not a feeling I keep having. It is a door I keep not walking out of.`,
+].join("\n\n");
+
 const items = [
   {
     slug: "the-constantinian-bargain",
@@ -56,6 +103,42 @@ const items = [
     excerpt: "We are the first people who can be in two places at once. We have not admitted what it is doing to us.",
     readTime: "6 min read",
     body: dividedLife,
+  },
+  {
+    slug: "the-church-has-outlived-its-own-funerals",
+    title: "The Church Has Outlived Its Own Funerals",
+    pillar: "Theological Depth",
+    subPathway: "Church History",
+    excerpt: "Every generation believes it is the one watching the church die. The history says otherwise — and it says something worse.",
+    readTime: "5 min read",
+    body: churchHistory,
+  },
+  {
+    slug: "your-work-was-never-going-to-save-you",
+    title: "Your Work Was Never Going to Save You",
+    pillar: "Integrated Life",
+    subPathway: "Vocation & Money",
+    excerpt: "We took the holiest word the Reformation gave us — vocation — and turned it into the thing that owns us.",
+    readTime: "5 min read",
+    body: vocationMoney,
+  },
+  {
+    slug: "preaching-is-not-public-speaking",
+    title: "Preaching Is Not Public Speaking",
+    pillar: "Leadership Formation",
+    subPathway: "Preaching",
+    excerpt: "The pulpit has been colonized by the conference stage. The preacher who notices is the one with something left to lose.",
+    readTime: "5 min read",
+    body: preaching,
+  },
+  {
+    slug: "the-inheritance-you-choose",
+    title: "The Inheritance You Choose",
+    pillar: "Integrated Life",
+    subPathway: "Marriage & Family",
+    excerpt: "I was raised without a father and given five sons. Everything I believe about covenant, I learned in the gap between those two facts.",
+    readTime: "5 min read",
+    body: marriageFamily,
   },
 ];
 
