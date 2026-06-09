@@ -165,11 +165,32 @@ export default function Family() {
               })}
             </div>
           )}
-          <div style={{ marginTop: "16px" }}>
+          <div style={{ marginTop: "16px", display: "flex", flexWrap: "wrap", gap: "20px" }}>
+            <Link href="/family/devotions" style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", display: "inline-flex", alignItems: "center", gap: "6px" }}>
+              See the full year, plus Advent and Holy Week <ArrowRight size={14} />
+            </Link>
             <Link href="/tools/family-devotions" style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", display: "inline-flex", alignItems: "center", gap: "6px" }}>
-              Or build your own devotion <ArrowRight size={14} />
+              Or build your own <ArrowRight size={14} />
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* READING PLANS */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) 0" }}>
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <Link href="/family/reading-plans" style={{ ...card, borderTop: "2px solid var(--mustard)", padding: "var(--s-5)" }}>
+            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>Read it together</div>
+            <div style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.5vw, 32px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "10px" }}>
+              Family Bible reading plans
+            </div>
+            <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "12px" }}>
+              A passage a day and a short prompt. Walk the life of Jesus, the great Old Testament story for kids, the Psalms, or a starter plan if your family is beginning or beginning again.
+            </p>
+            <span style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", display: "inline-flex", alignItems: "center", gap: "6px" }}>
+              Browse the plans <ArrowRight size={14} />
+            </span>
+          </Link>
         </div>
       </section>
 
