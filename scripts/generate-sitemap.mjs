@@ -40,6 +40,13 @@ const STATIC_PAGES = [
   { url: "/work-with-james", priority: "0.6", changefreq: "monthly" },
   { url: "/membership", priority: "0.7", changefreq: "monthly" },
   { url: "/resources", priority: "0.7", changefreq: "monthly" },
+  // Five-pillar listing pages (current nav taxonomy) + Study Guides.
+  { url: "/writing?pillar=theological-depth", priority: "0.85", changefreq: "weekly" },
+  { url: "/writing?pillar=prophetic-justice", priority: "0.85", changefreq: "weekly" },
+  { url: "/writing?pillar=prophetic-disruption", priority: "0.85", changefreq: "weekly" },
+  { url: "/writing?pillar=leadership-formation", priority: "0.85", changefreq: "weekly" },
+  { url: "/writing?pillar=integrated-life", priority: "0.85", changefreq: "weekly" },
+  { url: "/writing?series=true", priority: "0.8", changefreq: "weekly" },
 ];
 
 function urlEntry(loc, lastmod, changefreq, priority) {
