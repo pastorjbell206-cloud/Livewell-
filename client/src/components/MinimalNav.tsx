@@ -51,13 +51,22 @@ function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLin
     const subs = subPathwaysForPillar(pillar).filter(
       s => !hasData || (counts[s.label] ?? 0) > 0
     );
+    // Integrated Life leads with the Family Discipleship hub.
+    const extras: DropdownItem[] =
+      pillar === "Integrated Life"
+        ? [{ label: "Family Discipleship", href: "/family", description: "Devotions, teen apologetics, parenting, and marriage — for the whole house." }]
+        : [];
     if (subs.length === 0) {
-      // No populated sub-pathway — a plain link to the pillar listing.
+      // No populated sub-pathway. Still surface Family for Integrated Life.
+      if (extras.length) {
+        return { label: pillar, dropdown: [...extras, { label: `All ${pillar}`, href: pillarListingUrl(pillar) }] };
+      }
       return { label: pillar, href: pillarListingUrl(pillar) };
     }
     return {
       label: pillar,
       dropdown: [
+        ...extras,
         { label: `All ${pillar}`, href: pillarListingUrl(pillar) },
         ...subs.map(s => ({ label: s.label, href: pillarListingUrl(pillar, s.slug) })),
       ],
