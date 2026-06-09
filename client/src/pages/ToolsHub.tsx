@@ -55,6 +55,13 @@ const TOOLS = [
     color: "var(--ink)",
   },
   {
+    title: "Parenting Bible Verses",
+    description: "Scripture for the real moments of parenting — fear, anger, identity, obedience, screens, doubt — each with a short, honest note for the parent.",
+    href: "/tools/parenting-verses",
+    icon: Baby,
+    color: "var(--ink)",
+  },
+  {
     title: "Emotional Health Assessment",
     description: "15 questions across self-awareness, boundaries, grief, forgiveness, and rest. Scripture-grounded diagnostic with practical next steps.",
     href: "/tools/emotional-health",

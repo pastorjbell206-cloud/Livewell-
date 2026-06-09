@@ -46,6 +46,8 @@ const BibleStudy = lazy(() => import("./pages/tools/BibleStudy"));
 const MarriageAssessment = lazy(() => import("./pages/tools/MarriageAssessment"));
 const FinancialHealth = lazy(() => import("./pages/tools/FinancialHealth"));
 const ParentingGuide = lazy(() => import("./pages/tools/ParentingGuide"));
+const ParentingVerses = lazy(() => import("./pages/tools/ParentingVerses"));
+const Family = lazy(() => import("./pages/Family"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
 const SermonOutline = lazy(() => import("./pages/tools/SermonOutline"));
@@ -127,6 +129,7 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/marriage" component={Marriage} />
         <Route path="/parenting" component={Parenting} />
+        <Route path="/family" component={Family} />
         <Route path="/doubt" component={Doubt} />
         <Route path="/start" component={StartHereQuiz} />
         <Route path="/for-families" component={ForFamiliesRedirect} />
@@ -162,6 +165,7 @@ function Router() {
         <Route path="/tools/verse-finder" component={VerseFinder} />
         <Route path="/tools/prayer-generator" component={PrayerGenerator} />
         <Route path="/tools/bible-study" component={BibleStudy} />
+        <Route path="/tools/parenting-verses" component={ParentingVerses} />
         <Route path="/tools/marriage-assessment" component={MarriageAssessment} />
         <Route path="/tools/financial-health" component={FinancialHealth} />
         <Route path="/tools/parenting-guide" component={ParentingGuide} />
