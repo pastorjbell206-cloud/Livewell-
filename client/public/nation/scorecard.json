@@ -1,0 +1,119 @@
+{
+  "intro": "No party is the kingdom of God. That sentence should cost something to write, because most of us came to this page hoping the scorecard would vindicate the side we already chose. It will not. The Bible does not arrive as a registered voter. It arrives as a judge, and it judges the left and the right and the comfortable center with the same unsparing eye, naming what each gets right and refusing to let any of them mistake a platform for a gospel.\n\nWhat follows measures, theme by theme, how near or far each broad American coalition stands from what Scripture actually teaches. On some questions the right stands closer to the text. On others the left does. The center is often the least principled of the three, mistaking the midpoint between two positions for wisdom when the text demands something neither side is offering. I have tried to mark each honestly, even where the honest mark stings the side I am tempted to defend.\n\nRead this as an examination of your own loyalties, not a weapon against your neighbor. The point is not to discover that your team scored highest. No team scores highest. The point is to feel, theme by theme, the discomfort of a book that will not be domesticated by any party, and to let that discomfort do its work on you before you turn it on anyone else. The Bible would make a homeless partisan. So should we.",
+  "parties": [
+    { "id": "left", "label": "The Left" },
+    { "id": "center", "label": "The Center" },
+    { "id": "right", "label": "The Right" }
+  ],
+  "themes": [
+    {
+      "name": "Care for the Poor",
+      "biblicalTeaching": "Scripture returns to the poor more than almost any other social concern, commanding gleaning laws, the cancellation of debts, and the protection of the widow, the orphan, and the stranger. The prophets measure a nation by how it treats its most vulnerable, and Jesus opens his ministry by announcing good news to the poor. Indifference to material need is named not as a private failing but as a betrayal of God.",
+      "scores": {
+        "left": { "verdict": "Nearer", "note": "The left keeps the material condition of the poor at the center of its moral vocabulary and is willing to spend public resources to address it. It can, however, reduce care to transfer payments while neglecting the dignity, family, and agency that Scripture also names." },
+        "center": { "verdict": "Mixed", "note": "The center accepts a safety net but treats poverty as a problem to be managed at the margins rather than a verdict on the whole order. It rarely lets the poor disturb its comfort." },
+        "right": { "verdict": "Further", "note": "The right rightly insists on work, family, and local responsibility as paths out of poverty, but too often baptizes indifference to systemic need as prudence and lets the poor fall through gaps it refuses to close." }
+      }
+    },
+    {
+      "name": "The Unborn and the Sanctity of Life",
+      "biblicalTeaching": "Scripture speaks of God knitting the child in the womb and knowing the person before birth, and it treats the unborn as bearing the image of God rather than as a mere extension of the mother. The same texts that protect the poor protect the defenseless, and the unborn are among the most defenseless. The taking of innocent life is named as a grave wrong.",
+      "scores": {
+        "left": { "verdict": "Further", "note": "The left has largely abandoned any moral weight for the unborn, framing the question almost entirely as autonomy and treating restriction as oppression. This is the place where its concern for the vulnerable goes silent." },
+        "center": { "verdict": "Mixed", "note": "The center accepts abortion within limits and discomfort, neither defending the unborn fully nor dismissing them entirely. It often settles on a line drawn by polling rather than principle." },
+        "right": { "verdict": "Nearer", "note": "The right names the unborn as a life worth protecting and bears real political cost for it. Yet its concern can collapse at birth, defending the womb while neglecting the mother and child who survive it." }
+      }
+    },
+    {
+      "name": "Marriage and the Family",
+      "biblicalTeaching": "Scripture presents marriage as a covenant between a man and a woman, lifelong and ordered toward children, and it treats the family as the first school of love and faith. The home is where the generations are bound together and where the weak are first protected. Its disordering is treated as a wound to the whole community.",
+      "scores": {
+        "left": { "verdict": "Further", "note": "The left tends to treat marriage as one lifestyle among many and is wary of naming any family form as normative, loosening the very bonds Scripture treats as load-bearing. Its concern for individual freedom can leave children carrying the cost." },
+        "center": { "verdict": "Mixed", "note": "The center affirms family in sentiment while accepting nearly every redefinition in practice. It praises the family at weddings and undermines it through neglect." },
+        "right": { "verdict": "Nearer", "note": "The right defends marriage and the two-parent household as a public good, closer to the text on the shape of the family. It can, however, idolize the family as an end in itself and shame those whose homes have already been broken." }
+      }
+    },
+    {
+      "name": "Sexuality and the Body",
+      "biblicalTeaching": "Scripture treats the body as a gift and sexuality as belonging within the covenant of marriage, neither shameful nor self-defining. It refuses both the ancient contempt for the body and the modern worship of desire as identity. The body is the Lord's, and chastity is asked of everyone, married and single alike.",
+      "scores": {
+        "left": { "verdict": "Further", "note": "The left tends to treat desire as identity and consent as the only relevant limit, drifting from the covenantal frame Scripture assumes. It rightly resists cruelty toward those the church has wounded, but it offers no ordering of the body at all." },
+        "center": { "verdict": "Mixed", "note": "The center has quietly absorbed the sexual revolution while keeping a vague language of restraint it no longer practices. It judges no one and forms no one." },
+        "right": { "verdict": "Mixed", "note": "The right defends a traditional sexual ethic but often applies it selectively, stern toward some and silent toward the adultery and pornography in its own house. It is nearer the text on principle and further in the consistency it demands of itself." }
+      }
+    },
+    {
+      "name": "The Immigrant and the Refugee",
+      "biblicalTeaching": "Scripture commands Israel to love the stranger, remembering that they were strangers in Egypt, and it extends the protection of law to the foreigner within the gates. The refugee and the sojourner are named alongside the widow and the orphan as those God watches over. Hospitality to the outsider is treated as a test of a people's faith.",
+      "scores": {
+        "left": { "verdict": "Nearer", "note": "The left holds the welcome of the stranger near the center of its concern and resists the dehumanizing of the migrant. It can, however, treat any limit or order at the border as cruelty, which Scripture does not require." },
+        "center": { "verdict": "Mixed", "note": "The center wants both welcome and control and rarely commits to either, letting the question drift for decades. It manages the politics and forgets the person." },
+        "right": { "verdict": "Further", "note": "The right rightly insists that law and order have a place at the border, but its rhetoric often slides into contempt for the migrant as a threat rather than a neighbor. It is furthest from the command to love the stranger." }
+      }
+    },
+    {
+      "name": "Racial Justice and Human Dignity",
+      "biblicalTeaching": "Scripture declares that every person bears the image of God and that in Christ the dividing walls between peoples are broken down. The prophets condemn the powerful who crush the weak, and the New Testament refuses any hierarchy of worth between Jew and Gentile. Partiality is named as sin.",
+      "scores": {
+        "left": { "verdict": "Nearer", "note": "The left keeps the wound of racial injustice in view and refuses to pretend the history is settled. It can, however, reduce persons to their group identity, replacing one partiality with another and forgetting the reconciliation Scripture aims at." },
+        "center": { "verdict": "Mixed", "note": "The center affirms equality in principle while resisting any cost that might disturb the present arrangement. It prefers the language of unity to the work of repair." },
+        "right": { "verdict": "Further", "note": "The right rightly warns against new forms of partiality and group judgment, but it too often treats the history as closed and dismisses real grievance as grievance-mongering. It is further from the prophets' insistence that injustice be named." }
+      }
+    },
+    {
+      "name": "Care for Creation",
+      "biblicalTeaching": "Scripture gives humanity dominion over creation as stewardship, not plunder, and the earth is declared the Lord's and everything in it. The land itself is given sabbath rest, and the creation is said to groan under human abuse. To waste and ruin what God called good is a failure of trust.",
+      "scores": {
+        "left": { "verdict": "Nearer", "note": "The left treats the care of creation as a moral duty and resists the plunder of land and air for short-term gain. It can, however, drift toward treating the earth as an idol and humanity as the problem rather than the steward." },
+        "center": { "verdict": "Mixed", "note": "The center affirms stewardship in word and defers the cost indefinitely. It signs the statement and changes nothing." },
+        "right": { "verdict": "Further", "note": "The right rightly resists policies that ignore human flourishing and economic cost, but it too often denies the damage outright and treats dominion as license. It is furthest from the call to keep the garden." }
+      }
+    },
+    {
+      "name": "Honesty and Truth in Public Life",
+      "biblicalTeaching": "Scripture commands that we not bear false witness and treats the lying tongue as something God hates. Leaders are measured by their faithfulness to the truth, and the prophets condemn those who call evil good and good evil. Truth is not a tactic but a covenant.",
+      "scores": {
+        "left": { "verdict": "Mixed", "note": "The left is capable of its own distortions, shaping facts to fit the narrative and punishing dissent within its ranks. It is nearer when it insists on verifiable truth and further when it polices speech into conformity." },
+        "center": { "verdict": "Mixed", "note": "The center prizes a managed, institutional honesty that can shade into spin and the careful half-truth. It rarely lies outright and rarely tells the whole truth either." },
+        "right": { "verdict": "Mixed", "note": "The right has at times made peace with open falsehood from its leaders when the falsehood served the cause, which Scripture cannot abide. It is nearer when it names hard realities others avoid and further when it excuses the lie for the win." }
+      }
+    },
+    {
+      "name": "Wealth and Greed",
+      "biblicalTeaching": "Scripture warns relentlessly that the love of money is a root of evil and that the rich who ignore the poor stand under judgment. It does not condemn possession itself but the grip of greed, the hoarding that hardens the heart, and the worship of mammon as a rival god. Generosity and contentment are commanded.",
+      "scores": {
+        "left": { "verdict": "Mixed", "note": "The left names greed and the danger of concentrated wealth, near the prophets' suspicion of the powerful. It can, however, treat envy as righteousness and the state as the only generous actor, missing the personal call to give." },
+        "center": { "verdict": "Further", "note": "The center has largely made peace with acquisition as the ordering principle of life and rarely lets the warning against mammon disturb it. It treats wealth as neutral when Scripture treats it as dangerous." },
+        "right": { "verdict": "Mixed", "note": "The right rightly honors work and the freedom to create wealth, but it often baptizes accumulation itself and grows deaf to the warnings against greed. It is nearer on stewardship and further when prosperity becomes the proof of blessing." }
+      }
+    },
+    {
+      "name": "Religious Liberty",
+      "biblicalTeaching": "Scripture presents faith as a free response of the conscience, not a thing coerced, and the early church bore witness under hostile powers without seizing the sword. The state is given a real but limited authority, and the conscience belongs finally to God. Worship is to be free, and faith is not the property of the magistrate.",
+      "scores": {
+        "left": { "verdict": "Further", "note": "The left increasingly treats religious conviction as a private hobby that must yield to public policy, narrowing the space for conscience. It defends some liberties fiercely and the liberty of dissenting faith hardly at all." },
+        "center": { "verdict": "Mixed", "note": "The center affirms religious freedom as a settled value while letting it erode whenever it conflicts with convenience. It defends the principle and surrenders the particulars." },
+        "right": { "verdict": "Nearer", "note": "The right defends the freedom of conscience and the space for faith in public life, nearer the text on the limits of state coercion. It can, however, narrow that defense to its own faith and forget that the liberty must extend to those it dislikes." }
+      }
+    },
+    {
+      "name": "The Power and Limits of the State",
+      "biblicalTeaching": "Scripture grants the governing authority a genuine role to restrain evil and do justice, yet it places that authority firmly under God and warns against the king who multiplies power to himself. The state is a servant, not a savior, and idolatry of the nation is named as a snare. Power is to be held under judgment, never worshiped.",
+      "scores": {
+        "left": { "verdict": "Mixed", "note": "The left trusts the state to do justice and protect the weak, near Scripture's affirmation of lawful authority. It can, however, expand that trust into a faith the state cannot bear, treating government as the engine of salvation." },
+        "center": { "verdict": "Mixed", "note": "The center defends the institutions and the rule of law, which Scripture honors, but often defends them as ends in themselves. It guards the machinery and forgets the judgment over it." },
+        "right": { "verdict": "Mixed", "note": "The right rightly warns that the state is not a savior and guards against its overreach. It can, however, slide into idolizing the nation itself, confusing love of country with the worship Scripture reserves for God." }
+      }
+    },
+    {
+      "name": "War and Peacemaking",
+      "biblicalTeaching": "Scripture blesses the peacemaker and calls the use of force a grave matter answerable to justice, never to be entered lightly or celebrated. The prophets long for swords beaten into plowshares, and Jesus refuses the way of the sword for his kingdom. The defense of the innocent is permitted, but the love of war is condemned.",
+      "scores": {
+        "left": { "verdict": "Mixed", "note": "The left is often suspicious of war and quick to seek other means, near the longing for peace. It can, however, be naive about real evil and slow to defend the innocent who need protecting." },
+        "center": { "verdict": "Mixed", "note": "The center accepts the use of force as a routine instrument of policy and rarely lets the gravity of it disturb the calculation. It manages wars more easily than it mourns them." },
+        "right": { "verdict": "Mixed", "note": "The right takes seriously the duty to defend against real threats, near the permission to protect the innocent. It can, however, celebrate strength for its own sake and grow too comfortable with the sword Jesus refused." }
+      }
+    }
+  ],
+  "closing": "Count the marks and you will find no winner. The right stands nearer on the unborn, the family, and the freedom of conscience. The left stands nearer on the poor, the stranger, racial dignity, and the care of creation. The center, again and again, comes out not as the balanced wisdom it imagines itself to be but as the least principled of the three, mistaking the midpoint between two positions for the truth. The Bible refuses every one of them a clean victory.\n\nThis is the discomfort the scorecard exists to produce. If you finished it feeling vindicated, you read it wrong, because somewhere in these twelve themes your own side was named and found wanting, and the test of whether the text has touched you is whether you flinched there or skipped past it. I flinched. I wrote some of these verdicts against the very loyalties I carry into the voting booth, and writing them did not feel like winning an argument. It felt like being judged.\n\nSo let the book do to you what no party will. Let it make you a homeless partisan, unable to rest fully in any coalition because you have seen each one from the angle of the text. That homelessness is not cynicism and it is not retreat. It is the beginning of allegiance to a kingdom that does not appear on any ballot, and it asks the hardest thing of all, which is to keep loving the neighbor who voted against you while refusing to pretend that either of you has found the side that is finally right."
+}
