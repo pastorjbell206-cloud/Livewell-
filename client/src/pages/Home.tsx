@@ -20,8 +20,15 @@ import {
   PRIMARY_HEADLINE,
   PRIMARY_KICKER,
   PRIMARY_SUBHEAD,
+  PRIMARY_SUBHEAD_SHORT,
 } from "@/lib/positioning";
 import { FEATURED_TRACKS, PRIMARY_TRACKS, trackUrl } from "@/lib/taxonomy";
+
+// Hero A/B variant. "A" (default): tighter two-sentence subhead + a "Find your
+// track" secondary CTA that serves everyone (the skeptic entry stays as a
+// tertiary link). "B": the original long subhead + skeptic-first secondary.
+// Flip this one constant to switch variants without touching markup.
+const HERO_VARIANT: "A" | "B" = "A";
 
 export default function Home() {
   // Recent essays for the "Recent" rail.
@@ -116,7 +123,7 @@ export default function Home() {
                 marginBottom: "40px",
               }}
             >
-              {PRIMARY_SUBHEAD}
+              {HERO_VARIANT === "A" ? PRIMARY_SUBHEAD_SHORT : PRIMARY_SUBHEAD}
             </p>
 
             <div
@@ -147,7 +154,7 @@ export default function Home() {
                   Read the essays
                 </button>
               </Link>
-              <Link href="/skeptic-track" style={{ textDecoration: "none" }}>
+              <Link href={HERO_VARIANT === "A" ? "/start" : "/skeptic-track"} style={{ textDecoration: "none" }}>
                 <button
                   type="button"
                   style={{
@@ -163,10 +170,26 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  Start here if you're a skeptic
+                  {HERO_VARIANT === "A" ? "Find your track" : "Start here if you're a skeptic"}
                 </button>
               </Link>
             </div>
+            {HERO_VARIANT === "A" && (
+              <div style={{ marginTop: "16px" }}>
+                <Link
+                  href="/skeptic-track"
+                  style={{
+                    fontFamily: "var(--U)",
+                    fontSize: "13px",
+                    color: "rgba(245,240,230,0.6)",
+                    textDecoration: "underline",
+                    textUnderlineOffset: "3px",
+                  }}
+                >
+                  Or start here if you're a skeptic
+                </Link>
+              </div>
+            )}
           </div>
 
           {/* Lede essay card — replaces decorative author card */}

@@ -25,12 +25,13 @@ The catalog label "All {n} books" was already computed from the rendered list (c
 
 ---
 
-## TODO — remaining brief steps (not yet done)
+## TODO — remaining brief steps
 
-- **Step 2 — Taxonomy reconciliation** (5 pillars vs. 3 homepage "Lede Arcs"). The highest-value structural fix. Needs a `taxonomy` config + mapping the 3 arcs to their parent pillar(s).
-- **Step 3 — Hero CTA / shortened subhead / A/B variant.** Needs the owner's call on copy and which secondary CTA.
-- **Step 4 — "From the writing" excerpt block on homepage** (pull a featured essay excerpt dynamically).
-- **Step 5 — SEO foundation.** This is an SPA (no SSR); there is already a `prerender-heads.mjs` + `SEOMeta` + `generate-sitemap.mjs`. Need: per-pillar/essay titles+descriptions, OG/Twitter, JSON-LD Book/Article, canonical URLs for `?pillar=&sub=` variants.
-- **Step 6 — Book purchase paths.** The data model already has `purchaseUrl` (all 21 are currently `null`). Render a buy button only when set. **OWNER TODO: provide retailer URLs for the 21 books** (none are known — will not be invented).
-- **Step 7 — Membership waitlist nurture tag.** The form already posts `source: "membership-waitlist"`. Confirm the email provider segments on it. **OWNER TODO: confirm or wire the email provider.**
-- **Step 8 — Consistency test + guardrails.**
+- **Step 2 — Taxonomy reconciliation** (5 pillars vs. 3 homepage "Lede Arcs"). Deeper than the brief assumed: three layered systems coexist (old `tracks`, `PILLARS_V2` of 6, and the current 5-pillar nav in `subPathways.ts`). The homepage "Lede Arcs" are the old `FEATURED_TRACKS`. Reconciling fully is an architectural refactor touching track pages, footer, and chips — handling carefully and separately to avoid breakage.
+- **Step 3 — Hero CTA / shortened subhead / A/B variant. (DONE)** Added `PRIMARY_SUBHEAD_SHORT` (two sentences, same claims, no new copy; long version kept for variant B). Added a `HERO_VARIANT` flag (default "A") in `Home.tsx`: variant A shows the short subhead and a "Find your track" secondary CTA → `/start`, with the skeptic entry kept as a tertiary link; variant B is the original.
+- **Step 4 — "From the writing" excerpt.** Largely already present: the homepage renders a featured "lede" essay card above the fold, sourced live. May refine to show 2–3 sentences ending on a verdict line.
+- **Step 5 — SEO foundation.** SPA with existing `prerender-heads.mjs` + `SEOMeta` + `generate-sitemap.mjs`. Still to add: canonical URLs for `?pillar=&sub=` variants, Book/Article JSON-LD coverage, OG/Twitter completeness audit.
+- **Step 6 — Book purchase paths. (RENDERING DONE)** `BookDetail.tsx` already renders a buy link only when `purchaseUrl` is set, and hides it otherwise. **OWNER TODO: all 21 books currently have `purchaseUrl: null` — provide retailer URLs (none invented).**
+- **Step 7 — Membership waitlist nurture tag.** The form already posts `source: "membership-waitlist"`. **OWNER TODO: confirm the email provider segments on that tag.**
+- **Step 8 — Consistency test + guardrails. (DONE)** `server/consistency.test.ts` asserts `bookCount === 21` and fails if `twenty-five books` / `25 books` / `160+ essays` reappear in client source.
+
