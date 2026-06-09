@@ -24,6 +24,16 @@ import {
   SUBPATHWAY_LABEL_BY_SLUG,
   STUDY_GUIDES_LABEL,
 } from "@/lib/subPathways";
+import { SUBPATHWAY_BY_SLUG } from "@/lib/subpathwayMap.generated";
+
+/** A post's sub-pathway: the DB value if set, else the static slug map. */
+function resolveSub(p: any): string | null {
+  return (p?.subPathway as string | null) || SUBPATHWAY_BY_SLUG[p?.slug]?.sub || null;
+}
+/** Whether a post is part of a series (DB flag or static map). */
+function resolveSeries(p: any): boolean {
+  return !!(p?.isSeries || SUBPATHWAY_BY_SLUG[p?.slug]?.series);
+}
 
 const AUDIENCE_LABELS: Record<string, string> = {
   individuals: "Anyone",
@@ -92,16 +102,16 @@ export default function Writing() {
       // Pillar (new five-pillar / sub-pathway taxonomy): a post belongs to the
       // pillar when its sub-pathway is one of that pillar's sub-pathways.
       if (isNewPillar && newPillarName) {
-        const postSub = (p as any).subPathway as string | null;
+        const postSub = resolveSub(p);
         const subs = PILLAR_SUBPATHWAYS[newPillarName] ?? [];
         if (!postSub || !subs.some(s => s.label === postSub)) return false;
       }
       // Specific sub-pathway
       if (activeSub) {
-        if (((p as any).subPathway ?? "") !== subLabel) return false;
+        if ((resolveSub(p) ?? "") !== subLabel) return false;
       }
       // Study Guides & Series
-      if (activeSeries && !(p as any).isSeries) return false;
+      if (activeSeries && !resolveSeries(p)) return false;
       // Sub-theme (primarily Pillar 6: marriage, fatherhood, parenting…)
       if (activeSubTheme && !subThemesForPost(p).includes(activeSubTheme)) return false;
       // Audience

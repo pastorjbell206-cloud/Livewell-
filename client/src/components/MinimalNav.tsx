@@ -26,6 +26,7 @@ import {
   STUDY_GUIDES_LABEL,
   STUDY_GUIDES_HREF,
 } from "@/lib/subPathways";
+import { SUBPATHWAY_BY_SLUG } from "@/lib/subpathwayMap.generated";
 
 interface DropdownItem {
   label: string;
@@ -86,7 +87,12 @@ export default function MinimalNav() {
     const rows = navIndexQuery.data ?? [];
     const c: Record<string, number> = {};
     for (const r of rows) {
-      const label = (r as any).subPathway as string | null;
+      // Prefer a sub-pathway written to the DB; otherwise fall back to the
+      // static slug→category map so the menu works without a DB backfill.
+      const label =
+        ((r as any).subPathway as string | null) ||
+        SUBPATHWAY_BY_SLUG[(r as any).slug]?.sub ||
+        null;
       if (label) c[label] = (c[label] ?? 0) + 1;
     }
     return { counts: c, hasData: rows.length > 0 };
