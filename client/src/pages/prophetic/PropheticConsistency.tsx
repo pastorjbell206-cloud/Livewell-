@@ -1,66 +1,54 @@
 /**
- * The Consistency Check (/justice/consistency) — the flagship tool. A searching
- * self-examination of whether the reader defends truth selectively, applying
- * one standard to their own tribe and another to their opponents. A mirror, not
- * a scorecard, and explicitly not a weapon against others. The reader walks the
- * tests one at a time, marking the ones that land, and is left with a charge.
- * Content: /justice/consistency-check.json.
+ * The Consistency Check, the flagship tool of Prophetic Disruption. A searching
+ * self-examination of whether the reader defends truth selectively, one
+ * standard for their own tribe and another for their opponents. A mirror, not a
+ * scorecard, and explicitly not a weapon against others. Config-driven so it can
+ * serve any section that ships a consistency-check.json.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import { Check } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import type { SectionConfig } from "@/lib/prophetic";
 
 interface Test { id: string; prompt: string; tell: string; }
 interface Data { intro: string; note: string; tests: Test[]; closing: string; }
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
-export default function JusticeConsistency() {
+export default function PropheticConsistency({ config }: { config: SectionConfig }) {
   const [data, setData] = useState<Data | null>(null);
   const [marked, setMarked] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
-    fetch("/justice/consistency-check.json", { cache: "no-store" })
+    fetch(`${config.base}/consistency-check.json`, { cache: "no-store" })
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setData(d))
       .catch(() => {});
-  }, []);
+  }, [config.base]);
 
   const markedCount = useMemo(() => Object.values(marked).filter(Boolean).length, [marked]);
 
   return (
     <Layout>
-      <SEOMeta
-        title="The Consistency Check — A Mirror for Your Own Heart"
-        description="A searching self-examination of whether you defend truth selectively, holding one standard for your own side and another for your opponents. A mirror, not a scorecard, and not a weapon against anyone else."
-        url="https://www.livewellbyjamesbell.co/justice/consistency"
-      />
+      <SEOMeta title={`The Consistency Check — ${config.label}`} description="A searching self-examination of whether you defend truth selectively, holding one standard for your own side and another for your opponents. A mirror, not a weapon." url={`https://www.livewellbyjamesbell.co${config.base}/consistency`} />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/justice" style={{ color: "inherit" }}>Prophetic Justice</Link> · The consistency check
+            <Link href={config.base} style={{ color: "inherit" }}>{config.label}</Link> · The consistency check
           </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 54px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "18ch" }}>
-            One standard, or two?
-          </h1>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 54px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "18ch" }}>One standard, or two?</h1>
           {data && (
             <div style={{ maxWidth: "64ch" }}>
-              {data.intro.split("\n\n").map((p, i) => (
-                <p key={i} style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", marginBottom: "12px" }}>{p}</p>
-              ))}
+              {data.intro.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", marginBottom: "12px" }}>{p}</p>)}
             </div>
           )}
         </div>
       </section>
 
-      {!data && (
-        <section style={{ background: "var(--bone)", padding: "var(--s-7) var(--s-4)" }}>
-          <p style={{ ...wrap, fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center" }}>Loading…</p>
-        </section>
-      )}
+      {!data && <section style={{ background: "var(--bone)", padding: "var(--s-7) var(--s-4)" }}><p style={{ ...wrap, fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center" }}>Loading…</p></section>}
 
       {data && (
         <>
@@ -90,7 +78,6 @@ export default function JusticeConsistency() {
             </div>
           </section>
 
-          {/* CLOSING CHARGE */}
           <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--bone)" }}>
             <div style={wrap}>
               {markedCount > 0 && (
@@ -98,11 +85,9 @@ export default function JusticeConsistency() {
                   {markedCount === 1 ? "One landed. That is enough to start." : `${markedCount} landed. None of us reads this clean.`}
                 </p>
               )}
-              {data.closing.split("\n\n").map((p, i) => (
-                <p key={i} style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, lineHeight: 1.5, color: "var(--bone)", maxWidth: "60ch", marginBottom: "14px" }}>{p}</p>
-              ))}
+              {data.closing.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, lineHeight: 1.5, color: "var(--bone)", maxWidth: "60ch", marginBottom: "14px" }}>{p}</p>)}
               <div style={{ marginTop: "var(--s-4)" }}>
-                <Link href="/justice/topic/truth-and-tribe" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>Read: When Truth Becomes Negotiable →</Link>
+                <Link href={`${config.base}/topic/truth-and-tribe`} style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>Read: When Truth Becomes Negotiable →</Link>
               </div>
             </div>
           </section>

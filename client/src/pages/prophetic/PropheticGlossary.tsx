@@ -1,28 +1,28 @@
 /**
- * Justice glossary (/justice/glossary). A searchable, alphabetical glossary of
- * biblical justice terms, with the politically loaded words defined fairly.
- * Data: /justice/glossary.json.
+ * Shared glossary for a prophetic section. Searchable, alphabetical, loaded from
+ * <base>/glossary.json.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import { Search } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import type { SectionConfig } from "@/lib/prophetic";
 
 interface Term { term: string; hebrew: string; short: string; definition: string; seeAlso: string[]; }
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
-export default function JusticeGlossary() {
+export default function PropheticGlossary({ config }: { config: SectionConfig }) {
   const [terms, setTerms] = useState<Term[]>([]);
   const [q, setQ] = useState("");
 
   useEffect(() => {
-    fetch("/justice/glossary.json", { cache: "no-store" })
+    fetch(`${config.base}/glossary.json`, { cache: "no-store" })
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d?.terms && setTerms(d.terms))
       .catch(() => {});
-  }, []);
+  }, [config.base]);
 
   const filtered = useMemo(() => {
     const n = q.trim().toLowerCase();
@@ -42,20 +42,14 @@ export default function JusticeGlossary() {
 
   return (
     <Layout>
-      <SEOMeta
-        title="Justice Glossary — The Words, Defined Fairly"
-        description="A glossary of biblical justice terms from mishpat to jubilee, including the politically loaded words like social gospel and Christian nationalism, each defined even-handedly."
-        url="https://www.livewellbyjamesbell.co/justice/glossary"
-      />
+      <SEOMeta title={`Glossary — ${config.label}`} description="The words of biblical justice from mishpat to jubilee, including the politically loaded ones, defined even-handedly." url={`https://www.livewellbyjamesbell.co${config.base}/glossary`} />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/justice" style={{ color: "inherit" }}>Prophetic Justice</Link> · Glossary
+            <Link href={config.base} style={{ color: "inherit" }}>{config.label}</Link> · Glossary
           </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 50px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            The words, defined fairly.
-          </h1>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 50px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>The words, defined fairly.</h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch", marginBottom: "22px" }}>
             Many of these words have been turned into weapons. Here they are defined from the text and the tradition, with the loaded ones handled honestly from both sides.
           </p>
@@ -82,9 +76,7 @@ export default function JusticeGlossary() {
                     </div>
                     <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.5, color: "var(--ink)", fontWeight: 500, marginBottom: "8px" }}>{t.short}</p>
                     <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "68ch" }}>{t.definition}</p>
-                    {t.seeAlso?.length > 0 && (
-                      <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", marginTop: "10px", paddingTop: "8px", borderTop: "1px solid var(--border)" }}>See also: {t.seeAlso.join(", ")}</p>
-                    )}
+                    {t.seeAlso?.length > 0 && <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", marginTop: "10px", paddingTop: "8px", borderTop: "1px solid var(--border)" }}>See also: {t.seeAlso.join(", ")}</p>}
                   </div>
                 ))}
               </div>
