@@ -56,6 +56,9 @@ book each side has written, plus one irenic overview).
                                    pillars, the full doctrine map by triage.
 /theology/how-to-use              Pillar 0 — how to read this section.
 /theology/doctrine/:slug          One worked doctrine, the six-step template.
+/theology/passage                 The Passage Context Tool.
+/theology/history                 Pillar 2, church history: timeline, councils,
+                                  heresies, and figures (four tabs).
 ```
 
 ### Pillar 0 — How to use this section  (`/theology/how-to-use`)
@@ -267,7 +270,10 @@ always labeled as a judgment held tentatively, never as settled fact.
 - [x] Passage Context Tool (book metadata for all 66 books, genre guidance,
       contested-passage notes, runtime WEB text fetch with fallback, surfaced
       on the hub and in the Tools hub)
-- [ ] Pillar 2 (church history) and Pillar 3 (biblical theology)
+- [x] Pillar 2 church history (/theology/history): a walkable narrative
+      timeline of seven eras, the great councils, the heresies as a teaching
+      tool, and 36 figure profiles, on a four-tab page
+- [ ] Pillar 3 (biblical theology)
 - [ ] Companion interactive tools
 
 Drafts for James to confirm and personalize: the Pillar 0 author's lens and the

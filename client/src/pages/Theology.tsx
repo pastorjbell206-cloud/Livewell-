@@ -19,9 +19,9 @@ const card = {
 } as const;
 
 const PILLARS = [
-  { key: "Systematic", n: "One", title: "Systematic theology", blurb: "The faith laid out in order, from Scripture and the Trinity to creation, sin, Christ, the Spirit, salvation, the church, and the last things." },
-  { key: "History", n: "Two", title: "Church history", blurb: "How the church got here. The councils that fixed the creeds, the heresies that forced them, and the people who carried the faith through twenty centuries." },
-  { key: "Biblical", n: "Three", title: "Biblical theology", blurb: "How the whole Bible fits as one story. Covenant, dispensational, and progressive-covenantal frameworks, the canonical themes, and how the New Testament reads the Old." },
+  { key: "Systematic", n: "One", title: "Systematic theology", blurb: "The faith laid out in order, from Scripture and the Trinity to creation, sin, Christ, the Spirit, salvation, the church, and the last things.", href: "" },
+  { key: "History", n: "Two", title: "Church history", blurb: "How the church got here. The councils that fixed the creeds, the heresies that forced them, and the people who carried the faith through twenty centuries.", href: "/theology/history" },
+  { key: "Biblical", n: "Three", title: "Biblical theology", blurb: "How the whole Bible fits as one story. Covenant, dispensational, and progressive-covenantal frameworks, the canonical themes, and how the New Testament reads the Old.", href: "" },
 ];
 
 function DoctrineCard({ d }: { d: DoctrineIndexEntry }) {
@@ -106,13 +106,21 @@ export default function Theology() {
         <div style={wrap}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.5vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "var(--s-4)" }}>Three pillars</h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "16px" }}>
-            {PILLARS.map((p) => (
-              <div key={p.key} style={{ ...card, borderTop: "1px solid var(--border)" }}>
-                <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>{`Pillar ${p.n}`}</div>
-                <div style={{ fontFamily: "var(--F)", fontSize: "23px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px" }}>{p.title}</div>
-                <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, color: "var(--ink-muted)" }}>{p.blurb}</p>
-              </div>
-            ))}
+            {PILLARS.map((p) => {
+              const inner = (
+                <>
+                  <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>{`Pillar ${p.n}`}</div>
+                  <div style={{ fontFamily: "var(--F)", fontSize: "23px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px" }}>{p.title}</div>
+                  <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, color: "var(--ink-muted)" }}>{p.blurb}</p>
+                  {p.href && <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", marginTop: "12px" }}>Walk the story →</span>}
+                </>
+              );
+              return p.href ? (
+                <Link key={p.key} href={p.href} style={{ ...card, borderTop: "3px solid var(--mustard)" }}>{inner}</Link>
+              ) : (
+                <div key={p.key} style={{ ...card, borderTop: "1px solid var(--border)" }}>{inner}</div>
+              );
+            })}
           </div>
         </div>
       </section>
