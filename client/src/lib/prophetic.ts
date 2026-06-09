@@ -72,6 +72,7 @@ export const DISRUPTION: SectionConfig = {
     cta: "Search your own heart →",
   },
   tools: [
+    { href: "/disruption/witnesses", title: "The witnesses", desc: "The people who told the church and the powers costly truth and refused to be captured." },
     { href: "/disruption/questions", title: "Hard questions", desc: "Is the gospel political? Is Christianity left or right? What is social justice?" },
     { href: "/disruption/glossary", title: "Glossary", desc: "Mishpat, tsedaqah, Christian nationalism, and the loaded words, defined fairly." },
   ],
@@ -80,11 +81,13 @@ export const DISRUPTION: SectionConfig = {
   topics: [
     { slug: "truth-and-tribe", group: "Cultural Captivity", title: "When Truth Becomes Negotiable", blurb: "Truth held consistently, even when it costs your own side. The thesis the whole section rests on.", ready: true },
     { slug: "outrage-machine", group: "Cultural Captivity", title: "The Outrage Machine", blurb: "How the attention economy and the rage cycle have captured the church and deformed us into combatants.", ready: true },
-    { slug: "consumer-comfort", group: "Cultural Captivity", title: "The Comfortable Captivity", blurb: "Consumerism, comfort, and a faith shaped more by the mall than the cross.", ready: false },
+    { slug: "consumer-comfort", group: "Cultural Captivity", title: "The Comfortable Captivity", blurb: "Consumerism, comfort, and a faith shaped more by the mall than the cross.", ready: true },
+    { slug: "therapeutic-gospel", group: "Cultural Captivity", title: "The Therapeutic Gospel", blurb: "A faith quietly reduced to self-help and feeling good, a God who exists to make me happy.", ready: true },
     { slug: "power-and-nation", group: "Christian Nationalism", title: "The Cross and the Flag", blurb: "The idolatry of fusing the gospel with political power, on the right and the left alike.", ready: true },
-    { slug: "christian-nation-myth", group: "Christian Nationalism", title: "The Myth of a Christian Nation", blurb: "What was true, what was never true, and why the story matters so much to so many.", ready: false },
+    { slug: "christian-nation-myth", group: "Christian Nationalism", title: "The Myth of a Christian Nation", blurb: "What was true, what was never true, and why the story matters so much to so many.", ready: true },
     { slug: "church-and-empire", group: "Church & Empire", title: "When the Church Married the Power", blurb: "What happens when the church trades prophetic distance for a seat at the table, from Constantine to now.", ready: true },
-    { slug: "prosperity-success", group: "Church & Empire", title: "The Gospel of Success", blurb: "The prosperity and platform gospels, and the empire of the self they serve.", ready: false },
+    { slug: "prosperity-success", group: "Church & Empire", title: "The Gospel of Success", blurb: "The prosperity and platform gospels, and the empire of the self they serve.", ready: true },
+    { slug: "celebrity-platform", group: "Church & Empire", title: "The Platform and the Pedestal", blurb: "Celebrity pastor culture, the abuse of spiritual authority, and why so many leaders fall.", ready: true },
   ],
 };
 
@@ -99,18 +102,21 @@ export const JUSTICE: SectionConfig = {
   },
   postureBlurb: "Biblical justice defined from the text up, God's lean toward the poor and the foreigner, and the distinction the section turns on: the binding command to do justice versus the prudential policy meant to achieve it. Read this first.",
   tools: [
+    { href: "/justice/witnesses", title: "The witnesses", desc: "The people who did justice at real cost, from the abolitionists to the rescuers of the trafficked." },
     { href: "/justice/glossary", title: "Justice glossary", desc: "Mishpat, tsedaqah, shalom, jubilee, and the loaded words, defined fairly." },
   ],
   topicsIntro: "Each question gets the same treatment: the biblical foundation, the church's honest record (where it led and where it failed), where Christians agree on the principle, how each side captures it, where faithful people legitimately differ, and the cost.",
-  groups: ["Economic Justice", "The Vulnerable", "Race & Reconciliation", "Systemic Sin"],
+  groups: ["Economic Justice", "The Vulnerable", "The Stranger and the Prisoner", "Race & Reconciliation", "Systemic Sin"],
   topics: [
     { slug: "the-poor", group: "Economic Justice", title: "The Poor at the Gate", blurb: "Justice for the poor, from the law of gleaning to Lazarus at the rich man's door.", ready: true },
     { slug: "the-wage", group: "Economic Justice", title: "The Wage and the Worker", blurb: "Work, wages, debt, and the dignity of the laborer, where Scripture is loud and policy is contested.", ready: true },
     { slug: "the-vulnerable", group: "The Vulnerable", title: "The Least of These", blurb: "The orphan, the widow, the disabled, the trafficked, and the consistency both tribes tend to fail.", ready: true },
-    { slug: "unborn-and-edges", group: "The Vulnerable", title: "Life at Its Edges", blurb: "The unborn, the aged, the disabled, and the dying. Dignity at the thresholds of life.", ready: false },
-    { slug: "abuse-and-vulnerable", group: "The Vulnerable", title: "The Abused and the Silence", blurb: "Abuse, the vulnerable, and the church's failures to protect rather than to cover.", ready: false },
+    { slug: "unborn-and-edges", group: "The Vulnerable", title: "Life at Its Edges", blurb: "The unborn, the aged, the disabled, and the dying. A consistent ethic of life at the thresholds.", ready: true },
+    { slug: "abuse-and-vulnerable", group: "The Vulnerable", title: "The Abused and the Silence", blurb: "Abuse, the vulnerable, and the church's failures to protect rather than to cover.", ready: true },
+    { slug: "the-immigrant", group: "The Stranger and the Prisoner", title: "The Foreigner Among You", blurb: "The command to love the sojourner, and the genuinely contested question of policy.", ready: true },
+    { slug: "the-prisoner", group: "The Stranger and the Prisoner", title: "The Prisoner and the Gate", blurb: "Crime, punishment, prison, the death penalty, and the meeting of justice and mercy.", ready: true },
     { slug: "race-and-image", group: "Race & Reconciliation", title: "Race and the Image of God", blurb: "Human dignity grounded in the image of God, and the church's mixed and painful record.", ready: true },
-    { slug: "systemic-sin", group: "Systemic Sin", title: "The Sin We Build Together", blurb: "The biblical category of corporate and structural sin, and the limits and uses of the idea.", ready: false },
+    { slug: "systemic-sin", group: "Systemic Sin", title: "The Sin We Build Together", blurb: "The biblical category of corporate and structural sin, and the limits and uses of the idea.", ready: true },
   ],
 };
 
