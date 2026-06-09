@@ -74,6 +74,7 @@ const PropheticConsistency = lazy(() => import("./pages/prophetic/PropheticConsi
 const PropheticGlossary = lazy(() => import("./pages/prophetic/PropheticGlossary"));
 const PropheticQuestions = lazy(() => import("./pages/prophetic/PropheticQuestions"));
 const PropheticWitnesses = lazy(() => import("./pages/prophetic/PropheticWitnesses"));
+const PropheticTimeline = lazy(() => import("./pages/prophetic/PropheticTimeline"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
 const SermonOutline = lazy(() => import("./pages/tools/SermonOutline"));
@@ -181,6 +182,7 @@ function Router() {
         <Route path="/justice/posture"><PropheticPosture config={JUSTICE} /></Route>
         <Route path="/justice/glossary"><PropheticGlossary config={JUSTICE} /></Route>
         <Route path="/justice/witnesses"><PropheticWitnesses config={JUSTICE} /></Route>
+        <Route path="/justice/timeline"><PropheticTimeline /></Route>
         <Route path="/justice/topic/:slug"><PropheticTopic config={JUSTICE} /></Route>
         <Route path="/justice"><PropheticHub config={JUSTICE} /></Route>
         <Route path="/theology/how-to-use" component={TheologyMethodology} />
