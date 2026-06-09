@@ -69,6 +69,41 @@
       "doctrineTitle": "What Is the Church?"
     }
   },
+  "1 corinthians 12": {
+    "flow": "Corinth was a church proud of its spiritual experiences and divided over them. Some gifts looked more impressive than others, and the people who had them looked down on the people who did not. Paul's whole chapter is aimed at that pride. He opens by insisting that no one even says 'Jesus is Lord' except by the Spirit, which levels the room before he starts. Then comes the pattern, repeated like a drumbeat. There are varieties of gifts, but the same Spirit. Varieties of service, the same Lord. The gifts are given for the common good, not for private standing. Then the image that carries the rest of the chapter, the body. A body is not one part but many. The foot cannot say it does not belong because it is not a hand. The eye cannot tell the hand it has no need of it. And then the turn that would have stung the proud Corinthians most, the parts that seem weaker are indispensable, and the parts we think less honorable get greater honor. God arranged it so there would be no division but mutual care. The point is not to celebrate how gifted you are. It is to need each other.",
+    "words": [
+      {
+        "original": "charismata (Greek: charismata)",
+        "gloss": "gifts of grace",
+        "note": "The word for these gifts is built from the same root as 'grace.' They are not achievements or trophies. They are grace handed to a person to spend on other people, which is why boasting about one misses what it is."
+      },
+      {
+        "original": "sumpherO (Greek: sumphero)",
+        "gloss": "to bring together for benefit, the common good",
+        "note": "The gifts are given 'for the common good.' The word means bearing something together toward a shared benefit. A gift kept for your own status has been bent away from its purpose."
+      }
+    ],
+    "echoes": [
+      "Romans 12:4 to 8, Paul's other body-and-gifts passage, where he again says we are members of one another.",
+      "1 Corinthians 13, the very next chapter, where Paul says all the gifts are nothing without love, the hinge the whole gift discussion turns on.",
+      "Ephesians 4:11 to 16, where gifts are given to build up the body until it grows into maturity.",
+      "1 Peter 4:10, where each one is to use whatever gift they received to serve others as stewards of grace."
+    ],
+    "misreadings": [
+      "Turning the list of gifts into a ranking, where tongues or prophecy or teaching becomes proof of a higher spiritual class. Paul wrote the chapter to break that ranking, insisting the weaker-looking parts are indispensable and the less honorable get more honor.",
+      "Reading 'many members, one body' as a call to bland sameness, as if everyone should aim for the same gift or role. Paul says the opposite. The body works because the parts are different and refuse to pretend they do not need each other."
+    ],
+    "prompts": [
+      "Paul says the eye cannot tell the hand 'I have no need of you.' Is there a part of your church or family you have quietly treated as if it did not matter?",
+      "The gifts are given 'for the common good.' How would it change the way you think about your own abilities to see them as given for other people rather than for yourself?",
+      "Paul says the parts that seem weaker are indispensable. Why might God arrange the body so the unimpressive parts are the ones it cannot do without?"
+    ],
+    "spectrum": {
+      "note": "Christians who all honor this chapter still disagree about the gifts it names. Some hold that gifts like prophecy, tongues, and healing continue today in the same way, often called the continuationist view. Others hold that certain sign gifts belonged especially to the founding era of the church and function differently now, often called the cessationist view. Paul's main concern here, unity and love over status, is shared across that divide, and it is the safest place for a new reader to stand while the rest is studied.",
+      "doctrine": "holy-spirit",
+      "doctrineTitle": "The Holy Spirit and His Gifts"
+    }
+  },
   "1 corinthians 13": {
     "flow": "This famous chapter on love is not a wedding poem dropped into the letter. It sits in the middle of three chapters on spiritual gifts, holding up love as the thing that outlasts them all. The line about prophecies passing away and the perfect coming is part of an argument about gifts, not a stray remark.",
     "crossRefs": [
@@ -168,6 +203,35 @@
       "If the shortness of the time shaped Paul's counsel, how do you tell what is timeless principle here and what is wisdom for a pressing season?"
     ]
   },
+  "1 john 1": {
+    "flow": "John writes as an old man who walked with Jesus, and he opens by insisting it was real. He heard, saw, and touched the Word of life. Then he gives the message in a single image. God is light, and in him is no darkness at all. From there everything turns on where we choose to live. If we claim fellowship with God while walking in darkness, we are lying. But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus cleanses us from all sin. Notice the surprise in verse 7. Walking in the light does not mean we have stopped sinning. It means we have stopped hiding. That is why verse 8 warns against claiming we have no sin, and verse 9 gives the relief. If we confess our sins, he is faithful and just to forgive us and to cleanse us. Read 7 through 9 together. Light is not a spotlight that shames us. It is the place where honesty becomes safe, because the One who sees everything has already provided the cleansing.",
+    "words": [
+      {
+        "original": "homologeo (Greek)",
+        "gloss": "to confess, to say the same thing, to agree",
+        "note": "To confess is literally to say the same thing God says about our sin. Not groveling, not excusing, just agreeing with him about what is true, which is the doorway to being forgiven."
+      }
+    ],
+    "echoes": [
+      "The opening of John's Gospel, where the Word was with God and the light shines in the darkness.",
+      "Psalm 32 and Psalm 51, where David finds relief not by hiding sin but by confessing it.",
+      "Jesus calling himself the light of the world in John 8."
+    ],
+    "misreadings": [
+      "Reading 'if we walk in the light' as a demand to be sinless before God will accept us. Walking in the light here means living honestly and openly, which is why confession comes right after.",
+      "Treating confession as earning forgiveness by performing enough sorrow. The verse says God is faithful and just to forgive, grounding the forgiveness in his character and in the blood of Jesus, not in the quality of our regret."
+    ],
+    "prompts": [
+      "John ties walking in the light to honesty rather than perfection. What sin are you tempted to hide rather than bring into the light?",
+      "Verse 9 calls God faithful and just to forgive. How does it change confession to know forgiveness rests on his character, not your performance?",
+      "Where have you believed the lie that you have to clean yourself up before you can come to God?"
+    ],
+    "spectrum": {
+      "note": "First John 1 puts the question of how we are saved in plain terms. We are not forgiven because we manage to stop sinning. We are forgiven when we stop hiding and confess, trusting the blood of Jesus to cleanse what we could never scrub away ourselves.",
+      "doctrine": "soteriology",
+      "doctrineTitle": "How Are We Saved?"
+    }
+  },
   "1 john 4": {
     "flow": "John writes to a community shaken by teachers who deny that Jesus truly came in the flesh, and he gives them two tests to tell true from false. The first is the test of the spirits, where the mark of God's Spirit is the confession that Jesus has really come in a body. The second is love, because the God being confessed is himself love, shown most clearly when he sent his Son. Perfect love casting out fear is not a slogan but the rest of someone who knows they are already held.",
     "words": [
@@ -250,6 +314,41 @@
       "God was not in the wind, quake, or fire. If you have been waiting for God in the dramatic, what might it mean to listen instead for the quiet, without turning that into a formula?"
     ]
   },
+  "1 kings 8": {
+    "flow": "Solomon has finished the temple, seven years of work, the house where God's name will dwell. This chapter is the dedication. The priests bring in the ark, the cloud of God's glory fills the house so thickly the priests cannot stand to serve, and Solomon turns to pray. The heart of the chapter is a question he asks out loud in 8:27. Will God really dwell on the earth? Look, even the highest heaven cannot contain you, how much less this house I have built. Read the whole prayer and notice the tension Solomon holds. He has built a glorious building, and in the same breath he confesses that no building could ever hold the God who made the sky. The temple is not a box for God. It is a meeting place, a fixed point where heaven and earth touch, where a sinful people can turn and pray and be heard.",
+    "words": [
+      {
+        "original": "shakan",
+        "gloss": "to dwell, to settle, to tabernacle",
+        "note": "The verb behind God dwelling among his people. From it comes the later word Shekinah, the visible glory cloud. It does not mean God is contained. It means God chooses to settle near, to be findable, among people who do not deserve the nearness."
+      },
+      {
+        "original": "shema",
+        "gloss": "hear, and act on what you hear",
+        "note": "Solomon prays again and again that God would hear from heaven and forgive. In Hebrew hearing is never just listening. To hear is to respond. Solomon is asking God to be a God who answers."
+      }
+    ],
+    "echoes": [
+      "John 1:14 says the Word became flesh and dwelt among us, and the Greek word for dwelt means pitched his tent or tabernacled. The answer to Solomon's question, will God dwell on earth, turns out to be yes, in a person.",
+      "Jesus says in John 2 that if the temple is destroyed he will raise it in three days, and he is speaking of his body. He relocates the meeting place of heaven and earth from a building to himself.",
+      "Revelation 21 ends the Bible with the announcement that the dwelling of God is with man, and there is no temple in the new city because God himself is its temple. Solomon's question gets its final answer there.",
+      "Stephen quotes this very prayer in Acts 7, the Most High does not dwell in houses made by hands, to confront people who had turned the temple into an idol."
+    ],
+    "misreadings": [
+      "People read this as proof that God lives in church buildings, so the building itself becomes holy in a way Solomon flatly denies. He says heaven cannot contain God, much less this house. The temple was a meeting place, never a container.",
+      "The dedication is treated as a triumph of Solomon's greatness. The prayer itself is soaked in the assumption that the people will sin, will be defeated, will go into exile, and will need to turn back. It is humbler and sadder than a victory speech."
+    ],
+    "prompts": [
+      "Solomon builds the most glorious building of his life and then admits no building could ever hold God. How do you hold both of those at once, that a place can matter and still not contain God?",
+      "Most of Solomon's prayer assumes the people will fail and need to turn back. Why might he build the certainty of his nation's sin right into the temple's dedication?",
+      "If the meeting place between God and people has moved from a building to a person, what changes about where and how you expect to find God?"
+    ],
+    "spectrum": {
+      "note": "Solomon's temple raises the question Christians have asked ever since, where does God dwell with his people now. The New Testament moves the answer from a building to Christ, and then to the gathered people in whom his Spirit lives. Different traditions weigh the place, the person, and the people differently, which is worth understanding fairly.",
+      "doctrine": "church",
+      "doctrineTitle": "What Is the Church?"
+    }
+  },
   "1 peter 2": {
     "flow": "Peter writes to scattered believers living as outsiders across the empire, people who were starting to suffer for their faith and feeling like strangers wherever they lived. His whole letter is meant to give them an identity sturdy enough to stand inside that pressure. In chapter 2 he tells them to crave the pure spiritual milk like newborns, then pictures them as living stones being built into a spiritual house, with Christ as the cornerstone that the builders rejected. Then comes the great naming. You are a chosen race, a royal priesthood, a holy nation, a people for God's own possession, called out of darkness into his marvelous light. Once you were not a people, now you are God's people. Every one of those titles was first spoken over Israel, and Peter lays them on a mixed crowd of ordinary believers, many of them not Jewish, many of them slaves and nobodies in the eyes of Rome. The purpose is given too. You are this so that you may declare the praises of the one who called you. Then the chapter turns to how such a people live among neighbors who slander them, and it climbs toward Christ who suffered without retaliating, leaving an example to follow in his steps. The dignity and the suffering belong together. Peter gives a despised people a royal identity precisely so they can endure being despised.",
     "words": [
@@ -312,6 +411,30 @@
       "Samuel was sure the first son was the one. When have you been certain about a person or a path on the strength of how it looked, and what did you learn later?",
       "If God reads the hidden center of you and still chooses to use you, does that frighten you or steady you, and why?",
       "David was left in the field while the others were lined up. What might it mean that God noticed the one nobody bothered to call in?"
+    ]
+  },
+  "1 samuel 3": {
+    "flow": "The chapter begins with a hard line. The word of the Lord was rare in those days, and visions were not widespread. Israel is spiritually dim. Eli the priest is old and going blind, and his own sons are corrupt. Into this quiet comes a boy, Samuel, sleeping near the ark. God calls his name in the night, and the boy does not recognize the voice. He runs to Eli three times, certain the old man called him. Only on the third time does Eli understand what is happening and teach the boy how to answer. Speak, Lord, for your servant hears. Read it and notice how ordinary Samuel is. He is not a hero. He is a child who needs an old, failing man to tell him that the voice he keeps hearing is God. And the first message God gives him is a hard word of judgment against the very household raising him.",
+    "words": [
+      {
+        "original": "hineni",
+        "gloss": "here I am",
+        "note": "Samuel's instant answer, the same word Abraham and Moses say when God calls. It means more than physical presence. It means I am ready, do with me what you will. The boy says it before he even knows who is calling."
+      }
+    ],
+    "echoes": [
+      "Eli's failure to restrain his wicked sons sets up the fall of his house and prepares the way for Samuel to anoint Saul and then David. This chapter is a hinge in Israel's whole story of kingship.",
+      "The pattern of God calling a name twice, Samuel, Samuel, echoes Abraham, Abraham in Genesis 22 and later Saul, Saul on the Damascus road in Acts 9. The doubled name marks a moment that turns a life.",
+      "Mary's posture in Luke 1, let it be to me according to your word, carries the same surrender as speak, Lord, for your servant hears. Both are a small person saying yes to a large calling."
+    ],
+    "misreadings": [
+      "This is often taught only as a sweet story for children about a boy who hears God. The actual first word God speaks to Samuel is a severe judgment against Eli's family, and Samuel is afraid to tell it. The call comes with weight, not comfort.",
+      "Speak, Lord, for your servant hears gets used as a formula for getting God to talk to you on demand. In the text Samuel needed an older believer to help him recognize a voice he had been hearing all along. Hearing God is rarely as instant as the verse, lifted alone, suggests."
+    ],
+    "prompts": [
+      "Samuel heard the voice three times and still thought it was just Eli. What does it tell you that even hearing God can need the help of an older believer to make sense of it?",
+      "The first thing God asked Samuel to do was deliver bad news to the man who raised him. Why might God entrust a hard word to someone so young and so new?",
+      "Samuel says here I am before he knows who is speaking. Is there a difference between being willing to listen and being willing to obey before you know the cost?"
     ]
   },
   "1 thessalonians 4": {
@@ -419,6 +542,36 @@
       "doctrineTitle": "How the Whole Story Fits"
     }
   },
+  "2 corinthians 12": {
+    "flow": "This is the most personal stretch in any of Paul's letters, and it is unusual. Paul has been forced into boasting because false teachers in Corinth were dazzling the church with their credentials. So he plays their game and then breaks it. He tells of being caught up to the third heaven and hearing things he is not permitted to repeat, and then, just when he could trade on that, he refuses to. Instead he tells you about the thorn. 'A thorn was given me in the flesh, a messenger of Satan to harass me, to keep me from being too elated.' Notice he never says what it was. He pleaded with the Lord three times to take it away, the way Jesus pleaded three times in Gethsemane. And the answer was no, but a no with words inside it. 'My grace is sufficient for you, for my power is made perfect in weakness.' So Paul stops asking. He says he will boast all the more gladly of his weaknesses, so that the power of Christ may rest on him. The man who could have boasted of heaven boasts of his limp instead. Read it as Paul's deliberate reversal of everything the false teachers stood for.",
+    "words": [
+      {
+        "original": "skolops (Greek: skolops)",
+        "gloss": "a stake, a splinter, a thorn",
+        "note": "The word can mean anything from a small splinter to a sharpened stake. Paul leaves it undefined on purpose. Because we do not know what his thorn was, anyone with any kind of ongoing affliction can stand inside this passage."
+      },
+      {
+        "original": "arkeI (Greek: arkei)",
+        "gloss": "is enough, is sufficient",
+        "note": "'My grace is sufficient' uses a word meaning to be enough, to suffice. The promise is not that the thorn leaves. It is that grace will be enough while it stays."
+      }
+    ],
+    "echoes": [
+      "2 Corinthians 4:7, where the treasure is in jars of clay so that the surpassing power belongs to God and not to us, the same logic in miniature.",
+      "Mark 14:32 to 36, Jesus praying three times in the garden that the cup pass, and receiving the Father's harder will, the pattern Paul's three pleas echo.",
+      "Philippians 4:13, often misquoted, where the strength Paul has is the strength to be content in plenty or in want, weakness included.",
+      "Isaiah 40:29 to 31, where God gives power to the faint and strength to the weak."
+    ],
+    "misreadings": [
+      "Turning the thorn into a guaranteed lesson, as if every hardship comes with a tidy explanation God owes you, and faith means figuring out the reason. Paul never learns what the thorn is or fully why. He gets a promise, not an answer, and that is the point.",
+      "Reading 'my grace is sufficient' as a promise that God will remove the suffering if you pray hard enough. Paul prayed hard, three times, and the thorn stayed. The verse is about grace inside the affliction, not a guaranteed exit from it."
+    ],
+    "prompts": [
+      "Paul asked three times and the answer was no, but the no came with a promise. Have you ever received a 'no' that turned out to carry something you needed more than the thing you asked for?",
+      "Paul never tells us what his thorn was. How might that silence actually make the passage more useful to you?",
+      "He says he will boast in his weakness so Christ's power can rest on him. What would it look like to stop hiding a weakness and let it become a place where you depend on God?"
+    ]
+  },
   "2 corinthians 5": {
     "flow": "Paul has been writing to a church that questioned whether he was a real apostle, since his life looked like weakness and suffering rather than power. By chapter 5 he has explained that he carries treasure in a fragile clay jar, that the visible body wastes away while something unseen is renewed. Then he widens the lens. Because Christ died for all, no one is the same after the cross, and Paul no longer sizes people up by outward appearance. That is the setup for the famous line. If anyone is in Christ, there is a new creation. The old has gone. What follows is the reason Paul can endure being misjudged. God was in Christ reconciling the world to himself, no longer counting sins against people, and he has handed that same message to ordinary messengers. So Paul calls himself an ambassador, someone who speaks for a king he did not appoint himself, and he pleads on Christ's behalf, be reconciled to God. The chapter ends with the great exchange. The one who knew no sin was made sin for us, so that we might become the righteousness of God in him. Read in flow, 5:17 is not a slogan about self improvement. It is the ground under a suffering apostle's whole ministry.",
     "words": [
@@ -453,6 +606,30 @@
       "doctrine": "soteriology",
       "doctrineTitle": "How Are We Saved?"
     }
+  },
+  "2 kings 5": {
+    "flow": "Naaman is a great man, commander of the army of Syria, Israel's enemy. He is also a leper. The cure comes to him through a chain of people the world overlooks. A young Israelite slave girl, captured in a raid, tells her mistress about a prophet who could heal him. That is how the most powerful man in Syria hears of Elisha. Naaman arrives with horses, chariots, silver, and gold, expecting a grand ceremony. Instead Elisha does not even come out. He sends a messenger telling Naaman to go wash in the Jordan seven times. Naaman is furious. The Jordan is a muddy little river, and he wanted a spectacle. His own servants talk him down. He washes, and his skin is restored like a child's. Read it and watch the pride drain out of a great man until he is willing to do a small, humbling thing, and watch how God heals an enemy of Israel.",
+    "words": [
+      {
+        "original": "tsara'at",
+        "gloss": "a skin disease, often translated leprosy",
+        "note": "A broad term for a feared, defiling skin condition that cut a person off from normal life. It made Naaman, for all his power, unclean and untouchable. The cure is not just medical. It restores him to community."
+      }
+    ],
+    "echoes": [
+      "Jesus cites Naaman by name in Luke 4:27, in his hometown synagogue. He says there were many lepers in Israel, but only Naaman the Syrian was cleansed. The crowd tries to throw him off a cliff for it, because he is saying God's mercy reaches outsiders and enemies.",
+      "The little slave girl who points Naaman to the prophet is a picture of how God uses the powerless to bless the powerful. She had every reason to want her captor dead and instead seeks his healing.",
+      "Naaman asks to take Israelite soil home so he can worship the true God on it. It is the first stumbling step of a pagan general learning that the God of Israel is the only God, a foreshadow of the nations coming in."
+    ],
+    "misreadings": [
+      "The story gets used as a formula, do the small obedient thing seven times and God will heal you on cue. The point is not a technique. It is that a proud man had to give up control and accept healing on God's humbling terms rather than his own grand ones.",
+      "Readers focus on Naaman's cleansed skin and miss that Jesus, citing this story, makes it about God healing an enemy of Israel while many in Israel went unhealed. The scandal of the story is who receives the mercy, not just that mercy was given."
+    ],
+    "prompts": [
+      "Naaman almost missed his healing because the method was too small and too plain for a man of his stature. Where might pride keep someone from receiving something good simply because it comes without spectacle?",
+      "God uses a captured slave girl, the lowest person in the story, to start the chain that heals the most powerful. What does that ordering tell you about how God tends to work?",
+      "Jesus chose this story to say God's mercy reaches enemies and outsiders, and his hometown crowd wanted to kill him for it. Why is good news for outsiders so often hard for insiders to hear?"
+    ]
   },
   "2 samuel 7": {
     "flow": "David is settled at last. The wars have quieted, he lives in a house of cedar, and it strikes him as wrong that he should live so well while the ark of God sits under tent cloth. So he decides to build God a house. The prophet Nathan says go ahead, and then God interrupts the whole plan in the night. He tells David, in effect, you will not build Me a house. I will build you one. The word house turns over in His hands. David meant a temple of stone. God means a dynasty, a line, a throne that will not end. The promise lands on a kingdom that will one day fall and a line that will look, for centuries, like it failed. The chapter asks the reader to hold a forever promise next to a history that did not stay glorious.",
@@ -524,6 +701,36 @@
       "doctrineTitle": "What Is the Bible, and Can We Trust It?"
     }
   },
+  "acts 17": {
+    "flow": "Paul is alone in Athens, waiting for his friends, and Luke says his spirit was provoked as he saw the city full of idols. That is the engine of the whole scene. He is not impressed by Athens. He is grieved by it. He reasons in the synagogue with Jews and in the marketplace with anyone who happens to be there, until the philosophers haul him up to the Areopagus to explain this strange new teaching. Watch what Paul does. He does not open with a Bible verse, because these listeners do not accept the Bible. He starts where they are. He has seen an altar inscribed 'to an unknown god,' and he says, in effect, the one you admit you do not know, let me tell you his name. He quotes their own poets, 'in him we live and move and have our being,' to show that their best instincts were reaching toward the God who made them. Then he turns. This God has fixed a day of judgment and has raised a man from the dead to prove it. The crowd splits. Some sneer, some want to hear more, a few believe. Paul meets them with respect and still calls them to repent.",
+    "words": [
+      {
+        "original": "agnOstO theO (Greek: agnosto theo)",
+        "gloss": "to an unknown god",
+        "note": "The Athenians built an altar hedging their bets, in case there was a god they had missed. Paul takes their own confession of ignorance and uses it as a door. He does not flatter them by saying all gods are the same. He says the God you admit you do not know is the one I proclaim."
+      },
+      {
+        "original": "metanoeO (Greek: metanoeo)",
+        "gloss": "to repent, to change one's mind and turn",
+        "note": "After all the common ground, Paul's verb is still 'repent.' Respect for his audience does not soften the call. It makes the call hearable."
+      }
+    ],
+    "echoes": [
+      "Romans 1:18 to 23, written by the same Paul, where creation makes God plain yet people exchange the truth for idols, the exact problem he is standing inside at Athens.",
+      "Psalm 50:9 to 12, where God says he needs nothing from human hands because the whole world is already his, which Paul echoes when he says God is not served by human hands.",
+      "John 17:3, where eternal life is to know the true God, the very knowing the Athenians lacked.",
+      "Acts 14:15 to 17, Paul's other sermon to a non-Jewish crowd, where he again starts from the God of creation rather than from Scripture."
+    ],
+    "misreadings": [
+      "Using 'in him we live and move and have our being' to claim that everyone is already fine with God and no turning is needed. Paul says this line and then immediately commands repentance and warns of judgment. The quote describes how near God is, not that all is well.",
+      "Reading Paul's tact as proof that he watered down his message to fit the culture. He met them on their ground and then preached the resurrection and the coming judgment, the two things most likely to get him laughed at, which is exactly what happened."
+    ],
+    "prompts": [
+      "Paul begins with an altar the Athenians built rather than with a Bible verse. When you talk to someone who does not share your beliefs, what might it look like to start where they already are?",
+      "He is grieved by the idols before he is clever about them. Can you tell the difference between being annoyed at people and being grieved for them?",
+      "The crowd splits three ways, mocking, curious, believing. Why might the same honest message produce such different reactions?"
+    ]
+  },
   "acts 2": {
     "flow": "On the day of Pentecost the promised Spirit comes on the gathered believers with wind and fire, and they begin speaking so that visitors from many nations each hear in their own language. Peter stands and preaches that the crucified Jesus has been raised and made Lord, and about three thousand people are added that day. The closing verses then describe what that new community actually did with its life together. They devoted themselves to the apostles' teaching, to fellowship, to the breaking of bread, and to prayer, sharing what they had so that no one was in need.",
     "words": [
@@ -556,6 +763,36 @@
       "note": "This passage feeds the discussion of the Spirit and his gifts. The doctrine page lays out the views fairly.",
       "doctrine": "holy-spirit",
       "doctrineTitle": "The Holy Spirit and His Gifts"
+    }
+  },
+  "acts 9": {
+    "flow": "Luke has spent the chapters before this introducing Saul as a man who approved of killing and went house to house dragging believers off to prison. So when chapter 9 opens with Saul 'still breathing threats and murder' and asking for letters to arrest more, we are not meeting a curious seeker. We are meeting an enemy with a warrant in his pocket. Then a light, a voice, a question that is also an accusation: 'Saul, Saul, why do you persecute me?' Notice that the risen Jesus says 'me,' not 'my people.' To touch the church is to touch him. Saul is blinded, led by the hand into the city, and waits three days in the dark. Then God sends Ananias, a frightened ordinary believer who argues with God about going, to lay hands on the very man who came to arrest him. Read it as one motion, persecutor to preacher, and watch who does the work. Saul does not decide to find God. God finds Saul on the road and turns him around against his own plans.",
+    "words": [
+      {
+        "original": "diOko (Greek: dioko)",
+        "gloss": "to pursue, to chase down, to persecute",
+        "note": "The word Jesus uses for what Saul is doing is a hunting word. It pictures someone running down prey. Jesus does not soften it. He names exactly what Saul thought he was doing for God and shows him it was aimed at God."
+      }
+    ],
+    "echoes": [
+      "Galatians 1:13 to 16, where Paul tells the story himself and insists he received the gospel by revelation, not from any man, the same against-his-will pattern seen from the inside.",
+      "1 Timothy 1:15 to 16, where Paul calls himself the foremost of sinners and says he was shown mercy as an example of patience.",
+      "Philippians 3:4 to 9, where Paul lists everything he was proud of and counts it loss for the sake of Christ.",
+      "The Old Testament call scenes, like Moses at the bush or Isaiah in the temple, where God interrupts a person and sends them out."
+    ],
+    "misreadings": [
+      "Treating this as the one true template for conversion, so that anyone without a bright light and a voice from heaven starts to doubt whether God really saved them. Saul's call is dramatic because his role is unusual, not because every Christian must be knocked off a horse.",
+      "Reading it as Saul finally getting his act together and choosing better. The whole point is the reverse. He was running the wrong direction at full speed when grace stopped him, which is why he never boasts about deciding for God."
+    ],
+    "prompts": [
+      "Jesus asks 'why do you persecute me' when Saul thought he was only arresting people. What does that tell you about how Jesus sees his church?",
+      "Ananias is told to go and heal the man who came to imprison him, and he is afraid. If God asked you to do good to someone you had reason to fear, what would be hard about it?",
+      "Saul spends three days blind and waiting before anything changes. Why might God leave a person in the dark for a while before sending help?"
+    ],
+    "spectrum": {
+      "note": "Christians who agree Jesus saves still describe the moment of conversion differently. Some read Saul's story as the clearest picture of God acting first, sovereignly, while the person is still an enemy. Others emphasize the response of faith and obedience that follows, Saul rising, being baptized, and beginning to preach. The text holds both, God's initiative and Saul's answer, and the wider conversation about how these fit is worth meeting slowly rather than settling in a hurry.",
+      "doctrine": "soteriology",
+      "doctrineTitle": "How Are We Saved?"
     }
   },
   "amos 5": {
@@ -651,6 +888,30 @@
       "Which old garment named here do you find hardest to take off?"
     ]
   },
+  "daniel 3": {
+    "flow": "King Nebuchadnezzar builds a golden statue and commands that when the music plays, everyone must fall down and worship it or be thrown into a blazing furnace. Three young Jewish exiles, Shadrach, Meshach, and Abednego, refuse. They are dragged before the furious king, who gives them one more chance and then taunts, who is the god that can deliver you from my hand. Their answer is the center of the chapter. Our God is able to deliver us, and he will deliver us, but if not, we still will not serve your gods or worship your statue. Read those words closely. They believe God can rescue them, they hope he will, and they decide in advance that even if he does not, their loyalty does not change. The king heats the furnace seven times hotter. They are thrown in bound, and a fourth figure appears in the fire with them, and they walk out unbound and unburned, not even smelling of smoke.",
+    "words": [
+      {
+        "original": "atsab",
+        "gloss": "an image, an idol, a fashioned thing",
+        "note": "The statue is a made thing, shaped by human hands and human power, demanding the worship that belongs only to God. The whole chapter sets a thing people built against the God who made people."
+      }
+    ],
+    "echoes": [
+      "The mysterious fourth figure in the fire, described as having the appearance of a son of the gods, has long been read by Christians as a sign that God is present with his people inside their suffering, not only on the far side of it.",
+      "Hebrews 11 praises those who through faith quenched the power of fire, an echo of this furnace, and in the same passage honors others who were not rescued. Faith holds both outcomes.",
+      "Jesus tells his followers in the Gospels not to fear those who can kill the body. The three men live out exactly that, refusing to let the threat of death command their worship."
+    ],
+    "misreadings": [
+      "But if not gets turned into a confident formula, a way of sounding spiritual while still expecting God to come through every time. The whole force of the phrase is that they release the outcome. They settle their obedience before they know whether they will be saved.",
+      "The story is read as proof that faith always gets you rescued from the fire. Plenty of faithful people in Scripture and since were not spared. The point is not guaranteed rescue. It is loyalty that does not depend on rescue."
+    ],
+    "prompts": [
+      "The three men decided to obey God even if he chose not to save them. Is there a difference between trusting God to rescue you and trusting God whether or not he does?",
+      "A fourth figure showed up with them inside the fire, not before it and not after. What might it mean that God's presence met them in the furnace rather than keeping them out of it?",
+      "The pressure to bow came with music, a crowd, and a king watching. How does it change a moral choice when everyone around you is already falling down?"
+    ]
+  },
   "daniel 7": {
     "flow": "Daniel records a night vision given during exile, written in the symbolic style of apocalyptic that pictures history as beasts rising from a churning sea. Four monstrous empires come and go, the last one arrogant and cruel, until thrones are set and the Ancient of Days takes his seat in judgment. Then one like a son of man comes with the clouds and is given a kingdom that will never pass away. Read it as comfort to a people under hostile empires, a promise that brutal power has a limit and God's court has the last word.",
     "words": [
@@ -679,6 +940,141 @@
       "doctrine": "christology",
       "doctrineTitle": "Who Is Jesus?"
     }
+  },
+  "daniel 9": {
+    "flow": "Daniel 9 begins with an old man reading. Daniel has been studying Jeremiah and counts that the seventy years of exile are nearly up. So he prays, and it is one of the great prayers of the Bible, a long confession in which he stands with his people and says we have sinned, never once excusing himself from the guilt. He does not bargain. He appeals to God's mercy, not to Israel's record. While he is still praying, the angel Gabriel arrives with an answer that stretches far beyond the seventy years Daniel was counting. Seventy weeks, or seventy sevens, are decreed, Gabriel says, to finish transgression, to atone for iniquity, to bring in everlasting righteousness. Then comes a dense timeline of sevens, an anointed one who is cut off, a city destroyed, a covenant, an end. This is some of the most debated material in the Old Testament, and honest readers across the centuries have disagreed about how the sevens map onto history. What is not in doubt is the shape of the answer. The goal of the whole stretch of time is to deal with sin and bring in lasting righteousness.",
+    "words": [
+      {
+        "original": "shavuim",
+        "gloss": "weeks, literally sevens",
+        "note": "The word simply means sevens. It can mean seven days or, as most read it here, seven year periods. Seventy sevens of years is a symbolic and weighty number, ten times the seventy years Daniel had just been reading about, which is part of why precise calendar math has never settled the debate."
+      },
+      {
+        "original": "mashiach",
+        "gloss": "anointed one, the one set apart with oil",
+        "note": "An anointed one who is cut off stands at the heart of the passage. Christians have long read this of Jesus, cut off in death for others. The word itself, mashiach, is the source of Messiah, which is why this verse drew such close Christian attention."
+      }
+    ],
+    "echoes": [
+      "Jesus refers to the abomination spoken of by Daniel in Matthew 24:15, drawing his hearers back to this chapter when he speaks of coming distress.",
+      "The atoning purpose of the seventy weeks, to put an end to sin and bring everlasting righteousness, is taken up in Hebrews 9, where Christ appears once to put away sin.",
+      "Daniel's posture of confessing his nation's guilt as his own is echoed in the prayers of Ezra 9 and Nehemiah 9, a pattern the New Testament church inherits.",
+      "Gabriel, the messenger here, is the same angel who announces the births of John and Jesus in Luke 1, linking this prophecy to the events it pointed toward."
+    ],
+    "misreadings": [
+      "Reading the seventy weeks through one detailed prophetic timetable as if its dates and gaps were obvious and beyond dispute, when sincere Christians have long held different views of how the sevens unfold.",
+      "Rushing past Daniel's prayer of confession to get to the timeline, when the chapter places humble repentance first and treats the prophecy as God's gracious answer to it."
+    ],
+    "prompts": [
+      "Daniel confesses his people's sin as if it were his own, never standing apart as the innocent one. What do you make of a righteous man praying that way, and where might that posture fit your own life?",
+      "Gabriel names the purpose of the whole span of time before giving any dates, to finish sin and bring in righteousness. Why might the goal matter more than the exact schedule?",
+      "Faithful readers have disagreed for centuries about how the sevens line up with history. How do you hold a passage you take seriously while staying humble about the parts that are genuinely hard?"
+    ],
+    "spectrum": {
+      "note": "The seventy weeks of Daniel 9 are read in different ways across the main Christian views of how history ends. Some see the sevens fulfilled in the first coming of Christ, some see a final seven still ahead, and some read them more symbolically. The passage rewards careful study and patience with those who land differently.",
+      "doctrine": "last-things",
+      "doctrineTitle": "How Does It End?"
+    }
+  },
+  "deuteronomy 18": {
+    "flow": "Deuteronomy is Moses preaching to Israel on the edge of the promised land, before they cross over without him. In chapter 18 he is sorting out leadership for the future, the priests, and the question of how the people will hear from God once they are settled. The surrounding nations consulted mediums, fortune tellers, and the dead. Israel is told flatly not to. But that raises a real question. If you cannot go to a sorcerer, how will you know God's will? Moses answers with a promise. 'The Lord your God will raise up for you a prophet like me from among you, from your brothers. It is to him you shall listen.' God will keep speaking, through a prophet he himself sends, and the people are bound to listen. In one sense this promise was filled again and again by the line of prophets God sent across the centuries. But the words 'a prophet like me,' like Moses, the one who spoke with God face to face and led the people out, set a bar so high that the hope kept reaching past every prophet who came. The New Testament says the full answer finally arrived.",
+    "words": [
+      {
+        "original": "navi",
+        "gloss": "prophet, one who speaks for God",
+        "note": "A navi is not mainly a predictor of the future. He is a mouth for God, someone who says what God gives him to say. The test that follows in the chapter is simple, if what he speaks does not come true, God did not send him."
+      },
+      {
+        "original": "kamoni",
+        "gloss": "like me, like Moses",
+        "note": "The two small words that make the promise so large. A prophet like Moses, who knew God face to face, mediated a covenant, and led a rescue, is a high and specific hope, and the New Testament writers saw it land on Jesus."
+      }
+    ],
+    "echoes": [
+      "Peter quotes this promise and says it points to Jesus, the prophet Israel must listen to (Acts 3:22 to 23).",
+      "Stephen repeats the same words in his defense, naming Jesus as the prophet like Moses (Acts 7:37).",
+      "At the Transfiguration the voice from the cloud says of Jesus, 'listen to him,' echoing Moses' command 'it is to him you shall listen' (Matthew 17:5).",
+      "John's Gospel shows the crowds asking whether Jesus is 'the Prophet,' showing this hope was still alive and looking for its answer (John 6:14, John 7:40)."
+    ],
+    "misreadings": [
+      "Reading 'a prophet like me' as a single prediction that ignores all the prophets in between. The promise was met in part by the whole prophetic line God raised up, even as the fullest 'like Moses' hope kept pointing ahead.",
+      "Hearing the ban on mediums and fortune tellers as God being controlling. The chapter is rescuing Israel from the manipulation and fear of pagan practices by promising something better, a God who will speak plainly through a prophet he sends."
+    ],
+    "prompts": [
+      "Moses says God will keep speaking through a prophet the people must listen to. How does that change the way you read the rest of the Bible, as God continuing to speak rather than going silent?",
+      "The hope was for a prophet 'like Moses,' who led a rescue and knew God face to face. What kind of figure would actually satisfy a promise set that high?",
+      "On the mountain the voice says of Jesus, 'listen to him,' the same word Moses used. What might it cost you to actually listen to him."
+    ],
+    "spectrum": {
+      "note": "The New Testament writers did not invent the idea that Jesus is the prophet like Moses. They found it here and said the promise had come due. Watching Peter and Stephen reach for this verse, and hearing the voice on the mountain repeat Moses' own command to listen, shows how the first Christians understood who Jesus was. He is the one God finally raised up, the voice the people were always told to heed.",
+      "doctrine": "christology",
+      "doctrineTitle": "Who Is Jesus?"
+    }
+  },
+  "deuteronomy 30": {
+    "flow": "Near the end of his long farewell, Moses gathers everything into one urgent appeal. He has laid out the covenant, the blessings of walking with God and the ruin of turning away, and now he presses the people to decide. First he answers an objection before it is spoken. This command is not too hard for you, not far off in heaven or across the sea. It is very near you, in your mouth and in your heart. Then comes the great either or. 'See, I have set before you today life and good, death and evil.' Choose life. Notice what this is and is not. It is not a sales pitch for trying harder on your own. It is a rescued people being asked whether they will keep loving the God who already saved them, knowing that their very life depends on holding fast to him. The choice is real and it is weighty. And yet even here Moses has already hinted, a few verses earlier, that God himself will one day circumcise their hearts so that they can love him. The call to choose and the promise that God will enable the choosing sit side by side, and the New Testament picks up both.",
+    "words": [
+      {
+        "original": "chayim",
+        "gloss": "life",
+        "note": "More than mere survival. In Deuteronomy life means flourishing in the land, in covenant with God, the whole of a good human existence held together by nearness to him. 'Choose life' is choosing God himself, who is the source of it."
+      },
+      {
+        "original": "bachar",
+        "gloss": "to choose",
+        "note": "A real decision set before real people. The same book also says God is the one who chose Israel first, so the human choosing here answers a prior love. The call is to respond to a God who moved first."
+      }
+    ],
+    "echoes": [
+      "Paul quotes 'the word is near you, in your mouth and in your heart' and says this is the word of faith now found in Christ (Romans 10:6 to 9).",
+      "Jesus says he came that they may have life and have it abundantly (John 10:10), gathering up the Deuteronomy hope of true life.",
+      "The promise that God will circumcise the heart (Deuteronomy 30:6) is taken up in the new covenant promise of a new heart (Jeremiah 31, Ezekiel 36) and fulfilled by the Spirit.",
+      "The two ways, life and death, echo through Jesus' image of the narrow and wide gates (Matthew 7:13 to 14)."
+    ],
+    "misreadings": [
+      "Hearing 'choose life' as a slogan for self improvement, as though we save ourselves by sheer willpower. The choice is set before a people God already rescued, and Moses says God himself must change the heart for them to truly love him.",
+      "Reading the blessings and curses as God being harsh. The whole speech is a love poured out by a leader begging his people not to walk into ruin, the way a parent pleads with a child near a cliff."
+    ],
+    "prompts": [
+      "Moses insists the command is 'very near you,' not far off and impossible. How does it change things to hear God's call as something within reach rather than a burden beyond you?",
+      "The call to choose life sits next to the promise that God will change the heart so you can. How do you hold both, your real choice and God's deeper work, at the same time?",
+      "If choosing life finally means choosing God himself, where in your life are you being asked to hold fast to him rather than let go."
+    ],
+    "spectrum": {
+      "note": "This chapter holds together two things people often pull apart, a genuine call to choose and the promise that God will work in the heart to make the choosing possible. The New Testament does not drop either one. Paul finds the gospel itself in the words 'near you, in your mouth and in your heart,' and the promise of a circumcised heart becomes the new covenant gift of the Spirit. Reading the law in covenant means seeing it as part of one unfolding story where God both calls and enables.",
+      "doctrine": "covenant-frameworks",
+      "doctrineTitle": "How the Whole Story Fits"
+    }
+  },
+  "deuteronomy 34": {
+    "flow": "The book closes with a death. Moses climbs Mount Nebo, and God shows him the whole land from a distance, the land he has led the people toward for forty years and will not himself enter. He dies there, and God buries him, and no one knows the place to this day. It is a quiet, aching ending. The greatest figure in Israel's story so far, the one who spoke with God face to face, does not get to cross over. The leadership passes to Joshua, filled with the spirit of wisdom because Moses had laid his hands on him. And then the narrator says something that hangs in the air. 'There has not arisen a prophet since in Israel like Moses, whom the Lord knew face to face.' For a new reader two things are worth holding together. First, even Moses was not the final answer. The story keeps going past him, into the land, under a new leader. Second, that last sentence quietly leaves a door open. If no prophet like Moses has yet arisen, then the promise of chapter 18, a prophet like Moses, is still waiting. The Torah ends on the far side of the river, with its greatest leader buried and its deepest hope unfulfilled.",
+    "words": [
+      {
+        "original": "panim el panim",
+        "gloss": "face to face",
+        "note": "The phrase that sets Moses apart. He knew God with a closeness no other prophet matched. It is exactly this 'face to face' standard that makes the later coming of Jesus, who makes God known directly, so striking."
+      },
+      {
+        "original": "Yehoshua",
+        "gloss": "Joshua, the Lord saves",
+        "note": "The name carried by Moses' successor is the Hebrew form of the name later given to Jesus. Joshua leads Israel into the land Moses could not enter, a quiet foreshadowing the New Testament does not miss."
+      }
+    ],
+    "echoes": [
+      "The narrator's line that no prophet like Moses had yet arisen leaves chapter 18's promise open, and the New Testament says Jesus is its answer (Acts 3:22).",
+      "John writes that the law came through Moses, but grace and truth came through Jesus Christ (John 1:17), placing Jesus past where Moses had to stop.",
+      "Hebrews contrasts Moses, faithful as a servant in God's house, with Jesus, faithful as a son over the house (Hebrews 3:1 to 6).",
+      "At the Transfiguration Moses himself appears beside Jesus and then fades, leaving the voice to say 'listen to him' (Luke 9:30 to 35)."
+    ],
+    "misreadings": [
+      "Reading Moses being barred from the land only as cold punishment. The scene is tender. God himself shows Moses the land and buries him, and the loss underlines that even the greatest servant is not the savior the story still awaits.",
+      "Treating this as a sad dead end. The chapter is actually a hinge. Leadership passes to Joshua, the people go in, and the unmet hope of a prophet like Moses is left deliberately open for what comes next."
+    ],
+    "prompts": [
+      "The book ends with its hero buried outside the land and the deepest promise still unfulfilled. Why might God let the story stay open rather than wrap it up neatly?",
+      "Moses knew God 'face to face,' and the narrator says no one since has matched him. What kind of figure would it take to finally surpass that closeness?",
+      "Leadership passes from Moses to Joshua, whose name means 'the Lord saves.' What do you make of the story handing its people to a new leader who carries that name."
+    ]
   },
   "deuteronomy 6": {
     "flow": "Moses is preaching to a new generation on the edge of the promised land, urging them to remember who God is before they enter a place full of other gods. In verses 4 to 9 he gives the words that would become the heart of Israel's daily prayer, called the Shema after its first word, hear. The Lord is one, and the response is to love him with all your heart, soul, and strength. Then Moses tells parents to press these words into the rhythm of ordinary life, talking of them at home and on the road, when lying down and rising up.",
@@ -852,6 +1248,30 @@
       "doctrineTitle": "How Are We Saved?"
     }
   },
+  "ephesians 4": {
+    "flow": "Paul has spent three chapters telling new believers who they already are in Christ. Now, at chapter 4, he turns to how that settles into daily life. The first thing he names is not a list of rules but a shared reality. There is one body and one Spirit, one Lord, one faith, one baptism. The unity comes first, before the effort. Then he describes gifted people given to the church so that the whole body would grow up into Christ, who is the head. The point of growing up is not winning arguments. It is maturity that holds together. Right in the middle sits the line about speaking the truth in love, and notice it is aimed at growth, not at scoring a point. We tell the truth so the body can mature, and we do it in love so the truth does not become a weapon. Read the chapter as one motion. From the unity we are given, into the maturity we are growing, by way of truth carried in love.",
+    "words": [
+      {
+        "original": "henotes (Greek)",
+        "gloss": "oneness, unity",
+        "note": "Paul does not ask the church to manufacture unity. He says to keep the unity the Spirit already made. The work is to guard a gift, not to build something from scratch."
+      }
+    ],
+    "echoes": [
+      "Psalm 68:18, quoted by Paul, picturing a victor ascending and giving gifts, which he applies to Christ giving people to the church.",
+      "Jesus praying in John 17 that his followers would be one as he and the Father are one.",
+      "The body language of 1 Corinthians 12, where many parts make one whole and no part can say it has no need of the others."
+    ],
+    "misreadings": [
+      "Reading 'speak the truth in love' as a softener that lets you say a harsh thing as long as you add the word love. Paul means truth that is itself an act of love, told so the other person can grow.",
+      "Hearing 'grow up into the head' as private self-improvement. The growing up here is something the whole body does together, joined to Christ, not a solo project."
+    ],
+    "prompts": [
+      "If unity is something you keep rather than create, what does that change about how you handle the next disagreement in your church?",
+      "Can you think of a time someone told you a hard truth in a way that helped you grow? What made it land as love rather than attack?",
+      "What would it look like for your own maturity to be measured by how well the body holds together, not by how much you personally know?"
+    ]
+  },
   "ephesians 6": {
     "flow": "Paul has spent five chapters describing the new life that belongs to people joined to Christ, and now he closes by naming the conflict that life walks into. The armor language is not a call to fight other people but a call to stand firm against spiritual evil that wants to pull a believer back into fear and division. Every piece of the armor (truth, righteousness, peace, faith, salvation, the word) is something already given in Christ, now to be worn deliberately. The list ends not with a sword swung in anger but with prayer.",
     "words": [
@@ -945,6 +1365,40 @@
       "Moses tells a terrified crowd to stop being afraid. What makes that command possible rather than empty in this scene?",
       "If salvation here means rescue from a real and present danger, how does that ground the way you hear the word salvation elsewhere?"
     ]
+  },
+  "exodus 19": {
+    "flow": "Israel has been rescued from Egypt and now arrives at the mountain where God first met Moses. Before any commandment is given, God reminds them of what He has already done, carrying them on eagles' wings. Exodus 19 is the doorway to Sinai, the moment a freed slave people is offered a covenant and a calling. In verses 5 to 6 God names what they are to be, a treasured possession, a kingdom of priests, and a holy nation.",
+    "words": [
+      {
+        "original": "segullah (treasured possession)",
+        "gloss": "a personal treasure, a king's own prized property",
+        "note": "Segullah was the word for the special treasure a king kept for himself, apart from the wealth of the kingdom. God says all the earth is His, and yet Israel is His segullah. It is the language of being chosen not because of size or strength but because of love."
+      },
+      {
+        "original": "mamleket kohanim (kingdom of priests)",
+        "gloss": "a royal company of priests",
+        "note": "A priest stands between God and others, carrying God to the people and the people to God. To call the whole nation a kingdom of priests is to say their election is for the sake of the world, not against it. They are blessed to stand in the gap for everyone else."
+      }
+    ],
+    "echoes": [
+      "1 Peter 2:9 takes these exact titles, a chosen people, a royal priesthood, a holy nation, and applies them to the church, showing that the calling given at Sinai now rests on all who belong to Christ.",
+      "Exodus 19:4 grounds the calling in rescue first, you have seen what I did to the Egyptians, so the demand to obey comes after the deliverance, never before it.",
+      "Revelation 1:6 says Christ has made us a kingdom and priests to serve His God, carrying the Sinai language all the way to the end of the story."
+    ],
+    "misreadings": [
+      "Reading verse 5, if you obey, as God making His love conditional on performance. The covenant follows a rescue already accomplished, and the obedience is the shape of a relationship already given, not the price of earning one.",
+      "Treating being chosen as a privilege over others rather than a calling for others. A kingdom of priests exists to stand between God and the world, so the election is for service and blessing flowing outward, not for status held over anyone."
+    ],
+    "prompts": [
+      "God reminds Israel of the rescue before He asks anything of them. How does it change obedience to know it comes as a response to deliverance rather than a way of earning it?",
+      "To be a kingdom of priests is to stand between God and others for their sake. Who are the people you might be called to carry to God and God to?",
+      "God calls a freshly freed slave people His treasured possession. What would shift in you if you believed you were treasured before you had proven anything?"
+    ],
+    "spectrum": {
+      "note": "Christian readers see the church taking up Israel's titles in 1 Peter 2, a chosen people and a royal priesthood. Some hold that the church fulfills and continues Israel's calling, others that Israel keeps a place of its own alongside the church. Either way, the priesthood given at Sinai was always meant to serve the wider world, and the New Testament hands that same calling to every believer.",
+      "doctrine": "church",
+      "doctrineTitle": "What Is the Church?"
+    }
   },
   "exodus 20": {
     "flow": "Three months out of slavery, the rescued people gather at a mountain wrapped in smoke and thunder, and God speaks the Ten Commandments. The order matters, because the words begin not with a demand but with a reminder that this is the God who already brought them out of Egypt. The law is given to a people God has already saved, which means obedience here is the shape of gratitude, not the price of rescue.",
@@ -1044,6 +1498,70 @@
       "What does it mean for you that the face Moses could not fully see is the face shown in Jesus?"
     ]
   },
+  "exodus 40": {
+    "flow": "The whole second half of Exodus has been building to this. After the rescue, the covenant, the failure of the golden calf, and the long work of building, the tabernacle is finally finished exactly as commanded. Exodus 40 ends the book not with a speech but with a presence, as the glory of the Lord fills the tent so fully that even Moses cannot enter. The God who lived on a mountain has come to dwell in the middle of the camp.",
+    "words": [
+      {
+        "original": "kavod (glory)",
+        "gloss": "weight, heaviness, the felt presence of God",
+        "note": "Kavod comes from a root meaning heavy. The glory of God is not a glow so much as a weight, a presence so real it has mass in the room. When the kavod fills the tabernacle, the holiness is so dense that Moses, who spoke with God on the mountain, cannot go in."
+      },
+      {
+        "original": "mishkan (tabernacle)",
+        "gloss": "dwelling place, the place where God settles",
+        "note": "Mishkan comes from the verb to dwell or settle. The whole point of the structure is named in the word. It is not a temple of distance but a tent of nearness, the place God chooses to settle among a moving, failing people."
+      }
+    ],
+    "echoes": [
+      "John 1:14 says the Word became flesh and dwelt among us, and the Greek word for dwelt means to tabernacle, so John reads the tabernacle as a picture of Jesus coming to settle among us in the flesh.",
+      "1 Kings 8:10 to 11 repeats this scene when the temple is finished and the glory fills it so the priests cannot stand to minister, tying the tent and the temple together as one story of God dwelling with His people.",
+      "Revelation 21:3 ends the Bible with a voice saying the dwelling place of God is with man, and He will dwell with them, the final fulfillment of what the tabernacle first pointed toward."
+    ],
+    "misreadings": [
+      "Reading the glory filling the tent as a reward for good building, as if Israel earned God's presence by craftsmanship. The text stresses that everything was done as the Lord commanded, so the obedience is response to grace, and the presence is a gift God gives, not a payment He owes.",
+      "Treating the inability of Moses to enter as God shutting people out. The point is the sheer weight of holiness, and the same God who fills the tent placed it in the center of the camp precisely so He could be near, with the whole sacrificial system given to make that nearness possible."
+    ],
+    "prompts": [
+      "The book of rescue ends not with freedom alone but with God moving into the middle of the camp. Why might the goal of being rescued be nearness to God rather than only being set free?",
+      "The glory is so heavy that even Moses must wait outside. How do you hold together a God who is this near and this holy at the same time?",
+      "From the tent to the temple to Jesus to the new creation, the story keeps moving toward God dwelling with people. Where do you most long for that nearness in your own life right now?"
+    ]
+  },
+  "ezekiel 36": {
+    "flow": "Ezekiel prophesied to people already in exile, dragged off to Babylon, their temple destroyed, asking whether God had abandoned them for good. Chapter 36 is God's answer, and it is startling in how much he says he will do himself. I will gather you. I will sprinkle clean water on you. I will give you a new heart and put a new spirit within you. I will remove the heart of stone and give you a heart of flesh. I will put my Spirit within you and cause you to walk in my ways. Notice who is acting. The verbs belong to God almost the whole way through. The people had failed at keeping the covenant from the outside, by rules pressed onto unwilling hearts. So God promises to change the inside, to replace the organ that does the willing. And he says plainly why. Not for their sake, but for the sake of his own name, which they had dragged through the mud among the nations. The hope here is not that the exiles will try harder. It is that God will do surgery they could not perform on themselves.",
+    "words": [
+      {
+        "original": "ruach",
+        "gloss": "spirit, breath, wind",
+        "note": "The same word covers spirit, breath, and wind, which is why it moves so easily between the new spirit God puts in a person and the Spirit of God himself. When God says I will put my ruach within you, he is promising not just an improved attitude but his own presence taking up residence inside."
+      },
+      {
+        "original": "lev basar",
+        "gloss": "a heart of flesh, in place of a heart of stone",
+        "note": "Stone is unresponsive. It cannot feel, cannot soften, cannot turn. Flesh is alive and able to be moved. The trade God promises is from a heart that cannot respond to him to one that can, a change of capacity, not just of effort."
+      }
+    ],
+    "echoes": [
+      "Jesus tells Nicodemus in John 3:5 that one must be born of water and the Spirit, language that draws straight from Ezekiel's clean water and new spirit.",
+      "Paul's contrast between the letter that kills and the Spirit that gives life in 2 Corinthians 3 rests on this promise of a heart of flesh.",
+      "Pentecost in Acts 2, the Spirit poured out on the church, is the public arrival of the I will put my Spirit within you promised here.",
+      "Hebrews 8 quotes the partner promise of Jeremiah 31, the law written on hearts, which travels alongside Ezekiel's new heart."
+    ],
+    "misreadings": [
+      "Reading the new heart as something we manufacture by self improvement, when every verb in the passage belongs to God, who does the removing and the giving.",
+      "Treating the promise as purely future and individual, when Ezekiel first spoke it to a whole exiled nation as the ground of their return and renewal."
+    ],
+    "prompts": [
+      "Almost every action in this passage is something God says he will do. What changes about hope when the work depends on him rather than on your performance?",
+      "A heart of stone cannot respond and a heart of flesh can. Where do you notice in yourself a place that feels like stone, unable to be moved, and what would it mean for that to soften?",
+      "God says he acts for the sake of his own name and not because the people earned it. Is that comforting, unsettling, or both, and why?"
+    ],
+    "spectrum": {
+      "note": "Ezekiel 36:26 to 27 is one of the great Old Testament promises of the Holy Spirit. God pledges to put his own Spirit inside his people, giving them a new capacity to live the life he asks. The New Testament treats Pentecost and the believer's new birth as the keeping of exactly this promise.",
+      "doctrine": "holy-spirit",
+      "doctrineTitle": "The Holy Spirit and His Gifts"
+    }
+  },
   "ezekiel 37": {
     "flow": "Ezekiel prophesies to exiles in Babylon who have said our bones are dried up and our hope is lost. God sets him down in a valley full of dry bones and tells him to prophesy to them, and as he speaks the bones rattle together, take flesh, and finally stand alive when the breath enters. This is a vision with its own plain meaning attached, for God says the bones are the whole house of Israel and the promise is national return from exile. Read it first as resurrection language for a dead people brought home, and let its hint of something larger grow from there.",
     "words": [
@@ -1106,6 +1624,36 @@
       "note": "This passage sits at the center of how believers understand the way a person is counted right with God, whether by faith alone or by faith working through the law, a question different traditions answer in different ways.",
       "doctrine": "soteriology",
       "doctrineTitle": "How Are We Saved?"
+    }
+  },
+  "galatians 3": {
+    "flow": "The churches in Galatia were being told that to really belong to God they had to add the law of Moses to their faith in Christ, starting with circumcision. Paul is alarmed, and this chapter is his answer. He has just argued that Abraham was counted righteous by faith long before the law existed, so the law cannot be the thing that makes a person right with God. Then he asks, why the law at all? His answer in verses 23 to 29 is a single picture. Before faith came, we were 'held in custody under the law,' kept under guard. The law was our 'guardian until Christ came,' so that we might be justified by faith. The guardian he names was a household servant in the Roman world who escorted a child to school and kept him out of trouble, a temporary minder, not the father and not the destination. Once the child grows up, the guardian's job is done. So now that faith has come, Paul says, we are no longer under that guardian. We are sons, clothed with Christ, and then the great leveling line, no Jew or Greek, slave or free, male or female, for all are one in Christ. And if you belong to Christ, you are Abraham's offspring, heirs of the promise. The law was never the inheritance. It was the escort to the One who is.",
+    "words": [
+      {
+        "original": "paidagOgos (Greek: paidagogos)",
+        "gloss": "guardian, the servant who escorted a child",
+        "note": "Not a teacher and not a father. In a Roman household this was the servant who walked a child to school and disciplined him along the way, a temporary role for a child not yet grown. Paul says the law played exactly this part, important but not the goal and not forever."
+      }
+    ],
+    "echoes": [
+      "Genesis 15:6, Abraham believed God and it was counted to him as righteousness, the verse Paul has been leaning on the whole chapter.",
+      "Romans 10:4, Christ is the end, the goal and completion, of the law for righteousness to everyone who believes.",
+      "Galatians 4:1 to 7, the very next move, where Paul develops the same picture into being an heir who was once like a child under guardians and is now an adopted son.",
+      "Colossians 3:11, the same leveling list, where there is no Greek or Jew, slave or free, but Christ is all and in all."
+    ],
+    "misreadings": [
+      "Reading 'the law was our guardian' as if the Old Testament law was a bad thing God was embarrassed by. Paul calls it good and necessary for its season. A guardian is not an enemy. It is the right care for a particular stage, now fulfilled in Christ.",
+      "Taking 'no male and female, no slave or free' to mean every distinction simply vanishes and nothing about how we live together matters anymore. Paul's point is equal standing as heirs, all equally sons, all equally clothed with Christ. He is settling who belongs, not erasing every difference."
+    ],
+    "prompts": [
+      "Paul compares the law to a guardian who escorts a child until he grows up. How does it change the way you read the Old Testament law to see it as care for a season rather than a burden God resented?",
+      "He says in Christ there is no Jew or Greek, slave or free, male or female. Who in your world would it most surprise you to be told stands on exactly equal ground with you before God?",
+      "The inheritance comes by promise, not by law-keeping. If your standing with God is a gift you inherit rather than a wage you earn, what changes about how you try to please him?"
+    ],
+    "spectrum": {
+      "note": "This chapter sits at the center of two large conversations. One is about how we are saved, where Christians broadly affirm justification by faith but discuss how faith, works, and God's grace relate. The other is about how the Old Testament law fits with the New, the relationship of the covenants and what the law is for now. Galatians 3 speaks into both. A new reader does not need to resolve the scholarly debates to grasp Paul's plain claim, that we are made right with God through faith in Christ and not by keeping the law.",
+      "doctrine": "covenant-frameworks",
+      "doctrineTitle": "How the Whole Story Fits"
     }
   },
   "galatians 5": {
@@ -1220,6 +1768,30 @@
       "doctrineTitle": "How Are We Saved?"
     }
   },
+  "genesis 18": {
+    "flow": "Three visitors arrive at Abraham's tent in the heat of the day, and one of them turns out to be the Lord. After a promise about Sarah's coming son, God chooses to tell Abraham what He is about to do to Sodom. What follows is one of the boldest conversations in Scripture, as Abraham steps toward God and pleads for the city. He bargains down from fifty righteous to ten, and underneath every request is a single trust, that the Judge of all the earth will do right.",
+    "words": [
+      {
+        "original": "tsedaqah (righteousness)",
+        "gloss": "rightness, justice, doing what is fitting",
+        "note": "Abraham's plea hinges on the question, shall not the Judge of all the earth do tsedaqah. The word carries both legal fairness and covenant faithfulness. Abraham is not lecturing God. He is appealing to who God already is, holding God to God's own character."
+      }
+    ],
+    "echoes": [
+      "Genesis 18:19 says God chose Abraham so that he would teach his children to keep the way of the Lord by doing righteousness and justice, the very things Abraham then pleads for over Sodom. The plea grows out of his calling.",
+      "Ezekiel 16:49 names the sin of Sodom as pride, plenty, and refusal to help the poor, which guards us from flattening the story into one single sin.",
+      "James 5:16 says the prayer of a righteous person has great power, and Abraham's persistent intercession is one of the earliest pictures of that truth in action."
+    ],
+    "misreadings": [
+      "Reading Abraham's bargaining as him changing God's mind or being more merciful than God. The conversation shows Abraham learning the depth of God's own mercy, since God was willing to spare the whole city for ten. God is not the obstacle in the scene. He is the one inviting the questions.",
+      "Treating the destruction of Sodom as proof that God enjoys judgment. The chapter spends far more time on God's patience and the search for even a few righteous than on the judgment itself, and the next chapter shows God rescuing Lot first."
+    ],
+    "prompts": [
+      "Abraham asks hard questions of God and is not rebuked for it. What does that tell you about the kind of honesty God welcomes in prayer?",
+      "Abraham pleads for a city that is not his own and includes wicked people he has no reason to love. Who are you tempted to think is beyond the reach of your prayers?",
+      "The whole plea rests on trusting that God will do right even when God does something Abraham cannot fully see. Where do you find that trust hardest to hold?"
+    ]
+  },
   "genesis 2": {
     "flow": "The second chapter draws close on the making of the man and the woman, the breath of life, the garden, and the first marriage. Read it alongside chapter one, not against it, as the same story told from ground level.",
     "crossRefs": [
@@ -1322,6 +1894,64 @@
       "doctrineTitle": "Sin and the Fall"
     }
   },
+  "genesis 32": {
+    "flow": "Jacob is going home, and home means facing Esau, the brother he cheated years before. The night before the meeting he sends everyone across the river and is left alone, and a man wrestles with him until daybreak. Genesis 32 refuses to make this clean. Jacob will not let go without a blessing, his hip is wrenched, and he limps away with a new name and a new limp, both at once.",
+    "words": [
+      {
+        "original": "Yisrael (Israel)",
+        "gloss": "he strives with God, or God strives",
+        "note": "The new name replaces Jacob, which sounded like heel grabber or deceiver. Israel is built from the verb for striving and the name of God. The man Jacob spent his life grasping at things by trickery. He is renamed for a different kind of striving, one that holds onto God Himself."
+      },
+      {
+        "original": "Peniel (face of God)",
+        "gloss": "the face of God",
+        "note": "Jacob names the place Peniel because, he says, I have seen God face to face and my life was spared. To see God's face was understood to be deadly. Jacob survives, which is the wonder he marks in the name. The place remembers mercy more than victory."
+      }
+    ],
+    "echoes": [
+      "Hosea 12:3 to 4 looks back on this night and says Jacob wept and sought favor, adding that he prevailed by weeping, which colors the wrestling as desperate prayer more than a contest of strength.",
+      "Genesis 35:10 confirms the name Israel again later, showing it was not a one-night experience but a name that stuck and named a whole people.",
+      "Genesis 33:10 has Jacob tell Esau that seeing his face was like seeing the face of God, echoing Peniel and tying the reconciliation with his brother to the encounter at the river."
+    ],
+    "misreadings": [
+      "Reading the wrestling as Jacob winning by his own strength. He prevails only in the sense of refusing to let go, and the single touch to his hip shows the man could have ended it at any moment. Jacob leaves blessed and also limping, which is the point.",
+      "Treating the new name as the end of Jacob's struggles, a graduation to an easy life. The limp is permanent and his troubles continue. The transformation is real but it is marked by a wound he carries for the rest of his days."
+    ],
+    "prompts": [
+      "Jacob receives both a blessing and a limp in the same night. Why might God give a gift and a wound together, and have you known a blessing that came with a cost you still carry?",
+      "Jacob will not let go until he is blessed. What does it look like to hold onto God with that kind of refusal in your own praying?",
+      "The new name marks who Jacob will become before he has become it. How does it feel to think God might name you for something you have not yet grown into?"
+    ]
+  },
+  "genesis 4": {
+    "flow": "Right after Eden, the story does not slow down. The first children are born, the first worship is offered, and the first murder follows close behind. Genesis 4 wants you to see how quickly the fracture between people and God becomes a fracture between brother and brother. The chapter ends not with a clean lesson but with a city being built by the line of the man who killed.",
+    "words": [
+      {
+        "original": "rovets (crouching)",
+        "gloss": "lying in wait, like an animal at the door",
+        "note": "In 4:7 God tells Cain that sin is rovets at the door, desiring him. The same word shows up elsewhere for a beast lying down. It is a picture, not a definition. Sin is not a vague mood here. It is a predator with a posture, and Cain is told he must rule over it before it rules him."
+      },
+      {
+        "original": "shomer (keeper)",
+        "gloss": "one who guards or watches over",
+        "note": "Cain's question, am I my brother's shomer, is meant as a dodge. But the word is the same one used for guarding the garden and later for the Lord who keeps Israel. Cain asks it to escape responsibility. The rest of Scripture answers yes, you are."
+      }
+    ],
+    "echoes": [
+      "1 John 3:12 names Cain directly and asks why he killed his brother, answering that his own deeds were evil and his brother's righteous. This is the New Testament reading the murder as a pattern, not a single event.",
+      "Hebrews 12:24 says the blood of Jesus speaks a better word than the blood of Abel. Abel's blood cried out for justice from the ground. Another blood would later cry out for mercy.",
+      "Genesis 3:16 uses the same phrase about desire and rule that 4:7 uses, tying Cain's struggle back to the curse spoken over the first couple."
+    ],
+    "misreadings": [
+      "Reading the rejection of Cain's offering as God being arbitrary or playing favorites. The text hints that the issue was Cain's heart and the kind of offering, and God's gentle warning in 4:6 to 7 shows a Father reaching toward Cain before the sin, not against him.",
+      "Treating am I my brother's keeper as a real question with an open answer. Cain says it to avoid blame. The narrative frames it as guilt talking, and the whole sweep of Scripture treats the answer as a settled yes."
+    ],
+    "prompts": [
+      "God speaks to Cain before the murder, warning him and inviting him to do well. What does it tell you about God that He pursues a person who is already angry?",
+      "Cain's sin against God showed up as violence against his brother. Where in your own life does a strained relationship with God leak into how you treat people near you?",
+      "The chapter ends with Cain still living, marked but protected. How do you hold together God's judgment on the act and God's mercy on the man?"
+    ]
+  },
   "genesis 50": {
     "flow": "Joseph's father has died, and his brothers panic, certain that now the man they sold into slavery will finally take revenge. Instead Joseph weeps and speaks the line that holds the whole book together, you meant evil against me, but God meant it for good, to keep many people alive. He does not pretend the wrong was not real. He names it as evil and then sets it inside a larger purpose he could not have seen while he sat in the pit or the prison.",
     "words": [
@@ -1387,6 +2017,40 @@
       "If the flood did not finally cure the human heart, what does that make you long for, and where might the rest of Scripture be pointing you to find it?"
     ]
   },
+  "genesis 9": {
+    "flow": "The flood has receded and Noah steps off the ark into a world washed clean and strangely quiet. God speaks first, blessing Noah and binding Himself with a promise. Genesis 9 is the moment the story shifts from undoing to keeping, as God commits to never again destroy the earth by water. The rainbow is hung not as a charm for us but as a sign God sets for Himself to remember.",
+    "words": [
+      {
+        "original": "berit (covenant)",
+        "gloss": "a binding promise, a sworn relationship",
+        "note": "This is the first time the word berit appears with full weight in Scripture. A covenant is not a contract between equals. It is a king binding Himself by oath. Here God ties the promise to all flesh and even the animals, which is wider than any later covenant."
+      },
+      {
+        "original": "qeshet (bow)",
+        "gloss": "the rainbow, but the same word means a war bow",
+        "note": "The Hebrew for rainbow is the word for the weapon an archer draws. The image is striking. God hangs His war bow in the clouds, pointed away from the earth, as if hanging up the instrument of judgment. The sign of peace is a weapon set down."
+      }
+    ],
+    "echoes": [
+      "Genesis 6:18 first mentions God establishing His covenant with Noah before the flood, so chapter 9 is the keeping of a word already given. God promised the rescue before the rain.",
+      "Isaiah 54:9 calls God's promise of mercy the waters of Noah, using the rainbow covenant as proof that God keeps His sworn word even when we deserve otherwise.",
+      "Revelation 4:3 places a rainbow around the throne of God, drawing the sign of mercy all the way into the final vision of heaven."
+    ],
+    "misreadings": [
+      "Reading the rainbow as a promise that nothing bad will ever happen again. The promise is specific. God will not again destroy all flesh by a flood. It is a word about His restraint, not a guarantee against all hardship.",
+      "Treating this covenant as something Noah earned by being good. The text shows God acting first and binding Himself, and even notes Noah's drunkenness later in the same chapter. The covenant rests on God's character, not Noah's."
+    ],
+    "prompts": [
+      "God sets the rainbow as a sign for Himself to remember, not for us to perform. How does it change the way you read it to know the promise leans on God's memory and not yours?",
+      "The covenant reaches every living thing, not just humans. What does that breadth tell you about how God regards the whole creation He made?",
+      "God binds Himself by oath to a world He knows will still go wrong. Where do you find it hard to believe God would commit to you knowing what He knows?"
+    ],
+    "spectrum": {
+      "note": "Faithful readers connect this covenant with Noah to the later promises to Abraham, Moses, and David, seeing one unfolding story of God binding Himself to His creation. Others read each covenant as a more separate stage. The Noahic promise is the widest, made with all flesh, and it sets the pattern that God moves first and swears the oath.",
+      "doctrine": "covenant-frameworks",
+      "doctrineTitle": "How the Whole Story Fits"
+    }
+  },
   "habakkuk 2": {
     "flow": "Habakkuk is unusual because it is a conversation, not a sermon. The prophet looks at the violence and injustice in Judah, around 600 years before Jesus, and complains directly to God. Why do the wicked seem to win. God answers that He is raising up the Babylonians to bring judgment, which only deepens the problem, because the Babylonians are worse than the people they will punish. Chapter 2 is God's reply to that second complaint. God tells Habakkuk to wait for the vision, for it will surely come. In the middle of that answer sits verse 4, 'the righteous shall live by his faith,' or by faithfulness. The proud and the violent are puffed up and will fall, but the person who trusts God and keeps trusting will live. Then comes verse 14, a promise that one day 'the earth will be filled with the knowledge of the glory of the Lord, as the waters cover the sea.' To Habakkuk's day this meant holding on through a long stretch of confusion, trusting that God would deal with both the wicked at home and the cruel empire abroad. The chapter teaches a frightened believer how to keep standing when the answer has not arrived yet.",
     "words": [
@@ -1419,6 +2083,35 @@
       "note": "Verse 4, 'the righteous shall live by his faith,' is the line Paul returns to when he explains that we are made right with God through trust rather than through our own performance. It is one of the seed verses of the whole teaching on grace.",
       "doctrine": "soteriology",
       "doctrineTitle": "How Are We Saved?"
+    }
+  },
+  "hebrews 1": {
+    "flow": "Hebrews opens without a greeting, more like a sermon than a letter. The first sentence sets up a contrast across time. Long ago God spoke in many pieces and many ways through the prophets. But in these last days he has spoken by his Son. The whole book hangs on that 'but.' Everything God said before was real, yet partial, arriving in fragments. Now the speaking is no longer a message handed through a messenger. It is a Son who is himself the message. The writer piles up descriptions. The Son is heir of all things, the one through whom the world was made, the radiance of God's glory, the exact imprint of his nature, the one who upholds everything by his word. Then comes the long stretch arguing that this Son is superior to the angels. To a reader tempted to drift back toward older, familiar forms of religion, the point is sharp. You cannot get anything higher than the Son, because in the Son God has spoken his final and fullest word.",
+    "words": [
+      {
+        "original": "apaugasma (Greek)",
+        "gloss": "radiance, the shining-out of light",
+        "note": "Not light reflected off a surface, but light streaming from its source. The Son is not a copy that resembles God. He shines with the very glory that is God's own."
+      }
+    ],
+    "echoes": [
+      "Genesis 1, where God creates by speaking, now answered by a Son through whom the world was made.",
+      "Psalm 2 and Psalm 110, both quoted here, where God addresses his anointed king as Son and seats him at his right hand.",
+      "John 1, where the Word who was with God and was God becomes flesh and makes God known."
+    ],
+    "misreadings": [
+      "Treating the prophets as a mistake God corrected. The writer honors the earlier speaking as truly God's, just partial. The Son completes it, he does not cancel it.",
+      "Reading 'superior to the angels' as mere ranking trivia. The argument exists to stop readers from settling for any lesser go-between when God has spoken in a Son."
+    ],
+    "prompts": [
+      "If God's fullest word is a Person and not just a set of statements, how does that change what it means to listen to God?",
+      "The writer keeps comparing the Son to good things and showing he is greater. What good things in your life might you be quietly treating as ultimate?",
+      "What does it do to your reading of the Old Testament to hear it as God speaking in fragments that point forward to the Son?"
+    ],
+    "spectrum": {
+      "note": "Hebrews 1 is one of the clearest windows in the whole Bible onto the question of who Jesus is. He is not a great prophet added to the others. He is the Son who shares God's own glory and through whom everything was made.",
+      "doctrine": "christology",
+      "doctrineTitle": "Who Is Jesus?"
     }
   },
   "hebrews 11": {
@@ -1480,6 +2173,40 @@
       "If your eyes are fixed on Jesus who endured, what does that say about where you are tempted to look instead?"
     ]
   },
+  "hebrews 4": {
+    "flow": "Chapter 4 continues a warning that began in chapter 3, built around an old story. Israel was led out of Egypt toward a promised rest, but a generation refused to trust God and never entered it. The writer takes that history and presses it on his readers. There remains a Sabbath rest for the people of God, and the danger is the same, hardened hearts that fail to enter through unbelief. This rest is bigger than a day off. It reaches back to God resting on the seventh day of creation and forward to the final rest believers enter by faith. Then, near the end, comes the famous line about the word of God being living and active, sharper than any two-edged sword, cutting to the division of soul and spirit, judging the thoughts of the heart. Read in place, this is not a pep talk about Bible study. It is a warning. The same word that promises rest also exposes us, so that no one drifts toward unbelief while assuming they are fine. The chapter ends not in fear but at a throne of grace, where we draw near for mercy.",
+    "words": [
+      {
+        "original": "sabbatismos (Greek)",
+        "gloss": "a Sabbath rest, a Sabbath-keeping",
+        "note": "A rare word the writer seems to coin. It signals that the rest in view is larger than the weekly day. It is the deep rest of God himself, entered by trusting his finished work."
+      },
+      {
+        "original": "energes (Greek)",
+        "gloss": "active, at work, effective",
+        "note": "The word of God is not a quiet object on a shelf. It is at work, doing something to the reader. We do not only examine it. It examines us."
+      }
+    ],
+    "echoes": [
+      "Genesis 2, where God rests on the seventh day, the first picture of the rest this chapter reaches for.",
+      "Psalm 95, quoted at length, warning a later generation not to harden their hearts as their ancestors did.",
+      "Jesus inviting the weary to come to him and find rest for their souls."
+    ],
+    "misreadings": [
+      "Lifting 'the word of God is living and active' out as a stand-alone verse for self-help or motivation. In context it is a sword that exposes unbelief, part of a sober warning, not a comfort quote.",
+      "Collapsing the Sabbath rest into one day of the week, as if the chapter were mainly about which day to keep. The rest here is the larger rest of trusting God's finished work, which the weekly day only pictured."
+    ],
+    "prompts": [
+      "The chapter says the word reads us as much as we read it. How does it feel to approach the Bible as something that examines you, not only something you study?",
+      "What would it mean to 'enter rest' by trusting God rather than by trying harder? Where are you still working when you could be resting in his work?",
+      "The warning ends at a throne of grace. Why might the writer move from a sword that exposes us to an invitation to draw near?"
+    ],
+    "spectrum": {
+      "note": "Hebrews 4 shows the Bible as a living word that does something to the reader. Trusting Scripture is not filing away facts. It is letting a word that is at work expose and then heal us.",
+      "doctrine": "scripture",
+      "doctrineTitle": "What Is the Bible, and Can We Trust It?"
+    }
+  },
   "hebrews 6": {
     "flow": "The warning about those who fall away comes inside a call to grow up and press on to maturity. The writer is urging a tempted, drifting community forward. Whatever the warning means, it is doing pastoral work, not laying out an abstract theory of whether a believer can be lost.",
     "crossRefs": [
@@ -1528,6 +2255,36 @@
       "doctrine": "christology",
       "doctrineTitle": "Who Is Jesus?"
     }
+  },
+  "isaiah 1": {
+    "flow": "Isaiah opens not with comfort but with a courtroom. God calls heaven and earth as witnesses against a people who keep the religious calendar and break the covenant in the same week. They bring sacrifices. They keep the festivals. And God says he is sick of all of it, because their hands are full of blood while they pray. Then, right in the middle of the indictment, comes the offer of 1:18: come now, let us reason together. The God who has just refused their worship invites them to the table to argue it out. The stunning thing is the direction of the verse. He does not say clean yourselves up and then come. He says come, and I will make your scarlet sins white as snow. The argument ends with mercy, but only after the empty worship has been named for what it is. This is the prophet speaking first to Jerusalem in his own century, a city going through the motions while the orphan and the widow go unheard.",
+    "words": [
+      {
+        "original": "yakach",
+        "gloss": "to reason, to argue a case, to settle a dispute",
+        "note": "The word in 'let us reason together' is a legal term. It pictures two parties laying out their case until the matter is decided. God is not asking for a warm chat. He is opening a trial and offering, against all expectation, to clear the accused."
+      },
+      {
+        "original": "shani",
+        "gloss": "scarlet, the deep red of a fixed dye",
+        "note": "Scarlet was a dye that did not wash out. The image is chosen on purpose. These are not light stains. They are the kind of red that no human laundering removes, which is exactly why the cleansing has to come from God and not from better effort."
+      }
+    ],
+    "echoes": [
+      "James 1:27 picks up Isaiah's test of real religion almost word for word, defining pure worship as caring for orphans and widows rather than ritual alone.",
+      "Jesus quotes the prophets against empty worship in Matthew 9:13, saying he desires mercy and not sacrifice, the same complaint Isaiah voices here.",
+      "The scarlet made white reappears in Revelation 7:14, where the saints have washed their robes white in the blood of the Lamb, the cleansing Isaiah could only promise.",
+      "Paul's argument in Romans that no amount of religious observance justifies a person stands on the foundation this chapter lays."
+    ],
+    "misreadings": [
+      "Reading 1:18 as a gentle invitation to a friendly conversation, when the Hebrew is courtroom language and the verse sits inside a hard indictment of a guilty people.",
+      "Hearing 'though your sins are like scarlet' as a promise that sin does not much matter to God, when the whole chapter exists precisely because it matters enough to bring a lawsuit."
+    ],
+    "prompts": [
+      "Isaiah says God was tired of worship offered by people whose lives contradicted it. What might it look like for worship and daily conduct to line up rather than pull against each other?",
+      "The verse moves from accusation straight to the offer of cleansing. Why do you think God puts the mercy before any demand that they fix themselves first?",
+      "If scarlet is a dye that will not wash out, what does that suggest about where the power to make someone clean has to come from?"
+    ]
   },
   "isaiah 11": {
     "flow": "Chapter 10 ends with the proud Assyrian empire pictured as a great forest, its tall trees about to be cut down by God. Then chapter 11 opens with a contrast you might miss if you read too fast. The mighty forest is felled, but from a stump, the chopped down family line of Jesse, David's father, a small green shoot rises. The royal line had been reduced to a stump, and out of that apparent dead end God grows a king. The Spirit of the Lord rests on him, the Spirit of wisdom, of counsel, of the knowledge and fear of the Lord. He judges not by what his eyes see but with righteousness for the poor. Then the vision opens wide. The wolf lies down with the lamb, the leopard with the goat, a little child leads them, and a nursing infant plays over the snake's den. Creation itself is healed under this king. The earth will be full of the knowledge of the Lord as the waters cover the sea.",
@@ -1691,6 +2448,41 @@
       "What changes if the holiness that frightened Isaiah is the same holiness that touched his lips with fire?"
     ]
   },
+  "isaiah 61": {
+    "flow": "By the time we reach Isaiah 61 the book has moved past the courtroom and toward restoration. A figure speaks, and we are not told his name. The Spirit of the Lord is upon me, he says, because the Lord has anointed me to bring good news to the poor. What follows is a list of reversals. Broken hearts bound up. Captives released. Mourners given a garland instead of ashes. The proclamation of the year of the Lord's favor, an echo of the old Jubilee when debts were cleared and the enslaved went free. In its own setting this spoke to a people coming home from exile, ruined and grieving, and it promised that their ruin was not the last word. Centuries later, in a synagogue in Nazareth, Jesus stood up, found this exact place in the scroll, read 61:1 to 2, sat down, and said today this scripture is fulfilled in your hearing. He put himself in the place of the unnamed speaker. That is the moment this passage becomes the keynote of his whole ministry.",
+    "words": [
+      {
+        "original": "mashach",
+        "gloss": "to anoint, to set apart with oil for a task",
+        "note": "From this verb comes the word mashiach, Messiah, and its Greek translation Christos. To be anointed was to be commissioned by God, usually a king or priest. When the speaker says the Lord has anointed me, he is claiming a divine appointment, which is why Jesus reading it of himself was no small claim."
+      },
+      {
+        "original": "shenat ratson",
+        "gloss": "the year of favor, the acceptable year of the Lord",
+        "note": "This phrase reaches back to the Jubilee of Leviticus 25, the year debts were canceled and captives freed. By naming it, the passage frames rescue not as a feeling but as release, a real cancellation of what held people down."
+      }
+    ],
+    "echoes": [
+      "Luke 4:16 to 21 is the central echo, where Jesus reads this passage in Nazareth and applies it to himself, making it the announcement of his mission.",
+      "Jesus answers John the Baptist in Matthew 11:5 by listing the very reversals of Isaiah 61, the poor hearing good news as proof of who he is.",
+      "The Spirit descending on Jesus at his baptism in Luke 3:22 sets up the anointing this passage describes, the Spirit upon the one who is sent.",
+      "Paul speaks of believers becoming the oaks of righteousness of 61:3 in 2 Corinthians 5:21, made the righteousness of God in Christ."
+    ],
+    "misreadings": [
+      "Treating the passage as only a prediction of Jesus and skipping past the real exiles it first comforted, which flattens how prophecy speaks to its own day before it reaches further.",
+      "Reading the good news to the poor as purely spiritual and inward, when the Jubilee language insists on actual release for actual captives and mourners."
+    ],
+    "prompts": [
+      "Jesus chose this passage to describe what he came to do, then stopped reading mid sentence before the line about judgment. What does his choice of where to start and stop tell you about how he framed his mission?",
+      "The list is full of reversals, ashes traded for beauty and mourning for gladness. Where in your own life or in the people around you do you most long for that kind of reversal?",
+      "The speaker is unnamed in Isaiah. Why might it matter that Jesus stepped into that empty space and claimed it as his own?"
+    ],
+    "spectrum": {
+      "note": "When Jesus read Isaiah 61 in Nazareth and said it was fulfilled in their hearing, he was identifying himself as the anointed one the prophet described. This is one of the clearest places where Jesus reads the Old Testament as speaking about him, not by force but by stepping into a role left open.",
+      "doctrine": "christology",
+      "doctrineTitle": "Who Is Jesus?"
+    }
+  },
   "isaiah 7": {
     "flow": "This is wartime. Around 735 BC, two small kingdoms, Syria and the northern kingdom of Israel, are marching against Jerusalem to force King Ahaz into their alliance against Assyria. Ahaz is terrified, and his heart shakes like trees in the wind. Isaiah comes to him with a word from God. Stand firm in faith, or you will not stand at all. God even offers Ahaz a sign, any sign he likes. Ahaz refuses, dressing his unbelief in false piety by saying he will not test the Lord. So God gives a sign anyway. A young woman will conceive and bear a son, and call him Immanuel, which means God with us. Before this child is old enough to know right from wrong, the two kings Ahaz fears will be gone. The sign was first of all for Ahaz, a promise on a short clock that God was present and the threat would pass. Centuries later, Matthew opens his Gospel and sees in this verse something deeper than Ahaz could have known.",
     "words": [
@@ -1821,6 +2613,41 @@
       "Where does the broader comfort, that God forms and knows every life, rightly come from, and why does it matter to read each verse for what it is doing?"
     ]
   },
+  "jeremiah 17": {
+    "flow": "Jeremiah preached to a kingdom convinced it was fine right up to the moment it fell. In chapter 17 he draws a sharp line between two kinds of people. The one who trusts in human strength is like a shrub in the desert, planted in salt land, alone and dry. The one who trusts in the Lord is like a tree planted by water, its roots reaching the stream, green in drought and still bearing fruit. Then, just after that picture of two ways to live, comes the diagnosis that explains why people keep choosing the shrub. The heart is deceitful above all things, and desperately sick. Who can understand it. This is not a stray insult. It is the prophet explaining why a nation that knows better keeps walking toward the cliff. The trouble is not only outside in bad circumstances. It is inside, in a heart that lies even to its own owner. Jeremiah spoke this over Judah before the exile, but the verdict is not limited to them.",
+    "words": [
+      {
+        "original": "aqov",
+        "gloss": "deceitful, crooked, twisted back on itself",
+        "note": "The word for deceitful shares a root with the name Jacob, the heel grabber, the one who supplanted. The heart, Jeremiah says, has a Jacob in it, always angling, always working an angle even against itself. It is not simply weak. It is bent."
+      },
+      {
+        "original": "batach",
+        "gloss": "to trust, to lean one's full weight on something",
+        "note": "The same verb runs through both pictures, the shrub and the tree. Everyone trusts something. The question Jeremiah presses is not whether you trust but what you have leaned your whole weight upon, and whether it can hold."
+      }
+    ],
+    "echoes": [
+      "Jesus locates evil at the level of the heart in Mark 7:21, saying it is from within, out of the heart, that defiling things come, which is Jeremiah's diagnosis made personal.",
+      "The tree planted by water reappears in Psalm 1 and finds its fullest picture in Revelation 22, the tree of life by the river of the water of life.",
+      "Paul's argument in Romans 3 that none is righteous traces the same sickness Jeremiah names, a corruption that reaches the inner person.",
+      "The promise just after this diagnosis, that God searches the heart, is taken up in Acts 1:24 where the church prays to the Lord who knows all hearts."
+    ],
+    "misreadings": [
+      "Using 'the heart is deceitful' as a club to distrust all emotion or to shut down every inner sense, when Jeremiah is describing a moral condition of self deception, not banning feeling.",
+      "Reading the verse as if it applies only to obviously wicked people out there, when the prophet aims it at the religious nation that thought itself secure, the reader included."
+    ],
+    "prompts": [
+      "Jeremiah says the heart can deceive even the person it belongs to. Can you think of a time you talked yourself into something you later saw clearly was wrong? What made the self deception possible?",
+      "The two images, the desert shrub and the watered tree, both depend on what the roots are connected to. What are the roots in your life reaching toward right now?",
+      "If the problem is inside and not only in circumstances, what does that suggest about whether a change of situation alone would be enough to fix it?"
+    ],
+    "spectrum": {
+      "note": "Jeremiah 17:9 is one of the Bible's plainest statements that the human problem runs deeper than bad behavior or bad surroundings. The heart itself, the command center of a person, is bent and self deceiving. This is what Christian teaching means when it speaks of the fall reaching all the way in.",
+      "doctrine": "sin",
+      "doctrineTitle": "Sin and the Fall"
+    }
+  },
   "jeremiah 29": {
     "flow": "The famous words of verse 11 sit inside verses 4 to 14, a letter Jeremiah sends to the people carried off to Babylon. Verse 10 sets the clock: the promise comes after seventy years are completed. The you is plural and corporate, the whole exiled community, not a single modern reader.",
     "words": [
@@ -1913,6 +2740,41 @@
       "The accuser claimed Job only loved God for the blessings. Is there a part of your own faith that depends on things going well, and how would you know?",
       "Job worshiped in the same breath as his grief. Does that strike you as faith, denial, or something harder to name, and why?"
     ]
+  },
+  "job 19": {
+    "flow": "Lament inside a dispute. Job is not writing calm poetry. He is speaking in the middle of an argument with friends who have decided his suffering must be his own fault. The famous lines in 19:25 to 27 rise out of that fight like a man standing up in a courtroom where everyone has already ruled against him.",
+    "words": [
+      {
+        "original": "go'el",
+        "gloss": "redeemer, kinsman who rescues",
+        "note": "A go'el was a family member with the legal duty to buy back a relative out of debt or slavery, to avenge a wrong, to stand up for one who could not stand for himself. When Job says 'I know that my go'el lives,' he is reaching for a defender who will take his side when no human will."
+      },
+      {
+        "original": "basar",
+        "gloss": "flesh",
+        "note": "In 19:26 Job says that after his skin is destroyed, yet in his flesh he will see God. The Hebrew is difficult and old translations differ, but the word for body and skin is plain. Job is not floating into a vague spiritual hope. He wants to see God with his own eyes, in his own body."
+      }
+    ],
+    "echoes": [
+      "The friends keep insisting the world is simple. The good prosper, the wicked suffer. Job's whole book is the long refusal of that math, and these verses are where his hope outruns his despair without erasing it.",
+      "The word go'el returns in Ruth, where Boaz redeems Naomi's family, and in Isaiah, where God himself is called Israel's Redeemer. Job reaches for the same idea before it is fully revealed.",
+      "Paul writes that the last enemy to be destroyed is death, and that we will be raised in bodies. Job, centuries earlier, is feeling toward the edge of that same hope in the dark.",
+      "Handel set these words to music in Messiah, sung at funerals ever since, because believers have heard in Job's defender the One who would later stand in their place."
+    ],
+    "misreadings": [
+      "Reading it as a tidy proof that Job had full Christian resurrection doctrine. Job is not quoting a creed. He is a wounded man clutching a hope he can barely name, and the honesty of that reaching is the point.",
+      "Treating the verse as a promise that suffering always ends in vindication on this side of death. Job's vindication in seeing God is real, but the book never tells him why he suffered. The comfort is a Person, not an explanation."
+    ],
+    "prompts": [
+      "Job wants a defender more than he wants an answer. What does it tell you about him that, surrounded by accusers, his deepest cry is for someone to stand with him rather than for the reason behind his pain?",
+      "Notice that Job insists he will see God in his own flesh, not as a ghost. Why might a body, and not only a soul, matter so much to his hope?",
+      "If you had to wait, as Job did, without ever being told the reason for your hardest season, what would it mean to say 'I know that my Redeemer lives' anyway?"
+    ],
+    "spectrum": {
+      "note": "Many readers across the centuries have heard in Job's living Redeemer a foreshadow of Christ, the kinsman who took on flesh to stand for those who could not stand for themselves. Job did not see the whole picture, but the shape of his hope points toward a defender who would one day share human skin and bone.",
+      "doctrine": "christology",
+      "doctrineTitle": "Who Is Jesus?"
+    }
   },
   "job 38": {
     "flow": "For thirty-seven chapters Job has demanded an answer, and his friends have offered confident explanations that solve nothing. Then God speaks, out of a whirlwind, and He does not explain. He asks questions. Where were you when I laid the foundation of the earth. Have you commanded the morning. Do you know where light lives, or who feeds the young lions, or how the wild goat gives birth in the hills. Question after question about a vast living world that runs without Job's help and mostly without his knowledge. God never tells Job about the scene in chapter 1. He never gives the reason. Instead He widens Job's view until the demand for an explanation gives way to something else, a sense of who is speaking and how small the questioner is. The strange comfort of the book is that God shows up at all, and answers a man's why with the whole weight of creation.",
@@ -2054,6 +2916,36 @@
       "doctrine": "christology",
       "doctrineTitle": "Who Is Jesus?"
     }
+  },
+  "john 13": {
+    "flow": "John slows everything down for the last night. He tells us Jesus knew the Father had given all things into his hands, knew where he had come from and where he was going. And knowing exactly who he was, he got up, took off his outer clothes, wrapped a towel around himself, and did the work of the lowest servant in the house, washing the dirt of the road off his friends' feet. Knowing his own greatness is precisely what frees him to kneel. Peter recoils, because the order is upside down. After he finishes, Jesus explains that he has given them a pattern, and then he gives the new commandment, love one another as I have loved you. The measure is no longer love your neighbor as yourself. The measure is now him, the one kneeling with the towel, soon to be lifted on a cross. By this, he says, everyone will know whose you are.",
+    "words": [
+      {
+        "original": "kainos (Greek)",
+        "gloss": "new",
+        "note": "Loving one another was not itself new. What is new is the standard, as I have loved you. The command gets its newness from the cross it points to. The bar is no longer yourself but him."
+      },
+      {
+        "original": "agape (Greek)",
+        "gloss": "self giving love",
+        "note": "The love named here is defined by the basin and the towel and what comes after on Friday. It is love that lowers itself for the good of another, measured not by feeling but by what it is willing to do."
+      }
+    ],
+    "echoes": [
+      "The towel and basin against Philippians 2, where Jesus, being in the form of God, empties himself and takes the form of a servant. The footwashing is that hymn acted out.",
+      "Leviticus 19 and Mark 12, love your neighbor as yourself, now raised to a new measure, love as I have loved you.",
+      "The exodus and Passover, the setting of this whole final meal, where God once freed a people and now frees them by a different kind of lamb.",
+      "John 15 just after, where Jesus says greater love has no one than this, that someone lay down his life for his friends, naming where the footwashing is headed."
+    ],
+    "misreadings": [
+      "Treating the footwashing as only a lesson in being humble and helpful, a nice example of service. It is that, but John frames it as a picture of the cross, the whole self lowered to clean what we could not clean ourselves. Miss the cross and you miss the point.",
+      "Hearing love one another as a soft, general kindness to everyone. Jesus aims it first at how his followers treat each other, and he ties it to a public sign, that by this love the watching world will know whose they are. It is concrete, costly, and meant to be seen."
+    ],
+    "prompts": [
+      "John says it was knowing exactly who he was that freed Jesus to kneel. How might being secure in God's love make you more able to take the low place, not less?",
+      "The new measure of love is no longer yourself but him. When you set your love beside the one with the towel and the cross, what shifts?",
+      "Jesus says the world will know his followers by their love for one another. If outsiders judged the faith only by how Christians treat each other, what would they conclude about your circle?"
+    ]
   },
   "john 14": {
     "flow": "The 'many rooms' of 14:2 to 3 and the great claim of 14:6 open Jesus' last long talk with his disciples on the night before he dies, the words known as the Upper Room teaching. The disciples are frightened and confused, and Jesus comforts them, telling them he goes to prepare a place in his Father's house and will come back for them. When Thomas asks how they can know the way, Jesus answers that he himself is the way, the truth, and the life. So 14:6 is not a cold slogan, it is an answer to a scared friend who asked a real question about where Jesus is going.",
@@ -2391,6 +3283,36 @@
       "Where do you see the spin of this cycle, drifting, trouble, crying out, and rescue, playing out in your own life?"
     ]
   },
+  "lamentations 3": {
+    "flow": "Lamentations is a book of funeral poems over Jerusalem after Babylon burned it to the ground. The temple is rubble. People are starving. The poet is not watching from a distance. He says I am the man who has seen affliction, and for two chapters and most of a third he holds nothing back, naming the darkness, the siege, the grief, even his complaint that God feels like an enemy. Then, at the lowest point, something turns. I call this to mind, he says, and therefore I have hope. The steadfast love of the Lord never ceases, his mercies never come to an end. They are new every morning. Great is your faithfulness. This is the famous line, the one printed on coffee mugs, and it is easy to forget where it actually sits. It is spoken not from a sunny morning but from the ashes of a destroyed city, by a man who has just described God as having broken his teeth with gravel. The hope is real, but it is hope chosen in the dark, not relief after the trouble passed. That is what makes it strong rather than sentimental.",
+    "words": [
+      {
+        "original": "chesed",
+        "gloss": "steadfast love, covenant loyalty that will not let go",
+        "note": "Chesed is loyal love that keeps its promises even when the other side has failed. The poet does not say God is nice. He says God's covenant loyalty has not ended, even after judgment has fallen, which is a far harder and sturdier claim to make from the ruins."
+      },
+      {
+        "original": "chadash",
+        "gloss": "new, fresh, renewed each day",
+        "note": "The mercies are new every morning, renewed daily like manna in the wilderness that could not be stored up. The image promises not one rescue but a fresh supply for each new day of grief, enough for the day you are actually in."
+      }
+    ],
+    "echoes": [
+      "Paul's testimony in 2 Corinthians 4:8 to 9, struck down but not destroyed, walks the same path from honest affliction to refusal of despair.",
+      "The God whose mercies are new every morning stands behind Jesus teaching in Matthew 6 not to worry about tomorrow, since each day has its own grace.",
+      "Lamentations feeds the New Testament picture of lament that still hopes, as in Romans 8, where present suffering is held alongside a hope that does not put us to shame.",
+      "The faithfulness of God celebrated here is the same covenant faithfulness Paul leans on in 2 Timothy 2:13, that if we are faithless he remains faithful."
+    ],
+    "misreadings": [
+      "Lifting 'great is your faithfulness' out of its setting of national catastrophe and using it as a light encouragement, which empties the line of the grief that gives it weight.",
+      "Treating the turn to hope as a denial of the pain, when the poet keeps the lament fully on the page and chooses hope without pretending the loss away."
+    ],
+    "prompts": [
+      "The most hopeful lines in the book sit in its darkest chapter, spoken over a ruined city. How does knowing where the verse comes from change the way you hear it?",
+      "The poet says he calls something to mind and therefore has hope, as if hope here is a deliberate act of memory. What do you think it means to choose hope rather than wait to feel it?",
+      "Mercies that are new every morning cannot be stockpiled, only received fresh each day. Where might it help you to ask for enough for today rather than for the whole road ahead?"
+    ]
+  },
   "leviticus 16": {
     "flow": "Leviticus has been laying out how a holy God can live among a flawed people without that nearness destroying them. Chapter 16 gives the instructions for the one day each year, the Day of Atonement, when the high priest goes behind the curtain into the most holy place. Two goats stand at the center: one is killed and its blood brought inside to cleanse the sanctuary, and the other has the sins of the people confessed over its head before it is sent away into the wilderness. Together they say one thing in two pictures, that sin must be both paid for and carried off.",
     "words": [
@@ -2424,6 +3346,71 @@
       "note": "The Day of Atonement is a primary source for the Bible's language of sacrifice, blood, and the removal of sin. Christians read the cross through this chapter, and they have differed on how each picture, payment and removal, maps onto what Jesus did.",
       "doctrine": "soteriology",
       "doctrineTitle": "How Are We Saved?"
+    }
+  },
+  "leviticus 19": {
+    "flow": "This chapter sits in the middle of what readers later called the Holiness Code, the long stretch of Leviticus where God tells Israel how to live as a people set apart. The reason given is not a rule for its own sake. It is a mirror. 'You shall be holy, for I the Lord your God am holy.' Everything that follows flows from who God is, not from a list someone invented. And notice what holiness turns out to mean here. It is not mostly about ceremony. It is about how you treat a day laborer, a deaf person, a blind person, a poor neighbor, an immigrant. You leave the edges of your field unharvested so the hungry can eat. You do not lie or steal or hold back a worker's pay overnight. You do not slander. You do not nurse a grudge. And then, near the center, the sentence Jesus would one day call the second greatest command of all, 'you shall love your neighbor as yourself.' For a new reader it helps to see that this was spoken to a rescued people. God had already brought them out of Egypt. The law is not how they earn rescue. It is how rescued people learn to look like the God who rescued them.",
+    "words": [
+      {
+        "original": "qadosh",
+        "gloss": "holy, set apart",
+        "note": "The word does not first mean morally perfect. It means belonging to God, marked off for him, the way a wedding ring is set apart from other rings. Israel is told to be qadosh because God is qadosh, so holiness here grows from relationship before it ever becomes a standard."
+      },
+      {
+        "original": "rea",
+        "gloss": "neighbor, fellow",
+        "note": "The neighbor in this chapter is wide. A few verses after 19:18 the same love is extended to the foreigner living among them, 'you shall love him as yourself.' So the famous command was never meant to stop at people who look like you."
+      }
+    ],
+    "echoes": [
+      "Jesus quotes 19:18 directly and binds it to loving God with everything, calling these two the hinge on which all the Law and the Prophets hang (Matthew 22:37 to 40).",
+      "Paul says the whole law is summed up in this one word, love your neighbor as yourself (Romans 13:9, Galatians 5:14).",
+      "James calls 'love your neighbor as yourself' the royal law (James 2:8), and uses it to confront favoritism toward the rich.",
+      "The parable of the Good Samaritan (Luke 10) is Jesus answering the question this verse provokes, 'and who is my neighbor.'"
+    ],
+    "misreadings": [
+      "Reading Leviticus 19 as a pile of dusty ritual rules and skipping past it. In fact this is the chapter where God ties holiness to honest wages, care for the disabled, and love of the stranger. It is intensely practical.",
+      "Treating 'love your neighbor as yourself' as a command to first achieve high self esteem before you can love others. The verse assumes you already look after yourself. It simply tells you to extend that same care outward to the person next to you."
+    ],
+    "prompts": [
+      "If holiness in this chapter looks like fair pay, honest speech, and caring for the poor and the foreigner, how does that stretch what you assumed the word holy meant?",
+      "God grounds every command here in 'I am the Lord.' What changes when you hear these instructions as the voice of the One who rescued Israel rather than as rules from no one in particular?",
+      "Jesus said all the Law hangs on loving God and loving neighbor. Where in your week is the neighbor you would rather not have to love."
+    ]
+  },
+  "leviticus 23": {
+    "flow": "Here God hands Israel a calendar. Not an ordinary one, but a rhythm of appointed times, days he himself calls 'my feasts.' Read slowly and you can see the shape of the year. It begins with the weekly Sabbath, then moves through Passover and Unleavened Bread in the spring, remembering the night Israel was spared and brought out of Egypt. Right after comes Firstfruits, the first of the harvest waved before God in trust that the rest will follow. Fifty days later, the Feast of Weeks, a thanksgiving for the full grain harvest. Then in the autumn the Feast of Trumpets, a loud summons, followed by the Day of Atonement, the most solemn day of the year when the nation is cleansed, and finally Booths, when the people live in temporary shelters to remember that they once had no home but God. For a new believer the key is this. These are not random festivals. They tell Israel's story, and the New Testament treats them as a shadow whose substance arrives in Jesus. The calendar was teaching the people to keep time around what God has done and what he has promised still to do.",
+    "words": [
+      {
+        "original": "moadim",
+        "gloss": "appointed times, set meetings",
+        "note": "Often translated 'feasts,' but the root means a fixed appointment, a meeting arranged in advance. God is scheduling encounters with his people. The day is not holy because Israel chose it. It is holy because God set the meeting."
+      },
+      {
+        "original": "bikkurim",
+        "gloss": "firstfruits",
+        "note": "The very first and best of the harvest, offered before the rest is gathered. To give the first is to declare that the whole crop is a gift and that more is coming. Paul reaches for exactly this picture to describe the risen Jesus."
+      }
+    ],
+    "echoes": [
+      "Paul calls Christ 'our Passover lamb' who has been sacrificed (1 Corinthians 5:7), reading the spring feast as fulfilled at the cross.",
+      "Christ is called 'the firstfruits of those who have fallen asleep' (1 Corinthians 15:20), his resurrection the first of a harvest still to come.",
+      "The Feast of Weeks, known in Greek as Pentecost, is the day the Spirit is poured out on the church (Acts 2), the harvest the firstfruits promised.",
+      "Hebrews reads the Day of Atonement as a pattern completed by Jesus, who enters the true holy place once for all with his own blood (Hebrews 9 to 10)."
+    ],
+    "misreadings": [
+      "Assuming these feasts are merely old Jewish customs with no bearing on a Christian. The New Testament writers saw their own Lord and their own church written into this calendar, so a reader who skips it loses the back half of the meaning.",
+      "Flattening the feasts into one generic celebration. Each had its own weight. Atonement was somber and searching, Booths was joyful and grateful, and missing that range turns a rich story into a blur."
+    ],
+    "prompts": [
+      "If God built a yearly rhythm so his people would keep retelling what he had done, what shapes the rhythm of your own year, and what story does it tell?",
+      "The spring feasts land on the cross and resurrection, and Pentecost on the gift of the Spirit. What does it suggest that the timing was sketched out centuries earlier?",
+      "The Day of Atonement and the Feast of Booths sit close together, one heavy and one glad. Why might a people need both kinds of day."
+    ],
+    "spectrum": {
+      "note": "Christians have long read these feasts as a shadow cast ahead of time, with the substance arriving in Christ. The spring feasts gather around his death and rising and the gift of the Spirit. The autumn feasts, Trumpets, Atonement, and Booths, many read as still pointing forward to his return and the final gathering of his people. You do not have to settle every detail to see the pattern. God was teaching Israel to keep time around redemption, and the New Testament says the redemption arrived.",
+      "doctrine": "covenant-frameworks",
+      "doctrineTitle": "How the Whole Story Fits"
     }
   },
   "luke 10": {
@@ -2482,6 +3469,41 @@
       "note": "How grace, election, and the human will fit together is read across this passage. The doctrine page lays out the views fairly.",
       "doctrine": "soteriology",
       "doctrineTitle": "How Are We Saved?"
+    }
+  },
+  "luke 2": {
+    "flow": "Luke sets the birth against the machinery of empire, a decree from Caesar Augustus, a census, a whole world ordered to move so that taxes could be counted. Into that vast scene comes a single poor couple and a child laid in a feeding trough because there was no room. The contrast is the point. The Lord of all enters at the bottom. Then the announcement goes not to the palace but to shepherds working a night shift, people on the edges, and the glory of God breaks over them in a field. They are the first to be told and the first to come. Later, when the baby is brought to the temple, old Simeon takes him up and sings. He has waited his whole life to see this, and now he is ready to die in peace, having seen salvation prepared for all peoples, a light for the nations and the glory of Israel. His song is not all comfort. He warns Mary that a sword will pierce her own soul too.",
+    "words": [
+      {
+        "original": "soter (Greek)",
+        "gloss": "savior",
+        "note": "A title the Roman world gave to Caesar, who claimed to bring peace and rescue. The angel hands that exact word to a baby in a manger. Luke is quietly contrasting two kinds of lord and two kinds of peace."
+      },
+      {
+        "original": "doxa (Greek)",
+        "gloss": "glory",
+        "note": "The weight and shining of God's own presence. It appears over a field of shepherds, not over a throne. Where the glory chooses to land tells you something about the God whose glory it is."
+      }
+    ],
+    "echoes": [
+      "Isaiah 9, the child born to us on whom the government rests, the light dawning on people in darkness. Luke's whole scene reads like that prophecy taking flesh.",
+      "Isaiah 49 and 42, the servant who is a light to the nations, words Simeon takes onto his lips when he sees the child.",
+      "1 Samuel 2, Hannah's song of a God who lifts the lowly and brings down the proud, which stands behind both Mary's song and the whole shape of this birth.",
+      "The shepherd imagery of David and of Psalm 23, now answered by shepherds being summoned to the true shepherd lying in a manger."
+    ],
+    "misreadings": [
+      "Reading the nativity only as a tender scene and missing its edge. The same chapter has Simeon warning of a sword through Mary's heart and a child set for the falling and rising of many. The cradle already points toward the cross.",
+      "Assuming the shepherds were chosen because shepherds are romantic or pure. In that culture they were poor and often looked down on. The point is not their charm but that the news comes first to the low, which is how God tends to work."
+    ],
+    "prompts": [
+      "The birth is announced to shepherds before anyone in power hears of it. If God still tends to start at the bottom, where might you be looking for him in the wrong places?",
+      "Simeon can die in peace simply because he has seen the child. What would it mean to have something so settled that you could let go of everything else?",
+      "The angel borrows Caesar's own titles, savior and lord and peace, and gives them to a baby. What kind of peace is being offered here, and how is it different from the kind the world sells?"
+    ],
+    "spectrum": {
+      "note": "This is one of the central places Christians speak of the incarnation, God becoming a real human child without ceasing to be God. Luke shows him fully in the human story, born, laid in a manger, brought to the temple, held by an old man, and at the same time the savior the angels announce with the glory of God. Readers across the church have held both together, true God and true man, beginning here in a feeding trough.",
+      "doctrine": "christology",
+      "doctrineTitle": "Who Is Jesus?"
     }
   },
   "luke 24": {
@@ -2603,6 +3625,36 @@
       "The man had kept the commandments and still went away grieving. What is the one thing in your own hands that you would find hardest to open?"
     ]
   },
+  "mark 12": {
+    "flow": "By this point in Mark, Jesus is in the temple in his final week, and group after group has come to trap him with questions, about taxes, about resurrection. The mood is hostile. Then one scribe asks something that sounds like another trap but turns out to be sincere, which commandment is the first of all. Jesus answers by joining two passages no one had quite bound together this tightly. First, hear, the Lord is one, love him with everything. Then, love your neighbor as yourself. He refuses to rank them apart. The whole law hangs on these two held together, vertical and horizontal, God and the person in front of you. The scribe agrees warmly, and Jesus tells him he is not far from the kingdom. It is one of the few gentle exchanges in a chapter full of conflict.",
+    "words": [
+      {
+        "original": "agapao (Greek)",
+        "gloss": "to love",
+        "note": "Not mainly a feeling but a direction of the whole self, a love that includes the will and shows up in action. To love God with this love is to set your life toward him, not merely to feel warmly about him."
+      },
+      {
+        "original": "shema (Hebrew)",
+        "gloss": "hear, listen",
+        "note": "The first word of the prayer Jesus quotes, the confession faithful Jews said daily. By beginning here, Jesus roots the greatest commandment in the oldest, most familiar words his hearers knew."
+      }
+    ],
+    "echoes": [
+      "Deuteronomy 6, the Shema, the daily confession that the Lord is one and is to be loved with all your heart. Jesus quotes it as the first commandment.",
+      "Leviticus 19, where in the middle of ordinary laws sits the command to love your neighbor as yourself. Jesus lifts it up to stand beside the Shema.",
+      "The prophets like Micah and Hosea, who insisted God wanted mercy and not only sacrifice. The scribe echoes them when he says these two are worth more than all offerings.",
+      "1 John, written later, which presses the same knot tight, that you cannot claim to love God while hating your brother."
+    ],
+    "misreadings": [
+      "Splitting the two commands and keeping only the second, loving neighbor as a humane ethic with God left out. Jesus names love of God first and does not let it go. The love of neighbor grows from it and is not a substitute for it.",
+      "Reading love your neighbor as yourself as a command to first work up self love before you can love others. The verse assumes you already look after yourself and tells you to extend that same care outward to the person beside you."
+    ],
+    "prompts": [
+      "Jesus refuses to separate love of God from love of neighbor. Where in your own life do you feel the pull to keep one and quietly drop the other?",
+      "He calls love a command, not only a feeling. What changes when you treat love as something you can be told to do, even toward someone you do not feel warmly about?",
+      "The scribe is told he is near the kingdom but not yet in it. What might still be missing for someone who can recite the right answer about love?"
+    ]
+  },
   "mark 8": {
     "flow": "At the midpoint of Mark's Gospel Jesus asks his disciples who people say he is, and then who they say he is, and Peter answers that he is the Christ. Right after that confession Jesus begins to teach that he must suffer, be rejected, and be killed, and Peter rebukes him for it. Jesus rebukes Peter back in the sharpest terms, then turns to the whole crowd and says that following him means taking up a cross. The chapter holds two truths together that the disciples wanted to keep apart, that Jesus is the Christ and that the Christ will be crucified.",
     "words": [
@@ -2636,6 +3688,36 @@
       "doctrine": "christology",
       "doctrineTitle": "Who Is Jesus?"
     }
+  },
+  "matthew 11": {
+    "flow": "These three verses do not fall from the sky. They come at the end of a chapter heavy with rejection. John the Baptist is in prison and asking whether Jesus is really the one. Whole towns that saw miracles refuse to turn. Jesus has just prayed, thanking the Father that these things are hidden from the wise and shown to little children. Then he turns and opens his arms. The invitation lands hardest because of everything that came before it. To people worn down by religious demands they could never meet, and by a world that asks more than they can give, he says come. The yoke he offers is not no yoke. It is his yoke, a load shared with him, carried at his pace, under his gentleness rather than under the crushing weight others laid on.",
+    "words": [
+      {
+        "original": "kopiao and phortizo (Greek)",
+        "gloss": "to grow weary from labor, and to be loaded down",
+        "note": "Two pictures, one for the person who works themselves to exhaustion and one for the person crushed under a load placed on them. Jesus names both. The first is the weariness you bring on yourself, the second is the weight others pile on. He speaks to both kinds of tired."
+      },
+      {
+        "original": "praus (Greek)",
+        "gloss": "gentle, lowly, meek",
+        "note": "When Jesus describes his own heart, this is the word he reaches for. Not a manager who demands. A teacher who is gentle and low. The reason his yoke is bearable is the character of the one sharing it with you."
+      }
+    ],
+    "echoes": [
+      "Jeremiah 6, where God says stand at the crossroads and you will find rest for your souls. Jesus borrows that exact promise and puts himself at the center of it.",
+      "Exodus 33, where God promises Moses that his presence will go and give him rest. The rest of God has always been tied to God himself going with his people.",
+      "The teachers of the law in Matthew 23, who tie up heavy burdens and lay them on others. Jesus offers the opposite of the religion of his day.",
+      "The Sabbath, the day God gave so a worn people could stop. Jesus is offering a deeper version of that gift, rest for the soul and not only the body."
+    ],
+    "misreadings": [
+      "Hearing the easy yoke as a promise of an easy life, free of hardship. Jesus himself walked to a cross, and he calls his followers to take up their own. The ease is not the absence of weight. It is the gentleness of the one who now carries it with you.",
+      "Reading rest as doing nothing, as if discipleship were passive. He still gives a yoke, which is a working harness. The offer is not escape from all labor but a different master and a lighter load, learned by walking beside him."
+    ],
+    "prompts": [
+      "Jesus speaks both to those worn out by their own striving and to those crushed by loads laid on them. Which of the two are you, and does it change how you hear his come?",
+      "He says learn from me, for I am gentle and lowly. If you pictured the heart of God as gentle and lowly toward you specifically, what would you stop being afraid of?",
+      "The rest he offers comes through a yoke, not instead of one. What might it mean that real rest is found inside a kind of work, and not by avoiding work?"
+    ]
   },
   "matthew 13": {
     "flow": "Jesus has just met growing hostility from the religious leaders, and in this chapter he steps into a boat and teaches the crowd a string of parables about the kingdom of heaven. He begins with the sower, who scatters seed on four kinds of ground, and only the good soil bears fruit. When the disciples ask why he speaks in parables, he answers that the parables reveal the kingdom to those given ears to hear and conceal it from those whose hearts have grown dull. The chapter then runs through more pictures of the kingdom, the weeds among the wheat, the mustard seed, the leaven, the hidden treasure, the pearl, and the net. The thread holding them together is that the kingdom arrives quietly, mixed in with resistance, small at first, and it asks for a response that goes down to the root.",
@@ -2746,6 +3828,41 @@
       "doctrineTitle": "How Are We Saved?"
     }
   },
+  "matthew 24": {
+    "flow": "The disciples have just walked Jesus out of the temple, admiring its great stones, and he tells them not one will be left on another. That sentence sets off everything that follows. They ask two things tangled together, when will this happen and what will be the sign of your coming and the end of the age. Jesus answers across both. Much of the chapter describes the years leading to a real and terrible event, the destruction of Jerusalem and its temple by Rome in AD 70, within the lifetime of some hearing him. He warns of false messiahs, wars, a flight from the city, a desolation in the holy place. Then the language widens toward something larger, the Son of Man coming on the clouds, a day no one knows. The chapter holds a near thing and a far thing in the same long answer, and the warnings about staying awake apply to both.",
+    "words": [
+      {
+        "original": "parousia (Greek)",
+        "gloss": "coming, arrival, presence",
+        "note": "A word used for the arrival of a king to his city. The disciples use it in their question. It points to Jesus arriving in power, and readers differ on whether a given passage points to AD 70, to a final coming, or to both at once."
+      },
+      {
+        "original": "genea (Greek)",
+        "gloss": "generation",
+        "note": "When Jesus says this generation will not pass away until all these things take place, the meaning of generation sits at the center of the whole debate. If it means the people then alive, it anchors much of the chapter in the first century."
+      }
+    ],
+    "echoes": [
+      "Daniel 7, where one like a son of man comes with the clouds and is given a kingdom. Jesus draws his picture of the coming straight from this vision.",
+      "Daniel 9 and the abomination that makes desolate, language Jesus borrows for what will stand in the holy place.",
+      "The prophets who described God's judgment with sun darkened and stars falling, vivid language for the fall of nations. Readers ask whether Jesus uses it the same way.",
+      "Noah's flood, which came while people ate and married and noticed nothing. Jesus uses it to press one point, be ready, because the day comes on the unwatchful."
+    ],
+    "misreadings": [
+      "Reading the whole chapter as entirely future, a map of the last days only, while skipping that Jesus is answering a question about the temple in front of them, which Rome did level in AD 70. Much of what he says had a first century fulfillment his hearers lived through.",
+      "Folding it the opposite way, treating every line as already finished in AD 70 so that nothing remains. The chapter keeps reaching past the city's fall toward a coming on the clouds and a day no one knows, including the angels. Both the near and the far seem to be in view."
+    ],
+    "prompts": [
+      "Jesus is asked two questions at once, about the temple and about the end. How does it change your reading to hold the possibility that his answer moves between a near event and a far one?",
+      "Whether a line points to AD 70 or to the final coming, the repeated command is the same, stay awake. Why might Jesus care more about your watchfulness than about your timeline?",
+      "He says no one knows the day, not even the angels, not even the Son. What does that do to any attempt to calculate the end from the headlines?"
+    ],
+    "spectrum": {
+      "note": "Faithful readers divide here. Some take most of the chapter as fulfilled in AD 70, when Rome destroyed Jerusalem within the generation Jesus named. Some take it as still future, a description of the end and the second coming. Many take it as both, a near judgment on the temple that also foreshadows the final coming of the Son of Man. Each view is held by serious Christians reading the same text carefully, and the differences are worth understanding before you settle.",
+      "doctrine": "last-things",
+      "doctrineTitle": "How Does It End?"
+    }
+  },
   "matthew 25": {
     "flow": "This chapter sits near the end of Jesus' last long teaching before the cross, where he answers the disciples' question about how things will end. He tells three pictures back to back, the ten virgins, the talents, and finally the sheep and the goats. In that last scene the King separates all the nations by one measure, how they treated the hungry, the stranger, the sick, and the prisoner. The shock is that both groups are surprised, because neither knew they had been meeting the King himself.",
     "words": [
@@ -2807,6 +3924,41 @@
       "note": "This passage touches what the church is and how its signs work. The doctrine page lays out the traditions fairly.",
       "doctrine": "church",
       "doctrineTitle": "What Is the Church?"
+    }
+  },
+  "matthew 4": {
+    "flow": "Jesus has just come up out of the Jordan, where a voice from heaven named him the beloved Son. The very next thing that happens is not a crowd or a miracle. The Spirit drives him into the wilderness to be tested. That order matters. The God who calls you his own does not exempt you from the wilderness. He leads you into it. Forty days echo Israel's forty years, and where the nation failed under hunger and doubt, Jesus stands. Each of the three temptations is an offer to be a Son on easier terms, to feed himself, to force God's hand, to take the kingdoms without the cross. He answers all three from one book, Deuteronomy, the words Israel was given in their own wilderness. He does not argue cleverly. He stands on what is written and refuses to move.",
+    "words": [
+      {
+        "original": "peirazo (Greek)",
+        "gloss": "to test, to tempt",
+        "note": "The same word can mean a test meant to strengthen and a temptation meant to destroy. Here it is both at once. The Spirit tests, the devil tempts, and the one event serves two purposes. A hard place in your own life can be both things together."
+      },
+      {
+        "original": "gegraptai (Greek)",
+        "gloss": "it stands written",
+        "note": "A perfect tense in the Greek, meaning it was written and still stands. Jesus does not quote Scripture as a magic phrase. He leans his whole weight on words spoken to a failing people centuries before, and they hold."
+      }
+    ],
+    "echoes": [
+      "Deuteronomy 8, where Israel is humbled by hunger in the desert so they would learn that man does not live by bread alone. Jesus quotes this verse directly.",
+      "The forty years of Israel in the wilderness, now answered by forty days. Jesus walks the same ground Israel walked and does not fall.",
+      "Adam in the garden, who was offered fruit and took it. Here the second Adam is offered far more and does not.",
+      "Psalm 91, which the devil himself quotes about angels guarding you. Even the tempter knows the Bible. Knowing the words is not the same as standing under them."
+    ],
+    "misreadings": [
+      "Reading this as a hero story about willpower, as if Jesus simply wanted it more. He resists not by gritted teeth but by trust, answering each offer with a settled confidence in his Father. The point is not how strong he is but whom he believes.",
+      "Treating the temptations as obviously evil so that his refusal looks easy. Each offer is genuinely attractive, bread for real hunger, rescue, the whole world. The pull is real, which is the only reason the standing means anything."
+    ],
+    "prompts": [
+      "Notice that the testing comes right after the voice calls him beloved. What might it mean that being loved by God and being led into a hard place can happen in the same breath?",
+      "Jesus meets every offer with words he already knew by heart. What do you have stored up to stand on when you are hungry and pressed?",
+      "The devil quotes Scripture too. How do you tell the difference between Scripture used to call you to trust and Scripture twisted to make you test God?"
+    ],
+    "spectrum": {
+      "note": "Many readers see Jesus here as the true Israel, walking back through the wilderness story and getting right what the nation got wrong. Where Israel grumbled for bread, doubted God, and chased other gods, the Son trusts, waits, and worships only the Father. This is one of the clearest places to watch him be the faithful one humanity never was.",
+      "doctrine": "christology",
+      "doctrineTitle": "Who Is Jesus?"
     }
   },
   "matthew 5": {
@@ -2961,6 +4113,65 @@
       "What is the difference between the command to do justice and any particular policy for trying to achieve it?"
     ]
   },
+  "nehemiah 8": {
+    "flow": "The exiles have come home. The wall of Jerusalem is finally rebuilt, and now the people gather as one in the square and ask Ezra the scribe to bring out the book of the law. He reads it aloud from morning until midday, standing on a wooden platform, and Levites move through the crowd explaining the meaning so the people understand. As they hear it, the people begin to weep. They weep because they finally grasp how far they and their ancestors had fallen from what God asked. Then comes the surprising turn. Nehemiah and Ezra tell them to stop weeping, because this day is holy. Go, eat rich food, share with those who have nothing, and do not be grieved, for the joy of the Lord is your strength, 8:10. Read it carefully. The joy comes after the weeping, not instead of it. The people understood the word, mourned honestly, and then were lifted into a celebration they were commanded to share with the poor.",
+    "words": [
+      {
+        "original": "mevin",
+        "gloss": "to give understanding, to make clear",
+        "note": "The text keeps stressing that the Levites helped the people understand the reading. Hearing the Bible was not enough. It had to be explained so ordinary people could grasp it. Understanding, not just hearing, is what moved them to tears."
+      }
+    ],
+    "echoes": [
+      "When Jesus reads from Isaiah in the synagogue in Luke 4 and explains it to the people, he stands in this same tradition, the public reading and opening of Scripture that Ezra models here.",
+      "The command to send portions to those who have nothing ties the joy of the day directly to caring for the poor. Biblical celebration is never private. It overflows to people who have less.",
+      "Paul tells the Corinthians that godly grief produces repentance that leads to life. Nehemiah 8 shows the order in action, grief over the word first, then a deeper and steadier joy."
+    ],
+    "misreadings": [
+      "The joy of the Lord is your strength gets lifted out and used as a slogan for staying upbeat no matter what. In context it is spoken to people who have just wept in repentance, and the joy is what God gives on the far side of facing the truth, not a mood you summon to avoid the truth.",
+      "People imagine the weeping was the failure and the joy was the recovery, as if God wanted them to skip the grief. The leaders honor the weeping as right and then call the people up into joy. Both belong. The grief was not a mistake to fix."
+    ],
+    "prompts": [
+      "The people wept the moment they finally understood the word, and their leaders did not treat the tears as a problem. When has really understanding something true first made you sorrowful before it made you glad?",
+      "The joy of this day was tied to sending food to those who had nothing. Why might real joy in God naturally spill over into provision for the poor rather than staying private?",
+      "Notice the order, understanding, then grief, then commanded joy. What would change if you let yourself feel the weight of something before rushing to be happy about it?"
+    ]
+  },
+  "numbers 21": {
+    "flow": "Israel is in the wilderness, worn down, and they turn on God and on Moses, complaining about the very rescue that saved them. Venomous snakes come among the camp and people die. When the people confess and beg, God does something strange. He does not simply remove the snakes. He tells Moses to make a bronze serpent and lift it on a pole, and anyone bitten who looks at it lives. Notice the shape of the cure. The thing that was killing them, lifted up, becomes the thing they look to and live. There is no medicine in the bronze. The healing comes through trust, through the simple act of turning your eyes toward what God provided. For centuries this was a quiet, odd story near the end of Israel's desert wandering. Then Jesus picked it up and put himself at the center of it. He told a teacher named Nicodemus that just as Moses lifted the serpent in the wilderness, so the Son of Man must be lifted up, so that whoever believes in him may have eternal life. The strange cure in the desert turns out to be a picture drawn long in advance of the cross.",
+    "words": [
+      {
+        "original": "nachash nechoshet",
+        "gloss": "bronze serpent",
+        "note": "A wordplay in Hebrew, nachash (serpent) and nechoshet (bronze) sound alike. The image of the deadly thing is made into the means of rescue, not by magic in the metal but by God's appointed look of faith."
+      },
+      {
+        "original": "nasa",
+        "gloss": "to lift up, raise",
+        "note": "Moses lifts the serpent on the pole. John uses the matching Greek idea of being 'lifted up,' a double meaning that points both to Jesus raised on the cross and to his being raised in glory."
+      }
+    ],
+    "echoes": [
+      "Jesus applies the story directly to himself, 'as Moses lifted up the serpent in the wilderness, so must the Son of Man be lifted up' (John 3:14 to 15).",
+      "John repeatedly speaks of Jesus being 'lifted up,' tying the cross to this moment and to his glory (John 8:28, John 12:32).",
+      "Centuries later the bronze serpent had to be destroyed because Israel had begun to worship the object itself (2 Kings 18:4), a warning that the sign was never meant to replace God.",
+      "Paul writes that on the cross God made Christ to take on what was killing us, the curse and the sin, so that we might live (2 Corinthians 5:21, Galatians 3:13)."
+    ],
+    "misreadings": [
+      "Treating the bronze serpent as a magic charm. The power was never in the bronze. King Hezekiah later smashed it precisely because people had turned a sign of God's mercy into an idol.",
+      "Reading the cure as a reward for being good enough to deserve it. The bitten people did nothing but look. The whole point is that rescue came by trusting what God provided, not by fixing themselves first."
+    ],
+    "prompts": [
+      "The people were not asked to climb or fight or earn, only to look. What does it tell you about faith that the cure was as simple, and as humbling, as turning your eyes?",
+      "Jesus deliberately compared his own death to this moment. Why might he choose an image of the deadly thing being lifted up and looked to for life?",
+      "Israel later started worshiping the bronze serpent itself. How can a good gift from God slowly become something we trust in place of God."
+    ],
+    "spectrum": {
+      "note": "This is one of the clearest places where Jesus reads himself out of the older Scriptures. He does not treat the bronze serpent as a nice illustration he borrowed. He treats it as a pattern God set up in advance that finds its meaning in him. To see who Jesus claims to be, watch how naturally he stands at the center of a story written long before he was born and says, in effect, this was always about me.",
+      "doctrine": "christology",
+      "doctrineTitle": "Who Is Jesus?"
+    }
+  },
   "numbers 6": {
     "flow": "Numbers records Israel ordering its life around the presence of God in the middle of the camp. In chapter 6, after rules for a special vow of devotion, God gives Aaron and the priests the exact words they are to speak over the people. The blessing is three lines that build, asking God to keep, to shine on, and to give peace. It ends with God saying that by these words the priests put his name on the people, and he himself will bless them.",
     "words": [
@@ -3055,6 +4266,35 @@
       "doctrineTitle": "Who Is Jesus?"
     }
   },
+  "philippians 3": {
+    "flow": "Paul writes this letter from prison, and yet it keeps returning to joy. In chapter 3 he does something risky. He lists his own credentials, the things that once made him proud, the right family, the right training, the right zeal. Then in verse 7 he sweeps the whole pile aside. Whatever was gain to him he now counts as loss for the sake of Christ. He even uses a blunt word for refuse to describe it. This is not Paul hating his past for its own sake. It is Paul telling you what happens when you find something worth more than everything you were keeping score on. From verse 12 the tone shifts to motion. He has not already arrived. He presses on, straining forward, because Christ has taken hold of him. The goal is not a trophy he earns. It is the One who already grabbed him. Read 7 through 14 as a single breath. A man empties his hands of what he was proud of, and then runs hard toward the One who is now his whole worth.",
+    "words": [
+      {
+        "original": "skybala (Greek)",
+        "gloss": "refuse, garbage, dung",
+        "note": "Paul picks a deliberately crude word. He is not saying his old life was slightly less valuable. He is saying that next to knowing Christ it is the stuff you throw out. The shock is the point."
+      },
+      {
+        "original": "dioko (Greek)",
+        "gloss": "to pursue, to press on, to chase",
+        "note": "The same verb was used for hunters and runners chasing down a target. Paul is not strolling. He is in full pursuit, and what he chases is a Person, not a prize."
+      }
+    ],
+    "echoes": [
+      "The runner imagery of 1 Corinthians 9, where Paul runs to win and disciplines himself for the race.",
+      "Jesus telling of a man who found treasure in a field and joyfully sold all he had to buy it.",
+      "Hebrews 12 urging believers to run with endurance, looking to Jesus."
+    ],
+    "misreadings": [
+      "Turning 'press on toward the goal' into a motivational slogan about chasing your dreams. Paul's goal is Christ himself, not personal success.",
+      "Reading 'I have not yet arrived' as anxious striving to earn salvation. Paul presses on precisely because Christ has already taken hold of him, so the running flows from being held, not toward being accepted."
+    ],
+    "prompts": [
+      "What is currently in your 'gain' column, the things you quietly count on to feel secure? What would it mean to recount them in light of Christ?",
+      "Paul runs because he was first taken hold of. How does knowing you are already held change the way you pursue God?",
+      "Where in your life are you tempted to think you have already arrived, and what would pressing on look like instead?"
+    ]
+  },
   "philippians 4": {
     "flow": "The sentence everyone quotes in verse 13 is defined by the two verses just before it. In verses 11 and 12 Paul says he has learned to be content whether brought low or abounding, whether facing plenty or hunger. The all things is every circumstance, not unlimited achievement.",
     "words": [
@@ -3082,6 +4322,36 @@
       "Read verses 10 to 13. What two opposite circumstances does Paul name right before this verse?",
       "How does the meaning shift if the verse is about contentment rather than achievement?",
       "Where does Paul locate the source of his strength, and how does that differ from learning to stand on your own?"
+    ]
+  },
+  "proverbs 1": {
+    "flow": "The opening of a book of wisdom, not a list of guaranteed promises. Proverbs gathers short, memorable sayings meant to train a young person to live skillfully under God. Verse 7 is the doorway over which the whole book is written, the principle everything else depends on.",
+    "words": [
+      {
+        "original": "yirah",
+        "gloss": "fear, awe, reverence",
+        "note": "The 'fear of the Lord' is not being scared of God the way you fear a threat. The word covers awe, reverence, and a right sense of who God is and who you are. It is the wonder that makes you take God seriously, the opposite of treating him casually."
+      },
+      {
+        "original": "reshit",
+        "gloss": "beginning, first thing, chief part",
+        "note": "'The beginning of knowledge' can mean both the starting point and the foundation, the chief thing. Reverence for God is not merely where wisdom starts and then leaves behind. It is the ground the whole structure stands on."
+      }
+    ],
+    "echoes": [
+      "The verse ends by naming the opposite, 'fools despise wisdom and instruction.' In Proverbs a fool is not unintelligent but unwilling to be taught, so the fear of the Lord and a teachable heart are bound together.",
+      "Wisdom is personified later in chapter 1 as a woman calling out in the streets, which tells the reader that wisdom is not hidden in secret but publicly offered to anyone who will stop and listen.",
+      "The phrase 'fear of the Lord' becomes a refrain across the wisdom books, anchoring Job, Psalms, and Ecclesiastes to the same starting point.",
+      "Jesus is later called the wisdom of God by Paul, so this opening principle reaches forward to a person, not only a set of sayings."
+    ],
+    "misreadings": [
+      "Reading Proverbs as a set of ironclad promises, so that 'the fear of the Lord' guarantees an easy or prosperous life. Proverbs gives wise patterns that hold true in general, not contracts. The book of Job exists in the same Bible precisely to keep us from misreading wisdom as a formula.",
+      "Hearing 'fear' as terror that pushes you away from God. The fear of the Lord in Proverbs draws a person toward God in trust and reverence. It is the awe that makes you want to listen, not the dread that makes you hide."
+    ],
+    "prompts": [
+      "Proverbs says reverence for God is where knowledge begins. Why might the way you regard God shape what you are even able to learn about everything else?",
+      "A fool in Proverbs is not someone who lacks brains but someone who refuses to be taught. By that definition, where is it hardest for you to stay teachable?",
+      "If wisdom is calling out in the open, as the chapter says, rather than hidden, what might it mean that the harder part is not finding it but being willing to stop and listen?"
     ]
   },
   "proverbs 22": {
@@ -3207,6 +4477,36 @@
       "Where in your week do you actually delight in Gods instruction, and where do you only tolerate it?"
     ]
   },
+  "psalms 103": {
+    "flow": "A psalm of praise that begins by talking to its own soul. David commands himself to bless the Lord before he tells anyone else to, then piles up reason after reason in steady, building lines. Hebrew praise often works this way, by recounting what God has done until the heart catches up to the words.",
+    "words": [
+      {
+        "original": "barak",
+        "gloss": "to bless, to kneel",
+        "note": "When David says 'bless the Lord, O my soul,' the verb 'barak' carries the picture of bending the knee. To bless God is to bow before him with everything inside you. The same word is used when God blesses people, so blessing flows both directions, though it means different things each way."
+      },
+      {
+        "original": "chesed",
+        "gloss": "steadfast love, covenant loyalty",
+        "note": "This is one of the great words of the Old Testament. It means a love that keeps its promises, a faithfulness that does not quit. When the psalm says God removes our sins as far as the east is from the west, that distance is measured by his 'chesed,' a love that refuses to hold the record against us."
+      }
+    ],
+    "echoes": [
+      "The phrase 'as far as the east is from the west' is deliberate. North and south have poles and meet, but east and west never do. The image is of a distance with no end, which is how far God puts our sin away from us.",
+      "The psalm describes God as compassionate and gracious, slow to anger, abounding in love, which is a near-quotation of how God revealed his own character to Moses in Exodus. David is preaching God's self-description back to himself.",
+      "The line 'as a father has compassion on his children' would carry unusual weight for any reader who grew up without a father, because it locates the truest fatherhood in God himself.",
+      "The same grass image from Psalm 90 reappears here, our days like grass, but here it is wrapped inside the everlasting love of God, so the brevity is comforted rather than only mourned."
+    ],
+    "misreadings": [
+      "Reading 'bless the Lord, O my soul' as a feeling to wait for rather than a command to obey. David is not reporting a mood. He is ordering his own soul to praise, which tells us that worship can begin as a decision before it becomes a feeling.",
+      "Hearing the removal of sin 'as far as the east is from the west' as a claim that sin does not matter. It is the opposite. Sin matters so much that only a love this strong could carry it that far away. The distance measures the cost, not the carelessness."
+    ],
+    "prompts": [
+      "David talks to his own soul, telling it to bless God and not to forget his benefits. What does it suggest that even a man of faith has to preach to himself like this?",
+      "The psalm pictures God as a father with compassion on his children. If your picture of a father is wounded or absent, how might this verse be inviting you to let God redraw the picture?",
+      "East and west never meet. Why do you think David reached for that exact image, rather than a measurable distance, to describe what God does with forgiven sin?"
+    ]
+  },
   "psalms 110": {
     "flow": "This is a royal psalm and the one most quoted in the New Testament. It opens with a striking line, 'The Lord says to my Lord, sit at my right hand'. The first Lord is God, the second is the king whom David, the writer, calls his own master. So David hears God invite his Lord to share the throne. The psalm then makes a second, stranger move. This king is also a priest, 'a priest forever after the order of Melchizedek', joining two offices that Israel normally kept apart. The rest of the poem describes this priest-king extending his rule and judging the nations. It is short, dense, and reaches higher than any ordinary king could fill.",
     "words": [
@@ -3270,6 +4570,36 @@
       "The psalm repeats the word keep again and again. Why might a tired traveler need to hear the same promise six times rather than once?",
       "It promises God keeps your going out and your coming in, the ordinary edges of a day. What would change if you trusted God with the small thresholds of life and not only the large crises?",
       "If God's keeping does not mean a life free of all harm, what kind of safety is the psalm actually promising, and is that enough for you?"
+    ]
+  },
+  "psalms 130": {
+    "flow": "A lament that climbs out of a pit, one of the seven psalms the church has long called penitential, prayers of repentance. It is also a Song of Ascents, sung by pilgrims walking up to Jerusalem. The whole psalm is built on waiting, and it moves from the depths of one person's cry to hope held out for a whole people.",
+    "words": [
+      {
+        "original": "maamaqim",
+        "gloss": "the depths, deep waters",
+        "note": "The opening word pictures deep water, the kind that drowns. 'Out of the depths I cry to you.' The psalmist is not describing a bad mood but the feeling of going under. Prayer here starts at the bottom, not after the rescue."
+      },
+      {
+        "original": "qavah",
+        "gloss": "to wait, to hope, to look eagerly",
+        "note": "The word for waiting in 'I wait for the Lord, my soul waits' is not passive boredom. It is the taut, watchful waiting of a sentry. The psalmist says his soul waits 'more than watchmen wait for the morning,' the alert longing of someone who knows the light is coming but cannot yet see it."
+      }
+    ],
+    "echoes": [
+      "The hinge of the psalm is the line 'if you, Lord, kept a record of sins, who could stand. But with you there is forgiveness.' The whole hope rests not on the psalmist being innocent but on God being forgiving.",
+      "The image of waiting for the morning more than a watchman does turns a long, sleepless night into a picture of faith, sure of the dawn it cannot yet see.",
+      "Martin Luther loved this psalm and counted it among the ones that teach the heart of the gospel, because it grounds rescue entirely in God's mercy rather than human merit.",
+      "The psalm ends by widening out, 'O Israel, hope in the Lord,' so one person's cry from the depths becomes an invitation for a whole community to wait with him."
+    ],
+    "misreadings": [
+      "Treating the psalm as despair. It begins in the depths, but it is addressed to God from the first word, which means even the cry is already an act of hope. Crying out to God is not the absence of faith but a form of it.",
+      "Reading the forgiveness in the psalm as something earned by the depth of the repentance. The psalmist's hope is not that he is sorry enough but that 'with you there is forgiveness.' The mercy comes from God's character, not from the sinner's performance."
+    ],
+    "prompts": [
+      "The psalmist says that if God kept a record of sins, no one could stand. How does admitting that, rather than defending himself, become the very ground of his hope?",
+      "Waiting like a watchman for the morning is sure of the dawn yet still in the dark. Where in your life are you being asked to wait that way, certain of the light but not yet seeing it?",
+      "The psalm moves from 'I cry' to 'O Israel, hope.' Why might one person's honesty about the depths be exactly what helps a whole community find hope?"
     ]
   },
   "psalms 139": {
@@ -3431,6 +4761,36 @@
       "Why might the poem switch from talking about God to talking to God exactly when the path turns dark?"
     ]
   },
+  "psalms 27": {
+    "flow": "A psalm of confidence that does not pretend the danger is gone. The first half is bold, almost defiant. The second half turns to pleading. Hebrew poetry often holds courage and fear in the same breath, and this psalm lets both speak without resolving them into a slogan.",
+    "words": [
+      {
+        "original": "or",
+        "gloss": "light",
+        "note": "When David says the Lord is my 'or,' light, he means more than brightness. In the Old Testament light stands for life, rescue, and the face of God turned toward you. The opposite is not only darkness but danger and abandonment."
+      },
+      {
+        "original": "yesha",
+        "gloss": "salvation, rescue, deliverance",
+        "note": "The word is concrete. It means being pulled out of a real threat, a battle, an illness, an enemy at the door. The name Yeshua, Jesus, grows from this same root. Salvation here is not first a private feeling but a God who acts to get you out."
+      }
+    ],
+    "echoes": [
+      "The single thing David asks to seek above all is to dwell in the house of the Lord and gaze on his beauty. The whole psalm orbits that one desire, so the fearlessness flows from where his attention rests, not from his circumstances.",
+      "The line 'though my father and mother forsake me, the Lord will take me in' would land with particular weight on a reader who knows what it is to be raised without a parent present.",
+      "The structure moves from triumphant declaration to raw petition, which teaches that confidence and crying out are not opposites in the life of faith.",
+      "The psalm ends not with rescue accomplished but with 'wait for the Lord,' the same posture that runs through the whole book of Psalms."
+    ],
+    "misreadings": [
+      "Hearing 'whom shall I fear' as a denial that David is afraid. He is plainly afraid. Enemies, war, and abandonment fill the psalm. The point is not the absence of fear but the presence of Someone larger than the fear.",
+      "Taking the psalm as a guarantee that the faithful escape every threat. David asks God not to hide his face and not to forsake him, which means he knows that silence and danger are still possible. The promise is presence, not immunity."
+    ],
+    "prompts": [
+      "David lists real enemies and still says he will not fear. How is that different from telling yourself the danger is not real?",
+      "Out of everything he could ask for, David's one request is simply to be near God and to look at his beauty. What does that reveal about what he believes he most needs?",
+      "The psalm ends with 'wait.' Why might waiting be harder than fighting, and what kind of trust does it ask for?"
+    ]
+  },
   "psalms 37": {
     "flow": "Psalm 37 is a long wisdom psalm by an old man, David near the end, steadying readers who are angry that wicked people seem to prosper. The whole psalm is a string of counsels, do not fret, trust, commit, wait, and verse 4 about delighting in the Lord sits in the middle of that pastoral argument. The desires of your heart are promised to those whose delight is already in God himself. The flow shows that delighting in God reshapes what the heart wants, so the promise is not a blank check for cravings but a gift to the changed wanter.",
     "words": [
@@ -3584,6 +4944,36 @@
       "doctrineTitle": "What Is a Human Being?"
     }
   },
+  "psalms 90": {
+    "flow": "A communal prayer headed as a prayer of Moses, the only psalm tied to him. It is the oldest voice in the songbook, and it reads like one. It sets the endless life of God against the brief, fragile span of a human life, then asks God to make that short life count.",
+    "words": [
+      {
+        "original": "manah",
+        "gloss": "to number, to count, to assign",
+        "note": "In 90:12, 'teach us to number our days.' The verb is the plain word for counting. The prayer is not asking for a longer life but for the wisdom that comes from honestly facing how few the days are."
+      },
+      {
+        "original": "olam",
+        "gloss": "everlasting, age without end",
+        "note": "The psalm opens by calling God our dwelling place from olam to olam, from everlasting to everlasting. Set against that endless God, the seventy or eighty years of a human life look like grass that springs up in the morning and is gone by evening."
+      }
+    ],
+    "echoes": [
+      "The image of human life as grass that withers returns in Isaiah and is quoted by Peter, where it sits next to the word of God that stands forever. Our brevity is meant to make God's permanence shine.",
+      "Moses, who watched a whole generation die in the wilderness, is a fitting voice for a psalm about the shortness of life under God's judgment.",
+      "The request to number days is not morbid. It leads directly to a 'heart of wisdom,' so honesty about death is treated as the doorway to living well, not a reason to despair.",
+      "The psalm ends asking God to 'establish the work of our hands,' so the prayer about brief lives closes by asking that brief work be made to last in God's hands."
+    ],
+    "misreadings": [
+      "Reading 'number our days' as a call to anxious calendar-watching or to squeezing more activity into less time. The prayer asks for wisdom, not hurry. Counting the days is meant to slow a person down and sober them, not speed them up.",
+      "Treating the psalm as gloomy resignation. It is honest about death, but it turns and asks God to satisfy us in the morning with his steadfast love and to give us gladness. The clear-eyed view of death is in service of joy, not against it."
+    ],
+    "prompts": [
+      "Moses asks to count his days so that he might gain a wise heart. Why would facing the shortness of life make a person wiser rather than more fearful?",
+      "The psalm sets God's endlessness beside our brief lives. Does that comparison make you feel small in a crushing way, or held in a steady one, and why?",
+      "If you genuinely lived as someone whose days were numbered and known by God, what would you stop doing, and what would you finally start?"
+    ]
+  },
   "psalms 91": {
     "flow": "Psalm 91 is a psalm of confidence in Gods protection, rich with images of refuge, a fortress, a covering of wings, a shield. It speaks in bold poetic absolutes, no harm will come near your tent, because poetry paints with strong colors to teach trust, not to issue a contract. Reading it as Hebrew poetry keeps you from turning a song of refuge into a magic charm against every danger. The same poem was later twisted by the tempter, which is exactly the warning built into how we read it.",
     "words": [
@@ -3688,6 +5078,75 @@
       "note": "This letter, and the seven letters together, raise the question of what the church is and what Jesus expects of a gathered body of believers. Christians read Laodicea as a warning that a community can be busy, wealthy, and confident while having quietly shut Jesus outside its own door. The remedy offered is not a program but repentance and renewed fellowship with him.",
       "doctrine": "church",
       "doctrineTitle": "What Is the Church?"
+    }
+  },
+  "revelation 5": {
+    "flow": "John is caught up into a vision of God's throne room. In God's right hand is a scroll, sealed with seven seals, and it holds the unfolding of God's purpose for history. The crisis is that no one in heaven or earth is found worthy to open it, and John weeps. Then he is told to stop weeping. The Lion of the tribe of Judah has conquered and can open the scroll. But when John turns to look for a Lion, he sees a Lamb, standing as though it had been slain. This is the heart of the chapter. The conquering happens by being slain. The victory of God runs through a sacrifice. Heaven responds with a new song, declaring the Lamb worthy because by his blood he ransomed people from every tribe and tongue and nation. The circle of praise widens until every creature in heaven and earth is singing. Read the chapter for its central swap. The one who wins is not the predator but the Lamb, and worthiness is measured by a death that bought people for God.",
+    "words": [
+      {
+        "original": "arnion (Greek)",
+        "gloss": "lamb, little lamb",
+        "note": "John could have stayed with the Lion image, but he switches to a small, slain Lamb. The word carries tenderness and sacrifice, and it is the way Revelation names Jesus again and again from here on."
+      },
+      {
+        "original": "axios (Greek)",
+        "gloss": "worthy, deserving",
+        "note": "The whole scene turns on this word. No one is worthy until the Lamb. And the reason given for his worthiness is not raw power but his blood, the death that ransomed people for God."
+      }
+    ],
+    "echoes": [
+      "John the Baptist pointing to Jesus and saying behold the Lamb of God who takes away the sin of the world.",
+      "The Passover lamb of Exodus, whose blood marked the people God spared.",
+      "Isaiah 53, where the servant is led like a lamb to the slaughter and bears the sin of many."
+    ],
+    "misreadings": [
+      "Reading Revelation 5 as mostly about predicting future calendar events. The chapter is first a worship scene, anchoring the meaning of history in a slain and reigning Lamb.",
+      "Setting the Lion against the Lamb as if Jesus stops being gentle and becomes only fierce. John sees both in one figure, and the conquering Lion wins by being the slain Lamb, not by abandoning the cross."
+    ],
+    "prompts": [
+      "Heaven calls the Lamb worthy because he was slain, not in spite of it. How does that reshape what you think strength and victory look like?",
+      "The new song praises a Lamb who ransomed people from every tribe and tongue. What does that say about who belongs in God's family?",
+      "John expects a Lion and is shown a Lamb. Where do you expect God to act through power, when he may be acting through sacrifice?"
+    ],
+    "spectrum": {
+      "note": "Revelation 5 answers the question of who Jesus is from the far end of the Bible. The center of heaven's worship is a Lamb who was slain. The same Jesus of Hebrews 1, the radiance of God's glory, is worshiped here as the One whose death makes him worthy.",
+      "doctrine": "christology",
+      "doctrineTitle": "Who Is Jesus?"
+    }
+  },
+  "romans 1": {
+    "flow": "Paul has just said he is eager to preach in Rome and is not ashamed of the gospel, because it is the power of God for salvation to everyone who believes. Hold those two sentences together, because verse 16 and verse 18 are joined by the word 'for.' The gospel reveals God's righteousness, and the wrath of God is revealed against all ungodliness. Salvation and wrath are not two unrelated topics. The good news is good precisely because there is something real to be saved from. Then Paul makes a sweeping claim. What can be known about God is plain, because God has shown it to people through the things he made. His eternal power and divine nature are seen in creation, so that people are 'without excuse.' Read carefully what Paul does and does not say. He does not say creation tells you the gospel, or the cross, or the name of Jesus. He says creation makes God's power and majesty obvious enough that the human problem is not lack of evidence. The problem is suppression. People know, and they push the knowledge down. This is the opening move of a long argument that will not let anyone, religious or pagan, stand outside the need for grace.",
+    "words": [
+      {
+        "original": "katechO (Greek: katecho)",
+        "gloss": "to hold down, to suppress, to restrain",
+        "note": "In verse 18 the ungodly 'suppress' the truth. The word pictures actively pressing something down to keep it from surfacing. Paul's claim is not that people are ignorant of God. It is that they hold a known truth underwater."
+      },
+      {
+        "original": "anapologEtos (Greek: anapologetos)",
+        "gloss": "without excuse, without a defense",
+        "note": "A courtroom word. People are left without a legal defense, not because they were given every detail, but because what they were given was enough to leave them responsible."
+      }
+    ],
+    "echoes": [
+      "Psalm 19:1 to 4, where the heavens declare the glory of God and their voice goes out to all the earth, the same general witness Paul builds on.",
+      "Acts 17:24 to 28, Paul before the Athenians, making this very argument out loud to people who had never read Moses.",
+      "Romans 2:1, the very next move, where Paul turns and says 'you have no excuse, whoever you are, when you judge,' so the indictment swings back on the religious reader too.",
+      "Romans 3:23, the conclusion this argument is driving toward, that all have sinned and fall short."
+    ],
+    "misreadings": [
+      "Using this passage as a club, to prove that everyone who disagrees is just a willful sinner suppressing the obvious, so that no honest doubt is allowed to exist. Paul wrote this to expose the universal human condition, including his own, not to hand believers a verdict to throw at outsiders.",
+      "Using it to dodge, treating 'creation shows God' as if it means everyone everywhere is fine and no gospel preaching is needed. Paul says creation leaves people without excuse, and then he spends the rest of the letter preaching Christ as the only remedy. General revelation raises the question, it does not answer it."
+    ],
+    "prompts": [
+      "Paul says people 'know' God through creation and then 'suppress' that knowledge. Have you ever known something was true and worked to not think about it? What did that feel like?",
+      "Verses 16 and 18 are joined by the word 'for.' Why might the good news only sound like good news once you take the bad news seriously?",
+      "Paul says creation shows God's power and nature but not the gospel itself. What is the difference between knowing there is a God and knowing who he is?"
+    ],
+    "spectrum": {
+      "note": "Christians broadly agree that creation testifies to God, what older writers called general revelation. They differ on how much it can do. Some hold that nature and conscience give real, reliable knowledge of God's existence and power that all people share. Others stress how thoroughly sin distorts our reading of that evidence, so that we need Scripture and the Spirit to see rightly. Romans 1 is usually the first text in that conversation, and it is worth reading slowly before deciding where you land.",
+      "doctrine": "creation",
+      "doctrineTitle": "Creation and Providence"
     }
   },
   "romans 10": {
@@ -3988,6 +5447,35 @@
       "doctrine": "soteriology",
       "doctrineTitle": "How Are We Saved?"
     }
+  },
+  "ruth 1": {
+    "flow": "The book opens in famine and exile. A man from Bethlehem takes his wife Naomi and two sons to Moab, a foreign land with foreign gods, to survive. Then the men die, all three of them, leaving Naomi with two Moabite daughters in law and no future. When Naomi decides to return home empty, she releases the younger women to go back to their own people. Orpah weeps and goes. Ruth refuses. Her words in 1:16 to 17 are not a poem about friendship. They are a vow. She is binding herself to a grieving, bitter old woman with nothing to offer, and to that woman's God, and to that woman's grave. Read the chapter slowly and notice that Ruth is the outsider here. She is the Moabite, the wrong nationality, the one Israel was taught to keep at a distance. The whole book is about what God does through her loyalty.",
+    "words": [
+      {
+        "original": "chesed",
+        "gloss": "steadfast covenant kindness",
+        "note": "The Hebrew word the book keeps circling. It is not warm feeling. It is loyalty that keeps its word when keeping it costs something. Ruth shows chesed to Naomi, and the story slowly reveals that this is what God is like too."
+      },
+      {
+        "original": "dabaq",
+        "gloss": "to cling, to hold fast",
+        "note": "The word used when Ruth clings to Naomi in 1:14. It is the same word used in Genesis 2 when a man holds fast to his wife. Ruth gives Naomi a marriage grade loyalty, and she gives it to Naomi's God in the same breath."
+      }
+    ],
+    "echoes": [
+      "Ruth the Moabite appears by name in the genealogy of Jesus in Matthew 1:5. The outsider who clung to Israel's God becomes a great grandmother of King David and an ancestor of Christ.",
+      "Boaz, who later redeems Ruth and Naomi, is described as a kinsman redeemer, a relative who buys back what was lost. The New Testament uses redemption language for what Jesus does, buying back people who could not save themselves.",
+      "Naomi names herself Mara, meaning bitter, and says the Almighty has dealt bitterly with her. The Bible lets her say it. It does not rush to correct her grief, which is worth noticing."
+    ],
+    "misreadings": [
+      "Ruth 1:16 to 17 gets read at weddings as a romantic pledge between spouses. In the text it is spoken by a widowed daughter in law to her widowed mother in law. The loyalty is real, but it is family loyalty under loss, not romance.",
+      "People treat Ruth as a charming small story about nice people. It is actually about famine, death, foreignness, and a God who works through an outsider's faithfulness when the chosen family has run dry."
+    ],
+    "prompts": [
+      "Ruth had every reason to go home like Orpah did. What do you think she saw in Naomi's God that made her stay when staying made no practical sense?",
+      "Naomi calls herself bitter and blames God for her losses. Does it surprise you that the Bible records her words without scolding her? What might that tell you about how God receives honest grief?",
+      "The story makes a point of calling Ruth a Moabite, an outsider, again and again. Why might it matter that God's plan moves forward through someone the insiders were taught to distrust?"
+    ]
   },
   "zechariah 9": {
     "flow": "Zechariah prophesied after the exile, around 520 years before Jesus, when a small and discouraged community had returned to a ruined Jerusalem. The temple was being rebuilt and the people needed hope that God still had a future for them. Chapter 9 sweeps through judgment on surrounding nations and then announces a coming king to Zion. The surprise is how this king arrives. 'Rejoice greatly, daughter of Zion. Behold, your king is coming to you, righteous and having salvation, humble and mounted on a donkey.' A conquering king of that world would ride a war horse. This one comes on a donkey, the mount of peace, and the next verse says he will cut off the war chariot and the battle bow and speak peace to the nations. To Zechariah's first hearers, weak and surrounded by empires, this promised a different kind of ruler than the strongmen they feared, a king whose power would not look like the power of armies. The chapter speaks to their day with hope and quietly sketches a king the world would not expect.",
