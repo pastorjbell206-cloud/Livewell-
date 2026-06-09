@@ -27,7 +27,16 @@ interface BookMeta {
 }
 interface BibleData { genres: Record<string, string>; books: BookMeta[]; }
 interface Spectrum { note: string; doctrine: string; doctrineTitle: string; }
-interface PassageNote { flow: string; crossRefs: string[]; spectrum?: Spectrum; }
+interface WordStudy { original: string; gloss: string; note: string; }
+interface PassageNote {
+  flow?: string;
+  crossRefs?: string[];
+  spectrum?: Spectrum;
+  words?: WordStudy[];
+  echoes?: string[];
+  misreadings?: string[];
+  prompts?: string[];
+}
 interface Verse { verse: number; text: string; }
 
 const QUESTIONS = [
@@ -228,6 +237,16 @@ export default function PassageContext() {
               </button>
             </div>
           )}
+          {/* Curated, deeply worked passages */}
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", alignItems: "center", marginTop: "14px" }}>
+            <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "rgba(245,240,230,0.6)" }}>Worked in depth:</span>
+            {["Jeremiah 29:11", "Philippians 4:13", "Micah 6:8"].map((r) => (
+              <button key={r} type="button" onClick={() => { setInput(r); resolve(parseReference(r, books), r); }}
+                style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, padding: "6px 14px", borderRadius: "999px", border: "1px solid var(--mustard)", background: "rgba(212,160,23,0.14)", color: "var(--mustard)", cursor: "pointer" }}>
+                {r}
+              </button>
+            ))}
+          </div>
           {error && <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--mustard)", marginTop: "12px" }}>{error}</p>}
         </div>
       </section>
@@ -316,6 +335,21 @@ export default function PassageContext() {
                 </Panel>
               )}
 
+              {/* 5b. KEY WORDS (if noted) */}
+              {note?.words && note.words.length > 0 && (
+                <Panel title="Key words in the original" kicker="Grammar and language">
+                  <ul style={{ paddingTop: "16px", margin: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: "12px" }}>
+                    {note.words.map((w, i) => (
+                      <li key={i} style={{ background: "var(--bone-warm)", borderRadius: "var(--radius-sm)", padding: "12px 14px" }}>
+                        <span style={{ fontFamily: "var(--F)", fontSize: "17px", fontWeight: 500, color: "var(--ink)" }}>{w.original}</span>
+                        <span style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--mustard-text)" }}>{`  ·  ${w.gloss}`}</span>
+                        <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.65, color: "var(--ink-muted)", marginTop: "4px" }}>{w.note}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </Panel>
+              )}
+
               {/* 6. CROSS-REFERENCES (if noted) */}
               {note?.crossRefs && note.crossRefs.length > 0 && (
                 <Panel title="What the rest of Scripture says" kicker="Cross-references">
@@ -327,6 +361,15 @@ export default function PassageContext() {
                       </button>
                     ))}
                   </div>
+                </Panel>
+              )}
+
+              {/* 6b. ECHOES ACROSS SCRIPTURE (if noted) */}
+              {note?.echoes && note.echoes.length > 0 && (
+                <Panel title="Echoes across Scripture" kicker="The same thread elsewhere">
+                  <ul style={{ paddingTop: "16px", margin: 0, paddingLeft: "20px", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.8, color: "var(--ink)" }}>
+                    {note.echoes.map((e, i) => <li key={i}>{e}</li>)}
+                  </ul>
                 </Panel>
               )}
 
@@ -349,8 +392,33 @@ export default function PassageContext() {
                 </Panel>
               )}
 
+              {/* 7b. COMMON MISREADINGS (if noted) */}
+              {note?.misreadings && note.misreadings.length > 0 && (
+                <Panel title="Common misreadings" kicker="Read with care" defaultOpen>
+                  <ul style={{ paddingTop: "16px", margin: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: "12px" }}>
+                    {note.misreadings.map((m, i) => (
+                      <li key={i} style={{ display: "flex", gap: "10px", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)" }}>
+                        <span aria-hidden style={{ color: "var(--mustard-text)", fontWeight: 700, flexShrink: 0 }}>▹</span>
+                        <span>{m}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </Panel>
+              )}
+
+              {/* 7c. CURATED PROMPTS (if noted) — now you do the work */}
+              {note?.prompts && note.prompts.length > 0 && (
+                <div style={{ ...cardStyle, background: "var(--bone-warm)", borderLeft: "3px solid var(--mustard)", padding: "var(--s-4)" }}>
+                  <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>Now you do the work</div>
+                  <h3 style={{ fontFamily: "var(--F)", fontSize: "21px", fontWeight: 500, color: "var(--ink)", marginBottom: "12px" }}>Questions to sit with</h3>
+                  <ol style={{ margin: 0, paddingLeft: "22px", fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.9, color: "var(--ink)" }}>
+                    {note.prompts.map((p, i) => <li key={i}>{p}</li>)}
+                  </ol>
+                </div>
+              )}
+
               {/* 8. QUESTIONS TO ASK */}
-              <Panel title="Questions to carry to any passage" kicker="The habit to build" defaultOpen>
+              <Panel title="Questions to carry to any passage" kicker="The habit to build" defaultOpen={!note?.prompts}>
                 <ol style={{ paddingTop: "16px", margin: 0, paddingLeft: "22px", fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.9, color: "var(--ink)" }}>
                   {QUESTIONS.map((q, i) => <li key={i}>{q}</li>)}
                 </ol>

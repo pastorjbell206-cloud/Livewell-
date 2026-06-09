@@ -58,5 +58,68 @@
     "flow": "The second chapter draws close on the making of the man and the woman, the breath of life, the garden, and the first marriage. Read it alongside chapter one, not against it, as the same story told from ground level.",
     "crossRefs": ["Genesis 1:26-27", "Ecclesiastes 12:7", "Matthew 19:4-6", "1 Corinthians 15:45"],
     "spectrum": { "note": "What it means that God formed the body and breathed in the breath of life touches how we understand body and soul, and the image of God. The doctrine page lays out the main readings.", "doctrine": "anthropology", "doctrineTitle": "What Is a Human Being?" }
+  },
+  "jeremiah 29": {
+    "flow": "The famous words of verse 11 sit inside verses 4 to 14, a letter Jeremiah sends to the people carried off to Babylon. Verse 10 sets the clock: the promise comes after seventy years are completed. The you is plural and corporate, the whole exiled community, not a single modern reader.",
+    "words": [
+      { "original": "shalom (Hebrew)", "gloss": "welfare, peace, wholeness", "note": "Broader than a calm feeling. It means communal flourishing and restored order, here tied to the nation coming home." },
+      { "original": "tiqvah (Hebrew)", "gloss": "hope, literally a cord or a thing waited for", "note": "A concrete expectation of a real coming event, the return from exile, not a vague optimism." }
+    ],
+    "echoes": [
+      "Deuteronomy 30:1 to 5, the promise of return after exile.",
+      "Daniel 9:2, Daniel reads Jeremiah's seventy years and begins to pray.",
+      "2 Chronicles 36:21, the seventy years counted as fulfilled."
+    ],
+    "misreadings": [
+      "Treating it as a personal guarantee of a comfortable life. The promise is corporate and concerns Israel's restoration after judgment.",
+      "Skipping the seventy years of hardship the same passage names. The hope is real, but it arrives on the far side of a long and costly wait."
+    ],
+    "prompts": [
+      "Read verses 4 to 14 in full. Who is the you being addressed, and how does verse 10 set the timeframe?",
+      "What changes if the promise is to a whole community in exile rather than to you as an individual?",
+      "How does the command to seek the welfare of the city in verse 7 reframe what God's plans are for?"
+    ]
+  },
+  "philippians 4": {
+    "flow": "The sentence everyone quotes in verse 13 is defined by the two verses just before it. In verses 11 and 12 Paul says he has learned to be content whether brought low or abounding, whether facing plenty or hunger. The all things is every circumstance, not unlimited achievement.",
+    "words": [
+      { "original": "ischuo (Greek)", "gloss": "to be strong, to have power for", "note": "The strength to endure and bear a situation, the power to withstand, not by itself the power to win." },
+      { "original": "autarkes (Greek)", "gloss": "content, self-sufficient (verse 11)", "note": "A Greek and Stoic ideal of needing nothing from outside the self. Paul keeps the word but moves its source from himself to Christ." }
+    ],
+    "echoes": [
+      "2 Corinthians 12:9 to 10, strength made perfect in weakness.",
+      "1 Timothy 6:6, godliness with contentment is great gain.",
+      "Philippians 4:19, God will supply every need according to his riches."
+    ],
+    "misreadings": [
+      "Using it as a promise of success in sport, business, or any goal a person sets. The setting is endurance through both abundance and need.",
+      "Reading all things as limitless. Paul has just defined it narrowly as every circumstance of plenty or want."
+    ],
+    "prompts": [
+      "Read verses 10 to 13. What two opposite circumstances does Paul name right before this verse?",
+      "How does the meaning shift if the verse is about contentment rather than achievement?",
+      "Where does Paul locate the source of his strength, and how does that differ from learning to stand on your own?"
+    ]
+  },
+  "micah 6": {
+    "flow": "Verse 8 answers a question asked in verses 6 and 7: with what shall I come before the Lord, and will more sacrifice satisfy him? The chapter stages a courtroom where God presses a covenant case against his people. The three demands gather up the whole message of the prophets.",
+    "words": [
+      { "original": "mishpat (Hebrew)", "gloss": "justice, right judgment", "note": "Active, restoring justice, especially toward the weak and the poor, not merely an abstract fairness." },
+      { "original": "chesed (Hebrew)", "gloss": "steadfast love, covenant loyalty, kindness", "note": "Faithful, loyal love inside a relationship, the same word used of God's own covenant commitment to his people." }
+    ],
+    "echoes": [
+      "Hosea 6:6, I desire steadfast love and not sacrifice.",
+      "Amos 5:24, let justice roll down like waters.",
+      "Matthew 23:23, Jesus names justice, mercy, and faithfulness as the weightier matters of the law."
+    ],
+    "misreadings": [
+      "Shrinking it to a slogan of private piety and dropping the public, communal demand for justice the prophet is making.",
+      "Pulling do justice toward one political program and treating that program as the text. The verse names a covenant obligation, while how a society best pursues it is a further and prudential question that honest believers weigh differently."
+    ],
+    "prompts": [
+      "Read verses 6 to 8. What did the people propose to bring, and how does verse 8 answer them?",
+      "How do the three demands hold together, and can a person do justice while neglecting to walk humbly?",
+      "What is the difference between the command to do justice and any particular policy for trying to achieve it?"
+    ]
   }
 }
