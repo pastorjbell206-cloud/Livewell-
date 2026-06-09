@@ -51,6 +51,9 @@ const Family = lazy(() => import("./pages/Family"));
 const FamilyCatechism = lazy(() => import("./pages/FamilyCatechism"));
 const FamilyDevotions = lazy(() => import("./pages/FamilyDevotions"));
 const FamilyReadingPlans = lazy(() => import("./pages/FamilyReadingPlans"));
+const Theology = lazy(() => import("./pages/Theology"));
+const TheologyMethodology = lazy(() => import("./pages/TheologyMethodology"));
+const TheologyDoctrine = lazy(() => import("./pages/TheologyDoctrine"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
 const SermonOutline = lazy(() => import("./pages/tools/SermonOutline"));
@@ -136,6 +139,9 @@ function Router() {
         <Route path="/family/devotions" component={FamilyDevotions} />
         <Route path="/family/reading-plans" component={FamilyReadingPlans} />
         <Route path="/family" component={Family} />
+        <Route path="/theology/how-to-use" component={TheologyMethodology} />
+        <Route path="/theology/doctrine/:slug" component={TheologyDoctrine} />
+        <Route path="/theology" component={Theology} />
         <Route path="/doubt" component={Doubt} />
         <Route path="/start" component={StartHereQuiz} />
         <Route path="/for-families" component={ForFamiliesRedirect} />

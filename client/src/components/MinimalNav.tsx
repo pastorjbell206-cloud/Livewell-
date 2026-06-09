@@ -51,10 +51,12 @@ function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLin
     const subs = subPathwaysForPillar(pillar).filter(
       s => !hasData || (counts[s.label] ?? 0) > 0
     );
-    // Integrated Life leads with the Family Discipleship hub.
+    // Some pillars lead with a curated hub before the article sub-pathways.
     const extras: DropdownItem[] =
       pillar === "Integrated Life"
         ? [{ label: "Family Discipleship", href: "/family", description: "Devotions, teen apologetics, parenting, and marriage — for the whole house." }]
+        : pillar === "Theological Depth"
+        ? [{ label: "The Depth Hub", href: "/theology", description: "Contested doctrines explained fairly — every view in its strongest voice, sorted by how much it matters." }]
         : [];
     if (subs.length === 0) {
       // No populated sub-pathway. Still surface Family for Integrated Life.
