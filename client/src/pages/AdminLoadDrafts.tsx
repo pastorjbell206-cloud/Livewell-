@@ -26,12 +26,24 @@ export default function AdminLoadDrafts() {
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<{ inserted: number; skipped: string[] } | null>(null);
 
+  // Load the personal essays and the SEO article library together.
+  const loadAll = async (): Promise<DraftItem[]> => {
+    const sources = ["/draft-essays.json", "/article-library.json"];
+    const out: DraftItem[] = [];
+    for (const src of sources) {
+      try {
+        const resp = await fetch(src, { cache: "no-store" });
+        if (resp.ok) out.push(...(await resp.json()));
+      } catch { /* a missing source is fine */ }
+    }
+    if (out.length === 0) throw new Error("couldn't load the drafts files");
+    return out;
+  };
+
   // Show the essays for review before loading.
   const preview = async () => {
     try {
-      const resp = await fetch("/draft-essays.json", { cache: "no-store" });
-      if (!resp.ok) throw new Error(`couldn't load the drafts file (${resp.status})`);
-      setItems(await resp.json());
+      setItems(await loadAll());
     } catch (e: any) {
       toast.error(e?.message || "Couldn't load the drafts file.");
     }
@@ -43,17 +55,36 @@ export default function AdminLoadDrafts() {
     try {
       let list = items;
       if (list.length === 0) {
-        const resp = await fetch("/draft-essays.json", { cache: "no-store" });
-        if (!resp.ok) throw new Error(`couldn't load the drafts file (${resp.status})`);
-        list = await resp.json();
+        list = await loadAll();
         setItems(list);
       }
-      const r = await create.mutateAsync({ items: list });
-      if ((r as any).error) throw new Error((r as any).error);
-      setResult({ inserted: r.inserted, skipped: r.skipped });
+      // Insert in small batches (the library can be large; one big request
+      // would cross the function time limit). Idempotent, so retries are safe.
+      const BATCH = 4;
+      let inserted = 0;
+      const skipped: string[] = [];
+      for (let i = 0; i < list.length; i += BATCH) {
+        const chunk = list.slice(i, i + BATCH);
+        let lastErr: any;
+        for (let attempt = 0; attempt < 3; attempt++) {
+          try {
+            const r = await create.mutateAsync({ items: chunk });
+            if ((r as any).error) throw new Error((r as any).error);
+            inserted += r.inserted;
+            skipped.push(...r.skipped);
+            lastErr = null;
+            break;
+          } catch (e: any) {
+            lastErr = e;
+            await new Promise((res) => setTimeout(res, 600 * (attempt + 1)));
+          }
+        }
+        if (lastErr) throw lastErr;
+      }
+      setResult({ inserted, skipped });
       toast.success(
-        r.inserted > 0
-          ? `Loaded ${r.inserted} draft${r.inserted === 1 ? "" : "s"}.`
+        inserted > 0
+          ? `Loaded ${inserted} draft${inserted === 1 ? "" : "s"}.`
           : "Already loaded — nothing new to add."
       );
     } catch (e: any) {
