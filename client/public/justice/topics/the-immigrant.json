@@ -20,6 +20,38 @@
   "whereWeAgree": "Scripture does not leave this to preference. The command to love the stranger, to refuse to oppress the ger, and to care for the foreigner among us is binding on every Christian, and no appeal to order or nation cancels it.",
   "captureLeft": "The left can flatten the question until love means only open arms and any concern for law, security, or the limits of a community is recast as cruelty. It can wave away the real disorder, the strained towns, the exploited labor, and the genuine duties a nation owes its own poor, treating prudence itself as a sin and ending the conversation it claims to want.",
   "captureRight": "The right can take the legitimate language of order and law and use it as a respectable cover for a hardness the gospel forbids. Border becomes an idol, the stranger becomes a category, and 'they broke the law' becomes the verse that conveniently silences every verse about loving the one who is far off.",
+  "captureDetail": {
+    "right": {
+      "label": "Order and security as a cover for hardness toward the stranger",
+      "whatItLooksLike": "The legitimate language of law, sovereignty, and security is stretched until it justifies cruelty toward the person, not just order at the border. The sojourner stops being a face and becomes a category to be managed, deterred, or removed, and the words 'they broke the law' are made to silence every command to love the one who is far off. The hardness comes first and the legal argument is recruited afterward to make it respectable.",
+      "inThePast": "American nativism has a long pedigree that often wore Christian and patriotic dress. The Know Nothing movement of the 1850s organized against Catholic and Irish immigrants as a threat to the republic. The Chinese Exclusion Act of 1882 barred an entire nationality by law, and the 1924 Johnson Reed Act wrote racial quotas into the immigration code. In 1939 the United States turned away the SS St Louis, sending more than 900 Jewish refugees back toward Europe where many later died, a decision defended at the time in the language of orderly procedure and full quotas.",
+      "now": "Contemporary debate has seen rhetoric that describes migrants as an invasion or as people who poison the blood of the country, language that treats a class of human beings as contamination rather than as neighbors. Policies such as family separation under the 2018 zero tolerance directive, the prolonged detention of asylum seekers, and proposals for mass deportation are sometimes defended by Christians chiefly through appeals to law while the command to love the stranger goes unmentioned. The selective forgetting runs deep enough that the same believers who display the Holy Family at Christmas, a refugee household fleeing Herod into Egypt, can speak of actual refugee families as a burden to be repelled.",
+      "named": [
+        "Know Nothing movement (1850s)",
+        "Chinese Exclusion Act (1882)",
+        "Johnson Reed Act (1924)",
+        "SS St Louis turned away (1939)",
+        "Zero tolerance family separation (2018)",
+        "Invasion and poisoning the blood rhetoric",
+        "Mass deportation proposals"
+      ]
+    },
+    "left": {
+      "label": "Compassion as rhetoric and a flattening that dismisses real duties of law and the common good",
+      "whatItLooksLike": "Love of the stranger is flattened until it means only open arms, and any concern for law, security, the strain on towns, or the wages of the native poor is recast as bigotry. The compassion is often mostly spoken, generous in slogan and thin in the actual costly work of sheltering and integrating people. The immigrant becomes less a neighbor to be loved than a constituency to be counted, useful to a coalition.",
+      "inThePast": "The political use of the newcomer is not new. The urban machines of the late 1800s and early 1900s, Tammany Hall chief among them, met arriving immigrants at the dock with favors and turned their gratitude into reliable votes while doing little to lift the conditions they lived in. Reform movements at times treated immigrant communities as raw material for a voting bloc rather than as persons with their own consciences. The pattern of courting the newcomer for the ballot while neglecting the neighbor is older than any current party.",
+      "now": "In current debate the refusal to grant that a nation may justly order its borders has at times shaded into open border or abolish ICE rhetoric that treats any enforcement as inherently unjust. The strain that large and rapid arrivals can place on housing, schools, wages for low income native workers, and the social trust of receiving towns is frequently waved away as a talking point rather than weighed as a real good. Sanctuary declarations and warm statements of welcome have sometimes outrun the willingness to fund shelter, legal aid, and integration, leaving the rhetoric of compassion to do work that costly action did not.",
+      "named": [
+        "Tammany Hall and machine politics",
+        "Immigrants courted as a voting bloc",
+        "Abolish ICE and open border rhetoric",
+        "Enforcement treated as inherently unjust",
+        "Dismissal of effects on low wage native workers",
+        "Symbolic sanctuary without funded support",
+        "Compassion that is mostly spoken"
+      ]
+    }
+  },
   "whereWeDiffer": "How a just and ordered nation should set its laws, its limits, its enforcement, and its mercy is a prudential question, weighing real goods that pull against each other, and faithful Christians who share the binding command to love the stranger will land in different places on the policy. That difference is not the difference between obedience and disobedience.",
   "theCost": "To hold both truths is to lose the comfort of a side. You will be called soft by the people who want only walls and naive by the people who want only welcome. The prophetic word here cuts toward whoever is in the room. If you are sure your politics has already obeyed the command, you have probably not yet heard it. The cost is that the stranger has a face, and once you have seen it you cannot argue about him as if he were a number.",
   "charge": "Love the sojourner. That is settled, and it is not yours to soften. Then argue about the policy in good conscience and in fear, knowing the law you defend will be measured against the love you owe. Do not let your nation tell you whom to fear, and do not let your compassion excuse you from the hard work of a just order. The stranger and the prisoner are still at the gate. They were Christ in Egypt. They may be Christ at your border. You will not be asked what your policy was. You will be asked whether you stopped.",
