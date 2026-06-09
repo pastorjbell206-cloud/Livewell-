@@ -1,0 +1,1422 @@
+{
+  "terms": [
+    {
+      "term": "Adoption",
+      "pronunciation": "",
+      "short": "God taking believers in as his own sons and daughters with full family rights.",
+      "definition": "Adoption is the loving act by which God makes those who trust Christ into his children, not as a legal formality but as a real change of family. You are no longer only a forgiven stranger but a son or daughter who can call God Father. It carries the warmth of belonging and the security of inheritance.",
+      "seeAlso": [
+        "Justification",
+        "Union with Christ",
+        "Regeneration"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Analogy of Faith",
+      "pronunciation": "",
+      "short": "The practice of reading unclear parts of Scripture in light of its clearer parts.",
+      "definition": "The analogy of faith is the simple rule that the Bible interprets itself, so we let plain passages shed light on harder ones. It assumes Scripture does not finally contradict itself because one God stands behind all of it. When a verse puzzles you, you ask how the rest of the Bible already speaks to the same matter.",
+      "seeAlso": [
+        "Hermeneutics",
+        "Exegesis",
+        "Sola Scriptura"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "Apologetics",
+      "pronunciation": "",
+      "short": "The reasoned defense and explanation of the Christian faith.",
+      "definition": "Apologetics is the work of giving honest reasons for what Christians believe and answering objections with both clarity and respect. It is not about winning arguments but about clearing away obstacles so the truth can be heard. The word comes from a Greek term for making a defense, the kind you might offer in a courtroom.",
+      "seeAlso": [
+        "Natural Theology",
+        "Theodicy",
+        "Problem of Evil"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "Apostolic Succession",
+      "pronunciation": "",
+      "short": "The belief that church authority passes down in an unbroken line from the apostles.",
+      "definition": "Apostolic succession is the idea that the authority Christ gave his apostles has been handed on through the laying on of hands from one generation of bishops to the next. Roman Catholic and Orthodox churches hold this strongly, tying it to valid sacraments. Many Protestants disagree, arguing the true succession is faithfulness to apostolic teaching rather than a chain of ordinations.",
+      "seeAlso": [
+        "Church",
+        "Marks of the Church",
+        "Sacrament"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Aseity",
+      "pronunciation": "uh-SAY-ih-tee",
+      "short": "God's quality of existing entirely from himself, needing nothing.",
+      "definition": "Aseity means God depends on nothing outside himself for his life, his being, or his happiness. He was not made, he is not sustained by anyone, and he would lack nothing if creation had never existed. This is what we mean when we say God is the source of everything and is himself uncaused.",
+      "seeAlso": [
+        "Immutability",
+        "Sovereignty",
+        "Creation Ex Nihilo"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Assurance",
+      "pronunciation": "",
+      "short": "The settled confidence that one truly belongs to God and is saved.",
+      "definition": "Assurance is the inner certainty a believer can have that they are genuinely God's child and will be kept to the end. It rests on Christ's finished work, the promises of Scripture, and the witness of the Spirit in a changed life. Christians have disagreed over how strong this confidence normally is, but most agree it is a gift to be sought rather than presumed.",
+      "seeAlso": [
+        "Perseverance",
+        "Faith",
+        "Holy Spirit"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Atonement",
+      "pronunciation": "",
+      "short": "The way Christ's death deals with sin and restores us to God.",
+      "definition": "Atonement is the reconciling work by which Jesus, through his death, removes the barrier of sin between God and people. The word in English carries the sense of at-one-ment, of being made one again. Christians describe how it works in several ways, including Christ bearing the penalty we deserved and conquering the powers that held us.",
+      "seeAlso": [
+        "Propitiation",
+        "Expiation",
+        "Redemption",
+        "Reconciliation"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Baptism",
+      "pronunciation": "",
+      "short": "The sign of washing and new beginning that marks entry into the church.",
+      "definition": "Baptism is the act of applying water in the name of the Father, Son, and Holy Spirit, marking a person as belonging to Christ and his people. It pictures cleansing from sin and union with Jesus in his death and resurrection. Churches differ on whether it is given to believers only or also to their infants, and on how much grace the act itself conveys.",
+      "seeAlso": [
+        "Sacrament",
+        "Ordinance",
+        "Regeneration",
+        "Means of Grace"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Biblical Theology",
+      "pronunciation": "",
+      "short": "The study of how God's revelation unfolds across the Bible's own story.",
+      "definition": "Biblical theology follows the storyline of Scripture from beginning to end, tracing how themes like covenant, kingdom, and redemption grow from Genesis to Revelation. Rather than arranging beliefs by topic, it asks how each part fits the developing plan that comes to a head in Christ. It keeps us reading the Bible as one connected account rather than scattered proof texts.",
+      "seeAlso": [
+        "Systematic Theology",
+        "Typology",
+        "Covenant"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "Canon",
+      "pronunciation": "",
+      "short": "The collection of books the church recognizes as God's authoritative Scripture.",
+      "definition": "Canon comes from a word meaning measuring rod, and it names the list of books accepted as the rule for faith and life. The church did not create these books but came to recognize the writings that bore the marks of God's voice. Protestants, Catholics, and Orthodox agree on the core but differ over a handful of Old Testament books.",
+      "seeAlso": [
+        "Inspiration",
+        "Revelation",
+        "Inerrancy"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "Cessationism",
+      "pronunciation": "",
+      "short": "The view that certain miraculous gifts ended with the apostolic age.",
+      "definition": "Cessationism holds that gifts such as prophecy, tongues, and healing served to confirm the first preaching of the gospel and were not meant to continue once the New Testament was complete. Those who hold it still believe God can heal and act, but doubt that the dramatic sign gifts operate as they once did. It stands opposite continuationism, and sincere Christians land on both sides.",
+      "seeAlso": [
+        "Continuationism",
+        "Charismata",
+        "Gifts of the Spirit"
+      ],
+      "doctrine": "holy-spirit"
+    },
+    {
+      "term": "Charismata",
+      "pronunciation": "kar-IZ-mah-tah",
+      "short": "The grace-gifts the Holy Spirit gives believers to serve the church.",
+      "definition": "Charismata is the plural of a Greek word meaning gift of grace, and it names the abilities the Spirit distributes for the good of the whole body. These include teaching, mercy, leadership, and in some lists more dramatic gifts like prophecy and healing. The point of every gift is service to others, never personal display.",
+      "seeAlso": [
+        "Gifts of the Spirit",
+        "Holy Spirit",
+        "Continuationism",
+        "Cessationism"
+      ],
+      "doctrine": "holy-spirit"
+    },
+    {
+      "term": "Church",
+      "pronunciation": "",
+      "short": "The whole people God has called to himself through Christ.",
+      "definition": "The church is not first a building or an organization but the gathered people who belong to Jesus across every age and place. The study of it is called ecclesiology. Scripture pictures it as a body, a family, a temple, and a bride, each image showing a different angle of how God binds his people together and to himself.",
+      "seeAlso": [
+        "Marks of the Church",
+        "Communion of Saints",
+        "Sacrament"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Church Fathers",
+      "pronunciation": "",
+      "short": "The influential Christian teachers of the church's early centuries.",
+      "definition": "The church fathers are the pastors, writers, and thinkers of roughly the first six centuries who shaped how the church understood the faith. Figures like Augustine, Athanasius, and the Cappadocians wrote against errors and helped clarify the Trinity and the person of Christ. They are not infallible, but they are trusted witnesses standing close to the apostles in time.",
+      "seeAlso": [
+        "Councils",
+        "Creeds",
+        "Orthodoxy"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Common Grace",
+      "pronunciation": "",
+      "short": "The kindness God shows to all people, believers and not alike.",
+      "definition": "Common grace is the wide goodness God pours out on everyone, sending rain on the just and the unjust and restraining the full ruin of sin. It is why people who do not know God can still love their children, make beautiful art, and act with decency. It is not saving grace, but it is real grace and a reason for gratitude.",
+      "seeAlso": [
+        "Grace",
+        "Providence",
+        "Total Depravity"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Communion of Saints",
+      "pronunciation": "",
+      "short": "The shared life and fellowship of all God's people across time.",
+      "definition": "The communion of saints is the truth that everyone united to Christ is united to one another, living and departed, near and far. It means your faith is never a solitary thing but part of a great company. Traditions differ on whether this includes asking departed believers to pray, but all affirm the deep bond among those who belong to Jesus.",
+      "seeAlso": [
+        "Church",
+        "Union with Christ",
+        "Intermediate State"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Concupiscence",
+      "pronunciation": "kon-KEW-pih-sense",
+      "short": "The disordered desire within us that pulls toward sin.",
+      "definition": "Concupiscence names the inward tug toward what is wrong, the bent of our desires after the fall. It is the pull you feel before you ever choose to act. Christians disagree on whether this disordered desire is itself sin or only the tinder for sin, with Catholics and Protestants drawing the line in different places.",
+      "seeAlso": [
+        "Original Sin",
+        "Total Depravity",
+        "The Fall"
+      ],
+      "doctrine": "sin"
+    },
+    {
+      "term": "Continuationism",
+      "pronunciation": "",
+      "short": "The view that all the Spirit's gifts continue today.",
+      "definition": "Continuationism holds that the gifts described in the New Testament, including prophecy, tongues, and healing, remain available to the church in every age. Those who hold it point to passages that give no clear expiration date for these gifts. It stands opposite cessationism, and the difference, while real, need not divide brothers and sisters in Christ.",
+      "seeAlso": [
+        "Cessationism",
+        "Charismata",
+        "Gifts of the Spirit"
+      ],
+      "doctrine": "holy-spirit"
+    },
+    {
+      "term": "Councils",
+      "pronunciation": "",
+      "short": "Major gatherings of church leaders that settled key questions of doctrine.",
+      "definition": "Councils were assemblies where bishops and teachers met to address disputes and state the faith clearly, especially in the early centuries. Gatherings like Nicaea and Chalcedon gave us lasting language about the Trinity and the person of Christ. Their decisions carry great weight because they reflect the church thinking together under Scripture.",
+      "seeAlso": [
+        "Creeds",
+        "Church Fathers",
+        "Orthodoxy",
+        "Heresy"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Covenant",
+      "pronunciation": "",
+      "short": "A binding relationship God establishes with his people by solemn promise.",
+      "definition": "A covenant is a committed bond with terms and promises, the way God chooses to relate to his people throughout the Bible. From Noah to Abraham to Moses to David, and finally in Christ, God binds himself to bless and to keep. The covenant is more like a marriage than a business deal, rooted in faithfulness rather than mere contract.",
+      "seeAlso": [
+        "New Covenant",
+        "Dispensation",
+        "Covenant Theology"
+      ],
+      "doctrine": "covenant-frameworks"
+    },
+    {
+      "term": "Covenant Theology",
+      "pronunciation": "",
+      "short": "A framework that reads the Bible through God's unfolding covenants.",
+      "definition": "Covenant theology organizes the whole biblical story around a few overarching covenants, often a covenant of works and a covenant of grace. It stresses the unity of God's plan and the continuity between Israel and the church. It is one of the main frameworks for fitting the Bible together, standing alongside dispensationalism.",
+      "seeAlso": [
+        "Dispensation",
+        "Covenant",
+        "Supersessionism"
+      ],
+      "doctrine": "covenant-frameworks"
+    },
+    {
+      "term": "Creation Ex Nihilo",
+      "pronunciation": "eks NEE-hih-loh",
+      "short": "God's making of everything out of nothing.",
+      "definition": "Creation ex nihilo is the Latin phrase for out of nothing, naming the truth that God made the universe without using any pre-existing material. He simply spoke, and what was not, came to be. This sets the Christian account apart from stories where a god merely shapes matter that was already there, and it underlines God's complete freedom and power.",
+      "seeAlso": [
+        "Aseity",
+        "Sovereignty",
+        "Providence"
+      ],
+      "doctrine": "creation"
+    },
+    {
+      "term": "Creeds",
+      "pronunciation": "",
+      "short": "Short, agreed statements of core Christian belief.",
+      "definition": "Creeds are compact summaries of the faith, from the Latin credo, meaning I believe. The Apostles' Creed and Nicene Creed gather the essentials about God, Christ, and salvation into words the church confesses together. They are guardrails, not replacements for Scripture, helping each generation hold the same faith once delivered.",
+      "seeAlso": [
+        "Councils",
+        "Orthodoxy",
+        "Heresy",
+        "Church Fathers"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Dispensation",
+      "pronunciation": "",
+      "short": "A distinct period or arrangement in how God deals with people.",
+      "definition": "A dispensation is a particular way God orders his relationship with humanity during a stretch of history, such as the age of law or the age of grace. Dispensationalism is a framework that divides the biblical story into such eras and tends to keep Israel and the church distinct. It is one of the two main systems for reading the Bible's overall shape.",
+      "seeAlso": [
+        "Covenant Theology",
+        "Covenant",
+        "Rapture",
+        "Supersessionism"
+      ],
+      "doctrine": "covenant-frameworks"
+    },
+    {
+      "term": "Doctrinal Triage",
+      "pronunciation": "",
+      "short": "Sorting beliefs by how central they are to the faith.",
+      "definition": "Doctrinal triage is the wise practice of ranking teachings by importance, the way a hospital sorts patients by urgency. Some doctrines are essential to the gospel, some shape how churches gather, and some are matters where faithful believers may differ. It helps us fight for what is central without dividing over every disagreement.",
+      "seeAlso": [
+        "Orthodoxy",
+        "Heresy",
+        "Creeds"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "Ecclesiology",
+      "pronunciation": "eh-klee-zee-OL-oh-jee",
+      "short": "The branch of theology that studies the church.",
+      "definition": "Ecclesiology is the area of theology concerned with the nature, structure, and mission of the church. It asks what the church is, how it should be led, what its worship and sacraments mean, and how it relates to the world. The word comes from the Greek ekklesia, meaning the called-out assembly.",
+      "seeAlso": [
+        "Church",
+        "Marks of the Church",
+        "Sacrament"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Eisegesis",
+      "pronunciation": "EYE-suh-jee-sis",
+      "short": "Reading your own meaning into a text rather than drawing it out.",
+      "definition": "Eisegesis is the mistake of forcing a passage to say what you already wanted it to say, importing ideas it does not contain. It is the opposite of exegesis, which listens to what the text actually means. We all drift toward it, which is why honest study asks first what the author intended rather than what suits us.",
+      "seeAlso": [
+        "Exegesis",
+        "Hermeneutics",
+        "Analogy of Faith"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "Election",
+      "pronunciation": "",
+      "short": "God's choosing of people for salvation according to his purpose.",
+      "definition": "Election is the biblical teaching that God sets his saving love on people before they could earn it, choosing them for himself. It is meant to humble us and assure us, since our standing rests on his choice rather than our merit. Christians differ over whether this choice is based on God's foreknowledge of our faith or is the free decision behind our faith.",
+      "seeAlso": [
+        "Predestination",
+        "Foreknowledge",
+        "Monergism",
+        "Grace"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Eschatology",
+      "pronunciation": "es-kuh-TOL-oh-jee",
+      "short": "The study of last things and how God brings history to its end.",
+      "definition": "Eschatology is the part of theology concerned with the future God has promised, including Christ's return, the resurrection, judgment, and the new creation. The word comes from the Greek for last things. It is not only about the far horizon but about the hope that shapes how we live now.",
+      "seeAlso": [
+        "Millennium",
+        "Rapture",
+        "Resurrection",
+        "Intermediate State"
+      ],
+      "doctrine": "last-things"
+    },
+    {
+      "term": "Essence (Ousia)",
+      "pronunciation": "OO-see-ah",
+      "short": "The one divine nature shared fully by Father, Son, and Spirit.",
+      "definition": "Essence, from the Greek ousia, names what God is, the single divine being that the three persons of the Trinity completely share. When we say the Father, Son, and Spirit are one in essence, we mean there is one God, not three. This word does the heavy lifting in the church's careful confession that God is one being in three persons.",
+      "seeAlso": [
+        "Person (Hypostasis)",
+        "Homoousios",
+        "The Trinity"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Eternal Generation",
+      "pronunciation": "",
+      "short": "The Son's eternal relation of being from the Father.",
+      "definition": "Eternal generation describes how the Son is eternally from the Father, called begotten, yet without ever beginning to exist. There was never a time when the Father was without his Son. It is a relation within God, not an event, and it guards both the Son's full deity and his distinctness as a person.",
+      "seeAlso": [
+        "Procession",
+        "The Trinity",
+        "Homoousios",
+        "Person (Hypostasis)"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Exegesis",
+      "pronunciation": "EK-suh-jee-sis",
+      "short": "Carefully drawing out the meaning a biblical text actually carries.",
+      "definition": "Exegesis is the disciplined work of reading a passage on its own terms, asking what the author meant for the first readers to understand. It pays attention to words, context, history, and genre rather than to our preferences. Done well, it is an act of humility, letting the text speak before we do.",
+      "seeAlso": [
+        "Eisegesis",
+        "Hermeneutics",
+        "Biblical Theology"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "Expiation",
+      "pronunciation": "ek-spee-AY-shun",
+      "short": "The removal or covering of sin through Christ's sacrifice.",
+      "definition": "Expiation focuses on what Christ's death does to sin itself, cleansing and taking it away so it no longer stands against us. It is closely tied to propitiation, which focuses on turning aside God's wrath. The two belong together, since the same death both removes our guilt and satisfies God's justice.",
+      "seeAlso": [
+        "Propitiation",
+        "Atonement",
+        "Redemption"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Faith",
+      "pronunciation": "",
+      "short": "Trust in God and in Christ that receives what God freely gives.",
+      "definition": "Faith is more than believing facts, though it includes them. It is the trust by which we rest our whole lives on Christ, receiving forgiveness and welcome we could never earn. The Bible pictures it as the empty hand that takes hold of God's promise, not a work we offer but a gift we accept.",
+      "seeAlso": [
+        "Repentance",
+        "Justification",
+        "Grace",
+        "Sola Fide"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Federal Headship",
+      "pronunciation": "",
+      "short": "The idea that one person represents many before God.",
+      "definition": "Federal headship is the teaching that Adam stood as the representative of all humanity, so his fall affected everyone, while Christ stands as the representative of his people, so his obedience counts for them. The word federal comes from a Latin term for covenant. It is the framework behind both original sin and the way Christ's righteousness becomes ours.",
+      "seeAlso": [
+        "Original Sin",
+        "Imputation",
+        "Union with Christ"
+      ],
+      "doctrine": "anthropology"
+    },
+    {
+      "term": "Filioque",
+      "pronunciation": "fee-lee-OH-kway",
+      "short": "The disputed phrase that the Spirit proceeds from the Father and the Son.",
+      "definition": "Filioque is Latin for and the Son, a clause the Western church added to the Nicene Creed to say the Spirit proceeds from the Father and the Son. The Eastern church rejected this addition, both for its content and because it was added without a shared council. The disagreement remains one of the deepest divisions between East and West.",
+      "seeAlso": [
+        "Procession",
+        "The Trinity",
+        "Holy Spirit",
+        "Creeds"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Foreknowledge",
+      "pronunciation": "",
+      "short": "God's knowing of all things, including the future, before they happen.",
+      "definition": "Foreknowledge means God knows everything that will come to pass, with nothing hidden from him in advance. When the Bible speaks of God foreknowing his people, some take it to mean he foresaw their faith, while others take it to mean he set his love on them beforehand. The word is at the heart of debates over election and human freedom.",
+      "seeAlso": [
+        "Predestination",
+        "Election",
+        "Omniscience",
+        "Providence"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "General Revelation",
+      "pronunciation": "",
+      "short": "What God shows of himself to all people through creation and conscience.",
+      "definition": "General revelation is the knowledge of God available to everyone through the world he made and the moral sense written on the heart. The skies declare his power, and conscience hints at his law. It is enough to leave us without excuse but not enough by itself to save, which is why God also gives special revelation.",
+      "seeAlso": [
+        "Special Revelation",
+        "Revelation",
+        "Natural Theology"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "Gifts of the Spirit",
+      "pronunciation": "",
+      "short": "Abilities the Holy Spirit gives believers to build up the church.",
+      "definition": "The gifts of the Spirit are the varied capacities God grants his people, such as teaching, encouragement, service, generosity, and leadership, along with gifts some call more dramatic. Each one is given not for personal status but for the good of the whole body. They differ from natural talents in that the Spirit gives and directs them for God's purposes.",
+      "seeAlso": [
+        "Charismata",
+        "Holy Spirit",
+        "Cessationism",
+        "Continuationism"
+      ],
+      "doctrine": "holy-spirit"
+    },
+    {
+      "term": "Glorification",
+      "pronunciation": "",
+      "short": "The final stage of salvation when God fully renews body and soul.",
+      "definition": "Glorification is the completion of God's saving work, when he raises and perfects his people so that sin is gone for good and we are like Christ. It includes the resurrection of the body and the end of every sorrow. It is the sure hope toward which justification and sanctification are heading.",
+      "seeAlso": [
+        "Sanctification",
+        "Resurrection",
+        "Ordo Salutis"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Grace",
+      "pronunciation": "",
+      "short": "God's unearned favor and kindness toward those who deserve the opposite.",
+      "definition": "Grace is God giving freely what we could never earn and would never deserve, above all his forgiveness and welcome in Christ. It is the heartbeat of the gospel, the opposite of a wage or a reward. Everything in the Christian life, from first faith to final glory, flows from this generous love.",
+      "seeAlso": [
+        "Mercy",
+        "Justification",
+        "Sola Gratia",
+        "Common Grace"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Heresy",
+      "pronunciation": "HAIR-uh-see",
+      "short": "A teaching that denies a core truth of the Christian faith.",
+      "definition": "Heresy is not just any error but a serious departure from an essential doctrine, the kind that damages the gospel itself. Denying that Christ is fully God or fully man would be heresy. The word matters because some disagreements are family differences while others cut at the root, and confusing the two does real harm.",
+      "seeAlso": [
+        "Orthodoxy",
+        "Creeds",
+        "Councils",
+        "Doctrinal Triage"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Hermeneutics",
+      "pronunciation": "her-meh-NEW-tiks",
+      "short": "The principles and methods for rightly interpreting the Bible.",
+      "definition": "Hermeneutics is the set of guidelines that help us read Scripture well, accounting for context, genre, history, and the unity of the whole. It is the bridge between the ancient text and our understanding today. Good hermeneutics keeps us from twisting the Bible to fit our wishes and helps us hear what God actually said.",
+      "seeAlso": [
+        "Exegesis",
+        "Eisegesis",
+        "Analogy of Faith"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "Holy Spirit",
+      "pronunciation": "",
+      "short": "The third person of the Trinity, fully God, who gives and sustains life in Christ.",
+      "definition": "The Holy Spirit is God himself, the third person of the Trinity, equal with the Father and the Son. He brings people to new birth, dwells in believers, gives gifts, and forms Christ's character in us. He is not a force or a feeling but a person who can be grieved, who comforts, and who guides.",
+      "seeAlso": [
+        "The Trinity",
+        "Regeneration",
+        "Gifts of the Spirit",
+        "Procession"
+      ],
+      "doctrine": "holy-spirit"
+    },
+    {
+      "term": "Homoousios",
+      "pronunciation": "ho-moh-OO-see-os",
+      "short": "The term meaning the Son is of the same essence as the Father.",
+      "definition": "Homoousios is the Greek word the Council of Nicaea chose to say the Son shares the very same divine being as the Father, not merely a similar one. It rules out any idea that the Son is a lesser, created god. A single letter separates it from a word meaning only similar, and the church insisted on the stronger term to guard Christ's full deity.",
+      "seeAlso": [
+        "Essence (Ousia)",
+        "The Trinity",
+        "Eternal Generation",
+        "Councils"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Hypostatic Union",
+      "pronunciation": "high-poh-STAT-ik",
+      "short": "The joining of full deity and full humanity in the one person of Christ.",
+      "definition": "The hypostatic union is the truth that in Jesus, two complete natures, divine and human, are united in a single person without mixing or dividing them. He is not half God and half man, nor God wearing a human costume, but truly both at once. This careful confession, stated at Chalcedon, protects everything the gospel depends on about who Jesus is.",
+      "seeAlso": [
+        "Incarnation",
+        "Person (Hypostasis)",
+        "Kenosis",
+        "Councils"
+      ],
+      "doctrine": "christology"
+    },
+    {
+      "term": "Imago Dei",
+      "pronunciation": "ih-MAH-go DAY-ee",
+      "short": "The image of God in which every human being is made.",
+      "definition": "Imago Dei is Latin for image of God, the truth that every person is made to reflect God in a way nothing else in creation does. It is the ground of human dignity, the same in the unborn and the elderly, the powerful and the forgotten. Christians discuss exactly what the image consists of, but all agree it gives every life its worth.",
+      "seeAlso": [
+        "The Fall",
+        "Original Sin",
+        "Creation Ex Nihilo"
+      ],
+      "doctrine": "anthropology"
+    },
+    {
+      "term": "Immutability",
+      "pronunciation": "ih-mew-tuh-BIL-ih-tee",
+      "short": "God's quality of never changing in his being, character, or purpose.",
+      "definition": "Immutability means God does not change. His nature, his promises, and his purposes are utterly steady, so he cannot grow wiser, weaker, or less faithful. This does not make him cold or distant but supremely dependable, the same yesterday, today, and forever. It is the reason his promises can be trusted absolutely.",
+      "seeAlso": [
+        "Aseity",
+        "Impassibility",
+        "Sovereignty"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Impassibility",
+      "pronunciation": "im-pass-ih-BIL-ih-tee",
+      "short": "The teaching that God is not overcome or controlled by passions.",
+      "definition": "Impassibility holds that God is never swept along by emotions the way we are, never thrown off balance or made to suffer against his will. It does not mean God is unfeeling, since Scripture speaks often of his love and anger. Christians debate how to hold his real compassion together with his unshakable steadiness, especially in light of the cross.",
+      "seeAlso": [
+        "Immutability",
+        "Aseity",
+        "Incarnation"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Imputation",
+      "pronunciation": "im-pew-TAY-shun",
+      "short": "The crediting of one person's standing to another's account.",
+      "definition": "Imputation is the legal-sounding word for how God credits Christ's righteousness to believers and counted our sin to Christ at the cross. It is like a transfer in the books of heaven, where what is his becomes ours and what was ours was laid on him. This is the engine of justification, the reason God can declare the guilty righteous.",
+      "seeAlso": [
+        "Justification",
+        "Federal Headship",
+        "Atonement"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Incarnation",
+      "pronunciation": "",
+      "short": "God the Son becoming a real human being in Jesus Christ.",
+      "definition": "The incarnation is the staggering truth that the eternal Son of God took on real human flesh and was born as Jesus of Nazareth. He did not stop being God but added a complete human nature, entering our world from the inside. It is the hinge of the Christian faith, the moment the Maker stepped into the made.",
+      "seeAlso": [
+        "Hypostatic Union",
+        "Kenosis",
+        "Theotokos",
+        "Christology"
+      ],
+      "doctrine": "christology"
+    },
+    {
+      "term": "Inerrancy",
+      "pronunciation": "in-AIR-an-see",
+      "short": "The teaching that Scripture, rightly understood, tells no falsehood.",
+      "definition": "Inerrancy holds that the Bible, in everything it actually affirms, is true and without error. It takes account of how the writers spoke, using ordinary description and varied styles rather than modern precision. Christians differ over the term and its limits, with some preferring infallibility, but the shared conviction is that we can trust what Scripture teaches.",
+      "seeAlso": [
+        "Infallibility",
+        "Inspiration",
+        "Revelation"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "Infallibility",
+      "pronunciation": "",
+      "short": "The teaching that Scripture will not fail or mislead in what it intends.",
+      "definition": "Infallibility means the Bible cannot fail to accomplish its purpose and will not lead us astray in matters of faith and life. Some use it as a slightly broader or gentler word than inerrancy, focusing on Scripture's trustworthiness for salvation rather than every incidental detail. The two terms overlap, and different traditions weigh them differently.",
+      "seeAlso": [
+        "Inerrancy",
+        "Inspiration",
+        "Canon"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "Inspiration",
+      "pronunciation": "",
+      "short": "The Spirit's work in moving human writers to produce God's Word.",
+      "definition": "Inspiration is the way the Holy Spirit guided the human authors of Scripture so that their words are also God's words. It did not erase their personalities or styles but worked through them, so the Bible is fully human and fully from God. The image Scripture uses is of being breathed out by God.",
+      "seeAlso": [
+        "Revelation",
+        "Canon",
+        "Inerrancy"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "Intermediate State",
+      "pronunciation": "",
+      "short": "The condition of the dead between death and the resurrection.",
+      "definition": "The intermediate state is what happens to a person between dying and the final resurrection of the body. Scripture speaks of believers being with Christ at death, conscious and at rest, while awaiting the renewal of all things. It is real comfort, though it is not the end of the story, since the body is yet to be raised.",
+      "seeAlso": [
+        "Resurrection",
+        "Eschatology",
+        "Glorification",
+        "Communion of Saints"
+      ],
+      "doctrine": "last-things"
+    },
+    {
+      "term": "Justification",
+      "pronunciation": "",
+      "short": "God declaring a sinner righteous on the basis of Christ.",
+      "definition": "Justification is God's verdict that a guilty person is now counted righteous, not because of their goodness but because of Christ received by faith. It is a courtroom word, a once-for-all declaration rather than a slow improvement. This was the central recovery of the Reformation, that we are accepted by faith alone and not by our works.",
+      "seeAlso": [
+        "Imputation",
+        "Sanctification",
+        "Sola Fide",
+        "Faith"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Kenosis",
+      "pronunciation": "keh-NO-sis",
+      "short": "The self-emptying of Christ in taking on humble human form.",
+      "definition": "Kenosis comes from a Greek word for emptying and describes how the Son set aside his glory and privileges to become a servant in the incarnation. He did not give up being God but veiled his majesty and embraced weakness, obedience, and death. Christians debate exactly what he laid aside, but all see in it a love that stoops unimaginably low.",
+      "seeAlso": [
+        "Incarnation",
+        "Hypostatic Union",
+        "Christology"
+      ],
+      "doctrine": "christology"
+    },
+    {
+      "term": "Lord's Supper",
+      "pronunciation": "",
+      "short": "The meal of bread and wine remembering and sharing in Christ's death.",
+      "definition": "The Lord's Supper, also called Communion or the Eucharist, is the meal Jesus gave his church, using bread and wine to point to his body and blood given for us. It looks back to the cross, draws us near to Christ now, and looks ahead to his return. Churches differ over what exactly happens in the meal, especially over the sense in which Christ is present.",
+      "seeAlso": [
+        "Sacrament",
+        "Real Presence",
+        "Transubstantiation",
+        "Means of Grace"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Marks of the Church",
+      "pronunciation": "",
+      "short": "The signs by which a true church can be recognized.",
+      "definition": "The marks of the church are the features that show where Christ's true people gather, classically the faithful preaching of the Word and the right administration of the sacraments, with many adding loving discipline. These help distinguish a genuine church from a mere club or a corrupt counterpart. The older creeds also speak of the church as one, holy, catholic, and apostolic.",
+      "seeAlso": [
+        "Church",
+        "Sacrament",
+        "Apostolic Succession"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Means of Grace",
+      "pronunciation": "",
+      "short": "The ordinary channels through which God strengthens his people.",
+      "definition": "The means of grace are the regular ways God meets, feeds, and grows believers, chiefly his Word, the sacraments, and prayer. They are not magic, but they are the appointed places where God reliably works. Traditions weigh them differently, yet all agree that the Christian life is nourished through these gifts rather than by our own striving.",
+      "seeAlso": [
+        "Sacrament",
+        "Baptism",
+        "Lord's Supper",
+        "Sanctification"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Mercy",
+      "pronunciation": "",
+      "short": "God withholding the punishment we deserve and meeting us with compassion.",
+      "definition": "Mercy is God not giving us the judgment our sin has earned, but treating us with pity and kindness. If grace is receiving good we do not deserve, mercy is being spared the harm we do deserve. Scripture returns again and again to God being rich in mercy, slow to anger, and abounding in steadfast love.",
+      "seeAlso": [
+        "Grace",
+        "Propitiation",
+        "Reconciliation"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Millennium",
+      "pronunciation": "",
+      "short": "The thousand-year reign of Christ mentioned in Revelation.",
+      "definition": "The millennium refers to the thousand years spoken of in Revelation when Christ reigns and Satan is bound. Christians read it differently, with some expecting a literal future reign after Christ returns, some seeing it as the present age of the church, and some expecting the gospel to advance before he returns. These views are held by faithful believers and are not tests of orthodoxy.",
+      "seeAlso": [
+        "Eschatology",
+        "Rapture",
+        "Resurrection"
+      ],
+      "doctrine": "last-things"
+    },
+    {
+      "term": "Monergism",
+      "pronunciation": "MON-er-jiz-um",
+      "short": "The view that God alone works to bring about a person's new birth.",
+      "definition": "Monergism teaches that salvation, especially the new birth, is the work of God alone, not a cooperation between God and the sinner. The dead cannot raise themselves, so God must act first to make us alive. It stands opposite synergism, and the difference shapes how one understands grace, the will, and conversion.",
+      "seeAlso": [
+        "Synergism",
+        "Regeneration",
+        "Prevenient Grace",
+        "Election"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Monotheism",
+      "pronunciation": "MON-oh-thee-iz-um",
+      "short": "The belief that there is only one God.",
+      "definition": "Monotheism is the conviction that one true God exists, not many gods. The Bible insists on this from beginning to end, marking out Israel and the church among the nations. Christian monotheism is unusual in confessing this one God as three persons, which is the doctrine of the Trinity rather than a retreat from oneness.",
+      "seeAlso": [
+        "The Trinity",
+        "Aseity",
+        "Sovereignty"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Natural Theology",
+      "pronunciation": "",
+      "short": "What can be known of God through reason and the created world.",
+      "definition": "Natural theology is the attempt to learn about God from creation and human reason apart from special revelation. It might argue from the order of the world to a designer or from morality to a lawgiver. Christians value it differently, some seeing it as a helpful preparation and others warning that sin clouds our reading of nature.",
+      "seeAlso": [
+        "General Revelation",
+        "Apologetics",
+        "Special Revelation"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "New Covenant",
+      "pronunciation": "",
+      "short": "The covenant Christ inaugurated, bringing forgiveness and the Spirit.",
+      "definition": "The new covenant is the relationship God promised through the prophets and established through Christ, marked by forgiveness of sins and the law written on the heart. Jesus sealed it with his own blood, and the Spirit now dwells within his people. It is new not because God's character changed but because the promises long awaited have arrived.",
+      "seeAlso": [
+        "Covenant",
+        "Atonement",
+        "Holy Spirit",
+        "Supersessionism"
+      ],
+      "doctrine": "covenant-frameworks"
+    },
+    {
+      "term": "Omnipotence",
+      "pronunciation": "om-NIP-oh-tense",
+      "short": "God's quality of being all-powerful.",
+      "definition": "Omnipotence means God can do all that is consistent with his nature and will, that nothing is too hard for him. It does not mean he can do nonsense, like making a square circle or lying, since those would contradict who he is. His power is never raw force but the strength of his wise and holy purpose.",
+      "seeAlso": [
+        "Sovereignty",
+        "Omniscience",
+        "Providence"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Omnipresence",
+      "pronunciation": "om-nih-PREZ-ense",
+      "short": "God's quality of being fully present everywhere.",
+      "definition": "Omnipresence means there is nowhere God is not. He is not spread thin across space but wholly present at every point of it, near to the lost and the lonely as much as to the gathered church. This is both a comfort, since we are never alone, and a sobering truth, since we can never hide from him.",
+      "seeAlso": [
+        "Omniscience",
+        "Omnipotence",
+        "Providence"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Omniscience",
+      "pronunciation": "om-NISH-ense",
+      "short": "God's quality of knowing all things.",
+      "definition": "Omniscience means God knows everything, the past, the present, and the future, every thought and every hidden thing. Nothing surprises him and nothing escapes his notice. This knowledge is perfect and immediate, not gathered by learning, and it undergirds his wise governing of all that happens.",
+      "seeAlso": [
+        "Foreknowledge",
+        "Omnipresence",
+        "Providence"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Ordinance",
+      "pronunciation": "",
+      "short": "A practice commanded by Christ, such as baptism and the Lord's Supper.",
+      "definition": "Ordinance is the word many churches prefer over sacrament, stressing that baptism and the Lord's Supper are things Christ ordered us to do in obedience. It tends to emphasize remembrance and symbol over a special conveying of grace. The choice between the words ordinance and sacrament often signals how a church understands what happens in these acts.",
+      "seeAlso": [
+        "Sacrament",
+        "Baptism",
+        "Lord's Supper"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Ordo Salutis",
+      "pronunciation": "OR-doh sah-LOO-tis",
+      "short": "The logical order of the steps in God's saving of a person.",
+      "definition": "Ordo salutis is Latin for order of salvation, the way theologians arrange the parts of God's saving work, such as calling, regeneration, faith, justification, sanctification, and glorification. It is less about strict time sequence and more about how each part relates to the others. Different traditions order it differently, and the differences reveal deeper convictions about grace.",
+      "seeAlso": [
+        "Regeneration",
+        "Justification",
+        "Sanctification",
+        "Glorification"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Original Sin",
+      "pronunciation": "",
+      "short": "The fallen condition every person inherits from Adam.",
+      "definition": "Original sin is the teaching that because of Adam's fall, every human being comes into the world with a nature bent away from God, not neutral but already inclined to wrong. It is why we sin, not merely the sum of our sins. Christians differ on its precise effects, but all hold that we need rescue from a condition we did not invent.",
+      "seeAlso": [
+        "The Fall",
+        "Total Depravity",
+        "Federal Headship",
+        "Concupiscence"
+      ],
+      "doctrine": "sin"
+    },
+    {
+      "term": "Orthodoxy",
+      "pronunciation": "",
+      "short": "Right belief that holds to the core truths of the faith.",
+      "definition": "Orthodoxy means right teaching, the faith handed down and confessed in the creeds, especially about God, Christ, and salvation. It marks the difference between the Christian faith and its counterfeits. Capitalized, the word can also name the Eastern Orthodox churches, but in its broad sense it simply means sound doctrine.",
+      "seeAlso": [
+        "Heresy",
+        "Creeds",
+        "Councils",
+        "Doctrinal Triage"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Perichoresis",
+      "pronunciation": "pair-ih-koh-REE-sis",
+      "short": "The mutual indwelling of the three persons of the Trinity.",
+      "definition": "Perichoresis describes how the Father, Son, and Spirit live within one another in perfect love, each fully sharing the one divine life without losing their distinctness. The picture is something like an eternal dance of giving and receiving. It helps us see that God is not a solitary individual but a fellowship of love in himself.",
+      "seeAlso": [
+        "The Trinity",
+        "Person (Hypostasis)",
+        "Essence (Ousia)"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Perseverance",
+      "pronunciation": "",
+      "short": "The keeping of true believers in faith to the very end.",
+      "definition": "Perseverance is the teaching that those whom God truly saves he also keeps, so that genuine faith endures to the end. It is sometimes called the preservation of the saints, since the keeping is God's doing more than ours. Christians differ over whether a true believer can finally fall away, which is one of the long-standing differences among the traditions.",
+      "seeAlso": [
+        "Assurance",
+        "Election",
+        "Glorification"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Person (Hypostasis)",
+      "pronunciation": "high-POSS-tah-sis",
+      "short": "One of the three distinct who's within the one God.",
+      "definition": "Person, from the Greek hypostasis, names each distinct who in the Trinity, the Father, the Son, and the Spirit. They are not three parts or three masks of God but three who share completely the one divine being. The word does not mean three separate individuals like three humans, which is why the church uses it with great care.",
+      "seeAlso": [
+        "Essence (Ousia)",
+        "The Trinity",
+        "Perichoresis",
+        "Hypostatic Union"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Predestination",
+      "pronunciation": "",
+      "short": "God's determining beforehand the destiny of his people.",
+      "definition": "Predestination is the teaching that God, before the world began, appointed the salvation of his people according to his purpose. It is meant to magnify grace, since our hope rests on God's settled love rather than our own performance. Christians differ sharply on how it fits with human freedom, and the topic calls for humility on every side.",
+      "seeAlso": [
+        "Election",
+        "Foreknowledge",
+        "Monergism",
+        "Sovereignty"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Prevenient Grace",
+      "pronunciation": "preh-VEEN-yent",
+      "short": "Grace that goes before, enabling a person to respond to God.",
+      "definition": "Prevenient grace is the grace that comes first, freeing the will enough that a person can respond to the gospel. The word prevenient means coming before. It is especially important in traditions that stress human cooperation in salvation, since it explains how dead sinners can answer God's call without making salvation a human achievement.",
+      "seeAlso": [
+        "Synergism",
+        "Monergism",
+        "Regeneration",
+        "Grace"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Problem of Evil",
+      "pronunciation": "",
+      "short": "The hard question of how a good, all-powerful God allows suffering.",
+      "definition": "The problem of evil asks how a God who is both loving and all-powerful can permit the pain and wickedness we see. It is felt as much in the hospital room as in the lecture hall. Christians do not pretend it away but answer it with the cross, where God enters suffering himself, and with the hope of a coming world where every wrong is undone.",
+      "seeAlso": [
+        "Theodicy",
+        "Providence",
+        "Sovereignty"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Procession",
+      "pronunciation": "",
+      "short": "The Spirit's eternal relation of coming forth within the Trinity.",
+      "definition": "Procession describes how the Holy Spirit eternally proceeds, or comes forth, within the life of God. Like the Son's eternal generation, it is a relation rather than a beginning, since the Spirit has no start. The exact wording, whether the Spirit proceeds from the Father alone or from the Father and the Son, lies at the heart of the filioque dispute.",
+      "seeAlso": [
+        "Filioque",
+        "Eternal Generation",
+        "Holy Spirit",
+        "The Trinity"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Propitiation",
+      "pronunciation": "proh-pih-shee-AY-shun",
+      "short": "Christ's death turning aside God's just wrath against sin.",
+      "definition": "Propitiation means that Christ, by his death, satisfied God's righteous anger against sin, so that wrath is turned to favor. It does not picture an angry God appeased by a reluctant victim, but a loving God providing the very sacrifice his justice required. Alongside expiation, which cleanses sin, it shows the fullness of what the cross accomplished.",
+      "seeAlso": [
+        "Expiation",
+        "Atonement",
+        "Mercy",
+        "Reconciliation"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Providence",
+      "pronunciation": "",
+      "short": "God's wise and constant care over all that he has made.",
+      "definition": "Providence is the truth that God upholds and governs everything that happens, guiding history and the smallest details toward his good ends. It means the world is not adrift and your life is not a series of accidents. It does not erase human choices or excuse evil, but holds that nothing slips outside the reach of God's wise hand.",
+      "seeAlso": [
+        "Sovereignty",
+        "Omniscience",
+        "Problem of Evil",
+        "Common Grace"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Rapture",
+      "pronunciation": "",
+      "short": "The gathering of believers to meet Christ at his coming.",
+      "definition": "The rapture refers to the moment when living believers are caught up to meet the returning Lord, drawn from a passage in First Thessalonians. Some Christians expect a secret gathering before a time of tribulation, while others see it as one part of the single visible return of Christ. The differences are real but fall within the family of Christian hope.",
+      "seeAlso": [
+        "Eschatology",
+        "Millennium",
+        "Resurrection",
+        "Dispensation"
+      ],
+      "doctrine": "last-things"
+    },
+    {
+      "term": "Real Presence",
+      "pronunciation": "",
+      "short": "The belief that Christ is truly present in the Lord's Supper.",
+      "definition": "Real presence names the conviction that Christ is genuinely present to his people in the bread and wine of Communion, not merely remembered. Traditions describe how differently, from a change in the elements themselves to a spiritual presence received by faith. Others hold the meal is purely a memorial, and this remains one of the most discussed questions among churches.",
+      "seeAlso": [
+        "Lord's Supper",
+        "Transubstantiation",
+        "Sacrament"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Reconciliation",
+      "pronunciation": "",
+      "short": "The restoring of friendship between God and sinners through Christ.",
+      "definition": "Reconciliation is the healing of a broken relationship, the way Christ brings enemies back into peace with God. Sin had made us hostile and estranged, but the cross removes the cause of the breach and opens the way home. It is one of the warmest pictures of salvation, because it speaks not just of pardon but of restored fellowship.",
+      "seeAlso": [
+        "Atonement",
+        "Adoption",
+        "Union with Christ",
+        "Propitiation"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Redemption",
+      "pronunciation": "",
+      "short": "Being bought back and set free by the price of Christ's blood.",
+      "definition": "Redemption pictures salvation as a rescue from slavery, where Christ pays the price to set captives free. The word comes from the marketplace and the freeing of slaves. We were held by sin and death, and his life given in our place is the ransom that buys our freedom and makes us his own.",
+      "seeAlso": [
+        "Atonement",
+        "Reconciliation",
+        "Expiation"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Regeneration",
+      "pronunciation": "",
+      "short": "The new birth God works in a person by his Spirit.",
+      "definition": "Regeneration is the deep inner renewal by which God gives spiritual life to those who were dead in sin, often called being born again. It is not self-improvement but a new beginning that God alone can create. From this new life flow faith, repentance, and a changed heart, since the dead must first be made alive before they can respond.",
+      "seeAlso": [
+        "Monergism",
+        "Holy Spirit",
+        "Ordo Salutis",
+        "Union with Christ"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Repentance",
+      "pronunciation": "",
+      "short": "A turning from sin to God in heart, mind, and life.",
+      "definition": "Repentance is more than feeling sorry, though sorrow is part of it. It is a real turning, a change of mind and direction that leaves sin behind and moves toward God. It walks hand in hand with faith, the two together making up the response the gospel calls for, and it is itself a gift God grants.",
+      "seeAlso": [
+        "Faith",
+        "Regeneration",
+        "Justification"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Resurrection",
+      "pronunciation": "",
+      "short": "The raising of the dead to bodily life, first Christ and then his people.",
+      "definition": "Resurrection is the raising of the body to new and unending life. Christ rose first, in a real and glorified body, as the promise and pattern of what awaits his people. The Christian hope is not escape from the body but its renewal, a physical future in a remade world rather than a ghostly existence.",
+      "seeAlso": [
+        "Glorification",
+        "Eschatology",
+        "Intermediate State"
+      ],
+      "doctrine": "last-things"
+    },
+    {
+      "term": "Revelation",
+      "pronunciation": "",
+      "short": "God making himself known to people who could not find him alone.",
+      "definition": "Revelation is the truth that we know God only because he has chosen to show himself. Left to ourselves we would grope in the dark, but God speaks, both through the world he made and supremely through Scripture and his Son. All Christian knowing of God begins here, with his gracious decision to be known.",
+      "seeAlso": [
+        "General Revelation",
+        "Special Revelation",
+        "Inspiration"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "Righteousness",
+      "pronunciation": "",
+      "short": "Being and doing right, and the right standing God gives in Christ.",
+      "definition": "Righteousness has two linked senses in the Bible. It is the moral rightness of God and the life he calls us to, and it is also the standing he credits to us in Christ. The good news is that the righteousness we could never produce is given to us as a gift, so that we are counted right with God before we are made fully right within.",
+      "seeAlso": [
+        "Justification",
+        "Imputation",
+        "Sanctification"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Sacrament",
+      "pronunciation": "",
+      "short": "A holy sign instituted by Christ that conveys and confirms grace.",
+      "definition": "A sacrament is a visible sign of an invisible grace, an act like baptism or the Lord's Supper that Christ gave to strengthen faith. Many traditions hold that God truly works through them, not as bare symbols but as appointed means of grace. Others prefer the word ordinance, and the number and meaning of the sacraments varies among churches.",
+      "seeAlso": [
+        "Ordinance",
+        "Baptism",
+        "Lord's Supper",
+        "Means of Grace"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Sanctification",
+      "pronunciation": "",
+      "short": "The lifelong work of God making a believer more like Christ.",
+      "definition": "Sanctification is the gradual process by which the Spirit forms Christ's character in us, putting sin to death and growing love, patience, and holiness. Unlike justification, which is a finished verdict, sanctification unfolds across a lifetime and is never finished here. It is God's work in which we are also called to take real, active part.",
+      "seeAlso": [
+        "Justification",
+        "Glorification",
+        "Holy Spirit",
+        "Means of Grace"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Scholasticism",
+      "pronunciation": "skoh-LAS-tih-siz-um",
+      "short": "The careful, systematic theology of the medieval schools.",
+      "definition": "Scholasticism was the rigorous method of teaching and theology that flourished in the medieval universities, associated with thinkers like Thomas Aquinas. It prized precise definitions, careful distinctions, and reasoned argument, often weaving together Scripture and philosophy. It later shaped both Catholic and Protestant teaching, though some reformers worried it could grow dry.",
+      "seeAlso": [
+        "Natural Theology",
+        "Systematic Theology",
+        "Church Fathers"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Sola Fide",
+      "pronunciation": "SOH-lah FEE-day",
+      "short": "The truth that we are justified by faith alone.",
+      "definition": "Sola fide means by faith alone, the conviction that we are made right with God through trusting Christ rather than by our own works. It does not mean faith stands by itself unaccompanied, since real faith bears fruit, but that nothing we add earns our acceptance. It was a central recovery of the Reformation.",
+      "seeAlso": [
+        "Justification",
+        "Faith",
+        "Sola Gratia",
+        "Solus Christus"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Sola Gratia",
+      "pronunciation": "SOH-lah GRAH-tsee-ah",
+      "short": "The truth that salvation comes by grace alone.",
+      "definition": "Sola gratia means by grace alone, the conviction that our salvation is entirely God's free gift and not a reward for anything in us. From first to last, it is his doing. It humbles every claim of merit and lays the whole weight of our hope on God's generous love.",
+      "seeAlso": [
+        "Grace",
+        "Sola Fide",
+        "Soli Deo Gloria",
+        "Monergism"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Sola Scriptura",
+      "pronunciation": "SOH-lah skrip-TOO-rah",
+      "short": "The truth that Scripture alone is the final authority for faith.",
+      "definition": "Sola scriptura means by Scripture alone, the conviction that the Bible is the highest authority over the church, above traditions and councils. It does not despise tradition but tests everything by God's written Word. It was the foundation on which the Reformation stood, since every other claim was measured against Scripture.",
+      "seeAlso": [
+        "Revelation",
+        "Canon",
+        "Analogy of Faith",
+        "Reformation"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "Soli Deo Gloria",
+      "pronunciation": "SOH-lee DAY-oh GLOR-ee-ah",
+      "short": "The truth that all glory belongs to God alone.",
+      "definition": "Soli Deo Gloria means glory to God alone, the conviction that the whole of salvation and the whole of life exist for his praise and not our own. It is one of the great rallying cries of the Reformation. It guards us from taking credit that belongs to God and sets the final aim of everything we do.",
+      "seeAlso": [
+        "Sola Gratia",
+        "Sola Fide",
+        "Solus Christus",
+        "Sola Scriptura"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Solus Christus",
+      "pronunciation": "SOH-loos KRIS-toos",
+      "short": "The truth that salvation is found in Christ alone.",
+      "definition": "Solus Christus means through Christ alone, the conviction that Jesus is the only mediator between God and people and the sole ground of our salvation. No saint, priest, or merit can take his place. It points us away from every other refuge and fixes our hope entirely on him.",
+      "seeAlso": [
+        "Sola Fide",
+        "Sola Gratia",
+        "Atonement",
+        "Incarnation"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Sovereignty",
+      "pronunciation": "",
+      "short": "God's rightful and effective rule over all things.",
+      "definition": "Sovereignty is the truth that God reigns over everything, that his purposes will stand and nothing can finally thwart him. It is not cold control but the loving rule of a wise King who works all things toward good ends. It gives deep comfort in trouble, since the one who holds the universe also holds your life.",
+      "seeAlso": [
+        "Providence",
+        "Omnipotence",
+        "Predestination"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Special Revelation",
+      "pronunciation": "",
+      "short": "God's specific self-disclosure in Scripture and supremely in Christ.",
+      "definition": "Special revelation is the particular way God makes himself known beyond what creation can show, through his mighty acts, his prophets and apostles, the written Scriptures, and above all his Son. It tells us not only that God exists but who he is and how we can be saved. It is what general revelation cannot supply on its own.",
+      "seeAlso": [
+        "General Revelation",
+        "Revelation",
+        "Inspiration",
+        "Incarnation"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "Supersessionism",
+      "pronunciation": "soo-per-SESH-un-iz-um",
+      "short": "The contested idea that the church replaces Israel in God's plan.",
+      "definition": "Supersessionism is the view that the church has taken the place of Israel as God's people, so that the promises to Israel now belong to the church. Critics warn it can downplay God's ongoing purposes for the Jewish people and has at times fed harmful attitudes. Christians debate the matter carefully, with many seeking to honor both the church and God's faithfulness to Israel.",
+      "seeAlso": [
+        "Covenant Theology",
+        "Dispensation",
+        "New Covenant"
+      ],
+      "doctrine": "covenant-frameworks"
+    },
+    {
+      "term": "Synergism",
+      "pronunciation": "SIN-er-jiz-um",
+      "short": "The view that God and the person cooperate in salvation.",
+      "definition": "Synergism teaches that salvation involves a real working together between God's grace and the human will, with the person freely responding to grace offered. It stresses that God enables but does not override our choice. It stands opposite monergism, and the two represent long-standing differences over how grace and the will relate.",
+      "seeAlso": [
+        "Monergism",
+        "Prevenient Grace",
+        "Regeneration"
+      ],
+      "doctrine": "soteriology"
+    },
+    {
+      "term": "Systematic Theology",
+      "pronunciation": "",
+      "short": "The orderly arrangement of Christian teaching by topic.",
+      "definition": "Systematic theology gathers what the whole Bible teaches on each subject, like God, sin, salvation, and the church, and arranges it in an orderly way. Where biblical theology follows the story over time, systematic theology asks what we should believe overall about a topic. It helps the church think clearly and teach consistently.",
+      "seeAlso": [
+        "Biblical Theology",
+        "Doctrinal Triage",
+        "Analogy of Faith"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "The Fall",
+      "pronunciation": "",
+      "short": "The first humans' turn from God into sin, and its ruin for the world.",
+      "definition": "The fall is the account of Adam and Eve disobeying God, breaking the original goodness of creation and bringing sin and death into the world. It explains why a world made good is now so marked by sorrow and wrong. Everything broken in us and around us traces back to this turning away, which only Christ can finally undo.",
+      "seeAlso": [
+        "Original Sin",
+        "Total Depravity",
+        "Imago Dei",
+        "Federal Headship"
+      ],
+      "doctrine": "sin"
+    },
+    {
+      "term": "The Millennium",
+      "pronunciation": "",
+      "short": "See Millennium.",
+      "definition": "The thousand-year reign of Christ described in Revelation, understood in different ways by faithful Christians. See the entry for Millennium for the fuller description. The various readings are matters of Christian liberty rather than tests of orthodoxy.",
+      "seeAlso": [
+        "Millennium",
+        "Eschatology",
+        "Rapture"
+      ],
+      "doctrine": "last-things"
+    },
+    {
+      "term": "The Reformation",
+      "pronunciation": "",
+      "short": "The sixteenth-century renewal movement that reshaped Western Christianity.",
+      "definition": "The Reformation was the movement, beginning in the early fifteen hundreds with figures like Martin Luther, that called the church back to the gospel of grace and the authority of Scripture. It recovered teachings like justification by faith alone and led to the rise of Protestant churches. It was not a rejection of the ancient faith but a return to it as the reformers understood it.",
+      "seeAlso": [
+        "Sola Scriptura",
+        "Sola Fide",
+        "Justification",
+        "Scholasticism"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "The Trinity",
+      "pronunciation": "",
+      "short": "The one God who exists eternally as Father, Son, and Holy Spirit.",
+      "definition": "The Trinity is the Christian confession that there is one God in three persons, the Father, the Son, and the Holy Spirit, each fully God yet not three Gods. It is not a riddle to solve but the deepest truth of who God is, a unity of perfect love. It means God was never lonely, for love has always passed between the three.",
+      "seeAlso": [
+        "Essence (Ousia)",
+        "Person (Hypostasis)",
+        "Perichoresis",
+        "Homoousios"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Theodicy",
+      "pronunciation": "thee-OD-ih-see",
+      "short": "An attempt to defend God's goodness in the face of evil.",
+      "definition": "Theodicy is the effort to show how God can be just and good even though evil and suffering exist. The word joins the Greek terms for God and justice. No theodicy answers every tear, and Christians hold them with care, often pointing finally to the cross and the promised renewal rather than to a tidy explanation.",
+      "seeAlso": [
+        "Problem of Evil",
+        "Providence",
+        "Sovereignty"
+      ],
+      "doctrine": "god-and-trinity"
+    },
+    {
+      "term": "Theotokos",
+      "pronunciation": "thee-oh-TOH-kos",
+      "short": "The title for Mary meaning God-bearer.",
+      "definition": "Theotokos is a Greek word meaning God-bearer, used of Mary to confess that the child she carried was truly God the Son. The title was affirmed at the Council of Ephesus, less to exalt Mary than to protect the truth that Jesus is one person who is fully God. It safeguards the incarnation by insisting that the one born of Mary is God in the flesh.",
+      "seeAlso": [
+        "Incarnation",
+        "Hypostatic Union",
+        "Councils"
+      ],
+      "doctrine": "christology"
+    },
+    {
+      "term": "Total Depravity",
+      "pronunciation": "",
+      "short": "The teaching that sin touches every part of human nature.",
+      "definition": "Total depravity does not mean people are as bad as they could possibly be, but that sin has reached into every part of us, mind, will, and affections, so that no part is left untouched. It explains why we cannot save ourselves and why we need grace to even desire God. It magnifies the rescue God provides rather than denying the good people can still do.",
+      "seeAlso": [
+        "Original Sin",
+        "The Fall",
+        "Concupiscence",
+        "Monergism"
+      ],
+      "doctrine": "sin"
+    },
+    {
+      "term": "Transubstantiation",
+      "pronunciation": "tran-sub-stan-shee-AY-shun",
+      "short": "The Roman Catholic teaching that the bread and wine become Christ's body and blood.",
+      "definition": "Transubstantiation is the doctrine that in the Mass the bread and wine truly become the body and blood of Christ while still appearing as bread and wine. It is the official Roman Catholic understanding of the real presence. Most Protestant traditions reject it, holding instead to a spiritual presence or a memorial, making this one of the deepest divisions over the Lord's Supper.",
+      "seeAlso": [
+        "Real Presence",
+        "Lord's Supper",
+        "Sacrament"
+      ],
+      "doctrine": "church"
+    },
+    {
+      "term": "Typology",
+      "pronunciation": "",
+      "short": "Reading earlier persons and events as patterns that point to Christ.",
+      "definition": "Typology is the practice of seeing how people, events, and institutions in the Old Testament foreshadow Christ and his work. The Passover lamb, the temple, and King David each point ahead to something greater. It is not reading random hidden codes but tracing the patterns God built into the story to prepare for his Son.",
+      "seeAlso": [
+        "Biblical Theology",
+        "Covenant",
+        "Hermeneutics"
+      ],
+      "doctrine": "scripture"
+    },
+    {
+      "term": "Union with Christ",
+      "pronunciation": "",
+      "short": "The believer's deep, living joining to Jesus himself.",
+      "definition": "Union with Christ is the truth that those who trust Jesus are joined to him so closely that his death, his life, and his future become theirs. It is the root from which justification, adoption, and sanctification all grow. To be in Christ is the most basic description of a Christian, more like a branch in a vine than a member in a club.",
+      "seeAlso": [
+        "Justification",
+        "Adoption",
+        "Regeneration",
+        "Sanctification"
+      ],
+      "doctrine": "soteriology"
+    }
+  ]
+}

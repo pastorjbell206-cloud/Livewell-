@@ -6,6 +6,13 @@ import { useFavorites } from "@/hooks/useFavorites";
 
 const TOOLS = [
   {
+    title: "Passage Context Tool",
+    description: "Enter any Bible reference and read it in context: the passage with room around it, who wrote it and why, its genre, the flow of the argument, cross-references, and the questions to ask of any text. Part of the Theological Depth section.",
+    href: "/theology/passage",
+    icon: BookMarked,
+    color: "var(--gold)",
+  },
+  {
     title: "Bible Verse Finder",
     description: "Find Scripture for any season of life. Search by topic — anxiety, grief, hope, courage, marriage, and more — and get curated verses you can copy and share.",
     href: "/tools/verse-finder",

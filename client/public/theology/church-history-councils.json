@@ -1,0 +1,114 @@
+{
+  "councils": [
+    {
+      "name": "First Council of Nicaea",
+      "year": "325",
+      "place": "Nicaea, in what is now Turkey",
+      "ecumenical": true,
+      "calledOver": "A priest named Arius taught that the Son of God was a created being, the highest creature but not God in the same sense the Father is. The whole church was thrown into argument over the most basic question there is, which is who Jesus actually is.",
+      "decided": "About three hundred bishops gathered, summoned by the emperor Constantine, and this was the first ecumenical council, meaning a council that speaks for the whole church across the world rather than one region. They confessed that the Son is truly God, of one substance with the Father. The key word was homoousios, a Greek term meaning of the same being or essence, which says the Son is not similar to God or close to God but is God. From this came a creed, a short shared confession of faith that the church says together.",
+      "gaveUs": "The core of the Nicene Creed, where we confess Jesus as God of God, Light of Light, true God of true God.",
+      "rejected": "Arianism, the teaching that the Son is a creature and not fully God."
+    },
+    {
+      "name": "First Council of Constantinople",
+      "year": "381",
+      "place": "Constantinople, now Istanbul",
+      "ecumenical": true,
+      "calledOver": "The fight at Nicaea had settled the deity of the Son, but a new question pressed in. Some were now denying that the Holy Spirit is fully God, treating the Spirit as a lesser power rather than the third person of the one God.",
+      "decided": "The bishops confessed the Holy Spirit as the Lord, the giver of life, who proceeds from the Father and is worshiped and glorified together with the Father and the Son. They affirmed that the one God is Father, Son, and Holy Spirit, three persons and one being. They also expanded the words first set down at Nicaea so the creed now spoke clearly of the Spirit.",
+      "gaveUs": "The completed Nicene Creed as Christians still recite it today, naming Father, Son, and Holy Spirit as one God.",
+      "rejected": "The teaching that the Holy Spirit is not fully and truly God."
+    },
+    {
+      "name": "Council of Ephesus",
+      "year": "431",
+      "place": "Ephesus, in what is now Turkey",
+      "ecumenical": true,
+      "calledOver": "A bishop named Nestorius was teaching in a way that seemed to split Christ into two separate persons, one human and one divine, loosely joined. He objected to calling Mary the mother of God, preferring to call her only the mother of the man Jesus.",
+      "decided": "The council answered that the one born of Mary is a single person who is truly God and truly man, not two persons side by side. Therefore Mary is rightly called Theotokos, a Greek word meaning God-bearer or the one who gave birth to God. The point was never to exalt Mary above her place. The point was to guard the truth about her son, that the child she carried was God the Son made flesh.",
+      "gaveUs": "The confession that Christ is one undivided person, and the title Theotokos as a safeguard of that truth.",
+      "rejected": "Nestorianism, the teaching that Christ is two separate persons rather than one."
+    },
+    {
+      "name": "Council of Chalcedon",
+      "year": "451",
+      "place": "Chalcedon, near Constantinople",
+      "ecumenical": true,
+      "calledOver": "If Ephesus guarded against splitting Christ in two, a new error ran the other way. Some now taught that his humanity was swallowed up into his deity, leaving one blended nature rather than a real man.",
+      "decided": "The council gave the church its clearest statement on the person of Christ. He is one person made known in two natures, fully God and fully man, and these two natures come together without confusion, without change, without division, and without separation. His deity does not erase his humanity, and his humanity does not dilute his deity. The one Lord Jesus Christ is at once truly God and one of us.",
+      "gaveUs": "The Chalcedonian Definition, the lasting measure of orthodox belief about who Christ is.",
+      "rejected": "Monophysitism, the teaching that Christ has only one nature, his humanity absorbed into his deity."
+    },
+    {
+      "name": "Second Council of Constantinople",
+      "year": "553",
+      "place": "Constantinople, now Istanbul",
+      "ecumenical": true,
+      "calledOver": "A hundred years after Chalcedon, disputes still simmered. Some accused the Chalcedonian wording of leaning too close to Nestorius and his division of Christ, and the church was strained by the quarrel.",
+      "decided": "The council reaffirmed Chalcedon and explained it more carefully, insisting that the one person who suffered on the cross is the very Son of God. It condemned certain writings that had been read in a Nestorian direction. The aim was not to add a new doctrine but to make plain that Chalcedon had always taught one Christ, fully divine and fully human.",
+      "gaveUs": "A clearer reading of Chalcedon, holding the church to the truth of one Christ in two natures.",
+      "rejected": "Lingering Nestorian readings that pulled the one Christ back into two persons."
+    },
+    {
+      "name": "Third Council of Constantinople",
+      "year": "680",
+      "place": "Constantinople, now Istanbul",
+      "ecumenical": true,
+      "calledOver": "A subtle question remained about Christ. If he is fully God and fully man, does he have one will or two? Some taught that he had only a single divine will, a view called monothelitism, from Greek words meaning one will.",
+      "decided": "Meeting across 680 and 681, the council confessed that Christ has two wills, one divine and one human, working in full agreement, with his human will freely yielding to the divine. A real man has a human will, so to deny him one was to deny part of his humanity. This was not a contradiction in Christ but the harmony of God and man in one person, seen most clearly when he prayed in the garden, not my will but yours be done.",
+      "gaveUs": "The truth that Christ is fully human down to his will, completing the church teaching set at Chalcedon.",
+      "rejected": "Monothelitism, the teaching that Christ has only one will."
+    },
+    {
+      "name": "Second Council of Nicaea",
+      "year": "787",
+      "place": "Nicaea, in what is now Turkey",
+      "ecumenical": true,
+      "calledOver": "A bitter fight had broken out over images. A movement called iconoclasm, meaning the breaking of images, held that any picture of Christ or the saints was an idol and ordered such images destroyed.",
+      "decided": "The council drew a careful line. It taught that honor shown to an image passes to the one it represents, so a believer may honor an image of Christ without worshiping the wood and paint. Worship in the fullest sense belongs to God alone, while images may receive only respect and reverence. Because Christ truly became flesh and could be seen with human eyes, the church judged that he could be depicted.",
+      "gaveUs": "A settled teaching on the proper use of images, distinguishing reverence from the worship owed to God alone.",
+      "rejected": "Iconoclasm, the teaching that all sacred images must be destroyed as idols."
+    },
+    {
+      "name": "The Great Schism",
+      "year": "1054",
+      "place": "Rome and Constantinople",
+      "ecumenical": false,
+      "calledOver": "This was not a council but a breaking apart. The church of the West, centered in Rome, and the church of the East, centered in Constantinople, had drifted for centuries over language, custom, and authority until the split became formal. It is included here because it divided the church and is not received as a council by everyone.",
+      "decided": "Two issues stood at the center. The first was the filioque, a Latin word meaning and the Son, which the West had added to the Nicene Creed so that it read the Spirit proceeds from the Father and the Son. The East held that no one may change the shared creed without a council of the whole church. The second was the claim of the bishop of Rome, the pope, to authority over all other bishops, which the East rejected. In 1054 leaders on each side condemned the other, and the breach hardened.",
+      "gaveUs": "The lasting division between the Eastern Orthodox and the Roman Catholic churches, a wound the church still carries.",
+      "rejected": ""
+    },
+    {
+      "name": "Council of Trent",
+      "year": "1545",
+      "place": "Trent, in northern Italy",
+      "ecumenical": false,
+      "calledOver": "The Protestant Reformation, begun by Martin Luther in 1517, had shaken Western Christianity to its roots over how a sinner is made right with God and what authority the church holds. The Roman Catholic Church called this council to answer the Reformers. It is not received by Protestants or by the Eastern churches.",
+      "decided": "Meeting in sessions across 1545 to 1563, the council restated Roman Catholic teaching against the Reformation. It affirmed that Scripture and church tradition together carry authority, defined its understanding of how grace and human cooperation work in salvation, and fixed the seven sacraments. It also reformed many real abuses in clergy life and practice that the Reformers had rightly named.",
+      "gaveUs": "The shape of modern Roman Catholicism, and a clear marking of the lines between Rome and the Reformation.",
+      "rejected": "The central claims of the Protestant Reformers about Scripture alone and faith alone."
+    },
+    {
+      "name": "First Vatican Council",
+      "year": "1869",
+      "place": "Rome",
+      "ecumenical": false,
+      "calledOver": "Through the 1800s the Roman Catholic Church faced rising challenges from modern thought and political upheaval, and questions about the pope and his authority pressed for an answer. This council is held only by the Roman Catholic Church and not by Protestants or the Eastern churches.",
+      "decided": "Meeting in 1869 and 1870, the council defined papal infallibility. This means that when the pope speaks in his official capacity on a matter of faith or morals binding the whole church, his teaching is held by Catholics to be preserved from error. The council framed this as a narrow claim, not a license for the pope to be right about everything he says. It also affirmed that God can be known through reason as well as revelation.",
+      "gaveUs": "The defined teaching of papal infallibility within Roman Catholicism.",
+      "rejected": ""
+    },
+    {
+      "name": "Second Vatican Council",
+      "year": "1962",
+      "place": "Rome",
+      "ecumenical": false,
+      "calledOver": "By the middle of the 1900s the Roman Catholic Church sought to speak afresh to a changed world without abandoning its faith. Pope John the Twenty Third called this council to renew the life and worship of the church. It is a council of the Roman Catholic Church alone.",
+      "decided": "Meeting across 1962 to 1965, the council reshaped much of Catholic life. It allowed worship in the language of the people rather than only Latin, encouraged ordinary believers to read Scripture, opened warmer relations toward other Christians and other faiths, and spoke of the whole people of God rather than only the clergy. It did not change core doctrine but renewed how the church carried it.",
+      "gaveUs": "The modern renewal of the Roman Catholic Church and its more open posture toward other Christians.",
+      "rejected": ""
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "quizzes": [
+    {
+      "slug": "soteriology",
+      "title": "How Does God Save? A Which View Am I Quiz",
+      "intro": "These questions ask how you currently think about the way God rescues and keeps a person. Answer with your honest instinct rather than the answer you think you are supposed to give.",
+      "disclaimer": "This is a starting point for self-understanding, not a verdict on where you must land. A quiz cannot weigh a doctrine, and faithful Christians who love the same Scriptures have held each of these positions with care.",
+      "questions": [
+        {
+          "q": "When you read that someone came to faith, what feels most true to you about how it happened?",
+          "options": [
+            { "label": "God first changed the heart so that the person was able to believe and gladly did", "view": "calvinism" },
+            { "label": "God drew near and gave grace, and the person was enabled to either receive or resist it", "view": "arminianism" },
+            { "label": "God made the offer plain, and the person was free to trust the message as it stood", "view": "provisionism" }
+          ]
+        },
+        {
+          "q": "How do you understand who Christ died for?",
+          "options": [
+            { "label": "He died with particular purpose to secure the salvation of those given to him", "view": "calvinism" },
+            { "label": "He died for everyone, and that death becomes effective when a person believes", "view": "arminianism" },
+            { "label": "He died for every person without exception, and the gift stands ready for all", "view": "provisionism" }
+          ]
+        },
+        {
+          "q": "What do you make of the word election in Scripture?",
+          "options": [
+            { "label": "God chose specific people for salvation according to his own purpose", "view": "calvinism" },
+            { "label": "God chose those he foreknew would respond to his grace with faith", "view": "arminianism" },
+            { "label": "Election speaks of God's plan and people more than the picking of individuals to save", "view": "provisionism" }
+          ]
+        },
+        {
+          "q": "Can a person finally turn away and lose salvation?",
+          "options": [
+            { "label": "No, those God truly saves he will surely keep to the end", "view": "calvinism" },
+            { "label": "Yes, a believer can abandon the faith and forfeit the gift", "view": "arminianism" },
+            { "label": "The one who is saved is secure, though I hold that lightly and want to honor the warnings too", "view": "provisionism" }
+          ]
+        },
+        {
+          "q": "How do you picture the human will after the fall?",
+          "options": [
+            { "label": "So bound by sin that no one seeks God until grace renews the will", "view": "calvinism" },
+            { "label": "Unable on its own, yet freed to respond once God's grace goes before", "view": "arminianism" },
+            { "label": "Damaged by sin yet still able to hear the gospel and trust it when it comes", "view": "provisionism" }
+          ]
+        },
+        {
+          "q": "When grace comes to a heart God intends to save, what happens?",
+          "options": [
+            { "label": "It surely accomplishes its purpose and the person comes willingly", "view": "calvinism" },
+            { "label": "It enables a real response, and the person may still say no", "view": "arminianism" },
+            { "label": "It persuades without overriding, and the person remains free to refuse", "view": "provisionism" }
+          ]
+        },
+        {
+          "q": "Why does one person believe and another does not?",
+          "options": [
+            { "label": "Because God in mercy granted faith to the one and not the other", "view": "calvinism" },
+            { "label": "Because both were given grace and one cooperated while the other resisted", "view": "arminianism" },
+            { "label": "Because the gospel was offered to both and one trusted it while the other declined", "view": "provisionism" }
+          ]
+        },
+        {
+          "q": "Which sentence sits most comfortably with you?",
+          "options": [
+            { "label": "Salvation is God's work from beginning to end, and I rest in that", "view": "calvinism" },
+            { "label": "Salvation is God's gift that asks for a free and ongoing yes", "view": "arminianism" },
+            { "label": "Salvation is offered to all, and God leaves the response genuinely open", "view": "provisionism" }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "view": "calvinism",
+          "name": "Leaning Reformed (Calvinist)",
+          "blurb": "You tend to see salvation as God's sovereign work, with grace that renews the heart before a person can believe and keeps that person to the end. This view treasures the security of resting in what God alone accomplishes. Many thoughtful believers find here a deep comfort that the whole of their rescue is held in stronger hands than their own.",
+          "doctrine": "soteriology"
+        },
+        {
+          "view": "arminianism",
+          "name": "Leaning Arminian",
+          "blurb": "You tend to see salvation as God's grace given to all, with a genuine human response that God enables but does not force. This view guards the reality of love freely returned and the seriousness of Scripture's warnings. Many faithful Christians have found here a way to hold both God's initiative and human responsibility together.",
+          "doctrine": "soteriology"
+        },
+        {
+          "view": "provisionism",
+          "name": "Leaning Provisionist",
+          "blurb": "You tend to see the cross as a provision made for every person, with the gospel offered plainly and the response left truly free. This view stresses that God desires all to be saved and withholds the gift from no one. Many believers are drawn here by the wide and open invitation they read across the pages of Scripture.",
+          "doctrine": "soteriology"
+        }
+      ]
+    },
+    {
+      "slug": "church",
+      "title": "Baptism and the Church: A Which View Am I Quiz",
+      "intro": "These questions ask how you currently think about baptism, the gathered church, and the way grace meets us in both. Answer with the view that feels most natural to you right now.",
+      "disclaimer": "This is a starting point for self-understanding, not a verdict on which church is right. A short quiz cannot settle questions the church has weighed for centuries, and sincere believers have followed each of these paths with conviction and love.",
+      "questions": [
+        {
+          "q": "Who do you believe is a fitting candidate for baptism?",
+          "options": [
+            { "label": "Believers and the infants of the faithful, received into the life of grace", "view": "catholic-sacramental" },
+            { "label": "Believers and their children, brought under the sign of the covenant", "view": "reformed-presbyterian" },
+            { "label": "Those who profess personal faith for themselves", "view": "baptist-free-church" }
+          ]
+        },
+        {
+          "q": "What is happening in the act of baptism itself?",
+          "options": [
+            { "label": "God truly conveys grace through the sign, joining the person to Christ", "view": "catholic-sacramental" },
+            { "label": "God seals his covenant promise, and faith lays hold of what it signifies", "view": "reformed-presbyterian" },
+            { "label": "The believer publicly testifies to a faith already received", "view": "baptist-free-church" }
+          ]
+        },
+        {
+          "q": "How do you think of the Lord's Supper?",
+          "options": [
+            { "label": "Christ is truly present and given to us in the bread and the cup", "view": "catholic-sacramental" },
+            { "label": "Christ is present by his Spirit to feed those who come in faith", "view": "reformed-presbyterian" },
+            { "label": "The bread and cup call us to remember Christ's death with thankful hearts", "view": "baptist-free-church" }
+          ]
+        },
+        {
+          "q": "How should the church be led and ordered?",
+          "options": [
+            { "label": "Through bishops and an ordered ministry handed down across the ages", "view": "catholic-sacramental" },
+            { "label": "Through elders gathered in connected councils that share oversight", "view": "reformed-presbyterian" },
+            { "label": "Through the local congregation governing its own life under Christ", "view": "baptist-free-church" }
+          ]
+        },
+        {
+          "q": "What makes a person a member of the church?",
+          "options": [
+            { "label": "Incorporation through the sacraments into the one historic body", "view": "catholic-sacramental" },
+            { "label": "Belonging to the covenant community marked out by its sign", "view": "reformed-presbyterian" },
+            { "label": "A personal profession of faith joined to a local body of believers", "view": "baptist-free-church" }
+          ]
+        },
+        {
+          "q": "How do you weigh church tradition alongside Scripture?",
+          "options": [
+            { "label": "Scripture and the living tradition of the church belong together", "view": "catholic-sacramental" },
+            { "label": "Scripture rules, and the historic confessions guide our reading of it", "view": "reformed-presbyterian" },
+            { "label": "Scripture stands as the final word, read freshly by each gathered church", "view": "baptist-free-church" }
+          ]
+        },
+        {
+          "q": "When a child is raised in the church, how do you see that child?",
+          "options": [
+            { "label": "Already brought into grace through the sacrament of baptism", "view": "catholic-sacramental" },
+            { "label": "Already a member of the covenant, awaiting a personal embrace of faith", "view": "reformed-presbyterian" },
+            { "label": "Loved and nurtured, awaiting their own faith and baptism in time", "view": "baptist-free-church" }
+          ]
+        },
+        {
+          "q": "Which sentence rings most true to you?",
+          "options": [
+            { "label": "Grace meets us through the appointed signs of the visible church", "view": "catholic-sacramental" },
+            { "label": "God works through covenant signs that promise and seal his grace", "view": "reformed-presbyterian" },
+            { "label": "The church is a fellowship of those who have personally trusted Christ", "view": "baptist-free-church" }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "view": "catholic-sacramental",
+          "name": "Leaning Catholic and Sacramental",
+          "blurb": "You tend to see grace as truly given through the sacraments and the ordered life of the historic church. This view holds Scripture and the living tradition closely together and treasures the visible continuity of the body across the centuries. Many believers find here a sense of being received into something far older and larger than themselves.",
+          "doctrine": "church"
+        },
+        {
+          "view": "reformed-presbyterian",
+          "name": "Leaning Reformed and Presbyterian",
+          "blurb": "You tend to see baptism as a covenant sign that seals God's promise to believers and their children, with the church led by elders in connected councils. This view honors the historic confessions while holding Scripture as the rule. Many Christians value the way it joins the children of the faithful to the covenant community.",
+          "doctrine": "church"
+        },
+        {
+          "view": "baptist-free-church",
+          "name": "Leaning Baptist and Free Church",
+          "blurb": "You tend to see baptism as the public testimony of those who personally profess faith, with each congregation ordering its own life under Christ. This view treasures the clarity of believer's baptism and the final authority of Scripture. Many find here a fellowship gathered around shared and chosen faith.",
+          "doctrine": "church"
+        }
+      ]
+    },
+    {
+      "slug": "last-things",
+      "title": "The End Times and the Millennium: A Which View Am I Quiz",
+      "intro": "These questions ask how you currently picture Christ's return, the thousand years of Revelation, and the shape of history's end. Answer with the instinct you hold today.",
+      "disclaimer": "This is a starting point for self-understanding, not a verdict on how the end will come. Godly readers of the same prophecies have differed here for a very long time, and humility belongs to all of us when we speak of what is still to come.",
+      "questions": [
+        {
+          "q": "How do you read the thousand years in Revelation chapter twenty?",
+          "options": [
+            { "label": "As a picture of Christ's present reign between his first and second coming", "view": "amillennial" },
+            { "label": "As an age of growing gospel influence before Christ returns", "view": "postmillennial" },
+            { "label": "As a real future age that begins when Christ comes back", "view": "historic-premillennial" },
+            { "label": "As a future earthly kingdom centered on God's promises to Israel", "view": "dispensational" }
+          ]
+        },
+        {
+          "q": "What do you expect history to look like before Christ returns?",
+          "options": [
+            { "label": "A mingling of growth and trouble until the very end", "view": "amillennial" },
+            { "label": "A gradual ripening as the gospel spreads and bears fruit across the world", "view": "postmillennial" },
+            { "label": "Increasing difficulty for the church before Christ breaks in", "view": "historic-premillennial" },
+            { "label": "A rising tribulation tied to God's unfolding plan for Israel and the nations", "view": "dispensational" }
+          ]
+        },
+        {
+          "q": "When does the millennium begin in relation to Christ's return?",
+          "options": [
+            { "label": "There is no separate earthly thousand years, the reign is now", "view": "amillennial" },
+            { "label": "Christ returns after the long age of gospel triumph", "view": "postmillennial" },
+            { "label": "Christ returns first, and then the thousand years follow", "view": "historic-premillennial" },
+            { "label": "Christ returns to establish the thousand year kingdom on earth", "view": "dispensational" }
+          ]
+        },
+        {
+          "q": "How do you understand the place of Israel in prophecy?",
+          "options": [
+            { "label": "The promises find their fullness in Christ and his whole people", "view": "amillennial" },
+            { "label": "The promises advance as the gospel gathers all nations over time", "view": "postmillennial" },
+            { "label": "Israel and the church share in one people, united in Christ", "view": "historic-premillennial" },
+            { "label": "God keeps distinct promises to Israel that await a future fulfillment", "view": "dispensational" }
+          ]
+        },
+        {
+          "q": "How do you read the prophetic symbols and numbers of Revelation?",
+          "options": [
+            { "label": "Largely as symbols picturing the whole age of the church", "view": "amillennial" },
+            { "label": "As pointing to the steady advance of Christ's kingdom in history", "view": "postmillennial" },
+            { "label": "As real future events, read with care for their symbolic weight", "view": "historic-premillennial" },
+            { "label": "As a fairly literal map of events still to unfold in order", "view": "dispensational" }
+          ]
+        },
+        {
+          "q": "What is your sense of the church's mission and its outcome in history?",
+          "options": [
+            { "label": "Faithful witness amid both harvest and hardship until Christ comes", "view": "amillennial" },
+            { "label": "A hopeful work that will see the nations widely turn to Christ", "view": "postmillennial" },
+            { "label": "Steadfast endurance through trial as we await his appearing", "view": "historic-premillennial" },
+            { "label": "Urgent witness as God's program moves toward its appointed seasons", "view": "dispensational" }
+          ]
+        },
+        {
+          "q": "When you hear the word rapture, what comes to mind?",
+          "options": [
+            { "label": "Believers meeting the returning Lord at the single great coming", "view": "amillennial" },
+            { "label": "The gathering of the saints when Christ comes after the age of growth", "view": "postmillennial" },
+            { "label": "The church caught up to the Lord as he returns in glory", "view": "historic-premillennial" },
+            { "label": "A distinct catching away of the church before a coming tribulation", "view": "dispensational" }
+          ]
+        },
+        {
+          "q": "Which sentence captures your hope for the end?",
+          "options": [
+            { "label": "Christ reigns now and will return to make all things new", "view": "amillennial" },
+            { "label": "The gospel will fill the earth before Christ comes in glory", "view": "postmillennial" },
+            { "label": "Christ will return, then reign, then bring the final renewal", "view": "historic-premillennial" },
+            { "label": "Christ will gather his church, then keep his promises to Israel in a coming kingdom", "view": "dispensational" }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "view": "amillennial",
+          "name": "Leaning Amillennial",
+          "blurb": "You tend to read the thousand years as a picture of Christ's present reign rather than a separate earthly age, with one return that renews all things. This view holds together the harvest and the hardship of the church's life until the end. Many believers find here a steady hope rooted in a Lord who already reigns.",
+          "doctrine": "last-things"
+        },
+        {
+          "view": "postmillennial",
+          "name": "Leaning Postmillennial",
+          "blurb": "You tend to expect the gospel to spread and bear wide fruit through history before Christ returns in glory. This view carries a strong hope that the nations will largely come to faith over time. Many Christians are drawn here by its confidence in the reach of Christ's kingdom.",
+          "doctrine": "last-things"
+        },
+        {
+          "view": "historic-premillennial",
+          "name": "Leaning Historic Premillennial",
+          "blurb": "You tend to expect Christ to return and then reign for a real future age, with the church enduring trial until he appears. This view reads Israel and the church as one people united in Christ. Many believers value its long roots in the early church and its blend of realism and hope.",
+          "doctrine": "last-things"
+        },
+        {
+          "view": "dispensational",
+          "name": "Leaning Dispensational",
+          "blurb": "You tend to expect a future earthly kingdom in which God keeps distinct promises to Israel, often with a catching away of the church before a coming tribulation. This view reads prophecy fairly directly and watches history move through appointed seasons. Many find here a strong sense of God's faithfulness to every word he has spoken.",
+          "doctrine": "last-things"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,375 @@
+{
+  "eras": [
+    {
+      "id": "apostolic",
+      "name": "The Apostolic Age",
+      "range": "around 30 to 100",
+      "summary": "It began with a small group of frightened people in a borrowed room. Jesus had been crucified, then raised, and his followers were waiting in Jerusalem because he told them to wait. On the day of Pentecost the Spirit came, and Peter, who had denied Jesus weeks before, stood in a public square and preached. Three thousand people believed that day. The church was born not as an institution but as a fire that caught.\n\nWhat happened next is one of the strangest stories in human history. A persecuted, illegal movement led by fishermen and tax collectors spread across the Roman world in a single generation. Paul, who had hunted Christians, became their greatest missionary, planting churches from Jerusalem to the edge of the empire. The letters he wrote to those churches, along with the Gospels and the other writings, became the New Testament. These were not abstract theology. They were pastoral letters to real people who were confused, suffering, and trying to follow Jesus.\n\nThen came the cost. Most of the apostles died as martyrs. In the year 70 the Romans destroyed Jerusalem and burned the temple, ending the old world the first believers had known. By the time the last apostle died, the founding generation was gone, and the church had to learn how to carry the faith without the men who had walked with Jesus. You belong to what they started.",
+      "events": [
+        {
+          "year": "around 30",
+          "title": "Pentecost in Jerusalem",
+          "note": "The Spirit came on the gathered believers, and Peter preached to the crowd. Thousands believed in a single day. This is the moment the church points to as its birth."
+        },
+        {
+          "year": "around 35",
+          "title": "Stephen is martyred",
+          "note": "Stephen became the first follower of Jesus to be killed for his faith. A young man named Saul stood watching, approving of the death."
+        },
+        {
+          "year": "around 35",
+          "title": "The conversion of Saul",
+          "note": "On the road to Damascus, the persecutor Saul met the risen Christ and was changed. He took the name Paul and became the church's furthest reaching missionary."
+        },
+        {
+          "year": "around 49",
+          "title": "The Council of Jerusalem",
+          "note": "The first leaders gathered to settle whether non Jewish believers had to keep the law of Moses. They decided the gospel was for everyone, on the same terms. It opened the door to the whole world."
+        },
+        {
+          "year": "around 49 to 62",
+          "title": "Paul's missionary travels and letters",
+          "note": "Paul planted churches across Asia Minor and Greece and wrote letters to them that we still read. Romans, Corinthians, Philippians, and the rest were born as real mail to real congregations."
+        },
+        {
+          "year": "around 64",
+          "title": "Persecution under Nero",
+          "note": "After a great fire in Rome, the emperor Nero blamed the Christians and had many killed. Tradition holds that both Peter and Paul died in Rome around this time."
+        },
+        {
+          "year": "70",
+          "title": "The fall of Jerusalem",
+          "note": "Roman armies crushed a Jewish revolt and destroyed the temple. The world the first believers had known came to an end, and the church scattered further into the wider empire."
+        },
+        {
+          "year": "around 95",
+          "title": "John writes Revelation",
+          "note": "Exiled to the island of Patmos, the apostle John recorded a vision of Christ's final victory. It was the last of the New Testament writings to be set down."
+        },
+        {
+          "year": "around 100",
+          "title": "The last apostle dies",
+          "note": "With the death of John, the generation that had seen Jesus in the flesh was gone. The church now had to carry the faith forward on the strength of their witness."
+        }
+      ]
+    },
+    {
+      "id": "persecuted",
+      "name": "The Persecuted Church",
+      "range": "around 100 to 313",
+      "summary": "For more than two hundred years, to be a Christian was to be in danger. Rome did not understand these people who would not burn incense to the emperor and would not call him lord. Christians met in homes, buried their dead in tunnels under the city, and lived knowing that arrest could come at any time. They were accused of strange crimes and blamed for plagues and famines. And still they grew.\n\nTwo things held them together in those years. The first was the witness of the martyrs. When men and women went calmly to their deaths rather than deny Christ, it shook the people who watched. One early writer said the blood of the martyrs was seed. Every death seemed to produce more believers. The second was the work of the thinkers, the ones we call the apologists, who wrote careful defenses of the faith and explained to a hostile world what Christians actually believed.\n\nThis was also the age when the church sorted out which writings truly carried the apostles' teaching, the slow shaping of the New Testament. False teachings forced believers to say more clearly what they held to be true. Then, after the worst persecution of all, everything turned. An emperor named Constantine saw a vision before a battle, won it, and in the year 313 made the Christian faith legal across the empire. The catacombs gave way to the open air.",
+      "events": [
+        {
+          "year": "around 112",
+          "title": "Pliny questions the Christians",
+          "note": "A Roman governor wrote to the emperor asking how to handle these believers who met before dawn and sang to Christ as to a god. His letter is one of the earliest outside descriptions of the church."
+        },
+        {
+          "year": "around 155",
+          "title": "The martyrdom of Polycarp",
+          "note": "An old bishop who had known the apostle John was burned at the stake. Told to curse Christ to save his life, he said he had served him eighty six years and would not deny his king."
+        },
+        {
+          "year": "around 165",
+          "title": "Justin Martyr is killed",
+          "note": "A philosopher who became a Christian, Justin wrote some of the first reasoned defenses of the faith for the Roman public. He paid for it with his life, and his name carries his end."
+        },
+        {
+          "year": "around 180",
+          "title": "Irenaeus writes against the heresies",
+          "note": "A bishop in Gaul answered the Gnostics, who taught a secret and twisted version of the faith. His work helped the church define the true gospel against the counterfeit."
+        },
+        {
+          "year": "around 200",
+          "title": "The canon takes shape",
+          "note": "The church was settling which books truly came from the apostles. Lists of accepted writings circulated, and the New Testament we hold today began to come into focus."
+        },
+        {
+          "year": "around 250",
+          "title": "The persecution under Decius",
+          "note": "The emperor Decius ordered everyone in the empire to sacrifice to the gods. Many Christians refused and died, and the church later wrestled with how to receive back those who had given in."
+        },
+        {
+          "year": "303",
+          "title": "The Great Persecution begins",
+          "note": "The emperor Diocletian launched the harshest assault yet, burning churches and Scriptures and killing believers across the empire. It was the last and worst storm before the calm."
+        },
+        {
+          "year": "312",
+          "title": "Constantine's vision at the bridge",
+          "note": "Before a decisive battle, Constantine reported seeing a sign of the cross with the words conquer by this. He won, and his life and the empire turned toward Christ."
+        },
+        {
+          "year": "313",
+          "title": "The Edict of Milan",
+          "note": "Constantine and his co emperor granted legal freedom to the Christian faith. After centuries underground, believers could worship in the open without fear of the sword."
+        }
+      ]
+    },
+    {
+      "id": "councils",
+      "name": "The Age of the Councils",
+      "range": "313 to 590",
+      "summary": "Freedom brought a new problem. Once the church was legal and then favored, the arguments that had simmered quietly came into the open, and they were not small arguments. They were about who Jesus is. Was he truly God, or the highest of God's creatures. Was he truly human, or only God wearing the appearance of a man. How can he be one person and yet both. These were not games for scholars. The salvation of every believer hung on the answers.\n\nSo the church did something new. It gathered its leaders from across the world into great councils to settle the truth together. At Nicaea in 325 they declared that the Son is of the same being as the Father, fully God. At later councils in Constantinople, Ephesus, and Chalcedon they worked out, line by careful line, how to confess that Jesus is one person in two natures, fully God and fully man. The creeds many churches still recite came out of these rooms.\n\nThese were also the years of the great fathers, teachers like Athanasius, the Cappadocians, and above all Augustine, whose writings on grace and on the human heart still shape the way believers think. And in 476 the western Roman Empire, which had ruled the world for centuries, finally fell. The city of Rome was sacked, the old order collapsed, and the church found itself standing in the ruins, holding a steadiness the empire had lost.",
+      "events": [
+        {
+          "year": "325",
+          "title": "The Council of Nicaea",
+          "note": "Bishops from across the empire gathered to answer Arius, who taught that the Son was less than the Father. They confessed the Son to be fully God, of the same being as the Father. The Nicene Creed began here."
+        },
+        {
+          "year": "around 367",
+          "title": "Athanasius lists the New Testament",
+          "note": "The bishop Athanasius, who had defended Nicaea through years of exile, wrote a letter naming the twenty seven books of the New Testament we hold today."
+        },
+        {
+          "year": "381",
+          "title": "The Council of Constantinople",
+          "note": "A second great council confirmed Nicaea and affirmed the full deity of the Holy Spirit. The creed reached close to the form recited in churches now."
+        },
+        {
+          "year": "around 387",
+          "title": "The conversion of Augustine",
+          "note": "A brilliant and restless man who had chased every pleasure and philosophy finally surrendered to Christ in a garden in Milan. His writings would shape the western church for a thousand years."
+        },
+        {
+          "year": "431",
+          "title": "The Council of Ephesus",
+          "note": "The council affirmed that Mary's child was truly God from the first moment, against a teaching that split Christ into two persons. It guarded the truth that God himself entered the womb."
+        },
+        {
+          "year": "451",
+          "title": "The Council of Chalcedon",
+          "note": "The church confessed that Jesus is one person in two natures, fully God and fully man, without confusion and without division. It remains the standard for understanding who Christ is."
+        },
+        {
+          "year": "around 460",
+          "title": "Patrick among the Irish",
+          "note": "A former slave returned to the land of his captivity to bring the gospel to Ireland. His mission helped carry the faith to peoples Rome had never reached."
+        },
+        {
+          "year": "476",
+          "title": "The fall of the western empire",
+          "note": "The last emperor in the west was deposed and the old Roman order collapsed. As the empire crumbled, the church remained, holding a center the world had lost."
+        },
+        {
+          "year": "around 529",
+          "title": "Benedict writes his Rule",
+          "note": "Benedict gave the monks a simple plan for a life of prayer and work and stability. His Rule would order monastic life across Europe for centuries."
+        }
+      ]
+    },
+    {
+      "id": "early-medieval",
+      "name": "The Early Medieval Church",
+      "range": "590 to 1054",
+      "summary": "After Rome fell, Europe entered long centuries that were often dark and uncertain. Cities shrank, learning faltered, and waves of new peoples moved across the land. In the middle of that disorder, the church became the one thing that held. And much of that holding happened in the monasteries, quiet communities of monks who prayed, farmed, copied the Scriptures by hand, and kept the light of learning burning when little else did.\n\nIt began with a remarkable man. Gregory the Great became pope in 590 and gave the western church a shepherd's heart and a missionary's drive. He sent monks north to convert the peoples of England, and from there the faith spread further still. Across these centuries, missionaries walked into forests and among warriors and brought the gospel to the Franks, the Germans, the Slavs, and the peoples of the north, until most of Europe had been baptized.\n\nTwo great forces shaped the era. In the seventh century a new faith, Islam, arose and swept across the southern and eastern lands that had been Christian, changing the map forever. And in the west, on Christmas Day in the year 800, the pope crowned Charlemagne emperor, binding the church and the new Europe together. But east and west had been drifting apart for a long time, in language, in worship, in the question of authority. In 1054 the break became formal. The Great Schism split the church into the Roman Catholic west and the Orthodox east, a wound not yet healed.",
+      "events": [
+        {
+          "year": "590",
+          "title": "Gregory the Great becomes pope",
+          "note": "A monk who did not want the office became one of its greatest holders. Gregory cared for the poor of Rome, reformed worship, and sent the gospel north into England."
+        },
+        {
+          "year": "597",
+          "title": "Augustine of Canterbury reaches England",
+          "note": "Gregory sent a band of monks to bring the faith to the English. They landed in Kent and began the long work that would make England a Christian land."
+        },
+        {
+          "year": "around 622",
+          "title": "The rise of Islam",
+          "note": "In Arabia a new religion arose under Muhammad and spread with great speed. Within a century it had taken much of the once Christian Middle East and North Africa, reshaping the world the church lived in."
+        },
+        {
+          "year": "732",
+          "title": "The battle of Tours",
+          "note": "A Frankish army under Charles Martel halted the advance of Muslim forces into western Europe. The victory helped keep the heart of the continent within the Christian world."
+        },
+        {
+          "year": "around 754",
+          "title": "Boniface among the Germans",
+          "note": "An English monk became the apostle to the Germans, planting churches across the forests of central Europe. He died a martyr, still at his work among the people he came to reach."
+        },
+        {
+          "year": "800",
+          "title": "Charlemagne crowned emperor",
+          "note": "On Christmas Day the pope placed a crown on Charlemagne in Rome. The act tied the church to a new European order and revived learning across his lands."
+        },
+        {
+          "year": "around 863",
+          "title": "Cyril and Methodius among the Slavs",
+          "note": "Two brothers brought the gospel to the Slavic peoples and gave them a written language so they could read the Scriptures in their own tongue. Their work still shapes eastern Europe."
+        },
+        {
+          "year": "988",
+          "title": "The baptism of Rus",
+          "note": "Prince Vladimir of Kyiv embraced the eastern faith and led his people into the church. From this seed grew the great Orthodox tradition of Russia and its neighbors."
+        },
+        {
+          "year": "1054",
+          "title": "The Great Schism",
+          "note": "After centuries of drift over worship and authority, representatives of Rome and Constantinople exchanged condemnations. The church split into the Catholic west and the Orthodox east."
+        }
+      ]
+    },
+    {
+      "id": "high-medieval",
+      "name": "The High Medieval Church",
+      "range": "1054 to 1500",
+      "summary": "These were the centuries when the western church stood at the height of its power, and also the centuries when the cracks that would one day break it open began to show. Popes commanded kings. Great cathedrals rose stone by stone toward heaven. The faith touched every part of ordinary life, from birth to death and every season in between. It was a confident age, and a troubled one.\n\nThe crusades began in 1095, armies marching east to take back the holy places from Muslim rule. They were driven by real devotion and stained by real cruelty, and their memory is heavy. At the same time, something quieter and more lasting was happening. The first universities opened, and brilliant teachers called the scholastics set out to think through the whole of the faith with the tools of reason. Thomas Aquinas, the greatest of them, wrote vast works showing how faith and reason belong together rather than at war.\n\nThe age also produced the friars, men like Francis of Assisi, who gave up wealth to live among the poor, and Dominic, who sent preachers to teach the truth. They were a living reproach to a church grown rich and comfortable. And there were voices crying for reform, men like Wycliffe and Hus, who saw what was wrong and paid for saying so. In 1453 the city of Constantinople, the last of the old Roman world, fell to the Ottoman Turks. An age was ending, and the world stood on the edge of a great upheaval.",
+      "events": [
+        {
+          "year": "1095",
+          "title": "The First Crusade is called",
+          "note": "Pope Urban the Second summoned the knights of Europe to march east and recover Jerusalem. The crusades that followed mixed sincere devotion with terrible violence and left wounds that linger still."
+        },
+        {
+          "year": "around 1115",
+          "title": "Bernard of Clairvaux and the Cistercians",
+          "note": "A young monk named Bernard led a renewal of monastic life and became the most listened to voice of his age. His warm writings on the love of God still feed believers."
+        },
+        {
+          "year": "around 1150",
+          "title": "The first universities",
+          "note": "Schools at Paris, Bologna, and Oxford grew into the first universities, where the study of theology stood at the center. Christian faith gave birth to the western tradition of learning."
+        },
+        {
+          "year": "around 1209",
+          "title": "Francis of Assisi gives up everything",
+          "note": "The son of a rich merchant stripped off his fine clothes and chose a life of poverty among the poor and the lepers. His followers, the Franciscans, spread joy and simplicity across Europe."
+        },
+        {
+          "year": "1216",
+          "title": "Dominic founds the Order of Preachers",
+          "note": "Dominic gathered learned men to preach the gospel and answer false teaching. His Dominicans became teachers and scholars across the new universities."
+        },
+        {
+          "year": "around 1274",
+          "title": "Thomas Aquinas and the Summa",
+          "note": "The greatest of the scholastic teachers wrote vast works showing that faith and reason are friends, not enemies. His thought still guides much of Christian theology."
+        },
+        {
+          "year": "around 1380",
+          "title": "Wycliffe and the English Bible",
+          "note": "John Wycliffe challenged the wealth and power of the church and helped put the Scriptures into English for ordinary people. He is often called the morning star of the Reformation."
+        },
+        {
+          "year": "1415",
+          "title": "Jan Hus is burned",
+          "note": "A Czech preacher who called for reform and for Scripture in the people's language was condemned and burned at the stake. His death lit a fire that would not go out."
+        },
+        {
+          "year": "1453",
+          "title": "The fall of Constantinople",
+          "note": "The great Christian city of the east fell to the Ottoman Turks, ending the last remnant of the Roman Empire. Scholars fled west with their books, helping spark the new learning of the Renaissance."
+        }
+      ]
+    },
+    {
+      "id": "reformation",
+      "name": "The Reformation",
+      "range": "1500 to 1650",
+      "summary": "It started with a monk who could not find peace. Martin Luther had done everything the church asked, and still he was terrified of God. Then he read in Paul's letter to the Romans that the righteous live by faith, and the meaning broke over him like dawn. We are not saved by our own efforts but by trusting what Christ has already done. That truth set him free, and it would shake the western world.\n\nIn 1517 Luther nailed a list of ninety five complaints to a church door in Wittenberg, mostly about the selling of forgiveness. He only meant to start a debate. Instead, with the new printing press carrying his words across Europe, he started a revolution. Soon others took up the work in their own places. John Calvin built a whole vision of the Christian life in Geneva. In England the church broke from Rome and slowly found its own path. Radical reformers went further still, insisting on believer's baptism and a church free from the state.\n\nThe Catholic Church answered with a reform of its own. At the Council of Trent it sharpened its teaching and cleaned up its worst abuses, and new orders like the Jesuits carried its renewal around the globe. But the splits came at a fearful price. For more than a century, Catholics and Protestants fought brutal wars, ending in the exhaustion of the Thirty Years War. Out of all the blood and argument came a hard truth the church is still learning. The gospel cannot be spread by the sword.",
+      "events": [
+        {
+          "year": "1517",
+          "title": "Luther's Ninety Five Theses",
+          "note": "Martin Luther posted his objections to the selling of indulgences on the church door in Wittenberg. He meant to start a debate and instead began the Reformation."
+        },
+        {
+          "year": "1521",
+          "title": "Luther stands at Worms",
+          "note": "Ordered to take back his writings before the emperor, Luther said he could not go against conscience and the word of God. Here I stand, he is remembered as saying."
+        },
+        {
+          "year": "1525",
+          "title": "The radical reformers and believer's baptism",
+          "note": "A group in Zurich began baptizing adults who professed faith, breaking with both Rome and the other reformers. These Anabaptists wanted a church of the willing, set apart from the state."
+        },
+        {
+          "year": "1534",
+          "title": "The English break with Rome",
+          "note": "King Henry the Eighth declared the English church independent of the pope. What began as a royal quarrel grew, under others, into a genuine reform and the Church of England."
+        },
+        {
+          "year": "1536",
+          "title": "Calvin and Geneva",
+          "note": "John Calvin published his Institutes and soon led the church in Geneva. His clear teaching on the sovereignty of God shaped Reformed churches across Europe and beyond."
+        },
+        {
+          "year": "1545",
+          "title": "The Council of Trent begins",
+          "note": "The Catholic Church gathered to answer the Reformation, defining its doctrine and ending many of the abuses that had provoked the split. It guided Catholic life for four hundred years."
+        },
+        {
+          "year": "around 1540",
+          "title": "Ignatius founds the Jesuits",
+          "note": "A wounded soldier turned to Christ and gathered the Society of Jesus, an order of disciplined men devoted to teaching and mission. The Jesuits carried Catholic renewal around the world."
+        },
+        {
+          "year": "1611",
+          "title": "The King James Bible",
+          "note": "English scholars produced a translation of remarkable beauty that would shape the language and faith of the English speaking world for centuries."
+        },
+        {
+          "year": "1648",
+          "title": "The end of the Thirty Years War",
+          "note": "After more than a century of religious wars, a worn out Europe made peace. The bloodshed taught a hard lesson about trying to force faith by power."
+        }
+      ]
+    },
+    {
+      "id": "modern-global",
+      "name": "The Modern and Global Church",
+      "range": "1650 to today",
+      "summary": "The modern age confronted the church with new questions and carried it to new places. On one side came doubt. Thinkers began to ask whether God was needed at all, whether miracles could happen, whether the Bible could be trusted. The church had to learn to answer not the sword of Rome but the cool skepticism of the lecture hall. Some believers lost their nerve. Others rose to meet the challenge with minds as sharp as any critic.\n\nOn another side came fire. Again and again, when faith grew cold, God seemed to send revival. The Great Awakenings swept through Britain and America under preachers like Wesley and Whitefield and Edwards, and ordinary people were swept up in a living encounter with God. Out of that warmth came the modern missionary movement. Men and women left everything to carry the gospel to India, to China, to Africa, to the islands of the sea, often never to return home.\n\nAnd so the map changed again. The Catholic Church renewed itself for the modern world at the Second Vatican Council. New movements of the Spirit spread across continents. And quietly, decisively, the center of the Christian faith shifted. Where once it was European, today the church is most alive in Africa, in Asia, in Latin America, among peoples the first missionaries only dreamed of reaching. The faith that began in a borrowed room in Jerusalem now belongs to the whole world. And you belong to it. This story is still being written, and your life is part of the next page.",
+      "events": [
+        {
+          "year": "around 1740",
+          "title": "The Great Awakening",
+          "note": "Preachers like Jonathan Edwards and George Whitefield saw thousands turn to Christ in a great wave of revival across Britain and the American colonies. Cold religion gave way to living faith."
+        },
+        {
+          "year": "1738",
+          "title": "John Wesley's heart is warmed",
+          "note": "After years of striving, Wesley felt his heart strangely warmed as he trusted Christ alone. The movement he led, the Methodists, brought the gospel to the poor and working people."
+        },
+        {
+          "year": "1793",
+          "title": "William Carey sails for India",
+          "note": "A shoemaker turned preacher, Carey urged the church to take the gospel to the nations and then went himself. He is often called the father of the modern missionary movement."
+        },
+        {
+          "year": "around 1859",
+          "title": "The rise of modern skepticism",
+          "note": "New theories in science and history and philosophy led many to question the faith. The church was pressed to defend the truth in an age of doubt, and many able minds rose to answer."
+        },
+        {
+          "year": "around 1906",
+          "title": "The Azusa Street revival",
+          "note": "A humble gathering in Los Angeles sparked the Pentecostal movement, with its hunger for the Holy Spirit. It would grow into one of the fastest spreading Christian movements in history."
+        },
+        {
+          "year": "around 1945",
+          "title": "Bonhoeffer and the cost of discipleship",
+          "note": "The German pastor Dietrich Bonhoeffer resisted the evil of the Nazi regime and was executed for it. His life and writings reminded the church that following Christ has a cost."
+        },
+        {
+          "year": "1962",
+          "title": "The Second Vatican Council",
+          "note": "The Catholic Church gathered to renew its life for the modern world, opening worship to the languages of the people and reaching out to other Christians."
+        },
+        {
+          "year": "around 1970",
+          "title": "C. S. Lewis and the modern defense of faith",
+          "note": "Writers like Lewis, who had been an atheist before coming to Christ, gave a generation of doubters reasons to believe again. Their work still speaks to honest questions."
+        },
+        {
+          "year": "today",
+          "title": "The center shifts to the global south",
+          "note": "Christianity is now most alive in Africa, Asia, and Latin America, growing fastest among the peoples once thought far from the faith. The story that began in Jerusalem now belongs to the whole world, and to you."
+        }
+      ]
+    }
+  ]
+}
