@@ -75,6 +75,10 @@ const PropheticGlossary = lazy(() => import("./pages/prophetic/PropheticGlossary
 const PropheticQuestions = lazy(() => import("./pages/prophetic/PropheticQuestions"));
 const PropheticWitnesses = lazy(() => import("./pages/prophetic/PropheticWitnesses"));
 const PropheticTimeline = lazy(() => import("./pages/prophetic/PropheticTimeline"));
+const NationHub = lazy(() => import("./pages/nation/NationHub"));
+const NationEssay = lazy(() => import("./pages/nation/NationEssay"));
+const NationScorecard = lazy(() => import("./pages/nation/NationScorecard"));
+const NationPolicy = lazy(() => import("./pages/nation/NationPolicy"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
 const SermonOutline = lazy(() => import("./pages/tools/SermonOutline"));
@@ -183,6 +187,12 @@ function Router() {
         <Route path="/justice/glossary"><PropheticGlossary config={JUSTICE} /></Route>
         <Route path="/justice/witnesses"><PropheticWitnesses config={JUSTICE} /></Route>
         <Route path="/justice/timeline"><PropheticTimeline /></Route>
+        <Route path="/nation/christian-nation"><NationEssay slug="christian-nation" /></Route>
+        <Route path="/nation/theocracy"><NationEssay slug="theocracy" /></Route>
+        <Route path="/nation/empire"><NationEssay slug="empire" /></Route>
+        <Route path="/nation/scorecard"><NationScorecard /></Route>
+        <Route path="/nation/policy"><NationPolicy /></Route>
+        <Route path="/nation"><NationHub /></Route>
         <Route path="/justice/topic/:slug"><PropheticTopic config={JUSTICE} /></Route>
         <Route path="/justice"><PropheticHub config={JUSTICE} /></Route>
         <Route path="/theology/how-to-use" component={TheologyMethodology} />

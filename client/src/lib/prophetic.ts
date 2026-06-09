@@ -76,6 +76,7 @@ export const DISRUPTION: SectionConfig = {
     cta: "Search your own heart →",
   },
   tools: [
+    { href: "/nation", title: "Christ and the Nation", desc: "Was America a Christian nation? How close is each party to the Bible? What a biblical government would actually mean." },
     { href: "/justice/timeline", title: "The injustice timeline", desc: "An honest reckoning with the injustices of history, the church's and the ideologies' alike. No one's hands are clean." },
     { href: "/disruption/witnesses", title: "The witnesses", desc: "The people who told the church and the powers costly truth and refused to be captured." },
     { href: "/disruption/questions", title: "Hard questions", desc: "Is the gospel political? Is Christianity left or right? What is social justice?" },
@@ -107,6 +108,7 @@ export const JUSTICE: SectionConfig = {
   },
   postureBlurb: "Biblical justice defined from the text up, God's lean toward the poor and the foreigner, and the distinction the section turns on: the binding command to do justice versus the prudential policy meant to achieve it. Read this first.",
   tools: [
+    { href: "/nation", title: "Christ and the Nation", desc: "Was America a Christian nation? How close is each party to the Bible? What a biblical government would actually mean." },
     { href: "/justice/timeline", title: "The injustice timeline", desc: "An honest reckoning with the injustices of history, the church's and the ideologies' alike. No one's hands are clean." },
     { href: "/justice/witnesses", title: "The witnesses", desc: "The people who did justice at real cost, from the abolitionists to the rescuers of the trafficked." },
     { href: "/justice/glossary", title: "Justice glossary", desc: "Mishpat, tsedaqah, shalom, jubilee, and the loaded words, defined fairly." },
