@@ -53,7 +53,7 @@ export default function AdminSetupNavigation() {
 
     // 2) Tag each article in small batches, retrying a stalled call a few times.
     const BATCH = 10;
-    const items = rows.map((r) => ({ id: r.id, slug: r.slug, sub: r.sub, series: !!r.series }));
+    const items = rows.map((r) => ({ slug: r.slug, pillar: r.pillar ?? null, sub: r.sub, series: !!r.series }));
     const sendBatch = async (chunk: typeof items) => {
       let lastErr: any;
       for (let attempt = 0; attempt < 3; attempt++) {
