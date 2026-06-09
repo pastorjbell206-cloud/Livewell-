@@ -85,6 +85,51 @@ const marriageFamily = [
 `I cannot give my sons the father I did not have. That man is gone; that gift was never mine to hand on. I can only do the one thing the absence taught me by its lack — stay. Be in the room. Be in the room again tomorrow. It is a smaller inheritance than the one I wanted to leave and a larger one than the one I got, and on the days I manage it, it is enough, and on the days I fail it, the staying is still the only repair. The covenant is not a feeling I keep having. It is a door I keep not walking out of.`,
 ].join("\n\n");
 
+const barmen = [
+`We like to imagine we would have been in the minority. Almost no one was.`,
+`In 1933, when the regime came for the German Protestant church, it did not have to break down the door. The church opened it. A movement called the Deutsche Christen — the German Christians, and they kept the word Christian — swept the church elections that summer, hung the swastika beside the cross in the sanctuaries, and set about purging the faith of everything they judged foreign to the national spirit, beginning with the Old Testament and the Jewish body of Jesus himself. They were not a fringe. They were the majority, and they were sincere, and they sang the old hymns.`,
+`They sang the old hymns.`,
+`A minority refused. In May of 1934 a few thousand of them met at Barmen and signed a declaration written mostly by Karl Barth, and it said one thing in several ways: Jesus Christ is the one Word of God whom we have to hear and obey, and the church betrays itself the moment it hands that authority to any other power, any other event, any other leader. It reads like a creed. It was a refusal. The men who signed it called themselves the Confessing Church, and confessing meant what it had meant in the year 250 — saying out loud the thing that costs you. Martin Niemöller, one of them, went to a concentration camp for it. He had voted for the regime in the beginning. He said so later, which is more than most.`,
+`He had voted for it in the beginning. That is the part we skip.`,
+`Dietrich Bonhoeffer was twenty-seven that year, and almost alone among them he saw early what the others saw late — that a church which would not stand for the Jew had already stopped being the church, whatever it still called itself. Only the one who cries out for the Jews, he said, may sing Gregorian chant. He did not get to be safe and right. He chose, and the choosing took him through exile and conspiracy to a wire noose at Flossenbürg in April 1945, two weeks before the camp was liberated. The cost was not a metaphor. It rarely is.`,
+`I have read this history the comfortable way, the way it is usually read — as a story about them, the Germans, the ones who failed a test I am certain I would have passed. That reading is the test, and it fails me. The German Christians were not monsters who hated Christ. They were ordinary believers who loved their country and could no longer feel the seam between loving it and worshiping it, who heard a leader name their fears and their grievances and mistook the relief for the voice of God. I know that man. I have been close to that man. On my worst days I have preached to please him.`,
+`The Confessing Church was not the strong remnant. It was small, frightened, divided, and mostly too late; by the time Barmen was signed the regime was entrenched and the worst was still coming. Its witness did not save Germany. It saved something smaller and more durable — the possibility that the church could still tell the difference between Christ and Caesar even when nearly everyone around it had forgotten there was one.`,
+`We do not get to know in advance which church we would have been. We only get to know which one we are being, now, in the small votes no one records — the sermon softened, the silence kept, the flag we will not allow anyone to question. The test was never whether you would have signed at Barmen. It is whether you can still hear the seam.`,
+].join("\n\n");
+
+const mammon = [
+`The most successful heresy in American history never denied the gospel. It improved it.`,
+`It kept Jesus, kept the Bible, kept the altar call and the worship band and the language of faith — and added one sentence the New Testament never says: that God wants you rich. The prosperity gospel does not arrive as a lie. It arrives as good news, which is exactly what the word gospel means, and that is precisely why it works. Kate Bowler, who studied its history and was then handed a diagnosis no amount of faith would heal, wrote that it offers Americans the thing they most want, which is a formula — a guarantee that the right belief, the right seed, the right confession will bend the universe toward their comfort. It is mammon, and mammon has learned to pray.`,
+`Mammon has learned to pray.`,
+`Jesus was not cautious about money. He was alarmed by it. He told a rich man to sell everything, watched him walk away, and did not chase him. He said it is easier for a camel to go through the eye of a needle — and the church has spent two thousand years widening the needle and inventing gates and metaphors to get the camel through, because we cannot believe he meant it. He meant it. Mammon, he said, is not a possession but a master, a rival god offering security and standing and a future on terms you appear to control, and you cannot serve it and God at once — not because money is filthy, but because it is jealous.`,
+`The older church knew this and built fences against it. The law of Israel canceled debts every seventh year and returned land every fiftieth, so that no family could be permanently ruined and none permanently enthroned — a Jubilee, a hard reset against the gravity of wealth. John Wesley, watching the early Methodists grow prosperous and cold, left the rule we have quietly retired: earn all you can, save all you can, give all you can. Then he warned that the first two commands would strangle the third — that the religion which produces diligence produces riches, and riches produce pride and the love of the world, so that the faith itself destroys the spirit of the faith. He was describing a mechanism, not a risk. He was describing us.`,
+`I have stood over the offering and felt the pull to soften it, to make the ask comfortable, to reassure the room that God does not really want anything that would cost them — because a congregation that gives generously is harder to keep than one that is merely entertained, and I have wanted to be kept. The prosperity preacher and the timid one are closer than either will admit. Both have decided the gospel must not threaten the bank account. One blesses the idol. The other simply refuses to name it.`,
+`Money is not neutral. Money is not yours. Money is the clearest test you will ever take of who you actually trust — and a church that cannot speak honestly about it has not protected its people from the test. It has only left them to fail it alone.`,
+`You will give your life to something that promises to keep you. The only question is whether it can. Mammon promises and cannot; it takes the years and the worry and the soul and returns a number that never feels like enough, and then asks for more, and calls the asking ambition. There is a God who keeps what is entrusted to him. He is not the one on the coins.`,
+].join("\n\n");
+
+const thisLand = [
+`Frederick Douglass said there were two religions in America going by the same name, and you had to choose which one you meant. He was not being dramatic. He had been owned by men who prayed.`,
+`In an appendix to his 1845 narrative — written because he feared readers would take him for an enemy of the faith — Douglass drew the line as sharply as it has ever been drawn: between the Christianity of Christ and the Christianity of this land, which he called not different in degree but opposite, so that to be the friend of the one is necessarily to be the enemy of the other. He had watched a slaveholder get religion and turn crueler, not kinder — now able to whip a woman and quote Scripture for the lash. The cross hung over the auction block. The same hymnal was sung on both sides of it.`,
+`The same hymnal, on both sides of it.`,
+`This is not an old wound the church has since cleaned. It is a seam the church was built along. In 1845 the largest Protestant body in America split in two over whether a missionary could own slaves; the pro-slavery half organized itself into a new denomination, went on being the largest Protestant body in the country, and did not formally repent of its founding for a hundred and fifty years. The most segregated hour in America, Martin Luther King said, is eleven o'clock on Sunday morning — and it is still nearly true, and we have learned to discuss it as a preference rather than a verdict.`,
+`King's hardest words were not for the men with the dogs and the hoses. They were for the church that agreed with him in private and asked him to wait. From the Birmingham jail he wrote that the great stumbling block was not the rabid segregationist but the white moderate, more devoted to order than to justice, who constantly says I agree with your goal but cannot agree with your methods, who paternalistically believes he can set the timetable for another man's freedom. He said he had been gravely disappointed with the white church. He said it as a preacher, about the church, from inside it — which is the only place the indictment counts.`,
+`I am a white pastor, and the comfortable move here is to praise Douglass and King as though quoting the prophets were the same as obeying them — to perform the lament and skip the repentance, which is exactly the moderate's move in a newer costume. Willie James Jennings argues that the deepest problem was never only cruelty but imagination: a Christianity that learned to picture the world with race at the center and God off to the side, and that diseased imagination did not stay in 1845. It furnished the rooms I was discipled in. I did not have to be taught to hate. I only had to be taught not to notice, and the church was an excellent teacher.`,
+`Reconciliation has become a soft word, and the softness is the evasion. There is no reconciliation without repentance, and no repentance without naming the specific thing — not the abstraction of racism but the auction block the steeple stood over, the split that was never mended, the hour still segregated by a thousand quiet choices. Katallage, the New Testament word, is not a feeling of warmth across a divide. It is the costly work of God making enemies into one body, and it runs through the cross, which means it runs through death.`,
+`Douglass left the choice where it belongs. Two religions, one name, and no one gets to claim the first while practicing the second. The church in this country has been practicing the second for four hundred years and singing the songs of the first, and the distance between them is not behind us. It is the seam we are still standing on, and the only way off it is the way the gospel always goes — down through the truth, not around it.`,
+].join("\n\n");
+
+const court = [
+`The people a leader hurts first are the ones standing closest to him. They are also the ones least able to say so.`,
+`A pastor builds a staff, and somewhere in the building a quiet substitution happens: he begins to prefer agreement to truth and to call the preference loyalty. The team becomes a court. The gifted associate who pushes back gets labeled divisive; the one who echoes gets called faithful; and within a few years the leader is surrounded by people who have learned that their security depends on telling him what he already believes. He calls this unity. It is the opposite of unity. It is a man slowly sealing himself off from the one thing that might still save him — contradiction from someone who loves him.`,
+`He calls it unity. It is the opposite.`,
+`Henri Nouwen named the temptation exactly. The great seduction of leadership, he wrote, is power — the substitution of power for love, because power is easier; it is easier to control people than to be in relationship with them, easier to own a building than to know the people inside it. Edwin Friedman, who spent his life watching congregations and families, said the failure of leadership in anxious systems is almost never a failure of skill. It is a failure of nerve — the leader's inability to stay himself under pressure, to tolerate other people's anxiety without either caving to it or crushing it. The court forms around a leader who cannot bear to be disliked. It is built out of his fear, one appointment at a time.`,
+`Bonhoeffer saw the same disease in a different room. In Life Together he warned that the man who loves his dream of community more than the community itself will destroy the community, however sincere his intentions — because he is serving the picture in his head, not the people in front of him, and the people will always disappoint the picture. A staff is not a picture. It is a collection of actual, limited, gifted, wounded people, and the leader's job is not to arrange them into his vision but to lay down his life for them — a sentence we quote about marriage and forget about management.`,
+`I have run the court. I have felt the warmth of a room that agrees with me and mistaken it for the favor of God. I have let a staff member carry the weight of my anxiety because I could, and called it delegation. The hardest people for me to pastor have always been the ones who work for me, because with everyone else the gospel is a message I deliver and with them it is a power I hold — and power is the exact place the gospel is hardest to actually believe. It is easy to preach servant leadership. It is the costliest thing I do.`,
+`The test of a leader is not the size of the team or the smoothness of the room. It is whether the people closest to him can tell him the truth and survive it — whether dissent is treated as a gift or a threat, whether the gifted associate is developed or merely managed, whether the staff goes home built up or used up. A church can grow for years on a leader's gifts while quietly breaking the people who serve him. The numbers will not show it. The funerals of their callings are private.`,
+`Jesus had a team, and on the last night he washed their feet — the master on the floor, in the slave's posture, before the men who would scatter and deny him within hours. He knew exactly who they were. He served them anyway. That is the whole of it, and it has almost nothing to do with leadership as we teach it and everything to do with whether the person nearest your power goes home safer or poorer for being there.`,
+].join("\n\n");
+
 const items = [
   {
     slug: "the-constantinian-bargain",
@@ -139,6 +184,42 @@ const items = [
     excerpt: "I was raised without a father and given five sons. Everything I believe about covenant, I learned in the gap between those two facts.",
     readTime: "5 min read",
     body: marriageFamily,
+  },
+  {
+    slug: "the-year-the-church-agreed",
+    title: "The Year the Church Agreed",
+    pillar: "Theological Depth",
+    subPathway: "Church History",
+    excerpt: "In 1933 the German church did not resist the regime. It volunteered. We would all like to believe we would have been the exception.",
+    readTime: "5 min read",
+    body: barmen,
+  },
+  {
+    slug: "mammon-learned-to-pray",
+    title: "Mammon Learned to Pray",
+    pillar: "Integrated Life",
+    subPathway: "Vocation & Money",
+    excerpt: "The most successful heresy in American history did not deny the gospel. It improved it — and added one sentence the New Testament never says.",
+    readTime: "5 min read",
+    body: mammon,
+  },
+  {
+    slug: "the-christianity-of-this-land",
+    title: "The Christianity of This Land",
+    pillar: "Prophetic Justice",
+    subPathway: "Race & Reconciliation",
+    excerpt: "Frederick Douglass said there were two religions in America wearing the same name. The seam he named still runs straight through the church.",
+    readTime: "6 min read",
+    body: thisLand,
+  },
+  {
+    slug: "a-team-is-not-a-court",
+    title: "A Team Is Not a Court",
+    pillar: "Leadership Formation",
+    subPathway: "Staff & Teams",
+    excerpt: "Pastors gather agreement and call it loyalty. The people closest to a leader's power are the first ones it can wound.",
+    readTime: "5 min read",
+    body: court,
   },
 ];
 
