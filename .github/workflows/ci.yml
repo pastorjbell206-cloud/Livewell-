@@ -37,3 +37,30 @@ jobs:
 
       - name: Build
         run: pnpm run build      
+
+  quality:
+    # Lighthouse + axe against the built site, in a runner where Chrome exists.
+    # Informational on PRs (does not block) until baselines stabilize.
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run sitemap && pnpm run build
+      - name: Serve built site
+        run: npx serve -s dist/public -l 4173 &
+      - name: Lighthouse (home)
+        run: |
+          npx --yes lighthouse http://localhost:4173/ \
+            --chrome-flags="--headless --no-sandbox" \
+            --only-categories=performance,accessibility,best-practices,seo \
+            --output=json --output-path=./lh.json --quiet
+          node -e "const r=require('./lh.json').categories; for (const k in r) console.log(k, Math.round(r[k].score*100))"
+      - name: Axe (home, writing, resources)
+        run: |
+          npx --yes @axe-core/cli http://localhost:4173/ http://localhost:4173/writing http://localhost:4173/resources --exit
