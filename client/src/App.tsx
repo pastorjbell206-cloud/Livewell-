@@ -38,6 +38,9 @@ const ForLeaders = lazy(() => import("./pages/ForLeaders"));
 const Membership = lazy(() => import("./pages/Membership"));
 const MembershipSuccess = lazy(() => import("./pages/MembershipSuccess"));
 const Discipleship = lazy(() => import("./pages/Discipleship"));
+const LifeIndex = lazy(() => import("./pages/life/LifeIndex"));
+const LifeDomain = lazy(() => import("./pages/life/LifeDomain"));
+const WholeLifeAssessment = lazy(() => import("./pages/life/WholeLifeAssessment"));
 const Marriage = lazy(() => import("./pages/Marriage"));
 const Parenting = lazy(() => import("./pages/Parenting"));
 const Doubt = lazy(() => import("./pages/Doubt"));
@@ -186,6 +189,9 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/marriage" component={Marriage} />
+        <Route path="/life/assessment" component={WholeLifeAssessment} />
+        <Route path="/life/:slug" component={LifeDomain} />
+        <Route path="/life" component={LifeIndex} />
         <Route path="/parenting" component={Parenting} />
         <Route path="/family/catechism" component={FamilyCatechism} />
         <Route path="/family/devotions" component={FamilyDevotions} />

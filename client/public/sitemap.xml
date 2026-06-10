@@ -176,6 +176,16 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.livewellbyjamesbell.co/life</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/life/assessment</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.livewellbyjamesbell.co/family</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -1037,6 +1047,16 @@
   </url>
   <url>
     <loc>https://www.livewellbyjamesbell.co/leadership/formation/the-hidden-temptations-of-power</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/life/the-body-and-the-rhythms</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/life/the-anxious-mind</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
