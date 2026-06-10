@@ -17,6 +17,8 @@ import BookDetail from "./pages/BookDetail";
 import About from "./pages/About";
 
 const Resources = lazy(() => import("./pages/Resources"));
+const ContextLibrary = lazy(() => import("./pages/resources/ContextLibrary"));
+const ContextGuide = lazy(() => import("./pages/resources/ContextGuide"));
 const SubstackPage = lazy(() => import("./pages/Substack"));
 const Pastors = lazy(() => import("./pages/Pastors"));
 const FileStorage = lazy(() => import("./pages/FileStorage"));
@@ -254,6 +256,8 @@ function Router() {
         <Route path="/article-collections" component={ArticleCollections} />
         <Route path="/book-bundles" component={BookBundles} />
         <Route path="/lead-magnets/:magnetId" component={LeadMagnetsPage} />
+        <Route path="/resources/context/:slug" component={ContextGuide} />
+        <Route path="/resources/context" component={ContextLibrary} />
         <Route path="/resources" component={Resources} />
         <Route path="/books" component={Books} />
         <Route path="/books/:slug" component={BookDetail} />
