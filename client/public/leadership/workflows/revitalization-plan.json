@@ -1,0 +1,191 @@
+{
+  "slug": "revitalization-plan",
+  "title": "The Revitalization Planner",
+  "subtitle": "Build a written plan to lead a declining church back toward life, with your eyes open about the cost.",
+  "intro": "Most revitalizations fail. You should know that before you write a single line of this plan. The pastor who walks in believing love and energy will be enough usually walks out wounded, and the church declines a little faster for having hoped.\n\nThis planner is not here to cheer you on. It is here to make you write down the truth, count the cost, and decide whether you are willing to pay it over years rather than months.\n\nWork slowly. A plan written in an afternoon to feel productive is worth less than three honest sentences you are actually willing to live by.",
+  "stages": [
+    {
+      "id": "truth",
+      "kicker": "Stage One",
+      "title": "Tell the truth",
+      "note": "No plan built on a flattering picture will hold. Write down where the church actually is.",
+      "prompts": [
+        {
+          "id": "r1a",
+          "q": "How many people actually attend, how old are they, and what was the number ten years ago?"
+        },
+        {
+          "id": "r1b",
+          "q": "What killed the momentum, and how far back does the decline really go? Do not start at the most recent symptom.",
+          "help": "Most decline began long before the crisis everyone blames it on."
+        },
+        {
+          "id": "r1c",
+          "q": "What is the money situation, plainly, and how many months does the church have if nothing changes?"
+        },
+        {
+          "id": "r1d",
+          "q": "What does the congregation believe about itself that is no longer true?"
+        },
+        {
+          "id": "r1e",
+          "q": "If a stranger visited this Sunday, what would they honestly experience? Write it as they would feel it, not as you hope."
+        },
+        {
+          "id": "r1f",
+          "q": "Are you the person to do this, and what in you needs this church to succeed for the wrong reasons?"
+        }
+      ]
+    },
+    {
+      "id": "praying-core",
+      "kicker": "Stage Two",
+      "title": "The praying core",
+      "note": "You cannot do this alone, and you should not try. Find the few who are truly with you.",
+      "prompts": [
+        {
+          "id": "r2a",
+          "q": "Name the handful of people who would pray with you weekly for this church, by name. Who is actually on that list?"
+        },
+        {
+          "id": "r2b",
+          "q": "Which longtime members hold real influence, and which of them want life badly enough to give something up for it?",
+          "help": "Influence and willingness to change rarely sit in the same person. Know who holds each."
+        },
+        {
+          "id": "r2c",
+          "q": "Who will quietly resist, and are you prepared to love them while they do?"
+        },
+        {
+          "id": "r2d",
+          "q": "Who outside this church, a mentor, another pastor, will tell you the truth when you stop seeing it?"
+        },
+        {
+          "id": "r2e",
+          "q": "What are you and the core willing to fast and pray for before you act, and for how long?"
+        }
+      ]
+    },
+    {
+      "id": "first-ninety",
+      "kicker": "Stage Three",
+      "title": "The first ninety days",
+      "note": "Trust comes before change. Spend these days earning the right to be heard, not proving you are right.",
+      "prompts": [
+        {
+          "id": "r3a",
+          "q": "Whose homes will you sit in during these first months, and what will you ask them about their church?"
+        },
+        {
+          "id": "r3b",
+          "q": "What will you deliberately not change yet, even though you can see it needs to go?",
+          "help": "The leader who changes too much too soon spends trust they have not yet earned."
+        },
+        {
+          "id": "r3c",
+          "q": "What is the church proud of in its history, and how will you honor it before you ask for anything?"
+        },
+        {
+          "id": "r3d",
+          "q": "What small, visible act of care can you do early that costs you something and signals you intend to stay?"
+        },
+        {
+          "id": "r3e",
+          "q": "How will you tell the difference between resistance to you and grief over what they have lost?"
+        }
+      ]
+    },
+    {
+      "id": "painful-changes",
+      "kicker": "Stage Four",
+      "title": "The painful, necessary changes",
+      "note": "Some things must change or the church dies. Name them, and name the pace that will not break the people.",
+      "prompts": [
+        {
+          "id": "r4a",
+          "q": "What are the three changes that must happen, the ones the church has avoided for years?"
+        },
+        {
+          "id": "r4b",
+          "q": "For each change, who will it cost, who might leave, and have you counted that loss honestly?",
+          "help": "A change with no cost is usually a change that does not matter. Expect to lose some people."
+        },
+        {
+          "id": "r4c",
+          "q": "What is the right order, and which change must come first to make the others possible?"
+        },
+        {
+          "id": "r4d",
+          "q": "Which of these are convictions worth a fight, and which are only your preferences dressed as principle?"
+        },
+        {
+          "id": "r4e",
+          "q": "When the first hard change brings a backlash, what will you do, and who will stand with you when it comes?"
+        }
+      ]
+    },
+    {
+      "id": "reaching-out",
+      "kicker": "Stage Five",
+      "title": "Reaching out",
+      "note": "A church turned only inward keeps dying slowly. Plan the move toward the community beyond your walls.",
+      "prompts": [
+        {
+          "id": "r5a",
+          "q": "Who actually lives in the half mile around your building, and how well does the church know them?"
+        },
+        {
+          "id": "r5b",
+          "q": "What real need in your community could this church meet without expecting anyone to attend in return?",
+          "help": "The community can tell the difference between being loved and being recruited."
+        },
+        {
+          "id": "r5c",
+          "q": "What does the neighborhood currently believe about your church, fairly or not?"
+        },
+        {
+          "id": "r5d",
+          "q": "How will you help a congregation afraid of its own decline turn outward when it wants to circle the wagons?"
+        },
+        {
+          "id": "r5e",
+          "q": "What is one thing you can begin this season that puts the church among its neighbors rather than waiting for them?"
+        }
+      ]
+    },
+    {
+      "id": "long-obedience",
+      "kicker": "Stage Six",
+      "title": "The long obedience",
+      "note": "Revitalization is measured in years, not seasons. Plan now for how you will last.",
+      "prompts": [
+        {
+          "id": "r6a",
+          "q": "How long are you actually willing to stay, and have you told your family the real number?"
+        },
+        {
+          "id": "r6b",
+          "q": "What will you do in year three when the visible results are still small and your strength is low?",
+          "help": "Year three is where many revitalizing pastors quietly give up while still showing up."
+        },
+        {
+          "id": "r6c",
+          "q": "What will guard your own soul, your marriage, and your body across this stretch?"
+        },
+        {
+          "id": "r6d",
+          "q": "How will you measure faithfulness in a way that does not depend on the numbers turning fast?"
+        },
+        {
+          "id": "r6e",
+          "q": "Who are you raising up now so that this work does not end when you do?"
+        },
+        {
+          "id": "r6f",
+          "q": "If this church still closes despite everything, will you have been obedient anyway? Write your answer before you begin."
+        }
+      ]
+    }
+  ],
+  "closing": "You are not promised the harvest. You are only asked to plant, and to stay long enough to water what you planted."
+}
