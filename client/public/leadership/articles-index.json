@@ -55,9 +55,21 @@
       "group": "Church Leadership"
     },
     {
+      "slug": "how-to-hire-church-staff",
+      "title": "How to Hire Church Staff Well",
+      "blurb": "A practical guide to hiring church staff for character, fit, and calling, including the hard questions to ask before you put someone on the payroll of the body of Christ.",
+      "group": "Church Leadership"
+    },
+    {
       "slug": "leading-volunteers",
       "title": "How to Lead Volunteers Without Using Them Up",
       "blurb": "A pastoral guide to recruiting, equipping, and releasing church volunteers so they serve from calling instead of guilt and last for years instead of months.",
+      "group": "Church Leadership"
+    },
+    {
+      "slug": "how-to-fire-with-grace",
+      "title": "How to Let a Staff Member Go With Grace and Truth",
+      "blurb": "A pastoral guide to firing or releasing a church staff member with both honesty and dignity, handling the hardest leadership task without cruelty or cowardice.",
       "group": "Church Leadership"
     },
     {
@@ -85,6 +97,18 @@
       "group": "Exegesis and Bible Study"
     },
     {
+      "slug": "bible-study-tools",
+      "title": "The Bible Study Tools Worth Owning",
+      "blurb": "A guide to the best Bible study tools for serious students and preachers, including lexicons, concordances, and commentaries, and how to use each one well",
+      "group": "Exegesis and Bible Study"
+    },
+    {
+      "slug": "reading-in-context",
+      "title": "The First Rule of Bible Study Is Context",
+      "blurb": "Why reading Bible verses in context matters, and how to interpret a verse within its paragraph, its book, and the whole canon of Scripture",
+      "group": "Exegesis and Bible Study"
+    },
+    {
       "slug": "historical-context",
       "title": "Why Historical Context Changes the Meaning",
       "blurb": "How the original setting, audience, and culture of a Bible passage shape its meaning, and why reading Scripture without historical background distorts the text",
@@ -94,6 +118,12 @@
       "slug": "handling-criticism",
       "title": "How a Leader Handles Criticism",
       "blurb": "Every pastor will be criticized, and how a leader handles criticism in ministry reveals more about his heart than any sermon he will ever preach.",
+      "group": "Leadership Formation"
+    },
+    {
+      "slug": "integrity-when-no-one-is-watching",
+      "title": "Integrity When No One Is Watching",
+      "blurb": "Integrity in leadership is what a pastor does in private when no one is watching, and the private life always becomes the public one in the end.",
       "group": "Leadership Formation"
     },
     {
@@ -151,6 +181,12 @@
       "group": "Leading People"
     },
     {
+      "slug": "evangelism-for-ordinary-christians",
+      "title": "Evangelism for Ordinary Christians",
+      "blurb": "How to share your faith and witness to a skeptical neighbor without a script, a sales pitch, or the fear that has silenced the church",
+      "group": "Pastoral Ministry"
+    },
+    {
       "slug": "how-to-visit-the-sick",
       "title": "How to Visit the Sick and the Dying",
       "blurb": "A pastor's guide to hospital visitation, bedside ministry, praying with the dying, and being present in the room where everything is at stake",
@@ -166,6 +202,12 @@
       "slug": "what-is-pastoral-care",
       "title": "What Pastoral Care Actually Looks Like",
       "blurb": "A working pastor on the unglamorous heart of shepherding people, the ministry of presence, and the daily labor of caring for a congregation",
+      "group": "Pastoral Ministry"
+    },
+    {
+      "slug": "what-real-discipleship-looks-like",
+      "title": "What Real Discipleship Looks Like",
+      "blurb": "Moving the local church beyond programs and curriculum to the slow work of forming whole people who actually follow Jesus",
       "group": "Pastoral Ministry"
     },
     {
@@ -199,6 +241,12 @@
       "group": "Preaching"
     },
     {
+      "slug": "preaching-christ-from-the-old-testament",
+      "title": "How to Preach Christ From the Old Testament",
+      "blurb": "How to preach Christ from the Old Testament with integrity, using redemptive history and typology instead of forced allegory or flat moralizing, in practical sermon terms.",
+      "group": "Preaching"
+    },
+    {
       "slug": "how-to-start-a-sermon",
       "title": "How to Start a Sermon: The First Ninety Seconds",
       "blurb": "How to begin a sermon with an introduction that earns attention, opens the text, and never cheapens it, with practical patterns for the first ninety seconds in the pulpit.",
@@ -208,6 +256,12 @@
       "slug": "how-to-write-a-sermon",
       "title": "How to Write a Sermon, From Blank Page to Pulpit",
       "blurb": "A complete repeatable method for writing a sermon, from first reading of the text to a finished message you can preach with conviction on Sunday.",
+      "group": "Preaching"
+    },
+    {
+      "slug": "sermon-application",
+      "title": "Moving From the Text to Real Application",
+      "blurb": "How to move from the biblical text to sermon application that is specific, costly, and gospel-driven rather than moralism, with practical steps for preachers.",
       "group": "Preaching"
     },
     {
