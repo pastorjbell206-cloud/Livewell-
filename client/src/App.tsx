@@ -94,6 +94,8 @@ const DecisionLog = lazy(() => import("./pages/leadership/DecisionLog"));
 const BudgetCalculator = lazy(() => import("./pages/leadership/BudgetCalculator"));
 const BeforeYouPost = lazy(() => import("./pages/leadership/BeforeYouPost"));
 const GovernanceLibrary = lazy(() => import("./pages/leadership/GovernanceLibrary"));
+const LeadershipLibrary = lazy(() => import("./pages/leadership/LeadershipLibrary"));
+const SermonSeries = lazy(() => import("./pages/leadership/SermonSeries"));
 const PropheticLament = lazy(() => import("./pages/prophetic/PropheticLament"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
@@ -222,6 +224,8 @@ function Router() {
         <Route path="/leadership/workflow/:slug"><GuidedWorkflow /></Route>
         <Route path="/leadership/service/:slug"><ServiceBuilder /></Route>
         <Route path="/leadership/governance"><GovernanceLibrary /></Route>
+        <Route path="/leadership/library"><LeadershipLibrary /></Route>
+        <Route path="/leadership/sermon-series"><SermonSeries /></Route>
         <Route path="/leadership/budget"><BudgetCalculator /></Route>
         <Route path="/leadership/decision-log"><DecisionLog /></Route>
         <Route path="/leadership/before-you-post"><BeforeYouPost /></Route>
