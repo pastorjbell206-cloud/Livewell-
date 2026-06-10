@@ -10,7 +10,7 @@ import {
   subscribers, notifications, adminNotifications,
   InsertSubscriber, InsertNotification, InsertAdminNotification,
   teams, teamMembers, teamChannels, teamPosts, teamTasks, teamAnnouncements,
-  InsertTeam, InsertTeamChannel, InsertTeamPost, InsertTeamTask, InsertTeamAnnouncement,
+  InsertTeam, InsertTeamMember, InsertTeamChannel, InsertTeamPost, InsertTeamTask, InsertTeamAnnouncement,
 } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
@@ -585,8 +585,11 @@ export async function listTeamsForUser(userId: number) {
     .orderBy(asc(teams.name));
 }
 
+/** The role enum without undefined: insert types mark defaulted columns optional. */
+type TeamRole = NonNullable<InsertTeamMember["role"]>;
+
 /** Idempotent on (teamId, userId): returns the existing or newly created membership. */
-export async function addMember(teamId: number, userId: number, role: InsertTeamMember["role"] = "member") {
+export async function addMember(teamId: number, userId: number, role: TeamRole = "member") {
   const db = await getDb();
   if (!db) throw new Error("Database not available");
   const existing = await getMembership(userId, teamId);
@@ -626,7 +629,7 @@ export async function listMembers(teamId: number) {
 }
 
 /** Count of members holding a given role on a team (used to protect the last pastor). */
-export async function countMembersWithRole(teamId: number, role: InsertTeamMember["role"]) {
+export async function countMembersWithRole(teamId: number, role: TeamRole) {
   const db = await getDb();
   if (!db) throw new Error("Database not available");
   const rows = await db
@@ -637,7 +640,7 @@ export async function countMembersWithRole(teamId: number, role: InsertTeamMembe
 }
 
 /** Set a member's role. Scoped by both teamId and userId so a stray userId cannot reach another team. */
-export async function setMemberRole(teamId: number, userId: number, role: InsertTeamMember["role"]) {
+export async function setMemberRole(teamId: number, userId: number, role: TeamRole) {
   const db = await getDb();
   if (!db) throw new Error("Database not available");
   await db

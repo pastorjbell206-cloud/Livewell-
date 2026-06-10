@@ -61,6 +61,9 @@ export default function Footer() {
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
               <Link href={pillarUrl("the-pastoral-angle")} style={footerLink}>The Pastoral Angle</Link>
               <Link href="/pastors" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Pastors Connection Network</Link>
+              <Link href="/leadership" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>The Leadership Hub</Link>
+              <Link href="/leadership/library" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Leadership Library</Link>
+              <Link href="/leadership/sermon-series" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Sermon Series Library</Link>
               <Link href="/for-leaders" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Church Leadership</Link>
               <Link href="/resources" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Sermon Resources</Link>
             </div>

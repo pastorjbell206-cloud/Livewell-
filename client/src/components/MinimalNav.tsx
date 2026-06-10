@@ -74,6 +74,12 @@ function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLin
             { label: "The Justice Hub", href: "/justice", description: "Mishpat and tsedaqah — the poor at the gate, the worker, the vulnerable, and the church's silence." },
             { label: "The Call", href: "/justice/posture", description: "Biblical justice defined from the text up, and God's lean toward the poor and the foreigner." },
           ]
+        : pillar === "Leadership Formation"
+        ? [
+            { label: "The Leadership Hub", href: "/leadership", description: "A working library for pastors and lay leaders — tools, articles, and sermon series for the weight of leading the church." },
+            { label: "The Leadership Library", href: "/leadership/library", description: "Every leadership article in one searchable place — preaching, exegesis, formation, and care." },
+            { label: "Sermon Series Library", href: "/leadership/sermon-series", description: "Complete series plans, book by book and topic by topic, with the arc and every sermon's aim." },
+          ]
         : [];
     if (subs.length === 0) {
       // No populated sub-pathway. Still surface Family for Integrated Life.
@@ -325,7 +331,11 @@ export default function MinimalNav() {
             className="desktop-nav"
           >
             {navLinks.map(link => (
-              <div key={link.label} style={{ position: "relative" }}>
+              <div
+                key={link.label}
+                style={{ position: "relative" }}
+                onMouseLeave={() => link.dropdown && openDropdown === link.label && setOpenDropdown(null)}
+              >
                 {link.dropdown ? (
                   <>
                     <button
@@ -372,7 +382,6 @@ export default function MinimalNav() {
                     {openDropdown === link.label && (
                       <div
                         role="menu"
-                        onMouseLeave={() => setOpenDropdown(null)}
                         style={{
                           position: "absolute",
                           top: "100%",
