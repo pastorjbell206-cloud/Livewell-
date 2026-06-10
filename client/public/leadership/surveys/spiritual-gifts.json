@@ -1,0 +1,228 @@
+{
+  "slug": "spiritual-gifts",
+  "title": "The Spiritual Gifts Test",
+  "subtitle": "A careful look at where God may have wired you to serve his people.",
+  "intro": "This test points. It does not pronounce. No set of questions can hand you a gift or settle the matter for you, because a spiritual gift is not a personality trait you possess but a grace given for the good of others, and grace is confirmed in the use of it over time, in the company of a real church.\n\nChristians differ, in good faith, on whether some of these gifts continue today in the same form they took in the early church. This inventory does not try to settle that argument. It simply helps you notice the places where you already seem to come alive when you serve, where others already seem to be helped when you show up.\n\nRead each statement and answer honestly about who you actually are, not who you wish you were. Your highest scores are a starting point for prayer and for conversation with people who know you, not a verdict. Treat the results as a question to carry to your church, not an answer to carry away from it.",
+  "scale": ["Rarely true of me", "Sometimes", "Often", "Very often", "Consistently true of me"],
+  "resultMode": "ranked",
+  "rankedTopN": 5,
+  "dimensions": [
+    {
+      "id": "prophecy",
+      "name": "Prophecy",
+      "blurb": "Those with this gift sense when something is wrong before others do and find the words to name it plainly. They serve the body by calling the church back to what God has said, often at cost to their own comfort. The gift is not about predicting the future but about speaking truth into the present moment so that the people of God hear his heart.",
+      "questions": [
+        { "id": "proph1", "text": "I find myself compelled to name a hard truth even when it would be easier to stay quiet." },
+        { "id": "proph2", "text": "I notice when a group is drifting from what God has said, and it troubles me until I speak." },
+        { "id": "proph3", "text": "People tell me my words have cut through their excuses and reached their conscience." },
+        { "id": "proph4", "text": "I feel a strong burden to call the church toward repentance and away from comfortable compromise." },
+        { "id": "proph5", "text": "I am willing to be unpopular if it means saying what I believe God wants said." }
+      ]
+    },
+    {
+      "id": "teaching",
+      "name": "Teaching",
+      "blurb": "Those with this gift love to make the truth of Scripture clear and useful to others. They study carefully, then explain in a way that helps people understand what they could not see before. They serve the body by grounding the church in sound doctrine so that faith rests on something solid rather than on feeling.",
+      "questions": [
+        { "id": "teach1", "text": "I find deep satisfaction in studying a passage until I understand what it really means." },
+        { "id": "teach2", "text": "People often tell me I helped them finally understand something they had been confused about." },
+        { "id": "teach3", "text": "I am bothered when something taught as Scripture is actually inaccurate or careless with the text." },
+        { "id": "teach4", "text": "I enjoy preparing to explain a truth so that ordinary people can grasp and use it." },
+        { "id": "teach5", "text": "I am energized by helping others see the structure and meaning behind what they read in the Bible." }
+      ]
+    },
+    {
+      "id": "exhortation",
+      "name": "Exhortation and encouragement",
+      "blurb": "Those with this gift come alongside people who are struggling and help them take the next faithful step. They know how to comfort the discouraged and challenge the stuck without crushing either one. They serve the body by keeping weary believers moving forward when they would rather give up.",
+      "questions": [
+        { "id": "exhort1", "text": "I am drawn to people who are discouraged, and I want to help them find their footing again." },
+        { "id": "exhort2", "text": "People seek me out when they need someone to help them take the next step." },
+        { "id": "exhort3", "text": "I can challenge someone toward growth without leaving them feeling condemned." },
+        { "id": "exhort4", "text": "I find practical hope easy to offer, even to people in genuinely hard situations." },
+        { "id": "exhort5", "text": "I am energized by helping a believer move from being stuck to taking real action." }
+      ]
+    },
+    {
+      "id": "leadership",
+      "name": "Leadership",
+      "blurb": "Those with this gift see where a group needs to go and help people move there together. They carry responsibility willingly and keep others aligned toward a shared end. They serve the body by giving direction and momentum so that good intentions become real work that gets finished.",
+      "questions": [
+        { "id": "lead1", "text": "When a group lacks direction, I instinctively begin to help it find a way forward." },
+        { "id": "lead2", "text": "Others tend to follow when I cast a vision for what we could do together." },
+        { "id": "lead3", "text": "I am comfortable carrying responsibility for whether a shared effort succeeds." },
+        { "id": "lead4", "text": "I can see the larger goal and help people take the steps that get us there." },
+        { "id": "lead5", "text": "I am energized by guiding a team toward something worth accomplishing." }
+      ]
+    },
+    {
+      "id": "administration",
+      "name": "Administration",
+      "blurb": "Those with this gift bring order to effort that would otherwise scatter. They organize people, plans, and details so that the work of the church actually happens. They serve the body quietly, behind the visible ministry, making sure that what was promised gets done well and on time.",
+      "questions": [
+        { "id": "admin1", "text": "I naturally see how the pieces of a project should fit together to get it done." },
+        { "id": "admin2", "text": "People rely on me to keep details, schedules, and plans from falling through the cracks." },
+        { "id": "admin3", "text": "I am energized by turning a vague idea into a clear and workable plan." },
+        { "id": "admin4", "text": "I find satisfaction in organizing people and resources so the work runs smoothly." },
+        { "id": "admin5", "text": "I notice quickly when a group is disorganized, and I want to bring order to it." }
+      ]
+    },
+    {
+      "id": "giving",
+      "name": "Giving",
+      "blurb": "Those with this gift take real joy in providing for needs out of what God has entrusted to them. They give generously and often quietly, looking for where their resources can do the most good. They serve the body by funding ministry and meeting needs that would otherwise go unmet.",
+      "questions": [
+        { "id": "give1", "text": "I feel genuine joy when I am able to meet a real need with my own resources." },
+        { "id": "give2", "text": "I find myself looking for opportunities to give beyond what is asked of me." },
+        { "id": "give3", "text": "I am content to give quietly, without anyone knowing it came from me." },
+        { "id": "give4", "text": "I think carefully about how to use what I have so that it serves God well." },
+        { "id": "give5", "text": "I am energized by the chance to fund work that I believe matters to God." }
+      ]
+    },
+    {
+      "id": "mercy",
+      "name": "Mercy",
+      "blurb": "Those with this gift feel the pain of others deeply and move toward it rather than away. They are drawn to the suffering, the forgotten, and the broken, and they offer presence as much as help. They serve the body by making sure that no one hurts alone and that compassion is shown in action.",
+      "questions": [
+        { "id": "mercy1", "text": "I feel the suffering of others deeply, and it moves me to do something about it." },
+        { "id": "mercy2", "text": "I am drawn toward people who are hurting, lonely, or overlooked by everyone else." },
+        { "id": "mercy3", "text": "People in pain seem to sense that I genuinely care about what they are going through." },
+        { "id": "mercy4", "text": "I am willing to sit with someone in their grief without needing to fix it." },
+        { "id": "mercy5", "text": "I am energized by showing kindness to those whom others tend to avoid." }
+      ]
+    },
+    {
+      "id": "serving",
+      "name": "Serving and helps",
+      "blurb": "Those with this gift see the practical needs around them and quietly meet them. They would rather lift a load than be noticed, and they keep ministry running by doing the unglamorous work that holds it together. They serve the body by freeing others to do what only they can do.",
+      "questions": [
+        { "id": "serve1", "text": "I notice practical needs around me and quietly step in to meet them." },
+        { "id": "serve2", "text": "I would rather do the work behind the scenes than stand in front of people." },
+        { "id": "serve3", "text": "I feel real satisfaction when my help has lightened someone else's load." },
+        { "id": "serve4", "text": "People know they can count on me to show up and do what needs doing." },
+        { "id": "serve5", "text": "I am energized by tasks that free others to do the work they are called to." }
+      ]
+    },
+    {
+      "id": "wisdom",
+      "name": "Word of wisdom",
+      "blurb": "Those with this gift know how to apply the truth of God to the tangle of a real situation. When others are stuck, they often see the wise path that honors God and serves people. They serve the body by helping the church act rightly when the way forward is unclear.",
+      "questions": [
+        { "id": "wisdom1", "text": "When others are stuck on a hard decision, I often see a wise way forward." },
+        { "id": "wisdom2", "text": "People come to me for counsel when a situation is complicated and the answer is unclear." },
+        { "id": "wisdom3", "text": "I can take a general truth from Scripture and apply it well to a specific problem." },
+        { "id": "wisdom4", "text": "I am able to weigh the factors in a difficult choice and sense what honors God." },
+        { "id": "wisdom5", "text": "Others tell me my counsel helped them act rightly when they did not know what to do." }
+      ]
+    },
+    {
+      "id": "knowledge",
+      "name": "Word of knowledge",
+      "blurb": "Those with this gift grasp and hold the truths of Scripture and bring the right one to bear at the right time. They often perceive what is true about a situation or a teaching in a way that helps the church see clearly. They serve the body by grounding its life in what is actually true about God.",
+      "questions": [
+        { "id": "know1", "text": "I retain truths about God and his Word and recall them when they are needed." },
+        { "id": "know2", "text": "I often perceive what is really true about a situation when others are uncertain." },
+        { "id": "know3", "text": "People rely on me to bring the right insight from Scripture to bear on a question." },
+        { "id": "know4", "text": "I am energized by understanding the deep things of God and sharing them clearly." },
+        { "id": "know5", "text": "I notice quickly when a claim about God does not line up with what is true." }
+      ]
+    },
+    {
+      "id": "faith",
+      "name": "Faith",
+      "blurb": "Those with this gift trust God for what others find impossible and hold steady when circumstances say give up. They see what God could do and act on it before the outcome is certain. They serve the body by keeping the church believing and moving when fear or discouragement would stop it.",
+      "questions": [
+        { "id": "faith1", "text": "I trust God for things that others around me consider impossible." },
+        { "id": "faith2", "text": "I stay confident in God's promises even when circumstances look discouraging." },
+        { "id": "faith3", "text": "People are strengthened in their own trust by watching how I rely on God." },
+        { "id": "faith4", "text": "I am willing to step out and act on what I believe God can do before I see proof." },
+        { "id": "faith5", "text": "I am energized by praying and working for outcomes that only God could bring about." }
+      ]
+    },
+    {
+      "id": "discernment",
+      "name": "Discernment of spirits",
+      "blurb": "Those with this gift sense whether something comes from God, from human effort, or from a source opposed to God. They perceive what is hidden underneath the surface of a teaching or a situation. They serve the body by protecting it from error and deception that others do not yet see.",
+      "questions": [
+        { "id": "discern1", "text": "I often sense when something is spiritually off before I can fully explain why." },
+        { "id": "discern2", "text": "I can tell when a teaching or influence is leading people away from the truth." },
+        { "id": "discern3", "text": "People trust my read on whether something is genuinely from God." },
+        { "id": "discern4", "text": "I notice the difference between true spiritual fruit and a convincing imitation of it." },
+        { "id": "discern5", "text": "I feel a responsibility to protect others from teaching that quietly distorts the gospel." }
+      ]
+    },
+    {
+      "id": "hospitality",
+      "name": "Hospitality",
+      "blurb": "Those with this gift open their homes and their lives to others, including strangers, without grumbling. They make people feel welcomed, fed, and at ease. They serve the body by creating the warm and ordinary spaces where real relationships and ministry actually grow.",
+      "questions": [
+        { "id": "hosp1", "text": "I love opening my home to others, including people I do not yet know well." },
+        { "id": "hosp2", "text": "I find joy in making people feel welcome, fed, and at ease." },
+        { "id": "hosp3", "text": "People seem to relax and open up when they are in a space I have prepared." },
+        { "id": "hosp4", "text": "I notice when someone is new or on the outside, and I move to include them." },
+        { "id": "hosp5", "text": "I am energized by gathering people around a table for fellowship." }
+      ]
+    },
+    {
+      "id": "evangelism",
+      "name": "Evangelism",
+      "blurb": "Those with this gift carry a burden for people who do not yet know Christ and find natural ways to tell them. They are comfortable in conversations about faith with those outside the church. They serve the body by keeping it turned outward and by bringing new people to faith.",
+      "questions": [
+        { "id": "evang1", "text": "I carry a real burden for people who do not yet know Christ." },
+        { "id": "evang2", "text": "I find natural openings to talk about my faith with people outside the church." },
+        { "id": "evang3", "text": "I am energized rather than drained by conversations with skeptics and seekers." },
+        { "id": "evang4", "text": "People have come to faith, or moved closer to it, through conversations with me." },
+        { "id": "evang5", "text": "I think often about how the people around me might come to know Jesus." }
+      ]
+    },
+    {
+      "id": "shepherding",
+      "name": "Shepherding and pastoring",
+      "blurb": "Those with this gift take ongoing responsibility for the spiritual care of a group of people. They feed, guard, and walk with believers over the long haul, not just for a moment. They serve the body by tending people patiently so that they grow and are not lost.",
+      "questions": [
+        { "id": "shep1", "text": "I feel responsible for the ongoing spiritual growth of a particular group of people." },
+        { "id": "shep2", "text": "I am willing to walk with someone over the long haul, not just in a single moment." },
+        { "id": "shep3", "text": "People look to me to help guard and guide them in their walk with God." },
+        { "id": "shep4", "text": "I notice when someone is wandering, and I want to go after them before they are lost." },
+        { "id": "shep5", "text": "I am energized by patiently caring for a group of believers as they grow." }
+      ]
+    },
+    {
+      "id": "apostleship",
+      "name": "Apostleship and pioneering",
+      "blurb": "Those with this gift are drawn to start what does not yet exist and to take the gospel where it has not gone. They cross into new ground, plant new works, and lay foundations for others to build on. They serve the body by extending its reach beyond familiar borders.",
+      "questions": [
+        { "id": "apost1", "text": "I am drawn to start ministries or works that do not yet exist." },
+        { "id": "apost2", "text": "I feel pulled toward people and places the church has not yet reached." },
+        { "id": "apost3", "text": "I am comfortable laying a foundation that others will build on after me." },
+        { "id": "apost4", "text": "I am energized by crossing into new ground rather than maintaining what is settled." },
+        { "id": "apost5", "text": "People recognize in me an ability to launch something new and gather others to it." }
+      ]
+    },
+    {
+      "id": "intercession",
+      "name": "Intercession and prayer",
+      "blurb": "Those with this gift are called to sustained and burdened prayer for others and for the work of God. They pray long, specifically, and faithfully, often carrying needs that no one else is carrying. They serve the body by holding it up before God in ways that are mostly unseen.",
+      "questions": [
+        { "id": "inter1", "text": "I find myself praying at length for people and needs that others seem to forget." },
+        { "id": "inter2", "text": "I often sense a burden to pray for someone or something, and I cannot let it go." },
+        { "id": "inter3", "text": "I am energized rather than bored by extended, focused times of prayer." },
+        { "id": "inter4", "text": "People ask me to pray for them because they trust I will actually keep doing it." },
+        { "id": "inter5", "text": "I believe my hidden work of prayer is among the most important things I do." }
+      ]
+    },
+    {
+      "id": "healing",
+      "name": "Healing",
+      "blurb": "Those who serve in this way are drawn to pray for the sick and the broken in body and spirit, trusting God to restore. They believe God still heals and they ask him to, while leaving the outcome in his hands. They serve the body by carrying its wounded to God in faith and care. Christians differ on the form this gift takes today, and this inventory leaves that question open.",
+      "questions": [
+        { "id": "heal1", "text": "I am drawn to pray for people who are sick or broken in body or spirit." },
+        { "id": "heal2", "text": "I believe God still heals, and I find faith rising in me to ask him to." },
+        { "id": "heal3", "text": "I feel compassion for the suffering that moves me to bring them before God." },
+        { "id": "heal4", "text": "I am willing to pray for healing and trust God with whatever answer he gives." },
+        { "id": "heal5", "text": "People have asked me to pray over their pain because they sense I truly care." }
+      ]
+    }
+  ],
+  "closing": "The gift is confirmed by the church in the using of it, not by a web tool."
+}

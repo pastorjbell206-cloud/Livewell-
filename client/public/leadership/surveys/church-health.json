@@ -1,0 +1,198 @@
+{
+  "slug": "church-health",
+  "title": "The Church Health Survey",
+  "subtitle": "An honest look at the body you actually have, not the one you describe from the platform.",
+  "intro": "This is built for a leadership team to take together, alone, before you talk. Answer for the church as it is on a normal Tuesday, not the church as it is on its best Sunday or in your annual report.\n\nThen compare. The gap between how the elders score a dimension and how the youth leader scores it is often where the truth lives. Pay attention to where you disagree more than where you agree.\n\nThis is a mirror, not a grade. No church scores high everywhere. The point is to see clearly, name what is real, and decide what you will carry next.",
+  "scale": ["Not true of us", "Slightly true", "Somewhat true", "Mostly true", "True of us"],
+  "resultMode": "profile",
+  "dimensions": [
+    {
+      "id": "worship",
+      "name": "Worship",
+      "blurb": "Whether your gathered worship forms a people who actually meet God, or just runs a service that ends on time.",
+      "questions": [
+        { "id": "wor1", "text": "People in our gatherings seem genuinely engaged, not waiting for the music to end so the real part can start.", "reverse": false },
+        { "id": "wor2", "text": "Our worship makes room for confession and lament, not only celebration and momentum.", "reverse": false },
+        { "id": "wor3", "text": "The production quality of our service matters to us more than whether people met God in it.", "reverse": true },
+        { "id": "wor4", "text": "A first-time visitor would sense that we are addressing God, not performing for each other.", "reverse": false },
+        { "id": "wor5", "text": "Communion and the sacraments are handled with weight, not squeezed in as an afterthought.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "Going through the motions", "body": "Worship has become a routine the room executes rather than an encounter the room enters. People are present in body and absent in attention, and the leadership feels it but has stopped naming it. Begin by asking what you are actually inviting people to do when they gather, and whether anyone believes it." },
+        { "label": "Real but uneven", "body": "There are moments your people genuinely meet God, and there are stretches that run on habit and competence. You are not faking it, but you are not consistently shepherding it either. The work now is to protect the weight of what you do, especially the parts that resist polish, like confession and the table." },
+        { "label": "A people who meet God", "body": "When your church gathers, something true is happening, and visitors can feel it before they can explain it. You hold celebration and lament together and you guard the sacraments. Keep watching for the slow drift toward performance that every healthy church has to resist." }
+      ]
+    },
+    {
+      "id": "word-preaching",
+      "name": "The Word and Preaching",
+      "blurb": "Whether Scripture actually governs your church, or simply decorates the conclusions you already reached.",
+      "questions": [
+        { "id": "wp1", "text": "Our preaching consistently lands on the text itself, not on the speaker's opinions wrapped in a verse.", "reverse": false },
+        { "id": "wp2", "text": "Our people are growing in their own ability to read and understand Scripture, not only to consume sermons.", "reverse": false },
+        { "id": "wp3", "text": "We avoid hard passages because they would unsettle our people or our giving.", "reverse": true },
+        { "id": "wp4", "text": "When the text confronts us as leaders, we let it, even from our own pulpit.", "reverse": false },
+        { "id": "wp5", "text": "The Bible shapes our decisions in the boardroom the same way it shapes our sermons on Sunday.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "Scripture as decoration", "body": "The Bible appears in your services but does not govern them. Texts get used to support points already decided, and the hard passages quietly disappear from the rotation. The first honest step is to admit which parts of Scripture your church has agreed never to preach, and to ask why." },
+        { "label": "Faithful but selective", "body": "You take the Word seriously and you preach it with care, but there are still rooms it is not allowed to enter and verses you steer around. Your people are fed but not yet equipped to feed themselves. Push toward the passages that cost something, and toward teaching people to read for themselves." },
+        { "label": "Governed by the Word", "body": "Scripture actually rules here, including the parts that confront the leadership and the budget. Your people are becoming readers, not just listeners. The danger at this altitude is pride in your own faithfulness, so keep letting the text indict the ones who preach it." }
+      ]
+    },
+    {
+      "id": "prayer",
+      "name": "Prayer",
+      "blurb": "Whether your church genuinely depends on God, or runs on competence and only prays when the plan fails.",
+      "questions": [
+        { "id": "pr1", "text": "Prayer is woven into how we actually make decisions, not added as a blessing once the decision is made.", "reverse": false },
+        { "id": "pr2", "text": "Our prayer meetings draw real participation, not a faithful handful out of obligation.", "reverse": false },
+        { "id": "pr3", "text": "We function as if our planning and effort are what really move things, with prayer as insurance.", "reverse": true },
+        { "id": "pr4", "text": "Our people pray together in their homes and small groups, not only when a leader prompts them.", "reverse": false },
+        { "id": "pr5", "text": "When crisis hits the church, our first move is to pray together, not to manage the message.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "Praying as a formality", "body": "Prayer opens and closes your meetings and rarely shapes what happens between. The church runs on the leadership's competence, and that competence is real enough that no one feels the absence yet. Start by asking what would change in your church if you genuinely could not do it without God, because right now you act like you can." },
+        { "label": "Sincere but thin", "body": "You pray, and you mean it, but prayer is still more reaction than foundation. It shows up when plans break, not when plans are made. The growth here is to move prayer upstream, into the deciding and the dreaming, until dependence is a posture and not an emergency." },
+        { "label": "A dependent church", "body": "Your church prays because it actually believes it cannot do this alone, and that conviction shows up in how you decide, gather, and respond to crisis. This is rare and worth guarding. Watch the seasons of success most closely, because that is when prayer quietly thins." }
+      ]
+    },
+    {
+      "id": "discipleship",
+      "name": "Discipleship and Spiritual Growth",
+      "blurb": "Whether your church actually makes mature followers of Jesus, or just keeps people busy and attending.",
+      "questions": [
+        { "id": "di1", "text": "We can point to specific people who are visibly more like Christ than they were three years ago.", "reverse": false },
+        { "id": "di2", "text": "We have a real path from new believer to maturity, not just a calendar of unconnected events.", "reverse": false },
+        { "id": "di3", "text": "We measure success mainly by attendance and activity rather than by changed lives.", "reverse": true },
+        { "id": "di4", "text": "Our people are learning to follow Jesus in their work, marriages, and money, not only at church.", "reverse": false },
+        { "id": "di5", "text": "Older believers among us are intentionally investing in younger ones.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "Busy but not formed", "body": "Your calendar is full and your people are involved, but involvement is not the same as transformation. You are producing attenders, not disciples, and the difference is becoming hard to ignore. Ask one uncomfortable question of your programs: who is actually becoming more like Jesus, and how would you know." },
+        { "label": "Growth without a path", "body": "Real formation is happening for some, but mostly by accident and personality rather than design. There is no clear road from new faith to maturity, so people grow if they stumble into the right relationships. The work is to build the path on purpose and to put older believers next to younger ones." },
+        { "label": "A church that forms disciples", "body": "People here are visibly becoming more like Christ, in their homes and their work and not just their Sundays. You have a path, and you have elders who pour into the young. Keep measuring the right thing, because the pull toward counting crowds instead of counting fruit never stops." }
+      ]
+    },
+    {
+      "id": "community",
+      "name": "Community and Belonging",
+      "blurb": "Whether your church is a body where people are actually known, or a crowd where they stay comfortably anonymous.",
+      "questions": [
+        { "id": "co1", "text": "If someone in our church stopped showing up, people who know them would notice within a couple of weeks.", "reverse": false },
+        { "id": "co2", "text": "Our people carry each other's burdens in practical ways, meals and money and time, not only sympathy.", "reverse": false },
+        { "id": "co3", "text": "It is easy to attend our church for a year and remain a stranger to everyone.", "reverse": true },
+        { "id": "co4", "text": "People from different ages, backgrounds, and incomes actually share life here, not just the same room.", "reverse": false },
+        { "id": "co5", "text": "Newcomers find a way in within a month or two, rather than bouncing off the established groups.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "A crowd, not a body", "body": "People can come, sit, and leave without ever being known, and many of them do exactly that. There is friendliness at the door and loneliness in the pews. Start by tracing what actually happens to a newcomer after week three, because right now the honest answer is probably nothing." },
+        { "label": "Warm but cliquey", "body": "There is real friendship here, but it has hardened into circles that are warm on the inside and closed from the outside. The people who are in are deeply cared for, and the people who are new keep bouncing off. The work is to break your own groups open before they calcify." },
+        { "label": "A body that knows its members", "body": "People here are known, missed when absent, and carried when they fall, across the lines of age and income that usually divide a church. This is hard-won and easily lost. Guard the door for the newcomer with the same energy you give the longtime member." }
+      ]
+    },
+    {
+      "id": "mission",
+      "name": "Evangelism and Mission",
+      "blurb": "Whether your church actually exists for the people not yet in it, or quietly serves only those already inside.",
+      "questions": [
+        { "id": "mi1", "text": "Our people are regularly building real friendships with those who do not believe.", "reverse": false },
+        { "id": "mi2", "text": "We have seen people come to faith through our church in the last year, not just transfer in.", "reverse": false },
+        { "id": "mi3", "text": "Almost everything we do is designed for people already convinced and already here.", "reverse": true },
+        { "id": "mi4", "text": "Our church is known in our actual neighborhood for serving it, not just for meeting in it.", "reverse": false },
+        { "id": "mi5", "text": "Our people would know what to say if a coworker asked them why they believe.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "Turned inward", "body": "Your church serves the people already in the seats and has quietly stopped expecting anyone new to come to faith. Growth, when it happens, is people moving from another church. The first step is to admit that you have become a club for the convinced, and to ask when that happened." },
+        { "label": "Willing but timid", "body": "Your people care about the lost in theory and freeze in practice. There is goodwill toward mission and very little habit of it, so the neighborhood barely knows you are there. The work is to make evangelism ordinary again, in friendships and in presence, until your people stop bracing and start speaking." },
+        { "label": "A sent church", "body": "Your people actually know their unbelieving neighbors, your neighborhood feels your presence, and people are coming to faith and not just transferring in. This is the health most churches claim and few have. The threat is comfort, because the inward pull returns the moment you stop choosing the outsider." }
+      ]
+    },
+    {
+      "id": "leadership",
+      "name": "Leadership Health",
+      "blurb": "Whether the people leading your church are spiritually and relationally whole, or quietly running on empty and hiding it.",
+      "questions": [
+        { "id": "le1", "text": "Our leaders can admit failure and ask forgiveness in front of the people they lead.", "reverse": false },
+        { "id": "le2", "text": "Our leaders are accountable to someone who can actually tell them no.", "reverse": false },
+        { "id": "le3", "text": "Several of our key leaders are clearly exhausted, isolated, or running on fumes.", "reverse": true },
+        { "id": "le4", "text": "Decisions here are shared, not controlled by one strong personality everyone defers to.", "reverse": true },
+        { "id": "le5", "text": "Our leaders' marriages and inner lives are healthy, not sacrificed on the altar of the ministry.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "Running on fumes and image", "body": "The leadership here is tired, isolated, and protecting an image that no longer matches the inner reality. One strong personality may be carrying or controlling more than is safe, and no one is positioned to say no. Before you fix any program, tend to the people leading it, because a church cannot outrun the health of its leaders." },
+        { "label": "Functional but fragile", "body": "Your leaders are competent and largely well-meaning, but accountability is thin and the warning signs are showing in tired marriages and quiet isolation. You are functioning, not flourishing, and the cracks are private for now. The work is to build real accountability and to protect your leaders' inner lives before something breaks publicly." },
+        { "label": "Healthy and accountable", "body": "Your leaders can confess, can be told no, and are not sacrificing their marriages and souls to keep the machine running. Power is shared, not hoarded. This is the soil everything else grows in, so guard it, because leadership health is the first thing success erodes." }
+      ]
+    },
+    {
+      "id": "stewardship",
+      "name": "Generosity and Stewardship",
+      "blurb": "Whether your church handles money with honesty and open-handedness, or with anxiety, secrecy, and self-protection.",
+      "questions": [
+        { "id": "st1", "text": "Our people give generously and freely, not out of guilt or pressure from the platform.", "reverse": false },
+        { "id": "st2", "text": "We are transparent about where the money goes, and anyone could ask and get a real answer.", "reverse": false },
+        { "id": "st3", "text": "We spend almost everything on ourselves and very little reaches beyond our own walls.", "reverse": true },
+        { "id": "st4", "text": "Our financial decisions are driven by mission and trust, not by fear and scarcity.", "reverse": false },
+        { "id": "st5", "text": "Our leaders model generosity with their own money, not just preach it to others.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "Anxious and inward", "body": "Money here is handled with fear and kept behind a curtain, and almost all of it is spent on keeping the doors open. Scarcity drives the decisions even when the numbers do not require it. Start by opening the books to your own people, because secrecy around money is rarely about logistics and usually about trust." },
+        { "label": "Generous in parts", "body": "There is genuine generosity here, and there is also anxiety, and they take turns depending on the season. You give beyond your walls sometimes, and you protect yourselves other times. The growth is to let mission rather than fear set the budget, and to let your leaders give visibly, not just teach giving." },
+        { "label": "Open-handed and trusting", "body": "Your people give freely, your books are open, and real money leaves your walls for the sake of others. Your leaders give before they ask. This kind of trust is rare and fragile, so protect transparency fiercely, because the moment money goes behind a curtain, fear has already won." }
+      ]
+    },
+    {
+      "id": "care",
+      "name": "Care for the Hurting and Vulnerable",
+      "blurb": "Whether the broken and the overlooked are actually held by your church, or quietly slip through while the strong are served.",
+      "questions": [
+        { "id": "ca1", "text": "When someone in our church is suffering, real people show up over time, not just a card and a casserole.", "reverse": false },
+        { "id": "ca2", "text": "The poor, the disabled, and the struggling are genuinely woven into our life, not kept at the margins.", "reverse": false },
+        { "id": "ca3", "text": "People in real crisis tend to drift away from us because no one noticed in time.", "reverse": true },
+        { "id": "ca4", "text": "We are a safe place for people to admit they are not okay, not a place that rewards pretending.", "reverse": false },
+        { "id": "ca5", "text": "We protect the vulnerable among us, children and the abused, with seriousness and not just policy.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "The hurting slip away", "body": "Your church cares for the capable and loses the broken, often without noticing they are gone. Suffering people learn quickly that this is a place for those who are doing fine. Begin by naming the people who left while they were hurting, because every one of them is telling you something about who you actually are." },
+        { "label": "Caring but inconsistent", "body": "You show up for crises, at least at first, but the long, unglamorous care fades and the most vulnerable still live at the edges. Your compassion is real and your follow-through is thin. The work is to stay past the casserole stage and to pull the overlooked from the margins into the center." },
+        { "label": "A refuge for the broken", "body": "The suffering are held here over the long haul, the vulnerable are protected with seriousness, and people can admit they are not okay without losing their place. This is the closest thing to the heart of Christ a church can show. Keep watching the margins, because that is always where a church first goes cold." }
+      ]
+    },
+    {
+      "id": "conflict",
+      "name": "Conflict and Relational Health",
+      "blurb": "Whether your church handles disagreement with honesty and repair, or buries it until it festers and splits.",
+      "questions": [
+        { "id": "cf1", "text": "When people disagree here, they generally talk to each other directly rather than around each other.", "reverse": false },
+        { "id": "cf2", "text": "We have a real and practiced way to repair relationships after conflict, not just to avoid it.", "reverse": false },
+        { "id": "cf3", "text": "Significant tensions in our church get buried and never resolved until they explode.", "reverse": true },
+        { "id": "cf4", "text": "Our leaders model owning their part in a conflict, not just defending themselves.", "reverse": false },
+        { "id": "cf5", "text": "There are unspoken grudges and old wounds shaping how our people relate even now.", "reverse": true }
+      ],
+      "levels": [
+        { "label": "Buried and brittle", "body": "Conflict here goes underground rather than getting resolved, and the buried tensions are shaping the church more than anyone admits. Old wounds sit unaddressed until they surface as a split. Start by naming the conflicts everyone is avoiding, because the peace you are protecting is not peace, it is just delay." },
+        { "label": "Honest but unpracticed", "body": "You are willing to face conflict, but you lack a reliable way to walk through it to repair, so resolution depends on who is involved. Some things get healed and some things calcify. The work is to build the practice of repair into your culture and to let your leaders go first in owning their part." },
+        { "label": "Honest and repairing", "body": "People here go to each other directly, conflict gets worked through to genuine repair, and your leaders model ownership instead of defense. A church that can fight well and reconcile is rarer than a church that never fights. Keep tending the old wounds, because the grudge you ignore today writes tomorrow's split." }
+      ]
+    },
+    {
+      "id": "vision-sending",
+      "name": "Vision and Sending",
+      "blurb": "Whether your church knows where it is going and is willing to give people and resources away, or is mostly trying to keep what it has.",
+      "questions": [
+        { "id": "vs1", "text": "Our people could actually tell you, in their own words, what our church exists to do.", "reverse": false },
+        { "id": "vs2", "text": "We are actively raising up and releasing leaders, even when it means losing good people.", "reverse": false },
+        { "id": "vs3", "text": "We mostly aim to preserve what we have rather than reach what is next.", "reverse": true },
+        { "id": "vs4", "text": "We invest in planting, sending, and multiplying beyond ourselves, not only in growing our own crowd.", "reverse": false },
+        { "id": "vs5", "text": "Our decisions clearly serve a shared direction, not just the loudest preference of the moment.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "Maintaining, not moving", "body": "Your church is mostly trying to hold on to what it has, and the people cannot say where it is going because there is no clear where. Sending feels like loss, so you keep your best and reach no one new. Start by asking whether your church has a future it is actually moving toward, or only a present it is trying to keep." },
+        { "label": "Clear but holding on", "body": "You have a sense of direction and your people can roughly name it, but you still flinch at the cost of sending and releasing. You will grow your own crowd more readily than you will give people away. The work is to treat your best leaders and members as seed to be sown, not assets to be kept." },
+        { "label": "Knowing and sending", "body": "Your people know why you exist, your decisions serve that direction, and you are willing to release leaders and resources for the sake of the wider mission. A church that sends what it loves has stopped serving itself. Keep choosing multiplication over accumulation, because the instinct to hold on never fully dies." }
+      ]
+    }
+  ],
+  "closing": "Take these results into a long, unhurried conversation, not a scoreboard, and ask not how you measured but what God is asking you to face."
+}

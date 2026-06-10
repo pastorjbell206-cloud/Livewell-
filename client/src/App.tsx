@@ -87,6 +87,13 @@ const IllustrationLibrary = lazy(() => import("./pages/leadership/IllustrationLi
 const MeetingBuilder = lazy(() => import("./pages/leadership/MeetingBuilder"));
 const VisitationTracker = lazy(() => import("./pages/leadership/VisitationTracker"));
 const LeaderAssessment = lazy(() => import("./pages/leadership/LeaderAssessment"));
+const ProfileSurvey = lazy(() => import("./pages/leadership/ProfileSurvey"));
+const GuidedWorkflow = lazy(() => import("./pages/leadership/GuidedWorkflow"));
+const ServiceBuilder = lazy(() => import("./pages/leadership/ServiceBuilder"));
+const DecisionLog = lazy(() => import("./pages/leadership/DecisionLog"));
+const BudgetCalculator = lazy(() => import("./pages/leadership/BudgetCalculator"));
+const BeforeYouPost = lazy(() => import("./pages/leadership/BeforeYouPost"));
+const GovernanceLibrary = lazy(() => import("./pages/leadership/GovernanceLibrary"));
 const PropheticLament = lazy(() => import("./pages/prophetic/PropheticLament"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
@@ -211,6 +218,13 @@ function Router() {
         <Route path="/leadership/meeting"><MeetingBuilder /></Route>
         <Route path="/leadership/visitation"><VisitationTracker /></Route>
         <Route path="/leadership/assessment/:slug"><LeaderAssessment /></Route>
+        <Route path="/leadership/survey/:slug"><ProfileSurvey /></Route>
+        <Route path="/leadership/workflow/:slug"><GuidedWorkflow /></Route>
+        <Route path="/leadership/service/:slug"><ServiceBuilder /></Route>
+        <Route path="/leadership/governance"><GovernanceLibrary /></Route>
+        <Route path="/leadership/budget"><BudgetCalculator /></Route>
+        <Route path="/leadership/decision-log"><DecisionLog /></Route>
+        <Route path="/leadership/before-you-post"><BeforeYouPost /></Route>
         <Route path="/leadership/article/:slug"><LeadershipArticle /></Route>
         <Route path="/leadership"><LeadershipHub /></Route>
         <Route path="/justice/topic/:slug"><PropheticTopic config={JUSTICE} /></Route>
