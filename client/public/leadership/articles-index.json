@@ -43,6 +43,12 @@
       "group": "Building and Rebuilding"
     },
     {
+      "slug": "how-churches-make-decisions",
+      "title": "How a Church Should Make Decisions",
+      "blurb": "A practical guide to church decision making, governance, and congregational dynamics, covering process, spiritual authority, and how to decide without dividing the body.",
+      "group": "Church Leadership"
+    },
+    {
       "slug": "healthy-church-board",
       "title": "How a Healthy Church Board or Elder Team Works",
       "blurb": "A practical guide to church governance, biblical plurality, and the kind of trust that lets a board or elder team lead together without splitting or stalling.",
@@ -85,6 +91,12 @@
       "group": "Exegesis and Bible Study"
     },
     {
+      "slug": "typology",
+      "title": "How to Read Types and Shadows Without Going Off the Rails",
+      "blurb": "A disciplined guide to biblical typology, how to recognize legitimate types and shadows in the Old Testament, and how to avoid allegory and fanciful interpretation",
+      "group": "Exegesis and Bible Study"
+    },
+    {
       "slug": "how-to-study-the-bible",
       "title": "How to Study the Bible: Observation, Interpretation, Application",
       "blurb": "A working guide to the inductive Bible study method that moves from what the text says, to what it means, to what it asks of you",
@@ -109,15 +121,33 @@
       "group": "Exegesis and Bible Study"
     },
     {
+      "slug": "biblical-theology",
+      "title": "What Biblical Theology Is and Why Every Teacher Needs It",
+      "blurb": "An introduction to biblical theology and the single storyline of Scripture from Genesis to Revelation, and why every preacher and Bible teacher needs it",
+      "group": "Exegesis and Bible Study"
+    },
+    {
       "slug": "historical-context",
       "title": "Why Historical Context Changes the Meaning",
       "blurb": "How the original setting, audience, and culture of a Bible passage shape its meaning, and why reading Scripture without historical background distorts the text",
       "group": "Exegesis and Bible Study"
     },
     {
+      "slug": "holy-ambition",
+      "title": "Holy Ambition and the Other Kind",
+      "blurb": "Holy ambition in ministry looks almost identical to the hunger for personal significance, and learning to tell the call from the craving is the work of a lifetime.",
+      "group": "Leadership Formation"
+    },
+    {
       "slug": "handling-criticism",
       "title": "How a Leader Handles Criticism",
       "blurb": "Every pastor will be criticized, and how a leader handles criticism in ministry reveals more about his heart than any sermon he will ever preach.",
+      "group": "Leadership Formation"
+    },
+    {
+      "slug": "how-to-finish-well-in-ministry",
+      "title": "How to Finish Well in Ministry",
+      "blurb": "Finishing well in ministry is rarer than starting strong, and understanding why pastors fall and burn out is the first step to lasting all the way to the end.",
       "group": "Leadership Formation"
     },
     {
@@ -187,6 +217,12 @@
       "group": "Pastoral Ministry"
     },
     {
+      "slug": "making-small-groups-work",
+      "title": "How to Make Small Groups Actually Work",
+      "blurb": "Building small group ministry that produces real community and discipleship instead of another weeknight meeting nobody remembers",
+      "group": "Pastoral Ministry"
+    },
+    {
       "slug": "how-to-visit-the-sick",
       "title": "How to Visit the Sick and the Dying",
       "blurb": "A pastor's guide to hospital visitation, bedside ministry, praying with the dying, and being present in the room where everything is at stake",
@@ -208,6 +244,12 @@
       "slug": "what-real-discipleship-looks-like",
       "title": "What Real Discipleship Looks Like",
       "blurb": "Moving the local church beyond programs and curriculum to the slow work of forming whole people who actually follow Jesus",
+      "group": "Pastoral Ministry"
+    },
+    {
+      "slug": "why-church-membership-matters",
+      "title": "Why Church Membership Still Matters",
+      "blurb": "The biblical case for committed belonging, covenant membership, and accountability in a culture that treats church like a streaming service",
       "group": "Pastoral Ministry"
     },
     {
@@ -233,6 +275,12 @@
       "title": "The Window and the Wall",
       "blurb": "An illustration is a window, not decoration: how to find them, how to use them, and the kinds that betray the text",
       "group": "Preaching and Teaching"
+    },
+    {
+      "slug": "how-long-should-a-sermon-be",
+      "title": "How Long Should a Sermon Be",
+      "blurb": "An honest answer to how long a sermon should be, weighing attention, faithfulness to the text, and congregational context against the false comfort of a fixed number.",
+      "group": "Preaching"
     },
     {
       "slug": "how-to-end-a-sermon",
@@ -262,6 +310,12 @@
       "slug": "sermon-application",
       "title": "Moving From the Text to Real Application",
       "blurb": "How to move from the biblical text to sermon application that is specific, costly, and gospel-driven rather than moralism, with practical steps for preachers.",
+      "group": "Preaching"
+    },
+    {
+      "slug": "preaching-with-or-without-notes",
+      "title": "Notes, Manuscript, or Nothing: How to Carry a Sermon",
+      "blurb": "An honest comparison of preaching from a full manuscript, an outline, or no notes at all, with the tradeoffs of each method and how to choose what fits you.",
       "group": "Preaching"
     },
     {
