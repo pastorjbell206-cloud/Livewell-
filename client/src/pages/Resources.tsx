@@ -1,33 +1,80 @@
+/**
+ * The Resource Hub (/resources). Curated libraries on top (Reading Scripture
+ * in Context is the flagship), then the database-driven downloads with search,
+ * category, and format filters. Downloads are managed in /admin/resources.
+ */
+import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { trpc } from "@/lib/trpc";
 import { useMemo, useState } from "react";
-import { Download, Loader2, BookOpen, Search, X, ChevronDown } from "lucide-react";
+import { Download, Loader2, Search, X } from "lucide-react";
 import { Link } from "wouter";
 
+const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+
 const FORMAT_LABELS: Record<string, string> = {
-  "pdf": "PDF",
-  "docx": "Word Document",
-  "xlsx": "Spreadsheet",
-  "pptx": "Presentation",
-  "zip": "ZIP Archive",
+  pdf: "PDF",
+  docx: "Word Document",
+  xlsx: "Spreadsheet",
+  pptx: "Presentation",
+  zip: "ZIP Archive",
 };
+
+const LIBRARIES = [
+  {
+    href: "/resources/context",
+    eyebrow: "The signature library",
+    title: "Reading Scripture in Context",
+    desc: "The Ancient Near East, Second Temple Judaism, the Greco-Roman world, honor and shame, and how to read the Bible apart from American political assumptions. Sourced to real scholarship.",
+    flagship: true,
+  },
+  {
+    href: "/discipleship",
+    eyebrow: "The guided path",
+    title: "The Discipleship Pathway",
+    desc: "Four stages from new believer to disciple-maker, with concrete steps and a tracker that remembers where you are.",
+  },
+  {
+    href: "/leadership/library",
+    eyebrow: "For leaders and teachers",
+    title: "The Leadership Library",
+    desc: "Over a hundred articles on preaching, exegesis, formation, church leadership, and pastoral care. Searchable by category.",
+  },
+  {
+    href: "/leadership/sermon-series",
+    eyebrow: "For preachers",
+    title: "The Sermon Series Library",
+    desc: "Complete series plans, book by book and topic by topic, with the arc of each series and every sermon's text, idea, and aim.",
+  },
+  {
+    href: "/family/devotions",
+    eyebrow: "For the household",
+    title: "Family Devotions",
+    desc: "Fifty-two weekly devotions plus Advent and Holy Week, and a builder that makes a fifteen-minute devotion for your kids' ages.",
+  },
+  {
+    href: "/tools",
+    eyebrow: "Interactive",
+    title: "Ministry Tools",
+    desc: "The verse finder, prayer generator, assessments, and study tools. Built to be used on a Tuesday, not admired on a Sunday.",
+  },
+  {
+    href: "/reading-paths",
+    eyebrow: "Where to start",
+    title: "Reading Paths",
+    desc: "Guided routes through the writing and the books, ordered so each piece builds on the last.",
+  },
+];
 
 export default function Resources() {
   const resourcesQuery = trpc.resources.listPublished.useQuery();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedFormats, setSelectedFormats] = useState<string[]>([]);
-  const [showFilters, setShowFilters] = useState(false);
 
   const categories = useMemo(() => {
     const unique = new Set(resourcesQuery.data?.map((r) => r.category).filter(Boolean) || []);
-    return [
-      { label: "All", value: "all" },
-      ...Array.from(unique).map((cat) => ({
-        label: cat as string,
-        value: cat as string,
-      })),
-    ];
+    return ["all", ...Array.from(unique)] as string[];
   }, [resourcesQuery.data]);
 
   const formats = useMemo(() => {
@@ -53,332 +100,160 @@ export default function Resources() {
     );
   };
 
-  const clearAllFilters = () => {
-    setSearchTerm("");
-    setSelectedCategory("all");
-    setSelectedFormats([]);
-  };
-
-  const hasActiveFilters = selectedCategory !== "all" || selectedFormats.length > 0;
-
-  if (resourcesQuery.isLoading) {
-    return (
-      <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--paper)" }}>
-        <Loader2 size={32} style={{ color: "var(--gold)", animation: "spin 1s linear infinite" }} />
-      </div>
-    );
-  }
+  const hasActiveFilters = searchTerm !== "" || selectedCategory !== "all" || selectedFormats.length > 0;
 
   return (
-    <>
+    <Layout>
       <SEOMeta
-        title="Resources"
-        description="Tools, guides, and materials for Christian leaders, pastors, and individuals. Discussion guides, sermon frameworks, and pastoral resources."
-        keywords="resources, guides, tools, Christian leadership, pastoral resources"
+        title="Resources — Study Guides, Libraries, and Ministry Tools"
+        description="Free resources for disciples, pastors, and leaders: the Reading Scripture in Context library, leadership and sermon series libraries, family devotions, study guides, and downloads."
+        url="https://www.livewellbyjamesbell.co/resources"
       />
-      <div>
-        {/* HERO SECTION */}
-        <section className="hero">
-          <div className="hero__inner" style={{ gridTemplateColumns: "1fr" }}>
-            <div>
-              <div className="kicker">
-                <div className="kicker-line"></div>
-                <div className="kicker-txt">TOOLS & RESOURCES</div>
-              </div>
-              <h1 className="hero-h">
-                Tools that have <strong>earned their place</strong>
-              </h1>
-              <p className="hero-sub">
-                Discussion guides, sermon frameworks, pastoral tools, and practical materials for individuals, pastors, and leaders.
-              </p>
-            </div>
-          </div>
-        </section>
 
-        {/* SEARCH & FILTERS SECTION */}
-        <section style={{ background: "var(--paper)", padding: "40px 0", borderBottom: "1px solid var(--border)" }}>
-          <div className="wrap">
-            {/* Search Bar */}
-            <div style={{ marginBottom: "24px" }}>
-              <div style={{ position: "relative" }}>
-                <Search
-                  size={20}
-                  style={{
-                    position: "absolute",
-                    left: "12px",
-                    top: "50%",
-                    transform: "translateY(-50%)",
-                    color: "var(--ink3)"
-                  }}
-                />
-                <input
-                  type="text"
-                  placeholder="Search resources by title or topic..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  style={{
-                    width: "100%",
-                    paddingLeft: "40px",
-                    paddingRight: "16px",
-                    paddingTop: "12px",
-                    paddingBottom: "12px",
-                    border: "1px solid var(--border)",
-                    background: "white",
-                    color: "var(--ink)",
-                    fontSize: "15px",
-                    outline: "none",
-                    transition: "border-color 0.2s"
-                  }}
-                  onFocus={(e) => (e.currentTarget.style.borderColor = "var(--gold)")}
-                  onBlur={(e) => (e.currentTarget.style.borderColor = "var(--border)")}
-                />
-              </div>
-            </div>
+      {/* HERO */}
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+        <div style={wrap}>
+          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Resources</div>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.4vw, 58px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
+            Tools that have earned their place
+          </h1>
+          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch" }}>
+            Libraries, guides, devotions, and downloads for people who want to follow Jesus with their whole mind. Everything here is free. None of it is filler.
+          </p>
+        </div>
+      </section>
 
-            {/* Filter Toggle & Results */}
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "16px" }}>
-              <button
-                onClick={() => setShowFilters(!showFilters)}
+      {/* CURATED LIBRARIES */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
+        <div style={wrap}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(290px, 1fr))", gap: "var(--s-3)" }}>
+            {LIBRARIES.map((lib) => (
+              <Link
+                key={lib.href}
+                href={lib.href}
                 style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  background: "none",
-                  border: "none",
-                  cursor: "pointer",
-                  fontWeight: "600",
-                  fontSize: "14px",
-                  color: "var(--ink)",
-                  padding: "0"
+                  display: "block",
+                  textDecoration: "none",
+                  padding: "var(--s-4)",
+                  background: lib.flagship ? "var(--charcoal)" : "#FFFFFF",
+                  border: "1px solid rgba(20,17,12,0.08)",
+                  borderTop: "2px solid var(--mustard)",
+                  gridColumn: lib.flagship ? "1 / -1" : undefined,
                 }}
               >
-                <ChevronDown
-                  size={18}
-                  style={{
-                    transition: "transform 0.25s",
-                    transform: showFilters ? "rotate(180deg)" : "rotate(0deg)"
-                  }}
-                />
-                Filters {hasActiveFilters && `(${(selectedCategory !== "all" ? 1 : 0) + selectedFormats.length})`}
-              </button>
-              <p style={{ fontSize: "14px", color: "var(--ink3)" }}>
-                {filteredResources.length} {filteredResources.length === 1 ? "resource" : "resources"}
-              </p>
-            </div>
-
-            {/* Filters */}
-            {showFilters && (
-              <div style={{ paddingTop: "16px", borderTop: "1px solid var(--border)" }}>
-                {/* Category Filter */}
-                {categories.length > 0 && (
-                  <div style={{ marginBottom: "24px" }}>
-                    <h3 style={{
-                      fontWeight: "600",
-                      color: "var(--ink)",
-                      marginBottom: "12px",
-                      fontSize: "12px",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.1em"
-                    }}>
-                      By Category
-                    </h3>
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                      {categories.map((cat) => (
-                        <button
-                          key={cat.value}
-                          onClick={() => setSelectedCategory(cat.value)}
-                          style={{
-                            padding: "6px 12px",
-                            fontSize: "12px",
-                            fontWeight: "600",
-                            textTransform: "uppercase",
-                            letterSpacing: "0.05em",
-                            border: "1px solid var(--border)",
-                            background: selectedCategory === cat.value ? "var(--ink)" : "white",
-                            color: selectedCategory === cat.value ? "white" : "var(--ink)",
-                            cursor: "pointer",
-                            transition: "all 0.2s",
-                            borderRadius: "2px"
-                          }}
-                          onMouseEnter={(e) => {
-                            if (selectedCategory !== cat.value) {
-                              e.currentTarget.style.background = "var(--cream)";
-                            }
-                          }}
-                          onMouseLeave={(e) => {
-                            if (selectedCategory !== cat.value) {
-                              e.currentTarget.style.background = "white";
-                            }
-                          }}
-                        >
-                          {cat.label}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* File Type Filter */}
-                {formats.length > 0 && (
-                  <div style={{ marginBottom: "24px" }}>
-                    <h3 style={{
-                      fontWeight: "600",
-                      color: "var(--ink)",
-                      marginBottom: "12px",
-                      fontSize: "12px",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.1em"
-                    }}>
-                      By File Type
-                    </h3>
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                      {formats.map((format) => (
-                        <button
-                          key={format}
-                          onClick={() => toggleFormat(format)}
-                          style={{
-                            padding: "6px 12px",
-                            fontSize: "12px",
-                            fontWeight: "600",
-                            textTransform: "uppercase",
-                            letterSpacing: "0.05em",
-                            border: "1px solid var(--border)",
-                            background: selectedFormats.includes(format) ? "var(--ink)" : "white",
-                            color: selectedFormats.includes(format) ? "white" : "var(--ink)",
-                            cursor: "pointer",
-                            transition: "all 0.2s",
-                            borderRadius: "2px"
-                          }}
-                          onMouseEnter={(e) => {
-                            if (!selectedFormats.includes(format)) {
-                              e.currentTarget.style.background = "var(--cream)";
-                            }
-                          }}
-                          onMouseLeave={(e) => {
-                            if (!selectedFormats.includes(format)) {
-                              e.currentTarget.style.background = "white";
-                            }
-                          }}
-                        >
-                          {FORMAT_LABELS[format] || format}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Clear Filters */}
-                {hasActiveFilters && (
-                  <button
-                    onClick={clearAllFilters}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "8px",
-                      color: "var(--gold)",
-                      fontWeight: "600",
-                      fontSize: "14px",
-                      background: "none",
-                      border: "none",
-                      cursor: "pointer",
-                      padding: "0"
-                    }}
-                  >
-                    <X size={16} />
-                    Clear All Filters
-                  </button>
-                )}
-              </div>
-            )}
+                <div className="eyebrow" style={{ color: lib.flagship ? "var(--mustard)" : "var(--mustard-text)", marginBottom: "10px" }}>{lib.eyebrow}</div>
+                <div style={{ fontFamily: "var(--F)", fontSize: lib.flagship ? "clamp(24px, 3.4vw, 32px)" : "21px", lineHeight: 1.2, color: lib.flagship ? "var(--bone)" : "var(--ink)", marginBottom: "10px" }}>{lib.title}</div>
+                <p style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.65, color: lib.flagship ? "rgba(245,240,230,0.78)" : "var(--ink-muted)", maxWidth: lib.flagship ? "70ch" : undefined, margin: 0 }}>{lib.desc}</p>
+              </Link>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* RESOURCES GRID */}
-        <section className="section">
-          <div className="wrap">
-            {filteredResources.length > 0 ? (
-              <div className="grid grid-3">
-                {filteredResources.map((resource: any) => (
-                  <a
-                    key={resource.id}
-                    href={resource.downloadUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
+      {/* DOWNLOADS */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
+        <div style={wrap}>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "6px" }}>Downloads</h2>
+          <div style={{ width: "36px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-3)" }} />
+
+          <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "center", marginBottom: "var(--s-3)" }}>
+            <div style={{ position: "relative", flex: "1 1 240px", maxWidth: "420px" }}>
+              <Search size={16} style={{ position: "absolute", left: "12px", top: "50%", transform: "translateY(-50%)", color: "var(--ink-muted)" }} />
+              <input
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                placeholder="Search downloads"
+                aria-label="Search downloads"
+                style={{ width: "100%", padding: "10px 12px 10px 36px", fontFamily: "var(--U)", fontSize: "14px", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.15)", borderRadius: "2px", color: "var(--ink)", outline: "none" }}
+              />
+            </div>
+            {categories.length > 1 && (
+              <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+                {categories.map((cat) => (
+                  <button
+                    key={cat}
+                    onClick={() => setSelectedCategory(cat)}
+                    style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, padding: "7px 12px", borderRadius: "2px", cursor: "pointer", border: "1px solid rgba(20,17,12,0.18)", background: selectedCategory === cat ? "var(--charcoal)" : "transparent", color: selectedCategory === cat ? "var(--bone)" : "var(--ink)" }}
                   >
-                    <div className="card">
-                      <div className="card-body">
-                        {/* Category */}
-                        {resource.category && (
-                          <div className="card-cat">{resource.category}</div>
-                        )}
-
-                        {/* Title */}
-                        <h3 className="card-title">{resource.title}</h3>
-
-                        {/* Description */}
-                        {resource.description && (
-                          <p className="card-desc">{resource.description}</p>
-                        )}
-
-                        {/* File Type & Download */}
-                        <div className="card-meta" style={{ paddingTop: "12px", borderTop: "1px solid var(--border)" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                            <Download size={14} />
-                            <span>{FORMAT_LABELS[resource.fileType] || resource.fileType}</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
+                    {cat === "all" ? "All" : cat}
+                  </button>
                 ))}
               </div>
-            ) : (
-              <div style={{ textAlign: "center", paddingTop: "60px", paddingBottom: "60px" }}>
-                <p style={{ fontSize: "17px", color: "var(--ink3)", marginBottom: "24px" }}>
-                  No resources match your filters.
-                </p>
-                <button
-                  onClick={clearAllFilters}
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    color: "var(--gold)",
-                    fontWeight: "600",
-                    fontSize: "14px",
-                    background: "none",
-                    border: "none",
-                    cursor: "pointer",
-                    padding: "0"
-                  }}
-                >
-                  <X size={16} />
-                  Clear Filters
-                </button>
+            )}
+            {formats.length > 1 && (
+              <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+                {formats.map((f) => (
+                  <button
+                    key={f}
+                    onClick={() => toggleFormat(f)}
+                    style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, padding: "7px 12px", borderRadius: "2px", cursor: "pointer", border: "1px dashed rgba(20,17,12,0.25)", background: selectedFormats.includes(f) ? "var(--charcoal)" : "transparent", color: selectedFormats.includes(f) ? "var(--bone)" : "var(--ink-muted)" }}
+                  >
+                    {FORMAT_LABELS[f] || f.toUpperCase()}
+                  </button>
+                ))}
               </div>
             )}
+            {hasActiveFilters && (
+              <button
+                onClick={() => { setSearchTerm(""); setSelectedCategory("all"); setSelectedFormats([]); }}
+                style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, padding: "7px 12px", borderRadius: "2px", cursor: "pointer", border: "none", background: "transparent", color: "var(--mustard-text)" }}
+              >
+                <X size={14} /> Clear filters
+              </button>
+            )}
           </div>
-        </section>
 
-        {/* CTA SECTION */}
-        <section className="section" style={{ background: "var(--cream)" }}>
-          <div className="wrap" style={{ textAlign: "center" }}>
-            <h2 className="section-title">Looking for more?</h2>
-            <p className="section-sub" style={{ margin: "0 auto 32px" }}>
-              Browse our complete collection of articles, books, and learning paths.
-            </p>
-            <div className="hero-ctas">
-              <Link href="/writing">
-                <button className="btn-gold">Explore Articles</button>
-              </Link>
-              <Link href="/reading-paths">
-                <button className="btn-ghost">Browse Reading Paths</button>
-              </Link>
+          {resourcesQuery.isLoading ? (
+            <div style={{ display: "flex", alignItems: "center", gap: "10px", padding: "var(--s-4) 0", fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)" }}>
+              <Loader2 size={18} style={{ animation: "spin 1s linear infinite" }} /> Loading downloads
             </div>
+          ) : filteredResources.length === 0 ? (
+            <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", padding: "var(--s-3) 0" }}>
+              {hasActiveFilters ? "Nothing matches those filters." : "Downloadable study guides and worksheets are on the way. The libraries above are open now."}
+            </p>
+          ) : (
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "var(--s-3)" }}>
+              {filteredResources.map((r) => (
+                <div key={r.id} style={{ background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", padding: "var(--s-3)", display: "flex", flexDirection: "column", gap: "10px" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "10px" }}>
+                    <div style={{ fontFamily: "var(--F)", fontSize: "18px", lineHeight: 1.3, color: "var(--ink)" }}>{r.title}</div>
+                    {r.fileType && (
+                      <span style={{ fontFamily: "var(--M, monospace)", fontSize: "10.5px", letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--ink-muted)", border: "1px solid rgba(20,17,12,0.15)", padding: "2px 6px", whiteSpace: "nowrap" }}>
+                        {FORMAT_LABELS[r.fileType] || r.fileType.toUpperCase()}
+                      </span>
+                    )}
+                  </div>
+                  {r.description && <p style={{ fontFamily: "var(--B)", fontSize: "13.5px", lineHeight: 1.6, color: "var(--ink-muted)", margin: 0, flex: 1 }}>{r.description}</p>}
+                  {r.category && <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard-text)" }}>{r.category}</div>}
+                  {r.url && (
+                    <a
+                      href={r.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--bone)", background: "var(--charcoal)", padding: "9px 14px", textDecoration: "none", alignSelf: "flex-start" }}
+                    >
+                      <Download size={14} /> Download
+                    </a>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* CLOSING */}
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)", textAlign: "center" }}>
+        <div style={{ maxWidth: "560px", margin: "0 auto" }}>
+          <p style={{ fontFamily: "var(--F)", fontSize: "17px", fontStyle: "italic", lineHeight: 1.6, color: "rgba(245,240,230,0.85)", marginBottom: "20px" }}>
+            Looking for the writing itself? The essays and the books are the spine of everything here.
+          </p>
+          <div style={{ display: "flex", gap: "20px", justifyContent: "center", flexWrap: "wrap" }}>
+            <Link href="/writing" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>Read the essays</Link>
+            <Link href="/books" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>Browse the books</Link>
           </div>
-        </section>
-      </div>
-    </>
+        </div>
+      </section>
+    </Layout>
   );
 }

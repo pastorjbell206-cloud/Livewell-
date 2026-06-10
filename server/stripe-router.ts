@@ -1,9 +1,44 @@
 import { router, publicProcedure, protectedProcedure } from "./_core/trpc";
 import { z } from "zod";
-import { createCheckoutSession, getCheckoutSession, BOOK_PRICES } from "./stripe-service";
+import {
+  createCheckoutSession,
+  getCheckoutSession,
+  BOOK_PRICES,
+  isStripeConfigured,
+  createMembershipCheckoutSession,
+} from "./stripe-service";
 import { getBookPurchasesByEmail, getBookSalesStats } from "./db-email-books";
+import { getSetting } from "./db";
 
 export const stripeRouter = router({
+  /**
+   * Whether membership checkout is live: needs both a real STRIPE_SECRET_KEY
+   * in the environment and a stripeMembershipPriceId in Site Settings.
+   * The membership page falls back to the waitlist when this is false.
+   */
+  membershipEnabled: publicProcedure.query(async () => {
+    if (!isStripeConfigured()) return { enabled: false };
+    const priceId = await getSetting("stripeMembershipPriceId");
+    return { enabled: !!priceId?.trim() };
+  }),
+
+  /**
+   * Start a membership subscription checkout. Returns the Stripe-hosted
+   * checkout URL to redirect the browser to.
+   */
+  createMembershipCheckout: publicProcedure
+    .input(z.object({ customerEmail: z.string().email(), origin: z.string().url() }))
+    .mutation(async ({ input }) => {
+      const priceId = await getSetting("stripeMembershipPriceId");
+      if (!priceId?.trim()) throw new Error("Membership is not open yet.");
+      const { sessionUrl, sessionId } = await createMembershipCheckoutSession(
+        input.customerEmail,
+        priceId.trim(),
+        input.origin
+      );
+      return { success: true, sessionUrl, sessionId };
+    }),
+
   /**
    * Create a checkout session for book purchase
    */

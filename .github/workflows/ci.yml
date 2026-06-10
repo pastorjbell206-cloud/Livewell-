@@ -27,6 +27,11 @@ jobs:
       - name: Typecheck
         run: pnpm run check
 
+      - name: Content gates (formation + life validators)
+        run: |
+          node scripts/validate-formation.mjs
+          node scripts/validate-life.mjs
+
       - name: Test
         run: pnpm test
 

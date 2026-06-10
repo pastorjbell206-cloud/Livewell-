@@ -49,7 +49,7 @@ export default function TheologyCompare() {
             Pick a doctrine and lay its views in a row. The same fair treatment as the full doctrine pages, arranged so you can scan the differences at a glance.
           </p>
           <select value={slug} onChange={(e) => setSlug(e.target.value)}
-            style={{ fontFamily: "var(--B)", fontSize: "16px", padding: "12px 16px", borderRadius: "var(--radius-sm)", border: "1px solid rgba(245,240,230,0.3)", background: "var(--bone)", color: "var(--ink)", minWidth: "min(440px, 100%)" }}>
+            style={{ fontFamily: "var(--B)", fontSize: "16px", padding: "12px 16px", borderRadius: "var(--radius-sm)", border: "1px solid rgba(245,240,230,0.3)", background: "var(--bone)", color: "var(--ink)", minWidth: "min(440px, 100%)", maxWidth: "100%" }}>
             {ready.map((d) => <option key={d.slug} value={d.slug}>{d.title}</option>)}
           </select>
         </div>
@@ -65,7 +65,10 @@ export default function TheologyCompare() {
                 <Link href={`/theology/doctrine/${doc.slug}`} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", marginLeft: "auto" }}>Read the full doctrine →</Link>
               </div>
 
-              <div style={{ overflowX: "auto", paddingBottom: "8px" }}>
+              <p className="scroll-hint" style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", marginBottom: "8px" }}>
+                Swipe sideways to see every column.
+              </p>
+              <div style={{ overflowX: "auto", paddingBottom: "8px", WebkitOverflowScrolling: "touch" }}>
                 <div style={{ display: "grid", gridTemplateColumns: `140px repeat(${doc.positions.length}, ${col})`, gap: "1px", background: "var(--border)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", minWidth: `${140 + doc.positions.length * 240}px` }}>
                   {/* Header row */}
                   <div style={{ background: "var(--charcoal)" }} />

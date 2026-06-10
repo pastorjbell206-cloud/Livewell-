@@ -199,7 +199,7 @@ export default function StartHereQuiz() {
                   background: currentStep === 0 ? "var(--line)" : "var(--ink)",
                   color: currentStep === 0 ? "var(--ink3)" : "var(--paper)",
                   border: "none",
-                  padding: "12px 24px",
+                  padding: "14px 24px", minHeight: "44px",
                   fontSize: "14px",
                   fontWeight: "bold",
                   borderRadius: "4px",
@@ -219,7 +219,7 @@ export default function StartHereQuiz() {
                   background: !answers[QUESTIONS[currentStep].id] ? "var(--line)" : "var(--gold)",
                   color: "var(--ink)",
                   border: "none",
-                  padding: "12px 24px",
+                  padding: "14px 24px", minHeight: "44px",
                   fontSize: "14px",
                   fontWeight: "bold",
                   borderRadius: "4px",
@@ -283,7 +283,7 @@ export default function StartHereQuiz() {
                 Go deeper with James Bell's most comprehensive work on this topic.
               </p>
               <Link href="/books" style={{ textDecoration: "none" }}>
-                <button style={{ background: "var(--ink)", color: "var(--paper)", border: "none", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
+                <button style={{ background: "var(--ink)", color: "var(--paper)", border: "none", padding: "14px 24px", minHeight: "44px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
                   View Books
                 </button>
               </Link>
@@ -306,7 +306,7 @@ export default function StartHereQuiz() {
                   setCurrentStep(0);
                   setAnswers({});
                 }}
-                style={{ background: "#FFF", color: "var(--ink)", border: "1px solid #E0D9CC", padding: "12px 24px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}
+                style={{ background: "#FFF", color: "var(--ink)", border: "1px solid #E0D9CC", padding: "14px 24px", minHeight: "44px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}
               >
                 Start Over
               </button>

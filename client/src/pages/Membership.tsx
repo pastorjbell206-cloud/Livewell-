@@ -4,11 +4,19 @@ import { ArrowRight } from "lucide-react";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_STATS } from "@/config/siteStats";
 import { useArticleCount } from "@/hooks/useArticleCount";
+import { trpc } from "@/lib/trpc";
 
 export default function Membership() {
   const [email, setEmail] = useState("");
   const [joined, setJoined] = useState(false);
+  const [checkoutError, setCheckoutError] = useState<string | null>(null);
   const essays = useArticleCount();
+
+  // Checkout goes live the moment STRIPE_SECRET_KEY (env) and the
+  // stripeMembershipPriceId site setting both exist. Until then: waitlist.
+  const enabledQuery = trpc.stripe.membershipEnabled.useQuery();
+  const checkoutMutation = trpc.stripe.createMembershipCheckout.useMutation();
+  const checkoutLive = enabledQuery.data?.enabled === true;
 
   const handleWaitlist = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -22,6 +30,25 @@ export default function Membership() {
     } catch { /* best-effort */ }
     setJoined(true);
     setEmail("");
+  };
+
+  const handleCheckout = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email || !email.includes("@")) return;
+    setCheckoutError(null);
+    try {
+      const res = await checkoutMutation.mutateAsync({
+        customerEmail: email,
+        origin: window.location.origin,
+      });
+      if (res.sessionUrl) {
+        window.location.href = res.sessionUrl;
+      } else {
+        setCheckoutError("Checkout could not start. Try again in a moment.");
+      }
+    } catch {
+      setCheckoutError("Checkout could not start. Try again in a moment.");
+    }
   };
 
   return (
@@ -80,17 +107,24 @@ export default function Membership() {
             {joined ? (
               <p style={{ color: "var(--mustard)", fontWeight: 500, fontFamily: "var(--U)", fontSize: "0.875rem" }}>You are on the list. Watch your inbox.</p>
             ) : (
-              <form onSubmit={handleWaitlist} style={{ display: "flex", gap: "0", maxWidth: "380px", margin: "0 auto" }}>
+              <form onSubmit={checkoutLive ? handleCheckout : handleWaitlist} style={{ display: "flex", gap: "0", maxWidth: "380px", margin: "0 auto" }}>
                 <input type="email" placeholder="your@email.com" value={email} onChange={(e) => setEmail(e.target.value)} required
                   style={{ flex: 1, padding: "0.75rem 1rem", border: "1px solid var(--bone-muted)", borderRight: "none", borderRadius: "2px 0 0 2px", fontSize: "0.875rem", fontFamily: "var(--U)", background: "var(--bone)", outline: "none" }}
                 />
-                <button type="submit" style={{ padding: "0.75rem 1.25rem", background: "var(--charcoal)", color: "var(--bone)", border: "1px solid var(--charcoal)", fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, cursor: "pointer", borderRadius: "0 2px 2px 0", display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                  Join the waitlist <ArrowRight size={14} />
+                <button type="submit" disabled={checkoutMutation.isPending} style={{ padding: "0.75rem 1.25rem", background: "var(--charcoal)", color: "var(--bone)", border: "1px solid var(--charcoal)", fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, cursor: checkoutMutation.isPending ? "default" : "pointer", opacity: checkoutMutation.isPending ? 0.7 : 1, borderRadius: "0 2px 2px 0", display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  {checkoutLive
+                    ? (checkoutMutation.isPending ? "Starting checkout…" : "Become a member")
+                    : "Join the waitlist"} <ArrowRight size={14} />
                 </button>
               </form>
             )}
+            {checkoutError && (
+              <p style={{ fontSize: "0.8rem", color: "#9B1C1C", marginTop: "0.75rem", fontFamily: "var(--U)" }}>{checkoutError}</p>
+            )}
             <p style={{ fontSize: "0.75rem", color: "var(--ink-muted)", marginTop: "0.75rem" }}>
-              The room opens soon. The waitlist gets first access — and the founding rate.
+              {checkoutLive
+                ? "Checkout is handled by Stripe. Cancel anytime from the receipt email."
+                : "The room opens soon. The waitlist gets first access — and the founding rate."}
             </p>
           </div>
 

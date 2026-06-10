@@ -78,8 +78,23 @@ html.dark{
   --rust:#D4A017;--rustlt:#E0B945;
   --sage:#9A968E;--plum:#1A1A1A;
 }
-:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
-.skip-link{position:absolute;top:-100%;left:16px;z-index:9999;background:var(--gold);color:var(--ink);padding:8px 16px;font-family:var(--U);font-size:14px;font-weight:600;border-radius:0 0 4px 4px;text-decoration:none;transition:top .2s}
+
+/* The admin area is a purpose-built light workspace. It opts out of the
+ * site-wide dark-mode toggle entirely: this re-asserts the light token values
+ * (and a guaranteed background + text color) for the admin subtree even when
+ * html.dark is set, so admin content can never render dark-on-dark. */
+.admin-scope, html.dark .admin-scope{
+  --charcoal:#1A1A1A;--charcoal-deep:#0F0F0F;--charcoal-soft:#2A2A2A;
+  --bone:#F5F0E6;--bone-warm:#EDE8DC;--bone-muted:#D9D3C4;--card:#FFFFFF;
+  --ink:#14110C;--ink-muted:#5A5448;
+  --mustard:#D4A017;--mustard-deep:#B08A12;--mustard-text:#7A6010;
+  --paper:#F5F0E6;--paper2:#EDE8DC;--cream:#EDE8DC;
+  --line:#D9D3C4;--border:#D9D3C4;--borderdk:#C0B9A8;
+  --gold:#D4A017;--goldlt:#7A6010;--goldpale:#F5F0E6;
+  --ink2:#5A5448;--ink3:#5A5448;--stone:#5A5448;--stone2:#9A968E;
+  background-color:#F7F5F0;color:#1A1A1A;
+}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}.skip-link{position:absolute;top:-100%;left:16px;z-index:9999;background:var(--gold);color:var(--ink);padding:8px 16px;font-family:var(--U);font-size:14px;font-weight:600;border-radius:0 0 4px 4px;text-decoration:none;transition:top .2s}
 .skip-link:focus{top:0}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 html{scroll-behavior:smooth}
@@ -151,7 +166,7 @@ nav{display:flex;align-items:center;justify-content:space-between;height:70px;ma
 /* SEARCH OVERLAY */
 .srch-ov{display:none;position:fixed;inset:0;background:rgba(26,51,40,.96);z-index:500;align-items:flex-start;justify-content:center;padding-top:120px}
 .srch-ov.open{display:flex}
-.srch-inner{width:100%;max-width:680px;padding:0 32px}
+.srch-inner{width:100%;max-width:680px;padding:0 clamp(12px,5vw,32px)}
 .srch-label{font-family:var(--U);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:16px}
 .srch-input{width:100%;background:transparent;border:none;border-bottom:2px solid var(--gold);font-family:var(--F);font-size:clamp(28px,4vw,48px);color:white;outline:none;padding:8px 0 16px;caret-color:var(--gold)}
 .srch-input::placeholder{color:rgba(255,255,255,.25)}
@@ -249,6 +264,16 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
   .section{padding:60px 0}
 }
 
+/* Visible only at phone/tablet widths: hints for horizontally scrolling UI. */
+.scroll-hint{display:none}
+@media(max-width:768px){
+  .scroll-hint{display:block}
+}
+
+@media(max-width:600px){
+  .grid-2,.grid-3{grid-template-columns:1fr}
+}
+
 @media(max-width:480px){
   .wrap{padding:0 16px}
   nav{padding:0 16px;height:60px}
@@ -256,6 +281,11 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
   .hero-ctas{flex-direction:column;align-items:flex-start}
   .grid-4{grid-template-columns:1fr}
   .hero-stats{flex-direction:column;gap:16px;align-items:flex-start}
+  /* Long-form reading at phone width: smaller body, calmer blockquotes. */
+  .article-body{font-size:16px;line-height:1.7}
+  .article-body blockquote{font-size:19px}
+  .article-body h2{font-size:24px}
+  .article-body p:first-of-type::first-letter{font-size:3.6em}
 }
 
 @media print {

@@ -17,6 +17,8 @@ import BookDetail from "./pages/BookDetail";
 import About from "./pages/About";
 
 const Resources = lazy(() => import("./pages/Resources"));
+const ContextLibrary = lazy(() => import("./pages/resources/ContextLibrary"));
+const ContextGuide = lazy(() => import("./pages/resources/ContextGuide"));
 const SubstackPage = lazy(() => import("./pages/Substack"));
 const Pastors = lazy(() => import("./pages/Pastors"));
 const FileStorage = lazy(() => import("./pages/FileStorage"));
@@ -34,11 +36,17 @@ const Pillars = lazy(() => import("./pages/Pillars"));
 const ForPastors = lazy(() => import("./pages/ForPastors"));
 const ForLeaders = lazy(() => import("./pages/ForLeaders"));
 const Membership = lazy(() => import("./pages/Membership"));
+const MembershipSuccess = lazy(() => import("./pages/MembershipSuccess"));
+const Discipleship = lazy(() => import("./pages/Discipleship"));
+const LifeIndex = lazy(() => import("./pages/life/LifeIndex"));
+const LifeDomain = lazy(() => import("./pages/life/LifeDomain"));
+const WholeLifeAssessment = lazy(() => import("./pages/life/WholeLifeAssessment"));
 const Marriage = lazy(() => import("./pages/Marriage"));
 const Parenting = lazy(() => import("./pages/Parenting"));
 const Doubt = lazy(() => import("./pages/Doubt"));
 const StartHereQuiz = lazy(() => import("./pages/StartHereQuiz"));
 const Privacy = lazy(() => import("./pages/Privacy"));
+const Accessibility = lazy(() => import("./pages/Accessibility"));
 const Terms = lazy(() => import("./pages/Terms"));
 const ToolsHub = lazy(() => import("./pages/ToolsHub"));
 const VerseFinder = lazy(() => import("./pages/tools/VerseFinder"));
@@ -96,6 +104,9 @@ const BeforeYouPost = lazy(() => import("./pages/leadership/BeforeYouPost"));
 const GovernanceLibrary = lazy(() => import("./pages/leadership/GovernanceLibrary"));
 const LeadershipLibrary = lazy(() => import("./pages/leadership/LeadershipLibrary"));
 const SermonSeries = lazy(() => import("./pages/leadership/SermonSeries"));
+const FormationIndex = lazy(() => import("./pages/leadership/FormationIndex"));
+const FormationTopic = lazy(() => import("./pages/leadership/FormationTopic"));
+const FormationInventory = lazy(() => import("./pages/leadership/FormationInventory"));
 const PropheticLament = lazy(() => import("./pages/prophetic/PropheticLament"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
@@ -106,6 +117,7 @@ const PastorBurnoutTool = lazy(() => import("./pages/tools/PastorBurnout"));
 const LifeAudit = lazy(() => import("./pages/tools/LifeAudit"));
 const ChurchHealth = lazy(() => import("./pages/tools/ChurchHealth"));
 const DeepBibleCompanion = lazy(() => import("./pages/tools/DeepBibleCompanion"));
+const FamilyDevotionBuilder = lazy(() => import("./pages/tools/FamilyDevotionBuilder"));
 const WorkWithJames = lazy(() => import("./pages/WorkWithJames"));
 const PastoralBurnout = lazy(() => import("./pages/landing/PastoralBurnout"));
 const FaithCrisis = lazy(() => import("./pages/landing/FaithCrisis"));
@@ -138,6 +150,7 @@ const AdminBooks = lazy(() => import("./pages/AdminBooks"));
 const AdminBookEditor = lazy(() => import("./pages/AdminBookEditor"));
 const AdminAbout = lazy(() => import("./pages/AdminAbout"));
 const AdminSettings = lazy(() => import("./pages/AdminSettings"));
+const AdminSubscribers = lazy(() => import("./pages/AdminSubscribers"));
 const AdminContentSync = lazy(() => import("./pages/AdminContentSync"));
 const AdminPublishContent = lazy(() => import("./pages/AdminPublishContent"));
 const AdminSetupNavigation = lazy(() => import("./pages/AdminSetupNavigation"));
@@ -177,6 +190,9 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/marriage" component={Marriage} />
+        <Route path="/life/assessment" component={WholeLifeAssessment} />
+        <Route path="/life/:slug" component={LifeDomain} />
+        <Route path="/life" component={LifeIndex} />
         <Route path="/parenting" component={Parenting} />
         <Route path="/family/catechism" component={FamilyCatechism} />
         <Route path="/family/devotions" component={FamilyDevotions} />
@@ -230,6 +246,9 @@ function Router() {
         <Route path="/leadership/decision-log"><DecisionLog /></Route>
         <Route path="/leadership/before-you-post"><BeforeYouPost /></Route>
         <Route path="/leadership/article/:slug"><LeadershipArticle /></Route>
+        <Route path="/leadership/formation/:slug" component={FormationTopic} />
+        <Route path="/leadership/formation" component={FormationIndex} />
+        <Route path="/leadership/inventory" component={FormationInventory} />
         <Route path="/leadership"><LeadershipHub /></Route>
         <Route path="/justice/topic/:slug"><PropheticTopic config={JUSTICE} /></Route>
         <Route path="/justice"><PropheticHub config={JUSTICE} /></Route>
@@ -243,6 +262,8 @@ function Router() {
         <Route path="/for-pastors" component={ForPastors} />
         <Route path="/for-leaders" component={ForLeaders} />
         <Route path="/membership" component={Membership} />
+        <Route path="/membership/success" component={MembershipSuccess} />
+        <Route path="/discipleship" component={Discipleship} />
         <Route path="/writing" component={Writing} />
         <Route path="/writing/:slug" component={ArticleDetail} />
         <Route path="/articles" component={ArticlesRedirect} />
@@ -252,6 +273,8 @@ function Router() {
         <Route path="/article-collections" component={ArticleCollections} />
         <Route path="/book-bundles" component={BookBundles} />
         <Route path="/lead-magnets/:magnetId" component={LeadMagnetsPage} />
+        <Route path="/resources/context/:slug" component={ContextGuide} />
+        <Route path="/resources/context" component={ContextLibrary} />
         <Route path="/resources" component={Resources} />
         <Route path="/books" component={Books} />
         <Route path="/books/:slug" component={BookDetail} />
@@ -261,6 +284,8 @@ function Router() {
         <Route path="/files" component={FileStorage} />
         <Route path="/books-store" component={BooksStore} />
         <Route path="/search" component={SearchPage} />
+        <Route path="/tools/theology-quiz" component={TheologyQuiz} />
+        {/* Legacy alias; vercel.json 301s /quiz to /tools/theology-quiz */}
         <Route path="/quiz" component={TheologyQuiz} />
         <Route path="/skeptic-track" component={SkepticTrack} />
         <Route path="/pastors-resource-wall" component={PastorsResourceWall} />
@@ -284,8 +309,10 @@ function Router() {
         <Route path="/tools/life-audit" component={LifeAudit} />
         <Route path="/tools/church-health" component={ChurchHealth} />
         <Route path="/tools/deep-bible" component={DeepBibleCompanion} />
+        <Route path="/tools/family-devotions" component={FamilyDevotionBuilder} />
         <Route path="/work-with-james" component={WorkWithJames} />
         <Route path="/privacy" component={Privacy} />
+        <Route path="/accessibility" component={Accessibility} />
         <Route path="/terms" component={Terms} />
         <Route path="/resources-for-pastors" component={ResourcesForPastors} />
         <Route path="/pastoral-burnout" component={PastoralBurnout} />
@@ -306,6 +333,7 @@ function Router() {
         <Route path="/admin/books/:id/edit"><ProtectedRoute component={AdminBookEditor} requireAdmin /></Route>
         <Route path="/admin/about"><ProtectedRoute component={AdminAbout} requireAdmin /></Route>
         <Route path="/admin/settings"><ProtectedRoute component={AdminSettings} requireAdmin /></Route>
+        <Route path="/admin/subscribers"><ProtectedRoute component={AdminSubscribers} requireAdmin /></Route>
         <Route path="/admin/sync"><ProtectedRoute component={AdminContentSync} requireAdmin /></Route>
         <Route path="/admin/publish-content"><ProtectedRoute component={AdminPublishContent} requireAdmin /></Route>
         <Route path="/admin/setup-navigation"><ProtectedRoute component={AdminSetupNavigation} requireAdmin /></Route>

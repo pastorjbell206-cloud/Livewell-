@@ -1,7 +1,7 @@
 import AdminLayout from "@/components/AdminLayout";
 import { Link } from "wouter";
 import { trpc } from "@/lib/trpc";
-import { PenLine, FolderOpen, BookOpen, Loader2, Upload, Wand2, Copy, FilePlus2, Download } from "lucide-react";
+import { PenLine, FolderOpen, BookOpen, Loader2, Upload, Wand2, Copy, FilePlus2, Download, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import contentData from "@/data/content-data.json";
 
@@ -11,6 +11,8 @@ export default function AdminDashboard() {
   const booksQuery = trpc.books.listAll.useQuery();
   const [seedStatus, setSeedStatus] = useState<string | null>(null);
   const [seeding, setSeeding] = useState(false);
+  const [fixStatus, setFixStatus] = useState<string | null>(null);
+  const [fixing, setFixing] = useState(false);
 
   const stats = [
     { label: "Writing Posts", value: postsQuery.data?.length ?? 0, icon: PenLine, href: "/admin/posts", color: "#2C3E50" },
@@ -44,6 +46,31 @@ export default function AdminDashboard() {
     }
   };
 
+  const handleFixApostrophes = async () => {
+    if (!confirm("Repair missing apostrophes (Gods, churchs, dont, ...) across all posts and books? Slugs and URLs are never changed, and it is safe to run more than once.")) return;
+    setFixing(true);
+    setFixStatus("Repairing text...");
+    try {
+      const res = await fetch("/api/admin/fix-apostrophes", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+      });
+      const data = await res.json();
+      if (data.ok) {
+        setFixStatus(`Done! Repaired ${data.postsFixed} posts and ${data.booksFixed} books.`);
+        postsQuery.refetch();
+        booksQuery.refetch();
+      } else {
+        setFixStatus(`Error: ${data.error}`);
+      }
+    } catch (e: any) {
+      setFixStatus(`Failed: ${e.message}`);
+    } finally {
+      setFixing(false);
+    }
+  };
+
   return (
     <AdminLayout>
       <div>
@@ -53,6 +80,36 @@ export default function AdminDashboard() {
         <p className="font-body text-lg mb-8" style={{ color: "#6B7280" }}>
           Welcome to the Livewell admin panel. Manage your content below.
         </p>
+
+        {/* Stats Grid — primary content overview */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          {stats.map((stat) => {
+            const Icon = stat.icon;
+            const isLoading = postsQuery.isLoading || resourcesQuery.isLoading || booksQuery.isLoading;
+            return (
+              <Link
+                key={stat.label}
+                href={stat.href}
+                className="group flex flex-col p-8 rounded-lg no-underline transition-transform hover:scale-[1.03]"
+                style={{ backgroundColor: "#FFFFFF", borderTop: `5px solid ${stat.color}`, boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div className="font-ui text-xs uppercase tracking-wider" style={{ color: "#6B7280" }}>
+                    {stat.label}
+                  </div>
+                  <Icon size={32} style={{ color: stat.color, opacity: 0.35 }} />
+                </div>
+                <div className="font-display font-bold mb-3" style={{ color: stat.color, fontSize: "3.5rem", lineHeight: 1 }}>
+                  {isLoading ? <Loader2 size={36} className="animate-spin" /> : stat.value}
+                </div>
+                <div className="flex items-center gap-1 font-ui text-sm font-medium mt-auto" style={{ color: stat.color }}>
+                  View all
+                  <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+                </div>
+              </Link>
+            );
+          })}
+        </div>
 
         {/* Publish finished article content */}
         <Link
@@ -129,34 +186,6 @@ export default function AdminDashboard() {
           </div>
         </Link>
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          {stats.map((stat) => {
-            const Icon = stat.icon;
-            const isLoading = postsQuery.isLoading || resourcesQuery.isLoading || booksQuery.isLoading;
-            return (
-              <Link
-                key={stat.label}
-                href={stat.href}
-                className="p-6 rounded-lg no-underline transition-transform hover:scale-105"
-                style={{ backgroundColor: "#FFFFFF", borderLeft: `4px solid ${stat.color}` }}
-              >
-                <div className="flex items-start justify-between">
-                  <div>
-                    <div className="font-ui text-xs uppercase tracking-wider mb-2" style={{ color: "#6B7280" }}>
-                      {stat.label}
-                    </div>
-                    <div className="font-display text-4xl font-bold" style={{ color: stat.color }}>
-                      {isLoading ? <Loader2 size={24} className="animate-spin" /> : stat.value}
-                    </div>
-                  </div>
-                  <Icon size={28} style={{ color: stat.color, opacity: 0.3 }} />
-                </div>
-              </Link>
-            );
-          })}
-        </div>
-
         {/* Seed Content */}
         <div className="mb-12 p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB" }}>
           <div className="flex items-center justify-between mb-2">
@@ -201,6 +230,37 @@ export default function AdminDashboard() {
               color: seedStatus.startsWith("Done") ? "#065F46" : seedStatus.startsWith("Error") || seedStatus.startsWith("Failed") ? "#991B1B" : "#374151",
             }}>
               {seedStatus}
+            </div>
+          )}
+        </div>
+
+        {/* Repair apostrophes */}
+        <div className="mb-12 p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB" }}>
+          <div className="flex items-center justify-between mb-2">
+            <div>
+              <h2 className="font-display text-xl font-bold" style={{ color: "#1A1A1A" }}>
+                Repair Apostrophes
+              </h2>
+              <p className="font-body text-sm" style={{ color: "#6B7280" }}>
+                Fix imported text that lost its apostrophes (Gods, churchs, dont, youre). Checks every post and book, fixes only what needs it, never touches URLs.
+              </p>
+            </div>
+            <button
+              onClick={handleFixApostrophes}
+              disabled={fixing}
+              className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-ui font-semibold text-sm transition-colors"
+              style={{ backgroundColor: fixing ? "#9CA3AF" : "#1A1A1A", color: "#F7F5F0", cursor: fixing ? "default" : "pointer" }}
+            >
+              {fixing ? <Loader2 size={16} className="animate-spin" /> : <Wand2 size={16} />}
+              {fixing ? "Repairing..." : "Repair Text"}
+            </button>
+          </div>
+          {fixStatus && (
+            <div className="mt-3 p-3 rounded text-sm font-ui" style={{
+              backgroundColor: fixStatus.startsWith("Done") ? "#D1FAE5" : fixStatus.startsWith("Error") || fixStatus.startsWith("Failed") ? "#FEE2E2" : "#F3F4F6",
+              color: fixStatus.startsWith("Done") ? "#065F46" : fixStatus.startsWith("Error") || fixStatus.startsWith("Failed") ? "#991B1B" : "#374151",
+            }}>
+              {fixStatus}
             </div>
           )}
         </div>
