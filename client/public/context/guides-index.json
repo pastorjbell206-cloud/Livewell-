@@ -61,9 +61,21 @@
       "group": "Honor, Shame, and Culture"
     },
     {
+      "slug": "exile-not-empire",
+      "title": "Exile, Not Empire: The Posture of God's People",
+      "blurb": "Elect exiles, a letter to Babylon, and a refusal in front of a furnace. What changes when the church stops reading like a landlord.",
+      "group": "Reading Past Our Politics"
+    },
+    {
       "slug": "the-bible-is-not-an-american-book",
       "title": "The Bible Is Not an American Book",
       "blurb": "Three languages, a dozen empires, a millennium of authors, and not one of them ever saw a ballot. The text resists every flag we drape over it, including ours.",
+      "group": "Reading Past Our Politics"
+    },
+    {
+      "slug": "the-kingdom-is-not-a-platform",
+      "title": "The Kingdom Is Not a Party Platform",
+      "blurb": "Jesus refused the Zealots and the Herodians both. Every generation since has tried to draft him anyway, and ours is no exception.",
       "group": "Reading Past Our Politics"
     },
     {
