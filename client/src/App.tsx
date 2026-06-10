@@ -79,6 +79,14 @@ const NationHub = lazy(() => import("./pages/nation/NationHub"));
 const NationEssay = lazy(() => import("./pages/nation/NationEssay"));
 const NationScorecard = lazy(() => import("./pages/nation/NationScorecard"));
 const NationPolicy = lazy(() => import("./pages/nation/NationPolicy"));
+const LeadershipHub = lazy(() => import("./pages/leadership/LeadershipHub"));
+const LeadershipArticle = lazy(() => import("./pages/leadership/LeadershipArticle"));
+const LeadershipTeam = lazy(() => import("./pages/leadership/LeadershipTeam"));
+const SermonWorkbench = lazy(() => import("./pages/leadership/SermonWorkbench"));
+const IllustrationLibrary = lazy(() => import("./pages/leadership/IllustrationLibrary"));
+const MeetingBuilder = lazy(() => import("./pages/leadership/MeetingBuilder"));
+const VisitationTracker = lazy(() => import("./pages/leadership/VisitationTracker"));
+const LeaderAssessment = lazy(() => import("./pages/leadership/LeaderAssessment"));
 const PropheticLament = lazy(() => import("./pages/prophetic/PropheticLament"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
@@ -197,6 +205,14 @@ function Router() {
         <Route path="/nation/scorecard"><NationScorecard /></Route>
         <Route path="/nation/policy"><NationPolicy /></Route>
         <Route path="/nation"><NationHub /></Route>
+        <Route path="/leadership/team"><LeadershipTeam /></Route>
+        <Route path="/leadership/sermon-prep"><SermonWorkbench /></Route>
+        <Route path="/leadership/illustrations"><IllustrationLibrary /></Route>
+        <Route path="/leadership/meeting"><MeetingBuilder /></Route>
+        <Route path="/leadership/visitation"><VisitationTracker /></Route>
+        <Route path="/leadership/assessment/:slug"><LeaderAssessment /></Route>
+        <Route path="/leadership/article/:slug"><LeadershipArticle /></Route>
+        <Route path="/leadership"><LeadershipHub /></Route>
         <Route path="/justice/topic/:slug"><PropheticTopic config={JUSTICE} /></Route>
         <Route path="/justice"><PropheticHub config={JUSTICE} /></Route>
         <Route path="/theology/how-to-use" component={TheologyMethodology} />
