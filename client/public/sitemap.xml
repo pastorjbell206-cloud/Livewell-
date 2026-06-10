@@ -1036,6 +1036,31 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://www.livewellbyjamesbell.co/resources/context/did-the-gospels-get-jesus-right</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/resources/context/miracles-and-the-ancient-mind</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/resources/context/the-slavery-texts</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/resources/context/the-violence-of-the-old-testament</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/resources/context/women-in-the-ancient-world</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://www.livewellbyjamesbell.co/leadership/formation/church-government</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -1046,7 +1071,22 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://www.livewellbyjamesbell.co/leadership/formation/the-call-and-its-testing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/leadership/formation/burnout-and-the-theology-of-rest</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://www.livewellbyjamesbell.co/leadership/formation/the-hidden-temptations-of-power</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/leadership/formation/the-leaders-marriage-and-family</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -1056,7 +1096,22 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://www.livewellbyjamesbell.co/life/friendship-against-isolation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://www.livewellbyjamesbell.co/life/the-anxious-mind</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/life/grief-and-loss</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/life/money-and-the-heart</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>

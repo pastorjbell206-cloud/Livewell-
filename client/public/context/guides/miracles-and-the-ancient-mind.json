@@ -1,0 +1,46 @@
+{
+  "slug": "miracles-and-the-ancient-mind",
+  "title": "Miracles and the Ancient Mind",
+  "subtitle": "The claim that ancient people would believe anything is itself a belief, held against the evidence. They knew exactly what death was. That is why the resurrection startled them first.",
+  "kicker": "Hard Questions",
+  "group": "The Hard Questions",
+  "sections": [
+    {
+      "id": "the-credulity-argument",
+      "kicker": "The Objection",
+      "title": "The Credulity Argument, Stated Fairly",
+      "body": "The argument runs like this. Ancient people lived before science. They did not know the laws of nature, so a virgin birth or a resurrection cost them nothing to believe, and miracle stories grew in that soil the way mold grows in the dark. We, who know better, may set those stories aside without examining them.\n\nThis deserves to be stated at full strength, because versions of it persuade serious people, and because it contains a true premise. The ancient world did hold beliefs about omens, healing shrines, and portents that we rightly decline. Credulity existed. It exists now, scrolling past you in your feed, dressed in wellness claims and conspiracy threads, which should already complicate the idea that gullibility is a stage humanity outgrew.\n\nBut the argument needs a stronger premise than some ancients believed strange things. It needs this. Ancient people in general, and the Gospel writers and their audiences in particular, lacked the concept of a fixed natural order and accepted miracle claims without resistance. That premise is testable against the ancient record, and the record is not kind to it."
+    },
+    {
+      "id": "ancient-skeptics",
+      "kicker": "The Record",
+      "title": "The Ancient World Was Full of Skeptics",
+      "body": "Doubt is not a modern invention. The Sadducees, the priestly aristocracy running the temple, denied resurrection, angels, and spirits on principle, and Jesus debated them in public about it. When Paul preached the resurrection to the philosophers of Athens, Acts reports that some of them sneered, which is exactly how you would expect Stoics and Epicureans to respond, since Epicurean physics ruled out divine intervention centuries before Hume did. Cicero wrote a treatise dismantling divination. Lucian of Samosata built a literary career mocking miracle-mongers and the crowds who paid them.\n\nThe Gospels themselves assume an audience that knows how nature works. Joseph, finding Mary pregnant, resolves to divorce her quietly, because a first-century carpenter knew where babies come from. The disciples dismiss the women's report from the tomb as nonsense. Thomas demands physical evidence before he will say a word of faith. Matthew ends his Gospel with the eleven worshiping the risen Jesus while some doubted, a clause no propagandist would have left standing.\n\nAncient people did not lack the category of the impossible. They had it, used it, and applied it to these very claims. The stories were not received into a credulous vacuum. They were received under fire, and the writers tell us so."
+    },
+    {
+      "id": "what-they-knew-about-death",
+      "kicker": "The Dead",
+      "title": "What They Knew About Death",
+      "body": "Whatever ancient people did not know, they knew death. They buried their own children at rates we cannot imagine, washed the bodies themselves, and sat with corpses through the night. No generation in history has been harder to fool about whether dead people stay dead.\n\nAnd the cultures of the first century had settled categories for what happens afterward, none of which fit the Christian claim. Greeks and Romans had ghosts, visions, and the apotheosis of emperors, a soul ascending while the body stayed in the grave, and they found the idea of a corpse restored not wonderful but repulsive. The philosophers of Athens listened to Paul politely until the word resurrection, then laughed. Jews who did believe in resurrection, the Pharisees among them, expected it for everyone at once at the end of history, not for one man in the middle of it. N. T. Wright has mapped this terrain in exhaustive detail.\n\nSo the claim that Jesus rose bodily, leaving an empty tomb, fit no one's expectations and flattered no one's categories. It was a hard sell in every direction, which is the opposite of what the credulity theory predicts. Easy legends grow along the grain of what people already believe. This one grew against the grain, in the city where the tomb could be checked."
+    },
+    {
+      "id": "hume-and-his-critics",
+      "kicker": "The Argument",
+      "title": "Hume at the Door, and His Critics",
+      "body": "The serious philosophical objection comes from David Hume in 1748. A miracle is a violation of the laws of nature, uniform experience stands against every miracle, and therefore no testimony could ever be sufficient to establish one. Generations have treated that essay as the end of the discussion.\n\nIts critics notice that the argument carries its conclusion in its luggage. You can only call experience uniformly against miracles if you have already discounted every witness who says otherwise, which is the very point in dispute. John Earman, a philosopher of science with no religious brief, worked through the probability theory and titled his book Hume's Abject Failure, arguing that the essay's logic, applied consistently, would also strangle science, which routinely accepts credible testimony to rare and unrepeated events.\n\nAnd the testimony has not stopped. Craig Keener's two-volume Miracles documents claims across continents and centuries, including survey work suggesting hundreds of millions of living people believe they have witnessed divine healing. Most of those claims may be mistaken. Keener's point is narrower and harder to dodge. The premise that no one experiences such things is not a finding. It is a decision not to listen. Hume at least made the decision knowingly. Most of us inherited it without noticing we had decided anything at all."
+    },
+    {
+      "id": "what-the-gospels-claim",
+      "kicker": "The Genre",
+      "title": "What the Gospels Are Actually Claiming",
+      "body": "None of this proves a miracle happened. Context never proves. What it does is clear away the lazy verdict so the real question can stand up.\n\nNotice what kind of claims the Gospels make. Their miracles are not set once upon a time. They are tied to named officials, datable rulers, specific towns, and named beneficiaries, the kind of detail that invites checking. Luke opens his Gospel by claiming careful investigation of eyewitness sources. Paul tells the Corinthians that the risen Jesus appeared to more than five hundred people at once, most of whom are still alive, which in a first-century letter functions as an invitation to go ask them. Whatever this is, it is not the grammar of legend. It is the grammar of testimony, offered in the generation that could have contradicted it.\n\nSo the question was never whether ancient people were gullible. Some were, as some of us are. The question is whether God exists and has acted, and that cannot be settled by chronology, by flattering ourselves about the past, or by an argument that rules out the evidence before hearing it. The witnesses are on the record, closer to the events than we will ever be. Dismissing them was supposed to be the easy part. It is not, and that may be why we wanted it to be."
+    }
+  ],
+  "keyTexts": ["Matthew 28:16-17", "Acts 17:30-32", "1 Corinthians 15:3-8"],
+  "sources": [
+    { "title": "Miracles: The Credibility of the New Testament Accounts", "author": "Craig S. Keener" },
+    { "title": "Hume's Abject Failure: The Argument Against Miracles", "author": "John Earman" },
+    { "title": "The Resurrection of the Son of God", "author": "N. T. Wright" },
+    { "title": "Miracles: A Preliminary Study", "author": "C. S. Lewis" }
+  ]
+}
