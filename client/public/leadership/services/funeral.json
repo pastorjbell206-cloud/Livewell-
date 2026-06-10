@@ -1,0 +1,185 @@
+{
+  "slug": "funeral",
+  "title": "The Funeral Service Builder",
+  "subtitle": "Build a service that tells the truth about death in the presence of a hope that does not flinch.",
+  "intro": "A funeral is not a celebration that pretends nothing happened. Someone has died. The room knows it, the family feels it, and the worst thing a minister can do is talk around it. The grief is real, and you do not have to fix it. You have to stand in it and point past it.\n\nUse this builder to assemble the service one piece at a time. Each element offers pastoral guidance and sample text you can read as written or shape into your own. Speak slowly. Leave silence where silence belongs. The family is not listening for eloquence. They are listening for the truth, and for hope they can lean their weight against.\n\nWrite for the person who died and the people who are left. Use the name. Say it often. A funeral that never names the one in the casket has missed the reason everyone came.",
+  "elements": [
+    {
+      "id": "opening-sentences",
+      "name": "Opening Words and Scripture Sentences",
+      "guidance": "Begin with the Word, not with your own words. Let Scripture set the ground under the room before anything else is said. Speak it slowly.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Resurrection sentences",
+          "text": "Jesus said, I am the resurrection and the life. Whoever believes in me, though he die, yet shall he live, and everyone who lives and believes in me shall never die. We have gathered in the shadow of death, but we do not gather without hope. The same God who set the stars in place has promised that death will not have the last word. We come to grieve, and we come to remember, and we come to hold on to that promise together."
+        },
+        {
+          "label": "Plain and grounded",
+          "text": "We are here because someone we love has died, and that is a hard and holy thing to say out loud. We will not pretend otherwise today. But we have not come empty handed. We have come carrying grief in one hand and hope in the other, and we are going to hold on to both. The Lord is near to the brokenhearted. He is near to this room. Let us begin in His presence."
+        }
+      ]
+    },
+    {
+      "id": "welcome-prayer",
+      "name": "Welcome and Opening Prayer",
+      "guidance": "Welcome the gathered family and friends, name the one who has died, and pray. Ask God to meet the room in its grief.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Welcome and prayer",
+          "text": "On behalf of the family, thank you for being here. Your presence is not a small thing. Grief is lighter when it is carried by more than one set of shoulders, and by coming you have taken some of the weight. We are here to remember NAME, to give thanks for the life he lived, and to commit him into the hands of God. Let us pray. Father, we come to you with heavy hearts. You know the ache in this room because you have wept at a grave yourself. Meet us here. Hold the ones whose loss is deepest. And turn our eyes, even through our tears, toward the hope we have in you. We pray in the name of Jesus. Amen."
+        }
+      ]
+    },
+    {
+      "id": "scripture-readings",
+      "name": "Scripture Readings",
+      "guidance": "Let the Word carry the room. Choose the passages that fit this person and this family. Read more than one if the family needs to sit longer in the promises.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Psalm 23",
+          "text": "The Lord is my shepherd. I shall not want. He makes me lie down in green pastures. He leads me beside still waters. He restores my soul. Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me. Your rod and your staff, they comfort me. Surely goodness and mercy shall follow me all the days of my life, and I shall dwell in the house of the Lord forever."
+        },
+        {
+          "label": "Psalm 90",
+          "text": "Lord, you have been our dwelling place in all generations. Before the mountains were brought forth, from everlasting to everlasting you are God. You return man to dust and say, Return, O children of man. For a thousand years in your sight are but as yesterday when it is past. Teach us to number our days that we may get a heart of wisdom. Let the favor of the Lord our God be upon us, and establish the work of our hands."
+        },
+        {
+          "label": "John 11",
+          "text": "Jesus said to her, I am the resurrection and the life. Whoever believes in me, though he die, yet shall he live, and everyone who lives and believes in me shall never die. Do you believe this. When Jesus saw Mary weeping, he was deeply moved in his spirit and greatly troubled. And Jesus wept. See how he loved him. Then Jesus, deeply moved again, came to the tomb, and he called out with a loud voice, Lazarus, come out. And the man who had died came out."
+        },
+        {
+          "label": "John 14",
+          "text": "Let not your hearts be troubled. Believe in God. Believe also in me. In my Father's house are many rooms. If it were not so, would I have told you that I go to prepare a place for you. And if I go and prepare a place for you, I will come again and will take you to myself, that where I am you may be also. I am the way, and the truth, and the life. No one comes to the Father except through me."
+        },
+        {
+          "label": "Romans 8",
+          "text": "I consider that the sufferings of this present time are not worth comparing with the glory that is to be revealed to us. Who shall separate us from the love of Christ. Shall tribulation, or distress, or persecution, or famine, or nakedness, or danger, or sword. No, in all these things we are more than conquerors through him who loved us. For I am sure that neither death nor life, nor angels nor rulers, nor things present nor things to come, nor anything else in all creation, will be able to separate us from the love of God in Christ Jesus our Lord."
+        },
+        {
+          "label": "1 Corinthians 15",
+          "text": "Behold, I tell you a mystery. We shall not all sleep, but we shall all be changed, in a moment, in the twinkling of an eye, at the last trumpet. For the trumpet will sound, and the dead will be raised imperishable, and we shall be changed. For this perishable body must put on the imperishable, and this mortal body must put on immortality. Then shall come to pass the saying that is written, Death is swallowed up in victory. O death, where is your sting. Thanks be to God, who gives us the victory through our Lord Jesus Christ."
+        },
+        {
+          "label": "Revelation 21",
+          "text": "And I saw a new heaven and a new earth, for the first heaven and the first earth had passed away. And I heard a loud voice from the throne saying, Behold, the dwelling place of God is with man. He will dwell with them, and they will be his people, and God himself will be with them as their God. He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away."
+        }
+      ]
+    },
+    {
+      "id": "word-about-the-one-who-died",
+      "name": "A Word About the One Who Died",
+      "guidance": "This is the eulogy, or your frame around the family's words. Use the name. Tell the truth about the person, the ordinary details and the real ones. Honor the life without flattering it. If the family is speaking, your job is to set the table for them and hold the room steady.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Eulogy frame",
+          "text": "We are not here to remember a perfect person, because there has never been one, and NAME would be the first to say so. We are here to remember a real one. A life with its own shape, its own laugh, its own way of walking into a room. NAME was KNOWN FOR. Those who loved him will carry STORIES AND DETAILS for the rest of their lives. There were hard chapters too, because there always are, and we do not erase them today. We hold the whole life, the joy and the struggle, and we give thanks for a person who was given to us for a time and is now given back to God."
+        },
+        {
+          "label": "Honoring an ordinary, faithful life",
+          "text": "Some lives make the news. Most do not. NAME lived the kind of life the world rarely notices and heaven never overlooks. He showed up. He worked. He loved his people. He did the small, unglamorous, faithful things, day after day, year after year, and those small things added up to something the rest of us are still standing inside of. The mark he left is not in a headline. It is in the people in this room, in the way he taught us to live, in the love he handed down. That is not a small inheritance. That is the only kind that lasts."
+        }
+      ]
+    },
+    {
+      "id": "song-or-sharing",
+      "name": "A Song or Special Music",
+      "guidance": "Music gives the room a place to put what words cannot hold. Place it after the eulogy or before the message. Leave it out if the family prefers a simpler service.",
+      "optional": true,
+      "samples": [
+        {
+          "label": "Planning note",
+          "text": "A soloist, a recording, or the gathered congregation offers a song here. If the family has chosen a hymn or a piece of music that meant something to the one who died, this is its place. Let the room be still. Tears are welcome here, and music often gives them permission to come."
+        }
+      ]
+    },
+    {
+      "id": "open-sharing",
+      "name": "Open Time of Sharing",
+      "guidance": "An optional invitation for family and friends to speak. Powerful, but unpredictable. Set a gentle boundary, name who will go first, and be ready to draw it to a close with grace.",
+      "optional": true,
+      "samples": [
+        {
+          "label": "Invitation to share",
+          "text": "We are going to open the next few minutes for any who would like to say a word about NAME. There is no pressure to speak, and there is no wrong thing to say. A memory, a thank you, a single sentence. If you feel moved to share, come forward as you are ready. We will hold this time gently, and I will draw it to a close when the moment is right, so that we can go on together to the hope that holds all of this."
+        }
+      ]
+    },
+    {
+      "id": "gospel-and-resurrection",
+      "name": "The Gospel and the Hope of Resurrection",
+      "guidance": "This is the heart of the service. Tell the truth about death, plainly, and then tell the truth about the One who defeated it. Do not soften death into a long sleep or a better place. Name it as the enemy it is, and name the empty tomb as the answer it is.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Truth about death, in the presence of hope",
+          "text": "I am not going to stand here and tell you that death is natural, or beautiful, or a part of life we should make our peace with. The Bible does not call death a friend. It calls it an enemy, the last enemy, and everything in you that recoils from this casket is right to recoil. Death is wrong. It was never supposed to be here. The ache you feel is not weakness. It is the truth, breaking through. But here is the other truth, and it is the one I have staked my life on. Death met its match. On a Friday they buried a man, sealed the tomb, and posted a guard. On Sunday the tomb was empty. Jesus Christ walked out of his own grave, and in doing so he broke the back of the thing we fear most. He did not explain death. He defeated it. And he made a promise to everyone who trusts him, that because he lives, they will live also. So we grieve today. We grieve hard, and we grieve honestly. But we do not grieve as people who have no hope. The grave that holds NAME is not a full stop. It is a comma. The God who emptied one tomb has promised to empty them all."
+        },
+        {
+          "label": "The hope that holds when nothing else does",
+          "text": "When everything else is stripped away, and a day like this strips a great deal away, the question underneath every funeral is simple. Is there any hope. And the answer the Christian faith gives is not a feeling or a sentiment. It is an event. A man rose from the dead. Either that is true or it is not, and if it is true, it changes everything about this room. It means the love you feel for NAME is not a candle that death blows out. It means the goodbye we say today is real but not final. It means that for all who are found in Christ, the worst thing is never the last thing. We do not know everything about what lies on the other side. But we know who is there. And that has been enough for the dying and the grieving for two thousand years, and it is enough today. Hold on to it. Lean your full weight against it. It will hold."
+        }
+      ]
+    },
+    {
+      "id": "prayer-of-comfort",
+      "name": "Prayer of Comfort",
+      "guidance": "Pray for the ones left behind by name where you can. Ask God for what they will need in the days after everyone goes home, when the casseroles stop and the house is quiet.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Prayer for the grieving",
+          "text": "Father, you are close to the brokenhearted, and there are broken hearts in this room. We bring them to you. Comfort the ones who loved NAME most and now feel his absence deepest. Be near them not only today, while the room is full, but in the days to come, when the house is quiet and the table is set for one less. Catch the tears that fall when no one is watching. Hold them through the first morning they wake and remember, and the first holiday with an empty chair. Give them your peace, the kind that does not depend on understanding. And give them each other, so that no one carries this alone. We ask it in the name of Jesus, who wept at a grave and knows our sorrow from the inside. Amen."
+        }
+      ]
+    },
+    {
+      "id": "committal",
+      "name": "Committal at the Graveside",
+      "guidance": "At the grave, the words are few and the weight is heavy. Commit the body to the ground and the soul to God. Speak plainly. The family is watching the lowering of the casket as you speak, so let your words be steady.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Traditional committal",
+          "text": "We have come to this place to commit the body of NAME to its resting place. Earth to earth, ashes to ashes, dust to dust, in the sure and certain hope of the resurrection to eternal life through our Lord Jesus Christ. We do not lay him here as those who have no hope. We plant this body like a seed in the ground, trusting the One who promised that what is sown perishable will be raised imperishable. The Lord bless him and keep him. The Lord make his face shine upon him and give him peace. Until the morning breaks and the shadows flee away."
+        },
+        {
+          "label": "Plain committal",
+          "text": "Here, at the side of this grave, we give NAME back to God and his body back to the earth from which it came. We do this gently, and we do this in hope. The same Lord who walked out of his own tomb has promised that this ground cannot hold those who belong to him. So we say goodbye to the body for now, and we entrust the soul to the God who made it and loved it and called it home. Rest now. The God who never sleeps is keeping watch over you, and over all of us, until the day he makes everything new."
+        }
+      ]
+    },
+    {
+      "id": "honors-note",
+      "name": "Military or Fraternal Honors Note",
+      "guidance": "A planning note. If military honors, a flag folding, or a fraternal rite is part of the service, coordinate the timing so it does not interrupt the committal. Usually it follows the committal words.",
+      "optional": true,
+      "samples": [
+        {
+          "label": "Planning note",
+          "text": "If the family has arranged military honors or a fraternal observance, it typically follows the committal. Pause and step back so the detail can carry out its duty without rushing. After the flag is folded and presented, or the rite is complete, you may return to offer the benediction. Coordinate the sequence with those leading the honors beforehand so nothing is hurried at the graveside."
+        }
+      ]
+    },
+    {
+      "id": "benediction",
+      "name": "Benediction",
+      "guidance": "The final word, spoken over the family as they prepare to go on without the one they love. A blessing for the road ahead, not a summary of the day.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Sending blessing",
+          "text": "Go now in the peace of God. You will walk out of here into a world that is missing someone, and that is a hard walk. But you do not walk it alone. May the God of all comfort go with you. May he hold you on the nights that are long and the mornings that are heavy. May he remind you, again and again, that your grief is the size of your love, and that neither one is wasted. And may the hope of the resurrection be the ground under your feet until the day every tear is wiped away. The grace of our Lord Jesus Christ be with you all. Amen."
+        },
+        {
+          "label": "Aaronic blessing",
+          "text": "The Lord bless you and keep you. The Lord make his face shine upon you and be gracious to you. The Lord lift up his countenance upon you and give you peace, this day and in all the days of grief and healing to come. Go in the comfort of God, and do not lose heart. In the name of the Father, and of the Son, and of the Holy Spirit. Amen."
+        }
+      ]
+    }
+  ],
+  "closing": "When a death has left the faith of the one who died unclear, do not stand in God's place and pronounce on where their soul has gone, but preach the character of God, his mercy that runs deeper than we can measure and his justice that we can trust, and let the family rest the question where it belongs, in the hands of a God who is kinder than we are and never wrong."
+}
