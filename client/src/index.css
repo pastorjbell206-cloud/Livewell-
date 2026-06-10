@@ -2,6 +2,14 @@
  * preconnect to fonts.gstatic.com. Importing fonts from CSS blocks first
  * paint on the stylesheet AND the font request. */
 
+/* Tailwind v4 utilities. The admin area (and the ui/ components) are written
+ * with Tailwind classes; without these imports the utilities were never
+ * generated and the admin rendered as an unstyled pile. Theme + utilities
+ * only — preflight is deliberately omitted so the public site's own reset
+ * and design system are untouched. */
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
 /* LIVEWELL DESIGN TOKENS */
