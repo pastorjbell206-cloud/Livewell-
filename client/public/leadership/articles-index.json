@@ -55,6 +55,12 @@
       "group": "Church Leadership"
     },
     {
+      "slug": "building-a-leadership-pipeline",
+      "title": "How to Build a Leadership Pipeline",
+      "blurb": "A practical guide to building a church leadership pipeline, identifying potential leaders, and raising them up so your ministry multiplies instead of running on empty.",
+      "group": "Church Leadership"
+    },
+    {
       "slug": "how-to-cast-vision",
       "title": "How to Cast Vision a Church Will Actually Follow",
       "blurb": "A practical guide to casting biblical church vision that is clear, owned by the congregation, and strong enough to outlast the pastor who first spoke it.",
@@ -181,6 +187,12 @@
       "group": "Leadership Formation"
     },
     {
+      "slug": "emotionally-healthy-leadership",
+      "title": "The Emotionally Healthy Leader",
+      "blurb": "Emotionally healthy leadership requires self-awareness about anger, anxiety, and the family system a pastor carries into the church without ever realizing it.",
+      "group": "Leadership Formation"
+    },
+    {
       "slug": "the-leaders-prayer-life",
       "title": "The Leader Who Does Not Pray",
       "blurb": "Prayer is the first thing to go in a busy ministry and the last thing anyone notices is gone, which is exactly why it is the truest measure of a leader's soul.",
@@ -244,6 +256,12 @@
       "slug": "welcoming-newcomers",
       "title": "How a Church Welcomes and Keeps Newcomers",
       "blurb": "Practical guidance on guest assimilation, hospitality, and helping first-time visitors move from the back row to real belonging",
+      "group": "Pastoral Ministry"
+    },
+    {
+      "slug": "caring-for-the-grieving",
+      "title": "How to Care for the Grieving",
+      "blurb": "Ministering to those who mourn with presence, the things never to say, and faithfulness through the long grief that outlasts the funeral",
       "group": "Pastoral Ministry"
     },
     {
