@@ -79,6 +79,18 @@
       "group": "Church Leadership"
     },
     {
+      "slug": "running-effective-meetings",
+      "title": "How to Run a Church Meeting Worth Attending",
+      "blurb": "A practical guide to running effective church meetings, with agendas, clear decisions, and the leadership habits that turn wasted gatherings into real work.",
+      "group": "Church Leadership"
+    },
+    {
+      "slug": "learning-to-delegate",
+      "title": "The Leader Who Cannot Delegate",
+      "blurb": "A pastoral guide to delegation in church leadership, why the indispensable leader is a liability, and how to hand off real authority so the ministry can grow past you.",
+      "group": "Church Leadership"
+    },
+    {
       "slug": "bible-genres",
       "title": "How Genre Changes the Way You Read the Bible",
       "blurb": "A guide to the literary genres of Scripture, from law and narrative to poetry, wisdom, prophecy, gospel, epistle, and apocalyptic, and how each one asks to be read",
@@ -88,6 +100,12 @@
       "slug": "how-to-do-a-word-study",
       "title": "How to Do a Word Study Without Wrecking the Text",
       "blurb": "A practical method for studying Greek and Hebrew words in the Bible, and how to avoid the common word study fallacies of root, anachronism, and overload",
+      "group": "Exegesis and Bible Study"
+    },
+    {
+      "slug": "how-to-interpret-parables",
+      "title": "How to Interpret the Parables of Jesus",
+      "blurb": "A guide to interpreting the parables of Jesus, finding the one main point, reading them in light of the kingdom of God, and recovering their original sting",
       "group": "Exegesis and Bible Study"
     },
     {
@@ -157,6 +175,12 @@
       "group": "Leadership Formation"
     },
     {
+      "slug": "protecting-your-marriage-in-ministry",
+      "title": "Protecting the Marriage Ministry Tries to Eat",
+      "blurb": "Ministry will consume a pastor's marriage if he lets it, and protecting your marriage in ministry means guarding the one relationship the church was never meant to replace.",
+      "group": "Leadership Formation"
+    },
+    {
       "slug": "the-leaders-prayer-life",
       "title": "The Leader Who Does Not Pray",
       "blurb": "Prayer is the first thing to go in a busy ministry and the last thing anyone notices is gone, which is exactly why it is the truest measure of a leader's soul.",
@@ -214,6 +238,18 @@
       "slug": "evangelism-for-ordinary-christians",
       "title": "Evangelism for Ordinary Christians",
       "blurb": "How to share your faith and witness to a skeptical neighbor without a script, a sales pitch, or the fear that has silenced the church",
+      "group": "Pastoral Ministry"
+    },
+    {
+      "slug": "welcoming-newcomers",
+      "title": "How a Church Welcomes and Keeps Newcomers",
+      "blurb": "Practical guidance on guest assimilation, hospitality, and helping first-time visitors move from the back row to real belonging",
+      "group": "Pastoral Ministry"
+    },
+    {
+      "slug": "how-to-lead-a-prayer-meeting",
+      "title": "How to Lead a Prayer Meeting People Come To",
+      "blurb": "Reviving the church prayer meeting with structure, honesty, and expectancy so corporate prayer stops being the night everyone skips",
       "group": "Pastoral Ministry"
     },
     {
@@ -289,6 +325,12 @@
       "group": "Preaching"
     },
     {
+      "slug": "how-to-preach-a-bible-story",
+      "title": "How to Preach a Narrative Text",
+      "blurb": "How to preach a Bible story or narrative text faithfully, honoring plot, character, and tension instead of flattening the story into three points and a moral.",
+      "group": "Preaching"
+    },
+    {
       "slug": "preaching-christ-from-the-old-testament",
       "title": "How to Preach Christ From the Old Testament",
       "blurb": "How to preach Christ from the Old Testament with integrity, using redemptive history and typology instead of forced allegory or flat moralizing, in practical sermon terms.",
@@ -322,6 +364,12 @@
       "slug": "expository-preaching",
       "title": "What Expository Preaching Actually Is",
       "blurb": "A working definition of expository preaching set against topical and textual preaching, and why letting the text set the agenda forms a congregation over years.",
+      "group": "Preaching"
+    },
+    {
+      "slug": "preaching-to-yourself-first",
+      "title": "Why You Have to Preach to Yourself First",
+      "blurb": "Why a preacher must let the sermon confront him before it confronts the congregation, and how preaching to yourself first guards against hypocrisy and dead delivery.",
       "group": "Preaching"
     },
     {

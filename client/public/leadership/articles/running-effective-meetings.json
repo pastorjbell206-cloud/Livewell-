@@ -1,0 +1,45 @@
+{
+  "slug": "running-effective-meetings",
+  "title": "How to Run a Church Meeting Worth Attending",
+  "subtitle": "A practical guide to running effective church meetings, with agendas, clear decisions, and the leadership habits that turn wasted gatherings into real work.",
+  "kicker": "Church Leadership",
+  "group": "Church Leadership",
+  "sections": [
+    {
+      "id": "the-problem",
+      "kicker": "The Diagnosis",
+      "title": "Most Church Meetings Are a Slow Way to Decide Nothing",
+      "body": "Count the hours. A board that meets monthly for two hours spends twenty-four hours a year in a room, and most of those hours produce fog. People talk in circles, revisit settled questions, wander into tangents, and leave with the vague sense that something happened, though no one could say what was actually decided. The faithful keep coming because they are faithful. They are also quietly dying inside.\n\nA bad meeting is not a small sin. It is the theft of time from people who gave it to the church for free, and it teaches them, slowly, that their time is not respected, and they begin to disengage. The most committed people in your church will tolerate a lot, but they will not indefinitely tolerate the feeling that their evenings are being wasted by a leader who did not prepare.\n\nNot a tradition to endure. A tool to steward. A meeting exists to do work that can only be done together, to decide, to align, to pray, to plan. If the work could be done in an email, it should have been an email. If the meeting is not producing decisions and direction, it is not a meeting. It is a habit, and habits that produce nothing should be killed, not kept."
+    },
+    {
+      "id": "the-agenda",
+      "kicker": "The Practice",
+      "title": "No Agenda, No Meeting",
+      "body": "The single greatest predictor of whether a meeting will be useful is whether anyone built an agenda before it started, and whether they built it well. A meeting without an agenda is a conversation that happens to have a quorum, and it will drift wherever the most talkative person steers it.\n\nA real agenda is not a list of topics. It is a list of decisions, framed as questions the meeting must answer, with the information needed to answer them sent out beforehand so people arrive ready rather than reading for the first time in the room. Each item gets a purpose, to decide, to discuss, or simply to inform, because a group that does not know whether it is deciding or merely talking will do both badly. Each item gets a rough time, so the building debate does not eat the hour meant for everything else. And the agenda goes out early enough that people can actually prepare, because a meeting where everyone is encountering the material live is a meeting where nothing thoughtful can happen.\n\nThe leader who walks in without an agenda is telling the room their time does not matter enough to plan for. Twenty minutes of preparation can redeem two hours of a dozen people's lives. The math is not close. Build the agenda, send it ahead, and protect it once the meeting starts, because the agenda is the only thing standing between a productive evening and a wandering one."
+    },
+    {
+      "id": "running-it",
+      "kicker": "The Practice",
+      "title": "Lead the Room or the Room Will Lead Itself",
+      "body": "A good agenda can still produce a bad meeting if no one actually leads it. Meetings do not run themselves toward decisions. Left alone, they drift toward whoever talks most, toward the comfortable tangent, toward the reopening of questions everyone thought were closed. The leader's job in the room is to serve the group by keeping it on the path.\n\nThis means starting on time, even when people straggle in, because waiting for the late punishes the prompt and trains everyone to come late next time. It means drawing out the quiet, because the person who has not spoken often holds the insight the loud ones are drowning, and a wise leader specifically asks for the voices the room is not hearing. It means naming the tangent kindly and setting it aside, that is a real issue and it is not this one, let us put it on a later agenda. And it means protecting people from one another, so the meeting is safe for honest disagreement and unsafe for personal attack.\n\nThe leader is not there to dominate the room. He is there to serve it, to make sure the work gets done and every voice that should be heard is heard and no single person hijacks the time that belongs to all of them. A meeting well led feels brisk and fair and worth the evening. A meeting unled feels like wading through mud, and the people who waded through it will find reasons not to come back."
+    },
+    {
+      "id": "decisions",
+      "kicker": "The Practice",
+      "title": "End With Decisions, Not Just Discussion",
+      "body": "The most common failure of church meetings is the one that hides best. The discussion is rich, the room is engaged, people share thoughtfully, and then the meeting ends, and nothing was actually decided, and no one is sure who is doing what, and the same conversation will happen again next month. A good conversation is not a meeting's purpose. A clear decision is.\n\nEvery item that calls for action should end with three things stated out loud and written down. What was decided. Who is responsible for it. By when. The fog that ruins follow-through almost always comes from skipping that closing moment, from assuming everyone left with the same understanding when in fact everyone left with their own. Before the group moves to the next item, say plainly, so we have decided this, and the person carrying it forward is you, and it will be done by then. Boring. Necessary. The difference between a church that moves and a church that talks about moving.\n\nThen write it down and send it out, a short record of decisions and owners, not a transcript of everything said but a clear list of what the meeting actually produced. The next meeting opens by checking that record, what did we decide and did it happen, and suddenly accountability exists where before there was only good intentions evaporating in the parking lot. A meeting that ends in clear decisions justifies its existence. A meeting that ends in a warm feeling and no decisions has stolen an evening and called it fellowship."
+    },
+    {
+      "id": "the-weight",
+      "kicker": "The Weight",
+      "title": "Let All Things Be Done Decently and in Order",
+      "body": "Paul, writing to a chaotic church, gave them a principle that sounds almost too plain to be Scripture. Let all things be done decently and in order. It comes at the end of his instructions about their gatherings, and it is not a footnote. It is a conviction that the God they worship is not a God of confusion but of peace, and that the way his people gather ought to reflect the character of the God they gather to honor.\n\nWe tend to think of meetings as the unspiritual part of church life, the necessary administrative drudgery we get through so we can do the real ministry. But the people in that room are the body of Christ, and their time is a gift they laid down, and the way we steward that gift is a spiritual matter whether we treat it as one or not. A leader who wastes his people's time has not honored them, and a leader who has not honored his people has not led them well, however good his theology.\n\nI have run meetings that wandered for hours and called it being relational, when the truth was I had not done the work of preparing. The people in your meetings are giving you their evenings, their weariness after a long day, their trust that this will be worth it. Honor that. Prepare. Lead. Decide. Send them home knowing the time was not wasted. It is a small thing and it is not a small thing, because it is the difference between a leader who respects his people and one who merely uses their patience."
+    }
+  ],
+  "keyTexts": ["1 Corinthians 14:40", "Proverbs 15:22", "Nehemiah 2:11-18"],
+  "furtherReading": [
+    {"title": "Death by Meeting", "author": "Patrick Lencioni"},
+    {"title": "Canoeing the Mountains", "author": "Tod Bolsinger"},
+    {"title": "The Conviction to Lead", "author": "Albert Mohler"}
+  ]
+}
