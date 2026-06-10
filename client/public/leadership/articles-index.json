@@ -127,6 +127,12 @@
       "group": "Church Leadership"
     },
     {
+      "slug": "leading-through-decline",
+      "title": "Leading a Church Through Decline",
+      "blurb": "How a pastor leads faithfully when the church is shrinking, why honesty about decline matters more than optimism, and what it takes to lead a dying or struggling congregation toward renewal or a faithful ending.",
+      "group": "Church Leadership"
+    },
+    {
       "slug": "leading-difficult-people",
       "title": "Leading the Difficult People in Your Church",
       "blurb": "How a pastor handles the antagonist, the chronic critic, and the controlling personality without becoming bitter, where to draw the line between difficult and dangerous, and how to protect the flock from the few who would harm it.",
@@ -142,6 +148,12 @@
       "slug": "setting-direction-without-controlling",
       "title": "Setting the Direction Without Controlling Everything",
       "blurb": "How a pastor leads with clear vision while genuinely empowering others, where the line falls between healthy direction and micromanagement, and why the leader who controls everything ends up leading no one.",
+      "group": "Church Leadership"
+    },
+    {
+      "slug": "succession-planning-church",
+      "title": "Succession Planning for the Church You Will Leave",
+      "blurb": "Why every pastor is an interim pastor, how to plan a healthy leadership succession before you are forced to, and what it takes to hand off a church well so the ministry outlives the minister.",
       "group": "Church Leadership"
     },
     {
@@ -460,6 +472,12 @@
       "slug": "caring-for-the-grieving",
       "title": "How to Care for the Grieving",
       "blurb": "Ministering to those who mourn with presence, the things never to say, and faithfulness through the long grief that outlasts the funeral",
+      "group": "Pastoral Ministry"
+    },
+    {
+      "slug": "comforting-the-anxious",
+      "title": "How to Comfort the Anxious and the Fearful",
+      "blurb": "On caring for the anxious in your church, ministering to fear and panic with both truth and patience, and the difference between rebuke and refuge",
       "group": "Pastoral Ministry"
     },
     {
