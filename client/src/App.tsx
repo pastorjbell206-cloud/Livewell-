@@ -283,6 +283,8 @@ function Router() {
         <Route path="/files" component={FileStorage} />
         <Route path="/books-store" component={BooksStore} />
         <Route path="/search" component={SearchPage} />
+        <Route path="/tools/theology-quiz" component={TheologyQuiz} />
+        {/* Legacy alias; vercel.json 301s /quiz to /tools/theology-quiz */}
         <Route path="/quiz" component={TheologyQuiz} />
         <Route path="/skeptic-track" component={SkepticTrack} />
         <Route path="/pastors-resource-wall" component={PastorsResourceWall} />

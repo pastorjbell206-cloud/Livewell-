@@ -22,6 +22,7 @@
           { "source": "/articles/:slug", "destination": "/writing/:slug", "permanent": true },
           { "source": "/for-families", "destination": "/parenting", "permanent": true },
           { "source": "/books-store", "destination": "/books", "permanent": true },
+          { "source": "/quiz", "destination": "/tools/theology-quiz", "permanent": true },
           {
                   "source": "/(.*)",
                   "has": [{ "type": "host", "value": "livewellbyjamesbell.co" }],
