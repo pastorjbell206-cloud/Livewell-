@@ -99,6 +99,13 @@
       "when": 1774454826106,
       "tag": "0013_flashy_hellfire_club",
       "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "5",
+      "when": 1781057011623,
+      "tag": "0014_loose_reaper",
+      "breakpoints": true
     }
   ]
 }
