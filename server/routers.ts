@@ -15,6 +15,7 @@ import { sitemapRouter } from "./sitemap-router";
 import { relatedArticlesRouter } from "./related-articles-router";
 import { quizRouter } from "./quiz-router";
 import { leadMagnetsRouter } from "./routers/lead-magnets";
+import { teamCollabRouter } from "./routers/team-collab";
 import { recommendationRouter } from "./recommendation-router";
 import { analyticsRouter } from "./analytics-router";
 import { emailRouter } from "./email-router";
@@ -49,6 +50,7 @@ export const appRouter = router({
   relatedArticles: relatedArticlesRouter,
   quiz: quizRouter,
   leadMagnets: leadMagnetsRouter,
+  teamCollab: teamCollabRouter,
   recommendations: recommendationRouter,
   analytics: analyticsRouter,
 

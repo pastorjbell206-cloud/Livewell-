@@ -1,43 +1,91 @@
 /**
- * The Leadership Team workspace (/leadership/team). Placeholder shell for the
- * authenticated collaboration app (channels, posts, tasks, announcements). The
- * data layer (tables + tRPC routers) lands in the next build and is switched on
- * once the database migration is deployed.
+ * The Leadership Team workspace (/leadership/team). A private collaboration
+ * space for a church leadership team: channels for conversation, tasks for
+ * follow-through, announcements for the durable things, all scoped to a team
+ * you create or join by invite code.
+ *
+ * States handled here:
+ *  - loading auth
+ *  - not signed in (a panel that sends the visitor to the existing sign-in)
+ *  - signed in, member of no teams (create or join)
+ *  - signed in, in one or more teams (the full workspace)
+ *  - the data layer is not yet migrated (a friendly "being set up" panel)
+ *
+ * Authorization lives on the server. This page only renders what the API
+ * returns for the signed-in user.
  */
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { useAuth } from "@/_core/hooks/useAuth";
+import { getLoginUrl } from "@/const";
+import { trpc } from "@/lib/trpc";
+import Onboarding from "./team/Onboarding";
+import Workspace from "./team/Workspace";
+import { card, heading, muted, primaryButton } from "./team/ui";
+import type { TeamRole } from "./team/types";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
-const PLANNED = [
-  { title: "Channels", body: "Threaded conversations by ministry, team, or topic. Elders here, worship there, the whole staff in one place." },
-  { title: "Tasks", body: "Who owns what, what is due, and what is blocked. The follow-through a meeting usually loses." },
-  { title: "Announcements", body: "The things everyone needs once, without burying them in a chat. Pinned and durable." },
-  { title: "Roles", body: "Pastors, elders, deacons, and team leaders, each seeing what is theirs to see." },
-];
+function Hero() {
+  return (
+    <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <div style={wrap}>
+        <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
+          <Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · The team workspace
+        </div>
+        <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.03, letterSpacing: "-0.03em", marginBottom: "16px", maxWidth: "18ch" }}>
+          One place to lead together.
+        </h1>
+        <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch" }}>
+          A shared workspace for the people who carry a church. Channels for the conversations, tasks for the follow-through, announcements for the things that matter, with each office seeing what is theirs.
+        </p>
+      </div>
+    </section>
+  );
+}
 
 export default function LeadershipTeam() {
+  const { user, loading: authLoading, isAuthenticated } = useAuth();
+
+  const teamsQuery = trpc.teamCollab.team.listMine.useQuery(undefined, {
+    enabled: isAuthenticated,
+  });
+
   return (
     <Layout>
-      <SEOMeta title="The Leadership Team Workspace — Coming Soon" description="A shared workspace for pastors, elders, deacons, and ministry team leaders to work together: channels, tasks, and announcements in one place." url="https://www.livewellbyjamesbell.co/leadership/team" />
+      <SEOMeta
+        title="The Leadership Team Workspace"
+        description="A shared workspace for pastors, elders, deacons, and ministry team leaders: channels, tasks, and announcements in one place."
+        url="https://www.livewellbyjamesbell.co/leadership/team"
+      />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--bone)" }}>
+      <Hero />
+
+      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}><Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · The team workspace</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.5vw, 58px)", fontWeight: 400, lineHeight: 1.03, letterSpacing: "-0.03em", marginBottom: "18px", maxWidth: "18ch" }}>One place to lead together.</h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch" }}>A shared workspace for the people who carry a church. Channels for the conversations, tasks for the follow-through, announcements for the things that matter, with each office seeing what is theirs. It is being built now and will switch on once the team data layer is deployed.</p>
-        </div>
-      </section>
-
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
-        <div style={{ ...wrap, display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px" }}>
-          {PLANNED.map((p) => (
-            <div key={p.title} style={{ background: "var(--card)", border: "1px solid var(--border)", borderTop: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)" }}>
-              <div style={{ fontFamily: "var(--F)", fontSize: "22px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px" }}>{p.title}</div>
-              <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{p.body}</p>
+          {authLoading ? (
+            <p style={muted}>Loading.</p>
+          ) : !isAuthenticated ? (
+            <div style={{ ...card, borderTop: "3px solid var(--mustard)", maxWidth: "560px" }}>
+              <div style={{ ...heading, fontSize: "24px", marginBottom: "8px" }}>Sign in to your team</div>
+              <p style={{ ...muted, fontSize: "15px", marginBottom: "18px" }}>
+                The workspace is private to your leadership team. Sign in with your account to create a team or join one with an invite code.
+              </p>
+              <a href={getLoginUrl()} style={{ ...primaryButton, display: "inline-block", textDecoration: "none" }}>
+                Sign in
+              </a>
             </div>
-          ))}
+          ) : teamsQuery.isLoading ? (
+            <p style={muted}>Loading your teams.</p>
+          ) : (teamsQuery.data ?? []).length === 0 ? (
+            <Onboarding onDone={() => teamsQuery.refetch()} />
+          ) : (
+            <Workspace
+              teams={(teamsQuery.data ?? []).map((t) => ({ ...t, role: t.role as TeamRole }))}
+              myUserId={user!.id}
+            />
+          )}
         </div>
       </section>
     </Layout>
