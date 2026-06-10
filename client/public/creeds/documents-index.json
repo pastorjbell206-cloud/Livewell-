@@ -1,0 +1,74 @@
+{
+  "documents": [
+    {
+      "slug": "london-baptist-confession-1689-summary",
+      "title": "The London Baptist Confession of 1689 (Condensed)",
+      "blurb": "The Second London Baptist Confession (1689), faithfully condensed chapter by chapter — the great Reformed Baptist confession — with explanatory notes.",
+      "group": "Baptist and Free Church",
+      "date": "AD 1689"
+    },
+    {
+      "slug": "new-hampshire-confession-summary",
+      "title": "The New Hampshire Confession (Condensed)",
+      "blurb": "The New Hampshire Confession of Faith (1833), faithfully condensed article by article — the confession behind most American Baptist church covenants.",
+      "group": "Baptist and Free Church",
+      "date": "AD 1833"
+    },
+    {
+      "slug": "augsburg-confession-summary",
+      "title": "The Augsburg Confession (Condensed)",
+      "blurb": "The chief articles of faith from the Augsburg Confession of 1530, faithfully condensed — the founding confession of the Lutheran Reformation, with notes.",
+      "group": "Reformation Confessions",
+      "date": "AD 1530"
+    },
+    {
+      "slug": "heidelberg-catechism-q1",
+      "title": "The Heidelberg Catechism, Lord's Day 1",
+      "blurb": "The full text of Lord's Day 1 of the Heidelberg Catechism (1563) — 'What is thy only comfort in life and death?' — with notes on its history and design.",
+      "group": "Reformation Confessions",
+      "date": "AD 1563"
+    },
+    {
+      "slug": "thirty-nine-articles-summary",
+      "title": "The Thirty-Nine Articles (Condensed)",
+      "blurb": "The Thirty-Nine Articles of Religion (1571), the doctrinal charter of Anglicanism, faithfully condensed article by article, with notes on the disputed lines.",
+      "group": "Reformation Confessions",
+      "date": "AD 1571"
+    },
+    {
+      "slug": "westminster-shorter-catechism-q1",
+      "title": "The Westminster Shorter Catechism, Q. 1–10",
+      "blurb": "The full text of the first ten questions of the Westminster Shorter Catechism (1647), beginning with the chief end of man, with plain-language notes.",
+      "group": "Reformation Confessions",
+      "date": "AD 1647"
+    },
+    {
+      "slug": "apostles-creed",
+      "title": "The Apostles' Creed",
+      "blurb": "The full text of the Apostles' Creed with plain-language notes on its history, the baptismal questions behind it, and what every loaded phrase is doing.",
+      "group": "The Ecumenical Creeds",
+      "date": "c. AD 200–700"
+    },
+    {
+      "slug": "athanasian-creed",
+      "title": "The Athanasian Creed",
+      "blurb": "The full text of the Athanasian Creed (Quicunque Vult), the early church's most exacting statement of the Trinity and the incarnation, with plain notes.",
+      "group": "The Ecumenical Creeds",
+      "date": "c. AD 500"
+    },
+    {
+      "slug": "chalcedonian-definition",
+      "title": "The Chalcedonian Definition",
+      "blurb": "The full text of the Definition of Chalcedon (AD 451) — one Christ in two natures, without confusion or division — with notes on Nestorius and Eutyches.",
+      "group": "The Ecumenical Creeds",
+      "date": "AD 451"
+    },
+    {
+      "slug": "nicene-creed",
+      "title": "The Nicene Creed",
+      "blurb": "The full text of the Nicene Creed of AD 381, with notes on Arius, homoousios, the filioque dispute between East and West, and why one Greek word mattered.",
+      "group": "The Ecumenical Creeds",
+      "date": "AD 325 / 381"
+    }
+  ]
+}

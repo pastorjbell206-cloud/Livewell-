@@ -97,6 +97,15 @@ export interface DoctrineIndexEntry {
 export const DOCTRINE_INDEX: DoctrineIndexEntry[] = [
   // Pillar 1 — Systematic theology
   { slug: "scripture", pillar: "Systematic", title: "What Is the Bible, and Can We Trust It?", blurb: "Revelation, inspiration, inerrancy and infallibility, and how the church received the canon.", triage: "second-order", ready: true },
+  // The Doctrine of Scripture wave — eight worked doctrines that take the scripture overview deeper
+  { slug: "revelation", pillar: "Systematic", title: "How God Speaks", blurb: "General and special revelation, and how far the heavens can take you without a word.", triage: "second-order", ready: true },
+  { slug: "inspiration", pillar: "Systematic", title: "What Inspired Means", blurb: "Dictation, verbal-plenary, dynamic, and encounter. Four accounts of how the breath of God became human words.", triage: "second-order", ready: true },
+  { slug: "inerrancy", pillar: "Systematic", title: "Inerrancy and Its Spectrum", blurb: "The Chicago Statement, infallibility, and limited inerrancy. What the battle for the Bible was actually about.", triage: "second-order", ready: true },
+  { slug: "ot-canon", pillar: "Systematic", title: "How We Got the Old Testament", blurb: "When the Hebrew canon closed, who says so, and how you would know.", triage: "second-order", ready: true },
+  { slug: "nt-canon", pillar: "Systematic", title: "How We Got the New Testament", blurb: "The criteria, the Muratorian fragment, Athanasius in 367, and what Nicaea never decided.", triage: "second-order", ready: true },
+  { slug: "apocrypha", pillar: "Systematic", title: "Why the Apocrypha Is Disputed", blurb: "The books between the testaments, and why Catholic, Orthodox, and Protestant Bibles are different sizes.", triage: "second-order", ready: true },
+  { slug: "textual-criticism", pillar: "Systematic", title: "Can We Trust the Manuscripts?", blurb: "Textual criticism for beginners. The variants honestly counted, and what they do and do not touch.", triage: "third-order", ready: true },
+  { slug: "translations", pillar: "Systematic", title: "Why Translations Differ", blurb: "Word for word, thought for thought, and paraphrase. How to choose a Bible without fear.", triage: "third-order", ready: true },
   { slug: "god-and-trinity", pillar: "Systematic", title: "Who Is God? The Trinity", blurb: "One God in three persons. The doctrine that holds the whole faith together.", triage: "first-order", ready: true },
   { slug: "creation", pillar: "Systematic", title: "Creation and Providence", blurb: "How God made the world and how he holds it, including the age-of-the-earth debate.", triage: "third-order", ready: true },
   { slug: "anthropology", pillar: "Systematic", title: "What Is a Human Being?", blurb: "The image of God, body and soul, male and female.", triage: "second-order", ready: true },
