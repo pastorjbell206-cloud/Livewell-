@@ -11,6 +11,8 @@ export default function AdminDashboard() {
   const booksQuery = trpc.books.listAll.useQuery();
   const [seedStatus, setSeedStatus] = useState<string | null>(null);
   const [seeding, setSeeding] = useState(false);
+  const [fixStatus, setFixStatus] = useState<string | null>(null);
+  const [fixing, setFixing] = useState(false);
 
   const stats = [
     { label: "Writing Posts", value: postsQuery.data?.length ?? 0, icon: PenLine, href: "/admin/posts", color: "#2C3E50" },
@@ -41,6 +43,31 @@ export default function AdminDashboard() {
       setSeedStatus(`Failed: ${e.message}`);
     } finally {
       setSeeding(false);
+    }
+  };
+
+  const handleFixApostrophes = async () => {
+    if (!confirm("Repair missing apostrophes (Gods, churchs, dont, ...) across all posts and books? Slugs and URLs are never changed, and it is safe to run more than once.")) return;
+    setFixing(true);
+    setFixStatus("Repairing text...");
+    try {
+      const res = await fetch("/api/admin/fix-apostrophes", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+      });
+      const data = await res.json();
+      if (data.ok) {
+        setFixStatus(`Done! Repaired ${data.postsFixed} posts and ${data.booksFixed} books.`);
+        postsQuery.refetch();
+        booksQuery.refetch();
+      } else {
+        setFixStatus(`Error: ${data.error}`);
+      }
+    } catch (e: any) {
+      setFixStatus(`Failed: ${e.message}`);
+    } finally {
+      setFixing(false);
     }
   };
 
@@ -201,6 +228,37 @@ export default function AdminDashboard() {
               color: seedStatus.startsWith("Done") ? "#065F46" : seedStatus.startsWith("Error") || seedStatus.startsWith("Failed") ? "#991B1B" : "#374151",
             }}>
               {seedStatus}
+            </div>
+          )}
+        </div>
+
+        {/* Repair apostrophes */}
+        <div className="mb-12 p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB" }}>
+          <div className="flex items-center justify-between mb-2">
+            <div>
+              <h2 className="font-display text-xl font-bold" style={{ color: "#1A1A1A" }}>
+                Repair Apostrophes
+              </h2>
+              <p className="font-body text-sm" style={{ color: "#6B7280" }}>
+                Fix imported text that lost its apostrophes (Gods, churchs, dont, youre). Checks every post and book, fixes only what needs it, never touches URLs.
+              </p>
+            </div>
+            <button
+              onClick={handleFixApostrophes}
+              disabled={fixing}
+              className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-ui font-semibold text-sm transition-colors"
+              style={{ backgroundColor: fixing ? "#9CA3AF" : "#1A1A1A", color: "#F7F5F0", cursor: fixing ? "default" : "pointer" }}
+            >
+              {fixing ? <Loader2 size={16} className="animate-spin" /> : <Wand2 size={16} />}
+              {fixing ? "Repairing..." : "Repair Text"}
+            </button>
+          </div>
+          {fixStatus && (
+            <div className="mt-3 p-3 rounded text-sm font-ui" style={{
+              backgroundColor: fixStatus.startsWith("Done") ? "#D1FAE5" : fixStatus.startsWith("Error") || fixStatus.startsWith("Failed") ? "#FEE2E2" : "#F3F4F6",
+              color: fixStatus.startsWith("Done") ? "#065F46" : fixStatus.startsWith("Error") || fixStatus.startsWith("Failed") ? "#991B1B" : "#374151",
+            }}>
+              {fixStatus}
             </div>
           )}
         </div>

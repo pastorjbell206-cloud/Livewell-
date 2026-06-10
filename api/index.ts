@@ -418,6 +418,54 @@ async function adminSeedContent(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+/**
+ * One-shot repair for apostrophes stripped from imported content (Gods -> God's,
+ * churchs -> church's, dont -> don't, ...). Word-boundary matches on text fields
+ * only; slugs are never touched so no URL changes. Idempotent: rerunning after a
+ * clean pass updates zero rows, and rows edited in the admin keep their edits.
+ */
+async function adminFixApostrophes(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  const MAP: Record<string, string> = {
+    Gods: "God's", Churchs: "Church's", churchs: "church's", Worlds: "World's",
+    worlds: "world's", Lords: "Lord's", lifes: "life's",
+    dont: "don't", Dont: "Don't", cant: "can't", Cant: "Can't",
+    doesnt: "doesn't", Doesnt: "Doesn't", isnt: "isn't", Isnt: "Isn't",
+    havent: "haven't", Havent: "Haven't", wasnt: "wasn't", didnt: "didn't",
+    wouldnt: "wouldn't", couldnt: "couldn't", shouldnt: "shouldn't",
+    youre: "you're", Youre: "You're", theyre: "they're", Theyre: "They're",
+    theyve: "they've", Theyve: "They've", Youve: "You've", youve: "you've",
+    Weve: "We've", weve: "we've",
+  };
+  const pat = new RegExp("\\b(" + Object.keys(MAP).join("|") + ")\\b", "g");
+  const fix = (s: string) => s.replace(pat, (m) => MAP[m]);
+  try {
+    const out = await withConn(async (c) => {
+      let postsFixed = 0, booksFixed = 0;
+      const [postRows] = await c.execute("SELECT id, title, body, excerpt FROM posts");
+      for (const p of postRows as any[]) {
+        const title = fix(p.title || ""), body = fix(p.body || ""), excerpt = fix(p.excerpt || "");
+        if (title !== (p.title || "") || body !== (p.body || "") || excerpt !== (p.excerpt || "")) {
+          await c.execute("UPDATE posts SET title = ?, body = ?, excerpt = ? WHERE id = ?", [title, body, excerpt, p.id]);
+          postsFixed++;
+        }
+      }
+      const [bookRows] = await c.execute("SELECT id, title, description FROM books");
+      for (const b of bookRows as any[]) {
+        const title = fix(b.title || ""), description = fix(b.description || "");
+        if (title !== (b.title || "") || description !== (b.description || "")) {
+          await c.execute("UPDATE books SET title = ?, description = ? WHERE id = ?", [title, description, b.id]);
+          booksFixed++;
+        }
+      }
+      return { postsFixed, booksFixed };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
 async function listArticles(req: VercelRequest, res: VercelResponse) {
   try {
     const limit = Math.min(parseInt(String(req.query.limit || "50"), 10) || 50, 200);
@@ -1805,6 +1853,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
     if (url === "/api/admin/seed-content") return adminSeedContent(req, res);
+    if (url === "/api/admin/fix-apostrophes") return adminFixApostrophes(req, res);
     const notifMatch = url.match(/^\/api\/admin\/notifications\/(\d+)$/);
     if (notifMatch && req.method === "DELETE") {
       if (!authedSession(req)) return json(res, 401, { error: "unauthorized" });
