@@ -133,9 +133,21 @@
       "group": "Church Leadership"
     },
     {
+      "slug": "accountability-for-church-leaders",
+      "title": "Real Accountability for Church Leaders",
+      "blurb": "Why most pastoral accountability is a comfortable fiction, what real structures of accountability actually require, and how the leaders who finish well build the relationships and systems that prevent disqualification.",
+      "group": "Church Leadership"
+    },
+    {
       "slug": "setting-direction-without-controlling",
       "title": "Setting the Direction Without Controlling Everything",
       "blurb": "How a pastor leads with clear vision while genuinely empowering others, where the line falls between healthy direction and micromanagement, and why the leader who controls everything ends up leading no one.",
+      "group": "Church Leadership"
+    },
+    {
+      "slug": "first-ninety-days-new-church",
+      "title": "The First Ninety Days in a New Church",
+      "blurb": "A new pastor's guide to the first three months in a church, why listening matters more than leading at the start, the mistakes that wound a ministry before it begins, and how to build the trust everything else will depend on.",
       "group": "Church Leadership"
     },
     {
@@ -154,6 +166,12 @@
       "slug": "greek-and-hebrew-for-pastors",
       "title": "Do You Need Greek and Hebrew to Preach",
       "blurb": "An honest pastoral take on the biblical languages, whether learning Greek and Hebrew is required to preach faithfully, how the original languages help, and how to handle them without showing off or misleading your people",
+      "group": "Exegesis and Bible Study"
+    },
+    {
+      "slug": "bridging-text-to-today",
+      "title": "From the Original Meaning to Today: Bridging the Gap",
+      "blurb": "A practical guide to the principlizing bridge in biblical interpretation, how to move from what a text meant to its first readers to what it means for us, crossing the gap between the ancient world and today without distorting either",
       "group": "Exegesis and Bible Study"
     },
     {
@@ -263,6 +281,12 @@
       "title": "Why the Author's Intent Is the Meaning",
       "blurb": "A defense of authorial intent in biblical interpretation, why the meaning of a text is what the author meant and not what the reader makes of it, and how this single conviction protects the Bible from becoming a mirror",
       "group": "Exegesis and Bible Study"
+    },
+    {
+      "slug": "resilience-in-ministry",
+      "title": "Building Resilience for the Long Haul",
+      "blurb": "How a pastor builds resilience for decades of ministry, why endurance and not intensity is the mark of a faithful leader, and the deep roots that keep a soul standing through the long seasons.",
+      "group": "Leadership Formation"
     },
     {
       "slug": "holy-ambition",
@@ -454,6 +478,12 @@
       "slug": "ministering-to-the-dying",
       "title": "How to Minister to the Dying",
       "blurb": "On bedside ministry, the last days of a believer, and how a pastor accompanies a person to the edge of death with honesty and hope",
+      "group": "Pastoral Ministry"
+    },
+    {
+      "slug": "praying-for-your-people",
+      "title": "How to Pray for the People You Lead",
+      "blurb": "On intercession as the leader's first work, praying for your congregation by name, and why the unseen labor of prayer outranks every visible task",
       "group": "Pastoral Ministry"
     },
     {
