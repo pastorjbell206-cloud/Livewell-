@@ -49,6 +49,12 @@
       "group": "Church Leadership"
     },
     {
+      "slug": "how-a-church-communicates",
+      "title": "How a Church Should Communicate",
+      "blurb": "Why most church communication problems are really clarity problems, how to choose the right channels, and why a healthy church over-communicates the few things that matter and stops drowning its people in noise.",
+      "group": "Church Leadership"
+    },
+    {
       "slug": "how-churches-make-decisions",
       "title": "How a Church Should Make Decisions",
       "blurb": "A practical guide to church decision making, governance, and congregational dynamics, covering process, spiritual authority, and how to decide without dividing the body.",
@@ -58,6 +64,12 @@
       "slug": "healthy-church-board",
       "title": "How a Healthy Church Board or Elder Team Works",
       "blurb": "A practical guide to church governance, biblical plurality, and the kind of trust that lets a board or elder team lead together without splitting or stalling.",
+      "group": "Church Leadership"
+    },
+    {
+      "slug": "how-to-lead-a-team",
+      "title": "How to Actually Lead a Team",
+      "blurb": "Why leading a ministry team means forming people and not just assigning tasks, and how the difference between managing and leading decides whether your church grows leaders or burns them out.",
       "group": "Church Leadership"
     },
     {
@@ -85,6 +97,12 @@
       "group": "Church Leadership"
     },
     {
+      "slug": "leading-when-not-in-charge",
+      "title": "How to Lead When You Are Not in Charge",
+      "blurb": "A guide for the associate pastor, the staff member, and the volunteer on leading up under authority you did not choose, influencing without title, and serving faithfully when the final decision belongs to someone else.",
+      "group": "Church Leadership"
+    },
+    {
       "slug": "how-to-fire-with-grace",
       "title": "How to Let a Staff Member Go With Grace and Truth",
       "blurb": "A pastoral guide to firing or releasing a church staff member with both honesty and dignity, handling the hardest leadership task without cruelty or cowardice.",
@@ -109,10 +127,34 @@
       "group": "Church Leadership"
     },
     {
+      "slug": "leading-difficult-people",
+      "title": "Leading the Difficult People in Your Church",
+      "blurb": "How a pastor handles the antagonist, the chronic critic, and the controlling personality without becoming bitter, where to draw the line between difficult and dangerous, and how to protect the flock from the few who would harm it.",
+      "group": "Church Leadership"
+    },
+    {
+      "slug": "setting-direction-without-controlling",
+      "title": "Setting the Direction Without Controlling Everything",
+      "blurb": "How a pastor leads with clear vision while genuinely empowering others, where the line falls between healthy direction and micromanagement, and why the leader who controls everything ends up leading no one.",
+      "group": "Church Leadership"
+    },
+    {
       "slug": "learning-to-delegate",
       "title": "The Leader Who Cannot Delegate",
       "blurb": "A pastoral guide to delegation in church leadership, why the indispensable leader is a liability, and how to hand off real authority so the ministry can grow past you.",
       "group": "Church Leadership"
+    },
+    {
+      "slug": "the-power-of-saying-no",
+      "title": "The Leadership Power of Saying No",
+      "blurb": "Why every yes a pastor gives is a no to something else, and how learning to say no with conviction protects your focus, your calling, and the few things God actually asked of you.",
+      "group": "Church Leadership"
+    },
+    {
+      "slug": "greek-and-hebrew-for-pastors",
+      "title": "Do You Need Greek and Hebrew to Preach",
+      "blurb": "An honest pastoral take on the biblical languages, whether learning Greek and Hebrew is required to preach faithfully, how the original languages help, and how to handle them without showing off or misleading your people",
+      "group": "Exegesis and Bible Study"
     },
     {
       "slug": "bible-genres",
@@ -124,6 +166,12 @@
       "slug": "how-to-do-a-word-study",
       "title": "How to Do a Word Study Without Wrecking the Text",
       "blurb": "A practical method for studying Greek and Hebrew words in the Bible, and how to avoid the common word study fallacies of root, anachronism, and overload",
+      "group": "Exegesis and Bible Study"
+    },
+    {
+      "slug": "interpreting-bible-prophecy",
+      "title": "How to Interpret Biblical Prophecy",
+      "blurb": "A guide to interpreting Bible prophecy faithfully, understanding what the prophets actually did, how prophecy and fulfillment work, and how to avoid the common abuses that turn the prophets into a crystal ball",
       "group": "Exegesis and Bible Study"
     },
     {
@@ -139,6 +187,18 @@
       "group": "Exegesis and Bible Study"
     },
     {
+      "slug": "how-to-read-proverbs",
+      "title": "How to Read the Book of Proverbs Rightly",
+      "blurb": "A pastor's guide to interpreting biblical wisdom literature, why a proverb is not a promise, how Hebrew poetry works, and how to apply the book of Proverbs without turning it into a law of guaranteed outcomes",
+      "group": "Exegesis and Bible Study"
+    },
+    {
+      "slug": "how-to-read-revelation",
+      "title": "How to Read the Book of Revelation Without Losing Your Mind",
+      "blurb": "A pastor's guide to interpreting the book of Revelation, understanding apocalyptic genre and symbolism, avoiding newspaper prophecy, and hearing the main message the last book of the Bible was written to deliver",
+      "group": "Exegesis and Bible Study"
+    },
+    {
       "slug": "typology",
       "title": "How to Read Types and Shadows Without Going Off the Rails",
       "blurb": "A disciplined guide to biblical typology, how to recognize legitimate types and shadows in the Old Testament, and how to avoid allegory and fanciful interpretation",
@@ -151,6 +211,12 @@
       "group": "Exegesis and Bible Study"
     },
     {
+      "slug": "law-and-gospel",
+      "title": "Reading the Bible With Law and Gospel",
+      "blurb": "A guide to the distinction between law and gospel in Scripture, why command and promise must not be confused, how the law drives us to Christ, and how rightly dividing the word keeps preaching from moralism",
+      "group": "Exegesis and Bible Study"
+    },
+    {
       "slug": "biblical-hermeneutics",
       "title": "The Basic Rules of Biblical Interpretation",
       "blurb": "A plain introduction to hermeneutics for the ordinary reader who wants to interpret the Bible faithfully and avoid the common errors",
@@ -160,6 +226,12 @@
       "slug": "bible-study-tools",
       "title": "The Bible Study Tools Worth Owning",
       "blurb": "A guide to the best Bible study tools for serious students and preachers, including lexicons, concordances, and commentaries, and how to use each one well",
+      "group": "Exegesis and Bible Study"
+    },
+    {
+      "slug": "the-biblical-covenants",
+      "title": "The Covenants That Hold the Bible Together",
+      "blurb": "A guide to the biblical covenants and covenant theology, tracing the promises God made to Noah, Abraham, Moses, and David, and how they all find their fulfillment in the new covenant in Christ",
       "group": "Exegesis and Bible Study"
     },
     {
@@ -187,6 +259,12 @@
       "group": "Exegesis and Bible Study"
     },
     {
+      "slug": "authorial-intent",
+      "title": "Why the Author's Intent Is the Meaning",
+      "blurb": "A defense of authorial intent in biblical interpretation, why the meaning of a text is what the author meant and not what the reader makes of it, and how this single conviction protects the Bible from becoming a mirror",
+      "group": "Exegesis and Bible Study"
+    },
+    {
       "slug": "holy-ambition",
       "title": "Holy Ambition and the Other Kind",
       "blurb": "Holy ambition in ministry looks almost identical to the hunger for personal significance, and learning to tell the call from the craving is the work of a lifetime.",
@@ -201,7 +279,7 @@
     {
       "slug": "avoiding-burnout-in-ministry",
       "title": "How to Avoid Burnout in Ministry",
-      "blurb": "The causes, the warning signs, and the slow recovery of a pastor who ran himself empty in the name of faithfulness and called it obedience.",
+      "blurb": "The hidden causes of pastoral burnout, the early warning signs every minister ignores, and the slow obedient recovery that gets a leader back to a soul that works.",
       "group": "Leadership Formation"
     },
     {
@@ -217,9 +295,21 @@
       "group": "Leadership Formation"
     },
     {
+      "slug": "keeping-your-soul-in-ministry",
+      "title": "Keeping Your Own Soul While Feeding Others",
+      "blurb": "How a pastor guards his own walk with God against the professionalized faith problem, where Scripture becomes raw material and prayer becomes preparation and the leader slowly starves at the banquet he serves.",
+      "group": "Leadership Formation"
+    },
+    {
       "slug": "leading-from-rest",
       "title": "Leading From Rest Instead of Anxiety",
       "blurb": "A non-anxious presence and the practice of sabbath let a leader lead from rest instead of fear, which changes everything a congregation feels but cannot name.",
+      "group": "Leadership Formation"
+    },
+    {
+      "slug": "self-leadership",
+      "title": "Leading Yourself Before You Lead Anyone Else",
+      "blurb": "The disciplines of self leadership for pastors, why the inner life governs the public ministry, and how a leader who cannot govern his own soul will eventually wreck the people he leads.",
       "group": "Leadership Formation"
     },
     {
@@ -229,9 +319,27 @@
       "group": "Leadership Formation"
     },
     {
+      "slug": "comparison-and-envy-in-ministry",
+      "title": "The Comparison That Kills Ministry Joy",
+      "blurb": "Why comparison and envy among pastors poisons ministry joy, how metrics and the other man's larger church feed the discontent, and the only cure that frees a leader to rejoice at another's success.",
+      "group": "Leadership Formation"
+    },
+    {
+      "slug": "courage-in-leadership",
+      "title": "The Courage to Say the Hard Thing",
+      "blurb": "How the fear of man cripples pastoral leadership, why the fear of God produces courage, and the discipline of saying the hard true thing when silence would be safer and far more popular.",
+      "group": "Leadership Formation"
+    },
+    {
       "slug": "emotionally-healthy-leadership",
       "title": "The Emotionally Healthy Leader",
       "blurb": "Emotionally healthy leadership requires self-awareness about anger, anxiety, and the family system a pastor carries into the church without ever realizing it.",
+      "group": "Leadership Formation"
+    },
+    {
+      "slug": "humility-in-leadership",
+      "title": "The Humility That Leadership Requires",
+      "blurb": "Real humility in Christian leadership is not the performance of smallness but an honest self-forgetfulness that frees a pastor to lead boldly without needing to be praised for it.",
       "group": "Leadership Formation"
     },
     {
@@ -247,15 +355,27 @@
       "group": "Leadership Formation"
     },
     {
+      "slug": "what-a-leader-does-with-anger",
+      "title": "What a Leader Does With Anger",
+      "blurb": "How a pastor tells righteous anger from unrighteous anger, why most ministry anger is wounded pride wearing the mask of zeal, and the slow work of letting God redeem a leader's temper.",
+      "group": "Leadership Formation"
+    },
+    {
       "slug": "spiritual-leadership",
       "title": "What Actually Makes Leadership Spiritual",
       "blurb": "Spiritual leadership is not the same thing as competent leadership in a Christian building, and the difference is the one most pastors never stop to measure.",
       "group": "Leadership Formation"
     },
     {
+      "slug": "dealing-with-discouragement",
+      "title": "When Discouragement Comes to the Leader",
+      "blurb": "What Elijah under the broom tree teaches every discouraged pastor about despair in ministry, the lies exhaustion tells, and the gentle way God restores a leader who wants to quit.",
+      "group": "Leadership Formation"
+    },
+    {
       "slug": "the-leaders-sabbath",
       "title": "Why the Leader Needs a Sabbath",
-      "blurb": "Rest is not a productivity hack for tired pastors but an act of obedience and a public witness that the world is held by God and not by you.",
+      "blurb": "Sabbath rest for pastors is not a productivity tactic but an act of obedience and a public witness that the world is upheld by God and not by the tired man who runs the church.",
       "group": "Leadership Formation"
     },
     {
@@ -313,6 +433,12 @@
       "group": "Pastoral Ministry"
     },
     {
+      "slug": "helping-a-doubting-believer",
+      "title": "How to Help a Doubting Believer",
+      "blurb": "On honest doubt, deconstruction, and how a pastor walks with a Christian whose faith has outgrown the easy answers they were given",
+      "group": "Pastoral Ministry"
+    },
+    {
       "slug": "how-to-lead-a-prayer-meeting",
       "title": "How to Lead a Prayer Meeting People Come To",
       "blurb": "Reviving the church prayer meeting with structure, honesty, and expectancy so corporate prayer stops being the night everyone skips",
@@ -331,15 +457,45 @@
       "group": "Pastoral Ministry"
     },
     {
+      "slug": "restoring-a-fallen-member",
+      "title": "How to Restore Someone Who Has Fallen",
+      "blurb": "On Galatians 6 restoration, walking a fallen believer back to grace, and the difference between gentle restoration and church gossip",
+      "group": "Pastoral Ministry"
+    },
+    {
       "slug": "how-to-visit-the-sick",
       "title": "How to Visit the Sick and the Dying",
       "blurb": "A pastor's guide to hospital visitation, bedside ministry, praying with the dying, and being present in the room where everything is at stake",
       "group": "Pastoral Ministry"
     },
     {
+      "slug": "ministry-with-women",
+      "title": "Ministry With and For the Women of the Church",
+      "blurb": "On honoring, equipping, and protecting the women of the congregation, and how a male pastor leads with respect, wisdom, and clean boundaries",
+      "group": "Pastoral Ministry"
+    },
+    {
       "slug": "counseling-and-when-to-refer",
       "title": "Pastoral Counseling and Knowing When to Refer",
       "blurb": "Soul care, the limits of the pastor's office, mental health, and the wisdom to send someone to a licensed counselor before harm is done",
+      "group": "Pastoral Ministry"
+    },
+    {
+      "slug": "discipling-men",
+      "title": "Reaching and Discipling Men in the Church",
+      "blurb": "On why men drift from the church, how to call them back, and what real discipleship of men requires beyond pancakes and platitudes",
+      "group": "Pastoral Ministry"
+    },
+    {
+      "slug": "recovering-hospitality",
+      "title": "Recovering the Lost Art of Hospitality",
+      "blurb": "On the open table as ministry, biblical hospitality to the stranger, and how the church recovers a practice it has handed off to restaurants",
+      "group": "Pastoral Ministry"
+    },
+    {
+      "slug": "the-church-and-the-poor",
+      "title": "The Church and the Poor at the Door",
+      "blurb": "On mercy ministry done with dignity, the biblical call to the poor, and how a congregation serves the needy without wounding them",
       "group": "Pastoral Ministry"
     },
     {
@@ -367,6 +523,12 @@
       "group": "Pastoral Ministry"
     },
     {
+      "slug": "lasting-youth-ministry",
+      "title": "Youth Ministry That Produces Lasting Faith",
+      "blurb": "On forming teenagers in a faith that survives college, moving beyond entertainment to discipleship, parents, and the slow work of formation",
+      "group": "Pastoral Ministry"
+    },
+    {
       "slug": "sermon-prep",
       "title": "From the Text to the Sermon",
       "blurb": "A working method for preparing a sermon that honors the text and lands on a Tuesday afternoon",
@@ -391,6 +553,12 @@
       "group": "Preaching and Teaching"
     },
     {
+      "slug": "expository-vs-topical",
+      "title": "Expository or Topical: Which Should You Preach",
+      "blurb": "An honest comparison of expository and topical preaching, the strengths and dangers of each, and how to decide which approach serves your congregation and the text.",
+      "group": "Preaching"
+    },
+    {
       "slug": "how-long-should-a-sermon-be",
       "title": "How Long Should a Sermon Be",
       "blurb": "An honest answer to how long a sermon should be, weighing attention, faithfulness to the text, and congregational context against the false comfort of a fixed number.",
@@ -400,6 +568,12 @@
       "slug": "how-to-end-a-sermon",
       "title": "How to End a Sermon So It Lands",
       "blurb": "How to write a sermon conclusion that lands, with practical guidance on the call, the final image, and leaving weight instead of tidy resolution.",
+      "group": "Preaching"
+    },
+    {
+      "slug": "improving-sermon-delivery",
+      "title": "How to Improve Your Sermon Delivery",
+      "blurb": "A practical guide to improving sermon delivery, including voice, pacing, pauses, presence, and eye contact, so the truth you prepared actually reaches the people in front of you.",
       "group": "Preaching"
     },
     {
@@ -415,9 +589,33 @@
       "group": "Preaching"
     },
     {
+      "slug": "preaching-doctrine",
+      "title": "How to Preach Doctrine Without Losing the Room",
+      "blurb": "A practical guide to preaching doctrine and theology in sermons so that truth like justification, the Trinity, and the atonement lands on real lives instead of going over heads.",
+      "group": "Preaching"
+    },
+    {
+      "slug": "preaching-the-prophets",
+      "title": "How to Preach the Old Testament Prophets",
+      "blurb": "A guide to preaching the Old Testament prophets, handling oracles of judgment and hope, historical context, and the prophetic voice without turning sermons into bad news.",
+      "group": "Preaching"
+    },
+    {
+      "slug": "preaching-the-psalms",
+      "title": "How to Preach the Psalms",
+      "blurb": "A practical guide to preaching the Psalms, handling Hebrew poetry, lament, and praise in the pulpit so the sermon teaches a congregation how to pray.",
+      "group": "Preaching"
+    },
+    {
       "slug": "preaching-difficult-passages",
       "title": "How to Preach the Texts You Would Rather Skip",
       "blurb": "A pastoral guide to preaching difficult Bible passages on judgment, hell, sexuality, and Old Testament violence without softening the text or losing the room.",
+      "group": "Preaching"
+    },
+    {
+      "slug": "preaching-to-skeptics",
+      "title": "How to Preach With Skeptics in the Room",
+      "blurb": "A guide to apologetic preaching with skeptics and seekers in the room, anticipating objections, honoring doubt, and commending the faith without dumbing down the gospel.",
       "group": "Preaching"
     },
     {
@@ -460,6 +658,12 @@
       "slug": "expository-preaching",
       "title": "What Expository Preaching Actually Is",
       "blurb": "A working definition of expository preaching set against topical and textual preaching, and why letting the text set the agenda forms a congregation over years.",
+      "group": "Preaching"
+    },
+    {
+      "slug": "finding-sermon-illustrations",
+      "title": "Where to Find Sermon Illustrations That Actually Help",
+      "blurb": "A practical guide to finding and using sermon illustrations, where to source them, how to keep a file, and when an illustration clarifies the text instead of burying it.",
       "group": "Preaching"
     },
     {
