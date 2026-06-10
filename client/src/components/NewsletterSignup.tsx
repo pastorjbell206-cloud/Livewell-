@@ -98,7 +98,7 @@ export function NewsletterSignup({
               border: "1px solid var(--charcoal-soft)",
               borderRadius: "var(--radius-sm)",
               fontFamily: "var(--B)",
-              fontSize: "13px",
+              fontSize: "16px",
               color: "var(--bone)",
               outline: "none",
             }}
@@ -107,7 +107,7 @@ export function NewsletterSignup({
             type="submit"
             disabled={subscribe.isPending}
             style={{
-              padding: "10px 18px",
+              padding: "13px 18px",
               background: "var(--mustard)",
               color: "var(--ink)",
               border: "none",
@@ -145,7 +145,7 @@ export function NewsletterSignup({
             border: "1px solid var(--border)",
             borderRadius: "var(--radius-sm)",
             fontFamily: "var(--B)",
-            fontSize: "14px",
+            fontSize: "16px",
             color: "var(--ink)",
             outline: "none",
           }}
@@ -220,7 +220,7 @@ export function NewsletterSignup({
             border: "1px solid var(--border)",
             borderRadius: "var(--radius-sm)",
             fontFamily: "var(--B)",
-            fontSize: "14px",
+            fontSize: "16px",
             color: "var(--ink)",
             outline: "none",
           }}

@@ -8,9 +8,9 @@ const footerLink = { color: "rgba(255,255,255,0.75)", textDecoration: "none", fo
 export default function Footer() {
   const { theme, toggleTheme } = useTheme();
   return (
-    <footer style={{ background: "var(--ink)", color: "#ffffff", padding: "60px 20px 20px", marginTop: "60px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+    <footer style={{ background: "var(--ink)", color: "#ffffff", padding: "clamp(36px, 7vw, 60px) clamp(16px, 4vw, 20px) 20px", marginTop: "60px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "40px", marginBottom: "40px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(150px, 100%), 1fr))", gap: "clamp(20px, 4vw, 40px)", marginBottom: "40px" }}>
           {/* Column 1 - Brand */}
           <div>
             <div style={{ fontSize: "22px", fontWeight: "bold", color: "var(--gold)", marginBottom: "12px", fontFamily: "var(--F)" }}>LiveWell</div>

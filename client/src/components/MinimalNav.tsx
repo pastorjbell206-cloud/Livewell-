@@ -157,6 +157,33 @@ export default function MinimalNav() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Mobile menu hygiene: close on any route change, close on Escape, and lock
+  // body scroll while open so the page cannot scroll behind the overlay.
+  useEffect(() => {
+    setMobileOpen(false);
+    setSearchOpen(false);
+  }, [location]);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setMobileOpen(false);
+        setSearchOpen(false);
+        setOpenDropdown(null);
+      }
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, []);
+
+  useEffect(() => {
+    if (mobileOpen) {
+      const prev = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => { document.body.style.overflow = prev; };
+    }
+  }, [mobileOpen]);
+
   return (
     <>
       {/* Search Overlay */}
@@ -529,7 +556,12 @@ export default function MinimalNav() {
                 border: "none",
                 color: "var(--ink)",
                 cursor: "pointer",
-                padding: "8px",
+                padding: "11px",
+                minWidth: "44px",
+                minHeight: "44px",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
             >
               <Search size={20} aria-hidden />
@@ -544,7 +576,12 @@ export default function MinimalNav() {
                 border: "none",
                 color: "var(--ink)",
                 cursor: "pointer",
-                padding: "8px",
+                padding: "11px",
+                minWidth: "44px",
+                minHeight: "44px",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
             >
               {mobileOpen ? <X size={22} aria-hidden /> : <Menu size={22} aria-hidden />}
@@ -668,53 +705,44 @@ export default function MinimalNav() {
                 )}
               </div>
             ))}
-            <div style={{ display: "flex", gap: "8px", marginTop: "16px" }}>
+            <div style={{ display: "flex", gap: "12px", marginTop: "16px" }}>
               <Link
                 href="/start"
                 onClick={() => setMobileOpen(false)}
-                style={{ textDecoration: "none", flex: 1 }}
+                style={{
+                  flex: 1,
+                  textDecoration: "none",
+                  textAlign: "center",
+                  background: "var(--ink)",
+                  color: "var(--bone)",
+                  borderBottom: "2px solid var(--mustard)",
+                  padding: "14px 24px",
+                  fontFamily: "var(--U)",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  borderRadius: "var(--radius-sm)",
+                }}
               >
-                <button
-                  type="button"
-                  style={{
-                    background: "var(--ink)",
-                    color: "var(--bone)",
-                    border: "none",
-                    borderBottom: "2px solid var(--mustard)",
-                    padding: "12px 24px",
-                    fontFamily: "var(--U)",
-                    fontSize: "14px",
-                    fontWeight: 600,
-                    borderRadius: "var(--radius-sm)",
-                    cursor: "pointer",
-                    width: "100%",
-                  }}
-                >
-                  Subscribe
-                </button>
+                Subscribe
               </Link>
               <Link
                 href="/membership"
                 onClick={() => setMobileOpen(false)}
-                style={{ textDecoration: "none", flex: 1 }}
+                style={{
+                  flex: 1,
+                  textDecoration: "none",
+                  textAlign: "center",
+                  background: "transparent",
+                  color: "var(--ink)",
+                  border: "1px solid var(--ink)",
+                  padding: "13px 24px",
+                  fontFamily: "var(--U)",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  borderRadius: "var(--radius-sm)",
+                }}
               >
-                <button
-                  type="button"
-                  style={{
-                    background: "transparent",
-                    color: "var(--ink)",
-                    border: "1px solid var(--ink)",
-                    padding: "12px 24px",
-                    fontFamily: "var(--U)",
-                    fontSize: "14px",
-                    fontWeight: 600,
-                    borderRadius: "var(--radius-sm)",
-                    cursor: "pointer",
-                    width: "100%",
-                  }}
-                >
-                  Membership
-                </button>
+                Membership
               </Link>
             </div>
           </div>
