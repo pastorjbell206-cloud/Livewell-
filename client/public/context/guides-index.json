@@ -1,0 +1,124 @@
+{
+  "guides": [
+    {
+      "slug": "covenant-and-treaty",
+      "title": "Covenant: The Treaty Form Behind the Bible",
+      "blurb": "Sinai follows the shape of an ancient treaty between a great king and a rescued people. That shape settles an old argument about law and grace.",
+      "group": "Ancient Near East"
+    },
+    {
+      "slug": "the-gods-of-the-nations",
+      "title": "Idolatry Made Sense: The Gods of Israel's Neighbors",
+      "blurb": "Idols were not stupidity. They were a sophisticated technology of presence and control, and the pull they answered has not gone anywhere.",
+      "group": "Ancient Near East"
+    },
+    {
+      "slug": "wisdom-and-the-nations",
+      "title": "Israel's Wisdom Among Its Neighbors",
+      "blurb": "Proverbs sits beside Egyptian instruction. Job and Ecclesiastes answer Babylonian despair. Borrowed forms, and a different God inside them.",
+      "group": "Ancient Near East"
+    },
+    {
+      "slug": "genesis-one-in-its-world",
+      "title": "Reading Genesis 1 in Its Ancient World",
+      "blurb": "The first chapter of the Bible was answering Babylon, not modern science. Hearing its claims in their own world changes what we ask of them.",
+      "group": "Ancient Near East"
+    },
+    {
+      "slug": "torah-and-the-law-codes",
+      "title": "The Law of Moses Next to the Laws of Babylon",
+      "blurb": "Hammurabi's stele and the Torah speak the same legal language. What they say in that language could not be more different.",
+      "group": "Ancient Near East"
+    },
+    {
+      "slug": "purity-and-contagion",
+      "title": "Clean and Unclean: The Logic of Purity",
+      "blurb": "Purity in the Bible is not hygiene and it is not, by itself, sin. It is a map of order and boundary, and you cannot read Leviticus, the Gospels, or Acts 10 without it.",
+      "group": "Honor, Shame, and Culture"
+    },
+    {
+      "slug": "honor-shame-vs-guilt",
+      "title": "Honor and Shame: The Operating System of the Biblical World",
+      "blurb": "The Bible was written in a world where the community's verdict was the heaviest thing a person carried. We read it in a world wired for guilt. The mismatch sits under almost every page.",
+      "group": "Honor, Shame, and Culture"
+    },
+    {
+      "slug": "hospitality-and-the-stranger",
+      "title": "Hospitality: A Survival Institution, Not a Dinner Party",
+      "blurb": "In a world without hotels, police, or embassies, the welcome of strangers was the difference between life and death. The Bible treats it accordingly. We have made it a programming word.",
+      "group": "Honor, Shame, and Culture"
+    },
+    {
+      "slug": "misreading-with-western-eyes",
+      "title": "What We Bring to the Text Without Knowing It",
+      "blurb": "The most powerful assumptions are the ones nobody states. Every reader carries a culture into Scripture, and the Western reader carries one too. The first step is admitting we have an accent.",
+      "group": "Honor, Shame, and Culture"
+    },
+    {
+      "slug": "collectivist-world-individualist-readers",
+      "title": "You (Plural): Reading a Collectivist Book with Individualist Eyes",
+      "blurb": "Nearly every 'you' in the epistles is plural, and nearly every reader in the modern West hears it as singular. That one grammatical fact rearranges more than we want it to.",
+      "group": "Honor, Shame, and Culture"
+    },
+    {
+      "slug": "temple-and-synagogue",
+      "title": "Temple, Synagogue, and the Shape of Jewish Life",
+      "blurb": "One building held the presence of God, the national economy, and the politics of an occupied people. Another held the week. You cannot read the Gospels without both.",
+      "group": "Second Temple Judaism"
+    },
+    {
+      "slug": "septuagint-and-scripture",
+      "title": "The Bible the Apostles Carried",
+      "blurb": "The first churches read their Scriptures in Greek translation, and the New Testament quotes it on nearly every page. Knowing that should steady you, not shake you.",
+      "group": "Second Temple Judaism"
+    },
+    {
+      "slug": "between-the-testaments",
+      "title": "The Four Hundred Years Between the Testaments",
+      "blurb": "Your Bible has a blank page between Malachi and Matthew. Empires rose and fell on that page, and the world Jesus walked into was built there.",
+      "group": "Second Temple Judaism"
+    },
+    {
+      "slug": "messianic-expectation",
+      "title": "What Israel Was Waiting For",
+      "blurb": "First-century messianic hope was not one expectation but a range of them, and a crucified messiah fit none. That is the point.",
+      "group": "Second Temple Judaism"
+    },
+    {
+      "slug": "pharisees-sadducees-essenes",
+      "title": "Who the Pharisees Actually Were",
+      "blurb": "Four movements, one question, and a caricature the church needs to stop repeating.",
+      "group": "Second Temple Judaism"
+    },
+    {
+      "slug": "honor-status-and-the-cross",
+      "title": "Crucifixion: The Word Decent People Did Not Say",
+      "blurb": "In polite Roman society the cross was an obscenity, not a symbol. The first Christians preached it anyway.",
+      "group": "The Greco-Roman World"
+    },
+    {
+      "slug": "gospel-against-empire",
+      "title": "Gospel, Lord, Savior: Caesar's Words in Christian Mouths",
+      "blurb": "The vocabulary of Christian confession was in public circulation before the church ever used it, and the man it pointed to lived in Rome.",
+      "group": "The Greco-Roman World"
+    },
+    {
+      "slug": "patronage-and-grace",
+      "title": "Patronage: The Economy Behind Grace",
+      "blurb": "Before grace was a doctrine, charis was a word for what benefactors gave and what recipients owed. Paul knew the system. He also broke it.",
+      "group": "The Greco-Roman World"
+    },
+    {
+      "slug": "the-cities-of-paul",
+      "title": "The Cities Paul Wrote To",
+      "blurb": "Paul's letters have street addresses. Corinth, Ephesus, Philippi, Rome. Knowing the city explains why each letter worries about what it worries about.",
+      "group": "The Greco-Roman World"
+    },
+    {
+      "slug": "household-codes-in-context",
+      "title": "The Household Codes in Their World",
+      "blurb": "Ephesians and Colossians address wives, husbands, children, and slaves in a form Aristotle would have recognized. The form is familiar. The content keeps breaking it.",
+      "group": "The Greco-Roman World"
+    }
+  ]
+}

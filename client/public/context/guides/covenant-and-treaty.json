@@ -1,0 +1,50 @@
+{
+  "slug": "covenant-and-treaty",
+  "title": "Covenant: The Treaty Form Behind the Bible",
+  "subtitle": "Sinai follows the shape of an ancient treaty between a great king and a rescued people. That shape settles an old argument about law and grace.",
+  "kicker": "Ancient Near East",
+  "group": "Ancient Near East",
+  "sections": [
+    {
+      "id": "a-word-gone-soft",
+      "kicker": "The Problem",
+      "title": "A Word Gone Soft",
+      "body": "Covenant is one of those church words that has gone soft from use. We hear it and think contract, a deal with terms, something a lawyer could review. Or we hear it and think nothing at all, a stained-glass word for religious arrangements in general. I have preached it both ways and served the text badly both times.\n\nThe Old Testament had something far more specific in mind, and the ancient Near East is where we learn to see it. In 1954 the scholar George Mendenhall observed that the covenant at Sinai follows the shape of a known political document, the treaty a great king imposed on a smaller kingdom under his protection. Scholars call these suzerain and vassal treaties. The best preserved examples come from the Hittite empire of the second millennium BC, roughly the fourteenth and thirteenth centuries.\n\nThat observation changed how a generation read Exodus and Deuteronomy. It can change how you read them too. Not because archaeology outranks Scripture, but because it lets Scripture sound the way it sounded to the people who first stood at the mountain."
+    },
+    {
+      "id": "the-hittite-form",
+      "kicker": "The Form",
+      "title": "How a Great King Made a Treaty",
+      "body": "The Hittite treaties follow a recognizable order. First a preamble, in which the great king names himself and his titles. Then a historical prologue, in which he recounts what he has already done for the vassal, the rescues, the favors, the history between them. Then stipulations, what loyalty will look like, with exclusive allegiance at the center and no alliances with rival kings. Then provisions for depositing the treaty document in a temple and reading it publicly at set intervals. Then a list of witnesses, usually the gods of both parties. Finally blessings for keeping the treaty and curses for breaking it.\n\nNotice the logic of that order. The demands come after the story. The great king does not open with requirements. He opens with what he has already done, and obligation grows out of history rather than the other way around.\n\nLater treaties lost this shape. The Assyrian treaties of the first millennium, such as the succession treaties of Esarhaddon from 672 BC, drop the historical prologue and the blessings almost entirely and run on threats. Kenneth Kitchen has argued that this development matters for dating the biblical material, since the Sinai covenant tracks the older second-millennium form. His argument is debated. The parallel itself is widely acknowledged."
+    },
+    {
+      "id": "sinai-tracks-the-form",
+      "kicker": "Exodus and Deuteronomy",
+      "title": "The Mountain Speaks Treaty",
+      "body": "Now read the opening of the Ten Commandments slowly. I am the LORD thy God, which have brought thee out of the land of Egypt, out of the house of bondage. There is the preamble, the King naming himself. There is the historical prologue, the rescue already accomplished. Only then comes thou shalt have no other gods before me. The stipulation of exclusive loyalty, standing exactly where a treaty would put it.\n\nDeuteronomy carries the form at full length. The opening chapters retell the history from Horeb to the plains of Moab. Chapters five through twenty-six lay out the stipulations. Chapters twenty-seven and twenty-eight pronounce the blessings and the curses. The book of the law is to be deposited beside the ark and read aloud to all Israel every seven years. And Moses calls heaven and earth as witnesses, because Israel's God will not share the witness stand with the gods of the nations.\n\nThis is not a scholarly curiosity. It is the architecture of the book. Israel did not receive a code from a distant legislature. Israel was taken into treaty by a King who had already carried them out of slavery."
+    },
+    {
+      "id": "loyalty-not-services",
+      "kicker": "The Difference",
+      "title": "Loyalty Is Not a Service Agreement",
+      "body": "Here is what the treaty form settles. A contract is an exchange of services between parties who remain strangers. You perform, I pay, and neither of us owes the other our heart. A suzerain treaty is nothing like that. It is a bond of personal allegiance, sealed in shared history, in which the smaller party entrusts its whole existence to the king who rescued it.\n\nThat is why the Old Testament word hesed, covenant loyalty, is so hard to translate. It is not mere affection and it is not mere obligation. It is steadfastness inside a relationship, the faithfulness of one who has bound himself and will not walk away.\n\nAnd it is why grace comes before law in the Bible's own order. Israel was not given commandments as an entrance exam. The exodus came first. The sea was already parted and the slaves were already free before a single commandment was spoken at Sinai. The law is not how Israel earned a rescue. The law is what rescued people do with their loyalty."
+    },
+    {
+      "id": "what-the-covenant-asks",
+      "kicker": "The Weight",
+      "title": "The Question the Covenant Leaves",
+      "body": "I grew up assuming the Old Testament gave us a God of law and the New Testament a God of grace. The treaty form will not allow it. The oldest documents we can set beside the Bible show grace standing in the prologue and law standing in its proper place after.\n\nA contract asks, did you perform. A covenant asks, were you faithful. Those are different questions, and they produce different lives. One can be satisfied and filed away. The other follows you into the kitchen and the marriage and the long years when no one is watching.\n\nYou are not a contractor negotiating with God. You belong, if you belong at all, to a King who acted first. The question the covenant leaves on the table is the one it has always left. Whose are you."
+    }
+  ],
+  "keyTexts": [
+    "Exodus 20:1-17",
+    "Deuteronomy 28:1-14",
+    "Joshua 24:1-28"
+  ],
+  "sources": [
+    { "title": "On the Reliability of the Old Testament", "author": "Kenneth A. Kitchen" },
+    { "title": "Treaty of the Great King", "author": "Meredith G. Kline" },
+    { "title": "Old Testament Ethics for the People of God", "author": "Christopher J. H. Wright" },
+    { "title": "Ancient Near Eastern Thought and the Old Testament", "author": "John H. Walton" }
+  ]
+}
