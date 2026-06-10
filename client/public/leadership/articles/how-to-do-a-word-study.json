@@ -1,0 +1,50 @@
+{
+  "slug": "how-to-do-a-word-study",
+  "title": "How to Do a Word Study Without Wrecking the Text",
+  "subtitle": "A practical method for studying Greek and Hebrew words in the Bible, and how to avoid the common word study fallacies of root, anachronism, and overload",
+  "kicker": "Exegesis",
+  "group": "Exegesis and Bible Study",
+  "sections": [
+    {
+      "id": "the-temptation",
+      "kicker": "The Pulpit Magic Trick",
+      "title": "The Word in the Greek Trick",
+      "body": "You have heard it from a hundred pulpits. The preacher pauses, lowers his voice, and says the word in the Greek really means something the English translators apparently missed. The congregation leans in. A secret has been delivered.\n\nUsually it is not a secret. Usually it is a mistake with a microphone.\n\nWord studies are genuinely useful. They are also the single most abused tool in the amateur exegete's bag, because they feel like expertise while requiring almost none. A man with a concordance and an hour can produce a claim about the original languages that no scholar in the room would defend, and the people will believe it because he sounded like he knew. I have watched it happen. I have done it. The fix is not to abandon word study. The fix is to do it with enough discipline that you stop wrecking the very texts you meant to honor."
+    },
+    {
+      "id": "the-method",
+      "kicker": "The Honest Way",
+      "title": "How to Actually Study a Word",
+      "body": "Start with the right question. You are not asking what this word means in general. You are asking what this author means by this word in this sentence, in this passage.\n\nFind the word in the original language behind your English, using an interlinear or a tool like a Strong's concordance. Then gather how that same author uses the same word elsewhere, and how the wider biblical writers use it. Sense comes from usage, not from a dictionary glow. A word is like a coin: it has a range of possible values, and only the sentence around it tells you which one is being spent here.\n\nThen ask what the options are in this spot and let the surrounding logic decide between them. The context is the king. The lexicon offers you the menu of possible meanings, but the passage chooses the dish. When you have done this, you can say the word can mean such and such here, and you will be telling the truth, which is more than most word study claims can manage."
+    },
+    {
+      "id": "root-fallacy",
+      "kicker": "Fallacy One",
+      "title": "The Root Fallacy",
+      "body": "The root fallacy says a word means the sum of its parts, or whatever its ancient root once meant. It is the most common error and the most confident.\n\nIt does not hold. In English, a butterfly is not a fly made of butter, and a pineapple has nothing to do with pines or apples. Words drift away from their origins, and the history of a word is not its meaning. The famous example is the Greek word often translated power, which someone will tell you is where we get the word dynamite, as though Paul were promising the Romans an explosion. Paul had never heard of dynamite. Alfred Nobel coined it eighteen centuries later. The dynamite was poured back into the text from the future.\n\nDo not build a doctrine on a syllable. Ask how the word was actually used by the writer in his own time, not what its parts might suggest to a curious modern ear."
+    },
+    {
+      "id": "anachronism-and-overload",
+      "kicker": "Fallacies Two and Three",
+      "title": "Anachronism and Overload",
+      "body": "The second trap is anachronism: reading a later meaning back into an earlier text. The dynamite error is one form. Another is hearing a modern theological weight in a word the original author used plainly. The meaning a word picked up across centuries of church use was not available to the man who first wrote it down. You must hear the word as he meant it, not as the later tradition came to use it.\n\nThe third trap is illegitimate totality transfer, which is a heavy name for a simple greed. It loads every possible meaning of a word into a single use of it. A word may carry five different senses across the New Testament, but in any given verse it carries one. When you smuggle all five into one occurrence because they would preach well together, you have not enriched the text. You have buried it.\n\nNot every meaning a word can bear. The one it bears here."
+    },
+    {
+      "id": "the-discipline",
+      "kicker": "The Point",
+      "title": "Why the Restraint Is the Reverence",
+      "body": "All three fallacies share a common engine. They let the studier say more than the text says and feel learned doing it. The discipline of a good word study is mostly a discipline of saying less.\n\nThat restraint is not timidity. It is reverence.\n\nThe people in front of you are trusting you to tell them what God said, not what you can make a Greek word do under pressure. When you handle the words honestly, refusing the clever claim you cannot defend, you are protecting them from a counterfeit and protecting yourself from the pride that drove most of the errors in the first place. Do the work. Use the tools. And let the sentence, not the syllable, have the final word. A word study done right does not make you sound impressive. It makes you accurate, and the people you teach will be standing on something that holds."
+    }
+  ],
+  "keyTexts": [
+    "2 Timothy 2:15",
+    "Nehemiah 8:8",
+    "1 Corinthians 2:13",
+    "Proverbs 18:13"
+  ],
+  "furtherReading": [
+    { "title": "Exegetical Fallacies", "author": "D. A. Carson" },
+    { "title": "Linguistics and Biblical Interpretation", "author": "Peter Cotterell and Max Turner" },
+    { "title": "Grasping God's Word", "author": "J. Scott Duvall and J. Daniel Hays" }
+  ]
+}

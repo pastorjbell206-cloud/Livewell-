@@ -43,6 +43,78 @@
       "group": "Building and Rebuilding"
     },
     {
+      "slug": "healthy-church-board",
+      "title": "How a Healthy Church Board or Elder Team Works",
+      "blurb": "A practical guide to church governance, biblical plurality, and the kind of trust that lets a board or elder team lead together without splitting or stalling.",
+      "group": "Church Leadership"
+    },
+    {
+      "slug": "how-to-cast-vision",
+      "title": "How to Cast Vision a Church Will Actually Follow",
+      "blurb": "A practical guide to casting biblical church vision that is clear, owned by the congregation, and strong enough to outlast the pastor who first spoke it.",
+      "group": "Church Leadership"
+    },
+    {
+      "slug": "leading-volunteers",
+      "title": "How to Lead Volunteers Without Using Them Up",
+      "blurb": "A pastoral guide to recruiting, equipping, and releasing church volunteers so they serve from calling instead of guilt and last for years instead of months.",
+      "group": "Church Leadership"
+    },
+    {
+      "slug": "bible-genres",
+      "title": "How Genre Changes the Way You Read the Bible",
+      "blurb": "A guide to the literary genres of Scripture, from law and narrative to poetry, wisdom, prophecy, gospel, epistle, and apocalyptic, and how each one asks to be read",
+      "group": "Exegesis and Bible Study"
+    },
+    {
+      "slug": "how-to-do-a-word-study",
+      "title": "How to Do a Word Study Without Wrecking the Text",
+      "blurb": "A practical method for studying Greek and Hebrew words in the Bible, and how to avoid the common word study fallacies of root, anachronism, and overload",
+      "group": "Exegesis and Bible Study"
+    },
+    {
+      "slug": "how-to-study-the-bible",
+      "title": "How to Study the Bible: Observation, Interpretation, Application",
+      "blurb": "A working guide to the inductive Bible study method that moves from what the text says, to what it means, to what it asks of you",
+      "group": "Exegesis and Bible Study"
+    },
+    {
+      "slug": "biblical-hermeneutics",
+      "title": "The Basic Rules of Biblical Interpretation",
+      "blurb": "A plain introduction to hermeneutics for the ordinary reader who wants to interpret the Bible faithfully and avoid the common errors",
+      "group": "Exegesis and Bible Study"
+    },
+    {
+      "slug": "historical-context",
+      "title": "Why Historical Context Changes the Meaning",
+      "blurb": "How the original setting, audience, and culture of a Bible passage shape its meaning, and why reading Scripture without historical background distorts the text",
+      "group": "Exegesis and Bible Study"
+    },
+    {
+      "slug": "handling-criticism",
+      "title": "How a Leader Handles Criticism",
+      "blurb": "Every pastor will be criticized, and how a leader handles criticism in ministry reveals more about his heart than any sermon he will ever preach.",
+      "group": "Leadership Formation"
+    },
+    {
+      "slug": "the-leaders-prayer-life",
+      "title": "The Leader Who Does Not Pray",
+      "blurb": "Prayer is the first thing to go in a busy ministry and the last thing anyone notices is gone, which is exactly why it is the truest measure of a leader's soul.",
+      "group": "Leadership Formation"
+    },
+    {
+      "slug": "the-loneliness-of-leadership",
+      "title": "The Loneliness of Leadership and What to Do With It",
+      "blurb": "Pastoral loneliness and ministry isolation are an occupational hazard most leaders suffer in silence, and the way out is not more people but real friendship.",
+      "group": "Leadership Formation"
+    },
+    {
+      "slug": "spiritual-leadership",
+      "title": "What Actually Makes Leadership Spiritual",
+      "blurb": "Spiritual leadership is not the same thing as competent leadership in a Christian building, and the difference is the one most pastors never stop to measure.",
+      "group": "Leadership Formation"
+    },
+    {
       "slug": "raising-leaders",
       "title": "Doing Yourself Out of a Job",
       "blurb": "The goal of leadership is multiplication, not indispensability, and the leader who cannot let go has mistaken his own grip for faithfulness.",
@@ -79,6 +151,24 @@
       "group": "Leading People"
     },
     {
+      "slug": "how-to-visit-the-sick",
+      "title": "How to Visit the Sick and the Dying",
+      "blurb": "A pastor's guide to hospital visitation, bedside ministry, praying with the dying, and being present in the room where everything is at stake",
+      "group": "Pastoral Ministry"
+    },
+    {
+      "slug": "counseling-and-when-to-refer",
+      "title": "Pastoral Counseling and Knowing When to Refer",
+      "blurb": "Soul care, the limits of the pastor's office, mental health, and the wisdom to send someone to a licensed counselor before harm is done",
+      "group": "Pastoral Ministry"
+    },
+    {
+      "slug": "what-is-pastoral-care",
+      "title": "What Pastoral Care Actually Looks Like",
+      "blurb": "A working pastor on the unglamorous heart of shepherding people, the ministry of presence, and the daily labor of caring for a congregation",
+      "group": "Pastoral Ministry"
+    },
+    {
       "slug": "sermon-prep",
       "title": "From the Text to the Sermon",
       "blurb": "A working method for preparing a sermon that honors the text and lands on a Tuesday afternoon",
@@ -101,6 +191,30 @@
       "title": "The Window and the Wall",
       "blurb": "An illustration is a window, not decoration: how to find them, how to use them, and the kinds that betray the text",
       "group": "Preaching and Teaching"
+    },
+    {
+      "slug": "how-to-end-a-sermon",
+      "title": "How to End a Sermon So It Lands",
+      "blurb": "How to write a sermon conclusion that lands, with practical guidance on the call, the final image, and leaving weight instead of tidy resolution.",
+      "group": "Preaching"
+    },
+    {
+      "slug": "how-to-start-a-sermon",
+      "title": "How to Start a Sermon: The First Ninety Seconds",
+      "blurb": "How to begin a sermon with an introduction that earns attention, opens the text, and never cheapens it, with practical patterns for the first ninety seconds in the pulpit.",
+      "group": "Preaching"
+    },
+    {
+      "slug": "how-to-write-a-sermon",
+      "title": "How to Write a Sermon, From Blank Page to Pulpit",
+      "blurb": "A complete repeatable method for writing a sermon, from first reading of the text to a finished message you can preach with conviction on Sunday.",
+      "group": "Preaching"
+    },
+    {
+      "slug": "expository-preaching",
+      "title": "What Expository Preaching Actually Is",
+      "blurb": "A working definition of expository preaching set against topical and textual preaching, and why letting the text set the agenda forms a congregation over years.",
+      "group": "Preaching"
     },
     {
       "slug": "character-over-gifting",
