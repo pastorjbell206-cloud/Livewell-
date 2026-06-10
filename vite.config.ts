@@ -3,8 +3,126 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import path from "node:path";
 import { defineConfig } from "vite";
+import { VitePWA } from "vite-plugin-pwa";
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin()];
+const plugins = [
+  react(),
+  tailwindcss(),
+  jsxLocPlugin(),
+  VitePWA({
+    registerType: "autoUpdate",
+    includeAssets: ["robots.txt", "sitemap.xml"],
+    manifest: {
+      name: "LiveWell by James Bell",
+      short_name: "LiveWell",
+      description:
+        "Connecting the depth of theology to the weight of everyday life.",
+      theme_color: "#1A1A1A",
+      background_color: "#F5F0E6",
+      display: "standalone",
+      start_url: "/",
+      icons: [
+        {
+          src: "/pwa-192x192.png",
+          sizes: "192x192",
+          type: "image/png",
+        },
+        {
+          src: "/pwa-512x512.png",
+          sizes: "512x512",
+          type: "image/png",
+        },
+        {
+          src: "/pwa-512x512.png",
+          sizes: "512x512",
+          type: "image/png",
+          purpose: "maskable",
+        },
+      ],
+    },
+    workbox: {
+      // Precache only the app shell (~1.6 MB), not the dozens of
+      // lazy-loaded chunks (~15 MB) or the 300+ content JSON files in
+      // client/public. Lazy chunks and content are cached at runtime
+      // as they are visited.
+      globPatterns: [
+        "**/*.html",
+        "assets/index-*.{js,css}",
+        "assets/vendor-*.js",
+        "pwa-*.png",
+      ],
+      // Never let the SPA fallback swallow the admin or the API.
+      navigateFallbackDenylist: [/^\/admin/, /^\/api/],
+      runtimeCaching: [
+        {
+          // API is never cached. Must stay first so it wins over the
+          // navigation route.
+          urlPattern: ({ url, sameOrigin }) =>
+            sameOrigin && url.pathname.startsWith("/api/"),
+          handler: "NetworkOnly",
+        },
+        {
+          // App navigations: fresh when online, cached shell when offline.
+          urlPattern: ({ request }) => request.mode === "navigate",
+          handler: "NetworkFirst",
+          options: {
+            cacheName: "pages",
+            networkTimeoutSeconds: 5,
+            expiration: { maxEntries: 100, maxAgeSeconds: 60 * 60 * 24 * 30 },
+            cacheableResponse: { statuses: [0, 200] },
+          },
+        },
+        {
+          // Library content: essays/guides JSON readable offline once visited.
+          urlPattern: ({ url, sameOrigin }) =>
+            sameOrigin &&
+            (/^\/(leadership|context|life)\/.*\.json$/.test(url.pathname) ||
+              /^\/family[^/]*\.json$/.test(url.pathname)),
+          handler: "StaleWhileRevalidate",
+          options: {
+            cacheName: "library-content",
+            expiration: { maxEntries: 300, maxAgeSeconds: 60 * 60 * 24 * 30 },
+            cacheableResponse: { statuses: [0, 200] },
+          },
+        },
+        {
+          // Hashed build assets (lazy route chunks, CSS). Content-hashed
+          // filenames are immutable, so CacheFirst is safe; this is what
+          // keeps previously-visited pages readable offline without
+          // precaching every chunk up front.
+          urlPattern: ({ url, sameOrigin }) =>
+            sameOrigin && url.pathname.startsWith("/assets/"),
+          handler: "CacheFirst",
+          options: {
+            cacheName: "build-assets",
+            expiration: { maxEntries: 200, maxAgeSeconds: 60 * 60 * 24 * 30 },
+            cacheableResponse: { statuses: [0, 200] },
+          },
+        },
+        {
+          // Google Fonts stylesheets + font files.
+          urlPattern: /^https:\/\/fonts\.(googleapis|gstatic)\.com\/.*/,
+          handler: "CacheFirst",
+          options: {
+            cacheName: "fonts",
+            expiration: { maxEntries: 40, maxAgeSeconds: 60 * 60 * 24 * 30 },
+            cacheableResponse: { statuses: [0, 200] },
+          },
+        },
+        {
+          urlPattern: ({ request }) =>
+            request.destination === "font" || request.destination === "image",
+          handler: "CacheFirst",
+          options: {
+            cacheName: "static-assets",
+            expiration: { maxEntries: 200, maxAgeSeconds: 60 * 60 * 24 * 30 },
+            cacheableResponse: { statuses: [0, 200] },
+          },
+        },
+      ],
+    },
+  }),
+];
 
 export default defineConfig({
   plugins,
