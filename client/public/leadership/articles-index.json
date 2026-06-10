@@ -43,6 +43,12 @@
       "group": "Building and Rebuilding"
     },
     {
+      "slug": "healthy-staff-culture",
+      "title": "Building a Healthy Church Staff Culture",
+      "blurb": "What it takes to build a church staff culture of trust, clarity, and candor, and why the team behind the pulpit shapes everything the congregation becomes.",
+      "group": "Church Leadership"
+    },
+    {
       "slug": "how-churches-make-decisions",
       "title": "How a Church Should Make Decisions",
       "blurb": "A practical guide to church decision making, governance, and congregational dynamics, covering process, spiritual authority, and how to decide without dividing the body.",
@@ -85,6 +91,18 @@
       "group": "Church Leadership"
     },
     {
+      "slug": "managing-church-conflict",
+      "title": "How to Manage Conflict in the Church",
+      "blurb": "A pastor's practical guide to the sources of church conflict, the escalation patterns that destroy congregations, and the biblical path to real resolution.",
+      "group": "Church Leadership"
+    },
+    {
+      "slug": "pastoral-succession",
+      "title": "How to Plan a Pastoral Succession",
+      "blurb": "A practical guide to pastoral succession planning, handing off church leadership well, and transferring the pulpit to the next pastor without splitting the congregation.",
+      "group": "Church Leadership"
+    },
+    {
       "slug": "running-effective-meetings",
       "title": "How to Run a Church Meeting Worth Attending",
       "blurb": "A practical guide to running effective church meetings, with agendas, clear decisions, and the leadership habits that turn wasted gatherings into real work.",
@@ -115,6 +133,12 @@
       "group": "Exegesis and Bible Study"
     },
     {
+      "slug": "how-to-read-old-testament-law",
+      "title": "How to Read and Apply Old Testament Law",
+      "blurb": "A clear guide to reading the law of Moses as a Christian, understanding the moral, civil, and ceremonial categories, and applying the Old Testament commands today without legalism or neglect",
+      "group": "Exegesis and Bible Study"
+    },
+    {
       "slug": "typology",
       "title": "How to Read Types and Shadows Without Going Off the Rails",
       "blurb": "A disciplined guide to biblical typology, how to recognize legitimate types and shadows in the Old Testament, and how to avoid allegory and fanciful interpretation",
@@ -136,6 +160,12 @@
       "slug": "bible-study-tools",
       "title": "The Bible Study Tools Worth Owning",
       "blurb": "A guide to the best Bible study tools for serious students and preachers, including lexicons, concordances, and commentaries, and how to use each one well",
+      "group": "Exegesis and Bible Study"
+    },
+    {
+      "slug": "exegetical-fallacies",
+      "title": "The Exegetical Fallacies That Wreck Sermons",
+      "blurb": "A working pastor's guide to the common interpretation errors that ruin preaching, from the root fallacy to anachronism to illegitimate totality transfer, and how to stop making them",
       "group": "Exegesis and Bible Study"
     },
     {
@@ -169,6 +199,12 @@
       "group": "Leadership Formation"
     },
     {
+      "slug": "avoiding-burnout-in-ministry",
+      "title": "How to Avoid Burnout in Ministry",
+      "blurb": "The causes, the warning signs, and the slow recovery of a pastor who ran himself empty in the name of faithfulness and called it obedience.",
+      "group": "Leadership Formation"
+    },
+    {
       "slug": "how-to-finish-well-in-ministry",
       "title": "How to Finish Well in Ministry",
       "blurb": "Finishing well in ministry is rarer than starting strong, and understanding why pastors fall and burn out is the first step to lasting all the way to the end.",
@@ -178,6 +214,12 @@
       "slug": "integrity-when-no-one-is-watching",
       "title": "Integrity When No One Is Watching",
       "blurb": "Integrity in leadership is what a pastor does in private when no one is watching, and the private life always becomes the public one in the end.",
+      "group": "Leadership Formation"
+    },
+    {
+      "slug": "leading-from-rest",
+      "title": "Leading From Rest Instead of Anxiety",
+      "blurb": "A non-anxious presence and the practice of sabbath let a leader lead from rest instead of fear, which changes everything a congregation feels but cannot name.",
       "group": "Leadership Formation"
     },
     {
@@ -208,6 +250,12 @@
       "slug": "spiritual-leadership",
       "title": "What Actually Makes Leadership Spiritual",
       "blurb": "Spiritual leadership is not the same thing as competent leadership in a Christian building, and the difference is the one most pastors never stop to measure.",
+      "group": "Leadership Formation"
+    },
+    {
+      "slug": "the-leaders-sabbath",
+      "title": "Why the Leader Needs a Sabbath",
+      "blurb": "Rest is not a productivity hack for tired pastors but an act of obedience and a public witness that the world is held by God and not by you.",
       "group": "Leadership Formation"
     },
     {
@@ -277,6 +325,12 @@
       "group": "Pastoral Ministry"
     },
     {
+      "slug": "ministering-to-the-dying",
+      "title": "How to Minister to the Dying",
+      "blurb": "On bedside ministry, the last days of a believer, and how a pastor accompanies a person to the edge of death with honesty and hope",
+      "group": "Pastoral Ministry"
+    },
+    {
       "slug": "how-to-visit-the-sick",
       "title": "How to Visit the Sick and the Dying",
       "blurb": "A pastor's guide to hospital visitation, bedside ministry, praying with the dying, and being present in the room where everything is at stake",
@@ -286,6 +340,12 @@
       "slug": "counseling-and-when-to-refer",
       "title": "Pastoral Counseling and Knowing When to Refer",
       "blurb": "Soul care, the limits of the pastor's office, mental health, and the wisdom to send someone to a licensed counselor before harm is done",
+      "group": "Pastoral Ministry"
+    },
+    {
+      "slug": "shepherding-the-flock",
+      "title": "What It Means to Shepherd the Flock",
+      "blurb": "On the shepherd image, the daily demands of pastoral care, and why feeding, leading, and guarding the flock of God still defines the work",
       "group": "Pastoral Ministry"
     },
     {
@@ -355,6 +415,12 @@
       "group": "Preaching"
     },
     {
+      "slug": "preaching-difficult-passages",
+      "title": "How to Preach the Texts You Would Rather Skip",
+      "blurb": "A pastoral guide to preaching difficult Bible passages on judgment, hell, sexuality, and Old Testament violence without softening the text or losing the room.",
+      "group": "Preaching"
+    },
+    {
       "slug": "how-to-start-a-sermon",
       "title": "How to Start a Sermon: The First Ninety Seconds",
       "blurb": "How to begin a sermon with an introduction that earns attention, opens the text, and never cheapens it, with practical patterns for the first ninety seconds in the pulpit.",
@@ -376,6 +442,18 @@
       "slug": "preaching-with-or-without-notes",
       "title": "Notes, Manuscript, or Nothing: How to Carry a Sermon",
       "blurb": "An honest comparison of preaching from a full manuscript, an outline, or no notes at all, with the tradeoffs of each method and how to choose what fits you.",
+      "group": "Preaching"
+    },
+    {
+      "slug": "preaching-the-gospel-every-week",
+      "title": "Should You Preach the Gospel in Every Sermon",
+      "blurb": "A pastoral case for preaching the gospel in every sermon without it hardening into a formula, with practical ways to move from any biblical text to the cross and the resurrection.",
+      "group": "Preaching"
+    },
+    {
+      "slug": "preaching-and-prayer",
+      "title": "The Praying That Has to Happen Before the Preaching",
+      "blurb": "On sermon preparation as a spiritual act, why prayer in the study is not preliminary to exegesis but part of it, and how a praying preacher differs from a merely prepared one.",
       "group": "Preaching"
     },
     {
