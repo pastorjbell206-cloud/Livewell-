@@ -112,8 +112,11 @@ export default function ContextGuide() {
       )}
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
-        <div style={wrap}>
+        <div style={{ ...wrap, display: "flex", gap: "var(--s-4)", flexWrap: "wrap" }}>
           <Link href="/resources/context" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>← All context guides</Link>
+          {data && (
+            <a href={`/downloads/context/${slug}.pdf`} download style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Download as PDF</a>
+          )}
         </div>
       </section>
     </Layout>

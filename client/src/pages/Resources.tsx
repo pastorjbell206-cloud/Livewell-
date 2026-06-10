@@ -29,6 +29,12 @@ const LIBRARIES = [
     flagship: true,
   },
   {
+    href: "/discipleship",
+    eyebrow: "The guided path",
+    title: "The Discipleship Pathway",
+    desc: "Four stages from new believer to disciple-maker, with concrete steps and a tracker that remembers where you are.",
+  },
+  {
     href: "/leadership/library",
     eyebrow: "For leaders and teachers",
     title: "The Leadership Library",

@@ -36,6 +36,8 @@ const Pillars = lazy(() => import("./pages/Pillars"));
 const ForPastors = lazy(() => import("./pages/ForPastors"));
 const ForLeaders = lazy(() => import("./pages/ForLeaders"));
 const Membership = lazy(() => import("./pages/Membership"));
+const MembershipSuccess = lazy(() => import("./pages/MembershipSuccess"));
+const Discipleship = lazy(() => import("./pages/Discipleship"));
 const Marriage = lazy(() => import("./pages/Marriage"));
 const Parenting = lazy(() => import("./pages/Parenting"));
 const Doubt = lazy(() => import("./pages/Doubt"));
@@ -247,6 +249,8 @@ function Router() {
         <Route path="/for-pastors" component={ForPastors} />
         <Route path="/for-leaders" component={ForLeaders} />
         <Route path="/membership" component={Membership} />
+        <Route path="/membership/success" component={MembershipSuccess} />
+        <Route path="/discipleship" component={Discipleship} />
         <Route path="/writing" component={Writing} />
         <Route path="/writing/:slug" component={ArticleDetail} />
         <Route path="/articles" component={ArticlesRedirect} />

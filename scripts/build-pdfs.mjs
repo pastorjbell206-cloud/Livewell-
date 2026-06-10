@@ -1,0 +1,312 @@
+/**
+ * build-pdfs.mjs — generates downloadable PDF study guides at build time.
+ *
+ * Sources:
+ *   client/public/context/guides/*.json          → client/public/downloads/context/<slug>.pdf
+ *   client/public/leadership/sermon-series.json  → client/public/downloads/sermon-series/<id>.pdf
+ *
+ * Run:  node scripts/build-pdfs.mjs
+ *
+ * Rerun whenever a context guide or sermon series is added or edited —
+ * the PDFs are static files served from /downloads/, and they do not
+ * regenerate themselves. The script is idempotent: it overwrites every
+ * PDF on each run, so running it twice is always safe.
+ *
+ * Layout: Times-Roman family (pdfkit built-in), 72pt margins, footer with
+ * the site domain and page number on every page. No external assets.
+ */
+
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import PDFDocument from "pdfkit";
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const GUIDES_DIR = path.join(ROOT, "client/public/context/guides");
+const SERIES_FILE = path.join(ROOT, "client/public/leadership/sermon-series.json");
+const OUT_CONTEXT = path.join(ROOT, "client/public/downloads/context");
+const OUT_SERIES = path.join(ROOT, "client/public/downloads/sermon-series");
+
+// Palette (print-safe subset of the brand tokens)
+const INK = "#14110C";
+const MUTED = "#5A5448";
+const MUSTARD = "#9A7412"; // darkened mustard so it reads on white paper
+const RULE = "#C9C2B4";
+
+const MARGIN = 72;
+
+function newDoc(meta) {
+  return new PDFDocument({
+    size: "LETTER",
+    margins: { top: MARGIN, bottom: MARGIN, left: MARGIN, right: MARGIN },
+    bufferPages: true,
+    info: { Title: meta.title, Author: "James Bell", Creator: "LiveWell by James Bell" },
+  });
+}
+
+function contentWidth(doc) {
+  return doc.page.width - doc.page.margins.left - doc.page.margins.right;
+}
+
+/** Start a new page if fewer than `needed` points remain below the cursor. */
+function ensureRoom(doc, needed) {
+  if (doc.y + needed > doc.page.height - doc.page.margins.bottom) doc.addPage();
+}
+
+function kickerLine(doc, text, color = MUSTARD) {
+  doc.font("Times-Roman").fontSize(9).fillColor(color)
+    .text(text.toUpperCase(), { characterSpacing: 2.2 });
+}
+
+function thinRule(doc, color = MUSTARD, width = 0.75) {
+  const y = doc.y;
+  doc.save()
+    .moveTo(doc.page.margins.left, y)
+    .lineTo(doc.page.width - doc.page.margins.right, y)
+    .lineWidth(width)
+    .strokeColor(color)
+    .stroke()
+    .restore();
+  doc.y = y;
+}
+
+/** Title-page block: kicker, large title, subtitle, thin rule. */
+function titleBlock(doc, { kicker, title, subtitle }) {
+  doc.moveDown(1.5);
+  if (kicker) {
+    kickerLine(doc, kicker);
+    doc.moveDown(1);
+  }
+  doc.font("Times-Roman").fontSize(30).fillColor(INK)
+    .text(title, { lineGap: 2 });
+  if (subtitle) {
+    doc.moveDown(0.6);
+    doc.font("Times-Italic").fontSize(13).fillColor(MUTED)
+      .text(subtitle, { lineGap: 3 });
+  }
+  doc.moveDown(1.2);
+  thinRule(doc);
+  doc.moveDown(2);
+}
+
+function sectionHeading(doc, { kicker, title }) {
+  ensureRoom(doc, 110); // keep headings off the last lines of a page
+  if (kicker) {
+    kickerLine(doc, kicker);
+    doc.moveDown(0.45);
+  }
+  doc.font("Times-Bold").fontSize(16).fillColor(INK).text(title, { lineGap: 2 });
+  doc.moveDown(0.6);
+}
+
+function bodyParagraphs(doc, body) {
+  for (const p of body.split("\n\n").map((s) => s.trim()).filter(Boolean)) {
+    doc.font("Times-Roman").fontSize(11).fillColor(INK)
+      .text(p, { lineGap: 4.5, paragraphGap: 0 });
+    doc.moveDown(0.8);
+  }
+}
+
+function listHeading(doc, label) {
+  ensureRoom(doc, 90);
+  kickerLine(doc, label);
+  doc.moveDown(0.5);
+}
+
+/** Ruled lines for handwritten notes under each sermon in a printed copy. */
+function notesLines(doc, count) {
+  const lineHeight = 20;
+  ensureRoom(doc, count * lineHeight + 16);
+  doc.font("Times-Italic").fontSize(9).fillColor(MUTED).text("Notes");
+  doc.moveDown(0.5);
+  const left = doc.page.margins.left;
+  const right = doc.page.width - doc.page.margins.right;
+  let y = doc.y + lineHeight - 6;
+  doc.save().lineWidth(0.5).strokeColor(RULE);
+  for (let i = 0; i < count; i++) {
+    doc.moveTo(left, y).lineTo(right, y).stroke();
+    y += lineHeight;
+  }
+  doc.restore();
+  doc.y = y - lineHeight + 6;
+}
+
+/** Footer on every page: domain centered, page number beneath it. */
+function stampFooters(doc) {
+  const range = doc.bufferedPageRange();
+  for (let i = range.start; i < range.start + range.count; i++) {
+    doc.switchToPage(i);
+    const savedBottom = doc.page.margins.bottom;
+    doc.page.margins.bottom = 0; // allow writing inside the bottom margin
+    const w = doc.page.width;
+    doc.font("Times-Roman").fontSize(8).fillColor(MUTED)
+      .text("livewellbyjamesbell.co", 0, doc.page.height - 54, {
+        width: w, align: "center", lineBreak: false, characterSpacing: 1,
+      });
+    doc.fontSize(8).fillColor(MUTED)
+      .text(String(i + 1), 0, doc.page.height - 42, {
+        width: w, align: "center", lineBreak: false,
+      });
+    doc.page.margins.bottom = savedBottom;
+  }
+}
+
+function writePdf(outPath, build, meta) {
+  return new Promise((resolve, reject) => {
+    const doc = newDoc(meta);
+    const stream = fs.createWriteStream(outPath);
+    stream.on("finish", resolve);
+    stream.on("error", reject);
+    doc.pipe(stream);
+    try {
+      build(doc);
+      stampFooters(doc);
+      doc.end();
+    } catch (err) {
+      reject(err);
+    }
+  });
+}
+
+// ---------------------------------------------------------------------------
+// Context guides
+// ---------------------------------------------------------------------------
+
+async function buildContextGuide(guide) {
+  const outPath = path.join(OUT_CONTEXT, `${guide.slug}.pdf`);
+  await writePdf(outPath, (doc) => {
+    titleBlock(doc, {
+      kicker: `Reading Scripture in Context · ${guide.kicker || guide.group || ""}`,
+      title: guide.title,
+      subtitle: guide.subtitle,
+    });
+
+    for (const section of guide.sections || []) {
+      sectionHeading(doc, section);
+      bodyParagraphs(doc, section.body || "");
+      doc.moveDown(0.6);
+    }
+
+    if (guide.keyTexts?.length) {
+      doc.moveDown(0.4);
+      thinRule(doc, RULE, 0.5);
+      doc.moveDown(1.2);
+      listHeading(doc, "Key Texts");
+      for (const t of guide.keyTexts) {
+        doc.font("Times-Roman").fontSize(11).fillColor(INK).text(t, { lineGap: 3 });
+        doc.moveDown(0.25);
+      }
+      doc.moveDown(0.8);
+    }
+
+    if (guide.sources?.length) {
+      listHeading(doc, "Sources");
+      for (const s of guide.sources) {
+        doc.font("Times-Italic").fontSize(10.5).fillColor(INK)
+          .text(s.title, { continued: true, lineGap: 3 })
+          .font("Times-Roman").fillColor(MUTED)
+          .text(`  —  ${s.author}`);
+        doc.moveDown(0.25);
+      }
+    }
+  }, { title: guide.title });
+  return outPath;
+}
+
+// ---------------------------------------------------------------------------
+// Sermon series
+// ---------------------------------------------------------------------------
+
+async function buildSermonSeries(series, intro) {
+  const outPath = path.join(OUT_SERIES, `${series.id}.pdf`);
+  await writePdf(outPath, (doc) => {
+    const weeks = series.sermons?.length || 0;
+    titleBlock(doc, {
+      kicker: `Sermon Series · ${series.kind === "book" ? "Through a Book" : "Topical"} · ${weeks} Weeks`,
+      title: series.title,
+      subtitle: series.subtitle,
+    });
+
+    // Series front matter
+    if (series.scriptureRange) {
+      doc.font("Times-Bold").fontSize(11).fillColor(INK).text("Text. ", { continued: true })
+        .font("Times-Roman").text(series.scriptureRange, { lineGap: 3 });
+      doc.moveDown(0.4);
+    }
+    if (series.audience) {
+      doc.font("Times-Bold").fontSize(11).fillColor(INK).text("Good for. ", { continued: true })
+        .font("Times-Roman").text(series.audience, { lineGap: 3 });
+      doc.moveDown(0.4);
+    }
+    if (series.bigIdea) {
+      doc.font("Times-Bold").fontSize(11).fillColor(INK).text("The arc. ", { continued: true })
+        .font("Times-Roman").text(series.bigIdea, { lineGap: 4 });
+    }
+    doc.moveDown(1.6);
+
+    for (const sermon of series.sermons || []) {
+      sectionHeading(doc, { title: `${sermon.n}. ${sermon.title}` });
+      if (sermon.text) {
+        doc.moveDown(-0.3);
+        doc.font("Times-Italic").fontSize(10.5).fillColor(MUTED)
+          .text(sermon.text, { lineGap: 3 });
+        doc.moveDown(0.5);
+      }
+      doc.font("Times-Bold").fontSize(11).fillColor(INK).text("Big idea. ", { continued: true })
+        .font("Times-Roman").text(sermon.bigIdea || "", { lineGap: 4 });
+      doc.moveDown(0.4);
+      doc.font("Times-Bold").fontSize(11).fillColor(INK).text("Aim. ", { continued: true })
+        .font("Times-Roman").text(sermon.aim || "", { lineGap: 4 });
+      doc.moveDown(0.8);
+      notesLines(doc, 4);
+      doc.moveDown(1.2);
+    }
+
+    // Shared guidance from the Sermon Series Library, so the PDF stands alone.
+    if (intro) {
+      doc.moveDown(0.4);
+      thinRule(doc, RULE, 0.5);
+      doc.moveDown(1.2);
+      listHeading(doc, "How to Use This Series");
+      bodyParagraphs(doc, intro);
+    }
+  }, { title: series.title });
+  return outPath;
+}
+
+// ---------------------------------------------------------------------------
+// Main
+// ---------------------------------------------------------------------------
+
+async function main() {
+  fs.mkdirSync(OUT_CONTEXT, { recursive: true });
+  fs.mkdirSync(OUT_SERIES, { recursive: true });
+
+  const written = [];
+
+  const guideFiles = fs.readdirSync(GUIDES_DIR).filter((f) => f.endsWith(".json")).sort();
+  for (const file of guideFiles) {
+    const guide = JSON.parse(fs.readFileSync(path.join(GUIDES_DIR, file), "utf8"));
+    written.push(await buildContextGuide(guide));
+  }
+
+  const seriesData = JSON.parse(fs.readFileSync(SERIES_FILE, "utf8"));
+  for (const series of seriesData.series || []) {
+    written.push(await buildSermonSeries(series, seriesData.intro));
+  }
+
+  let total = 0;
+  let smallest = Infinity;
+  for (const p of written) {
+    const size = fs.statSync(p).size;
+    total += size;
+    smallest = Math.min(smallest, size);
+    console.log(`  ${(size / 1024).toFixed(1).padStart(7)} KB  ${path.relative(ROOT, p)}`);
+  }
+  console.log(`\n${written.length} PDFs written (${(total / 1024).toFixed(0)} KB total, smallest ${(smallest / 1024).toFixed(1)} KB).`);
+}
+
+main().catch((err) => {
+  console.error("build-pdfs failed:", err);
+  process.exit(1);
+});

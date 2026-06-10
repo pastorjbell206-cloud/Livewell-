@@ -47,7 +47,50 @@ const STATIC_PAGES = [
   { url: "/writing?pillar=leadership-formation", priority: "0.85", changefreq: "weekly" },
   { url: "/writing?pillar=integrated-life", priority: "0.85", changefreq: "weekly" },
   { url: "/writing?series=true", priority: "0.8", changefreq: "weekly" },
+  // Static content libraries (file-driven, no DB needed).
+  { url: "/leadership", priority: "0.85", changefreq: "weekly" },
+  { url: "/leadership/library", priority: "0.85", changefreq: "weekly" },
+  { url: "/leadership/sermon-series", priority: "0.8", changefreq: "monthly" },
+  { url: "/resources/context", priority: "0.9", changefreq: "weekly" },
+  { url: "/discipleship", priority: "0.85", changefreq: "monthly" },
+  { url: "/family", priority: "0.75", changefreq: "monthly" },
+  { url: "/family/devotions", priority: "0.75", changefreq: "monthly" },
+  { url: "/family/catechism", priority: "0.7", changefreq: "monthly" },
+  { url: "/family/reading-plans", priority: "0.7", changefreq: "monthly" },
+  { url: "/theology", priority: "0.8", changefreq: "monthly" },
+  { url: "/theology/biblical", priority: "0.75", changefreq: "monthly" },
+  { url: "/theology/history", priority: "0.75", changefreq: "monthly" },
+  { url: "/theology/questions", priority: "0.75", changefreq: "monthly" },
+  { url: "/start", priority: "0.8", changefreq: "monthly" },
+  { url: "/quiz", priority: "0.6", changefreq: "monthly" },
+  { url: "/tools/verse-finder", priority: "0.6", changefreq: "monthly" },
+  { url: "/tools/prayer-generator", priority: "0.6", changefreq: "monthly" },
+  { url: "/tools/family-devotions", priority: "0.65", changefreq: "monthly" },
 ];
+
+/**
+ * Article-style pages whose content lives as JSON in client/public rather than
+ * the database: the Leadership Library and the Reading Scripture in Context
+ * guides. Read from the generated manifests so this list never goes stale.
+ */
+function manifestPages() {
+  const pages = [];
+  const sources = [
+    { file: "client/public/leadership/articles-index.json", key: "articles", prefix: "/leadership/article/" },
+    { file: "client/public/context/guides-index.json", key: "guides", prefix: "/resources/context/" },
+  ];
+  for (const s of sources) {
+    try {
+      const data = JSON.parse(fs.readFileSync(s.file, "utf8"));
+      for (const entry of data[s.key] || []) {
+        if (entry.slug) pages.push({ url: `${s.prefix}${entry.slug}`, priority: "0.75", changefreq: "monthly" });
+      }
+    } catch (err) {
+      console.warn(`[sitemap] could not read ${s.file}: ${err.message}`);
+    }
+  }
+  return pages;
+}
 
 function urlEntry(loc, lastmod, changefreq, priority) {
   let entry = "  <url>\n";
@@ -60,9 +103,10 @@ function urlEntry(loc, lastmod, changefreq, priority) {
 }
 
 function buildXml(staticPages, articles, books, readingPaths) {
+  const allStatic = [...staticPages, ...manifestPages()];
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
-  for (const page of staticPages) {
+  for (const page of allStatic) {
     xml += urlEntry(`${BASE_URL}${page.url}`, null, page.changefreq, page.priority);
   }
   for (const a of articles) {

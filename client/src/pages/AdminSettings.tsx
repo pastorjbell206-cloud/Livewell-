@@ -8,6 +8,7 @@ export default function AdminSettings() {
   const [form, setForm] = useState({
     substackUrl: "",
     pastorsConnectionUrl: "",
+    stripeMembershipPriceId: "",
   });
   const [isLoading, setIsLoading] = useState(false);
 
@@ -19,6 +20,7 @@ export default function AdminSettings() {
       setForm({
         substackUrl: getAllSettingsQuery.data.substackUrl || "",
         pastorsConnectionUrl: getAllSettingsQuery.data.pastorsConnectionUrl || "",
+        stripeMembershipPriceId: getAllSettingsQuery.data.stripeMembershipPriceId || "",
       });
     }
   }, [getAllSettingsQuery.data]);
@@ -31,6 +33,7 @@ export default function AdminSettings() {
         settings: {
           substackUrl: form.substackUrl,
           pastorsConnectionUrl: form.pastorsConnectionUrl,
+          stripeMembershipPriceId: form.stripeMembershipPriceId,
         },
       });
       toast.success("Settings saved");
@@ -94,6 +97,29 @@ export default function AdminSettings() {
               />
               <p className="font-ui text-xs mt-2" style={{ color: "#6B7280" }}>
                 This URL will be used on the Pastors Connection page for joining/learning more
+              </p>
+            </div>
+          </div>
+
+          {/* Membership (Stripe) */}
+          <div>
+            <h2 className="font-display text-xl font-bold mb-4" style={{ color: "#1A1A1A" }}>
+              Membership (Stripe)
+            </h2>
+            <div>
+              <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+                Stripe Price ID for the membership plan
+              </label>
+              <input
+                type="text"
+                value={form.stripeMembershipPriceId}
+                onChange={(e) => setForm({ ...form, stripeMembershipPriceId: e.target.value })}
+                className="w-full px-4 py-2 rounded border font-body"
+                style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+                placeholder="price_..."
+              />
+              <p className="font-ui text-xs mt-2" style={{ color: "#6B7280" }}>
+                Two steps to open membership checkout: 1) add STRIPE_SECRET_KEY as an environment variable in Vercel, 2) create a recurring product in your Stripe dashboard and paste its Price ID (starts with price_) here. While either is missing, the membership page shows the waitlist instead. Clear this field to close checkout again.
               </p>
             </div>
           </div>

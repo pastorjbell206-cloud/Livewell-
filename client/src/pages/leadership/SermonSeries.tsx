@@ -80,6 +80,9 @@ export default function SermonSeries() {
                           </div>
                         ))}
                       </div>
+                      <div style={{ marginTop: "14px" }}>
+                        <a href={`/downloads/sermon-series/${s.id}.pdf`} download style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", color: "var(--mustard-text)", textDecoration: "none" }}>Download PDF ↓</a>
+                      </div>
                     </div>
                   )}
                 </div>
