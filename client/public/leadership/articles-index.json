@@ -1,0 +1,166 @@
+{
+  "articles": [
+    {
+      "slug": "money-and-the-church",
+      "title": "Leading a Church With Money",
+      "blurb": "The offering plate is the most spiritual object in the building and the one pastors are most afraid to touch",
+      "group": "Administration and Rhythm"
+    },
+    {
+      "slug": "meetings-that-matter",
+      "title": "Meetings That Are Not a Waste",
+      "blurb": "Most church meetings are where decisions go to die. A good one is rarer than a good sermon, and harder",
+      "group": "Administration and Rhythm"
+    },
+    {
+      "slug": "church-administration",
+      "title": "The Systems Under the Soul",
+      "blurb": "Nobody is ordained to love policy. But the structures you ignore will quietly decide what your ministry is allowed to become",
+      "group": "Administration and Rhythm"
+    },
+    {
+      "slug": "the-leaders-calendar",
+      "title": "The Tyranny of the Urgent",
+      "blurb": "Why the calendar, and not the sermon, is the truest confession of what a pastor believes",
+      "group": "Administration and Rhythm"
+    },
+    {
+      "slug": "leading-change",
+      "title": "Leading Change Without Splitting the Church",
+      "blurb": "The change that split the last guy's congregation, the pace that does not, and the patience it will cost you to move people instead of running them over",
+      "group": "Building and Rebuilding"
+    },
+    {
+      "slug": "church-planting",
+      "title": "Planting a Church",
+      "blurb": "Counting the cost before you break ground, surviving the first eighteen months, and knowing the difference between a crowd and a church",
+      "group": "Building and Rebuilding"
+    },
+    {
+      "slug": "revitalization",
+      "title": "Revitalizing a Dying Church",
+      "blurb": "The honest odds, the slow work, and the reason a man might give his best years to a building most people have already written off",
+      "group": "Building and Rebuilding"
+    },
+    {
+      "slug": "raising-leaders",
+      "title": "Doing Yourself Out of a Job",
+      "blurb": "The goal of leadership is multiplication, not indispensability, and the leader who cannot let go has mistaken his own grip for faithfulness.",
+      "group": "Leading People"
+    },
+    {
+      "slug": "leading-staff",
+      "title": "Leading Paid Staff",
+      "blurb": "When you sign a person's paycheck and shepherd their soul at the same time, grace and accountability are bound to meet, and sometimes to collide.",
+      "group": "Leading People"
+    },
+    {
+      "slug": "ministry-teams",
+      "title": "Recruiting and Releasing Volunteers",
+      "blurb": "The whole church is the ministry, and the pastor's job is to equip the saints for the work, not to do the work while the saints applaud.",
+      "group": "Leading People"
+    },
+    {
+      "slug": "the-deacons",
+      "title": "The Office of Deacon",
+      "blurb": "The ministry of service exists so the ministry of the word can go forward unhindered, and both extremes that distort it cripple the church.",
+      "group": "Leading People"
+    },
+    {
+      "slug": "the-elders",
+      "title": "The Office of Elder",
+      "blurb": "The New Testament gives the church a plurality of shepherds for a reason, and the reason protects everyone, the pastor most of all.",
+      "group": "Leading People"
+    },
+    {
+      "slug": "handling-conflict",
+      "title": "When the Body Fights",
+      "blurb": "Conflict is not a sign the church is failing. The refusal to face it is, and peace bought at any price is the most expensive thing a church can buy.",
+      "group": "Leading People"
+    },
+    {
+      "slug": "sermon-prep",
+      "title": "From the Text to the Sermon",
+      "blurb": "A working method for preparing a sermon that honors the text and lands on a Tuesday afternoon",
+      "group": "Preaching and Teaching"
+    },
+    {
+      "slug": "the-preaching-calendar",
+      "title": "Planning a Year of Preaching",
+      "blurb": "On series, seasons, and the long diet you are feeding a congregation, and why planning is not the enemy of the Spirit",
+      "group": "Preaching and Teaching"
+    },
+    {
+      "slug": "preaching-that-lands",
+      "title": "Preaching That Lands",
+      "blurb": "On delivery, application, and the difference between a lecture about the Bible and a word from God to this room",
+      "group": "Preaching and Teaching"
+    },
+    {
+      "slug": "using-illustrations",
+      "title": "The Window and the Wall",
+      "blurb": "An illustration is a window, not decoration: how to find them, how to use them, and the kinds that betray the text",
+      "group": "Preaching and Teaching"
+    },
+    {
+      "slug": "character-over-gifting",
+      "title": "Character Outlasts Gifting",
+      "blurb": "Your gifting gets you the platform, and your character decides whether you survive it, which is the one thing no search committee on earth can measure.",
+      "group": "The Inner Life of the Leader"
+    },
+    {
+      "slug": "pride-and-the-platform",
+      "title": "Pride and the Platform",
+      "blurb": "The man who is praised for a living is being slowly poisoned by his own job, and the only question is whether he knows it.",
+      "group": "The Inner Life of the Leader"
+    },
+    {
+      "slug": "the-call",
+      "title": "The Call and the Ambition",
+      "blurb": "Every man who wants a pulpit must learn the difference between being sent and being hungry, because that difference decides everything that comes after.",
+      "group": "The Inner Life of the Leader"
+    },
+    {
+      "slug": "the-secret-life",
+      "title": "The Life No One Sees",
+      "blurb": "The prayer, the marriage, the hidden hours are not the leftovers of ministry. They are the foundation, and the seen life stands only as long as they do.",
+      "group": "The Inner Life of the Leader"
+    },
+    {
+      "slug": "the-leaders-burnout",
+      "title": "The Tired Shepherd",
+      "blurb": "There is a difference between laying your life down and letting it be taken, and the tired pastor has usually forgotten which one he agreed to.",
+      "group": "The Inner Life of the Leader"
+    },
+    {
+      "slug": "pastoral-counseling",
+      "title": "Counseling and Its Limits",
+      "blurb": "On soul care, the difference between a pastor and a therapist, and the wisdom to know when to refer",
+      "group": "The Work of Ministry"
+    },
+    {
+      "slug": "the-wedding",
+      "title": "Marrying People Well",
+      "blurb": "On premarital work, the ceremony, and refusing to let the wedding eclipse the marriage you are preparing",
+      "group": "The Work of Ministry"
+    },
+    {
+      "slug": "the-funeral",
+      "title": "Standing at the Grave",
+      "blurb": "On officiating a funeral, preaching to the grieving, and telling the truth about death in the presence of hope",
+      "group": "The Work of Ministry"
+    },
+    {
+      "slug": "the-ministry-of-presence",
+      "title": "The Ministry of Presence",
+      "blurb": "On visitation, the hospital room, and the unscalable work that is most of the job",
+      "group": "The Work of Ministry"
+    },
+    {
+      "slug": "crisis-care",
+      "title": "When the Phone Rings at 2 a.m.",
+      "blurb": "On the suicide, the accident, the diagnosis, and showing up to the worst day of someone's life without falling apart in it",
+      "group": "The Work of Ministry"
+    }
+  ]
+}

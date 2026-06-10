@@ -89,6 +89,8 @@ export const LEADERSHIP_ARTICLES: ArticleIndexEntry[] = [
 
 export const LEADERSHIP_TOOLS: ToolLink[] = [
   { href: "/leadership/team", kicker: "The workspace", title: "The Leadership Team", blurb: "A shared workspace for pastors, elders, deacons, and team leaders. Channels, posts, tasks, and announcements, all in one place. Requires sign-in." },
+  { href: "/leadership/library", kicker: "The library", title: "The Leadership Library", blurb: "The whole corpus in one searchable place. Formation, leadership, preaching, and the careful handling of the text, by category." },
+  { href: "/leadership/sermon-series", kicker: "Preaching", title: "The Sermon Series Library", blurb: "Series to preach straight through a book of the Bible, and topical series around a real question, each with a sermon-by-sermon breakdown." },
   { href: "/leadership/sermon-prep", kicker: "Preaching", title: "The Sermon Prep Workbench", blurb: "A guided workflow from the text to the pulpit, with the exegetical and homiletical questions worth answering at each stage. Saves to your browser." },
   { href: "/leadership/illustrations", kicker: "Preaching", title: "The Illustration Library", blurb: "A searchable bank of sermon illustrations, sorted by theme and text, each with the point it actually serves. Save the ones you want." },
   { href: "/leadership/meeting", kicker: "Administration", title: "The Meeting Builder", blurb: "Build an agenda that ends in decisions, not fog. Templates for elder meetings, staff meetings, and vision sessions." },
