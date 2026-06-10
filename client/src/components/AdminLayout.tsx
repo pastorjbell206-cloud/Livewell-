@@ -12,6 +12,7 @@ import {
   RefreshCw,
   Bell,
   MessageSquare,
+  Users,
 } from "lucide-react";
 
 const ADMIN_NAV = [
@@ -21,6 +22,7 @@ const ADMIN_NAV = [
   { href: "/admin/books", label: "Books", icon: BookOpen },
   { href: "/admin/about", label: "About Page", icon: FileText },
   { href: "/admin/moderation", label: "Moderation", icon: MessageSquare },
+  { href: "/admin/subscribers", label: "Subscribers", icon: Users },
   { href: "/admin/sync", label: "Content Sync", icon: RefreshCw },
   { href: "/admin/notifications", label: "Notifications", icon: Bell },
   { href: "/admin/settings", label: "Settings", icon: Settings },

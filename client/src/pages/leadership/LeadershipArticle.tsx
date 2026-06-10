@@ -11,21 +11,40 @@ import type { LeadershipArticle as Article } from "@/lib/leadership";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
+interface IndexEntry { slug: string; title: string; blurb: string; group: string }
+
 export default function LeadershipArticle() {
   const [, params] = useRoute("/leadership/article/:slug");
   const slug = params?.slug;
   const [data, setData] = useState<Article | null>(null);
   const [missing, setMissing] = useState(false);
+  const [related, setRelated] = useState<IndexEntry[]>([]);
 
   useEffect(() => {
     if (!slug) return;
     setData(null);
     setMissing(false);
+    setRelated([]);
     fetch(`/leadership/articles/${slug}.json`, { cache: "no-store" })
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => (d ? setData(d) : setMissing(true)))
       .catch(() => setMissing(true));
   }, [slug]);
+
+  // Related reading: same group first, then the rest of the library, never self.
+  useEffect(() => {
+    if (!data) return;
+    fetch("/leadership/articles-index.json")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((idx: { articles: IndexEntry[] } | null) => {
+        if (!idx) return;
+        const others = idx.articles.filter((a) => a.slug !== slug);
+        const sameGroup = others.filter((a) => a.group === data.group);
+        const rest = others.filter((a) => a.group !== data.group);
+        setRelated([...sameGroup, ...rest].slice(0, 4));
+      })
+      .catch(() => {});
+  }, [data, slug]);
 
   return (
     <Layout>
@@ -71,9 +90,28 @@ export default function LeadershipArticle() {
         </section>
       ) : null}
 
+      {related.length > 0 && (
+        <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
+          <div style={wrap}>
+            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "var(--s-3)" }}>Keep reading</div>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--s-3)" }}>
+              {related.map((a) => (
+                <Link key={a.slug} href={`/leadership/article/${a.slug}`} style={{ display: "block", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
+                  <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-muted)", marginBottom: "8px" }}>{a.group}</div>
+                  <div style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.25, color: "var(--ink)", marginBottom: "8px" }}>{a.title}</div>
+                  <div style={{ fontFamily: "var(--B)", fontSize: "13.5px", lineHeight: 1.55, color: "var(--ink-muted)" }}>{a.blurb}</div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
         <div style={wrap}>
           <Link href="/leadership" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>← All of Leadership Formation</Link>
+          <span style={{ margin: "0 12px", color: "var(--ink-muted)" }}>·</span>
+          <Link href="/leadership/library" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Search the Leadership Library</Link>
         </div>
       </section>
     </Layout>
