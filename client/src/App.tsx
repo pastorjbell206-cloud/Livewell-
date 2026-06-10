@@ -106,6 +106,7 @@ const PastorBurnoutTool = lazy(() => import("./pages/tools/PastorBurnout"));
 const LifeAudit = lazy(() => import("./pages/tools/LifeAudit"));
 const ChurchHealth = lazy(() => import("./pages/tools/ChurchHealth"));
 const DeepBibleCompanion = lazy(() => import("./pages/tools/DeepBibleCompanion"));
+const FamilyDevotionBuilder = lazy(() => import("./pages/tools/FamilyDevotionBuilder"));
 const WorkWithJames = lazy(() => import("./pages/WorkWithJames"));
 const PastoralBurnout = lazy(() => import("./pages/landing/PastoralBurnout"));
 const FaithCrisis = lazy(() => import("./pages/landing/FaithCrisis"));
@@ -138,6 +139,7 @@ const AdminBooks = lazy(() => import("./pages/AdminBooks"));
 const AdminBookEditor = lazy(() => import("./pages/AdminBookEditor"));
 const AdminAbout = lazy(() => import("./pages/AdminAbout"));
 const AdminSettings = lazy(() => import("./pages/AdminSettings"));
+const AdminSubscribers = lazy(() => import("./pages/AdminSubscribers"));
 const AdminContentSync = lazy(() => import("./pages/AdminContentSync"));
 const AdminPublishContent = lazy(() => import("./pages/AdminPublishContent"));
 const AdminSetupNavigation = lazy(() => import("./pages/AdminSetupNavigation"));
@@ -284,6 +286,7 @@ function Router() {
         <Route path="/tools/life-audit" component={LifeAudit} />
         <Route path="/tools/church-health" component={ChurchHealth} />
         <Route path="/tools/deep-bible" component={DeepBibleCompanion} />
+        <Route path="/tools/family-devotions" component={FamilyDevotionBuilder} />
         <Route path="/work-with-james" component={WorkWithJames} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/terms" component={Terms} />
@@ -306,6 +309,7 @@ function Router() {
         <Route path="/admin/books/:id/edit"><ProtectedRoute component={AdminBookEditor} requireAdmin /></Route>
         <Route path="/admin/about"><ProtectedRoute component={AdminAbout} requireAdmin /></Route>
         <Route path="/admin/settings"><ProtectedRoute component={AdminSettings} requireAdmin /></Route>
+        <Route path="/admin/subscribers"><ProtectedRoute component={AdminSubscribers} requireAdmin /></Route>
         <Route path="/admin/sync"><ProtectedRoute component={AdminContentSync} requireAdmin /></Route>
         <Route path="/admin/publish-content"><ProtectedRoute component={AdminPublishContent} requireAdmin /></Route>
         <Route path="/admin/setup-navigation"><ProtectedRoute component={AdminSetupNavigation} requireAdmin /></Route>
