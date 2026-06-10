@@ -48,6 +48,7 @@ export default function Footer() {
               <Link href="/books" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Books</Link>
               <Link href="/resources/context" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Reading Scripture in Context</Link>
               <Link href="/discipleship" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>The Discipleship Pathway</Link>
+              <Link href="/life" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Integrated Life</Link>
               <Link href="/reading-paths" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Reading Paths</Link>
               <Link href="/tools" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Ministry Tools</Link>
               <Link href="/tools/verse-finder" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" }}>Bible Verse Finder</Link>

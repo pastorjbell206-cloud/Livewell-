@@ -54,7 +54,11 @@ function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLin
     // Some pillars lead with a curated hub before the article sub-pathways.
     const extras: DropdownItem[] =
       pillar === "Integrated Life"
-        ? [{ label: "Family Discipleship", href: "/family", description: "Devotions, teen apologetics, parenting, and marriage — for the whole house." }]
+        ? [
+            { label: "The Integrated Life Hub", href: "/life", description: "One undivided life before God — the inner life, the body, the home, work and money, and the world." },
+            { label: "The Whole-Life Assessment", href: "/life/assessment", description: "Map where your life is flourishing and where it has gone quiet, and get a rule of life for this season." },
+            { label: "Family Discipleship", href: "/family", description: "Devotions, teen apologetics, parenting, and marriage — for the whole house." },
+          ]
         : pillar === "Theological Depth"
         ? [
             { label: "The Depth Hub", href: "/theology", description: "Contested doctrines explained fairly — every view in its strongest voice, sorted by how much it matters." },
