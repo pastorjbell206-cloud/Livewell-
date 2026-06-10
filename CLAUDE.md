@@ -133,3 +133,40 @@ Not warm in the coffee-shop sense. Not dark in the luxury-brand sense. The feeli
 - Contact forms send to Pastorjbell206@gmail.com.
 - The site has 161+ articles and 21 books in the database. Content is the product.
 - All components use inline styles with CSS variable references. Brand changes flow through `:root` tokens in `index.css`.
+
+---
+
+## Decision Log (engineering source of truth)
+
+- **Stack stays React + Vite + tRPC + Drizzle + MySQL on Vercel.** Not migrated
+  to Next.js: the platform is working, deployed, and content-heavy; rewrite
+  risk outweighs framework preference. Canonical domain is
+  **livewellbyjamesbell.co** (the .com in older briefs is incorrect).
+- **Tokens**: all brand values live in `:root` of `client/src/index.css`
+  (light) and `html.dark` (dark). Components use inline styles referencing the
+  CSS variables. The admin area is intentionally a light workspace and opts out
+  of dark mode via `.admin-scope` (same file).
+- **Content-as-data pattern**: long-form libraries ship as JSON in
+  `client/public/*` with generated manifests (`scripts/build-*-index.mjs`) and
+  structural validators that gate CI:
+  - `scripts/validate-formation.mjs` — Leadership Formation eight-part method
+    (character before competence, secular sources tested against Scripture,
+    equal-weight steelmans on contested topics).
+  - `scripts/validate-life.mjs` — Integrated Life eight-part method plus
+    enforced cross-domain integration (>= 3 real internal connections).
+- **SEO**: `scripts/generate-sitemap.mjs` runs in the Vercel build, merging
+  static routes, the JSON-library manifests, and database content. `llms.txt`
+  is served at the site root for answer engines. JSON-LD renders via SEOMeta.
+- **IA (approved blueprint, implemented)**: the five pillars are the only
+  taxonomy spine; footer mirrors the header (The Five Pillars / Write & Read /
+  Libraries & Tools / For Pastors / Connect); "Resources" names exactly one
+  thing (the hub at /resources); all tools are registered in /tools; /quiz
+  301s to /tools/theology-quiz (vercel.json).
+- **Payments**: Stripe checkout is config-driven — live only when
+  STRIPE_SECRET_KEY (Vercel env) and the `stripeMembershipPriceId` site
+  setting both exist; the membership page falls back to the waitlist.
+- **CI** (.github/workflows/ci.yml): typecheck, content validators, tests,
+  build on every PR. Browser-based gates (Lighthouse, axe) belong in CI
+  against Vercel previews, not local runs.
+- **PDFs**: `scripts/build-pdfs.mjs` (pdfkit) renders context guides and
+  sermon series to `client/public/downloads/`; rerun after content changes.
