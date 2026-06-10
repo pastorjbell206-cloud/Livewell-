@@ -258,11 +258,14 @@ Set the Torah next to the Code of Hammurabi — same legal language, same era, s
 
 That is not an answer. It is a method. And the difference between an adult reading and a propaganda reading — in either direction — is whether the method gets used or skipped.
 
+**The Violence of the Old Testament**
+https://www.livewellbyjamesbell.co/resources/context/the-violence-of-the-old-testament
+
+**The Slavery Texts**
+https://www.livewellbyjamesbell.co/resources/context/the-slavery-texts
+
 **The Law of Moses Next to the Laws of Babylon**
 https://www.livewellbyjamesbell.co/resources/context/torah-and-the-law-codes
-
-**The Household Codes in Their World**
-https://www.livewellbyjamesbell.co/resources/context/household-codes-in-context
 
 The full context library, when you want to go further:
 https://www.livewellbyjamesbell.co/resources/context
