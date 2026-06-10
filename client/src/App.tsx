@@ -18,6 +18,8 @@ import About from "./pages/About";
 
 const Resources = lazy(() => import("./pages/Resources"));
 const ContextLibrary = lazy(() => import("./pages/resources/ContextLibrary"));
+const CreedsLibrary = lazy(() => import("./pages/resources/CreedsLibrary"));
+const CreedDocument = lazy(() => import("./pages/resources/CreedDocument"));
 const ContextGuide = lazy(() => import("./pages/resources/ContextGuide"));
 const SubstackPage = lazy(() => import("./pages/Substack"));
 const Pastors = lazy(() => import("./pages/Pastors"));
@@ -275,6 +277,8 @@ function Router() {
         <Route path="/lead-magnets/:magnetId" component={LeadMagnetsPage} />
         <Route path="/resources/context/:slug" component={ContextGuide} />
         <Route path="/resources/context" component={ContextLibrary} />
+        <Route path="/resources/creeds/:slug" component={CreedDocument} />
+        <Route path="/resources/creeds" component={CreedsLibrary} />
         <Route path="/resources" component={Resources} />
         <Route path="/books" component={Books} />
         <Route path="/books/:slug" component={BookDetail} />

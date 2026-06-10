@@ -29,6 +29,12 @@ const LIBRARIES = [
     flagship: true,
   },
   {
+    href: "/resources/creeds",
+    eyebrow: "The church's memory",
+    title: "Creeds, Confessions, and Classics",
+    desc: "The full texts of the creeds and confessions with plain-language notes on what the loaded phrases meant to the people who wrote them.",
+  },
+  {
     href: "/discipleship",
     eyebrow: "The guided path",
     title: "The Discipleship Pathway",
