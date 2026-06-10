@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
 import Layout from "@/components/Layout";
@@ -6,10 +6,130 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
 import { ArrowLeft, Search as SearchIcon } from "lucide-react";
 
+// --- Library manifest search (static JSON content libraries) ---
+
+interface LibraryEntry {
+  slug: string;
+  title: string;
+  blurb: string;
+  /** group (leadership/context) or pillar (life/formation) */
+  facet: string;
+  sourceLabel: string;
+  href: string;
+  indexHref: string;
+}
+
+interface LibrarySource {
+  url: string;
+  listKey: string;
+  label: string;
+  buildHref: (slug: string) => string;
+  indexHref: string;
+}
+
+const LIBRARY_SOURCES: LibrarySource[] = [
+  {
+    url: "/leadership/articles-index.json",
+    listKey: "articles",
+    label: "Leadership Library",
+    buildHref: (slug) => `/leadership/article/${slug}`,
+    indexHref: "/leadership/library",
+  },
+  {
+    url: "/context/guides-index.json",
+    listKey: "guides",
+    label: "Reading Scripture in Context",
+    buildHref: (slug) => `/resources/context/${slug}`,
+    indexHref: "/resources/context",
+  },
+  {
+    url: "/life/domains-index.json",
+    listKey: "domains",
+    label: "Integrated Life",
+    buildHref: (slug) => `/life/${slug}`,
+    indexHref: "/life",
+  },
+  {
+    url: "/leadership/formation-index.json",
+    listKey: "topics",
+    label: "Deep Formation",
+    buildHref: (slug) => `/leadership/formation/${slug}`,
+    indexHref: "/leadership/formation",
+  },
+];
+
+const LIBRARY_RESULT_CAP = 12;
+
+async function fetchLibrarySource(source: LibrarySource): Promise<LibraryEntry[]> {
+  try {
+    const res = await fetch(source.url);
+    if (!res.ok) return [];
+    const data = await res.json();
+    const list = data?.[source.listKey];
+    if (!Array.isArray(list)) return [];
+    return list
+      .filter((item: any) => item && typeof item.slug === "string" && typeof item.title === "string")
+      .map((item: any) => ({
+        slug: item.slug,
+        title: item.title,
+        blurb: typeof item.blurb === "string" ? item.blurb : "",
+        facet:
+          typeof item.group === "string"
+            ? item.group
+            : typeof item.pillar === "string"
+              ? item.pillar
+              : "",
+        sourceLabel: source.label,
+        href: source.buildHref(item.slug),
+        indexHref: source.indexHref,
+      }));
+  } catch {
+    // Graceful per-manifest failure: a missing or malformed manifest
+    // should never break essay search.
+    return [];
+  }
+}
+
 export default function SearchPage() {
   const [location, navigate] = useLocation();
   const [query, setQuery] = useState("");
   const [searchType, setSearchType] = useState<"all" | "articles" | "resources">("all");
+
+  // Library manifests: fetched once on mount, filtered client-side per query
+  const [libraryEntries, setLibraryEntries] = useState<LibraryEntry[]>([]);
+  const [libraryLoaded, setLibraryLoaded] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    Promise.all(LIBRARY_SOURCES.map(fetchLibrarySource)).then((lists) => {
+      if (cancelled) return;
+      setLibraryEntries(lists.flat());
+      setLibraryLoaded(true);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const libraryMatches = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (q.length === 0) return [];
+    return libraryEntries.filter((entry) =>
+      `${entry.title} ${entry.blurb} ${entry.facet}`.toLowerCase().includes(q)
+    );
+  }, [libraryEntries, query]);
+
+  const visibleLibraryMatches = libraryMatches.slice(0, LIBRARY_RESULT_CAP);
+  const truncatedLibraries = useMemo(() => {
+    if (libraryMatches.length <= LIBRARY_RESULT_CAP) return [];
+    const visible = new Set(visibleLibraryMatches);
+    const hidden = libraryMatches.filter((entry) => !visible.has(entry));
+    const seen = new Map<string, LibraryEntry>();
+    for (const entry of hidden) {
+      if (!seen.has(entry.indexHref)) seen.set(entry.indexHref, entry);
+    }
+    return Array.from(seen.values());
+  }, [libraryMatches, visibleLibraryMatches]);
 
   // Get search results based on type
   const allResults = trpc.search.global.useQuery(
@@ -139,16 +259,87 @@ export default function SearchPage() {
             <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
               <p className="text-lg">Enter a search term to get started</p>
             </div>
-          ) : isLoading ? (
-            <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
-              <p className="text-lg">Searching...</p>
-            </div>
-          ) : results.length === 0 ? (
-            <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
-              <p className="text-lg">No results found for "{query}"</p>
-              <p className="text-sm mt-2">Try different keywords or browse our content</p>
-            </div>
           ) : (
+            <>
+              {/* Library results from the static JSON manifests */}
+              {visibleLibraryMatches.length > 0 && (
+                <div className="mb-12">
+                  <p
+                    className="font-ui text-xs font-medium uppercase mb-6"
+                    style={{ color: "var(--gold)", letterSpacing: "0.18em" }}
+                  >
+                    From the libraries
+                  </p>
+                  <div className="space-y-4">
+                    {visibleLibraryMatches.map((entry) => (
+                      <Link
+                        key={`library-${entry.sourceLabel}-${entry.slug}`}
+                        href={entry.href}
+                        className="block p-4 border rounded-lg hover:shadow-md transition-shadow"
+                        style={{
+                          borderColor: "rgba(244,241,234,0.7)",
+                          backgroundColor: "var(--bone)",
+                        }}
+                      >
+                        <p
+                          className="text-xs font-ui mb-2 uppercase tracking-wider"
+                          style={{ color: "var(--gold)" }}
+                        >
+                          {entry.sourceLabel}
+                        </p>
+                        <h3
+                          className="font-display font-bold mb-2"
+                          style={{ color: "var(--ink)" }}
+                        >
+                          {entry.title}
+                        </h3>
+                        {entry.blurb && (
+                          <p
+                            className="text-sm line-clamp-2"
+                            style={{ color: "var(--ink-muted)" }}
+                          >
+                            {entry.blurb}
+                          </p>
+                        )}
+                      </Link>
+                    ))}
+                  </div>
+                  {truncatedLibraries.length > 0 && (
+                    <div className="mt-4 space-y-1">
+                      {truncatedLibraries.map((entry) => (
+                        <p key={`see-all-${entry.indexHref}`} className="text-sm">
+                          <Link
+                            href={entry.indexHref}
+                            className="font-ui font-medium hover:opacity-70 transition-opacity"
+                            style={{ color: "var(--gold)" }}
+                          >
+                            See all in {entry.sourceLabel} →
+                          </Link>
+                        </p>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {isLoading ? (
+                <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
+                  <p className="text-lg">Searching...</p>
+                </div>
+              ) : results.length === 0 ? (
+                visibleLibraryMatches.length === 0 ? (
+                  <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
+                    {libraryLoaded ? (
+                      <>
+                        <p className="text-lg">No results found for "{query}"</p>
+                        <p className="text-sm mt-2">Try different keywords or browse our content</p>
+                      </>
+                    ) : (
+                      <p className="text-lg">Searching...</p>
+                    )}
+                  </div>
+                ) : null
+              ) : (
             <div>
               <p className="text-sm font-ui mb-6" style={{ color: "var(--ink-muted)" }}>
                 Found {results.length} result{results.length !== 1 ? "s" : ""}
@@ -196,6 +387,8 @@ export default function SearchPage() {
                 ))}
               </div>
             </div>
+              )}
+            </>
           )}
         </div>
       </div>
