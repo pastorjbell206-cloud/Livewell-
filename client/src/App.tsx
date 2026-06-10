@@ -100,6 +100,9 @@ const BeforeYouPost = lazy(() => import("./pages/leadership/BeforeYouPost"));
 const GovernanceLibrary = lazy(() => import("./pages/leadership/GovernanceLibrary"));
 const LeadershipLibrary = lazy(() => import("./pages/leadership/LeadershipLibrary"));
 const SermonSeries = lazy(() => import("./pages/leadership/SermonSeries"));
+const FormationIndex = lazy(() => import("./pages/leadership/FormationIndex"));
+const FormationTopic = lazy(() => import("./pages/leadership/FormationTopic"));
+const FormationInventory = lazy(() => import("./pages/leadership/FormationInventory"));
 const PropheticLament = lazy(() => import("./pages/prophetic/PropheticLament"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
@@ -236,6 +239,9 @@ function Router() {
         <Route path="/leadership/decision-log"><DecisionLog /></Route>
         <Route path="/leadership/before-you-post"><BeforeYouPost /></Route>
         <Route path="/leadership/article/:slug"><LeadershipArticle /></Route>
+        <Route path="/leadership/formation/:slug" component={FormationTopic} />
+        <Route path="/leadership/formation" component={FormationIndex} />
+        <Route path="/leadership/inventory" component={FormationInventory} />
         <Route path="/leadership"><LeadershipHub /></Route>
         <Route path="/justice/topic/:slug"><PropheticTopic config={JUSTICE} /></Route>
         <Route path="/justice"><PropheticHub config={JUSTICE} /></Route>

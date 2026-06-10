@@ -51,6 +51,8 @@ const STATIC_PAGES = [
   { url: "/leadership", priority: "0.85", changefreq: "weekly" },
   { url: "/leadership/library", priority: "0.85", changefreq: "weekly" },
   { url: "/leadership/sermon-series", priority: "0.8", changefreq: "monthly" },
+  { url: "/leadership/formation", priority: "0.85", changefreq: "weekly" },
+  { url: "/leadership/inventory", priority: "0.8", changefreq: "monthly" },
   { url: "/resources/context", priority: "0.9", changefreq: "weekly" },
   { url: "/discipleship", priority: "0.85", changefreq: "monthly" },
   { url: "/family", priority: "0.75", changefreq: "monthly" },
@@ -78,6 +80,7 @@ function manifestPages() {
   const sources = [
     { file: "client/public/leadership/articles-index.json", key: "articles", prefix: "/leadership/article/" },
     { file: "client/public/context/guides-index.json", key: "guides", prefix: "/resources/context/" },
+    { file: "client/public/leadership/formation-index.json", key: "topics", prefix: "/leadership/formation/" },
   ];
   for (const s of sources) {
     try {
