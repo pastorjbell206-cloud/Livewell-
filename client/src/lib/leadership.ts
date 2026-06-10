@@ -98,6 +98,18 @@ export const LEADERSHIP_TOOLS: ToolLink[] = [
   { href: "/leadership/assessment/burnout", kicker: "Assessment", title: "The Burnout Check", blurb: "An honest read on where you are on the road to burnout, and what the warning lights are actually telling you." },
   { href: "/leadership/assessment/revitalization", kicker: "Assessment", title: "The Revitalization Diagnostic", blurb: "A clear-eyed read on the health of a declining church and the honest question of what it would take to turn it." },
   { href: "/leadership/assessment/planting-readiness", kicker: "Assessment", title: "Church Planting Readiness", blurb: "Counting the cost before you plant. A hard look at calling, capacity, support, and the family that goes with you." },
+  { href: "/leadership/survey/church-health", kicker: "Survey", title: "The Church Health Survey", blurb: "An extensive, honest read across the marks of a healthy church, area by area, with feedback on where the work is. For a team to take together." },
+  { href: "/leadership/survey/spiritual-gifts", kicker: "Survey", title: "The Spiritual Gifts Test", blurb: "A thorough inventory across the gifts named in Scripture, pointing you toward where you are wired to serve. The body confirms it in the using." },
+  { href: "/leadership/survey/revitalization", kicker: "Survey", title: "The Revitalization Survey", blurb: "A detailed, dimension-by-dimension diagnosis of a declining church, naming honestly what is alive, what is dying, and what could turn." },
+  { href: "/leadership/workflow/revitalization-plan", kicker: "Planner", title: "The Revitalization Planner", blurb: "A phased, written plan for leading a church back to life, from honest assessment to the first ninety days to the long work of trust." },
+  { href: "/leadership/workflow/premarital", kicker: "Workflow", title: "Premarital Counseling", blurb: "A full multi-session premarital workflow: the questions that surface what a couple has not yet faced, session by session." },
+  { href: "/leadership/workflow/discipleship", kicker: "Planner", title: "The Discipleship Pathway Planner", blurb: "Design the actual path a person walks from first visit to maturity and ministry in your church, stage by stage, with no gaps." },
+  { href: "/leadership/service/wedding", kicker: "Service", title: "The Wedding Service Builder", blurb: "Assemble a wedding service from a library of elements, vows, and charges, each with sample texts to choose and adapt." },
+  { href: "/leadership/service/funeral", kicker: "Service", title: "The Funeral Service Builder", blurb: "Build a funeral or memorial service that tells the truth about death in the presence of hope, element by element." },
+  { href: "/leadership/governance", kicker: "Library", title: "Board Governance and Policy", blurb: "The policies a healthy church needs, each with why it matters and a plain starter template to copy and adapt. Bylaws, finance, safeguarding, and more." },
+  { href: "/leadership/budget", kicker: "Calculator", title: "The Giving and Budget Calculator", blurb: "Allocate a church budget across categories and see the dollars land, with a healthy range on every line. A budget is a theology in numbers." },
+  { href: "/leadership/decision-log", kicker: "Log", title: "The Benevolence and Decision Log", blurb: "A private record of benevolence requests and board decisions, kept entirely on your device. Remember what you decided, and why." },
+  { href: "/leadership/before-you-post", kicker: "Examen", title: "Before You Post", blurb: "A short, searching examen for a leader with his thumb over the share button. Not a content filter. A heart filter." },
 ];
 
 export const ASSESSMENT_SLUGS = [
