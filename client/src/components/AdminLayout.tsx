@@ -33,7 +33,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   const { user, logout } = useAuth();
 
   return (
-    <div className="min-h-screen flex" style={{ backgroundColor: "#F7F5F0" }}>
+    <div className="admin-scope min-h-screen flex" style={{ backgroundColor: "#F7F5F0" }}>
       {/* Sidebar */}
       <aside
         className="w-64 flex-shrink-0 flex flex-col"
