@@ -1,0 +1,81 @@
+{
+  "slug": "whole-life",
+  "title": "Eight Weeks Toward One Undivided Life",
+  "subtitle": "An eight week plan from James Bell toward one undivided life. Prayer, rest, friendship, work, money, church, and justice gathered into a rule you can keep.",
+  "intro": "This is an eight week walk for the person who is not in crisis but knows the life they are living is divided, faith in one room, work in another, money in a locked drawer, the body ignored entirely. Each week holds one focus, one small daily practice, one thing to read, one tool to use, and one honest question. The aim is integration, one life lived in one direction under one Lord, instead of six lives competing for the same person.\n\nIt is not a cure for anything, and it is not a substitute for a pastor, a counselor, a doctor, or the community that knows you. Walk it imperfectly. A missed week is not failure, you just pick it back up where you stopped. This is not a scorecard, and you are not behind. Grace does not keep score, which is the only reason any of us can start.",
+  "careNote": "",
+  "weeks": [
+    {
+      "n": 1,
+      "focus": "The honest look",
+      "why": "Every real change begins with an accurate map. Most of us have never once looked at the whole of our life in one sitting, the prayer, the body, the friendships, the money, the work, side by side. This week you take the honest inventory, not to grade yourself, but to see what is actually there.",
+      "practice": "Each day, write down one true sentence about one area of your life, prayer, body, friendship, work, money, church, one area per day. No commentary, no plans yet. Just the truth.",
+      "read": { "label": "The Integrated Life, on why the divided life does not work", "href": "/life" },
+      "tool": { "label": "The Whole Life Assessment, take it once and keep the results for week eight", "href": "/life/assessment" },
+      "reflection": "Which part of my life have I been keeping out of view, and what am I afraid an honest look would require of me?"
+    },
+    {
+      "n": 2,
+      "focus": "The inner life",
+      "why": "Everything else in this plan draws from this well. A prayer life is not a performance for God, it is the daily turning of your attention toward the One who was already attending to you. We start here because a life integrates around whatever sits at its center, and something always sits there.",
+      "practice": "Ten minutes of unhurried prayer each day, and let half of it be silence. No agenda, no list to get through. Show God the day and let him look at it with you.",
+      "read": { "label": "The Lament page, because honest prayer includes the parts you usually edit out", "href": "/lament" },
+      "tool": { "label": "The Prayer Generator, for the days the well feels dry", "href": "/tools/prayer-generator" },
+      "reflection": "What actually sits at the center of my attention most days, and what would it take for prayer to move toward that place?"
+    },
+    {
+      "n": 3,
+      "focus": "The body and rest",
+      "why": "You do not have a soul that happens to carry a body. You are one creature, and a neglected body quietly taxes everything else, the prayer, the patience, the marriage, the work. Rest is not a reward for the productive. It is a command for the loved.",
+      "practice": "Each day, keep a set bedtime and take a ten minute walk outside. Two appointments with your own creatureliness. Keep them like you would keep them for someone you love.",
+      "read": { "label": "The Body and the Rhythms, on sleep, movement, and sabbath", "href": "/life/the-body-and-the-rhythms" },
+      "tool": { "label": "The Life Audit, see where your actual hours are going", "href": "/tools/life-audit" },
+      "reflection": "What does my treatment of my body say I believe about where life comes from?"
+    },
+    {
+      "n": 4,
+      "focus": "Friendship and the table",
+      "why": "We were not made to be known by no one. Modern life makes isolation the default, and the default must be resisted on purpose. Friendship is not a luxury for people with spare time. It is load bearing, and most of us are carrying weight that was meant to be shared.",
+      "practice": "Each day, make one small move toward one friend, a message, a call, an invitation to a table. Small and real beats grand and imagined. By the end of the week, share one meal with someone.",
+      "read": { "label": "Friendship Against Isolation, on the slow work of being known", "href": "/life/friendship-against-isolation" },
+      "tool": { "label": "The Emotional Health tool, to see what you tend to hide from the people closest to you", "href": "/tools/emotional-health" },
+      "reflection": "Who actually knows me, not my schedule but me, and when did I last let that number grow?"
+    },
+    {
+      "n": 5,
+      "focus": "Work and money",
+      "why": "Work and money are where most of our waking hours and most of our hidden worship go. They are not secular zones outside the spiritual life. They are the spiritual life, in its most measurable form. What you do with a Tuesday and a dollar tells the truth about what you trust.",
+      "practice": "At the end of each workday, name one way your work served an actual person. Then, once this week, look at a month of your spending and write down what it says you love.",
+      "read": { "label": "Money and the Heart, on what the account statement confesses", "href": "/life/money-and-the-heart" },
+      "tool": { "label": "The Financial Health tool, an honest look at the numbers without shame", "href": "/tools/financial-health" },
+      "reflection": "If a stranger read my calendar and my bank statement, what would they say I worship?"
+    },
+    {
+      "n": 6,
+      "focus": "The local church",
+      "why": "An undivided life cannot be assembled alone, and it was never meant to be. The local church, with all its ordinary frustrations, is where formation actually happens, among people you did not choose and cannot curate. Belonging somewhere specific is part of the integration, not an accessory to it.",
+      "practice": "Each day, pray for your church by name, its pastor, and one person in it. If you do not have a church, pray for the one you will visit this month, and pick the Sunday.",
+      "read": { "label": "The Discipleship page, on why nobody is formed in private", "href": "/discipleship" },
+      "tool": { "label": "The Church Health tool, think clearly about the congregation you belong to", "href": "/tools/church-health" },
+      "reflection": "What have I been expecting the church to give me, and what have I actually been willing to give it?"
+    },
+    {
+      "n": 7,
+      "focus": "Serving and justice",
+      "why": "A life integrated only around its own flourishing has merely built a nicer prison. The prophets will not allow a spirituality that ends at our own front door. Somewhere near you is a person carrying more than they can lift, and your one undivided life is partly for them.",
+      "practice": "Each day, notice one person you would normally walk past, and do one small thing, a word, a meal, an errand, a name learned. Do it quietly. Tell no one.",
+      "read": { "label": "The Justice pages, on what the Lord requires", "href": "/justice" },
+      "tool": { "label": "The Verse Finder, search what Scripture says about justice and mercy", "href": "/tools/verse-finder" },
+      "reflection": "Whose burden have I trained myself not to see, and what would it cost me to see it?"
+    },
+    {
+      "n": 8,
+      "focus": "A rule of life",
+      "why": "Eight weeks of practices are scaffolding. A rule of life is the building, a few chosen commitments, small enough to keep on your worst week, that hold a life in one direction for years. The saints were not stronger than you. They were more decided, and they decided in advance.",
+      "practice": "Write your rule on one card, two or three practices from these weeks that proved true, with when and where you will do them. Do them each day. Show the card to one person who will ask you about it.",
+      "read": { "label": "Return to the Discipleship page and read it as a charter for the next year", "href": "/discipleship" },
+      "tool": { "label": "Retake the Whole Life Assessment and set it beside week one", "href": "/life/assessment" },
+      "reflection": "A year from now, what few practices do I want to have kept, and who am I asking to walk them with me?"
+    }
+  ]
+}
