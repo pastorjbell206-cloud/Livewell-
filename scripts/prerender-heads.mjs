@@ -331,6 +331,36 @@ async function main() {
     wrote++;
   }
 
+  // File-driven library pages: read the generated manifests and emit a real
+  // head (title, description, per-page OG image) for each, so the leadership
+  // articles, context guides, life domains, formation topics, creeds, history
+  // essays, and toolkits unfurl and index with their own title and image.
+  const LIBRARY_SOURCES = [
+    { file: "client/public/leadership/articles-index.json", key: "articles", route: "/leadership/article/", ogPrefix: "leadership-article" },
+    { file: "client/public/context/guides-index.json", key: "guides", route: "/resources/context/", ogPrefix: "resources-context" },
+    { file: "client/public/leadership/formation-index.json", key: "topics", route: "/leadership/formation/", ogPrefix: "leadership-formation" },
+    { file: "client/public/life/domains-index.json", key: "domains", route: "/life/", ogPrefix: "life" },
+    { file: "client/public/creeds/documents-index.json", key: "documents", route: "/resources/creeds/", ogPrefix: "resources-creeds" },
+    { file: "client/public/history/essays-index.json", key: "essays", route: "/theology/history/", ogPrefix: "theology-history" },
+  ];
+  for (const src of LIBRARY_SOURCES) {
+    let data;
+    try {
+      data = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, src.file), "utf8"));
+    } catch { continue; }
+    for (const e of data[src.key] || []) {
+      if (!e.slug || !e.title) continue;
+      const url = `${SITE_URL}${src.route}${e.slug}`;
+      const ogRel = `client/public/og/${src.ogPrefix}-${e.slug}.png`;
+      const image = fs.existsSync(path.join(REPO_ROOT, ogRel))
+        ? `${SITE_URL}/og/${src.ogPrefix}-${e.slug}.png`
+        : OG_DEFAULT;
+      const head = buildHead({ title: e.title, description: e.blurb || e.title, url, image, type: "article" });
+      writeRoute(template, { path: `${src.route}${e.slug}` }, head);
+      wrote++;
+    }
+  }
+
   // DB-driven pages
   const conn = await loadDb();
   if (conn) {
