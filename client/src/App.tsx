@@ -48,6 +48,7 @@ const Marriage = lazy(() => import("./pages/Marriage"));
 const Parenting = lazy(() => import("./pages/Parenting"));
 const Doubt = lazy(() => import("./pages/Doubt"));
 const Help = lazy(() => import("./pages/Help"));
+const CarePlan = lazy(() => import("./pages/plans/CarePlan"));
 const StartHereQuiz = lazy(() => import("./pages/StartHereQuiz"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Accessibility = lazy(() => import("./pages/Accessibility"));
@@ -265,6 +266,7 @@ function Router() {
         <Route path="/theology" component={Theology} />
         <Route path="/doubt" component={Doubt} />
         <Route path="/help" component={Help} />
+        <Route path="/plans/:slug" component={CarePlan} />
         <Route path="/start" component={StartHereQuiz} />
         <Route path="/for-families" component={ForFamiliesRedirect} />
         <Route path="/pillars" component={Pillars} />

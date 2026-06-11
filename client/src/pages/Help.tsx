@@ -30,6 +30,7 @@ const NEEDS: Need[] = [
     title: "My marriage is in trouble",
     opener: "Not a tune-up. A marriage that needs more than tips, from someone who refuses to hand you tips.",
     helps: [
+      { href: "/plans/marriage", label: "Do: an eight-week guided plan toward each other", kind: "do" },
       { href: "/marriage", label: "Read: writing on covenant, conflict, and the long middle", kind: "read" },
       { href: "/tools/marriage-assessment", label: "Assess: where your marriage is strong and where it is strained", kind: "assess" },
       { href: "/tools/conflict-guide", label: "Do: a guided path through a real conflict", kind: "do" },
@@ -41,6 +42,7 @@ const NEEDS: Need[] = [
     title: "I am anxious or overwhelmed",
     opener: "The 3am mind. The body that will not settle. This is not a lack of faith, and you are not the only one.",
     helps: [
+      { href: "/plans/anxiety", label: "Do: an eight-week guided plan toward a quieter mind", kind: "do" },
       { href: "/life/the-anxious-mind", label: "Read: faith and the anxious mind, honestly", kind: "read" },
       { href: "/tools/emotional-health", label: "Assess: an honest read on where you are", kind: "assess" },
       { href: "/life/the-body-and-the-rhythms", label: "Do: the body, sleep, and rest as part of the cure", kind: "do" },
@@ -63,6 +65,7 @@ const NEEDS: Need[] = [
     title: "I am grieving a loss",
     opener: "No trite comfort here. Lament is the language faith gives the grieving, and you are allowed to use it.",
     helps: [
+      { href: "/plans/grief", label: "Do: an eight-week companion through loss", kind: "do" },
       { href: "/grief", label: "Read: walking through grief without the cliches", kind: "read" },
       { href: "/life/grief-and-loss", label: "Read: loss faced honestly, and where to find help", kind: "read" },
       { href: "/lament", label: "Do: the practice of lament", kind: "do" },
@@ -106,6 +109,7 @@ const NEEDS: Need[] = [
     title: "I just want to grow, and follow well",
     opener: "Not in crisis. You want the whole of life to come under one Lord, on an ordinary Tuesday. Here is the path.",
     helps: [
+      { href: "/plans/whole-life", label: "Do: an eight-week plan toward one undivided life", kind: "do" },
       { href: "/life/assessment", label: "Assess: the Whole-Life Assessment, with a rule of life", kind: "assess" },
       { href: "/discipleship", label: "Do: the discipleship pathway, new believer to mature", kind: "do" },
       { href: "/life", label: "Read: the Integrated Life hub", kind: "read" },
