@@ -111,6 +111,8 @@ function FileRow({
             <img
               src={file.url}
               alt={file.filename}
+                loading="lazy"
+                decoding="async"
               className="w-full h-full object-cover"
             />
           ) : (

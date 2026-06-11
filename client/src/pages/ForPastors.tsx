@@ -25,7 +25,7 @@ import { NEWSLETTER_PITCH_PASTORAL } from "@/lib/positioning";
 const PASTORAL_TRACK_SLUG = "pastoral-ministry";
 
 export default function ForPastors() {
-  const { data: posts, isLoading } = trpc.posts.listPublished.useQuery();
+  const { data: posts, isLoading } = trpc.posts.listForIndex.useQuery();
 
   // Articles tagged for pastors via canonical taxonomy (track + audience).
   const pastorArticles = useMemo(() => {

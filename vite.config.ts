@@ -144,7 +144,9 @@ export default defineConfig({
         manualChunks: {
           "vendor-react": ["react", "react-dom"],
           "vendor-ui": ["@radix-ui/react-dialog", "@radix-ui/react-dropdown-menu", "@radix-ui/react-tabs", "@radix-ui/react-tooltip", "@radix-ui/react-select"],
-          "vendor-charts": ["recharts"],
+          // recharts intentionally NOT force-chunked: it is unused, and the object
+          // form of manualChunks would otherwise bundle + modulepreload it on every
+          // page. If charts return, lazily import them on the page that needs them.
           "vendor-motion": ["framer-motion"],
         },
       },

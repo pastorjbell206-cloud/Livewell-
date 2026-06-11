@@ -22,7 +22,7 @@ import { pillarToTrack, PRIMARY_TRACKS, trackUrl } from "@/lib/taxonomy";
 const LEADER_TRACK_SLUGS = ["pastoral-ministry", "american-church", "after-christendom"];
 
 export default function ForLeaders() {
-  const { data: posts, isLoading } = trpc.posts.listPublished.useQuery();
+  const { data: posts, isLoading } = trpc.posts.listForIndex.useQuery();
 
   const leaderArticles = useMemo(() => {
     if (!posts) return [];

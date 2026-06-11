@@ -154,8 +154,9 @@ export default function BooksStore() {
                         <img
                           src={book.coverImage}
                           alt={book.title}
-                          className="w-full h-full object-cover"
                           loading="lazy"
+                          decoding="async"
+                          className="w-full h-full object-cover"
                         />
                       </div>
                     )}
@@ -234,8 +235,9 @@ export default function BooksStore() {
                         <img
                           src={book.coverImage}
                           alt={book.title}
-                          className="w-full h-full object-cover"
                           loading="lazy"
+                          decoding="async"
+                          className="w-full h-full object-cover"
                         />
                       </div>
                     )}

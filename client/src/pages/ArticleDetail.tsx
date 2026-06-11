@@ -10,7 +10,8 @@
  */
 import { useEffect, useMemo, useState } from "react";
 import { useLocation, useParams } from "wouter";
-import { Streamdown } from "streamdown";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { ArrowLeft, Bookmark, Clock, Share2, User } from "lucide-react";
 
 import Layout from "@/components/Layout";
@@ -145,7 +146,11 @@ export default function ArticleDetail() {
   const post = postQuery.data ?? null;
   // Related essays grouped by the NEW pillar taxonomy, resolved client-side
   // from the slim index so it tracks pillarForPost without a backend change.
-  const indexQuery = trpc.posts.listForIndex.useQuery();
+  // Deferred: only fetch the index once the article itself has loaded, so the
+  // related-posts request never competes with the article on the critical path.
+  const indexQuery = trpc.posts.listForIndex.useQuery(undefined, {
+    enabled: Boolean(post),
+  });
   const related = useMemo(() => {
     if (!post) return [];
     const myPillar = pillarForPost(post);
@@ -377,6 +382,7 @@ export default function ArticleDetail() {
               <img
                 src={post.coverImage}
                 alt={post.title}
+                decoding="async"
                 width={1200}
                 height={630}
                 loading="eager"
@@ -408,7 +414,9 @@ export default function ArticleDetail() {
             }}
           >
             {post.body ? (
-                                                        <Streamdown>{post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}</Streamdown>
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}
+              </ReactMarkdown>
             ) : (
               <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
                 This article is in preparation.

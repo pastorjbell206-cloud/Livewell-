@@ -140,7 +140,7 @@ export function useFeaturedArticles(type: "trending" | "editors-picks" | "featur
 
   // "trending" and "editors-picks" both source from published posts;
   // we differentiate client-side until dedicated endpoints exist.
-  const listQuery = trpc.posts.listPublished.useQuery(undefined, {
+  const listQuery = trpc.posts.listForIndex.useQuery(undefined, {
     enabled: type !== "featured",
   });
 

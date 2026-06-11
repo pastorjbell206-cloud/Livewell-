@@ -75,6 +75,8 @@ export function TestimonialsCarousel() {
               <img
                 src={current.imageUrl}
                 alt={current.authorName}
+                loading="lazy"
+                decoding="async"
                 className="w-12 h-12 rounded-full object-cover"
               />
             )}
