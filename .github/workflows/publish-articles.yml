@@ -47,7 +47,7 @@ jobs:
           node scripts/publish-full-content.mjs $ARGS
       - name: Save rollback file (download it from this run if you need to undo)
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: rollback-backup
           path: scripts/.publish-backup-*.json
