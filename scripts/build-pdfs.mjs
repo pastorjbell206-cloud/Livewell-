@@ -26,6 +26,8 @@ const GUIDES_DIR = path.join(ROOT, "client/public/context/guides");
 const SERIES_FILE = path.join(ROOT, "client/public/leadership/sermon-series.json");
 const OUT_CONTEXT = path.join(ROOT, "client/public/downloads/context");
 const OUT_SERIES = path.join(ROOT, "client/public/downloads/sermon-series");
+const STUDYGUIDES_DIR = path.join(ROOT, "client/public/studyguides");
+const OUT_STUDYGUIDES = path.join(ROOT, "client/public/downloads/studyguides");
 
 // Palette (print-safe subset of the brand tokens)
 const INK = "#14110C";
@@ -35,12 +37,20 @@ const RULE = "#C9C2B4";
 
 const MARGIN = 72;
 
+// Fixed timestamp so identical content yields byte-identical PDFs. Without
+// this, pdfkit stamps the current time into every file and every build dirties
+// the whole downloads/ tree even when nothing changed.
+const FIXED_DATE = new Date("2026-01-01T00:00:00Z");
+
 function newDoc(meta) {
   return new PDFDocument({
     size: "LETTER",
     margins: { top: MARGIN, bottom: MARGIN, left: MARGIN, right: MARGIN },
     bufferPages: true,
-    info: { Title: meta.title, Author: "James Bell", Creator: "LiveWell by James Bell" },
+    info: {
+      Title: meta.title, Author: "James Bell", Creator: "LiveWell by James Bell",
+      CreationDate: FIXED_DATE, ModDate: FIXED_DATE,
+    },
   });
 }
 
@@ -129,6 +139,90 @@ function notesLines(doc, count) {
   }
   doc.restore();
   doc.y = y - lineHeight + 6;
+}
+
+/** A short label run followed by body text on the next line. */
+function labelBody(doc, label, text) {
+  ensureRoom(doc, 56);
+  kickerLine(doc, label);
+  doc.moveDown(0.35);
+  doc.font("Times-Roman").fontSize(11).fillColor(INK).text(text, { lineGap: 3.5 });
+  doc.moveDown(0.7);
+}
+
+// ---------------------------------------------------------------------------
+// Study-guide toolkits: a Leader's Guide and a Participant Handout per series
+// ---------------------------------------------------------------------------
+
+async function buildStudyGuideLeader(g) {
+  const outPath = path.join(OUT_STUDYGUIDES, `${g.slug}-leader.pdf`);
+  await writePdf(outPath, (doc) => {
+    titleBlock(doc, { kicker: "Leader's Guide", title: g.title, subtitle: g.audience + ". " + g.sessionsLabel + "." });
+    doc.moveDown(1);
+    bodyParagraphs(doc, g.summary);
+
+    for (const s of g.sessions) {
+      doc.addPage();
+      sectionHeading(doc, { kicker: "Session " + s.n, title: s.title });
+      labelBody(doc, "Aim", s.aim);
+      labelBody(doc, "Timing", s.timing.map((t) => t.segment + " " + t.minutes + " min").join("   "));
+      labelBody(doc, "Key Scripture", s.keyScripture.ref + ". " + s.keyScripture.why);
+      listHeading(doc, "Discussion");
+      s.discussion.forEach((d, i) => {
+        ensureRoom(doc, 70);
+        doc.font("Times-Bold").fontSize(11).fillColor(INK).text((i + 1) + ". " + d.q, { lineGap: 3 });
+        doc.font("Times-Italic").fontSize(10).fillColor(MUTED).text("Behind it: " + d.behind, { lineGap: 3, indent: 14 });
+        doc.moveDown(0.5);
+      });
+      labelBody(doc, "If the room goes quiet", s.quietRoomQuestion);
+      listHeading(doc, "Anticipated objections");
+      s.objections.forEach((o) => {
+        ensureRoom(doc, 64);
+        doc.font("Times-Bold").fontSize(11).fillColor(INK).text("'" + o.objection + "'", { lineGap: 3 });
+        doc.font("Times-Roman").fontSize(11).fillColor(INK).text(o.response, { lineGap: 3 });
+        doc.moveDown(0.5);
+      });
+      labelBody(doc, "Closing prayer", s.closingPrayer);
+    }
+
+    doc.addPage();
+    sectionHeading(doc, { kicker: "Reference", title: "Three ways to run it" });
+    for (const c of g.cadences) {
+      listHeading(doc, c.name);
+      c.plan.forEach((p) => doc.font("Times-Roman").fontSize(11).fillColor(INK).text(p, { lineGap: 3 }));
+      doc.moveDown(0.6);
+    }
+    sectionHeading(doc, { kicker: "Reference", title: "Bibliography" });
+    g.bibliography.forEach((b) => {
+      ensureRoom(doc, 40);
+      doc.font("Times-Italic").fontSize(11).fillColor(INK).text(b.title, { continued: true })
+        .font("Times-Roman").text(", " + b.author + ". ", { continued: true })
+        .fillColor(MUTED).text(b.note);
+      doc.moveDown(0.4);
+    });
+  }, { title: g.title + " — Leader's Guide" });
+  return outPath;
+}
+
+async function buildStudyGuideParticipant(g) {
+  const outPath = path.join(OUT_STUDYGUIDES, `${g.slug}-participant.pdf`);
+  await writePdf(outPath, (doc) => {
+    titleBlock(doc, { kicker: "Participant Handout", title: g.title, subtitle: g.audience + "." });
+    for (const s of g.sessions) {
+      doc.addPage();
+      sectionHeading(doc, { kicker: "Session " + s.n, title: s.title });
+      bodyParagraphs(doc, s.summary);
+      labelBody(doc, "Key Scripture", s.keyScripture.ref);
+      listHeading(doc, "Reflect");
+      s.reflection.forEach((r, i) => {
+        doc.font("Times-Roman").fontSize(11).fillColor(INK).text((i + 1) + ". " + r, { lineGap: 3 });
+        notesLines(doc, 2);
+        doc.moveDown(0.3);
+      });
+      labelBody(doc, "This week, try this", s.practice);
+    }
+  }, { title: g.title + " — Participant Handout" });
+  return outPath;
 }
 
 /** Footer on every page: domain centered, page number beneath it. */
@@ -281,8 +375,18 @@ async function buildSermonSeries(series, intro) {
 async function main() {
   fs.mkdirSync(OUT_CONTEXT, { recursive: true });
   fs.mkdirSync(OUT_SERIES, { recursive: true });
+  fs.mkdirSync(OUT_STUDYGUIDES, { recursive: true });
 
   const written = [];
+
+  if (fs.existsSync(STUDYGUIDES_DIR)) {
+    const sgFiles = fs.readdirSync(STUDYGUIDES_DIR).filter((f) => f.endsWith(".json")).sort();
+    for (const file of sgFiles) {
+      const g = JSON.parse(fs.readFileSync(path.join(STUDYGUIDES_DIR, file), "utf8"));
+      written.push(await buildStudyGuideLeader(g));
+      written.push(await buildStudyGuideParticipant(g));
+    }
+  }
 
   const guideFiles = fs.readdirSync(GUIDES_DIR).filter((f) => f.endsWith(".json")).sort();
   for (const file of guideFiles) {
