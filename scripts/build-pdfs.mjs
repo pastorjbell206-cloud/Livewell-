@@ -161,12 +161,28 @@ async function buildStudyGuideLeader(g) {
     doc.moveDown(1);
     bodyParagraphs(doc, g.summary);
 
+    if (g.leaderPrimer) {
+      doc.addPage();
+      sectionHeading(doc, { kicker: "Before you begin", title: "Leader training primer" });
+      bodyParagraphs(doc, g.leaderPrimer);
+    }
+
     for (const s of g.sessions) {
       doc.addPage();
       sectionHeading(doc, { kicker: "Session " + s.n, title: s.title });
       labelBody(doc, "Aim", s.aim);
       labelBody(doc, "Timing", s.timing.map((t) => t.segment + " " + t.minutes + " min").join("   "));
+      if (s.teaching) { listHeading(doc, "Teaching notes"); bodyParagraphs(doc, s.teaching); }
       labelBody(doc, "Key Scripture", s.keyScripture.ref + ". " + s.keyScripture.why);
+      if (s.scriptureStudy?.length) {
+        listHeading(doc, "The passage, worked through");
+        s.scriptureStudy.forEach((v) => {
+          ensureRoom(doc, 46);
+          doc.font("Times-Bold").fontSize(11).fillColor(INK).text(v.ref + ". ", { continued: true })
+            .font("Times-Roman").text(v.note, { lineGap: 3 });
+          doc.moveDown(0.4);
+        });
+      }
       listHeading(doc, "Discussion");
       s.discussion.forEach((d, i) => {
         ensureRoom(doc, 70);
@@ -182,7 +198,21 @@ async function buildStudyGuideLeader(g) {
         doc.font("Times-Roman").fontSize(11).fillColor(INK).text(o.response, { lineGap: 3 });
         doc.moveDown(0.5);
       });
+      if (s.caseStudy) { listHeading(doc, "A scenario for the room"); bodyParagraphs(doc, s.caseStudy); }
+      if (s.goingDeeper) { listHeading(doc, "Going deeper"); bodyParagraphs(doc, s.goingDeeper); }
+      if (s.memoryVerse) labelBody(doc, "Memory verse", s.memoryVerse);
       labelBody(doc, "Closing prayer", s.closingPrayer);
+    }
+
+    if (g.faq?.length) {
+      doc.addPage();
+      sectionHeading(doc, { kicker: "Reference", title: "Hard questions" });
+      g.faq.forEach((f) => {
+        ensureRoom(doc, 70);
+        doc.font("Times-Bold").fontSize(11).fillColor(INK).text(f.q, { lineGap: 3 });
+        doc.font("Times-Roman").fontSize(11).fillColor(INK).text(f.a, { lineGap: 3 });
+        doc.moveDown(0.6);
+      });
     }
 
     doc.addPage();
@@ -213,6 +243,7 @@ async function buildStudyGuideParticipant(g) {
       sectionHeading(doc, { kicker: "Session " + s.n, title: s.title });
       bodyParagraphs(doc, s.summary);
       labelBody(doc, "Key Scripture", s.keyScripture.ref);
+      if (s.memoryVerse) labelBody(doc, "Memory verse", s.memoryVerse);
       listHeading(doc, "Reflect");
       s.reflection.forEach((r, i) => {
         doc.font("Times-Roman").fontSize(11).fillColor(INK).text((i + 1) + ". " + r, { lineGap: 3 });
@@ -220,6 +251,22 @@ async function buildStudyGuideParticipant(g) {
         doc.moveDown(0.3);
       });
       labelBody(doc, "This week, try this", s.practice);
+
+      // The five-day devotional for the week between sessions.
+      if (s.devotional?.length) {
+        doc.addPage();
+        sectionHeading(doc, { kicker: "Session " + s.n + " · the week between", title: "Five days in the text" });
+        s.devotional.forEach((d) => {
+          ensureRoom(doc, 120);
+          kickerLine(doc, "Day " + d.day + " · " + d.passage);
+          doc.moveDown(0.3);
+          doc.font("Times-Bold").fontSize(13).fillColor(INK).text(d.title);
+          doc.moveDown(0.3);
+          bodyParagraphs(doc, d.body);
+          doc.font("Times-Italic").fontSize(10.5).fillColor(MUTED).text(d.prayer, { lineGap: 3 });
+          doc.moveDown(0.8);
+        });
+      }
     }
   }, { title: g.title + " — Participant Handout" });
   return outPath;

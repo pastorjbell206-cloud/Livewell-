@@ -15,7 +15,7 @@ import { ArrowLeft, Bookmark, Clock, Share2, User } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import ReadingProgressBar from "@/components/ReadingProgressBar";
-import { SEOMeta, getArticleSchema } from "@/components/SEOMeta";
+import { SEOMeta, getArticleSchema, getBreadcrumbSchema } from "@/components/SEOMeta";
 import { AuthorBio } from "@/components/AuthorBio";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { CitationCopy } from "@/components/CitationCopy";
@@ -24,7 +24,7 @@ import { AudienceLabel } from "@/components/AudienceLabel";
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
 import { pillarForPost } from "@/lib/taxonomy";
-import { articleUrl, OG_DEFAULT_IMAGE } from "@/lib/site";
+import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
 
 function ShareButton({ title, url }: { title: string; url: string }) {
   const [copied, setCopied] = useState(false);
@@ -219,14 +219,21 @@ export default function ArticleDetail() {
         author="James Bell"
         publishedDate={publishedIso}
         modifiedDate={String(post.updatedAt || publishedIso)}
-        structuredData={getArticleSchema(
-          post.title,
-          description,
-          publishedIso,
-          String(post.updatedAt || publishedIso),
-          ogImage,
-          canonical
-        )}
+        structuredData={[
+          getArticleSchema(
+            post.title,
+            description,
+            publishedIso,
+            String(post.updatedAt || publishedIso),
+            ogImage,
+            canonical
+          ),
+          getBreadcrumbSchema([
+            { name: "Home", url: SITE_URL },
+            { name: "Writing", url: `${SITE_URL}/writing` },
+            { name: post.title, url: canonical },
+          ]),
+        ]}
       />
       <article>
         {/* BACK BUTTON */}

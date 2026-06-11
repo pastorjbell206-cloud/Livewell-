@@ -14,6 +14,7 @@ import GatedDownload from "@/components/GatedDownload";
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const prose = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
 
+interface DevoDay { day: number; title: string; passage: string; body: string; prayer: string }
 interface Session {
   n: number; essaySlug: string; title: string; aim: string; summary: string;
   keyScripture: { ref: string; why: string };
@@ -21,6 +22,13 @@ interface Session {
   discussion: { q: string; behind: string }[];
   objections: { objection: string; response: string }[];
   quietRoomQuestion: string; practice: string; closingPrayer: string; reflection: string[];
+  // Optional depth layer (book-length editions)
+  teaching?: string;
+  scriptureStudy?: { ref: string; note: string }[];
+  goingDeeper?: string;
+  caseStudy?: string;
+  memoryVerse?: string;
+  devotional?: DevoDay[];
 }
 interface Guide {
   slug: string; title: string; subtitle: string; summary: string;
@@ -31,11 +39,15 @@ interface Guide {
   furtherReading: string[];
   glossary: { term: string; definition: string }[];
   scriptureIndex: { ref: string; sessions: number[] }[];
-  promoKit: { bulletinBlurb: string; pulpitAnnouncement: string; inviteCaption: string };
+  promoKit: { bulletinBlurb: string; pulpitAnnouncement: string; inviteCaption: string; quoteCards?: string[] };
+  // Optional depth layer
+  leaderPrimer?: string;
+  faq?: { q: string; a: string }[];
+  timeline?: { date: string; event: string }[];
 }
 
-const TABS = ["Leader", "Participant", "Facilitator", "Reference", "Promo"] as const;
-type Tab = typeof TABS[number];
+const ALL_TABS = ["Leader", "Participant", "Devotional", "Facilitator", "Reference", "Promo"] as const;
+type Tab = typeof ALL_TABS[number];
 
 const card = { background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", marginBottom: "var(--s-3)" } as const;
 const h3 = { fontFamily: "var(--F)", fontSize: "22px", fontWeight: 400, color: "var(--ink)", marginBottom: "10px" } as const;
@@ -59,6 +71,10 @@ export default function StudyGuide() {
   }, [slug]);
 
   const source = useMemo(() => `toolkit:${slug}`, [slug]);
+  const hasDevotional = !!data?.sessions.some((s) => s.devotional && s.devotional.length > 0);
+  const tabs = useMemo(() => ALL_TABS.filter((t) => t !== "Devotional" || hasDevotional), [hasDevotional]);
+  const para = (text: string, st: React.CSSProperties = {}) =>
+    text.split("\n\n").map((p, i) => <p key={i} style={{ ...body, marginBottom: "12px", maxWidth: "68ch", ...st }}>{p}</p>);
 
   return (
     <Layout>
@@ -86,10 +102,10 @@ export default function StudyGuide() {
             <div style={wrap}>
               <p style={{ ...body, maxWidth: "68ch", marginBottom: "var(--s-3)" }}>{data.summary}</p>
               <div role="tablist" aria-label="Toolkit sections" style={{ display: "flex", gap: "6px", flexWrap: "wrap", borderBottom: "1px solid rgba(20,17,12,0.12)" }}>
-                {TABS.map((t) => (
+                {tabs.map((t) => (
                   <button key={t} role="tab" aria-selected={tab === t} onClick={() => setTab(t)}
                     style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, padding: "10px 14px", minHeight: "44px", cursor: "pointer", border: "none", background: "none", color: tab === t ? "var(--ink)" : "var(--ink-muted)", borderBottom: tab === t ? "2px solid var(--mustard)" : "2px solid transparent" }}>
-                    {t === "Leader" ? "Leader's Guide" : t === "Participant" ? "Participant Handout" : t === "Facilitator" ? "Facilitator Script" : t}
+                    {t === "Leader" ? "Leader's Guide" : t === "Participant" ? "Participant Handout" : t === "Facilitator" ? "Facilitator Script" : t === "Devotional" ? "Daily Devotional" : t}
                   </button>
                 ))}
               </div>
@@ -98,14 +114,29 @@ export default function StudyGuide() {
 
           <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-6)" }}>
             <div style={wrap}>
+              {tab === "Leader" && data.leaderPrimer && (
+                <div style={{ ...card, borderTop: "2px solid var(--charcoal)" }}>
+                  <div style={lbl}>Before you begin · Leader training primer</div>
+                  {para(data.leaderPrimer)}
+                </div>
+              )}
               {tab === "Leader" && data.sessions.map((s) => (
                 <div key={s.n} style={card}>
                   <div style={lbl}>Session {s.n} · {s.timing.map((t) => `${t.segment} ${t.minutes}m`).join(" · ")}</div>
                   <h3 style={h3}>{s.title}</h3>
                   <p style={{ ...body, fontStyle: "italic", marginBottom: "12px" }}>Aim: {s.aim}</p>
                   <Link href={`/writing/${s.essaySlug}`} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)" }}>Read the essay for this session →</Link>
+                  {s.teaching && (<><div style={{ ...lbl, marginTop: "16px" }}>Teaching notes</div>{para(s.teaching)}</>)}
                   <div style={{ ...lbl, marginTop: "16px" }}>Key Scripture</div>
                   <p style={body}>{s.keyScripture.ref} — {s.keyScripture.why}</p>
+                  {s.scriptureStudy && s.scriptureStudy.length > 0 && (
+                    <>
+                      <div style={{ ...lbl, marginTop: "16px" }}>The passage, worked through</div>
+                      {s.scriptureStudy.map((v, i) => (
+                        <p key={i} style={{ ...body, marginBottom: "8px" }}><span style={{ fontWeight: 600 }}>{v.ref}.</span> {v.note}</p>
+                      ))}
+                    </>
+                  )}
                   <div style={{ ...lbl, marginTop: "16px" }}>Discussion</div>
                   {s.discussion.map((d, i) => (
                     <div key={i} style={{ marginBottom: "12px" }}>
@@ -122,7 +153,15 @@ export default function StudyGuide() {
                       <p style={{ ...body, color: "var(--ink-muted)" }}>{o.response}</p>
                     </div>
                   ))}
-                  <div style={{ ...lbl, marginTop: "8px" }}>Closing prayer</div>
+                  {s.caseStudy && (<><div style={{ ...lbl, marginTop: "16px" }}>A scenario for the room</div>{para(s.caseStudy)}</>)}
+                  {s.goingDeeper && (
+                    <div style={{ marginTop: "16px", background: "var(--bone-warm)", padding: "var(--s-3)", borderLeft: "2px solid var(--mustard)" }}>
+                      <div style={lbl}>Going deeper · for the hungry group</div>
+                      {para(s.goingDeeper)}
+                    </div>
+                  )}
+                  {s.memoryVerse && (<><div style={{ ...lbl, marginTop: "16px" }}>Memory verse</div><p style={{ ...body, fontFamily: "var(--F)", fontSize: "17px" }}>{s.memoryVerse}</p></>)}
+                  <div style={{ ...lbl, marginTop: "16px" }}>Closing prayer</div>
                   <p style={{ ...body, fontFamily: "var(--F)", fontSize: "17px", fontStyle: "italic" }}>{s.closingPrayer}</p>
                 </div>
               ))}
@@ -134,10 +173,26 @@ export default function StudyGuide() {
                   <p style={{ ...body, marginBottom: "12px" }}>{s.summary}</p>
                   <div style={lbl}>Key Scripture</div>
                   <p style={{ ...body, marginBottom: "12px" }}>{s.keyScripture.ref}</p>
+                  {s.memoryVerse && (<><div style={lbl}>Memory verse</div><p style={{ ...body, fontFamily: "var(--F)", fontSize: "17px", marginBottom: "12px" }}>{s.memoryVerse}</p></>)}
                   <div style={lbl}>Reflect</div>
                   {s.reflection.map((r, i) => <p key={i} style={{ ...body, marginBottom: "6px" }}>{i + 1}. {r}</p>)}
                   <div style={{ ...lbl, marginTop: "12px" }}>This week, try this</div>
                   <p style={body}>{s.practice}</p>
+                </div>
+              ))}
+
+              {tab === "Devotional" && data.sessions.map((s) => (
+                <div key={s.n} style={card}>
+                  <div style={lbl}>Session {s.n} · the week between</div>
+                  <h3 style={h3}>{s.title}</h3>
+                  {(s.devotional ?? []).map((d) => (
+                    <div key={d.day} style={{ marginBottom: "16px", borderLeft: "2px solid var(--mustard)", paddingLeft: "14px" }}>
+                      <div style={lbl}>Day {d.day} · {d.passage}</div>
+                      <p style={{ ...body, fontFamily: "var(--F)", fontSize: "18px", marginBottom: "6px" }}>{d.title}</p>
+                      {para(d.body)}
+                      <p style={{ ...body, fontStyle: "italic", color: "var(--ink-muted)" }}>{d.prayer}</p>
+                    </div>
+                  ))}
                 </div>
               ))}
 
@@ -165,6 +220,25 @@ export default function StudyGuide() {
 
               {tab === "Reference" && (
                 <div style={{ ...prose }}>
+                  {data.faq && data.faq.length > 0 && (
+                    <div style={card}>
+                      <div style={lbl}>Hard questions</div>
+                      {data.faq.map((f, i) => (
+                        <div key={i} style={{ marginBottom: "14px" }}>
+                          <p style={{ ...body, fontWeight: 600 }}>{f.q}</p>
+                          {para(f.a, { marginBottom: "6px" })}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  {data.timeline && data.timeline.length > 0 && (
+                    <div style={card}>
+                      <div style={lbl}>Historical timeline</div>
+                      {data.timeline.map((t, i) => (
+                        <p key={i} style={{ ...body, marginBottom: "6px" }}><span style={{ fontFamily: "var(--U)", fontWeight: 700, color: "var(--mustard-text)" }}>{t.date}</span>  {t.event}</p>
+                      ))}
+                    </div>
+                  )}
                   <div style={card}>
                     <div style={lbl}>Bibliography</div>
                     {data.bibliography.map((b, i) => (
@@ -198,6 +272,14 @@ export default function StudyGuide() {
                     <div style={lbl}>Invite caption</div>
                     <p style={body}>{data.promoKit.inviteCaption}</p>
                   </div>
+                  {data.promoKit.quoteCards && data.promoKit.quoteCards.length > 0 && (
+                    <div style={card}>
+                      <div style={lbl}>Quote cards · for social</div>
+                      {data.promoKit.quoteCards.map((q, i) => (
+                        <p key={i} style={{ ...body, fontFamily: "var(--F)", fontSize: "19px", fontStyle: "italic", borderLeft: "2px solid var(--mustard)", paddingLeft: "14px", marginBottom: "12px" }}>{q}</p>
+                      ))}
+                    </div>
+                  )}
                 </div>
               )}
             </div>
