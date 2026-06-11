@@ -9,7 +9,7 @@ export default [
     ignores: [
       "dist/**",
       "node_modules/**",
-      "*.mjs",
+      "**/*.mjs",
       "scripts/**",
       "patches/**",
       "content/**",

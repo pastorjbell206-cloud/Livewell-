@@ -12,7 +12,11 @@ import {
   markAdminNotificationAsRead,
 } from "./db";
 
-describe("Notification System", () => {
+const hasDb = Boolean(process.env.DATABASE_URL);
+const d = hasDb ? describe : describe.skip;
+
+
+d("Notification System", () => {
   let db: any;
 
   beforeAll(async () => {

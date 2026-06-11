@@ -3,7 +3,11 @@ import { relatedArticlesRouter } from "./related-articles-router";
 import { quizRouter } from "./quiz-router";
 import { listPosts } from "./db";
 
-describe("Engagement Features", () => {
+const hasDb = Boolean(process.env.DATABASE_URL);
+const d = hasDb ? describe : describe.skip;
+
+
+d("Engagement Features", () => {
   describe("Related Articles Router", () => {
     it("should return related articles from the same pillar", async () => {
       const caller = relatedArticlesRouter.createCaller({} as any);
