@@ -40,6 +40,7 @@ export default function TheologyHistory() {
   const [figures, setFigures] = useState<Figure[]>([]);
   const [tab, setTab] = useState<Tab>("timeline");
   const [openEra, setOpenEra] = useState<string | null>(null);
+  const [essays, setEssays] = useState<{ slug: string; title: string; blurb: string; era: string; dateRange: string }[]>([]);
 
   useEffect(() => {
     const get = (f: string) => fetch(f, { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
@@ -47,6 +48,7 @@ export default function TheologyHistory() {
     get("/theology/church-history-councils.json").then((d) => d?.councils && setCouncils(d.councils));
     get("/theology/church-history-heresies.json").then((d) => d?.heresies && setHeresies(d.heresies));
     get("/theology/church-history-figures.json").then((d) => d?.figures && setFigures(d.figures));
+    get("/history/essays-index.json").then((d) => d?.essays && setEssays(d.essays));
   }, []);
 
   const figuresByEra = useMemo(() => {
@@ -87,6 +89,25 @@ export default function TheologyHistory() {
           </p>
         </div>
       </section>
+
+      {/* NARRATIVE ESSAYS */}
+      {essays.length > 0 && (
+        <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
+          <div style={wrap}>
+            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>Read the story</div>
+            <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 400, color: "var(--ink)", marginBottom: "var(--s-3)" }}>The era essays</h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px, 100%), 1fr))", gap: "var(--s-3)" }}>
+              {essays.map((e) => (
+                <Link key={e.slug} href={`/theology/history/${e.slug}`} style={{ display: "block", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
+                  <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-muted)", marginBottom: "8px" }}>{e.era} · {e.dateRange}</div>
+                  <div style={{ fontFamily: "var(--F)", fontSize: "20px", lineHeight: 1.25, color: "var(--ink)", marginBottom: "8px" }}>{e.title}</div>
+                  <div style={{ fontFamily: "var(--B)", fontSize: "13.5px", lineHeight: 1.55, color: "var(--ink-muted)" }}>{e.blurb}</div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* TABS */}
       <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) 0" }}>

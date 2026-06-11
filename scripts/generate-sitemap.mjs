@@ -63,6 +63,7 @@ const STATIC_PAGES = [
   { url: "/family/devotions", priority: "0.75", changefreq: "monthly" },
   { url: "/family/catechism", priority: "0.7", changefreq: "monthly" },
   { url: "/family/reading-plans", priority: "0.7", changefreq: "monthly" },
+  { url: "/framework", priority: "0.85", changefreq: "monthly" },
   { url: "/theology", priority: "0.8", changefreq: "monthly" },
   { url: "/theology/biblical", priority: "0.75", changefreq: "monthly" },
   { url: "/theology/history", priority: "0.75", changefreq: "monthly" },
@@ -87,6 +88,7 @@ function manifestPages() {
     { file: "client/public/leadership/formation-index.json", key: "topics", prefix: "/leadership/formation/" },
     { file: "client/public/life/domains-index.json", key: "domains", prefix: "/life/" },
     { file: "client/public/creeds/documents-index.json", key: "documents", prefix: "/resources/creeds/" },
+    { file: "client/public/history/essays-index.json", key: "essays", prefix: "/theology/history/" },
   ];
   for (const s of sources) {
     try {
