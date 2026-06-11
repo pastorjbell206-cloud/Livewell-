@@ -4,12 +4,12 @@
   "subtitle": "The full text of the Apostles' Creed with plain-language notes on its history, the baptismal questions behind it, and what every loaded phrase is doing.",
   "group": "The Ecumenical Creeds",
   "date": "c. AD 200–700",
-  "intro": "The Apostles' Creed was not written by the apostles. It grew out of the questions asked of converts standing in the water of Roman baptisteries in the second century — do you believe in God the Father Almighty, do you believe in Jesus Christ his Son, do you believe in the Holy Spirit — and it hardened, over five centuries, into the form Western churches still recite. It is the oldest summary of Christian belief in continuous use. Before most Christians could read, this is what they knew. This is what they died knowing.\n\nEvery line of it was forged against a live alternative. The early church was surrounded by teachers who said the material world was beneath God, that Christ only seemed to have a body, that the God of Israel was not the Father of Jesus. The creed answers them without naming them. Maker of heaven and earth. Born. Suffered. Crucified, dead, and buried. It insists, clause after clause, that God is not embarrassed by matter, by history, or by death.\n\nWe tend to recite it, when we recite it at all, as if it were a list of the obvious. It is not obvious. Each phrase cost someone something, and most of the alternatives it ruled out are alive again under new names. A church that no longer knows why these words were chosen will eventually wonder why they cannot be traded for softer ones. The creed is short enough to memorize in an afternoon. It has held the weight of seventeen centuries.",
+  "intro": "The Apostles' Creed was not written by the apostles. It grew out of the questions asked of converts standing in the water of Roman baptisteries in the second century: do you believe in God the Father Almighty, do you believe in Jesus Christ his Son, do you believe in the Holy Spirit. It hardened, over five centuries, into the form Western churches still recite. It is the oldest summary of Christian belief in continuous use. Before most Christians could read, this is what they knew. This is what they died knowing.\n\nEvery line of it was forged against a live alternative. The early church was surrounded by teachers who said the material world was beneath God, that Christ only seemed to have a body, that the God of Israel was not the Father of Jesus. The creed answers them without naming them. Maker of heaven and earth. Born. Suffered. Crucified, dead, and buried. It insists, clause after clause, that God is not embarrassed by matter, by history, or by death.\n\nWe tend to recite it, when we recite it at all, as if it were a list of the obvious. It is not obvious. Each phrase cost someone something, and most of the alternatives it ruled out are alive again under new names. A church that no longer knows why these words were chosen will eventually wonder why they cannot be traded for softer ones. The creed is short enough to memorize in an afternoon. It has held the weight of seventeen centuries.",
   "text": "I believe in God the Father Almighty, Maker of heaven and earth.\n\nAnd in Jesus Christ his only Son our Lord; who was conceived by the Holy Ghost, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, dead, and buried; he descended into hell; the third day he rose again from the dead; he ascended into heaven, and sitteth on the right hand of God the Father Almighty; from thence he shall come to judge the quick and the dead.\n\nI believe in the Holy Ghost; the holy catholic Church; the communion of saints; the forgiveness of sins; the resurrection of the body; and the life everlasting. Amen.",
   "annotations": [
     {
       "phrase": "Maker of heaven and earth",
-      "note": "Aimed at Marcion and the Gnostic teachers, who taught that the physical world was the botched work of a lesser god. The creed's first move is to insist that the Father of Jesus is the Creator of matter — the same God, the same world, no embarrassment about either."
+      "note": "Aimed at Marcion and the Gnostic teachers, who taught that the physical world was the botched work of a lesser god. The creed's first move is to insist that the Father of Jesus is the Creator of matter. The same God, the same world, no embarrassment about either."
     },
     {
       "phrase": "conceived by the Holy Ghost, born of the Virgin Mary",
@@ -17,11 +17,11 @@
     },
     {
       "phrase": "suffered under Pontius Pilate",
-      "note": "The only person in the creed besides Jesus and Mary is a mid-level Roman governor. His name is there as a date stamp. The creed is claiming that salvation happened in datable, checkable history — under a particular administration — not in a timeless myth."
+      "note": "The only person in the creed besides Jesus and Mary is a mid-level Roman governor. His name is there as a date stamp. The creed is claiming that salvation happened in datable, checkable history, under a particular administration, not in a timeless myth."
     },
     {
       "phrase": "he descended into hell",
-      "note": "The latest clause to enter the creed, and the most debated. The older sense is 'descended to the dead' (Latin ad inferos) — Christ truly died and entered the realm of the dead, as 1 Peter 3:19 and Ephesians 4:9 hint. It guards the reality of his death, whatever else it means."
+      "note": "The latest clause to enter the creed, and the most debated. The older sense is 'descended to the dead' (Latin ad inferos). Christ truly died and entered the realm of the dead, as 1 Peter 3:19 and Ephesians 4:9 hint. It guards the reality of his death, whatever else it means."
     },
     {
       "phrase": "the quick and the dead",
@@ -29,15 +29,15 @@
     },
     {
       "phrase": "the holy catholic Church",
-      "note": "'Catholic' here means universal — the whole church across every place and century — not the Roman Catholic communion specifically. Protestants who choke on the word are choking on their own family name."
+      "note": "'Catholic' here means universal, the whole church across every place and century, not the Roman Catholic communion specifically. Protestants who choke on the word are choking on their own family name."
     },
     {
       "phrase": "the communion of saints",
-      "note": "The claim that believers — living and dead — share one life in Christ. The church is bigger than the people in the room and older than the people in the ground."
+      "note": "The claim that believers, living and dead, share one life in Christ. The church is bigger than the people in the room and older than the people in the ground."
     },
     {
       "phrase": "the resurrection of the body",
-      "note": "Not the survival of the soul. Greek philosophy offered escape from the body; the creed promises the body back, raised and remade. Christian hope is physical, which is why Christians built hospitals and buried their dead with care."
+      "note": "Not the survival of the soul. Greek philosophy offered escape from the body. The creed promises the body back, raised and remade. Christian hope is physical, which is why Christians built hospitals and buried their dead with care."
     }
   ]
 }
