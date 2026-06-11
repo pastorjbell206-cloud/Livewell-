@@ -56,6 +56,9 @@ const STATIC_PAGES = [
   { url: "/resources/context", priority: "0.9", changefreq: "weekly" },
   { url: "/resources/creeds", priority: "0.8", changefreq: "monthly" },
   { url: "/studyguides/christian-nationalism", priority: "0.8", changefreq: "monthly" },
+  { url: "/studyguides/pastoral-health", priority: "0.8", changefreq: "monthly" },
+  { url: "/studyguides/economic-justice", priority: "0.8", changefreq: "monthly" },
+  { url: "/studyguides/church-and-empire", priority: "0.8", changefreq: "monthly" },
   { url: "/discipleship", priority: "0.85", changefreq: "monthly" },
   { url: "/life", priority: "0.85", changefreq: "weekly" },
   { url: "/life/assessment", priority: "0.8", changefreq: "monthly" },
@@ -63,6 +66,7 @@ const STATIC_PAGES = [
   { url: "/family/devotions", priority: "0.75", changefreq: "monthly" },
   { url: "/family/catechism", priority: "0.7", changefreq: "monthly" },
   { url: "/family/reading-plans", priority: "0.7", changefreq: "monthly" },
+  { url: "/framework", priority: "0.85", changefreq: "monthly" },
   { url: "/theology", priority: "0.8", changefreq: "monthly" },
   { url: "/theology/biblical", priority: "0.75", changefreq: "monthly" },
   { url: "/theology/history", priority: "0.75", changefreq: "monthly" },
@@ -87,6 +91,7 @@ function manifestPages() {
     { file: "client/public/leadership/formation-index.json", key: "topics", prefix: "/leadership/formation/" },
     { file: "client/public/life/domains-index.json", key: "domains", prefix: "/life/" },
     { file: "client/public/creeds/documents-index.json", key: "documents", prefix: "/resources/creeds/" },
+    { file: "client/public/history/essays-index.json", key: "essays", prefix: "/theology/history/" },
   ];
   for (const s of sources) {
     try {

@@ -68,6 +68,8 @@ const TheologyMethodology = lazy(() => import("./pages/TheologyMethodology"));
 const TheologyDoctrine = lazy(() => import("./pages/TheologyDoctrine"));
 const PassageContext = lazy(() => import("./pages/tools/PassageContext"));
 const TheologyHistory = lazy(() => import("./pages/TheologyHistory"));
+const HistoryEssay = lazy(() => import("./pages/history/HistoryEssay"));
+const Framework = lazy(() => import("./pages/Framework"));
 const TheologyBiblical = lazy(() => import("./pages/TheologyBiblical"));
 const TheologyCompare = lazy(() => import("./pages/TheologyCompare"));
 const TheologyGlossary = lazy(() => import("./pages/TheologyGlossary"));
@@ -202,7 +204,9 @@ function Router() {
         <Route path="/family/reading-plans" component={FamilyReadingPlans} />
         <Route path="/family" component={Family} />
         <Route path="/theology/passage" component={PassageContext} />
+        <Route path="/theology/history/:slug" component={HistoryEssay} />
         <Route path="/theology/history" component={TheologyHistory} />
+        <Route path="/framework" component={Framework} />
         <Route path="/theology/biblical" component={TheologyBiblical} />
         <Route path="/theology/compare" component={TheologyCompare} />
         <Route path="/theology/glossary" component={TheologyGlossary} />
