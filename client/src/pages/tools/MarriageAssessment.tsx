@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { ToolActions } from "@/components/ToolActions";
 import { useState, useRef } from "react";
+import { Link } from "wouter";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer } from "lucide-react";
 import { EmailResults } from "@/components/EmailResults";
 
@@ -773,6 +774,64 @@ export default function MarriageAssessment() {
               >
                 {overall.description}
               </p>
+            </div>
+
+            {/* Eight-Week Plan CTA */}
+            <div
+              style={{
+                background: "white",
+                borderRadius: "2px",
+                padding: "36px 40px",
+                border: "1px solid var(--border)",
+                borderTop: "4px solid var(--mustard)",
+                marginBottom: "32px",
+              }}
+            >
+              <div
+                style={{
+                  fontSize: "11px",
+                  fontWeight: 700,
+                  letterSpacing: "0.2em",
+                  color: "var(--mustard)",
+                  fontFamily: "var(--U)",
+                  marginBottom: "12px",
+                }}
+              >
+                YOUR NEXT STEP
+              </div>
+              <p
+                style={{
+                  fontSize: "16px",
+                  lineHeight: 1.8,
+                  color: "var(--ink)",
+                  fontFamily: "var(--B)",
+                  maxWidth: "60ch",
+                  margin: "0 0 20px",
+                }}
+              >
+                A score is a snapshot. A path is what changes things: eight
+                weeks toward each other, one small practice at a time.
+              </p>
+              <Link
+                href="/plans/marriage"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  minHeight: "44px",
+                  padding: "12px 28px",
+                  background: "var(--mustard)",
+                  color: "var(--ink)",
+                  borderRadius: "2px",
+                  fontSize: "14px",
+                  fontFamily: "var(--U)",
+                  fontWeight: 600,
+                  textDecoration: "none",
+                }}
+              >
+                Start the eight-week plan
+                <ChevronRight size={16} />
+              </Link>
             </div>
 
             {/* Score Bar Overview */}
