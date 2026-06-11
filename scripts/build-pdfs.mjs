@@ -37,12 +37,20 @@ const RULE = "#C9C2B4";
 
 const MARGIN = 72;
 
+// Fixed timestamp so identical content yields byte-identical PDFs. Without
+// this, pdfkit stamps the current time into every file and every build dirties
+// the whole downloads/ tree even when nothing changed.
+const FIXED_DATE = new Date("2026-01-01T00:00:00Z");
+
 function newDoc(meta) {
   return new PDFDocument({
     size: "LETTER",
     margins: { top: MARGIN, bottom: MARGIN, left: MARGIN, right: MARGIN },
     bufferPages: true,
-    info: { Title: meta.title, Author: "James Bell", Creator: "LiveWell by James Bell" },
+    info: {
+      Title: meta.title, Author: "James Bell", Creator: "LiveWell by James Bell",
+      CreationDate: FIXED_DATE, ModDate: FIXED_DATE,
+    },
   });
 }
 
