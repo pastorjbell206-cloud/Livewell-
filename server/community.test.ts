@@ -13,7 +13,11 @@ import {
   deleteTestimonial,
 } from "./db-community";
 
-describe("Community Features - Comments & Testimonials", () => {
+const hasDb = Boolean(process.env.DATABASE_URL);
+const d = hasDb ? describe : describe.skip;
+
+
+d("Community Features - Comments & Testimonials", () => {
   describe("Comments", () => {
     it("should create a new comment with correct properties", async () => {
       const comment = await createComment({
