@@ -503,6 +503,20 @@ export default function MinimalNav() {
               </div>
             ))}
 
+            <Link
+              href="/help"
+              style={{
+                color: "var(--mustard-text)",
+                fontFamily: "var(--U)",
+                fontSize: "13px",
+                fontWeight: 600,
+                padding: "8px 12px",
+                whiteSpace: "nowrap",
+              }}
+            >
+              Find Help
+            </Link>
+
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
@@ -603,6 +617,21 @@ export default function MinimalNav() {
               overflowY: "auto",
             }}
           >
+            <Link
+              href="/help"
+              onClick={() => setMobileOpen(false)}
+              style={{
+                display: "block",
+                padding: "12px 0",
+                fontFamily: "var(--U)",
+                fontSize: "15px",
+                fontWeight: 700,
+                color: "var(--mustard-text)",
+                borderBottom: "1px solid var(--border)",
+              }}
+            >
+              Find Help for What You Are Facing
+            </Link>
             {navLinks.map(link => (
               <div key={link.label}>
                 {link.dropdown ? (

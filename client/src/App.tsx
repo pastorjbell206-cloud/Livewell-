@@ -47,6 +47,7 @@ const WholeLifeAssessment = lazy(() => import("./pages/life/WholeLifeAssessment"
 const Marriage = lazy(() => import("./pages/Marriage"));
 const Parenting = lazy(() => import("./pages/Parenting"));
 const Doubt = lazy(() => import("./pages/Doubt"));
+const Help = lazy(() => import("./pages/Help"));
 const StartHereQuiz = lazy(() => import("./pages/StartHereQuiz"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Accessibility = lazy(() => import("./pages/Accessibility"));
@@ -263,6 +264,7 @@ function Router() {
         <Route path="/theology/doctrine/:slug" component={TheologyDoctrine} />
         <Route path="/theology" component={Theology} />
         <Route path="/doubt" component={Doubt} />
+        <Route path="/help" component={Help} />
         <Route path="/start" component={StartHereQuiz} />
         <Route path="/for-families" component={ForFamiliesRedirect} />
         <Route path="/pillars" component={Pillars} />
