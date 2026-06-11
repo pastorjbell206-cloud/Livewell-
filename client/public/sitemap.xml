@@ -181,6 +181,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.livewellbyjamesbell.co/studyguides/pastoral-health</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/studyguides/economic-justice</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/studyguides/church-and-empire</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.livewellbyjamesbell.co/discipleship</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -214,6 +229,11 @@
     <loc>https://www.livewellbyjamesbell.co/family/reading-plans</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/framework</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.livewellbyjamesbell.co/theology</loc>
@@ -1172,6 +1192,26 @@
   </url>
   <url>
     <loc>https://www.livewellbyjamesbell.co/resources/creeds/nicene-creed</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/theology/history/the-great-councils</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/theology/history/the-apostolic-age</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/theology/history/the-east-west-schism</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.livewellbyjamesbell.co/theology/history/the-reformation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
