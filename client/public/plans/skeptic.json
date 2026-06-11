@@ -1,0 +1,81 @@
+{
+  "slug": "skeptic",
+  "title": "Eight Weeks of Reading Like an Adult",
+  "subtitle": "An eight week reading plan from James Bell for the curious nonbeliever. The Bible read as literature and history, the hard objections on the table, and no tricks anywhere in it.",
+  "intro": "This is an eight week reading plan for the nonbeliever who is curious, written by a man who spent years as an atheist and has not forgotten what the other side of the door feels like. Nothing here is a trick. There is no trap in week eight, no emotional ambush, no moment where the music swells. Each week holds one focus, one reading practice, one thing to read, one tool, and one honest question. You will be asked to read carefully and to write down your real questions. You will not be asked to pray, to attend anything, or to pretend.\n\nRead it imperfectly. A missed week is not failure, you just pick it back up. You owe this plan nothing, and you can close it at any point with no hard feelings on this end. The only commitment it asks is the one any serious reader already makes, which is to take the text and the objections both at full strength.",
+  "careNote": "",
+  "weeks": [
+    {
+      "n": 1,
+      "focus": "Reading it as literature first",
+      "why": "Before the Bible is a religious claim, it is a library. Sixty six books, three languages, a thousand years of authors, poetry next to law next to biography. An educated adult can read it the way they read Homer, owing it nothing. I read it as an atheist expecting a rulebook and found something far stranger, and the strangeness is where the interesting questions live.",
+      "practice": "Read the Gospel of Mark this week, a chapter or two a day, the way you would read any ancient text. Write down one question it raises for you. One per sitting is plenty.",
+      "read": { "label": "The Skeptic Track, written for readers who do not believe, with no tricks in it", "href": "/skeptic-track" },
+      "tool": { "label": "The Verse Finder, a lookup tool so you can find any passage without owning a Bible", "href": "/tools/verse-finder" },
+      "reflection": "What did I expect this book to be, and where did the actual text not match the expectation?"
+    },
+    {
+      "n": 2,
+      "focus": "The Bible in its real world",
+      "why": "This is a text from the ancient Near East and the Roman Mediterranean, and a reader who brings modern American assumptions to it will misread it, whether that reader is a believer or a skeptic. Plenty of objections to the Bible are really objections to a culture that waves it around. Sorting the two is basic intellectual hygiene, and it makes the remaining objections sharper, not softer.",
+      "practice": "Read the guide, then reread one passage from Mark asking what its first hearers would have heard. Write one question about the gap between their world and yours.",
+      "read": { "label": "The Bible Is Not an American Book, on the empires and centuries behind the text", "href": "/resources/context/the-bible-is-not-an-american-book" },
+      "tool": { "label": "The full Context Library, a reference shelf for the rest of these weeks", "href": "/resources/context" },
+      "reflection": "Which of my objections are to the text itself, and which are to the modern people who use it?"
+    },
+    {
+      "n": 3,
+      "focus": "The violence and the slavery, on the table",
+      "why": "These are the serious objections, and they deserve to be treated seriously. The conquest chapters and the slavery texts are in the book, and the skeptic who refuses to look away is reading more honestly than the churchgoer who skips them. This site keeps full guides on both, written without the usual dodges. Read them and keep whatever objection survives. It will at least be a precise one.",
+      "practice": "Read both guides this week, slowly. At the end, write out the strongest objection that remains after reading. Full strength. Nobody here will be offended.",
+      "read": { "label": "The Violence of the Old Testament, the hardest ground walked slowly", "href": "/resources/context/the-violence-of-the-old-testament" },
+      "tool": { "label": "The Slavery Texts, the companion guide, read this one too", "href": "/resources/context/the-slavery-texts" },
+      "reflection": "After reading the strongest case I can find, is my objection stronger, weaker, or simply more precise?"
+    },
+    {
+      "n": 4,
+      "focus": "Did the Gospels get Jesus right",
+      "why": "The telephone game needs long chains, anonymous links, and nobody checking. The Gospels grew up under different conditions, named witnesses, short decades, and communities that could call a storyteller a liar. That does not settle the question by itself, but it makes it a historical question with evidence, and historical questions deserve historical treatment rather than a slogan from either side.",
+      "practice": "Read the guide, then run a test. Pick one Gospel scene and ask what would have to be true for it to be invented, and what would have to be true for it to be remembered. Write your verdict.",
+      "read": { "label": "Did the Gospels Get Jesus Right, the transmission question taken seriously", "href": "/resources/context/did-the-gospels-get-jesus-right" },
+      "tool": { "label": "The Hard Questions page, where this site argues both sides at full strength", "href": "/theology/questions" },
+      "reflection": "What standard of evidence do I apply to other ancient texts, and am I applying the same one here?"
+    },
+    {
+      "n": 5,
+      "focus": "Miracles and the ancient mind",
+      "why": "The claim that ancient people would believe anything is itself a belief, held against the evidence. They knew exactly what death was, better than we do, and the resurrection startled them first. The real question is not whether first century fishermen were gullible. It is whether the universe is a closed system, and that is a philosophical commitment, not a laboratory result. It deserves to be examined like one.",
+      "practice": "Read the guide. Then write your own actual position on miracles in two or three sentences, and trace where you got it. Argument, inheritance, or atmosphere.",
+      "read": { "label": "Miracles and the Ancient Mind, on what the first witnesses knew about death", "href": "/resources/context/miracles-and-the-ancient-mind" },
+      "tool": { "label": "The Verse Finder, pull up the resurrection accounts and read them side by side", "href": "/tools/verse-finder" },
+      "reflection": "Did I conclude that miracles are impossible, or did I inherit the conclusion, and how would I tell the difference?"
+    },
+    {
+      "n": 6,
+      "focus": "The Jesus nobody owns",
+      "why": "Every tribe has tried to draft him. The left, the right, the empire, the market, and yes, the church. The man in the text keeps refusing recruitment, which is one reason the text is still worth reading. Whatever you eventually decide about Jesus, it should be a decision about him, not about his worst representatives. He has suffered those longer than you have.",
+      "practice": "Read a handful of essays from the writing page this week. Then write one question about Jesus himself, not about Christians. Notice how much harder that is.",
+      "read": { "label": "The Writing page, essays where this platform shows what it actually thinks", "href": "/writing" },
+      "tool": { "label": "The Kingdom Is Not a Party Platform, on the recruitment he keeps refusing", "href": "/resources/context/the-kingdom-is-not-a-platform" },
+      "reflection": "How much of my picture of Jesus came from the text, and how much came from the people who put me off him?"
+    },
+    {
+      "n": 7,
+      "focus": "What Christians actually believe, against the caricature",
+      "why": "You would not accept a caricature of your own position, and you should not be handed one of ours. The historic doctrines have an internal architecture, agree with it or not, and much of what circulates as Christianity in public is a cartoon of it. The church drew a good deal of that cartoon itself, which is our fault, not yours. This week you read the real claims and aim at those.",
+      "practice": "Read the theology pages. Pick the doctrine you find least believable and write the strongest version of it you can manage, then write your strongest objection to that version.",
+      "read": { "label": "The Theology page, the actual claims laid out plainly", "href": "/theology" },
+      "tool": { "label": "The comparison tool, where Christian traditions disagree with each other in the open", "href": "/theology/compare" },
+      "reflection": "If I rejected the strongest version instead of the weakest, would my rejection change in tone, in content, or not at all?"
+    },
+    {
+      "n": 8,
+      "focus": "The question under the questions",
+      "why": "After eight weeks, most readers discover the loudest objections were not the deepest ones. Underneath the violence texts and the miracle question there is usually something closer in. What would it cost me if this were true. What do I want to be true. Those are honest questions, and they cut both ways, mine included, because a pastor has wants too. Nobody here will use yours against you. You read like an adult for eight weeks. Few people on either side ever do.",
+      "practice": "Write the one question that is actually yours, the one underneath the official ones. Keep it somewhere you will find it again. That is the whole practice, and it is enough.",
+      "read": { "label": "The Doubt page, written for believers, read it to see how this house treats its own doubters", "href": "/doubt" },
+      "tool": { "label": "The Start Here page, only if you want a next step, it asks where you are and asks nothing else of you", "href": "/start" },
+      "reflection": "What do I want to be true, and how is that want shaping what I am able to see?"
+    }
+  ]
+}
