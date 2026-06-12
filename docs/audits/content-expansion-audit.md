@@ -140,6 +140,23 @@ formation pillar; parenting → spiritual-formation doctrine.
 - **Weeks 11–13:** internal-linking pass across all five movements +
   image-direction backfill.
 
+## Implementation status (Weeks 1–3)
+
+- **Orphaned family content reconnected.** The 21 essays in
+  `client/public/articles/{marriage-and-family,marriage-guides,parenting-guides}.json`
+  (~36,000 words) are now generated as published `posts` rows by
+  `scripts/build-family-posts-seed.mjs`, written into `scripts/seed-all-content.sql`
+  between the `family posts` markers. Regenerate after editing the source JSON:
+  `node scripts/build-family-posts-seed.mjs`.
+- **Go-live step (manual, on infra with DB access):** run
+  `DATABASE_URL=… npm run db:seed`. The seeder uses `INSERT IGNORE`, so it is safe
+  to re-run. Until it runs against the production database, the new featured links
+  below resolve only once the posts exist.
+- **Landing pages re-pointed.** `Marriage.tsx` and `Parenting.tsx` now feature the
+  rich, on-topic essays (covenant, communication, conflict, forgiveness, money;
+  faith formation, fatherhood, discipline, screens, doubt, prayer) instead of the
+  previous dead slugs.
+
 ## Voice guardrails (binding on all rewrites)
 
 Calm, declarative, diagnostic, pastoral. Build by accumulation. No em-dash, no
