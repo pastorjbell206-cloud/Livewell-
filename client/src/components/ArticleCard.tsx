@@ -45,7 +45,6 @@ const PILLAR_COLORS: Record<string, { bg: string; text: string; icon: string }> 
 };
 
 export function ArticleCard({
-  id,
   slug,
   title,
   excerpt,

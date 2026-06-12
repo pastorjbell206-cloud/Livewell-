@@ -35,7 +35,7 @@ export default function AdminAbout() {
       await setSettingMutation.mutateAsync({ key: "aboutContent", value: content });
       setSavedContent(content);
       toast.success("About page updated");
-    } catch (err) {
+    } catch {
       toast.error("Failed to save about page");
     } finally {
       setIsLoading(false);

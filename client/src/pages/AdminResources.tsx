@@ -97,7 +97,7 @@ export default function AdminResources() {
       await deleteResourceMutation.mutateAsync({ id });
       toast.success("Resource deleted");
       resourcesQuery.refetch();
-    } catch (err) {
+    } catch {
       toast.error("Failed to delete resource");
     }
   };
@@ -110,7 +110,7 @@ export default function AdminResources() {
       });
       toast.success(resource.published ? "Resource unpublished" : "Resource published");
       resourcesQuery.refetch();
-    } catch (err) {
+    } catch {
       toast.error("Failed to update resource");
     }
   };
@@ -141,7 +141,7 @@ export default function AdminResources() {
       toast.success(doneMsg);
       setSelected(new Set());
       await resourcesQuery.refetch();
-    } catch (err) {
+    } catch {
       toast.error("Bulk action failed");
     } finally {
       setBulkBusy(false);

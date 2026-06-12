@@ -89,7 +89,7 @@ export default function ProfileSurvey() {
               <div key={d.id} style={{ marginTop: "var(--s-4)" }}>
                 <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "4px" }}>{d.name}</div>
                 <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", marginBottom: "var(--s-3)", lineHeight: 1.5 }}>{d.blurb}</p>
-                {d.questions.map((q, n) => (
+                {d.questions.map((q) => (
                   <div key={q.id} style={{ marginBottom: "var(--s-3)", paddingBottom: "var(--s-3)", borderBottom: "1px solid var(--border)" }}>
                     <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink)", marginBottom: "8px" }}>{q.text}</p>
                     <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
@@ -132,7 +132,7 @@ function Bar({ pct }: { pct: number }) {
   );
 }
 
-function ProfileResult({ scored, overallPct, closing }: { scored: { dim: Dimension; pct: number; level: Level | null }[]; overallPct: number; closing: string }) {
+function ProfileResult({ scored, closing }: { scored: { dim: Dimension; pct: number; level: Level | null }[]; overallPct: number; closing: string }) {
   const sorted = [...scored].sort((a, b) => a.pct - b.pct);
   return (
     <div style={{ background: "var(--charcoal)", color: "var(--bone)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: "3px solid var(--mustard)" }}>

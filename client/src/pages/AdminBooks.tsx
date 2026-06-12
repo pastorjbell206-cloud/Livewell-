@@ -2,7 +2,7 @@ import AdminLayout from "@/components/AdminLayout";
 import { Link } from "wouter";
 import { trpc } from "@/lib/trpc";
 import { useState, useEffect, useMemo } from "react";
-import { Trash2, Edit2, Plus, Loader2, Eye, EyeOff, Search, BookOpen } from "lucide-react";
+import { Trash2, Edit2, Plus, Eye, EyeOff, Search, BookOpen } from "lucide-react";
 import { toast } from "sonner";
 
 type BookTypeFilter = "all" | "authored" | "recommended";
@@ -48,7 +48,7 @@ export default function AdminBooks() {
       await deleteBookMutation.mutateAsync({ id });
       toast.success("Book deleted");
       booksQuery.refetch();
-    } catch (err) {
+    } catch {
       toast.error("Failed to delete book");
     }
   };
@@ -61,7 +61,7 @@ export default function AdminBooks() {
       });
       toast.success(book.published ? "Book unpublished" : "Book published");
       booksQuery.refetch();
-    } catch (err) {
+    } catch {
       toast.error("Failed to update book");
     }
   };
@@ -95,7 +95,7 @@ export default function AdminBooks() {
         return next;
       });
       booksQuery.refetch();
-    } catch (err) {
+    } catch {
       toast.error("Failed to update order");
     }
   };
