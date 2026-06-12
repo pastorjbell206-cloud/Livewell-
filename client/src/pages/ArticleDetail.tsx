@@ -8,7 +8,7 @@
  * - Body width is 680px (var(--w-prose)) per CLAUDE.md
  * - Bookmark + reading progress persist in localStorage
  */
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocation, useParams } from "wouter";
 import { Streamdown } from "streamdown";
 import { ArrowLeft, Bookmark, Share2, User } from "lucide-react";
@@ -135,8 +135,131 @@ function BookmarkButton({ slug }: { slug: string }) {
   );
 }
 
+function slugifyHeading(text: string, index: number) {
+  const base = text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .slice(0, 60);
+  return base || `section-${index + 1}`;
+}
+
+/**
+ * TableOfContents — a slim, collapsible "In this essay" card for long pieces.
+ *
+ * Reads the section headings Streamdown rendered into the body, assigns stable
+ * anchor ids, and links to them. Renders nothing on short essays (fewer than
+ * three section headings), so the reading experience is untouched where a
+ * contents list would only be noise. No layout grid, no right rail: the
+ * single-column measure stays exactly as it was.
+ */
+function TableOfContents({
+  bodyRef,
+  contentKey,
+}: {
+  bodyRef: React.RefObject<HTMLDivElement | null>;
+  contentKey: string;
+}) {
+  const [items, setItems] = useState<{ id: string; text: string }[]>([]);
+
+  useEffect(() => {
+    const root = bodyRef.current;
+    if (!root) return;
+    const seen = new Set<string>();
+    const headings = Array.from(root.querySelectorAll("h2")).map((node, i) => {
+      const text = node.textContent?.trim() || `Section ${i + 1}`;
+      let id = node.id || slugifyHeading(text, i);
+      while (seen.has(id)) id = `${id}-${i}`;
+      seen.add(id);
+      node.id = id;
+      node.style.scrollMarginTop = "96px";
+      return { id, text };
+    });
+    setItems(headings);
+  }, [bodyRef, contentKey]);
+
+  if (items.length < 3) return null;
+
+  const handleJump = (e: React.MouseEvent, id: string) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (typeof history !== "undefined") {
+      history.replaceState(null, "", `#${id}`);
+    }
+  };
+
+  return (
+    <nav
+      aria-label="In this essay"
+      style={{ maxWidth: "var(--w-prose)", margin: "0 auto var(--s-5)" }}
+    >
+      <details
+        open
+        style={{
+          background: "var(--card)",
+          border: "1px solid var(--border)",
+          borderLeft: "2px solid var(--mustard)",
+          borderRadius: "var(--radius-sm)",
+          padding: "16px 20px",
+        }}
+      >
+        <summary
+          style={{
+            fontFamily: "var(--U)",
+            fontSize: "11px",
+            fontWeight: 600,
+            textTransform: "uppercase",
+            letterSpacing: "0.18em",
+            color: "var(--mustard-text)",
+            cursor: "pointer",
+          }}
+        >
+          In this essay
+        </summary>
+        <ol
+          style={{
+            listStyle: "none",
+            margin: "16px 0 0",
+            padding: 0,
+            display: "flex",
+            flexDirection: "column",
+            gap: "10px",
+          }}
+        >
+          {items.map(item => (
+            <li key={item.id}>
+              <a
+                href={`#${item.id}`}
+                onClick={e => handleJump(e, item.id)}
+                style={{
+                  fontFamily: "var(--B)",
+                  fontSize: "15px",
+                  lineHeight: 1.4,
+                  color: "var(--ink-muted)",
+                  textDecoration: "none",
+                  transition: "color 0.2s",
+                }}
+                onMouseEnter={e => (e.currentTarget.style.color = "var(--ink)")}
+                onMouseLeave={e =>
+                  (e.currentTarget.style.color = "var(--ink-muted)")
+                }
+              >
+                {item.text}
+              </a>
+            </li>
+          ))}
+        </ol>
+      </details>
+    </nav>
+  );
+}
+
 export default function ArticleDetail() {
   const { slug } = useParams<{ slug: string }>();
+  const bodyRef = useRef<HTMLDivElement>(null);
   const [, navigate] = useLocation();
   const postQuery = trpc.posts.getBySlug.useQuery(
     { slug: slug ?? "" },
@@ -403,8 +526,10 @@ export default function ArticleDetail() {
 
         {/* BODY */}
         <section style={{ padding: "var(--s-6) var(--s-4)" }}>
+          <TableOfContents bodyRef={bodyRef} contentKey={post.slug} />
           <div
             className="article-body"
+            ref={bodyRef}
             style={{
               maxWidth: "var(--w-prose)",
               margin: "0 auto",
@@ -456,11 +581,7 @@ export default function ArticleDetail() {
           }}
         >
           <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-            <NewsletterSignup
-              variant="inline"
-              title="Get new essays in your inbox"
-              description="Long-form theology delivered the way you'd want to read it: unhurried, weighted, no spam."
-            />
+            <NewsletterSignup variant="inline" source="article" />
           </div>
         </section>
 
