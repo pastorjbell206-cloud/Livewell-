@@ -21,8 +21,8 @@ interface NewsletterSignupProps {
 
 export function NewsletterSignup({
   variant = "inline",
-  title = "Get new essays in your inbox",
-  description = "Long-form theology delivered the way you'd want to read it: unhurried, weighted, no spam.",
+  title = "One serious essay a week",
+  description = "Theology that meets the actual Tuesday afternoon of marriage, money, parenting, and doubt. Written slow, sent once a week. No spam, ever.",
   source,
 }: NewsletterSignupProps) {
   const [email, setEmail] = useState("");
