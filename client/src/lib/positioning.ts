@@ -11,8 +11,6 @@
  * social-share unfurls. Change them here once.
  */
 
-import { SITE_STATS } from "@/config/siteStats";
-
 export const PRIMARY_HEADLINE =
   "Theology that carries the weight of everyday life.";
 
@@ -26,17 +24,8 @@ export const PRIMARY_SUBHEAD =
 export const PRIMARY_SUBHEAD_SHORT =
   "Essays on theology, politics, and the American church after Christendom — and on the actual Tuesday afternoon of marriage, money, parenting, and doubt. Written by a pastor tracing the collapse of cultural Christianity and the long work of forming people who can carry weight.";
 
-export const SHORT_BIO =
-  `James Bell is Lead Pastor of First Baptist Church of Fenton and founder of the Pastors Connection Network. He came to faith from atheism, was raised without a father, and has five sons. He is the author of ${SITE_STATS.bookCountWord} books.`;
-
 export const META_DESCRIPTION =
   "Deep theology for everyday life. Essays on theology, politics, and the American church after Christendom — plus marriage, money, parenting, manhood, womanhood, and the long work of pastoring. By James Bell. New essays weekly.";
-
-export const NEWSLETTER_PITCH = {
-  title: "Get new essays in your inbox",
-  description:
-    "One essay a week. After Christendom, politics, theology — plus marriage, money, parenting, manhood, womanhood. Scholarly tone, practical reach. No spam.",
-};
 
 export const NEWSLETTER_PITCH_PASTORAL = {
   title: "The Pastor's Letter — Tuesday morning",

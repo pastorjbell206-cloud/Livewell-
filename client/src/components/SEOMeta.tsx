@@ -12,7 +12,6 @@
  * mounts on a route, it overrides them.
  */
 import { SITE_URL, SITE_NAME, AUTHOR_NAME, OG_DEFAULT_IMAGE } from "@/lib/site";
-import { SITE_STATS } from "@/config/siteStats";
 
 interface SEOMetaProps {
   title: string;
@@ -103,26 +102,6 @@ export function SEOMeta({
 }
 
 // ─── Schema helpers ─────────────────────────────────────────────────────
-
-export function getPersonSchema() {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: AUTHOR_NAME,
-    url: SITE_URL,
-    jobTitle: "Lead Pastor, Author, Founder",
-    description: `Lead Pastor at First Baptist Church of Fenton, author of ${SITE_STATS.bookCount} books, and founder of the Pastors Connection Network.`,
-    sameAs: [
-      "https://pastorsconnectionnetwork.com",
-      "https://substack.com/@jamesbell333289",
-      "https://www.facebook.com/james.bell.609252",
-    ],
-    worksFor: {
-      "@type": "Organization",
-      name: "First Baptist Church of Fenton",
-    },
-  };
-}
 
 export function getOrganizationSchema() {
   return {
@@ -227,16 +206,4 @@ export function getBreadcrumbSchema(items: { name: string; url: string }[]) {
       item: item.url,
     })),
   };
-}
-
-// Legacy alias kept so existing call sites continue to work.
-export function getBlogPostingSchema(
-  title: string,
-  description: string,
-  publishedDate: string,
-  modifiedDate?: string,
-  image?: string,
-  url?: string
-) {
-  return getArticleSchema(title, description, publishedDate, modifiedDate, image, url);
 }

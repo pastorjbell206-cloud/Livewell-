@@ -113,11 +113,3 @@ export const LEADERSHIP_TOOLS: ToolLink[] = [
   { href: "/leadership/decision-log", kicker: "Log", title: "The Benevolence and Decision Log", blurb: "A private record of benevolence requests and board decisions, kept entirely on your device. Remember what you decided, and why." },
   { href: "/leadership/before-you-post", kicker: "Examen", title: "Before You Post", blurb: "A short, searching examen for a leader with his thumb over the share button. Not a content filter. A heart filter." },
 ];
-
-export const ASSESSMENT_SLUGS = [
-  "elder-readiness",
-  "deacon-readiness",
-  "burnout",
-  "revitalization",
-  "planting-readiness",
-] as const;
