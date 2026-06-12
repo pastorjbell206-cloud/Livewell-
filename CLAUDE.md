@@ -1,6 +1,10 @@
 # CLAUDE.md — LiveWell by James Bell
 
 > Read this file first. Do not deviate from voice or palette.
+>
+> This file governs voice, palette, and engineering. Editorial mission is
+> governed by `docs/EDITORIAL-CONSTITUTION.md` — the top-level constitution
+> every content decision nests under. Read it before content work.
 
 ---
 
