@@ -91,7 +91,7 @@ async function fetchLibrarySource(source: LibrarySource): Promise<LibraryEntry[]
 }
 
 export default function SearchPage() {
-  const [location, navigate] = useLocation();
+  const [, navigate] = useLocation();
   const [query, setQuery] = useState("");
   const [searchType, setSearchType] = useState<"all" | "articles" | "resources">("all");
 

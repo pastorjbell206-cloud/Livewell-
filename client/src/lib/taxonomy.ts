@@ -228,13 +228,6 @@ export const PRIMARY_TRACKS = TRACKS.filter(t => t.navPrimary);
 /** Tracks that appear on the homepage hero strip. */
 export const FEATURED_TRACKS = TRACKS.filter(t => t.featured);
 
-/** Tracks grouped for the nav dropdowns. */
-export const TRACK_GROUPS: Record<Track["group"], Track[]> = {
-  essays: TRACKS.filter(t => t.group === "essays"),
-  ministry: TRACKS.filter(t => t.group === "ministry"),
-  everyday: TRACKS.filter(t => t.group === "everyday"),
-};
-
 // ─────────────────────────────────────────────────────────────────────────
 // Two-movement / six-pillar model (2026 library restructure)
 //

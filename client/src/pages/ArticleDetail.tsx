@@ -11,7 +11,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useLocation, useParams } from "wouter";
 import { Streamdown } from "streamdown";
-import { ArrowLeft, Bookmark, Clock, Share2, User } from "lucide-react";
+import { ArrowLeft, Bookmark, Share2, User } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import ReadingProgressBar from "@/components/ReadingProgressBar";

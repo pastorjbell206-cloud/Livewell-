@@ -21,7 +21,8 @@ export function AdminSyncPanel() {
     setHistory((prev) => [...entries, ...prev].slice(0, 12));
   };
 
-  const { data: syncStatus } = trpc.feedSync.getStatus.useQuery();
+  trpc.feedSync.getStatus.useQuery();
+
   const syncAllMutation = trpc.feedSync.syncAll.useMutation({
     onSuccess: (data) => {
       const time = new Date().toLocaleTimeString();

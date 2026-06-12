@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { useState } from "react";
-import { BookOpen, ArrowLeft } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 interface Passage {
   ref: string;
@@ -622,8 +622,6 @@ export default function DeepBibleCompanion() {
   const [selectedBook, setSelectedBook] = useState<BibleBook | null>(null);
   const [selectedPassage, setSelectedPassage] = useState<Passage | null>(null);
   const [activeTab, setActiveTab] = useState(0);
-
-  const booksWithContent = BOOKS.filter(b => b.passages.length > 0);
 
   return (
     <Layout>

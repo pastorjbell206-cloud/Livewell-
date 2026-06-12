@@ -78,7 +78,7 @@ export default function GuidedWorkflow() {
               <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", whiteSpace: "nowrap" }}>{done} / {totalPrompts}</span>
             </div>
 
-            {data.stages.map((s, n) => {
+            {data.stages.map((s) => {
               const isOpen = open === s.id;
               const stageDone = s.prompts.filter((p) => (answers[p.id] || "").trim()).length;
               return (

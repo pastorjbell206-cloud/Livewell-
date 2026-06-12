@@ -62,7 +62,7 @@ export default function AdminPostEditor() {
         toast.success("Post created");
       }
       navigate("/admin/posts");
-    } catch (err) {
+    } catch {
       toast.error("Failed to save post");
     }
   };

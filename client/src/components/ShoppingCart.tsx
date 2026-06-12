@@ -20,19 +20,6 @@ export function ShoppingCart() {
     return cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
   }, [cartItems]);
 
-  const addToCart = (bookId: number, title: string, price: number) => {
-    const existing = cartItems.find((item) => item.bookId === bookId);
-    if (existing) {
-      setCartItems(
-        cartItems.map((item) =>
-          item.bookId === bookId ? { ...item, quantity: item.quantity + 1 } : item
-        )
-      );
-    } else {
-      setCartItems([...cartItems, { bookId, title, price, quantity: 1 }]);
-    }
-  };
-
   const removeFromCart = (bookId: number) => {
     setCartItems(cartItems.filter((item) => item.bookId !== bookId));
   };
