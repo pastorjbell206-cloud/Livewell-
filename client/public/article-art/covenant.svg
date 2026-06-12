@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Two interlocking rings forming a central lens, a covenant motif">
+  <defs>
+    <clipPath id="lens">
+      <circle cx="505" cy="315" r="190"/>
+    </clipPath>
+  </defs>
+
+  <!-- The room you read in -->
+  <rect width="1200" height="630" fill="#F5F0E6"/>
+  <rect width="1200" height="630" fill="#EDE8DC" opacity="0.5"
+        clip-path="url(#lens)"/>
+
+  <!-- One flesh: the overlap, weighted in mustard -->
+  <circle cx="695" cy="315" r="190" fill="#D4A017" fill-opacity="0.16" clip-path="url(#lens)"/>
+
+  <!-- Two rings -->
+  <g fill="none" stroke="#1A1A1A">
+    <circle cx="505" cy="315" r="190" stroke-width="1.6"/>
+    <circle cx="695" cy="315" r="190" stroke-width="1.6"/>
+    <circle cx="505" cy="315" r="172" stroke-width="0.6" opacity="0.28"/>
+    <circle cx="695" cy="315" r="172" stroke-width="0.6" opacity="0.28"/>
+  </g>
+
+  <!-- The lens, named in mustard -->
+  <path d="M600 150.5 A190 190 0 0 1 600 479.5 A190 190 0 0 1 600 150.5 Z"
+        fill="none" stroke="#D4A017" stroke-width="1.6"/>
+
+  <!-- Where they bind -->
+  <circle cx="600" cy="150.5" r="4.5" fill="#D4A017"/>
+  <circle cx="600" cy="479.5" r="4.5" fill="#D4A017"/>
+
+  <!-- A line under the weight -->
+  <rect x="560" y="566" width="80" height="2" fill="#D4A017"/>
+</svg>
