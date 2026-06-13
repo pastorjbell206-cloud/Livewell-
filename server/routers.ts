@@ -266,7 +266,7 @@ export const appRouter = router({
       }),
 
     /**
-     * Admin: publish the essay libraries (client/public/articles/*.json) into
+     * Admin: publish the essay libraries (client/src/data/articles/*.json) into
      * posts. Creates posts that don't exist yet and refreshes ones that do —
      * the browser replacement for running `npm run db:seed` from a terminal.
      * Same batched client flow as publishFullBodies.

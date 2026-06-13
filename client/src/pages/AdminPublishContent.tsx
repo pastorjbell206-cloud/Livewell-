@@ -19,15 +19,27 @@ interface EssayResult {
   dryRun: boolean;
 }
 
-/** The essay libraries shipped as content-as-data in client/public/articles/. */
-const ESSAY_LIBRARY_FILES = [
-  "apologetics", "biblical-theology", "christian-nationalism", "church-and-empire",
-  "church-history", "church-revitalization", "cultural-captivity", "doctrine-scripture",
-  "economic-justice", "marriage-and-family", "marriage-guides", "parenting-guides",
-  "pastoral-health", "preaching", "race-reconciliation", "rhythms-and-sabbath",
-  "staff-and-teams", "systemic-sin", "teen-apologetics", "the-vulnerable",
-  "vocation-and-money",
-];
+interface EssayFileItem {
+  slug: string;
+  title: string;
+  body: string;
+  excerpt?: string;
+  pillar?: string;
+  subPathway?: string;
+  readTime?: string;
+  coverImage?: string;
+}
+
+/**
+ * The essay libraries, bundled as lazy chunks. They used to be fetched from
+ * /articles/<name>.json, but vercel.json 301s /articles/:slug to /writing/:slug,
+ * so those URLs return the SPA's index.html — bundling sidesteps routing
+ * entirely. Each file loads only when an admin clicks the button.
+ */
+const ESSAY_LIBRARIES = import.meta.glob<EssayFileItem[]>(
+  "../data/articles/*.json",
+  { import: "default" }
+);
 
 export default function AdminPublishContent() {
   const publish = trpc.posts.publishFullBodies.useMutation();
@@ -46,16 +58,12 @@ export default function AdminPublishContent() {
       pillar: string | null; subPathway: string | null; readTime: string | null;
       readingTimeMinutes: number; coverImage: string | null;
     };
-    let all: EssayItem[] = [];
+    const all: EssayItem[] = [];
     try {
-      // Download every library file in the browser, then send small batches to
-      // the server — the same flow as the catalog publisher above.
+      // Load every bundled library chunk, then send small batches to the
+      // server — the same flow as the catalog publisher above.
       const lists = await Promise.all(
-        ESSAY_LIBRARY_FILES.map(async (name) => {
-          const resp = await fetch(`/articles/${name}.json`, { cache: "no-store" });
-          if (!resp.ok) throw new Error(`couldn't load ${name}.json (${resp.status})`);
-          return resp.json();
-        })
+        Object.values(ESSAY_LIBRARIES).map((load) => load())
       );
       for (const list of lists) {
         for (const e of list) {

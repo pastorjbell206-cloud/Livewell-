@@ -3,7 +3,7 @@
  * build-family-posts-seed.mjs
  *
  * Publishes the essay libraries by emitting `posts` INSERT rows into
- * scripts/seed-all-content.sql. Every essay under client/public/articles/*.json
+ * scripts/seed-all-content.sql. Every essay under client/src/data/articles/*.json
  * ships as content-as-data but was never seeded, so no reader could reach them.
  * This closes that gap for the whole library (marriage/parenting, apologetics,
  * church history, justice, preaching, and the rest).
@@ -23,10 +23,10 @@ import { dirname, join } from "node:path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const seedFile = join(__dirname, "seed-all-content.sql");
-const publicDir = join(__dirname, "..", "client", "public", "articles");
+const publicDir = join(__dirname, "..", "client", "src", "data", "articles");
 
-// Every essay library under client/public/articles/*.json — not just the family
-// files. These ship as content-as-data and are otherwise unreachable.
+// Every essay library under client/src/data/articles/*.json — not just the
+// family files. These ship as content-as-data and are otherwise unreachable.
 const FILES = readdirSync(publicDir)
   .filter(f => f.endsWith(".json"))
   .sort();
@@ -79,7 +79,7 @@ for (const file of FILES) {
 
 const block = [
   BEGIN,
-  `-- ${rows.length} essays from client/public/articles/*.json. Regenerate with`,
+  `-- ${rows.length} essays from client/src/data/articles/*.json. Regenerate with`,
   "-- node scripts/build-family-posts-seed.mjs",
   ...rows,
   END,
