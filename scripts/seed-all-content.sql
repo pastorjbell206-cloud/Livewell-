@@ -848,7 +848,7 @@ UPDATE posts SET audience = 'For Everyone,For Church Leaders' WHERE title LIKE '
 UPDATE posts SET audience = 'For Everyone' WHERE title LIKE '%finances%' OR title LIKE '%money%' OR title LIKE '%generosity%' OR title LIKE '%stewardship%' OR title LIKE '%giving%' OR title LIKE '%theology%' OR title LIKE '%church history%' OR title LIKE '%Greek%' OR title LIKE '%Hebrew%' OR title LIKE '%doctrine%';
 
 -- BEGIN generated: family posts (scripts/build-family-posts-seed.mjs)
--- 115 essays from client/public/articles/*.json. Regenerate with
+-- 115 essays from client/src/data/articles/*.json. Regenerate with
 -- node scripts/build-family-posts-seed.mjs
 INSERT INTO posts (title, slug, body, excerpt, pillar, readTime, readingTimeMinutes, coverImage, published, publishedAt, createdAt, updatedAt) VALUES ('Where Do Right and Wrong Even Come From?', 'apologetics-where-does-morality-come-from', 'Start with something you already believe. Torturing a child for fun is wrong. Not wrong-for-you, not wrong-in-our-culture, not wrong-because-we-voted-on-it. Wrong. If a society passed a law approving it, the law would be evil and the society would be mistaken, and you know this with a confidence that survives every argument anyone has ever made against it.
 
