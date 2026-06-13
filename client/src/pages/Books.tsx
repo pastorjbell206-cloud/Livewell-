@@ -120,6 +120,34 @@ export default function Books() {
         </div>
       </section>
 
+      {/* NEW RELEASE — featured ebook (standalone product page) */}
+      <section style={{ background: "var(--mustard)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/books/when-god-bless-america" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img
+              src="/books/when-god-bless-america.jpg"
+              alt="When God Bless America Replaces Thy Kingdom Come"
+              width={120} height={181}
+              style={{ width: "96px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.3)", flex: "0 0 auto" }}
+            />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--ink)", opacity: 0.7 }}>
+                New Release · Ebook
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                When God Bless America Replaces Thy Kingdom Come
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink)", opacity: 0.85, margin: 0 }}>
+                How Patriotism Became Our Practical Savior — available now for $8.99.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
       {/* READING PATHS */}
       <section
         style={{
