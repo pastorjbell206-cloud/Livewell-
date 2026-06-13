@@ -14,6 +14,8 @@ import Writing from "./pages/Writing";
 import ArticleDetail from "./pages/ArticleDetail";
 import Books from "./pages/Books";
 import BookDetail from "./pages/BookDetail";
+import WhenGodBlessAmerica from "./pages/WhenGodBlessAmerica";
+import WhenGodBlessAmericaThankYou from "./pages/WhenGodBlessAmericaThankYou";
 import About from "./pages/About";
 
 const Resources = lazy(() => import("./pages/Resources"));
@@ -291,6 +293,8 @@ function Router() {
         <Route path="/resources/creeds" component={CreedsLibrary} />
         <Route path="/resources" component={Resources} />
         <Route path="/books" component={Books} />
+        <Route path="/books/when-god-bless-america/thank-you" component={WhenGodBlessAmericaThankYou} />
+        <Route path="/books/when-god-bless-america" component={WhenGodBlessAmerica} />
         <Route path="/books/:slug" component={BookDetail} />
         <Route path="/substack" component={SubstackPage} />
         <Route path="/pastors" component={Pastors} />

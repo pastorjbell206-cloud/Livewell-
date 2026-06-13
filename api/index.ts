@@ -661,6 +661,23 @@ function toPostCard(row: any): any {
   };
 }
 
+// Card shape for `posts` rows (camelCase columns) — distinct from toPostCard,
+// which maps the snake_case `articles` table. Used by posts.getFeatured.
+function toFeaturedPostCard(row: any): any {
+  return {
+    id: row.id,
+    slug: row.slug,
+    title: row.title,
+    excerpt: row.excerpt || "",
+    pillar: row.pillar || "Theological Depth",
+    readTime: row.readTime || "5 min",
+    readingTimeMinutes: row.readingTimeMinutes ?? 5,
+    author: "James Bell",
+    createdAt: row.createdAt || row.publishedAt,
+    publishedAt: row.publishedAt || row.createdAt,
+  };
+}
+
 async function trpcListPosts(): Promise<any[]> {
   return await withConn(async (c) => {
     const base = "id, slug, title, excerpt, pillar, readTime, published, featured, publishedAt, createdAt";
@@ -669,12 +686,12 @@ async function trpcListPosts(): Promise<any[]> {
     let rows: any = null;
     try {
       [rows] = await c.execute(
-        `SELECT ${base}, subPathway, isSeries FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 500`
+        `SELECT ${base}, subPathway, isSeries FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 2000`
       );
     } catch {
       try {
         [rows] = await c.execute(
-          `SELECT ${base} FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 500`
+          `SELECT ${base} FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 2000`
         );
       } catch { rows = null; }
     }
@@ -1367,9 +1384,9 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
       case "posts.getFeatured": {
         return await withConn(async (c) => {
           const [rows]: any = await c.execute(
-            "SELECT id, slug, title, excerpt, pillar, published_at, created_at, word_count FROM posts WHERE featured = true AND published = true ORDER BY created_at DESC LIMIT 10"
+            "SELECT id, slug, title, excerpt, pillar, readTime, readingTimeMinutes, publishedAt, createdAt FROM posts WHERE featured = true AND published = true ORDER BY createdAt DESC LIMIT 10"
           );
-          return trpcOk(res, (rows as any[]).map(toPostCard));
+          return trpcOk(res, (rows as any[]).map(toFeaturedPostCard));
         });
       }
       default:
@@ -1546,7 +1563,14 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
     case "resources.listAll":
       try {
         return await withConn(async (c) => {
-          const [rows]: any = await c.execute("SELECT * FROM resources ORDER BY createdAt DESC");
+          // listPublished must only return published resources; listAll (admin)
+          // returns everything. Both are bounded so the payload can't run away.
+          const onlyPublished = proc === "resources.listPublished";
+          const [rows]: any = await c.execute(
+            onlyPublished
+              ? "SELECT * FROM resources WHERE published = true ORDER BY createdAt DESC LIMIT 1000"
+              : "SELECT * FROM resources ORDER BY createdAt DESC LIMIT 1000"
+          );
           return { result: { data: superjson.serialize(rows) } };
         });
       } catch { return { result: { data: superjson.serialize([]) } }; }
@@ -1592,8 +1616,8 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
     case "posts.getFeatured":
       try {
         return await withConn(async (c) => {
-          const [rows]: any = await c.execute("SELECT id, slug, title, excerpt, pillar, published_at, created_at, word_count FROM posts WHERE featured = true AND published = true ORDER BY created_at DESC LIMIT 10");
-          return { result: { data: superjson.serialize((rows as any[]).map(toPostCard)) } };
+          const [rows]: any = await c.execute("SELECT id, slug, title, excerpt, pillar, readTime, readingTimeMinutes, publishedAt, createdAt FROM posts WHERE featured = true AND published = true ORDER BY createdAt DESC LIMIT 10");
+          return { result: { data: superjson.serialize((rows as any[]).map(toFeaturedPostCard)) } };
         });
       } catch { return { result: { data: superjson.serialize([]) } }; }
     case "community.testimonials.listAll":
