@@ -663,7 +663,7 @@ function toPostCard(row: any): any {
 
 async function trpcListPosts(): Promise<any[]> {
   return await withConn(async (c) => {
-    const base = "id, slug, title, excerpt, body, pillar, readTime, published, featured, publishedAt, createdAt";
+    const base = "id, slug, title, excerpt, pillar, readTime, published, featured, publishedAt, createdAt";
     // Try with the two-level columns; if they don't exist yet, fall back without
     // them so the site keeps working before the taxonomy migration is run.
     let rows: any = null;
@@ -681,7 +681,11 @@ async function trpcListPosts(): Promise<any[]> {
     if (Array.isArray(rows) && rows.length > 0) {
       return (rows as any[]).map((r) => ({
         id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
-        body: r.body || null, content: r.body || null,
+        // Listing pages render cards (title/excerpt), never the body. Sending the
+        // full body of every published post made this response ~7MB once all 421
+        // articles were filled, which hung the article lists on "loading". The
+        // body is fetched per-article by getBySlug, so the list omits it.
+        body: null, content: null,
         pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
         published: r.published, featured: r.featured, topic: r.topic || null,
         subPathway: r.subPathway ?? null, isSeries: !!r.isSeries,
