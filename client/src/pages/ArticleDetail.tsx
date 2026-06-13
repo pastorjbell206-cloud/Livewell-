@@ -22,6 +22,7 @@ import { CitationCopy } from "@/components/CitationCopy";
 import { AudienceShare } from "@/components/AudienceShare";
 import { AudienceLabel } from "@/components/AudienceLabel";
 import { TrackChip } from "@/components/TrackChip";
+import { GeneratedHero } from "@/components/GeneratedHero";
 import { trpc } from "@/lib/trpc";
 import { pillarForPost } from "@/lib/taxonomy";
 import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
@@ -557,10 +558,10 @@ export default function ArticleDetail() {
           </div>
         </section>
 
-        {/* HERO IMAGE */}
-        {post.coverImage && (
-          <section style={{ padding: "var(--s-5) var(--s-4) 0" }}>
-            <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+        {/* HERO IMAGE — real cover when present, on-brand generated art otherwise */}
+        <section style={{ padding: "var(--s-5) var(--s-4) 0" }}>
+          <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+            {post.coverImage ? (
               <img
                 src={post.coverImage}
                 alt={post.title}
@@ -577,9 +578,15 @@ export default function ArticleDetail() {
                   display: "block",
                 }}
               />
-            </div>
-          </section>
-        )}
+            ) : (
+              <GeneratedHero
+                seed={post.slug}
+                pillarId={pillarForPost(post)?.id}
+                title={post.title}
+              />
+            )}
+          </div>
+        </section>
 
         {/* BODY */}
         <section style={{ padding: "var(--s-6) var(--s-4)" }}>
