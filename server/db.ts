@@ -346,6 +346,73 @@ export async function bulkUpdatePostBodies(
   return { matched, updated, missing };
 }
 
+/**
+ * Upsert the essay-library posts by slug (admin "Publish essay libraries"
+ * button). Unlike bulkUpdatePostBodies this CREATES posts that don't exist yet
+ * — the essay libraries ship as content-as-data and most were never in the
+ * database at all. Existing posts are refreshed (body, excerpt, taxonomy, read
+ * time, cover) and published; publishedAt is preserved when already set.
+ * dryRun reports what would happen without writing.
+ */
+export async function upsertEssayPosts(
+  items: {
+    slug: string;
+    title: string;
+    body: string;
+    excerpt: string | null;
+    pillar: string | null;
+    subPathway: string | null;
+    readTime: string | null;
+    readingTimeMinutes: number;
+    coverImage: string | null;
+  }[],
+  dryRun = false
+) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  let inserted = 0;
+  let updated = 0;
+  for (const it of items) {
+    const rows = await db.select({ id: posts.id }).from(posts).where(eq(posts.slug, it.slug)).limit(1);
+    if (rows.length) {
+      if (!dryRun) {
+        const set: any = {
+          title: it.title,
+          body: it.body,
+          excerpt: it.excerpt,
+          pillar: it.pillar,
+          subPathway: it.subPathway,
+          readTime: it.readTime,
+          readingTimeMinutes: it.readingTimeMinutes,
+          coverImage: it.coverImage,
+          published: true,
+          publishedAt: sql`COALESCE(publishedAt, NOW())`,
+        };
+        await db.update(posts).set(set).where(eq(posts.slug, it.slug));
+      }
+      updated++;
+    } else {
+      if (!dryRun) {
+        await db.insert(posts).values({
+          slug: it.slug,
+          title: it.title,
+          body: it.body,
+          excerpt: it.excerpt,
+          pillar: it.pillar,
+          subPathway: it.subPathway,
+          readTime: it.readTime,
+          readingTimeMinutes: it.readingTimeMinutes,
+          coverImage: it.coverImage,
+          published: true,
+          publishedAt: new Date(),
+        });
+      }
+      inserted++;
+    }
+  }
+  return { inserted, updated };
+}
+
 // ─── Resources ───────────────────────────────────────────────────────
 
 export async function createResource(data: InsertResource) {
