@@ -210,7 +210,10 @@ export function GeneratedHero({
     >
       <rect width={VB_W} height={VB_H} fill="var(--bone)" />
       <rect width={VB_W} height={VB_H} fill="var(--bone-warm)" opacity={0.45} />
-      {MOTIFS[motifIndex](h)}
+      {/* A slug-derived tilt distinguishes essays that share a pillar's motif. */}
+      <g transform={`rotate(${(((h >> 8) % 25) - 12)} ${CX} ${CY})`}>
+        {MOTIFS[motifIndex](h)}
+      </g>
       {/* The line under the weight — constant across every motif for cohesion */}
       <rect x={CX - 40} y={566} width={80} height={2} fill={mustard} />
     </svg>
