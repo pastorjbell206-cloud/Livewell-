@@ -2,10 +2,11 @@
 /**
  * build-family-posts-seed.mjs
  *
- * Publishes the family-formation essay libraries by emitting `posts` INSERT
- * rows into scripts/seed-all-content.sql. The essays live as content-as-data in
- * client/public/articles/{marriage-and-family,marriage-guides,parenting-guides}.json
- * but were never seeded, so no reader could reach them. This closes that gap.
+ * Publishes the essay libraries by emitting `posts` INSERT rows into
+ * scripts/seed-all-content.sql. Every essay under client/public/articles/*.json
+ * ships as content-as-data but was never seeded, so no reader could reach them.
+ * This closes that gap for the whole library (marriage/parenting, apologetics,
+ * church history, justice, preaching, and the rest).
  *
  * Idempotent: rewrites the block between the BEGIN/END markers on every run, so
  * editing the source JSON and re-running keeps the seed in sync. Each row upserts
@@ -16,7 +17,7 @@
  * Run: node scripts/build-family-posts-seed.mjs
  * Then publish to the DB: DATABASE_URL=... npm run db:seed
  */
-import { readFileSync, writeFileSync } from "node:fs";
+import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -24,7 +25,11 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const seedFile = join(__dirname, "seed-all-content.sql");
 const publicDir = join(__dirname, "..", "client", "public", "articles");
 
-const SOURCES = ["marriage-and-family", "marriage-guides", "parenting-guides"];
+// Every essay library under client/public/articles/*.json — not just the family
+// files. These ship as content-as-data and are otherwise unreachable.
+const FILES = readdirSync(publicDir)
+  .filter(f => f.endsWith(".json"))
+  .sort();
 const BEGIN = "-- BEGIN generated: family posts (scripts/build-family-posts-seed.mjs)";
 const END = "-- END generated: family posts";
 
@@ -39,8 +44,8 @@ function minutesFrom(readTime) {
 }
 
 const rows = [];
-for (const name of SOURCES) {
-  const items = JSON.parse(readFileSync(join(publicDir, `${name}.json`), "utf8"));
+for (const file of FILES) {
+  const items = JSON.parse(readFileSync(join(publicDir, file), "utf8"));
   for (const it of items) {
     // Guard the seeder's `;\n` statement splitter: a semicolon at end of a line
     // inside a literal would corrupt the statement. The sources are clean today
@@ -74,7 +79,7 @@ for (const name of SOURCES) {
 
 const block = [
   BEGIN,
-  `-- ${rows.length} marriage, family, and parenting essays. Regenerate with`,
+  `-- ${rows.length} essays from client/public/articles/*.json. Regenerate with`,
   "-- node scripts/build-family-posts-seed.mjs",
   ...rows,
   END,
@@ -91,4 +96,4 @@ if (beginIdx !== -1) {
   seed = seed.replace(/\s*$/, "\n") + "\n" + block;
 }
 writeFileSync(seedFile, seed);
-console.log(`Wrote ${rows.length} family post rows to scripts/seed-all-content.sql`);
+console.log(`Wrote ${rows.length} article post rows to scripts/seed-all-content.sql`);
