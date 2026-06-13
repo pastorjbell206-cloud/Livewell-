@@ -6,12 +6,32 @@
  * Link; Stripe redirects to /books/when-god-bless-america/thank-you on success,
  * where the EPUB and PDF download links live.
  */
+import { createElement, useEffect } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
 
-const STRIPE_LINK = "https://buy.stripe.com/6oUaEX97E3xs0Pcbvsa3u00";
 const COVER = "/books/when-god-bless-america.jpg";
+
+/** Stripe's hosted Buy Button web component. Loads the script once, then renders
+ *  the <stripe-buy-button> custom element (created via createElement so it needs
+ *  no JSX intrinsic-element declaration). The publishable key is public by design. */
+function StripeBuyButton() {
+  useEffect(() => {
+    if (!document.getElementById("stripe-buy-button-js")) {
+      const s = document.createElement("script");
+      s.id = "stripe-buy-button-js";
+      s.async = true;
+      s.src = "https://js.stripe.com/v3/buy-button.js";
+      document.head.appendChild(s);
+    }
+  }, []);
+  return createElement("stripe-buy-button", {
+    "buy-button-id": "buy_btn_1ThiwSG7Y8x20otNSD1wDhtI",
+    "publishable-key":
+      "pk_live_51RYCqAG7Y8x20otN6Qm3UgBaVDYFC00eaEXlrVT1hShuTW7qg3ylfcX3UHGOc0oyX75k6c4DhsKyz4NFSU4aZkOx00HzSLA7FH",
+  });
+}
 
 const CHAPTERS: [string, string][] = [
   ["Introduction", "Not Persecuted—Seduced"],
@@ -66,12 +86,7 @@ export default function WhenGodBlessAmerica() {
               James Bell
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "18px", flexWrap: "wrap" }}>
-              <a
-                href={STRIPE_LINK}
-                style={{ display: "inline-flex", alignItems: "center", gap: "10px", background: "var(--mustard)", color: "var(--ink)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "15px", padding: "15px 30px", borderRadius: "var(--radius-sm)", textDecoration: "none" }}
-              >
-                Buy the ebook — $8.99
-              </a>
+              <StripeBuyButton />
               <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(245,240,230,.65)" }}>
                 EPUB + PDF · instant download · secure checkout by Stripe
               </span>
@@ -129,12 +144,9 @@ export default function WhenGodBlessAmerica() {
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,.8)", maxWidth: "52ch", margin: "0 auto 28px" }}>
             $8.99 for the complete ebook — EPUB for your e-reader and PDF for everything else, delivered the moment you check out.
           </p>
-          <a
-            href={STRIPE_LINK}
-            style={{ display: "inline-flex", alignItems: "center", gap: "10px", background: "var(--mustard)", color: "var(--ink)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "15px", padding: "15px 34px", borderRadius: "var(--radius-sm)", textDecoration: "none" }}
-          >
-            Buy the ebook — $8.99
-          </a>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <StripeBuyButton />
+          </div>
           <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.7, color: "rgba(245,240,230,.6)", maxWidth: "56ch", margin: "44px auto 0", borderTop: "1px solid rgba(245,240,230,.18)", paddingTop: "28px" }}>
             James Bell is a pastor, writer, and ministry leader committed to helping the church think clearly, live faithfully, and recover its allegiance to Christ above every cultural and political idol.
           </p>
