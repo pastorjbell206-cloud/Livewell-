@@ -22,6 +22,7 @@ import { CitationCopy } from "@/components/CitationCopy";
 import { AudienceShare } from "@/components/AudienceShare";
 import { AudienceLabel } from "@/components/AudienceLabel";
 import { TrackChip } from "@/components/TrackChip";
+import { GeneratedHero } from "@/components/GeneratedHero";
 import { trpc } from "@/lib/trpc";
 import { pillarForPost } from "@/lib/taxonomy";
 import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
@@ -132,6 +133,63 @@ function BookmarkButton({ slug }: { slug: string }) {
       />
       {bookmarked ? "Saved" : "Save"}
     </button>
+  );
+}
+
+/**
+ * ShareableQuote — every blockquote in an essay renders as a pull-quote the
+ * reader can lift and share. Reads its own rendered text (so it survives
+ * whatever markup Streamdown puts inside), then hands it to the native share
+ * sheet, falling back to a clipboard copy with attribution and the article URL.
+ */
+function ShareableQuote({
+  children,
+  shareTitle,
+  shareUrl,
+}: {
+  children?: React.ReactNode;
+  shareTitle: string;
+  shareUrl: string;
+}) {
+  const textRef = useRef<HTMLDivElement>(null);
+  const [copied, setCopied] = useState(false);
+
+  const onShare = async () => {
+    const quote = textRef.current?.textContent?.trim() ?? "";
+    if (!quote) return;
+    const attributed = `"${quote}" — James Bell`;
+    if (typeof navigator !== "undefined" && navigator.share) {
+      try {
+        await navigator.share({ title: shareTitle, text: attributed, url: shareUrl });
+        return;
+      } catch {
+        // user dismissed — fall through to clipboard
+      }
+    }
+    try {
+      await navigator.clipboard.writeText(`${attributed}\n${shareUrl}`);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1800);
+    } catch {
+      // clipboard unavailable
+    }
+  };
+
+  return (
+    <blockquote className="quote-share">
+      <div className="quote-share__text" ref={textRef}>
+        {children}
+      </div>
+      <button
+        type="button"
+        className="quote-share__btn"
+        onClick={onShare}
+        aria-label="Share this quote"
+      >
+        <Share2 size={13} aria-hidden />
+        {copied ? "Copied" : "Share this quote"}
+      </button>
+    </blockquote>
   );
 }
 
@@ -500,10 +558,10 @@ export default function ArticleDetail() {
           </div>
         </section>
 
-        {/* HERO IMAGE */}
-        {post.coverImage && (
-          <section style={{ padding: "var(--s-5) var(--s-4) 0" }}>
-            <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+        {/* HERO IMAGE — real cover when present, on-brand generated art otherwise */}
+        <section style={{ padding: "var(--s-5) var(--s-4) 0" }}>
+          <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+            {post.coverImage ? (
               <img
                 src={post.coverImage}
                 alt={post.title}
@@ -520,9 +578,15 @@ export default function ArticleDetail() {
                   display: "block",
                 }}
               />
-            </div>
-          </section>
-        )}
+            ) : (
+              <GeneratedHero
+                seed={post.slug}
+                pillarId={pillarForPost(post)?.id}
+                title={post.title}
+              />
+            )}
+          </div>
+        </section>
 
         {/* BODY */}
         <section style={{ padding: "var(--s-6) var(--s-4)" }}>
@@ -540,7 +604,17 @@ export default function ArticleDetail() {
             }}
           >
             {post.body ? (
-                                                        <Streamdown>{post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}</Streamdown>
+              <Streamdown
+                components={{
+                  blockquote: ({ children }: { children?: React.ReactNode }) => (
+                    <ShareableQuote shareTitle={post.title} shareUrl={canonical}>
+                      {children}
+                    </ShareableQuote>
+                  ),
+                }}
+              >
+                {post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}
+              </Streamdown>
             ) : (
               <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
                 This article is in preparation.

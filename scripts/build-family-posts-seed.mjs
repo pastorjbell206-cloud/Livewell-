@@ -8,8 +8,10 @@
  * but were never seeded, so no reader could reach them. This closes that gap.
  *
  * Idempotent: rewrites the block between the BEGIN/END markers on every run, so
- * editing the source JSON and re-running keeps the seed in sync. The seeder
- * itself uses INSERT IGNORE, so re-seeding never duplicates a slug.
+ * editing the source JSON and re-running keeps the seed in sync. Each row upserts
+ * on the unique slug (ON DUPLICATE KEY UPDATE), so re-seeding refreshes the
+ * content (body, cover, reading time) of an already-published essay rather than
+ * silently skipping it the way INSERT IGNORE would.
  *
  * Run: node scripts/build-family-posts-seed.mjs
  * Then publish to the DB: DATABASE_URL=... npm run db:seed
@@ -44,9 +46,10 @@ for (const name of SOURCES) {
     // inside a literal would corrupt the statement. The sources are clean today
     // (verified), but normalize defensively so future edits stay safe.
     const body = String(it.body ?? "").replace(/;([ \t]*)\r?\n/g, "; ");
+    const cover = it.coverImage ? sql(it.coverImage) : "NULL";
     rows.push(
-      "INSERT IGNORE INTO posts " +
-        "(title, slug, body, excerpt, pillar, readTime, readingTimeMinutes, published, publishedAt, createdAt, updatedAt) VALUES (" +
+      "INSERT INTO posts " +
+        "(title, slug, body, excerpt, pillar, readTime, readingTimeMinutes, coverImage, published, publishedAt, createdAt, updatedAt) VALUES (" +
         [
           sql(it.title),
           sql(it.slug),
@@ -55,12 +58,16 @@ for (const name of SOURCES) {
           sql(it.pillar),
           sql(it.readTime),
           minutesFrom(it.readTime),
+          cover,
           "1",
           "NOW()",
           "NOW()",
           "NOW()",
         ].join(", ") +
-        ");"
+        ") ON DUPLICATE KEY UPDATE " +
+        "title=VALUES(title), body=VALUES(body), excerpt=VALUES(excerpt), " +
+        "readTime=VALUES(readTime), readingTimeMinutes=VALUES(readingTimeMinutes), " +
+        "coverImage=VALUES(coverImage), published=VALUES(published), updatedAt=NOW();"
     );
   }
 }
