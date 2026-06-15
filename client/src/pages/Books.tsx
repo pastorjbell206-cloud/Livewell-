@@ -148,6 +148,33 @@ export default function Books() {
         </Link>
       </section>
 
+      {/* NEW RELEASES — three new ebooks */}
+      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+          <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)", marginBottom: "8px" }}>
+            New Releases · Ebooks
+          </div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 400, margin: "0 0 28px", color: "var(--bone)" }}>
+            Three new books, available now
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "var(--s-4)" }}>
+            {[
+              { slug: "believe", cover: "/books/believe.jpg", title: "Believe", sub: "The Rational Case for Christian Faith" },
+              { slug: "deconstruction-of-faith", cover: "/books/deconstruction-of-faith.jpg", title: "The Deconstruction of Faith", sub: "Why People Are Leaving the Church — and What Comes After" },
+              { slug: "raising-believers", cover: "/books/raising-believers.jpg", title: "Raising Believers", sub: "Christian Parenting in a Post-Christian World" },
+            ].map((b) => (
+              <Link key={b.slug} href={`/books/${b.slug}`} style={{ textDecoration: "none", color: "inherit", display: "block" }}>
+                <img src={b.cover} alt={`${b.title} — cover`} width={1600} height={2560}
+                  style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 12px 32px rgba(0,0,0,.4)" }} />
+                <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--bone)", margin: "14px 0 4px", lineHeight: 1.2 }}>{b.title}</h3>
+                <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "rgba(245,240,230,.7)", margin: "0 0 8px", lineHeight: 1.4 }}>{b.sub}</p>
+                <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard)", letterSpacing: "0.04em" }}>Get the ebook →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* READING PATHS */}
       <section
         style={{

@@ -16,6 +16,12 @@ import Books from "./pages/Books";
 import BookDetail from "./pages/BookDetail";
 import WhenGodBlessAmerica from "./pages/WhenGodBlessAmerica";
 import WhenGodBlessAmericaThankYou from "./pages/WhenGodBlessAmericaThankYou";
+import Believe from "./pages/Believe";
+import BelieveThankYou from "./pages/BelieveThankYou";
+import DeconstructionOfFaith from "./pages/DeconstructionOfFaith";
+import DeconstructionOfFaithThankYou from "./pages/DeconstructionOfFaithThankYou";
+import RaisingBelievers from "./pages/RaisingBelievers";
+import RaisingBelieversThankYou from "./pages/RaisingBelieversThankYou";
 import About from "./pages/About";
 
 const Resources = lazy(() => import("./pages/Resources"));
@@ -295,6 +301,12 @@ function Router() {
         <Route path="/books" component={Books} />
         <Route path="/books/when-god-bless-america/thank-you" component={WhenGodBlessAmericaThankYou} />
         <Route path="/books/when-god-bless-america" component={WhenGodBlessAmerica} />
+        <Route path="/books/believe/thank-you" component={BelieveThankYou} />
+        <Route path="/books/believe" component={Believe} />
+        <Route path="/books/deconstruction-of-faith/thank-you" component={DeconstructionOfFaithThankYou} />
+        <Route path="/books/deconstruction-of-faith" component={DeconstructionOfFaith} />
+        <Route path="/books/raising-believers/thank-you" component={RaisingBelieversThankYou} />
+        <Route path="/books/raising-believers" component={RaisingBelievers} />
         <Route path="/books/:slug" component={BookDetail} />
         <Route path="/substack" component={SubstackPage} />
         <Route path="/pastors" component={Pastors} />
