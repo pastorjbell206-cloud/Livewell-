@@ -11,7 +11,7 @@ import { StripeBuyButton } from "@/components/StripeBuyButton";
 import { SITE_URL } from "@/lib/site";
 
 const COVER = "/books/believe.jpg";
-const BUY_BUTTON_ID = "REPLACE_WITH_BELIEVE_BUY_BUTTON_ID";
+const PAYMENT_LINK = "https://buy.stripe.com/28E28r6ZwfgagOa9nka3u01";
 
 const CHAPTERS: [string, string][] = [
   ["1", "Why Is There Something Rather Than Nothing?"],
@@ -61,7 +61,7 @@ export default function Believe() {
               James Bell
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "18px", flexWrap: "wrap" }}>
-              <StripeBuyButton buyButtonId={BUY_BUTTON_ID} />
+              <StripeBuyButton paymentLink={PAYMENT_LINK} />
               <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(245,240,230,.65)" }}>
                 EPUB + PDF · instant download · secure checkout by Stripe
               </span>
@@ -112,7 +112,7 @@ export default function Believe() {
             $8.99 for the complete ebook — EPUB for your e-reader and PDF for everything else, delivered the moment you check out.
           </p>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <StripeBuyButton buyButtonId={BUY_BUTTON_ID} />
+            <StripeBuyButton paymentLink={PAYMENT_LINK} />
           </div>
           <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.7, color: "rgba(245,240,230,.6)", maxWidth: "56ch", margin: "44px auto 0", borderTop: "1px solid rgba(245,240,230,.18)", paddingTop: "28px" }}>
             James Bell is the Lead Pastor of First Baptist Church of Fenton, founder of the Pastors Connection Network, and the author of more than twenty books. He came to faith from atheism and writes for the reader whose faith has outgrown the answers they were given.
