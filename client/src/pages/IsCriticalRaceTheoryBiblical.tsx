@@ -12,7 +12,7 @@ import { StripeBuyButton } from "@/components/StripeBuyButton";
 import { SITE_URL } from "@/lib/site";
 
 const COVER = "/books/critical-race-theory-biblical.jpg";
-const PAYMENT_LINK = ""; // TODO: Stripe payment link
+const PAYMENT_LINK = "https://buy.stripe.com/aFadR983A8RMeG2gPMa3u08";
 
 const eyebrow: React.CSSProperties = {
   fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, textTransform: "uppercase",
