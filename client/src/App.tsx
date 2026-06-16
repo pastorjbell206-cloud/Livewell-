@@ -22,6 +22,16 @@ import DeconstructionOfFaith from "./pages/DeconstructionOfFaith";
 import DeconstructionOfFaithThankYou from "./pages/DeconstructionOfFaithThankYou";
 import RaisingBelievers from "./pages/RaisingBelievers";
 import RaisingBelieversThankYou from "./pages/RaisingBelieversThankYou";
+import TheMonsterInTheMirror from "./pages/TheMonsterInTheMirror";
+import TheMonsterInTheMirrorThankYou from "./pages/TheMonsterInTheMirrorThankYou";
+import TheReliabilityOfScripture from "./pages/TheReliabilityOfScripture";
+import TheReliabilityOfScriptureThankYou from "./pages/TheReliabilityOfScriptureThankYou";
+import BibleAndHomosexuality from "./pages/BibleAndHomosexuality";
+import BibleAndHomosexualityThankYou from "./pages/BibleAndHomosexualityThankYou";
+import BibleAndTransgenderIdentity from "./pages/BibleAndTransgenderIdentity";
+import BibleAndTransgenderIdentityThankYou from "./pages/BibleAndTransgenderIdentityThankYou";
+import IsCriticalRaceTheoryBiblical from "./pages/IsCriticalRaceTheoryBiblical";
+import IsCriticalRaceTheoryBiblicalThankYou from "./pages/IsCriticalRaceTheoryBiblicalThankYou";
 import About from "./pages/About";
 
 const Resources = lazy(() => import("./pages/Resources"));
@@ -307,6 +317,16 @@ function Router() {
         <Route path="/books/deconstruction-of-faith" component={DeconstructionOfFaith} />
         <Route path="/books/raising-believers/thank-you" component={RaisingBelieversThankYou} />
         <Route path="/books/raising-believers" component={RaisingBelievers} />
+        <Route path="/books/the-monster-in-the-mirror/thank-you" component={TheMonsterInTheMirrorThankYou} />
+        <Route path="/books/the-monster-in-the-mirror" component={TheMonsterInTheMirror} />
+        <Route path="/books/the-reliability-of-scripture/thank-you" component={TheReliabilityOfScriptureThankYou} />
+        <Route path="/books/the-reliability-of-scripture" component={TheReliabilityOfScripture} />
+        <Route path="/books/bible-and-homosexuality/thank-you" component={BibleAndHomosexualityThankYou} />
+        <Route path="/books/bible-and-homosexuality" component={BibleAndHomosexuality} />
+        <Route path="/books/bible-and-transgender-identity/thank-you" component={BibleAndTransgenderIdentityThankYou} />
+        <Route path="/books/bible-and-transgender-identity" component={BibleAndTransgenderIdentity} />
+        <Route path="/books/critical-race-theory-biblical/thank-you" component={IsCriticalRaceTheoryBiblicalThankYou} />
+        <Route path="/books/critical-race-theory-biblical" component={IsCriticalRaceTheoryBiblical} />
         <Route path="/books/:slug" component={BookDetail} />
         <Route path="/substack" component={SubstackPage} />
         <Route path="/pastors" component={Pastors} />
