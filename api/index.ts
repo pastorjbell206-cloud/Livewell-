@@ -1900,7 +1900,7 @@ const EBOOKS: Record<string, EbookConfig> = {
 const PRODUCTION_SITE_URL = "https://livewellbyjamesbell.co";
 
 function getStripe(): Stripe | null {
-  const key = process.env.STRIPE_SECRET_KEY;
+  const key = process.env.STRIPE_SECRET_KEY?.trim();
   if (!key) return null;
   return new Stripe(key);
 }
@@ -1922,7 +1922,7 @@ async function ebookCheckout(req: VercelRequest, res: VercelResponse) {
     const slug = String(body?.slug || "");
     const book = EBOOKS[slug];
     if (!book) return json(res, 400, { error: "Unknown book." });
-    const priceId = process.env[book.priceEnv];
+    const priceId = process.env[book.priceEnv]?.trim();
     if (!priceId) return json(res, 503, { error: "This book is not on sale yet." });
     const origin = siteOrigin(req);
     const session = await stripe.checkout.sessions.create({
