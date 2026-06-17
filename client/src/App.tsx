@@ -32,6 +32,10 @@ import BibleAndTransgenderIdentity from "./pages/BibleAndTransgenderIdentity";
 import BibleAndTransgenderIdentityThankYou from "./pages/BibleAndTransgenderIdentityThankYou";
 import IsCriticalRaceTheoryBiblical from "./pages/IsCriticalRaceTheoryBiblical";
 import IsCriticalRaceTheoryBiblicalThankYou from "./pages/IsCriticalRaceTheoryBiblicalThankYou";
+import ConsiderTheBirds from "./pages/ConsiderTheBirds";
+import ConsiderTheBirdsThankYou from "./pages/ConsiderTheBirdsThankYou";
+import WhereYourTreasureIs from "./pages/WhereYourTreasureIs";
+import WhereYourTreasureIsThankYou from "./pages/WhereYourTreasureIsThankYou";
 import About from "./pages/About";
 
 const Resources = lazy(() => import("./pages/Resources"));
@@ -328,6 +332,11 @@ function Router() {
         <Route path="/books/critical-race-theory-biblical/thank-you" component={IsCriticalRaceTheoryBiblicalThankYou} />
         <Route path="/books/critical-race-theory-biblical" component={IsCriticalRaceTheoryBiblical} />
         <Route path="/books/:slug" component={BookDetail} />
+        {/* LiveWell series — top-level sales + gated thank-you pages */}
+        <Route path="/consider-the-birds/thank-you" component={ConsiderTheBirdsThankYou} />
+        <Route path="/consider-the-birds" component={ConsiderTheBirds} />
+        <Route path="/where-your-treasure-is/thank-you" component={WhereYourTreasureIsThankYou} />
+        <Route path="/where-your-treasure-is" component={WhereYourTreasureIs} />
         <Route path="/substack" component={SubstackPage} />
         <Route path="/pastors" component={Pastors} />
         <Route path="/about" component={About} />
