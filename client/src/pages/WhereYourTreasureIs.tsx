@@ -18,20 +18,30 @@ const COVER = "/books/where-your-treasure-is.jpg";
 const TITLE = "Where Your Treasure Is";
 const SUBTITLE = "What the Bible Says About Money, and the Heart It Means to Free";
 
-const INSIDE: string[] = [
-  "the rich fool and his barns (Luke 12)",
-  "the rich young ruler who walked away sad, and the camel and the needle",
-  "“you cannot serve God and mammon” — why Jesus named money a rival master",
-  "the love of money in 1 Timothy 6, and biblical contentment",
-  "the open-handed economy of the Jubilee, and the generosity that breaks mammon’s grip",
+const CHAPTERS: [string, string][] = [
+  ["Introduction", "The Master We Don’t Name"],
+  ["One", "The Second Master"],
+  ["Two", "Where Your Treasure Is"],
+  ["Three", "The Good Eye and the Bad Eye"],
+  ["Four", "The Rich Fool"],
+  ["Five", "The Deceitfulness of Riches"],
+  ["Six", "The Love of Money"],
+  ["Seven", "The Camel and the Needle"],
+  ["Eight", "Enough."],
+  ["Nine", "The Open Hand"],
+  ["Ten", "Mammon and the Poor"],
+  ["Eleven", "The Year of Release"],
+  ["Twelve", "Treasure in Heaven"],
+  ["Thirteen", "The Heart Set Free"],
+  ["Fourteen", "Open-Handed"],
 ];
 
 const PULL_QUOTES: string[] = [
-  "Money is the one subject a congregation will forgive a pastor for nearly anything except raising. The flinch is information.",
-  "We guard what we are afraid to lose.",
-  "The treasure leads, and the heart follows it, the way a compass needle turns north whether or not you meant it to.",
-  "Mammon does not check your balance before it goes to work on you. The pull is the same in a trailer and a penthouse.",
-  "The closed fist can become an open hand — not by willpower, not by shame, but by moving the treasure to a place that cannot be lost.",
+  "“Money” is a thing you manage. Mammon is something that manages you.",
+  "We think the heart leads and the money follows. Jesus says it runs the other way. The treasure leads, and the heart follows it.",
+  "Mammon’s whole pitch is this: more is enough. It is the pitch that has never once delivered.",
+  "The closed fist is not prudence; it is a form of practical atheism.",
+  "You can open your hand because you are known and kept by a Father whose keeping does not depend on your contribution to it.",
 ];
 
 const eyebrow: React.CSSProperties = {
@@ -99,20 +109,20 @@ export default function WhereYourTreasureIs() {
       {/* WHAT'S INSIDE */}
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-          <div style={eyebrow}>What’s Inside</div>
+          <div style={eyebrow}>Contents</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "30px", fontWeight: 500, color: "var(--ink)", margin: "10px 0 28px" }}>
-            Walk slowly through the money teaching of Scripture
+            Fourteen chapters, from the master we don’t name to the open hand
           </h2>
-          <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
-            {INSIDE.map((item, i) => (
+          <ol style={{ listStyle: "none", margin: 0, padding: 0 }}>
+            {CHAPTERS.map(([num, title], i) => (
               <li key={i} style={{ display: "flex", gap: "16px", padding: "12px 0", borderBottom: "1px solid var(--border)" }}>
-                <span style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, color: "var(--mustard-text)", flex: "0 0 28px", paddingTop: "4px" }}>
-                  {String(i + 1).padStart(2, "0")}
+                <span style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--mustard-text)", flex: "0 0 96px", paddingTop: "3px" }}>
+                  {/^[A-Z]/.test(num) && num.length > 4 ? num : `Chapter ${num}`}
                 </span>
-                <span style={{ fontFamily: "var(--F)", fontSize: "19px", color: "var(--ink)", lineHeight: 1.3 }}>{item}</span>
+                <span style={{ fontFamily: "var(--F)", fontSize: "19px", color: "var(--ink)", lineHeight: 1.3 }}>{title}</span>
               </li>
             ))}
-          </ul>
+          </ol>
         </div>
       </section>
 

@@ -18,20 +18,30 @@ const COVER = "/books/consider-the-birds.jpg";
 const TITLE = "Consider the Birds";
 const SUBTITLE = "What the Bible Says About Anxiety, and the Peace Christ Gives Instead";
 
-const INSIDE: string[] = [
-  "Matthew 6 and the meaning of “consider the birds”",
-  "the manna in the wilderness and the prayer for daily bread",
-  "“cast all your anxiety on him” — and why cast is a violent word",
-  "the peace that guards the heart like a garrison (Philippians 4)",
-  "“perfect love casts out fear” (1 John 4)",
+const CHAPTERS: [string, string][] = [
+  ["Introduction", "Three in the Morning"],
+  ["One", "The Pull in Two Directions"],
+  ["Two", "Consider the Birds"],
+  ["Three", "The Refusal to Be a Creature"],
+  ["Four", "The Manna and the Jar"],
+  ["Five", "The Body and the Soul"],
+  ["Six", "The God Who Counts Hairs"],
+  ["Seven", "The Tyranny of the Possible"],
+  ["Eight", "Cast"],
+  ["Nine", "The Peace That Will Not Explain Itself"],
+  ["Ten", "The Lie of the Self-Made Day"],
+  ["Eleven", "The Love That Drives Out Fear"],
+  ["Twelve", "The Communion of the Anxious"],
+  ["Thirteen", "The Long Cure"],
+  ["Fourteen", "The Birds Still Sing"],
 ];
 
 const PULL_QUOTES: string[] = [
-  "Anxiety is usually not a broken part. More often it’s a tell — it tells the truth about what we are actually leaning on.",
-  "Follow your worry down far enough and it leads, nearly every time, to a place where you have quietly concluded that you are the one holding everything up.",
-  "Worry is prayer to a god who is not home. Prayer is worry redirected to the Father who is.",
-  "The peace of God is not the absence of the attack. It is the presence of a guard during the attack.",
-  "The birds sing in the dark, before the evidence, because they live inside a trust they did not have to manufacture.",
+  "We are not anxious because we believe too little in God. We are anxious because we believe too much in ourselves.",
+  "Anxiety is usually not a broken part. More often it’s a tell.",
+  "A racing heart is not a sin. A panic attack is not unbelief.",
+  "Manna was never meant to be stored. Grace never is.",
+  "When Jesus says “do not be anxious,” he is not adding a new burden to a tired soul. He is offering to fire your second master.",
 ];
 
 const eyebrow: React.CSSProperties = {
@@ -99,20 +109,20 @@ export default function ConsiderTheBirds() {
       {/* WHAT'S INSIDE */}
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-          <div style={eyebrow}>What’s Inside</div>
+          <div style={eyebrow}>Contents</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "30px", fontWeight: 500, color: "var(--ink)", margin: "10px 0 28px" }}>
-            Walk slowly through the peace Scripture actually offers
+            Fourteen chapters, from three in the morning to the birds at first light
           </h2>
-          <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
-            {INSIDE.map((item, i) => (
+          <ol style={{ listStyle: "none", margin: 0, padding: 0 }}>
+            {CHAPTERS.map(([num, title], i) => (
               <li key={i} style={{ display: "flex", gap: "16px", padding: "12px 0", borderBottom: "1px solid var(--border)" }}>
-                <span style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, color: "var(--mustard-text)", flex: "0 0 28px", paddingTop: "4px" }}>
-                  {String(i + 1).padStart(2, "0")}
+                <span style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--mustard-text)", flex: "0 0 96px", paddingTop: "3px" }}>
+                  {/^[A-Z]/.test(num) && num.length > 4 ? num : `Chapter ${num}`}
                 </span>
-                <span style={{ fontFamily: "var(--F)", fontSize: "19px", color: "var(--ink)", lineHeight: 1.3 }}>{item}</span>
+                <span style={{ fontFamily: "var(--F)", fontSize: "19px", color: "var(--ink)", lineHeight: 1.3 }}>{title}</span>
               </li>
             ))}
-          </ul>
+          </ol>
         </div>
       </section>
 
