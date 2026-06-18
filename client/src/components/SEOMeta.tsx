@@ -11,6 +11,7 @@
  * first paint (and bots that ignore JS) gets something. When this component
  * mounts on a route, it overrides them.
  */
+import { useLocation } from "wouter";
 import { SITE_URL, SITE_NAME, AUTHOR_NAME, OG_DEFAULT_IMAGE } from "@/lib/site";
 
 interface SEOMetaProps {
@@ -42,7 +43,13 @@ export function SEOMeta({
   structuredData,
 }: SEOMetaProps) {
   const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
-  const canonicalUrl = url ?? SITE_URL;
+  // Canonical: an explicit `url` always wins. Otherwise derive it from the
+  // current route so each page self-canonicalizes — without this, every page
+  // that omits `url` would canonicalize to the homepage (SITE_URL), telling
+  // search engines those pages are duplicates of "/". Query-content pages
+  // (e.g. /writing?pillar=…) pass an explicit `url` and are unaffected.
+  const [pathname] = useLocation();
+  const canonicalUrl = url ?? `${SITE_URL}${pathname === "/" ? "" : pathname}`;
   // "webpage" is a legacy alias for "website" (Open Graph never had a webpage type).
   const ogType: "website" | "article" | "book" | "profile" =
     type === "webpage" ? "website" : type;
