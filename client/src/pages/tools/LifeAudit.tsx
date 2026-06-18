@@ -378,7 +378,7 @@ const CATEGORIES: Category[] = [
     },
     relatedLink: {
       title: "Explore the Pastors Connection Network",
-      href: "/pcn",
+      href: "/pastors",
     },
   },
 ];

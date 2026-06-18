@@ -56,7 +56,7 @@ export const communityRouter = router({
           };
         } catch (error: any) {
           console.error("[Community Router] Error submitting comment:", error);
-          throw new Error(error.message || "Failed to submit comment");
+          throw new Error(error.message || "Failed to submit comment", { cause: error });
         }
       }),
 
@@ -75,7 +75,7 @@ export const communityRouter = router({
           };
         } catch (error: any) {
           console.error("[Community Router] Error getting comments:", error);
-          throw new Error(error.message || "Failed to get comments");
+          throw new Error(error.message || "Failed to get comments", { cause: error });
         }
       }),
 
@@ -97,7 +97,7 @@ export const communityRouter = router({
         };
       } catch (error: any) {
         console.error("[Community Router] Error listing all comments:", error);
-        throw new Error(error.message || "Failed to list comments");
+        throw new Error(error.message || "Failed to list comments", { cause: error });
       }
     }),
 
@@ -118,7 +118,7 @@ export const communityRouter = router({
           };
         } catch (error: any) {
           console.error("[Community Router] Error approving comment:", error);
-          throw new Error(error.message || "Failed to approve comment");
+          throw new Error(error.message || "Failed to approve comment", { cause: error });
         }
       }),
 
@@ -138,7 +138,7 @@ export const communityRouter = router({
           };
         } catch (error: any) {
           console.error("[Community Router] Error deleting comment:", error);
-          throw new Error(error.message || "Failed to delete comment");
+          throw new Error(error.message || "Failed to delete comment", { cause: error });
         }
       }),
   }),
@@ -183,7 +183,7 @@ export const communityRouter = router({
           };
         } catch (error: any) {
           console.error("[Community Router] Error submitting testimonial:", error);
-          throw new Error(error.message || "Failed to submit testimonial");
+          throw new Error(error.message || "Failed to submit testimonial", { cause: error });
         }
       }),
 
@@ -200,7 +200,7 @@ export const communityRouter = router({
         };
       } catch (error: any) {
         console.error("[Community Router] Error getting testimonials:", error);
-        throw new Error(error.message || "Failed to get testimonials");
+        throw new Error(error.message || "Failed to get testimonials", { cause: error });
       }
     }),
 
@@ -217,7 +217,7 @@ export const communityRouter = router({
         };
       } catch (error: any) {
         console.error("[Community Router] Error getting featured testimonials:", error);
-        throw new Error(error.message || "Failed to get featured testimonials");
+        throw new Error(error.message || "Failed to get featured testimonials", { cause: error });
       }
     }),
 
@@ -239,7 +239,7 @@ export const communityRouter = router({
         };
       } catch (error: any) {
         console.error("[Community Router] Error listing all testimonials:", error);
-        throw new Error(error.message || "Failed to list testimonials");
+        throw new Error(error.message || "Failed to list testimonials", { cause: error });
       }
     }),
 
@@ -260,7 +260,7 @@ export const communityRouter = router({
           };
         } catch (error: any) {
           console.error("[Community Router] Error approving testimonial:", error);
-          throw new Error(error.message || "Failed to approve testimonial");
+          throw new Error(error.message || "Failed to approve testimonial", { cause: error });
         }
       }),
 
@@ -281,7 +281,7 @@ export const communityRouter = router({
           };
         } catch (error: any) {
           console.error("[Community Router] Error toggling featured testimonial:", error);
-          throw new Error(error.message || "Failed to toggle featured testimonial");
+          throw new Error(error.message || "Failed to toggle featured testimonial", { cause: error });
         }
       }),
 
@@ -301,7 +301,7 @@ export const communityRouter = router({
           };
         } catch (error: any) {
           console.error("[Community Router] Error deleting testimonial:", error);
-          throw new Error(error.message || "Failed to delete testimonial");
+          throw new Error(error.message || "Failed to delete testimonial", { cause: error });
         }
       }),
   }),
