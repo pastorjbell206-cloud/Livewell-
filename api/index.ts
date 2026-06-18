@@ -600,7 +600,7 @@ async function pcnSignup(req: VercelRequest, res: VercelResponse) {
 async function sitemap(_req: VercelRequest, res: VercelResponse) {
   try {
     const base = "https://www.livewellbyjamesbell.co";
-    const staticPaths = ["/", "/writing", "/books", "/about", "/quiz", "/search", "/marriage", "/parenting", "/doubt", "/start", "/for-pastors", "/for-leaders", "/membership", "/reading-paths", "/resources"];
+    const staticPaths = ["/", "/writing", "/books", "/consider-the-birds", "/where-your-treasure-is", "/about", "/quiz", "/search", "/marriage", "/parenting", "/doubt", "/start", "/for-pastors", "/for-leaders", "/membership", "/reading-paths", "/resources"];
     let articles: any[] = [];
     try {
       articles = await withConn(async (c) => {
