@@ -8,7 +8,7 @@
  * the file is never exposed at a public URL.
  */
 import Layout from "@/components/Layout";
-import { SEOMeta } from "@/components/SEOMeta";
+import { SEOMeta, getBreadcrumbSchema } from "@/components/SEOMeta";
 import { BuyEbookButton } from "@/components/BuyEbookButton";
 import { SITE_URL } from "@/lib/site";
 import { Link } from "wouter";
@@ -58,6 +58,32 @@ export default function ConsiderTheBirds() {
         image={`${SITE_URL}${COVER}`}
         url={`${SITE_URL}/${SLUG}`}
         type="book"
+        structuredData={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Book",
+            name: TITLE,
+            description: SUBTITLE,
+            bookFormat: "https://schema.org/EBook",
+            inLanguage: "en",
+            author: { "@type": "Person", name: "James Bell", url: `${SITE_URL}/about` },
+            publisher: { "@type": "Organization", name: "LiveWell by James Bell" },
+            image: `${SITE_URL}${COVER}`,
+            url: `${SITE_URL}/${SLUG}`,
+            offers: {
+              "@type": "Offer",
+              price: "9.99",
+              priceCurrency: "USD",
+              availability: "https://schema.org/InStock",
+              url: `${SITE_URL}/${SLUG}`,
+            },
+          },
+          getBreadcrumbSchema([
+            { name: "Home", url: SITE_URL },
+            { name: "Books", url: `${SITE_URL}/books` },
+            { name: TITLE, url: `${SITE_URL}/${SLUG}` },
+          ]),
+        ]}
       />
 
       {/* HERO */}
