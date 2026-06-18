@@ -19,7 +19,7 @@ export const searchRouter = router({
         };
       } catch (error: any) {
         console.error("[Search Router] Global search error:", error);
-        throw new Error(error.message || "Search failed");
+        throw new Error(error.message || "Search failed", { cause: error });
       }
     }),
 
@@ -39,7 +39,7 @@ export const searchRouter = router({
         };
       } catch (error: any) {
         console.error("[Search Router] Article search error:", error);
-        throw new Error(error.message || "Article search failed");
+        throw new Error(error.message || "Article search failed", { cause: error });
       }
     }),
 
@@ -59,7 +59,7 @@ export const searchRouter = router({
         };
       } catch (error: any) {
         console.error("[Search Router] Resource search error:", error);
-        throw new Error(error.message || "Resource search failed");
+        throw new Error(error.message || "Resource search failed", { cause: error });
       }
     }),
 
@@ -78,7 +78,7 @@ export const searchRouter = router({
         };
       } catch (error: any) {
         console.error("[Search Router] Trending articles error:", error);
-        throw new Error(error.message || "Failed to fetch trending articles");
+        throw new Error(error.message || "Failed to fetch trending articles", { cause: error });
       }
     }),
 });

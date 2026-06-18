@@ -19,7 +19,7 @@ export const emailRouter = router({
         };
       } catch (error: any) {
         console.error("[Email Router] Subscription error:", error);
-        throw new Error(error.message || "Failed to subscribe");
+        throw new Error(error.message || "Failed to subscribe", { cause: error });
       }
     }),
 
@@ -39,7 +39,7 @@ export const emailRouter = router({
         };
       } catch (error: any) {
         console.error("[Email Router] Unsubscribe error:", error);
-        throw new Error(error.message || "Failed to unsubscribe");
+        throw new Error(error.message || "Failed to unsubscribe", { cause: error });
       }
     }),
 });

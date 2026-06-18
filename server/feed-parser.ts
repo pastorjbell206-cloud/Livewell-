@@ -70,7 +70,7 @@ export async function parseFeed(feedUrl: string, source: "substack" | "pastors-c
     });
   } catch (error: any) {
     console.error(`[Feed Parser] Error parsing ${source} feed:`, error);
-    throw new Error(`Failed to parse feed from ${source}: ${error.message}`);
+    throw new Error(`Failed to parse feed from ${source}: ${error.message}`, { cause: error });
   }
 }
 

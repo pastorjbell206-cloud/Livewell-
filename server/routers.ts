@@ -468,7 +468,7 @@ export const appRouter = router({
           return { success: true, imported };
         } catch (error) {
           console.error("[Sync] Error syncing feeds:", error);
-          throw new Error("Failed to sync feeds");
+          throw new Error("Failed to sync feeds", { cause: error });
         }
       }),
   }),
