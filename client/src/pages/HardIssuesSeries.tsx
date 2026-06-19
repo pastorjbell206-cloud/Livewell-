@@ -1,6 +1,7 @@
 /**
- * The Hard Issues Series — a free, donation-supported collection of five
- * eldership booklets from the Pastors Connection Network (PCN).
+ * The Hard Issues Series — a free, donation-supported collection of ten
+ * booklets from the Pastors Connection Network (PCN), in two parts:
+ * Part One on eldership, Part Two on leading and governing the church.
  *
  * Self-contained (not DB-backed) so it deploys with the code. The booklets
  * are FREE; both the PDF and EPUB download directly from /ebook/<slug>/...
@@ -15,7 +16,10 @@ import { Download, Heart } from "lucide-react";
 
 const DONATE_URL = ""; // TODO: Stripe donation link
 
+type Group = "eldership" | "governing";
+
 interface Booklet {
+  group: Group;
   slug: string;
   title: string;
   subtitle: string;
@@ -26,6 +30,7 @@ interface Booklet {
 
 const BOOKLETS: Booklet[] = [
   {
+    group: "eldership",
     slug: "what-elders-are-for",
     title: "What Elders Are For",
     subtitle: "A Biblical Job Description for the Men Who Lead the Church",
@@ -34,6 +39,7 @@ const BOOKLETS: Booklet[] = [
     epub: "/ebook/what-elders-are-for/What-Elders-Are-For.epub",
   },
   {
+    group: "eldership",
     slug: "qualified-elder",
     title: "Qualified",
     subtitle:
@@ -43,6 +49,7 @@ const BOOKLETS: Booklet[] = [
     epub: "/ebook/qualified-elder/Qualified.epub",
   },
   {
+    group: "eldership",
     slug: "finding-installing-elders",
     title: "Finding and Installing Elders",
     subtitle: "A Process for Identifying, Developing, and Commissioning Men to Lead",
@@ -51,6 +58,7 @@ const BOOKLETS: Booklet[] = [
     epub: "/ebook/finding-installing-elders/Finding-and-Installing-Elders.epub",
   },
   {
+    group: "eldership",
     slug: "when-elders-disagree",
     title: "When Elders Disagree",
     subtitle: "Handling Conflict, Dissent, and Division on the Elder Team",
@@ -59,6 +67,7 @@ const BOOKLETS: Booklet[] = [
     epub: "/ebook/when-elders-disagree/When-Elders-Disagree.epub",
   },
   {
+    group: "eldership",
     slug: "removing-an-elder",
     title: "Removing an Elder",
     subtitle: "The Most Difficult Act of Church Leadership — Done Biblically",
@@ -66,7 +75,55 @@ const BOOKLETS: Booklet[] = [
     pdf: "/ebook/removing-an-elder/Removing-an-Elder.pdf",
     epub: "/ebook/removing-an-elder/Removing-an-Elder.epub",
   },
+  {
+    group: "governing",
+    slug: "deacon-qualifications",
+    title: "Deacon Qualifications and Selection",
+    subtitle: "Raising the Standard for Servant Leadership",
+    note: "The men who serve set the tone of a church. Choosing them is not a formality.",
+    pdf: "/ebook/deacon-qualifications/Deacon-Qualifications-and-Selection.pdf",
+    epub: "/ebook/deacon-qualifications/Deacon-Qualifications-and-Selection.epub",
+  },
+  {
+    group: "governing",
+    slug: "church-governance",
+    title: "Church Governance That Works",
+    subtitle: "Polity, Structure, and Decision-Making for the Local Church",
+    note: "Structure does not save a church. But the wrong structure can slowly bleed one dry.",
+    pdf: "/ebook/church-governance/Church-Governance-That-Works.pdf",
+    epub: "/ebook/church-governance/Church-Governance-That-Works.epub",
+  },
+  {
+    group: "governing",
+    slug: "the-patient-pastor",
+    title: "The Patient Pastor",
+    subtitle: "How to Lead Change Without Losing Your Church or Your Mind",
+    note: "Most damage is done by men who were right and in a hurry. Patience is a skill.",
+    pdf: "/ebook/the-patient-pastor/The-Patient-Pastor.pdf",
+    epub: "/ebook/the-patient-pastor/The-Patient-Pastor.epub",
+  },
+  {
+    group: "governing",
+    slug: "change-without-casualties",
+    title: "Change Without Casualties",
+    subtitle: "A Playbook for Introducing Major Ministry Decisions",
+    note: "A good decision delivered badly still costs you people. Here is how to deliver it.",
+    pdf: "/ebook/change-without-casualties/Change-Without-Casualties.pdf",
+    epub: "/ebook/change-without-casualties/Change-Without-Casualties.epub",
+  },
+  {
+    group: "governing",
+    slug: "changing-the-unchangeable",
+    title: "Changing the Unchangeable",
+    subtitle: "Leading Reform When 'We've Always Done It This Way'",
+    note: "Every church has a wall marked do not touch. Some of those walls have to come down.",
+    pdf: "/ebook/changing-the-unchangeable/Changing-the-Unchangeable.pdf",
+    epub: "/ebook/changing-the-unchangeable/Changing-the-Unchangeable.epub",
+  },
 ];
+
+const ELDERSHIP = BOOKLETS.filter((b) => b.group === "eldership");
+const GOVERNING = BOOKLETS.filter((b) => b.group === "governing");
 
 const eyebrow: React.CSSProperties = {
   fontFamily: "var(--U)",
@@ -132,12 +189,68 @@ function DownloadLink({ href, label }: { href: string; label: string }) {
   );
 }
 
+function BookletCard({ b }: { b: Booklet }) {
+  return (
+    <article
+      style={{
+        display: "grid",
+        gridTemplateColumns: "minmax(120px, 180px) 1fr",
+        gap: "var(--s-4)",
+        alignItems: "start",
+        background: "#FFFFFF",
+        border: "1px solid rgba(20,17,12,0.08)",
+        borderLeft: "2px solid var(--mustard)",
+        borderRadius: "var(--radius-sm)",
+        padding: "var(--s-4)",
+      }}
+    >
+      <img
+        src={`/books/${b.slug}.jpg`}
+        alt={`${b.title} — cover`}
+        loading="lazy"
+        style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 8px 24px rgba(0,0,0,.18)" }}
+      />
+      <div>
+        <h3 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 500, lineHeight: 1.15, color: "var(--ink)", margin: "0 0 8px", letterSpacing: "-0.01em" }}>
+          {b.title}
+        </h3>
+        <p style={{ fontFamily: "var(--F)", fontSize: "17px", fontStyle: "italic", color: "var(--ink-muted)", margin: "0 0 14px", lineHeight: 1.4 }}>
+          {b.subtitle}
+        </p>
+        <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, color: "var(--ink)", margin: "0 0 20px", maxWidth: "56ch" }}>
+          {b.note}
+        </p>
+        <div style={{ display: "flex", gap: "24px", flexWrap: "wrap", alignItems: "center" }}>
+          <DownloadLink href={b.pdf} label="Download PDF" />
+          <DownloadLink href={b.epub} label="Download EPUB" />
+        </div>
+      </div>
+    </article>
+  );
+}
+
+function BookletGroup({ label, heading, booklets }: { label: string; heading: string; booklets: Booklet[] }) {
+  return (
+    <div>
+      <div style={eyebrow}>{label}</div>
+      <h3 style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.6vw, 26px)", fontWeight: 400, letterSpacing: "-0.01em", color: "var(--ink)", margin: "8px 0 var(--s-4)" }}>
+        {heading}
+      </h3>
+      <div style={{ display: "grid", gap: "var(--s-4)" }}>
+        {booklets.map((b) => (
+          <BookletCard key={b.slug} b={b} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function HardIssuesSeries() {
   return (
     <Layout>
       <SEOMeta
-        title="The Hard Issues Series — Free Eldership Booklets from PCN"
-        description="Five free booklets for elder teams on what elders are for, the biblical qualifications, finding and installing elders, handling disagreement, and removing an elder. Free PDF and EPUB from the Pastors Connection Network."
+        title="The Hard Issues Series — Free Booklets for Church Leaders from PCN"
+        description="Ten free booklets for the men who lead the church — five on eldership and five on leading and governing the local church. Free PDF and EPUB from the Pastors Connection Network."
         image={`${SITE_URL}/books/${BOOKLETS[0].slug}.jpg`}
         url={`${SITE_URL}/resources/hard-issues-series`}
       />
@@ -160,68 +273,41 @@ export default function HardIssuesSeries() {
             The Hard Issues Series
           </h1>
           <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontStyle: "italic", color: "rgba(245,240,230,.82)", margin: "0 0 28px", maxWidth: "52ch" }}>
-            Five booklets for the men who carry the weight of leading a church.
+            Ten booklets for the men who carry the weight of leading a church.
           </p>
           <div style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,.82)", maxWidth: "62ch" }}>
             <p style={{ margin: "0 0 1.2em" }}>
-              An elder board does not fail in the crisis. It fails long before the crisis, in the quiet years when no one decided what the job actually was, who was fit to hold it, or how a man is found and made ready to carry it. This series exists to help elder teams do that hard work before the hard day arrives — and to face the hardest days, disagreement and removal, without tearing a church in two.
+              An elder board does not fail in the crisis. It fails long before the crisis, in the quiet years when no one decided what the job actually was, who was fit to hold it, or how a man is found and made ready to carry it. The first five booklets help elder teams do that hard work before the hard day arrives — and face the hardest days, disagreement and removal, without tearing a church in two. The next five turn to the wider work of leading and governing: deacons, polity, and the patient art of changing what a church believes it can never change.
             </p>
             <p style={{ margin: "0 0 28px" }}>
-              These are given freely to pastors and the men who lead with them. That is the whole point of the Pastors Connection Network: to strengthen the men who lead churches, and to put what they need in their hands without a price standing in the way. If the work has served you, you can return the gift below. You are not required to. The booklets are yours either way.
+              Every one of these is free. The downloads cost you nothing, and they never will. A gift, if you choose to give one, supports the Pastors Connection Network in its work of strengthening and training pastors — including the men leading churches in remote and under-resourced places, where training is scarce and a single booklet can be the only help that reaches them. You are not required to give. The booklets are yours either way.
             </p>
           </div>
           <DonateButton onDark />
         </div>
       </section>
 
-      {/* THE FIVE BOOKLETS */}
+      {/* THE BOOKLETS */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           <div style={eyebrow}>The Collection</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", margin: "10px 0 8px" }}>
-            Five booklets. All free. PDF and EPUB.
+            Ten booklets. All free. PDF and EPUB.
           </h2>
           <div style={{ width: "36px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-5)" }} />
 
-          <div style={{ display: "grid", gap: "var(--s-4)" }}>
-            {BOOKLETS.map((b) => (
-              <article
-                key={b.slug}
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "minmax(120px, 180px) 1fr",
-                  gap: "var(--s-4)",
-                  alignItems: "start",
-                  background: "#FFFFFF",
-                  border: "1px solid rgba(20,17,12,0.08)",
-                  borderLeft: "2px solid var(--mustard)",
-                  borderRadius: "var(--radius-sm)",
-                  padding: "var(--s-4)",
-                }}
-              >
-                <img
-                  src={`/books/${b.slug}.jpg`}
-                  alt={`${b.title} — cover`}
-                  loading="lazy"
-                  style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 8px 24px rgba(0,0,0,.18)" }}
-                />
-                <div>
-                  <h3 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 500, lineHeight: 1.15, color: "var(--ink)", margin: "0 0 8px", letterSpacing: "-0.01em" }}>
-                    {b.title}
-                  </h3>
-                  <p style={{ fontFamily: "var(--F)", fontSize: "17px", fontStyle: "italic", color: "var(--ink-muted)", margin: "0 0 14px", lineHeight: 1.4 }}>
-                    {b.subtitle}
-                  </p>
-                  <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, color: "var(--ink)", margin: "0 0 20px", maxWidth: "56ch" }}>
-                    {b.note}
-                  </p>
-                  <div style={{ display: "flex", gap: "24px", flexWrap: "wrap", alignItems: "center" }}>
-                    <DownloadLink href={b.pdf} label="Download PDF" />
-                    <DownloadLink href={b.epub} label="Download EPUB" />
-                  </div>
-                </div>
-              </article>
-            ))}
+          <BookletGroup
+            label="Part One · Eldership"
+            heading="The men who lead the church"
+            booklets={ELDERSHIP}
+          />
+
+          <div style={{ marginTop: "var(--s-6)" }}>
+            <BookletGroup
+              label="Part Two · Leading & Governing the Church"
+              heading="Polity, deacons, and the work of leading change"
+              booklets={GOVERNING}
+            />
           </div>
         </div>
       </section>
@@ -234,7 +320,7 @@ export default function HardIssuesSeries() {
             Keep this free for the next pastor
           </h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "rgba(245,240,230,.8)", maxWidth: "56ch", margin: "0 auto 28px" }}>
-            The Pastors Connection Network gives this work away so cost never stands between a leader and what he needs. A gift keeps it that way and helps put the next booklet in the next man's hands. Give if you can. The downloads stay free no matter what.
+            The Pastors Connection Network gives this work away so cost never stands between a leader and what he needs. A gift supports the work of strengthening and training pastors — including the men leading churches in remote and under-resourced places, where training is scarce and help is hard to find. Give if you can. The downloads stay free no matter what.
           </p>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <DonateButton onDark />
