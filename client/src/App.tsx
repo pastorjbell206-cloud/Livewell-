@@ -45,6 +45,7 @@ const Pastors = lazy(() => import("./pages/Pastors"));
 const FileStorage = lazy(() => import("./pages/FileStorage"));
 const SkepticTrack = lazy(() => import("./pages/SkepticTrack"));
 const PastorsResourceWall = lazy(() => import("./pages/PastorsResourceWall"));
+const HardIssuesSeries = lazy(() => import("./pages/HardIssuesSeries"));
 const RoadMap = lazy(() => import("./pages/RoadMap"));
 const Library = lazy(() => import("./pages/Library"));
 const Diagnostic = lazy(() => import("./pages/Diagnostic"));
@@ -303,6 +304,7 @@ function Router() {
         <Route path="/article-collections" component={ArticleCollections} />
         <Route path="/book-bundles" component={BookBundles} />
         <Route path="/lead-magnets/:magnetId" component={LeadMagnetsPage} />
+        <Route path="/resources/hard-issues-series" component={HardIssuesSeries} />
         <Route path="/resources/context/:slug" component={ContextGuide} />
         <Route path="/resources/context" component={ContextLibrary} />
         <Route path="/resources/creeds/:slug" component={CreedDocument} />
