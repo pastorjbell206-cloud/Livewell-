@@ -80,9 +80,11 @@ def main():
         body_sz = Counter(s for s,t in rs if len(t.split())>8).most_common(1)[0][0]
         cand = sorted({s for s,t in rs if s>body_sz})
         def headcount(c): return sum(1 for s,t in rs if s==c and len(t.split())<20)
-        # chapter size = the size (above body) with the MOST heading-like lines
-        chap_sz = a.chap_size or (max((c for c in cand if headcount(c)>=3), key=headcount, default=big))
-        sub_sz = a.sub_size or next((c for c in cand if body_sz < c < chap_sz and headcount(c)>=3), -1)
+        # Two heading levels usually sit above body text. Chapters = the LARGEST size
+        # that still recurs (>=3), which skips the 1-2x title; subheads = next size down.
+        ranked = sorted((c for c in cand if headcount(c) >= 3), reverse=True)
+        chap_sz = a.chap_size or (ranked[0] if ranked else big)
+        sub_sz  = a.sub_size  or (ranked[1] if len(ranked) > 1 else -1)
         cur=None
         for s,t in rs:
             if s==chap_sz:
