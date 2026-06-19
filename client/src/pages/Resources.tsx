@@ -47,6 +47,12 @@ const LIBRARIES = [
     desc: "Four stages from new believer to disciple-maker, with concrete steps and a tracker that remembers where you are.",
   },
   {
+    href: "/resources/hard-issues-series",
+    eyebrow: "For elders · Free from PCN",
+    title: "The Hard Issues Series",
+    desc: "Five free booklets for elder teams: what elders are for, the biblical qualifications, finding and installing elders, handling disagreement, and removing an elder. Free PDF and EPUB.",
+  },
+  {
     href: "/leadership/library",
     eyebrow: "For leaders and teachers",
     title: "The Leadership Library",

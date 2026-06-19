@@ -74,6 +74,7 @@ export default function Footer() {
               <Link href="/pastors" style={footerLink}>Pastors Connection Network</Link>
               <Link href={pillarUrl("the-pastoral-angle")} style={footerLink}>The Pastoral Angle</Link>
               <Link href="/leadership" style={footerLink}>The Leadership Hub</Link>
+              <Link href="/resources/hard-issues-series" style={footerLink}>The Hard Issues Series</Link>
               <Link href="/leadership/formation" style={footerLink}>Deep Formation</Link>
               <Link href="/for-leaders" style={footerLink}>Church Leadership</Link>
               <Link href="/resources" style={footerLink}>Downloads &amp; Study Guides</Link>
