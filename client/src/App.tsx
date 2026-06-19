@@ -11,32 +11,32 @@ import { ToastProvider } from "./contexts/ToastContext";
 import { ToastContainer } from "./components/ToastContainer";
 import Home from "./pages/Home";
 import Writing from "./pages/Writing";
-import ArticleDetail from "./pages/ArticleDetail";
+const ArticleDetail = lazy(() => import("./pages/ArticleDetail"));
 import Books from "./pages/Books";
-import BookDetail from "./pages/BookDetail";
-import WhenGodBlessAmerica from "./pages/WhenGodBlessAmerica";
-import WhenGodBlessAmericaThankYou from "./pages/WhenGodBlessAmericaThankYou";
-import Believe from "./pages/Believe";
-import BelieveThankYou from "./pages/BelieveThankYou";
-import DeconstructionOfFaith from "./pages/DeconstructionOfFaith";
-import DeconstructionOfFaithThankYou from "./pages/DeconstructionOfFaithThankYou";
-import RaisingBelievers from "./pages/RaisingBelievers";
-import RaisingBelieversThankYou from "./pages/RaisingBelieversThankYou";
-import TheMonsterInTheMirror from "./pages/TheMonsterInTheMirror";
-import TheMonsterInTheMirrorThankYou from "./pages/TheMonsterInTheMirrorThankYou";
-import TheReliabilityOfScripture from "./pages/TheReliabilityOfScripture";
-import TheReliabilityOfScriptureThankYou from "./pages/TheReliabilityOfScriptureThankYou";
-import BibleAndHomosexuality from "./pages/BibleAndHomosexuality";
-import BibleAndHomosexualityThankYou from "./pages/BibleAndHomosexualityThankYou";
-import BibleAndTransgenderIdentity from "./pages/BibleAndTransgenderIdentity";
-import BibleAndTransgenderIdentityThankYou from "./pages/BibleAndTransgenderIdentityThankYou";
-import IsCriticalRaceTheoryBiblical from "./pages/IsCriticalRaceTheoryBiblical";
-import IsCriticalRaceTheoryBiblicalThankYou from "./pages/IsCriticalRaceTheoryBiblicalThankYou";
-import ConsiderTheBirds from "./pages/ConsiderTheBirds";
-import ConsiderTheBirdsThankYou from "./pages/ConsiderTheBirdsThankYou";
-import WhereYourTreasureIs from "./pages/WhereYourTreasureIs";
-import WhereYourTreasureIsThankYou from "./pages/WhereYourTreasureIsThankYou";
-import About from "./pages/About";
+const BookDetail = lazy(() => import("./pages/BookDetail"));
+const WhenGodBlessAmerica = lazy(() => import("./pages/WhenGodBlessAmerica"));
+const WhenGodBlessAmericaThankYou = lazy(() => import("./pages/WhenGodBlessAmericaThankYou"));
+const Believe = lazy(() => import("./pages/Believe"));
+const BelieveThankYou = lazy(() => import("./pages/BelieveThankYou"));
+const DeconstructionOfFaith = lazy(() => import("./pages/DeconstructionOfFaith"));
+const DeconstructionOfFaithThankYou = lazy(() => import("./pages/DeconstructionOfFaithThankYou"));
+const RaisingBelievers = lazy(() => import("./pages/RaisingBelievers"));
+const RaisingBelieversThankYou = lazy(() => import("./pages/RaisingBelieversThankYou"));
+const TheMonsterInTheMirror = lazy(() => import("./pages/TheMonsterInTheMirror"));
+const TheMonsterInTheMirrorThankYou = lazy(() => import("./pages/TheMonsterInTheMirrorThankYou"));
+const TheReliabilityOfScripture = lazy(() => import("./pages/TheReliabilityOfScripture"));
+const TheReliabilityOfScriptureThankYou = lazy(() => import("./pages/TheReliabilityOfScriptureThankYou"));
+const BibleAndHomosexuality = lazy(() => import("./pages/BibleAndHomosexuality"));
+const BibleAndHomosexualityThankYou = lazy(() => import("./pages/BibleAndHomosexualityThankYou"));
+const BibleAndTransgenderIdentity = lazy(() => import("./pages/BibleAndTransgenderIdentity"));
+const BibleAndTransgenderIdentityThankYou = lazy(() => import("./pages/BibleAndTransgenderIdentityThankYou"));
+const IsCriticalRaceTheoryBiblical = lazy(() => import("./pages/IsCriticalRaceTheoryBiblical"));
+const IsCriticalRaceTheoryBiblicalThankYou = lazy(() => import("./pages/IsCriticalRaceTheoryBiblicalThankYou"));
+const ConsiderTheBirds = lazy(() => import("./pages/ConsiderTheBirds"));
+const ConsiderTheBirdsThankYou = lazy(() => import("./pages/ConsiderTheBirdsThankYou"));
+const WhereYourTreasureIs = lazy(() => import("./pages/WhereYourTreasureIs"));
+const WhereYourTreasureIsThankYou = lazy(() => import("./pages/WhereYourTreasureIsThankYou"));
+const About = lazy(() => import("./pages/About"));
 
 const Resources = lazy(() => import("./pages/Resources"));
 const ContextLibrary = lazy(() => import("./pages/resources/ContextLibrary"));
@@ -49,6 +49,7 @@ const Pastors = lazy(() => import("./pages/Pastors"));
 const FileStorage = lazy(() => import("./pages/FileStorage"));
 const SkepticTrack = lazy(() => import("./pages/SkepticTrack"));
 const PastorsResourceWall = lazy(() => import("./pages/PastorsResourceWall"));
+const HardIssuesSeries = lazy(() => import("./pages/HardIssuesSeries"));
 const RoadMap = lazy(() => import("./pages/RoadMap"));
 const Library = lazy(() => import("./pages/Library"));
 const Diagnostic = lazy(() => import("./pages/Diagnostic"));
@@ -307,6 +308,7 @@ function Router() {
         <Route path="/article-collections" component={ArticleCollections} />
         <Route path="/book-bundles" component={BookBundles} />
         <Route path="/lead-magnets/:magnetId" component={LeadMagnetsPage} />
+        <Route path="/resources/hard-issues-series" component={HardIssuesSeries} />
         <Route path="/resources/context/:slug" component={ContextGuide} />
         <Route path="/resources/context" component={ContextLibrary} />
         <Route path="/resources/creeds/:slug" component={CreedDocument} />

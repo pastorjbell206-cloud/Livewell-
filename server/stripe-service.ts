@@ -69,7 +69,7 @@ export async function createCheckoutSession(
     };
   } catch (error: any) {
     console.error("[Stripe] Checkout session error:", error);
-    throw new Error(`Failed to create checkout session: ${error.message}`);
+    throw new Error(`Failed to create checkout session: ${error.message}`, { cause: error });
   }
 }
 
@@ -114,7 +114,7 @@ export async function getCheckoutSession(sessionId: string) {
     return session;
   } catch (error: any) {
     console.error("[Stripe] Session retrieval error:", error);
-    throw new Error(`Failed to retrieve session: ${error.message}`);
+    throw new Error(`Failed to retrieve session: ${error.message}`, { cause: error });
   }
 }
 
@@ -168,6 +168,6 @@ export function verifyWebhookSignature(
     return stripe.webhooks.constructEvent(body, signature, secret);
   } catch (error: any) {
     console.error("[Stripe] Signature verification failed:", error.message);
-    throw new Error(`Webhook signature verification failed: ${error.message}`);
+    throw new Error(`Webhook signature verification failed: ${error.message}`, { cause: error });
   }
 }

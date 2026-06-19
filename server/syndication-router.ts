@@ -25,7 +25,7 @@ export const syndicationRouter = router({
         };
       } catch (error: any) {
         console.error("[Syndication Router] Error fetching Substack articles:", error);
-        throw new Error(error.message || "Failed to fetch Substack articles");
+        throw new Error(error.message || "Failed to fetch Substack articles", { cause: error });
       }
     }),
 
@@ -50,7 +50,7 @@ export const syndicationRouter = router({
         };
       } catch (error: any) {
         console.error("[Syndication Router] Error fetching Pastors Connection articles:", error);
-        throw new Error(error.message || "Failed to fetch Pastors Connection articles");
+        throw new Error(error.message || "Failed to fetch Pastors Connection articles", { cause: error });
       }
     }),
 
@@ -85,7 +85,7 @@ export const syndicationRouter = router({
         };
       } catch (error: any) {
         console.error("[Syndication Router] Sync error:", error);
-        throw new Error(error.message || "Failed to sync Substack feed");
+        throw new Error(error.message || "Failed to sync Substack feed", { cause: error });
       }
     }),
 
@@ -120,7 +120,7 @@ export const syndicationRouter = router({
         };
       } catch (error: any) {
         console.error("[Syndication Router] Sync error:", error);
-        throw new Error(error.message || "Failed to sync Pastors Connection feed");
+        throw new Error(error.message || "Failed to sync Pastors Connection feed", { cause: error });
       }
     }),
 });

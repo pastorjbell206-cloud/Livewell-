@@ -67,7 +67,7 @@ export const stripeRouter = router({
         };
       } catch (error: any) {
         console.error("[Stripe Router] Checkout error:", error);
-        throw new Error(error.message || "Failed to create checkout session");
+        throw new Error(error.message || "Failed to create checkout session", { cause: error });
       }
     }),
 
@@ -91,7 +91,7 @@ export const stripeRouter = router({
         };
       } catch (error: any) {
         console.error("[Stripe Router] Session retrieval error:", error);
-        throw new Error(error.message || "Failed to retrieve session");
+        throw new Error(error.message || "Failed to retrieve session", { cause: error });
       }
     }),
 
@@ -115,7 +115,7 @@ export const stripeRouter = router({
         };
       } catch (error: any) {
         console.error("[Stripe Router] Purchase history error:", error);
-        throw new Error(error.message || "Failed to retrieve purchase history");
+        throw new Error(error.message || "Failed to retrieve purchase history", { cause: error });
       }
     }),
 
@@ -146,7 +146,7 @@ export const stripeRouter = router({
       };
     } catch (error: any) {
       console.error("[Stripe Router] Stats error:", error);
-      throw new Error(error.message || "Failed to retrieve sales stats");
+      throw new Error(error.message || "Failed to retrieve sales stats", { cause: error });
     }
   }),
 });

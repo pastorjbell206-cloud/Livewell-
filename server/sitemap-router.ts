@@ -17,7 +17,7 @@ export const sitemapRouter = router({
       };
     } catch (error: any) {
       console.error("[Sitemap Router] Error generating sitemap:", error);
-      throw new Error("Failed to generate sitemap");
+      throw new Error("Failed to generate sitemap", { cause: error });
     }
   }),
 
@@ -36,7 +36,7 @@ export const sitemapRouter = router({
       };
     } catch (error: any) {
       console.error("[Sitemap Router] Error generating robots.txt:", error);
-      throw new Error("Failed to generate robots.txt");
+      throw new Error("Failed to generate robots.txt", { cause: error });
     }
   }),
 });
