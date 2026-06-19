@@ -148,6 +148,35 @@ export default function Books() {
         </Link>
       </section>
 
+      {/* THE LIVEWELL SERIES — two new ebooks (top-level product pages) */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+          <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)", marginBottom: "8px" }}>
+            The LiveWell Series · Ebooks
+          </div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 400, margin: "0 0 8px", color: "var(--ink)" }}>
+            Two books, one hinge — anxiety and money
+          </h2>
+          <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", margin: "0 0 28px" }}>
+            In Matthew 6, “you cannot serve God and money” comes one verse before “therefore do not be anxious.” The two books read the two halves of the same teaching.
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "var(--s-4)" }}>
+            {[
+              { slug: "consider-the-birds", cover: "/books/consider-the-birds.jpg", title: "Consider the Birds", sub: "What the Bible Says About Anxiety, and the Peace Christ Gives Instead" },
+              { slug: "where-your-treasure-is", cover: "/books/where-your-treasure-is.jpg", title: "Where Your Treasure Is", sub: "What the Bible Says About Money, and the Heart It Means to Free" },
+            ].map((b) => (
+              <Link key={b.slug} href={`/${b.slug}`} style={{ textDecoration: "none", color: "inherit", display: "block" }}>
+                <img src={b.cover} alt={`${b.title} — cover`} width={1600} height={2560}
+                  style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 12px 32px rgba(0,0,0,.25)" }} />
+                <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", margin: "14px 0 4px", lineHeight: 1.2 }}>{b.title}</h3>
+                <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 8px", lineHeight: 1.4 }}>{b.sub}</p>
+                <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)", letterSpacing: "0.04em" }}>Get the ebook — $9.99 →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* NEW RELEASES — three new ebooks */}
       <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>

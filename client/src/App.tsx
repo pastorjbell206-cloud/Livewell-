@@ -32,6 +32,10 @@ const BibleAndTransgenderIdentity = lazy(() => import("./pages/BibleAndTransgend
 const BibleAndTransgenderIdentityThankYou = lazy(() => import("./pages/BibleAndTransgenderIdentityThankYou"));
 const IsCriticalRaceTheoryBiblical = lazy(() => import("./pages/IsCriticalRaceTheoryBiblical"));
 const IsCriticalRaceTheoryBiblicalThankYou = lazy(() => import("./pages/IsCriticalRaceTheoryBiblicalThankYou"));
+const ConsiderTheBirds = lazy(() => import("./pages/ConsiderTheBirds"));
+const ConsiderTheBirdsThankYou = lazy(() => import("./pages/ConsiderTheBirdsThankYou"));
+const WhereYourTreasureIs = lazy(() => import("./pages/WhereYourTreasureIs"));
+const WhereYourTreasureIsThankYou = lazy(() => import("./pages/WhereYourTreasureIsThankYou"));
 const About = lazy(() => import("./pages/About"));
 
 const Resources = lazy(() => import("./pages/Resources"));
@@ -330,6 +334,11 @@ function Router() {
         <Route path="/books/critical-race-theory-biblical/thank-you" component={IsCriticalRaceTheoryBiblicalThankYou} />
         <Route path="/books/critical-race-theory-biblical" component={IsCriticalRaceTheoryBiblical} />
         <Route path="/books/:slug" component={BookDetail} />
+        {/* LiveWell series — top-level sales + gated thank-you pages */}
+        <Route path="/consider-the-birds/thank-you" component={ConsiderTheBirdsThankYou} />
+        <Route path="/consider-the-birds" component={ConsiderTheBirds} />
+        <Route path="/where-your-treasure-is/thank-you" component={WhereYourTreasureIsThankYou} />
+        <Route path="/where-your-treasure-is" component={WhereYourTreasureIs} />
         <Route path="/substack" component={SubstackPage} />
         <Route path="/pastors" component={Pastors} />
         <Route path="/about" component={About} />

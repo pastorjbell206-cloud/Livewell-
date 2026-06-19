@@ -5,6 +5,8 @@ import mysql from "mysql2/promise";
 import crypto from "node:crypto";
 import bcrypt from "bcryptjs";
 import superjson from "superjson";
+import { readFileSync } from "node:fs";
+import Stripe from "stripe";
 
 async function withConn<T>(fn: (c: mysql.Connection) => Promise<T>): Promise<T> {
   const url = process.env.DATABASE_URL;
@@ -598,7 +600,7 @@ async function pcnSignup(req: VercelRequest, res: VercelResponse) {
 async function sitemap(_req: VercelRequest, res: VercelResponse) {
   try {
     const base = "https://www.livewellbyjamesbell.co";
-    const staticPaths = ["/", "/writing", "/books", "/about", "/quiz", "/search", "/marriage", "/parenting", "/doubt", "/start", "/for-pastors", "/for-leaders", "/membership", "/reading-paths", "/resources"];
+    const staticPaths = ["/", "/writing", "/books", "/consider-the-birds", "/where-your-treasure-is", "/about", "/quiz", "/search", "/marriage", "/parenting", "/doubt", "/start", "/for-pastors", "/for-leaders", "/membership", "/reading-paths", "/resources"];
     let articles: any[] = [];
     try {
       articles = await withConn(async (c) => {
@@ -1864,6 +1866,104 @@ ${items}
   }
 }
 
+// ---------------------------------------------------------------------------
+// LiveWell-series ebooks: Stripe Checkout + gated PDF delivery.
+//
+// The PDFs live in api/_ebooks/ (referenced via new URL(..., import.meta.url) so
+// Vercel's file tracer bundles them into the function) and are NEVER served as
+// static assets — the only way to fetch one is through /api/download with a
+// Stripe session that is actually paid. Price IDs come from env so flipping
+// test -> live keys needs no code change.
+// ---------------------------------------------------------------------------
+interface EbookConfig {
+  title: string;
+  priceEnv: string;
+  file: URL;
+  filename: string;
+}
+
+const EBOOKS: Record<string, EbookConfig> = {
+  "consider-the-birds": {
+    title: "Consider the Birds",
+    priceEnv: "STRIPE_PRICE_CONSIDER_THE_BIRDS",
+    file: new URL("./_ebooks/consider-the-birds.pdf", import.meta.url),
+    filename: "Consider-the-Birds.pdf",
+  },
+  "where-your-treasure-is": {
+    title: "Where Your Treasure Is",
+    priceEnv: "STRIPE_PRICE_WHERE_YOUR_TREASURE_IS",
+    file: new URL("./_ebooks/where-your-treasure-is.pdf", import.meta.url),
+    filename: "Where-Your-Treasure-Is.pdf",
+  },
+};
+
+const PRODUCTION_SITE_URL = "https://livewellbyjamesbell.co";
+
+function getStripe(): Stripe | null {
+  const key = process.env.STRIPE_SECRET_KEY?.trim();
+  if (!key) return null;
+  return new Stripe(key);
+}
+
+// Build absolute URLs from the request so checkout works on Vercel preview
+// deployments too, not just the production domain.
+function siteOrigin(req: VercelRequest): string {
+  const proto = (req.headers["x-forwarded-proto"] as string) || "https";
+  const host = (req.headers["x-forwarded-host"] as string) || req.headers.host || "";
+  return host ? `${proto}://${host}` : PRODUCTION_SITE_URL;
+}
+
+async function ebookCheckout(req: VercelRequest, res: VercelResponse) {
+  if (req.method !== "POST") return json(res, 405, { error: "method not allowed" });
+  const stripe = getStripe();
+  if (!stripe) return json(res, 503, { error: "Checkout is not configured yet." });
+  try {
+    const body = await readBody(req);
+    const slug = String(body?.slug || "");
+    const book = EBOOKS[slug];
+    if (!book) return json(res, 400, { error: "Unknown book." });
+    const priceId = process.env[book.priceEnv]?.trim();
+    if (!priceId) return json(res, 503, { error: "This book is not on sale yet." });
+    const origin = siteOrigin(req);
+    const session = await stripe.checkout.sessions.create({
+      mode: "payment",
+      line_items: [{ price: priceId, quantity: 1 }],
+      success_url: `${origin}/${slug}/thank-you?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${origin}/${slug}`,
+      metadata: { slug },
+    });
+    return json(res, 200, { url: session.url });
+  } catch (e: any) {
+    return json(res, 500, { error: String(e?.message || e) });
+  }
+}
+
+async function ebookDownload(req: VercelRequest, res: VercelResponse) {
+  const check = req.query.check === "1";
+  const stripe = getStripe();
+  const sessionId = String(req.query.session_id || "");
+  if (!stripe) return json(res, 503, { error: "not configured", paid: false, ok: false });
+  if (!sessionId) return json(res, 400, { error: "missing session_id", paid: false, ok: false });
+  try {
+    const session = await stripe.checkout.sessions.retrieve(sessionId);
+    const slug = String(session.metadata?.slug || "");
+    const book = EBOOKS[slug];
+    const paid = (session.payment_status === "paid" || session.status === "complete") && Boolean(book);
+    if (check) {
+      return json(res, 200, { ok: true, paid, slug, title: book?.title || null });
+    }
+    if (!paid) return json(res, 402, { error: "payment not completed" });
+    const data = readFileSync(book!.file);
+    res.setHeader("Content-Type", "application/pdf");
+    res.setHeader("Content-Disposition", `attachment; filename="${book!.filename}"`);
+    res.setHeader("Cache-Control", "private, no-store");
+    return res.status(200).send(data);
+  } catch (e: any) {
+    if (check) return json(res, 200, { ok: false, paid: false });
+    return json(res, 500, { error: String(e?.message || e) });
+  }
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   applyCors(req, res);
   if (req.method === "OPTIONS") {
@@ -1892,6 +1992,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/seed") return adminSeed(req, res);
     if (url === "/api/rss" || url === "/api/rss/substack") return substackRss(req, res);
     if (url === "/api/contact") return contactForm(req, res);
+    if (url === "/api/checkout") return ebookCheckout(req, res);
+    if (url === "/api/download") return ebookDownload(req, res);
     if (url === "/api/subscribe") return subscribe(req, res);
     if (url === "/api/pcn/signup") return pcnSignup(req, res);
     if (url === "/api/sitemap.xml" || url === "/api/sitemap") return sitemap(req, res);
