@@ -26,7 +26,7 @@ interface Booklet {
   subtitle: string;
   note: string;
   pdf: string;
-  epub: string;
+  epub?: string;
 }
 
 const BOOKLETS: Booklet[] = [
@@ -121,6 +121,46 @@ const BOOKLETS: Booklet[] = [
     pdf: "/ebook/changing-the-unchangeable/Changing-the-Unchangeable.pdf",
     epub: "/ebook/changing-the-unchangeable/Changing-the-Unchangeable.epub",
   },
+  {
+    group: "governing",
+    slug: "what-deacons-actually-do",
+    title: "What Deacons Actually Do",
+    subtitle: "Recovering the Biblical Vision of the Church’s Servant Leaders",
+    note: "The most misunderstood office in the church. Here is what the New Testament actually asks of the men who serve.",
+    pdf: "/ebook/what-deacons-actually-do/What-Deacons-Actually-Do.pdf",
+  },
+  {
+    group: "governing",
+    slug: "worship-transition-playbook",
+    title: "The Worship Transition Playbook",
+    subtitle: "How to Change the Music Without Splitting the Church",
+    note: "Most worship wars are not about music. They are about trust. Here is how to change the songs without losing the people.",
+    pdf: "/ebook/worship-transition-playbook/Worship-Transition-Playbook.pdf",
+  },
+  {
+    group: "governing",
+    slug: "hymns-choruses-and-holy-ground",
+    title: "Hymns, Choruses, and Holy Ground",
+    subtitle: "A Theology of Worship for Pastors in the Middle of the Debate",
+    note: "Not a verdict on a style. A theology of worship for the pastor standing in the middle of the argument.",
+    pdf: "/ebook/hymns-choruses-and-holy-ground/Hymns-Choruses-and-Holy-Ground.pdf",
+  },
+  {
+    group: "governing",
+    slug: "working-with-your-worship-leader",
+    title: "Working With Your Worship Leader",
+    subtitle: "The Pastor–Worship Director Relationship That Shapes Sunday Morning",
+    note: "The relationship that quietly decides what Sunday morning feels like — and how to lead it well.",
+    pdf: "/ebook/working-with-your-worship-leader/Working-With-Your-Worship-Leader.pdf",
+  },
+  {
+    group: "governing",
+    slug: "when-organ-players-leave",
+    title: "When the Organ Players Leave",
+    subtitle: "Caring Pastorally for People Who Grieve Worship Changes",
+    note: "Every change in worship costs someone something. How to grieve with the people who lost what they loved.",
+    pdf: "/ebook/when-organ-players-leave/When-Organ-Players-Leave.pdf",
+  },
 ];
 
 const ELDERSHIP = BOOKLETS.filter((b) => b.group === "eldership");
@@ -199,7 +239,7 @@ function BookletCard({ b }: { b: Booklet }) {
         </p>
         <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "center" }}>
           <GatedDownload href={b.pdf} label="Download PDF" source={`hard-issues:${b.slug}`} />
-          <GatedDownload href={b.epub} label="Download EPUB" source={`hard-issues:${b.slug}`} />
+          {b.epub && <GatedDownload href={b.epub} label="Download EPUB" source={`hard-issues:${b.slug}`} />}
         </div>
       </div>
     </article>
@@ -227,7 +267,7 @@ export default function HardIssuesSeries() {
     <Layout>
       <SEOMeta
         title="The Hard Issues Series — Free Booklets for Church Leaders from PCN"
-        description="Ten free booklets for the men who lead the church — five on eldership and five on leading and governing the local church. Free PDF and EPUB from the Pastors Connection Network."
+        description="Fifteen free booklets for the men who lead the church — on eldership, deacons, polity, worship, and leading change in the local church. Free downloads from the Pastors Connection Network."
         image={`${SITE_URL}/books/${BOOKLETS[0].slug}.jpg`}
         url={`${SITE_URL}/resources/hard-issues-series`}
       />
@@ -250,11 +290,11 @@ export default function HardIssuesSeries() {
             The Hard Issues Series
           </h1>
           <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontStyle: "italic", color: "rgba(245,240,230,.82)", margin: "0 0 28px", maxWidth: "52ch" }}>
-            Ten booklets for the men who carry the weight of leading a church.
+            Fifteen booklets for the men who carry the weight of leading a church.
           </p>
           <div style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,.82)", maxWidth: "62ch" }}>
             <p style={{ margin: "0 0 1.2em" }}>
-              An elder board does not fail in the crisis. It fails long before the crisis, in the quiet years when no one decided what the job actually was, who was fit to hold it, or how a man is found and made ready to carry it. The first five booklets help elder teams do that hard work before the hard day arrives — and face the hardest days, disagreement and removal, without tearing a church in two. The next five turn to the wider work of leading and governing: deacons, polity, and the patient art of changing what a church believes it can never change.
+              An elder board does not fail in the crisis. It fails long before the crisis, in the quiet years when no one decided what the job actually was, who was fit to hold it, or how a man is found and made ready to carry it. The first five booklets help elder teams do that hard work before the hard day arrives — and face the hardest days, disagreement and removal, without tearing a church in two. The rest turn to the wider work of leading and governing: deacons, polity, worship, and the patient art of changing what a church believes it can never change.
             </p>
             <p style={{ margin: "0 0 28px" }}>
               Every one of these is free. The downloads cost you nothing, and they never will. A gift, if you choose to give one, supports the Pastors Connection Network in its work of strengthening and training pastors — including the men leading churches in remote and under-resourced places, where training is scarce and a single booklet can be the only help that reaches them. You are not required to give. The booklets are yours either way.
@@ -269,7 +309,7 @@ export default function HardIssuesSeries() {
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           <div style={eyebrow}>The Collection</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", margin: "10px 0 8px" }}>
-            Ten booklets. All free. PDF and EPUB.
+            Fifteen booklets. All free.
           </h2>
           <div style={{ width: "36px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-5)" }} />
 
