@@ -319,6 +319,55 @@ function findOutline(topic: string, audience: string): SermonOutline {
   return OUTLINES[0];
 }
 
+/* ── Christ-centered homiletics engine ──────────────────────────────
+   Upgrades the lookup with a generated scaffold for any text: the
+   fallen-condition focus underneath the topic, the line that runs to
+   Christ, and the redemptive-historical moves. Adapted from the Pastor's
+   Library buildSermon engine. */
+const FCF: Record<string, string> = {
+  Grace: "the exhausting belief that acceptance must be earned",
+  Justice: "our comfort with injustice as long as it does not touch us",
+  Suffering: "the lie that pain means God has left",
+  Identity: "building a self on what can be taken away",
+  Fear: "the small god of worst-case scenarios",
+  Hope: "the quiet conclusion that it will not get better",
+  Faith: "trusting our trust instead of the One we trust",
+  Love: "the love that waits to be deserved",
+};
+const FCF_DEFAULT = "the human refusal to live as a dependent creature";
+const CHRIST_CONN: Record<string, string> = {
+  Grace: "Grace is not a concept Jesus taught; it is a Person who bore your debt.",
+  Justice: "The just Judge took the sentence Himself so mercy would not become injustice.",
+  Suffering: "The God who suffered does not explain your pain from a distance; He entered it.",
+  Hope: "Hope is not optimism; it is a tomb that could not hold Him.",
+};
+const CHRIST_DEFAULT =
+  "Trace this text forward to the one it anticipates: every command exposes our need for the Christ who kept it for us.";
+
+interface Scaffold {
+  fcf: string;
+  christ: string;
+  bigIdea: string;
+  moves: { head: string; body: string }[];
+  verdictPrompt: string;
+}
+function buildScaffold(topic: string, scripture: string): Scaffold {
+  const fcf = FCF[topic] || FCF_DEFAULT;
+  const christ = CHRIST_CONN[topic] || CHRIST_DEFAULT;
+  const ref = scripture.trim() || "your text";
+  return {
+    fcf,
+    christ,
+    bigIdea: `Because of ${fcf}, the congregation needs to hear what ${ref} actually says about ${topic.toLowerCase()} — not as advice, but as news.`,
+    moves: [
+      { head: "The condition", body: `Expose ${fcf} from ${ref}. Make them feel the need before you offer the cure.` },
+      { head: "The Christ", body: christ },
+      { head: "The new obedience", body: "Application that flows from grace received, not pressure applied — one doable response, not five vague ones." },
+    ],
+    verdictPrompt: "Write the last line first. Three to eight words. The sentence they carry to the car.",
+  };
+}
+
 /* ── Component ─────────────────────────────────────────────────── */
 
 export default function SermonOutline() {
@@ -326,14 +375,17 @@ export default function SermonOutline() {
   const [audience, setAudience] = useState("");
   const [scripture, setScripture] = useState("");
   const [outline, setOutline] = useState<SermonOutline | null>(null);
+  const [scaffold, setScaffold] = useState<Scaffold | null>(null);
 
   const handleGenerate = () => {
     if (!topic || !audience) return;
     setOutline(findOutline(topic, audience));
+    setScaffold(buildScaffold(topic, scripture));
   };
 
   const handleReset = () => {
     setOutline(null);
+    setScaffold(null);
     setTopic("");
     setAudience("");
     setScripture("");
@@ -614,6 +666,37 @@ export default function SermonOutline() {
                 />
                 New Outline
               </button>
+
+              {/* Christ-centered homiletics scaffold (generated) */}
+              {scaffold && (
+                <div style={{ background: "var(--card)", borderRadius: "8px", padding: "32px 30px", borderTop: "4px solid var(--mustard)" }}>
+                  <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "14px" }}>
+                    Christ-centered scaffold
+                  </div>
+                  <p style={{ fontFamily: "var(--F)", fontSize: "22px", lineHeight: 1.4, color: "var(--ink)", margin: "0 0 22px" }}>{scaffold.bigIdea}</p>
+                  <div style={{ marginBottom: "18px" }}>
+                    <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, color: "var(--ink-muted)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "4px" }}>Fallen-condition focus</div>
+                    <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", margin: 0 }}>Preach to {scaffold.fcf}. Name the need before the cure.</p>
+                  </div>
+                  <div style={{ background: "var(--bone-warm)", borderLeft: "3px solid var(--mustard)", padding: "14px 18px", marginBottom: "22px" }}>
+                    <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, color: "var(--ink-muted)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "4px" }}>The Christ connection</div>
+                    <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", margin: 0 }}>{scaffold.christ}</p>
+                  </div>
+                  <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, color: "var(--ink-muted)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "10px" }}>The three moves</div>
+                  <ol style={{ listStyle: "none", margin: "0 0 20px", padding: 0 }}>
+                    {scaffold.moves.map((m, i) => (
+                      <li key={i} style={{ display: "flex", gap: "14px", padding: "10px 0", borderBottom: "1px solid var(--border)" }}>
+                        <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 700, color: "var(--mustard-text)", flex: "0 0 22px", paddingTop: "2px" }}>{i + 1}</span>
+                        <span>
+                          <strong style={{ fontFamily: "var(--F)", fontSize: "18px", color: "var(--ink)", display: "block", marginBottom: "2px" }}>{m.head}</strong>
+                          <span style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink)" }}>{m.body}</span>
+                        </span>
+                      </li>
+                    ))}
+                  </ol>
+                  <p style={{ fontFamily: "var(--F)", fontSize: "16px", fontStyle: "italic", color: "var(--mustard-text)", margin: 0 }}>{scaffold.verdictPrompt}</p>
+                </div>
+              )}
 
               {/* Header card */}
               <div
