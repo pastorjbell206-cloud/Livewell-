@@ -12,9 +12,8 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
+import { donateActive, DONATE_HREF } from "@/lib/donate";
 import { Download, Heart } from "lucide-react";
-
-const DONATE_URL = ""; // TODO: Stripe donation link
 
 type Group = "eldership" | "governing";
 
@@ -134,10 +133,6 @@ const eyebrow: React.CSSProperties = {
   color: "var(--mustard-text)",
 };
 
-const donateActive = DONATE_URL.startsWith("https://");
-const DONATE_HREF = donateActive
-  ? DONATE_URL
-  : "mailto:Pastorjbell206@gmail.com?subject=Supporting%20the%20Hard%20Issues%20Series%20(PCN)";
 const DONATE_LABEL = donateActive ? "Support this work — give a gift to PCN" : "Support this work — ask how to give";
 
 function DonateButton({ onDark }: { onDark?: boolean }) {

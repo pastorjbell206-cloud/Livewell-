@@ -29,10 +29,10 @@ const LIBRARIES = [
     flagship: true,
   },
   {
-    href: "/studyguides/christian-nationalism",
+    href: "/studyguides",
     eyebrow: "For group leaders",
-    title: "Leader's Toolkits",
-    desc: "Run a class on Sunday with zero prep: a leader's guide with timing and the answer behind every question, a participant handout, a facilitator script, and printable PDFs.",
+    title: "Study Guides",
+    desc: "Run a class on Sunday with zero prep: a leader's guide with timing and the answer behind every question, a participant handout, a facilitator script, and printable PDFs delivered free by email. The whole collection in one place.",
   },
   {
     href: "/resources/creeds",

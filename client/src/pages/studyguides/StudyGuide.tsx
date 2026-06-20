@@ -10,6 +10,7 @@ import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import GatedDownload from "@/components/GatedDownload";
+import { DONATE_HREF, DONATE_BLURB } from "@/lib/donate";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const prose = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
@@ -91,6 +92,12 @@ export default function StudyGuide() {
                 <GatedDownload href={`/downloads/studyguides/${slug}-leader.pdf`} label="Leader's Guide (PDF)" source={source} />
                 <GatedDownload href={`/downloads/studyguides/${slug}-participant.pdf`} label="Participant Handout (PDF)" source={source} />
               </div>
+              <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "rgba(245,240,230,0.7)", maxWidth: "56ch", marginTop: "16px" }}>
+                {DONATE_BLURB}{" "}
+                <a href={DONATE_HREF} style={{ color: "var(--mustard)", textDecoration: "underline", textUnderlineOffset: "3px", fontWeight: 600 }}>
+                  Give a gift →
+                </a>
+              </p>
             </>
           )}
         </div>
