@@ -17,6 +17,42 @@ export interface StudyGuideEntry {
 
 export const STUDY_GUIDES: StudyGuideEntry[] = [
   {
+    slug: "anxiety",
+    title: "Consider the Birds",
+    eyebrow: "Anxiety and the peace of Christ",
+    blurb:
+      "What Scripture says about anxiety, and the peace Christ gives instead. Honest about the kind that needs a doctor; pastoral about the kind that needs the Father. Companion to the book.",
+    audience: "Small groups, adult Sunday school, and individuals",
+    sessionsLabel: "5 sessions (run as 5, 8, or 4 weeks)",
+  },
+  {
+    slug: "money",
+    title: "Where Your Treasure Is",
+    eyebrow: "Money and the heart",
+    blurb:
+      "Greed, contentment, debt, and generosity — what the heart does with treasure, and the freedom Christ offers the worried and the wealthy alike. Companion to the book.",
+    audience: "Small groups, adult Sunday school, and individuals",
+    sessionsLabel: "5 sessions (run as 5, 8, or 4 weeks)",
+  },
+  {
+    slug: "marriage",
+    title: "Covenant",
+    eyebrow: "Marriage, past the tips",
+    blurb:
+      "Marriage as covenant, not contract — conflict and forgiveness, faithfulness, and the gospel shape of staying. Written from inside a marriage, not above one.",
+    audience: "Married couples, engaged couples, and small groups",
+    sessionsLabel: "5 sessions (run as 5, 8, or 4 weeks)",
+  },
+  {
+    slug: "doubt",
+    title: "When Faith Has Questions",
+    eyebrow: "Doubt and deconstruction",
+    blurb:
+      "Suffering, the hiddenness of God, the reliability of Scripture, the wounds of the church. Every hard question taken at full strength before any answer. A safe room for the doubter.",
+    audience: "Skeptics, Christians with questions, small groups, and individuals",
+    sessionsLabel: "5 sessions (run as 5, 8, or 4 weeks)",
+  },
+  {
     slug: "christian-nationalism",
     title: "Christian Nationalism",
     eyebrow: "Faith and the flag",
