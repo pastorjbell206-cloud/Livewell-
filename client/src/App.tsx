@@ -44,6 +44,7 @@ const CreedsLibrary = lazy(() => import("./pages/resources/CreedsLibrary"));
 const CreedDocument = lazy(() => import("./pages/resources/CreedDocument"));
 const ContextGuide = lazy(() => import("./pages/resources/ContextGuide"));
 const StudyGuide = lazy(() => import("./pages/studyguides/StudyGuide"));
+const StudyGuidesIndex = lazy(() => import("./pages/studyguides/StudyGuidesIndex"));
 const SubstackPage = lazy(() => import("./pages/Substack"));
 const Pastors = lazy(() => import("./pages/Pastors"));
 const FileStorage = lazy(() => import("./pages/FileStorage"));
@@ -298,6 +299,7 @@ function Router() {
         <Route path="/membership" component={Membership} />
         <Route path="/membership/success" component={MembershipSuccess} />
         <Route path="/discipleship" component={Discipleship} />
+        <Route path="/studyguides" component={StudyGuidesIndex} />
         <Route path="/studyguides/:slug" component={StudyGuide} />
         <Route path="/writing" component={Writing} />
         <Route path="/writing/:slug" component={ArticleDetail} />

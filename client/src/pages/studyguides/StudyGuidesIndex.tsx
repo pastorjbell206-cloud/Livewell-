@@ -1,0 +1,77 @@
+/**
+ * Study Guides index (/studyguides). One place that gathers every Leader's
+ * Toolkit. Each guide is a full small-group suite (leader's guide, participant
+ * handout, facilitator script, promo kit) with email-gated PDF downloads on the
+ * guide's own page. Card metadata is in client/src/lib/studyguides-index.ts.
+ */
+import { Link } from "wouter";
+import Layout from "@/components/Layout";
+import { SEOMeta } from "@/components/SEOMeta";
+import { STUDY_GUIDES } from "@/lib/studyguides-index";
+
+const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+
+export default function StudyGuidesIndex() {
+  return (
+    <Layout>
+      <SEOMeta
+        title="Study Guides — Free Leader's Toolkits for Small Groups and Sunday School"
+        description="Free, ready-to-run study guides on the questions the church tends to avoid. Each is a full leader's toolkit — leader's guide, participant handout, facilitator script, and printable PDFs delivered by email."
+        url="https://www.livewellbyjamesbell.co/studyguides"
+      />
+
+      {/* HERO */}
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+        <div style={wrap}>
+          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Study Guides · Leader's Toolkits</div>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.4vw, 58px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
+            Teach the hard things well
+          </h1>
+          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch" }}>
+            Each guide is a full toolkit for the person at the front of the room: a leader's guide with the answer behind every question, a participant handout, a facilitator script, and printable PDFs. Run a class on Sunday with no prep. Every guide is free; the PDFs come to your inbox.
+          </p>
+        </div>
+      </section>
+
+      {/* THE GUIDES */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={wrap}>
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>The collection</div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "var(--s-4)" }}>
+            Free guides for groups, classes, and teams
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "16px" }}>
+            {STUDY_GUIDES.map((g) => (
+              <Link
+                key={g.slug}
+                href={`/studyguides/${g.slug}`}
+                style={{ display: "flex", flexDirection: "column", textDecoration: "none", color: "inherit", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)", height: "100%" }}
+              >
+                <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>{g.eyebrow}</div>
+                <div style={{ fontFamily: "var(--F)", fontSize: "24px", fontWeight: 500, color: "var(--ink)", lineHeight: 1.18, marginBottom: "10px" }}>{g.title}</div>
+                <p style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.65, color: "var(--ink-muted)", marginBottom: "16px", flex: 1 }}>{g.blurb}</p>
+                <div style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", marginBottom: "12px" }}>{g.audience} · {g.sessionsLabel}</div>
+                <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink)", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px", alignSelf: "flex-start" }}>
+                  Open the toolkit →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CLOSING */}
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)", textAlign: "center" }}>
+        <div style={{ maxWidth: "560px", margin: "0 auto" }}>
+          <p style={{ fontFamily: "var(--F)", fontSize: "17px", fontStyle: "italic", lineHeight: 1.6, color: "rgba(245,240,230,0.85)", marginBottom: "20px" }}>
+            More guides are on the way. The booklets, libraries, and tools for leaders live in the wider resource hub.
+          </p>
+          <div style={{ display: "flex", gap: "20px", justifyContent: "center", flexWrap: "wrap" }}>
+            <Link href="/resources" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>All resources</Link>
+            <Link href="/resources/hard-issues-series" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>The Hard Issues Series</Link>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
+}

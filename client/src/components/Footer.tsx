@@ -58,6 +58,7 @@ export default function Footer() {
             <h3 style={colTitle}>Libraries &amp; Tools</h3>
             <div style={col}>
               <Link href="/resources" style={footerLink}>The Resource Hub</Link>
+              <Link href="/studyguides" style={footerLink}>Study Guides</Link>
               <Link href="/resources/context" style={footerLink}>Reading Scripture in Context</Link>
               <Link href="/leadership/library" style={footerLink}>Leadership Library</Link>
               <Link href="/leadership/sermon-series" style={footerLink}>Sermon Series Library</Link>
