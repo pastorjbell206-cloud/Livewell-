@@ -54,6 +54,7 @@ const STATIC_PAGES = [
   { url: "/leadership", priority: "0.85", changefreq: "weekly" },
   { url: "/leadership/library", priority: "0.85", changefreq: "weekly" },
   { url: "/leadership/sermon-series", priority: "0.8", changefreq: "monthly" },
+  { url: "/leadership/bible-sermons", priority: "0.85", changefreq: "monthly" },
   { url: "/leadership/formation", priority: "0.85", changefreq: "weekly" },
   { url: "/leadership/inventory", priority: "0.8", changefreq: "monthly" },
   { url: "/resources/context", priority: "0.9", changefreq: "weekly" },

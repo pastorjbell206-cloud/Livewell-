@@ -36,6 +36,9 @@ export default function SermonSeries() {
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}><Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · Sermon series</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.5vw, 58px)", fontWeight: 400, lineHeight: 1.03, letterSpacing: "-0.03em", marginBottom: "16px", maxWidth: "20ch" }}>A year of preaching, mapped.</h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch" }}>Series to preach straight through a book, and series gathered around a question a congregation is actually asking. Each one carries its arc and a sermon-by-sermon breakdown: the text, the one idea, and the aim. A starting point, not a script.</p>
+          <Link href="/leadership/bible-sermons" style={{ display: "inline-block", marginTop: "20px", fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
+            Browse a series for all 66 books →
+          </Link>
         </div>
       </section>
 
