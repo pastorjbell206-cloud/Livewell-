@@ -24,6 +24,7 @@
           { "source": "/for-families", "destination": "/parenting", "permanent": true },
           { "source": "/books-store", "destination": "/books", "permanent": true },
           { "source": "/quiz", "destination": "/tools/theology-quiz", "permanent": true },
+          { "source": "/resources-for-pastors", "destination": "/for-pastors", "permanent": true },
           {
                   "source": "/(.*)",
                   "has": [{ "type": "host", "value": "livewellbyjamesbell.co" }],
