@@ -98,6 +98,16 @@ export default function FormationIndex() {
               Take the Leadership Formation Inventory
             </Link>
           </div>
+
+          <div style={{ marginTop: "var(--s-3)", background: "var(--bone-warm)", border: "1px solid var(--border)", padding: "var(--s-4)" }}>
+            <div className="eyebrow" style={{ marginBottom: "10px" }}>Free for church leaders</div>
+            <p style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.5, color: "var(--ink)", marginBottom: "16px", maxWidth: "56ch" }}>
+              The Hard Issues Series: fifteen free booklets on eldership, deacons, polity, worship, and leading change — the practical companions to the formation work above.
+            </p>
+            <Link href="/resources/hard-issues-series" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
+              Browse the Hard Issues Series &rarr;
+            </Link>
+          </div>
         </div>
       </section>
     </Layout>
