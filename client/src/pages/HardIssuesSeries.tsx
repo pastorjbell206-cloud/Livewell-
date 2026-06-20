@@ -11,8 +11,9 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import GatedDownload from "@/components/GatedDownload";
 import { SITE_URL } from "@/lib/site";
-import { Download, Heart } from "lucide-react";
+import { Heart } from "lucide-react";
 
 const DONATE_URL = ""; // TODO: Stripe donation link
 
@@ -165,30 +166,6 @@ function DonateButton({ onDark }: { onDark?: boolean }) {
   );
 }
 
-function DownloadLink({ href, label }: { href: string; label: string }) {
-  return (
-    <a
-      href={href}
-      download
-      style={{
-        display: "inline-flex",
-        alignItems: "center",
-        gap: "8px",
-        fontFamily: "var(--U)",
-        fontSize: "13px",
-        fontWeight: 600,
-        color: "var(--ink)",
-        textDecoration: "none",
-        borderBottom: "1px solid var(--mustard)",
-        paddingBottom: "2px",
-      }}
-    >
-      <Download size={14} aria-hidden />
-      {label}
-    </a>
-  );
-}
-
 function BookletCard({ b }: { b: Booklet }) {
   return (
     <article
@@ -220,9 +197,9 @@ function BookletCard({ b }: { b: Booklet }) {
         <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, color: "var(--ink)", margin: "0 0 20px", maxWidth: "56ch" }}>
           {b.note}
         </p>
-        <div style={{ display: "flex", gap: "24px", flexWrap: "wrap", alignItems: "center" }}>
-          <DownloadLink href={b.pdf} label="Download PDF" />
-          <DownloadLink href={b.epub} label="Download EPUB" />
+        <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "center" }}>
+          <GatedDownload href={b.pdf} label="Download PDF" source={`hard-issues:${b.slug}`} />
+          <GatedDownload href={b.epub} label="Download EPUB" source={`hard-issues:${b.slug}`} />
         </div>
       </div>
     </article>
