@@ -7,6 +7,7 @@
  */
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
+import { Streamdown } from "streamdown";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
@@ -19,8 +20,8 @@ const eyebrow: React.CSSProperties = {
 };
 
 interface Verse { ref: string; text: string }
-interface Session { title: string; headline: string; scripture: string; bigIdea: string; discussion: string[]; practice: string; prayer: string; memoryVerse: Verse }
-interface Guide { slug: string; title: string; subtitle: string; audience: string; intro: string; process?: string[]; partial?: boolean; sessions: Session[] }
+interface Session { title: string; headline: string; scripture: string; bigIdea: string; teaching?: string; discussion: string[]; practice: string; prayer: string; memoryVerse: Verse }
+interface Guide { slug: string; title: string; subtitle: string; audience: string; intro: string; process?: string[]; partial?: boolean; pdf?: string; sessions: Session[] }
 
 export default function FormationGuides() {
   const [guides, setGuides] = useState<Guide[] | null>(null);
@@ -71,6 +72,11 @@ export default function FormationGuides() {
             <p style={{ fontFamily: "var(--F)", fontSize: "21px", fontStyle: "italic", color: "rgba(245,240,230,.82)", margin: "0 0 8px" }}>{g.subtitle}</p>
             <p style={{ fontFamily: "var(--U)", fontSize: "13px", letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(245,240,230,.6)", margin: "0 0 22px" }}>{g.sessions.length} sessions · {g.audience}</p>
             <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.75, color: "rgba(245,240,230,.82)", maxWidth: "62ch" }}>{g.intro}</p>
+            {g.pdf && (
+              <a href={g.pdf} download style={{ display: "inline-block", marginTop: "24px", background: "var(--mustard)", color: "var(--charcoal)", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 700, padding: "13px 24px", borderRadius: "var(--radius-sm)", textDecoration: "none" }}>
+                Download the full manual (PDF) ↓
+              </a>
+            )}
           </div>
         </section>
 
@@ -98,6 +104,12 @@ export default function FormationGuides() {
                 <div style={eyebrow}>Session {i + 1} · {s.scripture}</div>
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.4vw, 34px)", fontWeight: 400, color: "var(--ink)", margin: "8px 0 4px", lineHeight: 1.15 }}>{s.title}</h2>
                 <p style={{ fontFamily: "var(--F)", fontSize: "19px", fontStyle: "italic", color: "var(--ink-muted)", margin: "0 0 18px" }}>{s.headline}</p>
+
+                {s.teaching && (
+                  <div className="handbook-body" style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.8, color: "var(--ink)", marginBottom: "26px" }}>
+                    <Streamdown>{s.teaching}</Streamdown>
+                  </div>
+                )}
 
                 <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--mustard-text)", marginBottom: "4px" }}>The big idea</div>
                 <p style={{ fontFamily: "var(--F)", fontSize: "22px", lineHeight: 1.4, color: "var(--ink)", margin: "0 0 22px" }}>{s.bigIdea}</p>
