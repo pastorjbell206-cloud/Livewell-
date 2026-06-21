@@ -83,6 +83,7 @@ function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLin
             { label: "The Leadership Hub", href: "/leadership", description: "A working library for pastors and lay leaders — tools, articles, and sermon series for the weight of leading the church." },
             { label: "The Leadership Library", href: "/leadership/library", description: "Every leadership article in one searchable place — preaching, exegesis, formation, and care." },
             { label: "Sermon Series Library", href: "/leadership/sermon-series", description: "Complete series plans, book by book and topic by topic, with the arc and every sermon's aim." },
+            { label: "Servant Leadership", href: "/leadership/servant-leadership", description: "The nine biblical marks of a servant leader — the qualities the church neglected because they cost the leader something." },
           ]
         : [];
     if (subs.length === 0) {

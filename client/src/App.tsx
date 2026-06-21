@@ -136,6 +136,7 @@ const GovernanceLibrary = lazy(() => import("./pages/leadership/GovernanceLibrar
 const LeadershipLibrary = lazy(() => import("./pages/leadership/LeadershipLibrary"));
 const SermonSeries = lazy(() => import("./pages/leadership/SermonSeries"));
 const FormationIndex = lazy(() => import("./pages/leadership/FormationIndex"));
+const ServantLeadership = lazy(() => import("./pages/leadership/ServantLeadership"));
 const FormationTopic = lazy(() => import("./pages/leadership/FormationTopic"));
 const FormationInventory = lazy(() => import("./pages/leadership/FormationInventory"));
 const PropheticLament = lazy(() => import("./pages/prophetic/PropheticLament"));
@@ -280,6 +281,7 @@ function Router() {
         <Route path="/leadership/before-you-post"><BeforeYouPost /></Route>
         <Route path="/leadership/article/:slug"><LeadershipArticle /></Route>
         <Route path="/leadership/formation/:slug" component={FormationTopic} />
+        <Route path="/leadership/servant-leadership" component={ServantLeadership} />
         <Route path="/leadership/formation" component={FormationIndex} />
         <Route path="/leadership/inventory" component={FormationInventory} />
         <Route path="/leadership"><LeadershipHub /></Route>
