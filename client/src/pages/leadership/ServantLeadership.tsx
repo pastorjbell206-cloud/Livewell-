@@ -86,6 +86,30 @@ export default function ServantLeadership() {
         </div>
       </section>
 
+      {/* THE CURRICULUM */}
+      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+          <div style={{ ...eyebrow, color: "var(--mustard)" }}>The curriculum</div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.4vw, 34px)", fontWeight: 400, color: "var(--bone)", margin: "10px 0 8px" }}>A whole course on leading the church</h2>
+          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,.8)", maxWidth: "62ch", margin: "0 0 var(--s-4)" }}>
+            Read the book, run the guides, measure yourself against the marks. Free, and built to be used.
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "var(--s-3)" }}>
+            {[
+              { href: "/leadership/handbook", k: "The Handbook · a book", t: "The Servant Leadership Handbook", d: "Twelve chapters — from the towel and the throne to raising your replacement." },
+              { href: "/leadership/guides", k: "The Lessons · 4 guides", t: "Training Guides", d: "Session-by-session: servant leadership, elders, deacons, developing leaders." },
+              { href: "#marks", k: "The Framework", t: "The 9 Marks", d: "A diagnostic for every leader — and the conviction underneath each one." },
+            ].map((c) => (
+              <a key={c.href} href={c.href} style={{ display: "block", background: "var(--panel, #1d1b15)", border: "1px solid rgba(245,240,230,0.12)", padding: "var(--s-3)", textDecoration: "none" }}>
+                <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "8px" }}>{c.k}</div>
+                <div style={{ fontFamily: "var(--F)", fontSize: "21px", color: "var(--bone)", lineHeight: 1.2, marginBottom: "6px" }}>{c.t}</div>
+                <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.55, color: "rgba(245,240,230,0.7)" }}>{c.d}</div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* PRINCIPLES */}
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={wrap}>
@@ -104,7 +128,7 @@ export default function ServantLeadership() {
       </section>
 
       {/* THE 9 MARKS */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
+      <section id="marks" style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)", scrollMarginTop: "80px" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div style={eyebrow}>The framework</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", margin: "10px 0 var(--s-5)" }}>

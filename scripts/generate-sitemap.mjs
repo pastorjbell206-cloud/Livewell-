@@ -57,6 +57,7 @@ const STATIC_PAGES = [
   { url: "/leadership/bible-sermons", priority: "0.85", changefreq: "monthly" },
   { url: "/leadership/formation", priority: "0.85", changefreq: "weekly" },
   { url: "/leadership/servant-leadership", priority: "0.85", changefreq: "monthly" },
+  { url: "/leadership/handbook", priority: "0.9", changefreq: "monthly" },
   { url: "/leadership/guides", priority: "0.85", changefreq: "monthly" },
   { url: "/leadership/guides/servant-leadership-bible-study", priority: "0.8", changefreq: "monthly" },
   { url: "/leadership/guides/elder-training-manual", priority: "0.8", changefreq: "monthly" },
