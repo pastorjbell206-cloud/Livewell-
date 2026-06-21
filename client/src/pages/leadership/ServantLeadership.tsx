@@ -140,9 +140,14 @@ export default function ServantLeadership() {
             ))}
           </div>
           <p style={{ fontFamily: "var(--F)", fontSize: "24px", color: "var(--mustard)", margin: "0 0 24px" }}>Character is the only competence that lasts.</p>
-          <Link href="/leadership" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "3px" }}>
-            More for pastors and leaders → the Leadership Hub
-          </Link>
+          <div style={{ display: "flex", gap: "28px", flexWrap: "wrap" }}>
+            <Link href="/leadership/guides" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "3px" }}>
+              Train your leaders → the free guides
+            </Link>
+            <Link href="/leadership" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "3px" }}>
+              More for pastors → the Leadership Hub
+            </Link>
+          </div>
         </div>
       </section>
     </Layout>

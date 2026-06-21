@@ -1,0 +1,404 @@
+{
+ "guides": [
+  {
+   "slug": "servant-leadership-bible-study",
+   "title": "Servant Leadership Bible Study",
+   "subtitle": "The Basin and the Towel",
+   "audience": "Elder teams, leadership cohorts, and church staff",
+   "intro": "Six weeks in the Scriptures that define greatness as the willingness to be last. Each session names the real question, slows down one passage, and ends with a practice and a verse to carry. For leaders who want to be formed, not only informed.",
+   "sessions": [
+    {
+     "title": "What Is Servant Leadership?",
+     "headline": "The Word We Domesticated",
+     "scripture": "Mark 10:35–45",
+     "bigIdea": "Jesus does not correct the desire for greatness. He redefines it as the willingness to be last.",
+     "discussion": [
+      "Where have I used 'servant leadership' for authority that costs me nothing?",
+      "What does James and John's request reveal about how I picture greatness?",
+      "Read v.45. What does it cost to lead the way the Son of Man led?"
+     ],
+     "practice": "Name one task you delegated because it was beneath you. Take it back this week.",
+     "prayer": "Lord, expose where I have dressed ambition in the language of service.",
+     "memoryVerse": {
+      "text": "Whoever would be great among you must be your servant",
+      "ref": "Mark 10:43"
+     }
+    },
+    {
+     "title": "Worldly vs. Biblical Leadership",
+     "headline": "Constantine in the Conference Room",
+     "scripture": "1 Samuel 8:1–22",
+     "bigIdea": "Israel wanted a king 'like the other nations.' The church keeps wanting a leadership model like the other organizations.",
+     "discussion": [
+      "Where has our leadership culture borrowed from the corporation rather than the kingdom?",
+      "What does God grant Israel — and what does He warn it will cost?",
+      "Which 'like the other nations' assumption is most embedded in how we lead?"
+     ],
+     "practice": "Audit your last three leadership decisions: kingdom-shaped or empire-shaped?",
+     "prayer": "Father, unteach us the instincts we learned from the empire.",
+     "memoryVerse": {
+      "text": "They have rejected me from being king",
+      "ref": "1 Samuel 8:7"
+     }
+    },
+    {
+     "title": "Jesus Washes the Disciples' Feet",
+     "headline": "What Jesus Did With a Basin",
+     "scripture": "John 13:1–17",
+     "bigIdea": "The foot-washing happens at the moment of maximum authority. The basin is the exercise of power, not its surrender.",
+     "discussion": [
+      "Why does John tell us Jesus knew 'all things' had been given Him before He knelt?",
+      "What is your basin — the lowly thing your position let you stop doing?",
+      "Peter resists being served. What does that reveal about receiving, not just giving?"
+     ],
+     "practice": "Do one literal basin task no one expects of someone in your role.",
+     "prayer": "Jesus, let me lead from the floor where You knelt.",
+     "memoryVerse": {
+      "text": "I have given you an example",
+      "ref": "John 13:15"
+     }
+    },
+    {
+     "title": "Humility in Leadership",
+     "headline": "Authority That Runs Downward",
+     "scripture": "Philippians 2:5–11",
+     "bigIdea": "The mind of Christ moves down — emptying, humbling, obeying — before it is exalted.",
+     "discussion": [
+      "Trace the downward steps in vv.6–8. Where am I unwilling to descend?",
+      "How does v.9 reframe ambition?",
+      "What would 'this mind' change about how I run a meeting?"
+     ],
+     "practice": "Identify one place you hold power for security's sake. Distribute it.",
+     "prayer": "Form in me the mind that moves down before it moves up.",
+     "memoryVerse": {
+      "text": "He humbled himself",
+      "ref": "Philippians 2:8"
+     }
+    },
+    {
+     "title": "Leading Through Weakness",
+     "headline": "The Wound as Credential",
+     "scripture": "2 Corinthians 4:7–12; 12:7–10",
+     "bigIdea": "Treasure in jars of clay. The leader's weakness is the container for power, not the obstacle to it.",
+     "discussion": [
+      "What failure have I hidden that, named, could pastor someone through theirs?",
+      "Why does Paul boast in weakness rather than competence?",
+      "Where does my jar of clay need to crack so the treasure shows?"
+     ],
+     "practice": "Tell one leader you are forming about a real failure and what it taught you.",
+     "prayer": "Make my weakness the place Your power is seen.",
+     "memoryVerse": {
+      "text": "My power is made perfect in weakness",
+      "ref": "2 Corinthians 12:9"
+     }
+    },
+    {
+     "title": "Building Servant Leadership Habits",
+     "headline": "Rebuilding the Towel Habit",
+     "scripture": "John 13:12–17; Galatians 6:9",
+     "bigIdea": "Servant leadership is not a conviction. It is a calendar. It survives only as built structure.",
+     "discussion": [
+      "What one structure would make servant leadership unavoidable for me?",
+      "Who have I made unnecessary this season — and is that a win or a threat?",
+      "What is the next basin I am avoiding?"
+     ],
+     "practice": "Write your own 'towel habit' — one recurring practice that keeps you on the floor. Schedule it.",
+     "prayer": "Keep me on the floor, Lord, long after the feeling fades.",
+     "memoryVerse": {
+      "text": "Blessed are you if you do them",
+      "ref": "John 13:17"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "elder-training-manual",
+   "title": "Elder Training Manual",
+   "subtitle": "Shepherds, Not a Board",
+   "audience": "Pastors raising elders, and the men being raised",
+   "intro": "How to Develop Church Elders. God screens for the man, not the resume — of roughly twenty qualifications, only one is a skill. Eight sessions through the biblical qualifications, plus a four-stage process to identify, examine, and ordain men who will last.",
+   "process": [
+    "OBSERVE (0–6 months): he watches elders shepherd hard cases and debriefs each one.",
+    "EXAMINE (6–12 months): character, household, and doctrine tested openly — his wife and grown children testify.",
+    "SHEPHERD (12–24 months): he carries real souls under a seasoned elder's cover.",
+    "ORDAIN & REPRODUCE (24+ months): set apart with the charge to raise his own replacement."
+   ],
+   "sessions": [
+    {
+     "title": "Biblical Qualifications of an Elder",
+     "headline": "We Recruited the Wrong Men",
+     "scripture": "1 Timothy 3:1–7; Titus 1:5–9",
+     "bigIdea": "God screens for the man, not the resume. Of roughly twenty qualifications, only one is a skill.",
+     "discussion": [
+      "What accusation could be credibly made about me right now?",
+      "Where is my public life diverging from my private one?",
+      "Which single qualification exposes me most?"
+     ],
+     "practice": "Ask your spouse: 'Where am I not the man people think I am?'",
+     "prayer": "Search me and know my heart.",
+     "memoryVerse": {
+      "text": "Above reproach",
+      "ref": "1 Timothy 3:2"
+     }
+    },
+    {
+     "title": "The Elder and His Family",
+     "headline": "The Household First",
+     "scripture": "1 Timothy 3:4–5",
+     "bigIdea": "The home is the proving ground. A man who cannot shepherd his house cannot shepherd God's.",
+     "discussion": [
+      "What does my home reveal about my fitness to lead?",
+      "Where do I lead the church better than my family?",
+      "Who in my house would vouch for me — and who wouldn't?"
+     ],
+     "practice": "Have the conversation with your children you have been avoiding.",
+     "prayer": "Make me faithful in the small kingdom first.",
+     "memoryVerse": {
+      "text": "He must manage his own household well",
+      "ref": "1 Timothy 3:4"
+     }
+    },
+    {
+     "title": "An Elder's Character and Appetites",
+     "headline": "Where Elders Fall First",
+     "scripture": "Titus 1:7",
+     "bigIdea": "Money, temper, and substance are where elders fall before anyone sees it.",
+     "discussion": [
+      "Which appetite do I manage rather than master?",
+      "Who can ask me about my money and my temper?",
+      "What private drift would disqualify me if it surfaced?"
+     ],
+     "practice": "Give one person full permission to ask about your finances.",
+     "prayer": "Master in me what I have only managed.",
+     "memoryVerse": {
+      "text": "Not greedy for gain",
+      "ref": "Titus 1:7"
+     }
+    },
+    {
+     "title": "Able to Teach",
+     "headline": "Truth With a Gentle Spirit",
+     "scripture": "Titus 1:9; 2 Timothy 2:24–25",
+     "bigIdea": "The one required competence is holding truth and correcting error with gentleness.",
+     "discussion": [
+      "Can I hold sound doctrine and a gentle spirit at once?",
+      "Do I correct to win or to restore?",
+      "Where does my teaching wound rather than heal?"
+     ],
+     "practice": "Teach one truth to one person, gently, in their hardness.",
+     "prayer": "Give me truth in a spirit that heals.",
+     "memoryVerse": {
+      "text": "Hold firm to the trustworthy word",
+      "ref": "Titus 1:9"
+     }
+    },
+    {
+     "title": "Tested by Time, Not Talent",
+     "headline": "Not a Recent Convert",
+     "scripture": "1 Timothy 3:6",
+     "bigIdea": "Time is a qualification. Conceit is the trap laid for the man elevated too soon.",
+     "discussion": [
+      "Have I been tested by time and trouble, or only by talent?",
+      "Where is conceit already at work in me?",
+      "What season most proved or exposed me?"
+     ],
+     "practice": "Name the season that most tested you. What did it form?",
+     "prayer": "Guard me from the conceit of the quickly elevated.",
+     "memoryVerse": {
+      "text": "Lest he become puffed up",
+      "ref": "1 Timothy 3:6"
+     }
+    },
+    {
+     "title": "Reputation Outside the Church",
+     "headline": "The Watching World",
+     "scripture": "1 Timothy 3:7",
+     "bigIdea": "Reputation outside the church is part of the qualification. The world is a witness.",
+     "discussion": [
+      "What do people unimpressed by me say about me?",
+      "Where does my outside reputation contradict my inside one?",
+      "Who outside the church would I least want interviewed about me?"
+     ],
+     "practice": "Ask a non-Christian who knows you for one honest critique.",
+     "prayer": "Let my life ring true where no one expects it.",
+     "memoryVerse": {
+      "text": "Well thought of by outsiders",
+      "ref": "1 Timothy 3:7"
+     }
+    },
+    {
+     "title": "Shepherd the Flock Among You",
+     "headline": "Among You, Not Over You",
+     "scripture": "1 Peter 5:1–4; Acts 20:28",
+     "bigIdea": "Elders lead by example among the flock, not by domineering over it.",
+     "discussion": [
+      "Do I lead among the people or over them?",
+      "Whose soul am I actually carrying this month?",
+      "Where am I domineering and calling it leading?"
+     ],
+     "practice": "Spend one hour this week with the hardest sheep to love.",
+     "prayer": "Give me a shepherd's heart for the ones who cost me most.",
+     "memoryVerse": {
+      "text": "Being examples to the flock",
+      "ref": "1 Peter 5:3"
+     }
+    },
+    {
+     "title": "Raising the Next Elder",
+     "headline": "Ordain to Reproduce",
+     "scripture": "2 Timothy 2:2",
+     "bigIdea": "Ordination is a starting line. Every elder is charged from day one to raise his replacement.",
+     "discussion": [
+      "Who am I currently forming to take my place?",
+      "If I were gone, who would carry this flock?",
+      "What am I doing that only I can do — and why?"
+     ],
+     "practice": "Choose one man to begin walking through this manual.",
+     "prayer": "Let me raise the elder who outlasts me.",
+     "memoryVerse": {
+      "text": "Entrust to faithful men",
+      "ref": "2 Timothy 2:2"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "deacon-training-manual",
+   "title": "Deacon Training Manual",
+   "subtitle": "Born From a Complaint About Widows",
+   "audience": "Deacons, deacon candidates, and the pastors training them",
+   "intro": "The biblical role of a deacon, the qualifications of 1 Timothy 3, and the Acts 6 origin of servant ministry. The diaconate was born when widows were overlooked — so that no one falls through the cracks of a growing church, and the word and prayer are protected.",
+   "sessions": [
+    {
+     "title": "The Origin of the Deacon (Acts 6)",
+     "headline": "Service Is the DNA",
+     "scripture": "Acts 6:1–7",
+     "bigIdea": "The diaconate was born when widows were overlooked. The office exists so that no one falls through the cracks of a growing church — and so the word and prayer are protected.",
+     "discussion": [
+      "What 'overlooked widow' exists in our church right now?",
+      "How does serving tables protect the ministry of the word?",
+      "Why does the text say the number of disciples multiplied right after this?"
+     ],
+     "practice": "Find one person currently overlooked by the church's systems. Serve them this week.",
+     "prayer": "Lord, give me eyes for the ones who are being missed.",
+     "memoryVerse": {
+      "text": "It is not right that we should neglect the word",
+      "ref": "Acts 6:2"
+     }
+    },
+    {
+     "title": "Qualifications of a Deacon",
+     "headline": "Tested First, Then Trusted",
+     "scripture": "1 Timothy 3:8–13",
+     "bigIdea": "Deacons are dignified, honest, not greedy, tested, and faithful at home. The same character bar as elders — different function, not lower standard.",
+     "discussion": [
+      "Which qualification do I most need to grow in?",
+      "Where is my speech double-tongued — one thing here, another there?",
+      "Am I tested, or just available?"
+     ],
+     "practice": "Let yourself be tested in one concrete responsibility before seeking the office.",
+     "prayer": "Make me trustworthy in small things first.",
+     "memoryVerse": {
+      "text": "Let them also be tested first",
+      "ref": "1 Timothy 3:10"
+     }
+    },
+    {
+     "title": "What a Deacon Actually Does",
+     "headline": "The Ministry of the Practical",
+     "scripture": "Acts 6:1–4; Romans 16:1–2",
+     "bigIdea": "Deacons handle the practical care of the body — benevolence, logistics, mercy — so the church's life holds together and the word goes unhindered.",
+     "discussion": [
+      "What practical needs in our church are currently unmet?",
+      "How is 'serving tables' actually spiritual work?",
+      "Where do I think a task is beneath me?"
+     ],
+     "practice": "Take ownership of one unglamorous, unseen need this week.",
+     "prayer": "Teach me to find dignity in the hidden work.",
+     "memoryVerse": {
+      "text": "Phoebe, a servant of the church",
+      "ref": "Romans 16:1"
+     }
+    },
+    {
+     "title": "Deacons and Unity",
+     "headline": "Guardians of the Body's Peace",
+     "scripture": "Acts 6:1; Ephesians 4:1–3",
+     "bigIdea": "The first deacons were appointed to resolve a dispute that threatened unity. Deacons are peacemakers who keep grumbling from becoming division.",
+     "discussion": [
+      "Where is grumbling growing in our church that I could help heal?",
+      "Am I a source of unity or friction?",
+      "How do I handle a complaint brought to me?"
+     ],
+     "practice": "Address one quiet conflict before it spreads.",
+     "prayer": "Make me an agent of peace, not a carrier of complaint.",
+     "memoryVerse": {
+      "text": "Eager to maintain the unity of the Spirit",
+      "ref": "Ephesians 4:3"
+     }
+    },
+    {
+     "title": "The Deacon's Reward and the Long View",
+     "headline": "A Good Standing for Those Who Serve",
+     "scripture": "1 Timothy 3:13; Matthew 25:21",
+     "bigIdea": "Those who serve well gain a good standing and great boldness in the faith. Hidden service is seen by God and forms the servant into Christ's likeness.",
+     "discussion": [
+      "Am I serving for the standing of God or the notice of people?",
+      "What boldness has faithful service grown in me?",
+      "Could I serve for a decade unseen?"
+     ],
+     "practice": "Do one act of service this week that no one will ever know about.",
+     "prayer": "Let me be content to be seen by You alone.",
+     "memoryVerse": {
+      "text": "They gain a good standing for themselves",
+      "ref": "1 Timothy 3:13"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "how-to-develop-leaders",
+   "title": "How to Develop Leaders in the Church",
+   "subtitle": "Reproduce, Do Not Retain",
+   "audience": "Anyone responsible for raising other leaders",
+   "intro": "How to spot, train, delegate to, and release new leaders so your ministry reproduces. The leader who cannot be replaced has failed at the one thing leaders are for.",
+   "partial": true,
+   "sessions": [
+    {
+     "title": "How to Spot Potential Leaders",
+     "headline": "Adopt a Posture of Looking",
+     "scripture": "Luke 6:12–16",
+     "bigIdea": "Jesus prayed all night, then named twelve ordinary men. Leaders are spotted on your knees, not in your org chart.",
+     "discussion": [
+      "Who am I overlooking because they don't look like a leader?",
+      "Am I praying for laborers or just recruiting volunteers?",
+      "What gift have I failed to call out in someone?"
+     ],
+     "practice": "Write five names of people with unproven gifting. Pray over them this week.",
+     "prayer": "Lord of the harvest, show me whom You are raising up.",
+     "memoryVerse": {
+      "text": "He chose twelve",
+      "ref": "Luke 6:13"
+     }
+    },
+    {
+     "title": "Why Delegation Is Discipleship",
+     "headline": "Delegation Is Discipleship",
+     "scripture": "Exodus 18:13–27",
+     "bigIdea": "Jethro's rebuke still lands: the leader who keeps everything destroys himself and the people. Hand away what forms people.",
+     "discussion": [
+      "What am I holding that someone else should carry?",
+      "Do I delegate to get free or to set someone free?",
+      "What am I afraid will happen if I let go?"
+     ],
+     "practice": "Hand off one meaningful responsibility — and stay close enough to disciple them through it.",
+     "prayer": "Teach me to give away the work that makes leaders.",
+     "memoryVerse": {
+      "text": "You will surely wear yourself out",
+      "ref": "Exodus 18:18"
+     }
+    }
+   ]
+  }
+ ]
+}
