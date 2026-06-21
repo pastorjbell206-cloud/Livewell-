@@ -7,7 +7,7 @@
  * empty, every donate affordance falls back to a mailto so the invitation
  * still works and nothing breaks — the downloads stay free regardless.
  */
-export const DONATE_URL = ""; // TODO: paste the Stripe choose-your-amount link
+export const DONATE_URL = "https://donate.stripe.com/4gM6oH83A3xs7dAfLIa3u09"; // live PCN choose-your-amount link
 
 export const donateActive = DONATE_URL.startsWith("https://");
 
