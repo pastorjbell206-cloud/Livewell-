@@ -23,8 +23,6 @@ import {
   PILLAR_ORDER,
   subPathwaysForPillar,
   pillarListingUrl,
-  STUDY_GUIDES_LABEL,
-  STUDY_GUIDES_HREF,
 } from "@/lib/subPathways";
 import { SUBPATHWAY_BY_SLUG } from "@/lib/subpathwayMap.generated";
 import { HIDDEN_SLUGS } from "@/lib/hiddenSlugs";
@@ -103,8 +101,9 @@ function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLin
   });
 
   return [
+    { label: "Start here", href: "/start" },
     ...pillarLinks,
-    { label: STUDY_GUIDES_LABEL, href: STUDY_GUIDES_HREF },
+    { label: "Resources", href: "/resources" },
     { label: "Books", href: "/books" },
     { label: "About", href: "/about" },
   ];
