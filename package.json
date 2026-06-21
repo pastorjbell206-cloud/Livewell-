@@ -16,6 +16,7 @@
     "db:seed": "node scripts/seed-all-content.mjs",
     "sitemap": "node scripts/generate-sitemap.mjs",
     "pdfs": "node scripts/build-pdfs.mjs",
+    "manuals": "node scripts/build-leadership-manuals.mjs",
     "og": "node scripts/build-og-images.mjs",
     "prerender": "node scripts/prerender-heads.mjs",
     "publish:docx": "tsx scripts/publish-docx.ts",
