@@ -82,6 +82,7 @@ function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLin
             { label: "The Leadership Library", href: "/leadership/library", description: "Every leadership article in one searchable place — preaching, exegesis, formation, and care." },
             { label: "Sermon Series Library", href: "/leadership/sermon-series", description: "Complete series plans, book by book and topic by topic, with the arc and every sermon's aim." },
             { label: "Servant Leadership", href: "/leadership/servant-leadership", description: "The nine biblical marks of a servant leader — the qualities the church neglected because they cost the leader something." },
+            { label: "The Servant Leadership Handbook", href: "/leadership/handbook", description: "A free twelve-chapter book on leading the church — from the towel and the throne to raising your replacement." },
             { label: "Training Guides", href: "/leadership/guides", description: "Free session-by-session guides: servant leadership, elder training, deacon training, and developing leaders." },
           ]
         : [];

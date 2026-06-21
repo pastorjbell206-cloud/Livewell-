@@ -139,6 +139,7 @@ const WholeBibleSermons = lazy(() => import("./pages/leadership/WholeBibleSermon
 const FormationIndex = lazy(() => import("./pages/leadership/FormationIndex"));
 const ServantLeadership = lazy(() => import("./pages/leadership/ServantLeadership"));
 const FormationGuides = lazy(() => import("./pages/leadership/FormationGuides"));
+const ServantLeadershipHandbook = lazy(() => import("./pages/leadership/ServantLeadershipHandbook"));
 const FormationTopic = lazy(() => import("./pages/leadership/FormationTopic"));
 const FormationInventory = lazy(() => import("./pages/leadership/FormationInventory"));
 const PropheticLament = lazy(() => import("./pages/prophetic/PropheticLament"));
@@ -285,6 +286,7 @@ function Router() {
         <Route path="/leadership/before-you-post"><BeforeYouPost /></Route>
         <Route path="/leadership/article/:slug"><LeadershipArticle /></Route>
         <Route path="/leadership/formation/:slug" component={FormationTopic} />
+        <Route path="/leadership/handbook" component={ServantLeadershipHandbook} />
         <Route path="/leadership/servant-leadership" component={ServantLeadership} />
         <Route path="/leadership/guides/:slug" component={FormationGuides} />
         <Route path="/leadership/guides" component={FormationGuides} />
