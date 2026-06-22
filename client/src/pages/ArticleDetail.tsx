@@ -9,7 +9,7 @@
  * - Bookmark + reading progress persist in localStorage
  */
 import { useEffect, useMemo, useState, lazy, Suspense } from "react";
-import { useLocation, useParams } from "wouter";
+import { Link, useLocation, useParams } from "wouter";
 import { ArrowLeft, Bookmark, Share2 } from "lucide-react";
 
 // Lazy-load the heavy markdown renderer (pulls in shiki/mermaid/katex) so the
@@ -104,6 +104,7 @@ import { AudienceShare } from "@/components/AudienceShare";
 import { ArticleHero } from "@/components/ArticleHero";
 import { ArticleNav } from "@/components/ArticleNav";
 import { SeriesBanner } from "@/components/SeriesBanner";
+import { getSeriesForArticle } from "@/lib/series";
 import {
   TableOfContents,
   buildToc,
@@ -279,6 +280,22 @@ export default function ArticleDetail() {
   // Table of contents from level-2 headings (rendered only when >= 3 exist).
   const tocItems = useMemo(() => buildToc(bodyForRender), [bodyForRender]);
   const hasToc = tocItems.length >= 3;
+
+  // The "after-reading" moment: if this essay sits in an ordered series, the
+  // deliberate next step is the next chapter — not a date-sorted neighbor.
+  const seriesNext = useMemo(() => {
+    if (!post) return null;
+    const info = getSeriesForArticle(post.slug);
+    if (!info || !info.nextSlug) return null;
+    const next = indexQuery.data?.find(p => p.slug === info.nextSlug);
+    return {
+      slug: info.nextSlug,
+      title: next?.title ?? null,
+      seriesTitle: info.series.title,
+      nextNumber: info.index + 2, // 1-based position of the NEXT entry
+      total: info.total,
+    };
+  }, [post, indexQuery.data]);
 
   // Prev (older) / next (newer) by publishedAt desc, fallback createdAt.
   const { prevPost, nextPost } = useMemo(() => {
@@ -501,6 +518,55 @@ export default function ArticleDetail() {
                   </p>
                 )}
               </div>
+
+              {/* Continue the series — the deliberate next step after reading */}
+              {seriesNext && (
+                <Link
+                  href={`/writing/${seriesNext.slug}`}
+                  className="no-print"
+                  style={{ display: "block", textDecoration: "none" }}
+                >
+                  <div
+                    style={{
+                      margin: "var(--s-5) 0 0",
+                      padding: "var(--s-4)",
+                      background: "var(--charcoal)",
+                      borderLeft: "2px solid var(--mustard)",
+                      borderRadius: "var(--radius-sm)",
+                    }}
+                  >
+                    <div
+                      style={{
+                        fontFamily: "var(--U)",
+                        fontSize: "11px",
+                        fontWeight: 600,
+                        textTransform: "uppercase",
+                        letterSpacing: "0.18em",
+                        color: "var(--mustard)",
+                        marginBottom: "0.6rem",
+                      }}
+                    >
+                      Continue · {seriesNext.seriesTitle} · {seriesNext.nextNumber} of{" "}
+                      {seriesNext.total}
+                    </div>
+                    <div
+                      style={{
+                        fontFamily: "var(--F)",
+                        fontSize: "clamp(1.35rem, 3vw, 1.75rem)",
+                        fontWeight: 400,
+                        lineHeight: 1.2,
+                        letterSpacing: "-0.01em",
+                        color: "var(--bone)",
+                      }}
+                    >
+                      {seriesNext.title ?? "Read the next chapter"}
+                      <span aria-hidden style={{ color: "var(--mustard)", marginLeft: "0.5rem" }}>
+                        →
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              )}
 
               {/* Reader actions */}
               <div

@@ -132,6 +132,12 @@ function ChapterRow({ chapter, index }: { chapter: Chapter; index: number }) {
 export default function StartHere() {
   let counter = 0;
 
+  // Book-in-public progress: how many chapters resolve on-site vs. total.
+  const allChapters = BLIND_SPOTS_GUIDE.flatMap(s => s.chapters);
+  const liveCount = allChapters.filter(c => c.available).length;
+  const totalCount = allChapters.length;
+  const pct = totalCount ? Math.round((liveCount / totalCount) * 100) : 0;
+
   return (
     <Layout>
       <SEOMeta
@@ -183,6 +189,50 @@ export default function StartHere() {
           >
             {BLIND_SPOTS_THESIS}
           </p>
+
+          {/* Book-in-public progress */}
+          <div style={{ marginTop: "2.25rem", maxWidth: "32rem" }}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "baseline",
+                fontFamily: "var(--U)",
+                fontSize: "12px",
+                letterSpacing: "0.04em",
+                color: "rgba(245,240,230,0.7)",
+                marginBottom: "0.5rem",
+              }}
+            >
+              <span>
+                {liveCount} of {totalCount} chapters on the site
+              </span>
+              <span style={{ color: "rgba(245,240,230,0.5)" }}>
+                the rest publishing from Substack
+              </span>
+            </div>
+            <div
+              role="progressbar"
+              aria-valuenow={liveCount}
+              aria-valuemin={0}
+              aria-valuemax={totalCount}
+              aria-label={`${liveCount} of ${totalCount} chapters published on the site`}
+              style={{
+                height: "3px",
+                background: "rgba(245,240,230,0.18)",
+                borderRadius: "var(--radius-pill)",
+                overflow: "hidden",
+              }}
+            >
+              <div
+                style={{
+                  width: `${pct}%`,
+                  height: "100%",
+                  background: "var(--mustard)",
+                }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
