@@ -37,10 +37,6 @@ const KNOWN_PROD_GAPS = new Set<string>([
   "files.upload",
   // Article index listing.
   "posts.listForIndex",
-  // Site search.
-  "search.articles",
-  "search.global",
-  "search.resources",
   // Stripe via tRPC (prod uses the REST /api/checkout instead; membership
   // falls back to the waitlist when these are absent).
   "stripe.createCheckoutSession",

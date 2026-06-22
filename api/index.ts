@@ -868,6 +868,99 @@ async function quizGetRecommendations(input: any) {
   };
 }
 
+// ─── Search (ported from server/search-service.ts) ──────────────────────────
+// Mirrors the dev tRPC search router: FULLTEXT MATCH/AGAINST with a graceful
+// LIKE fallback when the FULLTEXT indexes are absent. Each sub-search borrows
+// its own pooled connection so global search can run them in parallel.
+type SearchResult = {
+  id: number;
+  type: "article" | "resource" | "book";
+  title: string;
+  excerpt?: string;
+  slug?: string;
+  url?: string;
+  category?: string;
+  publishedAt?: unknown;
+  relevance?: number;
+};
+
+function clampLimit(n: unknown, def = 20, max = 50): number {
+  const v = Math.floor(Number(n));
+  return Number.isFinite(v) && v >= 1 ? Math.min(max, v) : def;
+}
+
+async function searchArticlesProd(c: mysql.PoolConnection, query: string, limit: number): Promise<SearchResult[]> {
+  try {
+    const [rows]: any = await c.query(
+      "SELECT id, title, excerpt, slug, pillar, topic, publishedAt, " +
+        "MATCH(title, excerpt, body) AGAINST(? IN NATURAL LANGUAGE MODE) AS relevance " +
+        "FROM posts WHERE published = true " +
+        "AND MATCH(title, excerpt, body) AGAINST(? IN NATURAL LANGUAGE MODE) " +
+        "ORDER BY relevance DESC LIMIT " + limit,
+      [query, query],
+    );
+    return (rows as any[]).map((a) => ({
+      id: a.id, type: "article", title: a.title, excerpt: a.excerpt ?? undefined,
+      slug: a.slug, category: a.topic ?? a.pillar ?? undefined,
+      publishedAt: a.publishedAt ?? undefined, relevance: a.relevance,
+    })) as SearchResult[];
+  } catch {
+    const term = `%${query}%`;
+    const [rows]: any = await c.query(
+      "SELECT id, title, excerpt, slug, pillar, topic, publishedAt FROM posts " +
+        "WHERE published = true AND (title LIKE ? OR excerpt LIKE ? OR body LIKE ?) " +
+        "ORDER BY publishedAt DESC LIMIT " + limit,
+      [term, term, term],
+    );
+    return (rows as any[]).map((a) => ({
+      id: a.id, type: "article", title: a.title, excerpt: a.excerpt ?? undefined,
+      slug: a.slug, category: a.topic ?? a.pillar ?? undefined,
+      publishedAt: a.publishedAt ?? undefined,
+    })) as SearchResult[];
+  }
+}
+
+async function searchResourcesProd(c: mysql.PoolConnection, query: string, limit: number): Promise<SearchResult[]> {
+  const term = `%${query}%`;
+  const [rows]: any = await c.query(
+    "SELECT id, title, description, category, url FROM resources " +
+      "WHERE published = true AND (title LIKE ? OR description LIKE ?) LIMIT " + limit,
+    [term, term],
+  );
+  return (rows as any[]).map((r) => ({
+    id: r.id, type: "resource", title: r.title, excerpt: r.description ?? undefined,
+    category: r.category ?? undefined, url: r.url ?? undefined,
+  })) as SearchResult[];
+}
+
+async function searchBooksProd(c: mysql.PoolConnection, query: string, limit: number): Promise<SearchResult[]> {
+  try {
+    const [rows]: any = await c.query(
+      "SELECT id, title, description, author, slug, " +
+        "MATCH(title, description, sampleExcerpt) AGAINST(? IN NATURAL LANGUAGE MODE) AS relevance " +
+        "FROM books WHERE published = true " +
+        "AND MATCH(title, description, sampleExcerpt) AGAINST(? IN NATURAL LANGUAGE MODE) " +
+        "ORDER BY relevance DESC LIMIT " + limit,
+      [query, query],
+    );
+    return (rows as any[]).map((b) => ({
+      id: b.id, type: "book", title: b.title, excerpt: b.description ?? undefined,
+      category: b.author ?? undefined, slug: b.slug ?? undefined, relevance: b.relevance,
+    })) as SearchResult[];
+  } catch {
+    const term = `%${query}%`;
+    const [rows]: any = await c.query(
+      "SELECT id, title, description, author, slug FROM books " +
+        "WHERE published = true AND (title LIKE ? OR description LIKE ? OR author LIKE ?) LIMIT " + limit,
+      [term, term, term],
+    );
+    return (rows as any[]).map((b) => ({
+      id: b.id, type: "book", title: b.title, excerpt: b.description ?? undefined,
+      category: b.author ?? undefined, slug: b.slug ?? undefined,
+    })) as SearchResult[];
+  }
+}
+
 async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string) {
   try {
     // Parse input from query string (GET batch). POST mutations carry body.
@@ -1417,6 +1510,32 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
           );
           return trpcOk(res, (rows as any[]).map(toFeaturedPostCard));
         });
+      }
+      case "search.global": {
+        const q = typeof input?.query === "string" ? input.query : "";
+        const lim = clampLimit(input?.limit);
+        if (!q) return trpcOk(res, { success: true, query: "", results: [], count: 0 });
+        const [articles, books, resources] = await Promise.all([
+          withConn((c) => searchArticlesProd(c, q, lim)).catch(() => [] as SearchResult[]),
+          withConn((c) => searchBooksProd(c, q, lim)).catch(() => [] as SearchResult[]),
+          withConn((c) => searchResourcesProd(c, q, lim)).catch(() => [] as SearchResult[]),
+        ]);
+        const results = [...articles, ...books, ...resources].slice(0, lim);
+        return trpcOk(res, { success: true, query: q, results, count: results.length });
+      }
+      case "search.articles": {
+        const q = typeof input?.query === "string" ? input.query : "";
+        const lim = clampLimit(input?.limit);
+        if (!q) return trpcOk(res, { success: true, query: "", results: [], count: 0 });
+        const results = await withConn((c) => searchArticlesProd(c, q, lim));
+        return trpcOk(res, { success: true, query: q, results, count: results.length });
+      }
+      case "search.resources": {
+        const q = typeof input?.query === "string" ? input.query : "";
+        const lim = clampLimit(input?.limit);
+        if (!q) return trpcOk(res, { success: true, query: "", results: [], count: 0 });
+        const results = await withConn((c) => searchResourcesProd(c, q, lim));
+        return trpcOk(res, { success: true, query: q, results, count: results.length });
       }
       default:
         if (proc.endsWith(".listPublished") || proc.endsWith(".listAll")) return trpcOk(res, []);
