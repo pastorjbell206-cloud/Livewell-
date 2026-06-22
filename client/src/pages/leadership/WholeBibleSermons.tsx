@@ -160,7 +160,7 @@ export default function WholeBibleSermons() {
             A sermon series for every book of the Bible
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch" }}>
-            All sixty-six books, Genesis to Revelation — each with the one big idea, the line that runs to Christ, and a preaching arc you can start this Sunday. The marquee books are fully written; the rest give you the spine to build on. Free, for the men who carry the weight of the pulpit.
+            All sixty-six books, Genesis to Revelation — every one with a full expository series: the book's big idea, the line that runs to Christ, and a sermon-by-sermon arc you can start preaching this Sunday. More than five hundred sermons, in order, through the whole canon. Free, for the men who carry the weight of the pulpit.
           </p>
         </div>
       </section>
