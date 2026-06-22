@@ -7,10 +7,13 @@
  *   Marriage & Family → /family       Work & Money → /life/money-and-the-heart
  *   Mind & Soul → /life               Leadership → /leadership
  *   Post-Christian World ▾ → Empire + Justice
- *   Books → /books                    Resources → /resources
+ *   The Table → /table (disciplemaking hub)   Books → /books
  *
  * "Roots & Tradition" gives the heritage library (church history, the creeds,
  * the denominations) its own door so it stops getting lost under Faith & Doubt.
+ * "The Table" is the one-place disciplemaking hub (home studies + equipping +
+ * study guides + books); it absorbs the old "Resources" door, which still
+ * lives at /resources and is linked from inside The Table.
  *
  * The five-pillar taxonomy (lib/subPathways.ts) still backs the listing pages
  * and the search overlay; the bar just speaks in plainer, findable terms.
@@ -63,8 +66,8 @@ function buildNavLinks(): NavLink[] {
         },
       ],
     },
+    { label: "The Table", href: "/table" },
     { label: "Books", href: "/books" },
-    { label: "Resources", href: "/resources" },
   ];
 }
 
