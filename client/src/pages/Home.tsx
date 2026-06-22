@@ -157,6 +157,21 @@ export default function Home() {
 
             <p
               style={{
+                fontFamily: "var(--F)",
+                fontSize: "clamp(20px, 2.6vw, 30px)",
+                fontStyle: "italic",
+                fontWeight: 400,
+                lineHeight: 1.3,
+                color: "var(--bone)",
+                maxWidth: "32ch",
+                marginBottom: "24px",
+              }}
+            >
+              Learning to follow Jesus — and live well — in post-Christian America.
+            </p>
+
+            <p
+              style={{
                 fontFamily: "var(--B)",
                 fontSize: "19px",
                 lineHeight: 1.65,
