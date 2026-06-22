@@ -3,10 +3,14 @@
  * concrete places people actually live, so the right article is one obvious
  * click away instead of buried under a vague verb:
  *
- *   Faith & Doubt → /theology        Marriage & Family → /family
- *   Work & Money → /life/money-and-the-heart   Mind & Soul → /life
- *   Leadership → /leadership          Post-Christian World ▾ → Empire + Justice
+ *   Faith & Doubt → /theology         Roots & Tradition → /theology/history
+ *   Marriage & Family → /family       Work & Money → /life/money-and-the-heart
+ *   Mind & Soul → /life               Leadership → /leadership
+ *   Post-Christian World ▾ → Empire + Justice
  *   Books → /books                    Resources → /resources
+ *
+ * "Roots & Tradition" gives the heritage library (church history, the creeds,
+ * the denominations) its own door so it stops getting lost under Faith & Doubt.
  *
  * The five-pillar taxonomy (lib/subPathways.ts) still backs the listing pages
  * and the search overlay; the bar just speaks in plainer, findable terms.
@@ -39,6 +43,7 @@ interface NavLink {
 function buildNavLinks(): NavLink[] {
   return [
     { label: "Faith & Doubt", href: "/theology" },
+    { label: "Roots & Tradition", href: "/theology/history" },
     { label: "Marriage & Family", href: "/family" },
     { label: "Work & Money", href: "/life/money-and-the-heart" },
     { label: "Mind & Soul", href: "/life" },
