@@ -5,6 +5,7 @@ import mysql from "mysql2/promise";
 import crypto from "node:crypto";
 import bcrypt from "bcryptjs";
 import superjson from "superjson";
+import Stripe from "stripe";
 
 async function withConn<T>(fn: (c: mysql.Connection) => Promise<T>): Promise<T> {
   const url = process.env.DATABASE_URL;
@@ -818,6 +819,165 @@ async function quizGetRecommendations(input: any) {
   };
 }
 
+// ----- Ported endpoints (parity with server/* routers) -----
+// These mirror procedures defined in the typed server/ routers that previously
+// 404'd in production because they were never re-implemented here. Behavior and
+// output shapes match the source routers/services; see the named file in each
+// section. Limits are clamped and inlined (mysql2 prepared LIMIT placeholders
+// are unreliable), never interpolating user strings into SQL.
+
+const PROD_ADMIN_USER_ID = 1; // matches auth.me's admin identity in this function
+
+function clampLimit(v: any, fallback: number): number {
+  const n = Number(v);
+  if (!Number.isFinite(n)) return fallback;
+  return Math.max(1, Math.min(100, Math.floor(n)));
+}
+
+// --- Search (server/search-service.ts): FULLTEXT with graceful LIKE fallback ---
+async function searchArticlesProd(c: mysql.Connection, query: string, lim: number): Promise<any[]> {
+  try {
+    const [rows]: any = await c.execute(
+      `SELECT id, title, excerpt, slug, pillar, topic, publishedAt,
+              MATCH(title, excerpt, body) AGAINST(? IN NATURAL LANGUAGE MODE) AS relevance
+       FROM posts
+       WHERE published = true AND MATCH(title, excerpt, body) AGAINST(? IN NATURAL LANGUAGE MODE)
+       ORDER BY relevance DESC LIMIT ${lim}`,
+      [query, query]
+    );
+    return (rows as any[]).map((a) => ({
+      id: a.id, type: "article", title: a.title, excerpt: a.excerpt ?? undefined,
+      slug: a.slug, category: a.topic ?? a.pillar ?? undefined,
+      publishedAt: a.publishedAt ?? undefined, relevance: a.relevance,
+    }));
+  } catch {
+    const term = `%${query}%`;
+    const [rows]: any = await c.execute(
+      `SELECT id, title, excerpt, slug, pillar, topic, publishedAt
+       FROM posts WHERE published = true AND (title LIKE ? OR excerpt LIKE ? OR body LIKE ?)
+       ORDER BY publishedAt DESC LIMIT ${lim}`,
+      [term, term, term]
+    );
+    return (rows as any[]).map((a) => ({
+      id: a.id, type: "article", title: a.title, excerpt: a.excerpt ?? undefined,
+      slug: a.slug, category: a.topic ?? a.pillar ?? undefined,
+      publishedAt: a.publishedAt ?? undefined,
+    }));
+  }
+}
+
+async function searchResourcesProd(c: mysql.Connection, query: string, lim: number): Promise<any[]> {
+  const term = `%${query}%`;
+  const [rows]: any = await c.execute(
+    `SELECT id, title, description, category, url FROM resources
+     WHERE published = true AND (title LIKE ? OR description LIKE ?) LIMIT ${lim}`,
+    [term, term]
+  );
+  return (rows as any[]).map((r) => ({
+    id: r.id, type: "resource", title: r.title, excerpt: r.description ?? undefined,
+    category: r.category ?? undefined, url: r.url ?? undefined,
+  }));
+}
+
+async function searchBooksProd(c: mysql.Connection, query: string, lim: number): Promise<any[]> {
+  try {
+    const [rows]: any = await c.execute(
+      `SELECT id, title, description, author, slug,
+              MATCH(title, description, sampleExcerpt) AGAINST(? IN NATURAL LANGUAGE MODE) AS relevance
+       FROM books
+       WHERE published = true AND MATCH(title, description, sampleExcerpt) AGAINST(? IN NATURAL LANGUAGE MODE)
+       ORDER BY relevance DESC LIMIT ${lim}`,
+      [query, query]
+    );
+    return (rows as any[]).map((b) => ({
+      id: b.id, type: "book", title: b.title, excerpt: b.description ?? undefined,
+      category: b.author ?? undefined, slug: b.slug ?? undefined, relevance: b.relevance,
+    }));
+  } catch {
+    const term = `%${query}%`;
+    const [rows]: any = await c.execute(
+      `SELECT id, title, description, author, slug FROM books
+       WHERE published = true AND (title LIKE ? OR description LIKE ? OR author LIKE ?) LIMIT ${lim}`,
+      [term, term, term]
+    );
+    return (rows as any[]).map((b) => ({
+      id: b.id, type: "book", title: b.title, excerpt: b.description ?? undefined,
+      category: b.author ?? undefined, slug: b.slug ?? undefined,
+    }));
+  }
+}
+
+// Slim per-post feed for the /writing index (server/db.ts listPostsForIndex) — no body.
+async function trpcListPostsForIndex(): Promise<any[]> {
+  return await withConn(async (c) => {
+    const cols =
+      "id, slug, title, excerpt, pillar, topic, coverImage, readingTimeMinutes, readTime, format, audience, audience_type, contentType, difficulty, publishedAt, featured, createdAt, updatedAt";
+    try {
+      const [rows]: any = await c.execute(
+        `SELECT ${cols} FROM posts WHERE published = true ORDER BY publishedAt DESC LIMIT 1000`
+      );
+      return rows as any[];
+    } catch {
+      const [rows]: any = await c.execute(
+        `SELECT id, slug, title, excerpt, pillar, publishedAt, featured, createdAt FROM posts WHERE published = true ORDER BY publishedAt DESC LIMIT 1000`
+      );
+      return rows as any[];
+    }
+  });
+}
+
+// --- Stripe (server/stripe-service.ts) ---
+const BOOK_PRICES: Record<number, { title: string; priceUSD: number }> = {
+  1: { title: "Book One", priceUSD: 14.99 },
+  2: { title: "Book Two", priceUSD: 16.99 },
+  3: { title: "Book Three", priceUSD: 12.99 },
+};
+
+function getStripe(): Stripe | null {
+  const key = process.env.STRIPE_SECRET_KEY || "";
+  if (!key.startsWith("sk_") || key === "sk_test_placeholder") return null;
+  return new Stripe(key);
+}
+
+async function getSettingProd(key: string): Promise<string | null> {
+  return await withConn(async (c) => {
+    const [rows]: any = await c.execute(
+      "SELECT settingValue FROM site_settings WHERE settingKey = ?",
+      [key]
+    );
+    return rows[0]?.settingValue ?? null;
+  });
+}
+
+// --- File storage proxy (server/storage.ts storagePut) ---
+async function storagePutProd(
+  relKey: string,
+  data: Buffer,
+  contentType: string
+): Promise<{ key: string; url: string }> {
+  const baseUrl = (process.env.BUILT_IN_FORGE_API_URL || "").replace(/\/+$/, "");
+  const apiKey = process.env.BUILT_IN_FORGE_API_KEY || "";
+  if (!baseUrl || !apiKey) {
+    throw new Error("Storage proxy not configured (BUILT_IN_FORGE_API_URL / BUILT_IN_FORGE_API_KEY)");
+  }
+  const key = relKey.replace(/^\/+/, "");
+  const uploadUrl = new URL("v1/storage/upload", baseUrl + "/");
+  uploadUrl.searchParams.set("path", key);
+  const form = new FormData();
+  form.append("file", new Blob([new Uint8Array(data)], { type: contentType }), key.split("/").pop() || key);
+  const response = await fetch(uploadUrl, {
+    method: "POST",
+    headers: { Authorization: `Bearer ${apiKey}` },
+    body: form,
+  });
+  if (!response.ok) {
+    const message = await response.text().catch(() => response.statusText);
+    throw new Error(`Storage upload failed (${response.status}): ${message}`);
+  }
+  const url = (await response.json()).url;
+  return { key, url };
+}
+
 async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string) {
   try {
     // Parse input from query string (GET batch). POST mutations carry body.
@@ -1368,6 +1528,208 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
           return trpcOk(res, (rows as any[]).map(toPostCard));
         });
       }
+      // ─── Search (public) ───────────────────────────────────────────
+      case "search.global": {
+        const q = String(input?.query ?? "").trim();
+        const lim = clampLimit(input?.limit, 20);
+        if (!q) return trpcOk(res, { success: true, query: q, results: [], count: 0 });
+        const results = await withConn(async (c) => {
+          const articles = await searchArticlesProd(c, q, lim).catch(() => []);
+          const books = await searchBooksProd(c, q, lim).catch(() => []);
+          const resources = await searchResourcesProd(c, q, lim).catch(() => []);
+          return [...articles, ...books, ...resources].slice(0, lim);
+        });
+        return trpcOk(res, { success: true, query: q, results, count: results.length });
+      }
+      case "search.articles": {
+        const q = String(input?.query ?? "").trim();
+        const lim = clampLimit(input?.limit, 20);
+        if (!q) return trpcOk(res, { success: true, query: q, results: [], count: 0 });
+        const results = await withConn((c) => searchArticlesProd(c, q, lim));
+        return trpcOk(res, { success: true, query: q, results, count: results.length });
+      }
+      case "search.resources": {
+        const q = String(input?.query ?? "").trim();
+        const lim = clampLimit(input?.limit, 20);
+        if (!q) return trpcOk(res, { success: true, query: q, results: [], count: 0 });
+        const results = await withConn((c) => searchResourcesProd(c, q, lim));
+        return trpcOk(res, { success: true, query: q, results, count: results.length });
+      }
+
+      // ─── Posts / Books reads (public) ──────────────────────────────
+      case "posts.listForIndex": {
+        const data = await trpcListPostsForIndex();
+        return trpcOk(res, data);
+      }
+      case "books.getBySlug": {
+        const slug = String(input?.slug ?? input ?? "");
+        const book = await withConn(async (c) => {
+          const [rows]: any = await c.execute("SELECT * FROM books WHERE slug = ? LIMIT 1", [slug]);
+          return rows[0] || null;
+        });
+        if (!book || !book.published) return trpcOk(res, null);
+        return trpcOk(res, book);
+      }
+
+      // ─── Subscribers (admin) ───────────────────────────────────────
+      case "subscribers.list": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const rows = await withConn(async (c) => {
+          const [r]: any = await c.execute("SELECT * FROM subscribers WHERE active = true");
+          return r as any[];
+        });
+        return trpcOk(res, rows);
+      }
+      case "subscribers.remove": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const email = String(input?.email || "").trim().toLowerCase();
+        if (!email) return trpcErr(res, "BAD_REQUEST", "email required", 400);
+        await withConn((c) => c.execute("DELETE FROM subscribers WHERE email = ?", [email]));
+        return trpcOk(res, { success: true });
+      }
+
+      // ─── Files (admin; scoped to the admin user) ───────────────────
+      case "files.list": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const rows = await withConn(async (c) => {
+          const [r]: any = await c.execute(
+            "SELECT * FROM files WHERE userId = ? ORDER BY createdAt DESC",
+            [PROD_ADMIN_USER_ID]
+          );
+          return r as any[];
+        });
+        return trpcOk(res, rows);
+      }
+      case "files.updateDescription": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const id = Number(input?.id);
+        if (!Number.isFinite(id)) return trpcErr(res, "BAD_REQUEST", "id required", 400);
+        const description = String(input?.description ?? "");
+        const row = await withConn(async (c) => {
+          await c.execute(
+            "UPDATE files SET description = ?, updatedAt = NOW() WHERE id = ? AND userId = ?",
+            [description, id, PROD_ADMIN_USER_ID]
+          );
+          const [r]: any = await c.execute(
+            "SELECT * FROM files WHERE id = ? AND userId = ? LIMIT 1",
+            [id, PROD_ADMIN_USER_ID]
+          );
+          return r[0] || null;
+        });
+        return trpcOk(res, row);
+      }
+      case "files.delete": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const id = Number(input?.id);
+        if (!Number.isFinite(id)) return trpcErr(res, "BAD_REQUEST", "id required", 400);
+        await withConn((c) =>
+          c.execute("DELETE FROM files WHERE id = ? AND userId = ?", [id, PROD_ADMIN_USER_ID])
+        );
+        return trpcOk(res, { success: true });
+      }
+      case "files.upload": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const filename = String(input?.filename || "");
+        const mimeType = String(input?.mimeType || "application/octet-stream");
+        const base64Data = String(input?.base64Data || "");
+        if (!filename || !base64Data) return trpcErr(res, "BAD_REQUEST", "filename and base64Data required", 400);
+        const buffer = Buffer.from(base64Data, "base64");
+        if (buffer.length > 16 * 1024 * 1024) return trpcErr(res, "BAD_REQUEST", "File size exceeds 16MB limit", 400);
+        const suffix = crypto.randomBytes(9).toString("base64url");
+        const safeFilename = filename.replace(/[^a-zA-Z0-9._-]/g, "_");
+        const fileKey = `user-${PROD_ADMIN_USER_ID}/files/${safeFilename}-${suffix}`;
+        const { url } = await storagePutProd(fileKey, buffer, mimeType);
+        const row = await withConn(async (c) => {
+          const [r]: any = await c.execute(
+            `INSERT INTO files (userId, filename, fileKey, url, mimeType, size, description, createdAt, updatedAt)
+             VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())`,
+            [PROD_ADMIN_USER_ID, filename, fileKey, url, mimeType, buffer.length, input?.description ?? null]
+          );
+          const [rows]: any = await c.execute("SELECT * FROM files WHERE id = ? LIMIT 1", [r.insertId]);
+          return rows[0] || null;
+        });
+        return trpcOk(res, row);
+      }
+
+      // ─── Stripe / membership + book checkout (public) ──────────────
+      case "stripe.membershipEnabled": {
+        const s = getStripe();
+        if (!s) return trpcOk(res, { enabled: false });
+        const priceId = await getSettingProd("stripeMembershipPriceId");
+        return trpcOk(res, { enabled: !!(priceId && priceId.trim()) });
+      }
+      case "stripe.createMembershipCheckout": {
+        const s = getStripe();
+        if (!s) return trpcErr(res, "BAD_REQUEST", "Membership is not open yet.", 400);
+        const email = String(input?.customerEmail || "");
+        const origin = String(input?.origin || "");
+        const priceId = await getSettingProd("stripeMembershipPriceId");
+        if (!priceId || !priceId.trim()) return trpcErr(res, "BAD_REQUEST", "Membership is not open yet.", 400);
+        const session = await s.checkout.sessions.create({
+          mode: "subscription",
+          payment_method_types: ["card"],
+          line_items: [{ price: priceId.trim(), quantity: 1 }],
+          customer_email: email,
+          allow_promotion_codes: true,
+          metadata: { kind: "membership", customer_email: email },
+          success_url: `${origin}/membership/success?session_id={CHECKOUT_SESSION_ID}`,
+          cancel_url: `${origin}/membership`,
+        });
+        return trpcOk(res, { success: true, sessionUrl: session.url || "", sessionId: session.id });
+      }
+      case "stripe.createCheckoutSession": {
+        const s = getStripe();
+        if (!s) return trpcErr(res, "BAD_REQUEST", "Stripe is not configured.", 400);
+        const bookId = Number(input?.bookId);
+        const email = String(input?.customerEmail || "");
+        const name = String(input?.customerName || "");
+        const origin = String(input?.origin || "");
+        const bp = BOOK_PRICES[bookId];
+        if (!bp) return trpcErr(res, "BAD_REQUEST", `Book ${bookId} not found in pricing`, 400);
+        const session = await s.checkout.sessions.create({
+          payment_method_types: ["card"],
+          line_items: [{
+            price_data: {
+              currency: "usd",
+              product_data: { name: bp.title, description: `Purchase of ${bp.title}` },
+              unit_amount: Math.round(bp.priceUSD * 100),
+            },
+            quantity: 1,
+          }],
+          mode: "payment",
+          customer_email: email,
+          client_reference_id: `book_${bookId}_${Date.now()}`,
+          metadata: { book_id: String(bookId), customer_email: email, customer_name: name },
+          success_url: `${origin}/books-store?session_id={CHECKOUT_SESSION_ID}&success=true`,
+          cancel_url: `${origin}/books-store?canceled=true`,
+          allow_promotion_codes: true,
+        });
+        // Best-effort purchase record; never block checkout on a write hiccup.
+        await withConn((c) =>
+          c.execute(
+            `INSERT INTO book_purchases (bookId, stripePaymentIntentId, customerEmail, customerName, amountCents, status, sessionId, createdAt, updatedAt)
+             VALUES (?, ?, ?, ?, ?, 'pending', ?, NOW(), NOW())`,
+            [bookId, (session.payment_intent as string) || null, email, name, Math.round(bp.priceUSD * 100), session.id]
+          )
+        ).catch((err: any) => console.error("[stripe] purchase record failed:", err?.message));
+        return trpcOk(res, { success: true, sessionUrl: session.url || "", sessionId: session.id });
+      }
+      case "stripe.getCheckoutSession": {
+        const s = getStripe();
+        if (!s) return trpcErr(res, "BAD_REQUEST", "Stripe is not configured.", 400);
+        const session = await s.checkout.sessions.retrieve(String(input?.sessionId || ""));
+        return trpcOk(res, {
+          success: true,
+          session: {
+            id: session.id,
+            status: session.payment_status,
+            amount: session.amount_total,
+            currency: session.currency,
+            customerEmail: session.customer_email,
+          },
+        });
+      }
+
       default:
         if (proc.endsWith(".listPublished") || proc.endsWith(".listAll")) return trpcOk(res, []);
         return trpcErr(res, "NOT_FOUND", "procedure not found: " + proc, 404);

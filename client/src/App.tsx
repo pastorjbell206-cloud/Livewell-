@@ -96,7 +96,6 @@ const NationScorecard = lazy(() => import("./pages/nation/NationScorecard"));
 const NationPolicy = lazy(() => import("./pages/nation/NationPolicy"));
 const LeadershipHub = lazy(() => import("./pages/leadership/LeadershipHub"));
 const LeadershipArticle = lazy(() => import("./pages/leadership/LeadershipArticle"));
-const LeadershipTeam = lazy(() => import("./pages/leadership/LeadershipTeam"));
 const SermonWorkbench = lazy(() => import("./pages/leadership/SermonWorkbench"));
 const IllustrationLibrary = lazy(() => import("./pages/leadership/IllustrationLibrary"));
 const MeetingBuilder = lazy(() => import("./pages/leadership/MeetingBuilder"));
@@ -239,7 +238,6 @@ function Router() {
         <Route path="/nation/scorecard"><NationScorecard /></Route>
         <Route path="/nation/policy"><NationPolicy /></Route>
         <Route path="/nation"><NationHub /></Route>
-        <Route path="/leadership/team"><LeadershipTeam /></Route>
         <Route path="/leadership/sermon-prep"><SermonWorkbench /></Route>
         <Route path="/leadership/illustrations"><IllustrationLibrary /></Route>
         <Route path="/leadership/meeting"><MeetingBuilder /></Route>

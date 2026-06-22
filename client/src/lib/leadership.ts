@@ -4,8 +4,7 @@
  * the work of ministry, preaching, administration, and the building and
  * rebuilding of churches. Long-form articles live as JSON in
  * client/public/leadership/articles/<slug>.json. Interactive tools are
- * stateless (localStorage only, no login). The team workspace at
- * /leadership/team is the one authenticated feature and lives separately.
+ * stateless (localStorage only, no login).
  */
 
 export interface Reading { title: string; author: string; }
@@ -88,7 +87,6 @@ export const LEADERSHIP_ARTICLES: ArticleIndexEntry[] = [
 ];
 
 export const LEADERSHIP_TOOLS: ToolLink[] = [
-  { href: "/leadership/team", kicker: "The workspace", title: "The Leadership Team", blurb: "A shared workspace for pastors, elders, deacons, and team leaders. Channels, posts, tasks, and announcements, all in one place. Requires sign-in." },
   { href: "/leadership/library", kicker: "The library", title: "The Leadership Library", blurb: "The whole corpus in one searchable place. Formation, leadership, preaching, and the careful handling of the text, by category." },
   { href: "/leadership/sermon-series", kicker: "Preaching", title: "The Sermon Series Library", blurb: "Series to preach straight through a book of the Bible, and topical series around a real question, each with a sermon-by-sermon breakdown." },
   { href: "/leadership/sermon-prep", kicker: "Preaching", title: "The Sermon Prep Workbench", blurb: "A guided workflow from the text to the pulpit, with the exegetical and homiletical questions worth answering at each stage. Saves to your browser." },

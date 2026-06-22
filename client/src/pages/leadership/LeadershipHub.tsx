@@ -72,7 +72,6 @@ export default function LeadershipHub() {
           <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, lineHeight: 1.5, color: "var(--bone)", maxWidth: "60ch", marginBottom: "14px" }}>
             The work is long and local and mostly unseen. It was always going to be. The question is not whether you can build a crowd. It is whether you can be faithful in a place over time.
           </p>
-          <Link href="/leadership/team" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>Open the team workspace →</Link>
         </div>
       </section>
     </Layout>
