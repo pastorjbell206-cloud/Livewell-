@@ -13,10 +13,28 @@
       "pillar": "The Home and Relationships"
     },
     {
+      "slug": "marriage-the-long-covenant",
+      "title": "Marriage: The Long Covenant",
+      "blurb": "Most marriages do not end in a blowup. They end in a slow drift no one decided on. What Scripture, church history, and honest research say about covenant, conflict, desire, and the daily work of staying married well.",
+      "pillar": "The Home and Relationships"
+    },
+    {
+      "slug": "raising-children-in-grace",
+      "title": "Raising Children in Grace",
+      "blurb": "You cannot save your children, and you were never meant to. What Scripture, church history, and honest research say about discipline, faith, screens, and the slow work of raising a soul you do not control.",
+      "pillar": "The Home and Relationships"
+    },
+    {
       "slug": "the-anxious-mind",
       "title": "The Anxious Mind: Faith and Mental Health",
       "blurb": "Anxiety is not a faith failure. What Scripture, church history, and honest science say about the fearful mind, and why seeing a doctor can be an act of faith.",
       "pillar": "The Inner Life"
+    },
+    {
+      "slug": "wisdom-for-all-of-life",
+      "title": "Wisdom for All of Life: Proverbs, Ecclesiastes, and the Skill of Living",
+      "blurb": "The Bible has more than commands. It has wisdom, the hard-won skill of living well in a world that rarely comes with instructions. What Proverbs, Ecclesiastes, and Job teach about money, words, work, anger, sex, friendship, and death.",
+      "pillar": "The Integrated Vision"
     },
     {
       "slug": "grief-and-loss",
