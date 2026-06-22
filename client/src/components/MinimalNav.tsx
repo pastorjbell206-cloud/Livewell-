@@ -122,6 +122,21 @@ function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLin
     dropdown: [
       ...itemsOf(byPillar["Prophetic Disruption"]),
       ...itemsOf(byPillar["Prophetic Justice"]),
+      { label: "Church History", href: "/theology/history", description: "The councils, the creeds, the schisms — how the church was handed the center of the West, and how it lost it." },
+      { label: "The Creeds & Confessions", href: "/resources/creeds", description: "The texts the church has confessed in every age, with plain-language notes on what they meant." },
+      { label: "Why So Many Churches?", href: "/theology/traditions", description: "An even-handed guide to the great traditions and the core they all share." },
+      { label: "Hard Questions & Answers", href: "/theology/questions", description: "Honest answers for a skeptical age — suffering, Scripture, doubt, and death." },
+    ],
+  };
+  // Everyday Life: relabel Integrated Life, then surface the household pages.
+  const everydayLife = relabel(byPillar["Integrated Life"], "Everyday Life", "All Everyday Life");
+  const everydayLifePlus: NavLink = {
+    ...everydayLife,
+    dropdown: [
+      ...itemsOf(everydayLife),
+      { label: "Marriage", href: "/marriage", description: "Marriage as covenant, not contract — past the tips, into the gospel shape of staying." },
+      { label: "Parenting", href: "/parenting", description: "Raising children in the faith without fear, formula, or guilt." },
+      { label: "Family Devotions", href: "/family/devotions", description: "Weekly devotions plus Advent and Holy Week, built for fifteen minutes at the table." },
     ],
   };
 
@@ -129,7 +144,7 @@ function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLin
     { label: "Start here", href: "/start" },
     byPillar["Theological Depth"],
     postChristianWorld,
-    relabel(byPillar["Integrated Life"], "Everyday Life", "All Everyday Life"),
+    everydayLifePlus,
     { label: "The Table", href: "/table" },
     relabel(byPillar["Leadership Formation"], "For Pastors & Leaders", "All Leadership"),
     { label: "Resources", href: "/resources" },
@@ -638,11 +653,19 @@ export default function MinimalNav() {
         {mobileOpen && (
           <div
             style={{
+              position: "fixed",
+              top: "64px",
+              left: 0,
+              right: 0,
+              bottom: 0,
+              width: "100%",
+              boxSizing: "border-box",
               background: "var(--card)",
               borderTop: "1px solid var(--border)",
-              padding: "8px 20px 24px",
-              maxHeight: "80vh",
+              padding: "8px 20px calc(24px + env(safe-area-inset-bottom))",
               overflowY: "auto",
+              WebkitOverflowScrolling: "touch",
+              zIndex: 400,
             }}
           >
             <Link

@@ -72,13 +72,25 @@ const PILLARS = [
   { name: "Integrated Life", href: "/life", blurb: "Marriage, parenting, vocation, and rest." },
 ];
 
+// Hand-picked flagship essays for the front page. Curated, not chronological —
+// the front page should lead with the strongest work, not the newest.
+const FLAGSHIP_SLUGS = [
+  "what-the-gospel-actually-is",
+  "what-is-the-kingdom-of-god-and-why-it-changes-everything",
+  "what-christian-nationalism-is-and-is-not",
+  "how-to-read-the-bible-without-making-it-say-what-you-want",
+  "already-and-not-yet-living-between-two-worlds",
+  "why-there-are-so-many-christian-denominations",
+];
+
 export default function Home() {
-  // Recent essays for the "Recent" rail.
   const articlesQuery = trpc.posts.listPublished.useQuery();
   const all = articlesQuery.data ?? [];
 
-  const lede = all[0];
-  const recent = all.slice(1, 7);
+  // Lead with the strongest essays; fall back to latest if a slug is absent.
+  const bySlug = new Map(all.map(a => [a.slug, a] as const));
+  const curated = FLAGSHIP_SLUGS.map(s => bySlug.get(s)).filter((a): a is (typeof all)[number] => !!a);
+  const flagship = curated.length ? curated : all.slice(0, 6);
 
   return (
     <div>
@@ -154,6 +166,21 @@ export default function Home() {
             >
               {PRIMARY_HEADLINE}
             </h1>
+
+            <p
+              style={{
+                fontFamily: "var(--F)",
+                fontSize: "clamp(20px, 2.6vw, 30px)",
+                fontStyle: "italic",
+                fontWeight: 400,
+                lineHeight: 1.3,
+                color: "var(--bone)",
+                maxWidth: "32ch",
+                marginBottom: "24px",
+              }}
+            >
+              Learning to follow Jesus — and live well — in post-Christian America.
+            </p>
 
             <p
               style={{
@@ -234,70 +261,66 @@ export default function Home() {
             )}
           </div>
 
-          {/* Lede essay card — replaces decorative author card */}
-          {lede && (
-            <Link
-              href={`/writing/${lede.slug}`}
-              style={{ textDecoration: "none", color: "inherit" }}
+          {/* Vision card — the mission, not the latest article */}
+          <Link
+            href="/exile"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <article
+              style={{
+                background: "rgba(245,240,230,0.06)",
+                border: "1px solid rgba(245,240,230,0.14)",
+                borderTop: "2px solid var(--mustard)",
+                padding: "var(--s-5)",
+                borderRadius: "var(--radius-sm)",
+                cursor: "pointer",
+                transition: "all 0.2s",
+                maxWidth: "640px",
+              }}
             >
-              <article
+              <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>
+                The vision
+              </div>
+              <h2
                 style={{
-                  background: "rgba(245,240,230,0.06)",
-                  border: "1px solid rgba(245,240,230,0.14)",
-                  borderTop: "2px solid var(--mustard)",
-                  padding: "var(--s-5)",
-                  borderRadius: "var(--radius-sm)",
-                  cursor: "pointer",
-                  transition: "all 0.2s",
-                  maxWidth: "640px",
+                  fontFamily: "var(--F)",
+                  fontSize: "28px",
+                  fontWeight: 500,
+                  lineHeight: 1.2,
+                  letterSpacing: "-0.01em",
+                  color: "var(--bone)",
+                  marginBottom: "12px",
                 }}
               >
-                <div style={{ marginBottom: "16px" }}>
-                  <TrackChip pillarOrTrack={lede.pillar} slug={lede.slug} inverted asLink={false} />
-                </div>
-                <h2
-                  style={{
-                    fontFamily: "var(--F)",
-                    fontSize: "28px",
-                    fontWeight: 500,
-                    lineHeight: 1.2,
-                    letterSpacing: "-0.01em",
-                    color: "var(--bone)",
-                    marginBottom: "12px",
-                  }}
-                >
-                  {lede.title}
-                </h2>
-                {lede.excerpt && (
-                  <p
-                    style={{
-                      fontFamily: "var(--B)",
-                      fontSize: "15px",
-                      lineHeight: 1.65,
-                      color: "rgba(245,240,230,0.7)",
-                      marginBottom: "16px",
-                      maxWidth: "55ch",
-                    }}
-                  >
-                    {lede.excerpt}
-                  </p>
-                )}
-                <div
-                  style={{
-                    fontFamily: "var(--U)",
-                    fontSize: "12px",
-                    color: "rgba(245,240,230,0.55)",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "6px",
-                  }}
-                >
-                  {(lede.readingTimeMinutes ?? 5)} min read · Continue
-                  <ArrowRight size={12} aria-hidden />
-                </div>
-              </article>
-            </Link>
-          )}
+                Living well as exiles in a post-Christian world.
+              </h2>
+              <p
+                style={{
+                  fontFamily: "var(--B)",
+                  fontSize: "15px",
+                  lineHeight: 1.65,
+                  color: "rgba(245,240,230,0.7)",
+                  marginBottom: "16px",
+                  maxWidth: "55ch",
+                }}
+              >
+                Where we came from, where we are, how to live, and where we are going. Build the house. Plant the garden. Raise the children. Make disciples at the table.
+              </p>
+              <div
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "12px",
+                  color: "rgba(245,240,230,0.55)",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                }}
+              >
+                Read the vision
+                <ArrowRight size={12} aria-hidden />
+              </div>
+            </article>
+          </Link>
         </div>
       </section>
 
@@ -441,7 +464,7 @@ export default function Home() {
                 color: "var(--ink)",
               }}
             >
-              Recent essays
+              Start with these
             </h2>
             <Link
               href="/writing"
@@ -471,7 +494,7 @@ export default function Home() {
             </p>
           )}
 
-          {recent.length > 0 && (
+          {flagship.length > 0 && (
             <div
               style={{
                 display: "grid",
@@ -479,7 +502,7 @@ export default function Home() {
                 gap: "24px",
               }}
             >
-              {recent.map(a => (
+              {flagship.map(a => (
                 <Link
                   key={a.id}
                   href={`/writing/${a.slug}`}
