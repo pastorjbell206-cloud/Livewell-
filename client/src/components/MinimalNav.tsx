@@ -4,8 +4,9 @@
  * long-form study guides and series:
  *
  *   Theological Depth ▸ Doctrine & Scripture · Church History · Biblical Theology
- *   Prophetic Justice ▸ Economic Justice · Race & Reconciliation · The Vulnerable · Systemic Sin
- *   Prophetic Disruption ▸ Church & Empire · Christian Nationalism · Cultural Captivity
+ *   Post-Christian World ▸ Prophetic Disruption (Church & Empire, Nationalism,
+ *     Cultural Captivity) + Prophetic Justice (Economic Justice, Race, The
+ *     Vulnerable, Systemic Sin), folded into one door
  *   Leadership Formation ▸ Pastoral Health · Staff & Teams · Preaching · Church Revitalization
  *   Integrated Life ▸ Marriage & Family · Rhythms & Sabbath · Vocation & Money
  *   Study Guides & Series → every multi-part guide/devotional in one place
@@ -104,9 +105,26 @@ function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLin
     };
   });
 
+  // Fold the two prophetic pillars (Justice + Disruption) into one
+  // "Post-Christian World" door, preserving every dropdown item from both.
+  const byPillar: Record<string, NavLink> = {};
+  PILLAR_ORDER.forEach((p, i) => { byPillar[p] = pillarLinks[i]; });
+  const itemsOf = (l: NavLink): DropdownItem[] =>
+    l.dropdown ?? (l.href ? [{ label: l.label, href: l.href }] : []);
+  const postChristianWorld: NavLink = {
+    label: "Post-Christian World",
+    dropdown: [
+      ...itemsOf(byPillar["Prophetic Disruption"]),
+      ...itemsOf(byPillar["Prophetic Justice"]),
+    ],
+  };
+
   return [
     { label: "Start here", href: "/start" },
-    ...pillarLinks,
+    byPillar["Theological Depth"],
+    postChristianWorld,
+    byPillar["Leadership Formation"],
+    byPillar["Integrated Life"],
     { label: "The Table", href: "/table" },
     { label: "Resources", href: "/resources" },
     { label: "Books", href: "/books" },
