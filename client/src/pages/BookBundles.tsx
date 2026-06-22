@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "wouter";
-import { ArrowLeft, ShoppingCart, Gift } from "lucide-react";
+import { ShoppingCart, Gift } from "lucide-react";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
 interface BookInBundle {

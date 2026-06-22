@@ -12,6 +12,7 @@ import { Link } from "wouter";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { bookCountWordCap } from "@/config/siteStats";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { trpc } from "@/lib/trpc";
 import { bookUrl } from "@/lib/site";
@@ -201,8 +202,8 @@ export default function RoadMap() {
               maxWidth: "62ch",
             }}
           >
-            Forty-eight books planned over the next decade. Twenty-five
-            already in print. The rest, here in order. Subscribe to the
+            Forty-eight books planned over the next decade. {bookCountWordCap}
+            {" "}already in print. The rest, here in order. Subscribe to the
             weekly letter to know when one lands.
           </p>
         </div>

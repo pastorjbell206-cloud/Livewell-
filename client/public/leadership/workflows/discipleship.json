@@ -1,0 +1,187 @@
+{
+  "slug": "discipleship",
+  "title": "The Discipleship Pathway Planner",
+  "subtitle": "Design the actual path a person walks from a first visit to maturity and ministry.",
+  "intro": "Most churches have a stated pathway and a real one, and they are not the same. The stated one is on the website. The real one is whatever a person can stumble into without anyone helping them.\n\nThis planner makes you describe the path that already exists, step by step, and then find the places people fall through. Maturity does not happen by accident, and neither does the loss of someone who came hungry and left unseen.\n\nWork through each stage for your church as it is, not as you wish it were. The honest answer is the useful one.",
+  "stages": [
+    {
+      "id": "start",
+      "kicker": "Stage One",
+      "title": "The honest starting point",
+      "note": "Before you design the path, describe where people actually step onto it, and who never does.",
+      "prompts": [
+        {
+          "id": "d1a",
+          "q": "Where do people actually enter your church right now, the front door, a friend, a crisis, a funeral, a search bar?"
+        },
+        {
+          "id": "d1b",
+          "q": "Describe the last three people who came and stayed. What did they have in common that you did not plan?",
+          "help": "Your real entry point is whatever those three share, not the one in your strategy document."
+        },
+        {
+          "id": "d1c",
+          "q": "Who in your community would never walk through any door you currently have open?"
+        },
+        {
+          "id": "d1d",
+          "q": "What does a brand new person assume they have to believe or become before they are welcome here?"
+        },
+        {
+          "id": "d1e",
+          "q": "When someone visits once and never returns, do you know it happened, and does anyone follow up?"
+        }
+      ]
+    },
+    {
+      "id": "first-steps",
+      "kicker": "Stage Two",
+      "title": "First steps, from visitor to belonging",
+      "note": "Belonging usually comes before believing. Map how a stranger becomes someone who is missed when absent.",
+      "prompts": [
+        {
+          "id": "d2a",
+          "q": "Between a first visit and a fourth, what specific things happen to a person, and who makes them happen?"
+        },
+        {
+          "id": "d2b",
+          "q": "How does a visitor get from the seat to a table where someone knows their name?",
+          "help": "The gap between attending and belonging is where most newcomers quietly disappear."
+        },
+        {
+          "id": "d2c",
+          "q": "Who owns the follow up for a new person, by name, and what happens if that person is busy that week?"
+        },
+        {
+          "id": "d2d",
+          "q": "What is the first invitation a newcomer receives into something smaller than the service?"
+        },
+        {
+          "id": "d2e",
+          "q": "How long can a person attend before anyone would notice their absence? Be honest about the number."
+        }
+      ]
+    },
+    {
+      "id": "grounding",
+      "kicker": "Stage Three",
+      "title": "Grounding, the basics of the faith",
+      "note": "Lay out how a new or returning believer learns what the faith actually is, not by osmosis.",
+      "prompts": [
+        {
+          "id": "d3a",
+          "q": "Where does a new believer learn the basic shape of the gospel, repentance, grace, and what baptism means?"
+        },
+        {
+          "id": "d3b",
+          "q": "What do you assume people already know that they almost certainly do not?",
+          "help": "Much of what feels basic to a leader is brand new to someone who arrived last year."
+        },
+        {
+          "id": "d3c",
+          "q": "Is there a clear next step after a person professes faith, or does it depend on whether they ask?"
+        },
+        {
+          "id": "d3d",
+          "q": "How does someone learn to read the Bible for themselves rather than only hearing it explained?"
+        },
+        {
+          "id": "d3e",
+          "q": "Who walks beside a new believer through their first hard season, when the early feelings fade?"
+        }
+      ]
+    },
+    {
+      "id": "growing",
+      "kicker": "Stage Four",
+      "title": "Growing, disciplines and community",
+      "note": "Map how a grounded believer takes on the practices and relationships that carry a person over years.",
+      "prompts": [
+        {
+          "id": "d4a",
+          "q": "Where does a person learn to pray, to give, and to confess, beyond hearing those words from the front?"
+        },
+        {
+          "id": "d4b",
+          "q": "How does someone find a small group, and what happens to the person who tries one and it does not fit?",
+          "help": "One failed group experience often ends a person's pursuit of community entirely."
+        },
+        {
+          "id": "d4c",
+          "q": "Who is allowed to know a growing believer's real struggles, and how does that relationship begin?"
+        },
+        {
+          "id": "d4d",
+          "q": "What does your church expect of a maturing member, and is that expectation ever actually spoken?"
+        },
+        {
+          "id": "d4e",
+          "q": "Where do people plateau in your church, comfortable and stalled, and why do they stop there?"
+        }
+      ]
+    },
+    {
+      "id": "serving",
+      "kicker": "Stage Five",
+      "title": "Serving, gifts and ministry",
+      "note": "Describe how a growing believer moves from being served to serving, and how their gifts get found.",
+      "prompts": [
+        {
+          "id": "d5a",
+          "q": "How does a person discover what they are actually gifted to do, rather than just filling an open slot?"
+        },
+        {
+          "id": "d5b",
+          "q": "Which ministries are always begging for help, and which never let new people in? What does that pattern tell you?",
+          "help": "A closed ministry is often the place a willing person gives up trying to serve."
+        },
+        {
+          "id": "d5c",
+          "q": "Who notices a person's gift and tells them, or does it depend entirely on the person volunteering?"
+        },
+        {
+          "id": "d5d",
+          "q": "How does someone serving learn they are doing it for Christ and not for approval or to feel needed?"
+        },
+        {
+          "id": "d5e",
+          "q": "What happens to the servant who burns out, and does anyone catch them before they leave the church entirely?"
+        }
+      ]
+    },
+    {
+      "id": "multiplying",
+      "kicker": "Stage Six",
+      "title": "Multiplying, leading and discipling others",
+      "note": "The path does not end at serving. Map how a mature believer is raised up to lead and to make other disciples.",
+      "prompts": [
+        {
+          "id": "d6a",
+          "q": "Who in your church is currently discipling another person one on one, and how did that begin?"
+        },
+        {
+          "id": "d6b",
+          "q": "How does a mature believer learn to lead, or do leaders only emerge when you are desperate to fill a role?",
+          "help": "Leadership formed only in a crisis tends to produce leaders who were never actually formed."
+        },
+        {
+          "id": "d6c",
+          "q": "What are you doing now that someone else could be trained to do, and why have you not handed it over?"
+        },
+        {
+          "id": "d6d",
+          "q": "How does your church send people out, to plant, to serve elsewhere, to go, rather than only keeping them?"
+        },
+        {
+          "id": "d6e",
+          "q": "If you stepped away for a year, who would carry the discipling forward, and who taught them to?"
+        },
+        {
+          "id": "d6f",
+          "q": "Trace one real person from their first visit to today. Where exactly did the path carry them, and where did they walk it alone?"
+        }
+      ]
+    }
+  ],
+  "closing": "A pathway is not a diagram on a wall. It is the people who walked it because someone went with them."
+}

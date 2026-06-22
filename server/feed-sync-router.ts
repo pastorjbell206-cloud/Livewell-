@@ -25,7 +25,7 @@ export const feedSyncRouter = router({
       };
     } catch (error: any) {
       console.error("[Feed Sync Router] Error syncing all feeds:", error);
-      throw new Error(error.message || "Failed to sync feeds");
+      throw new Error(error.message || "Failed to sync feeds", { cause: error });
     }
   }),
 
@@ -52,7 +52,7 @@ export const feedSyncRouter = router({
         };
       } catch (error: any) {
         console.error(`[Feed Sync Router] Error syncing ${input.source}:`, error);
-        throw new Error(error.message || `Failed to sync ${input.source}`);
+        throw new Error(error.message || `Failed to sync ${input.source}`, { cause: error });
       }
     }),
 
@@ -85,7 +85,7 @@ export const feedSyncRouter = router({
       };
     } catch (error: any) {
       console.error("[Feed Sync Router] Error getting status:", error);
-      throw new Error(error.message || "Failed to get sync status");
+      throw new Error(error.message || "Failed to get sync status", { cause: error });
     }
   }),
 });

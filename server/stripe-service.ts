@@ -69,8 +69,40 @@ export async function createCheckoutSession(
     };
   } catch (error: any) {
     console.error("[Stripe] Checkout session error:", error);
-    throw new Error(`Failed to create checkout session: ${error.message}`);
+    throw new Error(`Failed to create checkout session: ${error.message}`, { cause: error });
   }
+}
+
+/** Whether a real Stripe secret key is present (not the build-time placeholder). */
+export function isStripeConfigured(): boolean {
+  const key = process.env.STRIPE_SECRET_KEY || "";
+  return key.startsWith("sk_") && key !== "sk_test_placeholder";
+}
+
+/**
+ * Create a subscription checkout session for membership. The price is a
+ * Stripe Price ID configured in admin Site Settings (stripeMembershipPriceId),
+ * so changing the plan never requires a deploy.
+ */
+export async function createMembershipCheckoutSession(
+  customerEmail: string,
+  priceId: string,
+  origin: string
+): Promise<{ sessionUrl: string; sessionId: string }> {
+  if (!isStripeConfigured()) {
+    throw new Error("Stripe is not configured. Set STRIPE_SECRET_KEY in the environment.");
+  }
+  const session = await stripe.checkout.sessions.create({
+    mode: "subscription",
+    payment_method_types: ["card"],
+    line_items: [{ price: priceId, quantity: 1 }],
+    customer_email: customerEmail,
+    allow_promotion_codes: true,
+    metadata: { kind: "membership", customer_email: customerEmail },
+    success_url: `${origin}/membership/success?session_id={CHECKOUT_SESSION_ID}`,
+    cancel_url: `${origin}/membership`,
+  });
+  return { sessionUrl: session.url || "", sessionId: session.id };
 }
 
 /**
@@ -82,7 +114,7 @@ export async function getCheckoutSession(sessionId: string) {
     return session;
   } catch (error: any) {
     console.error("[Stripe] Session retrieval error:", error);
-    throw new Error(`Failed to retrieve session: ${error.message}`);
+    throw new Error(`Failed to retrieve session: ${error.message}`, { cause: error });
   }
 }
 
@@ -136,6 +168,6 @@ export function verifyWebhookSignature(
     return stripe.webhooks.constructEvent(body, signature, secret);
   } catch (error: any) {
     console.error("[Stripe] Signature verification failed:", error.message);
-    throw new Error(`Webhook signature verification failed: ${error.message}`);
+    throw new Error(`Webhook signature verification failed: ${error.message}`, { cause: error });
   }
 }

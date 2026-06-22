@@ -1,0 +1,221 @@
+{
+  "slug": "premarital",
+  "title": "Premarital Counseling",
+  "subtitle": "A full set of sessions for walking a couple toward a marriage that can hold weight.",
+  "intro": "Most couples come in wanting your blessing. They do not come in wanting to be slowed down. Your task is to slow them down anyway, with love, while they still can choose.\n\nThis workflow is built as seven sessions. Each one surfaces something a couple in love has usually not faced yet. Do not rush a session to finish on time. The conversation that stalls is often the one that mattered.\n\nWrite your notes as you go. Where a couple cannot answer, that gap is the work. Name it gently and stay there.",
+  "stages": [
+    {
+      "id": "session-1",
+      "kicker": "Session One",
+      "title": "Story and expectations",
+      "note": "Start with how they got here and what each of them silently assumes marriage will be.",
+      "prompts": [
+        {
+          "id": "p1a",
+          "q": "Have each of them tell the story of the relationship in their own words. Where do the two accounts differ?",
+          "help": "The gaps between the two tellings are usually where the unspoken expectations live."
+        },
+        {
+          "id": "p1b",
+          "q": "Ask each one why they want to marry this specific person, not why they want to be married. What did you hear?"
+        },
+        {
+          "id": "p1c",
+          "q": "What picture of marriage did each of them grow up watching, and which parts are they quietly hoping to repeat or escape?"
+        },
+        {
+          "id": "p1d",
+          "q": "What does each of them expect the first year to feel like, and how honest is that expectation?",
+          "help": "The fantasy of the first year is often the first thing to break."
+        },
+        {
+          "id": "p1e",
+          "q": "Is either of them marrying to fix something in themselves, in the other, or in their family? Name what you suspect."
+        }
+      ]
+    },
+    {
+      "id": "session-2",
+      "kicker": "Session Two",
+      "title": "Faith and a shared center",
+      "note": "A marriage needs a center it does not generate itself. Find out whether they have one, or only assume one.",
+      "prompts": [
+        {
+          "id": "p2a",
+          "q": "Where does each of them actually stand with God right now, not where they were raised or where they hope to be?"
+        },
+        {
+          "id": "p2b",
+          "q": "If their faith levels differ, who is quietly expecting the other to catch up, and on what timeline?",
+          "help": "Unequal faith rarely stays unspoken for long. It usually surfaces over a child or a crisis."
+        },
+        {
+          "id": "p2c",
+          "q": "How do they plan to pray together, and have they ever actually done it? Watch the discomfort here."
+        },
+        {
+          "id": "p2d",
+          "q": "When their marriage hits the thing they did not plan for, what do they believe God will be doing in it?"
+        },
+        {
+          "id": "p2e",
+          "q": "Whose church, whose convictions, and whose practice wins when they disagree? Have they decided, or only avoided it?"
+        }
+      ]
+    },
+    {
+      "id": "session-3",
+      "kicker": "Session Three",
+      "title": "Communication and conflict",
+      "note": "Every couple says they communicate well. Find out what happens when they are angry, tired, and unheard.",
+      "prompts": [
+        {
+          "id": "p3a",
+          "q": "Have each of them describe how conflict was handled in the home they grew up in. What did anger look like at the dinner table?"
+        },
+        {
+          "id": "p3b",
+          "q": "When they fight now, who pursues and who withdraws, and what does the withdrawer do when followed?",
+          "help": "The pursue and withdraw pattern is the most common and most exhausting marital loop."
+        },
+        {
+          "id": "p3c",
+          "q": "What is the one subject they already avoid because it never ends well?"
+        },
+        {
+          "id": "p3d",
+          "q": "When one of them is wrong, what does a real apology look like, and have they ever given one to each other?"
+        },
+        {
+          "id": "p3e",
+          "q": "How long do they let something sit before it has to be addressed, and do they agree on that limit?"
+        }
+      ]
+    },
+    {
+      "id": "session-4",
+      "kicker": "Session Four",
+      "title": "Money",
+      "note": "Money is rarely about money. It is about fear, control, and what each of them was taught to value.",
+      "prompts": [
+        {
+          "id": "p4a",
+          "q": "What did money mean in each of their childhood homes, scarcity, control, security, or shame?"
+        },
+        {
+          "id": "p4b",
+          "q": "Lay out every debt each of them carries. Has each one told the other the full number?",
+          "help": "Hidden debt is one of the most common secrets a couple brings into a marriage."
+        },
+        {
+          "id": "p4c",
+          "q": "Who will handle the money day to day, and does the other one trust that arrangement?"
+        },
+        {
+          "id": "p4d",
+          "q": "How do they each think about giving to God and to others, and how far apart are those convictions?"
+        },
+        {
+          "id": "p4e",
+          "q": "What is a purchase one of them would make freely that the other would consider reckless? Find the real example."
+        },
+        {
+          "id": "p4f",
+          "q": "If one of them lost their income next month, what would they do, and have they ever said it out loud together?"
+        }
+      ]
+    },
+    {
+      "id": "session-5",
+      "kicker": "Session Five",
+      "title": "Intimacy and the marriage bed",
+      "note": "Speak with maturity and plainness. This is sacred ground, and most couples have never had a clean, honest conversation about it with anyone.",
+      "prompts": [
+        {
+          "id": "p5a",
+          "q": "What did each of them learn about physical intimacy growing up, from the church, from family, and from silence?",
+          "help": "Much of what a couple believes here was absorbed, never taught, and rarely examined."
+        },
+        {
+          "id": "p5b",
+          "q": "Are there past experiences, wounds, or regrets that one of them needs to bring into the light before the wedding?"
+        },
+        {
+          "id": "p5c",
+          "q": "What expectations does each of them hold about closeness and frequency, and how different are those expectations?"
+        },
+        {
+          "id": "p5d",
+          "q": "How will they speak honestly when one of them feels distant or unwanted, without it becoming an accusation?"
+        },
+        {
+          "id": "p5e",
+          "q": "What boundaries will guard their marriage from outside temptation, including what they each allow on a screen alone?"
+        }
+      ]
+    },
+    {
+      "id": "session-6",
+      "kicker": "Session Six",
+      "title": "Family of origin and in-laws",
+      "note": "They are not only marrying each other. They are marrying two histories that will not quietly step aside.",
+      "prompts": [
+        {
+          "id": "p6a",
+          "q": "What does each set of parents expect of this marriage, spoken and unspoken, and how much access do they assume they have?"
+        },
+        {
+          "id": "p6b",
+          "q": "Where is each of them still emotionally tied to a parent in a way that will compete with the marriage?",
+          "help": "Leaving father and mother is more than a wedding line. It is a reordering that some never finish."
+        },
+        {
+          "id": "p6c",
+          "q": "Whose family will they spend the holidays with, and has anyone told the parents the answer might change?"
+        },
+        {
+          "id": "p6d",
+          "q": "What family pattern, addiction, divorce, anger, or silence, are they each afraid of carrying forward?"
+        },
+        {
+          "id": "p6e",
+          "q": "When a parent crosses a line after the wedding, which spouse will speak to their own family, and do they agree on that now?"
+        }
+      ]
+    },
+    {
+      "id": "session-7",
+      "kicker": "Session Seven",
+      "title": "Roles, calling, and the marriage past the wedding",
+      "note": "The wedding is a day. The marriage is the decades. Turn their eyes from one to the other before you finish.",
+      "prompts": [
+        {
+          "id": "p7a",
+          "q": "What does each of them believe a husband owes a wife and a wife owes a husband, and where do those beliefs collide?"
+        },
+        {
+          "id": "p7b",
+          "q": "Whose calling and career bends when the two cannot both be served, and have they decided or only hoped it would work out?"
+        },
+        {
+          "id": "p7c",
+          "q": "What do they want their life to be for, beyond their own comfort, ten years in?",
+          "help": "A marriage aimed only at the couple eventually runs out of room."
+        },
+        {
+          "id": "p7d",
+          "q": "How much have they spent and worried over the wedding compared to the marriage it begins?"
+        },
+        {
+          "id": "p7e",
+          "q": "Who are the older, married people who will know the truth of their marriage and be allowed to speak into it?"
+        },
+        {
+          "id": "p7f",
+          "q": "Knowing what these sessions surfaced, is there anything either of them now needs to say before the date is set?"
+        }
+      ]
+    }
+  ],
+  "closing": "When you send them out, send them clear about the cost, not only glad about the day."
+}

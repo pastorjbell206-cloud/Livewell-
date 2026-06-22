@@ -6,6 +6,34 @@ import { useFavorites } from "@/hooks/useFavorites";
 
 const TOOLS = [
   {
+    title: "Theology Quiz",
+    description: "Twenty questions across doctrine, church history, and the biblical storyline. Find out where your foundations are solid and where the gaps are. Part of the Theological Depth section.",
+    href: "/tools/theology-quiz",
+    icon: Brain,
+    color: "var(--gold)",
+  },
+  {
+    title: "The Leadership Formation Inventory",
+    description: "A character-first diagnostic for leaders: identity, ego, rest, the hidden life, and emotional health before any question of skill. Retakeable, with your history kept in the browser. Part of Leadership Formation.",
+    href: "/leadership/inventory",
+    icon: Shield,
+    color: "var(--ink2)",
+  },
+  {
+    title: "The Whole-Life Assessment",
+    description: "Thirty honest statements across the inner life, the body, relationships, work and money, and the world. Maps where life is flourishing and hands you a rule of life for the season. Part of Integrated Life.",
+    href: "/life/assessment",
+    icon: Heart,
+    color: "var(--gold)",
+  },
+  {
+    title: "Passage Context Tool",
+    description: "Enter any Bible reference and read it in context: the passage with room around it, who wrote it and why, its genre, the flow of the argument, cross-references, and the questions to ask of any text. Part of the Theological Depth section.",
+    href: "/theology/passage",
+    icon: BookMarked,
+    color: "var(--gold)",
+  },
+  {
     title: "Bible Verse Finder",
     description: "Find Scripture for any season of life. Search by topic — anxiety, grief, hope, courage, marriage, and more — and get curated verses you can copy and share.",
     href: "/tools/verse-finder",
@@ -51,6 +79,13 @@ const TOOLS = [
     title: "Parenting Stage Guide",
     description: "Age-specific guidance from toddlers to young adults. What your child needs, how to talk about God, common mistakes, and one practice to start this week.",
     href: "/tools/parenting-guide",
+    icon: Baby,
+    color: "var(--ink)",
+  },
+  {
+    title: "Parenting Bible Verses",
+    description: "Scripture for the real moments of parenting — fear, anger, identity, obedience, screens, doubt — each with a short, honest note for the parent.",
+    href: "/tools/parenting-verses",
     icon: Baby,
     color: "var(--ink)",
   },

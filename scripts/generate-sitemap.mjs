@@ -21,6 +21,9 @@ const STATIC_PAGES = [
   { url: "", priority: "1.0", changefreq: "weekly" },
   { url: "/writing", priority: "0.9", changefreq: "daily" },
   { url: "/books", priority: "0.9", changefreq: "weekly" },
+  // LiveWell series ebooks (code-only product pages, not DB-backed).
+  { url: "/consider-the-birds", priority: "0.8", changefreq: "monthly" },
+  { url: "/where-your-treasure-is", priority: "0.8", changefreq: "monthly" },
   { url: "/skeptic-track", priority: "0.9", changefreq: "monthly" },
   { url: "/pastors-resource-wall", priority: "0.85", changefreq: "weekly" },
   { url: "/roadmap", priority: "0.8", changefreq: "monthly" },
@@ -40,7 +43,87 @@ const STATIC_PAGES = [
   { url: "/work-with-james", priority: "0.6", changefreq: "monthly" },
   { url: "/membership", priority: "0.7", changefreq: "monthly" },
   { url: "/resources", priority: "0.7", changefreq: "monthly" },
+  // Five-pillar listing pages (current nav taxonomy) + Study Guides.
+  { url: "/writing?pillar=theological-depth", priority: "0.85", changefreq: "weekly" },
+  { url: "/writing?pillar=prophetic-justice", priority: "0.85", changefreq: "weekly" },
+  { url: "/writing?pillar=prophetic-disruption", priority: "0.85", changefreq: "weekly" },
+  { url: "/writing?pillar=leadership-formation", priority: "0.85", changefreq: "weekly" },
+  { url: "/writing?pillar=integrated-life", priority: "0.85", changefreq: "weekly" },
+  { url: "/writing?series=true", priority: "0.8", changefreq: "weekly" },
+  // Static content libraries (file-driven, no DB needed).
+  { url: "/leadership", priority: "0.85", changefreq: "weekly" },
+  { url: "/leadership/library", priority: "0.85", changefreq: "weekly" },
+  { url: "/leadership/sermon-series", priority: "0.8", changefreq: "monthly" },
+  { url: "/leadership/bible-sermons", priority: "0.85", changefreq: "monthly" },
+  { url: "/leadership/formation", priority: "0.85", changefreq: "weekly" },
+  { url: "/leadership/servant-leadership", priority: "0.85", changefreq: "monthly" },
+  { url: "/leadership/handbook", priority: "0.9", changefreq: "monthly" },
+  { url: "/leadership/guides", priority: "0.85", changefreq: "monthly" },
+  { url: "/leadership/guides/servant-leadership-bible-study", priority: "0.8", changefreq: "monthly" },
+  { url: "/leadership/guides/elder-training-manual", priority: "0.8", changefreq: "monthly" },
+  { url: "/leadership/guides/deacon-training-manual", priority: "0.8", changefreq: "monthly" },
+  { url: "/leadership/guides/how-to-develop-leaders", priority: "0.8", changefreq: "monthly" },
+  { url: "/leadership/inventory", priority: "0.8", changefreq: "monthly" },
+  { url: "/resources/context", priority: "0.9", changefreq: "weekly" },
+  { url: "/resources/creeds", priority: "0.8", changefreq: "monthly" },
+  { url: "/studyguides/christian-nationalism", priority: "0.8", changefreq: "monthly" },
+  { url: "/studyguides/pastoral-health", priority: "0.8", changefreq: "monthly" },
+  { url: "/studyguides/economic-justice", priority: "0.8", changefreq: "monthly" },
+  { url: "/studyguides/church-and-empire", priority: "0.8", changefreq: "monthly" },
+  { url: "/discipleship", priority: "0.85", changefreq: "monthly" },
+  { url: "/help", priority: "0.9", changefreq: "monthly" },
+  { url: "/plans/marriage", priority: "0.8", changefreq: "monthly" },
+  { url: "/plans/anxiety", priority: "0.8", changefreq: "monthly" },
+  { url: "/plans/grief", priority: "0.8", changefreq: "monthly" },
+  { url: "/plans/whole-life", priority: "0.8", changefreq: "monthly" },
+  { url: "/plans/deconstruction", priority: "0.85", changefreq: "monthly" },
+  { url: "/plans/skeptic", priority: "0.85", changefreq: "monthly" },
+  { url: "/plans/new-believer", priority: "0.85", changefreq: "monthly" },
+  { url: "/life", priority: "0.85", changefreq: "weekly" },
+  { url: "/life/assessment", priority: "0.8", changefreq: "monthly" },
+  { url: "/family", priority: "0.75", changefreq: "monthly" },
+  { url: "/family/devotions", priority: "0.75", changefreq: "monthly" },
+  { url: "/family/catechism", priority: "0.7", changefreq: "monthly" },
+  { url: "/family/reading-plans", priority: "0.7", changefreq: "monthly" },
+  { url: "/framework", priority: "0.85", changefreq: "monthly" },
+  { url: "/theology", priority: "0.8", changefreq: "monthly" },
+  { url: "/theology/biblical", priority: "0.75", changefreq: "monthly" },
+  { url: "/theology/history", priority: "0.75", changefreq: "monthly" },
+  { url: "/theology/questions", priority: "0.75", changefreq: "monthly" },
+  { url: "/start", priority: "0.8", changefreq: "monthly" },
+  { url: "/tools/theology-quiz", priority: "0.6", changefreq: "monthly" },
+  { url: "/tools/verse-finder", priority: "0.6", changefreq: "monthly" },
+  { url: "/tools/prayer-generator", priority: "0.6", changefreq: "monthly" },
+  { url: "/tools/family-devotions", priority: "0.65", changefreq: "monthly" },
 ];
+
+/**
+ * Article-style pages whose content lives as JSON in client/public rather than
+ * the database: the Leadership Library and the Reading Scripture in Context
+ * guides. Read from the generated manifests so this list never goes stale.
+ */
+function manifestPages() {
+  const pages = [];
+  const sources = [
+    { file: "client/public/leadership/articles-index.json", key: "articles", prefix: "/leadership/article/" },
+    { file: "client/public/context/guides-index.json", key: "guides", prefix: "/resources/context/" },
+    { file: "client/public/leadership/formation-index.json", key: "topics", prefix: "/leadership/formation/" },
+    { file: "client/public/life/domains-index.json", key: "domains", prefix: "/life/" },
+    { file: "client/public/creeds/documents-index.json", key: "documents", prefix: "/resources/creeds/" },
+    { file: "client/public/history/essays-index.json", key: "essays", prefix: "/theology/history/" },
+  ];
+  for (const s of sources) {
+    try {
+      const data = JSON.parse(fs.readFileSync(s.file, "utf8"));
+      for (const entry of data[s.key] || []) {
+        if (entry.slug) pages.push({ url: `${s.prefix}${entry.slug}`, priority: "0.75", changefreq: "monthly" });
+      }
+    } catch (err) {
+      console.warn(`[sitemap] could not read ${s.file}: ${err.message}`);
+    }
+  }
+  return pages;
+}
 
 function urlEntry(loc, lastmod, changefreq, priority) {
   let entry = "  <url>\n";
@@ -53,9 +136,10 @@ function urlEntry(loc, lastmod, changefreq, priority) {
 }
 
 function buildXml(staticPages, articles, books, readingPaths) {
+  const allStatic = [...staticPages, ...manifestPages()];
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
-  for (const page of staticPages) {
+  for (const page of allStatic) {
     xml += urlEntry(`${BASE_URL}${page.url}`, null, page.changefreq, page.priority);
   }
   for (const a of articles) {

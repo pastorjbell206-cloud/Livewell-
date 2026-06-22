@@ -129,3 +129,9 @@ scripts/.ghostwrite-spec.md
 scripts/.draft-assignments.json
 scripts/.fill2-assignments.json
 scripts/.fill2-spec.md
+
+# Generated at build time by scripts/build-pdfs.mjs (pnpm run pdfs)
+client/public/downloads/
+
+# Generated at build time by scripts/build-og-images.mjs (pnpm run og)
+client/public/og/

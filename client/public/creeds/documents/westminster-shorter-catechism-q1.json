@@ -1,0 +1,43 @@
+{
+  "slug": "westminster-shorter-catechism-q1",
+  "title": "The Westminster Shorter Catechism, Q. 1–10",
+  "subtitle": "The full text of the first ten questions of the Westminster Shorter Catechism (1647), beginning with the chief end of man, with plain-language notes.",
+  "group": "Reformation Confessions",
+  "date": "AD 1647",
+  "intro": "Between 1643 and 1649, while England tore itself apart in civil war, an assembly of pastors and theologians met in Westminster Abbey, over a thousand sessions, to settle the doctrine and order of the church. They produced a confession of faith and two catechisms. The Shorter Catechism was the one written for children and households, 107 questions, each answer crafted to be a complete, freestanding sentence of theology. Generations of Scottish, English, and American children learned it before they learned arithmetic.\n\nIts first question may be the most famous sentence Protestantism ever wrote: man's chief end is to glorify God, and to enjoy him forever. Notice what it does not say. It does not begin with sin, or with the Bible, or with proofs. It begins with purpose, what a human being is for, and it answers with glory and joy in the same breath, one end, not two. Everything that follows in the catechism is commentary on that sentence.\n\nThe first ten questions, given here in full, form the catechism's foundation: the end of man, the rule God has given, what Scripture principally teaches, and then the doctrine of God: his nature, the Trinity, his decrees, creation, and the making of humanity in his image. The answers are dense the way a foundation is dense. They were meant to be memorized young and understood for the rest of a life, which is roughly the opposite of how we educate now. We give children entertainment and adults remediation. The Westminster divines gave seven-year-olds the doctrine of God.",
+  "text": "Question 1. What is the chief end of man?\n\nAnswer. Man's chief end is to glorify God, and to enjoy him forever.\n\nQuestion 2. What rule hath God given to direct us how we may glorify and enjoy him?\n\nAnswer. The Word of God, which is contained in the Scriptures of the Old and New Testaments, is the only rule to direct us how we may glorify and enjoy him.\n\nQuestion 3. What do the Scriptures principally teach?\n\nAnswer. The Scriptures principally teach what man is to believe concerning God, and what duty God requires of man.\n\nQuestion 4. What is God?\n\nAnswer. God is a Spirit, infinite, eternal, and unchangeable, in his being, wisdom, power, holiness, justice, goodness, and truth.\n\nQuestion 5. Are there more Gods than one?\n\nAnswer. There is but one only, the living and true God.\n\nQuestion 6. How many persons are there in the Godhead?\n\nAnswer. There are three persons in the Godhead: the Father, the Son, and the Holy Ghost; and these three are one God, the same in substance, equal in power and glory.\n\nQuestion 7. What are the decrees of God?\n\nAnswer. The decrees of God are his eternal purpose, according to the counsel of his will, whereby, for his own glory, he hath foreordained whatsoever comes to pass.\n\nQuestion 8. How doth God execute his decrees?\n\nAnswer. God executeth his decrees in the works of creation and providence.\n\nQuestion 9. What is the work of creation?\n\nAnswer. The work of creation is God's making all things of nothing, by the word of his power, in the space of six days, and all very good.\n\nQuestion 10. How did God create man?\n\nAnswer. God created man male and female, after his own image, in knowledge, righteousness, and holiness, with dominion over the creatures.",
+  "annotations": [
+    {
+      "phrase": "to glorify God, and to enjoy him forever",
+      "note": "One chief end, not two. The grammar is singular. Glorifying God and enjoying God are the same activity described twice. The catechism refuses, in its first sentence, the idea that duty and delight are rivals."
+    },
+    {
+      "phrase": "the only rule to direct us",
+      "note": "The Reformation principle of sola scriptura stated for children: Scripture alone is the final rule for faith and life. Not the only book worth reading. The only rule. Creeds and catechisms, including this one, sit under it, never beside it."
+    },
+    {
+      "phrase": "what man is to believe concerning God, and what duty God requires",
+      "note": "Question 3 divides the whole catechism in two: doctrine (Q. 1–38), then duty (Q. 39–107). Belief comes first because obedience grows out of knowing who God is, not the other way around."
+    },
+    {
+      "phrase": "God is a Spirit, infinite, eternal, and unchangeable",
+      "note": "Often called the finest short definition of God in the English language. The method is precise: three ways God's being differs from ours (infinite, eternal, unchangeable) applied to seven attributes we share by analogy. Legend says the answer was opened with prayer, and the prayer became the answer."
+    },
+    {
+      "phrase": "the same in substance, equal in power and glory",
+      "note": "Nicaea compressed for memorization. 'Same in substance' is homoousios in plain English. 'Equal in power and glory' shuts the door on any ranking inside the Trinity."
+    },
+    {
+      "phrase": "foreordained whatsoever comes to pass",
+      "note": "The catechism's most disputed clause. It teaches that nothing, not atoms, not empires, not the day of your death, falls outside God's eternal purpose. Westminster saw this as comfort, not fatalism: history has an author, and the author has intentions."
+    },
+    {
+      "phrase": "making all things of nothing",
+      "note": "Creation ex nihilo. God did not organize pre-existing material like a craftsman. He called being itself into existence by his word. Everything that is not God exists on borrowed breath."
+    },
+    {
+      "phrase": "male and female, after his own image",
+      "note": "Both sexes bear the image fully and together: knowledge, righteousness, holiness, dominion. In 1647 this sentence taught children that every human being they would ever meet carries the stamp of God. It still does."
+    }
+  ]
+}

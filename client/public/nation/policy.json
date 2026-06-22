@@ -1,0 +1,96 @@
+{
+  "intro": "The laws God gave ancient Israel were civil laws for a particular covenant people in a particular land under a particular arrangement that no longer exists. They were never a blueprint to be photocopied onto another nation. Israel was a theocracy bound to God by covenant at Sinai, and America is a free and pluralistic republic that has made no such covenant and cannot be made to. So this tool does not argue that we should reinstate the code of Moses. It argues something smaller and harder.\n\nBeneath each civil law there is a principle about how a people ought to treat the poor, the foreigner, the indebted, the powerful, and the land. The law is the local application. The principle is the part that travels. When you draw the principle out and ask what it might look like as policy in modern America, something uncomfortable happens. The principles refuse to sit down on one side of the aisle. Some of them indict the right. Some of them indict the left. Most of them indict all of us, which is the point and not an accident.\n\nRead this slowly and let it cost you something. If you are conservative, the laws on debt and land and gleaning will not leave you where they found you. If you are progressive, the warnings against concentrated power and the limits placed on the state will press on you in the same way. A truly biblical politics would be homeless in both parties, welcome at neither convention, and that homelessness is not a failure of the vision. It is the vision telling the truth about every kingdom that is not the one to come.",
+  "laws": [
+    {
+      "name": "The Year of Jubilee",
+      "reference": "Leviticus 25",
+      "whatItWas": "Every fiftieth year, debts were released and land returned to the families who had originally held it. No matter how badly a family had fallen, the clock reset and the ground came home. The land could not be sold forever, because the land belonged to God and the people were tenants, not absolute owners.",
+      "thePrinciple": "No family should be locked into permanent poverty, and no economy should let a few generations of misfortune harden into a permanent underclass.",
+      "modernPolicy": "It might look like periodic structural relief that interrupts inherited disadvantage rather than treating poverty as a fixed feature of the market. Think debt forgiveness mechanisms, ceilings on how much wealth can be hoarded across generations, or a real reset for those crushed by circumstances they did not author. The aim is not to punish success but to deny poverty the power to become permanent.",
+      "leftEcho": "The left hears wealth redistribution and a divine verdict against runaway inequality, and it is mostly right to.",
+      "rightEcho": "The right hears an unsettling claim that property is never absolute and that the market is not allowed to produce permanent losers.",
+      "theCatch": "Jubilee was a covenant ordinance tied to tribal land allotments in a single small nation, not a tax policy, and lifting it into a modern economy of credit and global trade requires wisdom the text does not hand us. The principle indicts permanent poverty. It does not dictate the mechanism."
+    },
+    {
+      "name": "The Gleaning Laws",
+      "reference": "Leviticus 19 and Leviticus 23",
+      "whatItWas": "Farmers were forbidden to harvest the corners of their fields or to go back over the vines and trees a second time. Whatever was left, the poor and the foreigner were free to come and gather for themselves. The provision was built into the harvest, not handed down as charity afterward.",
+      "thePrinciple": "An economy should leave a deliberate margin for the poor and the outsider, and that margin is owed to them, not donated to them.",
+      "modernPolicy": "It might look like systems that guarantee the vulnerable a way to gather their own provision with dignity rather than depend wholly on the goodwill of those who have. The poor in this law worked the edges themselves, so the policy is not pure handout and not pure self-reliance but a structured opening that the strong are required to leave. The foreigner is named explicitly, which complicates any policy that draws the circle of obligation only around citizens.",
+      "leftEcho": "The left hears a mandate to care for the immigrant and a structural obligation to the poor written into the law itself.",
+      "rightEcho": "The right is unsettled that the owner does not get to keep everything he grew and that provision for the stranger is commanded, not optional.",
+      "theCatch": "Gleaning assumed an agrarian society where the poor could physically work the edges of a field, and translating it into a service economy is not obvious. The principle of a built-in margin endures. The corn does not."
+    },
+    {
+      "name": "The Sabbath and the Sabbatical Year",
+      "reference": "Exodus 20 and Leviticus 25",
+      "whatItWas": "Every seventh day, all work stopped, for the household, the servant, the foreigner, and the animals alike. Every seventh year, the land itself rested and was left unworked, and whatever grew of its own accord was open to the poor and the wild creatures. Rest was not earned by productivity. It was commanded against it.",
+      "thePrinciple": "People, animals, and the land all have a limit that is not for sale, and a society that works them without rest is committing a kind of theft.",
+      "modernPolicy": "It might look like real protection of rest for workers, limits on the demand that human beings be endlessly available and productive, and care for soil and ecosystems that refuses to treat the earth as an infinite resource to be drained. The Sabbath applied to the lowest servant and the working animal, so the policy cannot exempt the people with the least power. It is the strong who are commanded to release their grip.",
+      "leftEcho": "The left hears labor protection and a creation care that treats the land as something we owe rest, not just yield.",
+      "rightEcho": "The right is unsettled by a command that overrides the freedom to work and produce whenever one wishes and binds even the business owner.",
+      "theCatch": "The sabbatical year assumed a settled agricultural people who could let fields lie fallow, and a modern food system cannot simply stop every seventh year. The principle that rest is a right and not a reward survives the farming details."
+    },
+    {
+      "name": "The Release of Debts",
+      "reference": "Deuteronomy 15",
+      "whatItWas": "Every seven years, debts among the people were to be cancelled outright. The law went further and warned the lender against the hardness of heart that would refuse a loan as the seventh year drew near. The command was paired with a promise that open-handedness toward the poor would not leave the nation poorer.",
+      "thePrinciple": "Debt should not be a life sentence, and a society should build regular relief for those buried under it rather than letting obligation compound forever.",
+      "modernPolicy": "It might look like meaningful bankruptcy protection, limits on predatory lending, and structures that let people climb out from under crushing debt instead of carrying it for decades. The text aims its warning at the lender who hoards as forgiveness approaches, so the policy weight falls on those with capital, not those who borrowed in desperation. It treats chronic indebtedness as a moral problem and not merely a private contract.",
+      "leftEcho": "The left hears debt forgiveness and a sharp critique of an economy that profits from keeping people underwater.",
+      "rightEcho": "The right is unsettled that contracts are not sacred and that the lender is told to release what he is legally owed.",
+      "theCatch": "A seven year cycle in a covenant village economy is not a modern credit system, and blanket cancellation would ripple in ways the text never anticipated. The principle that debt must have a horizon and an end is what carries over."
+    },
+    {
+      "name": "Limits on Interest and Usury",
+      "reference": "Exodus 22 and Deuteronomy 23",
+      "whatItWas": "Israel was forbidden to charge interest on loans to the poor among its own people. To lend to a brother in need and then profit from his need was treated as a violation of the covenant itself. A pledged cloak taken as collateral had to be returned by nightfall, because a poor man needed it to sleep.",
+      "thePrinciple": "It is wrong to grow rich off the desperation of the poor, and credit extended to someone in crisis should relieve them rather than feed on them.",
+      "modernPolicy": "It might look like caps on the kind of interest that turns a small emergency into permanent ruin and real limits on the lending that targets the most vulnerable. The cloak returned by nightfall suggests that no profit justifies stripping a person of what they need to survive. The aim is to keep credit from becoming a trap set for the people least able to escape it.",
+      "leftEcho": "The left hears a direct attack on predatory finance and the industries built on the poverty of others.",
+      "rightEcho": "The right is unsettled by limits placed on what a free lender and willing borrower may agree to, and by the idea that some profit is simply forbidden.",
+      "theCatch": "Ancient Israel had no central bank, no inflation, and no modern lending market, and a flat prohibition does not map cleanly onto contemporary finance. The principle condemns profiting from desperation, which is narrower and sharper than any blanket rule on interest."
+    },
+    {
+      "name": "The Cities of Refuge",
+      "reference": "Numbers 35",
+      "whatItWas": "Six cities were set apart where someone who had killed another person could flee and be safe from the avenger until the matter was judged. The law drew a hard line between murder and accidental death and demanded testimony, evidence, and a fair hearing before anyone could be put to death. A single witness was never enough to convict.",
+      "thePrinciple": "Even the accused has a right to due process, vengeance must be restrained by law, and the power to punish must be bound by evidence and a fair hearing.",
+      "modernPolicy": "It might look like strong protections for the accused, real limits on punishment driven by public fury, and a justice system that refuses to convict on thin evidence or mob pressure. The refuge stood between a grieving family and the person they wanted dead, which is exactly what due process is supposed to do. It slows the machinery of punishment so that the innocent are not crushed alongside the guilty.",
+      "leftEcho": "The left hears protection for the accused and a check on punishment driven by outrage rather than evidence.",
+      "rightEcho": "The right hears a defense of the rule of law and a sober insistence that real guilt, proven by witnesses, still matters.",
+      "theCatch": "The cities of refuge belonged to a kinship system of blood vengeance that no longer governs us, and the institution itself cannot be reconstructed. The principle of due process and restrained punishment is the part worth keeping."
+    },
+    {
+      "name": "Honest Weights and Measures",
+      "reference": "Leviticus 19 and Proverbs 11",
+      "whatItWas": "Merchants were forbidden to carry two sets of weights, a heavy one for buying and a light one for selling. A false balance was named as something God detests, set right beside idolatry in its seriousness. The marketplace was held to the same moral standard as the altar.",
+      "thePrinciple": "Commerce must be honest, the powerful must not rig the scales in their own favor, and deception that quietly transfers wealth from the trusting to the cunning is a sin and not a strategy.",
+      "modernPolicy": "It might look like real enforcement against fraud, deceptive pricing, and the hidden manipulations that move money from ordinary people to those who control the terms. The false balance is invisible to the person being cheated, which is what makes it so close to the heart of modern financial deception. The aim is a market where the trusting are not punished for their trust.",
+      "leftEcho": "The left hears consumer protection and a verdict against corporations that profit by deceiving the people they serve.",
+      "rightEcho": "The right hears the integrity that any honest market requires and a defense of the trust that free exchange depends on.",
+      "theCatch": "Bronze weights in a market stall are not derivatives and algorithmic pricing, and the application demands discernment the law does not supply. The principle that the scales must be honest is timeless even where the scales have become invisible."
+    },
+    {
+      "name": "The Tithe for the Poor and the Foreigner",
+      "reference": "Deuteronomy 14 and Deuteronomy 26",
+      "whatItWas": "Every third year a portion of the harvest was set aside specifically for the Levite, the foreigner, the orphan, and the widow, so that they could eat and be filled. It was stored locally and given to those with no land of their own. The giver was made to declare before God that he had not withheld it.",
+      "thePrinciple": "A people owes a real and structured share of its abundance to those who have no inheritance, and the foreigner is named among them without apology.",
+      "modernPolicy": "It might look like a deliberate, accountable commitment of shared resources to the landless, the displaced, and the family with no safety net, including the immigrant who appears in the list by name. The provision was systematic and declared openly, not left to private whim or mood. It treats care for the vulnerable as an obligation a society publicly owns rather than a kindness it occasionally feels.",
+      "leftEcho": "The left hears a mandate for collective provision and an explicit place at the table for the foreigner.",
+      "rightEcho": "The right is unsettled that giving is commanded and structured rather than left wholly to private charity and personal conscience.",
+      "theCatch": "This was a tithe within a covenant people governed by God, not a tax levied by a secular state on an unwilling public, and the difference matters. The principle of owed provision to the landless endures even where the collection method cannot be copied."
+    },
+    {
+      "name": "The Warning Against the King Who Takes",
+      "reference": "1 Samuel 8",
+      "whatItWas": "When Israel demanded a king to be like the other nations, God warned them through Samuel what a king would do. He would take their sons and daughters, take their fields and vineyards, take a tenth of their grain and flocks, and in the end they would cry out under the very ruler they had begged for. The warning was that concentrated power feeds on the people it claims to serve.",
+      "thePrinciple": "Concentrated power tends toward taking, and a wise people guards itself against any authority, governmental or otherwise, that grows by consuming the freedom and property of those beneath it.",
+      "modernPolicy": "It might look like real limits on state power, suspicion of any institution that accumulates control over people's lives and labor, and structures that keep authority accountable and divided. The warning is not anti government so much as anti unchecked power, wherever it concentrates. It assumes that those who rule will tend to take more than they give unless they are bound.",
+      "leftEcho": "The left is unsettled by a deep biblical wariness of the centralized state and its appetite for the property and lives of ordinary people.",
+      "rightEcho": "The right hears a warning against concentrated power and a defense of liberty against the ruler who takes and takes.",
+      "theCatch": "This was a warning about monarchy spoken to one nation at a moment of decision, not a developed theory of limited government, and it cuts against every concentration of power including the private kind. The principle is suspicion of unchecked authority, not a brief for any particular party's view of the state."
+    }
+  ],
+  "closing": "Notice what just happened. The same Scripture that demands debt release and a margin for the poor also warns against the ruler who takes and takes. The same God who commands provision for the foreigner also distrusts concentrated power. If you came in confident that the Bible was on your side, you should leave less sure, because the principles beneath these laws will not be conscripted into either platform. They indict the hoarding the right tolerates and the centralizing the left trusts, and they implicate me before they implicate anyone I am tempted to name.\n\nAnd here is the line we must not cross. None of this is an argument for a coerced biblical government imposed on a free and pluralistic nation. Israel was a covenant people who had said yes at Sinai. America has said no such thing, and to force the code of one onto the conscience of the other would betray the very gospel it claimed to honor. Faith cannot be forced. A righteousness compelled by the sword is not righteousness at all but a new idolatry wearing the language of God, and the church that reaches for the levers of coercion has already forgotten whose kingdom it serves.\n\nThe kingdom of God comes by the Spirit and not the sword. It persuades, it does not conscript. So take these principles as a mirror and not a manifesto. Let them make you a harder citizen for your own party to keep, a Christian whose first loyalty makes you unreliable to every tribe that wants your vote without your conscience. That homelessness is not a tragedy to be solved. It is what it looks like to belong somewhere else first."
+}

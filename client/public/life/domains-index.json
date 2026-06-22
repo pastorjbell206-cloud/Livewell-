@@ -1,0 +1,34 @@
+{
+  "domains": [
+    {
+      "slug": "the-body-and-the-rhythms",
+      "title": "The Body and the Rhythms",
+      "blurb": "A Christian vision of sleep, food, rest, and attention. The body as a gift to steward, not a project to manage. Against both neglect and obsession.",
+      "pillar": "The Body and the Rhythms"
+    },
+    {
+      "slug": "friendship-against-isolation",
+      "title": "Friendship Against Isolation",
+      "blurb": "The loneliness epidemic meets the forgotten love. Covenant friendship, the open table, and why a friendly church is not the same thing as friends.",
+      "pillar": "The Home and Relationships"
+    },
+    {
+      "slug": "the-anxious-mind",
+      "title": "The Anxious Mind: Faith and Mental Health",
+      "blurb": "Anxiety is not a faith failure. What Scripture, church history, and honest science say about the fearful mind, and why seeing a doctor can be an act of faith.",
+      "pillar": "The Inner Life"
+    },
+    {
+      "slug": "grief-and-loss",
+      "title": "Grief and Loss",
+      "blurb": "Loss without the trite comfort. Lament as the language faith speaks at gravesides, the permission of the Psalms, and the long work of a body learning to live with what is gone.",
+      "pillar": "The Seasons and the Crises"
+    },
+    {
+      "slug": "money-and-the-heart",
+      "title": "Money and the Heart",
+      "blurb": "Jesus named one rival god by name, and it was not lust or power. A Christian reckoning with Mammon, contentment, debt, generosity, and the freedom of enough.",
+      "pillar": "Work, Money, and Calling"
+    }
+  ]
+}

@@ -1,10 +1,12 @@
 /**
- * Home — Substack-shaped landing page.
+ * Home — mission-forward landing page.
  *
- * Per James's brief: "Pastor and essayist writing on theology, politics, and
- * the American church after Christendom. New essays weekly." The homepage
- * leads with the lede track, surfaces the latest essays, and converts via
- * the segmented signup form (skeptic / Christian / pastor / exploring).
+ * The homepage leads with the founder's headline and four mission doors —
+ * Become a Disciple, Make Disciples, Leadership Training, Prophetic Justice —
+ * so a visitor is routed by what they came for, not by the political/cultural
+ * essay arcs (those live under Writing and the nav, not the front page). Below
+ * the doors: the latest essays, the segmented signup (the conversion surface),
+ * and the five pillars as the deeper taxonomy spine.
  */
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
@@ -20,8 +22,55 @@ import {
   PRIMARY_HEADLINE,
   PRIMARY_KICKER,
   PRIMARY_SUBHEAD,
+  PRIMARY_SUBHEAD_SHORT,
 } from "@/lib/positioning";
-import { FEATURED_TRACKS, PRIMARY_TRACKS, trackUrl } from "@/lib/taxonomy";
+// Hero A/B variant. "A" (default): tighter two-sentence subhead + a "Find your
+// track" secondary CTA that serves everyone (the skeptic entry stays as a
+// tertiary link). "B": the original long subhead + skeptic-first secondary.
+// Flip this one constant to switch variants without touching markup.
+const HERO_VARIANT: "A" | "B" = "A";
+
+// The four mission doors — the primary way into the site. Each routes by the
+// reader's intent into an existing hub. Edit copy/destinations here only.
+const DOORS = [
+  {
+    title: "Become a Disciple",
+    blurb:
+      "New to following Jesus, or finding your way back. A path that takes your questions seriously and meets you where you actually are.",
+    href: "/discipleship",
+    cta: "Start the path",
+  },
+  {
+    title: "Make Disciples",
+    blurb:
+      "You are teaching others to follow Christ. Study guides, family devotions, and tools to put real weight behind what you pass on.",
+    href: "/resources",
+    cta: "Find the tools",
+  },
+  {
+    title: "Leadership Training",
+    blurb:
+      "For pastors, elders, and deacons. The work of leading a church, and the training to carry what the work costs.",
+    href: "/leadership",
+    cta: "Enter the hub",
+  },
+  {
+    title: "Prophetic Justice",
+    blurb:
+      "What Scripture says about the poor, the outsider, the systems we inherit. This is not about left or right. It is about the cross.",
+    href: "/justice",
+    cta: "Read the call",
+  },
+];
+
+// The five pillars — the deeper writing taxonomy, kept visible below the doors.
+const PILLARS = [
+  { name: "Theological Depth", href: "/theology", blurb: "Doctrine, church history, the whole biblical story." },
+  { name: "Prophetic Justice", href: "/justice", blurb: "The poor, the outsider, the systems we inherit." },
+  { name: "Prophetic Disruption", href: "/disruption", blurb: "The church, empire, and the politics that capture it." },
+  { name: "Leadership Formation", href: "/leadership", blurb: "Character before competence, for those who lead." },
+  { name: "Integrated Life", href: "/life", blurb: "Marriage, parenting, vocation, and rest." },
+];
 
 export default function Home() {
   // Recent essays for the "Recent" rail.
@@ -116,7 +165,7 @@ export default function Home() {
                 marginBottom: "40px",
               }}
             >
-              {PRIMARY_SUBHEAD}
+              {HERO_VARIANT === "A" ? PRIMARY_SUBHEAD_SHORT : PRIMARY_SUBHEAD}
             </p>
 
             <div
@@ -147,7 +196,7 @@ export default function Home() {
                   Read the essays
                 </button>
               </Link>
-              <Link href="/skeptic-track" style={{ textDecoration: "none" }}>
+              <Link href={HERO_VARIANT === "A" ? "/start" : "/skeptic-track"} style={{ textDecoration: "none" }}>
                 <button
                   type="button"
                   style={{
@@ -163,10 +212,26 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  Start here if you're a skeptic
+                  {HERO_VARIANT === "A" ? "Find your track" : "Start here if you're a skeptic"}
                 </button>
               </Link>
             </div>
+            {HERO_VARIANT === "A" && (
+              <div style={{ marginTop: "16px" }}>
+                <Link
+                  href="/skeptic-track"
+                  style={{
+                    fontFamily: "var(--U)",
+                    fontSize: "13px",
+                    color: "rgba(245,240,230,0.6)",
+                    textDecoration: "underline",
+                    textUnderlineOffset: "3px",
+                  }}
+                >
+                  Or start here if you're a skeptic
+                </Link>
+              </div>
+            )}
           </div>
 
           {/* Lede essay card — replaces decorative author card */}
@@ -236,7 +301,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FEATURED TRACK STRIP — three primary Substack-aligned arcs */}
+      {/* MISSION DOORS — the primary way into the site, by the reader's intent */}
       <section
         style={{
           background: "var(--bone)",
@@ -246,7 +311,7 @@ export default function Home() {
       >
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ marginBottom: "12px" }}>
-            The Lede Arcs
+            Start where you are
           </div>
           <h2
             style={{
@@ -255,25 +320,34 @@ export default function Home() {
               fontWeight: 400,
               letterSpacing: "-0.015em",
               color: "var(--ink)",
-              marginBottom: "var(--s-4)",
+              marginBottom: "16px",
               maxWidth: "32ch",
             }}
           >
-            The three threads the weekly essays trace.
+            Four doors in.
           </h2>
+          <p
+            style={{
+              fontFamily: "var(--B)",
+              fontSize: "17px",
+              lineHeight: 1.65,
+              color: "var(--ink-muted)",
+              maxWidth: "60ch",
+              marginBottom: "var(--s-4)",
+            }}
+          >
+            Wherever you are, there is a way through. Pick the one that fits, and
+            the rest of the site opens from there.
+          </p>
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
               gap: "24px",
             }}
           >
-            {FEATURED_TRACKS.map(track => (
-              <Link
-                key={track.slug}
-                href={trackUrl(track.slug)}
-                style={{ textDecoration: "none" }}
-              >
+            {DOORS.map(door => (
+              <Link key={door.href} href={door.href} style={{ textDecoration: "none" }}>
                 <article
                   style={{
                     padding: "var(--s-4)",
@@ -282,6 +356,8 @@ export default function Home() {
                     borderLeft: "2px solid var(--mustard)",
                     borderRadius: "var(--radius-sm)",
                     height: "100%",
+                    display: "flex",
+                    flexDirection: "column",
                     transition: "all 0.2s",
                     cursor: "pointer",
                   }}
@@ -302,7 +378,7 @@ export default function Home() {
                       marginBottom: "12px",
                     }}
                   >
-                    {track.title}
+                    {door.title}
                   </h3>
                   <p
                     style={{
@@ -311,9 +387,10 @@ export default function Home() {
                       lineHeight: 1.65,
                       color: "var(--ink-muted)",
                       marginBottom: "20px",
+                      flex: 1,
                     }}
                   >
-                    {track.description}
+                    {door.blurb}
                   </p>
                   <span
                     style={{
@@ -325,9 +402,10 @@ export default function Home() {
                       color: "var(--ink)",
                       borderBottom: "1px solid var(--mustard)",
                       paddingBottom: "2px",
+                      alignSelf: "flex-start",
                     }}
                   >
-                    Read this track →
+                    {door.cta} →
                   </span>
                 </article>
               </Link>
@@ -476,7 +554,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECONDARY TRACKS — the rest of what Bell writes */}
+      {/* THE FIVE PILLARS — the deeper writing taxonomy spine */}
       <section
         style={{
           background: "var(--bone)",
@@ -485,7 +563,7 @@ export default function Home() {
       >
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ marginBottom: "12px" }}>
-            Also Writing On
+            The writing, by pillar
           </div>
           <h2
             style={{
@@ -498,7 +576,7 @@ export default function Home() {
               maxWidth: "32ch",
             }}
           >
-            Pastoring, marriage, parenting, prophetic justice, deep theology.
+            Five pillars. One argument.
           </h2>
           <div
             style={{
@@ -507,12 +585,8 @@ export default function Home() {
               gap: "16px",
             }}
           >
-            {PRIMARY_TRACKS.filter(t => !t.featured).map(track => (
-              <Link
-                key={track.slug}
-                href={trackUrl(track.slug)}
-                style={{ textDecoration: "none" }}
-              >
+            {PILLARS.map(pillar => (
+              <Link key={pillar.href} href={pillar.href} style={{ textDecoration: "none" }}>
                 <div
                   style={{
                     padding: "20px",
@@ -540,7 +614,7 @@ export default function Home() {
                       marginBottom: "8px",
                     }}
                   >
-                    {track.title}
+                    {pillar.name}
                   </h3>
                   <p
                     style={{
@@ -550,7 +624,7 @@ export default function Home() {
                       color: "var(--ink-muted)",
                     }}
                   >
-                    {track.description}
+                    {pillar.blurb}
                   </p>
                 </div>
               </Link>

@@ -10,7 +10,6 @@ interface BookRecommendationsProps {
 
 export default function BookRecommendations({
   currentBookId,
-  currentBookPillar,
   limit = 3,
 }: BookRecommendationsProps) {
   const booksQuery = trpc.books.listPublished.useQuery();

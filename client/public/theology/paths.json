@@ -1,0 +1,72 @@
+{
+  "paths": [
+    {
+      "id": "start-here",
+      "title": "Start here, for the brand-new believer",
+      "audience": "Brand new, or starting again",
+      "blurb": "If you are not sure where to begin, begin here. A short path through the load-bearing truths, then out to reading the Bible for yourself.",
+      "steps": [
+        { "label": "How to use this section", "href": "/theology/how-to-use", "note": "The one idea that keeps everything steady: not every disagreement carries the same weight." },
+        { "label": "What is the gospel, in plain words?", "href": "/theology/questions#what-is-the-gospel", "note": "The heart of it, before anything else." },
+        { "label": "Who is God? The Trinity", "href": "/theology/doctrine/god-and-trinity", "note": "One God, three persons. The doctrine that holds the whole faith together." },
+        { "label": "Who is Jesus?", "href": "/theology/doctrine/christology", "note": "Fully God and fully man, and why that is the center." },
+        { "label": "How are we saved?", "href": "/theology/doctrine/soteriology", "note": "Grace, and how a person comes to God." },
+        { "label": "Read a passage in context", "href": "/theology/passage?ref=John%203", "note": "Start in John. Type any verse and learn to read it in its own setting." },
+        { "label": "Keep the glossary close", "href": "/theology/glossary", "note": "Whenever a word stops you, it is defined here in plain language." }
+      ]
+    },
+    {
+      "id": "gospel-in-two-weeks",
+      "title": "The gospel, traced through Scripture",
+      "audience": "Anyone wanting the good news in the Bible's own words",
+      "blurb": "Ten readings that walk the gospel from the problem to the empty tomb, each opened in context, ending at the doctrine that ties them together.",
+      "steps": [
+        { "label": "Genesis 3, what went wrong", "href": "/theology/passage?ref=Genesis%203", "note": "The fall, and the first promise of a deliverer." },
+        { "label": "Isaiah 53, the suffering servant", "href": "/theology/passage?ref=Isaiah%2053", "note": "Pierced for our transgressions, centuries before the cross." },
+        { "label": "Luke 15, the Father's heart", "href": "/theology/passage?ref=Luke%2015", "note": "The son who came home, and the Father who ran." },
+        { "label": "Mark 8, who is Jesus", "href": "/theology/passage?ref=Mark%208", "note": "The great confession, and the road to the cross." },
+        { "label": "John 3, you must be born again", "href": "/theology/passage?ref=John%203", "note": "For God so loved the world." },
+        { "label": "Romans 3, justified by grace", "href": "/theology/passage?ref=Romans%203", "note": "All have sinned, and are justified freely by his grace." },
+        { "label": "Romans 8, no condemnation", "href": "/theology/passage?ref=Romans%208", "note": "Nothing can separate us from the love of God." },
+        { "label": "Ephesians 2, by grace through faith", "href": "/theology/passage?ref=Ephesians%202", "note": "Saved by grace, not by works, so no one can boast." },
+        { "label": "1 Corinthians 15, the resurrection", "href": "/theology/passage?ref=1%20Corinthians%2015", "note": "If Christ is not raised, our faith is in vain. He is raised." },
+        { "label": "The doctrine: how are we saved?", "href": "/theology/doctrine/soteriology", "note": "Now see how the whole conversation fits together." }
+      ]
+    },
+    {
+      "id": "whole-story",
+      "title": "Read the whole story",
+      "audience": "Anyone who wants the Bible to hold together",
+      "blurb": "The one story from the garden to the city, in eleven stops, so the Bible stops feeling like a pile of pieces.",
+      "steps": [
+        { "label": "The one story, laid out", "href": "/theology/biblical", "note": "The whole arc in eleven acts. Read this first." },
+        { "label": "Creation", "href": "/theology/passage?ref=Genesis%201", "note": "God makes a good world and sets his image-bearers in it." },
+        { "label": "The fall", "href": "/theology/passage?ref=Genesis%203", "note": "Rebellion, and the first promise of rescue." },
+        { "label": "Abraham and the promise", "href": "/theology/passage?ref=Genesis%2012", "note": "One family chosen to bless all families of the earth." },
+        { "label": "The exodus", "href": "/theology/passage?ref=Exodus%2014", "note": "Rescue out of slavery through the sea." },
+        { "label": "David and the throne", "href": "/theology/passage?ref=2%20Samuel%207", "note": "The promise of a king whose throne lasts forever." },
+        { "label": "The new covenant", "href": "/theology/passage?ref=Jeremiah%2031", "note": "A law written on the heart, promised in exile." },
+        { "label": "Christ arrives", "href": "/theology/passage?ref=Luke%202", "note": "The king is born in Bethlehem." },
+        { "label": "The cross", "href": "/theology/passage?ref=Isaiah%2053", "note": "The servant bears the sins of many." },
+        { "label": "The church and the Spirit", "href": "/theology/passage?ref=Acts%202", "note": "The good news goes to the nations at Pentecost." },
+        { "label": "The new creation", "href": "/theology/passage?ref=Revelation%2021", "note": "God dwells with his people, and every tear is wiped away." }
+      ]
+    },
+    {
+      "id": "doctrines-that-divide",
+      "title": "The doctrines that divide, explained",
+      "audience": "Anyone confused by Christian disagreement",
+      "blurb": "Why do good Christians land in different places, and how much does it matter? Walk the contested doctrines with the triage framework in hand.",
+      "steps": [
+        { "label": "First learn the triage", "href": "/theology/how-to-use", "note": "First order, second order, third order. This is the key to all of it." },
+        { "label": "How are we saved?", "href": "/theology/doctrine/soteriology", "note": "Grace, election, and the human will. The deepest family disagreement." },
+        { "label": "The Holy Spirit and his gifts", "href": "/theology/doctrine/holy-spirit", "note": "Whether the miraculous gifts continue today." },
+        { "label": "What is the church?", "href": "/theology/doctrine/church", "note": "Baptism, the Lord's Supper, and who belongs." },
+        { "label": "How does it end?", "href": "/theology/doctrine/last-things", "note": "The millennium and the return of Christ." },
+        { "label": "Creation and providence", "href": "/theology/doctrine/creation", "note": "The age of the earth, and how God made and holds the world." },
+        { "label": "Which view am I?", "href": "/theology/which-view", "note": "Answer a few questions and see where you currently lean." },
+        { "label": "Why are there so many churches?", "href": "/theology/traditions", "note": "How the great traditions relate, and what they share." }
+      ]
+    }
+  ]
+}

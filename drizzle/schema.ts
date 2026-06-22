@@ -60,6 +60,10 @@ export const posts = mysqlTable("posts", {
   audience_type: varchar("audience_type", { length: 64 }).default("general").notNull(),
   /** Topic: justice, leadership, spiritual-formation, church-health, personal-growth, pastoral-care */
   topic: mysqlEnum("topic", ["justice", "leadership", "spiritual-formation", "church-health", "personal-growth", "pastoral-care"]),
+  /** Sub-pathway within a pillar (two-level nav); free-form, values in client/src/lib/subPathways.ts */
+  subPathway: varchar("subPathway", { length: 128 }),
+  /** Whether this post is part of a study guide / multi-part series (Study Guides & Series menu) */
+  isSeries: boolean("isSeries").default(false).notNull(),
   /** Format: article, book-chapter, study-guide, sermon-series, devotional, podcast */
   format: mysqlEnum("format", ["article", "book-chapter", "study-guide", "sermon-series", "devotional", "podcast"]).default("article").notNull(),
   /** Audience: pastors, church-leaders, small-groups, individuals, couples */
@@ -413,3 +417,94 @@ export const leadMagnetSignups = mysqlTable("lead_magnet_signups", {
 
 export type LeadMagnetSignup = typeof leadMagnetSignups.$inferSelect;
 export type InsertLeadMagnetSignup = typeof leadMagnetSignups.$inferInsert;
+
+// ─── Team Collaboration (Slack for the leadership team) ──────────────
+/**
+ * The team collaboration MVP: a private workspace for a church leadership
+ * team. Channels for conversation, tasks for follow-through, announcements
+ * for the durable things, scoped to a team a user joins by invite code.
+ *
+ * SECURITY: every row is team-scoped. Authorization (team membership and
+ * role) is enforced in server/routers/team-collab.ts. The tables alone do
+ * not enforce isolation — the router must.
+ *
+ * NOTE: After adding these tables, run `drizzle-kit generate` to produce the
+ * matching SQL migration in drizzle/. If that cannot run in this environment,
+ * the site owner must run `npm run db:push` on deploy.
+ */
+export const teams = mysqlTable("teams", {
+  id: int("id").autoincrement().primaryKey(),
+  name: varchar("name", { length: 256 }).notNull(),
+  /** URL-friendly unique slug. */
+  slug: varchar("slug", { length: 256 }).notNull().unique(),
+  /** Secret code another user enters to join the team. */
+  inviteCode: varchar("inviteCode", { length: 32 }).notNull().unique(),
+  createdByUserId: int("createdByUserId").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export type Team = typeof teams.$inferSelect;
+export type InsertTeam = typeof teams.$inferInsert;
+
+export const teamMembers = mysqlTable("team_members", {
+  id: int("id").autoincrement().primaryKey(),
+  teamId: int("teamId").notNull(),
+  userId: int("userId").notNull(),
+  role: mysqlEnum("role", ["pastor", "elder", "deacon", "team_leader", "member"]).default("member").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export type TeamMember = typeof teamMembers.$inferSelect;
+export type InsertTeamMember = typeof teamMembers.$inferInsert;
+
+export const teamChannels = mysqlTable("team_channels", {
+  id: int("id").autoincrement().primaryKey(),
+  teamId: int("teamId").notNull(),
+  name: varchar("name", { length: 128 }).notNull(),
+  description: text("description"),
+  createdByUserId: int("createdByUserId").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export type TeamChannel = typeof teamChannels.$inferSelect;
+export type InsertTeamChannel = typeof teamChannels.$inferInsert;
+
+export const teamPosts = mysqlTable("team_posts", {
+  id: int("id").autoincrement().primaryKey(),
+  channelId: int("channelId").notNull(),
+  teamId: int("teamId").notNull(),
+  userId: int("userId").notNull(),
+  body: text("body").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export type TeamPost = typeof teamPosts.$inferSelect;
+export type InsertTeamPost = typeof teamPosts.$inferInsert;
+
+export const teamTasks = mysqlTable("team_tasks", {
+  id: int("id").autoincrement().primaryKey(),
+  teamId: int("teamId").notNull(),
+  title: varchar("title", { length: 512 }).notNull(),
+  detail: text("detail"),
+  assigneeUserId: int("assigneeUserId"),
+  status: mysqlEnum("status", ["open", "doing", "done"]).default("open").notNull(),
+  dueDate: varchar("dueDate", { length: 32 }),
+  createdByUserId: int("createdByUserId").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type TeamTask = typeof teamTasks.$inferSelect;
+export type InsertTeamTask = typeof teamTasks.$inferInsert;
+
+export const teamAnnouncements = mysqlTable("team_announcements", {
+  id: int("id").autoincrement().primaryKey(),
+  teamId: int("teamId").notNull(),
+  userId: int("userId").notNull(),
+  title: varchar("title", { length: 512 }).notNull(),
+  body: text("body").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export type TeamAnnouncement = typeof teamAnnouncements.$inferSelect;
+export type InsertTeamAnnouncement = typeof teamAnnouncements.$inferInsert;

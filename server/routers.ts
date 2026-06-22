@@ -15,6 +15,7 @@ import { sitemapRouter } from "./sitemap-router";
 import { relatedArticlesRouter } from "./related-articles-router";
 import { quizRouter } from "./quiz-router";
 import { leadMagnetsRouter } from "./routers/lead-magnets";
+import { teamCollabRouter } from "./routers/team-collab";
 import { recommendationRouter } from "./recommendation-router";
 import { analyticsRouter } from "./analytics-router";
 import { emailRouter } from "./email-router";
@@ -23,6 +24,8 @@ import {
   createFileRecord, listUserFiles, getFileById, deleteFileRecord, updateFileDescription,
   // Posts
   createPost, listPosts, listPostsForIndex, getPostById, getPostBySlug, getFeaturedPost, updatePost, deletePost,
+  bulkUpdatePostBodies, upsertEssayPosts, listNavIndex, migrateTaxonomy, backfillSubPathways,
+  findDuplicatePosts, retirePosts, createDraftPosts, publishBySlugs,
   // Resources
   createResource, listResources, getResourceById, updateResource, deleteResource,
   // Books
@@ -47,6 +50,7 @@ export const appRouter = router({
   relatedArticles: relatedArticlesRouter,
   quiz: quizRouter,
   leadMagnets: leadMagnetsRouter,
+  teamCollab: teamCollabRouter,
   recommendations: recommendationRouter,
   analytics: analyticsRouter,
 
@@ -124,6 +128,54 @@ export const appRouter = router({
     /** Public: get featured post */
     getFeatured: publicProcedure.query(async () => getFeaturedPost()),
 
+    /** Public: slim per-post feed for the primary nav (pillar/subPathway/series). */
+    navIndex: publicProcedure.query(async () => listNavIndex()),
+
+    /** Admin: idempotently add the two-level taxonomy columns. */
+    migrateTaxonomy: adminProcedure.mutation(async () => migrateTaxonomy()),
+
+    /** Admin: backfill subPathway + isSeries from the mapping (batched by client). */
+    backfillSubPathways: adminProcedure
+      .input(z.object({
+        items: z.array(z.object({
+          id: z.number().optional(),
+          slug: z.string().optional(),
+          pillar: z.string().nullable().optional(),
+          sub: z.string().nullable().optional(),
+          series: z.boolean().optional(),
+        })),
+      }))
+      .mutation(async ({ input }) => backfillSubPathways(input.items)),
+
+    /** Admin: read-only report of posts that share a normalized title. */
+    findDuplicates: adminProcedure.query(async () => findDuplicatePosts()),
+
+    /** Admin: unpublish (never delete) the given post ids. */
+    retirePosts: adminProcedure
+      .input(z.object({ ids: z.array(z.number()) }))
+      .mutation(async ({ input }) => retirePosts(input.ids)),
+
+    /** Admin: insert essays as unpublished drafts (idempotent by slug). */
+    createDrafts: adminProcedure
+      .input(z.object({
+        items: z.array(z.object({
+          slug: z.string(),
+          title: z.string(),
+          body: z.string(),
+          excerpt: z.string().nullable().optional(),
+          pillar: z.string().nullable().optional(),
+          subPathway: z.string().nullable().optional(),
+          series: z.boolean().optional(),
+          readTime: z.string().nullable().optional(),
+        })),
+      }))
+      .mutation(async ({ input }) => createDraftPosts(input.items)),
+
+    /** Admin: bulk publish/unpublish posts by slug. */
+    publishBySlugs: adminProcedure
+      .input(z.object({ slugs: z.array(z.string()), published: z.boolean() }))
+      .mutation(async ({ input }) => publishBySlugs(input.slugs, input.published)),
+
     /** Admin: list all posts (including drafts) */
     listAll: adminProcedure.query(async () => listPosts(false)),
 
@@ -182,6 +234,65 @@ export const appRouter = router({
       .mutation(async ({ input }) => {
         await deletePost(input.id);
         return { success: true };
+      }),
+
+    /**
+     * Admin: publish the bundled long-form article bodies into matching posts.
+     * Fills the empty/short published articles with their finished 1,500+ word
+     * bodies. Updates only body + read time, matched by slug. dryRun reports
+     * matches without writing. Uses the server's own DATABASE_URL — no secret
+     * to copy anywhere.
+     */
+    publishFullBodies: adminProcedure
+      .input(z.object({
+        dryRun: z.boolean().optional(),
+        items: z.array(z.object({
+          slug: z.string(),
+          body: z.string(),
+          readingTimeMinutes: z.number(),
+        })),
+      }))
+      .mutation(async ({ input }) => {
+        // The client downloads the content file once and sends small batches of
+        // items here, so each call only does a handful of quick DB writes — no
+        // per-call content fetch, no timeout. DB errors are returned (not thrown)
+        // so the client can show the real reason.
+        try {
+          const r = await bulkUpdatePostBodies(input.items, input.dryRun ?? false);
+          return { ...r, error: null as string | null };
+        } catch (e: any) {
+          return { matched: 0, updated: 0, missing: [] as string[], error: String(e?.message || e) };
+        }
+      }),
+
+    /**
+     * Admin: publish the essay libraries (client/src/data/articles/*.json) into
+     * posts. Creates posts that don't exist yet and refreshes ones that do —
+     * the browser replacement for running `npm run db:seed` from a terminal.
+     * Same batched client flow as publishFullBodies.
+     */
+    publishEssayLibrary: adminProcedure
+      .input(z.object({
+        dryRun: z.boolean().optional(),
+        items: z.array(z.object({
+          slug: z.string(),
+          title: z.string(),
+          body: z.string(),
+          excerpt: z.string().nullable(),
+          pillar: z.string().nullable(),
+          subPathway: z.string().nullable(),
+          readTime: z.string().nullable(),
+          readingTimeMinutes: z.number(),
+          coverImage: z.string().nullable(),
+        })),
+      }))
+      .mutation(async ({ input }) => {
+        try {
+          const r = await upsertEssayPosts(input.items, input.dryRun ?? false);
+          return { ...r, error: null as string | null };
+        } catch (e: any) {
+          return { inserted: 0, updated: 0, error: String(e?.message || e) };
+        }
       }),
   }),
 
@@ -357,7 +468,7 @@ export const appRouter = router({
           return { success: true, imported };
         } catch (error) {
           console.error("[Sync] Error syncing feeds:", error);
-          throw new Error("Failed to sync feeds");
+          throw new Error("Failed to sync feeds", { cause: error });
         }
       }),
   }),

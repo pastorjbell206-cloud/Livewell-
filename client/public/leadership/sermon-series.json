@@ -1,0 +1,211 @@
+{
+  "intro": "These are starting points, not scripts. Each series gives you the arc, the divisions, and a working aim for every sermon, but the breakdown here is scaffolding you will take down once the text has done its own work in you. Read the whole book before you preach the first week of it. Let the passage divisions teach you where the seams actually are.\n\nThe text sets the agenda. Not the felt needs you arrived with, not the outline that looks clean on a slide, not the application you already know you want to land. Sit under the passage long enough for it to surprise you, and then preach what it says rather than what you planned. A big idea you did not have to fight for is usually one the text did not give you.",
+  "series": [
+    {
+      "id": "mark-suffering-servant-king",
+      "kind": "book",
+      "title": "Mark: The Suffering Servant King",
+      "subtitle": "The fastest Gospel asks the slowest question about who Jesus really is.",
+      "scriptureRange": "Mark 1 to 16",
+      "audience": "A whole church, including people who think they already know the story",
+      "bigIdea": "Mark drives toward a single confession and refuses to let you make it cheaply. The first half asks who this is, the second half answers that the King is the one who dies, and the cross is not the interruption of the kingdom but its arrival.",
+      "sermons": [
+        { "n": 1, "title": "The Beginning of the Gospel", "text": "Mark 1:1-20", "bigIdea": "The King arrives announced by a wilderness voice and calls ordinary men to drop their nets and follow.", "aim": "To make the hearer feel the urgency of a kingdom that interrupts the day you were having." },
+        { "n": 2, "title": "Authority Over Everything", "text": "Mark 1:21 to 2:12", "bigIdea": "Jesus commands demons, disease, and sin itself, claiming an authority that belongs to God alone.", "aim": "To move the hearer from admiring Jesus to reckoning with what He is claiming about Himself." },
+        { "n": 3, "title": "New Cloth, Old Garments", "text": "Mark 2:13 to 3:6", "bigIdea": "The kingdom does not patch the old religious system but replaces it, and the keepers of the old will plot to kill the one who brings it.", "aim": "To expose the religion in us that would rather guard a rule than receive a Savior." },
+        { "n": 4, "title": "Ears to Hear", "text": "Mark 4:1-34", "bigIdea": "The kingdom comes hidden as seed, and the heart that receives the word is the only soil that bears fruit.", "aim": "To press the hearer to ask what kind of ground their own life has become." },
+        { "n": 5, "title": "Power and Fear on the Water", "text": "Mark 4:35 to 5:43", "bigIdea": "The one who stills the storm, frees the demoniac, and raises the dead is met first with terror, because real power is more frightening than the chaos it ends.", "aim": "To let the hearer feel that meeting Jesus is not safe before it is good." },
+        { "n": 6, "title": "Bread in the Wilderness", "text": "Mark 6:30-52", "bigIdea": "Jesus feeds the crowd and walks on the sea, and still the disciples do not understand, because their hearts are hard.", "aim": "To name how near we can stand to the work of God and still miss who is doing it." },
+        { "n": 7, "title": "You Are the Christ", "text": "Mark 8:22-38", "bigIdea": "At the hinge of the Gospel Peter sees who Jesus is, and immediately misreads what that means, because the Christ has come to die.", "aim": "To force the hearer to hold the confession and the cross together rather than choosing one." },
+        { "n": 8, "title": "The Last Will Be First", "text": "Mark 9:30 to 10:45", "bigIdea": "On the road to Jerusalem the disciples argue about greatness while the King defines it as the Son of Man giving His life as a ransom for many.", "aim": "To overturn the hearer's instinct that following Jesus is a path upward." },
+        { "n": 9, "title": "The King Enters and Indicts", "text": "Mark 11:1 to 12:12", "bigIdea": "Jesus enters Jerusalem, judges the temple, and tells the parable that names His own death at the hands of those who should have welcomed Him.", "aim": "To let the hearer stand among the crowd and feel which side of the gate they are on." },
+        { "n": 10, "title": "Crucified, and the Veil Torn", "text": "Mark 15:1-39", "bigIdea": "The King reigns from a cross, and the first human being to confess Him truly is the Roman soldier who watched Him die.", "aim": "To bring the hearer to the centurion's confession and ask whether it is theirs." },
+        { "n": 11, "title": "He Is Not Here", "text": "Mark 16:1-8", "bigIdea": "The tomb is empty, the women are afraid, and the Gospel ends mid-breath because the rest of the story is the one telling it.", "aim": "To leave the hearer standing where Mark leaves them, having to decide what they will do with an empty grave." }
+      ]
+    },
+    {
+      "id": "philippians-joy-not-circumstance",
+      "kind": "book",
+      "title": "Philippians: Joy That Does Not Depend on Circumstances",
+      "subtitle": "A man in chains writes the happiest letter in the New Testament.",
+      "scriptureRange": "Philippians 1 to 4",
+      "audience": "A tired congregation that has confused joy with relief",
+      "bigIdea": "Paul writes from prison to a church he loves and refuses to ground his joy in anything that prison could take. The thread is a joy rooted in Christ Himself, which is why it survives chains, conflict, and need alike.",
+      "sermons": [
+        { "n": 1, "title": "To Live Is Christ", "text": "Philippians 1:1-26", "bigIdea": "Paul's chains advance the gospel, and his life and death are both gain because Christ is his whole portion.", "aim": "To loosen the hearer's grip on circumstances as the source of their joy." },
+        { "n": 2, "title": "The Mind of Christ", "text": "Philippians 1:27 to 2:11", "bigIdea": "The unity of the church is built on the self-emptying descent of Christ, who went down before He was lifted up.", "aim": "To make humility concrete by setting it under the hymn of the cross." },
+        { "n": 3, "title": "Working Out What God Works In", "text": "Philippians 2:12-30", "bigIdea": "God works in His people to will and to do, and they shine as lights by spending themselves the way Christ and His servants do.", "aim": "To free the hearer from striving by anchoring their effort in God's prior work." },
+        { "n": 4, "title": "Counting It All Loss", "text": "Philippians 3:1-14", "bigIdea": "Paul throws his entire religious resume into the trash to gain Christ and the power of His resurrection.", "aim": "To press the hearer to name what they are still counting as gain instead of Christ." },
+        { "n": 5, "title": "Citizens of Heaven", "text": "Philippians 3:15 to 4:1", "bigIdea": "Our citizenship is in heaven, and that future fixes how we stand firm now against the pull of the belly and the world.", "aim": "To lift the hearer's eyes to where they actually belong." },
+        { "n": 6, "title": "The Peace That Guards", "text": "Philippians 4:2-9", "bigIdea": "Prayer instead of anxiety opens the door to a peace that stands guard over the heart like a soldier at a gate.", "aim": "To give the anxious hearer a place to put the weight they are carrying." },
+        { "n": 7, "title": "The Secret of Contentment", "text": "Philippians 4:10-23", "bigIdea": "Paul has learned contentment in plenty and in want because his strength is not his circumstances but the Christ who supplies him.", "aim": "To teach the hearer that contentment is learned, not stumbled into." }
+      ]
+    },
+    {
+      "id": "james-faith-that-works",
+      "kind": "book",
+      "title": "James: A Faith That Works",
+      "subtitle": "The brother of Jesus refuses to let you believe without becoming.",
+      "scriptureRange": "James 1 to 5",
+      "audience": "A church comfortable with right belief and slow obedience",
+      "bigIdea": "James writes to scattered believers and tests their faith at every seam where life applies pressure. The single thread is that a faith which never reaches the hands, the tongue, or the wallet was never living faith at all.",
+      "sermons": [
+        { "n": 1, "title": "Count It All Joy", "text": "James 1:1-18", "bigIdea": "Trials are not the enemy of faith but its proving ground, and the God who gives wisdom never tempts us toward evil.", "aim": "To reframe the hearer's hard season as the place faith is made real." },
+        { "n": 2, "title": "Doers, Not Hearers", "text": "James 1:19-27", "bigIdea": "The word that only enters the ear deceives, while the word that reaches the hands becomes religion God accepts.", "aim": "To convict the hearer who mistakes listening for obeying." },
+        { "n": 3, "title": "No Partiality in the Pew", "text": "James 2:1-13", "bigIdea": "Showing favor to the rich and shame to the poor denies the gospel that chose the poor to be rich in faith.", "aim": "To expose the hidden ways a church honors the wrong things." },
+        { "n": 4, "title": "Faith Without Works Is Dead", "text": "James 2:14-26", "bigIdea": "A faith that feeds no one and changes nothing is a corpse, because living faith always shows itself in works.", "aim": "To settle whether the hearer's faith has a pulse." },
+        { "n": 5, "title": "The Tongue and the Two Wisdoms", "text": "James 3:1-18", "bigIdea": "The small tongue sets the whole life on fire, and the wisdom from above is known by its peace, not its cleverness.", "aim": "To make the hearer hear their own speech as the test of their heart." },
+        { "n": 6, "title": "Friendship With the World", "text": "James 4:1-17", "bigIdea": "Quarrels come from desires at war within, and the cure is to humble ourselves before the God who gives grace to the lowly.", "aim": "To name the cravings underneath the conflicts in the hearer's life." },
+        { "n": 7, "title": "Patience, Prayer, and the Wandering", "text": "James 5:1-20", "bigIdea": "The rich who hoard are warned, the suffering are told to wait for the Lord, and the church is called to pray and to bring back the one who strays.", "aim": "To send the hearer out as someone who waits in faith and goes after the lost." }
+      ]
+    },
+    {
+      "id": "jonah-relentless-mercy",
+      "kind": "book",
+      "title": "Jonah: The Reluctant Prophet and the Relentless Mercy of God",
+      "subtitle": "A man runs from God because he is afraid God will be kind to the wrong people.",
+      "scriptureRange": "Jonah 1 to 4",
+      "audience": "Religious people who quietly want grace for themselves and judgment for others",
+      "bigIdea": "Jonah is not mainly about a fish. It is about a prophet whose theology is correct and whose heart is wrong, and a God whose mercy chases both the pagan city and the angry servant who resents it.",
+      "sermons": [
+        { "n": 1, "title": "The Prophet Who Ran", "text": "Jonah 1:1-16", "bigIdea": "Jonah flees the call of God and the pagan sailors fear the Lord more readily than the prophet who serves Him.", "aim": "To make the hearer ask where they are sailing to avoid what God has said." },
+        { "n": 2, "title": "Out of the Belly of Sheol", "text": "Jonah 1:17 to 2:10", "bigIdea": "In the place of death Jonah prays, and salvation belongs to the Lord who hears even the runaway from the grave.", "aim": "To assure the hearer that the bottom is not beyond the reach of grace." },
+        { "n": 3, "title": "A City Spared", "text": "Jonah 3:1-10", "bigIdea": "The reluctant prophet preaches a bare warning and a whole city repents, proving the word does the work, not the messenger's heart.", "aim": "To enlarge the hearer's expectation of what God will do with a faithful word." },
+        { "n": 4, "title": "The Anger of a Saved Man", "text": "Jonah 4:1-11", "bigIdea": "Jonah is furious that God is gracious, and the book ends with a question that exposes a heart that loves a plant more than a city.", "aim": "To leave the hearer inside Jonah's unanswered question about whom they want God to love." }
+      ]
+    },
+    {
+      "id": "ruth-providence-redemption",
+      "kind": "book",
+      "title": "Ruth: Providence, Redemption, and a Kinsman-Redeemer",
+      "subtitle": "In the days when everyone did what was right in their own eyes, God was quietly writing a redemption.",
+      "scriptureRange": "Ruth 1 to 4",
+      "audience": "People walking through loss who cannot see God working",
+      "bigIdea": "Ruth tells of an empty widow brought to fullness through loyalty, providence, and a redeemer who pays what she cannot. The thread is the hidden hand of God turning an ordinary harvest into the line of the King.",
+      "sermons": [
+        { "n": 1, "title": "Empty Handed", "text": "Ruth 1:1-22", "bigIdea": "Naomi returns from Moab bitter and bereaved, and Ruth clings to her with a loyalty that binds herself to Naomi's God.", "aim": "To sit with the hearer in loss before rushing them toward resolution." },
+        { "n": 2, "title": "Under His Wings", "text": "Ruth 2:1-23", "bigIdea": "Ruth happens upon the field of Boaz, and the narrator's quiet word reveals there is no chance in a world God governs.", "aim": "To help the hearer read the ordinary providences of their own days." },
+        { "n": 3, "title": "Spread Your Wings Over Me", "text": "Ruth 3:1-18", "bigIdea": "Ruth asks Boaz to be her redeemer, and he commits himself to do everything required to bring her in.", "aim": "To show the hearer the boldness of faith that throws itself on a redeemer's kindness." },
+        { "n": 4, "title": "A Redeemer and a King", "text": "Ruth 4:1-22", "bigIdea": "Boaz pays the price, redeems the family, and the empty widow holds a child whose line runs to David and beyond.", "aim": "To lift the hearer from one family's rescue to the Redeemer the whole story points toward." }
+      ]
+    },
+    {
+      "id": "first-peter-exiles-with-hope",
+      "kind": "book",
+      "title": "1 Peter: Living as Exiles With Hope",
+      "subtitle": "How to belong to God in a world that no longer feels like home.",
+      "scriptureRange": "1 Peter 1 to 5",
+      "audience": "Believers who feel like strangers in their own culture",
+      "bigIdea": "Peter writes to scattered Christians who are losing ground in their society and tells them they are not losing at all. The thread is a living hope that reframes suffering as the normal shape of following a crucified and risen Lord.",
+      "sermons": [
+        { "n": 1, "title": "Born Again to a Living Hope", "text": "1 Peter 1:1-12", "bigIdea": "An imperishable inheritance is kept in heaven for exiles whose trials refine a faith more precious than gold.", "aim": "To anchor the hearer's hope in something no loss on earth can touch." },
+        { "n": 2, "title": "Be Holy, for He Is Holy", "text": "1 Peter 1:13 to 2:3", "bigIdea": "Those ransomed by the blood of Christ live set apart, loving one another from a heart born again by the living word.", "aim": "To connect the hearer's daily holiness to the price that was paid for them." },
+        { "n": 3, "title": "Living Stones, Chosen People", "text": "1 Peter 2:4-12", "bigIdea": "Rejected by the world, believers are built into a temple and a people whose conduct preaches to the watching nations.", "aim": "To give the hearer an identity larger than the rejection they feel." },
+        { "n": 4, "title": "Submission and the Suffering Servant", "text": "1 Peter 2:13 to 3:7", "bigIdea": "In every station, believers follow the steps of the Christ who suffered without retaliation and entrusted Himself to God.", "aim": "To shape the hearer's relationships by the pattern of the cross." },
+        { "n": 5, "title": "Suffering for Doing Good", "text": "1 Peter 3:8-22", "bigIdea": "Blessing those who revile us and being ready to answer for our hope, we follow the Christ who suffered the righteous for the unrighteous.", "aim": "To prepare the hearer to meet hostility with hope instead of fear." },
+        { "n": 6, "title": "Done With Sin, Alive to God", "text": "1 Peter 4:1-11", "bigIdea": "The time for the old life is over, and the end of all things calls believers to sober prayer and earnest love.", "aim": "To break the hearer's nostalgia for the life Christ already pulled them out of." },
+        { "n": 7, "title": "Rejoice in the Fiery Trial", "text": "1 Peter 4:12-19", "bigIdea": "Suffering as a Christian is not strange but a sharing in Christ's sufferings, entrusted to a faithful Creator.", "aim": "To remove the hearer's surprise at suffering and replace it with trust." },
+        { "n": 8, "title": "Shepherds, Humility, and the God of All Grace", "text": "1 Peter 5:1-14", "bigIdea": "Elders shepherd willingly, the young submit humbly, and the whole church casts its anxiety on the God who will restore them.", "aim": "To send the hearer out humbled, watchful, and held by grace." }
+      ]
+    },
+    {
+      "id": "sermon-on-the-mount-upside-down",
+      "kind": "book",
+      "title": "The Sermon on the Mount: The Kingdom and the Upside-Down Life",
+      "subtitle": "The King describes the country, and almost everything He says is the reverse of what we assumed.",
+      "scriptureRange": "Matthew 5 to 7",
+      "audience": "Disciples ready to be told what the kingdom actually costs and gives",
+      "bigIdea": "Jesus sits down and describes life under His reign, and the description overturns our scorecards from the first beatitude to the last warning. The thread is a righteousness that exceeds the surface and reaches the heart, lived before a Father who sees in secret.",
+      "sermons": [
+        { "n": 1, "title": "Blessed Are the Poor in Spirit", "text": "Matthew 5:1-12", "bigIdea": "The kingdom belongs to the empty, the mourning, and the meek, which reverses every list the world keeps.", "aim": "To dismantle the hearer's idea of who is doing well before God." },
+        { "n": 2, "title": "Salt, Light, and the Law Fulfilled", "text": "Matthew 5:13-20", "bigIdea": "Disciples are a visible city and a preserving salt, and Christ has come not to abolish the law but to fill it full.", "aim": "To raise the hearer's sense of what righteousness was always meant to be." },
+        { "n": 3, "title": "Anger, Lust, and the Heart of the Law", "text": "Matthew 5:21-37", "bigIdea": "The King traces murder back to contempt and adultery back to the look, because the law was always aimed at the heart.", "aim": "To stop the hearer from grading themselves by the acts they have avoided." },
+        { "n": 4, "title": "Love Your Enemies", "text": "Matthew 5:38-48", "bigIdea": "Children of the Father love those who hate them, reflecting a God who sends rain on the just and the unjust alike.", "aim": "To press the hearer toward a love that has no natural explanation." },
+        { "n": 5, "title": "Secret Righteousness", "text": "Matthew 6:1-18", "bigIdea": "Giving, prayer, and fasting are for the Father who sees in secret, not for the audience that pays in applause.", "aim": "To purge the hearer's obedience of its hunger to be seen." },
+        { "n": 6, "title": "Treasure and Anxiety", "text": "Matthew 6:19-34", "bigIdea": "Where the treasure is the heart follows, and the Father who feeds the birds frees His children from anxious striving.", "aim": "To relocate the hearer's security from their accounts to their Father." },
+        { "n": 7, "title": "Judging, Asking, and the Golden Rule", "text": "Matthew 7:1-12", "bigIdea": "Disciples deal first with their own log, ask a good Father for good gifts, and treat others as they long to be treated.", "aim": "To turn the hearer's critical eye inward and their generosity outward." },
+        { "n": 8, "title": "Two Ways, Two Trees, Two Builders", "text": "Matthew 7:13-29", "bigIdea": "The sermon ends at a fork, and only the one who hears these words and does them is building on rock.", "aim": "To bring the hearer to the moment of decision the whole sermon was driving toward." }
+      ]
+    },
+    {
+      "id": "marriage-and-the-home",
+      "kind": "topical",
+      "title": "Marriage and the Home",
+      "subtitle": "What God joins together He also instructs, and the instruction is heavier and kinder than the culture's.",
+      "scriptureRange": "Selected texts on marriage and family",
+      "audience": "Married couples, single people, and parents under one roof",
+      "bigIdea": "Marriage was God's design before sin and is His picture of Christ and the church after it. This series moves from the design to the covenant to the home it builds, refusing both the romance that promises too much and the cynicism that expects nothing.",
+      "sermons": [
+        { "n": 1, "title": "One Flesh by Design", "text": "Genesis 2:18-25", "bigIdea": "Marriage is God's idea, made to answer the first thing He called not good, and joined into one flesh by His hand.", "aim": "To return the hearer's marriage to the ground God built it on." },
+        { "n": 2, "title": "A Profound Mystery", "text": "Ephesians 5:22-33", "bigIdea": "Husbands and wives display the love between Christ and His church, which sets the bar at sacrifice, not mere affection.", "aim": "To raise the hearer's marriage from a deal between two people to a picture of the gospel." },
+        { "n": 3, "title": "Love That Stays", "text": "1 Corinthians 13:1-13", "bigIdea": "The love that holds a marriage is patient and kind and does not keep a record of wrongs, because it is the love God first showed us.", "aim": "To replace the hearer's feeling of love with the practice of it." },
+        { "n": 4, "title": "Raising Children in the Lord", "text": "Deuteronomy 6:4-9", "bigIdea": "Faith is handed down not in a program but in the ordinary talk of a home where God is loved out loud.", "aim": "To make the hearer's home the first place their children hear the gospel." },
+        { "n": 5, "title": "Fathers, Children, and the Long Patience", "text": "Ephesians 6:1-4", "bigIdea": "Children honor, and fathers raise without provoking, because the home is meant to school the heart in grace, not anger.", "aim": "To soften the hearer's parenting into the patience of God toward them." }
+      ]
+    },
+    {
+      "id": "money-generosity-contentment",
+      "kind": "topical",
+      "title": "Money, Generosity, and Contentment",
+      "subtitle": "Jesus talked about money more than almost anything because money tells the truth about the heart.",
+      "scriptureRange": "Selected texts on money and possessions",
+      "audience": "A congregation that owns more than it admits worrying about",
+      "bigIdea": "Money is never neutral in Scripture. It is either a rival lord or a servant of love, and this series traces the heart from the idol of more to the freedom of contentment and the joy of open hands.",
+      "sermons": [
+        { "n": 1, "title": "You Cannot Serve Both", "text": "Matthew 6:19-24", "bigIdea": "Money makes a claim to be god, and Jesus says plainly that no heart can bow to it and to Him at once.", "aim": "To make the hearer name money as a master rather than a tool." },
+        { "n": 2, "title": "The Rich Fool", "text": "Luke 12:13-21", "bigIdea": "A man rich toward his barns and poor toward God dies the night his plan is complete, and his wealth goes to someone else.", "aim": "To confront the hearer with the night their accumulation will end." },
+        { "n": 3, "title": "The Cheerful Giver", "text": "2 Corinthians 9:6-15", "bigIdea": "God loves a cheerful giver because giving flows from grace received, and He supplies the seed He calls us to sow.", "aim": "To turn the hearer's giving from duty into the overflow of grace." },
+        { "n": 4, "title": "Godliness With Contentment", "text": "1 Timothy 6:6-19", "bigIdea": "The love of money pierces the soul, while godliness with contentment is the great gain that money cannot buy.", "aim": "To free the hearer from the lie that more would finally be enough." },
+        { "n": 5, "title": "He Who Was Rich Became Poor", "text": "2 Corinthians 8:1-9", "bigIdea": "Christ became poor to make us rich, and the churches that gave out of deep poverty understood the gift they had received.", "aim": "To root the hearer's generosity in the self-giving of Christ Himself." }
+      ]
+    },
+    {
+      "id": "anxiety-fear-peace-of-god",
+      "kind": "topical",
+      "title": "Anxiety, Fear, and the Peace of God",
+      "subtitle": "The most repeated command in Scripture is do not be afraid, and it is never spoken to people who have nothing to fear.",
+      "scriptureRange": "Selected texts on fear and peace",
+      "audience": "Anxious believers who feel guilty for being afraid",
+      "bigIdea": "Scripture never shames the fearful. It speaks to them, names the fear, and points to a God who is present, sovereign, and near. This series moves from the command not to fear, through the practice of prayer, to the peace that guards a heart it does not explain.",
+      "sermons": [
+        { "n": 1, "title": "Fear Not, for I Am With You", "text": "Isaiah 41:8-13", "bigIdea": "God commands His people not to fear by promising His presence, His help, and His upholding hand.", "aim": "To answer the hearer's fear with the fact of God's nearness." },
+        { "n": 2, "title": "Do Not Be Anxious About Your Life", "text": "Matthew 6:25-34", "bigIdea": "The Father who clothes the grass knows what His children need, and anxiety about tomorrow forgets who holds it.", "aim": "To move the hearer's worry from the future to the Father who owns it." },
+        { "n": 3, "title": "Cast Your Cares", "text": "1 Peter 5:6-11", "bigIdea": "We humble ourselves and throw our anxiety onto God precisely because He cares for us, not because the danger is small.", "aim": "To give the hearer somewhere to put the weight instead of carrying it." },
+        { "n": 4, "title": "The Peace That Guards the Heart", "text": "Philippians 4:4-9", "bigIdea": "Prayer with thanksgiving opens the door to a peace beyond understanding that stands guard over heart and mind.", "aim": "To hand the hearer a practice for the next anxious night." },
+        { "n": 5, "title": "Through the Valley", "text": "Psalm 23:1-6", "bigIdea": "Even through the darkest valley the shepherd is present, and His rod and staff turn terror into comfort.", "aim": "To walk the hearer through their fear with a shepherd they can name." }
+      ]
+    },
+    {
+      "id": "attributes-of-god-who-god-is",
+      "kind": "topical",
+      "title": "The Attributes of God: Who God Is",
+      "subtitle": "What comes into our minds when we think about God is the most important thing about us.",
+      "scriptureRange": "Selected texts on the character of God",
+      "audience": "A church whose God has quietly grown too small",
+      "bigIdea": "We do not get to invent God, and the cure for a shrunken faith is a recovered vision of who He actually is. This series sets the holiness, sovereignty, love, faithfulness, and grace of God side by side until the hearer is brought low and lifted up at once.",
+      "sermons": [
+        { "n": 1, "title": "Holy, Holy, Holy", "text": "Isaiah 6:1-8", "bigIdea": "The holiness of God undoes the prophet before it sends him, because no one sees that throne and remains the same.", "aim": "To restore the hearer's reverence before a God who is not safe." },
+        { "n": 2, "title": "The God Who Reigns", "text": "Psalm 115:1-18", "bigIdea": "Our God is in the heavens and does all that He pleases, while the idols of human hands can do nothing at all.", "aim": "To rest the hearer on a God who actually rules the world they fear." },
+        { "n": 3, "title": "God Is Love", "text": "1 John 4:7-19", "bigIdea": "Love is not merely something God does but who He is, proven by sending His Son as the offering for our sins.", "aim": "To anchor the hearer's certainty of love in God's character, not their performance." },
+        { "n": 4, "title": "Great Is Your Faithfulness", "text": "Lamentations 3:19-33", "bigIdea": "In the ruins of everything lost, the mercies of God are new every morning because His faithfulness does not depend on ours.", "aim": "To give the hearer a faithfulness to lean on when their own is gone." },
+        { "n": 5, "title": "Rich in Mercy", "text": "Ephesians 2:1-10", "bigIdea": "God, being rich in mercy, made us alive with Christ while we were dead, so that grace alone gets the credit.", "aim": "To leave the hearer astonished that they were saved while they were unable to save themselves." }
+      ]
+    },
+    {
+      "id": "identity-in-christ",
+      "kind": "topical",
+      "title": "Identity in Christ: Who You Are in Him",
+      "subtitle": "The gospel does not just change what you do, it changes the name you answer to.",
+      "scriptureRange": "Selected texts on union with Christ",
+      "audience": "Believers who still measure themselves by the old verdict",
+      "bigIdea": "Before the gospel tells you what to do, it tells you who you are, and getting that order wrong wrecks both. This series walks through the new identity given in Christ, from child to new creation to chosen people, so that obedience flows from belonging rather than toward it.",
+      "sermons": [
+        { "n": 1, "title": "Children of God", "text": "John 1:9-13", "bigIdea": "To all who received Him He gave the right to become children of God, born not of human will but of God.", "aim": "To settle the hearer's standing as a child before they try to act like one." },
+        { "n": 2, "title": "No Condemnation", "text": "Romans 8:1-17", "bigIdea": "For those in Christ Jesus there is no condemnation, and the Spirit testifies that we are heirs who cry Father.", "aim": "To silence the hearer's inner verdict with the verdict of God." },
+        { "n": 3, "title": "A New Creation", "text": "2 Corinthians 5:14-21", "bigIdea": "Anyone in Christ is a new creation, reconciled to God and made an ambassador of the reconciliation they received.", "aim": "To free the hearer from a past God has already declared finished." },
+        { "n": 4, "title": "Hidden With Christ", "text": "Colossians 3:1-17", "bigIdea": "Our life is hidden with Christ in God, and we put on the new self because of who we already are, not to become it.", "aim": "To ground the hearer's daily change in an identity already secured." },
+        { "n": 5, "title": "A Chosen People", "text": "1 Peter 2:9-10", "bigIdea": "Once not a people, we are now a chosen race and a royal priesthood, called out of darkness to declare His praises.", "aim": "To give the lonely hearer a people and a purpose they did not earn." }
+      ]
+    }
+  ]
+}

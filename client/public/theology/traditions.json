@@ -1,0 +1,98 @@
+{
+  "intro": "You walked into faith and then you looked up and saw a problem you did not expect. There is a Catholic parish three blocks one way and a Baptist church two blocks the other and a sign down the road that says Presbyterian and another that says Pentecostal, and somewhere a friend told you they go to something called Orthodox, and you are standing in the middle of all of it wondering whether you joined one thing or a thousand things. The question is honest and it deserves an honest answer. Why are there so many churches.\n\nHere is the first thing to know. The number of doors does not mean there are a thousand different faiths behind them. Most of these churches confess the same God, the same Christ, the same empty tomb, and they recite the same ancient creeds that were written long before any of the divisions you see today. What separates them is real, and we will not pretend it is small, but it sits on top of a shared foundation that is far larger than the parts that divide. A family can argue about how the house should be run and still be one family under one roof.\n\nThis guide gives you a way to see it that the old fights rarely offered. We sort the questions by weight. Some questions are first-order, meaning the gospel itself stands or falls on them, and on these the great traditions agree. Some are second-order, meaning they shape how a church lives and worships and they are worth disagreeing over, but a person can be wrong about them and still be saved. Some are third-order, meaning faithful Christians have always differed and will until the end. The goal here is to describe each tradition the way its own people would describe it, with the gift named first and the honest caution named without a sneer, so that you can walk past those doors and understand what you are seeing."
+,
+  "sharedCore": "Before the differences, hold the shared ground, because it is the larger thing by far. Nearly every tradition in this guide confesses one God in three persons, Father, Son, and Holy Spirit. They confess that the Son became flesh in Jesus of Nazareth, fully God and fully man, that he was crucified under Pontius Pilate, that he rose bodily from the dead on the third day, and that he will come again. They confess that no one earns their way to God, that salvation comes by grace through the work of Christ and not as a wage for good behavior. These are not the private property of any single church. They are the common inheritance, written down in the Apostles Creed and the Nicene Creed in the first centuries of the faith, and a Catholic grandmother, an Orthodox monk, a Baptist teenager, and a Pentecostal preacher can each say those creeds without crossing a single finger.\n\nWhen you read the profiles that follow, keep this in front of you. The traditions differ on how a person is baptized, on what happens at the Lord's Table, on who holds authority and how, and on the shape of worship. Those differences are not nothing, and the people who hold them hold them for serious reasons. But they are second-order and third-order matters resting on a first-order agreement so deep that the people arguing often forget how much they share. You did not join one church among a thousand religions. You joined one faith that meets behind many doors."
+,
+  "traditions": [
+    {
+      "name": "Roman Catholic",
+      "family": "Catholic",
+      "born": "It understands itself as the church Christ founded on the apostles, with its visible center in Rome, carried in unbroken succession from Peter to the present.",
+      "treasures": "It holds a long memory, two thousand years of saints, councils, art, and thought that it refuses to let the present forget. It treats the church as a real body with real authority to teach, and it has fed the poor and built the hospital and the university across centuries when no one else would. Its worship is sacramental to the core, the belief that grace reaches us through ordinary water, bread, oil, and wine.",
+      "distinctives": "It is governed visibly, with the Pope as the bishop of Rome and a worldwide order of bishops in communion with him. It recognizes seven sacraments and teaches that the bread and wine of the Mass truly become the body and blood of Christ. It honors Mary and the saints as living members of the one church who pray alongside the believer on earth.",
+      "howItReadsTheDebates": "On authority it places Scripture and the living teaching of the church together rather than the Bible standing alone. On salvation it speaks of grace that not only forgives but genuinely remakes a person over a lifetime, with faith and the works that flow from it held together.",
+      "aFairWord": "Its gift is depth and continuity, a faith that does not start over every Sunday and cannot be reinvented at will. The honest caution is that so much structure can sometimes let the institution stand between the believer and the Christ it means to carry."
+    },
+    {
+      "name": "Eastern Orthodox",
+      "family": "Orthodox",
+      "born": "It is the church of the Christian East, the communions of Constantinople, Greece, Russia, and beyond, which by the year 1054 had gradually parted from Rome over authority and worship.",
+      "treasures": "It guards the worship and teaching of the early church with a steadiness that can take your breath away, treating the liturgy as heaven touching earth. It speaks of salvation as the slow healing of the whole person into the life of God, a sharing in the divine life it calls theosis. Its icons, incense, and chant are not decoration but a way of praying with the whole body.",
+      "distinctives": "It is governed not by one head but by a fellowship of self-ruling churches whose bishops hold equal honor, bound by shared faith rather than a single throne. It celebrates the same sacraments and confesses the real presence of Christ in the Eucharist, while resisting the Western habit of defining every mystery precisely. Its worship is ancient, sung, and largely unchanged for over a thousand years.",
+      "howItReadsTheDebates": "On authority it trusts the first seven councils and the unbroken consensus of the fathers rather than any single ruling office. On salvation it leans less on the courtroom language of guilt and verdict and more on the language of healing, union, and life.",
+      "aFairWord": "Its gift is reverence and a refusal to rush the holy, a worship that has outlasted empires. The honest caution is that its rootedness in particular nations and languages can make it feel closed to the outsider standing at the door."
+    },
+    {
+      "name": "Lutheran",
+      "family": "Protestant",
+      "born": "It took shape in Germany in 1517 when Martin Luther, a monk and professor, protested abuses he saw in the church and recovered a single phrase he could not let go of, that we are made right with God by grace through faith.",
+      "treasures": "It puts the comfort of the gospel at the center, the news that God justifies the ungodly and that the troubled conscience can rest. It teaches Christians to hear the law that exposes us and the gospel that frees us, and to tell the two apart. It loves congregational singing, having handed the church some of its richest hymns.",
+      "distinctives": "It is usually governed by bishops or synods, varying by country and body. It keeps two sacraments, baptism and the Lord's Supper, and confesses that Christ is truly present in, with, and under the bread and wine. It baptizes infants, trusting that grace comes before our understanding of it.",
+      "howItReadsTheDebates": "On salvation it is the tradition that pressed grace alone and faith alone hardest, against any idea that we contribute the deciding work. On the Supper it holds a true presence of Christ while declining to explain the mechanism the way Rome does.",
+      "aFairWord": "Its gift is the clarity of grace, a sure word for the person who knows they cannot save themselves. The honest caution is that a faith built so firmly on comfort can grow comfortable, and let the call to costly obedience go quiet."
+    },
+    {
+      "name": "Reformed and Presbyterian",
+      "family": "Protestant",
+      "born": "It grew from the reforming work of John Calvin in Geneva and others across Switzerland, Scotland, and the Netherlands in the middle 1500s.",
+      "treasures": "It holds a towering vision of God, sovereign over all things, which has steadied believers through every kind of loss. It thinks carefully and writes its convictions down in confessions and catechisms, prizing a faith you can examine and teach to your children. It sees all of life, work, art, and citizenship included, as lived before the face of God.",
+      "distinctives": "Presbyterian churches are governed not by bishops nor by each congregation alone but by elders meeting together in councils. It keeps baptism and the Lord's Supper, baptizes the children of believers as members of God's covenant, and understands Christ to be truly but spiritually present at the Table. Its worship has often been plain by conviction, ordered around the preached Word.",
+      "howItReadsTheDebates": "On authority it presses Scripture alone as the final rule above any church office. On salvation it stresses God's electing grace, that the initiative in saving us belongs to God from first to last.",
+      "aFairWord": "Its gift is a God big enough to trust in the dark, and a mind unafraid to think. The honest caution is that a tradition this confident in its system can mistake the precision of its theology for the warmth of the God it describes."
+    },
+    {
+      "name": "Anglican and Episcopal",
+      "family": "Protestant",
+      "born": "It emerged from the English Reformation of the 1500s, when the church in England separated from Rome and sought a middle road between Catholic form and Protestant conviction.",
+      "treasures": "It prays beautifully, having given the world the Book of Common Prayer, which teaches ordinary people to worship in words worn smooth by use. It holds together the ancient pattern of bishops, the table, and the creeds with the Reformation's recovery of grace and Scripture. It has made room, at its best, for the head, the heart, and the holy to sit in one pew.",
+      "distinctives": "It is governed by bishops in succession, ordered into dioceses, and in the United States it is called the Episcopal Church. It keeps baptism and the Lord's Supper as the two gospel sacraments while honoring others, and views on the Supper range across the tradition. Its worship follows the prayer book and the church calendar, shared morning to evening across the world.",
+      "howItReadsTheDebates": "On authority it leans on Scripture, tradition, and reason together rather than any one alone. On the Supper and salvation it deliberately holds a wide tent, which is both its method and its strain.",
+      "aFairWord": "Its gift is common prayer, a way to worship that does not depend on the mood or talent of the one leading. The honest caution is that the same wide tent that welcomes can blur, until it is not always clear what the church will finally stand on."
+    },
+    {
+      "name": "Baptist",
+      "family": "Protestant",
+      "born": "It arose among English Separatists in the early 1600s who became convinced that baptism belongs to those who can confess faith for themselves.",
+      "treasures": "It guards the freedom of the conscience before God, the conviction that faith cannot be inherited or coerced but must be personally owned. It honors the local congregation as a real gathering of believers who answer to Christ together. It loves the Bible plainly, preached and obeyed, and it has carried the gospel to the far corners of the earth through its missionaries.",
+      "distinctives": "Each congregation governs itself, calling its own pastor and answering to no bishop above it. It practices baptism by full immersion and only for those old enough to believe and confess, never for infants. It receives the Lord's Supper as a remembrance of Christ's death, and its worship centers on the sermon.",
+      "howItReadsTheDebates": "On baptism it is the clearest dissenting voice, holding that the New Testament knows only the baptism of believers. On authority it presses Scripture alone and the liberty of each conscience to read and follow it.",
+      "aFairWord": "Its gift is conviction and ownership, a faith no one can hold for you. The honest caution is that so much independence can leave a congregation without the steadying memory of the wider and older church."
+    },
+    {
+      "name": "Methodist and Wesleyan",
+      "family": "Protestant",
+      "born": "It grew from the revival led by John and Charles Wesley in England in the 1700s, a movement of disciplined devotion that began inside the Church of England.",
+      "treasures": "It holds together a warmed heart and ordered life, insisting that grace not only forgives but actually makes a person more loving over time. It carries a deep concern for the poor, the prisoner, and the outcast, and it helped end the slave trade and start the schools. It sings its theology, having given the church a treasury of Charles Wesley's hymns.",
+      "distinctives": "It is often governed by bishops and connected congregations rather than each one standing alone. It keeps baptism and the Lord's Supper, practices both infant and believer baptism, and gathers people into small groups for honest accountability. Its worship blends order with the freedom of revival.",
+      "howItReadsTheDebates": "On salvation it stresses that God's grace reaches out to everyone and that no one is shut out before they have the chance to respond. It teaches that grace genuinely heals and grows the believer toward holiness across a lifetime.",
+      "aFairWord": "Its gift is the marriage of devotion and mercy, a faith that prays and then goes to the prison and the poorhouse. The honest caution is that a movement built on warm experience can drift, in time, from the doctrine that gave the warmth its meaning."
+    },
+    {
+      "name": "Pentecostal and Charismatic",
+      "family": "Protestant",
+      "born": "It was born in the early 1900s, most famously in the Azusa Street revival in Los Angeles in 1906, out of a hunger for the power of the Holy Spirit promised in the book of Acts.",
+      "treasures": "It expects God to act now, healing, speaking, and moving among ordinary people, and it has carried that expectation to the ends of the earth faster than almost any movement in history. It worships with the whole body and a freedom of joy that can shake a tired soul awake. It has crossed lines of race, class, and nation in a way few movements have managed.",
+      "distinctives": "Its churches are governed in many ways, from independent congregations to organized fellowships. It emphasizes the gifts of the Spirit, including speaking in tongues, prophecy, and healing, as living realities for today and not only for the past. Its worship is expressive, spontaneous, and built around encounter.",
+      "howItReadsTheDebates": "On the Spirit it holds that the miraculous gifts of the New Testament are still given to the church now. On salvation it preaches a personal new birth and often a further filling of the Spirit that empowers the believer for service.",
+      "aFairWord": "Its gift is expectancy, a refusal to file God away as a figure of the past. The honest caution is that a faith centered on experience needs the steady weight of Scripture and tested teaching, or feeling can be mistaken for the Spirit."
+    },
+    {
+      "name": "Anabaptist (Mennonite, Amish, and Brethren)",
+      "family": "Protestant",
+      "born": "It began in Switzerland in the 1520s among reformers who concluded that the church should be a free community of believers, separate from the power of the state.",
+      "treasures": "It takes the Sermon on the Mount as something to be lived, not admired from a distance, and it has held to peace and nonviolence at real cost. It builds tight communities of shared life and mutual care, where faith is something the whole village does together. It bears a long memory of suffering for conscience and has never traded that memory for comfort.",
+      "distinctives": "Its congregations govern themselves simply, often without a paid clergy class above the members. It baptizes only confessing adults, which gave the movement its name, and it celebrates the Lord's Supper as a fellowship meal of the gathered church. Some branches, like the Amish, withdraw from much of modern life as a discipline of separation, while Mennonites and Brethren engage it more openly.",
+      "howItReadsTheDebates": "On baptism it stands with believers' baptism and against the union of church and state that long enforced infant baptism. On discipleship it reads salvation as a path of obedient following, with the cost of the cross taken plainly.",
+      "aFairWord": "Its gift is integrity, a faith that actually does what Jesus said about enemies and money. The honest caution is that the same separation that keeps it pure can, taken far enough, withdraw its light from the world that needs it."
+    },
+    {
+      "name": "Non-denominational Evangelical",
+      "family": "Protestant",
+      "born": "It is largely a movement of the last century, especially in the United States, of churches that set aside denominational labels to gather around the gospel and the Bible directly.",
+      "treasures": "It meets people where they are, in plain language and accessible worship, and has brought many to faith who would never have walked into an older church. It centers the personal relationship with Jesus and the open Bible, and it moves quickly to reach a changing culture. It often partners freely across old lines, caring more for the mission than the label.",
+      "distinctives": "Most of its churches are independent and self-governing, led by a pastor and a board rather than a denomination. It practices believer's baptism by immersion and receives the Lord's Supper as a remembrance, usually keeping worship contemporary and the sermon central. It tends to travel light on tradition, holding the essentials and leaving much else open.",
+      "howItReadsTheDebates": "On authority it presses the Bible directly and is wary of creeds and structures it views as later additions. On salvation it preaches the personal new birth, calling each person to a decision to follow Christ.",
+      "aFairWord": "Its gift is reach and immediacy, a doorway low enough for almost anyone to step through. The honest caution is that traveling light on history can leave a young believer without the deep roots that hold a faith steady when the weather turns."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "biblical-hermeneutics",
+  "title": "The Basic Rules of Biblical Interpretation",
+  "subtitle": "A plain introduction to hermeneutics for the ordinary reader who wants to interpret the Bible faithfully and avoid the common errors",
+  "kicker": "Exegesis",
+  "group": "Exegesis and Bible Study",
+  "sections": [
+    {
+      "id": "everyone-interprets",
+      "kicker": "There Is No View From Nowhere",
+      "title": "Everyone Already Interprets",
+      "body": "There is no such thing as just reading the Bible. The moment you decide a verse means this and not that, you have interpreted it. The only question is whether you will do it carefully or carelessly.\n\nHermeneutics is the unglamorous name for the rules of careful reading. It is not a way to make the Bible say what you want. It is a discipline that keeps you from doing exactly that.\n\nEvery reader brings a lifetime of assumptions to the page: a culture, a denomination, a wound, a politics, a teacher you trusted. None of that is neutral. The reader who claims to have no lens is simply the reader who cannot see his own. The first act of honest interpretation is to admit that you are standing somewhere, and that where you stand can bend the text without your noticing. I have read my own anger into the prophets and called it prophetic. The rules exist because I am not to be trusted alone with a text I want to win."
+    },
+    {
+      "id": "authorial-intent",
+      "kicker": "Rule One",
+      "title": "Meaning Is What the Author Meant",
+      "body": "A text means what its author intended it to mean. Not what it suggests to you. Not what it could be made to say. The meaning is fixed, set down by a real writer for real readers, and your job is to recover it, not to invent it.\n\nThis single rule kills a hundred bad readings. It rules out the verse pulled from its setting to bless a decision the author never imagined. It rules out the private revelation that no first reader could have shared. If your interpretation is something Paul could not have meant and the Romans could not have understood, your interpretation is wrong, however moving you find it.\n\nThe Spirit who inspired the words inspired the words the author wrote, in the order he wrote them, for the purpose he had. There is no second secret meaning waiting underneath for the clever. There is the meaning, and there is your work to find it."
+    },
+    {
+      "id": "context-rules",
+      "kicker": "Rule Two",
+      "title": "Context Is King",
+      "body": "No verse stands alone. It sits inside a paragraph, the paragraph inside an argument, the argument inside a book, the book inside the one long story Scripture tells. To read a verse rightly you must read what surrounds it.\n\nMost misuse of the Bible is a context crime. A phrase is lifted out of its paragraph and made to carry a meaning the paragraph forbids. I can prove almost anything from the Bible if you let me ignore the verses on either side. The cure is simple and demanding: never interpret a sentence without reading the whole thought it belongs to.\n\nThere is historical context too, the world behind the text, the customs and crises the first readers lived in. And there is canonical context, the way the whole of Scripture interprets each part. A doctrine built on one verse against the weight of the rest is a doctrine built on sand."
+    },
+    {
+      "id": "genre-and-clarity",
+      "kicker": "Rule Three",
+      "title": "Read Each Genre as Itself",
+      "body": "The Bible is not one kind of writing. It is law and story, song and proverb, sermon and letter, vision and lament. Each genre carries its meaning in its own way, and the reader who flattens them all into the same kind of literal reading will go wrong in opposite directions at once.\n\nPoetry uses images you are not meant to take as measurements. Narrative shows you what happened without always telling you to copy it. Proverbs state what is generally true, not what is universally promised. The man who reads a proverb as a contract and the man who reads a command as a poem have made the same mistake from different ends.\n\nAlongside genre stands an old and steadying rule: let the clear passages interpret the obscure. Scripture has hard places. Build your understanding on the plain teaching that runs through the whole, and read the difficult verse in its light, never the reverse."
+    },
+    {
+      "id": "humility",
+      "kicker": "The Posture Under the Rules",
+      "title": "The Rule Beneath the Rules",
+      "body": "Hermeneutics can become a weapon. A man can learn every rule and use them to win arguments and crush the people he was called to feed. The rules without humility produce a Pharisee with footnotes.\n\nThe deepest rule is that you come under the text, not over it.\n\nYou are not the judge of Scripture. You are its student, and a slow one, and you will get things wrong, and the history of the church is a long record of confident men who were certain and mistaken. Hold your readings with conviction and your certainties with fear. Submit them to the whole counsel of God, to the church across the centuries, to brothers who see what you cannot. The goal of interpretation was never to be right. It was to hear God speak and to obey. Get the rules. Then remember they were given so that the Word could master you, not so that you could master it."
+    }
+  ],
+  "keyTexts": [
+    "2 Timothy 2:15",
+    "2 Peter 1:20-21",
+    "Nehemiah 8:8",
+    "Luke 24:27"
+  ],
+  "furtherReading": [
+    { "title": "Knowing Scripture", "author": "R. C. Sproul" },
+    { "title": "Exegetical Fallacies", "author": "D. A. Carson" },
+    { "title": "How to Read the Bible for All Its Worth", "author": "Gordon D. Fee and Douglas Stuart" }
+  ]
+}

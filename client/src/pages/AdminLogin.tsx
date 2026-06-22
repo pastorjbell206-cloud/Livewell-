@@ -49,7 +49,7 @@ export default function AdminLogin() {
   }
 
   return (
-    <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#fafaf7" }}>
+    <div className="admin-scope" style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#fafaf7" }}>
       <div style={{ width: "100%", maxWidth: 440, padding: 32 }}>
         <form
           onSubmit={handleSubmit}

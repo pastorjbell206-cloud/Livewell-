@@ -1,0 +1,81 @@
+{
+  "slug": "new-believer",
+  "title": "Eight Weeks of Beginnings",
+  "subtitle": "An eight week plan from James Bell for the brand new Christian. What just happened, how to read, how to pray, how to find your people, all in plain words with every old term defined.",
+  "intro": "This is an eight week walk for the brand new Christian, the person to whom something real has just happened and nobody handed a manual. It uses plain words, and when an old church word cannot be avoided, it gets defined on the spot. Each week holds one focus, one small daily practice, one thing to read, one tool, and one honest question. The weeks cover the basics, what happened to you, how to read the Bible, how to pray, how to find your people, and what to do when doubt shows up, because it will, and it is normal.\n\nWalk it imperfectly. A missed week is not failure, you just pick it back up where you stopped. You did not earn your way into this faith and you cannot earn your way along it. It runs on grace, which is the old word for love you did not pay for and cannot pay back. Start there. Stay there.",
+  "careNote": "",
+  "weeks": [
+    {
+      "n": 1,
+      "focus": "What just happened to you",
+      "why": "Something real happened, and it probably came without instructions. The old word for what comes next is discipleship, which simply means learning to live as a student of Jesus, slowly, over years. There is no feeling you are required to have this week and no performance to keep up. You are at the beginning of something long, and beginnings are allowed to be small.",
+      "practice": "Each day, write two or three sentences about what happened to you and what you notice changing, or not changing. Use your own words, not borrowed ones. Honesty over polish.",
+      "read": { "label": "The Discipleship page, on the long slow learning that just began", "href": "/discipleship" },
+      "tool": { "label": "The Start Here quiz, it asks where you are and points to a first step", "href": "/start" },
+      "reflection": "What actually happened to me, in my own words, with no borrowed language?"
+    },
+    {
+      "n": 2,
+      "focus": "How to read the Bible, starting with Mark",
+      "why": "The Bible is not one book. It is a library of sixty six, and starting at page one strands most beginners somewhere in the ancient laws. Start with Mark instead. A Gospel is one of the four accounts of the life of Jesus, and Mark is the shortest and the fastest. Read to meet the person at the center. Everything else in the library makes sense only in light of him.",
+      "practice": "Read one chapter of Mark each day, slowly. Underline one sentence per chapter that stops you, and write one question. Sixteen chapters, so the pace stays gentle.",
+      "read": { "label": "How to Study the Bible, a plain method that starts with one question, what does it say", "href": "/leadership/article/how-to-study-the-bible" },
+      "tool": { "label": "The Verse Finder, look up any passage or topic when you get curious", "href": "/tools/verse-finder" },
+      "reflection": "What is Jesus actually like in Mark, and where does he surprise me?"
+    },
+    {
+      "n": 3,
+      "focus": "How to pray when you do not know how",
+      "why": "Prayer is honest speech toward God. That is the whole definition. There is no special vocabulary, no posture requirement, no minimum length. The first disciples had to ask Jesus how to do it, so you are in the original company. Short and true beats long and impressive every single time, and God is not grading the grammar.",
+      "practice": "Each day, pray for two minutes in your own words, the way you would talk to someone who already knows everything about you and stayed anyway. When words fail, borrow some.",
+      "read": { "label": "The Lament page, lament is the old word for telling God the truth when things hurt", "href": "/lament" },
+      "tool": { "label": "The Prayer Generator, for the days when no words come", "href": "/tools/prayer-generator" },
+      "reflection": "What do I keep editing out of my prayers, and who taught me God needed the edit?"
+    },
+    {
+      "n": 4,
+      "focus": "Finding a church, and why it matters",
+      "why": "This faith was never designed to be lived alone. A church is not a building, it is the people, ordinary people who open the Bible together, tell each other the truth, and stay. You are not shopping for a perfect one, because imperfect is the only kind there is. You are looking for a place where the Bible is taken seriously and the people are honest about needing grace. Take your time. Visit. Ask questions.",
+      "practice": "Pick one or two churches to visit and go to one this week. Afterward, write down what you noticed, good and bad. If you already have a church, introduce yourself to one new person.",
+      "read": { "label": "Why Church Membership Still Matters, membership just means committed belonging", "href": "/leadership/article/why-church-membership-matters" },
+      "tool": { "label": "The Church Health tool, questions to help you think clearly about a congregation", "href": "/tools/church-health" },
+      "reflection": "What am I most afraid of about belonging somewhere, and where did that fear come from?"
+    },
+    {
+      "n": 5,
+      "focus": "Doubt will come, and it is normal",
+      "why": "Nobody warns the new believer about this, so hear it now. Doubt will come, sometimes in the first months, and it does not mean the whole thing was fake. The Bible itself is full of people asking God hard questions to his face, and he keeps them in the book. A faith that has faced its questions ends up sturdier than one that was protected from them. When doubt arrives, you have not failed. You have started the deeper part.",
+      "practice": "Start a notebook for questions. When one comes, write it down instead of pushing it away. You do not have to answer them this week. You just have to stop being afraid of them.",
+      "read": { "label": "The Doubt page, where the questions are treated as part of the faith, not the end of it", "href": "/doubt" },
+      "tool": { "label": "The Hard Questions page, where the hardest ones are taken seriously from both sides", "href": "/theology/questions" },
+      "reflection": "What question am I most afraid to ask out loud, and what do I think would happen if I asked it?"
+    },
+    {
+      "n": 6,
+      "focus": "Money, habits, and the reordered life",
+      "why": "Following Jesus slowly reorders ordinary things, the wallet, the calendar, the phone, the body. Not because a rulebook arrived, but because a new center did, and a life arranges itself around whatever sits at its center. Hear the order of operations clearly. God is not waiting for you to clean up before he loves you. The love came first. The change grows out of it, never the other way around.",
+      "practice": "Each day, notice one ordinary habit, spending, eating, scrolling, sleeping, and write one sentence about what it serves. No fixing anything yet. Just noticing, with kindness.",
+      "read": { "label": "The Integrated Life pages, on a faith that includes your money, your body, and your Tuesday", "href": "/life" },
+      "tool": { "label": "The Life Audit, see where your hours actually go", "href": "/tools/life-audit" },
+      "reflection": "Which part of my ordinary life have I quietly marked as none of God's business?"
+    },
+    {
+      "n": 7,
+      "focus": "Telling someone, gently",
+      "why": "Sooner or later, someone who knew you before will notice something and ask. You do not need a script, a pitch, or an answer for every objection, and you are not responsible for how anyone responds. You simply have news about your own life, and you can tell it the way you would tell any other news that changed you. Plain words about what happened to you are enough. They always were.",
+      "practice": "Tell one person this week what happened to you, in your own words, with no agenda for their response. If nobody asks, you may bring it up once, kindly, and then let it rest.",
+      "read": { "label": "Evangelism for Ordinary Christians, evangelism just means telling the news, here is how, without a sales pitch", "href": "/leadership/article/evangelism-for-ordinary-christians" },
+      "tool": { "label": "Scripture Memory, learn one verse by heart, for you to carry, not ammunition to fire", "href": "/tools/scripture-memory" },
+      "reflection": "Who in my life would actually want to know what happened to me, and what is the plainest way to say it?"
+    },
+    {
+      "n": 8,
+      "focus": "The long road, a rule of life",
+      "why": "These eight weeks were a start, not a test, and there was no way to fail them. What carries a faith across decades is not intensity but a few small practices kept in ordinary weeks. The old name for that is a rule of life, which is not a list of rules. It is a trellis, a few chosen supports that hold a life up so it can grow in one direction for years. Build yours small enough to keep on your worst week.",
+      "practice": "Write on one card the two or three practices from these weeks that actually helped, the reading, the two minute prayer, the table at church, and when you will do them. Show the card to one person who will ask you about it.",
+      "read": { "label": "Return to the Discipleship page and read it as a map for the next year", "href": "/discipleship" },
+      "tool": { "label": "The Whole Life Assessment, an honest look at where you are starting from", "href": "/life/assessment" },
+      "reflection": "A year from now, what do I hope is ordinary in my life that is brand new today?"
+    }
+  ]
+}

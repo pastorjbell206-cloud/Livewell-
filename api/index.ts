@@ -5,12 +5,38 @@ import mysql from "mysql2/promise";
 import crypto from "node:crypto";
 import bcrypt from "bcryptjs";
 import superjson from "superjson";
+import { readFileSync } from "node:fs";
+import Stripe from "stripe";
 
 async function withConn<T>(fn: (c: mysql.Connection) => Promise<T>): Promise<T> {
   const url = process.env.DATABASE_URL;
   if (!url) throw new Error("DATABASE_URL missing");
   const conn = await mysql.createConnection({ uri: url, ssl: { rejectUnauthorized: true } });
   try { return await fn(conn); } finally { await conn.end(); }
+}
+
+// A connection cached across warm invocations, used by the bulk publish path so
+// it does not open (and exhaust) a fresh DB connection on every batch request.
+let _pubConn: mysql.Connection | null = null;
+async function withPubConn<T>(fn: (c: mysql.Connection) => Promise<T>): Promise<T> {
+  const url = process.env.DATABASE_URL;
+  if (!url) throw new Error("DATABASE_URL missing");
+  if (_pubConn) {
+    try { await _pubConn.query("SELECT 1"); }
+    catch { try { await _pubConn.end(); } catch { /* ignore */ } _pubConn = null; }
+  }
+  if (!_pubConn) {
+    _pubConn = await mysql.createConnection({ uri: url, ssl: { rejectUnauthorized: true } });
+  }
+  try {
+    return await fn(_pubConn);
+  } catch (e: any) {
+    if (e?.fatal || e?.code === "PROTOCOL_CONNECTION_LOST") {
+      try { await _pubConn?.end(); } catch { /* ignore */ }
+      _pubConn = null;
+    }
+    throw e;
+  }
 }
 
 function authed(req: VercelRequest): boolean {
@@ -394,6 +420,54 @@ async function adminSeedContent(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+/**
+ * One-shot repair for apostrophes stripped from imported content (Gods -> God's,
+ * churchs -> church's, dont -> don't, ...). Word-boundary matches on text fields
+ * only; slugs are never touched so no URL changes. Idempotent: rerunning after a
+ * clean pass updates zero rows, and rows edited in the admin keep their edits.
+ */
+async function adminFixApostrophes(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  const MAP: Record<string, string> = {
+    Gods: "God's", Churchs: "Church's", churchs: "church's", Worlds: "World's",
+    worlds: "world's", Lords: "Lord's", lifes: "life's",
+    dont: "don't", Dont: "Don't", cant: "can't", Cant: "Can't",
+    doesnt: "doesn't", Doesnt: "Doesn't", isnt: "isn't", Isnt: "Isn't",
+    havent: "haven't", Havent: "Haven't", wasnt: "wasn't", didnt: "didn't",
+    wouldnt: "wouldn't", couldnt: "couldn't", shouldnt: "shouldn't",
+    youre: "you're", Youre: "You're", theyre: "they're", Theyre: "They're",
+    theyve: "they've", Theyve: "They've", Youve: "You've", youve: "you've",
+    Weve: "We've", weve: "we've",
+  };
+  const pat = new RegExp("\\b(" + Object.keys(MAP).join("|") + ")\\b", "g");
+  const fix = (s: string) => s.replace(pat, (m) => MAP[m]);
+  try {
+    const out = await withConn(async (c) => {
+      let postsFixed = 0, booksFixed = 0;
+      const [postRows] = await c.execute("SELECT id, title, body, excerpt FROM posts");
+      for (const p of postRows as any[]) {
+        const title = fix(p.title || ""), body = fix(p.body || ""), excerpt = fix(p.excerpt || "");
+        if (title !== (p.title || "") || body !== (p.body || "") || excerpt !== (p.excerpt || "")) {
+          await c.execute("UPDATE posts SET title = ?, body = ?, excerpt = ? WHERE id = ?", [title, body, excerpt, p.id]);
+          postsFixed++;
+        }
+      }
+      const [bookRows] = await c.execute("SELECT id, title, description FROM books");
+      for (const b of bookRows as any[]) {
+        const title = fix(b.title || ""), description = fix(b.description || "");
+        if (title !== (b.title || "") || description !== (b.description || "")) {
+          await c.execute("UPDATE books SET title = ?, description = ? WHERE id = ?", [title, description, b.id]);
+          booksFixed++;
+        }
+      }
+      return { postsFixed, booksFixed };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
 async function listArticles(req: VercelRequest, res: VercelResponse) {
   try {
     const limit = Math.min(parseInt(String(req.query.limit || "50"), 10) || 50, 200);
@@ -427,10 +501,14 @@ async function getArticle(req: VercelRequest, res: VercelResponse, slug: string)
   }
 }
 
-async function substackRss(_req: VercelRequest, res: VercelResponse) {
+async function substackRss(req: VercelRequest, res: VercelResponse) {
   const CACHE_TTL = 30 * 60 * 1000;
+  const fresh = /[?&]fresh=1/.test(req.url || "");
+  // full=1 includes each post's complete body (content:encoded) for the
+  // importer. It's large, so it bypasses the lightweight DB cache entirely.
+  const full = /[?&]full=1/.test(req.url || "");
   try {
-    const cached = await withConn(async (c) => {
+    const cached = fresh || full ? null : await withConn(async (c) => {
       const [rows]: any = await c.execute(
         "SELECT payload, fetched_at FROM rss_cache WHERE source = 'substack' ORDER BY fetched_at DESC LIMIT 1"
       );
@@ -440,7 +518,7 @@ async function substackRss(_req: VercelRequest, res: VercelResponse) {
       res.setHeader("Cache-Control", "public, s-maxage=600, stale-while-revalidate=1800");
       return json(res, 200, { ok: true, cached: true, ...JSON.parse(cached.payload) });
     }
-    const feedUrl = "https://livewellbyjamesbell.substack.com/feed";
+    const feedUrl = process.env.SUBSTACK_FEED_URL || "https://jamesbell333289.substack.com/feed";
     const r = await fetch(feedUrl, { headers: { "User-Agent": "LiveWellSite/1.0" } });
     if (!r.ok) throw new Error(`substack feed ${r.status}`);
     const xml = await r.text();
@@ -455,20 +533,24 @@ async function substackRss(_req: VercelRequest, res: VercelResponse) {
         if (!x) return "";
         return x[1].replace(/^<!\[CDATA\[/, "").replace(/\]\]>$/, "").trim();
       };
-      items.push({
+      const item: any = {
         title: pick("title"),
         link: pick("link"),
         pubDate: pick("pubDate"),
         description: pick("description").replace(/<[^>]+>/g, "").slice(0, 400),
         guid: pick("guid"),
-      });
+      };
+      if (full) item.content = pick("content:encoded");
+      items.push(item);
     }
     const payload = { items, fetchedAt: new Date().toISOString() };
-    await withConn(async (c) => {
-      await c.execute("INSERT INTO rss_cache (source, payload) VALUES ('substack', ?)", [JSON.stringify(payload)]);
-      await c.execute("DELETE FROM rss_cache WHERE source='substack' AND id NOT IN (SELECT id FROM (SELECT id FROM rss_cache WHERE source='substack' ORDER BY fetched_at DESC LIMIT 3) t)");
-    });
-    res.setHeader("Cache-Control", "public, s-maxage=600, stale-while-revalidate=1800");
+    if (!full) {
+      await withConn(async (c) => {
+        await c.execute("INSERT INTO rss_cache (source, payload) VALUES ('substack', ?)", [JSON.stringify(payload)]);
+        await c.execute("DELETE FROM rss_cache WHERE source='substack' AND id NOT IN (SELECT id FROM (SELECT id FROM rss_cache WHERE source='substack' ORDER BY fetched_at DESC LIMIT 3) t)");
+      });
+    }
+    res.setHeader("Cache-Control", full ? "no-store" : "public, s-maxage=600, stale-while-revalidate=1800");
     json(res, 200, { ok: true, cached: false, ...payload });
   } catch (e: any) {
     json(res, 500, { ok: false, error: String(e?.message || e) });
@@ -518,7 +600,7 @@ async function pcnSignup(req: VercelRequest, res: VercelResponse) {
 async function sitemap(_req: VercelRequest, res: VercelResponse) {
   try {
     const base = "https://www.livewellbyjamesbell.co";
-    const staticPaths = ["/", "/writing", "/books", "/about", "/quiz", "/search", "/marriage", "/parenting", "/doubt", "/start", "/for-pastors", "/for-leaders", "/membership", "/reading-paths", "/resources"];
+    const staticPaths = ["/", "/writing", "/books", "/consider-the-birds", "/where-your-treasure-is", "/about", "/quiz", "/search", "/marriage", "/parenting", "/doubt", "/start", "/for-pastors", "/for-leaders", "/membership", "/reading-paths", "/resources"];
     let articles: any[] = [];
     try {
       articles = await withConn(async (c) => {
@@ -581,26 +663,58 @@ function toPostCard(row: any): any {
   };
 }
 
+// Card shape for `posts` rows (camelCase columns) — distinct from toPostCard,
+// which maps the snake_case `articles` table. Used by posts.getFeatured.
+function toFeaturedPostCard(row: any): any {
+  return {
+    id: row.id,
+    slug: row.slug,
+    title: row.title,
+    excerpt: row.excerpt || "",
+    pillar: row.pillar || "Theological Depth",
+    readTime: row.readTime || "5 min",
+    readingTimeMinutes: row.readingTimeMinutes ?? 5,
+    author: "James Bell",
+    createdAt: row.createdAt || row.publishedAt,
+    publishedAt: row.publishedAt || row.createdAt,
+  };
+}
+
 async function trpcListPosts(): Promise<any[]> {
   return await withConn(async (c) => {
+    const base = "id, slug, title, excerpt, pillar, readTime, published, featured, publishedAt, createdAt";
+    // Try with the two-level columns; if they don't exist yet, fall back without
+    // them so the site keeps working before the taxonomy migration is run.
+    let rows: any = null;
     try {
-      const [rows]: any = await c.execute(
-        "SELECT id, slug, title, excerpt, body, pillar, readTime, published, featured, publishedAt, createdAt FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 500"
+      [rows] = await c.execute(
+        `SELECT ${base}, subPathway, isSeries FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 2000`
       );
-      if (Array.isArray(rows) && rows.length > 0) {
-        return (rows as any[]).map((r) => ({
-          id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
-          body: r.body || null, content: r.body || null,
-          pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
-          published: r.published, featured: r.featured, topic: r.topic || null,
-          createdAt: r.createdAt || r.publishedAt, publishedAt: r.publishedAt || r.createdAt,
-        }));
-      }
-    } catch { /* posts table may not exist, fall through to articles */ }
-    const [rows]: any = await c.execute(
+    } catch {
+      try {
+        [rows] = await c.execute(
+          `SELECT ${base} FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 2000`
+        );
+      } catch { rows = null; }
+    }
+    if (Array.isArray(rows) && rows.length > 0) {
+      return (rows as any[]).map((r) => ({
+        id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
+        // Listing pages render cards (title/excerpt), never the body. Sending the
+        // full body of every published post made this response ~7MB once all 421
+        // articles were filled, which hung the article lists on "loading". The
+        // body is fetched per-article by getBySlug, so the list omits it.
+        body: null, content: null,
+        pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
+        published: r.published, featured: r.featured, topic: r.topic || null,
+        subPathway: r.subPathway ?? null, isSeries: !!r.isSeries,
+        createdAt: r.createdAt || r.publishedAt, publishedAt: r.publishedAt || r.createdAt,
+      }));
+    }
+    const [arows]: any = await c.execute(
       "SELECT id, slug, title, subtitle, excerpt, topic, pillar, source, external_url, image_url, word_count, published_at, created_at FROM articles ORDER BY published_at DESC LIMIT 500"
     );
-    return (rows as any[]).map(toPostCard);
+    return (arows as any[]).map(toPostCard);
   });
 }
 
@@ -864,6 +978,266 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         await withConn(async (c) => { await c.execute("DELETE FROM posts WHERE id = ?", [delId]); });
         return trpcOk(res, { ok: true });
       }
+      case "posts.publishFullBodies": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const dryRun = !!(input?.dryRun);
+        // The client downloads the content file once and sends small batches of
+        // items here. Each call only does a handful of quick writes — no 3MB
+        // fetch per call, so it never times out.
+        const items: { slug: string; body: string; readingTimeMinutes: number }[] =
+          Array.isArray(input?.items) ? input.items : [];
+        let matched = 0, updated = 0;
+        const missing: string[] = [];
+        let dbError: string | null = null;
+        if (items.length) {
+          try {
+            await withConn(async (c) => {
+              const slugs = items.map((i) => i.slug);
+              const placeholders = slugs.map(() => "?").join(",");
+              const [existRows]: any = await c.execute(
+                `SELECT slug FROM posts WHERE slug IN (${placeholders})`, slugs
+              );
+              const existing = new Set(existRows.map((r: any) => r.slug));
+              const toUpdate = items.filter((it) => existing.has(it.slug));
+              for (const it of items) if (!existing.has(it.slug)) missing.push(it.slug);
+              matched = toUpdate.length;
+              if (!dryRun && toUpdate.length) {
+                // One UPDATE per article keeps each statement tiny and avoids
+                // huge multi-row CASE statements that some MySQL hosts reject.
+                for (const it of toUpdate) {
+                  await c.execute(
+                    "UPDATE posts SET body = ?, readTime = ?, updatedAt = NOW() WHERE slug = ?",
+                    [it.body, `${it.readingTimeMinutes} min read`, it.slug]
+                  );
+                  updated++;
+                }
+              }
+            });
+          } catch (e: any) {
+            // Surface the real DB error instead of letting it become an opaque
+            // 500 ("unable to transform" on the client). Logged for diagnosis.
+            dbError = String(e?.code ? e.code + " " : "") + String(e?.sqlMessage || e?.message || e);
+            console.error("publishFullBodies DB error:", dbError, "| firstSlug:", items[0]?.slug);
+          }
+        }
+        return trpcOk(res, { matched, updated, missing, dryRun, error: dbError });
+      }
+      case "posts.navIndex": {
+        // Slim per-post feed for the primary nav: just what's needed to know
+        // which pillars/sub-pathways/series have published posts. Defensive: if
+        // the two-level columns don't exist yet, returns them as null/false.
+        let rows: any = [];
+        await withConn(async (c) => {
+          try {
+            [rows] = await c.execute(
+              "SELECT slug, pillar, subPathway, isSeries FROM posts WHERE published = true LIMIT 2000"
+            );
+          } catch {
+            try {
+              const [r2]: any = await c.execute("SELECT slug, pillar FROM posts WHERE published = true LIMIT 2000");
+              rows = (r2 as any[]).map((r) => ({ ...r, subPathway: null, isSeries: 0 }));
+            } catch { rows = []; }
+          }
+        });
+        return trpcOk(res, (rows as any[]).map((r) => ({
+          slug: r.slug, pillar: r.pillar ?? null,
+          subPathway: r.subPathway ?? null, isSeries: !!r.isSeries,
+        })));
+      }
+      case "posts.migrateTaxonomy": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const added: string[] = [];
+        let migErr: string | null = null;
+        try {
+          await withConn(async (c) => {
+            const [db]: any = await c.query("SELECT DATABASE() AS db");
+            const dbName = db[0].db;
+            const has = async (col: string) => {
+              const [r]: any = await c.execute(
+                "SELECT 1 FROM information_schema.COLUMNS WHERE TABLE_SCHEMA=? AND TABLE_NAME='posts' AND COLUMN_NAME=? LIMIT 1",
+                [dbName, col]
+              );
+              return r.length > 0;
+            };
+            if (!(await has("subPathway"))) { await c.query("ALTER TABLE `posts` ADD COLUMN `subPathway` varchar(128) NULL"); added.push("subPathway"); }
+            if (!(await has("isSeries"))) { await c.query("ALTER TABLE `posts` ADD COLUMN `isSeries` boolean NOT NULL DEFAULT false"); added.push("isSeries"); }
+          });
+        } catch (e: any) {
+          migErr = String(e?.sqlMessage || e?.message || e);
+          console.error("migrateTaxonomy error:", migErr);
+        }
+        return trpcOk(res, { added, alreadyPresent: added.length === 0, error: migErr });
+      }
+      case "posts.backfillSubPathways": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const items: { id?: number; slug?: string; pillar?: string | null; sub?: string | null; series?: boolean }[] =
+          Array.isArray(input?.items) ? input.items : [];
+        let updated = 0;
+        const missing: (number | string)[] = [];
+        let bErr: string | null = null;
+        try {
+          await withConn(async (c) => {
+            for (const it of items) {
+              const sub = it.sub ?? null;
+              const series = it.series ? 1 : 0;
+              const pillar = it.pillar ?? null;
+              // When a pillar is supplied, correct it too (many posts move out of
+              // the catch-all). Otherwise only tag the sub-pathway + series flag.
+              const cols = pillar ? "pillar = ?, subPathway = ?, isSeries = ?" : "subPathway = ?, isSeries = ?";
+              const vals = pillar ? [pillar, sub, series] : [sub, series];
+              let res2: any;
+              if (it.id != null) {
+                [res2] = await c.execute(`UPDATE posts SET ${cols} WHERE id = ?`, [...vals, it.id]);
+              } else if (it.slug) {
+                [res2] = await c.execute(`UPDATE posts SET ${cols} WHERE slug = ?`, [...vals, it.slug]);
+              } else { continue; }
+              if (res2 && res2.affectedRows > 0) updated++; else missing.push(it.id ?? it.slug ?? "?");
+            }
+          });
+        } catch (e: any) {
+          bErr = String(e?.sqlMessage || e?.message || e);
+          console.error("backfillSubPathways error:", bErr);
+        }
+        return trpcOk(res, { updated, missing, error: bErr });
+      }
+      case "posts.findDuplicates": {
+        // Read-only: group posts by normalized title and return groups that
+        // have more than one copy, with a suggested "keep" per group. Nothing
+        // is modified. Admin-gated because it exposes the full post inventory.
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        let groups: any[] = [];
+        let dErr: string | null = null;
+        try {
+          await withConn(async (c) => {
+            const [rows]: any = await c.execute(
+              "SELECT id, slug, title, pillar, published, featured, publishedAt, createdAt, CHAR_LENGTH(COALESCE(body,'')) AS bodyLen FROM posts"
+            );
+            const norm = (t: any) =>
+              String(t || "").toLowerCase().replace(/[‘’“”]/g, "'").replace(/[^a-z0-9]+/g, " ").trim();
+            const map: Record<string, any[]> = {};
+            for (const r of rows as any[]) {
+              const k = norm(r.title);
+              if (!k) continue;
+              (map[k] = map[k] || []).push(r);
+            }
+            groups = Object.values(map)
+              .filter((g) => g.length > 1)
+              .map((g) => {
+                // Suggested keep: published first, then longest body, then newest.
+                const sorted = [...g].sort(
+                  (a, b) =>
+                    (Number(b.published) - Number(a.published)) ||
+                    (Number(b.bodyLen) - Number(a.bodyLen)) ||
+                    (new Date(b.publishedAt || b.createdAt).getTime() -
+                      new Date(a.publishedAt || a.createdAt).getTime())
+                );
+                return {
+                  title: sorted[0].title,
+                  keepId: sorted[0].id,
+                  copies: sorted.map((r) => ({
+                    id: r.id, slug: r.slug, pillar: r.pillar ?? null,
+                    published: !!r.published, featured: !!r.featured,
+                    bodyLen: Number(r.bodyLen) || 0,
+                  })),
+                };
+              })
+              .sort((a, b) => b.copies.length - a.copies.length);
+          });
+        } catch (e: any) {
+          dErr = String(e?.sqlMessage || e?.message || e);
+          console.error("findDuplicates error:", dErr);
+        }
+        return trpcOk(res, { groups, error: dErr });
+      }
+      case "posts.retirePosts": {
+        // Unpublish (never delete) the given post ids — reversible cleanup for
+        // duplicate rows. Returns how many rows were actually changed.
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const ids: number[] = (Array.isArray(input?.ids) ? input.ids : [])
+          .map((n: any) => Number(n))
+          .filter((n: number) => Number.isFinite(n));
+        let updated = 0;
+        let rErr: string | null = null;
+        try {
+          await withConn(async (c) => {
+            for (const id of ids) {
+              const [r]: any = await c.execute(
+                "UPDATE posts SET published = false, updatedAt = NOW() WHERE id = ?",
+                [id]
+              );
+              updated += r?.affectedRows || 0;
+            }
+          });
+        } catch (e: any) {
+          rErr = String(e?.sqlMessage || e?.message || e);
+          console.error("retirePosts error:", rErr);
+        }
+        return trpcOk(res, { updated, error: rErr });
+      }
+      case "posts.createDrafts": {
+        // Insert essays as UNPUBLISHED posts (idempotent by slug). Used by the
+        // admin "Load draft essays" button. Inserts the core columns only, then
+        // best-effort tags subPathway/isSeries if those columns exist.
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const items: any[] = Array.isArray(input?.items) ? input.items : [];
+        let inserted = 0;
+        const skipped: string[] = [];
+        let cErr: string | null = null;
+        try {
+          await withConn(async (c) => {
+            for (const it of items) {
+              if (!it?.slug || !it?.title || !it?.body) continue;
+              const [ex]: any = await c.execute("SELECT id FROM posts WHERE slug = ? LIMIT 1", [it.slug]);
+              if (Array.isArray(ex) && ex.length > 0) { skipped.push(it.slug); continue; }
+              await c.execute(
+                "INSERT INTO posts (title, slug, body, excerpt, pillar, readTime, published, featured, createdAt, updatedAt) VALUES (?, ?, ?, ?, ?, ?, 0, 0, NOW(), NOW())",
+                [it.title, it.slug, it.body, it.excerpt ?? null, it.pillar ?? null, it.readTime ?? null]
+              );
+              inserted++;
+              // Tag taxonomy if those columns exist (post-migration); harmless otherwise.
+              try {
+                await c.execute(
+                  "UPDATE posts SET subPathway = ?, isSeries = ? WHERE slug = ?",
+                  [it.subPathway ?? null, it.series ? 1 : 0, it.slug]
+                );
+              } catch { /* columns not migrated yet — safe to ignore */ }
+            }
+          });
+        } catch (e: any) {
+          cErr = String(e?.sqlMessage || e?.message || e);
+          console.error("createDrafts error:", cErr);
+        }
+        return trpcOk(res, { inserted, skipped, error: cErr });
+      }
+      case "posts.publishBySlugs": {
+        // Bulk publish/unpublish by slug (the admin "Publish all" button).
+        // Sets published, and on publish stamps publishedAt if not already set.
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const slugs: string[] = Array.isArray(input?.slugs) ? input.slugs.filter((s: any) => typeof s === "string") : [];
+        const publish = input?.published !== false; // default true
+        let updated = 0;
+        let pErr: string | null = null;
+        try {
+          await withConn(async (c) => {
+            for (const slug of slugs) {
+              const [r]: any = publish
+                ? await c.execute(
+                    "UPDATE posts SET published = 1, publishedAt = COALESCE(publishedAt, NOW()), updatedAt = NOW() WHERE slug = ?",
+                    [slug]
+                  )
+                : await c.execute(
+                    "UPDATE posts SET published = 0, updatedAt = NOW() WHERE slug = ?",
+                    [slug]
+                  );
+              updated += r?.affectedRows || 0;
+            }
+          });
+        } catch (e: any) {
+          pErr = String(e?.sqlMessage || e?.message || e);
+          console.error("publishBySlugs error:", pErr);
+        }
+        return trpcOk(res, { updated, error: pErr });
+      }
       case "books.create": {
         if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
         return await withConn(async (c) => {
@@ -1012,9 +1386,9 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
       case "posts.getFeatured": {
         return await withConn(async (c) => {
           const [rows]: any = await c.execute(
-            "SELECT id, slug, title, excerpt, pillar, published_at, created_at, word_count FROM posts WHERE featured = true AND published = true ORDER BY created_at DESC LIMIT 10"
+            "SELECT id, slug, title, excerpt, pillar, readTime, readingTimeMinutes, publishedAt, createdAt FROM posts WHERE featured = true AND published = true ORDER BY createdAt DESC LIMIT 10"
           );
-          return trpcOk(res, (rows as any[]).map(toPostCard));
+          return trpcOk(res, (rows as any[]).map(toFeaturedPostCard));
         });
       }
       default:
@@ -1191,7 +1565,14 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
     case "resources.listAll":
       try {
         return await withConn(async (c) => {
-          const [rows]: any = await c.execute("SELECT * FROM resources ORDER BY createdAt DESC");
+          // listPublished must only return published resources; listAll (admin)
+          // returns everything. Both are bounded so the payload can't run away.
+          const onlyPublished = proc === "resources.listPublished";
+          const [rows]: any = await c.execute(
+            onlyPublished
+              ? "SELECT * FROM resources WHERE published = true ORDER BY createdAt DESC LIMIT 1000"
+              : "SELECT * FROM resources ORDER BY createdAt DESC LIMIT 1000"
+          );
           return { result: { data: superjson.serialize(rows) } };
         });
       } catch { return { result: { data: superjson.serialize([]) } }; }
@@ -1237,8 +1618,8 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
     case "posts.getFeatured":
       try {
         return await withConn(async (c) => {
-          const [rows]: any = await c.execute("SELECT id, slug, title, excerpt, pillar, published_at, created_at, word_count FROM posts WHERE featured = true AND published = true ORDER BY created_at DESC LIMIT 10");
-          return { result: { data: superjson.serialize((rows as any[]).map(toPostCard)) } };
+          const [rows]: any = await c.execute("SELECT id, slug, title, excerpt, pillar, readTime, readingTimeMinutes, publishedAt, createdAt FROM posts WHERE featured = true AND published = true ORDER BY createdAt DESC LIMIT 10");
+          return { result: { data: superjson.serialize((rows as any[]).map(toFeaturedPostCard)) } };
         });
       } catch { return { result: { data: superjson.serialize([]) } }; }
     case "community.testimonials.listAll":
@@ -1288,7 +1669,7 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
         return { result: { data: superjson.serialize({ ok: true }) } };
       } catch (e: any) { return { error: { message: String(e?.message), code: -32603, data: { code: "INTERNAL_SERVER_ERROR", httpStatus: 500 } } }; }
     case "feedSync.getStatus":
-      return { result: { data: superjson.serialize({ sources: [{ name: "Substack", url: "https://livewellbyjamesbell.substack.com/feed", lastSync: null, status: "idle" }], schedule: "Manual" }) } };
+      return { result: { data: superjson.serialize({ sources: [{ name: "Substack", url: "https://jamesbell333289.substack.com/feed", lastSync: null, status: "idle" }], schedule: "Manual" }) } };
     case "feedSync.syncAll":
     case "feedSync.syncSource":
       return { result: { data: superjson.serialize({ ok: true, message: "Feed sync not yet configured. Use the admin panel to add articles manually." }) } };
@@ -1485,6 +1866,104 @@ ${items}
   }
 }
 
+// ---------------------------------------------------------------------------
+// LiveWell-series ebooks: Stripe Checkout + gated PDF delivery.
+//
+// The PDFs live in api/_ebooks/ (referenced via new URL(..., import.meta.url) so
+// Vercel's file tracer bundles them into the function) and are NEVER served as
+// static assets — the only way to fetch one is through /api/download with a
+// Stripe session that is actually paid. Price IDs come from env so flipping
+// test -> live keys needs no code change.
+// ---------------------------------------------------------------------------
+interface EbookConfig {
+  title: string;
+  priceEnv: string;
+  file: URL;
+  filename: string;
+}
+
+const EBOOKS: Record<string, EbookConfig> = {
+  "consider-the-birds": {
+    title: "Consider the Birds",
+    priceEnv: "STRIPE_PRICE_CONSIDER_THE_BIRDS",
+    file: new URL("./_ebooks/consider-the-birds.pdf", import.meta.url),
+    filename: "Consider-the-Birds.pdf",
+  },
+  "where-your-treasure-is": {
+    title: "Where Your Treasure Is",
+    priceEnv: "STRIPE_PRICE_WHERE_YOUR_TREASURE_IS",
+    file: new URL("./_ebooks/where-your-treasure-is.pdf", import.meta.url),
+    filename: "Where-Your-Treasure-Is.pdf",
+  },
+};
+
+const PRODUCTION_SITE_URL = "https://livewellbyjamesbell.co";
+
+function getStripe(): Stripe | null {
+  const key = process.env.STRIPE_SECRET_KEY?.trim();
+  if (!key) return null;
+  return new Stripe(key);
+}
+
+// Build absolute URLs from the request so checkout works on Vercel preview
+// deployments too, not just the production domain.
+function siteOrigin(req: VercelRequest): string {
+  const proto = (req.headers["x-forwarded-proto"] as string) || "https";
+  const host = (req.headers["x-forwarded-host"] as string) || req.headers.host || "";
+  return host ? `${proto}://${host}` : PRODUCTION_SITE_URL;
+}
+
+async function ebookCheckout(req: VercelRequest, res: VercelResponse) {
+  if (req.method !== "POST") return json(res, 405, { error: "method not allowed" });
+  const stripe = getStripe();
+  if (!stripe) return json(res, 503, { error: "Checkout is not configured yet." });
+  try {
+    const body = await readBody(req);
+    const slug = String(body?.slug || "");
+    const book = EBOOKS[slug];
+    if (!book) return json(res, 400, { error: "Unknown book." });
+    const priceId = process.env[book.priceEnv]?.trim();
+    if (!priceId) return json(res, 503, { error: "This book is not on sale yet." });
+    const origin = siteOrigin(req);
+    const session = await stripe.checkout.sessions.create({
+      mode: "payment",
+      line_items: [{ price: priceId, quantity: 1 }],
+      success_url: `${origin}/${slug}/thank-you?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${origin}/${slug}`,
+      metadata: { slug },
+    });
+    return json(res, 200, { url: session.url });
+  } catch (e: any) {
+    return json(res, 500, { error: String(e?.message || e) });
+  }
+}
+
+async function ebookDownload(req: VercelRequest, res: VercelResponse) {
+  const check = req.query.check === "1";
+  const stripe = getStripe();
+  const sessionId = String(req.query.session_id || "");
+  if (!stripe) return json(res, 503, { error: "not configured", paid: false, ok: false });
+  if (!sessionId) return json(res, 400, { error: "missing session_id", paid: false, ok: false });
+  try {
+    const session = await stripe.checkout.sessions.retrieve(sessionId);
+    const slug = String(session.metadata?.slug || "");
+    const book = EBOOKS[slug];
+    const paid = (session.payment_status === "paid" || session.status === "complete") && Boolean(book);
+    if (check) {
+      return json(res, 200, { ok: true, paid, slug, title: book?.title || null });
+    }
+    if (!paid) return json(res, 402, { error: "payment not completed" });
+    const data = readFileSync(book!.file);
+    res.setHeader("Content-Type", "application/pdf");
+    res.setHeader("Content-Disposition", `attachment; filename="${book!.filename}"`);
+    res.setHeader("Cache-Control", "private, no-store");
+    return res.status(200).send(data);
+  } catch (e: any) {
+    if (check) return json(res, 200, { ok: false, paid: false });
+    return json(res, 500, { error: String(e?.message || e) });
+  }
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   applyCors(req, res);
   if (req.method === "OPTIONS") {
@@ -1502,6 +1981,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
     if (url === "/api/admin/seed-content") return adminSeedContent(req, res);
+    if (url === "/api/admin/fix-apostrophes") return adminFixApostrophes(req, res);
     const notifMatch = url.match(/^\/api\/admin\/notifications\/(\d+)$/);
     if (notifMatch && req.method === "DELETE") {
       if (!authedSession(req)) return json(res, 401, { error: "unauthorized" });
@@ -1512,6 +1992,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/seed") return adminSeed(req, res);
     if (url === "/api/rss" || url === "/api/rss/substack") return substackRss(req, res);
     if (url === "/api/contact") return contactForm(req, res);
+    if (url === "/api/checkout") return ebookCheckout(req, res);
+    if (url === "/api/download") return ebookDownload(req, res);
     if (url === "/api/subscribe") return subscribe(req, res);
     if (url === "/api/pcn/signup") return pcnSignup(req, res);
     if (url === "/api/sitemap.xml" || url === "/api/sitemap") return sitemap(req, res);

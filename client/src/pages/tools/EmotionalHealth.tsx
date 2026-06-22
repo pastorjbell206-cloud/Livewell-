@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { ToolActions } from "@/components/ToolActions";
 import { useState } from "react";
+import { Link } from "wouter";
 import { ArrowLeft, ChevronRight } from "lucide-react";
 
 interface Statement {
@@ -596,6 +597,64 @@ export default function EmotionalHealth() {
                     }}
                   />
                 </div>
+              </div>
+
+              {/* Eight-Week Plan CTA */}
+              <div
+                style={{
+                  background: "white",
+                  borderRadius: "8px",
+                  padding: "36px",
+                  marginBottom: "28px",
+                  borderTop: "4px solid var(--mustard)",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "11px",
+                    fontWeight: 700,
+                    letterSpacing: "0.18em",
+                    color: "var(--mustard)",
+                    fontFamily: "var(--U)",
+                    marginBottom: "12px",
+                  }}
+                >
+                  YOUR NEXT STEP
+                </div>
+                <p
+                  style={{
+                    fontSize: "16px",
+                    lineHeight: 1.8,
+                    color: "var(--ink)",
+                    fontFamily: "var(--B)",
+                    maxWidth: "68ch",
+                    margin: "0 0 20px",
+                  }}
+                >
+                  If anxiety or heaviness showed up in these answers, there is
+                  an eight-week plan toward a quieter mind. And walking it
+                  while seeing a counselor is wisdom, not weakness.
+                </p>
+                <Link
+                  href="/plans/anxiety"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    minHeight: "44px",
+                    padding: "12px 28px",
+                    background: "var(--mustard)",
+                    color: "var(--ink)",
+                    borderRadius: "6px",
+                    fontSize: "14px",
+                    fontFamily: "var(--U)",
+                    fontWeight: 600,
+                    textDecoration: "none",
+                  }}
+                >
+                  Start the eight-week plan
+                  <ChevronRight size={16} />
+                </Link>
               </div>
 
               {/* Category Breakdown */}

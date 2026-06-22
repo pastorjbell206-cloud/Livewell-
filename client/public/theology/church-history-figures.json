@@ -1,0 +1,328 @@
+{
+  "figures": [
+    {
+      "name": "Ignatius of Antioch",
+      "dates": "around 35 to 108",
+      "era": "Early Church",
+      "place": "Antioch in Syria, then Rome",
+      "role": "Bishop and martyr",
+      "summary": "Ignatius led the church in Antioch, one of the great cities of the early Christian world. Late in life he was arrested and marched across the empire to Rome to be killed by wild animals in the arena. On that long journey he wrote letters to churches along the way, and in them he begged his friends not to rescue him, because he wanted his death to bear witness to the Jesus he loved.",
+      "whyTheyMatter": "His letters are among the earliest Christian writings we have outside the New Testament, and they show a man facing death with steadiness rather than bravado."
+    },
+    {
+      "name": "Polycarp of Smyrna",
+      "dates": "around 69 to 155",
+      "era": "Early Church",
+      "place": "Smyrna in Asia Minor, modern Turkey",
+      "role": "Bishop and martyr",
+      "summary": "Polycarp was a bridge between the apostles and the next generations, said to have known the apostle John personally. As an old man he was arrested during a local persecution and ordered to curse Christ to save his life. He answered that he had served Christ for many years and had received only good from him, so he could not turn on his King now.",
+      "whyTheyMatter": "The account of his death is one of the oldest and most moving martyr stories the church preserved, and it shaped how Christians thought about faithfulness under pressure."
+    },
+    {
+      "name": "Justin Martyr",
+      "dates": "around 100 to 165",
+      "era": "Early Church",
+      "place": "Born in Samaria, taught in Rome",
+      "role": "Philosopher and teacher",
+      "summary": "Justin spent his early years searching through the philosophies of his day before he met an old man by the sea who pointed him to the Hebrew prophets and to Christ. He kept wearing the philosopher's cloak after his conversion, because he believed Christianity was the truth all the great thinkers had been reaching toward. He opened a school in Rome and wrote careful defenses of the faith addressed to the emperor himself, and he was eventually beheaded for refusing to sacrifice to the Roman gods.",
+      "whyTheyMatter": "He was one of the first to argue that faith and serious thinking belong together, a claim that still steadies believers who are told they must choose between the two."
+    },
+    {
+      "name": "Irenaeus of Lyon",
+      "dates": "around 130 to 202",
+      "era": "Early Church",
+      "place": "Lyon in Gaul, modern France",
+      "role": "Bishop and theologian",
+      "summary": "Irenaeus grew up in Smyrna where he heard Polycarp teach, then served as a pastor in the rough frontier city of Lyon. He spent his energy answering teachers who claimed secret knowledge and a hidden gospel, insisting instead that the real message of Jesus was public, handed down openly from the apostles, and held in common by churches everywhere. He wrote that the glory of God is a human being fully alive.",
+      "whyTheyMatter": "He helped the church see that the gospel is not a secret for insiders but a public truth anyone can receive."
+    },
+    {
+      "name": "Perpetua",
+      "dates": "around 182 to 203",
+      "era": "Early Church",
+      "place": "Carthage in North Africa",
+      "role": "Young mother and martyr",
+      "summary": "Perpetua was a young, educated mother with a nursing infant when she was arrested for being a Christian during a wave of persecution. Part of her prison account survives in her own words, which makes it one of the earliest writings we have by a Christian woman. Her father pleaded with her again and again to renounce her faith and live, and her refusal, recorded plainly and without drama, still reads as one of the most human documents of the early church.",
+      "whyTheyMatter": "Her diary lets a reader hear an ordinary believer speak across eighteen centuries, frightened and resolute at the same time."
+    },
+    {
+      "name": "Tertullian",
+      "dates": "around 155 to 220",
+      "era": "Early Church",
+      "place": "Carthage in North Africa",
+      "role": "Writer and theologian",
+      "summary": "Tertullian was a sharp-tongued Latin writer who became one of the first major Christian voices in the language of the Western church. He coined words and phrases the church still uses to talk about God as three in one. He was brilliant and combative, and in his later years he drifted toward a strict, fringe movement that the wider church did not follow, which is a reminder that gifted people can still lose their way.",
+      "whyTheyMatter": "Much of the vocabulary Western Christians use for the Trinity traces back to his restless, demanding mind."
+    },
+    {
+      "name": "Origen of Alexandria",
+      "dates": "around 184 to 253",
+      "era": "Early Church",
+      "place": "Alexandria in Egypt, then Caesarea",
+      "role": "Scholar and teacher",
+      "summary": "Origen was perhaps the most learned man of the early church, a tireless student of Scripture who produced commentaries, sermons, and a massive side-by-side comparison of biblical texts. He gave his whole life to teaching and lived with severe self-denial, and he was tortured during a persecution late in life and died of his injuries. Some of his more speculative ideas were later judged to have gone too far, yet his devotion to understanding the Bible was never in doubt.",
+      "whyTheyMatter": "He set an example of pouring a whole life into the study of Scripture, and the church learned from both his strengths and his overreach."
+    },
+    {
+      "name": "Athanasius of Alexandria",
+      "dates": "around 296 to 373",
+      "era": "Age of the Councils",
+      "place": "Alexandria in Egypt",
+      "role": "Bishop and defender of the faith",
+      "summary": "Athanasius was a young deacon at the Council of Nicaea in 325, where the church confronted a teaching that Jesus was a created being and not truly God. For the rest of his life he defended the conviction that the Son is fully divine, and he paid for it by being driven into exile five separate times. The struggle was so lopsided at points that people spoke of Athanasius against the world.",
+      "whyTheyMatter": "Much of what Christians confess about Jesus being truly God owes a debt to a man who would not back down even when nearly everyone in power was against him."
+    },
+    {
+      "name": "Basil the Great",
+      "dates": "around 330 to 379",
+      "era": "Age of the Councils",
+      "place": "Caesarea in Cappadocia, modern Turkey",
+      "role": "Bishop and reformer",
+      "summary": "Basil came from a remarkable family in central Turkey and gave up a promising career to serve the church. As a bishop he built one of the first large complexes to care for the sick and the poor, a kind of early hospital, and he wrote rules for monastic life that still guide communities today. He was the eldest of the three friends and relatives later called the Cappadocian Fathers.",
+      "whyTheyMatter": "He showed that deep theology and practical care for the poor are not rivals but partners."
+    },
+    {
+      "name": "Gregory of Nazianzus",
+      "dates": "around 329 to 390",
+      "era": "Age of the Councils",
+      "place": "Cappadocia, modern Turkey",
+      "role": "Bishop and preacher",
+      "summary": "Gregory was a thoughtful, sometimes reluctant churchman who preferred quiet study to public office. Pressed into leadership during a tense time in the capital, he preached a series of sermons on the nature of God that became some of the most admired theology in the Greek church. He found church politics exhausting and stepped down, retreating to write poetry about his own struggles.",
+      "whyTheyMatter": "His careful words about the Trinity helped the wider church settle what it believes, and his honesty about his own weariness makes him easy to recognize."
+    },
+    {
+      "name": "Gregory of Nyssa",
+      "dates": "around 335 to 395",
+      "era": "Age of the Councils",
+      "place": "Cappadocia, modern Turkey",
+      "role": "Bishop and thinker",
+      "summary": "The younger brother of Basil, Gregory of Nyssa was the most original mind of the three Cappadocians. He wrote about the soul, about grief after the death of his sister, and about a lifelong growing into the knowledge of God that never reaches an end. He argued, far ahead of his time, against the keeping of slaves.",
+      "whyTheyMatter": "He gave the church some of its richest reflection on the endless depth of God and on growing closer to him over a lifetime."
+    },
+    {
+      "name": "Ambrose of Milan",
+      "dates": "around 339 to 397",
+      "era": "Age of the Councils",
+      "place": "Milan in northern Italy",
+      "role": "Bishop and statesman",
+      "summary": "Ambrose was a Roman governor, not even baptized, when the people of Milan suddenly acclaimed him their bishop. He grew into the role with seriousness, preaching, writing hymns, and standing up to emperors. On one famous occasion he refused to give communion to the emperor Theodosius until he repented for ordering a massacre, insisting that no ruler stands above the moral law.",
+      "whyTheyMatter": "He set a lasting example that earthly power must answer to God, and his preaching helped lead Augustine to faith."
+    },
+    {
+      "name": "John Chrysostom",
+      "dates": "around 347 to 407",
+      "era": "Age of the Councils",
+      "place": "Antioch, then Constantinople",
+      "role": "Preacher and bishop",
+      "summary": "John was such a gifted speaker that later generations gave him the nickname Chrysostom, meaning golden-mouthed. He preached plainly and pointedly, urging the rich to care for the poor and calling the powerful to account, which made him beloved by ordinary people and dangerous to the court. He was twice sent into exile and died worn out on the road.",
+      "whyTheyMatter": "His sermons remain a model of preaching that refuses to flatter the powerful and keeps returning to the needs of the poor."
+    },
+    {
+      "name": "Jerome",
+      "dates": "around 347 to 420",
+      "era": "Age of the Councils",
+      "place": "Born in Dalmatia, settled in Bethlehem",
+      "role": "Scholar and translator",
+      "summary": "Jerome was a brilliant and famously prickly scholar who learned Hebrew and Greek so he could translate the Bible into the everyday Latin of his time. The result, later called the Vulgate, became the standard Bible of the Western church for more than a thousand years. He was quick to argue and slow to forgive, a difficult man who nonetheless gave the church a gift it used for centuries.",
+      "whyTheyMatter": "His translation put the Scriptures into the common language of the West for a millennium and set a high standard for working from the original texts."
+    },
+    {
+      "name": "Augustine of Hippo",
+      "dates": "354 to 430",
+      "era": "Age of the Councils",
+      "place": "Hippo in North Africa, modern Algeria",
+      "role": "Bishop and theologian",
+      "summary": "Augustine spent his youth chasing ambition, pleasure, and a string of philosophies, all while his mother prayed for him. After a long inner struggle he came to faith in Milan, became a bishop in his North African hometown, and wrote with rare honesty about his own restless heart. His Confessions reads like a man talking to God about everything he got wrong, and his other writings shaped Western Christianity more than almost any figure outside the New Testament.",
+      "whyTheyMatter": "He gave the church language for grace, sin, and the restless heart, and his story assures every latecomer that no past is too tangled for God."
+    },
+    {
+      "name": "Benedict of Nursia",
+      "dates": "around 480 to 547",
+      "era": "Medieval",
+      "place": "Italy, especially Monte Cassino",
+      "role": "Monk and founder",
+      "summary": "Benedict left the chaos of a collapsing Roman world to live as a hermit, then gathered followers and wrote a short, sane guidebook for life in community. His Rule balanced prayer, work, study, and rest, and asked for moderation rather than heroic extremes. Communities across Europe adopted it, and for centuries monasteries became places where learning, farming, and worship were kept alive.",
+      "whyTheyMatter": "His simple pattern of prayer and work preserved learning through Europe's hardest centuries and still guides Christians seeking a steady rhythm of life."
+    },
+    {
+      "name": "Gregory the Great",
+      "dates": "around 540 to 604",
+      "era": "Medieval",
+      "place": "Rome",
+      "role": "Pope and pastor",
+      "summary": "Gregory came from a wealthy Roman family and gave away his inheritance to become a monk, only to be pulled into leadership as bishop of Rome during plague, famine, and political collapse. He organized relief for the hungry, sent missionaries to England, and wrote a practical handbook on caring for souls that pastors used for centuries. He called himself the servant of the servants of God, a title later popes kept.",
+      "whyTheyMatter": "He combined deep humility with steady administration, and his writing on pastoral care still speaks to anyone responsible for others."
+    },
+    {
+      "name": "Anselm of Canterbury",
+      "dates": "around 1033 to 1109",
+      "era": "Medieval",
+      "place": "Born in Italy, archbishop in England",
+      "role": "Monk and theologian",
+      "summary": "Anselm was a gentle monk and teacher who rose to become archbishop of Canterbury, a post that brought him into repeated conflict with English kings over the freedom of the church. He famously described his work as faith seeking understanding, meaning that he believed first and then tried to grasp what he believed. He wrote a careful argument about why God became human to deal with sin.",
+      "whyTheyMatter": "He showed that prayer and rigorous thinking can live in the same person, and his question of why God became man still anchors how many Christians understand the cross."
+    },
+    {
+      "name": "Bernard of Clairvaux",
+      "dates": "1090 to 1153",
+      "era": "Medieval",
+      "place": "Clairvaux in France",
+      "role": "Monk and preacher",
+      "summary": "Bernard joined a struggling new monastery as a young man and soon founded his own at Clairvaux, which grew into a center of reform. He was an electrifying preacher whose words could move kings and crowds, and his writing about the love of God is tender even now. He also threw himself into the politics and crusading fervor of his age, with results that were not always good, a reminder that even saints are children of their time.",
+      "whyTheyMatter": "His writings on loving God shaped centuries of Christian devotion, and his life shows both the beauty and the blind spots of a passionate believer."
+    },
+    {
+      "name": "Francis of Assisi",
+      "dates": "around 1181 to 1226",
+      "era": "Medieval",
+      "place": "Assisi in central Italy",
+      "role": "Friar and founder",
+      "summary": "Francis was the son of a wealthy cloth merchant who lived for parties and dreams of knightly glory until a series of encounters with the poor and with Christ turned him around. He gave up everything, even the clothes off his back, and began a life of poverty, preaching, and care for lepers and outcasts. The simple brotherhood he started spread across Europe, and his joy in creation and his gentleness drew people who had given up on the church.",
+      "whyTheyMatter": "He reminded a comfortable church that following Jesus can mean traveling light, and his love for the poor and for creation still pulls at people far beyond the faith."
+    },
+    {
+      "name": "Thomas Aquinas",
+      "dates": "around 1225 to 1274",
+      "era": "Medieval",
+      "place": "Italy and Paris",
+      "role": "Friar and theologian",
+      "summary": "Thomas came from a noble family who locked him up to stop him from joining the new order of preaching friars, but he joined anyway. A large, quiet man whom classmates nicknamed the dumb ox, he became the most systematic thinker of the Middle Ages, working to show that reason and faith point to the same God. Near the end of his life he had an experience in prayer after which he said all he had written seemed like straw, and he set down his pen.",
+      "whyTheyMatter": "His patient effort to hold together careful reasoning and deep faith still shapes how many Christians think, and his final humility keeps that achievement in proportion."
+    },
+    {
+      "name": "John Wycliffe",
+      "dates": "around 1328 to 1384",
+      "era": "Medieval",
+      "place": "England",
+      "role": "Scholar and reformer",
+      "summary": "Wycliffe was an Oxford scholar who grew convinced that ordinary people should be able to read the Bible in their own language and that the church of his day had drifted from its source. He pushed for an English Bible and criticized the wealth and corruption of church leaders. He died of natural causes, but his ideas spread, and decades later angry authorities dug up his bones and burned them.",
+      "whyTheyMatter": "He was an early voice for putting the Bible in the hands of common people, and the movement he sparked helped prepare the ground for later reform."
+    },
+    {
+      "name": "Jan Hus",
+      "dates": "around 1372 to 1415",
+      "era": "Medieval",
+      "place": "Prague in Bohemia, modern Czech Republic",
+      "role": "Preacher and reformer",
+      "summary": "Hus was a popular preacher in Prague who took up many of Wycliffe's concerns, calling the church back to Scripture and against corruption. Promised safe passage to defend his views at a great council, he went, and the promise was broken. He was condemned and burned at the stake, reportedly singing as the fire was lit.",
+      "whyTheyMatter": "His courage and his betrayal were remembered for a century, and Martin Luther later saw himself as walking the road Hus had opened."
+    },
+    {
+      "name": "Martin Luther",
+      "dates": "1483 to 1546",
+      "era": "Reformation",
+      "place": "Germany, especially Wittenberg",
+      "role": "Monk and reformer",
+      "summary": "Luther was a German monk tormented by the question of how a sinful person could ever stand before a holy God, until he found his answer in the Bible's promise that we are made right with God by trust in Christ, not by our own efforts. In 1517 he posted a list of objections to the selling of forgiveness, and the argument that followed split Western Christianity. He translated the Bible into vivid German, married a former nun, and wrote with a force that could be both deeply pastoral and harshly cruel, especially in his ugly words about Jews late in life.",
+      "whyTheyMatter": "He recovered the assurance that God accepts us by grace through faith, a discovery that still sets anxious consciences free, even as his worst writings stand as a warning."
+    },
+    {
+      "name": "John Calvin",
+      "dates": "1509 to 1564",
+      "era": "Reformation",
+      "place": "Geneva in Switzerland",
+      "role": "Pastor and theologian",
+      "summary": "Calvin was a quiet French scholar who meant to live a life of study until he was pressed into leading the reform of Geneva. He organized the church and the city with great care and wrote a clear, ordered summary of Christian teaching that has been read ever since. He was disciplined and at times severe, and his record includes the trial and execution of a man for heresy, a stain that honest readers do not hide.",
+      "whyTheyMatter": "His teaching on the greatness of God and the order of the Christian life shaped whole nations and churches, for both good and ill."
+    },
+    {
+      "name": "William Tyndale",
+      "dates": "around 1494 to 1536",
+      "era": "Reformation",
+      "place": "England and the Low Countries",
+      "role": "Translator and martyr",
+      "summary": "Tyndale was an English scholar consumed by the goal of putting the Bible into plain English, said to have told a learned man that he would make a plowboy know Scripture better than the clergy did. Forbidden to do the work at home, he fled to the continent, translated the New Testament, and had it smuggled into England in bales of cloth. He was finally betrayed, strangled, and burned, praying with his last breath that the king of England would have his eyes opened.",
+      "whyTheyMatter": "So much of the English Bible still echoes his phrasing that millions read his words without knowing his name."
+    },
+    {
+      "name": "Thomas Cranmer",
+      "dates": "1489 to 1556",
+      "era": "Reformation",
+      "place": "England",
+      "role": "Archbishop and martyr",
+      "summary": "Cranmer was a cautious scholar who became archbishop of Canterbury under King Henry the Eighth and helped steer England's break with Rome. His great gift was language, and he shaped the prayers and services of the Book of Common Prayer, whose cadences are still used and quoted today. Under a later Catholic queen he was condemned, and after first signing recantations out of fear he recanted those too, thrusting into the fire first the hand that had signed them.",
+      "whyTheyMatter": "His prayers gave English-speaking Christians words for worship, marriage, and death that have lasted nearly five centuries, and his final hours show both human fear and hard-won courage."
+    },
+    {
+      "name": "The Anabaptists",
+      "dates": "from around 1525",
+      "era": "Reformation",
+      "place": "Switzerland, Germany, the Low Countries",
+      "role": "A radical reform movement",
+      "summary": "The Anabaptists were believers who concluded that baptism should follow a personal, adult decision to follow Christ, so they baptized one another again, which gave them their name. They generally refused to take up the sword or to mix the church with the power of the state, convictions that made them hunted by Catholic and Protestant rulers alike. Many were drowned, burned, or driven from their homes, yet the movement survived in groups such as the Mennonites and later the Amish.",
+      "whyTheyMatter": "They insisted that faith cannot be forced and that following Jesus may mean refusing violence, ideas the wider church took centuries to take seriously."
+    },
+    {
+      "name": "Teresa of Avila",
+      "dates": "1515 to 1582",
+      "era": "Reformation",
+      "place": "Avila in Spain",
+      "role": "Nun and reformer",
+      "summary": "Teresa was a Spanish nun who, after years of feeling spiritually half-asleep, went through a deep awakening in midlife and set out to reform her order toward a simpler, more prayerful life. She founded new convents while battling illness, suspicion, and her own doubts, and she wrote about prayer with such warmth and plain good sense that her books are still read. She was practical and funny, once reportedly telling God, who could see how he treated his friends, that it was no wonder he had so few.",
+      "whyTheyMatter": "She wrote about the inner life of prayer with rare clarity, and she proved that deep contemplation and hard practical work can belong to one person."
+    },
+    {
+      "name": "John Bunyan",
+      "dates": "1628 to 1688",
+      "era": "Modern",
+      "place": "Bedford in England",
+      "role": "Preacher and writer",
+      "summary": "Bunyan was a poor English tinker, a mender of pots, who came to a hard-won faith and began to preach without a license in a time when that was illegal. He spent twelve years in jail rather than promise to stop, and there he wrote, telling the story of a man named Christian walking from the City of Destruction to the Celestial City. That book, The Pilgrim's Progress, became one of the most widely read works in the English language.",
+      "whyTheyMatter": "He turned the Christian life into a story anyone could follow, and he showed that no formal education is needed to write something that lasts for centuries."
+    },
+    {
+      "name": "Jonathan Edwards",
+      "dates": "1703 to 1758",
+      "era": "Modern",
+      "place": "New England in colonial America",
+      "role": "Pastor and theologian",
+      "summary": "Edwards was a New England pastor and one of the sharpest minds America has produced, who saw a wave of revival sweep through his town and across the colonies. He preached about the beauty and weight of God with a calm intensity, and he wrote carefully about what genuine religious feeling looks like as opposed to mere excitement. He owned enslaved people, a fact that sits in painful tension with his vision of God, and his own congregation eventually dismissed him.",
+      "whyTheyMatter": "He thought harder than almost anyone about the difference between true and false experiences of God, and his life holds together brilliance and serious moral failure."
+    },
+    {
+      "name": "John Wesley",
+      "dates": "1703 to 1791",
+      "era": "Modern",
+      "place": "England",
+      "role": "Preacher and founder of Methodism",
+      "summary": "Wesley was an Anglican clergyman who, after years of religious effort, felt his heart strangely warmed at a meeting and finally trusted that Christ had saved even him. He then spent decades riding tens of thousands of miles on horseback to preach in fields and streets to people the established church ignored, especially the poor and the working class. He organized his converts into small groups for prayer and accountability, and out of his work the Methodist movement was born.",
+      "whyTheyMatter": "He carried the gospel to people the church had overlooked and built a way of organizing ordinary believers for growth and care that spread around the world."
+    },
+    {
+      "name": "William Carey",
+      "dates": "1761 to 1834",
+      "era": "Modern",
+      "place": "England, then India",
+      "role": "Missionary and translator",
+      "summary": "Carey was an English shoemaker with little schooling who taught himself languages and became convinced that Christians had a duty to carry the gospel to the whole world. He sailed to India and spent the rest of his life there, translating the Bible into several Indian languages, starting schools, and campaigning against the burning of widows. He buried a child and watched his wife lose her mind under the strain, and he kept working.",
+      "whyTheyMatter": "He helped launch the modern missionary movement, and his motto, to expect great things from God and attempt great things for God, still stirs people to action."
+    },
+    {
+      "name": "Charles Spurgeon",
+      "dates": "1834 to 1892",
+      "era": "Modern",
+      "place": "London in England",
+      "role": "Preacher",
+      "summary": "Spurgeon was preaching to thousands in London while still in his early twenties, drawing crowds so large that a great hall was built to hold them. His sermons were warm, plain, and full of Christ, and they were printed and read around the world week by week. He struggled for years with crippling depression and chronic illness, and he spoke about that darkness openly, which has comforted many who carry the same weight.",
+      "whyTheyMatter": "He showed that the deepest preaching can also be the plainest, and his honesty about depression speaks to believers who suffer in silence."
+    },
+    {
+      "name": "Dietrich Bonhoeffer",
+      "dates": "1906 to 1945",
+      "era": "Modern",
+      "place": "Germany",
+      "role": "Pastor and theologian",
+      "summary": "Bonhoeffer was a young German pastor and scholar who refused to go along with Hitler and the part of the church that bowed to him. He helped lead a resistant church, ran an underground seminary, and wrote about the cost of following Jesus rather than the cheap comfort of an easy faith. Drawn into a plot against Hitler, he was arrested, imprisoned, and hanged days before the camp was liberated.",
+      "whyTheyMatter": "He named the difference between cheap grace and costly grace, and he paid for his convictions with his life when most around him stayed silent."
+    },
+    {
+      "name": "C.S. Lewis",
+      "dates": "1898 to 1963",
+      "era": "Modern",
+      "place": "Belfast and Oxford",
+      "role": "Scholar and writer",
+      "summary": "Lewis was an Oxford literature professor and a confirmed atheist who, after long arguments with friends and a slow change of mind, came to faith in his thirties. He went on to write some of the most beloved Christian books of the past century, from plainspoken defenses of the faith to the Narnia stories read by children and adults alike. He wrote with humor and imagination, and after the death of his wife he wrote with raw honesty about grief and doubt.",
+      "whyTheyMatter": "He helped countless skeptics take Christianity seriously by speaking their language, and he never pretended that faith means the end of hard questions."
+    }
+  ]
+}

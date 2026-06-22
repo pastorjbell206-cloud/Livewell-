@@ -1,0 +1,81 @@
+{
+  "slug": "anxiety",
+  "title": "Eight Weeks Toward a Quieter Mind",
+  "subtitle": "An eight week guided plan for the anxious mind from James Bell. Small daily practices, honest readings, and prayer for the nights when fear will not lift.",
+  "intro": "This is an eight week walk for the person whose mind will not be quiet. Each week holds one focus, one small daily practice, one thing to read, one tool to use, and one honest question. It moves slowly on purpose, from naming the anxiety, to caring for the body that carries it, to the older practices of lament and prayer, to the people who can help you bear it. Anxiety is not a verdict on your faith. It is a weight, and weights can be carried differently.\n\nIt is not a cure, and it is not a substitute for a doctor, a licensed counselor, a pastor, or the community that knows your name. Walk it imperfectly. A missed week is not failure, you just pick it back up. There is no scorecard here, because anxiety has handed you enough scorecards already. This one you get to put down.",
+  "careNote": "Persistent or impairing anxiety belongs in the care of a doctor and a licensed counselor, seeking that help is faith and not failure, and in a crisis call or text 988.",
+  "weeks": [
+    {
+      "n": 1,
+      "focus": "Naming it without shame",
+      "why": "Anxiety grows best in the dark, unnamed and unexamined. The first work is not to defeat it but to look at it plainly, the way you would look at any other fact about your life. Naming a fear does not give it power. It takes some back.",
+      "practice": "Each day, write down in one or two plain sentences what you are anxious about. No spin, no spiritual editing. Just the truth on paper, where you can see its actual size.",
+      "read": { "label": "The Anxious Mind, on what anxiety is and what it is not", "href": "/life/the-anxious-mind" },
+      "tool": { "label": "The Help page, so you know where the doors are before you need them", "href": "/help" },
+      "reflection": "What am I most afraid of beneath the daily worries, and how long have I been carrying it alone?"
+    },
+    {
+      "n": 2,
+      "focus": "The body first",
+      "why": "You are not a mind in a jar. Anxiety lives in a body, in its sleep, its food, its stillness, and a body run ragged will hand the mind nothing but alarms. Before the deeper work, the body needs basic mercy. This is not self improvement. It is stewardship of the one body you were given.",
+      "practice": "Each day, take a ten minute walk outside and keep a set bedtime. That is the whole practice. Treat both as appointments you do not cancel on yourself.",
+      "read": { "label": "The Body and the Rhythms, on sleep, movement, and rest as obedience", "href": "/life/the-body-and-the-rhythms" },
+      "tool": { "label": "The Verse Finder, look up what Scripture says about sleep and rest", "href": "/tools/verse-finder" },
+      "reflection": "How have I been treating my body, and what is it telling me that I have refused to hear?"
+    },
+    {
+      "n": 3,
+      "focus": "The practice of lament",
+      "why": "The Bible does not tell anxious people to cheer up. It gives them psalms that argue, weep, and accuse, prayed by people whose fear was real. Lament is the prayer language of those who refuse to lie to God. This week you borrow those words until you find your own.",
+      "practice": "Each day, pray one psalm of lament aloud, Psalm 13 is a good place to start. Five minutes. Let the psalmist say the things you were taught not to say.",
+      "read": { "label": "The Lament page, on the prayer the church forgot", "href": "/lament" },
+      "tool": { "label": "Scripture Memory, learn one line of a lament psalm by heart", "href": "/tools/scripture-memory" },
+      "reflection": "What have I been too polite to say to God, and what has the politeness cost me?"
+    },
+    {
+      "n": 4,
+      "focus": "What the mind rehearses",
+      "why": "An anxious mind is a rehearsal hall. It runs the same disaster again and again, and every run wears the groove deeper. You cannot simply stop rehearsing, but you can notice the script, question it, and set a truer line beside it. The mind believes what it repeats.",
+      "practice": "When you catch a rehearsed fear this week, write it down, then write one sentence beside it of what is actually true, as far as you can honestly tell. Two lines, side by side.",
+      "read": { "label": "The Doubt page, because anxious minds and doubting minds rehearse in the same room", "href": "/doubt" },
+      "tool": { "label": "The Emotional Health tool, to see the patterns underneath the rehearsals", "href": "/tools/emotional-health" },
+      "reflection": "What story does my anxiety keep telling me, and who would I be if I stopped believing it without checking?"
+    },
+    {
+      "n": 5,
+      "focus": "Attention and the scroll",
+      "why": "Whatever you give your attention to, you are being formed by. The feed is engineered to keep an anxious mind anxious, because alarm holds attention better than peace does. This week you do not quit the phone. You simply stop letting it speak first.",
+      "practice": "Keep the phone in another room for the first thirty minutes of each day. Let the first voice your mind hears be silence, Scripture, or prayer, not the news of everything wrong everywhere.",
+      "read": { "label": "The Integrated Life, on living one life instead of a scattered one", "href": "/life" },
+      "tool": { "label": "Scripture Memory, put the verse you memorized where the scroll used to be", "href": "/tools/scripture-memory" },
+      "reflection": "What gets my first and best attention each day, and what is that attention slowly making of me?"
+    },
+    {
+      "n": 6,
+      "focus": "Prayer when fear will not lift",
+      "why": "Some fear does not leave when you pray. The honest tradition has always known this, which is why it gave us short prayers that can be breathed rather than performed. Prayer in anxiety is not a technique for calm. It is company in the dark, which is sometimes the more important thing.",
+      "practice": "Choose one breath prayer, Lord Jesus Christ, have mercy on me is the old one, and pray it slowly whenever anxiety rises. Inhale on the first half, exhale on the second. As many times a day as you need.",
+      "read": { "label": "Return to The Anxious Mind and read it again, this time as prayer", "href": "/life/the-anxious-mind" },
+      "tool": { "label": "The Prayer Generator, for the nights when no words will come", "href": "/tools/prayer-generator" },
+      "reflection": "When fear does not lift after I pray, what do I conclude about God, and is that conclusion true?"
+    },
+    {
+      "n": 7,
+      "focus": "Telling one person",
+      "why": "Anxiety isolates, and isolation feeds anxiety, and the loop tightens quietly for years. The loop breaks the same way it formed, one relationship at a time. You do not need an audience. You need one person who knows, because a carried weight shared is a different weight.",
+      "practice": "Each day, pray by name for one trusted person, a friend, a pastor, a sibling. Before the week ends, tell that person in plain words what you have been carrying. One conversation. That is the practice.",
+      "read": { "label": "Friendship Against Isolation, on why nobody heals alone", "href": "/life/friendship-against-isolation" },
+      "tool": { "label": "The Help page, if telling one person shows you it is time to tell a professional", "href": "/help" },
+      "reflection": "What keeps me from being known, and what am I protecting by staying hidden?"
+    },
+    {
+      "n": 8,
+      "focus": "A sustainable rule of life",
+      "why": "Eight weeks of practices mean little if they end at week eight. A rule of life is not a regimen. It is a trellis, a few chosen supports that hold a life up so it can grow in one direction over years. This week you keep what helped and let the rest go without guilt.",
+      "practice": "Write on a card the two or three practices from these weeks that actually helped. Do them each day. That card is your rule, small enough to keep, strong enough to hold.",
+      "read": { "label": "The Discipleship page, on the long obedience these weeks were pointing toward", "href": "/discipleship" },
+      "tool": { "label": "The Whole Life Assessment, take stock of where you are now", "href": "/life/assessment" },
+      "reflection": "What few practices will I still be keeping a year from now, and who will I ask to keep me honest about them?"
+    }
+  ]
+}

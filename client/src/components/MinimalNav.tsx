@@ -1,18 +1,31 @@
 /**
- * Primary navigation. Uses the canonical two-movement / six-pillar taxonomy
- * (lib/taxonomy.ts) so nav, footer, archive chips, and card tags all speak the
- * same labels:
+ * Primary navigation. A clean two-level menu mapped to the five content pillars
+ * and their sub-pathways (lib/subPathways.ts), plus a dedicated home for the
+ * long-form study guides and series:
  *
- *   Essays → the six pillars (Diagnosis + Formation) + All writing + Skeptic
- *   For Pastors → The Pastoral Angle + PCN + resources
- *   Living Well → Pillar 6 + Marriage/Parenting landing pages + Devotionals
+ *   Theological Depth ▸ Doctrine & Scripture · Church History · Biblical Theology
+ *   Prophetic Justice ▸ Economic Justice · Race & Reconciliation · The Vulnerable · Systemic Sin
+ *   Prophetic Disruption ▸ Church & Empire · Christian Nationalism · Cultural Captivity
+ *   Leadership Formation ▸ Pastoral Health · Staff & Teams · Preaching · Church Revitalization
+ *   Integrated Life ▸ Marriage & Family · Rhythms & Sabbath · Vocation & Money
+ *   Study Guides & Series → every multi-part guide/devotional in one place
  *   Books / About → flat links
+ *
+ * The dropdowns only list sub-pathways that have at least one published post
+ * (counted from `posts.navIndex`); a pillar with none renders as a plain link.
  */
 import { Link, useLocation } from "wouter";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ChevronDown, Menu, Search, X } from "lucide-react";
 
-import { PILLARS_V2, PILLAR_BY_SLUG, pillarUrl } from "@/lib/taxonomy";
+import { trpc } from "@/lib/trpc";
+import {
+  PILLAR_ORDER,
+  subPathwaysForPillar,
+  pillarListingUrl,
+} from "@/lib/subPathways";
+import { SUBPATHWAY_BY_SLUG } from "@/lib/subpathwayMap.generated";
+import { HIDDEN_SLUGS } from "@/lib/hiddenSlugs";
 
 interface DropdownItem {
   label: string;
@@ -26,70 +39,75 @@ interface NavLink {
   dropdown?: DropdownItem[];
 }
 
-function buildNavLinks(): NavLink[] {
-  const pillarItem = (slug: string): DropdownItem => {
-    const p = PILLAR_BY_SLUG.get(slug);
+/**
+ * Build the nav from the live sub-pathway counts. `counts` maps a sub-pathway
+ * label → number of published posts. Until the feed loads (`hasData` false) we
+ * optimistically show every sub-pathway so the menu is never barren.
+ */
+function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLink[] {
+  const pillarLinks: NavLink[] = PILLAR_ORDER.map(pillar => {
+    const subs = subPathwaysForPillar(pillar).filter(
+      s => !hasData || (counts[s.label] ?? 0) > 0
+    );
+    // Some pillars lead with a curated hub before the article sub-pathways.
+    const extras: DropdownItem[] =
+      pillar === "Integrated Life"
+        ? [
+            { label: "The Integrated Life Hub", href: "/life", description: "One undivided life before God — the inner life, the body, the home, work and money, and the world." },
+            { label: "The Whole-Life Assessment", href: "/life/assessment", description: "Map where your life is flourishing and where it has gone quiet, and get a rule of life for this season." },
+            { label: "Family Discipleship", href: "/family", description: "Devotions, teen apologetics, parenting, and marriage — for the whole house." },
+          ]
+        : pillar === "Theological Depth"
+        ? [
+            { label: "The Depth Hub", href: "/theology", description: "Contested doctrines explained fairly — every view in its strongest voice, sorted by how much it matters." },
+            { label: "Church History", href: "/theology/history", description: "The story you were born into — the councils, the creeds, the heresies, and the people who carried the faith." },
+            { label: "Biblical Theology", href: "/theology/biblical", description: "The whole Bible as one story that climaxes in Christ — the storyline, the themes, and every book." },
+            { label: "Hard Questions", href: "/theology/questions", description: "Honest answers to what people actually ask — suffering, salvation, the Bible, death, and doubt." },
+            { label: "Why So Many Churches?", href: "/theology/traditions", description: "An irenic guide to the great traditions and the core they all share." },
+          ]
+        : pillar === "Prophetic Disruption"
+        ? [
+            { label: "The Disruption Hub", href: "/disruption", description: "The church's captivity to tribe, nation, and culture — truth defended selectively, the left and the right indicted alike." },
+            { label: "The Consistency Check", href: "/disruption/consistency", description: "A mirror, not a scorecard: do you defend truth selectively, one standard for your side and another for theirs?" },
+            { label: "Hard Questions", href: "/disruption/questions", description: "Is the gospel political? Is Christianity left or right? What even is social justice?" },
+          ]
+        : pillar === "Prophetic Justice"
+        ? [
+            { label: "The Justice Hub", href: "/justice", description: "Mishpat and tsedaqah — the poor at the gate, the worker, the vulnerable, and the church's silence." },
+            { label: "The Call", href: "/justice/posture", description: "Biblical justice defined from the text up, and God's lean toward the poor and the foreigner." },
+          ]
+        : pillar === "Leadership Formation"
+        ? [
+            { label: "The Leadership Hub", href: "/leadership", description: "A working library for pastors and lay leaders — tools, articles, and sermon series for the weight of leading the church." },
+            { label: "The Leadership Library", href: "/leadership/library", description: "Every leadership article in one searchable place — preaching, exegesis, formation, and care." },
+            { label: "Sermon Series Library", href: "/leadership/sermon-series", description: "Complete series plans, book by book and topic by topic, with the arc and every sermon's aim." },
+            { label: "Sermon Series — Every Book of the Bible", href: "/leadership/bible-sermons", description: "A ready-to-preach series for all 66 books, Genesis to Revelation — big idea, Christ connection, and the arc." },
+            { label: "Servant Leadership", href: "/leadership/servant-leadership", description: "The nine biblical marks of a servant leader — the qualities the church neglected because they cost the leader something." },
+            { label: "The Servant Leadership Handbook", href: "/leadership/handbook", description: "A free twelve-chapter book on leading the church — from the towel and the throne to raising your replacement." },
+            { label: "Training Guides", href: "/leadership/guides", description: "Free session-by-session guides: servant leadership, elder training, deacon training, and developing leaders." },
+          ]
+        : [];
+    if (subs.length === 0) {
+      // No populated sub-pathway. Still surface Family for Integrated Life.
+      if (extras.length) {
+        return { label: pillar, dropdown: [...extras, { label: `All ${pillar}`, href: pillarListingUrl(pillar) }] };
+      }
+      return { label: pillar, href: pillarListingUrl(pillar) };
+    }
     return {
-      label: p?.name ?? slug,
-      href: pillarUrl(slug),
-      description: p?.blurb,
+      label: pillar,
+      dropdown: [
+        ...extras,
+        { label: `All ${pillar}`, href: pillarListingUrl(pillar) },
+        ...subs.map(s => ({ label: s.label, href: pillarListingUrl(pillar, s.slug) })),
+      ],
     };
-  };
+  });
 
   return [
-    {
-      label: "Essays",
-      dropdown: [
-        ...PILLARS_V2.map(p => ({
-          label: p.name,
-          href: pillarUrl(p.slug),
-          description: p.blurb,
-        })),
-        {
-          label: "All writing",
-          href: "/writing",
-          description: "Browse the full essay archive",
-        },
-        {
-          label: "Start here if you're skeptical",
-          href: "/skeptic-track",
-          description: "Seven essays in argument order",
-        },
-      ],
-    },
-    {
-      label: "For Pastors",
-      dropdown: [
-        pillarItem("the-pastoral-angle"),
-        {
-          label: "Pastors Connection Network",
-          href: "/pastors",
-          description: "You don't have to lead alone",
-        },
-        {
-          label: "Pastor's Resource Wall",
-          href: "/pastors-resource-wall",
-          description: "Sermon prep, study guides, citation tools",
-        },
-        {
-          label: "Resources for pastors",
-          href: "/resources-for-pastors",
-          description: "Downloadable guides and tools",
-        },
-      ],
-    },
-    {
-      label: "Living Well",
-      dropdown: [
-        pillarItem("living-well-after-christendom"),
-        { label: "Marriage", href: "/marriage" },
-        { label: "Parenting", href: "/parenting" },
-        {
-          label: "Devotionals",
-          href: "/writing?pillar=living-well-after-christendom&subTheme=practices",
-        },
-      ],
-    },
+    { label: "Start here", href: "/start" },
+    ...pillarLinks,
+    { label: "Resources", href: "/resources" },
     { label: "Books", href: "/books" },
     { label: "About", href: "/about" },
   ];
@@ -102,7 +120,27 @@ export default function MinimalNav() {
   const [searchQuery, setSearchQuery] = useState("");
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const navLinks = buildNavLinks();
+
+  // Live sub-pathway counts drive which dropdowns appear.
+  const navIndexQuery = trpc.posts.navIndex.useQuery(undefined, {
+    staleTime: 5 * 60 * 1000,
+  });
+  const { counts, hasData } = useMemo(() => {
+    const rows = navIndexQuery.data ?? [];
+    const c: Record<string, number> = {};
+    for (const r of rows) {
+      if (HIDDEN_SLUGS.has((r as any).slug)) continue;
+      // Prefer a sub-pathway written to the DB; otherwise fall back to the
+      // static slug→category map so the menu works without a DB backfill.
+      const label =
+        ((r as any).subPathway as string | null) ||
+        SUBPATHWAY_BY_SLUG[(r as any).slug]?.sub ||
+        null;
+      if (label) c[label] = (c[label] ?? 0) + 1;
+    }
+    return { counts: c, hasData: rows.length > 0 };
+  }, [navIndexQuery.data]);
+  const navLinks = useMemo(() => buildNavLinks(counts, hasData), [counts, hasData]);
 
   const isActive = (href: string) =>
     location === href || location.startsWith(href + "/");
@@ -125,6 +163,33 @@ export default function MinimalNav() {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  // Mobile menu hygiene: close on any route change, close on Escape, and lock
+  // body scroll while open so the page cannot scroll behind the overlay.
+  useEffect(() => {
+    setMobileOpen(false);
+    setSearchOpen(false);
+  }, [location]);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setMobileOpen(false);
+        setSearchOpen(false);
+        setOpenDropdown(null);
+      }
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, []);
+
+  useEffect(() => {
+    if (mobileOpen) {
+      const prev = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => { document.body.style.overflow = prev; };
+    }
+  }, [mobileOpen]);
 
   return (
     <>
@@ -200,10 +265,10 @@ export default function MinimalNav() {
                 flexWrap: "wrap",
               }}
             >
-              {PILLARS_V2.map(p => (
+              {PILLAR_ORDER.map(pillar => (
                 <Link
-                  key={p.slug}
-                  href={pillarUrl(p.slug)}
+                  key={pillar}
+                  href={pillarListingUrl(pillar)}
                   onClick={() => setSearchOpen(false)}
                   style={{
                     fontFamily: "var(--U)",
@@ -215,7 +280,7 @@ export default function MinimalNav() {
                     textDecoration: "none",
                   }}
                 >
-                  {p.short}
+                  {pillar}
                 </Link>
               ))}
             </div>
@@ -300,7 +365,11 @@ export default function MinimalNav() {
             className="desktop-nav"
           >
             {navLinks.map(link => (
-              <div key={link.label} style={{ position: "relative" }}>
+              <div
+                key={link.label}
+                style={{ position: "relative" }}
+                onMouseLeave={() => link.dropdown && openDropdown === link.label && setOpenDropdown(null)}
+              >
                 {link.dropdown ? (
                   <>
                     <button
@@ -347,7 +416,6 @@ export default function MinimalNav() {
                     {openDropdown === link.label && (
                       <div
                         role="menu"
-                        onMouseLeave={() => setOpenDropdown(null)}
                         style={{
                           position: "absolute",
                           top: "100%",
@@ -438,6 +506,20 @@ export default function MinimalNav() {
               </div>
             ))}
 
+            <Link
+              href="/help"
+              style={{
+                color: "var(--mustard-text)",
+                fontFamily: "var(--U)",
+                fontSize: "13px",
+                fontWeight: 600,
+                padding: "8px 12px",
+                whiteSpace: "nowrap",
+              }}
+            >
+              Find Help
+            </Link>
+
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
@@ -495,7 +577,12 @@ export default function MinimalNav() {
                 border: "none",
                 color: "var(--ink)",
                 cursor: "pointer",
-                padding: "8px",
+                padding: "11px",
+                minWidth: "44px",
+                minHeight: "44px",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
             >
               <Search size={20} aria-hidden />
@@ -510,7 +597,12 @@ export default function MinimalNav() {
                 border: "none",
                 color: "var(--ink)",
                 cursor: "pointer",
-                padding: "8px",
+                padding: "11px",
+                minWidth: "44px",
+                minHeight: "44px",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
             >
               {mobileOpen ? <X size={22} aria-hidden /> : <Menu size={22} aria-hidden />}
@@ -528,6 +620,21 @@ export default function MinimalNav() {
               overflowY: "auto",
             }}
           >
+            <Link
+              href="/help"
+              onClick={() => setMobileOpen(false)}
+              style={{
+                display: "block",
+                padding: "12px 0",
+                fontFamily: "var(--U)",
+                fontSize: "15px",
+                fontWeight: 700,
+                color: "var(--mustard-text)",
+                borderBottom: "1px solid var(--border)",
+              }}
+            >
+              Find Help for What You Are Facing
+            </Link>
             {navLinks.map(link => (
               <div key={link.label}>
                 {link.dropdown ? (
@@ -634,53 +741,44 @@ export default function MinimalNav() {
                 )}
               </div>
             ))}
-            <div style={{ display: "flex", gap: "8px", marginTop: "16px" }}>
+            <div style={{ display: "flex", gap: "12px", marginTop: "16px" }}>
               <Link
                 href="/start"
                 onClick={() => setMobileOpen(false)}
-                style={{ textDecoration: "none", flex: 1 }}
+                style={{
+                  flex: 1,
+                  textDecoration: "none",
+                  textAlign: "center",
+                  background: "var(--ink)",
+                  color: "var(--bone)",
+                  borderBottom: "2px solid var(--mustard)",
+                  padding: "14px 24px",
+                  fontFamily: "var(--U)",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  borderRadius: "var(--radius-sm)",
+                }}
               >
-                <button
-                  type="button"
-                  style={{
-                    background: "var(--ink)",
-                    color: "var(--bone)",
-                    border: "none",
-                    borderBottom: "2px solid var(--mustard)",
-                    padding: "12px 24px",
-                    fontFamily: "var(--U)",
-                    fontSize: "14px",
-                    fontWeight: 600,
-                    borderRadius: "var(--radius-sm)",
-                    cursor: "pointer",
-                    width: "100%",
-                  }}
-                >
-                  Subscribe
-                </button>
+                Subscribe
               </Link>
               <Link
                 href="/membership"
                 onClick={() => setMobileOpen(false)}
-                style={{ textDecoration: "none", flex: 1 }}
+                style={{
+                  flex: 1,
+                  textDecoration: "none",
+                  textAlign: "center",
+                  background: "transparent",
+                  color: "var(--ink)",
+                  border: "1px solid var(--ink)",
+                  padding: "13px 24px",
+                  fontFamily: "var(--U)",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  borderRadius: "var(--radius-sm)",
+                }}
               >
-                <button
-                  type="button"
-                  style={{
-                    background: "transparent",
-                    color: "var(--ink)",
-                    border: "1px solid var(--ink)",
-                    padding: "12px 24px",
-                    fontFamily: "var(--U)",
-                    fontSize: "14px",
-                    fontWeight: 600,
-                    borderRadius: "var(--radius-sm)",
-                    cursor: "pointer",
-                    width: "100%",
-                  }}
-                >
-                  Membership
-                </button>
+                Membership
               </Link>
             </div>
           </div>

@@ -1,0 +1,261 @@
+{
+  "slug": "wedding",
+  "title": "The Wedding Service Builder",
+  "subtitle": "Build an order of service that tells the truth about marriage before two people promise their lives to it.",
+  "intro": "A wedding is not a celebration of feeling. It is the making of a covenant, spoken out loud, in front of witnesses, before God. The words you choose carry weight because they will be remembered long after the flowers are gone.\n\nUse this builder to assemble the service one piece at a time. Each element offers pastoral guidance and sample text you can read as written or shape into your own. Some elements are required by the shape of the thing. Others are gifts you may add or leave aside.\n\nWrite for the couple in front of you, not for a generic couple who does not exist. The best wedding service sounds like it was written for these two people, because it was.",
+  "elements": [
+    {
+      "id": "prelude-seating",
+      "name": "Prelude and Seating",
+      "guidance": "A note for the order of service rather than spoken words. Set the tone before anyone speaks. Music plays as guests are seated and the families are brought forward.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Planning note",
+          "text": "Music plays as guests arrive and find their seats. When the time comes, the grandparents and parents are seated, often the mothers last. The minister, the groom, and the groomsmen take their places at the front. The room settles. A held silence is right here. Let the people feel the weight of what is about to happen before the first word is spoken."
+        }
+      ]
+    },
+    {
+      "id": "processional",
+      "name": "Processional",
+      "guidance": "Another planning note. The wedding party enters, and then the bride. Decide ahead of time whether the guests stand and when they are invited to sit.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Planning note",
+          "text": "The wedding party enters and takes their places. The music changes for the bride. As she comes forward, the guests stand. When she has reached the front and been given to be married, the minister invites everyone to be seated with a simple word: Please be seated."
+        }
+      ]
+    },
+    {
+      "id": "opening-words",
+      "name": "Opening Words and Welcome",
+      "guidance": "Name why everyone is here. Speak to God and to the gathered people in the same breath. Keep it warm and unhurried.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Traditional",
+          "text": "Dearly beloved, we are gathered here in the presence of God and before these witnesses to join this man and this woman in marriage. Marriage is an honorable estate, instituted by God at the beginning of the world, and it is not to be entered into lightly, but reverently and with deep gladness. Into this holy covenant these two persons come now to be joined."
+        },
+        {
+          "label": "Warm and modern",
+          "text": "Welcome. Family, friends, the ones who drove a long way and the ones who live next door. We have come to one place for one reason. We are here to watch two people we love promise their lives to each other, and to ask God to hold them to it. This is a glad day. It is also a serious one. Marriage is a gift, and it is a weight, and the two of them have decided to carry it together. Let us begin."
+        },
+        {
+          "label": "Brief",
+          "text": "Friends and family, we are gathered in the presence of God to witness and bless the joining of these two lives. We come with joy. We come to pray. And we come to remember that what is made here today is meant to last. Welcome."
+        }
+      ]
+    },
+    {
+      "id": "word-on-marriage",
+      "name": "A Word on Marriage",
+      "guidance": "Say plainly what marriage is and what it is for. This is the theological center of the welcome. Do not rush past it.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Covenant and grace",
+          "text": "Marriage was not invented by us. It was given to us. In the beginning God made the two of them, and He brought them together, and He said it was not good for a person to be alone. Marriage is a covenant, not a contract. A contract protects you from the other person. A covenant binds you to them. It says, I am yours and you are mine, for better and for worse, and there is no clause that lets me out when the worse arrives. That is a frightening promise to make. None of us keeps it on our own strength. We keep it because God keeps us. This marriage will only stand because the grace that holds it is stronger than the two people standing inside it."
+        },
+        {
+          "label": "Reflecting Christ and the church",
+          "text": "There is a reason a wedding feels like more than two people in love. Marriage was made to show us something. It is meant to be a picture of the love between Christ and His church, a love that gives itself away, that lays down its life, that stays. When a husband loves his wife as Christ loved the church, and when a wife gives herself to her husband in trust, the world catches a glimpse of a deeper love than the one in this room. You will not always feel that love. You will sometimes have to choose it against your feelings. Choose it anyway. The picture is worth your whole life."
+        },
+        {
+          "label": "Plain and honest",
+          "text": "Marriage is two people deciding to stop living for themselves. That is the whole of it, and it is harder than it sounds. You are promising to put another person ahead of yourself for the rest of your life, on the days you want to and the days you do not. There will be days you do not. Love is not the feeling that makes the promise easy. Love is the choice that keeps the promise when the feeling is gone. God is the one who teaches us how. He has loved us like that first, and He will give you what you need to love each other the same way."
+        }
+      ]
+    },
+    {
+      "id": "charge-to-couple",
+      "name": "Charge to the Couple",
+      "guidance": "Turn and speak directly to the two of them. This is the moment the service narrows from the room to the two people at its center.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Direct charge",
+          "text": "I want to speak to the two of you now. In a moment you will make promises that will shape every year you have left. Do not make them carelessly. Marriage will ask more of you than you know how to give. It will find the selfishness in you that you did not know was there. When it does, do not run. Turn toward each other and turn toward God. Forgive quickly. Speak kindly. Stay. The love you feel today is real, but it is young. The love you are building will be deeper, and it will cost you more, and it will be worth far more than what you feel right now."
+        },
+        {
+          "label": "Tender charge",
+          "text": "Look at each other. This is the face you have chosen. On your best days, this is the person you will want to tell first. On your worst days, this is the person who will sit with you in the dark. Be gentle with each other. You are holding something fragile in your hands, and it can be wounded by carelessness as easily as by cruelty. Guard it. Tend it. And when you fail each other, and you will, let grace have the last word in your home, the way God has let grace have the last word with you."
+        }
+      ]
+    },
+    {
+      "id": "declaration-of-intent",
+      "name": "Declaration of Intent",
+      "guidance": "The will is asked before the vows are spoken. This is the I will, the public statement of intent that precedes the personal promises.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Traditional",
+          "text": "Will you have this woman to be your wife, to live together in the covenant of marriage. Will you love her, comfort her, honor and keep her, in sickness and in health, and forsaking all others, be faithful to her as long as you both shall live. (Answer: I will.) And will you have this man to be your husband, to live together in the covenant of marriage. Will you love him, comfort him, honor and keep him, in sickness and in health, and forsaking all others, be faithful to him as long as you both shall live. (Answer: I will.)"
+        },
+        {
+          "label": "Plain modern",
+          "text": "Before you make your promises to each other, I ask you to declare your intention before God and these witnesses. Do you come here freely and without reservation to give yourself to this man in marriage. (Answer: I do.) And do you come here freely and without reservation to give yourself to this woman in marriage. (Answer: I do.)"
+        }
+      ]
+    },
+    {
+      "id": "vows",
+      "name": "The Vows",
+      "guidance": "The heart of the service. The couple speaks their promises to each other. Offer them a set to repeat after you, or let them speak their own. These are the words they will remember.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Traditional",
+          "text": "I take you to be my wedded wife, to have and to hold from this day forward, for better, for worse, for richer, for poorer, in sickness and in health, to love and to cherish, till death do us part. And to this I pledge you my faith."
+        },
+        {
+          "label": "Plain modern",
+          "text": "I choose you today, and I will keep choosing you. I promise to stand with you in the good years and the hard ones. I will tell you the truth, even when it is hard to say. I will forgive you, and I will ask you to forgive me. I will work, and rest, and laugh, and grow old beside you. You are my home now. I am yours, completely, for the rest of my life."
+        },
+        {
+          "label": "Covenantal",
+          "text": "Before God, who made me and who brought me to you, I make you this covenant. I will love you when love is easy and when it is the last thing I feel. I will be faithful to you in body and in mind, forsaking all others, keeping no part of myself back. I will lead and I will follow as our life requires, and I will lay down my own wants for yours. What God joins today, I will not let go. With my whole life I take you, and I will not stop until death takes me from you. So help me God."
+        }
+      ]
+    },
+    {
+      "id": "exchange-of-rings",
+      "name": "Exchange of Rings",
+      "guidance": "A visible sign of an invisible promise. The ring is given with words that name what it means: a circle with no end, a covenant that does not stop.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Traditional",
+          "text": "This ring I give you as a sign of my love and faithfulness. With this ring I marry you, with all that I am and all that I have, in the name of the Father, and of the Son, and of the Holy Spirit. (Repeated by each in turn as the ring is placed.)"
+        },
+        {
+          "label": "Plain modern",
+          "text": "I give you this ring. It has no beginning and no end, and neither does the promise I am making to you. Every time you see it, remember that you are loved, that you are chosen, and that I am yours. Wear it as a sign of everything I have vowed today."
+        }
+      ]
+    },
+    {
+      "id": "scripture-readings",
+      "name": "Scripture Readings",
+      "guidance": "Let the Word of God speak over the marriage. Choose one or two readings. These may be read by the minister or by family and friends.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "1 Corinthians 13",
+          "text": "From the first letter to the Corinthians, the thirteenth chapter. Love is patient and kind. Love does not envy or boast. It is not arrogant or rude. It does not insist on its own way. It is not irritable or resentful. It does not rejoice at wrongdoing, but rejoices with the truth. Love bears all things, believes all things, hopes all things, endures all things. Love never ends. So now faith, hope, and love remain, these three. But the greatest of these is love."
+        },
+        {
+          "label": "Colossians 3",
+          "text": "From the letter to the Colossians, the third chapter. Put on then, as God's chosen ones, holy and beloved, compassionate hearts, kindness, humility, meekness, and patience, bearing with one another and, if one has a complaint against another, forgiving each other. As the Lord has forgiven you, so you also must forgive. And above all these put on love, which binds everything together in perfect harmony. And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful."
+        },
+        {
+          "label": "Ephesians 5",
+          "text": "From the letter to the Ephesians, the fifth chapter. Submit to one another out of reverence for Christ. Husbands, love your wives, as Christ loved the church and gave himself up for her. In the same way husbands should love their wives as their own bodies. He who loves his wife loves himself. For no one ever hated his own flesh, but nourishes and cherishes it, just as Christ does the church. This mystery is profound, and I am saying that it refers to Christ and the church."
+        },
+        {
+          "label": "Genesis 2",
+          "text": "From the book of Genesis, the second chapter. Then the Lord God said, It is not good that the man should be alone. I will make him a helper fit for him. So the Lord God caused a deep sleep to fall upon the man, and while he slept took one of his ribs. And the rib that the Lord God had taken from the man he made into a woman and brought her to the man. Therefore a man shall leave his father and his mother and hold fast to his wife, and they shall become one flesh."
+        }
+      ]
+    },
+    {
+      "id": "song",
+      "name": "A Song or Special Music",
+      "guidance": "Music can give the room a moment to breathe and reflect. Place it after the readings or after the rings. Leave it out if the service is already full.",
+      "optional": true,
+      "samples": [
+        {
+          "label": "Planning note",
+          "text": "A soloist, musician, or the gathered congregation offers a song here. If the couple has chosen a hymn or a piece of music that means something to them, this is a fitting place for it. Let the room be still and receive it before the service moves on."
+        }
+      ]
+    },
+    {
+      "id": "unity-candle",
+      "name": "Unity Candle or Symbol",
+      "guidance": "An optional visible symbol of two lives becoming one. Use it only if it means something to the couple, never as filler.",
+      "optional": true,
+      "samples": [
+        {
+          "label": "Unity candle",
+          "text": "On either side a single candle burns, each lit earlier by your families, each representing the life you have lived until today. Now you take those two flames and together light one. The two single candles are not put out, because you do not stop being who you are. But from this day there is one light where there were two, and the home you make will be warmed by it."
+        }
+      ]
+    },
+    {
+      "id": "communion",
+      "name": "Communion",
+      "guidance": "An optional first act of worship as a married couple. Best when both are believers and the gathering can share it meaningfully. Decide whether it is for the couple alone or for all who follow Christ.",
+      "optional": true,
+      "samples": [
+        {
+          "label": "Couple's communion",
+          "text": "As your first act together as husband and wife, you come to the table of the Lord. On the night He was betrayed, Jesus took bread, and when He had given thanks He broke it and said, This is my body, given for you. In the same way He took the cup and said, This cup is the new covenant in my blood. You begin your marriage where every good thing begins, at the foot of the cross, receiving from Him before you give anything to each other. Take and eat. Take and drink. Remember Him."
+        }
+      ]
+    },
+    {
+      "id": "prayer-of-blessing",
+      "name": "Prayer of Blessing",
+      "guidance": "Pray over the marriage you have just witnessed. Ask God for the things this particular couple will need. This is intercession, not a summary.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Prayer over the marriage",
+          "text": "Father, You have joined these two together, and what You have joined no one can pull apart. We ask You now to keep them. Give them patience for the years that test it and tenderness for the years that wear it thin. When they are tempted to keep score, teach them to forgive. When they are tempted to grow cold, send Your fire. Make their home a place where the weary are welcomed and the truth is told in love. Hold them when they cannot hold themselves. And when they are old, let them look back on a life of faithfulness and say it was good, and it was hard, and You were with us in all of it. We ask it in the name of Jesus. Amen."
+        },
+        {
+          "label": "Brief blessing",
+          "text": "Lord, bless this man and this woman. Be the third strand in the cord that binds them, the strength that does not break. Give them joy in each other, grace for each other, and many good years together. Keep them faithful to the end, and bring them at last to Your table together, whole and unashamed. In Jesus' name. Amen."
+        }
+      ]
+    },
+    {
+      "id": "pronouncement",
+      "name": "The Pronouncement",
+      "guidance": "The declaration that they are married. Said with authority. This is the moment the covenant is sealed and made public.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Traditional",
+          "text": "For as much as you have consented together in this covenant, and have declared the same before God and these witnesses, and have given and pledged your promises to each other, and have joined hands and exchanged rings, by the authority committed to me as a minister of the gospel, and according to the laws of this state, I now pronounce you husband and wife. Those whom God has joined together, let no one separate."
+        },
+        {
+          "label": "Plain modern",
+          "text": "You have made your promises before God and before all of us. You have given each other your word, your rings, and your lives. So now, by the authority given to me and the laws of this state, it is my joy to declare that you are husband and wife. What God has joined together today, let no one ever pull apart."
+        }
+      ]
+    },
+    {
+      "id": "kiss-presentation",
+      "name": "The Kiss and Presentation",
+      "guidance": "The first moment as a married couple, and their presentation to the gathered people. Keep the words simple and let the room respond.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Kiss and presentation",
+          "text": "You may share your first kiss as husband and wife. (After the kiss.) Family and friends, it is my great joy to present to you, for the first time, this newly married couple. May God bless them and keep them all their days."
+        }
+      ]
+    },
+    {
+      "id": "benediction",
+      "name": "Benediction",
+      "guidance": "The final word, spoken over the couple and the whole gathering as they go. A blessing, not an announcement.",
+      "optional": false,
+      "samples": [
+        {
+          "label": "Aaronic blessing",
+          "text": "Go now in the peace of God. The Lord bless you and keep you. The Lord make His face shine upon you and be gracious to you. The Lord lift up His countenance upon you and give you peace, this day and all the days to come. In the name of the Father, and of the Son, and of the Holy Spirit. Amen. Go in joy."
+        },
+        {
+          "label": "Sending blessing",
+          "text": "And now may the God who brought you together hold you together. May He give you laughter in your home, mercy in your hardest hours, and a love that grows deeper than the love you feel today. Go from here as one. The grace of our Lord Jesus Christ be with you both, now and always. Amen."
+        }
+      ]
+    }
+  ],
+  "closing": "When the last word is spoken, you have not produced an event, you have helped two people begin a covenant, so send them out blessed and let the weight of it follow them home."
+}

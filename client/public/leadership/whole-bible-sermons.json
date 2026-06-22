@@ -1,0 +1,640 @@
+{
+ "books": [
+  {
+   "id": "genesis",
+   "name": "Genesis",
+   "testament": "OT",
+   "group": "Pentateuch",
+   "chapters": 50
+  },
+  {
+   "id": "exodus",
+   "name": "Exodus",
+   "testament": "OT",
+   "group": "Pentateuch",
+   "chapters": 40
+  },
+  {
+   "id": "leviticus",
+   "name": "Leviticus",
+   "testament": "OT",
+   "group": "Pentateuch",
+   "chapters": 27
+  },
+  {
+   "id": "numbers",
+   "name": "Numbers",
+   "testament": "OT",
+   "group": "Pentateuch",
+   "chapters": 36
+  },
+  {
+   "id": "deuteronomy",
+   "name": "Deuteronomy",
+   "testament": "OT",
+   "group": "Pentateuch",
+   "chapters": 34
+  },
+  {
+   "id": "joshua",
+   "name": "Joshua",
+   "testament": "OT",
+   "group": "History",
+   "chapters": 24
+  },
+  {
+   "id": "judges",
+   "name": "Judges",
+   "testament": "OT",
+   "group": "History",
+   "chapters": 21
+  },
+  {
+   "id": "ruth",
+   "name": "Ruth",
+   "testament": "OT",
+   "group": "History",
+   "chapters": 4
+  },
+  {
+   "id": "1-samuel",
+   "name": "1 Samuel",
+   "testament": "OT",
+   "group": "History",
+   "chapters": 31
+  },
+  {
+   "id": "2-samuel",
+   "name": "2 Samuel",
+   "testament": "OT",
+   "group": "History",
+   "chapters": 24
+  },
+  {
+   "id": "1-kings",
+   "name": "1 Kings",
+   "testament": "OT",
+   "group": "History",
+   "chapters": 22
+  },
+  {
+   "id": "2-kings",
+   "name": "2 Kings",
+   "testament": "OT",
+   "group": "History",
+   "chapters": 25
+  },
+  {
+   "id": "1-chronicles",
+   "name": "1 Chronicles",
+   "testament": "OT",
+   "group": "History",
+   "chapters": 29
+  },
+  {
+   "id": "2-chronicles",
+   "name": "2 Chronicles",
+   "testament": "OT",
+   "group": "History",
+   "chapters": 36
+  },
+  {
+   "id": "ezra",
+   "name": "Ezra",
+   "testament": "OT",
+   "group": "History",
+   "chapters": 10
+  },
+  {
+   "id": "nehemiah",
+   "name": "Nehemiah",
+   "testament": "OT",
+   "group": "History",
+   "chapters": 13
+  },
+  {
+   "id": "esther",
+   "name": "Esther",
+   "testament": "OT",
+   "group": "History",
+   "chapters": 10
+  },
+  {
+   "id": "job",
+   "name": "Job",
+   "testament": "OT",
+   "group": "Wisdom",
+   "chapters": 42
+  },
+  {
+   "id": "psalms",
+   "name": "Psalms",
+   "testament": "OT",
+   "group": "Wisdom",
+   "chapters": 150
+  },
+  {
+   "id": "proverbs",
+   "name": "Proverbs",
+   "testament": "OT",
+   "group": "Wisdom",
+   "chapters": 31
+  },
+  {
+   "id": "ecclesiastes",
+   "name": "Ecclesiastes",
+   "testament": "OT",
+   "group": "Wisdom",
+   "chapters": 12
+  },
+  {
+   "id": "song-of-songs",
+   "name": "Song of Songs",
+   "testament": "OT",
+   "group": "Wisdom",
+   "chapters": 8
+  },
+  {
+   "id": "isaiah",
+   "name": "Isaiah",
+   "testament": "OT",
+   "group": "Major Prophets",
+   "chapters": 66
+  },
+  {
+   "id": "jeremiah",
+   "name": "Jeremiah",
+   "testament": "OT",
+   "group": "Major Prophets",
+   "chapters": 52
+  },
+  {
+   "id": "lamentations",
+   "name": "Lamentations",
+   "testament": "OT",
+   "group": "Major Prophets",
+   "chapters": 5
+  },
+  {
+   "id": "ezekiel",
+   "name": "Ezekiel",
+   "testament": "OT",
+   "group": "Major Prophets",
+   "chapters": 48
+  },
+  {
+   "id": "daniel",
+   "name": "Daniel",
+   "testament": "OT",
+   "group": "Major Prophets",
+   "chapters": 12
+  },
+  {
+   "id": "hosea",
+   "name": "Hosea",
+   "testament": "OT",
+   "group": "Minor Prophets",
+   "chapters": 14
+  },
+  {
+   "id": "joel",
+   "name": "Joel",
+   "testament": "OT",
+   "group": "Minor Prophets",
+   "chapters": 3
+  },
+  {
+   "id": "amos",
+   "name": "Amos",
+   "testament": "OT",
+   "group": "Minor Prophets",
+   "chapters": 9
+  },
+  {
+   "id": "obadiah",
+   "name": "Obadiah",
+   "testament": "OT",
+   "group": "Minor Prophets",
+   "chapters": 1
+  },
+  {
+   "id": "jonah",
+   "name": "Jonah",
+   "testament": "OT",
+   "group": "Minor Prophets",
+   "chapters": 4
+  },
+  {
+   "id": "micah",
+   "name": "Micah",
+   "testament": "OT",
+   "group": "Minor Prophets",
+   "chapters": 7
+  },
+  {
+   "id": "nahum",
+   "name": "Nahum",
+   "testament": "OT",
+   "group": "Minor Prophets",
+   "chapters": 3
+  },
+  {
+   "id": "habakkuk",
+   "name": "Habakkuk",
+   "testament": "OT",
+   "group": "Minor Prophets",
+   "chapters": 3
+  },
+  {
+   "id": "zephaniah",
+   "name": "Zephaniah",
+   "testament": "OT",
+   "group": "Minor Prophets",
+   "chapters": 3
+  },
+  {
+   "id": "haggai",
+   "name": "Haggai",
+   "testament": "OT",
+   "group": "Minor Prophets",
+   "chapters": 2
+  },
+  {
+   "id": "zechariah",
+   "name": "Zechariah",
+   "testament": "OT",
+   "group": "Minor Prophets",
+   "chapters": 14
+  },
+  {
+   "id": "malachi",
+   "name": "Malachi",
+   "testament": "OT",
+   "group": "Minor Prophets",
+   "chapters": 4
+  },
+  {
+   "id": "matthew",
+   "name": "Matthew",
+   "testament": "NT",
+   "group": "Gospels",
+   "chapters": 28
+  },
+  {
+   "id": "mark",
+   "name": "Mark",
+   "testament": "NT",
+   "group": "Gospels",
+   "chapters": 16
+  },
+  {
+   "id": "luke",
+   "name": "Luke",
+   "testament": "NT",
+   "group": "Gospels",
+   "chapters": 24
+  },
+  {
+   "id": "john",
+   "name": "John",
+   "testament": "NT",
+   "group": "Gospels",
+   "chapters": 21
+  },
+  {
+   "id": "acts",
+   "name": "Acts",
+   "testament": "NT",
+   "group": "History",
+   "chapters": 28
+  },
+  {
+   "id": "romans",
+   "name": "Romans",
+   "testament": "NT",
+   "group": "Pauline",
+   "chapters": 16
+  },
+  {
+   "id": "1-corinthians",
+   "name": "1 Corinthians",
+   "testament": "NT",
+   "group": "Pauline",
+   "chapters": 16
+  },
+  {
+   "id": "2-corinthians",
+   "name": "2 Corinthians",
+   "testament": "NT",
+   "group": "Pauline",
+   "chapters": 13
+  },
+  {
+   "id": "galatians",
+   "name": "Galatians",
+   "testament": "NT",
+   "group": "Pauline",
+   "chapters": 6
+  },
+  {
+   "id": "ephesians",
+   "name": "Ephesians",
+   "testament": "NT",
+   "group": "Pauline",
+   "chapters": 6
+  },
+  {
+   "id": "philippians",
+   "name": "Philippians",
+   "testament": "NT",
+   "group": "Pauline",
+   "chapters": 4
+  },
+  {
+   "id": "colossians",
+   "name": "Colossians",
+   "testament": "NT",
+   "group": "Pauline",
+   "chapters": 4
+  },
+  {
+   "id": "1-thessalonians",
+   "name": "1 Thessalonians",
+   "testament": "NT",
+   "group": "Pauline",
+   "chapters": 5
+  },
+  {
+   "id": "2-thessalonians",
+   "name": "2 Thessalonians",
+   "testament": "NT",
+   "group": "Pauline",
+   "chapters": 3
+  },
+  {
+   "id": "1-timothy",
+   "name": "1 Timothy",
+   "testament": "NT",
+   "group": "Pauline",
+   "chapters": 6
+  },
+  {
+   "id": "2-timothy",
+   "name": "2 Timothy",
+   "testament": "NT",
+   "group": "Pauline",
+   "chapters": 4
+  },
+  {
+   "id": "titus",
+   "name": "Titus",
+   "testament": "NT",
+   "group": "Pauline",
+   "chapters": 3
+  },
+  {
+   "id": "philemon",
+   "name": "Philemon",
+   "testament": "NT",
+   "group": "Pauline",
+   "chapters": 1
+  },
+  {
+   "id": "hebrews",
+   "name": "Hebrews",
+   "testament": "NT",
+   "group": "General",
+   "chapters": 13
+  },
+  {
+   "id": "james",
+   "name": "James",
+   "testament": "NT",
+   "group": "General",
+   "chapters": 5
+  },
+  {
+   "id": "1-peter",
+   "name": "1 Peter",
+   "testament": "NT",
+   "group": "General",
+   "chapters": 5
+  },
+  {
+   "id": "2-peter",
+   "name": "2 Peter",
+   "testament": "NT",
+   "group": "General",
+   "chapters": 3
+  },
+  {
+   "id": "1-john",
+   "name": "1 John",
+   "testament": "NT",
+   "group": "General",
+   "chapters": 5
+  },
+  {
+   "id": "2-john",
+   "name": "2 John",
+   "testament": "NT",
+   "group": "General",
+   "chapters": 1
+  },
+  {
+   "id": "3-john",
+   "name": "3 John",
+   "testament": "NT",
+   "group": "General",
+   "chapters": 1
+  },
+  {
+   "id": "jude",
+   "name": "Jude",
+   "testament": "NT",
+   "group": "General",
+   "chapters": 1
+  },
+  {
+   "id": "revelation",
+   "name": "Revelation",
+   "testament": "NT",
+   "group": "Apocalyptic",
+   "chapters": 22
+  }
+ ],
+ "series": {
+  "genesis": {
+   "book": "genesis",
+   "slug": "genesis-sermon-series",
+   "title": "Genesis Sermon Series",
+   "headline": "Where Everything That Is Wrong Began — and the Promise That It Would Be Made Right",
+   "bigIdea": "Genesis is not a science textbook or a children's story. It is the book that explains why the world is glorious and broken at once, and where the rescue was first promised.",
+   "christConnection": "The offspring who crushes the serpent (3:15), the lamb God provides in place of the son (22:8), the curse-bearer who becomes blessing for all nations (12:3) — all of it points to Christ.",
+   "sermons": [
+    {
+     "n": "1",
+     "text": "Genesis 1–2",
+     "title": "Made, Not Random",
+     "idea": "You are not an accident. You are made, in His image, on purpose.",
+     "verdict": "You bear the image you did not earn."
+    },
+    {
+     "n": "2",
+     "text": "Genesis 3",
+     "title": "The Day It Broke",
+     "idea": "Sin is not breaking a rule. It is the refusal to be a creature.",
+     "verdict": "Every wrong began with one grasp."
+    },
+    {
+     "n": "3",
+     "text": "Genesis 6–9",
+     "title": "Judgment and the Ark",
+     "idea": "God's judgment and God's mercy meet in one door.",
+     "verdict": "There is room in the ark."
+    },
+    {
+     "n": "4",
+     "text": "Genesis 12",
+     "title": "The Call of Abram",
+     "idea": "God's plan to bless the world runs through one undeserving man.",
+     "verdict": "Blessed to be a blessing."
+    },
+    {
+     "n": "5",
+     "text": "Genesis 22",
+     "title": "The Mountain and the Lamb",
+     "idea": "God provides the sacrifice He requires.",
+     "verdict": "God Himself will provide the lamb."
+    },
+    {
+     "n": "6",
+     "text": "Genesis 37–50",
+     "title": "Meant for Good",
+     "idea": "What men intend for evil, God weaves for salvation.",
+     "verdict": "You meant evil; God meant good."
+    }
+   ]
+  },
+  "john": {
+   "book": "john",
+   "slug": "john-sermon-series",
+   "title": "John Sermon Series",
+   "headline": "The Signs Were Never the Point. The One They Pointed To Was.",
+   "bigIdea": "John selects seven signs and seven 'I AM' sayings to make one case: Jesus is God in the flesh, and believing Him is life.",
+   "christConnection": "This is the most explicitly Christ-centered book in the canon; the connection is not drawn, it is the text.",
+   "sermons": [
+    {
+     "n": "1",
+     "text": "John 1:1–18",
+     "title": "The Word Became Flesh",
+     "idea": "The infinite God took on a body you could touch.",
+     "verdict": "The Word moved into the neighborhood."
+    },
+    {
+     "n": "2",
+     "text": "John 3",
+     "title": "Born Again",
+     "idea": "You do not need improvement. You need a new birth.",
+     "verdict": "You must be born from above."
+    },
+    {
+     "n": "3",
+     "text": "John 4",
+     "title": "The Woman at the Well",
+     "idea": "Jesus offers living water to the person everyone else avoided.",
+     "verdict": "He went where He didn't have to go."
+    },
+    {
+     "n": "4",
+     "text": "John 11",
+     "title": "I Am the Resurrection",
+     "idea": "Jesus weeps at the grave and then empties it.",
+     "verdict": "He wept at the tomb He would open."
+    },
+    {
+     "n": "5",
+     "text": "John 13",
+     "title": "The Towel and the Basin",
+     "idea": "The Lord of all kneels to wash feet.",
+     "verdict": "The throne was a basin."
+    },
+    {
+     "n": "6",
+     "text": "John 19–20",
+     "title": "It Is Finished",
+     "idea": "The cross is not a defeat to be reversed but a victory to be announced.",
+     "verdict": "Finished — and then He rose."
+    }
+   ]
+  },
+  "philippians": {
+   "book": "philippians",
+   "slug": "philippians-sermon-series",
+   "title": "Philippians Sermon Series",
+   "headline": "A Man in Chains Wrote the Happiest Letter in the Bible. Ask Why.",
+   "bigIdea": "Paul writes from prison about a joy that circumstances cannot reach because its source is not circumstantial.",
+   "christConnection": "The hymn of 2:5–11 — Christ's descent and exaltation — is the engine of the whole letter's joy and humility.",
+   "sermons": [
+    {
+     "n": "1",
+     "text": "Philippians 1",
+     "title": "To Live Is Christ",
+     "idea": "When Christ is your life, even death becomes gain.",
+     "verdict": "To live is Christ, to die is gain."
+    },
+    {
+     "n": "2",
+     "text": "Philippians 2:1–11",
+     "title": "The Mind That Moves Down",
+     "idea": "The path to exaltation runs through descent.",
+     "verdict": "He humbled Himself."
+    },
+    {
+     "n": "3",
+     "text": "Philippians 3",
+     "title": "Counting It Loss",
+     "idea": "Everything you'd boast in is rubbish next to knowing Him.",
+     "verdict": "Loss, for the surpassing worth."
+    },
+    {
+     "n": "4",
+     "text": "Philippians 4",
+     "title": "The Peace That Guards",
+     "idea": "Anxiety answered by prayer becomes peace standing guard.",
+     "verdict": "Peace will guard your heart."
+    }
+   ]
+  }
+ },
+ "topical": [
+  {
+   "id": "sermon-on-the-mount",
+   "title": "The Sermon on the Mount",
+   "slug": "sermon-on-the-mount-series",
+   "headline": "The Constitution of the Kingdom",
+   "parts": 8
+  },
+  {
+   "id": "fruit-of-the-spirit",
+   "title": "Fruit of the Spirit",
+   "slug": "fruit-of-the-spirit-series",
+   "headline": "Character You Cannot Manufacture",
+   "parts": 9
+  },
+  {
+   "id": "advent",
+   "title": "Advent: The Long-Awaited One",
+   "slug": "advent-sermon-series",
+   "headline": "The Waiting and the Coming",
+   "parts": 4
+  },
+  {
+   "id": "lent-easter",
+   "title": "Lent & Easter: The Road to the Cross",
+   "slug": "lent-easter-sermon-series",
+   "headline": "The Road That Ran Through a Grave",
+   "parts": 7
+  }
+ ]
+}

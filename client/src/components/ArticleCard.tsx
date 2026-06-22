@@ -45,7 +45,6 @@ const PILLAR_COLORS: Record<string, { bg: string; text: string; icon: string }> 
 };
 
 export function ArticleCard({
-  id,
   slug,
   title,
   excerpt,
@@ -63,12 +62,14 @@ export function ArticleCard({
   const displayExcerpt = excerpt || (body ? body.substring(0, 150).trim() + "..." : "");
 
   return (
-    <Link href={`/writing/${slug}`}>
-      <a className={cn(
+    <Link
+      href={`/writing/${slug}`}
+      className={cn(
         "group block h-full rounded-lg border border-border bg-card p-6 transition-all hover:shadow-lg hover:border-accent",
         isFeatured && "ring-2 ring-[#B8963E] ring-offset-2",
         className
-      )}>
+      )}
+    >
         {/* Header with pillar badge and featured star */}
         <div className="mb-4 flex items-start justify-between">
           <div className={cn(
@@ -122,7 +123,6 @@ export function ArticleCard({
             </div>
           )}
         </div>
-      </a>
     </Link>
   );
 }

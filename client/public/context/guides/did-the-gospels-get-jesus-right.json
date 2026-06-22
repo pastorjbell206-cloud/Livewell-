@@ -1,0 +1,46 @@
+{
+  "slug": "did-the-gospels-get-jesus-right",
+  "title": "Did the Gospels Get Jesus Right?",
+  "subtitle": "The telephone game needs long chains, anonymous links, and nobody checking. The Gospels grew up under different conditions, named witnesses, short decades, and communities that could call a storyteller a liar.",
+  "kicker": "Hard Questions",
+  "group": "The Hard Questions",
+  "sections": [
+    {
+      "id": "the-objection-stated-whole",
+      "kicker": "The Objection",
+      "title": "Forty Years of Whisper and Drift",
+      "body": "The objection deserves its strongest form. Jesus died around the year 30. The first Gospel was written roughly forty years later, the last perhaps sixty five. In between, the stories passed from mouth to mouth in a world without recordings, across languages and borders, among people who already worshiped the man in question. Anyone who has played the telephone game knows what happens to a sentence in ten minutes. What happens to a life in forty years? Add that the Gospels do not perfectly match each other, and the conclusion seems to write itself. We have the legend, not the man.\n\nI want that objection on the table whole, because the answer to it is not a slogan, and because parts of it are simply true. There was a gap. The stories were carried orally before they were written. The Gospels do differ. A defense that denies any of that is not a defense, it is a bluff, and skeptics are right to call it.\n\nThe real question is whether the telephone game describes those decades, and that is a historical question with evidence behind it. What kind of books these are. Who stood behind them. How long the chain actually was."
+    },
+    {
+      "id": "what-kind-of-books-these-are",
+      "kicker": "The Genre",
+      "title": "What Kind of Books These Are",
+      "body": "Richard Burridge, a classicist, set out to refute the idea that the Gospels are Greco-Roman biographies. He measured them against dozens of ancient lives, Plutarch, Suetonius, Tacitus on Agricola, comparing length, structure, verb subjects, and the space given to the subject's death. The Gospels matched the genre on essentially every axis, and Burridge published the opposite of the book he had planned. His finding now stands close to consensus across the field, skeptical scholars included.\n\nGenre matters because genre is a contract with the reader. Myth and folklore announce themselves, distant ages, unnamed lands, gods behaving like weather. An ancient bios made a different promise, an account of a real and recent human being, drawing on sources, with recognized freedom to select, compress, and rearrange, but not to invent the subject wholesale. Craig Keener's Christobiography works through what biographers of that era actually did with their material, and the liberties were real but bounded.\n\nThe Gospels present themselves in the form their world reserved for remembering actual people. They could still fail the promise their form makes. But the old shortcut, dismissing them as obvious legend because of what they are, runs into the awkward fact of what they are."
+    },
+    {
+      "id": "the-names-are-receipts",
+      "kicker": "The Witnesses",
+      "title": "The Names Are Receipts",
+      "body": "Richard Bauckham's Jesus and the Eyewitnesses noticed something hiding in plain sight, the minor characters with names. Blind beggars in the Gospels are anonymous, except Bartimaeus. The man who carries the cross is named Simon of Cyrene, and Mark adds that he was the father of Alexander and Rufus, which is pointless information unless Alexander and Rufus were known to Mark's readers. The most economical explanation is that named characters were named because they were the living sources, people a community could go and ask.\n\nThen there is the evidence no forger could plant. Tal Ilan's catalog of ancient Jewish names lets scholars rank the most common names in first-century Palestine. The name frequencies in the Gospels and Acts match the Palestinian rankings closely, down to the habit of distinguishing common names, Simon called Peter, Mary Magdalene, exactly where distinction was needed. Jews in Egypt used a measurably different set of names, and the later apocryphal gospels, written far away and long after, get this texture wrong. A second-century author inventing stories in Rome or Alexandria could not have faked statistics no one knew existed.\n\nThis does not certify every sentence. It shows the tradition stayed tied to particular Palestinian people. The chain, such as it was, had names attached at both ends."
+    },
+    {
+      "id": "the-short-clock",
+      "kicker": "The Clock",
+      "title": "The Short Clock",
+      "body": "Now measure the gap honestly, in both directions. Forty years is real time, long enough for emphasis to shift and wording to vary. It is also short time by every standard ancient history uses. Our best surviving sources for Alexander the Great were written about four hundred years after his death, and historians use them carefully but constantly. The Gospels stand to Jesus roughly as a book published this year stands to the 1980s, within living memory, released while eyewitnesses, hostile ones included, could still talk.\n\nAnd the written trail starts earlier than the Gospels. Paul's letters, dated to the 50s, already quote a creed about the death, burial, resurrection, and appearances of Jesus, a creed Paul says he received, which pushes its origin to within a few years of the crucifixion on a dating even skeptical scholars accept. There was no quiet century for legend to grow in. The core claims were public almost immediately.\n\nThe telephone game fails as an analogy at every point. It requires a long chain of single whispers, anonymous links, no repetition, and no one permitted to correct. Oral cultures rehearsed their traditions communally, in public, with designated bearers and constant correction. A short clock does not mean the claims are true. It means the comfortable theory of slow legend has no room to live."
+    },
+    {
+      "id": "what-the-differences-mean",
+      "kicker": "The Differences",
+      "title": "What the Differences Do and Do Not Mean",
+      "body": "The differences between the Gospels are real, and you should refuse any account that hides them. The temple incident sits at the end of Jesus' ministry in Mark and near the beginning in John. The resurrection morning has one angel or two, depending on the witness. Sayings appear in different settings with different wording. The church saw all of this in the second century, was offered a single tidy harmonized Gospel, and refused it, keeping four. That choice tells you what the community believed it had. Witnesses, not a script.\n\nWhat the differences do not mean is collapse. Investigators in any age will tell you that four accounts agreeing in core and varying in detail look like testimony, while four accounts identical in wording look like collusion. Ancient biography licensed selection, compression, and paraphrase, and the variations sit almost entirely inside that licensed space, at the level of arrangement and detail, not at the dead and risen center.\n\nA confession from inside the church. We have sometimes promised a precision the texts never claimed, then blamed you for noticing the seams. The seams were never the scandal. The claim is. Four ancient biographies, within living memory, with names attached, say a crucified man left his tomb. You cannot make that go away by counting angels. I have tried the question every other way. It is still there."
+    }
+  ],
+  "keyTexts": ["Luke 1:1-4", "1 Corinthians 15:3-8", "John 21:24-25"],
+  "sources": [
+    { "title": "What Are the Gospels? A Comparison with Graeco-Roman Biography", "author": "Richard A. Burridge" },
+    { "title": "Jesus and the Eyewitnesses: The Gospels as Eyewitness Testimony", "author": "Richard Bauckham" },
+    { "title": "Christobiography: Memory, History, and the Reliability of the Gospels", "author": "Craig S. Keener" },
+    { "title": "Can We Trust the Gospels?", "author": "Peter J. Williams" }
+  ]
+}

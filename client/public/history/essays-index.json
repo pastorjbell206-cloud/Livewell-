@@ -1,0 +1,32 @@
+{
+  "essays": [
+    {
+      "slug": "the-great-councils",
+      "title": "The Great Councils",
+      "blurb": "Nicaea, Constantinople, Ephesus, Chalcedon. The pastoral and political pressures behind the church's defining decisions about Christ and God, told as a human story.",
+      "era": "Ancient",
+      "dateRange": "AD 325-451"
+    },
+    {
+      "slug": "the-apostolic-age",
+      "title": "The Apostolic and Sub-Apostolic Age",
+      "blurb": "From Pentecost to the generation after the apostles. How a scattered, persecuted movement stayed one body across distance, and what held it together before the New Testament was gathered.",
+      "era": "Ancient",
+      "dateRange": "c. AD 30-150"
+    },
+    {
+      "slug": "the-east-west-schism",
+      "title": "The East and West Divide",
+      "blurb": "The slow drift between Greek East and Latin West. Language, authority, the disputed clause in the creed, and the events of 1054. Told fairly to both sides.",
+      "era": "Medieval",
+      "dateRange": "to AD 1054"
+    },
+    {
+      "slug": "the-reformation",
+      "title": "The Reformation",
+      "blurb": "Luther and the German movement, the Reformed stream, the Radical wing, the English settlement, and the Catholic response. Honest about the recovery and about the violence and division.",
+      "era": "Reformation",
+      "dateRange": "AD 1517-1648"
+    }
+  ]
+}

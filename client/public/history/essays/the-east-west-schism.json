@@ -1,0 +1,51 @@
+{
+  "slug": "the-east-west-schism",
+  "title": "The East and West Divide",
+  "subtitle": "The slow drift between Greek East and Latin West. Language, authority, the disputed clause in the creed, and the events of 1054. Told fairly to both sides.",
+  "era": "Medieval",
+  "dateRange": "to AD 1054",
+  "sections": [
+    {
+      "id": "one-church-two-worlds",
+      "kicker": "Orientation",
+      "title": "One Church, Two Worlds",
+      "body": "We tend to imagine the split between Eastern and Western Christianity as a single event, a door slammed on a particular day. It was not. It was a drift, the slow separation of two halves of one church that had been growing apart for centuries before anyone admitted they were no longer together. By the time the formal break came, the two sides had become strangers who happened to share a Lord, and much of the tragedy is that neither half quite noticed how far it had wandered from the other until the distance was already fatal.\n\nWe should begin with sympathy for both. The Greek East and the Latin West were not a true church and a false one. They were two ancient, faithful traditions, each with its own saints and martyrs and theologians, each convinced it was preserving what had been handed down. When they finally divided, it was not a clean fight between right and wrong. It was a failure of love between brothers who had stopped being able to understand one another, and the church has been the poorer for it ever since."
+    },
+    {
+      "id": "language-and-culture",
+      "kicker": "The Drift",
+      "title": "Language, Culture, and a Lost Empire",
+      "body": "The first wall was language. The East spoke Greek and the West spoke Latin, and within a few centuries most Christians on each side could no longer read the other's books or pray in the other's words. Theology in the West read Augustine in Latin. Theology in the East read the Greek fathers and barely knew Augustine at all. When you cannot read your brother's reasoning, you slowly stop trusting it, and then you slowly stop believing he is reasoning at all.\n\nPolitics widened the gap. The old Roman Empire had a single center, but in time it had two, Rome in the West and Constantinople in the East. Then the West fell. In the fifth century the western empire collapsed under invading peoples, and the Latin church found itself the last institution standing, increasingly looking to the bishop of Rome for leadership because there was no emperor left to provide it. The East suffered no such collapse. Its emperor still reigned in Constantinople, and the church there lived as one part of a continuing Christian empire, with the patriarch alongside the emperor rather than standing in for him.\n\nSo the two halves grew up differently. The West learned to see the pope as a stable rock in a chaotic world. The East learned to see the church as one body of equal patriarchs gathered around the emperor, with the bishop of Rome honored as first among them but not their master. Each arrangement made sense at home. Each looked like arrogance or weakness from across the divide."
+    },
+    {
+      "id": "authority",
+      "kicker": "The Question of Authority",
+      "title": "Who Speaks for the Church",
+      "body": "Underneath the drift lay a question neither side could finally answer together. When the whole church must decide something, who has the last word. The West increasingly answered Rome. The bishop of Rome, successor of Peter, held a primacy that was not merely a place of honor but a real authority to govern and to settle disputes for everyone. The East answered differently. It honored Rome as the first of the great churches, and it meant that honor, but it held that the church is governed by all its bishops together gathered in council, not by one of them ruling the rest. A patriarch was a brother, not a sovereign.\n\nNeither view was foolish. The Western view gave the church a center that could hold it together when empires fell, and history shows it sometimes did exactly that. The Eastern view guarded against the danger of one man claiming too much, and history shows that danger was real. But the two views could not both be true at the same time about the same church, and as long as no crisis forced the question, the church lived with the contradiction unspoken. A crisis was coming."
+    },
+    {
+      "id": "the-filioque",
+      "kicker": "The Disputed Clause",
+      "title": "The Word Added to the Creed",
+      "body": "The sharpest doctrinal wound came from a single Latin word. The creed agreed by the councils said the Holy Spirit proceeds from the Father. Over time, churches in the West began to add that the Spirit proceeds from the Father and the Son, the addition known by its Latin word filioque, meaning and the Son. The Western intent was reverent, meant to guard the full divinity of the Son against lingering Arian influence in the lands they were converting. To Western ears it clarified the faith.\n\nTo the East it was an offense on two levels. First, the substance. The East feared the addition confused the persons of the Trinity and blurred the Father's place as the single source within the Godhead. Second, and just as serious, the manner. The creed had been agreed by an ecumenical council of the whole church. No single region, the East insisted, had the right to change the common confession of all Christians without the whole church meeting to consent. To alter the creed by Western authority alone was to assume exactly the kind of power over the whole church that the East denied Rome possessed.\n\nSo the filioque carried both disputes at once. It was an argument about the Spirit and an argument about authority, folded into one word, and that is why it could not be solved by goodwill alone. Both sides had a real point. The West had a genuine theological concern. The East had a genuine concern about how the church may and may not speak. Neither was simply wrong."
+    },
+    {
+      "id": "1054-and-after",
+      "kicker": "The Break and the Wound",
+      "title": "The Year 1054 and the Long Aftermath",
+      "body": "The formal rupture came in 1054, and the event itself is almost too small for what it caused. A papal delegation led by Cardinal Humbert arrived in Constantinople amid tense relations, and the negotiations collapsed in anger. Humbert laid a document of excommunication on the altar of the great church of Hagia Sophia against the patriarch Michael Cerularius, who promptly returned the favor. Both men had probably exceeded their authority. The pope who sent the delegation had in fact died before the act, which clouds its legal force. Two proud men lost their tempers in a single building, and a church that had been one for a thousand years was declared two.\n\nWe should resist the tidy story that 1054 caused the split. It did not. The split had already happened in slow motion across centuries of language, politics, authority, and the disputed clause. The year 1054 only made visible a separation that was already real, and at the time many Christians barely noticed. What sealed the wound was something later and worse. In 1204 a Western crusading army, supposedly bound for the Holy Land, instead sacked Constantinople itself, looting its churches and butchering fellow Christians. After that, reconciliation became almost impossible. The East had seen what the West would do, and it did not forget.\n\nThe two communions, Catholic in the West and Orthodox in the East, have never reunited. There were a few late, forced attempts at union that the Eastern faithful rejected as betrayals. In 1965 the pope and the patriarch lifted the old excommunications of 1054 as a gesture of repentance, and that gesture matters, but the division remains. This is not a story with a hero and a villain. It is a story of two faithful traditions that loved the same Lord and lost the ability to love each other, and it stands as a warning to every church that thinks unity is a thing it can take for granted. We did not keep it. We should not pretend the loss was anyone else's fault alone."
+    }
+  ],
+  "keyFigures": [
+    { "name": "Augustine of Hippo", "note": "The Latin father whose work shaped the West but was barely read in the Greek East." },
+    { "name": "Michael Cerularius", "note": "Patriarch of Constantinople at the rupture of 1054." },
+    { "name": "Cardinal Humbert", "note": "Papal legate who laid the excommunication on the altar of Hagia Sophia." },
+    { "name": "Photius of Constantinople", "note": "Ninth-century patriarch whose earlier disputes with Rome foreshadowed the break." }
+  ],
+  "sources": [
+    { "title": "The Story of Christianity, Volume 1", "author": "Justo Gonzalez" },
+    { "title": "Christianity: The First Three Thousand Years", "author": "Diarmaid MacCulloch" },
+    { "title": "The Christian Tradition, Volume 2", "author": "Jaroslav Pelikan" },
+    { "title": "Church History in Plain Language", "author": "Bruce Shelley" }
+  ]
+}

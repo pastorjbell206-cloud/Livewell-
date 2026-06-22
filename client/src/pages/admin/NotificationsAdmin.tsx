@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { trpc } from '@/lib/trpc';
 import { useToast } from '@/contexts/ToastContext';
 import { Button } from '@/components/ui/button';
-import { Plus, Trash2, Eye, EyeOff } from 'lucide-react';
+import { Plus, Trash2 } from 'lucide-react';
 import AdminLayout from '@/components/AdminLayout';
 
 export function NotificationsAdmin() {
