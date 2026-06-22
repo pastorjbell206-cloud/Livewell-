@@ -111,6 +111,12 @@ function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLin
   PILLAR_ORDER.forEach((p, i) => { byPillar[p] = pillarLinks[i]; });
   const itemsOf = (l: NavLink): DropdownItem[] =>
     l.dropdown ?? (l.href ? [{ label: l.label, href: l.href }] : []);
+  // Display-only relabel: rename the nav door (and its "All <pillar>" entry)
+  // while the underlying pillar data, slugs, and listing URLs stay untouched.
+  const relabel = (l: NavLink, label: string, allLabel: string): NavLink =>
+    l.dropdown
+      ? { ...l, label, dropdown: l.dropdown.map(i => (i.label.startsWith("All ") ? { ...i, label: allLabel } : i)) }
+      : { ...l, label };
   const postChristianWorld: NavLink = {
     label: "Post-Christian World",
     dropdown: [
@@ -123,9 +129,9 @@ function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLin
     { label: "Start here", href: "/start" },
     byPillar["Theological Depth"],
     postChristianWorld,
-    byPillar["Leadership Formation"],
-    byPillar["Integrated Life"],
+    relabel(byPillar["Integrated Life"], "Everyday Life", "All Everyday Life"),
     { label: "The Table", href: "/table" },
+    relabel(byPillar["Leadership Formation"], "For Pastors & Leaders", "All Leadership"),
     { label: "Resources", href: "/resources" },
     { label: "Books", href: "/books" },
     { label: "About", href: "/about" },
