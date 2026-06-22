@@ -8,34 +8,61 @@ import superjson from "superjson";
 import { readFileSync } from "node:fs";
 import Stripe from "stripe";
 
-async function withConn<T>(fn: (c: mysql.Connection) => Promise<T>): Promise<T> {
+// ---------------------------------------------------------------------------
+// Database access — one pool per warm serverless instance, reused across
+// invocations.
+//
+// Vercel runs this function on short-lived, horizontally-scaled instances. The
+// earlier implementation opened a brand-new MySQL connection (TCP + TLS
+// handshake + auth) on every request and tore it down in a `finally`. That adds
+// round-trips of latency to every call and, under concurrency, multiplies open
+// connections until the database refuses new ones — the first thing that breaks
+// at scale. (A hand-rolled single-connection cache, `withPubConn`, had been
+// left in for one path to dodge this; the pool below supersedes it, so it is
+// gone.)
+//
+// The pool is cached on `globalThis` so it survives module re-evaluation. Each
+// unit of work borrows a connection for the duration of its callback and
+// returns it with `release()` — never closing it — so connections are reused,
+// not rebuilt. mysql2's pool transparently replaces dropped connections, and
+// keep-alive stops idle ones being culled mid-flight. Behaviour is otherwise
+// identical: every callback still runs against a single dedicated connection,
+// so all existing call sites are unchanged.
+//
+// `connectionLimit` is intentionally small: serverless scales by adding
+// instances, and total DB connections ≈ instances × limit, so a modest
+// per-instance cap is what keeps the database healthy. Tunable via DB_POOL_SIZE.
+// ---------------------------------------------------------------------------
+
+const DB_POOL_SIZE = Math.max(1, Number(process.env.DB_POOL_SIZE) || 5);
+
+const globalForDb = globalThis as unknown as { __lwPool?: mysql.Pool };
+
+function getPool(): mysql.Pool {
   const url = process.env.DATABASE_URL;
   if (!url) throw new Error("DATABASE_URL missing");
-  const conn = await mysql.createConnection({ uri: url, ssl: { rejectUnauthorized: true } });
-  try { return await fn(conn); } finally { await conn.end(); }
+  if (!globalForDb.__lwPool) {
+    globalForDb.__lwPool = mysql.createPool({
+      uri: url,
+      ssl: { rejectUnauthorized: true },
+      waitForConnections: true,
+      connectionLimit: DB_POOL_SIZE,
+      maxIdle: DB_POOL_SIZE,
+      idleTimeout: 60_000,
+      queueLimit: 0,
+      enableKeepAlive: true,
+      keepAliveInitialDelay: 10_000,
+    });
+  }
+  return globalForDb.__lwPool;
 }
 
-// A connection cached across warm invocations, used by the bulk publish path so
-// it does not open (and exhaust) a fresh DB connection on every batch request.
-let _pubConn: mysql.Connection | null = null;
-async function withPubConn<T>(fn: (c: mysql.Connection) => Promise<T>): Promise<T> {
-  const url = process.env.DATABASE_URL;
-  if (!url) throw new Error("DATABASE_URL missing");
-  if (_pubConn) {
-    try { await _pubConn.query("SELECT 1"); }
-    catch { try { await _pubConn.end(); } catch { /* ignore */ } _pubConn = null; }
-  }
-  if (!_pubConn) {
-    _pubConn = await mysql.createConnection({ uri: url, ssl: { rejectUnauthorized: true } });
-  }
+async function withConn<T>(fn: (c: mysql.PoolConnection) => Promise<T>): Promise<T> {
+  const conn = await getPool().getConnection();
   try {
-    return await fn(_pubConn);
-  } catch (e: any) {
-    if (e?.fatal || e?.code === "PROTOCOL_CONNECTION_LOST") {
-      try { await _pubConn?.end(); } catch { /* ignore */ }
-      _pubConn = null;
-    }
-    throw e;
+    return await fn(conn);
+  } finally {
+    conn.release();
   }
 }
 
