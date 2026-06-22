@@ -39,12 +39,10 @@ const KNOWN_PROD_GAPS = new Set<string>([
   "files.list",
   "files.updateDescription",
   "files.upload",
-  // Stripe via tRPC (prod uses the REST /api/checkout instead; membership
-  // falls back to the waitlist when these are absent).
+  // Generic book cart checkout via tRPC — superseded by the per-ebook REST flow
+  // (/api/checkout) and backed only by placeholder prices. Pending a cleanup
+  // decision on the legacy shopping cart (BooksStore/ShoppingCart).
   "stripe.createCheckoutSession",
-  "stripe.createMembershipCheckout",
-  "stripe.getCheckoutSession",
-  "stripe.membershipEnabled",
   // Team collaboration (PCN/leadership) — per-user membership + roles; blocked
   // on prod multi-user auth.
   "teamCollab.announcement.create",

@@ -1573,6 +1573,59 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         await withConn(async (c) => { await c.execute("DELETE FROM subscribers WHERE email = ?", [email]); });
         return trpcOk(res, { success: true });
       }
+      case "stripe.membershipEnabled": {
+        if (!stripeConfigured()) return trpcOk(res, { enabled: false });
+        const priceId = await withConn(async (c) => {
+          const [rows]: any = await c.execute(
+            "SELECT settingValue FROM site_settings WHERE settingKey = ?",
+            ["stripeMembershipPriceId"],
+          );
+          return rows[0]?.settingValue ?? null;
+        });
+        return trpcOk(res, { enabled: !!(priceId && String(priceId).trim()) });
+      }
+      case "stripe.createMembershipCheckout": {
+        const stripe = getStripe();
+        if (!stripe || !stripeConfigured()) return trpcErr(res, "BAD_REQUEST", "Membership is not open yet.", 400);
+        const email = typeof input?.customerEmail === "string" ? input.customerEmail : "";
+        if (!email) return trpcErr(res, "BAD_REQUEST", "A valid email is required.", 400);
+        const priceId = await withConn(async (c) => {
+          const [rows]: any = await c.execute(
+            "SELECT settingValue FROM site_settings WHERE settingKey = ?",
+            ["stripeMembershipPriceId"],
+          );
+          return String(rows[0]?.settingValue ?? "").trim();
+        });
+        if (!priceId) return trpcErr(res, "BAD_REQUEST", "Membership is not open yet.", 400);
+        const origin = typeof input?.origin === "string" && input.origin ? input.origin : siteOrigin(req);
+        const session = await stripe.checkout.sessions.create({
+          mode: "subscription",
+          payment_method_types: ["card"],
+          line_items: [{ price: priceId, quantity: 1 }],
+          customer_email: email,
+          allow_promotion_codes: true,
+          metadata: { kind: "membership", customer_email: email },
+          success_url: `${origin}/membership/success?session_id={CHECKOUT_SESSION_ID}`,
+          cancel_url: `${origin}/membership`,
+        });
+        return trpcOk(res, { success: true, sessionUrl: session.url || "", sessionId: session.id });
+      }
+      case "stripe.getCheckoutSession": {
+        const stripe = getStripe();
+        const sessionId = typeof input?.sessionId === "string" ? input.sessionId : "";
+        if (!stripe || !sessionId) return trpcErr(res, "BAD_REQUEST", "Session unavailable.", 400);
+        const session = await stripe.checkout.sessions.retrieve(sessionId);
+        return trpcOk(res, {
+          success: true,
+          session: {
+            id: session.id,
+            status: session.payment_status,
+            amount: session.amount_total,
+            currency: session.currency,
+            customerEmail: session.customer_email,
+          },
+        });
+      }
       default:
         if (proc.endsWith(".listPublished") || proc.endsWith(".listAll")) return trpcOk(res, []);
         return trpcErr(res, "NOT_FOUND", "procedure not found: " + proc, 404);
@@ -2085,6 +2138,12 @@ function getStripe(): Stripe | null {
   const key = process.env.STRIPE_SECRET_KEY?.trim();
   if (!key) return null;
   return new Stripe(key);
+}
+
+/** A real Stripe key is present (not the build-time placeholder). */
+function stripeConfigured(): boolean {
+  const key = process.env.STRIPE_SECRET_KEY?.trim() || "";
+  return key.startsWith("sk_") && key !== "sk_test_placeholder";
 }
 
 // Build absolute URLs from the request so checkout works on Vercel preview
