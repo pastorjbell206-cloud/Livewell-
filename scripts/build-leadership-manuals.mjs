@@ -17,6 +17,8 @@ const F = {
 };
 const INK = "#14110C", MUST = "#7A6010", MUTED = "#5b5547";
 const data = JSON.parse(fs.readFileSync("client/public/leadership/formation-guides.json", "utf8"));
+const OUT_DIR = "client/public/downloads/leadership";
+fs.mkdirSync(OUT_DIR, { recursive: true });
 
 function stripInline(s) {
   return s.replace(/\*\*(.+?)\*\*/g, "$1").replace(/\*(.+?)\*/g, "$1").replace(/`(.+?)`/g, "$1").replace(/^#+\s*/, "");
