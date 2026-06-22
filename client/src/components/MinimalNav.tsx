@@ -1,13 +1,16 @@
 /**
- * Primary navigation — mission-first. The top bar leads with the four doors
- * from the homepage (Become a Disciple · Make Disciples · Leadership ·
- * Prophetic Justice), then a single Writing ▾ menu that opens the five-pillar
- * essay taxonomy, then Books. Find Help, Search, and Subscribe sit at the end.
+ * Primary navigation — mission-first, by life area. The top bar names the
+ * concrete places people actually live, so the right article is one obvious
+ * click away instead of buried under a vague verb:
  *
- * The five pillars (lib/subPathways.ts) live inside the Writing menu rather
- * than as five separate top-level dropdowns, so the header stays legible while
- * every pillar remains one click away. Tracks and the V2 pillar scheme are not
- * referenced here — one taxonomy on the surface.
+ *   Faith & Doubt → /theology        Marriage & Family → /family
+ *   Work & Money → /life/money-and-the-heart   Mind & Soul → /life
+ *   Leadership → /leadership          Post-Christian World ▾ → Empire + Justice
+ *   Books → /books                    Resources → /resources
+ *
+ * The five-pillar taxonomy (lib/subPathways.ts) still backs the listing pages
+ * and the search overlay; the bar just speaks in plainer, findable terms.
+ * Tracks and the V2 pillar scheme are not referenced here.
  */
 import { Link, useLocation } from "wouter";
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -28,26 +31,35 @@ interface NavLink {
 }
 
 /**
- * The mission-first top bar: four doors, one Writing menu (the five pillars),
- * and Books. Every page stays reachable; the chrome stops shouting.
+ * The mission-first top bar, named by life area. Five flat doors land straight
+ * on their hub; the sixth (Post-Christian World) folds the church-and-empire
+ * and justice material together, so it opens a short two-way menu. Books and
+ * Resources close the set.
  */
 function buildNavLinks(): NavLink[] {
   return [
-    { label: "Become a Disciple", href: "/discipleship" },
-    { label: "Make Disciples", href: "/resources" },
+    { label: "Faith & Doubt", href: "/theology" },
+    { label: "Marriage & Family", href: "/family" },
+    { label: "Work & Money", href: "/life/money-and-the-heart" },
+    { label: "Mind & Soul", href: "/life" },
     { label: "Leadership", href: "/leadership" },
-    { label: "Prophetic Justice", href: "/justice" },
     {
-      label: "Writing",
+      label: "Post-Christian World",
       dropdown: [
-        { label: "All Writing", href: "/writing", description: "Every essay, filterable by pillar and topic." },
-        ...PILLAR_ORDER.map(pillar => ({
-          label: pillar,
-          href: pillarListingUrl(pillar),
-        })),
+        {
+          label: "The Church & Empire",
+          href: "/disruption",
+          description: "Christian nationalism, cultural captivity, and the church that confused the cross with the flag.",
+        },
+        {
+          label: "Justice & the Vulnerable",
+          href: "/justice",
+          description: "Mishpat and tsedaqah — the poor at the gate, the worker, and the church's silence.",
+        },
       ],
     },
     { label: "Books", href: "/books" },
+    { label: "Resources", href: "/resources" },
   ];
 }
 
