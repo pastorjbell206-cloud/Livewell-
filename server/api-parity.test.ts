@@ -27,8 +27,14 @@ const repoRoot = path.resolve(__dirname, "..");
 // Client-called procedures that api/index.ts does not (yet) implement.
 // These currently 404 in production (or, for membership, are gracefully handled
 // client-side as "disabled"). This is the Stage-2 backlog — shrink it to empty.
+//
+// Stage 2 paused here: the files.* and teamCollab.* groups below depend on a
+// real per-user identity (ctx.user.id) for file ownership and team
+// membership/roles. Production's auth is a single shared "admin" session — there
+// is no multi-user login — so they cannot be ported safely until prod gains real
+// per-user auth. stripe.* already has a working REST fallback (/api/checkout).
 const KNOWN_PROD_GAPS = new Set<string>([
-  // File storage (admin).
+  // File storage — per-user file ownership; blocked on prod multi-user auth.
   "files.delete",
   "files.list",
   "files.updateDescription",
@@ -39,7 +45,8 @@ const KNOWN_PROD_GAPS = new Set<string>([
   "stripe.createMembershipCheckout",
   "stripe.getCheckoutSession",
   "stripe.membershipEnabled",
-  // Team collaboration workspace (the PCN/leadership area) — entirely dev-only.
+  // Team collaboration (PCN/leadership) — per-user membership + roles; blocked
+  // on prod multi-user auth.
   "teamCollab.announcement.create",
   "teamCollab.announcement.list",
   "teamCollab.channel.create",

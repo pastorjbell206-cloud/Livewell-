@@ -244,11 +244,18 @@ Inter; cream/black with mustard as <8% punctuation. Contract in `CLAUDE.md`.
 
 **Gaps to close**
 
-1. **Two API implementations can drift (now the #1 item).** Production
-   (`api/index.ts`, ~2,040 lines) re-derives the dev tRPC router by hand.
-   Anything added to `server/routers.ts` must be mirrored into the serverless
-   function or it won't exist in prod. Worth a parity test, or a shared module
-   both runtimes import.
+1. **Two API implementations can drift — now guarded, partially closed.**
+   Production (`api/index.ts`) re-derives the dev tRPC router by hand.
+   `server/api-parity.test.ts` now fails CI if the client calls a procedure prod
+   doesn't implement, so new drift can't sneak in. Stage 2 ported the gaps that
+   were safe to port (`search.*`, `books.getBySlug`, `posts.listForIndex`,
+   `subscribers.*`). The remaining `KNOWN_PROD_GAPS` are `stripe.*` (a working
+   REST fallback already exists at `/api/checkout`) and — the real blocker —
+   `files.*` and the whole `teamCollab.*` workspace, which need a **per-user
+   identity** (`ctx.user.id`) that production does not have: its auth is a single
+   shared "admin" session, with no multi-user login. Closing those requires
+   giving prod real per-user auth (its own project), or unifying the two runtimes
+   so one real router serves both.
 2. **`api/index.ts` is a 2,040-line single file.** It works, but its size is a
    maintainability risk; splitting it into modules (routes, procedures, db,
    auth) would help — ideally as part of resolving #1.
@@ -260,5 +267,7 @@ Inter; cream/black with mustard as <8% punctuation. Contract in `CLAUDE.md`.
    can be retired.
 
 **Bottom line:** a mature, content-heavy product — not an MVP scaffold.
-Production-ready for content, commerce-ready pending Stripe keys. With pooling
-handled, the next highest-value work is closing the dev/prod API drift.
+Production-ready for content, commerce-ready pending Stripe keys. Pooling is
+handled and dev/prod drift is now guarded and partly closed; the highest-value
+remaining work is giving production a real multi-user auth system, which unblocks
+the team workspace and per-user files.
