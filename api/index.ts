@@ -1537,6 +1537,42 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         const results = await withConn((c) => searchResourcesProd(c, q, lim));
         return trpcOk(res, { success: true, query: q, results, count: results.length });
       }
+      case "books.getBySlug": {
+        const slug = typeof input?.slug === "string" ? input.slug : "";
+        if (!slug) return trpcOk(res, null);
+        const book = await withConn(async (c) => {
+          const [rows]: any = await c.execute("SELECT * FROM books WHERE slug = ? LIMIT 1", [slug]);
+          return rows[0] || null;
+        });
+        if (!book || !book.published) return trpcOk(res, null);
+        return trpcOk(res, book);
+      }
+      case "posts.listForIndex": {
+        const rows = await withConn(async (c) => {
+          const [r]: any = await c.execute(
+            "SELECT id, slug, title, excerpt, pillar, topic, coverImage, readingTimeMinutes, readTime, " +
+              "format, audience, audience_type, contentType, difficulty, publishedAt, featured, createdAt, updatedAt " +
+              "FROM posts WHERE published = true ORDER BY publishedAt DESC",
+          );
+          return (r as any[]).map((p) => ({ ...p, featured: !!p.featured }));
+        });
+        return trpcOk(res, rows);
+      }
+      case "subscribers.list": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const rows = await withConn(async (c) => {
+          const [r]: any = await c.execute("SELECT * FROM subscribers WHERE active = true");
+          return r as any[];
+        });
+        return trpcOk(res, rows);
+      }
+      case "subscribers.remove": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const email = typeof input?.email === "string" ? input.email : "";
+        if (!email) return trpcErr(res, "BAD_REQUEST", "email required", 400);
+        await withConn(async (c) => { await c.execute("DELETE FROM subscribers WHERE email = ?", [email]); });
+        return trpcOk(res, { success: true });
+      }
       default:
         if (proc.endsWith(".listPublished") || proc.endsWith(".listAll")) return trpcOk(res, []);
         return trpcErr(res, "NOT_FOUND", "procedure not found: " + proc, 404);

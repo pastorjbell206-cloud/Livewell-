@@ -28,24 +28,17 @@ const repoRoot = path.resolve(__dirname, "..");
 // These currently 404 in production (or, for membership, are gracefully handled
 // client-side as "disabled"). This is the Stage-2 backlog — shrink it to empty.
 const KNOWN_PROD_GAPS = new Set<string>([
-  // Dynamic book detail by slug (static per-book pages still work).
-  "books.getBySlug",
   // File storage (admin).
   "files.delete",
   "files.list",
   "files.updateDescription",
   "files.upload",
-  // Article index listing.
-  "posts.listForIndex",
   // Stripe via tRPC (prod uses the REST /api/checkout instead; membership
   // falls back to the waitlist when these are absent).
   "stripe.createCheckoutSession",
   "stripe.createMembershipCheckout",
   "stripe.getCheckoutSession",
   "stripe.membershipEnabled",
-  // Subscriber admin.
-  "subscribers.list",
-  "subscribers.remove",
   // Team collaboration workspace (the PCN/leadership area) — entirely dev-only.
   "teamCollab.announcement.create",
   "teamCollab.announcement.list",
