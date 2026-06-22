@@ -653,15 +653,15 @@ export default function MinimalNav() {
         {mobileOpen && (
           <div
             style={{
-              position: "fixed",
-              top: "64px",
+              position: "absolute",
+              top: "100%",
               left: 0,
               right: 0,
-              bottom: 0,
-              width: "100%",
+              maxHeight: "calc(100vh - 64px)",
               boxSizing: "border-box",
               background: "var(--card)",
               borderTop: "1px solid var(--border)",
+              boxShadow: "var(--shadow-modal)",
               padding: "8px 20px calc(24px + env(safe-area-inset-bottom))",
               overflowY: "auto",
               WebkitOverflowScrolling: "touch",
