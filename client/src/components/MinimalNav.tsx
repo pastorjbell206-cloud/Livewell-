@@ -581,7 +581,7 @@ export default function MinimalNav() {
               <Search size={18} aria-hidden />
             </button>
 
-            <Link href="/start" style={{ textDecoration: "none" }}>
+            <Link href="/substack" style={{ textDecoration: "none" }}>
               <button
                 type="button"
                 style={{
@@ -791,7 +791,7 @@ export default function MinimalNav() {
             ))}
             <div style={{ display: "flex", gap: "12px", marginTop: "16px" }}>
               <Link
-                href="/start"
+                href="/substack"
                 onClick={() => setMobileOpen(false)}
                 style={{
                   flex: 1,
