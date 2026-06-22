@@ -1,31 +1,29 @@
 /**
- * Primary navigation. A clean two-level menu mapped to the five content pillars
- * and their sub-pathways (lib/subPathways.ts), plus a dedicated home for the
- * long-form study guides and series:
+ * Primary navigation — mission-first, by life area. The top bar names the
+ * concrete places people actually live, so the right article is one obvious
+ * click away instead of buried under a vague verb:
  *
- *   Theological Depth ▸ Doctrine & Scripture · Church History · Biblical Theology
- *   Prophetic Justice ▸ Economic Justice · Race & Reconciliation · The Vulnerable · Systemic Sin
- *   Prophetic Disruption ▸ Church & Empire · Christian Nationalism · Cultural Captivity
- *   Leadership Formation ▸ Pastoral Health · Staff & Teams · Preaching · Church Revitalization
- *   Integrated Life ▸ Marriage & Family · Rhythms & Sabbath · Vocation & Money
- *   Study Guides & Series → every multi-part guide/devotional in one place
- *   Books / About → flat links
+ *   Faith & Doubt → /theology         Roots & Tradition → /theology/history
+ *   Marriage & Family → /family       Work & Money → /life/money-and-the-heart
+ *   Mind & Soul → /life               Leadership → /leadership
+ *   Post-Christian World ▾ → Empire + Justice
+ *   The Table → /table (disciplemaking hub)   Books → /books
  *
- * The dropdowns only list sub-pathways that have at least one published post
- * (counted from `posts.navIndex`); a pillar with none renders as a plain link.
+ * "Roots & Tradition" gives the heritage library (church history, the creeds,
+ * the denominations) its own door so it stops getting lost under Faith & Doubt.
+ * "The Table" is the one-place disciplemaking hub (home studies + equipping +
+ * study guides + books); it absorbs the old "Resources" door, which still
+ * lives at /resources and is linked from inside The Table.
+ *
+ * The five-pillar taxonomy (lib/subPathways.ts) still backs the listing pages
+ * and the search overlay; the bar just speaks in plainer, findable terms.
+ * Tracks and the V2 pillar scheme are not referenced here.
  */
 import { Link, useLocation } from "wouter";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ChevronDown, Menu, Search, X } from "lucide-react";
 
-import { trpc } from "@/lib/trpc";
-import {
-  PILLAR_ORDER,
-  subPathwaysForPillar,
-  pillarListingUrl,
-} from "@/lib/subPathways";
-import { SUBPATHWAY_BY_SLUG } from "@/lib/subpathwayMap.generated";
-import { HIDDEN_SLUGS } from "@/lib/hiddenSlugs";
+import { PILLAR_ORDER, pillarListingUrl } from "@/lib/subPathways";
 
 interface DropdownItem {
   label: string;
@@ -40,76 +38,36 @@ interface NavLink {
 }
 
 /**
- * Build the nav from the live sub-pathway counts. `counts` maps a sub-pathway
- * label → number of published posts. Until the feed loads (`hasData` false) we
- * optimistically show every sub-pathway so the menu is never barren.
+ * The mission-first top bar, named by life area. Five flat doors land straight
+ * on their hub; the sixth (Post-Christian World) folds the church-and-empire
+ * and justice material together, so it opens a short two-way menu. Books and
+ * Resources close the set.
  */
-function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLink[] {
-  const pillarLinks: NavLink[] = PILLAR_ORDER.map(pillar => {
-    const subs = subPathwaysForPillar(pillar).filter(
-      s => !hasData || (counts[s.label] ?? 0) > 0
-    );
-    // Some pillars lead with a curated hub before the article sub-pathways.
-    const extras: DropdownItem[] =
-      pillar === "Integrated Life"
-        ? [
-            { label: "The Integrated Life Hub", href: "/life", description: "One undivided life before God — the inner life, the body, the home, work and money, and the world." },
-            { label: "The Whole-Life Assessment", href: "/life/assessment", description: "Map where your life is flourishing and where it has gone quiet, and get a rule of life for this season." },
-            { label: "Family Discipleship", href: "/family", description: "Devotions, teen apologetics, parenting, and marriage — for the whole house." },
-          ]
-        : pillar === "Theological Depth"
-        ? [
-            { label: "The Depth Hub", href: "/theology", description: "Contested doctrines explained fairly — every view in its strongest voice, sorted by how much it matters." },
-            { label: "Church History", href: "/theology/history", description: "The story you were born into — the councils, the creeds, the heresies, and the people who carried the faith." },
-            { label: "Biblical Theology", href: "/theology/biblical", description: "The whole Bible as one story that climaxes in Christ — the storyline, the themes, and every book." },
-            { label: "Hard Questions", href: "/theology/questions", description: "Honest answers to what people actually ask — suffering, salvation, the Bible, death, and doubt." },
-            { label: "Why So Many Churches?", href: "/theology/traditions", description: "An irenic guide to the great traditions and the core they all share." },
-          ]
-        : pillar === "Prophetic Disruption"
-        ? [
-            { label: "The Disruption Hub", href: "/disruption", description: "The church's captivity to tribe, nation, and culture — truth defended selectively, the left and the right indicted alike." },
-            { label: "The Consistency Check", href: "/disruption/consistency", description: "A mirror, not a scorecard: do you defend truth selectively, one standard for your side and another for theirs?" },
-            { label: "Hard Questions", href: "/disruption/questions", description: "Is the gospel political? Is Christianity left or right? What even is social justice?" },
-          ]
-        : pillar === "Prophetic Justice"
-        ? [
-            { label: "The Justice Hub", href: "/justice", description: "Mishpat and tsedaqah — the poor at the gate, the worker, the vulnerable, and the church's silence." },
-            { label: "The Call", href: "/justice/posture", description: "Biblical justice defined from the text up, and God's lean toward the poor and the foreigner." },
-          ]
-        : pillar === "Leadership Formation"
-        ? [
-            { label: "The Leadership Hub", href: "/leadership", description: "A working library for pastors and lay leaders — tools, articles, and sermon series for the weight of leading the church." },
-            { label: "The Leadership Library", href: "/leadership/library", description: "Every leadership article in one searchable place — preaching, exegesis, formation, and care." },
-            { label: "Sermon Series Library", href: "/leadership/sermon-series", description: "Complete series plans, book by book and topic by topic, with the arc and every sermon's aim." },
-            { label: "Sermon Series — Every Book of the Bible", href: "/leadership/bible-sermons", description: "A ready-to-preach series for all 66 books, Genesis to Revelation — big idea, Christ connection, and the arc." },
-            { label: "Servant Leadership", href: "/leadership/servant-leadership", description: "The nine biblical marks of a servant leader — the qualities the church neglected because they cost the leader something." },
-            { label: "The Servant Leadership Handbook", href: "/leadership/handbook", description: "A free twelve-chapter book on leading the church — from the towel and the throne to raising your replacement." },
-            { label: "Training Guides", href: "/leadership/guides", description: "Free session-by-session guides: servant leadership, elder training, deacon training, and developing leaders." },
-          ]
-        : [];
-    if (subs.length === 0) {
-      // No populated sub-pathway. Still surface Family for Integrated Life.
-      if (extras.length) {
-        return { label: pillar, dropdown: [...extras, { label: `All ${pillar}`, href: pillarListingUrl(pillar) }] };
-      }
-      return { label: pillar, href: pillarListingUrl(pillar) };
-    }
-    return {
-      label: pillar,
-      dropdown: [
-        ...extras,
-        { label: `All ${pillar}`, href: pillarListingUrl(pillar) },
-        ...subs.map(s => ({ label: s.label, href: pillarListingUrl(pillar, s.slug) })),
-      ],
-    };
-  });
-
+function buildNavLinks(): NavLink[] {
   return [
-    { label: "Start here", href: "/start" },
-    ...pillarLinks,
-    { label: "Resources", href: "/resources" },
+    { label: "Faith & Doubt", href: "/theology" },
+    { label: "Roots & Tradition", href: "/theology/history" },
+    { label: "Marriage & Family", href: "/family" },
+    { label: "Work & Money", href: "/life/money-and-the-heart" },
+    { label: "Mind & Soul", href: "/life" },
+    { label: "Leadership", href: "/leadership" },
+    {
+      label: "Post-Christian World",
+      dropdown: [
+        {
+          label: "The Church & Empire",
+          href: "/disruption",
+          description: "Christian nationalism, cultural captivity, and the church that confused the cross with the flag.",
+        },
+        {
+          label: "Justice & the Vulnerable",
+          href: "/justice",
+          description: "Mishpat and tsedaqah — the poor at the gate, the worker, and the church's silence.",
+        },
+      ],
+    },
+    { label: "The Table", href: "/table" },
     { label: "Books", href: "/books" },
-    { label: "About", href: "/about" },
   ];
 }
 
@@ -121,26 +79,7 @@ export default function MinimalNav() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Live sub-pathway counts drive which dropdowns appear.
-  const navIndexQuery = trpc.posts.navIndex.useQuery(undefined, {
-    staleTime: 5 * 60 * 1000,
-  });
-  const { counts, hasData } = useMemo(() => {
-    const rows = navIndexQuery.data ?? [];
-    const c: Record<string, number> = {};
-    for (const r of rows) {
-      if (HIDDEN_SLUGS.has((r as any).slug)) continue;
-      // Prefer a sub-pathway written to the DB; otherwise fall back to the
-      // static slug→category map so the menu works without a DB backfill.
-      const label =
-        ((r as any).subPathway as string | null) ||
-        SUBPATHWAY_BY_SLUG[(r as any).slug]?.sub ||
-        null;
-      if (label) c[label] = (c[label] ?? 0) + 1;
-    }
-    return { counts: c, hasData: rows.length > 0 };
-  }, [navIndexQuery.data]);
-  const navLinks = useMemo(() => buildNavLinks(counts, hasData), [counts, hasData]);
+  const navLinks = useMemo(() => buildNavLinks(), []);
 
   const isActive = (href: string) =>
     location === href || location.startsWith(href + "/");

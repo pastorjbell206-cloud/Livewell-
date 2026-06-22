@@ -37,6 +37,9 @@ const ConsiderTheBirdsThankYou = lazy(() => import("./pages/ConsiderTheBirdsThan
 const WhereYourTreasureIs = lazy(() => import("./pages/WhereYourTreasureIs"));
 const WhereYourTreasureIsThankYou = lazy(() => import("./pages/WhereYourTreasureIsThankYou"));
 const About = lazy(() => import("./pages/About"));
+const Exile = lazy(() => import("./pages/Exile"));
+const Table = lazy(() => import("./pages/table/Table"));
+const TableStudy = lazy(() => import("./pages/table/TableStudy"));
 
 const Resources = lazy(() => import("./pages/Resources"));
 const ContextLibrary = lazy(() => import("./pages/resources/ContextLibrary"));
@@ -228,6 +231,9 @@ function Router() {
         <Route path="/life/assessment" component={WholeLifeAssessment} />
         <Route path="/life/:slug" component={LifeDomain} />
         <Route path="/life" component={LifeIndex} />
+        <Route path="/exile" component={Exile} />
+        <Route path="/table/:slug" component={TableStudy} />
+        <Route path="/table" component={Table} />
         <Route path="/parenting" component={Parenting} />
         <Route path="/family/catechism" component={FamilyCatechism} />
         <Route path="/family/devotions" component={FamilyDevotions} />
