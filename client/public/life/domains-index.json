@@ -1,10 +1,34 @@
 {
   "domains": [
     {
+      "slug": "rest-and-the-sabbath",
+      "title": "Rest and the Sabbath: The Unforced Rhythms of Grace",
+      "blurb": "Hurry is the great enemy of the soul, and Sabbath is the weekly rebellion against it. What Scripture, the long tradition, and honest research say about rest as gift, rest as resistance, and the trust it takes to stop.",
+      "pillar": "The Body and the Rhythms"
+    },
+    {
+      "slug": "sex-and-the-body",
+      "title": "Sex and the Body: A Theology of Desire",
+      "blurb": "The body is good, desire is good, and both were made to mean something. A frank and serious Christian reckoning with sex, chastity, and longing, against both the prudery that fears the body and the license that wastes it.",
+      "pillar": "The Body and the Rhythms"
+    },
+    {
       "slug": "the-body-and-the-rhythms",
       "title": "The Body and the Rhythms",
       "blurb": "A Christian vision of sleep, food, rest, and attention. The body as a gift to steward, not a project to manage. Against both neglect and obsession.",
       "pillar": "The Body and the Rhythms"
+    },
+    {
+      "slug": "dating-and-discernment",
+      "title": "Dating and Discernment: Wisdom Before the Covenant",
+      "blurb": "Choosing a spouse is among the largest decisions a person ever makes, and the culture has handed us almost no wisdom for it. What Scripture, church history, and honest research say about character over chemistry, courtship and modern dating, and the discernment to marry well or to wait.",
+      "pillar": "The Home and Relationships"
+    },
+    {
+      "slug": "forgiveness-the-hardest-grace",
+      "title": "Forgiveness: The Hardest Grace",
+      "blurb": "Forgiveness is not pretending it did not hurt, and it is not the same as trust restored. What Scripture, church history, and honest research say about the cost and the mechanics of forgiving, how it differs from reconciliation, what to do when you have been deeply wronged, and the freedom that waits on the far side.",
+      "pillar": "The Home and Relationships"
     },
     {
       "slug": "friendship-against-isolation",
@@ -25,15 +49,51 @@
       "pillar": "The Home and Relationships"
     },
     {
+      "slug": "singleness-and-the-full-life",
+      "title": "Singleness and the Full Life",
+      "blurb": "Singleness is not a waiting room. It is a calling Jesus and Paul both kept, a full and fruitful life that the church too often treats as a problem to be solved. What Scripture, church history, and honest research say about the unmarried life, the idol of marriage, and the family that does not run on blood.",
+      "pillar": "The Home and Relationships"
+    },
+    {
       "slug": "the-home-and-the-family",
       "title": "The Home and the Family: Building a Household of Faith",
       "blurb": "A home is not only where a family sleeps. It is the first church a child ever attends and the first picture of God they ever see. What Scripture, church history, and honest research say about the table, family worship, hospitality, and building a household whose ordinary life forms souls.",
       "pillar": "The Home and Relationships"
     },
     {
+      "slug": "the-wayward-child",
+      "title": "The Wayward Child: When They Walk Away",
+      "blurb": "The child you raised in the faith has left it, or left you, and you are watching a road they have not come back down. What Scripture, church history, and honest research say about the prodigal, the agony of the parent, the limits of your control, and the Father who waits where you cannot.",
+      "pillar": "The Home and Relationships"
+    },
+    {
+      "slug": "anger-and-the-hot-heart",
+      "title": "Anger and the Hot Heart",
+      "blurb": "Anger is not always a sin, and it is not always righteous. It is a fire that tells the truth about what you love. What Scripture, the long tradition, and honest psychology say about the quick fuse and the slow one, and how the hot heart can be governed rather than obeyed.",
+      "pillar": "The Inner Life"
+    },
+    {
+      "slug": "identity-and-worth",
+      "title": "Identity and Worth: Who You Actually Are",
+      "blurb": "You have been building a case for yourself your whole life, brick by brick, and it never holds. What Scripture, the long tradition, and honest psychology say about the exhausting project of self-justification, and the difference between a worth you achieve and a worth you receive.",
+      "pillar": "The Inner Life"
+    },
+    {
+      "slug": "shame-and-the-hiding-self",
+      "title": "Shame and the Hiding Self",
+      "blurb": "Guilt says you did a bad thing. Shame says you are a bad thing. One of them the gospel answers with forgiveness, the other with being fully known and still loved. What Scripture, the long tradition, and honest psychology say about the self that has been hiding since Eden.",
+      "pillar": "The Inner Life"
+    },
+    {
       "slug": "the-anxious-mind",
       "title": "The Anxious Mind: Faith and Mental Health",
       "blurb": "Anxiety is not a faith failure. What Scripture, church history, and honest science say about the fearful mind, and why seeing a doctor can be an act of faith.",
+      "pillar": "The Inner Life"
+    },
+    {
+      "slug": "the-heavy-mind",
+      "title": "The Heavy Mind: Faith and Depression",
+      "blurb": "Depression is not the same as a bad day, and it is not the same as anxiety. It is the going out of the lights. What Scripture, the dark night of the soul, and honest medicine say to the sunk soul, and why getting help can be an act of faith.",
       "pillar": "The Inner Life"
     },
     {
@@ -49,15 +109,75 @@
       "pillar": "The Integrated Vision"
     },
     {
+      "slug": "faith-and-politics",
+      "title": "Faith and Politics: The Christian in the Public Square",
+      "blurb": "How a Christian belongs to two kingdoms at once, the idolatry of the nation, the ancient church that worshiped a crucified Lord under a hostile empire, and what it means to engage as a citizen without selling your soul to a party. Refusing the captivity of the faith to either tribe while still loving your country and your neighbor.",
+      "pillar": "The Life in the World"
+    },
+    {
+      "slug": "justice-and-the-poor",
+      "title": "Justice and the Poor: What the Whole Bible Says",
+      "blurb": "The Bible's relentless concern for the poor and the vulnerable, from the law of Moses to the prophets to Jesus to the early church. Mercy and justice held together, not torn apart, and a witness to the poor that refuses to be captured by either side of the American argument about who deserves what.",
+      "pillar": "The Life in the World"
+    },
+    {
+      "slug": "technology-and-attention",
+      "title": "Technology and Attention: The Formation of the Phone",
+      "blurb": "The colonized mind, attention as a spiritual battleground, and the forming of a soul in the age of the feed. What the body, the screen, and the ancient practices of the church have to say about a generation whose deepest formation is happening in its hands, six hours a day, without consent.",
+      "pillar": "The Life in the World"
+    },
+    {
+      "slug": "the-neighbor-and-the-stranger",
+      "title": "The Neighbor and the Stranger: Loving the People God Puts in Your Path",
+      "blurb": "Who counts as my neighbor, and who gets to be a stranger I owe nothing. The Good Samaritan, the command to love the outsider, and what it means to love across the lines that are tearing a country apart, when the person God puts in your path is exactly the one your tribe has taught you to despise.",
+      "pillar": "The Life in the World"
+    },
+    {
+      "slug": "addiction-and-the-long-road-back",
+      "title": "Addiction and the Long Road Back",
+      "blurb": "The enslaved will without the easy moralism. What addiction actually is, why willpower alone has never freed anyone, where the gospel of grace meets the Twelve Steps, and the long, crooked, possible road of recovery for the body and the soul together.",
+      "pillar": "The Seasons and the Crises"
+    },
+    {
+      "slug": "divorce-and-its-aftermath",
+      "title": "Divorce and Its Aftermath",
+      "blurb": "The broken covenant without the cheap verdict. The particular grief and shame of a marriage that ended, the church's long failure to know what to do with the divorced, and the slow road of being rebuilt by grace.",
+      "pillar": "The Seasons and the Crises"
+    },
+    {
+      "slug": "facing-death",
+      "title": "Facing Death: The Last Enemy and the Sure Hope",
+      "blurb": "The one appointment none of us will miss, and a faith honest enough to face it. The ancient art of dying well, the fear under the fear, and the Christian hope that is not a vague afterlife but a raised body in a remade world.",
+      "pillar": "The Seasons and the Crises"
+    },
+    {
       "slug": "grief-and-loss",
       "title": "Grief and Loss",
       "blurb": "Loss without the trite comfort. Lament as the language faith speaks at gravesides, the permission of the Psalms, and the long work of a body learning to live with what is gone.",
       "pillar": "The Seasons and the Crises"
     },
     {
+      "slug": "suffering-and-the-silence-of-god",
+      "title": "Suffering and the Silence of God",
+      "blurb": "The problem of pain without the easy answers. Lament as the language faith speaks in the dark, the book of Job as God's refusal to explain, and how to hold on when heaven seems to have gone quiet.",
+      "pillar": "The Seasons and the Crises"
+    },
+    {
+      "slug": "generosity-and-the-open-hand",
+      "title": "Generosity and the Open Hand",
+      "blurb": "Giving is not a tax the church levies on the faithful. It is the medicine that breaks greed's grip and the practice that moves treasure where moth and rust cannot reach. A Christian reckoning with the tithe, the open hand, and the joy of letting go.",
+      "pillar": "Work, Money, and Calling"
+    },
+    {
       "slug": "money-and-the-heart",
       "title": "Money and the Heart",
       "blurb": "Jesus named one rival god by name, and it was not lust or power. A Christian reckoning with Mammon, contentment, debt, generosity, and the freedom of enough.",
+      "pillar": "Work, Money, and Calling"
+    },
+    {
+      "slug": "work-as-worship",
+      "title": "Work as Worship: Vocation, Calling, and the Daily Grind",
+      "blurb": "The dignity and the idolatry of work held together. What Scripture, the Reformers, and honest research say about calling, the curse on labor, and the long faithfulness that outlasts success.",
       "pillar": "Work, Money, and Calling"
     }
   ]
