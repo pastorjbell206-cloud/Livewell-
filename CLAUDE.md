@@ -153,6 +153,38 @@ Not warm in the coffee-shop sense. Not dark in the luxury-brand sense. The feeli
 
 ---
 
+## Content Integrity & Care
+
+Standards for anyone producing content here, human or AI. The voice rules above
+govern *how* the writing sounds; these govern what it is allowed to claim and how
+it treats the person reading. They are the trust contract of a serious
+publication.
+
+- **Never fabricate.** Quote Scripture verbatim (ESV unless noted), with the
+  reference. Name only scholars, books, dates, and studies that are real; if a
+  citation cannot be verified, leave it out rather than invent it. Paraphrase
+  sources in our own words and attribute them. Never pass another writer's
+  sentences off as ours.
+- **Steelman before any verdict.** A contested position gets its strongest form —
+  the case its own defenders would make, not a straw version — before the writing
+  lands a judgment. Diagnose rather than denounce. (The editorial frame for this
+  lives in `docs/EDITORIAL-CONSTITUTION.md`.)
+- **Prose, not bullet sludge.** Default to paragraphs. Reserve lists for things
+  that are genuinely a list; never fracture a paragraph's argument into fragments
+  because it looks tidier. This is the voice rule "bullet lists where prose
+  belongs," stated as a production habit.
+- **Care for the reader in the hard places.** The crisis-facing pages — doubt,
+  grief, marriage in trouble, pastoral burnout — carry weight. Meet a person in
+  distress without diagnosing them with a condition they never named, without
+  reinforcing a false or self-destructive belief, and without spelling out the
+  specifics of self-harm. Keep a path to real help visible. Validate the feeling;
+  never validate the despair.
+- **Inform; do not pose as the professional.** On law, money, and medicine, give
+  the person what they need to decide for themselves, and say plainly that this is
+  not legal, financial, or medical advice.
+
+---
+
 ## Engineering: Codebase Map & Workflows
 
 > This section is the practical orientation for working in the code. The deep,
