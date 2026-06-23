@@ -329,7 +329,11 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
 .article-body em{font-style:italic}
 .article-body code{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.92em;background:var(--bone-warm);padding:.12em .35em;border-radius:2px}
 .article-body hr{border:0;height:1px;background:var(--border);margin:3em auto;max-width:120px}
-.article-body img{margin:2em 0;border-radius:var(--radius-sm)}
+.article-body img{margin:2em 0;border-radius:var(--radius-sm);max-width:100%;height:auto}
+/* Anti-overlap: never let the floated drop cap collide with a following
+   heading, quote, list, rule, or image; never let long words/URLs spill. */
+.article-body{overflow-wrap:break-word;word-break:break-word}
+.article-body h2,.article-body h3,.article-body blockquote,.article-body hr,.article-body ul,.article-body ol,.article-body img,.article-body figure,.article-body .pullquote,.article-body .footnotes{clear:both}
 
 /* Footnotes (when Streamdown emits them via remark-footnotes) */
 .article-body .footnotes{margin-top:4em;padding-top:1.6em;border-top:1px solid var(--border);font-size:14px;line-height:1.7;color:var(--ink-muted)}

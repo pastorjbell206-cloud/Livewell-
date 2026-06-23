@@ -9,6 +9,7 @@
  * - Bookmark + reading progress persist in localStorage
  */
 import { useEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { useLocation, useParams } from "wouter";
 import { Streamdown } from "streamdown";
 import { ArrowLeft, Bookmark, Share2, User } from "lucide-react";
@@ -190,6 +191,84 @@ function ShareableQuote({
         {copied ? "Copied" : "Share this quote"}
       </button>
     </blockquote>
+  );
+}
+
+/**
+ * QuoteSelectionShare — Medium-style "share any quote." When the reader
+ * highlights text inside the essay body, a small Share button floats above the
+ * selection. Desktop only: phones already surface a native selection menu, and
+ * a second floating control there would collide with it.
+ */
+function QuoteSelectionShare({
+  title,
+  url,
+  bodyRef,
+}: {
+  title: string;
+  url: string;
+  bodyRef: React.RefObject<HTMLDivElement | null>;
+}) {
+  const [pop, setPop] = useState<{ text: string; top: number; left: number } | null>(null);
+  const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    const fine =
+      typeof window !== "undefined" &&
+      typeof window.matchMedia === "function" &&
+      window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    if (!fine) return;
+
+    const update = () => {
+      const sel = window.getSelection();
+      if (!sel || sel.isCollapsed || sel.rangeCount === 0) { setPop(null); return; }
+      const text = sel.toString().trim();
+      const range = sel.getRangeAt(0);
+      const within = bodyRef.current && bodyRef.current.contains(range.commonAncestorContainer);
+      if (!within || text.length < 12) { setPop(null); return; }
+      const rect = range.getBoundingClientRect();
+      if (!rect || rect.width === 0) { setPop(null); return; }
+      setCopied(false);
+      setPop({ text, top: rect.top, left: rect.left + rect.width / 2 });
+    };
+    const hide = () => setPop(null);
+
+    document.addEventListener("mouseup", update);
+    document.addEventListener("keyup", update);
+    document.addEventListener("scroll", hide, true);
+    return () => {
+      document.removeEventListener("mouseup", update);
+      document.removeEventListener("keyup", update);
+      document.removeEventListener("scroll", hide, true);
+    };
+  }, [bodyRef]);
+
+  if (!pop) return null;
+
+  const share = async () => {
+    const attributed = `“${pop.text}” — James Bell`;
+    if (typeof navigator !== "undefined" && navigator.share) {
+      try { await navigator.share({ title, text: attributed, url }); setPop(null); return; } catch { /* fall through to copy */ }
+    }
+    try {
+      await navigator.clipboard.writeText(`${attributed}\n${url}`);
+      setCopied(true);
+      setTimeout(() => setPop(null), 1200);
+    } catch { /* ignore */ }
+  };
+
+  return createPortal(
+    <div style={{ position: "fixed", top: Math.max(8, pop.top - 46), left: pop.left, transform: "translateX(-50%)", zIndex: 1100 }}>
+      <button
+        type="button"
+        onMouseDown={(e) => e.preventDefault()}
+        onClick={share}
+        style={{ display: "inline-flex", alignItems: "center", gap: "7px", background: "var(--charcoal)", color: "var(--bone)", border: "none", borderRadius: "var(--radius-sm)", padding: "8px 14px", fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.04em", cursor: "pointer", boxShadow: "var(--shadow-modal)", whiteSpace: "nowrap" }}
+      >
+        <Share2 size={13} aria-hidden /> {copied ? "Copied" : "Share quote"}
+      </button>
+    </div>,
+    document.body
   );
 }
 
@@ -590,6 +669,7 @@ export default function ArticleDetail() {
 
         {/* BODY */}
         <section style={{ padding: "var(--s-6) var(--s-4)" }}>
+          <QuoteSelectionShare title={post.title} url={canonical} bodyRef={bodyRef} />
           <TableOfContents bodyRef={bodyRef} contentKey={post.slug} />
           <div
             className="article-body"
