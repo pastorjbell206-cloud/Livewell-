@@ -50,6 +50,12 @@ const BOOKS = [
     subtitle: "How to Follow Jesus in Post-Christian America",
     env: "STRIPE_PRICE_AFTER_CHRISTENDOM",
   },
+  {
+    slug: "covenant",
+    title: "Covenant",
+    subtitle: "Why Marriage Is a Promise, Not a Deal",
+    env: "STRIPE_PRICE_COVENANT",
+  },
 ];
 
 const results = [];

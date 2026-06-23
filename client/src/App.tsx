@@ -18,6 +18,8 @@ const AloneInACrowdedChurch = lazy(() => import("./pages/books/AloneInACrowdedCh
 const AloneInACrowdedChurchThankYou = lazy(() => import("./pages/books/AloneInACrowdedChurchThankYou"));
 const AfterChristendom = lazy(() => import("./pages/books/AfterChristendom"));
 const AfterChristendomThankYou = lazy(() => import("./pages/books/AfterChristendomThankYou"));
+const Covenant = lazy(() => import("./pages/books/Covenant"));
+const CovenantThankYou = lazy(() => import("./pages/books/CovenantThankYou"));
 const WhenGodBlessAmerica = lazy(() => import("./pages/WhenGodBlessAmerica"));
 const WhenGodBlessAmericaThankYou = lazy(() => import("./pages/WhenGodBlessAmericaThankYou"));
 const Believe = lazy(() => import("./pages/Believe"));
@@ -366,6 +368,8 @@ function Router() {
         <Route path="/alone-in-a-crowded-church" component={AloneInACrowdedChurch} />
         <Route path="/after-christendom/thank-you" component={AfterChristendomThankYou} />
         <Route path="/after-christendom" component={AfterChristendom} />
+        <Route path="/covenant/thank-you" component={CovenantThankYou} />
+        <Route path="/covenant" component={Covenant} />
         <Route path="/substack" component={SubstackPage} />
         <Route path="/pastors" component={Pastors} />
         <Route path="/about" component={About} />
