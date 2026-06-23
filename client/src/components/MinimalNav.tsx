@@ -4,8 +4,9 @@
  * long-form study guides and series:
  *
  *   Theological Depth ▸ Doctrine & Scripture · Church History · Biblical Theology
- *   Prophetic Justice ▸ Economic Justice · Race & Reconciliation · The Vulnerable · Systemic Sin
- *   Prophetic Disruption ▸ Church & Empire · Christian Nationalism · Cultural Captivity
+ *   Post-Christian World ▸ Prophetic Disruption (Church & Empire, Nationalism,
+ *     Cultural Captivity) + Prophetic Justice (Economic Justice, Race, The
+ *     Vulnerable, Systemic Sin), folded into one door
  *   Leadership Formation ▸ Pastoral Health · Staff & Teams · Preaching · Church Revitalization
  *   Integrated Life ▸ Marriage & Family · Rhythms & Sabbath · Vocation & Money
  *   Study Guides & Series → every multi-part guide/devotional in one place
@@ -104,9 +105,48 @@ function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLin
     };
   });
 
+  // Fold the two prophetic pillars (Justice + Disruption) into one
+  // "Post-Christian World" door, preserving every dropdown item from both.
+  const byPillar: Record<string, NavLink> = {};
+  PILLAR_ORDER.forEach((p, i) => { byPillar[p] = pillarLinks[i]; });
+  const itemsOf = (l: NavLink): DropdownItem[] =>
+    l.dropdown ?? (l.href ? [{ label: l.label, href: l.href }] : []);
+  // Display-only relabel: rename the nav door (and its "All <pillar>" entry)
+  // while the underlying pillar data, slugs, and listing URLs stay untouched.
+  const relabel = (l: NavLink, label: string, allLabel: string): NavLink =>
+    l.dropdown
+      ? { ...l, label, dropdown: l.dropdown.map(i => (i.label.startsWith("All ") ? { ...i, label: allLabel } : i)) }
+      : { ...l, label };
+  const postChristianWorld: NavLink = {
+    label: "Post-Christian World",
+    dropdown: [
+      ...itemsOf(byPillar["Prophetic Disruption"]),
+      ...itemsOf(byPillar["Prophetic Justice"]),
+      { label: "Church History", href: "/theology/history", description: "The councils, the creeds, the schisms — how the church was handed the center of the West, and how it lost it." },
+      { label: "The Creeds & Confessions", href: "/resources/creeds", description: "The texts the church has confessed in every age, with plain-language notes on what they meant." },
+      { label: "Why So Many Churches?", href: "/theology/traditions", description: "An even-handed guide to the great traditions and the core they all share." },
+      { label: "Hard Questions & Answers", href: "/theology/questions", description: "Honest answers for a skeptical age — suffering, Scripture, doubt, and death." },
+    ],
+  };
+  // Everyday Life: relabel Integrated Life, then surface the household pages.
+  const everydayLife = relabel(byPillar["Integrated Life"], "Everyday Life", "All Everyday Life");
+  const everydayLifePlus: NavLink = {
+    ...everydayLife,
+    dropdown: [
+      ...itemsOf(everydayLife),
+      { label: "Marriage", href: "/marriage", description: "Marriage as covenant, not contract — past the tips, into the gospel shape of staying." },
+      { label: "Parenting", href: "/parenting", description: "Raising children in the faith without fear, formula, or guilt." },
+      { label: "Family Devotions", href: "/family/devotions", description: "Weekly devotions plus Advent and Holy Week, built for fifteen minutes at the table." },
+    ],
+  };
+
   return [
     { label: "Start here", href: "/start" },
-    ...pillarLinks,
+    byPillar["Theological Depth"],
+    postChristianWorld,
+    everydayLifePlus,
+    { label: "The Table", href: "/table" },
+    relabel(byPillar["Leadership Formation"], "For Pastors & Leaders", "All Leadership"),
     { label: "Resources", href: "/resources" },
     { label: "Books", href: "/books" },
     { label: "About", href: "/about" },
@@ -613,11 +653,19 @@ export default function MinimalNav() {
         {mobileOpen && (
           <div
             style={{
+              position: "absolute",
+              top: "100%",
+              left: 0,
+              right: 0,
+              maxHeight: "calc(100vh - 64px)",
+              boxSizing: "border-box",
               background: "var(--card)",
               borderTop: "1px solid var(--border)",
-              padding: "8px 20px 24px",
-              maxHeight: "80vh",
+              boxShadow: "var(--shadow-modal)",
+              padding: "8px 20px calc(24px + env(safe-area-inset-bottom))",
               overflowY: "auto",
+              WebkitOverflowScrolling: "touch",
+              zIndex: 400,
             }}
           >
             <Link
@@ -640,36 +688,60 @@ export default function MinimalNav() {
                 {link.dropdown ? (
                   <>
                     <div
-                      onClick={() =>
-                        setOpenDropdown(
-                          openDropdown === link.label ? null : link.label
-                        )
-                      }
                       style={{
-                        fontFamily: "var(--U)",
-                        color: "var(--ink)",
-                        fontSize: "14px",
-                        padding: "12px 0",
-                        borderBottom: "1px solid var(--border)",
-                        fontWeight: 600,
-                        cursor: "pointer",
                         display: "flex",
-                        justifyContent: "space-between",
                         alignItems: "center",
+                        justifyContent: "space-between",
+                        borderBottom: "1px solid var(--border)",
                       }}
                     >
-                      {link.label}
-                      <ChevronDown
-                        size={16}
-                        aria-hidden
+                      <Link
+                        href={link.dropdown[0].href}
+                        onClick={() => { setMobileOpen(false); setOpenDropdown(null); }}
                         style={{
-                          transform:
-                            openDropdown === link.label
-                              ? "rotate(180deg)"
-                              : "none",
-                          transition: "transform 0.2s",
+                          flex: 1,
+                          textDecoration: "none",
+                          fontFamily: "var(--U)",
+                          color: "var(--ink)",
+                          fontSize: "14px",
+                          fontWeight: 600,
+                          padding: "12px 0",
                         }}
-                      />
+                      >
+                        {link.label}
+                      </Link>
+                      <button
+                        type="button"
+                        aria-label={`Show ${link.label} sections`}
+                        aria-expanded={openDropdown === link.label}
+                        onClick={() =>
+                          setOpenDropdown(
+                            openDropdown === link.label ? null : link.label
+                          )
+                        }
+                        style={{
+                          background: "none",
+                          border: "none",
+                          color: "var(--ink)",
+                          cursor: "pointer",
+                          padding: "12px 4px 12px 20px",
+                          minHeight: "44px",
+                          display: "inline-flex",
+                          alignItems: "center",
+                        }}
+                      >
+                        <ChevronDown
+                          size={18}
+                          aria-hidden
+                          style={{
+                            transform:
+                              openDropdown === link.label
+                                ? "rotate(180deg)"
+                                : "none",
+                            transition: "transform 0.2s",
+                          }}
+                        />
+                      </button>
                     </div>
                     {openDropdown === link.label && (
                       <div style={{ paddingLeft: "16px", paddingBottom: "8px" }}>

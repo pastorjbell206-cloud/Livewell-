@@ -7,6 +7,7 @@
  */
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
+import { Streamdown } from "streamdown";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
@@ -27,6 +28,7 @@ const GROUP_ORDER = ["Pentateuch", "History", "Wisdom", "Major Prophets", "Minor
 
 export default function WholeBibleSermons() {
   const [data, setData] = useState<Data | null>(null);
+  const [fullSermons, setFullSermons] = useState<Record<string, string>>({});
   const [, params] = useRoute("/leadership/bible-sermons/:bookId");
   const bookId = params?.bookId;
 
@@ -36,6 +38,21 @@ export default function WholeBibleSermons() {
       .then((d) => d && setData(d))
       .catch(() => {});
   }, []);
+
+  // The full sermon manuscripts live in a per-book file so the index stays light.
+  useEffect(() => {
+    setFullSermons({});
+    if (!bookId) return;
+    fetch(`/leadership/sermons/${bookId}.json`, { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((arr) => {
+        if (!Array.isArray(arr)) return;
+        const m: Record<string, string> = {};
+        for (const x of arr) if (x && x.n != null && x.sermon) m[String(x.n)] = x.sermon;
+        setFullSermons(m);
+      })
+      .catch(() => {});
+  }, [bookId]);
 
   if (!data) {
     return (
@@ -111,6 +128,16 @@ export default function WholeBibleSermons() {
                           <p style={{ fontFamily: "var(--U)", fontSize: "12px", letterSpacing: "0.06em", color: "var(--ink-muted)", margin: "0 0 8px" }}>{sermon.text}</p>
                           <p style={{ fontFamily: "var(--B)", fontSize: "15.5px", lineHeight: 1.65, color: "var(--ink)", margin: "0 0 6px" }}>{sermon.idea}</p>
                           <p style={{ fontFamily: "var(--F)", fontSize: "16px", fontStyle: "italic", color: "var(--mustard-text)", margin: 0 }}>{sermon.verdict}</p>
+                          {fullSermons[String(sermon.n)] && (
+                            <details style={{ marginTop: "12px" }}>
+                              <summary style={{ cursor: "pointer", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", listStyle: "none" }}>
+                                Read the full sermon ↓
+                              </summary>
+                              <div className="handbook-body" style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.78, color: "var(--ink)", margin: "12px 0 4px", paddingLeft: "16px", borderLeft: "2px solid var(--border)" }}>
+                                <Streamdown>{fullSermons[String(sermon.n)]}</Streamdown>
+                              </div>
+                            </details>
+                          )}
                         </div>
                       </div>
                     </li>
@@ -160,7 +187,7 @@ export default function WholeBibleSermons() {
             A sermon series for every book of the Bible
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch" }}>
-            All sixty-six books, Genesis to Revelation — each with the one big idea, the line that runs to Christ, and a preaching arc you can start this Sunday. The marquee books are fully written; the rest give you the spine to build on. Free, for the men who carry the weight of the pulpit.
+            All sixty-six books, Genesis to Revelation — every one with a full expository series: the book's big idea, the line that runs to Christ, and a sermon-by-sermon arc you can start preaching this Sunday. More than five hundred sermons, in order, through the whole canon. Free, for the men who carry the weight of the pulpit.
           </p>
         </div>
       </section>
