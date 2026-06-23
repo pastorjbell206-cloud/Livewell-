@@ -96,6 +96,7 @@ export default function LifeIndex() {
             <Link href="/marriage" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Marriage</Link>
             <Link href="/parenting" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Parenting</Link>
             <Link href="/family" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Family Discipleship</Link>
+            <Link href="/disciple-making" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Make Disciples</Link>
             <Link href="/discipleship" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>The Discipleship Pathway</Link>
           </div>
         </div>

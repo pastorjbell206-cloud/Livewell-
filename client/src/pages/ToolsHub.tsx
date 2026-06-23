@@ -27,6 +27,13 @@ const TOOLS = [
     color: "var(--gold)",
   },
   {
+    title: "Start a Table",
+    description: "Build a complete, reproducing plan for making disciples around a table. Pick who you are gathering and how often, and get the invitation to send, a simple rhythm of meal, Scripture, and prayer, passages to begin with, and how to multiply. Made for the ordinary believer. Part of Integrated Life.",
+    href: "/tools/discipleship-table",
+    icon: HeartHandshake,
+    color: "var(--ink2)",
+  },
+  {
     title: "Passage Context Tool",
     description: "Enter any Bible reference and read it in context: the passage with room around it, who wrote it and why, its genre, the flow of the argument, cross-references, and the questions to ask of any text. Part of the Theological Depth section.",
     href: "/theology/passage",
