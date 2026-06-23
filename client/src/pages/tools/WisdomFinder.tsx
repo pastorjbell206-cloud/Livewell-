@@ -17,6 +17,7 @@ const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const eyebrow = { fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--mustard)" } as const;
 
 interface Verse { ref: string; text: string }
+interface Related { label: string; href: string }
 interface Topic {
   id: string;
   label: string;
@@ -26,6 +27,7 @@ interface Topic {
   historical: string;
   application: string;
   verses: Verse[];
+  related?: Related[];
 }
 
 function scoreTopic(t: Topic, words: string[]): number {
@@ -230,6 +232,20 @@ export default function WisdomFinder() {
                           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink)" }}>{lens.body}</p>
                         </div>
                       ))}
+
+                      {/* go deeper */}
+                      {active.related && active.related.length > 0 && (
+                        <div style={{ background: "var(--charcoal)", padding: "var(--s-3)", marginTop: "4px" }}>
+                          <div style={{ ...eyebrow, color: "var(--mustard)", marginBottom: "10px" }}>Go deeper</div>
+                          <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+                            {active.related.map((r) => (
+                              <Link key={r.href} href={r.href} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
+                                {r.label}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
