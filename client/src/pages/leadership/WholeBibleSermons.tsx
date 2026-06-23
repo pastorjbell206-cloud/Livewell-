@@ -133,7 +133,7 @@ export default function WholeBibleSermons() {
                               <summary style={{ cursor: "pointer", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", listStyle: "none" }}>
                                 Read the full sermon ↓
                               </summary>
-                              <div className="handbook-body" style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.78, color: "var(--ink)", margin: "12px 0 4px", paddingLeft: "16px", borderLeft: "2px solid var(--border)" }}>
+                              <div className="article-body prose-section" style={{ margin: "12px 0 4px", paddingLeft: "16px", borderLeft: "2px solid var(--border)" }}>
                                 <Streamdown>{fullSermons[String(sermon.n)]}</Streamdown>
                               </div>
                             </details>

@@ -12,11 +12,12 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { TriageBadge } from "@/components/TriageBadge";
 import type { Doctrine } from "@/lib/theology";
+import { toParagraphs } from "@/lib/prose";
 
 function Paragraphs({ text, style }: { text: string; style?: React.CSSProperties }) {
   return (
     <>
-      {text.split("\n\n").map((p, i) => (
+      {toParagraphs(text).map((p, i) => (
         <p key={i} style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "68ch", marginBottom: "16px", ...style }}>
           {p}
         </p>
