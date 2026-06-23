@@ -52,7 +52,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -112,7 +112,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -172,7 +172,7 @@
       "articles": [
         {
           "label": "Practical guides for the body",
-          "href": "/writing?topic=the-body"
+          "href": "/how-tos?topic=the-body"
         }
       ]
     },
@@ -228,7 +228,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -288,7 +288,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -345,7 +345,67 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "apologizing-well",
+      "label": "Apologizing Well",
+      "keywords": [
+        "apology",
+        "apologize",
+        "sorry",
+        "repentance",
+        "admitting wrong",
+        "i was wrong",
+        "making amends",
+        "confession",
+        "owning it",
+        "saying sorry",
+        "repair",
+        "accountability"
+      ],
+      "framing": "A real apology names the wrong without softening it, owns it without excusing it, and asks for nothing back. Scripture calls this repentance, and it is not groveling. It is the dignity of a person willing to be seen as he actually is. The half-apology that says sorry you felt that way is not repair. It is a second offense wearing the costume of the first.",
+      "cultural": "Honor cultures, ancient and modern, treat admitting fault as defeat, a crack in the wall that an enemy will pour through. Into that, the gospel made confession the doorway to life, not the loss of face but the start of healing. Our therapeutic age has its own evasion, the apology that explains the wound as the other person's perception, which protects the self while pretending to humble it.",
+      "historical": "King David, confronted by the prophet Nathan around 1000 BC, did not spin or deflect but said plainly, I have sinned against the Lord, and Psalm 51 became the church's school of repentance. Augustine in the fourth century wrote his Confessions, the first great work to lay a life bare before God and reader alike. The whole tradition of confession, public and private, rests on the conviction that named sin is forgiven sin.",
+      "application": "Say the specific thing you did, not the vague fact that something happened. Drop the word but, which cancels every clause before it. Do not demand forgiveness on your timeline, because the person you wounded does not owe you a quick release. And where you can, repair the actual damage, since the apology that changes nothing was never repentance, only regret at being caught.",
+      "verses": [
+        {
+          "ref": "Psalm 51:4",
+          "text": "Against you, you only, have I sinned and done what is evil in your sight."
+        },
+        {
+          "ref": "Proverbs 28:13",
+          "text": "Whoever conceals his transgressions will not prosper, but he who confesses and forsakes them will obtain mercy."
+        },
+        {
+          "ref": "James 5:16",
+          "text": "Confess your sins to one another and pray for one another, that you may be healed."
+        },
+        {
+          "ref": "Matthew 5:23-24",
+          "text": "First be reconciled to your brother, and then come and offer your gift."
+        },
+        {
+          "ref": "1 John 1:9",
+          "text": "If we confess our sins, he is faithful and just to forgive us our sins."
+        }
+      ],
+      "related": [
+        {
+          "label": "Conflict and Reconciliation",
+          "href": "/life/conflict-and-reconciliation"
+        },
+        {
+          "label": "Wisdom for All of Life",
+          "href": "/life/wisdom-for-all-of-life"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -405,7 +465,67 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "backsliding",
+      "label": "Backsliding and Drifting",
+      "keywords": [
+        "backsliding",
+        "backslidden",
+        "drifting",
+        "drifted away",
+        "falling away",
+        "cold heart",
+        "lost my faith",
+        "wandered",
+        "far from god",
+        "slipping",
+        "left the church",
+        "lukewarm again"
+      ],
+      "framing": "Few people decide to leave God. They drift, the way a boat drifts from a dock no one tied it to, until one day the shore is small and strange. Scripture names the drift honestly and calls it not a fall off a cliff but a slow leak, and it treats the return as something God himself promises to do for those who have wandered.",
+      "cultural": "Israel's prophets used the word for a stubborn heifer that turns away from the yoke, a people pulling against the very hand that fed them. The drift was rarely dramatic apostasy and almost always the quiet substitution of lesser loves, the slow trading of the fountain of living water for cracked cisterns that hold nothing. The Bible refuses to let us pretend the heart stays warm on its own.",
+      "historical": "Hosea, prophesying to the northern kingdom around 750 BC, married a faithless woman to feel in his own home what God felt toward a wandering people, and still spoke of healing their backsliding. Jonathan Edwards, in the cooled embers after the Great Awakening of the 1740s, wrote of how easily revived affections grow cold again, and warned that the surest sign of a true heart was not a single warm moment but the long return.",
+      "application": "Name the drift before you justify it, because the heart that has cooled is expert at calling the cooling maturity. Go back to the first things you abandoned, the prayer, the table, the people, even when the feeling has not come back yet, since the feeling usually follows the practice rather than leading it. Tell one honest person where you actually are. The God who saw you leave is the God already running toward you on the road.",
+      "verses": [
+        {
+          "ref": "Jeremiah 2:13",
+          "text": "My people have committed two evils: they have forsaken me, the fountain of living waters, and hewed out broken cisterns that can hold no water."
+        },
+        {
+          "ref": "Hosea 14:4",
+          "text": "I will heal their apostasy; I will love them freely, for my anger has turned from them."
+        },
+        {
+          "ref": "Hebrews 2:1",
+          "text": "We must pay much closer attention to what we have heard, lest we drift away from it."
+        },
+        {
+          "ref": "Revelation 2:4-5",
+          "text": "You have abandoned the love you had at first. Remember therefore from where you have fallen; repent, and do the works you did at first."
+        },
+        {
+          "ref": "James 5:19-20",
+          "text": "If anyone among you wanders from the truth and someone brings him back, let him know that whoever brings back a sinner will save his soul from death."
+        }
+      ],
+      "related": [
+        {
+          "label": "The Dry Season",
+          "href": "/life/the-dry-season"
+        },
+        {
+          "label": "Discipleship: Following Jesus",
+          "href": "/life/discipleship-following-jesus"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -465,7 +585,7 @@
       "articles": [
         {
           "label": "Practical guides for life in the world",
-          "href": "/writing?topic=the-life-in-the-world"
+          "href": "/how-tos?topic=the-life-in-the-world"
         }
       ]
     },
@@ -525,7 +645,67 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
+        }
+      ]
+    },
+    {
+      "id": "reliability",
+      "label": "Being Reliable",
+      "keywords": [
+        "reliable",
+        "reliability",
+        "dependable",
+        "showing up",
+        "on time",
+        "consistent",
+        "follow through",
+        "flaky",
+        "faithful",
+        "steady",
+        "count on me",
+        "punctual"
+      ],
+      "framing": "Reliability is faithfulness in the small thing, repeated until it becomes a character. Scripture promises that the one who is faithful in little is given much, and it does not ask for brilliance, only for a person who does what he said he would do, when he said he would do it. Most trust is not won by a grand act. It is built quietly, by showing up, again and again.",
+      "cultural": "The ancient economy ran on the steady worker and the honest weight far more than on the rare genius, and the parables Jesus told are full of stewards judged not by their talent but by their faithfulness. Our culture prizes the dramatic over the dependable, the launch over the maintenance, and so it is surprised when the flashy thing collapses and the boring, faithful thing is still standing. We have made consistency seem small. It is not small.",
+      "historical": "Benedict of Nursia, in the sixth century, built a way of life around stability, the vow to stay and keep showing up, against the restless monks who drifted from place to place. The whole of monastic culture, which preserved learning and faith through the collapse of an empire, rested not on heroics but on the daily return to the same work and the same prayers. Faithfulness, repeated for a lifetime, turned out to carry civilizations.",
+      "application": "Do the small things you committed to, on time, even when no one is watching and no one would notice the lapse, because that is precisely where character is made. When you say you will be somewhere, be there, and when you cannot, tell them before, not after. Build a margin into your time so that one delay does not cascade into broken word. And measure yourself not by your best day but by your ordinary Tuesday.",
+      "verses": [
+        {
+          "ref": "Luke 16:10",
+          "text": "One who is faithful in a very little is also faithful in much."
+        },
+        {
+          "ref": "Matthew 25:21",
+          "text": "Well done, good and faithful servant. You have been faithful over a little; I will set you over much."
+        },
+        {
+          "ref": "1 Corinthians 4:2",
+          "text": "It is required of stewards that they be found faithful."
+        },
+        {
+          "ref": "Proverbs 25:19",
+          "text": "Trusting in a treacherous man in time of trouble is like a bad tooth or a foot that slips."
+        },
+        {
+          "ref": "Colossians 3:23",
+          "text": "Whatever you do, work heartily, as for the Lord and not for men."
+        }
+      ],
+      "related": [
+        {
+          "label": "Work as Worship",
+          "href": "/life/work-as-worship"
+        },
+        {
+          "label": "Time and the Examined Life",
+          "href": "/life/time-and-the-examined-life"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -581,7 +761,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -641,7 +821,7 @@
       "articles": [
         {
           "label": "Practical guides for the body",
-          "href": "/writing?topic=the-body"
+          "href": "/how-tos?topic=the-body"
         }
       ]
     },
@@ -697,7 +877,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -757,7 +937,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -813,7 +993,7 @@
       "articles": [
         {
           "label": "Practical guides for work and money",
-          "href": "/writing?topic=work"
+          "href": "/how-tos?topic=work"
         }
       ]
     },
@@ -873,7 +1053,7 @@
       "articles": [
         {
           "label": "Practical guides for life in the world",
-          "href": "/writing?topic=the-life-in-the-world"
+          "href": "/how-tos?topic=the-life-in-the-world"
         }
       ]
     },
@@ -933,7 +1113,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -989,7 +1169,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -1049,7 +1229,7 @@
       "articles": [
         {
           "label": "Practical guides for work and money",
-          "href": "/writing?topic=work"
+          "href": "/how-tos?topic=work"
         }
       ]
     },
@@ -1110,7 +1290,7 @@
       "articles": [
         {
           "label": "Practical guides for the body",
-          "href": "/writing?topic=the-body"
+          "href": "/how-tos?topic=the-body"
         }
       ]
     },
@@ -1170,7 +1350,7 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -1230,7 +1410,7 @@
       "articles": [
         {
           "label": "Practical marriage guides",
-          "href": "/writing?topic=marriage"
+          "href": "/how-tos?topic=marriage"
         }
       ]
     },
@@ -1289,7 +1469,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -1345,7 +1525,7 @@
       "articles": [
         {
           "label": "Practical guides for life in the world",
-          "href": "/writing?topic=the-life-in-the-world"
+          "href": "/how-tos?topic=the-life-in-the-world"
         }
       ]
     },
@@ -1404,7 +1584,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -1460,7 +1640,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -1517,7 +1697,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -1577,7 +1757,7 @@
       "articles": [
         {
           "label": "Practical guides for life in the world",
-          "href": "/writing?topic=the-life-in-the-world"
+          "href": "/how-tos?topic=the-life-in-the-world"
         }
       ]
     },
@@ -1633,7 +1813,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -1693,7 +1873,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -1747,7 +1927,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -1803,7 +1983,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -1859,7 +2039,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -1916,7 +2096,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -1972,7 +2152,67 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
+        }
+      ]
+    },
+    {
+      "id": "defensiveness",
+      "label": "Defensiveness",
+      "keywords": [
+        "defensive",
+        "defensiveness",
+        "can't take criticism",
+        "thin-skinned",
+        "make excuses",
+        "blame-shifting",
+        "deflect",
+        "won't admit",
+        "easily offended",
+        "justify myself",
+        "touchy",
+        "rationalize"
+      ],
+      "framing": "Defensiveness is the reflex to protect a self that does not feel safe enough to be wrong. The moment a word of correction lands, the lawyer in us stands up, and we spend on excuses and counter-charges the strength that could have gone to listening. Scripture calls the willingness to be corrected a mark of wisdom, and the refusal of it a mark of the fool.",
+      "cultural": "We live in a moment that treats every challenge as an attack on the self, where to disagree is to wound and to be corrected is to be erased. But a self that cannot bear correction cannot grow, and the person who deflects every word of feedback slowly seals himself inside his own blind spots, surrounded by people who have learned it costs too much to tell him the truth.",
+      "historical": "The desert fathers of the fourth century made a discipline of receiving rebuke without defending themselves, treating it as a furnace for the ego. King David, confronted by the prophet Nathan over Bathsheba and Uriah, could have killed the man who accused him, and instead said simply, I have sinned against the Lord, a sentence that is the opposite of defensiveness and the doorway to mercy.",
+      "application": "When the heat of correction rises, pause before you answer, and ask whether the thing being said is true rather than whether it is fair. Resist the urge to counter-charge, the but you of the cornered soul. Thank the person who tells you a hard truth, since they paid something to say it. And remember that being wrong is survivable, while being unteachable is not.",
+      "verses": [
+        {
+          "ref": "Proverbs 12:1",
+          "text": "Whoever loves discipline loves knowledge, but he who hates reproof is stupid."
+        },
+        {
+          "ref": "Proverbs 9:8",
+          "text": "Reprove a wise man, and he will love you."
+        },
+        {
+          "ref": "Proverbs 27:6",
+          "text": "Faithful are the wounds of a friend; profuse are the kisses of an enemy."
+        },
+        {
+          "ref": "2 Samuel 12:13",
+          "text": "David said to Nathan, I have sinned against the Lord."
+        },
+        {
+          "ref": "James 1:19",
+          "text": "Let every person be quick to hear, slow to speak, slow to anger."
+        }
+      ],
+      "related": [
+        {
+          "label": "Pride and Humility",
+          "href": "/life/pride-and-humility"
+        },
+        {
+          "label": "Shame and the Hiding Self",
+          "href": "/life/shame-and-the-hiding-self"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -2029,7 +2269,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -2085,7 +2325,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -2145,7 +2385,7 @@
       "articles": [
         {
           "label": "Practical guides for hard seasons",
-          "href": "/writing?topic=suffering"
+          "href": "/how-tos?topic=suffering"
         }
       ]
     },
@@ -2205,7 +2445,7 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -2259,7 +2499,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -2318,7 +2558,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -2374,7 +2614,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -2434,7 +2674,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -2494,7 +2734,7 @@
       "articles": [
         {
           "label": "Practical guides for the body",
-          "href": "/writing?topic=the-body"
+          "href": "/how-tos?topic=the-body"
         }
       ]
     },
@@ -2554,7 +2794,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -2614,7 +2854,7 @@
       "articles": [
         {
           "label": "Practical guides for life in the world",
-          "href": "/writing?topic=the-life-in-the-world"
+          "href": "/how-tos?topic=the-life-in-the-world"
         }
       ]
     },
@@ -2670,7 +2910,7 @@
       "articles": [
         {
           "label": "Practical guides for hard seasons",
-          "href": "/writing?topic=suffering"
+          "href": "/how-tos?topic=suffering"
         }
       ]
     },
@@ -2730,7 +2970,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -2789,7 +3029,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -2849,7 +3089,7 @@
       "articles": [
         {
           "label": "Practical guides for work and money",
-          "href": "/writing?topic=work"
+          "href": "/how-tos?topic=work"
         }
       ]
     },
@@ -2908,7 +3148,67 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
+        }
+      ]
+    },
+    {
+      "id": "finishing-what-you-start",
+      "label": "Finishing What You Start",
+      "keywords": [
+        "finishing",
+        "perseverance",
+        "completion",
+        "quitting",
+        "giving up",
+        "unfinished",
+        "follow through",
+        "endurance",
+        "see it through",
+        "started but never finished",
+        "discipline",
+        "stick with it"
+      ],
+      "framing": "Beginnings are cheap. The crowd is always large at the start and thin at the finish, and Scripture reserves its honor for the one who endures to the end, who counts the cost before he builds and then builds it through. To leave a thing half-done is not only to waste the work already spent. It is to train yourself in the habit of leaving.",
+      "cultural": "Our age is built for starting and against finishing, the new project always more exciting than the old one almost done, the next purchase, the next plan, the next self. We mistake the rush of beginning for progress, and leave a wake of half-built things behind us, gym memberships and abandoned drafts and good intentions. The ancient world, where a harvest took a full season and a wall took years, knew that the reward came only to those who stayed.",
+      "historical": "Jesus told of the man who began a tower and could not finish it, and became a public mockery, a warning against the unconsidered start. Paul, near the end of his life around AD 67, wrote not I have begun but I have finished the race, and counted it the whole point. William Wilberforce labored against the slave trade for forty-six years, from 1787 until the act passed days before his death in 1833, the long, unglamorous finishing of a thing he started young.",
+      "application": "Before you begin, count the cost, so that you commit to what you can actually carry through. When the excitement of the start wears off and the dull middle arrives, that is the test, and the answer is usually to keep going, not to start something new. Break the long task into the next small step and take it today. And learn to feel the quiet, unglamorous satisfaction of a thing completed, which the world rarely applauds but God does.",
+      "verses": [
+        {
+          "ref": "Luke 14:28",
+          "text": "Which of you, desiring to build a tower, does not first sit down and count the cost?"
+        },
+        {
+          "ref": "2 Timothy 4:7",
+          "text": "I have fought the good fight, I have finished the race, I have kept the faith."
+        },
+        {
+          "ref": "Ecclesiastes 7:8",
+          "text": "Better is the end of a thing than its beginning."
+        },
+        {
+          "ref": "Galatians 6:9",
+          "text": "Let us not grow weary of doing good, for in due season we will reap, if we do not give up."
+        },
+        {
+          "ref": "Philippians 1:6",
+          "text": "He who began a good work in you will bring it to completion at the day of Jesus Christ."
+        }
+      ],
+      "related": [
+        {
+          "label": "Work as Worship",
+          "href": "/life/work-as-worship"
+        },
+        {
+          "label": "Discipleship: Following Jesus",
+          "href": "/life/discipleship-following-jesus"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for work and money",
+          "href": "/how-tos?topic=work"
         }
       ]
     },
@@ -2968,7 +3268,7 @@
       "articles": [
         {
           "label": "Practical guides for the body",
-          "href": "/writing?topic=the-body"
+          "href": "/how-tos?topic=the-body"
         }
       ]
     },
@@ -3028,7 +3328,67 @@
       "articles": [
         {
           "label": "Practical guides for work and money",
-          "href": "/writing?topic=work"
+          "href": "/how-tos?topic=work"
+        }
+      ]
+    },
+    {
+      "id": "generosity-with-time",
+      "label": "Generosity with Time",
+      "keywords": [
+        "generosity with time",
+        "giving time",
+        "interruptions",
+        "availability",
+        "presence",
+        "too busy",
+        "making time",
+        "attention",
+        "my time",
+        "being present",
+        "unhurried",
+        "interrupted"
+      ],
+      "framing": "We guard our time more fiercely than our money, and call it stewardship when it is often hoarding. Scripture shows a Jesus repeatedly interrupted, by the bleeding woman, by the children, by the blind man on the road, and he treats the interruption not as a theft from his agenda but as the actual work. The most generous thing many of us could give is not a check. It is an unhurried hour.",
+      "cultural": "Our culture has made time the scarcest currency, every minute optimized, every gap filled with a screen, and so we ration our presence as if it might run out. We are physically near our families and our neighbors while being mentally elsewhere, available to everyone and present to no one. The ancient world, slower and more bound to the table and the road, had less efficiency and more attention, and knew that to be given someone's full presence was a gift.",
+      "historical": "Jesus moved at the pace of one who was never rushed though always busy, and let the urgent demand wait for the present person. Henri Nouwen, the priest and writer who died in 1996, left a celebrated academic post to live among adults with severe disabilities, and discovered that the interruptions he had resented were his life and his ministry, not the obstacle to it. The whole tradition of Christian hospitality assumes that our time is not finally our own.",
+      "application": "Treat the interruption as possibly the more important thing, and ask whether the agenda you are protecting is really God's or only yours. Give someone your full attention by putting the phone away and meaning it, because divided presence is half a gift. Build unhurried margin into your week so you have time to give and are not always running empty. And notice who actually needs an hour of you, and give it before they have to ask twice.",
+      "verses": [
+        {
+          "ref": "Ephesians 5:15-16",
+          "text": "Look carefully then how you walk, making the best use of the time, because the days are evil."
+        },
+        {
+          "ref": "Galatians 6:2",
+          "text": "Bear one another's burdens, and so fulfill the law of Christ."
+        },
+        {
+          "ref": "Psalm 90:12",
+          "text": "Teach us to number our days that we may get a heart of wisdom."
+        },
+        {
+          "ref": "Mark 10:14",
+          "text": "Let the children come to me; do not hinder them."
+        },
+        {
+          "ref": "Philippians 2:4",
+          "text": "Let each of you look not only to his own interests, but also to the interests of others."
+        }
+      ],
+      "related": [
+        {
+          "label": "Time and the Examined Life",
+          "href": "/life/time-and-the-examined-life"
+        },
+        {
+          "label": "Friendship Against Isolation",
+          "href": "/life/friendship-against-isolation"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for work and money",
+          "href": "/how-tos?topic=work"
         }
       ]
     },
@@ -3088,7 +3448,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -3143,7 +3503,7 @@
       "articles": [
         {
           "label": "Practical guides for work and money",
-          "href": "/writing?topic=work"
+          "href": "/how-tos?topic=work"
         }
       ]
     },
@@ -3203,7 +3563,7 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -3263,7 +3623,67 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
+        }
+      ]
+    },
+    {
+      "id": "grace-and-works",
+      "label": "Grace and Works",
+      "keywords": [
+        "grace",
+        "works",
+        "faith and works",
+        "salvation",
+        "earning salvation",
+        "free grace",
+        "cheap grace",
+        "good deeds",
+        "justification",
+        "saved by grace",
+        "obedience and grace",
+        "faith without works"
+      ],
+      "framing": "Grace and works have been pitted against each other for so long that many people no longer know how they fit. Scripture holds both without flinching: we are saved by grace through faith and not by works, and the faith that saves is never alone but always proves itself in a changed life. The tree is not made alive by its fruit, yet a living tree always bears it.",
+      "cultural": "The early church lived in a world of patron and client, where every gift carried an unpayable obligation, where nothing was ever truly free. Into that economy the gospel announced a gift with no strings, a debt cancelled rather than transferred, and it scandalized everyone. The Greeks heard folly, the religious heard danger, and ordinary people wept, because no one had ever offered them something they could not lose by failing.",
+      "historical": "Paul and James, often set against each other, were answering opposite errors: Paul, around AD 50, fighting those who added works to grace, and James fighting those who claimed a faith that never moved a finger to feed the hungry. Dietrich Bonhoeffer, writing from Nazi Germany in 1937, named the counterfeit cheap grace, the grace we bestow on ourselves without repentance, and set against it the costly grace that bids a man come and die.",
+      "application": "Stop trying to balance grace and works as if they were rivals on a scale. Receive the grace first and entirely, with empty hands, since that is the only way it can be received. Then let the gratitude do the work that fear never could, serving not to be loved but because you already are. If your obedience feels like a way of buying God, you have not yet believed the gift; if it has vanished altogether, you have not yet received it.",
+      "verses": [
+        {
+          "ref": "Ephesians 2:8-9",
+          "text": "By grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast."
+        },
+        {
+          "ref": "James 2:17",
+          "text": "Faith by itself, if it does not have works, is dead."
+        },
+        {
+          "ref": "Titus 2:11-12",
+          "text": "The grace of God has appeared, training us to renounce ungodliness and to live self-controlled, upright, and godly lives."
+        },
+        {
+          "ref": "Ephesians 2:10",
+          "text": "We are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them."
+        },
+        {
+          "ref": "Romans 11:6",
+          "text": "If it is by grace, it is no longer on the basis of works; otherwise grace would no longer be grace."
+        }
+      ],
+      "related": [
+        {
+          "label": "Discipleship: Following Jesus",
+          "href": "/life/discipleship-following-jesus"
+        },
+        {
+          "label": "The Story We Live In",
+          "href": "/life/the-story-we-live-in"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -3323,7 +3743,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -3383,7 +3803,7 @@
       "articles": [
         {
           "label": "Practical guides for work and money",
-          "href": "/writing?topic=work"
+          "href": "/how-tos?topic=work"
         }
       ]
     },
@@ -3438,7 +3858,7 @@
       "articles": [
         {
           "label": "Practical guides for hard seasons",
-          "href": "/writing?topic=suffering"
+          "href": "/how-tos?topic=suffering"
         }
       ]
     },
@@ -3494,7 +3914,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -3554,7 +3974,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -3614,7 +4034,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -3674,7 +4094,7 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -3730,7 +4150,7 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -3790,7 +4210,67 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "hospitality-when-tired",
+      "label": "Hospitality When You Are Tired",
+      "keywords": [
+        "hospitality",
+        "tired",
+        "guests",
+        "welcome",
+        "open home",
+        "exhausted",
+        "having people over",
+        "table",
+        "stranger",
+        "weary",
+        "entertaining",
+        "too tired to host"
+      ],
+      "framing": "Hospitality is not entertaining, and the difference is everything. Entertaining waits until the house and the host are impressive. Hospitality opens a real and ordinary table to a real and tired host, because the welcome is the gift, not the performance. Scripture commands it without the condition that you feel up to it, and some of the deepest welcomes are given by those with the least left to give.",
+      "cultural": "The ancient world ran on hospitality as a matter of survival and sacred duty, the traveler with nowhere to stay depending on the open door, the stranger received as one who might be an angel unaware. We have replaced it with the dinner party, anxious and curated, and so we host less and less because the bar we set is exhaustion itself. We confuse the welcome with the wallpaper, and stay home, and call it self-care, and grow lonelier.",
+      "historical": "Abraham ran to welcome three strangers in the heat of the day, and entertained the Lord. The early church spread along the roads of the empire on the strength of homes thrown open to traveling believers, and the bishops were required to be hospitable as a basic mark of fitness to lead. The Rule of Benedict, in the sixth century, commanded that every guest be received as Christ himself, tired host or not, convenient hour or not.",
+      "application": "Lower the bar until you will actually open the door, because a bowl of soup at a cluttered table beats a perfect meal you never host. Let people see the ordinary version of your home and your weariness, since that honesty is itself a welcome and frees them to be ordinary too. Offer what you have rather than what you wish you had. And remember that hospitality given when you are tired is worth more, not less, because it costs you something real.",
+      "verses": [
+        {
+          "ref": "Hebrews 13:2",
+          "text": "Do not neglect to show hospitality to strangers, for thereby some have entertained angels unawares."
+        },
+        {
+          "ref": "Romans 12:13",
+          "text": "Contribute to the needs of the saints and seek to show hospitality."
+        },
+        {
+          "ref": "1 Peter 4:9",
+          "text": "Show hospitality to one another without grumbling."
+        },
+        {
+          "ref": "Luke 14:13-14",
+          "text": "When you give a feast, invite the poor, the crippled, the lame, the blind, and you will be blessed."
+        },
+        {
+          "ref": "Genesis 18:2",
+          "text": "He ran from the tent door to meet them and bowed himself to the earth."
+        }
+      ],
+      "related": [
+        {
+          "label": "The Home and the Family",
+          "href": "/life/the-home-and-the-family"
+        },
+        {
+          "label": "Friendship Against Isolation",
+          "href": "/life/friendship-against-isolation"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the home",
+          "href": "/how-tos?topic=family"
         }
       ]
     },
@@ -3850,7 +4330,7 @@
       "articles": [
         {
           "label": "Practical guides for life in the world",
-          "href": "/writing?topic=the-life-in-the-world"
+          "href": "/how-tos?topic=the-life-in-the-world"
         }
       ]
     },
@@ -3909,7 +4389,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -3965,7 +4445,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -4025,7 +4505,127 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "immaturity",
+      "label": "Immaturity",
+      "keywords": [
+        "immature",
+        "immaturity",
+        "grow up",
+        "childish",
+        "irresponsible",
+        "won't take responsibility",
+        "selfish",
+        "petty",
+        "no follow-through",
+        "stunted",
+        "adolescent",
+        "growing up"
+      ],
+      "framing": "Maturity is not about age. It is the slow work of becoming a person whose wants no longer rule him, who can keep a promise, carry a weight, and put another before himself. Scripture treats this growth as the ordinary expectation of the Christian life and grieves when grown believers are still being fed milk because they cannot stomach solid food.",
+      "cultural": "We have built a world that rewards staying young, deferring commitment, and keeping every option open, and we have mistaken this for freedom. But the perpetual adolescent is not free; he is simply unfinished, ruled by appetite and allergic to cost. Real adulthood begins where the easy life ends, in the keeping of hard promises no one is making you keep.",
+      "historical": "Paul, writing to a quarreling, status-hungry church at Corinth in the first century, told them plainly they were still infants in Christ, jealous and divided, because the test of maturity was not their gifts but their love. He gave the church its enduring image of growth in his letter to Ephesus, the body growing up into the head until it reaches the full measure of the stature of Christ.",
+      "application": "Do the next hard, unglamorous thing you have been avoiding, and finish it, since maturity is built in follow-through more than in feeling. Keep the small promises, the ones no one is checking. Let yourself be inconvenienced for someone who can give you nothing back. And seek out people further along than you, because no one grows up alone, and the company you keep is slowly making you into someone.",
+      "verses": [
+        {
+          "ref": "1 Corinthians 13:11",
+          "text": "When I became a man, I gave up childish ways."
+        },
+        {
+          "ref": "Ephesians 4:14-15",
+          "text": "We are to grow up in every way into him who is the head, into Christ."
+        },
+        {
+          "ref": "Hebrews 5:14",
+          "text": "Solid food is for the mature, who have their powers trained by constant practice."
+        },
+        {
+          "ref": "1 Corinthians 3:2",
+          "text": "I fed you with milk, not solid food, for you were not ready for it."
+        },
+        {
+          "ref": "Philippians 2:4",
+          "text": "Let each of you look not only to his own interests, but also to the interests of others."
+        }
+      ],
+      "related": [
+        {
+          "label": "Discipleship: Following Jesus",
+          "href": "/life/discipleship-following-jesus"
+        },
+        {
+          "label": "Wisdom for All of Life",
+          "href": "/life/wisdom-for-all-of-life"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/how-tos?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "indecision",
+      "label": "Indecision",
+      "keywords": [
+        "indecision",
+        "indecisive",
+        "can't decide",
+        "paralyzed",
+        "second-guessing",
+        "overthinking",
+        "stuck",
+        "what should i do",
+        "double-minded",
+        "torn",
+        "afraid to choose",
+        "analysis paralysis"
+      ],
+      "framing": "Indecision often dresses itself as caution, but underneath it is usually fear, the fear of the wrong choice, the fear of regret, the fear of being responsible for a road that goes badly. Scripture calls the man who cannot settle double-minded and unstable in all his ways, and it offers the paralyzed not a hidden answer to decode but a wisdom freely given to those who ask.",
+      "cultural": "We have been handed more options than any generation in history and told that somewhere among them is the one right choice, the perfect path we must not miss. It is a recipe for paralysis. The endless weighing keeps us safe from committing to anything, and a life of kept-open options slowly becomes a life that was never actually lived.",
+      "historical": "Elijah confronted a nation frozen between two gods and demanded, how long will you go limping between two opinions. The early church, facing a genuinely hard decision over the Gentiles, did not wait for a sign from heaven but gathered, reasoned, prayed, and said it seemed good to the Holy Spirit and to us, then acted. The Reformers recovered the freedom of the conscience to decide wisely within the wide bounds of what God permits.",
+      "application": "Gather what counsel and information you reasonably can, and then decide, since most choices are not between a right and a wrong road but between two good ones God can use. Ask for wisdom plainly, trusting it is given. Set a deadline for the decision so the weighing cannot become a way of life. And once you choose, commit, and trust the God who establishes the steps of those who walk in faith.",
+      "verses": [
+        {
+          "ref": "James 1:5",
+          "text": "If any of you lacks wisdom, let him ask God, who gives generously to all."
+        },
+        {
+          "ref": "James 1:8",
+          "text": "He is a double-minded man, unstable in all his ways."
+        },
+        {
+          "ref": "1 Kings 18:21",
+          "text": "How long will you go limping between two different opinions?"
+        },
+        {
+          "ref": "Proverbs 16:3",
+          "text": "Commit your work to the Lord, and your plans will be established."
+        },
+        {
+          "ref": "Psalm 32:8",
+          "text": "I will instruct you and teach you in the way you should go."
+        }
+      ],
+      "related": [
+        {
+          "label": "Wisdom for All of Life",
+          "href": "/life/wisdom-for-all-of-life"
+        },
+        {
+          "label": "The Heavy Mind",
+          "href": "/life/the-heavy-mind"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -4085,7 +4685,7 @@
       "articles": [
         {
           "label": "Practical guides for the body",
-          "href": "/writing?topic=the-body"
+          "href": "/how-tos?topic=the-body"
         }
       ]
     },
@@ -4145,7 +4745,7 @@
       "articles": [
         {
           "label": "Practical guides for life in the world",
-          "href": "/writing?topic=the-life-in-the-world"
+          "href": "/how-tos?topic=the-life-in-the-world"
         }
       ]
     },
@@ -4205,7 +4805,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -4261,7 +4861,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -4321,7 +4921,7 @@
       "articles": [
         {
           "label": "Practical guides for work and money",
-          "href": "/writing?topic=work"
+          "href": "/how-tos?topic=work"
         }
       ]
     },
@@ -4381,7 +4981,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -4437,7 +5037,127 @@
       "articles": [
         {
           "label": "Practical guides for life in the world",
-          "href": "/writing?topic=the-life-in-the-world"
+          "href": "/how-tos?topic=the-life-in-the-world"
+        }
+      ]
+    },
+    {
+      "id": "keeping-confidence",
+      "label": "Keeping a Confidence",
+      "keywords": [
+        "confidence",
+        "secret",
+        "gossip",
+        "trust",
+        "betrayed a confidence",
+        "discretion",
+        "tale bearer",
+        "told someone",
+        "private",
+        "loose lips",
+        "kept it quiet",
+        "spilled"
+      ],
+      "framing": "When someone tells you a hard thing, they hand you a piece of themselves to hold. Scripture is plain that a faithful person covers it, while the gossip spreads it for the small thrill of being the one who knows. The tongue that cannot keep a secret is not merely indiscreet. It has broken trust, and the wreckage often cannot be rebuilt.",
+      "cultural": "In the close world of the village and the early church, where everyone knew everyone, a loose tongue could ruin a name beyond recovery, which is why the wisdom writers return to it again and again. Our age has built the gossip machine to a scale they could not have imagined, the screenshot, the group chat, the post, where a confidence betrayed travels farther in an hour than a village rumor did in a year, and we still call it harmless.",
+      "historical": "The book of Proverbs, gathered under Solomon around 950 BC and after, warns repeatedly against the whisperer who separates close friends. The monastic rule of Benedict in the sixth century placed heavy weight on guarding the tongue as a discipline of the whole life. The seal of confession, by which a priest may never reveal what is told him, grew from the conviction that some words are held in absolute trust, even unto death.",
+      "application": "When someone shares something in confidence, treat it as theirs and not yours, and do not pass it along under the cover of a prayer request. If you are uncertain whether you may repeat a thing, ask, or assume you may not. Refuse to be the audience for gossip, since the one who carries tales to you will carry yours away. And guard the words shared with you as you would want your own guarded.",
+      "verses": [
+        {
+          "ref": "Proverbs 11:13",
+          "text": "Whoever goes about slandering reveals secrets, but he who is trustworthy in spirit keeps a thing covered."
+        },
+        {
+          "ref": "Proverbs 16:28",
+          "text": "A whisperer separates close friends."
+        },
+        {
+          "ref": "Proverbs 17:9",
+          "text": "Whoever covers an offense seeks love, but he who repeats a matter separates close friends."
+        },
+        {
+          "ref": "Proverbs 20:19",
+          "text": "Whoever goes about slandering reveals secrets; therefore do not associate with a simple babbler."
+        },
+        {
+          "ref": "James 1:26",
+          "text": "If anyone does not bridle his tongue, this person's religion is worthless."
+        }
+      ],
+      "related": [
+        {
+          "label": "Friendship Against Isolation",
+          "href": "/life/friendship-against-isolation"
+        },
+        {
+          "label": "Conflict and Reconciliation",
+          "href": "/life/conflict-and-reconciliation"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/how-tos?topic=relationships"
+        }
+      ]
+    },
+    {
+      "id": "keeping-promises",
+      "label": "Keeping Your Word",
+      "keywords": [
+        "promises",
+        "keeping your word",
+        "commitment",
+        "vow",
+        "oath",
+        "broke a promise",
+        "follow through",
+        "integrity",
+        "trustworthy",
+        "flaky",
+        "letting people down",
+        "dependable"
+      ],
+      "framing": "A promise is a small covenant, and covenant is how God has dealt with us from the beginning. Scripture honors the one who swears to his own hurt and does not change, who keeps faith when keeping it costs him. The question is never whether breaking the promise would be easier. It is whether you are a person whose word can be stood on.",
+      "cultural": "In the biblical world a person's word, sealed with a handshake or an oath at the city gate, carried the weight a contract carries now, because there was little else to enforce it. To break it was to break the social fabric itself. Our own age has made promises cheap, dissolved by a better offer or a changed mood, and then wonders why no one trusts anyone, why every arrangement needs a clause.",
+      "historical": "Israel staked everything on a God who keeps covenant to a thousand generations, and measured its own faithfulness against his. The Puritans of the seventeenth century took their vows so seriously they would agonize over a rashly given word. Dietrich Bonhoeffer, who could have stayed safe in America in 1939, returned to Germany because he had promised his people he would share their trial, and that promise cost him his life.",
+      "application": "Make fewer promises and keep the ones you make, because a small word kept teaches people you can be trusted with a large one. When you cannot keep a promise, go and say so early, face to face, rather than letting it quietly die. Count the cost before you commit, not after. And when keeping your word becomes expensive, remember that is exactly the moment it proves what it was worth.",
+      "verses": [
+        {
+          "ref": "Psalm 15:4",
+          "text": "Who swears to his own hurt and does not change."
+        },
+        {
+          "ref": "Numbers 30:2",
+          "text": "He shall not break his word. He shall do according to all that proceeds out of his mouth."
+        },
+        {
+          "ref": "Ecclesiastes 5:5",
+          "text": "It is better that you should not vow than that you should vow and not pay."
+        },
+        {
+          "ref": "Matthew 5:37",
+          "text": "Let what you say be simply Yes or No."
+        },
+        {
+          "ref": "James 5:12",
+          "text": "Let your yes be yes and your no be no, so that you may not fall under condemnation."
+        }
+      ],
+      "related": [
+        {
+          "label": "Wisdom for All of Life",
+          "href": "/life/wisdom-for-all-of-life"
+        },
+        {
+          "label": "Conflict and Reconciliation",
+          "href": "/life/conflict-and-reconciliation"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -4497,7 +5217,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -4557,7 +5277,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -4617,7 +5337,7 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -4677,7 +5397,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -4737,7 +5457,68 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "legalism",
+      "label": "Legalism and Rule-Keeping",
+      "keywords": [
+        "legalism",
+        "legalistic",
+        "rules",
+        "rule-keeping",
+        "performance",
+        "earning",
+        "self-righteous",
+        "pharisee",
+        "religious",
+        "duty",
+        "checklist faith",
+        "never enough",
+        "trying to be good enough"
+      ],
+      "framing": "Legalism is the quiet conviction that God's love is a wage to be earned and a debt that can be paid. It dresses up as devotion, and it is in fact a kind of unbelief, a refusal to trust that grace really is free. Scripture treats it not as harmless zeal but as a different gospel that cannot save.",
+      "cultural": "The Pharisees were not villains in cloaks but the most serious, most respected, most careful religious people of their day, men who tithed their garden herbs and would not break the smallest rule. That is what makes the warning so sharp: the danger is not laziness but a meticulous goodness that has lost the heart it was meant to serve, straining a gnat while swallowing a camel of injustice and pride.",
+      "historical": "Paul, a former Pharisee who once counted his rule-keeping as profit, came to count it as loss, and wrote to the Galatians around AD 50 that to add law to grace was to fall from grace altogether. Fifteen centuries later Martin Luther, an Augustinian monk who had nearly destroyed himself trying to satisfy God by penance, found in Romans that the righteous live by faith, and the discovery split the Western church.",
+      "application": "Watch for the tell of legalism, which is not high standards but a low view of grace and a hard view of other people. Ask whether your obedience flows from gratitude for a love already given or anxiety toward a love still being earned. Keep returning to the cross, where the bill was paid in full, so your rule-keeping becomes a response and not a ransom. And be gentlest with the strugglers, since that is where the legalist's mask always slips.",
+      "verses": [
+        {
+          "ref": "Galatians 2:21",
+          "text": "If righteousness were through the law, then Christ died for no purpose."
+        },
+        {
+          "ref": "Matthew 23:23",
+          "text": "You tithe mint and dill and cumin, and have neglected the weightier matters of the law: justice and mercy and faithfulness."
+        },
+        {
+          "ref": "Romans 3:20",
+          "text": "By works of the law no human being will be justified in his sight, since through the law comes knowledge of sin."
+        },
+        {
+          "ref": "Colossians 2:23",
+          "text": "These have indeed an appearance of wisdom, but they are of no value in stopping the indulgence of the flesh."
+        },
+        {
+          "ref": "Luke 18:11-14",
+          "text": "The tax collector, standing far off, beat his breast, saying, God, be merciful to me, a sinner. This man went down to his house justified."
+        }
+      ],
+      "related": [
+        {
+          "label": "Pride and Humility",
+          "href": "/life/pride-and-humility"
+        },
+        {
+          "label": "Shame and the Hiding Self",
+          "href": "/life/shame-and-the-hiding-self"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -4793,7 +5574,7 @@
       "articles": [
         {
           "label": "Practical guides for hard seasons",
-          "href": "/writing?topic=suffering"
+          "href": "/how-tos?topic=suffering"
         }
       ]
     },
@@ -4847,7 +5628,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -4903,7 +5684,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -4963,7 +5744,127 @@
       "articles": [
         {
           "label": "Practical guides for life in the world",
-          "href": "/writing?topic=the-life-in-the-world"
+          "href": "/how-tos?topic=the-life-in-the-world"
+        }
+      ]
+    },
+    {
+      "id": "low-motivation",
+      "label": "Low Motivation",
+      "keywords": [
+        "low motivation",
+        "unmotivated",
+        "no drive",
+        "lazy",
+        "can't get started",
+        "procrastination",
+        "apathy",
+        "listless",
+        "sluggish",
+        "no energy",
+        "stuck",
+        "going through the motions"
+      ],
+      "framing": "Low motivation is rarely just laziness, and it is rarely just one thing. Sometimes it is the body asking for rest it has been denied, sometimes it is fear of failing dressed as not caring, and sometimes it is the soul gone dry. Scripture honors honest work and warns against the slow ruin of the sluggard, but it never reduces a weary person to a moral failure.",
+      "cultural": "Our culture swings between worshiping the grind and excusing the drift, and neither tells the truth about a tired soul. We are quick to call it laziness in others and burnout in ourselves. But the harder, more honest question is what the emptiness is pointing to, since a person who cannot move is usually trying to say something he has not yet found the words for.",
+      "historical": "The wisdom writers studied the sluggard with a kind of grim humor, the man who will not plow in season and begs at harvest, who turns on his bed like a door on its hinges. But the same Scriptures know real exhaustion, an Elijah too spent to go on whom God fed and let sleep, and a Jesus who told the heavy-laden to come to him, promising not the end of all labor but a yoke that fits and a rest for the soul.",
+      "application": "First rule out the body, since chronic low motivation can be sleep, illness, or depression speaking, and seeing a doctor is wisdom, not weakness. Then start absurdly small, one task, ten minutes, since motion usually comes after action and not before it. Ask whether you have stopped resting, or stopped resting in God, and recover both. And do the next right thing whether or not you feel like it, because faithfulness has never depended on the feeling.",
+      "verses": [
+        {
+          "ref": "Proverbs 6:6",
+          "text": "Go to the ant, O sluggard; consider her ways, and be wise."
+        },
+        {
+          "ref": "Colossians 3:23",
+          "text": "Whatever you do, work heartily, as for the Lord and not for men."
+        },
+        {
+          "ref": "Matthew 11:28",
+          "text": "Come to me, all who labor and are heavy laden, and I will give you rest."
+        },
+        {
+          "ref": "Galatians 6:9",
+          "text": "Let us not grow weary of doing good, for in due season we will reap."
+        },
+        {
+          "ref": "Proverbs 13:4",
+          "text": "The soul of the sluggard craves and gets nothing, while the diligent is richly supplied."
+        }
+      ],
+      "related": [
+        {
+          "label": "The Heavy Mind",
+          "href": "/life/the-heavy-mind"
+        },
+        {
+          "label": "Discipleship: Following Jesus",
+          "href": "/life/discipleship-following-jesus"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/how-tos?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "lukewarm-faith",
+      "label": "Lukewarm Faith",
+      "keywords": [
+        "lukewarm",
+        "apathy",
+        "spiritually dry",
+        "going through the motions",
+        "indifferent",
+        "complacent",
+        "comfortable christian",
+        "half-hearted",
+        "numb faith",
+        "spiritually flat",
+        "no passion",
+        "coasting"
+      ],
+      "framing": "Lukewarm faith is the most respectable failure in the church, because it looks like nothing is wrong. The fire has not gone out; it has banked to a comfortable warmth that asks little and costs less. Scripture reserves some of its hardest words for it, not because the lukewarm are the worst people but because they no longer feel their need.",
+      "cultural": "Laodicea was a wealthy banking and textile city that piped in its water from miles away, so that it arrived neither hot enough to heal nor cold enough to refresh, only tepid and faintly nauseating. The image landed because the church there was rich, secure, and self-satisfied, certain it needed nothing, blind to the fact that comfort had hollowed it out. Prosperity is the friendliest enemy faith has.",
+      "historical": "John recorded the words to Laodicea near the end of the first century, when persecution was thinning the cold and the comfortable alike. Centuries later John Wesley, watching the early Methodists prosper through their own diligence in the 1700s, feared that as religion produced industry and riches, it would quietly devour the very devotion that birthed it, a fear that has proven true in nearly every revival since.",
+      "application": "Beware the season when everything is fine, because that is when the heart cools without alarm. Ask not whether you have abandoned the faith but whether you have stopped expecting anything from it. Let some real cost back in, generosity that pinches, prayer that takes time, obedience that is inconvenient, since warmth returns through the very things comfort removed. And take seriously that the One who rebukes the lukewarm does so as a love that refuses to leave us comfortable and lost.",
+      "verses": [
+        {
+          "ref": "Revelation 3:15-16",
+          "text": "I know your works: you are neither cold nor hot. Would that you were either cold or hot! So, because you are lukewarm, I will spit you out of my mouth."
+        },
+        {
+          "ref": "Revelation 3:17",
+          "text": "You say, I am rich, I have prospered, and I need nothing, not realizing that you are wretched, pitiable, poor, blind, and naked."
+        },
+        {
+          "ref": "Romans 12:11",
+          "text": "Do not be slothful in zeal, be fervent in spirit, serve the Lord."
+        },
+        {
+          "ref": "Matthew 24:12",
+          "text": "Because lawlessness will be increased, the love of many will grow cold."
+        },
+        {
+          "ref": "Hosea 10:12",
+          "text": "Break up your fallow ground, for it is the time to seek the Lord."
+        }
+      ],
+      "related": [
+        {
+          "label": "The Dry Season",
+          "href": "/life/the-dry-season"
+        },
+        {
+          "label": "Discipleship: Following Jesus",
+          "href": "/life/discipleship-following-jesus"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -5023,7 +5924,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -5082,7 +5983,7 @@
       "articles": [
         {
           "label": "Practical marriage guides",
-          "href": "/writing?topic=marriage"
+          "href": "/how-tos?topic=marriage"
         }
       ]
     },
@@ -5141,7 +6042,7 @@
       "articles": [
         {
           "label": "Practical marriage guides",
-          "href": "/writing?topic=marriage"
+          "href": "/how-tos?topic=marriage"
         }
       ]
     },
@@ -5201,7 +6102,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -5261,7 +6162,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -5320,7 +6221,7 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -5377,7 +6278,7 @@
       "articles": [
         {
           "label": "Practical guides for work and money",
-          "href": "/writing?topic=work"
+          "href": "/how-tos?topic=work"
         }
       ]
     },
@@ -5437,7 +6338,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -5497,7 +6398,7 @@
       "articles": [
         {
           "label": "Practical parenting guides",
-          "href": "/writing?topic=parenting"
+          "href": "/how-tos?topic=parenting"
         }
       ]
     },
@@ -5556,7 +6457,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -5616,7 +6517,67 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "obedience",
+      "label": "Obedience and Following God",
+      "keywords": [
+        "obedience",
+        "obey",
+        "following god",
+        "doing god's will",
+        "submission to god",
+        "discipline",
+        "faithfulness",
+        "hard obedience",
+        "costly obedience",
+        "trust and obey",
+        "walking with god",
+        "do what god says"
+      ],
+      "framing": "Obedience has fallen on hard times, mistaken for either grim duty or earning a place we already have. Scripture frames it differently, as the natural shape of love and trust, the way a child follows a parent he believes is good. It is not the price of being loved but the proof that we believe we are.",
+      "cultural": "The ancient covenant was modeled on the treaty between a king and his people, where obedience was the response to a rescue already accomplished, not the condition for one. God reminds Israel that he brought them out of Egypt before he gives them a single command. The order matters, and we keep reversing it: the deliverance comes first, and the obedience answers it, gratitude with its sleeves rolled up.",
+      "historical": "Abraham, around 2000 BC, is called the father of the faithful because he obeyed a call to leave without knowing where he was going, trusting the Voice more than the map. Dietrich Bonhoeffer, who could have stayed safe in America in 1939 but returned to Germany and eventually to a Nazi gallows in 1945, wrote that only the believing obey, and only the obedient believe, refusing to let faith become a feeling that never moved the feet.",
+      "application": "Start with the next clear thing rather than waiting for the whole plan, since obedience is almost always revealed one step at a time. Notice that the hardest commands usually guard the things you most fear to lose, and that the obedience you resist most is often the door you most need to walk through. Obey before you fully understand, the way you trust a surgeon you cannot follow, because the God who asks has already proven himself at the cross.",
+      "verses": [
+        {
+          "ref": "John 14:15",
+          "text": "If you love me, you will keep my commandments."
+        },
+        {
+          "ref": "1 Samuel 15:22",
+          "text": "To obey is better than sacrifice, and to listen than the fat of rams."
+        },
+        {
+          "ref": "James 1:22",
+          "text": "Be doers of the word, and not hearers only, deceiving yourselves."
+        },
+        {
+          "ref": "Hebrews 11:8",
+          "text": "By faith Abraham obeyed when he was called to go out to a place that he was to receive, and he went out, not knowing where he was going."
+        },
+        {
+          "ref": "Deuteronomy 5:33",
+          "text": "You shall walk in all the way that the Lord your God has commanded you, that it may go well with you."
+        }
+      ],
+      "related": [
+        {
+          "label": "Discipleship: Following Jesus",
+          "href": "/life/discipleship-following-jesus"
+        },
+        {
+          "label": "Wisdom for All of Life",
+          "href": "/life/wisdom-for-all-of-life"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -5676,7 +6637,7 @@
       "articles": [
         {
           "label": "Practical guides for the home",
-          "href": "/writing?topic=family"
+          "href": "/how-tos?topic=family"
         }
       ]
     },
@@ -5736,7 +6697,7 @@
       "articles": [
         {
           "label": "Practical guides for life in the world",
-          "href": "/writing?topic=the-life-in-the-world"
+          "href": "/how-tos?topic=the-life-in-the-world"
         }
       ]
     },
@@ -5795,7 +6756,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -5850,7 +6811,7 @@
       "articles": [
         {
           "label": "Practical parenting guides",
-          "href": "/writing?topic=parenting"
+          "href": "/how-tos?topic=parenting"
         }
       ]
     },
@@ -5912,7 +6873,7 @@
       "articles": [
         {
           "label": "Practical parenting guides",
-          "href": "/writing?topic=parenting"
+          "href": "/how-tos?topic=parenting"
         }
       ]
     },
@@ -5972,7 +6933,7 @@
       "articles": [
         {
           "label": "Practical parenting guides",
-          "href": "/writing?topic=parenting"
+          "href": "/how-tos?topic=parenting"
         }
       ]
     },
@@ -6032,7 +6993,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -6092,7 +7053,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -6152,7 +7113,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -6212,7 +7173,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -6268,7 +7229,7 @@
       "articles": [
         {
           "label": "Practical guides for hard seasons",
-          "href": "/writing?topic=suffering"
+          "href": "/how-tos?topic=suffering"
         }
       ]
     },
@@ -6328,7 +7289,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -6384,7 +7345,7 @@
       "articles": [
         {
           "label": "Practical guides for life in the world",
-          "href": "/writing?topic=the-life-in-the-world"
+          "href": "/how-tos?topic=the-life-in-the-world"
         }
       ]
     },
@@ -6444,7 +7405,7 @@
       "articles": [
         {
           "label": "Practical guides for the body",
-          "href": "/writing?topic=the-body"
+          "href": "/how-tos?topic=the-body"
         }
       ]
     },
@@ -6500,7 +7461,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -6560,7 +7521,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -6620,7 +7581,7 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -6680,7 +7641,7 @@
       "articles": [
         {
           "label": "Practical parenting guides",
-          "href": "/writing?topic=parenting"
+          "href": "/how-tos?topic=parenting"
         }
       ]
     },
@@ -6740,7 +7701,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -6796,7 +7757,7 @@
       "articles": [
         {
           "label": "Practical guides for work and money",
-          "href": "/writing?topic=work"
+          "href": "/how-tos?topic=work"
         }
       ]
     },
@@ -6855,7 +7816,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -6915,7 +7876,67 @@
       "articles": [
         {
           "label": "Practical guides for work and money",
-          "href": "/writing?topic=work"
+          "href": "/how-tos?topic=work"
+        }
+      ]
+    },
+    {
+      "id": "returning-to-god",
+      "label": "Returning to God",
+      "keywords": [
+        "return to god",
+        "coming back",
+        "repentance",
+        "prodigal",
+        "homecoming",
+        "second chance",
+        "start again",
+        "restoration",
+        "come home",
+        "ran away from god",
+        "renew faith",
+        "rededication"
+      ],
+      "framing": "The whole of Scripture turns on one repeated mercy: that the way back is always open. Repentance is not crawling back to a reluctant God but turning toward a Father who has been watching the road. The shame that tells you it is too late, that you have used up your chances, is the one voice the gospel most flatly contradicts.",
+      "cultural": "In the world of the prodigal's story, a son who demanded his inheritance early was wishing his father dead, and a father who ran to greet such a son was abandoning all dignity, hiking up his robes to sprint like a boy through the village that would have shamed him. Every listener felt the scandal. The point was never the son's worthiness but a love that runs, embraces, and throws a feast before a single apology is finished.",
+      "historical": "Augustine, who spent his youth chasing every appetite before his conversion in a Milan garden in AD 386, wrote that God had made us for himself and our hearts are restless until they rest in him, the words of a man who knew the long way home. John Newton, a slave trader who came back through a storm at sea in 1748, gave the church its truest anthem of return, that grace saved a wretch and led him home.",
+      "application": "Do not wait until you feel clean enough to come back, because that day never arrives and was never the requirement. Turn now, in the state you are in, with the plain words of the prodigal: I have sinned, take me back. Receive the welcome rather than negotiating a probation God is not offering. And then stay, planting the ordinary roots of prayer, table, and people that keep the returned heart from leaving again.",
+      "verses": [
+        {
+          "ref": "Luke 15:20",
+          "text": "While he was still a long way off, his father saw him and felt compassion, and ran and embraced him and kissed him."
+        },
+        {
+          "ref": "Joel 2:13",
+          "text": "Return to the Lord your God, for he is gracious and merciful, slow to anger, and abounding in steadfast love."
+        },
+        {
+          "ref": "Isaiah 55:7",
+          "text": "Let the wicked forsake his way; let him return to the Lord, that he may have compassion on him, for he will abundantly pardon."
+        },
+        {
+          "ref": "1 John 1:9",
+          "text": "If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness."
+        },
+        {
+          "ref": "Hosea 6:1",
+          "text": "Come, let us return to the Lord; for he has torn us, that he may heal us."
+        }
+      ],
+      "related": [
+        {
+          "label": "The Wayward Child",
+          "href": "/life/the-wayward-child"
+        },
+        {
+          "label": "Shame and the Hiding Self",
+          "href": "/life/shame-and-the-hiding-self"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -6971,7 +7992,67 @@
       "articles": [
         {
           "label": "Practical guides for work and money",
-          "href": "/writing?topic=work"
+          "href": "/how-tos?topic=work"
+        }
+      ]
+    },
+    {
+      "id": "saying-no",
+      "label": "Saying No",
+      "keywords": [
+        "saying no",
+        "boundaries",
+        "overcommitted",
+        "people pleasing",
+        "burnout",
+        "yes",
+        "limits",
+        "too busy",
+        "guilt",
+        "obligation",
+        "stretched thin",
+        "spread too thin"
+      ],
+      "framing": "A no you mean is worth more than a yes you resent. Scripture does not praise the man who carries everything, but the one who knows his limits, keeps his word, and does not let his speech swell beyond what he can deliver. To say no clearly is to honor the yes you have already given.",
+      "cultural": "The ancient world ran on the household and the patron, where a request from above was hard to refuse and obligation was the air people breathed. Even there, Jesus withdrew from the crowds that wanted him, and did not heal every sick person in Galilee before he prayed. He was not ruled by the urgency of the nearest demand. We are, and we call it kindness, when often it is fear of being thought small.",
+      "historical": "The desert fathers of the fourth century fled the noise of the city precisely to learn what one life could and could not hold. Centuries later the Reformers recovered the goodness of vocation, a particular calling with a particular shape, against the idea that the holy life meant taking on every duty. Eugene Peterson, writing in our own time, warned pastors that a packed calendar is often vanity wearing the mask of service.",
+      "application": "Decide your yes before the request comes, so the answer is already shaped by your calling and not by the pressure in the room. Let your no be plain and kind, without the long apology that invites argument. Notice when you say yes to be liked, and confess it, because that is not love, it is fear. And protect the few things you are actually called to by refusing the many you are not.",
+      "verses": [
+        {
+          "ref": "Matthew 5:37",
+          "text": "Let what you say be simply Yes or No; anything more than this comes from evil."
+        },
+        {
+          "ref": "Luke 5:16",
+          "text": "But he would withdraw to desolate places and pray."
+        },
+        {
+          "ref": "Proverbs 25:28",
+          "text": "A man without self-control is like a city broken into and left without walls."
+        },
+        {
+          "ref": "Galatians 1:10",
+          "text": "If I were still trying to please man, I would not be a servant of Christ."
+        },
+        {
+          "ref": "Ecclesiastes 3:1",
+          "text": "For everything there is a season, and a time for every matter under heaven."
+        }
+      ],
+      "related": [
+        {
+          "label": "Time and the Examined Life",
+          "href": "/life/time-and-the-examined-life"
+        },
+        {
+          "label": "Rest and the Sabbath",
+          "href": "/life/rest-and-the-sabbath"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -7027,7 +8108,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -7086,7 +8167,127 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "self-hatred",
+      "label": "Self-Hatred",
+      "keywords": [
+        "self-hatred",
+        "self-loathing",
+        "worthless",
+        "i hate myself",
+        "self-disgust",
+        "self-harm",
+        "contempt",
+        "ashamed of myself",
+        "i am a failure",
+        "no good",
+        "despise myself",
+        "self-condemnation"
+      ],
+      "framing": "Self-hatred is not humility, though it often disguises itself as such. It is a verdict you have passed on a person God refused to throw away, and Scripture meets it not by flattering you but by telling you whose you are and what your maker paid to keep you.",
+      "cultural": "Our age tells the despairing soul to love itself harder, as if the cure were a stronger feeling about a self it already distrusts. But you cannot argue yourself out of a contempt you did not argue yourself into, and the command of Scripture is not to admire yourself but to receive a love that did not wait for you to be admirable.",
+      "historical": "Martin Luther in the sixteenth century knew this pit by name, beating his body in the monastery to silence a conscience that would not absolve him, until he found that righteousness was a gift and not a wage. Three centuries later Charles Spurgeon preached through a depression that whispered he was beyond grace, and refused to believe its verdict over God's.",
+      "application": "Speak to yourself what God has spoken over you, out loud, until the borrowed truth begins to hold. Let one trusted person hear the thing you say to yourself alone. And if the self-loathing has hardened into despair, or you are turning thoughts of harm toward your own body, treat it as the emergency it is, see a counselor, and in the United States call or text the 988 Lifeline. That is not weakness. That is obedience.",
+      "verses": [
+        {
+          "ref": "Psalm 139:14",
+          "text": "I praise you, for I am fearfully and wonderfully made."
+        },
+        {
+          "ref": "Isaiah 43:4",
+          "text": "You are precious in my eyes, and honored, and I love you."
+        },
+        {
+          "ref": "Romans 8:1",
+          "text": "There is therefore now no condemnation for those who are in Christ Jesus."
+        },
+        {
+          "ref": "1 John 3:20",
+          "text": "Whenever our heart condemns us, God is greater than our heart."
+        },
+        {
+          "ref": "Zephaniah 3:17",
+          "text": "He will rejoice over you with gladness; he will quiet you by his love."
+        }
+      ],
+      "related": [
+        {
+          "label": "Identity and Worth",
+          "href": "/life/identity-and-worth"
+        },
+        {
+          "label": "Shame and the Hiding Self",
+          "href": "/life/shame-and-the-hiding-self"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/how-tos?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "self-pity",
+      "label": "Self-Pity",
+      "keywords": [
+        "self-pity",
+        "feeling sorry for myself",
+        "victim",
+        "poor me",
+        "nobody cares",
+        "it's not fair",
+        "woe is me",
+        "resentful",
+        "wallowing",
+        "martyr",
+        "hard done by",
+        "bitter"
+      ],
+      "framing": "Self-pity is the grief that curdled, the sorrow that stopped looking for God and began collecting evidence against him. It feels like honesty about a real wound, but it slowly trades the comfort it could have for the small bitter pleasure of being wronged.",
+      "cultural": "Our culture has learned to honor the wound as identity, and there is truth buried in that, since real harm should be named and not buried. But the wound that becomes a throne rules the one who sits on it, and a self that lives to be pitied will refuse every hand that reaches to lift it, because being lifted would end the case it is building.",
+      "historical": "The Psalmists show the difference plainly. They pour out raw complaint, Psalm after Psalm, and yet almost every lament turns, somewhere, back toward God. The prophet Elijah, in the ninth century before Christ, sat under his broom tree certain he alone was left and ready to die, and God answered not with pity but with food, rest, and a quiet word that there were seven thousand others.",
+      "application": "Let yourself lament, fully and to God, for he never despises an honest complaint. But watch for the turn that does not come, the grief that has settled in and begun to feed on itself. Give thanks deliberately, even through clenched teeth, since gratitude is the one medicine self-pity cannot survive. And get up and serve someone, because the cure for a self curved inward is usually a neighbor.",
+      "verses": [
+        {
+          "ref": "1 Kings 19:4",
+          "text": "It is enough; now, O Lord, take away my life."
+        },
+        {
+          "ref": "Psalm 42:5",
+          "text": "Why are you cast down, O my soul? Hope in God."
+        },
+        {
+          "ref": "Lamentations 3:21-22",
+          "text": "But this I call to mind, and therefore I have hope: the steadfast love of the Lord never ceases."
+        },
+        {
+          "ref": "Philippians 4:11",
+          "text": "I have learned in whatever situation I am to be content."
+        },
+        {
+          "ref": "1 Thessalonians 5:18",
+          "text": "Give thanks in all circumstances, for this is the will of God."
+        }
+      ],
+      "related": [
+        {
+          "label": "Contentment Against Envy",
+          "href": "/life/contentment-against-envy"
+        },
+        {
+          "label": "The Heavy Mind",
+          "href": "/life/the-heavy-mind"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -7146,7 +8347,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -7205,7 +8406,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -7264,7 +8465,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -7323,7 +8524,7 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -7383,7 +8584,7 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -7442,7 +8643,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -7502,7 +8703,7 @@
       "articles": [
         {
           "label": "Practical guides for the body",
-          "href": "/writing?topic=the-body"
+          "href": "/how-tos?topic=the-body"
         }
       ]
     },
@@ -7558,7 +8759,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -7617,7 +8818,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -7673,7 +8874,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -7729,7 +8930,7 @@
       "articles": [
         {
           "label": "Practical guides for life in the world",
-          "href": "/writing?topic=the-life-in-the-world"
+          "href": "/how-tos?topic=the-life-in-the-world"
         }
       ]
     },
@@ -7789,7 +8990,67 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
+        }
+      ]
+    },
+    {
+      "id": "spiritual-pride",
+      "label": "Spiritual Pride",
+      "keywords": [
+        "spiritual pride",
+        "self-righteous",
+        "judgmental",
+        "superior",
+        "holier than thou",
+        "looking down on others",
+        "religious pride",
+        "smug",
+        "arrogant faith",
+        "comparison",
+        "better than",
+        "pride in faith"
+      ],
+      "framing": "Spiritual pride is the most dangerous sin precisely because it grows in the soil of real devotion. It takes the gifts of grace and turns them into a ledger of superiority, the very thing it congratulates itself on having escaped. It is the only sin that gets stronger the holier you become, hiding inside the virtues it corrupts.",
+      "cultural": "Jesus told the parable of two men praying, one a respected religious man thanking God he was not like other people, the other a despised tax collector who could only beg for mercy. The shock was that the wrong man went home justified. The most religious figure in the story was the furthest from God, because pride had quietly replaced his need with comparison, and gratitude with contempt.",
+      "historical": "Jonathan Edwards, surveying the wreckage and glory of the Great Awakening in the 1740s, wrote that spiritual pride is the main door by which the devil comes into the hearts of those zealous for the advancement of religion, and called it the worst sickness of the revived. The desert father Macarius, in the fourth century, said the truly humble man, even if he raised the dead, would think himself the chief of sinners.",
+      "application": "Suspect yourself most when you feel most advanced, since the awareness of pride is the first crack in it. Measure yourself against the holiness of God rather than the failures of other people, where you will always find reason to look down. Stay near the ones you are tempted to despise, because proximity dissolves contempt. And remember the tax collector went home justified by mercy he could not earn, while the proud man went home with nothing but his record.",
+      "verses": [
+        {
+          "ref": "Luke 18:11-14",
+          "text": "God, I thank you that I am not like other men. But the tax collector, beating his breast, said, God, be merciful to me, a sinner. This man went down to his house justified."
+        },
+        {
+          "ref": "1 Corinthians 8:1",
+          "text": "Knowledge puffs up, but love builds up."
+        },
+        {
+          "ref": "Proverbs 16:18",
+          "text": "Pride goes before destruction, and a haughty spirit before a fall."
+        },
+        {
+          "ref": "Romans 12:3",
+          "text": "Do not think of yourself more highly than you ought to think, but think with sober judgment."
+        },
+        {
+          "ref": "1 Corinthians 10:12",
+          "text": "Let anyone who thinks that he stands take heed lest he fall."
+        }
+      ],
+      "related": [
+        {
+          "label": "Pride and Humility",
+          "href": "/life/pride-and-humility"
+        },
+        {
+          "label": "Shame and the Hiding Self",
+          "href": "/life/shame-and-the-hiding-self"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -7849,7 +9110,7 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -7909,7 +9170,7 @@
       "articles": [
         {
           "label": "Practical guides for hard seasons",
-          "href": "/writing?topic=suffering"
+          "href": "/how-tos?topic=suffering"
         }
       ]
     },
@@ -7969,7 +9230,7 @@
       "articles": [
         {
           "label": "Practical guides for life in the world",
-          "href": "/writing?topic=the-life-in-the-world"
+          "href": "/how-tos?topic=the-life-in-the-world"
         }
       ]
     },
@@ -8029,7 +9290,67 @@
       "articles": [
         {
           "label": "Practical guides for work and money",
-          "href": "/writing?topic=work"
+          "href": "/how-tos?topic=work"
+        }
+      ]
+    },
+    {
+      "id": "stubbornness",
+      "label": "Stubbornness",
+      "keywords": [
+        "stubborn",
+        "stubbornness",
+        "won't budge",
+        "hard-headed",
+        "set in my ways",
+        "obstinate",
+        "inflexible",
+        "always right",
+        "won't change my mind",
+        "rigid",
+        "dig in",
+        "unyielding"
+      ],
+      "framing": "Stubbornness is the strength of conviction turned to stone. There is a holy firmness that holds the line when everything pushes against it, and there is a hardness that simply refuses to bend because bending feels like losing. Scripture honors the first and warns relentlessly of the second, the stiff neck that will not turn even when God himself is the one calling.",
+      "cultural": "Our culture admires the person who never backs down and calls it being true to yourself, blurring the line between integrity and obstinacy. But the difference is everything. Conviction can give reasons and can be moved by better ones, while stubbornness cannot, because it was never really about the truth of the matter but about not yielding, and it leaves a trail of broken bridges it calls principle.",
+      "historical": "The whole story of Israel turns on this word. Again and again the prophets call the people stiff-necked, the image of an ox that will not turn under the yoke, hardening their hearts as Pharaoh hardened his in the days of the exodus. Stephen, the first martyr, hurled the same charge at the council that stoned him, that they always resisted the Spirit, proof that stubbornness can wear the robes of religion.",
+      "application": "Learn the difference in yourself between a conviction you can defend and a position you simply will not surrender. Ask whether you are holding ground for the truth or only against the humiliation of being moved. Invite the people closest to you to tell you where you have gone rigid, and believe them. And practice the small yieldings, the everyday give, since the heart that cannot bend in little things will not bend before God in the great ones.",
+      "verses": [
+        {
+          "ref": "Proverbs 29:1",
+          "text": "He who hardens his neck will suddenly be broken beyond healing."
+        },
+        {
+          "ref": "Psalm 95:8",
+          "text": "Do not harden your hearts, as at Meribah."
+        },
+        {
+          "ref": "Proverbs 28:14",
+          "text": "Whoever hardens his heart will fall into calamity."
+        },
+        {
+          "ref": "Acts 7:51",
+          "text": "You stiff-necked people, you always resist the Holy Spirit."
+        },
+        {
+          "ref": "Ezekiel 36:26",
+          "text": "I will remove the heart of stone from your flesh and give you a heart of flesh."
+        }
+      ],
+      "related": [
+        {
+          "label": "Pride and Humility",
+          "href": "/life/pride-and-humility"
+        },
+        {
+          "label": "Discipleship: Following Jesus",
+          "href": "/life/discipleship-following-jesus"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -8088,7 +9409,7 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -8144,7 +9465,67 @@
       "articles": [
         {
           "label": "Practical guides for work and money",
-          "href": "/writing?topic=work"
+          "href": "/how-tos?topic=work"
+        }
+      ]
+    },
+    {
+      "id": "surrender",
+      "label": "Surrender and Letting Go",
+      "keywords": [
+        "surrender",
+        "letting go",
+        "giving up control",
+        "yielding",
+        "trust god",
+        "not my will",
+        "release control",
+        "submit to god",
+        "thy will be done",
+        "control freak",
+        "holding on too tight",
+        "give it to god"
+      ],
+      "framing": "Surrender is the word the modern ear most resists, because it sounds like defeat. In Scripture it is the opposite, the opening of a clenched fist that has been tired for years, the release of a control we never actually had. To surrender to God is not to lose the self but to stop carrying what was never ours to carry.",
+      "cultural": "The garden of Gethsemane gives surrender its truest picture, a man sweating blood, asking honestly for the cup to pass, and then saying not my will but yours. It was not the calm of a person who did not care but the costly yielding of one who cared enormously and trusted the Father more than his own dread. Biblical surrender is never the absence of struggle; it is the struggle resolved in the right direction.",
+      "historical": "Mary of Nazareth, a teenage girl facing scandal and danger, answered the angel around 4 BC with let it be to me according to your word, a surrender that cost her everything and changed the world. Centuries later the French priest Jean-Pierre de Caussade, in the 1700s, taught the sacrament of the present moment, the practice of receiving each day's circumstance as the place God hands himself to us, a quiet abandonment to providence.",
+      "application": "Name the thing you are gripping, the outcome, the person, the reputation, the fear, and say it out loud as something you are handing over. Expect to hand it over more than once, since surrender is rarely a single act and usually a daily one. Pray Gethsemane's honest prayer, asking plainly for what you want and then yielding it, and watch how much lighter the day becomes when you stop trying to be God of it.",
+      "verses": [
+        {
+          "ref": "Luke 22:42",
+          "text": "Father, if you are willing, remove this cup from me. Nevertheless, not my will, but yours, be done."
+        },
+        {
+          "ref": "Proverbs 3:5-6",
+          "text": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths."
+        },
+        {
+          "ref": "Romans 12:1",
+          "text": "Present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship."
+        },
+        {
+          "ref": "Galatians 2:20",
+          "text": "It is no longer I who live, but Christ who lives in me."
+        },
+        {
+          "ref": "Psalm 46:10",
+          "text": "Be still, and know that I am God."
+        }
+      ],
+      "related": [
+        {
+          "label": "The Dry Season",
+          "href": "/life/the-dry-season"
+        },
+        {
+          "label": "Pride and Humility",
+          "href": "/life/pride-and-humility"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -8204,7 +9585,7 @@
       "articles": [
         {
           "label": "Practical marriage guides",
-          "href": "/writing?topic=marriage"
+          "href": "/how-tos?topic=marriage"
         }
       ]
     },
@@ -8260,7 +9641,7 @@
       "articles": [
         {
           "label": "Practical guides for life in the world",
-          "href": "/writing?topic=the-life-in-the-world"
+          "href": "/how-tos?topic=the-life-in-the-world"
         }
       ]
     },
@@ -8316,7 +9697,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -8375,7 +9756,7 @@
       "articles": [
         {
           "label": "Practical guides for the home",
-          "href": "/writing?topic=family"
+          "href": "/how-tos?topic=family"
         }
       ]
     },
@@ -8431,7 +9812,7 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -8491,7 +9872,7 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -8547,7 +9928,67 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
+        }
+      ]
+    },
+    {
+      "id": "need-for-control",
+      "label": "The Need for Control",
+      "keywords": [
+        "control",
+        "controlling",
+        "control freak",
+        "can't let go",
+        "micromanage",
+        "anxious control",
+        "have to fix it",
+        "trust",
+        "surrender",
+        "white-knuckle",
+        "grip",
+        "let go"
+      ],
+      "framing": "The need to control is fear wearing the mask of responsibility. Underneath the spreadsheets and the clenched plans is a quiet belief that if you ever loosen your grip the whole thing falls, and Scripture answers it not by promising you will keep control but by telling you who actually holds it.",
+      "cultural": "We are trained to believe that with enough planning, enough information, enough effort, we can secure our lives against loss. It is a powerful lie, and it makes the controlling person exhausting to live near and exhausting to be. The illusion breaks the moment a diagnosis or a death or a child's free will reminds us how little was ever in our hands.",
+      "historical": "The rich fool of Jesus' parable built bigger barns to secure his future and died the same night. James, writing to scattered believers in the first century, mocked the merchant who said today or tomorrow we will go and trade and make a profit, when he did not know what tomorrow would bring. The wisdom tradition had said it long before, that a man plans his way but the Lord directs his steps.",
+      "application": "Name the fear that your control is managing, since you cannot surrender what you will not see. Practice deliberate handing-over, in prayer and in act, releasing what was never yours to hold. Plan, work, and prepare, for that is faithful, but hold the plan with an open hand and add, if the Lord wills. And let the people you love make their own choices, which is the hardest letting-go of all.",
+      "verses": [
+        {
+          "ref": "Proverbs 16:9",
+          "text": "The heart of man plans his way, but the Lord establishes his steps."
+        },
+        {
+          "ref": "James 4:13-15",
+          "text": "You ought to say, if the Lord wills, we will live and do this or that."
+        },
+        {
+          "ref": "Proverbs 3:5-6",
+          "text": "Trust in the Lord with all your heart, and do not lean on your own understanding."
+        },
+        {
+          "ref": "Matthew 6:27",
+          "text": "Which of you by being anxious can add a single hour to his span of life?"
+        },
+        {
+          "ref": "Psalm 46:10",
+          "text": "Be still, and know that I am God."
+        }
+      ],
+      "related": [
+        {
+          "label": "The Heavy Mind",
+          "href": "/life/the-heavy-mind"
+        },
+        {
+          "label": "Pride and Humility",
+          "href": "/life/pride-and-humility"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -8607,7 +10048,7 @@
       "articles": [
         {
           "label": "Practical guides for life in the world",
-          "href": "/writing?topic=the-life-in-the-world"
+          "href": "/how-tos?topic=the-life-in-the-world"
         }
       ]
     },
@@ -8663,7 +10104,7 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -8723,7 +10164,7 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -8783,7 +10224,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -8843,7 +10284,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -8902,7 +10343,7 @@
       "articles": [
         {
           "label": "Practical guides for sharing your faith",
-          "href": "/writing?topic=evangelism"
+          "href": "/how-tos?topic=evangelism"
         }
       ]
     },
@@ -8958,7 +10399,7 @@
       "articles": [
         {
           "label": "Practical guides for hard seasons",
-          "href": "/writing?topic=suffering"
+          "href": "/how-tos?topic=suffering"
         }
       ]
     },
@@ -9014,7 +10455,7 @@
       "articles": [
         {
           "label": "Practical guides for hard seasons",
-          "href": "/writing?topic=suffering"
+          "href": "/how-tos?topic=suffering"
         }
       ]
     },
@@ -9074,7 +10515,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     },
@@ -9133,7 +10574,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -9189,7 +10630,7 @@
       "articles": [
         {
           "label": "Practical guides for hard seasons",
-          "href": "/writing?topic=suffering"
+          "href": "/how-tos?topic=suffering"
         }
       ]
     },
@@ -9245,7 +10686,7 @@
       "articles": [
         {
           "label": "Practical guides for hard seasons",
-          "href": "/writing?topic=suffering"
+          "href": "/how-tos?topic=suffering"
         }
       ]
     },
@@ -9302,7 +10743,7 @@
       "articles": [
         {
           "label": "Practical guides for hard seasons",
-          "href": "/writing?topic=suffering"
+          "href": "/how-tos?topic=suffering"
         }
       ]
     },
@@ -9358,7 +10799,7 @@
       "articles": [
         {
           "label": "Practical guides for hard seasons",
-          "href": "/writing?topic=suffering"
+          "href": "/how-tos?topic=suffering"
         }
       ]
     },
@@ -9416,7 +10857,7 @@
       "articles": [
         {
           "label": "Practical guides for hard seasons",
-          "href": "/writing?topic=suffering"
+          "href": "/how-tos?topic=suffering"
         }
       ]
     },
@@ -9472,7 +10913,7 @@
       "articles": [
         {
           "label": "Practical guides for hard seasons",
-          "href": "/writing?topic=suffering"
+          "href": "/how-tos?topic=suffering"
         }
       ]
     },
@@ -9526,7 +10967,7 @@
       "articles": [
         {
           "label": "Practical guides for relationships",
-          "href": "/writing?topic=relationships"
+          "href": "/how-tos?topic=relationships"
         }
       ]
     },
@@ -9587,7 +11028,7 @@
       "articles": [
         {
           "label": "Practical guides for hard seasons",
-          "href": "/writing?topic=suffering"
+          "href": "/how-tos?topic=suffering"
         }
       ]
     },
@@ -9647,7 +11088,7 @@
       "articles": [
         {
           "label": "Practical guides for following Jesus",
-          "href": "/writing?topic=discipleship"
+          "href": "/how-tos?topic=discipleship"
         }
       ]
     },
@@ -9707,7 +11148,7 @@
       "articles": [
         {
           "label": "Practical guides for work and money",
-          "href": "/writing?topic=work"
+          "href": "/how-tos?topic=work"
         }
       ]
     },
@@ -9767,7 +11208,7 @@
       "articles": [
         {
           "label": "Practical guides for work and money",
-          "href": "/writing?topic=work"
+          "href": "/how-tos?topic=work"
         }
       ]
     },
@@ -9827,7 +11268,7 @@
       "articles": [
         {
           "label": "Practical guides for the inner life",
-          "href": "/writing?topic=spiritual-formation"
+          "href": "/how-tos?topic=spiritual-formation"
         }
       ]
     }

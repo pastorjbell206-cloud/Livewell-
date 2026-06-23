@@ -43,6 +43,8 @@ const MembershipSuccess = lazy(() => import("./pages/MembershipSuccess"));
 const Discipleship = lazy(() => import("./pages/Discipleship"));
 const DiscipleMaking = lazy(() => import("./pages/DiscipleMaking"));
 const Wisdom = lazy(() => import("./pages/Wisdom"));
+const HowTos = lazy(() => import("./pages/HowTos"));
+const HowToArticle = lazy(() => import("./pages/HowToArticle"));
 const LifeIndex = lazy(() => import("./pages/life/LifeIndex"));
 const LifeDomain = lazy(() => import("./pages/life/LifeDomain"));
 const WholeLifeAssessment = lazy(() => import("./pages/life/WholeLifeAssessment"));
@@ -282,6 +284,8 @@ function Router() {
         <Route path="/discipleship" component={Discipleship} />
         <Route path="/disciple-making" component={DiscipleMaking} />
         <Route path="/wisdom" component={Wisdom} />
+        <Route path="/how-tos" component={HowTos} />
+        <Route path="/how-tos/:slug" component={HowToArticle} />
         <Route path="/studyguides/:slug" component={StudyGuide} />
         <Route path="/writing" component={Writing} />
         <Route path="/writing/:slug" component={ArticleDetail} />
