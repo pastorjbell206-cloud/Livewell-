@@ -51,8 +51,8 @@ _Register: modern/accessible (Comer) + Keller architecture (steel-man → bold e
 | Six Verses We Memorized, Sixty We Skipped | six-verses-we-memorized | PLANNED |
 | When the Pulpit Became a Precinct | when-the-pulpit-became-a-precinct | PLANNED |
 
-## The "struggling" flows — first drafts complete (37), awaiting expansion + James's truth
-All **SHORT DRAFT**, in `content/drafts/`. Each carries a `[PERSONAL STORY]` placeholder.
+## The "struggling" flows — ALL EXPANDED to the long-form bar (37) ✓
+All **EXPANDED** (~2,300–2,600 words each), in `content/drafts/`, in the modern-Keller-SEO register (edge dialed to pastoral; warmth-foremost for grief + marriage-crisis). New SEO titles, decks, meta descriptions, keyword sets, substantive H2s. Each keeps a `[PERSONAL STORY]` placeholder; citations need James's fact-check. Voice gate clean across all 37.
 
 **Marriage (11)** — `content/drafts/marriage/`
 when-marriage-becomes-a-mirror · the-covenant-you-didnt-understand · fighting-fair-is-not-enough · what-silence-costs-a-marriage · forgiveness-without-pretending · when-you-married-someone-you-no-longer-recognize · the-slow-drift-that-ends-marriages · the-resentment-in-your-marriage · what-the-bible-says-about-submission · emotional-labor-in-marriage · protecting-marriage-in-ministry
@@ -77,13 +77,13 @@ the-pastor-nobody-checks-on · when-the-calling-costs-more · burnout-is-not-a-b
 ---
 
 ## In flight right now
-- Nothing in flight. Capture by the Left is fully expanded (8/8).
-- Next up (on your go): Capture by the Right (8 to draft), then expand the 37 struggling-flow drafts to the bar, then the later pillars.
+- Nothing in flight. Capture by the Left (8) + all 37 struggling-flow essays are expanded to the bar.
+- Next up (on your go): Capture by the Right (8 to draft), then the later pillars (Scripture-past-politics lens essays, After-Christendom arc, pastoral bridges).
 
 ## Tallies
-- Long-form at the bar: **8** (all of Capture by the Left)
-- Short drafts complete: **37** (struggling/topic flows)
+- Long-form at the bar: **45** (8 Capture-Left + 37 struggling-flow)
 - Planned: Capture-Right (8) + later pillars (~15)
+- None published yet — all await James's edit (placeholders + fact-check) and the DATABASE_URL publish step.
 
 ## Publishing note
 Nothing here is live. Going live requires the `DATABASE_URL` step: each file
