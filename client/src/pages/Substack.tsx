@@ -7,6 +7,9 @@ const WRITING_DESK = "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/K
 
 export default function SubstackPage() {
   const settingQuery = trpc.settings.get.useQuery({ key: "substackUrl" });
+  // Always have a working destination: fall back to James's Substack if the
+  // site setting hasn't been configured, so the button is never a dead end.
+  const substackUrl = settingQuery.data || "https://jamesbell333289.substack.com";
 
   return (
     <>
@@ -78,9 +81,9 @@ export default function SubstackPage() {
               <div className="flex justify-center py-8">
                 <Loader2 size={24} className="animate-spin" style={{ color: "var(--gold)" }} />
               </div>
-            ) : settingQuery.data ? (
+            ) : (
               <a
-                href={settingQuery.data}
+                href={substackUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded font-ui font-medium no-underline transition-colors"
@@ -88,10 +91,6 @@ export default function SubstackPage() {
               >
                 <ExternalLink size={18} /> Subscribe on Substack
               </a>
-            ) : (
-              <p className="font-body" style={{ color: "var(--ink-muted)" }}>
-                Substack link not configured yet.
-              </p>
             )}
           </div>
         </div>

@@ -10,6 +10,12 @@ const plugins = [
   tailwindcss(),
   jsxLocPlugin(),
   VitePWA({
+    // Ship a self-destroying service worker: it unregisters any previously
+    // installed SW and clears its caches, so deploys always show up on the next
+    // load instead of being shadowed by a stale precached app shell. The PWA's
+    // aggressive caching repeatedly hid new deploys (articles, the book page);
+    // for a frequently-updated content site, fresh-from-network wins.
+    selfDestroying: true,
     registerType: "autoUpdate",
     includeAssets: ["robots.txt", "sitemap.xml"],
     manifest: {

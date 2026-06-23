@@ -13,6 +13,7 @@ import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { toParagraphs } from "@/lib/prose";
 import { DOCTRINE_INDEX } from "@/lib/theology";
 
 interface Act { id: string; act: string; title: string; range: string; summary: string; turning: string; pointsForward: string; }
@@ -29,7 +30,7 @@ const cardStyle = { background: "var(--card)", border: "1px solid var(--border)"
 function Para({ text, color = "var(--ink-muted)" }: { text: string; color?: string }) {
   return (
     <>
-      {text.split("\n\n").map((p, i) => (
+      {toParagraphs(text).map((p, i) => (
         <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color, maxWidth: "68ch", marginBottom: "12px" }}>{p}</p>
       ))}
     </>

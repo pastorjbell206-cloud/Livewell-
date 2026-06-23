@@ -628,6 +628,20 @@ export default function WholeLifeAssessment() {
                 <p style={{ ...mutedText, fontStyle: "italic", marginTop: "var(--s-4)", borderTop: "1px solid var(--border)", paddingTop: "var(--s-3)" }}>
                   Nothing here was sent anywhere. Come back in a season and see what the slow work has done.
                 </p>
+
+                {/* Eight-week plan CTA */}
+                <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderTop: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)", marginTop: "var(--s-4)" }}>
+                  <div className="eyebrow" style={{ marginBottom: "8px" }}>Your next step</div>
+                  <p style={{ ...bodyText, marginBottom: "var(--s-3)", maxWidth: "62ch" }}>
+                    The rule names the practices. The eight-week plan walks them with you, one week at a time.
+                  </p>
+                  <Link
+                    href="/plans/whole-life"
+                    style={{ ...primaryBtn, display: "inline-flex", alignItems: "center", justifyContent: "center", textDecoration: "none" }}
+                  >
+                    Start the eight-week plan
+                  </Link>
+                </div>
               </div>
             </section>
           </>

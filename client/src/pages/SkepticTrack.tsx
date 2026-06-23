@@ -12,7 +12,7 @@
 import { Link } from "wouter";
 
 import Layout from "@/components/Layout";
-import { SEOMeta, getArticleSchema } from "@/components/SEOMeta";
+import { SEOMeta } from "@/components/SEOMeta";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { trpc } from "@/lib/trpc";
 import { SITE_URL } from "@/lib/site";

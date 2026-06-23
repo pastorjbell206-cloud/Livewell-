@@ -292,6 +292,7 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
   /* Long-form reading at phone width: smaller body, calmer blockquotes. */
   .article-body{font-size:16px;line-height:1.7}
   .article-body blockquote{font-size:19px}
+  .article-body blockquote.quote-share .quote-share__text{font-size:21px}
   .article-body h2{font-size:24px}
   .article-body p:first-of-type::first-letter{font-size:3.6em}
 }
@@ -328,7 +329,14 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
 .article-body em{font-style:italic}
 .article-body code{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.92em;background:var(--bone-warm);padding:.12em .35em;border-radius:2px}
 .article-body hr{border:0;height:1px;background:var(--border);margin:3em auto;max-width:120px}
-.article-body img{margin:2em 0;border-radius:var(--radius-sm)}
+.article-body img{margin:2em 0;border-radius:var(--radius-sm);max-width:100%;height:auto}
+/* Anti-overlap: never let the floated drop cap collide with a following
+   heading, quote, list, rule, or image; never let long words/URLs spill. */
+.article-body{overflow-wrap:break-word;word-break:break-word}
+.article-body h2,.article-body h3,.article-body blockquote,.article-body hr,.article-body ul,.article-body ol,.article-body img,.article-body figure,.article-body .pullquote,.article-body .footnotes{clear:both}
+/* Shared section prose: same .article-body type system, but the lead-article
+   drop cap belongs only to the top of an article, not to every section block. */
+.article-body.prose-section p:first-of-type::first-letter{font-family:inherit;font-size:inherit;float:none;line-height:inherit;padding:0;margin:0;color:inherit;font-weight:inherit}
 
 /* Footnotes (when Streamdown emits them via remark-footnotes) */
 .article-body .footnotes{margin-top:4em;padding-top:1.6em;border-top:1px solid var(--border);font-size:14px;line-height:1.7;color:var(--ink-muted)}
@@ -340,6 +348,14 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
 
 /* Pull quote utility — wrap a quote in <figure class="pullquote"> in markdown */
 .article-body .pullquote{font-family:var(--F);font-size:32px;font-style:italic;font-weight:400;line-height:1.3;color:var(--ink);text-align:center;margin:3em 0;padding:1.4em 0;border-top:1px solid var(--mustard);border-bottom:1px solid var(--mustard);max-width:none;letter-spacing:-.01em}
+
+/* Shareable pull quote — every essay blockquote, lifted and given a share action */
+.article-body blockquote.quote-share{position:relative;border-left:2px solid var(--mustard);margin:2.6em 0;padding:.1em 0 .1em 1.5em;max-width:62ch}
+.article-body blockquote.quote-share .quote-share__text{font-family:var(--F);font-size:26px;font-style:italic;font-weight:400;line-height:1.4;letter-spacing:-.01em;color:var(--ink)}
+.article-body blockquote.quote-share .quote-share__text p{max-width:none;margin:0}
+.article-body blockquote.quote-share .quote-share__text p+p{margin-top:.5em}
+.quote-share__btn{display:inline-flex;align-items:center;gap:7px;margin-top:1.1em;background:transparent;border:none;padding:0;cursor:pointer;font-family:var(--U);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--mustard-text);transition:opacity .2s}
+.quote-share__btn:hover{opacity:.65}
 
 /* Eyebrow utility — small all-caps label with mustard rule */
 .eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--U);font-size:11px;font-weight:600;color:var(--mustard-text);text-transform:uppercase;letter-spacing:.18em}

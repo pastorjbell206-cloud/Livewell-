@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { toParagraphs } from "@/lib/prose";
 
 interface Principle { name: string; rule: string; why: string; example: string; }
 interface ErrorItem { name: string; what: string; fix: string; }
@@ -58,7 +59,7 @@ export default function TheologyHermeneutics() {
         <>
           <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-4)" }}>
             <div style={wrap}>
-              {data.intro.split("\n\n").map((p, i) => (
+              {toParagraphs(data.intro).map((p, i) => (
                 <p key={i} style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "68ch", marginBottom: "14px" }}>{p}</p>
               ))}
             </div>

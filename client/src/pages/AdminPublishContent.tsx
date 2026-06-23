@@ -110,9 +110,11 @@ export default function AdminPublishContent() {
           Publish Article Content
         </h1>
         <p className="font-body mb-8" style={{ color: "#5A5448", lineHeight: 1.7 }}>
-          This fills your empty and short articles with their finished 1,500+ word versions.
-          It updates only the article text and reading time — it never changes a post's title,
-          published status, or category. Start with the safe test, then publish.
+          This fills your articles with their finished, fully-formatted versions — all 421 of them,
+          including the marriage, parenting, apologetics, church history, justice, and preaching essays,
+          each with its section headings and pull-quotes. It updates only the article text and reading
+          time — it never changes a post's title, published status, or category. Start with the safe
+          test, then publish.
         </p>
 
         <div className="flex flex-wrap gap-3 mb-8">

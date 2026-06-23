@@ -8,40 +8,40 @@ export default function Parenting() {
 
   const FEATURED_ARTICLES = [
     {
-      title: "The Pastor's Kids Are Watching What Are They Seeing?",
-      slug: "the-pastors-kids-are-watching",
-      topic: "Parenting",
-      readTime: "9 min read"
-    },
-    {
-      title: "How to Talk to Your Kids About Faith When You're Not Sure What You Believe",
-      slug: "how-to-talk-kids-faith-doubt",
-      topic: "Parenting",
-      readTime: "10 min read"
-    },
-    {
-      title: "When Your Teenager Says They Don't Believe Anymore",
-      slug: "teenager-losing-faith",
-      topic: "Parenting",
-      readTime: "11 min read"
-    },
-    {
-      title: "Family Devotions That Don't Feel Forced",
-      slug: "family-devotions-authentic",
-      topic: "Parenting",
-      readTime: "8 min read"
-    },
-    {
-      title: "Raising Sons in a World Confused About Manhood",
-      slug: "raising-sons-manhood",
+      title: "How to Raise Children in the Faith Without Crushing Them",
+      slug: "how-to-raise-children-in-the-faith",
       topic: "Parenting",
       readTime: "12 min read"
     },
     {
-      title: "The Conversation About Doubt Your Kids Need You to Start",
-      slug: "teaching-kids-about-doubt",
+      title: "What Fatherhood Requires",
+      slug: "what-fatherhood-requires",
+      topic: "Fatherhood",
+      readTime: "12 min read"
+    },
+    {
+      title: "Discipline That Forms the Heart, Not Just the Behavior",
+      slug: "parenting-discipline-that-forms-the-heart",
+      topic: "Parenting",
+      readTime: "9 min read"
+    },
+    {
+      title: "Raising Kids in a Screen and Phone Age",
+      slug: "parenting-raising-kids-in-a-screen-age",
       topic: "Parenting",
       readTime: "10 min read"
+    },
+    {
+      title: "When Your Child Doubts or Walks Away",
+      slug: "parenting-when-your-child-doubts-or-walks-away",
+      topic: "Parenting",
+      readTime: "10 min read"
+    },
+    {
+      title: "Teaching Your Kids to Pray and Read the Bible",
+      slug: "parenting-teaching-kids-to-pray-and-read-scripture",
+      topic: "Parenting",
+      readTime: "9 min read"
     }
   ];
 

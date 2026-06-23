@@ -51,13 +51,46 @@ const NEEDS: Need[] = [
   },
   {
     id: "doubt",
-    title: "I doubt God, or I am not sure I believe",
-    opener: "Doubt is not the opposite of faith. It is often part of a living one. Bring the hardest questions.",
+    title: "I believe, but I am full of doubt",
+    opener: "Doubt is not the opposite of faith. It is often part of a living one. You do not have to hide it here.",
     helps: [
       { href: "/doubt", label: "Read: doubt as part of a living faith", kind: "read" },
-      { href: "/skeptic-track", label: "Read: the track for skeptics, by a former one", kind: "read" },
+      { href: "/theology/questions", label: "Read: the hard questions, answered honestly", kind: "read" },
       { href: "/resources/context", label: "Do: read the Bible in its real context, not the caricature", kind: "do" },
-      { href: "/start", label: "Assess: find where to begin", kind: "assess" },
+      { href: "/tools/prayer-generator", label: "Pray: a prayer for when belief is thin", kind: "pray" },
+    ],
+  },
+  {
+    id: "deconstructing",
+    title: "I am deconstructing my faith",
+    opener: "No panic here, and no shame. Many people are not leaving Jesus. They are leaving a version of him someone sold them. Take the questions seriously, and take your time.",
+    helps: [
+      { href: "/plans/deconstruction", label: "Do: eight weeks of taking your questions seriously", kind: "do" },
+      { href: "/resources/context/the-bible-is-not-an-american-book", label: "Read: separating Jesus from the version you were handed", kind: "read" },
+      { href: "/disruption", label: "Read: what the church got wrong, said plainly by a pastor", kind: "read" },
+      { href: "/theology/compare", label: "Do: see every position side by side, fairly", kind: "do" },
+    ],
+  },
+  {
+    id: "skeptic",
+    title: "I do not believe, and I am curious",
+    opener: "Written for you by a pastor who was an atheist first. No tricks, no ambush, no altar call. Just the material, taken as seriously as you take it.",
+    helps: [
+      { href: "/plans/skeptic", label: "Do: eight weeks of reading like an adult", kind: "do" },
+      { href: "/skeptic-track", label: "Read: the skeptic track, in argument order", kind: "read" },
+      { href: "/resources/context", label: "Read: the Bible in its real history, cited to scholarship", kind: "read" },
+      { href: "/theology/questions", label: "Read: the hardest questions, not dodged", kind: "read" },
+    ],
+  },
+  {
+    id: "new-believer",
+    title: "I am new to faith and do not know what to do next",
+    opener: "Welcome. Nobody expects you to know the words yet. Here is how to begin, one small step at a time, with everything explained.",
+    helps: [
+      { href: "/plans/new-believer", label: "Do: eight weeks of beginnings", kind: "do" },
+      { href: "/discipleship", label: "Read: the pathway from new believer to mature", kind: "read" },
+      { href: "/tools/prayer-generator", label: "Pray: how to pray when you do not know how", kind: "pray" },
+      { href: "/start", label: "Assess: find your starting place", kind: "assess" },
     ],
   },
   {

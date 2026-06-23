@@ -5,36 +5,64 @@ import mysql from "mysql2/promise";
 import crypto from "node:crypto";
 import bcrypt from "bcryptjs";
 import superjson from "superjson";
+import { readFileSync } from "node:fs";
 import Stripe from "stripe";
 
-async function withConn<T>(fn: (c: mysql.Connection) => Promise<T>): Promise<T> {
+// ---------------------------------------------------------------------------
+// Database access — one pool per warm serverless instance, reused across
+// invocations.
+//
+// Vercel runs this function on short-lived, horizontally-scaled instances. The
+// earlier implementation opened a brand-new MySQL connection (TCP + TLS
+// handshake + auth) on every request and tore it down in a `finally`. That adds
+// round-trips of latency to every call and, under concurrency, multiplies open
+// connections until the database refuses new ones — the first thing that breaks
+// at scale. (A hand-rolled single-connection cache, `withPubConn`, had been
+// left in for one path to dodge this; the pool below supersedes it, so it is
+// gone.)
+//
+// The pool is cached on `globalThis` so it survives module re-evaluation. Each
+// unit of work borrows a connection for the duration of its callback and
+// returns it with `release()` — never closing it — so connections are reused,
+// not rebuilt. mysql2's pool transparently replaces dropped connections, and
+// keep-alive stops idle ones being culled mid-flight. Behaviour is otherwise
+// identical: every callback still runs against a single dedicated connection,
+// so all existing call sites are unchanged.
+//
+// `connectionLimit` is intentionally small: serverless scales by adding
+// instances, and total DB connections ≈ instances × limit, so a modest
+// per-instance cap is what keeps the database healthy. Tunable via DB_POOL_SIZE.
+// ---------------------------------------------------------------------------
+
+const DB_POOL_SIZE = Math.max(1, Number(process.env.DB_POOL_SIZE) || 5);
+
+const globalForDb = globalThis as unknown as { __lwPool?: mysql.Pool };
+
+function getPool(): mysql.Pool {
   const url = process.env.DATABASE_URL;
   if (!url) throw new Error("DATABASE_URL missing");
-  const conn = await mysql.createConnection({ uri: url, ssl: { rejectUnauthorized: true } });
-  try { return await fn(conn); } finally { await conn.end(); }
+  if (!globalForDb.__lwPool) {
+    globalForDb.__lwPool = mysql.createPool({
+      uri: url,
+      ssl: { rejectUnauthorized: true },
+      waitForConnections: true,
+      connectionLimit: DB_POOL_SIZE,
+      maxIdle: DB_POOL_SIZE,
+      idleTimeout: 60_000,
+      queueLimit: 0,
+      enableKeepAlive: true,
+      keepAliveInitialDelay: 10_000,
+    });
+  }
+  return globalForDb.__lwPool;
 }
 
-// A connection cached across warm invocations, used by the bulk publish path so
-// it does not open (and exhaust) a fresh DB connection on every batch request.
-let _pubConn: mysql.Connection | null = null;
-async function withPubConn<T>(fn: (c: mysql.Connection) => Promise<T>): Promise<T> {
-  const url = process.env.DATABASE_URL;
-  if (!url) throw new Error("DATABASE_URL missing");
-  if (_pubConn) {
-    try { await _pubConn.query("SELECT 1"); }
-    catch { try { await _pubConn.end(); } catch { /* ignore */ } _pubConn = null; }
-  }
-  if (!_pubConn) {
-    _pubConn = await mysql.createConnection({ uri: url, ssl: { rejectUnauthorized: true } });
-  }
+async function withConn<T>(fn: (c: mysql.PoolConnection) => Promise<T>): Promise<T> {
+  const conn = await getPool().getConnection();
   try {
-    return await fn(_pubConn);
-  } catch (e: any) {
-    if (e?.fatal || e?.code === "PROTOCOL_CONNECTION_LOST") {
-      try { await _pubConn?.end(); } catch { /* ignore */ }
-      _pubConn = null;
-    }
-    throw e;
+    return await fn(conn);
+  } finally {
+    conn.release();
   }
 }
 
@@ -599,7 +627,7 @@ async function pcnSignup(req: VercelRequest, res: VercelResponse) {
 async function sitemap(_req: VercelRequest, res: VercelResponse) {
   try {
     const base = "https://www.livewellbyjamesbell.co";
-    const staticPaths = ["/", "/writing", "/books", "/about", "/quiz", "/search", "/marriage", "/parenting", "/doubt", "/start", "/for-pastors", "/for-leaders", "/membership", "/reading-paths", "/resources"];
+    const staticPaths = ["/", "/writing", "/books", "/consider-the-birds", "/where-your-treasure-is", "/about", "/quiz", "/search", "/marriage", "/parenting", "/doubt", "/start", "/for-pastors", "/for-leaders", "/membership", "/reading-paths", "/resources"];
     let articles: any[] = [];
     try {
       articles = await withConn(async (c) => {
@@ -662,27 +690,48 @@ function toPostCard(row: any): any {
   };
 }
 
+// Card shape for `posts` rows (camelCase columns) — distinct from toPostCard,
+// which maps the snake_case `articles` table. Used by posts.getFeatured.
+function toFeaturedPostCard(row: any): any {
+  return {
+    id: row.id,
+    slug: row.slug,
+    title: row.title,
+    excerpt: row.excerpt || "",
+    pillar: row.pillar || "Theological Depth",
+    readTime: row.readTime || "5 min",
+    readingTimeMinutes: row.readingTimeMinutes ?? 5,
+    author: "James Bell",
+    createdAt: row.createdAt || row.publishedAt,
+    publishedAt: row.publishedAt || row.createdAt,
+  };
+}
+
 async function trpcListPosts(): Promise<any[]> {
   return await withConn(async (c) => {
-    const base = "id, slug, title, excerpt, body, pillar, readTime, published, featured, publishedAt, createdAt";
+    const base = "id, slug, title, excerpt, pillar, readTime, published, featured, publishedAt, createdAt";
     // Try with the two-level columns; if they don't exist yet, fall back without
     // them so the site keeps working before the taxonomy migration is run.
     let rows: any = null;
     try {
       [rows] = await c.execute(
-        `SELECT ${base}, subPathway, isSeries FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 500`
+        `SELECT ${base}, subPathway, isSeries FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 2000`
       );
     } catch {
       try {
         [rows] = await c.execute(
-          `SELECT ${base} FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 500`
+          `SELECT ${base} FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 2000`
         );
       } catch { rows = null; }
     }
     if (Array.isArray(rows) && rows.length > 0) {
       return (rows as any[]).map((r) => ({
         id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
-        body: r.body || null, content: r.body || null,
+        // Listing pages render cards (title/excerpt), never the body. Sending the
+        // full body of every published post made this response ~7MB once all 421
+        // articles were filled, which hung the article lists on "loading". The
+        // body is fetched per-article by getBySlug, so the list omits it.
+        body: null, content: null,
         pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
         published: r.published, featured: r.featured, topic: r.topic || null,
         subPathway: r.subPathway ?? null, isSeries: !!r.isSeries,
@@ -819,163 +868,97 @@ async function quizGetRecommendations(input: any) {
   };
 }
 
-// ----- Ported endpoints (parity with server/* routers) -----
-// These mirror procedures defined in the typed server/ routers that previously
-// 404'd in production because they were never re-implemented here. Behavior and
-// output shapes match the source routers/services; see the named file in each
-// section. Limits are clamped and inlined (mysql2 prepared LIMIT placeholders
-// are unreliable), never interpolating user strings into SQL.
+// ─── Search (ported from server/search-service.ts) ──────────────────────────
+// Mirrors the dev tRPC search router: FULLTEXT MATCH/AGAINST with a graceful
+// LIKE fallback when the FULLTEXT indexes are absent. Each sub-search borrows
+// its own pooled connection so global search can run them in parallel.
+type SearchResult = {
+  id: number;
+  type: "article" | "resource" | "book";
+  title: string;
+  excerpt?: string;
+  slug?: string;
+  url?: string;
+  category?: string;
+  publishedAt?: unknown;
+  relevance?: number;
+};
 
-const PROD_ADMIN_USER_ID = 1; // matches auth.me's admin identity in this function
-
-function clampLimit(v: any, fallback: number): number {
-  const n = Number(v);
-  if (!Number.isFinite(n)) return fallback;
-  return Math.max(1, Math.min(100, Math.floor(n)));
+function clampLimit(n: unknown, def = 20, max = 50): number {
+  const v = Math.floor(Number(n));
+  return Number.isFinite(v) && v >= 1 ? Math.min(max, v) : def;
 }
 
-// --- Search (server/search-service.ts): FULLTEXT with graceful LIKE fallback ---
-async function searchArticlesProd(c: mysql.Connection, query: string, lim: number): Promise<any[]> {
+async function searchArticlesProd(c: mysql.PoolConnection, query: string, limit: number): Promise<SearchResult[]> {
   try {
-    const [rows]: any = await c.execute(
-      `SELECT id, title, excerpt, slug, pillar, topic, publishedAt,
-              MATCH(title, excerpt, body) AGAINST(? IN NATURAL LANGUAGE MODE) AS relevance
-       FROM posts
-       WHERE published = true AND MATCH(title, excerpt, body) AGAINST(? IN NATURAL LANGUAGE MODE)
-       ORDER BY relevance DESC LIMIT ${lim}`,
-      [query, query]
+    const [rows]: any = await c.query(
+      "SELECT id, title, excerpt, slug, pillar, topic, publishedAt, " +
+        "MATCH(title, excerpt, body) AGAINST(? IN NATURAL LANGUAGE MODE) AS relevance " +
+        "FROM posts WHERE published = true " +
+        "AND MATCH(title, excerpt, body) AGAINST(? IN NATURAL LANGUAGE MODE) " +
+        "ORDER BY relevance DESC LIMIT " + limit,
+      [query, query],
     );
     return (rows as any[]).map((a) => ({
       id: a.id, type: "article", title: a.title, excerpt: a.excerpt ?? undefined,
       slug: a.slug, category: a.topic ?? a.pillar ?? undefined,
       publishedAt: a.publishedAt ?? undefined, relevance: a.relevance,
-    }));
+    })) as SearchResult[];
   } catch {
     const term = `%${query}%`;
-    const [rows]: any = await c.execute(
-      `SELECT id, title, excerpt, slug, pillar, topic, publishedAt
-       FROM posts WHERE published = true AND (title LIKE ? OR excerpt LIKE ? OR body LIKE ?)
-       ORDER BY publishedAt DESC LIMIT ${lim}`,
-      [term, term, term]
+    const [rows]: any = await c.query(
+      "SELECT id, title, excerpt, slug, pillar, topic, publishedAt FROM posts " +
+        "WHERE published = true AND (title LIKE ? OR excerpt LIKE ? OR body LIKE ?) " +
+        "ORDER BY publishedAt DESC LIMIT " + limit,
+      [term, term, term],
     );
     return (rows as any[]).map((a) => ({
       id: a.id, type: "article", title: a.title, excerpt: a.excerpt ?? undefined,
       slug: a.slug, category: a.topic ?? a.pillar ?? undefined,
       publishedAt: a.publishedAt ?? undefined,
-    }));
+    })) as SearchResult[];
   }
 }
 
-async function searchResourcesProd(c: mysql.Connection, query: string, lim: number): Promise<any[]> {
+async function searchResourcesProd(c: mysql.PoolConnection, query: string, limit: number): Promise<SearchResult[]> {
   const term = `%${query}%`;
-  const [rows]: any = await c.execute(
-    `SELECT id, title, description, category, url FROM resources
-     WHERE published = true AND (title LIKE ? OR description LIKE ?) LIMIT ${lim}`,
-    [term, term]
+  const [rows]: any = await c.query(
+    "SELECT id, title, description, category, url FROM resources " +
+      "WHERE published = true AND (title LIKE ? OR description LIKE ?) LIMIT " + limit,
+    [term, term],
   );
   return (rows as any[]).map((r) => ({
     id: r.id, type: "resource", title: r.title, excerpt: r.description ?? undefined,
     category: r.category ?? undefined, url: r.url ?? undefined,
-  }));
+  })) as SearchResult[];
 }
 
-async function searchBooksProd(c: mysql.Connection, query: string, lim: number): Promise<any[]> {
+async function searchBooksProd(c: mysql.PoolConnection, query: string, limit: number): Promise<SearchResult[]> {
   try {
-    const [rows]: any = await c.execute(
-      `SELECT id, title, description, author, slug,
-              MATCH(title, description, sampleExcerpt) AGAINST(? IN NATURAL LANGUAGE MODE) AS relevance
-       FROM books
-       WHERE published = true AND MATCH(title, description, sampleExcerpt) AGAINST(? IN NATURAL LANGUAGE MODE)
-       ORDER BY relevance DESC LIMIT ${lim}`,
-      [query, query]
+    const [rows]: any = await c.query(
+      "SELECT id, title, description, author, slug, " +
+        "MATCH(title, description, sampleExcerpt) AGAINST(? IN NATURAL LANGUAGE MODE) AS relevance " +
+        "FROM books WHERE published = true " +
+        "AND MATCH(title, description, sampleExcerpt) AGAINST(? IN NATURAL LANGUAGE MODE) " +
+        "ORDER BY relevance DESC LIMIT " + limit,
+      [query, query],
     );
     return (rows as any[]).map((b) => ({
       id: b.id, type: "book", title: b.title, excerpt: b.description ?? undefined,
       category: b.author ?? undefined, slug: b.slug ?? undefined, relevance: b.relevance,
-    }));
+    })) as SearchResult[];
   } catch {
     const term = `%${query}%`;
-    const [rows]: any = await c.execute(
-      `SELECT id, title, description, author, slug FROM books
-       WHERE published = true AND (title LIKE ? OR description LIKE ? OR author LIKE ?) LIMIT ${lim}`,
-      [term, term, term]
+    const [rows]: any = await c.query(
+      "SELECT id, title, description, author, slug FROM books " +
+        "WHERE published = true AND (title LIKE ? OR description LIKE ? OR author LIKE ?) LIMIT " + limit,
+      [term, term, term],
     );
     return (rows as any[]).map((b) => ({
       id: b.id, type: "book", title: b.title, excerpt: b.description ?? undefined,
       category: b.author ?? undefined, slug: b.slug ?? undefined,
-    }));
+    })) as SearchResult[];
   }
-}
-
-// Slim per-post feed for the /writing index (server/db.ts listPostsForIndex) — no body.
-async function trpcListPostsForIndex(): Promise<any[]> {
-  return await withConn(async (c) => {
-    const cols =
-      "id, slug, title, excerpt, pillar, topic, coverImage, readingTimeMinutes, readTime, format, audience, audience_type, contentType, difficulty, publishedAt, featured, createdAt, updatedAt";
-    try {
-      const [rows]: any = await c.execute(
-        `SELECT ${cols} FROM posts WHERE published = true ORDER BY publishedAt DESC LIMIT 1000`
-      );
-      return rows as any[];
-    } catch {
-      const [rows]: any = await c.execute(
-        `SELECT id, slug, title, excerpt, pillar, publishedAt, featured, createdAt FROM posts WHERE published = true ORDER BY publishedAt DESC LIMIT 1000`
-      );
-      return rows as any[];
-    }
-  });
-}
-
-// --- Stripe (server/stripe-service.ts) ---
-const BOOK_PRICES: Record<number, { title: string; priceUSD: number }> = {
-  1: { title: "Book One", priceUSD: 14.99 },
-  2: { title: "Book Two", priceUSD: 16.99 },
-  3: { title: "Book Three", priceUSD: 12.99 },
-};
-
-function getStripe(): Stripe | null {
-  const key = process.env.STRIPE_SECRET_KEY || "";
-  if (!key.startsWith("sk_") || key === "sk_test_placeholder") return null;
-  return new Stripe(key);
-}
-
-async function getSettingProd(key: string): Promise<string | null> {
-  return await withConn(async (c) => {
-    const [rows]: any = await c.execute(
-      "SELECT settingValue FROM site_settings WHERE settingKey = ?",
-      [key]
-    );
-    return rows[0]?.settingValue ?? null;
-  });
-}
-
-// --- File storage proxy (server/storage.ts storagePut) ---
-async function storagePutProd(
-  relKey: string,
-  data: Buffer,
-  contentType: string
-): Promise<{ key: string; url: string }> {
-  const baseUrl = (process.env.BUILT_IN_FORGE_API_URL || "").replace(/\/+$/, "");
-  const apiKey = process.env.BUILT_IN_FORGE_API_KEY || "";
-  if (!baseUrl || !apiKey) {
-    throw new Error("Storage proxy not configured (BUILT_IN_FORGE_API_URL / BUILT_IN_FORGE_API_KEY)");
-  }
-  const key = relKey.replace(/^\/+/, "");
-  const uploadUrl = new URL("v1/storage/upload", baseUrl + "/");
-  uploadUrl.searchParams.set("path", key);
-  const form = new FormData();
-  form.append("file", new Blob([new Uint8Array(data)], { type: contentType }), key.split("/").pop() || key);
-  const response = await fetch(uploadUrl, {
-    method: "POST",
-    headers: { Authorization: `Bearer ${apiKey}` },
-    body: form,
-  });
-  if (!response.ok) {
-    const message = await response.text().catch(() => response.statusText);
-    throw new Error(`Storage upload failed (${response.status}): ${message}`);
-  }
-  const url = (await response.json()).url;
-  return { key, url };
 }
 
 async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string) {
@@ -1523,46 +1506,40 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
       case "posts.getFeatured": {
         return await withConn(async (c) => {
           const [rows]: any = await c.execute(
-            "SELECT id, slug, title, excerpt, pillar, published_at, created_at, word_count FROM posts WHERE featured = true AND published = true ORDER BY created_at DESC LIMIT 10"
+            "SELECT id, slug, title, excerpt, pillar, readTime, readingTimeMinutes, publishedAt, createdAt FROM posts WHERE featured = true AND published = true ORDER BY createdAt DESC LIMIT 10"
           );
-          return trpcOk(res, (rows as any[]).map(toPostCard));
+          return trpcOk(res, (rows as any[]).map(toFeaturedPostCard));
         });
       }
-      // ─── Search (public) ───────────────────────────────────────────
       case "search.global": {
-        const q = String(input?.query ?? "").trim();
-        const lim = clampLimit(input?.limit, 20);
-        if (!q) return trpcOk(res, { success: true, query: q, results: [], count: 0 });
-        const results = await withConn(async (c) => {
-          const articles = await searchArticlesProd(c, q, lim).catch(() => []);
-          const books = await searchBooksProd(c, q, lim).catch(() => []);
-          const resources = await searchResourcesProd(c, q, lim).catch(() => []);
-          return [...articles, ...books, ...resources].slice(0, lim);
-        });
+        const q = typeof input?.query === "string" ? input.query : "";
+        const lim = clampLimit(input?.limit);
+        if (!q) return trpcOk(res, { success: true, query: "", results: [], count: 0 });
+        const [articles, books, resources] = await Promise.all([
+          withConn((c) => searchArticlesProd(c, q, lim)).catch(() => [] as SearchResult[]),
+          withConn((c) => searchBooksProd(c, q, lim)).catch(() => [] as SearchResult[]),
+          withConn((c) => searchResourcesProd(c, q, lim)).catch(() => [] as SearchResult[]),
+        ]);
+        const results = [...articles, ...books, ...resources].slice(0, lim);
         return trpcOk(res, { success: true, query: q, results, count: results.length });
       }
       case "search.articles": {
-        const q = String(input?.query ?? "").trim();
-        const lim = clampLimit(input?.limit, 20);
-        if (!q) return trpcOk(res, { success: true, query: q, results: [], count: 0 });
+        const q = typeof input?.query === "string" ? input.query : "";
+        const lim = clampLimit(input?.limit);
+        if (!q) return trpcOk(res, { success: true, query: "", results: [], count: 0 });
         const results = await withConn((c) => searchArticlesProd(c, q, lim));
         return trpcOk(res, { success: true, query: q, results, count: results.length });
       }
       case "search.resources": {
-        const q = String(input?.query ?? "").trim();
-        const lim = clampLimit(input?.limit, 20);
-        if (!q) return trpcOk(res, { success: true, query: q, results: [], count: 0 });
+        const q = typeof input?.query === "string" ? input.query : "";
+        const lim = clampLimit(input?.limit);
+        if (!q) return trpcOk(res, { success: true, query: "", results: [], count: 0 });
         const results = await withConn((c) => searchResourcesProd(c, q, lim));
         return trpcOk(res, { success: true, query: q, results, count: results.length });
       }
-
-      // ─── Posts / Books reads (public) ──────────────────────────────
-      case "posts.listForIndex": {
-        const data = await trpcListPostsForIndex();
-        return trpcOk(res, data);
-      }
       case "books.getBySlug": {
-        const slug = String(input?.slug ?? input ?? "");
+        const slug = typeof input?.slug === "string" ? input.slug : "";
+        if (!slug) return trpcOk(res, null);
         const book = await withConn(async (c) => {
           const [rows]: any = await c.execute("SELECT * FROM books WHERE slug = ? LIMIT 1", [slug]);
           return rows[0] || null;
@@ -1570,8 +1547,17 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         if (!book || !book.published) return trpcOk(res, null);
         return trpcOk(res, book);
       }
-
-      // ─── Subscribers (admin) ───────────────────────────────────────
+      case "posts.listForIndex": {
+        const rows = await withConn(async (c) => {
+          const [r]: any = await c.execute(
+            "SELECT id, slug, title, excerpt, pillar, topic, coverImage, readingTimeMinutes, readTime, " +
+              "format, audience, audience_type, contentType, difficulty, publishedAt, featured, createdAt, updatedAt " +
+              "FROM posts WHERE published = true ORDER BY publishedAt DESC",
+          );
+          return (r as any[]).map((p) => ({ ...p, featured: !!p.featured }));
+        });
+        return trpcOk(res, rows);
+      }
       case "subscribers.list": {
         if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
         const rows = await withConn(async (c) => {
@@ -1582,93 +1568,40 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
       }
       case "subscribers.remove": {
         if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
-        const email = String(input?.email || "").trim().toLowerCase();
+        const email = typeof input?.email === "string" ? input.email : "";
         if (!email) return trpcErr(res, "BAD_REQUEST", "email required", 400);
-        await withConn((c) => c.execute("DELETE FROM subscribers WHERE email = ?", [email]));
+        await withConn(async (c) => { await c.execute("DELETE FROM subscribers WHERE email = ?", [email]); });
         return trpcOk(res, { success: true });
       }
-
-      // ─── Files (admin; scoped to the admin user) ───────────────────
-      case "files.list": {
-        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
-        const rows = await withConn(async (c) => {
-          const [r]: any = await c.execute(
-            "SELECT * FROM files WHERE userId = ? ORDER BY createdAt DESC",
-            [PROD_ADMIN_USER_ID]
-          );
-          return r as any[];
-        });
-        return trpcOk(res, rows);
-      }
-      case "files.updateDescription": {
-        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
-        const id = Number(input?.id);
-        if (!Number.isFinite(id)) return trpcErr(res, "BAD_REQUEST", "id required", 400);
-        const description = String(input?.description ?? "");
-        const row = await withConn(async (c) => {
-          await c.execute(
-            "UPDATE files SET description = ?, updatedAt = NOW() WHERE id = ? AND userId = ?",
-            [description, id, PROD_ADMIN_USER_ID]
-          );
-          const [r]: any = await c.execute(
-            "SELECT * FROM files WHERE id = ? AND userId = ? LIMIT 1",
-            [id, PROD_ADMIN_USER_ID]
-          );
-          return r[0] || null;
-        });
-        return trpcOk(res, row);
-      }
-      case "files.delete": {
-        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
-        const id = Number(input?.id);
-        if (!Number.isFinite(id)) return trpcErr(res, "BAD_REQUEST", "id required", 400);
-        await withConn((c) =>
-          c.execute("DELETE FROM files WHERE id = ? AND userId = ?", [id, PROD_ADMIN_USER_ID])
-        );
-        return trpcOk(res, { success: true });
-      }
-      case "files.upload": {
-        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
-        const filename = String(input?.filename || "");
-        const mimeType = String(input?.mimeType || "application/octet-stream");
-        const base64Data = String(input?.base64Data || "");
-        if (!filename || !base64Data) return trpcErr(res, "BAD_REQUEST", "filename and base64Data required", 400);
-        const buffer = Buffer.from(base64Data, "base64");
-        if (buffer.length > 16 * 1024 * 1024) return trpcErr(res, "BAD_REQUEST", "File size exceeds 16MB limit", 400);
-        const suffix = crypto.randomBytes(9).toString("base64url");
-        const safeFilename = filename.replace(/[^a-zA-Z0-9._-]/g, "_");
-        const fileKey = `user-${PROD_ADMIN_USER_ID}/files/${safeFilename}-${suffix}`;
-        const { url } = await storagePutProd(fileKey, buffer, mimeType);
-        const row = await withConn(async (c) => {
-          const [r]: any = await c.execute(
-            `INSERT INTO files (userId, filename, fileKey, url, mimeType, size, description, createdAt, updatedAt)
-             VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())`,
-            [PROD_ADMIN_USER_ID, filename, fileKey, url, mimeType, buffer.length, input?.description ?? null]
-          );
-          const [rows]: any = await c.execute("SELECT * FROM files WHERE id = ? LIMIT 1", [r.insertId]);
-          return rows[0] || null;
-        });
-        return trpcOk(res, row);
-      }
-
-      // ─── Stripe / membership + book checkout (public) ──────────────
       case "stripe.membershipEnabled": {
-        const s = getStripe();
-        if (!s) return trpcOk(res, { enabled: false });
-        const priceId = await getSettingProd("stripeMembershipPriceId");
-        return trpcOk(res, { enabled: !!(priceId && priceId.trim()) });
+        if (!stripeConfigured()) return trpcOk(res, { enabled: false });
+        const priceId = await withConn(async (c) => {
+          const [rows]: any = await c.execute(
+            "SELECT settingValue FROM site_settings WHERE settingKey = ?",
+            ["stripeMembershipPriceId"],
+          );
+          return rows[0]?.settingValue ?? null;
+        });
+        return trpcOk(res, { enabled: !!(priceId && String(priceId).trim()) });
       }
       case "stripe.createMembershipCheckout": {
-        const s = getStripe();
-        if (!s) return trpcErr(res, "BAD_REQUEST", "Membership is not open yet.", 400);
-        const email = String(input?.customerEmail || "");
-        const origin = String(input?.origin || "");
-        const priceId = await getSettingProd("stripeMembershipPriceId");
-        if (!priceId || !priceId.trim()) return trpcErr(res, "BAD_REQUEST", "Membership is not open yet.", 400);
-        const session = await s.checkout.sessions.create({
+        const stripe = getStripe();
+        if (!stripe || !stripeConfigured()) return trpcErr(res, "BAD_REQUEST", "Membership is not open yet.", 400);
+        const email = typeof input?.customerEmail === "string" ? input.customerEmail : "";
+        if (!email) return trpcErr(res, "BAD_REQUEST", "A valid email is required.", 400);
+        const priceId = await withConn(async (c) => {
+          const [rows]: any = await c.execute(
+            "SELECT settingValue FROM site_settings WHERE settingKey = ?",
+            ["stripeMembershipPriceId"],
+          );
+          return String(rows[0]?.settingValue ?? "").trim();
+        });
+        if (!priceId) return trpcErr(res, "BAD_REQUEST", "Membership is not open yet.", 400);
+        const origin = typeof input?.origin === "string" && input.origin ? input.origin : siteOrigin(req);
+        const session = await stripe.checkout.sessions.create({
           mode: "subscription",
           payment_method_types: ["card"],
-          line_items: [{ price: priceId.trim(), quantity: 1 }],
+          line_items: [{ price: priceId, quantity: 1 }],
           customer_email: email,
           allow_promotion_codes: true,
           metadata: { kind: "membership", customer_email: email },
@@ -1677,47 +1610,11 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         });
         return trpcOk(res, { success: true, sessionUrl: session.url || "", sessionId: session.id });
       }
-      case "stripe.createCheckoutSession": {
-        const s = getStripe();
-        if (!s) return trpcErr(res, "BAD_REQUEST", "Stripe is not configured.", 400);
-        const bookId = Number(input?.bookId);
-        const email = String(input?.customerEmail || "");
-        const name = String(input?.customerName || "");
-        const origin = String(input?.origin || "");
-        const bp = BOOK_PRICES[bookId];
-        if (!bp) return trpcErr(res, "BAD_REQUEST", `Book ${bookId} not found in pricing`, 400);
-        const session = await s.checkout.sessions.create({
-          payment_method_types: ["card"],
-          line_items: [{
-            price_data: {
-              currency: "usd",
-              product_data: { name: bp.title, description: `Purchase of ${bp.title}` },
-              unit_amount: Math.round(bp.priceUSD * 100),
-            },
-            quantity: 1,
-          }],
-          mode: "payment",
-          customer_email: email,
-          client_reference_id: `book_${bookId}_${Date.now()}`,
-          metadata: { book_id: String(bookId), customer_email: email, customer_name: name },
-          success_url: `${origin}/books-store?session_id={CHECKOUT_SESSION_ID}&success=true`,
-          cancel_url: `${origin}/books-store?canceled=true`,
-          allow_promotion_codes: true,
-        });
-        // Best-effort purchase record; never block checkout on a write hiccup.
-        await withConn((c) =>
-          c.execute(
-            `INSERT INTO book_purchases (bookId, stripePaymentIntentId, customerEmail, customerName, amountCents, status, sessionId, createdAt, updatedAt)
-             VALUES (?, ?, ?, ?, ?, 'pending', ?, NOW(), NOW())`,
-            [bookId, (session.payment_intent as string) || null, email, name, Math.round(bp.priceUSD * 100), session.id]
-          )
-        ).catch((err: any) => console.error("[stripe] purchase record failed:", err?.message));
-        return trpcOk(res, { success: true, sessionUrl: session.url || "", sessionId: session.id });
-      }
       case "stripe.getCheckoutSession": {
-        const s = getStripe();
-        if (!s) return trpcErr(res, "BAD_REQUEST", "Stripe is not configured.", 400);
-        const session = await s.checkout.sessions.retrieve(String(input?.sessionId || ""));
+        const stripe = getStripe();
+        const sessionId = typeof input?.sessionId === "string" ? input.sessionId : "";
+        if (!stripe || !sessionId) return trpcErr(res, "BAD_REQUEST", "Session unavailable.", 400);
+        const session = await stripe.checkout.sessions.retrieve(sessionId);
         return trpcOk(res, {
           success: true,
           session: {
@@ -1728,6 +1625,102 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
             customerEmail: session.customer_email,
           },
         });
+      }
+      case "stripe.createCheckoutSession": {
+        const stripe = getStripe();
+        if (!stripe || !stripeConfigured()) return trpcErr(res, "BAD_REQUEST", "Stripe is not configured.", 400);
+        const BOOK_PRICES: Record<number, { title: string; priceUSD: number }> = {
+          1: { title: "Book One", priceUSD: 14.99 },
+          2: { title: "Book Two", priceUSD: 16.99 },
+          3: { title: "Book Three", priceUSD: 12.99 },
+        };
+        const bookId = Number(input?.bookId);
+        const email = typeof input?.customerEmail === "string" ? input.customerEmail : "";
+        const name = typeof input?.customerName === "string" ? input.customerName : "";
+        const origin = typeof input?.origin === "string" && input.origin ? input.origin : siteOrigin(req);
+        const bp = BOOK_PRICES[bookId];
+        if (!bp) return trpcErr(res, "BAD_REQUEST", "Book " + bookId + " not found in pricing", 400);
+        const session = await stripe.checkout.sessions.create({
+          payment_method_types: ["card"],
+          line_items: [{
+            price_data: { currency: "usd", product_data: { name: bp.title, description: "Purchase of " + bp.title }, unit_amount: Math.round(bp.priceUSD * 100) },
+            quantity: 1,
+          }],
+          mode: "payment",
+          customer_email: email,
+          client_reference_id: "book_" + bookId + "_" + Date.now(),
+          metadata: { book_id: String(bookId), customer_email: email, customer_name: name },
+          success_url: origin + "/books-store?session_id={CHECKOUT_SESSION_ID}&success=true",
+          cancel_url: origin + "/books-store?canceled=true",
+          allow_promotion_codes: true,
+        });
+        await withConn((c) =>
+          c.execute(
+            "INSERT INTO book_purchases (bookId, stripePaymentIntentId, customerEmail, customerName, amountCents, status, sessionId, createdAt, updatedAt) VALUES (?, ?, ?, ?, ?, 'pending', ?, NOW(), NOW())",
+            [bookId, (session.payment_intent as string) || null, email, name, Math.round(bp.priceUSD * 100), session.id]
+          )
+        ).catch((err: any) => console.error("[stripe] purchase record failed:", err?.message));
+        return trpcOk(res, { success: true, sessionUrl: session.url || "", sessionId: session.id });
+      }
+
+      // ─── Files (admin; scoped to the admin user) ───────────────────
+      case "files.list": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const rows = await withConn(async (c) => {
+          const [r]: any = await c.execute("SELECT * FROM files WHERE userId = ? ORDER BY createdAt DESC", [1]);
+          return r as any[];
+        });
+        return trpcOk(res, rows);
+      }
+      case "files.updateDescription": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const id = Number(input?.id);
+        if (!Number.isFinite(id)) return trpcErr(res, "BAD_REQUEST", "id required", 400);
+        const description = typeof input?.description === "string" ? input.description : "";
+        const row = await withConn(async (c) => {
+          await c.execute("UPDATE files SET description = ?, updatedAt = NOW() WHERE id = ? AND userId = ?", [description, id, 1]);
+          const [r]: any = await c.execute("SELECT * FROM files WHERE id = ? AND userId = ? LIMIT 1", [id, 1]);
+          return r[0] || null;
+        });
+        return trpcOk(res, row);
+      }
+      case "files.delete": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const id = Number(input?.id);
+        if (!Number.isFinite(id)) return trpcErr(res, "BAD_REQUEST", "id required", 400);
+        await withConn((c) => c.execute("DELETE FROM files WHERE id = ? AND userId = ?", [id, 1]));
+        return trpcOk(res, { success: true });
+      }
+      case "files.upload": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const filename = typeof input?.filename === "string" ? input.filename : "";
+        const mimeType = typeof input?.mimeType === "string" ? input.mimeType : "application/octet-stream";
+        const base64Data = typeof input?.base64Data === "string" ? input.base64Data : "";
+        if (!filename || !base64Data) return trpcErr(res, "BAD_REQUEST", "filename and base64Data required", 400);
+        const buffer = Buffer.from(base64Data, "base64");
+        if (buffer.length > 16 * 1024 * 1024) return trpcErr(res, "BAD_REQUEST", "File size exceeds 16MB limit", 400);
+        const baseUrl = (process.env.BUILT_IN_FORGE_API_URL || "").replace(/\/+$/, "");
+        const apiKey = process.env.BUILT_IN_FORGE_API_KEY || "";
+        if (!baseUrl || !apiKey) return trpcErr(res, "BAD_REQUEST", "Storage proxy not configured", 400);
+        const suffix = crypto.randomBytes(9).toString("base64url");
+        const safeFilename = filename.replace(/[^a-zA-Z0-9._-]/g, "_");
+        const fileKey = "user-1/files/" + safeFilename + "-" + suffix;
+        const uploadUrl = new URL("v1/storage/upload", baseUrl + "/");
+        uploadUrl.searchParams.set("path", fileKey);
+        const form = new FormData();
+        form.append("file", new Blob([new Uint8Array(buffer)], { type: mimeType }), safeFilename);
+        const up = await fetch(uploadUrl, { method: "POST", headers: { Authorization: "Bearer " + apiKey }, body: form });
+        if (!up.ok) return trpcErr(res, "INTERNAL_SERVER_ERROR", "Storage upload failed", 500);
+        const url = (await up.json()).url;
+        const row = await withConn(async (c) => {
+          const [ins]: any = await c.execute(
+            "INSERT INTO files (userId, filename, fileKey, url, mimeType, size, description, createdAt, updatedAt) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())",
+            [1, filename, fileKey, url, mimeType, buffer.length, input?.description ?? null]
+          );
+          const [rows]: any = await c.execute("SELECT * FROM files WHERE id = ? LIMIT 1", [ins.insertId]);
+          return rows[0] || null;
+        });
+        return trpcOk(res, row);
       }
 
       default:
@@ -1904,7 +1897,14 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
     case "resources.listAll":
       try {
         return await withConn(async (c) => {
-          const [rows]: any = await c.execute("SELECT * FROM resources ORDER BY createdAt DESC");
+          // listPublished must only return published resources; listAll (admin)
+          // returns everything. Both are bounded so the payload can't run away.
+          const onlyPublished = proc === "resources.listPublished";
+          const [rows]: any = await c.execute(
+            onlyPublished
+              ? "SELECT * FROM resources WHERE published = true ORDER BY createdAt DESC LIMIT 1000"
+              : "SELECT * FROM resources ORDER BY createdAt DESC LIMIT 1000"
+          );
           return { result: { data: superjson.serialize(rows) } };
         });
       } catch { return { result: { data: superjson.serialize([]) } }; }
@@ -1950,8 +1950,8 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
     case "posts.getFeatured":
       try {
         return await withConn(async (c) => {
-          const [rows]: any = await c.execute("SELECT id, slug, title, excerpt, pillar, published_at, created_at, word_count FROM posts WHERE featured = true AND published = true ORDER BY created_at DESC LIMIT 10");
-          return { result: { data: superjson.serialize((rows as any[]).map(toPostCard)) } };
+          const [rows]: any = await c.execute("SELECT id, slug, title, excerpt, pillar, readTime, readingTimeMinutes, publishedAt, createdAt FROM posts WHERE featured = true AND published = true ORDER BY createdAt DESC LIMIT 10");
+          return { result: { data: superjson.serialize((rows as any[]).map(toFeaturedPostCard)) } };
         });
       } catch { return { result: { data: superjson.serialize([]) } }; }
     case "community.testimonials.listAll":
@@ -2198,6 +2198,128 @@ ${items}
   }
 }
 
+// ---------------------------------------------------------------------------
+// LiveWell-series ebooks: Stripe Checkout + gated PDF delivery.
+//
+// The PDFs live in api/_ebooks/ (referenced via new URL(..., import.meta.url) so
+// Vercel's file tracer bundles them into the function) and are NEVER served as
+// static assets — the only way to fetch one is through /api/download with a
+// Stripe session that is actually paid. Price IDs come from env so flipping
+// test -> live keys needs no code change.
+// ---------------------------------------------------------------------------
+interface EbookConfig {
+  title: string;
+  priceEnv: string;
+  file: URL;
+  filename: string;
+}
+
+const EBOOKS: Record<string, EbookConfig> = {
+  "consider-the-birds": {
+    title: "Consider the Birds",
+    priceEnv: "STRIPE_PRICE_CONSIDER_THE_BIRDS",
+    file: new URL("./_ebooks/consider-the-birds.pdf", import.meta.url),
+    filename: "Consider-the-Birds.pdf",
+  },
+  "where-your-treasure-is": {
+    title: "Where Your Treasure Is",
+    priceEnv: "STRIPE_PRICE_WHERE_YOUR_TREASURE_IS",
+    file: new URL("./_ebooks/where-your-treasure-is.pdf", import.meta.url),
+    filename: "Where-Your-Treasure-Is.pdf",
+  },
+  "alone-in-a-crowded-church": {
+    title: "Alone in a Crowded Church",
+    priceEnv: "STRIPE_PRICE_ALONE_IN_A_CROWDED_CHURCH",
+    file: new URL("./_ebooks/alone-in-a-crowded-church.pdf", import.meta.url),
+    filename: "Alone-in-a-Crowded-Church.pdf",
+  },
+  "after-christendom": {
+    title: "After Christendom",
+    priceEnv: "STRIPE_PRICE_AFTER_CHRISTENDOM",
+    file: new URL("./_ebooks/after-christendom.pdf", import.meta.url),
+    filename: "After-Christendom.pdf",
+  },
+  "covenant": {
+    title: "Covenant",
+    priceEnv: "STRIPE_PRICE_COVENANT",
+    file: new URL("./_ebooks/covenant.pdf", import.meta.url),
+    filename: "Covenant.pdf",
+  },
+};
+
+const PRODUCTION_SITE_URL = "https://livewellbyjamesbell.co";
+
+function getStripe(): Stripe | null {
+  const key = process.env.STRIPE_SECRET_KEY?.trim();
+  if (!key) return null;
+  return new Stripe(key);
+}
+
+/** A real Stripe key is present (not the build-time placeholder). */
+function stripeConfigured(): boolean {
+  const key = process.env.STRIPE_SECRET_KEY?.trim() || "";
+  return key.startsWith("sk_") && key !== "sk_test_placeholder";
+}
+
+// Build absolute URLs from the request so checkout works on Vercel preview
+// deployments too, not just the production domain.
+function siteOrigin(req: VercelRequest): string {
+  const proto = (req.headers["x-forwarded-proto"] as string) || "https";
+  const host = (req.headers["x-forwarded-host"] as string) || req.headers.host || "";
+  return host ? `${proto}://${host}` : PRODUCTION_SITE_URL;
+}
+
+async function ebookCheckout(req: VercelRequest, res: VercelResponse) {
+  if (req.method !== "POST") return json(res, 405, { error: "method not allowed" });
+  const stripe = getStripe();
+  if (!stripe) return json(res, 503, { error: "Checkout is not configured yet." });
+  try {
+    const body = await readBody(req);
+    const slug = String(body?.slug || "");
+    const book = EBOOKS[slug];
+    if (!book) return json(res, 400, { error: "Unknown book." });
+    const priceId = process.env[book.priceEnv]?.trim();
+    if (!priceId) return json(res, 503, { error: "This book is not on sale yet." });
+    const origin = siteOrigin(req);
+    const session = await stripe.checkout.sessions.create({
+      mode: "payment",
+      line_items: [{ price: priceId, quantity: 1 }],
+      success_url: `${origin}/${slug}/thank-you?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${origin}/${slug}`,
+      metadata: { slug },
+    });
+    return json(res, 200, { url: session.url });
+  } catch (e: any) {
+    return json(res, 500, { error: String(e?.message || e) });
+  }
+}
+
+async function ebookDownload(req: VercelRequest, res: VercelResponse) {
+  const check = req.query.check === "1";
+  const stripe = getStripe();
+  const sessionId = String(req.query.session_id || "");
+  if (!stripe) return json(res, 503, { error: "not configured", paid: false, ok: false });
+  if (!sessionId) return json(res, 400, { error: "missing session_id", paid: false, ok: false });
+  try {
+    const session = await stripe.checkout.sessions.retrieve(sessionId);
+    const slug = String(session.metadata?.slug || "");
+    const book = EBOOKS[slug];
+    const paid = (session.payment_status === "paid" || session.status === "complete") && Boolean(book);
+    if (check) {
+      return json(res, 200, { ok: true, paid, slug, title: book?.title || null });
+    }
+    if (!paid) return json(res, 402, { error: "payment not completed" });
+    const data = readFileSync(book!.file);
+    res.setHeader("Content-Type", "application/pdf");
+    res.setHeader("Content-Disposition", `attachment; filename="${book!.filename}"`);
+    res.setHeader("Cache-Control", "private, no-store");
+    return res.status(200).send(data);
+  } catch (e: any) {
+    if (check) return json(res, 200, { ok: false, paid: false });
+    return json(res, 500, { error: String(e?.message || e) });
+  }
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   applyCors(req, res);
   if (req.method === "OPTIONS") {
@@ -2226,6 +2348,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/seed") return adminSeed(req, res);
     if (url === "/api/rss" || url === "/api/rss/substack") return substackRss(req, res);
     if (url === "/api/contact") return contactForm(req, res);
+    if (url === "/api/checkout") return ebookCheckout(req, res);
+    if (url === "/api/download") return ebookDownload(req, res);
     if (url === "/api/subscribe") return subscribe(req, res);
     if (url === "/api/pcn/signup") return pcnSignup(req, res);
     if (url === "/api/sitemap.xml" || url === "/api/sitemap") return sitemap(req, res);

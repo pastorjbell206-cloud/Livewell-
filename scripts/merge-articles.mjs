@@ -2,13 +2,13 @@ import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 
 /**
  * Merge the hand-written article library (make-articles.mjs output) with every
- * per-sub-pathway file the writing agents produce in client/public/articles/,
+ * per-sub-pathway file the writing agents produce in client/src/data/articles/,
  * de-duplicating by slug, into the single client/public/article-library.json
  * that the admin loader reads. Idempotent.
  */
 const root = new URL("../client/public/", import.meta.url);
 const libPath = new URL("article-library.json", root);
-const dir = new URL("articles/", root);
+const dir = new URL("../client/src/data/articles/", import.meta.url);
 
 const bySlug = new Map();
 const add = (arr, source) => {

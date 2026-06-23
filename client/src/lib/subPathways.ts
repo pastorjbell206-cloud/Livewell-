@@ -85,14 +85,6 @@ export function subPathwaysForPillar(pillar: string | null | undefined): SubPath
   return PILLAR_SUBPATHWAYS[pillar.trim()] ?? [];
 }
 
-export function subPathwaySlug(pillar: string, label: string): string | undefined {
-  return subPathwaysForPillar(pillar).find((s) => s.label === label)?.slug;
-}
-
-export function subPathwayLabel(pillar: string, slug: string): string | undefined {
-  return subPathwaysForPillar(pillar).find((s) => s.slug === slug)?.label;
-}
-
 /** Listing URL for a pillar (+ optional sub-pathway slug). */
 export function pillarListingUrl(pillar: string, subSlug?: string): string {
   const p = PILLAR_SLUGS[pillar] ?? encodeURIComponent(pillar);

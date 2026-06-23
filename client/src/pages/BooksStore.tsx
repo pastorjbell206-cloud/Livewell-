@@ -2,7 +2,7 @@ import { useState } from "react";
 import { trpc } from "@/lib/trpc";
 import { useToast } from "@/contexts/ToastContext";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, ExternalLink, Loader2, Check } from "lucide-react";
+import { ShoppingCart, ExternalLink, Loader2 } from "lucide-react";
 import Layout from "@/components/Layout";
 
 export default function BooksStore() {

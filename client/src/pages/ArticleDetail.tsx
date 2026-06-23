@@ -8,10 +8,11 @@
  * - Body width is 680px (var(--w-prose)) per CLAUDE.md
  * - Bookmark + reading progress persist in localStorage
  */
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { useLocation, useParams } from "wouter";
 import { Streamdown } from "streamdown";
-import { ArrowLeft, Bookmark, Clock, Share2, User } from "lucide-react";
+import { ArrowLeft, Bookmark, Share2, User } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import ReadingProgressBar from "@/components/ReadingProgressBar";
@@ -22,6 +23,7 @@ import { CitationCopy } from "@/components/CitationCopy";
 import { AudienceShare } from "@/components/AudienceShare";
 import { AudienceLabel } from "@/components/AudienceLabel";
 import { TrackChip } from "@/components/TrackChip";
+import { GeneratedHero } from "@/components/GeneratedHero";
 import { trpc } from "@/lib/trpc";
 import { pillarForPost } from "@/lib/taxonomy";
 import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
@@ -135,8 +137,266 @@ function BookmarkButton({ slug }: { slug: string }) {
   );
 }
 
+/**
+ * ShareableQuote — every blockquote in an essay renders as a pull-quote the
+ * reader can lift and share. Reads its own rendered text (so it survives
+ * whatever markup Streamdown puts inside), then hands it to the native share
+ * sheet, falling back to a clipboard copy with attribution and the article URL.
+ */
+function ShareableQuote({
+  children,
+  shareTitle,
+  shareUrl,
+}: {
+  children?: React.ReactNode;
+  shareTitle: string;
+  shareUrl: string;
+}) {
+  const textRef = useRef<HTMLDivElement>(null);
+  const [copied, setCopied] = useState(false);
+
+  const onShare = async () => {
+    const quote = textRef.current?.textContent?.trim() ?? "";
+    if (!quote) return;
+    const attributed = `"${quote}" — James Bell`;
+    if (typeof navigator !== "undefined" && navigator.share) {
+      try {
+        await navigator.share({ title: shareTitle, text: attributed, url: shareUrl });
+        return;
+      } catch {
+        // user dismissed — fall through to clipboard
+      }
+    }
+    try {
+      await navigator.clipboard.writeText(`${attributed}\n${shareUrl}`);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1800);
+    } catch {
+      // clipboard unavailable
+    }
+  };
+
+  return (
+    <blockquote className="quote-share">
+      <div className="quote-share__text" ref={textRef}>
+        {children}
+      </div>
+      <button
+        type="button"
+        className="quote-share__btn"
+        onClick={onShare}
+        aria-label="Share this quote"
+      >
+        <Share2 size={13} aria-hidden />
+        {copied ? "Copied" : "Share this quote"}
+      </button>
+    </blockquote>
+  );
+}
+
+/**
+ * QuoteSelectionShare — Medium-style "share any quote." When the reader
+ * highlights text inside the essay body, a small Share button floats above the
+ * selection. Desktop only: phones already surface a native selection menu, and
+ * a second floating control there would collide with it.
+ */
+function QuoteSelectionShare({
+  title,
+  url,
+  bodyRef,
+}: {
+  title: string;
+  url: string;
+  bodyRef: React.RefObject<HTMLDivElement | null>;
+}) {
+  const [pop, setPop] = useState<{ text: string; top: number; left: number } | null>(null);
+  const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    const fine =
+      typeof window !== "undefined" &&
+      typeof window.matchMedia === "function" &&
+      window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    if (!fine) return;
+
+    const update = () => {
+      const sel = window.getSelection();
+      if (!sel || sel.isCollapsed || sel.rangeCount === 0) { setPop(null); return; }
+      const text = sel.toString().trim();
+      const range = sel.getRangeAt(0);
+      const within = bodyRef.current && bodyRef.current.contains(range.commonAncestorContainer);
+      if (!within || text.length < 12) { setPop(null); return; }
+      const rect = range.getBoundingClientRect();
+      if (!rect || rect.width === 0) { setPop(null); return; }
+      setCopied(false);
+      setPop({ text, top: rect.top, left: rect.left + rect.width / 2 });
+    };
+    const hide = () => setPop(null);
+
+    document.addEventListener("mouseup", update);
+    document.addEventListener("keyup", update);
+    document.addEventListener("scroll", hide, true);
+    return () => {
+      document.removeEventListener("mouseup", update);
+      document.removeEventListener("keyup", update);
+      document.removeEventListener("scroll", hide, true);
+    };
+  }, [bodyRef]);
+
+  if (!pop) return null;
+
+  const share = async () => {
+    const attributed = `“${pop.text}” — James Bell`;
+    if (typeof navigator !== "undefined" && navigator.share) {
+      try { await navigator.share({ title, text: attributed, url }); setPop(null); return; } catch { /* fall through to copy */ }
+    }
+    try {
+      await navigator.clipboard.writeText(`${attributed}\n${url}`);
+      setCopied(true);
+      setTimeout(() => setPop(null), 1200);
+    } catch { /* ignore */ }
+  };
+
+  return createPortal(
+    <div style={{ position: "fixed", top: Math.max(8, pop.top - 46), left: pop.left, transform: "translateX(-50%)", zIndex: 1100 }}>
+      <button
+        type="button"
+        onMouseDown={(e) => e.preventDefault()}
+        onClick={share}
+        style={{ display: "inline-flex", alignItems: "center", gap: "7px", background: "var(--charcoal)", color: "var(--bone)", border: "none", borderRadius: "var(--radius-sm)", padding: "8px 14px", fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.04em", cursor: "pointer", boxShadow: "var(--shadow-modal)", whiteSpace: "nowrap" }}
+      >
+        <Share2 size={13} aria-hidden /> {copied ? "Copied" : "Share quote"}
+      </button>
+    </div>,
+    document.body
+  );
+}
+
+function slugifyHeading(text: string, index: number) {
+  const base = text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .slice(0, 60);
+  return base || `section-${index + 1}`;
+}
+
+/**
+ * TableOfContents — a slim, collapsible "In this essay" card for long pieces.
+ *
+ * Reads the section headings Streamdown rendered into the body, assigns stable
+ * anchor ids, and links to them. Renders nothing on short essays (fewer than
+ * three section headings), so the reading experience is untouched where a
+ * contents list would only be noise. No layout grid, no right rail: the
+ * single-column measure stays exactly as it was.
+ */
+function TableOfContents({
+  bodyRef,
+  contentKey,
+}: {
+  bodyRef: React.RefObject<HTMLDivElement | null>;
+  contentKey: string;
+}) {
+  const [items, setItems] = useState<{ id: string; text: string }[]>([]);
+
+  useEffect(() => {
+    const root = bodyRef.current;
+    if (!root) return;
+    const seen = new Set<string>();
+    const headings = Array.from(root.querySelectorAll("h2")).map((node, i) => {
+      const text = node.textContent?.trim() || `Section ${i + 1}`;
+      let id = node.id || slugifyHeading(text, i);
+      while (seen.has(id)) id = `${id}-${i}`;
+      seen.add(id);
+      node.id = id;
+      node.style.scrollMarginTop = "96px";
+      return { id, text };
+    });
+    setItems(headings);
+  }, [bodyRef, contentKey]);
+
+  if (items.length < 3) return null;
+
+  const handleJump = (e: React.MouseEvent, id: string) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (typeof history !== "undefined") {
+      history.replaceState(null, "", `#${id}`);
+    }
+  };
+
+  return (
+    <nav
+      aria-label="In this essay"
+      style={{ maxWidth: "var(--w-prose)", margin: "0 auto var(--s-5)" }}
+    >
+      <details
+        open
+        style={{
+          background: "var(--card)",
+          border: "1px solid var(--border)",
+          borderLeft: "2px solid var(--mustard)",
+          borderRadius: "var(--radius-sm)",
+          padding: "16px 20px",
+        }}
+      >
+        <summary
+          style={{
+            fontFamily: "var(--U)",
+            fontSize: "11px",
+            fontWeight: 600,
+            textTransform: "uppercase",
+            letterSpacing: "0.18em",
+            color: "var(--mustard-text)",
+            cursor: "pointer",
+          }}
+        >
+          In this essay
+        </summary>
+        <ol
+          style={{
+            listStyle: "none",
+            margin: "16px 0 0",
+            padding: 0,
+            display: "flex",
+            flexDirection: "column",
+            gap: "10px",
+          }}
+        >
+          {items.map(item => (
+            <li key={item.id}>
+              <a
+                href={`#${item.id}`}
+                onClick={e => handleJump(e, item.id)}
+                style={{
+                  fontFamily: "var(--B)",
+                  fontSize: "15px",
+                  lineHeight: 1.4,
+                  color: "var(--ink-muted)",
+                  textDecoration: "none",
+                  transition: "color 0.2s",
+                }}
+                onMouseEnter={e => (e.currentTarget.style.color = "var(--ink)")}
+                onMouseLeave={e =>
+                  (e.currentTarget.style.color = "var(--ink-muted)")
+                }
+              >
+                {item.text}
+              </a>
+            </li>
+          ))}
+        </ol>
+      </details>
+    </nav>
+  );
+}
+
 export default function ArticleDetail() {
   const { slug } = useParams<{ slug: string }>();
+  const bodyRef = useRef<HTMLDivElement>(null);
   const [, navigate] = useLocation();
   const postQuery = trpc.posts.getBySlug.useQuery(
     { slug: slug ?? "" },
@@ -377,10 +637,10 @@ export default function ArticleDetail() {
           </div>
         </section>
 
-        {/* HERO IMAGE */}
-        {post.coverImage && (
-          <section style={{ padding: "var(--s-5) var(--s-4) 0" }}>
-            <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+        {/* HERO IMAGE — real cover when present, on-brand generated art otherwise */}
+        <section style={{ padding: "var(--s-5) var(--s-4) 0" }}>
+          <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+            {post.coverImage ? (
               <img
                 src={post.coverImage}
                 alt={post.title}
@@ -397,14 +657,23 @@ export default function ArticleDetail() {
                   display: "block",
                 }}
               />
-            </div>
-          </section>
-        )}
+            ) : (
+              <GeneratedHero
+                seed={post.slug}
+                pillarId={pillarForPost(post)?.id}
+                title={post.title}
+              />
+            )}
+          </div>
+        </section>
 
         {/* BODY */}
         <section style={{ padding: "var(--s-6) var(--s-4)" }}>
+          <QuoteSelectionShare title={post.title} url={canonical} bodyRef={bodyRef} />
+          <TableOfContents bodyRef={bodyRef} contentKey={post.slug} />
           <div
             className="article-body"
+            ref={bodyRef}
             style={{
               maxWidth: "var(--w-prose)",
               margin: "0 auto",
@@ -415,7 +684,17 @@ export default function ArticleDetail() {
             }}
           >
             {post.body ? (
-                                                        <Streamdown>{post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}</Streamdown>
+              <Streamdown
+                components={{
+                  blockquote: ({ children }: { children?: React.ReactNode }) => (
+                    <ShareableQuote shareTitle={post.title} shareUrl={canonical}>
+                      {children}
+                    </ShareableQuote>
+                  ),
+                }}
+              >
+                {post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}
+              </Streamdown>
             ) : (
               <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
                 This article is in preparation.
@@ -456,11 +735,7 @@ export default function ArticleDetail() {
           }}
         >
           <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-            <NewsletterSignup
-              variant="inline"
-              title="Get new essays in your inbox"
-              description="Long-form theology delivered the way you'd want to read it: unhurried, weighted, no spam."
-            />
+            <NewsletterSignup variant="inline" source="article" />
           </div>
         </section>
 

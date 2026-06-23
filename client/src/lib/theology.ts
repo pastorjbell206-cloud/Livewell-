@@ -131,7 +131,3 @@ export const DOCTRINE_INDEX: DoctrineIndexEntry[] = [
   // Pillar 3 — Biblical theology
   { slug: "covenant-frameworks", pillar: "Biblical", title: "How the Whole Story Fits", blurb: "Covenant theology, dispensationalism, and progressive covenantalism as three ways to read the one story.", triage: "second-order", ready: true },
 ];
-
-export function triageOf(t: Triage): TriageMeta {
-  return TRIAGE[t];
-}

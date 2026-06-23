@@ -10,6 +10,7 @@ import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import GatedDownload from "@/components/GatedDownload";
+import { DONATE_HREF, DONATE_BLURB } from "@/lib/donate";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const prose = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
@@ -27,7 +28,7 @@ interface Session {
   scriptureStudy?: { ref: string; note: string }[];
   goingDeeper?: string;
   caseStudy?: string;
-  memoryVerse?: string;
+  memoryVerse?: { ref: string; text: string };
   devotional?: DevoDay[];
 }
 interface Guide {
@@ -49,10 +50,34 @@ interface Guide {
 const ALL_TABS = ["Leader", "Participant", "Devotional", "Facilitator", "Reference", "Promo"] as const;
 type Tab = typeof ALL_TABS[number];
 
-const card = { background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", marginBottom: "var(--s-3)" } as const;
-const h3 = { fontFamily: "var(--F)", fontSize: "22px", fontWeight: 400, color: "var(--ink)", marginBottom: "10px" } as const;
-const lbl = { fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase" as const, color: "var(--ink-muted)", marginBottom: "6px" };
-const body = { fontFamily: "var(--B)", fontSize: "15.5px", lineHeight: 1.7, color: "var(--ink)" } as const;
+const card = { background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-5) var(--s-4)", marginBottom: "var(--s-4)", boxShadow: "0 1px 3px rgba(20,17,12,0.05)" } as const;
+const h3 = { fontFamily: "var(--F)", fontSize: "clamp(23px, 3vw, 29px)", fontWeight: 400, letterSpacing: "-0.015em", lineHeight: 1.2, color: "var(--ink)", marginBottom: "14px" } as const;
+const lbl = { fontFamily: "var(--U)", fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" as const, color: "var(--mustard-text)", marginBottom: "10px" };
+const body = { fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.8, color: "var(--ink)" } as const;
+
+/**
+ * Turn a prose field into readable paragraphs. Honors explicit blank-line
+ * breaks; when the source is one unbroken block (most of the toolkit prose),
+ * it groups sentences into paragraphs of ~3 so the page reads like a document,
+ * not a wall.
+ */
+function toParagraphs(text: string): string[] {
+  const explicit = text.split(/\n\n+/).map((s) => s.trim()).filter(Boolean);
+  if (explicit.length > 1) return explicit;
+  const sentences = text.match(/[^.!?]+[.!?]+(?:["”’)]+)?\s*/g);
+  if (!sentences || sentences.length <= 3) return [text.trim()];
+  const groups: string[] = [];
+  let buf: string[] = [];
+  for (const s of sentences) {
+    buf.push(s.trim());
+    if (buf.length >= 3) { groups.push(buf.join(" ")); buf = []; }
+  }
+  if (buf.length) {
+    if (buf.length === 1 && groups.length) groups[groups.length - 1] += " " + buf[0];
+    else groups.push(buf.join(" "));
+  }
+  return groups;
+}
 
 export default function StudyGuide() {
   const [, params] = useRoute("/studyguides/:slug");
@@ -74,7 +99,7 @@ export default function StudyGuide() {
   const hasDevotional = !!data?.sessions.some((s) => s.devotional && s.devotional.length > 0);
   const tabs = useMemo(() => ALL_TABS.filter((t) => t !== "Devotional" || hasDevotional), [hasDevotional]);
   const para = (text: string, st: React.CSSProperties = {}) =>
-    text.split("\n\n").map((p, i) => <p key={i} style={{ ...body, marginBottom: "12px", maxWidth: "68ch", ...st }}>{p}</p>);
+    toParagraphs(text).map((p, i) => <p key={i} style={{ ...body, marginBottom: "16px", maxWidth: "68ch", ...st }}>{p}</p>);
 
   return (
     <Layout>
@@ -91,6 +116,12 @@ export default function StudyGuide() {
                 <GatedDownload href={`/downloads/studyguides/${slug}-leader.pdf`} label="Leader's Guide (PDF)" source={source} />
                 <GatedDownload href={`/downloads/studyguides/${slug}-participant.pdf`} label="Participant Handout (PDF)" source={source} />
               </div>
+              <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "rgba(245,240,230,0.7)", maxWidth: "56ch", marginTop: "16px" }}>
+                {DONATE_BLURB}{" "}
+                <a href={DONATE_HREF} style={{ color: "var(--mustard)", textDecoration: "underline", textUnderlineOffset: "3px", fontWeight: 600 }}>
+                  Give a gift →
+                </a>
+              </p>
             </>
           )}
         </div>
@@ -125,10 +156,13 @@ export default function StudyGuide() {
                   <div style={lbl}>Session {s.n} · {s.timing.map((t) => `${t.segment} ${t.minutes}m`).join(" · ")}</div>
                   <h3 style={h3}>{s.title}</h3>
                   <p style={{ ...body, fontStyle: "italic", marginBottom: "12px" }}>Aim: {s.aim}</p>
-                  <Link href={`/writing/${s.essaySlug}`} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)" }}>Read the essay for this session →</Link>
+                  {s.essaySlug && <Link href={`/writing/${s.essaySlug}`} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)" }}>Read the essay for this session →</Link>}
                   {s.teaching && (<><div style={{ ...lbl, marginTop: "16px" }}>Teaching notes</div>{para(s.teaching)}</>)}
-                  <div style={{ ...lbl, marginTop: "16px" }}>Key Scripture</div>
-                  <p style={body}>{s.keyScripture.ref} — {s.keyScripture.why}</p>
+                  <div style={{ ...lbl, marginTop: "24px" }}>Key Scripture</div>
+                  <div style={{ background: "var(--bone-warm)", borderLeft: "3px solid var(--mustard)", padding: "14px 18px", borderRadius: "0 var(--radius-sm) var(--radius-sm) 0" }}>
+                    <p style={{ ...body, fontFamily: "var(--F)", fontSize: "19px", fontWeight: 500, marginBottom: "4px" }}>{s.keyScripture.ref}</p>
+                    <p style={{ ...body, color: "var(--ink-muted)", fontSize: "15px" }}>{s.keyScripture.why}</p>
+                  </div>
                   {s.scriptureStudy && s.scriptureStudy.length > 0 && (
                     <>
                       <div style={{ ...lbl, marginTop: "16px" }}>The passage, worked through</div>
@@ -160,7 +194,7 @@ export default function StudyGuide() {
                       {para(s.goingDeeper)}
                     </div>
                   )}
-                  {s.memoryVerse && (<><div style={{ ...lbl, marginTop: "16px" }}>Memory verse</div><p style={{ ...body, fontFamily: "var(--F)", fontSize: "17px" }}>{s.memoryVerse}</p></>)}
+                  {s.memoryVerse && (<><div style={{ ...lbl, marginTop: "16px" }}>Memory verse</div><p style={{ ...body, fontFamily: "var(--F)", fontSize: "17px" }}>{s.memoryVerse.text} <span style={{ color: "var(--ink-muted)" }}>— {s.memoryVerse.ref}</span></p></>)}
                   <div style={{ ...lbl, marginTop: "16px" }}>Closing prayer</div>
                   <p style={{ ...body, fontFamily: "var(--F)", fontSize: "17px", fontStyle: "italic" }}>{s.closingPrayer}</p>
                 </div>
@@ -173,7 +207,7 @@ export default function StudyGuide() {
                   <p style={{ ...body, marginBottom: "12px" }}>{s.summary}</p>
                   <div style={lbl}>Key Scripture</div>
                   <p style={{ ...body, marginBottom: "12px" }}>{s.keyScripture.ref}</p>
-                  {s.memoryVerse && (<><div style={lbl}>Memory verse</div><p style={{ ...body, fontFamily: "var(--F)", fontSize: "17px", marginBottom: "12px" }}>{s.memoryVerse}</p></>)}
+                  {s.memoryVerse && (<><div style={lbl}>Memory verse</div><p style={{ ...body, fontFamily: "var(--F)", fontSize: "17px", marginBottom: "12px" }}>{s.memoryVerse.text} <span style={{ color: "var(--ink-muted)" }}>— {s.memoryVerse.ref}</span></p></>)}
                   <div style={lbl}>Reflect</div>
                   {s.reflection.map((r, i) => <p key={i} style={{ ...body, marginBottom: "6px" }}>{i + 1}. {r}</p>)}
                   <div style={{ ...lbl, marginTop: "12px" }}>This week, try this</div>

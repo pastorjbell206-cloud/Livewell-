@@ -9,6 +9,7 @@ import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { toParagraphs } from "@/lib/prose";
 
 interface Tradition {
   name: string; family: string; born: string; treasures: string;
@@ -68,7 +69,7 @@ export default function TheologyTraditions() {
         <>
           <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-4)" }}>
             <div style={wrap}>
-              {data.intro.split("\n\n").map((p, i) => (
+              {toParagraphs(data.intro).map((p, i) => (
                 <p key={i} style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "68ch", marginBottom: "14px" }}>{p}</p>
               ))}
             </div>
@@ -79,7 +80,7 @@ export default function TheologyTraditions() {
             <div style={wrap}>
               <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>What they all share</div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.5vw, 32px)", fontWeight: 400, color: "var(--ink)", marginBottom: "var(--s-3)" }}>The one faith underneath</h2>
-              {data.sharedCore.split("\n\n").map((p, i) => (
+              {toParagraphs(data.sharedCore).map((p, i) => (
                 <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink-muted)", maxWidth: "68ch", marginBottom: "12px" }}>{p}</p>
               ))}
             </div>

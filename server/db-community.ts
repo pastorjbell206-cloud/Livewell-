@@ -14,7 +14,7 @@ export async function createComment(data: InsertComment): Promise<Comment> {
     return result[0];
   } catch (error: any) {
     console.error("[DB] Error creating comment:", error);
-    throw new Error(error.message || "Failed to create comment");
+    throw new Error(error.message || "Failed to create comment", { cause: error });
   }
 }
 
@@ -30,7 +30,7 @@ export async function listCommentsByPost(postId: number, onlyApproved = true): P
     return await query;
   } catch (error: any) {
     console.error("[DB] Error listing comments:", error);
-    throw new Error(error.message || "Failed to list comments");
+    throw new Error(error.message || "Failed to list comments", { cause: error });
   }
 }
 
@@ -46,7 +46,7 @@ export async function listAllComments(onlyUnapproved = false): Promise<Comment[]
     return await query;
   } catch (error: any) {
     console.error("[DB] Error listing all comments:", error);
-    throw new Error(error.message || "Failed to list comments");
+    throw new Error(error.message || "Failed to list comments", { cause: error });
   }
 }
 
@@ -64,7 +64,7 @@ export async function approveComment(commentId: number): Promise<Comment> {
     return result[0];
   } catch (error: any) {
     console.error("[DB] Error approving comment:", error);
-    throw new Error(error.message || "Failed to approve comment");
+    throw new Error(error.message || "Failed to approve comment", { cause: error });
   }
 }
 
@@ -76,7 +76,7 @@ export async function deleteComment(commentId: number): Promise<void> {
     await db.delete(comments).where(eq(comments.id, commentId));
   } catch (error: any) {
     console.error("[DB] Error deleting comment:", error);
-    throw new Error(error.message || "Failed to delete comment");
+    throw new Error(error.message || "Failed to delete comment", { cause: error });
   }
 }
 
@@ -92,7 +92,7 @@ export async function createTestimonial(data: InsertTestimonial): Promise<Testim
     return result[0];
   } catch (error: any) {
     console.error("[DB] Error creating testimonial:", error);
-    throw new Error(error.message || "Failed to create testimonial");
+    throw new Error(error.message || "Failed to create testimonial", { cause: error });
   }
 }
 
@@ -108,7 +108,7 @@ export async function listTestimonials(onlyApproved = true): Promise<Testimonial
     return await query;
   } catch (error: any) {
     console.error("[DB] Error listing testimonials:", error);
-    throw new Error(error.message || "Failed to list testimonials");
+    throw new Error(error.message || "Failed to list testimonials", { cause: error });
   }
 }
 
@@ -123,7 +123,7 @@ export async function listFeaturedTestimonials(): Promise<Testimonial[]> {
       .where(and(eq(testimonials.approved, true), eq(testimonials.featured, true)));
   } catch (error: any) {
     console.error("[DB] Error listing featured testimonials:", error);
-    throw new Error(error.message || "Failed to list featured testimonials");
+    throw new Error(error.message || "Failed to list featured testimonials", { cause: error });
   }
 }
 
@@ -141,7 +141,7 @@ export async function approveTestimonial(testimonialId: number): Promise<Testimo
     return result[0];
   } catch (error: any) {
     console.error("[DB] Error approving testimonial:", error);
-    throw new Error(error.message || "Failed to approve testimonial");
+    throw new Error(error.message || "Failed to approve testimonial", { cause: error });
   }
 }
 
@@ -159,7 +159,7 @@ export async function toggleFeaturedTestimonial(testimonialId: number, featured:
     return result[0];
   } catch (error: any) {
     console.error("[DB] Error toggling featured testimonial:", error);
-    throw new Error(error.message || "Failed to toggle featured testimonial");
+    throw new Error(error.message || "Failed to toggle featured testimonial", { cause: error });
   }
 }
 
@@ -171,6 +171,6 @@ export async function deleteTestimonial(testimonialId: number): Promise<void> {
     await db.delete(testimonials).where(eq(testimonials.id, testimonialId));
   } catch (error: any) {
     console.error("[DB] Error deleting testimonial:", error);
-    throw new Error(error.message || "Failed to delete testimonial");
+    throw new Error(error.message || "Failed to delete testimonial", { cause: error });
   }
 }

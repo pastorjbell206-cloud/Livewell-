@@ -120,6 +120,208 @@ export default function Books() {
         </div>
       </section>
 
+      {/* NEW EBOOK — After Christendom (flagship, standalone funnel page) */}
+      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/after-christendom" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img
+              src="/books/after-christendom.svg"
+              alt="After Christendom book cover"
+              width={120}
+              height={181}
+              style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }}
+            />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
+                New Ebook · $9.99 · The Post-Christian Church
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                After Christendom
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
+                How to follow Jesus now that the culture has stopped pretending to be Christian. What is dying is
+                not the faith but Christendom. Read the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* NEW EBOOK — Covenant (marriage, standalone funnel page) */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/covenant" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img
+              src="/books/covenant.svg"
+              alt="Covenant book cover"
+              width={120}
+              height={181}
+              style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }}
+            />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
+                New Ebook · $9.99 · On Marriage
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                Covenant
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", margin: 0 }}>
+                Why marriage is a promise, not a deal. The culture sold us a contract and called it romance. Read
+                the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* NEW RELEASE — featured ebook (standalone product page) */}
+      <section style={{ background: "var(--mustard)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/books/when-god-bless-america" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img
+              src="/books/when-god-bless-america.jpg"
+              alt="When God Bless America Replaces Thy Kingdom Come"
+              width={120} height={181}
+              style={{ width: "96px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.3)", flex: "0 0 auto" }}
+            />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--ink)", opacity: 0.7 }}>
+                New Release · Ebook
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                When God Bless America Replaces Thy Kingdom Come
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink)", opacity: 0.85, margin: 0 }}>
+                How Patriotism Became Our Practical Savior — available now for $8.99.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* NEW EBOOK FOR PASTORS — sales funnel */}
+      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/alone-in-a-crowded-church" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img
+              src="/books/alone-in-a-crowded-church.svg"
+              alt="Alone in a Crowded Church book cover"
+              width={120}
+              height={181}
+              style={{ width: "92px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.35)", flex: "0 0 auto" }}
+            />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
+                New Ebook · $9.99 · For Pastors
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                Alone in a Crowded Church
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
+                Why pastors burn out in silence, and how brotherhood brings them back. Read the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* THE LIVEWELL SERIES — two new ebooks (top-level product pages) */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+          <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)", marginBottom: "8px" }}>
+            The LiveWell Series · Ebooks
+          </div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 400, margin: "0 0 8px", color: "var(--ink)" }}>
+            Two books, one hinge — anxiety and money
+          </h2>
+          <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", margin: "0 0 28px" }}>
+            In Matthew 6, “you cannot serve God and money” comes one verse before “therefore do not be anxious.” The two books read the two halves of the same teaching.
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "var(--s-4)" }}>
+            {[
+              { slug: "consider-the-birds", cover: "/books/consider-the-birds.jpg", title: "Consider the Birds", sub: "What the Bible Says About Anxiety, and the Peace Christ Gives Instead" },
+              { slug: "where-your-treasure-is", cover: "/books/where-your-treasure-is.jpg", title: "Where Your Treasure Is", sub: "What the Bible Says About Money, and the Heart It Means to Free" },
+            ].map((b) => (
+              <Link key={b.slug} href={`/${b.slug}`} style={{ textDecoration: "none", color: "inherit", display: "block" }}>
+                <img src={b.cover} alt={`${b.title} — cover`} width={1600} height={2560}
+                  style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 12px 32px rgba(0,0,0,.25)" }} />
+                <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", margin: "14px 0 4px", lineHeight: 1.2 }}>{b.title}</h3>
+                <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 8px", lineHeight: 1.4 }}>{b.sub}</p>
+                <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)", letterSpacing: "0.04em" }}>Get the ebook — $9.99 →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* NEW RELEASES — three new ebooks */}
+      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+          <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)", marginBottom: "8px" }}>
+            New Releases · Ebooks
+          </div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 400, margin: "0 0 28px", color: "var(--bone)" }}>
+            Three new books, available now
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "var(--s-4)" }}>
+            {[
+              { slug: "believe", cover: "/books/believe.jpg", title: "Believe", sub: "The Rational Case for Christian Faith" },
+              { slug: "deconstruction-of-faith", cover: "/books/deconstruction-of-faith.jpg", title: "The Deconstruction of Faith", sub: "Why People Are Leaving the Church — and What Comes After" },
+              { slug: "raising-believers", cover: "/books/raising-believers.jpg", title: "Raising Believers", sub: "Christian Parenting in a Post-Christian World" },
+            ].map((b) => (
+              <Link key={b.slug} href={`/books/${b.slug}`} style={{ textDecoration: "none", color: "inherit", display: "block" }}>
+                <img src={b.cover} alt={`${b.title} — cover`} width={1600} height={2560}
+                  style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 12px 32px rgba(0,0,0,.4)" }} />
+                <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--bone)", margin: "14px 0 4px", lineHeight: 1.2 }}>{b.title}</h3>
+                <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "rgba(245,240,230,.7)", margin: "0 0 8px", lineHeight: 1.4 }}>{b.sub}</p>
+                <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard)", letterSpacing: "0.04em" }}>Get the ebook →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* NEW RELEASES — five new ebooks */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+          <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)", marginBottom: "8px" }}>
+            New Releases · Ebooks
+          </div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 400, margin: "0 0 28px", color: "var(--ink)" }}>
+            Five more books, available now
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "var(--s-4)" }}>
+            {[
+              { slug: "the-monster-in-the-mirror", cover: "/books/the-monster-in-the-mirror.jpg", title: "The Monster in the Mirror", sub: "Why Every Generation Gets the Bible Wrong, Why Yours Is No Different, and What to Do About It" },
+              { slug: "the-reliability-of-scripture", cover: "/books/the-reliability-of-scripture.jpg", title: "The Reliability of Scripture", sub: "Why We Can Trust the Bible We Have" },
+              { slug: "bible-and-homosexuality", cover: "/books/bible-and-homosexuality.jpg", title: "What Does the Bible Really Say About Homosexuality?", sub: "Scripture, Same-Sex Relationships, and the Church's Christ-Centered Response" },
+              { slug: "bible-and-transgender-identity", cover: "/books/bible-and-transgender-identity.jpg", title: "What Does the Bible Say About Transgender Identity?", sub: "Gender, the Body, and the Church's Christ-Centered Response" },
+              { slug: "critical-race-theory-biblical", cover: "/books/critical-race-theory-biblical.jpg", title: "Is Critical Race Theory Biblical?", sub: "Race, Justice, and What the Church Actually Owes the World" },
+            ].map((b) => (
+              <Link key={b.slug} href={`/books/${b.slug}`} style={{ textDecoration: "none", color: "inherit", display: "block" }}>
+                <img src={b.cover} alt={`${b.title} — cover`} width={1600} height={2560}
+                  style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 12px 32px rgba(0,0,0,.25)" }} />
+                <h3 style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, color: "var(--ink)", margin: "14px 0 4px", lineHeight: 1.2 }}>{b.title}</h3>
+                <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 8px", lineHeight: 1.4 }}>{b.sub}</p>
+                <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)", letterSpacing: "0.04em" }}>Get the ebook →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* READING PATHS */}
       <section
         style={{

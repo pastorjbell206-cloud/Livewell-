@@ -46,6 +46,36 @@ export default function LeadershipHub() {
         </div>
       </section>
 
+      {/* TRAINING BOOKLETS — the Hard Issues Series, surfaced from Resources */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={wrap}>
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>Elder &amp; deacon training</div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", lineHeight: 1.1, marginBottom: "12px" }}>
+            The Hard Issues Series
+          </h2>
+          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "var(--s-4)" }}>
+            Ten free booklets for the men who carry a church — five on the office of elder, five on leading and governing. Pair them with the readiness assessments above: train the team, then take an honest measure of where it stands. Free PDF and EPUB; a gift to PCN is optional.
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "16px" }}>
+            <Link href="/resources/hard-issues-series" style={{ ...card, borderLeft: "2px solid var(--mustard)" }}>
+              <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>Part One · Eldership</div>
+              <div style={{ fontFamily: "var(--F)", fontSize: "22px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px", lineHeight: 1.2 }}>What elders are for, and how to find them</div>
+              <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>The job, the qualifications, finding and installing elders, handling disagreement, and the hardest act of all — removing one. Five booklets.</p>
+            </Link>
+            <Link href="/resources/hard-issues-series" style={{ ...card, borderLeft: "2px solid var(--mustard)" }}>
+              <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>Part Two · Leading &amp; Governing</div>
+              <div style={{ fontFamily: "var(--F)", fontSize: "22px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px", lineHeight: 1.2 }}>Deacons, polity, and the work of change</div>
+              <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>Deacon qualifications and selection, governance that works, and the patient art of changing what a church believes it cannot change. Five booklets.</p>
+            </Link>
+          </div>
+          <div style={{ marginTop: "var(--s-4)" }}>
+            <Link href="/resources/hard-issues-series" style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", color: "var(--ink)", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px", textDecoration: "none" }}>
+              See all ten booklets →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ARTICLES BY GROUP */}
       {LEADERSHIP_GROUPS.map((group, gi) => {
         const items = LEADERSHIP_ARTICLES.filter((a) => a.group === group);

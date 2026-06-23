@@ -7,6 +7,7 @@
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
+import { toParagraphs } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
 import type { SectionConfig, PropheticTopicData as Topic } from "@/lib/prophetic";
 
@@ -16,7 +17,7 @@ const section = { background: "var(--bone)", padding: "var(--s-5) var(--s-4)" } 
 const sectionAlt = { background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" } as const;
 
 function Paras({ text }: { text: string }) {
-  return <>{text.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "68ch", marginBottom: "16px" }}>{p}</p>)}</>;
+  return <>{toParagraphs(text).map((p, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "68ch", marginBottom: "16px" }}>{p}</p>)}</>;
 }
 function Head({ kicker, title }: { kicker: string; title: string }) {
   return (

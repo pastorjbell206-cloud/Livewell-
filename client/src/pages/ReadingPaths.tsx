@@ -1,6 +1,5 @@
 import { useLocation } from "wouter";
 import { SEOMeta } from "@/components/SEOMeta";
-import Layout from "@/components/Layout";
 
 interface PathArticle {
   title: string;

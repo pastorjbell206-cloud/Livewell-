@@ -18,6 +18,7 @@
     "howtos": "node scripts/build-howtos-index.mjs",
     "wisdom": "node scripts/build-wisdom-index.mjs",
     "pdfs": "node scripts/build-pdfs.mjs",
+    "manuals": "node scripts/build-leadership-manuals.mjs",
     "og": "node scripts/build-og-images.mjs",
     "prerender": "node scripts/prerender-heads.mjs",
     "publish:docx": "tsx scripts/publish-docx.ts",

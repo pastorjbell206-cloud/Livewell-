@@ -46,6 +46,7 @@ export default function Footer() {
             <div style={col}>
               <Link href="/writing" style={footerLink}>The Writing</Link>
               <Link href="/books" style={footerLink}>Books</Link>
+              <Link href="/read" style={footerLink}>The Library (read online)</Link>
               <Link href="/reading-paths" style={footerLink}>Reading Paths</Link>
               <Link href="/start" style={footerLink}>Start Here</Link>
               <Link href="/marriage" style={footerLink}>Marriage</Link>
@@ -58,6 +59,7 @@ export default function Footer() {
             <h3 style={colTitle}>Libraries &amp; Tools</h3>
             <div style={col}>
               <Link href="/resources" style={footerLink}>The Resource Hub</Link>
+              <Link href="/studyguides" style={footerLink}>Study Guides</Link>
               <Link href="/resources/context" style={footerLink}>Reading Scripture in Context</Link>
               <Link href="/wisdom" style={footerLink}>Wisdom for All of Life</Link>
               <Link href="/tools/wisdom-finder" style={footerLink}>Wisdom Finder</Link>
@@ -78,6 +80,7 @@ export default function Footer() {
               <Link href="/pastors" style={footerLink}>Pastors Connection Network</Link>
               <Link href={pillarUrl("the-pastoral-angle")} style={footerLink}>The Pastoral Angle</Link>
               <Link href="/leadership" style={footerLink}>The Leadership Hub</Link>
+              <Link href="/resources/hard-issues-series" style={footerLink}>The Hard Issues Series</Link>
               <Link href="/leadership/formation" style={footerLink}>Deep Formation</Link>
               <Link href="/for-leaders" style={footerLink}>Church Leadership</Link>
               <Link href="/resources" style={footerLink}>Downloads &amp; Study Guides</Link>

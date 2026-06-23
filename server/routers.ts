@@ -23,7 +23,7 @@ import {
   createFileRecord, listUserFiles, getFileById, deleteFileRecord, updateFileDescription,
   // Posts
   createPost, listPosts, listPostsForIndex, getPostById, getPostBySlug, getFeaturedPost, updatePost, deletePost,
-  bulkUpdatePostBodies, listNavIndex, migrateTaxonomy, backfillSubPathways,
+  bulkUpdatePostBodies, upsertEssayPosts, listNavIndex, migrateTaxonomy, backfillSubPathways,
   findDuplicatePosts, retirePosts, createDraftPosts, publishBySlugs,
   // Resources
   createResource, listResources, getResourceById, updateResource, deleteResource,
@@ -262,6 +262,36 @@ export const appRouter = router({
           return { matched: 0, updated: 0, missing: [] as string[], error: String(e?.message || e) };
         }
       }),
+
+    /**
+     * Admin: publish the essay libraries (client/src/data/articles/*.json) into
+     * posts. Creates posts that don't exist yet and refreshes ones that do —
+     * the browser replacement for running `npm run db:seed` from a terminal.
+     * Same batched client flow as publishFullBodies.
+     */
+    publishEssayLibrary: adminProcedure
+      .input(z.object({
+        dryRun: z.boolean().optional(),
+        items: z.array(z.object({
+          slug: z.string(),
+          title: z.string(),
+          body: z.string(),
+          excerpt: z.string().nullable(),
+          pillar: z.string().nullable(),
+          subPathway: z.string().nullable(),
+          readTime: z.string().nullable(),
+          readingTimeMinutes: z.number(),
+          coverImage: z.string().nullable(),
+        })),
+      }))
+      .mutation(async ({ input }) => {
+        try {
+          const r = await upsertEssayPosts(input.items, input.dryRun ?? false);
+          return { ...r, error: null as string | null };
+        } catch (e: any) {
+          return { inserted: 0, updated: 0, error: String(e?.message || e) };
+        }
+      }),
   }),
 
   // ─── Resources ───────────────────────────────────────────────────
@@ -436,7 +466,7 @@ export const appRouter = router({
           return { success: true, imported };
         } catch (error) {
           console.error("[Sync] Error syncing feeds:", error);
-          throw new Error("Failed to sync feeds");
+          throw new Error("Failed to sync feeds", { cause: error });
         }
       }),
   }),
