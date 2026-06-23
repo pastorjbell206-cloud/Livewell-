@@ -2130,6 +2130,12 @@ const EBOOKS: Record<string, EbookConfig> = {
     file: new URL("./_ebooks/where-your-treasure-is.pdf", import.meta.url),
     filename: "Where-Your-Treasure-Is.pdf",
   },
+  "alone-in-a-crowded-church": {
+    title: "Alone in a Crowded Church",
+    priceEnv: "STRIPE_PRICE_ALONE_IN_A_CROWDED_CHURCH",
+    file: new URL("./_ebooks/alone-in-a-crowded-church.pdf", import.meta.url),
+    filename: "Alone-in-a-Crowded-Church.pdf",
+  },
 };
 
 const PRODUCTION_SITE_URL = "https://livewellbyjamesbell.co";
