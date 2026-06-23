@@ -410,6 +410,66 @@
       ]
     },
     {
+      "id": "beauty-and-appearance",
+      "label": "Beauty and Appearance",
+      "keywords": [
+        "beauty",
+        "appearance",
+        "body image",
+        "looks",
+        "vanity",
+        "self-image",
+        "aging",
+        "comparison",
+        "insecurity",
+        "filters",
+        "attractiveness",
+        "mirror"
+      ],
+      "framing": "We are told the body is a project to be perfected and a product to be displayed. Scripture refuses both lies. It says charm is deceptive and beauty fleeting, and that the Lord looks not on the outward appearance but on the heart, where the imperishable beauty actually grows.",
+      "cultural": "We now carry a camera that flatters with a filter and a feed that shows us only the edited best of every face, and we measure our own unretouched reflection against an image no real person actually possesses. The pressure falls hard on the young, and on women especially, but no one is exempt from the quiet verdict the mirror delivers each morning.",
+      "historical": "The vanity of appearance is old, named in Israel's prophets who mocked the proud daughters of Zion with their finery, and in Peter's first-century word that true beauty is not the braided hair and gold but the hidden person of the heart. Augustine confessed the disordered loves of his youth, and the long Christian tradition has held that the body is good, made by God, but never the measure of a soul.",
+      "application": "Tend your body as a gift to be stewarded rather than an idol to be worshiped or a shame to be hidden. Fast from the filters and feeds that leave you appraising yourself as a stranger would. Speak of your own body, and your children's, the way God speaks of his creation, as good. And invest in the beauty that does not fade, since the gentle and quiet spirit outlasts every face the world has ever admired.",
+      "verses": [
+        {
+          "ref": "Proverbs 31:30",
+          "text": "Charm is deceitful, and beauty is vain, but a woman who fears the Lord is to be praised."
+        },
+        {
+          "ref": "1 Samuel 16:7",
+          "text": "The Lord looks not on the outward appearance, but the Lord looks on the heart."
+        },
+        {
+          "ref": "1 Peter 3:3-4",
+          "text": "Let your adorning be the hidden person of the heart with the imperishable beauty of a gentle and quiet spirit."
+        },
+        {
+          "ref": "Psalm 139:14",
+          "text": "I praise you, for I am fearfully and wonderfully made."
+        },
+        {
+          "ref": "1 Timothy 4:8",
+          "text": "Bodily training is of some value, but godliness is of value in every way."
+        }
+      ],
+      "related": [
+        {
+          "label": "Identity and Worth",
+          "href": "/life/identity-and-worth"
+        },
+        {
+          "label": "Aging and the Body",
+          "href": "/life/aging-and-the-body"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for life in the world",
+          "href": "/writing?topic=the-life-in-the-world"
+        }
+      ]
+    },
+    {
       "id": "being-discipled",
       "label": "Being Discipled",
       "keywords": [
@@ -758,6 +818,126 @@
       ]
     },
     {
+      "id": "cancel-culture-and-shame",
+      "label": "Cancel Culture and Shame",
+      "keywords": [
+        "cancel culture",
+        "shame",
+        "public shaming",
+        "mob",
+        "reputation",
+        "judgment",
+        "condemnation",
+        "exposed",
+        "pile-on",
+        "guilt",
+        "redemption",
+        "second chance"
+      ],
+      "framing": "We have built a machine for public shaming and called it accountability. It can expose a real wrong, but it offers no road back, no confession that ends in mercy, no door marked grace. Scripture knows the difference between conviction that heals and condemnation that only destroys, and it gives the sinner what the mob never will, a way home.",
+      "cultural": "A single sentence, sometimes years old, can now summon a crowd to bury a person, and the crowd feels righteous as it does. The hunger to expose and punish runs across every faction, left and right, each certain its targets deserve it. I have felt the cold satisfaction of watching someone I disliked fall, and I should not call that justice. There is no liturgy of forgiveness in the timeline, only the next name.",
+      "historical": "Public shaming is ancient, the stocks and the scarlet letter and the crowd gathered with stones. Into one such scene Jesus knelt and wrote in the dust and said let him who is without sin cast the first stone, and the accusers left one by one, oldest first. The church has too often run its own shaming machine, but at its best it has held a stranger pattern, that a sinner can confess, be forgiven, and be restored, which no mob has ever offered anyone.",
+      "application": "Refuse to join the pile-on, whichever side summons you, and ask whether you want a person to change or only to fall. When you must name a real wrong, leave a way back, since accountability without the possibility of grace is just destruction with better branding. Examine your own record before you broadcast another's, for you have needed mercy you did not deserve. And when shame is laid on you, take your guilt to the cross, where it is answered, and refuse to let the crowd be your judge.",
+      "verses": [
+        {
+          "ref": "John 8:7",
+          "text": "Let him who is without sin among you be the first to throw a stone at her."
+        },
+        {
+          "ref": "Romans 8:1",
+          "text": "There is therefore now no condemnation for those who are in Christ Jesus."
+        },
+        {
+          "ref": "Matthew 7:1-2",
+          "text": "Judge not, that you be not judged. For with the judgment you pronounce you will be judged."
+        },
+        {
+          "ref": "Galatians 6:1",
+          "text": "If anyone is caught in any transgression, restore him in a spirit of gentleness. Keep watch on yourself, lest you too be tempted."
+        },
+        {
+          "ref": "Psalm 103:12",
+          "text": "As far as the east is from the west, so far does he remove our transgressions from us."
+        }
+      ],
+      "related": [
+        {
+          "label": "Shame and the Hiding Self",
+          "href": "/life/shame-and-the-hiding-self"
+        },
+        {
+          "label": "Forgiveness: The Hardest Grace",
+          "href": "/life/forgiveness-the-hardest-grace"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for life in the world",
+          "href": "/writing?topic=the-life-in-the-world"
+        }
+      ]
+    },
+    {
+      "id": "caregiving",
+      "label": "Caring for Aging Parents",
+      "keywords": [
+        "caregiving",
+        "aging parents",
+        "elderly parent",
+        "caring for parents",
+        "caregiver",
+        "sandwich generation",
+        "dementia",
+        "mom and dad aging",
+        "caregiver burnout",
+        "long-term care",
+        "honoring parents",
+        "frail parent"
+      ],
+      "framing": "There comes a day when the parent who carried you cannot carry themselves, and you become the strong one in a relationship that ran the other way your whole life. Scripture names this reversal not as a burden to be escaped but as a debt of honor to be paid, the commandment to honor father and mother following them into their frailty.",
+      "cultural": "Our culture quietly warehouses the old and tells the exhausted caregiver to outsource the duty and feel no guilt, having lost the older conviction that caring for our own is a sacred trust. The Bible is blunt about it, that to neglect the care of one's own aging family is to deny the faith, and it ties the honoring of parents to the very length and blessing of a life.",
+      "historical": "Jesus, in his dying hour at the cross, arranged for the care of his mother, refusing even in agony to neglect the duty of a son. The early church drew the empire's notice by caring for its widows and elders rather than discarding them, and across the centuries Christians have built hospitals, hospices, and homes precisely because the faith never permitted the abandonment of the weak.",
+      "application": "Carry the duty without carrying it alone, drawing in siblings, the church, and professional help before you break, since a depleted caregiver serves no one. Honor your parent in the way you speak to them and of them, especially when the mind or the body fails and the patience runs thin. Tend your own soul and your own marriage in the long strain. And grieve, even now, the slow loss of the one who raised you.",
+      "verses": [
+        {
+          "ref": "Exodus 20:12",
+          "text": "Honor your father and your mother, that your days may be long in the land."
+        },
+        {
+          "ref": "1 Timothy 5:8",
+          "text": "If anyone does not provide for his relatives, he has denied the faith."
+        },
+        {
+          "ref": "Proverbs 23:22",
+          "text": "Do not despise your mother when she is old."
+        },
+        {
+          "ref": "John 19:26-27",
+          "text": "He said to the disciple, Behold, your mother. And from that hour the disciple took her to his own home."
+        },
+        {
+          "ref": "Psalm 71:9",
+          "text": "Do not cast me off in the time of old age; forsake me not when my strength is spent."
+        }
+      ],
+      "related": [
+        {
+          "label": "Caring for Aging Parents",
+          "href": "/life/caring-for-aging-parents"
+        },
+        {
+          "label": "The Home and the Family",
+          "href": "/life/the-home-and-the-family"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
+        }
+      ]
+    },
+    {
       "id": "caring-for-aging-parents",
       "label": "Caring for Aging Parents",
       "keywords": [
@@ -810,6 +990,66 @@
         {
           "label": "Practical guides for relationships",
           "href": "/writing?topic=relationships"
+        }
+      ]
+    },
+    {
+      "id": "career-change",
+      "label": "Changing Careers",
+      "keywords": [
+        "career change",
+        "new job",
+        "changing careers",
+        "calling",
+        "vocation",
+        "quitting",
+        "starting over at work",
+        "career crossroads",
+        "should i change jobs",
+        "midlife career",
+        "new field",
+        "work transition"
+      ],
+      "framing": "To change your work is to ask what your work was ever for. Scripture refuses to split the sacred from the so-called secular, treating the daily labor of ordinary hands as something done for the Lord, which means a career change is never only a financial calculation but a question of calling.",
+      "cultural": "Our age either worships work as the source of all identity or treats it as a mere paycheck endured for the weekend, and both leave a person hollow at a crossroads. The Bible offers a third thing, work as worship and service, neither idol nor drudgery, so that the question becomes not only what pays or pleases but where your gifts meet the world's need and God's purpose.",
+      "historical": "Paul, in the first century, kept making tents while he planted churches, refusing to despise honest trade. The Reformers, Luther and Calvin in the sixteenth century, recovered the truth that the farmer and the magistrate serve God as truly as the priest, dignifying every honest calling, and the long Protestant tradition has held that a person can glorify God in a workshop as fully as in a pulpit.",
+      "application": "Weigh the change with counsel, since the heart is a poor judge of its own restlessness, and ask whether you are running toward a calling or merely away from a difficulty. Consider your gifts, your obligations, and the genuine needs you could meet, not only the salary or the status. Pray it through slowly, and do not despise small or hidden work along the way. Whatever you do, the aim is to do it as unto the Lord.",
+      "verses": [
+        {
+          "ref": "Colossians 3:23",
+          "text": "Whatever you do, work heartily, as for the Lord and not for men."
+        },
+        {
+          "ref": "Proverbs 16:9",
+          "text": "The heart of man plans his way, but the Lord establishes his steps."
+        },
+        {
+          "ref": "Proverbs 16:3",
+          "text": "Commit your work to the Lord, and your plans will be established."
+        },
+        {
+          "ref": "1 Corinthians 10:31",
+          "text": "Whether you eat or drink, or whatever you do, do all to the glory of God."
+        },
+        {
+          "ref": "Ecclesiastes 3:1",
+          "text": "For everything there is a season, and a time for every matter under heaven."
+        }
+      ],
+      "related": [
+        {
+          "label": "Work as Worship",
+          "href": "/life/work-as-worship"
+        },
+        {
+          "label": "Wisdom for All of Life",
+          "href": "/life/wisdom-for-all-of-life"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for work and money",
+          "href": "/writing?topic=work"
         }
       ]
     },
@@ -991,6 +1231,65 @@
         {
           "label": "Practical marriage guides",
           "href": "/writing?topic=marriage"
+        }
+      ]
+    },
+    {
+      "id": "codependency",
+      "label": "Codependency and Losing Yourself",
+      "keywords": [
+        "codependency",
+        "codependent",
+        "people pleasing",
+        "enabling",
+        "losing myself",
+        "rescuing",
+        "boundaries",
+        "control",
+        "caretaking",
+        "approval",
+        "self-worth"
+      ],
+      "framing": "There is a love that gives itself away and a love that disappears itself, and the two are not the same. Scripture calls you to lay down your life, but never to lose the self God made and called good; the command to love your neighbor as yourself assumes there is a self there to love.",
+      "cultural": "The ancient world had its own version of the person swallowed by another's needs, and the Bible quietly resists it, refusing to let even the most devoted servant become nothing. Jesus, who gave everything, also withdrew to pray, said no to crowds, and let people make their own choices, a model of love that does not collapse into the will of whoever needs most.",
+      "historical": "Martha, busy and resentful while her sister sat, was gently told that her frantic serving had become its own kind of bondage. The church across the centuries, from the desert fathers' warnings against people-pleasing to modern pastoral care, has learned that rescuing what God has not asked you to carry is not humility but a misplaced attempt to be the savior, a role already filled.",
+      "application": "Notice when your helping is really about your own fear of being unneeded or unloved. Let people own the weight of their choices, since carrying it for them often keeps them from God's work in their life. Learn to say no without a paragraph of apology, and find your worth in God's settled love rather than in being indispensable. To set a boundary is not to stop loving; it is to love without dissolving.",
+      "verses": [
+        {
+          "ref": "Mark 12:31",
+          "text": "You shall love your neighbor as yourself."
+        },
+        {
+          "ref": "Galatians 1:10",
+          "text": "If I were still trying to please man, I would not be a servant of Christ."
+        },
+        {
+          "ref": "Luke 10:41-42",
+          "text": "Martha, Martha, you are anxious and troubled about many things, but one thing is necessary."
+        },
+        {
+          "ref": "Galatians 6:5",
+          "text": "For each will have to bear his own load."
+        },
+        {
+          "ref": "Proverbs 29:25",
+          "text": "The fear of man lays a snare, but whoever trusts in the Lord is safe."
+        }
+      ],
+      "related": [
+        {
+          "label": "Identity and Worth",
+          "href": "/life/identity-and-worth"
+        },
+        {
+          "label": "Friendship Against Isolation",
+          "href": "/life/friendship-against-isolation"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
         }
       ]
     },
@@ -1223,6 +1522,66 @@
       ]
     },
     {
+      "id": "consumerism-and-stuff",
+      "label": "Consumerism and Stuff",
+      "keywords": [
+        "consumerism",
+        "shopping",
+        "stuff",
+        "materialism",
+        "spending",
+        "clutter",
+        "possessions",
+        "buying",
+        "more",
+        "greed",
+        "wants",
+        "accumulation"
+      ],
+      "framing": "The ad does not sell you a thing. It sells you a self you do not yet have, and tells you the gap can be closed with a purchase. Scripture answers not with a tighter budget but with a deeper word, that a life does not consist in the abundance of possessions.",
+      "cultural": "We have built an economy that runs on a permanent sense of lack, that needs us to want what we do not have in order to keep moving. The deal is never named out loud. We feel it in the small dissatisfaction that arrives the week after the package does, and we reach for the next one.",
+      "historical": "The early church in Acts startled Rome by holding goods loosely and sharing them, in a world that measured a person by what he owned. Basil of Caesarea in the fourth century told the rich that the coat hanging unused in their closet belonged to the naked, and John Wesley in the eighteenth century, growing wealthy from his books, kept his own spending fixed and gave the rest away.",
+      "application": "Before the next purchase, wait a week and see whether the want survives the silence. Practice giving a fixed portion first, so generosity sets the shape of your money rather than what is left over. And take a slow inventory of what you already own, since gratitude for what is here is the only real cure for the hunger that is never fed.",
+      "verses": [
+        {
+          "ref": "Luke 12:15",
+          "text": "Take care, and be on your guard against all covetousness, for one's life does not consist in the abundance of his possessions."
+        },
+        {
+          "ref": "Hebrews 13:5",
+          "text": "Keep your life free from love of money, and be content with what you have."
+        },
+        {
+          "ref": "Ecclesiastes 5:10",
+          "text": "He who loves money will not be satisfied with money, nor he who loves wealth with his income."
+        },
+        {
+          "ref": "Matthew 6:19-20",
+          "text": "Do not lay up for yourselves treasures on earth, but lay up treasures in heaven."
+        },
+        {
+          "ref": "1 Timothy 6:7-8",
+          "text": "We brought nothing into the world, and we cannot take anything out of it. If we have food and clothing, with these we will be content."
+        }
+      ],
+      "related": [
+        {
+          "label": "Contentment Against Envy",
+          "href": "/life/contentment-against-envy"
+        },
+        {
+          "label": "Money and Possessions in Society",
+          "href": "/life/money-and-possessions-in-society"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for life in the world",
+          "href": "/writing?topic=the-life-in-the-world"
+        }
+      ]
+    },
+    {
       "id": "contentment",
       "label": "Contentment",
       "keywords": [
@@ -1335,6 +1694,60 @@
         {
           "label": "Practical guides for the inner life",
           "href": "/writing?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "dating-a-nonbeliever",
+      "label": "Dating a Nonbeliever",
+      "keywords": [
+        "dating nonbeliever",
+        "unequally yoked",
+        "mixed faith",
+        "missionary dating",
+        "boyfriend not christian",
+        "girlfriend not christian",
+        "different faith",
+        "marriage discernment",
+        "unbeliever",
+        "relationship faith"
+      ],
+      "framing": "This is one of the tender ones, because the heart has usually moved before the question gets asked. Scripture does not despise the person who does not share your faith, but it is honest that two people walking toward different homes will feel the strain at the deepest place, where it matters most.",
+      "cultural": "In the ancient world a marriage joined not only two people but two households and two gods, so the call not to be unequally yoked was about whose story would shape the home and the children. The Bible's concern was never snobbery toward outsiders, whom it commands you to love, but the slow undertow that pulls a divided house away from the One it was meant to serve.",
+      "historical": "Solomon, the wisest king of Israel around 950 BC, was turned from God by the very loves he thought he could manage, a warning the church has never forgotten. Yet Paul, writing to those already married to unbelievers, told them to stay and love and not despair, since the believing spouse is a means of grace, holding both the caution and the compassion together.",
+      "application": "Be honest with yourself about the direction this person is actually walking, not the version you hope to build. Do not date with a plan to convert; that burdens the relationship with a debt it cannot pay. Bring it to wise believers who will tell you the truth, and ask whether you could give your whole heart to a home where the deepest thing is not shared. Hold the person with love whatever you decide.",
+      "verses": [
+        {
+          "ref": "2 Corinthians 6:14",
+          "text": "Do not be unequally yoked with unbelievers."
+        },
+        {
+          "ref": "1 Corinthians 7:39",
+          "text": "She is free to be married to whom she wishes, only in the Lord."
+        },
+        {
+          "ref": "1 Kings 11:4",
+          "text": "When Solomon was old his wives turned away his heart after other gods."
+        },
+        {
+          "ref": "Amos 3:3",
+          "text": "Do two walk together, unless they have agreed to meet?"
+        },
+        {
+          "ref": "1 Peter 3:1",
+          "text": "That even if some do not obey the word, they may be won without a word by the conduct of their wives."
+        }
+      ],
+      "related": [
+        {
+          "label": "Dating and Discernment",
+          "href": "/life/dating-and-discernment"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
         }
       ]
     },
@@ -1966,6 +2379,66 @@
       ]
     },
     {
+      "id": "estrangement",
+      "label": "Estrangement and the Cut-Off",
+      "keywords": [
+        "estrangement",
+        "estranged",
+        "cut off",
+        "no contact",
+        "family rift",
+        "not speaking",
+        "rejected",
+        "disowned",
+        "broken family",
+        "father wound",
+        "abandoned",
+        "reconciliation"
+      ],
+      "framing": "An empty chair at the table is its own kind of grief, the loss of someone who is still alive. Scripture does not pretend these breaks are simple, but it keeps the door open longer than we would, and it tells the story of a father who watched the road every day.",
+      "cultural": "In the world of the Bible the family was your whole standing, your name, and your survival, so to be cut off was a death before death. That is why the parable of the prodigal landed so hard, a father shaming himself by running, and why a culture built on honor was scandalized by a love that refused to keep the account.",
+      "historical": "Joseph, sold by his own brothers around 1900 BC, wept on their necks rather than ruling over them. The church has long held that reconciliation is the aim but never the demand, and pastors from John Chrysostom in the fourth century onward have counseled patience with the door left ajar, since some returns take a lifetime and some do not come.",
+      "application": "Keep your side of the bridge in good repair even when the other side is closed, an honest message at a birthday, a door that stays open. Do not confuse waiting with chasing, and do not let your whole life bend around the silence. Grieve what is real, refuse bitterness, and entrust the timing to God, who is patient with us in our own long absences.",
+      "verses": [
+        {
+          "ref": "Luke 15:20",
+          "text": "While he was still a long way off, his father saw him and felt compassion, and ran and embraced him."
+        },
+        {
+          "ref": "Genesis 45:4",
+          "text": "I am your brother, Joseph, whom you sold into Egypt."
+        },
+        {
+          "ref": "Romans 12:18",
+          "text": "If possible, so far as it depends on you, live peaceably with all."
+        },
+        {
+          "ref": "Psalm 27:10",
+          "text": "For my father and my mother have forsaken me, but the Lord will take me in."
+        },
+        {
+          "ref": "Malachi 4:6",
+          "text": "He will turn the hearts of fathers to their children and the hearts of children to their fathers."
+        }
+      ],
+      "related": [
+        {
+          "label": "Conflict and Reconciliation",
+          "href": "/life/conflict-and-reconciliation"
+        },
+        {
+          "label": "Forgiveness: The Hardest Grace",
+          "href": "/life/forgiveness-the-hardest-grace"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
+        }
+      ]
+    },
+    {
       "id": "exhaustion",
       "label": "Exhaustion and Burnout",
       "keywords": [
@@ -2022,6 +2495,126 @@
         {
           "label": "Practical guides for the body",
           "href": "/writing?topic=the-body"
+        }
+      ]
+    },
+    {
+      "id": "big-decisions",
+      "label": "Facing a Big Decision",
+      "keywords": [
+        "big decision",
+        "decision",
+        "crossroads",
+        "discernment",
+        "guidance",
+        "god's will",
+        "what should i do",
+        "choosing",
+        "uncertain future",
+        "wisdom for a choice",
+        "fork in the road",
+        "seeking direction"
+      ],
+      "framing": "Some choices set the course of years, and the weight of them can freeze a person at the fork. Scripture does not promise a voice from the sky for every turn, but it does promise wisdom to those who ask for it, and it puts the surrender before the certainty, telling you to trust the Lord more than your own grasp of the road ahead.",
+      "cultural": "Our culture treats decision as the purest expression of the autonomous self, keeping every option open and trusting the gut as the final oracle. The Bible distrusts the unaided heart, calling the way that seems right to a man a path that can end in ruin, and it locates wisdom not in the lone individual but in counsel, in prayer, and in a life already bent toward obedience.",
+      "historical": "Solomon, near 950 BC, was offered anything and asked for a discerning heart to judge rightly, and Scripture treats that request as the wisest he ever made. The church has long practiced discernment as a communal art, from the apostles in Acts who sought the mind of the Spirit together, to the careful traditions of Ignatius of Loyola in the sixteenth century, who taught believers to test the inner movements of a choice against the character of God.",
+      "application": "Pray for wisdom plainly, since God gives it generously to those who ask without doubting. Seek counsel from people who know both you and the Scriptures, for safety lies in the abundance of counselors and not in your own certainty. Test the choice against God's revealed will before you worry about his hidden one, and surrender the outcome before you ever know it. Then take the next faithful step and trust him to direct the path.",
+      "verses": [
+        {
+          "ref": "Proverbs 3:5-6",
+          "text": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths."
+        },
+        {
+          "ref": "James 1:5",
+          "text": "If any of you lacks wisdom, let him ask God, who gives generously to all."
+        },
+        {
+          "ref": "Proverbs 11:14",
+          "text": "Where there is no guidance, a people falls, but in an abundance of counselors there is safety."
+        },
+        {
+          "ref": "Psalm 32:8",
+          "text": "I will instruct you and teach you in the way you should go; I will counsel you with my eye upon you."
+        },
+        {
+          "ref": "Proverbs 16:9",
+          "text": "The heart of man plans his way, but the Lord establishes his steps."
+        }
+      ],
+      "related": [
+        {
+          "label": "Wisdom for All of Life",
+          "href": "/life/wisdom-for-all-of-life"
+        },
+        {
+          "label": "Discipleship: Following Jesus",
+          "href": "/life/discipleship-following-jesus"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "fear-of-missing-out",
+      "label": "Fear of Missing Out",
+      "keywords": [
+        "fomo",
+        "missing out",
+        "envy",
+        "comparison",
+        "left out",
+        "restless",
+        "discontent",
+        "social media",
+        "other people's lives",
+        "regret",
+        "options",
+        "everyone else"
+      ],
+      "framing": "The fear of missing out is the old sin of envy fitted with a screen. It assumes the good life is always somewhere you are not, in a room you were not invited to, and it cannot rest in the one life you were actually given. Scripture answers with a harder and kinder word, that godliness with contentment is great gain.",
+      "cultural": "We watch the curated highlight of a thousand lives and measure our own ordinary Tuesday against the best moment of everyone we know. The feed shows us every party we were not at, every place we have not been, and trains a low, constant ache that no amount of attendance ever quiets.",
+      "historical": "The tenth commandment named covetousness as a thing of the heart long before anyone could photograph a vacation. Augustine in the fourth century wrote of the restless heart that cannot find its rest until it rests in God, and the Puritan Jeremiah Burroughs in the seventeenth century called contentment a rare jewel, learned slowly, the opposite of the soul that always wants the portion it cannot see.",
+      "application": "Name the comparison when it strikes and trace it back to envy, then bring it into the light rather than feeding it. Fast from the feeds that reliably leave you discontent. Practice the discipline of being fully present where you actually are, with the people actually in front of you. And give thanks out loud for your own portion, since gratitude is the thing envy cannot survive.",
+      "verses": [
+        {
+          "ref": "1 Timothy 6:6",
+          "text": "Godliness with contentment is great gain."
+        },
+        {
+          "ref": "Exodus 20:17",
+          "text": "You shall not covet your neighbor's house, nor anything that is your neighbor's."
+        },
+        {
+          "ref": "Philippians 4:11",
+          "text": "I have learned in whatever situation I am to be content."
+        },
+        {
+          "ref": "Galatians 6:4",
+          "text": "Let each one test his own work, and his reason to boast will be in himself alone and not in his neighbor."
+        },
+        {
+          "ref": "Psalm 16:6",
+          "text": "The lines have fallen for me in pleasant places. Indeed, I have a beautiful inheritance."
+        }
+      ],
+      "related": [
+        {
+          "label": "Contentment Against Envy",
+          "href": "/life/contentment-against-envy"
+        },
+        {
+          "label": "Technology and Attention",
+          "href": "/life/technology-and-attention"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for life in the world",
+          "href": "/writing?topic=the-life-in-the-world"
         }
       ]
     },
@@ -2132,6 +2725,65 @@
         {
           "label": "Suffering and the Silence of God",
           "href": "/life/suffering-and-the-silence-of-god"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "feeling-stuck",
+      "label": "Feeling Stuck",
+      "keywords": [
+        "stuck",
+        "stagnant",
+        "trapped",
+        "no progress",
+        "spinning wheels",
+        "rut",
+        "stalled",
+        "going nowhere",
+        "paralyzed",
+        "dead end",
+        "treading water"
+      ],
+      "framing": "Feeling stuck is not the same as being abandoned. Scripture is full of long stretches where nothing seemed to move, and it teaches that God works as much in the waiting as in the breakthrough, growing the kind of person who can be trusted with what comes next.",
+      "cultural": "Our culture cannot abide a plateau and reads any season without visible progress as failure, urging you to pivot, optimize, or quit. Scripture moves slower, honoring the long obedience and the hidden years, and it measures a life not by momentum but by faithfulness, which often looks like standing still and not giving up.",
+      "historical": "Joseph sat in an Egyptian prison for years before the dream came true, and David was anointed king long before he wore the crown, hunted in caves in the meantime. Moses spent forty years tending sheep on the far side of the desert before the burning bush, a reminder that what looks like a dead end is often a hidden preparation.",
+      "application": "Take the next faithful step rather than waiting for the whole road to clear, since clarity usually comes by walking. Ask whether you are truly stuck or simply being made to wait, and resist the urge to force a door God may be holding shut for your good. Tend the ordinary duties in front of you well, and let a wise friend help you tell movement from mere restlessness. The same God who seems silent in the prison is often writing the next chapter there.",
+      "verses": [
+        {
+          "ref": "Galatians 6:9",
+          "text": "Let us not grow weary of doing good, for in due season we will reap, if we do not give up."
+        },
+        {
+          "ref": "Psalm 27:14",
+          "text": "Wait for the Lord. Be strong, and let your heart take courage."
+        },
+        {
+          "ref": "Proverbs 3:5-6",
+          "text": "Trust in the Lord with all your heart, and he will make straight your paths."
+        },
+        {
+          "ref": "Isaiah 40:31",
+          "text": "They who wait for the Lord shall renew their strength. They shall mount up with wings like eagles."
+        },
+        {
+          "ref": "Genesis 50:20",
+          "text": "You meant evil against me, but God meant it for good."
+        }
+      ],
+      "related": [
+        {
+          "label": "Time and the Examined Life",
+          "href": "/life/time-and-the-examined-life"
+        },
+        {
+          "label": "The Dry Season",
+          "href": "/life/the-dry-season"
         }
       ],
       "articles": [
@@ -3143,6 +3795,66 @@
       ]
     },
     {
+      "id": "hurry-and-rush",
+      "label": "Hurry and Rush",
+      "keywords": [
+        "hurry",
+        "rush",
+        "busy",
+        "busyness",
+        "pace",
+        "frantic",
+        "overcommitted",
+        "exhausted",
+        "no time",
+        "rushing",
+        "pressure",
+        "slow down"
+      ],
+      "framing": "Hurry is not a schedule problem. It is a condition of the soul, the steady refusal to live inside the limits God gave a creature, and it quietly erodes the very things that cannot be rushed, prayer, attention, love. Scripture does not praise the busy. It praises the still.",
+      "cultural": "We wear our exhaustion like a badge and answer how are you with a tired so busy, as if speed were proof of worth. The rush is no longer something we suffer. It is something we have come to mistake for a life well spent, and we pass the pace down to our children without ever deciding to.",
+      "historical": "The Sabbath was God's own protest against the unending toil of Egypt, a weekly refusal to be defined by output. The desert monks of the fourth century named acedia, the restless inability to stay put, as a deadly thing, and Eugene Peterson in our own time wrote that the busy pastor is a contradiction, busyness being a form of laziness about the one thing needful.",
+      "application": "Keep a real Sabbath, a fixed day where you do not earn and do not produce, and let it expose how much of your worth you had pinned to motion. Build margin into the calendar on purpose, since an unhurried life is planned, not stumbled into. And when you pray, refuse to rush it, for God is not in a hurry and you were not made to outrun him.",
+      "verses": [
+        {
+          "ref": "Psalm 46:10",
+          "text": "Be still, and know that I am God."
+        },
+        {
+          "ref": "Exodus 20:9-10",
+          "text": "Six days you shall labor, but the seventh day is a Sabbath to the Lord your God."
+        },
+        {
+          "ref": "Mark 6:31",
+          "text": "Come away by yourselves to a desolate place and rest a while."
+        },
+        {
+          "ref": "Psalm 127:2",
+          "text": "It is in vain that you rise up early and go late to rest, eating the bread of anxious toil."
+        },
+        {
+          "ref": "Matthew 11:28-29",
+          "text": "Come to me, all who labor and are heavy laden, and I will give you rest."
+        }
+      ],
+      "related": [
+        {
+          "label": "Rest and the Sabbath",
+          "href": "/life/rest-and-the-sabbath"
+        },
+        {
+          "label": "Time and the Examined Life",
+          "href": "/life/time-and-the-examined-life"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for life in the world",
+          "href": "/writing?topic=the-life-in-the-world"
+        }
+      ]
+    },
+    {
       "id": "hypocrisy",
       "label": "Hypocrisy and the Mask",
       "keywords": [
@@ -3374,6 +4086,66 @@
         {
           "label": "Practical guides for the body",
           "href": "/writing?topic=the-body"
+        }
+      ]
+    },
+    {
+      "id": "information-overload",
+      "label": "Information Overload",
+      "keywords": [
+        "information overload",
+        "news",
+        "doomscrolling",
+        "distraction",
+        "overwhelmed",
+        "noise",
+        "headlines",
+        "feeds",
+        "attention",
+        "scrolling",
+        "screens",
+        "input"
+      ],
+      "framing": "We were promised that more information would make us wise. It has mostly made us anxious. Scripture never equates knowing more with knowing well, and it warns that the heart, not the feed, is what must be guarded, since from it flow the springs of life.",
+      "cultural": "We carry in our pocket more news of the world's pain than any generation could hold, refreshed every hour, and we mistake the ache it produces for engagement. The feed is built to keep us scrolling, not to leave us settled, and we have confused being informed with being formed.",
+      "historical": "Long before the smartphone, the desert fathers fled the noise of the city to find a word from God in silence. Pascal wrote in the seventeenth century that all of humanity's troubles come from our inability to sit quietly in a room alone, and Neil Postman warned in the 1980s that a culture drowning in information would slowly amuse and distract itself past the capacity for serious thought.",
+      "application": "Choose your inputs the way you choose your food, since you become what you take in. Set hours when the feed is closed and the room is quiet, and let your mind learn stillness again. Read one thing slowly and to the end rather than ten things halfway. And carry the world's real griefs to God in prayer rather than letting the scroll leave you informed, agitated, and unable to act.",
+      "verses": [
+        {
+          "ref": "Proverbs 4:23",
+          "text": "Keep your heart with all vigilance, for from it flow the springs of life."
+        },
+        {
+          "ref": "Philippians 4:8",
+          "text": "Whatever is true, whatever is honorable, whatever is pure, think about these things."
+        },
+        {
+          "ref": "Ecclesiastes 12:12",
+          "text": "Of making many books there is no end, and much study is a weariness of the flesh."
+        },
+        {
+          "ref": "Psalm 131:2",
+          "text": "I have calmed and quieted my soul, like a weaned child with its mother."
+        },
+        {
+          "ref": "Isaiah 26:3",
+          "text": "You keep him in perfect peace whose mind is stayed on you, because he trusts in you."
+        }
+      ],
+      "related": [
+        {
+          "label": "Technology and Attention",
+          "href": "/life/technology-and-attention"
+        },
+        {
+          "label": "Rest and the Sabbath",
+          "href": "/life/rest-and-the-sabbath"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for life in the world",
+          "href": "/writing?topic=the-life-in-the-world"
         }
       ]
     },
@@ -3910,6 +4682,66 @@
       ]
     },
     {
+      "id": "going-to-college",
+      "label": "Leaving for College",
+      "keywords": [
+        "college",
+        "university",
+        "leaving for college",
+        "young adult",
+        "moving out",
+        "freshman",
+        "campus",
+        "first time away",
+        "student",
+        "faith in college",
+        "starting college",
+        "homesick"
+      ],
+      "framing": "You are leaving the house you were formed in to become someone in a place no one knows you. Scripture honors the young who carry their faith into new and testing ground, and it tells them the one thing the campus will try to talk them out of, that the fear of the Lord, not the cleverness of the lecture hall, is where wisdom actually begins.",
+      "cultural": "Our culture treats college as the time to leave faith behind with childhood, a rite of passage into a supposedly freer life. The Bible knows the opposite, that the years of youth are the time to remember your Creator, not forget him, and that a faith never owned for oneself, only inherited, will not survive the first real challenge to it.",
+      "historical": "Daniel, taken as a youth into the schools of Babylon around 600 BC, learned the empire's books without bowing to the empire's gods, the model of a young believer who engaged the culture without being swallowed by it. The very universities of the West were founded by the church as places to seek truth under God, and across the centuries countless young Christians have found, in the testing of college, that their faith grew sturdier for being questioned.",
+      "application": "Find a church and a community of believers within the first weeks, before isolation and the crowd do their work, since no one keeps the faith alone on a campus built to erode it. Decide your convictions now, in advance, rather than in the moment of pressure. Ask hard questions out loud and chase the answers, for honest faith is not afraid of the lecture hall. And keep the habits, prayer, Scripture, and worship, that hold a soul in a new place.",
+      "verses": [
+        {
+          "ref": "Ecclesiastes 12:1",
+          "text": "Remember also your Creator in the days of your youth."
+        },
+        {
+          "ref": "Proverbs 9:10",
+          "text": "The fear of the Lord is the beginning of wisdom, and the knowledge of the Holy One is insight."
+        },
+        {
+          "ref": "1 Timothy 4:12",
+          "text": "Let no one despise you for your youth, but set the believers an example."
+        },
+        {
+          "ref": "Daniel 1:8",
+          "text": "Daniel resolved that he would not defile himself."
+        },
+        {
+          "ref": "Romans 12:2",
+          "text": "Do not be conformed to this world, but be transformed by the renewal of your mind."
+        }
+      ],
+      "related": [
+        {
+          "label": "Discipleship: Following Jesus",
+          "href": "/life/discipleship-following-jesus"
+        },
+        {
+          "label": "The Empty Nest and Midlife",
+          "href": "/life/the-empty-nest-and-midlife"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
       "id": "life-transitions",
       "label": "Life Transitions",
       "keywords": [
@@ -4196,6 +5028,65 @@
       ]
     },
     {
+      "id": "marriage-after-an-affair",
+      "label": "Marriage After an Affair",
+      "keywords": [
+        "affair",
+        "infidelity",
+        "adultery",
+        "cheating",
+        "unfaithful",
+        "betrayal",
+        "broken trust",
+        "rebuild marriage",
+        "reconciliation",
+        "covenant",
+        "repentance"
+      ],
+      "framing": "An affair breaks something that cannot simply be glued back; what is built after is a new thing, made slowly, out of repentance and a thousand small proofs. Scripture takes the wound seriously, and it also dares to speak of a love that takes back the unfaithful. If the betrayal came with abuse or control, safety comes first; the National Domestic Violence Hotline is 800-799-7233.",
+      "cultural": "Marriage in the biblical world was a covenant witnessed by God, not a private arrangement, so adultery was treated as a tearing of the whole community's fabric, not merely a personal hurt. Into a culture quick to stone, Jesus refused to condemn the woman caught in adultery while also refusing to bless the sin, holding mercy and truth in the same breath.",
+      "historical": "The prophet Hosea, around 750 BC, was told to take back an unfaithful wife as a living picture of God's grief and grace toward a faithless people, the hardest sermon ever preached with a life. The church has long held both the seriousness of the vow, which Jesus said adultery may break, and the possibility of rebuilt covenant where there is real repentance and real safety.",
+      "application": "Tell the truth fully, since trust is rebuilt on transparency, not on managing what the other knows. The one who strayed earns back trust by changed behavior over time, not by demanding it be granted; the one betrayed grieves on a timeline no one can hurry. Get a wise counselor, and let the church carry you. Some marriages are remade after this, and that remaking is holy work, not weakness.",
+      "verses": [
+        {
+          "ref": "Hosea 3:1",
+          "text": "Go again, love a woman who is loved by another man and is an adulteress, even as the Lord loves the children of Israel."
+        },
+        {
+          "ref": "Malachi 2:14",
+          "text": "She is your companion and your wife by covenant."
+        },
+        {
+          "ref": "John 8:11",
+          "text": "Neither do I condemn you; go, and from now on sin no more."
+        },
+        {
+          "ref": "Psalm 51:10",
+          "text": "Create in me a clean heart, O God, and renew a right spirit within me."
+        },
+        {
+          "ref": "Joel 2:25",
+          "text": "I will restore to you the years that the locust has eaten."
+        }
+      ],
+      "related": [
+        {
+          "label": "Betrayal and Broken Trust",
+          "href": "/life/betrayal-and-broken-trust"
+        },
+        {
+          "label": "Marriage: The Long Covenant",
+          "href": "/life/marriage-the-long-covenant"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical marriage guides",
+          "href": "/writing?topic=marriage"
+        }
+      ]
+    },
+    {
       "id": "marriage-conflict",
       "label": "Marriage Trouble",
       "keywords": [
@@ -4311,6 +5202,66 @@
         {
           "label": "Practical guides for relationships",
           "href": "/writing?topic=relationships"
+        }
+      ]
+    },
+    {
+      "id": "mental-exhaustion",
+      "label": "Mental Exhaustion and Burnout",
+      "keywords": [
+        "exhausted",
+        "exhaustion",
+        "burnout",
+        "burned out",
+        "drained",
+        "depleted",
+        "worn out",
+        "running on empty",
+        "no energy",
+        "spent",
+        "overwhelmed",
+        "weary"
+      ],
+      "framing": "Exhaustion is not a character flaw to push through but a limit to be honored. Scripture made the limit into a command, building a Sabbath into the week and a rest into the very fabric of creation, and it does not praise the one who burns out but the one who learns to stop.",
+      "cultural": "Our culture wears depletion as a badge, measuring worth by output and treating rest as something to be earned only after the work is done, which it never is. Scripture rebukes the lie at its root, refusing to let your value rest on your productivity and insisting that the God who never sleeps does not need you to skip sleep either, since he gives to his beloved even in their rest.",
+      "historical": "Elijah, fresh off the greatest victory of his life, collapsed under a tree and asked to die, and God's first response was not a sermon but food and sleep, the most physical of mercies. The fourth-century desert fathers diagnosed the noonday demon of burnout and prescribed not more striving but rhythm and limit, and the long monastic tradition built the day around fixed rests precisely because they knew the soul, like the field, must lie fallow to bear again.",
+      "application": "Treat rest as obedience, not reward, and put real Sabbath and real sleep back into your week before you collapse. Cut what you can actually cut, since burnout is often the bill for a life with no margin and no word of no in it. Eat, sleep, and walk, the physical mercies God gave Elijah, and let people share the load you were never meant to carry alone. And if the exhaustion does not lift with rest, if it dulls your sleep, your hope, or your will to go on, see a doctor or counselor, for sustained burnout and depression are real and treatable, not weakness to be ashamed of.",
+      "verses": [
+        {
+          "ref": "Matthew 11:28-29",
+          "text": "Come to me, all who labor and are heavy laden, and I will give you rest."
+        },
+        {
+          "ref": "Psalm 127:2",
+          "text": "He gives to his beloved sleep."
+        },
+        {
+          "ref": "1 Kings 19:5-7",
+          "text": "Arise and eat, for the journey is too great for you."
+        },
+        {
+          "ref": "Exodus 20:9-10",
+          "text": "Six days you shall labor, but the seventh day is a Sabbath to the Lord your God."
+        },
+        {
+          "ref": "Isaiah 40:29",
+          "text": "He gives power to the faint, and to him who has no might he increases strength."
+        }
+      ],
+      "related": [
+        {
+          "label": "Rest and the Sabbath",
+          "href": "/life/rest-and-the-sabbath"
+        },
+        {
+          "label": "The Heavy Mind",
+          "href": "/life/the-heavy-mind"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
         }
       ]
     },
@@ -4431,6 +5382,245 @@
       ]
     },
     {
+      "id": "relocation",
+      "label": "Moving and Relocation",
+      "keywords": [
+        "moving",
+        "relocation",
+        "relocating",
+        "new city",
+        "new home",
+        "leaving home",
+        "uprooted",
+        "starting over",
+        "far from family",
+        "transplant",
+        "new town",
+        "displaced"
+      ],
+      "framing": "To move is to pull up roots, and the ache of it is real even when the move is good. Scripture is full of people sent to places they did not choose, and it gives the displaced a steadying word, that the God who calls you to go has already gone ahead, and no place is outside his presence.",
+      "cultural": "We move for jobs and opportunity more than any people in history, and we have grown skilled at the leaving and clumsy at the arriving, often holding a new town at arm's length while we long for the old one. The Bible tells the exile to do the opposite, to build, plant, and seek the good of the very city he did not want, because half-presence is its own kind of homelessness.",
+      "historical": "Abraham, around 2000 BC, left everything familiar at God's word and went out not knowing where he was going, the founding act of a faith built on pilgrimage. The exiles in Babylon were told by Jeremiah, near 600 BC, to settle in and seek the welfare of their place of captivity, and the early church spread across the empire precisely because believers kept being scattered and kept putting down roots wherever they landed.",
+      "application": "Grieve what you left rather than pretending you don't miss it, and then commit fully to where you are. Find a church before you find the good grocery store, since the people of God are how a strange place becomes home. Seek the welfare of your new city, not just your own comfort within it, and reach toward neighbors before you feel ready. You are not adrift. You are sent.",
+      "verses": [
+        {
+          "ref": "Genesis 12:1",
+          "text": "Go from your country and your kindred to the land that I will show you."
+        },
+        {
+          "ref": "Jeremiah 29:7",
+          "text": "Seek the welfare of the city where I have sent you, and pray to the Lord on its behalf."
+        },
+        {
+          "ref": "Joshua 1:9",
+          "text": "Be strong and courageous. The Lord your God is with you wherever you go."
+        },
+        {
+          "ref": "Psalm 139:9-10",
+          "text": "If I take the wings of the morning and dwell in the uttermost parts of the sea, even there your hand shall lead me."
+        },
+        {
+          "ref": "Hebrews 13:14",
+          "text": "Here we have no lasting city, but we seek the city that is to come."
+        }
+      ],
+      "related": [
+        {
+          "label": "The Home and the Family",
+          "href": "/life/the-home-and-the-family"
+        },
+        {
+          "label": "Discipleship: Following Jesus",
+          "href": "/life/discipleship-following-jesus"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "new-parenthood",
+      "label": "New Parenthood",
+      "keywords": [
+        "new baby",
+        "newborn",
+        "first child",
+        "new parent",
+        "parenthood",
+        "exhausted",
+        "sleepless",
+        "overwhelmed parent",
+        "new mom",
+        "new dad",
+        "postpartum",
+        "raising a baby"
+      ],
+      "framing": "A child arrives and the floor of your life shifts under you. Scripture calls children a heritage and a reward, and in the same breath it never pretends the gift is light, for the same God who gives the child also carries the parent through the long sleepless nights.",
+      "cultural": "Our age sells new parents a polished image of the thing while leaving them alone for the reality of it, scattered far from grandmothers and aunts who once filled the house. The Bible assumes the opposite, a household and a village around every cradle, where a mother was never meant to do this in isolation behind a closed door.",
+      "historical": "Hannah, somewhere near 1100 BC, prayed her son into the world and then handed him back to God, naming the truth every parent must learn, that the child is lent, not owned. Across the centuries the church baptized its infants into a community that promised to raise them, and Susanna Wesley, in the early eighteenth century, ordered the chaos of a houseful of children into a life of prayer, teaching that the nursery is no less holy than the sanctuary.",
+      "application": "Take the help that is offered and ask for more, since pride is a poor companion at three in the morning. Lower the standard on the house and raise it on rest, prayer, and tenderness toward your spouse, who is as tired as you are. Pray over the child by name before you understand what you are raising. And let this season teach you your own limits, which you were never meant to outrun alone.",
+      "verses": [
+        {
+          "ref": "Psalm 127:3",
+          "text": "Children are a heritage from the Lord, the fruit of the womb a reward."
+        },
+        {
+          "ref": "Isaiah 40:11",
+          "text": "He will gently lead those that are with young."
+        },
+        {
+          "ref": "1 Samuel 1:27",
+          "text": "For this child I prayed, and the Lord has granted me my petition."
+        },
+        {
+          "ref": "Deuteronomy 6:7",
+          "text": "You shall teach them diligently to your children, and shall talk of them when you lie down and when you rise."
+        },
+        {
+          "ref": "Matthew 11:28",
+          "text": "Come to me, all who labor and are heavy laden, and I will give you rest."
+        }
+      ],
+      "related": [
+        {
+          "label": "Raising Children in Grace",
+          "href": "/life/raising-children-in-grace"
+        },
+        {
+          "label": "The Home and the Family",
+          "href": "/life/the-home-and-the-family"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical parenting guides",
+          "href": "/writing?topic=parenting"
+        }
+      ]
+    },
+    {
+      "id": "nostalgia",
+      "label": "Nostalgia and Longing for the Past",
+      "keywords": [
+        "nostalgia",
+        "nostalgic",
+        "the good old days",
+        "miss the past",
+        "longing for before",
+        "homesick",
+        "regret the past",
+        "yearning",
+        "wish things were",
+        "looking back",
+        "sentimental"
+      ],
+      "framing": "Longing for the past is a kind of homesickness, and not all of it is a lie. Scripture takes the ache seriously without letting it trap you, warning against gilding a past that was never as good as you remember, while pointing the homesick heart toward a home that is still ahead.",
+      "cultural": "Our culture sells nostalgia as a product and a politics, marketing a golden age that mostly never existed and using the ache for it to keep us looking backward. Scripture is sober about this, recording how the freed Israelites pined for the fleshpots of their slavery in Egypt the moment the wilderness grew hard, and warning against asking why the former days were better, for it is not from wisdom that you ask this.",
+      "historical": "The Hebrew exiles by the rivers of Babylon wept when they remembered Zion, and that grief was holy, yet the prophets turned their faces forward to a return and a restoration still to come. Augustine in the fifth century understood that the ache for a lost golden age is really the ache for Eden, for a home humanity has never stopped remembering and never stops trying to return to by the wrong roads.",
+      "application": "Honor the genuine grief in nostalgia, the real losses and the people you miss, without rewriting the past into something it was not. Let gratitude for what was carry into the present rather than draining it, and resist the lie that your best days are only behind you. Use the homesickness as a compass, since it was always pointing past every earthly home to the one God is preparing. And give your hands to the work in front of you, for the kingdom is not remembered, it is awaited and built toward.",
+      "verses": [
+        {
+          "ref": "Ecclesiastes 7:10",
+          "text": "Say not, Why were the former days better than these. For it is not from wisdom that you ask this."
+        },
+        {
+          "ref": "Philippians 3:13",
+          "text": "Forgetting what lies behind and straining forward to what lies ahead."
+        },
+        {
+          "ref": "Isaiah 43:18-19",
+          "text": "Remember not the former things. Behold, I am doing a new thing."
+        },
+        {
+          "ref": "Psalm 137:1",
+          "text": "By the waters of Babylon, there we sat down and wept, when we remembered Zion."
+        },
+        {
+          "ref": "Hebrews 11:16",
+          "text": "They desire a better country, that is, a heavenly one."
+        }
+      ],
+      "related": [
+        {
+          "label": "Time and the Examined Life",
+          "href": "/life/time-and-the-examined-life"
+        },
+        {
+          "label": "Contentment Against Envy",
+          "href": "/life/contentment-against-envy"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "numbness",
+      "label": "Numbness and Feeling Nothing",
+      "keywords": [
+        "numb",
+        "numbness",
+        "feel nothing",
+        "empty",
+        "emptiness",
+        "flat",
+        "deadened",
+        "hollow",
+        "disconnected",
+        "cold heart",
+        "no feeling",
+        "shut down"
+      ],
+      "framing": "Numbness is not the same as peace. It is often the heart's way of bracing against more pain than it can hold, and Scripture does not shame the one who has gone quiet inside but speaks of a heart of stone being given back its flesh.",
+      "cultural": "The biblical world had no word for our modern flatness, but it knew the deadened heart, the eyes that do not see and the ears that do not hear, the conscience seared past feeling. Where our culture treats numbness as a malfunction to be medicated into mood, Scripture treats it as a soul under siege, calling not for a quick fix but for the slow return of feeling.",
+      "historical": "The desert fathers of the fourth century named a sister of this state acedia, a listless deadness that drained the will to pray or care, and they did not call it sin so much as a trial to be endured and worked through. Centuries later John of the Cross described a dark night in which God seems absent and the affections go cold, and he insisted that the soul is often nearest God precisely when it feels nothing at all.",
+      "application": "Do not trust the numbness as if it were the truth about you or about God. Keep showing up to the ordinary acts, prayer, work, the table, even when they carry no feeling, since faithfulness does not wait on emotion. Name what you have stopped letting yourself feel, and let one safe person near it. If the deadness persists for weeks, dulls your sleep and appetite, or pulls you toward harm, see a doctor or counselor, for this can be the face of depression and is not a thing to carry alone.",
+      "verses": [
+        {
+          "ref": "Ezekiel 36:26",
+          "text": "I will remove the heart of stone from your flesh and give you a heart of flesh."
+        },
+        {
+          "ref": "Psalm 42:5",
+          "text": "Why are you cast down, O my soul, and why are you in turmoil within me. Hope in God."
+        },
+        {
+          "ref": "Psalm 143:7",
+          "text": "Answer me quickly, O Lord. My spirit fails. Hide not your face from me."
+        },
+        {
+          "ref": "Lamentations 3:22-23",
+          "text": "His mercies never come to an end. They are new every morning."
+        },
+        {
+          "ref": "John 11:35",
+          "text": "Jesus wept."
+        }
+      ],
+      "related": [
+        {
+          "label": "The Heavy Mind",
+          "href": "/life/the-heavy-mind"
+        },
+        {
+          "label": "The Dry Season",
+          "href": "/life/the-dry-season"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
       "id": "hospitality",
       "label": "Opening Your Home",
       "keywords": [
@@ -4487,6 +5677,180 @@
         {
           "label": "Practical guides for the home",
           "href": "/writing?topic=family"
+        }
+      ]
+    },
+    {
+      "id": "outrage-culture",
+      "label": "Outrage Culture",
+      "keywords": [
+        "outrage",
+        "anger online",
+        "polarization",
+        "tribalism",
+        "controversy",
+        "viral anger",
+        "contempt",
+        "us versus them",
+        "rage",
+        "hot takes",
+        "division",
+        "offended"
+      ],
+      "framing": "Outrage feels like conviction, and that is its danger. It dresses itself in the clothes of justice while it trains the heart in contempt, and it spreads faster than any sober truth. Scripture is not impressed by our heat. It says plainly that the anger of man does not produce the righteousness of God.",
+      "cultural": "We have built platforms that reward the most furious version of every opinion, because rage travels farther and faster than understanding. Both sides of every line have learned the same habit, to find the enemy, name him, and feel righteous in the naming. I have felt the pull myself, the small thrill of the cutting reply, and called it standing for truth.",
+      "historical": "This is not new, only newly amplified. The crowd that screamed crucify him was an outrage mob, and the disciples who wanted to call down fire on a village were rebuked by the very Lord they thought they were defending. James in the first century warned that the tongue is a fire that sets the whole course of life ablaze, and the church has too often joined the mob rather than refused it, baptizing its own faction's fury as faithfulness.",
+      "application": "Refuse to let any tribe, left or right, conscript your anger for its purposes, since the gospel does not belong to a party. Before you share the thing that makes you furious, wait, and ask whether you mean to persuade a person or to perform for your side. Be slow to speak and quick to listen, especially to the one you have already decided is the enemy. And examine your own heart first, since the line between good and evil runs through it and not between you and them.",
+      "verses": [
+        {
+          "ref": "James 1:19-20",
+          "text": "Let every person be quick to hear, slow to speak, slow to anger, for the anger of man does not produce the righteousness of God."
+        },
+        {
+          "ref": "Proverbs 15:1",
+          "text": "A soft answer turns away wrath, but a harsh word stirs up anger."
+        },
+        {
+          "ref": "Proverbs 18:17",
+          "text": "The one who states his case first seems right, until the other comes and examines him."
+        },
+        {
+          "ref": "Matthew 5:9",
+          "text": "Blessed are the peacemakers, for they shall be called sons of God."
+        },
+        {
+          "ref": "2 Timothy 2:24",
+          "text": "The Lord's servant must not be quarrelsome but kind to everyone, patient, correcting his opponents with gentleness."
+        }
+      ],
+      "related": [
+        {
+          "label": "Faith and Politics",
+          "href": "/life/faith-and-politics"
+        },
+        {
+          "label": "Anger and the Hot Heart",
+          "href": "/life/anger-and-the-hot-heart"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for life in the world",
+          "href": "/writing?topic=the-life-in-the-world"
+        }
+      ]
+    },
+    {
+      "id": "overthinking",
+      "label": "Overthinking",
+      "keywords": [
+        "overthinking",
+        "rumination",
+        "ruminating",
+        "racing thoughts",
+        "obsessing",
+        "spiraling",
+        "cannot stop thinking",
+        "analysis paralysis",
+        "circular thoughts",
+        "mind racing",
+        "indecision"
+      ],
+      "framing": "Overthinking is the mind trying to control by rehearsal what it cannot control at all. Scripture does not call you to think less but to think rightly, setting the racing mind on what is true and handing the unsolvable back to the only One who holds tomorrow.",
+      "cultural": "Our age feeds the spiral, offering endless information, endless options, and endless reasons to second-guess, and then sells the loop back to us as diligence. Scripture cuts the cycle at the root, naming the futility of the man who is tossed by every wind and double-minded, and calling instead for a settled trust that frees the mind from carrying what was never its to carry.",
+      "historical": "The Apostle Paul, no stranger to a complicated mind, told the Philippians to fix their thoughts on whatever is true and honorable, knowing the mind goes where it is pointed. The Puritans of the seventeenth century, Richard Baxter chief among them, wrote whole treatises on the discipline of the thoughts and the cure for the restless, over-busy mind, calling it the watch you must keep over your own heart.",
+      "application": "Get the loop out of your head and onto the table, in prayer or with a trusted friend, since thoughts circle worst in the dark. Decide what is actually yours to act on today and release the rest, which is most of it, to God. Set the mind deliberately on what is true rather than what is feared, and break the spiral with the body, a walk, work, the company of others. And if the thoughts become intrusive and will not stop, a counselor can help you learn the tools to quiet them.",
+      "verses": [
+        {
+          "ref": "Philippians 4:8",
+          "text": "Whatever is true, honorable, just, pure, lovely, think about these things."
+        },
+        {
+          "ref": "Isaiah 26:3",
+          "text": "You keep him in perfect peace whose mind is stayed on you, because he trusts in you."
+        },
+        {
+          "ref": "2 Corinthians 10:5",
+          "text": "We take every thought captive to obey Christ."
+        },
+        {
+          "ref": "Matthew 6:34",
+          "text": "Do not be anxious about tomorrow, for tomorrow will be anxious for itself."
+        },
+        {
+          "ref": "Psalm 139:23",
+          "text": "Search me, O God, and know my heart. Try me and know my thoughts."
+        }
+      ],
+      "related": [
+        {
+          "label": "The Anxious Mind",
+          "href": "/life/the-anxious-mind"
+        },
+        {
+          "label": "Wisdom for All of Life",
+          "href": "/life/wisdom-for-all-of-life"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "parenting-adult-children",
+      "label": "Parenting Adult Children",
+      "keywords": [
+        "adult children",
+        "grown kids",
+        "adult son",
+        "adult daughter",
+        "letting go",
+        "empty nest",
+        "advice unwanted",
+        "boundaries",
+        "in-laws",
+        "estranged child",
+        "prodigal"
+      ],
+      "framing": "There comes a day when the parent must stop steering and start blessing, when the open hand replaces the firm grip. Scripture honors the long love of a parent while it also makes room for the child to leave, to cleave, to become a person before God in their own right.",
+      "cultural": "In the ancient household the father's authority ran long and deep, and yet even there the Scripture said a man shall leave his father and mother, a quiet revolution that set the grown child loose to form a new household. The Bible knows the ache of release, naming it again and again in parents who must let their children walk into lives they cannot control.",
+      "historical": "Eli, the priest around 1100 BC, learned too late that influence over grown sons is not the same as control, while Monica, the mother of Augustine in the fourth century, prayed for her wayward son across decades and lived to see him turn. The church has long counseled parents of adult children toward prayer and presence rather than pressure, the slow patience of a God who waits.",
+      "application": "Move from manager to consultant, offering counsel when asked and holding your tongue when it is not. Respect the household they have formed, especially the spouse, and do not make your child choose between you. Pray more than you advise. And keep the relationship warm even through disagreement, since the open door matters more than winning the point.",
+      "verses": [
+        {
+          "ref": "Genesis 2:24",
+          "text": "Therefore a man shall leave his father and his mother and hold fast to his wife."
+        },
+        {
+          "ref": "Proverbs 22:6",
+          "text": "Train up a child in the way he should go, and when he is old he will not depart from it."
+        },
+        {
+          "ref": "3 John 1:4",
+          "text": "I have no greater joy than to hear that my children are walking in the truth."
+        },
+        {
+          "ref": "Luke 2:51",
+          "text": "And he went down with them and came to Nazareth and was submissive to them, and his mother treasured up all these things in her heart."
+        },
+        {
+          "ref": "Proverbs 17:6",
+          "text": "Grandchildren are the crown of the aged, and the glory of children is their fathers."
+        }
+      ],
+      "related": [
+        {
+          "label": "The Wayward Child",
+          "href": "/life/the-wayward-child"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical parenting guides",
+          "href": "/writing?topic=parenting"
         }
       ]
     },
@@ -5437,6 +6801,125 @@
       ]
     },
     {
+      "id": "restlessness",
+      "label": "Restlessness",
+      "keywords": [
+        "restless",
+        "restlessness",
+        "unsettled",
+        "agitated",
+        "cannot sit still",
+        "discontent",
+        "antsy",
+        "searching",
+        "unease",
+        "wanderlust",
+        "never satisfied"
+      ],
+      "framing": "Restlessness is not always a problem to be solved. It is often the soul telling the truth, that it was made for more than it has found, and Scripture treats that ache not as a flaw to suppress but as a signpost pointing past every lesser rest.",
+      "cultural": "Our age answers restlessness with the next purchase, the next screen, the next destination, promising that the cure is one more thing away. Scripture exposes the lie in the Preacher's verdict that all of it is vapor and a chasing after wind, and it redirects the hunger rather than feeding it, naming the one rest that does not run out.",
+      "historical": "Augustine, in the late fourth century, gave the ache its most famous words, that God has made us for himself and our heart is restless until it rests in him. The Hebrew people carried the same lesson through forty years of wilderness wandering before the land, and the writer of Hebrews read that whole story as a parable of a rest still waiting for the people of God.",
+      "application": "Stop expecting the next thing to settle you, and let the restlessness drive you toward God rather than away from him. Practice a real stillness, a Sabbath, a walk, an hour without a screen, long enough to hear what the noise has been covering. Ask whether the unease is the soul's true hunger or only an unwillingness to sit with yourself, since both wear the same face. And put your roots down somewhere, since restlessness often heals not by moving on but by staying put.",
+      "verses": [
+        {
+          "ref": "Psalm 62:1",
+          "text": "For God alone my soul waits in silence. From him comes my salvation."
+        },
+        {
+          "ref": "Matthew 11:28",
+          "text": "Come to me, all who labor and are heavy laden, and I will give you rest."
+        },
+        {
+          "ref": "Ecclesiastes 1:14",
+          "text": "I have seen everything that is done under the sun, and behold, all is vanity and a striving after wind."
+        },
+        {
+          "ref": "Hebrews 4:9-10",
+          "text": "There remains a Sabbath rest for the people of God."
+        },
+        {
+          "ref": "Psalm 23:2",
+          "text": "He makes me lie down in green pastures. He leads me beside still waters."
+        }
+      ],
+      "related": [
+        {
+          "label": "Rest and the Sabbath",
+          "href": "/life/rest-and-the-sabbath"
+        },
+        {
+          "label": "The Dry Season",
+          "href": "/life/the-dry-season"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "retirement",
+      "label": "Retirement",
+      "keywords": [
+        "retirement",
+        "retiring",
+        "retired",
+        "stopped working",
+        "end of career",
+        "last third of life",
+        "no longer working",
+        "what next",
+        "aging",
+        "golden years",
+        "purpose in retirement",
+        "winding down"
+      ],
+      "framing": "The work that defined your days ends, and the question underneath the gold watch is what your life is for now. Scripture has no category for a retreat into mere leisure, but it does offer something better, a final season aimed not at the self but at finishing well and handing on what you have gathered.",
+      "cultural": "Our culture sells retirement as a long reward, a permanent vacation that quietly tells the old they are now spectators. The Bible never sidelines its elders. It seats them at the center as the keepers of memory and counsel, and it measures a life not by how comfortably it ends but by whether it bears fruit even in old age.",
+      "historical": "Caleb, near 1400 BC, stood at eighty-five and asked for a mountain still to be conquered, refusing to coast on past faithfulness. Across history the church has given its later years to prayer, mentoring, and works of mercy, from the widows of the early church devoted to intercession to the countless aging saints who found their deepest usefulness only after the paycheck stopped.",
+      "application": "Resist the drift into a life that orbits only your own comfort, which dulls the soul faster than any disease. Ask what God has freed you to do now that the career no longer claims your hours, then give yourself to it. Invest in the young, the church, and the neighbor, and treat your accumulated wisdom as a deposit meant to be spent. The last third of life can be its most fruitful if it is aimed outward.",
+      "verses": [
+        {
+          "ref": "Psalm 92:14",
+          "text": "They still bear fruit in old age; they are ever full of sap and green."
+        },
+        {
+          "ref": "Joshua 14:11-12",
+          "text": "I am still as strong today as I was in the day Moses sent me. Give me this hill country."
+        },
+        {
+          "ref": "Psalm 90:12",
+          "text": "Teach us to number our days that we may get a heart of wisdom."
+        },
+        {
+          "ref": "Psalm 71:18",
+          "text": "Even to old age and gray hairs, do not forsake me, until I proclaim your might to another generation."
+        },
+        {
+          "ref": "Titus 2:2",
+          "text": "Older men are to be sober-minded, dignified, self-controlled, sound in faith, in love, and in steadfastness."
+        }
+      ],
+      "related": [
+        {
+          "label": "Retirement and the Last Third",
+          "href": "/life/retirement-and-the-last-third"
+        },
+        {
+          "label": "Work as Worship",
+          "href": "/life/work-as-worship"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for work and money",
+          "href": "/writing?topic=work"
+        }
+      ]
+    },
+    {
       "id": "saving-and-spending",
       "label": "Saving and Spending",
       "keywords": [
@@ -5539,6 +7022,65 @@
         {
           "label": "Desire and Temptation",
           "href": "/life/desire-and-temptation"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "self-doubt",
+      "label": "Self-Doubt",
+      "keywords": [
+        "self-doubt",
+        "insecure",
+        "insecurity",
+        "not good enough",
+        "imposter",
+        "second-guessing",
+        "unsure of myself",
+        "low confidence",
+        "inadequate",
+        "questioning myself",
+        "doubt myself"
+      ],
+      "framing": "Self-doubt asks the right question of the wrong judge. The issue was never whether you are enough on your own, you are not, and neither am I, but whose verdict you will finally trust, and Scripture moves your worth off your performance and onto the One who made and loves you.",
+      "cultural": "Our culture answers self-doubt with the gospel of self-esteem, telling you to look within and believe in yourself, which only doubles the weight on the very self that is faltering. Scripture goes the other way, locating your worth not inside your own shaky confidence but outside you altogether, in being known and called by God, who chooses the weak and the overlooked on purpose.",
+      "historical": "Scripture is a long parade of the inadequate, Moses who stammered, Gideon hiding in a winepress, Jeremiah protesting that he was only a youth, each one told that the call did not rest on their competence but on God's presence. Centuries later Martin Luther, tormented by his own unworthiness, found release not by finally measuring up but by discovering a righteousness given as a gift and received by faith.",
+      "application": "Stop arguing your worth before the wrong court and take it instead from the One whose verdict actually counts. Act in faith despite the doubt rather than waiting to feel adequate, since God has always used the unqualified. Tell the inner accusation what is true out loud, in Scripture and in the words of people who know you. And remember the strange comfort that your insufficiency was never the obstacle, for his power is made perfect in weakness.",
+      "verses": [
+        {
+          "ref": "2 Corinthians 12:9",
+          "text": "My grace is sufficient for you, for my power is made perfect in weakness."
+        },
+        {
+          "ref": "Psalm 139:14",
+          "text": "I praise you, for I am fearfully and wonderfully made."
+        },
+        {
+          "ref": "Philippians 4:13",
+          "text": "I can do all things through him who strengthens me."
+        },
+        {
+          "ref": "1 Corinthians 1:27",
+          "text": "God chose what is weak in the world to shame the strong."
+        },
+        {
+          "ref": "Jeremiah 1:7",
+          "text": "Do not say, I am only a youth, for to all to whom I send you, you shall go."
+        }
+      ],
+      "related": [
+        {
+          "label": "Identity and Worth",
+          "href": "/life/identity-and-worth"
+        },
+        {
+          "label": "Contentment Against Envy",
+          "href": "/life/contentment-against-envy"
         }
       ],
       "articles": [
@@ -5658,6 +7200,65 @@
         {
           "label": "Discipleship: Following Jesus",
           "href": "/life/discipleship-following-jesus"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "sensitivity",
+      "label": "Sensitivity and Feeling Too Much",
+      "keywords": [
+        "sensitive",
+        "sensitivity",
+        "feel too much",
+        "easily hurt",
+        "thin-skinned",
+        "overwhelmed by emotion",
+        "tender-hearted",
+        "deeply affected",
+        "take things hard",
+        "empathy overload",
+        "fragile"
+      ],
+      "framing": "To feel things deeply is not a defect to be hardened out of you. Scripture honors the tender heart, the one moved to weep and to mercy, and it shows us a Savior who was not numb to the world but pierced by it, moved with compassion at the sight of the crowds.",
+      "cultural": "Our culture is divided about the sensitive soul, mocking it as weakness on one side and exalting raw feeling as the final authority on the other. Scripture refuses both, neither despising the tender heart nor handing it the throne, treating deep feeling as a gift to be governed rather than either crushed or obeyed without question.",
+      "historical": "Jeremiah was the weeping prophet, undone by the suffering he was sent to name, and the Psalms hand the most sensitive hearts in history a language for every depth of feeling without shame. Jesus himself wept at a grave and was moved in his gut by the lost and the sick, and the long tradition of the saints, from Francis of Assisi to the great hymn writers, has counted tenderness toward a broken world as nearer to holiness than the hardened heart that feels nothing.",
+      "application": "Receive your sensitivity as a gift and a calling, the raw material of compassion, rather than a wound to be ashamed of. Learn to govern it, so that feeling deeply does not mean being ruled by every feeling, and bring the strongest emotions to God before you act on them. Guard your inputs wisely, since a tender heart can be flooded, and give it the rest and the boundaries it needs. And let the same depth that makes you hurt make you kind, turning what you feel into how you love.",
+      "verses": [
+        {
+          "ref": "Romans 12:15",
+          "text": "Rejoice with those who rejoice, weep with those who weep."
+        },
+        {
+          "ref": "Matthew 9:36",
+          "text": "When he saw the crowds, he had compassion for them."
+        },
+        {
+          "ref": "Colossians 3:12",
+          "text": "Put on compassionate hearts, kindness, humility, meekness, and patience."
+        },
+        {
+          "ref": "Proverbs 4:23",
+          "text": "Keep your heart with all vigilance, for from it flow the springs of life."
+        },
+        {
+          "ref": "Psalm 56:8",
+          "text": "You have kept count of my tossings. Put my tears in your bottle."
+        }
+      ],
+      "related": [
+        {
+          "label": "The Anxious Mind",
+          "href": "/life/the-anxious-mind"
+        },
+        {
+          "label": "Identity and Worth",
+          "href": "/life/identity-and-worth"
         }
       ],
       "articles": [
@@ -5962,6 +7563,65 @@
       ]
     },
     {
+      "id": "sibling-conflict",
+      "label": "Sibling Conflict",
+      "keywords": [
+        "sibling",
+        "siblings",
+        "brother",
+        "sister",
+        "family conflict",
+        "favoritism",
+        "rivalry",
+        "inheritance",
+        "jealousy",
+        "old wounds",
+        "family feud"
+      ],
+      "framing": "No one knows your wounds like the people who grew up beside you, and no rift cuts quite like the one with a brother or sister. Scripture is strikingly honest about feuding siblings, and it holds out the hope that even these oldest fractures can be healed, sometimes after long years.",
+      "cultural": "The Bible's first murder is between brothers, and its great family stories turn on sibling rivalry, Jacob and Esau, Joseph and his brothers, Mary and Martha, because the writers knew this is where the human heart is tested most. In a world where inheritance and birthright set the whole future, the favoritism of parents lit fires that burned for generations.",
+      "historical": "Esau, robbed of his blessing around 1900 BC, met the brother who wronged him not with the sword he had sworn but with an embrace, one of Scripture's quiet miracles of reconciliation. The church has long read these accounts as proof that grace can reach the buried resentment of childhood, and that the offense decades old is not beyond the reach of an honest word.",
+      "application": "Name the old wound plainly rather than letting it leak out sideways at every gathering. Do not let an inheritance or an old favoritism become the hill you die on, since no estate is worth a brother. Take the first step even if you were the one wronged, and forgive what you cannot fix. The family table is worth more than being right.",
+      "verses": [
+        {
+          "ref": "Genesis 33:4",
+          "text": "But Esau ran to meet him and embraced him and fell on his neck and kissed him, and they wept."
+        },
+        {
+          "ref": "Psalm 133:1",
+          "text": "Behold, how good and pleasant it is when brothers dwell in unity."
+        },
+        {
+          "ref": "Proverbs 18:19",
+          "text": "A brother offended is more unyielding than a strong city."
+        },
+        {
+          "ref": "Genesis 50:20",
+          "text": "As for you, you meant evil against me, but God meant it for good."
+        },
+        {
+          "ref": "Romans 12:18",
+          "text": "If possible, so far as it depends on you, live peaceably with all."
+        }
+      ],
+      "related": [
+        {
+          "label": "Conflict and Reconciliation",
+          "href": "/life/conflict-and-reconciliation"
+        },
+        {
+          "label": "Forgiveness: The Hardest Grace",
+          "href": "/life/forgiveness-the-hardest-grace"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
+        }
+      ]
+    },
+    {
       "id": "singleness",
       "label": "Singleness",
       "keywords": [
@@ -6250,6 +7910,66 @@
         {
           "label": "Practical guides for hard seasons",
           "href": "/writing?topic=suffering"
+        }
+      ]
+    },
+    {
+      "id": "status-and-recognition",
+      "label": "Status and Recognition",
+      "keywords": [
+        "status",
+        "recognition",
+        "approval",
+        "applause",
+        "followers",
+        "validation",
+        "ambition",
+        "pride",
+        "reputation",
+        "being seen",
+        "achievement",
+        "praise"
+      ],
+      "framing": "The hunger to be recognized is not a modern invention, only a newly measured one, now counted in followers and likes. Scripture does not crush the desire to matter but reorders it, warning against doing good to be seen by others, and pointing the heart toward an audience of One who already sees in secret.",
+      "cultural": "We have turned attention into a currency and made ourselves its anxious accountants, checking the numbers that tell us how much we are worth today. The platform offers a thin counterfeit of the recognition the soul actually craves, to be truly known and still loved, and we keep refreshing it because the counterfeit never satisfies.",
+      "historical": "Jesus aimed his sharpest warnings at the religious leaders who loved the place of honor and the greeting in the marketplaces, doing their righteousness to be seen. Augustine confessed in the fourth century how even his preaching could be poisoned by the love of praise, and Jonathan Edwards in the eighteenth century probed how the desire for the esteem of others hides inside our holiest acts.",
+      "application": "Practice doing good that no one will ever see, and let the secrecy starve the part of you that performs. Notice when your motive bends toward the applause and bring it back to God, the only audience that finally matters. Build your worth on being known and loved by him rather than tallied by strangers. And serve the people who can do nothing for your reputation, since that is where the disordered hunger goes to die.",
+      "verses": [
+        {
+          "ref": "Matthew 6:1",
+          "text": "Beware of practicing your righteousness before other people in order to be seen by them."
+        },
+        {
+          "ref": "John 12:43",
+          "text": "They loved the glory that comes from man more than the glory that comes from God."
+        },
+        {
+          "ref": "Galatians 1:10",
+          "text": "If I were still trying to please man, I would not be a servant of Christ."
+        },
+        {
+          "ref": "Proverbs 27:21",
+          "text": "The crucible is for silver, and the furnace is for gold, and a man is tested by his praise."
+        },
+        {
+          "ref": "1 Peter 5:6",
+          "text": "Humble yourselves under the mighty hand of God so that at the proper time he may exalt you."
+        }
+      ],
+      "related": [
+        {
+          "label": "Identity and Worth",
+          "href": "/life/identity-and-worth"
+        },
+        {
+          "label": "Pride and Humility",
+          "href": "/life/pride-and-humility"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for life in the world",
+          "href": "/writing?topic=the-life-in-the-world"
         }
       ]
     },
@@ -6597,6 +8317,65 @@
         {
           "label": "Practical guides for the inner life",
           "href": "/writing?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "empty-nest",
+      "label": "The Empty Nest",
+      "keywords": [
+        "empty nest",
+        "kids moved out",
+        "children grown",
+        "last child left",
+        "quiet house",
+        "midlife",
+        "purpose after kids",
+        "marriage after children",
+        "letting go",
+        "grown children",
+        "what now"
+      ],
+      "framing": "The house goes quiet and you are not sure who you are in the silence. Scripture treats the launching of children not as a loss to be mourned but as the very aim of the raising, an arrow released from the bow, and it turns the freed hands toward a calling that was waiting underneath the busyness all along.",
+      "cultural": "Our culture so fused parenthood with identity that when the children leave, many feel they have been laid off from the only job that mattered. The Bible never made the parent's whole worth ride on the child, and it gives the second half of life real work, the passing on of wisdom that only years and scars can teach.",
+      "historical": "Naomi, deep in the book of Ruth around 1100 BC, lost husband and sons and called herself empty, yet God filled her arms again with a grandchild and a future she could not have planned. The church has long honored the older woman who teaches the younger and the gray head as a crown of glory, refusing the lie that usefulness ends when the active parenting does.",
+      "application": "Grieve the quiet honestly, then ask what God set aside in you during the years of raising that he is now ready to use. Turn toward your spouse, who may feel like a stranger after years aimed at the children, and learn each other again. Pour into the next generation through your own grown children, the church, or the young parents drowning where you once swam. The nest empties so the work can widen.",
+      "verses": [
+        {
+          "ref": "Psalm 127:4",
+          "text": "Like arrows in the hand of a warrior are the children of one's youth."
+        },
+        {
+          "ref": "Proverbs 16:31",
+          "text": "Gray hair is a crown of glory; it is gained in a righteous life."
+        },
+        {
+          "ref": "Titus 2:3-4",
+          "text": "Older women are to teach what is good, and so train the young women."
+        },
+        {
+          "ref": "Ruth 4:15",
+          "text": "He shall be to you a restorer of life and a nourisher of your old age."
+        },
+        {
+          "ref": "Isaiah 46:4",
+          "text": "Even to your old age I am he, and to gray hairs I will carry you."
+        }
+      ],
+      "related": [
+        {
+          "label": "The Empty Nest and Midlife",
+          "href": "/life/the-empty-nest-and-midlife"
+        },
+        {
+          "label": "Raising Children in Grace",
+          "href": "/life/raising-children-in-grace"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the home",
+          "href": "/writing?topic=family"
         }
       ]
     },
@@ -7009,6 +8788,66 @@
       ]
     },
     {
+      "id": "toxic-relationships",
+      "label": "Toxic and Harmful Relationships",
+      "keywords": [
+        "toxic",
+        "abuse",
+        "abusive",
+        "manipulation",
+        "controlling",
+        "narcissist",
+        "harmful relationship",
+        "unsafe",
+        "boundaries",
+        "gaslighting",
+        "fear",
+        "trapped"
+      ],
+      "framing": "Love is patient, but love is not a doormat, and Scripture never asks you to call harm by the name of devotion. If you are being abused, your safety comes first; in the United States you can reach the National Domestic Violence Hotline any hour at 800-799-7233. Getting to safety is not a failure of faith but an act of it.",
+      "cultural": "The ancient world gave the powerful nearly total reach over the weak, and the Bible quietly subverts it, protecting the vulnerable and warning against the friend whose kisses are deceitful. Jesus himself walked away from crowds that meant him harm and told his followers to shake the dust from their feet, never teaching that holiness means standing still to be destroyed.",
+      "historical": "Scripture is honest about the wreckage of control, from Laban exploiting Jacob for twenty years to the men who used King David. The church has too often told victims to endure, and we must name that failure plainly; only in recent generations have pastors and counselors recovered what wisdom always knew, that protecting the harmed is the work of God, not a betrayal of the family.",
+      "application": "If there is abuse, get safe before anything else, and tell someone who can help. Boundaries are not unforgiveness; they are the fence that makes love possible at a distance when it is not possible up close. Find a wise outside voice, a pastor or counselor who will not minimize what is happening, and do not let a misused verse keep you in harm's way.",
+      "verses": [
+        {
+          "ref": "Proverbs 22:24-25",
+          "text": "Make no friendship with a man given to anger, lest you learn his ways and entangle yourself in a snare."
+        },
+        {
+          "ref": "Proverbs 27:6",
+          "text": "Faithful are the wounds of a friend; profuse are the kisses of an enemy."
+        },
+        {
+          "ref": "1 Corinthians 15:33",
+          "text": "Do not be deceived: bad company ruins good morals."
+        },
+        {
+          "ref": "Psalm 11:5",
+          "text": "The Lord tests the righteous, but his soul hates the wicked and the one who loves violence."
+        },
+        {
+          "ref": "Proverbs 4:23",
+          "text": "Keep your heart with all vigilance, for from it flow the springs of life."
+        }
+      ],
+      "related": [
+        {
+          "label": "Betrayal and Broken Trust",
+          "href": "/life/betrayal-and-broken-trust"
+        },
+        {
+          "label": "Conflict and Reconciliation",
+          "href": "/life/conflict-and-reconciliation"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
+        }
+      ]
+    },
+    {
       "id": "welcoming-newcomers",
       "label": "Welcoming Newcomers",
       "keywords": [
@@ -7236,6 +9075,65 @@
         {
           "label": "Practical guides for the inner life",
           "href": "/writing?topic=spiritual-formation"
+        }
+      ]
+    },
+    {
+      "id": "when-someone-wont-change",
+      "label": "When Someone Won't Change",
+      "keywords": [
+        "won't change",
+        "addiction",
+        "enabling",
+        "broken promises",
+        "disappointment",
+        "letting go",
+        "acceptance",
+        "powerless",
+        "hope and grief",
+        "release",
+        "boundaries"
+      ],
+      "framing": "You cannot repent for another person, no matter how much you love them, and some of the hardest grief is loving someone who will not turn. Scripture is honest that even God grieves the unrepentant heart he will not force, and it teaches you to keep loving while you stop trying to play the role only God can fill.",
+      "cultural": "The biblical world had no illusion that influence equals control, watching kings and prophets and parents pour themselves out on people who would not listen. The whole prophetic tradition is the record of a faithful love that kept calling even when no one came, a God who pleads but does not coerce, because forced change is not change at all.",
+      "historical": "The father of the prodigal, in Jesus' parable, did not chase his son into the far country or drag him home; he let him go and watched the road. From Jeremiah weeping over a people who would not turn around 600 BC to pastors today sitting with families worn down by a loved one's addiction, the church has learned the hard wisdom of loving without controlling, releasing without abandoning.",
+      "application": "Make peace with what you cannot change, and pour your effort into what you can, your own response, your own boundaries, your own walk with God. Stop the rescuing that lets the pattern continue, since enabling is not love. Keep the door open and the prayer going. And entrust the person to the only One who can reach the will you cannot, which is most of the grief and all of the hope.",
+      "verses": [
+        {
+          "ref": "Luke 15:13",
+          "text": "Not many days later, the younger son gathered all he had and took a journey into a far country."
+        },
+        {
+          "ref": "Ezekiel 18:32",
+          "text": "I have no pleasure in the death of anyone, declares the Lord God; so turn, and live."
+        },
+        {
+          "ref": "2 Peter 3:9",
+          "text": "The Lord is patient toward you, not wishing that any should perish, but that all should reach repentance."
+        },
+        {
+          "ref": "Matthew 23:37",
+          "text": "How often would I have gathered your children together, and you were not willing."
+        },
+        {
+          "ref": "Romans 12:19",
+          "text": "Never avenge yourselves, but leave it to the wrath of God."
+        }
+      ],
+      "related": [
+        {
+          "label": "Addiction and the Long Road Back",
+          "href": "/life/addiction-and-the-long-road-back"
+        },
+        {
+          "label": "The Wayward Child",
+          "href": "/life/the-wayward-child"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
         }
       ]
     },
