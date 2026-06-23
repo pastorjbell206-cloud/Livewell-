@@ -60,11 +60,11 @@ export default function Wisdom() {
             A full third of the Old Testament, Proverbs, Ecclesiastes, and Job, exists for exactly these decisions. Here is the whole of it, gathered in one place, for whatever you are facing.
           </p>
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-            <Link href="/life/wisdom-for-all-of-life" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal)", background: "var(--mustard)", padding: "13px 22px", textDecoration: "none" }}>
-              Read the guide
+            <Link href="/tools/wisdom-finder" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal)", background: "var(--mustard)", padding: "13px 22px", textDecoration: "none" }}>
+              Tell us what you are facing
             </Link>
-            <Link href="/tools/bible-on" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "transparent", border: "1px solid rgba(245,240,230,0.4)", padding: "13px 22px", textDecoration: "none" }}>
-              Wisdom by topic
+            <Link href="/life/wisdom-for-all-of-life" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "transparent", border: "1px solid rgba(245,240,230,0.4)", padding: "13px 22px", textDecoration: "none" }}>
+              Read the guide
             </Link>
           </div>
         </div>

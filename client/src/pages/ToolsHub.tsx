@@ -41,6 +41,13 @@ const TOOLS = [
     color: "var(--gold)",
   },
   {
+    title: "Wisdom Finder",
+    description: "Type in what you are struggling with, and find what the Bible says about it: the verses, the cultural world they were written in, how the church has understood them across history, and the practical application to your life now. Part of Integrated Life.",
+    href: "/tools/wisdom-finder",
+    icon: Search,
+    color: "var(--ink2)",
+  },
+  {
     title: "Rule of Life Builder",
     description: "A rule of life is not a performance contract. It is a trellis. Choose sustainable practices across prayer, Scripture, rest, community, mission, and the body, and build a rhythm of grace you can actually keep. Part of Integrated Life.",
     href: "/tools/rule-of-life",
