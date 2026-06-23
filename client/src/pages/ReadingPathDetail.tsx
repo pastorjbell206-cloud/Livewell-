@@ -1,225 +1,307 @@
-import { SEOMeta } from "@/components/SEOMeta";
-import { ArticleCard } from "@/components/ArticleCard";
-import { Button } from "@/components/ui/button";
-import { Loader2, ArrowLeft, BookOpen } from "lucide-react";
-import { Link, useRoute } from "wouter";
-import { trpc } from "@/lib/trpc";
+/**
+ * ReadingPathDetail (/reading-paths/:slug) — one curated reading sequence as an
+ * ordered, numbered list. Presentation only; the data lives in
+ * client/src/lib/readingPaths.ts.
+ *
+ * Available entries link to /writing/:slug. Planned entries render a "Coming
+ * soon" pill and never link (no broken paths). An unknown slug renders a
+ * graceful "path not found" with a way back, not a crash.
+ *
+ * Brand idiom: cream and charcoal sections, mustard accents, Cormorant
+ * headings, Inter body.
+ */
+import { Link, useRoute, Redirect } from "wouter";
 
-// Define reading paths with their topic filters
-const READING_PATH_CONFIGS: Record<string, { title: string; description: string; topics: string[] }> = {
-  "pastors-guide": {
-    title: "A Pastor's Guide to Thriving",
-    description: "Essential reading for navigating ministry, leadership challenges, and personal spiritual health",
-    topics: ["leadership", "spiritual-formation"],
-  },
-  "church-leadership": {
-    title: "Church Leadership Essentials",
-    description: "Governance, vision, organizational health, and building healthy leadership teams",
-    topics: ["leadership", "church-health"],
-  },
-  "marriage-family": {
-    title: "Marriage & Family in Ministry",
-    description: "Protecting your marriage, raising healthy kids, and maintaining family boundaries in ministry",
-    topics: ["personal-growth"],
-  },
-  "spiritual-formation": {
-    title: "Spiritual Formation & Prayer",
-    description: "Deepening your own faith, spiritual disciplines, and inner transformation",
-    topics: ["spiritual-formation"],
-  },
-  "new-to-ministry": {
-    title: "New to Ministry",
-    description: "Foundational teaching for those entering pastoral work",
-    topics: ["leadership", "pastoral-care"],
-  },
-  "cultural-engagement": {
-    title: "Cultural Engagement & Justice",
-    description: "Reading the cultural moment biblically: justice, prophetic witness, and the church's posture in a divided world",
-    topics: ["justice"],
-  },
-  "editors-picks": {
-    title: "Editor's Picks",
-    description: "Hand-selected essays that carry the most weight — the writing that has shaped how readers think",
-    topics: [], // Will show featured articles
-  },
-};
+import Layout from "@/components/Layout";
+import { SEOMeta } from "@/components/SEOMeta";
+import {
+  getReadingPathBySlug,
+  type ReadingPath,
+  type ReadingPathEntry,
+} from "@/lib/readingPaths";
+
+function PathNotFound() {
+  return (
+    <Layout>
+      <SEOMeta
+        title="Reading path not found — LiveWell by James Bell"
+        description="This reading path could not be found."
+        noindex
+      />
+      <section
+        style={{
+          background: "var(--bone)",
+          padding: "6rem 1.5rem",
+          minHeight: "60vh",
+        }}
+      >
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+          <h1
+            style={{
+              fontFamily: "var(--F)",
+              fontSize: "clamp(1.75rem, 4vw, 2.5rem)",
+              fontWeight: 400,
+              letterSpacing: "-0.02em",
+              color: "var(--ink)",
+              margin: "0 0 1rem",
+            }}
+          >
+            That path is not here.
+          </h1>
+          <p
+            style={{
+              fontFamily: "var(--B)",
+              fontSize: "1rem",
+              lineHeight: 1.7,
+              color: "var(--ink-muted)",
+              maxWidth: "60ch",
+              margin: "0 0 2rem",
+            }}
+          >
+            The reading path you asked for does not exist. It may have been
+            renamed. Start from the full set of paths instead.
+          </p>
+          <Link
+            href="/reading-paths"
+            style={{
+              fontFamily: "var(--U)",
+              fontSize: "0.9rem",
+              fontWeight: 600,
+              color: "var(--mustard-text)",
+              textDecoration: "none",
+            }}
+          >
+            ← All reading paths
+          </Link>
+        </div>
+      </section>
+    </Layout>
+  );
+}
+
+function EntryRow({ entry, index }: { entry: ReadingPathEntry; index: number }) {
+  const num = String(index + 1).padStart(2, "0");
+
+  const inner = (
+    <div
+      style={{
+        display: "flex",
+        alignItems: "baseline",
+        gap: "1.25rem",
+        padding: "1.25rem 0",
+        borderBottom: "1px solid var(--border)",
+      }}
+    >
+      <span
+        aria-hidden
+        style={{
+          fontFamily: "var(--U)",
+          fontSize: "0.8rem",
+          fontWeight: 600,
+          letterSpacing: "0.08em",
+          color: "var(--mustard-text)",
+          flexShrink: 0,
+          minWidth: "1.75rem",
+        }}
+      >
+        {num}
+      </span>
+      <div style={{ flex: 1, minWidth: 0 }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "baseline",
+            justifyContent: "space-between",
+            gap: "1rem",
+            flexWrap: "wrap",
+          }}
+        >
+          <h3
+            style={{
+              fontFamily: "var(--F)",
+              fontSize: "clamp(1.25rem, 2.4vw, 1.5rem)",
+              fontWeight: 500,
+              lineHeight: 1.2,
+              letterSpacing: "-0.01em",
+              color: "var(--ink)",
+              margin: 0,
+            }}
+          >
+            {entry.title}
+          </h3>
+          {entry.available ? (
+            <span
+              aria-hidden
+              style={{
+                fontFamily: "var(--U)",
+                fontSize: "1.1rem",
+                color: "var(--mustard)",
+                flexShrink: 0,
+              }}
+            >
+              →
+            </span>
+          ) : (
+            <span
+              style={{
+                fontFamily: "var(--U)",
+                fontSize: "10px",
+                fontWeight: 600,
+                textTransform: "uppercase",
+                letterSpacing: "0.16em",
+                color: "var(--ink-muted)",
+                border: "1px solid var(--border)",
+                borderRadius: "var(--radius-pill)",
+                padding: "3px 10px",
+                flexShrink: 0,
+                whiteSpace: "nowrap",
+              }}
+            >
+              Coming soon
+            </span>
+          )}
+        </div>
+        {entry.blurb && (
+          <p
+            style={{
+              fontFamily: "var(--B)",
+              fontSize: "0.95rem",
+              lineHeight: 1.6,
+              color: "var(--ink-muted)",
+              margin: "0.5rem 0 0",
+              maxWidth: "62ch",
+            }}
+          >
+            {entry.blurb}
+          </p>
+        )}
+      </div>
+    </div>
+  );
+
+  if (entry.available && entry.slug) {
+    return (
+      <Link
+        href={`/writing/${entry.slug}`}
+        style={{ display: "block", textDecoration: "none" }}
+      >
+        {inner}
+      </Link>
+    );
+  }
+  return inner;
+}
+
+function PathView({ path }: { path: ReadingPath }) {
+  const liveCount = path.entries.filter(e => e.available).length;
+  const totalCount = path.entries.length;
+
+  return (
+    <Layout>
+      <SEOMeta
+        title={`${path.title} — LiveWell by James Bell`}
+        description={path.description}
+        url={`https://www.livewellbyjamesbell.co/reading-paths/${path.slug}`}
+        keywords={`reading path, ${path.title}, essays, theology, the American church`}
+      />
+
+      {/* HEADER */}
+      <section style={{ background: "var(--charcoal)", padding: "5rem 1.5rem 4rem" }}>
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+          <Link
+            href="/reading-paths"
+            style={{
+              display: "inline-block",
+              fontFamily: "var(--U)",
+              fontSize: "11px",
+              fontWeight: 600,
+              textTransform: "uppercase",
+              letterSpacing: "0.18em",
+              color: "var(--mustard)",
+              textDecoration: "none",
+              marginBottom: "1.5rem",
+            }}
+          >
+            ← All reading paths
+          </Link>
+          <h1
+            style={{
+              fontFamily: "var(--F)",
+              fontSize: "clamp(2.25rem, 5vw, 3.5rem)",
+              fontWeight: 400,
+              lineHeight: 1.05,
+              letterSpacing: "-0.025em",
+              color: "var(--bone)",
+              margin: "0 0 1.5rem",
+            }}
+          >
+            {path.title}
+          </h1>
+          <p
+            style={{
+              fontFamily: "var(--F)",
+              fontSize: "clamp(1.125rem, 2.2vw, 1.4rem)",
+              fontStyle: "italic",
+              lineHeight: 1.5,
+              color: "var(--bone)",
+              opacity: 0.85,
+              maxWidth: "64ch",
+            }}
+          >
+            {path.description}
+          </p>
+          <div
+            style={{
+              fontFamily: "var(--U)",
+              fontSize: "12px",
+              letterSpacing: "0.04em",
+              color: "rgba(245,240,230,0.7)",
+              marginTop: "2rem",
+            }}
+          >
+            {liveCount} of {totalCount} on the site · read in order
+          </div>
+        </div>
+      </section>
+
+      {/* SEQUENCE */}
+      <section style={{ background: "var(--bone)", padding: "4rem 1.5rem 5rem" }}>
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+          <div style={{ borderTop: "2px solid var(--mustard)" }}>
+            {path.entries.map((entry, i) => (
+              <EntryRow key={entry.slug ?? entry.title} entry={entry} index={i} />
+            ))}
+          </div>
+
+          <p
+            style={{
+              fontFamily: "var(--B)",
+              fontSize: "0.95rem",
+              lineHeight: 1.7,
+              color: "var(--ink-muted)",
+              maxWidth: "62ch",
+              marginTop: "2.5rem",
+            }}
+          >
+            Entries marked "Coming soon" are essays still being written. The path
+            fills in as each one lands.
+          </p>
+        </div>
+      </section>
+    </Layout>
+  );
+}
 
 export function ReadingPathDetail() {
   const [match, params] = useRoute("/reading-paths/:slug");
-  const { data: allPosts, isLoading } = trpc.posts.listForIndex.useQuery();
 
-  if (!match) {
-    return (
-      <div className="container py-12 text-center">
-        <p className="text-muted-foreground">Reading path not found</p>
-      </div>
-    );
-  }
+  if (!match) return <PathNotFound />;
 
-  const pathConfig = READING_PATH_CONFIGS[params?.slug as string];
+  const path = getReadingPathBySlug(params?.slug);
+  if (!path) return <PathNotFound />;
 
-  if (!pathConfig) {
-    return (
-      <div className="container py-12">
-        <Link href="/reading-paths">
-          <Button variant="outline" className="mb-6">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Reading Paths
-          </Button>
-        </Link>
-        <p className="text-muted-foreground">Reading path not found</p>
-      </div>
-    );
-  }
+  // The book guide has no detail page of its own; send readers to /start.
+  if (path.externalHref) return <Redirect to={path.externalHref} />;
 
-  if (isLoading) {
-    return (
-      <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--paper)" }}>
-        <Loader2 size={32} style={{ color: "var(--gold)", animation: "spin 1s linear infinite" }} />
-      </div>
-    );
-  }
-
-  // Filter articles based on reading path topics
-  let filteredArticles = allPosts || [];
-  
-  if (params?.slug !== "editors-picks") {
-    filteredArticles = filteredArticles.filter((post: any) =>
-      pathConfig.topics.length === 0 || pathConfig.topics.some(topic => 
-        post.topic?.toLowerCase() === topic.toLowerCase()
-      )
-    );
-  } else {
-    // For editor's picks, show featured/popular articles
-    filteredArticles = filteredArticles.slice(0, 12);
-  }
-
-  const totalReadTime = filteredArticles.reduce((sum: number, article: any) => sum + (article.readTime || 5), 0);
-
-  return (
-    <>
-      <SEOMeta
-        title={pathConfig.title}
-        description={pathConfig.description}
-        keywords={`reading path, ${pathConfig.topics.join(", ")}, articles, theological formation`}
-      />
-      <div>
-        {/* HERO SECTION */}
-        <section className="hero" style={{ background: "linear-gradient(135deg, var(--charcoal) 0%, var(--ink) 100%)" }}>
-          <div className="wrap">
-            <Link href="/reading-paths">
-              <button style={{ 
-                background: "none", 
-                border: "none", 
-                color: "var(--gold)", 
-                cursor: "pointer", 
-                fontSize: "14px",
-                fontFamily: "var(--U)",
-                letterSpacing: ".1em",
-                marginBottom: "16px",
-                textTransform: "uppercase",
-                display: "flex",
-                alignItems: "center",
-                gap: "8px"
-              }}>
-                ← Back to Reading Paths
-              </button>
-            </Link>
-            <h1 className="hero-title" style={{ color: "white", marginBottom: "16px" }}>
-              {pathConfig.title}
-            </h1>
-            <p style={{ color: "rgba(255,255,255,0.9)", fontSize: "18px", lineHeight: "1.6", marginBottom: "24px", maxWidth: "600px" }}>
-              {pathConfig.description}
-            </p>
-            <div style={{ color: "var(--gold)", fontSize: "14px", fontFamily: "var(--U)", letterSpacing: ".1em" }}>
-              {filteredArticles.length} articles · {Math.round(totalReadTime / 5)} hours to complete
-            </div>
-          </div>
-        </section>
-
-        {/* ARTICLES SECTION */}
-        <section className="section">
-          <div className="wrap">
-            <h2 className="section-title">Reading Path Articles</h2>
-            
-            {filteredArticles.length === 0 ? (
-              <div style={{ textAlign: "center", padding: "60px 20px", color: "var(--gray)" }}>
-                <BookOpen size={48} style={{ margin: "0 auto 16px", opacity: 0.5 }} />
-                <p style={{ fontSize: "18px" }}>No articles found for this reading path yet.</p>
-                <p style={{ fontSize: "14px", marginTop: "8px", opacity: 0.7 }}>Check back soon!</p>
-              </div>
-            ) : (
-              <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "24px" }}>
-                {filteredArticles.map((article: any, index: number) => (
-                  <div key={article.id} style={{ position: "relative" }}>
-                    {/* Article number badge */}
-                    <div style={{
-                      position: "absolute",
-                      left: "-12px",
-                      top: "16px",
-                      width: "32px",
-                      height: "32px",
-                      borderRadius: "50%",
-                      background: "var(--gold)",
-                      color: "var(--ink)",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      fontWeight: "bold",
-                      fontSize: "12px",
-                      zIndex: 10
-                    }}>
-                      {index + 1}
-                    </div>
-                    
-                    <ArticleCard
-                      id={article.id}
-                      slug={article.slug}
-                      title={article.title}
-                      excerpt={article.excerpt}
-                      pillar={article.pillar || article.topic}
-                      readTime={article.readTime}
-                      author={article.author || "James Bell"}
-                      date={article.createdAt ? new Date(article.createdAt).toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "short",
-                        day: "numeric",
-                      }) : ""}
-                    />
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-        </section>
-
-        {/* CTA SECTION */}
-        <section className="section" style={{ background: "var(--charcoal)", color: "white", textAlign: "center" }}>
-          <div className="wrap">
-            <h2 className="section-title" style={{ color: "white", marginBottom: "16px" }}>
-              Ready to Go Deeper?
-            </h2>
-            <p style={{ fontSize: "18px", marginBottom: "24px", color: "rgba(255,255,255,0.9)", maxWidth: "500px", margin: "0 auto 24px" }}>
-              Join our community of pastoral leaders and get exclusive access to all reading paths, bonus content, and live Q&A sessions.
-            </p>
-            <Link href="/membership">
-              <button style={{
-                padding: "12px 32px",
-                background: "var(--gold)",
-                color: "var(--ink)",
-                border: "none",
-                borderRadius: "2px",
-                fontWeight: "600",
-                fontSize: "14px",
-                cursor: "pointer",
-                transition: "all 0.2s ease"
-              }}>
-                Explore Membership →
-              </button>
-            </Link>
-          </div>
-        </section>
-      </div>
-    </>
-  );
+  return <PathView path={path} />;
 }
