@@ -368,6 +368,60 @@
       ]
     },
     {
+      "id": "being-discipled",
+      "label": "Being Discipled",
+      "keywords": [
+        "discipleship",
+        "mentor",
+        "growing in faith",
+        "spiritual growth",
+        "discipled",
+        "follow jesus",
+        "maturity",
+        "learning",
+        "accountability",
+        "spiritual mother",
+        "spiritual father",
+        "formation"
+      ],
+      "framing": "No one grows up in the faith alone. Scripture assumes the Christian life is learned the way every deep thing is learned, beside someone further along who lets you watch how it is done. To be discipled is not a program but a relationship, the older walking with the younger until the younger can walk with another.",
+      "cultural": "We have privatized faith into a thing between me and my screen, a podcast, an app, a feed of verses, and called it growth. But Scripture never imagines a disciple formed in isolation. Jesus did not hand the Twelve a course. He shared his life with them for three years, and they became like him by proximity more than instruction. Maturity still comes that way, in the friction and patience of being known.",
+      "historical": "Paul told the Corinthians to imitate him as he imitated Christ, and told Timothy to entrust what he had learned to faithful people who would teach others, four generations of discipleship in a single sentence written around AD 65. The pattern held. The desert mentors of the fourth century, the spiritual fathers and mothers people walked miles to sit beside, knew that the soul is shaped by a wiser soul nearby. Everyone who has grown was discipled by someone, named or unnamed.",
+      "application": "Ask someone further along to walk with you, and accept that they will be imperfect and do it anyway. Make yourself teachable, which means letting them see the unedited version, the doubts and the failures, not only the polished front. Read and pray together, confess honestly, and give it years rather than weeks. Then, sooner than you feel ready, turn and do the same for someone behind you, because that is the whole design.",
+      "verses": [
+        {
+          "ref": "2 Timothy 2:2",
+          "text": "What you have heard from me entrust to faithful men, who will be able to teach others also."
+        },
+        {
+          "ref": "Matthew 28:19-20",
+          "text": "Go therefore and make disciples of all nations, teaching them to observe all that I have commanded you."
+        },
+        {
+          "ref": "1 Corinthians 11:1",
+          "text": "Be imitators of me, as I am of Christ."
+        },
+        {
+          "ref": "Proverbs 27:17",
+          "text": "Iron sharpens iron, and one man sharpens another."
+        },
+        {
+          "ref": "Titus 2:3-4",
+          "text": "Older women are to teach what is good, and so train the young women."
+        }
+      ],
+      "related": [
+        {
+          "label": "Discipleship: Following Jesus",
+          "href": "/life/discipleship-following-jesus"
+        },
+        {
+          "label": "Making Disciples at the Table",
+          "href": "/life/making-disciples-at-the-table"
+        }
+      ]
+    },
+    {
       "id": "betrayal",
       "label": "Betrayal",
       "keywords": [
@@ -468,6 +522,56 @@
         {
           "label": "Shame and the Hiding Self",
           "href": "/life/shame-and-the-hiding-self"
+        }
+      ]
+    },
+    {
+      "id": "breaking-bad-habits",
+      "label": "Breaking Bad Habits",
+      "keywords": [
+        "habit",
+        "habits",
+        "addiction",
+        "self-control",
+        "willpower",
+        "discipline",
+        "stuck in a cycle",
+        "keep failing",
+        "can't stop",
+        "temptation",
+        "vice",
+        "change"
+      ],
+      "framing": "A habit is a groove worn into the soul by repetition, and it will not be broken by a single burst of willpower but by a new pattern practiced over time, with grace. Scripture is honest that the thing you do not want to do is often the thing you keep doing, and it does not leave you there to white-knuckle it alone.",
+      "cultural": "We are sold the lie of the quick fix and the fresh start, the resolution that lasts a week, and then we hate ourselves when the old groove pulls us back. We treat habit change as raw willpower and shame, missing what actually forms a person, the small repeated act, the new company, the daily practice. I have resolved on Sunday and relapsed by Wednesday and called myself a failure rather than a beginner.",
+      "historical": "Aristotle taught that we become what we repeatedly do, that virtue is a habit and not a feeling. Augustine in his Confessions traced with brutal honesty how a habit, indulged, becomes a chain, and how only grace finally broke his. The monastic rule of life and the spiritual disciplines of the church have always known that the soul is shaped less by grand decisions than by daily ones, and James K. A. Smith has lately recovered this for our age.",
+      "application": "Do not just try to stop the old thing, replace it, since the soul abhors a vacuum and an unfilled space draws the habit back. Change your patterns and your company, removing the cue and adding people who pull you upward. Confess the struggle to someone, since secrecy is the soil sin grows in. Expect to fail and to begin again, leaning not on your willpower but on the grace that is new every morning.",
+      "verses": [
+        {
+          "ref": "Romans 7:15",
+          "text": "I do not do what I want, but I do the very thing I hate."
+        },
+        {
+          "ref": "Galatians 5:16",
+          "text": "Walk by the Spirit, and you will not gratify the desires of the flesh."
+        },
+        {
+          "ref": "1 Corinthians 10:13",
+          "text": "God will also provide the way of escape, that you may be able to endure it."
+        },
+        {
+          "ref": "James 5:16",
+          "text": "Confess your sins to one another and pray for one another, that you may be healed."
+        },
+        {
+          "ref": "Lamentations 3:22-23",
+          "text": "His mercies never come to an end. They are new every morning."
+        }
+      ],
+      "related": [
+        {
+          "label": "Addiction and the Long Road Back",
+          "href": "/life/addiction-and-the-long-road-back"
         }
       ]
     },
@@ -681,6 +785,60 @@
       ]
     },
     {
+      "id": "church-hurt",
+      "label": "Church Hurt",
+      "keywords": [
+        "church hurt",
+        "wounded by the church",
+        "betrayed",
+        "spiritual abuse",
+        "leaving church",
+        "hypocrisy",
+        "burned",
+        "religious trauma",
+        "disillusioned",
+        "pastor failed me",
+        "broken trust",
+        "done with church"
+      ],
+      "framing": "If the church wounded you, your pain is not a sign of weak faith. It is the wound that comes from having loved something that was supposed to be safe. Scripture never pretends God's people are clean, and the God who saw your hurt grieves the ones who caused it more than you do.",
+      "cultural": "We tend to treat church hurt as a failure to forgive, hurrying the wounded toward an apology no one offered. But the Bible is unflinching about the harm done inside the household of God, and it does not ask the injured to pretend. Jesus reserved his hardest words not for the broken but for the religious who laid burdens on others and would not lift a finger. The hurt is real, and Scripture names it real.",
+      "historical": "The wounds run through the whole story. The prophet Ezekiel, around 590 BC, indicted the shepherds of Israel who fed themselves and not the flock, and the scattered sheep are still the Lord's concern. Centuries later the Donatist crisis forced Augustine, around AD 400, to wrestle with a church full of people who had failed each other badly, and he concluded the church is a field of wheat and weeds until the end, holy and wounded at once. I have stood on both sides of that field. I have been hurt, and I have been the one who hurt.",
+      "application": "Do not let the people who wounded you decide whether you keep Jesus. Tell the truth about what happened, to God and to one safe person, without softening it to seem more spiritual. Take the time you need, but try not to confuse a season away to heal with a permanent exile from God's people. If what you suffered was abuse, name it as abuse, seek help, and know that staying away from the abuser is not the same as staying away from Christ.",
+      "verses": [
+        {
+          "ref": "Ezekiel 34:4",
+          "text": "The weak you have not strengthened, and the strayed you have not brought back, but with force and harshness you have ruled them."
+        },
+        {
+          "ref": "Psalm 55:12-13",
+          "text": "It is not an enemy who taunts me, but you, a man, my equal, my companion, my familiar friend."
+        },
+        {
+          "ref": "Psalm 147:3",
+          "text": "He heals the brokenhearted and binds up their wounds."
+        },
+        {
+          "ref": "Matthew 18:6",
+          "text": "Whoever causes one of these little ones to sin, it would be better for him to have a great millstone fastened around his neck."
+        },
+        {
+          "ref": "John 10:14",
+          "text": "I am the good shepherd. I know my own and my own know me."
+        }
+      ],
+      "related": [
+        {
+          "label": "Conflict and Reconciliation",
+          "href": "/life/conflict-and-reconciliation"
+        },
+        {
+          "label": "The Church as Family",
+          "href": "/life/the-church-as-family"
+        }
+      ]
+    },
+    {
       "id": "marriage-intimacy",
       "label": "Closeness in Marriage",
       "keywords": [
@@ -731,6 +889,109 @@
         {
           "label": "The Home and the Family",
           "href": "/life/the-home-and-the-family"
+        }
+      ]
+    },
+    {
+      "id": "comparison-online",
+      "label": "Comparison and Envy Online",
+      "keywords": [
+        "comparison",
+        "comparing",
+        "envy",
+        "jealous",
+        "not enough",
+        "everyone else",
+        "highlight reel",
+        "feel behind",
+        "fomo",
+        "inadequate",
+        "discontent",
+        "their life"
+      ],
+      "framing": "Comparison is the thief that arrives the moment you measure your ordinary life against someone else's edited one. Scripture calls envy rottenness in the bones and offers instead a strange contentment, the kind that has learned to be at peace whether the account is full or empty.",
+      "cultural": "The feed is a parade of best moments, the vacation and the win and the smiling table, with the failures and the dread cropped out. We compare our backstage to everyone else's stage and come away convinced we are behind, smaller, missing out. I have set down a good day feeling poor because a stranger's looked better, which is the oldest theft there is.",
+      "historical": "Envy is the second story in human history, Cain killing Abel because his brother's offering was accepted, and it runs straight through Scripture to Saul watching the crowds praise David. The early church named it one of the deadly sins, and Thomas Aquinas in the thirteenth century defined it precisely as sorrow at another's good, the exact ache the feed is engineered to produce.",
+      "application": "Name the comparison the moment it strikes, and turn it into gratitude for what is actually in your hands. Cut back on the feeds that consistently leave you feeling poor, since you can choose what you look at. Rejoice with those who rejoice rather than resenting them, an act that starves the envy. And remember you are comparing a known and ordinary life to a stranger's careful illusion.",
+      "verses": [
+        {
+          "ref": "Proverbs 14:30",
+          "text": "A tranquil heart gives life to the flesh, but envy makes the bones rot."
+        },
+        {
+          "ref": "Philippians 4:11",
+          "text": "I have learned in whatever situation I am to be content."
+        },
+        {
+          "ref": "Galatians 6:4",
+          "text": "Let each one test his own work, and his reason to boast will be in himself alone."
+        },
+        {
+          "ref": "Romans 12:15",
+          "text": "Rejoice with those who rejoice, weep with those who weep."
+        },
+        {
+          "ref": "Exodus 20:17",
+          "text": "You shall not covet your neighbor's house or anything that is your neighbor's."
+        }
+      ],
+      "related": [
+        {
+          "label": "Contentment Against Envy",
+          "href": "/life/contentment-against-envy"
+        }
+      ]
+    },
+    {
+      "id": "complaining",
+      "label": "Complaining and Grumbling",
+      "keywords": [
+        "complaining",
+        "complain",
+        "grumbling",
+        "grumble",
+        "murmuring",
+        "ungrateful",
+        "negativity",
+        "discontent",
+        "whining",
+        "bitter",
+        "always something"
+      ],
+      "framing": "Complaining feels like honesty, but Scripture treats the grumbling heart as a serious thing. There is a vast difference between lament, which brings real pain to God, and grumbling, which nurses a grievance against him. One draws near in trust. The other accuses in the dark, and slowly poisons the one who keeps it.",
+      "cultural": "The wilderness generation, rescued from Egypt and fed with bread from heaven, became the Bible's enduring picture of the grumbling heart, complaining against Moses and against God over water and food and the hardship of the road. Their murmuring was not really about the menu. It was distrust dressed as inconvenience, and it kept a whole generation from rest.",
+      "historical": "The desert monks of the fourth century named grumbling among the corrosive thoughts and watched how it spread through a community like rot. Benedict, writing his Rule in the sixth century, singled out murmuring as a special danger to common life, knowing that a complaining spirit could undo in private what obedience built in the open.",
+      "application": "Catch the running complaint before it becomes the soundtrack of your day, since the ear grows used to its own grumbling. Practice naming what is good and true out loud, because gratitude is a habit the grumbling heart has simply let atrophy. Take the real grievance to God as honest lament rather than nursing it sideways toward everyone but him. And refuse to be the voice that pulls a whole room downward.",
+      "verses": [
+        {
+          "ref": "Philippians 2:14",
+          "text": "Do all things without grumbling or disputing."
+        },
+        {
+          "ref": "1 Corinthians 10:10",
+          "text": "Nor grumble, as some of them did and were destroyed by the Destroyer."
+        },
+        {
+          "ref": "Numbers 11:1",
+          "text": "The people complained in the hearing of the Lord about their misfortunes."
+        },
+        {
+          "ref": "1 Thessalonians 5:18",
+          "text": "Give thanks in all circumstances, for this is the will of God in Christ Jesus for you."
+        },
+        {
+          "ref": "James 5:9",
+          "text": "Do not grumble against one another, brothers, so that you may not be judged."
+        }
+      ],
+      "related": [
+        {
+          "label": "Contentment Against Envy",
+          "href": "/life/contentment-against-envy"
+        },
+        {
+          "label": "The Story We Live In",
+          "href": "/life/the-story-we-live-in"
         }
       ]
     },
@@ -990,6 +1251,56 @@
       ]
     },
     {
+      "id": "decision-fatigue",
+      "label": "Decision Fatigue and Overwhelm",
+      "keywords": [
+        "decision",
+        "decisions",
+        "overwhelmed",
+        "indecision",
+        "can't decide",
+        "too many choices",
+        "paralyzed",
+        "fatigue",
+        "stuck",
+        "what should i do",
+        "options",
+        "discernment"
+      ],
+      "framing": "An endless menu of choices is not freedom but a kind of exhaustion, and a heart that must decide everything from scratch wears thin by noon. Scripture does not hand you a flowchart for every fork in the road. It offers something better, the promise that the one who asks for wisdom will be given it, without reproach.",
+      "cultural": "We are told that more options mean more freedom, so we have multiplied them past what the soul can bear, agonizing over the small and the large alike until the deciding itself becomes the burden. We treat every choice as if our whole future hung on getting it perfectly right, and the weight of it freezes us. I have spent more energy choosing than the choice was ever worth.",
+      "historical": "The wisdom tradition of Proverbs assumed that a settled character makes most decisions long before they arrive, that the man of steady habits need not relitigate his life each morning. Ignatius of Loyola in the sixteenth century gave the church a careful practice of discernment, weighing the movements of the heart toward God rather than chasing the perfect option. Wisdom was never mainly about information. It was about a formed soul.",
+      "application": "Settle the recurring things in advance with a rule and a rhythm, so the small choices stop draining you and the energy is saved for what matters. Make the big decisions in prayer and in counsel, unhurried, trusting that God guides a moving foot. Accept that most choices are not between the holy and the sinful but between two good roads, and that a faithful person can walk either. Then decide, and entrust the outcome to God.",
+      "verses": [
+        {
+          "ref": "James 1:5",
+          "text": "If any of you lacks wisdom, let him ask God, who gives generously to all."
+        },
+        {
+          "ref": "Proverbs 3:5-6",
+          "text": "Trust in the Lord with all your heart, and he will make straight your paths."
+        },
+        {
+          "ref": "Proverbs 16:9",
+          "text": "The heart of man plans his way, but the Lord establishes his steps."
+        },
+        {
+          "ref": "Proverbs 11:14",
+          "text": "In an abundance of counselors there is safety."
+        },
+        {
+          "ref": "Psalm 32:8",
+          "text": "I will instruct you and teach you in the way you should go."
+        }
+      ],
+      "related": [
+        {
+          "label": "Wisdom for All of Life",
+          "href": "/life/wisdom-for-all-of-life"
+        }
+      ]
+    },
+    {
       "id": "decisions-and-guidance",
       "label": "Decisions and Guidance",
       "keywords": [
@@ -1242,6 +1553,60 @@
         {
           "label": "Success and Failure",
           "href": "/life/success-and-failure"
+        }
+      ]
+    },
+    {
+      "id": "division-in-the-church",
+      "label": "Division in the Church",
+      "keywords": [
+        "division",
+        "church split",
+        "conflict",
+        "gossip",
+        "factions",
+        "disagreement",
+        "fighting",
+        "politics in church",
+        "taking sides",
+        "quarrel",
+        "unity",
+        "schism"
+      ],
+      "framing": "Division is the oldest disease in the church, and it almost never arrives wearing the name of pride. It comes dressed as principle, as discernment, as standing for truth. Scripture takes it with deadly seriousness, because the watching world reads the gospel mostly in how we treat each other.",
+      "cultural": "We have learned to sort ourselves by tribe and to mistake our preferences for convictions worth dividing over. The church absorbs this from the air we breathe, splitting along the same lines the culture splits, then baptizing the split with a verse. But Paul confronted a congregation already cracking into camps and asked whether Christ was divided, and refused to let any of them claim him as their party's possession.",
+      "historical": "The first great quarrel reached the apostles themselves at the Jerusalem Council around AD 49, where the church nearly broke over who belonged, and chose unity without erasing the hard truth. The history since is sobering. The Great Schism of 1054 and the fractures of the Reformation taught the church that some divisions cannot be avoided and many should never have happened. I have watched a congregation tear over a matter that mattered to no one a decade later, and I did not always work for peace as hard as I worked to be right.",
+      "application": "Before you join a side, ask whether the matter is worth the body of Christ, because most are not. Refuse to carry gossip, which is the fuel every division runs on, and go directly to the person rather than around them. Distinguish the doctrines worth contending for from the preferences worth dying to, and hold the first firmly and the second loosely. Where you can keep the peace without betraying the truth, keep it.",
+      "verses": [
+        {
+          "ref": "1 Corinthians 1:10",
+          "text": "I appeal to you that all of you agree, and that there be no divisions among you."
+        },
+        {
+          "ref": "Ephesians 4:3",
+          "text": "Eager to maintain the unity of the Spirit in the bond of peace."
+        },
+        {
+          "ref": "John 17:21",
+          "text": "That they may all be one, so that the world may believe that you have sent me."
+        },
+        {
+          "ref": "Romans 16:17",
+          "text": "Watch out for those who cause divisions, contrary to the doctrine that you have been taught."
+        },
+        {
+          "ref": "Philippians 2:3",
+          "text": "Do nothing from selfish ambition, but in humility count others more significant than yourselves."
+        }
+      ],
+      "related": [
+        {
+          "label": "Conflict and Reconciliation",
+          "href": "/life/conflict-and-reconciliation"
+        },
+        {
+          "label": "Life Together: The One Anothers",
+          "href": "/life/life-together-the-one-anothers"
         }
       ]
     },
@@ -1609,6 +1974,59 @@
       ]
     },
     {
+      "id": "finding-a-church",
+      "label": "Finding a Church",
+      "keywords": [
+        "find a church",
+        "church shopping",
+        "new church",
+        "looking for a church",
+        "moved",
+        "where to go",
+        "denomination",
+        "visiting churches",
+        "no church home",
+        "good church",
+        "choosing a church"
+      ],
+      "framing": "Finding a church is not finding a perfect church, because none exists and you would not fit it if it did. Scripture calls you not to a building or a brand but to a body, a particular set of people you will learn to love because they are difficult, and who will love you the same way.",
+      "cultural": "Our age treats the church like every other product, something we sample for the music, the children's program, the preaching, until it stops meeting our preferences. But the New Testament knows nothing of the spiritual consumer who attends without belonging. It assumes you are joined to a people who know your name, carry your burdens, and have a claim on you. The question is less which church serves me and more which church can I serve.",
+      "historical": "From the beginning the church was local and named, the believers at Corinth, at Philippi, at Ephesus, each a real congregation with real failings and a real apostle writing to fix them. The Reformer John Calvin, in Geneva around 1540, taught that wherever the Word is rightly preached and the sacraments rightly administered, there is a true church, however imperfect the people in the pews. The marks were never excellence. They were faithfulness.",
+      "application": "Look first for a church where the Scriptures are preached as true and the gospel of grace is clear, not for the one that flatters your taste. Visit, but do not visit forever. Choose a community you can commit to and then stay long enough to be known and needed. Bring your gifts, not just your critique, and remember you are not auditioning a church so much as finding the family you will grow old beside.",
+      "verses": [
+        {
+          "ref": "Hebrews 10:24-25",
+          "text": "Let us consider how to stir up one another to love and good works, not neglecting to meet together."
+        },
+        {
+          "ref": "Acts 2:42",
+          "text": "They devoted themselves to the apostles' teaching and the fellowship, to the breaking of bread and the prayers."
+        },
+        {
+          "ref": "1 Corinthians 12:27",
+          "text": "Now you are the body of Christ and individually members of it."
+        },
+        {
+          "ref": "Ephesians 4:11-12",
+          "text": "He gave the shepherds and teachers to equip the saints for the work of ministry, for building up the body of Christ."
+        },
+        {
+          "ref": "Psalm 84:10",
+          "text": "A day in your courts is better than a thousand elsewhere."
+        }
+      ],
+      "related": [
+        {
+          "label": "Church Membership and Commitment",
+          "href": "/life/church-membership-and-commitment"
+        },
+        {
+          "label": "The Church as Family",
+          "href": "/life/the-church-as-family"
+        }
+      ]
+    },
+    {
       "id": "food-and-eating",
       "label": "Food and Eating",
       "keywords": [
@@ -1771,6 +2189,109 @@
       ]
     },
     {
+      "id": "giving-to-the-church",
+      "label": "Giving to the Church",
+      "keywords": [
+        "giving",
+        "tithe",
+        "offering",
+        "generosity",
+        "money",
+        "stewardship",
+        "supporting the church",
+        "cannot afford",
+        "ten percent",
+        "sacrificial giving",
+        "first fruits"
+      ],
+      "framing": "Giving is not the church collecting a fee from you. It is the slow loosening of money's grip on your heart, a discipline Scripture treats as worship and warns against treating as obligation. The question is never only how much the church needs. It is what your wallet reveals about where your trust actually rests.",
+      "cultural": "We are uneasy when church and money meet, and some of that unease is earned by ministries that fleeced their people. But the answer to greed in the pulpit is not closed hands in the pew. Scripture is relentless that generosity sets a person free, that you cannot serve both God and money, and that what we do with what we have is one of the truest tests of what we believe. The culture says it is mine. The gospel says it was always a trust.",
+      "historical": "The early church startled Rome by laying its goods at the apostles' feet and leaving no one in need. The pattern of the tithe runs back to Abraham and through Israel, but the New Testament lifts the ceiling rather than lowers it, pointing to a widow who gave two small coins and outgave the rich because she gave all she had. John Wesley, in the eighteenth century, earned a great deal and gave nearly all of it, living on a fixed sum and dying with almost nothing, on purpose. The hand that gives is the hand that holds nothing too tightly.",
+      "application": "Give first, before your spending bends around what is left, and give proportionally so that the giving actually costs you something. Hold the tithe as a wise starting line rather than a law, and let generosity grow as trust grows. If money is tight, give what you can with a glad heart and refuse the shame, since God measures the gift against what you kept, not against what someone richer gave. Watch what generosity does to fear. It loosens it.",
+      "verses": [
+        {
+          "ref": "2 Corinthians 9:7",
+          "text": "Each one must give as he has decided in his heart, not reluctantly or under compulsion, for God loves a cheerful giver."
+        },
+        {
+          "ref": "Mark 12:43-44",
+          "text": "This poor widow has put in more than all those contributing, for she out of her poverty has put in everything she had."
+        },
+        {
+          "ref": "Malachi 3:10",
+          "text": "Bring the full tithe into the storehouse, that there may be food in my house."
+        },
+        {
+          "ref": "Luke 6:38",
+          "text": "Give, and it will be given to you. Good measure, pressed down, shaken together, running over."
+        },
+        {
+          "ref": "2 Corinthians 8:2",
+          "text": "Their abundance of joy and their extreme poverty have overflowed in a wealth of generosity."
+        }
+      ],
+      "related": [
+        {
+          "label": "Generosity and the Open Hand",
+          "href": "/life/generosity-and-the-open-hand"
+        }
+      ]
+    },
+    {
+      "id": "gods-sovereignty",
+      "label": "God's Sovereignty",
+      "keywords": [
+        "sovereignty",
+        "is god in control",
+        "providence",
+        "god's plan",
+        "free will",
+        "predestination",
+        "everything happens for a reason",
+        "god's will",
+        "control",
+        "fate",
+        "purpose",
+        "trust god's plan"
+      ],
+      "framing": "Scripture insists that God reigns over all things, and that this is comfort rather than fatalism. He is not a distant clockmaker nor a tyrant pulling strings, but a Father who works all things, even the ones meant for evil, toward good for those who love him.",
+      "cultural": "Our age prizes control and panics at its loss, and so the claim that God is sovereign cuts two ways, threatening our autonomy and steadying our fear. Beware the bumper-sticker version, everything happens for a reason, which Scripture never quite says and which can crush the grieving. The Bible holds something deeper, that no suffering is wasted in God's hands, which is not the same as saying every suffering is good.",
+      "historical": "The church has long held divine sovereignty and human responsibility together without fully resolving the tension. Augustine in the fifth century stressed grace and election against Pelagius, the Reformers sharpened it further, and the Synod of Dort in 1619 and the Arminian remonstrants who opposed it drew the lines most Protestants still live within. Across the divide, all confess that God governs and that we are accountable, both at once.",
+      "application": "Let God's sovereignty be a pillow to rest on, not a problem to solve, especially when life slips your grasp. Do not use it to explain away another's pain, but let it ground your own peace, that you are held by a hand that does not slip. And hold the mystery honestly, that you are genuinely responsible and he is genuinely in control, and you cannot see the whole.",
+      "verses": [
+        {
+          "ref": "Romans 8:28",
+          "text": "For those who love God all things work together for good, for those called according to his purpose."
+        },
+        {
+          "ref": "Genesis 50:20",
+          "text": "You meant evil against me, but God meant it for good."
+        },
+        {
+          "ref": "Proverbs 16:9",
+          "text": "The heart of man plans his way, but the Lord establishes his steps."
+        },
+        {
+          "ref": "Isaiah 46:10",
+          "text": "My counsel shall stand, and I will accomplish all my purpose."
+        },
+        {
+          "ref": "Ephesians 1:11",
+          "text": "Him who works all things according to the counsel of his will."
+        }
+      ],
+      "related": [
+        {
+          "label": "Waiting and Unanswered Prayer",
+          "href": "/life/waiting-and-unanswered-prayer"
+        },
+        {
+          "label": "Suffering and the Silence of God",
+          "href": "/life/suffering-and-the-silence-of-god"
+        }
+      ]
+    },
+    {
       "id": "gossip-and-the-tongue",
       "label": "Gossip and the Tongue",
       "keywords": [
@@ -1879,6 +2400,60 @@
       ]
     },
     {
+      "id": "greed",
+      "label": "Greed and the Grasping Hand",
+      "keywords": [
+        "greed",
+        "greedy",
+        "covet",
+        "coveting",
+        "more",
+        "money",
+        "hoarding",
+        "stingy",
+        "materialism",
+        "never enough",
+        "possessions",
+        "want"
+      ],
+      "framing": "Greed is the hunger that never says enough. Scripture names it not as a sin of the poor or the rich alone but of the human heart, which keeps mistaking the next acquisition for the rest it is actually looking for. Jesus calls us to guard against all of it, because a life does not consist in the abundance of possessions.",
+      "cultural": "In the ancient agrarian world, wealth meant land, grain, and barns, and the man who built bigger storehouses looked simply prudent to his neighbors. Into that, Jesus told of the rich fool who filled his barns the very night his soul was required of him, exposing the quiet idolatry of a security built on stored-up things and a god named more.",
+      "historical": "Basil of Caesarea, preaching in the fourth century during a famine, told the hoarders that the bread in their cupboards belonged to the hungry. Centuries later John Wesley earned well, gave nearly all of it away, and died with little, having warned that money tends to close the hand it fills.",
+      "application": "Name the lie that the next thing will finally be enough, since it never has been. Give first and on purpose, before your spending hardens around your wants, and watch generosity loosen greed's grip. Practice contentment as a learned skill, not a mood. And measure your life by what you can release rather than what you have managed to keep.",
+      "verses": [
+        {
+          "ref": "Luke 12:15",
+          "text": "Take care, and be on your guard against all covetousness, for one's life does not consist in the abundance of his possessions."
+        },
+        {
+          "ref": "Hebrews 13:5",
+          "text": "Keep your life free from love of money, and be content with what you have."
+        },
+        {
+          "ref": "Ecclesiastes 5:10",
+          "text": "He who loves money will not be satisfied with money."
+        },
+        {
+          "ref": "1 Timothy 6:9",
+          "text": "Those who desire to be rich fall into temptation, into a snare, into many senseless desires."
+        },
+        {
+          "ref": "Proverbs 11:24",
+          "text": "One gives freely, yet grows all the richer; another withholds, and only suffers want."
+        }
+      ],
+      "related": [
+        {
+          "label": "Money and the Heart",
+          "href": "/life/money-and-the-heart"
+        },
+        {
+          "label": "Contentment Against Envy",
+          "href": "/life/contentment-against-envy"
+        }
+      ]
+    },
+    {
       "id": "grief",
       "label": "Grief and Loss",
       "keywords": [
@@ -1978,6 +2553,60 @@
       ]
     },
     {
+      "id": "hardness-of-heart",
+      "label": "Hardness of Heart",
+      "keywords": [
+        "hardness of heart",
+        "hard heart",
+        "hardened",
+        "callous",
+        "cold",
+        "unfeeling",
+        "numb",
+        "stubborn",
+        "unrepentant",
+        "indifferent",
+        "calloused",
+        "can't feel"
+      ],
+      "framing": "Hardness of heart is not a sudden state but the slow result of a thousand small refusals. Each time conscience is overruled, the heart grows a little less able to feel. Scripture warns of it as the most dangerous condition of all, because the hardened heart no longer knows it is hard, and feels its own numbness as peace.",
+      "cultural": "Pharaoh is the Bible's lasting image of the hardened heart, refusing plague after plague until he could no longer relent even when he wished to. The Hebrew prophets spoke of a heart of stone that had to be replaced with a heart of flesh, knowing that no amount of warning reaches a heart that has trained itself, choice by choice, not to be reached.",
+      "historical": "The Letter to the Hebrews, written to believers tempted to drift back, urged them not to harden their hearts as in the wilderness rebellion, naming the deceit of sin that calluses a person over time. The Puritan pastors of the seventeenth century watched this carefully in their people, warning that the most fearful judgment is often simply being left to the hardness one has chosen.",
+      "application": "Pay attention to the warnings you have learned to ignore, since the small numbness is where the hardening begins. Stay tender by confessing quickly and obeying promptly, before delay does its calcifying work. Sit under Scripture and honest community that can still reach you, and ask God for the heart of flesh you cannot manufacture in yourself. The very fact that hardness troubles you is mercy at work.",
+      "verses": [
+        {
+          "ref": "Hebrews 3:15",
+          "text": "Today, if you hear his voice, do not harden your hearts as in the rebellion."
+        },
+        {
+          "ref": "Ezekiel 36:26",
+          "text": "I will remove the heart of stone from your flesh and give you a heart of flesh."
+        },
+        {
+          "ref": "Hebrews 3:13",
+          "text": "Exhort one another every day, that none of you may be hardened by the deceitfulness of sin."
+        },
+        {
+          "ref": "Proverbs 28:14",
+          "text": "Whoever hardens his heart will fall into calamity."
+        },
+        {
+          "ref": "Psalm 95:8",
+          "text": "Do not harden your hearts, as at Meribah, as on the day at Massah in the wilderness."
+        }
+      ],
+      "related": [
+        {
+          "label": "Discipleship: Following Jesus",
+          "href": "/life/discipleship-following-jesus"
+        },
+        {
+          "label": "The Story We Live In",
+          "href": "/life/the-story-we-live-in"
+        }
+      ]
+    },
+    {
       "id": "hearing-from-god",
       "label": "Hearing From God",
       "keywords": [
@@ -2028,6 +2657,110 @@
         {
           "label": "Wisdom for All of Life",
           "href": "/life/wisdom-for-all-of-life"
+        }
+      ]
+    },
+    {
+      "id": "heaven-and-eternity",
+      "label": "Heaven and Eternity",
+      "keywords": [
+        "heaven",
+        "eternity",
+        "afterlife",
+        "eternal life",
+        "what happens when we die",
+        "paradise",
+        "new heavens",
+        "new earth",
+        "everlasting",
+        "the world to come",
+        "dead loved ones",
+        "resurrection of the body"
+      ],
+      "framing": "Heaven in Scripture is less a misty escape from earth than the healing of it. The Christian hope is not disembodied souls on clouds but a new heaven and a new earth, bodies raised, the world remade, and God himself dwelling among his people.",
+      "cultural": "Much of what people picture as heaven, the harps and the clouds and the endless rest, owes more to medieval art and sentiment than to the Bible. The wider culture often treats the afterlife as a vague continuation of the self, while Scripture speaks of a renewed creation so concrete it has a city, a river, and a table. The hope is not less physical than this life but more.",
+      "historical": "The early creeds confessed the resurrection of the body and the life everlasting, not the immortality of the soul alone. The medieval imagination, shaped by Dante's vision around 1320, gave heaven its tiered geography, while N.T. Wright in our own time has pressed the church back toward the New Testament's earthier hope, that the dead are with Christ now and await a bodily resurrection in a renewed world.",
+      "application": "Let the hope of the world to come loosen your grip on this one without making you useless in it, for those who expect a new earth tend to tend this one with more care, not less. Grieve your dead with hope, since in Christ they are not lost but ahead of you. And measure your treasures against a kingdom that does not rust.",
+      "verses": [
+        {
+          "ref": "Revelation 21:1",
+          "text": "Then I saw a new heaven and a new earth, for the first heaven and the first earth had passed away."
+        },
+        {
+          "ref": "John 14:2-3",
+          "text": "In my Father's house are many rooms. I go to prepare a place for you."
+        },
+        {
+          "ref": "1 Corinthians 2:9",
+          "text": "What no eye has seen, nor ear heard, what God has prepared for those who love him."
+        },
+        {
+          "ref": "Philippians 1:23",
+          "text": "My desire is to depart and be with Christ, for that is far better."
+        },
+        {
+          "ref": "Revelation 21:3",
+          "text": "Behold, the dwelling place of God is with man. He will dwell with them."
+        }
+      ],
+      "related": [
+        {
+          "label": "Facing Death",
+          "href": "/life/facing-death"
+        },
+        {
+          "label": "The Story We Live In",
+          "href": "/life/the-story-we-live-in"
+        }
+      ]
+    },
+    {
+      "id": "hell-and-judgment",
+      "label": "Hell and Judgment",
+      "keywords": [
+        "hell",
+        "judgment",
+        "damnation",
+        "wrath",
+        "eternal punishment",
+        "lake of fire",
+        "final judgment",
+        "is hell real",
+        "condemnation",
+        "justice of god",
+        "second death",
+        "accountability"
+      ],
+      "framing": "Hell is the hardest doctrine the church holds, and it should never be held lightly or with relish. Scripture presents it not as God's eagerness to punish but as the terrible ratification of a person's refusal of him, the door, as one writer put it, locked from the inside.",
+      "cultural": "Our age finds the very idea offensive, and the church has too often deserved the offense, wielding hell as a threat and a recruiting tool. Yet the same culture that recoils at judgment longs for justice and rages when the wicked go free. Scripture holds both, that God will not let evil have the last word and that he takes no pleasure in the death of anyone.",
+      "historical": "The church has never spoken with one voice here. Augustine in the fifth century held the traditional view of eternal conscious punishment, while figures from Origen in the third century to some modern evangelicals have argued for conditional immortality or a wider hope. C.S. Lewis in 1945 portrayed hell as the self curved finally inward, a place its residents prefer to surrender. The creeds affirm that Christ will come to judge, and leave the rest to him.",
+      "application": "Hold this doctrine with tears, never satisfaction, remembering you were not spared because you deserved it. Let it sober your witness without weaponizing it, since fear is a poor evangelist and love a better one. And let the reality of judgment drive you not to threaten your neighbor but to long for his rescue, and to leave the verdict to the Judge who is also the one who died for him.",
+      "verses": [
+        {
+          "ref": "Hebrews 9:27",
+          "text": "It is appointed for man to die once, and after that comes judgment."
+        },
+        {
+          "ref": "Ezekiel 33:11",
+          "text": "I have no pleasure in the death of the wicked, but that the wicked turn from his way and live."
+        },
+        {
+          "ref": "Matthew 25:46",
+          "text": "These will go away into eternal punishment, but the righteous into eternal life."
+        },
+        {
+          "ref": "2 Peter 3:9",
+          "text": "The Lord is patient toward you, not wishing that any should perish, but that all should reach repentance."
+        },
+        {
+          "ref": "Romans 2:6",
+          "text": "He will render to each one according to his works."
+        }
+      ],
+      "related": [
+        {
+          "label": "Facing Death",
+          "href": "/life/facing-death"
         }
       ]
     },
@@ -2086,6 +2819,59 @@
       ]
     },
     {
+      "id": "hypocrisy",
+      "label": "Hypocrisy and the Mask",
+      "keywords": [
+        "hypocrisy",
+        "hypocrite",
+        "two-faced",
+        "pretending",
+        "fake",
+        "phony",
+        "double life",
+        "mask",
+        "appearances",
+        "inconsistent",
+        "say one thing"
+      ],
+      "framing": "Hypocrisy is the gap between the face we show and the life we live. The word itself comes from the stage, where an actor spoke behind a mask. Scripture reserves some of its hardest words for it, not because the hypocrite is the worst sinner but because the mask makes repentance impossible, hiding the very wound that needs healing.",
+      "cultural": "In the first century the Greek word for hypocrite still carried the smell of the theater, the player performing a part for the crowd. Jesus aimed it at the religious leaders who tithed their garden herbs while neglecting justice and mercy, cleaning the outside of the cup while the inside stayed full of greed, performing a righteousness that was only ever a costume.",
+      "historical": "Søren Kierkegaard, writing in nineteenth-century Denmark, skewered a comfortable Christendom that admired Jesus without following him, calling its members spectators who had confused attendance with discipleship. The church has had to confess this in every age, from leaders who preached holiness they did not practice to a respectability that masked real rot.",
+      "application": "Close the gap from the inside, not by polishing the performance but by letting your real life and your professed life become one. Tell the truth about your struggles to someone safe, since the mask only survives in secret. Care more about what God sees than what the room thinks. And when you catch yourself performing, stop and ask what you are afraid the truth would cost.",
+      "verses": [
+        {
+          "ref": "Matthew 23:27",
+          "text": "You are like whitewashed tombs, beautiful outwardly but within full of dead men's bones."
+        },
+        {
+          "ref": "Matthew 23:25",
+          "text": "You clean the outside of the cup, but inside they are full of greed and self-indulgence."
+        },
+        {
+          "ref": "Matthew 6:1",
+          "text": "Beware of practicing your righteousness before other people in order to be seen by them."
+        },
+        {
+          "ref": "1 Samuel 16:7",
+          "text": "Man looks on the outward appearance, but the Lord looks on the heart."
+        },
+        {
+          "ref": "1 John 3:18",
+          "text": "Let us not love in word or talk but in deed and in truth."
+        }
+      ],
+      "related": [
+        {
+          "label": "Shame and the Hiding Self",
+          "href": "/life/shame-and-the-hiding-self"
+        },
+        {
+          "label": "Discipleship: Following Jesus",
+          "href": "/life/discipleship-following-jesus"
+        }
+      ]
+    },
+    {
       "id": "identity-and-worth",
       "label": "Identity and Worth",
       "keywords": [
@@ -2132,6 +2918,60 @@
         {
           "label": "Identity and Worth",
           "href": "/life/identity-and-worth"
+        }
+      ]
+    },
+    {
+      "id": "idolatry",
+      "label": "Idolatry of the Heart",
+      "keywords": [
+        "idolatry",
+        "idol",
+        "idols",
+        "false god",
+        "worship",
+        "ultimate",
+        "functional god",
+        "approval",
+        "control",
+        "success",
+        "good things gone wrong",
+        "first place"
+      ],
+      "framing": "An idol is not only a statue. It is anything that takes the place meant for God, a good thing made into an ultimate thing, the love that runs your life from underneath. Scripture's first command is also its deepest diagnosis, that the human heart is restless to crown something, and will crown the wrong thing every time it is left to itself.",
+      "cultural": "The world of the Old Testament was full of carved gods, Baal and Asherah and the gods of grain and rain, and Israel was forever tempted to hedge its bets by serving them alongside the Lord. The prophets mocked the absurdity of bowing to wood a man had carved with his own hands, while naming the real idolatry underneath, a heart that wanted control more than it wanted God.",
+      "historical": "John Calvin wrote in the sixteenth century that the human heart is a perpetual factory of idols, forever manufacturing gods it can manage. Modern observers from the sociologist Robert Bellah to the pastor-theologian Tim Keller have shown how the old idols simply changed clothes, becoming career, romance, family, and image, the things we now serve without ever naming them as worship.",
+      "application": "Ask what you cannot imagine being happy without, for that is often the thing you actually worship. Watch where your money, your worry, and your daydreams go, since they map the heart better than your stated beliefs. Name the good thing that has climbed into God's seat and put it back in its place. The goal is not to love good things less but to love God first, so the rest can be loved rightly.",
+      "verses": [
+        {
+          "ref": "Exodus 20:3",
+          "text": "You shall have no other gods before me."
+        },
+        {
+          "ref": "1 John 5:21",
+          "text": "Little children, keep yourselves from idols."
+        },
+        {
+          "ref": "Jeremiah 2:13",
+          "text": "They have forsaken me, the fountain of living waters, and hewed out cisterns that can hold no water."
+        },
+        {
+          "ref": "Romans 1:25",
+          "text": "They worshiped and served the creature rather than the Creator."
+        },
+        {
+          "ref": "Psalm 115:8",
+          "text": "Those who make them become like them; so do all who trust in them."
+        }
+      ],
+      "related": [
+        {
+          "label": "The Story We Live In",
+          "href": "/life/the-story-we-live-in"
+        },
+        {
+          "label": "Money and the Heart",
+          "href": "/life/money-and-the-heart"
         }
       ]
     },
@@ -2866,6 +3706,60 @@
         {
           "label": "Forgiveness: The Hardest Grace",
           "href": "/life/forgiveness-the-hardest-grace"
+        }
+      ]
+    },
+    {
+      "id": "lust",
+      "label": "Lust and the Wandering Eye",
+      "keywords": [
+        "lust",
+        "lustful",
+        "porn",
+        "pornography",
+        "desire",
+        "tempted",
+        "temptation",
+        "fantasy",
+        "craving",
+        "wandering eye",
+        "objectify",
+        "purity"
+      ],
+      "framing": "Lust is not the same as desire, which is a gift. It is desire detached from the person, turning someone made in God's image into a thing to be used. Scripture takes it seriously precisely because it begins in the unseen room of the heart, long before anything is done with the body.",
+      "cultural": "In the first-century world Jesus addressed, the law was read as forbidding the act of adultery, and a man could feel innocent while feeding on what he had not yet done. By tracing the sin back to the look that lingers, Jesus refused that loophole, naming the heart as the place where the wrong is already underway and where every honest person stands convicted.",
+      "historical": "Augustine, who knew the grip of appetite from the inside before his conversion in 386, wrote of how a disordered love enslaves the will it once served. The desert monks of the fourth century watched the same fire and learned that the second look, not the first, is where the battle is lost or won.",
+      "application": "Treat the eyes as a gate and guard what you feed them, since the appetite grows on what it is given. Confess to one trusted person rather than fighting alone in the dark, where shame and habit compound. Build real friendships and real intimacy, because lust feeds best on isolation. And refuse to call another person material for your craving when God calls them his image.",
+      "verses": [
+        {
+          "ref": "Matthew 5:28",
+          "text": "Whoever looks at a woman with lustful intent has already committed adultery with her in his heart."
+        },
+        {
+          "ref": "Job 31:1",
+          "text": "I have made a covenant with my eyes; how then could I gaze at another."
+        },
+        {
+          "ref": "1 John 2:16",
+          "text": "The desires of the flesh and the desires of the eyes are not from the Father but from the world."
+        },
+        {
+          "ref": "James 1:14-15",
+          "text": "Each person is tempted when he is lured and enticed by his own desire, and desire gives birth to sin."
+        },
+        {
+          "ref": "1 Thessalonians 4:4",
+          "text": "That each of you know how to control his own body in holiness and honor."
+        }
+      ],
+      "related": [
+        {
+          "label": "Desire and Temptation",
+          "href": "/life/desire-and-temptation"
+        },
+        {
+          "label": "Sex and the Body",
+          "href": "/life/sex-and-the-body"
         }
       ]
     },
@@ -3985,6 +4879,56 @@
       ]
     },
     {
+      "id": "saving-and-spending",
+      "label": "Saving and Spending",
+      "keywords": [
+        "saving",
+        "spending",
+        "budget",
+        "money",
+        "debt",
+        "frugal",
+        "overspending",
+        "impulse",
+        "consumer",
+        "shopping",
+        "finances",
+        "stewardship"
+      ],
+      "framing": "How you handle money is a window into the heart, and the question is not only how much you have but what owns you. Scripture honors the wisdom that gathers little by little and warns against both the hoarding that trusts in barns and the spending that chases a wind, calling you instead to the freedom of the open and steady hand.",
+      "cultural": "We live inside a machine built to make us want, a thousand messages a day insisting that the next purchase is the one that completes us, and we have confused spending with living. We carry debt for things we cannot recall and call it normal, mistaking consumption for joy. I have bought to fill a restlessness no purchase could ever touch, and felt it empty by morning.",
+      "historical": "Proverbs praised the ant who stores in summer and warned that wealth gained hastily dwindles, wisdom three millennia old. John Wesley in the eighteenth century gave the famous rule, gain all you can, save all you can, give all you can, and lived it, dying nearly poor though he earned a fortune from his books. The church has long known that money is a good servant and a ruinous god, and that the cure for its grip is generosity.",
+      "application": "Make a simple plan and live inside it, giving a portion first, saving a portion next, and spending what remains without guilt and without grasping. Put a pause between the want and the buy, since most impulses die if you wait a day. Stay out of the debt that makes you a servant to the lender, and gather steadily rather than chasing the quick win. Hold it all loosely, as a steward and not an owner, and let generosity loosen the grip of fear.",
+      "verses": [
+        {
+          "ref": "Proverbs 21:20",
+          "text": "Precious treasure and oil are in a wise man's dwelling, but a foolish man devours it."
+        },
+        {
+          "ref": "Proverbs 13:11",
+          "text": "Wealth gained hastily will dwindle, but whoever gathers little by little will increase it."
+        },
+        {
+          "ref": "Proverbs 22:7",
+          "text": "The borrower is the slave of the lender."
+        },
+        {
+          "ref": "Luke 12:15",
+          "text": "Take care, and be on your guard against all covetousness, for one's life does not consist in possessions."
+        },
+        {
+          "ref": "1 Timothy 6:6",
+          "text": "Godliness with contentment is great gain."
+        }
+      ],
+      "related": [
+        {
+          "label": "Money and the Heart",
+          "href": "/life/money-and-the-heart"
+        }
+      ]
+    },
+    {
       "id": "self-control",
       "label": "Self-Control and Discipline",
       "keywords": [
@@ -4031,6 +4975,166 @@
         {
           "label": "Desire and Temptation",
           "href": "/life/desire-and-temptation"
+        }
+      ]
+    },
+    {
+      "id": "self-righteousness",
+      "label": "Self-Righteousness",
+      "keywords": [
+        "self-righteous",
+        "self-righteousness",
+        "judgmental",
+        "superior",
+        "looking down",
+        "holier than thou",
+        "moralistic",
+        "smug",
+        "better than",
+        "earning",
+        "merit",
+        "religious pride"
+      ],
+      "framing": "Self-righteousness is the sin that hides inside obedience, the quiet conviction that I have earned what others have not. It is the most religious of the sins and the hardest to see, because it wears the face of virtue. Scripture warns that the one who thinks he stands by his own goodness has missed the gospel entirely.",
+      "cultural": "The Pharisees of the first century were not villains but the most serious, disciplined religious people of their day, and that is the point. Jesus told of one who stood in the temple thanking God he was not like other men, beside a tax collector who could only beat his chest and beg for mercy, and it was the second man, not the first, who went home justified.",
+      "historical": "Martin Luther, an Augustinian monk who exhausted himself trying to earn a standing before God, discovered in the early sixteenth century that righteousness is received as a gift, not achieved as a wage. The whole Reformation turned on that hinge, and the church has had to relearn it whenever its morality curdled back into merit.",
+      "application": "Measure yourself against the holiness of God rather than the failures of your neighbor, where comparison always flatters. When you feel the lift of being better than someone, treat it as a warning light, not a reward. Remember daily that you are accepted by mercy and not by performance. And let that mercy make you gentle with people still in the ditch you were lifted from.",
+      "verses": [
+        {
+          "ref": "Luke 18:14",
+          "text": "Everyone who exalts himself will be humbled, but the one who humbles himself will be exalted."
+        },
+        {
+          "ref": "Luke 18:11",
+          "text": "God, I thank you that I am not like other men."
+        },
+        {
+          "ref": "Isaiah 64:6",
+          "text": "All our righteous deeds are like a polluted garment."
+        },
+        {
+          "ref": "Romans 3:23",
+          "text": "All have sinned and fall short of the glory of God."
+        },
+        {
+          "ref": "Ephesians 2:8-9",
+          "text": "By grace you have been saved through faith, and not your own doing; it is the gift of God, not a result of works."
+        }
+      ],
+      "related": [
+        {
+          "label": "Pride and Humility",
+          "href": "/life/pride-and-humility"
+        },
+        {
+          "label": "Shame and the Hiding Self",
+          "href": "/life/shame-and-the-hiding-self"
+        }
+      ]
+    },
+    {
+      "id": "selfishness",
+      "label": "Selfishness",
+      "keywords": [
+        "selfish",
+        "selfishness",
+        "self-centered",
+        "self-absorbed",
+        "me first",
+        "self-interest",
+        "inconsiderate",
+        "ego",
+        "self-seeking",
+        "looking out for myself",
+        "self-focused"
+      ],
+      "framing": "Selfishness is the gravity of the fallen heart, the slow pull that bends everything back toward the self. It is not always loud. More often it is the quiet assumption that my comfort, my schedule, and my preferences are the center the world should circle. Scripture calls us out of that orbit and toward the good of others.",
+      "cultural": "The Roman world Paul wrote into ran on patronage, where favor flowed upward to those who could repay and downward to those who would be useful. Into that calculus Paul told the Philippians to count others more significant than themselves, a command so against the grain that he had to anchor it in Christ, who, being God, did not grasp but emptied himself.",
+      "historical": "Augustine in the fifth century described sin as the heart curved in on itself, incurvatus in se, a phrase Martin Luther sharpened in the sixteenth as the root of all our trouble. The whole tradition of Christian charity, from the early church that took in the empire's discarded to the hospitals it built, has been a long argument against the gravity of the self.",
+      "application": "Start by noticing it, since selfishness hides best behind reasonable-sounding reasons. Do one thing daily that serves someone with no return to you, and let it cost you a little. Ask the people closest to you where your self-interest lands on them, and believe their answer. The cure is not self-loathing but a love that genuinely looks outward.",
+      "verses": [
+        {
+          "ref": "Philippians 2:3-4",
+          "text": "Count others more significant than yourselves. Let each of you look to the interests of others."
+        },
+        {
+          "ref": "Philippians 2:21",
+          "text": "They all seek their own interests, not those of Jesus Christ."
+        },
+        {
+          "ref": "1 Corinthians 10:24",
+          "text": "Let no one seek his own good, but the good of his neighbor."
+        },
+        {
+          "ref": "Mark 8:34",
+          "text": "If anyone would come after me, let him deny himself and take up his cross."
+        },
+        {
+          "ref": "Galatians 5:13",
+          "text": "Through love serve one another."
+        }
+      ],
+      "related": [
+        {
+          "label": "Pride and Humility",
+          "href": "/life/pride-and-humility"
+        },
+        {
+          "label": "Discipleship: Following Jesus",
+          "href": "/life/discipleship-following-jesus"
+        }
+      ]
+    },
+    {
+      "id": "serving-in-the-church",
+      "label": "Serving in the Church",
+      "keywords": [
+        "serving",
+        "volunteer",
+        "burnout",
+        "ministry",
+        "spiritual gifts",
+        "helping",
+        "overcommitted",
+        "tired of serving",
+        "where to serve",
+        "saying no",
+        "calling"
+      ],
+      "framing": "You were given gifts that were never meant to stay yours alone. Scripture frames service not as the extra work of the eager few but as the ordinary shape of belonging to a body, where every part matters and no part carries the whole. The aim is not to do everything but to do your part, faithfully and without resentment.",
+      "cultural": "Two errors meet in the modern church. Most attend like spectators, leaving the labor to the staff and the tired handful who cannot say no. And that handful often serves itself into exhaustion, mistaking activity for faithfulness and applause for calling. Scripture corrects both. It calls everyone to serve and no one to be a savior, and it ties the serving to gifts the Spirit actually gave rather than to every gap that needs filling.",
+      "historical": "The early church invented the deacon, in Acts around AD 34, precisely so that no one would burn out doing it all, dividing the labor so the work and the workers could both survive. Down the centuries the great servants, from the order Basil built for the poor to the deaconess movements of later eras, understood that service flows from worship and runs dry without it. I have served on empty more than once and called it sacrifice. It was not sacrifice. It was pride that would not rest.",
+      "application": "Find where your gifts and the church's needs overlap, and serve there rather than everywhere. Learn to say no without guilt, since a yes to everything is a no to the thing you were made for. Build rest and worship into the rhythm, because you cannot pour from a cup you never fill. And serve in the unseen places too, where there is no platform and no thanks, which is where the truest service usually lives.",
+      "verses": [
+        {
+          "ref": "1 Peter 4:10",
+          "text": "As each has received a gift, use it to serve one another, as good stewards of God's varied grace."
+        },
+        {
+          "ref": "Galatians 5:13",
+          "text": "Through love serve one another."
+        },
+        {
+          "ref": "Romans 12:6",
+          "text": "Having gifts that differ according to the grace given to us, let us use them."
+        },
+        {
+          "ref": "Mark 10:45",
+          "text": "The Son of Man came not to be served but to serve, and to give his life as a ransom for many."
+        },
+        {
+          "ref": "Colossians 3:23",
+          "text": "Whatever you do, work heartily, as for the Lord and not for men."
+        }
+      ],
+      "related": [
+        {
+          "label": "Life Together: The One Anothers",
+          "href": "/life/life-together-the-one-anothers"
+        },
+        {
+          "label": "The Church as Family",
+          "href": "/life/the-church-as-family"
         }
       ]
     },
@@ -4296,6 +5400,56 @@
       ]
     },
     {
+      "id": "social-media",
+      "label": "Social Media and Attention",
+      "keywords": [
+        "social media",
+        "phone",
+        "scrolling",
+        "distraction",
+        "screen time",
+        "instagram",
+        "addicted to phone",
+        "doom scroll",
+        "attention",
+        "notifications",
+        "feed",
+        "online"
+      ],
+      "framing": "Your attention is not a neutral thing you happen to spend. It is the soil your soul grows in, and these tools are built by careful people to capture it and sell it. Scripture says guard your heart, for from it flow the springs of life, and your heart is largely formed by whatever you keep looking at.",
+      "cultural": "We carry a machine designed to fragment our focus, and we have handed it our mornings, our meals, and the last minutes before sleep. It promises connection and delivers comparison, promises news and delivers outrage, and trains us to want the next thing before we have finished the present one. I check the feed in line, at the table, in the dark, and call it harmless.",
+      "historical": "The desert fathers of the fourth century fled to the wilderness precisely to fight distraction and to keep one thing before the mind, naming the scattered soul a real danger. Blaise Pascal in the seventeenth century wrote that all of humanity's troubles come from our inability to sit quietly in a room alone. The warning is old, but the machine that exploits it is new and far stronger.",
+      "application": "Put friction between yourself and the habit. Turn off the notifications, keep the phone out of the bedroom, and charge it across the room so the morning begins with prayer rather than the feed. Take a regular fast from it, a day or even an hour, and notice what surfaces in the silence. Use it to bless and to stay in touch, and refuse to let it use you.",
+      "verses": [
+        {
+          "ref": "Proverbs 4:23",
+          "text": "Keep your heart with all vigilance, for from it flow the springs of life."
+        },
+        {
+          "ref": "Philippians 4:8",
+          "text": "Whatever is true, honorable, pure, lovely, think about these things."
+        },
+        {
+          "ref": "Psalm 101:3",
+          "text": "I will not set before my eyes anything that is worthless."
+        },
+        {
+          "ref": "1 Corinthians 6:12",
+          "text": "All things are lawful for me, but I will not be dominated by anything."
+        },
+        {
+          "ref": "Romans 12:2",
+          "text": "Do not be conformed to this world, but be transformed by the renewal of your mind."
+        }
+      ],
+      "related": [
+        {
+          "label": "Technology and Attention",
+          "href": "/life/technology-and-attention"
+        }
+      ]
+    },
+    {
       "id": "spiritual-growth",
       "label": "Spiritual Growth",
       "keywords": [
@@ -4512,6 +5666,59 @@
       ]
     },
     {
+      "id": "submitting-to-leaders",
+      "label": "Submitting to Leaders",
+      "keywords": [
+        "submission",
+        "church leaders",
+        "elders",
+        "authority",
+        "pastor",
+        "obey leaders",
+        "accountability",
+        "honoring leadership",
+        "trust",
+        "headship",
+        "discipline"
+      ],
+      "framing": "Scripture asks Christians to honor and submit to their leaders, and the command makes many of us flinch, because we have seen authority abused and called holy. But the same Bible binds the leader far harder than the led, demanding shepherds who guard the flock rather than fleece it, who lead by example and not by force.",
+      "cultural": "We are rightly suspicious of authority, having watched it cover for predators and silence the wounded under the banner of submission. Scripture is not naive about this. It never commands a blind obedience that overrides conscience or shields the wicked. The submission it asks is the willing trust of a sheep toward a true shepherd, and it expects that shepherd to be watched, tested, and held to account by the whole body.",
+      "historical": "The pattern of plural, accountable leadership runs from the elders Paul appointed in every city to the early church's insistence that no bishop stood above correction. When power corrupted, reform followed. The same Reformation that recovered grace also recovered the priesthood of all believers, refusing to let any leader stand between the soul and God. As a pastor I feel the weight of the warning that teachers are judged more strictly, and I should. The authority is real, and so is the account I will give for it.",
+      "application": "Honor your leaders and make their work a joy rather than a burden, since you will answer for how you treated them and they will answer for how they led you. Submission does not mean silence. Ask questions, expect transparency, and look for leaders who welcome accountability rather than fear it. Where a leader demands obedience that violates Scripture or covers sin, that is not authority but its abuse, and Scripture has never asked you to submit to it.",
+      "verses": [
+        {
+          "ref": "Hebrews 13:17",
+          "text": "Obey your leaders and submit to them, for they are keeping watch over your souls, as those who will give an account."
+        },
+        {
+          "ref": "1 Peter 5:2-3",
+          "text": "Shepherd the flock of God, not domineering over those in your charge, but being examples to the flock."
+        },
+        {
+          "ref": "1 Thessalonians 5:12-13",
+          "text": "Respect those who labor among you and are over you in the Lord, and esteem them very highly in love."
+        },
+        {
+          "ref": "Acts 20:28",
+          "text": "Pay careful attention to yourselves and to all the flock, in which the Holy Spirit has made you overseers."
+        },
+        {
+          "ref": "James 3:1",
+          "text": "Not many of you should become teachers, for you know that we who teach will be judged with greater strictness."
+        }
+      ],
+      "related": [
+        {
+          "label": "Church Membership and Commitment",
+          "href": "/life/church-membership-and-commitment"
+        },
+        {
+          "label": "Conflict and Reconciliation",
+          "href": "/life/conflict-and-reconciliation"
+        }
+      ]
+    },
+    {
       "id": "success-and-failure",
       "label": "Success and Failure",
       "keywords": [
@@ -4716,6 +5923,56 @@
       ]
     },
     {
+      "id": "the-end-times",
+      "label": "The End Times",
+      "keywords": [
+        "end times",
+        "second coming",
+        "return of christ",
+        "rapture",
+        "tribulation",
+        "antichrist",
+        "armageddon",
+        "last days",
+        "prophecy",
+        "apocalypse",
+        "revelation",
+        "millennium"
+      ],
+      "framing": "Scripture promises that the same Jesus who left will return to set the world right, and that this hope should make Christians awake rather than anxious. The point of biblical prophecy is not a timetable to decode but a King to expect, and a life to live worthy of his coming.",
+      "cultural": "The end times have become an industry, fueling novels, charts, and the recurring panic of date-setters who are always wrong. Scripture cuts against the whole enterprise, since Jesus himself said no one knows the day or the hour. The wider culture has its own apocalypses now, ecological and technological, and the church can witness to a hope that does not depend on us reading the headlines correctly.",
+      "historical": "Christians have disagreed about the details from the start, and the disagreement is old. The early church expected Christ's near return, Augustine in the fifth century read Revelation largely as symbol, and the detailed dispensational system most associate with the rapture was developed by John Nelson Darby in the nineteenth century and popularized in the twentieth. Across every view, the creeds confess only this, that he will come again to judge the living and the dead.",
+      "application": "Hold the details with humility and the hope with confidence, refusing both the date-setting that Jesus forbade and the cynicism that stops expecting him at all. Let his coming shape how you live now, watchful and at work, found faithful rather than merely informed. And do not let speculation about the end distract you from the neighbor in front of you.",
+      "verses": [
+        {
+          "ref": "Matthew 24:36",
+          "text": "Concerning that day and hour no one knows, not even the angels of heaven, but the Father only."
+        },
+        {
+          "ref": "Acts 1:11",
+          "text": "This Jesus, who was taken up from you into heaven, will come in the same way as you saw him go."
+        },
+        {
+          "ref": "1 Thessalonians 4:16",
+          "text": "The Lord himself will descend from heaven with a cry of command, and the dead in Christ will rise."
+        },
+        {
+          "ref": "2 Peter 3:10",
+          "text": "The day of the Lord will come like a thief."
+        },
+        {
+          "ref": "Revelation 22:20",
+          "text": "Surely I am coming soon. Amen. Come, Lord Jesus."
+        }
+      ],
+      "related": [
+        {
+          "label": "The Story We Live In",
+          "href": "/life/the-story-we-live-in"
+        }
+      ]
+    },
+    {
       "id": "the-fear-of-the-lord",
       "label": "The Fear of the Lord",
       "keywords": [
@@ -4766,6 +6023,321 @@
         {
           "label": "Pride and Humility",
           "href": "/life/pride-and-humility"
+        }
+      ]
+    },
+    {
+      "id": "gods-love",
+      "label": "The Love of God",
+      "keywords": [
+        "love of god",
+        "does god love me",
+        "grace",
+        "unconditional love",
+        "god cares",
+        "loved",
+        "acceptance",
+        "father heart",
+        "mercy",
+        "god's affection",
+        "am i loved",
+        "favor"
+      ],
+      "framing": "The love of God in Scripture is not a sentiment but a costly action, measured at the cross. It does not wait for you to clean yourself up. It is the love that comes for the prodigal while he is still a long way off and runs.",
+      "cultural": "We use the word love so cheaply that it has nearly lost its weight, a feeling that comes and goes with the mood. Scripture means something sturdier, a covenant loyalty, a love that chooses and keeps choosing. And against a culture that ties worth to performance and approval, the gospel says you are loved before you have earned a thing, and could not have earned it anyway.",
+      "historical": "The church has fought to keep this love from being reduced to mere affection or mere law. Bernard of Clairvaux in the twelfth century wrote of loving God for his own sake, Martin Luther in the sixteenth century recovered the scandal that God loves the unlovely rather than finding them lovely first, and the hymn writers of every age have returned again and again to a love that, in the words of one, would not let them go.",
+      "application": "Let yourself be loved before you try to perform, since the gospel order is grace first and obedience after, never the reverse. When you feel furthest off, remember the father ran toward the son before a word of apology was spoken. And let the love you have received become the love you extend, for we love because he first loved us.",
+      "verses": [
+        {
+          "ref": "Romans 5:8",
+          "text": "God shows his love for us in that while we were still sinners, Christ died for us."
+        },
+        {
+          "ref": "1 John 4:10",
+          "text": "In this is love, not that we have loved God but that he loved us and sent his Son."
+        },
+        {
+          "ref": "Luke 15:20",
+          "text": "While he was still a long way off, his father saw him and felt compassion, and ran."
+        },
+        {
+          "ref": "Zephaniah 3:17",
+          "text": "He will rejoice over you with gladness. He will quiet you by his love."
+        },
+        {
+          "ref": "Romans 8:38-39",
+          "text": "Nothing in all creation will be able to separate us from the love of God in Christ Jesus."
+        }
+      ],
+      "related": [
+        {
+          "label": "Identity and Worth",
+          "href": "/life/identity-and-worth"
+        }
+      ]
+    },
+    {
+      "id": "the-news-and-fear",
+      "label": "The News and Fear",
+      "keywords": [
+        "news",
+        "fear",
+        "afraid",
+        "doom",
+        "headlines",
+        "media",
+        "anxious about world",
+        "catastrophe",
+        "outrage",
+        "current events",
+        "world is ending",
+        "fearful"
+      ],
+      "framing": "The news is built to keep you afraid, because fear holds attention and attention is the product being sold. Scripture does not tell you to ignore the world's pain but it tells you, more than any other command, do not be afraid, and it anchors your peace in a God who is not surprised by the headlines.",
+      "cultural": "We drink a steady stream of catastrophe from every corner of the earth, more than any human heart was built to carry, and we mistake the constant intake for being informed. The result is not wisdom but a low dread, a sense that everything is collapsing, an outrage that exhausts and never acts. I have scrolled the worst of the world before breakfast and called it staying aware.",
+      "historical": "Every generation has believed it stood at the end of the world, and the early church lived under an empire that fed Christians to beasts, yet Jesus told his followers not to let their hearts be troubled. Augustine wrote the City of God as Rome itself was sacked in 410, refusing panic, distinguishing the city of man that rises and falls from the city of God that endures. The sky has been falling for a long time, and the church has kept singing.",
+      "application": "Set limits on your intake, choosing a time and a source rather than a constant drip, and refuse to let the headlines be the first and last thing your mind touches each day. Turn what you cannot control into prayer and what you can into action, however small and local. Stay informed enough to love your neighbor, and protected enough to keep your peace. The world is in better hands than the news will ever admit.",
+      "verses": [
+        {
+          "ref": "John 14:27",
+          "text": "Let not your hearts be troubled, neither let them be afraid."
+        },
+        {
+          "ref": "Psalm 46:1-2",
+          "text": "God is our refuge and strength, therefore we will not fear though the earth gives way."
+        },
+        {
+          "ref": "Isaiah 26:3",
+          "text": "You keep him in perfect peace whose mind is stayed on you, because he trusts in you."
+        },
+        {
+          "ref": "Matthew 6:34",
+          "text": "Do not be anxious about tomorrow, for tomorrow will be anxious for itself."
+        },
+        {
+          "ref": "2 Timothy 1:7",
+          "text": "God gave us a spirit not of fear but of power and love and self-control."
+        }
+      ],
+      "related": [
+        {
+          "label": "The Anxious Mind",
+          "href": "/life/the-anxious-mind"
+        },
+        {
+          "label": "Technology and Attention",
+          "href": "/life/technology-and-attention"
+        }
+      ]
+    },
+    {
+      "id": "the-problem-of-evil",
+      "label": "The Problem of Evil",
+      "keywords": [
+        "evil",
+        "suffering",
+        "why does god allow",
+        "pain",
+        "theodicy",
+        "innocent suffering",
+        "where is god",
+        "tragedy",
+        "injustice",
+        "god allows evil",
+        "natural disaster",
+        "cancer"
+      ],
+      "framing": "If God is good and able, why is there so much that is neither. Scripture does not hand the sufferer a tidy answer to that question. It hands them a God who entered the wound rather than explaining it away.",
+      "cultural": "Our age treats suffering as the strongest case against God, and it is an old case, not a modern one. The ancient world had its own version, the gods were arbitrary and you appeased them. The Bible refuses both the cruel gods and the cheap comfort, letting Job rage for forty chapters and never once rebuking him for the questions, only for assuming he could see the whole.",
+      "historical": "Augustine in the fourth century argued that evil is not a thing God made but a privation, a good twisted and emptied, and the church largely followed him. The Enlightenment sharpened the problem, with David Hume around 1779 stating the dilemma at its hardest, and Dostoevsky in 1880 putting it in the mouth of Ivan Karamazov, who returns his ticket over the suffering of one child. The cross has remained the church's answer that is not an explanation.",
+      "application": "Resist the urge to defend God with answers that would shame the sufferer, since Job's friends were the ones rebuked. Let lament be a form of faith, bringing the protest to God rather than away from him. Hold the long view, that the God who hung on a cross is not absent from your pain, and the empty tomb is the promise that he means to undo it.",
+      "verses": [
+        {
+          "ref": "Job 38:4",
+          "text": "Where were you when I laid the foundation of the earth. Tell me, if you have understanding."
+        },
+        {
+          "ref": "Romans 8:22",
+          "text": "The whole creation has been groaning together in the pains of childbirth until now."
+        },
+        {
+          "ref": "Psalm 34:18",
+          "text": "The Lord is near to the brokenhearted and saves the crushed in spirit."
+        },
+        {
+          "ref": "Isaiah 53:3",
+          "text": "He was despised and rejected by men, a man of sorrows and acquainted with grief."
+        },
+        {
+          "ref": "Revelation 21:4",
+          "text": "He will wipe away every tear from their eyes, and death shall be no more."
+        }
+      ],
+      "related": [
+        {
+          "label": "Suffering and the Silence of God",
+          "href": "/life/suffering-and-the-silence-of-god"
+        }
+      ]
+    },
+    {
+      "id": "the-resurrection",
+      "label": "The Resurrection",
+      "keywords": [
+        "resurrection",
+        "did jesus rise",
+        "empty tomb",
+        "easter",
+        "rose from the dead",
+        "historical evidence",
+        "appearances",
+        "raised",
+        "is the resurrection real",
+        "third day",
+        "risen",
+        "eyewitnesses"
+      ],
+      "framing": "Christianity stands or falls on one event in history, that a crucified man walked out of his tomb. Paul staked the whole faith on it, saying that if Christ has not been raised, the entire thing is a pity and a lie. It is not a symbol of spring. It is a claim about a Sunday morning.",
+      "cultural": "The modern assumption is that the resurrection is the sort of thing educated people simply cannot believe, a relic of a pre-scientific age. But the first witnesses were not credulous, they knew as well as we do that dead men stay dead, which is exactly why they fled and doubted. The question the skeptic must face is not why ancient people believed easily, but what turned terrified deserters into people who died for the claim.",
+      "historical": "The earliest creed Paul cites in 1 Corinthians 15, datable to within a few years of the events, lists named eyewitnesses, most still alive to be questioned. The transformation of the disciples, the empty tomb conceded even by their opponents, the conversion of skeptics like James and Paul, and the church's leap to Sunday worship are the data every theory must explain. Scholars from N.T. Wright to the skeptic-turned-believer have argued the resurrection remains the best account of them.",
+      "application": "Examine the evidence honestly rather than dismissing it by reflex, since the case is stronger than most assume and worth your attention. If it happened, nothing else stays the same, for the empty tomb is God's verdict on Jesus and his promise over your own grave. And let it ground your hope, that because he lives, death is a defeated enemy and not the end of your story.",
+      "verses": [
+        {
+          "ref": "1 Corinthians 15:14",
+          "text": "If Christ has not been raised, then our preaching is in vain and your faith is in vain."
+        },
+        {
+          "ref": "1 Corinthians 15:3-5",
+          "text": "Christ died for our sins, he was buried, he was raised on the third day, and he appeared."
+        },
+        {
+          "ref": "Luke 24:6",
+          "text": "He is not here, but has risen."
+        },
+        {
+          "ref": "Romans 1:4",
+          "text": "Declared to be the Son of God in power by his resurrection from the dead."
+        },
+        {
+          "ref": "John 11:25",
+          "text": "I am the resurrection and the life. Whoever believes in me, though he die, yet shall he live."
+        }
+      ],
+      "related": [
+        {
+          "label": "Facing Death",
+          "href": "/life/facing-death"
+        },
+        {
+          "label": "The Story We Live In",
+          "href": "/life/the-story-we-live-in"
+        }
+      ]
+    },
+    {
+      "id": "time-and-priorities",
+      "label": "Time and Priorities",
+      "keywords": [
+        "time",
+        "priorities",
+        "busy",
+        "busyness",
+        "calendar",
+        "schedule",
+        "overcommitted",
+        "no time",
+        "hurried",
+        "stretched thin",
+        "wasting time",
+        "urgent"
+      ],
+      "framing": "The problem is rarely that you have too little time. It is that you have never decided what the time is for, so it gets spent by whoever asks last and loudest. Scripture does not tell you to do more but to number your days, to count them, so that your hours bend toward what actually matters.",
+      "cultural": "Our age measures a life by its output and treats a full calendar as proof of worth, so that to be unhurried feels like failure. We have confused the urgent with the important, and we let the loud thing crowd out the lasting thing, then wonder where the years went. I have answered the easy email and left the hard prayer undone, and called it a busy day.",
+      "historical": "Moses prayed teach us to number our days roughly thirty-three centuries ago, long before any clock. Benedict of Nursia in the sixth century built a whole rule of life around fixed hours of prayer and work, refusing to let the day run unowned. Eugene Peterson in our own time warned pastors against the busyness that masquerades as importance, calling the hurried life a kind of laziness about the things that count.",
+      "application": "Decide your priorities before the week decides them for you, and put the important things on the calendar first so the urgent ones fill the gaps and not the center. Learn to say no without apology, since every yes is a no to something else. Guard a slow hour at the start or end of the day for prayer and for the people closest to you, and measure the day not by what you cleared but by what you chose.",
+      "verses": [
+        {
+          "ref": "Psalm 90:12",
+          "text": "Teach us to number our days that we may get a heart of wisdom."
+        },
+        {
+          "ref": "Ephesians 5:15-16",
+          "text": "Look carefully then how you walk, making the best use of the time."
+        },
+        {
+          "ref": "Ecclesiastes 3:1",
+          "text": "For everything there is a season, and a time for every matter under heaven."
+        },
+        {
+          "ref": "Luke 10:41-42",
+          "text": "You are anxious and troubled about many things, but one thing is necessary."
+        },
+        {
+          "ref": "James 4:14",
+          "text": "What is your life? For you are a mist that appears for a little time and then vanishes."
+        }
+      ],
+      "related": [
+        {
+          "label": "Time and the Examined Life",
+          "href": "/life/time-and-the-examined-life"
+        },
+        {
+          "label": "Rest and the Sabbath",
+          "href": "/life/rest-and-the-sabbath"
+        }
+      ]
+    },
+    {
+      "id": "welcoming-newcomers",
+      "label": "Welcoming Newcomers",
+      "keywords": [
+        "welcome",
+        "hospitality",
+        "newcomer",
+        "visitor",
+        "stranger",
+        "outsider",
+        "feeling unwelcome",
+        "fitting in",
+        "greeting",
+        "belonging",
+        "the new person"
+      ],
+      "framing": "Most people decide whether they belong in a church before they hear a word of the sermon. Scripture takes the stranger in the doorway with a seriousness we rarely match, because the God of the Bible has a long memory for what it is to be the outsider, and he commands his people to welcome as they were once welcomed.",
+      "cultural": "We are good at welcoming the people who already look like us and slow with everyone else, settling into our familiar pews and our familiar friends while the newcomer stands alone at the coffee table and quietly leaves. Scripture cuts against this in every direction. It commands hospitality to strangers, warns against showing favor to the well-dressed over the poor, and insists the church be the one room in a divided world where the dividing lines fall away.",
+      "historical": "Hospitality was a central, costly Christian practice from the start, the church taking in travelers, the sick, and the abandoned that the empire left to die. The book of Hebrews, written before AD 70, reminded believers that some had entertained angels unaware by welcoming strangers. The monasteries later wrote it into their rule, where Benedict in the sixth century commanded that every guest be received as Christ himself. I confess I have let a visitor leave unspoken to while I caught up with a friend. The newcomer at the door is not an interruption of the church's work. They are the work.",
+      "application": "Look for the person standing alone and go to them before you return to your friends, because the few minutes after the service decide more than you think. Learn their name and remember it. Open your table, not just the building, since real belonging is forged over a meal more than a handshake. And treat the stranger, the awkward, and the different as the very ones Christ would have crossed the room to reach, because he did.",
+      "verses": [
+        {
+          "ref": "Hebrews 13:2",
+          "text": "Do not neglect to show hospitality to strangers, for thereby some have entertained angels unawares."
+        },
+        {
+          "ref": "Romans 12:13",
+          "text": "Contribute to the needs of the saints and seek to show hospitality."
+        },
+        {
+          "ref": "James 2:1-3",
+          "text": "Show no partiality as you hold the faith. Do not honor the man in fine clothing over the poor man."
+        },
+        {
+          "ref": "Leviticus 19:34",
+          "text": "You shall treat the stranger who sojourns with you as the native among you, and you shall love him as yourself."
+        },
+        {
+          "ref": "1 Peter 4:9",
+          "text": "Show hospitality to one another without grumbling."
+        }
+      ],
+      "related": [
+        {
+          "label": "The Neighbor and the Stranger",
+          "href": "/life/the-neighbor-and-the-stranger"
+        },
+        {
+          "label": "The Church as Family",
+          "href": "/life/the-church-as-family"
         }
       ]
     },
@@ -5330,6 +6902,60 @@
       ]
     },
     {
+      "id": "why-follow-jesus",
+      "label": "Why Follow Jesus",
+      "keywords": [
+        "why follow jesus",
+        "who is jesus",
+        "why christianity",
+        "is jesus god",
+        "claims of christ",
+        "why believe",
+        "discipleship",
+        "lord and savior",
+        "is christianity true",
+        "salvation",
+        "born again",
+        "becoming a christian"
+      ],
+      "framing": "The case for following Jesus rests finally on the kind of person he was and the claims he made, which were not the claims of a mere teacher. He forgave sins he was not wronged by, accepted worship, and said that to see him was to see the Father. You are not left the option of admiring him from a safe distance.",
+      "cultural": "Our culture is happy to keep Jesus as a wise teacher, a moral example, a gentle face on a coffee mug, anything but Lord. The trouble, as Lewis pressed, is that a merely human teacher who said the things Jesus said would be a lunatic or a liar, not a sage. The skeptic owes the historical figure a more honest reckoning than the harmless version the culture allows.",
+      "historical": "From the beginning the church confessed that Jesus is Lord, a claim that cost the early Christians their lives in an empire that demanded the title for Caesar. The Council of Nicaea in 325 and Chalcedon in 451 hammered out that he is fully God and fully man, one person, neither half-divine hero nor mere good man. The skeptic Saul of Tarsus became the apostle Paul not by an argument but by an encounter on the Damascus road.",
+      "application": "Read the Gospels themselves before you accept anyone's summary of them, and meet the figure rather than the caricature. Bring your honest objections, since faith built on evasion will not hold. And reckon with the cost, that following Jesus is not adding a hobby to your life but handing him the keys, which is the only following he ever offered.",
+      "verses": [
+        {
+          "ref": "John 14:6",
+          "text": "I am the way, and the truth, and the life. No one comes to the Father except through me."
+        },
+        {
+          "ref": "Mark 8:34",
+          "text": "If anyone would come after me, let him deny himself and take up his cross and follow me."
+        },
+        {
+          "ref": "John 1:14",
+          "text": "The Word became flesh and dwelt among us, and we have seen his glory."
+        },
+        {
+          "ref": "Acts 4:12",
+          "text": "There is no other name under heaven given among men by which we must be saved."
+        },
+        {
+          "ref": "Matthew 16:15",
+          "text": "But who do you say that I am."
+        }
+      ],
+      "related": [
+        {
+          "label": "Discipleship: Following Jesus",
+          "href": "/life/discipleship-following-jesus"
+        },
+        {
+          "label": "Wisdom for All of Life",
+          "href": "/life/wisdom-for-all-of-life"
+        }
+      ]
+    },
+    {
       "id": "work-and-burnout",
       "label": "Work and Burnout",
       "keywords": [
@@ -5380,6 +7006,60 @@
         {
           "label": "Rest and the Sabbath",
           "href": "/life/rest-and-the-sabbath"
+        }
+      ]
+    },
+    {
+      "id": "work-life-balance",
+      "label": "Work and Life Balance",
+      "keywords": [
+        "work life balance",
+        "overworked",
+        "burnout",
+        "workaholic",
+        "no boundaries",
+        "always on",
+        "rest",
+        "exhausted",
+        "career and family",
+        "boundaries",
+        "too much work",
+        "drained"
+      ],
+      "framing": "Work is a good thing that becomes a hard master the moment it stops being one part of life and starts being all of it. Scripture frames work as worship and rest as command, and it builds into the very rhythm of the week a hard stop, a day that says you are not what you produce.",
+      "cultural": "Our economy rewards the always-on and treats rest as a luxury or a weakness, so we answer the message at midnight and bring the laptop on vacation and wear our exhaustion like a badge. We have let work colonize the family table and the Lord's day both, then wonder why we feel hollow. I have given my best hours to the job and the leftovers to the people I love, and called myself a provider.",
+      "historical": "The Sabbath was radical when it was given, a weekly day off commanded for slave and free and animal alike in a world that knew no such mercy, thirty-three centuries before any labor law. The Reformers recovered ordinary work as a calling, but they kept the rhythm, knowing work without rest is not devotion but pride. Eugene Peterson and others in our own time have named burnout as a spiritual failure to keep the Sabbath God built into us.",
+      "application": "Build a real boundary and defend it, a time when work is done and the phone is down and the people in front of you have your face. Keep a weekly Sabbath, a full day to rest and worship and remember you are not indispensable. Do your work as unto the Lord while you are in it, and then leave it, trusting that the One who feeds the birds will feed you too. The harder you find it to stop, the more you need to.",
+      "verses": [
+        {
+          "ref": "Exodus 20:9-10",
+          "text": "Six days you shall labor, but the seventh day is a Sabbath to the Lord your God."
+        },
+        {
+          "ref": "Mark 6:31",
+          "text": "Come away by yourselves to a desolate place and rest a while."
+        },
+        {
+          "ref": "Psalm 127:2",
+          "text": "It is in vain that you rise up early and go late to rest, for he gives to his beloved sleep."
+        },
+        {
+          "ref": "Colossians 3:23",
+          "text": "Whatever you do, work heartily, as for the Lord and not for men."
+        },
+        {
+          "ref": "Matthew 11:28",
+          "text": "Come to me, all who labor and are heavy laden, and I will give you rest."
+        }
+      ],
+      "related": [
+        {
+          "label": "Rest and the Sabbath",
+          "href": "/life/rest-and-the-sabbath"
+        },
+        {
+          "label": "Work as Worship",
+          "href": "/life/work-as-worship"
         }
       ]
     },
