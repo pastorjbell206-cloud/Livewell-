@@ -33,6 +33,11 @@ const LIB_DIRS = [
   "content/drafts/sacraments",
   "content/drafts/disciplines",
   "content/drafts/why-believe",
+  "content/drafts/who-is-god",
+  "content/drafts/the-story",
+  "content/drafts/church-history",
+  "content/drafts/prayer",
+  "content/drafts/living-well",
 ];
 
 const argv = process.argv.slice(2);

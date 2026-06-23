@@ -90,11 +90,13 @@ For the post-Christian newcomer and skeptic; depth in the body, plain titles.
 - **Spiritual Disciplines** (`content/drafts/disciplines/`): Praying at the Same Times Every Day… · Why Christians Fast… · What the Desert Fathers Knew About Silence · Why a Day of Doing Nothing Is an Act of Defiance · How to Read the Bible Slowly, the Old Way
 - **Why Believe** (`content/drafts/why-believe/`): Did the Resurrection Actually Happen? · Why Would Anyone Trust the Bible? · Do You Have to Choose Between Faith and Science? · If God Is Good, Why Is There So Much Suffering? · Was Jesus Really Just a Good Teacher?
 
+## Wave 2 — DRAFTED ✓ (25 essays): Who Is God? (`who-is-god/`) · The Whole Story of the Bible (`the-story/`) · The People Who Came Before (`church-history/`) · Prayer (`prayer/`) · Living Well (`living-well/`).
+
 ## In flight right now
-- **Wave 2 launched** (the next ~25): Who Is God? · The Whole Story of the Bible · The People Who Came Before (church history) · Prayer · Living Well.
+- **Wave 3 launched** (the next ~25): Who Is Jesus? · The Sermon on the Mount · The Holy Spirit · The Last Things · Why Bother With Church?
 
 ## Tallies
-- Long-form at the bar: **93** (the five-pillar plan's 68 + Wave 1's 25)
+- Long-form at the bar: **118** (68 five-pillar + 25 Wave 1 + 25 Wave 2)
 - None published yet — all await James's edit (placeholders + fact-check) and the DATABASE_URL publish step. `node scripts/publish-content-library.mjs --dry-run` verifies all parse + strip clean.
 
 ## Publishing note
