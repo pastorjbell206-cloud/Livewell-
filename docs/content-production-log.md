@@ -92,11 +92,14 @@ For the post-Christian newcomer and skeptic; depth in the body, plain titles.
 
 ## Wave 2 — DRAFTED ✓ (25 essays): Who Is God? (`who-is-god/`) · The Whole Story of the Bible (`the-story/`) · The People Who Came Before (`church-history/`) · Prayer (`prayer/`) · Living Well (`living-well/`).
 
+## Wave 3 — DRAFTED ✓ (25 essays): Who Is Jesus? (`who-is-jesus/`) · The Sermon on the Mount (`sermon-on-the-mount/`) · The Holy Spirit (`holy-spirit/`) · The Last Things (`last-things/`) · Why Bother With Church? (`why-church/`).
+
 ## In flight right now
-- **Wave 3 launched** (the next ~25): Who Is Jesus? · The Sermon on the Mount · The Holy Spirit · The Last Things · Why Bother With Church?
+- Nothing in flight. The classical/newcomer curriculum (Waves 1–3) is broadly complete alongside the five-pillar plan.
 
 ## Tallies
-- Long-form at the bar: **118** (68 five-pillar + 25 Wave 1 + 25 Wave 2)
+- Long-form at the bar: **143** (68 five-pillar + 25 Wave 1 + 25 Wave 2 + 25 Wave 3)
+- (The repo also holds ~59 older `full-NN` drafts that predate this work and are not in the publisher's scope.)
 - None published yet — all await James's edit (placeholders + fact-check) and the DATABASE_URL publish step. `node scripts/publish-content-library.mjs --dry-run` verifies all parse + strip clean.
 
 ## Publishing note
