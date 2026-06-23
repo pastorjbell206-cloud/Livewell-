@@ -181,6 +181,30 @@ function harvestJson(path) {
     }));
 }
 
+/** Recursively list every .json file under a directory. */
+function listJsonFiles(dir) {
+  const out = [];
+  if (!existsSync(dir)) return out;
+  for (const ent of readdirSync(dir, { withFileTypes: true })) {
+    const full = join(dir, ent.name);
+    if (ent.isDirectory()) out.push(...listJsonFiles(full));
+    else if (ent.name.endsWith(".json")) out.push(full);
+  }
+  return out;
+}
+
+/** Pull prose string values (len > 25) out of any JSON shape. */
+function pullProse(node, out) {
+  if (typeof node === "string") {
+    if (node.length > 25) out.push(node);
+  } else if (Array.isArray(node)) {
+    for (const v of node) pullProse(v, out);
+  } else if (node && typeof node === "object") {
+    for (const v of Object.values(node)) pullProse(v, out);
+  }
+  return out;
+}
+
 function main() {
   const sources = {};
   const bySlug = new Map();
@@ -233,6 +257,25 @@ function main() {
         },
         "content-data.json (books)"
       );
+    }
+  }
+
+  // 5. the shipped content libraries (what actually renders on the site).
+  //    Arbitrary JSON shapes, so we harvest prose strings per file and key by
+  //    the file path. This is where most of the live essays/guides live.
+  const repoRoot = join(__dirname, "..");
+  for (const dir of ["client/public", "client/src/data"]) {
+    for (const file of listJsonFiles(join(repoRoot, dir))) {
+      let data;
+      try {
+        data = JSON.parse(readFileSync(file, "utf8"));
+      } catch {
+        continue; // skip non-content / malformed JSON
+      }
+      const body = pullProse(data, []).join("\n\n").trim();
+      if (body.length < 200) continue; // skip config/manifest-y files
+      const rel = file.slice(repoRoot.length + 1);
+      add({ title: rel, slug: `lib:${rel}`, pillar: "library", body, published: true }, dir);
     }
   }
 

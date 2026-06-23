@@ -124,8 +124,9 @@ certainty, outrage, slogans, partisan talking points. Keep pastoral concern and
 theological seriousness visible. The reader should feel: this person understands
 what is happening, why it is happening, and what faithfulness requires.
 
-(Binding mechanics live in `CLAUDE.md`: no em-dash, no prose semicolon, no
-exclamation, and the forbidden-word list.)
+(Binding mechanics live in `CLAUDE.md`: the forbidden-word list and the
+punctuation mechanics — em-dash and semicolon are part of the voice; the
+exclamation point is reserved for direct Scripture quotation.)
 
 ## Content decision filter
 

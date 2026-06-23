@@ -70,6 +70,19 @@ delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, lan
 ### Structural moves to avoid
 Signposting ("here is what I mean," "let me explain"). Clean application turns. Comfortable closings. Bullet lists where prose belongs.
 
+### Punctuation mechanics
+
+These describe Bell's actual voice; they are the single source of truth (other
+docs defer here).
+
+- **Em-dash** — part of the voice; permitted. Favor the hard period for the
+  "Not X. Y." ground-clearing move, but the em-dash may carry flow elsewhere.
+- **Semicolon** — permitted in prose where it binds two close clauses. Not
+  forbidden.
+- **Exclamation point** — reserved for **direct Scripture quotation** (quoted
+  verbatim). Outside quoted Scripture, the verdict lands on a hard period, never
+  an exclamation.
+
 ---
 
 ## Structural Moves (the Bell patterns)
