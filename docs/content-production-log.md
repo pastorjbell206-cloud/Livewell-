@@ -24,17 +24,19 @@ Scripture** (~3,100 words). A long-form essay at this bar has:
 
 ---
 
-## Pillar 1 — Capture by the Left  (flagship pillar, expanding to the bar now)
+## Pillar 1 — Capture by the Left  (ALL EXPANDED to the flagship bar ✓)
 | Essay | slug | Words | Status |
 |---|---|---:|---|
-| The Right Side of History Is Not the Right Side of Scripture | right-side-of-history | ~3,100 | **EXPANDED** ✓ |
-| When Justice Becomes a Gospel of Its Own | when-justice-becomes-a-gospel | ~1,570 | **EXPANDING** |
-| The Sin We Stopped Naming | the-sin-we-stopped-naming | ~1,470 | **EXPANDING** |
-| Affirmation Is Not Love | affirmation-is-not-love | ~1,583 | **EXPANDING** |
-| Deconstruction Without Reconstruction Is Demolition | deconstruction-without-reconstruction | ~1,404 | **EXPANDING** |
-| Cheap Grace Has a Left Hand Too | cheap-grace-left-hand | ~1,429 | **EXPANDING** |
-| The Authority We Traded for Authenticity | authority-we-traded-for-authenticity | ~1,574 | **EXPANDING** |
-| The Conscience We Outsourced to the Party | conscience-outsourced-to-party | ~1,617 | **EXPANDING** |
+| The Right Side of History Is Not the Right Side of Scripture | right-side-of-history | 3,130 | **EXPANDED** ✓ |
+| When Justice Becomes a Gospel of Its Own | when-justice-becomes-a-gospel | 3,736 | **EXPANDED** ✓ |
+| The Sin We Stopped Naming | the-sin-we-stopped-naming | 3,701 | **EXPANDED** ✓ |
+| Affirmation Is Not Love | affirmation-is-not-love | 3,335 | **EXPANDED** ✓ |
+| Deconstruction Without Reconstruction Is Demolition | deconstruction-without-reconstruction | 3,474 | **EXPANDED** ✓ |
+| Cheap Grace Has a Left Hand Too | cheap-grace-left-hand | 3,291 | **EXPANDED** ✓ |
+| The Authority We Traded for Authenticity | authority-we-traded-for-authenticity | 3,518 | **EXPANDED** ✓ |
+| The Conscience We Outsourced to the Party | conscience-outsourced-to-party | 3,531 | **EXPANDED** ✓ |
+
+_All eight pass the publish-md voice gate (the "authentic"/"authenticity" warnings in two are expected — it's the concept being critiqued). Each carries one optional `[PERSONAL STORY]` placeholder. Scholar citations + dates are listed per essay in the review and need James's fact-check._
 
 ## Pillar 2 — Capture by the Right  (drafts pending — see content-library.md)
 | Essay | slug | Status |
@@ -74,12 +76,12 @@ the-pastor-nobody-checks-on · when-the-calling-costs-more · burnout-is-not-a-b
 ---
 
 ## In flight right now
-- Expanding the 7 remaining **Capture by the Left** essays to the flagship bar (parallel agents).
+- Nothing in flight. Capture by the Left is fully expanded (8/8).
+- Next up (on your go): Capture by the Right (8 to draft), then expand the 37 struggling-flow drafts to the bar, then the later pillars.
 
 ## Tallies
-- Long-form at the bar: **1** (right-side-of-history)
-- Expanding now: **7**
-- Short drafts complete: **37** (+ 8 Capture-Left originals = 45 total drafted)
+- Long-form at the bar: **8** (all of Capture by the Left)
+- Short drafts complete: **37** (struggling/topic flows)
 - Planned: Capture-Right (8) + later pillars (~15)
 
 ## Publishing note
