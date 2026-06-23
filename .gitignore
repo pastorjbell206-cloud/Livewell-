@@ -114,3 +114,6 @@ temp/
 
 # Voice-audit: exported full essay text (read-only DB pull), never commit
 .essays-export.json
+
+# Background-agent worktrees (harness scratch, not project content)
+.claude/worktrees/
