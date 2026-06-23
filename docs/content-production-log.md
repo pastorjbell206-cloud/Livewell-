@@ -24,19 +24,20 @@ Scripture** (~3,100 words). A long-form essay at this bar has:
 
 ---
 
-## Pillar 1 — Capture by the Left  (ALL EXPANDED to the flagship bar ✓)
-| Essay | slug | Words | Status |
+## Pillar 1 — Capture by the Left  (RECUT to the modern-Keller-SEO register ✓)
+Current titles (SEO-optimized; slugs unchanged so links never break):
+| Title | slug | Words | Status |
 |---|---|---:|---|
-| The Right Side of History Is Not the Right Side of Scripture | right-side-of-history | 3,130 | **EXPANDED** ✓ |
-| When Justice Becomes a Gospel of Its Own | when-justice-becomes-a-gospel | 3,736 | **EXPANDED** ✓ |
-| The Sin We Stopped Naming | the-sin-we-stopped-naming | 3,701 | **EXPANDED** ✓ |
-| Affirmation Is Not Love | affirmation-is-not-love | 3,335 | **EXPANDED** ✓ |
-| Deconstruction Without Reconstruction Is Demolition | deconstruction-without-reconstruction | 3,474 | **EXPANDED** ✓ |
-| Cheap Grace Has a Left Hand Too | cheap-grace-left-hand | 3,291 | **EXPANDED** ✓ |
-| The Authority We Traded for Authenticity | authority-we-traded-for-authenticity | 3,518 | **EXPANDED** ✓ |
-| The Conscience We Outsourced to the Party | conscience-outsourced-to-party | 3,531 | **EXPANDED** ✓ |
+| The Right Side of History Is a Religion. It Just Isn't Christianity. | right-side-of-history | 2,618 | **RECUT** ✓ |
+| When Justice Becomes a Gospel: The Good Cause That Quietly Became a God | when-justice-becomes-a-gospel | 3,340 | **RECUT** ✓ |
+| What Happened to the Doctrine of Sin? The Church Kept the System and Lost Itself. | the-sin-we-stopped-naming | 3,460 | **RECUT** ✓ |
+| Affirmation Is Not Love. It Is the Cheapest Thing We Mistake for It. | affirmation-is-not-love | 3,266 | **RECUT** ✓ |
+| Faith Deconstruction Is Honest. Demolition Is Not. | deconstruction-without-reconstruction | 3,291 | **RECUT** ✓ |
+| Cheap Grace Meaning: Why the Left Has a Version Bonhoeffer Would Recognize | cheap-grace-left-hand | 3,236 | **RECUT** ✓ |
+| Is the Bible the Final Authority — or Is Your Lived Experience? | authority-we-traded-for-authenticity | 3,392 | **RECUT** ✓ |
+| Should a Christian Follow a Political Party? You Already Are. | conscience-outsourced-to-party | 3,355 | **RECUT** ✓ |
 
-_All eight pass the publish-md voice gate (the "authentic"/"authenticity" warnings in two are expected — it's the concept being critiqued). Each carries one optional `[PERSONAL STORY]` placeholder. Scholar citations + dates are listed per essay in the review and need James's fact-check._
+_Register: modern/accessible (Comer) + Keller architecture (steel-man → bold early thesis → build) + sharper edge + SEO (search-optimized titles, decks, meta descriptions, keyword sets, 6 substantive H2s each, bolded pull-lines). All pass the voice gate (the "authentic" warnings in two are the critiqued concept). Each keeps one `[PERSONAL STORY]` placeholder; scholar citations need James's fact-check (flagged in review). The repeated "here is the claim" lead-in was de-duplicated across the set._
 
 ## Pillar 2 — Capture by the Right  (drafts pending — see content-library.md)
 | Essay | slug | Status |

@@ -17,7 +17,7 @@ Say the phrase out loud and feel what it does. *The right side of history.* It d
 
 That is the first thing to admit, because I have felt it too. I have stood in a room certain that time itself was on my side, that to stand on the leading edge of the present was to stand near the heart of God. It is a very good feeling. Good feelings have always been the cheapest disguise sin puts on.
 
-So here is the claim this essay exists to make, stated as plainly as I can make it. **"The right side of history" is not a neutral phrase. It is a piece of theology — a complete, working faith with its own god, its own salvation, and its own final judgment — and the American church, left and right, adopted it without ever deciding to.** Once you see the religion inside the phrase, you cannot unsee it. And you have to choose which faith you actually hold.
+The claim is blunt, and the rest of this essay is me earning it. **"The right side of history" is not a neutral phrase. It is a piece of theology — a complete, working faith with its own god, its own salvation, and its own final judgment — and the American church, left and right, adopted it without ever deciding to.** Once you see the religion inside the phrase, you cannot unsee it. And you have to choose which faith you actually hold.
 
 ## The phrase has a noble birth — and that is the trap
 
