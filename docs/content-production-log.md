@@ -82,13 +82,20 @@ How to Pastor a Congregation Captured by a Cable Network · Preaching the Whole 
 
 ---
 
+## Wave 1 — Classical / newcomer expansion (DRAFTED ✓, 25 essays, new title register)
+For the post-Christian newcomer and skeptic; depth in the body, plain titles.
+- **The Creeds** (`content/drafts/creeds/`): Why Would Anyone Recite a 1,700-Year-Old Creed? · How Can God Be Three and One? · Why It Matters That God Became a Baby · What the Creed Refuses to Argue About · The Faith That Was Settled Before America Existed
+- **The Church Calendar** (`content/drafts/church-calendar/`): Why Does the Church Have Its Own Calendar? · What Is Advent…? · Why Would Anyone Give Something Up for Lent? · Easter Was Never Meant to Be One Sunday · What the Boring Middle of the Year Teaches You
+- **The Sacraments** (`content/drafts/sacraments/`): What Actually Happens at Communion? · What Baptism Is Actually For · Why Christians Confess Their Sins Out Loud · Why Christianity Uses Bread, Water, and Wine · The Meal That Was Supposed to Make Us One
+- **Spiritual Disciplines** (`content/drafts/disciplines/`): Praying at the Same Times Every Day… · Why Christians Fast… · What the Desert Fathers Knew About Silence · Why a Day of Doing Nothing Is an Act of Defiance · How to Read the Bible Slowly, the Old Way
+- **Why Believe** (`content/drafts/why-believe/`): Did the Resurrection Actually Happen? · Why Would Anyone Trust the Bible? · Do You Have to Choose Between Faith and Science? · If God Is Good, Why Is There So Much Suffering? · Was Jesus Really Just a Good Teacher?
+
 ## In flight right now
-- Nothing in flight. **All five pillars + the 37 struggling-flow essays are drafted to the bar.** The content plan is complete.
-- Next: connect DATABASE_URL and publish the library.
+- **Wave 2 launched** (the next ~25): Who Is God? · The Whole Story of the Bible · The People Who Came Before (church history) · Prayer · Living Well.
 
 ## Tallies
-- Long-form at the bar: **68** (8 Capture-Left + 8 Capture-Right + 5 Scripture-past-politics + 5 After-Christendom + 5 Pastoral-Angle + 37 struggling-flow)
-- None published yet — all await James's edit (placeholders + fact-check) and the DATABASE_URL publish step. `node scripts/publish-content-library.mjs --dry-run` = **68/68 clean**.
+- Long-form at the bar: **93** (the five-pillar plan's 68 + Wave 1's 25)
+- None published yet — all await James's edit (placeholders + fact-check) and the DATABASE_URL publish step. `node scripts/publish-content-library.mjs --dry-run` verifies all parse + strip clean.
 
 ## Publishing note
 Nothing here is live yet — article bodies render from the database

@@ -1,0 +1,76 @@
+---
+title: "Why Would Anyone Recite a 1,700-Year-Old Creed?"
+slug: why-christians-recite-creeds
+track: theology
+audience: individuals
+format: essay
+status: draft
+read_time_minutes: 13
+excerpt: "Standing in a room of strangers, reciting words written before your country existed, sounds like the opposite of real faith. It is closer to the truth than 'just me and my Bible' ever was."
+meta_description: "Why do Christians recite the Apostles' and Nicene Creeds — ancient, fixed words instead of their own? A pastor who came to faith from atheism on what the creeds are actually for."
+seo_keywords: "why do Christians recite creeds, what is the Apostles Creed, what is the Nicene Creed, are creeds biblical, why use a creed instead of just the Bible, history of the Nicene Creed, what do Christians believe"
+---
+
+> [PERSONAL STORY — James to supply: a moment you first heard a room of people recite the creed together — at a funeral, a baptism, a service in a tradition not your own — and what it did to you, coming from where you came from. Drop it in after "the first time I heard it.")
+
+Picture the strangest thing a modern person can imagine doing in public. A few hundred people stand up in a room at the same moment. They do not improvise. They do not share what is on their hearts. They open their mouths and say, in one voice, the identical words that were said in that same order by people who have been dead for sixteen centuries — people who spoke Greek, who never saw a printed book, who would not have recognized a single object in the room they are now being quoted in. *We believe in one God, the Father almighty, maker of heaven and earth.*
+
+If you did not grow up with it, this should look bizarre. It looked bizarre to me. I came to faith out of atheism, and the first instinct of a convert from unbelief is suspicion of anything that smells like a script. I had spent years assuming that religion was mostly people repeating things they had stopped thinking about. So the creed was the last thing I expected to need, and it turned out to be one of the first things I could not do without.
+
+**A creed is not a substitute for thinking. It is the result of other people having thought, at enormous cost, so that you do not have to start the entire question of God from scratch every Sunday of your life.** That is the claim, and the rest of this is me showing you why a 1,700-year-old set of sentences is not a museum piece but a lifeline — and why "just me and my Bible" is a far more recent and far more fragile idea than the people who say it realize.
+
+## The first objection is the honest one
+
+The objection I had is the one most newcomers have, and it is not stupid. It goes like this: if I have the Bible, why do I need a creed at all? Why not go straight to the source? Putting a man-made summary between me and Scripture sounds like adding a middleman to God.
+
+Here is what that objection misses. The creed is not standing between you and the Bible. The creed is the Bible's own emergency summary of itself, written by the people closest to the source, for a moment when getting it wrong was about to tear the church apart.
+
+You can watch it happen inside the New Testament. The apostle Paul, writing to Corinth around the year 55, says something that should stop you: "For I delivered to you as of first importance what I also received: that Christ died for our sins in accordance with the Scriptures, that he was buried, that he was raised on the third day in accordance with the Scriptures, and that he appeared" (1 Corinthians 15:3–5). Read the verbs. *Delivered. Received.* Paul is not inventing this. He is handing on something already fixed, already formed, already passed to him by others — a compressed statement of the faith that was old when the New Testament was still being written. Scholars are nearly unanimous that he is quoting a formula that predates his letter by years, possibly reaching back to within months of the resurrection itself. The first creed in Christian history is sitting inside your Bible, and the Bible itself calls it the thing of first importance.
+
+You find these fragments scattered through the letters once you know to look. "Great indeed, we confess, is the mystery of godliness: He was manifested in the flesh, vindicated by the Spirit, seen by angels, proclaimed among the nations, believed on in the world, taken up in glory" (1 Timothy 3:16) — that has the cadence of something chanted, a hymn or a confession the church already knew by heart. The creeds did not come after the Bible to compete with it. The instinct to summarize, to hand on a fixed deposit, to say the central thing in the same words every time, is *in* the Bible, from the beginning.
+
+## What the creeds actually are
+
+There are two that matter most, and a newcomer should know the difference.
+
+The Apostles' Creed is the older in spirit, simpler, shorter — the one used at baptisms for most of Christian history. It grew out of the questions asked of a person about to be plunged into the water: Do you believe in God the Father? In Jesus Christ his Son? In the Holy Spirit? The earliest form, sometimes called the Old Roman Creed, is in use by the second century. It is not the work of a committee. It is closer to a slow accumulation, the church's answer to the simplest possible question — *what must I believe to be baptized into this?*
+
+The Nicene Creed is the one forged under fire. In the early fourth century a brilliant and persuasive priest in Egypt named Arius began teaching that the Son, Jesus, was a created being — exalted, glorious, but made, with a beginning, not truly God in the way the Father is God. It sounded humble. It sounded reasonable. It was spreading fast, set to popular songs, sung by dockworkers. And it quietly emptied Christianity of its center, because a created savior cannot save and a worshipped creature is just idolatry with better manners. In 325 the bishops of the whole known church gathered at Nicaea, in what is now Turkey, and after fierce argument they drew the line. They said the Son is "of one being with the Father," *homoousios* — the same divine substance, not a lesser copy. They were not adding to the Bible. They were defending what the Bible already said about Jesus against a clever attempt to hollow it out.
+
+The historian J. N. D. Kelly, whose 1950 study *Early Christian Creeds* is still the book scholars reach for, showed in patient detail that these confessions were never abstract philosophy dropped on the church from above. They grew from worship, from baptism, from the practical need to say who Jesus is before you would entrust your life to him. They are the church's hard-won shorthand for the gospel.
+
+## "Just me and my Bible" is younger than you think
+
+Now the turn that surprised me most, the one that costs the modern reader something.
+
+The phrase "no creed but the Bible" feels like the original, stripped-down, honest Christianity — getting back behind all the human accretions to the pure source. I believed that for a while. It is almost exactly backwards. The idea that an individual, alone, with a Bible and no inherited summary and no community of interpretation, is the natural unit of Christian faith — that idea is a few centuries old at most. It is a child of the printing press and the modern West, not of the apostles. For the first fifteen hundred years of the church, almost no Christian owned a Bible, most could not read, and the faith was carried, taught, and remembered through exactly the kind of fixed, shared, spoken confession that "just me and my Bible" treats as a corruption.
+
+Jaroslav Pelikan, the great historian of doctrine who taught at Yale for decades, spent his life tracing how the faith was handed down across the centuries, and he put the danger of our individualism unforgettably. He distinguished tradition — "the living faith of the dead" — from traditionalism, "the dead faith of the living." The creed is the living faith of the dead. It is the church across time refusing to let any single generation, including yours, quietly reinvent God to suit itself. Without it, "me and my Bible" does not actually produce purity. It produces a thousand private Christianities, each one as small as the person holding it, each one certain it has found the real thing.
+
+C. S. Lewis, who like me came to belief out of atheism, noticed the same thing about old books and old words. He warned against what he called chronological snobbery — the unexamined assumption that whatever is recent is wiser, and whatever is old is naive. Every age, he said, has its own blind spots, its own characteristic errors that everyone breathes like air and no one questions. The only correction is to keep company with other centuries, to let the dead vote. The creed is precisely that: the vote of the dead, the conviction that you are not the first intelligent person to consider whether Jesus is God, and that you might learn something from the ones who decided the question while the cost of getting it wrong was their lives.
+
+## The creeds were forged where lying could kill you
+
+There is a temptation to imagine the creeds as the leisurely product of comfortable men in robes, debating fine points over wine. The opposite is true, and a newcomer should feel the temperature of the rooms these words came out of.
+
+For nearly three hundred years, to be a baptized Christian in the Roman Empire was, intermittently, a crime that could cost you your life. The earliest confessions were not classroom exercises. They were the words a person said at the edge of the water, often in secret, often knowing that the same confession, repeated in front of a magistrate, could put them in front of the lions. When a Roman official demanded that you say "Caesar is Lord," the whole of your faith came down to whether you would instead say the older, costlier sentence: *Jesus is Lord.* That two-word creed — the shortest one in the New Testament, the one Paul says no person can sincerely say except by the Holy Spirit — was a death sentence in the wrong room. People said it anyway. The creeds carry the weight of every person who said them and then died for refusing to take them back.
+
+By the time of Nicaea the danger had shifted from the arena to the argument, but the cost did not vanish. Athanasius, who fought hardest for the wording about Jesus, was driven into exile five separate times over a single Greek word. He was not defending a preference. He was defending what he believed was the difference between a Savior who could save and a creature who could not, and he paid for it with most of his adult life on the run. When you say the Nicene Creed, you are saying words a man lost everything to keep true. That is not nothing. That is the opposite of a dead ritual. It is the residue of people who decided that getting God right was worth more than safety.
+
+This is why the precision of the creeds is not pedantry. The fights over single words — *begotten, not made; of one being with the Father* — look to a modern eye like theologians splitting hairs. But the hairs were the whole thing. A small shift in the wording was the difference between worshipping God and worshipping a creature, between a gospel that rescues and a story that merely inspires. The early church understood, in a way our slogan-soaked age has forgotten, that words about God are load-bearing. Get the words wrong and the building comes down later, on someone you love, in the dark, when the easy version of the faith turns out to hold no weight.
+
+## What fixed words do that fresh words cannot
+
+There is a more personal reason, and it took me years to feel it rather than merely understand it.
+
+Spontaneous prayer and spontaneous belief depend on how you feel that morning. The creed does not. There are days — every honest believer knows them — when you cannot summon the faith to say anything sincerely, when God feels absent and your own words would be lies. On those days the creed carries you. You stand in the room and the people on either side of you say *I believe* on your behalf, and you let their voices hold the words your heart cannot lift that morning, and next month you do the same for someone standing next to you who is in the dark you were in. The faith is not generated fresh by each person out of their own resources. It is received, held in common, passed hand to hand. That is not weakness. That is the whole design.
+
+There is also this. When you say only your own words, you can only ever say what you already think. The creed says more than you understand. You confess that Christ "will come again to judge the living and the dead" before you have any idea what that means, and you grow into it over a lifetime, the way a child says words too big for them and slowly becomes a person the words fit. The creed is a set of clothes cut large on purpose, so that you can grow up inside the faith rather than shrinking the faith down to your current size.
+
+## The thing being handed to you
+
+The shortest book in the New Testament makes the stakes plain. Jude, writing to a church under pressure from teachers who were redefining the faith to suit themselves, tells them to "contend for the faith that was once for all delivered to the saints" (Jude 3). *Once for all delivered.* There is a deposit. It was handed over. It is not yours to renovate; it is yours to receive, to guard, and to hand on intact to whoever comes after you. The same instinct runs back through the whole story to the oldest confession of Israel, the words a Jewish family said morning and evening for centuries: "Hear, O Israel: The LORD our God, the LORD is one" (Deuteronomy 6:4). The people of God have always been a people with words they say together, words older than any of them, words that tell them who God is when their own feelings cannot.
+
+So when you stand in a room of strangers and say sentences written before your nation existed, you are not performing a dead ritual. You are doing the most ancient thing a believer can do. You are saying *I believe* in the company of everyone who has ever said it — the bishops at Nicaea who would not let the church lose Jesus, the unnamed Christians who sang 1 Timothy 3:16 in the dark of the catacombs, the dying in the arenas, your own grandparents, the stranger weeping beside you at the funeral. You are confessing that the faith did not begin with you and will not end with you, that it is older and larger and sturdier than your moods, and that for once you get to say the most important thing there is to say without having to make it up.
+
+The first time I heard it, what undid me was not the theology. It was the company. I had spent my unbelieving years convinced I was thinking alone, and bravely. Then I stood in a room and discovered I was joining a sentence that had been moving through history for sixteen hundred years and would keep moving long after the room emptied. I had wanted, all along, to find something true that was bigger than me. The whole point of a creed is that it is bigger than you. That is not the problem with it. That is the gift.

@@ -28,6 +28,11 @@ const LIB_DIRS = [
   "content/drafts/scripture-past-politics",
   "content/drafts/after-christendom",
   "content/drafts/pastoral-angle",
+  "content/drafts/creeds",
+  "content/drafts/church-calendar",
+  "content/drafts/sacraments",
+  "content/drafts/disciplines",
+  "content/drafts/why-believe",
 ];
 
 const argv = process.argv.slice(2);
