@@ -17,6 +17,7 @@ See [`docs/archive/`](archive/) for historical planning documents, sprint logs, 
 | [`README.md`](../README.md) | Project overview and quickstart |
 | [`docs/EDITORIAL-CONSTITUTION.md`](EDITORIAL-CONSTITUTION.md) | Governing mission — sits above all other docs |
 | [`docs/VISION.md`](VISION.md) | Vision & strategy — nests under the constitution, above the world-class brief |
+| [`docs/TAXONOMY-PROPOSAL.md`](TAXONOMY-PROPOSAL.md) | Decision doc — reconciling the four live content taxonomies (move #1 from the vision) |
 | [`docs/WORLD-CLASS-BRIEF.md`](WORLD-CLASS-BRIEF.md) | Execution brief — engineering, SEO, a11y, performance, content phases |
 | [`.env.example`](../.env.example) | Environment variable template |
 | [`SECURITY.md`](../SECURITY.md) | Security policy and reporting (to be created) |
