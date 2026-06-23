@@ -2142,6 +2142,12 @@ const EBOOKS: Record<string, EbookConfig> = {
     file: new URL("./_ebooks/after-christendom.pdf", import.meta.url),
     filename: "After-Christendom.pdf",
   },
+  "covenant": {
+    title: "Covenant",
+    priceEnv: "STRIPE_PRICE_COVENANT",
+    file: new URL("./_ebooks/covenant.pdf", import.meta.url),
+    filename: "Covenant.pdf",
+  },
 };
 
 const PRODUCTION_SITE_URL = "https://livewellbyjamesbell.co";

@@ -25,6 +25,7 @@ const STATIC_PAGES = [
   { url: "/consider-the-birds", priority: "0.8", changefreq: "monthly" },
   { url: "/where-your-treasure-is", priority: "0.8", changefreq: "monthly" },
   { url: "/after-christendom", priority: "0.85", changefreq: "monthly" },
+  { url: "/covenant", priority: "0.85", changefreq: "monthly" },
   { url: "/skeptic-track", priority: "0.9", changefreq: "monthly" },
   { url: "/pastors-resource-wall", priority: "0.85", changefreq: "weekly" },
   { url: "/roadmap", priority: "0.8", changefreq: "monthly" },
