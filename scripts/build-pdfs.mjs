@@ -200,7 +200,7 @@ async function buildStudyGuideLeader(g) {
       });
       if (s.caseStudy) { listHeading(doc, "A scenario for the room"); bodyParagraphs(doc, s.caseStudy); }
       if (s.goingDeeper) { listHeading(doc, "Going deeper"); bodyParagraphs(doc, s.goingDeeper); }
-      if (s.memoryVerse) labelBody(doc, "Memory verse", s.memoryVerse);
+      if (s.memoryVerse) labelBody(doc, "Memory verse", `${s.memoryVerse.text} — ${s.memoryVerse.ref}`);
       labelBody(doc, "Closing prayer", s.closingPrayer);
     }
 
@@ -243,7 +243,7 @@ async function buildStudyGuideParticipant(g) {
       sectionHeading(doc, { kicker: "Session " + s.n, title: s.title });
       bodyParagraphs(doc, s.summary);
       labelBody(doc, "Key Scripture", s.keyScripture.ref);
-      if (s.memoryVerse) labelBody(doc, "Memory verse", s.memoryVerse);
+      if (s.memoryVerse) labelBody(doc, "Memory verse", `${s.memoryVerse.text} — ${s.memoryVerse.ref}`);
       listHeading(doc, "Reflect");
       s.reflection.forEach((r, i) => {
         doc.font("Times-Roman").fontSize(11).fillColor(INK).text((i + 1) + ". " + r, { lineGap: 3 });
