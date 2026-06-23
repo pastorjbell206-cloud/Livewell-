@@ -148,6 +148,35 @@ export default function Books() {
         </Link>
       </section>
 
+      {/* NEW EBOOK FOR PASTORS — sales funnel */}
+      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/alone-in-a-crowded-church" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img
+              src="/books/alone-in-a-crowded-church.svg"
+              alt="Alone in a Crowded Church book cover"
+              width={120}
+              height={181}
+              style={{ width: "92px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.35)", flex: "0 0 auto" }}
+            />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
+                New Ebook · $9.99 · For Pastors
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                Alone in a Crowded Church
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
+                Why pastors burn out in silence, and how brotherhood brings them back. Read the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
       {/* THE LIVEWELL SERIES — two new ebooks (top-level product pages) */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
