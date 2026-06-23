@@ -34,6 +34,13 @@ const TOOLS = [
     color: "var(--ink2)",
   },
   {
+    title: "Wisdom for All of Life",
+    description: "The front door to Scripture's wisdom for the place no rule reaches: the deep Proverbs and Ecclesiastes guide, a topical map for money, words, work, anger, marriage, and more, and a month in Proverbs. Part of Integrated Life.",
+    href: "/wisdom",
+    icon: BookMarked,
+    color: "var(--gold)",
+  },
+  {
     title: "Rule of Life Builder",
     description: "A rule of life is not a performance contract. It is a trellis. Choose sustainable practices across prayer, Scripture, rest, community, mission, and the body, and build a rhythm of grace you can actually keep. Part of Integrated Life.",
     href: "/tools/rule-of-life",

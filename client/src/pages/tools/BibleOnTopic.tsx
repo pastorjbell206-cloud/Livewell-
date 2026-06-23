@@ -199,7 +199,12 @@ const TOPICS: Topic[] = [
 ];
 
 export default function BibleOnTopic() {
-  const [topicId, setTopicId] = useState<string>(TOPICS[0].id);
+  const initial = (() => {
+    if (typeof window === "undefined") return TOPICS[0].id;
+    const q = new URLSearchParams(window.location.search).get("topic");
+    return q && TOPICS.some((t) => t.id === q) ? q : TOPICS[0].id;
+  })();
+  const [topicId, setTopicId] = useState<string>(initial);
   const [copied, setCopied] = useState(false);
   const topic = TOPICS.find((t) => t.id === topicId) || TOPICS[0];
 
