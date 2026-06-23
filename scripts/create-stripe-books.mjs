@@ -56,6 +56,12 @@ const BOOKS = [
     subtitle: "Why Marriage Is a Promise, Not a Deal",
     env: "STRIPE_PRICE_COVENANT",
   },
+  {
+    slug: "live-well",
+    title: "Live Well",
+    subtitle: "Seeking the Good of the City in Christian Exile",
+    env: "STRIPE_PRICE_LIVE_WELL",
+  },
 ];
 
 const results = [];

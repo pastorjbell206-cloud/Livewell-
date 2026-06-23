@@ -2148,6 +2148,12 @@ const EBOOKS: Record<string, EbookConfig> = {
     file: new URL("./_ebooks/covenant.pdf", import.meta.url),
     filename: "Covenant.pdf",
   },
+  "live-well": {
+    title: "Live Well",
+    priceEnv: "STRIPE_PRICE_LIVE_WELL",
+    file: new URL("./_ebooks/live-well.pdf", import.meta.url),
+    filename: "Live-Well.pdf",
+  },
 };
 
 const PRODUCTION_SITE_URL = "https://livewellbyjamesbell.co";
