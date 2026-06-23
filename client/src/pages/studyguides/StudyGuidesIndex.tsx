@@ -4,14 +4,24 @@
  * handout, facilitator script, promo kit) with email-gated PDF downloads on the
  * guide's own page. Card metadata is in client/src/lib/studyguides-index.ts.
  */
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { STUDY_GUIDES } from "@/lib/studyguides-index";
+import { STUDY_GUIDES, type StudyGuideEntry } from "@/lib/studyguides-index";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 export default function StudyGuidesIndex() {
+  // Load the generated manifest so new guides appear automatically; fall back
+  // to the bundled list if the manifest has not been built yet.
+  const [guides, setGuides] = useState<StudyGuideEntry[]>(STUDY_GUIDES);
+  useEffect(() => {
+    fetch("/studyguides/index.json", { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => { if (d?.guides?.length) setGuides(d.guides); })
+      .catch(() => {});
+  }, []);
   return (
     <Layout>
       <SEOMeta
@@ -41,7 +51,7 @@ export default function StudyGuidesIndex() {
             Free guides for groups, classes, and teams
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "16px" }}>
-            {STUDY_GUIDES.map((g) => (
+            {guides.map((g) => (
               <Link
                 key={g.slug}
                 href={`/studyguides/${g.slug}`}

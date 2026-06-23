@@ -156,7 +156,7 @@ export default function StudyGuide() {
                   <div style={lbl}>Session {s.n} · {s.timing.map((t) => `${t.segment} ${t.minutes}m`).join(" · ")}</div>
                   <h3 style={h3}>{s.title}</h3>
                   <p style={{ ...body, fontStyle: "italic", marginBottom: "12px" }}>Aim: {s.aim}</p>
-                  <Link href={`/writing/${s.essaySlug}`} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)" }}>Read the essay for this session →</Link>
+                  {s.essaySlug && <Link href={`/writing/${s.essaySlug}`} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)" }}>Read the essay for this session →</Link>}
                   {s.teaching && (<><div style={{ ...lbl, marginTop: "16px" }}>Teaching notes</div>{para(s.teaching)}</>)}
                   <div style={{ ...lbl, marginTop: "24px" }}>Key Scripture</div>
                   <div style={{ background: "var(--bone-warm)", borderLeft: "3px solid var(--mustard)", padding: "14px 18px", borderRadius: "0 var(--radius-sm) var(--radius-sm) 0" }}>

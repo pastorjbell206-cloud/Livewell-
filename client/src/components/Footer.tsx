@@ -46,6 +46,7 @@ export default function Footer() {
             <div style={col}>
               <Link href="/writing" style={footerLink}>The Writing</Link>
               <Link href="/books" style={footerLink}>Books</Link>
+              <Link href="/read" style={footerLink}>The Library (read online)</Link>
               <Link href="/reading-paths" style={footerLink}>Reading Paths</Link>
               <Link href="/start" style={footerLink}>Start Here</Link>
               <Link href="/marriage" style={footerLink}>Marriage</Link>

@@ -110,6 +110,7 @@ function sectionHeading(doc, { kicker, title }) {
 }
 
 function bodyParagraphs(doc, body) {
+  if (!body || typeof body !== "string") return;
   for (const p of body.split("\n\n").map((s) => s.trim()).filter(Boolean)) {
     doc.font("Times-Roman").fontSize(11).fillColor(INK)
       .text(p, { lineGap: 4.5, paragraphGap: 0 });
@@ -200,7 +201,7 @@ async function buildStudyGuideLeader(g) {
       });
       if (s.caseStudy) { listHeading(doc, "A scenario for the room"); bodyParagraphs(doc, s.caseStudy); }
       if (s.goingDeeper) { listHeading(doc, "Going deeper"); bodyParagraphs(doc, s.goingDeeper); }
-      if (s.memoryVerse) labelBody(doc, "Memory verse", s.memoryVerse);
+      if (s.memoryVerse) labelBody(doc, "Memory verse", `${s.memoryVerse.text} — ${s.memoryVerse.ref}`);
       labelBody(doc, "Closing prayer", s.closingPrayer);
     }
 
@@ -243,7 +244,7 @@ async function buildStudyGuideParticipant(g) {
       sectionHeading(doc, { kicker: "Session " + s.n, title: s.title });
       bodyParagraphs(doc, s.summary);
       labelBody(doc, "Key Scripture", s.keyScripture.ref);
-      if (s.memoryVerse) labelBody(doc, "Memory verse", s.memoryVerse);
+      if (s.memoryVerse) labelBody(doc, "Memory verse", `${s.memoryVerse.text} — ${s.memoryVerse.ref}`);
       listHeading(doc, "Reflect");
       s.reflection.forEach((r, i) => {
         doc.font("Times-Roman").fontSize(11).fillColor(INK).text((i + 1) + ". " + r, { lineGap: 3 });
@@ -427,7 +428,7 @@ async function main() {
   const written = [];
 
   if (fs.existsSync(STUDYGUIDES_DIR)) {
-    const sgFiles = fs.readdirSync(STUDYGUIDES_DIR).filter((f) => f.endsWith(".json")).sort();
+    const sgFiles = fs.readdirSync(STUDYGUIDES_DIR).filter((f) => f.endsWith(".json") && f !== "index.json").sort();
     for (const file of sgFiles) {
       const g = JSON.parse(fs.readFileSync(path.join(STUDYGUIDES_DIR, file), "utf8"));
       written.push(await buildStudyGuideLeader(g));
