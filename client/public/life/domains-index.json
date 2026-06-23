@@ -25,10 +25,22 @@
       "pillar": "The Home and Relationships"
     },
     {
+      "slug": "the-home-and-the-family",
+      "title": "The Home and the Family: Building a Household of Faith",
+      "blurb": "A home is not only where a family sleeps. It is the first church a child ever attends and the first picture of God they ever see. What Scripture, church history, and honest research say about the table, family worship, hospitality, and building a household whose ordinary life forms souls.",
+      "pillar": "The Home and Relationships"
+    },
+    {
       "slug": "the-anxious-mind",
       "title": "The Anxious Mind: Faith and Mental Health",
       "blurb": "Anxiety is not a faith failure. What Scripture, church history, and honest science say about the fearful mind, and why seeing a doctor can be an act of faith.",
       "pillar": "The Inner Life"
+    },
+    {
+      "slug": "discipleship-following-jesus",
+      "title": "Discipleship: The Long Apprenticeship to Jesus",
+      "blurb": "Jesus did not call converts. He called disciples, apprentices who learn to live his life. What Scripture, church history, and honest research say about how a person is actually changed, why so many believers stall, and the slow work of becoming like the one you follow.",
+      "pillar": "The Integrated Vision"
     },
     {
       "slug": "wisdom-for-all-of-life",
