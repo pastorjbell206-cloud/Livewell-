@@ -1,5 +1,5 @@
 ---
-title: "How to Pastor a Congregation Captured by a Cable Network"
+title: "How Do You Pastor a Church Addicted to Cable News?"
 slug: pastoring-a-captured-congregation
 track: pastoral-ministry
 audience: pastors

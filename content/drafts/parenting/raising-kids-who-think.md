@@ -1,5 +1,5 @@
 ---
-title: "Raising Kids Who Think for Themselves Instead of Performing Faith"
+title: "Raising Kids Who Think Instead of Just Performing Faith"
 slug: raising-kids-who-think
 track: parenting
 audience: individuals

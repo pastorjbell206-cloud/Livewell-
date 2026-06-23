@@ -1,5 +1,5 @@
 ---
-title: "When Your Child Asks a Question You Cannot Answer"
+title: "When Your Child Asks a Question You Can't Answer"
 slug: when-your-child-asks-a-question
 track: parenting
 audience: individuals

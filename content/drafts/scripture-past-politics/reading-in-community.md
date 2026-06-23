@@ -1,5 +1,5 @@
 ---
-title: "Reading in Community, Not in a Tribe"
+title: "You Were Never Meant to Read the Bible Alone"
 slug: reading-in-community
 track: theology
 audience: individuals

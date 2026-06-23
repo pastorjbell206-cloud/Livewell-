@@ -1,5 +1,5 @@
 ---
-title: "Strongman Theology"
+title: "Why a Frightened Church Wants a King"
 slug: strongman-theology
 track: politics
 audience: individuals

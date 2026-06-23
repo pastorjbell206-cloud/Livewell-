@@ -1,5 +1,5 @@
 ---
-title: "Teaching Kids About Doubt: Start the Conversation Before the Algorithm Does"
+title: "Teach Your Kids About Doubt Before the Internet Does"
 slug: teaching-kids-about-doubt
 track: parenting
 audience: individuals

@@ -1,5 +1,5 @@
 ---
-title: "Two Kingdoms, One Pledge: What Allegiance to a Crucified King Costs"
+title: "Can You Pledge Allegiance to Two Kingdoms?"
 slug: two-kingdoms-one-pledge
 track: politics
 audience: individuals

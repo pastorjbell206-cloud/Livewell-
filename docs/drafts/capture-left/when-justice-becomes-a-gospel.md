@@ -1,5 +1,5 @@
 ---
-title: "When Justice Becomes a Gospel: The Good Cause That Quietly Became a God"
+title: "When Justice Becomes a Gospel"
 slug: when-justice-becomes-a-gospel
 track: politics
 audience: individuals

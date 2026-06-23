@@ -1,5 +1,5 @@
 ---
-title: "Burnout Is Not a Badge of Honor: Why Pastoral Exhaustion Was Never Proof of Faithfulness"
+title: "Burnout Is Not a Badge of Honor"
 slug: burnout-is-not-a-badge
 track: pastoral-ministry
 audience: pastors

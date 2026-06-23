@@ -1,5 +1,5 @@
 ---
-title: "When You Married Someone You No Longer Recognize: A Pastor on Growing Apart"
+title: "When You No Longer Recognize the Person You Married"
 slug: when-you-married-someone-you-no-longer-recognize
 track: marriage
 audience: couples

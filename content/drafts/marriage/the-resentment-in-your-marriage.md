@@ -1,5 +1,5 @@
 ---
-title: "The Resentment in Your Marriage Is Telling You Something Worth Hearing"
+title: "What the Resentment in Your Marriage Is Telling You"
 slug: the-resentment-in-your-marriage
 track: marriage
 audience: couples

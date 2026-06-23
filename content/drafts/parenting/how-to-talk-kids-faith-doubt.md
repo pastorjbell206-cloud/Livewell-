@@ -1,5 +1,5 @@
 ---
-title: "Talking to Kids About Faith and Doubt When You're Not Sure Yourself"
+title: "How to Talk to Your Kids About Faith When You're Not Sure Yourself"
 slug: how-to-talk-kids-faith-doubt
 track: parenting
 audience: individuals

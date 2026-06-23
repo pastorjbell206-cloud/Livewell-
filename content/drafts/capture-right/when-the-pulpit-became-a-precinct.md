@@ -1,5 +1,5 @@
 ---
-title: "When the Pulpit Became a Precinct"
+title: "When Your Church Became a Voting Bloc"
 slug: when-the-pulpit-became-a-precinct
 track: politics
 audience: individuals

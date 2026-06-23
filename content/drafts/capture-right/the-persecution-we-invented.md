@@ -1,5 +1,5 @@
 ---
-title: "The Persecution We Invented"
+title: "Is the American Church Really Being Persecuted?"
 slug: the-persecution-we-invented
 track: politics
 audience: individuals

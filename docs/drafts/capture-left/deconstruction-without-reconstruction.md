@@ -1,5 +1,5 @@
 ---
-title: "Faith Deconstruction Is Honest. Demolition Is Not."
+title: "What Happens After You Deconstruct Your Faith?"
 slug: deconstruction-without-reconstruction
 track: politics
 audience: individuals

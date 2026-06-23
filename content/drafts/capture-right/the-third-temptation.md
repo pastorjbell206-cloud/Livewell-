@@ -1,5 +1,5 @@
 ---
-title: "The Third Temptation"
+title: "The Temptation Jesus Refused in the Desert"
 slug: the-third-temptation
 track: politics
 audience: individuals

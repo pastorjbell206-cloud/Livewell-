@@ -1,5 +1,5 @@
 ---
-title: "Is It Okay to Be Angry at God? What the Psalms Actually Say"
+title: "Is It Okay to Be Angry at God?"
 slug: what-psalms-teach-about-anger-at-god
 track: doubt
 audience: individuals

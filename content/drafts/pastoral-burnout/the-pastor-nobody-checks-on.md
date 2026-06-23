@@ -1,5 +1,5 @@
 ---
-title: "The Pastor Nobody Checks On: Pastoral Loneliness and the Care No One Gives the Caregiver"
+title: "The Pastor Nobody Checks On"
 slug: the-pastor-nobody-checks-on
 track: pastoral-ministry
 audience: pastors

@@ -1,5 +1,5 @@
 ---
-title: "The Whole Counsel"
+title: "Why You Can't Cherry-Pick the Bible"
 slug: the-whole-counsel
 track: theology
 audience: individuals

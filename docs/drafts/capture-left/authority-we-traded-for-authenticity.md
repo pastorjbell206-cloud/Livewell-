@@ -1,5 +1,5 @@
 ---
-title: "Is the Bible the Final Authority — or Is Your Lived Experience? The Trade the Church Made Without Noticing"
+title: "Is the Bible the Final Word, or Am I?"
 slug: authority-we-traded-for-authenticity
 track: politics
 audience: individuals

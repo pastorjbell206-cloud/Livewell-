@@ -1,5 +1,5 @@
 ---
-title: "Discipling People Out of Fear"
+title: "How Fear Took Over the Church"
 slug: discipling-people-out-of-fear
 track: pastoral-ministry
 audience: pastors

@@ -1,5 +1,5 @@
 ---
-title: "The Numbers Behind the Decline, and the Ones That Lie"
+title: "Is the Church Really Dying? What the Numbers Say"
 slug: the-numbers-behind-the-decline
 track: after-christendom
 audience: individuals

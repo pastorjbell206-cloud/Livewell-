@@ -1,5 +1,5 @@
 ---
-title: "The Flag in the Sanctuary: How It Got There"
+title: "Why Is There a Flag in the Sanctuary?"
 slug: the-flag-in-the-sanctuary
 track: politics
 audience: individuals

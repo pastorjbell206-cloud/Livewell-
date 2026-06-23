@@ -1,5 +1,5 @@
 ---
-title: "Six Verses We Memorized, Sixty We Skipped"
+title: "The Bible Verses We Quote, and the Ones We Skip"
 slug: six-verses-we-memorized
 track: politics
 audience: individuals

@@ -1,5 +1,5 @@
 ---
-title: "The Right Side of History Is a Religion. It Just Isn't Christianity."
+title: "When History Becomes Your God"
 slug: right-side-of-history
 track: politics
 audience: individuals

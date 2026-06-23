@@ -1,5 +1,5 @@
 ---
-title: "The Father Wound and the God Question: How Your Child Learns the Word Before the Doctrine"
+title: "How a Father Shapes the Way a Child Sees God"
 slug: the-father-wound-and-the-god-question
 track: parenting
 audience: individuals

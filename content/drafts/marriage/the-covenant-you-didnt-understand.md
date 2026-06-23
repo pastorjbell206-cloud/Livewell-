@@ -1,5 +1,5 @@
 ---
-title: "The Covenant You Didn't Understand When You Made It"
+title: "The Vow You Didn't Understand When You Made It"
 slug: the-covenant-you-didnt-understand
 track: marriage
 audience: couples

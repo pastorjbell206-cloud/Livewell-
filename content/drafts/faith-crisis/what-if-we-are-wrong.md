@@ -1,5 +1,5 @@
 ---
-title: "What If Christianity Is Wrong? The Question Every Believer Asks at 2 a.m."
+title: "What If Christianity Is Wrong?"
 slug: what-if-we-are-wrong
 track: doubt
 audience: individuals

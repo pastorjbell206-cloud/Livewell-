@@ -1,5 +1,5 @@
 ---
-title: "Discipline Without Domination: Correcting Your Child Without Yelling or Crushing Them"
+title: "How to Discipline Without Crushing Your Child"
 slug: discipline-without-domination
 track: parenting
 audience: individuals

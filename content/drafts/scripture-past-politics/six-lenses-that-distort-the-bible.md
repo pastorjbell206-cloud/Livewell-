@@ -1,5 +1,5 @@
 ---
-title: "Six Lenses That Distort the Bible Before You Read a Word"
+title: "You've Never Read the Bible Without a Lens"
 slug: six-lenses-that-distort-the-bible
 track: theology
 audience: individuals

@@ -1,5 +1,5 @@
 ---
-title: "Preaching the Whole Counsel to a Room That Will Hear Politics"
+title: "How to Preach to a Politically Divided Church"
 slug: preaching-to-a-divided-room
 track: pastoral-ministry
 audience: pastors

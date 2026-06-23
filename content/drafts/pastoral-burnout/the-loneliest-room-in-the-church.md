@@ -1,5 +1,5 @@
 ---
-title: "The Loneliest Room in the Church: Pastoral Isolation and the Weight No One Sees"
+title: "The Loneliest Room in the Church"
 slug: the-loneliest-room-in-the-church
 track: pastoral-ministry
 audience: pastors

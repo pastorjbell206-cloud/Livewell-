@@ -1,5 +1,5 @@
 ---
-title: "Why Does God Allow Suffering? When the Answer Is No Answer at All"
+title: "Why Does God Allow Suffering?"
 slug: suffering-without-explanation
 track: doubt
 audience: individuals

@@ -1,5 +1,5 @@
 ---
-title: "Emotional Labor in Marriage: When One Spouse Carries It and the Other Can't See It"
+title: "When One Spouse Carries the Marriage Alone"
 slug: emotional-labor-in-marriage
 track: marriage
 audience: couples

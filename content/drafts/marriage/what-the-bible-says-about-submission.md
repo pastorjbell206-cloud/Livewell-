@@ -1,5 +1,5 @@
 ---
-title: "What the Bible Actually Says About Submission in Marriage — and What It Doesn't"
+title: "What the Bible Really Says About Submission in Marriage"
 slug: what-the-bible-says-about-submission
 track: marriage
 audience: couples

@@ -1,5 +1,5 @@
 ---
-title: "Raising Sons in a World Confused About Manhood: The Third Way"
+title: "Raising Sons in a World Confused About Manhood"
 slug: raising-sons-manhood
 track: parenting
 audience: individuals

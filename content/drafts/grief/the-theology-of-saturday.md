@@ -1,5 +1,5 @@
 ---
-title: "Holy Saturday: A Theology for the Day After the Worst Has Happened"
+title: "Where Is God on Holy Saturday?"
 slug: the-theology-of-saturday
 track: doubt
 audience: individuals

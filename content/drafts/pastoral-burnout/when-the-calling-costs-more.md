@@ -1,5 +1,5 @@
 ---
-title: "When the Calling Costs More Than They Told You: The Hidden Bill of Pastoral Ministry"
+title: "When the Calling Costs More Than They Told You"
 slug: when-the-calling-costs-more
 track: pastoral-ministry
 audience: pastors

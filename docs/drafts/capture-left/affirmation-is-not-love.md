@@ -1,5 +1,5 @@
 ---
-title: "Affirmation Is Not Love. It Is the Cheapest Thing We Mistake for It."
+title: "Is Affirmation the Same as Love?"
 slug: affirmation-is-not-love
 track: politics
 audience: individuals

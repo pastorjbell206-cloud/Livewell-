@@ -1,5 +1,5 @@
 ---
-title: "Cheap Grace Meaning: Why the Left Has a Version Bonhoeffer Would Recognize"
+title: "When Forgiveness Only Flows One Way"
 slug: cheap-grace-left-hand
 track: politics
 audience: individuals

@@ -1,5 +1,5 @@
 ---
-title: "Why Pastors Quit: The Slow Leak No One Watches Until the Tire Is Flat"
+title: "Why Pastors Quit"
 slug: why-pastors-quit
 track: pastoral-ministry
 audience: pastors

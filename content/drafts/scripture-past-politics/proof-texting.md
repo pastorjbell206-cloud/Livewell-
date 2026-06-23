@@ -1,5 +1,5 @@
 ---
-title: "Proof-Texting Is How Both Sides Win and the Text Loses"
+title: "How Both Sides Use the Bible to Win"
 slug: proof-texting
 track: theology
 audience: individuals

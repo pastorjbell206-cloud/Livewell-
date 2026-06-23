@@ -1,5 +1,5 @@
 ---
-title: "Family Devotions That Aren't Forced: Why a Table Beats a Program"
+title: "Family Devotions That Don't Feel Forced"
 slug: family-devotions-authentic
 track: parenting
 audience: individuals

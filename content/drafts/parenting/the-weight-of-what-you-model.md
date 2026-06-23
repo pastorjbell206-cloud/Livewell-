@@ -1,5 +1,5 @@
 ---
-title: "The Weight of What You Model: Why Modeling Faith to Kids Matters More Than Teaching It"
+title: "Your Kids Learn Faith From What You Do, Not What You Say"
 slug: the-weight-of-what-you-model
 track: parenting
 audience: individuals

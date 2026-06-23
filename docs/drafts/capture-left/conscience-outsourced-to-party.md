@@ -1,5 +1,5 @@
 ---
-title: "Should a Christian Follow a Political Party? You Already Are."
+title: "Should a Christian Follow a Political Party?"
 slug: conscience-outsourced-to-party
 track: politics
 audience: individuals

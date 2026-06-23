@@ -1,5 +1,5 @@
 ---
-title: "When Fear Rewrites Your Theology Without Asking"
+title: "When Fear Starts Rewriting What You Believe"
 slug: when-fear-rewrites-theology
 track: doubt
 audience: individuals

@@ -1,5 +1,5 @@
 ---
-title: "Where Is God in Grief When the Room Is Empty and the Silence Won't Break"
+title: "Where Is God When You're Grieving?"
 slug: when-god-is-silent-and-the-room-is-empty
 track: doubt
 audience: individuals

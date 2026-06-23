@@ -1,5 +1,5 @@
 ---
-title: "My Teenager Doesn't Believe in God Anymore: What to Do First"
+title: "When Your Teenager Says They Don't Believe Anymore"
 slug: teenager-losing-faith
 track: parenting
 audience: individuals

@@ -1,5 +1,5 @@
 ---
-title: "Protecting Your Marriage in Ministry When the Church Demands Everything"
+title: "When Ministry Is Quietly Killing Your Marriage"
 slug: protecting-marriage-in-ministry
 track: marriage
 audience: couples

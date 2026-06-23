@@ -1,5 +1,5 @@
 ---
-title: "Nostalgia Is Not the Kingdom"
+title: "Was America Ever Really a Christian Nation?"
 slug: nostalgia-is-not-the-kingdom
 track: politics
 audience: individuals

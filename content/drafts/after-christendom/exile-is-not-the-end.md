@@ -1,5 +1,5 @@
 ---
-title: "Exile Is Not the End"
+title: "The Church Has Been an Exile Before"
 slug: exile-is-not-the-end
 track: after-christendom
 audience: individuals

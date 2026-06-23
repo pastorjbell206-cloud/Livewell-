@@ -1,5 +1,5 @@
 ---
-title: "The Last Nonpartisan in the Room"
+title: "The Pastor Who Won't Pick a Side"
 slug: the-last-nonpartisan-in-the-room
 track: pastoral-ministry
 audience: pastors

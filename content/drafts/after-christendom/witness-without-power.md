@@ -1,5 +1,5 @@
 ---
-title: "Witness Without Power"
+title: "The Church Grew Fastest When It Had No Power"
 slug: witness-without-power
 track: after-christendom
 audience: individuals

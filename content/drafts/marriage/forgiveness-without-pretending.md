@@ -1,5 +1,5 @@
 ---
-title: "Forgiveness Without Pretending: How to Actually Forgive Your Spouse"
+title: "How Do You Forgive Without Pretending It Didn't Happen?"
 slug: forgiveness-without-pretending
 track: marriage
 audience: couples

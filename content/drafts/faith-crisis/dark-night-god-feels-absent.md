@@ -1,5 +1,5 @@
 ---
-title: "The Dark Night of the Soul: What to Do When God Feels Absent"
+title: "What to Do When God Feels Absent"
 slug: dark-night-god-feels-absent
 track: doubt
 audience: individuals

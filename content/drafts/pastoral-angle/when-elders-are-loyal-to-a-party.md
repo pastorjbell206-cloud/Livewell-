@@ -1,5 +1,5 @@
 ---
-title: "When Your Elders Are More Loyal to a Party Than a Pulpit"
+title: "When Your Church Leaders Serve a Party First"
 slug: when-elders-are-loyal-to-a-party
 track: pastoral-ministry
 audience: pastors

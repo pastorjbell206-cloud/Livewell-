@@ -1,5 +1,5 @@
 ---
-title: "When Marriage Becomes a Mirror: Why the Hardest Person to Face Is You"
+title: "When Marriage Becomes a Mirror"
 slug: when-marriage-becomes-a-mirror
 track: marriage
 audience: couples

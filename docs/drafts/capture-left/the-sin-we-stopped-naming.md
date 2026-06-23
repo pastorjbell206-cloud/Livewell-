@@ -1,5 +1,5 @@
 ---
-title: "What Happened to the Doctrine of Sin? The Church Kept the System and Lost Itself."
+title: "Why the Church Stopped Talking About Sin"
 slug: the-sin-we-stopped-naming
 track: politics
 audience: individuals

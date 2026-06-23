@@ -1,5 +1,5 @@
 ---
-title: "Constantine's Bargain: What You're Really Leaving When You Leave the Faith"
+title: "What You're Really Leaving When You Leave the Faith"
 slug: constantines-bargain
 track: doubt
 audience: individuals

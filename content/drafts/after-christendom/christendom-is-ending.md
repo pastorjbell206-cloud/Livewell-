@@ -1,5 +1,5 @@
 ---
-title: "Christendom: A 1,700-Year Story That Is Ending"
+title: "What the End of Christian America Actually Means"
 slug: christendom-is-ending
 track: after-christendom
 audience: individuals

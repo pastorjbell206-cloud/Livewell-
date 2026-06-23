@@ -1,5 +1,5 @@
 ---
-title: "When Grief Doesn't Lift: The Weight That Stays, and Why It's Not Your Failure"
+title: "When Grief Doesn't Lift"
 slug: the-weight-that-stays
 track: doubt
 audience: individuals

@@ -1,5 +1,5 @@
 ---
-title: "What the Original Audience Heard"
+title: "What the First Readers of the Bible Actually Heard"
 slug: what-the-original-audience-heard
 track: theology
 audience: individuals

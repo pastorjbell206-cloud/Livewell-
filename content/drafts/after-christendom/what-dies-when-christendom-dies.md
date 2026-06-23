@@ -1,5 +1,5 @@
 ---
-title: "What Dies When Christendom Dies — and What Doesn't"
+title: "What Actually Dies When Christianity Loses Power"
 slug: what-dies-when-christendom-dies
 track: after-christendom
 audience: individuals

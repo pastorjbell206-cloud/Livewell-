@@ -1,5 +1,5 @@
 ---
-title: "Pastor's Kids and Faith: What Your Children See on the Drive Home"
+title: "What Your Kids Learn on the Drive Home From Church"
 slug: the-pastors-kids-are-watching
 track: parenting
 audience: individuals

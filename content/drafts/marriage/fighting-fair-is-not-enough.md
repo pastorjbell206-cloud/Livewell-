@@ -1,5 +1,5 @@
 ---
-title: "Fighting Fair Is Not Enough to Save Your Marriage"
+title: "Why Fighting Fair Isn't Enough to Save a Marriage"
 slug: fighting-fair-is-not-enough
 track: marriage
 audience: couples

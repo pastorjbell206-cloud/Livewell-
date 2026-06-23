@@ -1,5 +1,5 @@
 ---
-title: "When God Doesn't Make Sense, You Were Promised the Wrong God"
+title: "When God Stops Making Sense"
 slug: when-god-doesnt-make-sense
 track: doubt
 audience: individuals
