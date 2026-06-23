@@ -110,6 +110,7 @@ function sectionHeading(doc, { kicker, title }) {
 }
 
 function bodyParagraphs(doc, body) {
+  if (!body || typeof body !== "string") return;
   for (const p of body.split("\n\n").map((s) => s.trim()).filter(Boolean)) {
     doc.font("Times-Roman").fontSize(11).fillColor(INK)
       .text(p, { lineGap: 4.5, paragraphGap: 0 });
@@ -427,7 +428,7 @@ async function main() {
   const written = [];
 
   if (fs.existsSync(STUDYGUIDES_DIR)) {
-    const sgFiles = fs.readdirSync(STUDYGUIDES_DIR).filter((f) => f.endsWith(".json")).sort();
+    const sgFiles = fs.readdirSync(STUDYGUIDES_DIR).filter((f) => f.endsWith(".json") && f !== "index.json").sort();
     for (const file of sgFiles) {
       const g = JSON.parse(fs.readFileSync(path.join(STUDYGUIDES_DIR, file), "utf8"));
       written.push(await buildStudyGuideLeader(g));
