@@ -51,6 +51,12 @@
         "label": "Rest and the Sabbath",
         "href": "/life/rest-and-the-sabbath"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for the inner life",
+        "href": "/writing?topic=spiritual-formation"
+      }
     ]
   },
   {
@@ -101,6 +107,12 @@
         "label": "Technology and Attention",
         "href": "/life/technology-and-attention"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for life in the world",
+        "href": "/writing?topic=the-life-in-the-world"
+      }
     ]
   },
   {
@@ -150,6 +162,12 @@
       {
         "label": "Contentment Against Envy",
         "href": "/life/contentment-against-envy"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for life in the world",
+        "href": "/writing?topic=the-life-in-the-world"
       }
     ]
   },
@@ -205,6 +223,12 @@
         "label": "Technology and Attention",
         "href": "/life/technology-and-attention"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for life in the world",
+        "href": "/writing?topic=the-life-in-the-world"
+      }
     ]
   },
   {
@@ -254,6 +278,12 @@
       {
         "label": "Wisdom for All of Life",
         "href": "/life/wisdom-for-all-of-life"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for the inner life",
+        "href": "/writing?topic=spiritual-formation"
       }
     ]
   },
@@ -309,6 +339,12 @@
         "label": "Work as Worship",
         "href": "/life/work-as-worship"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for work and money",
+        "href": "/writing?topic=work"
+      }
     ]
   },
   {
@@ -359,6 +395,12 @@
         "label": "Addiction and the Long Road Back",
         "href": "/life/addiction-and-the-long-road-back"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for the inner life",
+        "href": "/writing?topic=spiritual-formation"
+      }
     ]
   },
   {
@@ -408,6 +450,12 @@
       {
         "label": "Money and the Heart",
         "href": "/life/money-and-the-heart"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for work and money",
+        "href": "/writing?topic=work"
       }
     ]
   }

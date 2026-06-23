@@ -51,6 +51,12 @@
         "label": "The Church as Family",
         "href": "/life/the-church-as-family"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for following Jesus",
+        "href": "/writing?topic=discipleship"
+      }
     ]
   },
   {
@@ -103,6 +109,12 @@
       {
         "label": "The Church as Family",
         "href": "/life/the-church-as-family"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for following Jesus",
+        "href": "/writing?topic=discipleship"
       }
     ]
   },
@@ -158,6 +170,12 @@
         "label": "Life Together: The One Anothers",
         "href": "/life/life-together-the-one-anothers"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for following Jesus",
+        "href": "/writing?topic=discipleship"
+      }
     ]
   },
   {
@@ -211,6 +229,12 @@
         "label": "Conflict and Reconciliation",
         "href": "/life/conflict-and-reconciliation"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for following Jesus",
+        "href": "/writing?topic=discipleship"
+      }
     ]
   },
   {
@@ -263,6 +287,12 @@
       {
         "label": "The Church as Family",
         "href": "/life/the-church-as-family"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for following Jesus",
+        "href": "/writing?topic=discipleship"
       }
     ]
   },
@@ -318,6 +348,12 @@
         "label": "Making Disciples at the Table",
         "href": "/life/making-disciples-at-the-table"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for following Jesus",
+        "href": "/writing?topic=discipleship"
+      }
     ]
   },
   {
@@ -366,6 +402,12 @@
       {
         "label": "Generosity and the Open Hand",
         "href": "/life/generosity-and-the-open-hand"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for work and money",
+        "href": "/writing?topic=work"
       }
     ]
   },
@@ -419,6 +461,12 @@
       {
         "label": "The Church as Family",
         "href": "/life/the-church-as-family"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for sharing your faith",
+        "href": "/writing?topic=evangelism"
       }
     ]
   }

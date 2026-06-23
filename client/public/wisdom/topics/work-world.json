@@ -51,6 +51,12 @@
         "label": "Rest and the Sabbath",
         "href": "/life/rest-and-the-sabbath"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for work and money",
+        "href": "/writing?topic=work"
+      }
     ]
   },
   {
@@ -100,6 +106,12 @@
       {
         "label": "Work as Worship",
         "href": "/life/work-as-worship"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for work and money",
+        "href": "/writing?topic=work"
       }
     ]
   },
@@ -152,6 +164,12 @@
         "label": "Wisdom for All of Life",
         "href": "/life/wisdom-for-all-of-life"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for the inner life",
+        "href": "/writing?topic=spiritual-formation"
+      }
     ]
   },
   {
@@ -201,6 +219,12 @@
       {
         "label": "Rest and the Sabbath",
         "href": "/life/rest-and-the-sabbath"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for work and money",
+        "href": "/writing?topic=work"
       }
     ]
   },
@@ -252,6 +276,12 @@
         "label": "Success and Failure",
         "href": "/life/success-and-failure"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for work and money",
+        "href": "/writing?topic=work"
+      }
     ]
   },
   {
@@ -301,6 +331,12 @@
       {
         "label": "Justice and the Poor",
         "href": "/life/justice-and-the-poor"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for life in the world",
+        "href": "/writing?topic=the-life-in-the-world"
       }
     ]
   },
@@ -352,6 +388,12 @@
         "label": "Faith and Politics",
         "href": "/life/faith-and-politics"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for life in the world",
+        "href": "/writing?topic=the-life-in-the-world"
+      }
     ]
   },
   {
@@ -401,6 +443,12 @@
       {
         "label": "Technology and Attention",
         "href": "/life/technology-and-attention"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for life in the world",
+        "href": "/writing?topic=the-life-in-the-world"
       }
     ]
   }

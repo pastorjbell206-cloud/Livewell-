@@ -51,6 +51,12 @@
         "label": "Sex and the Body",
         "href": "/life/sex-and-the-body"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for the inner life",
+        "href": "/writing?topic=spiritual-formation"
+      }
     ]
   },
   {
@@ -105,6 +111,12 @@
         "label": "Contentment Against Envy",
         "href": "/life/contentment-against-envy"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for work and money",
+        "href": "/writing?topic=work"
+      }
     ]
   },
   {
@@ -158,6 +170,12 @@
         "label": "Discipleship: Following Jesus",
         "href": "/life/discipleship-following-jesus"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for the inner life",
+        "href": "/writing?topic=spiritual-formation"
+      }
     ]
   },
   {
@@ -210,6 +228,12 @@
       {
         "label": "Discipleship: Following Jesus",
         "href": "/life/discipleship-following-jesus"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for the inner life",
+        "href": "/writing?topic=spiritual-formation"
       }
     ]
   },
@@ -265,6 +289,12 @@
         "label": "Shame and the Hiding Self",
         "href": "/life/shame-and-the-hiding-self"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for the inner life",
+        "href": "/writing?topic=spiritual-formation"
+      }
     ]
   },
   {
@@ -319,6 +349,12 @@
         "label": "Money and the Heart",
         "href": "/life/money-and-the-heart"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for the inner life",
+        "href": "/writing?topic=spiritual-formation"
+      }
     ]
   },
   {
@@ -371,6 +407,12 @@
       {
         "label": "The Story We Live In",
         "href": "/life/the-story-we-live-in"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for the inner life",
+        "href": "/writing?topic=spiritual-formation"
       }
     ]
   },
@@ -425,6 +467,12 @@
       {
         "label": "The Story We Live In",
         "href": "/life/the-story-we-live-in"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for the inner life",
+        "href": "/writing?topic=spiritual-formation"
       }
     ]
   }

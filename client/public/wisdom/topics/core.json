@@ -48,6 +48,12 @@
         "label": "The Anxious Mind",
         "href": "/life/the-anxious-mind"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for the inner life",
+        "href": "/writing?topic=spiritual-formation"
+      }
     ]
   },
   {
@@ -97,6 +103,12 @@
       {
         "label": "Anger and the Hot Heart",
         "href": "/life/anger-and-the-hot-heart"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for the inner life",
+        "href": "/writing?topic=spiritual-formation"
       }
     ]
   },
@@ -148,6 +160,12 @@
       {
         "label": "Money and the Heart",
         "href": "/life/money-and-the-heart"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for work and money",
+        "href": "/writing?topic=work"
       }
     ]
   },
@@ -202,6 +220,12 @@
         "label": "The Marriage pages",
         "href": "/marriage"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical marriage guides",
+        "href": "/writing?topic=marriage"
+      }
     ]
   },
   {
@@ -249,6 +273,12 @@
       {
         "label": "Friendship Against Isolation",
         "href": "/life/friendship-against-isolation"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
       }
     ]
   },
@@ -299,6 +329,12 @@
         "label": "Grief and Loss",
         "href": "/life/grief-and-loss"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for hard seasons",
+        "href": "/writing?topic=suffering"
+      }
     ]
   },
   {
@@ -347,6 +383,12 @@
         "label": "Suffering and the Silence of God",
         "href": "/life/suffering-and-the-silence-of-god"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for the inner life",
+        "href": "/writing?topic=spiritual-formation"
+      }
     ]
   },
   {
@@ -394,6 +436,12 @@
       {
         "label": "Forgiveness: The Hardest Grace",
         "href": "/life/forgiveness-the-hardest-grace"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
       }
     ]
   }

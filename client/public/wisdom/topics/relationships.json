@@ -53,6 +53,12 @@
         "label": "The Parenting pages",
         "href": "/parenting"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical parenting guides",
+        "href": "/writing?topic=parenting"
+      }
     ]
   },
   {
@@ -104,6 +110,12 @@
         "label": "Conflict and Reconciliation",
         "href": "/life/conflict-and-reconciliation"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
+      }
     ]
   },
   {
@@ -153,6 +165,12 @@
       {
         "label": "Singleness and the Full Life",
         "href": "/life/singleness-and-the-full-life"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
       }
     ]
   },
@@ -204,6 +222,12 @@
         "label": "Conflict and Reconciliation",
         "href": "/life/conflict-and-reconciliation"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
+      }
     ]
   },
   {
@@ -253,6 +277,12 @@
       {
         "label": "Betrayal and Broken Trust",
         "href": "/life/betrayal-and-broken-trust"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
       }
     ]
   },
@@ -304,6 +334,12 @@
         "label": "The Wayward Child",
         "href": "/life/the-wayward-child"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
+      }
     ]
   },
   {
@@ -354,6 +390,12 @@
         "label": "Caring for Aging Parents",
         "href": "/life/caring-for-aging-parents"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
+      }
     ]
   },
   {
@@ -403,6 +445,12 @@
       {
         "label": "Friendship Against Isolation",
         "href": "/life/friendship-against-isolation"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
       }
     ]
   }

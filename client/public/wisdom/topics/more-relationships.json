@@ -47,6 +47,12 @@
         "label": "Dating and Discernment",
         "href": "/life/dating-and-discernment"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
+      }
     ]
   },
   {
@@ -101,6 +107,12 @@
         "label": "Grief and Loss",
         "href": "/life/grief-and-loss"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
+      }
     ]
   },
   {
@@ -151,6 +163,12 @@
         "label": "Singleness and the Full Life",
         "href": "/life/singleness-and-the-full-life"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
+      }
     ]
   },
   {
@@ -200,6 +218,12 @@
       {
         "label": "Contentment Against Envy",
         "href": "/life/contentment-against-envy"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
       }
     ]
   },
@@ -255,6 +279,12 @@
         "label": "Conflict and Reconciliation",
         "href": "/life/conflict-and-reconciliation"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
+      }
     ]
   },
   {
@@ -308,6 +338,12 @@
       {
         "label": "Forgiveness: The Hardest Grace",
         "href": "/life/forgiveness-the-hardest-grace"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for life in the world",
+        "href": "/writing?topic=the-life-in-the-world"
       }
     ]
   },
@@ -363,6 +399,12 @@
         "label": "The Wayward Child",
         "href": "/life/the-wayward-child"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical parenting guides",
+        "href": "/writing?topic=parenting"
+      }
     ]
   },
   {
@@ -412,6 +454,12 @@
       {
         "label": "Conflict and Reconciliation",
         "href": "/life/conflict-and-reconciliation"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
       }
     ]
   }

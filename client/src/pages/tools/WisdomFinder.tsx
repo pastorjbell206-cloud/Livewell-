@@ -28,6 +28,7 @@ interface Topic {
   application: string;
   verses: Verse[];
   related?: Related[];
+  articles?: Related[];
 }
 
 function scoreTopic(t: Topic, words: string[]): number {
@@ -240,6 +241,20 @@ export default function WisdomFinder() {
                           <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
                             {active.related.map((r) => (
                               <Link key={r.href} href={r.href} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
+                                {r.label}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* practical how-tos */}
+                      {active.articles && active.articles.length > 0 && (
+                        <div style={{ background: "var(--bone-warm)", padding: "var(--s-3)", marginTop: "8px" }}>
+                          <div style={{ ...eyebrow, color: "var(--ink)", marginBottom: "10px" }}>Practical how-tos</div>
+                          <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+                            {active.articles.map((r) => (
+                              <Link key={r.href} href={r.href} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
                                 {r.label}
                               </Link>
                             ))}

@@ -51,6 +51,12 @@
         "label": "Work as Worship",
         "href": "/life/work-as-worship"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for following Jesus",
+        "href": "/writing?topic=discipleship"
+      }
     ]
   },
   {
@@ -104,6 +110,12 @@
       {
         "label": "The Dry Season",
         "href": "/life/the-dry-season"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for following Jesus",
+        "href": "/writing?topic=discipleship"
       }
     ]
   },
@@ -159,6 +171,12 @@
         "label": "Discipleship: Following Jesus",
         "href": "/life/discipleship-following-jesus"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for following Jesus",
+        "href": "/writing?topic=discipleship"
+      }
     ]
   },
   {
@@ -212,6 +230,12 @@
       {
         "label": "Pride and Humility",
         "href": "/life/pride-and-humility"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for following Jesus",
+        "href": "/writing?topic=discipleship"
       }
     ]
   },
@@ -267,6 +291,12 @@
         "label": "Discipleship: Following Jesus",
         "href": "/life/discipleship-following-jesus"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for following Jesus",
+        "href": "/writing?topic=discipleship"
+      }
     ]
   },
   {
@@ -320,6 +350,12 @@
       {
         "label": "The Neighbor and the Stranger",
         "href": "/life/the-neighbor-and-the-stranger"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for following Jesus",
+        "href": "/writing?topic=discipleship"
       }
     ]
   },
@@ -375,6 +411,12 @@
         "label": "Money and the Heart",
         "href": "/life/money-and-the-heart"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for work and money",
+        "href": "/writing?topic=work"
+      }
     ]
   },
   {
@@ -428,6 +470,12 @@
       {
         "label": "Creation and Our Keeping",
         "href": "/life/creation-and-our-keeping"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for work and money",
+        "href": "/writing?topic=work"
       }
     ]
   }

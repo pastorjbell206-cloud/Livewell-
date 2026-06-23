@@ -48,6 +48,12 @@
           "label": "The Wayward Child",
           "href": "/life/the-wayward-child"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
+        }
       ]
     },
     {
@@ -101,6 +107,12 @@
         {
           "label": "Grief and Loss",
           "href": "/life/grief-and-loss"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
         }
       ]
     },
@@ -156,6 +168,12 @@
           "label": "Facing Death",
           "href": "/life/facing-death"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the body",
+          "href": "/writing?topic=the-body"
+        }
       ]
     },
     {
@@ -205,6 +223,12 @@
         {
           "label": "Anger and the Hot Heart",
           "href": "/life/anger-and-the-hot-heart"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
         }
       ]
     },
@@ -260,6 +284,12 @@
           "label": "Waiting and Unanswered Prayer",
           "href": "/life/waiting-and-unanswered-prayer"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -310,6 +340,12 @@
         {
           "label": "The Anxious Mind",
           "href": "/life/the-anxious-mind"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
         }
       ]
     },
@@ -365,6 +401,12 @@
           "label": "Discipleship: Following Jesus",
           "href": "/life/discipleship-following-jesus"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -419,6 +461,12 @@
           "label": "Making Disciples at the Table",
           "href": "/life/making-disciples-at-the-table"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
+        }
       ]
     },
     {
@@ -468,6 +516,12 @@
         {
           "label": "Betrayal and Broken Trust",
           "href": "/life/betrayal-and-broken-trust"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
         }
       ]
     },
@@ -523,6 +577,12 @@
           "label": "Shame and the Hiding Self",
           "href": "/life/shame-and-the-hiding-self"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the body",
+          "href": "/writing?topic=the-body"
+        }
       ]
     },
     {
@@ -572,6 +632,12 @@
         {
           "label": "Addiction and the Long Road Back",
           "href": "/life/addiction-and-the-long-road-back"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
         }
       ]
     },
@@ -627,6 +693,12 @@
           "label": "Time and the Examined Life",
           "href": "/life/time-and-the-examined-life"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -677,6 +749,12 @@
           "label": "Work as Worship",
           "href": "/life/work-as-worship"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for work and money",
+          "href": "/writing?topic=work"
+        }
       ]
     },
     {
@@ -726,6 +804,12 @@
         {
           "label": "Caring for Aging Parents",
           "href": "/life/caring-for-aging-parents"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
         }
       ]
     },
@@ -782,6 +866,12 @@
           "label": "Suffering and the Silence of God",
           "href": "/life/suffering-and-the-silence-of-god"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the body",
+          "href": "/writing?topic=the-body"
+        }
       ]
     },
     {
@@ -835,6 +925,12 @@
         {
           "label": "The Church as Family",
           "href": "/life/the-church-as-family"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
         }
       ]
     },
@@ -890,6 +986,12 @@
           "label": "The Home and the Family",
           "href": "/life/the-home-and-the-family"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical marriage guides",
+          "href": "/writing?topic=marriage"
+        }
       ]
     },
     {
@@ -939,6 +1041,12 @@
         {
           "label": "Contentment Against Envy",
           "href": "/life/contentment-against-envy"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for life in the world",
+          "href": "/writing?topic=the-life-in-the-world"
         }
       ]
     },
@@ -993,6 +1101,12 @@
           "label": "The Story We Live In",
           "href": "/life/the-story-we-live-in"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -1042,6 +1156,12 @@
         {
           "label": "Conflict and Reconciliation",
           "href": "/life/conflict-and-reconciliation"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
         }
       ]
     },
@@ -1094,6 +1214,12 @@
           "label": "Conflict and Reconciliation",
           "href": "/life/conflict-and-reconciliation"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
+        }
       ]
     },
     {
@@ -1143,6 +1269,12 @@
         {
           "label": "Contentment Against Envy",
           "href": "/life/contentment-against-envy"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
         }
       ]
     },
@@ -1198,6 +1330,12 @@
           "label": "Suffering and the Silence of God",
           "href": "/life/suffering-and-the-silence-of-god"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -1248,6 +1386,12 @@
           "label": "Dating and Discernment",
           "href": "/life/dating-and-discernment"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
+        }
       ]
     },
     {
@@ -1297,6 +1441,12 @@
         {
           "label": "Wisdom for All of Life",
           "href": "/life/wisdom-for-all-of-life"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
         }
       ]
     },
@@ -1349,6 +1499,12 @@
           "label": "Wisdom for All of Life",
           "href": "/life/wisdom-for-all-of-life"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -1398,6 +1554,12 @@
         {
           "label": "Friendship Against Isolation",
           "href": "/life/friendship-against-isolation"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
         }
       ]
     },
@@ -1450,6 +1612,12 @@
           "label": "The Heavy Mind",
           "href": "/life/the-heavy-mind"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -1499,6 +1667,12 @@
         {
           "label": "Conflict and Reconciliation",
           "href": "/life/conflict-and-reconciliation"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
         }
       ]
     },
@@ -1554,6 +1728,12 @@
           "label": "Success and Failure",
           "href": "/life/success-and-failure"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for hard seasons",
+          "href": "/writing?topic=suffering"
+        }
       ]
     },
     {
@@ -1608,6 +1788,12 @@
           "label": "Life Together: The One Anothers",
           "href": "/life/life-together-the-one-anothers"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
+        }
       ]
     },
     {
@@ -1655,6 +1841,12 @@
         {
           "label": "Suffering and the Silence of God",
           "href": "/life/suffering-and-the-silence-of-god"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
         }
       ]
     },
@@ -1709,6 +1901,12 @@
           "label": "Discipleship: Following Jesus",
           "href": "/life/discipleship-following-jesus"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
+        }
       ]
     },
     {
@@ -1758,6 +1956,12 @@
         {
           "label": "Contentment Against Envy",
           "href": "/life/contentment-against-envy"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
         }
       ]
     },
@@ -1813,6 +2017,12 @@
           "label": "The Body and the Rhythms",
           "href": "/life/the-body-and-the-rhythms"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the body",
+          "href": "/writing?topic=the-body"
+        }
       ]
     },
     {
@@ -1862,6 +2072,12 @@
         {
           "label": "The Anxious Mind",
           "href": "/life/the-anxious-mind"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for hard seasons",
+          "href": "/writing?topic=suffering"
         }
       ]
     },
@@ -1917,6 +2133,12 @@
           "label": "Suffering and the Silence of God",
           "href": "/life/suffering-and-the-silence-of-god"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -1971,6 +2193,12 @@
           "label": "Unemployment and the Lost Job",
           "href": "/life/unemployment-and-the-lost-job"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for work and money",
+          "href": "/writing?topic=work"
+        }
       ]
     },
     {
@@ -2023,6 +2251,12 @@
         {
           "label": "The Church as Family",
           "href": "/life/the-church-as-family"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
         }
       ]
     },
@@ -2078,6 +2312,12 @@
           "label": "The Body and the Rhythms",
           "href": "/life/the-body-and-the-rhythms"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the body",
+          "href": "/writing?topic=the-body"
+        }
       ]
     },
     {
@@ -2131,6 +2371,12 @@
         {
           "label": "Money and the Heart",
           "href": "/life/money-and-the-heart"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for work and money",
+          "href": "/writing?topic=work"
         }
       ]
     },
@@ -2186,6 +2432,12 @@
           "label": "Conflict and Reconciliation",
           "href": "/life/conflict-and-reconciliation"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -2234,6 +2486,12 @@
         {
           "label": "Generosity and the Open Hand",
           "href": "/life/generosity-and-the-open-hand"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for work and money",
+          "href": "/writing?topic=work"
         }
       ]
     },
@@ -2289,6 +2547,12 @@
           "label": "Suffering and the Silence of God",
           "href": "/life/suffering-and-the-silence-of-god"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
+        }
       ]
     },
     {
@@ -2342,6 +2606,12 @@
         {
           "label": "Conflict and Reconciliation",
           "href": "/life/conflict-and-reconciliation"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
         }
       ]
     },
@@ -2397,6 +2667,12 @@
           "label": "Wisdom for All of Life",
           "href": "/life/wisdom-for-all-of-life"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -2451,6 +2727,12 @@
           "label": "Contentment Against Envy",
           "href": "/life/contentment-against-envy"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for work and money",
+          "href": "/writing?topic=work"
+        }
       ]
     },
     {
@@ -2499,6 +2781,12 @@
         {
           "label": "Grief and Loss",
           "href": "/life/grief-and-loss"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for hard seasons",
+          "href": "/writing?topic=suffering"
         }
       ]
     },
@@ -2549,6 +2837,12 @@
         {
           "label": "Shame and the Hiding Self",
           "href": "/life/shame-and-the-hiding-self"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
         }
       ]
     },
@@ -2604,6 +2898,12 @@
           "label": "The Story We Live In",
           "href": "/life/the-story-we-live-in"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -2657,6 +2957,12 @@
         {
           "label": "Wisdom for All of Life",
           "href": "/life/wisdom-for-all-of-life"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
         }
       ]
     },
@@ -2712,6 +3018,12 @@
           "label": "The Story We Live In",
           "href": "/life/the-story-we-live-in"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
+        }
       ]
     },
     {
@@ -2761,6 +3073,12 @@
         {
           "label": "Facing Death",
           "href": "/life/facing-death"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
         }
       ]
     },
@@ -2816,6 +3134,12 @@
           "label": "Betrayal and Broken Trust",
           "href": "/life/betrayal-and-broken-trust"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -2869,6 +3193,12 @@
           "label": "Discipleship: Following Jesus",
           "href": "/life/discipleship-following-jesus"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -2918,6 +3248,12 @@
         {
           "label": "Identity and Worth",
           "href": "/life/identity-and-worth"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
         }
       ]
     },
@@ -2973,6 +3309,12 @@
           "label": "Money and the Heart",
           "href": "/life/money-and-the-heart"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -3026,6 +3368,12 @@
         {
           "label": "Waiting and Unanswered Prayer",
           "href": "/life/waiting-and-unanswered-prayer"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the body",
+          "href": "/writing?topic=the-body"
         }
       ]
     },
@@ -3081,6 +3429,12 @@
           "label": "Contentment Against Envy",
           "href": "/life/contentment-against-envy"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -3130,6 +3484,12 @@
         {
           "label": "Contentment Against Envy",
           "href": "/life/contentment-against-envy"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
         }
       ]
     },
@@ -3185,6 +3545,12 @@
           "label": "Work as Worship",
           "href": "/life/work-as-worship"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for work and money",
+          "href": "/writing?topic=work"
+        }
       ]
     },
     {
@@ -3239,6 +3605,12 @@
           "label": "Rest and the Sabbath",
           "href": "/life/rest-and-the-sabbath"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -3288,6 +3660,12 @@
         {
           "label": "Justice and the Poor",
           "href": "/life/justice-and-the-poor"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for life in the world",
+          "href": "/writing?topic=the-life-in-the-world"
         }
       ]
     },
@@ -3343,6 +3721,12 @@
           "label": "Friendship Against Isolation",
           "href": "/life/friendship-against-isolation"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -3396,6 +3780,12 @@
         {
           "label": "Discipleship: Following Jesus",
           "href": "/life/discipleship-following-jesus"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
         }
       ]
     },
@@ -3451,6 +3841,12 @@
           "label": "Discipleship: Following Jesus",
           "href": "/life/discipleship-following-jesus"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
+        }
       ]
     },
     {
@@ -3505,6 +3901,12 @@
           "label": "Suffering and the Silence of God",
           "href": "/life/suffering-and-the-silence-of-god"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -3555,6 +3957,12 @@
           "label": "Waiting and Unanswered Prayer",
           "href": "/life/waiting-and-unanswered-prayer"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for hard seasons",
+          "href": "/writing?topic=suffering"
+        }
       ]
     },
     {
@@ -3602,6 +4010,12 @@
         {
           "label": "Friendship Against Isolation",
           "href": "/life/friendship-against-isolation"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
         }
       ]
     },
@@ -3652,6 +4066,12 @@
         {
           "label": "Singleness and the Full Life",
           "href": "/life/singleness-and-the-full-life"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
         }
       ]
     },
@@ -3707,6 +4127,12 @@
           "label": "Forgiveness: The Hardest Grace",
           "href": "/life/forgiveness-the-hardest-grace"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for life in the world",
+          "href": "/writing?topic=the-life-in-the-world"
+        }
       ]
     },
     {
@@ -3761,6 +4187,12 @@
           "label": "Sex and the Body",
           "href": "/life/sex-and-the-body"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -3813,6 +4245,12 @@
         {
           "label": "The Marriage pages",
           "href": "/marriage"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical marriage guides",
+          "href": "/writing?topic=marriage"
         }
       ]
     },
@@ -3868,6 +4306,12 @@
           "label": "Friendship Against Isolation",
           "href": "/life/friendship-against-isolation"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
+        }
       ]
     },
     {
@@ -3921,6 +4365,12 @@
           "label": "Making Disciples at the Table",
           "href": "/life/making-disciples-at-the-table"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
+        }
       ]
     },
     {
@@ -3971,6 +4421,12 @@
         {
           "label": "Money and the Heart",
           "href": "/life/money-and-the-heart"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for work and money",
+          "href": "/writing?topic=work"
         }
       ]
     },
@@ -4025,6 +4481,12 @@
         {
           "label": "Making Disciples at the Table",
           "href": "/life/making-disciples-at-the-table"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the home",
+          "href": "/writing?topic=family"
         }
       ]
     },
@@ -4082,6 +4544,12 @@
           "label": "The Parenting pages",
           "href": "/parenting"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical parenting guides",
+          "href": "/writing?topic=parenting"
+        }
       ]
     },
     {
@@ -4135,6 +4603,12 @@
         {
           "label": "The Home and the Family",
           "href": "/life/the-home-and-the-family"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical parenting guides",
+          "href": "/writing?topic=parenting"
         }
       ]
     },
@@ -4190,6 +4664,12 @@
           "label": "Wisdom for All of Life",
           "href": "/life/wisdom-for-all-of-life"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -4243,6 +4723,12 @@
         {
           "label": "Conflict and Reconciliation",
           "href": "/life/conflict-and-reconciliation"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
         }
       ]
     },
@@ -4298,6 +4784,12 @@
           "label": "Shame and the Hiding Self",
           "href": "/life/shame-and-the-hiding-self"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -4352,6 +4844,12 @@
           "label": "Rest and the Sabbath",
           "href": "/life/rest-and-the-sabbath"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -4401,6 +4899,12 @@
         {
           "label": "Suffering and the Silence of God",
           "href": "/life/suffering-and-the-silence-of-god"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for hard seasons",
+          "href": "/writing?topic=suffering"
         }
       ]
     },
@@ -4456,6 +4960,12 @@
           "label": "Discipleship: Following Jesus",
           "href": "/life/discipleship-following-jesus"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -4505,6 +5015,12 @@
         {
           "label": "Faith and Politics",
           "href": "/life/faith-and-politics"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for life in the world",
+          "href": "/writing?topic=the-life-in-the-world"
         }
       ]
     },
@@ -4560,6 +5076,12 @@
           "label": "Addiction and the Long Road Back",
           "href": "/life/addiction-and-the-long-road-back"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the body",
+          "href": "/writing?topic=the-body"
+        }
       ]
     },
     {
@@ -4609,6 +5131,12 @@
         {
           "label": "Pride and Humility",
           "href": "/life/pride-and-humility"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
         }
       ]
     },
@@ -4664,6 +5192,12 @@
           "label": "Work as Worship",
           "href": "/life/work-as-worship"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -4717,6 +5251,12 @@
         {
           "label": "Work as Worship",
           "href": "/life/work-as-worship"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
         }
       ]
     },
@@ -4772,6 +5312,12 @@
           "label": "The Wayward Child",
           "href": "/life/the-wayward-child"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical parenting guides",
+          "href": "/writing?topic=parenting"
+        }
       ]
     },
     {
@@ -4826,6 +5372,12 @@
           "label": "Time and the Examined Life",
           "href": "/life/time-and-the-examined-life"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -4875,6 +5427,12 @@
         {
           "label": "Rest and the Sabbath",
           "href": "/life/rest-and-the-sabbath"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for work and money",
+          "href": "/writing?topic=work"
         }
       ]
     },
@@ -4926,6 +5484,12 @@
           "label": "Money and the Heart",
           "href": "/life/money-and-the-heart"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for work and money",
+          "href": "/writing?topic=work"
+        }
       ]
     },
     {
@@ -4975,6 +5539,12 @@
         {
           "label": "Desire and Temptation",
           "href": "/life/desire-and-temptation"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
         }
       ]
     },
@@ -5030,6 +5600,12 @@
           "label": "Shame and the Hiding Self",
           "href": "/life/shame-and-the-hiding-self"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -5083,6 +5659,12 @@
           "label": "Discipleship: Following Jesus",
           "href": "/life/discipleship-following-jesus"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -5135,6 +5717,12 @@
         {
           "label": "The Church as Family",
           "href": "/life/the-church-as-family"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
         }
       ]
     },
@@ -5190,6 +5778,12 @@
           "label": "The Neighbor and the Stranger",
           "href": "/life/the-neighbor-and-the-stranger"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
+        }
       ]
     },
     {
@@ -5242,6 +5836,12 @@
         {
           "label": "The Home and the Family",
           "href": "/life/the-home-and-the-family"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
         }
       ]
     },
@@ -5297,6 +5897,12 @@
           "label": "Sex and the Body",
           "href": "/life/sex-and-the-body"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the body",
+          "href": "/writing?topic=the-body"
+        }
       ]
     },
     {
@@ -5346,6 +5952,12 @@
         {
           "label": "Shame and the Hiding Self",
           "href": "/life/shame-and-the-hiding-self"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
         }
       ]
     },
@@ -5397,6 +6009,12 @@
           "label": "Singleness and the Full Life",
           "href": "/life/singleness-and-the-full-life"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
+        }
       ]
     },
     {
@@ -5446,6 +6064,12 @@
         {
           "label": "Technology and Attention",
           "href": "/life/technology-and-attention"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for life in the world",
+          "href": "/writing?topic=the-life-in-the-world"
         }
       ]
     },
@@ -5501,6 +6125,12 @@
           "label": "The Dry Season",
           "href": "/life/the-dry-season"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
+        }
       ]
     },
     {
@@ -5554,6 +6184,12 @@
         {
           "label": "Discipleship: Following Jesus",
           "href": "/life/discipleship-following-jesus"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
         }
       ]
     },
@@ -5609,6 +6245,12 @@
           "label": "Unemployment and the Lost Job",
           "href": "/life/unemployment-and-the-lost-job"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for hard seasons",
+          "href": "/writing?topic=suffering"
+        }
       ]
     },
     {
@@ -5663,6 +6305,12 @@
           "label": "Creation and Our Keeping",
           "href": "/life/creation-and-our-keeping"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for work and money",
+          "href": "/writing?topic=work"
+        }
       ]
     },
     {
@@ -5716,6 +6364,12 @@
           "label": "Conflict and Reconciliation",
           "href": "/life/conflict-and-reconciliation"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
+        }
       ]
     },
     {
@@ -5765,6 +6419,12 @@
         {
           "label": "Success and Failure",
           "href": "/life/success-and-failure"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for work and money",
+          "href": "/writing?topic=work"
         }
       ]
     },
@@ -5820,6 +6480,12 @@
           "label": "Conflict and Reconciliation",
           "href": "/life/conflict-and-reconciliation"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical marriage guides",
+          "href": "/writing?topic=marriage"
+        }
       ]
     },
     {
@@ -5869,6 +6535,12 @@
         {
           "label": "Technology and Attention",
           "href": "/life/technology-and-attention"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for life in the world",
+          "href": "/writing?topic=the-life-in-the-world"
         }
       ]
     },
@@ -5920,6 +6592,12 @@
           "label": "Desire and Temptation",
           "href": "/life/desire-and-temptation"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -5969,6 +6647,12 @@
         {
           "label": "The Story We Live In",
           "href": "/life/the-story-we-live-in"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
         }
       ]
     },
@@ -6024,6 +6708,12 @@
           "label": "Pride and Humility",
           "href": "/life/pride-and-humility"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
+        }
       ]
     },
     {
@@ -6073,6 +6763,12 @@
         {
           "label": "Identity and Worth",
           "href": "/life/identity-and-worth"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
         }
       ]
     },
@@ -6128,6 +6824,12 @@
           "label": "Technology and Attention",
           "href": "/life/technology-and-attention"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for life in the world",
+          "href": "/writing?topic=the-life-in-the-world"
+        }
       ]
     },
     {
@@ -6177,6 +6879,12 @@
         {
           "label": "Suffering and the Silence of God",
           "href": "/life/suffering-and-the-silence-of-god"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
         }
       ]
     },
@@ -6232,6 +6940,12 @@
           "label": "The Story We Live In",
           "href": "/life/the-story-we-live-in"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
+        }
       ]
     },
     {
@@ -6286,6 +7000,12 @@
           "label": "Rest and the Sabbath",
           "href": "/life/rest-and-the-sabbath"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -6339,6 +7059,12 @@
           "label": "The Church as Family",
           "href": "/life/the-church-as-family"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for sharing your faith",
+          "href": "/writing?topic=evangelism"
+        }
       ]
     },
     {
@@ -6389,6 +7115,12 @@
           "label": "The Dry Season",
           "href": "/life/the-dry-season"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for hard seasons",
+          "href": "/writing?topic=suffering"
+        }
       ]
     },
     {
@@ -6438,6 +7170,12 @@
         {
           "label": "Suffering and the Silence of God",
           "href": "/life/suffering-and-the-silence-of-god"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for hard seasons",
+          "href": "/writing?topic=suffering"
         }
       ]
     },
@@ -6493,6 +7231,12 @@
           "label": "The Dry Season",
           "href": "/life/the-dry-season"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
+        }
       ]
     },
     {
@@ -6543,6 +7287,12 @@
           "label": "The Anxious Mind",
           "href": "/life/the-anxious-mind"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for hard seasons",
+          "href": "/writing?topic=suffering"
+        }
       ]
     },
     {
@@ -6592,6 +7342,12 @@
         {
           "label": "Facing Death",
           "href": "/life/facing-death"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for hard seasons",
+          "href": "/writing?topic=suffering"
         }
       ]
     },
@@ -6644,6 +7400,12 @@
           "label": "Health, Illness, and Pain",
           "href": "/life/health-illness-and-pain"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for hard seasons",
+          "href": "/writing?topic=suffering"
+        }
       ]
     },
     {
@@ -6693,6 +7455,12 @@
         {
           "label": "Suffering and the Silence of God",
           "href": "/life/suffering-and-the-silence-of-god"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for hard seasons",
+          "href": "/writing?topic=suffering"
         }
       ]
     },
@@ -6746,6 +7514,12 @@
           "label": "Addiction and the Long Road Back",
           "href": "/life/addiction-and-the-long-road-back"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for hard seasons",
+          "href": "/writing?topic=suffering"
+        }
       ]
     },
     {
@@ -6796,6 +7570,12 @@
           "label": "Waiting and Unanswered Prayer",
           "href": "/life/waiting-and-unanswered-prayer"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for hard seasons",
+          "href": "/writing?topic=suffering"
+        }
       ]
     },
     {
@@ -6843,6 +7623,12 @@
         {
           "label": "Forgiveness: The Hardest Grace",
           "href": "/life/forgiveness-the-hardest-grace"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for relationships",
+          "href": "/writing?topic=relationships"
         }
       ]
     },
@@ -6899,6 +7685,12 @@
           "label": "Facing Death",
           "href": "/life/facing-death"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for hard seasons",
+          "href": "/writing?topic=suffering"
+        }
       ]
     },
     {
@@ -6952,6 +7744,12 @@
         {
           "label": "Wisdom for All of Life",
           "href": "/life/wisdom-for-all-of-life"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for following Jesus",
+          "href": "/writing?topic=discipleship"
         }
       ]
     },
@@ -7007,6 +7805,12 @@
           "label": "Rest and the Sabbath",
           "href": "/life/rest-and-the-sabbath"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for work and money",
+          "href": "/writing?topic=work"
+        }
       ]
     },
     {
@@ -7061,6 +7865,12 @@
           "label": "Work as Worship",
           "href": "/life/work-as-worship"
         }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for work and money",
+          "href": "/writing?topic=work"
+        }
       ]
     },
     {
@@ -7114,6 +7924,12 @@
         {
           "label": "Rest and the Sabbath",
           "href": "/life/rest-and-the-sabbath"
+        }
+      ],
+      "articles": [
+        {
+          "label": "Practical guides for the inner life",
+          "href": "/writing?topic=spiritual-formation"
         }
       ]
     }

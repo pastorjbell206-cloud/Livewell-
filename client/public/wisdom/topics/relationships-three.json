@@ -50,6 +50,12 @@
         "label": "The Home and the Family",
         "href": "/life/the-home-and-the-family"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
+      }
     ]
   },
   {
@@ -103,6 +109,12 @@
       {
         "label": "Conflict and Reconciliation",
         "href": "/life/conflict-and-reconciliation"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical marriage guides",
+        "href": "/writing?topic=marriage"
       }
     ]
   },
@@ -158,6 +170,12 @@
         "label": "The Home and the Family",
         "href": "/life/the-home-and-the-family"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical marriage guides",
+        "href": "/writing?topic=marriage"
+      }
     ]
   },
   {
@@ -212,6 +230,12 @@
         "label": "The Home and the Family",
         "href": "/life/the-home-and-the-family"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical parenting guides",
+        "href": "/writing?topic=parenting"
+      }
     ]
   },
   {
@@ -264,6 +288,12 @@
       {
         "label": "Discipleship: Following Jesus",
         "href": "/life/discipleship-following-jesus"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
       }
     ]
   },
@@ -319,6 +349,12 @@
         "label": "Friendship Against Isolation",
         "href": "/life/friendship-against-isolation"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for relationships",
+        "href": "/writing?topic=relationships"
+      }
     ]
   },
   {
@@ -373,6 +409,12 @@
         "label": "Making Disciples at the Table",
         "href": "/life/making-disciples-at-the-table"
       }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for the home",
+        "href": "/writing?topic=family"
+      }
     ]
   },
   {
@@ -425,6 +467,12 @@
       {
         "label": "Making Disciples at the Table",
         "href": "/life/making-disciples-at-the-table"
+      }
+    ],
+    "articles": [
+      {
+        "label": "Practical guides for following Jesus",
+        "href": "/writing?topic=discipleship"
       }
     ]
   }
