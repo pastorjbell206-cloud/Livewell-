@@ -1,6 +1,24 @@
 {
   "domains": [
     {
+      "slug": "aging-and-the-body",
+      "title": "Aging and the Body: Finitude and Dignity",
+      "blurb": "The body declines, and we have built a culture that hides this fact, that fears the old, that treats finitude as a problem to be defeated rather than a truth to be received. What Scripture teaches about the dignity of the aged, why the limits of the body are a gift and not only a curse, and how learning to number our days becomes the beginning of wisdom rather than the end of hope.",
+      "pillar": "The Body and the Rhythms"
+    },
+    {
+      "slug": "food-and-the-table",
+      "title": "Food and the Table: Feasting, Fasting, and the Hungry Heart",
+      "blurb": "We eat three times a day and almost never ask what we are doing. But the table is one of the most spiritual places in human life, the hunger of the body points to a deeper hunger, and the way a culture eats reveals the way it worships. What Scripture and the church teach about gluttony and diet culture, the lost rhythm of fasting and feasting, and how the shared table becomes communion.",
+      "pillar": "The Body and the Rhythms"
+    },
+    {
+      "slug": "health-illness-and-pain",
+      "title": "Health, Illness, and the Suffering Body",
+      "blurb": "The body is a gift and the body breaks. What Scripture, church history, and honest medicine say about stewarding health without worshiping it, about the body that betrays, about chronic pain and the limits of healing, and about a church learning again how to stay near the sick.",
+      "pillar": "The Body and the Rhythms"
+    },
+    {
       "slug": "rest-and-the-sabbath",
       "title": "Rest and the Sabbath: The Unforced Rhythms of Grace",
       "blurb": "Hurry is the great enemy of the soul, and Sabbath is the weekly rebellion against it. What Scripture, the long tradition, and honest research say about rest as gift, rest as resistance, and the trust it takes to stop.",
@@ -19,6 +37,18 @@
       "pillar": "The Body and the Rhythms"
     },
     {
+      "slug": "caring-for-aging-parents",
+      "title": "Caring for Aging Parents: Honor at the End",
+      "blurb": "The fifth commandment does not expire when a parent grows old. What Scripture, church history, and honest research say about the sandwich generation, the role reversal, the long goodbye, and the hard grace of honoring a father and mother in their decline.",
+      "pillar": "The Home and Relationships"
+    },
+    {
+      "slug": "conflict-and-reconciliation",
+      "title": "Conflict and Reconciliation: The Ministry of Repair",
+      "blurb": "Two sinners cannot share a life without wounding each other. What Scripture, church history, and honest research say about fighting fair, the difference between peacemaking and peacekeeping, the discipline of Matthew 18, and the long ministry of repair that holds families and churches together.",
+      "pillar": "The Home and Relationships"
+    },
+    {
       "slug": "dating-and-discernment",
       "title": "Dating and Discernment: Wisdom Before the Covenant",
       "blurb": "Choosing a spouse is among the largest decisions a person ever makes, and the culture has handed us almost no wisdom for it. What Scripture, church history, and honest research say about character over chemistry, courtship and modern dating, and the discernment to marry well or to wait.",
@@ -34,6 +64,12 @@
       "slug": "friendship-against-isolation",
       "title": "Friendship Against Isolation",
       "blurb": "The loneliness epidemic meets the forgotten love. Covenant friendship, the open table, and why a friendly church is not the same thing as friends.",
+      "pillar": "The Home and Relationships"
+    },
+    {
+      "slug": "infertility-and-childlessness",
+      "title": "Infertility and Childlessness: The Ache of Empty Arms",
+      "blurb": "The grief that arrives monthly and announces nothing, the friends whose pregnancies become small funerals, the church that does not know what to say. A Christian reckoning with the longing for a child that goes unanswered, the women of Scripture who waited, and the hope and identity that must be found when children do not come.",
       "pillar": "The Home and Relationships"
     },
     {
@@ -55,9 +91,27 @@
       "pillar": "The Home and Relationships"
     },
     {
+      "slug": "the-blended-family",
+      "title": "The Blended Family: Grace in the Complex Household",
+      "blurb": "Two histories under one roof, two sets of grief, two ways of loading the dishwasher, and a child caught in the middle of loyalties no one chose. A Christian reckoning with remarriage, step-parenting, the household built from loss, and the slow grace that makes one family out of two.",
+      "pillar": "The Home and Relationships"
+    },
+    {
+      "slug": "the-church-as-family",
+      "title": "The Church as Family: Belonging to the Body",
+      "blurb": "Not a building you attend, not a service you consume, but a household you belong to. A Christian reckoning with the church as the family of God, with membership and belonging against the loneliness of the consumer pew, and with what it means to have brothers and sisters who are not optional.",
+      "pillar": "The Home and Relationships"
+    },
+    {
       "slug": "the-home-and-the-family",
       "title": "The Home and the Family: Building a Household of Faith",
       "blurb": "A home is not only where a family sleeps. It is the first church a child ever attends and the first picture of God they ever see. What Scripture, church history, and honest research say about the table, family worship, hospitality, and building a household whose ordinary life forms souls.",
+      "pillar": "The Home and Relationships"
+    },
+    {
+      "slug": "the-marriage-bed",
+      "title": "The Marriage Bed: Intimacy Within the Covenant",
+      "blurb": "Sex within marriage is a gift and a language, and like every language it can be neglected until it falls silent. A frank and serious reckoning with desire and its mismatches, with the Song of Songs, and with the long work of guarding and tending intimacy across a whole married life.",
       "pillar": "The Home and Relationships"
     },
     {
@@ -73,9 +127,27 @@
       "pillar": "The Inner Life"
     },
     {
+      "slug": "contentment-against-envy",
+      "title": "Contentment Against Envy",
+      "blurb": "There is a quiet sickness in the heart that no amount of getting can cure. You have enough and it does not feel like enough, because someone else has more, and the having of others has become a wound in you. What Scripture, the long tradition, and honest observation say about the discontented heart, the green eye of envy, and the strange secret Paul claimed to have learned, the secret of enough.",
+      "pillar": "The Inner Life"
+    },
+    {
+      "slug": "desire-and-temptation",
+      "title": "Desire and Temptation: The Disordered Want",
+      "blurb": "You are not finally undone by what you do. You are ruled by what you want, and the want underneath the want is the thing no rule reaches. What Augustine, James, and the desert fathers saw about disordered love, how temptation actually works before it ever shows you a sin, and why the cure is not less desire but desire reordered toward the only thing large enough to hold it.",
+      "pillar": "The Inner Life"
+    },
+    {
       "slug": "identity-and-worth",
       "title": "Identity and Worth: Who You Actually Are",
       "blurb": "You have been building a case for yourself your whole life, brick by brick, and it never holds. What Scripture, the long tradition, and honest psychology say about the exhausting project of self-justification, and the difference between a worth you achieve and a worth you receive.",
+      "pillar": "The Inner Life"
+    },
+    {
+      "slug": "pride-and-humility",
+      "title": "Pride and Humility: The Root and Its Undoing",
+      "blurb": "Underneath every sin you can name there is one older than the rest, the original lie that you would be your own god. Pride is not one vice among many. It is the root from which the others grow, and it is the hardest to see precisely because it is the eye through which you do the seeing. What Augustine and Lewis saw about the great sin, why humility is self-forgetfulness and not self-hatred, and how the descent of Christ undoes the thing that undoes us.",
       "pillar": "The Inner Life"
     },
     {
@@ -91,6 +163,12 @@
       "pillar": "The Inner Life"
     },
     {
+      "slug": "the-dry-season",
+      "title": "The Dry Season: When God Feels Absent",
+      "blurb": "There is a kind of suffering the church almost never names, the slow draining away of the felt presence of God, the prayers that hit the ceiling, the Scriptures that have gone flat, the worship you go through while feeling nothing. What John of the Cross, Ignatius, and the long Christian tradition saw about spiritual dryness, why the silence is often not absence, and how faith learns to stand when feeling has gone.",
+      "pillar": "The Inner Life"
+    },
+    {
       "slug": "the-heavy-mind",
       "title": "The Heavy Mind: Faith and Depression",
       "blurb": "Depression is not the same as a bad day, and it is not the same as anxiety. It is the going out of the lights. What Scripture, the dark night of the soul, and honest medicine say to the sunk soul, and why getting help can be an act of faith.",
@@ -103,10 +181,28 @@
       "pillar": "The Integrated Vision"
     },
     {
+      "slug": "the-integrated-life",
+      "title": "The Integrated Life: Refusing the Sacred and Secular Divide",
+      "blurb": "Somewhere you learned that faith belongs to a part of your life and the rest belongs to you. Sunday is God's. Monday is yours. This is the capstone lie of a divided age, and it is a lie. There is one life, under one Lord, and not a single square inch of it is exempt. What it means to refuse the sacred and secular divide, and to live whole.",
+      "pillar": "The Integrated Vision"
+    },
+    {
+      "slug": "time-and-the-examined-life",
+      "title": "Time and the Examined Life",
+      "blurb": "You have a fixed number of days and you do not know the number. You spend them as though they were endless and resent them when they run short. Hurry has become the water you swim in, and the unexamined life keeps spilling out of you one rushed hour at a time. What it means to number your days, to read your calendar as a moral document, and to slow down enough to live the life you are actually living.",
+      "pillar": "The Integrated Vision"
+    },
+    {
       "slug": "wisdom-for-all-of-life",
       "title": "Wisdom for All of Life: Proverbs, Ecclesiastes, and the Skill of Living",
       "blurb": "The Bible has more than commands. It has wisdom, the hard-won skill of living well in a world that rarely comes with instructions. What Proverbs, Ecclesiastes, and Job teach about money, words, work, anger, sex, friendship, drink, and death, and how a whole life is built along the grain of the world God made.",
       "pillar": "The Integrated Vision"
+    },
+    {
+      "slug": "creation-and-our-keeping",
+      "title": "Creation and Our Keeping: Tending the Garden",
+      "blurb": "The first job God ever gave a human being was to tend a garden, and we have spent most of history forgetting it. What Scripture says about the keeping of the earth, why creation care is neither nature worship nor a partisan slogan, and how the body and the soil bear witness to the same Maker.",
+      "pillar": "The Life in the World"
     },
     {
       "slug": "faith-and-politics",
@@ -133,9 +229,21 @@
       "pillar": "The Life in the World"
     },
     {
+      "slug": "witness-without-weirdness",
+      "title": "Witness Without Weirdness: The Ordinary Christian Among Neighbors",
+      "blurb": "Evangelism for the person who is not a salesman. The gospel carried in ordinary friendship, presence, and a life that holds together. Lesslie Newbigin on the congregation as the only argument the watching world cannot dismiss, and what witness looks like in a land that has already heard the pitch and stopped listening.",
+      "pillar": "The Life in the World"
+    },
+    {
       "slug": "addiction-and-the-long-road-back",
       "title": "Addiction and the Long Road Back",
       "blurb": "The enslaved will without the easy moralism. What addiction actually is, why willpower alone has never freed anyone, where the gospel of grace meets the Twelve Steps, and the long, crooked, possible road of recovery for the body and the soul together.",
+      "pillar": "The Seasons and the Crises"
+    },
+    {
+      "slug": "betrayal-and-broken-trust",
+      "title": "Betrayal and Broken Trust",
+      "blurb": "Being deeply wronged by someone close. The particular wound of treachery, where the knife was held by a hand you trusted. Psalm 55 and the friend who became an enemy, and the hard untangling of forgiveness, reconciliation, and rebuilt trust, which are three different things and not one.",
       "pillar": "The Seasons and the Crises"
     },
     {
@@ -163,6 +271,30 @@
       "pillar": "The Seasons and the Crises"
     },
     {
+      "slug": "the-empty-nest-and-midlife",
+      "title": "The Empty Nest and Midlife: The Second Half",
+      "blurb": "The children gone, the house quiet, and the reckoning that arrives in the middle of a life. The dark wood Dante woke in at the midpoint, the reorientation of purpose when the old purposes are spent, and the difference between finishing well and chasing a youth that is not coming back.",
+      "pillar": "The Seasons and the Crises"
+    },
+    {
+      "slug": "waiting-and-unanswered-prayer",
+      "title": "Waiting and Unanswered Prayer: The Closed Door",
+      "blurb": "Hope deferred and the long wait. The no and the not-yet of God, and what to do with a faith when heaven has gone quiet. Habakkuk standing on the watchtower, the Psalms that cry how long, and the difference between a God who is silent and a God who is absent.",
+      "pillar": "The Seasons and the Crises"
+    },
+    {
+      "slug": "ambition-and-rest",
+      "title": "Ambition and Rest: Drive, Success, and the Hustle",
+      "blurb": "The drive that builds and the drive that devours, the grind sold as virtue, the success that never arrives. A Christian reckoning with holy and hollow ambition, with the idolatry of the hustle, and with the deep rest of a soul that has handed the outcome back to God.",
+      "pillar": "Work, Money, and Calling"
+    },
+    {
+      "slug": "debt-and-provision",
+      "title": "Debt and Provision: Daily Bread and the Anxious Heart",
+      "blurb": "Most of us do not own our money. We rent it from people we will never meet, and the rent comes due in fear. What Scripture says about debt and its slavery, about the One who feeds the birds, and about learning to pray for bread one day at a time in a country built on credit.",
+      "pillar": "Work, Money, and Calling"
+    },
+    {
       "slug": "generosity-and-the-open-hand",
       "title": "Generosity and the Open Hand",
       "blurb": "Giving is not a tax the church levies on the faithful. It is the medicine that breaks greed's grip and the practice that moves treasure where moth and rust cannot reach. A Christian reckoning with the tithe, the open hand, and the joy of letting go.",
@@ -172,6 +304,18 @@
       "slug": "money-and-the-heart",
       "title": "Money and the Heart",
       "blurb": "Jesus named one rival god by name, and it was not lust or power. A Christian reckoning with Mammon, contentment, debt, generosity, and the freedom of enough.",
+      "pillar": "Work, Money, and Calling"
+    },
+    {
+      "slug": "success-and-failure",
+      "title": "Success and Failure: Identity Beyond the Outcome",
+      "blurb": "Most of us are running a quiet audit on ourselves, keeping a private ledger of wins and losses and treating the total as a verdict on our worth. What Scripture says to the one who is winning and the one who is losing, and why the gospel is the only news that can survive both the promotion and the pink slip.",
+      "pillar": "Work, Money, and Calling"
+    },
+    {
+      "slug": "unemployment-and-the-lost-job",
+      "title": "When the Work Is Gone: Unemployment and Worth",
+      "blurb": "When the job goes, more goes with it than the paycheck. The title that answered who are you, the structure that held your days, the place you were needed. What Scripture says to the one without work, why your dignity was never issued by an employer, and how to wait in the in-between without disappearing.",
       "pillar": "Work, Money, and Calling"
     },
     {
