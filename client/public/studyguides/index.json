@@ -97,6 +97,14 @@
       "sessionsLabel": "5 sessions (run as 5, 8, or 4 weeks)"
     },
     {
+      "slug": "skeptic",
+      "title": "Questions Worth Asking",
+      "eyebrow": "A five-session study for skeptics and seekers asking, honestly, whether Christianity is true.",
+      "blurb": "This study is for the person who does not believe, or is not sure, and is willing to look anyway. It is also for the friend who invited them, and who is about to learn how much harder it is to defend the faith than to assume it. The man who wrote it spent years as an atheist. He did not pray his way back. He read and argued and resisted his way back, slowly, over objections he still respects, and he has not forgotten what the other side of the door feels like. So nothing here is a trick. There is no emotional ambush waiting in session five, no moment where the lights dim and the music swells and you are asked to decide something you did not come to decide. Each session takes one hard question, states the strongest case against Christianity first and in full, and only then offers the response, and the response is allowed to be incomplete, because honest answers usually are.\n\nThis is not a study that wins arguments. It will not turn anyone into a debater, and the leader must not try. It walks through five questions in order. Whether there is anyone there at all. Whether science has buried God. Who Jesus actually was. Whether the resurrection happened. And what kind of step faith finally is, if the evidence does not force it. Along the way it names real thinkers by name, Lewis and Plantinga and Craig and Wright and Bauckham and Habermas, not as authorities to end the conversation but as people who have done the hard work and are worth reading. It is built to be run by a host who is not an expert, who may not know the answers and should say so when that is true. Every question carries the thinking behind it. Every objection is stated at full strength before it is answered. And no question, ever, is met with shame. A person who asks the hard thing out loud is doing the brave and honest thing, and the room exists to make that safe.",
+      "audience": "Skeptics, seekers, agnostics, and the friends who invited them",
+      "sessionsLabel": "5 sessions (run as 5, 8, or 4 weeks)"
+    },
+    {
       "slug": "raising-believers",
       "title": "Raising Believers",
       "eyebrow": "A five-session study on passing a durable faith to children in a secular age.",
