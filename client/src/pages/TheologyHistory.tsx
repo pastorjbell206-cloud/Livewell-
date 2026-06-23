@@ -11,6 +11,7 @@ import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { toParagraphs } from "@/lib/prose";
 
 interface EraEvent { year: string; title: string; note: string; }
 interface Era { id: string; name: string; range: string; summary: string; events: EraEvent[]; }
@@ -26,7 +27,7 @@ const cardStyle = { background: "var(--card)", border: "1px solid var(--border)"
 function Para({ text, style }: { text: string; style?: React.CSSProperties }) {
   return (
     <>
-      {text.split("\n\n").map((p, i) => (
+      {toParagraphs(text).map((p, i) => (
         <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink-muted)", maxWidth: "68ch", marginBottom: "12px", ...style }}>{p}</p>
       ))}
     </>
