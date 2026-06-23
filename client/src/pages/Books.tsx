@@ -152,6 +152,13 @@ export default function Books() {
       <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/books/alone-in-a-crowded-church" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img
+              src="/books/alone-in-a-crowded-church.svg"
+              alt="Alone in a Crowded Church book cover"
+              width={120}
+              height={181}
+              style={{ width: "92px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.35)", flex: "0 0 auto" }}
+            />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New · Free for Pastors · Read on-site
