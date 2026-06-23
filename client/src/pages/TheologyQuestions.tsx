@@ -10,6 +10,7 @@ import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { toParagraphs } from "@/lib/prose";
 import { DOCTRINE_INDEX } from "@/lib/theology";
 
 interface Q {
@@ -93,7 +94,7 @@ export default function TheologyQuestions() {
                       {isOpen && (
                         <div style={{ padding: "0 var(--s-4) var(--s-4)", borderTop: "1px solid var(--border)" }}>
                           <p style={{ fontFamily: "var(--F)", fontSize: "18px", lineHeight: 1.5, color: "var(--ink)", margin: "16px 0" }}>{q.shortAnswer}</p>
-                          {q.answer.split("\n\n").map((p, i) => (
+                          {toParagraphs(q.answer).map((p, i) => (
                             <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink-muted)", maxWidth: "68ch", marginBottom: "12px" }}>{p}</p>
                           ))}
                           {q.whereChristiansDiffer && (

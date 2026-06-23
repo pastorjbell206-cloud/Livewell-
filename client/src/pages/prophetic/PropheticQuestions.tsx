@@ -8,6 +8,7 @@ import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { toParagraphs } from "@/lib/prose";
 import type { SectionConfig } from "@/lib/prophetic";
 
 interface Q {
@@ -64,7 +65,7 @@ export default function PropheticQuestions({ config }: { config: SectionConfig }
                 {isOpen && (
                   <div style={{ padding: "0 var(--s-4) var(--s-4)", borderTop: "1px solid var(--border)" }}>
                     <p style={{ fontFamily: "var(--F)", fontSize: "18px", lineHeight: 1.5, color: "var(--ink)", margin: "16px 0" }}>{q.shortAnswer}</p>
-                    {q.answer.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink-muted)", maxWidth: "68ch", marginBottom: "12px" }}>{p}</p>)}
+                    {toParagraphs(q.answer).map((p, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink-muted)", maxWidth: "68ch", marginBottom: "12px" }}>{p}</p>)}
                     {q.whereChristiansDiffer && (
                       <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", background: "var(--bone-warm)", borderRadius: "var(--radius-sm)", padding: "12px 14px", marginTop: "8px" }}>
                         <strong style={{ color: "var(--mustard-text)" }}>Where Christians differ. </strong>{q.whereChristiansDiffer}
