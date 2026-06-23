@@ -2,7 +2,7 @@
 
 Source corpus: `/home/user/Livewell-/scripts/.essays-corpus.json`
 
-**802 essays scanned** — 149 need a human pass, 653 are mechanically clean. 66 hard forbidden hits, 223 judgment-call flags.
+**802 essays scanned** — 146 need a human pass, 656 are mechanically clean. 63 hard forbidden hits, 223 judgment-call flags.
 
 _Mechanical only. A clean score means no banned words — not that the prose carries Bell's voice. Read the top of this list first._
 
@@ -27,138 +27,135 @@ _Mechanical only. A clean score means no banned words — not that the prose car
 | 15 | client/public/theology/church-history-figures.json | 1 | 1 | 0.3 |
 | 16 | client/public/family-catechism.json | 1 | 1 | 0.1 |
 | 17 | client/public/studyguides/money.json | 1 | 1 | 0.1 |
-| 18 | Changing the Unchangeable | 1 | 0 | 34.5 |
-| 19 | Earthen Vessels: Why Our Bodies Matter to Our Faith | 1 | 0 | 19.6 |
-| 20 | client/public/leadership/articles/how-to-do-a-word-study.json | 1 | 0 | 1.2 |
-| 21 | client/public/leadership/articles/expository-vs-topical.json | 1 | 0 | 1.1 |
-| 22 | client/public/leadership/articles/bible-study-tools.json | 1 | 0 | 1.1 |
-| 23 | client/public/leadership/workflows/revitalization-plan.json | 1 | 0 | 1.1 |
-| 24 | client/public/leadership/articles/lasting-youth-ministry.json | 1 | 0 | 1.1 |
-| 25 | client/public/leadership/articles/how-to-study-the-bible.json | 1 | 0 | 1.0 |
-| 26 | client/public/leadership/articles/the-leaders-prayer-life.json | 1 | 0 | 1.0 |
-| 27 | client/public/context/guides/genesis-one-in-its-world.json | 1 | 0 | 1.0 |
-| 28 | client/public/leadership/articles/helping-a-doubting-believer.json | 1 | 0 | 1.0 |
-| 29 | client/public/leadership/articles/recovering-hospitality.json | 1 | 0 | 1.0 |
-| 30 | client/public/leadership/articles/preaching-with-or-without-notes.json | 1 | 0 | 1.0 |
-| 31 | client/public/leadership/articles/praying-for-your-people.json | 1 | 0 | 1.0 |
-| 32 | client/public/context/guides/the-cities-of-paul.json | 1 | 0 | 1.0 |
-| 33 | client/public/leadership/articles/how-to-start-a-sermon.json | 1 | 0 | 1.0 |
-| 34 | client/public/leadership/articles/how-to-write-a-sermon.json | 1 | 0 | 0.9 |
-| 35 | client/public/leadership/articles/sermon-application.json | 1 | 0 | 0.9 |
-| 36 | client/public/leadership/articles/bridging-text-to-today.json | 1 | 0 | 0.9 |
-| 37 | client/public/leadership/articles/ministry-teams.json | 1 | 0 | 0.8 |
-| 38 | client/public/leadership/articles/how-to-read-proverbs.json | 1 | 0 | 0.8 |
-| 39 | client/public/leadership/articles/pastoral-succession.json | 1 | 0 | 0.7 |
-| 40 | Consumerism Is a Spiritual Formation | 1 | 0 | 0.7 |
-| 41 | Replanting: When a Church Has to Start Over | 1 | 0 | 0.6 |
-| 42 | Why Churches Close, and What Comes Next | 1 | 0 | 0.6 |
-| 43 | Why Gen Z Is Coming Back to Church | 1 | 0 | 0.6 |
-| 44 | Charity Is Not Justice: The Difference That Changes Everything | 1 | 0 | 0.5 |
-| 45 | What About People Who Never Heard of Jesus? | 1 | 0 | 0.5 |
-| 46 | client/public/nation/render.json | 1 | 0 | 0.3 |
-| 47 | client/public/leadership/surveys/church-health.json | 1 | 0 | 0.3 |
-| 48 | client/public/life/domains/friendship-against-isolation.json | 1 | 0 | 0.2 |
-| 49 | client/public/theology/problem-of-evil.json | 1 | 0 | 0.2 |
-| 50 | client/public/theology/anthropology.json | 1 | 0 | 0.2 |
-| 51 | client/public/leadership/servant-leadership-handbook.json | 1 | 0 | 0.1 |
-| 52 | foster-care-unfinished-mandate | 0 | 20 | 0.0 |
-| 53 | client/public/leadership/whole-bible-sermons.json | 0 | 11 | 0.0 |
-| 54 | client/public/leadership/sermons/genesis.json | 0 | 8 | 0.0 |
-| 55 | client/public/disruption/topics/war-and-peace.json | 0 | 6 | 0.0 |
-| 56 | beatitudes-actually-promising | 0 | 6 | 0.0 |
-| 57 | church-mental-health-justice | 0 | 6 | 0.0 |
-| 58 | justice-not-political | 0 | 5 | 0.0 |
-| 59 | client/public/leadership/formation-guides.json | 0 | 4 | 0.0 |
-| 60 | client/public/disruption/topics/prosperity-success.json | 0 | 4 | 0.0 |
-| 61 | client/public/justice/timeline.json | 0 | 3 | 0.0 |
-| 62 | client/public/leadership/sermons/ephesians.json | 0 | 3 | 0.0 |
-| 63 | client/public/leadership/sermons/1-peter.json | 0 | 3 | 0.0 |
-| 64 | client/public/justice/topics/race-and-image.json | 0 | 3 | 0.0 |
-| 65 | client/public/studyguides/doubt.json | 0 | 2 | 0.0 |
-| 66 | client/public/life/domains/grief-and-loss.json | 0 | 2 | 0.0 |
-| 67 | client/public/family-seasonal.json | 0 | 2 | 0.0 |
-| 68 | client/public/leadership/sermons/ruth.json | 0 | 2 | 0.0 |
-| 69 | client/public/theology/biblical-theology-themes.json | 0 | 2 | 0.0 |
-| 70 | client/public/theology/biblical-theology-storyline.json | 0 | 2 | 0.0 |
-| 71 | 11-what-pastors-need-to-know-about-depression-and-why-its-not-a-faith-problem | 0 | 2 | 0.0 |
-| 72 | client/public/disruption/topics/christian-nation-myth.json | 0 | 2 | 0.0 |
-| 73 | 3-how-to-return-to-ministry-after-burning-out | 0 | 2 | 0.0 |
-| 74 | sabbath-is-resistance | 0 | 2 | 0.0 |
-| 75 | reaching-rich-more-comfortable | 0 | 2 | 0.0 |
-| 76 | burnout-nobody-talks-about | 0 | 2 | 0.0 |
-| 77 | return-ministry-after-burnout | 0 | 2 | 0.0 |
-| 78 | church-political-brand-step-back | 0 | 2 | 0.0 |
-| 79 | difference-tired-and-done | 0 | 2 | 0.0 |
-| 80 | Leading Through Conflict on a Church Team | 0 | 2 | 0.0 |
-| 81 | why-poverty-political | 0 | 2 | 0.0 |
-| 82 | 1-the-slow-burn-how-ministry-exhaustion-sneaks-up-on-you-before-you-see-it-coming | 0 | 2 | 0.0 |
-| 83 | consistent-pro-life-ethic | 0 | 2 | 0.0 |
-| 84 | client/public/leadership/sermons/mark.json | 0 | 1 | 0.0 |
-| 85 | client/public/theology/origins.json | 0 | 1 | 0.0 |
-| 86 | client/public/leadership/illustrations.json | 0 | 1 | 0.0 |
-| 87 | client/public/leadership/sermons/james.json | 0 | 1 | 0.0 |
-| 88 | client/public/leadership/sermons/galatians.json | 0 | 1 | 0.0 |
-| 89 | client/public/leadership/sermon-series.json | 0 | 1 | 0.0 |
-| 90 | client/public/leadership/formation/burnout-and-the-theology-of-rest.json | 0 | 1 | 0.0 |
-| 91 | client/public/creeds/documents/thirty-nine-articles-summary.json | 0 | 1 | 0.0 |
-| 92 | client/public/theology/bible-books.json | 0 | 1 | 0.0 |
-| 93 | What Christian Nationalism Is and What It Is Not | 0 | 1 | 0.0 |
-| 94 | client/public/family-devotions.json | 0 | 1 | 0.0 |
-| 95 | What the Bible Actually Says About Money | 0 | 1 | 0.0 |
-| 96 | client/public/leadership/services/wedding.json | 0 | 1 | 0.0 |
-| 97 | How to Read the Bible Without Making It Say What You Want | 0 | 1 | 0.0 |
-| 98 | client/public/creeds/documents/augsburg-confession-summary.json | 0 | 1 | 0.0 |
-| 99 | client/public/disruption/topics/sexuality-and-body.json | 0 | 1 | 0.0 |
-| 100 | justice-not-political-theological | 0 | 1 | 0.0 |
-| 101 | client/public/disruption/topics/church-and-empire.json | 0 | 1 | 0.0 |
-| 102 | theology-of-protest | 0 | 1 | 0.0 |
-| 103 | Hasn't the Church Done Terrible Things? | 0 | 1 | 0.0 |
-| 104 | scripture-meditation | 0 | 1 | 0.0 |
-| 105 | client/public/leadership/sermons/titus.json | 0 | 1 | 0.0 |
-| 106 | widow-orphan-stranger | 0 | 1 | 0.0 |
-| 107 | client/public/justice/witnesses.json | 0 | 1 | 0.0 |
-| 108 | pastor-politically-divided-gospel-central | 0 | 1 | 0.0 |
-| 109 | client/public/justice/topics/creation-care.json | 0 | 1 | 0.0 |
-| 110 | client/public/justice/topics/the-poor.json | 0 | 1 | 0.0 |
-| 111 | 14-how-to-preach-the-same-gospel-to-people-who-are-nothing-alike | 0 | 1 | 0.0 |
-| 112 | 4-the-difference-between-being-tired-and-being-done | 0 | 1 | 0.0 |
-| 113 | church-megaproject-widows-mite | 0 | 1 | 0.0 |
-| 114 | prosperity-gospel-injustice | 0 | 1 | 0.0 |
-| 115 | vulnerable-people-not-in-pews | 0 | 1 | 0.0 |
-| 116 | okay-to-see-counselor | 0 | 1 | 0.0 |
-| 117 | when-preaching-gets-stale | 0 | 1 | 0.0 |
-| 118 | when-man-pulpit-falling-apart | 0 | 1 | 0.0 |
-| 119 | client/public/justice/topics/the-prisoner.json | 0 | 1 | 0.0 |
-| 120 | client/public/justice/topics/systemic-sin.json | 0 | 1 | 0.0 |
-| 121 | nehemiah-rebuilding | 0 | 1 | 0.0 |
-| 122 | mission-is-not-optional | 0 | 1 | 0.0 |
-| 123 | 35-how-three-small-churches-co-planted-one-new-congregation | 0 | 1 | 0.0 |
-| 124 | talk-global-missions-moves-congregation | 0 | 1 | 0.0 |
-| 125 | theology-of-repair | 0 | 1 | 0.0 |
-| 126 | kingdom-of-god-not-what-you-think | 0 | 1 | 0.0 |
-| 127 | when-god-bless-america-replaces-thy-kingdom-come | 0 | 1 | 0.0 |
-| 128 | the-monster-in-the-mirror | 0 | 1 | 0.0 |
-| 129 | poor-not-ministry-category | 0 | 1 | 0.0 |
-| 130 | Why Your Church Should Require a Sabbatical | 0 | 1 | 0.0 |
-| 131 | client/public/disruption/topics/consumer-comfort.json | 0 | 1 | 0.0 |
-| 132 | Why the Prophets Made Everyone Uncomfortable | 0 | 1 | 0.0 |
-| 133 | post-roe-church-responsibility | 0 | 1 | 0.0 |
-| 134 | mission-sending-culture-never-sent | 0 | 1 | 0.0 |
-| 135 | finding-your-barnabas | 0 | 1 | 0.0 |
-| 136 | Expository vs. Topical Preaching: Which and When | 0 | 1 | 0.0 |
-| 137 | support-life-after-birth | 0 | 1 | 0.0 |
-| 138 | client/public/disruption/topics/therapeutic-gospel.json | 0 | 1 | 0.0 |
-| 139 | client/public/justice/topics/the-wage.json | 0 | 1 | 0.0 |
-| 140 | Why the Bible Is One Story, Not Sixty-Six Books | 0 | 1 | 0.0 |
-| 141 | Fighting Fair: Conflict Without Casualties | 0 | 1 | 0.0 |
-| 142 | client/public/context/guides/the-slavery-texts.json | 0 | 1 | 0.0 |
-| 143 | client/public/context/guides/money-texts-we-explain-away.json | 0 | 1 | 0.0 |
-| 144 | client/public/leadership/articles/the-biblical-covenants.json | 0 | 1 | 0.0 |
-| 145 | client/public/leadership/articles/historical-context.json | 0 | 1 | 0.0 |
-| 146 | client/public/leadership/articles/resilience-in-ministry.json | 0 | 1 | 0.0 |
-| 147 | client/public/leadership/articles/comparison-and-envy-in-ministry.json | 0 | 1 | 0.0 |
-| 148 | client/public/leadership/articles/humility-in-leadership.json | 0 | 1 | 0.0 |
-| 149 | The Unfinished Church: Calling, Vision, and the Future God Is Building | 0 | 1 | 0.0 |
+| 18 | client/public/leadership/articles/how-to-do-a-word-study.json | 1 | 0 | 1.2 |
+| 19 | client/public/leadership/articles/expository-vs-topical.json | 1 | 0 | 1.1 |
+| 20 | client/public/leadership/articles/bible-study-tools.json | 1 | 0 | 1.1 |
+| 21 | client/public/leadership/workflows/revitalization-plan.json | 1 | 0 | 1.1 |
+| 22 | client/public/leadership/articles/lasting-youth-ministry.json | 1 | 0 | 1.1 |
+| 23 | client/public/leadership/articles/how-to-study-the-bible.json | 1 | 0 | 1.0 |
+| 24 | client/public/leadership/articles/the-leaders-prayer-life.json | 1 | 0 | 1.0 |
+| 25 | client/public/context/guides/genesis-one-in-its-world.json | 1 | 0 | 1.0 |
+| 26 | client/public/leadership/articles/helping-a-doubting-believer.json | 1 | 0 | 1.0 |
+| 27 | client/public/leadership/articles/recovering-hospitality.json | 1 | 0 | 1.0 |
+| 28 | client/public/leadership/articles/preaching-with-or-without-notes.json | 1 | 0 | 1.0 |
+| 29 | client/public/leadership/articles/praying-for-your-people.json | 1 | 0 | 1.0 |
+| 30 | client/public/context/guides/the-cities-of-paul.json | 1 | 0 | 1.0 |
+| 31 | client/public/leadership/articles/how-to-start-a-sermon.json | 1 | 0 | 1.0 |
+| 32 | client/public/leadership/articles/how-to-write-a-sermon.json | 1 | 0 | 0.9 |
+| 33 | client/public/leadership/articles/sermon-application.json | 1 | 0 | 0.9 |
+| 34 | client/public/leadership/articles/bridging-text-to-today.json | 1 | 0 | 0.9 |
+| 35 | client/public/leadership/articles/ministry-teams.json | 1 | 0 | 0.8 |
+| 36 | client/public/leadership/articles/how-to-read-proverbs.json | 1 | 0 | 0.8 |
+| 37 | client/public/leadership/articles/pastoral-succession.json | 1 | 0 | 0.7 |
+| 38 | Consumerism Is a Spiritual Formation | 1 | 0 | 0.7 |
+| 39 | Replanting: When a Church Has to Start Over | 1 | 0 | 0.6 |
+| 40 | Why Churches Close, and What Comes Next | 1 | 0 | 0.6 |
+| 41 | Why Gen Z Is Coming Back to Church | 1 | 0 | 0.6 |
+| 42 | Charity Is Not Justice: The Difference That Changes Everything | 1 | 0 | 0.5 |
+| 43 | client/public/nation/render.json | 1 | 0 | 0.3 |
+| 44 | client/public/leadership/surveys/church-health.json | 1 | 0 | 0.3 |
+| 45 | client/public/life/domains/friendship-against-isolation.json | 1 | 0 | 0.2 |
+| 46 | client/public/theology/problem-of-evil.json | 1 | 0 | 0.2 |
+| 47 | client/public/theology/anthropology.json | 1 | 0 | 0.2 |
+| 48 | client/public/leadership/servant-leadership-handbook.json | 1 | 0 | 0.1 |
+| 49 | foster-care-unfinished-mandate | 0 | 20 | 0.0 |
+| 50 | client/public/leadership/whole-bible-sermons.json | 0 | 11 | 0.0 |
+| 51 | client/public/leadership/sermons/genesis.json | 0 | 8 | 0.0 |
+| 52 | client/public/disruption/topics/war-and-peace.json | 0 | 6 | 0.0 |
+| 53 | beatitudes-actually-promising | 0 | 6 | 0.0 |
+| 54 | church-mental-health-justice | 0 | 6 | 0.0 |
+| 55 | justice-not-political | 0 | 5 | 0.0 |
+| 56 | client/public/leadership/formation-guides.json | 0 | 4 | 0.0 |
+| 57 | client/public/disruption/topics/prosperity-success.json | 0 | 4 | 0.0 |
+| 58 | client/public/justice/timeline.json | 0 | 3 | 0.0 |
+| 59 | client/public/leadership/sermons/ephesians.json | 0 | 3 | 0.0 |
+| 60 | client/public/leadership/sermons/1-peter.json | 0 | 3 | 0.0 |
+| 61 | client/public/justice/topics/race-and-image.json | 0 | 3 | 0.0 |
+| 62 | client/public/studyguides/doubt.json | 0 | 2 | 0.0 |
+| 63 | client/public/life/domains/grief-and-loss.json | 0 | 2 | 0.0 |
+| 64 | client/public/family-seasonal.json | 0 | 2 | 0.0 |
+| 65 | client/public/leadership/sermons/ruth.json | 0 | 2 | 0.0 |
+| 66 | client/public/theology/biblical-theology-themes.json | 0 | 2 | 0.0 |
+| 67 | client/public/theology/biblical-theology-storyline.json | 0 | 2 | 0.0 |
+| 68 | 11-what-pastors-need-to-know-about-depression-and-why-its-not-a-faith-problem | 0 | 2 | 0.0 |
+| 69 | client/public/disruption/topics/christian-nation-myth.json | 0 | 2 | 0.0 |
+| 70 | 3-how-to-return-to-ministry-after-burning-out | 0 | 2 | 0.0 |
+| 71 | sabbath-is-resistance | 0 | 2 | 0.0 |
+| 72 | reaching-rich-more-comfortable | 0 | 2 | 0.0 |
+| 73 | burnout-nobody-talks-about | 0 | 2 | 0.0 |
+| 74 | return-ministry-after-burnout | 0 | 2 | 0.0 |
+| 75 | church-political-brand-step-back | 0 | 2 | 0.0 |
+| 76 | difference-tired-and-done | 0 | 2 | 0.0 |
+| 77 | Leading Through Conflict on a Church Team | 0 | 2 | 0.0 |
+| 78 | why-poverty-political | 0 | 2 | 0.0 |
+| 79 | 1-the-slow-burn-how-ministry-exhaustion-sneaks-up-on-you-before-you-see-it-coming | 0 | 2 | 0.0 |
+| 80 | consistent-pro-life-ethic | 0 | 2 | 0.0 |
+| 81 | client/public/leadership/sermons/mark.json | 0 | 1 | 0.0 |
+| 82 | client/public/theology/origins.json | 0 | 1 | 0.0 |
+| 83 | client/public/leadership/illustrations.json | 0 | 1 | 0.0 |
+| 84 | client/public/leadership/sermons/james.json | 0 | 1 | 0.0 |
+| 85 | client/public/leadership/sermons/galatians.json | 0 | 1 | 0.0 |
+| 86 | client/public/leadership/sermon-series.json | 0 | 1 | 0.0 |
+| 87 | client/public/leadership/formation/burnout-and-the-theology-of-rest.json | 0 | 1 | 0.0 |
+| 88 | client/public/creeds/documents/thirty-nine-articles-summary.json | 0 | 1 | 0.0 |
+| 89 | client/public/theology/bible-books.json | 0 | 1 | 0.0 |
+| 90 | What Christian Nationalism Is and What It Is Not | 0 | 1 | 0.0 |
+| 91 | client/public/family-devotions.json | 0 | 1 | 0.0 |
+| 92 | What the Bible Actually Says About Money | 0 | 1 | 0.0 |
+| 93 | client/public/leadership/services/wedding.json | 0 | 1 | 0.0 |
+| 94 | How to Read the Bible Without Making It Say What You Want | 0 | 1 | 0.0 |
+| 95 | client/public/creeds/documents/augsburg-confession-summary.json | 0 | 1 | 0.0 |
+| 96 | client/public/disruption/topics/sexuality-and-body.json | 0 | 1 | 0.0 |
+| 97 | justice-not-political-theological | 0 | 1 | 0.0 |
+| 98 | client/public/disruption/topics/church-and-empire.json | 0 | 1 | 0.0 |
+| 99 | theology-of-protest | 0 | 1 | 0.0 |
+| 100 | Hasn't the Church Done Terrible Things? | 0 | 1 | 0.0 |
+| 101 | scripture-meditation | 0 | 1 | 0.0 |
+| 102 | client/public/leadership/sermons/titus.json | 0 | 1 | 0.0 |
+| 103 | widow-orphan-stranger | 0 | 1 | 0.0 |
+| 104 | client/public/justice/witnesses.json | 0 | 1 | 0.0 |
+| 105 | pastor-politically-divided-gospel-central | 0 | 1 | 0.0 |
+| 106 | client/public/justice/topics/creation-care.json | 0 | 1 | 0.0 |
+| 107 | client/public/justice/topics/the-poor.json | 0 | 1 | 0.0 |
+| 108 | 14-how-to-preach-the-same-gospel-to-people-who-are-nothing-alike | 0 | 1 | 0.0 |
+| 109 | 4-the-difference-between-being-tired-and-being-done | 0 | 1 | 0.0 |
+| 110 | church-megaproject-widows-mite | 0 | 1 | 0.0 |
+| 111 | prosperity-gospel-injustice | 0 | 1 | 0.0 |
+| 112 | vulnerable-people-not-in-pews | 0 | 1 | 0.0 |
+| 113 | okay-to-see-counselor | 0 | 1 | 0.0 |
+| 114 | when-preaching-gets-stale | 0 | 1 | 0.0 |
+| 115 | when-man-pulpit-falling-apart | 0 | 1 | 0.0 |
+| 116 | client/public/justice/topics/the-prisoner.json | 0 | 1 | 0.0 |
+| 117 | client/public/justice/topics/systemic-sin.json | 0 | 1 | 0.0 |
+| 118 | nehemiah-rebuilding | 0 | 1 | 0.0 |
+| 119 | mission-is-not-optional | 0 | 1 | 0.0 |
+| 120 | 35-how-three-small-churches-co-planted-one-new-congregation | 0 | 1 | 0.0 |
+| 121 | talk-global-missions-moves-congregation | 0 | 1 | 0.0 |
+| 122 | theology-of-repair | 0 | 1 | 0.0 |
+| 123 | kingdom-of-god-not-what-you-think | 0 | 1 | 0.0 |
+| 124 | when-god-bless-america-replaces-thy-kingdom-come | 0 | 1 | 0.0 |
+| 125 | the-monster-in-the-mirror | 0 | 1 | 0.0 |
+| 126 | poor-not-ministry-category | 0 | 1 | 0.0 |
+| 127 | Why Your Church Should Require a Sabbatical | 0 | 1 | 0.0 |
+| 128 | client/public/disruption/topics/consumer-comfort.json | 0 | 1 | 0.0 |
+| 129 | Why the Prophets Made Everyone Uncomfortable | 0 | 1 | 0.0 |
+| 130 | post-roe-church-responsibility | 0 | 1 | 0.0 |
+| 131 | mission-sending-culture-never-sent | 0 | 1 | 0.0 |
+| 132 | finding-your-barnabas | 0 | 1 | 0.0 |
+| 133 | Expository vs. Topical Preaching: Which and When | 0 | 1 | 0.0 |
+| 134 | support-life-after-birth | 0 | 1 | 0.0 |
+| 135 | client/public/disruption/topics/therapeutic-gospel.json | 0 | 1 | 0.0 |
+| 136 | client/public/justice/topics/the-wage.json | 0 | 1 | 0.0 |
+| 137 | Why the Bible Is One Story, Not Sixty-Six Books | 0 | 1 | 0.0 |
+| 138 | Fighting Fair: Conflict Without Casualties | 0 | 1 | 0.0 |
+| 139 | client/public/context/guides/the-slavery-texts.json | 0 | 1 | 0.0 |
+| 140 | client/public/context/guides/money-texts-we-explain-away.json | 0 | 1 | 0.0 |
+| 141 | client/public/leadership/articles/the-biblical-covenants.json | 0 | 1 | 0.0 |
+| 142 | client/public/leadership/articles/historical-context.json | 0 | 1 | 0.0 |
+| 143 | client/public/leadership/articles/resilience-in-ministry.json | 0 | 1 | 0.0 |
+| 144 | client/public/leadership/articles/comparison-and-envy-in-ministry.json | 0 | 1 | 0.0 |
+| 145 | client/public/leadership/articles/humility-in-leadership.json | 0 | 1 | 0.0 |
+| 146 | The Unfinished Church: Calling, Vision, and the Future God Is Building | 0 | 1 | 0.0 |
 
 ## Detail (flagged essays only)
 
@@ -331,18 +328,6 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
   - …ceiving and releasing. It is more blessed to give than to receive. The freed…
 
-### Changing the Unchangeable
-`book:changing-the-unchangeable`
-
-- **FORBIDDEN** · `navigate` · 1× · forbidden-word
-  - …Book 12 in The Hard Issues Series. Navigate institutional resistance and lead…
-
-### Earthen Vessels: Why Our Bodies Matter to Our Faith
-`book:earthen-vessels-why-our-bodies-matter-to-our-faith`
-
-- **FORBIDDEN** · `holistic` · 1× · forbidden-word
-  - …es spirit from body, arguing for a holistic Christianity that honors the physi…
-
 ### client/public/leadership/articles/how-to-do-a-word-study.json
 `lib:client/public/leadership/articles/how-to-do-a-word-study.json`
 
@@ -492,12 +477,6 @@ _Mechanical only. A clean score means no banned words — not that the prose car
 
 - **FORBIDDEN** · `do the work` · 1× · therapy-speak
   - …he most extravagant charity cannot do the work that only justice does, because ch…
-
-### What About People Who Never Heard of Jesus?
-`apologetics-what-about-those-who-never-heard`
-
-- **FORBIDDEN** · `in other words` · 1× · signposting
-  - …onscience accuses or excuses them. In other words, the Bible never says people are j…
 
 ### client/public/nation/render.json
 `lib:client/public/nation/render.json`
