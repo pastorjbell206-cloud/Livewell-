@@ -48,6 +48,13 @@ const TOOLS = [
     color: "var(--ink)",
   },
   {
+    title: "Proverbs in 31 Days",
+    description: "A chapter of Proverbs a day, matched to the date, the way the church has read it for centuries. Each day a theme, a verse or two worth knowing by heart, and a reflection that runs the chapter into a real decision. Part of Integrated Life.",
+    href: "/tools/proverbs-31",
+    icon: BookMarked,
+    color: "var(--gold)",
+  },
+  {
     title: "Passage Context Tool",
     description: "Enter any Bible reference and read it in context: the passage with room around it, who wrote it and why, its genre, the flow of the argument, cross-references, and the questions to ask of any text. Part of the Theological Depth section.",
     href: "/theology/passage",
