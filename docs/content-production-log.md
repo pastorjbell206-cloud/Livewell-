@@ -71,21 +71,24 @@ when-god-is-silent-and-the-room-is-empty · the-theology-of-saturday · what-psa
 **Pastoral Burnout (5)** — `content/drafts/pastoral-burnout/`  *(why-pastors-quit slug collides with existing full-31 — reconcile before publish)*
 the-pastor-nobody-checks-on · when-the-calling-costs-more · burnout-is-not-a-badge · the-loneliest-room-in-the-church · why-pastors-quit
 
-## Later pillars (from content-library.md) — PLANNED
-- **Reading Scripture Past Our Politics** — the 5 "lens" essays (Six Lenses…, Proof-Texting…, What the Original Audience Heard, The Whole Counsel, Reading in Community).
-- **The Church After Christendom** — the arc essays around the imported series (Christendom: A 1,700-Year Story…, Exile Is Not the End, Witness Without Power, etc.).
-- **The Pastoral Angle** — bridge essays (Pastoring a Congregation Captured by a Cable Network, The Last Nonpartisan in the Room, etc.).
+## Pillar 3 — Reading Scripture Past Our Politics (DRAFTED ✓, in `content/drafts/scripture-past-politics/`)
+Six Lenses That Distort the Bible Before You Read a Word · Proof-Texting Is How Both Sides Win and the Text Loses · What the Original Audience Heard · The Whole Counsel · Reading in Community, Not in a Tribe. (~2,600 words each.)
+
+## Pillar 4 — The Church After Christendom (DRAFTED ✓, in `content/drafts/after-christendom/`)
+Christendom: A 1,700-Year Story That Is Ending · Exile Is Not the End · Witness Without Power · What Dies When Christendom Dies — and What Doesn't · The Numbers Behind the Decline, and the Ones That Lie. (~2,500–2,700 words; decline stats deliberately hedged — fact-check before publish.)
+
+## Pillar 5 — The Pastoral Angle (DRAFTED ✓, in `content/drafts/pastoral-angle/`)
+How to Pastor a Congregation Captured by a Cable Network · Preaching the Whole Counsel to a Room That Will Hear Politics · The Last Nonpartisan in the Room · Discipling People Out of Fear · When Your Elders Are More Loyal to a Party Than a Pulpit. (~2,500 words each.)
 
 ---
 
 ## In flight right now
-- Nothing in flight. Both political-capture pillars + all 37 struggling-flow essays are at the bar.
-- Next up (on your go): the later pillars (Scripture-past-politics lens essays, After-Christendom arc, pastoral bridges) — OR connect DATABASE_URL and publish the library.
+- Nothing in flight. **All five pillars + the 37 struggling-flow essays are drafted to the bar.** The content plan is complete.
+- Next: connect DATABASE_URL and publish the library.
 
 ## Tallies
-- Long-form at the bar: **53** (8 Capture-Left + 8 Capture-Right + 37 struggling-flow)
-- Planned: later pillars (~15)
-- None published yet — all await James's edit (placeholders + fact-check) and the DATABASE_URL publish step. `node scripts/publish-content-library.mjs --dry-run` = 53/53 clean.
+- Long-form at the bar: **68** (8 Capture-Left + 8 Capture-Right + 5 Scripture-past-politics + 5 After-Christendom + 5 Pastoral-Angle + 37 struggling-flow)
+- None published yet — all await James's edit (placeholders + fact-check) and the DATABASE_URL publish step. `node scripts/publish-content-library.mjs --dry-run` = **68/68 clean**.
 
 ## Publishing note
 Nothing here is live yet — article bodies render from the database

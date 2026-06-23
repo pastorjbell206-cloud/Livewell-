@@ -25,6 +25,9 @@ const LIB_DIRS = [
   "content/drafts/faith-crisis",
   "content/drafts/grief",
   "content/drafts/pastoral-burnout",
+  "content/drafts/scripture-past-politics",
+  "content/drafts/after-christendom",
+  "content/drafts/pastoral-angle",
 ];
 
 const argv = process.argv.slice(2);
