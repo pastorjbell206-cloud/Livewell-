@@ -688,36 +688,60 @@ export default function MinimalNav() {
                 {link.dropdown ? (
                   <>
                     <div
-                      onClick={() =>
-                        setOpenDropdown(
-                          openDropdown === link.label ? null : link.label
-                        )
-                      }
                       style={{
-                        fontFamily: "var(--U)",
-                        color: "var(--ink)",
-                        fontSize: "14px",
-                        padding: "12px 0",
-                        borderBottom: "1px solid var(--border)",
-                        fontWeight: 600,
-                        cursor: "pointer",
                         display: "flex",
-                        justifyContent: "space-between",
                         alignItems: "center",
+                        justifyContent: "space-between",
+                        borderBottom: "1px solid var(--border)",
                       }}
                     >
-                      {link.label}
-                      <ChevronDown
-                        size={16}
-                        aria-hidden
+                      <Link
+                        href={link.dropdown[0].href}
+                        onClick={() => { setMobileOpen(false); setOpenDropdown(null); }}
                         style={{
-                          transform:
-                            openDropdown === link.label
-                              ? "rotate(180deg)"
-                              : "none",
-                          transition: "transform 0.2s",
+                          flex: 1,
+                          textDecoration: "none",
+                          fontFamily: "var(--U)",
+                          color: "var(--ink)",
+                          fontSize: "14px",
+                          fontWeight: 600,
+                          padding: "12px 0",
                         }}
-                      />
+                      >
+                        {link.label}
+                      </Link>
+                      <button
+                        type="button"
+                        aria-label={`Show ${link.label} sections`}
+                        aria-expanded={openDropdown === link.label}
+                        onClick={() =>
+                          setOpenDropdown(
+                            openDropdown === link.label ? null : link.label
+                          )
+                        }
+                        style={{
+                          background: "none",
+                          border: "none",
+                          color: "var(--ink)",
+                          cursor: "pointer",
+                          padding: "12px 4px 12px 20px",
+                          minHeight: "44px",
+                          display: "inline-flex",
+                          alignItems: "center",
+                        }}
+                      >
+                        <ChevronDown
+                          size={18}
+                          aria-hidden
+                          style={{
+                            transform:
+                              openDropdown === link.label
+                                ? "rotate(180deg)"
+                                : "none",
+                            transition: "transform 0.2s",
+                          }}
+                        />
+                      </button>
                     </div>
                     {openDropdown === link.label && (
                       <div style={{ paddingLeft: "16px", paddingBottom: "8px" }}>
