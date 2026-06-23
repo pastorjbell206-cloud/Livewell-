@@ -34,6 +34,20 @@ const TOOLS = [
     color: "var(--ink2)",
   },
   {
+    title: "Rule of Life Builder",
+    description: "A rule of life is not a performance contract. It is a trellis. Choose sustainable practices across prayer, Scripture, rest, community, mission, and the body, and build a rhythm of grace you can actually keep. Part of Integrated Life.",
+    href: "/tools/rule-of-life",
+    icon: Target,
+    color: "var(--gold)",
+  },
+  {
+    title: "What the Bible Says About",
+    description: "A topical guide to Scripture for the arenas of ordinary life: money, the tongue, anger, anxiety, work, marriage, friendship, suffering, forgiveness, and more, with the heart of each passage worth knowing by heart. Part of Integrated Life.",
+    href: "/tools/bible-on",
+    icon: BookOpen,
+    color: "var(--ink)",
+  },
+  {
     title: "Passage Context Tool",
     description: "Enter any Bible reference and read it in context: the passage with room around it, who wrote it and why, its genre, the flow of the argument, cross-references, and the questions to ask of any text. Part of the Theological Depth section.",
     href: "/theology/passage",

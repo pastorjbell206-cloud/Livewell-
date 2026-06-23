@@ -126,6 +126,8 @@ const ChurchHealth = lazy(() => import("./pages/tools/ChurchHealth"));
 const DeepBibleCompanion = lazy(() => import("./pages/tools/DeepBibleCompanion"));
 const FamilyDevotionBuilder = lazy(() => import("./pages/tools/FamilyDevotionBuilder"));
 const DiscipleshipTable = lazy(() => import("./pages/tools/DiscipleshipTable"));
+const RuleOfLife = lazy(() => import("./pages/tools/RuleOfLife"));
+const BibleOnTopic = lazy(() => import("./pages/tools/BibleOnTopic"));
 const WorkWithJames = lazy(() => import("./pages/WorkWithJames"));
 const PastoralBurnout = lazy(() => import("./pages/landing/PastoralBurnout"));
 const FaithCrisis = lazy(() => import("./pages/landing/FaithCrisis"));
@@ -326,6 +328,8 @@ function Router() {
         <Route path="/tools/deep-bible" component={DeepBibleCompanion} />
         <Route path="/tools/family-devotions" component={FamilyDevotionBuilder} />
         <Route path="/tools/discipleship-table" component={DiscipleshipTable} />
+        <Route path="/tools/rule-of-life" component={RuleOfLife} />
+        <Route path="/tools/bible-on" component={BibleOnTopic} />
         <Route path="/work-with-james" component={WorkWithJames} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/accessibility" component={Accessibility} />
