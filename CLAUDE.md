@@ -140,6 +140,105 @@ Not warm in the coffee-shop sense. Not dark in the luxury-brand sense. The feeli
 
 ---
 
+## Engineering: Codebase Map & Workflows
+
+> This section is the practical orientation for working in the code. The deep,
+> always-current system map is `docs/ARCHITECTURE.md` (architecture, file
+> structure, DB, API, UI, production verdict) — read it before non-trivial
+> engineering work. The brand contract above governs anything user-facing.
+
+### Stack (as built)
+
+TypeScript end to end. **React 19 + Vite 7** SPA with **wouter** routing,
+**TanStack Query + tRPC v11** client, **Tailwind v4 + Radix** (shadcn-style)
+primitives, **Framer Motion**. **Drizzle ORM + mysql2** over **MySQL**.
+**Stripe** (config-driven). Deployed on **Vercel**. Package manager is **pnpm**
+(`pnpm@10`) — do not use npm/yarn.
+
+### The one architectural fact that bites
+
+There are **two server implementations of the same API**:
+
+- **Dev** (`pnpm dev`) — an Express server at `server/_core/index.ts` mounting
+  the full tRPC router (`server/routers.ts` + ~13 sub-routers in `server/*-router.ts`
+  and `server/routers/`).
+- **Production (Vercel)** — a single, deliberately self-contained serverless
+  function `api/index.ts` (~2,000 lines, no `../server/*` imports) that
+  re-implements each procedure by hand against pooled MySQL.
+
+A procedure added to `server/routers.ts` **does not exist in production** until
+it is also added to `api/index.ts`. `server/api-parity.test.ts` fails CI if the
+client calls a procedure prod doesn't implement — respect it. Known prod gaps
+(`stripe.*` REST fallback, `files.*`, `teamCollab.*`) are intentional and need
+per-user auth to close.
+
+### Directory map
+
+| Path | What lives here |
+|------|-----------------|
+| `client/src/App.tsx` | Route table (~190 routes) + providers |
+| `client/src/pages/` | ~180 page components (pillars, `tools/`, `landing/`, `admin/`) |
+| `client/src/components/` | Shared UI, incl. `ui/` shadcn-style primitives |
+| `client/src/index.css` | **Design token source of truth** (`:root` CSS vars, `html.dark`, `.admin-scope`) |
+| `client/src/lib/taxonomy.ts` | Two-movement / six-pillar content taxonomy (source of truth) |
+| `client/src/lib/pillar-assignments.ts` | Per-essay pillar map (how you file a piece) |
+| `client/public/*` | Content-as-data JSON libraries + `llms.txt` |
+| `server/` | Dev runtime + business logic + Vitest tests (`*.test.ts`) |
+| `api/index.ts` | Vercel serverless entry (prod runtime) |
+| `drizzle/schema.ts` | ~28 tables (DB source of truth); `bundles-schema.ts` adds 4 |
+| `scripts/` | ~75 scripts: content pipeline, index builders, validators, SEO, PDFs |
+| `docs/` | `ARCHITECTURE.md`, `EDITORIAL-CONSTITUTION.md`, `VOICE.md`, audits |
+
+### Commands
+
+| Command | Purpose |
+|---------|---------|
+| `pnpm dev` | Local dev server (Express + tsx watch, full tRPC router) |
+| `pnpm build` | `vite build` + esbuild-bundle the server |
+| `pnpm check` | TypeScript typecheck (`tsc --noEmit`) — **CI gate** |
+| `pnpm test` | Vitest run — **CI gate** |
+| `pnpm lint` / `pnpm lint:fix` | ESLint (`--max-warnings 0`) |
+| `pnpm format` | Prettier |
+| `pnpm db:push` | `drizzle-kit generate && migrate` |
+| `pnpm db:seed` | Seed content (`scripts/seed-all-content.mjs`) |
+| `pnpm sitemap` / `pnpm pdfs` / `pnpm og` / `pnpm prerender` | SEO + asset/PDF builders |
+| `pnpm publish:*` | Content publishing pipeline (docx/md/book/drafts/plan) |
+
+### Environment
+
+Copy `.env.example` → `.env`. Server runtime needs `DATABASE_URL`, `JWT_SECRET`
+(also doubles as the one-shot admin/seed API key), and `ADMIN_PASSWORD_HASH`
+(bcrypt — generate with `scripts/generate-admin-hash.mjs`). Stripe, Mailchimp,
+and S3/Forge are optional. `VITE_*` vars are inlined at **build** time and must
+be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
+`HttpOnly; Secure` session cookie.
+
+### CI gates (`.github/workflows/ci.yml`)
+
+On every PR: `pnpm check` → content validators (`validate-formation.mjs`,
+`validate-life.mjs`, `validate-table.mjs`) → `pnpm test` → `pnpm build`. A
+separate, non-blocking `quality` job runs Lighthouse + axe against the built
+site. Keep all four blocking steps green.
+
+### Conventions for AI assistants
+
+- **Styling flows through tokens.** Components use inline styles referencing the
+  CSS variables in `index.css`; never hardcode hex values in components. Brand
+  changes happen at `:root`. Honor the palette/typography contract above.
+- **Filing content** = add a slug to `pillar-assignments.ts` (not a DB
+  migration); `taxonomy.ts` resolves it. See README "Filing a piece".
+- **Content-as-data**: long-form libraries are JSON in `client/public/*` with
+  generated manifests (`scripts/build-*-index.mjs`) gated by validators. Rebuild
+  the relevant index after editing a library; rerun `pnpm pdfs` after content
+  changes that feed PDFs.
+- **When adding/changing an API procedure, update BOTH** `server/` (dev) and
+  `api/index.ts` (prod), or expect `api-parity.test.ts` to fail.
+- **The admin area opts out of dark mode** via `.admin-scope` — keep it a light
+  workspace.
+- Match surrounding code style; run `pnpm check` and `pnpm test` before pushing.
+
+---
+
 ## Decision Log (engineering source of truth)
 
 - **Stack stays React + Vite + tRPC + Drizzle + MySQL on Vercel.** Not migrated
