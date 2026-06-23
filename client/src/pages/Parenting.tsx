@@ -164,6 +164,9 @@ export default function Parenting() {
               Browse All Parenting Articles
             </button>
           </Link>
+          <div style={{ marginTop: "20px" }}>
+            <Link href="/life/raising-children-in-grace" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none" }}>Or read the deep guide: Raising Children in Grace</Link>
+          </div>
         </div>
       </section>
 
