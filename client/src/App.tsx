@@ -44,6 +44,8 @@ const About = lazy(() => import("./pages/About"));
 const Exile = lazy(() => import("./pages/Exile"));
 const Table = lazy(() => import("./pages/table/Table"));
 const TableStudy = lazy(() => import("./pages/table/TableStudy"));
+const BookLibrary = lazy(() => import("./pages/books/BookLibrary"));
+const BookReader = lazy(() => import("./pages/books/BookReader"));
 
 const Resources = lazy(() => import("./pages/Resources"));
 const ContextLibrary = lazy(() => import("./pages/resources/ContextLibrary"));
@@ -236,6 +238,8 @@ function Router() {
         <Route path="/exile" component={Exile} />
         <Route path="/table/:slug" component={TableStudy} />
         <Route path="/table" component={Table} />
+        <Route path="/read/:slug" component={BookReader} />
+        <Route path="/read" component={BookLibrary} />
         <Route path="/parenting" component={Parenting} />
         <Route path="/family/catechism" component={FamilyCatechism} />
         <Route path="/family/devotions" component={FamilyDevotions} />
