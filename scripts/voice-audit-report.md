@@ -2,7 +2,7 @@
 
 Source corpus: `/home/user/Livewell-/scripts/.essays-corpus.json`
 
-**814 essays scanned** — 151 need a human pass, 663 are mechanically clean. 118 hard forbidden hits, 249 judgment-call flags.
+**802 essays scanned** — 149 need a human pass, 653 are mechanically clean. 66 hard forbidden hits, 223 judgment-call flags.
 
 _Mechanical only. A clean score means no banned words — not that the prose carries Bell's voice. Read the top of this list first._
 
@@ -10,214 +10,157 @@ _Mechanical only. A clean score means no banned words — not that the prose car
 
 | # | Essay | Forbidden | Review | per 1k words |
 |--:|-------|----------:|-------:|-------------:|
-| 1 | client/public/admin-article-bodies.json | 8 | 75 | 0.0 |
-| 2 | client/public/article-library.json | 7 | 11 | 0.0 |
-| 3 | 5. Neglecting Their Own Spiritual Life | 6 | 1 | 0.9 |
-| 4 | The Post-Roe Landscape and What the Church Is Now Actually Required to Do | 3 | 1 | 9.9 |
-| 5 | client/src/data/articles/church-revitalization.json | 3 | 0 | 0.4 |
-| 6 | client/public/family-devotions-2.json | 2 | 4 | 0.2 |
-| 7 | client/src/data/content-data.json | 2 | 4 | 0.2 |
-| 8 | client/public/studyguides/economic-justice.json | 2 | 3 | 0.1 |
-| 9 | 17. Mobilizing Your Church for World Missions Without a Big Budget | 2 | 1 | 0.6 |
-| 10 | client/public/studyguides/christian-nationalism.json | 2 | 1 | 0.1 |
-| 11 | 37. What Predominantly White Churches Get Wrong When They Talk About Diversity | 2 | 0 | 3.2 |
-| 12 | 27. What Gen Z Actually Wants From a Church (And Why It's Not What You Think) | 2 | 0 | 3.2 |
-| 13 | What Healthy Conflict in a Marriage Actually Looks Like | 2 | 0 | 2.4 |
-| 14 | When One Partner Has Grown and the Other Hasn't | 2 | 0 | 2.4 |
-| 15 | When You Married Someone You No Longer Recognize | 2 | 0 | 2.3 |
-| 16 | client/public/leadership/articles/expository-preaching.json | 2 | 0 | 1.8 |
-| 17 | client/public/leadership/articles/crisis-care.json | 2 | 0 | 1.7 |
-| 18 | It Is Okay to Doubt: What to Do With Your Questions | 2 | 0 | 0.8 |
-| 19 | client/public/leadership/surveys/spiritual-gifts.json | 2 | 0 | 0.8 |
-| 20 | client/public/leadership/sermons/2-timothy.json | 2 | 0 | 0.6 |
-| 21 | client/public/leadership/articles-index.json | 2 | 0 | 0.5 |
-| 22 | client/src/data/articles/teen-apologetics.json | 2 | 0 | 0.2 |
-| 23 | client/public/studyguides/pastoral-health.json | 1 | 11 | 0.0 |
-| 24 | client/public/theology/passage-notes.json | 1 | 11 | 0.0 |
-| 25 | client/public/studyguides/church-and-empire.json | 1 | 2 | 0.0 |
-| 26 | client/public/theology/church-history-figures.json | 1 | 1 | 0.3 |
-| 27 | client/public/family-catechism.json | 1 | 1 | 0.1 |
-| 28 | client/src/data/articles/economic-justice.json | 1 | 1 | 0.1 |
-| 29 | client/public/studyguides/money.json | 1 | 1 | 0.1 |
-| 30 | Changing the Unchangeable | 1 | 0 | 34.5 |
-| 31 | When a Church Split Happens — Surviving It, Learning From It, Moving Forward | 1 | 0 | 27.8 |
-| 32 | Why the Future of Missions Is Already There | 1 | 0 | 27.0 |
-| 33 | Church Closures Are Outpacing Church Plants 3 to 1 — What That Means for the Mission | 1 | 0 | 25.0 |
-| 34 | Why Addressing Symptoms Without Causes Is Charity, Not Justice | 1 | 0 | 21.3 |
-| 35 | The Church's Response to Culture | 1 | 0 | 20.0 |
-| 36 | Earthen Vessels: Why Our Bodies Matter to Our Faith | 1 | 0 | 19.6 |
-| 37 | 4. Navigating Conflict Alone | 1 | 0 | 12.2 |
-| 38 | What the Church Owes the Woman in Crisis Pregnancy Beyond Its Political Position | 1 | 0 | 2.8 |
-| 39 | 33. The Case for Doing City-Wide Church Together at Least Once a Year | 1 | 0 | 1.7 |
-| 40 | 34. What a Healthy Pastor Referral Network Actually Looks Like | 1 | 0 | 1.7 |
-| 41 | 39. Church Closures Are Outpacing Church Plants 3 to 1 — What That Means for the Mission | 1 | 0 | 1.6 |
-| 42 | 31. When a Church Split Happens — Surviving It, Learning From It, Moving Forward | 1 | 0 | 1.6 |
-| 43 | 38. What I Learned About Unity From Pastoring Across Cultural Lines | 1 | 0 | 1.5 |
-| 44 | 19. What Small Churches Get Right That Large Churches Rarely Talk About | 1 | 0 | 1.4 |
-| 45 | When the Romance Has Left and Only the Covenant Remains | 1 | 0 | 1.3 |
-| 46 | 50. How to Lead When Trust in Institutions — Including the Church — Is at an All-Time Low | 1 | 0 | 1.2 |
-| 47 | client/public/leadership/articles/how-to-do-a-word-study.json | 1 | 0 | 1.2 |
-| 48 | client/public/leadership/articles/expository-vs-topical.json | 1 | 0 | 1.1 |
-| 49 | client/public/leadership/articles/bible-study-tools.json | 1 | 0 | 1.1 |
-| 50 | client/public/leadership/workflows/revitalization-plan.json | 1 | 0 | 1.1 |
-| 51 | client/public/leadership/articles/lasting-youth-ministry.json | 1 | 0 | 1.1 |
-| 52 | client/public/leadership/articles/how-to-study-the-bible.json | 1 | 0 | 1.0 |
-| 53 | client/public/leadership/articles/the-leaders-prayer-life.json | 1 | 0 | 1.0 |
-| 54 | client/public/context/guides/genesis-one-in-its-world.json | 1 | 0 | 1.0 |
-| 55 | client/public/leadership/articles/helping-a-doubting-believer.json | 1 | 0 | 1.0 |
-| 56 | client/public/leadership/articles/recovering-hospitality.json | 1 | 0 | 1.0 |
-| 57 | client/public/leadership/articles/preaching-with-or-without-notes.json | 1 | 0 | 1.0 |
-| 58 | client/public/leadership/articles/praying-for-your-people.json | 1 | 0 | 1.0 |
-| 59 | client/public/context/guides/the-cities-of-paul.json | 1 | 0 | 1.0 |
-| 60 | client/public/leadership/articles/how-to-start-a-sermon.json | 1 | 0 | 1.0 |
-| 61 | client/public/leadership/articles/how-to-write-a-sermon.json | 1 | 0 | 0.9 |
-| 62 | client/public/leadership/articles/sermon-application.json | 1 | 0 | 0.9 |
-| 63 | client/public/leadership/articles/bridging-text-to-today.json | 1 | 0 | 0.9 |
-| 64 | client/public/leadership/articles/ministry-teams.json | 1 | 0 | 0.8 |
-| 65 | client/public/leadership/articles/how-to-read-proverbs.json | 1 | 0 | 0.8 |
-| 66 | client/public/leadership/articles/pastoral-succession.json | 1 | 0 | 0.7 |
-| 67 | Consumerism Is a Spiritual Formation | 1 | 0 | 0.7 |
-| 68 | Replanting: When a Church Has to Start Over | 1 | 0 | 0.6 |
-| 69 | Why Churches Close, and What Comes Next | 1 | 0 | 0.6 |
-| 70 | Why Gen Z Is Coming Back to Church | 1 | 0 | 0.6 |
-| 71 | Charity Is Not Justice: The Difference That Changes Everything | 1 | 0 | 0.5 |
-| 72 | What About People Who Never Heard of Jesus? | 1 | 0 | 0.5 |
-| 73 | client/public/nation/render.json | 1 | 0 | 0.3 |
-| 74 | client/public/leadership/surveys/church-health.json | 1 | 0 | 0.3 |
-| 75 | client/public/life/domains/friendship-against-isolation.json | 1 | 0 | 0.2 |
-| 76 | client/public/theology/problem-of-evil.json | 1 | 0 | 0.2 |
-| 77 | client/public/theology/anthropology.json | 1 | 0 | 0.2 |
-| 78 | client/src/data/articles/cultural-captivity.json | 1 | 0 | 0.1 |
-| 79 | client/public/leadership/servant-leadership-handbook.json | 1 | 0 | 0.1 |
-| 80 | client/public/leadership/whole-bible-sermons.json | 0 | 11 | 0.0 |
-| 81 | client/public/leadership/sermons/genesis.json | 0 | 8 | 0.0 |
-| 82 | client/public/disruption/topics/war-and-peace.json | 0 | 6 | 0.0 |
-| 83 | client/public/leadership/formation-guides.json | 0 | 4 | 0.0 |
-| 84 | client/public/disruption/topics/prosperity-success.json | 0 | 4 | 0.0 |
-| 85 | client/public/justice/timeline.json | 0 | 3 | 0.0 |
-| 86 | client/public/leadership/sermons/ephesians.json | 0 | 3 | 0.0 |
-| 87 | client/public/leadership/sermons/1-peter.json | 0 | 3 | 0.0 |
-| 88 | client/public/justice/topics/race-and-image.json | 0 | 3 | 0.0 |
-| 89 | What the Beatitudes Are Actually Promising | 0 | 3 | 0.0 |
-| 90 | client/public/studyguides/doubt.json | 0 | 2 | 0.0 |
-| 91 | client/src/data/articles/staff-and-teams.json | 0 | 2 | 0.0 |
-| 92 | client/public/life/domains/grief-and-loss.json | 0 | 2 | 0.0 |
-| 93 | client/public/family-seasonal.json | 0 | 2 | 0.0 |
-| 94 | client/public/leadership/sermons/ruth.json | 0 | 2 | 0.0 |
-| 95 | client/public/theology/biblical-theology-themes.json | 0 | 2 | 0.0 |
-| 96 | client/public/theology/biblical-theology-storyline.json | 0 | 2 | 0.0 |
-| 97 | client/public/disruption/topics/christian-nation-myth.json | 0 | 2 | 0.0 |
-| 98 | Leading Through Conflict on a Church Team | 0 | 2 | 0.0 |
-| 99 | Foster Care and the Church's Unfinished Mandate | 0 | 2 | 0.0 |
-| 100 | client/src/data/articles/apologetics.json | 0 | 1 | 0.0 |
-| 101 | client/src/data/articles/marriage-guides.json | 0 | 1 | 0.0 |
-| 102 | client/src/data/articles/systemic-sin.json | 0 | 1 | 0.0 |
-| 103 | client/src/data/articles/biblical-theology.json | 0 | 1 | 0.0 |
-| 104 | client/src/data/articles/christian-nationalism.json | 0 | 1 | 0.0 |
-| 105 | client/src/data/articles/preaching.json | 0 | 1 | 0.0 |
-| 106 | client/src/data/articles/pastoral-health.json | 0 | 1 | 0.0 |
-| 107 | client/src/data/articles/doctrine-scripture.json | 0 | 1 | 0.0 |
-| 108 | client/public/leadership/sermons/mark.json | 0 | 1 | 0.0 |
-| 109 | client/public/theology/origins.json | 0 | 1 | 0.0 |
-| 110 | client/public/leadership/illustrations.json | 0 | 1 | 0.0 |
-| 111 | client/public/leadership/sermons/james.json | 0 | 1 | 0.0 |
-| 112 | client/public/leadership/sermons/galatians.json | 0 | 1 | 0.0 |
-| 113 | client/public/leadership/sermon-series.json | 0 | 1 | 0.0 |
-| 114 | client/public/leadership/formation/burnout-and-the-theology-of-rest.json | 0 | 1 | 0.0 |
-| 115 | client/public/creeds/documents/thirty-nine-articles-summary.json | 0 | 1 | 0.0 |
-| 116 | client/public/theology/bible-books.json | 0 | 1 | 0.0 |
-| 117 | What Christian Nationalism Is and What It Is Not | 0 | 1 | 0.0 |
-| 118 | client/public/family-devotions.json | 0 | 1 | 0.0 |
-| 119 | What the Bible Actually Says About Money | 0 | 1 | 0.0 |
-| 120 | client/public/leadership/services/wedding.json | 0 | 1 | 0.0 |
-| 121 | How to Read the Bible Without Making It Say What You Want | 0 | 1 | 0.0 |
-| 122 | client/public/creeds/documents/augsburg-confession-summary.json | 0 | 1 | 0.0 |
-| 123 | client/public/disruption/topics/sexuality-and-body.json | 0 | 1 | 0.0 |
-| 124 | client/public/disruption/topics/church-and-empire.json | 0 | 1 | 0.0 |
-| 125 | Hasn't the Church Done Terrible Things? | 0 | 1 | 0.0 |
-| 126 | client/public/leadership/sermons/titus.json | 0 | 1 | 0.0 |
-| 127 | client/public/justice/witnesses.json | 0 | 1 | 0.0 |
-| 128 | client/public/justice/topics/creation-care.json | 0 | 1 | 0.0 |
-| 129 | client/public/justice/topics/the-poor.json | 0 | 1 | 0.0 |
-| 130 | client/public/justice/topics/the-prisoner.json | 0 | 1 | 0.0 |
-| 131 | client/public/justice/topics/systemic-sin.json | 0 | 1 | 0.0 |
-| 132 | Why Your Church Should Require a Sabbatical | 0 | 1 | 0.0 |
-| 133 | client/public/disruption/topics/consumer-comfort.json | 0 | 1 | 0.0 |
-| 134 | Why the Prophets Made Everyone Uncomfortable | 0 | 1 | 0.0 |
-| 135 | Expository vs. Topical Preaching: Which and When | 0 | 1 | 0.0 |
-| 136 | client/public/disruption/topics/therapeutic-gospel.json | 0 | 1 | 0.0 |
-| 137 | client/public/justice/topics/the-wage.json | 0 | 1 | 0.0 |
-| 138 | Why the Bible Is One Story, Not Sixty-Six Books | 0 | 1 | 0.0 |
-| 139 | Fighting Fair: Conflict Without Casualties | 0 | 1 | 0.0 |
-| 140 | client/public/context/guides/the-slavery-texts.json | 0 | 1 | 0.0 |
-| 141 | client/public/context/guides/money-texts-we-explain-away.json | 0 | 1 | 0.0 |
-| 142 | client/public/leadership/articles/the-biblical-covenants.json | 0 | 1 | 0.0 |
-| 143 | client/public/leadership/articles/historical-context.json | 0 | 1 | 0.0 |
-| 144 | client/public/leadership/articles/resilience-in-ministry.json | 0 | 1 | 0.0 |
-| 145 | 47. Engaging the 'Nones' — What Research Tells Us About Reaching the Religiously Unaffiliated | 0 | 1 | 0.0 |
-| 146 | client/public/leadership/articles/comparison-and-envy-in-ministry.json | 0 | 1 | 0.0 |
-| 147 | client/public/leadership/articles/humility-in-leadership.json | 0 | 1 | 0.0 |
-| 148 | What a Consistent Pro-Life Ethic Requires Beyond Opposition to Abortion | 0 | 1 | 0.0 |
-| 149 | When God Bless America Replaces Thy Kingdom Come | 0 | 1 | 0.0 |
-| 150 | The Unfinished Church: Calling, Vision, and the Future God Is Building | 0 | 1 | 0.0 |
-| 151 | How I Learned to Stop Performing and Start Pastoring | 0 | 1 | 0.0 |
+| 1 | 5. Neglecting Their Own Spiritual Life | 6 | 1 | 0.9 |
+| 2 | client/public/family-devotions-2.json | 2 | 4 | 0.2 |
+| 3 | client/public/studyguides/economic-justice.json | 2 | 3 | 0.1 |
+| 4 | 17. Mobilizing Your Church for World Missions Without a Big Budget | 2 | 1 | 0.6 |
+| 5 | client/public/studyguides/christian-nationalism.json | 2 | 1 | 0.1 |
+| 6 | client/public/leadership/articles/expository-preaching.json | 2 | 0 | 1.8 |
+| 7 | client/public/leadership/articles/crisis-care.json | 2 | 0 | 1.7 |
+| 8 | It Is Okay to Doubt: What to Do With Your Questions | 2 | 0 | 0.8 |
+| 9 | client/public/leadership/surveys/spiritual-gifts.json | 2 | 0 | 0.8 |
+| 10 | client/public/leadership/sermons/2-timothy.json | 2 | 0 | 0.6 |
+| 11 | client/public/leadership/articles-index.json | 2 | 0 | 0.5 |
+| 12 | client/public/studyguides/pastoral-health.json | 1 | 11 | 0.0 |
+| 13 | client/public/theology/passage-notes.json | 1 | 11 | 0.0 |
+| 14 | client/public/studyguides/church-and-empire.json | 1 | 2 | 0.0 |
+| 15 | client/public/theology/church-history-figures.json | 1 | 1 | 0.3 |
+| 16 | client/public/family-catechism.json | 1 | 1 | 0.1 |
+| 17 | client/public/studyguides/money.json | 1 | 1 | 0.1 |
+| 18 | Changing the Unchangeable | 1 | 0 | 34.5 |
+| 19 | Earthen Vessels: Why Our Bodies Matter to Our Faith | 1 | 0 | 19.6 |
+| 20 | client/public/leadership/articles/how-to-do-a-word-study.json | 1 | 0 | 1.2 |
+| 21 | client/public/leadership/articles/expository-vs-topical.json | 1 | 0 | 1.1 |
+| 22 | client/public/leadership/articles/bible-study-tools.json | 1 | 0 | 1.1 |
+| 23 | client/public/leadership/workflows/revitalization-plan.json | 1 | 0 | 1.1 |
+| 24 | client/public/leadership/articles/lasting-youth-ministry.json | 1 | 0 | 1.1 |
+| 25 | client/public/leadership/articles/how-to-study-the-bible.json | 1 | 0 | 1.0 |
+| 26 | client/public/leadership/articles/the-leaders-prayer-life.json | 1 | 0 | 1.0 |
+| 27 | client/public/context/guides/genesis-one-in-its-world.json | 1 | 0 | 1.0 |
+| 28 | client/public/leadership/articles/helping-a-doubting-believer.json | 1 | 0 | 1.0 |
+| 29 | client/public/leadership/articles/recovering-hospitality.json | 1 | 0 | 1.0 |
+| 30 | client/public/leadership/articles/preaching-with-or-without-notes.json | 1 | 0 | 1.0 |
+| 31 | client/public/leadership/articles/praying-for-your-people.json | 1 | 0 | 1.0 |
+| 32 | client/public/context/guides/the-cities-of-paul.json | 1 | 0 | 1.0 |
+| 33 | client/public/leadership/articles/how-to-start-a-sermon.json | 1 | 0 | 1.0 |
+| 34 | client/public/leadership/articles/how-to-write-a-sermon.json | 1 | 0 | 0.9 |
+| 35 | client/public/leadership/articles/sermon-application.json | 1 | 0 | 0.9 |
+| 36 | client/public/leadership/articles/bridging-text-to-today.json | 1 | 0 | 0.9 |
+| 37 | client/public/leadership/articles/ministry-teams.json | 1 | 0 | 0.8 |
+| 38 | client/public/leadership/articles/how-to-read-proverbs.json | 1 | 0 | 0.8 |
+| 39 | client/public/leadership/articles/pastoral-succession.json | 1 | 0 | 0.7 |
+| 40 | Consumerism Is a Spiritual Formation | 1 | 0 | 0.7 |
+| 41 | Replanting: When a Church Has to Start Over | 1 | 0 | 0.6 |
+| 42 | Why Churches Close, and What Comes Next | 1 | 0 | 0.6 |
+| 43 | Why Gen Z Is Coming Back to Church | 1 | 0 | 0.6 |
+| 44 | Charity Is Not Justice: The Difference That Changes Everything | 1 | 0 | 0.5 |
+| 45 | What About People Who Never Heard of Jesus? | 1 | 0 | 0.5 |
+| 46 | client/public/nation/render.json | 1 | 0 | 0.3 |
+| 47 | client/public/leadership/surveys/church-health.json | 1 | 0 | 0.3 |
+| 48 | client/public/life/domains/friendship-against-isolation.json | 1 | 0 | 0.2 |
+| 49 | client/public/theology/problem-of-evil.json | 1 | 0 | 0.2 |
+| 50 | client/public/theology/anthropology.json | 1 | 0 | 0.2 |
+| 51 | client/public/leadership/servant-leadership-handbook.json | 1 | 0 | 0.1 |
+| 52 | foster-care-unfinished-mandate | 0 | 20 | 0.0 |
+| 53 | client/public/leadership/whole-bible-sermons.json | 0 | 11 | 0.0 |
+| 54 | client/public/leadership/sermons/genesis.json | 0 | 8 | 0.0 |
+| 55 | client/public/disruption/topics/war-and-peace.json | 0 | 6 | 0.0 |
+| 56 | beatitudes-actually-promising | 0 | 6 | 0.0 |
+| 57 | church-mental-health-justice | 0 | 6 | 0.0 |
+| 58 | justice-not-political | 0 | 5 | 0.0 |
+| 59 | client/public/leadership/formation-guides.json | 0 | 4 | 0.0 |
+| 60 | client/public/disruption/topics/prosperity-success.json | 0 | 4 | 0.0 |
+| 61 | client/public/justice/timeline.json | 0 | 3 | 0.0 |
+| 62 | client/public/leadership/sermons/ephesians.json | 0 | 3 | 0.0 |
+| 63 | client/public/leadership/sermons/1-peter.json | 0 | 3 | 0.0 |
+| 64 | client/public/justice/topics/race-and-image.json | 0 | 3 | 0.0 |
+| 65 | client/public/studyguides/doubt.json | 0 | 2 | 0.0 |
+| 66 | client/public/life/domains/grief-and-loss.json | 0 | 2 | 0.0 |
+| 67 | client/public/family-seasonal.json | 0 | 2 | 0.0 |
+| 68 | client/public/leadership/sermons/ruth.json | 0 | 2 | 0.0 |
+| 69 | client/public/theology/biblical-theology-themes.json | 0 | 2 | 0.0 |
+| 70 | client/public/theology/biblical-theology-storyline.json | 0 | 2 | 0.0 |
+| 71 | 11-what-pastors-need-to-know-about-depression-and-why-its-not-a-faith-problem | 0 | 2 | 0.0 |
+| 72 | client/public/disruption/topics/christian-nation-myth.json | 0 | 2 | 0.0 |
+| 73 | 3-how-to-return-to-ministry-after-burning-out | 0 | 2 | 0.0 |
+| 74 | sabbath-is-resistance | 0 | 2 | 0.0 |
+| 75 | reaching-rich-more-comfortable | 0 | 2 | 0.0 |
+| 76 | burnout-nobody-talks-about | 0 | 2 | 0.0 |
+| 77 | return-ministry-after-burnout | 0 | 2 | 0.0 |
+| 78 | church-political-brand-step-back | 0 | 2 | 0.0 |
+| 79 | difference-tired-and-done | 0 | 2 | 0.0 |
+| 80 | Leading Through Conflict on a Church Team | 0 | 2 | 0.0 |
+| 81 | why-poverty-political | 0 | 2 | 0.0 |
+| 82 | 1-the-slow-burn-how-ministry-exhaustion-sneaks-up-on-you-before-you-see-it-coming | 0 | 2 | 0.0 |
+| 83 | consistent-pro-life-ethic | 0 | 2 | 0.0 |
+| 84 | client/public/leadership/sermons/mark.json | 0 | 1 | 0.0 |
+| 85 | client/public/theology/origins.json | 0 | 1 | 0.0 |
+| 86 | client/public/leadership/illustrations.json | 0 | 1 | 0.0 |
+| 87 | client/public/leadership/sermons/james.json | 0 | 1 | 0.0 |
+| 88 | client/public/leadership/sermons/galatians.json | 0 | 1 | 0.0 |
+| 89 | client/public/leadership/sermon-series.json | 0 | 1 | 0.0 |
+| 90 | client/public/leadership/formation/burnout-and-the-theology-of-rest.json | 0 | 1 | 0.0 |
+| 91 | client/public/creeds/documents/thirty-nine-articles-summary.json | 0 | 1 | 0.0 |
+| 92 | client/public/theology/bible-books.json | 0 | 1 | 0.0 |
+| 93 | What Christian Nationalism Is and What It Is Not | 0 | 1 | 0.0 |
+| 94 | client/public/family-devotions.json | 0 | 1 | 0.0 |
+| 95 | What the Bible Actually Says About Money | 0 | 1 | 0.0 |
+| 96 | client/public/leadership/services/wedding.json | 0 | 1 | 0.0 |
+| 97 | How to Read the Bible Without Making It Say What You Want | 0 | 1 | 0.0 |
+| 98 | client/public/creeds/documents/augsburg-confession-summary.json | 0 | 1 | 0.0 |
+| 99 | client/public/disruption/topics/sexuality-and-body.json | 0 | 1 | 0.0 |
+| 100 | justice-not-political-theological | 0 | 1 | 0.0 |
+| 101 | client/public/disruption/topics/church-and-empire.json | 0 | 1 | 0.0 |
+| 102 | theology-of-protest | 0 | 1 | 0.0 |
+| 103 | Hasn't the Church Done Terrible Things? | 0 | 1 | 0.0 |
+| 104 | scripture-meditation | 0 | 1 | 0.0 |
+| 105 | client/public/leadership/sermons/titus.json | 0 | 1 | 0.0 |
+| 106 | widow-orphan-stranger | 0 | 1 | 0.0 |
+| 107 | client/public/justice/witnesses.json | 0 | 1 | 0.0 |
+| 108 | pastor-politically-divided-gospel-central | 0 | 1 | 0.0 |
+| 109 | client/public/justice/topics/creation-care.json | 0 | 1 | 0.0 |
+| 110 | client/public/justice/topics/the-poor.json | 0 | 1 | 0.0 |
+| 111 | 14-how-to-preach-the-same-gospel-to-people-who-are-nothing-alike | 0 | 1 | 0.0 |
+| 112 | 4-the-difference-between-being-tired-and-being-done | 0 | 1 | 0.0 |
+| 113 | church-megaproject-widows-mite | 0 | 1 | 0.0 |
+| 114 | prosperity-gospel-injustice | 0 | 1 | 0.0 |
+| 115 | vulnerable-people-not-in-pews | 0 | 1 | 0.0 |
+| 116 | okay-to-see-counselor | 0 | 1 | 0.0 |
+| 117 | when-preaching-gets-stale | 0 | 1 | 0.0 |
+| 118 | when-man-pulpit-falling-apart | 0 | 1 | 0.0 |
+| 119 | client/public/justice/topics/the-prisoner.json | 0 | 1 | 0.0 |
+| 120 | client/public/justice/topics/systemic-sin.json | 0 | 1 | 0.0 |
+| 121 | nehemiah-rebuilding | 0 | 1 | 0.0 |
+| 122 | mission-is-not-optional | 0 | 1 | 0.0 |
+| 123 | 35-how-three-small-churches-co-planted-one-new-congregation | 0 | 1 | 0.0 |
+| 124 | talk-global-missions-moves-congregation | 0 | 1 | 0.0 |
+| 125 | theology-of-repair | 0 | 1 | 0.0 |
+| 126 | kingdom-of-god-not-what-you-think | 0 | 1 | 0.0 |
+| 127 | when-god-bless-america-replaces-thy-kingdom-come | 0 | 1 | 0.0 |
+| 128 | the-monster-in-the-mirror | 0 | 1 | 0.0 |
+| 129 | poor-not-ministry-category | 0 | 1 | 0.0 |
+| 130 | Why Your Church Should Require a Sabbatical | 0 | 1 | 0.0 |
+| 131 | client/public/disruption/topics/consumer-comfort.json | 0 | 1 | 0.0 |
+| 132 | Why the Prophets Made Everyone Uncomfortable | 0 | 1 | 0.0 |
+| 133 | post-roe-church-responsibility | 0 | 1 | 0.0 |
+| 134 | mission-sending-culture-never-sent | 0 | 1 | 0.0 |
+| 135 | finding-your-barnabas | 0 | 1 | 0.0 |
+| 136 | Expository vs. Topical Preaching: Which and When | 0 | 1 | 0.0 |
+| 137 | support-life-after-birth | 0 | 1 | 0.0 |
+| 138 | client/public/disruption/topics/therapeutic-gospel.json | 0 | 1 | 0.0 |
+| 139 | client/public/justice/topics/the-wage.json | 0 | 1 | 0.0 |
+| 140 | Why the Bible Is One Story, Not Sixty-Six Books | 0 | 1 | 0.0 |
+| 141 | Fighting Fair: Conflict Without Casualties | 0 | 1 | 0.0 |
+| 142 | client/public/context/guides/the-slavery-texts.json | 0 | 1 | 0.0 |
+| 143 | client/public/context/guides/money-texts-we-explain-away.json | 0 | 1 | 0.0 |
+| 144 | client/public/leadership/articles/the-biblical-covenants.json | 0 | 1 | 0.0 |
+| 145 | client/public/leadership/articles/historical-context.json | 0 | 1 | 0.0 |
+| 146 | client/public/leadership/articles/resilience-in-ministry.json | 0 | 1 | 0.0 |
+| 147 | client/public/leadership/articles/comparison-and-envy-in-ministry.json | 0 | 1 | 0.0 |
+| 148 | client/public/leadership/articles/humility-in-leadership.json | 0 | 1 | 0.0 |
+| 149 | The Unfinished Church: Calling, Vision, and the Future God Is Building | 0 | 1 | 0.0 |
 
 ## Detail (flagged essays only)
-
-### client/public/admin-article-bodies.json
-`lib:client/public/admin-article-bodies.json`
-
-- **FORBIDDEN** · `landscape` · 2× · forbidden-word
-  - …w Research Center. 2024. Religious Landscape Study. Washington: Pew Research Ce…
-  - …w Research Center. 2024. Religious Landscape Study. Washington: Pew Research Ce…
-- **FORBIDDEN** · `do the work` · 2× · therapy-speak
-  - …he most extravagant charity cannot do the work that only justice does, because ch…
-  - …your whole life. Third, actually do the work on the question kind of doubt. If…
-- **FORBIDDEN** · `showing up` · 2× · therapy-speak
-  - …repetition, only by years, only by showing up to the table on the mornings you w…
-  - …r really a believer. Fourth, keep showing up while you sort it all out, even on…
-- **FORBIDDEN** · `foster` · 1× · forbidden-word
-  - …lways been: who decides for whom. foster-care-unfinished-mandate There are…
-- **FORBIDDEN** · `gospel-centered` · 1× · forbidden-phrase
-  - …12. Center Church: Doing Balanced, Gospel-Centered Ministry in Your City. Grand Rapid…
-- _review_ · `journey` · 25× · review-word
-  - forbidden only as a metaphor — fine if literal travel
-  - …omes back. "Arise and eat, for the journey is too great for you." The God of…
-  - …ophet and says: arise and eat. The journey is too great for you. It is too…
-  - …and eat," the text says, "for the journey is too great for you" (1 Kings 19:…
-- _review_ · `blessed` · 25× · review-word
-  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
-  - …with doctrine but with condition: "Blessed are the poor in spirit" (Matthew 5…
-  - …out allowing them to be a claim. "Blessed are the poor in spirit, for theirs…
-  - …s version is less easy to manage. "Blessed are the poor" — without the qualif…
-- _review_ · `foster` · 24× · review-word
-  - literal 'foster care/parent/etc.' — almost certainly fine; flagged only because 'foster' is on the filler list
-  - …would ask hard questions about the foster care system and the hundreds of th…
-  - …ion. It looks like an adoption and foster care ministry that is as organized…
-  - …y 400,000 children in the American foster care system on any given day [cite…
-- _review_ · `authentic` · 1× · review-word
-  - forbidden as filler; 'authentic community' is a hard ban (caught separately)
-  - …). Religion without justice is not authentic religion with a deficiency. It is…
-
-### client/public/article-library.json
-`lib:client/public/article-library.json`
-
-- **FORBIDDEN** · `landscape` · 2× · forbidden-word
-  - …w Research Center. 2024. Religious Landscape Study. Washington: Pew Research Ce…
-  - …w Research Center. 2024. Religious Landscape Study. Washington: Pew Research Ce…
-- **FORBIDDEN** · `do the work` · 2× · therapy-speak
-  - …he most extravagant charity cannot do the work that only justice does, because ch…
-  - …your whole life. Third, actually do the work on the question kind of doubt. If…
-- **FORBIDDEN** · `showing up` · 2× · therapy-speak
-  - …repetition, only by years, only by showing up to the table on the mornings you w…
-  - …elief, not a threat. Fourth, keep showing up while you sort it all out, even on…
-- **FORBIDDEN** · `gospel-centered` · 1× · forbidden-phrase
-  - …12. Center Church: Doing Balanced, Gospel-Centered Ministry in Your City. Grand Rapid…
-- _review_ · `blessed` · 11× · review-word
-  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
-  - …One closes it certain that God has blessed the social order exactly as it sta…
-  - …the families of the earth will be blessed (Genesis 12:3 ESV). The promise na…
-  - …know that God favored this army or blessed that founding, when Scripture is f…
 
 ### 5. Neglecting Their Own Spiritual Life
 `5-neglecting-their-own-spiritual-life`
@@ -235,27 +178,6 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - forbidden only as a metaphor — fine if literal travel
   - …why he believes it. I respect the journey that brought him there. And he ext…
 
-### The Post-Roe Landscape and What the Church Is Now Actually Required to Do
-`post-roe-church-responsibility`
-
-- **FORBIDDEN** · `landscape` · 2× · forbidden-word
-  - …The Post-Roe Landscape and What the Church Is Now Actuall…
-  - …women who carry them, the post-Roe landscape revealed how much infrastructure t…
-- **FORBIDDEN** · `navigate` · 1× · forbidden-word
-  - …ns who had the fewest resources to navigate around them. If the church's goal…
-- _review_ · `foster` · 1× · review-word
-  - literal 'foster care/parent/etc.' — almost certainly fine; flagged only because 'foster' is on the filler list
-  - …egnancy centers, adoption systems, foster care pipelines, maternal health su…
-
-### client/src/data/articles/church-revitalization.json
-`lib:client/src/data/articles/church-revitalization.json`
-
-- **FORBIDDEN** · `landscape` · 2× · forbidden-word
-  - …w Research Center. 2024. Religious Landscape Study. Washington: Pew Research Ce…
-  - …w Research Center. 2024. Religious Landscape Study. Washington: Pew Research Ce…
-- **FORBIDDEN** · `gospel-centered` · 1× · forbidden-phrase
-  - …12. Center Church: Doing Balanced, Gospel-Centered Ministry in Your City. Grand Rapid…
-
 ### client/public/family-devotions-2.json
 `lib:client/public/family-devotions-2.json`
 
@@ -267,24 +189,6 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - …ce I cannot make on my own. Amen. Blessed are the poor in spirit, for theirs…
   - …r theirs is the kingdom of heaven. Blessed are those who mourn, for they will…
   - …gs made right, those are the truly blessed. It sounds backward, and that is…
-
-### client/src/data/content-data.json
-`lib:client/src/data/content-data.json`
-
-- **FORBIDDEN** · `landscape` · 1× · forbidden-word
-  - …icles Library: The American church landscape is contracting. This article explo…
-- **FORBIDDEN** · `showing up` · 1× · therapy-speak
-  - …apse. Sometimes it looks like just showing up. The slow erosion of joy. The grad…
-- _review_ · `journey` · 2× · review-word
-  - forbidden only as a metaphor — fine if literal travel
-  - …. This personal essay explores the journey from performance-driven ministry b…
-  - …ork. Bell reflects on the church's journey, current challenges, and God's pro…
-- _review_ · `authentic` · 1× · review-word
-  - forbidden as filler; 'authentic community' is a hard ban (caught separately)
-  - …urch culture and what it means for authentic Christian witness. How Patriotism…
-- _review_ · `blessed` · 1× · review-word
-  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
-  - …'s vision of a transformed world. "Blessed are the poor in spirit, for theirs…
 
 ### client/public/studyguides/economic-justice.json
 `lib:client/public/studyguides/economic-justice.json`
@@ -317,42 +221,6 @@ _Mechanical only. A clean score means no banned words — not that the prose car
 - _review_ · `blessed` · 1× · review-word
   - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
   - …ly assume God favored this army or blessed that founding. The capacity, draw…
-
-### 37. What Predominantly White Churches Get Wrong When They Talk About Diversity
-`37-what-predominantly-white-churches-get-wrong-when-they-talk-about-diversity`
-
-- **FORBIDDEN** · `transformative` · 2× · forbidden-word
-  - …varies enormously — from genuinely transformative engagement with Scripture and hist…
-  - …to attend a white church. The more transformative and genuinely biblical vision is f…
-
-### 27. What Gen Z Actually Wants From a Church (And Why It's Not What You Think)
-`27-what-gen-z-actually-wants-from-a-church-and-why-its-not-what-you-think`
-
-- **FORBIDDEN** · `showing up` · 2× · therapy-speak
-  - …s and Gen X are offering. They are showing up, and they are also showing up with…
-  - …are showing up, and they are also showing up with different expectations, diffe…
-
-### What Healthy Conflict in a Marriage Actually Looks Like
-`healthy-conflict-marriage`
-
-- **FORBIDDEN** · `navigate` · 2× · forbidden-word
-  - …s how they fight. The couples who navigate conflict well do several identifia…
-  - …to grovel. The couples who don't navigate it well use what Gottman calls the…
-
-### When One Partner Has Grown and the Other Hasn't
-`when-one-partner-has-grown`
-
-- **FORBIDDEN** · `leverage` · 1× · forbidden-word
-  - …ening. The growth is being used as leverage rather than offered as invitation.…
-- **FORBIDDEN** · `navigate` · 1× · forbidden-word
-  - …that they don't. The couples who navigate this don't erase the gap. They bui…
-
-### When You Married Someone You No Longer Recognize
-`married-someone-no-longer-recognize`
-
-- **FORBIDDEN** · `landscape` · 2× · forbidden-word
-  - …disorientation of finding that the landscape has changed without warning. Psalm…
-  - …t holds even when the recognizable landscape does not. The person you no longe…
 
 ### client/public/leadership/articles/expository-preaching.json
 `lib:client/public/leadership/articles/expository-preaching.json`
@@ -398,14 +266,6 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - …ip the saints for the work, not to do the work while the saints applaud. The min…
 - **FORBIDDEN** · `showing up` · 1× · therapy-speak
   - …, the accident, the diagnosis, and showing up to the worst day of someone's life…
-
-### client/src/data/articles/teen-apologetics.json
-`lib:client/src/data/articles/teen-apologetics.json`
-
-- **FORBIDDEN** · `do the work` · 1× · therapy-speak
-  - …your whole life. Third, actually do the work on the question kind of doubt. If…
-- **FORBIDDEN** · `showing up` · 1× · therapy-speak
-  - …r really a believer. Fourth, keep showing up while you sort it all out, even on…
 
 ### client/public/studyguides/pastoral-health.json
 `lib:client/public/studyguides/pastoral-health.json`
@@ -462,15 +322,6 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
   - …and show what he is like. And God blessed them. And God said to them, Be fru…
 
-### client/src/data/articles/economic-justice.json
-`lib:client/src/data/articles/economic-justice.json`
-
-- **FORBIDDEN** · `do the work` · 1× · therapy-speak
-  - …he most extravagant charity cannot do the work that only justice does, because ch…
-- _review_ · `blessed` · 1× · review-word
-  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
-  - …reduction, and money is not safely blessed, which refutes the prosperity prea…
-
 ### client/public/studyguides/money.json
 `lib:client/public/studyguides/money.json`
 
@@ -486,101 +337,11 @@ _Mechanical only. A clean score means no banned words — not that the prose car
 - **FORBIDDEN** · `navigate` · 1× · forbidden-word
   - …Book 12 in The Hard Issues Series. Navigate institutional resistance and lead…
 
-### When a Church Split Happens — Surviving It, Learning From It, Moving Forward
-`church-split-surviving-learning-forward`
-
-- **FORBIDDEN** · `navigate` · 1× · forbidden-word
-  - …able. This article explores how to navigate them with integrity and grace.…
-
-### Why the Future of Missions Is Already There
-`future-of-missions-already-there`
-
-- **FORBIDDEN** · `landscape` · 1× · forbidden-word
-  - …N Articles Library: The missionary landscape is shifting. This article explores…
-
-### Church Closures Are Outpacing Church Plants 3 to 1 — What That Means for the Mission
-`church-closures-outpacing-plants`
-
-- **FORBIDDEN** · `landscape` · 1× · forbidden-word
-  - …icles Library: The American church landscape is contracting. This article explo…
-
-### Why Addressing Symptoms Without Causes Is Charity, Not Justice
-`symptoms-without-causes-charity`
-
-- **FORBIDDEN** · `transformative` · 1× · forbidden-word
-  - …are necessary, but only justice is transformative. The church that only practices ch…
-
-### The Church's Response to Culture
-`church-response-to-culture`
-
-- **FORBIDDEN** · `navigate` · 1× · forbidden-word
-  - …The pastor who can help his church navigate cultural change will lead a church…
-
 ### Earthen Vessels: Why Our Bodies Matter to Our Faith
 `book:earthen-vessels-why-our-bodies-matter-to-our-faith`
 
 - **FORBIDDEN** · `holistic` · 1× · forbidden-word
   - …es spirit from body, arguing for a holistic Christianity that honors the physi…
-
-### 4. Navigating Conflict Alone
-`4-navigating-conflict-alone`
-
-- **FORBIDDEN** · `navigate` · 1× · forbidden-word
-  - …most new pastors make is trying to navigate it in isolation — without a mentor…
-
-### What the Church Owes the Woman in Crisis Pregnancy Beyond Its Political Position
-`church-crisis-pregnancy`
-
-- **FORBIDDEN** · `showing up` · 1× · therapy-speak
-  - …he more demanding version requires showing up — not once, but all the way throug…
-
-### 33. The Case for Doing City-Wide Church Together at Least Once a Year
-`33-the-case-for-doing-city-wide-church-together-at-least-once-a-year`
-
-- **FORBIDDEN** · `navigate` · 1× · forbidden-word
-  - …who have developed enough trust to navigate the inevitable decisions about who…
-
-### 34. What a Healthy Pastor Referral Network Actually Looks Like
-`34-what-a-healthy-pastor-referral-network-actually-looks-like`
-
-- **FORBIDDEN** · `navigate` · 1× · forbidden-word
-  - …social workers who can help people navigate healthcare systems when illness or…
-
-### 39. Church Closures Are Outpacing Church Plants 3 to 1 — What That Means for the Mission
-`39-church-closures-are-outpacing-church-plants-3-to-1-what-that-means-for-the-mission`
-
-- **FORBIDDEN** · `landscape` · 1× · forbidden-word
-  - …nificant trends in the 2025 church landscape, and it has continued into 2026. T…
-
-### 31. When a Church Split Happens — Surviving It, Learning From It, Moving Forward
-`31-when-a-church-split-happens-surviving-it-learning-from-it-moving-forward`
-
-- **FORBIDDEN** · `do the work` · 1× · therapy-speak
-  - …ate assessment. Find your witness. Do the work. The congregation you still have d…
-
-### 38. What I Learned About Unity From Pastoring Across Cultural Lines
-`38-what-i-learned-about-unity-from-pastoring-across-cultural-lines`
-
-- **FORBIDDEN** · `navigate` · 1× · forbidden-word
-  - …they were challenged. Learning to navigate conflict across cultural lines req…
-
-### 19. What Small Churches Get Right That Large Churches Rarely Talk About
-`19-what-small-churches-get-right-that-large-churches-rarely-talk-about`
-
-- **FORBIDDEN** · `navigate` · 1× · forbidden-word
-  - …mmunity engagement strategy has to navigate staff structures, budget processes…
-
-### When the Romance Has Left and Only the Covenant Remains
-`when-romance-left-covenant-remains`
-
-- **FORBIDDEN** · `navigate` · 1× · forbidden-word
-  - …Feeling to Return The couples who navigate this season well do something coun…
-
-### 50. How to Lead When Trust in Institutions — Including the Church — Is at an All-Time Low
-`50-how-to-lead-when-trust-in-institutions-including-the-church-is-at-an-all-time-low`
-
-- **FORBIDDEN** · `landscape` · 1× · forbidden-word
-  - …t stands out dramatically from the landscape of institutional performance. The…
 
 ### client/public/leadership/articles/how-to-do-a-word-study.json
 `lib:client/public/leadership/articles/how-to-do-a-word-study.json`
@@ -768,17 +529,20 @@ _Mechanical only. A clean score means no banned words — not that the prose car
 - **FORBIDDEN** · `do the work` · 1× · therapy-speak
   - …a creature with the capacities can do the work and live in the relationship. Whe…
 
-### client/src/data/articles/cultural-captivity.json
-`lib:client/src/data/articles/cultural-captivity.json`
-
-- **FORBIDDEN** · `showing up` · 1× · therapy-speak
-  - …repetition, only by years, only by showing up to the table on the mornings you w…
-
 ### client/public/leadership/servant-leadership-handbook.json
 `lib:client/public/leadership/servant-leadership-handbook.json`
 
 - **FORBIDDEN** · `do the work` · 1× · therapy-speak
   - …the assumption that a man who can do the work has therefore become the kind of m…
+
+### foster-care-unfinished-mandate
+`foster-care-unfinished-mandate`
+
+- _review_ · `foster` · 20× · review-word
+  - literal 'foster care/parent/etc.' — almost certainly fine; flagged only because 'foster' is on the filler list
+  - …y 400,000 children in the American foster care system on any given day [cite…
+  - …e 400,000 children in the American foster system as a different category fro…
+  - …it. The church's engagement with foster care has been inconsistent and, in…
 
 ### client/public/leadership/whole-bible-sermons.json
 `lib:client/public/leadership/whole-bible-sermons.json`
@@ -809,6 +573,33 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - …he Gospel. Matthew 5:9, 38 to 44 (blessed are the peacemakers, turn the othe…
   - …ame Lord. And the church has also blessed what it should have buried. It pre…
   - …ive with the knowledge that he has blessed killing and may have blessed it wr…
+
+### beatitudes-actually-promising
+`beatitudes-actually-promising`
+
+- _review_ · `blessed` · 6× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …out allowing them to be a claim. "Blessed are the poor in spirit, for theirs…
+  - …s version is less easy to manage. "Blessed are the poor" — without the qualif…
+  - …Chose The Greek word translated "blessed" is makarios — a word that in it…
+
+### church-mental-health-justice
+`church-mental-health-justice`
+
+- _review_ · `journey` · 6× · review-word
+  - forbidden only as a metaphor — fine if literal travel
+  - …Not for a few days. He ran a day's journey into the wilderness, sat under a t…
+  - …the provision. Then the word: "The journey is too great for you" (1 Kings 19:…
+  - …and honest acknowledgment that the journey was too great for him. Then, event…
+
+### justice-not-political
+`justice-not-political`
+
+- _review_ · `blessed` · 5× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …e one does not predict the other. "Blessed are the poor in spirit, for theirs…
+  - …kingdom of heaven" (Matthew 5:3). "Blessed are those who hunger and thirst fo…
+  - …n — those are the ones Jesus calls blessed. In Luke's version of the Beatitu…
 
 ### client/public/leadership/formation-guides.json
 `lib:client/public/leadership/formation-guides.json`
@@ -867,15 +658,6 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - …n, white churches across the South blessed Jim Crow and the doctrine of separ…
   - …l and Dabney Jim Crow segregation blessed by white churches white church si…
 
-### What the Beatitudes Are Actually Promising
-`beatitudes-actually-promising`
-
-- _review_ · `blessed` · 3× · review-word
-  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
-  - …comfort but of material reversal. Blessed are the poor. Blessed are those wh…
-  - …al reversal. Blessed are the poor. Blessed are those who hunger. Blessed are…
-  - …oor. Blessed are those who hunger. Blessed are those who mourn. Jesus's visio…
-
 ### client/public/studyguides/doubt.json
 `lib:client/public/studyguides/doubt.json`
 
@@ -883,14 +665,6 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
   - …looked is the one who worshiped. Blessed are those who have not seen and ye…
   - …ll John what you hear and see, and blessed is the one who is not offended by…
-
-### client/src/data/articles/staff-and-teams.json
-`lib:client/src/data/articles/staff-and-teams.json`
-
-- _review_ · `blessed` · 2× · review-word
-  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
-  - …us and he is not wrong about much. Blessed are the peacemakers. A quarrelsome…
-  - …mail. Jesus did not bless that. He blessed the harder and braver thing, the o…
 
 ### client/public/life/domains/grief-and-loss.json
 `lib:client/public/life/domains/grief-and-loss.json`
@@ -932,6 +706,14 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - …the families of the earth will be blessed. Abraham has no children and his w…
   - …promise that all nations would be blessed through Abraham's family finds its…
 
+### 11-what-pastors-need-to-know-about-depression-and-why-its-not-a-faith-problem
+`11-what-pastors-need-to-know-about-depression-and-why-its-not-a-faith-problem`
+
+- _review_ · `journey` · 2× · review-word
+  - forbidden only as a metaphor — fine if literal travel
+  - …and eat," the text says, "for the journey is too great for you" (1 Kings 19:…
+  - …say: I see you. I am staying. The journey is too great to take alone. Let us…
+
 ### client/public/disruption/topics/christian-nation-myth.json
 `lib:client/public/disruption/topics/christian-nation-myth.json`
 
@@ -939,6 +721,62 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
   - …It happened. But the church also blessed what it should have damned. It bap…
   - …ed kings who burned dissenters and blessed armies marching under its own bann…
+
+### 3-how-to-return-to-ministry-after-burning-out
+`3-how-to-return-to-ministry-after-burning-out`
+
+- _review_ · `journey` · 2× · review-word
+  - forbidden only as a metaphor — fine if literal travel
+  - …ood, water, and sleep. Twice. "The journey is too great for you" (1 Kings 19:…
+  - …u find your way. Take the time the journey actually requires.…
+
+### sabbath-is-resistance
+`sabbath-is-resistance`
+
+- _review_ · `blessed` · 2× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …he seventh day. Therefore the LORD blessed the Sabbath day and made it holy"…
+  - …bath, the day God had finished and blessed and set apart before the humans ha…
+
+### reaching-rich-more-comfortable
+`reaching-rich-more-comfortable`
+
+- _review_ · `blessed` · 2× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …explicit than Matthew's version: "Blessed are you who are poor, for yours is…
+  - …e lame, the blind, and you will be blessed" (Luke 14:12-14). He did not say…
+
+### burnout-nobody-talks-about
+`burnout-nobody-talks-about`
+
+- _review_ · `journey` · 2× · review-word
+  - forbidden only as a metaphor — fine if literal travel
+  - …ater and sleep. Twice. Then a long journey on the strength of that food — for…
+  - …ng for him at the other end of the journey. God already knew. The naming was…
+
+### return-ministry-after-burnout
+`return-ministry-after-burnout`
+
+- _review_ · `journey` · 2× · review-word
+  - forbidden only as a metaphor — fine if literal travel
+  - …struction: "Arise and eat, for the journey is too great for you." That is it.…
+  - …oo great for you." That is it. The journey is too great for you. Eat and slee…
+
+### church-political-brand-step-back
+`church-political-brand-step-back`
+
+- _review_ · `blessed` · 2× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …unters the Beatitudes seriously — "Blessed are the peacemakers," "Blessed are…
+  - …— "Blessed are the peacemakers," "Blessed are those who hunger and thirst fo…
+
+### difference-tired-and-done
+`difference-tired-and-done`
+
+- _review_ · `journey` · 2× · review-word
+  - forbidden only as a metaphor — fine if literal travel
+  - …and says: Arise and eat, for the journey is too great for you (1 Kings 19:…
+  - …ly help you. Answer honestly. The journey is too great to travel by the maps…
 
 ### Leading Through Conflict on a Church Team
 `leading-through-conflict-on-a-church-team`
@@ -948,69 +786,29 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - …us and he is not wrong about much. Blessed are the peacemakers. A quarrelsome…
   - …mail. Jesus did not bless that. He blessed the harder and braver thing, the o…
 
-### Foster Care and the Church's Unfinished Mandate
-`foster-care-unfinished-mandate`
+### why-poverty-political
+`why-poverty-political`
+
+- _review_ · `blessed` · 2× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …6:20–26 is the starkest passage: "Blessed are you who are poor, for yours is…
+  - …, for yours is the kingdom of God. Blessed are you who are hungry now, for yo…
+
+### 1-the-slow-burn-how-ministry-exhaustion-sneaks-up-on-you-before-you-see-it-coming
+`1-the-slow-burn-how-ministry-exhaustion-sneaks-up-on-you-before-you-see-it-coming`
+
+- _review_ · `journey` · 2× · review-word
+  - forbidden only as a metaphor — fine if literal travel
+  - …omes back. "Arise and eat, for the journey is too great for you." The God of…
+  - …ophet and says: arise and eat. The journey is too great for you. It is too…
+
+### consistent-pro-life-ethic
+`consistent-pro-life-ethic`
 
 - _review_ · `foster` · 2× · review-word
   - literal 'foster care/parent/etc.' — almost certainly fine; flagged only because 'foster' is on the filler list
-  - …Foster Care and the Church's Unfinished M…
-  - …g the systems that create orphans. Foster care is a justice issue rooted in…
-
-### client/src/data/articles/apologetics.json
-`lib:client/src/data/articles/apologetics.json`
-
-- _review_ · `blessed` · 1× · review-word
-  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
-  - …art of the offense. The church has blessed slave ships. It has burned dissent…
-
-### client/src/data/articles/marriage-guides.json
-`lib:client/src/data/articles/marriage-guides.json`
-
-- _review_ · `blessed` · 1× · review-word
-  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
-  - …ace on the other side of it. Jesus blessed the second one and said nothing ab…
-
-### client/src/data/articles/systemic-sin.json
-`lib:client/src/data/articles/systemic-sin.json`
-
-- _review_ · `blessed` · 1× · review-word
-  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
-  - …onsciousness that wants everything blessed or the resentment that only wants…
-
-### client/src/data/articles/biblical-theology.json
-`lib:client/src/data/articles/biblical-theology.json`
-
-- _review_ · `blessed` · 1× · review-word
-  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
-  - …the families of the earth will be blessed (Genesis 12:3 ESV). The promise na…
-
-### client/src/data/articles/christian-nationalism.json
-`lib:client/src/data/articles/christian-nationalism.json`
-
-- _review_ · `blessed` · 1× · review-word
-  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
-  - …know that God favored this army or blessed that founding, when Scripture is f…
-
-### client/src/data/articles/preaching.json
-`lib:client/src/data/articles/preaching.json`
-
-- _review_ · `blessed` · 1× · review-word
-  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
-  - …day of the church, and the Spirit blessed the breaking. Peter at Penteco…
-
-### client/src/data/articles/pastoral-health.json
-`lib:client/src/data/articles/pastoral-health.json`
-
-- _review_ · `blessed` · 1× · review-word
-  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
-  - …his work that he had done. So God blessed the seventh day and made it holy (…
-
-### client/src/data/articles/doctrine-scripture.json
-`lib:client/src/data/articles/doctrine-scripture.json`
-
-- _review_ · `blessed` · 1× · review-word
-  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
-  - …One closes it certain that God has blessed the social order exactly as it sta…
+  - …would ask hard questions about the foster care system and the hundreds of th…
+  - …ion. It looks like an adoption and foster care ministry that is as organized…
 
 ### client/public/leadership/sermons/mark.json
 `lib:client/public/leadership/sermons/mark.json`
@@ -1124,12 +922,26 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
   - …t committed same-sex unions can be blessed. This is not a gap between believe…
 
+### justice-not-political-theological
+`justice-not-political-theological`
+
+- _review_ · `authentic` · 1× · review-word
+  - forbidden as filler; 'authentic community' is a hard ban (caught separately)
+  - …). Religion without justice is not authentic religion with a deficiency. It is…
+
 ### client/public/disruption/topics/church-and-empire.json
 `lib:client/public/disruption/topics/church-and-empire.json`
 
 - _review_ · `blessed` · 1× · review-word
   - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
   - …oral center while the white church blessed the order around it. The Salvadora…
+
+### theology-of-protest
+`theology-of-protest`
+
+- _review_ · `blessed` · 1× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …waved palms and shouted "Hosanna! Blessed is he who comes in the name of the…
 
 ### Hasn't the Church Done Terrible Things?
 `apologetics-hasnt-the-church-done-terrible-things`
@@ -1138,6 +950,13 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
   - …art of the offense. The church has blessed slave ships. It has burned dissent…
 
+### scripture-meditation
+`scripture-meditation`
+
+- _review_ · `blessed` · 1× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …ceived. Psalm 1 begins there: the blessed person's delight is in the law o…
+
 ### client/public/leadership/sermons/titus.json
 `lib:client/public/leadership/sermons/titus.json`
 
@@ -1145,12 +964,26 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
   - …aches us to wait. "Waiting for our blessed hope, the appearing of the glory o…
 
+### widow-orphan-stranger
+`widow-orphan-stranger`
+
+- _review_ · `foster` · 1× · review-word
+  - literal 'foster care/parent/etc.' — almost certainly fine; flagged only because 'foster' is on the filler list
+  - …'s wage is the widow. The child in foster care is the orphan. The undocument…
+
 ### client/public/justice/witnesses.json
 `lib:client/public/justice/witnesses.json`
 
 - _review_ · `blessed` · 1× · review-word
   - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
   - …onfronting white churches that had blessed segregation. He has said himself…
+
+### pastor-politically-divided-gospel-central
+`pastor-politically-divided-gospel-central`
+
+- _review_ · `blessed` · 1× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …nds party. They will know that the blessed are the poor in spirit, not the cu…
 
 ### client/public/justice/topics/creation-care.json
 `lib:client/public/justice/topics/creation-care.json`
@@ -1166,6 +999,62 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
   - …nobody can name. The same church blessed the slave ship and read sermons ov…
 
+### 14-how-to-preach-the-same-gospel-to-people-who-are-nothing-alike
+`14-how-to-preach-the-same-gospel-to-people-who-are-nothing-alike`
+
+- _review_ · `blessed` · 1× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …with doctrine but with condition: "Blessed are the poor in spirit" (Matthew 5…
+
+### 4-the-difference-between-being-tired-and-being-done
+`4-the-difference-between-being-tired-and-being-done`
+
+- _review_ · `journey` · 1× · review-word
+  - forbidden only as a metaphor — fine if literal travel
+  - …ep — twice — and then a word: "The journey is too great for you." Not a verdi…
+
+### church-megaproject-widows-mite
+`church-megaproject-widows-mite`
+
+- _review_ · `blessed` · 1× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …the congregation was obedient, God blessed it, the building stands as a sign…
+
+### prosperity-gospel-injustice
+`prosperity-gospel-injustice`
+
+- _review_ · `blessed` · 1× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …hatic about the obligations of the blessed toward the poor. Deuteronomy 15, t…
+
+### vulnerable-people-not-in-pews
+`vulnerable-people-not-in-pews`
+
+- _review_ · `journey` · 1× · review-word
+  - forbidden only as a metaphor — fine if literal travel
+  - …e church is. They need to make the journey to our building, to enter our spac…
+
+### okay-to-see-counselor
+`okay-to-see-counselor`
+
+- _review_ · `journey` · 1× · review-word
+  - forbidden only as a metaphor — fine if literal travel
+  - …companion for the next leg of the journey (1 Kings 19:4-21). God understood…
+
+### when-preaching-gets-stale
+`when-preaching-gets-stale`
+
+- _review_ · `journey` · 1× · review-word
+  - forbidden only as a metaphor — fine if literal travel
+  - …, water, and someone who said the journey is too great for you (1 Kings 19:…
+
+### when-man-pulpit-falling-apart
+`when-man-pulpit-falling-apart`
+
+- _review_ · `journey` · 1× · review-word
+  - forbidden only as a metaphor — fine if literal travel
+  - …ther," but "arise and eat, for the journey is too great for you" (1 Kings 19:…
+
 ### client/public/justice/topics/the-prisoner.json
 `lib:client/public/justice/topics/the-prisoner.json`
 
@@ -1179,6 +1068,69 @@ _Mechanical only. A clean score means no banned words — not that the prose car
 - _review_ · `blessed` · 1× · review-word
   - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
   - …aithful. And the church built and blessed those same structures more often t…
+
+### nehemiah-rebuilding
+`nehemiah-rebuilding`
+
+- _review_ · `journey` · 1× · review-word
+  - forbidden only as a metaphor — fine if literal travel
+  - …ashamed — and Nehemiah, five days' journey away in the Persian capital of Sus…
+
+### mission-is-not-optional
+`mission-is-not-optional`
+
+- _review_ · `blessed` · 1× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …ing: "all peoples on earth will be blessed through you" (Genesis 12:3). The o…
+
+### 35-how-three-small-churches-co-planted-one-new-congregation
+`35-how-three-small-churches-co-planted-one-new-congregation`
+
+- _review_ · `journey` · 1× · review-word
+  - forbidden only as a metaphor — fine if literal travel
+  - …Barnabas on their first missionary journey (Acts 13:1-3), was not the largest…
+
+### talk-global-missions-moves-congregation
+`talk-global-missions-moves-congregation`
+
+- _review_ · `blessed` · 1× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …the nations of the earth would be blessed through his offspring (Genesis 12:…
+
+### theology-of-repair
+`theology-of-repair`
+
+- _review_ · `blessed` · 1× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …ies — including many churches that blessed the white flight and the segregate…
+
+### kingdom-of-god-not-what-you-think
+`kingdom-of-god-not-what-you-think`
+
+- _review_ · `blessed` · 1× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …he reality Jesus has inaugurated. "Blessed are the poor in spirit, for theirs…
+
+### when-god-bless-america-replaces-thy-kingdom-come
+`when-god-bless-america-replaces-thy-kingdom-come`
+
+- _review_ · `blessed` · 1× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …tion, needs the Kingdom. Not to be blessed by it in the sense of preserved an…
+
+### the-monster-in-the-mirror
+`the-monster-in-the-mirror`
+
+- _review_ · `blessed` · 1× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …the Mount's reversals of status — "blessed are the poor" — with different eye…
+
+### poor-not-ministry-category
+`poor-not-ministry-category`
+
+- _review_ · `blessed` · 1× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …ur neighborhoods. The Beatitude's "Blessed are the poor in spirit" (Matthew 5…
 
 ### Why Your Church Should Require a Sabbatical
 `why-your-church-should-require-a-sabbatical`
@@ -1201,12 +1153,40 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
   - …onsciousness that wants everything blessed or the resentment that only wants…
 
+### post-roe-church-responsibility
+`post-roe-church-responsibility`
+
+- _review_ · `foster` · 1× · review-word
+  - literal 'foster care/parent/etc.' — almost certainly fine; flagged only because 'foster' is on the filler list
+  - …ated the restrictions. Whether the foster care system that will bear some of…
+
+### mission-sending-culture-never-sent
+`mission-sending-culture-never-sent`
+
+- _review_ · `blessed` · 1× · review-word
+  - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
+  - …the families of the earth shall be blessed — into his teaching, and returns…
+
+### finding-your-barnabas
+`finding-your-barnabas`
+
+- _review_ · `journey` · 1× · review-word
+  - forbidden only as a metaphor — fine if literal travel
+  - …e John Mark on a second missionary journey, John Mark having turned back from…
+
 ### Expository vs. Topical Preaching: Which and When
 `expository-vs-topical-preaching`
 
 - _review_ · `blessed` · 1× · review-word
   - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
   - …day of the church, and the Spirit blessed the breaking. Peter at Penteco…
+
+### support-life-after-birth
+`support-life-after-birth`
+
+- _review_ · `foster` · 1× · review-word
+  - literal 'foster care/parent/etc.' — almost certainly fine; flagged only because 'foster' is on the filler list
+  - …ecific. It looks like adoption and foster care ministries that are as organi…
 
 ### client/public/disruption/topics/therapeutic-gospel.json
 `lib:client/public/disruption/topics/therapeutic-gospel.json`
@@ -1271,13 +1251,6 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
   - …Deep Roots Jeremiah describes the blessed man as a tree planted by water, se…
 
-### 47. Engaging the 'Nones' — What Research Tells Us About Reaching the Religiously Unaffiliated
-`47-engaging-the-nones-what-research-tells-us-about-reaching-the-religiously-unaffiliated`
-
-- _review_ · `journey` · 1× · review-word
-  - forbidden only as a metaphor — fine if literal travel
-  - …on. It also requires patience. The journey from "none" to genuine faith commu…
-
 ### client/public/leadership/articles/comparison-and-envy-in-ministry.json
 `lib:client/public/leadership/articles/comparison-and-envy-in-ministry.json`
 
@@ -1292,30 +1265,9 @@ _Mechanical only. A clean score means no banned words — not that the prose car
   - forbidden as an adjective ('blessed life'); fine as a verb ('God blessed them')
   - …y is self forgetfulness. It is the blessed relief of a man who has stopped ke…
 
-### What a Consistent Pro-Life Ethic Requires Beyond Opposition to Abortion
-`consistent-pro-life-ethic`
-
-- _review_ · `foster` · 1× · review-word
-  - literal 'foster care/parent/etc.' — almost certainly fine; flagged only because 'foster' is on the filler list
-  - …he maternal mortality rate, to the foster care system, to the mothers who ch…
-
-### When God Bless America Replaces Thy Kingdom Come
-`when-god-bless-america-replaces-thy-kingdom-come`
-
-- _review_ · `authentic` · 1× · review-word
-  - forbidden as filler; 'authentic community' is a hard ban (caught separately)
-  - …urch culture and what it means for authentic Christian witness.…
-
 ### The Unfinished Church: Calling, Vision, and the Future God Is Building
 `book:the-unfinished-church-calling-vision-and-the-future-god-is-building`
 
 - _review_ · `journey` · 1× · review-word
   - forbidden only as a metaphor — fine if literal travel
   - …work. Bell reflects on the churchs journey, current challenges, and Gods prom…
-
-### How I Learned to Stop Performing and Start Pastoring
-`stop-performing-start-pastoring`
-
-- _review_ · `journey` · 1× · review-word
-  - forbidden only as a metaphor — fine if literal travel
-  - …. This personal essay explores the journey from performance-driven ministry b…

@@ -272,9 +272,32 @@ function main() {
       } catch {
         continue; // skip non-content / malformed JSON
       }
+      const rel = file.slice(repoRoot.length + 1);
+      // If the file is an array of article-like objects (or { posts/articles }),
+      // harvest each item by slug so overlapping aggregate files (e.g.
+      // article-library.json vs admin-article-bodies.json) dedupe against each
+      // other and the rest of the corpus instead of inflating the counts.
+      const items = Array.isArray(data) ? data : data.posts || data.articles || null;
+      if (items && items.some((p) => p && p.body && (p.slug || p.title))) {
+        for (const p of items) {
+          if (!p || !p.body) continue;
+          add(
+            {
+              title: p.title || "",
+              slug: p.slug || "",
+              pillar: p.pillar || "library",
+              body: String(p.body).trim(),
+              published: p.published !== false,
+            },
+            dir
+          );
+        }
+        continue;
+      }
+      // Otherwise harvest the whole file's prose as one blob (guides, surveys,
+      // study materials whose prose isn't a flat article array).
       const body = pullProse(data, []).join("\n\n").trim();
       if (body.length < 200) continue; // skip config/manifest-y files
-      const rel = file.slice(repoRoot.length + 1);
       add({ title: rel, slug: `lib:${rel}`, pillar: "library", body, published: true }, dir);
     }
   }
