@@ -28,7 +28,7 @@ interface Session {
   scriptureStudy?: { ref: string; note: string }[];
   goingDeeper?: string;
   caseStudy?: string;
-  memoryVerse?: string;
+  memoryVerse?: { ref: string; text: string };
   devotional?: DevoDay[];
 }
 interface Guide {
@@ -167,7 +167,7 @@ export default function StudyGuide() {
                       {para(s.goingDeeper)}
                     </div>
                   )}
-                  {s.memoryVerse && (<><div style={{ ...lbl, marginTop: "16px" }}>Memory verse</div><p style={{ ...body, fontFamily: "var(--F)", fontSize: "17px" }}>{s.memoryVerse}</p></>)}
+                  {s.memoryVerse && (<><div style={{ ...lbl, marginTop: "16px" }}>Memory verse</div><p style={{ ...body, fontFamily: "var(--F)", fontSize: "17px" }}>{s.memoryVerse.text} <span style={{ color: "var(--ink-muted)" }}>— {s.memoryVerse.ref}</span></p></>)}
                   <div style={{ ...lbl, marginTop: "16px" }}>Closing prayer</div>
                   <p style={{ ...body, fontFamily: "var(--F)", fontSize: "17px", fontStyle: "italic" }}>{s.closingPrayer}</p>
                 </div>
@@ -180,7 +180,7 @@ export default function StudyGuide() {
                   <p style={{ ...body, marginBottom: "12px" }}>{s.summary}</p>
                   <div style={lbl}>Key Scripture</div>
                   <p style={{ ...body, marginBottom: "12px" }}>{s.keyScripture.ref}</p>
-                  {s.memoryVerse && (<><div style={lbl}>Memory verse</div><p style={{ ...body, fontFamily: "var(--F)", fontSize: "17px", marginBottom: "12px" }}>{s.memoryVerse}</p></>)}
+                  {s.memoryVerse && (<><div style={lbl}>Memory verse</div><p style={{ ...body, fontFamily: "var(--F)", fontSize: "17px", marginBottom: "12px" }}>{s.memoryVerse.text} <span style={{ color: "var(--ink-muted)" }}>— {s.memoryVerse.ref}</span></p></>)}
                   <div style={lbl}>Reflect</div>
                   {s.reflection.map((r, i) => <p key={i} style={{ ...body, marginBottom: "6px" }}>{i + 1}. {r}</p>)}
                   <div style={{ ...lbl, marginTop: "12px" }}>This week, try this</div>
