@@ -237,6 +237,24 @@ site. Keep all four blocking steps green.
   workspace.
 - Match surrounding code style; run `pnpm check` and `pnpm test` before pushing.
 
+### Working Agreement
+
+How to work in this repo, in order of weight:
+
+1. **Verify before "done."** A task is finished when it is *checked*, not when
+   the edit lands. Run `pnpm check` and `pnpm test`; for user-facing changes,
+   look at the page (or its preview). State plainly what passed and what didn't
+   — never claim green you haven't seen.
+2. **Simplicity first.** Prefer the smallest change that solves the problem.
+   This is a content-heavy, two-runtime codebase; clever abstractions cost more
+   than they save. If a fix needs a large refactor, say so before writing it.
+3. **Minimal blast radius.** Touch only what the task requires. Every change
+   should impact as little existing code as possible and introduce no incidental
+   churn (formatting, renames, reordering) outside the work.
+4. **Delegate fan-out.** For broad searches across the ~180 pages / ~75 scripts,
+   use subagents to locate things and report back the conclusion, not file dumps;
+   keep the main thread focused on the decision and the edit.
+
 ---
 
 ## Decision Log (engineering source of truth)
