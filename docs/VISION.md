@@ -70,12 +70,14 @@ no algorithm can take away.
 
 ### Tier 1 — Foundations (build on these first)
 
-1. **One taxonomy spine.** The site currently runs three overlapping systems (the
-   editorial five pillars, the code's six-pillar `PILLARS_V2`, and a legacy
-   13-track layer). A reader, a crawler, and any AI assistant all need one map.
-   Reconcile to the **five editorial pillars** as the public spine, sub-themes
-   beneath, and retire the rest. Everything downstream compounds on this. It is
-   voice-neutral — it changes filing and navigation, not a single word of prose.
+1. **One taxonomy spine.** The site runs four overlapping systems (the editorial
+   five pillars, the code's six-pillar `PILLARS_V2`, a 13-track nav layer, and a
+   legacy five-pillar fallback). A reader, a crawler, and any AI assistant all
+   need one map. **Decided (Option B, see `docs/TAXONOMY-PROPOSAL.md`):** the
+   six-pillar `PILLARS_V2` is the single public/code spine, the 13 tracks demote
+   to filters, the legacy map retires, and the editorial five stay as the
+   investment lens via a crosswalk. It is voice-neutral — it changes filing and
+   navigation, not a single word of prose. Everything downstream compounds on it.
 
 2. **The Facebook + Substack → LiveWell funnel.** Make every Facebook post and
    every Substack issue drive cleanly to the hub, and make converting a visitor

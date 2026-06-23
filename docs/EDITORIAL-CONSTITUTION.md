@@ -76,14 +76,15 @@ equal investment, quality, depth, and editorial attention.
    wisdom, revitalization, ecclesiology, church culture. *What kind of churches
    and leaders are needed for the next generation?*
 
-> **Implementation note (open decision).** These five are the editorial frame
-> for balance and investment. The *code* taxonomy spine is a separate, still-open
-> decision: the site currently runs three overlapping taxonomies (the six-pillar
-> `PILLARS_V2`, a legacy five-pillar set, and a 13-track layer — see
-> `docs/audits/content-expansion-audit.md`). Reconciling these five editorial
-> pillars with the code taxonomy has not been decided and must not be done
-> silently. Until it is, balance and depth are judged against these five; routing
-> and tagging continue under the existing system.
+> **Implementation note (decided — Option B).** These five are the editorial
+> frame for **balance and investment**. The *code* taxonomy spine is a separate
+> matter, and it is now decided: the **six-pillar `PILLARS_V2`** is the single
+> public/code spine. The 13 tracks demote to **filters** over that spine, the
+> legacy five-pillar set is retired once `pillarForPost` resolves every essay,
+> and these five editorial pillars remain the investment lens, tied to the code
+> six by the crosswalk in `docs/TAXONOMY-PROPOSAL.md`. Balance and depth are
+> still judged against these five; the spine readers and crawlers see is the six.
+> See `docs/TAXONOMY-PROPOSAL.md` for the rationale and the phased plan.
 
 ## Writing and article standard
 
