@@ -86,6 +86,25 @@ the-pastor-nobody-checks-on · when-the-calling-costs-more · burnout-is-not-a-b
 - None published yet — all await James's edit (placeholders + fact-check) and the DATABASE_URL publish step.
 
 ## Publishing note
-Nothing here is live. Going live requires the `DATABASE_URL` step: each file
-publishes with `pnpm publish:md <file> --draft`, then flips to live as James
-approves it. The `why-pastors-quit` slug collision must be resolved first.
+Nothing here is live yet — article bodies render from the database
+(`posts.getBySlug`); there is no JSON fallback for bodies. To put the library on
+the site, **one command** (built and dry-run-verified across all 45 essays):
+
+```
+# verify everything parses + placeholders strip (no DB needed):
+node scripts/publish-content-library.mjs --dry-run
+# publish all as DRAFTS for in-place review at /admin:
+DATABASE_URL=... node scripts/publish-content-library.mjs
+# or publish live:
+DATABASE_URL=... node scripts/publish-content-library.mjs --live
+```
+
+`scripts/publish-md.ts` now **strips the `[PERSONAL STORY]` placeholders** before
+writing, so they never render on the site, and runs the voice check per file.
+The essays render on-brand: Streamdown applies the article styling (mustard-rule
+H2s, Cormorant-italic blockquotes, drop-cap, reading time).
+
+Remaining gates before live: (1) connect `DATABASE_URL` in a session; (2) flip the
+relevant `readingPaths.ts`/Start-Here entries to `available` once slugs exist;
+(3) reconcile the `why-pastors-quit` slug collision; (4) James fills placeholders
++ fact-checks citations.
