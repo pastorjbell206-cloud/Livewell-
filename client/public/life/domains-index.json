@@ -31,6 +31,12 @@
       "pillar": "The Body and the Rhythms"
     },
     {
+      "slug": "sleep-and-limits",
+      "title": "Sleep and the Gift of Limits",
+      "blurb": "Every night you lie down and stop. For seven or eight hours you do nothing, produce nothing, defend nothing, and the world keeps turning without you. Sleep is the daily confession that you are a creature and not God, that finitude is not a flaw to be engineered away but a gift to be received, and that the One who holds the world does not need you awake to keep it spinning.",
+      "pillar": "The Body and the Rhythms"
+    },
+    {
       "slug": "the-body-and-the-rhythms",
       "title": "The Body and the Rhythms",
       "blurb": "A Christian vision of sleep, food, rest, and attention. The body as a gift to steward, not a project to manage. Against both neglect and obsession.",
@@ -271,9 +277,21 @@
       "pillar": "The Life in the World"
     },
     {
+      "slug": "money-and-possessions-in-society",
+      "title": "Money and Possessions in a Consumer Society",
+      "blurb": "What it means to follow Jesus with your wallet in an affluent culture that has organized your whole life around acquiring and discarding. Wealth, consumerism, the question of enough, the global neighbor, and a way of holding possessions that refuses to be captured by either side of the American argument about money.",
+      "pillar": "The Life in the World"
+    },
+    {
       "slug": "technology-and-attention",
       "title": "Technology and Attention: The Formation of the Phone",
       "blurb": "The colonized mind, attention as a spiritual battleground, and the forming of a soul in the age of the feed. What the body, the screen, and the ancient practices of the church have to say about a generation whose deepest formation is happening in its hands, six hours a day, without consent.",
+      "pillar": "The Life in the World"
+    },
+    {
+      "slug": "the-common-good-and-citizenship",
+      "title": "The Common Good and the Christian Citizen",
+      "blurb": "What it means to be a citizen of an earthly city while belonging first to another. Augustine's two cities, the call to seek the welfare of the place where God has put you, the common good above the tribe, and a public faith that refuses to be captured by any party, on the left or the right.",
       "pillar": "The Life in the World"
     },
     {
@@ -298,6 +316,18 @@
       "slug": "betrayal-and-broken-trust",
       "title": "Betrayal and Broken Trust",
       "blurb": "Being deeply wronged by someone close. The particular wound of treachery, where the knife was held by a hand you trusted. Psalm 55 and the friend who became an enemy, and the hard untangling of forgiveness, reconciliation, and rebuilt trust, which are three different things and not one.",
+      "pillar": "The Seasons and the Crises"
+    },
+    {
+      "slug": "caring-for-the-dying",
+      "title": "Caring for the Dying: The Ministry of Presence",
+      "blurb": "What it means to accompany someone all the way to the end. Hospice and palliative care, the ancient art of dying well, the ministry of simple presence when there is nothing left to fix, and the determination that no one God loves should have to die alone.",
+      "pillar": "The Seasons and the Crises"
+    },
+    {
+      "slug": "disability-and-the-different-body",
+      "title": "Disability and the Different Body",
+      "blurb": "A culture that measures human worth by usefulness, independence, and the flawless body has no honest place for the disabled, and too often the church has quietly agreed. Scripture says something the world cannot say. That the image of God is borne fully by every body, that strength is made perfect in weakness, that the parts we think weaker are indispensable, and that a community which has no room for the different body is not yet the body of Christ.",
       "pillar": "The Seasons and the Crises"
     },
     {
@@ -358,6 +388,12 @@
       "slug": "money-and-the-heart",
       "title": "Money and the Heart",
       "blurb": "Jesus named one rival god by name, and it was not lust or power. A Christian reckoning with Mammon, contentment, debt, generosity, and the freedom of enough.",
+      "pillar": "Work, Money, and Calling"
+    },
+    {
+      "slug": "retirement-and-the-last-third",
+      "title": "Retirement and the Last Third of Life",
+      "blurb": "A whole generation is being handed twenty or thirty years past the career and told the goal is endless leisure, a permanent vacation earned by forty years of work. Scripture has a different word for the last third of life. Not retirement from usefulness but a change of assignment. Not the idol of the endless vacation but fruitfulness in age, a finishing that is also a sowing, a legacy of faith handed forward before the hands let go.",
       "pillar": "Work, Money, and Calling"
     },
     {
