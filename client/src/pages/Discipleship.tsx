@@ -516,6 +516,9 @@ export default function Discipleship() {
           <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.65, color: "var(--bone)", fontStyle: "italic", margin: 0 }}>
             Thirty steps fit on a page. The life they point to does not. When the last box is checked, you will not be finished. You will be equipped, which is a different thing, and a heavier one.
           </p>
+          <div style={{ marginTop: "2rem" }}>
+            <Link href="/disciple-making" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>Now go make disciples, around a table</Link>
+          </div>
         </div>
       </section>
     </Layout>

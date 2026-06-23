@@ -1626,6 +1626,103 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
           },
         });
       }
+      case "stripe.createCheckoutSession": {
+        const stripe = getStripe();
+        if (!stripe || !stripeConfigured()) return trpcErr(res, "BAD_REQUEST", "Stripe is not configured.", 400);
+        const BOOK_PRICES: Record<number, { title: string; priceUSD: number }> = {
+          1: { title: "Book One", priceUSD: 14.99 },
+          2: { title: "Book Two", priceUSD: 16.99 },
+          3: { title: "Book Three", priceUSD: 12.99 },
+        };
+        const bookId = Number(input?.bookId);
+        const email = typeof input?.customerEmail === "string" ? input.customerEmail : "";
+        const name = typeof input?.customerName === "string" ? input.customerName : "";
+        const origin = typeof input?.origin === "string" && input.origin ? input.origin : siteOrigin(req);
+        const bp = BOOK_PRICES[bookId];
+        if (!bp) return trpcErr(res, "BAD_REQUEST", "Book " + bookId + " not found in pricing", 400);
+        const session = await stripe.checkout.sessions.create({
+          payment_method_types: ["card"],
+          line_items: [{
+            price_data: { currency: "usd", product_data: { name: bp.title, description: "Purchase of " + bp.title }, unit_amount: Math.round(bp.priceUSD * 100) },
+            quantity: 1,
+          }],
+          mode: "payment",
+          customer_email: email,
+          client_reference_id: "book_" + bookId + "_" + Date.now(),
+          metadata: { book_id: String(bookId), customer_email: email, customer_name: name },
+          success_url: origin + "/books-store?session_id={CHECKOUT_SESSION_ID}&success=true",
+          cancel_url: origin + "/books-store?canceled=true",
+          allow_promotion_codes: true,
+        });
+        await withConn((c) =>
+          c.execute(
+            "INSERT INTO book_purchases (bookId, stripePaymentIntentId, customerEmail, customerName, amountCents, status, sessionId, createdAt, updatedAt) VALUES (?, ?, ?, ?, ?, 'pending', ?, NOW(), NOW())",
+            [bookId, (session.payment_intent as string) || null, email, name, Math.round(bp.priceUSD * 100), session.id]
+          )
+        ).catch((err: any) => console.error("[stripe] purchase record failed:", err?.message));
+        return trpcOk(res, { success: true, sessionUrl: session.url || "", sessionId: session.id });
+      }
+
+      // ─── Files (admin; scoped to the admin user) ───────────────────
+      case "files.list": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const rows = await withConn(async (c) => {
+          const [r]: any = await c.execute("SELECT * FROM files WHERE userId = ? ORDER BY createdAt DESC", [1]);
+          return r as any[];
+        });
+        return trpcOk(res, rows);
+      }
+      case "files.updateDescription": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const id = Number(input?.id);
+        if (!Number.isFinite(id)) return trpcErr(res, "BAD_REQUEST", "id required", 400);
+        const description = typeof input?.description === "string" ? input.description : "";
+        const row = await withConn(async (c) => {
+          await c.execute("UPDATE files SET description = ?, updatedAt = NOW() WHERE id = ? AND userId = ?", [description, id, 1]);
+          const [r]: any = await c.execute("SELECT * FROM files WHERE id = ? AND userId = ? LIMIT 1", [id, 1]);
+          return r[0] || null;
+        });
+        return trpcOk(res, row);
+      }
+      case "files.delete": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const id = Number(input?.id);
+        if (!Number.isFinite(id)) return trpcErr(res, "BAD_REQUEST", "id required", 400);
+        await withConn((c) => c.execute("DELETE FROM files WHERE id = ? AND userId = ?", [id, 1]));
+        return trpcOk(res, { success: true });
+      }
+      case "files.upload": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const filename = typeof input?.filename === "string" ? input.filename : "";
+        const mimeType = typeof input?.mimeType === "string" ? input.mimeType : "application/octet-stream";
+        const base64Data = typeof input?.base64Data === "string" ? input.base64Data : "";
+        if (!filename || !base64Data) return trpcErr(res, "BAD_REQUEST", "filename and base64Data required", 400);
+        const buffer = Buffer.from(base64Data, "base64");
+        if (buffer.length > 16 * 1024 * 1024) return trpcErr(res, "BAD_REQUEST", "File size exceeds 16MB limit", 400);
+        const baseUrl = (process.env.BUILT_IN_FORGE_API_URL || "").replace(/\/+$/, "");
+        const apiKey = process.env.BUILT_IN_FORGE_API_KEY || "";
+        if (!baseUrl || !apiKey) return trpcErr(res, "BAD_REQUEST", "Storage proxy not configured", 400);
+        const suffix = crypto.randomBytes(9).toString("base64url");
+        const safeFilename = filename.replace(/[^a-zA-Z0-9._-]/g, "_");
+        const fileKey = "user-1/files/" + safeFilename + "-" + suffix;
+        const uploadUrl = new URL("v1/storage/upload", baseUrl + "/");
+        uploadUrl.searchParams.set("path", fileKey);
+        const form = new FormData();
+        form.append("file", new Blob([new Uint8Array(buffer)], { type: mimeType }), safeFilename);
+        const up = await fetch(uploadUrl, { method: "POST", headers: { Authorization: "Bearer " + apiKey }, body: form });
+        if (!up.ok) return trpcErr(res, "INTERNAL_SERVER_ERROR", "Storage upload failed", 500);
+        const url = (await up.json()).url;
+        const row = await withConn(async (c) => {
+          const [ins]: any = await c.execute(
+            "INSERT INTO files (userId, filename, fileKey, url, mimeType, size, description, createdAt, updatedAt) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())",
+            [1, filename, fileKey, url, mimeType, buffer.length, input?.description ?? null]
+          );
+          const [rows]: any = await c.execute("SELECT * FROM files WHERE id = ? LIMIT 1", [ins.insertId]);
+          return rows[0] || null;
+        });
+        return trpcOk(res, row);
+      }
+
       default:
         if (proc.endsWith(".listPublished") || proc.endsWith(".listAll")) return trpcOk(res, []);
         return trpcErr(res, "NOT_FOUND", "procedure not found: " + proc, 404);
