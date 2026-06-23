@@ -106,7 +106,7 @@ export default function FormationGuides() {
                 <p style={{ fontFamily: "var(--F)", fontSize: "19px", fontStyle: "italic", color: "var(--ink-muted)", margin: "0 0 18px" }}>{s.headline}</p>
 
                 {s.teaching && (
-                  <div className="handbook-body" style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.8, color: "var(--ink)", marginBottom: "26px" }}>
+                  <div className="article-body prose-section" style={{ marginBottom: "26px" }}>
                     <Streamdown>{s.teaching}</Streamdown>
                   </div>
                 )}
