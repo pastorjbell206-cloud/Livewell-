@@ -39,17 +39,19 @@ Current titles (SEO-optimized; slugs unchanged so links never break):
 
 _Register: modern/accessible (Comer) + Keller architecture (steel-man → bold early thesis → build) + sharper edge + SEO (search-optimized titles, decks, meta descriptions, keyword sets, 6 substantive H2s each, bolded pull-lines). All pass the voice gate (the "authentic" warnings in two are the critiqued concept). Each keeps one `[PERSONAL STORY]` placeholder; scholar citations need James's fact-check (flagged in review). The repeated "here is the claim" lead-in was de-duplicated across the set._
 
-## Pillar 2 — Capture by the Right  (drafts pending — see content-library.md)
-| Essay | slug | Status |
-|---|---|---|
-| The Flag in the Sanctuary: How It Got There | the-flag-in-the-sanctuary | PLANNED |
-| Two Kingdoms, One Pledge | two-kingdoms-one-pledge | PLANNED |
-| The Persecution We Invented | the-persecution-we-invented | PLANNED |
-| Strongman Theology | strongman-theology | PLANNED |
-| Nostalgia Is Not the Kingdom | nostalgia-is-not-the-kingdom | PLANNED |
-| The Third Temptation | the-third-temptation | PLANNED |
-| Six Verses We Memorized, Sixty We Skipped | six-verses-we-memorized | PLANNED |
-| When the Pulpit Became a Precinct | when-the-pulpit-became-a-precinct | PLANNED |
+## Pillar 2 — Capture by the Right  (DRAFTED to the bar ✓, modern-Keller-SEO register)
+| Essay | slug | Words | Status |
+|---|---|---:|---|
+| The Flag in the Sanctuary: How It Got There | the-flag-in-the-sanctuary | 2,793 | **DRAFTED** ✓ |
+| Two Kingdoms, One Pledge | two-kingdoms-one-pledge | 2,813 | **DRAFTED** ✓ |
+| The Persecution We Invented | the-persecution-we-invented | 2,765 | **DRAFTED** ✓ |
+| Strongman Theology | strongman-theology | 2,713 | **DRAFTED** ✓ |
+| Nostalgia Is Not the Kingdom | nostalgia-is-not-the-kingdom | 2,906 | **DRAFTED** ✓ |
+| The Third Temptation | the-third-temptation | 2,757 | **DRAFTED** ✓ |
+| Six Verses We Memorized, Sixty We Skipped | six-verses-we-memorized | 2,849 | **DRAFTED** ✓ |
+| When the Pulpit Became a Precinct | when-the-pulpit-became-a-precinct | 2,804 | **DRAFTED** ✓ |
+
+_In `content/drafts/capture-right/`. Voice gate clean, dry-run publish-ready, one `[PERSONAL STORY]` placeholder each. Citations need fact-check (the Bonhoeffer 1933 radio-address detail and the Moral Majority 1979 framing are the two to confirm)._
 
 ## The "struggling" flows — ALL EXPANDED to the long-form bar (37) ✓
 All **EXPANDED** (~2,300–2,600 words each), in `content/drafts/`, in the modern-Keller-SEO register (edge dialed to pastoral; warmth-foremost for grief + marriage-crisis). New SEO titles, decks, meta descriptions, keyword sets, substantive H2s. Each keeps a `[PERSONAL STORY]` placeholder; citations need James's fact-check. Voice gate clean across all 37.
@@ -77,13 +79,13 @@ the-pastor-nobody-checks-on · when-the-calling-costs-more · burnout-is-not-a-b
 ---
 
 ## In flight right now
-- Nothing in flight. Capture by the Left (8) + all 37 struggling-flow essays are expanded to the bar.
-- Next up (on your go): Capture by the Right (8 to draft), then the later pillars (Scripture-past-politics lens essays, After-Christendom arc, pastoral bridges).
+- Nothing in flight. Both political-capture pillars + all 37 struggling-flow essays are at the bar.
+- Next up (on your go): the later pillars (Scripture-past-politics lens essays, After-Christendom arc, pastoral bridges) — OR connect DATABASE_URL and publish the library.
 
 ## Tallies
-- Long-form at the bar: **45** (8 Capture-Left + 37 struggling-flow)
-- Planned: Capture-Right (8) + later pillars (~15)
-- None published yet — all await James's edit (placeholders + fact-check) and the DATABASE_URL publish step.
+- Long-form at the bar: **53** (8 Capture-Left + 8 Capture-Right + 37 struggling-flow)
+- Planned: later pillars (~15)
+- None published yet — all await James's edit (placeholders + fact-check) and the DATABASE_URL publish step. `node scripts/publish-content-library.mjs --dry-run` = 53/53 clean.
 
 ## Publishing note
 Nothing here is live yet — article bodies render from the database
