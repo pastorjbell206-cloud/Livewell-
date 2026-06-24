@@ -2,7 +2,7 @@ import { parseFeed } from "./feed-parser";
 import { createSyndicatedArticle } from "./db-syndication";
 
 const FEED_URLS = {
-  substack: "https://jamesbell.substack.com/feed", // Replace with actual Substack feed URL
+  substack: "https://jamesbell333289.substack.com/feed",
   pastorsConnection: "https://www.pastorsconnection.com/feed", // Replace with actual Pastors Connection feed URL
 };
 

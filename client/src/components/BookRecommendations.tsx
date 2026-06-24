@@ -38,7 +38,7 @@ export default function BookRecommendations({
         <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-2" style={{ color: "var(--mustard)" }}>
           Explore More
         </div>
-        <h3 className="font-display text-2xl font-bold" style={{ color: "#1A1A1A" }}>
+        <h3 className="font-display text-2xl font-bold" style={{ color: "var(--ink)" }}>
           You Might Also Like
         </h3>
       </div>
@@ -59,7 +59,7 @@ export default function BookRecommendations({
                   </div>
                 )}
                 <div className="p-4" style={{ backgroundColor: "#FFFFFF" }}>
-                  <h4 className="font-display text-base font-bold mb-1 line-clamp-2" style={{ color: "#1A1A1A" }}>
+                  <h4 className="font-display text-base font-bold mb-1 line-clamp-2" style={{ color: "var(--ink)" }}>
                     {book.title}
                   </h4>
                   {book.author && (

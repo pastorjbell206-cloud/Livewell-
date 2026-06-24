@@ -18,7 +18,7 @@ interface ArticleCardProps {
 
 const PILLAR_COLORS: Record<string, { bg: string; text: string; icon: string }> = {
   "Prophetic Disruption": {
-    bg: "bg-[#1A1A1A]",
+    bg: "bg-[var(--charcoal)]",
     text: "text-white",
     icon: "",
   },

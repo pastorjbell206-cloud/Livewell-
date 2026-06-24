@@ -17,6 +17,25 @@ dotenv.config();
 const BASE_URL = "https://www.livewellbyjamesbell.co";
 const OUTPUT_PATH = "client/public/sitemap.xml";
 
+// The static essay library (served by api/index.ts behind the live DB). These
+// slugs resolve at /writing/:slug even though they aren't DB rows, so they
+// belong in the sitemap. DB articles win on slug collision (merged below).
+function loadStaticLibrary() {
+  try {
+    const raw = fs.readFileSync("content/static-library.generated.json", "utf8");
+    return JSON.parse(raw).map(r => ({ slug: r.slug, updatedAt: r.updatedAt }));
+  } catch {
+    return [];
+  }
+}
+const STATIC_ARTICLES = loadStaticLibrary();
+
+function mergeArticles(dbArticles) {
+  const have = new Set((dbArticles || []).map(a => a.slug));
+  const extra = STATIC_ARTICLES.filter(a => !have.has(a.slug));
+  return [...(dbArticles || []), ...extra];
+}
+
 const STATIC_PAGES = [
   { url: "", priority: "1.0", changefreq: "weekly" },
   { url: "/writing", priority: "0.9", changefreq: "daily" },
@@ -160,7 +179,7 @@ function buildXml(staticPages, articles, books, readingPaths) {
 async function main() {
   if (!process.env.DATABASE_URL) {
     console.warn("[sitemap] DATABASE_URL not set — writing fallback sitemap (static pages only)");
-    const xml = buildXml(STATIC_PAGES, [], [], []);
+    const xml = buildXml(STATIC_PAGES, mergeArticles([]), [], []);
     fs.writeFileSync(OUTPUT_PATH, xml);
     return;
   }
@@ -173,7 +192,7 @@ async function main() {
     });
   } catch (err) {
     console.warn(`[sitemap] DB connect failed (${err.message}) — writing fallback sitemap`);
-    fs.writeFileSync(OUTPUT_PATH, buildXml(STATIC_PAGES, [], [], []));
+    fs.writeFileSync(OUTPUT_PATH, buildXml(STATIC_PAGES, mergeArticles([]), [], []));
     return;
   }
 
@@ -195,7 +214,7 @@ async function main() {
       // table may not exist on legacy DBs — skip silently
     }
 
-    const xml = buildXml(STATIC_PAGES, articles, books, readingPaths);
+    const xml = buildXml(STATIC_PAGES, mergeArticles(articles), books, readingPaths);
     fs.writeFileSync(OUTPUT_PATH, xml);
 
     console.log("[sitemap] generated");
@@ -212,6 +231,6 @@ async function main() {
 main().catch(err => {
   console.error("[sitemap] failed:", err.message);
   // write fallback so build doesn't break
-  fs.writeFileSync(OUTPUT_PATH, buildXml(STATIC_PAGES, [], [], []));
+  fs.writeFileSync(OUTPUT_PATH, buildXml(STATIC_PAGES, mergeArticles([]), [], []));
   process.exit(0);
 });

@@ -9,7 +9,7 @@ import { trpc } from "@/lib/trpc";
  * paint still renders a sensible number.
  */
 export function useArticleCount(): { count: number; display: string } {
-    const { data } = trpc.posts.listPublished.useQuery(undefined, {
+    const { data } = trpc.posts.listForIndex.useQuery(undefined, {
           staleTime: 1000 * 60 * 10,
     });
     const raw = Array.isArray(data) ? data.length : 160;

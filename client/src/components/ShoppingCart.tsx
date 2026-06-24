@@ -66,7 +66,7 @@ export function ShoppingCart() {
         onClick={() => setIsOpen(!isOpen)}
         className="relative p-2 hover:bg-gray-100 rounded-lg transition-colors"
       >
-        <CartIcon size={24} style={{ color: "#1A1A1A" }} />
+        <CartIcon size={24} style={{ color: "var(--ink)" }} />
         {cartItems.length > 0 && (
           <span
             className="absolute top-0 right-0 w-5 h-5 rounded-full text-xs font-bold flex items-center justify-center text-white"
@@ -81,8 +81,8 @@ export function ShoppingCart() {
       {isOpen && (
         <div className="fixed right-0 top-0 h-full w-96 bg-white shadow-xl z-50 flex flex-col">
           {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b" style={{ borderColor: "#D1C9BB" }}>
-            <h2 className="font-display text-xl font-bold" style={{ color: "#1A1A1A" }}>
+          <div className="flex items-center justify-between p-6 border-b" style={{ borderColor: "var(--line)" }}>
+            <h2 className="font-display text-xl font-bold" style={{ color: "var(--ink)" }}>
               Shopping Cart
             </h2>
             <button onClick={() => setIsOpen(false)} className="p-1 hover:bg-gray-100 rounded">
@@ -96,9 +96,9 @@ export function ShoppingCart() {
               <p style={{ color: "var(--ink-muted)" }}>Your cart is empty</p>
             ) : (
               cartItems.map((item) => (
-                <div key={item.bookId} className="flex gap-4 pb-4 border-b" style={{ borderColor: "#D1C9BB" }}>
+                <div key={item.bookId} className="flex gap-4 pb-4 border-b" style={{ borderColor: "var(--line)" }}>
                   <div className="flex-1">
-                    <h3 className="font-semibold" style={{ color: "#1A1A1A" }}>
+                    <h3 className="font-semibold" style={{ color: "var(--ink)" }}>
                       {item.title}
                     </h3>
                     <p style={{ color: "var(--ink-muted)" }}>${item.price.toFixed(2)}</p>
@@ -131,8 +131,8 @@ export function ShoppingCart() {
 
           {/* Footer */}
           {cartItems.length > 0 && (
-            <div className="border-t p-6 space-y-4" style={{ borderColor: "#D1C9BB" }}>
-              <div className="flex justify-between text-lg font-bold" style={{ color: "#1A1A1A" }}>
+            <div className="border-t p-6 space-y-4" style={{ borderColor: "var(--line)" }}>
+              <div className="flex justify-between text-lg font-bold" style={{ color: "var(--ink)" }}>
                 <span>Total:</span>
                 <span>${total.toFixed(2)}</span>
               </div>

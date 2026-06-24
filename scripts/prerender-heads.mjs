@@ -31,7 +31,9 @@ const DIST_DIR = path.join(REPO_ROOT, "dist/public");
 const SITE_URL = "https://www.livewellbyjamesbell.co";
 const SITE_NAME = "LiveWell by James Bell";
 const AUTHOR_NAME = "James Bell";
-const OG_DEFAULT = `${SITE_URL}/og-default.png`;
+// Branded default card rendered by the dynamic OG Edge function (api/og.tsx).
+// There is no static og-default.png in the repo; this endpoint always renders.
+const OG_DEFAULT = ogImageUrl("LiveWell by James Bell", "Theology for everyday life");
 const FALLBACK_DESC =
   "Theology that carries the weight of everyday life. Essays on faith, justice, marriage, parenting, and pastoral ministry by James Bell.";
 
@@ -124,6 +126,15 @@ const STATIC_PAGES = [
   },
 ];
 
+// Dynamic per-essay Open Graph card via the /api/og Edge function (api/og.tsx).
+// Mirrors client/src/lib/site.ts → ogImageUrl so essays without a coverImage
+// still get a unique branded social card instead of a missing static image.
+function ogImageUrl(title, pillar) {
+  const params = new URLSearchParams({ title });
+  if (pillar) params.set("pillar", pillar);
+  return `${SITE_URL}/api/og?${params.toString()}`;
+}
+
 function personSchema() {
   return {
     "@context": "https://schema.org",
@@ -172,7 +183,33 @@ function webSiteSchema() {
   };
 }
 
+// Strip common Markdown syntax to plain text so the JSON-LD articleBody is
+// readable prose for non-JS / AI crawlers. Best-effort; not a full parser.
+function markdownToPlainText(md) {
+  return String(md ?? "")
+    .replace(/```[\s\S]*?```/g, " ")          // fenced code blocks
+    .replace(/`([^`]+)`/g, "$1")               // inline code
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")     // images
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")   // links → text
+    .replace(/^\s{0,3}#{1,6}\s+/gm, "")         // ATX headings
+    .replace(/^\s{0,3}>\s?/gm, "")              // blockquotes
+    .replace(/^\s{0,3}[-*+]\s+/gm, "")          // bullet markers
+    .replace(/^\s{0,3}\d+\.\s+/gm, "")          // ordered markers
+    .replace(/(\*\*|__)(.*?)\1/g, "$2")         // bold
+    .replace(/(\*|_)(.*?)\1/g, "$2")            // italic
+    .replace(/~~(.*?)~~/g, "$1")                // strikethrough
+    .replace(/^\s{0,3}([-*_])\s*(\1\s*){2,}$/gm, " ") // hr
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function countWords(text) {
+  const t = String(text ?? "").trim();
+  return t ? t.split(/\s+/).length : 0;
+}
+
 function articleSchema(post, url, image) {
+  const bodyText = markdownToPlainText(post.body);
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -180,12 +217,15 @@ function articleSchema(post, url, image) {
     description: post.excerpt || post.title,
     image: image || OG_DEFAULT,
     url,
+    inLanguage: "en",
     datePublished: post.publishedAt
       ? new Date(post.publishedAt).toISOString()
       : new Date(post.createdAt).toISOString(),
     dateModified: post.updatedAt
       ? new Date(post.updatedAt).toISOString()
       : new Date(post.createdAt).toISOString(),
+    ...(post.pillar ? { articleSection: post.pillar } : {}),
+    ...(bodyText ? { articleBody: bodyText, wordCount: countWords(bodyText) } : {}),
     author: {
       "@type": "Person",
       name: AUTHOR_NAME,
@@ -366,11 +406,14 @@ async function main() {
   if (conn) {
     try {
       const [posts] = await conn.query(
-        "SELECT slug, title, excerpt, coverImage, publishedAt, updatedAt, createdAt FROM posts WHERE published = true"
+        "SELECT slug, title, excerpt, pillar, body, coverImage, publishedAt, updatedAt, createdAt FROM posts WHERE published = true"
       );
       for (const post of posts) {
         const url = `${SITE_URL}/writing/${post.slug}`;
-        const image = post.coverImage || OG_DEFAULT;
+        // Use the essay's own cover when present; otherwise render a per-essay
+        // branded card from its title (+ pillar) via the dynamic OG endpoint.
+        const image =
+          post.coverImage || ogImageUrl(post.title, post.pillar || undefined);
         const description = post.excerpt || post.title;
         const publishedIso = post.publishedAt
           ? new Date(post.publishedAt).toISOString()
