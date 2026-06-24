@@ -9,7 +9,7 @@ import { trpc } from "@/lib/trpc";
 const READING_PATH_CONFIGS: Record<string, { title: string; description: string; topics: string[] }> = {
   "pastors-guide": {
     title: "A Pastor's Guide to Thriving",
-    description: "Essential reading for navigating ministry, leadership challenges, and personal spiritual health",
+    description: "Essential reading for ministry, leadership challenges, and personal spiritual health",
     topics: ["leadership", "spiritual-formation"],
   },
   "church-leadership": {

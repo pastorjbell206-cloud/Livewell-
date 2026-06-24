@@ -66,7 +66,7 @@ export default function WorkWithJames() {
               </h2>
               {[
                 { title: "Speaking & Preaching", desc: "Conferences, retreats, revivals, and pulpit supply. Theological depth meets pastoral warmth." },
-                { title: "Pastoral Coaching", desc: "One-on-one coaching for pastors navigating burnout, church conflict, leadership development, or personal growth." },
+                { title: "Pastoral Coaching", desc: "One-on-one coaching for pastors facing burnout, church conflict, leadership development, or personal growth." },
                 { title: "Church Consulting", desc: "Strategic planning, revitalization assessment, leadership team development, and ministry audit." },
                 { title: "Writing & Ghostwriting", desc: "Book development, sermon series resources, curriculum writing, and collaborative projects." },
               ].map((s) => (

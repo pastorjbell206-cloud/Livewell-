@@ -323,7 +323,7 @@ const BOOKS: BibleBook[] = [
         ],
         literary: {
           genre: "Covenant law / treaty stipulations. The Ten Commandments are not a legal code in the modern sense. They are the terms of a relationship between a liberating God and a liberated people. The genre is relational before it is legal.",
-          devices: "The prologue establishes the relationship before the requirements. The commands move from God-directed (1-4) to human-directed (5-10), establishing vertical relationship as the foundation for horizontal ethics. The tenth command (coveting) turns inward, making the list a journey from worship to the human heart.",
+          devices: "The prologue establishes the relationship before the requirements. The commands move from God-directed (1-4) to human-directed (5-10), establishing vertical relationship as the foundation for horizontal ethics. The tenth command (coveting) turns inward, making the list a movement from worship to the human heart.",
           keyTerms: [
             { term: "anokhi", language: "Hebrew", meaning: "'I myself.' The emphatic first person pronoun. God does not begin with 'You must.' He begins with 'I am.' The commands are grounded in God's character, not human capacity." },
             { term: "berith", language: "Hebrew", meaning: "'Covenant.' The Ten Commandments are covenant stipulations, not abstract moral principles. They make sense only inside a relationship. Outside the covenant, they are just rules. Inside it, they are the shape of love." },
@@ -545,7 +545,7 @@ const BOOKS: BibleBook[] = [
           "The names Shadrach, Meshach, and Abednego are Babylonian names assigned to replace their Hebrew names (Hananiah, Mishael, Azariah). The empire renames you before it tries to reshape you. The first act of assimilation is the loss of your name. But the three men carried their Hebrew identity beneath their Babylonian labels.",
         ],
         literary: {
-          genre: "Court tale / resistance narrative. Daniel 1-6 consists of court tales: stories of Jewish exiles navigating the dangers of foreign imperial service while maintaining faithfulness to God. The genre exists to answer the question: how do you live faithfully when the empire controls everything except your conscience?",
+          genre: "Court tale / resistance narrative. Daniel 1-6 consists of court tales: stories of Jewish exiles facing the dangers of foreign imperial service while maintaining faithfulness to God. The genre exists to answer the question: how do you live faithfully when the empire controls everything except your conscience?",
           devices: "Repetition (the list of officials and instruments is repeated to comic effect, satirizing imperial bureaucracy), irony (the fire meant to destroy becomes the place of divine encounter), contrast (the empire's coercion versus the exiles' calm defiance), the 'even if he does not' as narrative pivot.",
           keyTerms: [
             { term: "tselem", language: "Aramaic", meaning: "'Image, statue.' The same root as the 'image of God' in Genesis 1 (tselem Elohim). The empire builds its own image and demands worship. The theological conflict is between two images: God's image borne by humans, and the empire's image demanding human submission." },
