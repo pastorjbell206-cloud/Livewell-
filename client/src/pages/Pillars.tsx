@@ -1,165 +1,194 @@
-/**
- * Pillars (/pillars) — the five content pillars as the top-level browse lens.
- *
- * Presentation only; the pillars and their essay-matching rules live in
- * lib/pillars.ts. Each pillar links to /writing?pillar=<slug>, which filters
- * the archive to that pillar's essays.
- */
-import { Link } from "wouter";
-
 import Layout from "@/components/Layout";
-import { SEOMeta } from "@/components/SEOMeta";
-import { PILLARS } from "@/lib/pillars";
+import { ArrowRight } from "lucide-react";
+import { Link } from "wouter";
+import { useMemo } from "react";
+import { trpc } from "@/lib/trpc";
+import {
+  MOVEMENTS,
+  PILLARS_BY_MOVEMENT,
+  pillarUrl,
+  pillarForPost,
+  type Movement,
+} from "@/lib/taxonomy";
+
+const MOVEMENT_ORDER: Movement[] = ["diagnosis", "formation"];
 
 export default function Pillars() {
+  const postsQuery = trpc.posts.listPublished.useQuery();
+  const counts = useMemo(() => {
+    const c: Record<number, number> = {};
+    for (const p of postsQuery.data ?? []) {
+      const pl = pillarForPost(p);
+      if (pl) c[pl.id] = (c[pl.id] ?? 0) + 1;
+    }
+    return c;
+  }, [postsQuery.data]);
+
   return (
     <Layout>
-      <SEOMeta
-        title="The Five Pillars — LiveWell by James Bell"
-        description="Five lenses on the work: capture by the right, capture by the left, reading Scripture past our politics, after Christendom, and the pastoral angle."
-        url="https://www.livewellbyjamesbell.co/pillars"
-        type="website"
-      />
-
-      {/* HEADER */}
-      <section style={{ background: "var(--charcoal)", padding: "5rem 1.5rem 4rem" }}>
+      <div style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
-          <div
-            style={{
-              fontFamily: "var(--U)",
-              fontSize: "11px",
-              fontWeight: 600,
-              textTransform: "uppercase",
-              letterSpacing: "0.2em",
-              color: "var(--mustard)",
-              marginBottom: "1.5rem",
-            }}
-          >
-            The archive, by theme
-          </div>
-          <h1
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "clamp(2.25rem, 5vw, 3.25rem)",
-              fontWeight: 400,
-              lineHeight: 1.05,
-              letterSpacing: "-0.025em",
-              color: "var(--bone)",
-              marginBottom: "1.25rem",
-            }}
-          >
-            Five pillars
-          </h1>
-          <p
-            style={{
-              fontFamily: "var(--B)",
-              fontSize: "1.0625rem",
-              lineHeight: 1.7,
-              color: "var(--bone)",
-              opacity: 0.78,
-              maxWidth: "60ch",
-            }}
-          >
-            The places where Scripture and American politics collide — and the
-            pastoral work of holding the line between them. Pick a pillar to read
-            the essays that live there.
-          </p>
-        </div>
-      </section>
-
-      {/* PILLARS */}
-      <section style={{ background: "var(--bone)", padding: "4rem 1.5rem 5rem" }}>
-        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
-          {PILLARS.map((pillar, i) => (
-            <Link
-              key={pillar.slug}
-              href={`/writing?pillar=${pillar.slug}`}
-              style={{ display: "block", textDecoration: "none" }}
+          {/* Header */}
+          <div style={{ textAlign: "center", marginBottom: "var(--s-6)" }}>
+            <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>
+              The Library
+            </div>
+            <h1
+              style={{
+                fontFamily: "var(--F)",
+                fontSize: "clamp(36px, 5vw, 56px)",
+                fontWeight: 400,
+                letterSpacing: "-0.02em",
+                lineHeight: 1.1,
+                color: "var(--ink)",
+                marginBottom: "20px",
+              }}
             >
-              <article
+              Two movements. Six pillars.
+            </h1>
+            <p
+              style={{
+                fontFamily: "var(--B)",
+                fontSize: "19px",
+                lineHeight: 1.7,
+                color: "var(--ink-muted)",
+                maxWidth: "60ch",
+                margin: "0 auto",
+              }}
+            >
+              The writing moves in two motions — first the diagnosis of what was
+              lost and why, then the formation of how to live well on the other
+              side. Every essay is filed under one of six pillars.
+            </p>
+          </div>
+
+          {/* Movements → pillars */}
+          {MOVEMENT_ORDER.map(movement => (
+            <section key={movement} style={{ marginBottom: "var(--s-6)" }}>
+              <div
                 style={{
-                  borderTop: i === 0 ? "1px solid var(--border)" : "none",
                   borderBottom: "1px solid var(--border)",
-                  padding: "2rem 0",
-                  display: "flex",
-                  gap: "1.5rem",
-                  alignItems: "baseline",
+                  paddingBottom: "12px",
+                  marginBottom: "var(--s-4)",
                 }}
               >
-                <span
-                  aria-hidden
+                <h2
+                  style={{
+                    fontFamily: "var(--F)",
+                    fontSize: "32px",
+                    fontWeight: 500,
+                    letterSpacing: "-0.01em",
+                    color: "var(--ink)",
+                  }}
+                >
+                  {MOVEMENTS[movement].title}
+                </h2>
+                <p
                   style={{
                     fontFamily: "var(--U)",
-                    fontSize: "0.8rem",
-                    fontWeight: 600,
-                    letterSpacing: "0.08em",
+                    fontSize: "13px",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.16em",
                     color: "var(--mustard-text)",
-                    flexShrink: 0,
-                    minWidth: "2rem",
+                    marginTop: "6px",
                   }}
                 >
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <div style={{ flex: 1, minWidth: 0 }}>
-                  <h2
+                  {MOVEMENTS[movement].subtitle}
+                </p>
+              </div>
+
+              <div style={{ display: "grid", gap: "20px" }}>
+                {PILLARS_BY_MOVEMENT[movement].map(pillar => (
+                  <Link
+                    key={pillar.id}
+                    href={pillarUrl(pillar.slug)}
                     style={{
-                      fontFamily: "var(--F)",
-                      fontSize: "clamp(1.5rem, 3vw, 2rem)",
-                      fontWeight: 400,
-                      lineHeight: 1.15,
-                      letterSpacing: "-0.02em",
-                      color: "var(--ink)",
-                      margin: "0 0 0.5rem",
+                      display: "block",
+                      background: "var(--card)",
+                      border: "1px solid var(--border)",
+                      borderLeft: "3px solid var(--mustard)",
+                      borderRadius: "var(--radius-sm)",
+                      padding: "24px 28px",
+                      textDecoration: "none",
+                      transition: "border-color 0.2s",
                     }}
                   >
-                    {pillar.title}
-                  </h2>
-                  <p
-                    style={{
-                      fontFamily: "var(--B)",
-                      fontSize: "1rem",
-                      lineHeight: 1.7,
-                      color: "var(--ink-muted)",
-                      maxWidth: "64ch",
-                      margin: 0,
-                    }}
-                  >
-                    {pillar.description}
-                  </p>
-                </div>
-                <span
-                  aria-hidden
-                  style={{
-                    fontFamily: "var(--U)",
-                    fontSize: "1.1rem",
-                    color: "var(--mustard)",
-                    flexShrink: 0,
-                  }}
-                >
-                  →
-                </span>
-              </article>
-            </Link>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "baseline",
+                        justifyContent: "space-between",
+                        gap: "16px",
+                      }}
+                    >
+                      <h3
+                        style={{
+                          fontFamily: "var(--F)",
+                          fontSize: "24px",
+                          fontWeight: 500,
+                          letterSpacing: "-0.01em",
+                          color: "var(--ink)",
+                        }}
+                      >
+                        <span style={{ color: "var(--mustard-text)", marginRight: "10px" }}>
+                          {pillar.id}
+                        </span>
+                        {pillar.name}
+                      </h3>
+                      <div style={{ display: "flex", alignItems: "center", gap: "12px", flexShrink: 0 }}>
+                        <span
+                          style={{
+                            fontFamily: "var(--U)",
+                            fontSize: "12px",
+                            color: "var(--ink-muted)",
+                            whiteSpace: "nowrap",
+                          }}
+                        >
+                          {counts[pillar.id] ?? 0} {counts[pillar.id] === 1 ? "essay" : "essays"}
+                        </span>
+                        <ArrowRight size={18} aria-hidden style={{ color: "var(--ink-muted)" }} />
+                      </div>
+                    </div>
+                    {/* Intro placeholder — James supplies the final on-voice copy. */}
+                    <p
+                      style={{
+                        fontFamily: "var(--B)",
+                        fontSize: "15px",
+                        lineHeight: 1.6,
+                        color: "var(--ink-muted)",
+                        marginTop: "10px",
+                        fontStyle: "italic",
+                      }}
+                    >
+                      {pillar.blurb}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </section>
           ))}
 
-          <div style={{ marginTop: "3rem" }}>
+          {/* CTA */}
+          <div style={{ textAlign: "center", marginTop: "var(--s-5)" }}>
             <Link
               href="/writing"
               style={{
+                display: "inline-block",
+                padding: "14px 28px",
+                background: "var(--ink)",
+                color: "var(--bone)",
+                borderRadius: "var(--radius-sm)",
                 fontFamily: "var(--U)",
-                fontSize: "0.875rem",
-                fontWeight: 500,
-                color: "var(--mustard-text)",
+                fontWeight: 600,
+                fontSize: "14px",
                 textDecoration: "none",
-                borderBottom: "1px solid var(--mustard)",
-                paddingBottom: "0.25rem",
               }}
             >
-              Or read every essay
+              Read every essay
             </Link>
           </div>
         </div>
-      </section>
+      </div>
     </Layout>
   );
 }

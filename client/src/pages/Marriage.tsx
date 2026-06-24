@@ -8,40 +8,40 @@ export default function Marriage() {
 
   const FEATURED_ARTICLES = [
     {
-      title: "When You Married Someone You No Longer Recognize",
-      slug: "when-you-married-someone-you-no-longer-recognize",
+      title: "Covenant vs. Contract: What Marriage Actually Is",
+      slug: "covenant-vs-contract-what-marriage-is",
       topic: "Marriage",
-      readTime: "8 min read"
+      readTime: "18 min read"
     },
     {
-      title: "The Slow Drift That Ends More Marriages Than Dramatic Betrayal Does",
-      slug: "the-slow-drift-that-ends-marriages",
-      topic: "Marriage",
-      readTime: "10 min read"
-    },
-    {
-      title: "The Resentment in Your Marriage Is Telling You Something Worth Hearing",
-      slug: "the-resentment-in-your-marriage",
+      title: "Communication That Actually Works",
+      slug: "marriage-communication-that-works",
       topic: "Marriage",
       readTime: "9 min read"
     },
     {
-      title: "What the Bible Actually Says About Submission and What It Doesn't",
-      slug: "what-the-bible-says-about-submission",
+      title: "Fighting Fair: Conflict Without Casualties",
+      slug: "marriage-fighting-fair",
       topic: "Marriage",
-      readTime: "12 min read"
+      readTime: "9 min read"
     },
     {
-      title: "When One Spouse Carries the Emotional Labor and the Other Doesn't Know It",
-      slug: "emotional-labor-in-marriage",
+      title: "Forgiveness in Marriage: How to Actually Do It",
+      slug: "forgiveness-in-marriage",
       topic: "Marriage",
       readTime: "11 min read"
     },
     {
-      title: "Protecting Your Marriage When Ministry Demands Everything",
-      slug: "protecting-marriage-in-ministry",
+      title: "Money and Marriage",
+      slug: "marriage-money-and-marriage",
       topic: "Marriage",
-      readTime: "10 min read"
+      readTime: "9 min read"
+    },
+    {
+      title: "Protecting Your Marriage From the Demands of Work",
+      slug: "protecting-your-marriage-from-work",
+      topic: "Marriage",
+      readTime: "12 min read"
     }
   ];
 
@@ -49,17 +49,17 @@ export default function Marriage() {
     {
       title: "Marriage Covenant",
       description: "What covenant means, what you promised, and how to keep vows when love feels impossible.",
-      articles: 8
+      articles: 5
     },
     {
       title: "Communication & Conflict",
       description: "How to fight fair, have the conversations you've been avoiding, and repair after rupture.",
-      articles: 12
+      articles: 8
     },
     {
       title: "Marriage in Ministry",
       description: "The unique pressures pastors' marriages face and how to protect your partnership.",
-      articles: 6
+      articles: 4
     }
   ];
 
@@ -171,6 +171,9 @@ export default function Marriage() {
               Take the Assessment
             </button>
           </Link>
+          <div style={{ marginTop: "20px" }}>
+            <Link href="/life/marriage-the-long-covenant" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none" }}>Or read the deep guide: Marriage, the Long Covenant</Link>
+          </div>
         </div>
       </section>
 

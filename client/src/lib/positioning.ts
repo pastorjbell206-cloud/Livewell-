@@ -12,24 +12,20 @@
  */
 
 export const PRIMARY_HEADLINE =
-  "A pastor's long-form reckoning with American Christianity — left and right.";
+  "Theology that carries the weight of everyday life.";
 
 export const PRIMARY_KICKER = "New essays weekly";
 
 export const PRIMARY_SUBHEAD =
-  "Pastor and essayist writing on theology, politics, and the American church after Christendom. Tracing the collapse of cultural Christianity, the rise of Christian nationalism, and the blind spots distorting left and right.";
+  "After Christendom essays on theology, politics, and the American church — and the actual Tuesday afternoon of marriage, money, parenting, manhood, womanhood, doubt, and pastoring. From a pastor and essayist tracing the collapse of cultural Christianity, the rise of Christian nationalism, and the long work of forming people who can carry weight.";
 
-export const SHORT_BIO =
-  "James Bell is Lead Pastor of First Baptist Church of Fenton and founder of the Pastors Connection Network. He came to faith from atheism, was raised without a father, and has five sons. He writes where ancient Christianity meets the Tuesday afternoon — the biblical text in its own world, justice as a doctrine of God, and living well in a contested age — and is the author of twenty-five books.";
+// Shortened two-sentence hero subhead (variant A). Same claims as the long
+// version above, compressed. The long version is kept for variant B.
+export const PRIMARY_SUBHEAD_SHORT =
+  "For believers trying to follow Jesus in a culture that no longer shares Christian assumptions. Essays on theology, culture, family, and the American church, helping readers reconstruct a deeper historical faith and learn to live well in post-Christian America.";
 
 export const META_DESCRIPTION =
-  "Pastor and essayist writing on theology, politics, and the American church after Christendom. Tracing the collapse of cultural Christianity, the rise of Christian nationalism, and the blind spots distorting left and right. New essays weekly. By James Bell.";
-
-export const NEWSLETTER_PITCH = {
-  title: "Get new essays in your inbox",
-  description:
-    "One essay a week. After Christendom, politics, theology — plus marriage, money, parenting, manhood, womanhood. Scholarly tone, practical reach. No spam.",
-};
+  "Deep theology for everyday life. Essays on theology, politics, and the American church after Christendom — plus marriage, money, parenting, manhood, womanhood, and the long work of pastoring. By James Bell. New essays weekly.";
 
 export const NEWSLETTER_PITCH_PASTORAL = {
   title: "The Pastor's Letter — Tuesday morning",

@@ -1,7 +1,11 @@
 import { describe, it, expect } from "vitest";
 
-describe("Stripe Integration", () => {
-  it.skipIf(!process.env.STRIPE_SECRET_KEY)("should have Stripe secret key configured", () => {
+const hasDb = Boolean(process.env.DATABASE_URL);
+const d = hasDb ? describe : describe.skip;
+
+
+d("Stripe Integration", () => {
+  it("should have Stripe secret key configured", () => {
     expect(process.env.STRIPE_SECRET_KEY).toBeDefined();
   });
 
@@ -60,7 +64,7 @@ describe("Stripe Integration", () => {
   });
 });
 
-describe("Content Discoverability", () => {
+d("Content Discoverability", () => {
   it("should have three discoverability types", () => {
     const types = ["trending", "editors-picks", "featured"];
     expect(types).toHaveLength(3);

@@ -1,0 +1,81 @@
+{
+  "slug": "marriage",
+  "title": "Eight Weeks Toward Each Other",
+  "subtitle": "An eight week guided plan for marriage from James Bell. One focus, one small daily practice, one reading, one tool, and one honest question each week.",
+  "intro": "This is an eight week walk toward the person you married. Not a program to fix them, and not a list of techniques. Each week holds one focus, one small daily practice, one thing to read, one tool to use, and one question worth answering honestly. The aim is not a perfect marriage in two months. The aim is a direction, two people turning toward each other again after years of turning away.\n\nIt is not a cure, and it is not a substitute for a counselor, a pastor, or the people who actually know the two of you. Walk it imperfectly. A missed week is not failure, you just pick it back up where you left it. This is not a scorecard. Grace is the ground the whole thing stands on, which is good, because grace is the ground the marriage stands on too.",
+  "careNote": "Where there is betrayal, abuse, or a wall neither of you can move, see a licensed marriage counselor, and where there is abuse, safety comes first, not this plan.",
+  "weeks": [
+    {
+      "n": 1,
+      "focus": "An honest look",
+      "why": "You cannot move toward each other from a place you have not named. Most marriages drift not through one great betrayal but through a thousand small evasions. This week you stop evading. You look at what is actually there, together if you can, alone if you must.",
+      "practice": "Each day, write one sentence about the state of your marriage that you have not said out loud. Just one sentence. You do not have to show anyone yet.",
+      "read": { "label": "The Marriage page, start to finish", "href": "/marriage" },
+      "tool": { "label": "Take the Marriage Assessment, both of you if possible", "href": "/tools/marriage-assessment" },
+      "reflection": "What have I been pretending not to see in this marriage, and what has the pretending cost us?"
+    },
+    {
+      "n": 2,
+      "focus": "Speaking and hearing",
+      "why": "Most couples do not have a love problem. They have a hearing problem. Words spoken in the same kitchen can land in two different countries, and until you relearn the slow work of listening, nothing else in this plan will hold.",
+      "practice": "Once a day, ask your spouse one question about their inner life, then listen for two full minutes without correcting, defending, or fixing. When they finish, say back what you heard.",
+      "read": { "label": "Friendship Against Isolation, because marriage is friendship before it is anything else", "href": "/life/friendship-against-isolation" },
+      "tool": { "label": "The Emotional Health tool, to name what you are carrying into the room", "href": "/tools/emotional-health" },
+      "reflection": "When my spouse talks, what am I usually doing instead of listening, and what am I afraid I would hear if I stopped?"
+    },
+    {
+      "n": 3,
+      "focus": "Conflict handled, not avoided",
+      "why": "Conflict is not the enemy of a marriage. Unhandled conflict is. Couples who never fight are often couples who have quietly stopped hoping, and couples who fight to win are slowly losing each other. This week you learn to disagree in a way that moves you toward each other.",
+      "practice": "When tension rises this week, pause and name one thing that is true in your spouse's view before you state your own. Ten seconds of honesty before the argument begins.",
+      "read": { "label": "Return to the Marriage page and sit with what it says about conflict", "href": "/marriage" },
+      "tool": { "label": "The Conflict Guide, walk one live disagreement through it", "href": "/tools/conflict-guide" },
+      "reflection": "What do I do when conflict starts, attack, withdraw, or keep score, and where did I first learn to do that?"
+    },
+    {
+      "n": 4,
+      "focus": "The long work of forgiveness",
+      "why": "Every marriage carries debts. Some are small and some have been compounding for years. Forgiveness is not pretending the debt never existed. It is deciding, daily, to stop making your spouse pay it.",
+      "practice": "Each day, name one specific thing you are holding against your spouse, then pray for them by name about that exact thing. Under five minutes. No announcing it, no expecting credit.",
+      "read": { "label": "The Lament page, because forgiveness begins with telling God the truth about the wound", "href": "/lament" },
+      "tool": { "label": "The Prayer Generator, for the days you have no words for what you are forgiving", "href": "/tools/prayer-generator" },
+      "reflection": "What am I still making my spouse pay for, and what would it cost me to cancel the debt?"
+    },
+    {
+      "n": 5,
+      "focus": "Intimacy and friendship",
+      "why": "Most marriages do not die of hatred. They die of distance. Two people become roommates who manage logistics and call it a life together. Intimacy is rebuilt the same way it was first built, through unhurried attention with nothing else competing for it.",
+      "practice": "Spend ten minutes a day together with no screen, no task, and no agenda. Walk, sit on the porch, share coffee in silence if that is all you have. Let it be enough.",
+      "read": { "label": "The Marriage page once more, this time reading for delight rather than repair", "href": "/marriage" },
+      "tool": { "label": "The Verse Finder, look up what Scripture actually says about love that lasts", "href": "/tools/verse-finder" },
+      "reflection": "When did we last enjoy each other for no reason, and what have we allowed to take that place?"
+    },
+    {
+      "n": 6,
+      "focus": "A shared rhythm",
+      "why": "A marriage is not held together by feelings. It is held together by rhythms, the small repeated things two people do until the doing becomes who they are. Rest is part of this. A couple that never stops working never actually meets.",
+      "practice": "Choose one daily anchor you keep together, a table prayer, a short walk after dinner, ten quiet minutes before bed. Keep it every day this week, and guard one real block of rest together on the weekend.",
+      "read": { "label": "The Body and the Rhythms, on rest as something commanded rather than earned", "href": "/life/the-body-and-the-rhythms" },
+      "tool": { "label": "Family Devotions, build one simple shared rhythm of prayer for your home", "href": "/family/devotions" },
+      "reflection": "What rhythm has quietly shaped our marriage so far, and is it one we chose or one that chose us?"
+    },
+    {
+      "n": 7,
+      "focus": "Money together",
+      "why": "Money fights are almost never about money. They are about fear, control, childhood, and what each of you secretly believes will keep you safe. Until you can talk about money without flinching, a locked room remains in the middle of the house.",
+      "practice": "Each day, tell your spouse one true thing about money and you, a fear, a habit, something your parents did, something you regret. Small confessions, no lectures in return.",
+      "read": { "label": "Money and the Heart, on what spending reveals that words conceal", "href": "/life/money-and-the-heart" },
+      "tool": { "label": "The Financial Health tool, look at the numbers together without blame", "href": "/tools/financial-health" },
+      "reflection": "What does my handling of money say I actually trust, and what does it say to my spouse?"
+    },
+    {
+      "n": 8,
+      "focus": "Covenant renewed",
+      "why": "You did not promise to feel a certain way for the rest of your life. You promised to stay, to keep choosing this person when choosing them is hard. This last week is not a finish line. It is a renewal of the vow, with clearer eyes than you had at the altar.",
+      "practice": "Each day, thank God for one specific thing about your spouse, out loud or on paper. At the end of the week, tell them what made the list.",
+      "read": { "label": "The Discipleship page, because a covenant is a long obedience kept in ordinary days", "href": "/discipleship" },
+      "tool": { "label": "Retake the Marriage Assessment and compare it with week one", "href": "/tools/marriage-assessment" },
+      "reflection": "Knowing what these eight weeks have shown me, what am I willing to promise again, and what will keeping it require of me this year?"
+    }
+  ]
+}

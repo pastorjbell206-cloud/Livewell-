@@ -2,6 +2,14 @@
  * preconnect to fonts.gstatic.com. Importing fonts from CSS blocks first
  * paint on the stylesheet AND the font request. */
 
+/* Tailwind v4 utilities. The admin area (and the ui/ components) are written
+ * with Tailwind classes; without these imports the utilities were never
+ * generated and the admin rendered as an unstyled pile. Theme + utilities
+ * only — preflight is deliberately omitted so the public site's own reset
+ * and design system are untouched. */
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
 /* LIVEWELL DESIGN TOKENS */
@@ -24,25 +32,22 @@
   --mustard-deep:#B08A12;
   --mustard-text:#7A6010;
 
-  /*  Semantic aliases — the canonical tokens above are the source of truth.
-   *  These names are kept because they're used across components and read
-   *  meaningfully (--gold, --border, --paper). Each maps to a canonical value;
-   *  prefer the canonical token in new code.
-   *    --gold      → mustard accent      --paper/--cream → bone surfaces
-   *    --border/--line → bone-muted rule --ink2/--ink3   → ink-muted text
-   *  --ivory and --stone2 are intentionally light-on-dark tones (they stay
-   *  light in dark mode) for use on permanently-dark sections.  */
+  /* Aliases */
   --paper:#F5F0E6;--paper2:#EDE8DC;--cream:#EDE8DC;
-  --line:#D9D3C4;--border:#D9D3C4;
-  --gold:#D4A017;--goldlt:#7A6010;
+  --line:#D9D3C4;--border:#D9D3C4;--borderdk:#C0B9A8;
+  --gold:#D4A017;--goldlt:#7A6010;--goldpale:#F5F0E6;
   --ink2:#5A5448;--ink3:#5A5448;
-  --stone2:#9A968E;
-  --ivory:#F5F0E6;
+  --stone:#5A5448;--stone2:#9A968E;
+  --forest:#1A1A1A;--forest2:#0F0F0F;--forest3:#2A2A2A;
+  --ivory:#F5F0E6;--oxblood:#D4A017;
+  --rust:#D4A017;--rustlt:#B08A12;
+  --sage:#5A5448;--plum:#2A2A2A;
 
   /*  Type  */
   --F:"Cormorant Garamond","EB Garamond",Georgia,serif;
   --B:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;
   --U:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;
+  --display:"Cormorant Garamond",Georgia,serif;--serif:"Cormorant Garamond","EB Garamond",Georgia,serif;--sans:"Inter",-apple-system,sans-serif;
 
   /*  Shape  */
   --radius-sm:2px;--radius-md:2px;--radius-pill:999px;
@@ -70,23 +75,38 @@ html.dark{
   --ink:#F4F1EA;--ink-muted:#9A968E;
   /* Mustard — slightly desaturated for dark mode to keep WCAG AA */
   --mustard:#D4A017;--mustard-deep:#B08A12;--mustard-text:#E0B945;
-  /* Semantic aliases (dark) — see :root for the mapping notes */
+  /* Legacy aliases */
   --paper:#14110C;--paper2:#1A1608;--cream:#2A2418;
-  --line:#3A3328;--border:#3A3328;
-  --gold:#D4A017;--goldlt:#E0B945;
+  --line:#3A3328;--border:#3A3328;--borderdk:#4A4232;
+  --gold:#D4A017;--goldlt:#E0B945;--goldpale:#1A1608;
   --ink2:#9A968E;--ink3:#9A968E;
-  --stone2:#6A6660;
-  --ivory:#F4F1EA;
+  --stone:#9A968E;--stone2:#6A6660;
+  --forest:#0F0F0F;--forest2:#070707;--forest3:#1A1A1A;
+  --ivory:#F4F1EA;--oxblood:#D4A017;
+  --rust:#D4A017;--rustlt:#E0B945;
+  --sage:#9A968E;--plum:#1A1A1A;
 }
-:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
-.skip-link{position:absolute;top:-100%;left:16px;z-index:9999;background:var(--gold);color:var(--ink);padding:8px 16px;font-family:var(--U);font-size:14px;font-weight:600;border-radius:0 0 4px 4px;text-decoration:none;transition:top .2s}
+
+/* The admin area is a purpose-built light workspace. It opts out of the
+ * site-wide dark-mode toggle entirely: this re-asserts the light token values
+ * (and a guaranteed background + text color) for the admin subtree even when
+ * html.dark is set, so admin content can never render dark-on-dark. */
+.admin-scope, html.dark .admin-scope{
+  --charcoal:#1A1A1A;--charcoal-deep:#0F0F0F;--charcoal-soft:#2A2A2A;
+  --bone:#F5F0E6;--bone-warm:#EDE8DC;--bone-muted:#D9D3C4;--card:#FFFFFF;
+  --ink:#14110C;--ink-muted:#5A5448;
+  --mustard:#D4A017;--mustard-deep:#B08A12;--mustard-text:#7A6010;
+  --paper:#F5F0E6;--paper2:#EDE8DC;--cream:#EDE8DC;
+  --line:#D9D3C4;--border:#D9D3C4;--borderdk:#C0B9A8;
+  --gold:#D4A017;--goldlt:#7A6010;--goldpale:#F5F0E6;
+  --ink2:#5A5448;--ink3:#5A5448;--stone:#5A5448;--stone2:#9A968E;
+  background-color:#F7F5F0;color:#1A1A1A;
+}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}.skip-link{position:absolute;top:-100%;left:16px;z-index:9999;background:var(--gold);color:var(--ink);padding:8px 16px;font-family:var(--U);font-size:14px;font-weight:600;border-radius:0 0 4px 4px;text-decoration:none;transition:top .2s}
 .skip-link:focus{top:0}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-html{scroll-behavior:smooth;background-color:var(--bone);color:var(--ink)}
+html{scroll-behavior:smooth}
 body{background:var(--bone);color:var(--ink);font-family:var(--B);font-size:1rem;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-/* Nav surface is hardcoded cream in light mode (rgba for the blur); give it a
- * dark counterpart so the sticky header doesn't stay bone in dark mode. */
-.dark .nav-wrap{background:rgba(15,15,15,.97)}
 ::selection{background:var(--mustard);color:var(--ink)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
 a{color:inherit;text-decoration:none}
@@ -97,7 +117,7 @@ img{display:block;max-width:100%}
 .wrap{max-width:1200px;margin:0 auto;padding:0 32px}
 
 /* ANNOUNCE */
-.announce{background:var(--charcoal);padding:11px 32px;text-align:center;font-family:var(--U);font-size:13px;color:rgba(255,255,255,.75);display:flex;align-items:center;justify-content:center;gap:16px;position:relative}
+.announce{background:var(--forest);padding:11px 32px;text-align:center;font-family:var(--U);font-size:13px;color:rgba(255,255,255,.75);display:flex;align-items:center;justify-content:center;gap:16px;position:relative}
 .announce a{color:var(--goldlt);font-weight:500;border-bottom:1px solid rgba(212,168,79,.35)}
 .announce__x{position:absolute;right:20px;color:rgba(255,255,255,.35);font-size:20px;cursor:pointer;line-height:1;transition:color .2s}
 .announce__x:hover{color:white}
@@ -106,13 +126,13 @@ img{display:block;max-width:100%}
 .nav-wrap{position:sticky;top:0;z-index:200;background:rgba(250,248,244,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:box-shadow .3s}
 .nav-wrap.shadow{box-shadow:0 4px 32px rgba(26,51,40,.08)}
 nav{display:flex;align-items:center;justify-content:space-between;height:70px;max-width:1200px;margin:0 auto;padding:0 32px}
-.nav__logo{font-family:var(--F);font-size:21px;font-weight:600;color:var(--charcoal);letter-spacing:-.01em;flex-shrink:0;display:flex;align-items:baseline;gap:6px}
+.nav__logo{font-family:var(--F);font-size:21px;font-weight:600;color:var(--forest);letter-spacing:-.01em;flex-shrink:0;display:flex;align-items:baseline;gap:6px}
 .nav__logo em{font-style:italic;color:var(--gold)}
 .nav__logo small{font-family:var(--U);font-size:12px;font-weight:300;color:var(--ink3);letter-spacing:.02em}
 .nav__mid{display:flex;align-items:center;gap:2px}
 .nav__item{position:relative}
 .nav__btn{font-family:var(--U);font-size:13.5px;color:var(--ink2);padding:8px 14px;border-radius:3px;display:flex;align-items:center;gap:5px;cursor:pointer;transition:.2s;white-space:nowrap}
-.nav__btn:hover,.nav__item:hover .nav__btn{color:var(--charcoal);background:var(--cream)}
+.nav__btn:hover,.nav__item:hover .nav__btn{color:var(--forest);background:var(--cream)}
 .chev{font-size:9px;transition:transform .25s}
 .nav__item:hover .chev{transform:rotate(180deg)}
 .mega{position:absolute;top:calc(100% + 1px);left:50%;transform:translateX(-50%);background:var(--paper);border:1px solid var(--border);border-top:2px solid var(--gold);box-shadow:0 24px 64px rgba(26,51,40,.13);padding:32px;display:none;z-index:300;min-width:700px;opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s}
@@ -127,15 +147,15 @@ nav{display:flex;align-items:center;justify-content:space-between;height:70px;ma
 .mlink span{font-family:var(--U);font-size:12px;color:var(--ink3)}
 .nav__right{display:flex;align-items:center;gap:10px}
 .btn-nv{font-family:var(--U);font-size:13px;font-weight:600;padding:10px 20px;border-radius:2px;letter-spacing:.04em;transition:.2s}
-.btn-nv--out{border:1px solid var(--charcoal);color:var(--charcoal)}
-.btn-nv--out:hover{background:var(--charcoal);color:var(--ivory)}
+.btn-nv--out{border:1px solid var(--forest);color:var(--forest)}
+.btn-nv--out:hover{background:var(--forest);color:var(--ivory)}
 /* Primary CTA per CLAUDE.md: bone-on-ink with mustard underline.
  * Mustard is punctuation, not paragraph. Reserve gold fills for the
  * announce bar and small tag chips. */
 .btn-nv--fill{background:var(--ink);color:var(--bone);border-bottom:2px solid var(--mustard)}
 .btn-nv--fill:hover{background:var(--charcoal-deep)}
 .srch-btn{font-size:19px;color:var(--ink3);padding:6px;transition:color .2s;cursor:pointer}
-.srch-btn:hover{color:var(--charcoal)}
+.srch-btn:hover{color:var(--forest)}
 .ham{display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
 .ham span{display:block;width:22px;height:1.5px;background:var(--ink);border-radius:2px;transition:.3s}
 
@@ -154,7 +174,7 @@ nav{display:flex;align-items:center;justify-content:space-between;height:70px;ma
 /* SEARCH OVERLAY */
 .srch-ov{display:none;position:fixed;inset:0;background:rgba(26,51,40,.96);z-index:500;align-items:flex-start;justify-content:center;padding-top:120px}
 .srch-ov.open{display:flex}
-.srch-inner{width:100%;max-width:680px;padding:0 32px}
+.srch-inner{width:100%;max-width:680px;padding:0 clamp(12px,5vw,32px)}
 .srch-label{font-family:var(--U);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:16px}
 .srch-input{width:100%;background:transparent;border:none;border-bottom:2px solid var(--gold);font-family:var(--F);font-size:clamp(28px,4vw,48px);color:white;outline:none;padding:8px 0 16px;caret-color:var(--gold)}
 .srch-input::placeholder{color:rgba(255,255,255,.25)}
@@ -165,7 +185,7 @@ nav{display:flex;align-items:center;justify-content:space-between;height:70px;ma
 .srch-close:hover{color:white}
 
 /* HERO */
-.hero{background:var(--charcoal);padding:100px 0 0;position:relative;overflow:hidden}
+.hero{background:var(--forest);padding:100px 0 0;position:relative;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 90% at 85% 50%,rgba(196,146,59,.07),transparent),radial-gradient(ellipse 40% 60% at 5% 90%,rgba(196,146,59,.05),transparent);pointer-events:none}
 .hero::after{content:"";position:absolute;inset:0;opacity:.4;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");pointer-events:none}
 
@@ -230,10 +250,8 @@ nav{display:flex;align-items:center;justify-content:space-between;height:70px;ma
 .card-desc{font-size:14px;color:var(--ink3);line-height:1.7;margin-bottom:16px}
 .card-meta{display:flex;align-items:center;gap:12px;font-family:var(--U);font-size:12px;color:var(--ink3)}
 
-/* FOOTER — a permanently dark block in both themes (fixed colors, not
- * inverting tokens, so cream text never lands on a cream surface). */
-footer{background-color:#14110C;color:#F4F1EA;padding:60px 0 40px}
-.dark footer{background-color:#0F0F0F;border-top:1px solid var(--border)}
+/* FOOTER */
+footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
 .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;margin-bottom:40px}
 .footer-col h4{font-family:var(--F);font-size:18px;font-weight:600;margin-bottom:16px}
 .footer-col a{display:block;font-size:14px;color:rgba(255,255,255,.7);margin-bottom:10px;transition:color .2s}
@@ -254,6 +272,16 @@ footer{background-color:#14110C;color:#F4F1EA;padding:60px 0 40px}
   .section{padding:60px 0}
 }
 
+/* Visible only at phone/tablet widths: hints for horizontally scrolling UI. */
+.scroll-hint{display:none}
+@media(max-width:768px){
+  .scroll-hint{display:block}
+}
+
+@media(max-width:600px){
+  .grid-2,.grid-3{grid-template-columns:1fr}
+}
+
 @media(max-width:480px){
   .wrap{padding:0 16px}
   nav{padding:0 16px;height:60px}
@@ -261,45 +289,22 @@ footer{background-color:#14110C;color:#F4F1EA;padding:60px 0 40px}
   .hero-ctas{flex-direction:column;align-items:flex-start}
   .grid-4{grid-template-columns:1fr}
   .hero-stats{flex-direction:column;gap:16px;align-items:flex-start}
+  /* Long-form reading at phone width: smaller body, calmer blockquotes. */
+  .article-body{font-size:16px;line-height:1.7}
+  .article-body blockquote{font-size:19px}
+  .article-body blockquote.quote-share .quote-share__text{font-size:21px}
+  .article-body h2{font-size:24px}
+  .article-body p:first-of-type::first-letter{font-size:3.6em}
 }
 
 @media print {
-  /* Hide chrome and interactive surfaces — print the essay, nothing else. */
-  .nav-wrap, .sticky-nav, .announce, footer, .no-print,
-  .toc, .article-nav, .article-nav__card, .skip-link { display: none !important; }
-
-  @page { margin: 18mm 16mm; }
-
-  html, body { background: #fff !important; color: #000 !important; }
-  body { font-size: 11.5pt; line-height: 1.6; }
-  a { color: #000; }
+  .nav-wrap, .sticky-nav, .announce, footer, .no-print { display: none !important; }
+  body { font-size: 12pt; line-height: 1.6; color: #000; background: #fff; }
+  a { color: #000; text-decoration: underline; }
   .wrap { max-width: 100%; padding: 0; }
   article { max-width: 100%; }
-
-  /* Essay body as a printed chapter: black ink, generous measure, no caps on width. */
-  .article-body,
-  .article-body p,
-  .article-body ul,
-  .article-body ol,
-  .article-body blockquote { max-width: 100% !important; }
-  .article-body { font-size: 12pt; line-height: 1.55; color: #000; }
-  .article-body h2, .article-body h3 { color: #000; page-break-after: avoid; }
-  .article-body h2::before { display: none; }
-  .article-body p:first-of-type::first-letter { color: #000; }
-  .article-body a { border-bottom: none; }
-  /* Print citations: reveal the destination of body links. */
-  .article-body a[href^="http"]::after {
-    content: " (" attr(href) ")";
-    font-size: 9pt;
-    color: #555;
-    word-break: break-all;
-  }
-  .article-body blockquote,
-  .article-body .pullquote,
-  .article-body figure,
-  .article-body img,
-  .article-body li { page-break-inside: avoid; }
-  .article-body img { max-width: 100% !important; }
+  img { max-width: 100%; page-break-inside: avoid; }
+  h1, h2, h3 { page-break-after: avoid; }
 }
 
 /* ─── EDITORIAL TYPOGRAPHY ────────────────────────────────────────
@@ -309,25 +314,29 @@ footer{background-color:#14110C;color:#F4F1EA;padding:60px 0 40px}
 
 .article-body{font-family:var(--B);font-size:18px;line-height:1.75;color:var(--ink)}
 .article-body > * + *{margin-top:1.25em}
-.article-body h2{font-family:var(--F);font-size:30px;font-weight:500;letter-spacing:-.01em;line-height:1.2;color:var(--ink);margin-top:2.4em;margin-bottom:.6em;position:relative;padding-top:.6em;scroll-margin-top:96px}
+.article-body h2{font-family:var(--F);font-size:30px;font-weight:500;letter-spacing:-.01em;line-height:1.2;color:var(--ink);margin-top:2.4em;margin-bottom:.6em;position:relative;padding-top:.6em}
 .article-body h2::before{content:"";position:absolute;top:0;left:0;width:32px;height:1px;background:var(--mustard)}
-.article-body h3{font-family:var(--F);font-size:22px;font-weight:500;letter-spacing:-.005em;line-height:1.3;color:var(--ink);margin-top:1.8em;margin-bottom:.4em;scroll-margin-top:96px}
-.article-body p{max-width:66ch}
-/* First paragraph reads as a subtle lead — larger, a touch more open. The
- * drop-cap below targets the same :first-of-type and stays compatible. */
-.article-body p:first-of-type{font-size:1.05em;line-height:1.7;color:var(--ink)}
-.article-body p:first-of-type::first-letter{font-family:var(--F);font-size:4.4em;float:left;line-height:.9;padding:.04em .09em 0 0;color:var(--ink);font-weight:400}
+.article-body h3{font-family:var(--F);font-size:22px;font-weight:500;letter-spacing:-.005em;line-height:1.3;color:var(--ink);margin-top:1.8em;margin-bottom:.4em}
+.article-body p{max-width:62ch}
+.article-body p:first-of-type::first-letter{font-family:var(--F);font-size:4.6em;float:left;line-height:.92;padding:.04em .08em 0 0;color:var(--ink);font-weight:400}
 .article-body blockquote{font-family:var(--F);font-size:24px;font-style:italic;font-weight:400;line-height:1.4;color:var(--ink);max-width:60ch;border-left:2px solid var(--mustard);padding:.2em 0 .2em 1.4em;margin:2em 0;letter-spacing:-.005em}
 .article-body blockquote p{max-width:none}
 .article-body a{color:var(--ink);border-bottom:1px solid var(--mustard);transition:background-color .2s}
 .article-body a:hover{background:rgba(212,160,23,.12)}
-.article-body ul,.article-body ol{padding-left:1.6em;max-width:66ch}
+.article-body ul,.article-body ol{padding-left:1.6em;max-width:62ch}
 .article-body li{margin-top:.4em}
 .article-body strong{font-weight:600;color:var(--ink)}
 .article-body em{font-style:italic}
 .article-body code{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.92em;background:var(--bone-warm);padding:.12em .35em;border-radius:2px}
 .article-body hr{border:0;height:1px;background:var(--border);margin:3em auto;max-width:120px}
-.article-body img{margin:2em 0;border-radius:var(--radius-sm)}
+.article-body img{margin:2em 0;border-radius:var(--radius-sm);max-width:100%;height:auto}
+/* Anti-overlap: never let the floated drop cap collide with a following
+   heading, quote, list, rule, or image; never let long words/URLs spill. */
+.article-body{overflow-wrap:break-word;word-break:break-word}
+.article-body h2,.article-body h3,.article-body blockquote,.article-body hr,.article-body ul,.article-body ol,.article-body img,.article-body figure,.article-body .pullquote,.article-body .footnotes{clear:both}
+/* Shared section prose: same .article-body type system, but the lead-article
+   drop cap belongs only to the top of an article, not to every section block. */
+.article-body.prose-section p:first-of-type::first-letter{font-family:inherit;font-size:inherit;float:none;line-height:inherit;padding:0;margin:0;color:inherit;font-weight:inherit}
 
 /* Footnotes (when Streamdown emits them via remark-footnotes) */
 .article-body .footnotes{margin-top:4em;padding-top:1.6em;border-top:1px solid var(--border);font-size:14px;line-height:1.7;color:var(--ink-muted)}
@@ -340,43 +349,13 @@ footer{background-color:#14110C;color:#F4F1EA;padding:60px 0 40px}
 /* Pull quote utility — wrap a quote in <figure class="pullquote"> in markdown */
 .article-body .pullquote{font-family:var(--F);font-size:32px;font-style:italic;font-weight:400;line-height:1.3;color:var(--ink);text-align:center;margin:3em 0;padding:1.4em 0;border-top:1px solid var(--mustard);border-bottom:1px solid var(--mustard);max-width:none;letter-spacing:-.01em}
 
-/* ─── ARTICLE HERO (branded charcoal band, the "image" per essay) ─── */
-.article-hero{position:relative;overflow:hidden;background:var(--charcoal);padding:var(--s-7) var(--s-4) var(--s-6);border-bottom:1px solid rgba(212,160,23,.18)}
-.article-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 90% at 85% 50%,rgba(212,160,23,.07),transparent),radial-gradient(ellipse 40% 60% at 5% 90%,rgba(212,160,23,.05),transparent);pointer-events:none}
-.article-hero::after{content:"";position:absolute;inset:0;opacity:.4;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");pointer-events:none}
-.article-hero__inner{position:relative;z-index:1;max-width:var(--w-content);margin:0 auto}
-.article-hero__title{font-family:var(--F);font-weight:400;font-size:clamp(40px,5.5vw,68px);line-height:1.08;letter-spacing:-.02em;color:var(--bone);margin-bottom:var(--s-3);max-width:18ch}
-.article-hero__meta{display:flex;align-items:center;flex-wrap:wrap;gap:10px;font-family:var(--U);font-size:13px;color:rgba(245,240,230,.6)}
-.article-hero__meta time{color:rgba(245,240,230,.6)}
-.article-hero__dot{color:var(--mustard)}
-.article-hero__standfirst{font-family:var(--F);font-style:italic;font-weight:400;font-size:21px;line-height:1.5;color:rgba(245,240,230,.8);max-width:60ch;margin-top:var(--s-3)}
-
-/* ─── READING LAYOUT (ToC rail + prose) ─── */
-.article-layout{max-width:var(--w-prose);margin:0 auto}
-@media(min-width:1024px){
-  .article-layout--toc{max-width:none;display:grid;grid-template-columns:220px minmax(0,var(--w-prose));justify-content:center;gap:var(--s-5);align-items:start}
-}
-
-/* ─── TABLE OF CONTENTS ─── */
-.toc{display:none}
-@media(min-width:1024px){
-  .toc{display:block;position:sticky;top:90px;max-height:calc(100vh - 120px);overflow:auto;padding-left:18px;border-left:1px solid var(--line)}
-}
-.toc__label{font-family:var(--U);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.18em;color:var(--mustard-text);margin-bottom:16px}
-.toc__list{list-style:none}
-.toc__item{position:relative}
-.toc__link{display:block;font-family:var(--U);font-size:12.5px;line-height:1.45;color:var(--ink-muted);padding:7px 0 7px 12px;margin-left:-19px;border-left:1px solid transparent;transition:color .2s,border-color .2s}
-.toc__link:hover{color:var(--ink);border-left-color:var(--mustard)}
-
-/* ─── KEEP READING (prev/next flow) ─── */
-.article-nav{margin-top:var(--s-5);padding-top:var(--s-4);border-top:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr;gap:20px}
-@media(max-width:560px){.article-nav{grid-template-columns:1fr}}
-.article-nav__card{display:flex;flex-direction:column;gap:8px;padding:22px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);transition:border-color .2s,transform .2s}
-.article-nav__card:hover{border-color:var(--mustard);transform:translateY(-1px)}
-.article-nav__card--next{text-align:right;align-items:flex-end}
-.article-nav__dir{font-family:var(--U);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--mustard-text)}
-.article-nav__kicker{font-family:var(--U);font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.18em;color:var(--ink-muted)}
-.article-nav__title{font-family:var(--F);font-size:21px;font-weight:500;line-height:1.25;letter-spacing:-.01em;color:var(--ink)}
+/* Shareable pull quote — every essay blockquote, lifted and given a share action */
+.article-body blockquote.quote-share{position:relative;border-left:2px solid var(--mustard);margin:2.6em 0;padding:.1em 0 .1em 1.5em;max-width:62ch}
+.article-body blockquote.quote-share .quote-share__text{font-family:var(--F);font-size:26px;font-style:italic;font-weight:400;line-height:1.4;letter-spacing:-.01em;color:var(--ink)}
+.article-body blockquote.quote-share .quote-share__text p{max-width:none;margin:0}
+.article-body blockquote.quote-share .quote-share__text p+p{margin-top:.5em}
+.quote-share__btn{display:inline-flex;align-items:center;gap:7px;margin-top:1.1em;background:transparent;border:none;padding:0;cursor:pointer;font-family:var(--U);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--mustard-text);transition:opacity .2s}
+.quote-share__btn:hover{opacity:.65}
 
 /* Eyebrow utility — small all-caps label with mustard rule */
 .eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--U);font-size:11px;font-weight:600;color:var(--mustard-text);text-transform:uppercase;letter-spacing:.18em}

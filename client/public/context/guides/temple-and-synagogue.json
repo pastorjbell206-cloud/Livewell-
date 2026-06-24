@@ -1,0 +1,50 @@
+{
+  "slug": "temple-and-synagogue",
+  "title": "Temple, Synagogue, and the Shape of Jewish Life",
+  "subtitle": "One building held the presence of God, the national economy, and the politics of an occupied people. Another held the week. You cannot read the Gospels without both.",
+  "kicker": "Second Temple",
+  "group": "Second Temple Judaism",
+  "sections": [
+    {
+      "id": "what-the-temple-was",
+      "kicker": "Presence",
+      "title": "The Address of God on Earth",
+      "body": "The temple was not a big church. It was, in Israel's understanding, the one place on earth where heaven and earth met, the address of the living God among his people. The Psalms ache for it. Better is one day in your courts than a thousand elsewhere. Pilgrims sang their way up the road to it. Daniel, in exile, prayed toward it through an open window.\n\nAt its center stood sacrifice, and here we should be careful. Sacrifice was not a vending machine for nervous sinners, and E.P. Sanders has shown how badly that caricature misreads the sources. Sacrifice was the God-given means of covenant life, the way a holy God had himself provided for his people to draw near, give thanks, and be cleansed. Three times a year, at Passover, Weeks, and Booths, pilgrims swelled Jerusalem to several times its size. The temple was where the nation remembered who it was. When Jesus calls it his Father's house, he is not being sentimental. He is naming what every Jew believed the building to be."
+    },
+    {
+      "id": "economy-and-politics",
+      "kicker": "Power",
+      "title": "The Economy and the Politics of the House",
+      "body": "But the house of God was also the engine of the city. Herod the Great began rebuilding it around 20 BC on a platform so vast it still defines Jerusalem, and the work was unfinished in Jesus' lifetime. Forty-six years and counting, the crowd says in John 2. It was completed in the early 60s AD, roughly seven years before it burned.\n\nEvery Jewish man worldwide paid the annual temple tax. Tithes and offerings flowed in from three continents. Thousands of priests, Levites, builders, and merchants drew their living from the courts. The temple was the national bank, the supreme court, and the seat of the Sanhedrin.\n\nAnd it was political to the bone. Rome appointed and removed high priests, kept the high priestly vestments under its own lock for years, and watched the festivals from the adjacent fortress with soldiers ready. The house of Annas and Caiaphas held power by cooperation with the occupier. So when a Galilean prophet caused a disturbance in those courts during Passover week, no one in authority heard a worship dispute. They heard a threat to the entire arrangement."
+    },
+    {
+      "id": "the-synagogue",
+      "kicker": "The Local Room",
+      "title": "The Synagogue and the Ordinary Week",
+      "body": "If the temple held the festivals, the synagogue held the week. Born in the exile and the long centuries after it, the synagogue required no altar and no priest, only Jews gathered around Torah. By the first century there was one in nearly every town in the land and every major city outside it.\n\nThe Sabbath gathering had a shape. The Shema recited, prayers offered, a portion of Torah read in course, a reading from the prophets, and a word of teaching that any competent man might be invited to give. That open door is why Jesus could stand up in Nazareth, receive the Isaiah scroll, and announce that the text was fulfilled in their hearing. It is why Paul, walking into Pisidian Antioch as a stranger, was handed the floor after the readings.\n\nThe calendar carried the story. Passover rehearsed the exodus every spring. Booths rehearsed the wilderness. Hanukkah rehearsed the Maccabees. A Jewish child did not learn theology from a book. He kept it, ate it, and sang it, year after year, until the story was load-bearing. The synagogue built the people the Gospels assume."
+    },
+    {
+      "id": "jesus-in-the-temple",
+      "kicker": "The Sign",
+      "title": "What Jesus Did in the Courts",
+      "body": "Read Mark 11 with all of this in view. Jesus enters the temple at Passover, overturns the tables of the money changers, and stops the traffic of the outer court. This was not a tantrum about commerce. The sellers and changers were providing required services, approved animals and approved coinage, and Jesus knew it. His act was a prophetic sign, brief, public, and unmistakable in its grammar.\n\nHis words give the key. He quotes Isaiah's vision of a house of prayer for all nations and Jeremiah's temple sermon, where the phrase den of robbers does not mean a market. It means a bandits' hideout, the cave where the violent feel safe while the city burns. Jeremiah preached that sermon against a temple Israel trusted as a guarantee, and that temple fell. Jesus is enacting the same verdict.\n\nThe authorities understood him perfectly. The accusation at his trial concerned destroying the temple, and the charge was not random. He had spoken of the temple's end, and he had spoken of himself in temple terms, as the place where God meets his people and sin is dealt with. One of the two had to give."
+    },
+    {
+      "id": "after-the-fire",
+      "kicker": "After the Fire",
+      "title": "AD 70 and the Weight of the Question",
+      "body": "In AD 70, after four years of revolt, the legions of Titus took Jerusalem and the temple burned. Josephus, who watched, wrote that the blood outran the fire. The sacrifices stopped and never resumed. Judaism survived because the Pharisees' heirs rebuilt it around Torah, synagogue, and home, the institutions that needed no altar. That is the Judaism the world has known ever since.\n\nThe church read the catastrophe through Jesus' own words, spoken a generation earlier, that not one stone would be left on another. And the letter to the Hebrews, written to believers tempted to go back, argued that everything the temple held, presence, priesthood, sacrifice, had found its permanence in Christ.\n\nThe question of the temple is the question of where God lives, and it does not stay in the first century. We build our own guarantees, our institutions and reputations and ministries, and we trust the buildings because the buildings feel solid. They are not. The New Testament's answer is a person and a people, a temple of living stones. That answer cost the first readers everything familiar. It has not gotten cheaper."
+    }
+  ],
+  "keyTexts": [
+    "Psalm 84:1-2",
+    "Luke 4:16-21",
+    "Mark 11:15-18"
+  ],
+  "sources": [
+    { "title": "Judaism: Practice and Belief, 63 BCE-66 CE", "author": "E.P. Sanders" },
+    { "title": "Backgrounds of Early Christianity", "author": "Everett Ferguson" },
+    { "title": "The IVP Bible Background Commentary: New Testament", "author": "Craig S. Keener" },
+    { "title": "The New Testament and the People of God", "author": "N.T. Wright" }
+  ]
+}

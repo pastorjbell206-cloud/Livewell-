@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowLeft, Download, DollarSign } from "lucide-react";
-import { ArticleCard } from "@/components/ArticleCard";
 
 interface ArticleInCollection {
   id: number;

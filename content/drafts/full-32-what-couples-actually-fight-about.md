@@ -69,6 +69,6 @@ I am not writing this as someone who has figured it out. I am writing as someone
 
 The marriage that wins the argument loses the marriage. The marriage that names the pattern under the argument has begun the actual work. The work is not about being right. The work is about being seen — and seeing — at the level where the wound lives. Most of us flinch from that level. The marriage that does not flinch is the marriage that lasts.
 
-Name the pattern. Name what you have been bringing. Name what your spouse has been bringing. Have the conversations in calm. Get a counselor if you cannot have them alone. Read Friedman or Bowen or Gottman. Do the work the marriage is asking you to do. The work is not optional. The work is what marriage is for.
+Name the pattern. Name what you have been bringing. Name what your spouse has been bringing. Have the conversations in calm. Get a counselor if you cannot have them alone. Read Friedman or Bowen or Gottman. Do what the marriage is asking of you. The work is not optional. The work is what marriage is for.
 
 The fights will not all go away. The marriages that work do not have no fights; they have fights that produce growth instead of cycles. The difference is the naming. The naming is yours to do. The naming is what the next twenty years of your marriage depend on. Begin.

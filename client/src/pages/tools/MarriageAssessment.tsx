@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { ToolActions } from "@/components/ToolActions";
 import { useState, useRef } from "react";
+import { Link } from "wouter";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer } from "lucide-react";
 import { EmailResults } from "@/components/EmailResults";
 
@@ -99,7 +100,7 @@ const CATEGORIES: Category[] = [
         "If physical intimacy has become transactional or absent, consider that the problem is rarely physical. Emotional disconnection shows up in the bedroom because the bedroom is where pretending gets hardest.",
       ],
       mid: [
-        "Schedule a weekly date that requires no planning beyond showing up. The couples who wait for the perfect evening never have one.",
+        "Schedule a weekly date that requires no planning beyond being there. The couples who wait for the perfect evening never have one.",
         "Reintroduce non-sexual touch. A hand on the shoulder. Sitting close enough that your knees touch. These small gestures rebuild the neural pathways of connection.",
         "Ask your spouse: 'When did you last feel truly close to me?' Their answer will tell you more than any book.",
       ],
@@ -264,7 +265,7 @@ function getOverallLabel(score: number): {
       label: "Growing",
       color: "var(--mustard)",
       description:
-        "Your marriage has genuine strengths and identifiable growth areas. This is not a crisis -- it is an opportunity. Most marriages live here. The question is whether you will stay here or do the work to move toward something deeper. The fact that you took this assessment suggests you are ready for the work.",
+        "Your marriage has genuine strengths and identifiable growth areas. This is not a crisis -- it is an opportunity. Most marriages live here. The question is whether you will stay here or move toward something deeper. The fact that you took this assessment suggests you are ready for it.",
     };
   if (pct >= 0.4)
     return {
@@ -773,6 +774,64 @@ export default function MarriageAssessment() {
               >
                 {overall.description}
               </p>
+            </div>
+
+            {/* Eight-Week Plan CTA */}
+            <div
+              style={{
+                background: "white",
+                borderRadius: "2px",
+                padding: "36px 40px",
+                border: "1px solid var(--border)",
+                borderTop: "4px solid var(--mustard)",
+                marginBottom: "32px",
+              }}
+            >
+              <div
+                style={{
+                  fontSize: "11px",
+                  fontWeight: 700,
+                  letterSpacing: "0.2em",
+                  color: "var(--mustard)",
+                  fontFamily: "var(--U)",
+                  marginBottom: "12px",
+                }}
+              >
+                YOUR NEXT STEP
+              </div>
+              <p
+                style={{
+                  fontSize: "16px",
+                  lineHeight: 1.8,
+                  color: "var(--ink)",
+                  fontFamily: "var(--B)",
+                  maxWidth: "60ch",
+                  margin: "0 0 20px",
+                }}
+              >
+                A score is a snapshot. A path is what changes things: eight
+                weeks toward each other, one small practice at a time.
+              </p>
+              <Link
+                href="/plans/marriage"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  minHeight: "44px",
+                  padding: "12px 28px",
+                  background: "var(--mustard)",
+                  color: "var(--ink)",
+                  borderRadius: "2px",
+                  fontSize: "14px",
+                  fontFamily: "var(--U)",
+                  fontWeight: 600,
+                  textDecoration: "none",
+                }}
+              >
+                Start the eight-week plan
+                <ChevronRight size={16} />
+              </Link>
             </div>
 
             {/* Score Bar Overview */}

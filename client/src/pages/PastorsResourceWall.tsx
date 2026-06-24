@@ -85,6 +85,12 @@ const PASTOR_CARE: ResourceLink[] = [
 
 const PCN_LINKS: ResourceLink[] = [
   {
+    title: "The Hard Issues Series",
+    description: "Five free booklets for elder teams — qualifications, installing, conflict, and removal. PDF and EPUB.",
+    href: "/resources/hard-issues-series",
+    icon: BookOpen,
+  },
+  {
     title: "Pastors Connection Network",
     description: "You don't have to lead alone. Cohorts, peer groups, monthly calls.",
     href: "/pastors",
@@ -194,7 +200,7 @@ export default function PastorsResourceWall() {
     <Layout>
       <SEOMeta
         title="Pastor's Resource Wall"
-        description="Sermon prep, citation tools, discussion guides, and the Pastors Connection Network — built so pastors don't have to do the work alone."
+        description="Sermon prep, citation tools, discussion guides, and the Pastors Connection Network — built so pastors don't have to do it alone."
         url="https://www.livewellbyjamesbell.co/pastors-resource-wall"
       />
 

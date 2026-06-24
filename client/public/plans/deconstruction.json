@@ -1,0 +1,81 @@
+{
+  "slug": "deconstruction",
+  "title": "Eight Weeks of Taking Your Questions Seriously",
+  "subtitle": "An eight week plan from James Bell for the person pulling an inherited faith apart. Careful examination instead of a quiet exit, with honest readings, no panic, and no ambush.",
+  "intro": "This is an eight week walk for the person pulling an inherited faith apart, piece by piece, to see what is actually in there. This site does not panic about that. Deconstruction is not a fad and it is not a betrayal, it is what an honest person does when the answers they were handed stop carrying weight. Many people in this position are not leaving Jesus. They are leaving a version of him somebody sold them, and the difference between those two departures is the whole question. Each week holds one focus, one small practice, one thing to read, one tool, and one honest question. The aim is not to talk you out of anything. The aim is examination instead of exit by default, so that whatever you decide, you decide about the real thing.\n\nWalk it imperfectly. A missed week is not failure, you just pick it back up. Nobody here is timing you, and nobody is waiting at week eight with an altar call. You are allowed to take years. Most of the people who rebuilt something true did.",
+  "careNote": "Where church harm or abuse is part of your story, a trauma informed counselor matters more than any reading plan, and leaving an abusive environment is not a loss of faith, it is the right thing to do.",
+  "weeks": [
+    {
+      "n": 1,
+      "focus": "Naming what you are actually questioning",
+      "why": "The doctrine, the institution, the people who hurt you, and God himself are four different things, and they usually arrive in one package because the church handed them to you that way. Pastors like me did the bundling. When the package starts to come apart, everything feels like it is falling at once, but it is not. The first work is sorting, not deciding.",
+      "practice": "Each day, write one sentence naming one specific thing you no longer believe or are no longer sure of. Then mark it: doctrine, institution, people, or God. Just the sorting. No verdicts yet.",
+      "read": { "label": "The Doubt page, where this site says plainly that doubt is not betrayal", "href": "/doubt" },
+      "tool": { "label": "The Hard Questions page, see how this site treats contested questions before you trust it with yours", "href": "/theology/questions" },
+      "reflection": "When I say I am losing my faith, which faith do I mean, and who taught it to me?"
+    },
+    {
+      "n": 2,
+      "focus": "Separating Jesus from the version you were handed",
+      "why": "Every generation drapes its own flag over the text, and the version of Jesus most of us inherited came wearing one. Party shaped, culture shaped, sanded smooth where he was sharp and sharpened where he was gentle. Before you decide about him, it is worth meeting the one on the page. He is stranger than the one you were sold.",
+      "practice": "Read a chapter or two of the Gospel of Mark each day, as if for the first time. Write down each place where the Jesus on the page differs from the one you were handed. Keep the list.",
+      "read": { "label": "The Bible Is Not an American Book, on the flags we drape over the text", "href": "/resources/context/the-bible-is-not-an-american-book" },
+      "tool": { "label": "The Verse Finder, look up what Jesus actually said on the topics you were told he settled", "href": "/tools/verse-finder" },
+      "reflection": "How much of what I am rejecting did Jesus actually say, and how much was added by the people who taught me?"
+    },
+    {
+      "n": 3,
+      "focus": "The hard texts, faced instead of dodged",
+      "why": "The violence, the slavery passages, the texts your old church skipped on the way to the encouraging parts. They are in the book, and the person who refuses to look away is reading more honestly than the one who skips. You were probably taught to manage these texts rather than face them. This week you face them, with company that does not flinch.",
+      "practice": "Choose the passage that troubles you most and read it slowly, in full, in its setting. Then read the matching guide. Write down what the guide resolved and what it honestly did not.",
+      "read": { "label": "The Context Library, start with the guides grouped under The Hard Questions", "href": "/resources/context" },
+      "tool": { "label": "The Violence of the Old Testament, the hardest ground in Scripture, walked slowly", "href": "/resources/context/the-violence-of-the-old-testament" },
+      "reflection": "Which text have I been carrying as a private objection for years, and have I ever actually read it in full?"
+    },
+    {
+      "n": 4,
+      "focus": "What the church got wrong, said plainly",
+      "why": "Some of what you are leaving deserves to be left. The church has covered for abusers, baptized politics, sold certainty it did not own, and called the bill discipleship. I am a pastor, and I do not get to say this from a safe distance. We did this. Naming it accurately is not bitterness. It is the beginning of telling the truth, and nothing real gets rebuilt on a lie.",
+      "practice": "Write a letter you will not send, naming what the church did to you or near you. Plain words, no softening, no exaggerating. Accuracy is the discipline. Keep it with your week one list.",
+      "read": { "label": "The Disruption pages, where this site says what the church got wrong without flinching", "href": "/disruption" },
+      "tool": { "label": "The Help page, because if what was done to you was abuse, you need doors, not essays", "href": "/help" },
+      "reflection": "What did the church actually cost me, and can I say it without making it smaller or larger than it was?"
+    },
+    {
+      "n": 5,
+      "focus": "What you would be leaving, and what you would be keeping",
+      "why": "Wholesale exit feels clean, but nobody actually lives wholesale. Somewhere in the inherited package there may be things that are yours, things you would grieve, things that were true even when the people teaching them were not. An inventory is not a commitment. It is a map of what is actually at stake, made before the decision instead of after.",
+      "practice": "Keep two running lists this week, one of what you would gladly leave and one of what you would grieve losing. Add at least one item to either list each day. Be specific. Names, practices, claims.",
+      "read": { "label": "Did the Gospels Get Jesus Right, the evidence question underneath the keeping question", "href": "/resources/context/did-the-gospels-get-jesus-right" },
+      "tool": { "label": "The Hard Questions page, find the strongest treatment of whatever sits on your lists", "href": "/theology/questions" },
+      "reflection": "If I left tomorrow, what would I miss that is actually about God and not just about belonging?"
+    },
+    {
+      "n": 6,
+      "focus": "The strongest case against, and the strongest case for",
+      "why": "A faith examined only by its defenders has not been examined, and a faith examined only by its critics has not been examined either. You were probably taught to fear the strongest objections, and fear is not an argument. Neither is resentment. This week you build both cases at full strength, because a verdict reached against a straw man is not a verdict.",
+      "practice": "Write the best case against what you were taught, at full strength, no straw. Then write the best case for it, the same way. One honest page each by the end of the week, side by side.",
+      "read": { "label": "The Skeptic Track, written for people who do not believe, so the objections arrive at full strength", "href": "/skeptic-track" },
+      "tool": { "label": "The theology comparison tool, where Christian traditions disagree in the open", "href": "/theology/compare" },
+      "reflection": "Have I ever heard the strongest version of the other side from someone who actually holds it?"
+    },
+    {
+      "n": 7,
+      "focus": "Rebuilding on what survives",
+      "why": "Examination is not only demolition. After weeks of honest pressure, some things may still be standing, and what survives that kind of weather is worth building on, even if it is far smaller than what you started with. A small true thing will hold more weight than a large borrowed one. It always has.",
+      "practice": "Write a short credo, only what you can currently say with honesty. One sentence is allowed. Read it each day and revise it as the week teaches you. Nobody grades it.",
+      "read": { "label": "The Theology page, doctrine laid out plainly so you can test it instead of inheriting it", "href": "/theology" },
+      "tool": { "label": "The Verse Finder, check the texts behind any line of your credo before you keep it", "href": "/tools/verse-finder" },
+      "reflection": "What has survived my questions so far, and am I more or less surprised by that than I expected to be?"
+    },
+    {
+      "n": 8,
+      "focus": "Deciding slowly, with company",
+      "why": "The worst decisions about faith are made alone and fast, in both directions. There is no deadline on this. Whatever you decide, decide it as a person who has been heard, not as a person who finally snapped in private. Find one human being who can hold your real questions without panicking, and let them see the work. You are allowed to take years. Take them.",
+      "practice": "Have one honest conversation this week with one person who will not flinch, a friend, a counselor, a pastor who has earned it. Show them the credo and the lists. Let them ask questions. That is the whole practice.",
+      "read": { "label": "Return to the Doubt page and see whether it reads differently than it did in week one", "href": "/doubt" },
+      "tool": { "label": "The Help page, including for finding a trauma informed counselor if church harm is part of your story", "href": "/help" },
+      "reflection": "Who can hear where I actually am without needing me to land somewhere, and when will I talk with them?"
+    }
+  ]
+}

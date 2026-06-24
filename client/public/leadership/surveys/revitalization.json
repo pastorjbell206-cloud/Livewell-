@@ -1,0 +1,164 @@
+{
+  "slug": "revitalization",
+  "title": "The Revitalization Survey",
+  "subtitle": "An honest look at whether this church can be revitalized, and whether you are the ones to do it.",
+  "intro": "This is built for a leader and a core who are weighing whether and how to revitalize a declining church. Take it alone first, then take it together. Answer for the church as it actually is on a normal month, not the church you remember from twenty years ago and not the church you hope to describe to a denominational official.\n\nDecline is not a sin and a small church is not a failure. But pretending is. The questions here are blunt on purpose, because the kindest thing you can do for a struggling congregation is to tell it the truth about its own condition before you spend its last reserves of energy and money.\n\nThis survey will not tell you what to do. It will help you see clearly. And it will hold open a possibility that most revitalization material refuses to name. Sometimes the faithful word is not turnaround. Sometimes it is hospice, or merger, or a good closing that honors a long obedience. That is holy too, and a church that ends well preaches a sermon its neighbors will not forget.",
+  "scale": ["Not true of us", "Slightly true", "Somewhat true", "Mostly true", "True of us"],
+  "resultMode": "profile",
+  "dimensions": [
+    {
+      "id": "honest-facing",
+      "name": "Honest Facing of Decline",
+      "blurb": "Whether your leadership can name the real numbers and the real trajectory, or keeps managing the story to protect itself from the truth.",
+      "questions": [
+        { "id": "hf1", "text": "We can say our actual attendance and giving numbers out loud without softening them or blaming the weather.", "reverse": false },
+        { "id": "hf2", "text": "Our leaders have honestly named how many years of decline we are actually looking at, not just the last bad one.", "reverse": false },
+        { "id": "hf3", "text": "When someone raises the real condition of the church, the room changes the subject or gets defensive.", "reverse": true },
+        { "id": "hf4", "text": "We have stopped telling ourselves that the right program or the right young pastor would fix everything.", "reverse": false },
+        { "id": "hf5", "text": "We have honestly asked whether closing well might be more faithful than holding on, even if our answer is no.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "Managing the story", "body": "The leadership knows the church is in trouble and has agreed, mostly without saying so, not to look directly at how much. The numbers get softened, the decline gets blamed on the culture or the weather, and anyone who names the real trajectory is treated as disloyal. Nothing can be revitalized that cannot first be honestly seen. Before you plan a single thing, put the actual attendance and giving history of the last ten years on one page and sit with it in silence. If you cannot bear to look at it together, that is your answer about whether you are ready to begin." },
+        { "label": "Half-honest", "body": "You have admitted that things are hard, but you are still negotiating with the truth at the edges. You will say the church is declining and then immediately reach for the reason it does not really count. This is the most dangerous place to stand, because it feels like honesty and functions like denial. The work is to stop explaining the decline and simply name it, including the hardest question, which is whether revitalization is even the right goal or whether a faithful closure or merger would honor this congregation better." },
+        { "label": "Clear-eyed", "body": "Your leaders can say the real numbers, name the real years, and hold the hard possibilities open without flinching, including the possibility that the most faithful path is not turnaround but a good ending. This clarity is the foundation everything else gets built on, and most churches never reach it. Whatever you decide from here will at least be decided in the light." }
+      ]
+    },
+    {
+      "id": "praying-core",
+      "name": "A Praying Core",
+      "blurb": "Whether a real remnant is on its knees for this church, or whether prayer has thinned to a formality while a few carry the weight alone.",
+      "questions": [
+        { "id": "pc1", "text": "There is a genuine group among us who pray regularly and specifically for the future of this church.", "reverse": false },
+        { "id": "pc2", "text": "When we gather to pray for the church, more than a faithful handful actually come.", "reverse": false },
+        { "id": "pc3", "text": "Prayer for our situation has quietly become something we say we should do rather than something we do.", "reverse": true },
+        { "id": "pc4", "text": "Our people are asking God what He wants for this church, not only asking Him to keep the doors open.", "reverse": false },
+        { "id": "pc5", "text": "If revitalization happened here, we could honestly trace it to a praying remnant and not just a new strategy.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "Prayer has thinned", "body": "Prayer for the church has become a line in the bulletin and a sentence at the start of meetings, and the few who still cry out for this place are tired and largely alone. A revitalization built on strategy without intercession is just a renovation, and it will not hold. The first work is not a plan. It is to find the handful who still believe God could act here and to ask them to pray as though He might, because nothing real has ever turned without that." },
+        { "label": "A faithful few", "body": "There is a remnant that prays, and they are real, but they are carrying it without much company and they are weary. The church leans on their faithfulness without joining it. The growth here is to move prayer from the margins to the center, to gather more than the usual few, and to start asking God what He wants for this church rather than only asking Him to spare it." },
+        { "label": "A praying remnant", "body": "There is a genuine core on its knees for this church, asking not just for survival but for God's will, even when His will might be costly. This is the truest asset a declining church can have, more than money or building or programs. Guard these people, listen to them, and let their prayers shape the plan rather than decorate it." }
+      ]
+    },
+    {
+      "id": "leadership-unity",
+      "name": "Leadership Unity and Trust",
+      "blurb": "Whether the people who would lead a turnaround actually trust each other, or whether old wounds and factions would sink it before it began.",
+      "questions": [
+        { "id": "lu1", "text": "Our leaders genuinely trust one another and can disagree hard without it turning personal or political.", "reverse": false },
+        { "id": "lu2", "text": "There are no unhealed splits or old factions quietly waiting to resurface the moment change is proposed.", "reverse": false },
+        { "id": "lu3", "text": "A few longtime families effectively hold veto power over anything the leadership tries to do.", "reverse": true },
+        { "id": "lu4", "text": "Our leaders are united around the same honest picture of the church and the same basic hope for it.", "reverse": false },
+        { "id": "lu5", "text": "Past conflict in this church has been actually repented of and reconciled, not just buried and avoided.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "Divided or wounded", "body": "The people who would have to lead a revitalization do not trust each other, or they are sitting on conflict that has never been healed, or a few families quietly run the place from the back. No turnaround survives a divided leadership. It will surface the moment real change is proposed and it will tear the church apart faster than the decline ever did. Before any plan, the work is reconciliation, and if reconciliation is not possible, then honesty about whether this body can be led at all in its current state." },
+        { "label": "Fragile peace", "body": "There is unity, but it is the kind held together by avoiding the hard conversations rather than having them. Old wounds are buried and the factions are quiet, but quiet is not the same as healed. Any serious change will test this peace. The work now is to do the harder reconciliation before the pressure comes, so the leadership is bound by trust and not just by a shared reluctance to fight." },
+        { "label": "United and trusting", "body": "The leaders trust one another, they can fight fair and stay friends, the old wounds have been actually healed, and no faction holds the church hostage from the back. This is the kind of leadership a revitalization can be built on, because it will hold when the change gets hard. Protect this unity above almost everything, because it is the thing that breaks first under pressure." }
+      ]
+    },
+    {
+      "id": "willingness-change",
+      "name": "Willingness to Change",
+      "blurb": "Whether your church can actually let go of how it has always done things, or whether the building and the traditions matter more than the mission.",
+      "questions": [
+        { "id": "wc1", "text": "Our people would genuinely accept significant changes to the service, the schedule, or the building if it served the mission.", "reverse": false },
+        { "id": "wc2", "text": "We are more attached to reaching new people than to preserving the way things have always been done.", "reverse": false },
+        { "id": "wc3", "text": "The phrase we have always done it this way effectively ends most conversations about change here.", "reverse": true },
+        { "id": "wc4", "text": "Our longtime members would welcome newcomers even if it meant losing some of their own comfort and control.", "reverse": false },
+        { "id": "wc5", "text": "We would rather change and survive as a different kind of church than stay the same and slowly close.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "Frozen", "body": "The traditions, the building, and the way things have always been done now matter more than reaching anyone, even though no one would say it that plainly. A church in this condition will choose its own comfort over its own future every time the two conflict, and they conflict constantly. Honestly, a church that cannot change cannot be revitalized, and pretending otherwise only spends its last energy on a wall it will not move. The faithful question here may be whether this congregation is willing to become a different church or whether it would rather remain itself and close with dignity." },
+        { "label": "Willing but anxious", "body": "There is real openness to change, but it is shadowed by fear and by a few powerful attachments that have not been surrendered. Your people will say yes to change in theory and resist it in the particular. The work is to lead change slowly enough to keep trust and clearly enough that the church does not mistake motion for mission, and to name out loud the comforts that will have to be released." },
+        { "label": "Ready to let go", "body": "Your church loves its mission more than its habits and would change the service, the schedule, even the building, if it meant reaching the people outside. Longtime members are willing to lose some comfort and control for the sake of someone they have not met yet. This is rare and it is precious, because this is the soil revitalization actually grows in." }
+      ]
+    },
+    {
+      "id": "outward-focus",
+      "name": "Outward and Missional Focus",
+      "blurb": "Whether your church still exists for the people outside it, or has quietly become a club that exists to serve its remaining members.",
+      "questions": [
+        { "id": "of1", "text": "Reaching people who are not yet here genuinely drives our decisions, not just our mission statement.", "reverse": false },
+        { "id": "of2", "text": "Our people actually know and pray for specific neighbors, coworkers, and friends who do not know Christ.", "reverse": false },
+        { "id": "of3", "text": "Almost everything we do and spend is aimed at the people already inside these walls.", "reverse": true },
+        { "id": "of4", "text": "A stranger could walk into our church and quickly find a way to belong rather than bouncing off our circles.", "reverse": false },
+        { "id": "of5", "text": "We measure ourselves partly by whom we are reaching, not only by whether we kept the regulars happy.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "Turned inward", "body": "The church now exists, in practice, to serve the people who are already here. The budget, the calendar, and the energy all point inward, and the language of mission survives mostly on the website. A congregation this turned inward has stopped being a church for its community and become a club for its members, and clubs do not revitalize. They age and they close. The first repentance is to admit who you are actually organized to serve, and the first question is whether anyone here still wants to exist for the people outside." },
+        { "label": "Outward in heart, inward in practice", "body": "Your people genuinely care about the lost and would tell you the church is here for the community, but the calendar and the budget tell a different story. The desire is real and the structure has not caught up to it. The work is to move the outward focus from sentiment into the actual schedule and spending, and to give your people real relationships with real neighbors rather than a general concern for the world." },
+        { "label": "Genuinely missional", "body": "This church still exists for the people who are not yet here, and you can see it in where the money goes and how a stranger is welcomed. Your people know their neighbors by name and carry them to God. This outward heart is the engine of any real revitalization, because a church that is reaching people has a reason to live that a church serving only itself can never recover." }
+      ]
+    },
+    {
+      "id": "spiritual-vitality",
+      "name": "Spiritual Vitality and Conversions",
+      "blurb": "Whether God is visibly at work changing and saving lives here, or whether the spiritual life of the church has gone quiet along with the numbers.",
+      "questions": [
+        { "id": "sv1", "text": "We have seen people actually come to faith in Christ here in the last few years, not only transfer in from elsewhere.", "reverse": false },
+        { "id": "sv2", "text": "Lives are visibly being changed among us, marriages mended and addictions broken and people made new.", "reverse": false },
+        { "id": "sv3", "text": "The spiritual temperature of our church has gone as cold and quiet as our attendance numbers.", "reverse": true },
+        { "id": "sv4", "text": "There is a real hunger for God among our people, not just a loyalty to the institution.", "reverse": false },
+        { "id": "sv5", "text": "We baptize new believers with some regularity rather than wondering when we last did.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "Gone quiet", "body": "The spiritual life of the church has cooled along with the numbers. You cannot remember the last person who came to faith here, the baptistry is dry, and what remains is loyalty to the institution more than hunger for God. This is the most sobering reading on the survey, because a church can sometimes recover lost attenders but it cannot manufacture the Spirit's work. Give yourselves to repentance and to prayer for awakening before strategy, and ask honestly whether God is asking you to seek revival or to release this congregation into something new." },
+        { "label": "Embers", "body": "There is still real spiritual life here, a hunger among some, an occasional life genuinely changed, but it has grown faint and intermittent. The fire is not out, and that matters enormously, because embers can be fanned in a way that ashes cannot. The work is to find where God is still moving among your people, however small, and to give it air rather than smothering it under programs and despair." },
+        { "label": "Visibly alive", "body": "God is plainly at work here. People are coming to faith, lives are being changed, the baptistry is used, and there is real hunger for God under the surface of everything. Whatever the attendance numbers say, a church with this kind of spiritual vitality has the one thing no strategy can produce. Build on what God is already doing rather than importing someone else's revival." }
+      ]
+    },
+    {
+      "id": "financial-reality",
+      "name": "Financial Reality and Runway",
+      "blurb": "Whether you honestly know how long the money lasts, and whether your plan depends on facts or on a miracle you have not been promised.",
+      "questions": [
+        { "id": "fr1", "text": "We know honestly how many months or years we can operate before the money runs out at the current rate.", "reverse": false },
+        { "id": "fr2", "text": "Our giving comes from a healthy base of people rather than depending on two or three aging members.", "reverse": false },
+        { "id": "fr3", "text": "We are quietly spending down savings or an endowment to cover normal operating costs and calling it stable.", "reverse": true },
+        { "id": "fr4", "text": "Our building and its upkeep are an asset we can steward, not a weight slowly crushing the mission.", "reverse": false },
+        { "id": "fr5", "text": "Our revitalization plan is funded by realistic numbers, not by a financial miracle we are assuming will arrive.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "Running out", "body": "The money is going and either you have not honestly counted how long it lasts or you have and you are looking away. The giving rests on a few aging shoulders, the savings are quietly covering normal costs, and the building is eating what little is left. Stewardship requires you to know your runway to the month, and to plan inside the truth rather than inside a hope. If the honest math says the resources will not reach the turnaround, then the faithful conversation is about merger, about selling the building, or about a planned and dignified closure while there is still enough to do it well." },
+        { "label": "Tight but knowable", "body": "Finances are strained but you can see them clearly, and there is some runway left if you steward it carefully. The danger is the slow leak, the savings draining under operating costs while everyone calls it stable. The work is to count honestly, to diversify a giving base that leans too heavily on a few, and to decide soberly whether the building is an asset for the mission or a weight on it." },
+        { "label": "Stable enough to act", "body": "You know your numbers, your giving rests on a healthy base rather than a fragile few, and your building serves the mission instead of consuming it. You have enough runway to attempt real change without gambling the church's last reserves on it. Steward this honestly, because financial stability buys you time and time is the one thing a declining church is usually shortest on." }
+      ]
+    },
+    {
+      "id": "community-presence",
+      "name": "Presence and Relevance in the Community",
+      "blurb": "Whether your neighbors would notice if your doors closed, or whether the church has become invisible to the very place it sits in.",
+      "questions": [
+        { "id": "cp1", "text": "People in our surrounding community actually know we exist and have some sense of who we are.", "reverse": false },
+        { "id": "cp2", "text": "If our church closed tomorrow, our neighborhood would genuinely feel the loss, not just notice an empty building.", "reverse": false },
+        { "id": "cp3", "text": "We have become invisible to our own community, a building people drive past without a thought.", "reverse": true },
+        { "id": "cp4", "text": "We understand the actual people and needs of our neighborhood as it is now, not as it was decades ago.", "reverse": false },
+        { "id": "cp5", "text": "There are real relationships between our church and the schools, agencies, or families around us.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "Invisible", "body": "The community around you no longer knows you are here in any meaningful way. The neighborhood changed and the church did not, so you are serving people who mostly drive in from elsewhere while the actual neighbors pass an unmarked building. If your doors closed, the block would notice the parking but not the absence. A church this disconnected from its place has to ask whether it can rebuild a presence here or whether God is calling it to hand this corner to someone who will, through merger, replanting, or release." },
+        { "label": "Known but distant", "body": "People know you exist, but the relationship is thin and the church's sense of the neighborhood is often a decade or two out of date. You are present without being woven in. The work is to learn your community as it actually is right now, to build real relationships with the schools and families and agencies around you, and to become a church your neighbors would genuinely miss." },
+        { "label": "Woven in", "body": "Your community knows you, and if you closed your neighbors would grieve a real loss and not just an empty lot. You understand the people around you as they are now and you have living relationships with them. This presence is one of the strongest signs that revitalization is possible, because a church the community already trusts has a door open that most declining churches have to rebuild from nothing." }
+      ]
+    },
+    {
+      "id": "hope-and-next-gen",
+      "name": "Hope, Morale, and the Next Generation",
+      "blurb": "Whether there is still belief and young life in this church, or whether the room has aged into resignation with no one coming behind.",
+      "questions": [
+        { "id": "hn1", "text": "Our people genuinely believe God still has a future for this church and are not just waiting for the end.", "reverse": false },
+        { "id": "hn2", "text": "There are children, youth, and young families here, not only a room that grows older every year.", "reverse": false },
+        { "id": "hn3", "text": "A weary resignation has settled over us, a quiet sense that the best days are behind and nothing will change.", "reverse": true },
+        { "id": "hn4", "text": "Younger people who are here are being trusted with real responsibility, not just tolerated and managed.", "reverse": false },
+        { "id": "hn5", "text": "We could name people under forty who would carry this church forward if it had a future to carry.", "reverse": false }
+      ],
+      "levels": [
+        { "label": "Aged and resigned", "body": "The room has grown old and quiet, the young families are gone, and beneath the politeness sits a resignation that the best days are behind and the rest is just holding on. Hope is the fuel a revitalization runs on, and a generation coming behind is the reason it would matter, and right now you may have little of either. This is not said to shame anyone, because a faithful church can age, but it is said to be honest. A congregation with no hope and no next generation should weigh seriously whether God is calling it to a dignified ending, to a merger, or to giving its building and blessing to a younger work that can carry the gospel into this place when you no longer can. That ending, done well, is not a defeat. It is a final act of love for a community you will not live to reach." },
+        { "label": "Tired but not done", "body": "There is weariness here and the church has aged, but hope is not gone and there are still a few young families and younger leaders in the room. The morale is fragile and the future is uncertain, but the door has not closed. The work is to protect and feed the hope that remains, to put your young people in real responsibility rather than a waiting room, and to give the weary core something to believe in again before the resignation hardens." },
+        { "label": "Hopeful with life coming", "body": "Your people still believe God has a future here, there are children and young families in the building, and younger leaders are being trusted with real weight rather than merely tolerated. Hope and a next generation together are the surest signs that a revitalization is not only possible but worth the cost. Guard both, because hope is easily worn down and the young are easily driven off, and a church that keeps them has kept its future." }
+      ]
+    }
+  ],
+  "closing": "Whatever this survey shows you, hear one thing plainly: a church that faces its own truth and acts in faith honors God, whether that act is to fight for new life or to lay this one down with dignity, and both can be holy."
+}

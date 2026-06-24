@@ -101,7 +101,7 @@ const CATEGORIES: Category[] = [
     ],
     interpretation: {
       low: "Your closest relationship is under significant strain. This does not mean it is over. It means it needs attention that it is not getting. The distance between two people who share a life can grow so gradually that neither notices until the gap is a canyon.",
-      mid: "You have real connection, but it is uneven. Some dimensions are working -- others are not. Most relationships live here: strong enough to survive, weak enough to hurt. The question is whether you will stay at this level or do the work to go deeper.",
+      mid: "You have real connection, but it is uneven. Some dimensions are working -- others are not. Most relationships live here: strong enough to survive, weak enough to hurt. The question is whether you will stay at this level or go deeper.",
       high: "Your closest relationship shows genuine health. This is rare and worth protecting. Do not mistake stability for permanence. The couples and friends who thrive are the ones who never stop being intentional.",
     },
     nextSteps: {
@@ -153,7 +153,7 @@ const CATEGORIES: Category[] = [
         { text: "Write down three words that describe the adult you want each child to become. Put those words where you can see them. Let those words inform every discipline decision, every conversation, every choice about your time." },
       ],
       mid: [
-        { text: "Start a weekly family rhythm -- a meal, a walk, a prayer time -- that requires no planning beyond showing up together. Consistency builds the security your children need more than any activity or lesson." },
+        { text: "Start a weekly family rhythm -- a meal, a walk, a prayer time -- that requires no planning beyond being there together. Consistency builds the security your children need more than any activity or lesson." },
         { text: "Have an age-appropriate conversation about faith with each child this week. Not a lecture. A question: 'What do you think God is like?' Listen to the answer. It will tell you everything." },
       ],
       high: [
@@ -378,7 +378,7 @@ const CATEGORIES: Category[] = [
     },
     relatedLink: {
       title: "Explore the Pastors Connection Network",
-      href: "/pcn",
+      href: "/pastors",
     },
   },
 ];

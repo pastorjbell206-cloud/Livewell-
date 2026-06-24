@@ -17,8 +17,24 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
-import { PRIMARY_TRACKS, pillarToTrack, resolveTrack } from "@/lib/taxonomy";
-import { getPillar, postMatchesPillar } from "@/lib/pillars";
+import { pillarToTrack, resolveTrack, pillarForPost, PILLAR_BY_SLUG, subThemesForPost, SUBTHEMES, PILLARS_V2, MOVEMENTS } from "@/lib/taxonomy";
+import {
+  PILLAR_BY_SLUG as NEW_PILLAR_BY_SLUG,
+  PILLAR_SUBPATHWAYS,
+  SUBPATHWAY_LABEL_BY_SLUG,
+  STUDY_GUIDES_LABEL,
+} from "@/lib/subPathways";
+import { SUBPATHWAY_BY_SLUG } from "@/lib/subpathwayMap.generated";
+import { HIDDEN_SLUGS } from "@/lib/hiddenSlugs";
+
+/** A post's sub-pathway: the DB value if set, else the static slug map. */
+function resolveSub(p: any): string | null {
+  return (p?.subPathway as string | null) || SUBPATHWAY_BY_SLUG[p?.slug]?.sub || null;
+}
+/** Whether a post is part of a series (DB flag or static map). */
+function resolveSeries(p: any): boolean {
+  return !!(p?.isSeries || SUBPATHWAY_BY_SLUG[p?.slug]?.series);
+}
 
 const AUDIENCE_LABELS: Record<string, string> = {
   individuals: "Anyone",
@@ -44,7 +60,7 @@ function parseSearchParams(): URLSearchParams {
 
 export default function Writing() {
   const [location] = useLocation();
-  const postsQuery = trpc.posts.listForIndex.useQuery();
+  const postsQuery = trpc.posts.listPublished.useQuery();
   const [search, setSearch] = useState("");
   const [showFilters, setShowFilters] = useState(false);
 
@@ -56,22 +72,51 @@ export default function Writing() {
 
   const activeTrack = params.get("track");
   const activePillar = params.get("pillar");
+  const activeSubTheme = params.get("subTheme");
   const activeAudience = params.get("audience");
   const activeFormat = params.get("format");
   const urlSearch = params.get("q") ?? "";
   const effectiveSearch = search || urlSearch;
 
+  // New two-level sub-pathway taxonomy (disjoint slugs from the legacy pillars).
+  const activeSub = params.get("sub");
+  const activeSeries = params.get("series") === "true";
+  const newPillarName = activePillar ? NEW_PILLAR_BY_SLUG[activePillar] ?? null : null;
+  const isNewPillar = !!newPillarName;
+  const subLabel = activeSub ? SUBPATHWAY_LABEL_BY_SLUG[activeSub] ?? null : null;
+  const newHeading = activeSeries ? STUDY_GUIDES_LABEL : subLabel ?? newPillarName;
+
   const posts = postsQuery.data ?? [];
 
   const filtered = useMemo(() => {
     return posts.filter(p => {
+      // Hidden duplicate stubs never appear in the listing.
+      if (HIDDEN_SLUGS.has(p.slug)) return false;
       // Track
       if (activeTrack) {
         const track = pillarToTrack(p.pillar);
         if (track !== activeTrack) return false;
       }
-      // Pillar (the five top-level pillars — see lib/pillars.ts)
-      if (activePillar && !postMatchesPillar(p, activePillar)) return false;
+      // Pillar (legacy two-movement / six-pillar taxonomy)
+      if (activePillar && !isNewPillar) {
+        const pl = pillarForPost(p);
+        if (!pl || pl.slug !== activePillar) return false;
+      }
+      // Pillar (new five-pillar / sub-pathway taxonomy): a post belongs to the
+      // pillar when its sub-pathway is one of that pillar's sub-pathways.
+      if (isNewPillar && newPillarName) {
+        const postSub = resolveSub(p);
+        const subs = PILLAR_SUBPATHWAYS[newPillarName] ?? [];
+        if (!postSub || !subs.some(s => s.label === postSub)) return false;
+      }
+      // Specific sub-pathway
+      if (activeSub) {
+        if ((resolveSub(p) ?? "") !== subLabel) return false;
+      }
+      // Study Guides & Series
+      if (activeSeries && !resolveSeries(p)) return false;
+      // Sub-theme (primarily Pillar 6: marriage, fatherhood, parenting…)
+      if (activeSubTheme && !subThemesForPost(p).includes(activeSubTheme)) return false;
       // Audience
       if (activeAudience && p.audience !== activeAudience) return false;
       // Format
@@ -85,7 +130,30 @@ export default function Writing() {
       }
       return true;
     });
-  }, [posts, activeTrack, activePillar, activeAudience, activeFormat, effectiveSearch]);
+  }, [posts, activeTrack, activePillar, activeSubTheme, activeAudience, activeFormat, effectiveSearch, isNewPillar, newPillarName, activeSub, subLabel, activeSeries]);
+
+  const activePillarInfo = activePillar ? PILLAR_BY_SLUG.get(activePillar) ?? null : null;
+
+  // Counts for hiding empty filter chips (so chips never lead to 0 results).
+  const pillarCounts = useMemo(() => {
+    const c: Record<number, number> = {};
+    for (const p of posts) {
+      const pl = pillarForPost(p);
+      if (pl) c[pl.id] = (c[pl.id] ?? 0) + 1;
+    }
+    return c;
+  }, [posts]);
+  const subThemeCounts = useMemo(() => {
+    const c: Record<string, number> = {};
+    for (const p of posts) for (const st of subThemesForPost(p)) c[st] = (c[st] ?? 0) + 1;
+    return c;
+  }, [posts]);
+  const visiblePillars = PILLARS_V2.filter(
+    p => (pillarCounts[p.id] ?? 0) > 0 || activePillar === p.slug
+  );
+  const visibleSubThemes = SUBTHEMES.filter(
+    st => (subThemeCounts[st] ?? 0) > 0 || activeSubTheme === st
+  );
 
   const featured = useMemo(
     () => filtered.filter(p => p.featured).slice(0, 1)[0],
@@ -97,24 +165,35 @@ export default function Writing() {
   );
 
   const activeTrackInfo = activeTrack ? resolveTrack(activeTrack) : null;
-  const activePillarInfo = activePillar ? getPillar(activePillar) : undefined;
 
   return (
     <Layout>
       <SEOMeta
         title={
-          activePillarInfo
-            ? `${activePillarInfo.title} — Writing`
-            : activeTrackInfo
-              ? `${activeTrackInfo.title} — Writing`
-              : "Writing — All essays"
+          newHeading
+            ? `${newHeading} — Writing`
+            : activePillarInfo
+              ? `${activePillarInfo.name} — Writing`
+              : activeTrackInfo
+                ? `${activeTrackInfo.title} — Writing`
+                : "Writing — All essays"
         }
         description={
-          activePillarInfo?.description ??
-          activeTrackInfo?.description ??
-          "Every essay by James Bell — on theology, politics, the American church after Christendom, pastoring, marriage, and parenting."
+          activeSeries
+            ? "Every multi-part study guide and series by James Bell, in one place."
+            : newHeading
+              ? `Essays filed under ${newHeading}.`
+              : activePillarInfo
+                ? `Essays filed under ${activePillarInfo.name}.`
+                : activeTrackInfo?.description ??
+                  "Every essay by James Bell — on theology, politics, the American church after Christendom, pastoring, marriage, and parenting."
         }
-        url={`https://www.livewellbyjamesbell.co${location}`}
+        url={`https://www.livewellbyjamesbell.co/writing${
+          activePillar ? `?pillar=${activePillar}`
+          : activeTrack ? `?track=${activeTrack}`
+          : activeSeries ? `?series=true`
+          : ""
+        }`}
       />
 
       {/* HERO */}
@@ -143,11 +222,13 @@ export default function Writing() {
               maxWidth: "22ch",
             }}
           >
-            {activePillarInfo
-              ? activePillarInfo.title
-              : activeTrackInfo
-                ? activeTrackInfo.title
-                : "Every essay, in one place."}
+            {newHeading
+              ? newHeading
+              : activePillarInfo
+                ? activePillarInfo.name
+                : activeTrackInfo
+                  ? activeTrackInfo.title
+                  : "Every essay, in one place."}
           </h1>
           <p
             style={{
@@ -158,11 +239,15 @@ export default function Writing() {
               maxWidth: "62ch",
             }}
           >
-            {activePillarInfo
-              ? activePillarInfo.description
-              : activeTrackInfo
-                ? activeTrackInfo.description
-                : "Theology, politics, the American church after Christendom. Pastoring, marriage, parenting, prophetic justice, doubt. Sorted newest first."}
+            {activeSeries
+              ? "Every multi-part study guide and series, gathered in one place. Sorted newest first."
+              : newHeading
+                ? `Essays filed under ${newHeading}. Sorted newest first.`
+                : activePillarInfo
+                  ? `Essays filed under ${activePillarInfo.name}. Sorted newest first.`
+                  : activeTrackInfo
+                    ? activeTrackInfo.description
+                    : "Theology, politics, the American church after Christendom. Pastoring, marriage, parenting, prophetic justice, doubt. Sorted newest first."}
           </p>
           <div
             style={{
@@ -176,26 +261,61 @@ export default function Writing() {
               ? "Loading…"
               : `${filtered.length} of ${posts.length} essays shown`}
           </div>
-          <div style={{ marginTop: "12px" }}>
-            <Link
-              href="/pillars"
+
+          {/* Pillar 6 sub-theme chips */}
+          {activePillar === "living-well-after-christendom" && (
+            <div
               style={{
-                fontFamily: "var(--U)",
-                fontSize: "13px",
-                fontWeight: 500,
-                color: "var(--mustard)",
-                textDecoration: "none",
-                borderBottom: "1px solid var(--mustard)",
-                paddingBottom: "2px",
+                marginTop: "20px",
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "8px",
+                alignItems: "center",
               }}
             >
-              Browse by pillar →
-            </Link>
-          </div>
+              <Link
+                href="/writing?pillar=living-well-after-christendom"
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  letterSpacing: "0.08em",
+                  textTransform: "uppercase",
+                  padding: "6px 12px",
+                  borderRadius: "999px",
+                  border: `1px solid ${!activeSubTheme ? "var(--mustard)" : "rgba(245,240,230,0.25)"}`,
+                  color: "var(--bone)",
+                  textDecoration: "none",
+                }}
+              >
+                All
+              </Link>
+              {visibleSubThemes.map(st => (
+                <Link
+                  key={st}
+                  href={`/writing?pillar=living-well-after-christendom&subTheme=${st}`}
+                  style={{
+                    fontFamily: "var(--U)",
+                    fontSize: "11px",
+                    fontWeight: 600,
+                    letterSpacing: "0.08em",
+                    textTransform: "uppercase",
+                    padding: "6px 12px",
+                    borderRadius: "999px",
+                    border: `1px solid ${activeSubTheme === st ? "var(--mustard)" : "rgba(245,240,230,0.25)"}`,
+                    color: "var(--bone)",
+                    textDecoration: "none",
+                  }}
+                >
+                  {st.replace(/-/g, " ")}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
-      {/* TRACK CHIPS */}
+      {/* PILLAR CHIPS — the two-movement / six-pillar taxonomy */}
       <section
         style={{
           background: "var(--bone)",
@@ -223,35 +343,52 @@ export default function Writing() {
               textTransform: "uppercase",
               padding: "8px 14px",
               borderRadius: "999px",
-              border: `1px solid ${!activeTrack ? "var(--mustard)" : "var(--border)"}`,
-              background: !activeTrack ? "var(--bone-warm)" : "transparent",
+              border: `1px solid ${!activePillar && !activeTrack ? "var(--mustard)" : "var(--border)"}`,
+              background: !activePillar && !activeTrack ? "var(--bone-warm)" : "transparent",
               color: "var(--ink)",
               textDecoration: "none",
             }}
           >
             All
           </Link>
-          {PRIMARY_TRACKS.map(t => (
-            <Link
-              key={t.slug}
-              href={`/writing?track=${t.slug}`}
-              style={{
-                fontFamily: "var(--U)",
-                fontSize: "12px",
-                fontWeight: 600,
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-                padding: "8px 14px",
-                borderRadius: "999px",
-                border: `1px solid ${activeTrack === t.slug ? "var(--mustard)" : "var(--border)"}`,
-                background:
-                  activeTrack === t.slug ? "var(--bone-warm)" : "transparent",
-                color: "var(--ink)",
-                textDecoration: "none",
-              }}
-            >
-              {t.kicker}
-            </Link>
+          {visiblePillars.map((p, i) => (
+            <span key={p.slug} style={{ display: "contents" }}>
+              {/* light divider between the two movements */}
+              {i > 0 && visiblePillars[i - 1].movement !== p.movement && (
+                <span
+                  aria-hidden
+                  style={{
+                    fontFamily: "var(--U)",
+                    fontSize: "10px",
+                    letterSpacing: "0.12em",
+                    textTransform: "uppercase",
+                    color: "var(--mustard-text)",
+                    padding: "0 4px",
+                  }}
+                >
+                  {MOVEMENTS[p.movement].title}
+                </span>
+              )}
+              <Link
+                href={`/writing?pillar=${p.slug}`}
+                title={p.name}
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "12px",
+                  fontWeight: 600,
+                  letterSpacing: "0.08em",
+                  textTransform: "uppercase",
+                  padding: "8px 14px",
+                  borderRadius: "999px",
+                  border: `1px solid ${activePillar === p.slug ? "var(--mustard)" : "var(--border)"}`,
+                  background: activePillar === p.slug ? "var(--bone-warm)" : "transparent",
+                  color: "var(--ink)",
+                  textDecoration: "none",
+                }}
+              >
+                {p.name.replace(/^The /, "")}
+              </Link>
+            </span>
           ))}
         </div>
       </section>
@@ -409,7 +546,7 @@ export default function Writing() {
                 }}
               >
                 <div style={{ marginBottom: 0 }}>
-                  <TrackChip pillarOrTrack={featured.pillar} asLink={false} />
+                  <TrackChip pillarOrTrack={featured.pillar} slug={featured.slug} asLink={false} />
                 </div>
                 <h2
                   style={{
@@ -520,7 +657,7 @@ export default function Writing() {
                     }}
                   >
                     <div style={{ marginBottom: "12px" }}>
-                      <TrackChip pillarOrTrack={post.pillar} asLink={false} />
+                      <TrackChip pillarOrTrack={post.pillar} slug={post.slug} asLink={false} />
                     </div>
                     <h3
                       style={{

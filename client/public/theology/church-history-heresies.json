@@ -1,0 +1,94 @@
+{
+  "heresies": [
+    {
+      "name": "Gnosticism",
+      "era": "second century",
+      "claim": "Matter is a prison and the world was made by a lesser, ignorant god, not the true Father. We are sparks of spirit trapped in flesh, and we are saved by a secret knowledge, called gnosis, that wakes us to who we really are.",
+      "whyItAppealed": "It explained suffering and the ache of feeling out of place in a body, and it offered the flattery of being an insider who knows what the crowd cannot. It let the spiritual life skip the messy work of redeeming the body and the ordinary world.",
+      "theChurchSaid": "The church confessed that one God made heaven and earth and called it good, and that the same God who created is the God who saves. Salvation is not escape from the body but the rescue of the whole person, which is why the Word became flesh and rose bodily. Truth is public and handed down from the apostles, not whispered to a chosen few.",
+      "answeredBy": "Irenaeus of Lyons in Against Heresies, drawing on the rule of faith handed down from the apostles",
+      "stillSeenAs": "It returns wherever the spiritual is praised and the physical is despised, or where faith is sold as a hidden secret for the enlightened few."
+    },
+    {
+      "name": "Marcionism",
+      "era": "second century",
+      "claim": "The harsh God of the Old Testament who judges and demands is not the same as the loving Father revealed by Jesus. So we should cut away the Hebrew scriptures and keep only a trimmed gospel and a few of Paul's letters.",
+      "whyItAppealed": "It seemed to solve the tension between divine wrath and divine mercy by simply removing the difficult parts. It promised a clean, kind God with none of the passages that trouble a tender conscience.",
+      "theChurchSaid": "The church held that there is one God across both testaments, the God of Abraham and the Father of Jesus, and that mercy and justice are not two gods but one God fully revealed in Christ. To cut the Old Testament is to cut the roots of the gospel itself, since Jesus is the fulfillment of Israel's story. The whole of scripture, law and prophets together, bears witness to him.",
+      "answeredBy": "Tertullian in Against Marcion, and the gradual shaping of the canon that kept both testaments",
+      "stillSeenAs": "It reappears whenever people set a gentle Jesus against an embarrassing Old Testament and quietly drop the parts of the Bible they find hard."
+    },
+    {
+      "name": "Montanism",
+      "era": "second century",
+      "claim": "A new outpouring of the Spirit has come through fresh prophets whose revelations carry the same weight as scripture and call the church to a stricter, higher life. The age of the apostles is not the end of God's speaking, and the new prophecy can correct the old.",
+      "whyItAppealed": "It answered a real hunger for the Spirit in a church that felt it was cooling into routine, and it called for courage and rigor in a comfortable age. The promise of direct, present-tense revelation felt alive against settled tradition.",
+      "theChurchSaid": "The church honored prophecy but insisted that any new word must submit to the faith once delivered through the apostles, not stand over it. The Spirit who inspired scripture does not contradict scripture, and no later revelation can overturn what God has already settled in Christ. Discernment and the wider body, not the lone ecstatic voice, test what is truly from God.",
+      "answeredBy": "regional synods in Asia Minor, and later writers who weighed the new prophecy against the apostolic rule",
+      "stillSeenAs": "It surfaces wherever a leader's fresh revelation is treated as outranking scripture, or where new experiences are used to override the settled faith."
+    },
+    {
+      "name": "Modalism, also called Sabellianism",
+      "era": "third century",
+      "claim": "God is one single person who simply appears in three different modes or masks. He is Father in creation, Son in redemption, and Spirit in the church, the way one actor plays three roles, never three at once.",
+      "whyItAppealed": "It seemed the simplest way to guard that God is one and to avoid the charge of worshiping three gods. It kept the oneness of God tidy and easy to defend.",
+      "theChurchSaid": "The church confessed that Father, Son, and Spirit are not masks worn in turn but three distinct persons who are eternally one God. The Son prays to the Father and the Father speaks over the Son, which cannot be one person talking to himself. Modalism dissolves real relationship within God and makes the gospel a kind of pretending.",
+      "answeredBy": "Tertullian, Hippolytus, and the later creed of the church that named one God in three persons",
+      "stillSeenAs": "It lingers in well-meaning illustrations that make the Trinity sound like one God switching hats rather than three persons in one being."
+    },
+    {
+      "name": "Arianism",
+      "era": "fourth century",
+      "claim": "The Son is the first and highest of all created beings, glorious beyond measure, but still made by the Father and not eternal. There was a time, however unimaginable, when the Son was not.",
+      "whyItAppealed": "It protected the uniqueness of the one God and seemed to fit a plain reading of verses where Jesus speaks of the Father as greater. It made the relationship of Father and Son feel logical and orderly to the philosophical mind.",
+      "theChurchSaid": "The church confessed that the Son is of the same being as the Father, eternally begotten and not made, true God from true God. If the Son is a creature, then in Christ a creature saves us and we worship something less than God, which the church could not accept. Only God can reconcile us to God, so the one who saves must be fully divine.",
+      "answeredBy": "the Council of Nicaea in 325 with the word homoousios, defended afterward by Athanasius",
+      "stillSeenAs": "It lives on in any teaching that calls Jesus the highest creature, a god, or a lesser divine being rather than fully and eternally God."
+    },
+    {
+      "name": "Apollinarianism",
+      "era": "fourth century",
+      "claim": "In Jesus the divine Word took the place of a human mind or soul, joining a human body to a divine reason. So Christ had real flesh, but his inner life was simply God, not a complete human person.",
+      "whyItAppealed": "It seemed to protect the unity of Christ and to keep him free of human ignorance and sin by removing the fallible human mind. It made the incarnation feel cleaner and less risky.",
+      "theChurchSaid": "The church taught that what is not assumed is not healed, so if Christ lacked a human mind then the human mind is not redeemed. Jesus must be fully human, body and rational soul, to save the whole of what we are. He is true God and true man, complete in both.",
+      "answeredBy": "Gregory of Nazianzus, and the Council of Constantinople in 381",
+      "stillSeenAs": "It returns whenever Jesus is pictured as God merely dressed in a human shell, going through human motions without a genuinely human inner life."
+    },
+    {
+      "name": "Nestorianism",
+      "era": "fifth century",
+      "claim": "In Christ the divine and the human are so distinct that they amount to two persons, a divine Son and a human son, joined in close partnership. For this reason Mary should be called mother of the man Jesus, not mother of God.",
+      "whyItAppealed": "It carefully guarded the difference between God and humanity and kept the divine nature from seeming to suffer or change. It honored the full humanity of Jesus without confusing it with his deity.",
+      "theChurchSaid": "The church insisted that Jesus is one single person, the eternal Son, who is at once fully God and fully man. Because he is one person, it is right to say that God was born, God suffered, and God died for us, which is the heart of the gospel. To split Christ into two persons is to lose the one Savior who unites God and humanity in himself.",
+      "answeredBy": "Cyril of Alexandria, and the Council of Ephesus in 431, which affirmed Mary as Theotokos, the God-bearer",
+      "stillSeenAs": "It echoes whenever the divine Christ and the human Jesus are treated almost as two separate figures rather than one undivided person."
+    },
+    {
+      "name": "Eutychianism, also called Monophysitism",
+      "era": "fifth century",
+      "claim": "After the incarnation Christ has only one nature, because his humanity was absorbed into his divinity like a drop of honey in the sea. The human and the divine blended into a single new nature.",
+      "whyItAppealed": "It seemed the strongest way to defend the unity of Christ against any hint of splitting him. It exalted the deity of Jesus so highly that his humanity felt swallowed up in glory.",
+      "theChurchSaid": "The church confessed that Christ is one person in two natures, divine and human, without confusion, change, division, or separation. His humanity is not absorbed or diluted but remains fully real and fully ours. If his humanity is dissolved, then he is no longer one of us and cannot stand in our place.",
+      "answeredBy": "Pope Leo's Tome, and the Council of Chalcedon in 451",
+      "stillSeenAs": "It returns wherever the deity of Jesus is stressed so heavily that his real humanity quietly disappears."
+    },
+    {
+      "name": "Donatism",
+      "era": "fourth century",
+      "claim": "The church must be a society of the pure, and ministers who failed under persecution lost their standing. So baptisms and ordinations performed by unworthy clergy are empty and must be done again by the holy.",
+      "whyItAppealed": "It rose from real wounds, from those who had stayed faithful under torture and could not stomach being led by those who had handed over the scriptures to escape it. It defended holiness and integrity in a church that had paid a high price.",
+      "theChurchSaid": "The church taught that the validity of a sacrament rests on Christ and not on the holiness of the minister, so grace is not held hostage to human failure. The church on earth is a mixed body of wheat and weeds until the final harvest, not a club of the spotless. Mercy makes room for the repentant rather than building a church of the proud.",
+      "answeredBy": "Augustine of Hippo, and the Council of Carthage that rejected rebaptism",
+      "stillSeenAs": "It reappears in any movement that ties God's grace to the moral purity of the leader, or that splits off to form a remnant of the truly clean."
+    },
+    {
+      "name": "Pelagianism",
+      "era": "fifth century",
+      "claim": "Human nature is not so damaged by the fall that we cannot take the first step toward God on our own. By free will we can choose the good and even live without sin, and grace is help that follows our effort rather than the source of it.",
+      "whyItAppealed": "It took moral responsibility seriously and refused to let people blame their sin on a broken nature. It honored human dignity and the call to genuine holiness, and it felt fair.",
+      "theChurchSaid": "The church confessed that sin has wounded us so deeply that even the will to turn to God is itself a gift of grace. We do not earn the beginning of our salvation, for God's grace goes ahead of us and awakens the dead heart. Boasting is ruled out, because from first to last salvation is the work of God received by faith.",
+      "answeredBy": "Augustine of Hippo, and the Councils of Carthage in 418 and Ephesus in 431",
+      "stillSeenAs": "It lives in the quiet belief that we save ourselves by being good enough, and that God mainly assists those who have already done their part."
+    }
+  ]
+}

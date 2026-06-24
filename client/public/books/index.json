@@ -1,0 +1,44 @@
+{
+  "books": [
+    {
+      "slug": "character-before-competence",
+      "title": "Character Before Competence",
+      "subtitle": "Leading the Church Without Losing Your Soul",
+      "blurb": "The church keeps falling for the same lie, that a man who can do the work has therefore become the kind of man the work requires. This is a book about the difference, written by a working pastor who has stood on the wrong side of it. It traces the inner life of the leader from the qualifications God actually screens for to the day he hands the work to someone else, and it refuses, all the way through, to let the writer stand outside the indictment.",
+      "pillar": "Leadership Formation",
+      "chapters": 11
+    },
+    {
+      "slug": "deep-roots",
+      "title": "Deep Roots",
+      "subtitle": "Why Doctrine, Church History, and the Whole Story of Scripture Still Hold",
+      "blurb": "James Bell takes the reader down to the roots of the Christian faith, the doctrines we recite without using, the councils we forgot we owe, and the single story Scripture has been telling all along. Written for skeptics, for Christians carrying real questions, and for anyone whose faith has outgrown the slogans it was handed, Deep Roots argues that the old depths are not a museum to admire but the only ground strong enough to stand on. It is theology that refuses to separate rigor from warmth, written from inside the room where people fall apart.",
+      "pillar": "Theological Depth",
+      "chapters": 12
+    },
+    {
+      "slug": "mishpat",
+      "title": "Mishpat",
+      "subtitle": "God, the Poor, and the Justice the Church Forgot",
+      "blurb": "Justice is not a partisan word smuggled into Scripture. It is one of the oldest words in Scripture, and the church has spent a long time learning not to hear it. This book recovers what the Bible means by mishpat and tsedaqah, traces God's relentless lean toward the poor and the foreigner, and refuses both the gospel that blesses your portfolio and the politics that swallows the gospel whole.",
+      "pillar": "Prophetic Justice",
+      "chapters": 11
+    },
+    {
+      "slug": "the-captive-church",
+      "title": "The Captive Church",
+      "subtitle": "Nationalism, Empire, and the Cost of Cultural Christianity",
+      "blurb": "The church keeps reaching for the kingdoms of the world on the terms the world offers them, and keeps calling the reach faithfulness. This book follows the one temptation Jesus refused in the wilderness through Constantine, the denarius, the flag on the platform, and the water we no longer see, and it indicts every tribe by the same cross. It is not a book about politics. It is a book about who the church belongs to.",
+      "pillar": "Prophetic Disruption",
+      "chapters": 10
+    },
+    {
+      "slug": "the-undivided-life",
+      "title": "The Undivided Life",
+      "subtitle": "Following Jesus Through an Ordinary Week",
+      "blurb": "Most of us were handed a faith for Sundays and a calendar for the other six days, and we have lived in the gap ever since. This is a book about closing it. Marriage and money, work and rest, the body and the home and the friends who know your real name, all of it claimed by one Lord and offered as one life.",
+      "pillar": "Integrated Life",
+      "chapters": 12
+    }
+  ]
+}

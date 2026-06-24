@@ -24,7 +24,6 @@ export const productBundles = mysqlTable("product_bundles", {
   price: decimal("price", { precision: 10, scale: 2 }).notNull(),
   originalPrice: decimal("original_price", { precision: 10, scale: 2 }),
   discount: int("discount"), // percentage
-  description: text("description"),
   longDescription: text("long_description"),
   imageUrl: varchar("image_url", { length: 500 }),
   isActive: boolean("is_active").default(true),

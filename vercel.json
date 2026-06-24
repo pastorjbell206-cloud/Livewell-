@@ -1,7 +1,10 @@
 {
-    "buildCommand": "rm -rf node_modules/.vite .vite dist && pnpm run sitemap && pnpm run build && pnpm run prerender",
+    "buildCommand": "rm -rf node_modules/.vite .vite dist && pnpm run pdfs && pnpm run manuals && pnpm run og && pnpm run howtos && pnpm run wisdom && pnpm run sitemap && pnpm run build && pnpm run prerender",
     "outputDirectory": "dist/public",
     "installCommand": "pnpm install --no-frozen-lockfile",
+    "functions": {
+        "api/index.ts": { "maxDuration": 60, "includeFiles": "api/_ebooks/**" }
+    },
     "headers": [
           {
                   "source": "/(.*)",
@@ -11,7 +14,7 @@
                             { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
                             { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=()" },
                             { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
-                            { "key": "Content-Security-Policy", "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' https://va.vercel-scripts.com; connect-src 'self' https://va.vercel-scripts.com https://vitals.vercel-insights.com; upgrade-insecure-requests" }
+                            { "key": "Content-Security-Policy-Report-Only", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://js.stripe.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:; frame-src https://js.stripe.com https://checkout.stripe.com https://www.youtube.com; frame-ancestors 'self'" }
                   ]
           }
     ],
@@ -20,6 +23,8 @@
           { "source": "/articles/:slug", "destination": "/writing/:slug", "permanent": true },
           { "source": "/for-families", "destination": "/parenting", "permanent": true },
           { "source": "/books-store", "destination": "/books", "permanent": true },
+          { "source": "/quiz", "destination": "/tools/theology-quiz", "permanent": true },
+          { "source": "/resources-for-pastors", "destination": "/for-pastors", "permanent": true },
           {
                   "source": "/(.*)",
                   "has": [{ "type": "host", "value": "livewellbyjamesbell.co" }],
@@ -32,6 +37,6 @@
           { "source": "/rss.xml", "destination": "/api/index.ts" },
           { "source": "/feed", "destination": "/api/index.ts" },
           { "source": "/feed.xml", "destination": "/api/index.ts" },
-          { "source": "/((?!assets/|api/).*)", "destination": "/index.html" }
+          { "source": "/((?!assets/|api/|.*\\.).*)", "destination": "/index.html" }
     ]
 }

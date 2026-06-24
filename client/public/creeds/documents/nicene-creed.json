@@ -1,0 +1,51 @@
+{
+  "slug": "nicene-creed",
+  "title": "The Nicene Creed",
+  "subtitle": "The full text of the Nicene Creed of AD 381, with notes on Arius, homoousios, the filioque dispute between East and West, and why one Greek word mattered.",
+  "group": "The Ecumenical Creeds",
+  "date": "AD 325 / 381",
+  "intro": "In the early fourth century a popular Alexandrian presbyter named Arius taught that the Son of God was the highest of creatures: glorious, pre-existent, but made. There was, he said, when he was not. The teaching spread through songs sung by dockworkers and sailors, and it nearly carried the church. In 325 the emperor Constantine summoned bishops from across the empire to Nicaea, many of them still bearing scars from the persecutions, and they answered Arius with a single Greek word: homoousios. The Son is of one substance with the Father. Not similar. Not exalted. The same God.\n\nThe fight did not end at Nicaea. For fifty years the Arian party held councils, exiled bishops (Athanasius five times), and came close to winning the empire. The creed recited today is the revision adopted at Constantinople in 381, which kept Nicaea's verdict on the Son and extended it to the Holy Spirit against those who had conceded the Son's deity but balked at the Spirit's. It is the most widely confessed statement of faith in Christian history. Eastern Orthodox, Roman Catholic, and most Protestant churches all confess it, though one later Western addition, noted below, still divides East from West.\n\nThe stakes were never academic. If the Son is a creature, then God did not come for us himself. He sent someone else, and the cross is the suffering of a subordinate. The old men at Nicaea understood that everything depends on who, exactly, hung there. So do the new Arians, who still come, as they always come, speaking of Jesus as exalted, derivative, less. The creed was written for them. It was written for us.",
+  "text": "We believe in one God, the Father Almighty, Maker of heaven and earth, and of all things visible and invisible.\n\nAnd in one Lord Jesus Christ, the only-begotten Son of God, begotten of his Father before all worlds, God of God, Light of Light, very God of very God, begotten, not made, being of one substance with the Father, by whom all things were made; who for us men and for our salvation came down from heaven, and was incarnate by the Holy Ghost of the Virgin Mary, and was made man; and was crucified also for us under Pontius Pilate; he suffered and was buried; and the third day he rose again according to the Scriptures, and ascended into heaven, and sitteth on the right hand of the Father; and he shall come again, with glory, to judge both the quick and the dead; whose kingdom shall have no end.\n\nAnd we believe in the Holy Ghost, the Lord and Giver of Life, who proceedeth from the Father; who with the Father and the Son together is worshipped and glorified; who spake by the prophets.\n\nAnd we believe one holy catholic and apostolic Church. We acknowledge one baptism for the remission of sins; and we look for the resurrection of the dead, and the life of the world to come. Amen.",
+  "annotations": [
+    {
+      "phrase": "begotten of his Father before all worlds",
+      "note": "Against Arius's slogan 'there was when he was not.' The Son's begetting is eternal. There is no moment, before time or in it, when the Father existed without the Son. Begetting describes relationship, not manufacture."
+    },
+    {
+      "phrase": "very God of very God",
+      "note": "'Very' means 'true': true God from true God. The creed piles up parallel phrases (God of God, Light of Light) to close every loophole. Light from light was a favorite image: the sun is never without its radiance, and the radiance is not a second sun."
+    },
+    {
+      "phrase": "begotten, not made",
+      "note": "The dagger aimed at Arius. He said the Son was the first and greatest of God's works. The creed answers: a son is begotten of his father's own nature. A work is made out of nothing. Christ is the former, never the latter."
+    },
+    {
+      "phrase": "being of one substance with the Father",
+      "note": "The Greek is homoousios: same in being, same in essence. One word, not found in Scripture, chosen because every scriptural phrase had been twisted to fit Arianism. Whole careers were ended and bishops exiled over the difference between homoousios and homoiousios, 'of similar substance.' The single iota was the whole gospel."
+    },
+    {
+      "phrase": "for us men and for our salvation",
+      "note": "The hinge of the creed. The metaphysics serves rescue. As Athanasius argued, only God can save, and only what God assumes is healed. So if the one who came down is less than God, we are still in our sins."
+    },
+    {
+      "phrase": "who proceedeth from the Father",
+      "note": "This is the original text of 381. Centuries later the Western church added 'and the Son' (in Latin, filioque), first in Spain around 589, and eventually in Rome itself. The East never accepted the addition, both for its theology and because the West altered an ecumenical creed unilaterally. The filioque remains a formal point of division between Eastern Orthodoxy and the Western churches to this day, and stands among the causes of the schism of 1054."
+    },
+    {
+      "phrase": "the Lord and Giver of Life",
+      "note": "Added in 381 against the Pneumatomachians, the 'Spirit-fighters,' who granted the Son's deity but called the Spirit a creature or a force. To call the Spirit 'Lord,' worshipped together with the Father and the Son, is to confess the full Trinity."
+    },
+    {
+      "phrase": "according to the Scriptures",
+      "note": "Lifted from 1 Corinthians 15:3–4. The resurrection is not a free-floating miracle. It is the fulfillment of Israel's Scriptures. The creed never imagines a Jesus detached from the Old Testament."
+    },
+    {
+      "phrase": "whose kingdom shall have no end",
+      "note": "Aimed at Marcellus of Ancyra, who taught that the Son's reign would eventually dissolve back into the Father. The creed insists the incarnate Christ reigns forever. The incarnation is not a phase God passes through."
+    },
+    {
+      "phrase": "one baptism for the remission of sins",
+      "note": "Baptism is unrepeatable because God's claim in it is reliable. The phrase also quietly settled a pastoral fight: Christians who lapsed under persecution were not rebaptized when they returned. Grace does not start over. It holds."
+    }
+  ]
+}

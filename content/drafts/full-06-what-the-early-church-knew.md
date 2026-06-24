@@ -22,7 +22,7 @@ They did not lobby. They did not organize voting blocs — they could not, the f
 
 They did not try to take over the imperial cult. They refused to participate in it; they did not try to replace it. The distinction is important. When they refused to burn incense to Caesar, they were not refusing because they thought Caesar should be burning incense to Christ. They were refusing because they thought Christ was Lord and Caesar was Caesar, and the two were operating in different orders. The political order was the political order; the church was the church. The two had a relationship — a fraught one — but they were not the same thing, and the early Christians were not trying to make them the same thing.
 
-They did not, in other words, run the playbook American evangelicals have run for forty years. They did not seek political power. They did not seek cultural privilege. They did not seek a return to a Christian past — there was no Christian past to return to. They were the first Christian present, building it in real time, in conditions that did not give them any of the political tools we have spent the past generation insisting were essential to faithful witness.
+They did not, in the end, run the playbook American evangelicals have run for forty years. They did not seek political power. They did not seek cultural privilege. They did not seek a return to a Christian past — there was no Christian past to return to. They were the first Christian present, building it in real time, in conditions that did not give them any of the political tools we have spent the past generation insisting were essential to faithful witness.
 
 They built what they built anyway. The building took a different shape.
 

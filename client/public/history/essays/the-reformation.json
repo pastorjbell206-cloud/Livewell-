@@ -1,0 +1,51 @@
+{
+  "slug": "the-reformation",
+  "title": "The Reformation",
+  "subtitle": "Luther and the German movement, the Reformed stream, the Radical wing, the English settlement, and the Catholic response. Honest about the recovery and about the violence and division.",
+  "era": "Reformation",
+  "dateRange": "AD 1517-1648",
+  "sections": [
+    {
+      "id": "luther",
+      "kicker": "Wittenberg",
+      "title": "The Monk Who Could Not Find Peace",
+      "body": "It started with a man who could not make his conscience quiet. Martin Luther was a German monk, brilliant and tormented, who did everything the medieval church told him to do to be right with God, and found no rest in any of it. He confessed until his confessor was exhausted. He fasted and prayed and punished his body. And still he was sure God hated him, because the demand for righteousness was endless and his own righteousness was not. The discovery that finally freed him came from Paul's letter to the Romans. The righteousness God requires is the righteousness God gives, received by faith, not earned by effort. Luther said it felt like being born again and walking through open gates into paradise.\n\nIn 1517 he posted ninety-five theses against the sale of indulgences, the practice of selling reduced time in purgatory to fund church building. He meant to start a debate among scholars. He started a fire across Europe instead, because the new printing press carried his words faster than any authority could answer them. When he was ordered to recant, he refused, saying his conscience was captive to the Word of God. He was excommunicated and declared an outlaw, and he should have been killed. He survived because German princes protected him, partly from conviction and partly because his cause served their own resistance to Rome and the emperor. The recovery and the politics were tangled from the first day, and they never came apart."
+    },
+    {
+      "id": "reformed",
+      "kicker": "Switzerland and Geneva",
+      "title": "The Reformed Stream",
+      "body": "Luther was not alone, and the movement quickly grew beyond him. In the Swiss cities a second stream took shape, more thoroughgoing than Luther in stripping away medieval practice and more concerned to order the whole of life under the Word of God. Ulrich Zwingli led the reform in Zurich and broke with Luther over the Lord's Supper, a division between reformers that proved as bitter as their shared quarrel with Rome and that they never healed.\n\nThe figure who gave this stream its lasting shape was John Calvin, a French lawyer and scholar who settled in Geneva and turned it into a model of reformed church and society. Calvin was a systematic mind. His Institutes of the Christian Religion organized the new theology into a coherent whole, and his vision spread far beyond Geneva, into France, the Netherlands, Scotland, and eventually across the sea to a new continent. The Reformed tradition emphasized the sovereignty of God over all things, the authority of Scripture over church and state alike, and a disciplined common life. It produced both real holiness and real harshness. Geneva under Calvin could be a city of serious faith and also a place where dissent was not tolerated, and the burning of the heretic Servetus there remains a stain that Calvin's admirers should not explain away."
+    },
+    {
+      "id": "radical",
+      "kicker": "The Left Wing",
+      "title": "The Radicals Who Went Further",
+      "body": "Some thought the reformers had not gone far enough. The Radical wing, often called Anabaptists, concluded that if the church was to be rebuilt on Scripture alone, then much that Luther and Calvin kept should also go. Chiefly they rejected infant baptism, insisting that baptism belonged only to those who could profess faith for themselves, and so they baptized adults who had already been baptized as babies. The name Anabaptist, meaning rebaptizer, was an insult.\n\nFor this they were hunted by Catholics and Protestants alike, who saw them as a threat to the whole social order, since a church of voluntary believers undercut the assumption that everyone born in a territory belonged to its church. Anabaptists were drowned, burned, and beheaded across Europe, and they died in large numbers with a courage their persecutors could not deny. A minority turned violent, most notoriously in the city of Munster, where radicals seized control and ended in bloody disaster, and that episode was used to justify slaughtering the peaceful majority who wanted only to follow their conscience.\n\nThe Radicals are the ancestors of much that later Christians take for granted. Believers baptism, the free church gathered by conviction rather than birth, the separation of church and state, and the refusal to coerce faith by the sword. They paid for those convictions with their lives, and the churches that now hold them owe a debt to the people they once helped to kill."
+    },
+    {
+      "id": "english",
+      "kicker": "England",
+      "title": "The English Settlement",
+      "body": "The English Reformation began for reasons that had little to do with theology. King Henry the Eighth wanted his marriage annulled, the pope refused, and Henry responded by declaring himself, rather than the pope, the head of the church in England. The break with Rome was at first a matter of royal authority more than reformed conviction, and Henry himself remained close to the old religion in much of his belief.\n\nWhat followed was a long, unsteady struggle over how Protestant England would be. Under Henry's young son the reform went forward. Under his daughter Mary the country was forced back toward Rome, and Protestants were burned at the stake, leaving a memory that shaped English fear of Catholicism for centuries. Under Elizabeth the First a settlement was reached that tried to hold the middle, a church Protestant in doctrine but keeping much of the old structure and worship, broad enough to contain people who would have preferred to go further and people who would have preferred to go back. That compromise pleased no extreme and held the realm together, and it produced in time the worldwide Anglican tradition. England's path shows how often the Reformation moved by the will of kings as much as the conscience of believers, and how God worked even through the tangled motives of those who held the crown."
+    },
+    {
+      "id": "catholic-response",
+      "kicker": "Rome Answers",
+      "title": "The Catholic Response and the Cost",
+      "body": "Rome did not stand still. The Catholic Church mounted a response that was both a defense against the reformers and a genuine renewal of its own, often called the Counter-Reformation. The Council of Trent, meeting across the middle of the century, defined Catholic doctrine sharply against the Protestants, reaffirming the authority of tradition alongside Scripture and the place of the church's sacraments and good works in salvation. It also corrected real abuses, ended much of the corruption that had given Luther his opening, and reformed the training and conduct of clergy. New orders arose, above all the Jesuits, who carried a disciplined Catholic faith back into contested lands and outward to Asia and the Americas. This was not merely reaction. It was a serious recovery within the old church, and it should be told as such.\n\nBut the whole century should not be told as a clean story of recovery on any side. The Reformation tore Western Christianity into pieces that have never been reassembled, and the tearing was soaked in blood. Catholics killed Protestants and Protestants killed Catholics and both killed the Radicals. Wars of religion ravaged France and the Low Countries, and the conflict reached its horror in the Thirty Years War, which devastated Germany and killed a staggering portion of its people before exhaustion forced peace in 1648.\n\nSo we hold two truths together and refuse to drop either. The Reformation recovered something the church had buried, the freeness of grace, the authority of Scripture, the access of ordinary people to the Word of God in their own tongue. And the Reformation came with division and violence and the burning of dissenters by men who were sure they served God. Both are true. The recovery was real and the church needed it. The blood was real and the church should mourn it. Anyone who can only see one side of that is not yet telling the truth about what happened, and we are the heirs of all of it, the gift and the wound together."
+    }
+  ],
+  "keyFigures": [
+    { "name": "Martin Luther", "note": "German monk whose recovery of justification by faith began the movement in 1517." },
+    { "name": "John Calvin", "note": "Reformer of Geneva whose systematic theology shaped the Reformed tradition." },
+    { "name": "The Anabaptists", "note": "The Radical wing who rejected infant baptism and were persecuted by all sides." },
+    { "name": "The Council of Trent", "note": "The Catholic Church's reforming and defining response across the mid-century." }
+  ],
+  "sources": [
+    { "title": "The Story of Christianity, Volume 2", "author": "Justo Gonzalez" },
+    { "title": "Christianity: The First Three Thousand Years", "author": "Diarmaid MacCulloch" },
+    { "title": "Reformation: Europe's House Divided", "author": "Diarmaid MacCulloch" },
+    { "title": "Church History in Plain Language", "author": "Bruce Shelley" }
+  ]
+}

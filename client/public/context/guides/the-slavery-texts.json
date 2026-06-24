@@ -1,0 +1,46 @@
+{
+  "slug": "the-slavery-texts",
+  "title": "The Slavery Texts",
+  "subtitle": "Abolitionists and slaveholders carried the same Bible into the same century, and only one of them read it whole. What the texts regulated, what they outlawed, and how the church chose not to know.",
+  "kicker": "Hard Questions",
+  "group": "The Hard Questions",
+  "sections": [
+    {
+      "id": "one-word-two-institutions",
+      "kicker": "The Word",
+      "title": "One Word, Two Institutions",
+      "body": "The English word slavery makes one institution out of at least two. The race-based chattel slavery of the Atlantic world seized free people by violence, declared them property by blood, in perpetuity, children included, and built a legal wall against their escape, their literacy, and their personhood. Most servitude in the Hebrew Bible was something else, debt bondage, a poor man selling his labor for a term to survive a bad harvest, with release mandated in the seventh year and provision required at departure. The person remained a person in the law, with sabbath rest, legal standing, and avenues out.\n\nDo not let that comparison become a sedative. Ancient servitude was not employment. It involved real power over real bodies, and Greco-Roman slavery, the world of the New Testament, could be brutal beyond telling. The Bible's first readers knew masters who maimed and sold. Nothing in this guide asks you to imagine otherwise.\n\nBut a reader who hears Exodus and sees Alabama in 1850 has fused two institutions the texts themselves distinguish, and from then on the fusion does the arguing. Precision here is not apologetics. It is the minimum the question deserves."
+    },
+    {
+      "id": "the-torah-against-the-codes",
+      "kicker": "The Codes",
+      "title": "The Torah Against Its Neighbors",
+      "body": "Set the Torah beside the law codes of its neighbors and read the differences. Exodus 21:16 makes kidnapping a person to sell him a capital crime, no exceptions named. That single verse criminalizes the entire mechanism of the Atlantic slave trade at the level of a death-penalty offense. Deuteronomy 23 commands Israel not to return an escaped slave to his master but to let him live wherever he chooses, unoppressed. The Code of Hammurabi runs the opposite direction. It prescribes death for the man who harbors a runaway. One code protects the fugitive. The other protects the owner. Every fugitive slave law in American history sided with Hammurabi.\n\nThe Torah also frees a servant outright for an injury as small as a knocked-out tooth, extends the sabbath to servants by name, and roots the whole structure in a memory. You were slaves in Egypt. John Walton has argued that ancient law collections were less legislation than wisdom describing a just order, and by that measure the Torah's order is bent visibly toward the vulnerable.\n\nPaul Copan is candid that these laws are not the end of the road, and they were never meant to be. They are the road, running away from Egypt."
+    },
+    {
+      "id": "philemon-and-the-lit-fuse",
+      "kicker": "The Letter",
+      "title": "Philemon and the Lit Fuse",
+      "body": "The New Testament's most direct word on slavery is a personal letter. Onesimus, a slave, has left his master Philemon and found Paul, who sends him back carrying the letter, which sounds like surrender until you read it. Paul tells Philemon to receive Onesimus no longer as a slave but more than a slave, a beloved brother, to charge any debt to Paul's own account, and then, in front of the whole church that will hear the letter read aloud, adds that he is confident Philemon will do even more than he asks.\n\nWhy not simply command abolition? A movement of a few thousand people in a hostile empire publishing a call for slave revolt would have accomplished one thing, crosses along the roads. What Paul does instead is detonate the category from inside. A brother cannot be property. Galatians 3:28 had already said it. In Christ there is neither slave nor free.\n\nThe fuse burned slowly, but it burned. By the fourth century Gregory of Nyssa was preaching against slaveholding as such, demanding to know what price could be set on the image of God. He may be the first voice in recorded history to attack the institution itself, and he got the argument from this book."
+    },
+    {
+      "id": "the-american-test",
+      "kicker": "The Failure",
+      "title": "The American Test, Failed",
+      "body": "Then the test came to my country and my tradition, and we failed it. Mark Noll has told the story straight in The Civil War as a Theological Crisis. Slaveholding theologians had the easier surface argument. The word slave appears, Abraham held servants, Paul never commands abolition, case closed. Abolitionists had the deeper one. The Atlantic system was built on man-stealing, which the Torah punishes with death, and on treating brothers as property, which Philemon makes unsayable. But the deeper argument required reading in context and trajectory, and a proof-texting culture distrusted anything that took that long. Noll's grim conclusion is that the theological dispute was settled not by exegetes but by armies.\n\nName the failures without flinching. My own denomination, the Southern Baptist Convention, was founded in 1845 so that slaveholders could serve as missionaries. Whips were blessed from pulpits. Frederick Douglass wrote that between the Christianity of this land and the Christianity of Christ he recognized the widest possible difference, and he was the one reading carefully.\n\nThe slaveholders did not get their position from the text. They brought it there, and when the text resisted, they preached louder."
+    },
+    {
+      "id": "no-whitewash",
+      "kicker": "The Verdict",
+      "title": "No Whitewash, No Surrender",
+      "body": "So what does context actually buy here? Not acquittal for the church. Nothing buys that. Centuries of baptized cruelty are part of Christian history, and a skeptic who holds them against us is handling the evidence correctly. I will not ask you to look away, because the prophets never did.\n\nWhat context buys is precision about where the corruption lived. The Atlantic trade was a kidnapping economy, and the Bible's own law calls kidnapping for sale a capital crime. The plantation declared human beings property forever, and the Bible's central letter on the subject calls a slave a brother and makes the word property impossible to keep saying. The men who quoted Scripture over the auction block were not reading it in context. They were reading it against itself, and the abolitionists, many of them former slaves, proved it with the same book in their hands.\n\nA book is fairly judged by what it says read whole, and a church is fairly judged by what it did. Read whole, the book sides with the man in chains. Too often, the church holding it did not. Both of those sentences are true. You will have to carry them together, and so will I."
+    }
+  ],
+  "keyTexts": ["Exodus 21:16", "Deuteronomy 23:15-16", "Philemon 1:15-16"],
+  "sources": [
+    { "title": "The Civil War as a Theological Crisis", "author": "Mark A. Noll" },
+    { "title": "Is God a Moral Monster? Making Sense of the Old Testament God", "author": "Paul Copan" },
+    { "title": "The Lost World of the Torah: Law as Covenant and Wisdom in Ancient Context", "author": "John H. Walton and J. Harvey Walton" },
+    { "title": "Narrative of the Life of Frederick Douglass, an American Slave", "author": "Frederick Douglass" }
+  ]
+}

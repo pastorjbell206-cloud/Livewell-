@@ -1,0 +1,56 @@
+{
+  "slug": "exegetical-fallacies",
+  "title": "The Exegetical Fallacies That Wreck Sermons",
+  "subtitle": "A working pastor's guide to the common interpretation errors that ruin preaching, from the root fallacy to anachronism to illegitimate totality transfer, and how to stop making them",
+  "kicker": "Exegesis",
+  "group": "Exegesis and Bible Study",
+  "sections": [
+    {
+      "id": "the-confident-mistake",
+      "kicker": "Why This Matters",
+      "title": "The Confident Mistake",
+      "body": "Bad exegesis does not sound bad. That is the danger. It sounds learned. It comes with a Greek word and a knowing tone, and the congregation nods, because the man in the pulpit seems to have gone somewhere they cannot follow.\n\nMost of the worst interpretation in the church is done by people who studied. Not by the lazy. By the diligent who learned a little and used it badly.\n\nI have stood in that pulpit and done it. I have pulled a word apart on a Tuesday, found a meaning that thrilled me, and preached it on Sunday to people who trusted me, and I was wrong, and no one in the room had the tools to catch me. That is the weight of this work. An exegetical fallacy is not an academic embarrassment. It is a false word spoken in God's name to people who came to hear him. The errors below are the ones I keep watching faithful men make, and the ones I have to keep watching in myself."
+    },
+    {
+      "id": "root-fallacy",
+      "kicker": "Fallacy One",
+      "title": "The Root Fallacy",
+      "body": "The root fallacy assumes that a word's meaning is hidden in its parts or its history. The preacher tells you that the Greek word for power is dynamis, and that we get dynamite from it, so the gospel is the dynamite of God. It sounds explosive. It is also false. Paul never thought of dynamite, which would not exist for eighteen centuries, and a word does not carry its descendants inside it.\n\nWords mean what they mean in use, not what their pieces once meant.\n\nThe English word breakfast contains break and fast, but a man eating breakfast is rarely thinking of either. Meaning lives in how a word is used by real people in real sentences, not in the parts a clever reader can pry loose. The cure is plain and humbling. Ask not where a word came from but how the author and his contemporaries actually used it, and let a good lexicon, not your imagination, settle the matter."
+    },
+    {
+      "id": "anachronism",
+      "kicker": "Fallacy Two",
+      "title": "Anachronism and the Backward Reading",
+      "body": "Anachronism is reading a later meaning back into an earlier text. It is the preacher who finds the modern psychology of self esteem in the love command, or who reads the institutional church into a verse written before any of it existed. The word was there. The meaning he hangs on it was not.\n\nThe author meant what a man of his own time could mean. Not what we have since made the words carry.\n\nThis is how a verse about the heart, which in Hebrew named the seat of will and thought, gets preached as if it named our feelings, because that is what heart means to us. It is how the word that meant assembly becomes a building with a steeple. The discipline is to keep asking what the term meant then, in that room, to those people, and to refuse the meanings that have crept in across the centuries between. Recover their world before you apply it to yours."
+    },
+    {
+      "id": "totality-transfer",
+      "kicker": "Fallacy Three",
+      "title": "Illegitimate Totality Transfer",
+      "body": "This one has an ugly name and does enormous damage. Illegitimate totality transfer is the error of importing every possible meaning of a word into a single use of it. A word can mean several things across the Bible. In any one sentence it means one of them.\n\nThe word flesh can mean the body, or human weakness, or the sinful nature, depending on where it sits. The preacher who loads all three meanings into one verse has not gone deep. He has gone wrong.\n\nThink of the English word trunk. It can be an elephant's nose, a car's storage, a tree's body, a packing chest. When I say I put the suitcase in the trunk, I do not mean all four at once. Context selects one and silences the others. So it is with every word in Scripture. A word study that gathers all the meanings is only the first step. The real work is letting the sentence choose which meaning belongs, and having the discipline to leave the rest outside."
+    },
+    {
+      "id": "word-over-sentence",
+      "kicker": "Fallacy Four",
+      "title": "Worshiping the Word, Ignoring the Sentence",
+      "body": "Behind most of these errors is one deeper habit: treating individual words as the carriers of meaning, when meaning actually lives in sentences and paragraphs. The preacher who builds a whole sermon on the tense of one verb, or the supposed depth of one noun, has usually missed the plain argument the author was making in the lines around it.\n\nGod did not inspire a pile of words. He inspired sentences, paragraphs, arguments, books.\n\nThe surest protection against fallacy is not more Greek. It is reading the whole thought. Trace the argument. Find what the author is claiming across the paragraph, and let the words serve that claim rather than fighting it. A man who reads the context well will avoid nine errors out of ten without ever opening a lexicon."
+    },
+    {
+      "id": "the-fear-that-saves",
+      "kicker": "The Posture",
+      "title": "The Fear That Keeps You Honest",
+      "body": "You cannot fully escape these errors. I have not. The mind that wants a striking point will always be tempted to find one the text does not hold, and the more you know, the more sophisticated your mistakes become.\n\nThe defense is not cleverness. It is fear.\n\nA holy fear of misrepresenting the God whose words you handle. A willingness to be caught, corrected, and made smaller. Read scholars who will check you. Show your work to people who can argue back. Hold your discoveries loosely and your humility tightly. The goal of exegesis was never to dazzle a congregation with a meaning no one had seen. It was to say what God actually said, and to say no more. The day you stop being afraid of getting it wrong is the day you become dangerous in a pulpit."
+    }
+  ],
+  "keyTexts": [
+    "2 Timothy 2:15",
+    "Nehemiah 8:8",
+    "Acts 17:11",
+    "James 3:1"
+  ],
+  "furtherReading": [
+    { "title": "Exegetical Fallacies", "author": "D. A. Carson" },
+    { "title": "Linguistics and Biblical Interpretation", "author": "Peter Cotterell and Max Turner" },
+    { "title": "How to Read the Bible for All Its Worth", "author": "Gordon D. Fee and Douglas Stuart" }
+  ]
+}

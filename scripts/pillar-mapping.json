@@ -1,0 +1,2273 @@
+[
+  {
+    "slug": "when-god-bless-america-replaces-thy-kingdom-come",
+    "title": "When God Bless America Replaces Thy Kingdom Come",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 1,
+    "confidence": "high",
+    "rationale": "current-pillar prior; god bless america, patriotism"
+  },
+  {
+    "slug": "the-monster-in-the-mirror",
+    "title": "The Monster in the Mirror",
+    "currentPillar": "Theological Depth",
+    "proposedPillar": 3,
+    "proposedName": "Reading Scripture Past Our Politics",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 3,
+    "confidence": "high",
+    "rationale": "current-pillar prior; interpretation, biblical"
+  },
+  {
+    "slug": "not-persecuted-seduced-crisis-american-christianity",
+    "title": "Not Persecuted—Seduced: The Crisis of American Christianity",
+    "currentPillar": "Prophetic Disruption",
+    "proposedPillar": 4,
+    "proposedName": "After Christendom",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      1
+    ],
+    "naturalHome": 4,
+    "confidence": "med",
+    "rationale": "current-pillar prior; decline"
+  },
+  {
+    "slug": "you-are-not-the-exception",
+    "title": "You Are Not the Exception: Understanding Biblical Interpretation",
+    "currentPillar": "Theological Depth",
+    "proposedPillar": 3,
+    "proposedName": "Reading Scripture Past Our Politics",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 3,
+    "confidence": "high",
+    "rationale": "current-pillar prior; interpretation, biblical, scripture"
+  },
+  {
+    "slug": "the-theology-of-time",
+    "title": "The Theology of Time",
+    "currentPillar": "Integrated Life",
+    "proposedPillar": 6,
+    "proposedName": "Living Well After Christendom",
+    "movement": "formation",
+    "subThemes": [
+      "practices"
+    ],
+    "secondarySignals": [],
+    "naturalHome": 6,
+    "confidence": "high",
+    "rationale": "current-pillar prior; son, rest"
+  },
+  {
+    "slug": "why-pastors-quit-and-how-to-stay",
+    "title": "Why Pastors Quit (And How to Stay)",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; ministry, pcn"
+  },
+  {
+    "slug": "hidden-pain-successful-pastor",
+    "title": "The Hidden Pain of the Successful Pastor",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pastor, ministry, pcn"
+  },
+  {
+    "slug": "church-needs-you-healthy-not-busy",
+    "title": "Your Church Needs You Healthy More Than It Needs You Busy",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pastor, ministry, pcn"
+  },
+  {
+    "slug": "stop-performing-start-pastoring",
+    "title": "How I Learned to Stop Performing and Start Pastoring",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pastoral, ministry, pcn"
+  },
+  {
+    "slug": "personal-board-accountability",
+    "title": "Building a Personal Board of Accountability",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; leadership, pcn"
+  },
+  {
+    "slug": "five-biggest-mistakes-new-pastors",
+    "title": "The 5 Biggest Mistakes New Pastors Make",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 5,
+    "confidence": "med",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "lead-through-church-crisis",
+    "title": "How to Lead Through a Church Crisis",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pastor, ministry, pcn"
+  },
+  {
+    "slug": "art-of-saying-no-without-guilt",
+    "title": "The Art of Saying No Without Guilt",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "culture-discipleship-not-attendance",
+    "title": "Building a Culture of Discipleship, Not Just Attendance",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; discipleship, pcn"
+  },
+  {
+    "slug": "bivocational-pastors-get-right",
+    "title": "What Bivocational Pastors Get Right That Full-Time Pastors Often Miss",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "stopped-competing-church-across-town",
+    "title": "Why I Stopped Competing With the Church Across Town",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; ministry, pcn"
+  },
+  {
+    "slug": "learned-from-pastor-disagrees",
+    "title": "What I Learned From a Pastor Who Disagrees With Me Theologically",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pastor, ministry, pcn"
+  },
+  {
+    "slug": "slow-burn-ministry-exhaustion",
+    "title": "The Slow Burn: How Ministry Exhaustion Sneaks Up on You",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; ministry, burnout, pcn"
+  },
+  {
+    "slug": "sabbatical-why-church-should-require",
+    "title": "What a Sabbatical Is — And Why Your Church Should Require One",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6,
+      3
+    ],
+    "naturalHome": 5,
+    "confidence": "med",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "return-ministry-after-burnout",
+    "title": "How to Return to Ministry After Burning Out",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; ministry, burnout, pcn"
+  },
+  {
+    "slug": "difference-tired-and-done",
+    "title": "The Difference Between Being Tired and Being Done",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "when-man-pulpit-falling-apart",
+    "title": "When the Man in the Pulpit Is Falling Apart",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pastor, pcn"
+  },
+  {
+    "slug": "spouse-wishes-knew-parsonage",
+    "title": "What Your Spouse Wishes You Knew About Life in the Parsonage",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 5,
+    "confidence": "med",
+    "rationale": "current-pillar prior; pastoral, ministry, pcn"
+  },
+  {
+    "slug": "protecting-marriage-ministry-demands",
+    "title": "Protecting Your Marriage When Ministry Demands Everything",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; ministry, pastor, pcn"
+  },
+  {
+    "slug": "pastors-kids-watching-what-seeing",
+    "title": "The Pastor\\'s Kids Are Watching — What Are They Seeing?",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pastor, pastoral, pcn"
+  },
+  {
+    "slug": "present-at-home-mind-never-leaves",
+    "title": "How to Be Present at Home When Your Mind Never Leaves the Church",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 5,
+    "confidence": "med",
+    "rationale": "current-pillar prior; ministry, pcn"
+  },
+  {
+    "slug": "okay-to-see-counselor",
+    "title": "It\\'s Okay to See a Counselor — Why Pastors Resist and Why They Shouldn\\'t",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "pastors-depression-not-faith-problem",
+    "title": "What Pastors Need to Know About Depression (And Why It\\'s Not a Faith Problem)",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; ministry, pcn"
+  },
+  {
+    "slug": "anxiety-perfectionism-pastor-breaking-cycle",
+    "title": "Anxiety, Perfectionism, and the Pastor: Breaking the Cycle",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pastor, pcn"
+  },
+  {
+    "slug": "not-your-churchs-attendance-numbers",
+    "title": "You Are Not Your Church\\'s Attendance Numbers",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pastor, pcn"
+  },
+  {
+    "slug": "preach-same-gospel-different-people",
+    "title": "How to Preach the Same Gospel to People Who Are Nothing Alike",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3
+    ],
+    "naturalHome": 5,
+    "confidence": "med",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "when-preaching-gets-stale",
+    "title": "When Your Preaching Gets Stale — and What to Do About It",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; preaching, pcn"
+  },
+  {
+    "slug": "five-sermon-habits-shrinking-faith",
+    "title": "Five Sermon Habits That Are Slowly Shrinking Your Congregation\\'s Faith",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; congregation, sermon, preaching"
+  },
+  {
+    "slug": "preaching-to-room-not-there-yet",
+    "title": "Preaching to the Room That\\'s Not There Yet — How to Reach the Unchurched",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; preaching, pcn"
+  },
+  {
+    "slug": "eighty-percent-churches-plateaued",
+    "title": "80% of Churches Are Plateaued or Declining — Are You One of Them?",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      4
+    ],
+    "naturalHome": 5,
+    "confidence": "med",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "small-churches-get-right",
+    "title": "What Small Churches Get Right That Large Churches Rarely Talk About",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "metrics-tell-church-healthy",
+    "title": "The Metrics That Actually Tell You if Your Church Is Healthy",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "revitalize-or-replant",
+    "title": "When Is It Time to Revitalize — and When Is It Time to Replant?",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "lead-church-decline-without-losing-hope",
+    "title": "How to Lead a Church Through a Season of Decline Without Losing Hope",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      4
+    ],
+    "naturalHome": 5,
+    "confidence": "med",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "give-feedback-changes-behavior",
+    "title": "How to Give Feedback That Actually Changes Behavior",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "most-dangerous-person-church-staff",
+    "title": "The Most Dangerous Person on a Church Staff (It Might Surprise You)",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; staff, pcn"
+  },
+  {
+    "slug": "when-fire-someone-with-integrity",
+    "title": "When to Fire Someone — and How to Do It With Integrity",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pastoral, pcn"
+  },
+  {
+    "slug": "staff-culture-no-burnout",
+    "title": "Building a Staff Culture Where People Don\\'t Burn Out and Leave",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; staff, pcn"
+  },
+  {
+    "slug": "gen-z-wants-from-church",
+    "title": "What Gen Z Actually Wants From a Church (And Why It\\'s Not What You Think)",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 5,
+    "confidence": "med",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "young-adults-coming-back-church",
+    "title": "Why Young Adults Are Coming Back to Church — and How Not to Lose Them Again",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "scandals-teaching-accountability",
+    "title": "What the Scandals in the Church Are Teaching Us About Accountability",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "talk-politics-pulpit-without-destroying",
+    "title": "How to Talk About Political Divisiveness From the Pulpit Without Destroying Your Church",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "church-split-surviving-learning-forward",
+    "title": "When a Church Split Happens — Surviving It, Learning From It, Moving Forward",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "reformed-charismatic-pastors-same-table",
+    "title": "Reformed and Charismatic Pastors at the Same Table — What Happened When We Tried",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "city-wide-church-together",
+    "title": "The Case for Doing City-Wide Church Together at Least Once a Year",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "healthy-pastor-referral-network",
+    "title": "What a Healthy Pastor Referral Network Actually Looks Like",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pastor, referral, pcn"
+  },
+  {
+    "slug": "three-small-churches-coplanted",
+    "title": "How Three Small Churches Co-Planted One New Congregation",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; congregation, pcn"
+  },
+  {
+    "slug": "before-launch-ministry-ask-other-church",
+    "title": "Before You Launch That Ministry, Ask If Another Church in Town Is Already Doing It",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; ministry, pcn"
+  },
+  {
+    "slug": "white-churches-wrong-about-diversity",
+    "title": "What Predominantly White Churches Get Wrong When They Talk About Diversity",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      2
+    ],
+    "naturalHome": 5,
+    "confidence": "med",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "learned-unity-pastoring-across-cultures",
+    "title": "What I Learned About Unity From Pastoring Across Cultural Lines",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; ministry, pcn"
+  },
+  {
+    "slug": "church-closures-outpacing-plants",
+    "title": "Church Closures Are Outpacing Church Plants 3 to 1 — What That Means for the Mission",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      4
+    ],
+    "naturalHome": 5,
+    "confidence": "med",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "talk-global-missions-moves-congregation",
+    "title": "How to Talk About Global Missions in a Way That Actually Moves Your Congregation",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; congregation, missions, pcn"
+  },
+  {
+    "slug": "short-term-mission-trips-help-hurt",
+    "title": "When Short-Term Mission Trips Help and When They Hurt",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn, missions"
+  },
+  {
+    "slug": "unreached-people-groups-closest-to-you",
+    "title": "The Unreached People Groups Closest to You That You\\'ve Never Considered",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 5,
+    "confidence": "med",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "national-pastors-redefining-missionary",
+    "title": "How National Pastors Are Redefining What It Means to Be a Missionary",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; missionary, pcn"
+  },
+  {
+    "slug": "global-south-church-teach-suffering",
+    "title": "What the Church in the Global South Can Teach the Church in America About Suffering",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "mission-sending-culture-never-sent",
+    "title": "Building a Mission-Sending Culture in a Church That\\'s Never Sent Anyone",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3
+    ],
+    "naturalHome": 5,
+    "confidence": "med",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "pastor-politically-divided-gospel-central",
+    "title": "How to Pastor a Congregation That Is Politically Divided — And Keep the Gospel Central",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pastor, congregation, pcn"
+  },
+  {
+    "slug": "engaging-nones-religiously-unaffiliated",
+    "title": "Engaging the \\'Nones\\' — What Research Tells Us About Reaching the Religiously Unaffiliated",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 4,
+    "proposedName": "After Christendom",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      5
+    ],
+    "naturalHome": 5,
+    "confidence": "med",
+    "rationale": "nones, unaffiliated"
+  },
+  {
+    "slug": "ai-authenticity-pastor-artificial-intelligence",
+    "title": "AI, Authenticity, and the Pastor: What Artificial Intelligence Means for Ministry",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pastor, ministry, pastoral"
+  },
+  {
+    "slug": "church-political-brand-step-back",
+    "title": "When the Church Becomes a Political Brand — and How to Step Back From the Edge",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "lead-when-trust-institutions-low",
+    "title": "How to Lead When Trust in Institutions — Including the Church — Is at an All-Time Low",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pcn"
+  },
+  {
+    "slug": "17-mobilizing-your-church-for-world-missions-without-a-big-budget",
+    "title": "17. Mobilizing Your Church for World Missions Without a Big Budget",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6,
+      3
+    ],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; missions, pastor, pastoral"
+  },
+  {
+    "slug": "where-church-was-silent",
+    "title": "Where the Church Was Silent: A Reckoning With the History We Would Rather Not Own",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3,
+      4
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "justice-not-political-theological",
+    "title": "Justice Is Not a Political Category: It Is a Theological One",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3,
+      2
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "complicity-not-innocence",
+    "title": "Complicity Is Not Innocence: What Silence Costs the Witness",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      4
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "poor-not-ministry-category",
+    "title": "The Poor Are Not a Ministry Category — They Are the Test of the Church",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3,
+      5
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "creation-care-not-optional",
+    "title": "Creation Care Is Not Optional",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "widow-orphan-stranger",
+    "title": "The Widow, the Orphan, the Stranger",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3,
+      6
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "mishpat-tsedaqah",
+    "title": "Mishpat and Tsedaqah",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; restoration"
+  },
+  {
+    "slug": "micah-6-8-demands",
+    "title": "What Micah 6:8 Actually Demands",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "church-credibility-problem",
+    "title": "The Church Has a Credibility Problem",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "racial-reconciliation-without-repentance",
+    "title": "Why Racial Reconciliation Without Repentance Is Just Branding",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "prophetic-tradition-economic-justice",
+    "title": "The Prophetic Tradition on Economic Justice",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "what-jubilee-means",
+    "title": "What the Jubilee Means",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "stranger-at-gate",
+    "title": "The Stranger at the Gate",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3,
+      6
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "individual-sin-systemic-sin-2",
+    "title": "Individual Sin Is Real — But So Is Systemic Sin",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "why-poverty-political",
+    "title": "Why Poverty Is Political",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "high",
+    "rationale": "current-pillar prior; power"
+  },
+  {
+    "slug": "church-wealth-world-poverty",
+    "title": "The Churchs Wealth and the Worlds Poverty",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "payday-lending-christians",
+    "title": "Why Payday Lending Should Keep Christians Up at Night",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "silence-abuse-church",
+    "title": "The Silence About Abuse in the Church",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "high",
+    "rationale": "current-pillar prior; power"
+  },
+  {
+    "slug": "imago-dei-means-more",
+    "title": "Imago Dei Means More Than You Think",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "good-samaritan-arguing",
+    "title": "What the Good Samaritan Is Actually Arguing",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "solidarity-theological-virtue",
+    "title": "Why Solidarity Is a Theological Virtue",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "most-prophetic-live-differently",
+    "title": "The Most Prophetic Thing You Can Do Is Live Differently",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "children-poverty-prophetic-indictment",
+    "title": "Why Children in Poverty Are a Prophetic Indictment",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 6,
+    "proposedName": "Living Well After Christendom",
+    "movement": "formation",
+    "subThemes": [
+      "parenting",
+      "vocation-work"
+    ],
+    "secondarySignals": [
+      1
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "children, calling"
+  },
+  {
+    "slug": "symptoms-without-causes-charity",
+    "title": "Why Addressing Symptoms Without Causes Is Charity, Not Justice",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "church-mental-health-justice",
+    "title": "The Church and Mental Health Justice",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "church-megaproject-widows-mite",
+    "title": "Church Megaproject Budgets and the Widows Mite",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "white-churches-diversity",
+    "title": "What Predominantly White Churches Get Wrong About Diversity",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "reaching-rich-comfortable",
+    "title": "Why \"Reaching the Rich\" Has Always Been More Comfortable",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "high",
+    "rationale": "current-pillar prior; power"
+  },
+  {
+    "slug": "theology-of-repair",
+    "title": "The Theology of Repair",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "high",
+    "rationale": "current-pillar prior; restoration"
+  },
+  {
+    "slug": "hospitality-not-optional",
+    "title": "Hospitality Is Not Optional",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3,
+      6
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "disability-justice-theological",
+    "title": "Disability Justice Is a Theological Issue",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      2
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "earth-is-lords",
+    "title": "The Earth Is the Lords",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "ruth-gleaning-laws",
+    "title": "What the Book of Ruth Says About Gleaning Laws",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "church-comfort-inequality",
+    "title": "Why the Churchs Comfort With Inequality Requires Explanation",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "prophetic-pastor",
+    "title": "The Prophetic Pastor",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      1,
+      6
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "pastor, pastoral"
+  },
+  {
+    "slug": "justice-without-love-ideology",
+    "title": "Justice Without Love Is Ideology",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 2,
+    "proposedName": "The Capture by the Left",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      1
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "ideology, compassion"
+  },
+  {
+    "slug": "beatitudes-actually-promising",
+    "title": "What the Beatitudes Are Actually Promising",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "black-church-prophetic-justice",
+    "title": "The Black Church Has Been Doing Prophetic Justice for Centuries",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "color-blindness-not-virtue",
+    "title": "Why Color-Blindness Is Not a Theological Virtue",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "vulnerable-people-not-in-pews",
+    "title": "The Most Vulnerable People in Your City Are Not in Your Pews",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "prophets-expelled-sanctuary",
+    "title": "Why the Prophets Were Expelled From the Sanctuary",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "exodus-demands-church-today",
+    "title": "What the Exodus Demands of the Church Today",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "sabbath-is-resistance",
+    "title": "Sabbath Is Resistance",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 6,
+    "proposedName": "Living Well After Christendom",
+    "movement": "formation",
+    "subThemes": [
+      "vocation-work",
+      "practices"
+    ],
+    "secondarySignals": [
+      1
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "sabbath, work, rest"
+  },
+  {
+    "slug": "pastoral-care-wealthy-congregant",
+    "title": "The Pastoral Care of the Wealthy Congregant",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      1
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "pastoral"
+  },
+  {
+    "slug": "church-response-poverty-charity",
+    "title": "Why the Churchs Response to Poverty Has Been Mostly Charity",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "leviticus-19-border-crisis",
+    "title": "What Leviticus 19 Demands in a Border Crisis",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "church-incarceration-silence",
+    "title": "The Churchs Incarceration Silence",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "church-must-speak-housing",
+    "title": "Why the Church Must Speak About Housing",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "what-we-owe-generations",
+    "title": "What We Owe the Ones Who Come After",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "the-long-arc",
+    "title": "The Long Arc",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "greek-original-language-matters",
+    "title": "What the Greek Actually Says: Why Original Language Still Matters",
+    "currentPillar": "Theological Depth",
+    "proposedPillar": 3,
+    "proposedName": "Reading Scripture Past Our Politics",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 3,
+    "confidence": "high",
+    "rationale": "current-pillar prior; greek, translation"
+  },
+  {
+    "slug": "church-fathers-not-boring",
+    "title": "The Church Fathers Were Not Boring: Why Early Christian Thinking Still Matters",
+    "currentPillar": "Theological Depth",
+    "proposedPillar": 3,
+    "proposedName": "Reading Scripture Past Our Politics",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 3,
+    "confidence": "high",
+    "rationale": "current-pillar prior; tradition"
+  },
+  {
+    "slug": "reformation-actually-about",
+    "title": "What the Reformation Was Actually About (And What It Missed)",
+    "currentPillar": "Theological Depth",
+    "proposedPillar": 3,
+    "proposedName": "Reading Scripture Past Our Politics",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 3,
+    "confidence": "high",
+    "rationale": "current-pillar prior; scripture"
+  },
+  {
+    "slug": "atonement-more-than-one-model",
+    "title": "Atonement: More Than One Model — Why the Cross Is Bigger Than Any Single Theory",
+    "currentPillar": "Theological Depth",
+    "proposedPillar": 3,
+    "proposedName": "Reading Scripture Past Our Politics",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 3,
+    "confidence": "high",
+    "rationale": "current-pillar prior; tradition"
+  },
+  {
+    "slug": "kingdom-of-god-not-what-you-think",
+    "title": "The Kingdom of God Is Not What You Think It Is",
+    "currentPillar": "Theological Depth",
+    "proposedPillar": 3,
+    "proposedName": "Reading Scripture Past Our Politics",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 3,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "psalms-as-prayer-not-poetry",
+    "title": "The Psalms as Prayer — Not Just Poetry",
+    "currentPillar": "Theological Depth",
+    "proposedPillar": 3,
+    "proposedName": "Reading Scripture Past Our Politics",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 3,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "holy-spirit-not-feeling",
+    "title": "The Holy Spirit Is Not a Feeling",
+    "currentPillar": "Theological Depth",
+    "proposedPillar": 3,
+    "proposedName": "Reading Scripture Past Our Politics",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      1
+    ],
+    "naturalHome": 3,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "sin-not-just-what-you-do",
+    "title": "Sin Is Not Just What You Do — Its What You Are",
+    "currentPillar": "Theological Depth",
+    "proposedPillar": 3,
+    "proposedName": "Reading Scripture Past Our Politics",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 3,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "eschatology-matters-end-shapes-now",
+    "title": "Eschatology Matters — Why the End Shapes How We Live Now",
+    "currentPillar": "Theological Depth",
+    "proposedPillar": 3,
+    "proposedName": "Reading Scripture Past Our Politics",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 3,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "incarnation-changes-everything",
+    "title": "The Incarnation Changes Everything — Why God Became Human",
+    "currentPillar": "Theological Depth",
+    "proposedPillar": 3,
+    "proposedName": "Reading Scripture Past Our Politics",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 3,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "when-shepherd-needs-shepherding",
+    "title": "When the Shepherd Needs Shepherding",
+    "currentPillar": "Integrated Life",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 6,
+    "confidence": "med",
+    "rationale": "shepherd, ministry"
+  },
+  {
+    "slug": "burnout-nobody-talks-about",
+    "title": "The Burnout Nobody Talks About",
+    "currentPillar": "Integrated Life",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 6,
+    "confidence": "high",
+    "rationale": "burnout, pastor, pastoral"
+  },
+  {
+    "slug": "sabbath-isnt-optional",
+    "title": "Sabbath Isnt Optional",
+    "currentPillar": "Integrated Life",
+    "proposedPillar": 6,
+    "proposedName": "Living Well After Christendom",
+    "movement": "formation",
+    "subThemes": [
+      "practices"
+    ],
+    "secondarySignals": [
+      5
+    ],
+    "naturalHome": 6,
+    "confidence": "high",
+    "rationale": "current-pillar prior; sabbath"
+  },
+  {
+    "slug": "your-marriage-is-ministry-too",
+    "title": "Your Marriage Is a Ministry Too",
+    "currentPillar": "Integrated Life",
+    "proposedPillar": 6,
+    "proposedName": "Living Well After Christendom",
+    "movement": "formation",
+    "subThemes": [
+      "marriage-covenant",
+      "family-household"
+    ],
+    "secondarySignals": [
+      5
+    ],
+    "naturalHome": 6,
+    "confidence": "med",
+    "rationale": "current-pillar prior; marriage, home"
+  },
+  {
+    "slug": "weight-of-what-you-cant-say",
+    "title": "The Weight of What You Cant Say",
+    "currentPillar": "Integrated Life",
+    "proposedPillar": 6,
+    "proposedName": "Living Well After Christendom",
+    "movement": "formation",
+    "subThemes": [
+      "marriage-covenant"
+    ],
+    "secondarySignals": [
+      5
+    ],
+    "naturalHome": 6,
+    "confidence": "med",
+    "rationale": "current-pillar prior; marriage"
+  },
+  {
+    "slug": "finding-your-barnabas",
+    "title": "Finding Your Barnabas",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pastor, ministry"
+  },
+  {
+    "slug": "loneliness-of-leadership",
+    "title": "The Loneliness of Leadership",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; leadership, pastoral"
+  },
+  {
+    "slug": "delegation-is-not-weakness",
+    "title": "Delegation Is Not Weakness",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pastor"
+  },
+  {
+    "slug": "vision-without-community-fantasy",
+    "title": "Vision Without Community Is Just Fantasy",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 5,
+    "confidence": "med",
+    "rationale": "current-pillar prior; pastor, leadership"
+  },
+  {
+    "slug": "pastors-authority-relational",
+    "title": "The Pastors Authority Is Relational",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pastor, pastoral"
+  },
+  {
+    "slug": "conflict-is-not-failure",
+    "title": "Conflict Is Not Failure",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 5,
+    "confidence": "med",
+    "rationale": "current-pillar prior; pastor"
+  },
+  {
+    "slug": "building-leadership-team",
+    "title": "Building a Leadership Team",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; leadership, pastor, congregation"
+  },
+  {
+    "slug": "danger-pastoral-isolation",
+    "title": "The Danger of Pastoral Isolation",
+    "currentPillar": "Leadership Formation",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      4,
+      6
+    ],
+    "naturalHome": 5,
+    "confidence": "high",
+    "rationale": "current-pillar prior; pastoral, pastor, ministry"
+  },
+  {
+    "slug": "unity-without-uniformity",
+    "title": "Unity Without Uniformity",
+    "currentPillar": "Prophetic Disruption",
+    "proposedPillar": 4,
+    "proposedName": "After Christendom",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 4,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "courage-to-be-different",
+    "title": "The Courage to Be Different",
+    "currentPillar": "Prophetic Disruption",
+    "proposedPillar": 4,
+    "proposedName": "After Christendom",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      5
+    ],
+    "naturalHome": 4,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "collaboration-across-denominations",
+    "title": "Collaboration Across Denominations",
+    "currentPillar": "Prophetic Disruption",
+    "proposedPillar": 4,
+    "proposedName": "After Christendom",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      5
+    ],
+    "naturalHome": 4,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "global-church-is-your-church",
+    "title": "The Global Church Is Your Church",
+    "currentPillar": "Prophetic Disruption",
+    "proposedPillar": 4,
+    "proposedName": "After Christendom",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 4,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "mission-is-not-optional",
+    "title": "Mission Is Not Optional",
+    "currentPillar": "Prophetic Disruption",
+    "proposedPillar": 4,
+    "proposedName": "After Christendom",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 4,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "your-city-is-mission-field",
+    "title": "Your City Is Your Mission Field",
+    "currentPillar": "Prophetic Disruption",
+    "proposedPillar": 4,
+    "proposedName": "After Christendom",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 4,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "church-response-to-culture",
+    "title": "The Churchs Response to Culture",
+    "currentPillar": "Prophetic Disruption",
+    "proposedPillar": 4,
+    "proposedName": "After Christendom",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      5
+    ],
+    "naturalHome": 4,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "truth-in-post-truth-world",
+    "title": "Truth in a Post-Truth World",
+    "currentPillar": "Prophetic Disruption",
+    "proposedPillar": 4,
+    "proposedName": "After Christendom",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      5
+    ],
+    "naturalHome": 4,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "interior-life-of-pastor",
+    "title": "The Interior Life of the Pastor",
+    "currentPillar": "Integrated Life",
+    "proposedPillar": 5,
+    "proposedName": "The Pastoral Angle",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      6
+    ],
+    "naturalHome": 6,
+    "confidence": "med",
+    "rationale": "pastor, ministry, congregation"
+  },
+  {
+    "slug": "prayer-is-not-optional",
+    "title": "Prayer Is Not Optional",
+    "currentPillar": "Integrated Life",
+    "proposedPillar": 6,
+    "proposedName": "Living Well After Christendom",
+    "movement": "formation",
+    "subThemes": [
+      "practices"
+    ],
+    "secondarySignals": [
+      5
+    ],
+    "naturalHome": 6,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "scripture-meditation",
+    "title": "Scripture Meditation",
+    "currentPillar": "Integrated Life",
+    "proposedPillar": 3,
+    "proposedName": "Reading Scripture Past Our Politics",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      5
+    ],
+    "naturalHome": 6,
+    "confidence": "LOW",
+    "rationale": "scripture"
+  },
+  {
+    "slug": "spiritual-disciplines-for-pastors",
+    "title": "Spiritual Disciplines for Pastors",
+    "currentPillar": "Integrated Life",
+    "proposedPillar": 6,
+    "proposedName": "Living Well After Christendom",
+    "movement": "formation",
+    "subThemes": [],
+    "secondarySignals": [
+      5
+    ],
+    "naturalHome": 6,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "the-examined-life",
+    "title": "The Examined Life",
+    "currentPillar": "Integrated Life",
+    "proposedPillar": 6,
+    "proposedName": "Living Well After Christendom",
+    "movement": "formation",
+    "subThemes": [],
+    "secondarySignals": [
+      5
+    ],
+    "naturalHome": 6,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "repentance-and-renewal",
+    "title": "Repentance and Renewal",
+    "currentPillar": "Integrated Life",
+    "proposedPillar": 6,
+    "proposedName": "Living Well After Christendom",
+    "movement": "formation",
+    "subThemes": [],
+    "secondarySignals": [
+      5
+    ],
+    "naturalHome": 6,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "hope-of-resurrection",
+    "title": "The Hope of Resurrection",
+    "currentPillar": "Integrated Life",
+    "proposedPillar": 6,
+    "proposedName": "Living Well After Christendom",
+    "movement": "formation",
+    "subThemes": [],
+    "secondarySignals": [
+      5
+    ],
+    "naturalHome": 6,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "where-church-was-silent",
+    "title": "-- SECTION 1: HISTORICAL SILENCE & CREDIBILITY (1-10)\n(Where the Church Was Silent",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3,
+      4
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "justice-not-political",
+    "title": "Justice Is Not a Political Category",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "complicity-not-innocence",
+    "title": "Complicity Is Not Innocence",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      4
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "poor-not-ministry",
+    "title": "The Poor Are Not a Ministry Category",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3,
+      5
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  },
+  {
+    "slug": "where-church-was-silent",
+    "title": "Where the Church Was Silent",
+    "currentPillar": "Prophetic Justice",
+    "proposedPillar": 1,
+    "proposedName": "The Capture by the Right",
+    "movement": "diagnosis",
+    "subThemes": [],
+    "secondarySignals": [
+      3,
+      4
+    ],
+    "naturalHome": 1,
+    "confidence": "med",
+    "rationale": "current-pillar prior; no strong signal"
+  }
+]

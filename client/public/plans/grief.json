@@ -1,0 +1,81 @@
+{
+  "slug": "grief",
+  "title": "Eight Weeks of Walking With Loss",
+  "subtitle": "An eight week companion for grief from James Bell. Permission to mourn, lament as language, and a way to live forward without leaving them behind.",
+  "intro": "This is an eight week companion for the person walking with loss. Each week holds one focus, one small daily practice, one thing to read, one tool to use, and one honest question. It does not promise closure, because closure is a word invented by people in a hurry. Grief is not a problem to be solved. It is love with nowhere to go, and it deserves better than a deadline.\n\nIt is not a cure, and it is not a substitute for a doctor, a counselor, a pastor, or the people who will sit with you. Walk it imperfectly and at your own pace. A missed week is not failure, you just pick it back up when you can. Some weeks you may only manage the question. That counts. There is no scorecard in the valley, only company.",
+  "careNote": "If grief reaches the point where you cannot function, see a doctor or a licensed counselor, and remember there is no schedule for sorrow, these eight weeks are a companion, not a deadline.",
+  "weeks": [
+    {
+      "n": 1,
+      "focus": "Permission to grieve",
+      "why": "Much of what makes grief unbearable is the pressure to be done with it. The first work is permission, the settled decision that your sorrow is allowed, that it does not need defending, and that Jesus himself wept at a tomb he was about to open. You begin by letting the grief exist.",
+      "practice": "Set aside ten minutes a day where grief is allowed. Sit with a photo, say their name out loud, let the tears come or not come. Then get up and live the rest of the day.",
+      "read": { "label": "The Grief page, written for exactly where you are standing", "href": "/grief" },
+      "tool": { "label": "The Help page, so you know where to turn on the worst days", "href": "/help" },
+      "reflection": "What have I not allowed myself to feel about this loss, and whose voice told me I was not allowed?"
+    },
+    {
+      "n": 2,
+      "focus": "Lament as language",
+      "why": "Grief needs words, and polite words are too small for it. The psalms of lament were written by people who shouted at God and stayed in the conversation. Lament is not a loss of faith. It is faith refusing to leave the room.",
+      "practice": "Each day, pray one psalm of lament aloud, Psalm 6 or Psalm 42 are places to start. Five minutes. Let the old words carry what your own words cannot yet.",
+      "read": { "label": "The Lament page, on the prayer language of the broken", "href": "/lament" },
+      "tool": { "label": "The Prayer Generator, for the days when even borrowed words fail", "href": "/tools/prayer-generator" },
+      "reflection": "If I said the angriest, saddest, truest thing to God right now, what would it be?"
+    },
+    {
+      "n": 3,
+      "focus": "The body in grief",
+      "why": "Grief is physical. It lives in your sleep, your appetite, your chest, your exhaustion, and it will not be thought away. Caring for the body in sorrow is not moving on. It is keeping the lamp lit in a house that still has someone living in it.",
+      "practice": "Each day, do one act of basic mercy for your body, a short walk outside, a real meal, water, bed at a decent hour. One act. Not a regimen, a kindness.",
+      "read": { "label": "The Body and the Rhythms, on the body you still have to live in", "href": "/life/the-body-and-the-rhythms" },
+      "tool": { "label": "The Verse Finder, look up what Scripture says about weariness and rest", "href": "/tools/verse-finder" },
+      "reflection": "What is my body carrying for me right now, and how have I been treating it in return?"
+    },
+    {
+      "n": 4,
+      "focus": "Remembering well",
+      "why": "There comes a point where the fear of forgetting hurts almost as much as the loss itself. Remembering well is deliberate work, gathering the stories, the habits, the laughter, before they blur. Memory is not a trap to escape. It is an inheritance to keep.",
+      "practice": "Each day, write down one specific memory of them, a sentence or two, the more ordinary the better. The way they answered the phone. What they always ordered. Keep the pages.",
+      "read": { "label": "Return to the Grief page and read it again more slowly", "href": "/grief" },
+      "tool": { "label": "The Family Devotion Builder, shape a short time of remembrance for your household", "href": "/tools/family-devotions" },
+      "reflection": "What about them do I most fear forgetting, and what would it mean to write it down while it is still warm?"
+    },
+    {
+      "n": 5,
+      "focus": "The hard days",
+      "why": "Grief does not move in a straight line. It ambushes, on birthdays, anniversaries, the first holiday, a song in a grocery store. The hard days cannot be avoided, but they can be expected and met with a plan, so they find you prepared rather than alone.",
+      "practice": "Each morning, say one chosen verse aloud before the day begins. Then look at the calendar and mark the hard dates coming, so none of them takes you by surprise.",
+      "read": { "label": "Return to the Lament page, it was written for the ambush days", "href": "/lament" },
+      "tool": { "label": "Scripture Memory, learn the verse you will carry into the hard days", "href": "/tools/scripture-memory" },
+      "reflection": "Which dates and places do I already know will hurt, and who could I ask to stand with me on one of them?"
+    },
+    {
+      "n": 6,
+      "focus": "Where God was",
+      "why": "Sooner or later grief asks the unaskable question, where was God when this happened. Faith does not require you to skip the question. It requires you to ask it to his face. The cross means God is not a stranger to loss, and that changes the question without shrinking it.",
+      "practice": "Each day, finish this sentence in a notebook, honestly, God, where were you when. Then sit in silence for two minutes. Do not rush to answer for him.",
+      "read": { "label": "Grief and Loss, on where God is in the worst of it", "href": "/life/grief-and-loss" },
+      "tool": { "label": "The Emotional Health tool, to name what you feel toward God without dressing it up", "href": "/tools/emotional-health" },
+      "reflection": "What do I actually believe God was doing when my person died, and have I ever said it out loud?"
+    },
+    {
+      "n": 7,
+      "focus": "Letting others in",
+      "why": "Grief isolates twice, once through the loss and once through the silence that follows, when the casseroles stop and everyone else goes back to normal. People want to help and do not know how. This week you let one or two of them in, not because you are better, but because you were not built to do this alone.",
+      "practice": "Once a day, answer one message or question honestly instead of saying you are fine. One true sentence to one real person. That is enough.",
+      "read": { "label": "Friendship Against Isolation, on why sorrow shared is sorrow changed", "href": "/life/friendship-against-isolation" },
+      "tool": { "label": "The Help page, if these weeks have shown you it is time for a counselor", "href": "/help" },
+      "reflection": "Who has tried to reach me in this season, and what would it cost me to let one of them actually see how I am?"
+    },
+    {
+      "n": 8,
+      "focus": "Living forward",
+      "why": "Living forward is not leaving them behind. The love does not end, it changes form, and at some point it asks to be carried into the life still in front of you. The goal was never to stop grieving. It was to grieve as people who have hope, which is a different way of carrying the same weight.",
+      "practice": "Each day, do one small ordinary act of living, plant something, cook a real meal, accept one invitation, and as you do it, name one thing of theirs you are carrying forward with you.",
+      "read": { "label": "The Discipleship page, on the long road that continues from here", "href": "/discipleship" },
+      "tool": { "label": "The Whole Life Assessment, a gentle look at the life that remains to be lived", "href": "/life/assessment" },
+      "reflection": "What did they give me that I am responsible for carrying now, and what would they want to see me do with it?"
+    }
+  ]
+}

@@ -2,10 +2,21 @@ import Layout from "@/components/Layout";
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { SEOMeta } from "@/components/SEOMeta";
+import { SITE_STATS } from "@/config/siteStats";
+import { useArticleCount } from "@/hooks/useArticleCount";
+import { trpc } from "@/lib/trpc";
 
 export default function Membership() {
   const [email, setEmail] = useState("");
   const [joined, setJoined] = useState(false);
+  const [checkoutError, setCheckoutError] = useState<string | null>(null);
+  const essays = useArticleCount();
+
+  // Checkout goes live the moment STRIPE_SECRET_KEY (env) and the
+  // stripeMembershipPriceId site setting both exist. Until then: waitlist.
+  const enabledQuery = trpc.stripe.membershipEnabled.useQuery();
+  const checkoutMutation = trpc.stripe.createMembershipCheckout.useMutation();
+  const checkoutLive = enabledQuery.data?.enabled === true;
 
   const handleWaitlist = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -21,11 +32,30 @@ export default function Membership() {
     setEmail("");
   };
 
+  const handleCheckout = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email || !email.includes("@")) return;
+    setCheckoutError(null);
+    try {
+      const res = await checkoutMutation.mutateAsync({
+        customerEmail: email,
+        origin: window.location.origin,
+      });
+      if (res.sessionUrl) {
+        window.location.href = res.sessionUrl;
+      } else {
+        setCheckoutError("Checkout could not start. Try again in a moment.");
+      }
+    } catch {
+      setCheckoutError("Checkout could not start. Try again in a moment.");
+    }
+  };
+
   return (
     <Layout>
       <SEOMeta
         title="Membership — LiveWell by James Bell"
-        description="Full access to 160+ essays, member-only writing, curated reading paths, and the deeper room where theology meets the weight of real life."
+        description={`Full access to ${essays.display} essays, member-only writing, curated reading paths, and the deeper room where theology meets the weight of real life.`}
         type="webpage"
       />
 
@@ -48,9 +78,9 @@ export default function Membership() {
           <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard-text)", fontFamily: "var(--U)", marginBottom: "1rem" }}>What is inside</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, color: "var(--ink)", marginBottom: "3rem" }}>Five things the membership gives you</h2>
           {[
-            { title: "The full essay archive", desc: "160+ essays searchable by topic, audience, and reading time. The skeptic essays, the pastor essays, the marriage essays — all in one place, organized as reading paths." },
+            { title: "The full essay archive", desc: `${essays.display} essays searchable by topic, audience, and reading time. The skeptic essays, the pastor essays, the marriage essays — all in one place, organized as reading paths.` },
             { title: "Writing before it goes public", desc: "New essays land in the member library before they reach Substack or Facebook. You read it first." },
-            { title: "Curated reading guides for the 25 books", desc: "Each book paired with the essays that extend its argument. Not a list of titles — a guided path through the ideas." },
+            { title: `Curated reading guides for the ${SITE_STATS.bookCount} books`, desc: "Each book paired with the essays that extend its argument. Not a list of titles — a guided path through the ideas." },
             { title: "Member-only tools and resources", desc: "The Bible Verse Finder, Prayer Generator, and future tools built for pastors, parents, and anyone trying to live well." },
             { title: "Direct access to James", desc: "A monthly open letter from James to members only, and a contact channel that gets a response. Not a broadcast — a conversation." },
           ].map((b, i) => (
@@ -77,17 +107,24 @@ export default function Membership() {
             {joined ? (
               <p style={{ color: "var(--mustard)", fontWeight: 500, fontFamily: "var(--U)", fontSize: "0.875rem" }}>You are on the list. Watch your inbox.</p>
             ) : (
-              <form onSubmit={handleWaitlist} style={{ display: "flex", gap: "0", maxWidth: "380px", margin: "0 auto" }}>
+              <form onSubmit={checkoutLive ? handleCheckout : handleWaitlist} style={{ display: "flex", gap: "0", maxWidth: "380px", margin: "0 auto" }}>
                 <input type="email" placeholder="your@email.com" value={email} onChange={(e) => setEmail(e.target.value)} required
                   style={{ flex: 1, padding: "0.75rem 1rem", border: "1px solid var(--bone-muted)", borderRight: "none", borderRadius: "2px 0 0 2px", fontSize: "0.875rem", fontFamily: "var(--U)", background: "var(--bone)", outline: "none" }}
                 />
-                <button type="submit" style={{ padding: "0.75rem 1.25rem", background: "var(--charcoal)", color: "var(--bone)", border: "1px solid var(--charcoal)", fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, cursor: "pointer", borderRadius: "0 2px 2px 0", display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                  Join the waitlist <ArrowRight size={14} />
+                <button type="submit" disabled={checkoutMutation.isPending} style={{ padding: "0.75rem 1.25rem", background: "var(--charcoal)", color: "var(--bone)", border: "1px solid var(--charcoal)", fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, cursor: checkoutMutation.isPending ? "default" : "pointer", opacity: checkoutMutation.isPending ? 0.7 : 1, borderRadius: "0 2px 2px 0", display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  {checkoutLive
+                    ? (checkoutMutation.isPending ? "Starting checkout…" : "Become a member")
+                    : "Join the waitlist"} <ArrowRight size={14} />
                 </button>
               </form>
             )}
+            {checkoutError && (
+              <p style={{ fontSize: "0.8rem", color: "#9B1C1C", marginTop: "0.75rem", fontFamily: "var(--U)" }}>{checkoutError}</p>
+            )}
             <p style={{ fontSize: "0.75rem", color: "var(--ink-muted)", marginTop: "0.75rem" }}>
-              The room opens soon. The waitlist gets first access — and the founding rate.
+              {checkoutLive
+                ? "Checkout is handled by Stripe. Cancel anytime from the receipt email."
+                : "The room opens soon. The waitlist gets first access — and the founding rate."}
             </p>
           </div>
 
@@ -125,10 +162,10 @@ export default function Membership() {
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, color: "var(--ink)", marginBottom: "3rem" }}>Before you decide</h2>
           {[
             { q: "What if I do not love it?", a: "Cancel anytime. No form. No phone call. No retention sequence. One click in your account settings. If the writing is not carrying weight for you, you should leave — and you will not be penalized for it." },
-            { q: "How is this different from the free Substack?", a: "Substack delivers the weekly letter. The membership is the full library — 160+ essays searchable by topic, the curated book guides, the member-only essays that go deeper than what a free newsletter can carry, and direct access to James." },
+            { q: "How is this different from the free Substack?", a: `Substack delivers the weekly letter. The membership is the full library — ${essays.display} essays searchable by topic, the curated book guides, the member-only essays that go deeper than what a free newsletter can carry, and direct access to James.` },
             { q: "I am a pastor — is this for me?", a: "It was built for you first. The Pastors Connection Network is the community arm; the membership is the writing arm. Pastoral burnout, sermon preparation, theological formation, the loneliness of leading — the member library addresses all of it." },
             { q: "I am not a Christian. Does the membership assume I am?", a: "No. The skeptic is the hardest case, which is why the writing takes the skeptic seriously. The membership gives you the full archive — including the essays on doubt, historical criticism, and the intellectual architecture of belief. You will not be preached at. You will be argued with." },
-            { q: "Where does my money go?", a: "Directly to the writing. No advertisers, no sponsors, no denominational subsidies. Your membership funds the time it takes to produce theology that does not cut corners. The 25 books were written this way. The 160+ essays are written this way." },
+            { q: "Where does my money go?", a: `Directly to the writing. No advertisers, no sponsors, no denominational subsidies. Your membership funds the time it takes to produce theology that does not cut corners. The ${SITE_STATS.bookCount} books were written this way. The ${essays.display} essays are written this way.` },
             { q: "Can I gift a membership?", a: "Not yet — but it is on the roadmap. If you want to gift it now, email Pastorjbell206@gmail.com and James will set it up manually." },
           ].map((faq, i) => (
             <div key={i} style={{ borderBottom: "1px solid var(--bone-muted)", paddingBottom: "1.5rem", marginBottom: "1.5rem" }}>

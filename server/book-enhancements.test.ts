@@ -2,6 +2,10 @@ import { describe, it, expect } from "vitest";
 import { appRouter } from "./routers";
 import type { TrpcContext } from "./_core/context";
 
+const hasDb = Boolean(process.env.DATABASE_URL);
+const d = hasDb ? describe : describe.skip;
+
+
 function createTestContext(): TrpcContext {
   const user = {
     id: 1,
@@ -27,9 +31,7 @@ function createTestContext(): TrpcContext {
   };
 }
 
-// Every test calls books.listPublished() which queries MySQL; skip the whole
-// suite when DATABASE_URL is absent (e.g. CI without a live DB).
-describe.skipIf(!process.env.DATABASE_URL)("Book Display Enhancements", () => {
+d("Book Display Enhancements", () => {
   const ctx = createTestContext();
   const caller = appRouter.createCaller(ctx);
 

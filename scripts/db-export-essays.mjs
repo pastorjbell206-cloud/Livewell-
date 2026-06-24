@@ -1,99 +1,89 @@
+#!/usr/bin/env node
 /**
- * db-export-essays.mjs — READ-ONLY export of essay text for the voice audit.
+ * db-export-essays.mjs — LiveWell by James Bell
  *
- * Connects with DATABASE_URL (use a READ-ONLY credential), finds the table that
- * holds the full essay bodies, and writes { slug, title, body, published } rows
- * to ./.essays-export.json (gitignored — James's full text is not committed).
+ * Pulls every essay (full body) out of the live database into
+ * scripts/.essays-export.json, which voice-audit.mjs then reads. Connects with
+ * mysql2 directly off DATABASE_URL (read-only credentials are enough — this
+ * script only SELECTs) so it has no dependency on the TS/drizzle toolchain.
  *
- * It runs only SELECT / SHOW / information_schema queries. It writes nothing to
- * the database. On first run it also reports the posts-vs-articles table layout
- * (the open Step-0 question), so we learn the schema and export in one pass.
+ * It also answers the standing "posts vs articles" question in one pass:
+ * the schema (drizzle/schema.ts) defines a single `posts` table. There is no
+ * `articles` table. "Article" is a value of the `format` enum on a post and the
+ * word the UI uses for readers. This script reports what it actually finds in
+ * the DB so the answer is grounded, not assumed.
  *
- * Usage:
- *   DATABASE_URL='mysql://readonly:pass@host:3306/db' node scripts/db-export-essays.mjs
- *   # then:
- *   node scripts/voice-audit.mjs --file ./.essays-export.json > docs/voice-audit-report.md
+ * Usage:  DATABASE_URL=mysql://user:pass@host/db node scripts/db-export-essays.mjs
  */
+
 import { writeFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
 import mysql from "mysql2/promise";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const OUT = join(__dirname, ".essays-export.json");
 
 const url = process.env.DATABASE_URL;
 if (!url) {
   console.error(
-    "DATABASE_URL is not set. Provide a READ-ONLY connection string:\n" +
-      "  DATABASE_URL='mysql://readonly:pass@host:3306/db' node scripts/db-export-essays.mjs"
+    "DATABASE_URL is not set. Set it to your read-only connection string and re-run:\n" +
+      "  DATABASE_URL=mysql://user:pass@host/db node scripts/db-export-essays.mjs"
   );
   process.exit(1);
 }
 
-const BODY_COLS = ["body", "content", "markdown", "html", "bodyHtml", "body_md"];
-const TITLE_COLS = ["title", "name", "headline"];
-
-async function columns(conn, table) {
-  const [rows] = await conn.query(
-    "SELECT column_name FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = ?",
-    [table]
-  );
-  return rows.map(r => r.column_name ?? r.COLUMN_NAME);
+function tableExists(conn, name) {
+  return conn
+    .query(
+      "SELECT COUNT(*) AS n FROM information_schema.tables WHERE table_schema = DATABASE() AND table_name = ?",
+      [name]
+    )
+    .then(([rows]) => rows[0].n > 0);
 }
 
 async function main() {
-  // mysql2 needs SSL for most managed hosts (PlanetScale etc.). Enable unless
-  // the URL already specifies it.
-  const conn = await mysql.createConnection(
-    url.includes("ssl") ? url : { uri: url, ssl: { rejectUnauthorized: true } }
-  ).catch(async () => mysql.createConnection(url)); // fall back to plain
-
+  const conn = await mysql.createConnection(url);
   try {
-    const [tables] = await conn.query(
-      "SELECT table_name FROM information_schema.tables WHERE table_schema = DATABASE()"
-    );
-    const names = tables.map(t => t.table_name ?? t.TABLE_NAME);
-    console.error("Tables:", names.join(", "));
-
-    const candidates = names.filter(n => /post|article|essay/i.test(n));
-    let best = null;
-    for (const t of candidates) {
-      const cols = await columns(conn, t);
-      const bodyCol = BODY_COLS.find(c => cols.includes(c));
-      const titleCol = TITLE_COLS.find(c => cols.includes(c));
-      const hasSlug = cols.includes("slug");
-      const [[{ n }]] = [await conn.query(`SELECT COUNT(*) AS n FROM \`${t}\``)].map(r => r[0]);
-      console.error(
-        `  ${t}: ${n} rows | title=${titleCol ?? "?"} body=${bodyCol ?? "(none)"} slug=${hasSlug}`
+    // ─── Answer the posts-vs-articles question from the live schema ─────────
+    const hasPosts = await tableExists(conn, "posts");
+    const hasArticles = await tableExists(conn, "articles");
+    console.log("Schema check:");
+    console.log(`  posts table:    ${hasPosts ? "present" : "MISSING"}`);
+    console.log(`  articles table: ${hasArticles ? "present" : "absent"}`);
+    if (!hasPosts) {
+      throw new Error("No `posts` table in this database — wrong DATABASE_URL?");
+    }
+    if (!hasArticles) {
+      console.log(
+        "  → Confirmed: essays live in `posts`. \"Articles\" is a UI label / the\n" +
+          "    `format` enum value, not a separate table."
       );
-      if (bodyCol && titleCol && hasSlug && (!best || n > best.count)) {
-        best = { table: t, bodyCol, titleCol, count: n, cols };
-      }
     }
 
-    if (!best) {
-      console.error(
-        "\nNo table with slug+title+body found. Columns above — tell me which table/column holds the essay text and I'll adjust."
-      );
-      process.exit(2);
-    }
-
-    const pubCol = best.cols.includes("published") ? "published" : null;
-    const sql =
-      `SELECT slug, \`${best.titleCol}\` AS title, \`${best.bodyCol}\` AS body` +
-      (pubCol ? `, \`${pubCol}\` AS published` : "") +
-      ` FROM \`${best.table}\``;
-    const [rows] = await conn.query(sql);
-
-    writeFileSync("./.essays-export.json", JSON.stringify(rows, null, 2));
-    const withBody = rows.filter(r => (r.body || "").length > 500).length;
-    console.error(
-      `\nExported ${rows.length} rows from \`${best.table}\` -> ./.essays-export.json ` +
-        `(${withBody} with full-length bodies). Now run:\n` +
-        `  node scripts/voice-audit.mjs --file ./.essays-export.json > docs/voice-audit-report.md`
+    // ─── Pull every essay, full body ───────────────────────────────────────
+    const [rows] = await conn.query(
+      "SELECT id, title, slug, body, excerpt, pillar, format, audience, published, " +
+        "featured, readingTimeMinutes, publishedAt, createdAt, updatedAt " +
+        "FROM posts ORDER BY createdAt DESC"
     );
+
+    const publishedCount = rows.filter((r) => r.published).length;
+    const byFormat = {};
+    for (const r of rows) byFormat[r.format || "(null)"] = (byFormat[r.format || "(null)"] || 0) + 1;
+
+    writeFileSync(OUT, JSON.stringify(rows, null, 2));
+
+    console.log(`\nExported ${rows.length} essays → ${OUT}`);
+    console.log(`  published: ${publishedCount} · drafts: ${rows.length - publishedCount}`);
+    console.log(`  by format: ${JSON.stringify(byFormat)}`);
+    console.log("\nNext: node scripts/voice-audit.mjs");
   } finally {
     await conn.end();
   }
 }
 
-main().catch(err => {
+main().catch((err) => {
   console.error("Export failed:", err.message);
   process.exit(1);
 });

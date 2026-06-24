@@ -21,21 +21,22 @@ const ToastContext = createContext<ToastContextType | undefined>(undefined);
 export function ToastProvider({ children }: { children: React.ReactNode }) {
   const [toasts, setToasts] = useState<Toast[]>([]);
 
+  const removeToast = useCallback((id: string) => {
+    setToasts(prev => prev.filter(t => t.id !== id));
+  }, []);
+
   const addToast = useCallback((toast: Omit<Toast, 'id'>) => {
     const id = Math.random().toString(36).substr(2, 9);
     const newToast: Toast = { ...toast, id };
     setToasts(prev => [...prev, newToast]);
 
-    // Auto-remove toast after duration
+    // Auto-remove after the duration. Remove inline (not via removeToast) so
+    // this callback carries no cross-dependency and the timer is self-contained.
     if (toast.duration !== 0) {
       setTimeout(() => {
-        removeToast(id);
+        setToasts(prev => prev.filter(t => t.id !== id));
       }, toast.duration || 5000);
     }
-  }, []);
-
-  const removeToast = useCallback((id: string) => {
-    setToasts(prev => prev.filter(t => t.id !== id));
   }, []);
 
   return (

@@ -1,0 +1,50 @@
+{
+  "slug": "bible-genres",
+  "title": "How Genre Changes the Way You Read the Bible",
+  "subtitle": "A guide to the literary genres of Scripture, from law and narrative to poetry, wisdom, prophecy, gospel, epistle, and apocalyptic, and how each one asks to be read",
+  "kicker": "Exegesis",
+  "group": "Exegesis and Bible Study",
+  "sections": [
+    {
+      "id": "one-book-many-kinds",
+      "kicker": "Why Genre Matters",
+      "title": "One Book, Many Kinds of Writing",
+      "body": "You already know how to read by genre. You do not read a phone bill the way you read a love letter, and you do not read a poem the way you read a recipe. You adjust without thinking, because the kind of writing tells you how to take the words.\n\nThe Bible is a library, not a single book. Sixty-six documents written across centuries in at least eight kinds of literature.\n\nAnd here is the danger. The reader who treats every page as the same kind of writing will misread most of it. He will take a poem as a measurement and a parable as a history and a proverb as a guarantee. Genre is not a scholar's footnote. It is the first signal the text sends about how it means to be understood, and ignoring it is the most common way sincere readers go wrong."
+    },
+    {
+      "id": "law-and-narrative",
+      "kicker": "The Story and Its Commands",
+      "title": "Law and Narrative",
+      "body": "Most of the Bible is narrative, story that shows rather than tells. And stories are slippery. They report what happened without always saying whether you should imitate it. David's adultery is recorded, not recommended. The reader must ask what the narrator is teaching through the account, watching the shape of the story and the verdicts it quietly passes, rather than copying whatever the characters did.\n\nNarrative shows you God acting in history. It rarely hands you a rule. The rule, when it comes, comes elsewhere.\n\nLaw sits inside that story, given to a particular people in a particular covenant. You cannot lift an Old Testament command straight onto your life without asking how it functioned then and how it carries forward through Christ. Some laws are fulfilled and set aside, some reveal the unchanging heart of God. Discerning which is the work, and it is work the New Testament teaches you to do."
+    },
+    {
+      "id": "poetry-and-wisdom",
+      "kicker": "Song And Sayings",
+      "title": "Poetry and Wisdom",
+      "body": "A third of the Old Testament is poetry. The Psalms do not argue, they sing, and they sing in images you are meant to feel, not to dissect like a manual. When the psalmist says God is his rock, no one thinks he is made of stone. Hebrew poetry works by parallelism, the second line answering the first, deepening it, turning it. Read it slowly and let the picture land.\n\nPoetry tells the truth at a slant. It carries the emotions of faith that prose cannot hold.\n\nWisdom literature is its own thing again. Proverbs offers short, sharp observations of how life usually goes, not iron promises. The diligent generally prosper. Generally. Job and Ecclesiastes stand right beside Proverbs to insist that the rule has terrible exceptions, that the righteous suffer and the wicked sleep well. Read a proverb as a contract and you will accuse God of breaking a promise he never made. Read the wisdom books together and they teach you to fear God in a world that does not always add up."
+    },
+    {
+      "id": "prophecy-and-gospel",
+      "kicker": "The Word Spoken And The Word Made Flesh",
+      "title": "Prophecy, Gospel, and Epistle",
+      "body": "Prophecy is mostly not prediction. The prophets were preachers before they were forecasters, men sent to confront a covenant people with their unfaithfulness and to call them back. Most of what they say is about their own moment, and the future they announce serves that call. Read a prophet first as a sermon to Israel, then as a window onto what God will do, and you will stop mining the books for a calendar they were never written to be.\n\nThe Gospels are a genre invented to carry one life. They are not neutral biographies but proclamations, four portraits arranged to show you who Jesus is and to ask for your allegiance. Watch what each writer selects and where he puts it, because the arrangement preaches.\n\nThe Epistles are occasional letters, written to specific churches about specific problems. To read them well you must hear the situation on the other end of the line. Paul is answering questions you have to reconstruct, and the answer makes sense only when you know what was asked."
+    },
+    {
+      "id": "apocalyptic",
+      "kicker": "The Hardest Genre",
+      "title": "Apocalyptic, and the Discipline of Reading Rightly",
+      "body": "Then there is apocalyptic, the genre of Daniel and Revelation, the one that has produced more bad theology than any other because it is read with the least care. It is a literature of vision and symbol, written to suffering believers under hostile power, meant to pull back the curtain and show that God reigns over the chaos that is crushing them.\n\nThe beasts and trumpets and numbers are symbols, drawn from a shared world of imagery the first readers knew. Read them as a coded newspaper and you will turn a book of comfort into a book of speculation.\n\nThe great rule across every genre is the same. Ask what kind of writing you are holding before you ask what it means. The author chose his form on purpose, and the form is part of the message. Learn to read law as law and poem as poem and vision as vision, and the Bible stops fighting you. It was never unclear. You were reading the wrong way."
+    }
+  ],
+  "keyTexts": [
+    "2 Timothy 3:16-17",
+    "Psalm 1:1-3",
+    "Proverbs 1:1-7",
+    "Revelation 1:1-3"
+  ],
+  "furtherReading": [
+    { "title": "How to Read the Bible Book by Book", "author": "Gordon D. Fee and Douglas Stuart" },
+    { "title": "How to Read the Bible as Literature", "author": "Leland Ryken" },
+    { "title": "Grasping God's Word", "author": "J. Scott Duvall and J. Daniel Hays" }
+  ]
+}

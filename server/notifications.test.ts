@@ -12,9 +12,11 @@ import {
   markAdminNotificationAsRead,
 } from "./db";
 
-// beforeAll calls getDb() and every test exercises DB-backed functions; skip
-// the whole suite when DATABASE_URL is absent (e.g. CI without a live DB).
-describe.skipIf(!process.env.DATABASE_URL)("Notification System", () => {
+const hasDb = Boolean(process.env.DATABASE_URL);
+const d = hasDb ? describe : describe.skip;
+
+
+d("Notification System", () => {
   let db: any;
 
   beforeAll(async () => {

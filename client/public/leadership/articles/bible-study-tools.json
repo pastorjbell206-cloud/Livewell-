@@ -1,0 +1,50 @@
+{
+  "slug": "bible-study-tools",
+  "title": "The Bible Study Tools Worth Owning",
+  "subtitle": "A guide to the best Bible study tools for serious students and preachers, including lexicons, concordances, and commentaries, and how to use each one well",
+  "kicker": "Exegesis",
+  "group": "Exegesis and Bible Study",
+  "sections": [
+    {
+      "id": "tools-serve-the-text",
+      "kicker": "First Principle",
+      "title": "The Tools Serve the Text, Not the Other Way Around",
+      "body": "A man can own a wall of reference books and never meet the Bible. The tools are not the point. They are servants, and like all servants they are dangerous when they start giving the orders.\n\nThe order matters more than the inventory. You read the text first. You observe it, wrestle it, form your own questions and your own first answers. Only then do you reach for the books, and you reach for them to test your work, not to skip it.\n\nThe reader who opens the commentary before he has read the chapter has surrendered before the fight. He will receive other men's conclusions without ever having earned a thought of his own. So buy good tools. Learn to use them. But never let them stand between you and the page they were built to illuminate. The point was never the library. The point was always the Word."
+    },
+    {
+      "id": "concordance",
+      "kicker": "Tool One",
+      "title": "The Concordance: Following a Word Through the Bible",
+      "body": "A concordance lists where words appear across Scripture, and it answers a question you will ask constantly: where else does this come up. It is the simplest tool and one of the most powerful.\n\nUse it to trace a theme. When you find the word covenant in Genesis, a concordance lets you follow it through the whole story to the new covenant in the upper room, and the shape of the Bible emerges in front of you. Use it to compare how an author uses a word, which is the foundation of any honest word study.\n\nAn exhaustive concordance keyed to Strong's numbers also lets a reader with no Greek or Hebrew reach the original word behind the English. That is a real gift, but it comes with a warning. The numbers can make you feel like a scholar before you have learned to think like one. The concordance shows you the occurrences. It cannot do the interpreting. That part is still yours."
+    },
+    {
+      "id": "lexicon",
+      "kicker": "Tool Two",
+      "title": "The Lexicon: What the Word Could Mean",
+      "body": "A lexicon is a dictionary of the original languages, and it tells you the range of meaning a Greek or Hebrew word can carry. It is the proper antidote to the word in the Greek really means trick, because a real lexicon never gives you one secret meaning. It gives you a menu, with examples.\n\nThat menu is the gift and the trap. The lexicon lists the possible senses, but it cannot tell you which one is active in your verse. Only the context does that. A beginner reads a lexicon entry and grabs the meaning he likes best. A disciplined reader reads the whole entry, notes the options, and lets the passage choose.\n\nFor those without the languages, lexicons keyed to Strong's numbers open the door. The standard works for serious study are demanding and worth the climb. Just remember what a lexicon is for. It widens your sense of the possibilities. It does not hand you the answer."
+    },
+    {
+      "id": "commentaries",
+      "kicker": "Tool Three",
+      "title": "The Commentary: Checking Your Work Against Better Eyes",
+      "body": "A commentary is a learned reader walking you through a book verse by verse, and it is the most valuable and most abused tool a preacher owns. Valuable, because it puts the labor of a lifetime in your hands. Abused, because it tempts you to let someone else do your seeing.\n\nThere are kinds, and you want more than one. A technical commentary works through the original languages and the hardest exegetical decisions. An expositional commentary helps you move from text to meaning to teaching. A devotional commentary warms the heart but rarely settles a hard question. Know which kind you are holding and what to ask of it.\n\nThe rule that keeps a commentary in its place is this. Read it after you have studied, not before, and read more than one so that no single scholar becomes your private pope. When two careful commentators disagree, you have found a real question, and you are now studying instead of just receiving. The commentary checks your work. It was never meant to replace it."
+    },
+    {
+      "id": "the-modest-shelf",
+      "kicker": "Where to Start",
+      "title": "The Modest Shelf That Does Real Work",
+      "body": "You do not need to spend a fortune to study well. A surprising amount of the work can be done with a few honest tools and the willingness to use them.\n\nStart small. A good study Bible. A solid one volume Bible dictionary for background. An exhaustive concordance. One trusted commentary on whatever book you are teaching. That shelf, used faithfully, will carry you further than a thousand dollars of software used lazily.\n\nThe software is real and useful, and over time you may want it. But the tools never were the dividing line between shallow and deep. The dividing line is whether you do the work. I have known farmers with four books who handled Scripture better than scholars with four hundred, because the farmers actually opened theirs and sat with the text until it spoke. Buy what you will use. Use what you buy. And keep the order straight: the Word first, the tools in its service, your own labor never skipped."
+    }
+  ],
+  "keyTexts": [
+    "Ezra 7:10",
+    "2 Timothy 2:15",
+    "Acts 17:11",
+    "Proverbs 2:1-5"
+  ],
+  "furtherReading": [
+    { "title": "Introducing Biblical Interpretation", "author": "Michael J. Gorman" },
+    { "title": "The Strongest Strong's Exhaustive Concordance", "author": "James Strong" },
+    { "title": "Commentary and Reference Survey", "author": "John Glynn" }
+  ]
+}

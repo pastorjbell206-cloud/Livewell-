@@ -1,0 +1,47 @@
+{
+  "slug": "athanasian-creed",
+  "title": "The Athanasian Creed",
+  "subtitle": "The full text of the Athanasian Creed (Quicunque Vult), the early church's most exacting statement of the Trinity and the incarnation, with plain notes.",
+  "group": "The Ecumenical Creeds",
+  "date": "c. AD 500",
+  "intro": "The Athanasian Creed was not written by Athanasius. It appeared in southern Gaul around the year 500, in Latin, more than a century after his death, and carries his name because it defends what he spent his life defending. It is the longest and most relentless of the ecumenical creeds, a sustained exercise in saying the Trinity precisely, clause after balancing clause, so that no shortcut survives. The Father is God, the Son is God, the Spirit is God. And yet there are not three Gods. Western churches have confessed it for fifteen centuries. Almost no one preaches it.\n\nIt was produced by exhaustion as much as by crisis. By 500 the church had been through Arius, Apollinaris, Nestorius, and Eutyches. A century and a half of watching the faith nearly capsize over single words. The creed reads like a fence built by people who had seen exactly where the animals get out. Every 'and yet' marks a grave. Its second half turns to the incarnation and compresses Chalcedon into a few unforgiving lines: one Christ, not by conversion of the Godhead into flesh, but by taking of the manhood into God.\n\nModern readers stumble at its opening and closing warnings: that whoever does not hold this faith cannot be saved. The clauses are severe, and they were written in an age that believed doctrine was a matter of life and death because it is. We may soften the tone. We should not miss the claim underneath it: the Trinity is not advanced material for theologians. It is the name of the God who saves, and a church that gets God wrong has nothing left to offer anyone.",
+  "text": "Whosoever will be saved, before all things it is necessary that he hold the catholic faith. Which faith except every one do keep whole and undefiled, without doubt he shall perish everlastingly.\n\nAnd the catholic faith is this: that we worship one God in Trinity, and Trinity in Unity; neither confounding the Persons, nor dividing the Substance. For there is one Person of the Father, another of the Son, and another of the Holy Ghost. But the Godhead of the Father, of the Son, and of the Holy Ghost is all one: the glory equal, the majesty co-eternal.\n\nSuch as the Father is, such is the Son, and such is the Holy Ghost. The Father uncreate, the Son uncreate, and the Holy Ghost uncreate. The Father incomprehensible, the Son incomprehensible, and the Holy Ghost incomprehensible. The Father eternal, the Son eternal, and the Holy Ghost eternal. And yet they are not three eternals, but one eternal. As also there are not three incomprehensibles, nor three uncreated, but one uncreated, and one incomprehensible.\n\nSo likewise the Father is almighty, the Son almighty, and the Holy Ghost almighty; and yet they are not three almighties, but one almighty. So the Father is God, the Son is God, and the Holy Ghost is God; and yet they are not three Gods, but one God. So likewise the Father is Lord, the Son Lord, and the Holy Ghost Lord; and yet not three Lords, but one Lord. For like as we are compelled by the Christian verity to acknowledge every Person by himself to be God and Lord, so are we forbidden by the catholic religion to say, There be three Gods, or three Lords.\n\nThe Father is made of none, neither created, nor begotten. The Son is of the Father alone; not made, nor created, but begotten. The Holy Ghost is of the Father and of the Son; neither made, nor created, nor begotten, but proceeding. So there is one Father, not three Fathers; one Son, not three Sons; one Holy Ghost, not three Holy Ghosts.\n\nAnd in this Trinity none is afore, or after other; none is greater, or less than another; but the whole three Persons are co-eternal together, and co-equal. So that in all things, as is aforesaid, the Unity in Trinity and the Trinity in Unity is to be worshipped. He therefore that will be saved must thus think of the Trinity.\n\nFurthermore, it is necessary to everlasting salvation that he also believe rightly the Incarnation of our Lord Jesus Christ. For the right faith is, that we believe and confess that our Lord Jesus Christ, the Son of God, is God and Man; God, of the Substance of the Father, begotten before the worlds; and Man, of the substance of his Mother, born in the world; perfect God and perfect Man, of a reasonable soul and human flesh subsisting; equal to the Father, as touching his Godhead; and inferior to the Father, as touching his Manhood.\n\nWho, although he be God and Man, yet he is not two, but one Christ; one, not by conversion of the Godhead into flesh, but by taking of the Manhood into God; one altogether; not by confusion of Substance, but by unity of Person. For as the reasonable soul and flesh is one man, so God and Man is one Christ.\n\nWho suffered for our salvation, descended into hell, rose again the third day from the dead. He ascended into heaven; he sitteth on the right hand of the Father, God Almighty; from whence he shall come to judge the quick and the dead. At whose coming all men shall rise again with their bodies, and shall give account for their own works. And they that have done good shall go into life everlasting; and they that have done evil into everlasting fire.\n\nThis is the catholic faith, which except a man believe faithfully, he cannot be saved.",
+  "annotations": [
+    {
+      "phrase": "neither confounding the Persons, nor dividing the Substance",
+      "note": "The two ditches on either side of the road. Confounding the Persons is modalism: Father, Son, and Spirit as masks one God wears in turn. Dividing the Substance is tritheism: three separate gods on a committee. The whole creed is an exercise in staying out of both ditches."
+    },
+    {
+      "phrase": "The Father incomprehensible, the Son incomprehensible",
+      "note": "The Latin is immensus: boundless, immeasurable, not contained by anything. The old English 'incomprehensible' misleads modern ears. It does not mean God cannot be known at all, but that he cannot be fenced in."
+    },
+    {
+      "phrase": "not three Gods, but one God",
+      "note": "The creed's relentless rhythm, three times affirmed and three times bounded, is deliberate pedagogy. It forces the speaker to say everything Scripture says about each Person without ever arriving at three deities. Tedium here is a safety feature."
+    },
+    {
+      "phrase": "but proceeding",
+      "note": "Each Person is distinguished only by relation: the Father unbegotten, the Son begotten, the Spirit proceeding. Nothing else differs. Note that this Western creed includes 'and of the Son', the filioque, which the Eastern churches have never accepted."
+    },
+    {
+      "phrase": "none is greater, or less than another",
+      "note": "The flat denial of every hierarchy inside God. Any theology that makes the Son eternally lesser, or the Spirit a junior partner, fails this line. The Persons are ordered in relation, never ranked in being."
+    },
+    {
+      "phrase": "inferior to the Father, as touching his Manhood",
+      "note": "How the creed handles verses like 'the Father is greater than I' (John 14:28). Christ is equal to the Father in his deity and lesser only in his assumed humanity. The distinction lets the church read every word of the Gospels without panic."
+    },
+    {
+      "phrase": "by taking of the Manhood into God",
+      "note": "The direction of the incarnation matters. God did not turn into a man, diluting deity into flesh. The eternal Son took a complete human nature into his own Person. Deity is not reduced. Humanity is raised."
+    },
+    {
+      "phrase": "of a reasonable soul and human flesh subsisting",
+      "note": "Against Apollinaris, who taught that the divine Word replaced Christ's human mind. The creed insists Christ has a real human soul. As Gregory of Nazianzus said, what is not assumed is not healed. He took the whole of us, mind included."
+    },
+    {
+      "phrase": "without doubt he shall perish everlastingly",
+      "note": "The 'damnatory clauses' that make modern readers wince. They are not a claim that salvation comes by passing a theology exam. They are a fifth-century way of saying the stakes are final. The faith described here is not one option among several. It is the difference between the living God and an idol with his name on it."
+    }
+  ]
+}

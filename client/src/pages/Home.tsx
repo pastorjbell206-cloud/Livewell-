@@ -1,19 +1,20 @@
 /**
- * Home — Substack-shaped landing page.
+ * Home — mission-forward landing page.
  *
- * Per James's brief: "Pastor and essayist writing on theology, politics, and
- * the American church after Christendom. New essays weekly." The homepage
- * leads with the lede track, surfaces the latest essays, and converts via
- * the segmented signup form (skeptic / Christian / pastor / exploring).
+ * The homepage leads with the founder's headline and four mission doors —
+ * Become a Disciple, Make Disciples, Leadership Training, Prophetic Justice —
+ * so a visitor is routed by what they came for, not by the political/cultural
+ * essay arcs (those live under Writing and the nav, not the front page). Below
+ * the doors: the latest essays, the segmented signup (the conversion surface),
+ * and the five pillars as the deeper taxonomy spine.
  */
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 
-import CommandPalette from "@/components/CommandPalette";
 import Footer from "@/components/Footer";
 import MinimalNav from "@/components/MinimalNav";
 import { SegmentedSignup } from "@/components/SegmentedSignup";
-import { SEOMeta } from "@/components/SEOMeta";
+import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
 import {
@@ -21,84 +22,75 @@ import {
   PRIMARY_HEADLINE,
   PRIMARY_KICKER,
   PRIMARY_SUBHEAD,
+  PRIMARY_SUBHEAD_SHORT,
 } from "@/lib/positioning";
-import { FEATURED_TRACKS, PRIMARY_TRACKS, trackUrl } from "@/lib/taxonomy";
+// Hero A/B variant. "A" (default): tighter two-sentence subhead + a "Find your
+// track" secondary CTA that serves everyone (the skeptic entry stays as a
+// tertiary link). "B": the original long subhead + skeptic-first secondary.
+// Flip this one constant to switch variants without touching markup.
+const HERO_VARIANT: "A" | "B" = "A";
 
-interface LastRead {
-  slug: string;
-  title: string;
-  pillar?: string;
-  ts?: number;
-}
-
-/**
- * Read the "pick up where you left off" pointer from localStorage. Guarded for
- * SSR (no window), missing/empty values, and malformed JSON. Returns null when
- * there is nothing valid to surface.
- */
-function readLastRead(): LastRead | null {
-  if (typeof window === "undefined") return null;
-  try {
-    const raw = window.localStorage.getItem("livewell:last-read");
-    if (!raw) return null;
-    const parsed = JSON.parse(raw) as Partial<LastRead> | null;
-    if (
-      !parsed ||
-      typeof parsed.slug !== "string" ||
-      !parsed.slug.trim() ||
-      typeof parsed.title !== "string" ||
-      !parsed.title.trim()
-    ) {
-      return null;
-    }
-    return {
-      slug: parsed.slug,
-      title: parsed.title,
-      pillar: typeof parsed.pillar === "string" ? parsed.pillar : undefined,
-      ts: typeof parsed.ts === "number" ? parsed.ts : undefined,
-    };
-  } catch {
-    return null;
-  }
-}
-
-/** Guided-entry chips — "Where are you starting from?" Each routes to a real page. */
-const ENTRY_POINTS: {
-  label: string;
-  sub: string;
-  href: string;
-}[] = [
+// The four mission doors — the primary way into the site. Each routes by the
+// reader's intent into an existing hub. Edit copy/destinations here only.
+const DOORS = [
   {
-    label: "A skeptic",
-    sub: "Seven essays in argument order.",
-    href: "/skeptic-track",
+    title: "Become a Disciple",
+    blurb:
+      "New to following Jesus, or finding your way back. A path that takes your questions seriously and meets you where you actually are.",
+    href: "/discipleship",
+    cta: "Start the path",
   },
   {
-    label: "Faith with hard questions",
-    sub: "For doubt that outgrew its answers.",
-    href: "/doubt",
+    title: "Make Disciples",
+    blurb:
+      "You are teaching others to follow Christ. Study guides, family devotions, and tools to put real weight behind what you pass on.",
+    href: "/resources",
+    cta: "Find the tools",
   },
   {
-    label: "A pastor",
-    sub: "The letter and the resources for the work.",
-    href: "/for-pastors",
+    title: "Leadership Training",
+    blurb:
+      "For pastors, elders, and deacons. The work of leading a church, and the training to carry what the work costs.",
+    href: "/leadership",
+    cta: "Enter the hub",
   },
   {
-    label: "Seeking to live well",
-    sub: "Marriage, money, parenting, the Tuesday afternoon.",
-    href: "/writing",
+    title: "Prophetic Justice",
+    blurb:
+      "What Scripture says about the poor, the outsider, the systems we inherit. This is not about left or right. It is about the cross.",
+    href: "/justice",
+    cta: "Read the call",
   },
 ];
 
+// The five pillars — the deeper writing taxonomy, kept visible below the doors.
+const PILLARS = [
+  { name: "Theological Depth", href: "/theology", blurb: "Doctrine, church history, the whole biblical story." },
+  { name: "Prophetic Justice", href: "/justice", blurb: "The poor, the outsider, the systems we inherit." },
+  { name: "Prophetic Disruption", href: "/disruption", blurb: "The church, empire, and the politics that capture it." },
+  { name: "Leadership Formation", href: "/leadership", blurb: "Character before competence, for those who lead." },
+  { name: "Integrated Life", href: "/life", blurb: "Marriage, parenting, vocation, and rest." },
+];
+
+// Hand-picked flagship essays for the front page. Curated, not chronological —
+// the front page should lead with the strongest work, not the newest.
+const FLAGSHIP_SLUGS = [
+  "what-the-gospel-actually-is",
+  "what-is-the-kingdom-of-god-and-why-it-changes-everything",
+  "what-christian-nationalism-is-and-is-not",
+  "how-to-read-the-bible-without-making-it-say-what-you-want",
+  "already-and-not-yet-living-between-two-worlds",
+  "why-there-are-so-many-christian-denominations",
+];
+
 export default function Home() {
-  // Recent essays for the "Recent" rail.
-  const articlesQuery = trpc.posts.listForIndex.useQuery();
+  const articlesQuery = trpc.posts.listPublished.useQuery();
   const all = articlesQuery.data ?? [];
 
-  const lede = all[0];
-  const recent = all.slice(1, 7);
-
-  const lastRead = readLastRead();
+  // Lead with the strongest essays; fall back to latest if a slug is absent.
+  const bySlug = new Map(all.map(a => [a.slug, a] as const));
+  const curated = FLAGSHIP_SLUGS.map(s => bySlug.get(s)).filter((a): a is (typeof all)[number] => !!a);
+  const flagship = curated.length ? curated : all.slice(0, 6);
 
   return (
     <div>
@@ -107,14 +99,10 @@ export default function Home() {
         description={META_DESCRIPTION}
         url="https://www.livewellbyjamesbell.co"
         type="website"
+        structuredData={[getOrganizationSchema(), getWebSiteSchema()]}
       />
-      {/* Organization + WebSite schema is emitted once at the app root
-          (see App.tsx → SiteStructuredData), so it is intentionally omitted here. */}
-      <a href="#main" className="skip-link">Skip to content</a>
       <MinimalNav />
-      <CommandPalette />
 
-      <main id="main">
       {/* HERO — Substack-shaped lede */}
       <section
         style={{
@@ -181,6 +169,21 @@ export default function Home() {
 
             <p
               style={{
+                fontFamily: "var(--F)",
+                fontSize: "clamp(20px, 2.6vw, 30px)",
+                fontStyle: "italic",
+                fontWeight: 400,
+                lineHeight: 1.3,
+                color: "var(--bone)",
+                maxWidth: "32ch",
+                marginBottom: "24px",
+              }}
+            >
+              Learning to follow Jesus — and live well — in post-Christian America.
+            </p>
+
+            <p
+              style={{
                 fontFamily: "var(--B)",
                 fontSize: "19px",
                 lineHeight: 1.65,
@@ -189,7 +192,7 @@ export default function Home() {
                 marginBottom: "40px",
               }}
             >
-              {PRIMARY_SUBHEAD}
+              {HERO_VARIANT === "A" ? PRIMARY_SUBHEAD_SHORT : PRIMARY_SUBHEAD}
             </p>
 
             <div
@@ -200,9 +203,7 @@ export default function Home() {
                 alignItems: "center",
               }}
             >
-              {/* Primary path into the book-in-public. /start is the Start Here
-                  experience (Phase 3 makes it the Blind Spots reader's guide). */}
-              <Link href="/start" style={{ textDecoration: "none" }}>
+              <Link href="/writing" style={{ textDecoration: "none" }}>
                 <button
                   type="button"
                   style={{
@@ -219,11 +220,10 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  Start Here
+                  Read the essays
                 </button>
               </Link>
-              {/* Single clear subscribe action — scrolls to the segmented form. */}
-              <a href="#subscribe" style={{ textDecoration: "none" }}>
+              <Link href={HERO_VARIANT === "A" ? "/start" : "/skeptic-track"} style={{ textDecoration: "none" }}>
                 <button
                   type="button"
                   style={{
@@ -239,180 +239,92 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  Subscribe
+                  {HERO_VARIANT === "A" ? "Find your track" : "Start here if you're a skeptic"}
                 </button>
-              </a>
+              </Link>
             </div>
-
-            {/* GUIDED ENTRY — "Where are you starting from?" */}
-            <div style={{ marginTop: "48px" }}>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "12px",
-                  marginBottom: "20px",
-                }}
-              >
-                <span
-                  aria-hidden
-                  style={{
-                    width: "24px",
-                    height: "1px",
-                    background: "rgba(245,240,230,0.3)",
-                  }}
-                />
-                <span
+            {HERO_VARIANT === "A" && (
+              <div style={{ marginTop: "16px" }}>
+                <Link
+                  href="/skeptic-track"
                   style={{
                     fontFamily: "var(--U)",
-                    fontSize: "11px",
-                    fontWeight: 600,
-                    letterSpacing: "0.18em",
-                    textTransform: "uppercase",
-                    color: "rgba(245,240,230,0.55)",
+                    fontSize: "13px",
+                    color: "rgba(245,240,230,0.6)",
+                    textDecoration: "underline",
+                    textUnderlineOffset: "3px",
                   }}
                 >
-                  Where are you starting from?
-                </span>
+                  Or start here if you're a skeptic
+                </Link>
               </div>
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns:
-                    "repeat(auto-fit, minmax(200px, 1fr))",
-                  gap: "1px",
-                  background: "rgba(245,240,230,0.12)",
-                  border: "1px solid rgba(245,240,230,0.12)",
-                  borderRadius: "var(--radius-sm)",
-                  overflow: "hidden",
-                  maxWidth: "880px",
-                }}
-              >
-                {ENTRY_POINTS.map(entry => (
-                  <Link
-                    key={entry.href + entry.label}
-                    href={entry.href}
-                    style={{ textDecoration: "none", color: "inherit" }}
-                  >
-                    <div
-                      style={{
-                        background: "var(--charcoal)",
-                        padding: "18px 18px 20px",
-                        height: "100%",
-                        cursor: "pointer",
-                        transition: "background 0.2s",
-                        borderTop: "2px solid transparent",
-                      }}
-                      onMouseEnter={e => {
-                        e.currentTarget.style.background =
-                          "rgba(245,240,230,0.05)";
-                        e.currentTarget.style.borderTop =
-                          "2px solid var(--mustard)";
-                      }}
-                      onMouseLeave={e => {
-                        e.currentTarget.style.background = "var(--charcoal)";
-                        e.currentTarget.style.borderTop =
-                          "2px solid transparent";
-                      }}
-                    >
-                      <div
-                        style={{
-                          fontFamily: "var(--F)",
-                          fontSize: "20px",
-                          fontWeight: 500,
-                          letterSpacing: "-0.01em",
-                          color: "var(--bone)",
-                          marginBottom: "8px",
-                          lineHeight: 1.2,
-                        }}
-                      >
-                        {entry.label}
-                      </div>
-                      <div
-                        style={{
-                          fontFamily: "var(--B)",
-                          fontSize: "13px",
-                          lineHeight: 1.55,
-                          color: "rgba(245,240,230,0.6)",
-                        }}
-                      >
-                        {entry.sub}
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </div>
+            )}
           </div>
 
-          {/* Lede essay card — replaces decorative author card */}
-          {lede && (
-            <Link
-              href={`/writing/${lede.slug}`}
-              style={{ textDecoration: "none", color: "inherit" }}
+          {/* Vision card — the mission, not the latest article */}
+          <Link
+            href="/exile"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <article
+              style={{
+                background: "rgba(245,240,230,0.06)",
+                border: "1px solid rgba(245,240,230,0.14)",
+                borderTop: "2px solid var(--mustard)",
+                padding: "var(--s-5)",
+                borderRadius: "var(--radius-sm)",
+                cursor: "pointer",
+                transition: "all 0.2s",
+                maxWidth: "640px",
+              }}
             >
-              <article
+              <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>
+                The vision
+              </div>
+              <h2
                 style={{
-                  background: "rgba(245,240,230,0.06)",
-                  border: "1px solid rgba(245,240,230,0.14)",
-                  borderTop: "2px solid var(--mustard)",
-                  padding: "var(--s-5)",
-                  borderRadius: "var(--radius-sm)",
-                  cursor: "pointer",
-                  transition: "all 0.2s",
-                  maxWidth: "640px",
+                  fontFamily: "var(--F)",
+                  fontSize: "28px",
+                  fontWeight: 500,
+                  lineHeight: 1.2,
+                  letterSpacing: "-0.01em",
+                  color: "var(--bone)",
+                  marginBottom: "12px",
                 }}
               >
-                <div style={{ marginBottom: "16px" }}>
-                  <TrackChip pillarOrTrack={lede.pillar} inverted asLink={false} />
-                </div>
-                <h2
-                  style={{
-                    fontFamily: "var(--F)",
-                    fontSize: "28px",
-                    fontWeight: 500,
-                    lineHeight: 1.2,
-                    letterSpacing: "-0.01em",
-                    color: "var(--bone)",
-                    marginBottom: "12px",
-                  }}
-                >
-                  {lede.title}
-                </h2>
-                {lede.excerpt && (
-                  <p
-                    style={{
-                      fontFamily: "var(--B)",
-                      fontSize: "15px",
-                      lineHeight: 1.65,
-                      color: "rgba(245,240,230,0.7)",
-                      marginBottom: "16px",
-                      maxWidth: "55ch",
-                    }}
-                  >
-                    {lede.excerpt}
-                  </p>
-                )}
-                <div
-                  style={{
-                    fontFamily: "var(--U)",
-                    fontSize: "12px",
-                    color: "rgba(245,240,230,0.55)",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "6px",
-                  }}
-                >
-                  {(lede.readingTimeMinutes ?? 5)} min read · Continue
-                  <ArrowRight size={12} aria-hidden />
-                </div>
-              </article>
-            </Link>
-          )}
+                Living well as exiles in a post-Christian world.
+              </h2>
+              <p
+                style={{
+                  fontFamily: "var(--B)",
+                  fontSize: "15px",
+                  lineHeight: 1.65,
+                  color: "rgba(245,240,230,0.7)",
+                  marginBottom: "16px",
+                  maxWidth: "55ch",
+                }}
+              >
+                Where we came from, where we are, how to live, and where we are going. Build the house. Plant the garden. Raise the children. Make disciples at the table.
+              </p>
+              <div
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "12px",
+                  color: "rgba(245,240,230,0.55)",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                }}
+              >
+                Read the vision
+                <ArrowRight size={12} aria-hidden />
+              </div>
+            </article>
+          </Link>
         </div>
       </section>
 
-      {/* FEATURED TRACK STRIP — three primary Substack-aligned arcs */}
+      {/* MISSION DOORS — the primary way into the site, by the reader's intent */}
       <section
         style={{
           background: "var(--bone)",
@@ -422,7 +334,7 @@ export default function Home() {
       >
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ marginBottom: "12px" }}>
-            The Lede Arcs
+            Start where you are
           </div>
           <h2
             style={{
@@ -431,25 +343,34 @@ export default function Home() {
               fontWeight: 400,
               letterSpacing: "-0.015em",
               color: "var(--ink)",
-              marginBottom: "var(--s-4)",
+              marginBottom: "16px",
               maxWidth: "32ch",
             }}
           >
-            The three threads the weekly essays trace.
+            Four doors in.
           </h2>
+          <p
+            style={{
+              fontFamily: "var(--B)",
+              fontSize: "17px",
+              lineHeight: 1.65,
+              color: "var(--ink-muted)",
+              maxWidth: "60ch",
+              marginBottom: "var(--s-4)",
+            }}
+          >
+            Wherever you are, there is a way through. Pick the one that fits, and
+            the rest of the site opens from there.
+          </p>
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
               gap: "24px",
             }}
           >
-            {FEATURED_TRACKS.map(track => (
-              <Link
-                key={track.slug}
-                href={trackUrl(track.slug)}
-                style={{ textDecoration: "none" }}
-              >
+            {DOORS.map(door => (
+              <Link key={door.href} href={door.href} style={{ textDecoration: "none" }}>
                 <article
                   style={{
                     padding: "var(--s-4)",
@@ -458,6 +379,8 @@ export default function Home() {
                     borderLeft: "2px solid var(--mustard)",
                     borderRadius: "var(--radius-sm)",
                     height: "100%",
+                    display: "flex",
+                    flexDirection: "column",
                     transition: "all 0.2s",
                     cursor: "pointer",
                   }}
@@ -478,7 +401,7 @@ export default function Home() {
                       marginBottom: "12px",
                     }}
                   >
-                    {track.title}
+                    {door.title}
                   </h3>
                   <p
                     style={{
@@ -487,9 +410,10 @@ export default function Home() {
                       lineHeight: 1.65,
                       color: "var(--ink-muted)",
                       marginBottom: "20px",
+                      flex: 1,
                     }}
                   >
-                    {track.description}
+                    {door.blurb}
                   </p>
                   <span
                     style={{
@@ -501,9 +425,10 @@ export default function Home() {
                       color: "var(--ink)",
                       borderBottom: "1px solid var(--mustard)",
                       paddingBottom: "2px",
+                      alignSelf: "flex-start",
                     }}
                   >
-                    Read this track →
+                    {door.cta} →
                   </span>
                 </article>
               </Link>
@@ -539,7 +464,7 @@ export default function Home() {
                 color: "var(--ink)",
               }}
             >
-              Recent essays
+              Start with these
             </h2>
             <Link
               href="/writing"
@@ -557,80 +482,6 @@ export default function Home() {
             </Link>
           </div>
 
-          {lastRead && (
-            <Link
-              href={`/writing/${lastRead.slug}`}
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <article
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  gap: "16px",
-                  flexWrap: "wrap",
-                  background: "var(--card)",
-                  border: "1px solid var(--border)",
-                  borderLeft: "2px solid var(--mustard)",
-                  borderRadius: "var(--radius-sm)",
-                  padding: "16px 20px",
-                  marginBottom: "var(--s-4)",
-                  cursor: "pointer",
-                  transition: "border-color 0.2s",
-                }}
-                onMouseEnter={e => {
-                  e.currentTarget.style.borderColor = "var(--mustard)";
-                }}
-                onMouseLeave={e => {
-                  e.currentTarget.style.borderColor = "var(--border)";
-                }}
-              >
-                <div style={{ minWidth: 0 }}>
-                  <div
-                    style={{
-                      fontFamily: "var(--U)",
-                      fontSize: "11px",
-                      fontWeight: 600,
-                      letterSpacing: "0.18em",
-                      textTransform: "uppercase",
-                      color: "var(--mustard-text)",
-                      marginBottom: "6px",
-                    }}
-                  >
-                    Pick up where you left off
-                  </div>
-                  <div
-                    style={{
-                      fontFamily: "var(--F)",
-                      fontSize: "20px",
-                      fontWeight: 500,
-                      letterSpacing: "-0.01em",
-                      lineHeight: 1.25,
-                      color: "var(--ink)",
-                    }}
-                  >
-                    {lastRead.title}
-                  </div>
-                </div>
-                <span
-                  style={{
-                    fontFamily: "var(--U)",
-                    fontSize: "12px",
-                    fontWeight: 600,
-                    color: "var(--ink-muted)",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "6px",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  Continue
-                  <ArrowRight size={14} aria-hidden />
-                </span>
-              </article>
-            </Link>
-          )}
-
           {articlesQuery.isLoading && (
             <p
               style={{
@@ -643,7 +494,7 @@ export default function Home() {
             </p>
           )}
 
-          {recent.length > 0 && (
+          {flagship.length > 0 && (
             <div
               style={{
                 display: "grid",
@@ -651,7 +502,7 @@ export default function Home() {
                 gap: "24px",
               }}
             >
-              {recent.map(a => (
+              {flagship.map(a => (
                 <Link
                   key={a.id}
                   href={`/writing/${a.slug}`}
@@ -677,7 +528,7 @@ export default function Home() {
                     }}
                   >
                     <div style={{ marginBottom: "12px" }}>
-                      <TrackChip pillarOrTrack={a.pillar} asLink={false} />
+                      <TrackChip pillarOrTrack={a.pillar} slug={a.slug} asLink={false} />
                     </div>
                     <h3
                       style={{
@@ -712,11 +563,9 @@ export default function Home() {
 
       {/* SEGMENTED SUBSCRIBE — the single most important conversion surface */}
       <section
-        id="subscribe"
         style={{
           background: "var(--charcoal)",
           padding: "var(--s-7) var(--s-4)",
-          scrollMarginTop: "80px",
         }}
       >
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
@@ -728,7 +577,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECONDARY TRACKS — the rest of what Bell writes */}
+      {/* THE FIVE PILLARS — the deeper writing taxonomy spine */}
       <section
         style={{
           background: "var(--bone)",
@@ -737,7 +586,7 @@ export default function Home() {
       >
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ marginBottom: "12px" }}>
-            Also Writing On
+            The writing, by pillar
           </div>
           <h2
             style={{
@@ -750,7 +599,7 @@ export default function Home() {
               maxWidth: "32ch",
             }}
           >
-            Pastoring, marriage, parenting, prophetic justice, deep theology.
+            Five pillars. One argument.
           </h2>
           <div
             style={{
@@ -759,12 +608,8 @@ export default function Home() {
               gap: "16px",
             }}
           >
-            {PRIMARY_TRACKS.filter(t => !t.featured).map(track => (
-              <Link
-                key={track.slug}
-                href={trackUrl(track.slug)}
-                style={{ textDecoration: "none" }}
-              >
+            {PILLARS.map(pillar => (
+              <Link key={pillar.href} href={pillar.href} style={{ textDecoration: "none" }}>
                 <div
                   style={{
                     padding: "20px",
@@ -792,7 +637,7 @@ export default function Home() {
                       marginBottom: "8px",
                     }}
                   >
-                    {track.title}
+                    {pillar.name}
                   </h3>
                   <p
                     style={{
@@ -802,7 +647,7 @@ export default function Home() {
                       color: "var(--ink-muted)",
                     }}
                   >
-                    {track.description}
+                    {pillar.blurb}
                   </p>
                 </div>
               </Link>
@@ -810,7 +655,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      </main>
 
       <Footer />
     </div>

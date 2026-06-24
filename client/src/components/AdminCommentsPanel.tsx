@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { trpc } from "@/lib/trpc";
 import { Button } from "@/components/ui/button";
-import { Trash2, Check, AlertCircle } from "lucide-react";
+import { Trash2, Check, AlertCircle, Loader2 } from "lucide-react";
 
 export function AdminCommentsPanel() {
   const [activeTab, setActiveTab] = useState<"pending" | "approved">("pending");
 
-  const { data: commentsData, refetch } = trpc.community.comments.listAll.useQuery();
+  const { data: commentsData, isLoading, refetch } = trpc.community.comments.listAll.useQuery();
   const approveMutation = trpc.community.comments.approve.useMutation({
     onSuccess: () => refetch(),
   });
@@ -62,8 +62,19 @@ export function AdminCommentsPanel() {
         </button>
       </div>
 
+      {/* Loading State */}
+      {isLoading && (
+        <div
+          className="flex items-center justify-center gap-3 py-12 rounded-lg"
+          style={{ backgroundColor: "#F7F5F0" }}
+        >
+          <Loader2 size={24} className="animate-spin" style={{ color: "#B8963E" }} />
+          <span style={{ color: "#6B7280" }}>Loading comments...</span>
+        </div>
+      )}
+
       {/* Empty State */}
-      {currentList.length === 0 && (
+      {!isLoading && currentList.length === 0 && (
         <div
           className="text-center py-12 rounded-lg"
           style={{ backgroundColor: "var(--bone)" }}
@@ -79,7 +90,7 @@ export function AdminCommentsPanel() {
 
       {/* Comments List */}
       <div className="space-y-4">
-        {currentList.map((comment) => (
+        {!isLoading && currentList.map((comment) => (
           <div
             key={comment.id}
             className="p-6 rounded-lg border"
