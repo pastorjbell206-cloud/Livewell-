@@ -2154,6 +2154,12 @@ const EBOOKS: Record<string, EbookConfig> = {
     file: new URL("./_ebooks/live-well.pdf", import.meta.url),
     filename: "Live-Well.pdf",
   },
+  "how-to-read-the-bible": {
+    title: "How to Read the Bible",
+    priceEnv: "STRIPE_PRICE_HOW_TO_READ_THE_BIBLE",
+    file: new URL("./_ebooks/how-to-read-the-bible.pdf", import.meta.url),
+    filename: "How-to-Read-the-Bible.pdf",
+  },
 };
 
 const PRODUCTION_SITE_URL = "https://livewellbyjamesbell.co";

@@ -22,6 +22,8 @@ const Covenant = lazy(() => import("./pages/books/Covenant"));
 const CovenantThankYou = lazy(() => import("./pages/books/CovenantThankYou"));
 const LiveWell = lazy(() => import("./pages/books/LiveWell"));
 const LiveWellThankYou = lazy(() => import("./pages/books/LiveWellThankYou"));
+const HowToReadTheBible = lazy(() => import("./pages/books/HowToReadTheBible"));
+const HowToReadTheBibleThankYou = lazy(() => import("./pages/books/HowToReadTheBibleThankYou"));
 const WhenGodBlessAmerica = lazy(() => import("./pages/WhenGodBlessAmerica"));
 const WhenGodBlessAmericaThankYou = lazy(() => import("./pages/WhenGodBlessAmericaThankYou"));
 const Believe = lazy(() => import("./pages/Believe"));
@@ -370,6 +372,8 @@ function Router() {
         <Route path="/covenant" component={Covenant} />
         <Route path="/live-well/thank-you" component={LiveWellThankYou} />
         <Route path="/live-well" component={LiveWell} />
+        <Route path="/how-to-read-the-bible/thank-you" component={HowToReadTheBibleThankYou} />
+        <Route path="/how-to-read-the-bible" component={HowToReadTheBible} />
         <Route path="/substack" component={SubstackPage} />
         <Route path="/pastors" component={Pastors} />
         <Route path="/about" component={About} />

@@ -62,6 +62,12 @@ const BOOKS = [
     subtitle: "Seeking the Good of the City in Christian Exile",
     env: "STRIPE_PRICE_LIVE_WELL",
   },
+  {
+    slug: "how-to-read-the-bible",
+    title: "How to Read the Bible",
+    subtitle: "Without Making It Say What You Already Believe",
+    env: "STRIPE_PRICE_HOW_TO_READ_THE_BIBLE",
+  },
 ];
 
 const results = [];
