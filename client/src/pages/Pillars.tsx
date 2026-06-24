@@ -1,4 +1,6 @@
 import Layout from "@/components/Layout";
+import { SEOMeta } from "@/components/SEOMeta";
+import { SITE_URL } from "@/lib/site";
 import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 import { useMemo } from "react";
@@ -26,6 +28,11 @@ export default function Pillars() {
 
   return (
     <Layout>
+      <SEOMeta
+        title="The Five Pillars — The Library | James Bell"
+        description="Theological depth, prophetic disruption, prophetic justice, leadership formation, and the integrated life: the five pillars that organize the writing of James Bell."
+        url={`${SITE_URL}/pillars`}
+      />
       <div style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           {/* Header */}

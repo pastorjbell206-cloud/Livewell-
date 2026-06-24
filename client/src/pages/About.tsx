@@ -25,9 +25,9 @@ export default function About() {
       />
 
       {/* ORIGIN */}
-      <section style={{ background: "var(--charcoal)", padding: "6rem 1.5rem 5rem" }}>
-        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
-          <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", fontFamily: "var(--U)", marginBottom: "2rem" }}>About</div>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-3) var(--s-6)" }}>
+        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "2rem" }}>About</div>
 
           <div style={{ display: "flex", gap: "2.5rem", alignItems: "flex-start", flexWrap: "wrap", marginBottom: "3rem" }}>
             <img src={PORTRAIT} alt="James Bell" loading="eager" width={160} height={210} style={{ width: "160px", height: "210px", objectFit: "cover", objectPosition: "center top", borderRadius: "2px", border: "1px solid rgba(244,241,234,0.1)", flexShrink: 0 }} />
@@ -41,11 +41,11 @@ export default function About() {
             </div>
           </div>
 
-          <div style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--bone)", opacity: 0.85 }}>
-            <p style={{ marginBottom: "1.5rem" }}>
+          <div className="article-body prose-section" style={{ color: "var(--bone)", opacity: 0.85 }}>
+            <p>
               The first honest prayer I ever prayed was an argument. I was an atheist by conviction, and I was losing the argument with a God I did not believe in. That is not a testimony. It is a fact. The intellectual position I had held for years — that faith was a category error made by people who could not face the absence of meaning — collapsed not under emotional pressure but under the weight of its own assumptions. I did not find God. I ran out of reasons to pretend the evidence pointed nowhere.
             </p>
-            <p style={{ marginBottom: "1.5rem" }}>
+            <p>
               I was raised without a father. That is not background. It is architecture. It shaped what I hear when Scripture speaks of a Father who does not leave. It shaped what I refuse to tolerate in a church culture that sentimentalizes fatherhood while ignoring the men who never had one. It shaped the way I raise my five sons — not with the confidence of a man who knows what he is doing, but with the terror of a man who knows what happens when no one does it at all.
             </p>
             <p>
@@ -56,28 +56,28 @@ export default function About() {
       </section>
 
       {/* THE CHURCH AND THE NETWORK */}
-      <section style={{ background: "var(--bone)", padding: "5rem 1.5rem" }}>
-        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3)" }}>
+        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div style={{ width: "40px", height: "2px", background: "var(--mustard)", marginBottom: "2rem" }} />
           <h2 style={{ fontFamily: "var(--F)", fontSize: "1.75rem", fontWeight: 400, color: "var(--ink)", marginBottom: "1.5rem" }}>The church and the network</h2>
-          <div style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)" }}>
-            <p style={{ marginBottom: "1.5rem" }}>
+          <div className="article-body prose-section">
+            <p>
               I serve as Lead Pastor of First Baptist Church of Fenton, Michigan. That is not a credential. It is the room where everything I write gets tested. The essays on this site were not composed in a study lined with commentaries and quiet. They were written between hospital visits and budget meetings, after funerals, in the hours around the counseling sessions where theology either carries weight or gets exposed. {SITE_STATS.yearsInMinistry} years of that room will cure a writer of abstraction.
             </p>
-            <p style={{ marginBottom: "1.5rem" }}>
+            <p>
               I also founded the Pastors Connection Network — PCN — because pastors are the most under-shepherded people in the church. They preach grace they rarely receive. They carry confidences they can never set down. The network connects thousands of them to one another and to resources built by someone who knows the weight from the inside, because the man who collapses on a Saturday night takes a congregation down with him on Sunday morning.
             </p>
             <p>
               And I write books — {SITE_STATS.bookCount} of them so far — on doubt, marriage, fatherhood, the church, and the long obedience of an ordinary Christian life. They are all part of the same single project: connecting the depth of theology to the weight of everyday life.{" "}
-              <Link href="/books" style={{ color: "var(--ink)", textDecoration: "none", borderBottom: "2px solid var(--mustard)" }}>The books are here</Link>.
+              <Link href="/books">The books are here</Link>.
             </p>
           </div>
         </div>
       </section>
 
       {/* THE WORK */}
-      <section style={{ background: "var(--bone-warm)", padding: "5rem 1.5rem" }}>
-        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-3)" }}>
+        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)", marginBottom: "2rem" }}>
             LiveWell exists for the reader whose faith has outgrown the answers they were given. For the pastor burning out in silence. For the couple keeping vows they no longer understand. For the skeptic who cannot stop reading the words of a tradition they are not sure they believe in. The writing connects the depth of theology — Keller's architecture, Brueggemann's prophetic imagination, Peterson's pastoral texture, Bonhoeffer's willingness to name the thing at cost — to the weight of an actual Tuesday afternoon.
           </p>
@@ -98,9 +98,9 @@ export default function About() {
       </section>
 
       {/* WHERE TO BEGIN */}
-      <section style={{ background: "var(--charcoal)", padding: "5rem 1.5rem" }}>
-        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
-          <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", fontFamily: "var(--U)", marginBottom: "1.5rem" }}>Where to begin</div>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-3)" }}>
+        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.5rem" }}>Where to begin</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "1.75rem", fontWeight: 400, color: "var(--bone)", marginBottom: "2.5rem" }}>Begin where you actually are</h2>
 
           {PATHWAYS.map((p) => (
@@ -115,8 +115,8 @@ export default function About() {
       </section>
 
       {/* WHAT WE ARE NOT */}
-      <section style={{ background: "var(--bone)", padding: "4rem 1.5rem" }}>
-        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3)" }}>
+        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)" }}>
             LiveWell is not therapy. It is not a Christian self-help platform. It is not a place to be told what to think. It is a writing desk where a pastor with {SITE_STATS.yearsInMinistry} years of failure and five sons he is trying not to ruin thinks out loud about what it means to follow Jesus in a culture that has forgotten what his kingdom actually stands for.
           </p>
@@ -124,7 +124,7 @@ export default function About() {
       </section>
 
       {/* CLOSING */}
-      <section style={{ background: "var(--charcoal)", padding: "5rem 1.5rem", textAlign: "center" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-3)", textAlign: "center" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <div style={{ width: "40px", height: "2px", background: "var(--mustard)", margin: "0 auto 2rem" }} />
           <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.65, color: "var(--bone)", fontStyle: "italic", marginBottom: "2rem" }}>
