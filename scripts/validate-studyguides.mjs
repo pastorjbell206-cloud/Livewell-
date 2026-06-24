@@ -34,14 +34,25 @@ const fail = (f, m) => { failures++; console.error(`  FAIL ${f}: ${m}`); };
 const isStr = (v) => typeof v === "string" && v.trim().length > 0;
 const isArr = (v, n) => Array.isArray(v) && v.length >= n;
 
-const files = fs.existsSync(DIR) ? fs.readdirSync(DIR).filter((f) => f.endsWith(".json")).sort() : [];
+// index.json is the generated hub manifest, not a guide. Skip it by name, and
+// defensively skip any non-guide-shaped file (an array, or an object that
+// carries neither `slug` nor `sessions`) so future manifests never false-fail.
+const files = fs.existsSync(DIR)
+  ? fs.readdirSync(DIR).filter((f) => f.endsWith(".json") && f !== "index.json").sort()
+  : [];
 if (!files.length) { console.error(`No study guides found in ${DIR}`); process.exit(1); }
 
+let guideCount = 0;
 for (const file of files) {
   const slug = file.replace(/\.json$/, "");
   let d;
   try { d = JSON.parse(fs.readFileSync(path.join(DIR, file), "utf8")); }
   catch (e) { fail(file, `invalid JSON: ${e.message}`); continue; }
+
+  if (Array.isArray(d) || (d && typeof d === "object" && !("slug" in d) && !("sessions" in d))) {
+    continue; // manifest/index file, not a study guide
+  }
+  guideCount++;
 
   if (d.slug !== slug) fail(file, `slug mismatch (file ${slug}, slug ${d.slug})`);
   for (const k of STR_FIELDS) if (!isStr(d[k])) fail(file, `missing/empty string field "${k}"`);
@@ -70,5 +81,5 @@ for (const file of files) {
   });
 }
 
-if (failures) { console.error(`\n[validate-studyguides] ${failures} failure(s) across ${files.length} guide(s)`); process.exit(1); }
-console.log(`[validate-studyguides] ${files.length} guide(s), 0 failures`);
+if (failures) { console.error(`\n[validate-studyguides] ${failures} failure(s) across ${guideCount} guide(s)`); process.exit(1); }
+console.log(`[validate-studyguides] ${guideCount} guide(s), 0 failures`);
