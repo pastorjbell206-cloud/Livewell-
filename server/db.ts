@@ -596,12 +596,13 @@ export async function markAdminNotificationAsRead(id: number) {
   await db.update(adminNotifications).set({ read: true }).where(eq(adminNotifications.id, id));
 }
 
-// ─── Team collaboration (Slack for the leadership team) ───────────────
+// ─── Team collaboration (data helpers) ───────────────────────────────
 //
-// SECURITY: these helpers do NOT enforce authorization. They are pure data
-// access. Every call site in server/routers/team-collab.ts MUST verify the
-// caller's team membership (and role where required) before invoking a
-// helper that reads or writes team-scoped data. Never trust an id passed in.
+// NOTE: the team-collaboration feature (router + UI) was removed; these data
+// helpers and their tables are retained for now. They do NOT enforce
+// authorization — any future caller MUST verify the caller's team membership
+// (and role where required) before invoking a helper that reads or writes
+// team-scoped data. Never trust an id passed in.
 
 export async function createTeam(data: InsertTeam) {
   const db = await getDb();

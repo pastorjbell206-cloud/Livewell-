@@ -171,6 +171,9 @@ export default function Marriage() {
               Take the Assessment
             </button>
           </Link>
+          <div style={{ marginTop: "20px" }}>
+            <Link href="/life/marriage-the-long-covenant" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none" }}>Or read the deep guide: Marriage, the Long Covenant</Link>
+          </div>
         </div>
       </section>
 

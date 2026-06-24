@@ -75,6 +75,10 @@ const ForLeaders = lazy(() => import("./pages/ForLeaders"));
 const Membership = lazy(() => import("./pages/Membership"));
 const MembershipSuccess = lazy(() => import("./pages/MembershipSuccess"));
 const Discipleship = lazy(() => import("./pages/Discipleship"));
+const DiscipleMaking = lazy(() => import("./pages/DiscipleMaking"));
+const Wisdom = lazy(() => import("./pages/Wisdom"));
+const HowTos = lazy(() => import("./pages/HowTos"));
+const HowToArticle = lazy(() => import("./pages/HowToArticle"));
 const LifeIndex = lazy(() => import("./pages/life/LifeIndex"));
 const LifeDomain = lazy(() => import("./pages/life/LifeDomain"));
 const WholeLifeAssessment = lazy(() => import("./pages/life/WholeLifeAssessment"));
@@ -129,7 +133,6 @@ const NationEssay = lazy(() => import("./pages/nation/NationEssay"));
 const NationScorecard = lazy(() => import("./pages/nation/NationScorecard"));
 const NationPolicy = lazy(() => import("./pages/nation/NationPolicy"));
 const LeadershipHub = lazy(() => import("./pages/leadership/LeadershipHub"));
-const LeadershipTeam = lazy(() => import("./pages/leadership/LeadershipTeam"));
 const LeadershipArticle = lazy(() => import("./pages/leadership/LeadershipArticle"));
 const SermonWorkbench = lazy(() => import("./pages/leadership/SermonWorkbench"));
 const IllustrationLibrary = lazy(() => import("./pages/leadership/IllustrationLibrary"));
@@ -163,6 +166,11 @@ const LifeAudit = lazy(() => import("./pages/tools/LifeAudit"));
 const ChurchHealth = lazy(() => import("./pages/tools/ChurchHealth"));
 const DeepBibleCompanion = lazy(() => import("./pages/tools/DeepBibleCompanion"));
 const FamilyDevotionBuilder = lazy(() => import("./pages/tools/FamilyDevotionBuilder"));
+const DiscipleshipTable = lazy(() => import("./pages/tools/DiscipleshipTable"));
+const RuleOfLife = lazy(() => import("./pages/tools/RuleOfLife"));
+const BibleOnTopic = lazy(() => import("./pages/tools/BibleOnTopic"));
+const WisdomFinder = lazy(() => import("./pages/tools/WisdomFinder"));
+const Proverbs31 = lazy(() => import("./pages/tools/Proverbs31"));
 const WorkWithJames = lazy(() => import("./pages/WorkWithJames"));
 const PastoralBurnout = lazy(() => import("./pages/landing/PastoralBurnout"));
 const FaithCrisis = lazy(() => import("./pages/landing/FaithCrisis"));
@@ -292,7 +300,6 @@ function Router() {
         <Route path="/leadership/service/:slug"><ServiceBuilder /></Route>
         <Route path="/leadership/governance"><GovernanceLibrary /></Route>
         <Route path="/leadership/library"><LeadershipLibrary /></Route>
-        <Route path="/leadership/team"><LeadershipTeam /></Route>
         <Route path="/leadership/bible-sermons/:bookId"><WholeBibleSermons /></Route>
         <Route path="/leadership/bible-sermons"><WholeBibleSermons /></Route>
         <Route path="/leadership/sermon-series"><SermonSeries /></Route>
@@ -324,6 +331,10 @@ function Router() {
         <Route path="/membership" component={Membership} />
         <Route path="/membership/success" component={MembershipSuccess} />
         <Route path="/discipleship" component={Discipleship} />
+        <Route path="/disciple-making" component={DiscipleMaking} />
+        <Route path="/wisdom" component={Wisdom} />
+        <Route path="/how-tos" component={HowTos} />
+        <Route path="/how-tos/:slug" component={HowToArticle} />
         <Route path="/studyguides" component={StudyGuidesIndex} />
         <Route path="/studyguides/:slug" component={StudyGuide} />
         <Route path="/writing" component={Writing} />
@@ -403,6 +414,11 @@ function Router() {
         <Route path="/tools/church-health" component={ChurchHealth} />
         <Route path="/tools/deep-bible" component={DeepBibleCompanion} />
         <Route path="/tools/family-devotions" component={FamilyDevotionBuilder} />
+        <Route path="/tools/discipleship-table" component={DiscipleshipTable} />
+        <Route path="/tools/rule-of-life" component={RuleOfLife} />
+        <Route path="/tools/bible-on" component={BibleOnTopic} />
+        <Route path="/tools/wisdom-finder" component={WisdomFinder} />
+        <Route path="/tools/proverbs-31" component={Proverbs31} />
         <Route path="/work-with-james" component={WorkWithJames} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/accessibility" component={Accessibility} />
