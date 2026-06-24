@@ -7,9 +7,68 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+
+interface TodayVerse { ref: string; text: string }
+interface TodayTopic {
+  id: string;
+  label: string;
+  framing: string;
+  verses: TodayVerse[];
+  related?: { label: string; href: string }[];
+}
+
+/** A wisdom topic chosen by the calendar day, stable for the day, rotating daily. */
+function WisdomToday() {
+  const [topic, setTopic] = useState<TodayTopic | null>(null);
+
+  useEffect(() => {
+    fetch("/wisdom/topics.json", { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        const topics: TodayTopic[] = (d && d.topics) || [];
+        if (!topics.length) return;
+        const now = new Date();
+        const start = new Date(now.getFullYear(), 0, 0);
+        const dayOfYear = Math.floor((now.getTime() - start.getTime()) / 86400000);
+        setTopic(topics[dayOfYear % topics.length]);
+      })
+      .catch(() => {});
+  }, []);
+
+  if (!topic) return null;
+  const verse = topic.verses && topic.verses[0];
+
+  return (
+    <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
+      <div style={wrap}>
+        <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>Wisdom for today</div>
+        <div style={{ background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-4)" }}>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "10px" }}>{topic.label}</h2>
+          {verse && (
+            <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "var(--ink)", borderLeft: "3px solid var(--mustard)", paddingLeft: "16px", marginBottom: "14px" }}>
+              {verse.text} <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", color: "var(--mustard-text)" }}>{verse.ref}</span>
+            </p>
+          )}
+          <p style={{ fontFamily: "var(--B)", fontSize: "15.5px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "16px" }}>{topic.framing}</p>
+          <div style={{ display: "flex", gap: "18px", flexWrap: "wrap" }}>
+            <Link href={`/tools/wisdom-finder?q=${encodeURIComponent(topic.label)}`} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
+              Read the full wisdom
+            </Link>
+            {topic.related && topic.related[0] && (
+              <Link href={topic.related[0].href} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink-muted)", textDecoration: "none" }}>
+                {topic.related[0].label}
+              </Link>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 interface Arena {
   label: string;
@@ -69,6 +128,8 @@ export default function Wisdom() {
           </div>
         </div>
       </section>
+
+      <WisdomToday />
 
       {/* Wisdom for every arena */}
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-5)" }}>
