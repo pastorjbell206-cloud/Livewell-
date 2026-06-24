@@ -3,6 +3,7 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import mysql from "mysql2/promise";
 import crypto from "node:crypto";
+import postChristianArticles from "./post-christian-articles.json" with { type: "json" };
 import bcrypt from "bcryptjs";
 import superjson from "superjson";
 import { readFileSync } from "node:fs";
@@ -300,6 +301,30 @@ async function adminSeedArticles(req: VercelRequest, res: VercelResponse) {
       }
       const [rows] = await c.query("SELECT COUNT(*) as n FROM articles");
       return { inserted, total: (rows as any)[0].n };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
+async function seedPostChristianArticles(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  try {
+    const out = await withConn(async (c) => {
+      let inserted = 0;
+      for (const a of postChristianArticles as any[]) {
+        try {
+          const [r]: any = await c.execute(
+            `INSERT IGNORE INTO posts (title, slug, body, excerpt, pillar, readTime, published, createdAt, updatedAt)
+             VALUES (?, ?, ?, ?, ?, ?, true, NOW(), NOW())`,
+            [a.title, a.slug, a.body, a.excerpt, a.pillar, a.readTime]
+          );
+          if (r.affectedRows) inserted++;
+        } catch {}
+      }
+      const [rows] = await c.query("SELECT COUNT(*) as n FROM posts");
+      return { inserted, totalArticles: postChristianArticles.length, totalPosts: (rows as any)[0].n };
     });
     json(res, 200, { ok: true, ...out });
   } catch (e: any) {
@@ -2337,6 +2362,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
     if (url === "/api/admin/seed-content") return adminSeedContent(req, res);
+    if (url === "/api/admin/seed-post-christian") return seedPostChristianArticles(req, res);
     if (url === "/api/admin/fix-apostrophes") return adminFixApostrophes(req, res);
     const notifMatch = url.match(/^\/api\/admin\/notifications\/(\d+)$/);
     if (notifMatch && req.method === "DELETE") {

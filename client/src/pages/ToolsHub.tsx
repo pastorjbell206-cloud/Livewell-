@@ -6,6 +6,13 @@ import { useFavorites } from "@/hooks/useFavorites";
 
 const TOOLS = [
   {
+    title: "Deep Bible Study Companion",
+    description: "Seminary-level depth in kitchen-table language. 12 books of the Bible with 6 layers of analysis: text, historical context, literary structure, scholarly views, modern application, and deeper resources.",
+    href: "/tools/deep-bible",
+    icon: Search,
+    color: "var(--ink)",
+  },
+  {
     title: "Theology Quiz",
     description: "Twenty questions across doctrine, church history, and the biblical storyline. Find out where your foundations are solid and where the gaps are. Part of the Theological Depth section.",
     href: "/tools/theology-quiz",
