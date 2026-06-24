@@ -68,6 +68,12 @@ const BOOKS = [
     subtitle: "Without Making It Say What You Already Believe",
     env: "STRIPE_PRICE_HOW_TO_READ_THE_BIBLE",
   },
+  {
+    slug: "be-true-to-yourself",
+    title: "Be True to Yourself",
+    subtitle: "The Lie That Ate the World",
+    env: "STRIPE_PRICE_BE_TRUE_TO_YOURSELF",
+  },
 ];
 
 const results = [];

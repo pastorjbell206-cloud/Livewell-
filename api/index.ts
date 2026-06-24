@@ -2160,6 +2160,12 @@ const EBOOKS: Record<string, EbookConfig> = {
     file: new URL("./_ebooks/how-to-read-the-bible.pdf", import.meta.url),
     filename: "How-to-Read-the-Bible.pdf",
   },
+  "be-true-to-yourself": {
+    title: "Be True to Yourself",
+    priceEnv: "STRIPE_PRICE_BE_TRUE_TO_YOURSELF",
+    file: new URL("./_ebooks/be-true-to-yourself.pdf", import.meta.url),
+    filename: "Be-True-to-Yourself.pdf",
+  },
 };
 
 const PRODUCTION_SITE_URL = "https://livewellbyjamesbell.co";

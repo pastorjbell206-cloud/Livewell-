@@ -28,6 +28,7 @@ const STATIC_PAGES = [
   { url: "/covenant", priority: "0.85", changefreq: "monthly" },
   { url: "/babylon", priority: "0.9", changefreq: "monthly" },
   { url: "/how-to-read-the-bible", priority: "0.85", changefreq: "monthly" },
+  { url: "/be-true-to-yourself", priority: "0.85", changefreq: "monthly" },
   { url: "/skeptic-track", priority: "0.9", changefreq: "monthly" },
   { url: "/pastors-resource-wall", priority: "0.85", changefreq: "weekly" },
   { url: "/roadmap", priority: "0.8", changefreq: "monthly" },
