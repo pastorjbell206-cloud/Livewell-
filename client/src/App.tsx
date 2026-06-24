@@ -20,8 +20,8 @@ const AfterChristendom = lazy(() => import("./pages/books/AfterChristendom"));
 const AfterChristendomThankYou = lazy(() => import("./pages/books/AfterChristendomThankYou"));
 const Covenant = lazy(() => import("./pages/books/Covenant"));
 const CovenantThankYou = lazy(() => import("./pages/books/CovenantThankYou"));
-const LiveWell = lazy(() => import("./pages/books/LiveWell"));
-const LiveWellThankYou = lazy(() => import("./pages/books/LiveWellThankYou"));
+const Babylon = lazy(() => import("./pages/books/Babylon"));
+const BabylonThankYou = lazy(() => import("./pages/books/BabylonThankYou"));
 const HowToReadTheBible = lazy(() => import("./pages/books/HowToReadTheBible"));
 const HowToReadTheBibleThankYou = lazy(() => import("./pages/books/HowToReadTheBibleThankYou"));
 const WhenGodBlessAmerica = lazy(() => import("./pages/WhenGodBlessAmerica"));
@@ -370,8 +370,8 @@ function Router() {
         <Route path="/after-christendom" component={AfterChristendom} />
         <Route path="/covenant/thank-you" component={CovenantThankYou} />
         <Route path="/covenant" component={Covenant} />
-        <Route path="/live-well/thank-you" component={LiveWellThankYou} />
-        <Route path="/live-well" component={LiveWell} />
+        <Route path="/babylon/thank-you" component={BabylonThankYou} />
+        <Route path="/babylon" component={Babylon} />
         <Route path="/how-to-read-the-bible/thank-you" component={HowToReadTheBibleThankYou} />
         <Route path="/how-to-read-the-bible" component={HowToReadTheBible} />
         <Route path="/substack" component={SubstackPage} />

@@ -1,6 +1,6 @@
 /**
- * Live Well (/live-well). The flagship ebook sales page: cover, pitch, a free
- * sample (the opening, served from /books/live-well-sample.md), and a Buy
+ * Babylon (/babylon). The flagship ebook sales page: cover, pitch, a free
+ * sample (the opening, served from /books/babylon-sample.md), and a Buy
  * button. The full book is delivered as a gated PDF via /api/checkout ->
  * /api/download after payment.
  */
@@ -11,16 +11,16 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
 import { BuyEbookButton } from "@/components/BuyEbookButton";
 
-const SLUG = "live-well";
-const TITLE = "Live Well";
-const SUBTITLE = "Seeking the Good of the City in Christian Exile";
+const SLUG = "babylon";
+const TITLE = "Babylon";
+const SUBTITLE = "How to Live When America Stops Being Christian";
 const prose = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
 
-export default function LiveWell() {
+export default function Babylon() {
   const [sample, setSample] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/books/live-well-sample.md", { cache: "no-store" })
+    fetch("/books/babylon-sample.md", { cache: "no-store" })
       .then((r) => (r.ok ? r.text() : Promise.reject(new Error("not found"))))
       .then((md) => setSample(md.trim()))
       .catch(() => setSample(""));
@@ -48,7 +48,7 @@ export default function LiveWell() {
       <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
         <div style={{ ...prose, display: "flex", gap: "44px", alignItems: "center", flexWrap: "wrap" }}>
           <img
-            src="/books/live-well.svg"
+            src="/books/babylon.svg"
             alt={`${TITLE} cover`}
             width={210}
             height={315}
@@ -56,7 +56,7 @@ export default function LiveWell() {
           />
           <div style={{ flex: "1 1 320px" }}>
             <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
-              New Ebook · Living Well in Exile
+              New Ebook · Faith in Post-Christian America
             </div>
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 4.6vw, 50px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "14px 0 12px" }}>
               {TITLE}
@@ -101,7 +101,7 @@ export default function LiveWell() {
       <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ ...prose, textAlign: "center" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "24px", fontStyle: "italic", margin: "0 0 22px", color: "rgba(245,240,230,.92)" }}>
-            To live well is to seek the welfare of the city, because in its welfare you will find your own.
+            The American church is in exile and does not know it. It keeps trying to go home to a country that was never Jerusalem.
           </p>
           <div style={{ display: "inline-flex" }}>
             <BuyEbookButton slug={SLUG} />

@@ -2148,11 +2148,11 @@ const EBOOKS: Record<string, EbookConfig> = {
     file: new URL("./_ebooks/covenant.pdf", import.meta.url),
     filename: "Covenant.pdf",
   },
-  "live-well": {
-    title: "Live Well",
-    priceEnv: "STRIPE_PRICE_LIVE_WELL",
-    file: new URL("./_ebooks/live-well.pdf", import.meta.url),
-    filename: "Live-Well.pdf",
+  "babylon": {
+    title: "Babylon",
+    priceEnv: "STRIPE_PRICE_BABYLON",
+    file: new URL("./_ebooks/babylon.pdf", import.meta.url),
+    filename: "Babylon.pdf",
   },
   "how-to-read-the-bible": {
     title: "How to Read the Bible",

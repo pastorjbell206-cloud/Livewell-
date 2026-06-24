@@ -1,9 +1,9 @@
 /**
- * build-live-well-pdf.mjs — render the "Live Well" manuscript
- * (content/books/live-well.md) into the gated ebook PDF served by
- * /api/download. Run:  node scripts/build-live-well-pdf.mjs
+ * build-babylon-pdf.mjs — render the "Babylon" manuscript
+ * (content/books/babylon.md) into the gated ebook PDF served by
+ * /api/download. Run:  node scripts/build-babylon-pdf.mjs
  *
- * Idempotent: overwrites api/_ebooks/live-well.pdf each run.
+ * Idempotent: overwrites api/_ebooks/babylon.pdf each run.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -11,14 +11,14 @@ import { fileURLToPath } from "node:url";
 import PDFDocument from "pdfkit";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const SRC = path.join(ROOT, "content/books/live-well.md");
-const OUT = path.join(ROOT, "api/_ebooks/live-well.pdf");
+const SRC = path.join(ROOT, "content/books/babylon.md");
+const OUT = path.join(ROOT, "api/_ebooks/babylon.pdf");
 
 const INK = "#14110C";
 const MUTED = "#5A5448";
 const MUSTARD = "#9A7412"; // darkened for white paper
-const TITLE = "Live Well";
-const SUBTITLE = "Seeking the Good of the City in Christian Exile";
+const TITLE = "Babylon";
+const SUBTITLE = "How to Live When America Stops Being Christian";
 const AUTHOR = "James Bell";
 const EPIGRAPH = "Build houses and live in them. Plant gardens and eat their produce... But seek the welfare of the city where I have sent you into exile, and pray to the Lord on its behalf, for in its welfare you will find your welfare.";
 const EPIGRAPH_BY = "Jeremiah 29:5, 7";

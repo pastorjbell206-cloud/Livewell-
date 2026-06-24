@@ -57,10 +57,10 @@ const BOOKS = [
     env: "STRIPE_PRICE_COVENANT",
   },
   {
-    slug: "live-well",
-    title: "Live Well",
-    subtitle: "Seeking the Good of the City in Christian Exile",
-    env: "STRIPE_PRICE_LIVE_WELL",
+    slug: "babylon",
+    title: "Babylon",
+    subtitle: "How to Live When America Stops Being Christian",
+    env: "STRIPE_PRICE_BABYLON",
   },
   {
     slug: "how-to-read-the-bible",

@@ -120,23 +120,23 @@ export default function Books() {
         </div>
       </section>
 
-      {/* NEW EBOOK — Live Well (flagship, standalone funnel page) */}
+      {/* NEW EBOOK — Babylon (flagship, standalone funnel page) */}
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
-        <Link href="/live-well" style={{ textDecoration: "none", color: "inherit" }}>
+        <Link href="/babylon" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
-              src="/books/live-well.svg"
-              alt="Live Well book cover"
+              src="/books/babylon.svg"
+              alt="Babylon book cover"
               width={120}
               height={181}
               style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }}
             />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
-                New Ebook · $9.99 · The Flagship
+                New Ebook · $9.99 · Post-Christian America
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
-                Live Well
+                Babylon
               </h2>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", margin: 0 }}>
                 The part of Jeremiah's letter we never read. Not how to take the country back, and not how to make
