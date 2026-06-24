@@ -715,7 +715,7 @@ const BOOKS: BibleBook[] = [
           devices: "The 'I saw' structure (John narrates what he witnesses), bridal imagery (the city as bride), direct divine speech ('I am making everything new' — one of the few times God speaks directly in Revelation), negation theology (no death, no mourning, no crying, no pain — the future is defined by what is absent).",
           keyTerms: [
             { term: "kainos", language: "Greek", meaning: "Qualitatively new. Not neos (brand new, never existed before) but kainos (existing thing made new). This earth, renewed. This creation, healed. Not discarded but redeemed." },
-            { term: "skēnē", language: "Greek", meaning: "Tabernacle, dwelling place. God's tent pitched permanently with humanity. The journey from Eden (God walking with humans) through the tabernacle (God dwelling temporarily) to the new creation (God dwelling permanently) is complete." },
+            { term: "skēnē", language: "Greek", meaning: "Tabernacle, dwelling place. God's tent pitched permanently with humanity. The long arc from Eden (God walking with humans) through the tabernacle (God dwelling temporarily) to the new creation (God dwelling permanently) is complete." },
             { term: "idou", language: "Greek", meaning: "'Look! Behold!' God interrupts the vision to speak directly: 'Look! I am making everything new.' The present tense: this renewal is not only future. It has already begun." },
           ],
           structure: "Three movements: (1) What John sees — new heaven, new earth, holy city descending (v.1-2); (2) What God declares — dwelling with humanity, wiping tears, ending death (v.3-4); (3) What God promises — 'I am making everything new,' the water of life freely given, the overcomers' inheritance (v.5-8).",
@@ -801,7 +801,7 @@ const BOOKS: BibleBook[] = [
         ],
         literary: {
           genre: "Covenant law / treaty stipulations. Not a legal code in the modern sense. The terms of a relationship between a liberating God and a liberated people.",
-          devices: "The prologue establishes relationship before requirements. Commands move from God-directed (1-4) to human-directed (5-10). The tenth command turns inward, making the list a journey from worship to the heart.",
+          devices: "The prologue establishes relationship before requirements. Commands move from God-directed (1-4) to human-directed (5-10). The tenth command turns inward, making the list a movement from worship to the heart.",
           keyTerms: [
             { term: "anokhi", language: "Hebrew", meaning: "'I myself.' Emphatic. God does not begin with 'You must.' He begins with 'I am.' Commands are grounded in God's character." },
             { term: "berith", language: "Hebrew", meaning: "'Covenant.' The commands are covenant stipulations. Outside the covenant, they are just rules. Inside it, they are the shape of love." },
@@ -838,7 +838,7 @@ const BOOKS: BibleBook[] = [
         keyWords: [
           { word: "fear of the Lord", original: "yir'at YHWH (Hebrew)", meaning: "Reverence, awe, proper respect for God's sovereignty. Not the fear of a slave before a master but the awe of a creature before its Creator. The starting point of all wisdom is the acknowledgment that you are not God." },
           { word: "beginning", original: "reshit (Hebrew)", meaning: "First principle, foundation, starting point. Not just chronologically first but foundationally first. Everything else in Proverbs is built on this. Remove the fear of the Lord and you have mere pragmatism." },
-          { word: "wisdom", original: "chokmah (Hebrew)", meaning: "Skill for living. Not abstract intelligence but the ability to navigate life well. In Hebrew thought, wisdom is not what you know. It is how skillfully you live." },
+          { word: "wisdom", original: "chokmah (Hebrew)", meaning: "Skill for living. Not abstract intelligence but the ability to live life well. In Hebrew thought, wisdom is not what you know. It is how skillfully you live." },
         ],
         historical: [
           "Proverbs belongs to the ancient Near Eastern wisdom tradition. Egypt (Amenemope), Mesopotamia, and Israel all produced wisdom literature. But Israel's wisdom has a distinctive foundation: the fear of YHWH. Other cultures built wisdom on observation alone. Israel built it on revelation.",

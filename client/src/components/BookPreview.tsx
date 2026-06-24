@@ -26,8 +26,8 @@ export default function BookPreview({
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
-        <div className="sticky top-0 flex items-center justify-between p-6 border-b" style={{ borderColor: "#E5E7EB" }}>
-          <h2 className="font-display text-xl font-bold" style={{ color: "var(--ink)" }}>
+        <div className="sticky top-0 flex items-center justify-between p-6 border-b" style={{ borderColor: "var(--bone-muted)" }}>
+          <h2 className="font-display text-xl font-bold" style={{ color: "var(--ink)", fontFamily: "var(--F)" }}>
             Sample Chapter
           </h2>
           <button
@@ -40,14 +40,14 @@ export default function BookPreview({
 
         {/* Modal Content */}
         <div className="p-8">
-          <h3 className="font-display text-lg font-bold mb-6" style={{ color: "var(--ink)" }}>
+          <h3 className="font-display text-lg font-bold mb-6" style={{ color: "var(--ink)", fontFamily: "var(--F)" }}>
             {title}
           </h3>
 
           {excerpt ? (
             <div
               className="font-body text-base leading-relaxed"
-              style={{ color: "#2C3E50" }}
+              style={{ color: "var(--ink)", fontFamily: "var(--B)" }}
             >
               {excerpt.split('\n').map((paragraph, idx) => (
                 <p key={idx} className="mb-4">
@@ -57,15 +57,15 @@ export default function BookPreview({
             </div>
           ) : (
             <div className="text-center py-12">
-              <p className="font-body text-base" style={{ color: "var(--ink-muted)" }}>
+              <p className="font-body text-base" style={{ color: "var(--ink-muted)", fontFamily: "var(--B)" }}>
                 Sample chapter coming soon. Check back later for a preview of this book.
               </p>
             </div>
           )}
 
           {/* Footer */}
-          <div className="mt-8 pt-6 border-t" style={{ borderColor: "#E5E7EB" }}>
-            <p className="font-ui text-sm" style={{ color: "var(--ink-muted)" }}>
+          <div className="mt-8 pt-6 border-t" style={{ borderColor: "var(--bone-muted)" }}>
+            <p className="font-ui text-sm" style={{ color: "var(--ink-muted)", fontFamily: "var(--U)" }}>
               This is a sample excerpt. Purchase the full book to read the complete content.
             </p>
           </div>

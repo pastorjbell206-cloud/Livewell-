@@ -6,7 +6,7 @@ You could assume things. You could assume your neighbor shared your basic moral 
 
 That world is gone, and the striking thing is how fast it went. In the span of a single generation the share of Americans who claim no religion at all went from a rounding error to something near a third of the country. Belief did not just decline. It changed categories. The philosopher Charles Taylor spent eight hundred pages making this one point, that we have moved from an age in which faith was the assumed default to an age in which it is one option among many, and a contested one, held by people who know their neighbors have looked at the same evidence and chosen otherwise. That is a different kind of believing. It is belief without the water.
 
-And here is the thing the American church has mostly refused to accept. The water is not coming back.
+And here is what the American church has mostly refused to accept. The water is not coming back.
 
 We are, a great many of us, flopping on the sand. Furious, grieving, certain that the faith itself is in its death throes, casting around for someone to blame, the schools or the courts or the other party or the young. I understand the grief, and I am not going to mock it, because something real did die. But I want to say as plainly as I know how what actually died, because almost everything depends on getting this right. What is dying is not Christianity. What is dying is Christendom. They are not the same thing, and the church's failure to tell them apart is the single most expensive mistake we are making right now.
 

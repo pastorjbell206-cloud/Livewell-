@@ -4,6 +4,8 @@ import { useToast } from "@/contexts/ToastContext";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, ExternalLink, Loader2 } from "lucide-react";
 import Layout from "@/components/Layout";
+import { SEOMeta } from "@/components/SEOMeta";
+import { SITE_URL } from "@/lib/site";
 
 export default function BooksStore() {
   const { addToast } = useToast();
@@ -74,6 +76,11 @@ export default function BooksStore() {
 
   return (
     <Layout>
+      <SEOMeta
+        title="Books by James Bell — The Store"
+        description="Purchase the books of James Bell: theology that carries the weight of everyday life, written for skeptics, Christians, and pastors."
+        url={`${SITE_URL}/books-store`}
+      />
       <section className="py-24" style={{ backgroundColor: "var(--bone)" }}>
         <div className="container">
           <div className="max-w-3xl mx-auto mb-16">

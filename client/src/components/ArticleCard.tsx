@@ -23,7 +23,7 @@ const PILLAR_COLORS: Record<string, { bg: string; text: string; icon: string }> 
     icon: "",
   },
   "Theological Depth": {
-    bg: "bg-[#2C3E50]",
+    bg: "bg-[var(--ink)]",
     text: "text-white",
     icon: "",
   },

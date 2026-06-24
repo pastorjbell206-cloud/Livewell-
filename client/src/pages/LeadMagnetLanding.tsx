@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
+import Layout from "@/components/Layout";
+import { SEOMeta } from "@/components/SEOMeta";
+import { SITE_URL } from "@/lib/site";
 import { CheckCircle2, Star, Lock } from "lucide-react";
 
 interface LeadMagnetConfig {
@@ -89,6 +89,42 @@ const TESTIMONIALS = [
   },
 ];
 
+const VALUE_PROPS = [
+  {
+    title: "Instant Self-Assessment",
+    description: "Personal insight into where you actually stand right now, in minutes, not weeks.",
+  },
+  {
+    title: "Concrete Next Steps",
+    description: "Not just a diagnosis of the problem—specific, practical steps you can take this week.",
+  },
+  {
+    title: "A Short Email Series",
+    description: "Five follow-up emails that help you read your results and decide what to do next.",
+  },
+];
+
+const FAQS = [
+  {
+    q: "What format is it?",
+    a: "A clean, interactive PDF you can download the moment you sign up.",
+  },
+  {
+    q: "How long does it take?",
+    a: "Most people finish in five to ten minutes. You can work through it at your own pace.",
+  },
+  {
+    q: "What will I learn?",
+    a: "Personal insight into where you stand, the blind spots you've been missing, and clear next steps.",
+  },
+  {
+    q: "Is there a catch?",
+    a: "No. It's free. You'll get follow-up emails with resources, and nothing more than that.",
+  },
+];
+
+const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+
 export function LeadMagnetLanding({ magnetId }: { magnetId: string }) {
   const magnet = LEAD_MAGNETS[magnetId];
   const [email, setEmail] = useState("");
@@ -96,7 +132,18 @@ export function LeadMagnetLanding({ magnetId }: { magnetId: string }) {
   const [loading, setLoading] = useState(false);
 
   if (!magnet) {
-    return <div className="text-center py-20">Lead magnet not found</div>;
+    return (
+      <Layout>
+        <section style={{ background: "var(--bone)", padding: "var(--s-7) var(--s-4)", textAlign: "center" }}>
+          <div style={wrap}>
+            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>Not Found</div>
+            <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)" }}>
+              That resource doesn't exist.
+            </h1>
+          </div>
+        </section>
+      </Layout>
+    );
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -124,176 +171,199 @@ export function LeadMagnetLanding({ magnetId }: { magnetId: string }) {
 
   if (submitted) {
     return (
-      <div className="min-h-screen bg-background flex items-center justify-center px-4">
-        <div className="max-w-md text-center">
-          <CheckCircle2 className="w-16 h-16 text-green-600 mx-auto mb-4" />
-          <h1 className="text-3xl font-bold mb-4">Check Your Email!</h1>
-          <p className="text-lg text-muted-foreground mb-6">
-            We've sent {magnet.title} to <strong>{email}</strong>
-          </p>
-          <p className="text-sm text-muted-foreground mb-8">
-            Check your inbox (and spam folder) for your download link. You'll also receive our email series with insights and next steps.
-          </p>
-          <Button asChild className="w-full">
-            <a href="/">Back to Home</a>
-          </Button>
-        </div>
-      </div>
+      <Layout>
+        <SEOMeta
+          title={`${magnet.title} | James Bell`}
+          description={magnet.description}
+          url={`${SITE_URL}/free/${magnet.id}`}
+        />
+        <section style={{ background: "var(--charcoal)", color: "var(--bone)", minHeight: "70vh", display: "flex", alignItems: "center", justifyContent: "center", padding: "var(--s-7) var(--s-4)" }}>
+          <div style={{ maxWidth: "560px", textAlign: "center" }}>
+            <CheckCircle2 aria-hidden style={{ width: 48, height: 48, color: "var(--mustard)", margin: "0 auto var(--s-3)" }} />
+            <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>It's On Its Way</div>
+            <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.02em", marginBottom: "var(--s-3)" }}>
+              Check your email.
+            </h1>
+            <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.82)", marginBottom: "var(--s-3)" }}>
+              We've sent {magnet.title} to <strong style={{ color: "var(--bone)" }}>{email}</strong>.
+            </p>
+            <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "rgba(245,240,230,0.6)", marginBottom: "var(--s-4)" }}>
+              Look in your inbox—and your spam folder—for the download link. A short email series will follow with insights and next steps.
+            </p>
+            <a
+              href="/"
+              style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 500, background: "var(--mustard)", color: "var(--ink)", padding: "14px 32px", borderRadius: "var(--radius-sm)" }}
+            >
+              Back to Home
+            </a>
+          </div>
+        </section>
+      </Layout>
     );
   }
 
   return (
-    <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="py-12 md:py-20 px-4">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-          {/* Left: Copy */}
+    <Layout>
+      <SEOMeta
+        title={`${magnet.title} | James Bell`}
+        description={magnet.description}
+        url={`${SITE_URL}/free/${magnet.id}`}
+      />
+
+      {/* Hero — charcoal surface, two columns: copy + cover + capture form */}
+      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
+        <div style={{ ...wrap, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(380px, 100%), 1fr))", gap: "var(--s-5)", alignItems: "center" }}>
+          {/* Left: copy + form */}
           <div>
-            <div className="inline-block px-3 py-1 bg-accent/10 rounded-full text-sm font-semibold text-accent mb-4">
-              {magnet.pillar}
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+            <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>{magnet.pillar}</div>
+            <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5vw, 56px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "var(--s-3)" }}>
               {magnet.title}
             </h1>
-            <p className="text-xl text-muted-foreground mb-6">
+            <p style={{ fontFamily: "var(--F)", fontSize: "22px", fontStyle: "italic", lineHeight: 1.4, color: "var(--mustard)", marginBottom: "var(--s-3)" }}>
               {magnet.subtitle}
             </p>
-            <p className="text-lg mb-8 leading-relaxed">
+            <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.82)", marginBottom: "var(--s-4)", maxWidth: "60ch" }}>
               {magnet.description}
             </p>
 
-            {/* Email Signup Form */}
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <Input
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  className="h-12 text-base"
-                />
-              </div>
-              <Button
+            {/* Email capture form */}
+            <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "var(--s-2)", maxWidth: "440px" }}>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                style={{
+                  fontFamily: "var(--B)",
+                  fontSize: "16px",
+                  width: "100%",
+                  padding: "14px 16px",
+                  background: "var(--card)",
+                  color: "var(--ink)",
+                  border: "1px solid rgba(245,240,230,0.18)",
+                  borderRadius: "var(--radius-sm)",
+                }}
+              />
+              <button
                 type="submit"
                 disabled={loading}
-                className="w-full h-12 text-base font-semibold"
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "16px",
+                  fontWeight: 600,
+                  width: "100%",
+                  padding: "14px 16px",
+                  background: "var(--mustard)",
+                  color: "var(--ink)",
+                  border: "none",
+                  borderRadius: "var(--radius-sm)",
+                  opacity: loading ? 0.7 : 1,
+                  cursor: loading ? "default" : "pointer",
+                }}
               >
                 {loading ? "Sending..." : "Get Instant Access"}
-              </Button>
-              <p className="text-xs text-muted-foreground text-center">
-                <Lock className="w-3 h-3 inline mr-1" />
+              </button>
+              <p style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", fontFamily: "var(--U)", fontSize: "13px", color: "rgba(245,240,230,0.6)" }}>
+                <Lock aria-hidden style={{ width: 13, height: 13 }} />
                 Your email is safe. No spam, ever.
               </p>
             </form>
           </div>
 
-          {/* Right: Cover Image */}
-          <div className="flex justify-center">
-            <div className="w-full max-w-sm">
+          {/* Right: cover */}
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ width: "100%", maxWidth: "360px" }}>
               <img
                 src={magnet.coverUrl}
                 alt={magnet.title}
-                className="w-full rounded-lg shadow-2xl"
+                style={{ width: "100%", borderRadius: "var(--radius-sm)", boxShadow: "var(--shadow-modal)" }}
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Value Proposition */}
-      <section className="py-16 px-4 bg-muted/50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">What You'll Get</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Instant Self-Assessment",
-                description: "Get personalized insights about your current state in minutes, not weeks.",
-              },
-              {
-                title: "Actionable Next Steps",
-                description: "Don't just diagnose the problem—get specific, implementable solutions.",
-              },
-              {
-                title: "Exclusive Email Series",
-                description: "Receive 5 follow-up emails with interpretation guides and resources.",
-              },
-            ].map((item, i) => (
-              <Card key={i} className="p-6">
-                <h3 className="font-bold text-lg mb-2">{item.title}</h3>
-                <p className="text-muted-foreground">{item.description}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Social Proof */}
-      <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">What People Are Saying</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {TESTIMONIALS.map((testimonial, i) => (
-              <Card key={i} className="p-6">
-                <div className="flex gap-1 mb-4">
-                  {Array.from({ length: testimonial.rating }).map((_, j) => (
-                    <Star key={j} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="mb-4 italic">"{testimonial.quote}"</p>
-                <p className="font-semibold">{testimonial.name}</p>
-                <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-16 px-4 bg-muted/50">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-          <div className="space-y-6">
-            {[
-              {
-                q: "What format is it?",
-                a: "It's a beautiful, interactive PDF that you can download immediately after signing up.",
-              },
-              {
-                q: "How long does it take?",
-                a: "Most people complete it in 5-10 minutes. You can work through it at your own pace.",
-              },
-              {
-                q: "What will I learn?",
-                a: "You'll get personalized insights, discover your blind spots, and receive actionable next steps.",
-              },
-              {
-                q: "Is there a catch?",
-                a: "Nope! It's completely free. We'll send you follow-up emails with resources, but no spam.",
-              },
-            ].map((item, i) => (
-              <div key={i}>
-                <h3 className="font-bold text-lg mb-2">{item.q}</h3>
-                <p className="text-muted-foreground">{item.a}</p>
+      {/* What You'll Get — cream */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={wrap}>
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", textAlign: "center", marginBottom: "14px" }}>What You'll Get</div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", textAlign: "center", marginBottom: "var(--s-5)" }}>
+            Three things, in your hands today.
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px, 100%), 1fr))", gap: "var(--s-3)" }}>
+            {VALUE_PROPS.map((item, i) => (
+              <div key={i} style={{ background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "3px solid var(--mustard)", padding: "var(--s-4)" }}>
+                <h3 style={{ fontFamily: "var(--F)", fontSize: "24px", fontWeight: 500, color: "var(--ink)", marginBottom: "10px" }}>{item.title}</h3>
+                <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)" }}>{item.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-16 px-4">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            Join thousands of people who've already downloaded this guide.
-          </p>
-          <Button size="lg" className="px-8 py-3 text-base">
-            Get Your Free Guide Now
-          </Button>
+      {/* Social Proof — warm cream */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={wrap}>
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", textAlign: "center", marginBottom: "14px" }}>From Readers</div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", textAlign: "center", marginBottom: "var(--s-5)" }}>
+            What people are saying.
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(280px, 100%), 1fr))", gap: "var(--s-3)" }}>
+            {TESTIMONIALS.map((testimonial, i) => (
+              <div key={i} style={{ background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", padding: "var(--s-4)" }}>
+                <div style={{ display: "flex", gap: "3px", marginBottom: "var(--s-2)" }} aria-label={`${testimonial.rating} out of 5`}>
+                  {Array.from({ length: testimonial.rating }).map((_, j) => (
+                    <Star key={j} aria-hidden style={{ width: 16, height: 16, fill: "var(--mustard)", color: "var(--mustard)" }} />
+                  ))}
+                </div>
+                <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontStyle: "italic", lineHeight: 1.45, color: "var(--ink)", marginBottom: "var(--s-3)" }}>
+                  &ldquo;{testimonial.quote}&rdquo;
+                </p>
+                <p style={{ fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, color: "var(--ink)" }}>{testimonial.name}</p>
+                <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>{testimonial.role}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
-    </div>
+
+      {/* FAQ — cream */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", textAlign: "center", marginBottom: "14px" }}>Questions</div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", textAlign: "center", marginBottom: "var(--s-5)" }}>
+            Before you sign up.
+          </h2>
+          <div style={{ display: "flex", flexDirection: "column", gap: "var(--s-4)", maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+            {FAQS.map((item, i) => (
+              <div key={i} style={{ borderTop: "1px solid rgba(20,17,12,0.1)", paddingTop: "var(--s-3)" }}>
+                <h3 style={{ fontFamily: "var(--F)", fontSize: "24px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px" }}>{item.q}</h3>
+                <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)" }}>{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA — charcoal */}
+      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-7) var(--s-4)", textAlign: "center" }}>
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 4.5vw, 48px)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.1, marginBottom: "var(--s-3)" }}>
+            Start where you are.
+          </h2>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.82)", marginBottom: "var(--s-4)", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
+            Thousands have already downloaded this guide. The next honest look at your life is one email away.
+          </p>
+          <a
+            href="#top"
+            onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+            style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "16px", fontWeight: 600, background: "var(--mustard)", color: "var(--ink)", padding: "16px 40px", borderRadius: "var(--radius-sm)" }}
+          >
+            Get Your Free Guide
+          </a>
+        </div>
+      </section>
+    </Layout>
   );
 }

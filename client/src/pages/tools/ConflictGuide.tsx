@@ -479,7 +479,7 @@ const CONFLICT_TYPES: ConflictType[] = [
         questions: [
           { text: "What does your spouse's relationship with their parent mean to them -- what are they afraid of losing?" },
           { text: "Is your spouse aware of the problem and conflicted, or genuinely unable to see it?" },
-          { text: "What cultural or family expectations is your spouse navigating that you may not fully understand?" },
+          { text: "What cultural or family expectations is your spouse carrying that you may not fully understand?" },
         ],
         scripture: {
           text: "Honor your father and your mother.",
