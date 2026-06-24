@@ -121,7 +121,7 @@ export default function Books() {
       </section>
 
       {/* NEW EBOOK — After Christendom (flagship, standalone funnel page) */}
-      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/after-christendom" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
@@ -129,16 +129,16 @@ export default function Books() {
               alt="After Christendom book cover"
               width={120}
               height={181}
-              style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }}
+              style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }}
             />
             <div style={{ flex: "1 1 320px" }}>
-              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
                 New Ebook · $9.99 · The Post-Christian Church
               </div>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 After Christendom
               </h2>
-              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", margin: 0 }}>
                 How to follow Jesus now that the culture has stopped pretending to be Christian. What is dying is
                 not the faith but Christendom. Read the opening free, then buy the ebook.
               </p>
@@ -181,27 +181,27 @@ export default function Books() {
       </section>
 
       {/* NEW RELEASE — featured ebook (standalone product page) */}
-      <section style={{ background: "var(--mustard)", padding: "var(--s-5) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/books/when-god-bless-america" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
               src="/books/when-god-bless-america.jpg"
               alt="When God Bless America Replaces Thy Kingdom Come"
               width={120} height={181}
-              style={{ width: "96px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.3)", flex: "0 0 auto" }}
+              style={{ width: "96px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }}
             />
             <div style={{ flex: "1 1 320px" }}>
-              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--ink)", opacity: 0.7 }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Release · Ebook
               </div>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 When God Bless America Replaces Thy Kingdom Come
               </h2>
-              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink)", opacity: 0.85, margin: 0 }}>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
                 How Patriotism Became Our Practical Savior — available now for $8.99.
               </p>
             </div>
-            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
               Get the ebook →
             </span>
           </div>
@@ -209,7 +209,7 @@ export default function Books() {
       </section>
 
       {/* NEW EBOOK FOR PASTORS — sales funnel */}
-      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/alone-in-a-crowded-church" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
@@ -217,16 +217,16 @@ export default function Books() {
               alt="Alone in a Crowded Church book cover"
               width={120}
               height={181}
-              style={{ width: "92px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.35)", flex: "0 0 auto" }}
+              style={{ width: "92px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }}
             />
             <div style={{ flex: "1 1 320px" }}>
-              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
                 New Ebook · $9.99 · For Pastors
               </div>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Alone in a Crowded Church
               </h2>
-              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", margin: 0 }}>
                 Why pastors burn out in silence, and how brotherhood brings them back. Read the opening free, then buy the ebook.
               </p>
             </div>
@@ -238,7 +238,7 @@ export default function Books() {
       </section>
 
       {/* THE LIVEWELL SERIES — two new ebooks (top-level product pages) */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)", marginBottom: "8px" }}>
             The LiveWell Series · Ebooks
@@ -267,7 +267,7 @@ export default function Books() {
       </section>
 
       {/* NEW RELEASES — three new ebooks */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)", marginBottom: "8px" }}>
             New Releases · Ebooks

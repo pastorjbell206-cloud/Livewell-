@@ -68,7 +68,7 @@ export default function BookDetail() {
       "The character of a church planter",
       "Theological conviction and clarity",
       "Building a healthy leadership culture",
-      "Navigating the early years",
+      "The early years",
       "Sustaining vision and health long-term",
       "When to plant and when to wait",
     ],

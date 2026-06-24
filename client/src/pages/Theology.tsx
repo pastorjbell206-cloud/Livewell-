@@ -90,7 +90,7 @@ export default function Theology() {
       </section>
 
       {/* PILLAR 0 — START HERE */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) 0" }}>
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) 0" }}>
         <div style={wrap}>
           <Link href="/theology/how-to-use" style={{ ...card, borderTop: "3px solid var(--mustard)", padding: "var(--s-5)" }}>
             <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>Read this first</div>
@@ -122,7 +122,7 @@ export default function Theology() {
       </section>
 
       {/* STUDY TOOLS */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) 0" }}>
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4) 0" }}>
         <div style={wrap}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "var(--s-3)" }}>Study tools</h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "12px" }}>
@@ -144,9 +144,9 @@ export default function Theology() {
       </section>
 
       {/* THE PILLARS */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--bone)" }}>
         <div style={wrap}>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.5vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "var(--s-4)" }}>Three pillars</h2>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.5vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "var(--s-4)" }}>Three pillars</h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "16px" }}>
             {PILLARS.map((p) => {
               const inner = (

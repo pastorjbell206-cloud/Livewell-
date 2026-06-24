@@ -144,7 +144,7 @@ export default function Home() {
                   fontFamily: "var(--U)",
                   fontSize: "11px",
                   fontWeight: 600,
-                  letterSpacing: "0.22em",
+                  letterSpacing: "0.18em",
                   textTransform: "uppercase",
                   color: "var(--mustard)",
                 }}

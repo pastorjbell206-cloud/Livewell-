@@ -84,12 +84,14 @@ export default function Exile() {
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", lineHeight: 1.15, marginBottom: "18px", maxWidth: "24ch" }}>
             This site is an exile's instruction, not a fortress and not a retreat.
           </h2>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "66ch", marginBottom: "14px" }}>
-            There are two reflexes when the ground shifts. Build the walls higher and fight to take the country back. Or pack the soul for heaven and let the city rot. Jeremiah forbids both. He commands the exile to stay, to plant, to raise a family, to work for the good of the very place that broke him — without ever pretending it is home. That is harder than the fortress and harder than the escape. It is also the only thing God ever told his people to do in a land like this one.
-          </p>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "66ch" }}>
-            So there are four questions an exile has to answer, and they come in order. Everything written here lives under one of them.
-          </p>
+          <div className="article-body prose-section">
+            <p>
+              There are two reflexes when the ground shifts. Build the walls higher and fight to take the country back. Or pack the soul for heaven and let the city rot. Jeremiah forbids both. He commands the exile to stay, to plant, to raise a family, to work for the good of the very place that broke him — without ever pretending it is home. That is harder than the fortress and harder than the escape. It is also the only thing God ever told his people to do in a land like this one.
+            </p>
+            <p>
+              So there are four questions an exile has to answer, and they come in order. Everything written here lives under one of them.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -131,10 +133,12 @@ export default function Exile() {
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 4vw, 42px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", lineHeight: 1.12, marginBottom: "18px", maxWidth: "22ch" }}>
             Exile is not the punishment. It is the assignment.
           </h2>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "66ch", marginBottom: "14px" }}>
-            We keep waiting for the country to turn back around so the real work can begin. It is not turning back around. And the real work began a long time ago anyway — in 587, in a letter, in a garden somebody planted in soil that belonged to the empire. The faithfulness God asks for is not the faithfulness of people who got the world they wanted. It never was.
-          </p>
-          <p style={{ fontFamily: "var(--B)", fontSize: "19px", lineHeight: 1.6, color: "var(--ink)", maxWidth: "60ch", fontWeight: 500 }}>
+          <div className="article-body prose-section">
+            <p>
+              We keep waiting for the country to turn back around so the real work can begin. It is not turning back around. And the real work began a long time ago anyway — in 587, in a letter, in a garden somebody planted in soil that belonged to the empire. The faithfulness God asks for is not the faithfulness of people who got the world they wanted. It never was.
+            </p>
+          </div>
+          <p style={{ fontFamily: "var(--B)", fontSize: "19px", lineHeight: 1.6, color: "var(--ink)", maxWidth: "60ch", fontWeight: 500, marginTop: "14px" }}>
             Build the house. Plant the garden. Raise the children. Seek the welfare of the city. We are not home — and we are not leaving.
           </p>
 
