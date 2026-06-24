@@ -34,11 +34,6 @@ const repoRoot = path.resolve(__dirname, "..");
 // is no multi-user login — so they cannot be ported safely until prod gains real
 // per-user auth. stripe.* already has a working REST fallback (/api/checkout).
 const KNOWN_PROD_GAPS = new Set<string>([
-  // File storage — per-user file ownership; blocked on prod multi-user auth.
-  "files.delete",
-  "files.list",
-  "files.updateDescription",
-  "files.upload",
   // Generic book cart checkout via tRPC — superseded by the per-ebook REST flow
   // (/api/checkout) and backed only by placeholder prices. Pending a cleanup
   // decision on the legacy shopping cart (BooksStore/ShoppingCart).
