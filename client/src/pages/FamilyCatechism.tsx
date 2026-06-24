@@ -89,7 +89,7 @@ export default function FamilyCatechism() {
     <Layout>
       <SEOMeta
         title="The Family Catechism — 52 Questions to Learn Together"
-        description="A 52-question family catechism in the New City Catechism tradition. Each week: a question, an answer for adults and one for children, a verse, a short reflection, and a prayer."
+        description="A 52-question family catechism in the New City Catechism tradition. Each week: a question, answers for adults and children, a verse, a reflection, a prayer."
         url="https://www.livewellbyjamesbell.co/family/catechism"
       />
 

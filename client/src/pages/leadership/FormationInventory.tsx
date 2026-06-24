@@ -414,7 +414,7 @@ export default function FormationInventory() {
     <Layout>
       <SEOMeta
         title="The Leadership Formation Inventory — A Character-First Leadership Assessment"
-        description="A character-first diagnostic for pastors and leaders. Nine domains, forty one statements, about ten minutes, scored entirely in your browser. Character first, because it carries everything else."
+        description="A character-first diagnostic for pastors and leaders. Nine domains, forty one statements, about ten minutes, scored entirely in your browser."
         url="https://www.livewellbyjamesbell.co/leadership/inventory"
       />
 

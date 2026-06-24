@@ -309,9 +309,9 @@ function getLevelLabel(level: string): string {
 }
 
 function getLevelColor(level: string): string {
-  if (level === "high") return "#2D6A4F";
+  if (level === "high") return "var(--ok)";
   if (level === "mid") return "var(--mustard)";
-  return "#C0392B";
+  return "var(--alert)";
 }
 
 function getOverallHealth(score: number): {
@@ -324,7 +324,7 @@ function getOverallHealth(score: number): {
   if (pct >= 0.8)
     return {
       label: "Thriving Church",
-      color: "#2D6A4F",
+      color: "var(--ok)",
       description:
         "Your church shows health across multiple dimensions. This is not a reason for complacency -- it is a foundation for ambitious mission. Healthy churches do not coast. They take risks that unhealthy churches cannot afford. The question before you is not 'How do we maintain this?' It is 'What is God calling us to do with the health He has given us?'",
     };
@@ -338,13 +338,13 @@ function getOverallHealth(score: number): {
   if (pct >= 0.4)
     return {
       label: "Church Under Strain",
-      color: "#E07A2F",
+      color: "var(--strain)",
       description:
         "Multiple areas of your church's life need focused attention. This is not a death sentence -- many churches have been revitalized from this position. But revitalization requires honesty about what is not working, willingness to stop doing what is familiar but fruitless, and the courage to invest in what matters most. Start with the two weakest areas. Give them eighteen months of deliberate focus. Measure the change.",
     };
   return {
     label: "Church in Crisis",
-    color: "#C0392B",
+    color: "var(--alert)",
     description:
       "Your scores indicate a church that is struggling across most dimensions of health. This is painful to see on paper, but naming it is the first step toward change. The churches that recover from crisis are the ones whose leaders refuse to pretend. Seek outside help -- a denominational consultant, a church health organization, a trusted senior pastor who has led through similar seasons. You do not have to figure this out alone.",
   };
@@ -979,7 +979,7 @@ export default function ChurchHealth() {
                     borderRadius: "2px",
                     padding: "32px",
                     border: "1px solid var(--border)",
-                    borderTop: "4px solid #2D6A4F",
+                    borderTop: "4px solid var(--ok)",
                   }}
                 >
                   <div
@@ -992,14 +992,14 @@ export default function ChurchHealth() {
                   >
                     <TrendingUp
                       size={18}
-                      style={{ color: "#2D6A4F", flexShrink: 0 }}
+                      style={{ color: "var(--ok)", flexShrink: 0 }}
                     />
                     <h3
                       style={{
                         fontSize: "13px",
                         fontWeight: 700,
                         letterSpacing: "0.15em",
-                        color: "#2D6A4F",
+                        color: "var(--ok)",
                         fontFamily: "var(--U)",
                         margin: 0,
                       }}
@@ -1019,7 +1019,7 @@ export default function ChurchHealth() {
                         key={s.cat.slug}
                         style={{
                           padding: "14px 18px",
-                          background: "rgba(45,106,79,0.06)",
+                          background: "var(--ok-bg)",
                           borderRadius: "2px",
                         }}
                       >
@@ -1040,7 +1040,7 @@ export default function ChurchHealth() {
                             fontFamily: "var(--U)",
                             fontSize: "12px",
                             fontWeight: 600,
-                            color: "#2D6A4F",
+                            color: "var(--ok)",
                           }}
                         >
                           {s.score}/15
@@ -1059,7 +1059,7 @@ export default function ChurchHealth() {
                     borderRadius: "2px",
                     padding: "32px",
                     border: "1px solid var(--border)",
-                    borderTop: "4px solid #C0392B",
+                    borderTop: "4px solid var(--alert)",
                   }}
                 >
                   <div
@@ -1072,14 +1072,14 @@ export default function ChurchHealth() {
                   >
                     <AlertCircle
                       size={18}
-                      style={{ color: "#C0392B", flexShrink: 0 }}
+                      style={{ color: "var(--alert)", flexShrink: 0 }}
                     />
                     <h3
                       style={{
                         fontSize: "13px",
                         fontWeight: 700,
                         letterSpacing: "0.15em",
-                        color: "#C0392B",
+                        color: "var(--alert)",
                         fontFamily: "var(--U)",
                         margin: 0,
                       }}
@@ -1099,7 +1099,7 @@ export default function ChurchHealth() {
                         key={c.cat.slug}
                         style={{
                           padding: "14px 18px",
-                          background: "rgba(192,57,43,0.05)",
+                          background: "var(--alert-bg)",
                           borderRadius: "2px",
                         }}
                       >
@@ -1183,10 +1183,10 @@ export default function ChurchHealth() {
                         padding: "4px 12px",
                         background:
                           level === "high"
-                            ? "rgba(45,106,79,0.08)"
+                            ? "var(--ok-bg)"
                             : level === "mid"
                               ? "rgba(212,160,23,0.1)"
-                              : "rgba(192,57,43,0.08)",
+                              : "var(--alert-bg)",
                         borderRadius: "2px",
                       }}
                     >

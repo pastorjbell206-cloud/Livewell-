@@ -48,7 +48,7 @@ export default function VisitationTracker() {
 
   return (
     <Layout>
-      <SEOMeta title="The Visitation Tracker — Who You Have Seen, Who Is Waiting" description="Keep track of who you have visited, who is scheduled, and who is about to fall through the cracks. Everything stays on your device. No member data leaves the browser." url="https://www.livewellbyjamesbell.co/leadership/visitation" />
+      <SEOMeta title="The Visitation Tracker — Who You Have Seen, Who Is Waiting" description="Keep track of who you have visited, who is scheduled, and who is about to fall through the cracks. Everything stays on your device." url="https://www.livewellbyjamesbell.co/leadership/visitation" />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>

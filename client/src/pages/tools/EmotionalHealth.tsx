@@ -279,7 +279,7 @@ export default function EmotionalHealth() {
     <Layout>
       <SEOMeta
         title="Emotional Health Assessment -- Diagnose Your Inner Life"
-        description="A 15-question diagnostic for emotional and spiritual health across self-awareness, boundaries, grief, forgiveness, and rest. Honest results with practical next steps."
+        description="A 15-question diagnostic for emotional and spiritual health across self-awareness, boundaries, grief, forgiveness, and rest. Honest results, practical steps."
         keywords="emotional health assessment, spiritual health test, self-awareness, boundaries, grief, forgiveness, sabbath rest, Christian mental health"
         structuredData={{
           "@context": "https://schema.org",

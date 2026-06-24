@@ -29,7 +29,7 @@ export default function SermonSeries() {
 
   return (
     <Layout>
-      <SEOMeta title="The Sermon Series Library — Outlines for Preaching" description="Sermon series outlines for preaching, both book by book through Scripture and topical, each with the series arc and a per-sermon breakdown of text, big idea, and aim." url="https://www.livewellbyjamesbell.co/leadership/sermon-series" />
+      <SEOMeta title="The Sermon Series Library — Outlines for Preaching" description="Sermon series outlines for preaching, book by book and topical, each with the series arc and a per-sermon breakdown of text, big idea, and aim." url="https://www.livewellbyjamesbell.co/leadership/sermon-series" />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>

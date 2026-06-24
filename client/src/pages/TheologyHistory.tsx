@@ -11,7 +11,7 @@ import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { toParagraphs } from "@/lib/prose";
+import { Prose } from "@/lib/prose";
 
 interface EraEvent { year: string; title: string; note: string; }
 interface Era { id: string; name: string; range: string; summary: string; events: EraEvent[]; }
@@ -23,16 +23,6 @@ type Tab = "timeline" | "councils" | "heresies" | "figures";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const cardStyle = { background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)" } as const;
-
-function Para({ text, style }: { text: string; style?: React.CSSProperties }) {
-  return (
-    <>
-      {toParagraphs(text).map((p, i) => (
-        <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink-muted)", maxWidth: "68ch", marginBottom: "12px", ...style }}>{p}</p>
-      ))}
-    </>
-  );
-}
 
 export default function TheologyHistory() {
   const [eras, setEras] = useState<Era[]>([]);
@@ -72,7 +62,7 @@ export default function TheologyHistory() {
     <Layout>
       <SEOMeta
         title="Church History — The Story You Belong To"
-        description="A walkable narrative of the church across two thousand years: the timeline by era, the councils that fixed the creeds, the heresies the church had to reject, and the people who carried the faith."
+        description="A walkable narrative of the church across two thousand years: the timeline by era, the councils, the heresies it rejected, and the people who carried the faith."
         url="https://www.livewellbyjamesbell.co/theology/history"
       />
 
@@ -142,7 +132,7 @@ export default function TheologyHistory() {
                   </button>
                   {isOpen && (
                     <div style={{ padding: "0 var(--s-4) var(--s-4)", borderTop: "1px solid var(--border)" }}>
-                      <div style={{ paddingTop: "16px" }}><Para text={era.summary} style={{ color: "var(--ink)" }} /></div>
+                      <div style={{ paddingTop: "16px" }}><Prose text={era.summary} /></div>
                       <div style={{ marginTop: "12px", borderLeft: "2px solid var(--border)", paddingLeft: "18px", display: "flex", flexDirection: "column", gap: "14px" }}>
                         {era.events.map((e, i) => (
                           <div key={i}>

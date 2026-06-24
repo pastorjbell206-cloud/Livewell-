@@ -177,7 +177,7 @@ export default function WholeBibleSermons() {
     <Layout>
       <SEOMeta
         title="Sermon Series for Every Book of the Bible — Free Outlines"
-        description="Free, Christ-centered sermon series for all 66 books of the Bible — the big idea, the Christ connection, and a ready-to-preach arc for each, plus topical and seasonal series."
+        description="Free, Christ-centered sermon series for all 66 books of the Bible: the big idea, the Christ connection, and a ready-to-preach arc for each."
         url={`${SITE_URL}/leadership/bible-sermons`}
       />
       <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>

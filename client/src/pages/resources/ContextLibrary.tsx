@@ -63,7 +63,7 @@ export default function ContextLibrary() {
     <Layout>
       <SEOMeta
         title="Reading Scripture in Context — Biblical Background Guides"
-        description="Guides to the Ancient Near Eastern, Second Temple Jewish, and Greco-Roman worlds of the Bible, honor-shame culture, and how to read Scripture apart from American political assumptions. Well-sourced and free."
+        description="Guides to the Ancient Near Eastern, Second Temple Jewish, and Greco-Roman worlds of the Bible, and how to read Scripture apart from American politics. Free."
         url="https://www.livewellbyjamesbell.co/resources/context"
       />
 

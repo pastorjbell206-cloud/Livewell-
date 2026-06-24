@@ -9,7 +9,7 @@ import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { toParagraphs } from "@/lib/prose";
+import { Prose } from "@/lib/prose";
 
 interface Tradition {
   name: string; family: string; born: string; treasures: string;
@@ -41,7 +41,7 @@ export default function TheologyTraditions() {
     <Layout>
       <SEOMeta
         title="Why Are There So Many Churches?"
-        description="An honest, charitable guide to the major Christian traditions — Catholic, Orthodox, Lutheran, Reformed, Anglican, Baptist, Methodist, Pentecostal, and more — what each treasures, and the deep core they all share."
+        description="An honest, charitable guide to the major Christian traditions, Catholic to Pentecostal: what each one treasures, and the deep core they all share."
         url="https://www.livewellbyjamesbell.co/theology/traditions"
       />
 
@@ -69,9 +69,7 @@ export default function TheologyTraditions() {
         <>
           <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-4)" }}>
             <div style={wrap}>
-              {toParagraphs(data.intro).map((p, i) => (
-                <p key={i} style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "68ch", marginBottom: "14px" }}>{p}</p>
-              ))}
+              <Prose text={data.intro} />
             </div>
           </section>
 
@@ -80,9 +78,7 @@ export default function TheologyTraditions() {
             <div style={wrap}>
               <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>What they all share</div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.5vw, 32px)", fontWeight: 400, color: "var(--ink)", marginBottom: "var(--s-3)" }}>The one faith underneath</h2>
-              {toParagraphs(data.sharedCore).map((p, i) => (
-                <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink-muted)", maxWidth: "68ch", marginBottom: "12px" }}>{p}</p>
-              ))}
+              <Prose text={data.sharedCore} />
             </div>
           </section>
 

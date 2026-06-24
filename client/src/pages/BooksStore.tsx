@@ -109,6 +109,7 @@ export default function BooksStore() {
               <div className="space-y-4">
                 <input
                   type="text"
+                  aria-label="Your name"
                   placeholder="Your Name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -117,6 +118,7 @@ export default function BooksStore() {
                 />
                 <input
                   type="email"
+                  aria-label="Email address"
                   placeholder="Your Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}

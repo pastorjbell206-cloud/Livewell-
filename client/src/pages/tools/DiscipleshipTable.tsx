@@ -156,7 +156,7 @@ export default function DiscipleshipTable() {
     <Layout>
       <SEOMeta
         title="Start a Table — A Discipleship Table Starter Kit"
-        description="Build a complete, reproducing plan for making disciples around a table: an invitation to send, a simple weekly rhythm of meal, Scripture, and prayer, passages to begin with, and how to multiply. Made for the ordinary believer, no training required."
+        description="Build a reproducing plan for making disciples around a table: an invitation, a weekly rhythm of meal, Scripture, and prayer, and how to multiply. No training."
         url="https://www.livewellbyjamesbell.co/tools/discipleship-table"
       />
 

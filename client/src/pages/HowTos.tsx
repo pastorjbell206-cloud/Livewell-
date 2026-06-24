@@ -59,7 +59,7 @@ export default function HowTos() {
     <Layout>
       <SEOMeta
         title="How-To Guides — Practical, Scripture-Grounded Help for Real Life"
-        description="A library of short, practical how-to guides for marriage, parenting, money, the inner life, hard seasons, making disciples, and more. Plain help, grounded in Scripture, for the actual Tuesday."
+        description="Short, practical how-to guides for marriage, parenting, money, the inner life, hard seasons, and making disciples. Plain help, grounded in Scripture."
         url="https://www.livewellbyjamesbell.co/how-tos"
       />
 

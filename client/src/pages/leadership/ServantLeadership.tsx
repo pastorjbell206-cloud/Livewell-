@@ -49,7 +49,7 @@ export default function ServantLeadership() {
     <Layout>
       <SEOMeta
         title="Servant Leadership in the Church: The 9 Biblical Marks"
-        description="A biblical guide to servant leadership in the church — the nine marks of a servant leader, with Scripture, a diagnostic question for each, and the conviction underneath. Free, for the men who lead."
+        description="A biblical guide to servant leadership in the church: the nine marks of a servant leader, with Scripture and a diagnostic question for each. Free."
         url={`${SITE_URL}/leadership/servant-leadership`}
         structuredData={{
           "@context": "https://schema.org", "@type": "Article",

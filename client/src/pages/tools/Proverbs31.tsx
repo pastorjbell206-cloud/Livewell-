@@ -67,7 +67,7 @@ export default function Proverbs31() {
     <Layout>
       <SEOMeta
         title="Proverbs in 31 Days — A Chapter a Day for the Wise Life"
-        description="A chapter of Proverbs a day, matched to the date, the way the wisdom tradition has read it for centuries. Each day a theme, a verse or two worth knowing by heart, and a reflection that runs the chapter into a real decision."
+        description="A chapter of Proverbs a day, matched to the date, the way the wisdom tradition has read it for centuries. A theme, a verse worth knowing, and a reflection."
         url="https://www.livewellbyjamesbell.co/tools/proverbs-31"
       />
 

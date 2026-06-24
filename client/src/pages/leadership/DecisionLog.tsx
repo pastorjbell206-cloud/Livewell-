@@ -43,7 +43,7 @@ export default function DecisionLog() {
 
   return (
     <Layout>
-      <SEOMeta title="The Benevolence and Decision Log — A Private Record" description="A private record of benevolence requests and board decisions: what was asked, what was decided, and why. Everything stays on the device. Nothing is sent anywhere." url="https://www.livewellbyjamesbell.co/leadership/decision-log" />
+      <SEOMeta title="The Benevolence and Decision Log — A Private Record" description="A private record of benevolence requests and board decisions: what was asked, what was decided, and why. Everything stays on the device." url="https://www.livewellbyjamesbell.co/leadership/decision-log" />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>

@@ -719,7 +719,7 @@ export default function FamilyDevotionBuilder() {
     <Layout>
       <SEOMeta
         title="Family Devotion Builder — 15-Minute Devotions by Age and Theme"
-        description="Build a complete 15-minute family devotion in seconds. Pick your kids' ages and a theme like gratitude, courage, or forgiveness, and get Scripture, age-adapted teaching, discussion questions, a hands-on activity, and a closing prayer."
+        description="Build a complete 15-minute family devotion in seconds. Pick your kids' ages and a theme, and get Scripture, teaching, discussion, an activity, and a prayer."
         keywords="family devotions, family devotion builder, devotions for kids, family worship, devotions by age, Bible activities for children, devotions for teens, family Bible time"
         structuredData={{
           "@context": "https://schema.org",

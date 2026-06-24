@@ -176,7 +176,7 @@ export const ARTICLES_TIER_2 = [
     readTime: "10 min",
     body: `<p>Walk into the average non-denominational church in America and you will find, with remarkable consistency, the same constellation of elements: a worship band playing contemporary songs projected on screens, a charismatic lead pastor in jeans delivering a topical sermon series, an auditorium designed to feel like a concert venue rather than a sanctuary, a children's ministry modeled on the entertainment industry, and a statement of faith on the website that is broadly evangelical but deliberately vague on the questions that divide denominations. The church will call itself "non-denominational," and it will mean this as a selling point — a declaration of independence from the institutional baggage, the bureaucratic overhead, and the tribal loyalties of denominational life.</p>
 
-<p>But here is the thing that non-denominational churches rarely acknowledge: the constellation of elements described above is itself a tradition. It is a specific, historically situated set of theological commitments, worship practices, and organizational assumptions that can be traced to identifiable sources in the late twentieth century. It is not the absence of tradition. It is a tradition that does not know it is one.</p>
+<p>But here is what non-denominational churches rarely acknowledge: the constellation of elements described above is itself a tradition. It is a specific, historically situated set of theological commitments, worship practices, and organizational assumptions that can be traced to identifiable sources in the late twentieth century. It is not the absence of tradition. It is a tradition that does not know it is one.</p>
 
 <h2>The Rise of the Non-Denominational Movement</h2>
 

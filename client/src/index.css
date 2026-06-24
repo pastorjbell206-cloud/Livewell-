@@ -32,6 +32,11 @@
   --mustard-deep:#B08A12;
   --mustard-text:#7A6010;
 
+  /*  Semantic score tokens (warm/earthy, brand-harmonized)  */
+  --ok:#3D5A40;--ok-bg:rgba(61,90,64,0.08);
+  --alert:#9B2C2C;--alert-bg:rgba(155,44,44,0.08);
+  --strain:#B5651D;--strain-bg:rgba(181,101,29,0.08);
+
   /* Aliases */
   --paper:#F5F0E6;--paper2:#EDE8DC;--cream:#EDE8DC;
   --line:#D9D3C4;--border:#D9D3C4;--borderdk:#C0B9A8;
@@ -75,6 +80,10 @@ html.dark{
   --ink:#F4F1EA;--ink-muted:#9A968E;
   /* Mustard — slightly desaturated for dark mode to keep WCAG AA */
   --mustard:#D4A017;--mustard-deep:#B08A12;--mustard-text:#E0B945;
+  /* Semantic score tokens — foregrounds lightened for dark contrast */
+  --ok:#7FA486;--ok-bg:rgba(61,90,64,0.12);
+  --alert:#D98C8C;--alert-bg:rgba(155,44,44,0.12);
+  --strain:#D69A5C;--strain-bg:rgba(181,101,29,0.12);
   /* Legacy aliases */
   --paper:#14110C;--paper2:#1A1608;--cream:#2A2418;
   --line:#3A3328;--border:#3A3328;--borderdk:#4A4232;

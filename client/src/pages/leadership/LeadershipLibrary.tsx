@@ -36,7 +36,7 @@ export default function LeadershipLibrary() {
 
   return (
     <Layout>
-      <SEOMeta title="The Leadership Library — Articles for Pastors and Church Leaders" description="A searchable library of writing on leadership formation, church leadership, preaching, and exegesis, for the working pastor and the lay leader. Plain, serious, and useful." url="https://www.livewellbyjamesbell.co/leadership/library" />
+      <SEOMeta title="The Leadership Library — Articles for Pastors and Church Leaders" description="A searchable library on leadership formation, church leadership, preaching, and exegesis, for the working pastor and the lay leader. Plain, serious, useful." url="https://www.livewellbyjamesbell.co/leadership/library" />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>

@@ -39,7 +39,7 @@ export default function CreedsLibrary() {
     <Layout>
       <SEOMeta
         title="Creeds, Confessions, and Classics — Full Texts with Plain Notes"
-        description="The Apostles' and Nicene Creeds, Chalcedon, the Reformation confessions, and the early classics: full public-domain texts with plain-language notes on what the loaded phrases meant."
+        description="The Apostles' and Nicene Creeds, Chalcedon, the Reformation confessions, and the early classics: full public-domain texts with plain-language notes."
         url="https://www.livewellbyjamesbell.co/resources/creeds"
       />
 

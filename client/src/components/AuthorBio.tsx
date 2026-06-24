@@ -59,7 +59,7 @@ export function AuthorBio({
           {resolvedImage && (
             <img
               src={resolvedImage}
-              alt=""
+              alt={author}
               width={96}
               height={128}
               loading="lazy"

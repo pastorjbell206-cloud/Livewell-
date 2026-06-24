@@ -30,7 +30,7 @@ export default function NationPolicy() {
 
   return (
     <Layout>
-      <SEOMeta title="The Biblical Policy Explorer — What Would It Actually Look Like?" description="If the principles of biblical law shaped policy in modern America, from the Year of Jubilee to the gleaning laws to the warning against kings, what would it look like? A thought experiment that leaves both parties homeless." url="https://www.livewellbyjamesbell.co/nation/policy" />
+      <SEOMeta title="The Biblical Policy Explorer — What Would It Actually Look Like?" description="If biblical law shaped policy in America, from Jubilee to the gleaning laws to the warning against kings, what would it look like? It leaves both parties out." url="https://www.livewellbyjamesbell.co/nation/policy" />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>

@@ -12,19 +12,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { TriageBadge } from "@/components/TriageBadge";
 import type { Doctrine } from "@/lib/theology";
-import { toParagraphs } from "@/lib/prose";
-
-function Paragraphs({ text, style }: { text: string; style?: React.CSSProperties }) {
-  return (
-    <>
-      {toParagraphs(text).map((p, i) => (
-        <p key={i} style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "68ch", marginBottom: "16px", ...style }}>
-          {p}
-        </p>
-      ))}
-    </>
-  );
-}
+import { Prose } from "@/lib/prose";
 
 function StepHeading({ n, kicker, title }: { n: number; kicker: string; title: string }) {
   return (
@@ -109,7 +97,7 @@ export default function TheologyDoctrine() {
       <section style={section}>
         <div style={wrap}>
           <StepHeading n={1} kicker="The question" title="In plain language" />
-          <Paragraphs text={doc.question} />
+          <Prose text={doc.question} />
         </div>
       </section>
 
@@ -117,7 +105,7 @@ export default function TheologyDoctrine() {
       <section style={sectionAlt}>
         <div style={wrap}>
           <StepHeading n={2} kicker="Why it matters" title="What hangs on it" />
-          <Paragraphs text={doc.whyItMatters} />
+          <Prose text={doc.whyItMatters} />
         </div>
       </section>
 
@@ -133,7 +121,7 @@ export default function TheologyDoctrine() {
               <div key={pos.name} style={{ background: "var(--card)", border: "1px solid var(--border)", borderTop: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)" }}>
                 <h3 style={{ fontFamily: "var(--F)", fontSize: "24px", fontWeight: 500, color: "var(--ink)", marginBottom: "6px" }}>{pos.name}</h3>
                 <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--mustard-text)", fontWeight: 600, marginBottom: "16px" }}>{pos.inOneLine}</p>
-                <Paragraphs text={pos.bestCase} style={{ fontSize: "16px" }} />
+                <Prose text={pos.bestCase} />
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "24px", marginTop: "12px", paddingTop: "16px", borderTop: "1px solid var(--border)" }}>
                   <div style={{ flex: "1 1 220px" }}>
                     <div className="eyebrow" style={{ marginBottom: "6px" }}>Voices for this view</div>
@@ -187,7 +175,7 @@ export default function TheologyDoctrine() {
             <p style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "14px" }}>
               The author's judgment, held tentatively, not settled fact
             </p>
-            <Paragraphs text={doc.weighing} />
+            <Prose text={doc.weighing} />
           </div>
         </div>
       </section>
@@ -196,7 +184,7 @@ export default function TheologyDoctrine() {
       <section style={sectionAlt}>
         <div style={wrap}>
           <StepHeading n={6} kicker="Charitable disagreement" title="And whether it is a hill to die on" />
-          <Paragraphs text={doc.charitableDisagreement} />
+          <Prose text={doc.charitableDisagreement} />
         </div>
       </section>
 

@@ -404,9 +404,9 @@ function getLevelLabel(level: string): string {
 }
 
 function getLevelColor(level: string): string {
-  if (level === "healthy") return "#2D6A4F";
+  if (level === "healthy") return "var(--ok)";
   if (level === "mid") return "var(--mustard)";
-  return "#C0392B";
+  return "var(--alert)";
 }
 
 function getOverallBurnout(score: number): {
@@ -418,7 +418,7 @@ function getOverallBurnout(score: number): {
   if (pct >= 0.8)
     return {
       label: "Healthy Ministry",
-      color: "#2D6A4F",
+      color: "var(--ok)",
       description:
         "Your scores indicate a pastor who is doing the hard work of ministry from a place of genuine health. This does not mean the absence of difficulty -- it means you have built the structures, relationships, and disciplines that allow you to carry what ministry demands without being destroyed by it. The ongoing work is vigilance. Burnout rarely announces itself. It accumulates in the margins you stop protecting.",
     };
@@ -432,13 +432,13 @@ function getOverallBurnout(score: number): {
   if (pct >= 0.4)
     return {
       label: "Active Burnout",
-      color: "#E07A2F",
+      color: "var(--strain)",
       description:
         "You are in active burnout. This is not a verdict on your faithfulness or your calling. It is a diagnosis of a system that has been drawing more from you than it has been giving back. Active burnout compromises every area of your life simultaneously -- your preaching, your marriage, your body, your faith. The most dangerous thing you can do right now is nothing. The second most dangerous thing is trying to fix everything at once. Pick the two lowest categories. Start there. Get help.",
     };
   return {
     label: "Crisis",
-    color: "#C0392B",
+    color: "var(--alert)",
     description:
       "Your scores indicate a level of depletion that requires immediate intervention -- not more effort, not a better strategy, intervention. Many pastors at this level have already considered leaving ministry. Some have considered worse. Hear this: you are not failing. You are drowning. And drowning people need rescue, not swimming lessons. Contact a pastoral crisis counselor today. Tell your spouse tonight. Call a trusted friend this week. The ministry can wait. You cannot.",
   };
@@ -1065,7 +1065,7 @@ export default function PastorBurnout() {
                   borderRadius: "2px",
                   padding: "36px 40px",
                   border: "1px solid var(--border)",
-                  borderLeft: "4px solid #C0392B",
+                  borderLeft: "4px solid var(--alert)",
                   marginBottom: "32px",
                 }}
               >
@@ -1079,14 +1079,14 @@ export default function PastorBurnout() {
                 >
                   <AlertTriangle
                     size={18}
-                    style={{ color: "#C0392B", flexShrink: 0 }}
+                    style={{ color: "var(--alert)", flexShrink: 0 }}
                   />
                   <h3
                     style={{
                       fontSize: "13px",
                       fontWeight: 700,
                       letterSpacing: "0.15em",
-                      color: "#C0392B",
+                      color: "var(--alert)",
                       fontFamily: "var(--U)",
                       margin: 0,
                     }}
@@ -1131,7 +1131,7 @@ export default function PastorBurnout() {
                         padding: "6px 14px",
                         background:
                           d.level === "low"
-                            ? "rgba(192,57,43,0.08)"
+                            ? "var(--alert-bg)"
                             : "rgba(212,160,23,0.1)",
                         borderRadius: "2px",
                       }}
@@ -1380,10 +1380,10 @@ export default function PastorBurnout() {
                         padding: "4px 12px",
                         background:
                           level === "healthy"
-                            ? "rgba(45,106,79,0.08)"
+                            ? "var(--ok-bg)"
                             : level === "mid"
                               ? "rgba(212,160,23,0.1)"
-                              : "rgba(192,57,43,0.08)",
+                              : "var(--alert-bg)",
                         borderRadius: "2px",
                       }}
                     >
