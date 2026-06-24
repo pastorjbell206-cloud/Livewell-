@@ -15,8 +15,6 @@ The question rarely comes from the pulpit's enemies. It comes from the people wh
 
 That is the cost, and it is worth naming plainly before we pretend the calling is easy. **To refuse a tribe in an age that has made tribe the meaning of life is to be, by turns, distrusted by everyone — and the people who distrust you will be the ones you love most.** The nonpartisan pastor is not the neutral pastor, and he is not the cowardly pastor, though he will be accused of both. He is something the age has almost no category for: a man whose deepest loyalty has already been spent, so that he has none left to sell to either side.
 
-> [PERSONAL STORY — James to supply: a moment a trusted member asked you to declare a side, and what the refusal cost in that relationship. Let the disappointment in their face be visible; do not resolve it too quickly.]
-
 A caution belongs here, because there is a counterfeit of this calling that I have seen in my own heart. There is a nonpartisanship that is really just conflict-avoidance dressed in robes — a refusal to say anything because saying things is frightening and losing people is painful. That is not the calling. That is cowardice wearing the calling's clothes. The genuine article is louder and costlier than the counterfeit, because the genuine article does take sides — constantly, fiercely — on everything Scripture takes a side on. It simply refuses to let the world's two teams draw the map.
 
 ## Jesus prayed for the one thing the tribe destroys

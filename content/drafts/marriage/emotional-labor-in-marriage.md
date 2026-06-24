@@ -11,8 +11,6 @@ meta_description: "Emotional labor in marriage and the mental load: a pastor on 
 seo_keywords: "emotional labor in marriage, mental load marriage, invisible work in marriage, unequal division of labor marriage, default parent, weaponized incompetence"
 ---
 
-> [PERSONAL STORY — James to supply: a true moment you realized you had been the spouse who did not see the invisible work — your own or a pattern you watched in ministry. Drop it in at "I have to stop describing now and confess" below. Pastoral observation is fine; do not invent a domestic scene.]
-
 There is a kind of work in every marriage that leaves no trace.
 
 It is not the dishes, though it includes remembering the dishes. It is not the calendar, though it is the mind that holds the calendar while doing four other things. It is the constant low hum of management that keeps a household and a marriage from falling apart — the noticing that the milk is almost gone, that the child has been quiet too long, that the in-laws were not called this month, that one of you is about to say the wrong thing to the other and needs to be steered. It is the anticipating, the tracking, the remembering, the smoothing. And almost always, in almost every marriage, one person carries far more of it than the other, and the other does not know.
@@ -52,8 +50,6 @@ We inherited that ledger and carried it straight into our homes. The spouse doin
 ## The half I could point to was the easy half
 
 I have to stop describing now and confess, because I have been the one who did not see.
-
-> [PERSONAL STORY — see note above.]
 
 It is comfortable to live in a well-run house and assume the running is automatic. It costs you nothing to believe the milk simply appears, the appointments simply happen, the family simply stays connected, because believing that means you owe nothing for it. I have been the spouse who thought he was carrying his half because his half was the visible half — the half that leaves a clean garage and a mowed lawn, the half you can point to. And the half I could point to was the easy half, because it announced itself when it was done. The hard half is the one that never announces anything. The hard half is the one you only notice when it finally stops.
 

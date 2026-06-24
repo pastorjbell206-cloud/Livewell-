@@ -15,8 +15,6 @@ There is a sound a certain kind of sermon makes when it reaches for the past, an
 
 I have made that sound. I have stood in front of a congregation and traded on a past I never lived in, and I have watched it work, and the working of it should have frightened me more than it did.
 
-> [PERSONAL STORY — James to supply, optional: a specific moment you caught yourself preaching the lost golden age, or a conversation with an older saint who longed for a "Christian America" that the honest history would not support. Drop it in here, near the top.]
-
 The claim of this essay is blunt, and the rest of it is me earning the claim. **Nostalgia for a Christian America is not faith. It is idolatry — the same idolatry the progressive commits when he worships the future, only turned to face the other direction.** One man bows to a golden age that is coming. The other bows to a golden age that has passed. Neither is bowing to the God who stands outside the calendar entirely, and both have confused a date with a King.
 
 ## The golden age is a myth, and the honest history says so

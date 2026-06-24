@@ -61,8 +61,6 @@ There is a reason the tradition located formation in the household before it loc
 
 The sociologist Robert Bellah and his collaborators, studying American life in *Habits of the Heart* in 1985, named our drift toward an individualism that hollowed out the very institutions where character used to be transmitted, and the family was the first casualty. We outsourced formation to programs — the school, the team, the youth group, the screen. The programs cannot do it. They were never built to do it. Formation was always going to happen in the kitchen, in the car, in the recovery after the failure, in the ten thousand unscripted hours no curriculum can reach. We just stopped paying attention to what was being formed there. The inattention did not pause the forming. It only meant we were no longer choosing what got passed down.
 
-> [PERSONAL STORY — James to supply a true account of a moment one of his sons revealed back to him something he had modeled without intending to.]
-
 ## What this asks of an honest parent
 
 So the practical counsel everyone wants — the technique, the routine, the schedule of family worship that will inoculate the child — turns out to be the wrong request. Not wrong because routines are useless. The dinner table matters, the bedtime prayer matters, the rhythm of a household that reads scripture together is real formation, and I would not talk anyone out of it. Wrong because the routine cannot carry weight your reflexes contradict. A family devotion delivered by a parent the children watch lie at the door all week is not formation. It is a second sermon competing with the first, and the children have already decided which one is true.

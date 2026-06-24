@@ -15,8 +15,6 @@ Somewhere around the third sentence of the sermon, the room sorts itself. You ca
 
 This is the condition of preaching now, and the temptations it produces are two, and they are opposite, and most of us oscillate between them. The first is to choose a side — to give the half of the room that already agrees the satisfaction of hearing you say it, because the warmth coming back at you feels, in the moment, like effectiveness. The second is to go silent — to preach only the safe, internal, spiritualized text, to wall off whole books of the Bible because they will be heard as a vote, until your preaching has nothing to say about anything anyone is actually afraid of. **One temptation makes you a chaplain to a tribe. The other makes you a chaplain to no one. Both are a dereliction, and both feel like wisdom from the inside.**
 
-> [PERSONAL STORY — James to supply: a sermon where you felt the room split, or a moment after a service when one comment told you a member had heard a political tribe instead of the text. Place it here, before the diagnosis, so the reader knows you preach from inside this.]
-
 I have done both. I have preached the sermon that flattered my own instincts and called it courage, and I have ducked a text I should have preached and called it prudence. The work I am describing is not work I have mastered. It is work I am still learning to do without flinching toward either ditch.
 
 ## The whole counsel is not optional, and it was never safe

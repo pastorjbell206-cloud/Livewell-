@@ -15,8 +15,6 @@ The most respectable thing you can say about Jesus in polite company is that he 
 
 C.S. Lewis thought it was the one verdict the evidence would not let you keep, and he said so in a paragraph that has annoyed clever people ever since.
 
-> [PERSONAL STORY — James to supply: the period when you held the "great teacher" view sincerely, found it sophisticated, and what made you suspect it was actually the least examined position in the room. Place it here, before the thesis.]
-
 **Here is what I will argue, and I will sharpen the objections to it before I rest any weight on it: the comfortable verdict — great teacher, nothing more — is the one position the historical Jesus makes almost impossible to hold, because the teaching you admire and the claims you want to discard come from the same mouth, in the same breath, and cannot be cleanly separated.**
 
 ## The argument that will not leave you alone

@@ -11,8 +11,6 @@ seo_keywords: "the cross and resurrection meaning, why did Jesus die, the climax
 publish_at: null
 ---
 
-> [PERSONAL STORY — James to supply: a moment when the worst thing and the turning point were the same event — a loss, a diagnosis, a failure that, looking back, was the hinge on which a life changed direction. Drop it in after "the worst thing that ever happened was also the best" below.]
-
 Every long story has a hinge. There is a moment after which nothing can return to the way it was — the choice, the death, the betrayal, the revelation that splits the narrative into before and after. A good storyteller spends the whole first half preparing it and the whole second half unfolding it. You can usually feel it coming. The music changes. The light shifts. You know the turn is near.
 
 If the Bible is one story — and it is — then it has a hinge, and here is the first surprise. The hinge is not where you would put it. It is not the giving of the law on a flaming mountain. It is not the founding of a great kingdom or the building of a glorious temple. It is not even the moment God first comes down to a manger, as moving as that is. The hinge of the entire story is an execution. A man tortured to death on a Roman cross on a Friday afternoon outside Jerusalem, abandoned by nearly everyone, between two criminals, under a mocking sign — and then, on the third morning, a tomb found empty and the same man alive.

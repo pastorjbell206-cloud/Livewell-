@@ -11,8 +11,6 @@ meta_description: "Marriage drift ends more marriages than affairs. A pastor on 
 seo_keywords: "marriage drift, growing apart in marriage, marriage neglect, emotional distance in marriage, how marriages end, reconnecting with your spouse"
 ---
 
-> [PERSONAL STORY — James to supply: a true moment you recognized your own absence-with-a-clear-conscience — choosing the urgent over the present — or one you witnessed in ministry. Drop it in at "I need to be honest about my part" below. Pastoral observation is fine; do not invent a domestic scene.]
-
 Most marriages do not die from a wound. They die from a draft.
 
 We have the wrong picture of how it ends. We imagine the affair, the discovered text, the door slammed at one in the morning, the dramatic scene that splits a life into before and after. Those happen. But they are not how most marriages end, and they are usually not the disease. They are the fever that finally tells you the body was already sick. The thing that actually ends marriages is quieter, slower, and almost impossible to point to, because it never had a single day you could circle on a calendar.
@@ -44,8 +42,6 @@ Jesus said the thing the church has somehow never applied to marriage: that it i
 ## The drifter feels like a hard worker
 
 I need to be honest about my part, because drift is the one marital failure where no one is the villain, and that is exactly why it wins.
-
-> [PERSONAL STORY — see note above.]
 
 There is no moment I can point to where I chose distance from the people I love. There were only the moments where I chose the urgent over the present — the email over the eyes across the room, the productive evening over the unproductive conversation that was actually the marriage. I did not betray anyone. I was simply not there, repeatedly, with a clear conscience, because absence with a clear conscience is the most dangerous kind. The betrayer at least knows he has done something. The drifter feels like a hard worker.
 

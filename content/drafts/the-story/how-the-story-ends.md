@@ -11,8 +11,6 @@ seo_keywords: "how does the Bible end, new creation not heaven, do Christians go
 publish_at: null
 ---
 
-> [PERSONAL STORY — James to supply: a moment at a graveside, or comforting someone in grief, when the standard "they're in a better place" language felt thin — and what you found yourself wanting to say instead. Drop it in after "we have been telling the wrong ending" below.]
-
 Ask almost anyone — churchgoer or not — how the Bible ends, and you will get some version of the same answer. The good people die and go to heaven. The bad people go somewhere else. The earth, presumably, is left behind, a used-up stage struck once the play is over. Heaven is pictured as a destination above and away from here — clouds, harps, disembodied souls, an eternity of floating somewhere that is emphatically not this world. That is the ending most people carry in their heads, including most Christians. It is on the sympathy cards. It is in the funeral homilies. It is what we tell the children.
 
 It is also not how the Bible ends.

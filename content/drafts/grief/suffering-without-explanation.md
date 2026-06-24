@@ -11,8 +11,6 @@ meta_description: "Why does God allow suffering? Job refuses every explanation, 
 seo_keywords: "why does god allow suffering, suffering without explanation, book of job meaning, theodicy and grief, faith after losing someone, why do bad things happen, problem of evil, god allows suffering"
 ---
 
-> [PERSONAL STORY — James to supply, optional: a specific moment a grieving person was handed a "reason" that wounded them, or a graveside where he chose silence over explanation. Drop it in near "Job's friends did this" below.]
-
 The reasons start arriving before the casket is in the ground.
 
 Someone tells you it was God's plan. Someone tells you that God needed another angel, which is not even good theology, but they mean well and you nod. Someone tells you everything happens for a reason, and you can see in their face that they need this to be true more than you do — that they are not comforting you so much as steadying themselves against a world where a thing like this could happen to a person like you for no reason at all. Someone, eventually, tells you that God will use it. Maybe he will. But you notice that all of them, every one, has arrived with a reason. As if the unbearable thing about your loss were the absence of an explanation, and a good enough sentence might close the wound.

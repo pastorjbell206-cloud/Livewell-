@@ -15,8 +15,6 @@ A confident sentence shaped a lot of my early atheism, and it is one most people
 
 The man who led the project to sequence the human genome is a Christian. He came to faith, by his own account, as a scientist, reasoning his way there. That fact alone should make the clean story flinch.
 
-> [PERSONAL STORY — James to supply: the version of you that held the war between faith and science as obvious, settled, the kind of thing only the uneducated questioned — and what cracked it. Place it here, before the thesis.]
-
 **My argument is this, and I will give the conflict its strongest form before I dismantle it: the supposed war between faith and science is not a finding of science. It is a story with a traceable birth date, popularized for reasons that had little to do with evidence, and it obscures the fact that science grew up in the cradle of belief — and that some of its most serious practitioners still believe.**
 
 ## Where the war story actually came from

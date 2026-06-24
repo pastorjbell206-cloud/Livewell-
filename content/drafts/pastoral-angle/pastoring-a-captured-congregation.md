@@ -15,8 +15,6 @@ You can hear it in the prayer requests. Not the ones spoken aloud — those are 
 
 That is the situation, and pretending otherwise is the first failure. **Your most committed members are being discipled forty hours a week by a medium that knows their fears better than you do, and you get them for forty minutes on a Sunday — if the kickoff is late.** This is not a metaphor. It is an arithmetic problem, and the arithmetic is not on our side.
 
-> [PERSONAL STORY — James to supply: a specific moment in a hallway or a hospital room when you realized a longtime member's deepest convictions were being shaped somewhere other than the church. Keep it concrete; let it land before the analysis begins.]
-
 I am not writing this as a man above the problem. I have caught my own attention pulled the same direction, felt the same pull toward the screen that promises to tell me what is really going on. The capture I am describing is not a sin other people commit. It is a current we are all standing in, and the pastor who imagines himself dry is usually the one already soaked.
 
 ## The formation we are competing with is better than ours

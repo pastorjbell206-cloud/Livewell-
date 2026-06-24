@@ -43,8 +43,6 @@ And they watch what you do when you are wrong. This is the one that decides ever
 
 **The pastor's kid does not need a flawless father. The pastor's kid needs to watch his father receive the mercy his father keeps offering everyone else.**
 
-> [PERSONAL STORY — James to supply a true account of a specific moment with one of his sons where the gap between pulpit and home became visible, and what he did about it.]
-
 ## The cost nobody put in the job description
 
 There is a particular loneliness here, and it deserves naming, because shame thrives in the unnamed. The pastor is on display, so the family is on display, and there are few places where the strain can be set down. The man who counsels the whole town on their marriages has nowhere to take his own. The children sense the strain even when it is hidden, because children always sense the strain that is hidden — they just lose the words for it. Concealment does not protect them. Concealment only strips them of the ability to name what they are already feeling, which leaves them feeling it alone.

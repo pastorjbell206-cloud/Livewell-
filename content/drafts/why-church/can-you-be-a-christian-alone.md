@@ -12,8 +12,6 @@ meta_description: "Can you follow Jesus by yourself? The New Testament never ima
 publish_at: null
 ---
 
-> [PERSONAL STORY — James to supply: a season when you tried to carry your own faith privately — maybe early, maybe in a hard stretch of ministry — and discovered what it costs to be your own only witness. Place it after "the experiment has been run" below.]
-
 Try to find the solo Christian in the New Testament. Go looking. Search the letters and the gospels for the believer who follows Jesus privately, accountable to no one, gathered with no one, a faith of one. You will not find him. Not because the writers forbade him — they barely thought to forbid what they could not imagine. The category does not exist. There is no Greek word in the entire New Testament for a Christian who belongs to no church, for the same reason there is no word in an anatomy textbook for a hand that has decided it would rather not be attached to an arm.
 
 I want to make this argument gently, because the people most likely to be reading it have usually been burned by people who made it harshly. You have been told you *must* go to church in a tone that made church sound like a debt collector. Set that tone down. I am not here to collect. I am here to describe something you may not have been shown — that the loneliness you have felt in your private faith is not a personal failing, and not a sign you're doing it wrong. It is the predictable ache of a thing that was built for two or more, running on one.

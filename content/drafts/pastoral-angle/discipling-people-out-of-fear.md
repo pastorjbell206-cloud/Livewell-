@@ -15,8 +15,6 @@ The man across the desk is not angry, though it sounds like anger. Sit with him 
 
 This is the thing about political capture that we keep misdiagnosing. We treat it as an information problem — if I can just show him the better facts, the truer frame, the correct theology of government, he will come around. But capture is not finally an information problem. **It is a formation problem, and the formation runs on fear, and fear does not yield to better information any more than a drowning man yields to a lecture on swimming.** The question for the pastor is not how to correct the frightened person's conclusions. It is how to disciple the fear itself — how to form a person whose loves and reflexes have been so reshaped by a steady diet of dread that the dread now feels like discernment.
 
-> [PERSONAL STORY — James to supply: a conversation where you realized a member's politics was really a fear, and what it changed about how you pastored him. Let the fear be sympathetic; this is not a man to mock.]
-
 I do not exempt myself. I have felt the pull of the dread, the way it offers a counterfeit of vigilance, the way being afraid can masquerade as being awake. The pastor who imagines he is above the fear is usually just better at hiding it, including from himself.
 
 ## Scripture names fear as the enemy, not a neutral fact

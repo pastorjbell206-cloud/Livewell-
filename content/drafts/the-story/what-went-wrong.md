@@ -11,8 +11,6 @@ seo_keywords: "what went wrong with the world Bible, creation and fall, what is 
 publish_at: null
 ---
 
-> [PERSONAL STORY — James to supply: a small, specific moment when the gap between how something should be and how it actually is hit you hard — a hospital room, a courtroom, a kitchen table. Drop it in after "we cannot stop grading the world" below.]
-
 Read the news for ten minutes and you will not need convincing that something is wrong. The argument has never been about whether. The argument has always been about what — and that argument is the most important one a person ever has, because the diagnosis decides the cure. Tell me what you think is broken and I can predict almost everything else about how you will try to live.
 
 The diagnoses on offer are familiar. The world is wrong because we have not yet been educated enough, says one — give us another generation of schooling and reason will do its work. The world is wrong because of bad systems, says another — fix the economics, the politics, the structures, and the people inside them will come right. The world is wrong because of *them*, says a third, always the most popular — the other tribe, the other party, the other people, and if we could just defeat or remove them, the trouble would lift. Each of these has a piece of the truth. None of them can account for the strangest fact about human wrongness, which is that it follows us across every reform. We educate ourselves and invent more sophisticated cruelties. We fix the system and corrupt the new one. We defeat *them* and discover, with a sinking heart, that the line ran through us all along.

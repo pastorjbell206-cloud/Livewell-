@@ -11,8 +11,6 @@ seo_keywords: "Matthew 7 explained, two foundations parable, narrow gate meaning
 meta_description: "A pastor on the closing of the Sermon on the Mount — judging, the narrow gate, and the house on the rock — and why the real risk Jesus warns about is admiring his words without building a life on them."
 ---
 
-> [PERSONAL STORY — James to supply: a time you, or someone you watched closely, sincerely agreed with the truth and built nothing on it — a faith that was all assent and no foundation, until the storm came and showed what had actually been built. Place it after the second section.]
-
 There is a particular kind of person Jesus warns about at the end of the Sermon on the Mount, and it is not the person you would expect. It is not the open enemy. It is not the obvious hypocrite. It is the person who heard every word, agreed with all of it, found it beautiful and true and moving — and then went home and changed nothing. The Sermon's most chilling warning is not aimed at the people who reject Jesus. It is aimed at the people who admire him.
 
 That should land hard, because admiring Jesus is something almost everyone does. Skeptics admire him. People who have not been to church in decades admire him. The Sermon on the Mount itself is one of the most universally praised texts in human history — quoted, framed, taught in literature classes by people who would never call it Scripture. And Jesus, who knew exactly how admirable his words were, ends the whole sermon by saying that admiration is precisely the trap. The applause was never the point. The building was.

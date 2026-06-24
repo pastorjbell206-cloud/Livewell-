@@ -11,8 +11,6 @@ meta_description: "Why is marriage so hard? Because it shows you yourself. A pas
 seo_keywords: "why is marriage so hard, marriage reveals your character, marriage and self-knowledge, sanctification in marriage, christian marriage help, my marriage is exposing me, what marriage teaches you about yourself"
 ---
 
-> [PERSONAL STORY — James to supply a true account of a moment his spouse named something true about him that he did not want to hear. Drop it in at "Why the mirror feels like an attack" below.]
-
 You thought you were marrying a person. You were marrying a mirror. The face that looks back at you across the breakfast table, year after year, is not only hers. Somewhere in the third year, or the seventh, you start to see your own face in it — the impatience you were sure belonged to your father, the coldness you swore you would never carry, the small cruelties you save for the one person who cannot leave. Marriage does not create these things. It reveals them. And the revealing is the part nobody warned us about.
 
 If you have landed here because your marriage is harder than you were told it would be, because the person across from you keeps surfacing a version of you that you do not recognize and do not like, I want to say something before we go any further. The difficulty is not proof that you married the wrong person. The difficulty is the work the marriage was built to do. **Marriage reveals you before it repairs you, and the order is not cruelty. It is mercy.** You cannot be healed of what you will not see, and there is no closer place to be seen.
@@ -38,8 +36,6 @@ The man who believed he was generous discovers he is generous only when admired.
 When the mirror shows us something we hate, we rarely blame the glass for being honest. We blame the glass for existing. This is why so much marital cruelty is, at root, a refusal to see. Your spouse names something true about you, something small and accurate, and you respond as though attacked — because you were. The truth attacked you. But you cannot strike the truth, so you strike the one who carried it.
 
 I have done this. I want to be precise about that, because it is easy to write about marriage from the safe seat of the one who counsels and never the one who needs counsel. I have heard a true word about myself from across a kitchen and chosen, in the half-second I had, to defend the lie instead of receive the word. Every married person reaches that fork. Most of us, most of the time, defend the lie. It is faster. It costs nothing now. It costs everything later.
-
-> [PERSONAL STORY — James to supply a true account of a moment his spouse named something true about him that he did not want to hear, and what he did with it.]
 
 The cost is paid in the slow conversion of a person into an enemy. Once your spouse becomes the one who exposes you, you begin to manage them rather than love them. You learn which subjects to avoid. You build the marriage around the wound instead of through it. You develop, without ever deciding to, an entire private architecture devoted to never being seen again. And then one day you look up and realize you have been married for fifteen years to someone you have been hiding from for twelve. The hiding feels safe. It is the most dangerous thing in the house. **The opposite of love in a marriage is not anger. It is the decision to no longer be known.**
 

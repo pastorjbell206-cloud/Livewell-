@@ -15,8 +15,6 @@ There is a thing the church asks people to do that almost everyone finds repelle
 
 Every instinct we have runs the other direction. We are built to manage how we are seen, to keep the editing rights to our own story, to let people meet the version of us we have approved for release. Confession demands the opposite. It asks you to hand someone the unedited file. To most modern people this sounds not like freedom but like a security breach — a needless surrender of the one thing we have left, which is control over what others know.
 
-> [PERSONAL STORY — James to supply: a moment, as pastor or as a man, when something stayed in the dark too long and the saying of it out loud broke its grip — yours or someone else's. Place it here, near the top.]
-
 And yet the church has insisted on it for two thousand years, in forms ranging from the confessional booth to the prayer of confession the whole congregation says together to two friends telling each other the truth in a kitchen. **The reason is not that the church enjoys watching people grovel. The reason is that secrets do something to a person, and the only thing that breaks their power is to speak them out loud to someone who does not run.** Confession is not the price of forgiveness. It is the doorway out of hiding. And hiding, the faith has always taught, is where most of the dying happens.
 
 ## The thing secrets do

@@ -11,8 +11,6 @@ seo_keywords: "what does the resurrection mean, what changes if Jesus rose, resu
 meta_description: "If Jesus actually rose from the dead, what changes? A pastor walks a newcomer through the implications — for death, the body, and everyday life — apart from the historical case."
 ---
 
-> [PERSONAL STORY — James to supply: the moment the resurrection stopped being, for you, a doctrine to argue about and became a question about your own death and the deaths you have grieved. Drop it in after the second paragraph.]
-
 There is a question about the resurrection that gets all the attention. *Did it happen?* It deserves the attention; it is the right place to put your effort, and others have made the historical case more carefully than I could in an essay. But there is a second question that almost no one asks out loud, and it is the one I want to sit with here. Not *did it happen,* but: *if it did, what changes?*
 
 That second question turns out to be the more revealing one. Because a surprising number of people, including many who call themselves Christians, treat the resurrection as a happy ending tacked onto the real story — Jesus died for our sins, and then, as a kind of bonus, he came back to show it all worked out. A nice epilogue. The first Christians did not treat it that way at all. For them the resurrection was not the epilogue. It was the hinge on which the whole future of the world had just turned.

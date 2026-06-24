@@ -11,8 +11,6 @@ seo_keywords: "is God in control, divine providence, God's sovereignty and suffe
 meta_description: "If God is in control, why doesn't it feel like it? A pastor on providence and sovereignty without the glib answers — and what the doctrine actually does and does not claim."
 ---
 
-> [PERSONAL STORY — James to supply: a time the "God is in control" line was said to you, or by you, and rang hollow against what was actually happening. Drop it in after "I have heard that sentence land wrong."]
-
 Somebody says it at the funeral. *God is in control.* Somebody says it after the diagnosis, after the layoff, after the marriage finally comes apart in the kitchen at eleven at night. It is meant as comfort and it often lands as an insult, because the person hearing it is looking at a piece of reality that does not look controlled by anyone, least of all by a good God. The sentence and the situation will not sit in the same room. And so a lot of people file the doctrine of God's sovereignty under things Christians say that they do not really mean — a verbal tic for hard moments, a way of filling a silence that should have been left alone.
 
 I have heard that sentence land wrong. I have probably said it when I should have said nothing. And I came to faith late, out of unbelief, partly through wrestling with exactly this — because the version of "God is in control" I had been handed as a younger man was so glib, so untouched by how the world actually goes, that rejecting it felt like the only intellectually honest thing to do.

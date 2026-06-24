@@ -11,8 +11,6 @@ meta_description: "Lived experience vs Scripture: a pastor on how the church mad
 seo_keywords: "lived experience vs scripture, biblical authority, is the bible the final authority, authenticity vs authority, progressive Christianity, Charles Taylor age of authenticity, sola scriptura meaning, Bereans Acts 17:11, expressive individualism, Robert Bellah Sheilaism"
 ---
 
-> [PERSONAL STORY — James to supply a true account, if he wants one: a moment he caught himself reading a hard passage and quietly reassigning it to "their world" because it cut against something he had already decided. The essay holds without it. A true scene at the hinge would carry it.]
-
 Listen to how a believer talks now, and listen to how a believer talked a generation ago, and you will hear one word quietly replace another. The old sentence was *the Bible says.* The new sentence is *I feel like God is.* They sound like cousins. They are opposites. One puts the self under a word that stands over it. The other puts the word under a self that stands over it. We made the swap slowly, a phrase at a time, for reasons that looked like mercy — and when the question is whether the Bible is the final authority or whether my lived experience is, that one swap has decided more in the progressive church than any single doctrine ever did. It did not change what we believe so much as it changed who decides.
 
 We thought we were gaining freedom.

@@ -11,8 +11,6 @@ meta_description: "Why are people leaving the church? A pastor and former atheis
 seo_keywords: "why are people leaving the church, deconstruction, Constantine and Christianity, Christian nationalism, faith and power, why I left the church, was Jesus political, deconstructing faith"
 ---
 
-> [PERSONAL STORY — James to supply a true account of a moment he watched the bargain at work in his own ministry or context, and what it cost. Drop it in at the placeholder below.]
-
 People keep telling me they have lost their faith, and most of them have not.
 
 They have lost something. The losing is real and the grief is real and I would not minimize either for a moment. But when I sit long enough with the person across the table, what they describe leaving is almost never the God of the Gospels. It is a church fused to a political party. It is a faith that defended the powerful and policed the weak. It is a Christianity that looked, on close inspection, like an empire wearing a cross as a brooch. They are walking away from that, and they think they are walking away from Jesus, and the confusion is not their fault. The two have been welded together for so long that almost no one alive remembers them apart. The weld has a date, and once you know the date you start to see the seam. The year is 312.
@@ -44,8 +42,6 @@ Before 312 the church had no power and changed the world anyway. The early Chris
 They had no bargain. They had a tomb they swore was empty and a willingness to die for it, and that combination was the engine. **Constantine did not turn the engine on. He bolted it to a chariot and pointed it at his enemies**, and the engine has been misfiring in that chariot ever since, doing damage in the name of the one who built it to do the opposite. The power the church spent the next seventeen centuries accumulating did not make it more effective at what it had originally done. It made it worse at it. The church was never more world-altering than in the years it had nothing but love and a grave it could not explain.
 
 There is a hard lesson buried in that history, and it cuts against every instinct a frightened church has. The early Christians were not winning. By every metric a strategist would use, they were losing — outlawed, outnumbered, periodically slaughtered, with no institutions, no armies, no legal standing, no plan to acquire any. And they were transforming the moral imagination of the most powerful civilization on earth. The two facts sit together and refuse to be pried apart. The powerlessness was not an obstacle the love had to overcome. The powerlessness was the medium the love worked in, the thing that made the love legible as love rather than as a bid for control. When the bargain handed the church power, it did not hand it a better tool. It took away the only condition under which its witness had ever been believed. A nurse who dies in a plague she could have fled means something. A magistrate who enforces orthodoxy with the sword means something else entirely, and the something else is the very thing the watching world had no reason to trust.
-
-> [PERSONAL STORY — James to supply a true account of a moment he watched the bargain at work in his own ministry or context, and what it cost.]
 
 ## Jesus was offered this exact bargain, and refused it
 

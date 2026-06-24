@@ -12,8 +12,6 @@ meta_description: "Christians once prepared to die the way we prepare for a wedd
 publish_at: null
 ---
 
-> [PERSONAL STORY — James to supply: a deathbed you have stood beside as a pastor, or the death of someone who died well — what you saw, and what it taught you. Drop it in after "We have done something no previous generation managed."]
-
 Picture a bedroom in the fifteenth century. A man is dying — slowly, over days, surrounded by family, his children in the room, the priest nearby, neighbors coming and going. There is a small book by the bed, or its lessons are known by heart, instructing everyone present in what to do: the questions to ask, the prayers to pray, the temptations the dying man will face in his final hours and how to help him resist them. Death is happening in the middle of the house, in full view of the children, attended like a birth. The dying man has been preparing for this hour for years. He considers it the most important thing he will ever do.
 
 Now picture how most of us will actually die. In a hospital, or a facility, behind a curtain, attended by professionals who are strangers, our children kept at a careful distance, often unconscious or sedated past the point of being present to it. Most people in the developed world now die in institutions rather than at home. The dying have been moved out of the house and out of sight. We have, with the best of intentions, professionalized and hidden death so thoroughly that the average person reaches middle age having never once watched someone die. The thing every previous generation considered the central, defining event of a life has become the one event we arrange never to see.

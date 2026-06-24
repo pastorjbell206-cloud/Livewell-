@@ -11,8 +11,6 @@ meta_description: "Social justice and the gospel: a real biblical conviction can
 seo_keywords: "is social justice biblical, social justice and the gospel, justice without grace, social gospel Rauschenbusch, Christianity and justice, idolatry of a good cause, grace and justice, progressive Christianity, Reinhold Niebuhr sin, Robert Bellah expressive individualism"
 ---
 
-> [PERSONAL STORY — James to supply, optional: a specific moment you caught yourself praying the Pharisee's prayer about people in the other party — sure you were one of the good ones. Drop it in at "I have prayed like the wrong man" below.]
-
 Start where the conviction is strongest, because the version worth examining is the strong one. Is social justice biblical? It is not a smuggled cargo the left slipped into the gospel when no one was looking. It is the gospel's own freight. *Mishpat* and *tsedaqah* — justice and righteousness — are declared at Sinai, sung in the Psalms, shouted by Amos, and embodied by a Galilean who read Isaiah aloud in his hometown and said *today this is fulfilled* (Luke 4:18–21). The American church has cared too little about the poor, the wrongly imprisoned, the family at the border, the names we said too late and only after the cameras arrived. When historians weigh us they will not be kind, and they should not be. A Christianity with no passion for justice is not a more spiritual Christianity. It is a lie that has learned to fold its hands.
 
 Hold that. All of it is true, and I am not walking any of it back.

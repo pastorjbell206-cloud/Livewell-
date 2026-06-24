@@ -11,8 +11,6 @@ meta_description: "Advent means 'coming,' but the church already knows Christ ca
 seo_keywords: "what is Advent, meaning of Advent, why do Christians celebrate Advent, Advent explained, Advent waiting, two comings of Christ, Fleming Rutledge Advent, Advent for beginners, season of longing"
 ---
 
-> [PERSONAL STORY — James to supply: a season of your own life spent genuinely waiting — for a diagnosis, an answer, a return — where the waiting itself did something to you. Place it near the top, after the first section.]
-
 There is a particular kind of restlessness that arrives in December, and almost nobody names it correctly. We call it stress, or busyness, or the holidays, and we treat it as a logistics problem to be solved with better planning and more sleep. But underneath the errands there is something older and stranger moving — a low ache that the lights and the music are designed to cover and never quite do. A sense that we are waiting for something, and that whatever it is has not arrived, and that the wrapped boxes are not it.
 
 The church has a name for that ache, and a season built to hold it. The season is called Advent, and it does the one thing the surrounding culture cannot bear to do in December.

@@ -11,8 +11,6 @@ seo_keywords: "who did Jesus claim to be, did Jesus claim to be God, I am before
 meta_description: "Did Jesus actually claim to be God? A pastor walks a newcomer through what Jesus said in its original Jewish setting — and why it was so much stranger than we remember."
 ---
 
-> [PERSONAL STORY — James to supply: the version of Jesus you carried out of childhood and into your atheism — the harmless one — and the moment you first read the Gospels straight through and found someone you did not recognize. Drop it in after the second paragraph.]
-
 Ask ten people on a sidewalk who Jesus was and you will get a remarkably consistent answer. A good man. A wise teacher. Someone who told people to love each other and got killed by the authorities for being too kind. The answer is so common that it has stopped sounding like a claim and started sounding like a fact, the way the boiling point of water is a fact. Everyone agrees, so it must be settled.
 
 It is not settled, and the reason is simple. The man that answer describes is not the man in the documents. The Jesus of the sidewalk consensus is a figure we have assembled out of greeting cards and half-remembered Christmas pageants, and he has almost nothing to do with the person you meet when you actually read what the earliest sources say he said.

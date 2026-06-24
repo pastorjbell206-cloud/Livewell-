@@ -11,8 +11,6 @@ meta_description: "Why does God feel absent? A pastor on the dark night of the s
 seo_keywords: "dark night of the soul, why does god feel absent, spiritual dryness, john of the cross dark night, where is god when i pray, divine hiddenness, god feels far away, why can't I feel god anymore"
 ---
 
-> [PERSONAL STORY — James to supply a true account of his own dry season, how long it lasted, and what he kept doing when nothing came back. Drop it in at the placeholder below.]
-
 The prayers stopped landing somewhere, and you cannot say when.
 
 There was no decision, no scandal, no loss of belief you could point to and date. The faith is intact on paper. You would still sign the creed without flinching. But the warmth is gone, the sense of being heard is gone, the God who used to feel near at the altar or in the car or in the small hours has receded into a silence you cannot interrupt no matter how hard you reach. You read the chapter and nothing moves. You sing the song and feel nothing under it. And the worst part is not the silence itself. The worst part is the suspicion that the silence is your fault — that you have done something, that the warmth left because you failed, that God has withdrawn and is waiting for you to figure out why. That suspicion is the thing that sends people to the search bar at midnight, asking the only question that fits — why does God feel absent, why can't I feel him anymore.
@@ -32,8 +30,6 @@ That reframe alone has pulled people back from the cliff. But it asks something 
 And it is harder for us than it was for John, for a reason worth naming. We are the heirs of a culture that has made feeling the test of the real. We trust the gut over the vow, the experience over the promise, the felt over the stated, and we have imported all of it whole into our faith without noticing. So when the feeling stops, the modern believer concludes that the thing the feeling pointed to has stopped — that no warmth means no God, the way no signal means no station. Charles Taylor, in *A Secular Age* (2007), described the slow shift toward a self that locates meaning inside its own experience rather than receiving it from outside. The unintended cost of that shift is a faith that lives or dies by its own weather. Strip the consolation from a believer trained to read consolation as the presence of God, and you have not merely made him sad. You have, in his own mind, taken God away. The dark night feels like loss of faith precisely because we have confused the faith with its symptoms.
 
 This is the lie the dark night exists to break. Not gently. The breaking is the point. A faith that runs on feeling is a faith you control, because the feeling is yours and you can chase it, manufacture some of it, mistake the manufactured for the given. The dark night takes the controls out of your hands. It teaches you, by removing every sensation that ever reassured you, that God was never the warmth. The warmth was the wrapping. And you have to lose the wrapping to find out whether there was ever anything inside it, or whether you had been loving the wrapping all along.
-
-> [PERSONAL STORY — James to supply a true account of his own dry season, how long it lasted, and what he kept doing when nothing came back.]
 
 ## The psalm they do not put on coffee mugs
 

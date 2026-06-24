@@ -11,8 +11,6 @@ seo_keywords: "how can Jesus be God and man, fully God fully human, hypostatic u
 meta_description: "How can Jesus be both God and human at the same time? A pastor explains the ancient answer from Chalcedon for a newcomer — and why losing either half breaks everything."
 ---
 
-> [PERSONAL STORY — James to supply: the version of this you found absurd as a skeptic — God-as-a-baby filed next to other myths — and what shifted when you understood it was a claim being defended, at cost, against easier options. Drop it in after the third paragraph.]
-
 It is the line in the carols that you sing without hearing. *Veiled in flesh the Godhead see.* You can sing it every December for thirty years and never stop to register that it is making one of the strangest claims any religion has ever put forward: that the maker of the universe became a particular infant, in a particular town, with a birth weight and a blood type, who had to learn to walk.
 
 Stated plainly, it sounds like a category error. Like saying a circle is also a square, or that someone is both forty years old and three. God is, by definition, the one who is not limited — not bounded by a body, not subject to hunger, not somewhere rather than everywhere, not vulnerable to a Roman nail. A human being is exactly all of those limits. To say one person is both seems less like a mystery and more like a contradiction the church should have had the nerve to clean up.

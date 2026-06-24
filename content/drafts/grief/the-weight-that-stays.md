@@ -11,8 +11,6 @@ meta_description: "When grief doesn't lift, you have not failed. A pastor on lif
 seo_keywords: "when grief doesn't lift, grief that never goes away, lifelong grief, does grief ever end, faith after losing someone, grieving years later, lament for a son, second year of grief"
 ---
 
-> [PERSONAL STORY — James to supply a true account of a specific grief he has witnessed or carried that did not lift, told with the names and dignity of the person involved. The composite "widow at the second Christmas" below is a placeholder pattern and should be replaced with, or anchored to, a real account.]
-
 They told you it would lift. It did not lift.
 
 The literature of grief is full of stages, and the stages imply a destination. Denial, anger, bargaining, depression, acceptance — laid out like a hallway you walk down, with a door at the end marked *recovery*, on the other side of which the weight is gone and you are yourself again. People wait for that door. They count the months. At the one-year mark they expect to have arrived, because someone implied that the first year was the hard one and the second year was the better one — and when the second year turns out to weigh exactly what the first one did, they conclude that something has gone wrong with them. They grieved incorrectly. They failed the assignment. The grief that doesn't lift becomes, on top of everything else, a verdict against the griever.

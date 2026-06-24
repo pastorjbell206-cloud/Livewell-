@@ -12,8 +12,6 @@ meta_description: "Jesus talked about money more than almost anything. A pastor 
 publish_at: null
 ---
 
-> [PERSONAL STORY — James to supply: a concrete moment with money — a time you gave when it cost you, or a time you caught your own grip tightening around what you had. Drop it in after the third paragraph, before "Start with the scale of it."]
-
 Open your banking app right now and look at the number. You feel something. You don't have to name it, but it moves through you — relief, or anxiety, or a small flush of pride, or that low hum of not-enough that follows so many of us around like a draft under a door. Notice that the number produced a feeling at all. That is the first piece of evidence in this essay. Money is never just a number. It is a place where the heart is exposed, and we know it, which is exactly why we would rather not talk about it.
 
 We will talk about almost anything else first. Surveys of churchgoers turn up the same finding over and over: people would sooner have their pastor preach about sex, politics, or their own dying than about what they earn and spend. We treat a person's finances as the last truly private thing, more private than their marriage, more private than their faith. And the church has largely agreed to the arrangement. We tithe sermons on prayer and grace and miss the subject our own Lord could not stop returning to.

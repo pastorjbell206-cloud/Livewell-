@@ -11,8 +11,6 @@ meta_description: "Cheap grace, defined: Bonhoeffer's warning is aimed at the ri
 seo_keywords: "cheap grace meaning, Bonhoeffer cheap grace, what is cheap grace, costly grace, The Cost of Discipleship, forgiveness and accountability, Miroslav Volf Exclusion and Embrace, love your enemies, progressive Christianity, political forgiveness"
 ---
 
-> [PERSONAL STORY — James to supply, optional: a specific moment you caught yourself praying for one person's restoration while privately filing another under "beyond mercy" — a name you could not say *forgive him* over without your teeth grinding. Drop it in at "The hinge" below.]
-
 Ask most people who quote it what cheap grace means, and they will tell you it is what happens when a church makes salvation too easy. Forgiveness without repentance. The altar call with no aftermath. They are right, and they have aimed it at exactly one target.
 
 Dietrich Bonhoeffer wrote the phrase in 1937, in a Germany where most of the church had already made its peace with a monster. *Cheap grace is the deadly enemy of our church.* He put it in *The Cost of Discipleship* and defined it with a surgeon's precision: grace without discipleship, grace without the cross, grace without Jesus Christ living and incarnate. The preaching of forgiveness that requires no repentance. Grace, he said, that we bestow on ourselves. It cost the recipient nothing — and, in our telling, cost the giver nothing either, though in fact it cost God his Son.

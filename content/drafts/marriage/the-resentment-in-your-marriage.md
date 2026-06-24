@@ -11,8 +11,6 @@ meta_description: "Marriage and resentment: a pastor on why bitterness in marria
 seo_keywords: "marriage and resentment, bitterness in marriage, resentment in marriage, contempt in marriage, unmet needs in marriage, how to let go of resentment toward spouse"
 ---
 
-> [PERSONAL STORY — James to supply: a true moment you felt the edge of unspoken resentment in your own chest, or watched it harden in a couple you counseled, and recognized it as a bill that was never sent. Drop it in at "I have felt the edge of it" below. Pastoral observation is fine; do not invent a domestic scene.]
-
 The resentment came in so slowly you mistook it for fatigue.
 
 It does not arrive as anger. Anger is loud and brief and at least honest about itself. Resentment is quiet and patient, and it disguises itself as something more respectable — tiredness, busyness, the natural cooling of a long marriage. You find yourself keeping a ledger you never decided to keep. You notice who emptied the dishwasher and who did not, who remembered and who forgot, who got the easy evening and who got the hard one. You are not screaming. You are counting. And the counting feels like clarity, like you are finally seeing the marriage as it really is.
@@ -56,8 +54,6 @@ That is the cost of the silence. Not just unhappiness. A slow re-categorization 
 So the work is two-sided, and neither side gets to skip theirs.
 
 If you are the one resenting, the call is not to stop feeling it. The call is to dig it up and look at it before it hardens, to ask what unspoken need is underneath it, and then to do the frightening thing, which is to say it out loud while it is still a request and not yet a verdict. Resentment is forgiveness postponed and fairness withheld at the same time, and both of those are sins of silence. The antidote to silence is speech. Not the explosion. The sentence. *I have been carrying this, and I need you to see it.*
-
-> [PERSONAL STORY — see note above.]
 
 I have felt the edge of it, which is the only reason I can write about it honestly. The temptation, when you are the one who has given more, is to keep the ledger as proof — to let the bitterness function as evidence of your virtue and the other person's debt. That is the moment resentment stops being a symptom and becomes a sin. The difference between reading your resentment and indulging it is the difference between a doctor reading a symptom and a hypochondriac collecting them. One looks in order to act. The other looks in order to confirm a story already told.
 

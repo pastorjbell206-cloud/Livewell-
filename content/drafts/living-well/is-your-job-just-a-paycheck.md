@@ -12,8 +12,6 @@ meta_description: "Is your job just a paycheck? A pastor on the Christian doctri
 publish_at: null
 ---
 
-> [PERSONAL STORY — James to supply: a moment when your own work felt like nothing more than a transaction — a season in ministry or before it when the labor felt hollow and you wondered whether it counted for anything. Drop it in after the opening, before "Here is what I want to argue."]
-
 There is a particular look that crosses a person's face on a Sunday evening. You can see it in a grocery line, in a parking lot, across a dinner table. It is the look of someone doing the arithmetic of the week ahead — the meetings, the commute, the inbox already filling — and quietly bracing for it. We have a word for the feeling that produces that look. We call it Monday. And the fact that an entire culture organizes its dread around a single day of the week tells you something has gone wrong with our understanding of the thing that day represents.
 
 Most of us will spend something like ninety thousand hours of our lives at work. That is roughly a third of our waking adult existence, poured into a place many of us have decided, somewhere along the way, does not really matter. It pays for the parts of life that do matter — the weekend, the family, the vacation, the giving — but the work itself we have filed under necessary evil. A means. A paycheck. Something to be endured until the part that counts begins.

@@ -11,8 +11,6 @@ seo_keywords: "is God angry, the wrath of God explained, does God get angry, God
 meta_description: "Is God angry? Not in the way you fear. A pastor explains the wrath of God as settled opposition to evil — and why a God incapable of anger could never be called good."
 ---
 
-> [PERSONAL STORY — James to supply: a moment when you were certain God was furious with you — and the version of God that fear assumed. Drop it in near the top, after "I had a picture of God."]
-
 Ask a hundred people who have left church what made God seem unbelievable, and a surprising number will say the same thing. Not the science. Not the suffering, exactly. The temper. Somewhere along the way they were handed a God who was easily set off — a being who watched you closely, kept a tally, and waited for the moment your number came up. The thunderbolt was always loaded. You spent your childhood trying not to draw it. And one ordinary adult morning you woke up and decided you would rather have no God at all than that one.
 
 I understand the instinct, because for years I lived on the other side of it as an atheist, and the God I was rejecting was exactly this God — the cosmic short fuse, the divine sulk. I had a picture of God. It was a bad picture. And it would take me a long time to learn that the thing I had rejected was not God but a cartoon someone had drawn over Him.

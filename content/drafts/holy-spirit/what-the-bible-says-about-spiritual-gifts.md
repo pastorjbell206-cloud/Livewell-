@@ -11,8 +11,6 @@ seo_keywords: "spiritual gifts, charismata, cessationism vs continuationism, wha
 meta_description: "What does the Bible say about spiritual gifts? A pastor explains the charismata for a newcomer, presents the cessationist and continuationist views fairly, and points to what both sides agree on."
 ---
 
-> [PERSONAL STORY — James to supply: a moment you encountered the spiritual-gifts divide firsthand — a church, a service, a conversation — and what it taught you about how Christians can disagree without contempt. Drop it in after "two rooms that barely spoke."]
-
 For a lot of people new to the faith, the doctrine of the Spirit goes along smoothly — he is a person, he convicts and indwells and comforts — right up until somebody mentions spiritual gifts. Then the ground gets strange. Tongues. Prophecy. Healing. Words of knowledge. A whole vocabulary that sounds either thrilling or alarming depending on which church you walked into first, and a Christian world that appears to be divided into two rooms that barely spoke to each other about it.
 
 If that is where you are, I want to do two things in this essay. First, show you what the Bible plainly says about spiritual gifts, which is more than most people realize and less frightening than the arguments suggest. Second, give you an honest map of the disagreement — because the disagreement is real, it is held by serious and faithful people on both sides, and you deserve to understand it rather than be recruited into a camp before you know what the camps are.

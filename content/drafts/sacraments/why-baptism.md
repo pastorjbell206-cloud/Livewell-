@@ -15,8 +15,6 @@ A man stands waist-deep in a river, or a tank built into the front of a church, 
 
 If that is all you have ever seen of baptism, you would be forgiven for filing it somewhere between a graduation and a naming ceremony — a public marker that someone has decided to take their religion seriously, dressed up with water for the cameras. A nice moment. A family photo. A line crossed.
 
-> [PERSONAL STORY — James to supply: a specific baptism you performed or witnessed that refused to be sentimental — someone whose past made the water mean something, a person you didn't expect at the front. Place it here, near the top.]
-
 That reading is not wrong so much as far too small. **Baptism is not the church's way of marking a decision a person has made. It is the church's claim that something has been done *to* the person — that they have been buried and raised, joined to a death and a resurrection that were not their own, and handed a new belonging they did not earn.** The water is not decoration on a decision. In the oldest Christian understanding, the water is where the person goes under and a new person comes up. That is a stranger and heavier claim than a naming ceremony, and it is worth understanding before you decide what to make of it.
 
 ## The first surprise: it is about dying

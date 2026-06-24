@@ -11,8 +11,6 @@ seo_keywords: "what does the Holy Spirit do, work of the Holy Spirit, Holy Spiri
 meta_description: "What does the Holy Spirit actually do? A pastor walks a newcomer through the Spirit's real work — conviction, indwelling, power, comfort, change — and why so much of it goes unnoticed."
 ---
 
-> [PERSONAL STORY — James to supply: a moment you can name where, looking back, you suspect the Spirit was at work in you before you had any vocabulary for him — perhaps in the slow undoing of your atheism. Drop it in after "I had no name for it then."]
-
 Suppose you grant the first claim — that the Holy Spirit is a person and not a force, the third member of the Trinity rather than a divine atmosphere. A fair next question, and the one a newcomer asks almost immediately, is blunter than the doctrine usually expects: so what does he *do?* What is he *for?* It is one thing to be told the Spirit is real and personal and worthy of worship. It is another to be able to point at anything in your actual life and say, *that was him.*
 
 The honest answer is that the Spirit does a great deal, almost all of it without a name tag. He does not announce himself. He works the way light works — you do not see the light, you see what the light lets you see. So the question is not really *what does the Spirit do* but *where have I been failing to recognize him.*

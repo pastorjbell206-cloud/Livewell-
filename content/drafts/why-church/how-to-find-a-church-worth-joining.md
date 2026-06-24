@@ -12,8 +12,6 @@ meta_description: "How do you find a church worth joining — especially if the 
 publish_at: null
 ---
 
-> [PERSONAL STORY — James to supply: a moment you visited or watched a church and could tell, quickly, whether it was the real thing or a performance — what tipped you off. Place it after "you are not shopping for a product" below.]
-
 Maybe you have read the rest of these essays and something in you has loosened. You are not ready to promise anything. But you are willing to consider that the lonely faith you have been carrying was built for company, and that the building that hurt you was not the bride but the men who betrayed her, and that the thing church is actually for is something you may never have been offered. And now you are standing at the hardest practical question of all, the one that follows you out the door: *fine — but how do I find one that won't do it to me again?*
 
 I am not going to pretend that question has a clean answer. There is no inspection that guarantees you won't get hurt, because a church is people, and people will eventually fail you, the way your own family eventually fails you. But there is a difference between a church that will disappoint you the way every family disappoints, and a church that will wound you the way the last one did. The first is the cost of belonging anywhere. The second you can learn to spot and avoid.

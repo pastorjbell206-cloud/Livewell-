@@ -21,8 +21,6 @@ It is not the abstraction of sacrifice. It is the particular Tuesday your son's 
 
 I have watched this gap break good men. Not weak men. Good ones. Men who counted a cost, paid it faithfully, and then discovered a second invoice they were never shown — and concluded, in the silence, that something must be wrong with them. Nothing was wrong with them. They were handed an incomplete sentence and lived as though it were the whole truth.
 
-> [PERSONAL STORY — James to supply a true account]
-
 ## We ask men to build towers without running the arithmetic
 
 Jesus told us to count the cost. Luke fourteen. The man building a tower sits down first and reckons whether he can finish, lest he lay a foundation and stand mocked beside the half-built thing. We quote this verse to challenge casual disciples. We rarely apply it to the casualness with which we recruit pastors. We ask men to lay foundations without ever sitting them down to do the arithmetic. Then we are surprised at the unfinished towers all over the country.

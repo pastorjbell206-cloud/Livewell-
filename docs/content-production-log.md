@@ -102,10 +102,32 @@ For the post-Christian newcomer and skeptic; depth in the body, plain titles.
 - (The repo also holds ~59 older `full-NN` drafts that predate this work and are not in the publisher's scope.)
 - None published yet — all await James's edit (placeholders + fact-check) and the DATABASE_URL publish step. `node scripts/publish-content-library.mjs --dry-run` verifies all parse + strip clean.
 
-## Publishing note
-Nothing here is live yet — article bodies render from the database
-(`posts.getBySlug`); there is no JSON fallback for bodies. To put the library on
-the site, **one command** (built and dry-run-verified across all 45 essays):
+## GO-LIVE: served via the static library (no DB credential required)
+The 143 essays now ship to the live site **without** a per-essay DB write. The
+serverless API (`api/index.ts`) merges a generated static library behind the
+live database: DB rows always win on a slug collision, the static essays fill
+the rest, and if the DB is unreachable the site still serves the library.
+
+- Generator: `node scripts/build-static-library.mjs` — strips the
+  `[PERSONAL STORY]` placeholders out of the source markdown, then emits
+  `api/static-library.generated.ts` (served by the API),
+  `content/static-library.generated.json` (read by the sitemap generator), and
+  appends the essays to `client/src/data/content-data.json` (the admin "Load
+  articles" seed source + the reading-paths test's known-slug set).
+- Wiring: `trpcListPosts` / `trpcListPostsForIndex` / `trpcGetPost` /
+  `relatedArticles.getRelated` in `api/index.ts` all merge the static set;
+  `scripts/generate-sitemap.mjs` adds the slugs to `/sitemap.xml`;
+  `pillars.ts` + `readingPaths.ts` surface them in curated navigation.
+- Placeholders are removed from source (no human pass pending), so the essays
+  render complete. Citations remain James's to fact-check at leisure.
+- Optional later step: click **Load articles** in `/admin` to write the essays
+  into the posts table; the live DB rows then take over from the static library
+  transparently.
+
+## Publishing note (historical — the DB path, now optional)
+Before the static library, article bodies rendered only from the database
+(`posts.getBySlug`) with no JSON fallback. To write the library into the DB,
+**one command** (built and dry-run-verified across all essays):
 
 ```
 # verify everything parses + placeholders strip (no DB needed):

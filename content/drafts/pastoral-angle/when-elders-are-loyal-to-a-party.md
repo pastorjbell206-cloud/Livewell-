@@ -15,8 +15,6 @@ The capture you can survive is the one in the pews. The capture that can end a c
 
 This is the hardest of these essays to write, because it is about power and not just opinion, and because the men involved are usually not villains. They are often the most committed people in the church — the ones who are always there, who give, who have carried real weight for years. Their capture did not come from indifference. It came, frequently, from caring intensely about things that genuinely matter, and then letting the party become the frame through which that caring runs. **The most dangerous capture in a church is rarely held by careless men. It is held by faithful ones who have stopped being able to tell the difference between a conviction the Bible demands and a position their party requires.**
 
-> [PERSONAL STORY — James to supply: an elder meeting, or a conversation with a longtime leader, where you realized a party loyalty was overriding a pastoral one. Render the leader sympathetically; he is not a cartoon.]
-
 I have sat on the other side of this as well — have felt my own assessments running along partisan grooves before I had examined them, have caught myself in a leaders' meeting assuming a brother's spiritual seriousness from the way he votes. The capture is not a disease that infects elders and spares pastors. We are on the same board.
 
 ## The qualifications were always about character, never competence

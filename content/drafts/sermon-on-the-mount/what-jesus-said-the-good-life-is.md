@@ -11,8 +11,6 @@ seo_keywords: "Beatitudes meaning, Sermon on the Mount good life, what does bles
 meta_description: "A pastor walks a newcomer through the Beatitudes — and the strange claim at the center of them: that the good life shows up first among the people every other definition would have crossed off the list."
 ---
 
-> [PERSONAL STORY — James to supply: a moment you remember being handed somebody's picture of the good life — a magazine, a mentor, a billboard, a man you wanted to become — and how far it was from the people Jesus actually calls blessed. Drop it in after the second section.]
-
 Walk through any airport bookstore and you will find a hundred versions of the good life for sale. Be calmer. Be richer. Be fitter, freer, more in control of your mornings. The covers are different and the promise underneath them is the same: there is a kind of person who has arrived, and here is the path to becoming that person. Nobody has to teach us to want this. We come pre-wired to scan a room and ask, quietly, who here has the life I am supposed to want.
 
 So it matters enormously how Jesus chose to open the most influential sermon ever preached. He sat down on a hillside in Galilee, a crowd gathered, and the first words out of his mouth were not a command, not a warning, not a program. They were a list of the people who already have it. He looked at the crowd — the broke, the grieving, the pushed-around, the people who would never make a single cover — and he started naming them as the ones who are flourishing right now.

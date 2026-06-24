@@ -11,8 +11,6 @@ seo_keywords: "what do the miracles of Jesus mean, miracles signs of the kingdom
 meta_description: "What were Jesus' miracles actually for? Not magic tricks or proof — a pastor explains them as signs of a world being healed, for a newcomer reading the Gospels."
 ---
 
-> [PERSONAL STORY — James to supply: the miracles as the part you found easiest to dismiss when you were an atheist — the obvious place the legend showed its seams — and what changed when you noticed what the Gospels themselves say they were for. Drop it in after the second paragraph.]
-
 When most of us picture the miracles, we picture proof. Jesus needs to convince a doubting crowd that he speaks for God, so he does something no ordinary man can do — walks on the sea, multiplies the bread, calls a dead man out of a tomb — and the impossible act functions like a signature, a credential, a flash of divine ID that ends the argument. Believe me, the miracle says, because look what I can do.
 
 If that is what they were, they did a poor job. Plenty of people watched Jesus heal and walked away unmoved. Some watched him raise the dead and went straight to the authorities to have him killed. A miracle, it turns out, convinces almost no one who has already decided. As proof, the whole enterprise is strangely ineffective, and the Gospel writers seem entirely untroubled by this. They never present the miracles primarily as evidence. They are after something else.

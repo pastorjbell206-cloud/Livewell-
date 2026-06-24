@@ -12,8 +12,6 @@ meta_description: "We have a thousand contacts and almost no friends. A pastor o
 publish_at: null
 ---
 
-> [PERSONAL STORY — James to supply: a real friendship in your own life — the one who showed up, or the one you let drift, or the cost of having too few. Drop it in after "Ask a roomful of adults."]
-
 A question has been quietly circulating among researchers who study these things, and the answers have grown alarming enough to make headlines. The question is simple: how many close friends do you have — people you could call at two in the morning, people who know the unflattering version of your life and stay anyway? Across the last few decades the number has been falling, and not gently. A growing share of adults now report having no close friends at all. Zero. Not few. None. We have more ways to reach each other than any humans who ever lived, and we are lonelier than our grandparents were on farms ten miles from the nearest neighbor.
 
 Ask a roomful of adults — especially men — when they last made a genuinely new close friend, and watch the room get uncomfortable. For many it was college. For some it was high school. The honest ones will tell you they are running on friendships formed twenty years ago and slowly thinning, that the calendar fills with work and family and the maintenance of a life, and that friendship is the thing that gets fitted into the gaps, when there are gaps, which there increasingly are not. We do not decide to abandon our friends. We just stop having time, and then we stop having friends, and then one day we notice the silence.

@@ -21,8 +21,6 @@ So let us name what actually drains the tire, because the leadership writing kee
 
 It is rarely the workload alone. Pastors are not, by and large, allergic to hard work. They signed up for hard work. What breaks them is hard work that goes unwitnessed, unsupported, and unaccompanied. A man can carry an enormous load for decades if someone is carrying it beside him. The same load, carried alone, crushes him in five years. **It is not the weight. It is the solitude under the weight.**
 
-> [PERSONAL STORY — James to supply a true account]
-
 It is the slow accumulation of unhealed small things. The board meeting where he was treated like staff instead of shepherd. The salary conversation that left him ashamed of needing money. The criticism that traveled to his wife instead of to his face. The family that left for the church with the better children's program and made sure he knew why. None of these is fatal. All of them together — with no one to debrief them, with no day off to recover from them, with the next Sunday always six days out — is a thousand small cuts that no single bandage fits.
 
 This is why the question is so hard to answer honestly. Ask a pastor who quit why he left and he will often struggle to give you a reason that sounds proportionate to the decision. He will name the board meeting, and you will think, *men have survived worse boards.* He will name the family that left, and you will think, *families leave.* He is not lying and he is not weak. He is trying to explain a flat tire by pointing at one of the thousand small punctures, when the truth is that no single one of them did it and all of them together did. We keep asking for the reason. There was never a reason. There was an accumulation.

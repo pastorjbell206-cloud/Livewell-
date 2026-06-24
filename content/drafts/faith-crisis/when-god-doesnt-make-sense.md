@@ -11,8 +11,6 @@ meta_description: "When God doesn't make sense and the prayers don't add up, you
 seo_keywords: "why doesn't God make sense, problem of suffering, why does God allow suffering, Job and suffering, why didn't God answer my prayer, faith and doubt, hidden God, prayer doesn't work"
 ---
 
-> [PERSONAL STORY — James to supply a true account of a time the equation broke for him, and what he did with the wreckage. Drop it in at the placeholder below.]
-
 You did everything you were told and the math still did not work.
 
 You prayed and the marriage ended anyway. You tithed and the diagnosis came anyway. You raised the kids in the faith and one of them walked away anyway, and somewhere in the wreckage you ran the equation again — the one you were handed in your first year of believing. Faithfulness in, blessing out. It was supposed to balance. It did not balance. And the not-balancing produced a quieter terror than open atheism ever did, because the God you doubted was not a God you had rejected. He was a God who had stopped adding up, and that is the question that drives a believer to type the words into the dark — why doesn't God make sense, why did I do everything right and lose anyway.
@@ -36,8 +34,6 @@ And when God finally answers Job, out of the whirlwind, he does not answer the q
 He does not explain the suffering. He never mentions the wager in the prologue, never tells Job why, never produces the chart that would make the afternoon add up. He asks instead about the foundations of the earth, the storehouses of the snow, the wild donkey who scorns the city, the war horse who laughs at fear, the eagle who makes her nest on the crag. It looks like evasion. A frightened reader hears it as a divine non-answer, God changing the subject because he has no defense. It is not evasion. **It is God refusing to be reduced to a function that Job can compute.** And Job's response, when it comes, is not new information. It is relationship. *I had heard of you with the hearing of the ear, but now my eye sees you.* He did not get the answer. He got the Answerer. Those are not the same thing, and the entire book turns on the difference.
 
 This is harder for us than it was for Job, and Charles Taylor told us why. In *A Secular Age* (2007) he describes the buffered self — the modern person sealed inside his own mind, for whom meaning is something we manufacture rather than something we receive. We are the first people in history trained from birth to expect the cosmos to be transparent to reason. We assume that if a thing is real it can be explained, and that if it cannot be explained it is probably not real, or not worth our trust. So when God does not make sense, we hear it as evidence against him, a failure of the system to deliver the transparency the system owed us. Job did not have that reflex. He had the older reflex, the one we lost — the capacity to stay in the room with a God he could not parse, to remain in relationship with an unexplained Person rather than walking out in search of an explanation that fit. We have lost the reflex, and the losing of it is why our doubt cuts deeper and heals slower than his ever did.
-
-> [PERSONAL STORY — James to supply a true account of a time the equation broke for him, and what he did with the wreckage.]
 
 ## The chart is always cold
 

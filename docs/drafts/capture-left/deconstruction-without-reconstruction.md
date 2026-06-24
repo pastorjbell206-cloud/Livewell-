@@ -11,8 +11,6 @@ seo_keywords: "faith deconstruction, deconstructing my faith, deconstruction and
 meta_description: "Faith deconstruction is often the honest move. But deconstruction that never rebuilds is demolition — and the empty house never stays empty."
 ---
 
-> [PERSONAL STORY — James to supply, optional: a specific moment from the years he spent as an atheist when he caught himself certain he had only torn down and never built — the discovery that unbelief was its own roof he was living under. The essay works without it; a true scene near "I have held the hammer" below would carry it.]
-
 The people deconstructing their faith are usually right about why. That is not the line most pastors lead with, so I am leading with it. If you were handed a Christianity that was equal parts Jesus and a voting bloc, that policed your hemline and ignored your hunger, that protected the man behind the pulpit and disbelieved the woman in the pew, that taught you to fear questions because the questions had answers nobody could survive being asked — then the impulse to tear it down is not rebellion. It is closer to repentance. The online deconstruction wave did not invent the wound. It found a microphone for a pain the church had spent decades keeping quiet.
 
 So I am not going to defend the building that hurt you. I have torn one down myself. At nineteen I built an atheism brick by brick to keep God at arm's length, and I defended it the way you defend a house you are afraid to leave. Tearing it down was the most honest thing I had done up to then. I have held the hammer. I still do. This is not a warning from a man who never doubted. It is a report from one who doubted enough to learn that doubt, by itself, builds nothing.

@@ -15,8 +15,6 @@ If you walk into almost any Christian church on a Sunday and stay long enough, y
 
 To an outsider it can look like the leftover of something — a ritual whose original point has worn off, the way a handshake is the worn-down ghost of showing you held no weapon. You could be forgiven for thinking that. The whole thing is so small, so quiet, so quickly over.
 
-> [PERSONAL STORY — James to supply: a moment serving or receiving Communion when its weight landed unexpectedly — a person at the rail you didn't expect, a Sunday you came to the table empty. Drop it in here, near the top.]
-
 But before you decide it is empty, there is something worth knowing. Christians have spent two thousand years unable to agree on what this meal is. They have split churches over it. They have died for their answers to it. And across all of that disagreement, in every century and on every continent, they kept doing it. The argument was never about whether the meal mattered. The argument was always about *how much.* **Communion is the one act the whole divided church kept at its center, because the church has always believed that something happens here — not merely that something is remembered.** That last word is where the centuries of argument live, and it is worth your time, because the argument turns out to be more interesting, and more beautiful, than the shrug it usually gets.
 
 ## Where the meal comes from

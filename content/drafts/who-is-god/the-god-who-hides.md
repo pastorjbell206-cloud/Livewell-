@@ -11,8 +11,6 @@ seo_keywords: "why does God hide, divine hiddenness, where is God when I pray, G
 meta_description: "Why does God hide? A pastor on divine hiddenness, the felt silence of God, and why Scripture treats the absence not as a defeat for faith but as one of its deepest provinces."
 ---
 
-> [PERSONAL STORY — James to supply: a stretch when you prayed into what felt like a closed ceiling — and whether the silence pushed you out or pulled you deeper. Drop it in after "I have prayed into that silence."]
-
 There is a complaint older than the New Testament and as fresh as last night's prayer, and it is the most honest religious sentence ever written: *Why do you hide your face?* If God is real, and if He wants to be known — and Christianity insists on both — then the obvious thing for Him to do is be obvious. Show up. Settle it. Spare us the centuries of squinting. Instead, the most common experience of God reported by people who actually try to find Him is not encounter but silence. The prayers go up and nothing visible comes down. The ceiling holds. And for a great many people, that silence is not a minor inconvenience of faith. It is the reason they walked away from it, or never walked in.
 
 I take this seriously because I have stood on both sides of it. As an atheist I considered God's hiddenness a decisive point against Him — a perfect, all-loving being who craves relationship but cannot manage to show His face fails his own job description. Later, as someone who came to believe, I did not lose the silence. I have prayed into that silence, on ordinary mornings and on a few mornings that were not ordinary at all, and gotten exactly what the psalmist got: the held face, the unanswered air.

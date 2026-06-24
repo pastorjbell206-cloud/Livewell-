@@ -19,8 +19,6 @@ We have built that vocation around a single unexamined assumption. The pastor is
 
 I have sat with pastors who could not remember the last time someone called to ask how *they* were doing. Not how the building campaign was going. Not whether attendance had recovered. How they were. The question landed like a foreign language. One of them wept before he could answer it, and then apologized for weeping, which tells you everything about the shape of his last decade.
 
-> [PERSONAL STORY — James to supply a true account]
-
 ## The asymmetry is new, and it is killing people
 
 Eugene Peterson spent his life — five decades of it, from his ordination in 1962 to his death in 2018 — arguing that the pastoral vocation had been quietly traded for a managerial one. He was right, and the trade carried a cost no one printed on the receipt. The manager is surrounded by people who report to him and depend on him. The manager is also, by structure, alone. The men under him do not pastor him. They cannot. He is the one they come to when the thing breaks.

@@ -11,8 +11,6 @@ seo_keywords: "right side of history, progressive Christianity, is the right sid
 meta_description: "\"The right side of history\" promises everything the resurrection used to promise — without the God who judges. A pastor on the secular faith the church adopted by accident."
 ---
 
-> [PERSONAL STORY — James to supply, optional: a specific moment you caught yourself deciding something by "how this will age" instead of whether it was true. Drop it in at "The tribunal I had installed" below.]
-
 Say the phrase out loud and feel what it does. *The right side of history.* It doesn't argue. It announces. It is the rare sentence that ends a debate instead of starting one, and that is precisely why it has become the most quoted line in American moral life — said from podiums and pulpits, printed on corporate statements the week the wind shifts, posted by the millions every time a consensus turns. It feels less like an opinion than like a weather report on the future. And it feels, when you are the one saying it, *wonderful.*
 
 That is the first thing to admit, because I have felt it too. I have stood in a room certain that time itself was on my side, that to stand on the leading edge of the present was to stand near the heart of God. It is a very good feeling. Good feelings have always been the cheapest disguise sin puts on.

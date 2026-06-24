@@ -11,8 +11,6 @@ seo_keywords: "filled with the Holy Spirit, what does being filled with the Spir
 meta_description: "What does it mean to be filled with the Spirit? A pastor walks a newcomer through Ephesians 5:18, Pentecost, and the ordinary Spirit-led life — and why the command is for every Christian."
 ---
 
-> [PERSONAL STORY — James to supply: a season when you wondered whether you had ever really been "filled" because your experience looked so ordinary — and what you came to understand about where the Spirit was actually at work. Drop it in after "the question underneath the question."]
-
 There is a phrase that hangs over a lot of new Christians like a quiet accusation: *filled with the Spirit.* You hear it and a picture forms — somebody overcome with emotion, hands raised, a service that ran long because nobody wanted it to end, an experience with a clear before and after. And then you look at your own faith, which mostly feels like ordinary days strung together, and the question underneath the question surfaces: *have I ever actually been filled? Or did I miss the part where that was supposed to happen to me?*
 
 That anxiety is worth taking seriously, because it is built on a misreading, and the misreading steals something the Bible meant to give you. The command to be filled with the Spirit is real, and it is for every Christian — but it does not mean what the dramatic picture assumes. It is gentler, more continuous, and far more ordinary than the spectacle suggests, which is precisely why it is available to you on a Tuesday and not only on the rare mountaintop.

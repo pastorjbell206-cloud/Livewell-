@@ -11,8 +11,6 @@ meta_description: "How can God be three and one? The Trinity explained plainly f
 seo_keywords: "how can God be three and one, what is the Trinity, Trinity explained simply, is the Trinity in the Bible, Father Son and Holy Spirit explained, Council of Nicaea Trinity, does the Trinity make sense"
 ---
 
-> [PERSONAL STORY — James to supply: the version of the Trinity that was handed to you (or that you mocked as an atheist) as obvious nonsense — three equals one — and where you first realized the objection you'd been making was to a caricature. Drop it in after "the objection I used to make."]
-
 Let me start with the objection, because I used to make it, loudly, and I had not earned it.
 
 One God. Three persons. Father, Son, and Holy Spirit, each fully God, and yet not three Gods but one. To an outsider — and I was an outsider, an atheist who thought he had seen through the whole thing — this looks like a confession that the church cannot count. It looks like the moment where Christianity quietly admits that its central claim does not add up and asks you to stop asking. One plus one plus one is three. Everyone knows that. So either the math is wrong or the words mean nothing.

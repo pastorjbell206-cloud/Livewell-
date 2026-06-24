@@ -15,8 +15,6 @@ The most common objection I hear to the Bible is not really an objection to the 
 
 I lived inside that story for years. It was load-bearing for my unbelief. When it collapsed, it did not make me a Christian — but it took away an excuse I had been leaning on hard.
 
-> [PERSONAL STORY — James to supply: a moment when you confidently dismissed the Bible on grounds you had never actually investigated, and what it was like to discover the dismissal was inherited, not earned. Place it here, before the thesis.]
-
 **Here is what I will argue, and I will try to give the objections their full weight before I answer them: the case against trusting the Bible is built almost entirely on claims that the relevant scholarship — much of it produced by non-Christians and skeptics — does not support.** That does not settle whether the Bible is true. It clears away the underbrush so the real question can be asked.
 
 ## The telephone game is the wrong picture

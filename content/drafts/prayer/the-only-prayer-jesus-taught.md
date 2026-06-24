@@ -13,8 +13,6 @@ meta_description: "A pastor walks through the Lord's Prayer line by line — the
 
 A child can recite it before she understands a word of it, and that is both its glory and its danger. We hand the Lord's Prayer to the youngest among us, set it to a rhythm, repeat it until it runs on rails, and somewhere in the repetition it goes quiet — not because it stopped meaning anything, but because we stopped hearing it. The words that were meant to detonate became furniture. We can say all sixty of them while thinking about lunch.
 
-> [PERSONAL STORY — James to supply, optional: a moment you caught yourself reciting the Lord's Prayer on autopilot — perhaps at a funeral, a hospital bed, or a Sunday — and a single phrase suddenly landed as though you had never heard it. Drop it in here.]
-
 So I want to slow it down. Because here is a fact we slide past too easily. Jesus was asked, point-blank, how to pray, and he gave one answer. Not a seminar. Not a list of principles. One prayer (Matthew 6:9–13; Luke 11:2–4). When the disciples said *teach us to pray*, he did not hand them a method to generate their own words. He handed them words. The Son of God, given the chance to say everything about prayer, said sixty words and stopped. That restraint is itself the first lesson.
 
 And the claim I want to make is this. **The Lord's Prayer is not a prayer to recite. It is a prayer to be rebuilt by — a set of rails that, if you actually pray along them, drag your wants into a completely different order than the one you walked in with.**

@@ -11,8 +11,6 @@ seo_keywords: "what does holy mean, the holiness of God, God is holy meaning, ho
 meta_description: "What does it mean that God is holy? Not just very good — something far stranger. A pastor on otherness, the terror of Isaiah, and why holiness is the attribute we most misread."
 ---
 
-> [PERSONAL STORY — James to supply: a time you encountered something so far outside your categories it frightened you before it made sense — a place, a piece of music, a death. Drop it in after "We have all felt the edge of this."]
-
 The word has gone soft on us. "Holy" now means something close to "extra nice." A holy person is a kind person with good habits. A holy place is a quiet one with nice light. We have flattened the word into a moral compliment, the top rung of the ladder we are all climbing — God is good, and very good, and then so good He is holy, the best version of the things we already approve of. On that reading, holiness is just goodness with the volume up.
 
 That reading is wrong, and I think it is one of the reasons God has become hard for modern people to take seriously. We have made Him a slightly improved member of our own category — like us, only better. And a being who is merely a better version of us is not worth falling on your face for. He is worth admiring, maybe. Not worshiping.

@@ -11,8 +11,6 @@ seo_keywords: "Jesus on money and worry, Matthew 6:19-34 explained, do not be an
 meta_description: "A pastor walks through Jesus's teaching on treasure, worry, and two masters in Matthew 6 — why anxiety and money are the same conversation, and what it would mean to actually trust the Father."
 ---
 
-> [PERSONAL STORY — James to supply: a specific season of financial fear or a moment money owned more of you than you wanted to admit — a lean stretch, a hard decision, a night you could not sleep over a number. Place it after the first section, where the essay turns to the experience of worry.]
-
 Notice what Jesus does in the sixth chapter of Matthew. He starts talking about money — treasure, where you store it, what it does to you — and then, without changing the subject, he is suddenly talking about worry. Birds and lilies and the question of what you will eat and wear. Most of us read those as two topics. Jesus reads them as one. He puts money and anxiety in the same breath because he knows something we work hard to forget: the thing we trust to keep us safe is usually the thing keeping us awake.
 
 That is the quiet genius of this section of the Sermon. Jesus does not lecture us about greed from the outside, the way a preacher who has never been broke might. He goes underneath the behavior to the fear that drives it. He knows we do not love money for its own sake. We love what we think it gives us — a hedge against the dark, a wall between us and the day everything falls apart. And he knows that wall never actually holds, which is why the people with the highest walls are so often the most afraid.

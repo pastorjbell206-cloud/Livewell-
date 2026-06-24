@@ -12,8 +12,6 @@ meta_description: "If the church is the thing that wounded you, your anger is no
 publish_at: null
 ---
 
-> [PERSONAL STORY — James to supply: a moment you witnessed the church wound someone — a person who came to you, a situation you saw mishandled — and what it did to your understanding of what the institution is capable of. No private family scenes; pastoral observation only. Place it after "the wound is not your weakness" below.]
-
 If you are reading this, there is a real chance you have a specific face in your mind. A pastor. An elder. A small group leader. A whole congregation that closed around something it should have exposed. The wound has a name and a date and a smell, the particular smell of the room where it happened, and you have spent years being told — directly or by implication — that the wound is your problem. That you are bitter. That you need to forgive and move on. That you left because you couldn't handle accountability, or because you wanted to sin, or because you were never really one of us.
 
 I want to say something I am afraid the church has not said to you nearly enough, and I want to say it before I say anything else, because everything else depends on it being true.

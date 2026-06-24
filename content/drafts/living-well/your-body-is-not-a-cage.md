@@ -12,8 +12,6 @@ meta_description: "We treat the body as a cage the real self is trapped in. A pa
 publish_at: null
 ---
 
-> [PERSONAL STORY — James to supply: a moment your own body asserted itself against your plans — an injury, an illness, exhaustion, aging — and what it taught you about being a creature and not a ghost. Drop it in after "We are the first people in history."]
-
 Listen to how we talk about our bodies now and you will hear a strange thing, repeated so often we no longer notice it. We say the soul is *trapped in* a body. We say we feel *like ourselves* on a good day, as if there were a self underneath the tired flesh waiting to get out. We say a person *has* a body the way they have a car, and we speak of upgrading it, hacking it, optimizing it, overriding its signals, and one day, the more ambitious among us hope, uploading the self off of it entirely and into something that does not age. The body, in all this talk, is equipment. The real you is the thing inside, looking out through the eyes as through a windshield.
 
 We are the first people in history rich and medicated enough to half-believe we could pull it off — to live mostly in our heads, treat our bodies as inconvenient hardware, and feel faintly betrayed every time the hardware gets sick or tired or old. We have screens that let the mind roam anywhere while the body sits forgotten in a chair. We have a wellness industry built on the premise that the body is a problem to be managed by the superior, governing self. And underneath it all runs an assumption so deep we mistake it for common sense: that you are essentially a mind, a will, a spirit — and the body is the cage you happen to be doing your sentence in.

@@ -15,8 +15,6 @@ I will not start this one by being clever, because the subject does not allow it
 
 So I am going to take it at full strength before I say anything in reply, and I am not going to pretend my reply dissolves it.
 
-> [PERSONAL STORY — James to supply: the suffering — yours or witnessed up close — that made this question stop being abstract for you, the moment the problem of evil went from an argument you could win to a wound you could not. Place it here, before the thesis.]
-
 **My claim is deliberately modest, because anything less than modest here is a lie: the problem of suffering does not disprove God, but it does not need to be solved to be survived — and the alternative, a universe in which the suffering means nothing at all, is harder to live in than skeptics let on.** I am not going to tie a bow on this. There is no bow.
 
 ## Let the strongest version stand

@@ -11,8 +11,6 @@ meta_description: "Why do Christians recite the Apostles' and Nicene Creeds — 
 seo_keywords: "why do Christians recite creeds, what is the Apostles Creed, what is the Nicene Creed, are creeds biblical, why use a creed instead of just the Bible, history of the Nicene Creed, what do Christians believe"
 ---
 
-> [PERSONAL STORY — James to supply: a moment you first heard a room of people recite the creed together — at a funeral, a baptism, a service in a tradition not your own — and what it did to you, coming from where you came from. Drop it in after "the first time I heard it.")
-
 Picture the strangest thing a modern person can imagine doing in public. A few hundred people stand up in a room at the same moment. They do not improvise. They do not share what is on their hearts. They open their mouths and say, in one voice, the identical words that were said in that same order by people who have been dead for sixteen centuries — people who spoke Greek, who never saw a printed book, who would not have recognized a single object in the room they are now being quoted in. *We believe in one God, the Father almighty, maker of heaven and earth.*
 
 If you did not grow up with it, this should look bizarre. It looked bizarre to me. I came to faith out of atheism, and the first instinct of a convert from unbelief is suspicion of anything that smells like a script. I had spent years assuming that religion was mostly people repeating things they had stopped thinking about. So the creed was the last thing I expected to need, and it turned out to be one of the first things I could not do without.

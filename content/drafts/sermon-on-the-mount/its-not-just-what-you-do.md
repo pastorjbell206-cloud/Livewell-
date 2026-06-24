@@ -11,8 +11,6 @@ seo_keywords: "Matthew 5 anger lust, Jesus on the heart, you have heard it said 
 meta_description: "A pastor on the part of the Sermon on the Mount that feels like an attack — Jesus tracing anger, contempt, and lust back to their root — and why moving the line to the heart is mercy, not cruelty."
 ---
 
-> [PERSONAL STORY — James to supply: a time you kept the rule on the outside while something rotted underneath — a relationship you stayed technically clean in while writing someone off in your head, a marriage moment, anything where the behavior was fine and the heart was not. Place it after the first section.]
-
 Most of us run a quiet scoreboard. We do not say it out loud, but it is always running. Have I cheated anyone lately. Have I broken the big laws. Have I done anything that would land me in real trouble. And for most ordinary people the scoreboard reads pretty well. No bodies in the basement. No affairs. We pay our taxes, we hold our marriages together, we keep our hands more or less clean. By the standard we have set, we are decent people having a decent run.
 
 Then you come to the middle of Matthew 5, and Jesus walks straight up to the scoreboard and turns it off.

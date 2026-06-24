@@ -12,8 +12,6 @@ meta_description: "What is church actually for? Not a religious service to consu
 publish_at: null
 ---
 
-> [PERSONAL STORY — James to supply: a moment you watched a church *be* the church — bear weight, carry someone, become the answer to a prayer — in a way no program or service could have manufactured. Place it after "you cannot consume a family" below.]
-
 Ask most Americans, churched or not, what church is *for*, and you will get a version of the same answer. It is where you go to worship. It is where you hear teaching. It is where you get fed, encouraged, recharged for the week. Even people who love their church usually describe it this way — as a place you go to receive a thing. And if that is what church is, then leaving it is the most reasonable decision in the world the moment the thing it provides drops in quality, becomes available elsewhere, or gets ruined by the people running it. You don't keep going to a restaurant after the chef leaves and the food turns. Why would you keep attending a service that has stopped serving you?
 
 The logic is airtight. It is also built on a definition of church that the New Testament never once uses.

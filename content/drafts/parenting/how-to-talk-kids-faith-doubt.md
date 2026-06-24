@@ -47,8 +47,6 @@ Consider where certainty even comes from in a child. For the first years, it com
 
 So the question was never whether you could hand down certainty. You cannot. The borrowed kind always expires, and the manufactured kind expires faster, because the child can feel the manufacturing the whole time. The real question is whether, when the borrowed certainty runs out — and it will — your child has watched a real adult hold a real faith through real doubt, and so has some working idea of how the thing is actually done. **You are not the source of your child's faith. You are the demonstration of how a grown person carries one.** That is a smaller job than you have been carrying, and a truer one.
 
-> [PERSONAL STORY — James to supply a true account of a real question one of his sons asked about faith, and how he answered without faking certainty.]
-
 ## What kind of doubt you are carrying
 
 Not all doubt is the same, and the kind you are carrying changes what you owe your child. There is the doubt of the worn-out believer — the dark stretch where God feels absent, where prayer feels like talking to the ceiling, where you still believe in your bones but cannot currently feel any of it. That is the doubt of the Psalms, the doubt of nearly every saint who left a record, and it is safe to bring to the dinner table in age-appropriate honesty, because it is faith in its winter rather than faith in its grave. Your child can watch you walk through that and learn something they will need.

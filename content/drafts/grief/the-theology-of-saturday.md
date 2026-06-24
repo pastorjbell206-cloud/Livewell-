@@ -11,8 +11,6 @@ meta_description: "Holy Saturday meaning for the grieving: the day after God die
 seo_keywords: "holy saturday meaning, theology of holy saturday, where is god in grief, waiting on god in suffering, lamentations meaning, faith after losing someone, what is holy saturday, god feels absent"
 ---
 
-> [PERSONAL STORY — James to supply, optional: a specific account of sitting with someone in the long middle of grief, on their "Saturday." Drop it in at "To sit with someone on their Saturday" below.]
-
 We are very good at Friday and Sunday. We have almost nothing for Saturday.
 
 Walk into almost any church and you will find a theology of the cross. We can preach it. We have the atonement worked out in five competing models, and we can argue them at conferences over coffee. Walk into the same church on Easter and you will find a theology of the resurrection, with trumpets, with lilies, with a sanctuary so full the ushers bring out folding chairs. The two great days of the Christian story are covered. We have books on them. We have hymns for them. We have built our whole emotional architecture on the pivot from one to the other — the Friday we mourn briefly and the Sunday we celebrate loudly.

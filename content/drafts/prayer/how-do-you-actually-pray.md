@@ -13,8 +13,6 @@ meta_description: "A working pastor on the plain beginner's question — how do 
 
 There is a particular silence that falls in a hospital room when someone finally says, *I think we should pray*, and nobody knows who goes first. I have stood in that silence more times than I can count. A family that would speak fluently about anything else — the surgery, the insurance, the drive home — goes mute the moment the conversation turns vertical. They want to pray. They have wanted to pray for years. And when the moment arrives they discover they have no idea how the words are supposed to leave the body.
 
-> [PERSONAL STORY — James to supply, optional: a specific moment, ideally early in ministry, when someone asked you point-blank how to pray and you realized your own answer was a technique rather than a relationship. Drop it in here.]
-
 If that is you, I want to tell you something before anything else. You are not behind. You are not failing a test that other Christians passed quietly in some room you missed. The disciples lived with Jesus, watched him heal, watched him still a storm, and the one thing they asked him to teach them was not how to preach or how to perform a miracle. It was this. *Lord, teach us to pray* (Luke 11:1). The men closest to the praying life of God in human form looked at it and concluded they did not know how. So the question you are embarrassed to ask is the same question the first disciples asked out loud, to his face.
 
 Here is what I want to give you, and it will cost you the comfort of a formula. **Prayer is not a technique you master. It is a conversation you enter with Someone who has been speaking first the entire time, and learning to pray is mostly learning to stop performing long enough to answer.**

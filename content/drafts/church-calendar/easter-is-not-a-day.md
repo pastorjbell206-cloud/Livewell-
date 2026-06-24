@@ -11,8 +11,6 @@ meta_description: "Easter is not a day; it is a season of fifty days called East
 seo_keywords: "Easter is a season, Eastertide, what is Eastertide, the fifty days of Easter, Easter season explained, resurrection meaning, N.T. Wright Surprised by Hope, why is Easter important, Pentecost, Easter for beginners"
 ---
 
-> [PERSONAL STORY — James to supply: a moment the resurrection stopped being a doctrine you affirmed and became something that changed how you saw an ordinary day. Place it near the top, after the first section.]
-
 Picture a typical Easter. The lilies appear at the front of the church, the building is fuller than it has been since Christmas, there is a sunrise service for the devoted and a late service for everyone else, and by early afternoon the good clothes are off and the ham is on the table and the children are hunting plastic eggs in the yard. By Monday it is over. The lilies will be dead by Wednesday. The decorations come down. The world, and the church with it, moves on to whatever is next.
 
 This is how nearly everyone experiences Easter — as a single, bright, slightly exhausting Sunday, the spring counterpart to Christmas morning. And it is, when you stand back and look at it, one of the strangest things the modern church has done to itself.

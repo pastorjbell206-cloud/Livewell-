@@ -11,8 +11,6 @@ meta_description: "Why does God feel like a threat? A pastor on how fear quietly
 seo_keywords: "fear and faith, why am I afraid of God, anxiety and faith, fear of God meaning, perfect love casts out fear, is my faith real, do not be afraid Bible, scrupulosity and faith"
 ---
 
-> [PERSONAL STORY — James to supply a true account of a season when fear shaped what he believed about God, and what broke it. Drop it in at the placeholder below.]
-
 The first thing fear does is dress itself as discernment.
 
 It tells you the worry is wisdom. It tells you the dread is just spiritual seriousness, that the knot in your stomach at three in the morning is a kind of vigilance God requires of the faithful. So you pray harder, and the praying becomes a way of managing the panic, and somewhere in there the God you are praying to starts to look like the thing you are afraid of. You did not decide this. No one decides this. **Fear rewrites your theology while you sleep, and you wake up believing in a God you would never have chosen on a clear morning.**
@@ -50,8 +48,6 @@ You can test your theology against this, and the test is brutally simple. Does y
 *Perfect love casts out fear, because fear has to do with punishment.* John writes it plainly in his first letter, and we read it as a greeting card, and we miss the surgery in it.
 
 Look at the clause we skip. Fear *has to do with punishment.* John is not being sentimental; he is naming a mechanism. Fear is what runs the soul that expects to be punished, and a soul that expects punishment will build a punishing God to match, because the architecture of the inner life always projects itself onto the ceiling. We do not see God as he is. **We see God as we are braced for him to be.** And the bracing is the theology. The bracing is what we defend on Sunday, pass to our children at the dinner table, and mistake for orthodoxy for the rest of our lives. The frightened man does not have wrong information about God. He has a wrong posture toward God, and the posture generates the information.
-
-> [PERSONAL STORY — James to supply a true account of a season when fear shaped what he believed about God, and what broke it.]
 
 Walter Brueggemann spent a career insisting that the Psalms refuse to lie about fear, and that the refusal is the recovery. In *The Message of the Psalms* (1984) he traced the movement from orientation through disorientation to a new orientation, and he warned against the thing the frightened church does instinctively — skipping the middle. We want to jump from the settled psalm to the praising psalm without passing through the terrified one, and the skipping is exactly what keeps the fear in charge underground, unspoken, running the show from a basement no one will enter. You cannot cast out what you will not name. The Psalter names it constantly. *My heart is in anguish within me, the terrors of death have fallen upon me.* That is Psalm 55, and it is not weak faith. It is faith dragging the fear into the light where it can finally be seen for what it is — a feeling and not a fact, a weather system and not the face of God. A church that cannot pray the frightened Psalms out loud will preach a frightened God by accident, every single time, because the fear it would not speak does not leave. It just changes pulpits.
 

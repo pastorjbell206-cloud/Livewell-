@@ -11,8 +11,6 @@ seo_keywords: "is the Bible one story, Bible as a story not a rulebook, biblical
 publish_at: null
 ---
 
-> [PERSONAL STORY — James to supply: a moment when you, or someone you were talking to, treated the Bible as a rulebook or a quote bank — and the moment it cracked open as a single story instead. Drop it in after "the right book the wrong way" below.]
-
 Picture someone who has never read it sitting down with a Bible for the first time. They have heard it is important. They have been told it changed history. So they open it, and they meet a list of begats, a flood, a tent full of instructions about goat blood, a king who sleeps with another man's wife, a poem about a lover's neck like a tower, four overlapping accounts of the same three years, and a closing book of beasts and bowls and a city made of gold. They close it more confused than when they began. And they conclude, reasonably, that the Bible is a heap — a thousand-page filing cabinet with the drawers pulled out.
 
 That reader is not stupid. That reader is reading the right book the wrong way.

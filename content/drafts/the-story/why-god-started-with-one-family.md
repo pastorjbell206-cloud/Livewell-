@@ -11,8 +11,6 @@ seo_keywords: "why did God choose Abraham, why God chose Israel, biblical covena
 publish_at: null
 ---
 
-> [PERSONAL STORY — James to supply: a moment you experienced or witnessed being chosen for something that was clearly not about you — picked for a task, a role, a responsibility that was meant to flow through you to others. Drop it in after "chosen for the sake of someone else" below.]
-
 There is a question that quietly bothers honest readers of the Bible, and it surfaces somewhere around the twelfth chapter of Genesis. The first eleven chapters are about everything — the cosmos, the human race, the whole groaning world. And then, abruptly, the camera stops sweeping and zooms all the way in. It lands on one man. An old, childless herdsman in the Bronze Age Near East, somewhere around the region of Ur, with a barren wife and no particular distinction the text bothers to mention. And from that chapter to nearly the end of the book, the story is about him and his descendants — one family, then one tribe, then one small, frequently humiliated nation pressed between empires.
 
 The question is obvious and worth asking out loud. If God meant to rescue the whole world, why spend most of the book on one family? Why the narrowing? It looks, on its face, like favoritism — like a God who loves everyone in theory and one ethnic group in practice. A great many people have walked away from the Bible at exactly this point, offended by what they took to be tribalism with a divine warrant.

@@ -11,8 +11,6 @@ seo_keywords: "how do you actually change, fruit of the Spirit, transformation v
 meta_description: "Why does willpower keep failing? A pastor walks a newcomer through the fruit of the Spirit and the Bible's account of real change — grown from the inside, not forced from the outside."
 ---
 
-> [PERSONAL STORY — James to supply: a specific habit or pattern you tried to break by sheer effort and could not, and the difference you noticed when change finally came by a different route. Drop it in after "the wall every honest person hits."]
-
 Ask anyone who has seriously tried to become a better person and they will tell you the same thing, eventually, if they are honest. Willpower works for a while, and then it doesn't. You resolve. You white-knuckle it. You make the chart, set the alarm, tell a friend to keep you accountable, and for a few weeks the new self holds. Then a hard day comes, or three of them in a row, and the old self walks back in like it owns the place — because, it turns out, it does. That is the wall every honest person hits. We are far better at wanting to change than at changing.
 
 The Christian newcomer often assumes the faith is just a religious version of the same machine: try harder, but with God watching and Bible verses for fuel. If that were true, it would fail for the same reason every self-improvement scheme fails. But the Bible's account of how a person actually changes is not a more intense version of willpower. It is a different mechanism entirely, and once you see it, the failure of your effort starts to make sense — and stops being the end of the story.

@@ -11,8 +11,6 @@ meta_description: "Is it ok to be angry at God after a loss? The Psalms are full
 seo_keywords: "is it ok to be angry at god, anger at god after death, lament psalms meaning, psalm 13, can you be angry with god, faith after losing someone, grief and faith, imprecatory psalms"
 ---
 
-> [PERSONAL STORY — James to supply, optional: a moment witnessing someone's honest rage at God in grief, or his own. Drop it in near "I have sat with people whose anger at God was still raw" below.]
-
 You are angry at God, and you have been told to stop.
 
 Maybe not in those words. The church rarely says it that bluntly. It says it sideways — *be careful with that; you don't want to put God in the dock; who are you, O man, to answer back to God.* It says it with a verse fired like a warning shot. And the grieving person, already carrying the loss, now carries a second thing: the suspicion that the rage rising in their chest is itself a sin, a failure of faith, evidence that they were never as devoted as they thought. So they swallow it. They go quiet. They say the right things at the funeral, and then they stop talking to God altogether — because the only thing they have to say to him is the one thing they have been told they are not allowed to say.

@@ -11,8 +11,6 @@ meta_description: "Proof-texting lets both sides win while the Bible loses. A pa
 seo_keywords: "what is proof-texting, proof-texting examples, how to read the Bible in context, verse mining, Bible verses out of context, Fee and Stuart How to Read the Bible for All Its Worth, reading Scripture in context"
 ---
 
-> [PERSONAL STORY — James to supply: a debate — pastoral, online, or family — where two people lobbed verses at each other and you watched the actual Bible vanish between them. Or a time you yourself reached for a verse as a weapon before you had read it. Drop it in near "The trick that feels like reverence" below.]
-
 There is a verse for everything, which is exactly the problem. Wars have been defended from the same book that funded the peace movements. Slaveholders preached from it and abolitionists preached from it, and both came armed with chapter and verse, and both were certain the text was on their side. The Bible is the most-quoted book in American public life and one of the least-read, and those two facts are not in tension. They cause each other. **Proof-texting is the method by which both sides of every fight can claim Scripture, and the only casualty is Scripture itself.**
 
 I want to be precise about what proof-texting is, because almost everyone does it and almost no one thinks they do. It is the practice of treating verses as detachable units of authority — lifting a sentence out of its paragraph, its book, its testament, its story, and deploying it as a settled ruling on a question it may never have been asked. The verse becomes a coin. You spend it. And because the Bible is long and human situations are many, there is nearly always a coin in the drawer that pays for what you already wanted to buy.

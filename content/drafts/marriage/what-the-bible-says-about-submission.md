@@ -11,8 +11,6 @@ meta_description: "What the Bible says about submission in marriage: a pastor re
 seo_keywords: "what the bible says about submission, biblical submission in marriage, Ephesians 5 submission, mutual submission, wives submit to your husbands meaning, does the bible say women must submit"
 ---
 
-> [PERSONAL STORY — James to supply: a true moment, your own or pastoral, when you watched this text used as a weapon, or caught yourself reading it for your own comfort. Drop it in at "I have to name my own complicity" below. Pastoral observation is fine; do not invent a domestic scene.]
-
 The word has been used to cover for so much that it can barely be heard.
 
 Submission. Say it in a room of Christians and watch the faces close. Some brace for an argument they have had too many times. Some go quiet because the word was used on them, or by them, in ways they have not made peace with. A few men sit a little taller, because they have been taught that this verse is the one that finally puts them in charge. The text has been bent into a club, and the people most damaged by the swinging are usually the ones told it was for their good.
@@ -58,8 +56,6 @@ It helps to remember what reverence the passage actually appeals to. Both the co
 The objection comes fast here, and it deserves an answer rather than a dodge. If headship means dying and submission means a gift freely given inside mutual reverence, has the structure not simply dissolved into a slogan that means whatever the reader wants.
 
 No. The structure remains; Paul did not erase it. What he did was fill that order with a content so costly that it can no longer serve the purpose orders usually serve — which is to secure the comfort of whoever sits at the top. An order that requires the one in authority to be the first crucified is not a ladder. It is a stretcher. The structure stands, but it has been turned to face the opposite direction, toward sacrifice rather than privilege, and a man who climbs it expecting to be served will find he has volunteered to be spent.
-
-> [PERSONAL STORY — see note above.]
 
 I have to name my own complicity here, because men in ministry have done enormous damage with this text and I will not pretend I have always read it well. It is convenient to be the head when headship means deciding. It is far less convenient when headship means you are the one called to absorb the cost, to lay yourself down first, to love a person the way a dying man loves the world he is leaving. The version of submission that asks everything of a wife and little of a husband is not the biblical version. It is the pagan version with a verse stapled to it. And we have preached the pagan version in churches for generations and called it God's design.
 

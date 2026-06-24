@@ -43,8 +43,6 @@ So lower it. Read less, talk more. Read four verses and ask a real question — 
 
 Some nights it will be two minutes at the foot of a bed, and a whispered prayer, and nothing else. That counts. That is Deuteronomy 6 — *when you lie down*. The goal was never the production. The goal was the saturation, and saturation is mostly made of small ordinary moments that do not feel like anything while they are happening.
 
-> [PERSONAL STORY — James to supply a true account of what worked, or notably failed, in his own household's attempts at family worship across raising five sons.]
-
 ## Let the form change as the children change
 
 The table that worked for a five-year-old will insult a fifteen-year-old, and the parent who keeps running the toddler liturgy for a teenager is teaching the teenager that faith is a children's thing one is meant to outgrow — which is exactly the conclusion the culture is already whispering to them, now confirmed at home.

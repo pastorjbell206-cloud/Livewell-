@@ -39,6 +39,16 @@ export const PILLARS: Pillar[] = [
       "Where the American church has merged the cross with the nation — Christian nationalism, the gospel of patriotism, and fear dressed up as theology.",
     trackSlugs: [],
     articleSlugs: [
+      // The drafted Capture-by-the-right library (live via the static library)
+      "the-flag-in-the-sanctuary",
+      "two-kingdoms-one-pledge",
+      "the-persecution-we-invented",
+      "strongman-theology",
+      "nostalgia-is-not-the-kingdom",
+      "the-third-temptation",
+      "six-verses-we-memorized",
+      "when-the-pulpit-became-a-precinct",
+      // Earlier live essays
       "when-god-bless-america-replaces-thy-kingdom-come",
       "not-persecuted-seduced-crisis-american-christianity",
       "church-political-brand-step-back",
@@ -56,6 +66,16 @@ export const PILLARS: Pillar[] = [
       "The quieter idolatries of the progressive church — justice severed from love, the confidence of being on the right side of history mistaken for being on the right side of Scripture.",
     trackSlugs: [],
     articleSlugs: [
+      // The drafted Capture-by-the-left library (live via the static library)
+      "right-side-of-history",
+      "when-justice-becomes-a-gospel",
+      "the-sin-we-stopped-naming",
+      "affirmation-is-not-love",
+      "deconstruction-without-reconstruction",
+      "cheap-grace-left-hand",
+      "authority-we-traded-for-authenticity",
+      "conscience-outsourced-to-party",
+      // Earlier live essays
       "justice-without-love-ideology",
       "racial-reconciliation-without-repentance",
       // Blind Spots (reserved slug — live once imported)

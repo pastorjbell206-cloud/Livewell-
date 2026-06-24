@@ -11,8 +11,6 @@ seo_keywords: "love your enemies meaning, turn the other cheek explained, Matthe
 meta_description: "A pastor on the most demanding line in the Sermon on the Mount — love your enemies — what it does and does not mean, and why it is the clearest picture we get of the heart of God."
 ---
 
-> [PERSONAL STORY — James to supply: an enemy, a betrayal, someone who genuinely wronged you or your family, and the long work of what you did with it. Keep it specific and public-safe. Place it after the opening section, where the essay turns personal.]
-
 There is a line in the Sermon on the Mount that almost everyone admires and almost no one obeys. It has been printed on posters, quoted by people who have never opened a Bible, praised by skeptics as the high-water mark of human ethics. And it is, by a wide margin, the hardest thing Jesus ever asked a human being to do.
 
 *You have heard that it was said, an eye for an eye and a tooth for a tooth. But I say to you, do not resist the one who is evil. If anyone slaps you on the right cheek, turn to him the other also* (Matthew 5:38–39). And then, a few sentences later, the line that breaks the back of every comfortable religion: *Love your enemies and pray for those who persecute you* (Matthew 5:44).

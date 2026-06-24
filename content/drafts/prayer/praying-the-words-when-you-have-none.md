@@ -13,8 +13,6 @@ meta_description: "A pastor on praying the Psalms — the borrowed words God giv
 
 There is a kind of suffering that does not produce eloquence. It produces silence, or worse, it produces a single ugly syllable repeated — *why, why, why* — and then nothing. People imagine that great grief moves a person to pray. More often it does the opposite. It strikes you dumb. You sit down to talk to God in the worst week of your life and discover that the machinery has seized, that the words you used to reach for are gone, and that the silence where they used to be feels like one more proof that God has left the building.
 
-> [PERSONAL STORY — James to supply, optional: a season — a death in the congregation, a hospital vigil, your own loss — when you could not pray in your own words and found yourself reaching for a Psalm instead. Drop it in here.]
-
 I want to tell you what the church has done about this for three thousand years, because it is the best-kept secret in plain sight. The answer is not to summon better words. The answer is that God anticipated this exact moment and gave you a book of words to borrow.
 
 **When grief or rage burns your own prayers to ash, the Psalms are the words God wrote for you to pray back to him — and praying borrowed words in a borrowed voice is not a lesser prayer. It is often the only honest one left.**

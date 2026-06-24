@@ -15,8 +15,6 @@ There is one place where Christianity refuses to hide. Most religions can surviv
 
 I find that honesty disarming, and I did long before I believed any of it.
 
-> [PERSONAL STORY — James to supply: the version of you that treated the resurrection as obviously false, and the first time you realized you had never actually examined the evidence — only inherited the dismissal. Drop it in here, before the thesis.]
-
 **My claim is narrow and I intend to earn it: the resurrection of Jesus is the best available historical explanation of a set of facts that nearly all serious scholars — including skeptical ones — already grant.** Not a proof. Not a knockdown. The best explanation, in the way historians ever speak of best explanations, of evidence that does not go away when you stop believing.
 
 ## Start with what almost everyone grants

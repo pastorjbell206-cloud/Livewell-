@@ -47,8 +47,6 @@ Notice, too, that most of what arrives dressed as an intellectual objection is w
 
 Job's friends had answers — tidy, defensible, theologically sound answers — and God was angry with them precisely because they used good theology to avoid sitting with a suffering man. Do not be the friends. **Give the argument its full due, and then go looking for the wound the argument may be carrying, because the wound is usually the actual question.** Answer the syllogism and miss the wound, and you have won a debate while your child quietly concludes you are not safe to bring the real thing to — and the real thing then goes where the real things go.
 
-> [PERSONAL STORY — James to supply a true account of a time he raised a hard question with one of his sons before the culture could, and what the conversation opened up.]
-
 ## The two failures parents reach for instead
 
 When the question finally surfaces, most parents reach for one of two failures, and both close the door they meant to open. The first is the airtight answer — the apologetics reflex, the deployment of the case so quickly and so completely that the child learns the question was unwelcome and the speed was the proof. The child asked whether God is real and got a lecture on the cosmological argument, and what they heard underneath the content was: that question made you nervous, and I needed to shut it down fast. The answer may have been correct. The lesson was that hard questions get managed, not entertained, and a managed question does not come back.

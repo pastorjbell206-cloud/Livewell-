@@ -12,8 +12,6 @@ meta_description: "John Wycliffe, William Tyndale, and the fight to put the Bibl
 publish_at: null
 ---
 
-> [PERSONAL STORY — James to supply: the first Bible that was actually yours, or a moment reading it when the words landed differently — when it stopped being a book about other people and started reading you. A few sentences. Drop it in after the opening section.]
-
 Reach over and pick up a Bible. Any Bible — the one on the shelf, the app on your phone, the hotel-drawer copy. Notice how ordinary it feels. You can read it. You did not have to ask anyone's permission. You can underline it, argue with it, leave it in the bathroom, lose it and buy another for the price of lunch. It is the most printed book in human history and one of the cheapest objects you own. The thing in your hands is so easy to get that it is easy to forget it was ever hard.
 
 It was hard. For most of Christian history, ordinary people could not read the Bible for themselves, and a great many powerful people intended to keep it that way. The book you can pick up without a thought was, for centuries, locked behind a wall of Latin and law and fear, and the men who set out to break that wall down were hunted for it. One of them — a brilliant, stubborn Englishman named William Tyndale — was strangled and his body burned in 1536 for the crime of putting the New Testament into plain English. He died for the sentences you can now read on a screen while waiting for coffee. This is the story of how the book got to you, and it is one of the most consequential stories in the history of the West.

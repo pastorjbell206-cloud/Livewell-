@@ -11,8 +11,6 @@ seo_keywords: "does God change his mind, immutability of God, does God repent, G
 meta_description: "Does God change his mind? Scripture says both yes and no. A pastor walks a newcomer gently through divine immutability — and why an unchanging God is the only kind worth trusting."
 ---
 
-> [PERSONAL STORY — James to supply: a season when you needed God to be steady because everything else was moving — and what it did to you to suspect He might be as changeable as everyone else. Drop it in after "I wanted a God who would not move."]
-
 Open the Bible at random and you can come away with two flatly opposite pictures of God. In one, He is the fixed point, the one thing that does not move while everything else does — "I the LORD do not change" (Malachi 3:6). In the other, He seems as movable as a parent worn down by a long argument: He sees Nineveh repent and "relented of the disaster that he had said he would do to them" (Jonah 3:10); He hears Moses plead and "the LORD relented from the disaster that he had spoken of bringing on his people" (Exodus 32:14). So which is it? Does God change His mind or not? Skeptics treat this as a contradiction caught red-handed. Believers often just look away from it. Both responses miss something worth having.
 
 I missed it for years. As someone who came to faith out of unbelief, I had been trained to hunt for exactly this kind of seam in a text — the place where the story trips over itself — and the God who "repents" looked like an obvious trip. It took me a long time to see that I was reading the seam the wrong way around.

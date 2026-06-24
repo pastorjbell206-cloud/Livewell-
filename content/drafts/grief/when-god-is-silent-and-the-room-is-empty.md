@@ -11,8 +11,6 @@ meta_description: "Where is God in grief? When prayer meets silence and the room
 seo_keywords: "where is god in grief, silence of god, why is god silent when i pray, faith after losing someone, psalm 88 meaning, holy saturday meaning, unanswered prayer grief, god feels absent after death"
 ---
 
-> [PERSONAL STORY — James to supply, optional: a specific gravesidewatch or visit where he had no answer to give. Drop it in at "I have stood in those rooms" below, or leave the pastoral observation as written.]
-
 The bed is still made on one side.
 
 You learned the silence in stages. First the phone calls stopped. Then the casseroles stopped. Then the people who said *call me anytime* stopped answering, and you understood they had meant the first two weeks, when grief is still an event and not yet a residence. Now it is a Tuesday in the fourth month, and the silence in the house has been joined by a second silence, larger and more frightening, which is the silence of God.

@@ -11,8 +11,6 @@ meta_description: "When Christendom dies, what is actually lost? A pastor separa
 seo_keywords: "cultural christianity vs biblical faith, what is dying in the church, nominal christianity decline, Bonhoeffer religionless christianity, what is worth grieving church decline, the seed must die John 12:24, Charles Taylor cross pressure, faith after christendom"
 ---
 
-> [PERSONAL STORY — James to supply: a funeral, real or figurative — perhaps watching a congregation or institution you loved come to an end, and the surprise of what you actually missed versus what you thought you would. Drop it in near "Two things are buried" below.]
-
 When something large dies, the first grief is indiscriminate. You mourn everything at once — the good and the rotten, the essential and the accidental, all of it heaped together in the loss. Only later, when the shock thins, can you begin the harder work of sorting: this part I will carry forever, that part I am quietly relieved to be free of. The church in the West is in the first stage. Christendom is dying, and we are mourning all of it at once, the way you do at a funeral before you have had time to think. **But not everything that is dying deserves to be mourned, and the most important spiritual work of this generation is learning to tell cultural Christianity apart from the faith it was wrapped around — because they are dying together, and only one of them is supposed to.**
 
 This is a distinction the comfortable years let us blur. When the culture and the faith point the same direction, you never have to ask which one you actually serve. The default did the sorting for you. Now the default is gone, and the question can no longer be avoided. What, exactly, are we afraid of losing? And is all of it worth keeping?

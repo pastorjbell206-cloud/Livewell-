@@ -11,8 +11,6 @@ meta_description: "The political right cites Romans 13 on obedience and order wh
 seo_keywords: "does the Bible support immigration, what does the Bible say about the poor, Romans 13 government, 2000 verses on the poor, Matthew 25 least of these, conservative Christianity politics, proof texting, selective Bible reading"
 ---
 
-> [PERSONAL STORY — James to supply: a moment you noticed which verses you reached for by reflex and which ones you'd never once preached. Drop it in near "My own shelf indicts me" below.]
-
 Count the verses your church has actually memorized. Not the ones in the pew Bible — the ones in the bloodstream, the ones a member can finish if you start them. In most conservative American congregations the list is short and it is sharp. John 3:16. Jeremiah 29:11. Philippians 4:13. And, when the conversation turns to the government, Romans 13:1 — *let every person be subject to the governing authorities* — deployed with a confidence that suggests the verse settles something. That is six or seven verses doing the work of a whole political theology.
 
 Now count the ones nobody memorized. The roughly two thousand verses about money and the poor that scholars have been tallying for decades. Leviticus 19, where the law commands Israel to treat the immigrant as a native-born citizen. Amos, who calls a prosperous nation's worship services an offense to God. The parable in Luke 16 where a rich man ends up in torment for the simple crime of not noticing the beggar at his gate. We did not tear those pages out. We just never put them in bold.

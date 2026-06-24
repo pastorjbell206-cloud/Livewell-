@@ -11,8 +11,6 @@ meta_description: "The historic Christian calendar is not religious decoration. 
 seo_keywords: "church calendar, liturgical year, Christian calendar explained, what is the liturgical year, why does the church have a calendar, liturgical seasons, James K.A. Smith You Are What You Love, sacred time"
 ---
 
-> [PERSONAL STORY — James to supply: a moment you noticed your own year was being shaped by something other than the gospel — the retail calendar, the school calendar, the news cycle. Drop it in near the top, after the second section.]
-
 Pull out your phone and look at the calendar. Not the appointments — the shape of the year underneath them. You will find it already full before you add a single thing. There is a season for spending and a season for resolutions. A season for love that you buy in February and a season for fear that arrives every fall in the form of pumpkins and discount candy. There is a long climb toward a single day in late December that begins, in most stores, before the leaves have turned. You did not choose any of this. It was handed to you, and it tells a story so familiar you have stopped hearing it: that time is a series of occasions to want things, and to get them, and to want the next thing.
 
 Everyone keeps a calendar. The only question is whose.

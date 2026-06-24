@@ -15,8 +15,6 @@ Most people assume they already know what religion is for. It is the spiritual d
 
 Which makes Christianity genuinely puzzling, the moment you look at what it actually does. For a faith supposedly about the spirit, it cannot seem to leave physical objects alone. It washes people with water. It feeds them bread. It pours out wine. It anoints the sick with oil. It lays hands on heads. Its central story is not about a soul ascending out of a body but about God taking *on* a body — being born, getting tired, eating fish, bleeding, and rising in flesh you could touch. A purely spiritual religion would have edited all of that out as so much clutter. Christianity put it at the center.
 
-> [PERSONAL STORY — James to supply: a moment when a physical, ordinary thing — a meal, water, a hand on a shoulder, the work of your own hands — carried more of God to you than any idea did. Place it here, near the top.]
-
 The puzzle dissolves once you grasp the conviction underneath it, which runs against almost everything our culture assumes about spirituality. **Christianity does not treat matter as the thing we are trying to escape. It treats matter as the thing God made, loves, entered, and is in the business of redeeming — which means physical things are not obstacles to meeting God but, astonishingly, some of the places he has chosen to be met.** This is what the old word *sacramental* points to. And once you see it, the bread and the water stop looking like the leftover props of a primitive religion and start looking like the most honest thing about it.
 
 ## The mistake the church kept having to correct

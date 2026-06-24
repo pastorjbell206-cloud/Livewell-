@@ -11,8 +11,6 @@ seo_keywords: "why did Jesus have to die, what is the atonement, meaning of the 
 meta_description: "Why did Jesus have to die? A pastor explains the main Christian understandings of the atonement fairly, for a newcomer — and why the cross needs more than one of them."
 ---
 
-> [PERSONAL STORY — James to supply: the cross as the thing that most repelled you as a skeptic — the apparent cruelty of a God who needs a death — and the slow turn toward seeing it differently. Drop it in after the third paragraph.]
-
 The cross is on hospital walls and rapper's chains, on cathedral spires and tattoos, on the flags of nations and the lids of coffins. It is, by a wide margin, the most reproduced symbol in human history. And it is an instrument of torture. Rome reserved crucifixion for slaves and rebels precisely because it was slow, public, and humiliating — a death engineered to degrade. We have hung it on our walls and forgotten what it is.
 
 Stop and feel how odd this is. Imagine a religion built around a tiny golden electric chair, or a small silver gallows worn close to the heart. That is the scale of the strangeness we have gone numb to. At the center of the faith is not a teaching, not a temple, not a triumph, but an execution — and the believers insist that this execution is the best news the world has ever received.

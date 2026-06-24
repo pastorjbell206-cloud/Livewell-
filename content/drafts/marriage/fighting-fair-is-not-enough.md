@@ -11,8 +11,6 @@ meta_description: "Learned to fight fair and the marriage is still dying? A past
 seo_keywords: "fighting fair in marriage, conflict resolution in marriage, why do we keep fighting, marriage communication help, christian marriage conflict, how to stop fighting with my spouse, repair in marriage"
 ---
 
-> [PERSONAL STORY — James to supply a true account of a conflict where he stopped trying to win and asked what his spouse was actually saying. Drop it in at "What the fight is actually for" below.]
-
 You learned to fight fair. You read the book, maybe took the workshop, and now you know the rules. No name-calling. Use "I" statements. Take a break before it escalates. Stick to the issue, do not drag in the past, do not say "always" or "never." These are good rules. I have taught versions of them, and I would teach them again. And I have watched couples obey every one of them and lose the marriage anyway, because fighting fair was never the actual goal. It was a floor someone mistook for a ceiling.
 
 If you are doing everything right in your conflicts and the marriage is still dying, I do not think the answer is a better technique. I think the answer is underneath the technique, in a place the rules were never able to reach. **You can become flawless at fighting and more married to being right than to your spouse, and a marriage does not die of unfair fighting nearly as often as it dies of two people who fought clean and never once surrendered.** The rules can keep the conflict civil. They cannot make you willing to lose.
@@ -38,8 +36,6 @@ Paul saw the deeper game and named it without flinching. "If I speak in the tong
 A fight in a marriage is not a problem to be minimized. It is information to be read. Two people are colliding because something true is trying to surface and one or both of them is afraid of it. The shouting is the smoke. Somewhere under it there is a fire — a fear, a wound, an unmet longing, a grief that has not been allowed to speak in plain words. The goal is not to make the collision quieter or fairer. The goal is to find out what is trying to surface and let it surface, so the marriage can be more whole on the other side than it was before the fight began.
 
 This reframes everything. The question in a fight is not *how do I win this without breaking the rules.* The question is *what is my spouse trying to tell me that they cannot say plainly, and what am I defending that I should be laying down.* That question cannot be answered by a referee. It requires something the rules cannot supply — the willingness to lose the argument in order to find the marriage. And that willingness is not a communication skill. It is closer to a death.
-
-> [PERSONAL STORY — James to supply a true account of a conflict where he stopped trying to win and asked what his spouse was actually saying, and what he had to lay down to ask it.]
 
 I have come to believe that most of what couples call communication problems are not communication problems at all. The words are usually fine. The sentences are clear. What is broken is upstream of the words — a refusal, on one side or both, to be moved by what the other person is actually saying. You can hear your spouse perfectly and still have decided in advance that whatever they say will not change you. That is not a failure of communication. It is a failure of love wearing the mask of a failure of communication, and no workshop on better listening will fix it, because the listening was never the problem. The willingness was the problem.
 

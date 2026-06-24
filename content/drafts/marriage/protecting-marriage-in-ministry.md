@@ -11,8 +11,6 @@ meta_description: "Protecting your marriage in ministry: a pastor on why burnout
 seo_keywords: "protecting marriage in ministry, pastor marriage problems, ministry burnout marriage, clergy marriage, pastor's wife neglected, boundaries in ministry"
 ---
 
-> [PERSONAL STORY — James to supply: a true moment you came home from the labor of God too depleted for the labor of love, or watched a pastor you knew lose his own vineyard while tending everyone else's. Drop it in at "I am inside this indictment" below. Pastoral observation is fine; do not invent a domestic scene.]
-
 The cruelest thing about ministry is that the work that destroys your marriage looks exactly like faithfulness.
 
 No one ever pulled me aside and told me to neglect my family. The opposite. Every voice said honor them, protect them, do not become another statistic. And then the same people who said it handed me a calendar that made it impossible, a phone that never stopped, a congregation full of people in genuine crisis at the exact hours my own family needed me, and a quiet expectation that a real pastor answers the call. The demands did not arrive as temptation. They arrived as duty. That is what makes them so hard to refuse. You cannot easily say no to a dying man's family because your son had a game, even when the no is the right one, because the math feels obscene when you say it out loud.
@@ -48,8 +46,6 @@ There is a specific lie that pastors tell themselves, and I have told it, so I c
 The lie is that the family understands. That because they too believe in the mission, they have signed on to the cost, and the empty chair at dinner is a shared sacrifice rather than a private wound. Sometimes that is true for a season. It is never true forever, and it is almost never as true for them as it is convenient for us to believe.
 
 A spouse can support the calling with their whole heart and still be quietly starving inside it. A child can be proud of a father's church and still grow up certain that the church mattered more than they did, and carry that certainty into their own faith like a stone in the shoe. The mission does not absolve the absence. It only makes the absence harder to name, because who complains about losing their father to the gospel. The very holiness of the reason is what gags the people it is costing. They cannot protest without sounding like they are protesting God, so they say nothing, and the nothing is mistaken for consent.
-
-> [PERSONAL STORY — see note above.]
 
 I am inside this indictment, not above it. I have come home from the labor of God too depleted for the labor of love, and I have called my depletion holy. I have let the congregation's affirmation paper over the home's quiet erosion, because the affirmation was loud and the erosion was silent, and a tired man follows the loud thing. It is far easier to be praised by a hundred people for whom you are a function than to be truly known by one person for whom you are a husband, and ministry offers the praise on a schedule and the knowing only if you fight for it. Most of us, if we are honest, took the praise. It asked less and gave more, and we did not notice the bill until it came due in a marriage gone quiet.
 

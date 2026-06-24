@@ -11,8 +11,6 @@ meta_description: "Fixed-hour prayer, the daily office, kept the church praying 
 seo_keywords: "fixed hour prayer, the daily office, how to pray at set times, Liturgy of the Hours for Protestants, Phyllis Tickle Divine Hours, praying through the day, daily prayer rhythm, what is the daily office"
 ---
 
-> [PERSONAL STORY — James to supply: a moment when you realized your own prayer life ran entirely on mood — that you prayed when you felt like it and went silent when you didn't. Drop it in at "I prayed the way most people do" below.]
-
 Notice when you actually pray. Be honest about it. For most of us, the answer is: when something is wrong. We pray in the waiting room. We pray when the test comes back, when the marriage cracks, when the child is late and the phone goes to voicemail twice. Prayer arrives the way a fire department arrives — summoned by emergency, gone the moment the smoke clears. And then weeks go by, busy and unremarkable, and we notice with a small guilt that we have not said a word to God since the last crisis, that our entire relationship with him runs on adrenaline and need.
 
 I prayed the way most people do, for years, and never once thought to question it. It felt natural. It felt sincere. It was also completely at the mercy of how I happened to feel on a given Tuesday, which means it was at the mercy of my sleep, my inbox, my blood sugar, and the last thing someone said to me in a parking lot. A prayer life built on feeling is a prayer life built on the most unstable material a human being owns.

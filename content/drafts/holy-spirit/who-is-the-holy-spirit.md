@@ -11,8 +11,6 @@ seo_keywords: "who is the Holy Spirit, is the Holy Spirit a person, Holy Spirit 
 meta_description: "Is the Holy Spirit a person or a force? A pastor walks a newcomer through the most overlooked member of the Trinity — and why the difference changes everything you thought you knew about God."
 ---
 
-> [PERSONAL STORY — James to supply: a moment early on, maybe as a new believer out of atheism, when you realized you had quietly treated the Spirit as a vague energy rather than a someone — and what shifted when that flipped. Drop it in after "the third one was a blur."]
-
 When I first started paying attention to the Christian claim about God, two of the three persons came into focus quickly. The Father I could grasp — a source, an authority, the one Jesus prayed to. The Son I could grasp even faster, because he had a face and a name and a body that walked around Galilee getting hungry and tired and angry. But the third one was a blur. A dove at a baptism. A wind in an upper room. A flame over somebody's head. A presence people described with their eyes closed. Where the Father and the Son had edges, the Spirit had weather.
 
 I suspect that is where most people land. You can hold a Father. You can hold a Son. The third member of the Trinity feels less like a person you could meet and more like an atmosphere you might wander into — a force, a power, an it. And so the Spirit becomes the part of the doctrine you nod past, the one you would skip if the test only counted two out of three.

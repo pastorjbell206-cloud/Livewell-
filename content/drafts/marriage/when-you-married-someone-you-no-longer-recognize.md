@@ -11,8 +11,6 @@ meta_description: "Married a stranger? When growing apart feels like betrayal, a
 seo_keywords: "married a stranger, growing apart in marriage, marriage and change, what to do when you grow apart, marriage covenant, feeling like you don't know your spouse"
 ---
 
-> [PERSONAL STORY — James to supply: a specific, true moment you caught yourself grieving an older version of someone you love — your own or a marriage you walked beside in ministry — and realized the person you were missing had simply kept living. Drop it in at "I have done this myself" below. Pastoral observation is fine; do not invent a domestic scene.]
-
 You wake up one morning and the person beside you is a stranger.
 
 Not literally. The face is the same, the coffee order is the same, the side of the bed has not changed in eleven years. But something underneath has shifted, and you cannot name when it moved. The convictions you fell for have softened or hardened into shapes you did not agree to. The laugh comes less. The opinions you used to predict now surprise you, and not the way they once did. You look across the kitchen and think the quiet thought almost everyone in a long marriage eventually thinks. *I do not know who this is.*
@@ -52,8 +50,6 @@ So the question changes. It is no longer *do I still recognize this person.* It 
 That is a harder question, and it indicts me first.
 
 Because the truth most of us avoid is that you also became a stranger. While you were cataloging the ways your spouse changed, you were changing — slower in some rooms, harder in others, more tired, more certain, less curious about the person you had stopped studying. The marriage did not have one mystery in it. It had two. And the one who feels abandoned by the other's transformation has almost always quietly transformed into someone who stopped paying attention.
-
-> [PERSONAL STORY — see note above.]
 
 I have done this myself, in the way every long-loving person does it. I held an old picture of someone I love and was quietly offended that the living person kept failing to match it, as though the photograph were the truth and the breathing human were the counterfeit. It is a strange cruelty, to be angry at someone for being alive. We grow apart in the dark, both of us, and then blame the one we can see.
 

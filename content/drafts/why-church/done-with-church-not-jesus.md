@@ -12,8 +12,6 @@ meta_description: "More Americans have left church in the last twenty-five years
 publish_at: null
 ---
 
-> [PERSONAL STORY — James to supply: a specific moment you sat across from someone who told you, in their own words, that they still loved Jesus and could not walk back into a church. The look on their face. What you didn't say. Drop it in after "the most common spiritual position in America" below.]
-
 There is a sentence people say to me in coffee shops and parking lots, lowered, almost confessional, as if they are admitting to something shameful. *I still believe. I just can't do the building anymore.* They say it the way you'd admit to a debt. They expect me to argue. They have braced for the argument, because the last time they raised it someone handed them a verse about forsaking the assembly and changed the subject.
 
 I am not going to argue with you. Not yet. First I want to tell you that you are not rare, you are not the first, and you are not, by saying that sentence, doing anything that puts you outside the reach of the God you still love.

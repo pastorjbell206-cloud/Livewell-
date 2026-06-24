@@ -39,8 +39,6 @@ He does not learn this from a lecture, and he will not learn it from this essay,
 
 **The cross has to be embodied before it can be taught.** If your son never watches a man lay his strength down for someone weaker, he will not believe it is possible, and he will default to the script that at least makes him feel like something rather than nothing. Bonhoeffer wrote, in *The Cost of Discipleship* (1937), that when Christ calls a man, he bids him come and die. A boy needs to watch a man die a hundred small deaths — to his ego, his comfort, his need to win the argument at the dinner table, his desire to be right more than to be close — before the word *sacrifice* means anything to him beyond a noise that happens in sermons.
 
-> [PERSONAL STORY — James to supply a true account drawn from raising five sons: a specific moment where he had to model laying strength down rather than asserting it, and what his son took from it.]
-
 ## The protection he needs from you now
 
 You cannot keep the feed away from him entirely. That war is mostly lost on the level of devices, and the parent who stakes everything on screen restriction is fighting the last war while the current one is happening inside his son. But you can do the one thing the feed structurally cannot. You can know him. The boy who is deeply known by a present father or a fierce mother is far harder for the counterfeits to capture, because he is not starving, and the counterfeits feed entirely on the starvation. They are food for a vacuum. Fill the vacuum with real presence and the whispers lose most of their power. Not all of it. Most.

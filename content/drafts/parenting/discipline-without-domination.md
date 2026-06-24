@@ -49,8 +49,6 @@ The discipline of God is the model, and it is the opposite of the discharge. God
 
 A parent who disciplines from inside secure love is imaging that — teaching the child, beneath the words, that belonging is not on the line, that the relationship is the ground the correction stands on rather than the thing the correction threatens. A parent who disciplines from anger is imaging something else entirely, and the child will mistake the something else for God. The child raised on fear-based correction will grow up unable to read grace, will keep waiting for the discharge that, in the gospel, already fell elsewhere, will brace against a Father who is not bracing against them.
 
-> [PERSONAL STORY — James to supply a true account of a moment he disciplined out of his own anger and recognized it, or a moment he chose the slower road and what it cost.]
-
 ## The repair after the failure teaches more than the failure cost
 
 No parent holds the gap perfectly. You will dominate when you meant to discipline. The anger will win the second, and you will hear your own voice go to a place it should not have gone, and the small face across from you will close in a way that tells you exactly what just happened. The question is not whether you will fail at this. You will. The question is what the child watches you do next.

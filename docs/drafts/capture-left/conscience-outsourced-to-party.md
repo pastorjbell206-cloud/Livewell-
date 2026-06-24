@@ -11,8 +11,6 @@ meta_description: "When a party platform sets the boundaries of your conscience,
 seo_keywords: "faith and politics, should Christians follow a political party, political idolatry, Christian conscience and political party, Barmen Declaration 1934, Jonathan Haidt The Righteous Mind, civil religion, Daniel in Babylon, Romans 12:2"
 ---
 
-> [PERSONAL STORY — James to supply, if he wants one: a specific moment he caught himself defending a position because his people held it, and the alternative would have cost him a seat at a table he wanted to keep. The essay works without it, but a true scene at the hinge would carry it.]
-
 Ask yourself one question about your strongest political conviction, and notice how hard it is to answer honestly. Not *is it true.* That is the easy question, and it lets you off the hook. The hard question is *how did I come to hold it.* Trace it back far enough and you reach a fork. At that fork you either reasoned your way to the position from something prior, or you received it — pre-formed, ready to wear — from a tribe whose approval you needed and whose disapproval you feared. Be honest about which. Most of what I believe, when I trace it, I caught the way you catch an accent: by living among people who already had it.
 
 That is the subject. Not whether your politics are right. Whether they are yours.

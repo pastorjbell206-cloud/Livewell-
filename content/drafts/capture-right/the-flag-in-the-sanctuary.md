@@ -11,8 +11,6 @@ meta_description: "How did the flag end up in the sanctuary? A pastor traces civ
 seo_keywords: "flag in church, civil religion in America, Christian nationalism, separation of church and state, under God Pledge of Allegiance history, In God We Trust national motto, is patriotism idolatry, Constantine Christianity"
 ---
 
-> [PERSONAL STORY — James to supply a true account: a specific moment you stood in a sanctuary and noticed the flag — at a funeral, an installation, a national holiday service — and felt the two loyalties pull against each other. Drop it in near "I have stood in that room" below.]
-
 Walk into a thousand American churches and you will find it without looking: a flag on a pole, angled near the front, sometimes on the platform itself, sometimes flanking the cross in a matched pair. Nobody put it to a vote. No deacon board minutes record the motion. It is simply there, the way the hymnals are there, as if it had grown out of the floor. And because it has always been there for everyone now living, it has become invisible — which is exactly the condition an idol prefers. The most dangerous loyalties are the ones we have stopped noticing.
 
 I am not writing to get the flag removed from your church. I am writing to ask the prior question, the one the reflexes on both sides skip: how did it get there. Because **the flag in the sanctuary is the visible seam of an old fusion — the welding of cross and nation into a single object of devotion — and that fusion has a traceable history, a working theology, and a cost the people who love both are rarely asked to count.** Once you can see the seam, you cannot stop seeing it. And you have to decide whether the weld is holding two goods together or quietly making one of them into a god.

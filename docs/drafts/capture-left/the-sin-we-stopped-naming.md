@@ -11,8 +11,6 @@ meta_description: "What happened to the doctrine of sin? Progressive Christianit
 seo_keywords: "what happened to the doctrine of sin, progressive Christianity and sin, personal sin vs systemic sin, structural sin, doctrine of sin meaning, Reinhold Niebuhr Moral Man and Immoral Society, Cornelius Plantinga Not the Way It's Supposed to Be, self-righteousness in the church"
 ---
 
-> [PERSONAL STORY — James to supply a true account, if he wants one: a specific moment he caught himself preaching the sin of a system to a room that needed to hear its own, and felt the room get more certain rather than more quiet. The essay works without it. A true scene at "Count the pronouns" below would carry it.]
-
 Ask a certain kind of church a hard question about the doctrine of sin and watch what happens. You will not get silence. You will get fluency. We can name sin at a scale our grandparents never managed — systems, structures, the long arithmetic of history, the way an economy grinds the poor without any single villain pulling the lever. That is a real skill, and most of it is true. But notice the word that has gone quiet underneath all the noise. Sin in the singular. Sin in the second person. Sin as something a person did. Sin as something I did.
 
 I am inside the church I am describing. I helped the word go quiet.

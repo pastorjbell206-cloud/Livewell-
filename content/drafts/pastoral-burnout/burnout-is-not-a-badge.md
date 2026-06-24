@@ -27,8 +27,6 @@ The wider culture has only sharpened it. We live downstream of a century that ma
 
 And the congregation, however unintentionally, feeds the idol every Sunday. We praise the pastor who answers the phone at midnight and say nothing about the one who guards his evenings. We tell the search committee we want a shepherd who will give everything, and we mean it, and we do not hear what we are asking for. A church will eulogize a pastor's sacrificial exhaustion at his retirement dinner and never once ask, in the thirty years before it, whether the exhaustion was killing him. The applause is real and the affection is real and together they form a current that pulls a man steadily toward the rocks, smiling the whole way, because the very thing destroying him is the thing earning him the love he came into ministry hoping to give and receive. No one in the building is a villain. That is what makes it so hard to stop.
 
-> [PERSONAL STORY — James to supply a true account]
-
 ## There is no clergy exemption from the fourth commandment
 
 Now turn to the One we claim to follow. The first full week of creation ends in rest. Not because God was tired. The Almighty does not get tired. He rested to write rhythm into the foundation of the world, to declare that the creature made in his image was made for a cadence of work and ceasing, and that the ceasing was holy — not negotiable, not a reward for finishing, but a command standing alongside the work itself. The Sabbath is in the Ten. It sits between honoring God and honoring parents. We treat it as the one commandment a serious Christian is permitted to break, and we break it most flagrantly in the name of ministry.

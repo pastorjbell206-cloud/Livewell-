@@ -39,8 +39,6 @@ Charles Taylor, in *A Secular Age* (2007), described the world your teenager act
 
 Which means your job is not to remove their doubt. You cannot, and trying will only convince them you are afraid of it. Your job is to remain the person they can bring the doubt to. To keep the door open longer than the doubt lasts. The faith a person was handed as a child often has to die for the faith of an adult to be born — and that dying looks, from the outside, exactly like loss. Bonhoeffer, writing from a Nazi prison in the letters later gathered as *Letters and Papers from Prison* (1951), wrestled with God in ways that would have alarmed his Sunday school teachers, asking who Christ actually is for a world come of age. The wrestling was not the end of his faith. It was the deepening of it, the place where the inherited thing became his own. Do not confuse the labor of birth with the evidence of death.
 
-> [PERSONAL STORY — James to supply a true account of a season when one of his sons questioned the faith, what James felt, and how he chose to respond.]
-
 ## The deconstruction you have heard about, and what it usually is
 
 The word floating around this is *deconstruction*, and it has been made to sound like a single thing — a hostile, irreversible dismantling, a teardown with no rebuild planned. Some of it is. But much of what gets called deconstruction is something older and far less alarming: a young adult taking apart a faith they received secondhand to find out which parts are load-bearing and which were only decoration someone else hung. They are pulling on the beams to see what holds. That is not always the beginning of the end. Sometimes it is the only way an inherited faith ever becomes a personal one.

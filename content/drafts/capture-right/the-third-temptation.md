@@ -15,8 +15,6 @@ The devil does not begin with sin. He begins with strategy. Read the wilderness 
 
 That is the temptation the church keeps failing. And we fail it the way Jesus was tempted to fail it: convinced the whole time that we are reaching for something good.
 
-> [PERSONAL STORY — James to supply, optional: a specific moment you watched the church reach for political power as a shortcut, or felt the pull of it yourself in your own ministry. Drop it in here, near the top.]
-
 I am going to make a claim and then spend the essay earning it. **The third temptation — *all this I will give you, if you will fall down and worship me* — was always the deepest one, because power is the thing the church wants most and confesses least. And the church that grasps political power to win the world for Christ has not found a clever way to advance the kingdom. It has accepted the exact offer the King himself refused, on the exact terms the tempter named.**
 
 ## Read the offer again, without flinching

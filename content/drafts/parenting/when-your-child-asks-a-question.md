@@ -43,8 +43,6 @@ And you can hand them the lament. The Psalms gave Israel permission to bring the
 
 **A child taught that the gap stays — that even God leaves it open — has been given something to grow into rather than something to outgrow.**
 
-> [PERSONAL STORY — James to supply a true account of a bedtime question from one of his sons that he could not answer, and what he did instead.]
-
 ## The tradition knew that not-knowing is a stage of faith
 
 There is a long Christian tradition the modern church has mostly forgotten, in which not-knowing is treated as a stage of faith rather than a failure of it. The fourteenth-century English author of *The Cloud of Unknowing* insisted that God is finally met not in the bright clarity of explanation but in a darkness the intellect cannot pierce, and that learning to remain there, unresolved, is the deeper part of prayer. The apophatic theology of the Eastern church said the same centuries earlier — that the truest things about God are known by what cannot be said, that to stop talking is sometimes the most faithful theology available.

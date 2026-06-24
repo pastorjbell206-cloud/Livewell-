@@ -12,8 +12,6 @@ meta_description: "Polycarp at eighty-six. Perpetua at twenty-two. Why the first
 publish_at: null
 ---
 
-> [PERSONAL STORY — James to supply: a moment early in your faith, maybe soon after coming out of atheism, when you first grasped that people had actually died for this — and that it had stopped being an abstraction to you. Drop it in after the second paragraph.]
-
 There is a letter, written around the year 155, from one church to another, describing the death of an old man. The old man's name was Polycarp, and he was the bishop of a city called Smyrna, on the coast of what is now Turkey. He was eighty-six. The Roman governor had him brought into the arena, where a crowd was waiting, and offered him the simplest way out anyone has ever been offered. All Polycarp had to do was say the words *Caesar is Lord*, drop a small pinch of incense onto a fire, and curse the name of Christ. Three small actions. A few seconds of his life. And then he could go home to his church and his old age and his bed.
 
 The letter records what he said. "Eighty-six years I have served him, and he has done me no wrong. How can I blaspheme my King who saved me?" They burned him alive. The letter says the believers gathered his bones afterward, which they considered "more precious than gold," and buried them, and met there on the anniversary of his death to remember him with joy.

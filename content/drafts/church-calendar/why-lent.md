@@ -11,8 +11,6 @@ meta_description: "Lent is more than giving up chocolate. It is forty days of fa
 seo_keywords: "why give something up for Lent, what is Lent, meaning of Lent, Lent explained, Lenten fasting, why do Christians fast for Lent, Alexander Schmemann Great Lent, repentance, 40 days of Lent, Lent for beginners"
 ---
 
-> [PERSONAL STORY — James to supply: a time you removed something habitual — a screen, a substance, a comfort — and discovered what it had been covering. Place it near the top, after the second section.]
-
 A coworker mentions she is giving up wine for Lent. Someone else is off social media until Easter. A friend has sworn off chocolate, again, the way he does every year, and will break by the second week, the way he does every year. From the outside it looks like a religious version of a New Year's resolution — a seasonal diet with a theological label, a quaint exercise in willpower that the modern world has mostly outgrown. Even many Christians treat it that way, picking a vice to suspend for six weeks and then forgetting why.
 
 But the people who keep Lent seriously are not on a diet, and they are not testing their willpower. They are doing something far older and more deliberately uncomfortable, and once you understand what it is, the whole practice stops looking quaint and starts looking almost dangerous.

@@ -11,8 +11,6 @@ meta_description: "Ordinary Time is the long, unspectacular middle of the church
 seo_keywords: "what is Ordinary Time, Ordinary Time church calendar, meaning of Ordinary Time, liturgical Ordinary Time, faithfulness in the ordinary, Tish Harrison Warren Liturgy of the Ordinary, Eugene Peterson long obedience, ordinary Christian life"
 ---
 
-> [PERSONAL STORY — James to supply: a long, unremarkable stretch of ministry or family life where nothing dramatic happened and yet something was quietly being formed. Place it near the top, after the second section.]
-
 Ask someone what they know about the church year and you will hear about two things. Christmas, with its candles and its carols and its manger. And Easter, with its lilies and its empty tomb. The high seasons. The ones the whole culture half-remembers, the ones with the good music and the full pews. These are the parts of the Christian calendar everyone can name.
 
 What almost no one can name is the part in between — the long, green, unspectacular stretch that fills most of the year, that has no famous music and no special decorations and no cultural footprint at all. The church calls it Ordinary Time, and it runs for something like half the year, the longest season by far. It is the part of the calendar nobody puts on a card. And I have come to believe it is the part that actually does the work.

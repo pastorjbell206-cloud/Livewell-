@@ -11,8 +11,6 @@ meta_description: "Six cultural lenses distort the Bible before interpretation b
 seo_keywords: "reading the Bible objectively, cultural bias in Bible interpretation, how presuppositions affect Bible reading, worldview and Scripture, James K.A. Smith Desiring the Kingdom, individualism and the Bible, how to read the Bible without bias"
 ---
 
-> [PERSONAL STORY — James to supply: a moment you realized you had been reading a familiar passage through an assumption you never examined — perhaps a verse you had preached one way for years before something cracked it open. Drop it in near "The glass you cannot feel" below.]
-
 Ask a roomful of Christians whether they read the Bible objectively and most hands go up. Ask the same room to define a good life, a good marriage, a good death, and the answers will sound less like Galilee and more like the country they happen to live in. The two facts do not sit easily together. We believe we come to the text empty-handed, and we arrive carrying a worldview we did not pack and cannot see. **You do not read the Bible. You read the Bible through a lens — and the lens was ground by your culture long before you ever opened the book.**
 
 This is the claim under everything I write about Scripture, so let me be exact about it. The distortion does not begin at interpretation. It begins before interpretation, in the equipment. By the time you reach a verse and ask what it means, six lenses have already decided what kinds of meaning are even available to you. They have filtered the text before your conscious mind got a vote. The work of reading Scripture past our politics is not, first, the work of choosing better answers. It is the work of seeing the glass.

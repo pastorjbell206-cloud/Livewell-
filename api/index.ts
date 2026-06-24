@@ -5,6 +5,11 @@ import mysql from "mysql2/promise";
 import crypto from "node:crypto";
 import bcrypt from "bcryptjs";
 import superjson from "superjson";
+// Static essay library (143 long-form essays). Served behind the live DB so the
+// content is on the site without a per-essay DB write: DB rows always win on a
+// slug collision; static fills the rest; if the DB is unreachable the site still
+// serves the library. Regenerate with `node scripts/build-static-library.mjs`.
+import STATIC_LIBRARY from "./static-library.generated.js";
 
 async function withConn<T>(fn: (c: mysql.Connection) => Promise<T>): Promise<T> {
   const url = process.env.DATABASE_URL;
@@ -599,81 +604,145 @@ function toPostCard(row: any): any {
   };
 }
 
+// ----- Static essay library: shaping + merge helpers -----
+// Each generated record is mapped into the SAME shape the DB rows produce so the
+// frontend can't tell the difference. `full` includes the markdown body; the
+// slim variant drops it for index/listing pages.
+function staticFullCard(r: any): any {
+  return {
+    id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
+    body: r.body || null, content: r.body || null,
+    pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
+    readingTimeMinutes: r.readingTimeMinutes || readTime(null),
+    published: true, featured: false, topic: r.topic || null,
+    audience: r.audience || null, contentType: r.contentType || null,
+    createdAt: r.createdAt, publishedAt: r.publishedAt,
+  };
+}
+function staticSlimCard(r: any): any {
+  const { body, content, ...rest } = staticFullCard(r);
+  return rest;
+}
+function byDateDesc(a: any, b: any): number {
+  const ta = new Date(a?.publishedAt || a?.createdAt || 0).getTime();
+  const tb = new Date(b?.publishedAt || b?.createdAt || 0).getTime();
+  return tb - ta;
+}
+// Append the static essays the DB doesn't already have (DB wins on slug), then
+// order the whole set newest-first so the index reads as one library.
+function mergeWithStatic(dbRows: any[], slim: boolean): any[] {
+  const have = new Set((dbRows || []).map((r) => r.slug));
+  const extra = (STATIC_LIBRARY as any[])
+    .filter((r) => !have.has(r.slug))
+    .map(slim ? staticSlimCard : staticFullCard);
+  return [...(dbRows || []), ...extra].sort(byDateDesc);
+}
+function staticBySlugOrId(id: number | string): any | null {
+  const s = String(id);
+  const rec = (STATIC_LIBRARY as any[]).find((r) => r.slug === s || String(r.id) === s);
+  return rec ? staticFullCard(rec) : null;
+}
+
 async function trpcListPosts(): Promise<any[]> {
-  return await withConn(async (c) => {
-    try {
+  let dbRows: any[] = [];
+  try {
+    dbRows = await withConn(async (c) => {
+      try {
+        const [rows]: any = await c.execute(
+          "SELECT id, slug, title, excerpt, body, pillar, readTime, published, featured, publishedAt, createdAt FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 500"
+        );
+        if (Array.isArray(rows) && rows.length > 0) {
+          return (rows as any[]).map((r) => ({
+            id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
+            body: r.body || null, content: r.body || null,
+            pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
+            published: r.published, featured: r.featured, topic: r.topic || null,
+            createdAt: r.createdAt || r.publishedAt, publishedAt: r.publishedAt || r.createdAt,
+          }));
+        }
+      } catch { /* posts table may not exist, fall through to articles */ }
       const [rows]: any = await c.execute(
-        "SELECT id, slug, title, excerpt, body, pillar, readTime, published, featured, publishedAt, createdAt FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 500"
+        "SELECT id, slug, title, subtitle, excerpt, topic, pillar, source, external_url, image_url, word_count, published_at, created_at FROM articles ORDER BY published_at DESC LIMIT 500"
       );
-      if (Array.isArray(rows) && rows.length > 0) {
-        return (rows as any[]).map((r) => ({
-          id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
-          body: r.body || null, content: r.body || null,
-          pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
-          published: r.published, featured: r.featured, topic: r.topic || null,
-          createdAt: r.createdAt || r.publishedAt, publishedAt: r.publishedAt || r.createdAt,
-        }));
-      }
-    } catch { /* posts table may not exist, fall through to articles */ }
-    const [rows]: any = await c.execute(
-      "SELECT id, slug, title, subtitle, excerpt, topic, pillar, source, external_url, image_url, word_count, published_at, created_at FROM articles ORDER BY published_at DESC LIMIT 500"
-    );
-    return (rows as any[]).map(toPostCard);
-  });
+      return (rows as any[]).map(toPostCard);
+    });
+  } catch { dbRows = []; /* no DB / unreachable: serve the static library alone */ }
+  return mergeWithStatic(dbRows, false);
 }
 
 // Slim list for index/listing pages: every column EXCEPT `body` so the
-// frontend stops downloading full article bodies for 161+ posts at once.
+// frontend stops downloading full article bodies for 300+ posts at once.
 async function trpcListPostsForIndex(): Promise<any[]> {
-  return await withConn(async (c) => {
-    try {
+  let dbRows: any[] = [];
+  try {
+    dbRows = await withConn(async (c) => {
+      try {
+        const [rows]: any = await c.execute(
+          "SELECT id, slug, title, excerpt, pillar, readTime, published, featured, publishedAt, createdAt FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 500"
+        );
+        if (Array.isArray(rows) && rows.length > 0) {
+          return (rows as any[]).map((r) => ({
+            id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
+            pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
+            published: r.published, featured: r.featured, topic: r.topic || null,
+            createdAt: r.createdAt || r.publishedAt, publishedAt: r.publishedAt || r.createdAt,
+          }));
+        }
+      } catch { /* posts table may not exist, fall through to articles */ }
+      // articles fallback already excludes body (toPostCard never selects/returns it)
       const [rows]: any = await c.execute(
-        "SELECT id, slug, title, excerpt, pillar, readTime, published, featured, publishedAt, createdAt FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 500"
+        "SELECT id, slug, title, subtitle, excerpt, topic, pillar, source, external_url, image_url, word_count, published_at, created_at FROM articles ORDER BY published_at DESC LIMIT 500"
       );
-      if (Array.isArray(rows) && rows.length > 0) {
-        return (rows as any[]).map((r) => ({
-          id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
-          pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
-          published: r.published, featured: r.featured, topic: r.topic || null,
-          createdAt: r.createdAt || r.publishedAt, publishedAt: r.publishedAt || r.createdAt,
-        }));
-      }
-    } catch { /* posts table may not exist, fall through to articles */ }
-    // articles fallback already excludes body (toPostCard never selects/returns it)
-    const [rows]: any = await c.execute(
-      "SELECT id, slug, title, subtitle, excerpt, topic, pillar, source, external_url, image_url, word_count, published_at, created_at FROM articles ORDER BY published_at DESC LIMIT 500"
-    );
-    return (rows as any[]).map(toPostCard);
-  });
+      return (rows as any[]).map(toPostCard);
+    });
+  } catch { dbRows = []; /* no DB / unreachable: serve the static library alone */ }
+  return mergeWithStatic(dbRows, true);
 }
 
 async function trpcGetPost(id: number | string): Promise<any | null> {
-  return await withConn(async (c) => {
-    const isNum = /^\d+$/.test(String(id));
-    try {
+  try {
+    const dbRow = await withConn(async (c) => {
+      const isNum = /^\d+$/.test(String(id));
+      try {
+        const sql = isNum
+          ? "SELECT * FROM posts WHERE id = ? LIMIT 1"
+          : "SELECT * FROM posts WHERE slug = ? LIMIT 1";
+        const [rows]: any = await c.execute(sql, [id]);
+        if (rows[0]) {
+          const r = rows[0];
+          return {
+            id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
+            body: r.body || null, content: r.body || null,
+            pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
+            published: r.published, featured: r.featured,
+            createdAt: r.createdAt, publishedAt: r.publishedAt || r.createdAt,
+          };
+        }
+      } catch { /* posts table may not exist */ }
       const sql = isNum
-        ? "SELECT * FROM posts WHERE id = ? LIMIT 1"
-        : "SELECT * FROM posts WHERE slug = ? LIMIT 1";
+        ? "SELECT * FROM articles WHERE id = ? LIMIT 1"
+        : "SELECT * FROM articles WHERE slug = ? LIMIT 1";
       const [rows]: any = await c.execute(sql, [id]);
-      if (rows[0]) {
-        const r = rows[0];
-        return {
-          id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
-          body: r.body || null, content: r.body || null,
-          pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
-          published: r.published, featured: r.featured,
-          createdAt: r.createdAt, publishedAt: r.publishedAt || r.createdAt,
-        };
-      }
-    } catch { /* posts table may not exist */ }
-    const sql = isNum
-      ? "SELECT * FROM articles WHERE id = ? LIMIT 1"
-      : "SELECT * FROM articles WHERE slug = ? LIMIT 1";
-    const [rows]: any = await c.execute(sql, [id]);
-    if (!rows[0]) return null;
-    const row = rows[0];
-    return { ...toPostCard(row), body: row.body || null, content: row.body || null };
-  });
+      if (!rows[0]) return null;
+      const row = rows[0];
+      return { ...toPostCard(row), body: row.body || null, content: row.body || null };
+    });
+    if (dbRow) return dbRow;
+  } catch { /* no DB / unreachable: fall through to the static library */ }
+  // Not in the DB (or DB down): serve from the static essay library.
+  return staticBySlugOrId(id);
+}
+
+// Related essays from the merged (DB + static) library: same pillar first, then
+// fill with the newest others. Returns slim cards (no body).
+async function trpcGetRelated(slug: string, pillar?: string): Promise<any[]> {
+  const all = await trpcListPostsForIndex();
+  const pool = all.filter((p) => p.slug !== slug);
+  const norm = (v: any) => String(v || "").toLowerCase();
+  const same = pillar ? pool.filter((p) => norm(p.pillar) === norm(pillar)) : [];
+  const seen = new Set(same.map((p) => p.slug));
+  const fill = pool.filter((p) => !seen.has(p.slug));
+  return [...same, ...fill].slice(0, 4);
 }
 
 const FALLBACK_BOOKS = [
@@ -855,6 +924,10 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         const row = await trpcGetPost(slug);
         if (!row) return trpcErr(res, "NOT_FOUND", "post not found", 404);
         return trpcOk(res, row);
+      }
+      case "relatedArticles.getRelated": {
+        const data = await trpcGetRelated(input?.slug ?? "", input?.pillar);
+        return trpcOk(res, data);
       }
       case "books.listPublished": {
         const data = await trpcListPublishedBooks();
@@ -1253,6 +1326,8 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
       if (!row) return { error: { message: "post not found", code: -32603, data: { code: "NOT_FOUND", httpStatus: 404 } } };
       return { result: { data: superjson.serialize(row) } };
     }
+    case "relatedArticles.getRelated":
+      return { result: { data: superjson.serialize(await trpcGetRelated(input?.slug ?? "", input?.pillar)) } };
     case "books.listPublished":
       return { result: { data: superjson.serialize(await trpcListPublishedBooks()) } };
     case "books.listAll":
