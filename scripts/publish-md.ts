@@ -126,6 +126,39 @@ interface VoiceWarning {
   reason: string;
 }
 
+/**
+ * Remove editorial placeholder blockquotes before publishing so they never
+ * render on the live site. Drops any blockquote block (consecutive lines
+ * starting with ">") that mentions a PERSONAL STORY / "James to supply"
+ * production note, then collapses the blank lines it leaves behind.
+ */
+function stripPlaceholders(md: string): string {
+  const lines = md.split("\n");
+  const out: string[] = [];
+  for (let i = 0; i < lines.length; i++) {
+    if (lines[i].trimStart().startsWith(">")) {
+      // gather the whole blockquote block
+      const block: string[] = [];
+      let j = i;
+      while (j < lines.length && lines[j].trimStart().startsWith(">")) {
+        block.push(lines[j]);
+        j++;
+      }
+      const blockText = block.join("\n");
+      if (/\[?PERSONAL STORY|James to supply/i.test(blockText)) {
+        i = j - 1; // drop the block
+        continue;
+      }
+      out.push(...block);
+      i = j - 1;
+      continue;
+    }
+    out.push(lines[i]);
+  }
+  return out.join("\n").replace(/\n{3,}/g, "\n\n").trim();
+}
+
+
 function voiceCheck(md: string): VoiceWarning[] {
   const warnings: VoiceWarning[] = [];
   const lines = md.split("\n");
@@ -171,7 +204,9 @@ async function publishOne(
   args: Args
 ): Promise<{ ok: boolean; slug: string; warnings: number }> {
   const raw = readFileSync(file, "utf8");
-  const { fm, body } = parseFrontmatter(raw);
+  const { fm, body: rawBody } = parseFrontmatter(raw);
+  // Strip editorial [PERSONAL STORY] placeholders so they never reach the site.
+  const body = stripPlaceholders(rawBody);
 
   const title = fm.title ?? basename(file, extname(file));
   const slug =

@@ -70,14 +70,14 @@ export default function AdminBookEditor() {
   return (
     <AdminLayout>
       <div>
-        <h1 className="font-display text-4xl font-bold mb-8" style={{ color: "#1A1A1A" }}>
+        <h1 className="font-display text-4xl font-bold mb-8" style={{ color: "var(--ink)" }}>
           {bookId ? "Edit Book" : "New Book"}
         </h1>
 
         <form onSubmit={handleSubmit} className="max-w-3xl space-y-6">
           {/* Title */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               Title
             </label>
             <input
@@ -85,14 +85,14 @@ export default function AdminBookEditor() {
               value={form.title}
               onChange={(e) => setForm({ ...form, title: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               placeholder="Book title"
             />
           </div>
 
           {/* Author */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               Author
             </label>
             <input
@@ -100,21 +100,21 @@ export default function AdminBookEditor() {
               value={form.author}
               onChange={(e) => setForm({ ...form, author: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               placeholder="Author name"
             />
           </div>
 
           {/* Description */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               Description
             </label>
             <textarea
               value={form.description}
               onChange={(e) => setForm({ ...form, description: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               rows={4}
               placeholder="Book summary"
             />
@@ -122,7 +122,7 @@ export default function AdminBookEditor() {
 
           {/* Cover Image */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               Cover Image URL
             </label>
             <input
@@ -130,14 +130,14 @@ export default function AdminBookEditor() {
               value={form.coverImage}
               onChange={(e) => setForm({ ...form, coverImage: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               placeholder="https://..."
             />
           </div>
 
           {/* Purchase URL */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               Purchase/Link URL
             </label>
             <input
@@ -145,21 +145,21 @@ export default function AdminBookEditor() {
               value={form.purchaseUrl}
               onChange={(e) => setForm({ ...form, purchaseUrl: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               placeholder="https://amazon.com/..."
             />
           </div>
 
           {/* Book Type */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               Book Type
             </label>
             <select
               value={form.bookType}
               onChange={(e) => setForm({ ...form, bookType: e.target.value as "authored" | "recommended" })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
             >
               <option value="authored">My Book (Authored)</option>
               <option value="recommended">Recommendation</option>
@@ -168,7 +168,7 @@ export default function AdminBookEditor() {
 
           {/* Sort Order */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               Display Order
             </label>
             <input
@@ -176,10 +176,10 @@ export default function AdminBookEditor() {
               value={form.sortOrder}
               onChange={(e) => setForm({ ...form, sortOrder: parseInt(e.target.value) || 0 })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               placeholder="0"
             />
-            <p className="font-ui text-xs mt-1" style={{ color: "#6B7280" }}>
+            <p className="font-ui text-xs mt-1" style={{ color: "var(--ink-muted)" }}>
               Lower numbers appear first
             </p>
           </div>
@@ -192,7 +192,7 @@ export default function AdminBookEditor() {
               checked={form.published}
               onChange={(e) => setForm({ ...form, published: e.target.checked })}
             />
-            <label htmlFor="published" className="font-ui text-sm cursor-pointer" style={{ color: "#1A1A1A" }}>
+            <label htmlFor="published" className="font-ui text-sm cursor-pointer" style={{ color: "var(--ink)" }}>
               Published
             </label>
           </div>
@@ -203,7 +203,7 @@ export default function AdminBookEditor() {
               type="submit"
               disabled={isLoading}
               className="flex items-center gap-2 px-6 py-3 rounded font-ui font-medium transition-opacity disabled:opacity-50"
-              style={{ backgroundColor: "#B8963E", color: "#1A1A1A" }}
+              style={{ backgroundColor: "var(--mustard)", color: "var(--ink)" }}
             >
               {isLoading ? <Loader2 size={16} className="animate-spin" /> : <Save size={16} />}
               {bookId ? "Update Book" : "Create Book"}
@@ -212,7 +212,7 @@ export default function AdminBookEditor() {
               type="button"
               onClick={() => navigate("/admin/books")}
               className="px-6 py-3 rounded font-ui font-medium"
-              style={{ backgroundColor: "#D1C9BB", color: "#1A1A1A" }}
+              style={{ backgroundColor: "var(--line)", color: "var(--ink)" }}
             >
               Cancel
             </button>

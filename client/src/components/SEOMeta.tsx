@@ -153,7 +153,10 @@ export function getArticleSchema(
   publishedDate: string,
   modifiedDate?: string,
   image?: string,
-  url?: string
+  url?: string,
+  articleBody?: string,
+  wordCount?: number,
+  articleSection?: string
 ) {
   return {
     "@context": "https://schema.org",
@@ -164,6 +167,10 @@ export function getArticleSchema(
     url: url ?? SITE_URL,
     datePublished: publishedDate,
     dateModified: modifiedDate ?? publishedDate,
+    inLanguage: "en",
+    ...(articleSection ? { articleSection } : {}),
+    ...(articleBody ? { articleBody } : {}),
+    ...(wordCount ? { wordCount } : {}),
     author: {
       "@type": "Person",
       name: AUTHOR_NAME,
