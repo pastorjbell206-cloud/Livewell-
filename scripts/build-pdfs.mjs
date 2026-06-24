@@ -80,23 +80,54 @@ function thinRule(doc, color = MUSTARD, width = 0.75) {
   doc.y = y;
 }
 
-/** Title-page block: kicker, large title, subtitle, thin rule. */
-function titleBlock(doc, { kicker, title, subtitle }) {
-  doc.moveDown(1.5);
+/**
+ * A dedicated cover page: charcoal masthead, large title, subtitle, a mustard
+ * rule, and the author/tagline block. Draws on the current (first) page. When
+ * breakAfter is true it starts a fresh page so body content begins on page two;
+ * pass false for renderers whose first content block already calls addPage.
+ * The cover carries no footer or page number (stampFooters skips it).
+ */
+function coverPage(doc, { kicker, title, subtitle }, breakAfter = true) {
+  const W = doc.page.width;
+  const left = doc.page.margins.left;
+  const cw = contentWidth(doc);
+
+  // Charcoal masthead band
+  doc.save();
+  doc.rect(0, 0, W, 116).fill(INK);
+  doc.fillColor(MUSTARD).font("Times-Bold").fontSize(17)
+    .text("LIVEWELL", 0, 44, { width: W, align: "center", characterSpacing: 5 });
+  doc.fillColor("#F5F0E6").font("Times-Roman").fontSize(9)
+    .text("BY JAMES BELL", 0, 72, { width: W, align: "center", characterSpacing: 3 });
+  doc.restore();
+
+  // Title block, set in the upper-middle of the page body
   if (kicker) {
-    kickerLine(doc, kicker);
-    doc.moveDown(1);
+    doc.fillColor(MUSTARD).font("Times-Roman").fontSize(10)
+      .text(String(kicker).toUpperCase(), left, 286, { width: cw, align: "center", characterSpacing: 2.4 });
   }
-  doc.font("Times-Roman").fontSize(30).fillColor(INK)
-    .text(title, { lineGap: 2 });
+  doc.fillColor(INK).font("Times-Bold").fontSize(33)
+    .text(title, left, 326, { width: cw, align: "center", lineGap: 2 });
   if (subtitle) {
     doc.moveDown(0.6);
-    doc.font("Times-Italic").fontSize(13).fillColor(MUTED)
-      .text(subtitle, { lineGap: 3 });
+    doc.fillColor(MUTED).font("Times-Italic").fontSize(14)
+      .text(subtitle, { width: cw, align: "center", lineGap: 3 });
   }
-  doc.moveDown(1.2);
-  thinRule(doc);
-  doc.moveDown(2);
+
+  // Short mustard rule below the title block
+  const ruleY = Math.min(Math.max(doc.y + 28, 486), 600);
+  doc.save().lineWidth(1.4).strokeColor(MUSTARD)
+    .moveTo(W / 2 - 54, ruleY).lineTo(W / 2 + 54, ruleY).stroke().restore();
+
+  // Author + tagline block, anchored near the foot of the page
+  doc.fillColor(INK).font("Times-Bold").fontSize(13)
+    .text("JAMES BELL", left, 648, { width: cw, align: "center", characterSpacing: 2 });
+  doc.fillColor(MUTED).font("Times-Italic").fontSize(10.5)
+    .text("Connecting the depth of theology to the weight of everyday life.", left, 672, { width: cw, align: "center" });
+  doc.fillColor(MUTED).font("Times-Roman").fontSize(9)
+    .text("livewellbyjamesbell.co", left, 706, { width: cw, align: "center", characterSpacing: 1.5 });
+
+  if (breakAfter) doc.addPage();
 }
 
 function sectionHeading(doc, { kicker, title }) {
@@ -157,8 +188,8 @@ function labelBody(doc, label, text) {
 async function buildStudyGuideLeader(g) {
   const outPath = path.join(OUT_STUDYGUIDES, `${g.slug}-leader.pdf`);
   await writePdf(outPath, (doc) => {
-    titleBlock(doc, { kicker: "Leader's Guide", title: g.title, subtitle: g.audience + ". " + g.sessionsLabel + "." });
-    doc.moveDown(1);
+    coverPage(doc, { kicker: "Leader's Guide · " + g.sessionsLabel, title: g.title, subtitle: g.subtitle || g.audience + "." });
+    sectionHeading(doc, { kicker: "About this study", title: g.title });
     bodyParagraphs(doc, g.summary);
 
     if (g.leaderPrimer) {
@@ -237,7 +268,7 @@ async function buildStudyGuideLeader(g) {
 async function buildStudyGuideParticipant(g) {
   const outPath = path.join(OUT_STUDYGUIDES, `${g.slug}-participant.pdf`);
   await writePdf(outPath, (doc) => {
-    titleBlock(doc, { kicker: "Participant Handout", title: g.title, subtitle: g.audience + "." });
+    coverPage(doc, { kicker: "Participant Handout · " + g.sessionsLabel, title: g.title, subtitle: g.subtitle || g.audience + "." }, false);
     for (const s of g.sessions) {
       doc.addPage();
       sectionHeading(doc, { kicker: "Session " + s.n, title: s.title });
@@ -276,6 +307,7 @@ async function buildStudyGuideParticipant(g) {
 function stampFooters(doc) {
   const range = doc.bufferedPageRange();
   for (let i = range.start; i < range.start + range.count; i++) {
+    if (i === range.start) continue; // cover page carries no footer or number
     doc.switchToPage(i);
     const savedBottom = doc.page.margins.bottom;
     doc.page.margins.bottom = 0; // allow writing inside the bottom margin
@@ -285,7 +317,7 @@ function stampFooters(doc) {
         width: w, align: "center", lineBreak: false, characterSpacing: 1,
       });
     doc.fontSize(8).fillColor(MUTED)
-      .text(String(i + 1), 0, doc.page.height - 42, {
+      .text(String(i - range.start), 0, doc.page.height - 42, {
         width: w, align: "center", lineBreak: false,
       });
     doc.page.margins.bottom = savedBottom;
@@ -316,7 +348,7 @@ function writePdf(outPath, build, meta) {
 async function buildContextGuide(guide) {
   const outPath = path.join(OUT_CONTEXT, `${guide.slug}.pdf`);
   await writePdf(outPath, (doc) => {
-    titleBlock(doc, {
+    coverPage(doc, {
       kicker: `Reading Scripture in Context · ${guide.kicker || guide.group || ""}`,
       title: guide.title,
       subtitle: guide.subtitle,
@@ -362,7 +394,7 @@ async function buildSermonSeries(series, intro) {
   const outPath = path.join(OUT_SERIES, `${series.id}.pdf`);
   await writePdf(outPath, (doc) => {
     const weeks = series.sermons?.length || 0;
-    titleBlock(doc, {
+    coverPage(doc, {
       kicker: `Sermon Series · ${series.kind === "book" ? "Through a Book" : "Topical"} · ${weeks} Weeks`,
       title: series.title,
       subtitle: series.subtitle,
