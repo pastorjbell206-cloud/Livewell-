@@ -30,7 +30,7 @@ export default function Pillars() {
     <Layout>
       <SEOMeta
         title="The Five Pillars — The Library | James Bell"
-        description="Theological depth, prophetic disruption, prophetic justice, leadership formation, and the integrated life: the five pillars that organize the writing of James Bell."
+        description="Theological depth, prophetic disruption, prophetic justice, leadership formation, and the integrated life: the five pillars that organize James Bell's writing."
         url={`${SITE_URL}/pillars`}
       />
       <div style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>

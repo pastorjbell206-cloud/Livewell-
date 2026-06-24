@@ -33,7 +33,7 @@ export default function ServantLeadershipHandbook() {
     <Layout>
       <SEOMeta
         title="The Servant Leadership Handbook — A Free Book on Leading the Church"
-        description="A free twelve-chapter handbook on servant and organizational leadership in the church — from the towel and the throne to raising your replacement. Scripture-anchored, written for the men who carry the weight."
+        description="A free twelve-chapter handbook on servant and organizational leadership in the church, from the towel and the throne to raising your replacement."
         url={`${SITE_URL}/leadership/handbook`}
         structuredData={{ "@context": "https://schema.org", "@type": "Book", name: "The Servant Leadership Handbook", author: { "@type": "Person", name: "James Bell" }, url: `${SITE_URL}/leadership/handbook`, bookFormat: "https://schema.org/EBook", inLanguage: "en" }}
       />

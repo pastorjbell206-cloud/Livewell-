@@ -230,6 +230,7 @@ export function LeadMagnetLanding({ magnetId }: { magnetId: string }) {
             <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "var(--s-2)", maxWidth: "440px" }}>
               <input
                 type="email"
+                aria-label="Email address"
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}

@@ -48,7 +48,7 @@ export default function FormationIndex() {
     <Layout>
       <SEOMeta
         title="Deep Formation — The Eight-Part Method for Christian Leaders"
-        description="Deep leadership topics treated with a fixed eight-part method: the real question, the biblical foundation, the historical witness, every view steelmanned, secular scholarship tested against Scripture, and the formation underneath the function."
+        description="Deep leadership topics treated with a fixed eight-part method: the real question, the biblical foundation, every view steelmanned, and the formation underneath."
         url="https://www.livewellbyjamesbell.co/leadership/formation"
       />
 

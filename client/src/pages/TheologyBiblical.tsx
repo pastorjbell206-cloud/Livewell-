@@ -13,7 +13,7 @@ import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { toParagraphs } from "@/lib/prose";
+import { Prose } from "@/lib/prose";
 import { DOCTRINE_INDEX } from "@/lib/theology";
 
 interface Act { id: string; act: string; title: string; range: string; summary: string; turning: string; pointsForward: string; }
@@ -26,16 +26,6 @@ type Tab = "story" | "themes" | "ntot" | "books";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const cardStyle = { background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)" } as const;
-
-function Para({ text, color = "var(--ink-muted)" }: { text: string; color?: string }) {
-  return (
-    <>
-      {toParagraphs(text).map((p, i) => (
-        <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color, maxWidth: "68ch", marginBottom: "12px" }}>{p}</p>
-      ))}
-    </>
-  );
-}
 
 export default function TheologyBiblical() {
   const [acts, setActs] = useState<Act[]>([]);
@@ -93,7 +83,7 @@ export default function TheologyBiblical() {
     <Layout>
       <SEOMeta
         title="Biblical Theology — How the Whole Bible Fits"
-        description="The Bible as one story that climaxes in Christ: the storyline in acts, the great themes traced from Genesis to Revelation, how the New Testament reads the Old, and a biblical-theology overview of every book."
+        description="The Bible as one story that climaxes in Christ: the storyline in acts, the great themes from Genesis to Revelation, and how the New Testament reads the Old."
         url="https://www.livewellbyjamesbell.co/theology/biblical"
       />
 
@@ -160,7 +150,7 @@ export default function TheologyBiblical() {
                   </button>
                   {isOpen && (
                     <div style={{ padding: "0 var(--s-4) var(--s-4)", borderTop: "1px solid var(--border)" }}>
-                      <div style={{ paddingTop: "16px" }}><Para text={a.summary} color="var(--ink)" /></div>
+                      <div style={{ paddingTop: "16px" }}><Prose text={a.summary} /></div>
                       <div style={{ display: "flex", flexWrap: "wrap", gap: "20px", marginTop: "8px", paddingTop: "14px", borderTop: "1px solid var(--border)" }}>
                         <div style={{ flex: "1 1 240px" }}><div className="eyebrow" style={{ marginBottom: "4px" }}>The hinge</div><p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{a.turning}</p></div>
                         <div style={{ flex: "1 1 240px" }}><div className="eyebrow" style={{ marginBottom: "4px" }}>Leaning forward</div><p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{a.pointsForward}</p></div>
@@ -196,7 +186,7 @@ export default function TheologyBiblical() {
                   </button>
                   {isOpen && (
                     <div style={{ padding: "0 var(--s-4) var(--s-4)", borderTop: "1px solid var(--border)" }}>
-                      <div style={{ paddingTop: "16px" }}><Para text={t.trace} color="var(--ink)" /></div>
+                      <div style={{ paddingTop: "16px" }}><Prose text={t.trace} /></div>
                       <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", background: "var(--bone-warm)", borderRadius: "var(--radius-sm)", padding: "12px 14px", marginTop: "8px" }}><strong>In Christ.</strong> {t.fulfillment}</p>
                       <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginTop: "12px" }}>
                         {t.keyTexts.map((k) => <span key={k} style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)", border: "1px solid var(--border)", borderRadius: "999px", padding: "4px 10px" }}>{k}</span>)}
@@ -217,7 +207,7 @@ export default function TheologyBiblical() {
             {!ntot && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
             {ntot && (
               <>
-                <div style={{ marginBottom: "var(--s-4)" }}><Para text={ntot.intro} color="var(--ink)" /></div>
+                <div style={{ marginBottom: "var(--s-4)" }}><Prose text={ntot.intro} /></div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                   {ntot.methods.map((m, i) => (
                     <div key={i} style={{ ...cardStyle, padding: "var(--s-4)", borderLeft: "3px solid var(--mustard)" }}>

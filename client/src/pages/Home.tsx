@@ -572,7 +572,7 @@ export default function Home() {
           <SegmentedSignup
             variant="panel"
             title="One essay a week. Pick your track."
-            description="New essays land Tuesday morning. Different lead essay depending on who you are. Skeptics get the questions taken seriously. Christians get depth. Pastors get the letter and the resources for the work."
+            description="New essays Tuesday morning, a different lead by reader. Skeptics get the questions taken seriously. Christians get depth. Pastors get the letter and the work."
           />
         </div>
       </section>

@@ -124,7 +124,7 @@ export default function Resources() {
     <Layout>
       <SEOMeta
         title="Resources — Study Guides, Libraries, and Ministry Tools"
-        description="Free resources for disciples, pastors, and leaders: the Reading Scripture in Context library, leadership and sermon series libraries, family devotions, study guides, and downloads."
+        description="Free resources for disciples, pastors, and leaders: the Reading Scripture in Context library, leadership and sermon series, family devotions, and downloads."
         url="https://www.livewellbyjamesbell.co/resources"
       />
 

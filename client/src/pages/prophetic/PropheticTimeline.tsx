@@ -51,7 +51,7 @@ export default function PropheticTimeline() {
     <Layout>
       <SEOMeta
         title="The Injustice Timeline — An Honest Reckoning"
-        description="A long, honest reckoning with the injustices of history: those committed in the name of Christ and by the church, those of empire, of unrestrained markets, and of communism and forced utopia. No human system is the kingdom of God."
+        description="A long, honest reckoning with the injustices of history: those done in the name of Christ, of empire, of markets, of forced utopia. No system is the kingdom."
         url="https://www.livewellbyjamesbell.co/justice/timeline"
       />
 

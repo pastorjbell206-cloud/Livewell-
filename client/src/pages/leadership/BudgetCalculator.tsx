@@ -44,7 +44,7 @@ export default function BudgetCalculator() {
 
   return (
     <Layout>
-      <SEOMeta title="The Giving and Budget Calculator — Allocate a Church Budget" description="Think through a church budget: enter annual giving, allocate across categories, and see how each line compares to a healthy range. The ranges are guides, not laws." url="https://www.livewellbyjamesbell.co/leadership/budget" />
+      <SEOMeta title="The Giving and Budget Calculator — Allocate a Church Budget" description="Think through a church budget: enter annual giving, allocate across categories, and see how each line compares to a healthy range. The ranges are guides." url="https://www.livewellbyjamesbell.co/leadership/budget" />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>

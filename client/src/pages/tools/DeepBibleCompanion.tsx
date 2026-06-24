@@ -981,7 +981,7 @@ export default function DeepBibleCompanion() {
     <Layout>
       <SEOMeta
         title="Deep Bible Study Companion — Seminary Depth, Kitchen-Table Language"
-        description="Study any passage with 6 layers of analysis: text, historical context, literary structure, scholarly perspectives, modern application, and deeper resources. PhD-level depth made accessible."
+        description="Study any passage with 6 layers: text, historical context, literary structure, scholarly views, application, and resources. PhD-level depth made accessible."
         structuredData={{ "@context": "https://schema.org", "@type": "WebApplication", name: "Deep Bible Study Companion", applicationCategory: "ReligiousApp", offers: { "@type": "Offer", price: "0" } }}
       />
 

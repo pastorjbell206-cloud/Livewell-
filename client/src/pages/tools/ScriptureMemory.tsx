@@ -316,7 +316,7 @@ export default function ScriptureMemory() {
     <Layout>
       <SEOMeta
         title="Scripture Memory System -- Memorize Bible Verses"
-        description="Memorize 40 Bible verses across 8 categories using proven techniques: first-letter hints, fill-in-the-blank, and full recall. Track your progress and build Scripture into your life."
+        description="Memorize 40 Bible verses across 8 categories using proven techniques: first-letter hints, fill-in-the-blank, and full recall. Track your progress."
         keywords="scripture memory, Bible memorization, memorize Bible verses, scripture memory system, Bible memory techniques"
         structuredData={{
           "@context": "https://schema.org",
@@ -968,7 +968,7 @@ export default function ScriptureMemory() {
                                     fontFamily: "var(--U)",
                                     color: recallResult
                                       ? "var(--mustard)"
-                                      : "#c0392b",
+                                      : "var(--alert)",
                                   }}
                                 >
                                   {recallResult

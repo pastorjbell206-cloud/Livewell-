@@ -27,7 +27,7 @@ export default function BookLibrary() {
     <Layout>
       <SEOMeta
         title="The Library — Books to Read Online | James Bell"
-        description="Full-length books by James Bell, read free online: the deep things of doctrine, the captive church, the cause of the poor, leadership that keeps its soul, and the undivided life."
+        description="Full-length books by James Bell, free online: the deep things of doctrine, the captive church, the cause of the poor, and the undivided life."
         url={`${SITE_URL}/read`}
       />
       <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>

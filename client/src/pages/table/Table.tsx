@@ -35,7 +35,7 @@ export default function Table() {
     <Layout>
       <SEOMeta
         title="The Table — Disciplemaking in Homes"
-        description="A one-place engine for making disciples where people actually live: ready-to-run home studies, leader equipping, books, and study guides. The model is the living room, not the classroom — the household church of Acts 2 for a post-Christian world."
+        description="A one-place engine for making disciples where people live: home studies, leader equipping, books, and study guides. The living room, not the classroom."
         url="https://www.livewellbyjamesbell.co/table"
       />
 

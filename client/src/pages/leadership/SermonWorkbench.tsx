@@ -70,7 +70,7 @@ export default function SermonWorkbench() {
 
   return (
     <Layout>
-      <SEOMeta title="The Sermon Prep Workbench — From the Text to the Pulpit" description="A guided workflow for preparing a sermon that honors the text and lands on a Tuesday. The exegetical and homiletical questions worth answering at each stage. Saves to your browser." url="https://www.livewellbyjamesbell.co/leadership/sermon-prep" />
+      <SEOMeta title="The Sermon Prep Workbench — From the Text to the Pulpit" description="A guided workflow for preparing a sermon that honors the text and lands on a Tuesday. The questions worth answering at each stage. Saves to your browser." url="https://www.livewellbyjamesbell.co/leadership/sermon-prep" />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>

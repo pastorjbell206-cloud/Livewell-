@@ -68,10 +68,6 @@ const STATIC_PAGES = [
   { url: "/leadership/inventory", priority: "0.8", changefreq: "monthly" },
   { url: "/resources/context", priority: "0.9", changefreq: "weekly" },
   { url: "/resources/creeds", priority: "0.8", changefreq: "monthly" },
-  { url: "/studyguides/christian-nationalism", priority: "0.8", changefreq: "monthly" },
-  { url: "/studyguides/pastoral-health", priority: "0.8", changefreq: "monthly" },
-  { url: "/studyguides/economic-justice", priority: "0.8", changefreq: "monthly" },
-  { url: "/studyguides/church-and-empire", priority: "0.8", changefreq: "monthly" },
   { url: "/discipleship", priority: "0.85", changefreq: "monthly" },
   { url: "/help", priority: "0.9", changefreq: "monthly" },
   { url: "/plans/marriage", priority: "0.8", changefreq: "monthly" },
@@ -113,6 +109,7 @@ function manifestPages() {
     { file: "client/public/life/domains-index.json", key: "domains", prefix: "/life/" },
     { file: "client/public/creeds/documents-index.json", key: "documents", prefix: "/resources/creeds/" },
     { file: "client/public/history/essays-index.json", key: "essays", prefix: "/theology/history/" },
+    { file: "client/public/studyguides/index.json", key: "guides", prefix: "/studyguides/" },
   ];
   for (const s of sources) {
     try {

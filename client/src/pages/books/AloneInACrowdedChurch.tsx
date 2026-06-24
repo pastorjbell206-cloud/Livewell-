@@ -30,7 +30,7 @@ export default function AloneInACrowdedChurch() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description="A short book on pastoral loneliness and the case for brotherhood. Why pastors burn out in silence, what Scripture and church history say about it, and the first step back. PDF ebook by James Bell, founder of the Pastors Connection Network."
+        description="A short book on pastoral loneliness and the case for brotherhood: why pastors burn out in silence, and the first step back. PDF ebook by James Bell."
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

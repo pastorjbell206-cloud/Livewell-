@@ -114,7 +114,7 @@ export default function WisdomFinder() {
     <Layout>
       <SEOMeta
         title="Wisdom Finder — Tell Us What You Are Facing, and What the Bible Says"
-        description="Type in what you are struggling with and find the Bible's wisdom for it: the verses, the world they were written in, how the church has understood them across history, and the practical application to your life now."
+        description="Type in what you are struggling with and find the Bible's wisdom for it: the verses, the world they were written in, and the practical application for now."
         url="https://www.livewellbyjamesbell.co/tools/wisdom-finder"
       />
 

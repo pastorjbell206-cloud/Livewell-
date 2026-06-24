@@ -395,7 +395,7 @@ export default function SermonOutline() {
     <Layout>
       <SEOMeta
         title="Sermon Outline Generator -- Structured Outlines for Pastors"
-        description="Generate structured sermon outlines with title suggestions, a three-point framework, illustration ideas, and application questions. Built for pastors and teachers who refuse to separate depth from clarity."
+        description="Generate structured sermon outlines with title suggestions, a three-point framework, illustration ideas, and application questions. For pastors and teachers."
         keywords="sermon outline generator, sermon prep tool, preaching outline, sermon structure, pastoral tool, sermon illustrations"
         structuredData={{
           "@context": "https://schema.org",

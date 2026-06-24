@@ -245,7 +245,7 @@ export default function HardIssuesSeries() {
     <Layout>
       <SEOMeta
         title="The Hard Issues Series — Free Booklets for Church Leaders from PCN"
-        description="Ten free booklets for the men who lead the church — five on eldership and five on leading and governing the local church. Free PDF and EPUB from the Pastors Connection Network."
+        description="Ten free booklets for the men who lead the church: five on eldership and five on governing the local church. Free PDF and EPUB from the PCN."
         image={`${SITE_URL}/books/${BOOKLETS[0].slug}.jpg`}
         url={`${SITE_URL}/resources/hard-issues-series`}
       />

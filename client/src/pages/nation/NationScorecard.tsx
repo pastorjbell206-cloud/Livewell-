@@ -42,7 +42,7 @@ export default function NationScorecard() {
 
   return (
     <Layout>
-      <SEOMeta title="The Scorecard — How Close Is Each Party to the Bible?" description="An even-handed measure, theme by theme, of how near the left, the center, and the right come to the teaching of Scripture. The point is that no party is the kingdom of God." url="https://www.livewellbyjamesbell.co/nation/scorecard" />
+      <SEOMeta title="The Scorecard — How Close Is Each Party to the Bible?" description="An even-handed measure, theme by theme, of how near the left, center, and right come to the teaching of Scripture. No party is the kingdom of God." url="https://www.livewellbyjamesbell.co/nation/scorecard" />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>

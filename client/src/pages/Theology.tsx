@@ -52,7 +52,7 @@ export default function Theology() {
     <Layout>
       <SEOMeta
         title="Theological Depth — Learn the Faith Fairly"
-        description="A place to learn contested Christian doctrines fairly. Every disagreement is sorted by how much it matters and every position is stated in its own strongest voice, for the reader who wants depth without being told what to think."
+        description="Learn contested Christian doctrines fairly. Every disagreement is sorted by how much it matters and every position is stated in its own strongest voice."
         url="https://www.livewellbyjamesbell.co/theology"
       />
 

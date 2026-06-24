@@ -153,7 +153,7 @@ export default function RuleOfLife() {
     <Layout>
       <SEOMeta
         title="Rule of Life Builder — Build a Sustainable Rhythm of Grace"
-        description="A rule of life is not a performance contract. It is a trellis, a few rhythms you return to so that grace can reach you. Choose practices across prayer, Scripture, rest, community, mission, and the body, and build a rule you can actually keep."
+        description="A rule of life is a trellis, a few rhythms you return to so grace can reach you. Choose practices across prayer, rest, and more, and build one to keep."
         url="https://www.livewellbyjamesbell.co/tools/rule-of-life"
       />
 

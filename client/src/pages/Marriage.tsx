@@ -67,9 +67,9 @@ export default function Marriage() {
     <div style={{ background: "var(--bone)" }}>
       <SEOMeta
         title="Christian Marriage Help | LiveWell by James Bell"
-        description="Covenant theology applied to marriage. Articles on communication, conflict resolution, emotional labor, and biblical marriage for couples seeking more than advice."
+        description="Covenant theology applied to marriage: articles on communication, conflict, and emotional labor, for couples who want more than advice."
         keywords="Christian marriage help, biblical marriage, marriage counseling, marriage conflict, marriage communication, keeping marriage vows"
-        url="https://livewellbyjamesbell.co/marriage"
+        url="https://www.livewellbyjamesbell.co/marriage"
         type="webpage"
       />
 

@@ -70,7 +70,7 @@ export function ShoppingCart() {
         {cartItems.length > 0 && (
           <span
             className="absolute top-0 right-0 w-5 h-5 rounded-full text-xs font-bold flex items-center justify-center text-white"
-            style={{ backgroundColor: "#B8963E" }}
+            style={{ backgroundColor: "var(--mustard)" }}
           >
             {cartItems.length}
           </span>
@@ -93,7 +93,7 @@ export function ShoppingCart() {
           {/* Items */}
           <div className="flex-1 overflow-y-auto p-6 space-y-4">
             {cartItems.length === 0 ? (
-              <p style={{ color: "#6B7280" }}>Your cart is empty</p>
+              <p style={{ color: "var(--ink-muted)" }}>Your cart is empty</p>
             ) : (
               cartItems.map((item) => (
                 <div key={item.bookId} className="flex gap-4 pb-4 border-b" style={{ borderColor: "#D1C9BB" }}>
@@ -101,7 +101,7 @@ export function ShoppingCart() {
                     <h3 className="font-semibold" style={{ color: "#1A1A1A" }}>
                       {item.title}
                     </h3>
-                    <p style={{ color: "#6B7280" }}>${item.price.toFixed(2)}</p>
+                    <p style={{ color: "var(--ink-muted)" }}>${item.price.toFixed(2)}</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <button
@@ -140,7 +140,7 @@ export function ShoppingCart() {
                 onClick={handleCheckout}
                 disabled={checkoutMutation.isPending || !user}
                 className="w-full py-3 rounded font-ui font-medium text-white transition-all disabled:opacity-50"
-                style={{ backgroundColor: "#B8963E" }}
+                style={{ backgroundColor: "var(--mustard)" }}
               >
                 {checkoutMutation.isPending ? "Processing..." : !user ? "Sign in to checkout" : "Checkout"}
               </button>

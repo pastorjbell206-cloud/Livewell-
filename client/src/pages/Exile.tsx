@@ -55,7 +55,7 @@ export default function Exile() {
     <Layout>
       <SEOMeta
         title="Exiles — Living Well in a Post-Christian World"
-        description="The church is in exile again — not persecuted, displaced. Jeremiah 29 and 1 Peter taught God's people how to live well in a land they did not choose: build the house, plant the garden, seek the welfare of the city. Where we came from, where we are, how to live, and where we're going."
+        description="The church is in exile again, not persecuted but displaced. What Jeremiah 29 and 1 Peter taught God's people about living well in a land they did not choose."
         url="https://www.livewellbyjamesbell.co/exile"
       />
 

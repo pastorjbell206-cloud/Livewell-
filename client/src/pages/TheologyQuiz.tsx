@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
+import { SITE_URL } from "@/lib/site";
 
 export default function TheologyQuiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -49,7 +50,7 @@ export default function TheologyQuiz() {
         <MinimalNav />
         <div style={{ minHeight: "60vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--paper)" }}>
           <div style={{ textAlign: "center" }}>
-            <div style={{ width: "40px", height: "40px", border: "3px solid #E0D9CC", borderTop: "3px solid #B8963E", borderRadius: "50%", animation: "spin 1s linear infinite", margin: "0 auto 16px" }} />
+            <div style={{ width: "40px", height: "40px", border: "3px solid var(--bone-muted)", borderTop: "3px solid var(--mustard)", borderRadius: "50%", animation: "spin 1s linear infinite", margin: "0 auto 16px" }} />
             <p style={{ color: "var(--ink3)", fontFamily: "var(--F)" }}>Loading your quiz...</p>
           </div>
         </div>
@@ -64,7 +65,7 @@ export default function TheologyQuiz() {
         title="Theological Position Quiz"
         description="Discover which of LiveWell's tracks lands closest to where your faith is right now. Take the free quiz and get personalized article recommendations."
         keywords="theology quiz, faith assessment, James Bell, theological position"
-        url="https://livewellbyjamesbell.co/quiz"
+        url={`${SITE_URL}/quiz`}
       />
       <MinimalNav />
 
@@ -100,7 +101,7 @@ export default function TheologyQuiz() {
 
               {/* Question Card */}
               {questions[currentQuestion] && (
-                <div style={{ background: "white", borderRadius: "8px", border: "1px solid #E0D9CC", padding: "40px", boxShadow: "0 4px 24px rgba(26,51,40,0.06)" }}>
+                <div style={{ background: "white", borderRadius: "8px", border: "1px solid var(--bone-muted)", padding: "40px", boxShadow: "0 4px 24px rgba(26,51,40,0.06)" }}>
                   <h2 style={{ fontSize: "22px", fontWeight: "bold", color: "var(--ink)", fontFamily: "var(--F)", marginBottom: "32px", lineHeight: "1.4" }}>
                     {questions[currentQuestion].question}
                   </h2>
@@ -163,7 +164,7 @@ export default function TheologyQuiz() {
               {recommendationsQuery.data && (
                 <>
                   {/* Top Pillar */}
-                  <div style={{ background: "white", borderRadius: "8px", border: "2px solid #B8963E", padding: "32px", marginBottom: "32px" }}>
+                  <div style={{ background: "white", borderRadius: "8px", border: "2px solid var(--mustard)", padding: "32px", marginBottom: "32px" }}>
                     <div style={{ fontSize: "12px", letterSpacing: "2px", color: "var(--gold)", fontWeight: "bold", marginBottom: "8px", textTransform: "uppercase" }}>Your Primary Pillar</div>
                     <h3 style={{ fontSize: "24px", fontWeight: "bold", color: "var(--gold)", fontFamily: "var(--F)", marginBottom: "12px" }}>
                       {recommendationsQuery.data.topPillar}
@@ -192,7 +193,7 @@ export default function TheologyQuiz() {
                       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "20px" }}>
                         {recommendationsQuery.data.recommendedArticles.slice(0, 4).map((article: any) => (
                           <Link key={article.slug} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
-                            <div style={{ background: "white", borderRadius: "8px", border: "1px solid #E0D9CC", padding: "24px", cursor: "pointer", height: "100%" }}>
+                            <div style={{ background: "white", borderRadius: "8px", border: "1px solid var(--bone-muted)", padding: "24px", cursor: "pointer", height: "100%" }}>
                               <div style={{ fontSize: "11px", fontWeight: "bold", color: "var(--gold)", marginBottom: "8px", textTransform: "uppercase" }}>{article.pillar}</div>
                               <h4 style={{ fontSize: "15px", fontWeight: "bold", color: "var(--ink)", marginBottom: "8px", lineHeight: "1.4" }}>{article.title}</h4>
                               <p style={{ fontSize: "13px", color: "var(--ink3)", lineHeight: "1.6", marginBottom: "12px" }}>{article.excerpt}</p>
@@ -209,7 +210,7 @@ export default function TheologyQuiz() {
               <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
                 <button
                   onClick={handleReset}
-                  style={{ padding: "12px 24px", border: "2px solid #B8963E", background: "white", color: "var(--gold)", borderRadius: "4px", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}
+                  style={{ padding: "12px 24px", border: "2px solid var(--mustard)", background: "white", color: "var(--gold)", borderRadius: "4px", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}
                 >
                   Retake Quiz
                 </button>

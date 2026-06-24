@@ -26,7 +26,7 @@ export default function StudyGuidesIndex() {
     <Layout>
       <SEOMeta
         title="Study Guides — Free Leader's Toolkits for Small Groups and Sunday School"
-        description="Free, ready-to-run study guides on the questions the church tends to avoid. Each is a full leader's toolkit — leader's guide, participant handout, facilitator script, and printable PDFs delivered by email."
+        description="Free, ready-to-run study guides on the questions the church tends to avoid. Each is a full leader's toolkit with handout, script, and printable PDFs."
         url="https://www.livewellbyjamesbell.co/studyguides"
       />
 
