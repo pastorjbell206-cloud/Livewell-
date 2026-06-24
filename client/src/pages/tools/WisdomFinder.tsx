@@ -56,6 +56,11 @@ export default function WisdomFinder() {
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setTopics(d.topics || []))
       .catch(() => {});
+    // Deep link: /tools/wisdom-finder?q=... prefills and runs the search.
+    if (typeof window !== "undefined") {
+      const q = new URLSearchParams(window.location.search).get("q");
+      if (q) { setQuery(q); setSubmitted(q); }
+    }
   }, []);
 
   const ranked = useMemo(() => {
