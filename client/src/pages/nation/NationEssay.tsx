@@ -7,6 +7,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
+import { Prose } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
 
 interface Section { id: string; kicker: string; title: string; body: string; }
@@ -43,7 +44,7 @@ export default function NationEssay({ slug }: { slug: string }) {
           <div style={wrap}>
             <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>{s.kicker}</div>
             <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", lineHeight: 1.1, marginBottom: "var(--s-3)" }}>{s.title}</h2>
-            {s.body.split("\n\n").map((p, j) => <p key={j} style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.78, color: "var(--ink)", maxWidth: "68ch", marginBottom: "16px" }}>{p}</p>)}
+            <Prose text={s.body} />
           </div>
         </section>
       ))}

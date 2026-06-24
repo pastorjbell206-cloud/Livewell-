@@ -1,0 +1,928 @@
+{
+  "articles": [
+    {
+      "slug": "dm-how-to-build-a-weekly-rhythm-you-can-actually-keep",
+      "title": "How to Build a Weekly Rhythm You Can Actually Keep",
+      "excerpt": "Discipleship dies in the gap between good intentions and the calendar. A rhythm you can keep beats an ambitious one you'll abandon by March.",
+      "topic": "discipleship",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "dm-how-to-disciple-one-person-over-coffee",
+      "title": "How to Disciple One Person Over Coffee",
+      "excerpt": "Not everyone needs a table of twelve. Sometimes discipleship is one person, one standing appointment, and a long obedience built one cup at a time.",
+      "topic": "discipleship",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "dm-how-to-make-disciples-when-you-feel-unqualified",
+      "title": "How to Make Disciples When You Feel Unqualified",
+      "excerpt": "The sense that you're not ready is not a reason to wait. It is, strangely, the very condition Jesus has always worked with.",
+      "topic": "discipleship",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "dm-how-to-multiply-a-table-by-sending-people",
+      "title": "How to Multiply a Table by Sending People to Start Their Own",
+      "excerpt": "A table that only grows is a crowd. A table that multiplies is a movement. Here is how to send people out before you feel ready to let them go.",
+      "topic": "discipleship",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "dm-how-to-open-the-bible-with-people-who-have-never-read-it",
+      "title": "How to Open the Bible With People Who Have Never Read It",
+      "excerpt": "For the friend who has never cracked a Bible, where you start and how you read it matters more than anything you say about it.",
+      "topic": "discipleship",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "dm-how-to-pray-with-people-without-it-being-awkward",
+      "title": "How to Pray With People Without It Being Awkward",
+      "excerpt": "Praying out loud with others terrifies most people. A few simple habits take the performance out of it and leave the honesty in.",
+      "topic": "discipleship",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "dm-how-to-start-a-discipleship-table",
+      "title": "How to Start a Discipleship Table This Week",
+      "excerpt": "You do not need a curriculum, a building, or a title. You need a table, a meal, and the willingness to start before you feel ready.",
+      "topic": "discipleship",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "dm-how-to-welcome-a-skeptic-to-your-table",
+      "title": "How to Welcome a Skeptic to Your Table",
+      "excerpt": "A doubter at your table is not a threat to it. Welcomed well, the skeptic keeps the table honest and may find, as I did, that belief is more lived than argued into.",
+      "topic": "discipleship",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "dm-three-questions-that-make-any-passage-teachable",
+      "title": "The Three Questions That Make Any Passage Teachable",
+      "excerpt": "You do not need a commentary or a seminary degree. You need three questions you can ask of any text, and the discipline to let the room answer them.",
+      "topic": "discipleship",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "dm-what-to-actually-do-at-a-discipleship-table",
+      "title": "What to Actually Do at a Discipleship Table",
+      "excerpt": "A simple, repeatable shape for the evening — eat, open the Word, pray, send — so you are never wondering what comes next.",
+      "topic": "discipleship",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "dm-what-to-do-when-no-one-comes-back",
+      "title": "What to Do When No One Comes Back",
+      "excerpt": "You opened your home, set the table, and the next week the chairs were empty. Before you quit, consider what the silence is and isn't telling you.",
+      "topic": "discipleship",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "dm-who-to-invite-to-your-table-and-how-to-ask",
+      "title": "Who to Invite to Your Table (and How to Ask)",
+      "excerpt": "Stop looking for strangers to evangelize. Look at the names already in your phone, and learn to ask in a way that opens a door instead of triggering an alarm.",
+      "topic": "discipleship",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "wn-how-to-answer-hard-questions-about-the-faith",
+      "title": "How to Answer Hard Questions About the Faith",
+      "excerpt": "You do not need every answer. You need honesty, a little courage, and the willingness to say the three words most Christians are afraid to say.",
+      "topic": "evangelism",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "wn-how-to-be-a-good-neighbor-on-your-street",
+      "title": "How to Be a Good Neighbor on Your Street",
+      "excerpt": "Your street is a parish you did not choose. Faithfulness there is slow, ordinary, and more powerful than any program.",
+      "topic": "evangelism",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "wn-how-to-disagree-without-losing-the-relationship",
+      "title": "How to Disagree Without Losing the Relationship",
+      "excerpt": "We are losing friendships over arguments at a rate our parents would not recognize. Here is how to hold your convictions and keep your people.",
+      "topic": "evangelism",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "wn-how-to-invite-someone-to-a-table-or-a-church",
+      "title": "How to Invite Someone to a Table or a Church",
+      "excerpt": "The invitation is the hardest sentence to say and the easiest thing to overthink. Here is how to actually open the door.",
+      "topic": "evangelism",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "wn-how-to-live-a-quiet-witness-at-work",
+      "title": "How to Live a Quiet Witness at Work",
+      "excerpt": "Most workplace evangelism is either obnoxious or invisible. There is a steadier way, and it is mostly about how you do your job and treat your people.",
+      "topic": "evangelism",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "wn-how-to-love-your-actual-neighbors",
+      "title": "How to Love Your Actual Neighbors",
+      "excerpt": "We talk about loving humanity while not knowing the names of the people on our own street. Jesus made the neighbor specific on purpose.",
+      "topic": "evangelism",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "wn-how-to-pray-for-people-who-do-not-believe",
+      "title": "How to Pray for People Who Do Not Believe",
+      "excerpt": "Before evangelism is a word you say, it is a prayer you carry. Praying for the people who do not believe changes them less predictably than it changes you.",
+      "topic": "evangelism",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "wn-how-to-share-your-faith-without-being-weird",
+      "title": "How to Share Your Faith Without Being Weird",
+      "excerpt": "Most of us are either silent or strange. There is a third way, and it looks more like Jesus than either of the first two.",
+      "topic": "evangelism",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "wn-how-to-show-hospitality-to-outsiders",
+      "title": "How to Show Hospitality to Outsiders",
+      "excerpt": "The table is where the gospel becomes visible. Hospitality to outsiders is not entertaining. It is the open door of a people who were let in.",
+      "topic": "evangelism",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "wn-how-to-talk-about-jesus-with-your-family",
+      "title": "How to Talk About Jesus With Your Family",
+      "excerpt": "Family is the hardest mission field and the one we most often give up on. The people who knew you before are exactly the ones who can see whether it is real.",
+      "topic": "evangelism",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "wn-how-to-tell-your-story",
+      "title": "How to Tell Your Story",
+      "excerpt": "You do not need a dramatic conversion to have a story worth telling. You need to be honest about what was broken and what is different now.",
+      "topic": "evangelism",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "wn-how-to-welcome-a-stranger",
+      "title": "How to Welcome a Stranger",
+      "excerpt": "Scripture keeps insisting we welcome the stranger because we were strangers once. Hospitality to outsiders is not a personality trait. It is an obedience.",
+      "topic": "evangelism",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "fam-how-to-bless-your-home-and-your-children",
+      "title": "How to Bless Your Home and Your Children",
+      "excerpt": "Speaking blessing over your children is not superstition. It is a parent doing what God has always done: naming a person, and speaking a good future over them out loud.",
+      "topic": "family",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "fam-how-to-build-family-traditions-that-form-faith",
+      "title": "How to Build Family Traditions That Form Faith",
+      "excerpt": "Children are formed less by what you say once than by what you do every year. A tradition is a sermon you preach with your hands, repeated until it becomes their bones.",
+      "topic": "family",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "fam-how-to-disciple-teenagers-at-home",
+      "title": "How to Disciple Teenagers at Home",
+      "excerpt": "Discipling a teenager is not running a tighter program. It is staying in the room when they pull away, answering the hard question instead of dodging it, and refusing to outsource their faith.",
+      "topic": "family",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "fam-how-to-eat-dinner-together-again",
+      "title": "How to Eat Dinner Together Again",
+      "excerpt": "The shared table is where a family is built or quietly lost. Most homes did not decide to stop eating together. They drifted, one busy night at a time.",
+      "topic": "family",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "fam-how-to-keep-advent-as-a-family",
+      "title": "How to Keep Advent as a Family",
+      "excerpt": "Advent is not a countdown to presents. It is four weeks of teaching your children to wait in the dark for a light that is coming, which is the whole shape of the Christian life.",
+      "topic": "family",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "fam-how-to-keep-lent-and-easter-as-a-family",
+      "title": "How to Keep Lent and Easter as a Family",
+      "excerpt": "Lent teaches a child to give something up so that Easter can mean something. You cannot rise on Sunday if you never walked the road to Friday.",
+      "topic": "family",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "fam-how-to-make-a-family-screen-covenant",
+      "title": "How to Make a Family Screen Covenant",
+      "excerpt": "Screens are not neutral. They form your children whether or not you decide they should. A covenant is how a family decides on purpose instead of drifting by default.",
+      "topic": "family",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "fam-how-to-open-your-home-in-hospitality-as-a-family",
+      "title": "How to Open Your Home in Hospitality as a Family",
+      "excerpt": "Hospitality is not entertaining. It is opening your ordinary home to people who need it, and letting your children grow up watching the table get longer.",
+      "topic": "family",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "fam-how-to-pray-with-your-kids-at-bedtime",
+      "title": "How to Pray With Your Kids at Bedtime",
+      "excerpt": "Bedtime is the one moment a child is finally still. Use it to teach them that the last voice before sleep speaks to a Father who never sleeps.",
+      "topic": "family",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "fam-how-to-read-the-bible-with-young-children",
+      "title": "How to Read the Bible With Young Children",
+      "excerpt": "You do not need a curriculum or a clever method. You need to open the book, read a little, and let your children watch you take it seriously.",
+      "topic": "family",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "fam-how-to-start-family-worship",
+      "title": "How to Start Family Worship (and Keep It When It Falls Apart)",
+      "excerpt": "Family worship is not a performance you have to be qualified for. It is a few honest minutes around a table, kept badly for years, until it becomes the air your children breathe.",
+      "topic": "family",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "fam-how-to-use-a-family-catechism",
+      "title": "How to Use a Family Catechism",
+      "excerpt": "A catechism is not a test. It is a set of true sentences, learned by heart in childhood, that surface decades later when a person needs them most.",
+      "topic": "family",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "marriage-how-to-actually-forgive",
+      "title": "How to Actually Forgive Your Spouse",
+      "excerpt": "Forgiveness is not pretending it did not happen, and it is not a feeling that arrives on its own. It is a decision, often made before the feeling catches up.",
+      "topic": "marriage",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "marriage-how-to-fight-fair",
+      "title": "How to Fight Fair",
+      "excerpt": "The goal of a marital argument is not to win. A marriage where someone keeps winning is a marriage where someone keeps losing.",
+      "topic": "marriage",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "marriage-how-to-handle-in-laws",
+      "title": "How to Handle In-Laws (Leaving and Cleaving)",
+      "excerpt": "Much marital misery is really an unfinished leaving. A man shall leave his father and mother, and we skip that verb in our hurry to the next one.",
+      "topic": "marriage",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "marriage-how-to-weekly-check-in",
+      "title": "How to Have a Weekly Marriage Check-In",
+      "excerpt": "Most marriages do not die in a blowup. They die in a hundred small things never said. A weekly check-in is how you keep the silence from accumulating.",
+      "topic": "marriage",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "marriage-how-to-money-conversation",
+      "title": "How to Have the Money Conversation Without a War",
+      "excerpt": "Money fights are almost never about money. They are about fear and control and worth, and a budget cannot fix a thing the budget cannot see.",
+      "topic": "marriage",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "marriage-how-to-know-when-to-get-help",
+      "title": "How to Know When to Get Help",
+      "excerpt": "Most couples wait far too long to get help, treating counseling as the last stop before the lawyer. The wisest couples go early, while there is still warmth to build on.",
+      "topic": "marriage",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "marriage-how-to-love-a-cold-spouse",
+      "title": "How to Love a Spouse Who Has Gone Cold",
+      "excerpt": "When a marriage goes cold from one side, the temptation is to match the coldness. The harder and better road is to keep loving without a guarantee.",
+      "topic": "marriage",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "marriage-how-to-pray-together",
+      "title": "How to Pray Together as a Couple",
+      "excerpt": "Couples who long to pray together often do not, because the first attempt felt awkward and exposed. The awkwardness is the doorway, not the wall.",
+      "topic": "marriage",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "marriage-how-to-protect-date-night",
+      "title": "How to Protect a Weekly Date Night",
+      "excerpt": "Date night fails not because couples do not value it, but because everything else is louder. Protecting it is a discipline, not a romance.",
+      "topic": "marriage",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "marriage-how-to-rekindle-desire",
+      "title": "How to Rekindle Desire in a Long Marriage",
+      "excerpt": "Desire in a long marriage does not die because love faded. It cools because the conditions that fed it quietly disappeared, and the conditions can be rebuilt.",
+      "topic": "marriage",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "marriage-how-to-repair-after-blowup",
+      "title": "How to Repair After a Blowup",
+      "excerpt": "Every marriage has bad fights. The ones that last are not the couples who never cross the line. They are the ones who come back fast.",
+      "topic": "marriage",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "marriage-how-to-stay-married-baby-years",
+      "title": "How to Stay Married in the Baby Years",
+      "excerpt": "No one warns you that the baby can come between you. The child does not threaten the marriage, but the way we organize our love around the child often does.",
+      "topic": "marriage",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "parenting-how-to-answer-hard-questions-about-god",
+      "title": "How to Answer Your Child's Hard Questions About God",
+      "excerpt": "When your child asks a question you cannot answer, the answer they most need is not certainty. It is a parent who will not flinch and will not lie.",
+      "topic": "parenting",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "parenting-how-to-apologize-to-your-kids",
+      "title": "How to Apologize to Your Kids",
+      "excerpt": "A parent who apologizes is not undermining their authority. They are teaching the one lesson about grace that no sermon can deliver.",
+      "topic": "parenting",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "parenting-how-to-bless-your-children",
+      "title": "How to Bless Your Children",
+      "excerpt": "Your children are listening for one thing underneath everything else: whether you delight in them. Blessing is how you say it out loud, on purpose, again and again.",
+      "topic": "parenting",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "parenting-how-to-discipline-to-reach-the-heart",
+      "title": "How to Discipline in a Way That Reaches the Heart",
+      "excerpt": "Most discipline manages behavior and never touches the heart underneath it. Reaching the heart is slower, harder, and the only thing that lasts.",
+      "topic": "parenting",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "parenting-how-to-have-the-screen-conversation-by-age",
+      "title": "How to Have the Screen Conversation by Age",
+      "excerpt": "The screen conversation is not one talk. It is a different conversation at five, at ten, at fifteen, and the version that works changes as fast as the child does.",
+      "topic": "parenting",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "parenting-how-to-help-an-anxious-child",
+      "title": "How to Help an Anxious Child",
+      "excerpt": "An anxious child does not need their fear erased or argued away. They need a steady adult to borrow calm from until they grow their own.",
+      "topic": "parenting",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "parenting-how-to-lead-your-family-when-you-feel-like-a-failure",
+      "title": "How to Lead Your Family When You Feel Like a Failure",
+      "excerpt": "The qualification to lead your family was never your competence. It is your willingness to keep showing up, repenting, and pointing past yourself to God.",
+      "topic": "parenting",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "parenting-how-to-parent-a-strong-willed-child",
+      "title": "How to Parent a Strong-Willed Child",
+      "excerpt": "The strong will that exhausts you at six may be the spine that saves your child at sixteen. The work is to shape it, not to break it.",
+      "topic": "parenting",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "parenting-how-to-raise-kids-who-own-their-faith",
+      "title": "How to Raise Kids Who Own Their Faith",
+      "excerpt": "You cannot hand your child a faith they merely inherit. You can only raise them in conditions where a faith of their own has room to grow.",
+      "topic": "parenting",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "parenting-how-to-start-family-worship",
+      "title": "How to Start Family Worship in Five Minutes",
+      "excerpt": "Family worship is not a production. It is a few honest minutes around a table, repeated until it becomes the air your children breathe.",
+      "topic": "parenting",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "parenting-how-to-stay-close-to-a-pulling-away-teenager",
+      "title": "How to Stay Close to a Teenager Who Is Pulling Away",
+      "excerpt": "A teenager pulling away is doing exactly what they are supposed to do. The work is to stay reachable without chasing, present without smothering.",
+      "topic": "parenting",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "parenting-how-to-talk-to-your-kids-about-sex",
+      "title": "How to Talk to Your Kids About Sex",
+      "excerpt": "The sex talk is not a single dreaded event but a long, ordinary conversation. If you do not have it, the culture and the search bar will have it for you.",
+      "topic": "parenting",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "rel-how-to-be-content-when-you-long-to-be-married",
+      "title": "How to Be Content When You Long to Be Married",
+      "excerpt": "Contentment is not pretending you do not want the thing. It is the harder, truer work of being whole while you wait, with the longing still alive.",
+      "topic": "relationships",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "rel-how-to-build-deep-friendships-as-an-adult",
+      "title": "How to Build Deep Friendships as an Adult",
+      "excerpt": "Most adults are lonely and would never say so. Friendship does not happen to grown-ups by accident anymore. You have to build it on purpose.",
+      "topic": "relationships",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "rel-how-to-date-with-wisdom",
+      "title": "How to Date With Wisdom",
+      "excerpt": "Most dating advice is either too casual or too anxious. There is a third way, slower than the culture and warmer than the rulebook.",
+      "topic": "relationships",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "rel-how-to-find-a-mentor",
+      "title": "How to Find a Mentor",
+      "excerpt": "Most people wait to be chosen by a mentor and never are. Mentoring is not a program you get assigned to. It is a relationship you go and build.",
+      "topic": "relationships",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "rel-how-to-forgive-someone-who-has-not-apologized",
+      "title": "How to Forgive Someone Who Has Not Apologized",
+      "excerpt": "Waiting for an apology that may never come hands the offender control of your healing. Forgiveness is something you can do without their permission.",
+      "topic": "relationships",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "rel-how-to-handle-a-breakup",
+      "title": "How to Handle a Breakup",
+      "excerpt": "A breakup is a small death, and we keep telling people to get over it like it was a head cold. Grief that is rushed does not heal. It hides.",
+      "topic": "relationships",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "rel-how-to-handle-loneliness",
+      "title": "How to Handle Loneliness",
+      "excerpt": "Loneliness is not a character flaw and it is not always solved by being around people. It is a signal, and the question is what you do with it.",
+      "topic": "relationships",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "rel-how-to-have-a-hard-conversation",
+      "title": "How to Have a Hard Conversation",
+      "excerpt": "The conversation you keep avoiding is usually the one that would heal the thing. Avoidance is not peace. It is just slower damage.",
+      "topic": "relationships",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "rel-how-to-know-if-you-should-marry-someone",
+      "title": "How to Know If You Should Marry Someone",
+      "excerpt": "Nobody arrives at this decision with certainty. But there is a difference between healthy uncertainty and the doubt you are training yourself to ignore.",
+      "topic": "relationships",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "rel-how-to-love-a-difficult-family-member",
+      "title": "How to Love a Difficult Family Member",
+      "excerpt": "You cannot choose your family and you cannot fix them. But you can decide how you will love them, which is a different and more possible thing.",
+      "topic": "relationships",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "rel-how-to-set-healthy-boundaries-with-in-laws",
+      "title": "How to Set Healthy Boundaries With In-Laws",
+      "excerpt": "Leave and cleave is not a suggestion. A marriage needs a fence around it, and building that fence kindly is one of the first jobs of a new family.",
+      "topic": "relationships",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "rel-how-to-thrive-as-a-single-christian",
+      "title": "How to Thrive as a Single Christian",
+      "excerpt": "Singleness is not a waiting room. The church has often treated it that way, and single people have often believed it. Both were wrong.",
+      "topic": "relationships",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "sf-how-to-actually-read-the-bible",
+      "title": "How to Actually Read the Bible",
+      "excerpt": "Most people do not stop reading the Bible because they decided it was false. They stop because they opened to Leviticus in January and quietly gave up by Leviticus 11.",
+      "topic": "spiritual-formation",
+      "readTime": 8
+    },
+    {
+      "slug": "sf-how-to-build-a-rule-of-life",
+      "title": "How to Build a Rule of Life",
+      "excerpt": "A rule of life is not a list of religious obligations. It is a trellis. It is the structure that holds your soul in place long enough for something to grow on it.",
+      "topic": "spiritual-formation",
+      "readTime": 7
+    },
+    {
+      "slug": "sf-how-to-confess-sin-and-walk-in-repentance",
+      "title": "How to Confess Sin and Walk in Repentance",
+      "excerpt": "Confession is not groveling to a God who is reluctant to forgive. It is the daily, ordinary practice of telling the truth to a Father who is running toward you before you finish the sentence.",
+      "topic": "spiritual-formation",
+      "readTime": 9
+    },
+    {
+      "slug": "sf-how-to-deal-with-anger",
+      "title": "How to Deal With Anger",
+      "excerpt": "Anger is not the sin. What you do in the four seconds after the anger arrives is the sin, or the saint. The whole battle is fought in those four seconds.",
+      "topic": "spiritual-formation",
+      "readTime": 8
+    },
+    {
+      "slug": "sf-how-to-examine-your-day-the-daily-examen",
+      "title": "How to Examine Your Day (the Daily Examen)",
+      "excerpt": "Most of us end the day by collapsing, not by looking. The examen is the ancient practice of looking back over a single day with God before the dark takes it from you.",
+      "topic": "spiritual-formation",
+      "readTime": 8
+    },
+    {
+      "slug": "sf-how-to-fast",
+      "title": "How to Fast",
+      "excerpt": "Fasting is not a hunger strike against God to make him answer. It is the deliberate emptying of the body to remind the soul what it actually hungers for.",
+      "topic": "spiritual-formation",
+      "readTime": 7
+    },
+    {
+      "slug": "sf-how-to-fight-anxiety-with-scripture",
+      "title": "How to Fight Anxiety With Scripture",
+      "excerpt": "You cannot argue yourself out of anxiety. But you can preach to yourself, and the question is only which voice gets the last word, your fear or the word of God.",
+      "topic": "spiritual-formation",
+      "readTime": 8
+    },
+    {
+      "slug": "sf-how-to-keep-a-sabbath",
+      "title": "How to Keep a Sabbath",
+      "excerpt": "Sabbath is not a reward for finishing your work. The work is never finished. Sabbath is the weekly declaration that the world will keep turning without you, because it was never being held up by you.",
+      "topic": "spiritual-formation",
+      "readTime": 8
+    },
+    {
+      "slug": "sf-how-to-keep-going-when-god-feels-distant",
+      "title": "How to Keep Going When God Feels Distant",
+      "excerpt": "The dry season is not a sign you have failed. It is a normal part of following God, and almost everyone who has gone deep with him has walked through it.",
+      "topic": "spiritual-formation",
+      "readTime": 8
+    },
+    {
+      "slug": "sf-how-to-memorize-scripture",
+      "title": "How to Memorize Scripture",
+      "excerpt": "We memorize song lyrics by accident and Scripture not at all, then wonder why fear has a fuller vocabulary than faith when the hard hour comes.",
+      "topic": "spiritual-formation",
+      "readTime": 7
+    },
+    {
+      "slug": "sf-how-to-practice-silence-and-solitude",
+      "title": "How to Practice Silence and Solitude",
+      "excerpt": "We have made noise our medication. Silence terrifies us because in the quiet we finally hear what we have been outrunning, and that is exactly why we need it.",
+      "topic": "spiritual-formation",
+      "readTime": 8
+    },
+    {
+      "slug": "sf-how-to-pray-when-you-do-not-feel-like-it",
+      "title": "How to Pray When You Do Not Feel Like It",
+      "excerpt": "The advice to pray only when you feel moved would empty every prayer closet on earth by Wednesday. Prayer is not a mood. It is a relationship, and relationships are kept by showing up.",
+      "topic": "spiritual-formation",
+      "readTime": 8
+    },
+    {
+      "slug": "ss-how-to-care-for-a-dying-loved-one",
+      "title": "How to Care for a Dying Loved One",
+      "excerpt": "Walking someone toward death is among the holiest and hardest things a person can do. It will cost you more than you have, and it is worth all of it.",
+      "topic": "suffering",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "ss-how-to-face-a-hard-diagnosis",
+      "title": "How to Face a Hard Diagnosis",
+      "excerpt": "The day the news comes, the floor drops out. You cannot control the disease. You can decide, slowly, how you will walk through what it asks of you.",
+      "topic": "suffering",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "ss-how-to-find-hope-when-nothing-changes",
+      "title": "How to Find Hope When Nothing Changes",
+      "excerpt": "Some suffering does not end. The prayer goes unanswered for years. Here is how to find a hope that does not depend on the circumstance finally turning.",
+      "topic": "suffering",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "ss-how-to-grieve-well",
+      "title": "How to Grieve Well",
+      "excerpt": "Grief is not a problem to be solved or a stage to be cleared. It is love with nowhere to go. The work is not to get over it. The work is to carry it.",
+      "topic": "suffering",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "ss-how-to-handle-doubt",
+      "title": "How to Handle Doubt",
+      "excerpt": "Doubt is not the opposite of faith. Often it is the growing pains of a faith outgrowing the answers it was handed as a child. Here is how to hold it honestly.",
+      "topic": "suffering",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "ss-how-to-help-a-friend-through-loss",
+      "title": "How to Help a Friend Through Loss",
+      "excerpt": "You will be tempted to find the right words and stay away until you do. The right words are not the point. Showing up, badly and repeatedly, is the point.",
+      "topic": "suffering",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "ss-how-to-hold-onto-faith-in-the-dark",
+      "title": "How to Hold Onto Faith in the Dark",
+      "excerpt": "Sometimes God goes silent and the lights go out and everything you believed feels like a story you told yourself. Here is how the saints have stayed when faith ran on fumes.",
+      "topic": "suffering",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "ss-how-to-keep-going-through-depression",
+      "title": "How to Keep Going Through Depression",
+      "excerpt": "Depression lies, and it lies in your own voice. When the dark mind tells you to stop, here is how to keep putting one foot in front of the other, and where to get real help.",
+      "topic": "suffering",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "ss-how-to-practice-lament",
+      "title": "How to Practice Lament",
+      "excerpt": "Lament is the prayer the modern church forgot. It is not unbelief and it is not whining. It is the language faith speaks when the world is broken and God seems silent.",
+      "topic": "suffering",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "ss-how-to-pray-when-falling-apart",
+      "title": "How to Pray When You Are Falling Apart",
+      "excerpt": "When you most need to pray you can least manage it. The good news the church often forgets: prayer was never about having the words. It was about turning your face.",
+      "topic": "suffering",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "ss-how-to-sit-with-someone-suffering",
+      "title": "How to Sit With Someone Who Is Suffering",
+      "excerpt": "The instinct is to fix, to explain, to make the pain smaller so we can stand it. Almost everything that helps requires us to do less and stay longer.",
+      "topic": "suffering",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "ss-how-to-wait-on-god",
+      "title": "How to Wait on God",
+      "excerpt": "Waiting is not the empty space between God's acts. In Scripture it is one of his primary works in a person, and the hardest one to receive.",
+      "topic": "suffering",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "body-how-to-age-with-grace",
+      "title": "How to Age With Grace",
+      "excerpt": "Our culture handles aging by hiding it or fighting it with ever more elaborate programs of postponement. Christians can simply look at it, grieving what it takes without grieving as those who have no hope.",
+      "topic": "the-body",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "body-how-to-rhythms-of-work-and-rest",
+      "title": "How to Build Rhythms of Work and Rest",
+      "excerpt": "We are the first society with no shared rhythm of rest, no hour when it is collectively bedtime and no day when it is collectively Sabbath. Nobody is handing the pattern back. It has to be rebuilt.",
+      "topic": "the-body",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "body-how-to-care-for-your-body-in-sickness",
+      "title": "How to Care for Your Body in Sickness",
+      "excerpt": "Sickness strips away the lie that you are in control. It is not a punishment to be ashamed of or a problem to be willed away, but a season to be received, with real medical help and a faith that can rest.",
+      "topic": "the-body",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "body-how-to-eat-without-guilt-or-excess",
+      "title": "How to Eat and Feast Without Guilt or Excess",
+      "excerpt": "Almost none of us simply eat. We manage, we reward, we punish, we apologize. The table was meant to be a place of gratitude and communion before it was ever a matter of nutrition.",
+      "topic": "the-body",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "body-how-to-face-your-limits-without-despair",
+      "title": "How to Face Your Own Limits Without Despair",
+      "excerpt": "You are a creature, and creatures come with edges. The need to sleep, to rest, to stop, is not a design flaw to engineer around. It is a built-in rehearsal of humility, and a gift.",
+      "topic": "the-body",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "body-how-to-honor-your-body",
+      "title": "How to Honor Your Body as a Christian",
+      "excerpt": "The body is not a cage the soul is trapped in, and it is not the whole of who you are. It is a good gift, made and bought and bound for resurrection.",
+      "topic": "the-body",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "body-how-to-live-with-chronic-pain",
+      "title": "How to Live With Chronic Pain and Faith",
+      "excerpt": "Chronic pain is the suffering the church understands least, because it does not resolve. Faith here is not a cure but a way to keep trusting God inside a body that hurts and will not stop.",
+      "topic": "the-body",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "body-how-to-move-your-body-as-worship",
+      "title": "How to Move Your Body as Worship",
+      "excerpt": "Movement offered as gratitude for a working body is worship. Movement driven by punishment, fear, or the mirror is something else. The difference is everything.",
+      "topic": "the-body",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "body-how-to-receive-rest-as-a-gift",
+      "title": "How to Receive Rest as a Gift, Not a Reward",
+      "excerpt": "Most of us only let ourselves rest once the work is done and the rest is earned. But the work is never done, and rest was never a wage. It is a gift, given before you have produced a thing.",
+      "topic": "the-body",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "body-how-to-sleep-like-a-creature",
+      "title": "How to Sleep Like a Creature Who Trusts God",
+      "excerpt": "Sleep is not lost productivity. It is a nightly act of trust, hours of unconsciousness in which you admit that God runs the world and you do not.",
+      "topic": "the-body",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "body-how-to-steward-your-health",
+      "title": "How to Steward Your Health",
+      "excerpt": "Health is not yours to optimize and it is not yours to neglect. It is a trust, held loosely, cared for as a gift and surrendered when it goes, without idolizing it and without despising it.",
+      "topic": "the-body",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "body-how-to-unhook-from-your-screens",
+      "title": "How to Unhook From Your Screens",
+      "excerpt": "The phone is a factory whistle that never stops blowing. Attention is a form of love, and you are giving yours, all day, to a device engineered to take it.",
+      "topic": "the-body",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "world-how-to-be-a-faithful-citizen",
+      "title": "How to Be a Faithful Citizen",
+      "excerpt": "Scripture makes you a resident alien, a citizen of heaven who loves the country he does not worship. That is not a contradiction. It is the only way to be a citizen without becoming an idolater.",
+      "topic": "the-life-in-the-world",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "world-how-to-be-in-the-world-but-not-of-it",
+      "title": "How to Be In the World But Not Of It",
+      "excerpt": "Jesus prayed that we would stay in the world without belonging to it. We keep failing in both directions, fleeing the world or being absorbed by it. There is a third way, and he prayed for it.",
+      "topic": "the-life-in-the-world",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "world-how-to-care-for-creation-as-a-christian",
+      "title": "How to Care for Creation as a Christian",
+      "excerpt": "The first job God gave a human being was to tend a garden. Caring for creation is not a borrowed cause from the culture. It is the oldest assignment in the Bible.",
+      "topic": "the-life-in-the-world",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "world-how-to-care-for-the-poor-without-condescension",
+      "title": "How to Care for the Poor Without Condescension",
+      "excerpt": "The poor do not need your pity, your savior complex, or your theory about why they are poor. They need to be treated as what they are, image-bearers owed dignity, not problems to be managed.",
+      "topic": "the-life-in-the-world",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "world-how-to-disagree-about-politics-with-people-you-love",
+      "title": "How to Disagree About Politics With People You Love",
+      "excerpt": "We are losing marriages, friendships, and family over elections, at a rate our grandparents would not recognize. Here is how to keep your convictions and keep your people.",
+      "topic": "the-life-in-the-world",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "world-how-to-engage-politics-without-losing-your-soul",
+      "title": "How to Engage Politics Without Losing Your Soul",
+      "excerpt": "You can care about justice without making a kingdom of this world your god. The ancient creed that got Christians killed was political, and it set them free.",
+      "topic": "the-life-in-the-world",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "world-how-to-handle-money-in-an-affluent-society",
+      "title": "How to Handle Money in an Affluent Society",
+      "excerpt": "Jesus said more about money than almost anything else, and almost none of it is comfortable for the comfortable. Handling money well begins by admitting how much it already handles you.",
+      "topic": "the-life-in-the-world",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "world-how-to-hold-justice-and-mercy-together",
+      "title": "How to Hold Justice and Mercy Together",
+      "excerpt": "The tribes each keep half and call it the whole. Scripture refuses to let you choose between justice and mercy, because God never did.",
+      "topic": "the-life-in-the-world",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "world-how-to-love-your-enemy",
+      "title": "How to Love Your Enemy",
+      "excerpt": "It is the command we admire from a safe distance and refuse to practice up close. Jesus did not mean love your enemy in theory. He meant the person you actually cannot stand.",
+      "topic": "the-life-in-the-world",
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "world-how-to-resist-consumerism",
+      "title": "How to Resist Consumerism",
+      "excerpt": "The whole machine runs on convincing you that you are not yet complete. Resisting it is not about hating things. It is about refusing to let things tell you who you are.",
+      "topic": "the-life-in-the-world",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "world-how-to-seek-the-good-of-your-city",
+      "title": "How to Seek the Good of Your City",
+      "excerpt": "God told his exiles to seek the welfare of the very city that had carried them off. Your city is not a backdrop to your real life. It is the place God has sent you to bless.",
+      "topic": "the-life-in-the-world",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "world-how-to-use-technology-without-being-used-by-it",
+      "title": "How to Use Technology Without Being Used by It",
+      "excerpt": "Your devices are not neutral tools waiting for your intentions. They are designed to capture your attention and sell it. Using them well begins by admitting they are using you.",
+      "topic": "the-life-in-the-world",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "wm-how-to-be-a-christian-at-work",
+      "title": "How to Be a Christian at Work",
+      "excerpt": "Being a Christian at work is mostly not about what you say. It is about the joints no one inspects. Here is how to live it Monday through Friday without becoming the office hypocrite.",
+      "topic": "work",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "wm-how-to-discern-your-calling",
+      "title": "How to Discern Your Calling",
+      "excerpt": "Calling is not a secret God hides and dares you to find. It is mostly obedience in the place you already are. Here is how to discern it without losing your mind.",
+      "topic": "work",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "wm-how-to-fight-the-idol-of-success",
+      "title": "How to Fight the Idol of Success",
+      "excerpt": "Success is the most respectable idol there is. Nobody warns you about it, because everyone is worshiping it. Here is how to see it and how to start tearing it down.",
+      "topic": "work",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "wm-how-to-find-contentment-with-enough",
+      "title": "How to Find Contentment With Enough",
+      "excerpt": "Contentment is not the absence of wanting. It is the presence of trust. Here is how to learn it, the way Paul said he had to learn it, because no one is born knowing how.",
+      "topic": "work",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "wm-how-to-get-out-of-debt",
+      "title": "How to Get Out of Debt",
+      "excerpt": "Debt is not just a financial state. It is a kind of bondage, and Scripture treats it as one. Here is a plan to get free, told without shame and without easy promises.",
+      "topic": "work",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "wm-how-to-handle-a-job-loss",
+      "title": "How to Handle a Job Loss",
+      "excerpt": "Losing a job is not only a financial hit. It is a blow to your sense of who you are. Here is how to walk through it without being swallowed, and without pretending it is fine.",
+      "topic": "work",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "wm-how-to-handle-money-as-a-couple",
+      "title": "How to Handle Money as a Couple",
+      "excerpt": "Money fights are rarely about money. They are about fear, control, and what you each believe security is. Here is how to handle money as one, not two people guarding two accounts.",
+      "topic": "work",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "wm-how-to-make-a-budget-that-honors-god",
+      "title": "How to Make a Budget That Honors God",
+      "excerpt": "A budget is a moral document. It records what you actually love, not what you say you love. Here is how to build one that tells the truth and then bends toward God.",
+      "topic": "work",
+      "readTime": "8 min read"
+    },
+    {
+      "slug": "wm-how-to-prepare-for-retirement-faithfully",
+      "title": "How to Prepare for Retirement Faithfully",
+      "excerpt": "The Bible says to save like the ant and warns about the man who builds bigger barns to relax. Both are true. Here is how to prepare for the later years without serving the wrong god.",
+      "topic": "work",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "wm-how-to-rest-when-you-feel-you-cannot-stop",
+      "title": "How to Rest When You Feel You Cannot Stop",
+      "excerpt": "Sabbath is not a reward for finishing. It is a command you obey before the work is done. Here is how to stop when everything in you insists you cannot afford to.",
+      "topic": "work",
+      "readTime": "9 min read"
+    },
+    {
+      "slug": "wm-how-to-see-your-work-as-worship",
+      "title": "How to See Your Work as Worship",
+      "excerpt": "Work is not a punishment God invented after the fall. It was there in the garden first. Here is how to recover that, on a Monday, in a job you did not choose.",
+      "topic": "work",
+      "readTime": "7 min read"
+    },
+    {
+      "slug": "wm-how-to-start-giving-generously",
+      "title": "How to Start Giving Generously",
+      "excerpt": "Generosity is not a feeling you wait for. It is a practice that produces the feeling. Here is how to begin, with a real number, this month, before you feel ready.",
+      "topic": "work",
+      "readTime": "8 min read"
+    }
+  ]
+}

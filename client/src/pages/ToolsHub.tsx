@@ -6,6 +6,13 @@ import { useFavorites } from "@/hooks/useFavorites";
 
 const TOOLS = [
   {
+    title: "Deep Bible Study Companion",
+    description: "Seminary-level depth in kitchen-table language. 12 books of the Bible with 6 layers of analysis: text, historical context, literary structure, scholarly views, modern application, and deeper resources.",
+    href: "/tools/deep-bible",
+    icon: Search,
+    color: "var(--ink)",
+  },
+  {
     title: "Theology Quiz",
     description: "Twenty questions across doctrine, church history, and the biblical storyline. Find out where your foundations are solid and where the gaps are. Part of the Theological Depth section.",
     href: "/tools/theology-quiz",
@@ -24,6 +31,48 @@ const TOOLS = [
     description: "Thirty honest statements across the inner life, the body, relationships, work and money, and the world. Maps where life is flourishing and hands you a rule of life for the season. Part of Integrated Life.",
     href: "/life/assessment",
     icon: Heart,
+    color: "var(--gold)",
+  },
+  {
+    title: "Start a Table",
+    description: "Build a complete, reproducing plan for making disciples around a table. Pick who you are gathering and how often, and get the invitation to send, a simple rhythm of meal, Scripture, and prayer, passages to begin with, and how to multiply. Made for the ordinary believer. Part of Integrated Life.",
+    href: "/tools/discipleship-table",
+    icon: HeartHandshake,
+    color: "var(--ink2)",
+  },
+  {
+    title: "Wisdom for All of Life",
+    description: "The front door to Scripture's wisdom for the place no rule reaches: the deep Proverbs and Ecclesiastes guide, a topical map for money, words, work, anger, marriage, and more, and a month in Proverbs. Part of Integrated Life.",
+    href: "/wisdom",
+    icon: BookMarked,
+    color: "var(--gold)",
+  },
+  {
+    title: "Wisdom Finder",
+    description: "Type in what you are struggling with, and find what the Bible says about it: the verses, the cultural world they were written in, how the church has understood them across history, and the practical application to your life now. Part of Integrated Life.",
+    href: "/tools/wisdom-finder",
+    icon: Search,
+    color: "var(--ink2)",
+  },
+  {
+    title: "Rule of Life Builder",
+    description: "A rule of life is not a performance contract. It is a trellis. Choose sustainable practices across prayer, Scripture, rest, community, mission, and the body, and build a rhythm of grace you can actually keep. Part of Integrated Life.",
+    href: "/tools/rule-of-life",
+    icon: Target,
+    color: "var(--gold)",
+  },
+  {
+    title: "What the Bible Says About",
+    description: "A topical guide to Scripture for the arenas of ordinary life: money, the tongue, anger, anxiety, work, marriage, friendship, suffering, forgiveness, and more, with the heart of each passage worth knowing by heart. Part of Integrated Life.",
+    href: "/tools/bible-on",
+    icon: BookOpen,
+    color: "var(--ink)",
+  },
+  {
+    title: "Proverbs in 31 Days",
+    description: "A chapter of Proverbs a day, matched to the date, the way the church has read it for centuries. Each day a theme, a verse or two worth knowing by heart, and a reflection that runs the chapter into a real decision. Part of Integrated Life.",
+    href: "/tools/proverbs-31",
+    icon: BookMarked,
     color: "var(--gold)",
   },
   {

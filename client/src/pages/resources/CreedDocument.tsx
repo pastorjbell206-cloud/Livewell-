@@ -6,6 +6,7 @@
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
+import { Prose } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
 
 const wrap = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
@@ -51,9 +52,7 @@ export default function CreedDocument() {
         <>
           <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
             <div style={wrap}>
-              {data.intro.split("\n\n").map((p, i) => (
-                <p key={i} style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.78, color: "var(--ink)", marginBottom: "16px" }}>{p}</p>
-              ))}
+              <Prose text={data.intro} />
             </div>
           </section>
 

@@ -334,6 +334,9 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
    heading, quote, list, rule, or image; never let long words/URLs spill. */
 .article-body{overflow-wrap:break-word;word-break:break-word}
 .article-body h2,.article-body h3,.article-body blockquote,.article-body hr,.article-body ul,.article-body ol,.article-body img,.article-body figure,.article-body .pullquote,.article-body .footnotes{clear:both}
+/* Shared section prose: same .article-body type system, but the lead-article
+   drop cap belongs only to the top of an article, not to every section block. */
+.article-body.prose-section p:first-of-type::first-letter{font-family:inherit;font-size:inherit;float:none;line-height:inherit;padding:0;margin:0;color:inherit;font-weight:inherit}
 
 /* Footnotes (when Streamdown emits them via remark-footnotes) */
 .article-body .footnotes{margin-top:4em;padding-top:1.6em;border-top:1px solid var(--border);font-size:14px;line-height:1.7;color:var(--ink-muted)}

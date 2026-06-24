@@ -11,6 +11,7 @@
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
+import { toParagraphs } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
@@ -37,7 +38,7 @@ const TRIAGE_LABEL: Record<string, { label: string; note: string }> = {
 function Paragraphs({ text, light }: { text: string; light?: boolean }) {
   return (
     <>
-      {text.split("\n\n").map((p, i) => (
+      {toParagraphs(text).map((p, i) => (
         <p key={i} style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.78, color: light ? "rgba(245,240,230,0.85)" : "var(--ink)", maxWidth: "68ch", marginBottom: "16px" }}>{p}</p>
       ))}
     </>
@@ -100,7 +101,7 @@ export default function FormationTopic() {
                   {part.views.map((v) => (
                     <div key={v.name} style={{ background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)" }}>
                       <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", marginBottom: "10px" }}>{v.name}</h3>
-                      {v.body.split("\n\n").map((p, j) => (
+                      {toParagraphs(v.body).map((p, j) => (
                         <p key={j} style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.72, color: "var(--ink)", marginBottom: "12px" }}>{p}</p>
                       ))}
                     </div>
