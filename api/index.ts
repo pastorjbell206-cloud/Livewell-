@@ -2415,6 +2415,36 @@ const EBOOKS: Record<string, EbookConfig> = {
     file: new URL("./_ebooks/why-not-what.pdf", import.meta.url),
     filename: "Why-Not-What.pdf",
   },
+  "sermon-on-the-mount-as-politics": {
+    title: "The Sermon on the Mount as Politics",
+    priceEnv: "STRIPE_PRICE_SERMON_ON_THE_MOUNT_AS_POLITICS",
+    file: new URL("./_ebooks/sermon-on-the-mount-as-politics.pdf", import.meta.url),
+    filename: "The-Sermon-on-the-Mount-as-Politics.pdf",
+  },
+  "prophetic-justice-101": {
+    title: "Prophetic Justice 101",
+    priceEnv: "STRIPE_PRICE_PROPHETIC_JUSTICE_101",
+    file: new URL("./_ebooks/prophetic-justice-101.pdf", import.meta.url),
+    filename: "Prophetic-Justice-101.pdf",
+  },
+  "marriage-in-ministry": {
+    title: "Marriage in Ministry",
+    priceEnv: "STRIPE_PRICE_MARRIAGE_IN_MINISTRY",
+    file: new URL("./_ebooks/marriage-in-ministry.pdf", import.meta.url),
+    filename: "Marriage-in-Ministry.pdf",
+  },
+  "the-loneliness-of-the-pastor": {
+    title: "The Loneliness of the Pastor",
+    priceEnv: "STRIPE_PRICE_THE_LONELINESS_OF_THE_PASTOR",
+    file: new URL("./_ebooks/the-loneliness-of-the-pastor.pdf", import.meta.url),
+    filename: "The-Loneliness-of-the-Pastor.pdf",
+  },
+  "healwell": {
+    title: "HealWell",
+    priceEnv: "STRIPE_PRICE_HEALWELL",
+    file: new URL("./_ebooks/healwell.pdf", import.meta.url),
+    filename: "HealWell.pdf",
+  },
 };
 
 const PRODUCTION_SITE_URL = "https://livewellbyjamesbell.co";

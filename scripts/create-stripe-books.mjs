@@ -62,6 +62,36 @@ const BOOKS = [
     subtitle: "How Theology Starts With the Right Question",
     env: "STRIPE_PRICE_WHY_NOT_WHAT",
   },
+  {
+    slug: "sermon-on-the-mount-as-politics",
+    title: "The Sermon on the Mount as Politics",
+    subtitle: "Reading the Kingdom's Constitution Without the Spiritualizing",
+    env: "STRIPE_PRICE_SERMON_ON_THE_MOUNT_AS_POLITICS",
+  },
+  {
+    slug: "prophetic-justice-101",
+    title: "Prophetic Justice 101",
+    subtitle: "Mishpat, Tsedaqah, and What the Church Owes Its Neighborhood",
+    env: "STRIPE_PRICE_PROPHETIC_JUSTICE_101",
+  },
+  {
+    slug: "marriage-in-ministry",
+    title: "Marriage in Ministry",
+    subtitle: "Protecting the Covenant When the Church Demands Everything",
+    env: "STRIPE_PRICE_MARRIAGE_IN_MINISTRY",
+  },
+  {
+    slug: "the-loneliness-of-the-pastor",
+    title: "The Loneliness of the Pastor",
+    subtitle: "Why Pastors Quit, and the Brotherhood That Could Let Them Stay",
+    env: "STRIPE_PRICE_THE_LONELINESS_OF_THE_PASTOR",
+  },
+  {
+    slug: "healwell",
+    title: "HealWell",
+    subtitle: "52 Weeks in Costly Hope",
+    env: "STRIPE_PRICE_HEALWELL",
+  },
 ];
 
 const results = [];

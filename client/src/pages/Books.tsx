@@ -210,6 +210,126 @@ export default function Books() {
         </Link>
       </section>
 
+      {/* NEW EBOOK — The Sermon on the Mount as Politics */}
+      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/sermon-on-the-mount-as-politics" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img src="/books/sermon-on-the-mount-as-politics.svg" alt="The Sermon on the Mount as Politics book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
+                New Ebook · $9.99 · On the Kingdom
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                The Sermon on the Mount as Politics
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
+                We shrank the most public sermon Jesus ever preached until it fit inside our own chests. This reads it as
+                what it is, the constitution of a different kingdom. Read the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* NEW EBOOK — Prophetic Justice 101 */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/prophetic-justice-101" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img src="/books/prophetic-justice-101.svg" alt="Prophetic Justice 101 book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
+                New Ebook · $9.99 · On Justice
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                Prophetic Justice 101
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", margin: 0 }}>
+                Mishpat, tsedaqah, Micah 6:8, and what the church actually owes its neighborhood. The prophetic tradition
+                recovered, biblical and never partisan. Read the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* NEW EBOOK — Marriage in Ministry */}
+      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/marriage-in-ministry" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img src="/books/marriage-in-ministry.svg" alt="Marriage in Ministry book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
+                New Ebook · $9.99 · On Marriage &amp; Ministry
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                Marriage in Ministry
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
+                The church can become the other lover, taking your best hours and leaving the marriage the leftovers.
+                How the covenant survives it, and more than survives. Read the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* NEW EBOOK — The Loneliness of the Pastor */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/the-loneliness-of-the-pastor" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img src="/books/the-loneliness-of-the-pastor.svg" alt="The Loneliness of the Pastor book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
+                New Ebook · $9.99 · For Pastors
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                The Loneliness of the Pastor
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", margin: 0 }}>
+                Why pastors quit, and the brotherhood that could let them stay. The book the Pastors Connection Network
+                was built around. Read the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* NEW DEVOTIONAL — HealWell */}
+      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/healwell" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img src="/books/healwell.svg" alt="HealWell book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
+                New Devotional · $9.99 · 52 Weeks
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                HealWell: 52 Weeks in Costly Hope
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
+                A devotional that will not lie to you. Fifty-two weeks of honest readings, written from inside the wound
+                and pointed toward a hope that costs something. Read the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the devotional →
+            </span>
+          </div>
+        </Link>
+      </section>
+
       {/* NEW RELEASE — featured ebook (standalone product page) */}
       <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/books/when-god-bless-america" style={{ textDecoration: "none", color: "inherit" }}>
