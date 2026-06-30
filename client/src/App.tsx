@@ -188,6 +188,16 @@ const ChurchHistory = lazy(() => import("./pages/landing/ChurchHistory"));
 const ChurchHurt = lazy(() => import("./pages/landing/ChurchHurt"));
 const HonestQuestions = lazy(() => import("./pages/landing/HonestQuestions"));
 const PostChristianLanding = lazy(() => import("./pages/landing/PostChristian"));
+const FAQWhyArePeopleLeavingChurch = lazy(() => import("./pages/faq/WhyArePeopleLeavingChurch"));
+const FAQWhatIsDeconstruction = lazy(() => import("./pages/faq/WhatIsDeconstruction"));
+const FAQIsBibleHistoricallyAccurate = lazy(() => import("./pages/faq/IsBibleHistoricallyAccurate"));
+const FAQWhatDenominationShouldIJoin = lazy(() => import("./pages/faq/WhatDenominationShouldIJoin"));
+const FAQDoesGodExist = lazy(() => import("./pages/faq/DoesGodExist"));
+const FAQWhatDoChristiansBelieveAboutHell = lazy(() => import("./pages/faq/WhatDoChristiansBelieveAboutHell"));
+const FAQCatholicVsProtestant = lazy(() => import("./pages/faq/WhatIsTheDifferenceBetweenCatholicAndProtestant"));
+const FAQWhatIsReligiousTrauma = lazy(() => import("./pages/faq/WhatIsReligiousTrauma"));
+const FAQWhyDoYoungPeopleLeaveChurch = lazy(() => import("./pages/faq/WhyDoYoungPeopleLeaveChurch"));
+const FAQCanScienceAndFaithCoexist = lazy(() => import("./pages/faq/CanScienceAndFaithCoexist"));
 const CatholicVsProtestant = lazy(() => import("./pages/comparisons/CatholicVsProtestant"));
 const CalvinismVsArminianism = lazy(() => import("./pages/comparisons/CalvinismVsArminianism"));
 const BaptistVsMethodist = lazy(() => import("./pages/comparisons/BaptistVsMethodist"));
@@ -462,6 +472,16 @@ function Router() {
         <Route path="/compare/orthodox-vs-catholic" component={OrthodoxVsCatholic} />
         <Route path="/compare/liturgical-vs-contemporary" component={LiturgicalVsContemporary} />
         <Route path="/post-christian" component={PostChristianLanding} />
+        <Route path="/faq/why-are-people-leaving-church" component={FAQWhyArePeopleLeavingChurch} />
+        <Route path="/faq/what-is-deconstruction" component={FAQWhatIsDeconstruction} />
+        <Route path="/faq/is-the-bible-historically-accurate" component={FAQIsBibleHistoricallyAccurate} />
+        <Route path="/faq/what-denomination-should-i-join" component={FAQWhatDenominationShouldIJoin} />
+        <Route path="/faq/does-god-exist" component={FAQDoesGodExist} />
+        <Route path="/faq/what-do-christians-believe-about-hell" component={FAQWhatDoChristiansBelieveAboutHell} />
+        <Route path="/faq/catholic-vs-protestant" component={FAQCatholicVsProtestant} />
+        <Route path="/faq/what-is-religious-trauma" component={FAQWhatIsReligiousTrauma} />
+        <Route path="/faq/why-do-young-people-leave-church" component={FAQWhyDoYoungPeopleLeaveChurch} />
+        <Route path="/faq/can-science-and-faith-coexist" component={FAQCanScienceAndFaithCoexist} />
         <Route path="/dashboard" component={Dashboard} />
 <Route path="/admin/login" component={AdminLogin} />
         <Route path="/admin"><ProtectedRoute component={AdminDashboard} requireAdmin /></Route>
