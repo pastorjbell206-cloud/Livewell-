@@ -2245,6 +2245,12 @@ const EBOOKS: Record<string, EbookConfig> = {
     file: new URL("./_ebooks/covenant.pdf", import.meta.url),
     filename: "Covenant.pdf",
   },
+  "why-not-what": {
+    title: "Why Not What",
+    priceEnv: "STRIPE_PRICE_WHY_NOT_WHAT",
+    file: new URL("./_ebooks/why-not-what.pdf", import.meta.url),
+    filename: "Why-Not-What.pdf",
+  },
 };
 
 const PRODUCTION_SITE_URL = "https://livewellbyjamesbell.co";

@@ -37,12 +37,6 @@ const IN_DEVELOPMENT: PlannedBook[] = [
     for: "anyone honest enough to read it",
   },
   {
-    title: "Why Not What",
-    pitch:
-      "Theology starts with the wrong question. Until it starts with the right one — why — every answer falls apart.",
-    for: "Christians, skeptics",
-  },
-  {
     title: "HealWell: 52 Weeks in Costly Hope",
     pitch:
       "A devotional that doesn't lie to you. One year of readings written from inside the wound.",
