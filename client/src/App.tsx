@@ -88,6 +88,7 @@ const Doubt = lazy(() => import("./pages/Doubt"));
 const Help = lazy(() => import("./pages/Help"));
 const CarePlan = lazy(() => import("./pages/plans/CarePlan"));
 const StartHereQuiz = lazy(() => import("./pages/StartHereQuiz"));
+const StartHereDiagnostic = lazy(() => import("./pages/StartHereDiagnostic"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Accessibility = lazy(() => import("./pages/Accessibility"));
 const Terms = lazy(() => import("./pages/Terms"));
@@ -329,6 +330,7 @@ function Router() {
         <Route path="/help" component={Help} />
         <Route path="/plans/:slug" component={CarePlan} />
         <Route path="/start" component={StartHereQuiz} />
+        <Route path="/start-here" component={StartHereDiagnostic} />
         <Route path="/for-families" component={ForFamiliesRedirect} />
         <Route path="/pillars" component={Pillars} />
         <Route path="/for-pastors" component={ForPastors} />
