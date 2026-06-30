@@ -2166,6 +2166,12 @@ const EBOOKS: Record<string, EbookConfig> = {
     file: new URL("./_ebooks/be-true-to-yourself.pdf", import.meta.url),
     filename: "Be-True-to-Yourself.pdf",
   },
+  "what-belongs-to-the-poor": {
+    title: "What Belongs to the Poor",
+    priceEnv: "STRIPE_PRICE_WHAT_BELONGS_TO_THE_POOR",
+    file: new URL("./_ebooks/what-belongs-to-the-poor.pdf", import.meta.url),
+    filename: "What-Belongs-to-the-Poor.pdf",
+  },
 };
 
 const PRODUCTION_SITE_URL = "https://livewellbyjamesbell.co";

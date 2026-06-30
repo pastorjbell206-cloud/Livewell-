@@ -26,6 +26,8 @@ const HowToReadTheBible = lazy(() => import("./pages/books/HowToReadTheBible"));
 const HowToReadTheBibleThankYou = lazy(() => import("./pages/books/HowToReadTheBibleThankYou"));
 const BeTrueToYourself = lazy(() => import("./pages/books/BeTrueToYourself"));
 const BeTrueToYourselfThankYou = lazy(() => import("./pages/books/BeTrueToYourselfThankYou"));
+const WhatBelongsToThePoor = lazy(() => import("./pages/books/WhatBelongsToThePoor"));
+const WhatBelongsToThePoorThankYou = lazy(() => import("./pages/books/WhatBelongsToThePoorThankYou"));
 const WhenGodBlessAmerica = lazy(() => import("./pages/WhenGodBlessAmerica"));
 const WhenGodBlessAmericaThankYou = lazy(() => import("./pages/WhenGodBlessAmericaThankYou"));
 const Believe = lazy(() => import("./pages/Believe"));
@@ -378,6 +380,8 @@ function Router() {
         <Route path="/how-to-read-the-bible" component={HowToReadTheBible} />
         <Route path="/be-true-to-yourself/thank-you" component={BeTrueToYourselfThankYou} />
         <Route path="/be-true-to-yourself" component={BeTrueToYourself} />
+        <Route path="/what-belongs-to-the-poor/thank-you" component={WhatBelongsToThePoorThankYou} />
+        <Route path="/what-belongs-to-the-poor" component={WhatBelongsToThePoor} />
         <Route path="/substack" component={SubstackPage} />
         <Route path="/pastors" component={Pastors} />
         <Route path="/about" component={About} />

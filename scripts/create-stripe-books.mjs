@@ -74,6 +74,12 @@ const BOOKS = [
     subtitle: "The Lie That Ate the World",
     env: "STRIPE_PRICE_BE_TRUE_TO_YOURSELF",
   },
+  {
+    slug: "what-belongs-to-the-poor",
+    title: "What Belongs to the Poor",
+    subtitle: "What the Ancient Church Knew About Wealth and Justice",
+    env: "STRIPE_PRICE_WHAT_BELONGS_TO_THE_POOR",
+  },
 ];
 
 const results = [];
