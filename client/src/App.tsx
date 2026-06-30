@@ -71,6 +71,7 @@ const SearchPage = lazy(() => import("./pages/Search"));
 const TheologyQuiz = lazy(() => import("./pages/TheologyQuiz"));
 const ResourcesForPastors = lazy(() => import("./pages/ResourcesForPastors"));
 const ReadingPaths = lazy(() => import("./pages/ReadingPaths"));
+const EmailSignup = lazy(() => import("./pages/EmailSignup"));
 const Pillars = lazy(() => import("./pages/Pillars"));
 const ForPastors = lazy(() => import("./pages/ForPastors"));
 const ForLeaders = lazy(() => import("./pages/ForLeaders"));
@@ -176,6 +177,8 @@ const WisdomFinder = lazy(() => import("./pages/tools/WisdomFinder"));
 const Proverbs31 = lazy(() => import("./pages/tools/Proverbs31"));
 const BibleReference = lazy(() => import("./pages/tools/BibleReference"));
 const ToolsGlossary = lazy(() => import("./pages/tools/TheologyGlossary"));
+const QuoteLibrary = lazy(() => import("./pages/tools/QuoteLibrary"));
+const PostChristianSermonSeries = lazy(() => import("./pages/SermonSeries"));
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const WorkWithJames = lazy(() => import("./pages/WorkWithJames"));
 const PastoralBurnout = lazy(() => import("./pages/landing/PastoralBurnout"));
@@ -370,6 +373,7 @@ function Router() {
         <Route path="/articles" component={ArticlesRedirect} />
         <Route path="/reading-paths" component={ReadingPaths} />
         <Route path="/reading-paths/:slug" component={ReadingPathDetail} />
+        <Route path="/subscribe" component={EmailSignup} />
         <Route path="/authors/:slug" component={AuthorProfile} />
         <Route path="/article-collections" component={ArticleCollections} />
         <Route path="/book-bundles" component={BookBundles} />
@@ -413,6 +417,7 @@ function Router() {
         <Route path="/covenant" component={Covenant} />
         <Route path="/why-not-what/thank-you" component={WhyNotWhatThankYou} />
         <Route path="/why-not-what" component={WhyNotWhat} />
+        <Route path="/sermon-series" component={PostChristianSermonSeries} />
         <Route path="/substack" component={SubstackPage} />
         <Route path="/pastors" component={Pastors} />
         <Route path="/about" component={About} />
@@ -450,6 +455,7 @@ function Router() {
         <Route path="/tools/wisdom-finder" component={WisdomFinder} />
         <Route path="/tools/proverbs-31" component={Proverbs31} />
         <Route path="/tools/bible-says" component={BibleReference} />
+        <Route path="/tools/quotes" component={QuoteLibrary} />
         <Route path="/tools/glossary" component={ToolsGlossary} />
         <Route path="/work-with-james" component={WorkWithJames} />
         <Route path="/privacy" component={Privacy} />
