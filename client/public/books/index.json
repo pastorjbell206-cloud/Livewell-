@@ -71,6 +71,38 @@
       "blurb": "The numbers are real, and they are not lying to us. But the question the church keeps asking — are we dying? — is the wrong question, because it assumes the only two states are health and death. There is a third thing, and the Vinedresser has done it before. This is a book about the difference between the church being killed and the church being cut, and why the second one looks almost exactly like the first while it is happening.",
       "pillar": "After Christendom",
       "chapters": 11
+    },
+    {
+      "slug": "dangerous-calling",
+      "title": "Dangerous Calling",
+      "subtitle": "Why the Office of Pastor Is Not for Everyone",
+      "blurb": "The office of pastor is not a career, a platform, or a reward for being good with words. It is a weight God lays on a particular kind of person and refuses to lay on most. This book argues, without softening the edge, that some should not enter the office, that the qualifications God screens for are matters of character before competence, and that the calling, when it is real, costs more than anyone tells you and is worth more than anything you gave up.",
+      "pillar": "Pastoral Ministry",
+      "chapters": 12
+    },
+    {
+      "slug": "earthen-vessels",
+      "title": "Earthen Vessels",
+      "subtitle": "Why Our Bodies Matter to Our Faith",
+      "blurb": "The church inherited a lie it never examined: that the soul is the real you and the body is the cage you carry it in. This book argues the opposite from the center of the faith — that God made matter, entered it, died in it, rose in it, and intends to redeem it. Your body is not the obstacle to your discipleship. It is the place your discipleship happens or does not happen at all.",
+      "pillar": "Theological Depth",
+      "chapters": 11
+    },
+    {
+      "slug": "the-hidden-life-of-a-pastor",
+      "title": "The Hidden Life of a Pastor",
+      "subtitle": "Tending Your Soul While Tending the Flock",
+      "blurb": "The most dangerous thing in ministry is not failure. It is a public life that has quietly outrun the private communion that was supposed to feed it. This is a book about the hidden life with God — the only thing that finally sustains the visible one — written for the shepherd who has not yet admitted how thirsty he has become.",
+      "pillar": "Pastoral Ministry",
+      "chapters": 12
+    },
+    {
+      "slug": "the-undershepherd",
+      "title": "The Undershepherd",
+      "subtitle": "Pastoral Leadership, Authority, and the Care of God's People",
+      "blurb": "The pastor is not the shepherd. He is an under-shepherd, holding a borrowed staff over a flock that was never his, answerable to the One whose blood bought them. This book refuses the two cheap roads — domination and abandonment — and argues that the only authority worth having in the church is the kind that bleeds for the sheep instead of feeding on them.",
+      "pillar": "Pastoral Ministry",
+      "chapters": 11
     }
   ]
 }
