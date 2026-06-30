@@ -22,6 +22,16 @@ const Covenant = lazy(() => import("./pages/books/Covenant"));
 const CovenantThankYou = lazy(() => import("./pages/books/CovenantThankYou"));
 const WhyNotWhat = lazy(() => import("./pages/books/WhyNotWhat"));
 const WhyNotWhatThankYou = lazy(() => import("./pages/books/WhyNotWhatThankYou"));
+const SermonOnTheMountAsPolitics = lazy(() => import("./pages/books/SermonOnTheMountAsPolitics"));
+const SermonOnTheMountAsPoliticsThankYou = lazy(() => import("./pages/books/SermonOnTheMountAsPoliticsThankYou"));
+const PropheticJustice101 = lazy(() => import("./pages/books/PropheticJustice101"));
+const PropheticJustice101ThankYou = lazy(() => import("./pages/books/PropheticJustice101ThankYou"));
+const MarriageInMinistry = lazy(() => import("./pages/books/MarriageInMinistry"));
+const MarriageInMinistryThankYou = lazy(() => import("./pages/books/MarriageInMinistryThankYou"));
+const TheLonelinessOfThePastor = lazy(() => import("./pages/books/TheLonelinessOfThePastor"));
+const TheLonelinessOfThePastorThankYou = lazy(() => import("./pages/books/TheLonelinessOfThePastorThankYou"));
+const HealWell = lazy(() => import("./pages/books/HealWell"));
+const HealWellThankYou = lazy(() => import("./pages/books/HealWellThankYou"));
 const WhenGodBlessAmerica = lazy(() => import("./pages/WhenGodBlessAmerica"));
 const WhenGodBlessAmericaThankYou = lazy(() => import("./pages/WhenGodBlessAmericaThankYou"));
 const Believe = lazy(() => import("./pages/Believe"));
@@ -418,6 +428,16 @@ function Router() {
         <Route path="/why-not-what/thank-you" component={WhyNotWhatThankYou} />
         <Route path="/why-not-what" component={WhyNotWhat} />
         <Route path="/sermon-series" component={PostChristianSermonSeries} />
+        <Route path="/sermon-on-the-mount-as-politics/thank-you" component={SermonOnTheMountAsPoliticsThankYou} />
+        <Route path="/sermon-on-the-mount-as-politics" component={SermonOnTheMountAsPolitics} />
+        <Route path="/prophetic-justice-101/thank-you" component={PropheticJustice101ThankYou} />
+        <Route path="/prophetic-justice-101" component={PropheticJustice101} />
+        <Route path="/marriage-in-ministry/thank-you" component={MarriageInMinistryThankYou} />
+        <Route path="/marriage-in-ministry" component={MarriageInMinistry} />
+        <Route path="/the-loneliness-of-the-pastor/thank-you" component={TheLonelinessOfThePastorThankYou} />
+        <Route path="/the-loneliness-of-the-pastor" component={TheLonelinessOfThePastor} />
+        <Route path="/healwell/thank-you" component={HealWellThankYou} />
+        <Route path="/healwell" component={HealWell} />
         <Route path="/substack" component={SubstackPage} />
         <Route path="/pastors" component={Pastors} />
         <Route path="/about" component={About} />
