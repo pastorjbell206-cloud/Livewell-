@@ -111,6 +111,30 @@
       "blurb": "The man you call to feed you is starving, and you have not noticed. This is a book about the reciprocal duty a congregation owes the shepherd it ordained to shepherd it — and about the first flock no one counts, the family inside the parsonage who absorb the cost of a ministry they never chose. It is written to the church as much as to the pastor, because the pastor cannot fix this, and the church has been pretending it is not the one holding the knife.",
       "pillar": "Pastoral Ministry",
       "chapters": 11
+    },
+    {
+      "slug": "one-body-many-churches",
+      "title": "One Body, Many Churches",
+      "subtitle": "A Theology of Unity for a Fractured Church",
+      "blurb": "The church Jesus prayed for is one. The church the world sees is splintered into thousands of pieces, each certain it holds the center. This book holds two truths the modern church keeps tearing apart: that the body of Christ is genuinely one, and that the differences between churches are genuinely real — and it refuses the two cheap exits of sectarian pride and mushy relativism.",
+      "pillar": "Theological Depth",
+      "chapters": 11
+    },
+    {
+      "slug": "preach-the-word",
+      "title": "Preach the Word",
+      "subtitle": "The Primacy of Expository Preaching in the Local Church",
+      "blurb": "The pulpit has become a stage, and the sermon a performance measured by how well it moves a room. This book argues that the preacher's only authority is the text in front of him, that exposition is not a method among methods but the recovery of a church that has stopped expecting God to speak. It is written for the pastor who is tired of being interesting and wants, again, to be faithful.",
+      "pillar": "Pastoral Ministry",
+      "chapters": 11
+    },
+    {
+      "slug": "the-unfinished-church",
+      "title": "The Unfinished Church",
+      "subtitle": "Calling, Vision, and the Future God Is Building",
+      "blurb": "The church is not a monument to defend or a method to chase. It is a building still rising, founded on a promise older than any of us and aimed at a city we have not yet seen. This book is about what it means to belong to something God is building and we are not finishing.",
+      "pillar": "After Christendom",
+      "chapters": 11
     }
   ]
 }
