@@ -283,6 +283,7 @@ export default function VerseFinder() {
             <Search size={16} style={{ position: "absolute", left: "14px", top: "50%", transform: "translateY(-50%)", color: "var(--ink3)", pointerEvents: "none" }} />
             <input
               type="text"
+              aria-label="Filter topics"
               placeholder="Filter topics..."
               value={searchFilter}
               onChange={(e) => setSearchFilter(e.target.value)}

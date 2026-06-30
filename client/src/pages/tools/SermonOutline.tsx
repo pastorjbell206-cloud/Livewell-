@@ -496,6 +496,7 @@ export default function SermonOutline() {
                 {/* Scripture passage */}
                 <div>
                   <label
+                    htmlFor="sermon-scripture"
                     style={{
                       display: "block",
                       fontSize: "14px",
@@ -508,6 +509,7 @@ export default function SermonOutline() {
                     Scripture Passage
                   </label>
                   <input
+                    id="sermon-scripture"
                     type="text"
                     placeholder="e.g. Romans 8:28-39, John 15:1-17"
                     value={scripture}
@@ -530,6 +532,7 @@ export default function SermonOutline() {
                 {/* Topic dropdown */}
                 <div>
                   <label
+                    htmlFor="sermon-topic"
                     style={{
                       display: "block",
                       fontSize: "14px",
@@ -542,6 +545,7 @@ export default function SermonOutline() {
                     Topic / Theme
                   </label>
                   <select
+                    id="sermon-topic"
                     value={topic}
                     onChange={(e) => setTopic(e.target.value)}
                     style={{
@@ -571,6 +575,7 @@ export default function SermonOutline() {
                 {/* Audience dropdown */}
                 <div>
                   <label
+                    htmlFor="sermon-audience"
                     style={{
                       display: "block",
                       fontSize: "14px",
@@ -583,6 +588,7 @@ export default function SermonOutline() {
                     Audience
                   </label>
                   <select
+                    id="sermon-audience"
                     value={audience}
                     onChange={(e) => setAudience(e.target.value)}
                     style={{
