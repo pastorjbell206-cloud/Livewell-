@@ -9,6 +9,7 @@ interface PublishResult {
   matched: number;
   updated: number;
   missing: string[];
+  blocked: string[];
   dryRun: boolean;
 }
 
@@ -54,6 +55,9 @@ export default function AdminPublishContent() {
     };
     let matched = 0, updated = 0;
     const missing: string[] = [];
+    // Bodies the server refused to publish because they still contain unresolved
+    // [cite — confirm] placeholders. They are skipped, never written.
+    const blocked: string[] = [];
     // Build the batches, then process them. A batch that keeps failing is set
     // aside (not aborted) and retried in sweeps at the end, so one slow/stalled
     // request can't stop the whole run.
@@ -73,6 +77,7 @@ export default function AdminPublishContent() {
             matched += r.matched;
             updated += r.updated;
             missing.push(...r.missing);
+            blocked.push(...((r as any).blocked || []));
           } catch {
             stillFailing.push(items);
           }
@@ -82,8 +87,11 @@ export default function AdminPublishContent() {
         pending = stillFailing;
         if (pending.length) await new Promise((r) => setTimeout(r, 1500));
       }
-      setResult({ total: all.length, matched, updated, missing, dryRun });
+      setResult({ total: all.length, matched, updated, missing, blocked, dryRun });
       const stragglers = pending.reduce((n, b) => n + b.length, 0);
+      if (blocked.length > 0) {
+        toast.warning(`${blocked.length} article(s) were held back — they still contain unverified [cite] citations. Resolve those before publishing.`);
+      }
       if (stragglers > 0) {
         toast.error(`${updated} done; ${stragglers} kept stalling — click Publish once more to finish them.`);
       } else {
@@ -190,6 +198,26 @@ export default function AdminPublishContent() {
                   {result.missing.join(", ")}
                 </div>
               </details>
+            )}
+            {result.blocked.length > 0 && (
+              <div className="mt-4 rounded p-4" style={{ backgroundColor: "#FBF5E6", border: "1px solid #D4A017" }}>
+                <div className="flex items-center gap-2 font-ui font-semibold" style={{ color: "#1A1A1A" }}>
+                  <AlertTriangle size={16} style={{ color: "#D4A017" }} />
+                  {result.blocked.length} held back — unverified citations
+                </div>
+                <p className="font-body text-sm mt-2" style={{ color: "#5A5448" }}>
+                  These articles still contain <code>[cite — confirm]</code> placeholders and were not
+                  published. Resolve or remove the citations, then publish again.
+                </p>
+                <details className="mt-2">
+                  <summary className="cursor-pointer font-ui text-sm" style={{ color: "#5A5448" }}>
+                    Show the {result.blocked.length} held-back slugs
+                  </summary>
+                  <div className="mt-2 text-sm font-mono" style={{ color: "#5A5448" }}>
+                    {result.blocked.join(", ")}
+                  </div>
+                </details>
+              </div>
             )}
             {result.dryRun && result.matched > 0 && (
               <p className="mt-4 font-body text-sm" style={{ color: "#5A5448" }}>
