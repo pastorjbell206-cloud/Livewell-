@@ -62,6 +62,12 @@ const BOOKS = [
     subtitle: "How Theology Starts With the Right Question",
     env: "STRIPE_PRICE_WHY_NOT_WHAT",
   },
+  {
+    slug: "raising-five-sons",
+    title: "Raising Five Sons",
+    subtitle: "What It Costs to Be There, and the Father I Had to Become",
+    env: "STRIPE_PRICE_RAISING_FIVE_SONS",
+  },
 ];
 
 const results = [];

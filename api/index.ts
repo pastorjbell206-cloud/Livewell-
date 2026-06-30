@@ -2415,6 +2415,12 @@ const EBOOKS: Record<string, EbookConfig> = {
     file: new URL("./_ebooks/why-not-what.pdf", import.meta.url),
     filename: "Why-Not-What.pdf",
   },
+  "raising-five-sons": {
+    title: "Raising Five Sons",
+    priceEnv: "STRIPE_PRICE_RAISING_FIVE_SONS",
+    file: new URL("./_ebooks/raising-five-sons.pdf", import.meta.url),
+    filename: "Raising-Five-Sons.pdf",
+  },
 };
 
 const PRODUCTION_SITE_URL = "https://livewellbyjamesbell.co";

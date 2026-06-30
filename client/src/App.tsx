@@ -22,6 +22,8 @@ const Covenant = lazy(() => import("./pages/books/Covenant"));
 const CovenantThankYou = lazy(() => import("./pages/books/CovenantThankYou"));
 const WhyNotWhat = lazy(() => import("./pages/books/WhyNotWhat"));
 const WhyNotWhatThankYou = lazy(() => import("./pages/books/WhyNotWhatThankYou"));
+const RaisingFiveSons = lazy(() => import("./pages/books/RaisingFiveSons"));
+const RaisingFiveSonsThankYou = lazy(() => import("./pages/books/RaisingFiveSonsThankYou"));
 const WhenGodBlessAmerica = lazy(() => import("./pages/WhenGodBlessAmerica"));
 const WhenGodBlessAmericaThankYou = lazy(() => import("./pages/WhenGodBlessAmericaThankYou"));
 const Believe = lazy(() => import("./pages/Believe"));
@@ -394,6 +396,8 @@ function Router() {
         <Route path="/covenant" component={Covenant} />
         <Route path="/why-not-what/thank-you" component={WhyNotWhatThankYou} />
         <Route path="/why-not-what" component={WhyNotWhat} />
+        <Route path="/raising-five-sons/thank-you" component={RaisingFiveSonsThankYou} />
+        <Route path="/raising-five-sons" component={RaisingFiveSons} />
         <Route path="/substack" component={SubstackPage} />
         <Route path="/pastors" component={Pastors} />
         <Route path="/about" component={About} />

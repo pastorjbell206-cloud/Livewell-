@@ -1,0 +1,122 @@
+/**
+ * Raising Five Sons (/raising-five-sons). The ebook sales page: cover, pitch, a
+ * free sample (the opening, served from /books/raising-five-sons-sample.md), and
+ * a Buy button. The full book is delivered as a gated PDF via /api/checkout ->
+ * /api/download after payment.
+ */
+import { useEffect, useState } from "react";
+import { Streamdown } from "streamdown";
+import Layout from "@/components/Layout";
+import { SEOMeta } from "@/components/SEOMeta";
+import { SITE_URL } from "@/lib/site";
+import { BuyEbookButton } from "@/components/BuyEbookButton";
+
+const SLUG = "raising-five-sons";
+const TITLE = "Raising Five Sons";
+const SUBTITLE = "What It Costs to Be There, and the Father I Had to Become";
+const prose = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
+
+export default function RaisingFiveSons() {
+  const [sample, setSample] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetch("/books/raising-five-sons-sample.md", { cache: "no-store" })
+      .then((r) => (r.ok ? r.text() : Promise.reject(new Error("not found"))))
+      .then((md) => setSample(md.trim()))
+      .catch(() => setSample(""));
+  }, []);
+
+  return (
+    <Layout>
+      <SEOMeta
+        title={`${TITLE} — An Ebook by James Bell`}
+        description="A book on fathering from a man who was raised without a father and came to faith from atheism. What five sons taught him about presence over performance, carrying weight, repenting quickly, delight, the long wait, and the God he met in the room with his sons. PDF ebook by James Bell."
+        url={`${SITE_URL}/${SLUG}`}
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Book",
+          name: TITLE,
+          author: { "@type": "Person", name: "James Bell" },
+          url: `${SITE_URL}/${SLUG}`,
+          bookFormat: "https://schema.org/EBook",
+          inLanguage: "en",
+          offers: { "@type": "Offer", price: "9.99", priceCurrency: "USD" },
+        }}
+      />
+
+      {/* HERO — cover + buy */}
+      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
+        <div style={{ ...prose, display: "flex", gap: "44px", alignItems: "center", flexWrap: "wrap" }}>
+          <img
+            src="/books/raising-five-sons.svg"
+            alt={`${TITLE} cover`}
+            width={210}
+            height={315}
+            style={{ width: "190px", height: "auto", borderRadius: "3px", boxShadow: "0 16px 48px rgba(0,0,0,.55)", flex: "0 0 auto" }}
+          />
+          <div style={{ flex: "1 1 320px" }}>
+            <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
+              New Ebook · On Fathering
+            </div>
+            <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 4.6vw, 50px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "14px 0 12px" }}>
+              {TITLE}
+            </h1>
+            <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontStyle: "italic", color: "rgba(245,240,230,.82)", margin: "0 0 22px", maxWidth: "40ch" }}>
+              {SUBTITLE}
+            </p>
+            <BuyEbookButton slug={SLUG} />
+            <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: "rgba(245,240,230,.55)", marginTop: "12px" }}>
+              PDF · instant download · secure checkout by Stripe
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* PITCH */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-4)" }}>
+        <div style={prose}>
+          <p style={{ fontFamily: "var(--B)", fontSize: "19px", lineHeight: 1.8, color: "var(--ink)" }}>
+            I was raised without a father, and I came to faith from atheism, and the night my first son was handed to me
+            I knew I had no idea what I was doing. That happened five times. This is the book those boys wrote in me over
+            two decades. It is not a manual. It is the truth about what fathering actually costs, about the vacancy a
+            missing father leaves and what fills it, and about the one thing our performance culture counts for nothing
+            and a son needs more than anything else. Formation over performance. Presence over competence. The boys in
+            the next room are being shaped by what you are, not by what you provide.
+          </p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)" }}>
+            By James Bell, who met the Father he never had in the room where his sons were. Read the opening below, free.
+          </p>
+        </div>
+      </section>
+
+      {/* FREE SAMPLE */}
+      <section style={{ background: "var(--bone)", padding: "0 var(--s-4) var(--s-5)" }}>
+        <div style={prose} className="book-prose">
+          {sample ? <Streamdown>{sample}</Streamdown> : <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the opening…</p>}
+        </div>
+      </section>
+
+      {/* BUY AGAIN */}
+      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ ...prose, textAlign: "center" }}>
+          <p style={{ fontFamily: "var(--F)", fontSize: "24px", fontStyle: "italic", margin: "0 0 22px", color: "rgba(245,240,230,.92)" }}>
+            They did not need me to know what I was doing. They needed me to stay.
+          </p>
+          <div style={{ display: "inline-flex" }}>
+            <BuyEbookButton slug={SLUG} />
+          </div>
+        </div>
+      </section>
+
+      <style>{`
+        .book-prose { font-family: var(--B); color: var(--ink); }
+        .book-prose h2 { font-family: var(--F); font-weight: 400; font-size: clamp(24px, 3.2vw, 32px); letter-spacing: -0.015em; line-height: 1.2; margin: 2.2em 0 0.6em; color: var(--ink); }
+        .book-prose p { font-size: 18px; line-height: 1.85; margin: 0 0 1.15em; color: var(--ink); }
+        .book-prose blockquote { border-left: 3px solid var(--mustard); margin: 1.8em 0; padding: 0.2em 0 0.2em 1.1em; font-family: var(--F); font-style: italic; font-size: 22px; line-height: 1.5; color: var(--ink); }
+        .book-prose blockquote p { font-size: inherit; font-style: inherit; }
+        .book-prose hr { border: none; border-top: 1px solid var(--border); margin: 2.4em 0; }
+        .book-prose em { font-style: italic; }
+      `}</style>
+    </Layout>
+  );
+}

@@ -70,11 +70,6 @@ const PLANNED: PlannedBook[] = [
     pitch: "The pressures the parsonage carries that the rest of the marriage manuals never name.",
     for: "couples, pastors",
   },
-  {
-    title: "Raising Five Sons",
-    pitch: "What I learned from being there every day for two decades. Formation over performance.",
-    for: "parents",
-  },
 ];
 
 function PlannedRow({
