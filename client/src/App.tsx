@@ -174,6 +174,7 @@ const RuleOfLife = lazy(() => import("./pages/tools/RuleOfLife"));
 const BibleOnTopic = lazy(() => import("./pages/tools/BibleOnTopic"));
 const WisdomFinder = lazy(() => import("./pages/tools/WisdomFinder"));
 const Proverbs31 = lazy(() => import("./pages/tools/Proverbs31"));
+const BibleReference = lazy(() => import("./pages/tools/BibleReference"));
 const WorkWithJames = lazy(() => import("./pages/WorkWithJames"));
 const PastoralBurnout = lazy(() => import("./pages/landing/PastoralBurnout"));
 const FaithCrisis = lazy(() => import("./pages/landing/FaithCrisis"));
@@ -185,6 +186,12 @@ const ChurchHistory = lazy(() => import("./pages/landing/ChurchHistory"));
 const ChurchHurt = lazy(() => import("./pages/landing/ChurchHurt"));
 const HonestQuestions = lazy(() => import("./pages/landing/HonestQuestions"));
 const PostChristianLanding = lazy(() => import("./pages/landing/PostChristian"));
+const CatholicVsProtestant = lazy(() => import("./pages/comparisons/CatholicVsProtestant"));
+const CalvinismVsArminianism = lazy(() => import("./pages/comparisons/CalvinismVsArminianism"));
+const BaptistVsMethodist = lazy(() => import("./pages/comparisons/BaptistVsMethodist"));
+const EvangelicalVsMainline = lazy(() => import("./pages/comparisons/EvangelicalVsMainline"));
+const OrthodoxVsCatholic = lazy(() => import("./pages/comparisons/OrthodoxVsCatholic"));
+const LiturgicalVsContemporary = lazy(() => import("./pages/comparisons/LiturgicalVsContemporary"));
 const ReadingPathDetail = lazy(() =>
   import("./pages/ReadingPathDetail").then((m) => ({ default: m.ReadingPathDetail }))
 );
@@ -430,6 +437,7 @@ function Router() {
         <Route path="/tools/bible-on" component={BibleOnTopic} />
         <Route path="/tools/wisdom-finder" component={WisdomFinder} />
         <Route path="/tools/proverbs-31" component={Proverbs31} />
+        <Route path="/tools/bible-says" component={BibleReference} />
         <Route path="/work-with-james" component={WorkWithJames} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/accessibility" component={Accessibility} />
@@ -444,6 +452,12 @@ function Router() {
         <Route path="/church-history" component={ChurchHistory} />
         <Route path="/church-hurt" component={ChurchHurt} />
         <Route path="/honest-questions" component={HonestQuestions} />
+        <Route path="/compare/catholic-vs-protestant" component={CatholicVsProtestant} />
+        <Route path="/compare/calvinism-vs-arminianism" component={CalvinismVsArminianism} />
+        <Route path="/compare/baptist-vs-methodist" component={BaptistVsMethodist} />
+        <Route path="/compare/evangelical-vs-mainline" component={EvangelicalVsMainline} />
+        <Route path="/compare/orthodox-vs-catholic" component={OrthodoxVsCatholic} />
+        <Route path="/compare/liturgical-vs-contemporary" component={LiturgicalVsContemporary} />
         <Route path="/post-christian" component={PostChristianLanding} />
 <Route path="/admin/login" component={AdminLogin} />
         <Route path="/admin"><ProtectedRoute component={AdminDashboard} requireAdmin /></Route>
