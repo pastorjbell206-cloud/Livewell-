@@ -813,5 +813,803 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "pillar": 1,
     "subThemes": [],
     "confidence": "med"
+  },
+  "how-to-read-the-bible-without-making-it-say-what-you-want": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "what-the-gospel-actually-is": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "the-trinity-is-not-optional": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "inerrancy-infallibility-and-the-word-you-can-trust": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "grace-is-not-a-feeling": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "the-council-of-nicaea-what-was-decided-in-325": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "how-the-reformation-started-and-why-it-still-matters": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "the-great-awakenings-and-the-making-of-american-faith": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "why-there-are-so-many-christian-denominations": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "the-crusades-what-actually-happened": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "what-is-the-kingdom-of-god-and-why-it-changes-everything": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "exodus-the-story-underneath-the-whole-bible": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "why-the-bible-is-one-story-not-66-books": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "what-it-means-to-bear-the-image-of-god": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "already-and-not-yet-living-between-two-worlds": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "what-christian-nationalism-is-and-is-not": {
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "loving-versus-worshiping-your-country": {
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "flags-in-the-sanctuary": {
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "whose-kingdom-jesus-and-political-power": {
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "how-the-religious-right-was-built": {
+    "pillar": 6,
+    "subThemes": [
+      "vocation-work"
+    ],
+    "confidence": "med"
+  },
+  "what-render-unto-caesar-actually-means": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "christendom-is-ending-christianity-is-not": {
+    "pillar": 4,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "the-early-church-under-rome": {
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "two-kingdoms-faith-and-state": {
+    "pillar": 4,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "the-church-after-cultural-power": {
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "how-to-revitalize-a-dying-church": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "why-churches-close-and-what-comes-next": {
+    "pillar": 4,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "why-gen-z-is-coming-back-to-church": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "replanting-when-a-church-starts-over": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "leading-a-church-when-trust-is-gone": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "how-individualism-changed-how-we-read-the-bible": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "consumerism-is-a-spiritual-formation": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "the-church-captive-to-the-culture-war": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "outrage-is-not-a-spiritual-gift": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "formed-by-screens-technology-and-the-soul": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "LOW"
+  },
+  "what-the-bible-actually-says-about-money-and-wealth": {
+    "pillar": 6,
+    "subThemes": [
+      "fatherhood",
+      "family-household",
+      "friendship-community",
+      "vocation-work"
+    ],
+    "confidence": "high"
+  },
+  "is-poverty-political-the-bibles-answer": {
+    "pillar": 2,
+    "subThemes": [],
+    "confidence": "LOW"
+  },
+  "jubilee-debt-and-the-economy-god-commanded": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "the-eye-of-the-needle-jesus-and-the-rich": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "charity-is-not-justice-the-difference": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "fatherhood",
+      "family-household",
+      "vocation-work"
+    ],
+    "confidence": "med"
+  },
+  "covenant-vs-contract-what-marriage-is": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "fatherhood",
+      "family-household",
+      "friendship-community",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "how-to-raise-children-in-the-faith": {
+    "pillar": 6,
+    "subThemes": [
+      "fatherhood",
+      "parenting",
+      "family-household",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "what-fatherhood-requires": {
+    "pillar": 6,
+    "subThemes": [
+      "fatherhood",
+      "parenting",
+      "family-household",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "protecting-your-marriage-from-work": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "parenting",
+      "family-household",
+      "vocation-work"
+    ],
+    "confidence": "high"
+  },
+  "forgiveness-in-marriage": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "fatherhood",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "why-pastors-are-leaving-ministry": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "depression-in-the-pulpit": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "how-to-lead-without-losing-your-soul": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "the-interior-life-of-the-pastor": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "why-your-church-should-require-a-sabbatical": {
+    "pillar": 6,
+    "subThemes": [
+      "fatherhood",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "how-to-preach-to-people-who-have-heard-it-all": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "preaching-politics-without-losing-the-gospel": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "expository-vs-topical-preaching": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "five-preaching-habits-that-empty-a-room": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "the-difference-between-a-sermon-and-a-talk": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "the-most-segregated-hour": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "what-the-bible-means-by-reconciliation": {
+    "pillar": 6,
+    "subThemes": [
+      "family-household",
+      "friendship-community",
+      "vocation-work"
+    ],
+    "confidence": "med"
+  },
+  "the-image-of-god-and-the-lie-of-race": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "lament-the-prayer-the-church-forgot": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "fatherhood",
+      "parenting",
+      "friendship-community",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "med"
+  },
+  "building-the-multiethnic-church": {
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "what-the-sabbath-is-and-why-you-need-it": {
+    "pillar": 6,
+    "subThemes": [
+      "fatherhood",
+      "parenting",
+      "family-household",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "how-to-rest-in-a-culture-of-exhaustion": {
+    "pillar": 6,
+    "subThemes": [
+      "family-household",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "prayer-when-you-do-not-feel-like-it": {
+    "pillar": 6,
+    "subThemes": [
+      "friendship-community",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "the-examined-life-practices-that-hold": {
+    "pillar": 6,
+    "subThemes": [
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "how-to-read-the-bible-devotionally": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "how-to-build-a-healthy-church-staff-culture": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "when-to-fire-someone-in-ministry": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "leading-through-conflict-on-a-church-team": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "how-to-develop-leaders-not-just-volunteers": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "the-lonely-seat-power-and-the-senior-leader": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "individual-sin-and-systemic-sin-explained": {
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "LOW"
+  },
+  "what-is-biblical-justice-mishpat-and-tsedaqah": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "complicity-how-good-people-sustain-bad-systems": {
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "why-the-prophets-made-everyone-uncomfortable": {
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "principalities-and-powers-the-bibles-language-for-systems": {
+    "pillar": 1,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "what-the-bible-says-about-the-poor-and-the-stranger": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "disability-dignity-and-the-image-of-god": {
+    "pillar": 6,
+    "subThemes": [
+      "parenting",
+      "friendship-community",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "med"
+  },
+  "mental-health-and-the-church-beyond-pray-about-it": {
+    "pillar": 6,
+    "subThemes": [
+      "friendship-community",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "med"
+  },
+  "what-the-bible-says-about-immigrants-and-refugees-in-depth": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "fatherhood",
+      "parenting",
+      "family-household",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "the-consistent-pro-life-ethic-womb-to-tomb": {
+    "pillar": 6,
+    "subThemes": [
+      "parenting",
+      "vocation-work"
+    ],
+    "confidence": "med"
+  },
+  "what-is-vocation-work-as-calling": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "how-to-find-gods-will-for-your-career": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "fatherhood",
+      "family-household",
+      "vocation-work"
+    ],
+    "confidence": "high"
+  },
+  "a-christian-view-of-personal-finance": {
+    "pillar": 6,
+    "subThemes": [
+      "fatherhood",
+      "parenting",
+      "family-household",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "rest-ambition-and-the-idol-of-success": {
+    "pillar": 6,
+    "subThemes": [
+      "fatherhood",
+      "parenting",
+      "friendship-community",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "bivocational-ministry-done-right": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "teen-did-the-resurrection-actually-happen": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "teen-can-you-actually-trust-the-bible": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "teen-if-god-is-good-why-is-there-suffering": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "parenting",
+      "family-household",
+      "friendship-community",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "med"
+  },
+  "teen-does-science-disprove-god": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "teen-isnt-jesus-just-one-way-among-many": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "LOW"
+  },
+  "teen-it-is-okay-to-doubt": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "apologetics-where-does-morality-come-from": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "LOW"
+  },
+  "apologetics-why-is-god-hidden": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "fatherhood",
+      "parenting",
+      "vocation-work"
+    ],
+    "confidence": "med"
+  },
+  "apologetics-how-can-a-loving-god-allow-hell": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "apologetics-what-about-those-who-never-heard": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "apologetics-hasnt-the-church-done-terrible-things": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "med"
+  },
+  "apologetics-can-a-reasonable-person-believe-in-miracles": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "apologetics-isnt-faith-believing-without-evidence": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "apologetics-why-does-god-allow-evil": {
+    "pillar": 6,
+    "subThemes": [
+      "parenting",
+      "friendship-community",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "parenting-discipline-that-forms-the-heart": {
+    "pillar": 6,
+    "subThemes": [
+      "fatherhood",
+      "parenting",
+      "family-household",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "parenting-raising-kids-in-a-screen-age": {
+    "pillar": 6,
+    "subThemes": [
+      "fatherhood",
+      "parenting",
+      "family-household",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "parenting-talking-about-sex-and-identity": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "fatherhood",
+      "parenting",
+      "family-household",
+      "vocation-work"
+    ],
+    "confidence": "high"
+  },
+  "parenting-teaching-kids-to-pray-and-read-scripture": {
+    "pillar": 6,
+    "subThemes": [
+      "fatherhood",
+      "parenting",
+      "family-household",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "parenting-when-your-child-doubts-or-walks-away": {
+    "pillar": 6,
+    "subThemes": [
+      "fatherhood",
+      "parenting",
+      "family-household",
+      "friendship-community",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "parenting-letting-them-fail": {
+    "pillar": 6,
+    "subThemes": [
+      "fatherhood",
+      "parenting",
+      "vocation-work"
+    ],
+    "confidence": "high"
+  },
+  "parenting-spiritual-milestones-by-age": {
+    "pillar": 6,
+    "subThemes": [
+      "fatherhood",
+      "parenting",
+      "family-household",
+      "friendship-community",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "parenting-family-rhythms-that-form-faith": {
+    "pillar": 6,
+    "subThemes": [
+      "fatherhood",
+      "parenting",
+      "family-household",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "marriage-communication-that-works": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "parenting",
+      "family-household",
+      "friendship-community",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "marriage-fighting-fair": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "family-household",
+      "vocation-work"
+    ],
+    "confidence": "high"
+  },
+  "marriage-money-and-marriage": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "fatherhood",
+      "parenting",
+      "family-household",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "marriage-after-kids-arrive": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "fatherhood",
+      "parenting",
+      "family-household",
+      "friendship-community",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "marriage-intimacy": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "marriage-forgiveness-and-repair": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "vocation-work"
+    ],
+    "confidence": "high"
+  },
+  "marriage-through-depression-and-crisis": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "parenting",
+      "family-household",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "marriage-leading-and-serving-together": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant",
+      "parenting",
+      "family-household",
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
   }
 };
