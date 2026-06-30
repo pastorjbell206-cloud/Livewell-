@@ -135,6 +135,22 @@
       "blurb": "The church is not a monument to defend or a method to chase. It is a building still rising, founded on a promise older than any of us and aimed at a city we have not yet seen. This book is about what it means to belong to something God is building and we are not finishing.",
       "pillar": "After Christendom",
       "chapters": 11
+    },
+    {
+      "slug": "necessary-words",
+      "title": "Necessary Words",
+      "subtitle": "A Pastoral Theology of Courage and Difficult Conversations",
+      "blurb": "The church has confused niceness with love and silence with peace, and the cost has been borne by the people we refused to tell the truth. This is a theology of the necessary word — the prophetic and pastoral courage to confront sin, address conflict, and say the thing that wounds in order to heal. Speaking truth in love is not a temperament. It is an obedience, and most of us have spent our lives avoiding it.",
+      "pillar": "Pastoral Ministry",
+      "chapters": 11
+    },
+    {
+      "slug": "to-the-ends-of-the-earth",
+      "title": "To the Ends of the Earth",
+      "subtitle": "Global Mission, National Partnership, and the Sent Church",
+      "blurb": "The center of Christianity no longer sits where the maps of our missionary fathers drew it; it has moved south and east, and most Western churches have not noticed they were left holding a parochialism they mistook for the faith itself. This book argues that the Great Commission is non-negotiable and that the way we have often carried it out is indictable, and that the only path forward is partnership that surrenders control to the very churches the West once condescended to. It is a call to become again what the church has always been underneath its committees and budgets: a sent people, going to the ends of the earth and paying for it.",
+      "pillar": "Prophetic Justice",
+      "chapters": 11
     }
   ]
 }
