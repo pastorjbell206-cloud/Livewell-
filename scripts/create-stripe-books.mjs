@@ -56,6 +56,12 @@ const BOOKS = [
     subtitle: "Why Marriage Is a Promise, Not a Deal",
     env: "STRIPE_PRICE_COVENANT",
   },
+  {
+    slug: "why-not-what",
+    title: "Why Not What",
+    subtitle: "How Theology Starts With the Right Question",
+    env: "STRIPE_PRICE_WHY_NOT_WHAT",
+  },
 ];
 
 const results = [];
