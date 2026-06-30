@@ -968,6 +968,718 @@ const BOOKS: BibleBook[] = [
       },
     ],
   },
+  {
+    name: "Ruth", testament: "OT", hook: "The story of loyalty that rewrote the rules of belonging",
+    passages: [
+      {
+        ref: "Ruth 1:1-18",
+        summary: "Naomi and Ruth and the loyalty that outlasts loss",
+        text: "In the days when the judges ruled, there was a famine in the land. So a man from Bethlehem in Judah, together with his wife and two sons, went to live for a while in the country of Moab... But Ruth replied, 'Don't urge me to leave you or to turn back from you. Where you go I will go, and where you stay I will stay. Your people will be my people and your God my God.'",
+        paraphrase: "Naomi lost everything. Her husband. Both sons. Her future. She had nothing left to offer Ruth — no inheritance, no prospects, no reason to stay. And Ruth stayed anyway. Not because it made sense. Not because Naomi asked. Because loyalty does not calculate returns. Ruth chose a widow with empty hands over a homeland with open doors. That is not romance. That is covenant.",
+        keyWords: [
+          { word: "cling", original: "davaq (Hebrew)", meaning: "To cling, to hold fast, to adhere. The same word used in Genesis 2:24 for a man clinging to his wife. Ruth's attachment to Naomi carries the weight of a marriage covenant. She is choosing permanent, irrevocable belonging." },
+          { word: "return", original: "shuv (Hebrew)", meaning: "To return, to turn back. Used twelve times in this chapter alone. Naomi tells her daughters-in-law to return to Moab. Orpah returns. Ruth refuses. The word becomes the pivot of the entire story: who turns back, and who presses forward." },
+          { word: "your people will be my people", original: "ammek ammi (Hebrew)", meaning: "Your people, my people. Ruth does not merely adopt Naomi's address. She adopts Naomi's identity. She is renouncing her Moabite gods, her Moabite people, her Moabite future. This is conversion by covenant, not by ceremony." },
+        ],
+        historical: [
+          "The story is set during the period of the judges — Israel's darkest era, when 'everyone did what was right in his own eyes' (Judges 21:25). In a time of moral chaos and tribal violence, this quiet story of a Moabite woman's loyalty is a counter-narrative. While Israel tears itself apart, a foreigner models covenant faithfulness.",
+          "Moab and Israel had a hostile relationship. Moab was born from Lot's incestuous relationship with his daughter (Genesis 19:37). Deuteronomy 23:3 excluded Moabites from the assembly of the Lord 'to the tenth generation.' Ruth is everything Israel's purity codes excluded. Her inclusion in the story — and eventually in the genealogy of David and Jesus — is a deliberate subversion of exclusion.",
+          "Naomi's three-fold loss (husband, then both sons) left her without economic protection in a patriarchal society. Widows without male relatives were among the most vulnerable people in the ancient Near East. When Naomi says 'the Lord's hand has turned against me' (1:13), she is not being dramatic. She is describing social death.",
+          "Ruth's declaration in 1:16-17 follows the structure of ancient covenant oaths. 'Where you go I will go' mirrors the language of treaty commitments in the ancient Near East. Ruth is not making a sentimental promise. She is binding herself by covenant — the same kind of binding language used between God and Israel.",
+        ],
+        literary: {
+          genre: "Narrative novella. A carefully crafted short story set in the period of the judges. The genre is deliberate: in a period of epic violence (Judges), God works through a quiet story of two women making faithful choices.",
+          devices: "Repetition of shuv (return) as the thematic keyword, contrast between Orpah (who returns) and Ruth (who clings), Naomi's bitter wordplay on her own name ('Don't call me Naomi — Pleasant — call me Mara — Bitter'), the escalating oath formula in Ruth's declaration (1:16-17).",
+          keyTerms: [
+            { term: "davaq", language: "Hebrew", meaning: "Cling, hold fast. Carries the weight of marital covenant (Genesis 2:24). Ruth's loyalty to Naomi is not friendship. It is covenant attachment." },
+            { term: "shuv", language: "Hebrew", meaning: "Return. The chapter's controlling verb. Naomi returns to Bethlehem. Orpah returns to Moab. Ruth refuses to return to anything. She only moves forward." },
+            { term: "chesed", language: "Hebrew", meaning: "Loyal love, covenant faithfulness, steadfast kindness. The word that will define Ruth's actions throughout the book. Naomi recognizes it (1:8): Ruth has shown chesed — the same word used for God's covenant love." },
+          ],
+          structure: "The chapter moves from loss (v.1-5), to Naomi's urging to return (v.6-13), to the parting (v.14: Orpah leaves), to Ruth's covenant declaration (v.15-17), to arrival in Bethlehem (v.19-22). The narrative pivots on Ruth's refusal to leave — the moment that changes everything.",
+        },
+        scholars: [
+          { view: "Subversion of exclusion", summary: "Ruth's inclusion as a Moabite in Israel's story challenges Deuteronomy's exclusion of Moabites. The book argues that covenant loyalty, not ethnic identity, determines belonging. The outsider becomes the ancestor of David.", proponents: "Phyllis Trible, Katherine Doob Sakenfeld" },
+          { view: "Chesed theology", summary: "The book illustrates chesed — loyal love — at the human level as a mirror of God's chesed. Ruth's faithful actions reveal what God's covenant faithfulness looks like in ordinary human relationships.", proponents: "Robert Hubbard, Frederic Bush, Edward Campbell" },
+          { view: "Davidic legitimation", summary: "The book functions partly to establish David's genealogy and legitimize his kingship despite his Moabite ancestry. The story says: God's purposes are not thwarted by human boundary-making. They are fulfilled through those whom the rules exclude.", proponents: "Daniel Block, Kirsten Nielsen" },
+        ],
+        application: {
+          question: "Who in your life has stayed when they had every reason to leave? And where has someone's loyalty to you been the vehicle through which God provided?",
+          connection: "We celebrate independence. We admire self-sufficiency. Ruth's story honors something else entirely: the person who refuses to leave. Loyalty is not glamorous. It does not trend. It simply stays. And in staying, it becomes the instrument through which God rewrites the future. The genealogy of Jesus passes through a Moabite widow who refused to go home. God does not work only through the powerful. God works through the faithful.",
+          thisWeek: "Identify one person in your life who is in a season of loss — a Naomi. Do not offer advice. Do not try to fix their situation. Simply stay. Show up. Be present without an agenda. That is chesed — loyal love — in its most basic form.",
+        },
+        deeper: {
+          books: ["Ruth (Anchor Bible Commentary) by Edward Campbell", "Judges and Ruth (Tyndale OT Commentary) by Arthur Cundall and Leon Morris", "Ruth (New International Commentary) by Robert Hubbard"],
+          studyQuestion: "Ruth's loyalty to Naomi eventually leads her into the genealogy of Jesus (Matthew 1:5). What does it mean that the Messiah's ancestry includes a Moabite — someone explicitly excluded by the law? What does this say about who God includes?",
+          prayer: "God, I confess I calculate loyalty. I stay when it serves me and leave when it costs me. Teach me the kind of faithfulness Ruth showed — the kind that stays when there is nothing left to gain. Make me someone who clings. Amen.",
+        },
+      },
+      {
+        ref: "Ruth 4:1-17",
+        summary: "The kinsman-redeemer and why this story is in the genealogy of Jesus",
+        text: "Meanwhile Boaz went up to the town gate and sat down there... Then Boaz announced to the elders and all the people, 'Today you are witnesses that I have bought from Naomi all the property of Elimelek, Kilion and Mahlon. I have also acquired Ruth the Moabite, Mahlon's widow, as my wife...' So Boaz took Ruth and she became his wife... And they named him Obed. He was the father of Jesse, the father of David.",
+        paraphrase: "Boaz did not have to act. Another kinsman had the first right. But when the closer relative heard that redeeming the land meant also taking responsibility for Ruth — a Moabite widow with no status — he stepped back. Too costly. Too complicated. Boaz stepped forward. He redeemed the land, married Ruth, and in doing so became the great-grandfather of King David. The man who was willing to bear the cost became the ancestor of the king. And through that king, the ancestor of Jesus.",
+        keyWords: [
+          { word: "redeem", original: "ga'al (Hebrew)", meaning: "To act as kinsman-redeemer, to buy back, to restore. The go'el was the family member responsible for buying back land, freeing relatives from slavery, or marrying a widow to preserve the family line. The word carries the full weight of restoration at personal cost." },
+          { word: "acquire", original: "qanah (Hebrew)", meaning: "To buy, to acquire, to purchase. Boaz acquires both the land and Ruth. The transaction is legal and public, but the meaning is theological: redemption costs the redeemer something." },
+          { word: "witness", original: "ed (Hebrew)", meaning: "Witness. The elders serve as legal witnesses to the transaction. Redemption in Israel was not private. It was public, legal, and binding. The community ratified what the redeemer chose to do." },
+        ],
+        historical: [
+          "The kinsman-redeemer (go'el) institution was one of Israel's social safety nets. When a family member fell into poverty, lost land, or died without an heir, the nearest male relative had the obligation to restore what was lost. It was costly — it meant spending your own resources to restore someone else's future. The institution assumed that family members owe each other more than the market requires.",
+          "The scene at the town gate was the ancient equivalent of a courthouse. Legal transactions, disputes, and contracts were ratified at the gate with elders as witnesses. Boaz's public announcement was legally binding and irrevocable. He was putting his reputation and resources on the line in front of the entire community.",
+          "The nearer kinsman's refusal to redeem (4:6: 'I might endanger my own estate') reveals the cost of redemption. Taking responsibility for Ruth and her potential children meant diluting his own inheritance. He chose self-preservation. Boaz chose self-sacrifice. The contrast is deliberate.",
+          "The genealogy at the end (4:18-22) connects Ruth to David. Matthew 1:5 includes Ruth in Jesus' genealogy. A Moabite woman — from a people excluded by the law — is in the direct ancestral line of the Messiah. The story insists: God's redemption comes through unexpected people, through those the religious establishment would have excluded.",
+        ],
+        literary: {
+          genre: "Legal narrative with theological depth. The transaction at the gate follows ancient Israelite legal conventions but carries typological meaning: the kinsman-redeemer who pays the price to restore what was lost prefigures Christ.",
+          devices: "The unnamed nearer kinsman (refusing to redeem) contrasted with named Boaz (embracing the cost), the sandal exchange as a public legal symbol, the women's blessing that echoes Rachel and Leah (v.11), the closing genealogy that connects this private story to national history.",
+          keyTerms: [
+            { term: "go'el", language: "Hebrew", meaning: "Kinsman-redeemer. The family member who bears the cost of another's restoration. The same word is used for God in Isaiah 43:1: 'I have redeemed you.' God is Israel's go'el — the one who pays the price to buy back what was lost." },
+            { term: "qanah", language: "Hebrew", meaning: "Acquire, purchase. Redemption is not free. It costs the redeemer. Boaz paid the price for land and took responsibility for a family that was not his obligation. Grace always costs someone." },
+            { term: "Obed", language: "Hebrew", meaning: "'Servant' or 'worshiper.' The child born from this redemption is named 'servant.' The fruit of costly love is service. And this servant became the grandfather of a king." },
+          ],
+          structure: "The chapter moves from negotiation (v.1-6: the nearer kinsman declines), to public redemption (v.7-12: Boaz redeems), to consummation and birth (v.13-17: Obed is born), to genealogy (v.18-22: the line to David). The movement is from legal transaction to theological significance.",
+        },
+        scholars: [
+          { view: "Typological reading", summary: "Boaz as kinsman-redeemer prefigures Christ. Just as Boaz paid the price to redeem Ruth and restore Naomi's family, Christ pays the price to redeem humanity and restore what sin destroyed. The nearer kinsman who refused represents the law — unable to save.", proponents: "Iain Duguid, Daniel Block" },
+          { view: "Social-justice reading", summary: "The go'el institution represents God's design for economic justice within community. The strong bear the cost for the vulnerable. The book critiques any society where the powerful protect their own estates while the vulnerable are left destitute.", proponents: "Katherine Doob Sakenfeld, Phyllis Trible" },
+          { view: "Canonical reading", summary: "Ruth must be read in light of its canonical placement and its function in establishing David's ancestry. The book answers the question: how did a Moabite enter the line of Israel's greatest king? The answer: through chesed — loyal love that transcended ethnic boundaries.", proponents: "Robert Hubbard, Brevard Childs, Frederic Bush" },
+        ],
+        application: {
+          question: "Where in your life is God calling you to be a redeemer — to bear a cost that is not strictly your obligation, for the sake of someone who cannot restore themselves?",
+          connection: "The nearer kinsman's refusal is reasonable. He calculated the cost and decided it was too high. Boaz's acceptance is unreasonable. He bore a cost that was not required for a woman who was not his responsibility from a people who were not his own. Every act of real redemption looks unreasonable from the outside. It costs the redeemer more than the redeemed can repay. That is what makes it redemption and not a transaction.",
+          thisWeek: "Consider one relationship or situation where you have been calculating whether the cost of involvement is 'worth it.' Ask instead: 'Is God calling me to be a go'el here — to bear a cost I did not create, for someone who cannot repay me?' Redemption is never efficient. But it is how God works.",
+        },
+        deeper: {
+          books: ["Ruth (Anchor Bible Commentary) by Edward Campbell", "Redemption: Accomplished and Applied by John Murray", "Ruth (New International Commentary) by Robert Hubbard"],
+          studyQuestion: "The nearer kinsman refused to redeem because it would 'endanger his own estate.' Boaz accepted the same cost willingly. What makes the difference between a person who calculates and a person who redeems? And what does Boaz's willingness teach us about Christ's?",
+          prayer: "God, you are the ultimate Go'el — the redeemer who paid the price I could not pay. I did not earn it. I cannot repay it. Teach me to extend that same costly grace to others. Make me willing to bear the cost of someone else's restoration. Amen.",
+        },
+      },
+    ],
+  },
+  {
+    name: "Job", testament: "OT", hook: "The book that demolishes every easy answer about suffering",
+    passages: [
+      {
+        ref: "Job 1:1-22",
+        summary: "The test and why easy answers about suffering collapse",
+        text: "In the land of Uz there lived a man whose name was Job. This man was blameless and upright; he feared God and shunned evil... The Lord said to Satan, 'Have you considered my servant Job? There is no one on earth like him...' Job fell to the ground in worship and said, 'Naked I came from my mother's womb, and naked I will depart. The Lord gave and the Lord has taken away; may the name of the Lord be praised.'",
+        paraphrase: "Job is not a sinner being punished. The narrator says so in the first verse: blameless, upright, fears God. And still everything is taken. Children. Wealth. Health. The book begins by destroying the most popular theology in history: that suffering is always punishment for sin. It is not. Job proves it. And his response — worship in the ashes — is not a platitude. It is the hardest sentence anyone has ever spoken.",
+        keyWords: [
+          { word: "blameless", original: "tam (Hebrew)", meaning: "Complete, whole, having integrity. Not sinless but morally integrated — a person whose inner life matches their outer life. The narrator establishes Job's innocence before the suffering begins. The suffering is not retribution. The whole point of the book depends on that." },
+          { word: "the satan", original: "ha-satan (Hebrew)", meaning: "Literally 'the adversary' or 'the accuser.' Not the devil of later Christian theology but a member of the heavenly court whose role is to test and accuse. The definite article ('the satan') indicates a title, not a proper name. He is a prosecuting attorney, not a fallen angel — at least in this text." },
+          { word: "naked", original: "arom (Hebrew)", meaning: "Naked, stripped bare. Job's response strips existence to its essence: you arrive with nothing, you leave with nothing, and everything between is gift. The word connects back to Genesis 2:25 — original human vulnerability before God." },
+        ],
+        historical: [
+          "Job is likely one of the oldest books in the Bible, possibly predating the Mosaic law. The land of Uz is outside Israel, and Job is not identified as an Israelite. The book's setting is deliberately universal — this is not a story about Jewish suffering. It is a story about human suffering.",
+          "The heavenly court scene (1:6-12) reflects ancient Near Eastern conceptions of divine councils. Gods were imagined as holding court with subordinate beings. The biblical version demythologizes this: God is sovereign, and 'the satan' operates only within boundaries God sets. Even the test has limits.",
+          "The theology Job's friends will later articulate — that suffering is always the result of sin — was the dominant theology of the ancient Near East. It is called retribution theology, and it is found in Egyptian, Babylonian, and Israelite wisdom traditions. The book of Job exists to demolish it. Not to deny that sin has consequences, but to insist that suffering is not always a consequence of sin.",
+          "Job's response (1:21) has been quoted at countless funerals. But in context, it is not a comforting cliche. It is a man who has just learned that all ten of his children are dead, falling to the ground and choosing worship over despair. The narrator adds: 'In all this, Job did not sin by charging God with wrongdoing' (1:22). The emphasis is not on Job's piety. It is on God's integrity — Job refuses to make God the villain.",
+        ],
+        literary: {
+          genre: "Prose narrative framing a poetic dialogue. Job 1-2 and 42 are prose. Everything between is poetry. The prose frame sets up the question the poetry will wrestle with: why do the righteous suffer?",
+          devices: "Repetition of messenger reports ('while he was still speaking, another messenger came') creating cascading catastrophe, the ironic gap between what the reader knows (the heavenly court) and what Job knows (nothing), Job's response as the structural climax of the chapter — worship, not complaint.",
+          keyTerms: [
+            { term: "tam", language: "Hebrew", meaning: "Blameless, complete. The whole argument of the book rests on Job's innocence. If Job is guilty, then his suffering is deserved and the book has nothing to say. The narrator insists: he is not guilty. And he still suffers." },
+            { term: "ha-satan", language: "Hebrew", meaning: "The accuser. Raises the most devastating theological question in the Bible: 'Does Job fear God for nothing?' (1:9). Is human faith transactional? Do we worship God for what we get, or for who God is?" },
+            { term: "YHWH natan, YHWH laqach", language: "Hebrew", meaning: "'The Lord gave, the Lord has taken away.' Job attributes both giving and taking to God — refusing to blame the satan or randomness. This is not fatalism. It is theological realism: God is sovereign even over loss." },
+          ],
+          structure: "Three cycles: Job's character established (v.1-5), the heavenly challenge (v.6-12), the cascading losses (v.13-19), and Job's response (v.20-22). The chapter moves from prosperity to devastation to worship — and the worship is what the reader does not expect.",
+        },
+        scholars: [
+          { view: "Protest literature", summary: "Job is a protest against retribution theology — the idea that righteousness guarantees prosperity and suffering proves guilt. The book argues that this theology, though comforting, is a lie.", proponents: "Gustavo Gutierrez, Walter Brueggemann, J. Gerald Janzen" },
+          { view: "Testing of faith", summary: "The satan's question — 'Does Job fear God for nothing?' — is the book's central question. Job's suffering is a test of disinterested faith: can a person love God with no reward? Job proves that such faith is possible.", proponents: "Francis Andersen, John Hartley" },
+          { view: "Wisdom theodicy", summary: "Job belongs to the wisdom tradition's engagement with theodicy. It does not answer why the righteous suffer. It reshapes the question: the issue is not 'why' but 'who' — who is God in the midst of suffering?", proponents: "Tremper Longman, Christopher Ash, Robert Fyall" },
+        ],
+        application: {
+          question: "The satan asks: 'Does Job fear God for nothing?' Strip away your blessings — your health, your family, your career — and what is left of your faith? Would you worship a God who gave you nothing?",
+          connection: "We have built a prosperity theology that Job demolishes in the first chapter. We tell people that faith produces blessing. Job was the most faithful man alive and lost everything. The question is not whether God rewards faithfulness — sometimes God does. The question is whether your faith survives when the rewards are removed. Job's did. The book asks: will yours?",
+          thisWeek: "Sit with the satan's question honestly: 'Do I fear God for nothing?' Make a list of what God has given you. Then imagine each one removed. At the bottom of that list, is there still a God worth worshiping? That is the question Job answers with his face in the dirt.",
+        },
+        deeper: {
+          books: ["The Book of Job (New International Commentary) by John Hartley", "Where Is God When It Hurts? by Philip Yancey", "Job (Two Horizons Commentary) by Tremper Longman"],
+          studyQuestion: "The narrator tells us that Job's suffering is a test, but Job never learns about the heavenly court scene. He suffers without explanation. Why does the book give the reader knowledge it withholds from Job? What does that structural choice mean?",
+          prayer: "God, I confess I have worshiped you for what you give me. I have confused blessing with love. Teach me to worship you when the giving stops. I came with nothing. I will leave with nothing. And you are still God. Help me believe that. Amen.",
+        },
+      },
+      {
+        ref: "Job 38:1-18",
+        summary: "God answers from the whirlwind — and the answer is not what anyone expected",
+        text: "Then the Lord spoke to Job out of the storm. He said: 'Who is this that obscures my plans without knowledge? Brace yourself like a man; I will question you, and you shall answer me. Where were you when I laid the earth's foundation? Tell me, if you understand. Who marked off its dimensions? Surely you know!'",
+        paraphrase: "After thirty-five chapters of debate — Job demanding answers, friends offering bad theology — God finally speaks. And God does not answer the question. God does not explain the suffering. God does not apologize. Instead, God asks questions. Seventy of them. Where were you when I made the sea? Can you command the morning? Do you know where light lives? The answer to suffering is not an explanation. It is a revelation of the one who holds it all.",
+        keyWords: [
+          { word: "whirlwind", original: "se'arah (Hebrew)", meaning: "Storm, tempest, whirlwind. God speaks from the chaos itself. Not from a calm study. Not from a temple. From the storm. The medium matches the message: God is present in the chaos, not absent from it." },
+          { word: "where were you", original: "eyphoh (Hebrew)", meaning: "Where? The question is not hostile. It is clarifying. God is not attacking Job. God is establishing perspective. You are asking me to justify my management of the universe. But you were not there when it was built. The question repositions Job — from plaintiff to creature." },
+          { word: "foundations", original: "yesod (Hebrew)", meaning: "Foundation, base. God describes creation as architecture — measured, designed, built with intention. The metaphor insists: the universe is not random. It has a foundation. And the one who laid it is the one speaking." },
+        ],
+        historical: [
+          "Job 38-41 is God's only extended monologue in the wisdom literature. After thirty-five chapters of human debate, God intervenes — not with answers but with questions. This is the longest divine speech in the Old Testament, and it contains not a single explanation for Job's suffering.",
+          "The theophany from the storm (se'arah) echoes other divine appearances in the Old Testament: God appears to Elijah in wind, earthquake, and fire (1 Kings 19), to Israel at Sinai in thunder and cloud (Exodus 19). God reveals himself in nature's most powerful moments. The storm is not the threat. The storm is the chariot.",
+          "The catalog of natural wonders (38:4-39:30) reflects ancient Near Eastern creation traditions but with a distinctive twist: in Babylonian mythology, the gods created the world for their own benefit and used humans as slaves. In Job, God describes a creation teeming with wildness, beauty, and freedom — much of it existing for its own sake, beyond human control or comprehension.",
+          "God's questions about the sea (38:8-11: 'Who shut up the sea behind doors?') invoke the ancient chaos-water motif. In Canaanite mythology, the sea (Yam) was a chaos deity that had to be defeated. In Job, the sea is not a rival god but a creature God birthed and bounded. Even chaos has limits God sets.",
+        ],
+        literary: {
+          genre: "Theophanic interrogation. A divine appearance in the form of relentless questioning. The genre subverts expectation: Job wanted a courtroom. God gave him a tour of creation. The verdict is not 'guilty' or 'innocent.' The verdict is: 'I am God. You are not.'",
+          devices: "Seventy rhetorical questions that cannot be answered, ironic address ('Surely you know!' — Job does not know), the storm as both setting and symbol, the cosmic scope (from the foundations of the earth to the storehouses of snow) reducing Job's perspective to proper scale.",
+          keyTerms: [
+            { term: "se'arah", language: "Hebrew", meaning: "Storm, whirlwind. The voice of God comes from the chaos. This is not a God who speaks only in calm. This is a God who enters the storm and speaks from within it." },
+            { term: "eyphoh", language: "Hebrew", meaning: "Where? The fundamental question of divine encounter. Not 'What have you done?' but 'Where were you?' God does not owe Job an explanation. God offers Job a perspective." },
+            { term: "yasa", language: "Hebrew", meaning: "To set, to place, to lay. God describes creation as intentional craftsmanship. Nothing is random. The foundations were measured. The seas were bounded. The stars were named. Chaos is real. But it is contained." },
+          ],
+          structure: "God's speech follows a tour of creation: the earth's foundations (v.4-7), the sea (v.8-11), the morning (v.12-15), the deep and death (v.16-18). Each section asks Job the same implicit question: 'Can you do this? Then perhaps you should trust the one who can.'",
+        },
+        scholars: [
+          { view: "Divine presence, not explanation", summary: "God never explains Job's suffering. Instead, God shows up. The answer to the 'why' of suffering is not a reason but a relationship. Job wanted answers. God gave him himself. And it was enough.", proponents: "Samuel Balentine, Christopher Ash, Ellen Davis" },
+          { view: "Creational theology", summary: "God's speech reframes the question of suffering within the larger context of creation. Suffering is not the whole story. The universe is vast, wild, beautiful, and largely beyond human comprehension. Job's suffering is real but not the center of everything.", proponents: "William Brown, Kathryn Schifferdecker" },
+          { view: "Humility as resolution", summary: "God's questions are not punishment but therapy. They shrink Job's perspective to proper size — not insignificance, but creaturehood. The proper posture before God is not demand but trust. Job's repentance (42:6) is not shame. It is relief.", proponents: "Tremper Longman, Robert Fyall, Francis Andersen" },
+        ],
+        application: {
+          question: "When you demand answers from God, what would it mean if the answer were not an explanation but a presence? Would that be enough?",
+          connection: "We want God to explain suffering the way a doctor explains a diagnosis. But God does not offer explanations. God offers himself. The entire divine speech can be summarized: 'I am bigger than your suffering, and I am here.' Job wanted reasons. God gave him revelation. And in the end, Job says: 'My ears had heard of you but now my eyes have seen you' (42:5). Seeing God did not remove the suffering. It reframed everything.",
+          thisWeek: "Read Job 38 slowly. Let the questions wash over you without trying to answer them. Then sit with this: the God who laid the foundations of the earth and bounded the sea is the same God who is present in your specific suffering right now. You do not need an explanation. You need to know he is there. Ask him to make his presence real.",
+        },
+        deeper: {
+          books: ["The Book of Job (New International Commentary) by John Hartley", "God and the Art of Happiness by Ellen Davis", "Job (Brazos Theological Commentary) by Christopher Ash"],
+          studyQuestion: "God never explains why Job suffered. Not in the whirlwind speech. Not afterward. The reader knows (the heavenly court), but Job never does. What does it mean to trust a God who does not explain himself? Is that faith or resignation?",
+          prayer: "God who speaks from the storm, I confess I have demanded explanations when what I needed was your presence. I was not there when you laid the earth's foundations. I do not understand your ways. But you are here. In the storm. In the silence. Help me trust what I cannot understand. Amen.",
+        },
+      },
+    ],
+  },
+  {
+    name: "Ecclesiastes", testament: "OT", hook: "The most honest book in the Bible",
+    passages: [
+      {
+        ref: "Ecclesiastes 1:1-18",
+        summary: "The teacher's verdict on everything under the sun",
+        text: "The words of the Teacher, son of David, king in Jerusalem: 'Meaningless! Meaningless!' says the Teacher. 'Utterly meaningless! Everything is meaningless.' What does man gain from all his labor at which he toils under the sun? Generations come and generations go, but the earth remains forever...",
+        paraphrase: "The Teacher looks at everything we spend our lives chasing — work, knowledge, pleasure, legacy — and renders a verdict: hevel. Vapor. Smoke. Not 'meaningless' in the nihilistic sense but fleeting, ungraspable, like trying to catch the wind. You build and someone else inherits. You learn and discover how much you do not know. You achieve and it does not satisfy. The Teacher is not depressed. The Teacher is honest. And his honesty is more useful than our optimism.",
+        keyWords: [
+          { word: "meaningless", original: "hevel (Hebrew)", meaning: "Vapor, breath, smoke. The traditional translation 'vanity' or 'meaningless' is misleading. Hevel means fleeting, insubstantial, like morning mist that burns off by noon. The Teacher is not saying life has no meaning. He is saying life cannot be grasped or controlled. It slips through your fingers." },
+          { word: "under the sun", original: "tachat ha-shemesh (Hebrew)", meaning: "Under the sun — the human realm, life as experienced from ground level without revelation from above. This phrase appears twenty-nine times in Ecclesiastes. Everything the Teacher evaluates is life 'under the sun' — life as it appears to human observation alone. The qualifier matters." },
+          { word: "toil", original: "amal (Hebrew)", meaning: "Labor, toil, trouble. Not neutral work but burdensome effort. The Teacher asks: what is the profit (yitron) of all this straining? The answer, under the sun, is: there is no lasting profit. The word carries exhaustion in its bones." },
+        ],
+        historical: [
+          "Ecclesiastes is traditionally attributed to Solomon ('son of David, king in Jerusalem'), though most scholars date the final form to the postexilic period (5th-3rd century BC). The attribution to Solomon gives the Teacher's observations maximum authority: if the wisest, richest, most powerful king in Israel found everything to be hevel, then the problem is not insufficient resources. The problem is the human condition itself.",
+          "The book's worldview has parallels in ancient Near Eastern pessimistic literature. The Egyptian 'Dispute Between a Man and His Ba' and the Mesopotamian 'Dialogue of Pessimism' express similar disillusionment. But Ecclesiastes is distinctive: the Teacher is not rejecting God. He is rejecting the idea that human effort can produce lasting meaning apart from God.",
+          "The phrase 'under the sun' is the Teacher's epistemological boundary. He is describing life as it appears from a purely horizontal perspective — observation without revelation. This is not atheism. It is a thought experiment: what does life look like if you take away God's transcendent purpose? The answer: hevel.",
+          "The Teacher's observation that 'there is nothing new under the sun' (1:9) was not cynicism in the ancient world. It was philosophical realism. The ancients understood cyclical time — seasons, generations, empires rise and fall. The Teacher refuses the illusion of progress that seduces every generation into believing they are the exception.",
+        ],
+        literary: {
+          genre: "Wisdom literature of the skeptical tradition. Ecclesiastes is the Bible's internal critic — questioning the assumptions of Proverbs (that righteousness always leads to prosperity) from within the wisdom tradition itself.",
+          devices: "The hevel refrain as a recurring verdict, the catalog of observations building a cumulative case, the 'I saw' formula (empirical observation as method), rhetorical questions that have no answer ('What does man gain?'), the cyclical structure mirroring the cyclical reality described.",
+          keyTerms: [
+            { term: "hevel", language: "Hebrew", meaning: "Vapor, breath. Used thirty-eight times in Ecclesiastes. The book's thesis in a single word: everything under the sun is transient. Not worthless — transient. The difference matters." },
+            { term: "yitron", language: "Hebrew", meaning: "Profit, gain, advantage. A commercial term. The Teacher asks: what is the return on investment for all human effort? The answer: under the sun, there is no lasting profit." },
+            { term: "amal", language: "Hebrew", meaning: "Toil, burdensome labor. The Teacher is not lazy. He has tried everything. His verdict comes from exhaustive experience, not from the sidelines." },
+          ],
+          structure: "The chapter moves from thesis (v.1-2: hevel), to evidence from nature (v.3-7: the cycles), to evidence from history (v.8-11: nothing new), to personal experiment (v.12-18: wisdom itself is hevel). Each section reinforces the same verdict. The case builds like a prosecution.",
+        },
+        scholars: [
+          { view: "Pessimistic wisdom", summary: "The Teacher offers an honest assessment of life apart from eschatological hope. Under the sun, everything is fleeting. The book is a necessary corrective to triumphalist theology.", proponents: "Michael Fox, Choon-Leong Seow" },
+          { view: "Pastoral realism", summary: "Ecclesiastes is not nihilism but honesty. The Teacher clears away false hopes so that genuine hope (in God, who is above the sun) can emerge. The demolition makes room for the construction.", proponents: "Tremper Longman, Derek Kidner, Iain Provan" },
+          { view: "Carpe diem theology", summary: "The Teacher's conclusion is not despair but enjoyment: eat, drink, find satisfaction in your work (2:24, 3:12-13). Since you cannot control the future, receive the present as a gift from God.", proponents: "Roland Murphy, Craig Bartholomew, William Brown" },
+        ],
+        application: {
+          question: "What are you chasing right now that you secretly suspect is hevel — vapor, smoke, something that will not last? And what would change if you admitted it?",
+          connection: "We avoid Ecclesiastes because it says what we know but will not admit: most of what we are killing ourselves to achieve will not last. The promotion will not satisfy. The achievement will not fill the void. The legacy will be forgotten. The Teacher is not cruel. He is kind. He is telling you the truth before you waste another decade learning it the hard way. The question is not whether life is hevel. It is whether you will keep pretending it is not.",
+          thisWeek: "Identify one thing you are currently pursuing with intensity — a goal, a project, an ambition. Ask honestly: will this matter in fifty years? In a hundred? The answer is probably no. That does not mean stop. It means hold it loosely. Receive it as gift, not as the meaning of your life.",
+        },
+        deeper: {
+          books: ["Ecclesiastes (New International Commentary) by Tremper Longman", "The Message of Ecclesiastes by Derek Kidner", "Ecclesiastes and the Song of Songs (Baker Commentary) by Iain Provan"],
+          studyQuestion: "The Teacher says 'with much wisdom comes much sorrow; the more knowledge, the more grief' (1:18). Is this an argument against education and wisdom? Or is it an honest acknowledgment that seeing clearly is painful? What is the relationship between wisdom and grief?",
+          prayer: "God, I have been chasing vapor and calling it purpose. I have been grasping at smoke and calling it success. Teach me the difference between what lasts and what passes. And give me the courage to hold the passing things loosely. Amen.",
+        },
+      },
+      {
+        ref: "Ecclesiastes 3:1-15",
+        summary: "A time for everything and what it means that God set eternity in our hearts",
+        text: "There is a time for everything, and a season for every activity under the heavens: a time to be born and a time to die, a time to plant and a time to uproot, a time to kill and a time to heal, a time to tear down and a time to build, a time to weep and a time to laugh...",
+        paraphrase: "There is a season for everything. Birth and death. Planting and uprooting. Weeping and laughing. War and peace. The Teacher is not offering a motivational calendar. He is making a harder point: you do not control which season you are in. God does. And the deepest ache in your life — the one you cannot name — comes from this: God set eternity in your heart, but you cannot see the whole picture. You know there is more. You cannot reach it. That tension is the human condition.",
+        keyWords: [
+          { word: "time", original: "et (Hebrew)", meaning: "Appointed time, season, proper moment. Not chronological time (chronos) but kairos — the right time, the fitting moment. The Teacher is not describing a schedule. He is describing a sovereignty. God determines the seasons. You inhabit them." },
+          { word: "eternity", original: "olam (Hebrew)", meaning: "Eternity, the distant past, the far future, the sense of forever. God placed olam in the human heart — the intuition that there is more than 'under the sun.' We sense eternity but cannot comprehend it. That gap between sensing and seeing is the deepest human ache." },
+          { word: "beautiful", original: "yapheh (Hebrew)", meaning: "Beautiful, fitting, appropriate. 'He has made everything beautiful in its time' (3:11). Not aesthetically pretty but cosmically fitting. Every season, even the painful ones, has a rightness to it that only God can see." },
+        ],
+        historical: [
+          "The poem in 3:1-8 lists fourteen pairs of opposites — twenty-eight activities covering the full range of human experience. The number fourteen (twice seven) signals completeness. The Teacher is not listing random examples. He is describing the totality of life. Nothing is excluded from God's timing.",
+          "The concept of 'appointed times' (et) was important in ancient Israelite theology. The festivals (moedim) were 'appointed times' — God set the calendar, not humans. The Teacher extends this to all of life: not just worship but birth, death, war, peace, weeping, and laughing all have God-appointed seasons.",
+          "The statement 'He has set eternity in the human heart' (3:11) is one of the most debated verses in the Old Testament. The Hebrew olam can mean 'eternity,' 'hiddenness,' or 'the world.' Whatever the precise meaning, the Teacher is naming a universal human experience: the sense that there must be more than this, paired with the inability to see the whole picture.",
+          "Ecclesiastes 3:14-15 ('Whatever God does endures forever; nothing can be added to it, nor anything taken from it') echoes the language of covenant permanence. God's work is unalterable. The Teacher is not fatalistic. He is asserting divine sovereignty: God's purposes cannot be thwarted, even when we cannot understand them.",
+        ],
+        literary: {
+          genre: "Wisdom poetry followed by theological reflection. The poem (3:1-8) is the most famous section of Ecclesiastes, but the theological commentary (3:9-15) is where the meaning lives.",
+          devices: "Merism (pairing opposites to encompass totality: birth/death, plant/uproot, weep/laugh), the rhythmic repetition of 'a time to,' the pivot from poem to commentary at v.9, the tension between 'beautiful in its time' (affirmation) and 'cannot fathom' (limitation).",
+          keyTerms: [
+            { term: "et", language: "Hebrew", meaning: "Appointed time. Not random. Not chosen by the individual. Set by God. You do not pick your seasons. You receive them." },
+            { term: "olam", language: "Hebrew", meaning: "Eternity, the forever-sense. God put this in your heart. It is why you are never fully satisfied with any present moment. You were made for more than 'under the sun.'" },
+            { term: "yapheh", language: "Hebrew", meaning: "Beautiful, fitting. God has made everything fitting in its time. Even the seasons that feel wrong — mourning, tearing down, being silent — have a cosmic appropriateness we cannot see." },
+          ],
+          structure: "The passage moves from poem (v.1-8: the twenty-eight seasons), to question (v.9: what does the worker gain?), to theological statement (v.10-11: God has made everything fitting and set eternity in the heart), to conclusion (v.12-15: the proper response is enjoyment and reverent trust). The poem raises the question. The theology answers it — partially.",
+        },
+        scholars: [
+          { view: "Determinism reading", summary: "The poem describes a deterministic universe where God controls every season. Humans cannot change what God has appointed. The proper response is acceptance, not resistance.", proponents: "Michael Fox, Choon-Leong Seow" },
+          { view: "Gift theology", summary: "The Teacher's conclusion — eat, drink, find enjoyment (3:12-13) — is not hedonism but gratitude. Since you cannot control the seasons, receive each one as a gift. Joy is the proper response to divine sovereignty.", proponents: "Craig Bartholomew, Iain Provan, Roland Murphy" },
+          { view: "Eschatological longing", summary: "'He has set eternity in their hearts' describes the human longing for transcendence that Ecclesiastes itself cannot satisfy. The book creates a hunger that only the New Testament can feed. Ecclesiastes is the question. Christ is the answer.", proponents: "Tremper Longman, Derek Kidner, Sidney Greidanus" },
+        ],
+        application: {
+          question: "Which season are you in right now — and are you fighting it or receiving it? And what does the ache inside you — the sense that there must be more — tell you about what you were made for?",
+          connection: "We fight our seasons. We mourn during a time to laugh. We rush through a time to be silent. We refuse a time to tear down because building is more comfortable. The Teacher says: stop fighting the season you are in. God appointed it. Receive it. And that ache you feel — the sense that none of this is enough — that is olam. God put it there. Not to torment you but to remind you: you were not made for 'under the sun' alone. You were made for eternity.",
+          thisWeek: "Name your current season honestly. Are you in a time of mourning or laughing? Planting or uprooting? Building or tearing down? Once you name it, stop resisting it. Pray: 'God, you appointed this season. Help me receive what it has to teach me instead of rushing to the next one.'",
+        },
+        deeper: {
+          books: ["Ecclesiastes (New International Commentary) by Tremper Longman", "Ecclesiastes (Anchor Bible) by Choon-Leong Seow", "The Message of Ecclesiastes by Derek Kidner"],
+          studyQuestion: "The Teacher says God 'set eternity in the human heart, yet no one can fathom what God has done from beginning to end' (3:11). What does it mean to carry eternity inside you while living in time? Is this a curse, a gift, or both?",
+          prayer: "God who set eternity in my heart, I feel the ache. I sense there is more. I cannot see it. I cannot reach it. But you put that longing there. It is not a defect. It is a homing signal. Teach me to live faithfully in the season I am in while longing for the home I cannot yet see. Amen.",
+        },
+      },
+    ],
+  },
+  {
+    name: "Jeremiah", testament: "OT", hook: "The prophet who wept because nobody listened",
+    passages: [
+      {
+        ref: "Jeremiah 1:4-19",
+        summary: "The call of Jeremiah and why God chooses the reluctant",
+        text: "The word of the Lord came to me, saying, 'Before I formed you in the womb I knew you, before you were born I set you apart; I appointed you as a prophet to the nations.' 'Alas, Sovereign Lord,' I said, 'I do not know how to speak; I am too young.'",
+        paraphrase: "God tells Jeremiah: I knew you before your mother did. Before you had a name, you had a calling. And Jeremiah's first response is: I cannot do this. I am too young. I do not have the words. God does not argue. God touches his mouth and says: now you do. The calling was never based on Jeremiah's ability. It was based on God's appointment. And that is either the most terrifying thing you will ever hear or the most liberating. It depends on whether you trust the one who calls.",
+        keyWords: [
+          { word: "knew", original: "yada (Hebrew)", meaning: "To know intimately, to be in relationship with. Not mere awareness but deep, personal knowing — the same word used for the most intimate human relationships. God did not merely know about Jeremiah. God knew Jeremiah the way a parent knows a child before birth." },
+          { word: "set apart", original: "hiqdish (Hebrew)", meaning: "To consecrate, to make holy, to set apart for a specific purpose. Before Jeremiah was born, God had already designated him for prophetic ministry. The calling precedes the person. Purpose comes before personality." },
+          { word: "too young", original: "na'ar (Hebrew)", meaning: "A youth, a boy, a servant. Jeremiah's objection echoes Moses ('I am not eloquent') and Gideon ('I am the least in my family'). God's pattern: calling people who know they are not enough. That is not a bug. It is the design." },
+        ],
+        historical: [
+          "Jeremiah was called to prophesy during the reign of Josiah (around 627 BC), a time of reform but also impending disaster. Within Jeremiah's lifetime, the Babylonians would destroy Jerusalem and the temple (586 BC). He was called to deliver a message no one wanted to hear: judgment is coming, and reform has come too late.",
+          "Jeremiah's objection ('I am too young') reflects a genuine social reality. In ancient Israelite culture, prophets were expected to be older, established figures with authority. A na'ar — a youth — had no social standing to challenge kings, priests, and prophets. God's choice of Jeremiah is deliberately counter-cultural: authority comes from the one who sends, not from the one who speaks.",
+          "The vision of the almond branch (shaqed, 1:11-12) is a wordplay: God is 'watching' (shoqed) over his word to fulfill it. The almond tree blooms first in spring — the 'watchful tree.' God's word is not idle. It is the first thing to bloom. The pun is untranslatable but the theology is clear: when God speaks, God acts.",
+          "The 'fortified city, iron pillar, bronze wall' imagery (1:18) prepares Jeremiah for a lifetime of opposition. God does not promise Jeremiah success. God promises Jeremiah survival. The nations will fight against him, but they will not overcome him. That is a different promise than 'everyone will listen.' Jeremiah's ministry will be marked by rejection, not results.",
+        ],
+        literary: {
+          genre: "Prophetic call narrative. Follows the pattern of divine call narratives throughout the Old Testament: divine encounter, commission, objection, reassurance, sign. Compare Moses (Exodus 3), Gideon (Judges 6), Isaiah (Isaiah 6).",
+          devices: "The intimate touch of God's hand on Jeremiah's mouth (physical confirmation of verbal calling), the two visions (almond branch and boiling pot) as prophetic confirmation, the wordplay on shaqed/shoqed, the escalating imagery of fortification (city, pillar, wall) preparing for escalating opposition.",
+          keyTerms: [
+            { term: "yada", language: "Hebrew", meaning: "To know. God's knowing of Jeremiah is prenatal, intimate, personal. The calling rests not on Jeremiah's qualifications but on God's knowledge of who Jeremiah is." },
+            { term: "hiqdish", language: "Hebrew", meaning: "To set apart, consecrate. Before birth, Jeremiah was designated. The calling precedes the biography. You do not grow into a calling. You are born into one." },
+            { term: "natan devarai bephikha", language: "Hebrew", meaning: "'I have put my words in your mouth.' The prophet's words are not his own. This is both the source of authority and the weight of responsibility. Jeremiah speaks for God. That is a burden, not a privilege." },
+          ],
+          structure: "The call follows a five-part pattern: God's word comes (v.4), the commission is stated (v.5), Jeremiah objects (v.6), God reassures and equips (v.7-10), two confirming visions follow (v.11-16), and the final charge is given with a promise of opposition and survival (v.17-19).",
+        },
+        scholars: [
+          { view: "Predestination of prophetic office", summary: "God's foreknowledge and consecration of Jeremiah before birth establishes that prophetic calling is divine initiative, not human choice. Jeremiah did not volunteer. He was appointed.", proponents: "William Holladay, Jack Lundbom" },
+          { view: "Mosaic parallel", summary: "Jeremiah's call deliberately echoes Moses' call at the burning bush: reluctance, objection of inadequacy, divine reassurance. Jeremiah is presented as a second Moses — a mediator between God and a disobedient people.", proponents: "William McKane, Terence Fretheim" },
+          { view: "Embodied word", summary: "Jeremiah does not merely speak God's word. He embodies it. His life becomes the message: unmarried, mourning, imprisoned, rejected. The prophet is the sermon. This pattern culminates in Christ — the Word made flesh.", proponents: "Walter Brueggemann, Abraham Heschel" },
+        ],
+        application: {
+          question: "What calling have you been resisting because you feel too young, too unqualified, too unprepared? And what would change if the calling depended not on your readiness but on God's appointment?",
+          connection: "We wait until we feel ready to answer God's call. We build resumes for kingdom work. Jeremiah's story demolishes the readiness myth. God did not call Jeremiah because Jeremiah was qualified. God qualified Jeremiah because God called him. The words were not Jeremiah's own — God put them in his mouth. The strength was not Jeremiah's own — God made him a fortified city. If you are waiting until you feel ready, you will wait forever. The calling does not follow readiness. Readiness follows calling.",
+          thisWeek: "Identify one area where you have been telling God 'I am too young' or 'I am not enough.' Write down your objection. Then read God's response to Jeremiah: 'Do not say I am too young. You must go to everyone I send you to and say whatever I command you. Do not be afraid of them, for I am with you.' Let God's commission overrule your objection.",
+        },
+        deeper: {
+          books: ["Jeremiah (Anchor Bible Commentary) by Jack Lundbom", "The Prophets by Abraham Heschel", "Jeremiah and Lamentations (Tyndale OT Commentary) by R.K. Harrison"],
+          studyQuestion: "God promises Jeremiah opposition, not success: 'They will fight against you but will not overcome you.' How does this redefine what faithfulness looks like? Can a ministry be faithful and rejected at the same time?",
+          prayer: "God who knew me before I was born, I confess I have been hiding behind my inadequacy. I have used 'I am not enough' as an excuse to avoid your call. But the words are yours, not mine. The strength is yours, not mine. Send me. Amen.",
+        },
+      },
+      {
+        ref: "Jeremiah 29:4-14",
+        summary: "The letter to the exiles and what God's plans actually look like",
+        text: "This is what the Lord Almighty, the God of Israel, says to all those I carried into exile from Jerusalem to Babylon: 'Build houses and settle down; plant gardens and eat what they produce. Marry and have sons and daughters... seek the peace and prosperity of the city to which I have carried you into exile. Pray to the Lord for it, because if it prospers, you too will prosper.' ... 'For I know the plans I have for you,' declares the Lord, 'plans to prosper you and not to harm you, plans to give you hope and a future.'",
+        paraphrase: "The exiles wanted escape. God told them to settle in. Build houses. Plant gardens. Marry. Have children. Pray for the pagan city that holds you captive. Seek its welfare. The plan is not rescue. The plan is faithfulness inside the mess. And that verse everyone quotes on graduation cards — 'I know the plans I have for you' — was written to people in exile. In Babylon. In captivity. The promise of a future was given to people who had lost everything. God's plans do not always look like what you expected. Sometimes they look like seventy years in a place you did not choose.",
+        keyWords: [
+          { word: "seek the peace", original: "dirshu et-shalom (Hebrew)", meaning: "Seek the shalom — the wholeness, prosperity, flourishing — of the city. Shalom is not merely the absence of conflict. It is the presence of comprehensive well-being. God commands the exiles to invest in the flourishing of their captors' city. This is not survival. It is mission." },
+          { word: "plans", original: "machshavot (Hebrew)", meaning: "Plans, thoughts, intentions. The word carries the sense of deliberate design. God's plans are not improvised responses to disaster. They are intentional, considered, purposeful. And they span seventy years — longer than most exiles would live to see fulfilled." },
+          { word: "hope and a future", original: "tikvah ve-acharit (Hebrew)", meaning: "Hope and an end-result, a future. Tikvah means a cord or rope — something to hold onto. Acharit means the latter end, the outcome. God promises that the exile has an ending. But the ending is seventy years away. Hope requires patience." },
+        ],
+        historical: [
+          "Jeremiah writes this letter around 597 BC, after Nebuchadnezzar's first deportation of Jews to Babylon. False prophets were telling the exiles that the captivity would be brief — two years, maybe less (Jeremiah 28: Hananiah's false prophecy). Jeremiah's letter contradicts them: settle in. This will last seventy years. The truth was harder than the lie, but it was the truth.",
+          "The command to 'seek the peace of the city' was radical. Babylon had destroyed their temple, killed their people, and carried them from their homeland. God tells them not to resist, not to revolt, but to pray for their captors and invest in their city's welfare. This is the Old Testament root of Jesus' command to love your enemies.",
+          "Jeremiah 29:11 ('I know the plans I have for you') is the most quoted verse in America — printed on coffee mugs, graduation cards, and Instagram posts. But in context, it is addressed to exiles who will not see the fulfillment in their lifetime. The promise is corporate (to the community, not an individual) and delayed (seventy years). Quoting it as a personal promise of immediate comfort strips it of its actual power: God's faithfulness endures across generations.",
+          "The false prophets in Babylon were telling the exiles what they wanted to hear: God will rescue you soon. Jeremiah tells them what they need to hear: God will sustain you through. The distinction between false comfort and true hope runs through the entire prophetic tradition. False prophets say 'peace, peace' when there is no peace (Jeremiah 6:14). True prophets say: the road is long, but God is faithful.",
+        ],
+        literary: {
+          genre: "Prophetic letter. One of the few letters embedded in the prophetic literature. The genre itself is significant: Jeremiah cannot be physically present with the exiles, so he writes. The word of God is not limited by geography.",
+          devices: "Imperatives stacked in sequence (build, plant, marry, seek, pray) creating a theology of engagement rather than withdrawal, the contrast between false prophets' two-year timeline and God's seventy-year timeline, the climactic promise (v.11-14) that answers the exiles' despair with divine intention.",
+          keyTerms: [
+            { term: "shalom", language: "Hebrew", meaning: "Peace, wholeness, comprehensive flourishing. Not just the absence of war but the presence of everything good. God commands the exiles to work for their enemy's shalom. That is radical theology." },
+            { term: "machshavot", language: "Hebrew", meaning: "Plans, designs. God's plans are not reactive. They are intentional. And they unfold on God's timeline, not ours. Seventy years is a plan that outlives the generation that receives the promise." },
+            { term: "galut", language: "Hebrew", meaning: "Exile, captivity. The location of God's promise is not the promised land. It is Babylon. God meets the exiles where they are, not where they want to be. Grace comes to your actual address." },
+          ],
+          structure: "The letter moves from command (v.4-7: how to live in exile), to warning against false prophets (v.8-9), to promise (v.10-14: God's plans for restoration). The structure mirrors the exile itself: endurance first, false hope rejected, true hope given last.",
+        },
+        scholars: [
+          { view: "Theology of exile", summary: "Exile is not punishment alone. It is a new location for faithfulness. God can be worshiped without the temple, without the land, without the institutions. This letter lays the groundwork for diaspora Judaism and, eventually, the church.", proponents: "Walter Brueggemann, Daniel Smith-Christopher" },
+          { view: "Public theology", summary: "'Seek the welfare of the city' is the foundation of a public theology — believers actively contributing to the common good of the society they inhabit, even when that society is hostile to their faith.", proponents: "Lesslie Newbigin, James Davison Hunter, Timothy Keller" },
+          { view: "Already/not yet hope", summary: "The promise of restoration is certain but delayed. The exiles must live faithfully in the 'already' (God's promise given) while waiting for the 'not yet' (God's promise fulfilled). This is the structure of all biblical hope.", proponents: "Terence Fretheim, Jack Lundbom, Christopher Wright" },
+        ],
+        application: {
+          question: "Where is your Babylon — the place you did not choose, the situation you cannot escape? And what would it look like to seek its shalom instead of merely surviving it?",
+          connection: "We want God to extract us from our Babylon. The job we hate. The city that does not feel like home. The season that will not end. God's letter to the exiles says something harder: stay. Build. Plant. Invest. Pray for this place. Your faithfulness in exile is not a holding pattern until the real plan starts. It is the plan. God's purposes are being worked out in the very place you are trying to escape.",
+          thisWeek: "Identify your 'Babylon' — the place or season you are enduring rather than inhabiting. Then choose one act of investment this week: pray for your city, serve your neighborhood, invest in a relationship you have been treating as temporary. Seek the shalom of the place you are in, not just the place you wish you were.",
+        },
+        deeper: {
+          books: ["Jeremiah (Anchor Bible Commentary) by Jack Lundbom", "Faithful Presence by David Fitch", "Jeremiah and Lamentations (NIV Application Commentary) by J. Andrew Dearman"],
+          studyQuestion: "God's promise in 29:11 was given to a community in exile, not to individuals seeking personal guidance. How does knowing the original context change how you read this verse? Does it make the promise weaker or stronger?",
+          prayer: "God, I have been trying to escape my Babylon. I have treated this season as a waiting room instead of a mission field. Teach me to build here. To plant here. To seek the peace of this place. Your plans are longer than my patience. Help me trust the seventy years. Amen.",
+        },
+      },
+    ],
+  },
+  {
+    name: "1 Corinthians", testament: "NT", hook: "The letter to a church that had everything except unity",
+    passages: [
+      {
+        ref: "1 Corinthians 13:1-13",
+        summary: "Love defined by what it costs, not what it feels",
+        text: "If I speak in the tongues of men or of angels, but do not have love, I am only a resounding gong or a clanging cymbal. If I have the gift of prophecy and can fathom all mysteries and all knowledge, and if I have a faith that can move mountains, but do not have love, I am nothing...",
+        paraphrase: "This chapter is not about weddings. Paul wrote it to a church tearing itself apart over spiritual gifts. The Corinthians were competing for the most impressive gifts — tongues, prophecy, knowledge — and Paul says: without love, your most spectacular abilities are noise. Empty noise. Love is not a feeling you have at a ceremony. It is patient when patience costs you. It is kind when kindness is not returned. It does not keep score. It does not quit. It is the only thing that survives when everything else burns away.",
+        keyWords: [
+          { word: "love", original: "agape (Greek)", meaning: "Self-giving, sacrificial love. Not eros (desire) or philia (affection) but a love defined by its cost to the lover, not its benefit. Paul's definition (v.4-7) is entirely behavioral — what love does and does not do. Feeling is absent from the list." },
+          { word: "nothing", original: "ouden (Greek)", meaning: "Nothing, zero, no-thing. Without love, Paul says you are not merely diminished. You are nothing. You gain nothing. The absoluteness of the word is intentional. Love is not one factor among many. It is the only factor that matters." },
+          { word: "remains", original: "menei (Greek)", meaning: "Abides, stays, endures permanently. Faith, hope, and love remain — but love is the greatest because it is the only one that continues into eternity. Faith becomes sight. Hope becomes possession. Love continues unchanged." },
+        ],
+        historical: [
+          "First Corinthians 13 is not a standalone poem. It sits between chapters 12 (spiritual gifts and the body) and 14 (the proper use of tongues and prophecy). The 'love chapter' is Paul's corrective to a church obsessed with spiritual performance. They wanted to be impressive. Paul says: be loving.",
+          "Corinth was a wealthy, status-conscious, Roman colony. Social hierarchy determined everything. The Corinthian Christians imported this culture into the church: competing for the highest-status gifts (tongues, prophecy), neglecting the poor at the Lord's Supper (11:17-22), suing each other in court (6:1-8). Paul's love hymn is a direct rebuke to their status obsession.",
+          "The phrase 'resounding gong or clanging cymbal' (v.1) references the pagan worship at Corinth. The mystery cults used loud, percussive instruments in their frenzied worship. Paul says: without love, your spiritual gifts are indistinguishable from pagan noise. That was a devastating comparison in a church proud of its spiritual superiority.",
+          "Paul's definition of love (v.4-7) is composed entirely of verbs, not adjectives. Love is patient (verb). Love is kind (verb). Love does not envy, does not boast, is not proud. Each item describes an action or restraint. Love is defined by behavior under pressure, not by sentiment in comfort.",
+        ],
+        literary: {
+          genre: "Hymnic prose / encomium (praise of a virtue). Paul adapts the Greco-Roman encomium form — a formal praise of a quality — but fills it with countercultural content. In Corinthian culture, the highest praise went to rhetoric, knowledge, and power. Paul praises love.",
+          devices: "The 'if... but' structure of v.1-3 (escalating gifts without love reduced to nothing), the staccato list of love's characteristics in v.4-7 (each a rebuke to Corinthian behavior), the three temporal contrasts in v.8-12 (present imperfection vs. future completion), the climactic triad (faith, hope, love) with love declared greatest.",
+          keyTerms: [
+            { term: "agape", language: "Greek", meaning: "Love as self-giving action. Paul essentially defines it: patient, kind, not envious, not boastful, not proud, not dishonoring, not self-seeking, not easily angered, keeps no record of wrongs. This is a behavioral definition. Love is what love does." },
+            { term: "ouden", language: "Greek", meaning: "Nothing. Used three times in v.1-3. Without love: I am nothing (v.2). I gain nothing (v.3). The word makes love non-negotiable." },
+            { term: "teleion", language: "Greek", meaning: "Complete, mature, perfect. 'When completeness comes' (v.10). Paul contrasts present partial knowledge with future full knowledge. Love is the only thing that does not change when everything else becomes complete." },
+          ],
+          structure: "Three sections: (1) Without love, gifts are nothing (v.1-3); (2) What love is and is not — fifteen descriptions (v.4-7); (3) Love outlasts everything (v.8-13). The structure moves from negative (what love is not) through positive (what love is) to eternal (what love outlasts).",
+        },
+        scholars: [
+          { view: "Christological definition", summary: "Paul's description of love in v.4-7 is a portrait of Christ. Replace 'love' with 'Christ' and the passage describes Jesus perfectly. Love is not an abstraction. Love is a person.", proponents: "Richard Hays, Gordon Fee, Anthony Thiselton" },
+          { view: "Community ethic", summary: "The love chapter is not about individual virtue but about community formation. Paul is describing how a divided church can be healed: not by better gifts but by better love. Love is the ethic that makes community possible.", proponents: "Raymond Collins, David Garland, Ben Witherington III" },
+          { view: "Eschatological love", summary: "Love is the greatest because it is the only virtue that belongs fully to the age to come. Faith and hope are responses to the 'not yet.' Love is the currency of eternity.", proponents: "Gordon Fee, N.T. Wright, Anthony Thiselton" },
+        ],
+        application: {
+          question: "Read Paul's description of love in verses 4-7. Substitute your name for 'love.' How does it read? That gap between the description and your reality is the work of a lifetime.",
+          connection: "We have sentimentalized this passage into a wedding reading. But Paul wrote it as a rebuke. The Corinthians were competing for the most impressive spiritual gifts and tearing each other apart in the process. Paul says: your tongues, your prophecies, your mountain-moving faith — without love, they are noise. We make the same mistake. We measure spiritual maturity by performance: how much we know, how well we speak, how large our ministry. Paul measures it by one thing: how we treat people.",
+          thisWeek: "Read v.4-7 each morning this week. Pick the one description that most convicts you. If love 'keeps no record of wrongs,' ask yourself whose wrongs you are still tallying. If love 'is not self-seeking,' name one relationship where you are. Let one line of this passage do surgery on one area of your life.",
+        },
+        deeper: {
+          books: ["The First Letter to the Corinthians (New International Commentary) by Gordon Fee", "1 Corinthians (Anchor Bible) by Joseph Fitzmyer", "The First Epistle to the Corinthians (NIGTC) by Anthony Thiselton"],
+          studyQuestion: "Paul says without love, even faith that moves mountains is 'nothing.' How can a genuine spiritual gift be 'nothing'? What does this tell us about God's priorities versus ours?",
+          prayer: "God, I have chased impressive gifts while neglecting the only thing that matters. I have been a resounding gong — loud but loveless. Teach me the love that is patient when patience is costly, kind when kindness is not returned. Strip away my performance. Leave only love. Amen.",
+        },
+      },
+      {
+        ref: "1 Corinthians 15:1-28",
+        summary: "The resurrection argument and the foundation of everything",
+        text: "Now, brothers and sisters, I want to remind you of the gospel I preached to you, which you received and on which you have taken your stand... For what I received I passed on to you as of first importance: that Christ died for our sins according to the Scriptures, that he was buried, that he was raised on the third day according to the Scriptures, and that he appeared to Cephas, and then to the Twelve...",
+        paraphrase: "Some in Corinth were saying there is no resurrection. Paul says: then everything collapses. If Christ has not been raised, your faith is empty. Your preaching is pointless. Your dead are gone. You are still in your sins. And we — the apostles — are the most pathetic liars in history. But Christ has been raised. And his resurrection is not a standalone miracle. It is the first installment of a cosmic renewal. The dead will rise. Death itself will be destroyed. And in the end, God will be all in all. The resurrection is not an appendix to the gospel. It is the gospel.",
+        keyWords: [
+          { word: "raised", original: "egēgertai (Greek)", meaning: "Has been raised. Perfect tense: a past event with ongoing results. Christ was raised and remains raised. The resurrection is not a past event only. It is a present reality. The risen Christ is alive now." },
+          { word: "first importance", original: "en prōtois (Greek)", meaning: "Of first rank, the most important thing. Paul is establishing a hierarchy of doctrine. The resurrection is not one belief among many. It is the primary, foundational, non-negotiable truth on which everything else rests." },
+          { word: "firstfruits", original: "aparchē (Greek)", meaning: "The first portion of the harvest, offered to God as a pledge that the rest will follow. Christ's resurrection is the firstfruits: the first installment of a harvest that includes every believer. If the firstfruits have been raised, the full harvest is guaranteed." },
+        ],
+        historical: [
+          "Paul is quoting an early Christian creed in v.3-5 — a formula he 'received' and 'passed on.' Most scholars date this creed to within five years of Jesus' crucifixion (approximately AD 30-35). This is the earliest known statement of Christian belief, predating any New Testament document.",
+          "Some Corinthians denied the bodily resurrection while still claiming to be Christians. This was likely influenced by Greek philosophy, which viewed the body as inferior to the soul. In Platonic thought, death liberated the soul from the prison of the body. Resurrection — the restoration of the body — was not good news to Greeks. It was offensive.",
+          "Paul's list of resurrection witnesses (v.5-8) includes 'more than five hundred brothers and sisters, most of whom are still alive' (v.6). This is a legal-evidentiary argument: Paul is saying, in effect, 'go ask them.' He is not making an unfalsifiable claim. He is pointing to living witnesses the Corinthians could verify.",
+          "The phrase 'the last enemy to be destroyed is death' (v.26) places the resurrection within a cosmic-apocalyptic framework. Paul sees history moving toward a goal: the complete defeat of every power hostile to God, culminating in death's abolition. The resurrection is not a religious idea. It is a claim about the future of the universe.",
+        ],
+        literary: {
+          genre: "Theological argument / apologetic. Paul builds a logical case: if X (Christ is raised), then Y (the dead will be raised). If not-X (Christ is not raised), then Z (everything falls apart). The logic is airtight and deliberately constructed.",
+          devices: "The creedal formula (v.3-5) as the foundation of the argument, the reductio ad absurdum (v.12-19: if there is no resurrection, then...), the 'firstfruits' metaphor linking Christ's resurrection to all believers, the apocalyptic sequence (v.23-28) building toward God being 'all in all.'",
+          keyTerms: [
+            { term: "egēgertai", language: "Greek", meaning: "Has been raised. Perfect passive: God raised Christ, and Christ remains in the state of being raised. The passive voice says: the resurrection is God's act. The perfect tense says: it is permanent." },
+            { term: "aparchē", language: "Greek", meaning: "Firstfruits. An agricultural term turned theological. The firstfruits guarantee the full harvest. Christ's resurrection is the down payment on the resurrection of all who belong to him." },
+            { term: "ta panta en pasin", language: "Greek", meaning: "'God will be all in all' (v.28). The telos — the final goal — of the resurrection is not human immortality but divine sovereignty fully manifested. Everything exists for God's glory. The resurrection consummates that purpose." },
+          ],
+          structure: "The argument moves from creed (v.1-11: the gospel Paul received and preached), to logical consequences (v.12-19: if no resurrection, then...), to affirmation (v.20-23: but Christ has been raised), to cosmic scope (v.24-28: the end when God is all in all).",
+        },
+        scholars: [
+          { view: "Historical apologetic", summary: "Paul presents the resurrection as a historical event supported by eyewitness testimony. The creed of v.3-5 is the earliest Christian evidence, datable to within years of the crucifixion. The resurrection is the best explanation of the available data.", proponents: "N.T. Wright, William Lane Craig, Michael Licona" },
+          { view: "Apocalyptic theology", summary: "The resurrection inaugurates the new age. It is not a miracle within the old world but the beginning of the new world breaking into the old. Paul's framework is apocalyptic: two ages, the turn of the ages happening in Christ's resurrection.", proponents: "J. Christiaan Beker, Martinus de Boer, Beverly Gaventa" },
+          { view: "Cosmic redemption", summary: "The resurrection is not just about individual survival after death. It is about the renewal of all creation. 'The last enemy is death' means the resurrection addresses the deepest problem in the cosmos, not just the deepest fear in the human heart.", proponents: "N.T. Wright, Richard Bauckham, Gordon Fee" },
+        ],
+        application: {
+          question: "Paul says if Christ has not been raised, your faith is futile and you are still in your sins. Do you believe the resurrection is that foundational — that everything stands or falls with it?",
+          connection: "We have domesticated the resurrection into an Easter Sunday affirmation. Paul makes it the load-bearing wall of the entire building. Remove it and everything collapses: forgiveness, hope, meaning, the future of the universe. The resurrection is not the nice ending to a sad story. It is the foundation of all reality. If Christ is not raised, nothing matters. If Christ is raised, everything does.",
+          thisWeek: "Read v.12-19 slowly — Paul's description of what the world looks like without the resurrection. Then read v.20: 'But Christ has indeed been raised from the dead.' Let the weight of that 'but' carry you this week. Whatever you face, the fundamental reality is: death has been defeated. The firstfruits are in.",
+        },
+        deeper: {
+          books: ["The Resurrection of the Son of God by N.T. Wright", "The First Letter to the Corinthians (New International Commentary) by Gordon Fee", "1 Corinthians (Baker Exegetical Commentary) by David Garland"],
+          studyQuestion: "Paul calls Christ the 'firstfruits' of the resurrection. If the firstfruits are the guarantee of the full harvest, what does Christ's resurrection guarantee about your future? About the future of creation itself?",
+          prayer: "God who raised Jesus from the dead, I confess I treat the resurrection as a historical footnote rather than the foundation of everything. The firstfruits are in. The harvest is coming. Death is defeated. Help me live this week as if that is actually true. Because it is. Amen.",
+        },
+      },
+    ],
+  },
+  {
+    name: "Philippians", testament: "NT", hook: "Joy written from a prison cell",
+    passages: [
+      {
+        ref: "Philippians 2:1-11",
+        summary: "The Christ Hymn and what power actually looks like",
+        text: "Therefore if you have any encouragement from being united with Christ... then make my joy complete by being like-minded, having the same love... In your relationships with one another, have the same mindset as Christ Jesus: Who, being in very nature God, did not consider equality with God something to be used to his own advantage; rather, he made himself nothing by taking the very nature of a servant, being made in human likeness...",
+        paraphrase: "Jesus was God. That is where the hymn starts. And being God, he did not clutch his status. He did not leverage his position. He emptied himself. Took the form of a slave. Died on a cross. The one who held all power surrendered all power. And because he went down — all the way down — God exalted him to the highest place. This is not a motivational example. This is the shape of reality. Power in God's kingdom does not climb. It descends. And the one who descends furthest is the one God lifts highest.",
+        keyWords: [
+          { word: "emptied himself", original: "heauton ekenōsen (Greek)", meaning: "He poured himself out, he made himself nothing. The great kenosis — the self-emptying of God. Christ did not subtract divinity. He added humanity. He did not stop being God. He chose not to deploy the privileges of divinity for his own benefit." },
+          { word: "form of a servant", original: "morphē doulou (Greek)", meaning: "The nature or essential character of a slave. Morphē means the inner reality, not just the outward appearance. Christ did not pretend to be a servant. He became one in his essential nature. God took the form of the lowest social status in the Roman world." },
+          { word: "highly exalted", original: "hyperypōsen (Greek)", meaning: "Super-exalted, exalted above every other exaltation. A word Paul may have coined — the prefix hyper- intensifies an already superlative verb. God did not merely restore Jesus to his former position. God gave him a position above every position. Descent led to the highest ascent." },
+        ],
+        historical: [
+          "Most scholars believe Philippians 2:6-11 is a pre-Pauline hymn — a song the early church was already singing before Paul wrote this letter. If so, it is one of the earliest christological statements in Christianity, dating to within twenty years of the crucifixion. The church was worshiping Jesus as divine before the New Testament was complete.",
+          "Paul writes from prison (likely Rome, around AD 60-62). He is in chains, facing possible execution, and the Philippian church is experiencing its own conflicts (4:2: Euodia and Syntyche). Paul's solution to their conflict is not mediation techniques but christology: have the same mind as Christ, who emptied himself. The answer to conflict is self-emptying, not self-assertion.",
+          "The phrase 'taking the form of a slave' (doulou) is shocking in context. In the Roman Empire, slaves were property — the lowest rung of society. They could be beaten, sold, or killed at the owner's discretion. Paul says God chose that form. The scandal is not that Christ suffered. The scandal is that God chose the lowest possible status.",
+          "The name 'above every name' (v.9) is almost certainly the divine name YHWH. When every knee bows and every tongue confesses, they echo Isaiah 45:23, where YHWH declares that every knee will bow to him alone. Paul applies this exclusively to Jesus. The earliest Christians were making a claim that Jesus shares the identity of Israel's God.",
+        ],
+        literary: {
+          genre: "Early Christian hymn embedded in a pastoral letter. The hymn follows a V-shaped pattern: descent from divine status (v.6-8) to the lowest point (death on a cross), then ascent to the highest exaltation (v.9-11). The shape of the hymn is the shape of the gospel.",
+          devices: "The V-shaped descent/ascent structure, the contrast between grasping (harpagmos — what Christ did not do) and emptying (kenosis — what Christ chose), the escalating descent (form of God → form of servant → human likeness → death → cross death), the climactic naming that echoes Isaiah 45.",
+          keyTerms: [
+            { term: "kenosis", language: "Greek", meaning: "Self-emptying. From kenoō — to pour out until empty. Christ's kenosis is not the subtraction of divinity but the addition of servanthood. He did not become less God. He chose not to use his Godness for himself." },
+            { term: "morphē", language: "Greek", meaning: "Form, essential nature. Used for both 'form of God' and 'form of servant.' The same word applied to both: Christ's divinity and his servanthood are equally real, equally essential. Neither is a disguise." },
+            { term: "harpagmos", language: "Greek", meaning: "Something to be grasped, exploited, used for advantage. Christ did not treat equality with God as a tool for his own benefit. Power in the kingdom is not something you wield. It is something you release." },
+          ],
+          structure: "The hymn descends in three steps (divine status → servanthood → cross death, v.6-8) and ascends in three steps (exaltation → name above names → universal worship, v.9-11). The cross is the nadir. The throne is the result of the cross, not despite it.",
+        },
+        scholars: [
+          { view: "Pre-existence Christology", summary: "The hymn affirms Christ's pre-existence as divine. 'Being in the form of God' (v.6) means Christ was God before the incarnation. The incarnation is a descent from divine glory, not an ascent from human origins.", proponents: "Richard Bauckham, Gordon Fee, N.T. Wright" },
+          { view: "Ethical paradigm", summary: "Paul cites the hymn not primarily as theology but as ethics. 'Have this mind among yourselves' (v.5). The pattern of Christ's self-emptying is the pattern for Christian relationships: status surrendered for the sake of others.", proponents: "Michael Gorman, Stephen Fowl" },
+          { view: "Adam Christology", summary: "The hymn contrasts Christ with Adam. Where Adam grasped at equality with God (Genesis 3), Christ did not grasp. Where Adam's grasping led to death, Christ's emptying led to exaltation. Christ is the anti-Adam who succeeds where Adam failed.", proponents: "James Dunn, N.T. Wright" },
+        ],
+        application: {
+          question: "Where in your life are you grasping at status, position, or advantage — the very things Christ released? What would kenosis look like in your specific situation?",
+          connection: "We admire the Christ Hymn on Sunday and live by the opposite pattern on Monday. We climb. We promote. We position. We protect our status. Christ went the other direction. He descended. And the descent was not failure. It was the path to the highest exaltation. The pattern of the kingdom is down before up, death before life, emptying before filling. We resist this because we do not trust it. If I let go, who will hold my place? The hymn answers: God will. God exalted the one who emptied himself. He will do the same for you.",
+          thisWeek: "Identify one area where you are protecting your status — at work, in a relationship, in your church. Then ask: what would it look like to take the form of a servant here? Not as a strategy for advancement. Not as false humility. As genuine self-emptying. Try it once this week. See what God does with it.",
+        },
+        deeper: {
+          books: ["Philippians (Two Horizons Commentary) by Stephen Fowl", "Inhabiting the Cruciform God by Michael Gorman", "The Epistle to the Philippians (New International Commentary) by Gordon Fee"],
+          studyQuestion: "Paul says 'have the same mindset as Christ Jesus' and then quotes the kenosis hymn. Is self-emptying a realistic ethical standard? Can finite humans actually follow the pattern of the infinite God? Or is Paul pointing to something only the Spirit can produce?",
+          prayer: "Christ who emptied yourself, I confess I have been grasping. Clutching my status. Protecting my position. Climbing when you descended. Teach me the downward path. Make me willing to take the form of a servant — not as a performance but as a genuine release. I trust that the God who exalted you will sustain me. Amen.",
+        },
+      },
+      {
+        ref: "Philippians 4:4-13",
+        summary: "Contentment, anxiety, and the strength that is not your own",
+        text: "Rejoice in the Lord always. I will say it again: Rejoice! Let your gentleness be evident to all. The Lord is near. Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus... I have learned the secret of being content in any and every situation, whether well fed or hungry, whether living in plenty or in want. I can do all this through him who gives me strength.",
+        paraphrase: "Paul is in prison when he writes 'rejoice always.' That is not denial. It is defiance. And the command about anxiety is not 'stop worrying.' It is: take your worry to God. Every situation. Every fear. Bring it. With thanksgiving. And God's peace — a peace you cannot manufacture or explain — will stand guard over your heart like a Roman soldier at a prison door. And that verse everyone prints on gym walls — 'I can do all things through Christ who strengthens me' — was written by a man in chains. He is not talking about athletic performance. He is talking about surviving deprivation. I can endure hunger. I can endure poverty. I can endure prison. Not because I am strong. Because Christ is.",
+        keyWords: [
+          { word: "rejoice", original: "chairete (Greek)", meaning: "Rejoice, be glad. Present imperative: keep on rejoicing. Not a suggestion but a command. And Paul repeats it: 'I will say it again: Rejoice!' The repetition is not rhetorical. It is pastoral — he knows they need to hear it twice because the circumstances make it hard to hear once." },
+          { word: "anxious", original: "merimnate (Greek)", meaning: "To be anxious, to be pulled in different directions. From merizo — to divide. Anxiety divides the mind, fragmenting attention between fear and faith. Paul's antidote is not willpower but prayer: redirect the energy of worry into conversation with God." },
+          { word: "I can do all things", original: "panta ischyō (Greek)", meaning: "I have strength for all things. Not 'I can accomplish anything I set my mind to.' Paul's context is clear: he can endure all circumstances — plenty or want, abundance or need — through Christ's empowering. This is a verse about endurance, not achievement." },
+        ],
+        historical: [
+          "Paul writes from prison, likely in Rome under house arrest (Acts 28:30-31). He faces possible execution. The Philippians have sent him a financial gift through Epaphroditus (4:18), and this passage is part of his thank-you. He is modeling the very contentment he teaches: grateful in chains.",
+          "The Stoic philosophers of Paul's era taught autarkeia — self-sufficiency, finding contentment through inner detachment from circumstances. Paul uses the same word (autarkēs, 4:11) but fills it with different content. His sufficiency is not self-generated. It comes 'through him who gives me strength.' The source of contentment is not within. It is Christ.",
+          "The 'peace of God that transcends all understanding' (v.7) uses the military term phrourēsei — 'will guard.' In a Roman prison, guards stood at the door. Paul says God's peace guards his heart the same way. The metaphor is drawn from his immediate environment. The prisoner's peace is guarded by a better guard than Caesar's soldiers.",
+          "Philippians 4:13 ('I can do all things through Christ who strengthens me') has become one of the most misquoted verses in the Bible. Athletes print it on wristbands. Entrepreneurs put it in their Instagram bios. But Paul is not talking about winning competitions. He is talking about surviving deprivation while maintaining faith. The verse is about endurance in suffering, not empowerment for success.",
+        ],
+        literary: {
+          genre: "Pastoral exhortation. Paul moves from command (rejoice, do not be anxious) to promise (peace will guard you) to personal testimony (I have learned contentment) to theological foundation (Christ strengthens me). The progression is deliberate: theology produces practice.",
+          devices: "Repetition of 'rejoice' for emphasis, the contrast between anxiety and prayer as two responses to the same circumstances, the military metaphor of peace 'guarding' (phrourēsei) hearts, the autobiographical testimony as proof of the teaching, the list of opposites (well fed/hungry, plenty/want) demonstrating range.",
+          keyTerms: [
+            { term: "chairete", language: "Greek", meaning: "Rejoice. A command, not a suggestion. And written from prison. Joy in Paul is not the absence of suffering. It is the presence of Christ in suffering." },
+            { term: "eirēnē", language: "Greek", meaning: "Peace. Not the absence of conflict but the presence of wholeness. This peace 'transcends all understanding' — it does not make rational sense. You cannot think your way to it. It is a gift." },
+            { term: "endunamoō", language: "Greek", meaning: "'The one who empowers me.' Christ is the source of Paul's strength. The passive sense matters: Paul is empowered. He does not empower himself. The strength is received, not manufactured." },
+          ],
+          structure: "Four movements: (1) Command to rejoice and not be anxious (v.4-6); (2) Promise of supernatural peace (v.7); (3) Instruction on what to think about (v.8-9); (4) Personal testimony of contentment through Christ (v.10-13). The passage moves from imperative to promise to example.",
+        },
+        scholars: [
+          { view: "Counter-Stoic contentment", summary: "Paul adopts the Stoic language of autarkeia (self-sufficiency) but redefines it christologically. Stoic contentment comes from within. Pauline contentment comes from Christ. The word is the same. The source is opposite.", proponents: "Gordon Fee, Ben Witherington III, Lynn Cohick" },
+          { view: "Theology of joy in suffering", summary: "Philippians redefines joy as independent of circumstances. Joy is rooted in relationship with Christ, not in the absence of suffering. Paul's prison setting is not incidental — it is the proof of his teaching.", proponents: "N.T. Wright, Markus Bockmuehl, Michael Gorman" },
+          { view: "Community formation", summary: "The exhortations are addressed to the community, not just individuals. 'Rejoice' is plural. 'Do not be anxious' is plural. Contentment is learned and practiced in community, not in isolation.", proponents: "Stephen Fowl, Moisés Silva" },
+        ],
+        application: {
+          question: "What would it look like to bring your anxiety to God with thanksgiving — not after the anxiety resolves, but in the middle of it?",
+          connection: "We read 'do not be anxious about anything' and feel guilty for being anxious. But Paul does not say 'stop feeling anxiety.' He says: when you are anxious, pray. Bring it to God. With thanksgiving — not because you are thankful for the problem, but because you trust the God who holds you in it. The peace that follows is not the resolution of the problem. It is the guarding of your heart while the problem continues. That is a harder peace and a better one.",
+          thisWeek: "Each time anxiety rises this week — about work, relationships, finances, health — practice Paul's prescription. Stop. Name the anxiety to God in prayer. Add one thing you are thankful for. Then leave it there. Do not take it back. Let God's peace stand guard. You will not feel it immediately. Do it anyway.",
+        },
+        deeper: {
+          books: ["The Epistle to the Philippians (New International Commentary) by Gordon Fee", "Philippians (Anchor Bible) by Markus Bockmuehl", "Philippians (Two Horizons Commentary) by Stephen Fowl"],
+          studyQuestion: "Paul says he 'learned' the secret of contentment (v.11). The word 'learned' implies a process, not a download. What do you think the learning process looked like for Paul? What losses, imprisonments, and deprivations taught him what no sermon could?",
+          prayer: "Christ who strengthens me, I confess I have tried to manufacture contentment from within. I have treated 'I can do all things' as a self-help mantra instead of a declaration of dependence. I cannot endure this in my own strength. I can endure it in yours. Guard my heart today. I bring my anxiety to you. Amen.",
+        },
+      },
+    ],
+  },
+  {
+    name: "Hebrews", testament: "NT", hook: "The sermon for people thinking about walking away",
+    passages: [
+      {
+        ref: "Hebrews 11:1-16",
+        summary: "Faith defined by what it risked, not what it felt",
+        text: "Now faith is confidence in what we hope for and assurance about what we do not see. This is what the ancients were commended for... By faith Abraham, when called to go to a place he would later receive as his inheritance, obeyed and went, even though he did not know where he was going...",
+        paraphrase: "Faith is not a feeling. It is not certainty. It is the substance of what you hope for — the Greek word means title deed. Faith is holding the deed to a house you have never seen. And the people in this hall of fame did not have it figured out. Abraham left home without knowing the destination. Sarah laughed at the promise. They all died without receiving what was promised. Faith is not getting what you were promised. Faith is trusting the one who promised, even when you die before the delivery.",
+        keyWords: [
+          { word: "substance", original: "hypostasis (Greek)", meaning: "Substance, foundation, title deed, confident assurance. In legal papyri, hypostasis referred to the documents that proved ownership. Faith is the title deed to what you cannot yet see. You hold the proof even without the possession." },
+          { word: "assurance", original: "elenchos (Greek)", meaning: "Proof, conviction, evidence. Faith is the evidence of things not seen — not blind belief but conviction based on the character of the one who promised. The evidence is not visible, but it is real." },
+          { word: "strangers", original: "xenoi kai parepidēmoi (Greek)", meaning: "Foreigners and temporary residents. The heroes of faith lived as aliens in the land of promise. They did not settle. They did not belong. They were looking for a better country — a heavenly one. Faith makes you a stranger everywhere except home." },
+        ],
+        historical: [
+          "Hebrews was written to a community of Jewish Christians under pressure to abandon their faith and return to Judaism. The old covenant had a temple, a priesthood, sacrifices — visible, tangible realities. Christianity offered an invisible high priest in a heavenly sanctuary. The temptation to go back to what you can see is the setting of the entire letter.",
+          "The 'faith hall of fame' in Hebrews 11 is not a list of successful people. It is a list of people who trusted God without seeing the result. Abel was murdered. Abraham died without possessing the land. Sarah was barren for decades. The common thread is not reward but risk. They acted on a promise they could not verify.",
+          "The phrase 'they were longing for a better country — a heavenly one' (v.16) reflects the Jewish concept of olam haba — the world to come. The patriarchs lived as pilgrims, not because they failed to find a homeland, but because their true homeland was not on any map. Faith orients you toward a reality that does not yet exist on earth.",
+          "The author's emphasis that these heroes 'did not receive what was promised' (v.13, 39) is a direct challenge to prosperity theology in any era. Faithfulness does not guarantee outcomes. The faithful die with the promise still outstanding. And the author calls that commendable, not tragic.",
+        ],
+        literary: {
+          genre: "Epideictic rhetoric — a speech of praise. The author builds a catalog of exemplary figures, not to provide biography but to define faith by demonstration. Each 'by faith' entry is an argument: this is what faith looks like when it is real.",
+          devices: "Anaphora ('by faith... by faith... by faith'), escalating examples from Abel through Abraham to the exodus generation, the recurring contrast between what was promised and what was received (or not received), the metaphor of pilgrimage (strangers, temporary residents, looking for a city).",
+          keyTerms: [
+            { term: "hypostasis", language: "Greek", meaning: "Substance, title deed. Faith is not wishful thinking. It is holding the documentation for a reality you have not yet entered." },
+            { term: "elenchos", language: "Greek", meaning: "Conviction, proof. The evidence is the character of God. You cannot see the promise. But you know the one who made it." },
+            { term: "parepidēmoi", language: "Greek", meaning: "Sojourners, pilgrims. Faith makes you a stranger in the present world because you are headed for a different one. You do not fully belong to what you can see." },
+          ],
+          structure: "The passage moves from definition (v.1-2: what faith is), to creation (v.3: faith and the origin of things), to examples (v.4-16: Abel, Enoch, Noah, Abraham, Sarah), to the key admission (v.13-16: they died without receiving, looking for a better country). The climax is not triumph but longing.",
+        },
+        scholars: [
+          { view: "Pilgrimage theology", summary: "The heroes of faith are defined by their homelessness. They are strangers on earth because they seek a heavenly city. Faith is orientation toward a destination you have not reached.", proponents: "William Lane, Luke Timothy Johnson" },
+          { view: "Perseverance exhortation", summary: "Hebrews 11 is not abstract theology. It is pastoral encouragement for a community considering apostasy. The message: others held on without seeing. You can too.", proponents: "David deSilva, Craig Koester, F.F. Bruce" },
+          { view: "Christological fulfillment", summary: "The faith heroes 'did not receive what was promised' because the promise is fulfilled in Christ (11:39-40). Their faith pointed forward. Our faith looks back to the same reality. Christ is the substance to which their faith was the title deed.", proponents: "Peter O'Brien, Gareth Cockerill" },
+        ],
+        application: {
+          question: "The heroes of Hebrews 11 died without receiving the promise. Could you remain faithful to a God who does not deliver in your lifetime? And if not, is your faith in God or in outcomes?",
+          connection: "We define faith by results. If you believe hard enough, you will receive. Hebrews 11 demolishes that definition. Every person on this list died with the promise outstanding. Abraham never owned the land. Sarah waited decades. They all died 'in faith, not having received what was promised.' And the author calls that commendable. Faith is not getting what you want from God. Faith is trusting who God is when you do not get what you want. That is a harder definition. It is also the only honest one.",
+          thisWeek: "Identify one promise you are waiting on — a prayer unanswered, a hope deferred, a longing unfulfilled. Read Hebrews 11:13: 'All these people were still living by faith when they died. They did not receive the things promised.' Then ask: can I hold this promise without demanding a timeline? Can I trust the Promiser even if I die before the delivery?",
+        },
+        deeper: {
+          books: ["Hebrews (Word Biblical Commentary) by William Lane", "Hebrews (Anchor Bible) by Craig Koester", "The Letter to the Hebrews (Pillar) by Peter O'Brien"],
+          studyQuestion: "The author says the faith heroes were 'longing for a better country — a heavenly one' and that God 'has prepared a city for them' (v.16). What does it mean that God is not ashamed to be called their God? How does faithfulness under delay bring God honor?",
+          prayer: "God of Abraham, Sarah, and all who died without receiving, I confess I have conditioned my faith on delivery. I have treated trust as a transaction. Teach me to hold the title deed without demanding the property. I long for the better country. Help me keep walking toward it. Amen.",
+        },
+      },
+      {
+        ref: "Hebrews 12:1-13",
+        summary: "The race set before us and the discipline that proves sonship",
+        text: "Therefore, since we are surrounded by such a great cloud of witnesses, let us throw off everything that hinders and the sin that so easily entangles. And let us run with perseverance the race marked out for us, fixing our eyes on Jesus, the pioneer and perfecter of faith. For the joy set before him he endured the cross, scorning its shame, and sat down at the right hand of the throne of God... Endure hardship as discipline; God is treating you as his children.",
+        paraphrase: "You are not running alone. The hall of faith from chapter 11 — Abel, Abraham, Sarah, all of them — they surround you like a stadium of witnesses. Not spectators. Witnesses. People who ran their race and finished. And the one you fix your eyes on is not behind you shouting instructions. He is ahead of you, having already run the course. Jesus endured the cross. Not despite the joy set before him but for it. And the pain you are experiencing right now? It is not punishment. It is discipline. And discipline is what fathers do for children they intend to keep.",
+        keyWords: [
+          { word: "cloud of witnesses", original: "nephos martyrōn (Greek)", meaning: "A mass, a great throng. Nephos is a cloud so dense you cannot see through it. These witnesses are not watching from a distance. They are surrounding you — the accumulated testimony of everyone who trusted God and did not let go. Their lives are evidence that the race can be run." },
+          { word: "pioneer", original: "archēgos (Greek)", meaning: "Pioneer, author, originator, leader who goes first. Jesus does not direct the race from the sidelines. He blazed the trail. He went first. The path of suffering and glory that he walked is the path you are walking. He did not send you ahead. He went ahead of you." },
+          { word: "discipline", original: "paideia (Greek)", meaning: "Training, education, discipline. In Greek culture, paideia was the entire process of raising a child to maturity — instruction, correction, formation. God's discipline is not punishment. It is parenting. And the author's argument is: if God does not discipline you, you are not actually his child." },
+        ],
+        historical: [
+          "The athletic metaphor (running a race) was common in Greco-Roman culture. The Isthmian Games, held near Corinth, were second only to the Olympic Games. Paul and the author of Hebrews both use athletic imagery because their audience understood competition, training, and endurance. The Christian life is not a stroll. It is a race that requires everything you have.",
+          "The 'cloud of witnesses' connects directly to the heroes of Hebrews 11. The chapter division is artificial — the 'therefore' of 12:1 builds directly on the examples of 11. The witnesses are not passive observers. In Greek, martyrōn carries the sense of those who testify — their lives are testimony that faithful endurance is possible.",
+          "Jesus is called the 'pioneer and perfecter of faith' (archēgos kai teleiōtēs). He originated the path and completed it. The term archēgos was used for founders of cities and leaders of expeditions. Jesus did not create faith as a concept. He blazed the trail of faith by living it, suffering through it, and completing it.",
+          "The discipline passage (v.5-11) draws from Proverbs 3:11-12. The author reinterprets suffering not as punishment or random misfortune but as parental training. In the ancient world, a father who did not discipline his children was considered neglectful. God's discipline is evidence of his paternity, not his displeasure.",
+        ],
+        literary: {
+          genre: "Exhortation using athletic and familial metaphors. The passage shifts from the race metaphor (v.1-3) to the discipline metaphor (v.4-11) to a final call to strengthen what remains (v.12-13). Both metaphors serve the same point: endure.",
+          devices: "The stadium imagery (cloud of witnesses surrounding the runner), the focused gaze ('fixing our eyes on Jesus' — looking away from everything else to look at him), the contrast between temporary discipline and eternal outcome ('a harvest of righteousness and peace'), the Proverbs quotation recontextualized as a word to the weary.",
+          keyTerms: [
+            { term: "archēgos", language: "Greek", meaning: "Pioneer, trail-blazer. Jesus went first. The path of faith is not theoretical. It has been walked by the one who calls you to walk it." },
+            { term: "teleiōtēs", language: "Greek", meaning: "Perfecter, completer. Jesus did not just start the faith. He finished it. The race has a finish line, and he crossed it. That is your guarantee: the race can be completed." },
+            { term: "paideia", language: "Greek", meaning: "Discipline, training. Not retribution but formation. God's discipline does not make you pay for your sins. It makes you ready for your inheritance." },
+          ],
+          structure: "Three movements: (1) The race — throw off hindrances, run with endurance, eyes on Jesus (v.1-3); (2) The discipline — endure hardship as God's parenting (v.4-11); (3) The response — strengthen what remains (v.12-13). The passage moves from encouragement to explanation to exhortation.",
+        },
+        scholars: [
+          { view: "Athletic-agonistic reading", summary: "The Christian life is an endurance race, not a sprint. The emphasis is on perseverance (hypomonē), not speed or talent. The witnesses are not cheering from the stands. They are the evidence that the race can be finished.", proponents: "William Lane, David deSilva" },
+          { view: "Christological exemplar", summary: "Jesus is both the model and the means of faith. He is not merely an example to follow but the pioneer who made the path and the perfecter who sustains those who walk it. Following Jesus is possible because Jesus goes first.", proponents: "N.T. Wright, Gareth Cockerill, F.F. Bruce" },
+          { view: "Discipline as assurance", summary: "God's discipline is not a sign of his anger but of his fatherhood. The absence of discipline would be evidence of illegitimacy, not of grace. The suffering confirms the relationship rather than threatening it.", proponents: "Craig Koester, Peter O'Brien, Luke Timothy Johnson" },
+        ],
+        application: {
+          question: "What weight do you need to throw off to run the race set before you — and have you been interpreting God's discipline as punishment when it was actually parenting?",
+          connection: "We want a Christianity without endurance. A faith without a race. An inheritance without discipline. Hebrews 12 refuses all of that. The race is real. The hindrances are real. The discipline is real. And the finish line is real. Jesus crossed it. The witnesses crossed it. You can cross it — not because you are strong, but because the pioneer went ahead of you and the cloud surrounds you. You are not running alone. You were never running alone.",
+          thisWeek: "Name one weight — not a sin, but a hindrance. A distraction. A comfort that has become an anchor. Something that slows you down even though it is not morally wrong. Then ask: what would it look like to lay it aside this week? Not forever. Just this week. See if you run lighter.",
+        },
+        deeper: {
+          books: ["Hebrews (Word Biblical Commentary) by William Lane", "Hebrews (Two Horizons Commentary) by Luke Timothy Johnson", "The Letter to the Hebrews (NICNT) by Gareth Cockerill"],
+          studyQuestion: "The author says Jesus endured the cross 'for the joy set before him' (v.2). What was the joy? And what does it mean that joy — not obligation, not duty — was the motivation for the cross?",
+          prayer: "Jesus, pioneer who went first, I am tired of the race. The weight is heavy. The discipline hurts. But you endured the cross for joy. You finished. Help me throw off what hinders. Help me fix my eyes on you. I am surrounded by witnesses. I am not alone. Amen.",
+        },
+      },
+    ],
+  },
+  {
+    name: "James", testament: "NT", hook: "The letter that says faith without works is a corpse",
+    passages: [
+      {
+        ref: "James 1:2-18",
+        summary: "Trials, temptation, and why God sends one but not the other",
+        text: "Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, because you know that the testing of your faith produces perseverance. Let perseverance finish its work so that you may be mature and complete, not lacking anything... When tempted, no one should say, 'God is tempting me.' For God cannot be tempted by evil, nor does he tempt anyone...",
+        paraphrase: "James opens with a sentence nobody wants to hear: consider it joy when trials come. Not if. When. And the reason is not that suffering is good. The reason is that suffering produces something nothing else can: perseverance. Maturity. Completeness. But James draws a hard line: trials come from God. Temptation does not. God tests you to grow you. The devil tempts you to destroy you. The experience may feel identical. The source and the purpose are opposite.",
+        keyWords: [
+          { word: "trials", original: "peirasmois (Greek)", meaning: "Trials, tests, ordeals. The word can mean both external trials (suffering) and internal temptations. James uses the same root word for both but distinguishes the source: trials come from God's permission (v.2-4). Temptation comes from human desire (v.14-15). Same word. Different origin. Different purpose." },
+          { word: "perseverance", original: "hypomonē (Greek)", meaning: "Endurance, steadfast patience, the capacity to remain under pressure without collapsing. Not passive waiting but active endurance. Hypomonē is not gritting your teeth. It is staying faithful when everything in you wants to quit." },
+          { word: "desire", original: "epithymia (Greek)", meaning: "Craving, longing, lust. James traces the genealogy of sin: desire conceives, gives birth to sin, which when fully grown gives birth to death. The metaphor is biological. Sin is not a decision. It is a gestation. It starts as a seed of desire and grows into death." },
+        ],
+        historical: [
+          "James writes to Jewish Christians scattered throughout the Roman Empire ('the twelve tribes scattered among the nations,' 1:1). These are people under pressure — economic hardship, social marginalization, persecution. His opening command to 'consider it joy' is not naive. It is addressed to people with real reasons to despair.",
+          "The distinction between trial and temptation was important in early Jewish theology. The rabbis debated whether God directly tested people or whether testing came through secondary causes. James clarifies: God tests faith to mature it. God never tempts anyone to sin. The confusion between the two leads to blaming God for evil, which James refuses.",
+          "The phrase 'double-minded' (dipsychos, 1:8) may be a word James coined. It appears nowhere in Greek literature before this letter. A dipsychos person is split between two allegiances — trusting God and hedging bets with the world. James says this person should expect nothing from God.",
+          "James's teaching on trials has parallels with Jesus' teaching in the Sermon on the Mount (Matthew 5-7). Many scholars see James as a commentary on Jesus' most famous sermon. The emphasis on endurance, integrity, and the relationship between internal character and external behavior echoes Jesus' own instruction.",
+        ],
+        literary: {
+          genre: "Wisdom exhortation / paraenesis. James is the most Jewish book in the New Testament — its style resembles Proverbs and Sirach more than Paul's letters. Short, sharp, practical instructions for living.",
+          devices: "The paradox of joy in suffering (v.2-3), the chain-link logic of testing → perseverance → maturity (v.3-4), the birth metaphor for sin (desire → sin → death, v.14-15) mirroring the divine gift metaphor (v.17-18), the contrast between God who gives good gifts and desire that gives birth to death.",
+          keyTerms: [
+            { term: "peirasmos", language: "Greek", meaning: "Trial, test. James uses the same root for both trial (v.2) and temptation (v.13). The distinction is not the experience but the source: God permits trials. Human desire produces temptation." },
+            { term: "hypomonē", language: "Greek", meaning: "Perseverance, endurance. The fruit of testing. You cannot develop hypomonē in comfort. It is forged in the furnace of trial. That is why James says to count it joy — not for the pain, but for what the pain produces." },
+            { term: "dipsychos", language: "Greek", meaning: "Double-minded, double-souled. A person torn between faith and doubt. James says this person is 'like a wave of the sea, blown and tossed by the wind.' Instability is the fruit of divided allegiance." },
+          ],
+          structure: "The passage moves from command (v.2: consider it joy), to explanation (v.3-4: testing produces perseverance), to exhortation (v.5-8: ask God for wisdom), to warning (v.9-11: the rich will fade), to clarification (v.13-15: God does not tempt), to affirmation (v.16-18: every good gift comes from God). The structure moves from challenge to theology.",
+        },
+        scholars: [
+          { view: "Wisdom Christology", summary: "James stands in the wisdom tradition of Jesus. His teaching on trials, wisdom, and speech echoes the Sermon on the Mount. James is the New Testament's wisdom teacher, applying Jesus' teaching to the daily life of scattered believers.", proponents: "Luke Timothy Johnson, Richard Bauckham, Scot McKnight" },
+          { view: "Theodicy response", summary: "James addresses the age-old question: does God cause suffering? His answer is precise: God permits trials that produce maturity. God never tempts anyone to sin. The distinction preserves both God's sovereignty and God's goodness.", proponents: "Peter Davids, Douglas Moo" },
+          { view: "Social ethics", summary: "James's teaching on trials is connected to his concern for the poor (1:9-11, 2:1-7). Trials are not abstract spiritual exercises. They include economic hardship, social oppression, and systemic injustice. Faith must endure real-world suffering.", proponents: "Elsa Tamez, Pedrito Maynard-Reid" },
+        ],
+        application: {
+          question: "Can you distinguish between trials (God testing you to grow you) and temptations (your desires pulling you toward destruction) in your current circumstances? The difference changes everything about how you respond.",
+          connection: "We blame God for temptation and avoid God during trials. James reverses both. Trials are the curriculum God uses to produce maturity in you — not punishment but training. Temptation is not from God at all — it is the offspring of your own desires dressed up as opportunity. When you can tell the difference, you stop blaming God for what your desires produce and start thanking God for what your trials create.",
+          thisWeek: "Identify one current difficulty. Ask honestly: is this a trial or a temptation? If a trial — something testing your faith — ask God for the perseverance to let it finish its work. If a temptation — a desire pulling you toward something destructive — name it as yours, not God's, and ask for wisdom to resist.",
+        },
+        deeper: {
+          books: ["The Letter of James (Pillar Commentary) by Douglas Moo", "James (Anchor Bible) by Luke Timothy Johnson", "James (Baker Exegetical Commentary) by Dan McCartney"],
+          studyQuestion: "James says 'let perseverance finish its work so that you may be mature and complete' (1:4). What does it mean to let perseverance 'finish'? Are there ways we short-circuit the process by escaping trials before they produce what they were meant to produce?",
+          prayer: "God, I confess I have blamed you for my temptations and resented you for my trials. Teach me the difference. The trials are your curriculum. The temptations are my own desires. Give me perseverance for the first and wisdom to resist the second. Amen.",
+        },
+      },
+      {
+        ref: "James 2:14-26",
+        summary: "Faith and works — the passage Luther hated",
+        text: "What good is it, my brothers and sisters, if someone claims to have faith but has no deeds? Can such faith save them? Suppose a brother or a sister is without clothes and daily food. If one of you says to them, 'Go in peace; keep warm and well fed,' but does nothing about their physical needs, what good is it?... You see that a person is considered righteous by what they do and not by faith alone... As the body without the spirit is dead, so faith without deeds is dead.",
+        paraphrase: "James is not arguing with Paul. He is arguing with people who misuse Paul. The person who says 'I have faith' and walks past a hungry brother has nothing worth calling faith. That is not belief. That is opinion. Real faith moves your hands. It opens your wallet. It costs you something. James does not say works earn salvation. He says: if your faith does not produce works, your faith is a corpse. The body without the spirit is dead. Faith without works is the same kind of dead.",
+        keyWords: [
+          { word: "faith", original: "pistis (Greek)", meaning: "Trust, belief, fidelity. James and Paul use the same word but address different problems. Paul fights legalism: you cannot earn God's favor. James fights cheap grace: your claim to faith means nothing if it produces nothing. They are not contradicting each other. They are facing different directions in the same war." },
+          { word: "justified", original: "dikaioo (Greek)", meaning: "Declared righteous, vindicated. When James says Abraham was 'justified by works,' he means Abraham's works demonstrated that his faith was genuine. When Paul says Abraham was 'justified by faith,' he means Abraham's faith was the basis of his right standing. Same word. Different question. Paul asks: how are you saved? James asks: how do you prove you are saved?" },
+          { word: "dead", original: "nekra (Greek)", meaning: "Dead, lifeless, corpse. James uses the strongest possible word. Faith without works is not weak, or immature, or dormant. It is dead. A corpse. And a corpse cannot save you." },
+        ],
+        historical: [
+          "Martin Luther famously called James 'an epistle of straw' because he thought it contradicted Paul's teaching on justification by faith alone. But the apparent contradiction dissolves when you realize James and Paul are addressing different opponents. Paul fights those who add works to faith as the basis of salvation. James fights those who subtract works from faith as the evidence of salvation.",
+          "James's example of the hungry brother or sister (v.15-16) reflects the economic realities of the early church. Many early Christians were poor, enslaved, or economically marginal. To say 'be warm and filled' without acting was not just insensitive. It was a denial of the gospel's implications for material life.",
+          "James cites the same Old Testament text as Paul — Genesis 15:6: 'Abraham believed God, and it was credited to him as righteousness.' But James reads the text through a different lens. He connects Genesis 15 (Abraham believed) to Genesis 22 (Abraham offered Isaac). Faith was declared in Genesis 15. Faith was demonstrated in Genesis 22. Both are true.",
+          "The inclusion of Rahab (v.25) alongside Abraham is deliberate and subversive. Abraham is the father of the faith. Rahab is a Canaanite prostitute. James places them side by side as equal examples of living faith. Faith is not about pedigree or status. It is about action that proves trust.",
+        ],
+        literary: {
+          genre: "Diatribe — a rhetorical style that argues with an imaginary opponent. James's 'someone will say' (v.18) introduces an interlocutor whose position James dismantles. The style is confrontational, direct, and designed to provoke a response.",
+          devices: "The rhetorical question opening ('What good is it?'), the concrete example of the hungry sibling (v.15-16) making abstract theology painfully practical, the shocking parallel between Abraham and Rahab, the final metaphor (body without spirit = faith without works) as an unforgettable summary.",
+          keyTerms: [
+            { term: "pistis", language: "Greek", meaning: "Faith. James is not redefining faith. He is insisting that genuine faith has visible results. A faith that produces nothing is not genuine faith. It is intellectual assent — and even the demons have that (v.19)." },
+            { term: "erga", language: "Greek", meaning: "Works, deeds, actions. Not 'works of the law' (Paul's target) but works of mercy, compassion, and obedience. James is not talking about earning salvation. He is talking about proving it." },
+            { term: "nekra", language: "Greek", meaning: "Dead. A corpse. Not 'weak' or 'insufficient' but dead. James does not soften the diagnosis. Faith that does not act is not sick. It is deceased." },
+          ],
+          structure: "The argument moves from question (v.14: can such faith save?), to illustration (v.15-17: the hungry sibling), to challenge (v.18-19: show me your faith without deeds — even demons believe), to Old Testament proof (v.20-25: Abraham and Rahab), to verdict (v.26: faith without works is dead). The structure is a prosecution building toward a conviction.",
+        },
+        scholars: [
+          { view: "Complementary to Paul", summary: "James and Paul are not contradicting each other. Paul argues against works as the basis of salvation. James argues against faith that produces no works as evidence of salvation. Both agree: genuine faith transforms behavior.", proponents: "Douglas Moo, D.A. Carson, Scot McKnight" },
+          { view: "Social gospel reading", summary: "James insists that faith has material, economic, and social implications. To pass the hungry and say 'be warm' is to deny the gospel. The letter is a call to embodied faith that addresses physical need.", proponents: "Elsa Tamez, Luke Timothy Johnson, Pedrito Maynard-Reid" },
+          { view: "Wisdom tradition", summary: "James stands in the Jewish wisdom tradition where belief and behavior are inseparable. Wisdom is not what you know. It is what you do. To claim wisdom (or faith) without corresponding action is to be the 'fool' of Proverbs — morally incoherent.", proponents: "Richard Bauckham, Peter Davids, Ralph Martin" },
+        ],
+        application: {
+          question: "If someone followed you around for a week with no access to your private prayers or inner beliefs, would they see evidence of faith? Would your actions testify to what you claim to believe?",
+          connection: "We are comfortable with faith as a mental category. I believe the right things. I hold the right doctrines. James says: so do the demons. They believe. They shudder. But they do not obey. The question is not 'do you believe?' The question is: 'does your belief move your body?' Does it open your wallet for the hungry brother? Does it change how you treat the person with nothing to offer you? Faith that lives only in your head is a corpse. And a corpse cannot save you.",
+          thisWeek: "Identify one person in your community who is 'without clothes and daily food' — metaphorically or literally. Someone in need. Then do something concrete this week. Do not just pray for them. Act. Buy the meal. Make the call. Show up. Let your faith move your body.",
+        },
+        deeper: {
+          books: ["The Letter of James (Pillar Commentary) by Douglas Moo", "James (Word Biblical Commentary) by Ralph Martin", "James (Baker Exegetical Commentary) by Dan McCartney"],
+          studyQuestion: "Luther called James 'an epistle of straw.' Was he right? Can James 2 and Romans 3 both be true simultaneously? If so, what does each passage correct that the other, taken alone, might distort?",
+          prayer: "God, I have held faith in my head and withheld it from my hands. I have believed the right things and walked past the hungry brother. Forgive me. Make my faith live. Move my body. Open my wallet. Turn my belief into action before it turns into a corpse. Amen.",
+        },
+      },
+    ],
+  },
 ];
 
 const TABS = ["What It Says", "What It Meant", "How It's Built", "What Scholars Say", "Why It Matters", "Go Deeper"];
