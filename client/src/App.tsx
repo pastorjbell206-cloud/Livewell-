@@ -177,6 +177,11 @@ const FaithCrisis = lazy(() => import("./pages/landing/FaithCrisis"));
 const MarriageCrisis = lazy(() => import("./pages/landing/MarriageCrisis"));
 const GriefLanding = lazy(() => import("./pages/landing/Grief"));
 const ParentingStruggles = lazy(() => import("./pages/landing/ParentingStruggles"));
+const Deconstruction = lazy(() => import("./pages/landing/Deconstruction"));
+const ChurchHistory = lazy(() => import("./pages/landing/ChurchHistory"));
+const ChurchHurt = lazy(() => import("./pages/landing/ChurchHurt"));
+const HonestQuestions = lazy(() => import("./pages/landing/HonestQuestions"));
+const PostChristianLanding = lazy(() => import("./pages/landing/PostChristian"));
 const ReadingPathDetail = lazy(() =>
   import("./pages/ReadingPathDetail").then((m) => ({ default: m.ReadingPathDetail }))
 );
@@ -429,6 +434,11 @@ function Router() {
         <Route path="/marriage-crisis" component={MarriageCrisis} />
         <Route path="/grief" component={GriefLanding} />
         <Route path="/parenting-help" component={ParentingStruggles} />
+        <Route path="/deconstruction" component={Deconstruction} />
+        <Route path="/church-history" component={ChurchHistory} />
+        <Route path="/church-hurt" component={ChurchHurt} />
+        <Route path="/honest-questions" component={HonestQuestions} />
+        <Route path="/post-christian" component={PostChristianLanding} />
 <Route path="/admin/login" component={AdminLogin} />
         <Route path="/admin"><ProtectedRoute component={AdminDashboard} requireAdmin /></Route>
         <Route path="/admin/posts"><ProtectedRoute component={AdminPosts} requireAdmin /></Route>
