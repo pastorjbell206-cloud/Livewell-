@@ -113,6 +113,13 @@ function manifestPages() {
     { file: "client/public/life/domains-index.json", key: "domains", prefix: "/life/" },
     { file: "client/public/creeds/documents-index.json", key: "documents", prefix: "/resources/creeds/" },
     { file: "client/public/history/essays-index.json", key: "essays", prefix: "/theology/history/" },
+    // Study-guide toolkits (/studyguides/:slug), home-disciplemaking Table
+    // studies (/table/:slug), and the How-To library (/how-tos/:slug) — large
+    // surfaced libraries that were missing from the sitemap. Routes confirmed in
+    // client/src/App.tsx; duplicates with STATIC_PAGES are removed in buildXml.
+    { file: "client/public/studyguides/index.json", key: "guides", prefix: "/studyguides/" },
+    { file: "client/public/table/studies-index.json", key: "studies", prefix: "/table/" },
+    { file: "client/public/howtos/index.json", key: "articles", prefix: "/how-tos/" },
   ];
   for (const s of sources) {
     try {
@@ -138,7 +145,15 @@ function urlEntry(loc, lastmod, changefreq, priority) {
 }
 
 function buildXml(staticPages, articles, books, readingPaths) {
-  const allStatic = [...staticPages, ...manifestPages()];
+  // De-duplicate by URL (a few study-guide slugs appear in both STATIC_PAGES and
+  // the studyguides manifest). First occurrence wins, so the curated static
+  // entries keep their higher priority.
+  const seen = new Set();
+  const allStatic = [...staticPages, ...manifestPages()].filter((p) => {
+    if (seen.has(p.url)) return false;
+    seen.add(p.url);
+    return true;
+  });
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
   for (const page of allStatic) {
