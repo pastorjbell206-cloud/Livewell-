@@ -82,7 +82,7 @@ export default function SermonWorkbench() {
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={{ ...wrap, maxWidth: "760px" }}>
-          <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Sermon title or text (e.g. Luke 15, The Prodigal)"
+          <input value={title} onChange={(e) => setTitle(e.target.value)} aria-label="Sermon title or text" placeholder="Sermon title or text (e.g. Luke 15, The Prodigal)"
             style={{ width: "100%", fontFamily: "var(--F)", fontSize: "22px", padding: "12px 14px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)", marginBottom: "var(--s-4)" }} />
 
           {STAGES.map((s) => (
@@ -91,9 +91,9 @@ export default function SermonWorkbench() {
               <h2 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 500, color: "var(--ink)", marginBottom: "var(--s-3)" }}>{s.title}</h2>
               {s.prompts.map((p) => (
                 <div key={p.id} style={{ marginBottom: "var(--s-3)" }}>
-                  <label style={{ display: "block", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, color: "var(--ink)", marginBottom: "2px" }}>{p.q}</label>
+                  <label htmlFor={`sermon-${p.id}`} style={{ display: "block", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, color: "var(--ink)", marginBottom: "2px" }}>{p.q}</label>
                   <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", marginBottom: "6px", lineHeight: 1.5 }}>{p.help}</p>
-                  <textarea value={answers[p.id] || ""} onChange={(e) => setAnswers((a) => ({ ...a, [p.id]: e.target.value }))} rows={3}
+                  <textarea id={`sermon-${p.id}`} value={answers[p.id] || ""} onChange={(e) => setAnswers((a) => ({ ...a, [p.id]: e.target.value }))} rows={3}
                     style={{ width: "100%", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)", resize: "vertical" }} />
                 </div>
               ))}

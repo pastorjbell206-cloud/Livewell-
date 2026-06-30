@@ -56,7 +56,7 @@ export default function IllustrationLibrary() {
         <div style={wrap}>
           <div style={{ position: "relative", marginBottom: "var(--s-3)" }}>
             <Search size={18} style={{ position: "absolute", left: "14px", top: "50%", transform: "translateY(-50%)", color: "var(--ink-muted)" }} aria-hidden />
-            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search by theme, text, or what you are preaching"
+            <input value={q} onChange={(e) => setQ(e.target.value)} aria-label="Search illustrations" placeholder="Search by theme, text, or what you are preaching"
               style={{ width: "100%", fontFamily: "var(--B)", fontSize: "16px", padding: "12px 14px 12px 42px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)" }} />
           </div>
           <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginBottom: "var(--s-4)" }}>

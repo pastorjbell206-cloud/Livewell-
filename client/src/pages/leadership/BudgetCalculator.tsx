@@ -56,10 +56,10 @@ export default function BudgetCalculator() {
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={{ ...wrap, maxWidth: "760px" }}>
-          <label style={{ display: "block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", marginBottom: "6px" }}>Annual giving</label>
+          <label htmlFor="budget-income" style={{ display: "block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", marginBottom: "6px" }}>Annual giving</label>
           <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "var(--s-4)" }}>
             <span style={{ fontFamily: "var(--F)", fontSize: "24px", color: "var(--ink-muted)" }}>$</span>
-            <input type="number" value={income} onChange={(e) => setIncome(Number(e.target.value))} style={{ flex: 1, fontFamily: "var(--F)", fontSize: "24px", padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)" }} />
+            <input id="budget-income" type="number" value={income} onChange={(e) => setIncome(Number(e.target.value))} style={{ flex: 1, fontFamily: "var(--F)", fontSize: "24px", padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)" }} />
           </div>
 
           {cats.map((c) => {
@@ -72,8 +72,8 @@ export default function BudgetCalculator() {
                   <span style={{ fontFamily: "var(--F)", fontSize: "20px", color: "var(--mustard-text)" }}>{money(dollars)}</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "10px", margin: "10px 0 6px" }}>
-                  <input type="range" min={0} max={70} value={c.pct} onChange={(e) => setPct(c.id, Number(e.target.value))} style={{ flex: 1, accentColor: "var(--mustard)" }} />
-                  <input type="number" value={c.pct} onChange={(e) => setPct(c.id, Number(e.target.value))} style={{ width: "60px", fontFamily: "var(--U)", fontSize: "14px", padding: "6px 8px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)" }} />
+                  <input type="range" min={0} max={70} value={c.pct} onChange={(e) => setPct(c.id, Number(e.target.value))} aria-label={`${c.name} percent`} style={{ flex: 1, accentColor: "var(--mustard)" }} />
+                  <input type="number" value={c.pct} onChange={(e) => setPct(c.id, Number(e.target.value))} aria-label={`${c.name} percent`} style={{ width: "60px", fontFamily: "var(--U)", fontSize: "14px", padding: "6px 8px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)" }} />
                   <span style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)" }}>%</span>
                 </div>
                 <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: inRange ? "var(--ink-muted)" : "#b4541f", marginBottom: "4px" }}>Healthy range {c.lo} to {c.hi}%{inRange ? "" : c.pct < c.lo ? " · below the range" : " · above the range"}</p>

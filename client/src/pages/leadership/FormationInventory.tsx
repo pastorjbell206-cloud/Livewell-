@@ -515,6 +515,7 @@ export default function FormationInventory() {
                             name={s.id}
                             value={val}
                             checked={on}
+                            aria-label={label}
                             onChange={() => setAnswers((a) => ({ ...a, [s.id]: val }))}
                           />
                           <span style={{
