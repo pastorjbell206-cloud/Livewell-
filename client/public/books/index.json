@@ -39,6 +39,38 @@
       "blurb": "Most of us were handed a faith for Sundays and a calendar for the other six days, and we have lived in the gap ever since. This is a book about closing it. Marriage and money, work and rest, the body and the home and the friends who know your real name, all of it claimed by one Lord and offered as one life.",
       "pillar": "Integrated Life",
       "chapters": 12
+    },
+    {
+      "slug": "faithful-in-exile",
+      "title": "Faithful in Exile",
+      "subtitle": "Pastoral Leadership and the Church's Witness in a Post-Christian Age",
+      "blurb": "The church in the West has lost the cultural power it held for sixteen centuries, and most of us are treating the loss as a catastrophe to be reversed. It is not a catastrophe. It is a homecoming — a return to the church's most native and faithful condition, the condition of exile, where the people of God have always done their truest work. This book traces how Christendom rose and how it fell, and argues that the seventy years before us are not a sentence but an assignment.",
+      "pillar": "After Christendom",
+      "chapters": 11
+    },
+    {
+      "slug": "sent-into-the-city",
+      "title": "Sent Into the City",
+      "subtitle": "The Church's Calling to Its Neighborhood and World",
+      "blurb": "The church was never gathered to be hidden. It was gathered to be sent — into the actual street, the actual block, the actual city where God has placed it. This is a book about trading the machinery of programs for the slow obedience of presence, and about what it costs to seek the welfare of a place you did not choose.",
+      "pillar": "Prophetic Justice",
+      "chapters": 11
+    },
+    {
+      "slug": "common-grace",
+      "title": "Common Grace",
+      "subtitle": "What Pastors Learn When They Listen to the World",
+      "blurb": "God did not lock his goodness inside the church. He scattered it across the whole field of human life — into the laboratory, the studio, the courtroom, the mouth of the honest unbeliever — and called it good before any of us got there. This is a book about the grace that is common: the kindness of God to those who do not yet know his name, and the discipline of learning to recognize it without surrendering to it.",
+      "pillar": "Theological Depth",
+      "chapters": 11
+    },
+    {
+      "slug": "the-pruning",
+      "title": "The Pruning",
+      "subtitle": "Church Decline, Faithful Endurance, and the Promise of Renewal",
+      "blurb": "The numbers are real, and they are not lying to us. But the question the church keeps asking — are we dying? — is the wrong question, because it assumes the only two states are health and death. There is a third thing, and the Vinedresser has done it before. This is a book about the difference between the church being killed and the church being cut, and why the second one looks almost exactly like the first while it is happening.",
+      "pillar": "After Christendom",
+      "chapters": 11
     }
   ]
 }
