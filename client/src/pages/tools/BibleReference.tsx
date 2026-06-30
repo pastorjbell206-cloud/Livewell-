@@ -225,7 +225,7 @@ const TOPICS: Topic[] = [
       },
       {
         reference: "Malachi 2:13-16",
-        text: "'The Lord is the witness between you and the wife of your youth. You have been unfaithful to her, though she is your partner, the wife of your marriage covenant. ... "The man who hates and divorces his wife," says the Lord, the God of Israel, "does violence to the one he should protect."'",
+        text: "\"The Lord is the witness between you and the wife of your youth. You have been unfaithful to her, though she is your partner, the wife of your marriage covenant. ... 'The man who hates and divorces his wife,' says the Lord, the God of Israel, 'does violence to the one he should protect.'\"",
         context:
           "Malachi addresses Israelite men who are divorcing their wives to marry younger women or foreign wives. The prophet frames divorce as covenant-breaking violence. The language is legal and theological: God himself is the witness to the marriage covenant, and breaking it is a form of treachery. The target audience is not people in abusive marriages; it is men using the legal system to discard wives for personal advantage.",
         misuse:
