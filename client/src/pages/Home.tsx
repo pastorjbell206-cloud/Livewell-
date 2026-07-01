@@ -242,6 +242,25 @@ export default function Home() {
                   {HERO_VARIANT === "A" ? "Find your track" : "Start here if you're a skeptic"}
                 </button>
               </Link>
+              <Link href="/table" style={{ textDecoration: "none" }}>
+                <button
+                  type="button"
+                  style={{
+                    background: "transparent",
+                    color: "var(--bone)",
+                    border: "1px solid rgba(245,240,230,0.25)",
+                    padding: "14px 28px",
+                    fontFamily: "var(--U)",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    letterSpacing: "0.04em",
+                    borderRadius: "var(--radius-sm)",
+                    cursor: "pointer",
+                  }}
+                >
+                  Disciple someone
+                </button>
+              </Link>
             </div>
             {HERO_VARIANT === "A" && (
               <div style={{ marginTop: "16px" }}>
