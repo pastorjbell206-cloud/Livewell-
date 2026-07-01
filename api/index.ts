@@ -751,6 +751,35 @@ async function pcnSignup(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+// Lead-magnet email capture. The client (LeadMagnetLanding) POSTs here as a raw
+// REST call and only checks response.ok, so we return 200 as long as the email
+// is valid — persistence is best-effort and never blocks the signup UX.
+async function leadMagnetSignup(req: VercelRequest, res: VercelResponse) {
+  try {
+    const body = await readBody(req);
+    const email = String(body.email || "").trim().toLowerCase();
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return json(res, 400, { success: false, error: "invalid email" });
+    const magnetId = String(body.magnetId || "unknown").slice(0, 128);
+    try {
+      const publicId = (globalThis.crypto && globalThis.crypto.randomUUID)
+        ? globalThis.crypto.randomUUID()
+        : `${Date.now()}-${Math.round(Math.random() * 1e9)}`;
+      await withConn(async (c) => {
+        await c.execute(
+          "INSERT INTO lead_magnet_signups (publicId, email, magnetId) VALUES (?, ?, ?)",
+          [publicId, email, magnetId]
+        );
+      });
+    } catch (e) {
+      // Table may not exist yet, or a transient DB error — do not fail the user.
+      console.warn("[lead-magnets] persist failed:", e);
+    }
+    return json(res, 200, { success: true, message: "Check your email for your guide!" });
+  } catch (e: any) {
+    return json(res, 500, { success: false, error: String(e?.message || e) });
+  }
+}
+
 async function sitemap(_req: VercelRequest, res: VercelResponse) {
   try {
     const base = "https://www.livewellbyjamesbell.co";
@@ -1780,17 +1809,6 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         if (!book || !book.published) return trpcOk(res, null);
         return trpcOk(res, book);
       }
-      case "posts.listForIndex": {
-        const rows = await withConn(async (c) => {
-          const [r]: any = await c.execute(
-            "SELECT id, slug, title, excerpt, pillar, topic, coverImage, readingTimeMinutes, readTime, " +
-              "format, audience, audience_type, contentType, difficulty, publishedAt, featured, createdAt, updatedAt " +
-              "FROM posts WHERE published = true ORDER BY publishedAt DESC",
-          );
-          return (r as any[]).map((p) => ({ ...p, featured: !!p.featured }));
-        });
-        return trpcOk(res, rows);
-      }
       case "subscribers.list": {
         if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
         const rows = await withConn(async (c) => {
@@ -2641,6 +2659,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/download") return ebookDownload(req, res);
     if (url === "/api/subscribe") return subscribe(req, res);
     if (url === "/api/pcn/signup") return pcnSignup(req, res);
+    if (url === "/api/lead-magnets/signup") return leadMagnetSignup(req, res);
     if (url === "/api/sitemap.xml" || url === "/api/sitemap") return sitemap(req, res);
     if (url === "/api/robots.txt" || url === "/api/robots") return robotsTxt(req, res);
     if (url === "/api/articles") return listArticles(req, res);
