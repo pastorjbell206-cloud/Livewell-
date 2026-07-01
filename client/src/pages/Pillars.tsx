@@ -149,7 +149,7 @@ export default function Pillars() {
                         <ArrowRight size={18} aria-hidden style={{ color: "var(--ink-muted)" }} />
                       </div>
                     </div>
-                    {/* Intro placeholder — James supplies the final on-voice copy. */}
+                    {/* Pillar intro (taxonomy.ts blurb) — on-voice copy. */}
                     <p
                       style={{
                         fontFamily: "var(--B)",
