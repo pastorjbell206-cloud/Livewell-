@@ -24,7 +24,6 @@ const STATIC_PAGES = [
   // LiveWell series ebooks (code-only product pages, not DB-backed).
   { url: "/consider-the-birds", priority: "0.8", changefreq: "monthly" },
   { url: "/where-your-treasure-is", priority: "0.8", changefreq: "monthly" },
-  { url: "/after-christendom", priority: "0.85", changefreq: "monthly" },
   { url: "/covenant", priority: "0.85", changefreq: "monthly" },
   { url: "/babylon", priority: "0.9", changefreq: "monthly" },
   { url: "/how-to-read-the-bible", priority: "0.85", changefreq: "monthly" },

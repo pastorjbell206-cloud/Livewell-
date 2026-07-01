@@ -2136,12 +2136,6 @@ const EBOOKS: Record<string, EbookConfig> = {
     file: new URL("./_ebooks/alone-in-a-crowded-church.pdf", import.meta.url),
     filename: "Alone-in-a-Crowded-Church.pdf",
   },
-  "after-christendom": {
-    title: "After Christendom",
-    priceEnv: "STRIPE_PRICE_AFTER_CHRISTENDOM",
-    file: new URL("./_ebooks/after-christendom.pdf", import.meta.url),
-    filename: "After-Christendom.pdf",
-  },
   "covenant": {
     title: "Covenant",
     priceEnv: "STRIPE_PRICE_COVENANT",

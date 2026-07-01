@@ -45,12 +45,6 @@ const BOOKS = [
     env: "STRIPE_PRICE_WHERE_YOUR_TREASURE_IS",
   },
   {
-    slug: "after-christendom",
-    title: "After Christendom",
-    subtitle: "How to Follow Jesus in Post-Christian America",
-    env: "STRIPE_PRICE_AFTER_CHRISTENDOM",
-  },
-  {
     slug: "covenant",
     title: "Covenant",
     subtitle: "Why Marriage Is a Promise, Not a Deal",

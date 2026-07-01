@@ -16,8 +16,6 @@ import Books from "./pages/Books";
 const BookDetail = lazy(() => import("./pages/BookDetail"));
 const AloneInACrowdedChurch = lazy(() => import("./pages/books/AloneInACrowdedChurch"));
 const AloneInACrowdedChurchThankYou = lazy(() => import("./pages/books/AloneInACrowdedChurchThankYou"));
-const AfterChristendom = lazy(() => import("./pages/books/AfterChristendom"));
-const AfterChristendomThankYou = lazy(() => import("./pages/books/AfterChristendomThankYou"));
 const Covenant = lazy(() => import("./pages/books/Covenant"));
 const CovenantThankYou = lazy(() => import("./pages/books/CovenantThankYou"));
 const Babylon = lazy(() => import("./pages/books/Babylon"));
@@ -372,8 +370,6 @@ function Router() {
         <Route path="/where-your-treasure-is" component={WhereYourTreasureIs} />
         <Route path="/alone-in-a-crowded-church/thank-you" component={AloneInACrowdedChurchThankYou} />
         <Route path="/alone-in-a-crowded-church" component={AloneInACrowdedChurch} />
-        <Route path="/after-christendom/thank-you" component={AfterChristendomThankYou} />
-        <Route path="/after-christendom" component={AfterChristendom} />
         <Route path="/covenant/thank-you" component={CovenantThankYou} />
         <Route path="/covenant" component={Covenant} />
         <Route path="/babylon/thank-you" component={BabylonThankYou} />
