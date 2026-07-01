@@ -2172,6 +2172,12 @@ const EBOOKS: Record<string, EbookConfig> = {
     file: new URL("./_ebooks/what-belongs-to-the-poor.pdf", import.meta.url),
     filename: "What-Belongs-to-the-Poor.pdf",
   },
+  "rule-of-life": {
+    title: "Rule of Life",
+    priceEnv: "STRIPE_PRICE_RULE_OF_LIFE",
+    file: new URL("./_ebooks/rule-of-life.pdf", import.meta.url),
+    filename: "Rule-of-Life.pdf",
+  },
 };
 
 const PRODUCTION_SITE_URL = "https://livewellbyjamesbell.co";

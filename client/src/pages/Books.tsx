@@ -304,6 +304,37 @@ export default function Books() {
         </Link>
       </section>
 
+      {/* NEW EBOOK — Rule of Life (standalone funnel page) */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/rule-of-life" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img
+              src="/books/rule-of-life.svg"
+              alt="Rule of Life book cover"
+              width={120}
+              height={181}
+              style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }}
+            />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
+                New Ebook · $9.99 · The Ancient Disciplines
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                Rule of Life
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", margin: 0 }}>
+                You are being formed every hour, by the feed and the screen, into someone you did not choose. The
+                ancient practices the church used to form durable souls, recovered for an age built to deform us. Read
+                the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
       {/* NEW RELEASE — featured ebook (standalone product page) */}
       <section style={{ background: "var(--mustard)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/books/when-god-bless-america" style={{ textDecoration: "none", color: "inherit" }}>

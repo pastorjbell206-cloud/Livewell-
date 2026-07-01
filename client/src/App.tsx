@@ -28,6 +28,8 @@ const BeTrueToYourself = lazy(() => import("./pages/books/BeTrueToYourself"));
 const BeTrueToYourselfThankYou = lazy(() => import("./pages/books/BeTrueToYourselfThankYou"));
 const WhatBelongsToThePoor = lazy(() => import("./pages/books/WhatBelongsToThePoor"));
 const WhatBelongsToThePoorThankYou = lazy(() => import("./pages/books/WhatBelongsToThePoorThankYou"));
+const RuleOfLife = lazy(() => import("./pages/books/RuleOfLife"));
+const RuleOfLifeThankYou = lazy(() => import("./pages/books/RuleOfLifeThankYou"));
 const WhenGodBlessAmerica = lazy(() => import("./pages/WhenGodBlessAmerica"));
 const WhenGodBlessAmericaThankYou = lazy(() => import("./pages/WhenGodBlessAmericaThankYou"));
 const Believe = lazy(() => import("./pages/Believe"));
@@ -382,6 +384,8 @@ function Router() {
         <Route path="/be-true-to-yourself" component={BeTrueToYourself} />
         <Route path="/what-belongs-to-the-poor/thank-you" component={WhatBelongsToThePoorThankYou} />
         <Route path="/what-belongs-to-the-poor" component={WhatBelongsToThePoor} />
+        <Route path="/rule-of-life/thank-you" component={RuleOfLifeThankYou} />
+        <Route path="/rule-of-life" component={RuleOfLife} />
         <Route path="/substack" component={SubstackPage} />
         <Route path="/pastors" component={Pastors} />
         <Route path="/about" component={About} />

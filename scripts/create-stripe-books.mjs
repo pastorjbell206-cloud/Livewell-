@@ -80,6 +80,12 @@ const BOOKS = [
     subtitle: "What the Ancient Church Knew About Wealth and Justice",
     env: "STRIPE_PRICE_WHAT_BELONGS_TO_THE_POOR",
   },
+  {
+    slug: "rule-of-life",
+    title: "Rule of Life",
+    subtitle: "The Ancient Art of Forming a Soul in an Age Built to Deform It",
+    env: "STRIPE_PRICE_RULE_OF_LIFE",
+  },
 ];
 
 const results = [];
