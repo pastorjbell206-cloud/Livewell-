@@ -10,6 +10,7 @@ import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import GatedDownload from "@/components/GatedDownload";
+import PageEndNav from "@/components/PageEndNav";
 import { DONATE_HREF, DONATE_BLURB } from "@/lib/donate";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
@@ -318,6 +319,8 @@ export default function StudyGuide() {
               )}
             </div>
           </section>
+
+          <PageEndNav back={{ href: "/studyguides", label: "All study guides" }} />
         </>
       )}
     </Layout>
