@@ -15,11 +15,11 @@
 ## Status
 
 - [x] Inventory confirmed (routes + line counts)
-- [ ] §1 /tools estate verdicts (27 pages + hub)
-- [ ] §2 Leadership instruments verdicts (11 + 4 engines)
-- [ ] §3 Entry diagnostics verdicts (3 + 1)
-- [ ] §4 Tiers (Strong / Shallow / Cut-or-merge)
-- [ ] §5 Signature candidates, cut list, estate verdict, ranked findings
+- [x] §1 /tools estate verdicts (27 pages + hub)
+- [x] §2 Leadership instruments verdicts (11 + 4 engines)
+- [x] §3 Entry diagnostics verdicts (3 + 1)
+- [x] §4 Tiers (Strong / Shallow / Cut-or-merge)
+- [x] §5 Signature candidates, cut list, estate verdict, ranked findings
 
 ## 0. Inventory (what was audited)
 
