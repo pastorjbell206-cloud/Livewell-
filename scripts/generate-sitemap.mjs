@@ -135,6 +135,7 @@ function manifestPages() {
     { file: "client/public/creeds/documents-index.json", key: "documents", prefix: "/resources/creeds/" },
     { file: "client/public/history/essays-index.json", key: "essays", prefix: "/theology/history/" },
     { file: "client/public/studyguides/index.json", key: "guides", prefix: "/studyguides/" },
+    { file: "client/public/books/index.json", key: "books", prefix: "/read/" },
   ];
   for (const s of sources) {
     try {
