@@ -46,6 +46,19 @@ const STATIC_PAGES = [
   { url: "/after-christendom", priority: "0.85", changefreq: "monthly" },
   { url: "/covenant", priority: "0.85", changefreq: "monthly" },
   { url: "/why-not-what", priority: "0.85", changefreq: "monthly" },
+  { url: "/sermon-on-the-mount-as-politics", priority: "0.85", changefreq: "monthly" },
+  { url: "/prophetic-justice-101", priority: "0.85", changefreq: "monthly" },
+  { url: "/marriage-in-ministry", priority: "0.85", changefreq: "monthly" },
+  { url: "/the-loneliness-of-the-pastor", priority: "0.85", changefreq: "monthly" },
+  { url: "/healwell", priority: "0.85", changefreq: "monthly" },
+  { url: "/born-again-from-atheism", priority: "0.85", changefreq: "monthly" },
+  { url: "/the-god-who-is-not-nice", priority: "0.85", changefreq: "monthly" },
+  { url: "/faith-after-deconstruction", priority: "0.85", changefreq: "monthly" },
+  { url: "/ordinary-holiness", priority: "0.85", changefreq: "monthly" },
+  { url: "/the-scandal-of-the-cross", priority: "0.85", changefreq: "monthly" },
+  { url: "/heaven-is-not-your-reward", priority: "0.85", changefreq: "monthly" },
+  { url: "/prayer-in-the-dark", priority: "0.85", changefreq: "monthly" },
+  { url: "/the-body-you-left", priority: "0.85", changefreq: "monthly" },
   { url: "/skeptic-track", priority: "0.9", changefreq: "monthly" },
   { url: "/pastors-resource-wall", priority: "0.85", changefreq: "weekly" },
   { url: "/roadmap", priority: "0.8", changefreq: "monthly" },
@@ -129,7 +142,15 @@ function manifestPages() {
     { file: "client/public/life/domains-index.json", key: "domains", prefix: "/life/" },
     { file: "client/public/creeds/documents-index.json", key: "documents", prefix: "/resources/creeds/" },
     { file: "client/public/history/essays-index.json", key: "essays", prefix: "/theology/history/" },
+    // Study-guide toolkits (/studyguides/:slug), home-disciplemaking Table
+    // studies (/table/:slug), the How-To library (/how-tos/:slug), and the
+    // read-online books (/read/:slug) — large surfaced libraries. Routes
+    // confirmed in client/src/App.tsx; duplicates with STATIC_PAGES are removed
+    // in buildXml.
     { file: "client/public/studyguides/index.json", key: "guides", prefix: "/studyguides/" },
+    { file: "client/public/table/studies-index.json", key: "studies", prefix: "/table/" },
+    { file: "client/public/howtos/index.json", key: "articles", prefix: "/how-tos/" },
+    { file: "client/public/books/index.json", key: "books", prefix: "/read/" },
   ];
   for (const s of sources) {
     try {
@@ -155,7 +176,15 @@ function urlEntry(loc, lastmod, changefreq, priority) {
 }
 
 function buildXml(staticPages, articles, books, readingPaths) {
-  const allStatic = [...staticPages, ...manifestPages()];
+  // De-duplicate by URL (a few study-guide slugs appear in both STATIC_PAGES and
+  // the studyguides manifest). First occurrence wins, so the curated static
+  // entries keep their higher priority.
+  const seen = new Set();
+  const allStatic = [...staticPages, ...manifestPages()].filter((p) => {
+    if (seen.has(p.url)) return false;
+    seen.add(p.url);
+    return true;
+  });
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
   for (const page of allStatic) {

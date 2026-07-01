@@ -8,10 +8,10 @@ const colTitle = { fontSize: "13px", fontWeight: "bold", marginBottom: "16px", c
 const col = { display: "flex", flexDirection: "column", gap: "10px" } as const;
 
 /**
- * Footer mirrors the header's mental model (the five pillars are the spine),
- * per docs/site-ia-blueprint.md: The Five Pillars / Write & Read /
- * Libraries & Tools / For Pastors / Connect. "Resources" appears exactly once
- * in navigation (the Resource Hub, labeled Downloads & Study Guides here).
+ * Footer mirrors the header's mental model. The six-pillar V2 set is the spine
+ * (linked as "The Six Pillars" → /pillars, per docs/TAXONOMY-PROPOSAL.md); the
+ * rich hub pages sit under it. "Resources" appears exactly once in navigation
+ * (the Resource Hub, labeled Downloads & Study Guides here).
  */
 export default function Footer() {
   const { theme, toggleTheme } = useTheme();
@@ -28,15 +28,17 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* The Five Pillars */}
+          {/* The Pillars — six-pillar V2 is the spine; the hubs below are the
+              rich landing pages that sit under it (see docs/TAXONOMY-PROPOSAL.md). */}
           <div>
-            <h3 style={colTitle}>The Five Pillars</h3>
+            <h3 style={colTitle}>The Pillars</h3>
             <div style={col}>
+              <Link href="/pillars" style={footerLink}>The Six Pillars</Link>
               <Link href="/theology" style={footerLink}>Theological Depth</Link>
               <Link href="/justice" style={footerLink}>Prophetic Justice</Link>
               <Link href="/disruption" style={footerLink}>Prophetic Disruption</Link>
               <Link href="/leadership" style={footerLink}>Leadership Formation</Link>
-              <Link href="/life" style={footerLink}>Integrated Life</Link>
+              <Link href="/living-well" style={footerLink}>Living Well</Link>
             </div>
           </div>
 

@@ -256,10 +256,17 @@ export const appRouter = router({
         // per-call content fetch, no timeout. DB errors are returned (not thrown)
         // so the client can show the real reason.
         try {
-          const r = await bulkUpdatePostBodies(input.items, input.dryRun ?? false);
-          return { ...r, error: null as string | null };
+          // Guard: never publish a body that still carries unresolved citation
+          // placeholders ([cite ...]). Shipping them would put fabricated-looking
+          // sources live — a violation of the never-fabricate rule. Skip those
+          // items and report them back so they can be resolved before publishing.
+          const hasCite = (b: string) => /\[cite/i.test(b || "");
+          const blocked = input.items.filter((i) => hasCite(i.body)).map((i) => i.slug);
+          const safeItems = input.items.filter((i) => !hasCite(i.body));
+          const r = await bulkUpdatePostBodies(safeItems, input.dryRun ?? false);
+          return { ...r, blocked, error: null as string | null };
         } catch (e: any) {
-          return { matched: 0, updated: 0, missing: [] as string[], error: String(e?.message || e) };
+          return { matched: 0, updated: 0, missing: [] as string[], blocked: [] as string[], error: String(e?.message || e) };
         }
       }),
 

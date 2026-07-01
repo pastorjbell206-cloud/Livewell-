@@ -8,6 +8,7 @@ import BookPreview from "@/components/BookPreview";
 import BookRecommendations from "@/components/BookRecommendations";
 import { SampleChapterForm } from "@/components/SampleChapterForm";
 import { bookUrl, SITE_URL } from "@/lib/site";
+import { readSlugFor } from "@/lib/readableBooks";
 
 export default function BookDetail() {
   const [, params] = useRoute("/books/:slug");
@@ -85,6 +86,8 @@ export default function BookDetail() {
   const topics = bookTopics[book.title] || [];
 
   const canonical = book.slug ? bookUrl(book.slug) : undefined;
+  // Books with a full on-site manuscript are read free at /read/:slug.
+  const readSlug = readSlugFor(book.slug);
 
   return (
     <>
@@ -137,6 +140,16 @@ export default function BookDetail() {
                   />
                 )}
                 <div className="mt-6 space-y-3">
+                  {readSlug && (
+                    <Link href={`/read/${readSlug}`}>
+                      <a
+                        className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded font-ui font-medium no-underline transition-colors"
+                        style={{ backgroundColor: "var(--ink)", color: "var(--bone)", borderBottom: "2px solid var(--mustard)" }}
+                      >
+                        <BookOpen size={18} /> Read the full book free
+                      </a>
+                    </Link>
+                  )}
                   {book.sampleExcerpt && (
                     <button
                       onClick={() => setIsPreviewOpen(true)}

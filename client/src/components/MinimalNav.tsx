@@ -41,6 +41,24 @@ interface NavLink {
 }
 
 /**
+ * Keep the menus calm: cap a dropdown to its hub plus a few curated
+ * destinations, and always keep the trailing "All <pillar>" link so the full
+ * listing (and the long tail of sub-pathways) stays one click away on the hub
+ * page. Flat links pass through untouched.
+ */
+function trimDropdown(link: NavLink, max = 4): NavLink {
+  if (!link.dropdown) return link;
+  const allItem = link.dropdown.find((i) => i.label.startsWith("All "));
+  const notAll = link.dropdown.filter((i) => !i.label.startsWith("All "));
+  // Curated hub links carry a description; the auto-generated sub-pathway links
+  // do not. Keep the curated ones and drop the long auto tail. If a door has no
+  // curated items, fall back to its first few links.
+  const curated = notAll.filter((i) => i.description);
+  const primary = (curated.length ? curated : notAll).slice(0, max);
+  return { ...link, dropdown: allItem ? [...primary, allItem] : primary };
+}
+
+/**
  * Build the nav from the live sub-pathway counts. `counts` maps a sub-pathway
  * label → number of published posts. Until the feed loads (`hasData` false) we
  * optimistically show every sub-pathway so the menu is never barren.
@@ -140,7 +158,7 @@ function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLin
     ],
   };
 
-  return [
+  const doors: NavLink[] = [
     { label: "Start here", href: "/start" },
     byPillar["Theological Depth"],
     postChristianWorld,
@@ -151,6 +169,8 @@ function buildNavLinks(counts: Record<string, number>, hasData: boolean): NavLin
     { label: "Books", href: "/books" },
     { label: "About", href: "/about" },
   ];
+  // Cap every dropdown so the menus stay calm; the hub pages carry the full lists.
+  return doors.map((d) => trimDropdown(d));
 }
 
 export default function MinimalNav() {

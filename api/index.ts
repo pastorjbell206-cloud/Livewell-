@@ -4,6 +4,8 @@ import type { VercelRequest, VercelResponse } from "@vercel/node";
 import mysql from "mysql2/promise";
 import crypto from "node:crypto";
 import postChristianArticles from "./post-christian-articles.json" with { type: "json" };
+import integratedLifeArticles from "./integrated-life-articles.json" with { type: "json" };
+import womanhoodDoubtDevotionalArticles from "./womanhood-doubt-devotional-articles.json" with { type: "json" };
 import bcrypt from "bcryptjs";
 import superjson from "superjson";
 // Static essay library (143 long-form essays). Served behind the live DB so the
@@ -331,6 +333,30 @@ async function adminSeedArticles(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+async function seedArticleSet(req: VercelRequest, res: VercelResponse, set: any[]) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  try {
+    const out = await withConn(async (c) => {
+      let inserted = 0;
+      for (const a of set) {
+        try {
+          const [r]: any = await c.execute(
+            `INSERT IGNORE INTO posts (title, slug, body, excerpt, pillar, readTime, published, createdAt, updatedAt)
+             VALUES (?, ?, ?, ?, ?, ?, true, NOW(), NOW())`,
+            [a.title, a.slug, a.body, a.excerpt, a.pillar, a.readTime]
+          );
+          if (r.affectedRows) inserted++;
+        } catch {}
+      }
+      const [rows] = await c.query("SELECT COUNT(*) as n FROM posts");
+      return { inserted, totalArticles: set.length, totalPosts: (rows as any)[0].n };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
 async function seedPostChristianArticles(req: VercelRequest, res: VercelResponse) {
   if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
   try {
@@ -350,6 +376,162 @@ async function seedPostChristianArticles(req: VercelRequest, res: VercelResponse
       return { inserted, totalArticles: postChristianArticles.length, totalPosts: (rows as any)[0].n };
     });
     json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
+// The standalone ebooks (code-driven funnel pages + gated PDFs) that should also
+// have a row in the `books` table so they appear in the DB-driven catalog and
+// the roadmap "Published" count. purchaseUrl points at the funnel page; the
+// authored grid -> BookDetail -> "get the ebook" button routes there.
+const EBOOK_CATALOG: Array<{ slug: string; title: string; description: string; cover: string; url: string }> = [
+  { slug: "sermon-on-the-mount-as-politics", title: "The Sermon on the Mount as Politics", description: "The Sermon read as the constitution of the kingdom, not private inner life. Power, money, enemies, truth, and the poor.", cover: "/books/sermon-on-the-mount-as-politics.svg", url: "/sermon-on-the-mount-as-politics" },
+  { slug: "prophetic-justice-101", title: "Prophetic Justice 101", description: "Mishpat, tsedaqah, Micah 6:8, and what the church owes its neighborhood. The prophetic tradition recovered, never partisan.", cover: "/books/prophetic-justice-101.svg", url: "/prophetic-justice-101" },
+  { slug: "marriage-in-ministry", title: "Marriage in Ministry", description: "Protecting the covenant when the church demands everything, and the pressures the parsonage puts on a marriage.", cover: "/books/marriage-in-ministry.svg", url: "/marriage-in-ministry" },
+  { slug: "the-loneliness-of-the-pastor", title: "The Loneliness of the Pastor", description: "Why pastors quit, and the brotherhood that could let them stay. The book the Pastors Connection Network was built around.", cover: "/books/the-loneliness-of-the-pastor.svg", url: "/the-loneliness-of-the-pastor" },
+  { slug: "healwell", title: "HealWell: 52 Weeks in Costly Hope", description: "A year of honest devotionals for tired believers, written from inside the wound and pointed toward a costly hope.", cover: "/books/healwell.svg", url: "/healwell" },
+  { slug: "why-not-what", title: "Why Not What", description: "How theology starts with the right question. Why before what, the order the whole Bible insists on.", cover: "/books/why-not-what.svg", url: "/why-not-what" },
+  { slug: "covenant", title: "Covenant", description: "Why marriage is a promise, not a deal. The culture sold us a contract and called it romance.", cover: "/books/covenant.svg", url: "/covenant" },
+  { slug: "after-christendom", title: "After Christendom", description: "How to follow Jesus now that the culture has stopped pretending to be Christian. What is dying is not the faith but Christendom.", cover: "/books/after-christendom.svg", url: "/after-christendom" },
+  { slug: "alone-in-a-crowded-church", title: "Alone in a Crowded Church", description: "Why pastors burn out in silence, and how brotherhood brings them back.", cover: "/books/alone-in-a-crowded-church.svg", url: "/alone-in-a-crowded-church" },
+  { slug: "consider-the-birds", title: "Consider the Birds", description: "What the Bible says about anxiety, and the peace Christ gives instead.", cover: "/books/consider-the-birds.jpg", url: "/consider-the-birds" },
+  { slug: "where-your-treasure-is", title: "Where Your Treasure Is", description: "What the Bible says about money, and the heart it means to free.", cover: "/books/where-your-treasure-is.jpg", url: "/where-your-treasure-is" },
+  { slug: "when-god-bless-america", title: "When God Bless America Replaces Thy Kingdom Come", description: "How patriotism became our practical savior. Civil religion is idolatry with a flag for a shroud.", cover: "/books/when-god-bless-america.jpg", url: "/books/when-god-bless-america" },
+  { slug: "born-again-from-atheism", title: "Born Again From Atheism", description: "How an unbeliever came to faith as a grown man, and what he found there. The doubts taken at full strength, and the God he did not want to meet.", cover: "/books/born-again-from-atheism.svg", url: "/born-again-from-atheism" },
+  { slug: "the-god-who-is-not-nice", title: "The God Who Is Not Nice", description: "Recovering the weight of God in a sentimental age. Nice is not holy, and a God with no weight cannot save.", cover: "/books/the-god-who-is-not-nice.svg", url: "/the-god-who-is-not-nice" },
+  { slug: "faith-after-deconstruction", title: "Faith After Deconstruction", description: "How to lose the faith you were given and find the one that holds. What should fall, what must not, and the way through.", cover: "/books/faith-after-deconstruction.svg", url: "/faith-after-deconstruction" },
+  { slug: "ordinary-holiness", title: "Ordinary Holiness", description: "Finding God in the life you actually have. Work, the body, the table, the neighbor, and the faithfulness no one applauds.", cover: "/books/ordinary-holiness.svg", url: "/ordinary-holiness" },
+  { slug: "the-scandal-of-the-cross", title: "The Scandal of the Cross", description: "Why the death of God is the center of everything. The cross recovered from jewelry, and the atonement held together instead of traded for a slogan.", cover: "/books/the-scandal-of-the-cross.svg", url: "/the-scandal-of-the-cross" },
+  { slug: "heaven-is-not-your-reward", title: "Heaven Is Not Your Reward", description: "The resurrection hope the church traded for an escape. A new heaven and a new earth, not clouds and harps, and what that changes.", cover: "/books/heaven-is-not-your-reward.svg", url: "/heaven-is-not-your-reward" },
+  { slug: "prayer-in-the-dark", title: "Prayer in the Dark", description: "Talking to God when you are not sure anyone is listening. For prayers that hit the ceiling, without the formulas or the guilt.", cover: "/books/prayer-in-the-dark.svg", url: "/prayer-in-the-dark" },
+  { slug: "the-body-you-left", title: "The Body You Left", description: "A case for the church in an age that walked away. An honest reckoning with why people left, and why the body of Christ still matters.", cover: "/books/the-body-you-left.svg", url: "/the-body-you-left" },
+];
+
+// Admin-triggered DB presence for the standalone ebooks. Idempotent: keyed on
+// the UNIQUE slug, so re-running only refreshes the funnel-linking fields and
+// never duplicates. Owner triggers it while authenticated (admin session).
+async function seedEbooks(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  try {
+    const out = await withConn(async (c) => {
+      let inserted = 0;
+      let updated = 0;
+      for (let i = 0; i < EBOOK_CATALOG.length; i++) {
+        const b = EBOOK_CATALOG[i];
+        const [r]: any = await c.execute(
+          `INSERT INTO books (title, slug, author, description, coverImage, purchaseUrl, bookType, sortOrder, published)
+           VALUES (?, ?, 'James Bell', ?, ?, ?, 'authored', ?, true)
+           ON DUPLICATE KEY UPDATE
+             coverImage = VALUES(coverImage),
+             purchaseUrl = VALUES(purchaseUrl),
+             bookType = 'authored',
+             published = true,
+             description = COALESCE(NULLIF(description, ''), VALUES(description)),
+             title = VALUES(title)`,
+          [b.title, b.slug, b.description, b.cover, b.url, 10 + i]
+        );
+        if (r.affectedRows === 1) inserted++;
+        else updated++;
+      }
+      const [rows]: any = await c.query("SELECT COUNT(*) as n FROM books WHERE published = true");
+      return { inserted, updated, total: EBOOK_CATALOG.length, publishedRows: rows[0].n };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
+// Resolve the Stripe price for an ebook: an explicit STRIPE_PRICE_<SLUG> env var
+// wins (that is how the earliest ebooks were configured), otherwise fall back to
+// a price id stored in site_settings under `stripe_price_<slug>` by the admin
+// create-stripe-prices endpoint. Returns null if neither exists (not on sale).
+async function resolveEbookPriceId(slug: string, priceEnv: string): Promise<string | null> {
+  const fromEnv = process.env[priceEnv]?.trim();
+  if (fromEnv) return fromEnv;
+  try {
+    return await withConn(async (c) => {
+      const [rows]: any = await c.execute(
+        "SELECT settingValue FROM site_settings WHERE settingKey = ?",
+        [`stripe_price_${slug}`],
+      );
+      const v = rows?.[0]?.settingValue?.trim();
+      return v || null;
+    });
+  } catch {
+    return null;
+  }
+}
+
+// Admin-triggered: create (idempotently) a Stripe product + a one-time $9.99 USD
+// price for every ebook that is not already configured, and store the price id
+// in site_settings so checkout can use it without any Vercel env editing. Uses
+// the server's own STRIPE_SECRET_KEY (already set in production). Books that
+// already have a STRIPE_PRICE_<SLUG> env var are left untouched.
+async function createStripePrices(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  const stripe = getStripe();
+  if (!stripe) return json(res, 503, { ok: false, error: "Stripe is not configured on the server." });
+  try {
+    await withConn(async (c) => {
+      await c.execute(`CREATE TABLE IF NOT EXISTS site_settings (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        settingKey VARCHAR(191) NOT NULL UNIQUE,
+        settingValue TEXT,
+        updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`);
+    });
+    const results: Array<{ slug: string; status: string; priceId: string | null }> = [];
+    for (const [slug, book] of Object.entries(EBOOKS)) {
+      // Configured via env var already: do not touch (these are already selling).
+      if (process.env[book.priceEnv]?.trim()) {
+        results.push({ slug, status: "env", priceId: null });
+        continue;
+      }
+      // Already created and stored: reuse.
+      const existing = await withConn(async (c) => {
+        const [rows]: any = await c.execute(
+          "SELECT settingValue FROM site_settings WHERE settingKey = ?",
+          [`stripe_price_${slug}`],
+        );
+        return rows?.[0]?.settingValue?.trim() || null;
+      });
+      if (existing) {
+        results.push({ slug, status: "exists", priceId: existing });
+        continue;
+      }
+      // Find or create the product (matched by metadata.slug so re-runs reuse it).
+      let product: Stripe.Product | null = null;
+      try {
+        const found = await stripe.products.search({ query: `metadata['slug']:'${slug}'` });
+        product = found.data[0] || null;
+      } catch {
+        /* search index may lag on new accounts; fall through to create */
+      }
+      if (!product) {
+        product = await stripe.products.create({
+          name: `${book.title} (ebook)`,
+          metadata: { slug, series: "LiveWell", author: "James Bell" },
+        });
+      }
+      const prices = await stripe.prices.list({ product: product.id, active: true, limit: 100 });
+      let price = prices.data.find((p) => p.unit_amount === 999 && p.currency === "usd" && !p.recurring);
+      if (!price) {
+        price = await stripe.prices.create({ product: product.id, unit_amount: 999, currency: "usd" });
+      }
+      await withConn(async (c) => {
+        await c.execute(
+          "INSERT INTO site_settings (settingKey, settingValue, updatedAt) VALUES (?, ?, NOW()) ON DUPLICATE KEY UPDATE settingValue = VALUES(settingValue), updatedAt = NOW()",
+          [`stripe_price_${slug}`, price.id],
+        );
+      });
+      results.push({ slug, status: "created", priceId: price.id });
+    }
+    const created = results.filter((r) => r.status === "created").length;
+    const reused = results.filter((r) => r.status === "exists").length;
+    const envConfigured = results.filter((r) => r.status === "env").length;
+    json(res, 200, { ok: true, created, reused, envConfigured, total: results.length, results });
   } catch (e: any) {
     json(res, 500, { ok: false, error: String(e?.message || e) });
   }
@@ -1252,20 +1434,27 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         // fetch per call, so it never times out.
         const items: { slug: string; body: string; readingTimeMinutes: number }[] =
           Array.isArray(input?.items) ? input.items : [];
+        // Guard: never publish a body that still carries unresolved citation
+        // placeholders ([cite ...]). Shipping them would put fabricated-looking
+        // sources live — a violation of the never-fabricate rule. Skip those
+        // items and report them back so they can be resolved before publishing.
+        const hasCite = (b: string) => /\[cite/i.test(b || "");
+        const blocked: string[] = items.filter((i) => hasCite(i.body)).map((i) => i.slug);
+        const safeItems = items.filter((i) => !hasCite(i.body));
         let matched = 0, updated = 0;
         const missing: string[] = [];
         let dbError: string | null = null;
-        if (items.length) {
+        if (safeItems.length) {
           try {
             await withConn(async (c) => {
-              const slugs = items.map((i) => i.slug);
+              const slugs = safeItems.map((i) => i.slug);
               const placeholders = slugs.map(() => "?").join(",");
               const [existRows]: any = await c.execute(
                 `SELECT slug FROM posts WHERE slug IN (${placeholders})`, slugs
               );
               const existing = new Set(existRows.map((r: any) => r.slug));
-              const toUpdate = items.filter((it) => existing.has(it.slug));
-              for (const it of items) if (!existing.has(it.slug)) missing.push(it.slug);
+              const toUpdate = safeItems.filter((it) => existing.has(it.slug));
+              for (const it of safeItems) if (!existing.has(it.slug)) missing.push(it.slug);
               matched = toUpdate.length;
               if (!dryRun && toUpdate.length) {
                 // One UPDATE per article keeps each statement tiny and avoids
@@ -1286,7 +1475,7 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
             console.error("publishFullBodies DB error:", dbError, "| firstSlug:", items[0]?.slug);
           }
         }
-        return trpcOk(res, { matched, updated, missing, dryRun, error: dbError });
+        return trpcOk(res, { matched, updated, missing, blocked, dryRun, error: dbError });
       }
       case "posts.navIndex": {
         // Slim per-post feed for the primary nav: just what's needed to know
@@ -2415,6 +2604,84 @@ const EBOOKS: Record<string, EbookConfig> = {
     file: new URL("./_ebooks/why-not-what.pdf", import.meta.url),
     filename: "Why-Not-What.pdf",
   },
+  "sermon-on-the-mount-as-politics": {
+    title: "The Sermon on the Mount as Politics",
+    priceEnv: "STRIPE_PRICE_SERMON_ON_THE_MOUNT_AS_POLITICS",
+    file: new URL("./_ebooks/sermon-on-the-mount-as-politics.pdf", import.meta.url),
+    filename: "The-Sermon-on-the-Mount-as-Politics.pdf",
+  },
+  "prophetic-justice-101": {
+    title: "Prophetic Justice 101",
+    priceEnv: "STRIPE_PRICE_PROPHETIC_JUSTICE_101",
+    file: new URL("./_ebooks/prophetic-justice-101.pdf", import.meta.url),
+    filename: "Prophetic-Justice-101.pdf",
+  },
+  "marriage-in-ministry": {
+    title: "Marriage in Ministry",
+    priceEnv: "STRIPE_PRICE_MARRIAGE_IN_MINISTRY",
+    file: new URL("./_ebooks/marriage-in-ministry.pdf", import.meta.url),
+    filename: "Marriage-in-Ministry.pdf",
+  },
+  "the-loneliness-of-the-pastor": {
+    title: "The Loneliness of the Pastor",
+    priceEnv: "STRIPE_PRICE_THE_LONELINESS_OF_THE_PASTOR",
+    file: new URL("./_ebooks/the-loneliness-of-the-pastor.pdf", import.meta.url),
+    filename: "The-Loneliness-of-the-Pastor.pdf",
+  },
+  "healwell": {
+    title: "HealWell",
+    priceEnv: "STRIPE_PRICE_HEALWELL",
+    file: new URL("./_ebooks/healwell.pdf", import.meta.url),
+    filename: "HealWell.pdf",
+  },
+  "born-again-from-atheism": {
+    title: "Born Again From Atheism",
+    priceEnv: "STRIPE_PRICE_BORN_AGAIN_FROM_ATHEISM",
+    file: new URL("./_ebooks/born-again-from-atheism.pdf", import.meta.url),
+    filename: "Born-Again-from-Atheism.pdf",
+  },
+  "the-god-who-is-not-nice": {
+    title: "The God Who Is Not Nice",
+    priceEnv: "STRIPE_PRICE_THE_GOD_WHO_IS_NOT_NICE",
+    file: new URL("./_ebooks/the-god-who-is-not-nice.pdf", import.meta.url),
+    filename: "The-God-Who-Is-Not-Nice.pdf",
+  },
+  "faith-after-deconstruction": {
+    title: "Faith After Deconstruction",
+    priceEnv: "STRIPE_PRICE_FAITH_AFTER_DECONSTRUCTION",
+    file: new URL("./_ebooks/faith-after-deconstruction.pdf", import.meta.url),
+    filename: "Faith-after-Deconstruction.pdf",
+  },
+  "ordinary-holiness": {
+    title: "Ordinary Holiness",
+    priceEnv: "STRIPE_PRICE_ORDINARY_HOLINESS",
+    file: new URL("./_ebooks/ordinary-holiness.pdf", import.meta.url),
+    filename: "Ordinary-Holiness.pdf",
+  },
+  "the-scandal-of-the-cross": {
+    title: "The Scandal of the Cross",
+    priceEnv: "STRIPE_PRICE_THE_SCANDAL_OF_THE_CROSS",
+    file: new URL("./_ebooks/the-scandal-of-the-cross.pdf", import.meta.url),
+    filename: "The-Scandal-of-the-Cross.pdf",
+  },
+  "heaven-is-not-your-reward": {
+    title: "Heaven Is Not Your Reward",
+    priceEnv: "STRIPE_PRICE_HEAVEN_IS_NOT_YOUR_REWARD",
+    file: new URL("./_ebooks/heaven-is-not-your-reward.pdf", import.meta.url),
+    filename: "Heaven-Is-Not-Your-Reward.pdf",
+  },
+  "prayer-in-the-dark": {
+    title: "Prayer in the Dark",
+    priceEnv: "STRIPE_PRICE_PRAYER_IN_THE_DARK",
+    file: new URL("./_ebooks/prayer-in-the-dark.pdf", import.meta.url),
+    filename: "Prayer-in-the-Dark.pdf",
+  },
+  "the-body-you-left": {
+    title: "The Body You Left",
+    priceEnv: "STRIPE_PRICE_THE_BODY_YOU_LEFT",
+    file: new URL("./_ebooks/the-body-you-left.pdf", import.meta.url),
+    filename: "The-Body-You-Left.pdf",
+  },
 };
 
 const PRODUCTION_SITE_URL = "https://livewellbyjamesbell.co";
@@ -2448,7 +2715,7 @@ async function ebookCheckout(req: VercelRequest, res: VercelResponse) {
     const slug = String(body?.slug || "");
     const book = EBOOKS[slug];
     if (!book) return json(res, 400, { error: "Unknown book." });
-    const priceId = process.env[book.priceEnv]?.trim();
+    const priceId = await resolveEbookPriceId(slug, book.priceEnv);
     if (!priceId) return json(res, 503, { error: "This book is not on sale yet." });
     const origin = siteOrigin(req);
     const session = await stripe.checkout.sessions.create({
@@ -2508,6 +2775,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
     if (url === "/api/admin/seed-content") return adminSeedContent(req, res);
     if (url === "/api/admin/seed-post-christian") return seedPostChristianArticles(req, res);
+    if (url === "/api/admin/seed-integrated-life") return seedArticleSet(req, res, integratedLifeArticles as any[]);
+    if (url === "/api/admin/seed-womanhood-doubt-devotionals") return seedArticleSet(req, res, womanhoodDoubtDevotionalArticles as any[]);
+    if (url === "/api/admin/seed-ebooks") return seedEbooks(req, res);
+    if (url === "/api/admin/create-stripe-prices") return createStripePrices(req, res);
     if (url === "/api/admin/fix-apostrophes") return adminFixApostrophes(req, res);
     const notifMatch = url.match(/^\/api\/admin\/notifications\/(\d+)$/);
     if (notifMatch && req.method === "DELETE") {

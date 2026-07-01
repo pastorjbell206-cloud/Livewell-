@@ -62,6 +62,84 @@ const BOOKS = [
     subtitle: "How Theology Starts With the Right Question",
     env: "STRIPE_PRICE_WHY_NOT_WHAT",
   },
+  {
+    slug: "sermon-on-the-mount-as-politics",
+    title: "The Sermon on the Mount as Politics",
+    subtitle: "Reading the Kingdom's Constitution Without the Spiritualizing",
+    env: "STRIPE_PRICE_SERMON_ON_THE_MOUNT_AS_POLITICS",
+  },
+  {
+    slug: "prophetic-justice-101",
+    title: "Prophetic Justice 101",
+    subtitle: "Mishpat, Tsedaqah, and What the Church Owes Its Neighborhood",
+    env: "STRIPE_PRICE_PROPHETIC_JUSTICE_101",
+  },
+  {
+    slug: "marriage-in-ministry",
+    title: "Marriage in Ministry",
+    subtitle: "Protecting the Covenant When the Church Demands Everything",
+    env: "STRIPE_PRICE_MARRIAGE_IN_MINISTRY",
+  },
+  {
+    slug: "the-loneliness-of-the-pastor",
+    title: "The Loneliness of the Pastor",
+    subtitle: "Why Pastors Quit, and the Brotherhood That Could Let Them Stay",
+    env: "STRIPE_PRICE_THE_LONELINESS_OF_THE_PASTOR",
+  },
+  {
+    slug: "healwell",
+    title: "HealWell",
+    subtitle: "52 Weeks in Costly Hope",
+    env: "STRIPE_PRICE_HEALWELL",
+  },
+  {
+    slug: "born-again-from-atheism",
+    title: "Born Again From Atheism",
+    subtitle: "How an Unbeliever Came to Faith, and What He Found There",
+    env: "STRIPE_PRICE_BORN_AGAIN_FROM_ATHEISM",
+  },
+  {
+    slug: "the-god-who-is-not-nice",
+    title: "The God Who Is Not Nice",
+    subtitle: "Recovering the Weight of God in a Sentimental Age",
+    env: "STRIPE_PRICE_THE_GOD_WHO_IS_NOT_NICE",
+  },
+  {
+    slug: "faith-after-deconstruction",
+    title: "Faith After Deconstruction",
+    subtitle: "How to Lose the Faith You Were Given and Find the One That Holds",
+    env: "STRIPE_PRICE_FAITH_AFTER_DECONSTRUCTION",
+  },
+  {
+    slug: "ordinary-holiness",
+    title: "Ordinary Holiness",
+    subtitle: "Finding God in the Life You Actually Have",
+    env: "STRIPE_PRICE_ORDINARY_HOLINESS",
+  },
+  {
+    slug: "the-scandal-of-the-cross",
+    title: "The Scandal of the Cross",
+    subtitle: "Why the Death of God Is the Center of Everything",
+    env: "STRIPE_PRICE_THE_SCANDAL_OF_THE_CROSS",
+  },
+  {
+    slug: "heaven-is-not-your-reward",
+    title: "Heaven Is Not Your Reward",
+    subtitle: "The Resurrection Hope the Church Traded for an Escape",
+    env: "STRIPE_PRICE_HEAVEN_IS_NOT_YOUR_REWARD",
+  },
+  {
+    slug: "prayer-in-the-dark",
+    title: "Prayer in the Dark",
+    subtitle: "Talking to God When You Are Not Sure Anyone Is Listening",
+    env: "STRIPE_PRICE_PRAYER_IN_THE_DARK",
+  },
+  {
+    slug: "the-body-you-left",
+    title: "The Body You Left",
+    subtitle: "A Case for the Church in an Age That Walked Away",
+    env: "STRIPE_PRICE_THE_BODY_YOU_LEFT",
+  },
 ];
 
 const results = [];

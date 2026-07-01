@@ -7,12 +7,12 @@ import { SITE_STATS } from "@/config/siteStats";
 const PORTRAIT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg";
 
 const PATHWAYS = [
-  { href: "/skeptic-track", label: "If you are not sure you believe any of this", desc: "Start with the track written for skeptics by a former one. No tricks. No altar call. Just the questions taken seriously." },
-  { href: "/writing", label: "If your faith has outgrown the answers you were given", desc: "Read the essays. They start at the root, not the symptom, and they do not resolve what should not be resolved." },
-  { href: "/pastors", label: "If you carry a church", desc: "The pastors section and the Pastors Connection Network exist because the loneliest job in the room is the one up front." },
-  { href: "/leadership", label: "If you lead and teach", desc: "A working library on preaching, exegesis, and the formation of leaders. Built to be used, not admired." },
-  { href: "/marriage", label: "If your marriage needs more than tips", desc: "Writing on covenant for people keeping vows they no longer understand." },
-  { href: "/parenting", label: "If you are raising children without a map", desc: "From a father of five sons who was raised without a father. The terror is part of the qualification." },
+  { href: "/skeptic-track", label: "If you are not sure you believe any of this", desc: "Start with the track written for skeptics, by someone who used to be one. No tricks, no altar call at the end. Just your questions taken seriously." },
+  { href: "/writing", label: "If your faith has outgrown the answers you were given", desc: "Read the essays. They start at the root instead of the symptom, and they leave open the things that should stay open." },
+  { href: "/pastors", label: "If you carry a church", desc: "The pastors section and the Pastors Connection Network exist because the loneliest job in the building is the one standing up front." },
+  { href: "/leadership", label: "If you lead and teach", desc: "A working library on preaching, reading Scripture, and forming leaders. Built to be used, not admired." },
+  { href: "/marriage", label: "If your marriage needs more than tips", desc: "Writing on covenant for two people still keeping a promise they are no longer sure they understand." },
+  { href: "/parenting", label: "If you are raising children without a map", desc: "From a father of five sons who was raised without one. Being a little scared turns out to be part of the qualification." },
 ];
 
 export default function About() {
@@ -43,13 +43,13 @@ export default function About() {
 
           <div className="article-body prose-section" style={{ color: "var(--bone)", opacity: 0.85 }}>
             <p>
-              The first honest prayer I ever prayed was an argument. I was an atheist by conviction, and I was losing the argument with a God I did not believe in. That is not a testimony. It is a fact. The intellectual position I had held for years — that faith was a category error made by people who could not face the absence of meaning — collapsed not under emotional pressure but under the weight of its own assumptions. I did not find God. I ran out of reasons to pretend the evidence pointed nowhere.
+              I came to faith from atheism, and I did not come quietly. For a long time I was certain that belief was something people reached for when they could not sit with how little the universe owed them. I had my arguments, and I thought they were good ones. What I never had was a good answer for why those arguments kept feeling thinner the longer I held onto them. There was no lightning, no single night I can point to. I just slowly ran out of room to keep saying no, and one day I stopped saying it.
             </p>
             <p>
-              I was raised without a father. That is not background. It is architecture. It shaped what I hear when Scripture speaks of a Father who does not leave. It shaped what I refuse to tolerate in a church culture that sentimentalizes fatherhood while ignoring the men who never had one. It shaped the way I raise my five sons — not with the confidence of a man who knows what he is doing, but with the terror of a man who knows what happens when no one does it at all.
+              I was also raised without a father. I don't mention that for sympathy. I mention it because it explains most of what I write. When Scripture talks about a Father who stays, I hear it the way a man hears it who knows exactly what it costs when one leaves. And when I am raising my own five sons, I am not doing it out of confidence. I am doing it as someone trying to build, in his own house, a thing he never got to watch being built.
             </p>
             <p>
-              Those two facts — the atheism I left and the father I never had — are underneath everything on this site. I do not write about doubt from a safe distance. I write from the other side of it, with the memory intact. I do not write about fatherhood as theory. I write as a man who is building, in his own house, the thing he never saw built.
+              Those two things — the unbelief I came out of and the father I never had — sit underneath everything on this site. I don't write about doubt from a safe distance, because I was on the far side of it, and I still remember the road back. And I don't write about fathers and sons as a subject I studied. I write about them because they are the ordinary, daily work of my own life.
             </p>
           </div>
         </div>
@@ -62,13 +62,13 @@ export default function About() {
           <h2 style={{ fontFamily: "var(--F)", fontSize: "1.75rem", fontWeight: 400, color: "var(--ink)", marginBottom: "1.5rem" }}>The church and the network</h2>
           <div className="article-body prose-section">
             <p>
-              I serve as Lead Pastor of First Baptist Church of Fenton, Michigan. That is not a credential. It is the room where everything I write gets tested. The essays on this site were not composed in a study lined with commentaries and quiet. They were written between hospital visits and budget meetings, after funerals, in the hours around the counseling sessions where theology either carries weight or gets exposed. {SITE_STATS.yearsInMinistry} years of that room will cure a writer of abstraction.
+              I serve as the lead pastor of First Baptist Church of Fenton, Michigan. I put that first not as a line on a résumé but because it is the room where everything here gets tested. These essays were not written in a quiet study with the commentaries open and the whole afternoon free. They were written around hospital visits and budget meetings, after funerals, in the days on either side of the counseling appointments where what a person believes about God either holds or it comes apart. {SITE_STATS.yearsInMinistry} years in that room will take the abstraction out of almost anyone.
             </p>
             <p>
-              I also founded the Pastors Connection Network — PCN — because pastors are the most under-shepherded people in the church. They preach grace they rarely receive. They carry confidences they can never set down. The network connects thousands of them to one another and to resources built by someone who knows the weight from the inside, because the man who collapses on a Saturday night takes a congregation down with him on Sunday morning.
+              I also started the Pastors Connection Network — PCN — for a fairly simple reason. Pastors are some of the least cared-for people in the church. They hand out grace all week and rarely get handed any back. They carry things people have told them that they can never repeat to anyone. The network connects thousands of them to each other, and to resources made by someone who knows that particular weight from the inside, because when the man up front quietly comes apart on a Saturday night, a whole congregation feels it on Sunday morning.
             </p>
             <p>
-              And I write books — {SITE_STATS.bookCount} of them so far — on doubt, marriage, fatherhood, the church, and the long obedience of an ordinary Christian life. They are all part of the same single project: connecting the depth of theology to the weight of everyday life.{" "}
+              And I write books — {SITE_STATS.bookCount} of them so far — about doubt, marriage, fathers and sons, the church, and the slow, unglamorous business of following Jesus over a long stretch of time. They are really all one project: taking the depth of theology and putting it back in contact with the weight of an ordinary life.{" "}
               <Link href="/books">The books are here</Link>.
             </p>
           </div>
@@ -78,16 +78,19 @@ export default function About() {
       {/* THE WORK */}
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-3)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)", marginBottom: "1.5rem" }}>
+            LiveWell is for the person whose faith has grown larger than the answers they were handed as a child. For the pastor who is quietly running on empty. For the husband and wife still keeping a promise they are no longer sure they understand. For the skeptic who keeps reading the words of a faith they have not decided to trust.
+          </p>
           <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)", marginBottom: "2rem" }}>
-            LiveWell exists for the reader whose faith has outgrown the answers they were given. For the pastor burning out in silence. For the couple keeping vows they no longer understand. For the skeptic who cannot stop reading the words of a tradition they are not sure they believe in. The writing connects the depth of theology — Keller's architecture, Brueggemann's prophetic imagination, Peterson's pastoral texture, Bonhoeffer's willingness to name the thing at cost — to the weight of an actual Tuesday afternoon.
+            What I am after is not a Christianity bent to fit American politics, or the self-help shelf, or whatever the culture happens to be anxious about this year. I am after the older thing underneath all of that — the historic, creedal, kingdom-of-God faith the church has confessed for two thousand years — and I want to put it back in the same room as an ordinary Tuesday afternoon. The depth is not decoration here. Keller's architecture, Brueggemann's prophetic imagination, Peterson's pastoral patience, Bonhoeffer's willingness to name the costly thing — all of it is in service of helping an actual person live.
           </p>
 
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "1.5rem", fontWeight: 400, color: "var(--ink)", marginBottom: "2rem" }}>What the work carries</h2>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "1.5rem", fontWeight: 400, color: "var(--ink)", marginBottom: "2rem" }}>How the writing works</h2>
 
           {[
-            { name: "The full arc", def: "Every essay starts at the root, not the symptom. The church's failure to speak on justice did not begin in 2020. It began with Constantine. The marriage that is drifting did not start with the argument last Tuesday. It started with the vow neither partner understood when they made it." },
-            { name: "Self-implication", def: "The writer is inside the indictment. When the essay names what the church has gotten wrong, the writer is part of the church that got it wrong. When the essay names what pastors hide, the writer is a pastor who has hidden it." },
-            { name: "Verdicts, not summaries", def: "The last paragraph does not restate the thesis. It names what remains after the evidence has been laid out. Three to eight words. The reader carries it out of the room." },
+            { name: "It starts at the root", def: "Every essay reaches for the beginning of a thing instead of the symptom in front of us. The church's silence on justice did not start in 2020; it goes back much further. The marriage that is drifting did not start with last Tuesday's argument; it started with a vow neither person fully understood when they made it." },
+            { name: "The writer is inside it", def: "When a piece names what the church has gotten wrong, I am part of the church that got it wrong. When it names what pastors tend to hide, I am a pastor who has hidden it. I am not pointing from across the room." },
+            { name: "It ends on a verdict, not a recap", def: "The last paragraph does not restate the argument. It names what is left once the evidence is on the table, in a few words, and lets you carry it out of the room with you." },
           ].map((v, i) => (
             <div key={i} style={{ marginBottom: "2rem" }}>
               <h3 style={{ fontFamily: "var(--F)", fontSize: "1.125rem", fontWeight: 500, fontStyle: "italic", color: "var(--ink)", marginBottom: "0.5rem" }}>{v.name}</h3>
@@ -118,7 +121,7 @@ export default function About() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)" }}>
-            LiveWell is not therapy. It is not a Christian self-help platform. It is not a place to be told what to think. It is a writing desk where a pastor with {SITE_STATS.yearsInMinistry} years of failure and five sons he is trying not to ruin thinks out loud about what it means to follow Jesus in a culture that has forgotten what his kingdom actually stands for.
+            LiveWell is not therapy, and it is not Christian self-help. It is not a place that hands you something to think so you can stop thinking. It is closer to a writing desk — where a pastor with {SITE_STATS.yearsInMinistry} years of mistakes behind him and five sons in front of him tries to think honestly, out loud, about what it actually means to follow Jesus in a country that has mostly forgotten what his kingdom was ever about.
           </p>
         </div>
       </section>
@@ -128,7 +131,7 @@ export default function About() {
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <div style={{ width: "40px", height: "2px", background: "var(--mustard)", margin: "0 auto 2rem" }} />
           <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.65, color: "var(--bone)", fontStyle: "italic", marginBottom: "2rem" }}>
-            You are still deciding whether to trust the voice. That is the right instinct. The writing will either carry weight for you or it will not. Begin where you are.
+            You may still be deciding whether to trust the voice. That is the right instinct, and you should keep it. The writing will either carry weight for you or it will not, and I would rather you find that out for yourself than be talked into it. Begin where you actually are.
           </p>
           <Link href="/writing" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
             Read the writing <ArrowRight size={14} style={{ display: "inline", verticalAlign: "middle" }} />

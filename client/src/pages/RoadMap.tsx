@@ -36,12 +36,6 @@ const IN_DEVELOPMENT: PlannedBook[] = [
       "A pastor on the parts of himself he wants to deny — and what the gospel says about them anyway.",
     for: "anyone honest enough to read it",
   },
-  {
-    title: "HealWell: 52 Weeks in Costly Hope",
-    pitch:
-      "A devotional that doesn't lie to you. One year of readings written from inside the wound.",
-    for: "anyone",
-  },
 ];
 
 const PLANNED: PlannedBook[] = [
@@ -49,26 +43,6 @@ const PLANNED: PlannedBook[] = [
     title: "After Christendom",
     pitch: "What faithfulness looks like on the other side of cultural Christianity.",
     for: "pastors, Christians",
-  },
-  {
-    title: "The Loneliness of the Pastor",
-    pitch: "The book the PCN was built around. Why pastors quit and what would let them stay.",
-    for: "pastors",
-  },
-  {
-    title: "Prophetic Justice 101",
-    pitch: "Mishpat, tsedaqah, Micah 6:8, and what the church owes its neighborhood.",
-    for: "Christians, pastors",
-  },
-  {
-    title: "The Sermon on the Mount as Politics",
-    pitch: "Read it without the spiritualizing. It's a constitution for a different kingdom.",
-    for: "skeptics, Christians",
-  },
-  {
-    title: "Marriage in Ministry",
-    pitch: "The pressures the parsonage carries that the rest of the marriage manuals never name.",
-    for: "couples, pastors",
   },
   {
     title: "Raising Five Sons",
