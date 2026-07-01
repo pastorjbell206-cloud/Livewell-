@@ -8,6 +8,7 @@ import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
 import { Prose } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
+import PageEndNav from "@/components/PageEndNav";
 
 const wrap = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
 
@@ -85,6 +86,8 @@ export default function CreedDocument() {
               <Link href="/theology/creeds" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>The confessions surveyed</Link>
             </div>
           </section>
+
+          <PageEndNav back={{ href: "/resources/creeds", label: "Creeds & Confessions" }} />
         </>
       )}
     </Layout>

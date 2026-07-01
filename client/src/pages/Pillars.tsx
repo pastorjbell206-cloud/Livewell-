@@ -3,29 +3,21 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
 import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
-import { useMemo } from "react";
-import { trpc } from "@/lib/trpc";
-import {
-  MOVEMENTS,
-  PILLARS_BY_MOVEMENT,
-  pillarUrl,
-  pillarForPost,
-  type Movement,
-} from "@/lib/taxonomy";
 
-const MOVEMENT_ORDER: Movement[] = ["diagnosis", "formation"];
+/**
+ * The five pillars — the site's single taxonomy spine, matching the nav,
+ * footer, and homepage exactly (names, order, and hub links). This page shows
+ * the same five; it does not introduce a competing scheme.
+ */
+const PILLARS = [
+  { name: "Theological Depth", href: "/theology", blurb: "Doctrine, church history, the whole biblical story." },
+  { name: "Prophetic Justice", href: "/justice", blurb: "The poor, the outsider, the systems we inherit." },
+  { name: "Prophetic Disruption", href: "/disruption", blurb: "The church, empire, and the politics that capture it." },
+  { name: "Leadership Formation", href: "/leadership", blurb: "Character before competence, for those who lead." },
+  { name: "Integrated Life", href: "/life", blurb: "Marriage, parenting, vocation, and rest." },
+];
 
 export default function Pillars() {
-  const postsQuery = trpc.posts.listPublished.useQuery();
-  const counts = useMemo(() => {
-    const c: Record<number, number> = {};
-    for (const p of postsQuery.data ?? []) {
-      const pl = pillarForPost(p);
-      if (pl) c[pl.id] = (c[pl.id] ?? 0) + 1;
-    }
-    return c;
-  }, [postsQuery.data]);
-
   return (
     <Layout>
       <SEOMeta
@@ -51,7 +43,7 @@ export default function Pillars() {
                 marginBottom: "20px",
               }}
             >
-              Two movements. Six pillars.
+              Five pillars. One argument.
             </h1>
             <p
               style={{
@@ -63,117 +55,62 @@ export default function Pillars() {
                 margin: "0 auto",
               }}
             >
-              The writing moves in two motions — first the diagnosis of what was
-              lost and why, then the formation of how to live well on the other
-              side. Every essay is filed under one of six pillars.
+              Every essay is filed under one of five pillars. Start with the one
+              that fits, and follow it as far as it goes.
             </p>
           </div>
 
-          {/* Movements → pillars */}
-          {MOVEMENT_ORDER.map(movement => (
-            <section key={movement} style={{ marginBottom: "var(--s-6)" }}>
-              <div
+          {/* Pillars */}
+          <div style={{ display: "grid", gap: "20px", marginBottom: "var(--s-6)" }}>
+            {PILLARS.map(pillar => (
+              <Link
+                key={pillar.href}
+                href={pillar.href}
                 style={{
-                  borderBottom: "1px solid var(--border)",
-                  paddingBottom: "12px",
-                  marginBottom: "var(--s-4)",
+                  display: "block",
+                  background: "var(--card)",
+                  border: "1px solid var(--border)",
+                  borderLeft: "3px solid var(--mustard)",
+                  borderRadius: "var(--radius-sm)",
+                  padding: "24px 28px",
+                  textDecoration: "none",
                 }}
               >
-                <h2
+                <div
                   style={{
-                    fontFamily: "var(--F)",
-                    fontSize: "32px",
-                    fontWeight: 500,
-                    letterSpacing: "-0.01em",
-                    color: "var(--ink)",
+                    display: "flex",
+                    alignItems: "baseline",
+                    justifyContent: "space-between",
+                    gap: "16px",
                   }}
                 >
-                  {MOVEMENTS[movement].title}
-                </h2>
-                <p
-                  style={{
-                    fontFamily: "var(--U)",
-                    fontSize: "13px",
-                    textTransform: "uppercase",
-                    letterSpacing: "0.16em",
-                    color: "var(--mustard-text)",
-                    marginTop: "6px",
-                  }}
-                >
-                  {MOVEMENTS[movement].subtitle}
-                </p>
-              </div>
-
-              <div style={{ display: "grid", gap: "20px" }}>
-                {PILLARS_BY_MOVEMENT[movement].map(pillar => (
-                  <Link
-                    key={pillar.id}
-                    href={pillarUrl(pillar.slug)}
+                  <h2
                     style={{
-                      display: "block",
-                      background: "var(--card)",
-                      border: "1px solid var(--border)",
-                      borderLeft: "3px solid var(--mustard)",
-                      borderRadius: "var(--radius-sm)",
-                      padding: "24px 28px",
-                      textDecoration: "none",
-                      transition: "border-color 0.2s",
+                      fontFamily: "var(--F)",
+                      fontSize: "24px",
+                      fontWeight: 500,
+                      letterSpacing: "-0.01em",
+                      color: "var(--ink)",
                     }}
                   >
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "baseline",
-                        justifyContent: "space-between",
-                        gap: "16px",
-                      }}
-                    >
-                      <h3
-                        style={{
-                          fontFamily: "var(--F)",
-                          fontSize: "24px",
-                          fontWeight: 500,
-                          letterSpacing: "-0.01em",
-                          color: "var(--ink)",
-                        }}
-                      >
-                        <span style={{ color: "var(--mustard-text)", marginRight: "10px" }}>
-                          {pillar.id}
-                        </span>
-                        {pillar.name}
-                      </h3>
-                      <div style={{ display: "flex", alignItems: "center", gap: "12px", flexShrink: 0 }}>
-                        <span
-                          style={{
-                            fontFamily: "var(--U)",
-                            fontSize: "12px",
-                            color: "var(--ink-muted)",
-                            whiteSpace: "nowrap",
-                          }}
-                        >
-                          {counts[pillar.id] ?? 0} {counts[pillar.id] === 1 ? "essay" : "essays"}
-                        </span>
-                        <ArrowRight size={18} aria-hidden style={{ color: "var(--ink-muted)" }} />
-                      </div>
-                    </div>
-                    {/* Intro placeholder — James supplies the final on-voice copy. */}
-                    <p
-                      style={{
-                        fontFamily: "var(--B)",
-                        fontSize: "15px",
-                        lineHeight: 1.6,
-                        color: "var(--ink-muted)",
-                        marginTop: "10px",
-                        fontStyle: "italic",
-                      }}
-                    >
-                      {pillar.blurb}
-                    </p>
-                  </Link>
-                ))}
-              </div>
-            </section>
-          ))}
+                    {pillar.name}
+                  </h2>
+                  <ArrowRight size={18} aria-hidden style={{ color: "var(--ink-muted)", flexShrink: 0 }} />
+                </div>
+                <p
+                  style={{
+                    fontFamily: "var(--B)",
+                    fontSize: "15px",
+                    lineHeight: 1.6,
+                    color: "var(--ink-muted)",
+                    marginTop: "10px",
+                  }}
+                >
+                  {pillar.blurb}
+                </p>
+              </Link>
+            ))}
+          </div>
 
           {/* CTA */}
           <div style={{ textAlign: "center", marginTop: "var(--s-5)" }}>
