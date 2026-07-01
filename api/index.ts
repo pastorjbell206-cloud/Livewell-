@@ -380,6 +380,60 @@ async function seedPostChristianArticles(req: VercelRequest, res: VercelResponse
   }
 }
 
+// The standalone ebooks (code-driven funnel pages + gated PDFs) that should also
+// have a row in the `books` table so they appear in the DB-driven catalog and
+// the roadmap "Published" count. purchaseUrl points at the funnel page; the
+// authored grid -> BookDetail -> "get the ebook" button routes there.
+const EBOOK_CATALOG: Array<{ slug: string; title: string; description: string; cover: string; url: string }> = [
+  { slug: "sermon-on-the-mount-as-politics", title: "The Sermon on the Mount as Politics", description: "The Sermon read as the constitution of the kingdom, not private inner life. Power, money, enemies, truth, and the poor.", cover: "/books/sermon-on-the-mount-as-politics.svg", url: "/sermon-on-the-mount-as-politics" },
+  { slug: "prophetic-justice-101", title: "Prophetic Justice 101", description: "Mishpat, tsedaqah, Micah 6:8, and what the church owes its neighborhood. The prophetic tradition recovered, never partisan.", cover: "/books/prophetic-justice-101.svg", url: "/prophetic-justice-101" },
+  { slug: "marriage-in-ministry", title: "Marriage in Ministry", description: "Protecting the covenant when the church demands everything, and the pressures the parsonage puts on a marriage.", cover: "/books/marriage-in-ministry.svg", url: "/marriage-in-ministry" },
+  { slug: "the-loneliness-of-the-pastor", title: "The Loneliness of the Pastor", description: "Why pastors quit, and the brotherhood that could let them stay. The book the Pastors Connection Network was built around.", cover: "/books/the-loneliness-of-the-pastor.svg", url: "/the-loneliness-of-the-pastor" },
+  { slug: "healwell", title: "HealWell: 52 Weeks in Costly Hope", description: "A year of honest devotionals for tired believers, written from inside the wound and pointed toward a costly hope.", cover: "/books/healwell.svg", url: "/healwell" },
+  { slug: "why-not-what", title: "Why Not What", description: "How theology starts with the right question. Why before what, the order the whole Bible insists on.", cover: "/books/why-not-what.svg", url: "/why-not-what" },
+  { slug: "covenant", title: "Covenant", description: "Why marriage is a promise, not a deal. The culture sold us a contract and called it romance.", cover: "/books/covenant.svg", url: "/covenant" },
+  { slug: "after-christendom", title: "After Christendom", description: "How to follow Jesus now that the culture has stopped pretending to be Christian. What is dying is not the faith but Christendom.", cover: "/books/after-christendom.svg", url: "/after-christendom" },
+  { slug: "alone-in-a-crowded-church", title: "Alone in a Crowded Church", description: "Why pastors burn out in silence, and how brotherhood brings them back.", cover: "/books/alone-in-a-crowded-church.svg", url: "/alone-in-a-crowded-church" },
+  { slug: "consider-the-birds", title: "Consider the Birds", description: "What the Bible says about anxiety, and the peace Christ gives instead.", cover: "/books/consider-the-birds.jpg", url: "/consider-the-birds" },
+  { slug: "where-your-treasure-is", title: "Where Your Treasure Is", description: "What the Bible says about money, and the heart it means to free.", cover: "/books/where-your-treasure-is.jpg", url: "/where-your-treasure-is" },
+  { slug: "when-god-bless-america", title: "When God Bless America Replaces Thy Kingdom Come", description: "How patriotism became our practical savior. Civil religion is idolatry with a flag for a shroud.", cover: "/books/when-god-bless-america.jpg", url: "/books/when-god-bless-america" },
+];
+
+// Admin-triggered DB presence for the standalone ebooks. Idempotent: keyed on
+// the UNIQUE slug, so re-running only refreshes the funnel-linking fields and
+// never duplicates. Owner triggers it while authenticated (admin session).
+async function seedEbooks(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  try {
+    const out = await withConn(async (c) => {
+      let inserted = 0;
+      let updated = 0;
+      for (let i = 0; i < EBOOK_CATALOG.length; i++) {
+        const b = EBOOK_CATALOG[i];
+        const [r]: any = await c.execute(
+          `INSERT INTO books (title, slug, author, description, coverImage, purchaseUrl, bookType, sortOrder, published)
+           VALUES (?, ?, 'James Bell', ?, ?, ?, 'authored', ?, true)
+           ON DUPLICATE KEY UPDATE
+             coverImage = VALUES(coverImage),
+             purchaseUrl = VALUES(purchaseUrl),
+             bookType = 'authored',
+             published = true,
+             description = COALESCE(NULLIF(description, ''), VALUES(description)),
+             title = VALUES(title)`,
+          [b.title, b.slug, b.description, b.cover, b.url, 10 + i]
+        );
+        if (r.affectedRows === 1) inserted++;
+        else updated++;
+      }
+      const [rows]: any = await c.query("SELECT COUNT(*) as n FROM books WHERE published = true");
+      return { inserted, updated, total: EBOOK_CATALOG.length, publishedRows: rows[0].n };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
 async function adminSeedContent(req: VercelRequest, res: VercelResponse) {
   if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
   try {
@@ -2571,6 +2625,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/seed-content") return adminSeedContent(req, res);
     if (url === "/api/admin/seed-post-christian") return seedPostChristianArticles(req, res);
     if (url === "/api/admin/seed-integrated-life") return seedArticleSet(req, res, integratedLifeArticles as any[]);
+    if (url === "/api/admin/seed-ebooks") return seedEbooks(req, res);
     if (url === "/api/admin/fix-apostrophes") return adminFixApostrophes(req, res);
     const notifMatch = url.match(/^\/api\/admin\/notifications\/(\d+)$/);
     if (notifMatch && req.method === "DELETE") {
