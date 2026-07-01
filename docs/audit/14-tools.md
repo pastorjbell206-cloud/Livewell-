@@ -353,4 +353,156 @@ SUBSTANCE: Deep — the Formation Inventory's sibling: 5 domains × 6 statements
 BREAKS: Overlaps `/tools/life-audit` (24-q lesser cousin, also on the hub); its generated "rule of life" is the third claimant to that name, with no link to the builder tool or the Rule of Life book.
 10X: Absorb Life Audit, keep its cross-tool routing, and wire the rule-of-life output to the builder and the book funnel.
 
-*(§4–§5 follow.)*
+---
+
+## 4. The honest tiers
+
+### STRONG / SIGNATURE-POTENTIAL (13)
+
+The bar for signature: content that could not be scraped, generated, or found
+on another site, serving a named reader at a real moment.
+
+| Tool | Why it clears the bar |
+|---|---|
+| **BibleReference** (`/tools/bible-says`) | The misuse/steelman column — naming how each verse gets weaponized, then steelmanning contested readings — exists nowhere else on the free web. The best verse content in the repo, currently invisible. |
+| **Passage Context** (`/theology/passage`) | 230 chapters of real exegesis answering "does this verse mean what the mug says." The platform's anti-proof-text conviction as a machine. |
+| **Wisdom Finder** | 208 life-specific topics (Miscarriage, Survivor's Guilt, Suicidal Thoughts with a 988 path) with three-lens context — depth the other verse tools only gesture at, plus the only maintained data pipeline. |
+| **Deep Bible Companion** | Verified seminary-grade scholarship (correct Hebrew/Greek, correctly attributed scholars, real book recs) for laypeople, free. |
+| **Family Devotion Builder** | 40 handwritten, genuinely age-differentiated devotions — teen tracks engage Charles Taylor; nobody else ships this in this voice. |
+| **Parenting Stage Guide** | The founder's five-sons material systematized: surveillance theology, the Honest Letter, the prodigal-father posture. Only Bell could publish it. |
+| **Emotional Health Assessment** | The best applied writing in the tool set; verdicts in true Bell voice ("Your refusal to rest is not faithfulness"). |
+| **Before You Post** | An 8-question examen for the pastor's thumb over Share — unduplicated, perfectly on-brand, PCN-viral by nature. |
+| **Formation Inventory** | Confession-grade items, character weighted over capacity, retake deltas — the model instrument, hidden from its own hub. |
+| **Survey engine: church-health** | 55 questions that refuse church-growth cant; one team mode away from being what elder boards pay consultants for. |
+| **Workflow engine: premarital** | Working-pastor-grade session prompts matching paid curricula; one multi-couple fix from beating them. |
+| **Service Builder** (funeral/wedding) | Verbatim-usable, theologically weighted liturgies for the pastor with a funeral in 72 hours — the purest "can't get anywhere else" in the estate. |
+| **Start Here Diagnostic** (`/start-here`) | Honest options, six real personas, every CTA verified live — the front door the site already built and doesn't use. |
+
+### STRONG (works, distinct, needs plumbing) (14)
+
+Marriage Assessment · Financial Health · **Pastor Burnout** (verging signature
+via PCN once persistence + send-to-counselor exist) · Conflict Guide (one
+safety gap from higher) · Quote Library (register it) · Prayer Generator ·
+Start a Table · Rule of Life Builder (wire the book funnel) · Proverbs in 31
+Days · Sermon Prep Workbench · Illustration Library · Meeting Builder · Budget
+Calculator (as conversation-starter) · Whole-Life Assessment · Assessment
+engine (elder/deacon/planting/revitalization slugs).
+
+### SHALLOW (works but generic) (5)
+
+| Tool | Why it stays shallow |
+|---|---|
+| Sermon Outline Generator | Six excellent outlines wearing a fake generator; 54/60 dropdown combos silently serve the wrong outline. |
+| Theology Quiz | 10 pillar-telegraphing questions; results never stored; no email capture; recommends from 3 of 6 pillars. |
+| Saved Items | Right idea, wired to 2 of 26 tools, undiscoverable until after first use. |
+| Visitation Tracker | A kanban with no dates — the "nobody falls through" promise has no mechanism. |
+| Tools Hub | A flat 26-card list, no hierarchy, four orphans, one stale "in development" CTA for a tool it already lists. |
+
+### CUT OR MERGE (12 surfaces → estate shrinks 52 → 40)
+
+The estate's central redundancy: **five topical-verse tools are one tool wearing
+five routes** (Verse Finder, Bible On Topic, Bible Says, Wisdom Finder,
+Parenting Verses — spot-checks confirm the same verses recur across all of
+them: Phil 4:6-7 in four renderings, Isa 41:10 in all four, Prov 15:1 served
+from five pages, in three different unlabeled translations).
+
+**Which one absorbs the rest: Wisdom Finder's engine and dataset, mounted on
+the `/tools/bible-on` route identity ("What the Bible Says About…"), with
+BibleReference's misuse/steelman layer as the flagship feature.** Rationale:
+Wisdom Finder alone has real depth (208 topics vs 20/14/15/10) and the only
+maintained build pipeline (`build-wisdom-index.mjs`); "what the Bible says
+about X" is the natural search phrase, where "wisdom-finder" is internal jargon
+and "verse-finder" is commodity SEO with commodity content; BibleReference's
+misuse warnings are the differentiator no aggregator has. Keep Bible On Topic's
+browse-chip UI and Bell framings; fold Parenting Verses' 10 parent notes into
+the five existing parenting topics; keep Verse Finder's save affordance and
+migrate its localStorage keys; 301 `/tools/verse-finder`,
+`/tools/parenting-verses`, `/tools/bible-says`.
+
+The full cut/merge list:
+
+1. **Verse Finder → merged topical engine** (301). Commodity content, mission-contradicting proof-text serving.
+2. **Parenting Verses → merged topical engine** (parent notes preserved). Dead-end page, 30 verses.
+3. **Bible On Topic → the merged engine's shell** (route survives, dataset replaced).
+4. **BibleReference → the merged engine's flagship layer** (route 301s; all 82 passages + misuse columns survive).
+5. **Bible Study Guide → Deep Bible Companion** as its book-intro layer; add Mark + Luke to DeepBible; 301 `/tools/bible-study`. (10 of 12 books already overlap.)
+6. **Theology Glossary (tool) → `/theology/glossary`**: merge the tool's richer three-depth entries into the JSON-driven, doctrine-linked page; one canonical glossary. (42 of 100 terms already collide by exact name.) `/tools/quotes` does NOT merge — no overlap with either glossary (verified); register it instead.
+7. **Life Audit → Whole-Life Assessment** (`/life/assessment`), keeping Life Audit's cross-tool results routing. Two whole-life instruments; the hub sells both.
+8. **Scripture Memory → cut, or rebuild** with spaced repetition + per-verse Bell commentary; as shipped it is a Navigators card pack with worse ergonomics.
+9. **Decision Log → Meeting Builder** as a "decisions made" capture with minutes export.
+10. **`/tools/church-health` + `/leadership/survey/church-health` → one product** (18-q quick check as front door, 55-q survey as deep dive, team mode).
+11. **`/leadership/assessment/burnout` → `/tools/pastor-burnout`** (keep the 24-q tool — it has the 988 crisis path and recovery plans; 301 or cross-point the 15-q twin).
+12. **`/start` (Start Here Quiz) → deleted, 301 to `/start-here`**; move nav/footer links. **`/diagnostic` → fold into Whole-Life Assessment** (or minimally: fix its four dead essay slugs and link it from /start-here results). Broken and orphaned respectively.
+
+---
+
+## 5. Signature candidates, ranked; the estate verdict; findings
+
+### 5a. Top signature candidates (ranked), with what's missing
+
+1. **"What the Bible Actually Says" — the merged topical engine** (Wisdom Finder data + BibleReference misuse/steelman + Bible On Topic route + Passage Context cross-links). The site's core conviction — verses have contexts, and the church weaponizes them — turned into the tool people actually Google for. Missing: the merge itself, save/share, per-topic pre-rendered SEO pages, one named translation (ESV), and a link from every topic into Passage Context.
+2. **Deep Bible Companion.** Missing: URL-addressable passages (it cannot be linked, cited, or bookmarked today), onward links into Bell's own 161 essays and 21 books instead of a third-party bibliography, persistence of reading position; longer-term, the remaining 46 books.
+3. **Pastor Burnout Diagnostic (unified).** Missing: merge with the leadership twin, private persistence + retake trendline, one-click "send to my counselor/spouse/PCN mentor" — the moment a score becomes a follow-up is the moment this becomes the PCN channel's signature asset.
+4. **The Pastoral Working Set** (Premarital Workflow + Service Builder + Sermon Workbench). Missing: named multi-instance saves (two couples, two funerals, next week's sermon) and print-formatted output — paper is the medium at a graveside. With those two fixes this set beats paid products pastors currently buy.
+5. **Church Health, team edition** (18-q quick + 55-q survey + aggregation). Missing: the merge, autosave, team mode (five elders, one profile showing spread and disagreement), and a saved baseline for the 18-month delta its own copy prescribes.
+6. **Formation Inventory.** Missing: a card on its own hub, onward links from results (the books it names, the essays that exist), and a six-month retake email.
+7. **The Home Suite** (Family Devotion Builder + Parenting Stage Guide). Missing: printable/emailable artifacts (the Honest Letter as a template, a devotion one-pager), done-tracking that sequences themes into a family term, and real essay links behind the stages.
+8. **Start Here Diagnostic as the canonical front door.** Missing: the 301 from /start, the nav/footer swap, and the segmented email capture that currently lives only on the orphaned /diagnostic.
+
+### 5b. The estate verdict
+
+The tools estate is a warehouse full of genuinely rare goods with the lights
+off. At the data level this is the most defensible moat the platform owns —
+verified seminary-grade exegesis, misuse warnings no aggregator carries,
+confession-grade formation instruments, funeral liturgies a pastor can read
+verbatim in 72 hours, devotions differentiated by a child's age in the
+founder's own voice. Almost none of it behaves like a product: the best verse
+tool, the quote library, and the glossary are unreachable from the hub; the
+flagship inventory is missing from its own hub; the best entry diagnostic
+loses the nav to a broken one; five tools do one job in three unlabeled
+translations; results vanish on refresh, promise emails that never send, and
+link onward to dead filters, phantom essays, and — in the case of every tool
+and every book — never once to the books the platform sells. The estate needs
+almost no new content to become signature-grade. It needs consolidation (52 →
+40), registration, persistence, safety rails in two crisis-adjacent tools, and
+wiring — tool → essay → book — that the discovery audit (16) confirms was
+already built once and left unplugged. One strategic gap remains after all of
+that: the number-one audience, the skeptic, still has no tool of their own
+(see 17-tool-ideas).
+
+### 5c. Findings, ranked
+
+Effort: S = hours, M = days, L = a week-plus.
+
+| # | Sev | Finding | Where | Effort |
+|---|-----|---------|-------|--------|
+| C1 | **Critical** | No abuse/violence off-ramp in a couples-conflict tool covering Trust Repair and Intimacy — violates the site's own care standard | ConflictGuide.tsx | S |
+| C2 | **Critical** | Bottom-tier results offer no counselor/crisis path (the pattern exists in PastorBurnout — 988 tel link — and Wisdom Finder's Suicidal Thoughts topic; copy it) | EmotionalHealth.tsx; leadership assessments/burnout.json results | S |
+| C3 | **Critical** | "We will send you a copy of your results" — no email is ever sent; the submission dies in `contact_messages` | EmailResults.tsx + api/index.ts contact handler (used by 6 assessments) | S–M |
+| C4 | **Critical** | The most-promoted entry quiz (/start: nav + footer) is logically broken — pastor path is dead code, format answer ignored, mojibake — while the excellent /start-here is linked only from Dashboard | StartHereQuiz.tsx, MinimalNav, Footer | S |
+| H1 | High | Best assets unregistered/invisible: bible-says, quotes, glossary, saved off the hub; Formation Inventory absent from LeadershipHub | ToolsHub.tsx, lib/leadership.ts | S |
+| H2 | High | Single-slot localStorage destroys real work: second couple/funeral/sermon/agenda overwrites the first | SermonWorkbench, GuidedWorkflow, ServiceBuilder, MeetingBuilder | M |
+| H3 | High | Zero persistence on the assessment/survey engines — up to 90 honest answers lost on refresh; no copy/export of results | LeaderAssessment.tsx, ProfileSurvey.tsx | M |
+| H4 | High | Dead-link epidemic in results: `/writing?category=` (no such filter) in 5+ tools; named essays pointing at bare /writing; /diagnostic's four 404 slugs | Marriage, Financial, Burnout, ChurchHealth, EmotionalHealth, BibleStudy, Diagnostic | S |
+| H5 | High | Five topical-verse tools = one job, five routes, three unlabeled translations; consolidate per §4 | VerseFinder, BibleOnTopic, BibleReference, WisdomFinder, ParentingVerses | L |
+| H6 | High | Pastoral-care records (visit list, benevolence/personnel decisions) in localStorage with no export — data loss and shared-computer exposure | VisitationTracker.tsx, DecisionLog.tsx | S |
+| H7 | High | Sermon generator silently returns the Grace outline for 54 of 60 advertised combos — a bluff mechanism under honest content | SermonOutline.tsx findOutline | S |
+| H8 | High | Twin tools on both sides of the estate with no cross-pointers: church-health 18q vs 55q; burnout 24q vs 15q | tools/ vs leadership/ | M |
+| M1 | Medium | Translation chaos: unlabeled NIV, trimmed paraphrase, and WEB across tools vs the house "ESV by default, named" rule (only FamilyDevotionBuilder complies) | most verse-bearing tools | M |
+| M2 | Medium | No tool anywhere links to a book — including the Rule of Life builder vs the same-named book (three "rule of life" claimants, zero cross-links) | RuleOfLife.tsx, books/RuleOfLife.tsx, WholeLifeAssessment | S |
+| M3 | Medium | Theology Quiz: advertises 20 questions, has 10; results unstored; no email capture; recommends from only 3 of 6 pillars | TheologyQuiz.tsx, server/quiz/* | M |
+| M4 | Medium | Flagship data fetched heavy and uncached: passage-notes.json 692 kB and wisdom topics.json 645 kB up front, `cache: no-store` | PassageContext.tsx, WisdomFinder.tsx | S–M |
+| M5 | Medium | Forbidden language inside tool data ("transformative," "nuanced" ×2 in glossary; "do the work" in LifeAudit) — the voice-audit test doesn't cover tool JSX data | TheologyGlossary.tsx L282/252/863, LifeAudit.tsx L62 | S |
+| M6 | Medium | Unsourced illustration anecdotes (`source: none`) brush the fabrication guardrail | public/leadership/illustrations.json | M |
+| M7 | Medium | Data bugs: "Alec Motyer, J. Alec Motyer" duplicate scholar (DeepBible L907); duplicate wisdom topic "Caring for Aging Parents"; "a anchor" typo; "Read â" mojibake | DeepBibleCompanion, wisdom/topics.json, ParentingGuide, StartHereQuiz | S |
+| L1 | Low | Hub: flat 26-card grid; stale "in development" CTA for a tool it already lists | ToolsHub.tsx | S |
+| L2 | Low | Hardcoded hex in tools (QuoteLibrary ×3, BudgetCalculator #b4541f, StartHereQuiz throughout) — token-rule violations | per files | S |
+| L3 | Low | Emoji icons in BibleReference clash with the lucide icon system | BibleReference.tsx | S |
+| L4 | Low | House-style prompts without question marks read as typos in text users are told to copy/send verbatim | DiscipleshipTable, Proverbs31 | S |
+| L5 | Low | Proverbs31: Day 31 unreachable by default in 30-day months; no reminder/streak for a daily-habit tool | Proverbs31.tsx | S |
+
+---
+
+*Audit complete. Companion reads: `16-tool-discovery.md` (the essay→tool→book
+wiring, confirmed broken in the same places found here) and `17-tool-ideas.md`
+(the skeptic-tool gap this estate leaves open).*
