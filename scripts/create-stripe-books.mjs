@@ -116,6 +116,30 @@ const BOOKS = [
     subtitle: "Finding God in the Life You Actually Have",
     env: "STRIPE_PRICE_ORDINARY_HOLINESS",
   },
+  {
+    slug: "the-scandal-of-the-cross",
+    title: "The Scandal of the Cross",
+    subtitle: "Why the Death of God Is the Center of Everything",
+    env: "STRIPE_PRICE_THE_SCANDAL_OF_THE_CROSS",
+  },
+  {
+    slug: "heaven-is-not-your-reward",
+    title: "Heaven Is Not Your Reward",
+    subtitle: "The Resurrection Hope the Church Traded for an Escape",
+    env: "STRIPE_PRICE_HEAVEN_IS_NOT_YOUR_REWARD",
+  },
+  {
+    slug: "prayer-in-the-dark",
+    title: "Prayer in the Dark",
+    subtitle: "Talking to God When You Are Not Sure Anyone Is Listening",
+    env: "STRIPE_PRICE_PRAYER_IN_THE_DARK",
+  },
+  {
+    slug: "the-body-you-left",
+    title: "The Body You Left",
+    subtitle: "A Case for the Church in an Age That Walked Away",
+    env: "STRIPE_PRICE_THE_BODY_YOU_LEFT",
+  },
 ];
 
 const results = [];

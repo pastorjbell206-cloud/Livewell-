@@ -40,6 +40,14 @@ const FaithAfterDeconstruction = lazy(() => import("./pages/books/FaithAfterDeco
 const FaithAfterDeconstructionThankYou = lazy(() => import("./pages/books/FaithAfterDeconstructionThankYou"));
 const OrdinaryHoliness = lazy(() => import("./pages/books/OrdinaryHoliness"));
 const OrdinaryHolinessThankYou = lazy(() => import("./pages/books/OrdinaryHolinessThankYou"));
+const TheScandalOfTheCross = lazy(() => import("./pages/books/TheScandalOfTheCross"));
+const TheScandalOfTheCrossThankYou = lazy(() => import("./pages/books/TheScandalOfTheCrossThankYou"));
+const HeavenIsNotYourReward = lazy(() => import("./pages/books/HeavenIsNotYourReward"));
+const HeavenIsNotYourRewardThankYou = lazy(() => import("./pages/books/HeavenIsNotYourRewardThankYou"));
+const PrayerInTheDark = lazy(() => import("./pages/books/PrayerInTheDark"));
+const PrayerInTheDarkThankYou = lazy(() => import("./pages/books/PrayerInTheDarkThankYou"));
+const TheBodyYouLeft = lazy(() => import("./pages/books/TheBodyYouLeft"));
+const TheBodyYouLeftThankYou = lazy(() => import("./pages/books/TheBodyYouLeftThankYou"));
 const WhenGodBlessAmerica = lazy(() => import("./pages/WhenGodBlessAmerica"));
 const WhenGodBlessAmericaThankYou = lazy(() => import("./pages/WhenGodBlessAmericaThankYou"));
 const Believe = lazy(() => import("./pages/Believe"));
@@ -456,6 +464,14 @@ function Router() {
         <Route path="/faith-after-deconstruction" component={FaithAfterDeconstruction} />
         <Route path="/ordinary-holiness/thank-you" component={OrdinaryHolinessThankYou} />
         <Route path="/ordinary-holiness" component={OrdinaryHoliness} />
+        <Route path="/the-scandal-of-the-cross/thank-you" component={TheScandalOfTheCrossThankYou} />
+        <Route path="/the-scandal-of-the-cross" component={TheScandalOfTheCross} />
+        <Route path="/heaven-is-not-your-reward/thank-you" component={HeavenIsNotYourRewardThankYou} />
+        <Route path="/heaven-is-not-your-reward" component={HeavenIsNotYourReward} />
+        <Route path="/prayer-in-the-dark/thank-you" component={PrayerInTheDarkThankYou} />
+        <Route path="/prayer-in-the-dark" component={PrayerInTheDark} />
+        <Route path="/the-body-you-left/thank-you" component={TheBodyYouLeftThankYou} />
+        <Route path="/the-body-you-left" component={TheBodyYouLeft} />
         <Route path="/substack" component={SubstackPage} />
         <Route path="/pastors" component={Pastors} />
         <Route path="/about" component={About} />
