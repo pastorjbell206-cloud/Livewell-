@@ -17,6 +17,25 @@ dotenv.config();
 const BASE_URL = "https://www.livewellbyjamesbell.co";
 const OUTPUT_PATH = "client/public/sitemap.xml";
 
+// The static essay library (served by api/index.ts behind the live DB). These
+// slugs resolve at /writing/:slug even though they aren't DB rows, so they
+// belong in the sitemap. DB articles win on slug collision (merged below).
+function loadStaticLibrary() {
+  try {
+    const raw = fs.readFileSync("content/static-library.generated.json", "utf8");
+    return JSON.parse(raw).map(r => ({ slug: r.slug, updatedAt: r.updatedAt }));
+  } catch {
+    return [];
+  }
+}
+const STATIC_ARTICLES = loadStaticLibrary();
+
+function mergeArticles(dbArticles) {
+  const have = new Set((dbArticles || []).map(a => a.slug));
+  const extra = STATIC_ARTICLES.filter(a => !have.has(a.slug));
+  return [...(dbArticles || []), ...extra];
+}
+
 const STATIC_PAGES = [
   { url: "", priority: "1.0", changefreq: "weekly" },
   { url: "/writing", priority: "0.9", changefreq: "daily" },
@@ -30,6 +49,12 @@ const STATIC_PAGES = [
   { url: "/be-true-to-yourself", priority: "0.85", changefreq: "monthly" },
   { url: "/what-belongs-to-the-poor", priority: "0.85", changefreq: "monthly" },
   { url: "/rule-of-life", priority: "0.85", changefreq: "monthly" },
+  { url: "/why-not-what", priority: "0.85", changefreq: "monthly" },
+  { url: "/sermon-on-the-mount-as-politics", priority: "0.85", changefreq: "monthly" },
+  { url: "/prophetic-justice-101", priority: "0.85", changefreq: "monthly" },
+  { url: "/marriage-in-ministry", priority: "0.85", changefreq: "monthly" },
+  { url: "/the-loneliness-of-the-pastor", priority: "0.85", changefreq: "monthly" },
+  { url: "/healwell", priority: "0.85", changefreq: "monthly" },
   { url: "/skeptic-track", priority: "0.9", changefreq: "monthly" },
   { url: "/pastors-resource-wall", priority: "0.85", changefreq: "weekly" },
   { url: "/roadmap", priority: "0.8", changefreq: "monthly" },
@@ -72,10 +97,6 @@ const STATIC_PAGES = [
   { url: "/leadership/inventory", priority: "0.8", changefreq: "monthly" },
   { url: "/resources/context", priority: "0.9", changefreq: "weekly" },
   { url: "/resources/creeds", priority: "0.8", changefreq: "monthly" },
-  { url: "/studyguides/christian-nationalism", priority: "0.8", changefreq: "monthly" },
-  { url: "/studyguides/pastoral-health", priority: "0.8", changefreq: "monthly" },
-  { url: "/studyguides/economic-justice", priority: "0.8", changefreq: "monthly" },
-  { url: "/studyguides/church-and-empire", priority: "0.8", changefreq: "monthly" },
   { url: "/discipleship", priority: "0.85", changefreq: "monthly" },
   { url: "/help", priority: "0.9", changefreq: "monthly" },
   { url: "/plans/marriage", priority: "0.8", changefreq: "monthly" },
@@ -117,6 +138,15 @@ function manifestPages() {
     { file: "client/public/life/domains-index.json", key: "domains", prefix: "/life/" },
     { file: "client/public/creeds/documents-index.json", key: "documents", prefix: "/resources/creeds/" },
     { file: "client/public/history/essays-index.json", key: "essays", prefix: "/theology/history/" },
+    // Study-guide toolkits (/studyguides/:slug), home-disciplemaking Table
+    // studies (/table/:slug), the How-To library (/how-tos/:slug), and the
+    // read-online books (/read/:slug) — large surfaced libraries. Routes
+    // confirmed in client/src/App.tsx; duplicates with STATIC_PAGES are removed
+    // in buildXml.
+    { file: "client/public/studyguides/index.json", key: "guides", prefix: "/studyguides/" },
+    { file: "client/public/table/studies-index.json", key: "studies", prefix: "/table/" },
+    { file: "client/public/howtos/index.json", key: "articles", prefix: "/how-tos/" },
+    { file: "client/public/books/index.json", key: "books", prefix: "/read/" },
   ];
   for (const s of sources) {
     try {
@@ -142,7 +172,15 @@ function urlEntry(loc, lastmod, changefreq, priority) {
 }
 
 function buildXml(staticPages, articles, books, readingPaths) {
-  const allStatic = [...staticPages, ...manifestPages()];
+  // De-duplicate by URL (a few study-guide slugs appear in both STATIC_PAGES and
+  // the studyguides manifest). First occurrence wins, so the curated static
+  // entries keep their higher priority.
+  const seen = new Set();
+  const allStatic = [...staticPages, ...manifestPages()].filter((p) => {
+    if (seen.has(p.url)) return false;
+    seen.add(p.url);
+    return true;
+  });
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
   for (const page of allStatic) {
@@ -167,7 +205,7 @@ function buildXml(staticPages, articles, books, readingPaths) {
 async function main() {
   if (!process.env.DATABASE_URL) {
     console.warn("[sitemap] DATABASE_URL not set — writing fallback sitemap (static pages only)");
-    const xml = buildXml(STATIC_PAGES, [], [], []);
+    const xml = buildXml(STATIC_PAGES, mergeArticles([]), [], []);
     fs.writeFileSync(OUTPUT_PATH, xml);
     return;
   }
@@ -180,7 +218,7 @@ async function main() {
     });
   } catch (err) {
     console.warn(`[sitemap] DB connect failed (${err.message}) — writing fallback sitemap`);
-    fs.writeFileSync(OUTPUT_PATH, buildXml(STATIC_PAGES, [], [], []));
+    fs.writeFileSync(OUTPUT_PATH, buildXml(STATIC_PAGES, mergeArticles([]), [], []));
     return;
   }
 
@@ -202,7 +240,7 @@ async function main() {
       // table may not exist on legacy DBs — skip silently
     }
 
-    const xml = buildXml(STATIC_PAGES, articles, books, readingPaths);
+    const xml = buildXml(STATIC_PAGES, mergeArticles(articles), books, readingPaths);
     fs.writeFileSync(OUTPUT_PATH, xml);
 
     console.log("[sitemap] generated");
@@ -219,6 +257,6 @@ async function main() {
 main().catch(err => {
   console.error("[sitemap] failed:", err.message);
   // write fallback so build doesn't break
-  fs.writeFileSync(OUTPUT_PATH, buildXml(STATIC_PAGES, [], [], []));
+  fs.writeFileSync(OUTPUT_PATH, buildXml(STATIC_PAGES, mergeArticles([]), [], []));
   process.exit(0);
 });

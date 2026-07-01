@@ -15,7 +15,7 @@ const card = { background: "var(--card)", border: "1px solid var(--border)", bor
 export default function LeadershipHub() {
   return (
     <Layout>
-      <SEOMeta title="Leadership Formation — Tools and Writing for Pastors and Leaders" description="A working library for the pastor and the lay leader: the inner life, leading people, the work of ministry, preaching, administration, and the building and rebuilding of churches. Plus a shared team workspace and a bank of practical tools." url="https://www.livewellbyjamesbell.co/leadership" />
+      <SEOMeta title="Leadership Formation — Tools and Writing for Pastors and Leaders" description="A working library for the pastor and lay leader: the inner life, leading people, preaching, administration, and the building of churches. Plus a team workspace." url="https://www.livewellbyjamesbell.co/leadership" />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--bone)" }}>
         <div style={wrap}>

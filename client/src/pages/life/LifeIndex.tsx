@@ -42,7 +42,7 @@ export default function LifeIndex() {
     <Layout>
       <SEOMeta
         title="Integrated Life — Living the Whole of Life Well"
-        description="One undivided life before God: the inner life, the body and its rhythms, the home, work and money, and the world. Scripture, tradition, and tested knowledge for the actual Tuesday."
+        description="One undivided life before God: the inner life, the body, the home, work and money, and the world. Scripture, tradition, and tested knowledge for the Tuesday."
         url="https://www.livewellbyjamesbell.co/life"
       />
 
@@ -96,6 +96,8 @@ export default function LifeIndex() {
             <Link href="/marriage" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Marriage</Link>
             <Link href="/parenting" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Parenting</Link>
             <Link href="/family" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Family Discipleship</Link>
+            <Link href="/disciple-making" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Make Disciples</Link>
+            <Link href="/wisdom" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Wisdom for All of Life</Link>
             <Link href="/discipleship" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>The Discipleship Pathway</Link>
           </div>
         </div>

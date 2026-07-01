@@ -1,3 +1,17 @@
+/**
+ * SUPERSEDED — do not extend.
+ *
+ * This seeder wrote 21 reading paths into the DB with article COUNTS but no
+ * assigned articles, which is why the site once showed "articles pending" and
+ * "No articles found… Check back soon." The reading paths are now defined in a
+ * single client-side source of truth — client/src/lib/readingPaths.ts — with
+ * real, ordered essay slugs (and "Coming soon" entries for unwritten essays).
+ *
+ * The pages at /reading-paths and /reading-paths/:slug read from that file, not
+ * from this table. This function is kept only so existing seed scripts that
+ * call it don't break; its rows are no longer consumed by the front-end. When
+ * the DB-backed reading_paths table is fully retired, delete this file.
+ */
 import { getDb } from "./db";
 import { readingPaths } from "../drizzle/schema";
 

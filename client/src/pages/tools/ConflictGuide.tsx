@@ -479,7 +479,7 @@ const CONFLICT_TYPES: ConflictType[] = [
         questions: [
           { text: "What does your spouse's relationship with their parent mean to them -- what are they afraid of losing?" },
           { text: "Is your spouse aware of the problem and conflicted, or genuinely unable to see it?" },
-          { text: "What cultural or family expectations is your spouse navigating that you may not fully understand?" },
+          { text: "What cultural or family expectations is your spouse carrying that you may not fully understand?" },
         ],
         scripture: {
           text: "Honor your father and your mother.",
@@ -842,7 +842,7 @@ export default function ConflictGuide() {
     <Layout>
       <SEOMeta
         title="Conflict Resolution Guide -- A Five-Step Process for Couples and Families"
-        description="An interactive five-step guide to help couples and families work through conflict -- from naming the issue to agreeing on a concrete next step. Scripture-grounded, practically honest."
+        description="An interactive five-step guide to help couples and families work through conflict, from naming the issue to a concrete next step. Scripture-grounded."
         keywords="conflict resolution, marriage conflict, family conflict, communication, couples guide, relationship repair, Christian marriage"
         structuredData={{
           "@context": "https://schema.org",
@@ -1263,8 +1263,8 @@ export default function ConflictGuide() {
               {/* Warning */}
               <div
                 style={{
-                  background: "rgba(192,57,43,0.05)",
-                  border: "1px solid rgba(192,57,43,0.15)",
+                  background: "var(--alert-bg)",
+                  border: "1px solid var(--alert-bg)",
                   borderRadius: "2px",
                   padding: "24px 28px",
                   marginBottom: "48px",
@@ -1276,7 +1276,7 @@ export default function ConflictGuide() {
                 <AlertTriangle
                   size={20}
                   style={{
-                    color: "#C0392B",
+                    color: "var(--alert)",
                     flexShrink: 0,
                     marginTop: "2px",
                   }}
@@ -1287,7 +1287,7 @@ export default function ConflictGuide() {
                       fontSize: "12px",
                       fontWeight: 700,
                       letterSpacing: "0.12em",
-                      color: "#C0392B",
+                      color: "var(--alert)",
                       fontFamily: "var(--U)",
                       marginBottom: "8px",
                     }}

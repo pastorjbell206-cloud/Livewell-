@@ -223,6 +223,7 @@ export default function SearchPage() {
             />
             <input
               type="text"
+              aria-label="Search the site"
               placeholder="Search articles, resources, books..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}

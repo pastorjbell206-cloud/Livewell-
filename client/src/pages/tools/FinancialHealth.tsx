@@ -230,7 +230,7 @@ function getOverallLabel(score: number): {
   if (pct >= 0.8)
     return {
       label: "Faithful Steward",
-      color: "#2D6A4F",
+      color: "var(--ok)",
       description:
         "Your financial life reflects serious attention to biblical stewardship. You give, you save, you plan, and you communicate. This is not the end of the work -- it is the foundation for deeper obedience. The question is no longer whether you manage well. It is whether your management serves the kingdom or merely secures your comfort.",
     };
@@ -244,13 +244,13 @@ function getOverallLabel(score: number): {
   if (pct >= 0.4)
     return {
       label: "Needs Realignment",
-      color: "#E07A2F",
+      color: "var(--strain)",
       description:
         "Several areas of your financial life are out of alignment with biblical principles. This is a diagnosis, not a condemnation. God does not require financial perfection. He requires honesty about where you are and willingness to move toward where He is calling you. Start with one category. One conversation. One change.",
     };
   return {
     label: "Foundation Needed",
-    color: "#C0392B",
+    color: "var(--alert)",
     description:
       "Your financial life needs significant restructuring, and that is not a statement about your worth -- it is a statement about your habits. Many of the most faithful people in Scripture went through seasons of financial crisis. The difference between crisis and character is what you do next. Start by getting help: a financial counselor, a trusted mentor, a Dave Ramsey class at your church. You do not have to figure this out alone.",
   };
@@ -317,7 +317,7 @@ export default function FinancialHealth() {
     <Layout>
       <SEOMeta
         title="Financial Health Check -- Biblical Stewardship Assessment"
-        description="A 12-question diagnostic for financial health through a theological lens. Assess your generosity, contentment, stewardship, and family provision with Scripture-grounded recommendations."
+        description="A 12-question diagnostic for financial health through a theological lens: generosity, contentment, stewardship, and provision, with Scripture-grounded steps."
         keywords="financial health, biblical stewardship, Christian finances, tithing assessment, money and faith, financial stewardship"
         structuredData={{
           "@context": "https://schema.org",
@@ -822,10 +822,10 @@ export default function FinancialHealth() {
                   const level = getScoreLevel(score, maxCatScore);
                   const barColor =
                     level === "high"
-                      ? "#2D6A4F"
+                      ? "var(--ok)"
                       : level === "mid"
                         ? "var(--mustard)"
-                        : "#C0392B";
+                        : "var(--alert)";
                   return (
                     <div key={cat.slug}>
                       <div
@@ -895,10 +895,10 @@ export default function FinancialHealth() {
                     : "Needs Attention";
               const levelColor =
                 level === "high"
-                  ? "#2D6A4F"
+                  ? "var(--ok)"
                   : level === "mid"
                     ? "var(--mustard)"
-                    : "#C0392B";
+                    : "var(--alert)";
 
               return (
                 <div
@@ -942,10 +942,10 @@ export default function FinancialHealth() {
                         padding: "4px 12px",
                         background:
                           level === "high"
-                            ? "rgba(45,106,79,0.08)"
+                            ? "var(--ok-bg)"
                             : level === "mid"
                               ? "rgba(212,160,23,0.1)"
-                              : "rgba(192,57,43,0.08)",
+                              : "var(--alert-bg)",
                         borderRadius: "2px",
                       }}
                     >

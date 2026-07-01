@@ -26,8 +26,20 @@ const BeTrueToYourself = lazy(() => import("./pages/books/BeTrueToYourself"));
 const BeTrueToYourselfThankYou = lazy(() => import("./pages/books/BeTrueToYourselfThankYou"));
 const WhatBelongsToThePoor = lazy(() => import("./pages/books/WhatBelongsToThePoor"));
 const WhatBelongsToThePoorThankYou = lazy(() => import("./pages/books/WhatBelongsToThePoorThankYou"));
-const RuleOfLife = lazy(() => import("./pages/books/RuleOfLife"));
+const RuleOfLifeBook = lazy(() => import("./pages/books/RuleOfLife"));
 const RuleOfLifeThankYou = lazy(() => import("./pages/books/RuleOfLifeThankYou"));
+const WhyNotWhat = lazy(() => import("./pages/books/WhyNotWhat"));
+const WhyNotWhatThankYou = lazy(() => import("./pages/books/WhyNotWhatThankYou"));
+const SermonOnTheMountAsPolitics = lazy(() => import("./pages/books/SermonOnTheMountAsPolitics"));
+const SermonOnTheMountAsPoliticsThankYou = lazy(() => import("./pages/books/SermonOnTheMountAsPoliticsThankYou"));
+const PropheticJustice101 = lazy(() => import("./pages/books/PropheticJustice101"));
+const PropheticJustice101ThankYou = lazy(() => import("./pages/books/PropheticJustice101ThankYou"));
+const MarriageInMinistry = lazy(() => import("./pages/books/MarriageInMinistry"));
+const MarriageInMinistryThankYou = lazy(() => import("./pages/books/MarriageInMinistryThankYou"));
+const TheLonelinessOfThePastor = lazy(() => import("./pages/books/TheLonelinessOfThePastor"));
+const TheLonelinessOfThePastorThankYou = lazy(() => import("./pages/books/TheLonelinessOfThePastorThankYou"));
+const HealWell = lazy(() => import("./pages/books/HealWell"));
+const HealWellThankYou = lazy(() => import("./pages/books/HealWellThankYou"));
 const WhenGodBlessAmerica = lazy(() => import("./pages/WhenGodBlessAmerica"));
 const WhenGodBlessAmericaThankYou = lazy(() => import("./pages/WhenGodBlessAmericaThankYou"));
 const Believe = lazy(() => import("./pages/Believe"));
@@ -54,6 +66,8 @@ const About = lazy(() => import("./pages/About"));
 const Exile = lazy(() => import("./pages/Exile"));
 const Table = lazy(() => import("./pages/table/Table"));
 const TableStudy = lazy(() => import("./pages/table/TableStudy"));
+const BookLibrary = lazy(() => import("./pages/books/BookLibrary"));
+const BookReader = lazy(() => import("./pages/books/BookReader"));
 
 const Resources = lazy(() => import("./pages/Resources"));
 const ContextLibrary = lazy(() => import("./pages/resources/ContextLibrary"));
@@ -75,12 +89,18 @@ const SearchPage = lazy(() => import("./pages/Search"));
 const TheologyQuiz = lazy(() => import("./pages/TheologyQuiz"));
 const ResourcesForPastors = lazy(() => import("./pages/ResourcesForPastors"));
 const ReadingPaths = lazy(() => import("./pages/ReadingPaths"));
+const EmailSignup = lazy(() => import("./pages/EmailSignup"));
 const Pillars = lazy(() => import("./pages/Pillars"));
+const LivingWell = lazy(() => import("./pages/LivingWell"));
 const ForPastors = lazy(() => import("./pages/ForPastors"));
 const ForLeaders = lazy(() => import("./pages/ForLeaders"));
 const Membership = lazy(() => import("./pages/Membership"));
 const MembershipSuccess = lazy(() => import("./pages/MembershipSuccess"));
 const Discipleship = lazy(() => import("./pages/Discipleship"));
+const DiscipleMaking = lazy(() => import("./pages/DiscipleMaking"));
+const Wisdom = lazy(() => import("./pages/Wisdom"));
+const HowTos = lazy(() => import("./pages/HowTos"));
+const HowToArticle = lazy(() => import("./pages/HowToArticle"));
 const LifeIndex = lazy(() => import("./pages/life/LifeIndex"));
 const LifeDomain = lazy(() => import("./pages/life/LifeDomain"));
 const WholeLifeAssessment = lazy(() => import("./pages/life/WholeLifeAssessment"));
@@ -90,6 +110,7 @@ const Doubt = lazy(() => import("./pages/Doubt"));
 const Help = lazy(() => import("./pages/Help"));
 const CarePlan = lazy(() => import("./pages/plans/CarePlan"));
 const StartHereQuiz = lazy(() => import("./pages/StartHereQuiz"));
+const StartHereDiagnostic = lazy(() => import("./pages/StartHereDiagnostic"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Accessibility = lazy(() => import("./pages/Accessibility"));
 const Terms = lazy(() => import("./pages/Terms"));
@@ -168,12 +189,43 @@ const LifeAudit = lazy(() => import("./pages/tools/LifeAudit"));
 const ChurchHealth = lazy(() => import("./pages/tools/ChurchHealth"));
 const DeepBibleCompanion = lazy(() => import("./pages/tools/DeepBibleCompanion"));
 const FamilyDevotionBuilder = lazy(() => import("./pages/tools/FamilyDevotionBuilder"));
+const DiscipleshipTable = lazy(() => import("./pages/tools/DiscipleshipTable"));
+const RuleOfLife = lazy(() => import("./pages/tools/RuleOfLife"));
+const BibleOnTopic = lazy(() => import("./pages/tools/BibleOnTopic"));
+const WisdomFinder = lazy(() => import("./pages/tools/WisdomFinder"));
+const Proverbs31 = lazy(() => import("./pages/tools/Proverbs31"));
+const BibleReference = lazy(() => import("./pages/tools/BibleReference"));
+const ToolsGlossary = lazy(() => import("./pages/tools/TheologyGlossary"));
+const QuoteLibrary = lazy(() => import("./pages/tools/QuoteLibrary"));
+const PostChristianSermonSeries = lazy(() => import("./pages/SermonSeries"));
+const Dashboard = lazy(() => import("./pages/Dashboard"));
 const WorkWithJames = lazy(() => import("./pages/WorkWithJames"));
 const PastoralBurnout = lazy(() => import("./pages/landing/PastoralBurnout"));
 const FaithCrisis = lazy(() => import("./pages/landing/FaithCrisis"));
 const MarriageCrisis = lazy(() => import("./pages/landing/MarriageCrisis"));
 const GriefLanding = lazy(() => import("./pages/landing/Grief"));
 const ParentingStruggles = lazy(() => import("./pages/landing/ParentingStruggles"));
+const Deconstruction = lazy(() => import("./pages/landing/Deconstruction"));
+const ChurchHistory = lazy(() => import("./pages/landing/ChurchHistory"));
+const ChurchHurt = lazy(() => import("./pages/landing/ChurchHurt"));
+const HonestQuestions = lazy(() => import("./pages/landing/HonestQuestions"));
+const PostChristianLanding = lazy(() => import("./pages/landing/PostChristian"));
+const FAQWhyArePeopleLeavingChurch = lazy(() => import("./pages/faq/WhyArePeopleLeavingChurch"));
+const FAQWhatIsDeconstruction = lazy(() => import("./pages/faq/WhatIsDeconstruction"));
+const FAQIsBibleHistoricallyAccurate = lazy(() => import("./pages/faq/IsBibleHistoricallyAccurate"));
+const FAQWhatDenominationShouldIJoin = lazy(() => import("./pages/faq/WhatDenominationShouldIJoin"));
+const FAQDoesGodExist = lazy(() => import("./pages/faq/DoesGodExist"));
+const FAQWhatDoChristiansBelieveAboutHell = lazy(() => import("./pages/faq/WhatDoChristiansBelieveAboutHell"));
+const FAQCatholicVsProtestant = lazy(() => import("./pages/faq/WhatIsTheDifferenceBetweenCatholicAndProtestant"));
+const FAQWhatIsReligiousTrauma = lazy(() => import("./pages/faq/WhatIsReligiousTrauma"));
+const FAQWhyDoYoungPeopleLeaveChurch = lazy(() => import("./pages/faq/WhyDoYoungPeopleLeaveChurch"));
+const FAQCanScienceAndFaithCoexist = lazy(() => import("./pages/faq/CanScienceAndFaithCoexist"));
+const CatholicVsProtestant = lazy(() => import("./pages/comparisons/CatholicVsProtestant"));
+const CalvinismVsArminianism = lazy(() => import("./pages/comparisons/CalvinismVsArminianism"));
+const BaptistVsMethodist = lazy(() => import("./pages/comparisons/BaptistVsMethodist"));
+const EvangelicalVsMainline = lazy(() => import("./pages/comparisons/EvangelicalVsMainline"));
+const OrthodoxVsCatholic = lazy(() => import("./pages/comparisons/OrthodoxVsCatholic"));
+const LiturgicalVsContemporary = lazy(() => import("./pages/comparisons/LiturgicalVsContemporary"));
 const ReadingPathDetail = lazy(() =>
   import("./pages/ReadingPathDetail").then((m) => ({ default: m.ReadingPathDetail }))
 );
@@ -246,6 +298,8 @@ function Router() {
         <Route path="/exile" component={Exile} />
         <Route path="/table/:slug" component={TableStudy} />
         <Route path="/table" component={Table} />
+        <Route path="/read/:slug" component={BookReader} />
+        <Route path="/read" component={BookLibrary} />
         <Route path="/parenting" component={Parenting} />
         <Route path="/family/catechism" component={FamilyCatechism} />
         <Route path="/family/devotions" component={FamilyDevotions} />
@@ -319,13 +373,19 @@ function Router() {
         <Route path="/help" component={Help} />
         <Route path="/plans/:slug" component={CarePlan} />
         <Route path="/start" component={StartHereQuiz} />
+        <Route path="/start-here" component={StartHereDiagnostic} />
         <Route path="/for-families" component={ForFamiliesRedirect} />
         <Route path="/pillars" component={Pillars} />
+        <Route path="/living-well" component={LivingWell} />
         <Route path="/for-pastors" component={ForPastors} />
         <Route path="/for-leaders" component={ForLeaders} />
         <Route path="/membership" component={Membership} />
         <Route path="/membership/success" component={MembershipSuccess} />
         <Route path="/discipleship" component={Discipleship} />
+        <Route path="/disciple-making" component={DiscipleMaking} />
+        <Route path="/wisdom" component={Wisdom} />
+        <Route path="/how-tos" component={HowTos} />
+        <Route path="/how-tos/:slug" component={HowToArticle} />
         <Route path="/studyguides" component={StudyGuidesIndex} />
         <Route path="/studyguides/:slug" component={StudyGuide} />
         <Route path="/writing" component={Writing} />
@@ -333,6 +393,7 @@ function Router() {
         <Route path="/articles" component={ArticlesRedirect} />
         <Route path="/reading-paths" component={ReadingPaths} />
         <Route path="/reading-paths/:slug" component={ReadingPathDetail} />
+        <Route path="/subscribe" component={EmailSignup} />
         <Route path="/authors/:slug" component={AuthorProfile} />
         <Route path="/article-collections" component={ArticleCollections} />
         <Route path="/book-bundles" component={BookBundles} />
@@ -381,7 +442,20 @@ function Router() {
         <Route path="/what-belongs-to-the-poor/thank-you" component={WhatBelongsToThePoorThankYou} />
         <Route path="/what-belongs-to-the-poor" component={WhatBelongsToThePoor} />
         <Route path="/rule-of-life/thank-you" component={RuleOfLifeThankYou} />
-        <Route path="/rule-of-life" component={RuleOfLife} />
+        <Route path="/rule-of-life" component={RuleOfLifeBook} />
+        <Route path="/why-not-what/thank-you" component={WhyNotWhatThankYou} />
+        <Route path="/why-not-what" component={WhyNotWhat} />
+        <Route path="/sermon-series" component={PostChristianSermonSeries} />
+        <Route path="/sermon-on-the-mount-as-politics/thank-you" component={SermonOnTheMountAsPoliticsThankYou} />
+        <Route path="/sermon-on-the-mount-as-politics" component={SermonOnTheMountAsPolitics} />
+        <Route path="/prophetic-justice-101/thank-you" component={PropheticJustice101ThankYou} />
+        <Route path="/prophetic-justice-101" component={PropheticJustice101} />
+        <Route path="/marriage-in-ministry/thank-you" component={MarriageInMinistryThankYou} />
+        <Route path="/marriage-in-ministry" component={MarriageInMinistry} />
+        <Route path="/the-loneliness-of-the-pastor/thank-you" component={TheLonelinessOfThePastorThankYou} />
+        <Route path="/the-loneliness-of-the-pastor" component={TheLonelinessOfThePastor} />
+        <Route path="/healwell/thank-you" component={HealWellThankYou} />
+        <Route path="/healwell" component={HealWell} />
         <Route path="/substack" component={SubstackPage} />
         <Route path="/pastors" component={Pastors} />
         <Route path="/about" component={About} />
@@ -413,6 +487,14 @@ function Router() {
         <Route path="/tools/church-health" component={ChurchHealth} />
         <Route path="/tools/deep-bible" component={DeepBibleCompanion} />
         <Route path="/tools/family-devotions" component={FamilyDevotionBuilder} />
+        <Route path="/tools/discipleship-table" component={DiscipleshipTable} />
+        <Route path="/tools/rule-of-life" component={RuleOfLife} />
+        <Route path="/tools/bible-on" component={BibleOnTopic} />
+        <Route path="/tools/wisdom-finder" component={WisdomFinder} />
+        <Route path="/tools/proverbs-31" component={Proverbs31} />
+        <Route path="/tools/bible-says" component={BibleReference} />
+        <Route path="/tools/quotes" component={QuoteLibrary} />
+        <Route path="/tools/glossary" component={ToolsGlossary} />
         <Route path="/work-with-james" component={WorkWithJames} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/accessibility" component={Accessibility} />
@@ -423,6 +505,28 @@ function Router() {
         <Route path="/marriage-crisis" component={MarriageCrisis} />
         <Route path="/grief" component={GriefLanding} />
         <Route path="/parenting-help" component={ParentingStruggles} />
+        <Route path="/deconstruction" component={Deconstruction} />
+        <Route path="/church-history" component={ChurchHistory} />
+        <Route path="/church-hurt" component={ChurchHurt} />
+        <Route path="/honest-questions" component={HonestQuestions} />
+        <Route path="/compare/catholic-vs-protestant" component={CatholicVsProtestant} />
+        <Route path="/compare/calvinism-vs-arminianism" component={CalvinismVsArminianism} />
+        <Route path="/compare/baptist-vs-methodist" component={BaptistVsMethodist} />
+        <Route path="/compare/evangelical-vs-mainline" component={EvangelicalVsMainline} />
+        <Route path="/compare/orthodox-vs-catholic" component={OrthodoxVsCatholic} />
+        <Route path="/compare/liturgical-vs-contemporary" component={LiturgicalVsContemporary} />
+        <Route path="/post-christian" component={PostChristianLanding} />
+        <Route path="/faq/why-are-people-leaving-church" component={FAQWhyArePeopleLeavingChurch} />
+        <Route path="/faq/what-is-deconstruction" component={FAQWhatIsDeconstruction} />
+        <Route path="/faq/is-the-bible-historically-accurate" component={FAQIsBibleHistoricallyAccurate} />
+        <Route path="/faq/what-denomination-should-i-join" component={FAQWhatDenominationShouldIJoin} />
+        <Route path="/faq/does-god-exist" component={FAQDoesGodExist} />
+        <Route path="/faq/what-do-christians-believe-about-hell" component={FAQWhatDoChristiansBelieveAboutHell} />
+        <Route path="/faq/catholic-vs-protestant" component={FAQCatholicVsProtestant} />
+        <Route path="/faq/what-is-religious-trauma" component={FAQWhatIsReligiousTrauma} />
+        <Route path="/faq/why-do-young-people-leave-church" component={FAQWhyDoYoungPeopleLeaveChurch} />
+        <Route path="/faq/can-science-and-faith-coexist" component={FAQCanScienceAndFaithCoexist} />
+        <Route path="/dashboard" component={Dashboard} />
 <Route path="/admin/login" component={AdminLogin} />
         <Route path="/admin"><ProtectedRoute component={AdminDashboard} requireAdmin /></Route>
         <Route path="/admin/posts"><ProtectedRoute component={AdminPosts} requireAdmin /></Route>

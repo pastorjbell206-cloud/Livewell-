@@ -27,7 +27,7 @@ const ITEMS = [
 export default function NationHub() {
   return (
     <Layout>
-      <SEOMeta title="Christ and the Nation — The Bible, America, and Power" description="Was America founded as a Christian nation? How close is each party to the Bible? What did an Old Testament theocracy actually look like, and what would a biblical government mean? A serious, even-handed look at the Bible and the body politic." url="https://www.livewellbyjamesbell.co/nation" />
+      <SEOMeta title="Christ and the Nation — The Bible, America, and Power" description="Was America founded as a Christian nation? How close is each party to the Bible? What would a biblical government mean? An even-handed look at the body politic." url="https://www.livewellbyjamesbell.co/nation" />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--bone)" }}>
         <div style={wrap}>

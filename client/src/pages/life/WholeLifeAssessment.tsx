@@ -355,7 +355,7 @@ export default function WholeLifeAssessment() {
     <Layout>
       <SEOMeta
         title="The Whole-Life Assessment — Where Is Your Life Flourishing"
-        description="Thirty honest statements across five domains of an ordinary life: the inner life, the body, the home, the work, the world. About eight minutes, scored entirely in your browser. A map of flourishing and fragmentation, not a scorecard."
+        description="Thirty honest statements across five domains: the inner life, the body, the home, the work, the world. About eight minutes, scored entirely in your browser."
         url="https://www.livewellbyjamesbell.co/life/assessment"
       />
 
@@ -461,6 +461,7 @@ export default function WholeLifeAssessment() {
                             name={s.id}
                             value={val}
                             checked={on}
+                            aria-label={label}
                             onChange={() => setAnswers((a) => ({ ...a, [s.id]: val }))}
                           />
                           <span style={{

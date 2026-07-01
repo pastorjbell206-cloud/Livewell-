@@ -54,7 +54,7 @@ export default function WhereYourTreasureIs() {
     <Layout>
       <SEOMeta
         title="Where Your Treasure Is: What the Bible Says About Money — by James Bell"
-        description="What the Bible actually says about money — why Jesus called it mammon, and how generosity breaks its grip on the heart. An honest, pastoral look. Available now as an ebook."
+        description="What the Bible actually says about money: why Jesus called it mammon, and how generosity breaks its grip on the heart. An honest look, now an ebook."
         image={`${SITE_URL}${COVER}`}
         url={`${SITE_URL}/${SLUG}`}
         type="book"

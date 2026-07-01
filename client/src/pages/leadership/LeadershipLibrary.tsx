@@ -36,7 +36,7 @@ export default function LeadershipLibrary() {
 
   return (
     <Layout>
-      <SEOMeta title="The Leadership Library — Articles for Pastors and Church Leaders" description="A searchable library of writing on leadership formation, church leadership, preaching, and exegesis, for the working pastor and the lay leader. Plain, serious, and useful." url="https://www.livewellbyjamesbell.co/leadership/library" />
+      <SEOMeta title="The Leadership Library — Articles for Pastors and Church Leaders" description="A searchable library on leadership formation, church leadership, preaching, and exegesis, for the working pastor and the lay leader. Plain, serious, useful." url="https://www.livewellbyjamesbell.co/leadership/library" />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
@@ -50,7 +50,7 @@ export default function LeadershipLibrary() {
         <div style={wrap}>
           <div style={{ position: "relative", marginBottom: "var(--s-3)" }}>
             <Search size={18} style={{ position: "absolute", left: "14px", top: "50%", transform: "translateY(-50%)", color: "var(--ink-muted)" }} aria-hidden />
-            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search the library"
+            <input value={q} onChange={(e) => setQ(e.target.value)} aria-label="Search the library" placeholder="Search the library"
               style={{ width: "100%", fontFamily: "var(--B)", fontSize: "16px", padding: "12px 14px 12px 42px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)" }} />
           </div>
           <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginBottom: "var(--s-4)" }}>

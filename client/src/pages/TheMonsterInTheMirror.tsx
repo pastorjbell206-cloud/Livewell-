@@ -24,7 +24,7 @@ export default function TheMonsterInTheMirror() {
     <Layout>
       <SEOMeta
         title="The Monster in the Mirror — by James Bell"
-        description="Why every generation gets the Bible wrong, why yours is no different, and what to do about it — a pastoral reckoning with how sincere believers baptize their own blind spots."
+        description="Why every generation gets the Bible wrong, why yours is no different, and what to do about it. A pastoral reckoning with our own blind spots."
         image={`${SITE_URL}${COVER}`}
         url={`${SITE_URL}/books/the-monster-in-the-mirror`}
         type="book"

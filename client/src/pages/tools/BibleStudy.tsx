@@ -301,7 +301,7 @@ export default function BibleStudy() {
     <Layout>
       <SEOMeta
         title="Bible Study Guide -- Study Any Book with Theological Depth"
-        description="Study 12 essential books of the Bible with theological depth. Key themes, study questions, reading strategies, and companion essays. Built for serious readers, not academics."
+        description="Study 12 essential books of the Bible with theological depth: key themes, study questions, reading strategies, and companion essays. For serious readers."
         keywords="Bible study guide, Genesis study, Psalms study, Romans study, Gospel of John, Bible reading plan, theological Bible study"
         structuredData={{
           "@context": "https://schema.org",

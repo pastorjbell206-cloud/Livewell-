@@ -90,18 +90,18 @@ export default function MeetingBuilder() {
             ))}
           </div>
 
-          <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Meeting name"
+          <input value={title} onChange={(e) => setTitle(e.target.value)} aria-label="Meeting name" placeholder="Meeting name"
             style={{ width: "100%", fontFamily: "var(--F)", fontSize: "22px", padding: "12px 14px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)", marginBottom: "var(--s-3)" }} />
 
           {items.map((i, n) => (
             <div key={i.id} style={{ display: "flex", gap: "8px", alignItems: "flex-start", marginBottom: "8px" }}>
               <span style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", paddingTop: "12px", width: "20px" }}>{n + 1}.</span>
               <div style={{ flex: 1 }}>
-                <textarea value={i.text} onChange={(e) => update(i.id, { text: e.target.value })} rows={1} placeholder="Agenda item"
+                <textarea value={i.text} onChange={(e) => update(i.id, { text: e.target.value })} rows={1} aria-label={`Agenda item ${n + 1}`} placeholder="Agenda item"
                   style={{ width: "100%", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.5, padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)", resize: "vertical", marginBottom: "4px" }} />
                 <div style={{ display: "flex", gap: "8px" }}>
-                  <input value={i.owner} onChange={(e) => update(i.id, { owner: e.target.value })} placeholder="Owner" style={{ flex: 1, fontFamily: "var(--U)", fontSize: "13px", padding: "6px 10px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)" }} />
-                  <input type="number" value={i.mins} onChange={(e) => update(i.id, { mins: Number(e.target.value) })} style={{ width: "70px", fontFamily: "var(--U)", fontSize: "13px", padding: "6px 10px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)" }} />
+                  <input value={i.owner} onChange={(e) => update(i.id, { owner: e.target.value })} aria-label={`Owner for item ${n + 1}`} placeholder="Owner" style={{ flex: 1, fontFamily: "var(--U)", fontSize: "13px", padding: "6px 10px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)" }} />
+                  <input type="number" value={i.mins} onChange={(e) => update(i.id, { mins: Number(e.target.value) })} aria-label={`Minutes for item ${n + 1}`} style={{ width: "70px", fontFamily: "var(--U)", fontSize: "13px", padding: "6px 10px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)" }} />
                   <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", paddingTop: "7px" }}>min</span>
                 </div>
               </div>

@@ -78,12 +78,12 @@ export function EmailResults({ toolName, resultsSummary }: EmailResultsProps) {
             padding: "16px 0 4px",
           }}
         >
-          <CheckCircle size={18} style={{ color: "#2D6A4F", flexShrink: 0 }} />
+          <CheckCircle size={18} style={{ color: "var(--ok)", flexShrink: 0 }} />
           <p
             style={{
               fontSize: "15px",
               fontFamily: "var(--U)",
-              color: "#2D6A4F",
+              color: "var(--ok)",
               fontWeight: 500,
               margin: 0,
             }}
@@ -173,7 +173,7 @@ export function EmailResults({ toolName, resultsSummary }: EmailResultsProps) {
               style={{
                 fontSize: "13px",
                 fontFamily: "var(--U)",
-                color: "#C0392B",
+                color: "var(--alert)",
                 marginTop: "10px",
               }}
             >

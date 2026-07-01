@@ -144,7 +144,7 @@ export default function FormationGuides() {
     <Layout>
       <SEOMeta
         title="Free Leadership Training Guides — Servant Leadership, Elders, Deacons"
-        description="Free, session-by-session training guides for the church: a Servant Leadership Bible study, an Elder Training Manual, a Deacon Training Manual, and how to develop leaders. Scripture, discussion, practice, and prayer for each session."
+        description="Free, session-by-session training guides for the church: a Servant Leadership Bible study, an Elder Training Manual, a Deacon Training Manual, and more."
         url={`${SITE_URL}/leadership/guides`}
       />
       <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>

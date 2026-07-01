@@ -25,7 +25,7 @@
     <meta property="og:url" content="https://www.livewellbyjamesbell.co/" />
     <meta property="og:title" content="LiveWell by James Bell" />
     <meta property="og:description" content="Theology that carries the weight of everyday life. Essays on faith, justice, marriage, parenting, and pastoral ministry." />
-    <meta property="og:image" content="https://www.livewellbyjamesbell.co/og-default.png" />
+    <meta property="og:image" content="https://www.livewellbyjamesbell.co/api/og?title=LiveWell%20by%20James%20Bell&pillar=Theology%20for%20everyday%20life" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="LiveWell by James Bell" />
@@ -34,33 +34,15 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="LiveWell by James Bell" />
     <meta name="twitter:description" content="Theology that carries the weight of everyday life." />
-    <meta name="twitter:image" content="https://www.livewellbyjamesbell.co/og-default.png" />
+    <meta name="twitter:image" content="https://www.livewellbyjamesbell.co/api/og?title=LiveWell%20by%20James%20Bell&pillar=Theology%20for%20everyday%20life" />
 
     <!-- Sitemap + RSS -->
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <link rel="alternate" type="application/rss+xml" title="LiveWell by James Bell" href="/rss.xml" />
 
-    <!-- Organization Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "LiveWell by James Bell",
-      "url": "https://www.livewellbyjamesbell.co",
-      "description": "Connecting the depth of theology to the weight of everyday life.",
-      "founder": {
-        "@type": "Person",
-        "name": "James Bell",
-        "jobTitle": "Lead Pastor, Author",
-        "url": "https://www.livewellbyjamesbell.co/about"
-      },
-      "sameAs": [
-        "https://www.facebook.com/james.bell.609252",
-        "https://pastorsconnectionnetwork.com",
-        "https://substack.com/@jamesbell333289"
-      ]
-    }
-    </script>
+    <!-- Organization + WebSite JSON-LD are injected once at the React app root
+         (see client/src/App.tsx → SiteStructuredData) to avoid duplicate
+         schema blocks. Kept out of the static HTML deliberately. -->
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

@@ -32,7 +32,7 @@ export default function PropheticConsistency({ config }: { config: SectionConfig
 
   return (
     <Layout>
-      <SEOMeta title={`The Consistency Check — ${config.label}`} description="A searching self-examination of whether you defend truth selectively, holding one standard for your own side and another for your opponents. A mirror, not a weapon." url={`https://www.livewellbyjamesbell.co${config.base}/consistency`} />
+      <SEOMeta title={`The Consistency Check — ${config.label}`} description="A searching self-examination of whether you defend truth selectively, one standard for your side and another for your opponents. A mirror, not a weapon." url={`https://www.livewellbyjamesbell.co${config.base}/consistency`} />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>

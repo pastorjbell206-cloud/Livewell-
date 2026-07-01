@@ -91,7 +91,7 @@ export default function ServiceBuilder() {
                             ))}
                           </div>
                         )}
-                        <textarea value={st.text[el.id] || ""} onChange={(e) => setSt((s) => ({ ...s, text: { ...s.text, [el.id]: e.target.value } }))} rows={el.samples[0]?.text ? 4 : 2}
+                        <textarea value={st.text[el.id] || ""} onChange={(e) => setSt((s) => ({ ...s, text: { ...s.text, [el.id]: e.target.value } }))} aria-label={el.name} rows={el.samples[0]?.text ? 4 : 2}
                           style={{ width: "100%", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)", resize: "vertical" }} />
                       </div>
                     )}

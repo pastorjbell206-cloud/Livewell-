@@ -238,6 +238,8 @@ export default function Family() {
             <LinkCard href="/parenting" title="On parenting" desc="Essays on raising children in the faith without crushing them." />
             <LinkCard href="/tools/parenting-guide" title="Parenting stage guide" desc="Age-specific guidance from toddlers to young adults, and one practice to start this week." />
             <LinkCard href="/writing/what-fatherhood-requires" title="What fatherhood requires" desc="On the inheritance you pass down, and the one you choose to break." />
+            <LinkCard href="/life/raising-children-in-grace" title="Raising children in grace" desc="The deep guide: discipline that reaches the heart, faith, screens, and the teen years. You cannot save your children, and you were never meant to." />
+            <LinkCard href="/life/the-home-and-the-family" title="The home and the family" desc="The household as a school of grace: the table, family worship, and the open door." />
           </div>
         </div>
       </section>
@@ -251,6 +253,7 @@ export default function Family() {
             <LinkCard href="/marriage" title="On marriage" desc="Covenant, not contract. Marriage through the long middle." />
             <LinkCard href="/tools/marriage-assessment" title="Marriage health assessment" desc="A 15-question diagnostic across communication, trust, conflict, and shared vision." />
             <LinkCard href="/writing/covenant-vs-contract-what-marriage-is" title="Covenant vs. contract" desc="What marriage actually is, and why the difference holds it together." />
+            <LinkCard href="/life/marriage-the-long-covenant" title="Marriage: the long covenant" desc="The deep guide: the slow drift, conflict, money, desire, and the daily work of staying married well." />
           </div>
         </div>
       </section>
@@ -264,6 +267,8 @@ export default function Family() {
             <LinkCard href="/tools/family-devotions" title="Family devotion builder" desc="Build a 15-minute devotion by your kids' ages and a theme." />
             <LinkCard href="/tools/bible-study" title="Bible study guide" desc="Study any book of the Bible with themes, questions, and reading strategies." />
             <LinkCard href="/tools/prayer-generator" title="Prayer generator" desc="Guided prayers for morning, evening, strength, guidance, and gratitude." />
+            <LinkCard href="/tools/rule-of-life" title="Rule of life builder" desc="Build a sustainable rhythm of prayer, Scripture, rest, community, and mission you can actually keep." />
+            <LinkCard href="/disciple-making" title="Make disciples" desc="Equip the ordinary believer to make disciples around a table. The path, plus a Start a Table tool." />
           </div>
         </div>
       </section>

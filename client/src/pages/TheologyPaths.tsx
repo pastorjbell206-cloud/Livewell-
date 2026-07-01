@@ -30,7 +30,7 @@ export default function TheologyPaths() {
     <Layout>
       <SEOMeta
         title="Where to Start — Guided Learning Paths"
-        description="Do not know where to begin? Follow a guided path: start here for new believers, the gospel traced through Scripture, the whole story of the Bible, or the doctrines that divide explained."
+        description="Not sure where to begin? Follow a guided path: start here for new believers, the gospel traced through Scripture, the whole Bible, or the doctrines that divide."
         url="https://www.livewellbyjamesbell.co/theology/paths"
       />
 

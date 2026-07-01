@@ -8,10 +8,10 @@ const colTitle = { fontSize: "13px", fontWeight: "bold", marginBottom: "16px", c
 const col = { display: "flex", flexDirection: "column", gap: "10px" } as const;
 
 /**
- * Footer mirrors the header's mental model (the five pillars are the spine),
- * per docs/site-ia-blueprint.md: The Five Pillars / Write & Read /
- * Libraries & Tools / For Pastors / Connect. "Resources" appears exactly once
- * in navigation (the Resource Hub, labeled Downloads & Study Guides here).
+ * Footer mirrors the header's mental model. The six-pillar V2 set is the spine
+ * (linked as "The Six Pillars" → /pillars, per docs/TAXONOMY-PROPOSAL.md); the
+ * rich hub pages sit under it. "Resources" appears exactly once in navigation
+ * (the Resource Hub, labeled Downloads & Study Guides here).
  */
 export default function Footer() {
   const { theme, toggleTheme } = useTheme();
@@ -28,15 +28,17 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* The Five Pillars */}
+          {/* The Pillars — six-pillar V2 is the spine; the hubs below are the
+              rich landing pages that sit under it (see docs/TAXONOMY-PROPOSAL.md). */}
           <div>
-            <h3 style={colTitle}>The Five Pillars</h3>
+            <h3 style={colTitle}>The Pillars</h3>
             <div style={col}>
+              <Link href="/pillars" style={footerLink}>The Six Pillars</Link>
               <Link href="/theology" style={footerLink}>Theological Depth</Link>
               <Link href="/justice" style={footerLink}>Prophetic Justice</Link>
               <Link href="/disruption" style={footerLink}>Prophetic Disruption</Link>
               <Link href="/leadership" style={footerLink}>Leadership Formation</Link>
-              <Link href="/life" style={footerLink}>Integrated Life</Link>
+              <Link href="/living-well" style={footerLink}>Living Well</Link>
             </div>
           </div>
 
@@ -46,6 +48,7 @@ export default function Footer() {
             <div style={col}>
               <Link href="/writing" style={footerLink}>The Writing</Link>
               <Link href="/books" style={footerLink}>Books</Link>
+              <Link href="/read" style={footerLink}>The Library (read online)</Link>
               <Link href="/reading-paths" style={footerLink}>Reading Paths</Link>
               <Link href="/start" style={footerLink}>Start Here</Link>
               <Link href="/marriage" style={footerLink}>Marriage</Link>
@@ -60,6 +63,10 @@ export default function Footer() {
               <Link href="/resources" style={footerLink}>The Resource Hub</Link>
               <Link href="/studyguides" style={footerLink}>Study Guides</Link>
               <Link href="/resources/context" style={footerLink}>Reading Scripture in Context</Link>
+              <Link href="/wisdom" style={footerLink}>Wisdom for All of Life</Link>
+              <Link href="/tools/wisdom-finder" style={footerLink}>Wisdom Finder</Link>
+              <Link href="/how-tos" style={footerLink}>How-To Guides</Link>
+              <Link href="/disciple-making" style={footerLink}>Make Disciples</Link>
               <Link href="/leadership/library" style={footerLink}>Leadership Library</Link>
               <Link href="/leadership/sermon-series" style={footerLink}>Sermon Series Library</Link>
               <Link href="/discipleship" style={footerLink}>The Discipleship Pathway</Link>
@@ -104,7 +111,7 @@ export default function Footer() {
             <a href="/terms" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none" }}>Terms of Service</a>
             <a href="/accessibility" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none" }}>Accessibility</a>
             {toggleTheme && (
-              <button onClick={toggleTheme} style={{ color: "rgba(255,255,255,0.75)", display: "flex", alignItems: "center", gap: "4px", fontSize: "12px" }} title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}>
+              <button onClick={toggleTheme} aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"} style={{ color: "rgba(255,255,255,0.75)", display: "flex", alignItems: "center", gap: "4px", fontSize: "12px" }} title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}>
                 {theme === "dark" ? <Sun size={14} /> : <Moon size={14} />}
                 {theme === "dark" ? "Light" : "Dark"}
               </button>

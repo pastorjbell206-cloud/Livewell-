@@ -64,9 +64,9 @@ export default function Parenting() {
     <div style={{ background: "var(--paper)" }}>
       <SEOMeta
         title="Christian Parenting Help | LiveWell by James Bell"
-        description="Raising kids who think, question, and believe. Christian parenting articles on faith formation, doubt, technology, and loving your children through every season."
+        description="Raising kids who think, question, and believe. Christian parenting on faith formation, doubt, and technology, for every season."
         keywords="Christian parenting, raising kids in faith, how to talk to kids about God, faith and teenagers, parenting resources, Christian family"
-        url="https://livewellbyjamesbell.co/parenting"
+        url="https://www.livewellbyjamesbell.co/parenting"
         type="webpage"
       />
 
@@ -164,6 +164,9 @@ export default function Parenting() {
               Browse All Parenting Articles
             </button>
           </Link>
+          <div style={{ marginTop: "20px" }}>
+            <Link href="/life/raising-children-in-grace" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none" }}>Or read the deep guide: Raising Children in Grace</Link>
+          </div>
         </div>
       </section>
 

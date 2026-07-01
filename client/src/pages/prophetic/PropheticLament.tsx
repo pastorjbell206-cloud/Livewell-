@@ -39,7 +39,7 @@ export default function PropheticLament() {
 
   return (
     <Layout>
-      <SEOMeta title="The Lament and the Hope — Prayers for a Broken World" description="The prophets indict, then they lament, then they promise. Words to grieve injustice, to confess the church's own failure, and to hope in the world God will set right." url="https://www.livewellbyjamesbell.co/lament" />
+      <SEOMeta title="The Lament and the Hope — Prayers for a Broken World" description="The prophets indict, then lament, then promise. Words to grieve injustice, confess the church's own failure, and hope in the world God will set right." url="https://www.livewellbyjamesbell.co/lament" />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>

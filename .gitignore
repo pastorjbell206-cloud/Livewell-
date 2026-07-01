@@ -135,3 +135,6 @@ client/public/downloads/
 
 # Generated at build time by scripts/build-og-images.mjs (pnpm run og)
 client/public/og/
+
+# Local agent worktrees (never commit)
+.claude/worktrees/

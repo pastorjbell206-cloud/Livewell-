@@ -43,7 +43,7 @@ export default function DecisionLog() {
 
   return (
     <Layout>
-      <SEOMeta title="The Benevolence and Decision Log — A Private Record" description="A private record of benevolence requests and board decisions: what was asked, what was decided, and why. Everything stays on the device. Nothing is sent anywhere." url="https://www.livewellbyjamesbell.co/leadership/decision-log" />
+      <SEOMeta title="The Benevolence and Decision Log — A Private Record" description="A private record of benevolence requests and board decisions: what was asked, what was decided, and why. Everything stays on the device." url="https://www.livewellbyjamesbell.co/leadership/decision-log" />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
@@ -57,13 +57,13 @@ export default function DecisionLog() {
         <div style={{ ...wrap, maxWidth: "820px" }}>
           <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderTop: "2px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)", marginBottom: "var(--s-4)" }}>
             <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginBottom: "8px" }}>
-              <input value={draft.title} onChange={(e) => setDraft({ ...draft, title: e.target.value })} placeholder="What is it (a family, a request, a motion)" style={{ flex: "2 1 240px", fontFamily: "var(--B)", fontSize: "15px", padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)" }} />
-              <select value={draft.kind} onChange={(e) => setDraft({ ...draft, kind: e.target.value })} style={{ flex: "1 1 140px", fontFamily: "var(--U)", fontSize: "14px", padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)" }}>
+              <input value={draft.title} onChange={(e) => setDraft({ ...draft, title: e.target.value })} aria-label="What is it (a family, a request, a motion)" placeholder="What is it (a family, a request, a motion)" style={{ flex: "2 1 240px", fontFamily: "var(--B)", fontSize: "15px", padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)" }} />
+              <select value={draft.kind} onChange={(e) => setDraft({ ...draft, kind: e.target.value })} aria-label="Kind of decision" style={{ flex: "1 1 140px", fontFamily: "var(--U)", fontSize: "14px", padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)" }}>
                 {KINDS.map((k) => <option key={k}>{k}</option>)}
               </select>
-              <input value={draft.amount} onChange={(e) => setDraft({ ...draft, amount: e.target.value })} placeholder="Amount (if any)" style={{ flex: "1 1 120px", fontFamily: "var(--B)", fontSize: "15px", padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)" }} />
+              <input value={draft.amount} onChange={(e) => setDraft({ ...draft, amount: e.target.value })} aria-label="Amount (if any)" placeholder="Amount (if any)" style={{ flex: "1 1 120px", fontFamily: "var(--B)", fontSize: "15px", padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)" }} />
             </div>
-            <textarea value={draft.note} onChange={(e) => setDraft({ ...draft, note: e.target.value })} rows={2} placeholder="The reasoning, the conditions, the follow-up" style={{ width: "100%", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)", resize: "vertical", marginBottom: "8px" }} />
+            <textarea value={draft.note} onChange={(e) => setDraft({ ...draft, note: e.target.value })} rows={2} aria-label="The reasoning, the conditions, the follow-up" placeholder="The reasoning, the conditions, the follow-up" style={{ width: "100%", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)", resize: "vertical", marginBottom: "8px" }} />
             <button onClick={add} style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "10px 18px", background: "var(--mustard)", color: "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: "pointer" }}><Plus size={15} /> Log it</button>
           </div>
 

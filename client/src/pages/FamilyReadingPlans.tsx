@@ -27,7 +27,7 @@ export default function FamilyReadingPlans() {
     <Layout>
       <SEOMeta
         title="Family Bible Reading Plans"
-        description="Read the Bible together as a family — the life of Jesus, the Old Testament story for kids, the Psalms, and a starter plan for new believers. A passage and a prompt for each day."
+        description="Read the Bible together as a family: the life of Jesus, the Old Testament for kids, the Psalms, and a starter plan. A passage and a prompt for each day."
         url="https://www.livewellbyjamesbell.co/family/reading-plans"
       />
 

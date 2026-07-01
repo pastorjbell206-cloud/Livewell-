@@ -54,7 +54,7 @@ export default function ConsiderTheBirds() {
     <Layout>
       <SEOMeta
         title="Consider the Birds: What the Bible Says About Anxiety — by James Bell"
-        description="What the Bible actually says about anxiety — the Greek word Jesus used for worry, and the peace he offers instead. A pastor's honest look at three in the morning. Available now as an ebook."
+        description="What the Bible actually says about anxiety: the Greek word Jesus used for worry, and the peace he offers instead. An honest look, now an ebook."
         image={`${SITE_URL}${COVER}`}
         url={`${SITE_URL}/${SLUG}`}
         type="book"
