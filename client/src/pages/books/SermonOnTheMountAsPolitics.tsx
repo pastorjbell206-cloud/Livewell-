@@ -64,7 +64,7 @@ export default function SermonOnTheMountAsPolitics() {
             <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontStyle: "italic", color: "rgba(245,240,230,.82)", margin: "0 0 22px", maxWidth: "42ch" }}>
               {SUBTITLE}
             </p>
-            <BuyEbookButton slug={SLUG} />
+            <BuyEbookButton slug={SLUG} title={TITLE} />
             <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: "rgba(245,240,230,.55)", marginTop: "12px" }}>
               PDF · instant download · secure checkout by Stripe
             </p>
@@ -98,7 +98,7 @@ export default function SermonOnTheMountAsPolitics() {
             The meek will inherit the earth. Not the strong. We were never meant to keep this sermon on the page.
           </p>
           <div style={{ display: "inline-flex" }}>
-            <BuyEbookButton slug={SLUG} />
+            <BuyEbookButton slug={SLUG} title={TITLE} />
           </div>
         </div>
       </section>
