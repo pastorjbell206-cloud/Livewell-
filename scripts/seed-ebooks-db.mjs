@@ -56,6 +56,10 @@ const EBOOKS = [
   { slug: "the-god-who-is-not-nice", title: "The God Who Is Not Nice", description: "Recovering the weight of God in a sentimental age. Nice is not holy, and a God with no weight cannot save.", cover: "/books/the-god-who-is-not-nice.svg", url: "/the-god-who-is-not-nice" },
   { slug: "faith-after-deconstruction", title: "Faith After Deconstruction", description: "How to lose the faith you were given and find the one that holds. What should fall, what must not, and the way through.", cover: "/books/faith-after-deconstruction.svg", url: "/faith-after-deconstruction" },
   { slug: "ordinary-holiness", title: "Ordinary Holiness", description: "Finding God in the life you actually have. Work, the body, the table, the neighbor, and the faithfulness no one applauds.", cover: "/books/ordinary-holiness.svg", url: "/ordinary-holiness" },
+  { slug: "the-scandal-of-the-cross", title: "The Scandal of the Cross", description: "Why the death of God is the center of everything. The cross recovered from jewelry, and the atonement held together instead of traded for a slogan.", cover: "/books/the-scandal-of-the-cross.svg", url: "/the-scandal-of-the-cross" },
+  { slug: "heaven-is-not-your-reward", title: "Heaven Is Not Your Reward", description: "The resurrection hope the church traded for an escape. A new heaven and a new earth, not clouds and harps, and what that changes.", cover: "/books/heaven-is-not-your-reward.svg", url: "/heaven-is-not-your-reward" },
+  { slug: "prayer-in-the-dark", title: "Prayer in the Dark", description: "Talking to God when you are not sure anyone is listening. For prayers that hit the ceiling, without the formulas or the guilt.", cover: "/books/prayer-in-the-dark.svg", url: "/prayer-in-the-dark" },
+  { slug: "the-body-you-left", title: "The Body You Left", description: "A case for the church in an age that walked away. An honest reckoning with why people left, and why the body of Christ still matters.", cover: "/books/the-body-you-left.svg", url: "/the-body-you-left" },
 ];
 
 const url = new URL(dbUrl);

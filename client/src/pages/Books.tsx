@@ -426,6 +426,102 @@ export default function Books() {
         </Link>
       </section>
 
+      {/* NEW EBOOK — The Scandal of the Cross */}
+      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/the-scandal-of-the-cross" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img src="/books/the-scandal-of-the-cross.svg" alt="The Scandal of the Cross book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
+                New Ebook · $9.99 · On the Cross
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                The Scandal of the Cross
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
+                We made the cross into jewelry. Why the death of God is the center of everything, and the deepest answer
+                to guilt, shame, suffering, and death. Read the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* NEW EBOOK — Heaven Is Not Your Reward */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/heaven-is-not-your-reward" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img src="/books/heaven-is-not-your-reward.svg" alt="Heaven Is Not Your Reward book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
+                New Ebook · $9.99 · On the Last Things
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                Heaven Is Not Your Reward
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", margin: 0 }}>
+                The resurrection hope the church traded for an escape. A new heaven and a new earth, not clouds and
+                harps, and what that changes. Read the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* NEW EBOOK — Prayer in the Dark */}
+      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/prayer-in-the-dark" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img src="/books/prayer-in-the-dark.svg" alt="Prayer in the Dark book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
+                New Ebook · $9.99 · On Prayer
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                Prayer in the Dark
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
+                Talking to God when you are not sure anyone is listening. For prayers that hit the ceiling, without the
+                formulas or the guilt. Read the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* NEW EBOOK — The Body You Left */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/the-body-you-left" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img src="/books/the-body-you-left.svg" alt="The Body You Left book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
+                New Ebook · $9.99 · On the Church
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                The Body You Left
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", margin: 0 }}>
+                A case for the church in an age that walked away. An honest reckoning with why people left, and why the
+                body of Christ still matters. Read the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
       {/* NEW RELEASE — featured ebook (standalone product page) */}
       <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/books/when-god-bless-america" style={{ textDecoration: "none", color: "inherit" }}>
