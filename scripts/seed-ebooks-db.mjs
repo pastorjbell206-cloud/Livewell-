@@ -52,6 +52,10 @@ const EBOOKS = [
   { slug: "consider-the-birds", title: "Consider the Birds", description: "What the Bible says about anxiety, and the peace Christ gives instead.", cover: "/books/consider-the-birds.jpg", url: "/consider-the-birds" },
   { slug: "where-your-treasure-is", title: "Where Your Treasure Is", description: "What the Bible says about money, and the heart it means to free.", cover: "/books/where-your-treasure-is.jpg", url: "/where-your-treasure-is" },
   { slug: "when-god-bless-america", title: "When God Bless America Replaces Thy Kingdom Come", description: "How patriotism became our practical savior. Civil religion is idolatry with a flag for a shroud.", cover: "/books/when-god-bless-america.jpg", url: "/books/when-god-bless-america" },
+  { slug: "born-again-from-atheism", title: "Born Again From Atheism", description: "How an unbeliever came to faith as a grown man, and what he found there. The doubts taken at full strength, and the God he did not want to meet.", cover: "/books/born-again-from-atheism.svg", url: "/born-again-from-atheism" },
+  { slug: "the-god-who-is-not-nice", title: "The God Who Is Not Nice", description: "Recovering the weight of God in a sentimental age. Nice is not holy, and a God with no weight cannot save.", cover: "/books/the-god-who-is-not-nice.svg", url: "/the-god-who-is-not-nice" },
+  { slug: "faith-after-deconstruction", title: "Faith After Deconstruction", description: "How to lose the faith you were given and find the one that holds. What should fall, what must not, and the way through.", cover: "/books/faith-after-deconstruction.svg", url: "/faith-after-deconstruction" },
+  { slug: "ordinary-holiness", title: "Ordinary Holiness", description: "Finding God in the life you actually have. Work, the body, the table, the neighbor, and the faithfulness no one applauds.", cover: "/books/ordinary-holiness.svg", url: "/ordinary-holiness" },
 ];
 
 const url = new URL(dbUrl);
