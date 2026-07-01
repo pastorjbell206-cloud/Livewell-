@@ -23,6 +23,7 @@ import { CitationCopy } from "@/components/CitationCopy";
 import { AudienceShare } from "@/components/AudienceShare";
 import { AudienceLabel } from "@/components/AudienceLabel";
 import { TrackChip } from "@/components/TrackChip";
+import { KeepReadingBook } from "@/components/KeepReadingBook";
 import { GeneratedHero } from "@/components/GeneratedHero";
 import { trpc } from "@/lib/trpc";
 import { pillarForPost } from "@/lib/taxonomy";
@@ -726,6 +727,9 @@ export default function ArticleDetail() {
             <AudienceShare title={post.title} url={canonical} />
           </div>
         </section>
+
+        {/* KEEP READING — the book that carries this essay's argument to full length */}
+        <KeepReadingBook post={post} />
 
         {/* NEWSLETTER (single CTA — no fake form) */}
         <section
