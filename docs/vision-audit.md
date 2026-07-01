@@ -234,3 +234,55 @@ channel (PCN) from a leak into an engine. Everything else compounds off those.
 
 *Prepared as a strategic companion to `docs/WORLD-CLASS-BRIEF.md` and the
 Editorial Constitution. This audit recommends direction; it changes no code.*
+
+---
+
+## Appendix: execution-ready spec for the NOW block
+
+Written so implementation is a single reviewable draft PR with no decisions left
+mid-build. Every item below preserves existing copy unless a line is called out.
+Nothing here is executed yet; it waits on the taxonomy go-ahead (five vs six).
+
+### A. One taxonomy across every surface
+- **Decision required:** five pillars (already on nav/footer/home) or six ("two
+  movements", only on `/pillars`). Recommended: five (one page changes, not the
+  whole site).
+- **Files if five:** `client/src/pages/Pillars.tsx` — render the five from
+  `client/src/lib/taxonomy.ts` instead of the six-pillar `PILLARS_BY_MOVEMENT`;
+  keep the page's prose, change only the set and the one headline that states a
+  count. `client/src/components/MinimalNav.tsx` + `Footer.tsx` already use five —
+  verify names/order match exactly.
+- **Verify:** grep the repo for "six pillars"/"two movements" and confirm zero
+  reader-facing hits remain; typecheck + build.
+
+### B. One "Start here"
+- **Files:** `client/src/App.tsx` (routing), `Home.tsx` (the entry CTAs).
+- **Change:** make `/start` the canonical router. Redirect the legacy
+  `/start-here` to `/start` (add to `vercel.json` redirects). Present `/help`
+  (felt-needs) and `/diagnostic` (health check) as labeled branches *inside*
+  `/start`, not rival top-level entrances. No copy rewrite — reuse existing
+  section text.
+- **Verify:** every "begin here" path resolves to `/start` or a labeled branch;
+  no dead ends.
+
+### C. Resolve the orphans
+- **Reader-valuable, link into footer/nav:** `/framework`, `/library`
+  (label it "The Commonplace" only if you approve a rename; otherwise leave).
+- **Campaign/internal, leave unlinked on purpose (document why):** `/roadmap`,
+  `/book-bundles`, `/article-collections`, the `/landing/*` set (these are
+  paid/SEO entrances, intentionally not in nav).
+- **Files:** `Footer.tsx` (add the two reader links); a one-line comment in
+  `App.tsx` marking the intentional-orphan routes so they aren't "fixed" later.
+
+### D. Detail pages get a next step (LATER, but cheap and high-signal)
+- **Files:** `ArticleDetail.tsx`, `studyguides/StudyGuide.tsx`,
+  `books/BookReader.tsx`, `leadership/LeadershipArticle.tsx`, the `/tools/*`
+  results views.
+- **Change:** add a small shared "Read next / Back to {hub}" block at the foot of
+  each. New element, no existing copy touched. One reusable component.
+
+### Guardrails honored
+- No homepage or headline wording changes (per direction: keep the wording).
+- No taxonomy reconciliation done silently — the five-vs-six choice is surfaced
+  and waits on approval.
+- Ships as a draft PR; verified on the Vercel preview before any merge.
