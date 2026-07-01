@@ -7,6 +7,11 @@
  */
 export interface PillarAssignment { pillar: number; subThemes: string[]; confidence: "high" | "med" | "LOW"; }
 export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
+  "the-atheist-in-the-pulpit": {
+    "pillar": 4,
+    "subThemes": [],
+    "confidence": "high"
+  },
   "when-god-bless-america-replaces-thy-kingdom-come": {
     "pillar": 1,
     "subThemes": [],
