@@ -1277,20 +1277,27 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         // fetch per call, so it never times out.
         const items: { slug: string; body: string; readingTimeMinutes: number }[] =
           Array.isArray(input?.items) ? input.items : [];
+        // Guard: never publish a body that still carries unresolved citation
+        // placeholders ([cite ...]). Shipping them would put fabricated-looking
+        // sources live — a violation of the never-fabricate rule. Skip those
+        // items and report them back so they can be resolved before publishing.
+        const hasCite = (b: string) => /\[cite/i.test(b || "");
+        const blocked: string[] = items.filter((i) => hasCite(i.body)).map((i) => i.slug);
+        const safeItems = items.filter((i) => !hasCite(i.body));
         let matched = 0, updated = 0;
         const missing: string[] = [];
         let dbError: string | null = null;
-        if (items.length) {
+        if (safeItems.length) {
           try {
             await withConn(async (c) => {
-              const slugs = items.map((i) => i.slug);
+              const slugs = safeItems.map((i) => i.slug);
               const placeholders = slugs.map(() => "?").join(",");
               const [existRows]: any = await c.execute(
                 `SELECT slug FROM posts WHERE slug IN (${placeholders})`, slugs
               );
               const existing = new Set(existRows.map((r: any) => r.slug));
-              const toUpdate = items.filter((it) => existing.has(it.slug));
-              for (const it of items) if (!existing.has(it.slug)) missing.push(it.slug);
+              const toUpdate = safeItems.filter((it) => existing.has(it.slug));
+              for (const it of safeItems) if (!existing.has(it.slug)) missing.push(it.slug);
               matched = toUpdate.length;
               if (!dryRun && toUpdate.length) {
                 // One UPDATE per article keeps each statement tiny and avoids
@@ -1311,7 +1318,7 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
             console.error("publishFullBodies DB error:", dbError, "| firstSlug:", items[0]?.slug);
           }
         }
-        return trpcOk(res, { matched, updated, missing, dryRun, error: dbError });
+        return trpcOk(res, { matched, updated, missing, blocked, dryRun, error: dbError });
       }
       case "posts.navIndex": {
         // Slim per-post feed for the primary nav: just what's needed to know

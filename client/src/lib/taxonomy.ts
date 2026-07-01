@@ -258,12 +258,12 @@ export const MOVEMENTS: Record<Movement, { title: string; subtitle: string }> = 
 };
 
 export const PILLARS_V2: Pillar[] = [
-  { id: 1, slug: "capture-by-the-right", name: "The Capture by the Right", short: "The Right", movement: "diagnosis", blurb: "Christian nationalism, the gospel of patriotism, and restoration politics." },
-  { id: 2, slug: "capture-by-the-left", name: "The Capture by the Left", short: "The Left", movement: "diagnosis", blurb: "Progressive orthodoxy, compassion become coercion, and the sins of omission." },
-  { id: 3, slug: "reading-scripture-past-our-politics", name: "Reading Scripture Past Our Politics", short: "Scripture & Politics", movement: "diagnosis", blurb: "How tradition, translation, and tribe quietly edit the text." },
-  { id: 4, slug: "after-christendom-pillar", name: "After Christendom", short: "After Christendom", movement: "diagnosis", blurb: "The dissolution of the old arrangement — and what comes after it." },
-  { id: 5, slug: "the-pastoral-angle", name: "The Pastoral Angle", short: "Pastoral", movement: "diagnosis", blurb: "How an ordinary believer or pastor lives inside all of this." },
-  { id: 6, slug: "living-well-after-christendom", name: "Living Well After Christendom", short: "Living Well", movement: "formation", blurb: "Faithful life now that cultural Christianity is gone and the old scaffolding no longer forms us by default." },
+  { id: 1, slug: "capture-by-the-right", name: "The Capture by the Right", short: "The Right", movement: "diagnosis", blurb: "The faith conscripted into a flag — Christian nationalism, the gospel of patriotism, and the promise that the right party will do what only the cross can. We let it happen." },
+  { id: 2, slug: "capture-by-the-left", name: "The Capture by the Left", short: "The Left", movement: "diagnosis", blurb: "The faith dissolved into a cause — progressive orthodoxy, compassion hardened into coercion, and the sins we stopped naming because they flattered our side." },
+  { id: 3, slug: "reading-scripture-past-our-politics", name: "Reading Scripture Past Our Politics", short: "Scripture & Politics", movement: "diagnosis", blurb: "Tribe, translation, and tradition edit the text before we ever reach it. How to hear Scripture again on its own terms, not our politics'." },
+  { id: 4, slug: "after-christendom-pillar", name: "After Christendom", short: "After Christendom", movement: "diagnosis", blurb: "The old arrangement is over. Cultural Christianity is dying, and this asks the honest question underneath the panic — what comes after, and whether it is loss or freedom." },
+  { id: 5, slug: "the-pastoral-angle", name: "The Pastoral Angle", short: "Pastoral", movement: "diagnosis", blurb: "How an ordinary believer, and an ordinary pastor, actually lives inside all of this — the weight of it on a Tuesday, not from a stage." },
+  { id: 6, slug: "living-well-after-christendom", name: "Living Well After Christendom", short: "Living Well", movement: "formation", blurb: "Faithful life now that the old scaffolding is gone — prayer, marriage, work, and rest, built on the kingdom of God instead of the culture that used to carry us." },
 ];
 
 export const SUBTHEMES = [

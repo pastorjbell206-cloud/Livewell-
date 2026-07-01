@@ -83,6 +83,7 @@ const ResourcesForPastors = lazy(() => import("./pages/ResourcesForPastors"));
 const ReadingPaths = lazy(() => import("./pages/ReadingPaths"));
 const EmailSignup = lazy(() => import("./pages/EmailSignup"));
 const Pillars = lazy(() => import("./pages/Pillars"));
+const LivingWell = lazy(() => import("./pages/LivingWell"));
 const ForPastors = lazy(() => import("./pages/ForPastors"));
 const ForLeaders = lazy(() => import("./pages/ForLeaders"));
 const Membership = lazy(() => import("./pages/Membership"));
@@ -367,6 +368,7 @@ function Router() {
         <Route path="/start-here" component={StartHereDiagnostic} />
         <Route path="/for-families" component={ForFamiliesRedirect} />
         <Route path="/pillars" component={Pillars} />
+        <Route path="/living-well" component={LivingWell} />
         <Route path="/for-pastors" component={ForPastors} />
         <Route path="/for-leaders" component={ForLeaders} />
         <Route path="/membership" component={Membership} />
