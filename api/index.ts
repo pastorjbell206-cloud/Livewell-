@@ -443,6 +443,100 @@ async function seedEbooks(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+// Resolve the Stripe price for an ebook: an explicit STRIPE_PRICE_<SLUG> env var
+// wins (that is how the earliest ebooks were configured), otherwise fall back to
+// a price id stored in site_settings under `stripe_price_<slug>` by the admin
+// create-stripe-prices endpoint. Returns null if neither exists (not on sale).
+async function resolveEbookPriceId(slug: string, priceEnv: string): Promise<string | null> {
+  const fromEnv = process.env[priceEnv]?.trim();
+  if (fromEnv) return fromEnv;
+  try {
+    return await withConn(async (c) => {
+      const [rows]: any = await c.execute(
+        "SELECT settingValue FROM site_settings WHERE settingKey = ?",
+        [`stripe_price_${slug}`],
+      );
+      const v = rows?.[0]?.settingValue?.trim();
+      return v || null;
+    });
+  } catch {
+    return null;
+  }
+}
+
+// Admin-triggered: create (idempotently) a Stripe product + a one-time $9.99 USD
+// price for every ebook that is not already configured, and store the price id
+// in site_settings so checkout can use it without any Vercel env editing. Uses
+// the server's own STRIPE_SECRET_KEY (already set in production). Books that
+// already have a STRIPE_PRICE_<SLUG> env var are left untouched.
+async function createStripePrices(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  const stripe = getStripe();
+  if (!stripe) return json(res, 503, { ok: false, error: "Stripe is not configured on the server." });
+  try {
+    await withConn(async (c) => {
+      await c.execute(`CREATE TABLE IF NOT EXISTS site_settings (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        settingKey VARCHAR(191) NOT NULL UNIQUE,
+        settingValue TEXT,
+        updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`);
+    });
+    const results: Array<{ slug: string; status: string; priceId: string | null }> = [];
+    for (const [slug, book] of Object.entries(EBOOKS)) {
+      // Configured via env var already: do not touch (these are already selling).
+      if (process.env[book.priceEnv]?.trim()) {
+        results.push({ slug, status: "env", priceId: null });
+        continue;
+      }
+      // Already created and stored: reuse.
+      const existing = await withConn(async (c) => {
+        const [rows]: any = await c.execute(
+          "SELECT settingValue FROM site_settings WHERE settingKey = ?",
+          [`stripe_price_${slug}`],
+        );
+        return rows?.[0]?.settingValue?.trim() || null;
+      });
+      if (existing) {
+        results.push({ slug, status: "exists", priceId: existing });
+        continue;
+      }
+      // Find or create the product (matched by metadata.slug so re-runs reuse it).
+      let product: Stripe.Product | null = null;
+      try {
+        const found = await stripe.products.search({ query: `metadata['slug']:'${slug}'` });
+        product = found.data[0] || null;
+      } catch {
+        /* search index may lag on new accounts; fall through to create */
+      }
+      if (!product) {
+        product = await stripe.products.create({
+          name: `${book.title} (ebook)`,
+          metadata: { slug, series: "LiveWell", author: "James Bell" },
+        });
+      }
+      const prices = await stripe.prices.list({ product: product.id, active: true, limit: 100 });
+      let price = prices.data.find((p) => p.unit_amount === 999 && p.currency === "usd" && !p.recurring);
+      if (!price) {
+        price = await stripe.prices.create({ product: product.id, unit_amount: 999, currency: "usd" });
+      }
+      await withConn(async (c) => {
+        await c.execute(
+          "INSERT INTO site_settings (settingKey, settingValue, updatedAt) VALUES (?, ?, NOW()) ON DUPLICATE KEY UPDATE settingValue = VALUES(settingValue), updatedAt = NOW()",
+          [`stripe_price_${slug}`, price.id],
+        );
+      });
+      results.push({ slug, status: "created", priceId: price.id });
+    }
+    const created = results.filter((r) => r.status === "created").length;
+    const reused = results.filter((r) => r.status === "exists").length;
+    const envConfigured = results.filter((r) => r.status === "env").length;
+    json(res, 200, { ok: true, created, reused, envConfigured, total: results.length, results });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
 async function adminSeedContent(req: VercelRequest, res: VercelResponse) {
   if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
   try {
@@ -2621,7 +2715,7 @@ async function ebookCheckout(req: VercelRequest, res: VercelResponse) {
     const slug = String(body?.slug || "");
     const book = EBOOKS[slug];
     if (!book) return json(res, 400, { error: "Unknown book." });
-    const priceId = process.env[book.priceEnv]?.trim();
+    const priceId = await resolveEbookPriceId(slug, book.priceEnv);
     if (!priceId) return json(res, 503, { error: "This book is not on sale yet." });
     const origin = siteOrigin(req);
     const session = await stripe.checkout.sessions.create({
@@ -2684,6 +2778,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/seed-integrated-life") return seedArticleSet(req, res, integratedLifeArticles as any[]);
     if (url === "/api/admin/seed-womanhood-doubt-devotionals") return seedArticleSet(req, res, womanhoodDoubtDevotionalArticles as any[]);
     if (url === "/api/admin/seed-ebooks") return seedEbooks(req, res);
+    if (url === "/api/admin/create-stripe-prices") return createStripePrices(req, res);
     if (url === "/api/admin/fix-apostrophes") return adminFixApostrophes(req, res);
     const notifMatch = url.match(/^\/api\/admin\/notifications\/(\d+)$/);
     if (notifMatch && req.method === "DELETE") {
