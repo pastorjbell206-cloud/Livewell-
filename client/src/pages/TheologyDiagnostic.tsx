@@ -57,7 +57,7 @@ export default function TheologyDiagnostic() {
     <Layout>
       <SEOMeta
         title="Which View Am I? A Theology Diagnostic"
-        description="Answer a few plain-language questions and see which position you lean toward on a contested doctrine. A starting point for understanding yourself, never a verdict."
+        description="Answer a few plain questions and see which position you lean toward on a contested doctrine. A starting point for understanding yourself, never a verdict."
         url="https://www.livewellbyjamesbell.co/theology/which-view"
       />
 

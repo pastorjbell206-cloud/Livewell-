@@ -12,6 +12,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { TriageBadge } from "@/components/TriageBadge";
 import type { Triage } from "@/lib/theology";
+import { Prose } from "@/lib/prose";
 
 interface TriageLevel { level: Triage; label: string; headline: string; body: string; }
 interface Methodology {
@@ -24,16 +25,6 @@ interface Methodology {
 }
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
-
-function Prose({ text }: { text: string }) {
-  return (
-    <>
-      {text.split("\n\n").map((p, i) => (
-        <p key={i} style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "68ch", marginBottom: "16px" }}>{p}</p>
-      ))}
-    </>
-  );
-}
 
 function Block({ kicker, title, children, alt }: { kicker: string; title: string; children: React.ReactNode; alt?: boolean }) {
   return (

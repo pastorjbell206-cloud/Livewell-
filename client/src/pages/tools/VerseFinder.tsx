@@ -209,7 +209,7 @@ export default function VerseFinder() {
         }}
       />
 
-      <section style={{ background: "var(--forest)", color: "var(--ivory)", padding: "80px 32px 60px", textAlign: "center" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--ivory)", padding: "80px 32px 60px", textAlign: "center" }}>
         <div className="wrap" style={{ maxWidth: "700px" }}>
           <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.2em", color: "var(--gold)", fontFamily: "var(--U)", marginBottom: "16px" }}>
             FREE TOOL
@@ -283,6 +283,7 @@ export default function VerseFinder() {
             <Search size={16} style={{ position: "absolute", left: "14px", top: "50%", transform: "translateY(-50%)", color: "var(--ink3)", pointerEvents: "none" }} />
             <input
               type="text"
+              aria-label="Filter topics"
               placeholder="Filter topics..."
               value={searchFilter}
               onChange={(e) => setSearchFilter(e.target.value)}

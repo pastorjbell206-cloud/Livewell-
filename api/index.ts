@@ -4,8 +4,14 @@ import type { VercelRequest, VercelResponse } from "@vercel/node";
 import mysql from "mysql2/promise";
 import crypto from "node:crypto";
 import postChristianArticles from "./post-christian-articles.json" with { type: "json" };
+import integratedLifeArticles from "./integrated-life-articles.json" with { type: "json" };
 import bcrypt from "bcryptjs";
 import superjson from "superjson";
+// Static essay library (143 long-form essays). Served behind the live DB so the
+// content is on the site without a per-essay DB write: DB rows always win on a
+// slug collision; static fills the rest; if the DB is unreachable the site still
+// serves the library. Regenerate with `node scripts/build-static-library.mjs`.
+import STATIC_LIBRARY from "./static-library.generated.js";
 import { readFileSync } from "node:fs";
 import Stripe from "stripe";
 
@@ -67,9 +73,21 @@ async function withConn<T>(fn: (c: mysql.PoolConnection) => Promise<T>): Promise
   }
 }
 
+function constantTimeEqual(a: string, b: string): boolean {
+  const ab = Buffer.from(a, "utf8");
+  const bb = Buffer.from(b, "utf8");
+  if (ab.length !== bb.length) return false;
+  return crypto.timingSafeEqual(ab, bb);
+}
+
 function authed(req: VercelRequest): boolean {
-  const key = (req.query.key as string) || (req.headers["x-seed-key"] as string) || "";
-  return Boolean(process.env.JWT_SECRET) && key === process.env.JWT_SECRET;
+  // Read the key ONLY from the x-seed-key header so it never leaks into URLs/logs.
+  const key = (req.headers["x-seed-key"] as string) || "";
+  if (!key) return false;
+  // Prefer a dedicated SEED_KEY when set; otherwise fall back to JWT_SECRET.
+  const expected = process.env.SEED_KEY || process.env.JWT_SECRET || "";
+  if (!expected) return false;
+  return constantTimeEqual(key, expected);
 }
 
 function getAllowedOrigin(req: VercelRequest): string {
@@ -81,17 +99,23 @@ function getAllowedOrigin(req: VercelRequest): string {
   if (process.env.NODE_ENV === "development") {
     allowed.push("http://localhost:3000", "http://localhost:5173");
   }
-  return allowed.includes(origin) ? origin : allowed[0];
+  // Do NOT fall back to the production origin for unknown origins.
+  return allowed.includes(origin) ? origin : "";
 }
 
-function corsHeaders(req: VercelRequest) {
-  return {
-    "Access-Control-Allow-Origin": getAllowedOrigin(req),
+function corsHeaders(req: VercelRequest): Record<string, string> {
+  const origin = getAllowedOrigin(req);
+  const headers: Record<string, string> = {
     "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type,x-seed-key",
-    "Access-Control-Allow-Credentials": "true",
     "Vary": "Origin",
   };
+  // Only set Allow-Origin (and credentials) when the origin is on the allow-list.
+  if (origin) {
+    headers["Access-Control-Allow-Origin"] = origin;
+    headers["Access-Control-Allow-Credentials"] = "true";
+  }
+  return headers;
 }
 
 function applyCors(req: VercelRequest, res: VercelResponse) {
@@ -131,14 +155,14 @@ async function health(_req: VercelRequest, res: VercelResponse) {
       out.tableCount = Array.isArray(tables) ? tables.length : 0;
     } catch (e: any) {
       out.dbReachable = false;
-      out.dbError = String(e?.message || e).slice(0, 400);
+      out.dbError = "db unavailable";
     }
   }
   json(res, 200, out);
 }
 
 // ---------------------------------------------------------------------------
-// Read-only schema inventory. Requires ?key=<JWT_SECRET> or x-seed-key header.
+// Read-only schema inventory. Requires the x-seed-key header (SEED_KEY or JWT_SECRET).
 // Performs only SHOW / SELECT COUNT / DESCRIBE / SELECT ... LIMIT 1 queries.
 // No writes. Used by the content-migration project to decide whether the live
 // DB uses the Drizzle `posts` table or the flat `articles` table.
@@ -301,6 +325,30 @@ async function adminSeedArticles(req: VercelRequest, res: VercelResponse) {
       }
       const [rows] = await c.query("SELECT COUNT(*) as n FROM articles");
       return { inserted, total: (rows as any)[0].n };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
+async function seedArticleSet(req: VercelRequest, res: VercelResponse, set: any[]) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  try {
+    const out = await withConn(async (c) => {
+      let inserted = 0;
+      for (const a of set) {
+        try {
+          const [r]: any = await c.execute(
+            `INSERT IGNORE INTO posts (title, slug, body, excerpt, pillar, readTime, published, createdAt, updatedAt)
+             VALUES (?, ?, ?, ?, ?, ?, true, NOW(), NOW())`,
+            [a.title, a.slug, a.body, a.excerpt, a.pillar, a.readTime]
+          );
+          if (r.affectedRows) inserted++;
+        } catch {}
+      }
+      const [rows] = await c.query("SELECT COUNT(*) as n FROM posts");
+      return { inserted, totalArticles: set.length, totalPosts: (rows as any)[0].n };
     });
     json(res, 200, { ok: true, ...out });
   } catch (e: any) {
@@ -674,7 +722,7 @@ async function sitemap(_req: VercelRequest, res: VercelResponse) {
         return rows;
       });
     } catch { /* no books table */ }
-    const urls = [
+    const urls: { loc: string; pri: string; mod?: string }[] = [
       ...staticPaths.map(p => ({ loc: base + p, pri: p === "/" ? "1.0" : "0.8" })),
       ...articles.map((a: any) => ({ loc: `${base}/writing/${a.slug}`, pri: "0.7", mod: a.updatedAt ? new Date(a.updatedAt).toISOString() : undefined })),
       ...bookSlugs.filter((b: any) => b.slug).map((b: any) => ({ loc: `${base}/books/${b.slug}`, pri: "0.6" })),
@@ -715,6 +763,46 @@ function toPostCard(row: any): any {
   };
 }
 
+// ----- Static essay library: shaping + merge helpers -----
+// Each generated record is mapped into the SAME shape the DB rows produce so the
+// frontend can't tell the difference. `full` includes the markdown body; the
+// slim variant drops it for index/listing pages.
+function staticFullCard(r: any): any {
+  return {
+    id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
+    body: r.body || null, content: r.body || null,
+    pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
+    readingTimeMinutes: r.readingTimeMinutes || readTime(null),
+    published: true, featured: false, topic: r.topic || null,
+    audience: r.audience || null, contentType: r.contentType || null,
+    subPathway: null, isSeries: false,
+    createdAt: r.createdAt, publishedAt: r.publishedAt,
+  };
+}
+function staticSlimCard(r: any): any {
+  const { body, content, ...rest } = staticFullCard(r);
+  return rest;
+}
+function byDateDesc(a: any, b: any): number {
+  const ta = new Date(a?.publishedAt || a?.createdAt || 0).getTime();
+  const tb = new Date(b?.publishedAt || b?.createdAt || 0).getTime();
+  return tb - ta;
+}
+// Append the static essays the DB doesn't already have (DB wins on slug), then
+// order the whole set newest-first so the index reads as one library.
+function mergeWithStatic(dbRows: any[], slim: boolean): any[] {
+  const have = new Set((dbRows || []).map((r) => r.slug));
+  const extra = (STATIC_LIBRARY as any[])
+    .filter((r) => !have.has(r.slug))
+    .map(slim ? staticSlimCard : staticFullCard);
+  return [...(dbRows || []), ...extra].sort(byDateDesc);
+}
+function staticBySlugOrId(id: number | string): any | null {
+  const s = String(id);
+  const rec = (STATIC_LIBRARY as any[]).find((r) => r.slug === s || String(r.id) === s);
+  return rec ? staticFullCard(rec) : null;
+}
+
 // Card shape for `posts` rows (camelCase columns) — distinct from toPostCard,
 // which maps the snake_case `articles` table. Used by posts.getFeatured.
 function toFeaturedPostCard(row: any): any {
@@ -732,71 +820,99 @@ function toFeaturedPostCard(row: any): any {
   };
 }
 
-async function trpcListPosts(): Promise<any[]> {
-  return await withConn(async (c) => {
-    const base = "id, slug, title, excerpt, pillar, readTime, published, featured, publishedAt, createdAt";
-    // Try with the two-level columns; if they don't exist yet, fall back without
-    // them so the site keeps working before the taxonomy migration is run.
-    let rows: any = null;
-    try {
-      [rows] = await c.execute(
-        `SELECT ${base}, subPathway, isSeries FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 2000`
-      );
-    } catch {
+// Slim card list for listings. Bodies are omitted (fetched per-article by
+// getBySlug) so the response stays small even with 400+ posts, then the static
+// essay library is merged in behind the DB rows.
+async function listSlimPosts(): Promise<any[]> {
+  let dbRows: any[] = [];
+  try {
+    dbRows = await withConn(async (c) => {
+      const base = "id, slug, title, excerpt, pillar, readTime, published, featured, publishedAt, createdAt";
+      // Try the two-level taxonomy columns; fall back if the migration hasn't run.
+      let rows: any = null;
       try {
         [rows] = await c.execute(
-          `SELECT ${base} FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 2000`
+          `SELECT ${base}, subPathway, isSeries FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 2000`
         );
-      } catch { rows = null; }
-    }
-    if (Array.isArray(rows) && rows.length > 0) {
-      return (rows as any[]).map((r) => ({
-        id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
-        // Listing pages render cards (title/excerpt), never the body. Sending the
-        // full body of every published post made this response ~7MB once all 421
-        // articles were filled, which hung the article lists on "loading". The
-        // body is fetched per-article by getBySlug, so the list omits it.
-        body: null, content: null,
-        pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
-        published: r.published, featured: r.featured, topic: r.topic || null,
-        subPathway: r.subPathway ?? null, isSeries: !!r.isSeries,
-        createdAt: r.createdAt || r.publishedAt, publishedAt: r.publishedAt || r.createdAt,
-      }));
-    }
-    const [arows]: any = await c.execute(
-      "SELECT id, slug, title, subtitle, excerpt, topic, pillar, source, external_url, image_url, word_count, published_at, created_at FROM articles ORDER BY published_at DESC LIMIT 500"
-    );
-    return (arows as any[]).map(toPostCard);
-  });
+      } catch {
+        try {
+          [rows] = await c.execute(
+            `SELECT ${base} FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 2000`
+          );
+        } catch { rows = null; }
+      }
+      if (Array.isArray(rows) && rows.length > 0) {
+        return (rows as any[]).map((r) => ({
+          id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
+          body: null, content: null,
+          pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
+          published: r.published, featured: r.featured, topic: r.topic || null,
+          subPathway: r.subPathway ?? null, isSeries: !!r.isSeries,
+          createdAt: r.createdAt || r.publishedAt, publishedAt: r.publishedAt || r.createdAt,
+        }));
+      }
+      const [arows]: any = await c.execute(
+        "SELECT id, slug, title, subtitle, excerpt, topic, pillar, source, external_url, image_url, word_count, published_at, created_at FROM articles ORDER BY published_at DESC LIMIT 500"
+      );
+      return (arows as any[]).map(toPostCard);
+    });
+  } catch { dbRows = []; /* no DB / unreachable: serve the static library alone */ }
+  return mergeWithStatic(dbRows, true);
+}
+
+async function trpcListPosts(): Promise<any[]> {
+  return listSlimPosts();
+}
+
+// Slim list for index/listing pages — identical shape to trpcListPosts.
+async function trpcListPostsForIndex(): Promise<any[]> {
+  return listSlimPosts();
 }
 
 async function trpcGetPost(id: number | string): Promise<any | null> {
-  return await withConn(async (c) => {
-    const isNum = /^\d+$/.test(String(id));
-    try {
+  try {
+    const dbRow = await withConn(async (c) => {
+      const isNum = /^\d+$/.test(String(id));
+      try {
+        const sql = isNum
+          ? "SELECT * FROM posts WHERE id = ? LIMIT 1"
+          : "SELECT * FROM posts WHERE slug = ? LIMIT 1";
+        const [rows]: any = await c.execute(sql, [id]);
+        if (rows[0]) {
+          const r = rows[0];
+          return {
+            id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
+            body: r.body || null, content: r.body || null,
+            pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
+            published: r.published, featured: r.featured,
+            createdAt: r.createdAt, publishedAt: r.publishedAt || r.createdAt,
+          };
+        }
+      } catch { /* posts table may not exist */ }
       const sql = isNum
-        ? "SELECT * FROM posts WHERE id = ? LIMIT 1"
-        : "SELECT * FROM posts WHERE slug = ? LIMIT 1";
+        ? "SELECT * FROM articles WHERE id = ? LIMIT 1"
+        : "SELECT * FROM articles WHERE slug = ? LIMIT 1";
       const [rows]: any = await c.execute(sql, [id]);
-      if (rows[0]) {
-        const r = rows[0];
-        return {
-          id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
-          body: r.body || null, content: r.body || null,
-          pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
-          published: r.published, featured: r.featured,
-          createdAt: r.createdAt, publishedAt: r.publishedAt || r.createdAt,
-        };
-      }
-    } catch { /* posts table may not exist */ }
-    const sql = isNum
-      ? "SELECT * FROM articles WHERE id = ? LIMIT 1"
-      : "SELECT * FROM articles WHERE slug = ? LIMIT 1";
-    const [rows]: any = await c.execute(sql, [id]);
-    if (!rows[0]) return null;
-    const row = rows[0];
-    return { ...toPostCard(row), body: row.body || null, content: row.body || null };
-  });
+      if (!rows[0]) return null;
+      const row = rows[0];
+      return { ...toPostCard(row), body: row.body || null, content: row.body || null };
+    });
+    if (dbRow) return dbRow;
+  } catch { /* no DB / unreachable: fall through to the static library */ }
+  // Not in the DB (or DB down): serve from the static essay library.
+  return staticBySlugOrId(id);
+}
+
+// Related essays from the merged (DB + static) library: same pillar first, then
+// fill with the newest others. Returns slim cards (no body).
+async function trpcGetRelated(slug: string, pillar?: string): Promise<any[]> {
+  const all = await trpcListPostsForIndex();
+  const pool = all.filter((p) => p.slug !== slug);
+  const norm = (v: any) => String(v || "").toLowerCase();
+  const same = pillar ? pool.filter((p) => norm(p.pillar) === norm(pillar)) : [];
+  const seen = new Set(same.map((p) => p.slug));
+  const fill = pool.filter((p) => !seen.has(p.slug));
+  return [...same, ...fill].slice(0, 4);
 }
 
 const FALLBACK_BOOKS = [
@@ -815,6 +931,20 @@ async function trpcListBooks(): Promise<any[]> {
     });
   } catch {
     return FALLBACK_BOOKS;
+  }
+}
+
+// Public path: only published books. DB rows use a `published` column;
+// the FALLBACK_BOOKS use a `status` string ("published" vs in-development).
+async function trpcListPublishedBooks(): Promise<any[]> {
+  try {
+    return await withConn(async (c) => {
+      const [rows]: any = await c.execute("SELECT * FROM books WHERE published = true ORDER BY sortOrder ASC, createdAt DESC");
+      if (Array.isArray(rows) && rows.length > 0) return rows;
+      return FALLBACK_BOOKS.filter((b) => b.status === "published");
+    });
+  } catch {
+    return FALLBACK_BOOKS.filter((b) => b.status === "published");
   }
 }
 
@@ -1032,9 +1162,17 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         res.setHeader("Set-Cookie", logoutCookie);
         return trpcOk(res, { ok: true });
       }
-      case "posts.listPublished":
-      case "posts.listAll": {
+      case "posts.listPublished": {
         const data = await trpcListPosts();
+        return trpcOk(res, data);
+      }
+      case "posts.listAll": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
+        const data = await trpcListPosts();
+        return trpcOk(res, data);
+      }
+      case "posts.listForIndex": {
+        const data = await trpcListPostsForIndex();
         return trpcOk(res, data);
       }
       case "posts.getById": {
@@ -1050,8 +1188,16 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         if (!row) return trpcErr(res, "NOT_FOUND", "post not found", 404);
         return trpcOk(res, row);
       }
-      case "books.listPublished":
+      case "relatedArticles.getRelated": {
+        const data = await trpcGetRelated(input?.slug ?? "", input?.pillar);
+        return trpcOk(res, data);
+      }
+      case "books.listPublished": {
+        const data = await trpcListPublishedBooks();
+        return trpcOk(res, data);
+      }
       case "books.listAll": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
         const data = await trpcListBooks();
         return trpcOk(res, data);
       }
@@ -1520,6 +1666,7 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         return trpcOk(res, { ok: true });
       }
       case "notifications.listAll": {
+        if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
         return await withConn(async (c) => {
           const [rows]: any = await c.execute("SELECT * FROM notifications ORDER BY createdAt DESC LIMIT 50");
           return trpcOk(res, rows);
@@ -1903,8 +2050,13 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
       return { result: { data: superjson.serialize({ ok: true }) } };
     }
     case "posts.listPublished":
-    case "posts.listAll":
       return { result: { data: superjson.serialize(await trpcListPosts()) } };
+    case "posts.listAll": {
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
+      return { result: { data: superjson.serialize(await trpcListPosts()) } };
+    }
+    case "posts.listForIndex":
+      return { result: { data: superjson.serialize(await trpcListPostsForIndex()) } };
     case "posts.getById": {
       const row = await trpcGetPost(input?.id ?? input);
       if (!row) return { error: { message: "post not found", code: -32603, data: { code: "NOT_FOUND", httpStatus: 404 } } };
@@ -1916,8 +2068,12 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
       if (!row) return { error: { message: "post not found", code: -32603, data: { code: "NOT_FOUND", httpStatus: 404 } } };
       return { result: { data: superjson.serialize(row) } };
     }
+    case "relatedArticles.getRelated":
+      return { result: { data: superjson.serialize(await trpcGetRelated(input?.slug ?? "", input?.pillar)) } };
     case "books.listPublished":
+      return { result: { data: superjson.serialize(await trpcListPublishedBooks()) } };
     case "books.listAll":
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
       return { result: { data: superjson.serialize(await trpcListBooks()) } };
     case "books.getById": {
       const all = await trpcListBooks();
@@ -1926,20 +2082,22 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
       return { result: { data: superjson.serialize(row) } };
     }
     case "resources.listPublished":
-    case "resources.listAll":
+    case "resources.listAll": {
+      // listPublished is public; listAll (admin) returns unpublished rows too.
+      const wantAll = proc === "resources.listAll";
+      if (wantAll && !authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
       try {
         return await withConn(async (c) => {
-          // listPublished must only return published resources; listAll (admin)
-          // returns everything. Both are bounded so the payload can't run away.
-          const onlyPublished = proc === "resources.listPublished";
+          // Both are bounded so the payload can't run away.
           const [rows]: any = await c.execute(
-            onlyPublished
-              ? "SELECT * FROM resources WHERE published = true ORDER BY createdAt DESC LIMIT 1000"
-              : "SELECT * FROM resources ORDER BY createdAt DESC LIMIT 1000"
+            wantAll
+              ? "SELECT * FROM resources ORDER BY createdAt DESC LIMIT 1000"
+              : "SELECT * FROM resources WHERE published = true ORDER BY createdAt DESC LIMIT 1000"
           );
           return { result: { data: superjson.serialize(rows) } };
         });
       } catch { return { result: { data: superjson.serialize([]) } }; }
+    }
     case "settings.get": {
       const key = input?.key ?? input;
       try {
@@ -1973,6 +2131,7 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
     case "quiz.getRecommendations":
       return { result: { data: superjson.serialize(await quizGetRecommendations(input)) } };
     case "notifications.listAll":
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
       try {
         return await withConn(async (c) => {
           const [rows]: any = await c.execute("SELECT * FROM notifications ORDER BY createdAt DESC LIMIT 50");
@@ -1987,6 +2146,8 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
         });
       } catch { return { result: { data: superjson.serialize([]) } }; }
     case "community.testimonials.listAll":
+      // Moderation queue: includes pending/unapproved rows + submitter PII. Admin-only.
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
       try {
         return await withConn(async (c) => {
           const [pending]: any = await c.execute("SELECT * FROM testimonials WHERE approved = false ORDER BY createdAt DESC");
@@ -2013,6 +2174,8 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
         return { result: { data: superjson.serialize({ ok: true }) } };
       } catch (e: any) { return { error: { message: String(e?.message), code: -32603, data: { code: "INTERNAL_SERVER_ERROR", httpStatus: 500 } } }; }
     case "community.comments.listAll":
+      // Moderation queue: includes pending/unapproved rows + submitter PII. Admin-only.
+      if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
       try {
         return await withConn(async (c) => {
           const [pending]: any = await c.execute("SELECT * FROM comments WHERE approved = false ORDER BY createdAt DESC");
@@ -2112,7 +2275,8 @@ async function organizeArticles(req: VercelRequest, res: VercelResponse) {
   }
 }
 
-async function adminStatus(_req: VercelRequest, res: VercelResponse) {
+async function adminStatus(req: VercelRequest, res: VercelResponse) {
+  if (!authedSession(req)) return json(res, 401, { error: "unauthorized" });
   json(res, 200, {
     ok: true,
     configured: {
@@ -2277,6 +2441,42 @@ const EBOOKS: Record<string, EbookConfig> = {
     file: new URL("./_ebooks/covenant.pdf", import.meta.url),
     filename: "Covenant.pdf",
   },
+  "why-not-what": {
+    title: "Why Not What",
+    priceEnv: "STRIPE_PRICE_WHY_NOT_WHAT",
+    file: new URL("./_ebooks/why-not-what.pdf", import.meta.url),
+    filename: "Why-Not-What.pdf",
+  },
+  "sermon-on-the-mount-as-politics": {
+    title: "The Sermon on the Mount as Politics",
+    priceEnv: "STRIPE_PRICE_SERMON_ON_THE_MOUNT_AS_POLITICS",
+    file: new URL("./_ebooks/sermon-on-the-mount-as-politics.pdf", import.meta.url),
+    filename: "The-Sermon-on-the-Mount-as-Politics.pdf",
+  },
+  "prophetic-justice-101": {
+    title: "Prophetic Justice 101",
+    priceEnv: "STRIPE_PRICE_PROPHETIC_JUSTICE_101",
+    file: new URL("./_ebooks/prophetic-justice-101.pdf", import.meta.url),
+    filename: "Prophetic-Justice-101.pdf",
+  },
+  "marriage-in-ministry": {
+    title: "Marriage in Ministry",
+    priceEnv: "STRIPE_PRICE_MARRIAGE_IN_MINISTRY",
+    file: new URL("./_ebooks/marriage-in-ministry.pdf", import.meta.url),
+    filename: "Marriage-in-Ministry.pdf",
+  },
+  "the-loneliness-of-the-pastor": {
+    title: "The Loneliness of the Pastor",
+    priceEnv: "STRIPE_PRICE_THE_LONELINESS_OF_THE_PASTOR",
+    file: new URL("./_ebooks/the-loneliness-of-the-pastor.pdf", import.meta.url),
+    filename: "The-Loneliness-of-the-Pastor.pdf",
+  },
+  "healwell": {
+    title: "HealWell",
+    priceEnv: "STRIPE_PRICE_HEALWELL",
+    file: new URL("./_ebooks/healwell.pdf", import.meta.url),
+    filename: "HealWell.pdf",
+  },
 };
 
 const PRODUCTION_SITE_URL = "https://livewellbyjamesbell.co";
@@ -2370,6 +2570,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
     if (url === "/api/admin/seed-content") return adminSeedContent(req, res);
     if (url === "/api/admin/seed-post-christian") return seedPostChristianArticles(req, res);
+    if (url === "/api/admin/seed-integrated-life") return seedArticleSet(req, res, integratedLifeArticles as any[]);
     if (url === "/api/admin/fix-apostrophes") return adminFixApostrophes(req, res);
     const notifMatch = url.match(/^\/api\/admin\/notifications\/(\d+)$/);
     if (notifMatch && req.method === "DELETE") {

@@ -256,7 +256,7 @@ function getOverallLabel(score: number): {
   if (pct >= 0.8)
     return {
       label: "Strong",
-      color: "#2D6A4F",
+      color: "var(--ok)",
       description:
         "Your marriage shows real strength across multiple areas. This does not mean perfection -- it means you have built habits of love that are bearing fruit. Protect them. Deepen them. The greatest threat to a strong marriage is the assumption that it will stay strong without continued effort.",
     };
@@ -270,13 +270,13 @@ function getOverallLabel(score: number): {
   if (pct >= 0.4)
     return {
       label: "Needs Attention",
-      color: "#E07A2F",
+      color: "var(--strain)",
       description:
         "Several areas of your marriage are under strain. This is not a verdict -- it is a diagnosis. And a diagnosis is a gift, because it tells you where to focus. Do not try to fix everything at once. Pick the category with the lowest score and start there. One area at a time. One conversation at a time.",
     };
   return {
     label: "In Crisis",
-    color: "#C0392B",
+    color: "var(--alert)",
     description:
       "Your scores indicate significant distress in your marriage. Hear this clearly: this assessment is not the final word. Many marriages that score here have been rebuilt into something stronger than what existed before. But it will require help -- professional help, not just good intentions. Contact a licensed marriage counselor this week. Not next month. This week.",
   };
@@ -870,10 +870,10 @@ export default function MarriageAssessment() {
                   const level = getScoreLevel(score, maxCatScore);
                   const barColor =
                     level === "high"
-                      ? "#2D6A4F"
+                      ? "var(--ok)"
                       : level === "mid"
                         ? "var(--mustard)"
-                        : "#C0392B";
+                        : "var(--alert)";
                   return (
                     <div key={cat.slug}>
                       <div
@@ -943,10 +943,10 @@ export default function MarriageAssessment() {
                     : "Needs Attention";
               const levelColor =
                 level === "high"
-                  ? "#2D6A4F"
+                  ? "var(--ok)"
                   : level === "mid"
                     ? "var(--mustard)"
-                    : "#C0392B";
+                    : "var(--alert)";
 
               return (
                 <div
@@ -990,10 +990,10 @@ export default function MarriageAssessment() {
                         padding: "4px 12px",
                         background:
                           level === "high"
-                            ? "rgba(45,106,79,0.08)"
+                            ? "var(--ok-bg)"
                             : level === "mid"
                               ? "rgba(212,160,23,0.1)"
-                              : "rgba(192,57,43,0.08)",
+                              : "var(--alert-bg)",
                         borderRadius: "2px",
                       }}
                     >

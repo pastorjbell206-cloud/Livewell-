@@ -66,14 +66,14 @@ export default function AdminResourceEditor() {
   return (
     <AdminLayout>
       <div>
-        <h1 className="font-display text-4xl font-bold mb-8" style={{ color: "#1A1A1A" }}>
+        <h1 className="font-display text-4xl font-bold mb-8" style={{ color: "var(--ink)" }}>
           {resourceId ? "Edit Resource" : "New Resource"}
         </h1>
 
         <form onSubmit={handleSubmit} className="max-w-3xl space-y-6">
           {/* Title */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               Title
             </label>
             <input
@@ -81,21 +81,21 @@ export default function AdminResourceEditor() {
               value={form.title}
               onChange={(e) => setForm({ ...form, title: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               placeholder="Resource title"
             />
           </div>
 
           {/* Description */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               Description
             </label>
             <textarea
               value={form.description}
               onChange={(e) => setForm({ ...form, description: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               rows={4}
               placeholder="What is this resource about?"
             />
@@ -103,14 +103,14 @@ export default function AdminResourceEditor() {
 
           {/* Category */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               Category
             </label>
             <select
               value={form.category}
               onChange={(e) => setForm({ ...form, category: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
             >
               <option value="">Select a category...</option>
               <option value="Study Guides">Study Guides</option>
@@ -124,14 +124,14 @@ export default function AdminResourceEditor() {
 
           {/* File Type */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               File Type
             </label>
             <select
               value={form.fileType}
               onChange={(e) => setForm({ ...form, fileType: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
             >
               <option value="">Select a type...</option>
               <option value="PDF">PDF</option>
@@ -144,7 +144,7 @@ export default function AdminResourceEditor() {
 
           {/* URL */}
           <div>
-            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+            <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--ink)" }}>
               Download/Access URL
             </label>
             <input
@@ -152,7 +152,7 @@ export default function AdminResourceEditor() {
               value={form.url}
               onChange={(e) => setForm({ ...form, url: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               placeholder="https://..."
             />
           </div>
@@ -165,7 +165,7 @@ export default function AdminResourceEditor() {
               checked={form.published}
               onChange={(e) => setForm({ ...form, published: e.target.checked })}
             />
-            <label htmlFor="published" className="font-ui text-sm cursor-pointer" style={{ color: "#1A1A1A" }}>
+            <label htmlFor="published" className="font-ui text-sm cursor-pointer" style={{ color: "var(--ink)" }}>
               Published
             </label>
           </div>
@@ -176,7 +176,7 @@ export default function AdminResourceEditor() {
               type="submit"
               disabled={isLoading}
               className="flex items-center gap-2 px-6 py-3 rounded font-ui font-medium transition-opacity disabled:opacity-50"
-              style={{ backgroundColor: "#2D4A3E", color: "#F7F5F0" }}
+              style={{ backgroundColor: "#2D4A3E", color: "var(--bone)" }}
             >
               {isLoading ? <Loader2 size={16} className="animate-spin" /> : <Save size={16} />}
               {resourceId ? "Update Resource" : "Create Resource"}
@@ -185,7 +185,7 @@ export default function AdminResourceEditor() {
               type="button"
               onClick={() => navigate("/admin/resources")}
               className="px-6 py-3 rounded font-ui font-medium"
-              style={{ backgroundColor: "#D1C9BB", color: "#1A1A1A" }}
+              style={{ backgroundColor: "var(--line)", color: "var(--ink)" }}
             >
               Cancel
             </button>

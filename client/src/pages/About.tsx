@@ -25,9 +25,9 @@ export default function About() {
       />
 
       {/* ORIGIN */}
-      <section style={{ background: "var(--charcoal)", padding: "6rem 1.5rem 5rem" }}>
-        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
-          <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", fontFamily: "var(--U)", marginBottom: "2rem" }}>About</div>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-3) var(--s-6)" }}>
+        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "2rem" }}>About</div>
 
           <div style={{ display: "flex", gap: "2.5rem", alignItems: "flex-start", flexWrap: "wrap", marginBottom: "3rem" }}>
             <img src={PORTRAIT} alt="James Bell" loading="eager" width={160} height={210} style={{ width: "160px", height: "210px", objectFit: "cover", objectPosition: "center top", borderRadius: "2px", border: "1px solid rgba(244,241,234,0.1)", flexShrink: 0 }} />
@@ -41,11 +41,11 @@ export default function About() {
             </div>
           </div>
 
-          <div style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--bone)", opacity: 0.85 }}>
-            <p style={{ marginBottom: "1.5rem" }}>
+          <div className="article-body prose-section" style={{ color: "var(--bone)", opacity: 0.85 }}>
+            <p>
               I came to faith from atheism, and I did not come quietly. For a long time I was certain that belief was something people reached for when they could not sit with how little the universe owed them. I had my arguments, and I thought they were good ones. What I never had was a good answer for why those arguments kept feeling thinner the longer I held onto them. There was no lightning, no single night I can point to. I just slowly ran out of room to keep saying no, and one day I stopped saying it.
             </p>
-            <p style={{ marginBottom: "1.5rem" }}>
+            <p>
               I was also raised without a father. I don't mention that for sympathy. I mention it because it explains most of what I write. When Scripture talks about a Father who stays, I hear it the way a man hears it who knows exactly what it costs when one leaves. And when I am raising my own five sons, I am not doing it out of confidence. I am doing it as someone trying to build, in his own house, a thing he never got to watch being built.
             </p>
             <p>
@@ -56,28 +56,28 @@ export default function About() {
       </section>
 
       {/* THE CHURCH AND THE NETWORK */}
-      <section style={{ background: "var(--bone)", padding: "5rem 1.5rem" }}>
-        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3)" }}>
+        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div style={{ width: "40px", height: "2px", background: "var(--mustard)", marginBottom: "2rem" }} />
           <h2 style={{ fontFamily: "var(--F)", fontSize: "1.75rem", fontWeight: 400, color: "var(--ink)", marginBottom: "1.5rem" }}>The church and the network</h2>
-          <div style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)" }}>
-            <p style={{ marginBottom: "1.5rem" }}>
+          <div className="article-body prose-section">
+            <p>
               I serve as the lead pastor of First Baptist Church of Fenton, Michigan. I put that first not as a line on a résumé but because it is the room where everything here gets tested. These essays were not written in a quiet study with the commentaries open and the whole afternoon free. They were written around hospital visits and budget meetings, after funerals, in the days on either side of the counseling appointments where what a person believes about God either holds or it comes apart. {SITE_STATS.yearsInMinistry} years in that room will take the abstraction out of almost anyone.
             </p>
-            <p style={{ marginBottom: "1.5rem" }}>
+            <p>
               I also started the Pastors Connection Network — PCN — for a fairly simple reason. Pastors are some of the least cared-for people in the church. They hand out grace all week and rarely get handed any back. They carry things people have told them that they can never repeat to anyone. The network connects thousands of them to each other, and to resources made by someone who knows that particular weight from the inside, because when the man up front quietly comes apart on a Saturday night, a whole congregation feels it on Sunday morning.
             </p>
             <p>
               And I write books — {SITE_STATS.bookCount} of them so far — about doubt, marriage, fathers and sons, the church, and the slow, unglamorous business of following Jesus over a long stretch of time. They are really all one project: taking the depth of theology and putting it back in contact with the weight of an ordinary life.{" "}
-              <Link href="/books" style={{ color: "var(--ink)", textDecoration: "none", borderBottom: "2px solid var(--mustard)" }}>The books are here</Link>.
+              <Link href="/books">The books are here</Link>.
             </p>
           </div>
         </div>
       </section>
 
       {/* THE WORK */}
-      <section style={{ background: "var(--bone-warm)", padding: "5rem 1.5rem" }}>
-        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-3)" }}>
+        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)", marginBottom: "1.5rem" }}>
             LiveWell is for the person whose faith has grown larger than the answers they were handed as a child. For the pastor who is quietly running on empty. For the husband and wife still keeping a promise they are no longer sure they understand. For the skeptic who keeps reading the words of a faith they have not decided to trust.
           </p>
@@ -101,9 +101,9 @@ export default function About() {
       </section>
 
       {/* WHERE TO BEGIN */}
-      <section style={{ background: "var(--charcoal)", padding: "5rem 1.5rem" }}>
-        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
-          <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", fontFamily: "var(--U)", marginBottom: "1.5rem" }}>Where to begin</div>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-3)" }}>
+        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.5rem" }}>Where to begin</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "1.75rem", fontWeight: 400, color: "var(--bone)", marginBottom: "2.5rem" }}>Begin where you actually are</h2>
 
           {PATHWAYS.map((p) => (
@@ -118,8 +118,8 @@ export default function About() {
       </section>
 
       {/* WHAT WE ARE NOT */}
-      <section style={{ background: "var(--bone)", padding: "4rem 1.5rem" }}>
-        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3)" }}>
+        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)" }}>
             LiveWell is not therapy, and it is not Christian self-help. It is not a place that hands you something to think so you can stop thinking. It is closer to a writing desk — where a pastor with {SITE_STATS.yearsInMinistry} years of mistakes behind him and five sons in front of him tries to think honestly, out loud, about what it actually means to follow Jesus in a country that has mostly forgotten what his kingdom was ever about.
           </p>
@@ -127,7 +127,7 @@ export default function About() {
       </section>
 
       {/* CLOSING */}
-      <section style={{ background: "var(--charcoal)", padding: "5rem 1.5rem", textAlign: "center" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-3)", textAlign: "center" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <div style={{ width: "40px", height: "2px", background: "var(--mustard)", margin: "0 auto 2rem" }} />
           <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.65, color: "var(--bone)", fontStyle: "italic", marginBottom: "2rem" }}>

@@ -42,7 +42,7 @@ export default function LifeIndex() {
     <Layout>
       <SEOMeta
         title="Integrated Life — Living the Whole of Life Well"
-        description="One undivided life before God: the inner life, the body and its rhythms, the home, work and money, and the world. Scripture, tradition, and tested knowledge for the actual Tuesday."
+        description="One undivided life before God: the inner life, the body, the home, work and money, and the world. Scripture, tradition, and tested knowledge for the Tuesday."
         url="https://www.livewellbyjamesbell.co/life"
       />
 

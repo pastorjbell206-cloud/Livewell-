@@ -1,6 +1,8 @@
-import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowLeft, Download, DollarSign } from "lucide-react";
+import { ArrowLeft, Download, DollarSign, Check } from "lucide-react";
+import Layout from "@/components/Layout";
+import { SEOMeta } from "@/components/SEOMeta";
+import { SITE_URL } from "@/lib/site";
 
 interface ArticleInCollection {
   id: number;
@@ -91,7 +93,7 @@ const COLLECTIONS: ArticleCollection[] = [
         id: 6,
         slug: "difficult-conversations",
         title: "Having Difficult Conversations",
-        excerpt: "Navigating conflict with wisdom and grace.",
+        excerpt: "Facing conflict with wisdom and grace.",
         pillar: "Leadership Formation",
         readTime: 6,
         author: "PCN",
@@ -211,118 +213,350 @@ const COLLECTIONS: ArticleCollection[] = [
   },
 ];
 
+const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+
+const WHAT_YOU_GET = [
+  "Curated articles on a specific topic",
+  "Professional PDF formatting for easy reading",
+  "Discussion questions for small groups",
+  "Lifetime access to download anytime",
+];
+
 export function ArticleCollections() {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <div className="border-b border-border bg-card py-12">
-        <div className="container">
-          <Link href="/resources">
-            <Button variant="ghost" className="mb-6 -ml-2">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Resources
-            </Button>
+    <Layout>
+      <SEOMeta
+        title="Article Collections — LiveWell by James Bell"
+        description="Curated collections of articles on pastoral health, leadership, marriage, prophetic witness, and spiritual formation — available as downloadable guides."
+        url={`${SITE_URL}/article-collections`}
+      />
+
+      {/* HERO */}
+      <section
+        style={{
+          background: "var(--charcoal)",
+          color: "var(--bone)",
+          padding: "var(--s-6) var(--s-4) var(--s-5)",
+        }}
+      >
+        <div style={wrap}>
+          <Link
+            href="/resources"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "8px",
+              fontFamily: "var(--U)",
+              fontSize: "13px",
+              fontWeight: 500,
+              color: "rgba(245,240,230,0.65)",
+              textDecoration: "none",
+              marginBottom: "var(--s-4)",
+            }}
+          >
+            <ArrowLeft size={16} />
+            Back to Resources
           </Link>
 
-          <h1 className="mb-4 text-4xl font-bold text-foreground">
+          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>
             Article Collections
+          </div>
+          <h1
+            style={{
+              fontFamily: "var(--F)",
+              fontSize: "clamp(36px, 6vw, 60px)",
+              fontWeight: 400,
+              lineHeight: 1.04,
+              letterSpacing: "-0.025em",
+              marginBottom: "18px",
+              maxWidth: "20ch",
+            }}
+          >
+            Writing gathered for the weight you carry.
           </h1>
-          <p className="text-lg text-muted-foreground">
-            Curated collections of articles on specific topics, available for purchase as downloadable guides
+          <p
+            style={{
+              fontFamily: "var(--B)",
+              fontSize: "18px",
+              lineHeight: 1.75,
+              color: "rgba(245,240,230,0.82)",
+              maxWidth: "62ch",
+            }}
+          >
+            Curated collections of articles on a single subject, set in clean PDF guides
+            you can read, print, and study with a group — yours for as long as you need them.
           </p>
         </div>
-      </div>
+      </section>
 
-      {/* Collections Grid */}
-      <div className="container py-12">
-        <div className="grid gap-8 md:grid-cols-2">
-          {COLLECTIONS.map((collection) => (
-            <div
-              key={collection.id}
-              className="rounded-lg border border-border bg-card p-8 hover:shadow-lg transition-shadow"
-            >
-              {/* Header */}
-              <div className="mb-6">
-                <div className="mb-4 text-5xl">{collection.icon}</div>
-                <h2 className="mb-2 text-2xl font-bold text-foreground">
+      {/* COLLECTIONS GRID */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
+        <div style={wrap}>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(min(420px, 100%), 1fr))",
+              gap: "var(--s-3)",
+            }}
+          >
+            {COLLECTIONS.map((collection, index) => (
+              <article
+                key={collection.id}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  background: "#FFFFFF",
+                  border: "1px solid rgba(20,17,12,0.08)",
+                  borderTop: "3px solid var(--mustard)",
+                  borderRadius: "var(--radius-sm)",
+                  padding: "var(--s-4)",
+                }}
+              >
+                {/* Header */}
+                <div
+                  style={{
+                    fontFamily: "var(--F)",
+                    fontSize: "32px",
+                    fontWeight: 400,
+                    color: "var(--mustard-text)",
+                    lineHeight: 1,
+                    marginBottom: "var(--s-2)",
+                  }}
+                >
+                  {String(index + 1).padStart(2, "0")}
+                </div>
+                <h2
+                  style={{
+                    fontFamily: "var(--F)",
+                    fontSize: "26px",
+                    fontWeight: 400,
+                    lineHeight: 1.15,
+                    letterSpacing: "-0.02em",
+                    color: "var(--ink)",
+                    marginBottom: "10px",
+                  }}
+                >
                   {collection.title}
                 </h2>
-                <p className="text-muted-foreground">
+                <p
+                  style={{
+                    fontFamily: "var(--B)",
+                    fontSize: "15px",
+                    lineHeight: 1.7,
+                    color: "var(--ink-muted)",
+                    marginBottom: "var(--s-3)",
+                  }}
+                >
                   {collection.description}
                 </p>
-              </div>
 
-              {/* Articles Preview */}
-              <div className="mb-6 space-y-2 border-t border-border pt-6">
-                <p className="text-sm font-semibold text-foreground">
-                  Includes {collection.articles.length} articles:
-                </p>
-                <ul className="space-y-1">
-                  {collection.articles.map((article) => (
-                    <li
-                      key={article.id}
-                      className="text-sm text-muted-foreground flex items-start gap-2"
-                    >
-                      <span className="text-[#B8963E] mt-1">•</span>
-                      <span>{article.title}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Stats */}
-              <div className="mb-6 flex items-center justify-between border-t border-border pt-6">
-                <div className="text-sm text-muted-foreground">
-                  {Math.round(
-                    collection.articles.reduce((sum, a) => sum + (a.readTime || 5), 0) / 5
-                  )}{" "}
-                  hours of reading
+                {/* Articles list */}
+                <div
+                  style={{
+                    borderTop: "1px solid rgba(20,17,12,0.1)",
+                    paddingTop: "var(--s-2)",
+                    marginBottom: "var(--s-3)",
+                  }}
+                >
+                  <div
+                    className="eyebrow"
+                    style={{ color: "var(--mustard-text)", marginBottom: "var(--s-2)" }}
+                  >
+                    {collection.articles.length} Articles
+                  </div>
+                  <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                    {collection.articles.map((article) => (
+                      <li
+                        key={article.id}
+                        style={{
+                          display: "flex",
+                          gap: "12px",
+                          alignItems: "baseline",
+                          fontFamily: "var(--B)",
+                          fontSize: "14px",
+                          lineHeight: 1.6,
+                          color: "var(--ink)",
+                          padding: "6px 0",
+                        }}
+                      >
+                        <span
+                          style={{
+                            color: "var(--mustard)",
+                            fontWeight: 600,
+                            flexShrink: 0,
+                          }}
+                          aria-hidden="true"
+                        >
+                          —
+                        </span>
+                        <span>{article.title}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <div className="text-2xl font-bold text-[#B8963E]">
-                  ${collection.price.toFixed(2)}
-                </div>
-              </div>
 
-              {/* CTA */}
-              <div className="flex gap-3">
-                <Button className="flex-1" variant="outline">
-                  <DollarSign className="mr-2 h-4 w-4" />
-                  Buy Now
-                </Button>
-                <Button className="flex-1">
-                  <Download className="mr-2 h-4 w-4" />
-                  Preview
-                </Button>
-              </div>
-            </div>
-          ))}
+                {/* Stats */}
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    borderTop: "1px solid rgba(20,17,12,0.1)",
+                    paddingTop: "var(--s-3)",
+                    marginBottom: "var(--s-3)",
+                    marginTop: "auto",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontFamily: "var(--U)",
+                      fontSize: "13px",
+                      color: "var(--ink-muted)",
+                    }}
+                  >
+                    {Math.round(
+                      collection.articles.reduce((sum, a) => sum + (a.readTime || 5), 0) / 5,
+                    )}{" "}
+                    hours of reading
+                  </span>
+                  <span
+                    style={{
+                      fontFamily: "var(--F)",
+                      fontSize: "28px",
+                      fontWeight: 400,
+                      color: "var(--ink)",
+                    }}
+                  >
+                    ${collection.price.toFixed(2)}
+                  </span>
+                </div>
+
+                {/* CTA */}
+                <div style={{ display: "flex", gap: "12px" }}>
+                  <button
+                    type="button"
+                    style={{
+                      flex: 1,
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: "8px",
+                      padding: "0.8rem 1rem",
+                      background: "var(--charcoal)",
+                      color: "var(--bone)",
+                      fontFamily: "var(--U)",
+                      fontSize: "13px",
+                      fontWeight: 500,
+                      letterSpacing: "0.02em",
+                      borderRadius: "var(--radius-sm)",
+                      border: "none",
+                      borderBottom: "2px solid var(--mustard)",
+                      cursor: "pointer",
+                      transition: "background 0.2s",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.background = "var(--charcoal-deep)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.background = "var(--charcoal)";
+                    }}
+                  >
+                    <DollarSign size={16} />
+                    Buy Now
+                  </button>
+                  <button
+                    type="button"
+                    style={{
+                      flex: 1,
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: "8px",
+                      padding: "0.8rem 1rem",
+                      background: "transparent",
+                      color: "var(--ink)",
+                      fontFamily: "var(--U)",
+                      fontSize: "13px",
+                      fontWeight: 500,
+                      letterSpacing: "0.02em",
+                      borderRadius: "var(--radius-sm)",
+                      border: "1px solid rgba(20,17,12,0.2)",
+                      cursor: "pointer",
+                      transition: "border-color 0.2s",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.borderColor = "var(--mustard)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.borderColor = "rgba(20,17,12,0.2)";
+                    }}
+                  >
+                    <Download size={16} />
+                    Preview
+                  </button>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
+      </section>
 
-        {/* Info Section */}
-        <div className="mt-12 rounded-lg border border-border bg-card p-8">
-          <h2 className="mb-4 text-2xl font-bold text-foreground">
+      {/* WHAT YOU GET */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ ...wrap, maxWidth: "var(--w-content)" }}>
+          <div className="eyebrow" style={{ marginBottom: "16px" }}>
             What You Get
+          </div>
+          <h2
+            style={{
+              fontFamily: "var(--F)",
+              fontSize: "clamp(28px, 4vw, 40px)",
+              fontWeight: 400,
+              lineHeight: 1.1,
+              letterSpacing: "-0.02em",
+              color: "var(--ink)",
+              marginBottom: "var(--s-4)",
+              maxWidth: "20ch",
+            }}
+          >
+            Built to be read, not skimmed.
           </h2>
-          <ul className="space-y-3 text-muted-foreground">
-            <li className="flex items-start gap-3">
-              <span className="text-[#B8963E] font-bold">✓</span>
-              <span>Curated articles on a specific topic</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-[#B8963E] font-bold">✓</span>
-              <span>Professional PDF formatting for easy reading</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-[#B8963E] font-bold">✓</span>
-              <span>Discussion questions for small groups</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-[#B8963E] font-bold">✓</span>
-              <span>Lifetime access to download anytime</span>
-            </li>
+          <ul
+            style={{
+              listStyle: "none",
+              padding: 0,
+              margin: 0,
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(280px, 100%), 1fr))",
+              gap: "var(--s-2) var(--s-4)",
+            }}
+          >
+            {WHAT_YOU_GET.map((item) => (
+              <li
+                key={item}
+                style={{
+                  display: "flex",
+                  alignItems: "flex-start",
+                  gap: "12px",
+                  fontFamily: "var(--B)",
+                  fontSize: "16px",
+                  lineHeight: 1.6,
+                  color: "var(--ink)",
+                  padding: "var(--s-2) 0",
+                  borderTop: "1px solid rgba(20,17,12,0.1)",
+                }}
+              >
+                <Check
+                  size={18}
+                  style={{ color: "var(--mustard)", flexShrink: 0, marginTop: "3px" }}
+                  aria-hidden="true"
+                />
+                <span>{item}</span>
+              </li>
+            ))}
           </ul>
         </div>
-      </div>
-    </div>
+      </section>
+    </Layout>
   );
 }

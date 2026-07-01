@@ -398,15 +398,15 @@ function getLevelLabel(level: string): string {
 }
 
 function getLevelColor(level: string): string {
-  if (level === "high") return "#2D6A4F";
+  if (level === "high") return "var(--ok)";
   if (level === "mid") return "var(--mustard)";
-  return "#C0392B";
+  return "var(--alert)";
 }
 
 function getLevelBg(level: string): string {
-  if (level === "high") return "rgba(45,106,79,0.08)";
+  if (level === "high") return "var(--ok-bg)";
   if (level === "mid") return "rgba(212,160,23,0.1)";
-  return "rgba(192,57,43,0.08)";
+  return "var(--alert-bg)";
 }
 
 function getOverallInterpretation(score: number): {
@@ -418,7 +418,7 @@ function getOverallInterpretation(score: number): {
   if (pct >= 0.8)
     return {
       label: "Thriving",
-      color: "#2D6A4F",
+      color: "var(--ok)",
       description:
         "Your life shows the marks of sustained attention across multiple dimensions. This is rare, and it did not happen by accident. You have made choices -- hard ones, repeated ones -- that are bearing fruit. The temptation at this stage is to stop being intentional because things are working. Resist it. The margin between thriving and coasting is smaller than you think.",
     };
@@ -432,13 +432,13 @@ function getOverallInterpretation(score: number): {
   if (pct >= 0.4)
     return {
       label: "Under Strain",
-      color: "#E07A2F",
+      color: "var(--strain)",
       description:
         "Multiple areas of your life are carrying more weight than they can bear. This is not sustainable, and you already know it. The good news is that you took this assessment, which means the denial is breaking. Pick the one area that, if it improved, would change everything else. Start there. One area. One step. This week.",
     };
   return {
     label: "In Crisis",
-    color: "#C0392B",
+    color: "var(--alert)",
     description:
       "Your results indicate serious strain across most areas of your life. Hear this: the assessment is not the final word. It is a starting point. But it is a starting point that requires action, not just awareness. You need help -- a counselor, a pastor, a trusted friend -- someone who can walk with you as you begin the work of rebuilding. Do not try to do this alone.",
   };
@@ -520,7 +520,7 @@ export default function LifeAudit() {
     <Layout>
       <SEOMeta
         title="Life Audit -- A Comprehensive Assessment Across Eight Areas"
-        description="Twenty-four questions across eight life areas: spiritual health, marriage, parenting, physical health, finances, emotional health, vocation, and community. Honest results with practical next steps."
+        description="Twenty-four questions across eight life areas: spiritual health, marriage, parenting, physical health, finances, vocation, and community. Honest results."
         keywords="life audit, life assessment, spiritual health, marriage assessment, parenting, financial health, emotional health, vocation, community, Christian life"
         structuredData={{
           "@context": "https://schema.org",
@@ -1056,7 +1056,7 @@ export default function LifeAudit() {
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "1fr 1fr",
+                gridTemplateColumns: "repeat(auto-fit, minmax(min(260px,100%),1fr))",
                 gap: "16px",
                 marginBottom: "32px",
               }}
@@ -1067,7 +1067,7 @@ export default function LifeAudit() {
                   background: "var(--card)",
                   borderRadius: "2px",
                   padding: "28px 24px",
-                  borderTop: "3px solid #2D6A4F",
+                  borderTop: "3px solid var(--ok)",
                 }}
               >
                 <h3
@@ -1075,7 +1075,7 @@ export default function LifeAudit() {
                     fontSize: "12px",
                     fontWeight: 700,
                     letterSpacing: "0.15em",
-                    color: "#2D6A4F",
+                    color: "var(--ok)",
                     fontFamily: "var(--U)",
                     marginBottom: "16px",
                   }}
@@ -1104,7 +1104,7 @@ export default function LifeAudit() {
                       style={{
                         fontSize: "13px",
                         fontFamily: "var(--U)",
-                        color: "#2D6A4F",
+                        color: "var(--ok)",
                         fontWeight: 600,
                       }}
                     >
@@ -1120,7 +1120,7 @@ export default function LifeAudit() {
                   background: "var(--card)",
                   borderRadius: "2px",
                   padding: "28px 24px",
-                  borderTop: "3px solid #C0392B",
+                  borderTop: "3px solid var(--alert)",
                 }}
               >
                 <h3
@@ -1128,7 +1128,7 @@ export default function LifeAudit() {
                     fontSize: "12px",
                     fontWeight: 700,
                     letterSpacing: "0.15em",
-                    color: "#C0392B",
+                    color: "var(--alert)",
                     fontFamily: "var(--U)",
                     marginBottom: "16px",
                   }}
@@ -1158,7 +1158,7 @@ export default function LifeAudit() {
                       style={{
                         fontSize: "13px",
                         fontFamily: "var(--U)",
-                        color: "#C0392B",
+                        color: "var(--alert)",
                         fontWeight: 600,
                       }}
                     >

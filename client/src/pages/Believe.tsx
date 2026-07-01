@@ -38,7 +38,7 @@ export default function Believe() {
     <Layout>
       <SEOMeta
         title="Believe: The Rational Case for Christian Faith — by James Bell"
-        description="Rational answers to the hardest questions skeptics ask about God, the Bible, the resurrection, suffering, and hell — from a pastor who came to faith from atheism."
+        description="Rational answers to the hardest questions skeptics ask about God, the Bible, the resurrection, suffering, and hell, from a pastor who was once an atheist."
         image={`${SITE_URL}${COVER}`}
         url={`${SITE_URL}/books/believe`}
         type="book"

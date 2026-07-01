@@ -97,10 +97,10 @@ export function AdminSyncPanel() {
     <div className="space-y-8">
       {/* Header */}
       <div>
-        <h2 className="text-2xl font-bold mb-2" style={{ color: "#1A1A1A" }}>
+        <h2 className="text-2xl font-bold mb-2" style={{ color: "var(--ink)" }}>
           Content Feed Sync
         </h2>
-        <p style={{ color: "#6B7280" }}>
+        <p style={{ color: "var(--ink-muted)" }}>
           Manage automatic syncing of articles from Substack and Pastors Connection
         </p>
       </div>
@@ -109,15 +109,15 @@ export function AdminSyncPanel() {
       <div
         className="p-6 rounded-lg border"
         style={{
-          backgroundColor: "#F7F5F0",
-          borderColor: "#D1C9BB",
+          backgroundColor: "var(--bone)",
+          borderColor: "var(--line)",
         }}
       >
         <div className="flex items-center justify-between mb-4">
-          <h3 className="font-semibold" style={{ color: "#1A1A1A" }}>
+          <h3 className="font-semibold" style={{ color: "var(--ink)" }}>
             Sync Schedule
           </h3>
-          <div className="flex items-center gap-2" style={{ color: "#6B7280" }}>
+          <div className="flex items-center gap-2" style={{ color: "var(--ink-muted)" }}>
             <Clock size={16} />
             <span>Daily at 6:00 AM</span>
           </div>
@@ -130,7 +130,7 @@ export function AdminSyncPanel() {
               <p style={{ color: "#059669", fontWeight: 500 }}>
                 Last run: {lastSync.time}
               </p>
-              <p style={{ color: "#6B7280", fontSize: "0.875rem" }}>
+              <p style={{ color: "var(--ink-muted)", fontSize: "0.875rem" }}>
                 {lastSync.added} articles added, {lastSync.skipped} skipped
               </p>
             </div>
@@ -188,7 +188,7 @@ export function AdminSyncPanel() {
 
       {/* Feed Sources */}
       <div className="space-y-4">
-        <h3 className="font-semibold" style={{ color: "#1A1A1A" }}>
+        <h3 className="font-semibold" style={{ color: "var(--ink)" }}>
           Feed Sources
         </h3>
 
@@ -196,17 +196,17 @@ export function AdminSyncPanel() {
         <div
           className="p-6 rounded-lg border"
           style={{
-            backgroundColor: "#F7F5F0",
-            borderColor: "#D1C9BB",
+            backgroundColor: "var(--bone)",
+            borderColor: "var(--line)",
           }}
         >
           <div className="flex items-center justify-between mb-4">
             <div>
-              <h4 className="font-semibold" style={{ color: "#1A1A1A" }}>
+              <h4 className="font-semibold" style={{ color: "var(--ink)" }}>
                 Substack
               </h4>
-              <p style={{ color: "#6B7280", fontSize: "0.875rem" }}>
-                https://jamesbell.substack.com/feed
+              <p style={{ color: "var(--ink-muted)", fontSize: "0.875rem" }}>
+                https://jamesbell333289.substack.com/feed
               </p>
             </div>
             <div
@@ -222,8 +222,8 @@ export function AdminSyncPanel() {
             disabled={syncing !== null}
             className="flex items-center gap-2 w-full"
             style={{
-              backgroundColor: syncing === "substack" ? "#B8963E" : "#1A1A1A",
-              color: "#F7F5F0",
+              backgroundColor: syncing === "substack" ? "var(--mustard)" : "var(--ink)",
+              color: "var(--bone)",
             }}
           >
             {syncing === "substack" ? (
@@ -244,16 +244,16 @@ export function AdminSyncPanel() {
         <div
           className="p-6 rounded-lg border"
           style={{
-            backgroundColor: "#F7F5F0",
-            borderColor: "#D1C9BB",
+            backgroundColor: "var(--bone)",
+            borderColor: "var(--line)",
           }}
         >
           <div className="flex items-center justify-between mb-4">
             <div>
-              <h4 className="font-semibold" style={{ color: "#1A1A1A" }}>
+              <h4 className="font-semibold" style={{ color: "var(--ink)" }}>
                 Pastors Connection
               </h4>
-              <p style={{ color: "#6B7280", fontSize: "0.875rem" }}>
+              <p style={{ color: "var(--ink-muted)", fontSize: "0.875rem" }}>
                 https://www.pastorsconnection.com/feed
               </p>
             </div>
@@ -270,8 +270,8 @@ export function AdminSyncPanel() {
             disabled={syncing !== null}
             className="flex items-center gap-2 w-full"
             style={{
-              backgroundColor: syncing === "pastors" ? "#B8963E" : "#1A1A1A",
-              color: "#F7F5F0",
+              backgroundColor: syncing === "pastors" ? "var(--mustard)" : "var(--ink)",
+              color: "var(--bone)",
             }}
           >
             {syncing === "pastors" ? (
@@ -295,8 +295,8 @@ export function AdminSyncPanel() {
         disabled={syncing !== null}
         className="w-full flex items-center justify-center gap-2 py-3"
         style={{
-          backgroundColor: syncing === "all" ? "#B8963E" : "#2D4A3E",
-          color: "#F7F5F0",
+          backgroundColor: syncing === "all" ? "var(--mustard)" : "#2D4A3E",
+          color: "var(--bone)",
           fontSize: "1rem",
         }}
       >

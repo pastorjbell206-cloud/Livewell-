@@ -373,7 +373,7 @@ export default function ParentingGuide() {
     <Layout>
       <SEOMeta
         title="Parenting Stage Guide -- Age-Specific Theological Parenting Guidance"
-        description="Practical, theologically grounded parenting guidance for every stage -- toddler through young adult. What your child needs, how to talk about God, common mistakes, and one practice to start this week."
+        description="Practical, theologically grounded parenting guidance for every stage. What your child needs, how to talk about God, common mistakes, and one practice to start."
         keywords="Christian parenting, parenting guide, faith and parenting, theological parenting, parenting toddlers, parenting teens, raising kids in faith"
         structuredData={{
           "@context": "https://schema.org",

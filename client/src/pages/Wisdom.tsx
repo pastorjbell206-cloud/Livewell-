@@ -102,7 +102,7 @@ export default function Wisdom() {
     <Layout>
       <SEOMeta
         title="Wisdom for All of Life — Proverbs, Ecclesiastes, and the Skill of Living"
-        description="The Bible has more than commands. It has wisdom, the skill of living well in the place no rule reaches. A guide to Proverbs and Ecclesiastes, a topical map of Scripture for money, words, work, anger, marriage, and more, and a month in Proverbs."
+        description="The Bible has more than commands. It has wisdom, the skill of living well where no rule reaches. A guide to Proverbs and Ecclesiastes, and a topical map."
         url="https://www.livewellbyjamesbell.co/wisdom"
       />
 

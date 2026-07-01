@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200" role="img" aria-label="HealWell by James Bell">
+  <rect width="800" height="1200" fill="#F5F0E6"/>
+  <rect x="28" y="28" width="744" height="1144" fill="none" stroke="#1A1A1A" stroke-width="1.5" opacity="0.18"/>
+
+  <text x="80" y="156" font-family="Helvetica, Arial, sans-serif" font-size="20" letter-spacing="6" font-weight="700" fill="#D4A017">A YEAR OF DEVOTIONS</text>
+  <line x1="80" y1="182" x2="720" y2="182" stroke="#D4A017" stroke-width="2"/>
+
+  <text x="76" y="470" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="150" font-weight="400" fill="#1A1A1A">HealWell</text>
+
+  <text x="80" y="556" font-family="Helvetica, Arial, sans-serif" font-size="23" fill="#5A5448">52 Weeks in Costly Hope</text>
+
+  <line x1="80" y1="1024" x2="188" y2="1024" stroke="#D4A017" stroke-width="3"/>
+  <text x="80" y="1086" font-family="Helvetica, Arial, sans-serif" font-size="30" letter-spacing="4" font-weight="700" fill="#1A1A1A">JAMES BELL</text>
+  <text x="80" y="1120" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="2.5" fill="#D4A017">LIVEWELL BY JAMES BELL</text>
+</svg>

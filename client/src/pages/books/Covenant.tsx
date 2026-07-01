@@ -30,7 +30,7 @@ export default function Covenant() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description="A short book on marriage as covenant, not contract. Why communication tips don't save a marriage built on a deal, what Scripture means by one flesh and covenant love, and how the promise, not the feeling, is what holds a marriage. PDF ebook by James Bell."
+        description="A short book on marriage as covenant, not contract. Why tips don't save a marriage built on a deal, and why the promise is what holds it. PDF ebook."
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

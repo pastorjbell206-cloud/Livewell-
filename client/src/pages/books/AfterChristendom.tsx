@@ -30,7 +30,7 @@ export default function AfterChristendom() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description="A short book on following Jesus after the end of cultural Christianity. Why Christendom is dying but the faith is not, what the exiles in Babylon and the church before the empire teach us, and how to live as a faithful minority now. PDF ebook by James Bell."
+        description="A short book on following Jesus after the end of cultural Christianity, and how to live as a faithful minority now. PDF ebook by James Bell."
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

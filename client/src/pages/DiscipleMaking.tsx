@@ -89,7 +89,7 @@ export default function DiscipleMaking() {
     <Layout>
       <SEOMeta
         title="Make Disciples — Around Tables, in Living Rooms, Over Coffee"
-        description="Jesus did not run a program. He made disciples over meals, in homes, with ordinary people. A place to equip the regular believer to make disciples around a table of their own, the way the ancient church did, in a post-Christian America."
+        description="Jesus did not run a program. He made disciples over meals, in homes, with ordinary people. Equipping the regular believer to do the same around a table."
         url="https://www.livewellbyjamesbell.co/disciple-making"
       />
 

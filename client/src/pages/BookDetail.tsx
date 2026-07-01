@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { SEOMeta, getBookSchema } from "@/components/SEOMeta";
+import { SEOMeta, getBookSchema, getBreadcrumbSchema } from "@/components/SEOMeta";
 import { trpc } from "@/lib/trpc";
 import { Link, useRoute } from "wouter";
 import { ArrowLeft, BookOpen, ExternalLink, Loader2 } from "lucide-react";
@@ -7,7 +7,8 @@ import { useState } from "react";
 import BookPreview from "@/components/BookPreview";
 import BookRecommendations from "@/components/BookRecommendations";
 import { SampleChapterForm } from "@/components/SampleChapterForm";
-import { bookUrl } from "@/lib/site";
+import { bookUrl, SITE_URL } from "@/lib/site";
+import { readSlugFor } from "@/lib/readableBooks";
 
 export default function BookDetail() {
   const [, params] = useRoute("/books/:slug");
@@ -68,7 +69,7 @@ export default function BookDetail() {
       "The character of a church planter",
       "Theological conviction and clarity",
       "Building a healthy leadership culture",
-      "Navigating the early years",
+      "The early years",
       "Sustaining vision and health long-term",
       "When to plant and when to wait",
     ],
@@ -85,6 +86,8 @@ export default function BookDetail() {
   const topics = bookTopics[book.title] || [];
 
   const canonical = book.slug ? bookUrl(book.slug) : undefined;
+  // Books with a full on-site manuscript are read free at /read/:slug.
+  const readSlug = readSlugFor(book.slug);
 
   return (
     <>
@@ -95,13 +98,20 @@ export default function BookDetail() {
         image={book.coverImage || undefined}
         url={canonical}
         type="book"
-        structuredData={getBookSchema(
-          book.title,
-          book.description || "",
-          book.author || "James Bell",
-          book.coverImage || undefined,
-          canonical
-        )}
+        structuredData={[
+          getBookSchema(
+            book.title,
+            book.description || "",
+            book.author || "James Bell",
+            book.coverImage || undefined,
+            canonical
+          ),
+          getBreadcrumbSchema([
+            { name: "Home", url: SITE_URL },
+            { name: "Books", url: `${SITE_URL}/books` },
+            { name: book.title, url: canonical ?? `${SITE_URL}/books` },
+          ]),
+        ]}
       />
       <Layout>
         {/* Back Button */}
@@ -130,6 +140,16 @@ export default function BookDetail() {
                   />
                 )}
                 <div className="mt-6 space-y-3">
+                  {readSlug && (
+                    <Link href={`/read/${readSlug}`}>
+                      <a
+                        className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded font-ui font-medium no-underline transition-colors"
+                        style={{ backgroundColor: "var(--ink)", color: "var(--bone)", borderBottom: "2px solid var(--mustard)" }}
+                      >
+                        <BookOpen size={18} /> Read the full book free
+                      </a>
+                    </Link>
+                  )}
                   {book.sampleExcerpt && (
                     <button
                       onClick={() => setIsPreviewOpen(true)}

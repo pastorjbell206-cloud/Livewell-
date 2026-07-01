@@ -437,7 +437,7 @@ export default function Discipleship() {
     <Layout>
       <SEOMeta
         title="The Discipleship Pathway — A Guided Path from New Believer to Disciple-Maker"
-        description="A four-stage discipleship pathway with concrete steps: begin with the gospel and prayer, take root in Scripture and the church, go deep into doctrine and hard questions, and pass it on by discipling others. Your progress is saved on this device."
+        description="A four-stage discipleship pathway: begin with the gospel, take root in Scripture and the church, go deep into doctrine, and pass it on by discipling others."
         url="https://www.livewellbyjamesbell.co/discipleship"
       />
 

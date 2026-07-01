@@ -198,7 +198,7 @@ export default function PassageContext() {
     <Layout>
       <SEOMeta
         title="The Passage Context Tool — Read Any Verse in Context"
-        description="Enter any Bible reference and see it in context: the passage with runway around it, who wrote it and why, its genre, the flow of the argument, cross-references, and the questions to ask of any text."
+        description="Enter any Bible reference and see it in context: who wrote it and why, its genre, the flow of the argument, cross-references, and the questions to ask of it."
         url="https://www.livewellbyjamesbell.co/theology/passage"
       />
 

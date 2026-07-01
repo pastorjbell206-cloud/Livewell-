@@ -130,7 +130,7 @@ export default function Pastors() {
                       <ExternalLink size={18} /> Join the Network
                     </a>
                     <a
-                      href="mailto:james@thelivewell.com"
+                      href="mailto:Pastorjbell206@gmail.com"
                       className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded font-ui font-medium no-underline transition-colors border"
                       style={{ borderColor: "var(--charcoal)", color: "var(--charcoal)", backgroundColor: "transparent" }}
                     >
