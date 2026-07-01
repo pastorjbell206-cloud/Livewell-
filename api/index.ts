@@ -5,6 +5,7 @@ import mysql from "mysql2/promise";
 import crypto from "node:crypto";
 import postChristianArticles from "./post-christian-articles.json" with { type: "json" };
 import integratedLifeArticles from "./integrated-life-articles.json" with { type: "json" };
+import womanhoodDoubtDevotionalArticles from "./womanhood-doubt-devotional-articles.json" with { type: "json" };
 import bcrypt from "bcryptjs";
 import superjson from "superjson";
 // Static essay library (143 long-form essays). Served behind the live DB so the
@@ -2625,6 +2626,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/seed-content") return adminSeedContent(req, res);
     if (url === "/api/admin/seed-post-christian") return seedPostChristianArticles(req, res);
     if (url === "/api/admin/seed-integrated-life") return seedArticleSet(req, res, integratedLifeArticles as any[]);
+    if (url === "/api/admin/seed-womanhood-doubt-devotionals") return seedArticleSet(req, res, womanhoodDoubtDevotionalArticles as any[]);
     if (url === "/api/admin/seed-ebooks") return seedEbooks(req, res);
     if (url === "/api/admin/fix-apostrophes") return adminFixApostrophes(req, res);
     const notifMatch = url.match(/^\/api\/admin\/notifications\/(\d+)$/);
