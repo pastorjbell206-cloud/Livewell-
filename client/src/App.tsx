@@ -32,6 +32,14 @@ const TheLonelinessOfThePastor = lazy(() => import("./pages/books/TheLonelinessO
 const TheLonelinessOfThePastorThankYou = lazy(() => import("./pages/books/TheLonelinessOfThePastorThankYou"));
 const HealWell = lazy(() => import("./pages/books/HealWell"));
 const HealWellThankYou = lazy(() => import("./pages/books/HealWellThankYou"));
+const BornAgainFromAtheism = lazy(() => import("./pages/books/BornAgainFromAtheism"));
+const BornAgainFromAtheismThankYou = lazy(() => import("./pages/books/BornAgainFromAtheismThankYou"));
+const TheGodWhoIsNotNice = lazy(() => import("./pages/books/TheGodWhoIsNotNice"));
+const TheGodWhoIsNotNiceThankYou = lazy(() => import("./pages/books/TheGodWhoIsNotNiceThankYou"));
+const FaithAfterDeconstruction = lazy(() => import("./pages/books/FaithAfterDeconstruction"));
+const FaithAfterDeconstructionThankYou = lazy(() => import("./pages/books/FaithAfterDeconstructionThankYou"));
+const OrdinaryHoliness = lazy(() => import("./pages/books/OrdinaryHoliness"));
+const OrdinaryHolinessThankYou = lazy(() => import("./pages/books/OrdinaryHolinessThankYou"));
 const WhenGodBlessAmerica = lazy(() => import("./pages/WhenGodBlessAmerica"));
 const WhenGodBlessAmericaThankYou = lazy(() => import("./pages/WhenGodBlessAmericaThankYou"));
 const Believe = lazy(() => import("./pages/Believe"));
@@ -440,6 +448,14 @@ function Router() {
         <Route path="/the-loneliness-of-the-pastor" component={TheLonelinessOfThePastor} />
         <Route path="/healwell/thank-you" component={HealWellThankYou} />
         <Route path="/healwell" component={HealWell} />
+        <Route path="/born-again-from-atheism/thank-you" component={BornAgainFromAtheismThankYou} />
+        <Route path="/born-again-from-atheism" component={BornAgainFromAtheism} />
+        <Route path="/the-god-who-is-not-nice/thank-you" component={TheGodWhoIsNotNiceThankYou} />
+        <Route path="/the-god-who-is-not-nice" component={TheGodWhoIsNotNice} />
+        <Route path="/faith-after-deconstruction/thank-you" component={FaithAfterDeconstructionThankYou} />
+        <Route path="/faith-after-deconstruction" component={FaithAfterDeconstruction} />
+        <Route path="/ordinary-holiness/thank-you" component={OrdinaryHolinessThankYou} />
+        <Route path="/ordinary-holiness" component={OrdinaryHoliness} />
         <Route path="/substack" component={SubstackPage} />
         <Route path="/pastors" component={Pastors} />
         <Route path="/about" component={About} />

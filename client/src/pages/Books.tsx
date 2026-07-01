@@ -330,6 +330,102 @@ export default function Books() {
         </Link>
       </section>
 
+      {/* NEW EBOOK — Born Again From Atheism */}
+      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/born-again-from-atheism" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img src="/books/born-again-from-atheism.svg" alt="Born Again From Atheism book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
+                New Ebook · $9.99 · For Skeptics
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                Born Again From Atheism
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
+                How an unbeliever came to faith as a grown man, and what he found there. The doubts taken at full
+                strength, and the God he did not want to meet. Read the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* NEW EBOOK — The God Who Is Not Nice */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/the-god-who-is-not-nice" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img src="/books/the-god-who-is-not-nice.svg" alt="The God Who Is Not Nice book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
+                New Ebook · $9.99 · On the Character of God
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                The God Who Is Not Nice
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", margin: 0 }}>
+                Recovering the weight of God in a sentimental age. Nice is not holy, and a God with no weight cannot
+                carry yours. Read the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* NEW EBOOK — Faith After Deconstruction */}
+      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/faith-after-deconstruction" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img src="/books/faith-after-deconstruction.svg" alt="Faith After Deconstruction book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
+                New Ebook · $9.99 · For the Deconstructing
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                Faith After Deconstruction
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
+                How to lose the faith you were given and find the one that holds. What should fall, what must not, and
+                the way through the wilderness. Read the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* NEW EBOOK — Ordinary Holiness */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/ordinary-holiness" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img src="/books/ordinary-holiness.svg" alt="Ordinary Holiness book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
+                New Ebook · $9.99 · On Everyday Faith
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                Ordinary Holiness
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", margin: 0 }}>
+                Finding God in the life you actually have. The dishes, the commute, the marriage on a Tuesday, the work
+                no one sees. Read the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
       {/* NEW RELEASE — featured ebook (standalone product page) */}
       <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/books/when-god-bless-america" style={{ textDecoration: "none", color: "inherit" }}>
