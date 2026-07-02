@@ -2,7 +2,7 @@
     "buildCommand": "rm -rf node_modules/.vite .vite dist && pnpm run pdfs && pnpm run manuals && pnpm run og && pnpm run howtos && pnpm run wisdom && pnpm run sitemap && pnpm run build && pnpm run prerender",
     "outputDirectory": "dist/public",
     "trailingSlash": false,
-    "installCommand": "pnpm install --frozen-lockfile",
+    "installCommand": "pnpm install --no-frozen-lockfile",
     "functions": {
         "api/index.ts": { "maxDuration": 60, "includeFiles": "api/_ebooks/**" }
     },
