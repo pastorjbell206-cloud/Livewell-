@@ -174,6 +174,22 @@ export default function Doubt() {
         </div>
       </section>
 
+      {/* One instrument for the doubter (QW-19): locate the questions, no grade */}
+      <section style={{ background: "var(--bone-warm)", padding: "64px 20px" }}>
+        <div style={{ maxWidth: "720px", margin: "0 auto", textAlign: "center" }}>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "16px" }}>IF YOU WANT A MAP</p>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,34px)", fontWeight: 400, color: "var(--ink)", marginBottom: "14px" }}>Find out where your questions actually sit</h2>
+          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink-muted)", maxWidth: "54ch", margin: "0 auto 26px" }}>
+            The Theology Quiz is not a test, and there is no grade. It maps where
+            your foundations are solid and where the gaps are, then hands you the
+            reading that meets you there instead of a verdict.
+          </p>
+          <Link href="/tools/theology-quiz" style={{ display: "inline-block", background: "var(--ink)", color: "var(--bone)", padding: "13px 28px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, borderRadius: "3px", textDecoration: "none" }}>
+            Take the quiz
+          </Link>
+        </div>
+      </section>
+
       {/* NEWSLETTER STRIP — real form */}
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>

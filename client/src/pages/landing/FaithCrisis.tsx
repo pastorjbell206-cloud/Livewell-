@@ -105,12 +105,12 @@ export default function FaithCrisis() {
       <section style={{ background: "var(--bone-warm)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>NEXT STEP</p>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>Study the text yourself</h2>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>Find out where your questions actually sit</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
-            The Bible Study tool walks you through any passage with historical context, original language, and honest questions. No pre-packaged answers.
+            The Theology Quiz is not a test you can fail. It maps where your foundations are solid and where the gaps are, and hands you the reading that meets you there.
           </p>
-          <Link href="/tools/bible-study" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--charcoal)", color: "white", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Open Bible Study Tool</button>
+          <Link href="/tools/theology-quiz" style={{ textDecoration: "none" }}>
+            <button style={{ background: "var(--charcoal)", color: "white", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Take the Theology Quiz</button>
           </Link>
         </div>
       </section>

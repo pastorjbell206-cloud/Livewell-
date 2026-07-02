@@ -44,7 +44,7 @@ const DOORS = [
     title: "Make Disciples",
     blurb:
       "You are teaching others to follow Christ. Study guides, family devotions, and tools to put real weight behind what you pass on.",
-    href: "/resources",
+    href: "/tools",
     cta: "Find the tools",
   },
   {

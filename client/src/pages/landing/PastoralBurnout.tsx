@@ -111,12 +111,12 @@ export default function PastoralBurnout() {
       <section style={{ background: "var(--bone-warm)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>NEXT STEP</p>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>Check in with yourself</h2>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>Find out where you actually are</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
-            The Emotional Health tool is a private, honest assessment of where you actually are. No score. No judgment. Just clarity.
+            The Pastor Burnout Diagnostic was built for exactly this page: twenty-four honest questions across calling, isolation, marriage, and the board room, and a recovery roadmap that names your specific pattern. Private. No one sees your answers.
           </p>
-          <Link href="/tools/emotional-health" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--charcoal)", color: "white", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Take the Assessment</button>
+          <Link href="/tools/pastor-burnout" style={{ textDecoration: "none" }}>
+            <button style={{ background: "var(--charcoal)", color: "white", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Take the Burnout Diagnostic</button>
           </Link>
         </div>
       </section>
