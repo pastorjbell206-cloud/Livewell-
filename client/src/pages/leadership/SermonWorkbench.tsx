@@ -1,17 +1,21 @@
 /**
  * The Sermon Prep Workbench (/leadership/sermon-prep). A guided, stateless
  * workflow from the text to the pulpit. Everything is saved to the browser
- * (localStorage) under a named sermon slot. No login. Exportable as plain text.
+ * (localStorage): one autosaved working slot, plus up to twelve named saved
+ * copies (roadmap HS-5) for the weeks that hold more than one sermon. No
+ * login. Exportable as plain text.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { copyToClipboard } from "@/lib/clipboard";
-import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { isArrayOf, readStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const KEY = "livewell-sermon-workbench";
+const SAVES_KEY = "livewell-saves-sermon-workbench";
+const MAX_SAVES = 12;
 
 interface Stage { id: string; kicker: string; title: string; prompts: { id: string; q: string; help: string }[]; }
 
@@ -21,6 +25,25 @@ const isSaved = (x: unknown): x is { title?: unknown; answers?: unknown } => !!x
 const isAnswers = (x: unknown): x is Record<string, string> =>
   !!x && typeof x === "object" && !Array.isArray(x) &&
   Object.values(x as Record<string, unknown>).every((v) => typeof v === "string");
+
+// Named saved copies (roadmap HS-5): the autosave above is one working slot; a
+// pastor carrying two sermons at once needs more than one. Capped at twelve.
+interface SaveRec { id: string; name: string; savedAt: string; data: { title: string; answers: Record<string, string> }; }
+const isSaveRec = (x: unknown): x is SaveRec => {
+  const r = x as SaveRec;
+  return !!r && typeof r === "object" && typeof r.id === "string" && typeof r.name === "string" && typeof r.savedAt === "string" &&
+    !!r.data && typeof r.data === "object" && typeof r.data.title === "string" && isAnswers(r.data.answers);
+};
+const isSaveList = isArrayOf(isSaveRec);
+
+// "Jun 14" — with the year when the copy is not from this year.
+const fmtSavedAt = (iso: string) => {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "";
+  const opts: Intl.DateTimeFormatOptions = { month: "short", day: "numeric" };
+  if (d.getFullYear() !== new Date().getFullYear()) opts.year = "numeric";
+  return d.toLocaleDateString(undefined, opts);
+};
 
 const STAGES: Stage[] = [
   { id: "text", kicker: "Day one", title: "Live in the text", prompts: [
@@ -51,6 +74,8 @@ export default function SermonWorkbench() {
   const [saved, setSaved] = useState(false);
   const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "failed">("idle");
   const [persistFailed, setPersistFailed] = useState(false);
+  const [copies, setCopies] = useState<SaveRec[]>(() => readStoredJSON(SAVES_KEY, isSaveList, []));
+  const [saveName, setSaveName] = useState("");
 
   useEffect(() => {
     const o = readStoredJSON(KEY, isSaved, {});
@@ -86,6 +111,24 @@ export default function SermonWorkbench() {
     if (ok) setTimeout(() => setCopyStatus("idle"), 2000);
   };
   const clear = () => { if (confirm("Clear this sermon and start over?")) { setTitle(""); setAnswers({}); } };
+
+  // Saved copies live under their own key; the working slot above is untouched.
+  // Loading a copy replaces the working state, and the autosave carries it on.
+  const atCap = copies.length >= MAX_SAVES;
+  const saveCopy = () => {
+    const name = saveName.trim();
+    if (!name || atCap) return;
+    const next = [{ id: Date.now().toString(36), name, savedAt: new Date().toISOString(), data: { title, answers } }, ...copies];
+    setCopies(next);
+    setSaveName("");
+    if (!writeStoredJSON(SAVES_KEY, next)) setPersistFailed(true);
+  };
+  const loadCopy = (c: SaveRec) => { setTitle(c.data.title); setAnswers(c.data.answers); };
+  const deleteCopy = (id: string) => {
+    const next = copies.filter((c) => c.id !== id);
+    setCopies(next);
+    if (!writeStoredJSON(SAVES_KEY, next)) setPersistFailed(true);
+  };
 
   return (
     <Layout>
@@ -127,6 +170,30 @@ export default function SermonWorkbench() {
             {copyStatus === "idle" && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", opacity: saved ? 1 : 0, transition: "opacity .3s" }}>Saved to this browser</span>}
           </div>
           {persistFailed && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", marginTop: "8px" }}>Couldn't save to this browser — your work here will not survive a reload.</p>}
+
+          <div style={{ marginTop: "var(--s-4)", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-3) var(--s-4)" }}>
+            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>Saved copies</div>
+            <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+              <input value={saveName} onChange={(e) => setSaveName(e.target.value)} aria-label="Name for this copy" placeholder="Name this copy"
+                style={{ flex: "1 1 200px", fontFamily: "var(--B)", fontSize: "14px", padding: "8px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)" }} />
+              <button onClick={saveCopy} disabled={!saveName.trim() || atCap}
+                style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", padding: "8px 14px", background: !saveName.trim() || atCap ? "var(--border)" : "var(--mustard)", color: !saveName.trim() || atCap ? "var(--ink-muted)" : "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: !saveName.trim() || atCap ? "not-allowed" : "pointer" }}>Save a copy</button>
+            </div>
+            {atCap && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "8px 0 0" }}>Twelve copies is the limit — delete one to save another.</p>}
+            {copies.length > 0 && (
+              <div style={{ marginTop: "10px" }}>
+                {copies.map((c) => (
+                  <div key={c.id} style={{ display: "flex", alignItems: "center", gap: "10px", padding: "8px 0", borderTop: "1px solid var(--border)" }}>
+                    <span style={{ flex: 1, fontFamily: "var(--B)", fontSize: "14px", color: "var(--ink)", overflowWrap: "anywhere" }}>{c.name}</span>
+                    <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", whiteSpace: "nowrap" }}>{fmtSavedAt(c.savedAt)}</span>
+                    <button onClick={() => loadCopy(c)} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px", padding: "5px 12px", background: "none", color: "var(--ink)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>Load</button>
+                    <button onClick={() => deleteCopy(c.id)} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px", padding: "5px 12px", background: "none", color: "var(--ink-muted)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>Delete</button>
+                  </div>
+                ))}
+              </div>
+            )}
+            <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", margin: "10px 0 0" }}>Saves stay in this browser.</p>
+          </div>
         </div>
       </section>
     </Layout>

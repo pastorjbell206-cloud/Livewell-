@@ -3,7 +3,9 @@
  * from a library of elements, each with guidance and one or more sample texts
  * you can choose and edit. Drives the Wedding Service Builder and the Funeral
  * Service Builder from client/public/leadership/services/<slug>.json. Saved to
- * the browser, exportable as a clean order of service. Stateless, no login.
+ * the browser — one autosaved working copy, plus up to twelve named saved
+ * copies per service (roadmap HS-5) so two weddings never overwrite each
+ * other. Exportable as a clean order of service. Stateless, no login.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link, useRoute } from "wouter";
@@ -12,7 +14,7 @@ import LoadFailed from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
 import { copyToClipboard } from "@/lib/clipboard";
 import { fetchJson } from "@/lib/fetch-json";
-import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { isArrayOf, readStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -40,6 +42,27 @@ const isState = (x: unknown): x is State => {
     typeof s.text === "object" && s.text !== null;
 };
 
+// Named saved copies (roadmap HS-5): the autosave is one working slot per
+// service; a pastor holding two weddings needs one per couple. Per-slug key,
+// capped at twelve.
+interface SaveRec { id: string; name: string; savedAt: string; data: State; }
+const savesKey = (slug: string) => `livewell-saves-service-builder-${slug}`;
+const isSaveRec = (x: unknown): x is SaveRec => {
+  const r = x as SaveRec;
+  return !!r && typeof r === "object" && typeof r.id === "string" && typeof r.name === "string" && typeof r.savedAt === "string" && isState(r.data);
+};
+const isSaveList = isArrayOf(isSaveRec);
+const MAX_SAVES = 12;
+
+// "Jun 14" — with the year when the copy is not from this year.
+const fmtSavedAt = (iso: string) => {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "";
+  const opts: Intl.DateTimeFormatOptions = { month: "short", day: "numeric" };
+  if (d.getFullYear() !== new Date().getFullYear()) opts.year = "numeric";
+  return d.toLocaleDateString(undefined, opts);
+};
+
 export default function ServiceBuilder() {
   const [, params] = useRoute("/leadership/service/:slug");
   const slug = params?.slug;
@@ -52,6 +75,8 @@ export default function ServiceBuilder() {
   const error = failedAt === `${slug}|${nonce}`;
   const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "failed">("idle");
   const [persistFailed, setPersistFailed] = useState(false);
+  const [copies, setCopies] = useState<SaveRec[]>([]);
+  const [saveName, setSaveName] = useState("");
   const KEY = slug ? `livewell-service-${slug}` : "";
 
   useEffect(() => {
@@ -63,6 +88,8 @@ export default function ServiceBuilder() {
     setData(null);
     setSt({ include: {}, pick: {}, text: {} });
     setCopyStatus("idle");
+    setCopies(readStoredJSON(savesKey(slug), isSaveList, []));
+    setSaveName("");
     let stale = false;
     const saved = readStoredJSON<State | null>(
       `livewell-service-${slug}`,
@@ -89,6 +116,26 @@ export default function ServiceBuilder() {
   }, [st, KEY, data]);
 
   const choose = (el: Element, idx: number) => setSt((s) => ({ ...s, pick: { ...s.pick, [el.id]: idx }, text: { ...s.text, [el.id]: el.samples[idx]?.text ?? "" } }));
+
+  // Saved copies live under their own per-slug key; the working slot above is
+  // untouched. Loading a copy replaces the current order of service, and the
+  // autosave carries it on.
+  const atCap = copies.length >= MAX_SAVES;
+  const saveCopy = () => {
+    const name = saveName.trim();
+    if (!slug || !name || atCap) return;
+    const next = [{ id: Date.now().toString(36), name, savedAt: new Date().toISOString(), data: st }, ...copies];
+    setCopies(next);
+    setSaveName("");
+    if (!writeStoredJSON(savesKey(slug), next)) setPersistFailed(true);
+  };
+  const loadCopy = (c: SaveRec) => setSt(c.data);
+  const deleteCopy = (id: string) => {
+    if (!slug) return;
+    const next = copies.filter((c) => c.id !== id);
+    setCopies(next);
+    if (!writeStoredJSON(savesKey(slug), next)) setPersistFailed(true);
+  };
 
   const order = useMemo(() => {
     if (!data) return "";
@@ -167,6 +214,30 @@ export default function ServiceBuilder() {
               {copyStatus === "failed" && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Copy failed — select and copy manually.</span>}
             </div>
             {persistFailed && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", marginTop: "8px" }}>Couldn't save to this browser — your work here will not survive a reload.</p>}
+
+            <div style={{ marginTop: "var(--s-4)", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-3) var(--s-4)" }}>
+              <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>Saved copies</div>
+              <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+                <input value={saveName} onChange={(e) => setSaveName(e.target.value)} aria-label="Name for this copy" placeholder="Name this copy"
+                  style={{ flex: "1 1 200px", fontFamily: "var(--B)", fontSize: "14px", padding: "8px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)" }} />
+                <button onClick={saveCopy} disabled={!saveName.trim() || atCap}
+                  style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", padding: "8px 14px", background: !saveName.trim() || atCap ? "var(--border)" : "var(--mustard)", color: !saveName.trim() || atCap ? "var(--ink-muted)" : "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: !saveName.trim() || atCap ? "not-allowed" : "pointer" }}>Save a copy</button>
+              </div>
+              {atCap && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "8px 0 0" }}>Twelve copies is the limit — delete one to save another.</p>}
+              {copies.length > 0 && (
+                <div style={{ marginTop: "10px" }}>
+                  {copies.map((c) => (
+                    <div key={c.id} style={{ display: "flex", alignItems: "center", gap: "10px", padding: "8px 0", borderTop: "1px solid var(--border)" }}>
+                      <span style={{ flex: 1, fontFamily: "var(--B)", fontSize: "14px", color: "var(--ink)", overflowWrap: "anywhere" }}>{c.name}</span>
+                      <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", whiteSpace: "nowrap" }}>{fmtSavedAt(c.savedAt)}</span>
+                      <button onClick={() => loadCopy(c)} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px", padding: "5px 12px", background: "none", color: "var(--ink)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>Load</button>
+                      <button onClick={() => deleteCopy(c.id)} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px", padding: "5px 12px", background: "none", color: "var(--ink-muted)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>Delete</button>
+                    </div>
+                  ))}
+                </div>
+              )}
+              <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", margin: "10px 0 0" }}>Saves stay in this browser.</p>
+            </div>
             {data.closing && <p style={{ fontFamily: "var(--B)", fontSize: "15px", fontStyle: "italic", color: "var(--ink-muted)", marginTop: "var(--s-4)", lineHeight: 1.7 }}>{data.closing}</p>}
           </div>
         </section>

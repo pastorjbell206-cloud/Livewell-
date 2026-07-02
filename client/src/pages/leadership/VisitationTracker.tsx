@@ -2,7 +2,8 @@
  * The Visitation Tracker (/leadership/visitation). Keep track of who you have
  * seen, who is waiting, and who is about to fall through the cracks. Everything
  * stays on the device (localStorage). No login, no server, no member data
- * leaves the browser.
+ * leaves the browser — except as a JSON file the pastor downloads and keeps
+ * (roadmap HS-5), so the record is not trapped in one browser profile.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
@@ -58,6 +59,21 @@ export default function VisitationTracker() {
 
   const groups = useMemo(() => STATUS.map((s) => ({ ...s, list: people.filter((p) => p.status === s.id) })), [people]);
 
+  // Pastoral-care records should not be trapped in one browser: serialize the
+  // list to a dated JSON file the pastor keeps wherever records live.
+  const download = () => {
+    if (!people.length) return;
+    const blob = new Blob([JSON.stringify(people, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `livewell-visitation-${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
   return (
     <Layout>
       <SEOMeta title="The Visitation Tracker — Who You Have Seen, Who Is Waiting" description="Keep track of who you have visited, who is scheduled, and who is about to fall through the cracks. Everything stays on your device." url="https://www.livewellbyjamesbell.co/leadership/visitation" />
@@ -76,6 +92,10 @@ export default function VisitationTracker() {
             <input value={name} onChange={(e) => setName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} aria-label="Name" placeholder="Name" style={{ flex: "1 1 160px", fontFamily: "var(--B)", fontSize: "15px", padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)" }} />
             <input value={reason} onChange={(e) => setReason(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} aria-label="Reason (hospital, grief, new, shut-in)" placeholder="Reason (hospital, grief, new, shut-in)" style={{ flex: "2 1 220px", fontFamily: "var(--B)", fontSize: "15px", padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)" }} />
             <button onClick={add} disabled={!name.trim()} style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "10px 16px", background: !name.trim() ? "var(--border)" : "var(--mustard)", color: !name.trim() ? "var(--ink-muted)" : "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: !name.trim() ? "not-allowed" : "pointer" }}><Plus size={15} /> Add</button>
+          </div>
+          <div style={{ display: "flex", gap: "10px", alignItems: "center", flexWrap: "wrap", margin: "0 0 var(--s-3)" }}>
+            <button onClick={download} disabled={!people.length} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", padding: "8px 14px", background: "none", color: !people.length ? "var(--ink-muted)" : "var(--ink)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: !people.length ? "not-allowed" : "pointer" }}>Download a copy</button>
+            <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)" }}>A JSON file — keep it wherever you keep your records.</span>
           </div>
           {persistFailed && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>Couldn't save to this browser — your work here will not survive a reload.</p>}
 

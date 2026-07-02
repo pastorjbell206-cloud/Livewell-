@@ -2,8 +2,9 @@
  * The assessment engine (/leadership/assessment/:slug). One component drives all
  * the leadership self-examinations from client/public/leadership/assessments/
  * <slug>.json. Each is a searching, prayerful read, never a scorecard. Answers
- * are scored on a scale and mapped to a band. Stateless, results stay in the
- * browser, nothing is sent anywhere.
+ * are scored on a scale and mapped to a band. Answers save to this browser per
+ * assessment (roadmap HS-5), so a long instrument survives a reload; nothing is
+ * sent anywhere.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link, useRoute } from "wouter";
@@ -11,6 +12,7 @@ import Layout from "@/components/Layout";
 import LoadFailed from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
 import { fetchJson } from "@/lib/fetch-json";
+import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -34,12 +36,24 @@ const isData = (x: unknown): x is Data => {
     Array.isArray(d.bands) && d.bands.length > 0;
 };
 
+// Saved progress (roadmap HS-5): sixty-plus answered questions should survive a
+// reload. Per-slug key; the guard keeps corrupt storage away from the render.
+interface Progress { answers: Record<string, number>; step?: number; savedAt: string; }
+const progressKey = (slug: string) => `livewell-progress-leader-assessment-${slug}`;
+const isProgress = (x: unknown): x is Progress => {
+  const p = x as Progress;
+  return !!p && typeof p === "object" && !!p.answers && typeof p.answers === "object" && !Array.isArray(p.answers) &&
+    Object.values(p.answers).every((v) => typeof v === "number");
+};
+
 export default function LeaderAssessment() {
   const [, params] = useRoute("/leadership/assessment/:slug");
   const slug = params?.slug;
   const [data, setData] = useState<Data | null>(null);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [resumed, setResumed] = useState(false);
+  const [persistFailed, setPersistFailed] = useState(false);
   const [nonce, setNonce] = useState(0);
   // The attempt (slug + retry nonce) that failed. Deriving `error` from it means
   // a slug change or a retry clears the panel without extra state writes.
@@ -48,13 +62,37 @@ export default function LeaderAssessment() {
 
   useEffect(() => {
     if (!slug) return;
-    setData(null); setAnswers({}); setSubmitted(false);
+    // Reset, then restore THIS slug's saved progress — the key carries the slug,
+    // so switching assessments never leaks answers across instruments.
+    setData(null);
+    const stored = readStoredJSON<Progress | null>(progressKey(slug), (x): x is Progress | null => isProgress(x), null);
+    const restored = stored?.answers ?? {};
+    setAnswers(restored);
+    setSubmitted(stored?.step === 1 && Object.keys(restored).length > 0);
+    setResumed(Object.keys(restored).length > 0);
     let stale = false;
     fetchJson<Data>(`/leadership/assessments/${slug}.json`, isData)
       .then((d) => { if (!stale) setData(d); })
       .catch(() => { if (!stale) setFailedAt(`${slug}|${nonce}`); });
     return () => { stale = true; };
   }, [slug, nonce]);
+
+  // Save on every answer (the HS-4 cleaned-up 0ms timer idiom). Gated on data:
+  // after a slug change nothing is written under the new key until the reset
+  // above has landed, so one instrument's answers never overwrite another's.
+  useEffect(() => {
+    if (!slug || !data) return;
+    const t = setTimeout(() => {
+      const ok = writeStoredJSON(progressKey(slug), { answers, step: submitted ? 1 : 0, savedAt: new Date().toISOString() });
+      setPersistFailed(!ok);
+    }, 0);
+    return () => clearTimeout(t);
+  }, [answers, submitted, slug, data]);
+
+  const startFresh = () => {
+    if (slug) removeStoredJSON(progressKey(slug));
+    setAnswers({}); setSubmitted(false); setResumed(false);
+  };
 
   const max = data ? data.scale.length : 5;
   const answered = data ? Object.keys(answers).length : 0;
@@ -96,6 +134,13 @@ export default function LeaderAssessment() {
           <div style={{ ...wrap, maxWidth: "740px" }}>
             {data.intro.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", marginBottom: "12px" }}>{p}</p>)}
 
+            {resumed && (
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", marginTop: "var(--s-3)" }}>
+                <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Picked up where you left off.</span>
+                <button onClick={startFresh} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", padding: "6px 12px", background: "none", color: "var(--ink-muted)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>Start fresh</button>
+              </div>
+            )}
+
             <div style={{ marginTop: "var(--s-4)" }}>
               {data.questions.map((q, n) => (
                 <div key={q.id} style={{ marginBottom: "var(--s-4)", paddingBottom: "var(--s-3)", borderBottom: "1px solid var(--border)" }}>
@@ -118,6 +163,7 @@ export default function LeaderAssessment() {
               style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "15px", padding: "12px 22px", background: answered < data.questions.length ? "var(--border)" : "var(--mustard)", color: answered < data.questions.length ? "var(--ink-muted)" : "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: answered < data.questions.length ? "not-allowed" : "pointer" }}>
               {answered < data.questions.length ? `Answer all ${data.questions.length} (${answered} done)` : "See where this leaves you"}
             </button>
+            {persistFailed && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", marginTop: "8px" }}>Couldn't save to this browser — your work here will not survive a reload.</p>}
 
             {submitted && result && (
               <div style={{ marginTop: "var(--s-5)", background: "var(--charcoal)", color: "var(--bone)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: "3px solid var(--mustard)" }}>
@@ -126,6 +172,9 @@ export default function LeaderAssessment() {
                 {result.body.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "rgba(245,240,230,0.9)", marginBottom: "12px" }}>{p}</p>)}
                 <p style={{ fontFamily: "var(--B)", fontSize: "14px", fontStyle: "italic", color: "rgba(245,240,230,0.6)", marginTop: "var(--s-3)", borderTop: "1px solid rgba(245,240,230,0.15)", paddingTop: "12px" }}>{data.closing}</p>
               </div>
+            )}
+            {submitted && (
+              <button onClick={() => setSubmitted(false)} style={{ marginTop: "12px", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "10px 18px", background: "none", color: "var(--ink-muted)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>Change my answers</button>
             )}
           </div>
         </section>

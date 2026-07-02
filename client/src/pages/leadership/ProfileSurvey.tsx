@@ -4,8 +4,9 @@
  * the Church Health Survey, the Spiritual Gifts Test, and the Church
  * Revitalization Survey. Each question belongs to a dimension; the engine scores
  * every dimension and renders either a per-dimension PROFILE (health bars with
- * feedback) or a RANKED list (top gifts). Stateless, results stay in the
- * browser, nothing is sent anywhere.
+ * feedback) or a RANKED list (top gifts). Answers save to this browser per
+ * survey (roadmap HS-5), so a ninety-question instrument survives a reload;
+ * nothing is sent anywhere.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link, useRoute } from "wouter";
@@ -13,6 +14,7 @@ import Layout from "@/components/Layout";
 import LoadFailed from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
 import { fetchJson } from "@/lib/fetch-json";
+import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -38,12 +40,25 @@ const isData = (x: unknown): x is Data => {
     d.dimensions.every((dim) => !!dim && Array.isArray(dim.questions));
 };
 
+// Saved progress (roadmap HS-5): the longest instruments on the site — up to
+// ninety answers — should survive a reload. Per-slug key; the guard keeps
+// corrupt storage away from the render.
+interface Progress { answers: Record<string, number>; step?: number; savedAt: string; }
+const progressKey = (slug: string) => `livewell-progress-profile-survey-${slug}`;
+const isProgress = (x: unknown): x is Progress => {
+  const p = x as Progress;
+  return !!p && typeof p === "object" && !!p.answers && typeof p.answers === "object" && !Array.isArray(p.answers) &&
+    Object.values(p.answers).every((v) => typeof v === "number");
+};
+
 export default function ProfileSurvey() {
   const [, params] = useRoute("/leadership/survey/:slug");
   const slug = params?.slug;
   const [data, setData] = useState<Data | null>(null);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [resumed, setResumed] = useState(false);
+  const [persistFailed, setPersistFailed] = useState(false);
   const [nonce, setNonce] = useState(0);
   // The attempt (slug + retry nonce) that failed. Deriving `error` from it means
   // a slug change or a retry clears the panel without extra state writes.
@@ -52,13 +67,37 @@ export default function ProfileSurvey() {
 
   useEffect(() => {
     if (!slug) return;
-    setData(null); setAnswers({}); setSubmitted(false);
+    // Reset, then restore THIS slug's saved progress — the key carries the slug,
+    // so switching surveys never leaks answers across instruments.
+    setData(null);
+    const stored = readStoredJSON<Progress | null>(progressKey(slug), (x): x is Progress | null => isProgress(x), null);
+    const restored = stored?.answers ?? {};
+    setAnswers(restored);
+    setSubmitted(stored?.step === 1 && Object.keys(restored).length > 0);
+    setResumed(Object.keys(restored).length > 0);
     let stale = false;
     fetchJson<Data>(`/leadership/surveys/${slug}.json`, isData)
       .then((d) => { if (!stale) setData(d); })
       .catch(() => { if (!stale) setFailedAt(`${slug}|${nonce}`); });
     return () => { stale = true; };
   }, [slug, nonce]);
+
+  // Save on every answer (the HS-4 cleaned-up 0ms timer idiom). Gated on data:
+  // after a slug change nothing is written under the new key until the reset
+  // above has landed, so one survey's answers never overwrite another's.
+  useEffect(() => {
+    if (!slug || !data) return;
+    const t = setTimeout(() => {
+      const ok = writeStoredJSON(progressKey(slug), { answers, step: submitted ? 1 : 0, savedAt: new Date().toISOString() });
+      setPersistFailed(!ok);
+    }, 0);
+    return () => clearTimeout(t);
+  }, [answers, submitted, slug, data]);
+
+  const startFresh = () => {
+    if (slug) removeStoredJSON(progressKey(slug));
+    setAnswers({}); setSubmitted(false); setResumed(false);
+  };
 
   const max = data ? data.scale.length : 5;
   const allQuestions = useMemo(() => (data ? data.dimensions.flatMap((d) => d.questions.map((q) => ({ ...q, dim: d.id }))) : []), [data]);
@@ -112,6 +151,13 @@ export default function ProfileSurvey() {
           <div style={{ ...wrap, maxWidth: "760px" }}>
             {data.intro.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", marginBottom: "12px" }}>{p}</p>)}
 
+            {resumed && (
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", marginTop: "var(--s-3)" }}>
+                <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Picked up where you left off.</span>
+                <button onClick={startFresh} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", padding: "6px 12px", background: "none", color: "var(--ink-muted)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>Start fresh</button>
+              </div>
+            )}
+
             {data.dimensions.map((d) => (
               <div key={d.id} style={{ marginTop: "var(--s-4)" }}>
                 <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "4px" }}>{d.name}</div>
@@ -134,6 +180,7 @@ export default function ProfileSurvey() {
               style={{ marginTop: "var(--s-3)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "15px", padding: "12px 22px", background: answered < total ? "var(--border)" : "var(--mustard)", color: answered < total ? "var(--ink-muted)" : "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: answered < total ? "not-allowed" : "pointer" }}>
               {answered < total ? `Answer all ${total} (${answered} done)` : "See the profile"}
             </button>
+            {persistFailed && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", marginTop: "8px" }}>Couldn't save to this browser — your work here will not survive a reload.</p>}
 
             {submitted && (
               <div style={{ marginTop: "var(--s-5)" }}>
@@ -142,6 +189,7 @@ export default function ProfileSurvey() {
                 ) : (
                   <ProfileResult scored={scored} overallPct={overallPct} closing={data.closing} />
                 )}
+                <button onClick={() => setSubmitted(false)} style={{ marginTop: "12px", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "10px 18px", background: "none", color: "var(--ink-muted)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>Change my answers</button>
               </div>
             )}
           </div>

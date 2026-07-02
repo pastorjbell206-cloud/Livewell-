@@ -4,7 +4,9 @@
  * <slug>.json: the Premarital Counseling Workflow, the Discipleship Pathway
  * Planner, and the Church Revitalization Planner. Each is a sequence of stages,
  * each stage a set of prompts to work through and write into. Everything is
- * saved to the browser under the workflow slug. Stateless, no login, exportable.
+ * saved to the browser under the workflow slug — one autosaved working copy,
+ * plus up to twelve named saved copies per workflow (roadmap HS-5) so two
+ * counseled couples never overwrite each other. Stateless, no login, exportable.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link, useRoute } from "wouter";
@@ -13,7 +15,7 @@ import LoadFailed from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
 import { copyToClipboard } from "@/lib/clipboard";
 import { fetchJson } from "@/lib/fetch-json";
-import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { isArrayOf, readStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -36,6 +38,27 @@ const isAnswers = (x: unknown): x is Record<string, string> =>
   !!x && typeof x === "object" && !Array.isArray(x) &&
   Object.values(x as Record<string, unknown>).every((v) => typeof v === "string");
 
+// Named saved copies (roadmap HS-5): the autosave is one working slot per
+// workflow; a pastor counseling two couples needs one per couple. Per-slug key,
+// capped at twelve.
+interface SaveRec { id: string; name: string; savedAt: string; data: Record<string, string>; }
+const savesKey = (slug: string) => `livewell-saves-guided-workflow-${slug}`;
+const isSaveRec = (x: unknown): x is SaveRec => {
+  const r = x as SaveRec;
+  return !!r && typeof r === "object" && typeof r.id === "string" && typeof r.name === "string" && typeof r.savedAt === "string" && isAnswers(r.data);
+};
+const isSaveList = isArrayOf(isSaveRec);
+const MAX_SAVES = 12;
+
+// "Jun 14" — with the year when the copy is not from this year.
+const fmtSavedAt = (iso: string) => {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "";
+  const opts: Intl.DateTimeFormatOptions = { month: "short", day: "numeric" };
+  if (d.getFullYear() !== new Date().getFullYear()) opts.year = "numeric";
+  return d.toLocaleDateString(undefined, opts);
+};
+
 export default function GuidedWorkflow() {
   const [, params] = useRoute("/leadership/workflow/:slug");
   const slug = params?.slug;
@@ -50,6 +73,8 @@ export default function GuidedWorkflow() {
   const error = failedAt === `${slug}|${nonce}`;
   const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "failed">("idle");
   const [persistFailed, setPersistFailed] = useState(false);
+  const [copies, setCopies] = useState<SaveRec[]>([]);
+  const [saveName, setSaveName] = useState("");
 
   const KEY = slug ? `livewell-workflow-${slug}` : "";
 
@@ -57,6 +82,8 @@ export default function GuidedWorkflow() {
     if (!slug) return;
     setData(null); setCopyStatus("idle");
     setAnswers(readStoredJSON(`livewell-workflow-${slug}`, isAnswers, {}));
+    setCopies(readStoredJSON(savesKey(slug), isSaveList, []));
+    setSaveName("");
     let stale = false;
     fetchJson<Data>(`/leadership/workflows/${slug}.json`, isData)
       .then((d) => { if (!stale) { setData(d); setOpen(d.stages[0]?.id ?? null); } })
@@ -100,6 +127,26 @@ export default function GuidedWorkflow() {
   const savedEntries = Object.entries(answers).filter(([, v]) => v.trim());
   const copyRescue = () =>
     runCopy(savedEntries.map(([id, v]) => `${id}\n${v.trim()}`).join("\n\n"));
+
+  // Saved copies live under their own per-slug key; the working slot above is
+  // untouched. Loading a copy replaces the working answers, and the autosave
+  // carries it on.
+  const atCap = copies.length >= MAX_SAVES;
+  const saveCopy = () => {
+    const name = saveName.trim();
+    if (!slug || !name || atCap) return;
+    const next = [{ id: Date.now().toString(36), name, savedAt: new Date().toISOString(), data: answers }, ...copies];
+    setCopies(next);
+    setSaveName("");
+    if (!writeStoredJSON(savesKey(slug), next)) setPersistFailed(true);
+  };
+  const loadCopy = (c: SaveRec) => setAnswers(c.data);
+  const deleteCopy = (id: string) => {
+    if (!slug) return;
+    const next = copies.filter((c) => c.id !== id);
+    setCopies(next);
+    if (!writeStoredJSON(savesKey(slug), next)) setPersistFailed(true);
+  };
 
   return (
     <Layout>
@@ -177,6 +224,30 @@ export default function GuidedWorkflow() {
               {copyStatus === "idle" && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", opacity: saved ? 1 : 0, transition: "opacity .3s" }}>Saved to this browser</span>}
             </div>
             {persistFailed && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", marginTop: "8px" }}>Couldn't save to this browser — your work here will not survive a reload.</p>}
+
+            <div style={{ marginTop: "var(--s-4)", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-3) var(--s-4)" }}>
+              <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>Saved copies</div>
+              <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+                <input value={saveName} onChange={(e) => setSaveName(e.target.value)} aria-label="Name for this copy" placeholder="Name this copy"
+                  style={{ flex: "1 1 200px", fontFamily: "var(--B)", fontSize: "14px", padding: "8px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)" }} />
+                <button onClick={saveCopy} disabled={!saveName.trim() || atCap}
+                  style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", padding: "8px 14px", background: !saveName.trim() || atCap ? "var(--border)" : "var(--mustard)", color: !saveName.trim() || atCap ? "var(--ink-muted)" : "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: !saveName.trim() || atCap ? "not-allowed" : "pointer" }}>Save a copy</button>
+              </div>
+              {atCap && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "8px 0 0" }}>Twelve copies is the limit — delete one to save another.</p>}
+              {copies.length > 0 && (
+                <div style={{ marginTop: "10px" }}>
+                  {copies.map((c) => (
+                    <div key={c.id} style={{ display: "flex", alignItems: "center", gap: "10px", padding: "8px 0", borderTop: "1px solid var(--border)" }}>
+                      <span style={{ flex: 1, fontFamily: "var(--B)", fontSize: "14px", color: "var(--ink)", overflowWrap: "anywhere" }}>{c.name}</span>
+                      <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", whiteSpace: "nowrap" }}>{fmtSavedAt(c.savedAt)}</span>
+                      <button onClick={() => loadCopy(c)} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px", padding: "5px 12px", background: "none", color: "var(--ink)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>Load</button>
+                      <button onClick={() => deleteCopy(c.id)} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px", padding: "5px 12px", background: "none", color: "var(--ink-muted)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>Delete</button>
+                    </div>
+                  ))}
+                </div>
+              )}
+              <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", margin: "10px 0 0" }}>Saves stay in this browser.</p>
+            </div>
             {data.closing && <p style={{ fontFamily: "var(--B)", fontSize: "15px", fontStyle: "italic", color: "var(--ink-muted)", marginTop: "var(--s-4)", lineHeight: 1.7 }}>{data.closing}</p>}
           </div>
         </section>

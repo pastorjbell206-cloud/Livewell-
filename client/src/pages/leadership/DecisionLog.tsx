@@ -3,7 +3,9 @@
  * of benevolence requests and board decisions: what was asked, what was decided,
  * how much, and why. Everything stays on the device (localStorage). No names or
  * dollar figures leave the browser, which matters for the kind of thing a church
- * keeps in confidence. Stateless, no login.
+ * keeps in confidence — except as a JSON file the pastor downloads and keeps
+ * (roadmap HS-5), so the record is not trapped in one browser profile.
+ * Stateless, no login.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
@@ -53,6 +55,21 @@ export default function DecisionLog() {
 
   const shown = useMemo(() => (filter ? items.filter((i) => i.status === filter) : items), [items, filter]);
 
+  // A benevolence history should not be trapped in one browser: serialize the
+  // full log to a dated JSON file the church keeps wherever records live.
+  const download = () => {
+    if (!items.length) return;
+    const blob = new Blob([JSON.stringify(items, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `livewell-decision-log-${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
   return (
     <Layout>
       <SEOMeta title="The Benevolence and Decision Log — A Private Record" description="A private record of benevolence requests and board decisions: what was asked, what was decided, and why. Everything stays on the device." url="https://www.livewellbyjamesbell.co/leadership/decision-log" />
@@ -77,6 +94,10 @@ export default function DecisionLog() {
             </div>
             <textarea value={draft.note} onChange={(e) => setDraft({ ...draft, note: e.target.value })} rows={2} aria-label="The reasoning, the conditions, the follow-up" placeholder="The reasoning, the conditions, the follow-up" style={{ width: "100%", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)", resize: "vertical", marginBottom: "8px" }} />
             <button onClick={add} disabled={!draft.title.trim()} style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "10px 18px", background: !draft.title.trim() ? "var(--border)" : "var(--mustard)", color: !draft.title.trim() ? "var(--ink-muted)" : "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: !draft.title.trim() ? "not-allowed" : "pointer" }}><Plus size={15} /> Log it</button>
+          </div>
+          <div style={{ display: "flex", gap: "10px", alignItems: "center", flexWrap: "wrap", margin: "0 0 var(--s-3)" }}>
+            <button onClick={download} disabled={!items.length} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", padding: "8px 14px", background: "none", color: !items.length ? "var(--ink-muted)" : "var(--ink)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: !items.length ? "not-allowed" : "pointer" }}>Download a copy</button>
+            <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)" }}>A JSON file — keep it wherever you keep your records.</span>
           </div>
           {persistFailed && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>Couldn't save to this browser — your work here will not survive a reload.</p>}
 
