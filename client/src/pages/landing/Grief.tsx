@@ -32,16 +32,6 @@ export default function Grief() {
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>YOU ARE NOT ALONE</p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "40px", marginBottom: "32px" }}>
-            <div>
-              <p style={{ fontFamily: "var(--F)", fontSize: "48px", fontWeight: 400, color: "var(--ink)", lineHeight: 1 }}>57%</p>
-              <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", marginTop: "8px", lineHeight: 1.6 }}>of grieving adults say the most painful thing was being told to move on before they were ready.</p>
-            </div>
-            <div>
-              <p style={{ fontFamily: "var(--F)", fontSize: "48px", fontWeight: 400, color: "var(--ink)", lineHeight: 1 }}>1 in 4</p>
-              <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", marginTop: "8px", lineHeight: 1.6 }}>grieving Christians say their church made the grief harder, not easier.</p>
-            </div>
-          </div>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink)", lineHeight: 1.7, maxWidth: "68ch" }}>
             The church has too often treated grief as a problem to be solved with a verse. It is not. Grief is the evidence that you loved something real. These essays sit in the wreckage with you, not above it.
           </p>

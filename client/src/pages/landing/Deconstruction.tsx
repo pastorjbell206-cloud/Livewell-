@@ -97,11 +97,11 @@ export default function Deconstruction() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "40px", marginBottom: "32px" }}>
             <div>
               <p style={{ fontFamily: "var(--F)", fontSize: "48px", fontWeight: 400, color: "var(--ink)", lineHeight: 1 }}>40M</p>
-              <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", marginTop: "8px", lineHeight: 1.6 }}>American adults have left the faith they were raised in. The exodus is not slowing down.</p>
+              <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", marginTop: "8px", lineHeight: 1.6 }}>American adults have stopped going to church in the last twenty-five years — more than all new converts, restorations, and immigrations combined (The Great Dechurching, Davis and Graham with Burge, 2023).</p>
             </div>
             <div>
               <p style={{ fontFamily: "var(--F)", fontSize: "48px", fontWeight: 400, color: "var(--ink)", lineHeight: 1 }}>29%</p>
-              <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", marginTop: "8px", lineHeight: 1.6 }}>of Americans now identify as religiously unaffiliated. The "nones" are the fastest-growing group in American religion.</p>
+              <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", marginTop: "8px", lineHeight: 1.6 }}>of American adults now identify as religiously unaffiliated — the "nones" (Pew Research Center, 2021).</p>
             </div>
           </div>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink)", lineHeight: 1.7, maxWidth: "68ch" }}>
