@@ -174,6 +174,9 @@ export default function Marriage() {
           <div style={{ marginTop: "20px" }}>
             <Link href="/life/marriage-the-long-covenant" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none" }}>Or read the deep guide: Marriage, the Long Covenant</Link>
           </div>
+          <div style={{ marginTop: "12px" }}>
+            <Link href="/diagnostic" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none" }}>If the trouble is bigger than the marriage: take the Life Diagnostic</Link>
+          </div>
         </div>
       </section>
 

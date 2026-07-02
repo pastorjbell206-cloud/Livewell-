@@ -10,6 +10,7 @@ import { Mail } from "lucide-react";
 
 import { trpc } from "@/lib/trpc";
 import { useToast } from "@/contexts/ToastContext";
+import { substackSubscribeUrl } from "@/lib/site";
 
 interface NewsletterSignupProps {
   variant?: "inline" | "footer" | "minimal";
@@ -17,6 +18,11 @@ interface NewsletterSignupProps {
   description?: string;
   /** Where this signup was placed; helps with conversion attribution. */
   source?: string;
+  /**
+   * Which audience this placement implies (e.g. the pastors pages tag
+   * "pastor") — recorded on the subscriber row for the welcome sequence.
+   */
+  audienceType?: "skeptic" | "christian" | "pastor" | "exploring";
 }
 
 export function NewsletterSignup({
@@ -24,16 +30,22 @@ export function NewsletterSignup({
   title = "One serious essay a week",
   description = "Theology that meets the actual Tuesday afternoon of marriage, money, parenting, and doubt. Written slow, sent once a week. No spam, ever.",
   source,
+  audienceType,
 }: NewsletterSignupProps) {
   const [email, setEmail] = useState("");
+  // The essay itself is delivered by Substack, which has no signup API — so
+  // after recording the email here, we surface the confirm link instead of
+  // pretending the local row finished the job.
+  const [handoffUrl, setHandoffUrl] = useState<string | null>(null);
   const toastCtx = useToast();
   const addToast = toastCtx?.addToast;
   const subscribe = trpc.subscribers.subscribe.useMutation({
-    onSuccess: () => {
+    onSuccess: (_data, variables) => {
+      setHandoffUrl(substackSubscribeUrl(variables.email, source));
       addToast?.({
         type: "success",
-        title: "Subscribed",
-        message: "You're on the list. One essay a week, written slow.",
+        title: "One more step",
+        message: "You're on our list — confirm on Substack to get the essays.",
       });
       setEmail("");
     },
@@ -50,7 +62,7 @@ export function NewsletterSignup({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
-    subscribe.mutate({ email });
+    subscribe.mutate({ email, source, audienceType });
     if (source && typeof window !== "undefined") {
       // best-effort attribution; safe to ignore failures
       try {
@@ -62,6 +74,36 @@ export function NewsletterSignup({
       }
     }
   };
+
+  // Shared post-signup state: the local record is saved; the Substack
+  // confirmation is what actually starts the essays arriving.
+  const confirmLink = (onDark: boolean) =>
+    handoffUrl ? (
+      <p
+        style={{
+          fontFamily: "var(--B)",
+          fontSize: "14px",
+          lineHeight: 1.6,
+          color: onDark ? "rgba(245,240,230,0.8)" : "var(--ink-muted)",
+          margin: 0,
+        }}
+      >
+        You're on our list.{" "}
+        <a
+          href={handoffUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: onDark ? "var(--mustard)" : "var(--ink)",
+            textDecorationColor: "var(--mustard)",
+            fontWeight: 600,
+          }}
+        >
+          Confirm on Substack
+        </a>{" "}
+        to start getting the essays.
+      </p>
+    ) : null;
 
   if (variant === "footer") {
     return (
@@ -84,49 +126,54 @@ export function NewsletterSignup({
             {title}
           </span>
         </div>
-        <div style={{ display: "flex", gap: "8px" }}>
-          <input
-            type="email"
-            required
-            placeholder="you@example.com"
-            value={email}
-            onChange={e => setEmail(e.target.value)}
-            aria-label="Email address"
-            style={{
-              flex: 1,
-              padding: "10px 12px",
-              background: "var(--charcoal-soft)",
-              border: "1px solid var(--charcoal-soft)",
-              borderRadius: "var(--radius-sm)",
-              fontFamily: "var(--B)",
-              fontSize: "16px",
-              color: "var(--bone)",
-              outline: "none",
-            }}
-          />
-          <button
-            type="submit"
-            disabled={subscribe.isPending}
-            style={{
-              padding: "13px 18px",
-              background: "var(--mustard)",
-              color: "var(--ink)",
-              border: "none",
-              borderRadius: "var(--radius-sm)",
-              fontFamily: "var(--U)",
-              fontSize: "13px",
-              fontWeight: 600,
-              cursor: subscribe.isPending ? "wait" : "pointer",
-            }}
-          >
-            {subscribe.isPending ? "Subscribing…" : "Subscribe"}
-          </button>
-        </div>
+        {handoffUrl ? (
+          confirmLink(true)
+        ) : (
+          <div style={{ display: "flex", gap: "8px" }}>
+            <input
+              type="email"
+              required
+              placeholder="you@example.com"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              aria-label="Email address"
+              style={{
+                flex: 1,
+                padding: "10px 12px",
+                background: "var(--charcoal-soft)",
+                border: "1px solid var(--charcoal-soft)",
+                borderRadius: "var(--radius-sm)",
+                fontFamily: "var(--B)",
+                fontSize: "16px",
+                color: "var(--bone)",
+                outline: "none",
+              }}
+            />
+            <button
+              type="submit"
+              disabled={subscribe.isPending}
+              style={{
+                padding: "13px 18px",
+                background: "var(--mustard)",
+                color: "var(--ink)",
+                border: "none",
+                borderRadius: "var(--radius-sm)",
+                fontFamily: "var(--U)",
+                fontSize: "13px",
+                fontWeight: 600,
+                cursor: subscribe.isPending ? "wait" : "pointer",
+              }}
+            >
+              {subscribe.isPending ? "Subscribing…" : "Subscribe"}
+            </button>
+          </div>
+        )}
       </form>
     );
   }
 
   if (variant === "minimal") {
+    if (handoffUrl) return <div style={{ maxWidth: "420px" }}>{confirmLink(false)}</div>;
     return (
       <form
         onSubmit={handleSubmit}
@@ -206,6 +253,9 @@ export function NewsletterSignup({
       >
         {description}
       </p>
+      {handoffUrl ? (
+        confirmLink(false)
+      ) : (
       <form onSubmit={handleSubmit} style={{ display: "flex", gap: "8px" }}>
         <input
           type="email"
@@ -244,6 +294,7 @@ export function NewsletterSignup({
           {subscribe.isPending ? "Subscribing…" : "Subscribe"}
         </button>
       </form>
+      )}
     </div>
   );
 }

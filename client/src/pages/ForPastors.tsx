@@ -401,6 +401,7 @@ export default function ForPastors() {
           <NewsletterSignup
             variant="inline"
             source="for-pastors"
+            audienceType="pastor"
             title={NEWSLETTER_PITCH_PASTORAL.title}
             description={NEWSLETTER_PITCH_PASTORAL.description}
           />

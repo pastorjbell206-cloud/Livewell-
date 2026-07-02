@@ -2321,9 +2321,18 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
     case "subscribers.subscribe": {
       const email = String(input?.email || "").trim().toLowerCase();
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return { error: { message: "invalid email", code: -32603, data: { code: "BAD_REQUEST", httpStatus: 400 } } };
+      // Segment travels inside source ("pastors-page:pastor") so no schema
+      // change is needed; first write wins so the original context sticks.
+      const audienceType = typeof input?.audienceType === "string" ? input.audienceType.slice(0, 24) : "";
+      const source = [String(input?.source || "site").slice(0, 48), audienceType].filter(Boolean).join(":");
       try {
         await withConn(async (c) => {
-          await c.execute("INSERT INTO subscribers (email, name, source) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE name=COALESCE(VALUES(name), name)", [email, input?.name || null, input?.source || "site"]);
+          try {
+            await c.execute("INSERT INTO subscribers (email, name, source) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE name=COALESCE(VALUES(name), name)", [email, input?.name || null, source]);
+          } catch {
+            // The live table may lack name/source columns; never lose the email.
+            await c.execute("INSERT INTO subscribers (email) VALUES (?) ON DUPLICATE KEY UPDATE active=1", [email]);
+          }
         });
       } catch { /* ignore */ }
       return { result: { data: superjson.serialize({ ok: true }) } };
@@ -2478,7 +2487,11 @@ async function organizeArticles(req: VercelRequest, res: VercelResponse) {
 }
 
 async function adminStatus(req: VercelRequest, res: VercelResponse) {
-  if (!authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  const adminReady = Boolean(process.env.JWT_SECRET && process.env.ADMIN_PASSWORD_HASH);
+  // The login page probes this while logged out to decide whether to show the
+  // "Setup required" banner; gating the whole endpoint made the banner fire
+  // unconditionally. Unauthenticated callers get only the boolean.
+  if (!authedSession(req)) return json(res, 200, { ok: true, adminReady });
   json(res, 200, {
     ok: true,
     configured: {
@@ -2487,7 +2500,7 @@ async function adminStatus(req: VercelRequest, res: VercelResponse) {
       ADMIN_PASSWORD_HASH: Boolean(process.env.ADMIN_PASSWORD_HASH),
       STRIPE_SECRET_KEY: Boolean(process.env.STRIPE_SECRET_KEY),
     },
-    adminReady: Boolean(process.env.JWT_SECRET && process.env.ADMIN_PASSWORD_HASH),
+    adminReady,
   });
 }
 

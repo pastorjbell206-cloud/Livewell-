@@ -44,12 +44,15 @@ interface SegmentedSignupProps {
   title?: string;
   description?: string;
   variant?: "card" | "panel";
+  /** Where this signup sits (attribution) — recorded on the subscriber row. */
+  source?: string;
 }
 
 export function SegmentedSignup({
   title = "Subscribe — and choose what you'll get",
   description = "One essay a week. Different lead essay depending on who you are.",
   variant = "card",
+  source,
 }: SegmentedSignupProps) {
   const [email, setEmail] = useState("");
   const [audience, setAudience] = useState<Audience | null>(null);
@@ -74,8 +77,8 @@ export function SegmentedSignup({
     e.preventDefault();
     if (!email || !audience) return;
 
-    // 1. Best-effort: record the email in our own table.
-    subscribe.mutate({ email });
+    // 1. Best-effort: record the email + segment in our own table.
+    subscribe.mutate({ email, source, audienceType: audience });
 
     // 2. Analytics: capture the segment client-side.
     if (typeof window !== "undefined") {

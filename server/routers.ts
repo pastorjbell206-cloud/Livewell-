@@ -481,7 +481,18 @@ export const appRouter = router({
   // ─── Subscribers ─────────────────────────────────────────────────
   subscribers: router({
     subscribe: publicProcedure
-      .input(z.object({ email: z.string().email() }))
+      .input(
+        z.object({
+          email: z.string().email(),
+          // Where the signup form sat (attribution) and which audience the
+          // reader self-selected. The dev schema has no columns for these;
+          // prod (api/index.ts) records them on the subscriber row.
+          source: z.string().max(64).optional(),
+          audienceType: z
+            .enum(["skeptic", "christian", "pastor", "exploring"])
+            .optional(),
+        })
+      )
       .mutation(async ({ input }) => {
         await addSubscriber(input.email);
         return { success: true };
