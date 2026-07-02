@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { useTheme } from "@/contexts/ThemeContext";
 import { Sun, Moon } from "lucide-react";
 import { pillarUrl } from "@/lib/taxonomy";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 const footerLink = { color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" } as const;
 const colTitle = { fontSize: "13px", fontWeight: "bold", marginBottom: "16px", color: "#ffffff", textTransform: "uppercase", letterSpacing: "1px" } as const;
@@ -99,6 +100,11 @@ export default function Footer() {
               <a href="https://pastorsconnectionnetwork.com" target="_blank" rel="noopener noreferrer" style={footerLink}>Pastors Network</a>
               <a href="https://substack.com/@jamesbell333289" target="_blank" rel="noopener noreferrer" style={footerLink}>Substack Newsletter</a>
               <a href="mailto:Pastorjbell206@gmail.com" style={footerLink}>Contact</a>
+            </div>
+            {/* The one real signup form, on all ~200 Layout pages (QW-25).
+                Before this the footer offered only an outbound Substack link. */}
+            <div style={{ marginTop: "18px" }}>
+              <NewsletterSignup variant="footer" source="footer" />
             </div>
           </div>
         </div>
