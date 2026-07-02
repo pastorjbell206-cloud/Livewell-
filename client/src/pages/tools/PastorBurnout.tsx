@@ -444,12 +444,218 @@ function getOverallBurnout(score: number): {
   };
 }
 
+/* ── Attempt history (localStorage) ────────────────────────────── */
+
+/*
+  Versioned key: { v: 1, runs: [{ date, total, scores }] }.
+  scores is keyed by category slug (3..15 each); total is 24..120.
+  Reads are defensive -- a corrupted or missing entry is skipped, never
+  crashed on. If storage is unavailable the diagnostic still works; it
+  just forgets between visits.
+*/
+
+const STORAGE_KEY = "lw-pastor-burnout";
+
+interface RunEntry {
+  date: string; // ISO
+  total: number;
+  scores: Record<string, number>;
+}
+
+function isValidRun(entry: unknown): entry is RunEntry {
+  if (!entry || typeof entry !== "object") return false;
+  const r = entry as Partial<RunEntry>;
+  return (
+    typeof r.date === "string" &&
+    !Number.isNaN(new Date(r.date).getTime()) &&
+    typeof r.total === "number" &&
+    Number.isFinite(r.total) &&
+    typeof r.scores === "object" &&
+    r.scores !== null
+  );
+}
+
+function loadHistory(): RunEntry[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = window.localStorage.getItem(STORAGE_KEY);
+    if (!raw) return [];
+    const parsed: unknown = JSON.parse(raw);
+    if (!parsed || typeof parsed !== "object") return [];
+    const box = parsed as { v?: unknown; runs?: unknown };
+    if (box.v !== 1 || !Array.isArray(box.runs)) return [];
+    return box.runs.filter(isValidRun);
+  } catch {
+    return [];
+  }
+}
+
+function saveHistory(runs: RunEntry[]): boolean {
+  try {
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify({ v: 1, runs }));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/* ── The recovery check rhythm ─────────────────────────────────── */
+
+/*
+  Burnout moves faster than a six-month review cycle. A score in the
+  Active Burnout or Crisis bands gets a 30-day check; everything above
+  those bands gets 90.
+*/
+function checkIntervalDays(total: number): number {
+  return total / 120 < 0.6 ? 30 : 90;
+}
+
+function addDays(iso: string, days: number): Date {
+  const d = new Date(iso);
+  d.setDate(d.getDate() + days);
+  return d;
+}
+
+function fmtDate(d: Date | string): string {
+  const date = typeof d === "string" ? new Date(d) : d;
+  if (Number.isNaN(date.getTime())) return "";
+  return date.toLocaleDateString(undefined, {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
+
+function fmtAxisDate(iso: string): string {
+  return new Date(iso).toLocaleDateString(undefined, {
+    month: "short",
+    day: "numeric",
+  });
+}
+
+function formatDelta(prev: number | undefined, cur: number): string | null {
+  if (typeof prev !== "number" || !Number.isFinite(prev)) return null;
+  const delta = cur - prev;
+  const sign = delta >= 0 ? "+" : "";
+  return `last time ${prev}, now ${cur} (${sign}${delta})`;
+}
+
+/** Runs that can be charted: a real date and a real total. */
+function chartableRuns(history: RunEntry[]): RunEntry[] {
+  return history.filter(
+    (e) =>
+      !Number.isNaN(new Date(e.date).getTime()) &&
+      typeof e.total === "number" &&
+      Number.isFinite(e.total) &&
+      e.total >= 0 &&
+      e.total <= 120
+  );
+}
+
+/* ── The long view: inline SVG, no chart library ───────────────── */
+
+function TrajectoryChart({ runs }: { runs: RunEntry[] }) {
+  const W = 640;
+  const H = 250;
+  const padL = 44;
+  const padR = 16;
+  const padT = 14;
+  const padB = 34;
+  const innerW = W - padL - padR;
+  const innerH = H - padT - padB;
+  const n = runs.length;
+  const x = (i: number) =>
+    n <= 1 ? padL + innerW / 2 : padL + (i / (n - 1)) * innerW;
+  const y = (v: number) =>
+    padT + ((120 - Math.max(0, Math.min(120, v))) / 120) * innerH;
+  const totals = runs.map((r) => r.total);
+  const labelIdx =
+    n <= 4
+      ? runs.map((_, i) => i)
+      : Array.from(
+          new Set([
+            0,
+            Math.round((n - 1) / 3),
+            Math.round(((n - 1) * 2) / 3),
+            n - 1,
+          ])
+        );
+  return (
+    <svg
+      viewBox={`0 0 ${W} ${H}`}
+      style={{ width: "100%", height: "auto", display: "block" }}
+      role="img"
+      aria-label={`Total burnout score across ${n} readings, ${fmtDate(runs[0].date)} to ${fmtDate(runs[n - 1].date)}, moving from ${totals[0]} to ${totals[n - 1]} out of 120. Higher is healthier.`}
+    >
+      {[24, 48, 72, 96, 120].map((v) => (
+        <g key={v}>
+          <line
+            x1={padL}
+            y1={y(v)}
+            x2={W - padR}
+            y2={y(v)}
+            stroke="var(--border)"
+            strokeWidth={1}
+          />
+          <text
+            x={padL - 8}
+            y={y(v) + 4}
+            textAnchor="end"
+            fontSize={11}
+            fontFamily="var(--U)"
+            fill="var(--ink-muted)"
+          >
+            {v}
+          </text>
+        </g>
+      ))}
+      <polyline
+        points={totals
+          .map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`)
+          .join(" ")}
+        fill="none"
+        stroke="var(--ink)"
+        strokeWidth={2}
+        strokeLinejoin="round"
+        strokeLinecap="round"
+      />
+      {totals.map((v, i) => (
+        <circle
+          key={i}
+          cx={x(i)}
+          cy={y(v)}
+          r={3.5}
+          fill="var(--mustard)"
+          stroke="var(--ink)"
+          strokeWidth={1}
+        />
+      ))}
+      {labelIdx.map((i) => (
+        <text
+          key={`d-${i}`}
+          x={x(i)}
+          y={H - 10}
+          textAnchor={i === 0 ? "start" : i === n - 1 ? "end" : "middle"}
+          fontSize={11}
+          fontFamily="var(--U)"
+          fill="var(--ink-muted)"
+        >
+          {fmtAxisDate(runs[i].date)}
+        </text>
+      ))}
+    </svg>
+  );
+}
+
 /* ── Component ─────────────────────────────────────────────────── */
 
 export default function PastorBurnout() {
   const [currentCategory, setCurrentCategory] = useState(0);
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [showResults, setShowResults] = useState(false);
+  const [history, setHistory] = useState<RunEntry[]>(() => loadHistory());
+  const [previous, setPrevious] = useState<RunEntry | null>(null);
+  const [saved, setSaved] = useState(true);
   const resultsRef = useRef<HTMLDivElement>(null);
 
   const category = CATEGORIES[currentCategory];
@@ -467,8 +673,24 @@ export default function PastorBurnout() {
     setAnswers((prev) => ({ ...prev, [questionId]: value }));
   };
 
+  const finishAndSave = () => {
+    const scores: Record<string, number> = {};
+    for (const cat of CATEGORIES) {
+      scores[cat.slug] = getAdjustedScore(answers, cat);
+    }
+    const total = CATEGORIES.reduce((sum, cat) => sum + scores[cat.slug], 0);
+    // Prefer stored history; fall back to in-memory state when storage is out.
+    const stored = loadHistory();
+    const prior = stored.length >= history.length ? stored : history;
+    setPrevious(prior.length > 0 ? prior[prior.length - 1] : null);
+    const next = [...prior, { date: new Date().toISOString(), total, scores }];
+    setHistory(next);
+    setSaved(saveHistory(next));
+  };
+
   const handleNext = () => {
     if (isLastCategory && allAnswered) {
+      finishAndSave();
       setShowResults(true);
       setTimeout(() => {
         resultsRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -490,7 +712,25 @@ export default function PastorBurnout() {
     setAnswers({});
     setCurrentCategory(0);
     setShowResults(false);
+    setPrevious(null);
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleClearHistory = () => {
+    if (
+      !window.confirm(
+        "Clear your saved attempts from this browser? Your current results stay on screen."
+      )
+    ) {
+      return;
+    }
+    setHistory([]);
+    setPrevious(null);
+    try {
+      window.localStorage.removeItem(STORAGE_KEY);
+    } catch {
+      // Nothing to clear if storage is unavailable.
+    }
   };
 
   const getCategoryScore = (cat: Category) => getAdjustedScore(answers, cat);
