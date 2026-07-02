@@ -41,7 +41,13 @@ export default function HistoryEssay() {
             <Link href="/theology/history" style={{ color: "inherit" }}>Church History</Link>
             {data ? ` · ${data.era} · ${data.dateRange}` : ""}
           </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>{data?.title ?? (missing ? "Not found" : "Loading…")}</h1>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>{data?.title ?? (missing ? "That essay is not here yet." : "Loading the essay…")}</h1>
+          {missing && (
+            <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "60ch" }}>
+              It may have moved. Start from the{" "}
+              <Link href="/theology/history" style={{ color: "var(--mustard)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Church History library</Link>.
+            </p>
+          )}
           {data?.subtitle && <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch" }}>{data.subtitle}</p>}
         </div>
       </section>

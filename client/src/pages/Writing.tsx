@@ -598,16 +598,27 @@ export default function Writing() {
       >
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           {postsQuery.isLoading && (
-            <p
+            <div
+              role="status"
+              aria-label="Loading the writing"
               style={{
-                fontFamily: "var(--U)",
-                color: "var(--ink-muted)",
-                textAlign: "center",
-                padding: "var(--s-6) 0",
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+                gap: "24px",
               }}
             >
-              Loading the writing…
-            </p>
+              {Array.from({ length: 6 }, (_, i) => (
+                <div
+                  key={i}
+                  className="animate-pulse"
+                  style={{
+                    background: "var(--bone-warm)",
+                    borderRadius: "var(--radius-sm)",
+                    height: "200px",
+                  }}
+                />
+              ))}
+            </div>
           )}
 
           {!postsQuery.isLoading && rest.length === 0 && (

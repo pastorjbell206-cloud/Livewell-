@@ -59,7 +59,13 @@ export default function LifeDomain() {
             <Link href="/life" style={{ color: "inherit" }}>Integrated Life</Link>
             {data?.pillar ? ` · ${data.pillar}` : ""}
           </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "24ch" }}>{data?.title ?? (missing ? "Not found" : "Loading…")}</h1>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "24ch" }}>{data?.title ?? (missing ? "That page is not here yet." : "Loading the page…")}</h1>
+          {missing && (
+            <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "60ch" }}>
+              It may have moved. Start from the{" "}
+              <Link href="/life" style={{ color: "var(--mustard)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Integrated Life index</Link>.
+            </p>
+          )}
           {data?.subtitle && <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch" }}>{data.subtitle}</p>}
         </div>
       </section>

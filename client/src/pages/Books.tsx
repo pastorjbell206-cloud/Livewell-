@@ -730,8 +730,33 @@ export default function Books() {
               marginBottom: "var(--s-5)",
             }}
           >
-            All {authored.length} books by James Bell
+            {booksQuery.isLoading
+              ? "Books by James Bell"
+              : `All ${authored.length} books by James Bell`}
           </h2>
+          {booksQuery.isLoading && (
+            <div
+              role="status"
+              aria-label="Loading the catalog"
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
+                gap: "var(--s-4)",
+              }}
+            >
+              {Array.from({ length: 8 }, (_, i) => (
+                <div
+                  key={i}
+                  className="animate-pulse"
+                  style={{
+                    background: "var(--bone)",
+                    borderRadius: "var(--radius-sm)",
+                    aspectRatio: "2 / 3",
+                  }}
+                />
+              ))}
+            </div>
+          )}
           {authored.length === 0 && !booksQuery.isLoading && (
             <p
               style={{
@@ -740,7 +765,7 @@ export default function Books() {
                 padding: "var(--s-4) 0",
               }}
             >
-              The catalog is loading from the database.
+              The catalog did not load. Refresh the page and it should appear.
             </p>
           )}
           <div

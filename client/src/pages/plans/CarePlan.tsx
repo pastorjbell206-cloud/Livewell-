@@ -99,7 +99,13 @@ export default function CarePlan() {
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>
             <Link href="/help" style={{ color: "inherit" }}>Find Help</Link> · An eight-week guided plan
           </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>{data?.title ?? (missing ? "Not found" : "Loading…")}</h1>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>{data?.title ?? (missing ? "That plan is not here yet." : "Loading the plan…")}</h1>
+          {missing && (
+            <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "60ch" }}>
+              It may have moved. Start from the{" "}
+              <Link href="/help" style={{ color: "var(--mustard)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Find Help page</Link>.
+            </p>
+          )}
           {data && data.intro.split("\n\n").map((p, i) => (
             <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch", marginBottom: "12px" }}>{p}</p>
           ))}

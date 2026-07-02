@@ -483,15 +483,27 @@ export default function Home() {
           </div>
 
           {articlesQuery.isLoading && (
-            <p
+            <div
+              role="status"
+              aria-label="Loading the essays"
               style={{
-                fontFamily: "var(--U)",
-                color: "var(--ink-muted)",
-                padding: "var(--s-5) 0",
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+                gap: "24px",
               }}
             >
-              Loading…
-            </p>
+              {Array.from({ length: 3 }, (_, i) => (
+                <div
+                  key={i}
+                  className="animate-pulse"
+                  style={{
+                    background: "var(--bone)",
+                    borderRadius: "var(--radius-sm)",
+                    height: "200px",
+                  }}
+                />
+              ))}
+            </div>
           )}
 
           {flagship.length > 0 && (
