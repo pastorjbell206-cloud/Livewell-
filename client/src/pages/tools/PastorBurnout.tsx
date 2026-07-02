@@ -385,7 +385,11 @@ const REVERSE_SCORED_IDS = new Set([
 
 function getAdjustedScore(answers: Record<number, number>, cat: Category): number {
   return cat.questions.reduce((sum, q) => {
-    const raw = answers[q.id] || 0;
+    const raw = answers[q.id];
+    // An unanswered item contributes 0 either way. Reverse-scoring a missing
+    // answer as 6 - 0 = 6 would count silence as maximum health — on a
+    // burnout instrument, the one direction an error must never lean.
+    if (!raw) return sum;
     return sum + (REVERSE_SCORED_IDS.has(q.id) ? 6 - raw : raw);
   }, 0);
 }
@@ -859,7 +863,7 @@ export default function PastorBurnout() {
 
               <button
                 onClick={handleNext}
-                disabled={!canProceed}
+                disabled={isLastCategory ? !allAnswered : !canProceed}
                 style={{
                   display: "flex",
                   alignItems: "center",

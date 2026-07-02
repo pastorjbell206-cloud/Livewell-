@@ -854,7 +854,7 @@ export default function LifeAudit() {
 
               <button
                 onClick={handleNext}
-                disabled={!canProceed}
+                disabled={isLastCategory ? !allAnswered : !canProceed}
                 style={{
                   display: "flex",
                   alignItems: "center",

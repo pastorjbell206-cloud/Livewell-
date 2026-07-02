@@ -761,7 +761,7 @@ export default function ChurchHealth() {
 
               <button
                 onClick={handleNext}
-                disabled={!canProceed}
+                disabled={isLastCategory ? !allAnswered : !canProceed}
                 style={{
                   display: "flex",
                   alignItems: "center",
