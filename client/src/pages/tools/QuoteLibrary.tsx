@@ -1,17 +1,35 @@
 /**
- * Quote Library (/tools/quotes) — browsable pull quotes from the LiveWell
- * article library, designed for social sharing. Each card carries the quote,
- * the source article, and copy/share controls.
+ * Quote Library (/tools/quotes) — pull quotes mined verbatim from the LiveWell
+ * corpus: essays, the book manuscripts, and the study guides. Each card carries
+ * the quote, a link to the work it came from, copy/share controls, and a
+ * bookmark that keeps it in a saved list on this device. Includes full-text
+ * search, theme and pillar filters, a saved-quotes view with copy-all, and a
+ * deterministic quote for today (no Math.random — the date picks it).
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { useState, useMemo, useCallback } from "react";
 import { Link } from "wouter";
-import { Copy, Check, Share2, Filter, ChevronDown } from "lucide-react";
+import {
+  Copy,
+  Check,
+  Share2,
+  Filter,
+  ChevronDown,
+  Search,
+  Bookmark,
+  BookmarkCheck,
+} from "lucide-react";
 import { SOCIAL_QUOTES, type SocialQuote } from "@/data/social-quotes";
 import { copyToClipboard } from "@/lib/clipboard";
+import { readStoredJSON, writeStoredJSON, isArrayOf } from "@/lib/storage";
 
 const PAGE_SIZE = 20;
+
+/** Versioned storage key for the saved-quotes list (array of quote texts). */
+const SAVED_KEY = "livewell-quotes-saved-v1";
+const isString = (x: unknown): x is string => typeof x === "string";
+const readSaved = (): string[] => readStoredJSON(SAVED_KEY, isArrayOf(isString), []);
 
 const CATEGORIES = [
   { id: "all", label: "All" },
@@ -22,15 +40,6 @@ const CATEGORIES = [
   { id: "wisdom", label: "Wisdom" },
 ] as const;
 
-const PILLARS = [
-  "All",
-  "Theological Depth",
-  "Prophetic Disruption",
-  "Prophetic Justice",
-  "Leadership Formation",
-  "Integrated Life",
-] as const;
-
 const CATEGORY_COLORS: Record<string, string> = {
   conviction: "var(--c-mustard, #D4A017)",
   comfort: "#6B8E6B",
@@ -39,15 +48,96 @@ const CATEGORY_COLORS: Record<string, string> = {
   wisdom: "var(--c-ink-muted, #5A5448)",
 };
 
+/** Pillars offered in the filter — derived from the data, never hardcoded. */
+const PILLAR_OPTIONS = [
+  "All",
+  ...Array.from(new Set(SOCIAL_QUOTES.map((q) => q.pillar))).sort(),
+];
+
+const SOURCE_COUNT = new Set(
+  SOCIAL_QUOTES.map((q) => `${q.sourceType ?? "essay"}:${q.articleSlug}`)
+).size;
+
+function authorOf(q: SocialQuote): string {
+  return q.author ?? "James Bell";
+}
+
+/** Route to the source work: essays under /writing, books under /read,
+ *  study guides under /studyguides. */
+function sourcePath(q: SocialQuote): string {
+  switch (q.sourceType) {
+    case "book":
+      return `/read/${q.articleSlug}`;
+    case "studyguide":
+      return `/studyguides/${q.articleSlug}`;
+    default:
+      return `/writing/${q.articleSlug}`;
+  }
+}
+
+function sourceKindLabel(q: SocialQuote): string {
+  switch (q.sourceType) {
+    case "book":
+      return "From the book";
+    case "studyguide":
+      return "From the study guide";
+    default:
+      return "From the essay";
+  }
+}
+
+function shareTextFor(q: SocialQuote): string {
+  const url = `https://livewellbyjamesbell.co${sourcePath(q)}`;
+  return `"${q.text}"\n\n— ${authorOf(q)}, "${q.articleTitle}"\n${url}`;
+}
+
+/** Deterministic index for "a quote for today": hash the local date string.
+ *  Same day, same quote, for everyone — no randomness. */
+function quoteOfTheDay(): SocialQuote {
+  const d = new Date();
+  const key = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+  let h = 0;
+  for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) | 0;
+  return SOCIAL_QUOTES[Math.abs(h) % SOCIAL_QUOTES.length];
+}
+
 const wrap = { maxWidth: "var(--w-default, 1200px)", margin: "0 auto" } as const;
 
-function QuoteCard({ quote, index }: { quote: SocialQuote; index: number }) {
+const actionButtonStyle = (active: boolean) =>
+  ({
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "0.35rem",
+    fontFamily: "'Inter', sans-serif",
+    fontSize: "0.8rem",
+    fontWeight: 500,
+    color: active ? "#6B8E6B" : "var(--c-ink-muted, #5A5448)",
+    background: "none",
+    border: "1px solid",
+    borderColor: active ? "#6B8E6B" : "var(--c-ink-muted, #5A5448)",
+    borderRadius: "4px",
+    padding: "0.35rem 0.75rem",
+    cursor: "pointer",
+    transition: "all 0.2s",
+  }) as const;
+
+function QuoteCard({
+  quote,
+  index,
+  saved,
+  onToggleSave,
+}: {
+  quote: SocialQuote;
+  index: number;
+  saved: boolean;
+  onToggleSave: (text: string) => void;
+}) {
   const [copied, setCopied] = useState(false);
   const [shared, setShared] = useState(false);
   const [copyFailed, setCopyFailed] = useState(false);
 
-  const articleUrl = `https://livewellbyjamesbell.co/writing/${quote.articleSlug}`;
-  const shareText = `"${quote.text}"\n\n— James Bell, "${quote.articleTitle}"\n${articleUrl}`;
+  const shareText = shareTextFor(quote);
+  const articleUrl = `https://livewellbyjamesbell.co${sourcePath(quote)}`;
 
   const handleCopy = useCallback(async () => {
     const ok = await copyToClipboard(shareText);
@@ -117,7 +207,6 @@ function QuoteCard({ quote, index }: { quote: SocialQuote; index: number }) {
           marginTop: "auto",
         }}
       >
-        {/* Category badge */}
         <span
           style={{
             fontFamily: "'Inter', sans-serif",
@@ -134,7 +223,6 @@ function QuoteCard({ quote, index }: { quote: SocialQuote; index: number }) {
         >
           {quote.category}
         </span>
-        {/* Pillar */}
         <span
           style={{
             fontFamily: "'Inter', sans-serif",
@@ -144,71 +232,69 @@ function QuoteCard({ quote, index }: { quote: SocialQuote; index: number }) {
         >
           {quote.pillar}
         </span>
+        {quote.author && quote.author !== "James Bell" && (
+          <span
+            style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: "0.75rem",
+              color: "var(--c-ink-muted, #5A5448)",
+            }}
+          >
+            · {quote.author}
+          </span>
+        )}
       </div>
 
-      {/* Source article link */}
-      <Link
-        href={`/writing/${quote.articleSlug}`}
+      {/* Source link */}
+      <p
         style={{
           fontFamily: "'Inter', sans-serif",
           fontSize: "0.85rem",
-          color: "var(--c-ink, #14110C)",
-          textDecoration: "none",
-          borderBottom: "1px solid var(--c-mustard, #D4A017)",
-          paddingBottom: "1px",
-          lineHeight: 1.4,
+          color: "var(--c-ink-muted, #5A5448)",
+          margin: 0,
+          lineHeight: 1.5,
         }}
       >
-        {quote.articleTitle}
-      </Link>
+        {sourceKindLabel(quote)}{" "}
+        <Link
+          href={sourcePath(quote)}
+          style={{
+            color: "var(--c-ink, #14110C)",
+            textDecoration: "none",
+            borderBottom: "1px solid var(--c-mustard, #D4A017)",
+            paddingBottom: "1px",
+          }}
+        >
+          {quote.articleTitle}
+        </Link>
+      </p>
 
       {/* Actions */}
-      <div style={{ display: "flex", gap: "0.75rem", marginTop: "0.25rem" }}>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem", marginTop: "0.25rem" }}>
         <button
           onClick={handleCopy}
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.35rem",
-            fontFamily: "'Inter', sans-serif",
-            fontSize: "0.8rem",
-            fontWeight: 500,
-            color: copied ? "#6B8E6B" : "var(--c-ink-muted, #5A5448)",
-            background: "none",
-            border: "1px solid",
-            borderColor: copied ? "#6B8E6B" : "var(--c-ink-muted, #5A5448)",
-            borderRadius: "4px",
-            padding: "0.35rem 0.75rem",
-            cursor: "pointer",
-            transition: "all 0.2s",
-          }}
-          aria-label="Copy quote to clipboard"
+          style={actionButtonStyle(copied)}
+          aria-label={`Copy quote from ${quote.articleTitle}`}
         >
           {copied ? <Check size={14} /> : <Copy size={14} />}
           {copied ? "Copied" : "Copy"}
         </button>
         <button
           onClick={handleShare}
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.35rem",
-            fontFamily: "'Inter', sans-serif",
-            fontSize: "0.8rem",
-            fontWeight: 500,
-            color: shared ? "#6B8E6B" : "var(--c-ink-muted, #5A5448)",
-            background: "none",
-            border: "1px solid",
-            borderColor: shared ? "#6B8E6B" : "var(--c-ink-muted, #5A5448)",
-            borderRadius: "4px",
-            padding: "0.35rem 0.75rem",
-            cursor: "pointer",
-            transition: "all 0.2s",
-          }}
-          aria-label="Share quote"
+          style={actionButtonStyle(shared)}
+          aria-label={`Share quote from ${quote.articleTitle}`}
         >
           {shared ? <Check size={14} /> : <Share2 size={14} />}
           {shared ? "Shared" : "Share"}
+        </button>
+        <button
+          onClick={() => onToggleSave(quote.text)}
+          style={actionButtonStyle(saved)}
+          aria-pressed={saved}
+          aria-label={saved ? "Remove this quote from your saved list" : "Save this quote"}
+        >
+          {saved ? <BookmarkCheck size={14} /> : <Bookmark size={14} />}
+          {saved ? "Saved" : "Save"}
         </button>
       </div>
       {copyFailed && (
@@ -216,7 +302,7 @@ function QuoteCard({ quote, index }: { quote: SocialQuote; index: number }) {
           style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: "0.8rem",
-            color: "var(--ink-muted)",
+            color: "var(--c-ink-muted, #5A5448)",
             margin: 0,
           }}
         >
@@ -230,28 +316,81 @@ function QuoteCard({ quote, index }: { quote: SocialQuote; index: number }) {
 export default function QuoteLibrary() {
   const [category, setCategory] = useState("all");
   const [pillar, setPillar] = useState("All");
+  const [query, setQuery] = useState("");
+  const [view, setView] = useState<"all" | "saved">("all");
   const [visible, setVisible] = useState(PAGE_SIZE);
+  const [saved, setSaved] = useState<string[]>(() => readSaved());
+  const [saveFailed, setSaveFailed] = useState(false);
+  const [allCopied, setAllCopied] = useState(false);
+  const [allCopyFailed, setAllCopyFailed] = useState(false);
+
+  const savedSet = useMemo(() => new Set(saved), [saved]);
+  const today = useMemo(() => quoteOfTheDay(), []);
+
+  const toggleSave = useCallback((text: string) => {
+    setSaved((prev) => {
+      const next = prev.includes(text) ? prev.filter((t) => t !== text) : [...prev, text];
+      if (!writeStoredJSON(SAVED_KEY, next)) setSaveFailed(true);
+      return next;
+    });
+  }, []);
+
+  const resetPage = () => setVisible(PAGE_SIZE);
 
   const filtered = useMemo(() => {
-    return SOCIAL_QUOTES.filter((q) => {
-      if (category !== "all" && q.category !== category) return false;
-      if (pillar !== "All" && q.pillar !== pillar) return false;
+    const q = query.trim().toLowerCase();
+    const base =
+      view === "saved" ? SOCIAL_QUOTES.filter((x) => savedSet.has(x.text)) : SOCIAL_QUOTES;
+    return base.filter((x) => {
+      if (category !== "all" && x.category !== category) return false;
+      if (pillar !== "All" && x.pillar !== pillar) return false;
+      if (
+        q &&
+        !x.text.toLowerCase().includes(q) &&
+        !x.articleTitle.toLowerCase().includes(q) &&
+        !authorOf(x).toLowerCase().includes(q)
+      )
+        return false;
       return true;
     });
-  }, [category, pillar]);
+  }, [category, pillar, query, view, savedSet]);
 
   const shown = filtered.slice(0, visible);
   const hasMore = visible < filtered.length;
+  const filtersActive = category !== "all" || pillar !== "All" || query.trim() !== "";
+
+  const savedQuotes = useMemo(
+    () => SOCIAL_QUOTES.filter((x) => savedSet.has(x.text)),
+    [savedSet]
+  );
+
+  const handleCopyAll = useCallback(async () => {
+    const block = savedQuotes.map(shareTextFor).join("\n\n");
+    const ok = await copyToClipboard(block);
+    if (!ok) {
+      setAllCopyFailed(true);
+      return;
+    }
+    setAllCopyFailed(false);
+    setAllCopied(true);
+    setTimeout(() => setAllCopied(false), 2000);
+  }, [savedQuotes]);
+
+  const clearFilters = () => {
+    setCategory("all");
+    setPillar("All");
+    setQuery("");
+    resetPage();
+  };
 
   return (
     <Layout>
       <SEOMeta
         title="Words Worth Sharing | LiveWell by James Bell"
-        description="Pull quotes from the LiveWell article library — shareable lines on theology, leadership, justice, and the life of faith."
+        description="Pull quotes mined verbatim from James Bell's essays, books, and study guides — searchable, saveable, and linked back to the work each line came from."
         url="/tools/quotes"
       />
 
-      {/* Keyframe animation for quote cards */}
       <style>{`
         @keyframes quoteIn {
           from { opacity: 0; transform: translateY(12px); }
@@ -302,22 +441,82 @@ export default function QuoteLibrary() {
               fontSize: "1.05rem",
               lineHeight: 1.7,
               color: "var(--c-ink-muted, #9A948A)",
-              maxWidth: "48ch",
+              maxWidth: "52ch",
               margin: "0 auto",
             }}
           >
-            Pull quotes from the LiveWell library — the lines that stop you
-            mid-scroll, formatted for sharing.
+            The lines that stop you mid-scroll, taken word for word from the
+            essays, books, and study guides — each one linked to the longer
+            argument it came from.
           </p>
           <p
             style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: "0.85rem",
-              color: "var(--c-ink-muted, #5A5448)",
+              color: "var(--c-ink-muted, #9A948A)",
               marginTop: "1.5rem",
             }}
           >
-            {SOCIAL_QUOTES.length} quotes from {new Set(SOCIAL_QUOTES.map((q) => q.articleSlug)).size} articles
+            {SOCIAL_QUOTES.length} quotes from {SOURCE_COUNT} works
+          </p>
+        </div>
+      </section>
+
+      {/* A quote for today */}
+      <section
+        style={{
+          background: "var(--c-cream-warm, #EDE8DC)",
+          padding: "3rem 1.5rem",
+          textAlign: "center",
+        }}
+      >
+        <div style={{ ...wrap, maxWidth: "760px" }}>
+          <span
+            style={{
+              fontFamily: "'Inter', sans-serif",
+              fontWeight: 500,
+              fontSize: "0.75rem",
+              textTransform: "uppercase",
+              letterSpacing: "0.18em",
+              color: "var(--c-mustard, #D4A017)",
+              display: "block",
+              marginBottom: "1.25rem",
+            }}
+          >
+            A Quote for Today
+          </span>
+          <blockquote
+            style={{
+              fontFamily: "'Cormorant Garamond', Georgia, serif",
+              fontSize: "clamp(1.35rem, 3vw, 1.75rem)",
+              lineHeight: 1.5,
+              fontStyle: "italic",
+              color: "var(--c-ink, #14110C)",
+              margin: "0 0 1.25rem",
+            }}
+          >
+            &ldquo;{today.text}&rdquo;
+          </blockquote>
+          <p
+            style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: "0.9rem",
+              color: "var(--c-ink-muted, #5A5448)",
+              margin: 0,
+            }}
+          >
+            — {authorOf(today)},{" "}
+            <Link
+              href={sourcePath(today)}
+              style={{
+                color: "var(--c-ink, #14110C)",
+                textDecoration: "none",
+                borderBottom: "1px solid var(--c-mustard, #D4A017)",
+                paddingBottom: "1px",
+              }}
+            >
+              {today.articleTitle}
+            </Link>
           </p>
         </div>
       </section>
@@ -325,7 +524,7 @@ export default function QuoteLibrary() {
       {/* Filters */}
       <section
         style={{
-          background: "var(--c-cream-warm, #EDE8DC)",
+          background: "var(--c-cream, #F5F0E6)",
           borderBottom: "1px solid rgba(0,0,0,0.06)",
           padding: "1.25rem 1.5rem",
           position: "sticky",
@@ -339,29 +538,105 @@ export default function QuoteLibrary() {
             display: "flex",
             flexWrap: "wrap",
             alignItems: "center",
-            gap: "1rem",
+            gap: "0.75rem",
           }}
         >
+          {/* View toggle */}
+          <div
+            role="group"
+            aria-label="Choose between all quotes and your saved quotes"
+            style={{ display: "flex", gap: "0.4rem" }}
+          >
+            {(
+              [
+                { id: "all", label: "All quotes" },
+                { id: "saved", label: `Saved (${saved.length})` },
+              ] as const
+            ).map((v) => (
+              <button
+                key={v.id}
+                onClick={() => {
+                  setView(v.id);
+                  resetPage();
+                }}
+                aria-pressed={view === v.id}
+                style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: "0.8rem",
+                  fontWeight: 500,
+                  padding: "0.35rem 0.85rem",
+                  borderRadius: "4px",
+                  border: "1px solid",
+                  borderColor:
+                    view === v.id ? "var(--c-black, #1A1A1A)" : "rgba(0,0,0,0.12)",
+                  background: view === v.id ? "var(--c-black, #1A1A1A)" : "transparent",
+                  color:
+                    view === v.id ? "var(--c-cream, #F5F0E6)" : "var(--c-ink, #14110C)",
+                  cursor: "pointer",
+                  transition: "all 0.15s",
+                }}
+              >
+                {v.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Search */}
+          <div style={{ position: "relative", flex: "1 1 220px", minWidth: "180px" }}>
+            <Search
+              size={14}
+              aria-hidden="true"
+              style={{
+                position: "absolute",
+                left: "0.65rem",
+                top: "50%",
+                transform: "translateY(-50%)",
+                color: "var(--c-ink-muted, #5A5448)",
+                pointerEvents: "none",
+              }}
+            />
+            <input
+              type="search"
+              value={query}
+              onChange={(e) => {
+                setQuery(e.target.value);
+                resetPage();
+              }}
+              placeholder="Search the quotes"
+              aria-label="Search quotes by text or source title"
+              style={{
+                width: "100%",
+                fontFamily: "'Inter', sans-serif",
+                fontSize: "0.85rem",
+                padding: "0.45rem 0.75rem 0.45rem 2rem",
+                border: "1px solid rgba(0,0,0,0.12)",
+                borderRadius: "4px",
+                background: "var(--c-white, #FFFFFF)",
+                color: "var(--c-ink, #14110C)",
+              }}
+            />
+          </div>
+
           <Filter
             size={16}
+            aria-hidden="true"
             style={{ color: "var(--c-ink-muted, #5A5448)", flexShrink: 0 }}
           />
 
           {/* Category pills */}
           <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "0.4rem",
-            }}
+            role="group"
+            aria-label="Filter by theme"
+            style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem" }}
           >
             {CATEGORIES.map((c) => (
               <button
                 key={c.id}
                 onClick={() => {
                   setCategory(c.id);
-                  setVisible(PAGE_SIZE);
+                  resetPage();
                 }}
+                aria-pressed={category === c.id}
                 style={{
                   fontFamily: "'Inter', sans-serif",
                   fontSize: "0.8rem",
@@ -370,17 +645,11 @@ export default function QuoteLibrary() {
                   borderRadius: "100px",
                   border: "1px solid",
                   borderColor:
-                    category === c.id
-                      ? "var(--c-mustard, #D4A017)"
-                      : "rgba(0,0,0,0.12)",
+                    category === c.id ? "var(--c-mustard, #D4A017)" : "rgba(0,0,0,0.12)",
                   background:
-                    category === c.id
-                      ? "var(--c-mustard, #D4A017)"
-                      : "transparent",
+                    category === c.id ? "var(--c-mustard, #D4A017)" : "transparent",
                   color:
-                    category === c.id
-                      ? "var(--c-white, #FFFFFF)"
-                      : "var(--c-ink, #14110C)",
+                    category === c.id ? "var(--c-white, #FFFFFF)" : "var(--c-ink, #14110C)",
                   cursor: "pointer",
                   transition: "all 0.15s",
                 }}
@@ -396,8 +665,9 @@ export default function QuoteLibrary() {
               value={pillar}
               onChange={(e) => {
                 setPillar(e.target.value);
-                setVisible(PAGE_SIZE);
+                resetPage();
               }}
+              aria-label="Filter by pillar"
               style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: "0.8rem",
@@ -412,7 +682,7 @@ export default function QuoteLibrary() {
                 WebkitAppearance: "none",
               }}
             >
-              {PILLARS.map((p) => (
+              {PILLAR_OPTIONS.map((p) => (
                 <option key={p} value={p}>
                   {p === "All" ? "All Pillars" : p}
                 </option>
@@ -420,6 +690,7 @@ export default function QuoteLibrary() {
             </select>
             <ChevronDown
               size={14}
+              aria-hidden="true"
               style={{
                 position: "absolute",
                 right: "0.5rem",
@@ -442,32 +713,100 @@ export default function QuoteLibrary() {
         }}
       >
         <div style={wrap}>
-          {/* Count */}
-          <p
-            style={{
-              fontFamily: "'Inter', sans-serif",
-              fontSize: "0.85rem",
-              color: "var(--c-ink-muted, #5A5448)",
-              marginBottom: "1.5rem",
-            }}
-          >
-            {filtered.length} quote{filtered.length !== 1 ? "s" : ""}
-            {category !== "all" && ` in ${category}`}
-            {pillar !== "All" && ` · ${pillar}`}
-          </p>
-
-          {filtered.length === 0 ? (
+          {saveFailed && (
             <p
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: "1rem",
+                fontSize: "0.85rem",
                 color: "var(--c-ink-muted, #5A5448)",
-                textAlign: "center",
-                padding: "4rem 0",
+                marginBottom: "1rem",
               }}
             >
-              No quotes match those filters. Try broadening your selection.
+              Couldn&rsquo;t save to this browser — your saved quotes here will
+              not survive a reload.
             </p>
+          )}
+
+          {/* Count + saved-view actions */}
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              alignItems: "center",
+              gap: "0.75rem",
+              marginBottom: "1.5rem",
+            }}
+          >
+            <p
+              role="status"
+              style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: "0.85rem",
+                color: "var(--c-ink-muted, #5A5448)",
+                margin: 0,
+              }}
+            >
+              {filtered.length} quote{filtered.length !== 1 ? "s" : ""}
+              {view === "saved" && " saved"}
+              {category !== "all" && ` in ${category}`}
+              {pillar !== "All" && ` · ${pillar}`}
+              {query.trim() !== "" && ` · matching “${query.trim()}”`}
+            </p>
+            {view === "saved" && savedQuotes.length > 0 && (
+              <button
+                onClick={handleCopyAll}
+                style={actionButtonStyle(allCopied)}
+                aria-label="Copy all saved quotes with their sources"
+              >
+                {allCopied ? <Check size={14} /> : <Copy size={14} />}
+                {allCopied ? "Copied" : "Copy all"}
+              </button>
+            )}
+            {allCopyFailed && view === "saved" && (
+              <span
+                style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: "0.8rem",
+                  color: "var(--c-ink-muted, #5A5448)",
+                }}
+              >
+                Copy failed — select and copy manually.
+              </span>
+            )}
+          </div>
+
+          {filtered.length === 0 ? (
+            <div style={{ textAlign: "center", padding: "4rem 0" }}>
+              <p
+                style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: "1rem",
+                  color: "var(--c-ink-muted, #5A5448)",
+                  margin: "0 0 1.25rem",
+                }}
+              >
+                {view === "saved" && saved.length === 0
+                  ? "Nothing saved yet. The Save button on any card keeps the quote here, on this device."
+                  : "No quotes match. Clear the search or broaden the filters."}
+              </p>
+              {view === "saved" && saved.length === 0 ? (
+                <button
+                  onClick={() => {
+                    setView("all");
+                    resetPage();
+                  }}
+                  style={actionButtonStyle(false)}
+                >
+                  Browse all quotes
+                </button>
+              ) : (
+                filtersActive && (
+                  <button onClick={clearFilters} style={actionButtonStyle(false)}>
+                    Clear filters
+                  </button>
+                )
+              )}
+            </div>
           ) : (
             <>
               <div
@@ -482,11 +821,12 @@ export default function QuoteLibrary() {
                     key={`${q.articleSlug}-${q.text.slice(0, 30)}`}
                     quote={q}
                     index={i}
+                    saved={savedSet.has(q.text)}
+                    onToggleSave={toggleSave}
                   />
                 ))}
               </div>
 
-              {/* Load More */}
               {hasMore && (
                 <div style={{ textAlign: "center", marginTop: "2.5rem" }}>
                   <button
