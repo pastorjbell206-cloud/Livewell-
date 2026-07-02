@@ -679,7 +679,7 @@ export default function LifeAudit() {
                   fontSize: "11px",
                   fontWeight: 700,
                   letterSpacing: "0.2em",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   fontFamily: "var(--U)",
                   marginBottom: "12px",
                 }}

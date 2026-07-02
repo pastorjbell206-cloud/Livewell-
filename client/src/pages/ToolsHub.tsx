@@ -17,7 +17,7 @@ const TOOLS = [
     description: "Twenty questions across doctrine, church history, and the biblical storyline. Find out where your foundations are solid and where the gaps are. Part of the Theological Depth section.",
     href: "/tools/theology-quiz",
     icon: Brain,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "The Leadership Formation Inventory",
@@ -31,7 +31,7 @@ const TOOLS = [
     description: "Thirty honest statements across the inner life, the body, relationships, work and money, and the world. Maps where life is flourishing and hands you a rule of life for the season. Part of Integrated Life.",
     href: "/life/assessment",
     icon: Heart,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Start a Table",
@@ -45,7 +45,7 @@ const TOOLS = [
     description: "The front door to Scripture's wisdom for the place no rule reaches: the deep Proverbs and Ecclesiastes guide, a topical map for money, words, work, anger, marriage, and more, and a month in Proverbs. Part of Integrated Life.",
     href: "/wisdom",
     icon: BookMarked,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Wisdom Finder",
@@ -59,7 +59,7 @@ const TOOLS = [
     description: "A rule of life is not a performance contract. It is a trellis. Choose sustainable practices across prayer, Scripture, rest, community, mission, and the body, and build a rhythm of grace you can actually keep. Part of Integrated Life.",
     href: "/tools/rule-of-life",
     icon: Target,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "What the Bible Says About",
@@ -73,14 +73,14 @@ const TOOLS = [
     description: "A chapter of Proverbs a day, matched to the date, the way the church has read it for centuries. Each day a theme, a verse or two worth knowing by heart, and a reflection that runs the chapter into a real decision. Part of Integrated Life.",
     href: "/tools/proverbs-31",
     icon: BookMarked,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Passage Context Tool",
     description: "Enter any Bible reference and read it in context: the passage with room around it, who wrote it and why, its genre, the flow of the argument, cross-references, and the questions to ask of any text. Part of the Theological Depth section.",
     href: "/theology/passage",
     icon: BookMarked,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Bible Verse Finder",
@@ -101,7 +101,7 @@ const TOOLS = [
     description: "Build a 15-minute family devotion in seconds. Pick your kids' age group and a theme, and get a complete devotion with Scripture, teaching, activity, and prayer.",
     href: "/tools/family-devotions",
     icon: Users,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Bible Study Guide",
@@ -115,7 +115,7 @@ const TOOLS = [
     description: "A 15-question diagnostic across communication, intimacy, trust, shared vision, and conflict. Not a quiz — a real assessment with actionable recommendations.",
     href: "/tools/marriage-assessment",
     icon: HeartHandshake,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Financial Health Check",
@@ -143,7 +143,7 @@ const TOOLS = [
     description: "15 questions across self-awareness, boundaries, grief, forgiveness, and rest. Scripture-grounded diagnostic with practical next steps.",
     href: "/tools/emotional-health",
     icon: Brain,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Sermon Outline Generator",
@@ -164,7 +164,7 @@ const TOOLS = [
     description: "A 5-step guided process for 8 common conflict types. Name what happened, name what you feel, agree on one next step.",
     href: "/tools/conflict-guide",
     icon: MessageCircle,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Pastor Burnout Diagnostic",
@@ -178,7 +178,7 @@ const TOOLS = [
     description: "24 questions across 8 life areas: spiritual, marriage, parenting, physical, financial, emotional, vocational, community. Your strengths and growth areas identified.",
     href: "/tools/life-audit",
     icon: Target,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Church Health Check",
