@@ -2361,6 +2361,9 @@ async function contactForm(req: VercelRequest, res: VercelResponse) {
     const subject = String(body?.subject || "").trim();
     const message = String(body?.message || "").trim();
     if (!email || !message) return json(res, 400, { error: "Email and message are required" });
+    // The save IS the product here: the site tells people a person reads
+    // these. Returning ok:true after a failed insert made every client
+    // error state unreachable and silently dropped the message.
     try {
       await withConn(async (c) => {
         await c.execute(
@@ -2378,10 +2381,33 @@ async function contactForm(req: VercelRequest, res: VercelResponse) {
           [name || null, email, subject || null, message]
         );
       });
-    } catch { /* DB save is best-effort */ }
-    json(res, 200, { ok: true, message: "Message received. Thank you!" });
+    } catch (dbErr: any) {
+      console.error("[contact] save failed:", dbErr?.message || dbErr);
+      return json(res, 500, { ok: false, error: "We couldn't save your message. Please try again." });
+    }
+    json(res, 200, { ok: true, message: "Message received. Thank you." });
   } catch (e: any) {
-    json(res, 500, { ok: false, error: String(e?.message || e) });
+    console.error("[contact]", e?.message || e);
+    json(res, 500, { ok: false, error: "We couldn't save your message. Please try again." });
+  }
+}
+
+// Minimal admin reader for the contact inbox — until this existed, nothing
+// anywhere read contact_messages, so every submission (including assessment
+// results people asked to keep on file) went into a dead-letter table.
+async function adminContactMessages(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  try {
+    const rows = await withConn(async (c) => {
+      const [r]: any = await c.query(
+        "SELECT id, name, email, subject, message, createdAt FROM contact_messages ORDER BY createdAt DESC LIMIT 100"
+      );
+      return r;
+    });
+    return json(res, 200, { ok: true, messages: rows });
+  } catch (e: any) {
+    console.error("[contact:list]", e?.message || e);
+    return json(res, 500, { ok: false, error: "Could not load messages." });
   }
 }
 
@@ -2655,6 +2681,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/health" || url.startsWith("/api/health")) return health(req, res);
     if (url === "/api/rss.xml" || url === "/rss.xml" || url === "/feed" || url === "/feed.xml") return rssLiveWell(req, res);
     if (url === "/api/admin/status") return adminStatus(req, res);
+    if (url === "/api/admin/contact-messages") return adminContactMessages(req, res);
     if (url === "/api/admin/organize-articles") return organizeArticles(req, res);
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);

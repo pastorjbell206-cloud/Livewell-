@@ -2,7 +2,7 @@ import AdminLayout from "@/components/AdminLayout";
 import { Link } from "wouter";
 import { trpc } from "@/lib/trpc";
 import { PenLine, FolderOpen, BookOpen, Loader2, Upload, Wand2, Copy, FilePlus2, Download, ArrowRight } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import contentData from "@/data/content-data.json";
 
 export default function AdminDashboard() {
@@ -13,6 +13,17 @@ export default function AdminDashboard() {
   const [seeding, setSeeding] = useState(false);
   const [fixStatus, setFixStatus] = useState<string | null>(null);
   const [fixing, setFixing] = useState(false);
+  type ContactMsg = { id: number; name: string | null; email: string; subject: string | null; message: string; createdAt: string };
+  const [messages, setMessages] = useState<ContactMsg[] | null>(null);
+  const [messagesError, setMessagesError] = useState(false);
+  useEffect(() => {
+    let active = true;
+    fetch("/api/admin/contact-messages", { credentials: "include" })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((d) => active && setMessages(Array.isArray(d?.messages) ? d.messages : []))
+      .catch(() => active && setMessagesError(true));
+    return () => { active = false; };
+  }, []);
 
   const stats = [
     { label: "Writing Posts", value: postsQuery.data?.length ?? 0, icon: PenLine, href: "/admin/posts", color: "#2C3E50" },
@@ -109,6 +120,40 @@ export default function AdminDashboard() {
               </Link>
             );
           })}
+        </div>
+
+        {/* Contact inbox — messages people sent through /api/contact.
+            Until this card existed, nothing anywhere read that table. */}
+        <div className="mb-12">
+          <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "#1A1A1A" }}>Messages</h2>
+          <p className="font-body text-sm mb-4" style={{ color: "#6B7280" }}>
+            Contact-form submissions and assessment results people asked to keep on file. Reply by email.
+          </p>
+          {messagesError && (
+            <p className="font-body text-sm" style={{ color: "#9B2C2C" }}>
+              Couldn't load messages (this reader needs the production API and an admin session).
+            </p>
+          )}
+          {messages && messages.length === 0 && (
+            <p className="font-body text-sm" style={{ color: "#6B7280" }}>No messages yet.</p>
+          )}
+          {messages && messages.length > 0 && (
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px", maxHeight: "420px", overflowY: "auto" }}>
+              {messages.slice(0, 20).map((m) => (
+                <details key={m.id} style={{ background: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: "6px", padding: "12px 16px" }}>
+                  <summary style={{ cursor: "pointer", fontFamily: "var(--U)", fontSize: "14px", color: "#1A1A1A" }}>
+                    <strong>{m.subject || "(no subject)"}</strong>
+                    {" — "}{m.name ? `${m.name} · ` : ""}{m.email}
+                    <span style={{ color: "#6B7280" }}>{" · "}{new Date(m.createdAt).toLocaleString()}</span>
+                  </summary>
+                  <p style={{ whiteSpace: "pre-wrap", fontFamily: "var(--B)", fontSize: "14px", color: "#1A1A1A", margin: "10px 0" }}>{m.message}</p>
+                  <a href={`mailto:${m.email}?subject=${encodeURIComponent("Re: " + (m.subject || "your message"))}`} style={{ fontFamily: "var(--U)", fontSize: "13px", color: "#1A1A1A", textDecoration: "underline" }}>
+                    Reply to {m.email}
+                  </a>
+                </details>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Publish finished article content */}
