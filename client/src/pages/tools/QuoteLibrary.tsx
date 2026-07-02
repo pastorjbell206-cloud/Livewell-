@@ -9,6 +9,7 @@ import { useState, useMemo, useCallback } from "react";
 import { Link } from "wouter";
 import { Copy, Check, Share2, Filter, ChevronDown } from "lucide-react";
 import { SOCIAL_QUOTES, type SocialQuote } from "@/data/social-quotes";
+import { copyToClipboard } from "@/lib/clipboard";
 
 const PAGE_SIZE = 20;
 
@@ -43,28 +44,21 @@ const wrap = { maxWidth: "var(--w-default, 1200px)", margin: "0 auto" } as const
 function QuoteCard({ quote, index }: { quote: SocialQuote; index: number }) {
   const [copied, setCopied] = useState(false);
   const [shared, setShared] = useState(false);
+  const [copyFailed, setCopyFailed] = useState(false);
 
   const articleUrl = `https://livewellbyjamesbell.co/writing/${quote.articleSlug}`;
   const shareText = `"${quote.text}"\n\n— James Bell, "${quote.articleTitle}"\n${articleUrl}`;
 
   const handleCopy = useCallback(async () => {
-    try {
-      await navigator.clipboard.writeText(shareText);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      /* fallback: select + copy */
-      const ta = document.createElement("textarea");
-      ta.value = shareText;
-      ta.style.position = "fixed";
-      ta.style.left = "-9999px";
-      document.body.appendChild(ta);
-      ta.select();
-      document.execCommand("copy");
-      document.body.removeChild(ta);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+    const ok = await copyToClipboard(shareText);
+    if (!ok) {
+      setCopyFailed(true);
+      return false;
     }
+    setCopyFailed(false);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+    return true;
   }, [shareText]);
 
   const handleShare = useCallback(async () => {
@@ -75,7 +69,8 @@ function QuoteCard({ quote, index }: { quote: SocialQuote; index: number }) {
         /* user cancelled */
       }
     } else {
-      await handleCopy();
+      const ok = await handleCopy();
+      if (!ok) return;
       setShared(true);
       setTimeout(() => setShared(false), 2000);
     }
@@ -216,6 +211,18 @@ function QuoteCard({ quote, index }: { quote: SocialQuote; index: number }) {
           {shared ? "Shared" : "Share"}
         </button>
       </div>
+      {copyFailed && (
+        <p
+          style={{
+            fontFamily: "'Inter', sans-serif",
+            fontSize: "0.8rem",
+            color: "var(--ink-muted)",
+            margin: 0,
+          }}
+        >
+          Copy failed — select and copy manually.
+        </p>
+      )}
     </article>
   );
 }

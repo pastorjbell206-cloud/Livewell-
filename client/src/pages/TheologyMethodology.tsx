@@ -41,7 +41,7 @@ function Block({ kicker, title, children, alt }: { kicker: string; title: string
 export default function TheologyMethodology() {
   const [m, setM] = useState<Methodology | null>(null);
   useEffect(() => {
-    fetch("/theology/methodology.json", { cache: "no-store" })
+    fetch("/theology/methodology.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setM(d))
       .catch(() => {});

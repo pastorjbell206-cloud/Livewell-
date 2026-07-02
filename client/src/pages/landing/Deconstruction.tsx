@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
   { title: "Deconstruction Is Not Destruction", slug: "deconstruction-is-not-destruction" },
@@ -66,16 +67,8 @@ const webPageSchema = {
 };
 
 export default function Deconstruction() {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email || !email.includes("@")) return;
-    setSubmitted(true);
-    setEmail("");
-  };
 
   return (
     <Layout>
@@ -104,11 +97,11 @@ export default function Deconstruction() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "40px", marginBottom: "32px" }}>
             <div>
               <p style={{ fontFamily: "var(--F)", fontSize: "48px", fontWeight: 400, color: "var(--ink)", lineHeight: 1 }}>40M</p>
-              <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", marginTop: "8px", lineHeight: 1.6 }}>American adults have left the faith they were raised in. The exodus is not slowing down.</p>
+              <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", marginTop: "8px", lineHeight: 1.6 }}>American adults have stopped going to church in the last twenty-five years — more than all new converts, restorations, and immigrations combined (The Great Dechurching, Davis and Graham with Burge, 2023).</p>
             </div>
             <div>
               <p style={{ fontFamily: "var(--F)", fontSize: "48px", fontWeight: 400, color: "var(--ink)", lineHeight: 1 }}>29%</p>
-              <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", marginTop: "8px", lineHeight: 1.6 }}>of Americans now identify as religiously unaffiliated. The "nones" are the fastest-growing group in American religion.</p>
+              <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", marginTop: "8px", lineHeight: 1.6 }}>of American adults now identify as religiously unaffiliated — the "nones" (Pew Research Center, 2021).</p>
             </div>
           </div>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink)", lineHeight: 1.7, maxWidth: "68ch" }}>
@@ -198,14 +191,7 @@ export default function Deconstruction() {
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "white", marginBottom: "16px" }}>Get the 7-day Deconstruction Guide</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "rgba(255,255,255,0.6)", marginBottom: "32px", lineHeight: 1.7 }}>Seven days of essays, questions, and Scripture for the person whose faith is coming apart -- or being put back together. No guilt. No conversion bait. Just honest theology.</p>
-          {submitted ? (
-            <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--mustard)" }}>Thank you. Check your inbox.</p>
-          ) : (
-            <form onSubmit={handleSubmit} style={{ display: "flex", gap: "8px", maxWidth: "440px", margin: "0 auto" }}>
-              <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Your email" style={{ flex: 1, padding: "12px 16px", border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.05)", color: "white", fontFamily: "var(--U)", fontSize: "14px", borderRadius: "3px", outline: "none" }} />
-              <button type="submit" style={{ background: "var(--mustard)", color: "var(--ink)", border: "none", padding: "12px 24px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer", whiteSpace: "nowrap" }}>Send It</button>
-            </form>
-          )}
+          <LandingSignup source="landing-deconstruction" />
         </div>
       </section>
 

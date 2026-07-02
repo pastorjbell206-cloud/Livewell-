@@ -8,7 +8,7 @@
  * block. Plain-text fields are split into readable paragraphs (honoring real
  * breaks, else grouping sentences); pass `markdown` to render Markdown instead.
  */
-import { Streamdown } from "streamdown";
+import { Markdown } from "@/components/Markdown";
 
 /**
  * Turn a prose field into readable paragraphs. Honors explicit blank-line
@@ -47,7 +47,7 @@ export function Prose({
   return (
     <div className={`article-body prose-section ${className}`.trim()}>
       {markdown
-        ? <Streamdown>{text}</Streamdown>
+        ? <Markdown>{text}</Markdown>
         : toParagraphs(text).map((p, i) => <p key={i}>{p}</p>)}
     </div>
   );

@@ -23,7 +23,7 @@ export default function PropheticQuestions({ config }: { config: SectionConfig }
   const [open, setOpen] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch(`${config.base}/questions.json`, { cache: "no-store" })
+    fetch(`${config.base}/questions.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d?.questions && setQuestions(d.questions))
       .catch(() => {});

@@ -119,6 +119,30 @@ const STATIC_PAGES = [
     type: "website",
   },
   {
+    path: "/membership",
+    title: "Membership — LiveWell by James Bell",
+    description: "Full access to the essays, member-only writing, curated reading paths, and the deeper room where theology meets the weight of real life.",
+    type: "website",
+  },
+  {
+    path: "/justice",
+    title: "Prophetic Justice — Where the church went silent",
+    description: "Mishpat and tsedaqah — justice and right relationship — sit near the heart of God. The poor at the gate, the worker and the wage, the vulnerable, refusing capture by either political tribe.",
+    type: "website",
+  },
+  {
+    path: "/disruption",
+    title: "Prophetic Disruption — Truth that does not take a side",
+    description: "The church's captivity to its tribe, its nation, and its culture — and the indictment falls on the left and the right alike, the writer included.",
+    type: "website",
+  },
+  {
+    path: "/nation",
+    title: "Christ and the Nation",
+    description: "Was America a Christian nation? How close is each party to the Bible? What a biblical government would actually mean.",
+    type: "website",
+  },
+  {
     path: "/diagnostic",
     title: "Diagnostic — Where are you with God right now?",
     description: "Eight questions across four dimensions. Honest answers. A specific essay, a book, and an email track for what to do next.",
@@ -382,6 +406,13 @@ async function main() {
     { file: "client/public/life/domains-index.json", key: "domains", route: "/life/", ogPrefix: "life" },
     { file: "client/public/creeds/documents-index.json", key: "documents", route: "/resources/creeds/", ogPrefix: "resources-creeds" },
     { file: "client/public/history/essays-index.json", key: "essays", route: "/theology/history/", ogPrefix: "theology-history" },
+    // The four families the sitemap already lists but the prerender didn't
+    // (audit 02 #4): study-guide toolkits, Table studies, the How-To library,
+    // and the read-online books.
+    { file: "client/public/studyguides/index.json", key: "guides", route: "/studyguides/", ogPrefix: "studyguides", desc: "blurb" },
+    { file: "client/public/table/studies-index.json", key: "studies", route: "/table/", ogPrefix: "table", desc: "summary" },
+    { file: "client/public/howtos/index.json", key: "articles", route: "/how-tos/", ogPrefix: "howtos", desc: "excerpt" },
+    { file: "client/public/books/index.json", key: "books", route: "/read/", ogPrefix: "read", desc: "blurb", type: "book" },
   ];
   for (const src of LIBRARY_SOURCES) {
     let data;
@@ -395,10 +426,99 @@ async function main() {
       const image = fs.existsSync(path.join(REPO_ROOT, ogRel))
         ? `${SITE_URL}/og/${src.ogPrefix}-${e.slug}.png`
         : OG_DEFAULT;
-      const head = buildHead({ title: e.title, description: e.blurb || e.title, url, image, type: "article" });
+      const description = e[src.desc || "blurb"] || e.blurb || e.subtitle || e.title;
+      const head = buildHead({ title: e.title, description, url, image, type: src.type || "article" });
       writeRoute(template, { path: `${src.route}${e.slug}` }, head);
       wrote++;
     }
+  }
+
+  // Route-table extraction: every static route whose component declares
+  // <SEOMeta title="..." description="..." /> as string literals gets a real
+  // head built from its own copy — the prerendered head is exactly what the
+  // SPA renders client-side. Param routes, admin, thank-you flows, and
+  // noindex pages are skipped; curated STATIC_PAGES above win on conflict.
+  const written = new Set(STATIC_PAGES.map((p) => p.path));
+  const appSrc = fs.readFileSync(path.join(REPO_ROOT, "client/src/App.tsx"), "utf8");
+  const importMap = {};
+  for (const m of appSrc.matchAll(/const (\w+) = lazy\(\(\) => import\("(\.\/pages\/[^"]+)"\)\)/g)) {
+    importMap[m[1]] = m[2];
+  }
+  for (const m of appSrc.matchAll(/^import (\w+) from "(\.\/pages\/[^"]+)";/gm)) {
+    importMap[m[1]] = m[2];
+  }
+  const routePairs = [];
+  for (const m of appSrc.matchAll(/<Route path="([^"]+)" component=\{(\w+)\}/g)) {
+    routePairs.push([m[1], m[2]]);
+  }
+  for (const m of appSrc.matchAll(/<Route path="([^"]+)">\s*<(\w+)[\s/>]/g)) {
+    routePairs.push([m[1], m[2]]);
+  }
+  const uncovered = [];
+  let extracted = 0;
+  for (const [routePath, comp] of routePairs) {
+    if (routePath.includes(":") || routePath.includes("*")) continue;
+    if (routePath.startsWith("/admin")) continue;
+    if (routePath.includes("thank-you") || routePath.includes("/success")) continue;
+    const normalized = routePath === "/" ? "" : routePath;
+    if (routePath === "/404" || written.has(normalized)) continue;
+    const rel = importMap[comp];
+    if (!rel) continue;
+    const compPath = path.join(REPO_ROOT, "client/src", rel.replace(/^\.\//, "")) + ".tsx";
+    let compSrc;
+    try {
+      compSrc = fs.readFileSync(compPath, "utf8");
+    } catch {
+      uncovered.push(`${routePath} (no file)`);
+      continue;
+    }
+    const tagMatch = compSrc.match(/<SEOMeta([\s\S]*?)\/?>(?=[\s<])/);
+    if (!tagMatch) {
+      uncovered.push(`${routePath} (no SEOMeta)`);
+      continue;
+    }
+    const tag = tagMatch[1];
+    if (/\bnoindex\b/.test(tag)) continue;
+    // A literal attribute, or a template literal whose ${refs} all resolve to
+    // same-file `const NAME = "..."` strings (the ebook-funnel pattern).
+    const resolveAttr = (name) => {
+      const lit = tag.match(new RegExp(`\\b${name}="([^"{}]+)"`));
+      if (lit) return lit[1];
+      const wrapped = tag.match(new RegExp(`\\b${name}=\\{"([^"]+)"\\}`));
+      if (wrapped) return wrapped[1];
+      const tpl = tag.match(new RegExp(`\\b${name}=\\{\`([^\`]+)\`\\}`));
+      if (!tpl) return null;
+      let out = tpl[1];
+      for (const ref of out.matchAll(/\$\{(\w+)\}/g)) {
+        const constM = compSrc.match(new RegExp(`const ${ref[1]} = "([^"]+)"`));
+        if (!constM) return null;
+        out = out.replace(ref[0], constM[1]);
+      }
+      return out.includes("${") ? null : out;
+    };
+    const title = resolveAttr("title");
+    const description = resolveAttr("description");
+    if (!title || !description) {
+      uncovered.push(`${routePath} (dynamic meta)`);
+      continue;
+    }
+    const url = `${SITE_URL}${routePath}`;
+    const head = buildHead({
+      title,
+      description,
+      url,
+      image: ogImageUrl(title),
+      type: "website",
+    });
+    writeRoute(template, { path: routePath }, head);
+    written.add(routePath);
+    extracted++;
+    wrote++;
+  }
+  console.log(`[prerender] extracted ${extracted} route heads from component SEOMeta literals`);
+  if (uncovered.length) {
+    console.log(`[prerender] ${uncovered.length} static routes still serve the homepage head (no literal SEOMeta):`);
+    for (const u of uncovered) console.log(`  - ${u}`);
   }
 
   // DB-driven pages

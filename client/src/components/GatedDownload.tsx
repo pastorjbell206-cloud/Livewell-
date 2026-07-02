@@ -77,7 +77,7 @@ export default function GatedDownload({
         autoFocus
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        placeholder="your@email.com"
+        placeholder="you@example.com"
         aria-label="Email to receive the toolkit"
         style={{ flex: "1 1 200px", padding: "11px 12px", fontFamily: "var(--B)", fontSize: "16px", border: "1px solid var(--border)", borderRadius: "2px", background: "var(--card)", color: "var(--ink)", outline: "none" }}
       />
@@ -86,10 +86,10 @@ export default function GatedDownload({
         disabled={busy}
         style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--charcoal)", padding: "11px 16px", border: "none", borderRadius: "2px", cursor: busy ? "default" : "pointer" }}
       >
-        {busy ? <Loader2 size={15} className="animate-spin" /> : <Check size={15} />} Send it
+        {busy ? <Loader2 size={15} className="animate-spin" /> : <Check size={15} />} Get the download
       </button>
       <p style={{ flexBasis: "100%", margin: 0, fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)" }}>
-        Free. We send the toolkit and the occasional letter. Unsubscribe anytime.
+        Free. The download opens right away, and you join the essay list. Unsubscribe anytime.
       </p>
     </form>
   );

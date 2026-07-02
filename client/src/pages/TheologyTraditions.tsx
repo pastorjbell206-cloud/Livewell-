@@ -24,7 +24,7 @@ export default function TheologyTraditions() {
   const [open, setOpen] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/theology/traditions.json", { cache: "no-store" })
+    fetch("/theology/traditions.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setData(d))
       .catch(() => {});

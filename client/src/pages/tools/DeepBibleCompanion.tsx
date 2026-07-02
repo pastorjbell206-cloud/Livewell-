@@ -1420,7 +1420,7 @@ const BOOKS: BibleBook[] = [
         ref: "Philippians 2:1-11",
         summary: "The Christ Hymn and what power actually looks like",
         text: "Therefore if you have any encouragement from being united with Christ... then make my joy complete by being like-minded, having the same love... In your relationships with one another, have the same mindset as Christ Jesus: Who, being in very nature God, did not consider equality with God something to be used to his own advantage; rather, he made himself nothing by taking the very nature of a servant, being made in human likeness...",
-        paraphrase: "Jesus was God. That is where the hymn starts. And being God, he did not clutch his status. He did not leverage his position. He emptied himself. Took the form of a slave. Died on a cross. The one who held all power surrendered all power. And because he went down — all the way down — God exalted him to the highest place. This is not a motivational example. This is the shape of reality. Power in God's kingdom does not climb. It descends. And the one who descends furthest is the one God lifts highest.",
+        paraphrase: "Jesus was God. That is where the hymn starts. And being God, he did not clutch his status. He did not spend his position on himself. He emptied himself. Took the form of a slave. Died on a cross. The one who held all power surrendered all power. And because he went down — all the way down — God exalted him to the highest place. This is not a motivational example. This is the shape of reality. Power in God's kingdom does not climb. It descends. And the one who descends furthest is the one God lifts highest.",
         keyWords: [
           { word: "emptied himself", original: "heauton ekenōsen (Greek)", meaning: "He poured himself out, he made himself nothing. The great kenosis — the self-emptying of God. Christ did not subtract divinity. He added humanity. He did not stop being God. He chose not to deploy the privileges of divinity for his own benefit." },
           { word: "form of a servant", original: "morphē doulou (Greek)", meaning: "The nature or essential character of a slave. Morphē means the inner reality, not just the outward appearance. Christ did not pretend to be a servant. He became one in his essential nature. God took the form of the lowest social status in the Roman world." },
@@ -2465,6 +2465,18 @@ export default function DeepBibleCompanion() {
           </div>
         </div>
       )}
+      {/* Tool-to-book bridge (QW-17): invitation register, never pressure. */}
+      <section style={{ background: "var(--bone-warm)", padding: "56px 24px" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto", textAlign: "center" }}>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "16px" }}>GO DEEPER</p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "56ch", margin: "0 auto 22px" }}>
+            If this companion is your kind of study, the book behind it is <em>How to Read the Bible — Without Making It Say What You Already Believe</em>.
+          </p>
+          <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+            <a href="/how-to-read-the-bible" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Read about the book</a>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }

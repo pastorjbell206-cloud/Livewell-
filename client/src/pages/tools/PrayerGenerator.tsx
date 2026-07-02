@@ -3,6 +3,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import { Heart, Copy, Check, RefreshCw, Share2, Sun, Play, Pause, RotateCcw } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
+import { copyToClipboard } from "@/lib/clipboard";
 import { Link } from "wouter";
 
 const PRAYERS: Record<string, string[]> = {
@@ -75,6 +76,10 @@ export default function PrayerGenerator() {
   const [index, setIndex] = useState(0);
   const [copied, setCopied] = useState(false);
   const [shared, setShared] = useState(false);
+  const [copyFailed, setCopyFailed] = useState(false);
+  const [dailyCopied, setDailyCopied] = useState(false);
+  const [dailyShared, setDailyShared] = useState(false);
+  const [dailyCopyFailed, setDailyCopyFailed] = useState(false);
   const { favorites, addFavorite, removeFavorite, isFavorite } = useFavorites("livewell-saved-prayers");
 
   // Pray Along state
@@ -170,26 +175,60 @@ export default function PrayerGenerator() {
     }
   };
 
-  const handleCopy = () => {
-    if (prayer) {
-      navigator.clipboard.writeText(prayer);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+  const shareLine = (label: string, text: string) =>
+    `\u{1F64F} ${label} — ${text} — via LiveWell by James Bell (livewellbyjamesbell.co/tools/prayer-generator)`;
+
+  const handleCopy = async () => {
+    if (!prayer) return;
+    const ok = await copyToClipboard(prayer);
+    if (!ok) {
+      setCopyFailed(true);
+      return;
     }
+    setCopyFailed(false);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   };
 
-  const handleShare = (text: string, type?: string) => {
-    const label = type || selected || "Prayer";
-    const shareText = `\u{1F64F} ${label} — ${text} — via LiveWell by James Bell (livewellbyjamesbell.co/tools/prayer-generator)`;
-    navigator.clipboard.writeText(shareText);
+  const handleShare = async () => {
+    if (!prayer) return;
+    const ok = await copyToClipboard(shareLine(selected || "Prayer", prayer));
+    if (!ok) {
+      setCopyFailed(true);
+      return;
+    }
+    setCopyFailed(false);
     setShared(true);
     setTimeout(() => setShared(false), 2000);
+  };
+
+  const handleDailyCopy = async () => {
+    const ok = await copyToClipboard(dailyPrayer.text);
+    if (!ok) {
+      setDailyCopyFailed(true);
+      return;
+    }
+    setDailyCopyFailed(false);
+    setDailyCopied(true);
+    setTimeout(() => setDailyCopied(false), 2000);
+  };
+
+  const handleDailyShare = async () => {
+    const ok = await copyToClipboard(shareLine(dailyPrayer.type, dailyPrayer.text));
+    if (!ok) {
+      setDailyCopyFailed(true);
+      return;
+    }
+    setDailyCopyFailed(false);
+    setDailyShared(true);
+    setTimeout(() => setDailyShared(false), 2000);
   };
 
   const handleAnother = () => {
     setIndex((i) => i + 1);
     setCopied(false);
     setShared(false);
+    setCopyFailed(false);
   };
 
   return (
@@ -258,22 +297,23 @@ export default function PrayerGenerator() {
             </p>
             <div style={{ display: "flex", gap: "8px", marginTop: "16px" }}>
               <button
-                onClick={() => {
-                  navigator.clipboard.writeText(dailyPrayer.text);
-                  setCopied(true);
-                  setTimeout(() => setCopied(false), 2000);
-                }}
+                onClick={handleDailyCopy}
                 style={{ display: "flex", alignItems: "center", gap: "4px", padding: "6px 14px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
               >
-                <Copy size={12} /> Copy
+                {dailyCopied ? <><Check size={12} /> Copied</> : <><Copy size={12} /> Copy</>}
               </button>
               <button
-                onClick={() => handleShare(dailyPrayer.text, dailyPrayer.type)}
+                onClick={handleDailyShare}
                 style={{ display: "flex", alignItems: "center", gap: "4px", padding: "6px 14px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
               >
-                <Share2 size={12} /> Share
+                {dailyShared ? <><Check size={12} /> Copied</> : <><Share2 size={12} /> Share</>}
               </button>
             </div>
+            {dailyCopyFailed && (
+              <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink3)", margin: "10px 0 0" }}>
+                Copy failed — select and copy manually.
+              </p>
+            )}
           </div>
         </div>
       </section>
@@ -284,7 +324,7 @@ export default function PrayerGenerator() {
             {TYPES.map((type) => (
               <button
                 key={type}
-                onClick={() => { setSelected(type); setIndex(0); setCopied(false); }}
+                onClick={() => { setSelected(type); setIndex(0); setCopied(false); setCopyFailed(false); }}
                 style={{
                   padding: "18px 16px",
                   background: selected === type ? "var(--gold)" : "white",
@@ -351,7 +391,7 @@ export default function PrayerGenerator() {
                   {copied ? <><Check size={14} /> Copied</> : <><Copy size={14} /> Copy Prayer</>}
                 </button>
                 <button
-                  onClick={() => handleShare(prayer)}
+                  onClick={handleShare}
                   style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}
                 >
                   {shared ? <><Check size={14} /> Copied</> : <><Share2 size={14} /> Share Prayer</>}
@@ -384,6 +424,11 @@ export default function PrayerGenerator() {
                   <RefreshCw size={14} /> Another Prayer
                 </button>
               </div>
+              {copyFailed && (
+                <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink3)", margin: "12px 0 0" }}>
+                  Copy failed — select and copy manually.
+                </p>
+              )}
             </div>
           )}
 

@@ -124,7 +124,7 @@ export default function AdminLogin() {
               cursor: loading ? "default" : "pointer",
             }}
           >
-            {loading ? "Signing in..." : "Sign in"}
+            {loading ? "Signing in…" : "Sign in"}
           </button>
         </form>
       </div>

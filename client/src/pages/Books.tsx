@@ -120,30 +120,31 @@ export default function Books() {
         </div>
       </section>
 
-      {/* NEW EBOOK — After Christendom (flagship, standalone funnel page) */}
+      {/* NEW EBOOK — Babylon (flagship, standalone funnel page) */}
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
-        <Link href="/after-christendom" style={{ textDecoration: "none", color: "inherit" }}>
+        <Link href="/babylon" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
-              src="/books/after-christendom.svg"
-              alt="After Christendom book cover"
+              src="/books/babylon.svg"
+              alt="Babylon book cover"
               width={120}
               height={181}
               style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }}
             />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
-                New Ebook · $9.99 · The Post-Christian Church
+                New Ebook · $9.99 · Post-Christian America
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
-                After Christendom
+                Babylon
               </h2>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", margin: 0 }}>
-                How to follow Jesus now that the culture has stopped pretending to be Christian. What is dying is
-                not the faith but Christendom. Read the opening free, then buy the ebook.
+                The part of Jeremiah's letter we never read. Not how to take the country back, and not how to make
+                peace with losing it. How to build, plant, and seek the good of the city in Christian exile. Read the
+                opening free, then buy the ebook.
               </p>
             </div>
-            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
               Get the ebook →
             </span>
           </div>
@@ -170,6 +171,130 @@ export default function Books() {
               </h2>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", margin: 0 }}>
                 Why marriage is a promise, not a deal. The culture sold us a contract and called it romance. Read
+                the opening free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* NEW EBOOK — How to Read the Bible (standalone funnel page) */}
+      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/how-to-read-the-bible" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img
+              src="/books/how-to-read-the-bible.svg"
+              alt="How to Read the Bible book cover"
+              width={120}
+              height={181}
+              style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }}
+            />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
+                New Ebook · $9.99 · On Reading Scripture
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                How to Read the Bible
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
+                Everyone reads the Bible through a lens and calls it just reading. How to read it without
+                conscripting it, from proof-texting to the passages we skip. Read the opening free, then buy the
+                ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* NEW EBOOK — Be True to Yourself (standalone funnel page) */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/be-true-to-yourself" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img
+              src="/books/be-true-to-yourself.svg"
+              alt="Be True to Yourself book cover"
+              width={120}
+              height={181}
+              style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }}
+            />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
+                New Ebook · $9.99 · The Religion of the Self
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                Be True to Yourself
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", margin: 0 }}>
+                The age's one commandment, named as the lie it is. How the self became god, what it cost, and the
+                older freedom on the other side. Not be true to yourself. You are not your own. Read the opening
+                free, then buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* NEW EBOOK — What Belongs to the Poor (standalone funnel page) */}
+      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/what-belongs-to-the-poor" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img
+              src="/books/what-belongs-to-the-poor.svg"
+              alt="What Belongs to the Poor book cover"
+              width={120}
+              height={181}
+              style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }}
+            />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
+                New Ebook · $9.99 · What the Fathers Knew
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                What Belongs to the Poor
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
+                The ancient church called giving to the poor justice, not charity, returning what was already theirs.
+                What Basil and the Fathers knew, and the hoarding modern church forgot. Read the opening free, then
+                buy the ebook.
+              </p>
+            </div>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+              Get the ebook →
+            </span>
+          </div>
+        </Link>
+      </section>
+
+      {/* NEW EBOOK — Rule of Life (standalone funnel page) */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
+        <Link href="/rule-of-life" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
+            <img
+              src="/books/rule-of-life.svg"
+              alt="Rule of Life book cover"
+              width={120}
+              height={181}
+              style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }}
+            />
+            <div style={{ flex: "1 1 320px" }}>
+              <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
+                New Ebook · $9.99 · The Ancient Disciplines
+              </div>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+                Rule of Life
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", margin: 0 }}>
+                You are being formed every hour, by the feed and the screen, into someone you did not choose. The
+                ancient practices the church used to form durable souls, recovered for an age built to deform us. Read
                 the opening free, then buy the ebook.
               </p>
             </div>
@@ -601,7 +726,7 @@ export default function Books() {
                   style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 12px 32px rgba(0,0,0,.25)" }} />
                 <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", margin: "14px 0 4px", lineHeight: 1.2 }}>{b.title}</h3>
                 <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 8px", lineHeight: 1.4 }}>{b.sub}</p>
-                <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)", letterSpacing: "0.04em" }}>Get the ebook — $9.99 →</span>
+                <span style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--mustard-text)", letterSpacing: "0.04em" }}>Get the ebook — $9.99 →</span>
               </Link>
             ))}
           </div>
@@ -628,7 +753,7 @@ export default function Books() {
                   style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 12px 32px rgba(0,0,0,.4)" }} />
                 <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--bone)", margin: "14px 0 4px", lineHeight: 1.2 }}>{b.title}</h3>
                 <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "rgba(245,240,230,.7)", margin: "0 0 8px", lineHeight: 1.4 }}>{b.sub}</p>
-                <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard)", letterSpacing: "0.04em" }}>Get the ebook →</span>
+                <span style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--mustard)", letterSpacing: "0.04em" }}>Get the ebook →</span>
               </Link>
             ))}
           </div>
@@ -657,7 +782,7 @@ export default function Books() {
                   style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 12px 32px rgba(0,0,0,.25)" }} />
                 <h3 style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, color: "var(--ink)", margin: "14px 0 4px", lineHeight: 1.2 }}>{b.title}</h3>
                 <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 8px", lineHeight: 1.4 }}>{b.sub}</p>
-                <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)", letterSpacing: "0.04em" }}>Get the ebook →</span>
+                <span style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--mustard-text)", letterSpacing: "0.04em" }}>Get the ebook →</span>
               </Link>
             ))}
           </div>
@@ -797,8 +922,33 @@ export default function Books() {
               marginBottom: "var(--s-5)",
             }}
           >
-            All {authored.length} books by James Bell
+            {booksQuery.isLoading
+              ? "Books by James Bell"
+              : `All ${authored.length} books by James Bell`}
           </h2>
+          {booksQuery.isLoading && (
+            <div
+              role="status"
+              aria-label="Loading the catalog"
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
+                gap: "var(--s-4)",
+              }}
+            >
+              {Array.from({ length: 8 }, (_, i) => (
+                <div
+                  key={i}
+                  className="animate-pulse"
+                  style={{
+                    background: "var(--bone)",
+                    borderRadius: "var(--radius-sm)",
+                    aspectRatio: "2 / 3",
+                  }}
+                />
+              ))}
+            </div>
+          )}
           {authored.length === 0 && !booksQuery.isLoading && (
             <p
               style={{
@@ -807,7 +957,7 @@ export default function Books() {
                 padding: "var(--s-4) 0",
               }}
             >
-              The catalog is loading from the database.
+              The catalog did not load. Refresh the page and it should appear.
             </p>
           )}
           <div

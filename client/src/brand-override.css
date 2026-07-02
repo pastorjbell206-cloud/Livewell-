@@ -39,10 +39,16 @@ blockquote {
 
 hr { border: none; border-top: 1px solid var(--line); margin: 3rem 0; }
 
+/* Two-tone focus ring: the dark inner ring carries contrast on light
+   surfaces, the light outer ring carries it on dark sections — one ring
+   that passes SC 1.4.11 everywhere (raw mustard was 2.1-2.4:1 on cream).
+   transition: none stops component `transition: all` from fading it in. */
 :focus-visible {
-  outline: 2px solid var(--mustard) !important;
-  outline-offset: 4px !important;
+  outline: 2px solid var(--ink) !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 5px var(--bone) !important;
   border-radius: 2px;
+  transition: none !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

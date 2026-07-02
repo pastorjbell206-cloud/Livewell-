@@ -2,33 +2,80 @@
 
 > Connecting the depth of theology to the weight of everyday life.
 
-This document is the single source of truth for every visual decision on the site. Every value used in markup must reference a token defined here. No hardcoded hex, no magic numbers.
+**The source of truth for every token is `client/src/index.css`** — the
+`:root` block (light), `html.dark` (dark mode), and `.admin-scope` (the
+admin's forced-light workspace). Components reference those variables in
+inline styles; nothing user-facing hardcodes a hex. This document is the
+human-readable companion: it explains the system and mirrors the real
+values. If this file and `index.css` ever disagree, `index.css` wins — fix
+the doc, not the CSS. The brand contract itself (palette roles, mustard
+discipline, typography) lives in `CLAUDE.md`.
 
 ---
 
 ## 1. Color System
 
-### Palette
+### Surfaces
 
-| Token | Hex | Role |
+| Token | Light | Role |
 |---|---|---|
-| `--charcoal` | `#1A1A1A` | Primary dark — backgrounds, body text on light |
-| `--charcoal-deep` | `#0F0F0F` | Footer, modal overlays, deepest sections |
+| `--charcoal` | `#1A1A1A` | Primary dark — hero, dark sections, footer |
+| `--charcoal-deep` | `#0F0F0F` | Deepest sections, modal overlays |
 | `--charcoal-soft` | `#2A2A2A` | Card surfaces on dark, secondary panels |
-| `--bone` | `#F4F1EA` | Primary light — backgrounds, text on dark |
-| `--bone-warm` | `#EDE8DC` | Secondary light — alternating sections |
+| `--bone` | `#F5F0E6` | Default page background — the room you read in |
+| `--bone-warm` | `#EDE8DC` | Alternating section background |
 | `--bone-muted` | `#D9D3C4` | Dividers, subtle borders on light |
-| `--mustard` | `#C8A951` | Accent — links, CTAs, underlines, pull quotes |
-| `--mustard-deep` | `#A88838` | Hover state, active state |
-| `--mustard-soft` | `#E5D8A8` | Tints, highlight backgrounds (use sparingly) |
+| `--card` | `#FFFFFF` | Cards and inputs that must feel lifted |
+
+### Text
+
+| Token | Light | Role |
+|---|---|---|
 | `--ink` | `#14110C` | Body text on bone — warmer than pure black |
 | `--ink-muted` | `#5A5448` | Secondary text, captions, metadata |
 
-### Usage Rules (Enforced)
+### Accent (mustard — punctuation, not paragraph)
 
-1. **Mustard appears on less than 8% of any given viewport.** It is punctuation, not a paragraph. Used for: primary CTAs (underline reveal), link underlines on hover, section number indicators, pull-quote rules, the logomark. Never used for: full button fills on hero CTAs, large background blocks, body text.
-2. **Charcoal and bone alternate as section backgrounds** to create visual cadence. No three consecutive sections share a background.
-3. **Pure white (#FFFFFF) and pure black (#000000) never appear.** Bone and charcoal carry the weight.
+| Token | Light | Role |
+|---|---|---|
+| `--mustard` | `#D4A017` | CTAs, dividers, kicker labels, link underlines |
+| `--mustard-deep` | `#B08A12` | Hover / active state |
+| `--mustard-text` | `#7A6010` | Gold as *text* on light surfaces (AA contrast) |
+
+### Semantic score tokens (assessments and tools)
+
+| Token | Light | Role |
+|---|---|---|
+| `--ok` / `--ok-bg` | `#3D5A40` / 8% tint | Healthy score |
+| `--strain` / `--strain-bg` | `#B5651D` / 8% tint | Under strain |
+| `--alert` / `--alert-bg` | `#9B2C2C` / 8% tint | Needs attention; error text |
+
+### Aliases
+
+`:root` also carries legacy aliases from earlier passes — `--gold`,
+`--goldlt`, `--border`, `--line`, `--paper`, `--cream`, `--ivory`,
+`--forest*`, `--rust*`, `--sage`, `--plum`, `--oxblood`, `--stone*`,
+`--ink2/3` — all resolving into the same palette above. Prefer the
+canonical names in new code. Note `--goldlt` is the *text-safe* gold: it
+darkens on light backgrounds and lightens on dark ones.
+
+### Dark mode and the admin scope
+
+`html.dark` re-maps the same token names (bone becomes near-black, ink
+becomes bone, mustard-text lightens); components that only ever reference
+tokens get dark mode for free. The admin area opts out entirely via
+`.admin-scope`, which re-asserts the light values — the admin is always a
+light workspace.
+
+### Usage Rules (enforced)
+
+1. **Mustard appears on less than 8% of any viewport.** It is punctuation,
+   not a paragraph. Never a background fill, never body text — use
+   `--mustard-text` (or `--goldlt`) when gold must carry words.
+2. **Charcoal and bone alternate as section backgrounds.** No three
+   consecutive sections share a background.
+3. **Cream is the room.** Pure white exists only as `--card` — cards and
+   inputs that must feel lifted — never as a page background.
 
 ---
 
@@ -38,92 +85,81 @@ This document is the single source of truth for every visual decision on the sit
 
 | Token | Stack | Use |
 |---|---|---|
-| `--font-display` | `'Cormorant Garamond', 'EB Garamond', Georgia, serif` | Headlines, section titles, pull quotes |
-| `--font-body` | `'Inter', -apple-system, BlinkMacSystemFont, sans-serif` | Body copy, UI, buttons |
-| `--font-mono` | `'JetBrains Mono', ui-monospace, monospace` | Code, ISBNs, data labels |
+| `--F` | `'Cormorant Garamond', 'EB Garamond', Georgia, serif` | Headlines, section titles, pull quotes |
+| `--B` | `'Inter', -apple-system, BlinkMacSystemFont, sans-serif` | Body copy |
+| `--U` | same as `--B` | UI, buttons, labels |
 
-### Type Scale (1.25 ratio, mobile-first)
+Longer-name aliases exist (`--display`, `--serif`, `--sans`). There is
+**no mono token** in `:root`; JetBrains Mono appears in the CLAUDE.md brand
+table but has no token yet — add one before using it in markup.
 
-| Token | Size | Use |
-|---|---|---|
-| `--text-xs` | 0.75rem (12px) | Captions, metadata |
-| `--text-sm` | 0.875rem (14px) | UI labels, footnotes |
-| `--text-base` | 1rem (16px) | Body |
-| `--text-lg` | 1.125rem (18px) | Lead paragraphs |
-| `--text-xl` | 1.5rem (24px) | Subheadings |
-| `--text-2xl` | 2rem (32px) | Section titles (mobile) |
-| `--text-3xl` | 2.75rem (44px) | Section titles (desktop) |
-| `--text-4xl` | 3.75rem (60px) | Page titles |
-| `--text-5xl` | 5rem (80px) | Hero (mobile) |
-| `--text-6xl` | 7rem (112px) | Hero (desktop) |
+### Scale
+
+There is no `--text-*` scale in `:root`. The body base is `1rem` at
+`line-height: 1.7` (set on `body`); headings size per component, usually
+with `clamp()` so display type breathes between breakpoints.
 
 ### Type Rules
 
-- Display type: `font-weight: 400`, `letter-spacing: -0.02em`. Serifs carry weight through size and tracking, not boldness.
+- Display type: `font-weight: 400`, `letter-spacing: -0.02em`. Serifs carry
+  weight through size and tracking, not boldness.
 - Body copy: `font-weight: 400`, `line-height: 1.7`, `max-width: 68ch`.
-- Eyebrow labels: Inter at 0.75rem, `letter-spacing: 0.18em`, `font-weight: 500`, uppercase.
-- Italics (display serif) carry emphasis. Bold sans-serif is for UI affordances only.
+- Eyebrow labels: Inter at 12px, `letter-spacing: 0.18em`,
+  `font-weight: 500`, uppercase.
+- Italics (display serif) carry emphasis. Bold sans-serif is for UI
+  affordances only.
 
 ---
 
-## 3. Spacing
+## 3. Spacing, Containers, Shape
 
 | Token | Value |
 |---|---|
-| `--space-1` | 0.5rem (8px) |
-| `--space-2` | 1rem (16px) |
-| `--space-3` | 1.5rem (24px) |
-| `--space-4` | 2rem (32px) |
-| `--space-5` | 3rem (48px) |
-| `--space-6` | 4rem (64px) |
-| `--space-7` | 6rem (96px) |
-| `--space-8` | 8rem (128px) |
-| `--space-9` | 12rem (192px) |
+| `--s-1` … `--s-9` | 0.5 / 1 / 1.5 / 2 / 3 / 4 / 6 / 8 / 12 rem (8pt grid) |
+| `--w-prose` | 680px — article body |
+| `--w-content` | 880px — hero copy, CTAs |
+| `--w-default` | 1180px — most sections |
+| `--w-wide` | 1440px — hero imagery |
+| `--radius-sm` / `--radius-md` | 2px |
+| `--radius-pill` | 999px |
 
-**Section padding:** `--space-7` mobile, `--space-9` desktop.
+**Shadows** — hairlines beat shadows; shadow only on hover/float:
+`--shadow-card` (0 2px 8px at 6%), `--shadow-modal` (0 24px 80px at 20%).
 
-### Container Widths
-
-| Token | Value | Use |
-|---|---|---|
-| `--container-prose` | 680px | Article body |
-| `--container-narrow` | 880px | Hero copy, CTAs |
-| `--container-default` | 1180px | Most sections |
-| `--container-wide` | 1440px | Hero imagery |
+**Motion** — `--ease: cubic-bezier(0.22, 1, 0.36, 1)`, `--dur: 240ms`. A
+global `prefers-reduced-motion` rule collapses all animation.
 
 ---
 
-## 4. Buttons
+## 4. Buttons (convention)
 
 Three styles. No more.
 
-**Primary** — Bone fill on charcoal, charcoal fill on bone. Padding: `1rem 2.5rem`. Border-radius: `2px`. On hover: mustard underline reveals beneath label (240ms ease-out).
+**Primary** — Bone fill on charcoal, charcoal (ink) fill on bone, often
+with a 2px mustard bottom border carrying the accent.
 
-**Secondary (Ghost)** — Transparent, 1px border in current color. On hover: background fills mustard, text inverts to charcoal, border matches.
+**Secondary (Ghost)** — Transparent, 1px border in the current color.
 
-**Tertiary (Link)** — Inline mustard underline at 0.5em offset. On hover: underline thickens 1px to 2px, slides to 0.25em offset.
+**Tertiary (Link)** — Inline mustard underline.
 
-### Interaction Grammar
+### Focus
 
-- All transitions: `cubic-bezier(0.22, 1, 0.36, 1)` at `240ms`
-- Focus: 2px mustard outline, 4px offset
-- Cursor: pointer only on actual interactive elements
-
----
-
-## 5. Layout
-
-- Grid: 12-column desktop, --space-3 gutter. 8-column at 768px. 4-column at 480px.
-- Every section: eyebrow → headline → supporting paragraph → content → optional CTA.
+Focus is a two-tone ring defined globally on `:focus-visible`: a 2px
+`--ink` outline over a 5px `--bone` halo (`box-shadow`), with transitions
+suppressed — visible on light, dark, and mustard surfaces alike. Do not
+replace it per-component.
 
 ---
 
-## 6. Mood
+## 5. Mood
 
-The site feels like the foyer of a cathedral that has a writing desk in it. Sacred enough to matter, working enough to be used.
+The site feels like the foyer of a cathedral that has a writing desk in it.
+Sacred enough to matter, working enough to be used.
 
-**Reference points:** Plough Quarterly, The Atlantic long-form, Penguin Classics hardcovers, Walker Art Center print.
+**Reference points:** Plough Quarterly, The Atlantic long-form, Penguin
+Classics hardcovers, Walker Art Center print.
 
 **What it is not:** minimalist-Scandinavian, boutique-hotel, playful.
 
-The mustard does what gold leaf does on a worn Bible cover — it appears where it matters and nowhere else.
+The mustard does what gold leaf does on a worn Bible cover — it appears
+where it matters and nowhere else.

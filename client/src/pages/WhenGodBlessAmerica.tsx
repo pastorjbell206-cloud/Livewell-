@@ -9,7 +9,7 @@
 import { createElement, useEffect } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { SITE_URL } from "@/lib/site";
+import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
 
 const COVER = "/books/when-god-bless-america.jpg";
 
@@ -59,7 +59,7 @@ export default function WhenGodBlessAmerica() {
     <Layout>
       <SEOMeta
         title="When God Bless America Replaces Thy Kingdom Come — by James Bell"
-        description="A bold, biblical, and pastoral critique of political idolatry in the American church. Available now as an ebook."
+        description="A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary. Available now as an ebook."
         image={`${SITE_URL}${COVER}`}
         url={`${SITE_URL}/books/when-god-bless-america`}
         type="book"
@@ -106,7 +106,7 @@ export default function WhenGodBlessAmerica() {
               In a time of political panic, rising tribalism, and growing confusion inside the church, many believers have quietly begun to place their practical trust in power, policy, and national strength rather than in Christ. The language of faith remains. The rituals remain. The worship remains. But the heart has moved.
             </p>
             <p style={{ margin: "0 0 1.2em" }}>
-              In <em>When God Bless America Replaces Thy Kingdom Come</em>, pastor and writer James Bell offers a bold, biblical, and pastorally grounded challenge to the church in America. Drawing from Scripture, church history, and cultural analysis, Bell exposes how patriotism can become practical salvation, how fear can rewrite doctrine, and how the cross confronts every attempt to turn Jesus into a mascot for political power.
+              In <em>When God Bless America Replaces Thy Kingdom Come</em>, James Bell writes to the church in America as a pastor inside it — from Scripture, from church history, and from what he has watched happen in his own sanctuary. He exposes how patriotism can become practical salvation, how fear can rewrite doctrine, and how the cross confronts every attempt to turn Jesus into a mascot for political power.
             </p>
             <p style={{ margin: 0, fontWeight: 600 }}>
               This is not a book about who to vote for. It is a book about who you worship.
@@ -148,7 +148,7 @@ export default function WhenGodBlessAmerica() {
             <StripeBuyButton />
           </div>
           <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.7, color: "rgba(245,240,230,.6)", maxWidth: "56ch", margin: "44px auto 0", borderTop: "1px solid rgba(245,240,230,.18)", paddingTop: "28px" }}>
-            James Bell is a pastor, writer, and ministry leader committed to helping the church think clearly, live faithfully, and recover its allegiance to Christ above every cultural and political idol.
+            {AUTHOR_BIO}
           </p>
         </div>
       </section>

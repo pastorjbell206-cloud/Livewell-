@@ -1,8 +1,11 @@
-# Robots.txt for Livewell by James Bell
-# Allow all search engines to crawl and index the site
+# Robots.txt for LiveWell by James Bell
 
 User-agent: *
 Allow: /
+# OG images are served from /api/og — social scrapers (Facebook, X) and
+# Google Images respect robots.txt when fetching og:image, so this Allow
+# must come before the /api disallow or every share card loses its image.
+Allow: /api/og
 Disallow: /admin
 Disallow: /api
 Disallow: /.env
@@ -10,8 +13,3 @@ Disallow: /node_modules
 
 # Sitemap
 Sitemap: https://www.livewellbyjamesbell.co/sitemap.xml
-
-# Crawl delay (optional - adjust based on server capacity)
-Crawl-delay: 1
-
-# Cache bust: 2026-04-17T00:00:00.000Z

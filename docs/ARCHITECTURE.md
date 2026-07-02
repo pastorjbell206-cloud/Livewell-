@@ -5,8 +5,8 @@
 > engineer on day one: architecture, file structure, database, API, UI, and an
 > honest production-readiness verdict.
 >
-> Current as of this branch (synced to `main`, 2026-06-22). The platform has
-> grown a lot — ~190 routes, 32 tables — so treat the database schema and
+> Current as of the `site-elevation` branch, 2026-07-02. The platform has
+> grown a lot — ~260 routes, 32 tables — so treat the database schema and
 > `taxonomy.ts` as the source of truth if this doc and the code ever disagree.
 
 ---
@@ -30,7 +30,7 @@ where it runs.
                           └──────────────┬──────────────┘
                                          │
         PROD runtime ───▶ ┌──────────────▼──────────────┐
-        (Vercel)          │  ONE serverless function     │   api/index.ts (~2,040 lines)
+        (Vercel)          │  ONE serverless function     │   api/index.ts (~2,800 lines)
                           │  self-contained, hand-rolled │   pooled MySQL (this branch)
                           │  procedure dispatch          │
                           └──────────────┬──────────────┘
@@ -48,7 +48,7 @@ implementations of the same API.
   search, community, email, recommendations, syndication, quiz, lead-magnets,
   Stripe, analytics, feed-sync, related-articles, sitemap, and team-collab.
 - **Production on Vercel** runs a *single* serverless function, `api/index.ts`
-  (~2,040 lines), which is deliberately **self-contained** ("no `../server/*`
+  (~2,800 lines), which is deliberately **self-contained** ("no `../server/*`
   imports", per the file header). It re-implements each procedure by hand and
   talks directly to MySQL, returning the same superjson-wrapped envelope the
   tRPC client expects.
@@ -62,14 +62,14 @@ to `api/index.ts`. See §6 — this is now the top item.
 | Layer | Choice |
 |-------|--------|
 | Language | TypeScript end to end |
-| Front-end | React 18, Vite, `wouter`, TanStack Query, tRPC client |
+| Front-end | React 19, Vite, `wouter`, TanStack Query, tRPC client |
 | Styling | Tailwind CSS, Radix UI primitives (shadcn-style), Framer Motion, `recharts`; inline styles bound to CSS-variable design tokens |
 | Server (dev) | Express + tsx watch, full tRPC router |
 | Server (prod) | Vercel serverless function (`api/index.ts`) |
 | Database | MySQL via Drizzle ORM + `mysql2` driver (pooled) |
 | Auth | bcrypt password → HMAC-signed session cookie (`lw_session`) |
 | Payments | Stripe (config-driven: live when keys + price ID are set) |
-| Integrations | Mailchimp, AWS S3, RSS/Substack sync |
+| Integrations | Mailchimp, RSS/Substack sync (the S3 SDK was removed; `files.*` is a known prod gap) |
 | Deploy | Vercel; `vercel.json` controls build, headers, redirects |
 
 **Deployment pipeline** (`vercel.json`): the build runs
@@ -90,7 +90,7 @@ Security headers (HSTS, `X-Frame-Options`, `X-Content-Type-Options`,
 │   └── index.ts          Vercel serverless entry — routes + procedures + pooled MySQL
 ├── client/
 │   ├── src/
-│   │   ├── App.tsx        route table (~190 routes), providers
+│   │   ├── App.tsx        route table (~260 routes), providers
 │   │   ├── index.css      design tokens (:root CSS variables)
 │   │   ├── pages/         ~180 page components (pillars, tools/, landing/, admin/)
 │   │   ├── components/    shared UI (incl. shadcn-style primitives)
@@ -187,7 +187,7 @@ production domains.
 
 ## 5. UI architecture
 
-~190 routes in `client/src/App.tsx` (~180 page components), grouped as:
+~260 routes in `client/src/App.tsx` (~180 page components), grouped as:
 
 - **The pillars / content** — route families per the taxonomy:
   `/theology/*` (history, creeds, doctrine, hermeneutics, traditions, compare,
@@ -256,7 +256,7 @@ Inter; cream/black with mustard as <8% punctuation. Contract in `CLAUDE.md`.
    shared "admin" session, with no multi-user login. Closing those requires
    giving prod real per-user auth (its own project), or unifying the two runtimes
    so one real router serves both.
-2. **`api/index.ts` is a 2,040-line single file.** It works, but its size is a
+2. **`api/index.ts` is a ~2,800-line single file.** It works, but its size is a
    maintainability risk; splitting it into modules (routes, procedures, db,
    auth) would help — ideally as part of resolving #1.
 3. **Stripe is config-driven, not necessarily on.** Checkout/membership go live

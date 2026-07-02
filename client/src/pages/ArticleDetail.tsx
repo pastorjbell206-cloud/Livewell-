@@ -11,7 +11,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useLocation, useParams } from "wouter";
-import { Streamdown } from "streamdown";
+import { Markdown } from "@/components/Markdown";
 import { ArrowLeft, Bookmark, Share2, User } from "lucide-react";
 
 import Layout from "@/components/Layout";
@@ -24,6 +24,8 @@ import { CitationCopy } from "@/components/CitationCopy";
 import { AudienceShare } from "@/components/AudienceShare";
 import { AudienceLabel } from "@/components/AudienceLabel";
 import { TrackChip } from "@/components/TrackChip";
+import { KeepReadingBook } from "@/components/KeepReadingBook";
+import ArticleNextSteps from "@/components/ArticleNextSteps";
 import { GeneratedHero } from "@/components/GeneratedHero";
 import { trpc } from "@/lib/trpc";
 import { pillarForPost } from "@/lib/taxonomy";
@@ -141,7 +143,7 @@ function BookmarkButton({ slug }: { slug: string }) {
 /**
  * ShareableQuote — every blockquote in an essay renders as a pull-quote the
  * reader can lift and share. Reads its own rendered text (so it survives
- * whatever markup Streamdown puts inside), then hands it to the native share
+ * whatever markup the Markdown renderer puts inside), then hands it to the native share
  * sheet, falling back to a clipboard copy with attribution and the article URL.
  */
 function ShareableQuote({
@@ -286,7 +288,7 @@ function slugifyHeading(text: string, index: number) {
 /**
  * TableOfContents — a slim, collapsible "In this essay" card for long pieces.
  *
- * Reads the section headings Streamdown rendered into the body, assigns stable
+ * Reads the section headings the Markdown renderer put into the body, assigns stable
  * anchor ids, and links to them. Renders nothing on short essays (fewer than
  * three section headings), so the reading experience is untouched where a
  * contents list would only be noise. No layout grid, no right rail: the
@@ -685,7 +687,7 @@ export default function ArticleDetail() {
             }}
           >
             {post.body ? (
-              <Streamdown
+              <Markdown
                 components={{
                   blockquote: ({ children }: { children?: React.ReactNode }) => (
                     <ShareableQuote shareTitle={post.title} shareUrl={canonical}>
@@ -695,7 +697,7 @@ export default function ArticleDetail() {
                 }}
               >
                 {post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}
-              </Streamdown>
+              </Markdown>
             ) : (
               <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
                 This article is in preparation.
@@ -727,6 +729,13 @@ export default function ArticleDetail() {
             <AudienceShare title={post.title} url={canonical} />
           </div>
         </section>
+
+        {/* NEXT STEPS — the matched tool and reading path for this essay
+            (built long ago, never imported; revived by QW-16) */}
+        <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
+
+        {/* KEEP READING — the book that carries this essay's argument to full length */}
+        <KeepReadingBook post={post} />
 
         {/* NEWSLETTER (single CTA — no fake form) */}
         <section

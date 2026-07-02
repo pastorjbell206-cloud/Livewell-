@@ -23,7 +23,7 @@ export default function CreedsLibrary() {
   const [items, setItems] = useState<Entry[]>([]);
 
   useEffect(() => {
-    fetch("/creeds/documents-index.json", { cache: "no-store" })
+    fetch("/creeds/documents-index.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setItems(d.documents || []))
       .catch(() => {});

@@ -8,10 +8,13 @@
  * client-side; no query leaves the browser.
  */
 import Layout from "@/components/Layout";
+import LoadFailed from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import { Search, Copy, Check, Globe, Landmark, Compass, BookOpen } from "lucide-react";
+import { copyToClipboard } from "@/lib/clipboard";
+import { fetchJson } from "@/lib/fetch-json";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const eyebrow = { fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--mustard)" } as const;
@@ -44,18 +47,36 @@ function scoreTopic(t: Topic, words: string[]): number {
   return score;
 }
 
+// The render needs an array of topics; anything else is a failed load.
+const isTopicsFile = (x: unknown): x is { topics: Topic[] } => {
+  const d = x as { topics?: unknown };
+  return !!d && typeof d === "object" && Array.isArray(d.topics);
+};
+
 export default function WisdomFinder() {
-  const [topics, setTopics] = useState<Topic[]>([]);
+  // null = not loaded yet; [] = loaded but empty (distinct from loading)
+  const [topicsData, setTopicsData] = useState<Topic[] | null>(null);
+  const topics = useMemo(() => topicsData ?? [], [topicsData]);
   const [query, setQuery] = useState("");
   const [submitted, setSubmitted] = useState("");
   const [activeId, setActiveId] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
+  const [copyFailed, setCopyFailed] = useState(false);
+  const [nonce, setNonce] = useState(0);
+  // The attempt (retry nonce) that failed; deriving `loadError` from it means
+  // Retry clears the panel without extra state writes inside the effect.
+  const [failedNonce, setFailedNonce] = useState<number | null>(null);
+  const loadError = failedNonce === nonce;
 
   useEffect(() => {
-    fetch("/wisdom/topics.json", { cache: "no-store" })
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d) => d && setTopics(d.topics || []))
-      .catch(() => {});
+    let stale = false;
+    fetchJson("/wisdom/topics.json", isTopicsFile)
+      .then((d) => { if (!stale) setTopicsData(d.topics); })
+      .catch(() => { if (!stale) setFailedNonce(nonce); });
+    return () => { stale = true; };
+  }, [nonce]);
+
+  useEffect(() => {
     // Deep link: /tools/wisdom-finder?q=... prefills and runs the search.
     if (typeof window !== "undefined") {
       const q = new URLSearchParams(window.location.search).get("q");
@@ -83,6 +104,7 @@ export default function WisdomFinder() {
     setSubmitted(q);
     setActiveId(null);
     setCopied(false);
+    setCopyFailed(false);
   }
 
   async function copyActive() {
@@ -101,13 +123,14 @@ export default function WisdomFinder() {
       "",
       `LIVING IT NOW: ${active.application}`,
     ].join("\n");
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      /* clipboard unavailable */
+    const ok = await copyToClipboard(text);
+    if (!ok) {
+      setCopyFailed(true);
+      return;
     }
+    setCopyFailed(false);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   }
 
   return (
@@ -135,7 +158,7 @@ export default function WisdomFinder() {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="I am anxious about money, my marriage is cold, I cannot forgive..."
+              placeholder="I am anxious about money, my marriage is cold, I cannot forgive…"
               style={{ flex: "1 1 320px", padding: "14px 16px", fontFamily: "var(--B)", fontSize: "16px", color: "var(--ink)", background: "#FFFFFF", border: "none", outline: "none" }}
             />
             <button type="submit" style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "8px", padding: "14px 22px", background: "var(--mustard)", color: "var(--charcoal)", border: "none", fontFamily: "var(--U)", fontWeight: 600, fontSize: "15px" }}>
@@ -158,8 +181,16 @@ export default function WisdomFinder() {
                   </button>
                 ))}
               </div>
-              {topics.length === 0 && (
+              {topicsData === null && !loadError && (
                 <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", marginTop: "var(--s-3)" }}>Loading the wisdom library…</p>
+              )}
+              {loadError && (
+                <div style={{ marginTop: "var(--s-3)" }}>
+                  <LoadFailed what="The wisdom library" onRetry={() => setNonce((n) => n + 1)} backHref="/tools" backLabel="Back to the tools" />
+                </div>
+              )}
+              {topicsData !== null && topics.length === 0 && (
+                <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", marginTop: "var(--s-3)" }}>No topics are available yet.</p>
               )}
             </div>
           )}
@@ -167,7 +198,11 @@ export default function WisdomFinder() {
           {/* Results */}
           {submitted.trim() && (
             <div>
-              {ranked.length === 0 ? (
+              {loadError ? (
+                <LoadFailed what="The wisdom library" onRetry={() => setNonce((n) => n + 1)} backHref="/tools" backLabel="Back to the tools" />
+              ) : topicsData === null ? (
+                <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)" }}>Loading the wisdom library…</p>
+              ) : ranked.length === 0 ? (
                 <div style={{ background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", padding: "var(--s-4)" }}>
                   <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)" }}>
                     We did not find a close match for that yet. Try naming the feeling or the situation in a word or two, anxiety, anger, money, marriage, loneliness, grief, doubt, or pick one below.
@@ -190,7 +225,7 @@ export default function WisdomFinder() {
                         {ranked.map((t) => {
                           const on = active?.id === t.id;
                           return (
-                            <button key={t.id} onClick={() => { setActiveId(t.id); setCopied(false); }} style={{ cursor: "pointer", padding: "8px 14px", background: on ? "var(--mustard)" : "#FFFFFF", color: on ? "var(--charcoal)" : "var(--ink)", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13.5px" }}>
+                            <button key={t.id} onClick={() => { setActiveId(t.id); setCopied(false); setCopyFailed(false); }} style={{ cursor: "pointer", padding: "8px 14px", background: on ? "var(--mustard)" : "#FFFFFF", color: on ? "var(--charcoal)" : "var(--ink)", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13.5px" }}>
                               {t.label}
                             </button>
                           );
@@ -207,6 +242,11 @@ export default function WisdomFinder() {
                           {copied ? <Check size={15} /> : <Copy size={15} />} {copied ? "Copied" : "Copy"}
                         </button>
                       </div>
+                      {copyFailed && (
+                        <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
+                          Copy failed — select and copy manually.
+                        </p>
+                      )}
 
                       <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "var(--ink)", marginBottom: "var(--s-4)" }}>{active.framing}</p>
 

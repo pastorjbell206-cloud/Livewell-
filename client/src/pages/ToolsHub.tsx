@@ -14,10 +14,10 @@ const TOOLS = [
   },
   {
     title: "Theology Quiz",
-    description: "Twenty questions across doctrine, church history, and the biblical storyline. Find out where your foundations are solid and where the gaps are. Part of the Theological Depth section.",
+    description: "Ten questions across doctrine, church history, and the biblical storyline. Find out where your foundations are solid and where the gaps are. Part of the Theological Depth section.",
     href: "/tools/theology-quiz",
     icon: Brain,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "The Leadership Formation Inventory",
@@ -31,7 +31,7 @@ const TOOLS = [
     description: "Thirty honest statements across the inner life, the body, relationships, work and money, and the world. Maps where life is flourishing and hands you a rule of life for the season. Part of Integrated Life.",
     href: "/life/assessment",
     icon: Heart,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Start a Table",
@@ -45,7 +45,7 @@ const TOOLS = [
     description: "The front door to Scripture's wisdom for the place no rule reaches: the deep Proverbs and Ecclesiastes guide, a topical map for money, words, work, anger, marriage, and more, and a month in Proverbs. Part of Integrated Life.",
     href: "/wisdom",
     icon: BookMarked,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Wisdom Finder",
@@ -59,7 +59,7 @@ const TOOLS = [
     description: "A rule of life is not a performance contract. It is a trellis. Choose sustainable practices across prayer, Scripture, rest, community, mission, and the body, and build a rhythm of grace you can actually keep. Part of Integrated Life.",
     href: "/tools/rule-of-life",
     icon: Target,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "What the Bible Says About",
@@ -73,14 +73,14 @@ const TOOLS = [
     description: "A chapter of Proverbs a day, matched to the date, the way the church has read it for centuries. Each day a theme, a verse or two worth knowing by heart, and a reflection that runs the chapter into a real decision. Part of Integrated Life.",
     href: "/tools/proverbs-31",
     icon: BookMarked,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Passage Context Tool",
     description: "Enter any Bible reference and read it in context: the passage with room around it, who wrote it and why, its genre, the flow of the argument, cross-references, and the questions to ask of any text. Part of the Theological Depth section.",
     href: "/theology/passage",
     icon: BookMarked,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Bible Verse Finder",
@@ -101,7 +101,7 @@ const TOOLS = [
     description: "Build a 15-minute family devotion in seconds. Pick your kids' age group and a theme, and get a complete devotion with Scripture, teaching, activity, and prayer.",
     href: "/tools/family-devotions",
     icon: Users,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Bible Study Guide",
@@ -112,14 +112,14 @@ const TOOLS = [
   },
   {
     title: "Marriage Health Assessment",
-    description: "A 15-question diagnostic across communication, intimacy, trust, shared vision, and conflict. Not a quiz — a real assessment with actionable recommendations.",
+    description: "Not a quiz. Fifteen questions across communication, intimacy, trust, shared vision, and conflict — and what to do about what you find.",
     href: "/tools/marriage-assessment",
     icon: HeartHandshake,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Financial Health Check",
-    description: "A biblical stewardship assessment across generosity, contentment, stewardship, and family provision. Scripture-grounded with practical next steps.",
+    description: "Twelve questions across generosity, contentment, stewardship, and family provision — and what your answers say about who you believe owns what you have.",
     href: "/tools/financial-health",
     icon: DollarSign,
     color: "var(--ink2)",
@@ -140,10 +140,10 @@ const TOOLS = [
   },
   {
     title: "Emotional Health Assessment",
-    description: "15 questions across self-awareness, boundaries, grief, forgiveness, and rest. Scripture-grounded diagnostic with practical next steps.",
+    description: "Fifteen questions across self-awareness, boundaries, grief, forgiveness, and rest — and where Scripture meets each one.",
     href: "/tools/emotional-health",
     icon: Brain,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Sermon Outline Generator",
@@ -164,27 +164,48 @@ const TOOLS = [
     description: "A 5-step guided process for 8 common conflict types. Name what happened, name what you feel, agree on one next step.",
     href: "/tools/conflict-guide",
     icon: MessageCircle,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Pastor Burnout Diagnostic",
-    description: "24 questions across calling, isolation, marriage impact, board relations, and more. Your burnout signature with a recovery roadmap.",
+    description: "Twenty-four questions across calling, isolation, marriage, and the board. It names the shape of your exhaustion and the way back.",
     href: "/tools/pastor-burnout",
     icon: Shield,
     color: "var(--ink2)",
   },
   {
     title: "Life Audit",
-    description: "24 questions across 8 life areas: spiritual, marriage, parenting, physical, financial, emotional, vocational, community. Your strengths and growth areas identified.",
+    description: "24 questions across 8 life areas: spiritual, marriage, parenting, physical, financial, emotional, vocational, community. It names what is strong and what is slipping.",
     href: "/tools/life-audit",
     icon: Target,
-    color: "var(--gold)",
+    color: "var(--goldlt)",
   },
   {
     title: "Church Health Check",
     description: "18 questions across worship, discipleship, outreach, leadership, stewardship, and congregational care. For pastors assessing their church.",
     href: "/tools/church-health",
     icon: Church,
+    color: "var(--ink)",
+  },
+  {
+    title: "Misused Verses — What the Bible Actually Says",
+    description: "The passages we quote most and read least: what each one says in context, how it gets misused, and the fuller teaching underneath. The estate's deepest verse tool.",
+    href: "/tools/bible-says",
+    icon: BookOpen,
+    color: "var(--ink)",
+  },
+  {
+    title: "Quote Library",
+    description: "181 lines from the essays, filed by conviction, comfort, challenge, history, and wisdom — each tied to the piece it came from. Copy one, share one, follow one home.",
+    href: "/tools/quotes",
+    icon: MessageCircle,
+    color: "var(--ink2)",
+  },
+  {
+    title: "Theology Glossary",
+    description: "The working vocabulary of serious faith — justification, atonement, sanctification and the rest — defined plainly, searchable, without the seminary fee.",
+    href: "/tools/glossary",
+    icon: BookMarked,
     color: "var(--ink)",
   },
 ];
@@ -261,34 +282,21 @@ export default function ToolsHub() {
             })}
           </div>
 
-          {totalSaved > 0 && (
-            <div style={{ textAlign: "center", marginTop: "32px" }}>
-              <Link
-                href="/tools/saved"
-                style={{
-                  fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)",
-                  color: "var(--mustard)", textDecoration: "underline",
-                  textUnderlineOffset: "3px",
-                }}
-              >
-                Saved Items ({totalSaved})
-              </Link>
-            </div>
-          )}
+          <div style={{ textAlign: "center", marginTop: "32px" }}>
+            <Link
+              href="/tools/saved"
+              style={{
+                fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)",
+                color: "var(--mustard-text)", textDecoration: "underline",
+                textUnderlineOffset: "3px",
+              }}
+            >
+              {totalSaved > 0 ? `Saved Items (${totalSaved})` : "Saved Items — verses and prayers you keep live here"}
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section style={{ padding: "60px 32px", background: "var(--cream)", textAlign: "center" }}>
-        <div className="wrap" style={{ maxWidth: "600px" }}>
-          <h2 style={{ fontSize: "28px", fontWeight: 600, fontFamily: "var(--F)", color: "var(--ink)", marginBottom: "12px" }}>
-            More tools coming soon
-          </h2>
-          <p style={{ fontSize: "16px", color: "var(--ink3)", lineHeight: 1.7, fontFamily: "var(--B)" }}>
-            Sermon outline builder, pastoral care tracker, and reading plan generator are in development. Subscribe to get notified when they launch.
-          </p>
-        </div>
-      </section>
     </Layout>
   );
 }

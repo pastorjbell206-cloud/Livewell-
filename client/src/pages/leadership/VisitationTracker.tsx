@@ -2,19 +2,28 @@
  * The Visitation Tracker (/leadership/visitation). Keep track of who you have
  * seen, who is waiting, and who is about to fall through the cracks. Everything
  * stays on the device (localStorage). No login, no server, no member data
- * leaves the browser.
+ * leaves the browser — except as a JSON file the pastor downloads and keeps
+ * (roadmap HS-5), so the record is not trapped in one browser profile.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import { Plus, X } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const KEY = "livewell-visitation";
 
 type Status = "waiting" | "scheduled" | "seen";
 interface Person { id: string; name: string; reason: string; status: Status; note: string; lastSeen: string; }
+
+// Per-entry filter (the FormationInventory model): one corrupt record must not
+// blank the page — or take the rest of the flock list down with it.
+const isPerson = (x: unknown): x is Person => {
+  const p = x as Person;
+  return !!p && typeof p === "object" && typeof p.id === "string" && typeof p.name === "string" && typeof p.status === "string";
+};
 
 const STATUS: { id: Status; label: string }[] = [
   { id: "waiting", label: "Waiting" },
@@ -27,9 +36,13 @@ export default function VisitationTracker() {
   const [people, setPeople] = useState<Person[]>([]);
   const [name, setName] = useState("");
   const [reason, setReason] = useState("");
+  const [persistFailed, setPersistFailed] = useState(false);
 
-  useEffect(() => { try { const raw = localStorage.getItem(KEY); if (raw) setPeople(JSON.parse(raw)); } catch { /* ignore */ } }, []);
-  useEffect(() => { try { localStorage.setItem(KEY, JSON.stringify(people)); } catch { /* ignore */ } }, [people]);
+  useEffect(() => { setPeople(readStoredJSON(KEY, Array.isArray, []).filter(isPerson)); }, []);
+  useEffect(() => {
+    const t = setTimeout(() => setPersistFailed(!writeStoredJSON(KEY, people)), 0);
+    return () => clearTimeout(t);
+  }, [people]);
 
   const add = () => {
     if (!name.trim()) return;
@@ -45,6 +58,21 @@ export default function VisitationTracker() {
   };
 
   const groups = useMemo(() => STATUS.map((s) => ({ ...s, list: people.filter((p) => p.status === s.id) })), [people]);
+
+  // Pastoral-care records should not be trapped in one browser: serialize the
+  // list to a dated JSON file the pastor keeps wherever records live.
+  const download = () => {
+    if (!people.length) return;
+    const blob = new Blob([JSON.stringify(people, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `livewell-visitation-${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
 
   return (
     <Layout>
@@ -63,8 +91,13 @@ export default function VisitationTracker() {
           <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginBottom: "var(--s-4)", alignItems: "flex-start" }}>
             <input value={name} onChange={(e) => setName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} aria-label="Name" placeholder="Name" style={{ flex: "1 1 160px", fontFamily: "var(--B)", fontSize: "15px", padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)" }} />
             <input value={reason} onChange={(e) => setReason(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} aria-label="Reason (hospital, grief, new, shut-in)" placeholder="Reason (hospital, grief, new, shut-in)" style={{ flex: "2 1 220px", fontFamily: "var(--B)", fontSize: "15px", padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)" }} />
-            <button onClick={add} style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "10px 16px", background: "var(--mustard)", color: "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: "pointer" }}><Plus size={15} /> Add</button>
+            <button onClick={add} disabled={!name.trim()} style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "10px 16px", background: !name.trim() ? "var(--border)" : "var(--mustard)", color: !name.trim() ? "var(--ink-muted)" : "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: !name.trim() ? "not-allowed" : "pointer" }}><Plus size={15} /> Add</button>
           </div>
+          <div style={{ display: "flex", gap: "10px", alignItems: "center", flexWrap: "wrap", margin: "0 0 var(--s-3)" }}>
+            <button onClick={download} disabled={!people.length} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", padding: "8px 14px", background: "none", color: !people.length ? "var(--ink-muted)" : "var(--ink)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: !people.length ? "not-allowed" : "pointer" }}>Download a copy</button>
+            <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)" }}>A JSON file — keep it wherever you keep your records.</span>
+          </div>
+          {persistFailed && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>Couldn't save to this browser — your work here will not survive a reload.</p>}
 
           {!people.length && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-5) 0" }}>No one on the list yet. Add the people on your heart.</p>}
 

@@ -68,7 +68,7 @@ export default function AdminImportSubstack() {
     setLoading(true);
     setResult(null);
     try {
-      const resp = await fetch("/api/rss/substack?full=1&fresh=1", { cache: "no-store" });
+      const resp = await fetch("/api/rss/substack?full=1&fresh=1");
       const data = await resp.json();
       if (!data?.ok) throw new Error(data?.error || "couldn't read the Substack feed");
       const built = (data.items as FeedItem[]).map(buildDraft).filter(Boolean) as Draft[];

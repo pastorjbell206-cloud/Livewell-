@@ -25,7 +25,7 @@ export default function Table() {
   const [studies, setStudies] = useState<StudyEntry[]>([]);
 
   useEffect(() => {
-    fetch("/table/studies-index.json", { cache: "no-store" })
+    fetch("/table/studies-index.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setStudies(d.studies || []))
       .catch(() => {});

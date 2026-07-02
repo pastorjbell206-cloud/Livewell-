@@ -1,13 +1,13 @@
 /**
  * How-To article reader (/how-tos/:slug). Loads a single static how-to guide
  * from client/public/howtos/a/<slug>.json and renders its Markdown body with
- * Streamdown, the same renderer the article pages use.
+ * the shared Markdown renderer the article pages use.
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
-import { Streamdown } from "streamdown";
+import { Markdown } from "@/components/Markdown";
 
 const wrap = { maxWidth: "720px", margin: "0 auto" } as const;
 
@@ -30,7 +30,7 @@ export default function HowToArticle() {
     if (!slug) return;
     setArticle(null);
     setMissing(false);
-    fetch(`/howtos/a/${slug}.json`, { cache: "no-store" })
+    fetch(`/howtos/a/${slug}.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => (d ? setArticle(d) : setMissing(true)))
       .catch(() => setMissing(true));
@@ -69,7 +69,7 @@ export default function HowToArticle() {
               </h1>
               <div style={{ width: "44px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-4)" }} />
               <div className="prose" style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.75, color: "var(--ink)" }}>
-                <Streamdown>{article.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}</Streamdown>
+                <Markdown>{article.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}</Markdown>
               </div>
 
               <div style={{ marginTop: "var(--s-5)", borderTop: "1px solid rgba(20,17,12,0.1)", paddingTop: "var(--s-3)", display: "flex", gap: "var(--s-4)", flexWrap: "wrap" }}>

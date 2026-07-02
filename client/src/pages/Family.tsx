@@ -79,7 +79,7 @@ export default function Family() {
   const [devotions, setDevotions] = useState<Devotion[]>([]);
   const [openDev, setOpenDev] = useState<string | null>(null);
   useEffect(() => {
-    fetch("/family-devotions.json", { cache: "no-store" })
+    fetch("/family-devotions.json")
       .then((r) => (r.ok ? r.json() : []))
       .then((d) => Array.isArray(d) && setDevotions(d))
       .catch(() => {});

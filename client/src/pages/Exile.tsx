@@ -144,7 +144,7 @@ export default function Exile() {
 
           <div style={{ marginTop: "var(--s-4)", display: "flex", gap: "var(--s-4)", flexWrap: "wrap" }}>
             <Link href="/life" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Start with how to live</Link>
-            <Link href="/start" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Get the writing in your inbox</Link>
+            <Link href="/subscribe" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Join the essay list</Link>
           </div>
         </div>
       </section>

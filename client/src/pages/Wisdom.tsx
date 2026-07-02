@@ -26,7 +26,7 @@ function WisdomToday() {
   const [topic, setTopic] = useState<TodayTopic | null>(null);
 
   useEffect(() => {
-    fetch("/wisdom/topics.json", { cache: "no-store" })
+    fetch("/wisdom/topics.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => {
         const topics: TodayTopic[] = (d && d.topics) || [];

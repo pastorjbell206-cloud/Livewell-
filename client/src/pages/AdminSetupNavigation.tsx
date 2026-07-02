@@ -32,7 +32,7 @@ export default function AdminSetupNavigation() {
 
     let rows: MappingRow[];
     try {
-      const resp = await fetch("/subpathway-mapping.json", { cache: "no-store" });
+      const resp = await fetch("/subpathway-mapping.json");
       if (!resp.ok) throw new Error(`couldn't load the mapping file (${resp.status})`);
       rows = await resp.json();
     } catch (e: any) {

@@ -112,7 +112,7 @@ export default function AdminResourceEditor() {
               className="w-full px-4 py-2 rounded border font-body"
               style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
             >
-              <option value="">Select a category...</option>
+              <option value="">Select a category…</option>
               <option value="Study Guides">Study Guides</option>
               <option value="Sermon Series">Sermon Series</option>
               <option value="Discussion Guides">Discussion Guides</option>
@@ -133,7 +133,7 @@ export default function AdminResourceEditor() {
               className="w-full px-4 py-2 rounded border font-body"
               style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
             >
-              <option value="">Select a type...</option>
+              <option value="">Select a type…</option>
               <option value="PDF">PDF</option>
               <option value="Video">Video</option>
               <option value="Audio">Audio</option>

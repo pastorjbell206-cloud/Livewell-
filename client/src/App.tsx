@@ -2,24 +2,33 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
-import { Route, Switch, useLocation } from "wouter";
-import { Suspense, lazy, useEffect } from "react";
+import { Route, Router as WouterRouter, Switch, useLocation } from "wouter";
+import { useBrowserLocation } from "wouter/use-browser-location";
+import { Suspense, lazy, startTransition, useCallback, useEffect } from "react";
 import { JUSTICE, DISRUPTION } from "./lib/prophetic";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { ToastProvider } from "./contexts/ToastContext";
 import { ToastContainer } from "./components/ToastContainer";
 import Home from "./pages/Home";
-import Writing from "./pages/Writing";
+const Writing = lazy(() => import("./pages/Writing"));
 const ArticleDetail = lazy(() => import("./pages/ArticleDetail"));
-import Books from "./pages/Books";
+const Books = lazy(() => import("./pages/Books"));
 const BookDetail = lazy(() => import("./pages/BookDetail"));
 const AloneInACrowdedChurch = lazy(() => import("./pages/books/AloneInACrowdedChurch"));
 const AloneInACrowdedChurchThankYou = lazy(() => import("./pages/books/AloneInACrowdedChurchThankYou"));
-const AfterChristendom = lazy(() => import("./pages/books/AfterChristendom"));
-const AfterChristendomThankYou = lazy(() => import("./pages/books/AfterChristendomThankYou"));
 const Covenant = lazy(() => import("./pages/books/Covenant"));
 const CovenantThankYou = lazy(() => import("./pages/books/CovenantThankYou"));
+const Babylon = lazy(() => import("./pages/books/Babylon"));
+const BabylonThankYou = lazy(() => import("./pages/books/BabylonThankYou"));
+const HowToReadTheBible = lazy(() => import("./pages/books/HowToReadTheBible"));
+const HowToReadTheBibleThankYou = lazy(() => import("./pages/books/HowToReadTheBibleThankYou"));
+const BeTrueToYourself = lazy(() => import("./pages/books/BeTrueToYourself"));
+const BeTrueToYourselfThankYou = lazy(() => import("./pages/books/BeTrueToYourselfThankYou"));
+const WhatBelongsToThePoor = lazy(() => import("./pages/books/WhatBelongsToThePoor"));
+const WhatBelongsToThePoorThankYou = lazy(() => import("./pages/books/WhatBelongsToThePoorThankYou"));
+const RuleOfLifeBook = lazy(() => import("./pages/books/RuleOfLife"));
+const RuleOfLifeThankYou = lazy(() => import("./pages/books/RuleOfLifeThankYou"));
 const WhyNotWhat = lazy(() => import("./pages/books/WhyNotWhat"));
 const WhyNotWhatThankYou = lazy(() => import("./pages/books/WhyNotWhatThankYou"));
 const SermonOnTheMountAsPolitics = lazy(() => import("./pages/books/SermonOnTheMountAsPolitics"));
@@ -218,6 +227,7 @@ const ChurchHistory = lazy(() => import("./pages/landing/ChurchHistory"));
 const ChurchHurt = lazy(() => import("./pages/landing/ChurchHurt"));
 const HonestQuestions = lazy(() => import("./pages/landing/HonestQuestions"));
 const PostChristianLanding = lazy(() => import("./pages/landing/PostChristian"));
+const FaqIndex = lazy(() => import("./pages/FaqIndex"));
 const FAQWhyArePeopleLeavingChurch = lazy(() => import("./pages/faq/WhyArePeopleLeavingChurch"));
 const FAQWhatIsDeconstruction = lazy(() => import("./pages/faq/WhatIsDeconstruction"));
 const FAQIsBibleHistoricallyAccurate = lazy(() => import("./pages/faq/IsBibleHistoricallyAccurate"));
@@ -245,9 +255,6 @@ const ArticleCollections = lazy(() =>
 );
 const BookBundles = lazy(() =>
   import("./pages/BookBundles").then((m) => ({ default: m.BookBundles }))
-);
-const LeadMagnetsPage = lazy(() =>
-  import("./pages/LeadMagnets").then((m) => ({ default: m.LeadMagnetsPage }))
 );
 
 const AdminLogin = lazy(() => import("./pages/AdminLogin"));
@@ -288,8 +295,65 @@ function ForFamiliesRedirect() {
 
 function PageFallback() {
   return (
-    <div className="flex items-center justify-center min-h-screen">
-      <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900" />
+    <div
+      role="status"
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        background: "var(--bone)",
+      }}
+    >
+      {/* Nav-band silhouette so the header's place holds while a route loads */}
+      <div
+        aria-hidden
+        style={{
+          height: "58px",
+          flexShrink: 0,
+          display: "flex",
+          alignItems: "center",
+          padding: "0 20px",
+          background: "rgba(245,240,230,0.97)",
+          borderBottom: "1px solid var(--border)",
+        }}
+      >
+        <span style={{ fontFamily: "var(--F)", fontSize: "20px", color: "var(--ink)" }}>LiveWell</span>
+      </div>
+      <div
+        style={{
+          flex: 1,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "10px",
+          textAlign: "center",
+          padding: "var(--s-4)",
+        }}
+      >
+      <p
+        style={{
+          fontFamily: "var(--F)",
+          fontSize: "26px",
+          fontWeight: 400,
+          letterSpacing: "-0.01em",
+          color: "var(--ink)",
+          margin: 0,
+        }}
+      >
+        One moment.
+      </p>
+      <p
+        style={{
+          fontFamily: "var(--B)",
+          fontSize: "14px",
+          color: "var(--ink-muted)",
+          margin: 0,
+        }}
+      >
+        Loading the page…
+      </p>
+      </div>
     </div>
   );
 }
@@ -405,7 +469,6 @@ function Router() {
         <Route path="/authors/:slug" component={AuthorProfile} />
         <Route path="/article-collections" component={ArticleCollections} />
         <Route path="/book-bundles" component={BookBundles} />
-        <Route path="/lead-magnets/:magnetId" component={LeadMagnetsPage} />
         <Route path="/resources/hard-issues-series" component={HardIssuesSeries} />
         <Route path="/resources/context/:slug" component={ContextGuide} />
         <Route path="/resources/context" component={ContextLibrary} />
@@ -439,10 +502,18 @@ function Router() {
         <Route path="/where-your-treasure-is" component={WhereYourTreasureIs} />
         <Route path="/alone-in-a-crowded-church/thank-you" component={AloneInACrowdedChurchThankYou} />
         <Route path="/alone-in-a-crowded-church" component={AloneInACrowdedChurch} />
-        <Route path="/after-christendom/thank-you" component={AfterChristendomThankYou} />
-        <Route path="/after-christendom" component={AfterChristendom} />
         <Route path="/covenant/thank-you" component={CovenantThankYou} />
         <Route path="/covenant" component={Covenant} />
+        <Route path="/babylon/thank-you" component={BabylonThankYou} />
+        <Route path="/babylon" component={Babylon} />
+        <Route path="/how-to-read-the-bible/thank-you" component={HowToReadTheBibleThankYou} />
+        <Route path="/how-to-read-the-bible" component={HowToReadTheBible} />
+        <Route path="/be-true-to-yourself/thank-you" component={BeTrueToYourselfThankYou} />
+        <Route path="/be-true-to-yourself" component={BeTrueToYourself} />
+        <Route path="/what-belongs-to-the-poor/thank-you" component={WhatBelongsToThePoorThankYou} />
+        <Route path="/what-belongs-to-the-poor" component={WhatBelongsToThePoor} />
+        <Route path="/rule-of-life/thank-you" component={RuleOfLifeThankYou} />
+        <Route path="/rule-of-life" component={RuleOfLifeBook} />
         <Route path="/why-not-what/thank-you" component={WhyNotWhatThankYou} />
         <Route path="/why-not-what" component={WhyNotWhat} />
         <Route path="/sermon-series" component={PostChristianSermonSeries} />
@@ -532,6 +603,7 @@ function Router() {
         <Route path="/compare/orthodox-vs-catholic" component={OrthodoxVsCatholic} />
         <Route path="/compare/liturgical-vs-contemporary" component={LiturgicalVsContemporary} />
         <Route path="/post-christian" component={PostChristianLanding} />
+        <Route path="/faq" component={FaqIndex} />
         <Route path="/faq/why-are-people-leaving-church" component={FAQWhyArePeopleLeavingChurch} />
         <Route path="/faq/what-is-deconstruction" component={FAQWhatIsDeconstruction} />
         <Route path="/faq/is-the-bible-historically-accurate" component={FAQIsBibleHistoricallyAccurate} />
@@ -572,6 +644,24 @@ function Router() {
   );
 }
 
+/**
+ * wouter location hook with navigations wrapped in startTransition: React
+ * keeps the current page on screen while the next route's lazy chunk loads,
+ * instead of unmounting to the Suspense fallback between pages.
+ */
+function useTransitionLocation(): ReturnType<typeof useBrowserLocation> {
+  const [location, navigate] = useBrowserLocation();
+  const navigateInTransition = useCallback(
+    (to: string, opts?: { replace?: boolean; state?: unknown }) => {
+      startTransition(() => {
+        navigate(to, opts);
+      });
+    },
+    [navigate]
+  );
+  return [location, navigateInTransition as typeof navigate];
+}
+
 function App() {
   return (
     <ErrorBoundary>
@@ -580,7 +670,9 @@ function App() {
           <TooltipProvider>
             <Toaster />
             <ToastContainer />
-            <Router />
+            <WouterRouter hook={useTransitionLocation}>
+              <Router />
+            </WouterRouter>
           </TooltipProvider>
         </ToastProvider>
       </ThemeProvider>

@@ -30,6 +30,7 @@ const NEEDS: Need[] = [
     title: "My marriage is in trouble",
     opener: "Not a tune-up. A marriage that needs more than tips, from someone who refuses to hand you tips.",
     helps: [
+      { href: "/marriage-crisis", label: "Read: when the marriage itself is the crisis — start here", kind: "read" },
       { href: "/plans/marriage", label: "Do: an eight-week guided plan toward each other", kind: "do" },
       { href: "/marriage", label: "Read: writing on covenant, conflict, and the long middle", kind: "read" },
       { href: "/tools/marriage-assessment", label: "Assess: where your marriage is strong and where it is strained", kind: "assess" },
@@ -54,6 +55,8 @@ const NEEDS: Need[] = [
     title: "I believe, but I am full of doubt",
     opener: "Doubt is not the opposite of faith. It is often part of a living one. You do not have to hide it here.",
     helps: [
+      { href: "/faith-crisis", label: "Read: for the season when the whole faith feels like it is failing", kind: "read" },
+      { href: "/honest-questions", label: "Read: the honest questions, taken seriously", kind: "read" },
       { href: "/doubt", label: "Read: doubt as part of a living faith", kind: "read" },
       { href: "/theology/questions", label: "Read: the hard questions, answered honestly", kind: "read" },
       { href: "/resources/context", label: "Do: read the Bible in its real context, not the caricature", kind: "do" },
@@ -65,6 +68,8 @@ const NEEDS: Need[] = [
     title: "I am deconstructing my faith",
     opener: "No panic here, and no shame. Many people are not leaving Jesus. They are leaving a version of him someone sold them. Take the questions seriously, and take your time.",
     helps: [
+      { href: "/deconstruction", label: "Read: deconstruction named honestly — grief, anger, and what can be rebuilt", kind: "read" },
+      { href: "/church-hurt", label: "Read: when the church itself did the wounding", kind: "read" },
       { href: "/plans/deconstruction", label: "Do: eight weeks of taking your questions seriously", kind: "do" },
       { href: "/resources/context/the-bible-is-not-an-american-book", label: "Read: separating Jesus from the version you were handed", kind: "read" },
       { href: "/disruption", label: "Read: what the church got wrong, said plainly by a pastor", kind: "read" },
@@ -76,6 +81,7 @@ const NEEDS: Need[] = [
     title: "I do not believe, and I am curious",
     opener: "Written for you by a pastor who was an atheist first. No tricks, no ambush, no altar call. Just the material, taken as seriously as you take it.",
     helps: [
+      { href: "/post-christian", label: "Read: faith examined from outside the church, no altar call", kind: "read" },
       { href: "/plans/skeptic", label: "Do: eight weeks of reading like an adult", kind: "do" },
       { href: "/skeptic-track", label: "Read: the skeptic track, in argument order", kind: "read" },
       { href: "/resources/context", label: "Read: the Bible in its real history, cited to scholarship", kind: "read" },
@@ -110,6 +116,7 @@ const NEEDS: Need[] = [
     title: "Parenting is harder than anyone said",
     opener: "From a father of five sons who was raised without a father. Formation over performance, presence over advice.",
     helps: [
+      { href: "/parenting-help", label: "Read: for the stretch of parenting nobody warned you about", kind: "read" },
       { href: "/parenting", label: "Read: writing on raising children in the faith", kind: "read" },
       { href: "/tools/parenting-guide", label: "Assess: guidance for your child's stage", kind: "assess" },
       { href: "/tools/family-devotions", label: "Do: build a fifteen-minute family devotion", kind: "do" },
@@ -142,6 +149,7 @@ const NEEDS: Need[] = [
     title: "I just want to grow, and follow well",
     opener: "Not in crisis. You want the whole of life to come under one Lord, on an ordinary Tuesday. Here is the path.",
     helps: [
+      { href: "/church-history", label: "Read: the church’s long story as a place to stand", kind: "read" },
       { href: "/plans/whole-life", label: "Do: an eight-week plan toward one undivided life", kind: "do" },
       { href: "/life/assessment", label: "Assess: the Whole-Life Assessment, with a rule of life", kind: "assess" },
       { href: "/discipleship", label: "Do: the discipleship pathway, new believer to mature", kind: "do" },

@@ -18,7 +18,7 @@ const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 export default function PropheticPosture({ config }: { config: SectionConfig }) {
   const [m, setM] = useState<Methodology | null>(null);
   useEffect(() => {
-    fetch(`${config.base}/methodology.json`, { cache: "no-store" })
+    fetch(`${config.base}/methodology.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setM(d))
       .catch(() => {});

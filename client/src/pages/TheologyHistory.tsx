@@ -34,7 +34,7 @@ export default function TheologyHistory() {
   const [essays, setEssays] = useState<{ slug: string; title: string; blurb: string; era: string; dateRange: string }[]>([]);
 
   useEffect(() => {
-    const get = (f: string) => fetch(f, { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+    const get = (f: string) => fetch(f).then((r) => (r.ok ? r.json() : null)).catch(() => null);
     get("/theology/church-history-timeline.json").then((d) => { if (d?.eras) { setEras(d.eras); setOpenEra(d.eras[0]?.id ?? null); } });
     get("/theology/church-history-councils.json").then((d) => d?.councils && setCouncils(d.councils));
     get("/theology/church-history-heresies.json").then((d) => d?.heresies && setHeresies(d.heresies));

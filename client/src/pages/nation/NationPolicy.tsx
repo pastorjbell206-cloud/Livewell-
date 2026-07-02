@@ -22,7 +22,7 @@ export default function NationPolicy() {
   const [open, setOpen] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/nation/policy.json", { cache: "no-store" })
+    fetch("/nation/policy.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => { if (d) { setData(d); setOpen(d.laws?.[0]?.name ?? null); } })
       .catch(() => {});

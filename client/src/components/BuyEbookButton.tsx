@@ -65,11 +65,16 @@ export function BuyEbookButton({
     setLoading(true);
     setError(null);
     setComingSoon(false);
+    // A hung checkout call should fail visibly, not leave the button spinning
+    // at the moment someone decided to buy.
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 15000);
     try {
       const res = await fetch("/api/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ slug }),
+        signal: controller.signal,
       });
       const data = await res.json().catch(() => ({}));
       if (res.ok && data?.url) {
@@ -80,11 +85,16 @@ export function BuyEbookButton({
       // configured yet — that is "coming soon", not a real failure.
       if (res.status === 503) {
         setComingSoon(true);
+      } else if (res.status >= 500) {
+        // Never surface raw server/Stripe strings at the buy moment.
+        setError("Checkout is unavailable right now. Nothing was charged.");
       } else {
         setError(data?.error || "Checkout is unavailable right now.");
       }
     } catch {
-      setError("Checkout is unavailable right now.");
+      setError("Checkout is unavailable right now. Nothing was charged.");
+    } finally {
+      clearTimeout(timeout);
     }
     setLoading(false);
   }
@@ -113,7 +123,7 @@ export function BuyEbookButton({
         {loading ? "Redirecting to checkout…" : label}
       </button>
       {error && (
-        <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "#9b1c1c" }}>
+        <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--alert)" }}>
           {error}{" "}
           <a href={requestHref} style={{ color: "inherit", textDecoration: "underline" }}>
             Email us

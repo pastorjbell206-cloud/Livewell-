@@ -428,7 +428,7 @@ per-user auth to close.
 
 | Path | What lives here |
 |------|-----------------|
-| `client/src/App.tsx` | Route table (~190 routes) + providers |
+| `client/src/App.tsx` | Route table (~260 routes) + providers |
 | `client/src/pages/` | ~180 page components (pillars, `tools/`, `landing/`, `admin/`) |
 | `client/src/components/` | Shared UI, incl. `ui/` shadcn-style primitives |
 | `client/src/index.css` | **Design token source of truth** (`:root` CSS vars, `html.dark`, `.admin-scope`) |
@@ -539,6 +539,38 @@ question costs one turn; a wrong irreversible action costs the trust contract.
 
 ---
 
+## Elevation Standards (post site-elevation program)
+
+The 2026 elevation program (audits + fixes: `docs/audit/ROADMAP.md`,
+`QA-REPORT.md`, `RESULTS.md`, `ELEVATION-SUMMARY.md`) locked in invariants
+new work must keep:
+
+- **Use the shared helpers; do not hand-roll their concerns.**
+  `lib/clipboard.ts` (`copyToClipboard` — "Copied" only on true),
+  `lib/storage.ts` (`readStoredJSON`/`writeStoredJSON` with shape guards;
+  save failures render "Couldn't save to this browser — your work here
+  will not survive a reload."), `lib/fetch-json.ts` + `components/LoadFailed`
+  (no infinite "Loading…" — error state + retry nonce + a way back),
+  `components/Markdown.tsx` (the one markdown renderer; never reintroduce
+  a heavier one).
+- **Client tests are a CI gate.** `vitest.workspace.ts` runs server + client;
+  the ~260-route smoke net (`client/src/test/routes.smoke.test.tsx`) reads
+  the route table itself — a new page passes automatically or fails by name.
+  Money-path components keep their contract tests green.
+- **New pages declare `<SEOMeta title="…" description="…">` as string
+  literals** — `scripts/prerender-heads.mjs` extracts them at build time so
+  every route unfurls as itself. Dynamic meta = the script lists the route
+  as uncovered on every build.
+- **Fonts are self-hosted** (`client/public/fonts/` + `@font-face` in
+  `index.css`). Never reintroduce a fonts CDN.
+- **Long instruments persist** via the storage helper (`livewell-progress-*`,
+  sessionStorage mirrors for entry flows) and results screens offer a
+  non-destructive "Change my answers." Follow the existing pattern when
+  adding an assessment.
+- **The first-paint contract:** static masthead shell in `index.html`,
+  nav renders from the committed map before the API answers, QueryClient
+  retries stay calm (retry: 1). Do not re-block first paint on a network.
+
 ## Anti-Patterns & Known Traps
 
 Real failure modes here, each framed as a guardrail.
@@ -618,9 +650,10 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
 - **SEO**: `scripts/generate-sitemap.mjs` runs in the Vercel build, merging
   static routes, the JSON-library manifests, and database content. `llms.txt`
   is served at the site root for answer engines. JSON-LD renders via SEOMeta.
-- **IA (approved blueprint, implemented)**: the five pillars are the only
-  taxonomy spine; footer mirrors the header (The Five Pillars / Write & Read /
-  Libraries & Tools / For Pastors / Connect); "Resources" names exactly one
+- **IA (approved blueprint, implemented)**: the six pillars (`PILLARS_V2` in
+  `taxonomy.ts`, under the two movements) are the only taxonomy spine; footer
+  mirrors the header (The Pillars / Write & Read / Libraries & Tools / For
+  Pastors / Connect); "Resources" names exactly one
   thing (the hub at /resources); all tools are registered in /tools; /quiz
   301s to /tools/theology-quiz (vercel.json).
 - **Payments**: Stripe checkout is config-driven — live only when

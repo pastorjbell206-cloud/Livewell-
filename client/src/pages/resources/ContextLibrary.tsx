@@ -30,7 +30,7 @@ export default function ContextLibrary() {
   const [group, setGroup] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/context/guides-index.json", { cache: "no-store" })
+    fetch("/context/guides-index.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setItems(d.guides || []))
       .catch(() => {});

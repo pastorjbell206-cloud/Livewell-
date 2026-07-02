@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { useFavorites } from "@/hooks/useFavorites";
+import { copyToClipboard } from "@/lib/clipboard";
 import { Link } from "wouter";
 import { Trash2, Copy, Check, BookOpen, Heart } from "lucide-react";
 import { useState } from "react";
@@ -14,27 +15,33 @@ export default function SavedItems() {
   const verses = useFavorites("livewell-saved-verses");
   const prayers = useFavorites("livewell-saved-prayers");
   const [exportCopied, setExportCopied] = useState(false);
+  const [exportFailed, setExportFailed] = useState(false);
 
   const totalCount = verses.favorites.length + prayers.favorites.length;
 
-  const handleExportAll = () => {
+  const handleExportAll = async () => {
     const lines: string[] = [];
     if (verses.favorites.length > 0) {
       lines.push("=== Saved Verses ===\n");
       verses.favorites.forEach((v) => {
-        lines.push(`${v.content.ref} — ${v.content.text}`);
+        lines.push(`${v.content?.ref ?? ""} — ${v.content?.text ?? ""}`);
         lines.push(`Saved: ${formatDate(v.savedAt)}\n`);
       });
     }
     if (prayers.favorites.length > 0) {
       lines.push("=== Saved Prayers ===\n");
       prayers.favorites.forEach((p) => {
-        lines.push(`[${p.content.type}]`);
-        lines.push(p.content.text);
+        lines.push(`[${p.content?.type ?? ""}]`);
+        lines.push(p.content?.text ?? "");
         lines.push(`Saved: ${formatDate(p.savedAt)}\n`);
       });
     }
-    navigator.clipboard.writeText(lines.join("\n"));
+    const ok = await copyToClipboard(lines.join("\n"));
+    if (!ok) {
+      setExportFailed(true);
+      return;
+    }
+    setExportFailed(false);
     setExportCopied(true);
     setTimeout(() => setExportCopied(false), 2000);
   };
@@ -64,7 +71,7 @@ export default function SavedItems() {
         <div className="wrap" style={{ maxWidth: "800px" }}>
 
           {totalCount > 0 && (
-            <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "32px" }}>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "8px", marginBottom: "32px" }}>
               <button
                 onClick={handleExportAll}
                 style={{
@@ -76,6 +83,11 @@ export default function SavedItems() {
               >
                 {exportCopied ? <><Check size={14} /> Copied to Clipboard</> : <><Copy size={14} /> Export All</>}
               </button>
+              {exportFailed && (
+                <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: 0 }}>
+                  Copy failed — select and copy manually.
+                </p>
+              )}
             </div>
           )}
 
@@ -120,7 +132,7 @@ export default function SavedItems() {
                   >
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "10px" }}>
                       <span style={{ fontSize: "14px", fontWeight: 700, color: "var(--mustard)", fontFamily: "var(--U)" }}>
-                        {v.content.ref}
+                        {v.content?.ref}
                       </span>
                       <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                         <span style={{ fontSize: "11px", color: "var(--ink-muted)", fontFamily: "var(--U)" }}>
@@ -141,7 +153,7 @@ export default function SavedItems() {
                       </div>
                     </div>
                     <p style={{ fontSize: "15px", lineHeight: 1.8, color: "var(--charcoal)", fontFamily: "var(--U)", fontStyle: "italic" }}>
-                      "{v.content.text}"
+                      "{v.content?.text}"
                     </p>
                   </div>
                 ))}
@@ -168,7 +180,7 @@ export default function SavedItems() {
                   >
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "10px" }}>
                       <span style={{ fontSize: "13px", fontWeight: 700, color: "var(--mustard)", fontFamily: "var(--U)", letterSpacing: "0.1em" }}>
-                        {p.content.type?.toUpperCase()}
+                        {p.content?.type?.toUpperCase()}
                       </span>
                       <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                         <span style={{ fontSize: "11px", color: "var(--ink-muted)", fontFamily: "var(--U)" }}>
@@ -189,7 +201,7 @@ export default function SavedItems() {
                       </div>
                     </div>
                     <p style={{ fontSize: "15px", lineHeight: 1.8, color: "var(--charcoal)", fontFamily: "var(--U)", fontStyle: "italic" }}>
-                      {p.content.text}
+                      {p.content?.text}
                     </p>
                   </div>
                 ))}

@@ -59,7 +59,7 @@ export function ArticleCard({
   const pillarColor = PILLAR_COLORS[pillar] || PILLAR_COLORS["Leadership Formation"];
   
   // Generate excerpt from body if not provided
-  const displayExcerpt = excerpt || (body ? body.substring(0, 150).trim() + "..." : "");
+  const displayExcerpt = excerpt || (body ? body.substring(0, 150).trim() + "…" : "");
 
   return (
     <Link

@@ -28,7 +28,7 @@ export default function AdminPublishContent() {
     try {
       // Download the finished content once in the browser, then send small
       // batches to the server so each request only does a few quick DB writes.
-      const resp = await fetch("/admin-article-bodies.json", { cache: "no-store" });
+      const resp = await fetch("/api/admin/article-bodies", { credentials: "include" });
       if (!resp.ok) throw new Error(`couldn't load content file (${resp.status})`);
       all = await resp.json();
     } catch (e: any) {

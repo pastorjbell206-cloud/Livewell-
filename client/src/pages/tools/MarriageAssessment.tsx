@@ -5,6 +5,7 @@ import { useState, useRef } from "react";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer } from "lucide-react";
 import { EmailResults } from "@/components/EmailResults";
+import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 /* ── Types ─────────────────────────────────────────────────────── */
 
@@ -71,7 +72,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on marriage and communication",
-      href: "/writing?category=marriage",
+      href: "/writing?track=marriage",
     },
   },
   {
@@ -112,7 +113,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on marriage and intimacy",
-      href: "/writing?category=marriage",
+      href: "/writing?track=marriage",
     },
   },
   {
@@ -153,7 +154,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on trust and faithfulness",
-      href: "/writing?category=marriage",
+      href: "/writing?track=marriage",
     },
   },
   {
@@ -194,7 +195,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on building a life together",
-      href: "/writing?category=marriage",
+      href: "/writing?track=marriage",
     },
   },
   {
@@ -235,7 +236,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on conflict and forgiveness",
-      href: "/writing?category=marriage",
+      href: "/writing?track=marriage",
     },
   },
 ];
@@ -282,13 +283,62 @@ function getOverallLabel(score: number): {
   };
 }
 
+/* ── Saved progress (HS-5): survive a refresh mid-assessment ───── */
+
+const STORAGE_KEY = "livewell-progress-marriage-assessment";
+
+interface StoredProgress {
+  answers: Record<number, number>;
+  step: number;
+  savedAt: string;
+}
+
+function isStoredProgress(x: unknown): x is StoredProgress {
+  if (typeof x !== "object" || x === null) return false;
+  const p = x as Record<string, unknown>;
+  return (
+    typeof p.step === "number" &&
+    Number.isFinite(p.step) &&
+    typeof p.savedAt === "string" &&
+    typeof p.answers === "object" &&
+    p.answers !== null &&
+    !Array.isArray(p.answers) &&
+    Object.values(p.answers).every((v) => typeof v === "number")
+  );
+}
+
 /* ── Component ─────────────────────────────────────────────────── */
 
 export default function MarriageAssessment() {
-  const [currentCategory, setCurrentCategory] = useState(0);
-  const [answers, setAnswers] = useState<Record<number, number>>({});
+  const [saved] = useState(() =>
+    readStoredJSON<StoredProgress | null>(STORAGE_KEY, isStoredProgress, null),
+  );
+  const [currentCategory, setCurrentCategory] = useState(() =>
+    saved
+      ? Math.min(Math.max(Math.trunc(saved.step), 0), CATEGORIES.length - 1)
+      : 0,
+  );
+  const [answers, setAnswers] = useState<Record<number, number>>(
+    saved?.answers ?? {},
+  );
   const [showResults, setShowResults] = useState(false);
+  const [resumed, setResumed] = useState(
+    () =>
+      saved !== null &&
+      (Object.keys(saved.answers).length > 0 || saved.step > 0),
+  );
+  const [persistFailed, setPersistFailed] = useState(false);
   const resultsRef = useRef<HTMLDivElement>(null);
+
+  const persist = (nextAnswers: Record<number, number>, nextStep: number) => {
+    setPersistFailed(
+      !writeStoredJSON(STORAGE_KEY, {
+        answers: nextAnswers,
+        step: nextStep,
+        savedAt: new Date().toISOString(),
+      }),
+    );
+  };
 
   const category = CATEGORIES[currentCategory];
   const totalQuestions = 15;
@@ -300,32 +350,50 @@ export default function MarriageAssessment() {
   const allAnswered = answeredCount === totalQuestions;
 
   const handleRate = (questionId: number, value: number) => {
-    setAnswers((prev) => ({ ...prev, [questionId]: value }));
+    const next = { ...answers, [questionId]: value };
+    setAnswers(next);
+    setResumed(false);
+    persist(next, currentCategory);
   };
 
   const handleNext = () => {
     if (isLastCategory && allAnswered) {
       setShowResults(true);
+      persist(answers, currentCategory);
       setTimeout(() => {
         resultsRef.current?.scrollIntoView({ behavior: "smooth" });
       }, 100);
     } else if (!isLastCategory) {
-      setCurrentCategory((prev) => prev + 1);
+      const nextStep = currentCategory + 1;
+      setCurrentCategory(nextStep);
+      persist(answers, nextStep);
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
   const handleBack = () => {
     if (currentCategory > 0) {
-      setCurrentCategory((prev) => prev - 1);
+      const prevStep = currentCategory - 1;
+      setCurrentCategory(prevStep);
+      persist(answers, prevStep);
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
   const handleRestart = () => {
+    removeStoredJSON(STORAGE_KEY);
     setAnswers({});
     setCurrentCategory(0);
     setShowResults(false);
+    setResumed(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleChangeAnswers = () => {
+    setShowResults(false);
+    setCurrentCategory(0);
+    setResumed(false);
+    persist(answers, 0);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -464,7 +532,10 @@ export default function MarriageAssessment() {
               {CATEGORIES.map((cat, i) => (
                 <button
                   key={cat.slug}
-                  onClick={() => setCurrentCategory(i)}
+                  onClick={() => {
+                    setCurrentCategory(i);
+                    persist(answers, i);
+                  }}
                   style={{
                     width: "10px",
                     height: "10px",
@@ -478,6 +549,9 @@ export default function MarriageAssessment() {
                           ? "var(--ink-muted)"
                           : "var(--bone-muted)",
                     transition: "background 0.2s",
+                    padding: "7px",
+                    boxSizing: "content-box",
+                    backgroundClip: "content-box",
                   }}
                   aria-label={`Go to ${cat.name}`}
                 />
@@ -491,6 +565,57 @@ export default function MarriageAssessment() {
       {!showResults && (
         <section style={{ padding: "48px 32px 80px", background: "var(--bone)" }}>
           <div className="wrap" style={{ maxWidth: "700px" }}>
+            {resumed && (
+              <div
+                className="no-print"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "16px",
+                  flexWrap: "wrap",
+                  marginBottom: "28px",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: "13px",
+                    fontFamily: "var(--U)",
+                    color: "var(--ink-muted)",
+                  }}
+                >
+                  Picked up where you left off.
+                </span>
+                <button
+                  onClick={handleRestart}
+                  style={{
+                    fontSize: "13px",
+                    fontFamily: "var(--U)",
+                    fontWeight: 600,
+                    padding: "6px 14px",
+                    borderRadius: "2px",
+                    cursor: "pointer",
+                    background: "none",
+                    color: "var(--ink-muted)",
+                    border: "1px solid var(--border)",
+                  }}
+                >
+                  Start fresh
+                </button>
+              </div>
+            )}
+            {persistFailed && (
+              <p
+                style={{
+                  fontSize: "13px",
+                  fontFamily: "var(--U)",
+                  color: "var(--ink-muted)",
+                  margin: "0 0 28px",
+                }}
+              >
+                Couldn't save to this browser — your work here will not survive
+                a reload.
+              </p>
+            )}
             {/* Category Header */}
             <div style={{ marginBottom: "40px" }}>
               <div
@@ -498,7 +623,7 @@ export default function MarriageAssessment() {
                   fontSize: "11px",
                   fontWeight: 700,
                   letterSpacing: "0.2em",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   fontFamily: "var(--U)",
                   marginBottom: "12px",
                 }}
@@ -671,7 +796,7 @@ export default function MarriageAssessment() {
 
               <button
                 onClick={handleNext}
-                disabled={!canProceed}
+                disabled={isLastCategory ? !allAnswered : !canProceed}
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -704,6 +829,19 @@ export default function MarriageAssessment() {
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
             <ToolActions toolName="Marriage Health Assessment" />
+            {persistFailed && (
+              <p
+                style={{
+                  fontSize: "13px",
+                  fontFamily: "var(--U)",
+                  color: "var(--ink-muted)",
+                  margin: "0 0 28px",
+                }}
+              >
+                Couldn't save to this browser — your work here will not survive
+                a reload.
+              </p>
+            )}
 
             {/* Overall Score */}
             <div
@@ -1103,6 +1241,29 @@ export default function MarriageAssessment() {
                 Print Results
               </button>
               <button
+                onClick={handleChangeAnswers}
+                style={{
+                  fontSize: "14px",
+                  fontFamily: "var(--U)",
+                  fontWeight: 600,
+                  padding: "14px 28px",
+                  borderRadius: "2px",
+                  cursor: "pointer",
+                  background: "none",
+                  color: "var(--ink-muted)",
+                  border: "1px solid var(--border)",
+                  transition: "all 0.2s",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = "var(--ink-muted)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = "var(--border)";
+                }}
+              >
+                Change my answers
+              </button>
+              <button
                 onClick={handleRestart}
                 style={{
                   fontSize: "14px",
@@ -1141,7 +1302,7 @@ export default function MarriageAssessment() {
 
             {/* Next Step CTA */}
             <a
-              href="/writing?category=marriage"
+              href="/writing?track=marriage"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -1193,6 +1354,19 @@ export default function MarriageAssessment() {
           </div>
         </section>
       )}
+
+      {/* Tool-to-book bridge (QW-17): invitation register, never pressure. */}
+      <section style={{ background: "var(--bone-warm)", padding: "56px 24px" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto", textAlign: "center" }}>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "16px" }}>GO DEEPER</p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "56ch", margin: "0 auto 22px" }}>
+            If this assessment named something you already knew was there, the book goes further. <em>Covenant</em> is the long form of everything this tool measures — why marriage is a promise, not a deal.
+          </p>
+          <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+            <a href="/covenant" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Read about Covenant</a>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }

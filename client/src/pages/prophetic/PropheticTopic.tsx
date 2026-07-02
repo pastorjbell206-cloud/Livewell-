@@ -37,7 +37,7 @@ export default function PropheticTopic({ config }: { config: SectionConfig }) {
   useEffect(() => {
     if (!slug) return;
     setT(null); setMissing(false);
-    fetch(`${config.base}/topics/${slug}.json`, { cache: "no-store" })
+    fetch(`${config.base}/topics/${slug}.json`)
       .then((r) => (r.ok ? r.json() : Promise.reject()))
       .then(setT)
       .catch(() => setMissing(true));

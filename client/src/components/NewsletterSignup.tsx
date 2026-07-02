@@ -33,15 +33,16 @@ export function NewsletterSignup({
       addToast?.({
         type: "success",
         title: "Subscribed",
-        message: "Check your inbox for a confirmation.",
+        message: "You're on the list. One essay a week, written slow.",
       });
       setEmail("");
     },
     onError: error => {
+      console.error(error);
       addToast?.({
         type: "error",
         title: "Subscription failed",
-        message: error.message || "Please try again later.",
+        message: "That didn't go through. Check the email address and try once more.",
       });
     },
   });
@@ -87,7 +88,7 @@ export function NewsletterSignup({
           <input
             type="email"
             required
-            placeholder="your@email.com"
+            placeholder="you@example.com"
             value={email}
             onChange={e => setEmail(e.target.value)}
             aria-label="Email address"
@@ -118,7 +119,7 @@ export function NewsletterSignup({
               cursor: subscribe.isPending ? "wait" : "pointer",
             }}
           >
-            {subscribe.isPending ? "…" : "Go"}
+            {subscribe.isPending ? "Subscribing…" : "Subscribe"}
           </button>
         </div>
       </form>
@@ -134,7 +135,7 @@ export function NewsletterSignup({
         <input
           type="email"
           required
-          placeholder="your@email.com"
+          placeholder="you@example.com"
           value={email}
           onChange={e => setEmail(e.target.value)}
           aria-label="Email address"
@@ -209,7 +210,7 @@ export function NewsletterSignup({
         <input
           type="email"
           required
-          placeholder="your@email.com"
+          placeholder="you@example.com"
           value={email}
           onChange={e => setEmail(e.target.value)}
           aria-label="Email address"
