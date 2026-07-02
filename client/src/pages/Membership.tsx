@@ -105,7 +105,7 @@ export default function Membership() {
               The first 100 members lock in the founding rate. Your price never increases.
             </p>
             {joined ? (
-              <p style={{ color: "var(--mustard)", fontWeight: 500, fontFamily: "var(--U)", fontSize: "0.875rem" }}>You are on the list. Watch your inbox.</p>
+              <p style={{ color: "var(--mustard)", fontWeight: 500, fontFamily: "var(--U)", fontSize: "0.875rem" }}>You are on the founding-member list. When the doors open, you are first.</p>
             ) : (
               <form onSubmit={checkoutLive ? handleCheckout : handleWaitlist} style={{ display: "flex", gap: "0", maxWidth: "380px", margin: "0 auto" }}>
                 <input type="email" aria-label="Email address" placeholder="your@email.com" value={email} onChange={(e) => setEmail(e.target.value)} required

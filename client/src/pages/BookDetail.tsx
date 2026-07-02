@@ -6,7 +6,7 @@ import { ArrowLeft, BookOpen, ExternalLink, Loader2 } from "lucide-react";
 import { useState } from "react";
 import BookPreview from "@/components/BookPreview";
 import BookRecommendations from "@/components/BookRecommendations";
-import { SampleChapterForm } from "@/components/SampleChapterForm";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { bookUrl, SITE_URL } from "@/lib/site";
 import { readSlugFor } from "@/lib/readableBooks";
 
@@ -221,13 +221,16 @@ export default function BookDetail() {
           </div>
         </section>
 
-        {/* SAMPLE CHAPTER FORM (the conversion mechanic) */}
+        {/* EMAIL CAPTURE — the sample above is free and ungated; the list ask
+            stands on its own. (The old SampleChapterForm here promised a PDF
+            "on the way" that nothing could send.) */}
         <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
           <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-            <SampleChapterForm
-              bookTitle={book.title}
-              bookSlug={book.slug ?? ""}
-              sampleUrl={null}
+            <NewsletterSignup
+              variant="inline"
+              title="If this book is your kind of reading"
+              description="One serious essay a week in the same vein — theology that meets the actual Tuesday afternoon. No spam, ever."
+              source={`book-${book.slug ?? "detail"}`}
             />
           </div>
         </section>

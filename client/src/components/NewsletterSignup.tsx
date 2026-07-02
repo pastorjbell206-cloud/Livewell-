@@ -33,7 +33,7 @@ export function NewsletterSignup({
       addToast?.({
         type: "success",
         title: "Subscribed",
-        message: "Check your inbox for a confirmation.",
+        message: "You're on the list. One essay a week, written slow.",
       });
       setEmail("");
     },
