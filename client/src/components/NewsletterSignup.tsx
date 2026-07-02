@@ -38,10 +38,11 @@ export function NewsletterSignup({
       setEmail("");
     },
     onError: error => {
+      console.error(error);
       addToast?.({
         type: "error",
         title: "Subscription failed",
-        message: error.message || "Please try again later.",
+        message: "That didn't go through. Check the email address and try once more.",
       });
     },
   });

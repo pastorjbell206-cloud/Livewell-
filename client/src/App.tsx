@@ -277,8 +277,42 @@ function ForFamiliesRedirect() {
 
 function PageFallback() {
   return (
-    <div className="flex items-center justify-center min-h-screen">
-      <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900" />
+    <div
+      role="status"
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: "10px",
+        background: "var(--bone)",
+        textAlign: "center",
+        padding: "var(--s-4)",
+      }}
+    >
+      <p
+        style={{
+          fontFamily: "var(--F)",
+          fontSize: "26px",
+          fontWeight: 400,
+          letterSpacing: "-0.01em",
+          color: "var(--ink)",
+          margin: 0,
+        }}
+      >
+        One moment.
+      </p>
+      <p
+        style={{
+          fontFamily: "var(--B)",
+          fontSize: "14px",
+          color: "var(--ink-muted)",
+          margin: 0,
+        }}
+      >
+        Loading the page…
+      </p>
     </div>
   );
 }

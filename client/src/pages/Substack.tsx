@@ -22,7 +22,9 @@ export default function SubstackPage() {
       {/* Hero */}
       <section className="relative overflow-hidden" style={{ minHeight: "45vh" }}>
         <div className="absolute inset-0">
-          <img src={WRITING_DESK} alt="" className="w-full h-full object-cover" />
+          <img width={1200}
+          height={800}
+          src={WRITING_DESK} alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(26,26,26,0.9) 0%, rgba(26,26,26,0.7) 50%, rgba(26,26,26,0.4) 100%)" }} />
         </div>
         <div className="relative container flex items-center" style={{ minHeight: "45vh" }}>

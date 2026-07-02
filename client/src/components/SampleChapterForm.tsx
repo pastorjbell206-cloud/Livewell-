@@ -61,10 +61,11 @@ export function SampleChapterForm({
       }
     },
     onError: err => {
+      console.error(err);
       addToast?.({
         type: "error",
         title: "Request failed",
-        message: err.message || "Please try again later.",
+        message: "That didn't go through. Check the email address and try once more.",
       });
     },
   });

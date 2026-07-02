@@ -107,14 +107,14 @@ const BOOKS: Record<string, BookRef> = {
     title: "Consider the Birds",
     sub: "What the Bible Says About Anxiety",
     blurb: "What the Bible actually says about anxiety, and the peace Christ gives instead of the peace we manufacture.",
-    cover: "/books/consider-the-birds.jpg",
+    cover: "/books/consider-the-birds.webp",
   },
   "where-your-treasure-is": {
     slug: "where-your-treasure-is",
     title: "Where Your Treasure Is",
     sub: "What the Bible Says About Money",
     blurb: "What the Bible says about money, and the heart it means to free — vocation, debt, generosity, and what wealth costs.",
-    cover: "/books/where-your-treasure-is.jpg",
+    cover: "/books/where-your-treasure-is.webp",
   },
   "when-god-bless-america": {
     slug: "when-god-bless-america",
@@ -122,7 +122,7 @@ const BOOKS: Record<string, BookRef> = {
     sub: "How Patriotism Became Our Practical Savior",
     blurb: "Civil religion named for what it is — idolatry with a flag for a shroud — and the older allegiance underneath.",
     href: "/books/when-god-bless-america",
-    cover: "/books/when-god-bless-america.jpg",
+    cover: "/books/when-god-bless-america.webp",
   },
   "deconstruction-of-faith": {
     slug: "deconstruction-of-faith",
@@ -130,7 +130,7 @@ const BOOKS: Record<string, BookRef> = {
     sub: "Taking Faith Apart Without Losing It",
     blurb: "For the reader taking the inherited faith apart, honestly — and what it costs to stop at the demolition.",
     href: "/books/deconstruction-of-faith",
-    cover: "/books/deconstruction-of-faith.jpg",
+    cover: "/books/deconstruction-of-faith.webp",
   },
   "raising-believers": {
     slug: "raising-believers",
@@ -138,7 +138,7 @@ const BOOKS: Record<string, BookRef> = {
     sub: "Formation Over Performance in a Christian Home",
     blurb: "Five sons in: presence over advice, formation over performance, and the long work of a household that forms faith.",
     href: "/books/raising-believers",
-    cover: "/books/raising-believers.jpg",
+    cover: "/books/raising-believers.webp",
   },
   "the-reliability-of-scripture": {
     slug: "the-reliability-of-scripture",
@@ -146,7 +146,7 @@ const BOOKS: Record<string, BookRef> = {
     sub: "What We Actually Know About the Bible",
     blurb: "The evidence, stronger than skeptics admit and more complex than fundamentalists want — laid out without shortcuts.",
     href: "/books/the-reliability-of-scripture",
-    cover: "/books/the-reliability-of-scripture.jpg",
+    cover: "/books/the-reliability-of-scripture.webp",
   },
   "bible-and-homosexuality": {
     slug: "bible-and-homosexuality",
@@ -154,7 +154,7 @@ const BOOKS: Record<string, BookRef> = {
     sub: "What the Texts Say, and What We Have Made Them Say",
     blurb: "The hard texts read in full context, every serious position steelmanned, and the pastoral weight carried honestly.",
     href: "/books/bible-and-homosexuality",
-    cover: "/books/bible-and-homosexuality.jpg",
+    cover: "/books/bible-and-homosexuality.webp",
   },
   "bible-and-transgender-identity": {
     slug: "bible-and-transgender-identity",
@@ -162,7 +162,7 @@ const BOOKS: Record<string, BookRef> = {
     sub: "Scripture, Bodies, and the People in Front of Us",
     blurb: "What Scripture says and does not say, held with rigor and with care for the actual people this touches.",
     href: "/books/bible-and-transgender-identity",
-    cover: "/books/bible-and-transgender-identity.jpg",
+    cover: "/books/bible-and-transgender-identity.webp",
   },
   "critical-race-theory-biblical": {
     slug: "critical-race-theory-biblical",
@@ -170,7 +170,7 @@ const BOOKS: Record<string, BookRef> = {
     sub: "Past the Slogans on Both Sides",
     blurb: "The question taken seriously instead of used as a weapon — what the framework sees, what it misses, what Scripture demands.",
     href: "/books/critical-race-theory-biblical",
-    cover: "/books/critical-race-theory-biblical.jpg",
+    cover: "/books/critical-race-theory-biblical.webp",
   },
 };
 

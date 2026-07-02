@@ -31,14 +31,31 @@ export function BookCover({ coverImage, title, author, fixed, style }: BookCover
   };
 
   if (coverImage && !failed) {
-    return (
+    // Local .jpg covers all have committed .webp siblings (built by
+    // scripts/build-webp-covers.mjs) — typically 70–85% smaller. The jpg
+    // stays as the fallback and as the og:image format. Intrinsic
+    // width/height keep the layout reserved (protects the site's 0.000 CLS).
+    const webp = coverImage.startsWith("/books/") && coverImage.endsWith(".jpg")
+      ? coverImage.replace(/\.jpg$/, ".webp")
+      : null;
+    const img = (
       <img
         src={coverImage}
         alt={title}
+        width={400}
+        height={600}
         loading="lazy"
         onError={() => setFailed(true)}
         style={{ ...common, objectFit: "cover", display: "block" }}
       />
+    );
+    return webp ? (
+      <picture>
+        <source srcSet={webp} type="image/webp" />
+        {img}
+      </picture>
+    ) : (
+      img
     );
   }
 

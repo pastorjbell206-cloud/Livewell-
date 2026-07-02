@@ -133,7 +133,9 @@ export default function BookDetail() {
               <div className="md:col-span-1">
                 {book.coverImage && (
                   <img
-                    src={book.coverImage}
+                    width={400}
+                height={600}
+                src={book.coverImage}
                     alt={book.title}
                     className="w-full rounded-lg shadow-lg"
                     style={{ aspectRatio: "3/4", objectFit: "cover" }}

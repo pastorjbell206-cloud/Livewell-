@@ -332,8 +332,26 @@ export default function SearchPage() {
                   <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
                     {libraryLoaded ? (
                       <>
-                        <p className="text-lg">No results found for "{query}"</p>
-                        <p className="text-sm mt-2">Try different keywords or browse our content</p>
+                        <p className="text-lg">Nothing here for "{query}".</p>
+                        <p className="text-sm mt-2">
+                          Try another word — or start in the{" "}
+                          <Link
+                            href="/writing"
+                            className="font-ui font-medium hover:opacity-70 transition-opacity"
+                            style={{ color: "var(--gold)" }}
+                          >
+                            essays
+                          </Link>{" "}
+                          or the{" "}
+                          <Link
+                            href="/tools"
+                            className="font-ui font-medium hover:opacity-70 transition-opacity"
+                            style={{ color: "var(--gold)" }}
+                          >
+                            tools
+                          </Link>
+                          .
+                        </p>
                       </>
                     ) : (
                       <p className="text-lg">Searching...</p>
