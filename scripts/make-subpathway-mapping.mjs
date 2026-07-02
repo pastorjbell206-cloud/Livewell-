@@ -210,8 +210,8 @@ const foldIn = (arr) => {
     combined.set(it.slug, { pillar: it.pillar, sub: it.subPathway, series: !!it.series });
   }
 };
-foldIn(readJson("../client/public/article-library.json"));
-foldIn(readJson("../client/public/draft-essays.json"));
+foldIn(readJson("../api/_data/article-library.json"));
+foldIn(readJson("../api/_data/draft-essays.json"));
 
 // Substack imports (slug -> sub-pathway), so they categorize once published.
 const SUBSTACK = [

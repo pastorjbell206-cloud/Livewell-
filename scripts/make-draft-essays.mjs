@@ -224,7 +224,7 @@ const items = [
 ];
 
 writeFileSync(
-  new URL("../client/public/draft-essays.json", import.meta.url),
+  new URL("../api/_data/draft-essays.json", import.meta.url),
   JSON.stringify(items, null, 2) + "\n"
 );
 console.log("wrote", items.length, "draft essays:");

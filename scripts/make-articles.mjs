@@ -292,7 +292,7 @@ const items = [
 ];
 
 writeFileSync(
-  new URL("../client/public/article-library.json", import.meta.url),
+  new URL("../api/_data/article-library.json", import.meta.url),
   JSON.stringify(items, null, 2) + "\n"
 );
 console.log("wrote", items.length, "library articles:");

@@ -3,7 +3,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 /**
  * Merge the hand-written article library (make-articles.mjs output) with every
  * per-sub-pathway file the writing agents produce in client/src/data/articles/,
- * de-duplicating by slug, into the single client/public/article-library.json
+ * de-duplicating by slug, into the single api/_data/article-library.json
  * that the admin loader reads. Idempotent.
  */
 const root = new URL("../client/public/", import.meta.url);

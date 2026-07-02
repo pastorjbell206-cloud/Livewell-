@@ -5,10 +5,14 @@ import path from "node:path";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 
+const isDev = process.env.NODE_ENV !== "production" && !process.env.VERCEL;
+
 const plugins = [
   react(),
   tailwindcss(),
-  jsxLocPlugin(),
+  // Dev-only debug plugin: it stamps data-loc attributes on every JSX element
+  // (10,613 of them were shipping to production).
+  ...(isDev ? [jsxLocPlugin()] : []),
   VitePWA({
     // Ship a self-destroying service worker: it unregisters any previously
     // installed SW and clears its caches, so deploys always show up on the next

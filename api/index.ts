@@ -14,6 +14,7 @@ import superjson from "superjson";
 // serves the library. Regenerate with `node scripts/build-static-library.mjs`.
 import STATIC_LIBRARY from "./static-library.generated.js";
 import { readFileSync } from "node:fs";
+import { readFile } from "node:fs/promises";
 import Stripe from "stripe";
 
 // ---------------------------------------------------------------------------
@@ -2429,6 +2430,29 @@ async function contactForm(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+// Admin-only datasets moved out of the public dist (QW-29): 4.3 MB of
+// pre-publication draft bodies (with unverified [cite] stubs) and the article
+// library were previously served to anyone at a public URL.
+const ADMIN_DATASETS: Record<string, URL> = {
+  "article-bodies": new URL("./_data/admin-article-bodies.json", import.meta.url),
+  "article-library": new URL("./_data/article-library.json", import.meta.url),
+  "draft-essays": new URL("./_data/draft-essays.json", import.meta.url),
+};
+async function adminDataset(req: VercelRequest, res: VercelResponse, key: string) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  const file = ADMIN_DATASETS[key];
+  if (!file) return json(res, 404, { error: "unknown dataset" });
+  try {
+    const raw = await readFile(file, "utf8");
+    res.setHeader("Content-Type", "application/json; charset=utf-8");
+    res.setHeader("Cache-Control", "no-store");
+    return res.status(200).send(raw);
+  } catch (e: any) {
+    console.error("[admin:dataset]", key, e?.message || e);
+    return json(res, 500, { error: "Could not load dataset." });
+  }
+}
+
 // Minimal admin reader for the contact inbox — until this existed, nothing
 // anywhere read contact_messages, so every submission (including assessment
 // results people asked to keep on file) went into a dead-letter table.
@@ -2719,6 +2743,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/rss.xml" || url === "/rss.xml" || url === "/feed" || url === "/feed.xml") return rssLiveWell(req, res);
     if (url === "/api/admin/status") return adminStatus(req, res);
     if (url === "/api/admin/contact-messages") return adminContactMessages(req, res);
+    if (url === "/api/admin/article-bodies") return adminDataset(req, res, "article-bodies");
+    if (url === "/api/admin/article-library") return adminDataset(req, res, "article-library");
+    if (url === "/api/admin/draft-essays") return adminDataset(req, res, "draft-essays");
     if (url === "/api/admin/organize-articles") return organizeArticles(req, res);
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);

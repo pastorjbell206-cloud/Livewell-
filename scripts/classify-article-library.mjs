@@ -2,7 +2,7 @@
 /**
  * classify-article-library.mjs — LiveWell by James Bell
  *
- * Files the 115 articles in client/public/article-library.json into the
+ * Files the 115 articles in api/_data/article-library.json into the
  * two-movement / six-pillar taxonomy by APPENDING entries to
  * client/src/lib/pillar-assignments.ts. Uses the exact same keyword tables,
  * legacy-pillar prior, and scoring as scripts/classify-pillars.mjs, so these
@@ -17,7 +17,7 @@ import { dirname, join } from "node:path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
-const LIB = join(ROOT, "client/public/article-library.json");
+const LIB = join(ROOT, "api/_data/article-library.json");
 const ASSIGN = join(ROOT, "client/src/lib/pillar-assignments.ts");
 
 // ── Keyword tables copied verbatim from classify-pillars.mjs ────────────────

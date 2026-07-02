@@ -74,11 +74,11 @@ export default function AdminLoadDrafts() {
 
   // Load the personal essays and the SEO article library together.
   const loadAll = async (): Promise<DraftItem[]> => {
-    const sources = ["/draft-essays.json", "/article-library.json"];
+    const sources = ["/api/admin/draft-essays", "/api/admin/article-library"];
     const out: DraftItem[] = [];
     for (const src of sources) {
       try {
-        const resp = await fetch(src);
+        const resp = await fetch(src, { credentials: "include" });
         if (resp.ok) out.push(...(await resp.json()));
       } catch { /* a missing source is fine */ }
     }
