@@ -85,8 +85,12 @@ function authed(req: VercelRequest): boolean {
   // Read the key ONLY from the x-seed-key header so it never leaks into URLs/logs.
   const key = (req.headers["x-seed-key"] as string) || "";
   if (!key) return false;
-  // Prefer a dedicated SEED_KEY when set; otherwise fall back to JWT_SECRET.
-  const expected = process.env.SEED_KEY || process.env.JWT_SECRET || "";
+  // Dedicated SEED_KEY only — no JWT_SECRET fallback. The session-signing
+  // secret and the seed/admin-endpoint key must not be the same credential:
+  // one leaked JWT_SECRET used to unlock both session forgery AND every
+  // seed/inventory endpoint. If SEED_KEY is unset, header auth fails closed
+  // (admin-session auth on these endpoints still works via authedSession).
+  const expected = process.env.SEED_KEY || "";
   if (!expected) return false;
   return constantTimeEqual(key, expected);
 }
