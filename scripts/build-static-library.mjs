@@ -148,6 +148,130 @@ for (const [dir, meta] of Object.entries(DIRS)) {
   }
 }
 
+
+// ---------------------------------------------------------------------------
+// Stage 2 — the publish bridge (2026-07). The 421 edited article bodies in
+// api/_data/admin-article-bodies.json were pre-publication drafts waiting on
+// the admin publish click. After the citation-integrity and steelman passes
+// brought them to the house standard, they are served from the static library
+// so they are live without a database write. The live DB still wins on slug
+// collision (an admin-published row overrides these), and the markdown drafts
+// above win within the static set. Server bundle only: these are NOT appended
+// to client/src/data/content-data.json, so the client bundle does not grow.
+const BODIES_PATH = "api/_data/admin-article-bodies.json";
+const LIBRARY_PATH = "api/_data/article-library.json";
+const TITLE_OVERRIDES = {
+  "church-gun-violence": "The Church and Gun Violence",
+  "healthcare-moral-issue": "Healthcare Is a Moral Issue",
+  "church-refugee-crisis": "The Church and the Refugee",
+  "environmental-racism": "Environmental Racism and the Body of Christ",
+  "education-inequality": "Education Inequality and the Children We Form",
+  "climate-refugees": "Climate Refugees and the Sojourner",
+  "digital-divide": "The Digital Divide and the Gleaning Edge",
+  "church-wage-theft": "Wage Theft and the God Who Hears",
+  "human-trafficking-selective-outrage": "Human Trafficking and Our Selective Outrage",
+  "church-domestic-violence": "The Church and Domestic Violence",
+  "church-incarceration-silence": "The Church's Silence on Incarceration",
+  "church-death-penalty": "The Church and the Death Penalty",
+  "payday-lending-christians": "Payday Lending and the People of God",
+  "disability-justice-theological": "Disability and the Image of God",
+  "redlining-church-neighborhoods": "Redlining and the Neighborhoods We Kept",
+  "color-blindness-not-virtue": "Color-Blindness Is Not the Virtue We Think It Is",
+  "literacy-as-justice": "Literacy as Justice",
+  "theological-case-against-torture": "The Theological Case Against Torture",
+  "addiction-justice-issue": "Addiction Is a Justice Issue",
+  "school-to-prison-pipeline": "The School-to-Prison Pipeline",
+  "church-response-poverty-charity": "Charity, Justice, and the Church's Response to Poverty",
+  "church-wealth-world-poverty": "The Church's Wealth and the World's Poverty",
+  "foster-care-unfinished-mandate": "Foster Care: The Unfinished Mandate",
+  "church-must-speak-housing": "Why the Church Must Speak About Housing",
+  "theology-of-borders": "A Theology of Borders",
+  "gender-based-violence": "Gender-Based Violence and the House of God",
+  "elder-abuse-invisible": "Elder Abuse: The Invisible Sin",
+  "church-food-insecurity": "The Church and Food Insecurity",
+  "church-mental-health-justice": "Mental Health Is a Justice Issue",
+  "moral-injury-veterans": "Moral Injury and the Veterans Among Us",
+  "food-deserts-theology-bread": "Food Deserts and the Theology of Bread",
+  "food-sovereignty-theology-table": "Food Sovereignty and the Theology of the Table",
+  "theology-fair-wages": "A Theology of Fair Wages",
+  "black-church-prophetic-justice": "The Black Church and Prophetic Justice",
+  "racial-reconciliation-without-repentance": "Racial Reconciliation Without Repentance",
+  "doctrine-of-discovery": "The Doctrine of Discovery",
+  "theology-of-reparations": "A Theology of Reparations",
+  "gentrification-displacement": "Gentrification and Displacement",
+  "water-theological-issue": "Water Is a Theological Issue",
+  "maternal-mortality-pro-life": "Maternal Mortality and the Meaning of Pro-Life",
+  "theology-of-repair": "The Practices of Repair",
+  "theology-of-land": "A Theology of Land",
+  "theology-of-protest": "A Theology of Protest",
+  "ai-authenticity-pastor-artificial-intelligence": "AI and the Pastor's Calling",
+};
+const SMALL_WORDS = new Set(["a","an","and","as","at","but","by","for","in","is","it","of","on","or","the","to","vs","with","without","when","how","what","why","are","your","you"]);
+function titleFromSlug(slug) {
+  const words = slug.replace(/^\d+-/, "").split("-");
+  return words.map((w, i) => (i > 0 && SMALL_WORDS.has(w)) ? w : w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+}
+function excerptFromBody(body) {
+  const plain = body.replace(/^#+\s.*$/gm, "").replace(/[*_>#]/g, "").replace(/\s+/g, " ").trim();
+  if (plain.length <= 180) return plain;
+  const cut = plain.slice(0, 180);
+  const stop = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("? "));
+  return stop > 60 ? cut.slice(0, stop + 1) : cut.trimEnd() + "\u2026";
+}
+const LIB_PILLAR_TO_TRACK = {
+  "Theological Depth": "theology",
+  "Prophetic Justice": "prophetic-justice",
+  "Prophetic Disruption": "american-church",
+  "Leadership Formation": "pastoral-ministry",
+  "Integrated Life": "devotionals",
+};
+const bridgeRecords = [];
+if (existsSync(BODIES_PATH)) {
+  const bodies = JSON.parse(readFileSync(BODIES_PATH, "utf8"));
+  const library = existsSync(LIBRARY_PATH) ? JSON.parse(readFileSync(LIBRARY_PATH, "utf8")) : [];
+  const libBySlug = new Map(library.map((a) => [a.slug, a]));
+  const already = new Set(records.map((r) => r.slug));
+  const BASE2 = Date.parse("2026-07-01T12:00:00Z");
+  let j = 0;
+  for (const b of bodies) {
+    if (already.has(b.slug)) continue;
+    const lib = libBySlug.get(b.slug);
+    const numbered = /^\d+-/.test(b.slug);
+    const inJustice = Object.prototype.hasOwnProperty.call(TITLE_OVERRIDES, b.slug);
+    const pillar = lib ? (LIB_PILLAR_TO_TRACK[lib.pillar] || "theology")
+      : inJustice ? (b.slug === "ai-authenticity-pastor-artificial-intelligence" ? "pastoral-ministry" : "prophetic-justice")
+      : numbered ? "pastoral-ministry" : "theology";
+    const pastoral = pillar === "pastoral-ministry";
+    const minutes = Number(b.readingTimeMinutes) || Math.max(3, Math.round(b.body.split(/\s+/).length / 220));
+    const when = new Date(BASE2 - j * DAY).toISOString();
+    bridgeRecords.push({
+      id: 2_000_000 + j,
+      title: TITLE_OVERRIDES[b.slug] || (lib && lib.title) || titleFromSlug(b.slug),
+      slug: b.slug,
+      body: b.body,
+      excerpt: (lib && lib.excerpt) || excerptFromBody(b.body),
+      pillar,
+      readTime: `${minutes} min read`,
+      coverImage: null,
+      published: true,
+      featured: false,
+      contentType: pastoral ? "pastoral" : "general",
+      audience_type: pastoral ? "pastors" : "general",
+      topic: null,
+      format: "article",
+      audience: pastoral ? "pastors" : "individuals",
+      difficulty: "intermediate",
+      readingTimeMinutes: minutes,
+      publishedAt: when,
+      createdAt: when,
+      updatedAt: when,
+    });
+    already.add(b.slug);
+    j++;
+  }
+}
+const allRecords = records.concat(bridgeRecords);
+
 const outPath = "api/static-library.generated.ts";
 const banner =
   "// AUTO-GENERATED by scripts/build-static-library.mjs — do not edit by hand.\n" +
@@ -155,13 +279,13 @@ const banner =
   "/* eslint-disable */\n";
 writeFileSync(
   outPath,
-  `${banner}const STATIC_LIBRARY: any[] = ${JSON.stringify(records, null, 2)};\nexport default STATIC_LIBRARY;\n`
+  `${banner}const STATIC_LIBRARY: any[] = ${JSON.stringify(allRecords, null, 2)};\nexport default STATIC_LIBRARY;\n`
 );
 // Also emit a plain JSON twin for tooling that can't import TS (the sitemap
 // generator reads this so the essays get <url> entries even though they aren't
 // DB rows).
 const jsonPath = "content/static-library.generated.json";
-writeFileSync(jsonPath, JSON.stringify(records, null, 2) + "\n");
+writeFileSync(jsonPath, JSON.stringify(allRecords, null, 2) + "\n");
 
 // Merge the essays into client/src/data/content-data.json (the admin "Load
 // articles" seed source + the reading-paths test's known-slug set). DB-snapshot
@@ -191,10 +315,10 @@ for (const r of records) {
 }
 writeFileSync(contentDataPath, JSON.stringify(contentData, null, 2) + "\n");
 console.log(`content-data.json: appended ${appended} essays (now ${contentData.posts.length} posts)`);
-console.log(`Wrote ${records.length} essays to ${outPath}`);
+console.log(`Wrote ${records.length} draft essays + ${bridgeRecords.length} bridged articles = ${allRecords.length} to ${outPath}`);
 console.log(`Stripped placeholders from ${stripped} source files`);
 // slug collision sanity-check within the static set
 const seen = new Map();
-for (const r of records) seen.set(r.slug, (seen.get(r.slug) || 0) + 1);
+for (const r of allRecords) seen.set(r.slug, (seen.get(r.slug) || 0) + 1);
 const dupes = [...seen].filter(([, n]) => n > 1);
 if (dupes.length) console.log("WARNING duplicate slugs:", dupes);
