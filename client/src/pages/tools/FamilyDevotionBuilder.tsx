@@ -16,6 +16,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { useEffect, useRef, useState } from "react";
 import { Users, Copy, Check, RotateCcw, BookOpen, MessageCircle, Hand, HeartHandshake } from "lucide-react";
 import { Link } from "wouter";
+import { copyToClipboard } from "@/lib/clipboard";
 
 type BandId = "young" | "elementary" | "teens" | "mixed";
 
@@ -786,6 +787,7 @@ export default function FamilyDevotionBuilder() {
   const [band, setBand] = useState<BandId | null>(null);
   const [theme, setTheme] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
+  const [copyFailed, setCopyFailed] = useState(false);
 
   // The saved series, loaded once and defensively.
   const [initialLoad] = useState(loadSeries);
@@ -877,9 +879,10 @@ export default function FamilyDevotionBuilder() {
     setBand(null);
     setTheme(null);
     setCopied(false);
+    setCopyFailed(false);
   };
 
-  const handleCopy = () => {
+  const handleCopy = async () => {
     if (!themeData || !bandContent || !theme) return;
     const text = [
       `Family Devotion: ${theme} (${bandLabel})`,
@@ -894,7 +897,12 @@ export default function FamilyDevotionBuilder() {
       `Pray: ${themeData.prayer}`,
       "From LiveWell by James Bell (livewellbyjamesbell.co/tools/family-devotions)",
     ].join("\n\n");
-    navigator.clipboard.writeText(text);
+    const ok = await copyToClipboard(text);
+    if (!ok) {
+      setCopyFailed(true);
+      return;
+    }
+    setCopyFailed(false);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -1198,7 +1206,7 @@ export default function FamilyDevotionBuilder() {
                 <button
                   key={b.id}
                   type="button"
-                  onClick={() => { setBand(b.id); setCopied(false); }}
+                  onClick={() => { setBand(b.id); setCopied(false); setCopyFailed(false); }}
                   style={pillStyle(band === b.id)}
                 >
                   {b.label}
@@ -1216,7 +1224,7 @@ export default function FamilyDevotionBuilder() {
                   key={t}
                   type="button"
                   disabled={!band}
-                  onClick={() => { setTheme(t); setCopied(false); }}
+                  onClick={() => { setTheme(t); setCopied(false); setCopyFailed(false); }}
                   style={{
                     fontFamily: "var(--U)",
                     fontSize: "14px",
@@ -1327,6 +1335,11 @@ export default function FamilyDevotionBuilder() {
                   <RotateCcw size={14} /> Pick Another
                 </button>
               </div>
+              {copyFailed && (
+                <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "12px 0 0" }}>
+                  Copy failed — select and copy manually.
+                </p>
+              )}
 
               {/* THE INVITATION — offered after the first devotion, never before it. */}
               {!series && (

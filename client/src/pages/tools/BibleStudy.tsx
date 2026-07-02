@@ -33,8 +33,8 @@ const BOOKS: BookData[] = [
     howToRead:
       "Read Genesis in four movements: Creation and Fall (1-11), Abraham (12-25), Jacob (25-36), Joseph (37-50). Each movement has its own arc. Do not flatten them into a single story. Pay attention to the repeated pattern: God promises, humans doubt, God delivers anyway.",
     companionEssay: {
-      title: "When the Promise Takes Longer Than You Expected",
-      href: "/writing",
+      title: "Essays on reading Scripture well",
+      href: "/writing?track=theology",
     },
   },
   {
@@ -56,8 +56,8 @@ const BOOKS: BookData[] = [
     howToRead:
       "Do not read the Psalms like a devotional, picking one at random each morning. Read them in clusters: the Psalms of Ascent (120-134) together, the Hallel Psalms (113-118) together. Notice that the Psalter moves from lament-heavy in Book I to praise-heavy in Book V. That movement is intentional.",
     companionEssay: {
-      title: "The Prayers We Are Afraid to Pray",
-      href: "/writing",
+      title: "Essays on reading Scripture well",
+      href: "/writing?track=theology",
     },
   },
   {
@@ -79,8 +79,8 @@ const BOOKS: BookData[] = [
     howToRead:
       "Do not read a chapter of Proverbs per day like a prescription. Read chapters 1-9 first as a complete unit -- they form the theological framework. Then read the individual proverbs (10-31) through the lens of that framework. Without the framework, the proverbs become fortune cookies.",
     companionEssay: {
-      title: "Wisdom Is Not a Formula",
-      href: "/writing",
+      title: "Essays on reading Scripture well",
+      href: "/writing?track=theology",
     },
   },
   {
@@ -102,8 +102,8 @@ const BOOKS: BookData[] = [
     howToRead:
       "Read Isaiah in three blocks: chapters 1-39 (judgment, set during the Assyrian crisis), 40-55 (comfort, addressed to exiles in Babylon), and 56-66 (future hope, addressed to the returned community). Each block has its own tone and audience. The shift at chapter 40 is one of the most dramatic pivots in all of Scripture.",
     companionEssay: {
-      title: "When God Calls Your Worship Disgusting",
-      href: "/writing",
+      title: "Essays on reading Scripture well",
+      href: "/writing?track=theology",
     },
   },
   {
@@ -125,8 +125,8 @@ const BOOKS: BookData[] = [
     howToRead:
       "Read Matthew with an Old Testament open beside you. Every time Matthew says 'to fulfill what was spoken,' stop and read the original passage in its context. Matthew is not randomly pulling verses. He is making an argument about the continuity of God's plan. Miss the Old Testament background and you miss half of what Matthew is doing.",
     companionEssay: {
-      title: "The Sermon Nobody Can Live Up To",
-      href: "/writing",
+      title: "Essays on reading Scripture well",
+      href: "/writing?track=theology",
     },
   },
   {
@@ -148,8 +148,8 @@ const BOOKS: BookData[] = [
     howToRead:
       "Read Mark in one sitting. It takes about ninety minutes. The Gospel was almost certainly meant to be heard aloud in a single session, and the cumulative effect of its pace matters. Do not break it into daily readings the first time through. Let the urgency wash over you.",
     companionEssay: {
-      title: "The Gospel That Ends in Fear",
-      href: "/writing",
+      title: "Essays on reading Scripture well",
+      href: "/writing?track=theology",
     },
   },
   {
@@ -171,8 +171,8 @@ const BOOKS: BookData[] = [
     howToRead:
       "Read Luke and Acts as a single two-volume work. Luke wrote both, and the story of Jesus in the Gospel is incomplete without the story of the early church in Acts. Pay attention to the meals -- nearly every major teaching in Luke happens at a table. That is not accidental.",
     companionEssay: {
-      title: "The God Who Eats with Sinners",
-      href: "/writing",
+      title: "Essays on reading Scripture well",
+      href: "/writing?track=theology",
     },
   },
   {
@@ -194,8 +194,8 @@ const BOOKS: BookData[] = [
     howToRead:
       "Read John slowly. This is not Mark -- speed will ruin it. Read the Prologue (1:1-18) three times before moving on. It is the lens through which everything else should be read. Pay attention to the 'I am' statements (bread, light, door, shepherd, resurrection, way, vine) -- each one is a claim to deity that Jesus' audience would not have missed.",
     companionEssay: {
-      title: "The Word That Became Flesh",
-      href: "/writing",
+      title: "Essays on reading Scripture well",
+      href: "/writing?track=theology",
     },
   },
   {
@@ -217,8 +217,8 @@ const BOOKS: BookData[] = [
     howToRead:
       "Read Romans in one sitting the first time. The argument builds across chapters, and breaking it into daily chunks destroys the logic. Then reread chapters 9-11 separately -- they are not a parenthesis. They are the climax of the letter, and skipping them (as most reading plans do) guts the argument.",
     companionEssay: {
-      title: "The Letter That Changed Everything",
-      href: "/writing",
+      title: "Essays on reading Scripture well",
+      href: "/writing?track=theology",
     },
   },
   {
@@ -240,8 +240,8 @@ const BOOKS: BookData[] = [
     howToRead:
       "Read Ephesians 1:3-14 aloud. In the original Greek, it is one single sentence -- the longest sentence in the New Testament. Paul's grammar is struggling to contain the theology. Then read chapters 1-3 (what God has done) before chapters 4-6 (how to live). Paul never reverses this order. Identity precedes ethics.",
     companionEssay: {
-      title: "The Church Paul Imagined",
-      href: "/writing",
+      title: "Essays on reading Scripture well",
+      href: "/writing?track=theology",
     },
   },
   {
@@ -263,8 +263,8 @@ const BOOKS: BookData[] = [
     howToRead:
       "Read James as a sermon, not a letter. It has no personal greetings, no travel plans, no theological argument in the Pauline sense. It is a pastor standing in front of his people and telling them the truth they do not want to hear. Read it as if someone is looking you in the eye.",
     companionEssay: {
-      title: "Faith That Does Something",
-      href: "/writing",
+      title: "Essays on reading Scripture well",
+      href: "/writing?track=theology",
     },
   },
   {
@@ -286,8 +286,8 @@ const BOOKS: BookData[] = [
     howToRead:
       "Before reading Revelation, read Daniel 7-12 and Ezekiel 37-48. Revelation quotes or alludes to the Old Testament over 500 times without ever directly citing it. If you do not know the source material, the symbols will seem bizarre. They are not. They are a shared language that John's original audience understood immediately.",
     companionEssay: {
-      title: "The Book Everyone Misreads",
-      href: "/writing",
+      title: "Essays on reading Scripture well",
+      href: "/writing?track=theology",
     },
   },
 ];

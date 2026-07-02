@@ -39,7 +39,7 @@ export default function TheologyBiblical() {
   const [openBook, setOpenBook] = useState<string | null>(null);
 
   useEffect(() => {
-    const get = (f: string) => fetch(f, { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+    const get = (f: string) => fetch(f).then((r) => (r.ok ? r.json() : null)).catch(() => null);
     get("/theology/biblical-theology-storyline.json").then((d) => { if (d?.acts) { setActs(d.acts); setOpenAct(d.acts[0]?.id ?? null); } });
     get("/theology/biblical-theology-themes.json").then((d) => d?.themes && setThemes(d.themes));
     get("/theology/biblical-theology-nt-ot.json").then((d) => d && setNtot(d));

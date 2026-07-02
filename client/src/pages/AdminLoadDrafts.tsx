@@ -40,7 +40,7 @@ export default function AdminLoadDrafts() {
       // Also include any Substack imports (publishing a slug not in the DB is a
       // harmless no-op, so this safely covers them once they've been imported).
       try {
-        const r = await fetch("/api/rss/substack", { cache: "no-store" });
+        const r = await fetch("/api/rss/substack");
         const d = await r.json();
         for (const it of (d?.items ?? [])) {
           const m = String(it.link || "").match(/\/p\/([^/?#]+)/);
@@ -74,11 +74,11 @@ export default function AdminLoadDrafts() {
 
   // Load the personal essays and the SEO article library together.
   const loadAll = async (): Promise<DraftItem[]> => {
-    const sources = ["/draft-essays.json", "/article-library.json"];
+    const sources = ["/api/admin/draft-essays", "/api/admin/article-library"];
     const out: DraftItem[] = [];
     for (const src of sources) {
       try {
-        const resp = await fetch(src, { cache: "no-store" });
+        const resp = await fetch(src, { credentials: "include" });
         if (resp.ok) out.push(...(await resp.json()));
       } catch { /* a missing source is fine */ }
     }

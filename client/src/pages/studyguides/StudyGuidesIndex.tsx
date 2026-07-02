@@ -17,7 +17,7 @@ export default function StudyGuidesIndex() {
   // to the bundled list if the manifest has not been built yet.
   const [guides, setGuides] = useState<StudyGuideEntry[]>(STUDY_GUIDES);
   useEffect(() => {
-    fetch("/studyguides/index.json", { cache: "no-store" })
+    fetch("/studyguides/index.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => { if (d?.guides?.length) setGuides(d.guides); })
       .catch(() => {});
@@ -38,7 +38,7 @@ export default function StudyGuidesIndex() {
             Teach the hard things well
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch" }}>
-            Each guide is a full toolkit for the person at the front of the room: a leader's guide with the answer behind every question, a participant handout, a facilitator script, and printable PDFs. Run a class on Sunday with no prep. Every guide is free; the PDFs come to your inbox.
+            Each guide is a full toolkit for the person at the front of the room: a leader's guide with the answer behind every question, a participant handout, a facilitator script, and printable PDFs. Run a class on Sunday with no prep. Every guide is free, and the PDFs download right here.
           </p>
         </div>
       </section>

@@ -11,6 +11,8 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { useState } from "react";
 import { Link } from "wouter";
 import { Copy, Check, RotateCcw, Sunrise, BookOpen, Moon, Users, HandHeart, HeartPulse } from "lucide-react";
+import { copyToClipboard } from "@/lib/clipboard";
+import { isArrayOf, readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const eyebrow = { fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--mustard)" } as const;
@@ -105,23 +107,69 @@ const CATEGORIES: Category[] = [
   },
 ];
 
+/* ── Saved progress (HS-5): survive a refresh mid-build ────────── */
+
+const STORAGE_KEY = "livewell-progress-rule-of-life";
+const PRACTICE_IDS = new Set(CATEGORIES.flatMap((c) => c.practices.map((p) => p.id)));
+
+interface StoredProgress {
+  answers: string[];
+  step: number;
+  savedAt: string;
+}
+
+const isStringArray = isArrayOf((v): v is string => typeof v === "string");
+
+function isStoredProgress(x: unknown): x is StoredProgress {
+  if (typeof x !== "object" || x === null) return false;
+  const p = x as Record<string, unknown>;
+  return (
+    typeof p.step === "number" &&
+    Number.isFinite(p.step) &&
+    typeof p.savedAt === "string" &&
+    isStringArray(p.answers)
+  );
+}
+
 export default function RuleOfLife() {
-  const [chosen, setChosen] = useState<Set<string>>(new Set());
+  const [saved] = useState(() =>
+    readStoredJSON<StoredProgress | null>(STORAGE_KEY, isStoredProgress, null),
+  );
+  const [chosen, setChosen] = useState<Set<string>>(
+    () => new Set((saved?.answers ?? []).filter((id) => PRACTICE_IDS.has(id))),
+  );
   const [copied, setCopied] = useState(false);
+  const [copyFailed, setCopyFailed] = useState(false);
+  const [resumed, setResumed] = useState(() => chosen.size > 0);
+  const [persistFailed, setPersistFailed] = useState(false);
+
+  const persist = (next: Set<string>) => {
+    setPersistFailed(
+      !writeStoredJSON(STORAGE_KEY, {
+        answers: Array.from(next),
+        step: 0,
+        savedAt: new Date().toISOString(),
+      }),
+    );
+  };
 
   function toggle(id: string) {
-    setChosen((prev) => {
-      const next = new Set(prev);
-      if (next.has(id)) next.delete(id);
-      else next.add(id);
-      return next;
-    });
+    const next = new Set(chosen);
+    if (next.has(id)) next.delete(id);
+    else next.add(id);
+    setChosen(next);
     setCopied(false);
+    setCopyFailed(false);
+    setResumed(false);
+    persist(next);
   }
 
   function reset() {
+    removeStoredJSON(STORAGE_KEY);
     setChosen(new Set());
     setCopied(false);
+    setCopyFailed(false);
+    setResumed(false);
   }
 
   const selectedByCategory = CATEGORIES
@@ -140,13 +188,14 @@ export default function RuleOfLife() {
   }
 
   async function copyRule() {
-    try {
-      await navigator.clipboard.writeText(ruleText());
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      /* clipboard unavailable */
+    const ok = await copyToClipboard(ruleText());
+    if (!ok) {
+      setCopyFailed(true);
+      return;
     }
+    setCopyFailed(false);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   }
 
   return (
@@ -171,6 +220,21 @@ export default function RuleOfLife() {
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={{ ...wrap, maxWidth: "820px" }}>
+          {resumed && (
+            <div className="no-print" style={{ display: "flex", alignItems: "center", gap: "14px", flexWrap: "wrap", marginBottom: "var(--s-3)" }}>
+              <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>
+                Picked up where you left off.
+              </span>
+              <button onClick={reset} style={{ cursor: "pointer", padding: "6px 14px", background: "transparent", color: "var(--ink-muted)", border: "1px solid var(--border)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px" }}>
+                Start fresh
+              </button>
+            </div>
+          )}
+          {persistFailed && (
+            <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
+              Couldn't save to this browser — your work here will not survive a reload.
+            </p>
+          )}
           {CATEGORIES.map((cat) => (
             <div key={cat.id} style={{ marginBottom: "var(--s-4)" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "4px" }}>
@@ -220,6 +284,11 @@ export default function RuleOfLife() {
                 </div>
               )}
             </div>
+            {copyFailed && (
+              <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
+                Copy failed — select and copy manually.
+              </p>
+            )}
 
             {chosen.size === 0 ? (
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)" }}>
@@ -251,6 +320,19 @@ export default function RuleOfLife() {
             <Link href="/life/discipleship-following-jesus" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Read: Discipleship</Link>
             <Link href="/life/rest-and-the-sabbath" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Read: Rest and the Sabbath</Link>
             <Link href="/disciple-making" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Make disciples</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Tool-to-book bridge (QW-17): invitation register, never pressure. */}
+      <section style={{ background: "var(--bone-warm)", padding: "56px 24px" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto", textAlign: "center" }}>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "16px" }}>GO DEEPER</p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "56ch", margin: "0 auto 22px" }}>
+            This builder has a book behind it. <em>Rule of Life: The Ancient Art of Forming a Soul in an Age Built to Deform It</em> — the same trellis, at full depth.
+          </p>
+          <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+            <a href="/rule-of-life" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Read about the book</a>
           </div>
         </div>
       </section>

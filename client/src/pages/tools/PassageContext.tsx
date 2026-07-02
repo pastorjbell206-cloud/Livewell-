@@ -19,6 +19,7 @@ import { Link } from "wouter";
 import { ChevronDown, Search } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { fetchJson } from "@/lib/fetch-json";
 import { DOCTRINE_INDEX } from "@/lib/theology";
 
 interface BookMeta {
@@ -38,6 +39,16 @@ interface PassageNote {
   prompts?: string[];
 }
 interface Verse { verse: number; text: string; }
+
+// Parsing depends on the book list; a response without books is a failed load.
+const isBibleData = (x: unknown): x is BibleData => {
+  const d = x as BibleData;
+  return !!d && typeof d === "object" && Array.isArray(d.books) && d.books.length > 0 &&
+    !!d.genres && typeof d.genres === "object";
+};
+
+const isNotesFile = (x: unknown): x is Record<string, PassageNote> =>
+  !!x && typeof x === "object" && !Array.isArray(x);
 
 const QUESTIONS = [
   "What did it mean to the people it was first written to?",
@@ -123,10 +134,25 @@ export default function PassageContext() {
   const [textState, setTextState] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [showFull, setShowFull] = useState(false);
 
+  // Local data load, with its own error + retry. The attempt (retry nonce) that
+  // failed is recorded; deriving `booksError` from it means Retry clears the
+  // banner without extra state writes inside the effect.
+  const [nonce, setNonce] = useState(0);
+  const [failedNonce, setFailedNonce] = useState<number | null>(null);
+  const booksError = failedNonce === nonce;
+
   useEffect(() => {
-    fetch("/theology/bible-books.json", { cache: "no-store" }).then((r) => r.json()).then(setData).catch(() => {});
-    fetch("/theology/passage-notes.json", { cache: "no-store" }).then((r) => r.json()).then(setNotes).catch(() => {});
-  }, []);
+    let stale = false;
+    fetchJson("/theology/bible-books.json", isBibleData)
+      .then((d) => { if (!stale) setData(d); })
+      .catch(() => { if (!stale) setFailedNonce(nonce); });
+    // Passage notes are enrichment: every panel degrades gracefully without
+    // them, so their failure never blocks the tool.
+    fetchJson("/theology/passage-notes.json", isNotesFile)
+      .then((d) => { if (!stale) setNotes(d); })
+      .catch(() => {});
+    return () => { stale = true; };
+  }, [nonce]);
 
   const books = data?.books ?? [];
   const pickBookMeta = books.find((b) => b.book === pickBook);
@@ -141,7 +167,16 @@ export default function PassageContext() {
   }, [books.length]);
 
   function resolve(p: Parsed | null, raw: string) {
-    if (!p) { setError(`Could not read '${raw}'. Try a form like John 6:44 or Romans 9:14-18.`); return; }
+    if (!p) {
+      // If the book data never arrived, the reference is not the problem —
+      // the banner below the form says what failed. Never blame the input.
+      if (books.length === 0) {
+        setError(booksError ? null : "Still loading the book data — try again in a moment.");
+        return;
+      }
+      setError(`Could not read '${raw}'. Try a form like John 6:44 or Romans 9:14-18.`);
+      return;
+    }
     setError(null);
     setParsed(p);
     setShowFull(!p.start);
@@ -257,6 +292,17 @@ export default function PassageContext() {
             ))}
           </div>
           {error && <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--mustard)", marginTop: "12px" }}>{error}</p>}
+          {booksError && (
+            <div role="alert" style={{ display: "flex", alignItems: "center", gap: "14px", flexWrap: "wrap", marginTop: "12px" }}>
+              <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--mustard)", margin: 0 }}>
+                The tool's book data didn't load — a connection problem, not your reference.
+              </p>
+              <button type="button" onClick={() => setNonce((n) => n + 1)}
+                style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, padding: "6px 14px", borderRadius: "var(--radius-sm)", border: "1px solid var(--mustard)", background: "transparent", color: "var(--mustard)", cursor: "pointer" }}>
+                Try again
+              </button>
+            </div>
+          )}
         </div>
       </section>
 

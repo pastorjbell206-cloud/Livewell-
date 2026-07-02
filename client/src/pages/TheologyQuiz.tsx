@@ -1,25 +1,142 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { trpc } from "@/lib/trpc";
 import { Link } from "wouter";
 import { SEOMeta } from "@/components/SEOMeta";
+import LoadFailed from "@/components/LoadFailed";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
 import { SITE_URL } from "@/lib/site";
+import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+
+/* Session mirror (roadmap HS-5). One-sitting entry flow: answers, step, and
+ * the results flag survive an accidental refresh via sessionStorage, and
+ * nothing outlives the tab. The questions arrive from a query, so the saved
+ * ids travel with the answers and a restore only applies when they still
+ * match the loaded bank. */
+
+const SESSION_KEY = "livewell-session-theology-quiz";
+
+interface SavedSession {
+  answers: number[];
+  step: number;
+  showResults: boolean;
+  questionIds: number[];
+  savedAt: number;
+}
+
+const EMPTY_SESSION: SavedSession = {
+  answers: [],
+  step: 0,
+  showResults: false,
+  questionIds: [],
+  savedAt: 0,
+};
+
+function isSavedSession(x: unknown): x is SavedSession {
+  if (typeof x !== "object" || x === null) return false;
+  const s = x as Record<string, unknown>;
+  if (typeof s.step !== "number" || !Number.isFinite(s.step)) return false;
+  if (typeof s.showResults !== "boolean") return false;
+  if (typeof s.savedAt !== "number") return false;
+  if (!Array.isArray(s.answers) || !s.answers.every((a) => typeof a === "number" && Number.isInteger(a))) return false;
+  return Array.isArray(s.questionIds) && s.questionIds.every((id) => typeof id === "number");
+}
+
+/** The slice of the server's question shape this page renders against. */
+interface QuizQuestionView {
+  id: number;
+  question: string;
+  options: string[];
+}
+
+/** Read the mirror and keep it only if it still matches the loaded bank
+ * (same ids, every answer within its options); the step is clamped to the
+ * answers actually given. Anything else restores as a fresh quiz. */
+function readSession(questions: QuizQuestionView[]): SavedSession {
+  const saved = readStoredJSON(SESSION_KEY, isSavedSession, EMPTY_SESSION, window.sessionStorage);
+  if (saved.answers.length === 0) return EMPTY_SESSION;
+  const consistent =
+    saved.questionIds.length === questions.length &&
+    saved.questionIds.every((id, i) => id === questions[i].id) &&
+    saved.answers.length <= questions.length &&
+    saved.answers.every((a, i) => a >= 0 && a < questions[i].options.length);
+  if (!consistent) return EMPTY_SESSION;
+  return {
+    ...saved,
+    step: Math.min(Math.max(0, Math.trunc(saved.step)), saved.answers.length, questions.length - 1),
+    showResults: saved.showResults && saved.answers.length === questions.length,
+  };
+}
 
 export default function TheologyQuiz() {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [answers, setAnswers] = useState<number[]>([]);
-  const [showResults, setShowResults] = useState(false);
+  const questionsQuery = trpc.quiz.getQuestions.useQuery();
+
+  const questions = questionsQuery.data || [];
+  const isLoading = questionsQuery.isLoading;
+
+  if (isLoading || (questionsQuery.isError && questionsQuery.isFetching)) {
+    return (
+      <>
+        <MinimalNav />
+        <div style={{ minHeight: "60vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--paper)" }}>
+          <div style={{ textAlign: "center" }}>
+            <div style={{ width: "40px", height: "40px", border: "3px solid var(--bone-muted)", borderTop: "3px solid var(--mustard)", borderRadius: "50%", animation: "spin 1s linear infinite", margin: "0 auto 16px" }} />
+            <p style={{ color: "var(--ink3)", fontFamily: "var(--F)" }}>Loading your quiz…</p>
+          </div>
+        </div>
+        <Footer />
+      </>
+    );
+  }
+
+  if (questionsQuery.isError) {
+    return (
+      <>
+        <MinimalNav />
+        <div style={{ minHeight: "60vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--paper)" }}>
+          <LoadFailed what="The quiz" onRetry={() => questionsQuery.refetch()} backHref="/tools" backLabel="Back to the tools" />
+        </div>
+        <Footer />
+      </>
+    );
+  }
+
+  return <TheologyQuizBody questions={questions} />;
+}
+
+/** The quiz itself — mounted only once the questions have loaded, so the
+ * session mirror can be restored (and checked against the bank) in the
+ * state initializers, silently, before first paint. */
+function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
+  const [restored] = useState(() => readSession(questions));
+  const [currentQuestion, setCurrentQuestion] = useState(restored.step);
+  const [answers, setAnswers] = useState<number[]>(restored.answers);
+  const [showResults, setShowResults] = useState(restored.showResults);
   const [hoveredOption, setHoveredOption] = useState<number | null>(null);
 
-  const questionsQuery = trpc.quiz.getQuestions.useQuery();
   const recommendationsQuery = trpc.quiz.getRecommendations.useQuery(
     { answers },
     { enabled: showResults && answers.length > 0 }
   );
 
-  const questions = questionsQuery.data || [];
-  const isLoading = questionsQuery.isLoading;
+  // Mirror the state on every change, with the question ids the answers were
+  // given against. A pristine state writes nothing, which keeps "Retake Quiz"
+  // genuinely clean; a failed write is fine — the quiz simply proceeds
+  // unpersisted.
+  useEffect(() => {
+    if (answers.length === 0 && currentQuestion === 0 && !showResults) return;
+    writeStoredJSON(
+      SESSION_KEY,
+      {
+        answers,
+        step: currentQuestion,
+        showResults,
+        questionIds: questions.map((q) => q.id),
+        savedAt: Date.now(),
+      },
+      window.sessionStorage
+    );
+  }, [answers, currentQuestion, showResults, questions]);
 
   const handleAnswer = (optionIndex: number) => {
     const newAnswers = [...answers];
@@ -37,6 +154,7 @@ export default function TheologyQuiz() {
     setAnswers([]);
     setShowResults(false);
     setHoveredOption(null);
+    removeStoredJSON(SESSION_KEY, window.sessionStorage);
   };
 
   const progress = useMemo(() => {
@@ -44,26 +162,11 @@ export default function TheologyQuiz() {
     return Math.round(((currentQuestion + 1) / questions.length) * 100);
   }, [currentQuestion, questions.length]);
 
-  if (isLoading) {
-    return (
-      <>
-        <MinimalNav />
-        <div style={{ minHeight: "60vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--paper)" }}>
-          <div style={{ textAlign: "center" }}>
-            <div style={{ width: "40px", height: "40px", border: "3px solid var(--bone-muted)", borderTop: "3px solid var(--mustard)", borderRadius: "50%", animation: "spin 1s linear infinite", margin: "0 auto 16px" }} />
-            <p style={{ color: "var(--ink3)", fontFamily: "var(--F)" }}>Loading your quiz...</p>
-          </div>
-        </div>
-        <Footer />
-      </>
-    );
-  }
-
   return (
     <>
       <SEOMeta
         title="Theological Position Quiz"
-        description="Discover which of LiveWell's tracks lands closest to where your faith is right now. Take the free quiz and get personalized article recommendations."
+        description="A free quiz: ten questions about what you actually believe, about four minutes, and then the essays that meet you where your answers say you are."
         keywords="theology quiz, faith assessment, James Bell, theological position"
         url={`${SITE_URL}/quiz`}
       />
@@ -76,8 +179,11 @@ export default function TheologyQuiz() {
           <h1 style={{ fontSize: "clamp(32px, 5vw, 48px)", fontWeight: "bold", color: "var(--paper)", fontFamily: "var(--F)", marginBottom: "16px" }}>
             Where Do You Stand Theologically?
           </h1>
-          <p style={{ fontSize: "16px", color: "rgba(255,255,255,0.75)", lineHeight: "1.7" }}>
-            Discover which of LiveWell's tracks lands closest to where your faith is right now. 10 questions. Personalized reading recommendations.
+          <p style={{ fontSize: "16px", color: "rgba(255,255,255,0.75)", lineHeight: "1.7", margin: "0 0 12px" }}>
+            Answer plainly. At the end: the essays that meet you where your answers say you are.
+          </p>
+          <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.55)", lineHeight: "1.7", margin: 0 }}>
+            Ten questions. About four minutes. No grade.
           </p>
         </div>
       </section>
@@ -158,8 +264,28 @@ export default function TheologyQuiz() {
               <div style={{ textAlign: "center", marginBottom: "40px" }}>
                 <div style={{ fontSize: "48px", marginBottom: "16px" }}>✓</div>
                 <h2 style={{ fontSize: "32px", fontWeight: "bold", color: "var(--ink)", fontFamily: "var(--F)", marginBottom: "8px" }}>Your Results</h2>
-                <p style={{ color: "var(--ink3)", fontSize: "16px" }}>Here's what your answers reveal about your theological inclinations.</p>
+                <p style={{ color: "var(--ink3)", fontSize: "16px" }}>Your answers point somewhere. Start reading there.</p>
               </div>
+
+              {recommendationsQuery.isLoading && (
+                <p style={{ textAlign: "center", color: "var(--ink3)", fontSize: "15px", lineHeight: "1.7", margin: "0 0 40px" }}>
+                  Reading your answers…
+                </p>
+              )}
+
+              {recommendationsQuery.isError && (
+                <div style={{ textAlign: "center", marginBottom: "40px" }}>
+                  <p style={{ color: "var(--ink3)", fontSize: "15px", lineHeight: "1.7", margin: "0 0 16px" }}>
+                    Your results didn't load — a connection problem, not your answers. Your answers are safe.
+                  </p>
+                  <button
+                    onClick={() => recommendationsQuery.refetch()}
+                    style={{ padding: "12px 24px", border: "2px solid var(--mustard)", background: "white", color: "var(--gold)", borderRadius: "4px", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}
+                  >
+                    Try again
+                  </button>
+                </div>
+              )}
 
               {recommendationsQuery.data && (
                 <>
@@ -208,6 +334,16 @@ export default function TheologyQuiz() {
               )}
 
               <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+                <button
+                  onClick={() => {
+                    // Non-destructive: back to the questions with every answer intact.
+                    setShowResults(false);
+                    setCurrentQuestion(0);
+                  }}
+                  style={{ padding: "12px 24px", border: "2px solid var(--mustard)", background: "white", color: "var(--gold)", borderRadius: "4px", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}
+                >
+                  Change my answers
+                </button>
                 <button
                   onClick={handleReset}
                   style={{ padding: "12px 24px", border: "2px solid var(--mustard)", background: "white", color: "var(--gold)", borderRadius: "4px", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}

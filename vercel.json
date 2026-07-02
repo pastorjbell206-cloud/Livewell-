@@ -1,11 +1,30 @@
 {
     "buildCommand": "rm -rf node_modules/.vite .vite dist && pnpm run pdfs && pnpm run manuals && pnpm run og && pnpm run howtos && pnpm run wisdom && pnpm run sitemap && pnpm run build && pnpm run prerender",
     "outputDirectory": "dist/public",
+    "trailingSlash": false,
     "installCommand": "pnpm install --no-frozen-lockfile",
     "functions": {
-        "api/index.ts": { "maxDuration": 60, "includeFiles": "api/_ebooks/**" }
+        "api/index.ts": { "maxDuration": 60, "includeFiles": "api/{_ebooks,_data}/**" }
     },
     "headers": [
+          {
+                  "source": "/assets/(.*)",
+                  "headers": [
+                            { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+                  ]
+          },
+          {
+                  "source": "/(books|downloads|og-images|covers)/(.*)",
+                  "headers": [
+                            { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }
+                  ]
+          },
+          {
+                  "source": "/(.*)\\.(json|md)",
+                  "headers": [
+                            { "key": "Cache-Control", "value": "public, max-age=300, stale-while-revalidate=86400" }
+                  ]
+          },
           {
                   "source": "/(.*)",
                   "headers": [
@@ -25,6 +44,9 @@
           { "source": "/books-store", "destination": "/books", "permanent": true },
           { "source": "/quiz", "destination": "/tools/theology-quiz", "permanent": true },
           { "source": "/resources-for-pastors", "destination": "/for-pastors", "permanent": true },
+          { "source": "/after-christendom", "destination": "/babylon", "permanent": true },
+          { "source": "/after-christendom/thank-you", "destination": "/babylon", "permanent": true },
+          { "source": "/lead-magnets/:magnetId", "destination": "/resources", "permanent": false },
           {
                   "source": "/(.*)",
                   "has": [{ "type": "host", "value": "livewellbyjamesbell.co" }],

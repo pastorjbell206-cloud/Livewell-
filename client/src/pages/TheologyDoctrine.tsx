@@ -37,7 +37,7 @@ export default function TheologyDoctrine() {
   useEffect(() => {
     if (!slug) return;
     setDoc(null); setMissing(false);
-    fetch(`/theology/${slug}.json`, { cache: "no-store" })
+    fetch(`/theology/${slug}.json`)
       .then((r) => (r.ok ? r.json() : Promise.reject()))
       .then((d) => setDoc(d))
       .catch(() => setMissing(true));

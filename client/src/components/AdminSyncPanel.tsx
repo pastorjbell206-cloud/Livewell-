@@ -229,7 +229,7 @@ export function AdminSyncPanel() {
             {syncing === "substack" ? (
               <>
                 <RefreshCw size={16} className="animate-spin" />
-                Syncing...
+                Syncing…
               </>
             ) : (
               <>
@@ -277,7 +277,7 @@ export function AdminSyncPanel() {
             {syncing === "pastors" ? (
               <>
                 <RefreshCw size={16} className="animate-spin" />
-                Syncing...
+                Syncing…
               </>
             ) : (
               <>
@@ -303,7 +303,7 @@ export function AdminSyncPanel() {
         {syncing === "all" ? (
           <>
             <RefreshCw size={18} className="animate-spin" />
-            Syncing All Feeds...
+            Syncing All Feeds…
           </>
         ) : (
           <>

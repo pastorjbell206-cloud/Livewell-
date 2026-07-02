@@ -14,6 +14,7 @@ import superjson from "superjson";
 // serves the library. Regenerate with `node scripts/build-static-library.mjs`.
 import STATIC_LIBRARY from "./static-library.generated.js";
 import { readFileSync } from "node:fs";
+import { readFile } from "node:fs/promises";
 import Stripe from "stripe";
 
 // ---------------------------------------------------------------------------
@@ -85,10 +86,43 @@ function authed(req: VercelRequest): boolean {
   // Read the key ONLY from the x-seed-key header so it never leaks into URLs/logs.
   const key = (req.headers["x-seed-key"] as string) || "";
   if (!key) return false;
-  // Prefer a dedicated SEED_KEY when set; otherwise fall back to JWT_SECRET.
-  const expected = process.env.SEED_KEY || process.env.JWT_SECRET || "";
+  // Dedicated SEED_KEY only — no JWT_SECRET fallback. The session-signing
+  // secret and the seed/admin-endpoint key must not be the same credential:
+  // one leaked JWT_SECRET used to unlock both session forgery AND every
+  // seed/inventory endpoint. If SEED_KEY is unset, header auth fails closed
+  // (admin-session auth on these endpoints still works via authedSession).
+  const expected = process.env.SEED_KEY || "";
   if (!expected) return false;
   return constantTimeEqual(key, expected);
+}
+
+// ---------------------------------------------------------------------------
+// In-memory sliding-window rate limiter. Scope: one warm serverless instance
+// — enough to blunt naive brute force on the single admin password and spam
+// bursts on the public write endpoints, which today have no protection at
+// all. A durable cross-instance store (e.g. Upstash Redis via env) is the
+// documented upgrade path (roadmap QW-23 remainder / owner provisioning).
+// ---------------------------------------------------------------------------
+const rlBuckets = new Map<string, number[]>();
+function rateLimited(req: VercelRequest, bucket: string, limit: number, windowMs: number): boolean {
+  const ip = (String(req.headers["x-forwarded-for"] || "").split(",")[0].trim()) || "unknown";
+  const key = `${bucket}:${ip}`;
+  const now = Date.now();
+  const hits = (rlBuckets.get(key) || []).filter((t) => now - t < windowMs);
+  if (hits.length >= limit) {
+    rlBuckets.set(key, hits);
+    return true;
+  }
+  hits.push(now);
+  rlBuckets.set(key, hits);
+  if (rlBuckets.size > 5000) {
+    // Bounded memory: drop the oldest tracked keys wholesale.
+    for (const k of rlBuckets.keys()) {
+      rlBuckets.delete(k);
+      if (rlBuckets.size <= 2500) break;
+    }
+  }
+  return false;
 }
 
 function getAllowedOrigin(req: VercelRequest): string {
@@ -386,6 +420,11 @@ async function seedPostChristianArticles(req: VercelRequest, res: VercelResponse
 // the roadmap "Published" count. purchaseUrl points at the funnel page; the
 // authored grid -> BookDetail -> "get the ebook" button routes there.
 const EBOOK_CATALOG: Array<{ slug: string; title: string; description: string; cover: string; url: string }> = [
+  { slug: "babylon", title: "Babylon", description: "The part of Jeremiah's letter we never read. Not how to take the country back, and not how to make peace with losing it. How to build, plant, and seek the good of the city in Christian exile.", cover: "/books/babylon.svg", url: "/babylon" },
+  { slug: "how-to-read-the-bible", title: "How to Read the Bible", description: "Reading Scripture without bending it to what you already believe, from proof-texting to the passages we skip.", cover: "/books/how-to-read-the-bible.svg", url: "/how-to-read-the-bible" },
+  { slug: "be-true-to-yourself", title: "Be True to Yourself", description: "The age's one commandment, named as the lie it is, and the older freedom underneath it: you are not your own.", cover: "/books/be-true-to-yourself.svg", url: "/be-true-to-yourself" },
+  { slug: "what-belongs-to-the-poor", title: "What Belongs to the Poor", description: "What the ancient church knew about wealth and justice, recovered from Basil and the Fathers, who called giving justice, not charity.", cover: "/books/what-belongs-to-the-poor.svg", url: "/what-belongs-to-the-poor" },
+  { slug: "rule-of-life", title: "Rule of Life", description: "The ancient practices the church used to form durable souls, recovered for an age engineered to deform us.", cover: "/books/rule-of-life.svg", url: "/rule-of-life" },
   { slug: "sermon-on-the-mount-as-politics", title: "The Sermon on the Mount as Politics", description: "The Sermon read as the constitution of the kingdom, not private inner life. Power, money, enemies, truth, and the poor.", cover: "/books/sermon-on-the-mount-as-politics.svg", url: "/sermon-on-the-mount-as-politics" },
   { slug: "prophetic-justice-101", title: "Prophetic Justice 101", description: "Mishpat, tsedaqah, Micah 6:8, and what the church owes its neighborhood. The prophetic tradition recovered, never partisan.", cover: "/books/prophetic-justice-101.svg", url: "/prophetic-justice-101" },
   { slug: "marriage-in-ministry", title: "Marriage in Ministry", description: "Protecting the covenant when the church demands everything, and the pressures the parsonage puts on a marriage.", cover: "/books/marriage-in-ministry.svg", url: "/marriage-in-ministry" },
@@ -393,7 +432,6 @@ const EBOOK_CATALOG: Array<{ slug: string; title: string; description: string; c
   { slug: "healwell", title: "HealWell: 52 Weeks in Costly Hope", description: "A year of honest devotionals for tired believers, written from inside the wound and pointed toward a costly hope.", cover: "/books/healwell.svg", url: "/healwell" },
   { slug: "why-not-what", title: "Why Not What", description: "How theology starts with the right question. Why before what, the order the whole Bible insists on.", cover: "/books/why-not-what.svg", url: "/why-not-what" },
   { slug: "covenant", title: "Covenant", description: "Why marriage is a promise, not a deal. The culture sold us a contract and called it romance.", cover: "/books/covenant.svg", url: "/covenant" },
-  { slug: "after-christendom", title: "After Christendom", description: "How to follow Jesus now that the culture has stopped pretending to be Christian. What is dying is not the faith but Christendom.", cover: "/books/after-christendom.svg", url: "/after-christendom" },
   { slug: "alone-in-a-crowded-church", title: "Alone in a Crowded Church", description: "Why pastors burn out in silence, and how brotherhood brings them back.", cover: "/books/alone-in-a-crowded-church.svg", url: "/alone-in-a-crowded-church" },
   { slug: "consider-the-birds", title: "Consider the Birds", description: "What the Bible says about anxiety, and the peace Christ gives instead.", cover: "/books/consider-the-birds.jpg", url: "/consider-the-birds" },
   { slug: "where-your-treasure-is", title: "Where Your Treasure Is", description: "What the Bible says about money, and the heart it means to free.", cover: "/books/where-your-treasure-is.jpg", url: "/where-your-treasure-is" },
@@ -815,6 +853,7 @@ async function substackRss(req: VercelRequest, res: VercelResponse) {
 }
 
 async function subscribe(req: VercelRequest, res: VercelResponse) {
+  if (rateLimited(req, "subscribe", 10, 60 * 1000)) return json(res, 429, { error: "Too many requests. Give it a minute and try again." });
   try {
     const body = await readBody(req);
     const email = String(body.email || "").trim().toLowerCase();
@@ -834,6 +873,7 @@ async function subscribe(req: VercelRequest, res: VercelResponse) {
 }
 
 async function pcnSignup(req: VercelRequest, res: VercelResponse) {
+  if (rateLimited(req, "pcn", 10, 60 * 1000)) return json(res, 429, { error: "Too many requests. Give it a minute and try again." });
   try {
     const body = await readBody(req);
     const email = String(body.email || "").trim().toLowerCase();
@@ -2136,6 +2176,11 @@ async function authLogin(req: VercelRequest, res: VercelResponse) {
     res.status(405).json({ error: "method not allowed" });
     return;
   }
+  // Single admin password; previously unlimited attempts.
+  if (rateLimited(req, "login", 5, 10 * 60 * 1000)) {
+    res.status(429).json({ error: "Too many attempts. Try again in a few minutes." });
+    return;
+  }
   try {
     const body = await readBody(req);
     const password = typeof body?.password === "string" ? body.password : "";
@@ -2447,6 +2492,7 @@ async function adminStatus(req: VercelRequest, res: VercelResponse) {
 }
 
 async function contactForm(req: VercelRequest, res: VercelResponse) {
+  if (rateLimited(req, "contact", 10, 60 * 1000)) return json(res, 429, { error: "Too many requests. Give it a minute and try again." });
   if (req.method !== "POST") return json(res, 405, { error: "method not allowed" });
   try {
     const body = await readBody(req);
@@ -2455,6 +2501,9 @@ async function contactForm(req: VercelRequest, res: VercelResponse) {
     const subject = String(body?.subject || "").trim();
     const message = String(body?.message || "").trim();
     if (!email || !message) return json(res, 400, { error: "Email and message are required" });
+    // The save IS the product here: the site tells people a person reads
+    // these. Returning ok:true after a failed insert made every client
+    // error state unreachable and silently dropped the message.
     try {
       await withConn(async (c) => {
         await c.execute(
@@ -2472,10 +2521,56 @@ async function contactForm(req: VercelRequest, res: VercelResponse) {
           [name || null, email, subject || null, message]
         );
       });
-    } catch { /* DB save is best-effort */ }
-    json(res, 200, { ok: true, message: "Message received. Thank you!" });
+    } catch (dbErr: any) {
+      console.error("[contact] save failed:", dbErr?.message || dbErr);
+      return json(res, 500, { ok: false, error: "We couldn't save your message. Please try again." });
+    }
+    json(res, 200, { ok: true, message: "Message received. Thank you." });
   } catch (e: any) {
-    json(res, 500, { ok: false, error: String(e?.message || e) });
+    console.error("[contact]", e?.message || e);
+    json(res, 500, { ok: false, error: "We couldn't save your message. Please try again." });
+  }
+}
+
+// Admin-only datasets moved out of the public dist (QW-29): 4.3 MB of
+// pre-publication draft bodies (with unverified [cite] stubs) and the article
+// library were previously served to anyone at a public URL.
+const ADMIN_DATASETS: Record<string, URL> = {
+  "article-bodies": new URL("./_data/admin-article-bodies.json", import.meta.url),
+  "article-library": new URL("./_data/article-library.json", import.meta.url),
+  "draft-essays": new URL("./_data/draft-essays.json", import.meta.url),
+};
+async function adminDataset(req: VercelRequest, res: VercelResponse, key: string) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  const file = ADMIN_DATASETS[key];
+  if (!file) return json(res, 404, { error: "unknown dataset" });
+  try {
+    const raw = await readFile(file, "utf8");
+    res.setHeader("Content-Type", "application/json; charset=utf-8");
+    res.setHeader("Cache-Control", "no-store");
+    return res.status(200).send(raw);
+  } catch (e: any) {
+    console.error("[admin:dataset]", key, e?.message || e);
+    return json(res, 500, { error: "Could not load dataset." });
+  }
+}
+
+// Minimal admin reader for the contact inbox — until this existed, nothing
+// anywhere read contact_messages, so every submission (including assessment
+// results people asked to keep on file) went into a dead-letter table.
+async function adminContactMessages(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  try {
+    const rows = await withConn(async (c) => {
+      const [r]: any = await c.query(
+        "SELECT id, name, email, subject, message, createdAt FROM contact_messages ORDER BY createdAt DESC LIMIT 100"
+      );
+      return r;
+    });
+    return json(res, 200, { ok: true, messages: rows });
+  } catch (e: any) {
+    console.error("[contact:list]", e?.message || e);
+    return json(res, 500, { ok: false, error: "Could not load messages." });
   }
 }
 
@@ -2586,17 +2681,41 @@ const EBOOKS: Record<string, EbookConfig> = {
     file: new URL("./_ebooks/alone-in-a-crowded-church.pdf", import.meta.url),
     filename: "Alone-in-a-Crowded-Church.pdf",
   },
-  "after-christendom": {
-    title: "After Christendom",
-    priceEnv: "STRIPE_PRICE_AFTER_CHRISTENDOM",
-    file: new URL("./_ebooks/after-christendom.pdf", import.meta.url),
-    filename: "After-Christendom.pdf",
-  },
   "covenant": {
     title: "Covenant",
     priceEnv: "STRIPE_PRICE_COVENANT",
     file: new URL("./_ebooks/covenant.pdf", import.meta.url),
     filename: "Covenant.pdf",
+  },
+  "babylon": {
+    title: "Babylon",
+    priceEnv: "STRIPE_PRICE_BABYLON",
+    file: new URL("./_ebooks/babylon.pdf", import.meta.url),
+    filename: "Babylon.pdf",
+  },
+  "how-to-read-the-bible": {
+    title: "How to Read the Bible",
+    priceEnv: "STRIPE_PRICE_HOW_TO_READ_THE_BIBLE",
+    file: new URL("./_ebooks/how-to-read-the-bible.pdf", import.meta.url),
+    filename: "How-to-Read-the-Bible.pdf",
+  },
+  "be-true-to-yourself": {
+    title: "Be True to Yourself",
+    priceEnv: "STRIPE_PRICE_BE_TRUE_TO_YOURSELF",
+    file: new URL("./_ebooks/be-true-to-yourself.pdf", import.meta.url),
+    filename: "Be-True-to-Yourself.pdf",
+  },
+  "what-belongs-to-the-poor": {
+    title: "What Belongs to the Poor",
+    priceEnv: "STRIPE_PRICE_WHAT_BELONGS_TO_THE_POOR",
+    file: new URL("./_ebooks/what-belongs-to-the-poor.pdf", import.meta.url),
+    filename: "What-Belongs-to-the-Poor.pdf",
+  },
+  "rule-of-life": {
+    title: "Rule of Life",
+    priceEnv: "STRIPE_PRICE_RULE_OF_LIFE",
+    file: new URL("./_ebooks/rule-of-life.pdf", import.meta.url),
+    filename: "Rule-of-Life.pdf",
   },
   "why-not-what": {
     title: "Why Not What",
@@ -2727,7 +2846,10 @@ async function ebookCheckout(req: VercelRequest, res: VercelResponse) {
     });
     return json(res, 200, { url: session.url });
   } catch (e: any) {
-    return json(res, 500, { error: String(e?.message || e) });
+    // Log the real error server-side; never leak raw Stripe internals to the
+    // buyer-facing button (key names, decline plumbing, stack fragments).
+    console.error("[checkout]", e?.message || e);
+    return json(res, 500, { error: "Checkout is unavailable right now. Please try again in a few minutes." });
   }
 }
 
@@ -2770,6 +2892,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/health" || url.startsWith("/api/health")) return health(req, res);
     if (url === "/api/rss.xml" || url === "/rss.xml" || url === "/feed" || url === "/feed.xml") return rssLiveWell(req, res);
     if (url === "/api/admin/status") return adminStatus(req, res);
+    if (url === "/api/admin/contact-messages") return adminContactMessages(req, res);
+    if (url === "/api/admin/article-bodies") return adminDataset(req, res, "article-bodies");
+    if (url === "/api/admin/article-library") return adminDataset(req, res, "article-library");
+    if (url === "/api/admin/draft-essays") return adminDataset(req, res, "draft-essays");
     if (url === "/api/admin/organize-articles") return organizeArticles(req, res);
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);

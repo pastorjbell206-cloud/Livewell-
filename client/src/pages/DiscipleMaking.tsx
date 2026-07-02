@@ -103,7 +103,7 @@ export default function DiscipleMaking() {
             Jesus did not run a program. He made disciples over meals, in homes, with ordinary people, by sharing his actual life with a few of them over time. The church turned that into a class for professionals, and we have been short of disciples ever since.
           </p>
           <p style={{ ...heroP, marginBottom: "26px" }}>
-            You do not need a degree, a gift you do not have, or a building. You need a table, a meal, an open chair, and the willingness to keep showing up. This is the way back, simple and at home, and it is the way the church first turned the world upside down.
+            You do not need a degree, a gift you do not have, or a building. You need a table, a meal, an open chair, and the willingness to keep coming back to it. This is the way back, simple and at home, and it is the way the church first turned the world upside down.
           </p>
           <Link href="/tools/discipleship-table" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal)", background: "var(--mustard)", padding: "13px 22px", textDecoration: "none" }}>
             Start a table

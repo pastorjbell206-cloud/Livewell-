@@ -119,7 +119,7 @@ export default function BooksStore() {
                 <input
                   type="email"
                   aria-label="Email address"
-                  placeholder="Your Email"
+                  placeholder="you@example.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full px-4 py-2 border rounded"
@@ -161,7 +161,9 @@ export default function BooksStore() {
                     {book.coverImage && (
                       <div className="relative w-full" style={{ aspectRatio: "3/4" }}>
                         <img
-                          src={book.coverImage}
+                          width={400}
+                height={600}
+                src={book.coverImage}
                           alt={book.title}
                           className="w-full h-full object-cover"
                           loading="lazy"
@@ -241,7 +243,9 @@ export default function BooksStore() {
                     {book.coverImage && (
                       <div className="relative w-full" style={{ aspectRatio: "3/4" }}>
                         <img
-                          src={book.coverImage}
+                          width={400}
+                height={600}
+                src={book.coverImage}
                           alt={book.title}
                           className="w-full h-full object-cover"
                           loading="lazy"

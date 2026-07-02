@@ -7,7 +7,7 @@
  */
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
-import { Streamdown } from "streamdown";
+import { Markdown } from "@/components/Markdown";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
@@ -33,7 +33,7 @@ export default function WholeBibleSermons() {
   const bookId = params?.bookId;
 
   useEffect(() => {
-    fetch("/leadership/whole-bible-sermons.json", { cache: "no-store" })
+    fetch("/leadership/whole-bible-sermons.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setData(d))
       .catch(() => {});
@@ -43,7 +43,7 @@ export default function WholeBibleSermons() {
   useEffect(() => {
     setFullSermons({});
     if (!bookId) return;
-    fetch(`/leadership/sermons/${bookId}.json`, { cache: "no-store" })
+    fetch(`/leadership/sermons/${bookId}.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((arr) => {
         if (!Array.isArray(arr)) return;
@@ -134,7 +134,7 @@ export default function WholeBibleSermons() {
                                 Read the full sermon ↓
                               </summary>
                               <div className="article-body prose-section" style={{ margin: "12px 0 4px", paddingLeft: "16px", borderLeft: "2px solid var(--border)" }}>
-                                <Streamdown>{fullSermons[String(sermon.n)]}</Streamdown>
+                                <Markdown>{fullSermons[String(sermon.n)]}</Markdown>
                               </div>
                             </details>
                           )}

@@ -19,7 +19,7 @@ const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 export default function NationEssay({ slug }: { slug: string }) {
   const [e, setE] = useState<Essay | null>(null);
   useEffect(() => {
-    fetch(`/nation/${slug}.json`, { cache: "no-store" })
+    fetch(`/nation/${slug}.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setE(d))
       .catch(() => {});

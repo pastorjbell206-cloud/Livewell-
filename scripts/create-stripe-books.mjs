@@ -45,16 +45,40 @@ const BOOKS = [
     env: "STRIPE_PRICE_WHERE_YOUR_TREASURE_IS",
   },
   {
-    slug: "after-christendom",
-    title: "After Christendom",
-    subtitle: "How to Follow Jesus in Post-Christian America",
-    env: "STRIPE_PRICE_AFTER_CHRISTENDOM",
-  },
-  {
     slug: "covenant",
     title: "Covenant",
     subtitle: "Why Marriage Is a Promise, Not a Deal",
     env: "STRIPE_PRICE_COVENANT",
+  },
+  {
+    slug: "babylon",
+    title: "Babylon",
+    subtitle: "How to Live When America Stops Being Christian",
+    env: "STRIPE_PRICE_BABYLON",
+  },
+  {
+    slug: "how-to-read-the-bible",
+    title: "How to Read the Bible",
+    subtitle: "Without Making It Say What You Already Believe",
+    env: "STRIPE_PRICE_HOW_TO_READ_THE_BIBLE",
+  },
+  {
+    slug: "be-true-to-yourself",
+    title: "Be True to Yourself",
+    subtitle: "The Lie That Ate the World",
+    env: "STRIPE_PRICE_BE_TRUE_TO_YOURSELF",
+  },
+  {
+    slug: "what-belongs-to-the-poor",
+    title: "What Belongs to the Poor",
+    subtitle: "What the Ancient Church Knew About Wealth and Justice",
+    env: "STRIPE_PRICE_WHAT_BELONGS_TO_THE_POOR",
+  },
+  {
+    slug: "rule-of-life",
+    title: "Rule of Life",
+    subtitle: "The Ancient Art of Forming a Soul in an Age Built to Deform It",
+    env: "STRIPE_PRICE_RULE_OF_LIFE",
   },
   {
     slug: "why-not-what",

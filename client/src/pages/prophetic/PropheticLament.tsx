@@ -25,7 +25,7 @@ const GROUPS: { type: Prayer["type"]; label: string; note: string }[] = [
 export default function PropheticLament() {
   const [data, setData] = useState<Data | null>(null);
   useEffect(() => {
-    fetch("/prophetic/lament.json", { cache: "no-store" })
+    fetch("/prophetic/lament.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setData(d))
       .catch(() => {});

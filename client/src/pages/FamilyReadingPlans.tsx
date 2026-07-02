@@ -17,7 +17,7 @@ export default function FamilyReadingPlans() {
   const [open, setOpen] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/family-reading-plans.json", { cache: "no-store" })
+    fetch("/family-reading-plans.json")
       .then((r) => (r.ok ? r.json() : []))
       .then((d) => Array.isArray(d) && setPlans(d))
       .catch(() => {});

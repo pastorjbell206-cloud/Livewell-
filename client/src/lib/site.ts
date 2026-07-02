@@ -5,6 +5,12 @@ export const SITE_URL = "https://www.livewellbyjamesbell.co";
 export const SITE_NAME = "LiveWell by James Bell";
 export const AUTHOR_NAME = "James Bell";
 
+// The canonical author bio for book/funnel pages. One sentence pair, one
+// register — every page that carries a bio renders this constant, so the
+// same man appears on every surface.
+export const AUTHOR_BIO =
+  "James Bell is the Lead Pastor of First Baptist Church of Fenton, founder of the Pastors Connection Network, and the author of more than twenty books. He came to faith from atheism and writes for the reader whose faith has outgrown the answers they were given.";
+
 // Substack — the newsletter channel (CLAUDE.md §Strategic Reminders).
 // The codebase previously carried three handles (`jamesbell333289`,
 // `jamesbell.substack.com`, `livewellbyjamesbell.substack.com`); all RSS/feed

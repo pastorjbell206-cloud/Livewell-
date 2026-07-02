@@ -1,10 +1,13 @@
 /**
- * SampleChapterForm — email-gated first-chapter download on book pages.
+ * SampleChapterForm — email-gated sample on book pages.
  *
  * The single highest-converting book-to-email mechanic in publishing
  * (Comer, Brené, Crouch all do it; almost no Christian author does
- * systematically). Posts to the same subscribers.subscribe mutation; the
- * server side wires the right welcome sequence based on the book slug.
+ * systematically). Posts to the subscribers.subscribe mutation, then
+ * reveals the sample INLINE — either a downloadable file (sampleUrl) or
+ * the book's stored excerpt (sampleText). Nothing is ever "emailed":
+ * no sender exists in this stack, so the copy promises only what
+ * happens on this screen.
  */
 import { useState } from "react";
 import { Download } from "lucide-react";
@@ -15,14 +18,17 @@ import { useToast } from "@/contexts/ToastContext";
 interface SampleChapterFormProps {
   bookTitle: string;
   bookSlug: string;
-  /** If known, used to immediately reveal the download. Otherwise emailed. */
+  /** If set, the reveal offers this file for download. */
   sampleUrl?: string | null;
+  /** If set (and no sampleUrl), the reveal shows this excerpt inline. */
+  sampleText?: string | null;
 }
 
 export function SampleChapterForm({
   bookTitle,
   bookSlug,
   sampleUrl,
+  sampleText,
 }: SampleChapterFormProps) {
   const [email, setEmail] = useState("");
   const [isPastor, setIsPastor] = useState(false);
@@ -32,13 +38,13 @@ export function SampleChapterForm({
 
   const subscribe = trpc.subscribers.subscribe.useMutation({
     onSuccess: () => {
-      if (sampleUrl) {
+      if (sampleUrl || sampleText) {
         setRevealed(true);
       } else {
         addToast?.({
           type: "success",
-          title: "Sample chapter on the way",
-          message: "Check your inbox in the next few minutes.",
+          title: "You're on the list",
+          message: "No online sample for this one yet. It will appear here when it's up.",
         });
         setEmail("");
       }
@@ -55,10 +61,11 @@ export function SampleChapterForm({
       }
     },
     onError: err => {
+      console.error(err);
       addToast?.({
         type: "error",
         title: "Request failed",
-        message: err.message || "Please try again later.",
+        message: "That didn't go through. Check the email address and try once more.",
       });
     },
   });
@@ -69,7 +76,7 @@ export function SampleChapterForm({
     subscribe.mutate({ email });
   };
 
-  if (revealed && sampleUrl) {
+  if (revealed && (sampleUrl || sampleText)) {
     return (
       <div
         style={{
@@ -101,28 +108,43 @@ export function SampleChapterForm({
             marginBottom: "16px",
           }}
         >
-          We'll also email it to you. Welcome to the list.
+          You're on the essay list as well. Welcome.
         </p>
-        <a
-          href={sampleUrl}
-          download
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "8px",
-            background: "var(--ink)",
-            color: "var(--bone)",
-            padding: "12px 22px",
-            fontFamily: "var(--U)",
-            fontSize: "13px",
-            fontWeight: 600,
-            borderRadius: "var(--radius-sm)",
-            textDecoration: "none",
-          }}
-        >
-          <Download size={14} aria-hidden />
-          Download the sample chapter
-        </a>
+        {sampleUrl ? (
+          <a
+            href={sampleUrl}
+            download
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "8px",
+              background: "var(--ink)",
+              color: "var(--bone)",
+              padding: "12px 22px",
+              fontFamily: "var(--U)",
+              fontSize: "13px",
+              fontWeight: 600,
+              borderRadius: "var(--radius-sm)",
+              textDecoration: "none",
+            }}
+          >
+            <Download size={14} aria-hidden />
+            Download the sample chapter
+          </a>
+        ) : (
+          <div
+            style={{
+              fontFamily: "var(--B)",
+              fontSize: "16px",
+              lineHeight: 1.75,
+              color: "var(--ink)",
+              whiteSpace: "pre-wrap",
+              maxWidth: "68ch",
+            }}
+          >
+            {sampleText}
+          </div>
+        )}
       </div>
     );
   }
@@ -147,7 +169,7 @@ export function SampleChapterForm({
           letterSpacing: "-0.01em",
         }}
       >
-        Read the first chapter free
+        Read the opening free
       </h3>
       <p
         style={{
@@ -159,8 +181,9 @@ export function SampleChapterForm({
           maxWidth: "55ch",
         }}
       >
-        First ~20 pages of <em>{bookTitle}</em>, delivered as a PDF. No spam
-        — you get the chapter, you decide if you want more.
+        Leave your email and the opening of <em>{bookTitle}</em> unlocks right
+        here. You'll also get the weekly essay. No spam — you read the sample,
+        you decide if you want more.
       </p>
       <form
         onSubmit={handleSubmit}
@@ -170,7 +193,7 @@ export function SampleChapterForm({
           <input
             type="email"
             required
-            placeholder="your@email.com"
+            placeholder="you@example.com"
             value={email}
             onChange={e => setEmail(e.target.value)}
             aria-label="Email address"
@@ -201,7 +224,7 @@ export function SampleChapterForm({
               cursor: subscribe.isPending ? "wait" : "pointer",
             }}
           >
-            {subscribe.isPending ? "Sending…" : "Send me the chapter"}
+            {subscribe.isPending ? "Unlocking…" : "Unlock the sample"}
           </button>
         </div>
         <label
@@ -220,7 +243,7 @@ export function SampleChapterForm({
             checked={isPastor}
             onChange={e => setIsPastor(e.target.checked)}
           />
-          I'm a pastor — send me the pastor's edition with a discussion guide.
+          I'm a pastor. It helps us know who's reading.
         </label>
       </form>
     </div>

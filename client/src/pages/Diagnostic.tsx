@@ -9,12 +9,13 @@
  * No new colors; uses the existing palette. Result cards use cream-warm +
  * mustard rule per CLAUDE.md.
  */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SegmentedSignup } from "@/components/SegmentedSignup";
+import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 type Dim = "relational" | "intellectual" | "vocational" | "devotional";
 
@@ -131,28 +132,28 @@ const DIM_META: Record<Dim, { label: string; weak: string; strong: string; essay
     label: "Relational",
     weak: "The gap between your stated convictions and how you treat the people closest to you is wider than you want to admit.",
     strong: "You're letting people you love change how you actually live.",
-    essay: "the-gap-between-belief-and-behavior",
+    essay: "?track=marriage",
     book: "The First Flock",
   },
   intellectual: {
     label: "Intellectual",
     weak: "Your doubts have nowhere to go. That is not safe; it is the long road to brittle faith.",
     strong: "You are letting your mind work on the questions instead of running from them.",
-    essay: "the-questions-that-actually-matter",
+    essay: "?track=doubt",
     book: "Why Not What",
   },
   vocational: {
     label: "Vocational",
     weak: "You are running on fumes. Sabbath is not a luxury; it is a structural condition for faithfulness.",
     strong: "You have built rhythms that let the work be done without it eating you.",
-    essay: "sabbath-is-not-a-luxury",
+    essay: "?pillar=living-well-after-christendom",
     book: "Dangerous Calling",
   },
   devotional: {
     label: "Devotional",
     weak: "Your daily practice of God has thinned. Without it, the rest of this falls apart at the seams.",
     strong: "You are practicing the presence in a sustained, costly way.",
-    essay: "the-prayer-that-works-when-prayer-doesnt-work",
+    essay: "?track=devotionals",
     book: "HealWell",
   },
 };
@@ -176,28 +177,90 @@ function scoreByDim(answers: Record<string, number>): DimResult[] {
   });
 }
 
+/*
+ * Session mirror (roadmap HS-5). This is a one-sitting entry flow: answers
+ * and step survive an accidental refresh via sessionStorage, and nothing
+ * outlives the tab.
+ */
+const SESSION_KEY = "livewell-session-diagnostic";
+
+interface SavedSession {
+  answers: Record<string, number>;
+  step: number;
+  savedAt: number;
+}
+
+const QUESTION_IDS = new Set(QUESTIONS.map(q => q.id));
+
+function isSavedSession(x: unknown): x is SavedSession {
+  if (typeof x !== "object" || x === null) return false;
+  const s = x as Record<string, unknown>;
+  if (typeof s.step !== "number" || !Number.isFinite(s.step)) return false;
+  if (typeof s.savedAt !== "number") return false;
+  if (typeof s.answers !== "object" || s.answers === null || Array.isArray(s.answers)) return false;
+  return Object.entries(s.answers as Record<string, unknown>).every(
+    ([id, score]) => QUESTION_IDS.has(id) && typeof score === "number" && Number.isFinite(score)
+  );
+}
+
+function readSession(): SavedSession {
+  return readStoredJSON(
+    SESSION_KEY,
+    isSavedSession,
+    { answers: {}, step: 0, savedAt: 0 },
+    window.sessionStorage
+  );
+}
+
 export default function Diagnostic() {
-  const [step, setStep] = useState(0);
-  const [answers, setAnswers] = useState<Record<string, number>>({});
+  // Restore a same-sitting session silently; step is clamped to both the
+  // question range and the number of answers actually given.
+  const [restored] = useState(readSession);
+  const [step, setStep] = useState(() =>
+    Math.min(
+      Math.max(0, Math.trunc(restored.step)),
+      Object.keys(restored.answers).length,
+      QUESTIONS.length - 1
+    )
+  );
+  const [answers, setAnswers] = useState<Record<string, number>>(restored.answers);
+  // True while a finished reader walks back through the questions from results.
+  const [reviewing, setReviewing] = useState(false);
   const isDone = Object.keys(answers).length === QUESTIONS.length;
-  const results = isDone ? scoreByDim(answers) : null;
+  const showingResults = isDone && !reviewing;
+  const results = showingResults ? scoreByDim(answers) : null;
 
   // Weakest dimension is the lead recommendation.
   const lead = results
     ? [...results].sort((a, b) => a.score / a.max - b.score / b.max)[0]
     : null;
 
+  // Mirror answers/step on every change. A pristine state writes nothing,
+  // which keeps "Start over" genuinely clean; a failed write is fine — the
+  // quiz simply proceeds unpersisted.
+  useEffect(() => {
+    if (step === 0 && Object.keys(answers).length === 0) return;
+    writeStoredJSON(SESSION_KEY, { answers, step, savedAt: Date.now() }, window.sessionStorage);
+  }, [answers, step]);
+
   const handleAnswer = (qid: string, score: number) => {
     const next = { ...answers, [qid]: score };
     setAnswers(next);
-    if (Object.keys(next).length < QUESTIONS.length && step < QUESTIONS.length - 1) {
-      setStep(step + 1);
+    if (step < QUESTIONS.length - 1) {
+      if (reviewing || Object.keys(next).length < QUESTIONS.length) {
+        setStep(step + 1);
+      }
+    } else if (reviewing) {
+      // Last question revisited — hand the reader back to the results.
+      setReviewing(false);
     }
   };
 
   const reset = () => {
     setStep(0);
     setAnswers({});
+    setReviewing(false);
+    removeStoredJSON(SESSION_KEY, window.sessionStorage);
   };
 
   return (
@@ -242,9 +305,9 @@ export default function Diagnostic() {
               maxWidth: "60ch",
             }}
           >
-            Eight questions. Four dimensions. Answer honestly — no one sees
-            this but you. At the end, one essay, one book, and one optional
-            email track for what to do next.
+            Eight questions. Four dimensions. About three minutes. Answer
+            honestly — no one sees this but you. At the end, one essay, one
+            book, and one optional email track for what to do next.
           </p>
         </div>
       </section>
@@ -252,7 +315,7 @@ export default function Diagnostic() {
       {/* QUIZ OR RESULTS */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-          {!isDone ? (
+          {!showingResults ? (
             <div>
               <div
                 style={{
@@ -372,7 +435,7 @@ export default function Diagnostic() {
                   </p>
                   <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
                     <Link
-                      href={`/writing/${lead.essaySlug}`}
+                      href={`/writing${lead.essaySlug}`}
                       style={{
                         fontFamily: "var(--U)",
                         fontSize: "13px",
@@ -383,7 +446,7 @@ export default function Diagnostic() {
                         paddingBottom: "2px",
                       }}
                     >
-                      Read the essay →
+                      Read the essays →
                     </Link>
                     <Link
                       href="/books"
@@ -450,24 +513,45 @@ export default function Diagnostic() {
                 ))}
               </div>
 
-              <button
-                type="button"
-                onClick={reset}
-                style={{
-                  background: "transparent",
-                  border: "1px solid var(--border)",
-                  padding: "10px 18px",
-                  fontFamily: "var(--U)",
-                  fontSize: "13px",
-                  fontWeight: 600,
-                  color: "var(--ink-muted)",
-                  borderRadius: "var(--radius-sm)",
-                  cursor: "pointer",
-                  marginBottom: "var(--s-5)",
-                }}
-              >
-                Start over
-              </button>
+              <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginBottom: "var(--s-5)" }}>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setReviewing(true);
+                    setStep(0);
+                  }}
+                  style={{
+                    background: "transparent",
+                    border: "1px solid var(--border)",
+                    padding: "10px 18px",
+                    fontFamily: "var(--U)",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    color: "var(--ink)",
+                    borderRadius: "var(--radius-sm)",
+                    cursor: "pointer",
+                  }}
+                >
+                  Change my answers
+                </button>
+                <button
+                  type="button"
+                  onClick={reset}
+                  style={{
+                    background: "transparent",
+                    border: "1px solid var(--border)",
+                    padding: "10px 18px",
+                    fontFamily: "var(--U)",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    color: "var(--ink-muted)",
+                    borderRadius: "var(--radius-sm)",
+                    cursor: "pointer",
+                  }}
+                >
+                  Start over
+                </button>
+              </div>
 
               {/* Segmented signup — wrap their result into a track */}
               <SegmentedSignup

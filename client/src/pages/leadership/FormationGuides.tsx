@@ -7,7 +7,7 @@
  */
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
-import { Streamdown } from "streamdown";
+import { Markdown } from "@/components/Markdown";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
@@ -29,7 +29,7 @@ export default function FormationGuides() {
   const slug = params?.slug;
 
   useEffect(() => {
-    fetch("/leadership/formation-guides.json", { cache: "no-store" })
+    fetch("/leadership/formation-guides.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setGuides(d.guides))
       .catch(() => {});
@@ -107,7 +107,7 @@ export default function FormationGuides() {
 
                 {s.teaching && (
                   <div className="article-body prose-section" style={{ marginBottom: "26px" }}>
-                    <Streamdown>{s.teaching}</Streamdown>
+                    <Markdown>{s.teaching}</Markdown>
                   </div>
                 )}
 

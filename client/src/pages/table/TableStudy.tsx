@@ -57,7 +57,7 @@ export default function TableStudy() {
 
   useEffect(() => {
     if (!slug) return;
-    fetch(`/table/studies/${slug}.json`, { cache: "no-store" })
+    fetch(`/table/studies/${slug}.json`)
       .then((r) => (r.ok ? r.json() : Promise.reject()))
       .then((d) => setStudy(d))
       .catch(() => setMissing(true));

@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { useState, useMemo } from "react";
 import { Copy, Check, Search } from "lucide-react";
+import { copyToClipboard } from "@/lib/clipboard";
 
 /**
  * Parenting Bible Verses — a topical lookup of Scripture for the real moments
@@ -126,6 +127,7 @@ export default function ParentingVerses() {
   const [active, setActive] = useState<string>(TOPICS[0].id);
   const [query, setQuery] = useState("");
   const [copied, setCopied] = useState<string | null>(null);
+  const [copyFailed, setCopyFailed] = useState<string | null>(null);
 
   const topic = TOPICS.find((t) => t.id === active) ?? TOPICS[0];
 
@@ -139,8 +141,13 @@ export default function ParentingVerses() {
     );
   }, [query]);
 
-  const copy = (v: VerseEntry) => {
-    navigator.clipboard?.writeText(`${v.text} (${v.ref})`);
+  const copy = async (v: VerseEntry) => {
+    const ok = await copyToClipboard(`${v.text} (${v.ref})`);
+    if (!ok) {
+      setCopyFailed(v.ref);
+      return;
+    }
+    setCopyFailed(null);
     setCopied(v.ref);
     setTimeout(() => setCopied(null), 1500);
   };
@@ -209,6 +216,11 @@ export default function ParentingVerses() {
                       {copied === v.ref ? <><Check size={14} /> Copied</> : <><Copy size={14} /> Copy</>}
                     </button>
                   </div>
+                  {copyFailed === v.ref && (
+                    <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "8px 0 0" }}>
+                      Copy failed — select and copy manually.
+                    </p>
+                  )}
                 </div>
               ))}
             </div>

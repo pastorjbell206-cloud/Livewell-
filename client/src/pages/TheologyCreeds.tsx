@@ -21,7 +21,7 @@ export default function TheologyCreeds() {
   const [open, setOpen] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/theology/theology-creeds.json", { cache: "no-store" })
+    fetch("/theology/theology-creeds.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => { if (d) { setCreeds(d.creeds ?? []); setConfessions(d.confessions ?? []); if (d.creeds?.[0]) setOpen(d.creeds[0].name); } })
       .catch(() => {});

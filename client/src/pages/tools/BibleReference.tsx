@@ -345,7 +345,7 @@ const TOPICS: Topic[] = [
         reference: "Colossians 3:13",
         text: "Bear with each other and forgive one another if any of you has a grievance against someone. Forgive as the Lord forgave you.",
         context:
-          "Paul writes to a church navigating ethnic and cultural conflict (Jew, Greek, barbarian, Scythian, slave, free). Forgiveness here is not abstract; it is the social glue for a community made up of people who would normally have nothing to do with each other. 'Bear with' (anechomenoi) means to endure, to put up with, to carry the weight of someone's differences.",
+          "Paul writes to a church torn along ethnic and cultural lines (Jew, Greek, barbarian, Scythian, slave, free). Forgiveness here is not abstract; it is the social glue for a community made up of people who would normally have nothing to do with each other. 'Bear with' (anechomenoi) means to endure, to put up with, to carry the weight of someone's differences.",
         misuse:
           "Used to sweep conflict under the rug: 'Just forgive and move on.' But Paul's instruction comes after a list of things to 'put to death' (anger, rage, malice, slander) and things to 'put on' (compassion, kindness, humility). Forgiveness is the climax of a process, not a shortcut around it.",
         teaches:
@@ -633,7 +633,7 @@ const TOPICS: Topic[] = [
         context:
           "In first-century Palestine, children had no legal rights and minimal social status. The disciples considered them unworthy of Jesus' time. Jesus' response is indignation (aganakteo, a strong word), not gentle correction. He does not just tolerate children; he makes them the model for kingdom entry. The reversal is complete: the lowest-status members of society become the image of what faithfulness looks like.",
         misuse:
-          "Used to sentimentalize childhood, as though Jesus is saying children are innocent and we should be more innocent. But the point is not innocence; it is dependence. Children in the ancient world had nothing to bring, no status to leverage. They could only receive. That is the posture Jesus praises.",
+          "Used to sentimentalize childhood, as though Jesus is saying children are innocent and we should be more innocent. But the point is not innocence; it is dependence. Children in the ancient world had nothing to bring, no status to spend. They could only receive. That is the posture Jesus praises.",
         teaches:
           "Children matter to God, and any community that treats them as an interruption has misunderstood the kingdom. But the deeper point is about posture: the kingdom belongs to those who come with nothing to offer and everything to receive.",
       },
@@ -1291,13 +1291,13 @@ export default function BibleReference() {
   return (
     <Layout>
       <SEOMeta
-        title="What the Bible Actually Says About... -- Topical Scripture Reference"
+        title="What the Bible Actually Says About… -- Topical Scripture Reference"
         description="A comprehensive topical reference covering 15 life topics with full biblical data, interpretive range, and practical application. Not proof-texts. Context, common misuses, and what the passages actually teach."
         keywords="what the Bible says about money, Bible and suffering, Bible marriage, Bible anxiety, Bible forgiveness, topical Bible study, Scripture in context"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          name: "What the Bible Actually Says About...",
+          name: "What the Bible Actually Says About…",
           description:
             "A comprehensive topical reference covering 15 life topics with full biblical data, interpretive range, and practical application.",
           url: "https://www.livewellbyjamesbell.co/tools/bible-says",
@@ -1341,7 +1341,7 @@ export default function BibleReference() {
           >
             What the Bible{" "}
             <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>Actually</em>{" "}
-            Says About...
+            Says About…
           </h1>
           <p
             style={{

@@ -146,7 +146,7 @@ export function ReadingPathDetail() {
               <div style={{ textAlign: "center", padding: "60px 20px", color: "var(--gray)" }}>
                 <BookOpen size={48} style={{ margin: "0 auto 16px", opacity: 0.5 }} />
                 <p style={{ fontSize: "18px" }}>No articles found for this reading path yet.</p>
-                <p style={{ fontSize: "14px", marginTop: "8px", opacity: 0.7 }}>Check back soon!</p>
+                <p style={{ fontSize: "14px", marginTop: "8px", opacity: 0.7 }}>More essays are on the way. Check back soon.</p>
               </div>
             ) : (
               <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "24px" }}>

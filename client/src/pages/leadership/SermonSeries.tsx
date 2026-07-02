@@ -22,7 +22,7 @@ export default function SermonSeries() {
   const [open, setOpen] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/leadership/sermon-series.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).then((d) => d && setData(d)).catch(() => {});
+    fetch("/leadership/sermon-series.json").then((r) => (r.ok ? r.json() : null)).then((d) => d && setData(d)).catch(() => {});
   }, []);
 
   const shown = useMemo(() => (data ? data.series.filter((s) => kind === "all" || s.kind === kind) : []), [data, kind]);

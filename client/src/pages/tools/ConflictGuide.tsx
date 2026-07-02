@@ -122,7 +122,7 @@ const CONFLICT_TYPES: ConflictType[] = [
       },
     ],
     relatedArticles: [
-      { title: "Read essays on marriage and communication", href: "/writing?category=marriage" },
+      { title: "Read essays on marriage and communication", href: "/writing?track=marriage" },
     ],
   },
   {
@@ -218,7 +218,7 @@ const CONFLICT_TYPES: ConflictType[] = [
       },
     ],
     relatedArticles: [
-      { title: "Read essays on stewardship and financial health", href: "/writing?category=living-well" },
+      { title: "Read essays on stewardship and financial health", href: "/writing?pillar=living-well-after-christendom" },
     ],
   },
   {
@@ -315,7 +315,7 @@ const CONFLICT_TYPES: ConflictType[] = [
     ],
     relatedArticles: [
       { title: "Read the age-by-age parenting guide", href: "/tools/parenting-guide" },
-      { title: "Read essays on family and parenting", href: "/writing?category=parenting" },
+      { title: "Read essays on family and parenting", href: "/writing?track=parenting" },
     ],
   },
   {
@@ -411,7 +411,7 @@ const CONFLICT_TYPES: ConflictType[] = [
       },
     ],
     relatedArticles: [
-      { title: "Read essays on marriage and intimacy", href: "/writing?category=marriage" },
+      { title: "Read essays on marriage and intimacy", href: "/writing?track=marriage" },
     ],
   },
   {
@@ -507,7 +507,7 @@ const CONFLICT_TYPES: ConflictType[] = [
       },
     ],
     relatedArticles: [
-      { title: "Read essays on marriage and family", href: "/writing?category=marriage" },
+      { title: "Read essays on marriage and family", href: "/writing?track=marriage" },
     ],
   },
   {
@@ -603,7 +603,7 @@ const CONFLICT_TYPES: ConflictType[] = [
       },
     ],
     relatedArticles: [
-      { title: "Read essays on marriage and partnership", href: "/writing?category=marriage" },
+      { title: "Read essays on marriage and partnership", href: "/writing?track=marriage" },
     ],
   },
   {
@@ -699,7 +699,7 @@ const CONFLICT_TYPES: ConflictType[] = [
       },
     ],
     relatedArticles: [
-      { title: "Read essays on faith and doubt", href: "/writing?category=faith" },
+      { title: "Read essays on faith and doubt", href: "/writing?track=doubt" },
     ],
   },
   {
@@ -795,7 +795,7 @@ const CONFLICT_TYPES: ConflictType[] = [
       },
     ],
     relatedArticles: [
-      { title: "Read essays on trust and faithfulness", href: "/writing?category=marriage" },
+      { title: "Read essays on trust and faithfulness", href: "/writing?track=marriage" },
       { title: "Take the Marriage Health Assessment", href: "/tools/marriage-assessment" },
     ],
   },
@@ -956,6 +956,37 @@ export default function ConflictGuide() {
 
             <div
               style={{
+                background: "var(--bone)",
+                border: "1px solid var(--border)",
+                borderLeft: "3px solid var(--mustard)",
+                borderRadius: "2px",
+                padding: "20px 24px",
+                marginBottom: "28px",
+                maxWidth: "68ch",
+              }}
+            >
+              <p style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--ink)", margin: "0 0 10px" }}>
+                Before you begin
+              </p>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.75, color: "var(--ink)", margin: "0 0 12px" }}>
+                This guide is for conflict between people who are safe with each
+                other. If you are afraid of the person you are in conflict with —
+                if there is violence, threat, or control in the relationship —
+                that is not a conflict to resolve. It is a situation to get safe
+                from, and none of the steps below apply until you are.
+              </p>
+              <a
+                href="https://www.thehotline.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}
+              >
+                National Domestic Violence Hotline — 1-800-799-7233, text START to 88788, or thehotline.org →
+              </a>
+            </div>
+
+            <div
+              style={{
                 display: "grid",
                 gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
                 gap: "16px",
@@ -1008,7 +1039,7 @@ export default function ConflictGuide() {
                     }}
                   >
                     {type.description.length > 120
-                      ? type.description.slice(0, 120) + "..."
+                      ? type.description.slice(0, 120) + "…"
                       : type.description}
                   </span>
                   <span

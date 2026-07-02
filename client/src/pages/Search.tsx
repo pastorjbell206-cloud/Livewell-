@@ -224,7 +224,7 @@ export default function SearchPage() {
             <input
               type="text"
               aria-label="Search the site"
-              placeholder="Search articles, resources, books..."
+              placeholder="Search articles, resources, books…"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               className="w-full pl-12 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 text-lg"
@@ -325,18 +325,36 @@ export default function SearchPage() {
 
               {isLoading ? (
                 <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
-                  <p className="text-lg">Searching...</p>
+                  <p className="text-lg">Searching…</p>
                 </div>
               ) : results.length === 0 ? (
                 visibleLibraryMatches.length === 0 ? (
                   <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
                     {libraryLoaded ? (
                       <>
-                        <p className="text-lg">No results found for "{query}"</p>
-                        <p className="text-sm mt-2">Try different keywords or browse our content</p>
+                        <p className="text-lg">Nothing here for "{query}".</p>
+                        <p className="text-sm mt-2">
+                          Try another word — or start in the{" "}
+                          <Link
+                            href="/writing"
+                            className="font-ui font-medium hover:opacity-70 transition-opacity"
+                            style={{ color: "var(--gold)" }}
+                          >
+                            essays
+                          </Link>{" "}
+                          or the{" "}
+                          <Link
+                            href="/tools"
+                            className="font-ui font-medium hover:opacity-70 transition-opacity"
+                            style={{ color: "var(--gold)" }}
+                          >
+                            tools
+                          </Link>
+                          .
+                        </p>
                       </>
                     ) : (
-                      <p className="text-lg">Searching...</p>
+                      <p className="text-lg">Searching…</p>
                     )}
                   </div>
                 ) : null

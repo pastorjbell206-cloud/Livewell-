@@ -138,3 +138,4 @@ client/public/og/
 
 # Local agent worktrees (never commit)
 .claude/worktrees/
+client/public/sitemap.xml

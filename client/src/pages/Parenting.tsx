@@ -141,6 +141,26 @@ export default function Parenting() {
       {/* NEWSLETTER STRIP — real form, no silent failures */}
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+          {/* Tools for parents (QW-19): the instruments this hub never mentioned */}
+          <div style={{ margin: "0 0 48px" }}>
+            <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "16px" }}>TOOLS FOR PARENTS</p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "14px" }}>
+              {[
+                { href: "/tools/family-devotions", title: "Family devotion builder", desc: "Pick your kids' ages and a theme; get a complete 15-minute devotion." },
+                { href: "/tools/parenting-guide", title: "Parenting stage guide", desc: "What your child needs at each age, and one practice to start this week." },
+                { href: "/tools/parenting-verses", title: "Scripture for parents", desc: "Verses for the real moments — fear, anger, screens, doubt, and the day you blow it." },
+                { href: "/family/catechism", title: "Family catechism", desc: "Questions and answers a household can actually carry." },
+              ].map((t) => (
+                <Link key={t.href} href={t.href} style={{ textDecoration: "none" }}>
+                  <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "3px", padding: "18px 20px", height: "100%" }}>
+                    <p style={{ fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, color: "var(--ink)", margin: "0 0 6px" }}>{t.title}</p>
+                    <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", margin: 0 }}>{t.desc}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+
           <NewsletterSignup
             variant="inline"
             source="parenting"

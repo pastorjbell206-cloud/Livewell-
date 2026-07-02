@@ -18,7 +18,7 @@ export default function PropheticGlossary({ config }: { config: SectionConfig })
   const [q, setQ] = useState("");
 
   useEffect(() => {
-    fetch(`${config.base}/glossary.json`, { cache: "no-store" })
+    fetch(`${config.base}/glossary.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d?.terms && setTerms(d.terms))
       .catch(() => {});

@@ -4,6 +4,7 @@ import { ToolActions } from "@/components/ToolActions";
 import { useState } from "react";
 import { Link } from "wouter";
 import { ArrowLeft, ChevronRight } from "lucide-react";
+import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 interface Statement {
   text: string;
@@ -134,8 +135,8 @@ function getCategoryResult(name: string, score: number): CategoryResult {
         "Ask one person who knows you well: 'What emotion do you see me avoid most often?' Listen to their answer without defending yourself. Their observation may be more accurate than your self-assessment, because the things we avoid are precisely the things we cannot see.",
       ],
       articleLink: {
-        title: "The Inner Life Nobody Sees",
-        href: "/writing",
+        title: "Essays on the inner life",
+        href: "/writing?pillar=living-well-after-christendom",
       },
     },
     Boundaries: {
@@ -149,8 +150,8 @@ function getCategoryResult(name: string, score: number): CategoryResult {
         "Block two hours this week that belong to you -- not to your family, not to your job, not to your church. Guard those hours the way you would guard a meeting with your boss. Your refusal to rest is not faithfulness. It is a functional denial that God can run the world without you.",
       ],
       articleLink: {
-        title: "The No You Have Been Afraid to Say",
-        href: "/writing",
+        title: "Essays on limits, boundaries, and rest",
+        href: "/writing?pillar=living-well-after-christendom",
       },
     },
     "Grief & Lament": {
@@ -164,8 +165,8 @@ function getCategoryResult(name: string, score: number): CategoryResult {
         "Read Psalm 88 -- the only Psalm that ends in darkness, with no resolution. Sit with it. Do not rush to Psalm 89. Let the darkness of 88 do its work. The Bible includes a prayer that God does not answer, which means your unanswered prayers belong in the canon of faith too.",
       ],
       articleLink: {
-        title: "The Grief We Refuse to Carry",
-        href: "/writing",
+        title: "Writing for grief — essays and real help",
+        href: "/grief",
       },
     },
     Forgiveness: {
@@ -179,8 +180,8 @@ function getCategoryResult(name: string, score: number): CategoryResult {
         "Ask God to show you where you are keeping score -- in your marriage, your friendships, your work. The mental ledger of who owes you what is exhausting to maintain, and it poisons every relationship it touches. Lay the ledger down. Not because the debts are not real. Because carrying them is killing you.",
       ],
       articleLink: {
-        title: "Forgiveness Is Not What You Think It Is",
-        href: "/writing",
+        title: "Essays on forgiveness and repair",
+        href: "/writing?track=marriage",
       },
     },
     "Rest & Sabbath": {
@@ -194,8 +195,8 @@ function getCategoryResult(name: string, score: number): CategoryResult {
         "At the end of today, before you go to bed, say out loud: 'It is enough.' The work is not finished. The inbox is not empty. The house is not clean. And it is enough. God rested on the seventh day not because the work of creation was perfect but because it was finished for that day. You have permission to stop.",
       ],
       articleLink: {
-        title: "The Rest You Keep Refusing",
-        href: "/writing",
+        title: "Essays on sabbath and rest",
+        href: "/writing?pillar=living-well-after-christendom",
       },
     },
   };
@@ -244,23 +245,81 @@ function getOverallInterpretation(totalScore: number): {
   };
 }
 
+/* ── Saved progress (HS-5): survive a refresh mid-assessment ───── */
+
+const STORAGE_KEY = "livewell-progress-emotional-health";
+
+interface StoredProgress {
+  answers: Record<number, number>;
+  step: number;
+  savedAt: string;
+}
+
+function isStoredProgress(x: unknown): x is StoredProgress {
+  if (typeof x !== "object" || x === null) return false;
+  const p = x as Record<string, unknown>;
+  return (
+    typeof p.step === "number" &&
+    Number.isFinite(p.step) &&
+    typeof p.savedAt === "string" &&
+    typeof p.answers === "object" &&
+    p.answers !== null &&
+    !Array.isArray(p.answers) &&
+    Object.values(p.answers).every((v) => typeof v === "number")
+  );
+}
+
 export default function EmotionalHealth() {
-  const [answers, setAnswers] = useState<Record<number, number>>({});
+  const [saved] = useState(() =>
+    readStoredJSON<StoredProgress | null>(STORAGE_KEY, isStoredProgress, null),
+  );
+  const [answers, setAnswers] = useState<Record<number, number>>(
+    saved?.answers ?? {},
+  );
   const [showResults, setShowResults] = useState(false);
+  const [resumed, setResumed] = useState(
+    () => saved !== null && Object.keys(saved.answers).length > 0,
+  );
+  const [persistFailed, setPersistFailed] = useState(false);
 
   const allAnswered = STATEMENTS.every((_, i) => answers[i] !== undefined);
 
+  const persist = (nextAnswers: Record<number, number>) => {
+    setPersistFailed(
+      !writeStoredJSON(STORAGE_KEY, {
+        answers: nextAnswers,
+        step: 0,
+        savedAt: new Date().toISOString(),
+      }),
+    );
+  };
+
   const handleRate = (index: number, value: number) => {
-    setAnswers((prev) => ({ ...prev, [index]: value }));
+    const next = { ...answers, [index]: value };
+    setAnswers(next);
+    setResumed(false);
+    persist(next);
   };
 
   const handleSubmit = () => {
-    if (allAnswered) setShowResults(true);
+    if (allAnswered) {
+      setShowResults(true);
+      persist(answers);
+    }
   };
 
   const handleReset = () => {
+    removeStoredJSON(STORAGE_KEY);
     setAnswers({});
     setShowResults(false);
+    setResumed(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleChangeAnswers = () => {
+    setShowResults(false);
+    setResumed(false);
+    persist(answers);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -348,6 +407,57 @@ export default function EmotionalHealth() {
         <div className="wrap" style={{ maxWidth: "900px" }}>
           {!showResults ? (
             <>
+              {resumed && (
+                <div
+                  className="no-print"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "16px",
+                    flexWrap: "wrap",
+                    marginBottom: "24px",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontSize: "13px",
+                      fontFamily: "var(--U)",
+                      color: "var(--ink-muted)",
+                    }}
+                  >
+                    Picked up where you left off.
+                  </span>
+                  <button
+                    onClick={handleReset}
+                    style={{
+                      fontSize: "13px",
+                      fontFamily: "var(--U)",
+                      fontWeight: 600,
+                      padding: "6px 14px",
+                      borderRadius: "4px",
+                      cursor: "pointer",
+                      background: "none",
+                      color: "var(--ink-muted)",
+                      border: "1px solid var(--border)",
+                    }}
+                  >
+                    Start fresh
+                  </button>
+                </div>
+              )}
+              {persistFailed && (
+                <p
+                  style={{
+                    fontSize: "13px",
+                    fontFamily: "var(--U)",
+                    color: "var(--ink-muted)",
+                    margin: "0 0 24px",
+                  }}
+                >
+                  Couldn't save to this browser — your work here will not
+                  survive a reload.
+                </p>
+              )}
               {/* Assessment Form */}
               {CATEGORIES.map((cat, ci) => {
                 const catStatements = STATEMENTS.map((s, i) => ({
@@ -476,28 +586,70 @@ export default function EmotionalHealth() {
             <>
               {/* Results */}
               <ToolActions toolName="Emotional Health Assessment" />
+              {persistFailed && (
+                <p
+                  style={{
+                    fontSize: "13px",
+                    fontFamily: "var(--U)",
+                    color: "var(--ink-muted)",
+                    margin: "0 0 24px",
+                  }}
+                >
+                  Couldn't save to this browser — your work here will not
+                  survive a reload.
+                </p>
+              )}
 
-              <button
-                onClick={handleReset}
+              <div
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  gap: "6px",
-                  padding: "8px 0",
-                  background: "none",
-                  border: "none",
-                  fontSize: "14px",
-                  fontWeight: 600,
-                  fontFamily: "var(--U)",
-                  color: "var(--ink)",
-                  cursor: "pointer",
+                  gap: "24px",
+                  flexWrap: "wrap",
                   marginBottom: "24px",
-                  opacity: 0.7,
                 }}
+                className="no-print"
               >
-                <ArrowLeft size={16} />
-                Take Assessment Again
-              </button>
+                <button
+                  onClick={handleChangeAnswers}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "6px",
+                    padding: "8px 0",
+                    background: "none",
+                    border: "none",
+                    fontSize: "14px",
+                    fontWeight: 600,
+                    fontFamily: "var(--U)",
+                    color: "var(--ink)",
+                    cursor: "pointer",
+                    opacity: 0.7,
+                  }}
+                >
+                  <ArrowLeft size={16} />
+                  Change my answers
+                </button>
+                <button
+                  onClick={handleReset}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "6px",
+                    padding: "8px 0",
+                    background: "none",
+                    border: "none",
+                    fontSize: "14px",
+                    fontWeight: 600,
+                    fontFamily: "var(--U)",
+                    color: "var(--ink)",
+                    cursor: "pointer",
+                    opacity: 0.7,
+                  }}
+                >
+                  Take Assessment Again
+                </button>
+              </div>
 
               {/* Overall Score */}
               <div
@@ -576,6 +728,40 @@ export default function EmotionalHealth() {
                 >
                   {overall.description}
                 </p>
+
+                {(overall.label === "Under Significant Strain" ||
+                  overall.label === "Approaching Burnout") && (
+                  <div
+                    style={{
+                      marginTop: "24px",
+                      background: "var(--bone)",
+                      border: "1px solid var(--border)",
+                      borderLeft: "3px solid var(--mustard)",
+                      borderRadius: "2px",
+                      padding: "20px 24px",
+                      maxWidth: "68ch",
+                    }}
+                  >
+                    <p style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--ink)", margin: "0 0 10px" }}>
+                      A word before the practical steps
+                    </p>
+                    <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.75, color: "var(--ink)", margin: "0 0 14px" }}>
+                      A score in this range is a reason to talk to a real person,
+                      not just to try harder. A licensed counselor is the right
+                      next step, and seeing one is not a failure of faith. And if
+                      the depletion has turned into not wanting to be here, that
+                      is not something to carry alone for another day.
+                    </p>
+                    <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                      <a href="tel:988" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>
+                        988 Suicide &amp; Crisis Lifeline — call or text 988, any hour →
+                      </a>
+                      <a href="https://www.psychologytoday.com/us/therapists" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>
+                        Find a licensed counselor near you →
+                      </a>
+                    </div>
+                  </div>
+                )}
 
                 {/* Score bar */}
                 <div

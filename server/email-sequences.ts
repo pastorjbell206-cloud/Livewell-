@@ -1,6 +1,24 @@
 /**
  * Email Sequence Templates
  * 25 emails total (5 sequences x 5 emails each)
+ *
+ * ── QUARANTINED — DO NOT WIRE TO A LIVE SENDER AS WRITTEN ──────────────
+ * These templates contain fabricated authority and may not be sent to a
+ * human being until every instance is rewritten and verified:
+ *   - invented outcome statistics ("40% improvement in team satisfaction,"
+ *     "60% more confidence," "80% better communication") with no study
+ *     behind them;
+ *   - invented named testimonials ("Sarah, Church Planter," "Michael,
+ *     Senior Pastor," "Lisa, Ministry Leader") from people who do not exist;
+ *   - manufactured discount urgency ("Get 30% off when you buy the bundle
+ *     this week") for discounts that were never configured.
+ * CLAUDE.md calls fabricated authority the one unforgivable act on this
+ * platform. No sender exists in the stack today (see roadmap LT-4); when
+ * one ships, these sequences must be rewritten from scratch under the
+ * voice canon and the Content Integrity rules before any send. The file
+ * is kept only so the sequence *structure* and its tests keep compiling.
+ * Site-elevation audit refs: 12 (Critical), 09 (C3), 13 (C2); QW-4.
+ * ────────────────────────────────────────────────────────────────────────
  */
 
 export interface EmailTemplate {

@@ -11,6 +11,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { useState } from "react";
 import { Link } from "wouter";
 import { Users, Copy, Check, RotateCcw, Mail, UtensilsCrossed, BookOpen, HeartHandshake, Sprout } from "lucide-react";
+import { copyToClipboard } from "@/lib/clipboard";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -104,6 +105,7 @@ export default function DiscipleshipTable() {
   const [audienceId, setAudienceId] = useState<AudienceId | null>(null);
   const [cadence, setCadence] = useState<Cadence>("weekly");
   const [copied, setCopied] = useState(false);
+  const [copyFailed, setCopyFailed] = useState(false);
 
   const audience = AUDIENCES.find((a) => a.id === audienceId) || null;
   const cadenceWord = cadence === "weekly" ? "each week" : "every other week";
@@ -112,6 +114,7 @@ export default function DiscipleshipTable() {
     setAudienceId(null);
     setCadence("weekly");
     setCopied(false);
+    setCopyFailed(false);
   }
 
   function planText(a: Audience): string {
@@ -143,13 +146,14 @@ export default function DiscipleshipTable() {
 
   async function copyPlan() {
     if (!audience) return;
-    try {
-      await navigator.clipboard.writeText(planText(audience));
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      /* clipboard unavailable */
+    const ok = await copyToClipboard(planText(audience));
+    if (!ok) {
+      setCopyFailed(true);
+      return;
     }
+    setCopyFailed(false);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   }
 
   return (
@@ -182,7 +186,7 @@ export default function DiscipleshipTable() {
               return (
                 <button
                   key={a.id}
-                  onClick={() => { setAudienceId(a.id); setCopied(false); }}
+                  onClick={() => { setAudienceId(a.id); setCopied(false); setCopyFailed(false); }}
                   style={{
                     textAlign: "left", cursor: "pointer", padding: "var(--s-3)",
                     background: on ? "var(--charcoal)" : "#FFFFFF",
@@ -240,6 +244,11 @@ export default function DiscipleshipTable() {
                   </button>
                 </div>
               </div>
+              {copyFailed && (
+                <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
+                  Copy failed — select and copy manually.
+                </p>
+              )}
 
               <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--ink-muted)", marginBottom: "var(--s-4)" }}>
                 Gathering {audience.label.toLowerCase()}, meeting {cadenceWord}, same night, same table.

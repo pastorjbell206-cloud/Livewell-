@@ -32,7 +32,7 @@ export default function ContextGuide() {
     setData(null);
     setMissing(false);
     setRelated([]);
-    fetch(`/context/guides/${slug}.json`, { cache: "no-store" })
+    fetch(`/context/guides/${slug}.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => (d ? setData(d) : setMissing(true)))
       .catch(() => setMissing(true));

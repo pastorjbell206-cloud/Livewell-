@@ -142,7 +142,7 @@ export function ShoppingCart() {
                 className="w-full py-3 rounded font-ui font-medium text-white transition-all disabled:opacity-50"
                 style={{ backgroundColor: "var(--mustard)" }}
               >
-                {checkoutMutation.isPending ? "Processing..." : !user ? "Sign in to checkout" : "Checkout"}
+                {checkoutMutation.isPending ? "Processing…" : !user ? "Sign in to checkout" : "Checkout"}
               </button>
             </div>
           )}

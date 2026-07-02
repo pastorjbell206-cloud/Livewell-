@@ -34,7 +34,7 @@ export default function FamilyCatechism() {
   const [open, setOpen] = useState<number | null>(null);
 
   useEffect(() => {
-    fetch("/family-catechism.json", { cache: "no-store" })
+    fetch("/family-catechism.json")
       .then((r) => (r.ok ? r.json() : []))
       .then((d) => Array.isArray(d) && setEntries(d))
       .catch(() => {});

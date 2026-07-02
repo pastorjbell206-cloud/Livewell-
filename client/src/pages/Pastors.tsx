@@ -19,7 +19,9 @@ export default function Pastors() {
       {/* Hero */}
       <section className="relative overflow-hidden" style={{ minHeight: "55vh" }}>
         <div className="absolute inset-0">
-          <img src={PASTORS_IMAGE} alt="" className="w-full h-full object-cover" />
+          <img width={1200}
+          height={800}
+          src={PASTORS_IMAGE} alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(26,26,26,0.95) 0%, rgba(26,26,26,0.65) 50%, rgba(26,26,26,0.35) 100%)" }} />
         </div>
         <div className="relative container flex items-end" style={{ minHeight: "55vh" }}>

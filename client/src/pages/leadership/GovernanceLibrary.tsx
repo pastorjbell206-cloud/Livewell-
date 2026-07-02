@@ -10,6 +10,7 @@ import { Link } from "wouter";
 import { ChevronDown, Copy } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { copyToClipboard } from "@/lib/clipboard";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -20,10 +21,18 @@ interface Data { title: string; subtitle: string; intro: string; categories: Cat
 export default function GovernanceLibrary() {
   const [data, setData] = useState<Data | null>(null);
   const [open, setOpen] = useState<string | null>(null);
+  // Which policy's copy last ran, and whether it actually copied (audit 15 H1).
+  const [copyState, setCopyState] = useState<{ id: string; ok: boolean } | null>(null);
 
   useEffect(() => {
-    fetch("/leadership/governance.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).then((d) => { if (d) { setData(d); setOpen(d.categories?.[0]?.policies?.[0]?.id ?? null); } }).catch(() => {});
+    fetch("/leadership/governance.json").then((r) => (r.ok ? r.json() : null)).then((d) => { if (d) { setData(d); setOpen(d.categories?.[0]?.policies?.[0]?.id ?? null); } }).catch(() => {});
   }, []);
+
+  const copySample = async (p: Policy) => {
+    const ok = await copyToClipboard(p.sample);
+    setCopyState({ id: p.id, ok });
+    if (ok) setTimeout(() => setCopyState((s) => (s?.id === p.id ? null : s)), 2000);
+  };
 
   return (
     <Layout>
@@ -64,8 +73,9 @@ export default function GovernanceLibrary() {
                             <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", margin: "14px 0" }}><strong style={{ color: "var(--mustard-text)" }}>Why it matters. </strong>{p.why}</p>
                             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "6px" }}>
                               <div className="eyebrow" style={{ color: "var(--ink-muted)" }}>Starter template</div>
-                              <button onClick={() => navigator.clipboard?.writeText(p.sample)} style={{ display: "inline-flex", alignItems: "center", gap: "5px", fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px", padding: "5px 10px", background: "none", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", color: "var(--ink-muted)", cursor: "pointer" }}><Copy size={13} /> Copy</button>
+                              <button onClick={() => copySample(p)} style={{ display: "inline-flex", alignItems: "center", gap: "5px", fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px", padding: "5px 10px", background: "none", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", color: "var(--ink-muted)", cursor: "pointer" }}><Copy size={13} /> {copyState?.id === p.id && copyState.ok ? "Copied" : "Copy"}</button>
                             </div>
+                            {copyState?.id === p.id && !copyState.ok && <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", margin: "0 0 6px" }}>Copy failed — select and copy manually.</p>}
                             <pre style={{ fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.7, color: "var(--ink)", background: "var(--bone-warm)", padding: "14px", borderRadius: "var(--radius-sm)", whiteSpace: "pre-wrap", margin: 0 }}>{p.sample}</pre>
                           </div>
                         )}

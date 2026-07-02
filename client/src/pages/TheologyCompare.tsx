@@ -21,7 +21,7 @@ export default function TheologyCompare() {
 
   useEffect(() => {
     setDoc(null);
-    fetch(`/theology/${slug}.json`, { cache: "no-store" })
+    fetch(`/theology/${slug}.json`)
       .then((r) => (r.ok ? r.json() : Promise.reject()))
       .then(setDoc)
       .catch(() => setDoc(null));
@@ -104,6 +104,34 @@ export default function TheologyCompare() {
               <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", fontStyle: "italic", marginTop: "12px" }}>The case shown is the opening of each position's own statement. Read the full doctrine for the whole argument, the biblical evidence, and where the author lands.</p>
             </>
           )}
+        </div>
+      </section>
+
+      {/* The six written comparisons — prose treatments of the pairings
+          readers search for by name. This page linked none of them before. */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.5vw, 32px)", fontWeight: 400, letterSpacing: "-0.015em", color: "var(--ink)", marginBottom: "8px" }}>
+            The worked comparisons.
+          </h2>
+          <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "20px" }}>
+            Six pairings written out in full — history, worship, doctrine, and
+            what each tradition would say about the other, stated fairly.
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "12px" }}>
+            {[
+              { href: "/compare/catholic-vs-protestant", label: "Catholic vs. Protestant" },
+              { href: "/compare/calvinism-vs-arminianism", label: "Calvinism vs. Arminianism" },
+              { href: "/compare/baptist-vs-methodist", label: "Baptist vs. Methodist" },
+              { href: "/compare/evangelical-vs-mainline", label: "Evangelical vs. Mainline" },
+              { href: "/compare/orthodox-vs-catholic", label: "Orthodox vs. Catholic" },
+              { href: "/compare/liturgical-vs-contemporary", label: "Liturgical vs. Contemporary worship" },
+            ].map((c) => (
+              <Link key={c.href} href={c.href} style={{ display: "block", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "14px 16px", fontFamily: "var(--U)", fontSize: "14.5px", fontWeight: 500, color: "var(--ink)", textDecoration: "none" }}>
+                {c.label} →
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </Layout>

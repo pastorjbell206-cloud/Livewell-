@@ -25,7 +25,7 @@ export default function TheologyQuestions() {
   const [open, setOpen] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/theology/questions.json", { cache: "no-store" })
+    fetch("/theology/questions.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d?.questions && setQuestions(d.questions))
       .catch(() => {});
@@ -67,7 +67,8 @@ export default function TheologyQuestions() {
             The questions you actually came with.
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch" }}>
-            Nobody starts by searching for a doctrine. They start with a question that keeps them up at night. Here are the real ones, answered plainly and without flinching, each one opening a door to the fuller study behind it.
+            Nobody starts by searching for a doctrine. They start with a question that keeps them up at night. Here are the real ones, answered plainly and without flinching, each one opening a door to the fuller study behind it. The plain-language versions live at{" "}
+            <Link href="/faq" style={{ color: "var(--bone)", borderBottom: "1px solid var(--mustard)", textDecoration: "none" }}>questions people ask</Link>.
           </p>
         </div>
       </section>
