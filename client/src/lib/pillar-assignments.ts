@@ -24,7 +24,20 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     ],
     "confidence": "high"
   },
+  "what-a-christian-owes-the-city": {
+    "pillar": 6,
+    "subThemes": [
+      "friendship-community",
+      "practices"
+    ],
+    "confidence": "high"
+  },
   "the-atheist-in-the-pulpit": {
+    "pillar": 4,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "the-end-of-home-field-advantage": {
     "pillar": 4,
     "subThemes": [],
     "confidence": "high"
