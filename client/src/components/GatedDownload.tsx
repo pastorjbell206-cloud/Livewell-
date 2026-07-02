@@ -77,7 +77,7 @@ export default function GatedDownload({
         autoFocus
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        placeholder="your@email.com"
+        placeholder="you@example.com"
         aria-label="Email to receive the toolkit"
         style={{ flex: "1 1 200px", padding: "11px 12px", fontFamily: "var(--B)", fontSize: "16px", border: "1px solid var(--border)", borderRadius: "2px", background: "var(--card)", color: "var(--ink)", outline: "none" }}
       />

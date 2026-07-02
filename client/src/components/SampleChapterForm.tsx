@@ -193,7 +193,7 @@ export function SampleChapterForm({
           <input
             type="email"
             required
-            placeholder="your@email.com"
+            placeholder="you@example.com"
             value={email}
             onChange={e => setEmail(e.target.value)}
             aria-label="Email address"

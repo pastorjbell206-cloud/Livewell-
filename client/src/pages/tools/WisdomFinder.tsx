@@ -135,7 +135,7 @@ export default function WisdomFinder() {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="I am anxious about money, my marriage is cold, I cannot forgive..."
+              placeholder="I am anxious about money, my marriage is cold, I cannot forgive…"
               style={{ flex: "1 1 320px", padding: "14px 16px", fontFamily: "var(--B)", fontSize: "16px", color: "var(--ink)", background: "#FFFFFF", border: "none", outline: "none" }}
             />
             <button type="submit" style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "8px", padding: "14px 22px", background: "var(--mustard)", color: "var(--charcoal)", border: "none", fontFamily: "var(--U)", fontWeight: 600, fontSize: "15px" }}>

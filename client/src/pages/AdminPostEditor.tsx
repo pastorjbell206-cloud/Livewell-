@@ -133,7 +133,7 @@ export default function AdminPostEditor() {
               className="w-full px-4 py-2 rounded border font-body"
               style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
               rows={12}
-              placeholder="Write your post in Markdown..."
+              placeholder="Write your post in Markdown…"
             />
           </div>
 
@@ -148,7 +148,7 @@ export default function AdminPostEditor() {
               className="w-full px-4 py-2 rounded border font-body"
               style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
             >
-              <option value="">Select a pillar...</option>
+              <option value="">Select a pillar…</option>
               <option value="Prophetic Disruption">Prophetic Disruption</option>
               <option value="Theological Depth">Theological Depth</option>
               <option value="Prophetic Justice">Prophetic Justice</option>

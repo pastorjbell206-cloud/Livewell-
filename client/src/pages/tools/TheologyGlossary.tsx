@@ -249,7 +249,7 @@ const TERMS: GlossaryTerm[] = [
     term: "Parousia",
     category: "Doctrine",
     oneLiner: "The second coming of Christ — his visible, bodily return to earth at the end of the age.",
-    paragraph: "Parousia literally means 'presence' or 'arrival,' and in the ancient world it described the formal visit of a king or emperor to a city. The New Testament applies it to Christ's return (Matthew 24:27, 1 Thessalonians 4:15). The early church expected the Parousia imminently — Paul seems to have anticipated it within his lifetime (1 Thessalonians 4:17). As centuries passed, the church developed more nuanced positions: the return is certain but the timing unknown ('no one knows the day or the hour,' Matthew 24:36). The Parousia is not a second chance but a consummation — the completion of everything Christ began at his first coming. It includes judgment, resurrection, and the renewal of all things.",
+    paragraph: "Parousia literally means 'presence' or 'arrival,' and in the ancient world it described the formal visit of a king or emperor to a city. The New Testament applies it to Christ's return (Matthew 24:27, 1 Thessalonians 4:15). The early church expected the Parousia imminently — Paul seems to have anticipated it within his lifetime (1 Thessalonians 4:17). As centuries passed, the church settled into harder-won positions: the return is certain but the timing unknown ('no one knows the day or the hour,' Matthew 24:36). The Parousia is not a second chance but a consummation — the completion of everything Christ began at his first coming. It includes judgment, resurrection, and the renewal of all things.",
     significance: "The Parousia keeps the church from settling for the world as it is. It is the doctrine that insists history has a destination — not mere cycles, not entropy, but a return and a restoration.",
     relatedTerms: ["Eschatology", "Resurrection", "Glorification"],
     originalLanguage: "Greek: parousia (presence, coming, arrival); used in secular Greek for a royal visit",
@@ -279,7 +279,7 @@ const TERMS: GlossaryTerm[] = [
     category: "Biblical Studies",
     oneLiner: "Drawing meaning out of a biblical text by careful analysis of its words, context, and original setting.",
     paragraph: "Exegesis literally means 'to lead out' — you lead the meaning out of the text rather than reading your meaning into it. Good exegesis requires attention to the original languages (Hebrew, Aramaic, Greek), the historical and cultural context of the passage, the literary genre (narrative reads differently than poetry, prophecy differently than epistle), and the passage's place in the larger biblical narrative. Exegesis is what happens before application: before you ask 'what does this mean for me?' you must first ask 'what did this mean for them?' The discipline of exegesis keeps preaching honest and theology accountable. Every sermon, every theological claim, every doctrinal position should be built on exegetical work, not on impressions or traditions.",
-    significance: "Exegesis is the guard against using the Bible as a ventriloquist's dummy. It demands humility: the text may not say what you want it to say, and that is precisely when reading becomes genuinely transformative.",
+    significance: "Exegesis is the guard against using the Bible as a ventriloquist's dummy. It demands humility: the text may not say what you want it to say, and that is precisely when reading starts to change the reader instead of confirming him.",
     relatedTerms: ["Eisegesis", "Hermeneutics", "Pericope"],
     originalLanguage: "Greek: exegesis (a leading out, explanation), from ex (out) + hegeisthai (to lead/guide)",
   },
@@ -860,7 +860,7 @@ const TERMS: GlossaryTerm[] = [
     term: "Kenosis",
     category: "Philosophy & Ethics",
     oneLiner: "The self-emptying of Christ in the Incarnation — the voluntary setting aside of divine prerogatives to take on human form.",
-    paragraph: "Kenosis comes from Philippians 2:7, where Paul says Christ 'emptied himself' (Greek: ekenosen) and took the form of a servant. The question is: what exactly did Christ empty himself of? Kenotic theologians of the nineteenth century (Gottfried Thomasius, Charles Gore) argued that Christ set aside certain divine attributes (omniscience, omnipotence, omnipresence) during the Incarnation. Classical orthodoxy resists this — the Chalcedonian definition holds that Christ retained his full divine nature while adding a human nature. A more nuanced reading is that kenosis describes not a subtraction of divinity but a voluntary concealment and non-use of divine prerogatives: Christ chose not to exercise what he never ceased to possess. The hymn in Philippians 2 is not primarily a metaphysical statement but an ethical one: 'Have this mind among yourselves, which is yours in Christ Jesus' — the pattern of kenosis is the pattern for Christian life.",
+    paragraph: "Kenosis comes from Philippians 2:7, where Paul says Christ 'emptied himself' (Greek: ekenosen) and took the form of a servant. The question is: what exactly did Christ empty himself of? Kenotic theologians of the nineteenth century (Gottfried Thomasius, Charles Gore) argued that Christ set aside certain divine attributes (omniscience, omnipotence, omnipresence) during the Incarnation. Classical orthodoxy resists this — the Chalcedonian definition holds that Christ retained his full divine nature while adding a human nature. A more careful reading is that kenosis describes not a subtraction of divinity but a voluntary concealment and non-use of divine prerogatives: Christ chose not to exercise what he never ceased to possess. The hymn in Philippians 2 is not primarily a metaphysical statement but an ethical one: 'Have this mind among yourselves, which is yours in Christ Jesus' — the pattern of kenosis is the pattern for Christian life.",
     significance: "Kenosis shapes the Christian understanding of power: true power is not grasping but releasing; true greatness is not self-assertion but self-giving. This is the most counter-cultural claim Christianity makes.",
     relatedTerms: ["Incarnation", "Imago Dei", "Theosis"],
     originalLanguage: "Greek: kenosis (emptying), from kenoo (to empty, to make void); Philippians 2:7: heauton ekenosen (he emptied himself)",
@@ -870,7 +870,7 @@ const TERMS: GlossaryTerm[] = [
     category: "Philosophy & Ethics",
     oneLiner: "The Eastern Orthodox doctrine that the goal of human life is to become partakers of the divine nature — union with God without loss of human identity.",
     paragraph: "Theosis (also called divinization or deification) is the heart of Eastern Orthodox soteriology. Athanasius captured it memorably: 'God became man so that man might become god.' This does not mean humans become God in essence — the Creator-creature distinction is never dissolved. It means humans are drawn into participation in God's own life, sharing in God's energies (grace, love, holiness) while remaining distinct persons. Peter provides the biblical basis: God has given 'very great and precious promises, so that through them you may participate in the divine nature' (2 Peter 1:4). The Western tradition has parallels — Catholic mysticism (Meister Eckhart, John of the Cross) and even Calvin's concept of union with Christ share significant overlap — but Protestantism has generally been nervous about divinization language, fearing it blurs the line between Creator and creature. The Orthodox insist the distinction is maintained: the energies of God are shared; the essence of God is not.",
-    significance: "Theosis reframes salvation from a legal transaction (guilt removed) to a transformative communion (life shared). It offers a vision of the Christian life as becoming fully human by becoming fully alive to God — not less human, but more.",
+    significance: "Theosis reframes salvation from a legal transaction (guilt removed) to a communion that changes what you are (life shared). It offers a vision of the Christian life as becoming fully human by becoming fully alive to God — not less human, but more.",
     relatedTerms: ["Kenosis", "Sanctification", "Beatific Vision"],
     originalLanguage: "Greek: theosis (deification, divinization), from theos (God); also: theopoiesis (God-making); Latin: deificatio",
   },
@@ -1154,7 +1154,7 @@ export default function TheologyGlossary() {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search 100 terms..."
+              placeholder="Search 100 terms…"
               aria-label="Search glossary terms"
               style={{
                 width: "100%",

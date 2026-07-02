@@ -178,9 +178,14 @@ export default function StartHereQuiz() {
 
             {/* QUESTION */}
             <div style={{ marginBottom: "48px" }}>
-              <h1 style={{ fontSize: "36px", fontWeight: "bold", color: "var(--ink)", marginBottom: "32px", fontFamily: "var(--F)" }}>
+              <h1 style={{ fontSize: "36px", fontWeight: "bold", color: "var(--ink)", marginBottom: currentStep === 0 ? "12px" : "32px", fontFamily: "var(--F)" }}>
                 {QUESTIONS[currentStep].title}
               </h1>
+              {currentStep === 0 && (
+                <p style={{ fontSize: "14px", color: "var(--ink3)", margin: "0 0 32px" }}>
+                  Three questions. About a minute. No grade.
+                </p>
+              )}
 
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "16px" }}>
                 {QUESTIONS[currentStep].options.map((option, i) => (

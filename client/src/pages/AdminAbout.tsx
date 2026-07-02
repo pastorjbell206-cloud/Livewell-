@@ -73,7 +73,7 @@ export default function AdminAbout() {
                 className="w-full px-4 py-3 rounded border font-mono text-sm"
                 style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF", color: "#1A1A1A" }}
                 rows={20}
-                placeholder="Write your about page content here in Markdown..."
+                placeholder="Write your about page content here in Markdown…"
               />
               <p className="font-ui text-xs mt-2" style={{ color: "#6B7280" }}>
                 Supports Markdown formatting: **bold**, *italic*, # headings, - lists, [links](url), etc.

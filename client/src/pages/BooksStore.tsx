@@ -119,7 +119,7 @@ export default function BooksStore() {
                 <input
                   type="email"
                   aria-label="Email address"
-                  placeholder="Your Email"
+                  placeholder="you@example.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full px-4 py-2 border rounded"

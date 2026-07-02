@@ -92,7 +92,7 @@ export function ToolActions({ toolName, shareText }: ToolActionsProps) {
         }}
       >
         <Share2 size={15} />
-        {copied ? "Copied!" : "Share"}
+        {copied ? "Copied" : "Share"}
       </button>
       <button
         onClick={handleStartOver}

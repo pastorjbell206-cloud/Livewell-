@@ -1039,7 +1039,7 @@ export default function ConflictGuide() {
                     }}
                   >
                     {type.description.length > 120
-                      ? type.description.slice(0, 120) + "..."
+                      ? type.description.slice(0, 120) + "…"
                       : type.description}
                   </span>
                   <span

@@ -284,7 +284,7 @@ export default function VerseFinder() {
             <input
               type="text"
               aria-label="Filter topics"
-              placeholder="Filter topics..."
+              placeholder="Filter topics…"
               value={searchFilter}
               onChange={(e) => setSearchFilter(e.target.value)}
               style={{

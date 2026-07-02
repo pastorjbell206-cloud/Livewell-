@@ -9,7 +9,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { StripeBuyButton } from "@/components/StripeBuyButton";
-import { SITE_URL } from "@/lib/site";
+import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
 
 const COVER = "/books/the-monster-in-the-mirror.jpg";
 const PAYMENT_LINK = "https://buy.stripe.com/fZu7sL0B84Bw7dAdDAa3u04";
@@ -81,7 +81,7 @@ export default function TheMonsterInTheMirror() {
             <StripeBuyButton paymentLink={PAYMENT_LINK} />
           </div>
           <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.7, color: "rgba(245,240,230,.6)", maxWidth: "56ch", margin: "44px auto 0", borderTop: "1px solid rgba(245,240,230,.18)", paddingTop: "28px" }}>
-            James Bell is the Lead Pastor of First Baptist Church of Fenton, founder of the Pastors Connection Network, and the author of more than twenty books. He came to faith from atheism and writes for the reader whose faith has outgrown the answers they were given.
+            {AUTHOR_BIO}
           </p>
         </div>
       </section>

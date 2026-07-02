@@ -224,7 +224,7 @@ export default function SearchPage() {
             <input
               type="text"
               aria-label="Search the site"
-              placeholder="Search articles, resources, books..."
+              placeholder="Search articles, resources, books…"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               className="w-full pl-12 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 text-lg"
@@ -325,7 +325,7 @@ export default function SearchPage() {
 
               {isLoading ? (
                 <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
-                  <p className="text-lg">Searching...</p>
+                  <p className="text-lg">Searching…</p>
                 </div>
               ) : results.length === 0 ? (
                 visibleLibraryMatches.length === 0 ? (
@@ -354,7 +354,7 @@ export default function SearchPage() {
                         </p>
                       </>
                     ) : (
-                      <p className="text-lg">Searching...</p>
+                      <p className="text-lg">Searching…</p>
                     )}
                   </div>
                 ) : null

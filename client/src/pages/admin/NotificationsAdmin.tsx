@@ -49,7 +49,7 @@ export function NotificationsAdmin() {
   };
 
   if (isLoading) {
-    return <AdminLayout><div className="p-4">Loading notifications...</div></AdminLayout>;
+    return <AdminLayout><div className="p-4">Loading notifications…</div></AdminLayout>;
   }
 
   return (
@@ -113,7 +113,7 @@ export function NotificationsAdmin() {
           </label>
           <div className="flex gap-2">
             <Button type="submit" disabled={createNotification.isPending} className="bg-[var(--mustard)] hover:bg-[var(--charcoal)] text-white">
-              {createNotification.isPending ? 'Creating...' : 'Create Notification'}
+              {createNotification.isPending ? 'Creating…' : 'Create Notification'}
             </Button>
             <Button type="button" onClick={() => setShowForm(false)} variant="outline">Cancel</Button>
           </div>

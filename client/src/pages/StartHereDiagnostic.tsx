@@ -433,11 +433,25 @@ export default function StartHereDiagnostic() {
                   lineHeight: 1.15,
                   letterSpacing: "-0.02em",
                   color: "white",
-                  marginBottom: "48px",
+                  marginBottom: step === 0 ? "14px" : "48px",
                 }}
               >
                 {currentQuestion.title}
               </h1>
+
+              {/* Quiet scope line, arrival only */}
+              {step === 0 && (
+                <p
+                  style={{
+                    fontFamily: "var(--U)",
+                    fontSize: "13px",
+                    color: "rgba(255, 255, 255, 0.45)",
+                    margin: "0 0 44px",
+                  }}
+                >
+                  Five questions. About two minutes. No grade.
+                </p>
+              )}
 
               {/* Options */}
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>

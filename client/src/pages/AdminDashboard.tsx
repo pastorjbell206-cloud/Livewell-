@@ -34,7 +34,7 @@ export default function AdminDashboard() {
   const handleSeedContent = async () => {
     if (!confirm(`This will import ${contentData.posts.length} articles and ${contentData.books.length} books. Duplicates will be skipped. Continue?`)) return;
     setSeeding(true);
-    setSeedStatus("Seeding content...");
+    setSeedStatus("Seeding content…");
     try {
       const res = await fetch("/api/admin/seed-content", {
         method: "POST",
@@ -58,9 +58,9 @@ export default function AdminDashboard() {
   };
 
   const handleFixApostrophes = async () => {
-    if (!confirm("Repair missing apostrophes (Gods, churchs, dont, ...) across all posts and books? Slugs and URLs are never changed, and it is safe to run more than once.")) return;
+    if (!confirm("Repair missing apostrophes (Gods, churchs, dont, …) across all posts and books? Slugs and URLs are never changed, and it is safe to run more than once.")) return;
     setFixing(true);
-    setFixStatus("Repairing text...");
+    setFixStatus("Repairing text…");
     try {
       const res = await fetch("/api/admin/fix-apostrophes", {
         method: "POST",
@@ -249,11 +249,11 @@ export default function AdminDashboard() {
               style={{ backgroundColor: seeding ? "#9CA3AF" : "#2D4A3E", color: "#F7F5F0", cursor: seeding ? "default" : "pointer" }}
             >
               {seeding ? <Loader2 size={16} className="animate-spin" /> : <Upload size={16} />}
-              {seeding ? "Importing..." : "Import All Content"}
+              {seeding ? "Importing…" : "Import All Content"}
             </button>
             <button
               onClick={async () => {
-                setSeedStatus("Organizing articles into pillars...");
+                setSeedStatus("Organizing articles into pillars…");
                 try {
                   const r = await fetch("/api/admin/organize-articles", { credentials: "include" });
                   const d = await r.json();
@@ -297,7 +297,7 @@ export default function AdminDashboard() {
               style={{ backgroundColor: fixing ? "#9CA3AF" : "#1A1A1A", color: "#F7F5F0", cursor: fixing ? "default" : "pointer" }}
             >
               {fixing ? <Loader2 size={16} className="animate-spin" /> : <Wand2 size={16} />}
-              {fixing ? "Repairing..." : "Repair Text"}
+              {fixing ? "Repairing…" : "Repair Text"}
             </button>
           </div>
           {fixStatus && (

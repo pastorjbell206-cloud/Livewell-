@@ -69,7 +69,7 @@ export function AdminCommentsPanel() {
           style={{ backgroundColor: "#F7F5F0" }}
         >
           <Loader2 size={24} className="animate-spin" style={{ color: "#B8963E" }} />
-          <span style={{ color: "#6B7280" }}>Loading comments...</span>
+          <span style={{ color: "#6B7280" }}>Loading comments…</span>
         </div>
       )}
 

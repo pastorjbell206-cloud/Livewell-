@@ -242,9 +242,9 @@ export default function Diagnostic() {
               maxWidth: "60ch",
             }}
           >
-            Eight questions. Four dimensions. Answer honestly — no one sees
-            this but you. At the end, one essay, one book, and one optional
-            email track for what to do next.
+            Eight questions. Four dimensions. About three minutes. Answer
+            honestly — no one sees this but you. At the end, one essay, one
+            book, and one optional email track for what to do next.
           </p>
         </div>
       </section>

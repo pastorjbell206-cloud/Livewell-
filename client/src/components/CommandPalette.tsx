@@ -135,7 +135,7 @@ export default function CommandPalette() {
               value={input}
               onValueChange={setInput}
               aria-label="Search essays, books, tools, and pages"
-              placeholder="Search essays, books, tools, pages..."
+              placeholder="Search essays, books, tools, pages…"
               style={{
                 width: "100%",
                 border: "none",
@@ -180,7 +180,7 @@ export default function CommandPalette() {
                   fontSize: 14,
                 }}
               >
-                Searching...
+                Searching…
               </div>
             )}
 

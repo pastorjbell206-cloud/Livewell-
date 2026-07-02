@@ -884,7 +884,7 @@ export default function ScriptureMemory() {
                             onChange={(e) =>
                               handleRecallInput(verse.ref, e.target.value)
                             }
-                            placeholder="Type the verse here..."
+                            placeholder="Type the verse here…"
                             rows={4}
                             style={{
                               width: "100%",

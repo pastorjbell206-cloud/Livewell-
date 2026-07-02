@@ -113,7 +113,7 @@ export default function WorkWithJames() {
                   <div>
                     <label htmlFor="subject" style={{ display: "block", fontSize: "13px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--U)", marginBottom: "6px" }}>Subject</label>
                     <select id="subject" value={form.subject} onChange={(e) => setForm({ ...form, subject: e.target.value })} style={{ width: "100%", padding: "10px 14px", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "15px", fontFamily: "var(--B)", background: "white", boxSizing: "border-box" }}>
-                      <option value="">Select a topic...</option>
+                      <option value="">Select a topic…</option>
                       <option value="Speaking">Speaking & Preaching</option>
                       <option value="Coaching">Pastoral Coaching</option>
                       <option value="Consulting">Church Consulting</option>
@@ -128,7 +128,7 @@ export default function WorkWithJames() {
                   </div>
                   <button type="submit" disabled={status === "sending"} style={{ padding: "12px 24px", background: status === "sending" ? "var(--ink3)" : "var(--gold)", color: "var(--ink)", border: "none", borderRadius: "4px", fontSize: "15px", fontWeight: 600, fontFamily: "var(--U)", cursor: status === "sending" ? "default" : "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px" }}>
                     <Send size={16} />
-                    {status === "sending" ? "Sending..." : "Send Message"}
+                    {status === "sending" ? "Sending…" : "Send Message"}
                   </button>
                   {status === "error" && (
                     <p style={{ color: "#b00020", fontSize: "14px", fontFamily: "var(--U)" }}>Something went wrong. Please try again or email directly.</p>

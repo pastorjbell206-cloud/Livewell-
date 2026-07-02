@@ -112,14 +112,14 @@ const TOOLS = [
   },
   {
     title: "Marriage Health Assessment",
-    description: "A 15-question diagnostic across communication, intimacy, trust, shared vision, and conflict. Not a quiz — a real assessment with actionable recommendations.",
+    description: "Not a quiz. Fifteen questions across communication, intimacy, trust, shared vision, and conflict — and what to do about what you find.",
     href: "/tools/marriage-assessment",
     icon: HeartHandshake,
     color: "var(--goldlt)",
   },
   {
     title: "Financial Health Check",
-    description: "A biblical stewardship assessment across generosity, contentment, stewardship, and family provision. Scripture-grounded with practical next steps.",
+    description: "Twelve questions across generosity, contentment, stewardship, and family provision — and what your answers say about who you believe owns what you have.",
     href: "/tools/financial-health",
     icon: DollarSign,
     color: "var(--ink2)",
@@ -140,7 +140,7 @@ const TOOLS = [
   },
   {
     title: "Emotional Health Assessment",
-    description: "15 questions across self-awareness, boundaries, grief, forgiveness, and rest. Scripture-grounded diagnostic with practical next steps.",
+    description: "Fifteen questions across self-awareness, boundaries, grief, forgiveness, and rest — and where Scripture meets each one.",
     href: "/tools/emotional-health",
     icon: Brain,
     color: "var(--goldlt)",
@@ -168,14 +168,14 @@ const TOOLS = [
   },
   {
     title: "Pastor Burnout Diagnostic",
-    description: "24 questions across calling, isolation, marriage impact, board relations, and more. Your burnout signature with a recovery roadmap.",
+    description: "Twenty-four questions across calling, isolation, marriage, and the board. It names the shape of your exhaustion and the way back.",
     href: "/tools/pastor-burnout",
     icon: Shield,
     color: "var(--ink2)",
   },
   {
     title: "Life Audit",
-    description: "24 questions across 8 life areas: spiritual, marriage, parenting, physical, financial, emotional, vocational, community. Your strengths and growth areas identified.",
+    description: "24 questions across 8 life areas: spiritual, marriage, parenting, physical, financial, emotional, vocational, community. It names what is strong and what is slipping.",
     href: "/tools/life-audit",
     icon: Target,
     color: "var(--goldlt)",

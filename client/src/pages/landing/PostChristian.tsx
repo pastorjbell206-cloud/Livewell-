@@ -248,7 +248,7 @@ export default function PostChristian() {
             The book-length treatment of the ideas in this series. For anyone who wants to go deeper than an essay can take you.
           </p>
           <Link href="/books/deconstruction-of-faith" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--charcoal)", color: "white", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Learn More</button>
+            <button style={{ background: "var(--charcoal)", color: "white", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>See the book →</button>
           </Link>
         </div>
       </section>

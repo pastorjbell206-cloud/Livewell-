@@ -51,7 +51,7 @@ export default function TheologyQuiz() {
         <div style={{ minHeight: "60vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--paper)" }}>
           <div style={{ textAlign: "center" }}>
             <div style={{ width: "40px", height: "40px", border: "3px solid var(--bone-muted)", borderTop: "3px solid var(--mustard)", borderRadius: "50%", animation: "spin 1s linear infinite", margin: "0 auto 16px" }} />
-            <p style={{ color: "var(--ink3)", fontFamily: "var(--F)" }}>Loading your quiz...</p>
+            <p style={{ color: "var(--ink3)", fontFamily: "var(--F)" }}>Loading your quiz…</p>
           </div>
         </div>
         <Footer />
@@ -63,7 +63,7 @@ export default function TheologyQuiz() {
     <>
       <SEOMeta
         title="Theological Position Quiz"
-        description="Discover which of LiveWell's tracks lands closest to where your faith is right now. Take the free quiz and get personalized article recommendations."
+        description="A free quiz: ten questions about what you actually believe, about four minutes, and then the essays that meet you where your answers say you are."
         keywords="theology quiz, faith assessment, James Bell, theological position"
         url={`${SITE_URL}/quiz`}
       />
@@ -76,8 +76,11 @@ export default function TheologyQuiz() {
           <h1 style={{ fontSize: "clamp(32px, 5vw, 48px)", fontWeight: "bold", color: "var(--paper)", fontFamily: "var(--F)", marginBottom: "16px" }}>
             Where Do You Stand Theologically?
           </h1>
-          <p style={{ fontSize: "16px", color: "rgba(255,255,255,0.75)", lineHeight: "1.7" }}>
-            Discover which of LiveWell's tracks lands closest to where your faith is right now. 10 questions. Personalized reading recommendations.
+          <p style={{ fontSize: "16px", color: "rgba(255,255,255,0.75)", lineHeight: "1.7", margin: "0 0 12px" }}>
+            Answer plainly. At the end: the essays that meet you where your answers say you are.
+          </p>
+          <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.55)", lineHeight: "1.7", margin: 0 }}>
+            Ten questions. About four minutes. No grade.
           </p>
         </div>
       </section>
@@ -158,7 +161,7 @@ export default function TheologyQuiz() {
               <div style={{ textAlign: "center", marginBottom: "40px" }}>
                 <div style={{ fontSize: "48px", marginBottom: "16px" }}>✓</div>
                 <h2 style={{ fontSize: "32px", fontWeight: "bold", color: "var(--ink)", fontFamily: "var(--F)", marginBottom: "8px" }}>Your Results</h2>
-                <p style={{ color: "var(--ink3)", fontSize: "16px" }}>Here's what your answers reveal about your theological inclinations.</p>
+                <p style={{ color: "var(--ink3)", fontSize: "16px" }}>Your answers point somewhere. Start reading there.</p>
               </div>
 
               {recommendationsQuery.data && (
