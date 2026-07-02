@@ -713,6 +713,7 @@ export default function PastorBurnout() {
     setCurrentCategory(0);
     setShowResults(false);
     setPrevious(null);
+    setSaved(true);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -741,6 +742,22 @@ export default function PastorBurnout() {
   );
 
   const overall = getOverallBurnout(totalScore);
+
+  /*
+    The recovery-check rhythm. Before the assessment, lastRun is the most
+    recent past attempt; after finishAndSave it is the run just taken.
+    checkIntervalDays gives 30 days for the two lowest bands, 90 otherwise.
+  */
+  const lastRun = history.length > 0 ? history[history.length - 1] : null;
+  const runs = chartableRuns(history);
+  const returnDue =
+    lastRun !== null &&
+    new Date() >= addDays(lastRun.date, checkIntervalDays(lastRun.total));
+  const checkInterval = checkIntervalDays(totalScore);
+  const nextDue = addDays(
+    lastRun ? lastRun.date : new Date().toISOString(),
+    checkInterval
+  );
 
   // Identify the 2-3 categories driving burnout (lowest scores)
   const categoryScores = CATEGORIES.map((cat) => ({
@@ -780,8 +797,33 @@ export default function PastorBurnout() {
         }}
       />
 
+      {/*
+        Print document styles. On screen the .pb-print document is hidden;
+        in print, the screen UI is hidden and the typeset document is the
+        whole page. Literal black-on-white is permitted inside @media print
+        only -- this is paper, not the palette.
+      */}
+      <style>{`
+        .pb-print{display:none}
+        @media print{
+          nav, footer, .skip-link, .pb-screen{display:none !important}
+          .pb-print{display:block !important;color:#000;background:#fff;font-family:var(--B);font-size:11pt;line-height:1.55;padding:0}
+          .pb-print h1{font-family:var(--F);font-weight:400;font-size:22pt;letter-spacing:-0.02em;margin:0 0 4pt}
+          .pb-print h2{font-family:var(--F);font-weight:500;font-size:15pt;margin:16pt 0 6pt;page-break-after:avoid}
+          .pb-print h3{font-family:var(--F);font-weight:500;font-size:12.5pt;margin:10pt 0 3pt;page-break-after:avoid}
+          .pb-print p{margin:0 0 6pt;max-width:none}
+          .pb-print ul{margin:0 0 6pt;padding-left:14pt}
+          .pb-print li{margin-bottom:3pt}
+          .pb-print .pb-print-meta{font-size:9.5pt;color:#333;margin-bottom:10pt}
+          .pb-print .pb-print-row{display:flex;justify-content:space-between;gap:12pt;border-bottom:0.5pt solid #999;padding:3pt 0;page-break-inside:avoid}
+          .pb-print .pb-print-block{page-break-inside:avoid;margin-bottom:10pt}
+          .pb-print .pb-print-foot{margin-top:14pt;padding-top:6pt;border-top:0.5pt solid #999;font-size:9.5pt;color:#333}
+        }
+      `}</style>
+
       {/* Hero */}
       <section
+        className="pb-screen"
         style={{
           background: "var(--charcoal)",
           color: "var(--bone)",
@@ -914,9 +956,41 @@ export default function PastorBurnout() {
       {/* Assessment Content */}
       {!showResults && (
         <section
+          className="pb-screen"
           style={{ padding: "48px 32px 80px", background: "var(--bone)" }}
         >
           <div className="wrap" style={{ maxWidth: "700px" }}>
+            {/* Return banner -- a past attempt is beyond its check window */}
+            {currentCategory === 0 &&
+              answeredCount === 0 &&
+              lastRun &&
+              returnDue && (
+                <div
+                  style={{
+                    background: "var(--card)",
+                    border: "1px solid var(--border)",
+                    borderLeft: "3px solid var(--mustard)",
+                    borderRadius: "2px",
+                    padding: "16px 20px",
+                    marginBottom: "32px",
+                  }}
+                >
+                  <p
+                    style={{
+                      fontSize: "15px",
+                      lineHeight: 1.7,
+                      color: "var(--ink)",
+                      fontFamily: "var(--B)",
+                      margin: 0,
+                    }}
+                  >
+                    You took this on {fmtDate(lastRun.date)}. The check window
+                    has passed. Burnout does not hold still -- answer again and
+                    see what has moved.
+                  </p>
+                </div>
+              )}
+
             {/* Category Header */}
             <div style={{ marginBottom: "40px" }}>
               <div
@@ -1128,8 +1202,10 @@ export default function PastorBurnout() {
 
       {/* Results */}
       {showResults && (
+        <>
         <section
           ref={resultsRef}
+          className="pb-screen"
           style={{ padding: "48px 32px 80px", background: "var(--bone)" }}
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
@@ -1204,6 +1280,152 @@ export default function PastorBurnout() {
               >
                 {overall.description}
               </p>
+            </div>
+
+            {/* Immediate help -- unmissable for the lowest band */}
+            {overall.label === "Crisis" && (
+              <div
+                role="region"
+                aria-label="Immediate help"
+                style={{
+                  background: "var(--card)",
+                  border: "2px solid var(--alert)",
+                  borderRadius: "2px",
+                  padding: "32px 36px",
+                  marginBottom: "32px",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "12px",
+                    fontWeight: 700,
+                    letterSpacing: "0.18em",
+                    color: "var(--alert)",
+                    fontFamily: "var(--U)",
+                    marginBottom: "16px",
+                  }}
+                >
+                  BEFORE ANYTHING ELSE
+                </div>
+                <p
+                  style={{
+                    fontSize: "16px",
+                    lineHeight: 1.8,
+                    color: "var(--ink)",
+                    fontFamily: "var(--B)",
+                    marginBottom: "16px",
+                  }}
+                >
+                  A score in this range is not a verdict on you. It is a
+                  reading of what you have been carrying, and of how long you
+                  have carried it alone. The exhaustion is real. The voice
+                  that says it will never lift is not telling you the truth.
+                </p>
+                <p
+                  style={{
+                    fontSize: "16px",
+                    lineHeight: 1.8,
+                    color: "var(--ink)",
+                    fontFamily: "var(--B)",
+                    marginBottom: "20px",
+                  }}
+                >
+                  This tool is a diagnostic, not a clinician. Twenty-four
+                  questions can trace the shape of the weight. They cannot sit
+                  across the table from you. A real person can -- a doctor, a
+                  licensed counselor, a pastor who has carried it too. Talk to
+                  one this week, not this quarter.
+                </p>
+                <a
+                  href="tel:988"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "14px",
+                    padding: "18px 22px",
+                    background: "var(--alert-bg)",
+                    borderRadius: "2px",
+                    textDecoration: "none",
+                  }}
+                >
+                  <Phone
+                    size={20}
+                    style={{ color: "var(--alert)", flexShrink: 0 }}
+                    aria-hidden="true"
+                  />
+                  <span>
+                    <span
+                      style={{
+                        display: "block",
+                        fontSize: "17px",
+                        fontFamily: "var(--F)",
+                        fontWeight: 500,
+                        color: "var(--ink)",
+                        marginBottom: "2px",
+                      }}
+                    >
+                      Call or text 988
+                    </span>
+                    <span
+                      style={{
+                        fontSize: "13px",
+                        fontFamily: "var(--U)",
+                        color: "var(--ink-muted)",
+                      }}
+                    >
+                      The Suicide &amp; Crisis Lifeline. Any hour of any
+                      night, a person answers.
+                    </span>
+                  </span>
+                </a>
+              </div>
+            )}
+
+            {/* The recovery-check rhythm */}
+            <div style={{ marginBottom: "32px" }}>
+              {previous && (
+                <p
+                  style={{
+                    fontSize: "14px",
+                    lineHeight: 1.7,
+                    color: "var(--ink-muted)",
+                    fontFamily: "var(--U)",
+                    margin: "0 0 6px",
+                  }}
+                >
+                  Against your reading on {fmtDate(previous.date)} --{" "}
+                  {formatDelta(previous.total, totalScore)}.
+                </p>
+              )}
+              <p
+                style={{
+                  fontSize: "14px",
+                  lineHeight: 1.7,
+                  color: "var(--ink-muted)",
+                  fontFamily: "var(--U)",
+                  margin: 0,
+                }}
+              >
+                Your next check is due {fmtDate(nextDue)}.{" "}
+                {checkInterval === 30
+                  ? "Thirty days, not ninety -- a score in this range moves fast, in either direction. Come back soon enough to catch it."
+                  : "Ninety days is long enough for the slow work to show. Put it on the calendar now, while the answers are honest."}
+              </p>
+              {!saved && (
+                <p
+                  style={{
+                    fontSize: "14px",
+                    lineHeight: 1.7,
+                    color: "var(--ink-muted)",
+                    fontFamily: "var(--U)",
+                    margin: "6px 0 0",
+                  }}
+                >
+                  This browser would not save this run, so it will not appear
+                  in your history. The results on this screen are still yours
+                  -- print them before you leave.
+                </p>
+              )}
             </div>
 
             {/* Category Breakdown Bars */}
@@ -1295,6 +1517,93 @@ export default function PastorBurnout() {
                   );
                 })}
               </div>
+            </div>
+
+            {/* The long view -- attempt history across visits */}
+            <div
+              style={{
+                background: "var(--card)",
+                borderRadius: "2px",
+                padding: "36px 40px",
+                border: "1px solid var(--border)",
+                marginBottom: "32px",
+              }}
+            >
+              <h3
+                style={{
+                  fontSize: "13px",
+                  fontWeight: 700,
+                  letterSpacing: "0.15em",
+                  color: "var(--mustard)",
+                  fontFamily: "var(--U)",
+                  marginBottom: "20px",
+                }}
+              >
+                THE LONG VIEW
+              </h3>
+              {runs.length >= 2 ? (
+                <>
+                  <TrajectoryChart runs={runs} />
+                  <p
+                    style={{
+                      fontSize: "13px",
+                      lineHeight: 1.7,
+                      color: "var(--ink-muted)",
+                      fontFamily: "var(--U)",
+                      margin: "12px 0 0",
+                    }}
+                  >
+                    Higher is healthier.{" "}
+                    {runs.length === 2
+                      ? "Two readings"
+                      : `${runs.length} readings`}
+                    , stored in this browser and nowhere else.
+                  </p>
+                </>
+              ) : (
+                <p
+                  style={{
+                    fontSize: "15px",
+                    lineHeight: 1.8,
+                    color: "var(--ink)",
+                    fontFamily: "var(--B)",
+                    margin: 0,
+                  }}
+                >
+                  One reading is a point, not a line. The line begins the
+                  second time you take this, and the second one is due{" "}
+                  {fmtDate(nextDue)}.{" "}
+                  {saved
+                    ? "Come back then. This browser will remember."
+                    : "Come back then, and bring the printed copy -- this browser could not save the run."}
+                </p>
+              )}
+              {history.length > 0 && (
+                <button
+                  onClick={handleClearHistory}
+                  style={{
+                    marginTop: "20px",
+                    fontSize: "13px",
+                    fontFamily: "var(--U)",
+                    fontWeight: 600,
+                    padding: "10px 18px",
+                    borderRadius: "2px",
+                    cursor: "pointer",
+                    background: "none",
+                    color: "var(--ink-muted)",
+                    border: "1px solid var(--border)",
+                    transition: "border-color 0.2s",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderColor = "var(--ink-muted)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = "var(--border)";
+                  }}
+                >
+                  Clear saved attempts
+                </button>
+              )}
             </div>
 
             {/* Burnout Signature */}
@@ -1482,6 +1791,20 @@ export default function PastorBurnout() {
                   WHO TO CALL
                 </h3>
               </div>
+              <p
+                style={{
+                  fontSize: "15px",
+                  lineHeight: 1.8,
+                  color: "var(--ink)",
+                  fontFamily: "var(--B)",
+                  marginBottom: "20px",
+                }}
+              >
+                A diagnostic is not a clinician. It can trace the shape of the
+                exhaustion; it cannot see you. If your score landed low, the
+                next step is not another tool -- it is a person. These are
+                real paths, and none of them require you to hit bottom first.
+              </p>
               <div
                 style={{
                   display: "flex",
@@ -1491,29 +1814,36 @@ export default function PastorBurnout() {
               >
                 {[
                   {
+                    label: "988 Suicide & Crisis Lifeline",
+                    desc: "Call or text 988, any hour of any night. A person answers.",
+                    href: "tel:988",
+                  },
+                  {
                     label: "Pastors Connection Network",
-                    desc: "Confidential peer support, mentoring, and crisis referrals for pastors.",
+                    desc: "Pastors who tell each other the truth. Confidential peer support, mentoring, and crisis referrals.",
                     href: "/pastors",
+                  },
+                  {
+                    label: "The Health of the Pastor",
+                    desc: "A study guide on the pastor's own health -- worked through alone, or with people who will not let you disappear.",
+                    href: "/studyguides/pastoral-health",
+                  },
+                  {
+                    label: "Leadership Formation",
+                    desc: "The longer work: character before competence, the inner life before the public one.",
+                    href: "/leadership/formation",
                   },
                   {
                     label: "Focus on the Family Clergy Care",
                     desc: "Free counseling consultation for pastors and their families.",
                     href: "https://www.focusonthefamily.com/get-help/clergy-care/",
                   },
-                  {
-                    label: "988 Suicide & Crisis Lifeline",
-                    desc: "24/7 crisis support. Call or text 988. You are not alone.",
-                    href: "tel:988",
-                  },
                 ].map((resource) => (
                   <a
                     key={resource.label}
                     href={resource.href}
                     target={
-                      resource.href.startsWith("http") ||
-                      resource.href.startsWith("tel:")
-                        ? "_blank"
-                        : undefined
+                      resource.href.startsWith("http") ? "_blank" : undefined
                     }
                     rel={
                       resource.href.startsWith("http")
@@ -1758,7 +2088,7 @@ export default function PastorBurnout() {
                 }}
               >
                 <Printer size={16} />
-                Print Results
+                Print your results
               </button>
               <button
                 onClick={handleRestart}
@@ -1915,6 +2245,107 @@ export default function PastorBurnout() {
             </div>
           </div>
         </section>
+
+        {/* Print document. Hidden on screen; the whole page when printed. */}
+        <div className="pb-print">
+          <h1>Pastor Burnout Diagnostic</h1>
+          <p className="pb-print-meta">
+            Taken {fmtDate(new Date())}. Scored in the browser; nothing left
+            the device.
+          </p>
+          <p
+            style={{
+              fontFamily: "var(--F)",
+              fontSize: "14pt",
+              lineHeight: 1.4,
+            }}
+          >
+            {totalScore} / 120 -- {overall.label}
+          </p>
+          <p>{overall.description}</p>
+
+          <h2>The eight areas</h2>
+          {CATEGORIES.map((cat) => {
+            const score = getCategoryScore(cat);
+            const delta = formatDelta(previous?.scores[cat.slug], score);
+            return (
+              <div key={cat.slug} className="pb-print-row">
+                <span>{cat.name}</span>
+                <span>
+                  {score} / 15, {getLevelLabel(getScoreLevel(score, 15))}
+                  {delta ? ` (${delta})` : ""}
+                </span>
+              </div>
+            );
+          })}
+
+          <h2>What to do this week</h2>
+          <ul>
+            {weeklyActions.map((action, i) => (
+              <li key={i}>{action}</li>
+            ))}
+          </ul>
+
+          {burnoutDrivers.length > 0 && (
+            <>
+              <h2>Where recovery starts</h2>
+              {burnoutDrivers.map((d) => (
+                <div key={d.cat.slug} className="pb-print-block">
+                  <h3>
+                    {d.cat.name}, {d.score} / 15
+                  </h3>
+                  <ul>
+                    {d.cat.recovery[
+                      d.level === "healthy" ? "high" : d.level
+                    ].map((rec, i) => (
+                      <li key={i}>{rec}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </>
+          )}
+
+          <h2>Real help</h2>
+          <p>
+            A diagnostic is not a clinician. It can trace the shape of the
+            exhaustion; it cannot see you. If your score landed low, the next
+            step is a person, not another tool. The exhaustion is real. The
+            voice that says it will never lift is not telling the truth.
+          </p>
+          <ul>
+            <li>
+              988 Suicide &amp; Crisis Lifeline -- call or text 988, any hour
+              of any night. A person answers.
+            </li>
+            <li>
+              Pastors Connection Network -- livewellbyjamesbell.co/pastors.
+              Pastors who tell each other the truth.
+            </li>
+            <li>
+              The Health of the Pastor study guide --
+              livewellbyjamesbell.co/studyguides/pastoral-health
+            </li>
+            <li>
+              Leadership Formation --
+              livewellbyjamesbell.co/leadership/formation
+            </li>
+            <li>
+              Focus on the Family Clergy Care -- free counseling consultation
+              for pastors and their families.
+            </li>
+          </ul>
+
+          <p className="pb-print-foot">
+            Next check due {fmtDate(nextDue)}.{" "}
+            {checkInterval === 30
+              ? "Thirty days, not ninety -- a score in this range moves fast, in either direction."
+              : "Ninety days is long enough for the slow work to show."}
+            <br />
+            livewellbyjamesbell.co/tools/pastor-burnout
+          </p>
+        </div>
+        </>
       )}
     </Layout>
   );
