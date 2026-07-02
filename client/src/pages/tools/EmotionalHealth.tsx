@@ -577,6 +577,40 @@ export default function EmotionalHealth() {
                   {overall.description}
                 </p>
 
+                {(overall.label === "Under Significant Strain" ||
+                  overall.label === "Approaching Burnout") && (
+                  <div
+                    style={{
+                      marginTop: "24px",
+                      background: "var(--bone)",
+                      border: "1px solid var(--border)",
+                      borderLeft: "3px solid var(--mustard)",
+                      borderRadius: "2px",
+                      padding: "20px 24px",
+                      maxWidth: "68ch",
+                    }}
+                  >
+                    <p style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--ink)", margin: "0 0 10px" }}>
+                      A word before the practical steps
+                    </p>
+                    <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.75, color: "var(--ink)", margin: "0 0 14px" }}>
+                      A score in this range is a reason to talk to a real person,
+                      not just to try harder. A licensed counselor is the right
+                      next step, and seeing one is not a failure of faith. And if
+                      the depletion has turned into not wanting to be here, that
+                      is not something to carry alone for another day.
+                    </p>
+                    <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                      <a href="tel:988" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>
+                        988 Suicide &amp; Crisis Lifeline — call or text 988, any hour →
+                      </a>
+                      <a href="https://www.psychologytoday.com/us/therapists" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>
+                        Find a licensed counselor near you →
+                      </a>
+                    </div>
+                  </div>
+                )}
+
                 {/* Score bar */}
                 <div
                   style={{

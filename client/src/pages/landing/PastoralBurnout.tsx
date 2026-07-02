@@ -70,6 +70,34 @@ export default function PastoralBurnout() {
         </div>
       </section>
 
+      {/* Real help (QW-6: the care standard requires a visible path) */}
+      <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
+        <div style={{ maxWidth: "720px", margin: "0 auto" }}>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>IF YOU NEED MORE THAN AN ESSAY</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "68ch" }}>Essays help a pastor feel less alone. They are not care. These are external organizations we are not affiliated with, whose work we trust — and asking for help is not the end of your ministry. It is usually how it survives.</p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+            <a href="https://www.focusonthefamily.com/get-help/clergy-care/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+              <div style={{ background: "var(--card)", padding: "20px 24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
+                <p style={{ fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, color: "var(--ink)", margin: "0 0 4px" }}>Focus on the Family Clergy Care</p>
+                <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6, margin: 0 }}>Free counseling consultation for pastors and their families.</p>
+              </div>
+            </a>
+            <a href="tel:988" style={{ textDecoration: "none" }}>
+              <div style={{ background: "var(--card)", padding: "20px 24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
+                <p style={{ fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, color: "var(--ink)", margin: "0 0 4px" }}>988 Suicide & Crisis Lifeline</p>
+                <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6, margin: 0 }}>Call or text 988, any hour. Pastors call it too.</p>
+              </div>
+            </a>
+            <a href="https://www.psychologytoday.com/us/therapists" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+              <div style={{ background: "var(--card)", padding: "20px 24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
+                <p style={{ fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, color: "var(--ink)", margin: "0 0 4px" }}>Find a counselor</p>
+                <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6, margin: 0 }}>Licensed counselors near you — many work with clergy and understand the role.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Email Signup */}
       <section style={{ background: "var(--charcoal)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
