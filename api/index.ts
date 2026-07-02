@@ -2609,7 +2609,10 @@ async function ebookCheckout(req: VercelRequest, res: VercelResponse) {
     });
     return json(res, 200, { url: session.url });
   } catch (e: any) {
-    return json(res, 500, { error: String(e?.message || e) });
+    // Log the real error server-side; never leak raw Stripe internals to the
+    // buyer-facing button (key names, decline plumbing, stack fragments).
+    console.error("[checkout]", e?.message || e);
+    return json(res, 500, { error: "Checkout is unavailable right now. Please try again in a few minutes." });
   }
 }
 
