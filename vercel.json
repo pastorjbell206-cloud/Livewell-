@@ -2,7 +2,7 @@
     "buildCommand": "rm -rf node_modules/.vite .vite dist && pnpm run pdfs && pnpm run manuals && pnpm run og && pnpm run howtos && pnpm run wisdom && pnpm run sitemap && pnpm run build && pnpm run prerender",
     "outputDirectory": "dist/public",
     "trailingSlash": false,
-    "installCommand": "pnpm install --no-frozen-lockfile",
+    "installCommand": "pnpm install --frozen-lockfile",
     "functions": {
         "api/index.ts": { "maxDuration": 60, "includeFiles": "api/{_ebooks,_data}/**" }
     },
@@ -33,7 +33,7 @@
                             { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
                             { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=()" },
                             { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
-                            { "key": "Content-Security-Policy-Report-Only", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://js.stripe.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:; frame-src https://js.stripe.com https://checkout.stripe.com https://www.youtube.com; frame-ancestors 'self'" }
+                            { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://js.stripe.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self' https:; frame-src https://js.stripe.com https://checkout.stripe.com https://www.youtube.com; frame-ancestors 'self'" }
                   ]
           }
     ],
