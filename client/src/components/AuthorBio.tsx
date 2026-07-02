@@ -20,6 +20,9 @@ const JAMES_BELL_BIO =
 const JAMES_BELL_IMAGE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg";
 
+const SUSANNA_BELL_BIO =
+  "Susanna Bell is married to James Bell and the mother of their five sons. She writes on motherhood and womanhood — out of a fundamentalist girlhood that preached rules as gospel, and the long work of reading for herself the book that world weaponized.";
+
 export function AuthorBio({
   author = "James Bell",
   bio,
@@ -29,7 +32,16 @@ export function AuthorBio({
   const isJamesBell =
     author.toLowerCase().includes("james") &&
     author.toLowerCase().includes("bell");
-  const resolvedBio = bio ?? (isJamesBell ? JAMES_BELL_BIO : undefined);
+  const isSusannaBell =
+    author.toLowerCase().includes("susanna") &&
+    author.toLowerCase().includes("bell");
+  const resolvedBio =
+    bio ??
+    (isJamesBell
+      ? JAMES_BELL_BIO
+      : isSusannaBell
+        ? SUSANNA_BELL_BIO
+        : undefined);
   const resolvedImage = image ?? (isJamesBell ? JAMES_BELL_IMAGE : undefined);
 
   return (
