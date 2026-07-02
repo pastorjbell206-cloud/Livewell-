@@ -37,7 +37,7 @@ const TOOL_MAP: Record<string, ToolRec> = {
     name: "Theology Quiz",
     description:
       "Discover where you land on the theological map — and why it matters.",
-    href: "/quiz",
+    href: "/tools/theology-quiz",
   },
   "marriage-assessment": {
     name: "Marriage Assessment",

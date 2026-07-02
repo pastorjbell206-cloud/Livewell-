@@ -24,6 +24,7 @@ import { AudienceShare } from "@/components/AudienceShare";
 import { AudienceLabel } from "@/components/AudienceLabel";
 import { TrackChip } from "@/components/TrackChip";
 import { KeepReadingBook } from "@/components/KeepReadingBook";
+import ArticleNextSteps from "@/components/ArticleNextSteps";
 import { GeneratedHero } from "@/components/GeneratedHero";
 import { trpc } from "@/lib/trpc";
 import { pillarForPost } from "@/lib/taxonomy";
@@ -727,6 +728,10 @@ export default function ArticleDetail() {
             <AudienceShare title={post.title} url={canonical} />
           </div>
         </section>
+
+        {/* NEXT STEPS — the matched tool and reading path for this essay
+            (built long ago, never imported; revived by QW-16) */}
+        <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
 
         {/* KEEP READING — the book that carries this essay's argument to full length */}
         <KeepReadingBook post={post} />
