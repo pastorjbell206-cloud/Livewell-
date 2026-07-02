@@ -4,6 +4,7 @@ import { ToolActions } from "@/components/ToolActions";
 import { useState } from "react";
 import { Link } from "wouter";
 import { ArrowLeft, ChevronRight } from "lucide-react";
+import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 interface Statement {
   text: string;
@@ -244,23 +245,81 @@ function getOverallInterpretation(totalScore: number): {
   };
 }
 
+/* ── Saved progress (HS-5): survive a refresh mid-assessment ───── */
+
+const STORAGE_KEY = "livewell-progress-emotional-health";
+
+interface StoredProgress {
+  answers: Record<number, number>;
+  step: number;
+  savedAt: string;
+}
+
+function isStoredProgress(x: unknown): x is StoredProgress {
+  if (typeof x !== "object" || x === null) return false;
+  const p = x as Record<string, unknown>;
+  return (
+    typeof p.step === "number" &&
+    Number.isFinite(p.step) &&
+    typeof p.savedAt === "string" &&
+    typeof p.answers === "object" &&
+    p.answers !== null &&
+    !Array.isArray(p.answers) &&
+    Object.values(p.answers).every((v) => typeof v === "number")
+  );
+}
+
 export default function EmotionalHealth() {
-  const [answers, setAnswers] = useState<Record<number, number>>({});
+  const [saved] = useState(() =>
+    readStoredJSON<StoredProgress | null>(STORAGE_KEY, isStoredProgress, null),
+  );
+  const [answers, setAnswers] = useState<Record<number, number>>(
+    saved?.answers ?? {},
+  );
   const [showResults, setShowResults] = useState(false);
+  const [resumed, setResumed] = useState(
+    () => saved !== null && Object.keys(saved.answers).length > 0,
+  );
+  const [persistFailed, setPersistFailed] = useState(false);
 
   const allAnswered = STATEMENTS.every((_, i) => answers[i] !== undefined);
 
+  const persist = (nextAnswers: Record<number, number>) => {
+    setPersistFailed(
+      !writeStoredJSON(STORAGE_KEY, {
+        answers: nextAnswers,
+        step: 0,
+        savedAt: new Date().toISOString(),
+      }),
+    );
+  };
+
   const handleRate = (index: number, value: number) => {
-    setAnswers((prev) => ({ ...prev, [index]: value }));
+    const next = { ...answers, [index]: value };
+    setAnswers(next);
+    setResumed(false);
+    persist(next);
   };
 
   const handleSubmit = () => {
-    if (allAnswered) setShowResults(true);
+    if (allAnswered) {
+      setShowResults(true);
+      persist(answers);
+    }
   };
 
   const handleReset = () => {
+    removeStoredJSON(STORAGE_KEY);
     setAnswers({});
     setShowResults(false);
+    setResumed(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleChangeAnswers = () => {
+    setShowResults(false);
+    setResumed(false);
+    persist(answers);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -348,6 +407,57 @@ export default function EmotionalHealth() {
         <div className="wrap" style={{ maxWidth: "900px" }}>
           {!showResults ? (
             <>
+              {resumed && (
+                <div
+                  className="no-print"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "16px",
+                    flexWrap: "wrap",
+                    marginBottom: "24px",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontSize: "13px",
+                      fontFamily: "var(--U)",
+                      color: "var(--ink-muted)",
+                    }}
+                  >
+                    Picked up where you left off.
+                  </span>
+                  <button
+                    onClick={handleReset}
+                    style={{
+                      fontSize: "13px",
+                      fontFamily: "var(--U)",
+                      fontWeight: 600,
+                      padding: "6px 14px",
+                      borderRadius: "4px",
+                      cursor: "pointer",
+                      background: "none",
+                      color: "var(--ink-muted)",
+                      border: "1px solid var(--border)",
+                    }}
+                  >
+                    Start fresh
+                  </button>
+                </div>
+              )}
+              {persistFailed && (
+                <p
+                  style={{
+                    fontSize: "13px",
+                    fontFamily: "var(--U)",
+                    color: "var(--ink-muted)",
+                    margin: "0 0 24px",
+                  }}
+                >
+                  Couldn't save to this browser — your work here will not
+                  survive a reload.
+                </p>
+              )}
               {/* Assessment Form */}
               {CATEGORIES.map((cat, ci) => {
                 const catStatements = STATEMENTS.map((s, i) => ({
@@ -476,28 +586,70 @@ export default function EmotionalHealth() {
             <>
               {/* Results */}
               <ToolActions toolName="Emotional Health Assessment" />
+              {persistFailed && (
+                <p
+                  style={{
+                    fontSize: "13px",
+                    fontFamily: "var(--U)",
+                    color: "var(--ink-muted)",
+                    margin: "0 0 24px",
+                  }}
+                >
+                  Couldn't save to this browser — your work here will not
+                  survive a reload.
+                </p>
+              )}
 
-              <button
-                onClick={handleReset}
+              <div
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  gap: "6px",
-                  padding: "8px 0",
-                  background: "none",
-                  border: "none",
-                  fontSize: "14px",
-                  fontWeight: 600,
-                  fontFamily: "var(--U)",
-                  color: "var(--ink)",
-                  cursor: "pointer",
+                  gap: "24px",
+                  flexWrap: "wrap",
                   marginBottom: "24px",
-                  opacity: 0.7,
                 }}
+                className="no-print"
               >
-                <ArrowLeft size={16} />
-                Take Assessment Again
-              </button>
+                <button
+                  onClick={handleChangeAnswers}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "6px",
+                    padding: "8px 0",
+                    background: "none",
+                    border: "none",
+                    fontSize: "14px",
+                    fontWeight: 600,
+                    fontFamily: "var(--U)",
+                    color: "var(--ink)",
+                    cursor: "pointer",
+                    opacity: 0.7,
+                  }}
+                >
+                  <ArrowLeft size={16} />
+                  Change my answers
+                </button>
+                <button
+                  onClick={handleReset}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "6px",
+                    padding: "8px 0",
+                    background: "none",
+                    border: "none",
+                    fontSize: "14px",
+                    fontWeight: 600,
+                    fontFamily: "var(--U)",
+                    color: "var(--ink)",
+                    cursor: "pointer",
+                    opacity: 0.7,
+                  }}
+                >
+                  Take Assessment Again
+                </button>
+              </div>
 
               {/* Overall Score */}
               <div
