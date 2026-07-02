@@ -125,6 +125,34 @@
       "blurb": "A monk's protest recovered the gospel and broke the Western church in two — then into pieces. The era that gave Protestants their treasure also taught them their worst habit.",
       "era": "Reformation",
       "dateRange": "AD 1517–1648"
+    },
+    {
+      "slug": "awakenings-and-enlightenment",
+      "title": "Awakenings and Enlightenment",
+      "blurb": "From the exhaustion of Westphalia to the first religious free market. Pietism's answer to cold orthodoxy, the Enlightenment's rival account, Edwards and Whitefield and Wesley, and the forging of the tools America would later mistake for the move of God.",
+      "era": "Modern",
+      "dateRange": "AD 1648-1800"
+    },
+    {
+      "slug": "the-american-experiment",
+      "title": "The American Experiment",
+      "blurb": "From Cane Ridge to the fundamentalist and modernist rupture. How the American church learned to engineer revival, married the market and the flag, and split rather than release the enslaved, and the church that kept the faith through all of it.",
+      "era": "Modern",
+      "dateRange": "AD 1800-1950"
+    },
+    {
+      "slug": "the-attractional-era",
+      "title": "The Attractional Era",
+      "blurb": "From a tent in Los Angeles to the megachurch's high noon. How American Christianity learned to produce a crowd, what the production did to the message, and the honest audit that ended the era's confidence.",
+      "era": "Modern",
+      "dateRange": "AD 1950-2010"
+    },
+    {
+      "slug": "after-christendom-era",
+      "title": "After Christendom",
+      "blurb": "The era the reader is standing in. The dechurching, the deconstruction, the reckonings, and the end of the church's home-field advantage in the West, written from inside, with the ending unwritten.",
+      "era": "Modern",
+      "dateRange": "AD 2010-present"
     }
   ]
 }
