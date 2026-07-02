@@ -37,6 +37,11 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "subThemes": [],
     "confidence": "high"
   },
+  "excavation-not-demolition": {
+    "pillar": 4,
+    "subThemes": [],
+    "confidence": "high"
+  },
   "the-end-of-home-field-advantage": {
     "pillar": 4,
     "subThemes": [],
