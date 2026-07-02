@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
+import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 /* ── Question & result types ─────────────────────────────────────── */
 
@@ -247,6 +248,40 @@ function computeResult(answers: Record<string, string>): ResultKey {
   return best;
 }
 
+/* ── Session mirror (roadmap HS-5) ───────────────────────────────── */
+/* One-sitting entry flow: answers and step survive an accidental refresh
+ * via sessionStorage, and nothing outlives the tab. */
+
+const SESSION_KEY = "livewell-session-start-here-diagnostic";
+
+interface SavedSession {
+  answers: Record<string, string>;
+  step: number;
+  savedAt: number;
+}
+
+const QUESTION_IDS = new Set(QUESTIONS.map((q) => q.id));
+
+function isSavedSession(x: unknown): x is SavedSession {
+  if (typeof x !== "object" || x === null) return false;
+  const s = x as Record<string, unknown>;
+  if (typeof s.step !== "number" || !Number.isFinite(s.step)) return false;
+  if (typeof s.savedAt !== "number") return false;
+  if (typeof s.answers !== "object" || s.answers === null || Array.isArray(s.answers)) return false;
+  return Object.entries(s.answers as Record<string, unknown>).every(
+    ([id, value]) => QUESTION_IDS.has(id) && typeof value === "string"
+  );
+}
+
+function readSession(): SavedSession {
+  return readStoredJSON(
+    SESSION_KEY,
+    isSavedSession,
+    { answers: {}, step: 0, savedAt: 0 },
+    window.sessionStorage
+  );
+}
+
 /* ── Animation keyframes (injected once) ─────────────────────────── */
 
 const KEYFRAMES_ID = "start-here-diagnostic-keyframes";
@@ -271,9 +306,20 @@ function ensureKeyframes() {
 /* ── Component ───────────────────────────────────────────────────── */
 
 export default function StartHereDiagnostic() {
-  const [step, setStep] = useState(0);
-  const [answers, setAnswers] = useState<Record<string, string>>({});
+  // Restore a same-sitting session silently; step is clamped to both the
+  // question range and the number of answers actually given.
+  const [restored] = useState(readSession);
+  const [step, setStep] = useState(() =>
+    Math.min(
+      Math.max(0, Math.trunc(restored.step)),
+      Object.keys(restored.answers).length,
+      QUESTIONS.length - 1
+    )
+  );
+  const [answers, setAnswers] = useState<Record<string, string>>(restored.answers);
   const [transitioning, setTransitioning] = useState(false);
+  // True while a finished reader walks back through the questions from results.
+  const [reviewing, setReviewing] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -282,7 +328,16 @@ export default function StartHereDiagnostic() {
 
   const totalSteps = QUESTIONS.length;
   const isComplete = Object.keys(answers).length === totalSteps;
+  const showingResults = isComplete && !reviewing;
   const currentQuestion = QUESTIONS[step];
+
+  // Mirror answers/step on every change. A pristine state writes nothing,
+  // which keeps a restart genuinely clean; a failed write is fine — the
+  // diagnostic simply proceeds unpersisted.
+  useEffect(() => {
+    if (step === 0 && Object.keys(answers).length === 0) return;
+    writeStoredJSON(SESSION_KEY, { answers, step, savedAt: Date.now() }, window.sessionStorage);
+  }, [answers, step]);
 
   const scrollToTop = useCallback(() => {
     if (containerRef.current) {
@@ -310,10 +365,11 @@ export default function StartHereDiagnostic() {
           scrollToTop();
         }, 300);
       } else {
-        // Final question answered — show results
+        // Final question answered — show results (and end a review pass)
         setTransitioning(true);
         setTimeout(() => {
           setTransitioning(false);
+          setReviewing(false);
           scrollToTop();
         }, 300);
       }
@@ -335,6 +391,15 @@ export default function StartHereDiagnostic() {
   const handleRestart = useCallback(() => {
     setStep(0);
     setAnswers({});
+    setReviewing(false);
+    removeStoredJSON(SESSION_KEY, window.sessionStorage);
+    scrollToTop();
+  }, [scrollToTop]);
+
+  // Non-destructive: back to the questions with every answer intact.
+  const handleChangeAnswers = useCallback(() => {
+    setReviewing(true);
+    setStep(0);
     scrollToTop();
   }, [scrollToTop]);
 
@@ -377,14 +442,14 @@ export default function StartHereDiagnostic() {
           style={{
             height: "3px",
             background: "var(--mustard)",
-            width: isComplete ? "100%" : `${((step + (answers[currentQuestion?.id] ? 1 : 0)) / totalSteps) * 100}%`,
+            width: showingResults ? "100%" : `${((step + (answers[currentQuestion?.id] ? 1 : 0)) / totalSteps) * 100}%`,
             transition: "width 400ms var(--ease)",
           }}
         />
       </div>
 
       <div ref={containerRef} style={{ flex: 1 }}>
-        {!isComplete ? (
+        {!showingResults ? (
           /* ── Question screen ──────────────────────────────────── */
           <section
             style={{
@@ -790,8 +855,31 @@ export default function StartHereDiagnostic() {
                   })}
                 </div>
 
-                {/* Restart */}
-                <div style={{ textAlign: "center", marginTop: "40px" }}>
+                {/* Change answers / restart */}
+                <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "12px", marginTop: "40px" }}>
+                  <button
+                    onClick={handleChangeAnswers}
+                    style={{
+                      background: "none",
+                      border: "1px solid var(--border)",
+                      borderRadius: "2px",
+                      padding: "12px 28px",
+                      fontFamily: "var(--U)",
+                      fontSize: "13px",
+                      fontWeight: 600,
+                      color: "var(--ink)",
+                      cursor: "pointer",
+                      transition: "all 200ms",
+                    }}
+                    onMouseEnter={(e) => {
+                      (e.currentTarget as HTMLButtonElement).style.borderColor = "var(--mustard)";
+                    }}
+                    onMouseLeave={(e) => {
+                      (e.currentTarget as HTMLButtonElement).style.borderColor = "var(--border)";
+                    }}
+                  >
+                    Change my answers
+                  </button>
                   <button
                     onClick={handleRestart}
                     style={{

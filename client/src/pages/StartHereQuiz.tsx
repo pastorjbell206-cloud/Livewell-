@@ -1,49 +1,107 @@
 import { Link } from "wouter";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+
+const QUESTIONS = [
+  {
+    id: "concern",
+    title: "What's weighing heaviest right now?",
+    options: [
+      { label: "Marriage", value: "marriage", color: "var(--gold)" },
+      { label: "Parenting", value: "parenting", color: "#9B8BA8" },
+      { label: "Faith & Doubt", value: "doubt", color: "#8B6B7F" },
+      { label: "Calling & Purpose", value: "calling", color: "#6B8E6F" },
+      { label: "Justice & Culture", value: "justice", color: "#8B4545" },
+      { label: "Pastoral Ministry", value: "pastoral", color: "#6B8E6F" }
+    ]
+  },
+  {
+    id: "situation",
+    title: "How would you describe where you are?",
+    options: [
+      { label: "In Crisis", value: "crisis", color: "#8B4545" },
+      { label: "Searching for Answers", value: "searching", color: "#6B8E6F" },
+      { label: "Growing Deeper", value: "growing", color: "var(--ink)" },
+      { label: "Leading Others", value: "leading", color: "#6B8E6F" }
+    ]
+  },
+  {
+    id: "format",
+    title: "What kind of content helps you most?",
+    options: [
+      { label: "Deep Articles", value: "articles", color: "var(--gold)" },
+      { label: "Practical Tools", value: "tools", color: "#6B8E6F" },
+      { label: "Books", value: "books", color: "#8B6B7F" },
+      { label: "Devotionals", value: "devotionals", color: "#6B9B8B" }
+    ]
+  }
+];
+
+/* Session mirror (roadmap HS-5). One-sitting entry flow: answers, step, and
+ * the submitted flag survive an accidental refresh via sessionStorage, and
+ * nothing outlives the tab. */
+
+const SESSION_KEY = "livewell-session-start-here-quiz";
+
+interface SavedSession {
+  answers: { [key: string]: string };
+  step: number;
+  submitted: boolean;
+  savedAt: number;
+}
+
+const QUESTION_IDS = new Set(QUESTIONS.map((q) => q.id));
+
+function isSavedSession(x: unknown): x is SavedSession {
+  if (typeof x !== "object" || x === null) return false;
+  const s = x as Record<string, unknown>;
+  if (typeof s.step !== "number" || !Number.isFinite(s.step)) return false;
+  if (typeof s.submitted !== "boolean") return false;
+  if (typeof s.savedAt !== "number") return false;
+  if (typeof s.answers !== "object" || s.answers === null || Array.isArray(s.answers)) return false;
+  return Object.entries(s.answers as Record<string, unknown>).every(
+    ([id, value]) => QUESTION_IDS.has(id) && typeof value === "string"
+  );
+}
+
+function readSession(): SavedSession {
+  return readStoredJSON(
+    SESSION_KEY,
+    isSavedSession,
+    { answers: {}, step: 0, submitted: false, savedAt: 0 },
+    window.sessionStorage
+  );
+}
 
 export default function StartHereQuiz() {
-  const [currentStep, setCurrentStep] = useState(0);
-  const [submitted, setSubmitted] = useState(false);
-  const [answers, setAnswers] = useState<{ [key: string]: string }>({});
+  // Restore a same-sitting session silently; step is clamped to both the
+  // question range and the number of answers actually given.
+  const [restored] = useState(readSession);
+  const [currentStep, setCurrentStep] = useState(() =>
+    Math.min(
+      Math.max(0, Math.trunc(restored.step)),
+      Object.keys(restored.answers).length,
+      QUESTIONS.length - 1
+    )
+  );
+  const [submitted, setSubmitted] = useState(restored.submitted);
+  const [answers, setAnswers] = useState<{ [key: string]: string }>(restored.answers);
 
-  const QUESTIONS = [
-    {
-      id: "concern",
-      title: "What's weighing heaviest right now?",
-      options: [
-        { label: "Marriage", value: "marriage", color: "var(--gold)" },
-        { label: "Parenting", value: "parenting", color: "#9B8BA8" },
-        { label: "Faith & Doubt", value: "doubt", color: "#8B6B7F" },
-        { label: "Calling & Purpose", value: "calling", color: "#6B8E6F" },
-        { label: "Justice & Culture", value: "justice", color: "#8B4545" },
-        { label: "Pastoral Ministry", value: "pastoral", color: "#6B8E6F" }
-      ]
-    },
-    {
-      id: "situation",
-      title: "How would you describe where you are?",
-      options: [
-        { label: "In Crisis", value: "crisis", color: "#8B4545" },
-        { label: "Searching for Answers", value: "searching", color: "#6B8E6F" },
-        { label: "Growing Deeper", value: "growing", color: "var(--ink)" },
-        { label: "Leading Others", value: "leading", color: "#6B8E6F" }
-      ]
-    },
-    {
-      id: "format",
-      title: "What kind of content helps you most?",
-      options: [
-        { label: "Deep Articles", value: "articles", color: "var(--gold)" },
-        { label: "Practical Tools", value: "tools", color: "#6B8E6F" },
-        { label: "Books", value: "books", color: "#8B6B7F" },
-        { label: "Devotionals", value: "devotionals", color: "#6B9B8B" }
-      ]
-    }
-  ];
+  // Mirror the state on every change. A pristine state writes nothing, which
+  // keeps "Start Over" genuinely clean; a failed write is fine — the quiz
+  // simply proceeds unpersisted.
+  useEffect(() => {
+    if (currentStep === 0 && !submitted && Object.keys(answers).length === 0) return;
+    writeStoredJSON(
+      SESSION_KEY,
+      { answers, step: currentStep, submitted, savedAt: Date.now() },
+      window.sessionStorage
+    );
+  }, [answers, currentStep, submitted]);
 
   const READING_PATHS = {
     "marriage-crisis-articles": {
@@ -320,12 +378,24 @@ export default function StartHereQuiz() {
               />
             </div>
 
-            {/* RESTART BUTTON */}
-            <div style={{ textAlign: "center", marginTop: "32px" }}>
+            {/* CHANGE ANSWERS / RESTART BUTTONS */}
+            <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "12px", marginTop: "32px" }}>
+              <button
+                onClick={() => {
+                  // Non-destructive: back to the questions with every answer intact.
+                  setSubmitted(false);
+                  setCurrentStep(0);
+                }}
+                style={{ background: "var(--card)", color: "var(--ink)", border: "1px solid var(--line)", padding: "14px 24px", minHeight: "44px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}
+              >
+                Change my answers
+              </button>
               <button
                 onClick={() => {
                   setCurrentStep(0);
                   setAnswers({});
+                  setSubmitted(false);
+                  removeStoredJSON(SESSION_KEY, window.sessionStorage);
                 }}
                 style={{ background: "#FFF", color: "var(--ink)", border: "1px solid #E0D9CC", padding: "14px 24px", minHeight: "44px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}
               >
