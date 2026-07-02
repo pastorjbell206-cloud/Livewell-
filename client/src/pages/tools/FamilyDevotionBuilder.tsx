@@ -3,10 +3,17 @@
  * theme, get a complete 15-minute devotion: Scripture, Big Idea, teaching
  * adapted to age, three discussion questions, a hands-on activity, and a
  * closing prayer. All content is static; passages are KJV (public domain).
+ *
+ * Signature build: a family can assemble a multi-week series (one age band,
+ * 2–12 themes in order, one per week), mark weeks done as the term runs, and
+ * print the full term. The series persists in versioned localStorage
+ * ("lw-family-devotions"); reads are defensive, and the tool stays fully
+ * usable when storage is blocked. The single-devotion flow remains the
+ * default entry — the series is an invitation after the first devotion.
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Users, Copy, Check, RotateCcw, BookOpen, MessageCircle, Hand, HeartHandshake } from "lucide-react";
 import { Link } from "wouter";
 import { copyToClipboard } from "@/lib/clipboard";
@@ -658,6 +665,88 @@ const THEMES: Record<string, ThemeData> = {
 
 const THEME_NAMES = Object.keys(THEMES);
 
+/* ── Your series (localStorage) ─────────────────────────────────────
+   Versioned key "lw-family-devotions":
+     { v: 1, series: { created, ageBand, weeks: [{ theme, done, doneDate? }] } }
+   One age band for the whole term, one theme per week, in order. Reads
+   are defensive: a corrupted or missing entry starts fresh instead of
+   crashing. If storage is unavailable the tool still works; the series
+   lasts only for the visit, and the tool says so once. */
+
+const STORAGE_KEY = "lw-family-devotions";
+const MIN_WEEKS = 2;
+const MAX_WEEKS = 12;
+
+interface SeriesWeek {
+  theme: string;
+  done: boolean;
+  doneDate?: string;
+}
+interface Series {
+  created: string;
+  ageBand: BandId;
+  weeks: SeriesWeek[];
+}
+type StorageProblem = "none" | "blocked" | "corrupt";
+
+const isBandId = (v: unknown): v is BandId => AGE_BANDS.some((b) => b.id === v);
+const isIsoDate = (v: unknown): v is string => typeof v === "string" && !Number.isNaN(new Date(v).getTime());
+
+function parseWeek(v: unknown): SeriesWeek | null {
+  if (!v || typeof v !== "object") return null;
+  const w = v as { theme?: unknown; done?: unknown; doneDate?: unknown };
+  if (typeof w.theme !== "string" || !(w.theme in THEMES)) return null;
+  if (w.done === true && isIsoDate(w.doneDate)) return { theme: w.theme, done: true, doneDate: w.doneDate };
+  return { theme: w.theme, done: w.done === true };
+}
+
+function loadSeries(): { series: Series | null; problem: StorageProblem } {
+  if (typeof window === "undefined") return { series: null, problem: "none" };
+  let raw: string | null;
+  try {
+    raw = window.localStorage.getItem(STORAGE_KEY);
+  } catch {
+    return { series: null, problem: "blocked" };
+  }
+  if (!raw) return { series: null, problem: "none" };
+  try {
+    const parsed: unknown = JSON.parse(raw);
+    if (!parsed || typeof parsed !== "object") return { series: null, problem: "corrupt" };
+    const box = parsed as { v?: unknown; series?: unknown };
+    if (box.v !== 1) return { series: null, problem: "corrupt" };
+    if (!box.series || typeof box.series !== "object") return { series: null, problem: "corrupt" };
+    const s = box.series as { created?: unknown; ageBand?: unknown; weeks?: unknown };
+    if (!isBandId(s.ageBand) || !Array.isArray(s.weeks)) return { series: null, problem: "corrupt" };
+    const weeks = s.weeks
+      .map(parseWeek)
+      .filter((w): w is SeriesWeek => w !== null)
+      .slice(0, MAX_WEEKS);
+    if (weeks.length === 0) return { series: null, problem: "corrupt" };
+    const created = isIsoDate(s.created) ? s.created : new Date().toISOString();
+    return { series: { created, ageBand: s.ageBand, weeks }, problem: "none" };
+  } catch {
+    return { series: null, problem: "corrupt" };
+  }
+}
+
+function saveSeries(series: Series | null): boolean {
+  try {
+    if (series === null) window.localStorage.removeItem(STORAGE_KEY);
+    else window.localStorage.setItem(STORAGE_KEY, JSON.stringify({ v: 1, series }));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function fmtDate(iso: string): string {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "";
+  return d.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+}
+
+const bandLabelOf = (id: BandId) => AGE_BANDS.find((b) => b.id === id)?.label ?? "";
+
 const SECTION_LABEL: React.CSSProperties = {
   fontFamily: "var(--U)",
   fontSize: "11px",
@@ -668,15 +757,123 @@ const SECTION_LABEL: React.CSSProperties = {
   marginBottom: "10px",
 };
 
+const QUIET_BTN: React.CSSProperties = {
+  padding: "10px 16px",
+  minHeight: "44px",
+  background: "transparent",
+  border: "1px solid var(--border)",
+  borderRadius: "6px",
+  color: "var(--ink)",
+  fontSize: "13px",
+  fontWeight: 600,
+  fontFamily: "var(--U)",
+  cursor: "pointer",
+};
+
+const MUSTARD_BTN: React.CSSProperties = {
+  padding: "10px 20px",
+  minHeight: "44px",
+  background: "var(--mustard)",
+  border: "none",
+  borderRadius: "6px",
+  fontSize: "13px",
+  fontWeight: 600,
+  fontFamily: "var(--U)",
+  color: "var(--charcoal)",
+  cursor: "pointer",
+};
+
 export default function FamilyDevotionBuilder() {
   const [band, setBand] = useState<BandId | null>(null);
   const [theme, setTheme] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
   const [copyFailed, setCopyFailed] = useState(false);
 
+  // The saved series, loaded once and defensively.
+  const [initialLoad] = useState(loadSeries);
+  const [series, setSeries] = useState<Series | null>(initialLoad.series);
+  const [storageProblem, setStorageProblem] = useState<StorageProblem>(initialLoad.problem);
+
+  // Series builder (draft) state.
+  const [building, setBuilding] = useState(false);
+  const [draftBand, setDraftBand] = useState<BandId | null>(null);
+  const [draftWeeks, setDraftWeeks] = useState<string[]>([]);
+  const [draftNote, setDraftNote] = useState<string | null>(null);
+  const [clearArmed, setClearArmed] = useState(false);
+
+  const outputRef = useRef<HTMLDivElement | null>(null);
+  const [scrollPending, setScrollPending] = useState(false);
+  useEffect(() => {
+    if (scrollPending && outputRef.current) {
+      outputRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      setScrollPending(false);
+    }
+  }, [scrollPending]);
+
   const themeData = theme ? THEMES[theme] : null;
   const bandContent = themeData && band ? themeData.bands[band] : null;
   const bandLabel = band ? AGE_BANDS.find((b) => b.id === band)?.label ?? "" : "";
+
+  // State and storage move together: the series on screen stays right even
+  // when the browser refuses to store it.
+  const applySeries = (next: Series | null) => {
+    setSeries(next);
+    if (!saveSeries(next)) setStorageProblem("blocked");
+  };
+
+  const doneCount = series ? series.weeks.filter((w) => w.done).length : 0;
+  const currentWeekIndex = series ? series.weeks.findIndex((w) => !w.done) : -1;
+  const allDone = series !== null && currentWeekIndex === -1;
+
+  const toggleWeekDone = (i: number) => {
+    if (!series) return;
+    setClearArmed(false);
+    const weeks = series.weeks.map((w, j) => {
+      if (j !== i) return w;
+      return w.done ? { theme: w.theme, done: false } : { theme: w.theme, done: true, doneDate: new Date().toISOString() };
+    });
+    applySeries({ ...series, weeks });
+  };
+
+  const openWeek = (i: number) => {
+    if (!series) return;
+    setBand(series.ageBand);
+    setTheme(series.weeks[i].theme);
+    setCopied(false);
+    setScrollPending(true);
+  };
+
+  const startBuilding = () => {
+    setBuilding(true);
+    setClearArmed(false);
+    setDraftNote(null);
+    setDraftBand(series?.ageBand ?? band);
+    setDraftWeeks(series ? series.weeks.map((w) => w.theme) : theme ? [theme] : []);
+  };
+
+  const addDraftTheme = (t: string) => {
+    if (draftWeeks.length >= MAX_WEEKS) return;
+    const count = draftWeeks.filter((x) => x === t).length;
+    if (count >= 2) return;
+    setDraftWeeks([...draftWeeks, t]);
+    setDraftNote(count === 1 ? `${t} is now in the plan twice. That is allowed — some truths need a second week. Twice is the limit.` : null);
+  };
+
+  const removeDraftWeek = (i: number) => {
+    setDraftWeeks(draftWeeks.filter((_, j) => j !== i));
+    setDraftNote(null);
+  };
+
+  const saveDraft = () => {
+    if (!draftBand || draftWeeks.length < MIN_WEEKS) return;
+    applySeries({
+      created: new Date().toISOString(),
+      ageBand: draftBand,
+      weeks: draftWeeks.map((t) => ({ theme: t, done: false })),
+    });
+    setBuilding(false);
+    setDraftNote(null);
+  };
 
   const handleReset = () => {
     setBand(null);
@@ -741,8 +938,36 @@ export default function FamilyDevotionBuilder() {
         }}
       />
 
+      {/*
+        Print document styles. On screen the .fdb-print term is hidden; in
+        print, the screen UI is hidden and the typeset series is the whole
+        page. Rendered only when a series exists, so printing the rest of
+        the tool still works normally. Literal black-on-white is permitted
+        inside @media print only — this is paper, not the palette.
+      */}
+      {series && (
+        <style>{`
+          .fdb-print{display:none}
+          @media print{
+            nav, footer, .skip-link, .fdb-screen{display:none !important}
+            .fdb-print{display:block !important;color:#000;background:#fff;font-family:var(--B, Inter, sans-serif);font-size:11pt;line-height:1.55}
+            .fdb-print h1{font-family:var(--F, "Cormorant Garamond", serif);font-weight:400;font-size:22pt;letter-spacing:-0.02em;margin:0 0 4pt}
+            .fdb-print h2{font-family:var(--F, "Cormorant Garamond", serif);font-weight:500;font-size:15pt;margin:0 0 4pt;page-break-after:avoid}
+            .fdb-print h3{font-family:var(--F, "Cormorant Garamond", serif);font-weight:500;font-size:12pt;margin:9pt 0 3pt;page-break-after:avoid}
+            .fdb-print p{margin:0 0 6pt;max-width:none}
+            .fdb-print ol{margin:0 0 6pt;padding-left:16pt}
+            .fdb-print li{margin-bottom:3pt}
+            .fdb-print blockquote{margin:0 0 8pt;padding-left:10pt;border-left:1pt solid #000;font-style:italic}
+            .fdb-print .fdb-print-meta{font-size:9.5pt;color:#333;margin-bottom:12pt}
+            .fdb-print .fdb-print-done{font-size:9pt;color:#333;margin:0 0 6pt}
+            .fdb-print .fdb-print-week + .fdb-print-week{page-break-before:always}
+            .fdb-print .fdb-print-foot{margin-top:14pt;padding-top:6pt;border-top:0.5pt solid #999;font-size:9.5pt;color:#333}
+          }
+        `}</style>
+      )}
+
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "80px 32px 60px", textAlign: "center" }}>
+      <section className="fdb-screen" style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "80px 32px 60px", textAlign: "center" }}>
         <div className="wrap" style={{ maxWidth: "700px", margin: "0 auto" }}>
           <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.2em", color: "var(--mustard)", marginBottom: "16px", textTransform: "uppercase" }}>
             Free Tool
@@ -757,8 +982,222 @@ export default function FamilyDevotionBuilder() {
       </section>
 
       {/* BUILDER */}
-      <section style={{ background: "var(--bone)", padding: "48px 32px 80px" }}>
+      <section className="fdb-screen" style={{ background: "var(--bone)", padding: "48px 32px 80px" }}>
         <div className="wrap" style={{ maxWidth: "800px", margin: "0 auto" }}>
+          {/* Said once, quietly: what this browser will and will not keep. */}
+          {storageProblem !== "none" && (
+            <p style={{ fontFamily: "var(--B)", fontSize: "14px", fontStyle: "italic", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 28px", maxWidth: "62ch" }}>
+              {storageProblem === "blocked"
+                ? "This browser is not letting the tool store anything, so a series lasts only as long as this visit. Print it if you want to keep it."
+                : "The series saved earlier in this browser could not be read, so the tool starts fresh. A new series will save as usual."}
+            </p>
+          )}
+
+          {/* YOUR SERIES — the term in progress, first thing a returning family sees. */}
+          {series && !building && (
+            <div style={{ marginBottom: "44px", background: "#FFFFFF", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "10px", padding: "24px 20px" }}>
+              <div style={SECTION_LABEL}>Your series</div>
+              <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 6px" }}>
+                {bandLabelOf(series.ageBand)} · {series.weeks.length} weeks · started {fmtDate(series.created)}
+                {doneCount > 0 ? ` · ${doneCount} of ${series.weeks.length} done` : ""}
+              </p>
+              <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 18px", maxWidth: "62ch" }}>
+                {allDone
+                  ? `The term is finished. ${series.weeks.length} weeks at the table, and your family kept every one. Let that settle. Build the next term when you are ready.`
+                  : "Open this week's devotion, and mark each week done as your family finishes it."}
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginBottom: "20px" }}>
+                {series.weeks.map((w, i) => {
+                  const isCurrent = i === currentWeekIndex;
+                  return (
+                    <div key={i} style={{ display: "flex", alignItems: "stretch", gap: "8px" }}>
+                      <button
+                        type="button"
+                        onClick={() => toggleWeekDone(i)}
+                        aria-pressed={w.done}
+                        aria-label={`Week ${i + 1}, ${w.theme} — ${w.done ? "mark as not done" : "mark as done"}`}
+                        style={{
+                          width: "44px",
+                          minHeight: "44px",
+                          flexShrink: 0,
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          background: w.done ? "var(--charcoal)" : "transparent",
+                          border: `1px solid ${w.done ? "var(--charcoal)" : "var(--border)"}`,
+                          borderRadius: "6px",
+                          cursor: "pointer",
+                        }}
+                      >
+                        <span
+                          aria-hidden="true"
+                          style={{
+                            width: "10px",
+                            height: "10px",
+                            borderRadius: "50%",
+                            background: w.done ? "var(--mustard)" : "transparent",
+                            border: w.done ? "none" : "1px solid var(--ink-muted)",
+                          }}
+                        />
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => openWeek(i)}
+                        aria-label={`Open week ${i + 1}, ${w.theme}`}
+                        style={{
+                          flex: 1,
+                          minWidth: 0,
+                          minHeight: "44px",
+                          display: "flex",
+                          flexWrap: "wrap",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                          gap: "2px 12px",
+                          padding: "10px 14px",
+                          background: w.done ? "var(--bone)" : "#FFFFFF",
+                          border: "1px solid var(--border)",
+                          borderLeft: isCurrent ? "3px solid var(--mustard)" : "1px solid var(--border)",
+                          borderRadius: "6px",
+                          cursor: "pointer",
+                          textAlign: "left",
+                        }}
+                      >
+                        <span style={{ fontFamily: "var(--F)", fontSize: "17px", color: "var(--ink)" }}>
+                          Week {i + 1} · {w.theme}
+                        </span>
+                        <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: isCurrent ? 600 : 400, color: isCurrent ? "var(--mustard-text)" : "var(--ink-muted)" }}>
+                          {w.done ? (w.doneDate ? `done ${fmtDate(w.doneDate)}` : "done") : isCurrent ? "This week" : ""}
+                        </span>
+                      </button>
+                    </div>
+                  );
+                })}
+              </div>
+              <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", borderTop: "1px solid var(--border)", paddingTop: "18px" }}>
+                <button type="button" onClick={() => window.print()} style={QUIET_BTN}>
+                  Print your series
+                </button>
+                <button type="button" onClick={startBuilding} style={QUIET_BTN}>
+                  Build a new series
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (clearArmed) {
+                      applySeries(null);
+                      setClearArmed(false);
+                    } else {
+                      setClearArmed(true);
+                    }
+                  }}
+                  style={{ ...QUIET_BTN, color: "var(--ink-muted)" }}
+                >
+                  {clearArmed ? "Tap again to clear it" : "Clear this series"}
+                </button>
+              </div>
+            </div>
+          )}
+
+          {building ? (
+            /* SERIES BUILDER — one age band, themes in order, one per week. */
+            <div style={{ background: "#FFFFFF", border: "1px solid var(--border)", borderTop: "4px solid var(--mustard)", borderRadius: "10px", padding: "28px 20px" }}>
+              <div style={SECTION_LABEL}>Build a series</div>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", margin: "0 0 24px", maxWidth: "62ch" }}>
+                One age band for the whole term. Then add themes in the order your family will take them, one per week. Four to twelve weeks makes a term, and a theme may repeat once.
+              </p>
+
+              <div style={{ marginBottom: "24px" }}>
+                <div style={SECTION_LABEL}>Who is at the table?</div>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+                  {AGE_BANDS.map((b) => (
+                    <button key={b.id} type="button" onClick={() => setDraftBand(b.id)} style={pillStyle(draftBand === b.id)}>
+                      {b.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div style={{ marginBottom: "24px", opacity: draftBand ? 1 : 0.45, transition: "opacity 0.2s" }}>
+                <div style={SECTION_LABEL}>Add the weeks, in order</div>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))", gap: "10px" }}>
+                  {THEME_NAMES.map((t) => {
+                    const count = draftWeeks.filter((x) => x === t).length;
+                    const full = !draftBand || count >= 2 || draftWeeks.length >= MAX_WEEKS;
+                    return (
+                      <button
+                        key={t}
+                        type="button"
+                        disabled={full}
+                        onClick={() => addDraftTheme(t)}
+                        aria-label={`Add ${t} as week ${draftWeeks.length + 1}`}
+                        style={{
+                          fontFamily: "var(--U)",
+                          fontSize: "14px",
+                          fontWeight: 500,
+                          minHeight: "44px",
+                          padding: "12px",
+                          borderRadius: "8px",
+                          cursor: full ? "default" : "pointer",
+                          opacity: full && draftBand ? 0.5 : 1,
+                          border: `1px solid ${count > 0 ? "var(--mustard)" : "var(--border)"}`,
+                          background: count > 0 ? "var(--bone-warm)" : "#FFFFFF",
+                          color: "var(--ink)",
+                          textAlign: "center",
+                          transition: "all 0.2s",
+                        }}
+                      >
+                        {count > 0 ? `${t} · ${count > 1 ? "twice" : "in the plan"}` : t}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {draftWeeks.length > 0 && (
+                <div style={{ marginBottom: "20px" }}>
+                  <div style={SECTION_LABEL}>The plan so far</div>
+                  <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                    {draftWeeks.map((t, i) => (
+                      <div key={`${t}-${i}`} style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "6px 12px", padding: "8px 8px 8px 14px", background: "var(--bone)", border: "1px solid var(--border)", borderRadius: "6px" }}>
+                        <span style={{ flex: 1, minWidth: "160px", fontFamily: "var(--F)", fontSize: "17px", color: "var(--ink)" }}>
+                          Week {i + 1} · {t}
+                        </span>
+                        <button type="button" onClick={() => removeDraftWeek(i)} aria-label={`Remove week ${i + 1}, ${t}`} style={{ ...QUIET_BTN, padding: "6px 12px", fontSize: "12px", color: "var(--ink-muted)" }}>
+                          Remove
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <p role="status" style={{ fontFamily: "var(--B)", fontSize: "13px", fontStyle: "italic", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 18px", maxWidth: "62ch", minHeight: "1em" }}>
+                {draftNote ??
+                  (draftWeeks.length >= MAX_WEEKS
+                    ? "Twelve weeks is a full term. Finish this one before you plan the next."
+                    : draftWeeks.length < MIN_WEEKS
+                      ? "A term is at least two weeks."
+                      : series
+                        ? "Saving starts a fresh term. Done-marks from the current series do not carry over."
+                        : "")}
+              </p>
+
+              <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", borderTop: "1px solid var(--border)", paddingTop: "18px" }}>
+                <button
+                  type="button"
+                  onClick={saveDraft}
+                  disabled={!draftBand || draftWeeks.length < MIN_WEEKS}
+                  style={{ ...MUSTARD_BTN, opacity: !draftBand || draftWeeks.length < MIN_WEEKS ? 0.45 : 1, cursor: !draftBand || draftWeeks.length < MIN_WEEKS ? "default" : "pointer" }}
+                >
+                  {series ? "Save and replace the current series" : "Save this series"}
+                </button>
+                <button type="button" onClick={() => { setBuilding(false); setDraftNote(null); }} style={QUIET_BTN}>
+                  Cancel
+                </button>
+              </div>
+            </div>
+          ) : (
+            <>
           {/* STEP 1: AGE BAND */}
           <div style={{ marginBottom: "36px" }}>
             <div style={SECTION_LABEL}>Step 1 · Who is at the table?</div>
@@ -808,7 +1247,7 @@ export default function FamilyDevotionBuilder() {
 
           {/* OUTPUT */}
           {themeData && bandContent && theme ? (
-            <div style={{ background: "#FFFFFF", border: "1px solid var(--border)", borderTop: "4px solid var(--mustard)", borderRadius: "10px", padding: "40px 36px" }}>
+            <div ref={outputRef} style={{ background: "#FFFFFF", border: "1px solid var(--border)", borderTop: "4px solid var(--mustard)", borderRadius: "10px", padding: "40px 36px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "6px" }}>
                 {bandLabel} · About 15 minutes
               </div>
@@ -901,6 +1340,18 @@ export default function FamilyDevotionBuilder() {
                   Copy failed — select and copy manually.
                 </p>
               )}
+
+              {/* THE INVITATION — offered after the first devotion, never before it. */}
+              {!series && (
+                <div style={{ marginTop: "28px", padding: "18px 20px", background: "var(--bone)", border: "1px solid var(--border)", borderRadius: "6px" }}>
+                  <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.7, color: "var(--ink)", margin: "0 0 14px", maxWidth: "62ch" }}>
+                    Families run on rhythm, not one good night. Build a term of these — pick the weeks once, mark each one done as you go, and print the whole plan for the refrigerator door.
+                  </p>
+                  <button type="button" onClick={startBuilding} style={QUIET_BTN}>
+                    Build a series
+                  </button>
+                </div>
+              )}
             </div>
           ) : (
             <div style={{ textAlign: "center", padding: "40px 20px", color: "var(--ink-muted)" }}>
@@ -909,6 +1360,8 @@ export default function FamilyDevotionBuilder() {
                 {band ? "Now choose a theme." : "Start by choosing who is at the table."}
               </p>
             </div>
+          )}
+            </>
           )}
 
           {/* FOOTNOTE */}
@@ -921,6 +1374,52 @@ export default function FamilyDevotionBuilder() {
           </p>
         </div>
       </section>
+
+      {/* The print-typeset term: every week's full devotion, in order, with
+          the family's done-marks. Hidden on screen. */}
+      {series && (
+        <div className="fdb-print">
+          <h1>Family Devotions — Your Series</h1>
+          <div className="fdb-print-meta">
+            {bandLabelOf(series.ageBand)} · {series.weeks.length} weeks · started {fmtDate(series.created)} · printed {fmtDate(new Date().toISOString())} · livewellbyjamesbell.co
+          </div>
+          {series.weeks.map((w, i) => {
+            const td = THEMES[w.theme];
+            const bc = td.bands[series.ageBand];
+            return (
+              <div key={i} className="fdb-print-week">
+                <h2>
+                  Week {i + 1} — {w.theme}
+                </h2>
+                <p className="fdb-print-done">{w.done ? `Done${w.doneDate ? ` — ${fmtDate(w.doneDate)}` : ""}` : "Not yet done"}</p>
+                <h3>Read — {td.passage}</h3>
+                <blockquote>{td.passageText}</blockquote>
+                <h3>Big Idea</h3>
+                <p>{td.bigIdea}</p>
+                <h3>Teach</h3>
+                {bc.teaching.map((p, j) => (
+                  <p key={j}>{p}</p>
+                ))}
+                <h3>Ask</h3>
+                <ol>
+                  {bc.questions.map((q, j) => (
+                    <li key={j}>{q}</li>
+                  ))}
+                </ol>
+                <h3>Do</h3>
+                <p>{bc.activity}</p>
+                <h3>Pray</h3>
+                <p>
+                  <em>{td.prayer}</em>
+                </p>
+              </div>
+            );
+          })}
+          <div className="fdb-print-foot">
+            From the Family Devotion Builder at livewellbyjamesbell.co/tools/family-devotions. Scripture quotations are from the King James Version, public domain. The plan and the done-marks are yours.
+          </div>
+        </div>
+      )}
     </Layout>
   );
 }

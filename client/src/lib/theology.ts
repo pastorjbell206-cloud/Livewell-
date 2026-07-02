@@ -126,6 +126,7 @@ export const DOCTRINE_INDEX: DoctrineIndexEntry[] = [
   { slug: "holy-spirit", pillar: "Systematic", title: "The Holy Spirit and His Gifts", blurb: "The person of the Spirit, and whether the miraculous gifts continue today.", triage: "second-order", ready: true },
   { slug: "soteriology", pillar: "Systematic", title: "How Are We Saved?", blurb: "Grace, election, and the human will. The deepest of the family disagreements.", triage: "second-order", ready: true },
   { slug: "church", pillar: "Systematic", title: "What Is the Church?", blurb: "Baptism, the Lord's Supper, government, and who belongs.", triage: "second-order", ready: true },
+  { slug: "sacraments", pillar: "Systematic", title: "The Sacraments: Baptism and the Lord's Supper", blurb: "Who baptism is for and what happens at the Table. Credo and paedo, and the four historic views of the Supper, from the Didache to Marburg in 1529.", triage: "second-order", ready: true },
   { slug: "last-things", pillar: "Systematic", title: "How Does It End?", blurb: "Death, the return of Christ, the millennium, judgment, and the new creation.", triage: "third-order", ready: true },
   // Pillar 2 — Church history lives as its own narrative page at /theology/history
   // Pillar 3 — Biblical theology

@@ -318,6 +318,46 @@ function buildPlainText(scores: Record<string, number>, previous: RunEntry | nul
 }
 
 /* ------------------------------------------------------------------ */
+/* The six-month loop                                                  */
+/* ------------------------------------------------------------------ */
+
+const RETAKE_MONTHS = 6;
+/** How old a run must be before the intro quietly says it is time again. */
+const REMIND_MONTHS = 5;
+
+function addMonths(iso: string, months: number): Date {
+  const d = new Date(iso);
+  d.setMonth(d.getMonth() + months);
+  return d;
+}
+
+function fmtDate(d: Date | string): string {
+  const date = typeof d === "string" ? new Date(d) : d;
+  if (Number.isNaN(date.getTime())) return "";
+  return date.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+}
+
+function fmtAxisDate(iso: string): string {
+  return new Date(iso).toLocaleDateString(undefined, { month: "short", year: "2-digit" });
+}
+
+/**
+ * Runs that can be charted: a real date and a real 1..5 score for every
+ * domain. Anything a corrupted or older localStorage entry left short is
+ * skipped, not crashed on. Reading history stays untouched either way.
+ */
+function chartableRuns(history: RunEntry[]): RunEntry[] {
+  return history.filter(
+    (e) =>
+      !Number.isNaN(new Date(e.date).getTime()) &&
+      DOMAINS.every((d) => {
+        const v = e.scores[d.id];
+        return typeof v === "number" && Number.isFinite(v) && v >= 1 && v <= 5;
+      })
+  );
+}
+
+/* ------------------------------------------------------------------ */
 /* Shared style fragments                                              */
 /* ------------------------------------------------------------------ */
 
@@ -342,6 +382,175 @@ function ScoreBar({ value }: { value: number }) {
   return (
     <div style={{ height: "4px", background: "var(--border)", borderRadius: "2px", overflow: "hidden" }} aria-hidden="true">
       <div style={{ height: "100%", width: `${pct}%`, background: "var(--mustard)" }} />
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/* The long view: inline SVG, no chart library                         */
+/* ------------------------------------------------------------------ */
+
+function TrajectoryChart({ runs }: { runs: RunEntry[] }) {
+  const W = 640;
+  const H = 250;
+  const padL = 34;
+  const padR = 16;
+  const padT = 16;
+  const padB = 36;
+  const innerW = W - padL - padR;
+  const innerH = H - padT - padB;
+  const n = runs.length;
+  const x = (i: number) => (n <= 1 ? padL + innerW / 2 : padL + (i / (n - 1)) * innerW);
+  const y = (v: number) => padT + ((5 - Math.max(1, Math.min(5, v))) / 4) * innerH;
+  const charVals = runs.map((r) => bankAverage(CHARACTER_DOMAINS, r.scores));
+  const capVals = runs.map((r) => bankAverage(CAPACITY_DOMAINS, r.scores));
+  const points = (vals: number[]) => vals.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ");
+  const labelIdx =
+    n <= 4
+      ? runs.map((_, i) => i)
+      : Array.from(new Set([0, Math.round((n - 1) / 3), Math.round(((n - 1) * 2) / 3), n - 1]));
+  return (
+    <svg
+      viewBox={`0 0 ${W} ${H}`}
+      style={{ width: "100%", height: "auto", display: "block" }}
+      role="img"
+      aria-label={`Character and capacity averages across ${n} readings, ${fmtDate(runs[0].date)} to ${fmtDate(runs[n - 1].date)}. Character moved from ${charVals[0].toFixed(1)} to ${charVals[n - 1].toFixed(1)}; capacity from ${capVals[0].toFixed(1)} to ${capVals[n - 1].toFixed(1)}.`}
+    >
+      {[1, 2, 3, 4, 5].map((v) => (
+        <g key={v}>
+          <line x1={padL} y1={y(v)} x2={W - padR} y2={y(v)} stroke="var(--border)" strokeWidth={1} />
+          <text x={padL - 8} y={y(v) + 4} textAnchor="end" fontSize={11} fontFamily="var(--U)" fill="var(--ink-muted)">
+            {v}
+          </text>
+        </g>
+      ))}
+      <polyline points={points(capVals)} fill="none" stroke="var(--ink-muted)" strokeWidth={2} strokeDasharray="5 5" strokeLinejoin="round" strokeLinecap="round" />
+      <polyline points={points(charVals)} fill="none" stroke="var(--ink)" strokeWidth={2} strokeLinejoin="round" strokeLinecap="round" />
+      {capVals.map((v, i) => (
+        <circle key={`cap-${i}`} cx={x(i)} cy={y(v)} r={3} fill="var(--ink-muted)" />
+      ))}
+      {charVals.map((v, i) => (
+        <circle key={`chr-${i}`} cx={x(i)} cy={y(v)} r={3.5} fill="var(--mustard)" stroke="var(--ink)" strokeWidth={1} />
+      ))}
+      {labelIdx.map((i) => (
+        <text
+          key={`d-${i}`}
+          x={x(i)}
+          y={H - 12}
+          textAnchor={i === 0 ? "start" : i === n - 1 ? "end" : "middle"}
+          fontSize={11}
+          fontFamily="var(--U)"
+          fill="var(--ink-muted)"
+        >
+          {fmtAxisDate(runs[i].date)}
+        </text>
+      ))}
+    </svg>
+  );
+}
+
+function Sparkline({ values }: { values: number[] }) {
+  const W = 120;
+  const H = 40;
+  const pad = 4;
+  const n = values.length;
+  const x = (i: number) => (n <= 1 ? W / 2 : pad + (i / (n - 1)) * (W - pad * 2));
+  const y = (v: number) => pad + ((5 - Math.max(1, Math.min(5, v))) / 4) * (H - pad * 2);
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "40px", display: "block" }} aria-hidden="true">
+      <line x1={pad} y1={y(3)} x2={W - pad} y2={y(3)} stroke="var(--border)" strokeWidth={1} />
+      <polyline
+        points={values.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ")}
+        fill="none"
+        stroke="var(--ink)"
+        strokeWidth={1.5}
+        strokeLinejoin="round"
+        strokeLinecap="round"
+      />
+      <circle cx={x(n - 1)} cy={y(values[n - 1])} r={2.5} fill="var(--mustard)" />
+    </svg>
+  );
+}
+
+/** Requires two or more chartable runs; callers handle the shorter cases. */
+function TrendView({ runs }: { runs: RunEntry[] }) {
+  if (runs.length < 2) return null;
+  const legendItem = { display: "inline-flex", alignItems: "center", gap: "8px", ...mutedText, fontSize: "12px" } as const;
+  return (
+    <div>
+      <p style={{ ...mutedText, marginBottom: "var(--s-3)", maxWidth: "62ch" }}>
+        {runs.length} readings, {fmtDate(runs[0].date)} to {fmtDate(runs[runs.length - 1].date)}. The chart does not grade you. It shows what the slow work has moved, and what it has not.
+      </p>
+      <TrajectoryChart runs={runs} />
+      <div style={{ display: "flex", gap: "18px", flexWrap: "wrap", marginTop: "10px", marginBottom: "var(--s-4)" }}>
+        <span style={legendItem}>
+          <span aria-hidden="true" style={{ width: "18px", borderTop: "2px solid var(--ink)", display: "inline-block" }} />
+          Character average
+        </span>
+        <span style={legendItem}>
+          <span aria-hidden="true" style={{ width: "18px", borderTop: "2px dashed var(--ink-muted)", display: "inline-block" }} />
+          Capacity average
+        </span>
+      </div>
+      <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", marginBottom: "12px" }}>
+        Domain by domain
+      </h3>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))", gap: "12px" }}>
+        {DOMAINS.map((d) => {
+          const vals = runs.map((r) => r.scores[d.id]);
+          const delta = vals[vals.length - 1] - vals[0];
+          const sign = delta >= 0 ? "+" : "";
+          return (
+            <div key={d.id} style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "12px" }}>
+              <div style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px", color: "var(--ink)", marginBottom: "2px" }}>{d.name}</div>
+              <div style={{ ...mutedText, fontSize: "11px", marginBottom: "6px" }}>{d.bank === "character" ? "Character" : "Capacity"}</div>
+              <Sparkline values={vals} />
+              <p style={{ ...mutedText, fontSize: "12px", marginTop: "6px" }}>
+                {vals[0].toFixed(1)} to {vals[vals.length - 1].toFixed(1)} ({sign}
+                {delta.toFixed(1)})
+              </p>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/* Statement-by-statement drilldown                                    */
+/* ------------------------------------------------------------------ */
+
+function AnswerDrilldown({ answers, scores }: { answers: Record<string, number>; scores: Record<string, number> }) {
+  return (
+    <div style={{ border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)" }}>
+      {DOMAINS.map((d, i) => (
+        <details key={d.id} className="fi-acc" style={{ borderTop: i === 0 ? "none" : "1px solid var(--border)" }}>
+          <summary
+            aria-label={`${d.name}, scored ${scores[d.id].toFixed(1)} out of 5. Expand to see your answer to each statement.`}
+            style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "12px", minHeight: "48px", padding: "10px 16px", cursor: "pointer", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)" }}
+          >
+            <span>{d.name}</span>
+            <span style={{ marginLeft: "auto", color: "var(--ink-muted)", fontSize: "13px", fontWeight: 600, whiteSpace: "nowrap" }}>
+              {scores[d.id].toFixed(1)} / 5
+            </span>
+          </summary>
+          <div style={{ padding: "0 16px 14px" }}>
+            {d.statements.map((s) => (
+              <div key={s.id} style={{ padding: "10px 0", borderTop: "1px solid var(--border)" }}>
+                <p style={{ ...bodyText, fontSize: "15px", marginBottom: "4px" }}>{s.text}</p>
+                <p style={{ ...mutedText, fontSize: "13px" }}>
+                  You answered:{" "}
+                  <span style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink)" }}>
+                    {answers[s.id] ? SCALE[answers[s.id] - 1] : "Unanswered"}
+                  </span>
+                  {s.reverse ? " · reverse-scored" : ""}
+                </p>
+              </div>
+            ))}
+          </div>
+        </details>
+      ))}
     </div>
   );
 }
@@ -409,6 +618,8 @@ export default function FormationInventory() {
   };
 
   const lastRun = history.length > 0 ? history[history.length - 1] : null;
+  const runs = useMemo(() => chartableRuns(history), [history]);
+  const retakeDue = lastRun !== null && new Date() >= addMonths(lastRun.date, REMIND_MONTHS);
 
   return (
     <Layout>
@@ -422,10 +633,31 @@ export default function FormationInventory() {
       <style>{`
         .fi-opt input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
         .fi-opt input:focus-visible + span{outline:2px solid var(--mustard);outline-offset:2px}
+        .fi-acc > summary{list-style:none}
+        .fi-acc > summary::-webkit-details-marker{display:none}
+        .fi-acc > summary::after{content:"+";font-family:var(--U);font-size:16px;line-height:1;color:var(--ink-muted)}
+        .fi-acc[open] > summary::after{content:"\\2212"}
+        .fi-acc > summary:focus-visible{outline:2px solid var(--mustard);outline-offset:-2px}
+        .fi-print{display:none}
+        @media print{
+          nav, footer, .skip-link, .fi-screen{display:none !important}
+          .fi-print{display:block !important;color:#000;background:#fff;font-family:var(--B);font-size:11pt;line-height:1.55;padding:0}
+          .fi-print h1{font-family:var(--F);font-weight:400;font-size:22pt;letter-spacing:-0.02em;margin:0 0 4pt}
+          .fi-print h2{font-family:var(--F);font-weight:500;font-size:15pt;margin:16pt 0 6pt;page-break-after:avoid}
+          .fi-print h3{font-family:var(--F);font-weight:500;font-size:12.5pt;margin:10pt 0 3pt;page-break-after:avoid}
+          .fi-print p{margin:0 0 6pt;max-width:none}
+          .fi-print ul{margin:0 0 6pt;padding-left:14pt}
+          .fi-print li{margin-bottom:3pt}
+          .fi-print .fi-print-meta{font-size:9.5pt;color:#333;margin-bottom:10pt}
+          .fi-print .fi-print-label{font-family:var(--U);font-weight:600;font-size:9pt;text-transform:uppercase;letter-spacing:0.08em;margin:6pt 0 2pt}
+          .fi-print .fi-print-row{display:flex;justify-content:space-between;gap:12pt;border-bottom:0.5pt solid #999;padding:3pt 0;page-break-inside:avoid}
+          .fi-print .fi-print-block{page-break-inside:avoid;margin-bottom:10pt}
+          .fi-print .fi-print-foot{margin-top:14pt;padding-top:6pt;border-top:0.5pt solid #999;font-size:9.5pt;color:#333}
+        }
       `}</style>
 
       {/* Hero */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section className="fi-screen" style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={heroWrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · The flagship inventory
@@ -441,8 +673,15 @@ export default function FormationInventory() {
 
       {/* ------------------------------ Intro ------------------------------ */}
       {screen === -1 && (
-        <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
+        <section className="fi-screen" style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
           <div style={wrap}>
+            {lastRun && retakeDue && (
+              <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "14px 16px", marginBottom: "var(--s-4)" }}>
+                <p style={{ ...bodyText, fontSize: "15px" }}>
+                  You last took this on {fmtDate(lastRun.date)}. The six months are up, or close to it. Take it again and see what the slow work has done.
+                </p>
+              </div>
+            )}
             <p style={{ ...bodyText, marginBottom: "14px" }}>
               This is not a measurement. It is formation. There is no grade at the end, no percentile, no comparison to other leaders, because the question this inventory asks cannot be graded. It can only be answered honestly or not at all.
             </p>
@@ -465,6 +704,13 @@ export default function FormationInventory() {
                 <button onClick={clearHistory} style={quietBtn}>Clear history</button>
               )}
             </div>
+
+            {runs.length >= 2 && (
+              <div style={{ marginTop: "var(--s-5)", borderTop: "1px solid var(--border)", paddingTop: "var(--s-4)" }}>
+                <div className="eyebrow" style={{ marginBottom: "10px" }}>The long view</div>
+                <TrendView runs={runs} />
+              </div>
+            )}
           </div>
         </section>
       )}
@@ -480,7 +726,7 @@ export default function FormationInventory() {
         const answeredTotal = DOMAINS.flatMap((d) => d.statements).filter((s) => answers[s.id]).length;
 
         return (
-          <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
+          <section className="fi-screen" style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
             <div style={wrap}>
               {/* Progress across domains */}
               <div style={{ marginBottom: "var(--s-4)" }}>
@@ -561,11 +807,12 @@ export default function FormationInventory() {
       {screen === RESULTS_SCREEN && (() => {
         const lowestTwo = [...CHARACTER_DOMAINS].sort((a, b) => scores[a.id] - scores[b.id]).slice(0, 2);
         const lowestCapacity = [...CAPACITY_DOMAINS].sort((a, b) => scores[a.id] - scores[b.id])[0];
+        const nextDue = addMonths(lastRun ? lastRun.date : new Date().toISOString(), RETAKE_MONTHS);
 
         return (
           <>
             {/* Verdict */}
-            <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
+            <section className="fi-screen" style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
               <div style={wrap}>
                 <div style={{ background: "var(--charcoal)", color: "var(--bone)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: "3px solid var(--mustard)" }}>
                   <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>The verdict</div>
@@ -576,6 +823,7 @@ export default function FormationInventory() {
 
                 <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "var(--s-3)" }}>
                   <button onClick={copyResults} style={primaryBtn}>{copied ? "Copied" : "Copy results"}</button>
+                  <button onClick={() => window.print()} style={quietBtn}>Print your results</button>
                   <button onClick={retake} style={quietBtn}>Retake the inventory</button>
                   {history.length > 0 && <button onClick={clearHistory} style={quietBtn}>Clear history</button>}
                 </div>
@@ -584,11 +832,14 @@ export default function FormationInventory() {
                     Compared against your last run on {new Date(previous.date).toLocaleDateString()}.
                   </p>
                 )}
+                <p style={{ ...mutedText, fontSize: "13px", marginTop: previous ? "4px" : "12px" }}>
+                  Your next reading is due {fmtDate(nextDue)}. Put it on the calendar now, while the answers are honest.
+                </p>
               </div>
             </section>
 
             {/* Character first */}
-            <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
+            <section className="fi-screen" style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
               <div style={wrap}>
                 <div className="eyebrow" style={{ marginBottom: "10px" }}>Character · Read this first</div>
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.6vw, 36px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "var(--s-4)" }}>
@@ -611,7 +862,7 @@ export default function FormationInventory() {
             </section>
 
             {/* Where formation starts */}
-            <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
+            <section className="fi-screen" style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
               <div style={wrap}>
                 <div className="eyebrow" style={{ marginBottom: "10px" }}>The lowest two character domains</div>
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.6vw, 36px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "12px" }}>
@@ -648,7 +899,7 @@ export default function FormationInventory() {
             </section>
 
             {/* Capacity, second by design */}
-            <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
+            <section className="fi-screen" style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
               <div style={wrap}>
                 <div className="eyebrow" style={{ marginBottom: "10px" }}>Capacity · Second by design</div>
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.6vw, 36px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "12px" }}>
@@ -679,6 +930,104 @@ export default function FormationInventory() {
                 </p>
               </div>
             </section>
+
+            {/* Statement by statement */}
+            <section className="fi-screen" style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
+              <div style={wrap}>
+                <div className="eyebrow" style={{ marginBottom: "10px" }}>The working</div>
+                <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.6vw, 36px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "12px" }}>
+                  Statement by statement
+                </h2>
+                <p style={{ ...bodyText, marginBottom: "var(--s-4)", maxWidth: "62ch" }}>
+                  The reading above is not an oracle. It is arithmetic on your own answers, and every score can be traced to what you said. Open a domain and check the work.
+                </p>
+                <AnswerDrilldown answers={answers} scores={scores} />
+                <p style={{ ...mutedText, fontSize: "13px", marginTop: "12px", maxWidth: "62ch" }}>
+                  Reverse-scored statements count the other way. On those, the more often, the greater the warning.
+                </p>
+              </div>
+            </section>
+
+            {/* The long view */}
+            <section className="fi-screen" style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
+              <div style={wrap}>
+                <div className="eyebrow" style={{ marginBottom: "10px" }}>The long view</div>
+                <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.6vw, 36px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "12px" }}>
+                  What the retakes show
+                </h2>
+                {runs.length >= 2 ? (
+                  <TrendView runs={runs} />
+                ) : (
+                  <p style={{ ...bodyText, maxWidth: "62ch" }}>
+                    One reading is a point, not a line. The trend begins the second time you take this, and the second time is due {fmtDate(nextDue)}. Come back then. This browser will remember.
+                  </p>
+                )}
+              </div>
+            </section>
+
+            {/* Print document. Hidden on screen; the whole page when printed. */}
+            <div className="fi-print">
+              <h1>The Leadership Formation Inventory</h1>
+              <p className="fi-print-meta">
+                Taken {fmtDate(new Date())}. Scored in the browser; nothing left the device.
+              </p>
+              <p style={{ fontFamily: "var(--F)", fontSize: "14pt", lineHeight: 1.4 }}>{verdictFor(scores)}</p>
+
+              <h2>Character, read first</h2>
+              {CHARACTER_DOMAINS.map((d) => {
+                const delta = formatDelta(previous?.scores[d.id], scores[d.id]);
+                return (
+                  <div key={d.id} className="fi-print-row">
+                    <span>{d.name}</span>
+                    <span>
+                      {scores[d.id].toFixed(1)} / 5{delta ? ` (${delta})` : ""}
+                    </span>
+                  </div>
+                );
+              })}
+
+              <h2>Where formation starts</h2>
+              {lowestTwo.map((d) => (
+                <div key={d.id} className="fi-print-block">
+                  <h3>
+                    {d.name}, {scores[d.id].toFixed(1)} / 5
+                  </h3>
+                  <p>{d.meaning}</p>
+                  <p className="fi-print-label">Practices</p>
+                  <ul>
+                    {d.practices?.map((p, i) => (
+                      <li key={i}>{p}</li>
+                    ))}
+                  </ul>
+                  <p className="fi-print-label">Reading</p>
+                  <p>{d.books?.map((b) => `${b.title}, ${b.author}`).join(" · ")}</p>
+                </div>
+              ))}
+
+              <h2>Capacity, second by design</h2>
+              {CAPACITY_DOMAINS.map((d) => {
+                const delta = formatDelta(previous?.scores[d.id], scores[d.id]);
+                return (
+                  <div key={d.id} className="fi-print-row">
+                    <span>{d.name}</span>
+                    <span>
+                      {scores[d.id].toFixed(1)} / 5{delta ? ` (${delta})` : ""}
+                    </span>
+                  </div>
+                );
+              })}
+              {lowestCapacity.note && (
+                <p style={{ marginTop: "6pt" }}>
+                  {lowestCapacity.name}: {lowestCapacity.note}
+                </p>
+              )}
+
+              <p className="fi-print-foot">
+                Next reading due {fmtDate(nextDue)}. Six months is long enough for the slow work to show.
+                <br />
+                livewellbyjamesbell.co/leadership/inventory
+              </p>
+            </div>
           </>
         );
       })()}

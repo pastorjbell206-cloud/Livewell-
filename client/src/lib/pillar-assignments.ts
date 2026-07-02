@@ -7,6 +7,60 @@
  */
 export interface PillarAssignment { pillar: number; subThemes: string[]; confidence: "high" | "med" | "LOW"; }
 export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
+  "the-machine-that-forms-you": {
+    "pillar": 6,
+    "subThemes": [
+      "practices",
+      "parenting",
+      "fatherhood",
+      "family-household"
+    ],
+    "confidence": "high"
+  },
+  "the-hour-that-forms-the-week": {
+    "pillar": 6,
+    "subThemes": [
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "what-a-christian-owes-the-city": {
+    "pillar": 6,
+    "subThemes": [
+      "friendship-community",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "the-atheist-in-the-pulpit": {
+    "pillar": 4,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "excavation-not-demolition": {
+    "pillar": 4,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "depression-or-the-dark-night": {
+    "pillar": 6,
+    "subThemes": [
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "a-whole-life": {
+    "pillar": 6,
+    "subThemes": [
+      "friendship-community"
+    ],
+    "confidence": "high"
+  },
+  "the-end-of-home-field-advantage": {
+    "pillar": 4,
+    "subThemes": [],
+    "confidence": "high"
+  },
   "when-god-bless-america-replaces-thy-kingdom-come": {
     "pillar": 1,
     "subThemes": [],

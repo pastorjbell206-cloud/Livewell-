@@ -9,6 +9,7 @@ import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
 import { Prose } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
+import PageEndNav from "@/components/PageEndNav";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -120,6 +121,8 @@ export default function ContextGuide() {
           )}
         </div>
       </section>
+
+      {data && <PageEndNav back={{ href: "/resources/context", label: "Reading Scripture in Context" }} />}
     </Layout>
   );
 }

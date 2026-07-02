@@ -13,6 +13,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { TriageBadge } from "@/components/TriageBadge";
 import type { Doctrine } from "@/lib/theology";
 import { Prose } from "@/lib/prose";
+import PageEndNav from "@/components/PageEndNav";
 
 function StepHeading({ n, kicker, title }: { n: number; kicker: string; title: string }) {
   return (
@@ -235,6 +236,8 @@ export default function TheologyDoctrine() {
           <Link href="/theology" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>All doctrines</Link>
         </div>
       </section>
+
+      <PageEndNav back={{ href: "/theology", label: "Theological Depth" }} />
     </Layout>
   );
 }

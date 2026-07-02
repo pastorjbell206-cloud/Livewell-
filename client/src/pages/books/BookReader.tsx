@@ -10,6 +10,7 @@ import { Link, useRoute } from "wouter";
 import { Markdown } from "@/components/Markdown";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import PageEndNav from "@/components/PageEndNav";
 import { SITE_URL } from "@/lib/site";
 
 const prose = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
@@ -123,6 +124,8 @@ export default function BookReader() {
               ))}
             </div>
           </section>
+
+          <PageEndNav back={{ href: "/read", label: "The Library" }} />
         </>
       )}
     </Layout>

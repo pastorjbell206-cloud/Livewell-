@@ -51,6 +51,8 @@ export default function Footer() {
               <Link href="/books" style={footerLink}>Books</Link>
               <Link href="/read" style={footerLink}>The Library (read online)</Link>
               <Link href="/reading-paths" style={footerLink}>Reading Paths</Link>
+              <Link href="/library" style={footerLink}>The Commonplace</Link>
+              <Link href="/framework" style={footerLink}>The Framework</Link>
               <Link href="/start" style={footerLink}>Start Here</Link>
               <Link href="/marriage" style={footerLink}>Marriage</Link>
               <Link href="/parenting" style={footerLink}>Parenting</Link>

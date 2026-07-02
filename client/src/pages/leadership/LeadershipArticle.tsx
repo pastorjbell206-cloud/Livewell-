@@ -6,6 +6,7 @@
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
+import PageEndNav from "@/components/PageEndNav";
 import { Prose } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
 import type { LeadershipArticle as Article } from "@/lib/leadership";
@@ -121,6 +122,8 @@ export default function LeadershipArticle() {
           <Link href="/leadership/library" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Search the Leadership Library</Link>
         </div>
       </section>
+
+      {data && <PageEndNav back={{ href: "/leadership", label: "The Leadership Hub" }} />}
     </Layout>
   );
 }

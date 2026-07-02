@@ -11,6 +11,7 @@ import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
 import { toParagraphs } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
+import PageEndNav from "@/components/PageEndNav";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -152,6 +153,8 @@ export default function LifeDomain() {
           </div>
         </section>
       )}
+
+      <PageEndNav back={{ href: "/life", label: "The Integrated Life" }} />
     </Layout>
   );
 }

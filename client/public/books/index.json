@@ -1,6 +1,14 @@
 {
   "books": [
     {
+      "slug": "born-again-from-atheism",
+      "title": "Born Again From Atheism",
+      "subtitle": "How an Unbeliever Came to Faith, and What He Found There",
+      "blurb": "James Bell was not a lapsed churchgoer who wandered back. He was an atheist with reasons, raised without a father, formed by Russell and the company of the clear-eyed, and he still respects the man who held those arguments. This is the whole account of what moved, slowly, against his preference, and what it cost. It takes the case for unbelief at full strength, keeps the wound and the argument distinct, and follows the erosion through Otto and Lewis and a night with no lightning in it, to a pulpit in Fenton, Michigan, and a table with five sons at it. Written toward the reader still on the other side, who should finish able to disagree, and unable to say he was handled.",
+      "pillar": "After Christendom",
+      "chapters": 12
+    },
+    {
       "slug": "character-before-competence",
       "title": "Character Before Competence",
       "subtitle": "Leading the Church Without Losing Your Soul",
@@ -9,67 +17,11 @@
       "chapters": 11
     },
     {
-      "slug": "deep-roots",
-      "title": "Deep Roots",
-      "subtitle": "Why Doctrine, Church History, and the Whole Story of Scripture Still Hold",
-      "blurb": "James Bell takes the reader down to the roots of the Christian faith, the doctrines we recite without using, the councils we forgot we owe, and the single story Scripture has been telling all along. Written for skeptics, for Christians carrying real questions, and for anyone whose faith has outgrown the slogans it was handed, Deep Roots argues that the old depths are not a museum to admire but the only ground strong enough to stand on. It is theology that refuses to separate rigor from warmth, written from inside the room where people fall apart.",
-      "pillar": "Theological Depth",
-      "chapters": 12
-    },
-    {
-      "slug": "mishpat",
-      "title": "Mishpat",
-      "subtitle": "God, the Poor, and the Justice the Church Forgot",
-      "blurb": "Justice is not a partisan word smuggled into Scripture. It is one of the oldest words in Scripture, and the church has spent a long time learning not to hear it. This book recovers what the Bible means by mishpat and tsedaqah, traces God's relentless lean toward the poor and the foreigner, and refuses both the gospel that blesses your portfolio and the politics that swallows the gospel whole.",
-      "pillar": "Prophetic Justice",
-      "chapters": 11
-    },
-    {
-      "slug": "the-captive-church",
-      "title": "The Captive Church",
-      "subtitle": "Nationalism, Empire, and the Cost of Cultural Christianity",
-      "blurb": "The church keeps reaching for the kingdoms of the world on the terms the world offers them, and keeps calling the reach faithfulness. This book follows the one temptation Jesus refused in the wilderness through Constantine, the denarius, the flag on the platform, and the water we no longer see, and it indicts every tribe by the same cross. It is not a book about politics. It is a book about who the church belongs to.",
-      "pillar": "Prophetic Disruption",
-      "chapters": 10
-    },
-    {
-      "slug": "the-undivided-life",
-      "title": "The Undivided Life",
-      "subtitle": "Following Jesus Through an Ordinary Week",
-      "blurb": "Most of us were handed a faith for Sundays and a calendar for the other six days, and we have lived in the gap ever since. This is a book about closing it. Marriage and money, work and rest, the body and the home and the friends who know your real name, all of it claimed by one Lord and offered as one life.",
-      "pillar": "Integrated Life",
-      "chapters": 12
-    },
-    {
-      "slug": "faithful-in-exile",
-      "title": "Faithful in Exile",
-      "subtitle": "Pastoral Leadership and the Church's Witness in a Post-Christian Age",
-      "blurb": "The church in the West has lost the cultural power it held for sixteen centuries, and most of us are treating the loss like a catastrophe to be reversed. It isn't a catastrophe. It's a homecoming, a return to the church's oldest and most faithful condition, the condition of exile, where the people of God have always done their truest work. This book traces how Christendom rose and how it fell, and it argues that the long stretch of years in front of us is not a sentence. It's an assignment.",
-      "pillar": "After Christendom",
-      "chapters": 17
-    },
-    {
-      "slug": "sent-into-the-city",
-      "title": "Sent Into the City",
-      "subtitle": "The Church's Calling to Its Neighborhood and World",
-      "blurb": "The church was never gathered to be hidden. It was gathered to be sent into the actual street, the actual block, the actual city where God has placed it. This is a book about trading the machinery of programs for the slow obedience of presence, about loving the people you did not choose, and about what it costs to seek the welfare of a place you might rather leave.",
-      "pillar": "Prophetic Justice",
-      "chapters": 23
-    },
-    {
       "slug": "common-grace",
       "title": "Common Grace",
       "subtitle": "What Pastors Learn When They Listen to the World",
       "blurb": "God did not lock his goodness inside the church. He scattered it across the whole field of human life — into the laboratory, the studio, the courtroom, the mouth of the honest unbeliever — and called it good before any of us got there. This is a book about the grace that is common: the kindness of God to people who do not yet know his name, and the slow, costly discipline of learning to recognize it without ever surrendering to it.",
       "pillar": "Theological Depth",
-      "chapters": 17
-    },
-    {
-      "slug": "the-pruning",
-      "title": "The Pruning",
-      "subtitle": "Church Decline, Faithful Endurance, and the Promise of Renewal",
-      "blurb": "The numbers are real, and they are not lying to us. But the question the church keeps asking — are we dying? — is the wrong question, because it assumes the only two states are health and death. There is a third thing, and the Vinedresser has done it before. This is a book about the difference between the church being killed and the church being cut, and why the second one looks almost exactly like the first while it is happening.",
-      "pillar": "After Christendom",
       "chapters": 17
     },
     {
@@ -81,6 +33,14 @@
       "chapters": 18
     },
     {
+      "slug": "deep-roots",
+      "title": "Deep Roots",
+      "subtitle": "Why Doctrine, Church History, and the Whole Story of Scripture Still Hold",
+      "blurb": "James Bell takes the reader down to the roots of the Christian faith, the doctrines we recite without using, the councils we forgot we owe, and the single story Scripture has been telling all along. Written for skeptics, for Christians carrying real questions, and for anyone whose faith has outgrown the slogans it was handed, Deep Roots argues that the old depths are not a museum to admire but the only ground strong enough to stand on. It is theology that refuses to separate rigor from warmth, written from inside the room where people fall apart.",
+      "pillar": "Theological Depth",
+      "chapters": 12
+    },
+    {
       "slug": "earthen-vessels",
       "title": "Earthen Vessels",
       "subtitle": "Why Our Bodies Matter to Our Faith",
@@ -89,26 +49,26 @@
       "chapters": 18
     },
     {
-      "slug": "the-hidden-life-of-a-pastor",
-      "title": "The Hidden Life of a Pastor",
-      "subtitle": "Tending Your Soul While Tending the Flock",
-      "blurb": "The most dangerous thing in ministry is not failure. It is a public life that has quietly outrun the private communion that was supposed to feed it. This is a book about the hidden life with God — the only thing that finally sustains the visible one — written for the shepherd who has not yet admitted how thirsty he has become.",
-      "pillar": "Pastoral Ministry",
+      "slug": "faithful-in-exile",
+      "title": "Faithful in Exile",
+      "subtitle": "Pastoral Leadership and the Church's Witness in a Post-Christian Age",
+      "blurb": "The church in the West has lost the cultural power it held for sixteen centuries, and most of us are treating the loss like a catastrophe to be reversed. It isn't a catastrophe. It's a homecoming, a return to the church's oldest and most faithful condition, the condition of exile, where the people of God have always done their truest work. This book traces how Christendom rose and how it fell, and it argues that the long stretch of years in front of us is not a sentence. It's an assignment.",
+      "pillar": "After Christendom",
       "chapters": 17
     },
     {
-      "slug": "the-undershepherd",
-      "title": "The Undershepherd",
-      "subtitle": "Pastoral Leadership, Authority, and the Care of God's People",
-      "blurb": "The pastor is not the shepherd. He is an under-shepherd, holding a borrowed staff over a flock that was never his, answerable to the One whose blood bought them. This book refuses the two cheap roads of domination and abandonment, and argues that the only authority worth having in the church is the kind that bleeds for the sheep instead of feeding on them.",
-      "pillar": "Pastoral Ministry",
-      "chapters": 19
+      "slug": "mishpat",
+      "title": "Mishpat",
+      "subtitle": "God, the Poor, and the Justice the Church Forgot",
+      "blurb": "Justice is not a partisan word smuggled into Scripture. It is one of the oldest words in Scripture, and the church has spent a long time learning not to hear it. This book recovers what the Bible means by mishpat and tsedaqah, traces God's relentless lean toward the poor and the foreigner, and refuses both the gospel that blesses your portfolio and the politics that swallows the gospel whole.",
+      "pillar": "Prophetic Justice",
+      "chapters": 11
     },
     {
-      "slug": "the-first-flock",
-      "title": "The First Flock",
-      "subtitle": "The Church's Calling to Care for Pastors and Their Families",
-      "blurb": "The man you call to feed you is starving, and you have not noticed. This is a book about the duty a congregation owes the shepherd it ordained to shepherd it, and about the first flock no one counts, the family inside the parsonage who absorb the cost of a ministry they never chose. It is written to the church as much as to the pastor, because the pastor cannot fix this alone, and the church has been pretending it is not the one holding the knife.",
+      "slug": "necessary-words",
+      "title": "Necessary Words",
+      "subtitle": "A Pastoral Theology of Courage and Difficult Conversations",
+      "blurb": "The church has confused niceness with love and silence with peace, and the people who pay for it are the ones we refused to tell the truth. This is a book about the necessary word — the courage to confront sin, walk into conflict, and say the thing that wounds in order to heal. Speaking the truth in love is not a personality you were born with. It is an obedience, and most of us have spent our whole lives finding ways around it.",
       "pillar": "Pastoral Ministry",
       "chapters": 17
     },
@@ -129,19 +89,75 @@
       "chapters": 17
     },
     {
+      "slug": "sent-into-the-city",
+      "title": "Sent Into the City",
+      "subtitle": "The Church's Calling to Its Neighborhood and World",
+      "blurb": "The church was never gathered to be hidden. It was gathered to be sent into the actual street, the actual block, the actual city where God has placed it. This is a book about trading the machinery of programs for the slow obedience of presence, about loving the people you did not choose, and about what it costs to seek the welfare of a place you might rather leave.",
+      "pillar": "Prophetic Justice",
+      "chapters": 23
+    },
+    {
+      "slug": "the-captive-church",
+      "title": "The Captive Church",
+      "subtitle": "Nationalism, Empire, and the Cost of Cultural Christianity",
+      "blurb": "The church keeps reaching for the kingdoms of the world on the terms the world offers them, and keeps calling the reach faithfulness. This book follows the one temptation Jesus refused in the wilderness through Constantine, the denarius, the flag on the platform, and the water we no longer see, and it indicts every tribe by the same cross. It is not a book about politics. It is a book about who the church belongs to.",
+      "pillar": "Prophetic Disruption",
+      "chapters": 10
+    },
+    {
+      "slug": "the-first-flock",
+      "title": "The First Flock",
+      "subtitle": "The Church's Calling to Care for Pastors and Their Families",
+      "blurb": "The man you call to feed you is starving, and you have not noticed. This is a book about the duty a congregation owes the shepherd it ordained to shepherd it, and about the first flock no one counts, the family inside the parsonage who absorb the cost of a ministry they never chose. It is written to the church as much as to the pastor, because the pastor cannot fix this alone, and the church has been pretending it is not the one holding the knife.",
+      "pillar": "Pastoral Ministry",
+      "chapters": 17
+    },
+    {
+      "slug": "the-god-who-is-not-nice",
+      "title": "The God Who Is Not Nice",
+      "subtitle": "Recovering the Holy God a Therapeutic Church Traded Away",
+      "blurb": "The functioning god of much of the American church is warm, agreeable, and reliably on our side, and he cannot save anyone. James Bell, who came to faith from a settled atheism and did not leave unbelief for a god that small, traces the sentimental deity to his birth records, the five-article creed Christian Smith and Melinda Lundquist Denton named in 2005 and the therapeutic turn Philip Rieff saw coming in 1966, and then walks the reader back into the text, to the burning bush, the shaking doorposts of Isaiah 6, the terrified boat on Galilee, and Bonhoeffer's war on cheap grace. Written by a pastor who preached the nice god because it filled rooms, and stopped. The holy God is not safe. He was never nice. He is good, and he is the only comfort that holds.",
+      "pillar": "Theological Depth",
+      "chapters": 12
+    },
+    {
+      "slug": "the-hidden-life-of-a-pastor",
+      "title": "The Hidden Life of a Pastor",
+      "subtitle": "Tending Your Soul While Tending the Flock",
+      "blurb": "The most dangerous thing in ministry is not failure. It is a public life that has quietly outrun the private communion that was supposed to feed it. This is a book about the hidden life with God — the only thing that finally sustains the visible one — written for the shepherd who has not yet admitted how thirsty he has become.",
+      "pillar": "Pastoral Ministry",
+      "chapters": 17
+    },
+    {
+      "slug": "the-pruning",
+      "title": "The Pruning",
+      "subtitle": "Church Decline, Faithful Endurance, and the Promise of Renewal",
+      "blurb": "The numbers are real, and they are not lying to us. But the question the church keeps asking — are we dying? — is the wrong question, because it assumes the only two states are health and death. There is a third thing, and the Vinedresser has done it before. This is a book about the difference between the church being killed and the church being cut, and why the second one looks almost exactly like the first while it is happening.",
+      "pillar": "After Christendom",
+      "chapters": 17
+    },
+    {
+      "slug": "the-undershepherd",
+      "title": "The Undershepherd",
+      "subtitle": "Pastoral Leadership, Authority, and the Care of God's People",
+      "blurb": "The pastor is not the shepherd. He is an under-shepherd, holding a borrowed staff over a flock that was never his, answerable to the One whose blood bought them. This book refuses the two cheap roads of domination and abandonment, and argues that the only authority worth having in the church is the kind that bleeds for the sheep instead of feeding on them.",
+      "pillar": "Pastoral Ministry",
+      "chapters": 19
+    },
+    {
+      "slug": "the-undivided-life",
+      "title": "The Undivided Life",
+      "subtitle": "Following Jesus Through an Ordinary Week",
+      "blurb": "Most of us were handed a faith for Sundays and a calendar for the other six days, and we have lived in the gap ever since. This is a book about closing it. Marriage and money, work and rest, the body and the home and the friends who know your real name, all of it claimed by one Lord and offered as one life.",
+      "pillar": "Integrated Life",
+      "chapters": 12
+    },
+    {
       "slug": "the-unfinished-church",
       "title": "The Unfinished Church",
       "subtitle": "Calling, Vision, and the Future God Is Building",
       "blurb": "The church is not a monument to defend or a method to chase. It is a building still rising, founded on a promise older than any of us and aimed at a city we have not yet seen. This book is about what it means to belong to something God is building and we are not finishing.",
       "pillar": "After Christendom",
-      "chapters": 17
-    },
-    {
-      "slug": "necessary-words",
-      "title": "Necessary Words",
-      "subtitle": "A Pastoral Theology of Courage and Difficult Conversations",
-      "blurb": "The church has confused niceness with love and silence with peace, and the people who pay for it are the ones we refused to tell the truth. This is a book about the necessary word — the courage to confront sin, walk into conflict, and say the thing that wounds in order to heal. Speaking the truth in love is not a personality you were born with. It is an obedience, and most of us have spent our whole lives finding ways around it.",
-      "pillar": "Pastoral Ministry",
       "chapters": 17
     },
     {

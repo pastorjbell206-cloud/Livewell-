@@ -15,6 +15,7 @@ import { Markdown } from "@/components/Markdown";
 import { ArrowLeft, Bookmark, Share2, User } from "lucide-react";
 
 import Layout from "@/components/Layout";
+import PageEndNav from "@/components/PageEndNav";
 import ReadingProgressBar from "@/components/ReadingProgressBar";
 import { SEOMeta, getArticleSchema, getBreadcrumbSchema } from "@/components/SEOMeta";
 import { AuthorBio } from "@/components/AuthorBio";
@@ -846,6 +847,8 @@ export default function ArticleDetail() {
 
         {/* AUTHOR BIO */}
         <AuthorBio />
+
+        <PageEndNav back={{ href: "/writing", label: "All essays" }} />
       </article>
     </Layout>
   );

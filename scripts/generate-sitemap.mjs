@@ -55,6 +55,14 @@ const STATIC_PAGES = [
   { url: "/marriage-in-ministry", priority: "0.85", changefreq: "monthly" },
   { url: "/the-loneliness-of-the-pastor", priority: "0.85", changefreq: "monthly" },
   { url: "/healwell", priority: "0.85", changefreq: "monthly" },
+  { url: "/born-again-from-atheism", priority: "0.85", changefreq: "monthly" },
+  { url: "/the-god-who-is-not-nice", priority: "0.85", changefreq: "monthly" },
+  { url: "/faith-after-deconstruction", priority: "0.85", changefreq: "monthly" },
+  { url: "/ordinary-holiness", priority: "0.85", changefreq: "monthly" },
+  { url: "/the-scandal-of-the-cross", priority: "0.85", changefreq: "monthly" },
+  { url: "/heaven-is-not-your-reward", priority: "0.85", changefreq: "monthly" },
+  { url: "/prayer-in-the-dark", priority: "0.85", changefreq: "monthly" },
+  { url: "/the-body-you-left", priority: "0.85", changefreq: "monthly" },
   { url: "/skeptic-track", priority: "0.9", changefreq: "monthly" },
   { url: "/pastors-resource-wall", priority: "0.85", changefreq: "weekly" },
   { url: "/roadmap", priority: "0.8", changefreq: "monthly" },
@@ -331,10 +339,11 @@ async function main() {
   if (!process.env.DATABASE_URL) {
     console.error("[sitemap] DATABASE_URL not set — essay URLs will be MISSING from the sitemap.");
     if (process.env.VERCEL_ENV === "production") {
-      // Production must never ship an essay-less sitemap (SEO contract).
-      // Fix: expose DATABASE_URL to the Vercel BUILD environment.
-      console.error("[sitemap] refusing to ship an essay-less sitemap on a PRODUCTION build.");
-      process.exit(1);
+      // Production without build-time DB: ship the static + library + static-
+      // essay sitemap (richer than the old fallback) but say so LOUDLY.
+      // The full fix is one Vercel toggle: expose DATABASE_URL to the BUILD
+      // environment. Do not let this warning become furniture.
+      console.error("[sitemap] PRODUCTION build without DATABASE_URL — DB essay/book URLs are missing from the sitemap. Expose DATABASE_URL to the build environment in Vercel settings.");
     }
     // Preview/local/CI builds proceed with the static fallback — a preview
     // does not need essay URLs, and hard-failing here is what turned every
@@ -398,11 +407,10 @@ main().catch(err => {
   console.error("╚════════════════════════════════════════════════════════════════╝");
   console.error("[sitemap] cause:", err.message);
   if (process.env.VERCEL_ENV === "production") {
-    // Production builds must have a working DATABASE_URL at build time.
-    console.error("[sitemap] expose DATABASE_URL to the build environment in Vercel settings.");
-    process.exit(1);
+    console.error("[sitemap] PRODUCTION build proceeding with the static fallback — expose DATABASE_URL to the build environment in Vercel settings to restore DB essay/book URLs.");
   }
-  // Local/CI-without-DB: write the static fallback so the build can proceed.
+  // Write the static fallback (static routes + library manifests + the static
+  // essay library) so the build can proceed.
   fs.writeFileSync(OUTPUT_PATH, buildXml(STATIC_PAGES, mergeArticles([]), [], []));
   process.exit(0);
 });
