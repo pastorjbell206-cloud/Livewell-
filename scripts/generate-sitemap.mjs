@@ -392,8 +392,9 @@ main().catch(err => {
   console.error("║ shipping an essay-less sitemap silently de-indexes the library. ║");
   console.error("╚════════════════════════════════════════════════════════════════╝");
   console.error("[sitemap] cause:", err.message);
-  if (process.env.VERCEL) {
-    // Production/preview builds must have a working DATABASE_URL.
+  if (process.env.VERCEL_ENV === "production") {
+    // Production builds must have a working DATABASE_URL at build time.
+    console.error("[sitemap] expose DATABASE_URL to the build environment in Vercel settings.");
     process.exit(1);
   }
   // Local/CI-without-DB: write the static fallback so the build can proceed.
