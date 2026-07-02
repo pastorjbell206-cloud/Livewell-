@@ -14,7 +14,7 @@ const TOOLS = [
   },
   {
     title: "Theology Quiz",
-    description: "Twenty questions across doctrine, church history, and the biblical storyline. Find out where your foundations are solid and where the gaps are. Part of the Theological Depth section.",
+    description: "Ten questions across doctrine, church history, and the biblical storyline. Find out where your foundations are solid and where the gaps are. Part of the Theological Depth section.",
     href: "/tools/theology-quiz",
     icon: Brain,
     color: "var(--goldlt)",
@@ -187,6 +187,27 @@ const TOOLS = [
     icon: Church,
     color: "var(--ink)",
   },
+  {
+    title: "Misused Verses — What the Bible Actually Says",
+    description: "The passages we quote most and read least: what each one says in context, how it gets misused, and the fuller teaching underneath. The estate's deepest verse tool.",
+    href: "/tools/bible-says",
+    icon: BookOpen,
+    color: "var(--ink)",
+  },
+  {
+    title: "Quote Library",
+    description: "181 lines from the essays, filed by conviction, comfort, challenge, history, and wisdom — each tied to the piece it came from. Copy one, share one, follow one home.",
+    href: "/tools/quotes",
+    icon: MessageCircle,
+    color: "var(--ink2)",
+  },
+  {
+    title: "Theology Glossary",
+    description: "The working vocabulary of serious faith — justification, atonement, sanctification and the rest — defined plainly, searchable, without the seminary fee.",
+    href: "/tools/glossary",
+    icon: BookMarked,
+    color: "var(--ink)",
+  },
 ];
 
 export default function ToolsHub() {
@@ -261,34 +282,21 @@ export default function ToolsHub() {
             })}
           </div>
 
-          {totalSaved > 0 && (
-            <div style={{ textAlign: "center", marginTop: "32px" }}>
-              <Link
-                href="/tools/saved"
-                style={{
-                  fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)",
-                  color: "var(--mustard)", textDecoration: "underline",
-                  textUnderlineOffset: "3px",
-                }}
-              >
-                Saved Items ({totalSaved})
-              </Link>
-            </div>
-          )}
+          <div style={{ textAlign: "center", marginTop: "32px" }}>
+            <Link
+              href="/tools/saved"
+              style={{
+                fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)",
+                color: "var(--mustard-text)", textDecoration: "underline",
+                textUnderlineOffset: "3px",
+              }}
+            >
+              {totalSaved > 0 ? `Saved Items (${totalSaved})` : "Saved Items — verses and prayers you keep live here"}
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section style={{ padding: "60px 32px", background: "var(--cream)", textAlign: "center" }}>
-        <div className="wrap" style={{ maxWidth: "600px" }}>
-          <h2 style={{ fontSize: "28px", fontWeight: 600, fontFamily: "var(--F)", color: "var(--ink)", marginBottom: "12px" }}>
-            More tools coming soon
-          </h2>
-          <p style={{ fontSize: "16px", color: "var(--ink3)", lineHeight: 1.7, fontFamily: "var(--B)" }}>
-            Sermon outline builder, pastoral care tracker, and reading plan generator are in development. Subscribe to get notified when they launch.
-          </p>
-        </div>
-      </section>
     </Layout>
   );
 }
