@@ -329,7 +329,12 @@ function buildXml(staticPages, articles, books, readingPaths) {
 
 async function main() {
   if (!process.env.DATABASE_URL) {
-    console.warn("[sitemap] DATABASE_URL not set — writing fallback sitemap (static pages only)");
+    console.error("[sitemap] DATABASE_URL not set — essay URLs will be MISSING from the sitemap.");
+    if (process.env.VERCEL) {
+      console.error("[sitemap] refusing to ship an essay-less sitemap on a Vercel build.");
+      process.exit(1);
+    }
+    console.error("[sitemap] writing static fallback (local/CI without a database).");
     const xml = buildXml(STATIC_PAGES, mergeArticles([]), [], []);
     fs.writeFileSync(OUTPUT_PATH, xml);
     return;
