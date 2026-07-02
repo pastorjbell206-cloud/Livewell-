@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { ArrowLeft } from "lucide-react";
@@ -1684,10 +1684,404 @@ const BOOKS: BibleBook[] = [
 
 const TABS = ["What It Says", "What It Meant", "How It's Built", "What Scholars Say", "Why It Matters", "Go Deeper"];
 
+/* ── Your workspace (localStorage) ──────────────────────────────────
+   Versioned key: { v: 1, notes, marks, touched }.
+     notes:   { [bookName]: { [questionKey]: { text, updated } } }
+              questionKey = `${passageRef}::${slot}` (slot: matters | week | study)
+     marks:   { [bookName]: [`${passageRef}::${layerIndex}`] }
+     touched: { [bookName]: ISO date of last activity }
+   Reads are defensive: a corrupted or missing entry starts the workspace
+   fresh instead of crashing. If storage is unavailable the study still
+   works; notes and marks last only for the visit, and the tool says so
+   once. */
+
+const STORAGE_KEY = "lw-deep-bible";
+
+interface NoteEntry { text: string; updated: string; }
+interface Workspace {
+  notes: Record<string, Record<string, NoteEntry>>;
+  marks: Record<string, string[]>;
+  touched: Record<string, string>;
+}
+type StorageProblem = "none" | "blocked" | "corrupt";
+
+const emptyWorkspace = (): Workspace => ({ notes: {}, marks: {}, touched: {} });
+
+function isNoteEntry(v: unknown): v is NoteEntry {
+  if (!v || typeof v !== "object") return false;
+  const n = v as Partial<NoteEntry>;
+  return typeof n.text === "string" && typeof n.updated === "string";
+}
+
+function loadWorkspace(): { ws: Workspace; problem: StorageProblem } {
+  if (typeof window === "undefined") return { ws: emptyWorkspace(), problem: "none" };
+  const attempt = (() => {
+    try {
+      return { ok: true as const, raw: window.localStorage.getItem(STORAGE_KEY) };
+    } catch {
+      return { ok: false as const, raw: null };
+    }
+  })();
+  if (!attempt.ok) return { ws: emptyWorkspace(), problem: "blocked" };
+  const raw = attempt.raw;
+  if (!raw) return { ws: emptyWorkspace(), problem: "none" };
+  try {
+    const parsed: unknown = JSON.parse(raw);
+    if (!parsed || typeof parsed !== "object") return { ws: emptyWorkspace(), problem: "corrupt" };
+    const box = parsed as { v?: unknown; notes?: unknown; marks?: unknown; touched?: unknown };
+    if (box.v !== 1) return { ws: emptyWorkspace(), problem: "corrupt" };
+    const ws = emptyWorkspace();
+    if (box.notes && typeof box.notes === "object") {
+      for (const [book, qs] of Object.entries(box.notes as Record<string, unknown>)) {
+        if (!qs || typeof qs !== "object") continue;
+        const clean: Record<string, NoteEntry> = {};
+        for (const [qk, entry] of Object.entries(qs as Record<string, unknown>)) {
+          if (isNoteEntry(entry) && entry.text.trim() !== "") clean[qk] = { text: entry.text, updated: entry.updated };
+        }
+        if (Object.keys(clean).length > 0) ws.notes[book] = clean;
+      }
+    }
+    if (box.marks && typeof box.marks === "object") {
+      for (const [book, list] of Object.entries(box.marks as Record<string, unknown>)) {
+        if (!Array.isArray(list)) continue;
+        const clean = list.filter((k): k is string => typeof k === "string");
+        if (clean.length > 0) ws.marks[book] = clean;
+      }
+    }
+    if (box.touched && typeof box.touched === "object") {
+      for (const [book, iso] of Object.entries(box.touched as Record<string, unknown>)) {
+        if (typeof iso === "string" && !Number.isNaN(new Date(iso).getTime())) ws.touched[book] = iso;
+      }
+    }
+    return { ws, problem: "none" };
+  } catch {
+    return { ws: emptyWorkspace(), problem: "corrupt" };
+  }
+}
+
+function saveWorkspace(ws: Workspace): boolean {
+  try {
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify({ v: 1, ...ws }));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+type QuestionSlot = "matters" | "week" | "study";
+const QUESTION_SLOTS: QuestionSlot[] = ["matters", "week", "study"];
+const QUESTION_LABELS: Record<QuestionSlot, string> = {
+  matters: "The question this passage answers",
+  week: "This week",
+  study: "Discussion question",
+};
+
+function questionTextFor(p: Passage, slot: QuestionSlot): string {
+  if (slot === "matters") return p.application.question;
+  if (slot === "week") return p.application.thisWeek;
+  return p.deeper.studyQuestion;
+}
+
+function fmtDate(iso: string): string {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "";
+  return d.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+}
+
+function activityFor(ws: Workspace, bookName: string) {
+  return {
+    noteCount: Object.keys(ws.notes[bookName] ?? {}).length,
+    markCount: (ws.marks[bookName] ?? []).length,
+    touched: ws.touched[bookName],
+  };
+}
+
+function countsLine(notes: number, marks: number): string {
+  const parts: string[] = [];
+  if (notes > 0) parts.push(`${notes} note${notes === 1 ? "" : "s"}`);
+  if (marks > 0) parts.push(`${marks} marked section${marks === 1 ? "" : "s"}`);
+  return parts.join(", ");
+}
+
+function parseMark(key: string): { ref: string; layer: number } | null {
+  const i = key.lastIndexOf("::");
+  if (i < 0) return null;
+  const layer = Number(key.slice(i + 2));
+  if (!Number.isInteger(layer) || layer < 0 || layer >= TABS.length) return null;
+  return { ref: key.slice(0, i), layer };
+}
+
+function sortedMarks(book: BibleBook, ws: Workspace): { ref: string; layer: number }[] {
+  const order = new Map(book.passages.map((p, i) => [p.ref, i]));
+  return (ws.marks[book.name] ?? [])
+    .map(parseMark)
+    .filter((m): m is { ref: string; layer: number } => m !== null && order.has(m.ref))
+    .sort((a, b) => (order.get(a.ref) ?? 0) - (order.get(b.ref) ?? 0) || a.layer - b.layer);
+}
+
+function buildNotesText(book: BibleBook, ws: Workspace): string {
+  const bookNotes = ws.notes[book.name] ?? {};
+  const lines: string[] = [
+    `Deep Bible Study Companion — ${book.name}`,
+    `Your notes, copied ${fmtDate(new Date().toISOString())}`,
+    "",
+  ];
+  for (const p of book.passages) {
+    const slots = QUESTION_SLOTS.filter(s => bookNotes[`${p.ref}::${s}`]);
+    if (slots.length === 0) continue;
+    lines.push(p.ref);
+    for (const s of slots) {
+      const entry = bookNotes[`${p.ref}::${s}`];
+      lines.push(`${QUESTION_LABELS[s]}: ${questionTextFor(p, s)}`);
+      lines.push(entry.text);
+      lines.push(`(written ${fmtDate(entry.updated)})`);
+      lines.push("");
+    }
+  }
+  return lines.join("\n");
+}
+
+const quietBtn = {
+  padding: "0.6rem 1rem", minHeight: "44px", background: "none",
+  border: "1px solid var(--border, #e5e0d5)", borderRadius: "2px",
+  color: "var(--ink, #14110C)", fontSize: "0.8rem",
+  fontFamily: "var(--U, Inter, sans-serif)", fontWeight: 500, cursor: "pointer",
+} as const;
+
+const panelEyebrow = {
+  fontSize: "0.7rem", fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase",
+  color: "var(--mustard, #D4A017)", fontFamily: "var(--U, Inter, sans-serif)", marginBottom: "0.75rem",
+} as const;
+
+function StorageNote({ problem }: { problem: StorageProblem }) {
+  if (problem === "none") return null;
+  return (
+    <p style={{ fontSize: "0.8rem", fontStyle: "italic", lineHeight: 1.6, color: "var(--ink-muted, #666)", maxWidth: "560px", margin: "0 0 1.5rem" }}>
+      {problem === "blocked"
+        ? "This browser is not letting the tool store anything, so notes and marks last only as long as this visit. Print or copy anything you want to keep."
+        : "The notes saved earlier in this browser could not be read, so the workspace starts fresh. New notes will save as usual."}
+    </p>
+  );
+}
+
+function MarkToggle({ marked, label, onToggle }: { marked: boolean; label: string; onToggle: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onToggle}
+      aria-pressed={marked}
+      aria-label={label}
+      style={{
+        display: "inline-flex", alignItems: "center", gap: "0.5rem",
+        padding: "0.5rem 0.9rem", minHeight: "44px",
+        background: marked ? "var(--charcoal, #1a1a1a)" : "none",
+        border: `1px solid ${marked ? "var(--charcoal, #1a1a1a)" : "var(--border, #e5e0d5)"}`,
+        borderRadius: "2px",
+        color: marked ? "var(--bone, #F5F0E6)" : "var(--ink-muted, #666)",
+        fontSize: "0.75rem", fontFamily: "var(--U, Inter, sans-serif)", fontWeight: 500,
+        cursor: "pointer", whiteSpace: "nowrap",
+      }}
+    >
+      <span
+        aria-hidden="true"
+        style={{
+          width: "8px", height: "8px", borderRadius: "50%", flexShrink: 0,
+          background: marked ? "var(--mustard, #D4A017)" : "transparent",
+          border: marked ? "none" : "1px solid currentColor",
+        }}
+      />
+      {marked ? "Marked" : "Mark this section"}
+    </button>
+  );
+}
+
+function NoteField({ ariaLabel, initial, savedWord, onCommit }: {
+  ariaLabel: string;
+  initial: string;
+  savedWord: string;
+  onCommit: (text: string) => void;
+}) {
+  const [text, setText] = useState(initial);
+  const [showSaved, setShowSaved] = useState(false);
+  const debounceRef = useRef<number | null>(null);
+  const savedFlashRef = useRef<number | null>(null);
+  const lastCommitted = useRef(initial);
+  const latest = useRef(initial);
+  const onCommitRef = useRef(onCommit);
+  useEffect(() => {
+    onCommitRef.current = onCommit;
+  });
+
+  const commit = (value: string) => {
+    if (debounceRef.current !== null) { window.clearTimeout(debounceRef.current); debounceRef.current = null; }
+    if (value === lastCommitted.current) return;
+    lastCommitted.current = value;
+    onCommitRef.current(value);
+    setShowSaved(true);
+    if (savedFlashRef.current !== null) window.clearTimeout(savedFlashRef.current);
+    savedFlashRef.current = window.setTimeout(() => setShowSaved(false), 2400);
+  };
+
+  // Flush anything unsaved when the field unmounts (tab switch, back).
+  useEffect(() => () => {
+    if (debounceRef.current !== null) window.clearTimeout(debounceRef.current);
+    if (savedFlashRef.current !== null) window.clearTimeout(savedFlashRef.current);
+    if (latest.current !== lastCommitted.current) onCommitRef.current(latest.current);
+  }, []);
+
+  return (
+    <div style={{ marginTop: "1.25rem" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "1rem", marginBottom: "0.4rem" }}>
+        <span style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.7rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink-muted, #666)" }}>Your notes</span>
+        <span aria-live="polite" style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.7rem", color: "var(--ink-muted, #666)" }}>{showSaved ? savedWord : ""}</span>
+      </div>
+      <textarea
+        aria-label={ariaLabel}
+        value={text}
+        maxLength={4000}
+        rows={4}
+        onChange={e => {
+          const v = e.target.value;
+          setText(v);
+          latest.current = v;
+          if (debounceRef.current !== null) window.clearTimeout(debounceRef.current);
+          debounceRef.current = window.setTimeout(() => commit(v), 900);
+        }}
+        onBlur={() => commit(latest.current)}
+        style={{
+          width: "100%", boxSizing: "border-box", minHeight: "96px", padding: "0.75rem",
+          background: "white", border: "1px solid var(--border, #e5e0d5)", borderRadius: "2px",
+          fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.9rem", lineHeight: 1.6,
+          color: "var(--ink, #14110C)", resize: "vertical",
+        }}
+      />
+    </div>
+  );
+}
+
+/* Print rendering for a marked layer. Black-on-white is permitted inside
+   @media print only — this is paper, not the palette. */
+function printLayer(p: Passage, layer: number) {
+  return (
+    <div className="db-print-block" key={layer}>
+      <h3>{TABS[layer]}</h3>
+      {layer === 0 && (
+        <>
+          <blockquote>{p.text}</blockquote>
+          <p><strong>Plain-English paraphrase.</strong> {p.paraphrase}</p>
+          {p.keyWords.map((kw, i) => (
+            <p key={i}>"{kw.word}" — {kw.original}: {kw.meaning}</p>
+          ))}
+        </>
+      )}
+      {layer === 1 && p.historical.map((h, i) => <p key={i}>{h}</p>)}
+      {layer === 2 && (
+        <>
+          <p><strong>Genre.</strong> {p.literary.genre}</p>
+          <p><strong>Literary devices.</strong> {p.literary.devices}</p>
+          {p.literary.keyTerms.map((kt, i) => (
+            <p key={i}>{kt.term} ({kt.language}): {kt.meaning}</p>
+          ))}
+          <p><strong>Structure.</strong> {p.literary.structure}</p>
+        </>
+      )}
+      {layer === 3 && p.scholars.map((s, i) => (
+        <p key={i}><strong>{s.view}.</strong> {s.summary} (Key proponents: {s.proponents})</p>
+      ))}
+      {layer === 4 && (
+        <>
+          <p><strong>The question this passage answers.</strong> <em>{p.application.question}</em></p>
+          <p><strong>The connection.</strong> {p.application.connection}</p>
+          <p><strong>This week.</strong> {p.application.thisWeek}</p>
+        </>
+      )}
+      {layer === 5 && (
+        <>
+          <p><strong>Recommended books.</strong></p>
+          <ul>{p.deeper.books.map((b, i) => <li key={i}>{b}</li>)}</ul>
+          <p><strong>Discussion question.</strong> <em>{p.deeper.studyQuestion}</em></p>
+          <p><strong>A prayer from this passage.</strong> <em>{p.deeper.prayer}</em></p>
+        </>
+      )}
+    </div>
+  );
+}
+
 export default function DeepBibleCompanion() {
   const [selectedBook, setSelectedBook] = useState<BibleBook | null>(null);
   const [selectedPassage, setSelectedPassage] = useState<Passage | null>(null);
   const [activeTab, setActiveTab] = useState(0);
+
+  const [initialLoad] = useState(loadWorkspace);
+  const [ws, setWs] = useState<Workspace>(initialLoad.ws);
+  const [storageProblem, setStorageProblem] = useState<StorageProblem>(initialLoad.problem);
+  const [copyState, setCopyState] = useState<"idle" | "copied" | "blocked">("idle");
+  const copyTimer = useRef<number | null>(null);
+
+  useEffect(() => () => {
+    if (copyTimer.current !== null) window.clearTimeout(copyTimer.current);
+  }, []);
+
+  // State and storage move together, from event handlers: the workspace on
+  // screen stays right even when the browser refuses to store it.
+  const applyWs = (next: Workspace) => {
+    setWs(next);
+    if (!saveWorkspace(next)) setStorageProblem("blocked");
+  };
+
+  const commitNote = (bookName: string, questionKey: string, text: string) => {
+    const now = new Date().toISOString();
+    const bookNotes = { ...(ws.notes[bookName] ?? {}) };
+    if (text.trim() === "") delete bookNotes[questionKey];
+    else bookNotes[questionKey] = { text, updated: now };
+    const notes = { ...ws.notes };
+    if (Object.keys(bookNotes).length > 0) notes[bookName] = bookNotes;
+    else delete notes[bookName];
+    applyWs({ ...ws, notes, touched: { ...ws.touched, [bookName]: now } });
+  };
+
+  const toggleMark = (bookName: string, sectionKey: string) => {
+    const now = new Date().toISOString();
+    const list = ws.marks[bookName] ?? [];
+    const nextList = list.includes(sectionKey) ? list.filter(k => k !== sectionKey) : [...list, sectionKey];
+    const marks = { ...ws.marks };
+    if (nextList.length > 0) marks[bookName] = nextList;
+    else delete marks[bookName];
+    applyWs({ ...ws, marks, touched: { ...ws.touched, [bookName]: now } });
+  };
+
+  const openMark = (book: BibleBook, mark: { ref: string; layer: number }) => {
+    const p = book.passages.find(x => x.ref === mark.ref);
+    if (!p) return;
+    setSelectedPassage(p);
+    setActiveTab(mark.layer);
+  };
+
+  const copyNotes = (book: BibleBook) => {
+    const flash = (state: "copied" | "blocked") => {
+      setCopyState(state);
+      if (copyTimer.current !== null) window.clearTimeout(copyTimer.current);
+      copyTimer.current = window.setTimeout(() => setCopyState("idle"), 5000);
+    };
+    try {
+      navigator.clipboard.writeText(buildNotesText(book, ws)).then(
+        () => flash("copied"),
+        () => flash("blocked"),
+      );
+    } catch {
+      flash("blocked");
+    }
+  };
+
+  const workspaceBooks = BOOKS
+    .map(b => ({ book: b, ...activityFor(ws, b.name) }))
+    .filter(a => a.noteCount + a.markCount > 0)
+    .sort((a, b) => (b.touched ?? "").localeCompare(a.touched ?? ""));
+
+  const bookAct = selectedBook ? activityFor(ws, selectedBook.name) : null;
+  const bookMarks = selectedBook ? sortedMarks(selectedBook, ws) : [];
+  const printReady = bookAct !== null && bookAct.noteCount + bookAct.markCount > 0;
+  const savedWord = storageProblem === "blocked" ? "Kept for this visit" : "Saved";
 
   return (
     <Layout>
@@ -1697,7 +2091,36 @@ export default function DeepBibleCompanion() {
         structuredData={{ "@context": "https://schema.org", "@type": "WebApplication", name: "Deep Bible Study Companion", applicationCategory: "ReligiousApp", offers: { "@type": "Offer", price: "0" } }}
       />
 
-      <section style={{ background: "var(--charcoal, #1a1a1a)", padding: "5rem 1.5rem 4rem" }}>
+      {/*
+        Print document styles. On screen the .db-print document is hidden; in
+        print, the screen UI is hidden and the typeset study is the whole
+        page. Rendered only when there is a study to print, so printing the
+        rest of the tool still works normally. Literal black-on-white is
+        permitted inside @media print only — this is paper, not the palette.
+      */}
+      {printReady && (
+        <style>{`
+          .db-print{display:none}
+          @media print{
+            nav, footer, .skip-link, .db-screen{display:none !important}
+            .db-print{display:block !important;color:#000;background:#fff;font-family:var(--B, Inter, sans-serif);font-size:11pt;line-height:1.55}
+            .db-print h1{font-family:var(--F, "Cormorant Garamond", serif);font-weight:400;font-size:22pt;letter-spacing:-0.02em;margin:0 0 4pt}
+            .db-print h2{font-family:var(--F, "Cormorant Garamond", serif);font-weight:500;font-size:15pt;margin:16pt 0 6pt;page-break-after:avoid}
+            .db-print h3{font-family:var(--F, "Cormorant Garamond", serif);font-weight:500;font-size:12.5pt;margin:10pt 0 3pt;page-break-after:avoid}
+            .db-print p{margin:0 0 6pt;max-width:none}
+            .db-print ul{margin:0 0 6pt;padding-left:14pt}
+            .db-print li{margin-bottom:3pt}
+            .db-print blockquote{margin:0 0 8pt;padding-left:10pt;border-left:1pt solid #000;font-style:italic}
+            .db-print .db-print-meta{font-size:9.5pt;color:#333;margin-bottom:12pt}
+            .db-print .db-print-block{page-break-inside:avoid;margin-bottom:10pt}
+            .db-print .db-print-usertext{white-space:pre-wrap}
+            .db-print .db-print-date{font-size:9pt;color:#333;margin:0 0 10pt}
+            .db-print .db-print-foot{margin-top:14pt;padding-top:6pt;border-top:0.5pt solid #999;font-size:9.5pt;color:#333}
+          }
+        `}</style>
+      )}
+
+      <section className="db-screen" style={{ background: "var(--charcoal, #1a1a1a)", padding: "5rem 1.5rem 4rem" }}>
         <div style={{ maxWidth: "780px", margin: "0 auto" }}>
           <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", fontFamily: "var(--U, Inter, sans-serif)", marginBottom: "1.5rem" }}>FLAGSHIP TOOL</div>
           <h1 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--bone, #F5F0E6)", marginBottom: "1rem" }}>
@@ -1710,8 +2133,37 @@ export default function DeepBibleCompanion() {
       </section>
 
       {!selectedBook ? (
-        <section style={{ background: "var(--bone, #F5F0E6)", padding: "4rem 1.5rem" }}>
+        <section className="db-screen" style={{ background: "var(--bone, #F5F0E6)", padding: "4rem 1.5rem" }}>
           <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
+            <StorageNote problem={storageProblem} />
+            {workspaceBooks.length > 0 && (
+              <div style={{ marginBottom: "2.5rem", padding: "1.5rem", background: "white", border: "1px solid var(--border, #e5e0d5)", borderLeft: "3px solid var(--mustard, #D4A017)", borderRadius: "2px" }}>
+                <div style={panelEyebrow}>Your workspace</div>
+                <p style={{ fontSize: "0.85rem", lineHeight: 1.6, color: "var(--ink-muted, #666)", margin: "0 0 1rem", maxWidth: "560px" }}>
+                  Your notes and marks from earlier study, kept in this browser. Pick up where you left off.
+                </p>
+                <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+                  {workspaceBooks.map(a => (
+                    <button
+                      key={a.book.name}
+                      onClick={() => setSelectedBook(a.book)}
+                      aria-label={`Open ${a.book.name} — ${countsLine(a.noteCount, a.markCount)}`}
+                      style={{
+                        display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "baseline",
+                        gap: "0.25rem 1rem", padding: "0.75rem 1rem", minHeight: "44px",
+                        background: "var(--bone, #F5F0E6)", border: "1px solid var(--border, #e5e0d5)",
+                        borderRadius: "2px", cursor: "pointer", textAlign: "left", width: "100%",
+                      }}
+                    >
+                      <span style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.05rem", color: "var(--ink, #14110C)" }}>{a.book.name}</span>
+                      <span style={{ fontSize: "0.75rem", color: "var(--ink-muted, #666)", fontFamily: "var(--U, Inter, sans-serif)" }}>
+                        {countsLine(a.noteCount, a.markCount)}{a.touched ? ` · last touched ${fmtDate(a.touched)}` : ""}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
             <h2 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.5rem", fontWeight: 400, color: "var(--ink, #14110C)", marginBottom: "0.5rem" }}>Choose a book</h2>
             <p style={{ fontSize: "0.85rem", color: "#666", marginBottom: "2rem" }}>Books with full study content are highlighted. More books coming soon.</p>
 
@@ -1741,13 +2193,55 @@ export default function DeepBibleCompanion() {
           </div>
         </section>
       ) : !selectedPassage ? (
-        <section style={{ background: "var(--bone, #F5F0E6)", padding: "4rem 1.5rem" }}>
+        <section className="db-screen" style={{ background: "var(--bone, #F5F0E6)", padding: "4rem 1.5rem" }}>
           <div style={{ maxWidth: "780px", margin: "0 auto" }}>
             <button onClick={() => setSelectedBook(null)} style={{ display: "flex", alignItems: "center", gap: "0.5rem", background: "none", border: "none", color: "#666", fontSize: "0.85rem", fontFamily: "var(--U, Inter, sans-serif)", cursor: "pointer", marginBottom: "2rem" }}>
               <ArrowLeft size={14} /> All books
             </button>
             <h2 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.75rem", fontWeight: 400, color: "var(--ink, #14110C)", marginBottom: "0.5rem" }}>{selectedBook.name}</h2>
             <p style={{ fontSize: "0.85rem", color: "#666", marginBottom: "2rem" }}>{selectedBook.hook}</p>
+            {bookAct !== null && bookAct.noteCount + bookAct.markCount > 0 && (
+              <div style={{ marginBottom: "2rem", padding: "1.5rem", background: "white", border: "1px solid var(--border, #e5e0d5)", borderLeft: "3px solid var(--mustard, #D4A017)", borderRadius: "2px" }}>
+                <div style={panelEyebrow}>Your marks and notes</div>
+                <p style={{ fontSize: "0.85rem", lineHeight: 1.6, color: "var(--ink-muted, #666)", margin: "0 0 1rem", maxWidth: "560px" }}>
+                  {countsLine(bookAct.noteCount, bookAct.markCount)}
+                  {bookAct.touched ? ` · last touched ${fmtDate(bookAct.touched)}` : ""}. What struck you is kept here so you can return to it.
+                </p>
+                {bookMarks.length > 0 && (
+                  <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem", marginBottom: "1.25rem" }}>
+                    {bookMarks.map(m => (
+                      <button
+                        key={`${m.ref}::${m.layer}`}
+                        onClick={() => openMark(selectedBook, m)}
+                        aria-label={`Open your marked section: ${m.ref}, ${TABS[m.layer]}`}
+                        style={{
+                          display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "baseline",
+                          gap: "0.25rem 1rem", padding: "0.6rem 1rem", minHeight: "44px",
+                          background: "var(--bone, #F5F0E6)", border: "1px solid var(--border, #e5e0d5)",
+                          borderRadius: "2px", cursor: "pointer", textAlign: "left", width: "100%",
+                        }}
+                      >
+                        <span style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "0.95rem", color: "var(--ink, #14110C)" }}>{m.ref}</span>
+                        <span style={{ fontSize: "0.75rem", color: "var(--ink-muted, #666)", fontFamily: "var(--U, Inter, sans-serif)" }}>{TABS[m.layer]}</span>
+                      </button>
+                    ))}
+                  </div>
+                )}
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem", alignItems: "center" }}>
+                  <button onClick={() => window.print()} style={quietBtn}>Print your study</button>
+                  {bookAct.noteCount > 0 && (
+                    <button onClick={() => copyNotes(selectedBook)} style={quietBtn}>Copy my notes</button>
+                  )}
+                  <span aria-live="polite" style={{ fontSize: "0.75rem", color: "var(--ink-muted, #666)", fontFamily: "var(--U, Inter, sans-serif)" }}>
+                    {copyState === "copied"
+                      ? "Copied to your clipboard."
+                      : copyState === "blocked"
+                        ? "Copy was blocked by this browser. Select your notes and copy them by hand."
+                        : ""}
+                  </span>
+                </div>
+              </div>
+            )}
             <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
               {selectedBook.passages.map((p, i) => (
                 <button key={i} onClick={() => { setSelectedPassage(p); setActiveTab(0); }} style={{
@@ -1762,12 +2256,13 @@ export default function DeepBibleCompanion() {
           </div>
         </section>
       ) : (
-        <section style={{ background: "var(--bone, #F5F0E6)", padding: "3rem 1.5rem" }}>
+        <section className="db-screen" style={{ background: "var(--bone, #F5F0E6)", padding: "3rem 1.5rem" }}>
           <div style={{ maxWidth: "780px", margin: "0 auto" }}>
             <button onClick={() => setSelectedPassage(null)} style={{ display: "flex", alignItems: "center", gap: "0.5rem", background: "none", border: "none", color: "#666", fontSize: "0.85rem", fontFamily: "var(--U, Inter, sans-serif)", cursor: "pointer", marginBottom: "1.5rem" }}>
               <ArrowLeft size={14} /> {selectedBook.name}
             </button>
             <h2 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.75rem", fontWeight: 400, color: "var(--ink, #14110C)", marginBottom: "2rem" }}>{selectedPassage.ref}</h2>
+            <StorageNote problem={storageProblem} />
 
             <div style={{ display: "flex", gap: "0", borderBottom: "1px solid #e5e0d5", marginBottom: "2rem", overflowX: "auto" }}>
               {TABS.map((tab, i) => (
@@ -1779,6 +2274,13 @@ export default function DeepBibleCompanion() {
             </div>
 
             <div style={{ background: "white", border: "1px solid #e5e0d5", borderRadius: "2px", padding: "2rem" }}>
+              <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "1.25rem" }}>
+                <MarkToggle
+                  marked={(ws.marks[selectedBook.name] ?? []).includes(`${selectedPassage.ref}::${activeTab}`)}
+                  label={`Mark this section for your study: ${selectedBook.name}, ${selectedPassage.ref}, ${TABS[activeTab]}`}
+                  onToggle={() => toggleMark(selectedBook.name, `${selectedPassage.ref}::${activeTab}`)}
+                />
+              </div>
               {activeTab === 0 && (
                 <div>
                   <h3 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.25rem", color: "var(--ink, #14110C)", marginBottom: "1.5rem" }}>The Text</h3>
@@ -1856,6 +2358,13 @@ export default function DeepBibleCompanion() {
                   <div style={{ marginBottom: "1.5rem" }}>
                     <h4 style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", marginBottom: "0.5rem" }}>The Question This Passage Answers</h4>
                     <p style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.1rem", fontStyle: "italic", lineHeight: 1.6, color: "var(--ink, #14110C)" }}>{selectedPassage.application.question}</p>
+                    <NoteField
+                      key={`${selectedBook.name}::${selectedPassage.ref}::matters`}
+                      ariaLabel={`Your notes on ${selectedBook.name}, ${selectedPassage.ref} — the question this passage answers`}
+                      initial={ws.notes[selectedBook.name]?.[`${selectedPassage.ref}::matters`]?.text ?? ""}
+                      savedWord={savedWord}
+                      onCommit={t => commitNote(selectedBook.name, `${selectedPassage.ref}::matters`, t)}
+                    />
                   </div>
                   <div style={{ marginBottom: "1.5rem" }}>
                     <h4 style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", marginBottom: "0.5rem" }}>The Connection</h4>
@@ -1864,6 +2373,13 @@ export default function DeepBibleCompanion() {
                   <div style={{ padding: "1.25rem", background: "var(--bone, #F5F0E6)", borderRadius: "2px", borderLeft: "2px solid var(--mustard, #D4A017)" }}>
                     <h4 style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", marginBottom: "0.5rem" }}>This Week</h4>
                     <p style={{ fontSize: "0.9rem", lineHeight: 1.7, color: "var(--ink, #14110C)" }}>{selectedPassage.application.thisWeek}</p>
+                    <NoteField
+                      key={`${selectedBook.name}::${selectedPassage.ref}::week`}
+                      ariaLabel={`Your notes on ${selectedBook.name}, ${selectedPassage.ref} — this week`}
+                      initial={ws.notes[selectedBook.name]?.[`${selectedPassage.ref}::week`]?.text ?? ""}
+                      savedWord={savedWord}
+                      onCommit={t => commitNote(selectedBook.name, `${selectedPassage.ref}::week`, t)}
+                    />
                   </div>
                 </div>
               )}
@@ -1880,6 +2396,13 @@ export default function DeepBibleCompanion() {
                   <div style={{ marginBottom: "1.5rem" }}>
                     <h4 style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", marginBottom: "0.5rem" }}>Discussion Question</h4>
                     <p style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1rem", fontStyle: "italic", lineHeight: 1.6, color: "var(--ink, #14110C)" }}>{selectedPassage.deeper.studyQuestion}</p>
+                    <NoteField
+                      key={`${selectedBook.name}::${selectedPassage.ref}::study`}
+                      ariaLabel={`Your notes on ${selectedBook.name}, ${selectedPassage.ref} — discussion question`}
+                      initial={ws.notes[selectedBook.name]?.[`${selectedPassage.ref}::study`]?.text ?? ""}
+                      savedWord={savedWord}
+                      onCommit={t => commitNote(selectedBook.name, `${selectedPassage.ref}::study`, t)}
+                    />
                   </div>
                   <div style={{ padding: "1.25rem", background: "var(--charcoal, #1a1a1a)", borderRadius: "2px" }}>
                     <h4 style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", marginBottom: "0.75rem" }}>A Prayer From This Passage</h4>
@@ -1899,6 +2422,48 @@ export default function DeepBibleCompanion() {
             </div>
           </div>
         </section>
+      )}
+
+      {/* The print-typeset study: the sections the reader marked, plus their
+          notes under each question, dated. Hidden on screen. */}
+      {printReady && selectedBook && (
+        <div className="db-print">
+          <h1>Deep Bible Study Companion</h1>
+          <div className="db-print-meta">
+            {selectedBook.name} — your marked study, printed {fmtDate(new Date().toISOString())} · livewellbyjamesbell.co
+          </div>
+          {selectedBook.passages.map(p => {
+            const layers = bookMarks.filter(m => m.ref === p.ref).map(m => m.layer);
+            const bookNotes = ws.notes[selectedBook.name] ?? {};
+            const slots = QUESTION_SLOTS.filter(s => bookNotes[`${p.ref}::${s}`]);
+            if (layers.length === 0 && slots.length === 0) return null;
+            return (
+              <div key={p.ref}>
+                <h2>{p.ref}</h2>
+                <p><em>{p.summary}</em></p>
+                {layers.map(l => printLayer(p, l))}
+                {slots.length > 0 && (
+                  <div className="db-print-block">
+                    <h3>Your notes</h3>
+                    {slots.map(s => {
+                      const entry = bookNotes[`${p.ref}::${s}`];
+                      return (
+                        <div key={s}>
+                          <p><strong>{QUESTION_LABELS[s]}.</strong> <em>{questionTextFor(p, s)}</em></p>
+                          <p className="db-print-usertext">{entry.text}</p>
+                          <p className="db-print-date">Written {fmtDate(entry.updated)}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+          <div className="db-print-foot">
+            The commentary is from the Deep Bible Study Companion. The marks and the notes are yours.
+          </div>
+        </div>
       )}
     </Layout>
   );
