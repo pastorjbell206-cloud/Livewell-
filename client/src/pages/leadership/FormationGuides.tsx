@@ -7,7 +7,7 @@
  */
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
-import { Streamdown } from "streamdown";
+import { Markdown } from "@/components/Markdown";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
@@ -107,7 +107,7 @@ export default function FormationGuides() {
 
                 {s.teaching && (
                   <div className="article-body prose-section" style={{ marginBottom: "26px" }}>
-                    <Streamdown>{s.teaching}</Streamdown>
+                    <Markdown>{s.teaching}</Markdown>
                   </div>
                 )}
 

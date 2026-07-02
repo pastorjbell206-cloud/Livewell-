@@ -3,7 +3,7 @@ import { trpc } from "@/lib/trpc";
 import { useState, useEffect } from "react";
 import { Loader2, Save, Check, Circle } from "lucide-react";
 import { toast } from "sonner";
-import { Streamdown } from "streamdown";
+import { Markdown } from "@/components/Markdown";
 
 type SaveState = "saved" | "unsaved" | "saving";
 
@@ -90,7 +90,7 @@ export default function AdminAbout() {
                 style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF", color: "#1A1A1A", minHeight: "0", height: "calc(20 * 1.5rem + 1.5rem)" }}
               >
                 {content.trim() ? (
-                  <Streamdown>{content}</Streamdown>
+                  <Markdown>{content}</Markdown>
                 ) : (
                   <p className="font-body text-sm" style={{ color: "#6B7280" }}>
                     Nothing to preview yet. Start typing on the left.

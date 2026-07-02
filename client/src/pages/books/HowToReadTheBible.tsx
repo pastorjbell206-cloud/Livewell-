@@ -5,7 +5,7 @@
  * delivered as a gated PDF via /api/checkout -> /api/download after payment.
  */
 import { useEffect, useState } from "react";
-import { Streamdown } from "streamdown";
+import { Markdown } from "@/components/Markdown";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
@@ -92,7 +92,7 @@ export default function HowToReadTheBible() {
       {/* FREE SAMPLE */}
       <section style={{ background: "var(--bone)", padding: "0 var(--s-4) var(--s-5)" }}>
         <div style={prose} className="book-prose">
-          {sample ? <Streamdown>{sample}</Streamdown> : <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the opening…</p>}
+          {sample ? <Markdown>{sample}</Markdown> : <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the opening…</p>}
         </div>
       </section>
 

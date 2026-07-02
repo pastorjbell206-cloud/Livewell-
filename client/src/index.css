@@ -317,8 +317,8 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
 }
 
 /* ─── EDITORIAL TYPOGRAPHY ────────────────────────────────────────
- * Applies inside .article-body — the Streamdown wrapper used by
- * ArticleDetail. Designed for "the feeling of opening a serious
+ * Applies inside .article-body — the scope wrapping the shared Markdown
+ * renderer's output (ArticleDetail, BookReader, the libraries). Designed for "the feeling of opening a serious
  * book in a quiet room where the light is good." */
 
 .article-body{font-family:var(--B);font-size:18px;line-height:1.75;color:var(--ink)}
@@ -347,12 +347,12 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
    drop cap belongs only to the top of an article, not to every section block. */
 .article-body.prose-section p:first-of-type::first-letter{font-family:inherit;font-size:inherit;float:none;line-height:inherit;padding:0;margin:0;color:inherit;font-weight:inherit}
 
-/* Footnotes (when Streamdown emits them via remark-footnotes) */
+/* Footnotes (when the Markdown renderer emits them via GFM footnotes) */
 .article-body .footnotes{margin-top:4em;padding-top:1.6em;border-top:1px solid var(--border);font-size:14px;line-height:1.7;color:var(--ink-muted)}
 .article-body .footnotes ol{padding-left:1.4em}
 .article-body sup a{border-bottom:none;color:var(--mustard-text);font-weight:600;padding:0 .15em}
 
-/* Scripture reference inline (added by Streamdown plugin in v2) */
+/* Scripture reference inline (reserved — nothing emits this class yet) */
 .article-body .scripture-ref{border-bottom:1px dotted var(--mustard);cursor:help}
 
 /* Pull quote utility — wrap a quote in <figure class="pullquote"> in markdown */

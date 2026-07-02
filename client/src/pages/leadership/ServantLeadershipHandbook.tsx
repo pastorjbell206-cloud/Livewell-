@@ -6,7 +6,7 @@
  */
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
-import { Streamdown } from "streamdown";
+import { Markdown } from "@/components/Markdown";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
@@ -91,7 +91,7 @@ export default function ServantLeadershipHandbook() {
                   <div style={eyebrow}>Chapter {c.n}</div>
                   <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", margin: "8px 0 var(--s-4)", lineHeight: 1.1 }}>{c.title}</h2>
                   <div className="article-body prose-section">
-                    <Streamdown>{c.body}</Streamdown>
+                    <Markdown>{c.body}</Markdown>
                   </div>
                   <p style={{ fontFamily: "var(--F)", fontSize: "22px", fontStyle: "italic", color: "var(--mustard-text)", margin: "var(--s-4) 0 var(--s-4)", paddingLeft: "20px", borderLeft: "3px solid var(--mustard)" }}>{c.verdict}</p>
                   {c.reflect?.length > 0 && (
