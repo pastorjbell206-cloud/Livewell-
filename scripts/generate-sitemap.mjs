@@ -330,11 +330,16 @@ function buildXml(staticPages, articles, books, readingPaths) {
 async function main() {
   if (!process.env.DATABASE_URL) {
     console.error("[sitemap] DATABASE_URL not set — essay URLs will be MISSING from the sitemap.");
-    if (process.env.VERCEL) {
-      console.error("[sitemap] refusing to ship an essay-less sitemap on a Vercel build.");
+    if (process.env.VERCEL_ENV === "production") {
+      // Production must never ship an essay-less sitemap (SEO contract).
+      // Fix: expose DATABASE_URL to the Vercel BUILD environment.
+      console.error("[sitemap] refusing to ship an essay-less sitemap on a PRODUCTION build.");
       process.exit(1);
     }
-    console.error("[sitemap] writing static fallback (local/CI without a database).");
+    // Preview/local/CI builds proceed with the static fallback — a preview
+    // does not need essay URLs, and hard-failing here is what turned every
+    // branch deploy red.
+    console.error("[sitemap] writing static fallback (non-production build without a database).");
     const xml = buildXml(STATIC_PAGES, mergeArticles([]), [], []);
     fs.writeFileSync(OUTPUT_PATH, xml);
     return;
