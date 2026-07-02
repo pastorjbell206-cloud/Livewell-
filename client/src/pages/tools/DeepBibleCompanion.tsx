@@ -1900,6 +1900,19 @@ export default function DeepBibleCompanion() {
           </div>
         </section>
       )}
+
+      {/* Tool-to-book bridge (QW-17): invitation register, never pressure. */}
+      <section style={{ background: "var(--bone-warm)", padding: "56px 24px" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto", textAlign: "center" }}>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "16px" }}>GO DEEPER</p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "56ch", margin: "0 auto 22px" }}>
+            If this companion is your kind of study, the book behind it is <em>How to Read the Bible — Without Making It Say What You Already Believe</em>.
+          </p>
+          <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+            <a href="/how-to-read-the-bible" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Read about the book</a>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }

@@ -1680,6 +1680,20 @@ export default function PastorBurnout() {
           </div>
         </section>
       )}
+
+      {/* Tool-to-book bridge (QW-17): invitation register, never pressure. */}
+      <section style={{ background: "var(--bone-warm)", padding: "56px 24px" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto", textAlign: "center" }}>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "16px" }}>GO DEEPER</p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "56ch", margin: "0 auto 22px" }}>
+            You did not burn out alone, and you will not recover alone. <em>The Loneliness of the Pastor</em> is the book underneath this diagnostic, and <em>HealWell</em> is a year of short readings for the climb back.
+          </p>
+          <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+            <a href="/the-loneliness-of-the-pastor" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>The Loneliness of the Pastor</a>
+            <a href="/healwell" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>HealWell</a>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }
