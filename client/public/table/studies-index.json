@@ -1,10 +1,10 @@
 {
   "studies": [
     {
-      "slug": "at-the-table",
-      "title": "At the Table",
-      "subtitle": "A six-session study for learning to follow Jesus in an ordinary room",
-      "summary": "Discipleship did not begin in a classroom. It began at tables, on roads, in borrowed rooms. This study is built for the same places: a living room, a kitchen table, a back booth. One person who has walked a little further opens the passage, and the people around the table read, talk, pray, and practice. By the last session, someone at the table is ready to set another one.",
+      "slug": "the-basics-at-the-table",
+      "title": "The Basics at the Table",
+      "subtitle": "Six sessions for the brand new believer, with every churchy word earned before it is used",
+      "summary": "Church has a vocabulary problem. We say gospel, grace, baptism, communion, testimony, and forget that these words are a foreign language to the person who just came through the door. This study assumes nothing. Six sessions around a table walk a new believer through the things that hold a life: what the gospel actually announces, how to pray without performing, how to read the Bible without fear, why you cannot do this alone, what baptism and the Supper are, and how to tell your own story plainly. Every churchy word gets earned before it gets used. By the end, the new believer is not fluent in church. They are grounded in Christ, which is better.",
       "sessions": 6
     },
     {
@@ -12,6 +12,41 @@
       "title": "New at the Table",
       "subtitle": "Six sessions for the first weeks of a brand new faith, run around a table by the person who pointed the way",
       "summary": "When someone comes to faith, the worst thing we can do is hand them a building and a schedule and walk away. The first weeks decide a great deal. This study is for the believer who led a friend to Jesus, or is walking beside a brand new one, and wants to ground them in the things that hold: who they now are, what the cross actually did, the Spirit who lives in them, how to talk to the Father, how to live on the Word, and how, sooner than they think, they will be the one pointing the way for someone else. It is built for a kitchen table, not a classroom. Keep it slow, keep it warm, and keep it moving outward.",
+      "sessions": 6
+    },
+    {
+      "slug": "mark-at-the-table",
+      "title": "Mark at the Table",
+      "subtitle": "Eight sessions through the shortest Gospel, built for a table where not everyone believes",
+      "summary": "Mark is the shortest Gospel and the fastest moving. The earliest church memory, passed down from a bishop named Papias in the second century, says Mark wrote down what Peter preached, and most scholars date it within about forty years of the events it describes. It was written to force one question: who is this man. This study walks a mixed table through Mark in eight sessions, and it assumes nothing. A skeptic can sit at this table and never be cornered, because the study does not ask anyone to believe before they have read. It asks everyone to read honestly and answer for themselves.",
+      "sessions": 8
+    },
+    {
+      "slug": "the-hard-questions-table",
+      "title": "The Hard Questions at the Table",
+      "subtitle": "Six sessions for the table where doubt sits, with every objection stated at full strength before anyone answers it",
+      "summary": "Most churches handle the hard questions by not handling them, and the people carrying those questions eventually carry them out the door. This table works differently. Six sessions take the six questions that end more faith than any others, suffering, the violence in the Bible, the hypocrisy of the church, science, hell, and the question hiding under all of them, and state each objection at its full strength first, in the form its best defenders would recognize, before anyone at the table responds. The rule of the table is honesty, not victory. Nobody is scored, nobody is cornered, and I do not know is an honored answer. The doubter at this table is not a project. They are often the most honest person in the room.",
+      "sessions": 6
+    },
+    {
+      "slug": "the-family-table",
+      "title": "The Family Table",
+      "subtitle": "Five sessions for households that want the faith to live where the family actually lives, at the table",
+      "summary": "Deuteronomy assumes the faith is handed down in a house, not outsourced to a program. You teach these words when you sit at home, when you walk, when you lie down, when you rise, which is to say at dinner, in the car, at bedtime, over breakfast. This study is five sessions for a household, parents and kids together where the kids are old enough to sit, parents alone where they are not. It covers the family's real curriculum, the table as the first church a child ever attends, praying with children without turning it into a performance, keeping a sabbath in a family whose calendar is full, and the blessing, the words a child carries out of your house for the rest of their life.",
+      "sessions": 5
+    },
+    {
+      "slug": "at-the-table",
+      "title": "At the Table",
+      "subtitle": "A six-session study for learning to follow Jesus in an ordinary room",
+      "summary": "Discipleship did not begin in a classroom. It began at tables, on roads, in borrowed rooms. This study is built for the same places: a living room, a kitchen table, a back booth. One person who has walked a little further opens the passage, and the people around the table read, talk, pray, and practice. By the last session, someone at the table is ready to set another one.",
+      "sessions": 6
+    },
+    {
+      "slug": "leading-a-table",
+      "title": "Leading a Table",
+      "subtitle": "Six sessions that train an ordinary believer to make disciples in a living room, and then to send someone else to do the same",
+      "summary": "Every table in this library needs someone to set it, and that someone is not a professional. This study trains the disciple maker: why Jesus chose tables and proximity over classrooms and crowds, why hospitality is the actual strategy and not the garnish, how to ask instead of lecture, what to do with silence and with the question you cannot answer, how to care for a person in crisis without pretending to be their counselor, and when and how to send someone out to start a table of their own. Run it as a Sunday school class, a leaders' cohort, or one believer training another across a kitchen table. The goal is not a certificate. It is a room full of people who can each set another table.",
       "sessions": 6
     }
   ]
