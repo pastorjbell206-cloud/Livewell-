@@ -211,6 +211,7 @@ const ChurchHistory = lazy(() => import("./pages/landing/ChurchHistory"));
 const ChurchHurt = lazy(() => import("./pages/landing/ChurchHurt"));
 const HonestQuestions = lazy(() => import("./pages/landing/HonestQuestions"));
 const PostChristianLanding = lazy(() => import("./pages/landing/PostChristian"));
+const FaqIndex = lazy(() => import("./pages/FaqIndex"));
 const FAQWhyArePeopleLeavingChurch = lazy(() => import("./pages/faq/WhyArePeopleLeavingChurch"));
 const FAQWhatIsDeconstruction = lazy(() => import("./pages/faq/WhatIsDeconstruction"));
 const FAQIsBibleHistoricallyAccurate = lazy(() => import("./pages/faq/IsBibleHistoricallyAccurate"));
@@ -570,6 +571,7 @@ function Router() {
         <Route path="/compare/orthodox-vs-catholic" component={OrthodoxVsCatholic} />
         <Route path="/compare/liturgical-vs-contemporary" component={LiturgicalVsContemporary} />
         <Route path="/post-christian" component={PostChristianLanding} />
+        <Route path="/faq" component={FaqIndex} />
         <Route path="/faq/why-are-people-leaving-church" component={FAQWhyArePeopleLeavingChurch} />
         <Route path="/faq/what-is-deconstruction" component={FAQWhatIsDeconstruction} />
         <Route path="/faq/is-the-bible-historically-accurate" component={FAQIsBibleHistoricallyAccurate} />

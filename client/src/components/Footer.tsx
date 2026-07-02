@@ -67,6 +67,7 @@ export default function Footer() {
               <Link href="/wisdom" style={footerLink}>Wisdom for All of Life</Link>
               <Link href="/tools/wisdom-finder" style={footerLink}>Wisdom Finder</Link>
               <Link href="/how-tos" style={footerLink}>How-To Guides</Link>
+              <Link href="/faq" style={footerLink}>Questions people ask</Link>
               <Link href="/disciple-making" style={footerLink}>Make Disciples</Link>
               <Link href="/leadership/library" style={footerLink}>Leadership Library</Link>
               <Link href="/leadership/sermon-series" style={footerLink}>Sermon Series Library</Link>
