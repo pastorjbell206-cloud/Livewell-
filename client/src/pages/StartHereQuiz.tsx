@@ -214,6 +214,30 @@ export default function StartHereQuiz() {
       <section style={{ flex: 1, padding: "40px 20px", maxWidth: "900px", margin: "0 auto", width: "100%" }}>
         {!isComplete ? (
           <>
+            {/* QUICK PATHS — for the visitor who already knows what they need
+                and does not want to take the quiz. Straight into the mission:
+                learn, disciple, and live it. */}
+            <div style={{ marginBottom: "40px" }}>
+              <p style={{ fontSize: "13px", color: "var(--ink3)", marginBottom: "12px", fontFamily: "var(--U)", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+                Already know what you need? Go straight there
+              </p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+                {[
+                  { label: "Marriage", href: "/marriage" },
+                  { label: "Parenting", href: "/parenting" },
+                  { label: "Doubt", href: "/doubt" },
+                  { label: "Disciple someone", href: "/table" },
+                  { label: "Grief", href: "/plans/grief" },
+                  { label: "Pastoring", href: "/for-pastors" },
+                  { label: "The essays", href: "/writing" },
+                ].map((c) => (
+                  <Link key={c.href} href={c.href} style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink)", textDecoration: "none", background: "#FFF", border: "1px solid #E0D9CC", borderRadius: "999px", padding: "8px 16px" }}>
+                    {c.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
             {/* PROGRESS BAR */}
             <div style={{ marginBottom: "40px" }}>
               <div style={{ display: "flex", gap: "8px", marginBottom: "16px" }}>
