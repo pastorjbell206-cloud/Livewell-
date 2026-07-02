@@ -181,7 +181,7 @@ export function SampleChapterForm({
           maxWidth: "55ch",
         }}
       >
-        Leave your email and the opening of <em>{bookTitle}</em> unlocks right
+        Leave your email and the opening of <em>{bookTitle}</em> appears right
         here. You'll also get the weekly essay. No spam — you read the sample,
         you decide if you want more.
       </p>
@@ -224,7 +224,7 @@ export function SampleChapterForm({
               cursor: subscribe.isPending ? "wait" : "pointer",
             }}
           >
-            {subscribe.isPending ? "Unlocking…" : "Unlock the sample"}
+            {subscribe.isPending ? "Opening…" : "Read the sample"}
           </button>
         </div>
         <label
