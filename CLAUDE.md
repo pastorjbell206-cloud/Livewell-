@@ -428,7 +428,7 @@ per-user auth to close.
 
 | Path | What lives here |
 |------|-----------------|
-| `client/src/App.tsx` | Route table (~190 routes) + providers |
+| `client/src/App.tsx` | Route table (~260 routes) + providers |
 | `client/src/pages/` | ~180 page components (pillars, `tools/`, `landing/`, `admin/`) |
 | `client/src/components/` | Shared UI, incl. `ui/` shadcn-style primitives |
 | `client/src/index.css` | **Design token source of truth** (`:root` CSS vars, `html.dark`, `.admin-scope`) |
@@ -618,9 +618,10 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
 - **SEO**: `scripts/generate-sitemap.mjs` runs in the Vercel build, merging
   static routes, the JSON-library manifests, and database content. `llms.txt`
   is served at the site root for answer engines. JSON-LD renders via SEOMeta.
-- **IA (approved blueprint, implemented)**: the five pillars are the only
-  taxonomy spine; footer mirrors the header (The Five Pillars / Write & Read /
-  Libraries & Tools / For Pastors / Connect); "Resources" names exactly one
+- **IA (approved blueprint, implemented)**: the six pillars (`PILLARS_V2` in
+  `taxonomy.ts`, under the two movements) are the only taxonomy spine; footer
+  mirrors the header (The Pillars / Write & Read / Libraries & Tools / For
+  Pastors / Connect); "Resources" names exactly one
   thing (the hub at /resources); all tools are registered in /tools; /quiz
   301s to /tools/theology-quiz (vercel.json).
 - **Payments**: Stripe checkout is config-driven — live only when

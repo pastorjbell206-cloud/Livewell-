@@ -40,9 +40,9 @@
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <link rel="alternate" type="application/rss+xml" title="LiveWell by James Bell" href="/rss.xml" />
 
-    <!-- Organization + WebSite JSON-LD are injected once at the React app root
-         (see client/src/App.tsx → SiteStructuredData) to avoid duplicate
-         schema blocks. Kept out of the static HTML deliberately. -->
+    <!-- Organization + WebSite JSON-LD render on the home page through SEOMeta
+         (getOrganizationSchema / getWebSiteSchema in components/SEOMeta.tsx).
+         Kept out of the static HTML to avoid duplicate schema blocks. -->
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
