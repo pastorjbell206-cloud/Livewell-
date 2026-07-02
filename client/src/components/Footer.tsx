@@ -4,7 +4,7 @@ import { Sun, Moon } from "lucide-react";
 import { pillarUrl } from "@/lib/taxonomy";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 
-const footerLink = { color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "13px" } as const;
+const footerLink = { color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "14px", display: "inline-block", padding: "5px 0" } as const;
 const colTitle = { fontSize: "13px", fontWeight: "bold", marginBottom: "16px", color: "#ffffff", textTransform: "uppercase", letterSpacing: "1px" } as const;
 const col = { display: "flex", flexDirection: "column", gap: "10px" } as const;
 
@@ -117,7 +117,7 @@ export default function Footer() {
             <a href="/terms" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none" }}>Terms of Service</a>
             <a href="/accessibility" style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none" }}>Accessibility</a>
             {toggleTheme && (
-              <button onClick={toggleTheme} aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"} style={{ color: "rgba(255,255,255,0.75)", display: "flex", alignItems: "center", gap: "4px", fontSize: "12px" }} title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}>
+              <button onClick={toggleTheme} aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"} style={{ color: "rgba(255,255,255,0.75)", display: "flex", alignItems: "center", justifyContent: "center", gap: "4px", fontSize: "13px", minWidth: "44px", minHeight: "44px", background: "transparent", border: "none", cursor: "pointer" }} title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}>
                 {theme === "dark" ? <Sun size={14} /> : <Moon size={14} />}
                 {theme === "dark" ? "Light" : "Dark"}
               </button>

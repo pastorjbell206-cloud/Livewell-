@@ -367,7 +367,7 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
 .quote-share__btn:hover{opacity:.65}
 
 /* Eyebrow utility — small all-caps label with mustard rule */
-.eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--U);font-size:11px;font-weight:600;color:var(--mustard-text);text-transform:uppercase;letter-spacing:.18em}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--U);font-size:12px;font-weight:600;color:var(--mustard-text);text-transform:uppercase;letter-spacing:.18em}
 .eyebrow::before{content:"";width:32px;height:1px;background:var(--mustard)}
 
 /* Reading progress (top-of-viewport bar) */

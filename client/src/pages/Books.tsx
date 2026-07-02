@@ -534,7 +534,7 @@ export default function Books() {
                   style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 12px 32px rgba(0,0,0,.25)" }} />
                 <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", margin: "14px 0 4px", lineHeight: 1.2 }}>{b.title}</h3>
                 <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 8px", lineHeight: 1.4 }}>{b.sub}</p>
-                <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)", letterSpacing: "0.04em" }}>Get the ebook — $9.99 →</span>
+                <span style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--mustard-text)", letterSpacing: "0.04em" }}>Get the ebook — $9.99 →</span>
               </Link>
             ))}
           </div>
@@ -561,7 +561,7 @@ export default function Books() {
                   style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 12px 32px rgba(0,0,0,.4)" }} />
                 <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--bone)", margin: "14px 0 4px", lineHeight: 1.2 }}>{b.title}</h3>
                 <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "rgba(245,240,230,.7)", margin: "0 0 8px", lineHeight: 1.4 }}>{b.sub}</p>
-                <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard)", letterSpacing: "0.04em" }}>Get the ebook →</span>
+                <span style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--mustard)", letterSpacing: "0.04em" }}>Get the ebook →</span>
               </Link>
             ))}
           </div>
@@ -590,7 +590,7 @@ export default function Books() {
                   style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 12px 32px rgba(0,0,0,.25)" }} />
                 <h3 style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, color: "var(--ink)", margin: "14px 0 4px", lineHeight: 1.2 }}>{b.title}</h3>
                 <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 8px", lineHeight: 1.4 }}>{b.sub}</p>
-                <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)", letterSpacing: "0.04em" }}>Get the ebook →</span>
+                <span style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--mustard-text)", letterSpacing: "0.04em" }}>Get the ebook →</span>
               </Link>
             ))}
           </div>

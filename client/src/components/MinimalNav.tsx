@@ -406,7 +406,7 @@ export default function MinimalNav() {
               <div
                 style={{
                   fontFamily: "var(--U)",
-                  fontSize: "9px",
+                  fontSize: "11px",
                   color: "var(--ink-muted)",
                   letterSpacing: "0.15em",
                   textTransform: "uppercase",

@@ -435,7 +435,7 @@ export default function Writing() {
                 outline: "none",
                 background: "transparent",
                 fontFamily: "var(--B)",
-                fontSize: "14px",
+                fontSize: "16px",
                 color: "var(--ink)",
               }}
             />

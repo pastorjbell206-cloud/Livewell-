@@ -288,7 +288,7 @@ export function SegmentedSignup({
               border: `1px solid ${isPanel ? "rgba(245,240,230,0.18)" : "var(--border)"}`,
               borderRadius: "var(--radius-sm)",
               fontFamily: "var(--B)",
-              fontSize: "14px",
+              fontSize: "16px",
               color: isPanel ? "var(--bone)" : "var(--ink)",
               outline: "none",
             }}
