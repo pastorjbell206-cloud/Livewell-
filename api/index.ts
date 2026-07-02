@@ -95,6 +95,35 @@ function authed(req: VercelRequest): boolean {
   return constantTimeEqual(key, expected);
 }
 
+// ---------------------------------------------------------------------------
+// In-memory sliding-window rate limiter. Scope: one warm serverless instance
+// — enough to blunt naive brute force on the single admin password and spam
+// bursts on the public write endpoints, which today have no protection at
+// all. A durable cross-instance store (e.g. Upstash Redis via env) is the
+// documented upgrade path (roadmap QW-23 remainder / owner provisioning).
+// ---------------------------------------------------------------------------
+const rlBuckets = new Map<string, number[]>();
+function rateLimited(req: VercelRequest, bucket: string, limit: number, windowMs: number): boolean {
+  const ip = (String(req.headers["x-forwarded-for"] || "").split(",")[0].trim()) || "unknown";
+  const key = `${bucket}:${ip}`;
+  const now = Date.now();
+  const hits = (rlBuckets.get(key) || []).filter((t) => now - t < windowMs);
+  if (hits.length >= limit) {
+    rlBuckets.set(key, hits);
+    return true;
+  }
+  hits.push(now);
+  rlBuckets.set(key, hits);
+  if (rlBuckets.size > 5000) {
+    // Bounded memory: drop the oldest tracked keys wholesale.
+    for (const k of rlBuckets.keys()) {
+      rlBuckets.delete(k);
+      if (rlBuckets.size <= 2500) break;
+    }
+  }
+  return false;
+}
+
 function getAllowedOrigin(req: VercelRequest): string {
   const origin = req.headers.origin || "";
   const allowed = [
@@ -721,6 +750,7 @@ async function substackRss(req: VercelRequest, res: VercelResponse) {
 }
 
 async function subscribe(req: VercelRequest, res: VercelResponse) {
+  if (rateLimited(req, "subscribe", 10, 60 * 1000)) return json(res, 429, { error: "Too many requests. Give it a minute and try again." });
   try {
     const body = await readBody(req);
     const email = String(body.email || "").trim().toLowerCase();
@@ -740,6 +770,7 @@ async function subscribe(req: VercelRequest, res: VercelResponse) {
 }
 
 async function pcnSignup(req: VercelRequest, res: VercelResponse) {
+  if (rateLimited(req, "pcn", 10, 60 * 1000)) return json(res, 429, { error: "Too many requests. Give it a minute and try again." });
   try {
     const body = await readBody(req);
     const email = String(body.email || "").trim().toLowerCase();
@@ -2042,6 +2073,11 @@ async function authLogin(req: VercelRequest, res: VercelResponse) {
     res.status(405).json({ error: "method not allowed" });
     return;
   }
+  // Single admin password; previously unlimited attempts.
+  if (rateLimited(req, "login", 5, 10 * 60 * 1000)) {
+    res.status(429).json({ error: "Too many attempts. Try again in a few minutes." });
+    return;
+  }
   try {
     const body = await readBody(req);
     const password = typeof body?.password === "string" ? body.password : "";
@@ -2353,6 +2389,7 @@ async function adminStatus(req: VercelRequest, res: VercelResponse) {
 }
 
 async function contactForm(req: VercelRequest, res: VercelResponse) {
+  if (rateLimited(req, "contact", 10, 60 * 1000)) return json(res, 429, { error: "Too many requests. Give it a minute and try again." });
   if (req.method !== "POST") return json(res, 405, { error: "method not allowed" });
   try {
     const body = await readBody(req);
