@@ -1,19 +1,52 @@
 /**
  * /table — The Table. The one-place disciplemaking hub for a church without a
- * building: ready-to-run home studies, leader equipping, and the books and
- * study guides, all under one roof. The model is the living room, not the
- * classroom — the oikos of Acts 2 and the exile household of Jeremiah 29.
- * Studies load from client/public/table/studies-index.json
- * (scripts/build-table-index.mjs).
+ * building: a curriculum of ready-to-run home studies, leader equipping, and
+ * the books and study guides, all under one roof. The model is the living
+ * room, not the classroom — the oikos of Acts 2 and the exile household of
+ * Jeremiah 29. The page moves vision → curriculum → sending.
+ * Studies load at runtime from client/public/table/studies-index.json
+ * (scripts/build-table-index.mjs); the grid renders whatever the index holds,
+ * so new studies appear here without touching this file.
  */
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import LoadFailed from "@/components/LoadFailed";
+import { fetchJson } from "@/lib/fetch-json";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
-interface StudyEntry { slug: string; title: string; subtitle: string; summary: string; sessions: number }
+interface StudyEntry {
+  slug: string;
+  title: string;
+  subtitle?: string;
+  summary?: string;
+  sessions?: number;
+  forWho?: string;
+}
+
+function isStudy(s: unknown): s is StudyEntry {
+  if (typeof s !== "object" || s === null) return false;
+  const o = s as Record<string, unknown>;
+  return typeof o.slug === "string" && typeof o.title === "string";
+}
+
+function isIndex(x: unknown): x is { studies: StudyEntry[] } {
+  if (typeof x !== "object" || x === null) return false;
+  const o = x as Record<string, unknown>;
+  return Array.isArray(o.studies) && o.studies.every(isStudy);
+}
+
+/** One line per card: the subtitle if the index has one, else the summary's first sentence. */
+function oneLine(s: StudyEntry): string {
+  if (s.subtitle) return s.subtitle;
+  if (s.summary) {
+    const i = s.summary.indexOf(". ");
+    return i > 0 ? s.summary.slice(0, i + 1) : s.summary;
+  }
+  return "";
+}
 
 const PATH = [
   { step: "Be a disciple", body: "Sit at the table. Read, ask honest questions, learn to hear his voice and follow." },
@@ -22,24 +55,40 @@ const PATH = [
 ];
 
 export default function Table() {
-  const [studies, setStudies] = useState<StudyEntry[]>([]);
+  // Loading, failed, and loaded-but-empty are three different truths. Both
+  // outcomes are keyed to the retry nonce so a "Try again" cleanly resets
+  // them without synchronous setState inside the effect.
+  const [loaded, setLoaded] = useState<{ nonce: number; studies: StudyEntry[] } | null>(null);
+  const [failedAt, setFailedAt] = useState<number | null>(null);
+  const [nonce, setNonce] = useState(0);
+  const failed = failedAt === nonce;
+  const studies = loaded && loaded.nonce === nonce ? loaded.studies : null;
 
   useEffect(() => {
-    fetch("/table/studies-index.json")
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d) => d && setStudies(d.studies || []))
-      .catch(() => {});
-  }, []);
+    let stale = false;
+    fetchJson("/table/studies-index.json", isIndex)
+      .then((d) => {
+        if (!stale) setLoaded({ nonce, studies: d.studies });
+      })
+      .catch(() => {
+        if (!stale) setFailedAt(nonce);
+      });
+    return () => {
+      stale = true;
+    };
+  }, [nonce]);
+
+  const leaderStudy = studies?.find((s) => /lead/i.test(s.slug)) ?? null;
 
   return (
     <Layout>
       <SEOMeta
         title="The Table — Disciplemaking in Homes"
-        description="A one-place engine for making disciples where people live: home studies, leader equipping, books, and study guides. The living room, not the classroom."
+        description="A one-place engine for making disciples where people live: a free home-study curriculum, leader equipping, books, and study guides. The living room, not the classroom."
         url="https://www.livewellbyjamesbell.co/table"
       />
 
-      {/* Hero */}
+      {/* Vision — hero */}
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Make Disciples</div>
@@ -55,51 +104,105 @@ export default function Table() {
         </div>
       </section>
 
-      {/* Studies */}
+      {/* Vision — the chain */}
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
         <div style={wrap}>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "6px" }}>Studies for the living room</h2>
-          <div style={{ width: "36px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-3)" }} />
-          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "var(--s-4)" }}>
-            Each study is built for a home: open the night, read the passage, talk it through, take a practice into the week, and name the person you will pass it to. Every session ends by pointing at the next table.
-          </p>
-
-          {studies.length === 0 ? (
-            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the studies…</p>
-          ) : (
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(340px, 100%), 1fr))", gap: "var(--s-3)" }}>
-              {studies.map((s) => (
-                <Link key={s.slug} href={`/table/${s.slug}`} style={{ display: "block", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-4)", textDecoration: "none" }}>
-                  <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>{s.sessions} sessions</div>
-                  <div style={{ fontFamily: "var(--F)", fontSize: "24px", lineHeight: 1.2, color: "var(--ink)", marginBottom: "6px" }}>{s.title}</div>
-                  <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{s.subtitle}</div>
-                </Link>
-              ))}
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* The path */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "12px" }}>The chain, not the program</div>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 36px)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.12, marginBottom: "var(--s-4)", maxWidth: "26ch" }}>
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>The chain, not the program</div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 36px)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.12, color: "var(--ink)", marginBottom: "var(--s-4)", maxWidth: "26ch" }}>
             What you heard, entrust to faithful people who will teach others also.
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: "var(--s-3)" }}>
             {PATH.map((p, i) => (
-              <div key={p.step} style={{ background: "rgba(245,240,230,0.04)", border: "1px solid rgba(245,240,230,0.12)", padding: "var(--s-4)" }}>
+              <div key={p.step} style={{ background: "var(--card)", border: "1px solid var(--line)", padding: "var(--s-4)" }}>
                 <div style={{ fontFamily: "var(--F)", fontSize: "40px", color: "var(--mustard)", lineHeight: 1, marginBottom: "10px" }}>{i + 1}</div>
-                <div style={{ fontFamily: "var(--F)", fontSize: "21px", color: "var(--bone)", marginBottom: "8px" }}>{p.step}</div>
-                <div style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.6, color: "rgba(245,240,230,0.78)" }}>{p.body}</div>
+                <div style={{ fontFamily: "var(--F)", fontSize: "21px", color: "var(--ink)", marginBottom: "8px" }}>{p.step}</div>
+                <div style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{p.body}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Equip + resources */}
+      {/* The curriculum */}
+      <section style={{ background: "var(--cream)", padding: "var(--s-5) var(--s-4)" }}>
+        <div style={wrap}>
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>The curriculum</div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "6px" }}>
+            Studies for the living room
+          </h2>
+          <div style={{ width: "36px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-3)" }} />
+          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "var(--s-4)" }}>
+            Each study is built for a home: open the night, read the passage, talk it through, take a practice into the week, and name the person you will pass it to. They are numbered in the order a reader naturally walks them — but any table can start where it stands.
+          </p>
+
+          {failed ? (
+            <LoadFailed what="The curriculum" onRetry={() => setNonce((n) => n + 1)} backHref="/resources" backLabel="Browse the resource library" />
+          ) : studies === null ? (
+            <p role="status" style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the studies…</p>
+          ) : studies.length === 0 ? (
+            <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch" }}>
+              The studies are being set out now. Check back shortly, or start with the{" "}
+              <Link href="/studyguides" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>topical study guides</Link>.
+            </p>
+          ) : (
+            <>
+              <ol style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(320px, 100%), 1fr))", gap: "var(--s-3)" }}>
+                {studies.map((s, i) => (
+                  <li key={s.slug} style={{ display: "flex" }}>
+                    <Link
+                      href={`/table/${s.slug}`}
+                      style={{ display: "flex", flexDirection: "column", flex: 1, background: "var(--card)", border: "1px solid var(--line)", borderTop: "2px solid var(--mustard)", padding: "var(--s-4)", textDecoration: "none" }}
+                    >
+                      <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: "12px", marginBottom: "12px" }}>
+                        <span className="eyebrow" style={{ color: "var(--ink-muted)" }}>
+                          {String(i + 1).padStart(2, "0")}
+                          {i === 0 && (
+                            <span className="eyebrow" style={{ color: "var(--mustard-text)", marginLeft: "10px" }}>Start here</span>
+                          )}
+                        </span>
+                        {typeof s.sessions === "number" && (
+                          <span className="eyebrow" style={{ color: "var(--ink-muted)" }}>{s.sessions} sessions</span>
+                        )}
+                      </div>
+                      <div style={{ fontFamily: "var(--F)", fontSize: "24px", lineHeight: 1.2, color: "var(--ink)", marginBottom: "6px" }}>{s.title}</div>
+                      {s.forWho && (
+                        <div style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 500, color: "var(--mustard-text)", marginBottom: "8px" }}>{s.forWho}</div>
+                      )}
+                      <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 16px", flex: 1 }}>{oneLine(s)}</p>
+                      <span style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)", borderBottom: "1px solid var(--mustard)", alignSelf: "flex-start", paddingBottom: "2px" }}>
+                        Open the study
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ol>
+
+              {leaderStudy && (
+                <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", marginTop: "var(--s-4)", maxWidth: "62ch" }}>
+                  Never led anything? Start with{" "}
+                  <Link href={`/table/${leaderStudy.slug}`} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>{leaderStudy.title}</Link>
+                  {" "}— it exists to make you the host.
+                </p>
+              )}
+            </>
+          )}
+        </div>
+      </section>
+
+      {/* Use it freely */}
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)" }}>
+        <div style={wrap}>
+          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "12px" }}>No license, no gate</div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.12, marginBottom: "14px", maxWidth: "22ch" }}>
+            Use it freely
+          </h2>
+          <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,0.85)", maxWidth: "62ch" }}>
+            Every study here is free to use — in your church, your Sunday school class, your small group, your living room. No license to buy, no account to make, no permission to ask. Print what you need, copy what helps, hand it to whoever is ready. The table was never ours to charge admission to.
+          </p>
+        </div>
+      </section>
+
+      {/* Sending — equip + resources */}
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={wrap}>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "var(--s-4)" }}>
@@ -127,7 +230,7 @@ export default function Table() {
             </div>
           </div>
 
-          <div style={{ marginTop: "var(--s-5)", borderTop: "1px solid rgba(20,17,12,0.1)", paddingTop: "var(--s-4)" }}>
+          <div style={{ marginTop: "var(--s-5)", borderTop: "1px solid var(--line)", paddingTop: "var(--s-4)" }}>
             <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "60ch" }}>
               Why a table, and not a program? Read the vision behind all of this:{" "}
               <Link href="/exile" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>living well as exiles in a post-Christian world</Link>.
