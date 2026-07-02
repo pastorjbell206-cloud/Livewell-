@@ -131,28 +131,28 @@ const DIM_META: Record<Dim, { label: string; weak: string; strong: string; essay
     label: "Relational",
     weak: "The gap between your stated convictions and how you treat the people closest to you is wider than you want to admit.",
     strong: "You're letting people you love change how you actually live.",
-    essay: "the-gap-between-belief-and-behavior",
+    essay: "?track=marriage",
     book: "The First Flock",
   },
   intellectual: {
     label: "Intellectual",
     weak: "Your doubts have nowhere to go. That is not safe; it is the long road to brittle faith.",
     strong: "You are letting your mind work on the questions instead of running from them.",
-    essay: "the-questions-that-actually-matter",
+    essay: "?track=doubt",
     book: "Why Not What",
   },
   vocational: {
     label: "Vocational",
     weak: "You are running on fumes. Sabbath is not a luxury; it is a structural condition for faithfulness.",
     strong: "You have built rhythms that let the work be done without it eating you.",
-    essay: "sabbath-is-not-a-luxury",
+    essay: "?pillar=living-well-after-christendom",
     book: "Dangerous Calling",
   },
   devotional: {
     label: "Devotional",
     weak: "Your daily practice of God has thinned. Without it, the rest of this falls apart at the seams.",
     strong: "You are practicing the presence in a sustained, costly way.",
-    essay: "the-prayer-that-works-when-prayer-doesnt-work",
+    essay: "?track=devotionals",
     book: "HealWell",
   },
 };
@@ -372,7 +372,7 @@ export default function Diagnostic() {
                   </p>
                   <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
                     <Link
-                      href={`/writing/${lead.essaySlug}`}
+                      href={`/writing${lead.essaySlug}`}
                       style={{
                         fontFamily: "var(--U)",
                         fontSize: "13px",
@@ -383,7 +383,7 @@ export default function Diagnostic() {
                         paddingBottom: "2px",
                       }}
                     >
-                      Read the essay →
+                      Read the essays →
                     </Link>
                     <Link
                       href="/books"

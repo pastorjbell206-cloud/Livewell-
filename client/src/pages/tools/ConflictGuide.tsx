@@ -122,7 +122,7 @@ const CONFLICT_TYPES: ConflictType[] = [
       },
     ],
     relatedArticles: [
-      { title: "Read essays on marriage and communication", href: "/writing?category=marriage" },
+      { title: "Read essays on marriage and communication", href: "/writing?track=marriage" },
     ],
   },
   {
@@ -218,7 +218,7 @@ const CONFLICT_TYPES: ConflictType[] = [
       },
     ],
     relatedArticles: [
-      { title: "Read essays on stewardship and financial health", href: "/writing?category=living-well" },
+      { title: "Read essays on stewardship and financial health", href: "/writing?pillar=living-well-after-christendom" },
     ],
   },
   {
@@ -315,7 +315,7 @@ const CONFLICT_TYPES: ConflictType[] = [
     ],
     relatedArticles: [
       { title: "Read the age-by-age parenting guide", href: "/tools/parenting-guide" },
-      { title: "Read essays on family and parenting", href: "/writing?category=parenting" },
+      { title: "Read essays on family and parenting", href: "/writing?track=parenting" },
     ],
   },
   {
@@ -411,7 +411,7 @@ const CONFLICT_TYPES: ConflictType[] = [
       },
     ],
     relatedArticles: [
-      { title: "Read essays on marriage and intimacy", href: "/writing?category=marriage" },
+      { title: "Read essays on marriage and intimacy", href: "/writing?track=marriage" },
     ],
   },
   {
@@ -507,7 +507,7 @@ const CONFLICT_TYPES: ConflictType[] = [
       },
     ],
     relatedArticles: [
-      { title: "Read essays on marriage and family", href: "/writing?category=marriage" },
+      { title: "Read essays on marriage and family", href: "/writing?track=marriage" },
     ],
   },
   {
@@ -603,7 +603,7 @@ const CONFLICT_TYPES: ConflictType[] = [
       },
     ],
     relatedArticles: [
-      { title: "Read essays on marriage and partnership", href: "/writing?category=marriage" },
+      { title: "Read essays on marriage and partnership", href: "/writing?track=marriage" },
     ],
   },
   {
@@ -699,7 +699,7 @@ const CONFLICT_TYPES: ConflictType[] = [
       },
     ],
     relatedArticles: [
-      { title: "Read essays on faith and doubt", href: "/writing?category=faith" },
+      { title: "Read essays on faith and doubt", href: "/writing?track=doubt" },
     ],
   },
   {
@@ -795,7 +795,7 @@ const CONFLICT_TYPES: ConflictType[] = [
       },
     ],
     relatedArticles: [
-      { title: "Read essays on trust and faithfulness", href: "/writing?category=marriage" },
+      { title: "Read essays on trust and faithfulness", href: "/writing?track=marriage" },
       { title: "Take the Marriage Health Assessment", href: "/tools/marriage-assessment" },
     ],
   },

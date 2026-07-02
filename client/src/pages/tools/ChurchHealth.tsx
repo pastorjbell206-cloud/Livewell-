@@ -76,7 +76,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on worship and teaching",
-      href: "/writing?category=pastoral-ministry",
+      href: "/writing?track=pastoral-ministry",
     },
   },
   {
@@ -117,7 +117,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on discipleship and community",
-      href: "/writing?category=pastoral-ministry",
+      href: "/writing?track=pastoral-ministry",
     },
   },
   {
@@ -158,7 +158,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on mission and outreach",
-      href: "/writing?category=pastoral-ministry",
+      href: "/writing?track=pastoral-ministry",
     },
   },
   {
@@ -199,7 +199,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on church leadership",
-      href: "/writing?category=pastoral-ministry",
+      href: "/writing?track=pastoral-ministry",
     },
   },
   {
@@ -240,7 +240,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on stewardship and generosity",
-      href: "/writing?category=pastoral-ministry",
+      href: "/writing?track=pastoral-ministry",
     },
   },
   {
@@ -281,7 +281,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on pastoral care",
-      href: "/writing?category=pastoral-ministry",
+      href: "/writing?track=pastoral-ministry",
     },
   },
 ];
@@ -1392,7 +1392,7 @@ export default function ChurchHealth() {
                 />
               </a>
               <a
-                href="/writing?category=pastoral-ministry"
+                href="/writing?track=pastoral-ministry"
                 style={{
                   display: "flex",
                   alignItems: "center",

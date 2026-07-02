@@ -74,7 +74,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on stewardship and generosity",
-      href: "/writing?category=living-well",
+      href: "/writing?track=finances",
     },
   },
   {
@@ -119,7 +119,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on contentment and the good life",
-      href: "/writing?category=living-well",
+      href: "/writing?track=finances",
     },
   },
   {
@@ -164,7 +164,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on stewardship and responsibility",
-      href: "/writing?category=living-well",
+      href: "/writing?track=finances",
     },
   },
   {
@@ -209,7 +209,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on family, parenting, and provision",
-      href: "/writing?category=parenting",
+      href: "/writing?track=parenting",
     },
   },
 ];
@@ -1106,7 +1106,7 @@ export default function FinancialHealth() {
 
             {/* Next Step CTA */}
             <a
-              href="/writing?category=living-well"
+              href="/writing?track=finances"
               style={{
                 display: "flex",
                 alignItems: "center",

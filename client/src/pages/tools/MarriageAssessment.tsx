@@ -71,7 +71,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on marriage and communication",
-      href: "/writing?category=marriage",
+      href: "/writing?track=marriage",
     },
   },
   {
@@ -112,7 +112,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on marriage and intimacy",
-      href: "/writing?category=marriage",
+      href: "/writing?track=marriage",
     },
   },
   {
@@ -153,7 +153,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on trust and faithfulness",
-      href: "/writing?category=marriage",
+      href: "/writing?track=marriage",
     },
   },
   {
@@ -194,7 +194,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on building a life together",
-      href: "/writing?category=marriage",
+      href: "/writing?track=marriage",
     },
   },
   {
@@ -235,7 +235,7 @@ const CATEGORIES: Category[] = [
     },
     articleLink: {
       title: "Read more on conflict and forgiveness",
-      href: "/writing?category=marriage",
+      href: "/writing?track=marriage",
     },
   },
 ];
@@ -1141,7 +1141,7 @@ export default function MarriageAssessment() {
 
             {/* Next Step CTA */}
             <a
-              href="/writing?category=marriage"
+              href="/writing?track=marriage"
               style={{
                 display: "flex",
                 alignItems: "center",

@@ -134,8 +134,8 @@ function getCategoryResult(name: string, score: number): CategoryResult {
         "Ask one person who knows you well: 'What emotion do you see me avoid most often?' Listen to their answer without defending yourself. Their observation may be more accurate than your self-assessment, because the things we avoid are precisely the things we cannot see.",
       ],
       articleLink: {
-        title: "The Inner Life Nobody Sees",
-        href: "/writing",
+        title: "Essays on the inner life",
+        href: "/writing?pillar=living-well-after-christendom",
       },
     },
     Boundaries: {
@@ -149,8 +149,8 @@ function getCategoryResult(name: string, score: number): CategoryResult {
         "Block two hours this week that belong to you -- not to your family, not to your job, not to your church. Guard those hours the way you would guard a meeting with your boss. Your refusal to rest is not faithfulness. It is a functional denial that God can run the world without you.",
       ],
       articleLink: {
-        title: "The No You Have Been Afraid to Say",
-        href: "/writing",
+        title: "Essays on limits, boundaries, and rest",
+        href: "/writing?pillar=living-well-after-christendom",
       },
     },
     "Grief & Lament": {
@@ -164,8 +164,8 @@ function getCategoryResult(name: string, score: number): CategoryResult {
         "Read Psalm 88 -- the only Psalm that ends in darkness, with no resolution. Sit with it. Do not rush to Psalm 89. Let the darkness of 88 do its work. The Bible includes a prayer that God does not answer, which means your unanswered prayers belong in the canon of faith too.",
       ],
       articleLink: {
-        title: "The Grief We Refuse to Carry",
-        href: "/writing",
+        title: "Writing for grief — essays and real help",
+        href: "/grief",
       },
     },
     Forgiveness: {
@@ -179,8 +179,8 @@ function getCategoryResult(name: string, score: number): CategoryResult {
         "Ask God to show you where you are keeping score -- in your marriage, your friendships, your work. The mental ledger of who owes you what is exhausting to maintain, and it poisons every relationship it touches. Lay the ledger down. Not because the debts are not real. Because carrying them is killing you.",
       ],
       articleLink: {
-        title: "Forgiveness Is Not What You Think It Is",
-        href: "/writing",
+        title: "Essays on forgiveness and repair",
+        href: "/writing?track=marriage",
       },
     },
     "Rest & Sabbath": {
@@ -194,8 +194,8 @@ function getCategoryResult(name: string, score: number): CategoryResult {
         "At the end of today, before you go to bed, say out loud: 'It is enough.' The work is not finished. The inbox is not empty. The house is not clean. And it is enough. God rested on the seventh day not because the work of creation was perfect but because it was finished for that day. You have permission to stop.",
       ],
       articleLink: {
-        title: "The Rest You Keep Refusing",
-        href: "/writing",
+        title: "Essays on sabbath and rest",
+        href: "/writing?pillar=living-well-after-christendom",
       },
     },
   };

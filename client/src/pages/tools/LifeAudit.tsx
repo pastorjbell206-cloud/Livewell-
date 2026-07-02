@@ -206,7 +206,7 @@ const CATEGORIES: Category[] = [
     },
     relatedLink: {
       title: "Read essays on stewardship and the body",
-      href: "/writing?category=living-well",
+      href: "/writing?pillar=living-well-after-christendom",
     },
   },
   {
@@ -335,7 +335,7 @@ const CATEGORIES: Category[] = [
     },
     relatedLink: {
       title: "Read essays on calling and vocation",
-      href: "/writing?category=living-well",
+      href: "/writing?pillar=living-well-after-christendom",
     },
   },
   {

@@ -1626,7 +1626,7 @@ export default function PastorBurnout() {
                 />
               </a>
               <a
-                href="/writing?category=pastoral-ministry"
+                href="/writing?track=pastoral-ministry"
                 style={{
                   display: "flex",
                   alignItems: "center",
