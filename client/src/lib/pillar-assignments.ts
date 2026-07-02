@@ -17,6 +17,13 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     ],
     "confidence": "high"
   },
+  "the-hour-that-forms-the-week": {
+    "pillar": 6,
+    "subThemes": [
+      "practices"
+    ],
+    "confidence": "high"
+  },
   "the-atheist-in-the-pulpit": {
     "pillar": 4,
     "subThemes": [],
