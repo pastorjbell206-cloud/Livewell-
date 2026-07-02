@@ -656,7 +656,9 @@ export default function LifeAudit() {
                           ? "var(--ink-muted)"
                           : "var(--bone-muted)",
                     transition: "background 0.2s",
-                    padding: 0,
+                    padding: "7px",
+                    boxSizing: "content-box",
+                    backgroundClip: "content-box",
                   }}
                   aria-label={`Go to ${cat.name}`}
                 />
