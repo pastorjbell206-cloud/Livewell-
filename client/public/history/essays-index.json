@@ -97,6 +97,20 @@
       "blurb": "The fundamentalist and modernist split, the churches under the dictators, Barmen and Bonhoeffer, the fire from Azusa Street, and the great reversal that moved the faith's center south.",
       "era": "The Modern and Global Church",
       "dateRange": "AD 1900 to today"
+    },
+    {
+      "slug": "apostolic-and-persecuted",
+      "title": "The Apostolic and Persecuted Church",
+      "blurb": "Three centuries with no buildings, no legal standing, and no cultural power — and the church grew anyway. What the first Christians had that we keep trying to buy.",
+      "era": "Ancient",
+      "dateRange": "AD 30–313"
+    },
+    {
+      "slug": "councils-and-creeds",
+      "title": "Councils and Creeds",
+      "blurb": "The empire stopped killing the church and started smiling at it. What the bishops protected at Nicaea and Chalcedon — and what the favor of Constantine began to cost.",
+      "era": "Ancient",
+      "dateRange": "AD 313–590"
     }
   ]
 }
