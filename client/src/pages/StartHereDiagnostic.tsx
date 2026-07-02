@@ -294,12 +294,18 @@ export default function StartHereDiagnostic() {
 
   const handleSelect = useCallback(
     (value: string) => {
+      // A second tap during the 300ms transition used to queue a second
+      // increment: from the last question that indexed past QUESTIONS and
+      // white-screened; earlier it silently skipped a question and
+      // soft-locked the finish. Ignore clicks while transitioning and
+      // clamp the step as a second guard.
+      if (transitioning) return;
       setAnswers((prev) => ({ ...prev, [currentQuestion.id]: value }));
 
       if (step < totalSteps - 1) {
         setTransitioning(true);
         setTimeout(() => {
-          setStep((s) => s + 1);
+          setStep((s) => Math.min(s + 1, totalSteps - 1));
           setTransitioning(false);
           scrollToTop();
         }, 300);
@@ -312,7 +318,7 @@ export default function StartHereDiagnostic() {
         }, 300);
       }
     },
-    [currentQuestion, step, totalSteps, scrollToTop],
+    [currentQuestion, step, totalSteps, scrollToTop, transitioning],
   );
 
   const handleBack = useCallback(() => {

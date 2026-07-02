@@ -7,6 +7,7 @@ import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 export default function StartHereQuiz() {
   const [currentStep, setCurrentStep] = useState(0);
+  const [submitted, setSubmitted] = useState(false);
   const [answers, setAnswers] = useState<{ [key: string]: string }>({});
 
   const QUESTIONS = [
@@ -104,8 +105,22 @@ export default function StartHereQuiz() {
   const getReadingPath = () => {
     const concern = answers.concern || "default";
     const situation = answers.situation || "crisis";
-    const key = `${concern}-${situation}-${answers.format}`;
-    return READING_PATHS[key as keyof typeof READING_PATHS] || READING_PATHS.default;
+    // Staged fallback: exact match, then the same concern+situation in the
+    // articles format (the format most paths are written for), then the
+    // concern alone, then default. The old single exact-key lookup sent
+    // ~92 of ~96 answer combinations — including every pastor — to the
+    // generic default no matter what they answered.
+    const candidates = [
+      `${concern}-${situation}-${answers.format}`,
+      `${concern}-${situation}-articles`,
+      `${concern}-articles`,
+      concern,
+    ];
+    for (const key of candidates) {
+      const hit = READING_PATHS[key as keyof typeof READING_PATHS];
+      if (hit) return hit;
+    }
+    return READING_PATHS.default;
   };
 
   const handleSelect = (optionValue: string) => {
@@ -123,7 +138,8 @@ export default function StartHereQuiz() {
   };
 
   const readingPath = getReadingPath();
-  const isComplete = Object.keys(answers).length === QUESTIONS.length;
+  const allAnswered = Object.keys(answers).length === QUESTIONS.length;
+  const isComplete = allAnswered && submitted;
 
   return (
     <div style={{ background: "var(--paper)", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
@@ -212,6 +228,8 @@ export default function StartHereQuiz() {
                 onClick={() => {
                   if (currentStep < QUESTIONS.length - 1) {
                     setCurrentStep(currentStep + 1);
+                  } else if (allAnswered) {
+                    setSubmitted(true);
                   }
                 }}
                 disabled={!answers[QUESTIONS[currentStep].id]}
@@ -263,7 +281,7 @@ export default function StartHereQuiz() {
                         </p>
                       </div>
                       <span style={{ color: "var(--gold)", fontWeight: "bold", marginLeft: "16px", whiteSpace: "nowrap" }}>
-                        Read â
+                        Read →
                       </span>
                     </div>
                   </Link>
@@ -282,10 +300,8 @@ export default function StartHereQuiz() {
               <p style={{ fontSize: "14px", color: "var(--ink3)", marginBottom: "16px" }}>
                 Go deeper with James Bell's most comprehensive work on this topic.
               </p>
-              <Link href="/books" style={{ textDecoration: "none" }}>
-                <button style={{ background: "var(--ink)", color: "var(--paper)", border: "none", padding: "14px 24px", minHeight: "44px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
-                  View Books
-                </button>
+              <Link href="/books" style={{ display: "inline-block", background: "var(--ink)", color: "var(--paper)", padding: "14px 24px", minHeight: "44px", lineHeight: "16px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", textDecoration: "none", boxSizing: "border-box" }}>
+                View Books
               </Link>
             </div>
 
