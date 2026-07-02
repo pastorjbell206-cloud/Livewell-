@@ -111,6 +111,20 @@
       "blurb": "The empire stopped killing the church and started smiling at it. What the bishops protected at Nicaea and Chalcedon — and what the favor of Constantine began to cost.",
       "era": "Ancient",
       "dateRange": "AD 313–590"
+    },
+    {
+      "slug": "the-long-middle",
+      "title": "The Long Middle",
+      "blurb": "Nine hundred years between the empire's collapse and the Reformation's spark. Neither a dark age nor a golden one — the centuries when the church held everything, and nearly lost itself.",
+      "era": "Medieval",
+      "dateRange": "AD 590–1517"
+    },
+    {
+      "slug": "reformation-and-its-wars",
+      "title": "The Reformation and Its Wars",
+      "blurb": "A monk's protest recovered the gospel and broke the Western church in two — then into pieces. The era that gave Protestants their treasure also taught them their worst habit.",
+      "era": "Reformation",
+      "dateRange": "AD 1517–1648"
     }
   ]
 }
