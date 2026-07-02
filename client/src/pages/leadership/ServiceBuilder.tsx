@@ -26,18 +26,40 @@ export default function ServiceBuilder() {
 
   useEffect(() => {
     if (!slug) return;
+    // Reset FIRST. Without this, switching services (wedding -> funeral) left
+    // the previous service's state live while KEY had already flipped, and the
+    // save effect below immediately overwrote the new slug's saved work with
+    // the old slug's state — permanently, if the fetch then failed.
+    setData(null);
+    setSt({ include: {}, pick: {}, text: {} });
+    let stale = false;
     let saved: State | null = null;
-    try { const raw = localStorage.getItem(`livewell-service-${slug}`); if (raw) saved = JSON.parse(raw); } catch { /* ignore */ }
+    try {
+      const raw = localStorage.getItem(`livewell-service-${slug}`);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        // Validate the shape: corrupt-but-valid JSON (e.g. "{}") used to reach
+        // render and crash on st.include[el.id].
+        if (parsed && typeof parsed.include === "object" && parsed.include !== null &&
+            typeof parsed.pick === "object" && parsed.pick !== null &&
+            typeof parsed.text === "object" && parsed.text !== null) {
+          saved = parsed as State;
+        }
+      }
+    } catch { /* ignore */ }
     fetch(`/leadership/services/${slug}.json`).then((r) => (r.ok ? r.json() : null)).then((d: Data | null) => {
-      if (!d) return;
+      if (!d || stale) return;
       setData(d);
       if (saved) { setSt(saved); return; }
       const include: Record<string, boolean> = {}, pick: Record<string, number> = {}, text: Record<string, string> = {};
       for (const el of d.elements) { include[el.id] = !el.optional; pick[el.id] = 0; text[el.id] = el.samples[0]?.text ?? ""; }
       setSt({ include, pick, text });
     }).catch(() => {});
+    return () => { stale = true; };
   }, [slug]);
 
+  // Safe now: after a slug change, data is null until THIS slug's fetch lands,
+  // so nothing can be written under the new key until its own state exists.
   useEffect(() => { if (KEY && data) { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch { /* ignore */ } } }, [st, KEY, data]);
 
   const choose = (el: Element, idx: number) => setSt((s) => ({ ...s, pick: { ...s.pick, [el.id]: idx }, text: { ...s.text, [el.id]: el.samples[idx]?.text ?? "" } }));
