@@ -9,7 +9,9 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import { RotateCcw } from "lucide-react";
 import Layout from "@/components/Layout";
+import LoadFailed from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
+import { fetchJson } from "@/lib/fetch-json";
 import { DOCTRINE_INDEX } from "@/lib/theology";
 
 interface Option { label: string; view: string; }
@@ -19,19 +21,32 @@ interface Quiz { slug: string; title: string; intro: string; disclaimer: string;
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
+// The render needs an array of quizzes; anything else is a failed load.
+const isDiagnosticsFile = (x: unknown): x is { quizzes: Quiz[] } => {
+  const d = x as { quizzes?: unknown };
+  return !!d && typeof d === "object" && Array.isArray(d.quizzes);
+};
+
 export default function TheologyDiagnostic() {
-  const [quizzes, setQuizzes] = useState<Quiz[]>([]);
+  // null = not loaded yet; [] = loaded but empty (distinct from loading)
+  const [quizzes, setQuizzes] = useState<Quiz[] | null>(null);
   const [activeSlug, setActiveSlug] = useState<string | null>(null);
   const [answers, setAnswers] = useState<Record<number, number>>({});
+  const [nonce, setNonce] = useState(0);
+  // The attempt (retry nonce) that failed; deriving `loadError` from it means
+  // Retry clears the panel without extra state writes inside the effect.
+  const [failedNonce, setFailedNonce] = useState<number | null>(null);
+  const loadError = failedNonce === nonce;
 
   useEffect(() => {
-    fetch("/theology/theology-diagnostics.json")
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d) => d?.quizzes && setQuizzes(d.quizzes))
-      .catch(() => {});
-  }, []);
+    let stale = false;
+    fetchJson("/theology/theology-diagnostics.json", isDiagnosticsFile)
+      .then((d) => { if (!stale) setQuizzes(d.quizzes); })
+      .catch(() => { if (!stale) setFailedNonce(nonce); });
+    return () => { stale = true; };
+  }, [nonce]);
 
-  const quiz = quizzes.find((q) => q.slug === activeSlug) ?? null;
+  const quiz = (quizzes ?? []).find((q) => q.slug === activeSlug) ?? null;
   const docReady = (slug: string) => DOCTRINE_INDEX.find((d) => d.slug === slug && d.ready);
 
   const answeredCount = Object.keys(answers).length;
@@ -80,9 +95,15 @@ export default function TheologyDiagnostic() {
           {/* QUIZ PICKER */}
           {!quiz && (
             <>
-              {quizzes.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+              {quizzes === null && !loadError && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+              {loadError && (
+                <LoadFailed what="The diagnostic" onRetry={() => setNonce((n) => n + 1)} backHref="/tools" backLabel="Back to the tools" />
+              )}
+              {quizzes !== null && quizzes.length === 0 && (
+                <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>No diagnostics are available yet.</p>
+              )}
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px" }}>
-                {quizzes.map((q) => (
+                {(quizzes ?? []).map((q) => (
                   <button key={q.slug} type="button" onClick={() => start(q.slug)}
                     style={{ textAlign: "left", cursor: "pointer", background: "var(--card)", border: "1px solid var(--border)", borderTop: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)" }}>
                     <div style={{ fontFamily: "var(--F)", fontSize: "22px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px" }}>{q.title}</div>

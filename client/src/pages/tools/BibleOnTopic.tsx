@@ -11,6 +11,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { useState } from "react";
 import { Link } from "wouter";
 import { Copy, Check } from "lucide-react";
+import { copyToClipboard } from "@/lib/clipboard";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -206,6 +207,7 @@ export default function BibleOnTopic() {
   })();
   const [topicId, setTopicId] = useState<string>(initial);
   const [copied, setCopied] = useState(false);
+  const [copyFailed, setCopyFailed] = useState(false);
   const topic = TOPICS.find((t) => t.id === topicId) || TOPICS[0];
 
   async function copyTopic() {
@@ -216,13 +218,14 @@ export default function BibleOnTopic() {
       "",
       ...topic.verses.map((v) => `${v.ref}\n${v.text}\n`),
     ].join("\n");
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      /* clipboard unavailable */
+    const ok = await copyToClipboard(text);
+    if (!ok) {
+      setCopyFailed(true);
+      return;
     }
+    setCopyFailed(false);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   }
 
   return (
@@ -254,7 +257,7 @@ export default function BibleOnTopic() {
               return (
                 <button
                   key={t.id}
-                  onClick={() => { setTopicId(t.id); setCopied(false); }}
+                  onClick={() => { setTopicId(t.id); setCopied(false); setCopyFailed(false); }}
                   style={{
                     cursor: "pointer", padding: "8px 14px",
                     background: on ? "var(--mustard)" : "#FFFFFF",
@@ -276,6 +279,11 @@ export default function BibleOnTopic() {
                 {copied ? <Check size={15} /> : <Copy size={15} />} {copied ? "Copied" : "Copy"}
               </button>
             </div>
+            {copyFailed && (
+              <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
+                Copy failed — select and copy manually.
+              </p>
+            )}
 
             <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "var(--ink)", marginBottom: "var(--s-4)" }}>{topic.framing}</p>
 

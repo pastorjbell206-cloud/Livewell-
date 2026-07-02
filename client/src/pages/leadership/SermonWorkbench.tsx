@@ -7,11 +7,20 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { copyToClipboard } from "@/lib/clipboard";
+import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const KEY = "livewell-sermon-workbench";
 
 interface Stage { id: string; kicker: string; title: string; prompts: { id: string; q: string; help: string }[]; }
+
+// Saved shape: a title plus prompt-id -> written text. Anything else under the
+// key is treated as absent rather than reaching the render.
+const isSaved = (x: unknown): x is { title?: unknown; answers?: unknown } => !!x && typeof x === "object";
+const isAnswers = (x: unknown): x is Record<string, string> =>
+  !!x && typeof x === "object" && !Array.isArray(x) &&
+  Object.values(x as Record<string, unknown>).every((v) => typeof v === "string");
 
 const STAGES: Stage[] = [
   { id: "text", kicker: "Day one", title: "Live in the text", prompts: [
@@ -40,17 +49,22 @@ export default function SermonWorkbench() {
   const [title, setTitle] = useState("");
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [saved, setSaved] = useState(false);
+  const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "failed">("idle");
+  const [persistFailed, setPersistFailed] = useState(false);
 
   useEffect(() => {
-    try {
-      const raw = localStorage.getItem(KEY);
-      if (raw) { const o = JSON.parse(raw); setTitle(o.title || ""); setAnswers(o.answers || {}); }
-    } catch { /* ignore */ }
+    const o = readStoredJSON(KEY, isSaved, {});
+    if (typeof o.title === "string") setTitle(o.title);
+    if (isAnswers(o.answers)) setAnswers(o.answers);
   }, []);
 
   useEffect(() => {
     const t = setTimeout(() => {
-      try { localStorage.setItem(KEY, JSON.stringify({ title, answers })); setSaved(true); setTimeout(() => setSaved(false), 1200); } catch { /* ignore */ }
+      // A failed save was silent here — days of sermon prep could vanish in
+      // private mode with the page still promising "Saved to this browser."
+      const ok = writeStoredJSON(KEY, { title, answers });
+      setPersistFailed(!ok);
+      if (ok) { setSaved(true); setTimeout(() => setSaved(false), 1200); }
     }, 600);
     return () => clearTimeout(t);
   }, [title, answers]);
@@ -65,7 +79,12 @@ export default function SermonWorkbench() {
     return out;
   }, [title, answers]);
 
-  const copy = () => { navigator.clipboard?.writeText(text); };
+  // "Copied" only after a copy actually happened (audit 15 H1).
+  const copy = async () => {
+    const ok = await copyToClipboard(text);
+    setCopyStatus(ok ? "copied" : "failed");
+    if (ok) setTimeout(() => setCopyStatus("idle"), 2000);
+  };
   const clear = () => { if (confirm("Clear this sermon and start over?")) { setTitle(""); setAnswers({}); } };
 
   return (
@@ -103,8 +122,11 @@ export default function SermonWorkbench() {
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "center" }}>
             <button onClick={copy} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "10px 18px", background: "var(--mustard)", color: "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>Copy as text</button>
             <button onClick={clear} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "10px 18px", background: "none", color: "var(--ink-muted)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>Clear</button>
-            <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", opacity: saved ? 1 : 0, transition: "opacity .3s" }}>Saved to this browser</span>
+            {copyStatus === "copied" && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Copied</span>}
+            {copyStatus === "failed" && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Copy failed — select and copy manually.</span>}
+            {copyStatus === "idle" && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", opacity: saved ? 1 : 0, transition: "opacity .3s" }}>Saved to this browser</span>}
           </div>
+          {persistFailed && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", marginTop: "8px" }}>Couldn't save to this browser — your work here will not survive a reload.</p>}
         </div>
       </section>
     </Layout>

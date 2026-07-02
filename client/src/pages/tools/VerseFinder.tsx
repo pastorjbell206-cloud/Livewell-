@@ -3,6 +3,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { useState, useMemo } from "react";
 import { BookOpen, Copy, Check, Heart, Search, Share2, Sun } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
+import { copyToClipboard } from "@/lib/clipboard";
 import { Link } from "wouter";
 
 const VERSES: Record<string, { ref: string; text: string }[]> = {
@@ -154,6 +155,7 @@ export default function VerseFinder() {
   const [selected, setSelected] = useState<string | null>(null);
   const [copied, setCopied] = useState<string | null>(null);
   const [shared, setShared] = useState<string | null>(null);
+  const [copyFailed, setCopyFailed] = useState<string | null>(null);
   const [searchFilter, setSearchFilter] = useState("");
   const { favorites, addFavorite, removeFavorite, isFavorite } = useFavorites("livewell-saved-verses");
 
@@ -179,15 +181,25 @@ export default function VerseFinder() {
     }
   };
 
-  const handleCopy = (ref: string, text: string) => {
-    navigator.clipboard.writeText(`${ref} — ${text}`);
+  const handleCopy = async (ref: string, text: string) => {
+    const ok = await copyToClipboard(`${ref} — ${text}`);
+    if (!ok) {
+      setCopyFailed(ref);
+      return;
+    }
+    setCopyFailed(null);
     setCopied(ref);
     setTimeout(() => setCopied(null), 2000);
   };
 
-  const handleShare = (ref: string, text: string) => {
+  const handleShare = async (ref: string, text: string) => {
     const shareText = `\u{1F4D6} ${ref} — ${text} — via LiveWell by James Bell (livewellbyjamesbell.co/tools/verse-finder)`;
-    navigator.clipboard.writeText(shareText);
+    const ok = await copyToClipboard(shareText);
+    if (!ok) {
+      setCopyFailed(ref);
+      return;
+    }
+    setCopyFailed(null);
     setShared(ref);
     setTimeout(() => setShared(null), 2000);
   };
@@ -272,6 +284,11 @@ export default function VerseFinder() {
                 {shared === dailyVerse.ref ? <><Check size={12} /> Copied</> : <><Share2 size={12} /> Share</>}
               </button>
             </div>
+            {copyFailed === dailyVerse.ref && (
+              <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink3)", margin: "10px 0 0" }}>
+                Copy failed — select and copy manually.
+              </p>
+            )}
           </div>
         </div>
       </section>
@@ -366,6 +383,11 @@ export default function VerseFinder() {
                         </button>
                       </div>
                     </div>
+                    {copyFailed === v.ref && (
+                      <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink3)", margin: "0 0 10px" }}>
+                        Copy failed — select and copy manually.
+                      </p>
+                    )}
                     <p style={{ fontSize: "16px", lineHeight: 1.8, color: "var(--ink)", fontFamily: "var(--B)", fontStyle: "italic" }}>
                       "{v.text}"
                     </p>

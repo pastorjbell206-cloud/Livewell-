@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { useState, useEffect, useCallback } from "react";
 import { BookOpen, Check, ChevronRight, Eye, EyeOff } from "lucide-react";
+import { readStoredJSON, writeStoredJSON, isArrayOf } from "@/lib/storage";
 
 /* ── Types ─────────────────────────────────────────────────────── */
 
@@ -239,27 +240,24 @@ export default function ScriptureMemory() {
   >({});
   const [memorized, setMemorized] = useState<Set<string>>(new Set());
   const [showAnswer, setShowAnswer] = useState<Record<string, boolean>>({});
+  const [saveFailed, setSaveFailed] = useState(false);
 
-  // Load memorized state from localStorage
+  // Load memorized state from localStorage (shape-guarded: refs only)
   useEffect(() => {
-    try {
-      const stored = localStorage.getItem(STORAGE_KEY);
-      if (stored) {
-        setMemorized(new Set(JSON.parse(stored)));
-      }
-    } catch {
-      // Ignore parse errors
+    const stored = readStoredJSON<string[]>(
+      STORAGE_KEY,
+      isArrayOf((x): x is string => typeof x === "string"),
+      []
+    );
+    if (stored.length > 0) {
+      setMemorized(new Set(stored));
     }
   }, []);
 
   // Save memorized state to localStorage
   const persistMemorized = useCallback((next: Set<string>) => {
     setMemorized(next);
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(Array.from(next)));
-    } catch {
-      // Ignore storage errors
-    }
+    setSaveFailed(!writeStoredJSON(STORAGE_KEY, Array.from(next)));
   }, []);
 
   const toggleMemorized = (ref: string) => {
@@ -432,6 +430,18 @@ export default function ScriptureMemory() {
       {/* Content */}
       <section style={{ padding: "48px 32px", background: "var(--bone)" }}>
         <div className="wrap" style={{ maxWidth: "900px" }}>
+          {saveFailed && (
+            <p
+              style={{
+                fontFamily: "var(--U)",
+                fontSize: "13px",
+                color: "var(--ink-muted)",
+                margin: "0 0 24px",
+              }}
+            >
+              Couldn't save to this browser — your work here will not survive a reload.
+            </p>
+          )}
           {/* Category Grid */}
           {!selectedCategory && (
             <div

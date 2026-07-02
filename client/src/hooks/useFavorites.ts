@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 export interface FavoriteItem {
   id: string;
@@ -7,22 +8,26 @@ export interface FavoriteItem {
   savedAt: string;
 }
 
+/** Shape guard for one stored record; malformed entries are skipped, not fatal. */
+function isFavoriteItem(x: unknown): x is FavoriteItem {
+  if (typeof x !== "object" || x === null) return false;
+  const f = x as Record<string, unknown>;
+  return (
+    typeof f.id === "string" &&
+    typeof f.type === "string" &&
+    typeof f.content === "object" &&
+    f.content !== null &&
+    typeof f.savedAt === "string"
+  );
+}
+
 export function useFavorites(storageKey: string) {
-  const [favorites, setFavorites] = useState<FavoriteItem[]>(() => {
-    try {
-      const stored = localStorage.getItem(storageKey);
-      return stored ? JSON.parse(stored) : [];
-    } catch {
-      return [];
-    }
-  });
+  const [favorites, setFavorites] = useState<FavoriteItem[]>(() =>
+    readStoredJSON<unknown[]>(storageKey, Array.isArray, []).filter(isFavoriteItem)
+  );
 
   useEffect(() => {
-    try {
-      localStorage.setItem(storageKey, JSON.stringify(favorites));
-    } catch {
-      // localStorage full or unavailable — fail silently
-    }
+    writeStoredJSON(storageKey, favorites);
   }, [favorites, storageKey]);
 
   const addFavorite = useCallback(

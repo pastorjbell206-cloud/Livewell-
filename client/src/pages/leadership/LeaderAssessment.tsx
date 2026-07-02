@@ -8,7 +8,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
+import LoadFailed from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
+import { fetchJson } from "@/lib/fetch-json";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -22,18 +24,37 @@ interface Data {
   closing: string;
 }
 
+// What the render actually needs. A response missing any of it — including an
+// empty question set — is a failed load, not a blank assessment.
+const isData = (x: unknown): x is Data => {
+  const d = x as Data;
+  return !!d && typeof d === "object" && typeof d.title === "string" && typeof d.intro === "string" &&
+    Array.isArray(d.scale) && d.scale.length > 0 &&
+    Array.isArray(d.questions) && d.questions.length > 0 &&
+    Array.isArray(d.bands) && d.bands.length > 0;
+};
+
 export default function LeaderAssessment() {
   const [, params] = useRoute("/leadership/assessment/:slug");
   const slug = params?.slug;
   const [data, setData] = useState<Data | null>(null);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [nonce, setNonce] = useState(0);
+  // The attempt (slug + retry nonce) that failed. Deriving `error` from it means
+  // a slug change or a retry clears the panel without extra state writes.
+  const [failedAt, setFailedAt] = useState<string | null>(null);
+  const error = failedAt === `${slug}|${nonce}`;
 
   useEffect(() => {
     if (!slug) return;
     setData(null); setAnswers({}); setSubmitted(false);
-    fetch(`/leadership/assessments/${slug}.json`).then((r) => (r.ok ? r.json() : null)).then((d) => d && setData(d)).catch(() => {});
-  }, [slug]);
+    let stale = false;
+    fetchJson<Data>(`/leadership/assessments/${slug}.json`, isData)
+      .then((d) => { if (!stale) setData(d); })
+      .catch(() => { if (!stale) setFailedAt(`${slug}|${nonce}`); });
+    return () => { stale = true; };
+  }, [slug, nonce]);
 
   const max = data ? data.scale.length : 5;
   const answered = data ? Object.keys(answers).length : 0;
@@ -59,10 +80,16 @@ export default function LeaderAssessment() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}><Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · Self-examination</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 4.6vw, 48px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>{data?.title ?? "Loading…"}</h1>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 4.6vw, 48px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>{data?.title ?? (error ? "The assessment" : "Loading…")}</h1>
           {data?.subtitle && <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "60ch" }}>{data.subtitle}</p>}
         </div>
       </section>
+
+      {error && (
+        <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
+          <LoadFailed what="The assessment" onRetry={() => setNonce((n) => n + 1)} backHref="/leadership" backLabel="Back to Leadership" />
+        </section>
+      )}
 
       {data && (
         <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>

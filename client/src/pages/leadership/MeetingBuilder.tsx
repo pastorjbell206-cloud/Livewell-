@@ -8,11 +8,24 @@ import { Link } from "wouter";
 import { Plus, X } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { copyToClipboard } from "@/lib/clipboard";
+import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const KEY = "livewell-meeting-builder";
 
 interface Item { id: string; text: string; mins: number; owner: string; }
+
+// Per-entry filter (the FormationInventory model): corrupt-but-valid JSON
+// (e.g. {"items":{}}) used to reach render and crash on items.map.
+const isItem = (x: unknown): x is Item => {
+  const i = x as Item;
+  return !!i && typeof i === "object" && typeof i.id === "string" && typeof i.text === "string";
+};
+const isSaved = (x: unknown): x is { title?: unknown; items?: unknown } => !!x && typeof x === "object";
+
+// Minutes as arithmetic can trust them: never NaN, never negative.
+const cleanMins = (v: unknown) => Math.max(0, Number(v) || 0);
 
 const TEMPLATES: Record<string, { label: string; note: string; items: Omit<Item, "id">[] }> = {
   elder: { label: "Elder meeting", note: "Shepherding first, business second. The flock before the building.", items: [
@@ -49,25 +62,33 @@ const uid = () => Math.random().toString(36).slice(2, 9);
 export default function MeetingBuilder() {
   const [title, setTitle] = useState("");
   const [items, setItems] = useState<Item[]>([]);
+  const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "failed">("idle");
+  const [persistFailed, setPersistFailed] = useState(false);
 
   useEffect(() => {
-    try { const raw = localStorage.getItem(KEY); if (raw) { const o = JSON.parse(raw); setTitle(o.title || ""); setItems(o.items || []); } } catch { /* ignore */ }
+    const o = readStoredJSON(KEY, isSaved, {});
+    if (typeof o.title === "string") setTitle(o.title);
+    if (Array.isArray(o.items)) setItems(o.items.filter(isItem));
   }, []);
   useEffect(() => {
-    const t = setTimeout(() => { try { localStorage.setItem(KEY, JSON.stringify({ title, items })); } catch { /* ignore */ } }, 500);
+    const t = setTimeout(() => setPersistFailed(!writeStoredJSON(KEY, { title, items })), 500);
     return () => clearTimeout(t);
   }, [title, items]);
 
-  const total = useMemo(() => items.reduce((s, i) => s + (Number(i.mins) || 0), 0), [items]);
+  const total = useMemo(() => items.reduce((s, i) => s + cleanMins(i.mins), 0), [items]);
   const load = (k: string) => { const t = TEMPLATES[k]; setTitle(t.label); setItems(t.items.map((i) => ({ ...i, id: uid() }))); };
   const add = () => setItems((s) => [...s, { id: uid(), text: "", mins: 10, owner: "" }]);
   const update = (id: string, patch: Partial<Item>) => setItems((s) => s.map((i) => (i.id === id ? { ...i, ...patch } : i)));
   const remove = (id: string) => setItems((s) => s.filter((i) => i.id !== id));
 
-  const copy = () => {
+  // "Copied" only after a copy actually happened (audit 15 H1). Blank rows stay
+  // in the builder but out of the export.
+  const copy = async () => {
     let out = (title || "Meeting") + ` (${total} min)\n\n`;
-    items.forEach((i, n) => { out += `${n + 1}. ${i.text} — ${i.mins} min${i.owner ? ` (${i.owner})` : ""}\n`; });
-    navigator.clipboard?.writeText(out);
+    items.filter((i) => i.text.trim()).forEach((i, n) => { out += `${n + 1}. ${i.text} — ${cleanMins(i.mins)} min${i.owner ? ` (${i.owner})` : ""}\n`; });
+    const ok = await copyToClipboard(out);
+    setCopyStatus(ok ? "copied" : "failed");
+    if (ok) setTimeout(() => setCopyStatus("idle"), 2000);
   };
 
   return (
@@ -101,7 +122,7 @@ export default function MeetingBuilder() {
                   style={{ width: "100%", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.5, padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)", resize: "vertical", marginBottom: "4px" }} />
                 <div style={{ display: "flex", gap: "8px" }}>
                   <input value={i.owner} onChange={(e) => update(i.id, { owner: e.target.value })} aria-label={`Owner for item ${n + 1}`} placeholder="Owner" style={{ flex: 1, fontFamily: "var(--U)", fontSize: "13px", padding: "6px 10px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)" }} />
-                  <input type="number" value={i.mins} onChange={(e) => update(i.id, { mins: Number(e.target.value) })} aria-label={`Minutes for item ${n + 1}`} style={{ width: "70px", fontFamily: "var(--U)", fontSize: "13px", padding: "6px 10px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)" }} />
+                  <input type="number" min={0} value={i.mins} onChange={(e) => update(i.id, { mins: cleanMins(e.target.value) })} aria-label={`Minutes for item ${n + 1}`} style={{ width: "70px", fontFamily: "var(--U)", fontSize: "13px", padding: "6px 10px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)" }} />
                   <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", paddingTop: "7px" }}>min</span>
                 </div>
               </div>
@@ -112,8 +133,11 @@ export default function MeetingBuilder() {
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "center", marginTop: "var(--s-3)" }}>
             <button onClick={add} style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "10px 16px", background: "none", color: "var(--ink)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: "pointer" }}><Plus size={15} /> Add item</button>
             <button onClick={copy} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "10px 18px", background: "var(--mustard)", color: "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>Copy agenda</button>
+            {copyStatus === "copied" && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Copied</span>}
+            {copyStatus === "failed" && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Copy failed — select and copy manually.</span>}
             <span style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", marginLeft: "auto" }}>{total} min total</span>
           </div>
+          {persistFailed && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", marginTop: "8px" }}>Couldn't save to this browser — your work here will not survive a reload.</p>}
         </div>
       </section>
     </Layout>

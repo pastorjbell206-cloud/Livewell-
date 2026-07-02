@@ -11,6 +11,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { useState } from "react";
 import { Link } from "wouter";
 import { Copy, Check, RotateCcw, Sunrise, BookOpen, Moon, Users, HandHeart, HeartPulse } from "lucide-react";
+import { copyToClipboard } from "@/lib/clipboard";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const eyebrow = { fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--mustard)" } as const;
@@ -108,6 +109,7 @@ const CATEGORIES: Category[] = [
 export default function RuleOfLife() {
   const [chosen, setChosen] = useState<Set<string>>(new Set());
   const [copied, setCopied] = useState(false);
+  const [copyFailed, setCopyFailed] = useState(false);
 
   function toggle(id: string) {
     setChosen((prev) => {
@@ -117,11 +119,13 @@ export default function RuleOfLife() {
       return next;
     });
     setCopied(false);
+    setCopyFailed(false);
   }
 
   function reset() {
     setChosen(new Set());
     setCopied(false);
+    setCopyFailed(false);
   }
 
   const selectedByCategory = CATEGORIES
@@ -140,13 +144,14 @@ export default function RuleOfLife() {
   }
 
   async function copyRule() {
-    try {
-      await navigator.clipboard.writeText(ruleText());
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      /* clipboard unavailable */
+    const ok = await copyToClipboard(ruleText());
+    if (!ok) {
+      setCopyFailed(true);
+      return;
     }
+    setCopyFailed(false);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   }
 
   return (
@@ -220,6 +225,11 @@ export default function RuleOfLife() {
                 </div>
               )}
             </div>
+            {copyFailed && (
+              <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
+                Copy failed — select and copy manually.
+              </p>
+            )}
 
             {chosen.size === 0 ? (
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)" }}>

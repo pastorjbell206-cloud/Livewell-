@@ -10,12 +10,20 @@ import { Link } from "wouter";
 import { Plus, X } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const KEY = "livewell-decision-log";
 
 type Status = "pending" | "approved" | "declined" | "done";
 interface Entry { id: string; title: string; kind: string; amount: string; status: Status; date: string; note: string; }
+
+// Per-entry filter (the FormationInventory model): one corrupt record must not
+// blank the page over a church's confidential benevolence history.
+const isEntry = (x: unknown): x is Entry => {
+  const e = x as Entry;
+  return !!e && typeof e === "object" && typeof e.id === "string" && typeof e.title === "string" && typeof e.status === "string";
+};
 
 const KINDS = ["Benevolence", "Board decision", "Policy", "Personnel"];
 const STATUS: { id: Status; label: string }[] = [
@@ -27,9 +35,13 @@ export default function DecisionLog() {
   const [items, setItems] = useState<Entry[]>([]);
   const [draft, setDraft] = useState<{ title: string; kind: string; amount: string; note: string }>({ title: "", kind: "Benevolence", amount: "", note: "" });
   const [filter, setFilter] = useState<string | null>(null);
+  const [persistFailed, setPersistFailed] = useState(false);
 
-  useEffect(() => { try { const raw = localStorage.getItem(KEY); if (raw) setItems(JSON.parse(raw)); } catch { /* ignore */ } }, []);
-  useEffect(() => { try { localStorage.setItem(KEY, JSON.stringify(items)); } catch { /* ignore */ } }, [items]);
+  useEffect(() => { setItems(readStoredJSON(KEY, Array.isArray, []).filter(isEntry)); }, []);
+  useEffect(() => {
+    const t = setTimeout(() => setPersistFailed(!writeStoredJSON(KEY, items)), 0);
+    return () => clearTimeout(t);
+  }, [items]);
 
   const add = () => {
     if (!draft.title.trim()) return;
@@ -64,8 +76,9 @@ export default function DecisionLog() {
               <input value={draft.amount} onChange={(e) => setDraft({ ...draft, amount: e.target.value })} aria-label="Amount (if any)" placeholder="Amount (if any)" style={{ flex: "1 1 120px", fontFamily: "var(--B)", fontSize: "15px", padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)" }} />
             </div>
             <textarea value={draft.note} onChange={(e) => setDraft({ ...draft, note: e.target.value })} rows={2} aria-label="The reasoning, the conditions, the follow-up" placeholder="The reasoning, the conditions, the follow-up" style={{ width: "100%", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, padding: "10px 12px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)", resize: "vertical", marginBottom: "8px" }} />
-            <button onClick={add} style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "10px 18px", background: "var(--mustard)", color: "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: "pointer" }}><Plus size={15} /> Log it</button>
+            <button onClick={add} disabled={!draft.title.trim()} style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "10px 18px", background: !draft.title.trim() ? "var(--border)" : "var(--mustard)", color: !draft.title.trim() ? "var(--ink-muted)" : "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: !draft.title.trim() ? "not-allowed" : "pointer" }}><Plus size={15} /> Log it</button>
           </div>
+          {persistFailed && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>Couldn't save to this browser — your work here will not survive a reload.</p>}
 
           <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginBottom: "var(--s-3)" }}>
             <Chip active={!filter} onClick={() => setFilter(null)}>All ({items.length})</Chip>

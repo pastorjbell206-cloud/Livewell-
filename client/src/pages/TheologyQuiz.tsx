@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import { trpc } from "@/lib/trpc";
 import { Link } from "wouter";
 import { SEOMeta } from "@/components/SEOMeta";
+import LoadFailed from "@/components/LoadFailed";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
 import { SITE_URL } from "@/lib/site";
@@ -44,7 +45,7 @@ export default function TheologyQuiz() {
     return Math.round(((currentQuestion + 1) / questions.length) * 100);
   }, [currentQuestion, questions.length]);
 
-  if (isLoading) {
+  if (isLoading || (questionsQuery.isError && questionsQuery.isFetching)) {
     return (
       <>
         <MinimalNav />
@@ -53,6 +54,18 @@ export default function TheologyQuiz() {
             <div style={{ width: "40px", height: "40px", border: "3px solid var(--bone-muted)", borderTop: "3px solid var(--mustard)", borderRadius: "50%", animation: "spin 1s linear infinite", margin: "0 auto 16px" }} />
             <p style={{ color: "var(--ink3)", fontFamily: "var(--F)" }}>Loading your quiz…</p>
           </div>
+        </div>
+        <Footer />
+      </>
+    );
+  }
+
+  if (questionsQuery.isError) {
+    return (
+      <>
+        <MinimalNav />
+        <div style={{ minHeight: "60vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--paper)" }}>
+          <LoadFailed what="The quiz" onRetry={() => questionsQuery.refetch()} backHref="/tools" backLabel="Back to the tools" />
         </div>
         <Footer />
       </>
@@ -163,6 +176,26 @@ export default function TheologyQuiz() {
                 <h2 style={{ fontSize: "32px", fontWeight: "bold", color: "var(--ink)", fontFamily: "var(--F)", marginBottom: "8px" }}>Your Results</h2>
                 <p style={{ color: "var(--ink3)", fontSize: "16px" }}>Your answers point somewhere. Start reading there.</p>
               </div>
+
+              {recommendationsQuery.isLoading && (
+                <p style={{ textAlign: "center", color: "var(--ink3)", fontSize: "15px", lineHeight: "1.7", margin: "0 0 40px" }}>
+                  Reading your answers…
+                </p>
+              )}
+
+              {recommendationsQuery.isError && (
+                <div style={{ textAlign: "center", marginBottom: "40px" }}>
+                  <p style={{ color: "var(--ink3)", fontSize: "15px", lineHeight: "1.7", margin: "0 0 16px" }}>
+                    Your results didn't load — a connection problem, not your answers. Your answers are safe.
+                  </p>
+                  <button
+                    onClick={() => recommendationsQuery.refetch()}
+                    style={{ padding: "12px 24px", border: "2px solid var(--mustard)", background: "white", color: "var(--gold)", borderRadius: "4px", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}
+                  >
+                    Try again
+                  </button>
+                </div>
+              )}
 
               {recommendationsQuery.data && (
                 <>

@@ -10,7 +10,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
+import LoadFailed from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
+import { fetchJson } from "@/lib/fetch-json";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -26,18 +28,37 @@ interface Data {
   closing: string;
 }
 
+// What the render actually needs. A response missing any of it — including an
+// empty dimension list — is a failed load, not a blank survey.
+const isData = (x: unknown): x is Data => {
+  const d = x as Data;
+  return !!d && typeof d === "object" && typeof d.title === "string" && typeof d.intro === "string" &&
+    Array.isArray(d.scale) && d.scale.length > 0 &&
+    Array.isArray(d.dimensions) && d.dimensions.length > 0 &&
+    d.dimensions.every((dim) => !!dim && Array.isArray(dim.questions));
+};
+
 export default function ProfileSurvey() {
   const [, params] = useRoute("/leadership/survey/:slug");
   const slug = params?.slug;
   const [data, setData] = useState<Data | null>(null);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [nonce, setNonce] = useState(0);
+  // The attempt (slug + retry nonce) that failed. Deriving `error` from it means
+  // a slug change or a retry clears the panel without extra state writes.
+  const [failedAt, setFailedAt] = useState<string | null>(null);
+  const error = failedAt === `${slug}|${nonce}`;
 
   useEffect(() => {
     if (!slug) return;
     setData(null); setAnswers({}); setSubmitted(false);
-    fetch(`/leadership/surveys/${slug}.json`).then((r) => (r.ok ? r.json() : null)).then((d) => d && setData(d)).catch(() => {});
-  }, [slug]);
+    let stale = false;
+    fetchJson<Data>(`/leadership/surveys/${slug}.json`, isData)
+      .then((d) => { if (!stale) setData(d); })
+      .catch(() => { if (!stale) setFailedAt(`${slug}|${nonce}`); });
+    return () => { stale = true; };
+  }, [slug, nonce]);
 
   const max = data ? data.scale.length : 5;
   const allQuestions = useMemo(() => (data ? data.dimensions.flatMap((d) => d.questions.map((q) => ({ ...q, dim: d.id }))) : []), [data]);
@@ -75,10 +96,16 @@ export default function ProfileSurvey() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}><Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · Survey</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 4.6vw, 48px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>{data?.title ?? "Loading…"}</h1>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 4.6vw, 48px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>{data?.title ?? (error ? "The survey" : "Loading…")}</h1>
           {data?.subtitle && <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "60ch" }}>{data.subtitle}</p>}
         </div>
       </section>
+
+      {error && (
+        <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
+          <LoadFailed what="The survey" onRetry={() => setNonce((n) => n + 1)} backHref="/leadership" backLabel="Back to Leadership" />
+        </section>
+      )}
 
       {data && (
         <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>

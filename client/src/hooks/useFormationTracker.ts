@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
+import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 const STORAGE_KEY = "livewell-formation-tracker";
 
@@ -56,39 +57,35 @@ export interface FormationStats {
   lastActive: string | null;
 }
 
-const EMPTY_DATA: FormationData = {
-  articlesRead: [],
-  pathsStarted: [],
-  pathsCompleted: [],
-  toolsUsed: [],
-  bibleBooks: [],
-  savedNotes: [],
-};
+/** Keep only entries that are objects carrying every required string field. */
+function recordArray<T>(v: unknown, fields: (keyof T & string)[]): T[] {
+  if (!Array.isArray(v)) return [];
+  return v.filter((x): x is T => {
+    if (typeof x !== "object" || x === null) return false;
+    const r = x as Record<string, unknown>;
+    return fields.every((f) => typeof r[f] === "string");
+  });
+}
 
 function loadData(): FormationData {
-  try {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (!stored) return { ...EMPTY_DATA };
-    const parsed = JSON.parse(stored);
-    return {
-      articlesRead: parsed.articlesRead || [],
-      pathsStarted: parsed.pathsStarted || [],
-      pathsCompleted: parsed.pathsCompleted || [],
-      toolsUsed: parsed.toolsUsed || [],
-      bibleBooks: parsed.bibleBooks || [],
-      savedNotes: parsed.savedNotes || [],
-    };
-  } catch {
-    return { ...EMPTY_DATA };
-  }
+  const parsed = readStoredJSON<Record<string, unknown>>(
+    STORAGE_KEY,
+    (x): x is Record<string, unknown> =>
+      typeof x === "object" && x !== null && !Array.isArray(x),
+    {}
+  );
+  return {
+    articlesRead: recordArray<ArticleRecord>(parsed.articlesRead, ["slug", "title", "readAt"]),
+    pathsStarted: recordArray<PathRecord>(parsed.pathsStarted, ["slug", "title", "startedAt"]),
+    pathsCompleted: recordArray<PathCompletedRecord>(parsed.pathsCompleted, ["slug", "title", "completedAt"]),
+    toolsUsed: recordArray<ToolRecord>(parsed.toolsUsed, ["slug", "title", "usedAt"]),
+    bibleBooks: recordArray<BibleBookRecord>(parsed.bibleBooks, ["name", "studiedAt"]),
+    savedNotes: recordArray<NoteRecord>(parsed.savedNotes, ["id", "text", "articleSlug", "createdAt"]),
+  };
 }
 
 function saveData(data: FormationData): void {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-  } catch {
-    // localStorage full or unavailable — fail silently
-  }
+  writeStoredJSON(STORAGE_KEY, data);
 }
 
 /** Date string (YYYY-MM-DD) from an ISO timestamp. */
