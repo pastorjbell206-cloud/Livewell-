@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { readStoredJSON, writeStoredJSON, isArrayOf } from "./storage";
+import { readStoredJSON, writeStoredJSON, removeStoredJSON, isArrayOf } from "./storage";
 
 const KEY = "livewell-test-key";
 const isStringArray = isArrayOf((x): x is string => typeof x === "string");
@@ -51,5 +51,22 @@ describe("writeStoredJSON", () => {
       throw new DOMException("QuotaExceededError");
     });
     expect(writeStoredJSON(KEY, "big")).toBe(false);
+  });
+});
+
+describe("the store parameter (sessionStorage mirrors)", () => {
+  it("reads and writes through the passed store, not localStorage", () => {
+    expect(writeStoredJSON(KEY, ["session"], window.sessionStorage)).toBe(true);
+    expect(window.localStorage.getItem(KEY)).toBeNull();
+    expect(readStoredJSON(KEY, isStringArray, [], window.sessionStorage)).toEqual(["session"]);
+    window.sessionStorage.removeItem(KEY);
+  });
+
+  it("removeStoredJSON clears the right store and never throws", () => {
+    writeStoredJSON(KEY, [1], window.sessionStorage);
+    removeStoredJSON(KEY, window.sessionStorage);
+    expect(window.sessionStorage.getItem(KEY)).toBeNull();
+    // Absent key: still fine.
+    expect(() => removeStoredJSON("never-written")).not.toThrow();
   });
 });

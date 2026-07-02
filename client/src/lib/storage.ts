@@ -15,11 +15,13 @@
 export function readStoredJSON<T>(
   key: string,
   validate: (x: unknown) => x is T,
-  fallback: T
+  fallback: T,
+  /** Defaults to localStorage; pass window.sessionStorage for one-sitting flows. */
+  store?: Storage
 ): T {
   if (typeof window === "undefined") return fallback;
   try {
-    const raw = window.localStorage.getItem(key);
+    const raw = (store ?? window.localStorage).getItem(key);
     if (raw == null) return fallback;
     const parsed: unknown = JSON.parse(raw);
     return validate(parsed) ? parsed : fallback;
@@ -28,13 +30,23 @@ export function readStoredJSON<T>(
   }
 }
 
-export function writeStoredJSON(key: string, value: unknown): boolean {
+export function writeStoredJSON(key: string, value: unknown, store?: Storage): boolean {
   if (typeof window === "undefined") return false;
   try {
-    window.localStorage.setItem(key, JSON.stringify(value));
+    (store ?? window.localStorage).setItem(key, JSON.stringify(value));
     return true;
   } catch {
     return false;
+  }
+}
+
+/** Remove a key; safe under private mode / SSR. */
+export function removeStoredJSON(key: string, store?: Storage): void {
+  if (typeof window === "undefined") return;
+  try {
+    (store ?? window.localStorage).removeItem(key);
+  } catch {
+    /* nothing to remove or storage unavailable — either way, gone */
   }
 }
 
