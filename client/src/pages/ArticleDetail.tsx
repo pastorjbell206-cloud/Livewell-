@@ -31,6 +31,16 @@ import { trpc } from "@/lib/trpc";
 import { pillarForPost } from "@/lib/taxonomy";
 import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
 
+/**
+ * Per-slug byline overrides. Every essay not listed here is authored by
+ * James Bell (the default). Susanna Bell's essays open the platform's
+ * motherhood/womanhood lane.
+ */
+const ARTICLE_AUTHORS: Record<string, string> = {
+  "the-work-nobody-watches": "Susanna Bell",
+  "the-womanhood-they-preached-was-small": "Susanna Bell",
+};
+
 function ShareButton({ title, url }: { title: string; url: string }) {
   const [copied, setCopied] = useState(false);
   return (
@@ -469,6 +479,7 @@ export default function ArticleDetail() {
   const description = post.excerpt || post.title;
   const ogImage = post.coverImage || OG_DEFAULT_IMAGE;
   const publishedIso = String(post.publishedAt || post.createdAt || "");
+  const author = ARTICLE_AUTHORS[post.slug] ?? "James Bell";
 
   return (
     <Layout>
@@ -479,7 +490,7 @@ export default function ArticleDetail() {
         image={ogImage}
         url={canonical}
         type="article"
-        author="James Bell"
+        author={author}
         publishedDate={publishedIso}
         modifiedDate={String(post.updatedAt || publishedIso)}
         structuredData={[
@@ -489,7 +500,11 @@ export default function ArticleDetail() {
             publishedIso,
             String(post.updatedAt || publishedIso),
             ogImage,
-            canonical
+            canonical,
+            undefined,
+            undefined,
+            undefined,
+            author
           ),
           getBreadcrumbSchema([
             { name: "Home", url: SITE_URL },
@@ -617,7 +632,7 @@ export default function ArticleDetail() {
             >
               <span style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
                 <User size={14} aria-hidden />
-                James Bell
+                {author}
               </span>
               <span aria-hidden style={{ opacity: 0.5 }}>·</span>
               <AudienceLabel
@@ -846,7 +861,7 @@ export default function ArticleDetail() {
         )}
 
         {/* AUTHOR BIO */}
-        <AuthorBio />
+        <AuthorBio author={author} />
 
         <PageEndNav back={{ href: "/writing", label: "All essays" }} />
       </article>

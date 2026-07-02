@@ -156,7 +156,8 @@ export function getArticleSchema(
   url?: string,
   articleBody?: string,
   wordCount?: number,
-  articleSection?: string
+  articleSection?: string,
+  authorName?: string
 ) {
   return {
     "@context": "https://schema.org",
@@ -173,7 +174,7 @@ export function getArticleSchema(
     ...(wordCount ? { wordCount } : {}),
     author: {
       "@type": "Person",
-      name: AUTHOR_NAME,
+      name: authorName ?? AUTHOR_NAME,
       url: `${SITE_URL}/about`,
     },
     publisher: {
