@@ -238,9 +238,6 @@ const ArticleCollections = lazy(() =>
 const BookBundles = lazy(() =>
   import("./pages/BookBundles").then((m) => ({ default: m.BookBundles }))
 );
-const LeadMagnetsPage = lazy(() =>
-  import("./pages/LeadMagnets").then((m) => ({ default: m.LeadMagnetsPage }))
-);
 
 const AdminLogin = lazy(() => import("./pages/AdminLogin"));
 const AdminDashboard = lazy(() => import("./pages/AdminDashboard"));
@@ -397,7 +394,6 @@ function Router() {
         <Route path="/authors/:slug" component={AuthorProfile} />
         <Route path="/article-collections" component={ArticleCollections} />
         <Route path="/book-bundles" component={BookBundles} />
-        <Route path="/lead-magnets/:magnetId" component={LeadMagnetsPage} />
         <Route path="/resources/hard-issues-series" component={HardIssuesSeries} />
         <Route path="/resources/context/:slug" component={ContextGuide} />
         <Route path="/resources/context" component={ContextLibrary} />
