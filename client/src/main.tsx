@@ -11,7 +11,19 @@ import { getLoginUrl } from "./const";
 import "./index.css";
 import "./brand-override.css";
 
-const queryClient = new QueryClient();
+// Calm defaults: one retry instead of three (the retry storm on a cold API
+// was the dominant cause of the ~20 s lab Speed Index), five minutes of
+// staleness for content that changes weekly, and no refetch storm when the
+// reader tabs back to the page.
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: 1,
+      staleTime: 5 * 60 * 1000,
+      refetchOnWindowFocus: false,
+    },
+  },
+});
 
 const redirectToLoginIfUnauthorized = (error: unknown) => {
   if (!(error instanceof TRPCClientError)) return;

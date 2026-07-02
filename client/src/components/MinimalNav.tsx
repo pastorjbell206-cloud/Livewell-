@@ -28,6 +28,21 @@ import {
 import { SUBPATHWAY_BY_SLUG } from "@/lib/subpathwayMap.generated";
 import { HIDDEN_SLUGS } from "@/lib/hiddenSlugs";
 
+/**
+ * First-paint nav rows, synthesized once from the committed slug→sub-pathway
+ * map so the dropdowns exist before (and without) the posts.navIndex round
+ * trip. Same shape the procedure returns; the live rows replace these the
+ * moment they arrive.
+ */
+const NAV_PLACEHOLDER_ROWS = Object.entries(SUBPATHWAY_BY_SLUG)
+  .filter(([slug]) => !HIDDEN_SLUGS.has(slug))
+  .map(([slug, cat]) => ({
+    slug,
+    pillar: cat.pillar,
+    subPathway: cat.sub,
+    isSeries: cat.series,
+  }));
+
 interface DropdownItem {
   label: string;
   href: string;
@@ -181,9 +196,12 @@ export default function MinimalNav() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Live sub-pathway counts drive which dropdowns appear.
+  // Live sub-pathway counts drive which dropdowns appear. placeholderData
+  // (never written to the cache) paints them at first render from the
+  // committed map instead of blocking the header on the API.
   const navIndexQuery = trpc.posts.navIndex.useQuery(undefined, {
     staleTime: 5 * 60 * 1000,
+    placeholderData: NAV_PLACEHOLDER_ROWS,
   });
   const { counts, hasData } = useMemo(() => {
     const rows = navIndexQuery.data ?? [];

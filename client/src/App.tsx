@@ -2,17 +2,18 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
-import { Route, Switch, useLocation } from "wouter";
-import { Suspense, lazy, useEffect } from "react";
+import { Route, Router as WouterRouter, Switch, useLocation } from "wouter";
+import { useBrowserLocation } from "wouter/use-browser-location";
+import { Suspense, lazy, startTransition, useCallback, useEffect } from "react";
 import { JUSTICE, DISRUPTION } from "./lib/prophetic";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { ToastProvider } from "./contexts/ToastContext";
 import { ToastContainer } from "./components/ToastContainer";
 import Home from "./pages/Home";
-import Writing from "./pages/Writing";
+const Writing = lazy(() => import("./pages/Writing"));
 const ArticleDetail = lazy(() => import("./pages/ArticleDetail"));
-import Books from "./pages/Books";
+const Books = lazy(() => import("./pages/Books"));
 const BookDetail = lazy(() => import("./pages/BookDetail"));
 const AloneInACrowdedChurch = lazy(() => import("./pages/books/AloneInACrowdedChurch"));
 const AloneInACrowdedChurchThankYou = lazy(() => import("./pages/books/AloneInACrowdedChurchThankYou"));
@@ -283,14 +284,36 @@ function PageFallback() {
         minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: "10px",
         background: "var(--bone)",
-        textAlign: "center",
-        padding: "var(--s-4)",
       }}
     >
+      {/* Nav-band silhouette so the header's place holds while a route loads */}
+      <div
+        aria-hidden
+        style={{
+          height: "58px",
+          flexShrink: 0,
+          display: "flex",
+          alignItems: "center",
+          padding: "0 20px",
+          background: "rgba(245,240,230,0.97)",
+          borderBottom: "1px solid var(--border)",
+        }}
+      >
+        <span style={{ fontFamily: "var(--F)", fontSize: "20px", color: "var(--ink)" }}>LiveWell</span>
+      </div>
+      <div
+        style={{
+          flex: 1,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "10px",
+          textAlign: "center",
+          padding: "var(--s-4)",
+        }}
+      >
       <p
         style={{
           fontFamily: "var(--F)",
@@ -313,6 +336,7 @@ function PageFallback() {
       >
         Loading the page…
       </p>
+      </div>
     </div>
   );
 }
@@ -586,6 +610,24 @@ function Router() {
   );
 }
 
+/**
+ * wouter location hook with navigations wrapped in startTransition: React
+ * keeps the current page on screen while the next route's lazy chunk loads,
+ * instead of unmounting to the Suspense fallback between pages.
+ */
+function useTransitionLocation(): ReturnType<typeof useBrowserLocation> {
+  const [location, navigate] = useBrowserLocation();
+  const navigateInTransition = useCallback(
+    (to: string, opts?: { replace?: boolean; state?: unknown }) => {
+      startTransition(() => {
+        navigate(to, opts);
+      });
+    },
+    [navigate]
+  );
+  return [location, navigateInTransition as typeof navigate];
+}
+
 function App() {
   return (
     <ErrorBoundary>
@@ -594,7 +636,9 @@ function App() {
           <TooltipProvider>
             <Toaster />
             <ToastContainer />
-            <Router />
+            <WouterRouter hook={useTransitionLocation}>
+              <Router />
+            </WouterRouter>
           </TooltipProvider>
         </ToastProvider>
       </ThemeProvider>

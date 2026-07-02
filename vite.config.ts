@@ -151,9 +151,21 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       output: {
-        manualChunks: {
-          "vendor-react": ["react", "react-dom"],
-          "vendor-ui": ["@radix-ui/react-dialog", "@radix-ui/react-dropdown-menu", "@radix-ui/react-tabs", "@radix-ui/react-tooltip", "@radix-ui/react-select"],
+        // Function form: the object form only captured react-dom's tiny index
+        // shim (the real payload lives in react-dom/client's graph), leaving
+        // ~130 kB of react-dom in the entry chunk where every deploy busts
+        // its cache. Path-prefix matching pins the whole runtime.
+        manualChunks(id: string) {
+          if (
+            id.includes("node_modules/react-dom/") ||
+            id.includes("node_modules/react/") ||
+            id.includes("node_modules/scheduler/")
+          ) {
+            return "vendor-react";
+          }
+          if (id.includes("node_modules/@radix-ui/")) {
+            return "vendor-ui";
+          }
         },
       },
     },

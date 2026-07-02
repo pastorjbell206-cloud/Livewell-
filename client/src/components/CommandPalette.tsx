@@ -41,8 +41,11 @@ function resultPath(r: SearchResult): string {
   }
 }
 
-export default function CommandPalette() {
-  const [open, setOpen] = useState(false);
+export default function CommandPalette({ defaultOpen = false }: { defaultOpen?: boolean }) {
+  // defaultOpen lets Layout's lazy-mount open the palette on the same ⌘K
+  // that mounted it (this component's own listener attaches too late for
+  // that first press).
+  const [open, setOpen] = useState(defaultOpen);
   const [input, setInput] = useState("");
   const [query, setQuery] = useState("");
   const [, navigate] = useLocation();

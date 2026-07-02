@@ -9,16 +9,13 @@
     <meta name="author" content="James Bell" />
   
 
-    <!-- Preconnect to font hosts so first paint isn't blocked on DNS+TLS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Fonts: load explicitly in <head> with display=swap so the SPA boot
-         doesn't hold paint behind a blocking @import in index.css. -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap"
-    />
+    <!-- Fonts are self-hosted (client/public/fonts/, @font-face in index.css):
+         no third-party connection before first paint, no Google Fonts IP
+         disclosure. Preload only the two above-the-fold latin files; the rest
+         load on demand via unicode-range. Font preloads require crossorigin
+         even same-origin. -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/cormorant-garamond-400-latin.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-400-latin.woff2" crossorigin />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -49,7 +46,18 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Static brand shell: paints as soon as the (render-blocking, local)
+           CSS arrives and long before the JS bundle runs, so a deep link on a
+           slow phone shows the masthead instead of blank cream. React replaces
+           it on mount. Tokens come from :root in the built CSS. -->
+      <div style="min-height:100vh;background:var(--bone,#F5F0E6)">
+        <div style="height:58px;display:flex;align-items:center;padding:0 20px;background:rgba(245,240,230,.97);border-bottom:1px solid var(--border,#D9D3C4)">
+          <span style="font-family:var(--F,Georgia,serif);font-size:20px;color:var(--ink,#14110C)">LiveWell</span>
+          <span style="font-family:var(--U,sans-serif);font-size:9px;letter-spacing:.18em;color:var(--ink-muted,#5A5448);margin-left:10px">BY JAMES BELL</span>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
