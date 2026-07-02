@@ -23,7 +23,7 @@ export default function IllustrationLibrary() {
   const [saved, setSaved] = useState<string[]>([]);
 
   useEffect(() => {
-    fetch("/leadership/illustrations.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).then((d) => d && setItems(d.illustrations || d)).catch(() => {});
+    fetch("/leadership/illustrations.json").then((r) => (r.ok ? r.json() : null)).then((d) => d && setItems(d.illustrations || d)).catch(() => {});
     try { const raw = localStorage.getItem(KEY); if (raw) setSaved(JSON.parse(raw)); } catch { /* ignore */ }
   }, []);
 

@@ -24,7 +24,7 @@ export default function NationScorecard() {
   const [open, setOpen] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/nation/scorecard.json", { cache: "no-store" })
+    fetch("/nation/scorecard.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => { if (d) { setData(d); setOpen(d.themes?.[0]?.name ?? null); } })
       .catch(() => {});

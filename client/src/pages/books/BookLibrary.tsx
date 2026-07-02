@@ -17,7 +17,7 @@ interface Entry { slug: string; title: string; subtitle?: string; blurb?: string
 export default function BookLibrary() {
   const [books, setBooks] = useState<Entry[]>([]);
   useEffect(() => {
-    fetch("/books/index.json", { cache: "no-store" })
+    fetch("/books/index.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d?.books && setBooks(d.books))
       .catch(() => {});

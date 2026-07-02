@@ -22,7 +22,7 @@ export default function PropheticConsistency({ config }: { config: SectionConfig
   const [marked, setMarked] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
-    fetch(`${config.base}/consistency-check.json`, { cache: "no-store" })
+    fetch(`${config.base}/consistency-check.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setData(d))
       .catch(() => {});

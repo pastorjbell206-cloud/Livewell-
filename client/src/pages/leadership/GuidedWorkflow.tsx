@@ -30,7 +30,7 @@ export default function GuidedWorkflow() {
   useEffect(() => {
     if (!slug) return;
     setData(null); setAnswers({});
-    fetch(`/leadership/workflows/${slug}.json`, { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).then((d) => { if (d) { setData(d); setOpen(d.stages?.[0]?.id ?? null); } }).catch(() => {});
+    fetch(`/leadership/workflows/${slug}.json`).then((r) => (r.ok ? r.json() : null)).then((d) => { if (d) { setData(d); setOpen(d.stages?.[0]?.id ?? null); } }).catch(() => {});
     try { const raw = localStorage.getItem(`livewell-workflow-${slug}`); if (raw) setAnswers(JSON.parse(raw)); } catch { /* ignore */ }
   }, [slug]);
 

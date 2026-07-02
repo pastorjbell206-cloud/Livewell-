@@ -33,7 +33,7 @@ export default function WholeBibleSermons() {
   const bookId = params?.bookId;
 
   useEffect(() => {
-    fetch("/leadership/whole-bible-sermons.json", { cache: "no-store" })
+    fetch("/leadership/whole-bible-sermons.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setData(d))
       .catch(() => {});
@@ -43,7 +43,7 @@ export default function WholeBibleSermons() {
   useEffect(() => {
     setFullSermons({});
     if (!bookId) return;
-    fetch(`/leadership/sermons/${bookId}.json`, { cache: "no-store" })
+    fetch(`/leadership/sermons/${bookId}.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((arr) => {
         if (!Array.isArray(arr)) return;

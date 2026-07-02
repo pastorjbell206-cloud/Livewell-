@@ -21,7 +21,7 @@ export default function LeadershipLibrary() {
   const [group, setGroup] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/leadership/articles-index.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).then((d) => d && setItems(d.articles || d)).catch(() => {});
+    fetch("/leadership/articles-index.json").then((r) => (r.ok ? r.json() : null)).then((d) => d && setItems(d.articles || d)).catch(() => {});
   }, []);
 
   const groups = useMemo(() => Array.from(new Set(items.map((i) => i.group))).sort(), [items]);

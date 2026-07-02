@@ -20,7 +20,7 @@ export default function MarriageInMinistry() {
   const [sample, setSample] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/books/marriage-in-ministry-sample.md", { cache: "no-store" })
+    fetch("/books/marriage-in-ministry-sample.md")
       .then((r) => (r.ok ? r.text() : Promise.reject(new Error("not found"))))
       .then((md) => setSample(md.trim()))
       .catch(() => setSample(""));

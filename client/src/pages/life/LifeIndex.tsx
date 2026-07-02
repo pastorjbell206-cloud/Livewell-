@@ -26,7 +26,7 @@ export default function LifeIndex() {
   const [items, setItems] = useState<Entry[]>([]);
 
   useEffect(() => {
-    fetch("/life/domains-index.json", { cache: "no-store" })
+    fetch("/life/domains-index.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setItems(d.domains || []))
       .catch(() => {});

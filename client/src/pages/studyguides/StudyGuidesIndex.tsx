@@ -17,7 +17,7 @@ export default function StudyGuidesIndex() {
   // to the bundled list if the manifest has not been built yet.
   const [guides, setGuides] = useState<StudyGuideEntry[]>(STUDY_GUIDES);
   useEffect(() => {
-    fetch("/studyguides/index.json", { cache: "no-store" })
+    fetch("/studyguides/index.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => { if (d?.guides?.length) setGuides(d.guides); })
       .catch(() => {});

@@ -21,7 +21,7 @@ export default function TheologyCompare() {
 
   useEffect(() => {
     setDoc(null);
-    fetch(`/theology/${slug}.json`, { cache: "no-store" })
+    fetch(`/theology/${slug}.json`)
       .then((r) => (r.ok ? r.json() : Promise.reject()))
       .then(setDoc)
       .catch(() => setDoc(null));

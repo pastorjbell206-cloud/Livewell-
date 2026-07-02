@@ -25,7 +25,7 @@ export default function HistoryEssay() {
   useEffect(() => {
     if (!slug) return;
     setData(null); setMissing(false);
-    fetch(`/history/essays/${slug}.json`, { cache: "no-store" })
+    fetch(`/history/essays/${slug}.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => (d ? setData(d) : setMissing(true)))
       .catch(() => setMissing(true));

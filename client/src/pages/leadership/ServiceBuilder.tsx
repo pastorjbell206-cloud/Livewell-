@@ -28,7 +28,7 @@ export default function ServiceBuilder() {
     if (!slug) return;
     let saved: State | null = null;
     try { const raw = localStorage.getItem(`livewell-service-${slug}`); if (raw) saved = JSON.parse(raw); } catch { /* ignore */ }
-    fetch(`/leadership/services/${slug}.json`, { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).then((d: Data | null) => {
+    fetch(`/leadership/services/${slug}.json`).then((r) => (r.ok ? r.json() : null)).then((d: Data | null) => {
       if (!d) return;
       setData(d);
       if (saved) { setSt(saved); return; }

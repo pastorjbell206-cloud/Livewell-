@@ -32,7 +32,7 @@ export default function FormationIndex() {
   const [items, setItems] = useState<Entry[]>([]);
 
   useEffect(() => {
-    fetch("/leadership/formation-index.json", { cache: "no-store" })
+    fetch("/leadership/formation-index.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setItems(d.topics || []))
       .catch(() => {});

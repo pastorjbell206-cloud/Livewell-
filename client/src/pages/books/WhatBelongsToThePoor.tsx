@@ -20,7 +20,7 @@ export default function WhatBelongsToThePoor() {
   const [sample, setSample] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/books/what-belongs-to-the-poor-sample.md", { cache: "no-store" })
+    fetch("/books/what-belongs-to-the-poor-sample.md")
       .then((r) => (r.ok ? r.text() : Promise.reject(new Error("not found"))))
       .then((md) => setSample(md.trim()))
       .catch(() => setSample(""));

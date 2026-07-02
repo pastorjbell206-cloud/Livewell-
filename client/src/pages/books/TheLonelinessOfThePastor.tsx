@@ -20,7 +20,7 @@ export default function TheLonelinessOfThePastor() {
   const [sample, setSample] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/books/the-loneliness-of-the-pastor-sample.md", { cache: "no-store" })
+    fetch("/books/the-loneliness-of-the-pastor-sample.md")
       .then((r) => (r.ok ? r.text() : Promise.reject(new Error("not found"))))
       .then((md) => setSample(md.trim()))
       .catch(() => setSample(""));

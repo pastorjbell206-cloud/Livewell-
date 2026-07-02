@@ -29,7 +29,7 @@ export default function TheologySearch() {
   });
 
   useEffect(() => {
-    const get = (f: string) => fetch(f, { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+    const get = (f: string) => fetch(f).then((r) => (r.ok ? r.json() : null)).catch(() => null);
     Promise.all([
       get("/theology/passage-notes.json"),
       get("/theology/theology-glossary.json"),

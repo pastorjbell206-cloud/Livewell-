@@ -25,7 +25,7 @@ export default function TheologyDiagnostic() {
   const [answers, setAnswers] = useState<Record<number, number>>({});
 
   useEffect(() => {
-    fetch("/theology/theology-diagnostics.json", { cache: "no-store" })
+    fetch("/theology/theology-diagnostics.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d?.quizzes && setQuizzes(d.quizzes))
       .catch(() => {});

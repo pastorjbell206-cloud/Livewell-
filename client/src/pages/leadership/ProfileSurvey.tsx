@@ -36,7 +36,7 @@ export default function ProfileSurvey() {
   useEffect(() => {
     if (!slug) return;
     setData(null); setAnswers({}); setSubmitted(false);
-    fetch(`/leadership/surveys/${slug}.json`, { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).then((d) => d && setData(d)).catch(() => {});
+    fetch(`/leadership/surveys/${slug}.json`).then((r) => (r.ok ? r.json() : null)).then((d) => d && setData(d)).catch(() => {});
   }, [slug]);
 
   const max = data ? data.scale.length : 5;

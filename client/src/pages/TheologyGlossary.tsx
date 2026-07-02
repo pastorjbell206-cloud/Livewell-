@@ -20,7 +20,7 @@ export default function TheologyGlossary() {
   const [q, setQ] = useState("");
 
   useEffect(() => {
-    fetch("/theology/theology-glossary.json", { cache: "no-store" })
+    fetch("/theology/theology-glossary.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d?.terms && setTerms(d.terms))
       .catch(() => {});

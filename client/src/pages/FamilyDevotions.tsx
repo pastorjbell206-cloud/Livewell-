@@ -30,10 +30,10 @@ export default function FamilyDevotions() {
 
   useEffect(() => {
     Promise.all([
-      fetch("/family-devotions.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : [])).catch(() => []),
-      fetch("/family-devotions-2.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : [])).catch(() => []),
+      fetch("/family-devotions.json").then((r) => (r.ok ? r.json() : [])).catch(() => []),
+      fetch("/family-devotions-2.json").then((r) => (r.ok ? r.json() : [])).catch(() => []),
     ]).then(([a, b]) => setWeekly([...(Array.isArray(a) ? a : []), ...(Array.isArray(b) ? b : [])]));
-    fetch("/family-seasonal.json", { cache: "no-store" })
+    fetch("/family-seasonal.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => { if (d) { setAdvent(d.advent ?? []); setHolyWeek(d.holyWeek ?? []); } })
       .catch(() => {});

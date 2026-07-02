@@ -30,7 +30,7 @@ export default function PropheticTimeline() {
   const [filter, setFilter] = useState<string>("all");
 
   useEffect(() => {
-    fetch("/justice/timeline.json", { cache: "no-store" })
+    fetch("/justice/timeline.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setData(d))
       .catch(() => {});

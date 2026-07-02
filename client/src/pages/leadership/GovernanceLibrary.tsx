@@ -22,7 +22,7 @@ export default function GovernanceLibrary() {
   const [open, setOpen] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/leadership/governance.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).then((d) => { if (d) { setData(d); setOpen(d.categories?.[0]?.policies?.[0]?.id ?? null); } }).catch(() => {});
+    fetch("/leadership/governance.json").then((r) => (r.ok ? r.json() : null)).then((d) => { if (d) { setData(d); setOpen(d.categories?.[0]?.policies?.[0]?.id ?? null); } }).catch(() => {});
   }, []);
 
   return (

@@ -30,7 +30,7 @@ export default function BookReader() {
   useEffect(() => {
     if (!slug) return;
     setBook(null); setMissing(false);
-    fetch(`/books/${slug}.json`, { cache: "no-store" })
+    fetch(`/books/${slug}.json`)
       .then((r) => (r.ok ? r.json() : Promise.reject()))
       .then((d) => (d?.chapters ? setBook(d) : setMissing(true)))
       .catch(() => setMissing(true));

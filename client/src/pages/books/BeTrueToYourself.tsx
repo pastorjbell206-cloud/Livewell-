@@ -20,7 +20,7 @@ export default function BeTrueToYourself() {
   const [sample, setSample] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/books/be-true-to-yourself-sample.md", { cache: "no-store" })
+    fetch("/books/be-true-to-yourself-sample.md")
       .then((r) => (r.ok ? r.text() : Promise.reject(new Error("not found"))))
       .then((md) => setSample(md.trim()))
       .catch(() => setSample(""));

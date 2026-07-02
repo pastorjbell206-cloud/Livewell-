@@ -50,7 +50,7 @@ export default function CarePlan() {
     if (!slug) return;
     setData(null); setMissing(false);
     setProgress(loadProgress(slug));
-    fetch(`/plans/${slug}.json`, { cache: "no-store" })
+    fetch(`/plans/${slug}.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => (d ? setData(d) : setMissing(true)))
       .catch(() => setMissing(true));

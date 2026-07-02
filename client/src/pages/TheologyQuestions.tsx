@@ -25,7 +25,7 @@ export default function TheologyQuestions() {
   const [open, setOpen] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/theology/questions.json", { cache: "no-store" })
+    fetch("/theology/questions.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d?.questions && setQuestions(d.questions))
       .catch(() => {});

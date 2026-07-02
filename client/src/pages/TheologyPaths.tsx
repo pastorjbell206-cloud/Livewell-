@@ -20,7 +20,7 @@ export default function TheologyPaths() {
   const [open, setOpen] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/theology/paths.json", { cache: "no-store" })
+    fetch("/theology/paths.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => { if (d?.paths) { setPaths(d.paths); setOpen(d.paths[0]?.id ?? null); } })
       .catch(() => {});

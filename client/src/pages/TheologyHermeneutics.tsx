@@ -21,7 +21,7 @@ export default function TheologyHermeneutics() {
   const [tab, setTab] = useState<"principles" | "errors">("principles");
 
   useEffect(() => {
-    fetch("/theology/theology-hermeneutics.json", { cache: "no-store" })
+    fetch("/theology/theology-hermeneutics.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setData(d))
       .catch(() => {});

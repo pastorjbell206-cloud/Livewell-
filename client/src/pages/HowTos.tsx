@@ -39,7 +39,7 @@ export default function HowTos() {
   useEffect(() => {
     const q = typeof window !== "undefined" ? new URLSearchParams(window.location.search).get("topic") : null;
     if (q) setActive(q);
-    fetch("/howtos/index.json", { cache: "no-store" })
+    fetch("/howtos/index.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setItems(d.articles || []))
       .catch(() => {});

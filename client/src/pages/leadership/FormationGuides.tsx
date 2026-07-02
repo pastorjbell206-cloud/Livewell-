@@ -29,7 +29,7 @@ export default function FormationGuides() {
   const slug = params?.slug;
 
   useEffect(() => {
-    fetch("/leadership/formation-guides.json", { cache: "no-store" })
+    fetch("/leadership/formation-guides.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setGuides(d.guides))
       .catch(() => {});

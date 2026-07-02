@@ -18,7 +18,7 @@ const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 export default function PropheticWitnesses({ config }: { config: SectionConfig }) {
   const [data, setData] = useState<Data | null>(null);
   useEffect(() => {
-    fetch(`${config.base}/witnesses.json`, { cache: "no-store" })
+    fetch(`${config.base}/witnesses.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setData(d))
       .catch(() => {});

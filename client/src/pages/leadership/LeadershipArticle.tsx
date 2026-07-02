@@ -26,7 +26,7 @@ export default function LeadershipArticle() {
     setData(null);
     setMissing(false);
     setRelated([]);
-    fetch(`/leadership/articles/${slug}.json`, { cache: "no-store" })
+    fetch(`/leadership/articles/${slug}.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => (d ? setData(d) : setMissing(true)))
       .catch(() => setMissing(true));

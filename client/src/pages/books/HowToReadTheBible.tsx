@@ -20,7 +20,7 @@ export default function HowToReadTheBible() {
   const [sample, setSample] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/books/how-to-read-the-bible-sample.md", { cache: "no-store" })
+    fetch("/books/how-to-read-the-bible-sample.md")
       .then((r) => (r.ok ? r.text() : Promise.reject(new Error("not found"))))
       .then((md) => setSample(md.trim()))
       .catch(() => setSample(""));

@@ -43,7 +43,7 @@ export default function LifeDomain() {
     if (!slug) return;
     setData(null);
     setMissing(false);
-    fetch(`/life/domains/${slug}.json`, { cache: "no-store" })
+    fetch(`/life/domains/${slug}.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => (d ? setData(d) : setMissing(true)))
       .catch(() => setMissing(true));

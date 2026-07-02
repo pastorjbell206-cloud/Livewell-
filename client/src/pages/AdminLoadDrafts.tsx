@@ -40,7 +40,7 @@ export default function AdminLoadDrafts() {
       // Also include any Substack imports (publishing a slug not in the DB is a
       // harmless no-op, so this safely covers them once they've been imported).
       try {
-        const r = await fetch("/api/rss/substack", { cache: "no-store" });
+        const r = await fetch("/api/rss/substack");
         const d = await r.json();
         for (const it of (d?.items ?? [])) {
           const m = String(it.link || "").match(/\/p\/([^/?#]+)/);
@@ -78,7 +78,7 @@ export default function AdminLoadDrafts() {
     const out: DraftItem[] = [];
     for (const src of sources) {
       try {
-        const resp = await fetch(src, { cache: "no-store" });
+        const resp = await fetch(src);
         if (resp.ok) out.push(...(await resp.json()));
       } catch { /* a missing source is fine */ }
     }

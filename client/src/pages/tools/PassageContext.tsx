@@ -124,8 +124,8 @@ export default function PassageContext() {
   const [showFull, setShowFull] = useState(false);
 
   useEffect(() => {
-    fetch("/theology/bible-books.json", { cache: "no-store" }).then((r) => r.json()).then(setData).catch(() => {});
-    fetch("/theology/passage-notes.json", { cache: "no-store" }).then((r) => r.json()).then(setNotes).catch(() => {});
+    fetch("/theology/bible-books.json").then((r) => r.json()).then(setData).catch(() => {});
+    fetch("/theology/passage-notes.json").then((r) => r.json()).then(setNotes).catch(() => {});
   }, []);
 
   const books = data?.books ?? [];

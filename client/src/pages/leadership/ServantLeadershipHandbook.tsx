@@ -23,7 +23,7 @@ export default function ServantLeadershipHandbook() {
   const [chapters, setChapters] = useState<Chapter[] | null>(null);
 
   useEffect(() => {
-    fetch("/leadership/servant-leadership-handbook.json", { cache: "no-store" })
+    fetch("/leadership/servant-leadership-handbook.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setChapters(d.chapters))
       .catch(() => {});

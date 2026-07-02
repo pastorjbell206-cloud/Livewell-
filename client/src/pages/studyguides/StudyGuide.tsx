@@ -89,7 +89,7 @@ export default function StudyGuide() {
   useEffect(() => {
     if (!slug) return;
     setData(null); setMissing(false);
-    fetch(`/studyguides/${slug}.json`, { cache: "no-store" })
+    fetch(`/studyguides/${slug}.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => (d ? setData(d) : setMissing(true)))
       .catch(() => setMissing(true));

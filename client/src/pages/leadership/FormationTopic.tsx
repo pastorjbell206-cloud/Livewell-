@@ -55,7 +55,7 @@ export default function FormationTopic() {
     if (!slug) return;
     setData(null);
     setMissing(false);
-    fetch(`/leadership/formation/${slug}.json`, { cache: "no-store" })
+    fetch(`/leadership/formation/${slug}.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => (d ? setData(d) : setMissing(true)))
       .catch(() => setMissing(true));

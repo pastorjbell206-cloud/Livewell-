@@ -52,7 +52,7 @@ export default function WisdomFinder() {
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
-    fetch("/wisdom/topics.json", { cache: "no-store" })
+    fetch("/wisdom/topics.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setTopics(d.topics || []))
       .catch(() => {});

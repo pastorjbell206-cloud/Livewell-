@@ -30,7 +30,7 @@ export default function HowToArticle() {
     if (!slug) return;
     setArticle(null);
     setMissing(false);
-    fetch(`/howtos/a/${slug}.json`, { cache: "no-store" })
+    fetch(`/howtos/a/${slug}.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => (d ? setArticle(d) : setMissing(true)))
       .catch(() => setMissing(true));
