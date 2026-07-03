@@ -22,6 +22,11 @@ const eyebrow: React.CSSProperties = {
 interface Chapter { n: number; slug?: string; title: string; summary?: string; verdict?: string; body: string; reflect?: string[] }
 interface Book { title: string; subtitle?: string; blurb?: string; pillar?: string; chapters: Chapter[] }
 
+// These titles are sold as paid ebooks; their downloads go through checkout,
+// so the free reader offers no PDF for them. Every other library book has a
+// PDF generated from its chapters by scripts/build-pdfs.mjs.
+const PAID_BOOK_SLUGS = new Set(["born-again-from-atheism", "the-god-who-is-not-nice"]);
+
 export default function BookReader() {
   const [, params] = useRoute("/read/:slug");
   const slug = params?.slug;
@@ -71,6 +76,19 @@ export default function BookReader() {
           </h1>
           {book?.subtitle && <p style={{ fontFamily: "var(--F)", fontSize: "21px", fontStyle: "italic", color: "rgba(245,240,230,.82)", margin: "0 0 18px", maxWidth: "40ch" }}>{book.subtitle}</p>}
           {book?.blurb && <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,.82)", maxWidth: "60ch" }}>{book.blurb}</p>}
+          {book && slug && !PAID_BOOK_SLUGS.has(slug) && (
+            <a
+              href={`/downloads/books/${slug}.pdf`}
+              style={{
+                display: "inline-block", marginTop: "22px", padding: "12px 22px",
+                background: "var(--mustard)", color: "var(--ink)", textDecoration: "none",
+                fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600,
+                borderRadius: "var(--radius-sm)",
+              }}
+            >
+              Download the PDF
+            </a>
+          )}
         </div>
       </section>
 
