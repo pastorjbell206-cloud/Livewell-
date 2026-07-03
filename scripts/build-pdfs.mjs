@@ -28,6 +28,8 @@ const OUT_CONTEXT = path.join(ROOT, "client/public/downloads/context");
 const OUT_SERIES = path.join(ROOT, "client/public/downloads/sermon-series");
 const STUDYGUIDES_DIR = path.join(ROOT, "client/public/studyguides");
 const OUT_STUDYGUIDES = path.join(ROOT, "client/public/downloads/studyguides");
+const BOOKS_DIR = path.join(ROOT, "client/public/books");
+const OUT_BOOKS = path.join(ROOT, "client/public/downloads/books");
 
 // Palette (print-safe subset of the brand tokens)
 const INK = "#14110C";
@@ -42,13 +44,13 @@ const MARGIN = 72;
 // the whole downloads/ tree even when nothing changed.
 const FIXED_DATE = new Date("2026-01-01T00:00:00Z");
 
-function newDoc(meta) {
+function newDoc(meta = {}) {
   return new PDFDocument({
     size: "LETTER",
     margins: { top: MARGIN, bottom: MARGIN, left: MARGIN, right: MARGIN },
     bufferPages: true,
     info: {
-      Title: meta.title, Author: "James Bell", Creator: "LiveWell by James Bell",
+      Title: meta.Title || meta.title, Author: "James Bell", Creator: "LiveWell by James Bell",
       CreationDate: FIXED_DATE, ModDate: FIXED_DATE,
     },
   });
@@ -343,6 +345,55 @@ function writePdf(outPath, build, meta) {
 }
 
 // ---------------------------------------------------------------------------
+// Books — the free reading library, one PDF per book, built from chapters
+// ---------------------------------------------------------------------------
+
+// Books sold as paid ebooks never get a free PDF, whatever the library holds.
+const PAID_BOOK_SLUGS = new Set(["born-again-from-atheism", "the-god-who-is-not-nice"]);
+
+async function buildBook(book) {
+  const outPath = path.join(OUT_BOOKS, `${book.slug}.pdf`);
+  await writePdf(outPath, (doc) => {
+    coverPage(doc, {
+      kicker: `LiveWell Books · ${book.pillar || "The Library"}`,
+      title: book.title,
+      subtitle: book.subtitle,
+    });
+
+    // Contents
+    sectionHeading(doc, { kicker: "Contents", title: book.title });
+    for (const ch of book.chapters || []) {
+      doc.font("Times-Roman").fontSize(11).fillColor(INK)
+        .text(`${ch.n}.  ${ch.title}`, { lineGap: 3 });
+      doc.moveDown(0.25);
+    }
+
+    for (const ch of book.chapters || []) {
+      doc.addPage();
+      sectionHeading(doc, { kicker: `Chapter ${ch.n}`, title: ch.title });
+      bodyParagraphs(doc, ch.body || "");
+      if (ch.verdict) {
+        doc.moveDown(0.3);
+        thinRule(doc, RULE, 0.5);
+        doc.moveDown(0.7);
+        doc.font("Times-Italic").fontSize(11.5).fillColor(INK)
+          .text(ch.verdict, { lineGap: 4 });
+        doc.moveDown(0.7);
+      }
+      if (Array.isArray(ch.reflect) && ch.reflect.length) {
+        listHeading(doc, "For reflection");
+        for (const q of ch.reflect) {
+          doc.font("Times-Roman").fontSize(10.5).fillColor(INK)
+            .text(q, { lineGap: 3.5, indent: 0 });
+          doc.moveDown(0.45);
+        }
+      }
+    }
+  }, { Title: book.title, Author: "James Bell" });
+  return outPath;
+}
+
+// ---------------------------------------------------------------------------
 // Context guides
 // ---------------------------------------------------------------------------
 
@@ -456,8 +507,20 @@ async function main() {
   fs.mkdirSync(OUT_CONTEXT, { recursive: true });
   fs.mkdirSync(OUT_SERIES, { recursive: true });
   fs.mkdirSync(OUT_STUDYGUIDES, { recursive: true });
+  fs.mkdirSync(OUT_BOOKS, { recursive: true });
 
   const written = [];
+
+  // Free reading-library books (chapter files referenced by books/index.json)
+  const bookIndex = JSON.parse(fs.readFileSync(path.join(BOOKS_DIR, "index.json"), "utf8"));
+  const bookList = Array.isArray(bookIndex) ? bookIndex : bookIndex.books || [];
+  for (const entry of bookList) {
+    if (PAID_BOOK_SLUGS.has(entry.slug)) continue;
+    const file = path.join(BOOKS_DIR, `${entry.slug}.json`);
+    if (!fs.existsSync(file)) continue;
+    const book = { slug: entry.slug, ...JSON.parse(fs.readFileSync(file, "utf8")) };
+    written.push(await buildBook(book));
+  }
 
   if (fs.existsSync(STUDYGUIDES_DIR)) {
     const sgFiles = fs.readdirSync(STUDYGUIDES_DIR).filter((f) => f.endsWith(".json") && f !== "index.json").sort();

@@ -665,7 +665,7 @@ export default function Books() {
                 When God Bless America Replaces Thy Kingdom Come
               </h2>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
-                How Patriotism Became Our Practical Savior — available now for $8.99.
+                How Patriotism Became Our Practical Savior — available now for $9.99.
               </p>
             </div>
             <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>

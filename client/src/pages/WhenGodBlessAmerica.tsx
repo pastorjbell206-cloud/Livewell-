@@ -142,7 +142,7 @@ export default function WhenGodBlessAmerica() {
             Read it now
           </h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,.8)", maxWidth: "52ch", margin: "0 auto 28px" }}>
-            $8.99 for the complete ebook — EPUB for your e-reader and PDF for everything else, delivered the moment you check out.
+            $9.99 for the complete ebook — EPUB for your e-reader and PDF for everything else, delivered the moment you check out.
           </p>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <StripeBuyButton />
