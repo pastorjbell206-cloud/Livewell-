@@ -16,12 +16,34 @@ export default function AdminDashboard() {
   type ContactMsg = { id: number; name: string | null; email: string; subject: string | null; message: string; createdAt: string };
   const [messages, setMessages] = useState<ContactMsg[] | null>(null);
   const [messagesError, setMessagesError] = useState(false);
+  type Metrics = {
+    audience: { subscribers: number; newThisMonth: number };
+    sales: {
+      orders: number; revenueCents: number; currency: string;
+      byBook: { slug: string; title: string; orders: number; revenueCents: number }[];
+      recent: { slug: string; title: string; email: string | null; amountTotal: number | null; createdAt: string }[];
+    };
+    catalog: { publishedPosts: number; publishedBooks: number };
+  };
+  const [metrics, setMetrics] = useState<Metrics | null>(null);
+  const [metricsError, setMetricsError] = useState(false);
+  const money = (cents: number, cur = "usd") =>
+    new Intl.NumberFormat("en-US", { style: "currency", currency: (cur || "usd").toUpperCase() }).format((cents || 0) / 100);
   useEffect(() => {
     let active = true;
     fetch("/api/admin/contact-messages", { credentials: "include" })
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
       .then((d) => active && setMessages(Array.isArray(d?.messages) ? d.messages : []))
       .catch(() => active && setMessagesError(true));
+    return () => { active = false; };
+  }, []);
+
+  useEffect(() => {
+    let active = true;
+    fetch("/api/admin/metrics", { credentials: "include" })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((d) => active && d?.ok && setMetrics(d))
+      .catch(() => active && setMetricsError(true));
     return () => { active = false; };
   }, []);
 
@@ -120,6 +142,65 @@ export default function AdminDashboard() {
               </Link>
             );
           })}
+        </div>
+
+        {/* Business at a glance — audience, sales, and catalog in plain numbers.
+            Reads /api/admin/metrics (subscribers + purchases tables). */}
+        <div className="mb-12">
+          <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "#1A1A1A" }}>Business at a glance</h2>
+          <p className="font-body text-sm mb-4" style={{ color: "#6B7280" }}>
+            The numbers that matter: who is on the list, what has sold, and how much is published. Depth metrics
+            (essays finished, returning readers) will land here once reading events are instrumented.
+          </p>
+          {metricsError && (
+            <p className="font-body text-sm" style={{ color: "#9B2C2C" }}>
+              Couldn&rsquo;t load metrics (needs the production API and an admin session).
+            </p>
+          )}
+          {!metrics && !metricsError && (
+            <p className="font-body text-sm" style={{ color: "#6B7280" }}><Loader2 size={16} className="animate-spin inline" /> Loading…</p>
+          )}
+          {metrics && (
+            <>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+                {[
+                  { label: "Subscribers", value: String(metrics.audience.subscribers), sub: `+${metrics.audience.newThisMonth} in 30 days`, color: "#2D4A3E" },
+                  { label: "Ebooks sold", value: String(metrics.sales.orders), sub: "paid orders", color: "#B8963E" },
+                  { label: "Revenue", value: money(metrics.sales.revenueCents, metrics.sales.currency), sub: "gross, all ebooks", color: "#2C3E50" },
+                  { label: "Published", value: String(metrics.catalog.publishedPosts + metrics.catalog.publishedBooks), sub: `${metrics.catalog.publishedPosts} essays · ${metrics.catalog.publishedBooks} books`, color: "#6B4E9E" },
+                ].map((m) => (
+                  <div key={m.label} className="flex flex-col p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF", borderTop: `5px solid ${m.color}`, boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
+                    <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>{m.label}</div>
+                    <div className="font-display font-bold" style={{ color: m.color, fontSize: "2.4rem", lineHeight: 1 }}>{m.value}</div>
+                    <div className="font-ui text-xs mt-2" style={{ color: "#9CA3AF" }}>{m.sub}</div>
+                  </div>
+                ))}
+              </div>
+              {metrics.sales.byBook.length > 0 && (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div style={{ background: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: "8px", padding: "16px 18px" }}>
+                    <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>Top sellers</div>
+                    {metrics.sales.byBook.slice(0, 6).map((b) => (
+                      <div key={b.slug} className="flex items-center justify-between py-1" style={{ fontFamily: "var(--U)", fontSize: "14px" }}>
+                        <span style={{ color: "#1A1A1A" }}>{b.title}</span>
+                        <span style={{ color: "#6B7280" }}>{b.orders} · {money(b.revenueCents, metrics.sales.currency)}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div style={{ background: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: "8px", padding: "16px 18px" }}>
+                    <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>Recent orders</div>
+                    {metrics.sales.recent.length === 0 && <div className="font-body text-sm" style={{ color: "#9CA3AF" }}>No orders yet.</div>}
+                    {metrics.sales.recent.slice(0, 6).map((r, i) => (
+                      <div key={i} className="flex items-center justify-between py-1" style={{ fontFamily: "var(--U)", fontSize: "13px" }}>
+                        <span style={{ color: "#1A1A1A" }}>{r.title}</span>
+                        <span style={{ color: "#6B7280" }}>{r.email || "—"} · {new Date(r.createdAt).toLocaleDateString()}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </>
+          )}
         </div>
 
         {/* Contact inbox — messages people sent through /api/contact.

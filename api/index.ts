@@ -3014,6 +3014,41 @@ async function stripeWebhook(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+// Read-only owner metrics for the admin dashboard: audience (subscribers), sales
+// (orders + revenue from the purchases table, by book and recent), and catalog
+// counts. Every table read is guarded so a fresh install never 500s. Reading-depth
+// events (essays finished, returns) require client instrumentation not yet present.
+async function adminMetrics(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  try {
+    const out = await withConn(async (c) => {
+      const has = async (t: string): Promise<boolean> => {
+        try { const [r]: any = await c.query("SHOW TABLES LIKE ?", [t]); return Array.isArray(r) && r.length > 0; } catch { return false; }
+      };
+      const result: any = {
+        audience: { subscribers: 0, newThisMonth: 0 },
+        sales: { orders: 0, revenueCents: 0, currency: "usd", byBook: [] as any[], recent: [] as any[] },
+        catalog: { publishedPosts: 0, publishedBooks: 0 },
+      };
+      if (await has("subscribers")) {
+        try { const [r]: any = await c.query("SELECT COUNT(*) AS n FROM subscribers"); result.audience.subscribers = Number(r?.[0]?.n ?? 0); } catch { /* noop */ }
+        try { const [r]: any = await c.query("SELECT COUNT(*) AS n FROM subscribers WHERE createdAt >= DATE_SUB(NOW(), INTERVAL 30 DAY)"); result.audience.newThisMonth = Number(r?.[0]?.n ?? 0); } catch { /* noop */ }
+      }
+      if (await has("purchases")) {
+        try { const [r]: any = await c.query("SELECT COUNT(*) AS n, COALESCE(SUM(amountTotal),0) AS rev, MAX(currency) AS cur FROM purchases"); result.sales.orders = Number(r?.[0]?.n ?? 0); result.sales.revenueCents = Number(r?.[0]?.rev ?? 0); result.sales.currency = r?.[0]?.cur || "usd"; } catch { /* noop */ }
+        try { const [rows]: any = await c.query("SELECT slug, COUNT(*) AS orders, COALESCE(SUM(amountTotal),0) AS rev FROM purchases GROUP BY slug ORDER BY orders DESC"); result.sales.byBook = (rows as any[]).map((x) => ({ slug: x.slug, title: EBOOKS[x.slug]?.title || x.slug, orders: Number(x.orders), revenueCents: Number(x.rev) })); } catch { /* noop */ }
+        try { const [rows]: any = await c.query("SELECT slug, email, amountTotal, createdAt FROM purchases ORDER BY createdAt DESC LIMIT 10"); result.sales.recent = (rows as any[]).map((x) => ({ slug: x.slug, title: EBOOKS[x.slug]?.title || x.slug, email: x.email, amountTotal: x.amountTotal, createdAt: x.createdAt })); } catch { /* noop */ }
+      }
+      if (await has("posts")) { try { const [r]: any = await c.query("SELECT COUNT(*) AS n FROM posts WHERE published = true"); result.catalog.publishedPosts = Number(r?.[0]?.n ?? 0); } catch { /* noop */ } }
+      if (await has("books")) { try { const [r]: any = await c.query("SELECT COUNT(*) AS n FROM books WHERE published = true"); result.catalog.publishedBooks = Number(r?.[0]?.n ?? 0); } catch { /* noop */ } }
+      return result;
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   applyCors(req, res);
   if (req.method === "OPTIONS") {
@@ -3033,6 +3068,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/draft-essays") return adminDataset(req, res, "draft-essays");
     if (url === "/api/admin/organize-articles") return organizeArticles(req, res);
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);
+    if (url === "/api/admin/metrics") return adminMetrics(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
     if (url === "/api/admin/seed-content") return adminSeedContent(req, res);
     if (url === "/api/admin/seed-post-christian") return seedPostChristianArticles(req, res);
