@@ -3,6 +3,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { CrisisHelp } from "@/components/CrisisHelp";
 
 export default function Marriage() {
 
@@ -177,6 +178,7 @@ export default function Marriage() {
         </div>
       </section>
 
+      <CrisisHelp />
       <Footer />
     </div>
   );
