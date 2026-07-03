@@ -852,6 +852,47 @@ async function substackRss(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+// Best-effort dual-write of a new subscriber to an external newsletter provider,
+// so the owned DB list and the sending platform stay in sync. Config-driven and
+// provider-agnostic: set NEWSLETTER_WEBHOOK_URL to forward to any service (a
+// Zapier/Make hook that adds to Substack, Mailchimp via automation, etc.), or set
+// MAILCHIMP_API_KEY + MAILCHIMP_SERVER_PREFIX + MAILCHIMP_LIST_ID for a direct
+// Mailchimp upsert. No-op and never throws if nothing is configured; the owned DB
+// write is always the source of truth.
+async function pushToNewsletterProvider(email: string, name: string | null, source: string): Promise<void> {
+  try {
+    const hookUrl = process.env.NEWSLETTER_WEBHOOK_URL?.trim();
+    if (hookUrl) {
+      await fetch(hookUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, name, source }),
+      });
+      return;
+    }
+    const mcKey = process.env.MAILCHIMP_API_KEY?.trim();
+    const mcServer = process.env.MAILCHIMP_SERVER_PREFIX?.trim();
+    const mcList = process.env.MAILCHIMP_LIST_ID?.trim();
+    if (mcKey && mcServer && mcList) {
+      const hash = crypto.createHash("md5").update(email.toLowerCase()).digest("hex");
+      await fetch(`https://${mcServer}.api.mailchimp.com/3.0/lists/${mcList}/members/${hash}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Basic " + Buffer.from(`anystring:${mcKey}`).toString("base64"),
+        },
+        body: JSON.stringify({
+          email_address: email,
+          status_if_new: "subscribed",
+          merge_fields: name ? { FNAME: name } : {},
+        }),
+      });
+    }
+  } catch {
+    /* best-effort; the owned DB write is the source of truth */
+  }
+}
+
 async function subscribe(req: VercelRequest, res: VercelResponse) {
   if (rateLimited(req, "subscribe", 10, 60 * 1000)) return json(res, 429, { error: "Too many requests. Give it a minute and try again." });
   try {
@@ -866,6 +907,7 @@ async function subscribe(req: VercelRequest, res: VercelResponse) {
         [email, name, source]
       );
     });
+    await pushToNewsletterProvider(email, name, source);
     json(res, 200, { ok: true });
   } catch (e: any) {
     json(res, 500, { ok: false, error: String(e?.message || e) });
@@ -1446,6 +1488,7 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
             [email, name, source]
           );
         });
+        await pushToNewsletterProvider(email, name, source);
         return trpcOk(res, { ok: true });
       }
       case "quiz.getQuestions": {
@@ -2352,6 +2395,7 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
             await c.execute("INSERT INTO subscribers (email) VALUES (?) ON DUPLICATE KEY UPDATE active=1", [email]);
           }
         });
+        await pushToNewsletterProvider(email, input?.name || null, String(input?.source || "site"));
       } catch { /* ignore */ }
       return { result: { data: superjson.serialize({ ok: true }) } };
     }
@@ -2895,6 +2939,9 @@ async function ebookDownload(req: VercelRequest, res: VercelResponse) {
     const slug = String(session.metadata?.slug || "");
     const book = EBOOKS[slug];
     const paid = (session.payment_status === "paid" || session.status === "complete") && Boolean(book);
+    // Record the purchase durably on the thank-you round-trip too, so a record
+    // exists even if the Stripe webhook was slow or never fired.
+    if (paid) { try { await recordPurchase(session); } catch { /* best-effort */ } }
     if (check) {
       return json(res, 200, { ok: true, paid, slug, title: book?.title || null });
     }
@@ -2907,6 +2954,98 @@ async function ebookDownload(req: VercelRequest, res: VercelResponse) {
   } catch (e: any) {
     if (check) return json(res, 200, { ok: false, paid: false });
     return json(res, 500, { error: String(e?.message || e) });
+  }
+}
+
+// Durable record of a completed ebook purchase. Authenticity is guaranteed by
+// re-retrieving the checkout session from Stripe (a forged webhook body cannot
+// fabricate a paid session), so this does not depend on raw-body signature
+// verification, which a shared catch-all serverless function cannot obtain cleanly.
+async function recordPurchase(session: Stripe.Checkout.Session): Promise<void> {
+  const slug = String(session.metadata?.slug || "");
+  if (!slug || !EBOOKS[slug]) return;
+  const email = session.customer_details?.email || session.customer_email || null;
+  const amount = session.amount_total ?? null;
+  const currency = session.currency ?? null;
+  await withConn(async (c) => {
+    await c.execute(`CREATE TABLE IF NOT EXISTS purchases (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      sessionId VARCHAR(255) NOT NULL UNIQUE,
+      slug VARCHAR(191) NOT NULL,
+      email VARCHAR(320),
+      amountTotal INT,
+      currency VARCHAR(12),
+      createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`);
+    await c.execute(
+      "INSERT INTO purchases (sessionId, slug, email, amountTotal, currency) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE email = COALESCE(VALUES(email), email), amountTotal = VALUES(amountTotal), currency = VALUES(currency)",
+      [session.id, slug, email, amount, currency],
+    );
+  });
+}
+
+// Stripe webhook. Stripe POSTs here when a checkout completes. We re-retrieve the
+// session from Stripe (which authenticates it far more strongly than trusting the
+// posted body) and record the purchase durably, so a paying customer is never lost
+// even if the browser redirect to the thank-you page drops. Always answers 2xx
+// quickly so Stripe does not enter a retry storm on a transient hiccup we handle.
+async function stripeWebhook(req: VercelRequest, res: VercelResponse) {
+  if (req.method !== "POST") return json(res, 405, { error: "method not allowed" });
+  const stripe = getStripe();
+  if (!stripe) return json(res, 200, { received: true, note: "stripe not configured" });
+  try {
+    const event = await readBody(req);
+    const type = String(event?.type || "");
+    const obj: any = event?.data?.object || {};
+    if (type === "checkout.session.completed" || type === "checkout.session.async_payment_succeeded") {
+      const sessionId = String(obj?.id || "");
+      if (sessionId) {
+        const session = await stripe.checkout.sessions.retrieve(sessionId);
+        const paid = session.payment_status === "paid" || session.status === "complete";
+        if (paid) {
+          try { await recordPurchase(session); } catch { /* best-effort durability */ }
+        }
+      }
+    }
+    return json(res, 200, { received: true });
+  } catch (e: any) {
+    // Still answer 2xx so Stripe does not hammer retries on a transient error.
+    return json(res, 200, { received: true, error: String(e?.message || e) });
+  }
+}
+
+// Read-only owner metrics for the admin dashboard: audience (subscribers), sales
+// (orders + revenue from the purchases table, by book and recent), and catalog
+// counts. Every table read is guarded so a fresh install never 500s. Reading-depth
+// events (essays finished, returns) require client instrumentation not yet present.
+async function adminMetrics(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  try {
+    const out = await withConn(async (c) => {
+      const has = async (t: string): Promise<boolean> => {
+        try { const [r]: any = await c.query("SHOW TABLES LIKE ?", [t]); return Array.isArray(r) && r.length > 0; } catch { return false; }
+      };
+      const result: any = {
+        audience: { subscribers: 0, newThisMonth: 0 },
+        sales: { orders: 0, revenueCents: 0, currency: "usd", byBook: [] as any[], recent: [] as any[] },
+        catalog: { publishedPosts: 0, publishedBooks: 0 },
+      };
+      if (await has("subscribers")) {
+        try { const [r]: any = await c.query("SELECT COUNT(*) AS n FROM subscribers"); result.audience.subscribers = Number(r?.[0]?.n ?? 0); } catch { /* noop */ }
+        try { const [r]: any = await c.query("SELECT COUNT(*) AS n FROM subscribers WHERE createdAt >= DATE_SUB(NOW(), INTERVAL 30 DAY)"); result.audience.newThisMonth = Number(r?.[0]?.n ?? 0); } catch { /* noop */ }
+      }
+      if (await has("purchases")) {
+        try { const [r]: any = await c.query("SELECT COUNT(*) AS n, COALESCE(SUM(amountTotal),0) AS rev, MAX(currency) AS cur FROM purchases"); result.sales.orders = Number(r?.[0]?.n ?? 0); result.sales.revenueCents = Number(r?.[0]?.rev ?? 0); result.sales.currency = r?.[0]?.cur || "usd"; } catch { /* noop */ }
+        try { const [rows]: any = await c.query("SELECT slug, COUNT(*) AS orders, COALESCE(SUM(amountTotal),0) AS rev FROM purchases GROUP BY slug ORDER BY orders DESC"); result.sales.byBook = (rows as any[]).map((x) => ({ slug: x.slug, title: EBOOKS[x.slug]?.title || x.slug, orders: Number(x.orders), revenueCents: Number(x.rev) })); } catch { /* noop */ }
+        try { const [rows]: any = await c.query("SELECT slug, email, amountTotal, createdAt FROM purchases ORDER BY createdAt DESC LIMIT 10"); result.sales.recent = (rows as any[]).map((x) => ({ slug: x.slug, title: EBOOKS[x.slug]?.title || x.slug, email: x.email, amountTotal: x.amountTotal, createdAt: x.createdAt })); } catch { /* noop */ }
+      }
+      if (await has("posts")) { try { const [r]: any = await c.query("SELECT COUNT(*) AS n FROM posts WHERE published = true"); result.catalog.publishedPosts = Number(r?.[0]?.n ?? 0); } catch { /* noop */ } }
+      if (await has("books")) { try { const [r]: any = await c.query("SELECT COUNT(*) AS n FROM books WHERE published = true"); result.catalog.publishedBooks = Number(r?.[0]?.n ?? 0); } catch { /* noop */ } }
+      return result;
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
   }
 }
 
@@ -2929,6 +3068,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/draft-essays") return adminDataset(req, res, "draft-essays");
     if (url === "/api/admin/organize-articles") return organizeArticles(req, res);
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);
+    if (url === "/api/admin/metrics") return adminMetrics(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
     if (url === "/api/admin/seed-content") return adminSeedContent(req, res);
     if (url === "/api/admin/seed-post-christian") return seedPostChristianArticles(req, res);
@@ -2949,6 +3089,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/contact") return contactForm(req, res);
     if (url === "/api/checkout") return ebookCheckout(req, res);
     if (url === "/api/download") return ebookDownload(req, res);
+    if (url === "/api/stripe/webhook") return stripeWebhook(req, res);
     if (url === "/api/subscribe") return subscribe(req, res);
     if (url === "/api/pcn/signup") return pcnSignup(req, res);
     if (url === "/api/lead-magnets/signup") return leadMagnetSignup(req, res);

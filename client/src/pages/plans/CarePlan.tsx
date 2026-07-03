@@ -10,6 +10,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { CrisisHelp } from "@/components/CrisisHelp";
 import { BookOpen, Wrench, PenLine, Check, RotateCcw } from "lucide-react";
 
 const wrap = { maxWidth: "var(--w-content)", margin: "0 auto" } as const;
@@ -188,6 +189,8 @@ export default function CarePlan() {
             {data.careNote && (
               <p style={{ ...body, color: "var(--ink-muted)", maxWidth: "68ch", marginTop: "var(--s-3)" }}>{data.careNote}</p>
             )}
+
+            <CrisisHelp />
 
             <div style={{ display: "flex", gap: "var(--s-4)", flexWrap: "wrap", marginTop: "var(--s-4)" }}>
               <Link href="/help" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>← Find help for something else</Link>
