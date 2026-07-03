@@ -2,7 +2,7 @@
   "slug": "the-reformation",
   "title": "The Reformation",
   "subtitle": "Luther and the German movement, the Reformed stream, the Radical wing, the English settlement, and the Catholic response. Honest about the recovery and about the violence and division.",
-  "era": "Reformation",
+  "era": "The Reformation",
   "dateRange": "AD 1517-1648",
   "sections": [
     {
@@ -37,15 +37,39 @@
     }
   ],
   "keyFigures": [
-    { "name": "Martin Luther", "note": "German monk whose recovery of justification by faith began the movement in 1517." },
-    { "name": "John Calvin", "note": "Reformer of Geneva whose systematic theology shaped the Reformed tradition." },
-    { "name": "The Anabaptists", "note": "The Radical wing who rejected infant baptism and were persecuted by all sides." },
-    { "name": "The Council of Trent", "note": "The Catholic Church's reforming and defining response across the mid-century." }
+    {
+      "name": "Martin Luther",
+      "note": "German monk whose recovery of justification by faith began the movement in 1517."
+    },
+    {
+      "name": "John Calvin",
+      "note": "Reformer of Geneva whose systematic theology shaped the Reformed tradition."
+    },
+    {
+      "name": "The Anabaptists",
+      "note": "The Radical wing who rejected infant baptism and were persecuted by all sides."
+    },
+    {
+      "name": "The Council of Trent",
+      "note": "The Catholic Church's reforming and defining response across the mid-century."
+    }
   ],
   "sources": [
-    { "title": "The Story of Christianity, Volume 2", "author": "Justo Gonzalez" },
-    { "title": "Christianity: The First Three Thousand Years", "author": "Diarmaid MacCulloch" },
-    { "title": "Reformation: Europe's House Divided", "author": "Diarmaid MacCulloch" },
-    { "title": "Church History in Plain Language", "author": "Bruce Shelley" }
+    {
+      "title": "The Story of Christianity, Volume 2",
+      "author": "Justo Gonzalez"
+    },
+    {
+      "title": "Christianity: The First Three Thousand Years",
+      "author": "Diarmaid MacCulloch"
+    },
+    {
+      "title": "Reformation: Europe's House Divided",
+      "author": "Diarmaid MacCulloch"
+    },
+    {
+      "title": "Church History in Plain Language",
+      "author": "Bruce Shelley"
+    }
   ]
 }

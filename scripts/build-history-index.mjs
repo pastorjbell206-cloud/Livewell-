@@ -37,6 +37,25 @@ for (const f of files) {
   }
 }
 
-essays.sort((a, b) => (a.era + a.dateRange + a.title).localeCompare(b.era + b.dateRange + b.title));
+// Chronological shelf order: eras ranked per the timeline (an alphabetical
+// sort would file "The Age of the Councils" before "The Apostolic Age").
+const ERA_ORDER = [
+  "The Apostolic Age",
+  "The Persecuted Church",
+  "The Age of the Councils",
+  "The Early Medieval Church",
+  "The High Medieval Church",
+  "The Reformation",
+  "The Modern and Global Church",
+];
+const rank = (e) => {
+  const i = ERA_ORDER.indexOf(e.era);
+  return i === -1 ? ERA_ORDER.length : i;
+};
+const firstYear = (e) => {
+  const m = String(e.dateRange).match(/\d{2,4}/);
+  return m ? Number(m[0]) : 9999;
+};
+essays.sort((a, b) => rank(a) - rank(b) || firstYear(a) - firstYear(b) || a.title.localeCompare(b.title));
 fs.writeFileSync(OUT, JSON.stringify({ essays }, null, 2));
 console.log(`[build-history-index] wrote ${essays.length} essays to ${path.relative(process.cwd(), OUT)}`);

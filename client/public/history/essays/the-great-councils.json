@@ -2,7 +2,7 @@
   "slug": "the-great-councils",
   "title": "The Great Councils",
   "subtitle": "Nicaea, Constantinople, Ephesus, Chalcedon. The pastoral and political pressures behind the church's defining decisions about Christ and God, told as a human story.",
-  "era": "Ancient",
+  "era": "The Age of the Councils",
   "dateRange": "AD 325-451",
   "sections": [
     {
@@ -37,15 +37,39 @@
     }
   ],
   "keyFigures": [
-    { "name": "Arius", "note": "Alexandrian priest who taught the Son was a creature, the error Nicaea rejected." },
-    { "name": "Athanasius of Alexandria", "note": "Defender of Nicaea, exiled five times for refusing to compromise." },
-    { "name": "The Cappadocians", "note": "Basil, Gregory of Nazianzus, and Gregory of Nyssa, who shaped Trinitarian language." },
-    { "name": "Constantine and Theodosius", "note": "Emperors who convened councils, seeking imperial unity through settled doctrine." }
+    {
+      "name": "Arius",
+      "note": "Alexandrian priest who taught the Son was a creature, the error Nicaea rejected."
+    },
+    {
+      "name": "Athanasius of Alexandria",
+      "note": "Defender of Nicaea, exiled five times for refusing to compromise."
+    },
+    {
+      "name": "The Cappadocians",
+      "note": "Basil, Gregory of Nazianzus, and Gregory of Nyssa, who shaped Trinitarian language."
+    },
+    {
+      "name": "Constantine and Theodosius",
+      "note": "Emperors who convened councils, seeking imperial unity through settled doctrine."
+    }
   ],
   "sources": [
-    { "title": "The Story of Christianity, Volume 1", "author": "Justo Gonzalez" },
-    { "title": "The Early Church", "author": "Henry Chadwick" },
-    { "title": "The Christian Tradition, Volume 1", "author": "Jaroslav Pelikan" },
-    { "title": "Christianity: The First Three Thousand Years", "author": "Diarmaid MacCulloch" }
+    {
+      "title": "The Story of Christianity, Volume 1",
+      "author": "Justo Gonzalez"
+    },
+    {
+      "title": "The Early Church",
+      "author": "Henry Chadwick"
+    },
+    {
+      "title": "The Christian Tradition, Volume 1",
+      "author": "Jaroslav Pelikan"
+    },
+    {
+      "title": "Christianity: The First Three Thousand Years",
+      "author": "Diarmaid MacCulloch"
+    }
   ]
 }

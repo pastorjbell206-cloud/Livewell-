@@ -1,32 +1,102 @@
 {
   "essays": [
     {
-      "slug": "the-great-councils",
-      "title": "The Great Councils",
-      "blurb": "Nicaea, Constantinople, Ephesus, Chalcedon. The pastoral and political pressures behind the church's defining decisions about Christ and God, told as a human story.",
-      "era": "Ancient",
-      "dateRange": "AD 325-451"
-    },
-    {
       "slug": "the-apostolic-age",
       "title": "The Apostolic and Sub-Apostolic Age",
       "blurb": "From Pentecost to the generation after the apostles. How a scattered, persecuted movement stayed one body across distance, and what held it together before the New Testament was gathered.",
-      "era": "Ancient",
+      "era": "The Apostolic Age",
       "dateRange": "c. AD 30-150"
+    },
+    {
+      "slug": "the-age-of-martyrs",
+      "title": "The Age of the Martyrs",
+      "blurb": "From Nero's fire to Diocletian's last storm. What Rome actually demanded, why believers died rather than comply, and what the church learned about mercy from the people who failed.",
+      "era": "The Persecuted Church",
+      "dateRange": "AD 64-313"
+    },
+    {
+      "slug": "the-desert-and-the-rule",
+      "title": "The Desert and the Rule",
+      "blurb": "Antony walked out of a village church and into the desert, and monasticism was born. How the church kept a full-price faith on offer once believing became easy, and what Benedict built from it.",
+      "era": "The Age of the Councils",
+      "dateRange": "c. AD 270-547"
+    },
+    {
+      "slug": "the-constantinian-turn",
+      "title": "The Constantinian Turn",
+      "blurb": "A cross in the sky in 312, and the church woke up favored. What it gained, what it traded, and why the question it raised has never closed.",
+      "era": "The Age of the Councils",
+      "dateRange": "AD 312-430"
+    },
+    {
+      "slug": "the-fathers-at-work",
+      "title": "The Fathers at Work",
+      "blurb": "The councils wrote the creeds, but the doctrine was carried between the meetings, in exiles, letters, famine relief, and one long fight over grace. The people who did the work.",
+      "era": "The Age of the Councils",
+      "dateRange": "AD 325-430"
+    },
+    {
+      "slug": "the-great-councils",
+      "title": "The Great Councils",
+      "blurb": "Nicaea, Constantinople, Ephesus, Chalcedon. The pastoral and political pressures behind the church's defining decisions about Christ and God, told as a human story.",
+      "era": "The Age of the Councils",
+      "dateRange": "AD 325-451"
+    },
+    {
+      "slug": "the-church-that-outlived-rome",
+      "title": "The Church That Outlived Rome",
+      "blurb": "Rome fell and the church did not. Slaves, monks, queens, and grieving scholars carried the faith to the peoples who broke the empire, and by the year 1000 Europe was baptized. What kind of victory that was is the harder question.",
+      "era": "The Early Medieval Church",
+      "dateRange": "c. AD 410-1000"
     },
     {
       "slug": "the-east-west-schism",
       "title": "The East and West Divide",
       "blurb": "The slow drift between Greek East and Latin West. Language, authority, the disputed clause in the creed, and the events of 1054. Told fairly to both sides.",
-      "era": "Medieval",
+      "era": "The Early Medieval Church",
       "dateRange": "to AD 1054"
+    },
+    {
+      "slug": "the-medieval-west",
+      "title": "The Medieval West",
+      "blurb": "From the reforming monks to the eve of Wittenberg. Papal power at its height, the cathedrals and the universities, the crusades and the inquisition, and the long refusal of reform that made Luther possible.",
+      "era": "The High Medieval Church",
+      "dateRange": "AD 1054-1517"
     },
     {
       "slug": "the-reformation",
       "title": "The Reformation",
       "blurb": "Luther and the German movement, the Reformed stream, the Radical wing, the English settlement, and the Catholic response. Honest about the recovery and about the violence and division.",
-      "era": "Reformation",
+      "era": "The Reformation",
       "dateRange": "AD 1517-1648"
+    },
+    {
+      "slug": "the-counter-reformation",
+      "title": "The Counter-Reformation and the Wars of Religion",
+      "blurb": "Rome's answer to the Protestant break, told fairly. Trent and the Jesuits, the saints of a real renewal, and the century of blood from the French massacres to Westphalia that ended Christendom.",
+      "era": "The Reformation",
+      "dateRange": "AD 1545-1648"
+    },
+    {
+      "slug": "the-awakenings",
+      "title": "The Awakenings and the Birth of Evangelicalism",
+      "blurb": "Pietism, Edwards, Whitefield, and the Wesleys. How revival remade the faith of the English-speaking world, with the ledger of the revivalists and slavery kept open and honest.",
+      "era": "The Modern and Global Church",
+      "dateRange": "c. AD 1730-1791"
+    },
+    {
+      "slug": "the-missionary-century",
+      "title": "The Missionary Century",
+      "blurb": "From Carey's sailing to Edinburgh 1910. How the gospel reached every continent, what it owed and paid to empire, and the local believers who did most of the work.",
+      "era": "The Modern and Global Church",
+      "dateRange": "AD 1792-1910"
+    },
+    {
+      "slug": "the-global-church",
+      "title": "The Modern Church and the Global Shift",
+      "blurb": "The fundamentalist and modernist split, the churches under the dictators, Barmen and Bonhoeffer, the fire from Azusa Street, and the great reversal that moved the faith's center south.",
+      "era": "The Modern and Global Church",
+      "dateRange": "AD 1900 to today"
     }
   ]
 }
