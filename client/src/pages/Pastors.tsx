@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { PastorSignup } from "@/components/PastorSignup";
 import { trpc } from "@/lib/trpc";
 import { ExternalLink, Loader2 } from "lucide-react";
 
@@ -109,11 +110,15 @@ export default function Pastors() {
               </div>
             </div>
 
-            {/* CTA */}
+            {/* CTA — capture the email on-site first, then the external handoff */}
             <div className="mt-16">
               <h2 className="font-display font-bold mb-8" style={{ color: "var(--ink)", fontSize: "clamp(1.75rem, 3vw, 2.25rem)" }}>
                 Join the network
               </h2>
+
+              <div className="mb-8">
+                <PastorSignup source="pastors-page" networkUrl={settingQuery.data} />
+              </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 {settingQuery.isLoading ? (

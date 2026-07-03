@@ -315,6 +315,7 @@ export default function ForLeaders() {
           <NewsletterSignup
             variant="inline"
             source="for-leaders"
+            audienceType="pastor"
             title="The Pastor's Letter — Tuesday morning."
             description="Written for leaders carrying the weight. One essay, one sermon-prep idea, one resource."
           />

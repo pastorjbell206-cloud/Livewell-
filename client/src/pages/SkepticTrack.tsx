@@ -230,6 +230,7 @@ export default function SkepticTrack() {
           <NewsletterSignup
             variant="inline"
             source="skeptic-track"
+            audienceType="skeptic"
             title={NEWSLETTER_PITCH_SKEPTIC.title}
             description={NEWSLETTER_PITCH_SKEPTIC.description}
           />

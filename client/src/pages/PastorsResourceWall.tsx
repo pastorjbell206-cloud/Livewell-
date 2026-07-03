@@ -408,6 +408,7 @@ export default function PastorsResourceWall() {
           <NewsletterSignup
             variant="inline"
             source="pastors-resource-wall"
+            audienceType="pastor"
             title={NEWSLETTER_PITCH_PASTORAL.title}
             description={NEWSLETTER_PITCH_PASTORAL.description}
           />

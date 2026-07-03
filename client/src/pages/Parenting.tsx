@@ -187,6 +187,9 @@ export default function Parenting() {
           <div style={{ marginTop: "20px" }}>
             <Link href="/life/raising-children-in-grace" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none" }}>Or read the deep guide: Raising Children in Grace</Link>
           </div>
+          <div style={{ marginTop: "12px" }}>
+            <Link href="/diagnostic" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none" }}>Start with the Life Diagnostic: ten minutes, the whole picture</Link>
+          </div>
         </div>
       </section>
 
