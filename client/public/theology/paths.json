@@ -67,6 +67,71 @@
         { "label": "Which view am I?", "href": "/theology/which-view", "note": "Answer a few questions and see where you currently lean." },
         { "label": "Why are there so many churches?", "href": "/theology/traditions", "note": "How the great traditions relate, and what they share." }
       ]
+    },
+    {
+      "id": "honest-skeptic",
+      "title": "For the honest skeptic",
+      "audience": "Not a believer, willing to look",
+      "blurb": "No altar call at the end of this. Eight stops through the hardest objections, stated at full strength before any answer, so you can weigh the claims for yourself.",
+      "steps": [
+        { "label": "If God is real, why is he so hidden?", "href": "/theology/questions#why-isnt-god-obvious", "note": "The problem of divine hiddenness, given its full weight before any reply." },
+        { "label": "Isn't faith just a crutch?", "href": "/theology/questions#is-faith-a-crutch", "note": "Feuerbach, Marx, and Freud get their say, and the knife cuts both directions." },
+        { "label": "Can the texts be trusted?", "href": "/theology/questions#bible-reliable", "note": "Preservation, dating, and the things no inventor of a religion would invent." },
+        { "label": "The manuscripts, honestly counted", "href": "/theology/doctrine/textual-criticism", "note": "The variants and the methods, with the skeptical challenge steelmanned alongside the rest." },
+        { "label": "Did Jesus even exist?", "href": "/theology/questions#did-jesus-exist", "note": "What the historical record actually holds, from sources with no reason to help." },
+        { "label": "Did the resurrection happen?", "href": "/theology/questions#jesus-rose", "note": "The claim everything rests on. Paul agreed, and said so first." },
+        { "label": "The problem of evil, steelmanned", "href": "/theology/doctrine/problem-of-evil", "note": "The strongest argument against God, stated the way its best defenders state it." },
+        { "label": "So what exactly is the claim?", "href": "/theology/questions#what-is-the-gospel", "note": "Whatever you decide, know precisely what you are accepting or declining." }
+      ]
+    },
+    {
+      "id": "when-faith-shakes",
+      "title": "When your faith is shaking",
+      "audience": "Believers in the middle of doubt",
+      "blurb": "Doubt is not the exit from faith, and you are not the first to stand here. A slow walk for the believer whose questions have gotten loud, with no pressure to hurry.",
+      "steps": [
+        { "label": "Is it a sin to doubt?", "href": "/theology/questions#is-doubt-a-sin", "note": "Start here. The answer is no, and the Bible's own people prove it." },
+        { "label": "Why does God feel so silent?", "href": "/theology/questions#god-hidden", "note": "The silence of God is one of Scripture's most common experiences, not its rarest." },
+        { "label": "When prayer goes unanswered", "href": "/theology/questions#unanswered-prayer", "note": "What the unanswered prayers of Scripture actually teach." },
+        { "label": "Is it okay to be angry at God?", "href": "/theology/questions#angry-at-god", "note": "The psalms argue with God to his face. So can you." },
+        { "label": "Is deconstruction okay?", "href": "/theology/questions#is-deconstruction-okay", "note": "Taking a faith apart to find what is true is old work. The question is what you rebuild." },
+        { "label": "Believing without the feelings", "href": "/theology/questions#believe-without-feeling", "note": "What faith is when the emotions have gone dark." },
+        { "label": "Not every question carries the same weight", "href": "/theology/how-to-use", "note": "Triage. Some of what shook you may never have been load-bearing." },
+        { "label": "What faith actually is", "href": "/theology/questions#what-is-faith", "note": "Not a leap in the dark. Trust, with its eyes open, in a person." }
+      ]
+    },
+    {
+      "id": "pastors-teaching-path",
+      "title": "Teach the contested doctrines without splitting the room",
+      "audience": "Pastors, elders, and teachers",
+      "blurb": "How to lead a class or a congregation through disputed ground so that every side feels fairly stated and the room stays a family. The method, then the models.",
+      "steps": [
+        { "label": "The triage framework", "href": "/theology/how-to-use", "note": "First order, second order, third order. Name the weight class before the sparring starts." },
+        { "label": "A worked model: how are we saved?", "href": "/theology/doctrine/soteriology", "note": "The deepest family disagreement, handled in the six-step method you can borrow." },
+        { "label": "The comparison table", "href": "/theology/compare", "note": "Every contested doctrine side by side, for preparation and handouts." },
+        { "label": "A second-order test case: the sacraments", "href": "/theology/doctrine/sacraments", "note": "Baptism and the Supper, where your room likely holds several views already." },
+        { "label": "Let people find themselves", "href": "/theology/which-view", "note": "The diagnostic gives your class language for where they already lean." },
+        { "label": "Teach disagreement itself", "href": "/theology/questions#disagree-charitably", "note": "The skill your people will use long after the class ends." },
+        { "label": "The floor beneath the debates", "href": "/theology/creeds", "note": "The creeds mark what is not up for a vote, which frees everything else to breathe." },
+        { "label": "How the church drew its lines", "href": "/theology/history/the-great-councils", "note": "Nicaea to Chalcedon. What it cost to say it right, and why it mattered." }
+      ]
+    },
+    {
+      "id": "how-we-got-the-bible",
+      "title": "How we got the Bible",
+      "audience": "Anyone who wonders where Scripture came from",
+      "blurb": "From the voice of God to the book on your shelf, in nine stops. Revelation, inspiration, the canon, the manuscripts, and the translation in your hands.",
+      "steps": [
+        { "label": "How God speaks", "href": "/theology/doctrine/revelation", "note": "General and special revelation. What the heavens can say, and what only a word can." },
+        { "label": "What inspired means", "href": "/theology/doctrine/inspiration", "note": "How the breath of God became human words. Four accounts, each in its own voice." },
+        { "label": "Inerrancy and its spectrum", "href": "/theology/doctrine/inerrancy", "note": "What the battle for the Bible was actually about." },
+        { "label": "How we got the Old Testament", "href": "/theology/doctrine/ot-canon", "note": "When the Hebrew canon closed, who says so, and how you would know." },
+        { "label": "How we got the New Testament", "href": "/theology/doctrine/nt-canon", "note": "The criteria, the early lists, and what Nicaea never decided." },
+        { "label": "Why the Apocrypha is disputed", "href": "/theology/doctrine/apocrypha", "note": "Why Catholic, Orthodox, and Protestant Bibles are different sizes." },
+        { "label": "Can we trust the manuscripts?", "href": "/theology/doctrine/textual-criticism", "note": "The variants honestly counted, and what they do and do not touch." },
+        { "label": "Why translations differ", "href": "/theology/doctrine/translations", "note": "Word for word, thought for thought, and how to choose a Bible without fear." },
+        { "label": "Now open it", "href": "/theology/questions#where-start-reading", "note": "Where to start reading, now that you know what you are holding." }
+      ]
     }
   ]
 }

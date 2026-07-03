@@ -289,6 +289,310 @@
           "doctrine": "last-things"
         }
       ]
+    },
+    {
+      "slug": "origins",
+      "title": "Genesis and Origins: A Which View Am I Quiz",
+      "intro": "These questions ask how you currently read Genesis 1 and 2 and how you relate the text to the sciences. Answer with your honest instinct, not the answer you think a good Christian is supposed to give.",
+      "disclaimer": "This is a starting point for self-understanding, not a verdict on how God made the world. This is third-order ground, and faithful Christians who confess the same Creator have held each of these readings with a clear conscience.",
+      "questions": [
+        {
+          "q": "When you read the six days of Genesis 1, what do you take them to be?",
+          "options": [
+            { "label": "Six ordinary days, meant as plainly as the text reads", "view": "young-earth" },
+            { "label": "Six real and sequential creative periods, each far longer than a day", "view": "old-earth" },
+            { "label": "A true telling of who created and why, not a timetable of how long", "view": "evolutionary-creation" },
+            { "label": "A literary frame arranged by theme, teaching order and authority rather than chronology", "view": "framework" }
+          ]
+        },
+        {
+          "q": "How old do you take the earth to be?",
+          "options": [
+            { "label": "Thousands of years, as the genealogies suggest when read straightforwardly", "view": "young-earth" },
+            { "label": "Ancient, as the rocks and starlight indicate, and Genesis allows exactly that", "view": "old-earth" },
+            { "label": "Ancient, and the sciences that date it are describing God's long handiwork", "view": "evolutionary-creation" },
+            { "label": "The text does not say, because Genesis was never answering that question", "view": "framework" }
+          ]
+        },
+        {
+          "q": "What do you make of animal death before Adam?",
+          "options": [
+            { "label": "There was none. Death of every kind entered the world through the fall", "view": "young-earth" },
+            { "label": "Animals died in the long ages before Adam, and Scripture's concern is human death", "view": "old-earth" },
+            { "label": "Death was part of the natural process God used, and the fall brought humanity's guilt and estrangement", "view": "evolutionary-creation" },
+            { "label": "Genesis 1 is not addressing the biology of death, so I hold that question loosely", "view": "framework" }
+          ]
+        },
+        {
+          "q": "Who were Adam and Eve?",
+          "options": [
+            { "label": "The first two humans, specially formed on the sixth day, ancestors of us all", "view": "young-earth" },
+            { "label": "Real people specially created by God, however long ago the rest took", "view": "old-earth" },
+            { "label": "Real representatives God appointed from among early humanity, or a truth told through them, with Christians differing", "view": "evolutionary-creation" },
+            { "label": "The truly fallen first covenant pair, with the shape of the days telling us nothing about the calendar of their making", "view": "framework" }
+          ]
+        },
+        {
+          "q": "When mainstream science and your reading of Genesis conflict, what is your first instinct?",
+          "options": [
+            { "label": "Scripture's plain sense stands, and the scientific consensus should be re-examined", "view": "young-earth" },
+            { "label": "Recheck the interpretation, since God's word and God's world cannot finally disagree", "view": "old-earth" },
+            { "label": "Trust the well-tested science and ask what the text was actually written to teach", "view": "evolutionary-creation" },
+            { "label": "Ask whether the text was ever speaking to that question at all", "view": "framework" }
+          ]
+        },
+        {
+          "q": "What is Genesis 1 chiefly for?",
+          "options": [
+            { "label": "A true record of how and when God made everything, the foundation of all history", "view": "young-earth" },
+            { "label": "A true account of the order of God's creative work, told so every age can read it", "view": "old-earth" },
+            { "label": "A declaration of the one Creator against the idols, teaching who and why rather than how", "view": "evolutionary-creation" },
+            { "label": "A portrait of God ordering his house, built with the care of a poem and the weight of a creed", "view": "framework" }
+          ]
+        },
+        {
+          "q": "What role should the sciences play in reading Genesis?",
+          "options": [
+            { "label": "They can illustrate the text, but they never overrule its plain sense", "view": "young-earth" },
+            { "label": "They are God-given light on the age and scale of his works, read alongside the text", "view": "old-earth" },
+            { "label": "They describe the very process God used, so they belong in the conversation from the start", "view": "evolutionary-creation" },
+            { "label": "They answer their own questions, and Genesis answers different ones, so neither needs to referee the other", "view": "framework" }
+          ]
+        },
+        {
+          "q": "Which sentence sits closest to your instinct?",
+          "options": [
+            { "label": "I would rather trust the plain reading than adjust it to the spirit of the age", "view": "young-earth" },
+            { "label": "The God of the Bible is the God of the rocks and the starlight, and they tell one story across long ages", "view": "old-earth" },
+            { "label": "Evolution is not a rival creator, only a tool in the Creator's hand", "view": "evolutionary-creation" },
+            { "label": "Genesis tells me whose world this is, and leaves the clock to him", "view": "framework" }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "view": "young-earth",
+          "name": "Leaning Young-Earth Creationism",
+          "blurb": "You tend to read Genesis 1 as a plain account of six ordinary days a few thousand years ago, with death entering through Adam's sin. This view treasures the straightforward sense of Scripture and refuses to let any outside authority stand over the text. Many believers value its courage and its consistency, holding the plain reading whatever it costs.",
+          "doctrine": "origins"
+        },
+        {
+          "view": "old-earth",
+          "name": "Leaning Old-Earth Creation",
+          "blurb": "You tend to read the days of Genesis as long, real, sequential periods, taking the antiquity of the earth as God's own testimony in the rocks and stars. This view holds Scripture and the sciences together as two books of one Author. Many Christians find here a way to honor both the text and the telescope without forcing either.",
+          "doctrine": "origins"
+        },
+        {
+          "view": "evolutionary-creation",
+          "name": "Leaning Evolutionary Creation",
+          "blurb": "You tend to see evolution as the means God used to create, with Genesis teaching who made the world and why rather than the biological mechanism. This view keeps the Creator's sovereignty over the whole process and reads Genesis 1 against the idols of the ancient world. Many believers in the sciences have found here a faith that does not ask them to leave their work at the door.",
+          "doctrine": "origins"
+        },
+        {
+          "view": "framework",
+          "name": "Leaning the Framework View",
+          "blurb": "You tend to read Genesis 1 as a carefully built literary account, arranged by theme to display God's ordering of creation, without intending to date the earth or clock the days. This view takes the text's artistry seriously as part of its inspiration. Many find here a reading that lets Genesis say exactly what it says without conscripting it into modern debates.",
+          "doctrine": "origins"
+        }
+      ]
+    },
+    {
+      "slug": "lords-supper",
+      "title": "What Happens at the Table? A Which View Am I Quiz",
+      "intro": "These questions ask what you currently believe happens at the Lord's Supper, in the bread, in the cup, and in you. Answer with your honest instinct, whatever your church's official position.",
+      "disclaimer": "This is a starting point for self-understanding, not a ruling on the deepest mystery Christians share. The four historic views were each held by believers willing to die for Christ, and the doctrine page states every one of them at full strength.",
+      "questions": [
+        {
+          "q": "When the bread is consecrated at the Table, what happens to it?",
+          "options": [
+            { "label": "It truly becomes the body of Christ, though every appearance of bread remains", "view": "transubstantiation" },
+            { "label": "It remains bread, and Christ's true body is present in, with, and under it", "view": "sacramental-union" },
+            { "label": "It remains bread, and by the Spirit it becomes the instrument through which Christ feeds his people", "view": "spiritual-presence" },
+            { "label": "It remains bread, set apart as a sign to proclaim the Lord's death until he comes", "view": "memorialism" }
+          ]
+        },
+        {
+          "q": "How is Christ present at the Supper?",
+          "options": [
+            { "label": "In his whole substance, body and blood, under the appearances of bread and wine", "view": "transubstantiation" },
+            { "label": "Bodily and truly, joined to the bread and wine by his own word of promise", "view": "sacramental-union" },
+            { "label": "Truly but spiritually, as the Spirit lifts believers to feed on the ascended Christ by faith", "view": "spiritual-presence" },
+            { "label": "As he is present wherever his people gather in his name, remembered and proclaimed", "view": "memorialism" }
+          ]
+        },
+        {
+          "q": "What does a person without faith receive if they eat?",
+          "options": [
+            { "label": "The body of Christ itself, though to their harm rather than their blessing", "view": "transubstantiation" },
+            { "label": "The true body and blood, received by mouth, but to judgment rather than benefit", "view": "sacramental-union" },
+            { "label": "Bread and wine only, since Christ is received by faith or not at all", "view": "spiritual-presence" },
+            { "label": "Bread and wine, and the danger of treating lightly what the church holds sacred", "view": "memorialism" }
+          ]
+        },
+        {
+          "q": "When Jesus said, this is my body, how do you hear it?",
+          "options": [
+            { "label": "Exactly as spoken, trusting his word over the evidence of the senses", "view": "transubstantiation" },
+            { "label": "As a plain promise that where this bread is given, there his body is given", "view": "sacramental-union" },
+            { "label": "As covenant language, the sign so joined to the reality that it bears the reality's name", "view": "spiritual-presence" },
+            { "label": "As he meant the vine and the door, a living figure that carries his meaning", "view": "memorialism" }
+          ]
+        },
+        {
+          "q": "What is the Supper chiefly doing for you?",
+          "options": [
+            { "label": "Feeding me with Christ himself, the sacrifice of the cross made present to his church", "view": "transubstantiation" },
+            { "label": "Placing into my hands the forgiveness his death won, as certain as taste", "view": "sacramental-union" },
+            { "label": "Nourishing my union with Christ, sealing the promise the way bread strengthens the body", "view": "spiritual-presence" },
+            { "label": "Calling me back to the cross with thanksgiving, binding me to my Lord and his people", "view": "memorialism" }
+          ]
+        },
+        {
+          "q": "How do you read John 6, eating the flesh of the Son of Man?",
+          "options": [
+            { "label": "As pointing squarely to the Eucharist, where his flesh is true food indeed", "view": "transubstantiation" },
+            { "label": "As fulfilled wherever his true body is given with the bread for believers to eat", "view": "sacramental-union" },
+            { "label": "As the feeding of faith on Christ, which the Supper then pictures and applies", "view": "spiritual-presence" },
+            { "label": "As a vivid figure for trusting him, spoken before the Supper ever existed", "view": "memorialism" }
+          ]
+        },
+        {
+          "q": "Why has the church guarded the Table so carefully?",
+          "options": [
+            { "label": "Because the Lord himself is there, and what is holy must be treated as holy", "view": "transubstantiation" },
+            { "label": "Because his body and blood are truly handled there, and the promise is not to be trifled with", "view": "sacramental-union" },
+            { "label": "Because the sign and seal of the covenant belongs to those inside the covenant", "view": "spiritual-presence" },
+            { "label": "Because the memorial of his death deserves clean hands and an examined heart", "view": "memorialism" }
+          ]
+        },
+        {
+          "q": "Which sentence rings truest to you?",
+          "options": [
+            { "label": "The Eucharist is the source and summit of the church's whole life", "view": "transubstantiation" },
+            { "label": "At the altar the gospel becomes touchable, given and shed for you", "view": "sacramental-union" },
+            { "label": "At the Table, heaven does not come down so much as faith is lifted up", "view": "spiritual-presence" },
+            { "label": "The bread announces him until he comes, and the announcing is the glory of it", "view": "memorialism" }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "view": "transubstantiation",
+          "name": "Leaning Transubstantiation",
+          "blurb": "You tend to believe the bread and wine become, in their whole substance, the body and blood of Christ, while their appearances remain. This is the Roman Catholic confession, resting on the plain force of the words of institution and the church's unbroken practice of adoration. Many find here the most concrete possible assurance that Christ gives himself to his people.",
+          "doctrine": "sacraments"
+        },
+        {
+          "view": "sacramental-union",
+          "name": "Leaning the Lutheran View",
+          "blurb": "You tend to believe Christ's true body and blood are present in, with, and under the bread and wine, received by all who eat, because his word says so. This view refuses both philosophy's explanations and metaphor's escape, taking the promise at face value. Many treasure the certainty it gives, forgiveness placed into the hand.",
+          "doctrine": "sacraments"
+        },
+        {
+          "view": "spiritual-presence",
+          "name": "Leaning the Reformed View",
+          "blurb": "You tend to believe Christ is truly given and truly received at the Table, not by his body descending into bread, but by the Spirit lifting believers to feed on the whole, ascended Christ through faith. This view keeps the Supper a real means of grace while honoring the ascension. Many find here both reverence and warmth, a true feeding without a physical mechanism.",
+          "doctrine": "sacraments"
+        },
+        {
+          "view": "memorialism",
+          "name": "Leaning Memorialism",
+          "blurb": "You tend to see the Supper as a covenant meal of remembrance, proclamation, and pledged allegiance, with Christ present as he is always present among his gathered people. This view guards the once-for-all completeness of the cross and the simplicity of the meal Jesus gave. Many value how it keeps the sign pointing away from itself to the finished work.",
+          "doctrine": "sacraments"
+        }
+      ]
+    },
+    {
+      "slug": "spiritual-gifts",
+      "title": "Do the Miraculous Gifts Continue? A Which View Am I Quiz",
+      "intro": "These questions ask what you currently believe about prophecy, tongues, and healing in the church today. Answer from your convictions as they stand, not from your best or worst experience of them.",
+      "disclaimer": "This is a starting point for self-understanding, not a measure of anyone's experience of the Spirit. Believers filled with love for the same Lord have landed in each of these places, and the doctrine page gives every position its strongest case.",
+      "questions": [
+        {
+          "q": "What were the miraculous gifts chiefly for?",
+          "options": [
+            { "label": "To authenticate the apostles and the arriving word of God, a task now complete", "view": "cessationism" },
+            { "label": "To build up the church in every age until Christ returns", "view": "continuationism" },
+            { "label": "Scripture shows both purposes, and I am slow to declare either one finished", "view": "open-but-cautious" }
+          ]
+        },
+        {
+          "q": "Why do apostolic-scale miracles seem rarer today?",
+          "options": [
+            { "label": "Because the sign gifts served the founding era and ceased with it", "view": "cessationism" },
+            { "label": "They are less rare than the Western church assumes, and expectation shapes what we see", "view": "continuationism" },
+            { "label": "I do not know, and I would rather admit that than force a theory", "view": "open-but-cautious" }
+          ]
+        },
+        {
+          "q": "When someone says God gave them a word for you, your first instinct is to...",
+          "options": [
+            { "label": "Test it against Scripture, which is where God has promised to speak", "view": "cessationism" },
+            { "label": "Listen and weigh it carefully, since the New Testament tells churches to do exactly that", "view": "continuationism" },
+            { "label": "Take it seriously and slowly, assuming neither fraud nor revelation", "view": "open-but-cautious" }
+          ]
+        },
+        {
+          "q": "How do you read the promise that tongues will cease in 1 Corinthians 13?",
+          "options": [
+            { "label": "The partial ceased when the completed witness of Scripture arrived", "view": "cessationism" },
+            { "label": "The partial ceases when the perfect comes, and the perfect is seeing Christ face to face", "view": "continuationism" },
+            { "label": "The passage is about love outlasting every gift, and I hesitate to build a timetable on it", "view": "open-but-cautious" }
+          ]
+        },
+        {
+          "q": "If you must risk an error, which risk do you choose?",
+          "options": [
+            { "label": "Restraint, because counterfeit gifts have wounded real churches", "view": "cessationism" },
+            { "label": "Expectation, because quenching the Spirit is also a sin Scripture names", "view": "continuationism" },
+            { "label": "Neither, so I keep both warnings on the table and move slowly", "view": "open-but-cautious" }
+          ]
+        },
+        {
+          "q": "What do you make of praying for healing today?",
+          "options": [
+            { "label": "God heals today in answer to prayer, but the sign gift of healing belonged to the apostolic era", "view": "cessationism" },
+            { "label": "God still gives gifts of healing to his church, and we should ask boldly", "view": "continuationism" },
+            { "label": "I pray for healing gladly and leave the mechanism entirely in God's hands", "view": "open-but-cautious" }
+          ]
+        },
+        {
+          "q": "Reports of miracles from the global church make you think...",
+          "options": [
+            { "label": "God works everywhere in providence, and frontier missions may see unusual works, but the normative gifts ended", "view": "cessationism" },
+            { "label": "This is exactly what the New Testament would lead me to expect", "view": "continuationism" },
+            { "label": "Some are surely true and some surely are not, and each deserves honest testing", "view": "open-but-cautious" }
+          ]
+        },
+        {
+          "q": "Which sentence is closest to your heart?",
+          "options": [
+            { "label": "God speaks today through the finished word, and it is enough", "view": "cessationism" },
+            { "label": "Earnestly desire the gifts, and test everything, both commands still standing", "view": "continuationism" },
+            { "label": "I will not forbid what Scripture does not forbid, or chase what it does not promise", "view": "open-but-cautious" }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "view": "cessationism",
+          "name": "Leaning Cessationist",
+          "blurb": "You tend to believe the miraculous sign gifts confirmed the apostles and the giving of Scripture, completed that work, and ceased with the apostolic age. This view guards the finality and sufficiency of the written word and protects churches from manufactured wonders. Many find here a deep quiet confidence that God still heals and guides, through means he has already given.",
+          "doctrine": "holy-spirit"
+        },
+        {
+          "view": "continuationism",
+          "name": "Leaning Continuationist",
+          "blurb": "You tend to believe all the gifts continue until Christ returns, since the New Testament never announces their retirement, and that churches should desire them earnestly and test them carefully. This view takes both of Paul's commands at full weight. Many believers around the world find here an expectancy that matches the book of Acts they read.",
+          "doctrine": "holy-spirit"
+        },
+        {
+          "view": "open-but-cautious",
+          "name": "Leaning Open but Cautious",
+          "blurb": "You tend to hold that Scripture never clearly ends the gifts, so you stay open, while the documented abuses keep you sober and slow. This view refuses to forbid what the Bible does not forbid or to chase what it does not promise. Many pastors and thoughtful believers live here, testing everything and holding fast to what is good.",
+          "doctrine": "holy-spirit"
+        }
+      ]
     }
   ]
 }
