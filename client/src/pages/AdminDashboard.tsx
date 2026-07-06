@@ -17,7 +17,7 @@ export default function AdminDashboard() {
   const [messages, setMessages] = useState<ContactMsg[] | null>(null);
   const [messagesError, setMessagesError] = useState(false);
   type Metrics = {
-    audience: { subscribers: number; newThisMonth: number };
+    audience: { subscribers: number; newThisMonth: number; members: number };
     sales: {
       orders: number; revenueCents: number; currency: string;
       byBook: { slug: string; title: string; orders: number; revenueCents: number }[];
@@ -164,7 +164,7 @@ export default function AdminDashboard() {
             <>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
                 {[
-                  { label: "Subscribers", value: String(metrics.audience.subscribers), sub: `+${metrics.audience.newThisMonth} in 30 days`, color: "#2D4A3E" },
+                  { label: "Subscribers", value: String(metrics.audience.subscribers), sub: `${metrics.audience.members} members · +${metrics.audience.newThisMonth} in 30d`, color: "#2D4A3E" },
                   { label: "Ebooks sold", value: String(metrics.sales.orders), sub: "paid orders", color: "#B8963E" },
                   { label: "Revenue", value: money(metrics.sales.revenueCents, metrics.sales.currency), sub: "gross, all ebooks", color: "#2C3E50" },
                   { label: "Published", value: String(metrics.catalog.publishedPosts + metrics.catalog.publishedBooks), sub: `${metrics.catalog.publishedPosts} essays · ${metrics.catalog.publishedBooks} books`, color: "#6B4E9E" },
