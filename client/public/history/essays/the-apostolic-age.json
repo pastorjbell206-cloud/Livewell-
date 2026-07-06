@@ -2,7 +2,7 @@
   "slug": "the-apostolic-age",
   "title": "The Apostolic and Sub-Apostolic Age",
   "subtitle": "From Pentecost to the generation after the apostles. How a scattered, persecuted movement stayed one body across distance, and what held it together before the New Testament was gathered.",
-  "era": "Ancient",
+  "era": "The Apostolic Age",
   "dateRange": "c. AD 30-150",
   "sections": [
     {
@@ -37,15 +37,39 @@
     }
   ],
   "keyFigures": [
-    { "name": "Clement of Rome", "note": "Bishop of Rome who wrote to quarreling Corinth near AD 96, urging order and humility." },
-    { "name": "Ignatius of Antioch", "note": "Bishop martyred at Rome around AD 110, who wrote letters from the road pressing for unity." },
-    { "name": "Polycarp of Smyrna", "note": "Disciple of the apostle John, burned alive in old age, faithful to the end." },
-    { "name": "Paul of Tarsus", "note": "The persecutor turned apostle who planted assemblies across the Roman world." }
+    {
+      "name": "Clement of Rome",
+      "note": "Bishop of Rome who wrote to quarreling Corinth near AD 96, urging order and humility."
+    },
+    {
+      "name": "Ignatius of Antioch",
+      "note": "Bishop martyred at Rome around AD 110, who wrote letters from the road pressing for unity."
+    },
+    {
+      "name": "Polycarp of Smyrna",
+      "note": "Disciple of the apostle John, burned alive in old age, faithful to the end."
+    },
+    {
+      "name": "Paul of Tarsus",
+      "note": "The persecutor turned apostle who planted assemblies across the Roman world."
+    }
   ],
   "sources": [
-    { "title": "The Story of Christianity, Volume 1", "author": "Justo Gonzalez" },
-    { "title": "The Early Church", "author": "Henry Chadwick" },
-    { "title": "Christianity: The First Three Thousand Years", "author": "Diarmaid MacCulloch" },
-    { "title": "Church History in Plain Language", "author": "Bruce Shelley" }
+    {
+      "title": "The Story of Christianity, Volume 1",
+      "author": "Justo Gonzalez"
+    },
+    {
+      "title": "The Early Church",
+      "author": "Henry Chadwick"
+    },
+    {
+      "title": "Christianity: The First Three Thousand Years",
+      "author": "Diarmaid MacCulloch"
+    },
+    {
+      "title": "Church History in Plain Language",
+      "author": "Bruce Shelley"
+    }
   ]
 }

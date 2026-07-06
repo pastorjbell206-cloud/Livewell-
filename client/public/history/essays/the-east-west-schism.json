@@ -2,7 +2,7 @@
   "slug": "the-east-west-schism",
   "title": "The East and West Divide",
   "subtitle": "The slow drift between Greek East and Latin West. Language, authority, the disputed clause in the creed, and the events of 1054. Told fairly to both sides.",
-  "era": "Medieval",
+  "era": "The Early Medieval Church",
   "dateRange": "to AD 1054",
   "sections": [
     {
@@ -37,15 +37,39 @@
     }
   ],
   "keyFigures": [
-    { "name": "Augustine of Hippo", "note": "The Latin father whose work shaped the West but was barely read in the Greek East." },
-    { "name": "Michael Cerularius", "note": "Patriarch of Constantinople at the rupture of 1054." },
-    { "name": "Cardinal Humbert", "note": "Papal legate who laid the excommunication on the altar of Hagia Sophia." },
-    { "name": "Photius of Constantinople", "note": "Ninth-century patriarch whose earlier disputes with Rome foreshadowed the break." }
+    {
+      "name": "Augustine of Hippo",
+      "note": "The Latin father whose work shaped the West but was barely read in the Greek East."
+    },
+    {
+      "name": "Michael Cerularius",
+      "note": "Patriarch of Constantinople at the rupture of 1054."
+    },
+    {
+      "name": "Cardinal Humbert",
+      "note": "Papal legate who laid the excommunication on the altar of Hagia Sophia."
+    },
+    {
+      "name": "Photius of Constantinople",
+      "note": "Ninth-century patriarch whose earlier disputes with Rome foreshadowed the break."
+    }
   ],
   "sources": [
-    { "title": "The Story of Christianity, Volume 1", "author": "Justo Gonzalez" },
-    { "title": "Christianity: The First Three Thousand Years", "author": "Diarmaid MacCulloch" },
-    { "title": "The Christian Tradition, Volume 2", "author": "Jaroslav Pelikan" },
-    { "title": "Church History in Plain Language", "author": "Bruce Shelley" }
+    {
+      "title": "The Story of Christianity, Volume 1",
+      "author": "Justo Gonzalez"
+    },
+    {
+      "title": "Christianity: The First Three Thousand Years",
+      "author": "Diarmaid MacCulloch"
+    },
+    {
+      "title": "The Christian Tradition, Volume 2",
+      "author": "Jaroslav Pelikan"
+    },
+    {
+      "title": "Church History in Plain Language",
+      "author": "Bruce Shelley"
+    }
   ]
 }
