@@ -270,7 +270,58 @@ if (existsSync(BODIES_PATH)) {
     j++;
   }
 }
-const allRecords = records.concat(bridgeRecords);
+// ---------------------------------------------------------------------------
+// Stage 3 — the flagship drafts (2026-07). The ten finished essays in
+// api/_data/draft-essays.json were staged as unpublished DB posts for the
+// admin to publish by hand. With admin publish confirmed, they are served
+// from the static library like the Stage 2 bodies — live without a database
+// write, still overridden by any live DB row of the same slug.
+const DRAFTS_PATH = "api/_data/draft-essays.json";
+const draftRecords = [];
+if (existsSync(DRAFTS_PATH)) {
+  const drafts = JSON.parse(readFileSync(DRAFTS_PATH, "utf8"));
+  const list = Array.isArray(drafts) ? drafts : Object.values(drafts);
+  const seen = new Set(allRecordsSlugs());
+  const BASE3 = Date.parse("2026-07-03T12:00:00Z");
+  let k = 0;
+  for (const d of list) {
+    if (!d || !d.slug || seen.has(d.slug)) continue;
+    const track = LIB_PILLAR_TO_TRACK[d.pillar] || "theology";
+    const pastoral = track === "pastoral-ministry";
+    const minutes = parseInt(String(d.readTime), 10) || Math.max(3, Math.round(String(d.body).split(/\s+/).length / 220));
+    const when = new Date(BASE3 - k * DAY).toISOString();
+    draftRecords.push({
+      id: 3_000_000 + k,
+      title: d.title || titleFromSlug(d.slug),
+      slug: d.slug,
+      body: d.body,
+      excerpt: d.excerpt || excerptFromBody(d.body),
+      pillar: track,
+      readTime: `${minutes} min read`,
+      coverImage: null,
+      published: true,
+      featured: false,
+      contentType: pastoral ? "pastoral" : "general",
+      audience_type: pastoral ? "pastors" : "general",
+      topic: null,
+      format: "article",
+      audience: pastoral ? "pastors" : "individuals",
+      difficulty: "intermediate",
+      readingTimeMinutes: minutes,
+      publishedAt: when,
+      createdAt: when,
+      updatedAt: when,
+    });
+    seen.add(d.slug);
+    k++;
+  }
+}
+
+function allRecordsSlugs() {
+  return records.map((r) => r.slug).concat(bridgeRecords.map((r) => r.slug));
+}
+
+const allRecords = records.concat(bridgeRecords, draftRecords);
 
 const outPath = "api/static-library.generated.ts";
 const banner =
@@ -315,7 +366,7 @@ for (const r of records) {
 }
 writeFileSync(contentDataPath, JSON.stringify(contentData, null, 2) + "\n");
 console.log(`content-data.json: appended ${appended} essays (now ${contentData.posts.length} posts)`);
-console.log(`Wrote ${records.length} draft essays + ${bridgeRecords.length} bridged articles = ${allRecords.length} to ${outPath}`);
+console.log(`Wrote ${records.length} markdown essays + ${bridgeRecords.length} bridged articles + ${draftRecords.length} flagship drafts = ${allRecords.length} to ${outPath}`);
 console.log(`Stripped placeholders from ${stripped} source files`);
 // slug collision sanity-check within the static set
 const seen = new Map();
