@@ -2984,6 +2984,22 @@ async function recordPurchase(session: Stripe.Checkout.Session): Promise<void> {
   });
 }
 
+// Durable record of a new member (a completed membership subscription checkout),
+// so a paying supporter is captured for the member letter even if the success
+// redirect drops. Members live in the subscribers table under source "membership".
+async function recordMember(session: Stripe.Checkout.Session): Promise<void> {
+  const email = session.customer_details?.email || (session.metadata?.customer_email as string) || session.customer_email || null;
+  if (!email) return;
+  const lower = email.toLowerCase();
+  await withConn(async (c) => {
+    await c.execute(
+      "INSERT INTO subscribers (email, name, source) VALUES (?, ?, 'membership') ON DUPLICATE KEY UPDATE source = 'membership'",
+      [lower, null],
+    );
+  });
+  try { await pushToNewsletterProvider(lower, null, "membership"); } catch { /* best-effort */ }
+}
+
 // Stripe webhook. Stripe POSTs here when a checkout completes. We re-retrieve the
 // session from Stripe (which authenticates it far more strongly than trusting the
 // posted body) and record the purchase durably, so a paying customer is never lost
@@ -3004,6 +3020,9 @@ async function stripeWebhook(req: VercelRequest, res: VercelResponse) {
         const paid = session.payment_status === "paid" || session.status === "complete";
         if (paid) {
           try { await recordPurchase(session); } catch { /* best-effort durability */ }
+          if (session.metadata?.kind === "membership") {
+            try { await recordMember(session); } catch { /* best-effort */ }
+          }
         }
       }
     }
@@ -3026,13 +3045,14 @@ async function adminMetrics(req: VercelRequest, res: VercelResponse) {
         try { const [r]: any = await c.query("SHOW TABLES LIKE ?", [t]); return Array.isArray(r) && r.length > 0; } catch { return false; }
       };
       const result: any = {
-        audience: { subscribers: 0, newThisMonth: 0 },
+        audience: { subscribers: 0, newThisMonth: 0, members: 0 },
         sales: { orders: 0, revenueCents: 0, currency: "usd", byBook: [] as any[], recent: [] as any[] },
         catalog: { publishedPosts: 0, publishedBooks: 0 },
       };
       if (await has("subscribers")) {
         try { const [r]: any = await c.query("SELECT COUNT(*) AS n FROM subscribers"); result.audience.subscribers = Number(r?.[0]?.n ?? 0); } catch { /* noop */ }
         try { const [r]: any = await c.query("SELECT COUNT(*) AS n FROM subscribers WHERE createdAt >= DATE_SUB(NOW(), INTERVAL 30 DAY)"); result.audience.newThisMonth = Number(r?.[0]?.n ?? 0); } catch { /* noop */ }
+        try { const [r]: any = await c.query("SELECT COUNT(*) AS n FROM subscribers WHERE source LIKE 'member%'"); result.audience.members = Number(r?.[0]?.n ?? 0); } catch { /* noop */ }
       }
       if (await has("purchases")) {
         try { const [r]: any = await c.query("SELECT COUNT(*) AS n, COALESCE(SUM(amountTotal),0) AS rev, MAX(currency) AS cur FROM purchases"); result.sales.orders = Number(r?.[0]?.n ?? 0); result.sales.revenueCents = Number(r?.[0]?.rev ?? 0); result.sales.currency = r?.[0]?.cur || "usd"; } catch { /* noop */ }
