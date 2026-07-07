@@ -45,7 +45,7 @@ export default function TopicPathway() {
   const slug = params?.slug;
 
   // Loaded data, and any error, are both tagged with the slug + retry nonce so
-  // navigating between pathways never flashes stale content and "Try again"
+  // moving between pathways never flashes stale content and "Try again"
   // resets cleanly.
   const [loaded, setLoaded] = useState<{ slug: string; nonce: number; data: Pathway } | null>(null);
   const [errored, setErrored] = useState<{ slug: string; nonce: number; kind: "notfound" | "failed" } | null>(null);
