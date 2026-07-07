@@ -10,7 +10,7 @@ import { Link, useLocation } from "wouter";
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown, Menu, Search, X } from "lucide-react";
 
-import { SITE_NAV_GROUPS, type SiteNavLink } from "@/lib/siteNav";
+import { SITE_NAV_GROUPS, TABLE_NAV, headerLinks, type SiteNavLink } from "@/lib/siteNav";
 import { PILLAR_ORDER, pillarListingUrl } from "@/lib/subPathways";
 
 /** A grouped link renders as an external anchor or an internal wouter Link. */
@@ -50,6 +50,9 @@ export default function MinimalNav() {
   const [searchQuery, setSearchQuery] = useState("");
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  const isActive = (href: string) =>
+    location === href || location.startsWith(href + "/");
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -269,8 +272,8 @@ export default function MinimalNav() {
             className="desktop-nav"
           >
             {SITE_NAV_GROUPS.map(group => (
+              <div key={group.title} style={{ display: "contents" }}>
               <div
-                key={group.title}
                 style={{ position: "relative" }}
                 onMouseLeave={() => openDropdown === group.title && setOpenDropdown(null)}
               >
@@ -333,7 +336,7 @@ export default function MinimalNav() {
                       zIndex: 300,
                     }}
                   >
-                    {group.links.map(item => (
+                    {headerLinks(group).map(item => (
                       <div
                         key={item.href + item.label}
                         role="menuitem"
@@ -361,6 +364,26 @@ export default function MinimalNav() {
                     ))}
                   </div>
                 )}
+              </div>
+              {/* The Table sits at the top level, right after the tools group,
+                  so "disciple someone" is one glance away — never buried. */}
+              {group.title === "Libraries & Tools" && (
+                <Link
+                  href={TABLE_NAV.href}
+                  style={{
+                    color: isActive(TABLE_NAV.href) ? "var(--mustard-text)" : "var(--ink)",
+                    fontFamily: "var(--U)",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    padding: "8px 12px",
+                    borderBottom: "2px solid var(--mustard)",
+                    whiteSpace: "nowrap",
+                    textDecoration: "none",
+                  }}
+                >
+                  {TABLE_NAV.label}
+                </Link>
+              )}
               </div>
             ))}
 
@@ -501,6 +524,21 @@ export default function MinimalNav() {
             >
               Find Help for What You Are Facing
             </Link>
+            <Link
+              href={TABLE_NAV.href}
+              onClick={() => setMobileOpen(false)}
+              style={{
+                display: "block",
+                padding: "12px 0",
+                fontFamily: "var(--U)",
+                fontSize: "15px",
+                fontWeight: 700,
+                color: "var(--ink)",
+                borderBottom: "1px solid var(--border)",
+              }}
+            >
+              The Table — disciple someone
+            </Link>
             {SITE_NAV_GROUPS.map(group => (
               <div key={group.title}>
                 <div
@@ -554,7 +592,7 @@ export default function MinimalNav() {
                 </div>
                 {openDropdown === group.title && (
                   <div style={{ paddingLeft: "16px", paddingBottom: "8px" }}>
-                    {group.links.map(item => (
+                    {headerLinks(group).map(item => (
                       <div
                         key={item.href + item.label}
                         style={{ borderBottom: "1px solid var(--border)" }}
