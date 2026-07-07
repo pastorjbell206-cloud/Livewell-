@@ -1,17 +1,24 @@
 {
   "studies": [
     {
-      "slug": "the-basics-at-the-table",
-      "title": "The Basics at the Table",
-      "subtitle": "Six sessions for the brand new believer, with every churchy word earned before it is used",
-      "summary": "Church has a vocabulary problem. We say gospel, grace, baptism, communion, testimony, and forget that these words are a foreign language to the person who just came through the door. This study assumes nothing. Six sessions around a table walk a new believer through the things that hold a life: what the gospel actually announces, how to pray without performing, how to read the Bible without fear, why you cannot do this alone, what baptism and the Supper are, and how to tell your own story plainly. Every churchy word gets earned before it gets used. By the end, the new believer is not fluent in church. They are grounded in Christ, which is better.",
+      "slug": "at-the-table",
+      "title": "At the Table",
+      "subtitle": "A six-session study for learning to follow Jesus in an ordinary room",
+      "summary": "Discipleship did not begin in a classroom. It began at tables, on roads, in borrowed rooms. This study is built for the same places: a living room, a kitchen table, a back booth. One person who has walked a little further opens the passage, and the people around the table read, talk, pray, and practice. By the last session, someone at the table is ready to set another one.",
       "sessions": 6
     },
     {
-      "slug": "new-at-the-table",
-      "title": "New at the Table",
-      "subtitle": "Six sessions for the first weeks of a brand new faith, run around a table by the person who pointed the way",
-      "summary": "When someone comes to faith, the worst thing we can do is hand them a building and a schedule and walk away. The first weeks decide a great deal. This study is for the believer who led a friend to Jesus, or is walking beside a brand new one, and wants to ground them in the things that hold: who they now are, what the cross actually did, the Spirit who lives in them, how to talk to the Father, how to live on the Word, and how, sooner than they think, they will be the one pointing the way for someone else. It is built for a kitchen table, not a classroom. Keep it slow, keep it warm, and keep it moving outward.",
+      "slug": "suffering-at-the-table",
+      "title": "Discipling Through Suffering",
+      "subtitle": "Five sessions on walking with someone whose life is falling apart",
+      "summary": "Someone you love is falling apart, and you do not know what to say. This study is for that moment. It is five sessions on the ministry almost no one teaches, walking with a person through grief, illness, loss, or a season of darkness, without lying to them and without leaving them alone. It begins where the friends of Job began, in silence on the ground. It learns the language of lament from the Psalms, refuses the cruelty of tidy answers, meets the God who suffered on a cross, and ends in a hope honest enough to hold real tears. Along the way it keeps a path to professional help in plain view, because some darkness is heavier than friendship alone can carry.",
+      "sessions": 5
+    },
+    {
+      "slug": "leading-a-table",
+      "title": "Leading a Table",
+      "subtitle": "Six sessions that train an ordinary believer to make disciples in a living room, and then to send someone else to do the same",
+      "summary": "Every table in this library needs someone to set it, and that someone is not a professional. This study trains the disciple maker: why Jesus chose tables and proximity over classrooms and crowds, why hospitality is the actual strategy and not the garnish, how to ask instead of lecture, what to do with silence and with the question you cannot answer, how to care for a person in crisis without pretending to be their counselor, and when and how to send someone out to start a table of their own. Run it as a Sunday school class, a leaders' cohort, or one believer training another across a kitchen table. The goal is not a certificate. It is a room full of people who can each set another table.",
       "sessions": 6
     },
     {
@@ -22,10 +29,38 @@
       "sessions": 8
     },
     {
-      "slug": "the-hard-questions-table",
-      "title": "The Hard Questions at the Table",
-      "subtitle": "Six sessions for the table where doubt sits, with every objection stated at full strength before anyone answers it",
-      "summary": "Most churches handle the hard questions by not handling them, and the people carrying those questions eventually carry them out the door. This table works differently. Six sessions take the six questions that end more faith than any others, suffering, the violence in the Bible, the hypocrisy of the church, science, hell, and the question hiding under all of them, and state each objection at its full strength first, in the form its best defenders would recognize, before anyone at the table responds. The rule of the table is honesty, not victory. Nobody is scored, nobody is cornered, and I do not know is an honored answer. The doubter at this table is not a project. They are often the most honest person in the room.",
+      "slug": "multiply-at-the-table",
+      "title": "Multiply the Table",
+      "subtitle": "Five sessions on raising the person you disciple to disciple someone else",
+      "summary": "Discipleship was never meant to end with you. Paul told Timothy to entrust what he heard to faithful people who would teach others also, and in one verse he stacked four generations of the faith. This study is five sessions, meant to be walked one on one with the person you have been pouring into, and it aims at a decision. It moves from the command to multiply, to the chain hidden inside a single verse, to the truth that Jesus trained the twelve to be sent and not to stay, to naming the actual next person your disciple could begin to walk with, to the hardest part, letting them go so the table can become two tables. The goal was always the next disciple, never a permanent audience.",
+      "sessions": 5
+    },
+    {
+      "slug": "new-at-the-table",
+      "title": "New at the Table",
+      "subtitle": "Six sessions for the first weeks of a brand new faith, run around a table by the person who pointed the way",
+      "summary": "When someone comes to faith, the worst thing we can do is hand them a building and a schedule and walk away. The first weeks decide a great deal. This study is for the believer who led a friend to Jesus, or is walking beside a brand new one, and wants to ground them in the things that hold: who they now are, what the cross actually did, the Spirit who lives in them, how to talk to the Father, how to live on the Word, and how, sooner than they think, they will be the one pointing the way for someone else. It is built for a kitchen table, not a classroom. Keep it slow, keep it warm, and keep it moving outward.",
+      "sessions": 6
+    },
+    {
+      "slug": "praying-together-at-the-table",
+      "title": "Praying With the One You Disciple",
+      "subtitle": "Four sessions on teaching someone to pray by praying with them, plainly and out loud",
+      "summary": "Nobody learns to swim from a chalkboard. You learn in the water, with someone beside you who has done it before. Prayer is the same. The disciples did not ask Jesus for a lecture on prayer. They watched him pray and asked him to teach them how. This study is four short sessions for two people, the one discipling and the one learning, and it ends every time the only way prayer is ever really learned, by actually praying together out loud before you leave the table. It moves from the disciples asking to be taught, to the pattern the Lord gave as a frame to fill, to praying out loud without fear because the Father already knows, to carrying the other person to God and letting them hear you do it.",
+      "sessions": 4
+    },
+    {
+      "slug": "reading-together-at-the-table",
+      "title": "Reading the Bible With Someone",
+      "subtitle": "Five sessions that hand a new believer the skill of feeding themselves from Scripture",
+      "summary": "The goal of walking someone through the Bible is not to make them need you. It is to make them able to open the book on a Monday morning with no one else in the room. This study is five sessions, one on one, with a Bible open on the table the whole time. It moves from why their own hunger matters more than your knowledge, to a simple repeatable method they can use alone, to where to start a new reader, to what to do when the text confuses them, to the turn that makes it all count, from reading the Word to doing it. By the last session the other person is meant to be leading the reading, because you have been working yourself out of a job from the start.",
+      "sessions": 5
+    },
+    {
+      "slug": "the-basics-at-the-table",
+      "title": "The Basics at the Table",
+      "subtitle": "Six sessions for the brand new believer, with every churchy word earned before it is used",
+      "summary": "Church has a vocabulary problem. We say gospel, grace, baptism, communion, testimony, and forget that these words are a foreign language to the person who just came through the door. This study assumes nothing. Six sessions around a table walk a new believer through the things that hold a life: what the gospel actually announces, how to pray without performing, how to read the Bible without fear, why you cannot do this alone, what baptism and the Supper are, and how to tell your own story plainly. Every churchy word gets earned before it gets used. By the end, the new believer is not fluent in church. They are grounded in Christ, which is better.",
       "sessions": 6
     },
     {
@@ -36,17 +71,38 @@
       "sessions": 5
     },
     {
-      "slug": "at-the-table",
-      "title": "At the Table",
-      "subtitle": "A six-session study for learning to follow Jesus in an ordinary room",
-      "summary": "Discipleship did not begin in a classroom. It began at tables, on roads, in borrowed rooms. This study is built for the same places: a living room, a kitchen table, a back booth. One person who has walked a little further opens the passage, and the people around the table read, talk, pray, and practice. By the last session, someone at the table is ready to set another one.",
+      "slug": "the-hard-questions-table",
+      "title": "The Hard Questions at the Table",
+      "subtitle": "Six sessions for the table where doubt sits, with every objection stated at full strength before anyone answers it",
+      "summary": "Most churches handle the hard questions by not handling them, and the people carrying those questions eventually carry them out the door. This table works differently. Six sessions take the six questions that end more faith than any others, suffering, the violence in the Bible, the hypocrisy of the church, science, hell, and the question hiding under all of them, and state each objection at its full strength first, in the form its best defenders would recognize, before anyone at the table responds. The rule of the table is honesty, not victory. Nobody is scored, nobody is cornered, and I do not know is an honored answer. The doubter at this table is not a project. They are often the most honest person in the room.",
       "sessions": 6
     },
     {
-      "slug": "leading-a-table",
-      "title": "Leading a Table",
-      "subtitle": "Six sessions that train an ordinary believer to make disciples in a living room, and then to send someone else to do the same",
-      "summary": "Every table in this library needs someone to set it, and that someone is not a professional. This study trains the disciple maker: why Jesus chose tables and proximity over classrooms and crowds, why hospitality is the actual strategy and not the garnish, how to ask instead of lecture, what to do with silence and with the question you cannot answer, how to care for a person in crisis without pretending to be their counselor, and when and how to send someone out to start a table of their own. Run it as a Sunday school class, a leaders' cohort, or one believer training another across a kitchen table. The goal is not a certificate. It is a room full of people who can each set another table.",
+      "slug": "the-harder-questions-table",
+      "title": "The Harder Questions at the Table",
+      "subtitle": "Six sessions on the questions the first hard-questions study did not answer",
+      "summary": "The first hard-questions study sat with suffering, the violence in the Old Testament, the hypocrites, science, and hell. These are the other six that empty a pew and end a friendship when no one will take them seriously. Is Jesus really the only way. What about the person who never heard. What about the Bible and sexuality, where the church has so often been right in what it held and wrong in how it held it. Can we even trust the Bible we have. What about the sincerity of other religions. And is doubt itself the opposite of faith. This study is built for a table where the question is not an attack and no one has to pretend to be sure. The goal is never to win the argument. It is to keep the person at the table.",
+      "sessions": 6
+    },
+    {
+      "slug": "walking-with-one",
+      "title": "Walking With One",
+      "subtitle": "Five sessions on discipling a single person the organic way, life on life, not a program",
+      "summary": "Jesus could have started a movement with a crowd. Instead he took twelve men up a mountain and gave them years of his ordinary life before he ever sent them anywhere. That is the model this study recovers, discipleship as one person walking with one person, life on life, not a class you sign up for and finish. Five sessions trace the pattern. Jesus choosing a few instead of a mass. Presence coming before mission, the being with that is itself the training. Paul sharing not only the gospel but his own self. The way real formation happens in the cracks of a normal week, a meal, a drive, an honest hour, the way Jesus taught two men the whole of Scripture on a walk to Emmaus. And imitation over information, the sober truth that the person you are walking with is learning less from what you say than from watching how you live. It is written for two people at once, the one who wants to invest in a single person instead of running a program, and the person being invested in who wants to understand what they are in.",
+      "sessions": 5
+    },
+    {
+      "slug": "when-it-gets-hard-at-the-table",
+      "title": "When Discipling Gets Hard",
+      "subtitle": "Five sessions for the disciple-maker whose person has stalled, sinned, doubted, or walked away",
+      "summary": "Most people quit discipling in the middle. Not at the start, when it is new and the person is eager, and not at the finish, because they never reach one. They quit in the sagging middle, when the fruit is slow and the person disappoints them and every week feels like proof that they are doing it wrong. This study is for that middle. Five sessions for the person who took someone on and now wants to give up or blame themselves. It covers the slow seed that grows while the sower sleeps, the restoring of a person who has fallen, the doubt that is not the enemy of faith, the one who walks away and the porch light you keep on, and the truth underneath all of it, that you are a sower and a servant and not the Savior. Faithfulness, not results, is the assignment.",
+      "sessions": 5
+    },
+    {
+      "slug": "who-me-at-the-table",
+      "title": "Who, Me? At the Table",
+      "subtitle": "Six sessions for the ordinary Christian who is sure they are not qualified to disciple anyone",
+      "summary": "Most believers have quietly decided that discipling other people is a job for pastors, for experts, for the ones who went to seminary and never seem to doubt. This study is six sessions written to that fear, one on one or with two or three, over coffee or a meal. It walks through the twelve who were nobodies, the plain truth that you are not the source of anyone's change, the freedom of being only one step ahead, the honesty of I do not know so let us find out together, the courage to start before you feel ready, and the only requirement that ever actually mattered. The aim is simple. By the last session the reader has stopped waiting to be qualified and has begun walking one real person toward Jesus.",
       "sessions": 6
     }
   ]
