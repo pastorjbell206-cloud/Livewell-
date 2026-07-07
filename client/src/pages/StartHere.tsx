@@ -15,6 +15,7 @@ import {
   BLIND_SPOTS_THESIS,
   type Chapter,
 } from "@/lib/blindSpots";
+import { SUBSTACK_URL } from "@/lib/site";
 
 function ChapterRow({ chapter, index }: { chapter: Chapter; index: number }) {
   const num = String(index + 1).padStart(2, "0");
@@ -86,7 +87,7 @@ function ChapterRow({ chapter, index }: { chapter: Chapter; index: number }) {
                 fontWeight: 600,
                 textTransform: "uppercase",
                 letterSpacing: "0.16em",
-                color: "var(--ink-muted)",
+                color: "var(--mustard-text)",
                 border: "1px solid var(--border)",
                 borderRadius: "var(--radius-pill)",
                 padding: "3px 10px",
@@ -94,7 +95,7 @@ function ChapterRow({ chapter, index }: { chapter: Chapter; index: number }) {
                 whiteSpace: "nowrap",
               }}
             >
-              Coming to the site
+              Read on Substack →
             </span>
           )}
         </div>
@@ -126,7 +127,18 @@ function ChapterRow({ chapter, index }: { chapter: Chapter; index: number }) {
       </Link>
     );
   }
-  return inner;
+  // Not yet imported: send the reader to the real published essay on Substack
+  // (an exact post URL if we have one, else the archive) instead of a dead end.
+  return (
+    <a
+      href={chapter.substackUrl || `${SUBSTACK_URL}/archive`}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ display: "block", textDecoration: "none" }}
+    >
+      {inner}
+    </a>
+  );
 }
 
 export default function StartHere() {
