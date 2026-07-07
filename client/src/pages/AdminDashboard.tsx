@@ -33,6 +33,7 @@ export default function AdminDashboard() {
     topPaths: { path: string; views: number }[];
     daily: { date: string; views: number }[];
     referrers?: { host: string; views: number }[];
+    reads?: { last30: number; allTime: number };
   };
   const [analytics, setAnalytics] = useState<Analytics | null>(null);
   const [analyticsError, setAnalyticsError] = useState(false);
@@ -194,8 +195,8 @@ export default function AdminDashboard() {
         <div className="mb-12">
           <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "#1A1A1A" }}>Business at a glance</h2>
           <p className="font-body text-sm mb-4" style={{ color: "#6B7280" }}>
-            The numbers that matter: who is on the list, what has sold, and how much is published. Depth metrics
-            (essays finished, returning readers) will land here once reading events are instrumented.
+            The numbers that matter: who is on the list, what has sold, and how much is published.
+            Essays finished lives under Traffic below.
           </p>
           {metricsError && (
             <p className="font-body text-sm" style={{ color: "#9B2C2C" }}>
@@ -271,6 +272,7 @@ export default function AdminDashboard() {
                   { label: "Visits · 7 days", value: analytics.views.last7.toLocaleString(), sub: `${analytics.visitors.last7.toLocaleString()} unique visitors`, color: "#2D4A3E" },
                   { label: "Visits · 30 days", value: analytics.views.last30.toLocaleString(), sub: `${analytics.visitors.last30.toLocaleString()} unique visitors`, color: "#B8963E" },
                   { label: "All-time views", value: analytics.views.allTime.toLocaleString(), sub: "since tracking began", color: "#6B4E9E" },
+                  ...(analytics.reads ? [{ label: "Essays finished", value: analytics.reads.last30.toLocaleString(), sub: `read to the end · 30d (${analytics.reads.allTime.toLocaleString()} all-time)`, color: "#2D4A3E" }] : []),
                 ].map((m) => (
                   <div key={m.label} className="flex flex-col p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF", borderTop: `5px solid ${m.color}`, boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
                     <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>{m.label}</div>

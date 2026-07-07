@@ -12,6 +12,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useLocation, useParams } from "wouter";
 import { Markdown } from "@/components/Markdown";
+import { recordReadEvent } from "@/components/ReadDepthBeacon";
 import { ArrowLeft, Bookmark, Share2, User } from "lucide-react";
 
 import Layout from "@/components/Layout";
@@ -447,6 +448,7 @@ export default function ArticleDetail() {
         if (entries.some(entry => entry.isIntersecting) && !readCompleteRef.current) {
           readCompleteRef.current = true;
           trackEssayComplete(postSlug);
+          recordReadEvent(`/writing/${postSlug}`);
           observer.disconnect();
         }
       },
@@ -749,9 +751,10 @@ export default function ArticleDetail() {
           </div>
 
           {/* Depth-telemetry sentinel — a 1px, aria-hidden anchor at the foot
-              of the essay body; entering the viewport marks a completed read
-              (see lib/telemetry). It renders nothing visible and touches
-              neither the prose nor the reader-action controls below. */}
+              of the essay body; entering the viewport marks a completed read.
+              One observer, two sinks: Vercel Analytics (lib/telemetry) and the
+              site's own read_events table (recordReadEvent), which feeds the
+              admin dashboard's "Essays finished" tile. */}
           <div ref={bodyEndRef} aria-hidden style={{ height: 1 }} />
 
           {/* Reader actions */}

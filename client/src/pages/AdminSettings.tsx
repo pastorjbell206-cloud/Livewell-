@@ -1,8 +1,18 @@
 import AdminLayout from "@/components/AdminLayout";
 import { trpc } from "@/lib/trpc";
 import { useState, useEffect } from "react";
-import { Loader2, Save } from "lucide-react";
+import { Loader2, Save, CheckCircle2, XCircle } from "lucide-react";
 import { toast } from "sonner";
+
+// The services the platform depends on, with what to do when one is off.
+const INTEGRATIONS: { key: string; label: string; whenOff: string }[] = [
+  { key: "DATABASE_URL", label: "Database", whenOff: "Nothing dynamic works — add DATABASE_URL in Vercel." },
+  { key: "STRIPE_SECRET_KEY", label: "Stripe (checkout)", whenOff: "No ebook or membership can charge — add STRIPE_SECRET_KEY in Vercel." },
+  { key: "JWT_SECRET", label: "Admin sessions", whenOff: "Admin login cannot issue sessions — add JWT_SECRET in Vercel." },
+  { key: "ADMIN_PASSWORD_HASH", label: "Admin password", whenOff: "No one can log in — add ADMIN_PASSWORD_HASH in Vercel." },
+  { key: "MAILCHIMP", label: "Mailchimp (email)", whenOff: "Optional. Signups store locally + hand off to Substack either way." },
+  { key: "SEED_KEY", label: "Seed key (API admin)", whenOff: "Optional. Header-authenticated admin endpoints stay closed without it." },
+];
 
 export default function AdminSettings() {
   const [form, setForm] = useState({
@@ -11,9 +21,19 @@ export default function AdminSettings() {
     stripeMembershipPriceId: "",
   });
   const [isLoading, setIsLoading] = useState(false);
+  const [configured, setConfigured] = useState<Record<string, boolean> | null>(null);
 
   const getAllSettingsQuery = trpc.settings.getAll.useQuery();
   const setSettingsMutation = trpc.settings.setMultiple.useMutation();
+
+  useEffect(() => {
+    let active = true;
+    fetch("/api/admin/status", { credentials: "include" })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((d) => active && d?.configured && setConfigured(d.configured))
+      .catch(() => { /* panel shows its unavailable note */ });
+    return () => { active = false; };
+  }, []);
 
   useEffect(() => {
     if (getAllSettingsQuery.data) {
@@ -53,6 +73,30 @@ export default function AdminSettings() {
         <p className="font-body mb-8" style={{ color: "var(--ink-muted)" }}>
           Configure your external links and connections
         </p>
+
+        {/* Integrations at a glance — which services are actually connected. */}
+        <div className="max-w-2xl mb-10 rounded-lg" style={{ background: "#FFFFFF", border: "1px solid #E5E7EB" }}>
+          <div className="px-5 pt-4 pb-2">
+            <h2 className="font-display text-xl font-bold" style={{ color: "#1A1A1A" }}>Integrations</h2>
+            <p className="font-body text-sm" style={{ color: "#6B7280" }}>
+              {configured ? "What is connected on the live server right now." : "Loading connection status… (needs the production API and an admin session)"}
+            </p>
+          </div>
+          {configured && INTEGRATIONS.map((i, idx) => (
+            <div key={i.key} className="flex flex-wrap items-center justify-between gap-2 px-5 py-2.5" style={{ borderTop: idx === 0 ? "1px solid #E5E7EB" : "1px solid #F3F4F6" }}>
+              <span className="font-ui text-sm" style={{ color: "#1A1A1A" }}>{i.label}</span>
+              {configured[i.key] ? (
+                <span className="flex items-center gap-1 font-ui text-xs font-semibold" style={{ color: "#2E7D32" }}>
+                  <CheckCircle2 size={14} /> Connected
+                </span>
+              ) : (
+                <span className="flex items-center gap-1 font-ui text-xs" style={{ color: "#9B2C2C" }} title={i.whenOff}>
+                  <XCircle size={14} /> Not connected — {i.whenOff}
+                </span>
+              )}
+            </div>
+          ))}
+        </div>
 
         <form onSubmit={handleSubmit} className="max-w-2xl space-y-8">
           {/* Substack */}
