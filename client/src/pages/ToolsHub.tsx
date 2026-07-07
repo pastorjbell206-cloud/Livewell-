@@ -208,6 +208,27 @@ const TOOLS = [
     icon: BookMarked,
     color: "var(--ink)",
   },
+  {
+    title: "The Consistency Check",
+    description: "A searching self-examination of whether you defend truth selectively — one standard for your own side, another for your opponents. A mirror, not a weapon, and explicitly not for scoring anyone else.",
+    href: "/disruption/consistency",
+    icon: Shield,
+    color: "var(--ink)",
+  },
+  {
+    title: "The Party Scorecard",
+    description: "How close is each party to the Bible, theme by theme? An even-handed tally built to come out split. The real test is whether you can name where your own side falls short.",
+    href: "/nation/scorecard",
+    icon: Target,
+    color: "var(--ink2)",
+  },
+  {
+    title: "If We Had a Biblical Government",
+    description: "The Year of Jubilee, gleaning, the warning against kings — what Scripture's own economic principles might look like as policy, and why both parties would hate the result.",
+    href: "/nation/policy",
+    icon: Church,
+    color: "var(--ink)",
+  },
 ];
 
 export default function ToolsHub() {

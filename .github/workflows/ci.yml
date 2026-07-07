@@ -27,13 +27,14 @@ jobs:
       - name: Typecheck
         run: pnpm run check
 
-      - name: Content gates (formation + life + table + study-guide + theology validators)
+      - name: Content gates (formation + life + table + study-guide + theology + politics validators)
         run: |
           node scripts/validate-formation.mjs
           node scripts/validate-life.mjs
           node scripts/validate-table.mjs
           node scripts/validate-studyguides.mjs
           node scripts/validate-theology.mjs
+          node scripts/validate-politics.mjs
 
       - name: Test
         run: pnpm test

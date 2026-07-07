@@ -407,6 +407,11 @@ function Router() {
         <Route path="/nation/empire"><NationEssay slug="empire" /></Route>
         <Route path="/nation/which-party"><NationEssay slug="which-party" /></Route>
         <Route path="/nation/render"><NationEssay slug="render" /></Route>
+        <Route path="/nation/christian-nationalism"><NationEssay slug="christian-nationalism" /></Route>
+        <Route path="/nation/nationalism-history"><NationEssay slug="nationalism-history" /></Route>
+        <Route path="/nation/power-and-church"><NationEssay slug="power-and-church" /></Route>
+        <Route path="/nation/progressive-captivity"><NationEssay slug="progressive-captivity" /></Route>
+        <Route path="/nation/compassion-and-coercion"><NationEssay slug="compassion-and-coercion" /></Route>
         <Route path="/lament"><PropheticLament /></Route>
         <Route path="/nation/scorecard"><NationScorecard /></Route>
         <Route path="/nation/policy"><NationPolicy /></Route>

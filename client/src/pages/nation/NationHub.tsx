@@ -22,6 +22,11 @@ const ITEMS = [
   { href: "/nation/theocracy", kind: "The history", title: "What an Old Testament Theocracy Actually Was", desc: "How ancient Israel was really governed, the strange parts included, and why it was a one-time thing that cannot be rebuilt." },
   { href: "/nation/policy", kind: "A tool", title: "If We Actually Had a Biblical Government", desc: "The Year of Jubilee, gleaning, the warning against kings. What the principles might look like as policy, and why both parties would hate it." },
   { href: "/nation/empire", kind: "The warning", title: "The Danger of Empire", desc: "From Babel to Babylon to Rome to now. Every empire demands worship, and the church keeps being seduced by power, on the left and the right." },
+  { href: "/nation/christian-nationalism", kind: "The definition", title: "What Christian Nationalism Actually Is", desc: "The scholarship and the data, the honest lines it is not, and why a sincere believer finds it attractive before it becomes idolatry." },
+  { href: "/nation/nationalism-history", kind: "The history", title: "How We Got Here", desc: "The dated arc from the Puritan errand to manifest destiny to the Cold War fusion to the Religious Right. How the story of a Christian America was built." },
+  { href: "/nation/power-and-church", kind: "The warning", title: "When Power Takes the Church", desc: "What history keeps showing. Constantine, the German Christians and Barmen, slavery's Bible, apartheid, and the pattern that crosses every aisle." },
+  { href: "/nation/progressive-captivity", kind: "The other captivity", title: "When the Faith Dissolves Into a Cause", desc: "The left's version of the same trade. The Social Gospel, the subtraction of the offense, and a Christianity with nothing the culture is not already saying." },
+  { href: "/nation/compassion-and-coercion", kind: "The other captivity", title: "When Compassion Hardens Into Coercion", desc: "How a real virtue becomes captive when it fuses with power to compel. The mirror of the right's will to power, named with the same grief." },
 ];
 
 export default function NationHub() {
