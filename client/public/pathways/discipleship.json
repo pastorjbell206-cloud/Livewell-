@@ -1,0 +1,64 @@
+{
+  "slug": "discipleship",
+  "title": "Making Disciples at the Table",
+  "subtitle": "Discipleship without a program — four essays, a study, and a book.",
+  "forWhom": "For the ordinary Christian with no title and no training who suspects that following Jesus was always meant to be handed on, not just attended.",
+  "movements": [
+    {
+      "kind": "read",
+      "heading": "Read these first",
+      "note": "Start with why attendance is not discipleship, then move to the table Jesus actually used and the formation happening to you whether you chose it or not.",
+      "items": [
+        {
+          "label": "Building a Culture of Discipleship, Not Just Attendance",
+          "href": "/writing/culture-discipleship-not-attendance",
+          "blurb": "A full building on Sunday can still make no disciples. The metrics lie."
+        },
+        {
+          "label": "The Meal That Was Supposed to Make Us One",
+          "href": "/writing/the-table-that-divides",
+          "blurb": "The table Jesus left to unite us became the thing we argue over. Recovering the point."
+        },
+        {
+          "label": "Why Just Agreeing With Jesus Isn't Enough",
+          "href": "/writing/why-hearing-isnt-enough",
+          "blurb": "Assent is not apprenticeship. He asked for followers, not fans."
+        },
+        {
+          "label": "The Machine That Forms You",
+          "href": "/writing/the-machine-that-forms-you",
+          "blurb": "You are being discipled every day — by a feed, if not by a person."
+        }
+      ]
+    },
+    {
+      "kind": "study",
+      "heading": "Then set a table",
+      "note": "The Basics at the Table is a guided study for starting with one person — the meal, the text, the question, and the sending, the way Jesus taught it.",
+      "items": [
+        {
+          "label": "The Basics at the Table — a study for disciplers",
+          "href": "/table/the-basics-at-the-table",
+          "blurb": "A work-through study that ends with you discipling someone by name."
+        }
+      ]
+    },
+    {
+      "kind": "book",
+      "heading": "Then read the book, free",
+      "note": "Come to the Table recovers Jesus's method for people with no training: disciple-making in ordinary homes. By the last chapter you will have set your first table. Free to read.",
+      "items": [
+        {
+          "label": "Come to the Table — read free",
+          "href": "/read/come-to-the-table",
+          "blurb": "Twelve chapters on disciple making in homes for ordinary Christians. The complete book, free."
+        },
+        {
+          "label": "Find James's books in the bookstore",
+          "href": "/books",
+          "blurb": "Print and ebook editions of the full library."
+        }
+      ]
+    }
+  ]
+}

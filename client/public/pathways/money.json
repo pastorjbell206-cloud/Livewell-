@@ -1,0 +1,64 @@
+{
+  "slug": "money",
+  "title": "Money and the Heart",
+  "subtitle": "What the heart does with treasure — four essays, a study, and a book.",
+  "forWhom": "For the worried and the comfortable alike — the reader who suspects their bank statement is a truer confession than their doctrine.",
+  "movements": [
+    {
+      "kind": "read",
+      "heading": "Read these first",
+      "note": "Begin with what Jesus actually said, then follow the money past the personal budget to the poor at the gate.",
+      "items": [
+        {
+          "label": "What the Bible Actually Says About Money",
+          "href": "/writing/what-the-bible-says-about-money",
+          "blurb": "More than two thousand verses, and almost none of them flatter us."
+        },
+        {
+          "label": "What Jesus Said About Worry and Money",
+          "href": "/writing/what-jesus-said-about-worry-and-money",
+          "blurb": "You cannot serve God and mammon. He said it as a warning, not a paradox."
+        },
+        {
+          "label": "What the Jubilee Means",
+          "href": "/writing/what-jubilee-means",
+          "blurb": "An economy God built to reset every fifty years, and why we quietly filed it under metaphor."
+        },
+        {
+          "label": "The Poor Are Not a Ministry Category — They Are the Test of the Church",
+          "href": "/writing/poor-not-ministry-category",
+          "blurb": "Scripture does not treat the poor as a program. It treats them as the exam."
+        }
+      ]
+    },
+    {
+      "kind": "study",
+      "heading": "Then work the study",
+      "note": "Where Your Treasure Is is a five-session study on greed, contentment, debt, and generosity — the freedom Christ offers the worried and the wealthy at the same table.",
+      "items": [
+        {
+          "label": "Where Your Treasure Is — a study on money",
+          "href": "/studyguides/money",
+          "blurb": "Five sessions on what the heart does with what it has."
+        }
+      ]
+    },
+    {
+      "kind": "book",
+      "heading": "Then read the book, free",
+      "note": "On Money & Stewardship gathers the long-form work — debt, generosity, tithing, contentment, and what Jesus meant by mammon. The full book, free.",
+      "items": [
+        {
+          "label": "On Money & Stewardship — read free",
+          "href": "/read/essays-money-stewardship",
+          "blurb": "Sixteen chapters on treasure and the heart. Free to read in full."
+        },
+        {
+          "label": "Find James's books in the bookstore",
+          "href": "/books",
+          "blurb": "Print and ebook editions of the full library."
+        }
+      ]
+    }
+  ]
+}
