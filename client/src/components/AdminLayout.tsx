@@ -17,9 +17,19 @@ import {
   PanelLeftClose,
   PanelLeft,
   ChevronRight,
+  Rocket,
+  DownloadCloud,
+  FilePlus2,
+  Copy,
+  Map,
 } from "lucide-react";
 
-/** Grouped navigation: Content, then Engagement, then System. */
+/**
+ * Grouped navigation. Every admin route lives in exactly one group so nothing
+ * is reachable only by typing the URL. Order runs top-down by how often it is
+ * used: your writing first, then getting it live, then the audience, then the
+ * occasional setup tools.
+ */
 const NAV_GROUPS: { group: string; items: { href: string; label: string; icon: typeof LayoutDashboard }[] }[] = [
   {
     group: "Content",
@@ -32,18 +42,28 @@ const NAV_GROUPS: { group: string; items: { href: string; label: string; icon: t
     ],
   },
   {
-    group: "Engagement",
+    group: "Publishing",
     items: [
-      { href: "/admin/moderation", label: "Moderation", icon: MessageSquare },
-      { href: "/admin/notifications", label: "Notifications", icon: Bell },
+      { href: "/admin/publish-content", label: "Publish & Sell", icon: Rocket },
+      { href: "/admin/sync", label: "Content Sync", icon: RefreshCw },
+      { href: "/admin/import-substack", label: "Import from Substack", icon: DownloadCloud },
+      { href: "/admin/load-drafts", label: "Load Drafts", icon: FilePlus2 },
+    ],
+  },
+  {
+    group: "Audience",
+    items: [
       { href: "/admin/subscribers", label: "Subscribers", icon: Users },
+      { href: "/admin/notifications", label: "Notifications", icon: Bell },
+      { href: "/admin/moderation", label: "Moderation", icon: MessageSquare },
     ],
   },
   {
     group: "System",
     items: [
-      { href: "/admin/sync", label: "Content Sync", icon: RefreshCw },
       { href: "/admin/settings", label: "Settings", icon: Settings },
+      { href: "/admin/setup-navigation", label: "Navigation Setup", icon: Map },
+      { href: "/admin/deduplicate", label: "Deduplicate", icon: Copy },
     ],
   },
 ];
