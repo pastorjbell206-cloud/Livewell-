@@ -121,10 +121,13 @@ for (const entry of list) {
   const slug = entry.slug;
   const file = join(BOOKS_DIR, `${slug}.json`);
   if (!existsSync(file)) continue;
+  // Never overwrite a hand-made cover; only fill gaps.
+  const out = join(BOOKS_DIR, `${slug}.svg`);
+  if (existsSync(out)) continue;
   const book = JSON.parse(readFileSync(file, "utf8"));
   const eyebrow = PILLAR_EYEBROW[book.pillar] || "LIVEWELL BOOKS";
   const svg = coverSvg({ title: book.title, subtitle: book.subtitle, eyebrow });
-  writeFileSync(join(BOOKS_DIR, `${slug}.svg`), svg);
+  writeFileSync(out, svg);
   written++;
 }
 console.log(`Wrote ${written} book covers to ${BOOKS_DIR}/<slug>.svg`);
