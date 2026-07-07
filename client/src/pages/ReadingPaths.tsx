@@ -1,5 +1,6 @@
 import { useLocation } from "wouter";
 import { SEOMeta } from "@/components/SEOMeta";
+import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
 
 interface PathArticle {
   title: string;
@@ -342,7 +343,7 @@ export default function ReadingPaths() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))",
               gap: "1.25rem",
             }}
           >
@@ -354,13 +355,13 @@ export default function ReadingPaths() {
                   background: "#FFFFFF",
                   border: "1px solid rgba(26, 26, 26, 0.08)",
                   borderRadius: "2px",
-                  padding: "1.75rem",
+                  overflow: "hidden",
+                  padding: 0,
                   cursor: "pointer",
                   textAlign: "left",
                   transition: "border-color 0.2s, box-shadow 0.2s",
                   display: "flex",
-                  flexDirection: "column",
-                  gap: "0.75rem",
+                  gap: "1.25rem",
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.borderColor = "var(--mustard)";
@@ -375,39 +376,69 @@ export default function ReadingPaths() {
               >
                 <div
                   style={{
-                    fontFamily: "var(--U)",
-                    fontSize: "0.75rem",
-                    fontWeight: 500,
-                    letterSpacing: "0.18em",
-                    textTransform: "uppercase",
-                    color: "var(--mustard)",
+                    width: "92px",
+                    flexShrink: 0,
+                    alignSelf: "flex-start",
+                    aspectRatio: "3 / 4",
+                    overflow: "hidden",
                   }}
                 >
-                  PATH {path.id}
+                  <GeneratedCover
+                    title={path.title}
+                    eyebrow="Reading Path"
+                    variant={
+                      coverThemeFor(`${path.title} ${path.introduction}`)
+                        .variant
+                    }
+                    style={{ width: "100%", height: "100%" }}
+                  />
                 </div>
-                <h3
+                <div
                   style={{
-                    fontFamily: "var(--F)",
-                    fontSize: "1.25rem",
-                    fontWeight: 400,
-                    color: "var(--charcoal)",
-                    lineHeight: 1.25,
-                    margin: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.75rem",
+                    padding: "1.75rem 1.75rem 1.75rem 0",
+                    flex: 1,
+                    minWidth: 0,
                   }}
                 >
-                  {path.title}
-                </h3>
-                <p
-                  style={{
-                    fontFamily: "var(--U)",
-                    fontSize: "0.8rem",
-                    color: "var(--ink-muted)",
-                    lineHeight: 1.6,
-                    margin: 0,
-                  }}
-                >
-                  {path.articles.length} essays &middot; {path.estimatedTime}
-                </p>
+                  <div
+                    style={{
+                      fontFamily: "var(--U)",
+                      fontSize: "0.75rem",
+                      fontWeight: 500,
+                      letterSpacing: "0.18em",
+                      textTransform: "uppercase",
+                      color: "var(--mustard)",
+                    }}
+                  >
+                    PATH {path.id}
+                  </div>
+                  <h3
+                    style={{
+                      fontFamily: "var(--F)",
+                      fontSize: "1.25rem",
+                      fontWeight: 400,
+                      color: "var(--charcoal)",
+                      lineHeight: 1.25,
+                      margin: 0,
+                    }}
+                  >
+                    {path.title}
+                  </h3>
+                  <p
+                    style={{
+                      fontFamily: "var(--U)",
+                      fontSize: "0.8rem",
+                      color: "var(--ink-muted)",
+                      lineHeight: 1.6,
+                      margin: 0,
+                    }}
+                  >
+                    {path.articles.length} essays &middot; {path.estimatedTime}
+                  </p>
+                </div>
               </button>
             ))}
           </div>

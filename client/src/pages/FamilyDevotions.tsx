@@ -9,6 +9,7 @@ import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { GeneratedCover } from "@/components/GeneratedCover";
 
 interface Weekly {
   id: string; title: string; theme: string; passage: string; passageText: string;
@@ -51,9 +52,14 @@ export default function FamilyDevotions() {
       <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", overflow: "hidden" }}>
         <button type="button" onClick={() => setOpen(isOpen ? null : id)} aria-expanded={isOpen}
           style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px", padding: "16px var(--s-4)", background: "none", border: "none", cursor: "pointer", textAlign: "left" }}>
-          <span>
-            <span style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard-text)" }}>{eyebrow}</span>
-            <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", marginTop: "4px" }}>{title}</span>
+          <span style={{ display: "flex", alignItems: "center", gap: "14px", minWidth: 0 }}>
+            <span aria-hidden="true" style={{ display: "block", width: "54px", flexShrink: 0, aspectRatio: "3 / 4", overflow: "hidden", borderRadius: "var(--radius-sm)", border: "1px solid var(--border)" }}>
+              <GeneratedCover title={title} eyebrow="Family Devotions" variant="cream" style={{ width: "100%", height: "100%" }} />
+            </span>
+            <span style={{ minWidth: 0 }}>
+              <span style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard-text)" }}>{eyebrow}</span>
+              <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", marginTop: "4px" }}>{title}</span>
+            </span>
           </span>
           <ChevronDown size={18} aria-hidden style={{ flexShrink: 0, color: "var(--ink-muted)", transform: isOpen ? "rotate(180deg)" : "none", transition: "transform .2s" }} />
         </button>
