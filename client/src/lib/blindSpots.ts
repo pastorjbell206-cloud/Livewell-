@@ -27,6 +27,14 @@ export interface Chapter {
   date?: string;
   /** True once the essay resolves on this site; false while Substack-only. */
   available: boolean;
+  /**
+   * Direct Substack post URL. While a chapter is Substack-only
+   * (`available: false`), the Start Here guide links here so a reader reaches
+   * the real published essay instead of a dead end. If omitted, the guide
+   * falls back to the Substack archive. Paste exact post URLs here as you have
+   * them; drop the field (or set available: true) once the essay is imported.
+   */
+  substackUrl?: string;
 }
 
 export interface GuideSection {
