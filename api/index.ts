@@ -3131,6 +3131,81 @@ async function adminMetrics(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+// Visit tracking. A tiny client beacon POSTs { path, referrer, visitorId } on
+// every route change; this records one row. The table is created lazily so a
+// fresh install never errors, and writes are best-effort (a failed insert must
+// never break a page view). Public + rate-limited; no personal data beyond a
+// random client id used only to separate unique visitors from raw hits.
+let pageViewsReady = false;
+async function ensurePageViewsTable(c: any) {
+  if (pageViewsReady) return;
+  await c.execute(`CREATE TABLE IF NOT EXISTS page_views (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    path VARCHAR(512) NOT NULL,
+    referrer VARCHAR(512),
+    visitorId VARCHAR(64),
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+    INDEX idx_pv_created (createdAt),
+    INDEX idx_pv_path (path)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`);
+  pageViewsReady = true;
+}
+
+async function recordPageView(req: VercelRequest, res: VercelResponse) {
+  if (req.method !== "POST") return json(res, 405, { ok: false });
+  // Generous limit: a reader clicking through the site should never be blocked.
+  if (rateLimited(req, "track", 240, 60 * 1000)) return json(res, 200, { ok: true });
+  try {
+    const body = await readBody(req);
+    let path = String(body?.path || "").slice(0, 512);
+    if (!path || path[0] !== "/") return json(res, 200, { ok: true }); // ignore junk quietly
+    if (path.startsWith("/admin")) return json(res, 200, { ok: true }); // do not count your own admin visits
+    const referrer = body?.referrer ? String(body.referrer).slice(0, 512) : null;
+    const visitorId = body?.visitorId ? String(body.visitorId).slice(0, 64) : null;
+    await withConn(async (c) => {
+      await ensurePageViewsTable(c);
+      await c.execute("INSERT INTO page_views (path, referrer, visitorId) VALUES (?, ?, ?)", [path, referrer, visitorId]);
+    });
+  } catch { /* best-effort: never break a page view */ }
+  return json(res, 200, { ok: true });
+}
+
+async function adminAnalytics(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  try {
+    const out = await withConn(async (c) => {
+      await ensurePageViewsTable(c);
+      const one = async (sql: string): Promise<number> => {
+        try { const [r]: any = await c.query(sql); return Number(r?.[0]?.n ?? 0); } catch { return 0; }
+      };
+      const views = {
+        today: await one("SELECT COUNT(*) AS n FROM page_views WHERE createdAt >= CURDATE()"),
+        last7: await one("SELECT COUNT(*) AS n FROM page_views WHERE createdAt >= DATE_SUB(NOW(), INTERVAL 7 DAY)"),
+        last30: await one("SELECT COUNT(*) AS n FROM page_views WHERE createdAt >= DATE_SUB(NOW(), INTERVAL 30 DAY)"),
+        allTime: await one("SELECT COUNT(*) AS n FROM page_views"),
+      };
+      const visitors = {
+        last7: await one("SELECT COUNT(DISTINCT visitorId) AS n FROM page_views WHERE visitorId IS NOT NULL AND createdAt >= DATE_SUB(NOW(), INTERVAL 7 DAY)"),
+        last30: await one("SELECT COUNT(DISTINCT visitorId) AS n FROM page_views WHERE visitorId IS NOT NULL AND createdAt >= DATE_SUB(NOW(), INTERVAL 30 DAY)"),
+      };
+      let topPaths: { path: string; views: number }[] = [];
+      try {
+        const [rows]: any = await c.query("SELECT path, COUNT(*) AS n FROM page_views WHERE createdAt >= DATE_SUB(NOW(), INTERVAL 30 DAY) GROUP BY path ORDER BY n DESC LIMIT 12");
+        topPaths = (rows as any[]).map((x) => ({ path: x.path, views: Number(x.n) }));
+      } catch { /* noop */ }
+      let daily: { date: string; views: number }[] = [];
+      try {
+        const [rows]: any = await c.query("SELECT DATE(createdAt) AS d, COUNT(*) AS n FROM page_views WHERE createdAt >= DATE_SUB(CURDATE(), INTERVAL 13 DAY) GROUP BY DATE(createdAt) ORDER BY d ASC");
+        daily = (rows as any[]).map((x) => ({ date: String(x.d).slice(0, 10), views: Number(x.n) }));
+      } catch { /* noop */ }
+      return { views, visitors, topPaths, daily };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   applyCors(req, res);
   if (req.method === "OPTIONS") {
@@ -3151,6 +3226,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/organize-articles") return organizeArticles(req, res);
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);
     if (url === "/api/admin/metrics") return adminMetrics(req, res);
+    if (url === "/api/admin/analytics") return adminAnalytics(req, res);
+    if (url === "/api/track") return recordPageView(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
     if (url === "/api/admin/seed-content") return adminSeedContent(req, res);
     if (url === "/api/admin/seed-post-christian") return seedPostChristianArticles(req, res);
