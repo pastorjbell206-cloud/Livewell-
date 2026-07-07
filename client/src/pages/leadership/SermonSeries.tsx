@@ -9,6 +9,7 @@ import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { GeneratedCover } from "@/components/GeneratedCover";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -59,10 +60,15 @@ export default function SermonSeries() {
               return (
                 <div key={s.id} style={{ background: "var(--card)", border: "1px solid var(--border)", borderTop: "2px solid var(--mustard)", borderRadius: "var(--radius-sm)", overflow: "hidden" }}>
                   <button onClick={() => setOpen(isOpen ? null : s.id)} aria-expanded={isOpen} style={{ width: "100%", textAlign: "left", display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "12px", padding: "16px var(--s-4)", background: "none", border: "none", cursor: "pointer" }}>
-                    <span>
-                      <span className="eyebrow" style={{ color: "var(--mustard-text)" }}>{s.kind === "book" ? "Through a book" : "Topical"} · {s.scriptureRange} · {s.sermons.length} weeks</span>
-                      <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "23px", fontWeight: 500, color: "var(--ink)", margin: "4px 0 2px", lineHeight: 1.15 }}>{s.title}</span>
-                      <span style={{ display: "block", fontFamily: "var(--B)", fontSize: "14px", color: "var(--ink-muted)" }}>{s.subtitle}</span>
+                    <span style={{ display: "flex", gap: "14px", alignItems: "flex-start", minWidth: 0 }}>
+                      <span style={{ display: "block", width: "84px", flexShrink: 0, alignSelf: "flex-start", aspectRatio: "3 / 4", overflow: "hidden", borderRadius: "var(--radius-sm)" }}>
+                        <GeneratedCover title={s.title} eyebrow="Sermon Series" variant={s.kind === "book" ? "dark" : "cream"} style={{ width: "100%", height: "100%" }} />
+                      </span>
+                      <span style={{ minWidth: 0 }}>
+                        <span className="eyebrow" style={{ color: "var(--mustard-text)" }}>{s.kind === "book" ? "Through a book" : "Topical"} · {s.scriptureRange} · {s.sermons.length} weeks</span>
+                        <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "23px", fontWeight: 500, color: "var(--ink)", margin: "4px 0 2px", lineHeight: 1.15 }}>{s.title}</span>
+                        <span style={{ display: "block", fontFamily: "var(--B)", fontSize: "14px", color: "var(--ink-muted)" }}>{s.subtitle}</span>
+                      </span>
                     </span>
                     <ChevronDown size={20} aria-hidden style={{ flexShrink: 0, color: "var(--ink-muted)", marginTop: "4px", transform: isOpen ? "rotate(180deg)" : "none", transition: "transform .2s" }} />
                   </button>

@@ -9,6 +9,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { GeneratedCover } from "@/components/GeneratedCover";
 
 type StepType = "Read" | "Study" | "Do" | "Tool";
 
@@ -377,6 +378,9 @@ function StepRow({ step, checked, onToggle }: { step: Step; checked: boolean; on
       <label htmlFor={inputId} style={srOnly}>
         Mark step complete: {step.title}
       </label>
+      <div style={{ width: "78px", flexShrink: 0, alignSelf: "flex-start", aspectRatio: "3 / 4", overflow: "hidden", borderRadius: "var(--radius-sm)", border: "1px solid var(--border)", opacity: checked ? 0.5 : 1 }}>
+        <GeneratedCover title={step.title} eyebrow="The Pathway" variant="cream" style={{ width: "100%", height: "100%" }} />
+      </div>
       <div style={{ flex: 1, minWidth: 0 }}>
         <div style={{ display: "flex", gap: "10px", alignItems: "baseline", flexWrap: "wrap", marginBottom: "4px" }}>
           <TypeChip type={step.type} />

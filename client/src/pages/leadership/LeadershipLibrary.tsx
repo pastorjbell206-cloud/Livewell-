@@ -10,6 +10,7 @@ import { Link } from "wouter";
 import { Search } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -59,12 +60,17 @@ export default function LeadershipLibrary() {
           </div>
 
           {!items.length && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "14px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(380px, 1fr))", gap: "14px" }}>
             {filtered.map((a) => (
-              <Link key={a.slug} href={`/leadership/article/${a.slug}`} style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)", textDecoration: "none", color: "inherit", display: "block" }}>
-                <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "6px" }}>{a.group}</div>
-                <div style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px", lineHeight: 1.2 }}>{a.title}</div>
-                <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{a.blurb}</p>
+              <Link key={a.slug} href={`/leadership/article/${a.slug}`} style={{ display: "flex", gap: "16px", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", overflow: "hidden", textDecoration: "none", color: "inherit", height: "100%" }}>
+                <div style={{ width: "104px", flexShrink: 0, alignSelf: "flex-start", aspectRatio: "3 / 4", overflow: "hidden" }}>
+                  <GeneratedCover title={a.title} {...coverThemeFor(`${a.title} ${a.group}`)} style={{ width: "100%", height: "100%" }} />
+                </div>
+                <div style={{ padding: "var(--s-4) var(--s-4) var(--s-4) 0" }}>
+                  <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "6px" }}>{a.group}</div>
+                  <div style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px", lineHeight: 1.2 }}>{a.title}</div>
+                  <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{a.blurb}</p>
+                </div>
               </Link>
             ))}
           </div>

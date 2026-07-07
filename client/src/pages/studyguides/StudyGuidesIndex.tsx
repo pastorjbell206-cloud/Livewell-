@@ -9,6 +9,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { STUDY_GUIDES, type StudyGuideEntry } from "@/lib/studyguides-index";
+import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -50,20 +51,25 @@ export default function StudyGuidesIndex() {
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "var(--s-4)" }}>
             Free guides for groups, classes, and teams
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "16px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(380px, 1fr))", gap: "16px" }}>
             {guides.map((g) => (
               <Link
                 key={g.slug}
                 href={`/studyguides/${g.slug}`}
-                style={{ display: "flex", flexDirection: "column", textDecoration: "none", color: "inherit", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)", height: "100%" }}
+                style={{ display: "flex", gap: "16px", textDecoration: "none", color: "inherit", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderRadius: "var(--radius-sm)", overflow: "hidden", height: "100%" }}
               >
-                <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>{g.eyebrow}</div>
-                <div style={{ fontFamily: "var(--F)", fontSize: "24px", fontWeight: 500, color: "var(--ink)", lineHeight: 1.18, marginBottom: "10px" }}>{g.title}</div>
-                <p style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.65, color: "var(--ink-muted)", marginBottom: "16px", flex: 1 }}>{g.blurb}</p>
-                <div style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", marginBottom: "12px" }}>{g.audience} · {g.sessionsLabel}</div>
-                <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink)", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px", alignSelf: "flex-start" }}>
-                  Open the toolkit →
-                </span>
+                <div style={{ width: "104px", flexShrink: 0, alignSelf: "flex-start", aspectRatio: "3 / 4", overflow: "hidden" }}>
+                  <GeneratedCover title={g.title} {...coverThemeFor(`${g.title} ${g.eyebrow}`)} style={{ width: "100%", height: "100%" }} />
+                </div>
+                <div style={{ display: "flex", flexDirection: "column", flex: 1, minWidth: 0, padding: "var(--s-4) var(--s-4) var(--s-4) 0" }}>
+                  <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>{g.eyebrow}</div>
+                  <div style={{ fontFamily: "var(--F)", fontSize: "23px", fontWeight: 500, color: "var(--ink)", lineHeight: 1.18, marginBottom: "10px" }}>{g.title}</div>
+                  <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", marginBottom: "14px", flex: 1 }}>{g.blurb}</p>
+                  <div style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", marginBottom: "12px" }}>{g.audience} · {g.sessionsLabel}</div>
+                  <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink)", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px", alignSelf: "flex-start" }}>
+                    Open the toolkit →
+                  </span>
+                </div>
               </Link>
             ))}
           </div>
