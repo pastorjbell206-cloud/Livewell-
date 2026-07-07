@@ -15,6 +15,16 @@ export default function AdminSubscribers() {
     [subscribers, search]
   );
 
+  // Prod stores signup attribution as source ("for-pastors:pastor"); the last
+  // token is the reader's self-selected segment when it matches one. The dev
+  // schema has no source column, so this stays optional everywhere.
+  const SEGMENTS = ["skeptic", "christian", "pastor", "exploring"];
+  const sourceOf = (s: unknown): string => String((s as { source?: string }).source || "");
+  const segmentOf = (s: unknown): string | null => {
+    const tail = sourceOf(s).split(":").pop() || "";
+    return SEGMENTS.includes(tail) ? tail : null;
+  };
+
   const handleRemove = async (email: string) => {
     if (!confirm(`Remove ${email} from the newsletter list?`)) return;
     try {
@@ -27,9 +37,9 @@ export default function AdminSubscribers() {
   };
 
   const handleExport = () => {
-    const header = "email,subscribedAt\n";
+    const header = "email,subscribedAt,source,segment\n";
     const rows = subscribers
-      .map((s) => `${s.email},${new Date(s.subscribedAt).toISOString()}`)
+      .map((s) => `${s.email},${new Date(s.subscribedAt).toISOString()},${sourceOf(s)},${segmentOf(s) || ""}`)
       .join("\n");
     const blob = new Blob([header + rows], { type: "text/csv" });
     const url = URL.createObjectURL(blob);
@@ -92,6 +102,11 @@ export default function AdminSubscribers() {
                 <div className="flex items-center gap-3 min-w-0">
                   <Mail size={15} style={{ color: "#B8963E", flexShrink: 0 }} />
                   <span className="font-ui text-sm truncate" style={{ color: "#1A1A1A" }}>{s.email}</span>
+                  {segmentOf(s) && (
+                    <span className="font-ui text-[11px] px-2 py-0.5 rounded-full flex-shrink-0" style={{ background: "#F5F0E6", color: "#1A1A1A", border: "1px solid #E5E1D8" }}>
+                      {segmentOf(s)}
+                    </span>
+                  )}
                 </div>
                 <div className="flex items-center gap-4 flex-shrink-0">
                   <span className="font-ui text-xs" style={{ color: "#6B7280" }}>

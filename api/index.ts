@@ -3198,9 +3198,53 @@ async function adminAnalytics(req: VercelRequest, res: VercelResponse) {
         const [rows]: any = await c.query("SELECT DATE(createdAt) AS d, COUNT(*) AS n FROM page_views WHERE createdAt >= DATE_SUB(CURDATE(), INTERVAL 13 DAY) GROUP BY DATE(createdAt) ORDER BY d ASC");
         daily = (rows as any[]).map((x) => ({ date: String(x.d).slice(0, 10), views: Number(x.n) }));
       } catch { /* noop */ }
-      return { views, visitors, topPaths, daily };
+      // Where visitors come from: referrer hosts, own-site navigation excluded.
+      let referrers: { host: string; views: number }[] = [];
+      try {
+        const [rows]: any = await c.query(
+          "SELECT SUBSTRING_INDEX(SUBSTRING_INDEX(REPLACE(REPLACE(referrer,'https://',''),'http://',''),'/',1),':',1) AS host, COUNT(*) AS n " +
+          "FROM page_views WHERE referrer IS NOT NULL AND referrer <> '' AND createdAt >= DATE_SUB(NOW(), INTERVAL 30 DAY) " +
+          "GROUP BY host ORDER BY n DESC LIMIT 20"
+        );
+        referrers = (rows as any[])
+          .filter((x) => x.host && !String(x.host).includes("livewellbyjamesbell"))
+          .slice(0, 10)
+          .map((x) => ({ host: String(x.host), views: Number(x.n) }));
+      } catch { /* noop */ }
+      return { views, visitors, topPaths, daily, referrers };
     });
     json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
+// Commerce status: the per-ebook truth of what is actually sellable right now.
+// For each book in the catalog: does it have a Stripe price (env var or the
+// stored site_settings id), and therefore a live Buy button? Read-only.
+async function adminCommerceStatus(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  try {
+    const stored = await withConn(async (c) => {
+      const map: Record<string, string> = {};
+      try {
+        const [rows]: any = await c.execute("SELECT settingKey, settingValue FROM site_settings WHERE settingKey LIKE 'stripe_price_%'");
+        for (const r of rows as any[]) map[String(r.settingKey).replace(/^stripe_price_/, "")] = String(r.settingValue || "").trim();
+      } catch { /* table may not exist yet */ }
+      return map;
+    });
+    const books = Object.entries(EBOOKS).map(([slug, b]) => {
+      const viaEnv = Boolean(process.env[b.priceEnv]?.trim());
+      const viaStore = Boolean(stored[slug]);
+      return {
+        slug,
+        title: b.title,
+        status: viaEnv || viaStore ? "live" : "no-price",
+        source: viaEnv ? "env" : viaStore ? "stored" : null,
+      };
+    });
+    const live = books.filter((b) => b.status === "live").length;
+    json(res, 200, { ok: true, stripeConfigured: Boolean(process.env.STRIPE_SECRET_KEY), live, total: books.length, books });
   } catch (e: any) {
     json(res, 500, { ok: false, error: String(e?.message || e) });
   }
@@ -3227,6 +3271,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);
     if (url === "/api/admin/metrics") return adminMetrics(req, res);
     if (url === "/api/admin/analytics") return adminAnalytics(req, res);
+    if (url === "/api/admin/commerce-status") return adminCommerceStatus(req, res);
     if (url === "/api/track") return recordPageView(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
     if (url === "/api/admin/seed-content") return adminSeedContent(req, res);
