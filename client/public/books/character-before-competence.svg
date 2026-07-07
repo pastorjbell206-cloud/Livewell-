@@ -1,17 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200" role="img" aria-label="Character Before Competence by James Bell">
-  <rect width="800" height="1200" fill="#1A1A1A"/>
-  <rect x="28" y="28" width="744" height="1144" fill="none" stroke="#F5F0E6" stroke-width="1.5" opacity="0.18"/>
+  <rect width="800" height="1200" fill="#EDE8DC"/>
 
-  <text x="80" y="156" font-family="Helvetica, Arial, sans-serif" font-size="20" letter-spacing="6" font-weight="700" fill="#D4A017">FOR PASTORS &amp; LEADERS</text>
-  <line x1="80" y1="182" x2="720" y2="182" stroke="#D4A017" stroke-width="2"/>
+  <circle cx="764" cy="1140" r="300" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.26"/>
+  <circle cx="764" cy="1140" r="212" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.16"/>
 
-  <text x="76" y="411" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="100" font-weight="400" fill="#F5F0E6">Character</text>
-  <text x="76" y="517" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="100" font-weight="400" fill="#F5F0E6">Before</text>
-  <text x="76" y="623" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="100" font-weight="400" fill="#F5F0E6">Competence</text>
+  <text x="80" y="150" font-family="Helvetica, Arial, sans-serif" font-size="19" letter-spacing="5.5" font-weight="700" fill="#D4A017">FOR PASTORS &amp; LEADERS</text>
+  <text x="720" y="152" text-anchor="end" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="22" fill="#D4A017">03</text>
+  <line x1="80" y1="178" x2="720" y2="178" stroke="#D4A017" stroke-width="1.5" opacity="0.5"/>
 
-  <text x="80" y="697" font-family="Helvetica, Arial, sans-serif" font-size="24" fill="#C9C1AE">Leading the Church Without Losing Your Soul</text>
+  <text x="76" y="485" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="96" font-weight="400" fill="#1A1A1A">Character</text>
+  <text x="76" y="586" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="96" font-weight="400" fill="#1A1A1A">Before</text>
+  <text x="76" y="687" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="96" font-weight="400" fill="#1A1A1A">Competence</text>
 
-  <line x1="80" y1="1024" x2="188" y2="1024" stroke="#D4A017" stroke-width="3"/>
-  <text x="80" y="1086" font-family="Helvetica, Arial, sans-serif" font-size="30" letter-spacing="4" font-weight="700" fill="#F5F0E6">JAMES BELL</text>
-  <text x="80" y="1120" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="2.5" fill="#D4A017">LIVEWELL BY JAMES BELL</text>
+  <text x="80" y="757" font-family="Helvetica, Arial, sans-serif" font-size="23" fill="#5A5448">Leading the Church Without Losing Your Soul</text>
+
+  <line x1="80" y1="1052" x2="176" y2="1052" stroke="#D4A017" stroke-width="3"/>
+  <text x="80" y="1110" font-family="Helvetica, Arial, sans-serif" font-size="28" letter-spacing="4" font-weight="700" fill="#1A1A1A">JAMES BELL</text>
 </svg>
