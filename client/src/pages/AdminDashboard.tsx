@@ -27,6 +27,14 @@ export default function AdminDashboard() {
   };
   const [metrics, setMetrics] = useState<Metrics | null>(null);
   const [metricsError, setMetricsError] = useState(false);
+  type Analytics = {
+    views: { today: number; last7: number; last30: number; allTime: number };
+    visitors: { last7: number; last30: number };
+    topPaths: { path: string; views: number }[];
+    daily: { date: string; views: number }[];
+  };
+  const [analytics, setAnalytics] = useState<Analytics | null>(null);
+  const [analyticsError, setAnalyticsError] = useState(false);
   const money = (cents: number, cur = "usd") =>
     new Intl.NumberFormat("en-US", { style: "currency", currency: (cur || "usd").toUpperCase() }).format((cents || 0) / 100);
   useEffect(() => {
@@ -44,6 +52,15 @@ export default function AdminDashboard() {
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
       .then((d) => active && d?.ok && setMetrics(d))
       .catch(() => active && setMetricsError(true));
+    return () => { active = false; };
+  }, []);
+
+  useEffect(() => {
+    let active = true;
+    fetch("/api/admin/analytics", { credentials: "include" })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((d) => active && d?.ok && setAnalytics(d))
+      .catch(() => active && setAnalyticsError(true));
     return () => { active = false; };
   }, []);
 
@@ -203,6 +220,75 @@ export default function AdminDashboard() {
           )}
         </div>
 
+        {/* Traffic — page views and unique visitors, from /api/admin/analytics
+            (the page_views table, filled by the site-wide PageTracker beacon). */}
+        <div className="mb-12">
+          <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "#1A1A1A" }}>Traffic</h2>
+          <p className="font-body text-sm mb-4" style={{ color: "#6B7280" }}>
+            How many people are visiting, and what they read. Counting begins the moment this ships; your own admin visits are never counted.
+          </p>
+          {analyticsError && (
+            <p className="font-body text-sm" style={{ color: "#9B2C2C" }}>
+              Couldn&rsquo;t load traffic (needs the production API and an admin session).
+            </p>
+          )}
+          {!analytics && !analyticsError && (
+            <p className="font-body text-sm" style={{ color: "#6B7280" }}><Loader2 size={16} className="animate-spin inline" /> Loading…</p>
+          )}
+          {analytics && (
+            <>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+                {[
+                  { label: "Visits today", value: analytics.views.today.toLocaleString(), sub: "page views since midnight", color: "#2C3E50" },
+                  { label: "Visits · 7 days", value: analytics.views.last7.toLocaleString(), sub: `${analytics.visitors.last7.toLocaleString()} unique visitors`, color: "#2D4A3E" },
+                  { label: "Visits · 30 days", value: analytics.views.last30.toLocaleString(), sub: `${analytics.visitors.last30.toLocaleString()} unique visitors`, color: "#B8963E" },
+                  { label: "All-time views", value: analytics.views.allTime.toLocaleString(), sub: "since tracking began", color: "#6B4E9E" },
+                ].map((m) => (
+                  <div key={m.label} className="flex flex-col p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF", borderTop: `5px solid ${m.color}`, boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
+                    <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>{m.label}</div>
+                    <div className="font-display font-bold" style={{ color: m.color, fontSize: "2.4rem", lineHeight: 1 }}>{m.value}</div>
+                    <div className="font-ui text-xs mt-2" style={{ color: "#9CA3AF" }}>{m.sub}</div>
+                  </div>
+                ))}
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Last 14 days — simple CSS bar chart */}
+                <div style={{ background: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: "8px", padding: "16px 18px" }}>
+                  <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>Last 14 days</div>
+                  {analytics.daily.length === 0 ? (
+                    <div className="font-body text-sm" style={{ color: "#9CA3AF" }}>No visits recorded yet.</div>
+                  ) : (
+                    <div style={{ display: "flex", alignItems: "flex-end", gap: "4px", height: "120px" }}>
+                      {(() => {
+                        const max = Math.max(...analytics.daily.map((d) => d.views), 1);
+                        return analytics.daily.map((d) => (
+                          <div key={d.date} title={`${d.date}: ${d.views} views`} style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-end", height: "100%" }}>
+                            <div style={{ height: `${Math.max(3, (d.views / max) * 100)}%`, background: "#B8963E", borderRadius: "2px 2px 0 0" }} />
+                          </div>
+                        ));
+                      })()}
+                    </div>
+                  )}
+                </div>
+                {/* Most-read pages, 30 days */}
+                <div style={{ background: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: "8px", padding: "16px 18px" }}>
+                  <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>Most-read pages · 30 days</div>
+                  {analytics.topPaths.length === 0 ? (
+                    <div className="font-body text-sm" style={{ color: "#9CA3AF" }}>No visits recorded yet.</div>
+                  ) : (
+                    analytics.topPaths.slice(0, 8).map((p) => (
+                      <div key={p.path} className="flex items-center justify-between py-1" style={{ fontFamily: "var(--U)", fontSize: "13px", gap: "12px" }}>
+                        <a href={p.path} target="_blank" rel="noreferrer" style={{ color: "#1A1A1A", textDecoration: "none", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{p.path}</a>
+                        <span style={{ color: "#6B7280", flexShrink: 0 }}>{p.views.toLocaleString()}</span>
+                      </div>
+                    ))
+                  )}
+                </div>
+              </div>
+            </>
+          )}
+        </div>
+
         {/* Contact inbox — messages people sent through /api/contact.
             Until this card existed, nothing anywhere read that table. */}
         <div className="mb-12">
@@ -237,7 +323,7 @@ export default function AdminDashboard() {
           )}
         </div>
 
-        {/* Publish finished article content */}
+        {/* Publish & sell — the money page, kept prominent. */}
         <Link
           href="/admin/publish-content"
           className="flex items-center gap-4 p-6 mb-8 rounded-lg no-underline transition-transform hover:scale-[1.01]"
@@ -245,77 +331,46 @@ export default function AdminDashboard() {
         >
           <Upload size={28} style={{ color: "#D4A017" }} />
           <div>
-            <div className="font-display text-xl font-bold">Publish article content</div>
+            <div className="font-display text-xl font-bold">Publish &amp; sell</div>
             <div className="font-body text-sm" style={{ color: "rgba(245,240,230,0.75)" }}>
-              Fill your empty and short articles with their finished long-form versions. Safe test first, then publish.
+              Turn on ebook checkout, publish the article libraries, and fill articles with their finished long-form versions.
             </div>
           </div>
         </Link>
 
-        {/* Set up the two-level navigation */}
-        <Link
-          href="/admin/setup-navigation"
-          className="flex items-center gap-4 p-6 mb-8 rounded-lg no-underline transition-transform hover:scale-[1.01]"
-          style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}
-        >
-          <Wand2 size={28} style={{ color: "#D4A017" }} />
-          <div>
-            <div className="font-display text-xl font-bold" style={{ color: "#1A1A1A" }}>Set up navigation</div>
-            <div className="font-body text-sm" style={{ color: "#5A5448" }}>
-              Organize articles into the new pillar and sub-pathway menus, plus Study Guides &amp; Series. Safe to run anytime.
-            </div>
+        {/* Tools — the occasional-use utilities, compact instead of five banners. */}
+        <div className="mb-12">
+          <h2 className="font-display text-2xl font-bold mb-4" style={{ color: "#1A1A1A" }}>Tools</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { href: "/admin/setup-navigation", icon: Wand2, title: "Set up navigation", desc: "File articles into the pillar and sub-pathway menus." },
+              { href: "/admin/import-substack", icon: Download, title: "Import from Substack", desc: "Pull your Substack essays in as drafts, filed by category." },
+              { href: "/admin/load-drafts", icon: FilePlus2, title: "Load draft essays", desc: "Add flagship essays as hidden drafts to preview and publish." },
+              { href: "/admin/deduplicate", icon: Copy, title: "Find duplicates", desc: "Keep the best copy of a repeated title; nothing is deleted." },
+            ].map((t) => {
+              const Icon = t.icon;
+              return (
+                <Link
+                  key={t.href}
+                  href={t.href}
+                  className="flex items-start gap-3 p-4 rounded-lg no-underline transition-transform hover:scale-[1.01]"
+                  style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}
+                >
+                  <Icon size={20} style={{ color: "#D4A017", flexShrink: 0, marginTop: 2 }} />
+                  <div style={{ minWidth: 0 }}>
+                    <div className="font-ui font-semibold text-sm" style={{ color: "#1A1A1A" }}>{t.title}</div>
+                    <div className="font-body text-xs mt-0.5" style={{ color: "#5A5448", lineHeight: 1.5 }}>{t.desc}</div>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
-        </Link>
-
-        {/* Import from Substack */}
-        <Link
-          href="/admin/import-substack"
-          className="flex items-center gap-4 p-6 mb-8 rounded-lg no-underline transition-transform hover:scale-[1.01]"
-          style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}
-        >
-          <Download size={28} style={{ color: "#D4A017" }} />
-          <div>
-            <div className="font-display text-xl font-bold" style={{ color: "#1A1A1A" }}>Import from Substack</div>
-            <div className="font-body text-sm" style={{ color: "#5A5448" }}>
-              Pull your Substack essays in as drafts, pre-filed by category. Standalone in full; the serial as teasers.
-            </div>
-          </div>
-        </Link>
-
-        {/* Load draft essays */}
-        <Link
-          href="/admin/load-drafts"
-          className="flex items-center gap-4 p-6 mb-8 rounded-lg no-underline transition-transform hover:scale-[1.01]"
-          style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}
-        >
-          <FilePlus2 size={28} style={{ color: "#D4A017" }} />
-          <div>
-            <div className="font-display text-xl font-bold" style={{ color: "#1A1A1A" }}>Load draft essays</div>
-            <div className="font-body text-sm" style={{ color: "#5A5448" }}>
-              Add the new flagship essays for your thinner pillars as hidden drafts. Preview, edit, then publish when ready.
-            </div>
-          </div>
-        </Link>
-
-        {/* Find duplicate articles */}
-        <Link
-          href="/admin/deduplicate"
-          className="flex items-center gap-4 p-6 mb-8 rounded-lg no-underline transition-transform hover:scale-[1.01]"
-          style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}
-        >
-          <Copy size={28} style={{ color: "#D4A017" }} />
-          <div>
-            <div className="font-display text-xl font-bold" style={{ color: "#1A1A1A" }}>Find duplicate articles</div>
-            <div className="font-body text-sm" style={{ color: "#5A5448" }}>
-              See every repeated title, keep the best copy, and retire the rest. Reversible &mdash; nothing is deleted.
-            </div>
-          </div>
-        </Link>
+        </div>
 
         {/* Seed Content */}
         <div className="mb-12 p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB" }}>
-          <div className="flex items-center justify-between mb-2">
-            <div>
+          <div className="flex flex-wrap items-start justify-between gap-4 mb-2">
+            <div style={{ minWidth: 0, flex: "1 1 260px" }}>
               <h2 className="font-display text-xl font-bold" style={{ color: "#1A1A1A" }}>
                 Import Content
               </h2>
@@ -323,32 +378,34 @@ export default function AdminDashboard() {
                 Load {contentData.posts.length} articles, {contentData.books.length} books, and site settings. Duplicates are skipped.
               </p>
             </div>
-            <button
-              onClick={handleSeedContent}
-              disabled={seeding}
-              className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-ui font-semibold text-sm transition-colors"
-              style={{ backgroundColor: seeding ? "#9CA3AF" : "#2D4A3E", color: "#F7F5F0", cursor: seeding ? "default" : "pointer" }}
-            >
-              {seeding ? <Loader2 size={16} className="animate-spin" /> : <Upload size={16} />}
-              {seeding ? "Importing…" : "Import All Content"}
-            </button>
-            <button
-              onClick={async () => {
-                setSeedStatus("Organizing articles into pillars…");
-                try {
-                  const r = await fetch("/api/admin/organize-articles", { credentials: "include" });
-                  const d = await r.json();
-                  if (d.ok) {
-                    setSeedStatus(`Organized! ${d.updated} articles updated. Distribution: ${d.distribution?.map((x: any) => `${x.pillar}: ${x.n}`).join(", ")}`);
-                    postsQuery.refetch();
-                  } else { setSeedStatus(`Error: ${d.error}`); }
-                } catch (e: any) { setSeedStatus(`Failed: ${e.message}`); }
-              }}
-              className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-ui font-semibold text-sm transition-colors"
-              style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)", cursor: "pointer" }}
-            >
-              Organize into Pillars
-            </button>
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={handleSeedContent}
+                disabled={seeding}
+                className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-ui font-semibold text-sm transition-colors"
+                style={{ backgroundColor: seeding ? "#9CA3AF" : "#2D4A3E", color: "#F7F5F0", cursor: seeding ? "default" : "pointer" }}
+              >
+                {seeding ? <Loader2 size={16} className="animate-spin" /> : <Upload size={16} />}
+                {seeding ? "Importing…" : "Import All Content"}
+              </button>
+              <button
+                onClick={async () => {
+                  setSeedStatus("Organizing articles into pillars…");
+                  try {
+                    const r = await fetch("/api/admin/organize-articles", { credentials: "include" });
+                    const d = await r.json();
+                    if (d.ok) {
+                      setSeedStatus(`Organized! ${d.updated} articles updated. Distribution: ${d.distribution?.map((x: any) => `${x.pillar}: ${x.n}`).join(", ")}`);
+                      postsQuery.refetch();
+                    } else { setSeedStatus(`Error: ${d.error}`); }
+                  } catch (e: any) { setSeedStatus(`Failed: ${e.message}`); }
+                }}
+                className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-ui font-semibold text-sm transition-colors"
+                style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)", cursor: "pointer" }}
+              >
+                Organize into Pillars
+              </button>
+            </div>
           </div>
           {seedStatus && (
             <div className="mt-3 p-3 rounded text-sm font-ui" style={{

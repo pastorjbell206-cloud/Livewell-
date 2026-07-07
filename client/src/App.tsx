@@ -1,5 +1,6 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import PageTracker from "@/components/PageTracker";
 import NotFound from "@/pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { Route, Router as WouterRouter, Switch, useLocation } from "wouter";
@@ -680,6 +681,7 @@ function App() {
             <Toaster />
             <ToastContainer />
             <WouterRouter hook={useTransitionLocation}>
+              <PageTracker />
               <Router />
             </WouterRouter>
           </TooltipProvider>
