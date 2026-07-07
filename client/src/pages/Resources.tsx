@@ -5,6 +5,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
 import { trpc } from "@/lib/trpc";
 import { useMemo, useState } from "react";
 import { Download, Loader2, Search, X } from "lucide-react";
@@ -150,18 +151,27 @@ export default function Resources() {
                 key={lib.href}
                 href={lib.href}
                 style={{
-                  display: "block",
+                  display: "flex",
+                  gap: lib.flagship ? "0" : "14px",
                   textDecoration: "none",
-                  padding: "var(--s-4)",
+                  padding: lib.flagship ? "var(--s-4)" : "0",
+                  overflow: "hidden",
                   background: lib.flagship ? "var(--charcoal)" : "#FFFFFF",
                   border: "1px solid rgba(20,17,12,0.08)",
-                  borderTop: "2px solid var(--mustard)",
+                  borderTop: lib.flagship ? "2px solid var(--mustard)" : undefined,
                   gridColumn: lib.flagship ? "1 / -1" : undefined,
                 }}
               >
-                <div className="eyebrow" style={{ color: lib.flagship ? "var(--mustard)" : "var(--mustard-text)", marginBottom: "10px" }}>{lib.eyebrow}</div>
-                <div style={{ fontFamily: "var(--F)", fontSize: lib.flagship ? "clamp(24px, 3.4vw, 32px)" : "21px", lineHeight: 1.2, color: lib.flagship ? "var(--bone)" : "var(--ink)", marginBottom: "10px" }}>{lib.title}</div>
-                <p style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.65, color: lib.flagship ? "rgba(245,240,230,0.78)" : "var(--ink-muted)", maxWidth: lib.flagship ? "70ch" : undefined, margin: 0 }}>{lib.desc}</p>
+                {!lib.flagship && (
+                  <div style={{ width: "88px", flexShrink: 0, aspectRatio: "3 / 4", overflow: "hidden", alignSelf: "flex-start" }}>
+                    <GeneratedCover title={lib.title} {...coverThemeFor(`${lib.title} ${lib.eyebrow}`)} style={{ width: "100%", height: "100%" }} />
+                  </div>
+                )}
+                <div style={{ padding: lib.flagship ? "0" : "var(--s-4) var(--s-4) var(--s-4) 0" }}>
+                  <div className="eyebrow" style={{ color: lib.flagship ? "var(--mustard)" : "var(--mustard-text)", marginBottom: "10px" }}>{lib.eyebrow}</div>
+                  <div style={{ fontFamily: "var(--F)", fontSize: lib.flagship ? "clamp(24px, 3.4vw, 32px)" : "21px", lineHeight: 1.2, color: lib.flagship ? "var(--bone)" : "var(--ink)", marginBottom: "10px" }}>{lib.title}</div>
+                  <p style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.65, color: lib.flagship ? "rgba(245,240,230,0.78)" : "var(--ink-muted)", maxWidth: lib.flagship ? "70ch" : undefined, margin: 0 }}>{lib.desc}</p>
+                </div>
               </Link>
             ))}
           </div>
@@ -232,7 +242,11 @@ export default function Resources() {
           ) : (
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "var(--s-3)" }}>
               {filteredResources.map((r) => (
-                <div key={r.id} style={{ background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", padding: "var(--s-3)", display: "flex", flexDirection: "column", gap: "10px" }}>
+                <div key={r.id} style={{ background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", overflow: "hidden", display: "flex", flexDirection: "column" }}>
+                  <div style={{ aspectRatio: "3 / 2", overflow: "hidden", borderBottom: "1px solid rgba(20,17,12,0.06)" }}>
+                    <GeneratedCover title={r.title} {...coverThemeFor(`${r.title} ${r.category ?? ""}`)} style={{ width: "100%", height: "100%" }} />
+                  </div>
+                  <div style={{ padding: "var(--s-3)", display: "flex", flexDirection: "column", gap: "10px", flex: 1 }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "10px" }}>
                     <div style={{ fontFamily: "var(--F)", fontSize: "18px", lineHeight: 1.3, color: "var(--ink)" }}>{r.title}</div>
                     {r.fileType && (
@@ -253,6 +267,7 @@ export default function Resources() {
                       <Download size={14} /> Download
                     </a>
                   )}
+                  </div>
                 </div>
               ))}
             </div>

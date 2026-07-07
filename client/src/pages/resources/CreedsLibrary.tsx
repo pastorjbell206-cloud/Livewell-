@@ -7,6 +7,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { GeneratedCover } from "@/components/GeneratedCover";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -69,10 +70,13 @@ export default function CreedsLibrary() {
                 <div style={{ width: "36px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-3)" }} />
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px, 100%), 1fr))", gap: "var(--s-3)" }}>
                   {entries.map((e) => (
-                    <Link key={e.slug} href={`/resources/creeds/${e.slug}`} style={{ display: "block", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
-                      <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-muted)", marginBottom: "8px" }}>{e.date}</div>
-                      <div style={{ fontFamily: "var(--F)", fontSize: "20px", lineHeight: 1.25, color: "var(--ink)", marginBottom: "8px" }}>{e.title}</div>
-                      <div style={{ fontFamily: "var(--B)", fontSize: "13.5px", lineHeight: 1.55, color: "var(--ink-muted)" }}>{e.blurb}</div>
+                    <Link key={e.slug} href={`/resources/creeds/${e.slug}`} style={{ display: "flex", gap: "14px", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderRadius: "var(--radius-sm)", overflow: "hidden", textDecoration: "none" }}>
+                      <div style={{ width: "78px", flexShrink: 0, alignSelf: "flex-start", aspectRatio: "3 / 4", overflow: "hidden" }}><GeneratedCover title={e.title} eyebrow="The Creeds" variant="dark" style={{ width: "100%", height: "100%" }} /></div>
+                      <div style={{ padding: "var(--s-3) var(--s-3) var(--s-3) 0" }}>
+                        <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-muted)", marginBottom: "8px" }}>{e.date}</div>
+                        <div style={{ fontFamily: "var(--F)", fontSize: "20px", lineHeight: 1.25, color: "var(--ink)", marginBottom: "8px" }}>{e.title}</div>
+                        <div style={{ fontFamily: "var(--B)", fontSize: "13.5px", lineHeight: 1.55, color: "var(--ink-muted)" }}>{e.blurb}</div>
+                      </div>
                     </Link>
                   ))}
                 </div>

@@ -11,6 +11,7 @@ import { Link } from "wouter";
 import { Search } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -122,9 +123,12 @@ export default function ContextLibrary() {
                 <div style={{ width: "36px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-3)" }} />
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "var(--s-3)" }}>
                   {entries.map((e) => (
-                    <Link key={e.slug} href={`/resources/context/${e.slug}`} style={{ display: "block", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
-                      <div style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.25, color: "var(--ink)", marginBottom: "8px" }}>{e.title}</div>
-                      <div style={{ fontFamily: "var(--B)", fontSize: "13.5px", lineHeight: 1.55, color: "var(--ink-muted)" }}>{e.blurb}</div>
+                    <Link key={e.slug} href={`/resources/context/${e.slug}`} style={{ display: "flex", gap: "14px", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderRadius: "var(--radius-sm)", overflow: "hidden", textDecoration: "none" }}>
+                      <div style={{ width: "78px", flexShrink: 0, alignSelf: "flex-start", aspectRatio: "3 / 4", overflow: "hidden" }}><GeneratedCover title={e.title} {...coverThemeFor(`${e.title} ${e.group}`)} style={{ width: "100%", height: "100%" }} /></div>
+                      <div style={{ padding: "var(--s-3) var(--s-3) var(--s-3) 0" }}>
+                        <div style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.25, color: "var(--ink)", marginBottom: "8px" }}>{e.title}</div>
+                        <div style={{ fontFamily: "var(--B)", fontSize: "13.5px", lineHeight: 1.55, color: "var(--ink-muted)" }}>{e.blurb}</div>
+                      </div>
                     </Link>
                   ))}
                 </div>
