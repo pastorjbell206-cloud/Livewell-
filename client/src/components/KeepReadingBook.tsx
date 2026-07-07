@@ -172,6 +172,62 @@ const BOOKS: Record<string, BookRef> = {
     href: "/books/critical-race-theory-biblical",
     cover: "/books/critical-race-theory-biblical.webp",
   },
+  "born-again-from-atheism": {
+    slug: "born-again-from-atheism",
+    title: "Born Again From Atheism",
+    sub: "How an Unbeliever Came to Faith, and What He Found There",
+    blurb: "The whole story — the arguments, the resistance, and the God who outlasted both. Written for the reader who is not sure belief is honest.",
+  },
+  "the-god-who-is-not-nice": {
+    slug: "the-god-who-is-not-nice",
+    title: "The God Who Is Not Nice",
+    sub: "Recovering the Weight of God in a Sentimental Age",
+    blurb: "Against the sentimental god of niceness — the holy, weighty God of Scripture, who turns out to be far better than nice.",
+  },
+  "faith-after-deconstruction": {
+    slug: "faith-after-deconstruction",
+    title: "Faith After Deconstruction",
+    sub: "How to Lose the Faith You Were Given and Find the One That Holds",
+    blurb: "For the reader taking the inherited faith apart — and what it costs to stop at the demolition instead of digging to what holds.",
+  },
+  "ordinary-holiness": {
+    slug: "ordinary-holiness",
+    title: "Ordinary Holiness",
+    sub: "Finding God in the Life You Actually Have",
+    blurb: "Holiness relocated to the life you actually have — the kitchen, the commute, the repeated week — not the life you keep planning to start.",
+  },
+  "the-scandal-of-the-cross": {
+    slug: "the-scandal-of-the-cross",
+    title: "The Scandal of the Cross",
+    sub: "Why the Death of God Is the Center of Everything",
+    blurb: "The cross recovered from the jewelry we made of it — why the death of God is the center of everything, not a doctrine to hurry past.",
+  },
+  "heaven-is-not-your-reward": {
+    slug: "heaven-is-not-your-reward",
+    title: "Heaven Is Not Your Reward",
+    sub: "The Resurrection Hope the Church Traded for an Escape",
+    blurb: "New creation, not clouds and harps — the resurrection hope the church traded for an escape, and what it changes about this life.",
+  },
+  "prayer-in-the-dark": {
+    slug: "prayer-in-the-dark",
+    title: "Prayer in the Dark",
+    sub: "Talking to God When You Are Not Sure Anyone Is Listening",
+    blurb: "For the ones who kept praying into silence — honest about the dark, and unwilling to let go of the God inside it.",
+  },
+  "the-body-you-left": {
+    slug: "the-body-you-left",
+    title: "The Body You Left",
+    sub: "A Case for the Church in an Age That Walked Away",
+    blurb: "Individualism made the church optional. The case for the body of Christ, made to the people who had good reasons to leave.",
+  },
+  "the-monster-in-the-mirror": {
+    slug: "the-monster-in-the-mirror",
+    title: "The Monster in the Mirror",
+    sub: "Why Every Generation Gets the Bible Wrong, Why Yours Is No Different, and What to Do About It",
+    blurb: "Six American cultural lenses that quietly distort how we read Scripture, and what it looks like to read against your own assumptions.",
+    href: "/books/the-monster-in-the-mirror",
+    cover: "/books/the-monster-in-the-mirror.webp",
+  },
 };
 
 /** Slug-keyword overrides: hard-issues essays route to their matching book,
@@ -187,6 +243,14 @@ const SLUG_BOOK_RULES: Array<{ keywords: string[]; book: string }> = [
   { keywords: ["sermon-on-the-mount", "beatitude"], book: "sermon-on-the-mount-as-politics" },
   { keywords: ["burnout", "loneliness-of-the-pastor", "pastor-nobody"], book: "the-loneliness-of-the-pastor" },
   { keywords: ["money", "treasure", "debt", "generosity"], book: "where-your-treasure-is" },
+  { keywords: ["atheis", "skeptic", "unbelie"], book: "born-again-from-atheism" },
+  { keywords: ["therapeutic", "sentimental", "moralistic", "not-nice"], book: "the-god-who-is-not-nice" },
+  { keywords: ["holiness", "sanctif", "spiritual-growth"], book: "ordinary-holiness" },
+  { keywords: ["the-cross", "atonement", "crucifi", "good-friday"], book: "the-scandal-of-the-cross" },
+  { keywords: ["heaven", "resurrection", "new-creation", "afterlife", "eternal-life"], book: "heaven-is-not-your-reward" },
+  { keywords: ["prayer", "praying", "unanswered"], book: "prayer-in-the-dark" },
+  { keywords: ["church-membership", "why-church", "leaving-church", "left-the-church", "body-of-christ", "ecclesi"], book: "the-body-you-left" },
+  { keywords: ["cultural-lens", "consumer", "gets-the-bible-wrong", "individualism"], book: "the-monster-in-the-mirror" },
 ];
 
 function bookFor(post: PostLike): BookRef {
@@ -200,7 +264,8 @@ function bookFor(post: PostLike): BookRef {
   const track = resolveTrack(post.pillar ?? null)?.slug;
   if (track === "prophetic-justice") return BOOKS["what-belongs-to-the-poor"];
   if (track === "finances") return BOOKS["where-your-treasure-is"];
-  if (track === "theology" || track === "doubt") return BOOKS["how-to-read-the-bible"];
+  if (track === "doubt") return BOOKS["faith-after-deconstruction"];
+  if (track === "theology") return BOOKS["how-to-read-the-bible"];
   if (track === "devotionals") return BOOKS["healwell"];
   if (track === "marriage") return BOOKS["covenant"];
   if (track === "parenting") return BOOKS["raising-believers"];
