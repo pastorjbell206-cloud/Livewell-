@@ -33,6 +33,33 @@ lived experience.
 - For pastors (Pastors Connection Network):
   https://www.livewellbyjamesbell.co/pastors
 
+## Free study-guide curriculum library
+
+Sixty-two complete small-group study guides, free, each a facilitator-ready
+curriculum: five or six sessions with full teaching, discussion questions
+(with the pastoral reasoning behind each), anticipated objections answered,
+Scripture study, prayers, a leader primer, glossary, and bibliography. Every
+guide ships with downloadable Leader's Guide and Participant Handout PDFs.
+Topics run from books and texts of Scripture (the Psalms, the Beatitudes, the
+parables, the Lord's Prayer, the story of the whole Bible) through doctrine
+(the creeds, the image of God, baptism and communion, the fruit of the
+Spirit) to the weight of ordinary life (marriage, parenting, singleness,
+grief, suffering, mental health, anger, money, contentment, friendship,
+hospitality, manhood, womanhood, aging and legacy).
+
+- Index of all guides: https://www.livewellbyjamesbell.co/studyguides
+- Each guide lives at /studyguides/{slug} with its PDFs linked on the page.
+
+## Reference tools
+
+- Deep Bible Study Companion (20 books of the Bible, six layers of analysis
+  each): https://www.livewellbyjamesbell.co/tools/deep-bible
+- Theological glossary (100 terms with etymologies):
+  https://www.livewellbyjamesbell.co/tools/glossary
+- What the Bible actually says about money, suffering, marriage, anxiety, and
+  more (passages with context and common misuses named):
+  https://www.livewellbyjamesbell.co/tools/bible-says
+
 ## Ebooks (read the opening free, then buy)
 
 Full-length ebooks by James Bell, each with a free sample and a gated PDF:
