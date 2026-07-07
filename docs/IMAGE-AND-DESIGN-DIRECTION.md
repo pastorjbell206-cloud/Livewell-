@@ -124,8 +124,8 @@ hand-troweled off-white plaster, raking light revealing the grain. No color.
 
 ### After generation
 
-- Run every generated image through the duotone treatment (`.toned`, below) so
-  it locks to the palette even if the model drifts.
+- Render every generated image through the `Figure` component (default duotone
+  treatment) so it locks to the palette even if the model drifts.
 - Compress to WebP; ship width-appropriate sizes; `loading="lazy"` below the
   fold. The first-paint contract in `CLAUDE.md` still governs: no image ever
   blocks the masthead.
@@ -146,13 +146,11 @@ tiers.
 2. **Air.** Elite sites are mostly empty space. Section padding 120–160px on
    desktop; heroes sit off-center; asymmetry reads as confidence. Use the
    spacing scale (`--s-7`…`--s-9`), never ad-hoc values.
-3. **Images join the brand instead of fighting it.** Every photograph gets the
-   duotone treatment so the whole site feels authored by one hand:
-
-   ```css
-   .toned { background: var(--charcoal); }
-   .toned img { filter: grayscale(1) contrast(1.05); mix-blend-mode: luminosity; opacity: .92; }
-   ```
+3. **Images join the brand instead of fighting it.** Every photograph renders
+   through the `Figure` component (`client/src/components/Figure.tsx`), whose
+   default duotone treatment grades the image into the palette — one place,
+   one treatment, so the whole site feels authored by one hand. Opt out only
+   deliberately with `treatment="plain"`.
 
 4. **Color discipline.** Mustard genuinely under 8% of any viewport: hairline
    rules, a kicker, one glint. Cream is the room; pure white only for lifted
@@ -170,6 +168,6 @@ tiers.
 |---|---|
 | Drop caps (essays + book chapters) | `.article-body p:first-of-type::first-letter` |
 | Pull quote, unboxed with hanging quote mark | `PullQuote` in `components/EditorialBlocks.tsx` |
-| Duotone image lock | `.toned` utility in `index.css` |
+| Duotone image lock | `Figure` component (`components/Figure.tsx`), duotone by default |
 | Display scale on the homepage hero | `pages/Home.tsx` hero `clamp()` |
 | Tokens for all of the above | `:root` in `index.css` — never hardcode hex |

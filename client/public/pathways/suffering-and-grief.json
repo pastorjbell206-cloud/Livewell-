@@ -1,0 +1,64 @@
+{
+  "slug": "suffering-and-grief",
+  "title": "When the Weight Doesn't Lift",
+  "subtitle": "For grief that has outlasted everyone's patience — four essays, a study, and a book.",
+  "forWhom": "For the reader carrying a loss the world expected them to be over by now, and for anyone sitting beside them with nothing to say.",
+  "movements": [
+    {
+      "kind": "read",
+      "heading": "Read these first",
+      "note": "Begin in the dark where grief actually lives — Saturday, the empty room, the God who seems to have stepped out — before any word about morning.",
+      "items": [
+        {
+          "label": "When Grief Doesn't Lift",
+          "href": "/writing/the-weight-that-stays",
+          "blurb": "Some griefs do not resolve. They are carried. The church should say so."
+        },
+        {
+          "label": "Where Is God When You're Grieving?",
+          "href": "/writing/when-god-is-silent-and-the-room-is-empty",
+          "blurb": "The silence in the empty room is the oldest complaint in the Psalms."
+        },
+        {
+          "label": "Where Is God on Holy Saturday?",
+          "href": "/writing/the-theology-of-saturday",
+          "blurb": "The day between the cross and the tomb is the one most of us actually live in."
+        },
+        {
+          "label": "Why Christian Hope Is Not Wishful Thinking",
+          "href": "/writing/why-hope-is-not-wishful-thinking",
+          "blurb": "Hope that skips the grave is sentiment. This one goes through it."
+        }
+      ]
+    },
+    {
+      "kind": "study",
+      "heading": "Then walk it, a week at a time",
+      "note": "Eight Weeks of Walking With Loss is a guided grief companion — permission to mourn, lament as a language, and a way to live forward without leaving them behind. Keep real help close; it points the way.",
+      "items": [
+        {
+          "label": "Eight Weeks of Walking With Loss — a grief companion",
+          "href": "/plans/grief",
+          "blurb": "An eight-week plan you work at your own pace, alone or beside someone."
+        }
+      ]
+    },
+    {
+      "kind": "book",
+      "heading": "Then read the book, free",
+      "note": "Hard Questions gathers the long-form work on suffering, evil, the hiddenness of God, and whether faith survives them. The full book, free.",
+      "items": [
+        {
+          "label": "Hard Questions — read free",
+          "href": "/read/essays-hard-questions",
+          "blurb": "Twenty-two chapters of honest answers for a skeptical age. Free to read in full."
+        },
+        {
+          "label": "Find James's books in the bookstore",
+          "href": "/books",
+          "blurb": "Print and ebook editions of the full library."
+        }
+      ]
+    }
+  ]
+}

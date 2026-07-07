@@ -12,6 +12,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useLocation, useParams } from "wouter";
 import { Markdown } from "@/components/Markdown";
+import { recordReadEvent } from "@/components/ReadDepthBeacon";
 import { ArrowLeft, Bookmark, Share2, User } from "lucide-react";
 
 import Layout from "@/components/Layout";
@@ -30,6 +31,7 @@ import { GeneratedHero } from "@/components/GeneratedHero";
 import { trpc } from "@/lib/trpc";
 import { pillarForPost } from "@/lib/taxonomy";
 import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
+import { trackEssayComplete } from "@/lib/telemetry";
 
 /**
  * Per-slug byline overrides. Every essay not listed here is authored by
@@ -428,6 +430,34 @@ export default function ArticleDetail() {
       .slice(0, 3);
   }, [indexQuery.data, post]);
 
+  // Depth telemetry (board rec #17): emit "essay_read_complete" once, when a
+  // zero-chrome sentinel at the foot of the body scrolls into view — a real
+  // read, not an open (firing on mount would measure clicks, not reading). The
+  // ref flag guarantees a single emit per mount and re-arms on navigation.
+  const bodyEndRef = useRef<HTMLDivElement>(null);
+  const readCompleteRef = useRef(false);
+  const postSlug = post?.slug;
+  useEffect(() => {
+    readCompleteRef.current = false;
+    const sentinel = bodyEndRef.current;
+    if (!sentinel || !postSlug || typeof IntersectionObserver === "undefined") {
+      return;
+    }
+    const observer = new IntersectionObserver(
+      entries => {
+        if (entries.some(entry => entry.isIntersecting) && !readCompleteRef.current) {
+          readCompleteRef.current = true;
+          trackEssayComplete(postSlug);
+          recordReadEvent(`/writing/${postSlug}`);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0 }
+    );
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [postSlug]);
+
   if (postQuery.isLoading) {
     return (
       <Layout>
@@ -719,6 +749,13 @@ export default function ArticleDetail() {
               </p>
             )}
           </div>
+
+          {/* Depth-telemetry sentinel — a 1px, aria-hidden anchor at the foot
+              of the essay body; entering the viewport marks a completed read.
+              One observer, two sinks: Vercel Analytics (lib/telemetry) and the
+              site's own read_events table (recordReadEvent), which feeds the
+              admin dashboard's "Essays finished" tile. */}
+          <div ref={bodyEndRef} aria-hidden style={{ height: 1 }} />
 
           {/* Reader actions */}
           <div

@@ -1,0 +1,64 @@
+{
+  "slug": "doubt-and-deconstruction",
+  "title": "When Faith Has Questions",
+  "subtitle": "For the reader taking the faith apart — four essays, a study, and a book.",
+  "forWhom": "For the Christian with real questions and the skeptic who left over them — anyone who would rather have an honest doubt than a dishonest certainty.",
+  "movements": [
+    {
+      "kind": "read",
+      "heading": "Read these first",
+      "note": "Take the hardest questions at full strength before any answer — deconstruction, the hiddenness of God, suffering, and the one claim the whole thing stands or falls on.",
+      "items": [
+        {
+          "label": "What Happens After You Deconstruct Your Faith?",
+          "href": "/writing/deconstruction-without-reconstruction",
+          "blurb": "Taking a faith apart is honest work. Stopping there is just standing in the rubble."
+        },
+        {
+          "label": "Why Does God Hide?",
+          "href": "/writing/the-god-who-hides",
+          "blurb": "The silence is not proof of absence. But it is not nothing, and Scripture never pretends it is."
+        },
+        {
+          "label": "Why Does God Allow Suffering?",
+          "href": "/writing/suffering-without-explanation",
+          "blurb": "The oldest objection, taken at its strongest, without the tidy answer that insults the wound."
+        },
+        {
+          "label": "Did the Resurrection Actually Happen?",
+          "href": "/writing/did-the-resurrection-happen",
+          "blurb": "The one question under all the others. If it is yes, everything else can be carried."
+        }
+      ]
+    },
+    {
+      "kind": "study",
+      "heading": "Then work the study",
+      "note": "When Faith Has Questions is a five-session study — suffering, the reliability of Scripture, the wounds of the church — every hard question named before it is answered. A safe room for the doubter.",
+      "items": [
+        {
+          "label": "When Faith Has Questions — a study on doubt",
+          "href": "/studyguides/doubt",
+          "blurb": "Five sessions for skeptics, questioners, and the groups brave enough to host them."
+        }
+      ]
+    },
+    {
+      "kind": "book",
+      "heading": "Then read the book, free",
+      "note": "Born Again From Atheism is the whole account of a man who left unbelief slowly, against his preference, and did not trade it for a god that small. Read it free; buy the ebook if it is worth keeping.",
+      "items": [
+        {
+          "label": "Born Again From Atheism — read free",
+          "href": "/read/born-again-from-atheism",
+          "blurb": "Twelve chapters, written toward the reader still on the other side. The complete book, free to read."
+        },
+        {
+          "label": "Read a sample and buy the ebook",
+          "href": "/born-again-from-atheism",
+          "blurb": "The book's own page, with a free excerpt and the purchase."
+        }
+      ]
+    }
+  ]
+}

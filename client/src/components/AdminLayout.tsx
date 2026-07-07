@@ -2,71 +2,16 @@ import { Link, useLocation } from "wouter";
 import { useState } from "react";
 import { useAuth } from "@/_core/hooks/useAuth";
 import {
-  LayoutDashboard,
-  PenLine,
-  BookOpen,
-  FolderOpen,
-  FileText,
-  Settings,
   ArrowLeft,
   LogOut,
-  RefreshCw,
-  Bell,
-  MessageSquare,
-  Users,
   PanelLeftClose,
   PanelLeft,
   ChevronRight,
-  Rocket,
-  DownloadCloud,
-  FilePlus2,
-  Copy,
-  Map,
 } from "lucide-react";
+import { ADMIN_NAV } from "@/components/admin/nav";
 
-/**
- * Grouped navigation. Every admin route lives in exactly one group so nothing
- * is reachable only by typing the URL. Order runs top-down by how often it is
- * used: your writing first, then getting it live, then the audience, then the
- * occasional setup tools.
- */
-const NAV_GROUPS: { group: string; items: { href: string; label: string; icon: typeof LayoutDashboard }[] }[] = [
-  {
-    group: "Content",
-    items: [
-      { href: "/admin", label: "Dashboard", icon: LayoutDashboard },
-      { href: "/admin/posts", label: "Writing", icon: PenLine },
-      { href: "/admin/resources", label: "Resources", icon: FolderOpen },
-      { href: "/admin/books", label: "Books", icon: BookOpen },
-      { href: "/admin/about", label: "About Page", icon: FileText },
-    ],
-  },
-  {
-    group: "Publishing",
-    items: [
-      { href: "/admin/publish-content", label: "Publish & Sell", icon: Rocket },
-      { href: "/admin/sync", label: "Content Sync", icon: RefreshCw },
-      { href: "/admin/import-substack", label: "Import from Substack", icon: DownloadCloud },
-      { href: "/admin/load-drafts", label: "Load Drafts", icon: FilePlus2 },
-    ],
-  },
-  {
-    group: "Audience",
-    items: [
-      { href: "/admin/subscribers", label: "Subscribers", icon: Users },
-      { href: "/admin/notifications", label: "Notifications", icon: Bell },
-      { href: "/admin/moderation", label: "Moderation", icon: MessageSquare },
-    ],
-  },
-  {
-    group: "System",
-    items: [
-      { href: "/admin/settings", label: "Settings", icon: Settings },
-      { href: "/admin/setup-navigation", label: "Navigation Setup", icon: Map },
-      { href: "/admin/deduplicate", label: "Deduplicate", icon: Copy },
-    ],
-  },
-];
+// The sidebar reads the section registry; add sections there, not here.
+const NAV_GROUPS = ADMIN_NAV;
 
 const ALL_ITEMS = NAV_GROUPS.flatMap((g) => g.items);
 

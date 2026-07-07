@@ -107,6 +107,8 @@ const SearchPage = lazy(() => import("./pages/Search"));
 const TheologyQuiz = lazy(() => import("./pages/TheologyQuiz"));
 const ResourcesForPastors = lazy(() => import("./pages/ResourcesForPastors"));
 const ReadingPaths = lazy(() => import("./pages/ReadingPaths"));
+const Pathways = lazy(() => import("./pages/Pathways"));
+const TopicPathway = lazy(() => import("./pages/TopicPathway"));
 const EmailSignup = lazy(() => import("./pages/EmailSignup"));
 const Pillars = lazy(() => import("./pages/Pillars"));
 const Explore = lazy(() => import("./pages/Explore"));
@@ -273,6 +275,7 @@ const AdminSettings = lazy(() => import("./pages/AdminSettings"));
 const AdminSubscribers = lazy(() => import("./pages/AdminSubscribers"));
 const AdminContentSync = lazy(() => import("./pages/AdminContentSync"));
 const AdminPublishContent = lazy(() => import("./pages/AdminPublishContent"));
+const AdminCommerce = lazy(() => import("./pages/AdminCommerce"));
 const AdminSetupNavigation = lazy(() => import("./pages/AdminSetupNavigation"));
 const AdminDeduplicate = lazy(() => import("./pages/AdminDeduplicate"));
 const AdminLoadDrafts = lazy(() => import("./pages/AdminLoadDrafts"));
@@ -473,6 +476,8 @@ function Router() {
         <Route path="/articles" component={ArticlesRedirect} />
         <Route path="/reading-paths" component={ReadingPaths} />
         <Route path="/reading-paths/:slug" component={ReadingPathDetail} />
+        <Route path="/pathways" component={Pathways} />
+        <Route path="/pathways/:slug" component={TopicPathway} />
         <Route path="/subscribe" component={EmailSignup} />
         <Route path="/authors/:slug" component={AuthorProfile} />
         <Route path="/article-collections" component={ArticleCollections} />
@@ -641,6 +646,7 @@ function Router() {
         <Route path="/admin/subscribers"><ProtectedRoute component={AdminSubscribers} requireAdmin /></Route>
         <Route path="/admin/sync"><ProtectedRoute component={AdminContentSync} requireAdmin /></Route>
         <Route path="/admin/publish-content"><ProtectedRoute component={AdminPublishContent} requireAdmin /></Route>
+        <Route path="/admin/commerce"><ProtectedRoute component={AdminCommerce} requireAdmin /></Route>
         <Route path="/admin/setup-navigation"><ProtectedRoute component={AdminSetupNavigation} requireAdmin /></Route>
         <Route path="/admin/deduplicate"><ProtectedRoute component={AdminDeduplicate} requireAdmin /></Route>
         <Route path="/admin/load-drafts"><ProtectedRoute component={AdminLoadDrafts} requireAdmin /></Route>

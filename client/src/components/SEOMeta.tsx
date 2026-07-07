@@ -222,3 +222,53 @@ export function getBreadcrumbSchema(items: { name: string; url: string }[]) {
     })),
   };
 }
+
+/**
+ * Reduce markdown/HTML to a single trimmed line of plain text, capped in
+ * length. JSON-LD wants clean strings, not rendered markup — this strips tags,
+ * links, and emphasis marks so what an answer engine reads matches what a human
+ * reads. Coerces any input to a string so JSON.stringify never breaks on it.
+ */
+function toPlainText(input: string, maxLen = 300): string {
+  const text = String(input ?? "")
+    .replace(/<[^>]*>/g, " ") // HTML tags
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, " ") // markdown images
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1") // markdown links -> their text
+    .replace(/[*_`~#>]/g, "") // emphasis / code / heading / blockquote marks
+    .replace(/\s+/g, " ") // collapse whitespace (incl. newlines)
+    .trim();
+  return text.length > maxLen ? `${text.slice(0, maxLen).trimEnd()}…` : text;
+}
+
+export function getFAQPageSchema(
+  items: { question: string; answer: string }[]
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((i) => ({
+      "@type": "Question",
+      name: toPlainText(i.question),
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: toPlainText(i.answer),
+      },
+    })),
+  };
+}
+
+export function getQAPageSchema(question: string, answer: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "QAPage",
+    mainEntity: {
+      "@type": "Question",
+      name: toPlainText(question),
+      acceptedAnswer: {
+        "@type": "Answer",
+        // A QAPage carries one full answer, so allow more room than an FAQ item.
+        text: toPlainText(answer, 1200),
+      },
+    },
+  };
+}

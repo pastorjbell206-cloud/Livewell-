@@ -32,9 +32,12 @@ export default function AdminDashboard() {
     visitors: { last7: number; last30: number };
     topPaths: { path: string; views: number }[];
     daily: { date: string; views: number }[];
+    referrers?: { host: string; views: number }[];
+    reads?: { last30: number; allTime: number };
   };
   const [analytics, setAnalytics] = useState<Analytics | null>(null);
   const [analyticsError, setAnalyticsError] = useState(false);
+  const [noPriceCount, setNoPriceCount] = useState<number | null>(null);
   const money = (cents: number, cur = "usd") =>
     new Intl.NumberFormat("en-US", { style: "currency", currency: (cur || "usd").toUpperCase() }).format((cents || 0) / 100);
   useEffect(() => {
@@ -61,8 +64,20 @@ export default function AdminDashboard() {
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
       .then((d) => active && d?.ok && setAnalytics(d))
       .catch(() => active && setAnalyticsError(true));
+    fetch("/api/admin/commerce-status", { credentials: "include" })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((d) => active && d?.ok && setNoPriceCount((d.books || []).filter((b: { status: string }) => b.status === "no-price").length))
+      .catch(() => { /* the strip simply omits what it cannot know */ });
     return () => { active = false; };
   }, []);
+
+  // Needs attention — the strip that answers "what should I do next?"
+  const drafts = (postsQuery.data ?? []).filter((p: { published?: boolean }) => p.published === false).length;
+  const attention: { label: string; href: string }[] = [
+    ...(noPriceCount ? [{ label: `${noPriceCount} ebook${noPriceCount === 1 ? "" : "s"} missing a price — not selling`, href: "/admin/commerce" }] : []),
+    ...(drafts ? [{ label: `${drafts} unpublished draft${drafts === 1 ? "" : "s"}`, href: "/admin/posts" }] : []),
+    ...(messages && messages.length ? [{ label: `${messages.length} message${messages.length === 1 ? "" : "s"} in the inbox`, href: "#messages" }] : []),
+  ];
 
   const stats = [
     { label: "Writing Posts", value: postsQuery.data?.length ?? 0, icon: PenLine, href: "/admin/posts", color: "#2C3E50" },
@@ -131,6 +146,20 @@ export default function AdminDashboard() {
           Welcome to the Livewell admin panel. Manage your content below.
         </p>
 
+        {/* Needs attention — what to do next, before the numbers. */}
+        {attention.length > 0 && (
+          <div className="mb-10 p-4 rounded-lg" style={{ background: "#FFFFFF", border: "1px solid #D1C9BB", borderLeft: "3px solid #B8963E" }}>
+            <div className="font-ui text-xs uppercase tracking-wider mb-2" style={{ color: "#6B7280" }}>Needs attention</div>
+            <div className="flex flex-wrap gap-x-6 gap-y-1">
+              {attention.map((a) => (
+                <Link key={a.label} href={a.href} className="font-ui text-sm no-underline" style={{ color: "#1A1A1A" }}>
+                  {a.label} <span style={{ color: "#B8963E" }}>→</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Stats Grid — primary content overview */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {stats.map((stat) => {
@@ -166,8 +195,8 @@ export default function AdminDashboard() {
         <div className="mb-12">
           <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "#1A1A1A" }}>Business at a glance</h2>
           <p className="font-body text-sm mb-4" style={{ color: "#6B7280" }}>
-            The numbers that matter: who is on the list, what has sold, and how much is published. Depth metrics
-            (essays finished, returning readers) will land here once reading events are instrumented.
+            The numbers that matter: who is on the list, what has sold, and how much is published.
+            Essays finished lives under Traffic below.
           </p>
           {metricsError && (
             <p className="font-body text-sm" style={{ color: "#9B2C2C" }}>
@@ -243,6 +272,7 @@ export default function AdminDashboard() {
                   { label: "Visits · 7 days", value: analytics.views.last7.toLocaleString(), sub: `${analytics.visitors.last7.toLocaleString()} unique visitors`, color: "#2D4A3E" },
                   { label: "Visits · 30 days", value: analytics.views.last30.toLocaleString(), sub: `${analytics.visitors.last30.toLocaleString()} unique visitors`, color: "#B8963E" },
                   { label: "All-time views", value: analytics.views.allTime.toLocaleString(), sub: "since tracking began", color: "#6B4E9E" },
+                  ...(analytics.reads ? [{ label: "Essays finished", value: analytics.reads.last30.toLocaleString(), sub: `read to the end · 30d (${analytics.reads.allTime.toLocaleString()} all-time)`, color: "#2D4A3E" }] : []),
                 ].map((m) => (
                   <div key={m.label} className="flex flex-col p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF", borderTop: `5px solid ${m.color}`, boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
                     <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>{m.label}</div>
@@ -251,7 +281,7 @@ export default function AdminDashboard() {
                   </div>
                 ))}
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {/* Last 14 days — simple CSS bar chart */}
                 <div style={{ background: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: "8px", padding: "16px 18px" }}>
                   <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>Last 14 days</div>
@@ -280,6 +310,20 @@ export default function AdminDashboard() {
                       <div key={p.path} className="flex items-center justify-between py-1" style={{ fontFamily: "var(--U)", fontSize: "13px", gap: "12px" }}>
                         <a href={p.path} target="_blank" rel="noreferrer" style={{ color: "#1A1A1A", textDecoration: "none", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{p.path}</a>
                         <span style={{ color: "#6B7280", flexShrink: 0 }}>{p.views.toLocaleString()}</span>
+                      </div>
+                    ))
+                  )}
+                </div>
+                {/* Where visitors come from, 30 days */}
+                <div style={{ background: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: "8px", padding: "16px 18px" }}>
+                  <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>Visitors come from · 30 days</div>
+                  {!analytics.referrers || analytics.referrers.length === 0 ? (
+                    <div className="font-body text-sm" style={{ color: "#9CA3AF" }}>No outside referrers recorded yet — direct visits and searches with no referrer don&rsquo;t show here.</div>
+                  ) : (
+                    analytics.referrers.slice(0, 8).map((r) => (
+                      <div key={r.host} className="flex items-center justify-between py-1" style={{ fontFamily: "var(--U)", fontSize: "13px", gap: "12px" }}>
+                        <span style={{ color: "#1A1A1A", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{r.host}</span>
+                        <span style={{ color: "#6B7280", flexShrink: 0 }}>{r.views.toLocaleString()}</span>
                       </div>
                     ))
                   )}

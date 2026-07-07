@@ -9,7 +9,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
-import { SEOMeta } from "@/components/SEOMeta";
+import { SEOMeta, getFAQPageSchema } from "@/components/SEOMeta";
 import { Prose } from "@/lib/prose";
 import { DOCTRINE_INDEX } from "@/lib/theology";
 import { StatementBand } from "@/components/EditorialBlocks";
@@ -51,12 +51,30 @@ export default function TheologyQuestions() {
 
   const docReady = (slug: string) => DOCTRINE_INDEX.some((d) => d.slug === slug && d.ready);
 
+  // FAQPage JSON-LD for answer engines — built from the loaded questions, so it
+  // carries the full set once fetched (and simply omits until then).
+  const faqSchema = useMemo(
+    () =>
+      questions.length > 0
+        ? [
+            getFAQPageSchema(
+              questions.map((q) => ({
+                question: q.question,
+                answer: q.shortAnswer || q.answer,
+              }))
+            ),
+          ]
+        : undefined,
+    [questions]
+  );
+
   return (
     <Layout>
       <SEOMeta
         title="Hard Questions — Honest Answers to What You Actually Ask"
         description="Can I lose my salvation? Why does God allow suffering? Is the Bible reliable? The questions people really arrive with, answered warmly and fairly."
         url="https://www.livewellbyjamesbell.co/theology/questions"
+        structuredData={faqSchema}
       />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>

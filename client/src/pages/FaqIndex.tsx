@@ -7,7 +7,7 @@
  */
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
-import { SEOMeta } from "@/components/SEOMeta";
+import { SEOMeta, getFAQPageSchema } from "@/components/SEOMeta";
 
 const QUESTIONS: { href: string; q: string; line: string }[] = [
   { href: "/faq/does-god-exist", q: "Does God exist?", line: "The best arguments for and against, the role of suffering, and the difference between faith and proof." },
@@ -31,6 +31,11 @@ const COMPARISONS: { href: string; label: string }[] = [
   { href: "/compare/liturgical-vs-contemporary", label: "Liturgical vs. Contemporary worship" },
 ];
 
+// FAQPage JSON-LD for answer engines, built from the indexed questions.
+const FAQ_SCHEMA = getFAQPageSchema(
+  QUESTIONS.map((item) => ({ question: item.q, answer: item.line }))
+);
+
 export default function FaqIndex() {
   return (
     <Layout>
@@ -38,6 +43,7 @@ export default function FaqIndex() {
         title="Questions People Ask — Honest Answers"
         description="Does God exist? Why are people leaving church? What is deconstruction? Ten hard questions answered honestly by a pastor who came to faith from atheism, plus six traditions compared side by side."
         url="https://www.livewellbyjamesbell.co/faq"
+        structuredData={FAQ_SCHEMA}
       />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>

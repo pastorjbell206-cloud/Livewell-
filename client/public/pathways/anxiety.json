@@ -1,0 +1,64 @@
+{
+  "slug": "anxiety",
+  "title": "Anxiety and the Peace of Christ",
+  "subtitle": "A guided route through the worry that will not turn off — four essays, a study, and a book.",
+  "forWhom": "For the reader who lies awake running the same loop, and who knows the difference between the fear a doctor should hear and the fear only the Father can quiet.",
+  "movements": [
+    {
+      "kind": "read",
+      "heading": "Read these first",
+      "note": "Begin under the worry, not on top of it. These four move from what Jesus actually said to why fear is so good at rewriting your picture of God.",
+      "items": [
+        {
+          "label": "What Jesus Said About Worry and Money",
+          "href": "/writing/what-jesus-said-about-worry-and-money",
+          "blurb": "The birds and the lilies were never a greeting card. They are an argument about what holds you."
+        },
+        {
+          "label": "When Fear Starts Rewriting What You Believe",
+          "href": "/writing/when-fear-rewrites-theology",
+          "blurb": "Anxiety does not only make you afraid. It quietly edits your picture of God."
+        },
+        {
+          "label": "The Restless Man Who Couldn't Outrun God",
+          "href": "/writing/augustine-the-restless-man",
+          "blurb": "Augustine named the ache sixteen centuries early: the heart is restless until it rests in God."
+        },
+        {
+          "label": "Sabbath Isn't Optional",
+          "href": "/writing/sabbath-isnt-optional",
+          "blurb": "The command to stop is not a lifestyle tip. It is a rebellion against the god of more."
+        }
+      ]
+    },
+    {
+      "kind": "study",
+      "heading": "Then work the study",
+      "note": "Consider the Birds is a five-session guide — honest about the anxiety that needs a doctor, pastoral about the anxiety that needs the Father. Run it alone or with a group.",
+      "items": [
+        {
+          "label": "Consider the Birds — a study on anxiety",
+          "href": "/studyguides/anxiety",
+          "blurb": "Five sessions, with the answer behind every question already written for the leader."
+        }
+      ]
+    },
+    {
+      "kind": "book",
+      "heading": "Then read the book, free",
+      "note": "On Rest & Sabbath gathers the long-form work on the exhausted life — silence, waiting, and a pace a body can actually survive. Read it whole, here, for nothing.",
+      "items": [
+        {
+          "label": "On Rest & Sabbath — read free",
+          "href": "/read/essays-rest-and-sabbath",
+          "blurb": "Twenty chapters on rest in a culture of exhaustion. The complete book, free to read."
+        },
+        {
+          "label": "Find James's books in the bookstore",
+          "href": "/books",
+          "blurb": "Print and ebook editions of the full library."
+        }
+      ]
+    }
+  ]
+}
