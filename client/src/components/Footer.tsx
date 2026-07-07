@@ -34,6 +34,7 @@ export default function Footer() {
           <div>
             <h3 style={colTitle}>The Pillars</h3>
             <div style={col}>
+              <Link href="/historic-faith" style={footerLink}>The Historic Faith</Link>
               <Link href="/pillars" style={footerLink}>The Six Pillars</Link>
               <Link href="/theology" style={footerLink}>Theological Depth</Link>
               <Link href="/justice" style={footerLink}>Prophetic Justice</Link>
