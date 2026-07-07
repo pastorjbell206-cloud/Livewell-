@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { useTheme } from "@/contexts/ThemeContext";
 import { Sun, Moon } from "lucide-react";
-import { pillarUrl } from "@/lib/taxonomy";
+import { SITE_NAV_GROUPS } from "@/lib/siteNav";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 const footerLink = { color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "14px", display: "inline-block", padding: "5px 0" } as const;
@@ -29,88 +29,40 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* The Pillars — six-pillar V2 is the spine; the hubs below are the
-              rich landing pages that sit under it (see docs/TAXONOMY-PROPOSAL.md). */}
-          <div>
-            <h3 style={colTitle}>The Pillars</h3>
-            <div style={col}>
-              <Link href="/historic-faith" style={footerLink}>The Historic Faith</Link>
-              <Link href="/pillars" style={footerLink}>The Six Pillars</Link>
-              <Link href="/theology" style={footerLink}>Theological Depth</Link>
-              <Link href="/justice" style={footerLink}>Prophetic Justice</Link>
-              <Link href="/disruption" style={footerLink}>Prophetic Disruption</Link>
-              <Link href="/leadership" style={footerLink}>Leadership Formation</Link>
-              <Link href="/living-well" style={footerLink}>Living Well</Link>
+          {/* The five nav groups — one source of truth in lib/siteNav.ts, shared
+              with the header so the two agree (The Pillars / Write & Read /
+              Libraries & Tools / For Pastors / Connect). */}
+          {SITE_NAV_GROUPS.map((group) => (
+            <div key={group.title}>
+              <h3 style={colTitle}>{group.title}</h3>
+              <div style={col}>
+                {group.links.map((link) =>
+                  link.external ? (
+                    <a
+                      key={link.href + link.label}
+                      href={link.href}
+                      target={link.href.startsWith("mailto:") ? undefined : "_blank"}
+                      rel={link.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+                      style={footerLink}
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link key={link.href + link.label} href={link.href} style={footerLink}>
+                      {link.label}
+                    </Link>
+                  )
+                )}
+              </div>
+              {/* The one real signup form, on all ~200 Layout pages (QW-25).
+                  Anchored under Connect, as before. */}
+              {group.title === "Connect" && (
+                <div style={{ marginTop: "18px" }}>
+                  <NewsletterSignup variant="footer" source="footer" />
+                </div>
+              )}
             </div>
-          </div>
-
-          {/* Write & Read */}
-          <div>
-            <h3 style={colTitle}>Write &amp; Read</h3>
-            <div style={col}>
-              <Link href="/writing" style={footerLink}>The Writing</Link>
-              <Link href="/books" style={footerLink}>Books</Link>
-              <Link href="/read" style={footerLink}>The Library (read online)</Link>
-              <Link href="/reading-paths" style={footerLink}>Reading Paths</Link>
-              <Link href="/library" style={footerLink}>The Commonplace</Link>
-              <Link href="/framework" style={footerLink}>The Framework</Link>
-              <Link href="/start" style={footerLink}>Start Here</Link>
-              <Link href="/marriage" style={footerLink}>Marriage</Link>
-              <Link href="/parenting" style={footerLink}>Parenting</Link>
-            </div>
-          </div>
-
-          {/* Libraries & Tools */}
-          <div>
-            <h3 style={colTitle}>Libraries &amp; Tools</h3>
-            <div style={col}>
-              <Link href="/resources" style={footerLink}>The Resource Hub</Link>
-              <Link href="/studyguides" style={footerLink}>Study Guides</Link>
-              <Link href="/resources/context" style={footerLink}>Reading Scripture in Context</Link>
-              <Link href="/wisdom" style={footerLink}>Wisdom for All of Life</Link>
-              <Link href="/tools/wisdom-finder" style={footerLink}>Wisdom Finder</Link>
-              <Link href="/how-tos" style={footerLink}>How-To Guides</Link>
-              <Link href="/faq" style={footerLink}>Questions people ask</Link>
-              <Link href="/disciple-making" style={footerLink}>Make Disciples</Link>
-              <Link href="/leadership/library" style={footerLink}>Leadership Library</Link>
-              <Link href="/leadership/sermon-series" style={footerLink}>Sermon Series Library</Link>
-              <Link href="/discipleship" style={footerLink}>The Discipleship Pathway</Link>
-              <Link href="/tools" style={footerLink}>All Tools</Link>
-              <Link href="/tools/theology-quiz" style={footerLink}>Theology Quiz</Link>
-            </div>
-          </div>
-
-          {/* For Pastors */}
-          <div>
-            <h3 style={colTitle}>For Pastors</h3>
-            <div style={col}>
-              <Link href="/pastors" style={footerLink}>Pastors Connection Network</Link>
-              <Link href={pillarUrl("the-pastoral-angle")} style={footerLink}>The Pastoral Angle</Link>
-              <Link href="/leadership" style={footerLink}>The Leadership Hub</Link>
-              <Link href="/resources/hard-issues-series" style={footerLink}>The Hard Issues Series</Link>
-              <Link href="/leadership/formation" style={footerLink}>Deep Formation</Link>
-              <Link href="/for-leaders" style={footerLink}>Church Leadership</Link>
-              <Link href="/resources" style={footerLink}>Downloads &amp; Study Guides</Link>
-            </div>
-          </div>
-
-          {/* Connect */}
-          <div>
-            <h3 style={colTitle}>Connect</h3>
-            <div style={col}>
-              <Link href="/about" style={footerLink}>About James Bell</Link>
-              <Link href="/membership" style={footerLink}>Membership</Link>
-              <Link href="/work-with-james" style={footerLink}>Work With James</Link>
-              <a href="https://pastorsconnectionnetwork.com" target="_blank" rel="noopener noreferrer" style={footerLink}>Pastors Network</a>
-              <a href="https://substack.com/@jamesbell333289" target="_blank" rel="noopener noreferrer" style={footerLink}>Substack Newsletter</a>
-              <a href="mailto:Pastorjbell206@gmail.com" style={footerLink}>Contact</a>
-            </div>
-            {/* The one real signup form, on all ~200 Layout pages (QW-25).
-                Before this the footer offered only an outbound Substack link. */}
-            <div style={{ marginTop: "18px" }}>
-              <NewsletterSignup variant="footer" source="footer" />
-            </div>
-          </div>
+          ))}
         </div>
 
         {/* Bottom Bar */}
