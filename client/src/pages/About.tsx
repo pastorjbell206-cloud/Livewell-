@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { SITE_STATS } from "@/config/siteStats";
 import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBlocks";
+import { Figure } from "@/components/Figure";
 
 const PORTRAIT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg";
 
@@ -31,7 +32,9 @@ export default function About() {
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "2rem" }}>About</div>
 
           <div style={{ display: "flex", gap: "2.5rem", alignItems: "flex-start", flexWrap: "wrap", marginBottom: "3rem" }}>
-            <img src={PORTRAIT} alt="James Bell" loading="eager" width={160} height={210} style={{ width: "160px", height: "210px", objectFit: "cover", objectPosition: "center top", borderRadius: "2px", border: "1px solid rgba(244,241,234,0.1)", flexShrink: 0 }} />
+            <div style={{ width: "190px", flexShrink: 0 }}>
+              <Figure src={PORTRAIT} alt="James Bell" aspect="4 / 5" priority />
+            </div>
             <div style={{ flex: 1, minWidth: "260px" }}>
               <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1rem" }}>James Bell</h1>
               <p style={{ fontSize: "0.875rem", color: "var(--bone)", opacity: 0.5, fontFamily: "var(--U)", lineHeight: 1.5 }}>
