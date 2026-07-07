@@ -12,7 +12,7 @@ import { SITE_URL } from "@/lib/site";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
-interface Entry { slug: string; title: string; subtitle?: string; blurb?: string; pillar?: string; chapters: number }
+interface Entry { slug: string; title: string; subtitle?: string; blurb?: string; pillar?: string; chapters: number; cover?: string | null }
 
 export default function BookLibrary() {
   const [books, setBooks] = useState<Entry[]>([]);
@@ -47,14 +47,28 @@ export default function BookLibrary() {
           {books.length === 0 ? (
             <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>The first books are being written. Check back soon.</p>
           ) : (
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(340px, 100%), 1fr))", gap: "var(--s-3)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "var(--s-3)" }}>
               {books.map((b) => (
-                <Link key={b.slug} href={`/read/${b.slug}`} style={{ display: "block", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "3px solid var(--mustard)", padding: "var(--s-4)", textDecoration: "none" }}>
-                  {b.pillar && <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>{b.pillar}</div>}
-                  <div style={{ fontFamily: "var(--F)", fontSize: "26px", lineHeight: 1.15, color: "var(--ink)", marginBottom: "6px" }}>{b.title}</div>
-                  {b.subtitle && <div style={{ fontFamily: "var(--F)", fontSize: "16px", fontStyle: "italic", color: "var(--ink-muted)", marginBottom: "10px" }}>{b.subtitle}</div>}
-                  {b.blurb && <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", marginBottom: "12px" }}>{b.blurb}</p>}
-                  <div style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)" }}>{b.chapters} chapters · Read →</div>
+                <Link key={b.slug} href={`/read/${b.slug}`} style={{ display: "flex", flexDirection: "column", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", textDecoration: "none", overflow: "hidden" }}>
+                  {b.cover ? (
+                    <img
+                      src={b.cover}
+                      alt={`${b.title} — book cover`}
+                      loading="lazy"
+                      width={800}
+                      height={1200}
+                      style={{ width: "100%", aspectRatio: "2 / 3", objectFit: "cover", objectPosition: "top center", display: "block", background: "var(--charcoal)" }}
+                    />
+                  ) : (
+                    <div style={{ height: "6px", background: "var(--mustard)" }} />
+                  )}
+                  <div style={{ padding: "var(--s-4)" }}>
+                    {b.pillar && <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>{b.pillar}</div>}
+                    <div style={{ fontFamily: "var(--F)", fontSize: "24px", lineHeight: 1.15, color: "var(--ink)", marginBottom: "6px" }}>{b.title}</div>
+                    {b.subtitle && <div style={{ fontFamily: "var(--F)", fontSize: "16px", fontStyle: "italic", color: "var(--ink-muted)", marginBottom: "10px" }}>{b.subtitle}</div>}
+                    {!b.cover && b.blurb && <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", marginBottom: "12px" }}>{b.blurb}</p>}
+                    <div style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)", marginTop: "10px" }}>{b.chapters} chapters · Read →</div>
+                  </div>
                 </Link>
               ))}
             </div>
