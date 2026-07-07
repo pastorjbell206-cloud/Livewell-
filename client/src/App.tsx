@@ -107,6 +107,8 @@ const SearchPage = lazy(() => import("./pages/Search"));
 const TheologyQuiz = lazy(() => import("./pages/TheologyQuiz"));
 const ResourcesForPastors = lazy(() => import("./pages/ResourcesForPastors"));
 const ReadingPaths = lazy(() => import("./pages/ReadingPaths"));
+const Pathways = lazy(() => import("./pages/Pathways"));
+const TopicPathway = lazy(() => import("./pages/TopicPathway"));
 const EmailSignup = lazy(() => import("./pages/EmailSignup"));
 const Pillars = lazy(() => import("./pages/Pillars"));
 const Explore = lazy(() => import("./pages/Explore"));
@@ -474,6 +476,8 @@ function Router() {
         <Route path="/articles" component={ArticlesRedirect} />
         <Route path="/reading-paths" component={ReadingPaths} />
         <Route path="/reading-paths/:slug" component={ReadingPathDetail} />
+        <Route path="/pathways" component={Pathways} />
+        <Route path="/pathways/:slug" component={TopicPathway} />
         <Route path="/subscribe" component={EmailSignup} />
         <Route path="/authors/:slug" component={AuthorProfile} />
         <Route path="/article-collections" component={ArticleCollections} />

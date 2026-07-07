@@ -1,0 +1,64 @@
+{
+  "slug": "parenting",
+  "title": "Raising Kids Who Keep the Faith",
+  "subtitle": "Forming a child's heart, not just their behavior — four essays, a study, and a book.",
+  "forWhom": "For the parent less worried about raising a well-behaved child than a child whose faith survives contact with the world.",
+  "movements": [
+    {
+      "kind": "read",
+      "heading": "Read these first",
+      "note": "Start with the uncomfortable truth that children learn faith from what you do, then move to the harder work of raising kids who can think and doubt out loud.",
+      "items": [
+        {
+          "label": "Your Kids Learn Faith From What You Do, Not What You Say",
+          "href": "/writing/the-weight-of-what-you-model",
+          "blurb": "The catechism your children actually absorb is your ordinary Tuesday."
+        },
+        {
+          "label": "Raising Kids Who Think Instead of Just Performing Faith",
+          "href": "/writing/raising-kids-who-think",
+          "blurb": "A child who only performs belief has learned to hide, not to trust."
+        },
+        {
+          "label": "Teach Your Kids About Doubt Before the Internet Does",
+          "href": "/writing/teaching-kids-about-doubt",
+          "blurb": "Someone will hand your child their hardest questions. Better that it is you."
+        },
+        {
+          "label": "When Your Child Asks a Question You Can't Answer",
+          "href": "/writing/when-your-child-asks-a-question",
+          "blurb": "Saying you do not know is not the failure you fear. It may be the most honest discipleship you offer."
+        }
+      ]
+    },
+    {
+      "kind": "study",
+      "heading": "Then sit down at the table",
+      "note": "The Family Table is a guided study for discipling your own household — the meal, the text, the question, and the sending, scaled to a living room.",
+      "items": [
+        {
+          "label": "The Family Table — a study for households",
+          "href": "/table/the-family-table",
+          "blurb": "A work-through study for making disciples of the children already at your table."
+        }
+      ]
+    },
+    {
+      "kind": "book",
+      "heading": "Then read the book, free",
+      "note": "Raising Kids in the Faith collects the work on handing down a faith worth keeping — prayer, the Bible at home, and family rhythms that hold. Free to read.",
+      "items": [
+        {
+          "label": "Raising Kids in the Faith — read free",
+          "href": "/read/essays-raising-kids-in-faith",
+          "blurb": "Eleven chapters on forming faith at home. The complete book, free."
+        },
+        {
+          "label": "Find James's books in the bookstore",
+          "href": "/books",
+          "blurb": "Print and ebook editions of the full library."
+        }
+      ]
+    }
+  ]
+}

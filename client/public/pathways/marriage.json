@@ -1,0 +1,64 @@
+{
+  "slug": "marriage",
+  "title": "Marriage, Past the Tips",
+  "subtitle": "For a marriage that needs more than technique — four essays, a study, and a book.",
+  "forWhom": "For two people who are not in crisis and not fine either, and who suspect the slow drift is more dangerous than the loud fight.",
+  "movements": [
+    {
+      "kind": "read",
+      "heading": "Read these first",
+      "note": "Start with the quiet erosions nobody warns you about — the drift, the silence, and the vow you did not understand when you made it.",
+      "items": [
+        {
+          "label": "The Vow You Didn't Understand When You Made It",
+          "href": "/writing/the-covenant-you-didnt-understand",
+          "blurb": "You promised something in your twenties that only your fifties can explain. Covenant, not contract."
+        },
+        {
+          "label": "The Slow Drift That Ends More Marriages Than Affairs Do",
+          "href": "/writing/the-slow-drift-that-ends-marriages",
+          "blurb": "Most marriages do not blow up. They cool, one unremarkable evening at a time."
+        },
+        {
+          "label": "What Silence Actually Costs a Marriage",
+          "href": "/writing/what-silence-costs-a-marriage",
+          "blurb": "The conversation you kept avoiding is still happening — in the distance between you."
+        },
+        {
+          "label": "What the Bible Really Says About Submission in Marriage",
+          "href": "/writing/what-the-bible-says-about-submission",
+          "blurb": "The most abused word in the wedding canon, read in the context its abusers skip."
+        }
+      ]
+    },
+    {
+      "kind": "study",
+      "heading": "Then work the study",
+      "note": "Covenant is a five-session study of marriage as covenant rather than contract — conflict, forgiveness, and the gospel shape of staying. Written from inside a marriage, not above one.",
+      "items": [
+        {
+          "label": "Covenant — a study on marriage",
+          "href": "/studyguides/marriage",
+          "blurb": "Five sessions for married couples, engaged pairs, or a group of both."
+        }
+      ]
+    },
+    {
+      "kind": "book",
+      "heading": "Then read the book, free",
+      "note": "Marriage: Covenant & Roles collects the essays on what marriage actually is and how two people lead and serve each other. Read the whole thing here.",
+      "items": [
+        {
+          "label": "Marriage: Covenant & Roles — read free",
+          "href": "/read/essays-marriage-covenant-roles",
+          "blurb": "Seven chapters on one flesh, headship and submission read honestly, and the long work of staying."
+        },
+        {
+          "label": "Find James's books in the bookstore",
+          "href": "/books",
+          "blurb": "Print and ebook editions of the full library."
+        }
+      ]
+    }
+  ]
+}
