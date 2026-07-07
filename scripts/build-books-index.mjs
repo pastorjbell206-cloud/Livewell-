@@ -18,18 +18,27 @@ const files = fs.existsSync(DIR)
   ? fs.readdirSync(DIR).filter((f) => f.endsWith(".json") && f !== "index.json")
   : [];
 
+// Resolve a book's cover image by convention: <slug>.<ext> in the books dir.
+const COVER_EXT = ["svg", "jpg", "jpeg", "webp", "png"];
+function findCover(slug) {
+  for (const e of COVER_EXT) if (fs.existsSync(path.join(DIR, `${slug}.${e}`))) return `/books/${slug}.${e}`;
+  return null;
+}
+
 const books = [];
 for (const f of files) {
   try {
     const d = JSON.parse(fs.readFileSync(path.join(DIR, f), "utf8"));
     if (!d.title || !Array.isArray(d.chapters)) continue;
+    const slug = f.replace(/\.json$/, "");
     books.push({
-      slug: f.replace(/\.json$/, ""),
+      slug,
       title: d.title,
       subtitle: d.subtitle || "",
       blurb: d.blurb || "",
       pillar: d.pillar || "",
       chapters: d.chapters.length,
+      cover: findCover(slug),
     });
   } catch (err) {
     console.warn(`[build-books-index] skipped ${f}:`, err.message);

@@ -1,140 +1,181 @@
+#!/usr/bin/env node
 /**
- * build-book-covers.mjs — branded SVG covers for the reading-library books.
+ * build-book-covers.mjs — generates the covers for the books shown in the /read
+ * library (client/public/books/*.json), in James's palette (charcoal / cream /
+ * mustard, Cormorant-style serif).
  *
- * The paid ebooks ship hand-made SVG covers; the free reading-library books in
- * client/public/books/*.json had none and fell back to a placeholder. This
- * renders one cover per library book from its own title/subtitle/pillar, in the
- * brand palette and type treatment (cream ground, mustard eyebrow rule,
- * Cormorant-style serif title, author block). Output: client/public/books/<slug>.svg.
+ * A mixed collection: three cover layouts (series, lower-third, centered frame)
+ * rotate across the shelf, over alternating dark and cream grounds, so every
+ * book has its own face while the whole set still reads as one collection. A
+ * faint mustard arc, a pillar kicker, a small collection index number, and the
+ * JAMES BELL byline tie them together.
  *
- * Run:  node scripts/build-book-covers.mjs   (rerun after adding/renaming a book)
- * Idempotent: overwrites every generated cover on each run.
+ * Writes client/public/books/<slug>.svg. Idempotent; safe to rerun. Never
+ * overwrites a real raster cover (.jpg/.jpeg/.webp/.png) — those are James's
+ * hand-made published-book covers.
+ *
+ *   node scripts/build-book-covers.mjs
  */
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
-import { join } from "node:path";
+import fs from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
 
-const BOOKS_DIR = "client/public/books";
-const MUSTARD = "#D4A017";
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const BOOKS_DIR = join(__dirname, "..", "client/public/books");
 
-// Covers hand-designed by the owner; the generator never touches these.
-const HANDMADE = new Set(["born-again-from-atheism", "the-god-who-is-not-nice"]);
+const INK = "#1A1A1A", CREAM = "#F5F0E6", WARM = "#EDE8DC", MUTED = "#C9C1AE",
+  MUSTARD = "#D4A017", INK_MUTED = "#5A5448";
+const W = 800, H = 1200, LEFT = 80, MAXW = 648, MID = W / 2;
+const SERIF = "Palatino, 'Palatino Linotype', Georgia, serif";
+const SANS = "Helvetica, Arial, sans-serif";
+const MONO = "'JetBrains Mono', 'Courier New', monospace";
 
-// Two on-brand grounds only — dark (charcoal) and light (cream/warm-cream).
-// Mustard stays punctuation (eyebrow + rules), never a ground fill.
-const DARK = { ground: "#1A1A1A", title: "#F5F0E6", subtitle: "#C9C1AE", author: "#F5F0E6", border: "#F5F0E6" };
-const CREAM = { ground: "#F5F0E6", title: "#1A1A1A", subtitle: "#5A5448", author: "#1A1A1A", border: "#1A1A1A" };
-
-// Pillar → { eyebrow label, ground theme }. The weightier, more confrontational
-// pillars take the dark ground (matching the two hand-made covers); the warmer,
-// everyday pillars take a light ground, so the shelf reads by pillar at a glance.
-const PILLAR = {
-  "Theological Depth":   { eyebrow: "THEOLOGY",            theme: DARK },
-  "Faith & Theology":    { eyebrow: "THEOLOGY",            theme: DARK },
-  "Prophetic Justice":   { eyebrow: "PROPHETIC JUSTICE",   theme: DARK },
-  "Prophetic Disruption":{ eyebrow: "THE AMERICAN CHURCH", theme: DARK },
-  "After Christendom":    { eyebrow: "AFTER CHRISTENDOM",   theme: DARK },
-  "Leadership Formation":{ eyebrow: "PASTORAL MINISTRY",   theme: CREAM },
-  "Pastoral Ministry":   { eyebrow: "PASTORAL MINISTRY",   theme: CREAM },
-  "Integrated Life":     { eyebrow: "THE INTEGRATED LIFE", theme: CREAM },
-  "Living Well":         { eyebrow: "THE INTEGRATED LIFE", theme: CREAM },
-  "The Table":           { eyebrow: "DISCIPLE-MAKING",     theme: CREAM },
+// Short mustard kicker per pillar.
+const KICKER = {
+  "Integrated Life": "LIVING WELL",
+  "Theological Depth": "THEOLOGY",
+  "Prophetic Disruption": "AFTER CHRISTENDOM",
+  "Prophetic Justice": "JUSTICE",
+  "Leadership Formation": "FOR PASTORS & LEADERS",
 };
-const DEFAULT_PILLAR = { eyebrow: "LIVEWELL BOOKS", theme: CREAM };
 
-const esc = (s) =>
-  String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const esc = (s) => String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
-// Word-wrap a title to fit the cover width at a given font size. Cormorant runs
-// narrow, ~0.46em average; the usable text column is ~648px (x 76→724).
-function wrapTitle(title, fontSize, maxWidth = 648) {
-  const perChar = fontSize * 0.46;
-  const maxChars = Math.max(6, Math.floor(maxWidth / perChar));
-  const words = title.split(/\s+/);
-  const lines = [];
-  let line = "";
+// Stable hash of a slug → used to scatter grounds/layouts across the shelf.
+function hash(slug) {
+  let h = 0;
+  for (let i = 0; i < slug.length; i++) h = (h * 31 + slug.charCodeAt(i)) >>> 0;
+  return h;
+}
+
+// Greedy word-wrap; approximate glyph width for the serif face.
+function wrap(text, fontSize, maxWidth, cwFactor = 0.54) {
+  const maxChars = Math.max(6, Math.floor(maxWidth / (fontSize * cwFactor)));
+  const words = String(text).split(/\s+/);
+  const lines = []; let cur = "";
   for (const w of words) {
-    const next = line ? `${line} ${w}` : w;
-    if (next.length > maxChars && line) {
-      lines.push(line);
-      line = w;
-    } else {
-      line = next;
-    }
+    const t = cur ? cur + " " + w : w;
+    if (t.length <= maxChars || !cur) cur = t; else { lines.push(cur); cur = w; }
   }
-  if (line) lines.push(line);
+  if (cur) lines.push(cur);
   return lines;
 }
-
-// Pick a title font size so the longest word fits and we stay within ~3 lines.
-function titleFontSize(title) {
-  const longest = title.split(/\s+/).reduce((m, w) => Math.max(m, w.length), 0);
-  const words = title.split(/\s+/).length;
-  let size = 132;
-  if (longest > 9 || words >= 4) size = 104;
-  if (longest > 12 || words >= 6) size = 82;
-  if (longest > 16 || words >= 8) size = 64;
-  return size;
+// Pick the largest title size from `sizes` that fits in <= maxLines AND stays in
+// the margin.
+function fitTitle(title, sizes, maxLines = 3) {
+  for (const fs of sizes) {
+    const lines = wrap(title, fs, MAXW);
+    const longest = Math.max(...lines.map((l) => l.length));
+    if (lines.length <= maxLines && longest * fs * 0.54 <= MAXW) return { fs, lines };
+  }
+  const fs = sizes[sizes.length - 1];
+  return { fs, lines: wrap(title, fs, MAXW) };
 }
 
-function coverSvg({ title, subtitle, eyebrow, theme }) {
-  const fs = titleFontSize(title);
-  const lines = wrapTitle(title, fs);
-  const lineHeight = fs * 1.02;
-  // Vertically center the title block around y=500.
-  const blockH = lines.length * lineHeight;
-  let ty = 500 - blockH / 2 + fs * 0.8;
-  const titleLines = lines
-    .map((ln) => {
-      const t = `<text x="76" y="${Math.round(ty)}" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="${fs}" font-weight="400" fill="${theme.title}">${esc(ln)}</text>`;
-      ty += lineHeight;
-      return t;
-    })
-    .join("\n  ");
+const svgOpen = (bg, extra = "") =>
+  `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${extra}">
+  <rect width="${W}" height="${H}" fill="${bg}"/>`;
 
-  // Subtitle wraps at a fixed size below the title block.
-  let subEls = "";
-  if (subtitle) {
-    const subLines = wrapTitle(subtitle, 25, 640).slice(0, 3);
-    let sy = Math.round(ty) + 34;
-    subEls = subLines
-      .map((ln) => {
-        const t = `<text x="80" y="${sy}" font-family="Helvetica, Arial, sans-serif" font-size="25" fill="${theme.subtitle}">${esc(ln)}</text>`;
-        sy += 36;
-        return t;
-      })
-      .join("\n  ");
-  }
+const arc = (cx, cy) =>
+  `<circle cx="${cx}" cy="${cy}" r="300" fill="none" stroke="${MUSTARD}" stroke-width="2" opacity="0.26"/>
+  <circle cx="${cx}" cy="${cy}" r="212" fill="none" stroke="${MUSTARD}" stroke-width="2" opacity="0.16"/>`;
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200" role="img" aria-label="${esc(title)} by James Bell">
-  <rect width="800" height="1200" fill="${theme.ground}"/>
-  <rect x="28" y="28" width="744" height="1144" fill="none" stroke="${theme.border}" stroke-width="1.5" opacity="0.18"/>
+// --- Layout 0: series — header top, title centered, arc bottom-right --------
+function layoutSeries({ title, subtitle, kicker, num, fg, sub }) {
+  const { fs, lines } = fitTitle(title, [96, 84, 74, 64, 56, 48, 42]);
+  const lh = Math.round(fs * 1.05);
+  const ty = Math.round(540 - (lines.length * lh) / 2 + fs);
+  const tt = lines.map((l, i) => `<text x="${LEFT - 4}" y="${ty + i * lh}" font-family="${SERIF}" font-size="${fs}" fill="${fg}">${esc(l)}</text>`).join("\n  ");
+  const subY = ty + (lines.length - 1) * lh + 70;
+  const st = wrap(subtitle || "", 23, MAXW, 0.5).slice(0, 2).map((l, i) => `<text x="${LEFT}" y="${subY + i * 33}" font-family="${SANS}" font-size="23" fill="${sub}">${esc(l)}</text>`).join("\n  ");
+  return `
+  ${arc(W - 36, H - 60)}
+  <text x="${LEFT}" y="150" font-family="${SANS}" font-size="19" letter-spacing="5.5" font-weight="700" fill="${MUSTARD}">${esc(kicker)}</text>
+  <text x="${W - LEFT}" y="152" text-anchor="end" font-family="${MONO}" font-size="22" fill="${MUSTARD}">${num}</text>
+  <line x1="${LEFT}" y1="178" x2="${W - LEFT}" y2="178" stroke="${MUSTARD}" stroke-width="1.5" opacity="0.5"/>
+  ${tt}
+  ${st}
+  <line x1="${LEFT}" y1="1052" x2="176" y2="1052" stroke="${MUSTARD}" stroke-width="3"/>
+  <text x="${LEFT}" y="1110" font-family="${SANS}" font-size="28" letter-spacing="4" font-weight="700" fill="${fg}">JAMES BELL</text>`;
+}
 
-  <text x="80" y="156" font-family="Helvetica, Arial, sans-serif" font-size="20" letter-spacing="6" font-weight="700" fill="${MUSTARD}">${esc(eyebrow)}</text>
-  <line x1="80" y1="182" x2="720" y2="182" stroke="${MUSTARD}" stroke-width="2"/>
+// --- Layout 1: lower-third — arc top-right, title anchored low --------------
+function layoutLower({ title, subtitle, kicker, num, fg, sub }) {
+  const { fs, lines } = fitTitle(title, [88, 78, 68, 60, 52, 46, 40]);
+  const lh = Math.round(fs * 1.05);
+  // Anchor the last line near y=930, build upward.
+  const firstY = 930 - (lines.length - 1) * lh;
+  const tt = lines.map((l, i) => `<text x="${LEFT - 4}" y="${firstY + i * lh}" font-family="${SERIF}" font-size="${fs}" fill="${fg}">${esc(l)}</text>`).join("\n  ");
+  const subY = 930 + 58;
+  const st = wrap(subtitle || "", 23, MAXW, 0.5).slice(0, 2).map((l, i) => `<text x="${LEFT}" y="${subY + i * 33}" font-family="${SANS}" font-size="23" fill="${sub}">${esc(l)}</text>`).join("\n  ");
+  return `
+  ${arc(W - 36, 40)}
+  <text x="${LEFT}" y="150" font-family="${SANS}" font-size="19" letter-spacing="5.5" font-weight="700" fill="${MUSTARD}">${esc(kicker)}</text>
+  <text x="${W - LEFT}" y="152" text-anchor="end" font-family="${MONO}" font-size="22" fill="${MUSTARD}">${num}</text>
+  <line x1="${LEFT}" y1="${firstY - fs - 34}" x2="176" y2="${firstY - fs - 34}" stroke="${MUSTARD}" stroke-width="3"/>
+  ${tt}
+  ${st}
+  <text x="${LEFT}" y="1120" font-family="${SANS}" font-size="26" letter-spacing="4" font-weight="700" fill="${fg}">JAMES BELL</text>`;
+}
 
-  ${titleLines}
+// --- Layout 2: centered frame — symmetric, formal ---------------------------
+function layoutFrame({ title, subtitle, kicker, num, fg, sub }) {
+  const { fs, lines } = fitTitle(title, [84, 74, 64, 56, 50, 44, 40]);
+  const lh = Math.round(fs * 1.06);
+  const ty = Math.round(560 - (lines.length * lh) / 2 + fs);
+  const tt = lines.map((l, i) => `<text x="${MID}" y="${ty + i * lh}" text-anchor="middle" font-family="${SERIF}" font-size="${fs}" fill="${fg}">${esc(l)}</text>`).join("\n  ");
+  const subY = ty + (lines.length - 1) * lh + 66;
+  const st = wrap(subtitle || "", 22, 560, 0.5).slice(0, 2).map((l, i) => `<text x="${MID}" y="${subY + i * 32}" text-anchor="middle" font-family="${SANS}" font-size="22" fill="${sub}">${esc(l)}</text>`).join("\n  ");
+  return `
+  <rect x="30" y="30" width="${W - 60}" height="${H - 60}" fill="none" stroke="${fg}" stroke-width="1.5" opacity="0.16"/>
+  <text x="${MID}" y="176" text-anchor="middle" font-family="${SANS}" font-size="19" letter-spacing="5.5" font-weight="700" fill="${MUSTARD}">${esc(kicker)}</text>
+  <line x1="${MID - 34}" y1="206" x2="${MID + 34}" y2="206" stroke="${MUSTARD}" stroke-width="2"/>
+  ${tt}
+  ${st}
+  <line x1="${MID - 30}" y1="1028" x2="${MID + 30}" y2="1028" stroke="${MUSTARD}" stroke-width="2"/>
+  <text x="${MID}" y="1086" text-anchor="middle" font-family="${SANS}" font-size="26" letter-spacing="4" font-weight="700" fill="${fg}">JAMES BELL</text>
+  <text x="${MID}" y="1118" text-anchor="middle" font-family="${MONO}" font-size="15" fill="${MUSTARD}">${num}</text>`;
+}
 
-  ${subEls}
+const LAYOUTS = [layoutSeries, layoutLower, layoutFrame];
 
-  <line x1="80" y1="1024" x2="188" y2="1024" stroke="${MUSTARD}" stroke-width="3"/>
-  <text x="80" y="1086" font-family="Helvetica, Arial, sans-serif" font-size="30" letter-spacing="4" font-weight="700" fill="${theme.author}">JAMES BELL</text>
-  <text x="80" y="1120" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="2.5" fill="${MUSTARD}">LIVEWELL BY JAMES BELL</text>
+function coverSvg({ title, subtitle, pillar }, seq) {
+  const h = hash(seq.slug);
+  const dark = h % 2 === 0;
+  const bg = dark ? INK : WARM;
+  const fg = dark ? CREAM : INK;
+  const sub = dark ? MUTED : INK_MUTED;
+  const kicker = KICKER[pillar] || "COLLECTED ESSAYS";
+  const num = String(seq.n).padStart(2, "0");
+  // Rotate layout by shelf position so the mix is even and stable.
+  const layout = LAYOUTS[seq.n % LAYOUTS.length];
+  return `${svgOpen(bg, `${esc(title)} by James Bell`)}${layout({ title, subtitle, kicker, num, fg, sub })}
 </svg>
 `;
 }
 
-const index = JSON.parse(readFileSync(join(BOOKS_DIR, "index.json"), "utf8"));
-const list = Array.isArray(index) ? index : index.books || [];
-let written = 0;
-for (const entry of list) {
-  const slug = entry.slug;
-  const file = join(BOOKS_DIR, `${slug}.json`);
-  if (!existsSync(file)) continue;
-  if (HANDMADE.has(slug)) continue; // never touch a hand-made cover
-  const book = JSON.parse(readFileSync(file, "utf8"));
-  const p = PILLAR[book.pillar] || DEFAULT_PILLAR;
-  const svg = coverSvg({ title: book.title, subtitle: book.subtitle, eyebrow: p.eyebrow, theme: p.theme });
-  writeFileSync(join(BOOKS_DIR, `${slug}.svg`), svg);
-  written++;
-}
-console.log(`Wrote ${written} book covers to ${BOOKS_DIR}/<slug>.svg (${HANDMADE.size} hand-made preserved)`);
+const RASTER_EXT = ["jpg", "jpeg", "webp", "png"];
+const hasRaster = (slug) => RASTER_EXT.some((e) => fs.existsSync(join(BOOKS_DIR, `${slug}.${e}`)));
+
+// Load every book manifest, sort by title (the order the /read shelf uses), and
+// number the collection 01..N so the index reads as a curated series.
+const manifests = fs.readdirSync(BOOKS_DIR)
+  .filter((f) => f.endsWith(".json") && f !== "index.json")
+  .map((f) => {
+    const slug = f.replace(/\.json$/, "");
+    try {
+      const book = JSON.parse(fs.readFileSync(join(BOOKS_DIR, f), "utf8"));
+      if (!book.title || !Array.isArray(book.chapters)) return null;
+      return { slug, book };
+    } catch { return null; }
+  })
+  .filter(Boolean)
+  .sort((a, b) => a.book.title.localeCompare(b.book.title));
+
+let n = 0, skipped = 0;
+manifests.forEach((m, i) => {
+  if (hasRaster(m.slug)) { skipped++; return; } // never overwrite a real cover
+  fs.writeFileSync(join(BOOKS_DIR, m.slug + ".svg"), coverSvg(m.book, { slug: m.slug, n: i + 1 }));
+  n++;
+});
+console.log(`[build-book-covers] wrote ${n} mixed-layout covers (${skipped} real raster covers left untouched).`);
