@@ -108,6 +108,7 @@ const ResourcesForPastors = lazy(() => import("./pages/ResourcesForPastors"));
 const ReadingPaths = lazy(() => import("./pages/ReadingPaths"));
 const EmailSignup = lazy(() => import("./pages/EmailSignup"));
 const Pillars = lazy(() => import("./pages/Pillars"));
+const Explore = lazy(() => import("./pages/Explore"));
 const LivingWell = lazy(() => import("./pages/LivingWell"));
 const ForPastors = lazy(() => import("./pages/ForPastors"));
 const ForLeaders = lazy(() => import("./pages/ForLeaders"));
@@ -560,6 +561,7 @@ function Router() {
         <Route path="/skeptic-track" component={SkepticTrack} />
         <Route path="/pastors-resource-wall" component={PastorsResourceWall} />
         <Route path="/roadmap" component={RoadMap} />
+        <Route path="/explore" component={Explore} />
         <Route path="/library" component={Library} />
         <Route path="/diagnostic" component={Diagnostic} />
         <Route path="/tools" component={ToolsHub} />
