@@ -1,6 +1,14 @@
 {
   "books": [
     {
+      "slug": "essays-after-christendom",
+      "title": "After Christendom & the Captive Church",
+      "subtitle": "Faith after the flag, the tribe, and the empire",
+      "blurb": "Essays on the church's captivity to nation, tribe, and culture — Christian nationalism, the end of cultural Christianity, and what a faithful, exiled church looks like on the other side.",
+      "pillar": "Prophetic Disruption",
+      "chapters": 26
+    },
+    {
       "slug": "born-again-from-atheism",
       "title": "Born Again From Atheism",
       "subtitle": "How an Unbeliever Came to Faith, and What He Found There",
@@ -31,6 +39,14 @@
       "blurb": "God did not lock his goodness inside the church. He scattered it across the whole field of human life — into the laboratory, the studio, the courtroom, the mouth of the honest unbeliever — and called it good before any of us got there. This is a book about the grace that is common: the kindness of God to people who do not yet know his name, and the slow, costly discipline of learning to recognize it without ever surrendering to it.",
       "pillar": "Theological Depth",
       "chapters": 17
+    },
+    {
+      "slug": "essays-daily-devotionals",
+      "title": "Daily Devotionals",
+      "subtitle": "Short readings for an ordinary morning",
+      "blurb": "Short devotional readings — a passage, a thought, and a prayer — for the ordinary mornings that make up most of a life with God.",
+      "pillar": "Integrated Life",
+      "chapters": 7
     },
     {
       "slug": "dangerous-calling",
@@ -79,6 +95,102 @@
       "blurb": "The church has confused niceness with love and silence with peace, and the people who pay for it are the ones we refused to tell the truth. This is a book about the necessary word — the courage to confront sin, walk into conflict, and say the thing that wounds in order to heal. Speaking the truth in love is not a personality you were born with. It is an obedience, and most of us have spent our whole lives finding ways around it.",
       "pillar": "Pastoral Ministry",
       "chapters": 17
+    },
+    {
+      "slug": "essays-biblical-theology",
+      "title": "On Biblical Theology",
+      "subtitle": "The whole Bible as one story that ends in Christ",
+      "blurb": "Essays tracing the Bible as one story climaxing in Christ — the kingdom of God, exodus, covenant, the image of God, and living between the already and the not yet.",
+      "pillar": "Theological Depth",
+      "chapters": 6
+    },
+    {
+      "slug": "essays-church-history",
+      "title": "On Church History & the Creeds",
+      "subtitle": "The story you were born into",
+      "blurb": "Essays on the church's long memory — the councils, the creeds, the Reformation, the awakenings, and the people who carried the faith to us.",
+      "pillar": "Theological Depth",
+      "chapters": 18
+    },
+    {
+      "slug": "essays-doctrine-and-scripture",
+      "title": "On Doctrine & Scripture",
+      "subtitle": "The great truths, explained without condescension",
+      "blurb": "Essays on the doctrines the church confesses and the Scripture it reads — the Trinity, the gospel, grace, atonement, the reliability of the Bible, and how to read it without making it say what we want.",
+      "pillar": "Theological Depth",
+      "chapters": 35
+    },
+    {
+      "slug": "essays-faith-and-doubt",
+      "title": "On Faith & Doubt",
+      "subtitle": "Honest questions and a faith worth keeping",
+      "blurb": "Essays for the doubting and the deconstructing — honest questions taken seriously, the faith the church poorly defended, and a way to keep the question inside the faith instead of leaving to keep it.",
+      "pillar": "Integrated Life",
+      "chapters": 15
+    },
+    {
+      "slug": "essays-justice-and-the-vulnerable",
+      "title": "On Justice & the Vulnerable",
+      "subtitle": "Mishpat, the poor at the gate, and the church's silence",
+      "blurb": "Essays on biblical justice — mishpat and tsedaqah, the poor and the stranger, race and reconciliation, and the church's long silence where it should have spoken.",
+      "pillar": "Prophetic Justice",
+      "chapters": 29
+    },
+    {
+      "slug": "essays-manhood",
+      "title": "On Manhood",
+      "subtitle": "Fatherhood, work, and being a man who stays",
+      "blurb": "Essays on manhood from a man raised without a father and raising five sons — fatherhood, provision, anger, presence, and the men the church forgot to form.",
+      "pillar": "Integrated Life",
+      "chapters": 19
+    },
+    {
+      "slug": "essays-marriage-and-family",
+      "title": "On Marriage & Family",
+      "subtitle": "Covenant, conflict, and the long work of staying",
+      "blurb": "Essays on marriage as covenant rather than contract — communication, conflict, intimacy, forgiveness, and the slow, unglamorous faithfulness of two people keeping a promise they are still learning to understand.",
+      "pillar": "Integrated Life",
+      "chapters": 45
+    },
+    {
+      "slug": "essays-money-work-vocation",
+      "title": "On Money, Work & Vocation",
+      "subtitle": "Calling, provision, and the God of the ordinary job",
+      "blurb": "Essays on money, work, and calling — debt, generosity, ambition, rest from hustle, and the sacredness of an ordinary Tuesday's labor.",
+      "pillar": "Integrated Life",
+      "chapters": 31
+    },
+    {
+      "slug": "essays-parenting",
+      "title": "On Parenting",
+      "subtitle": "Raising children in a faith you are still learning",
+      "blurb": "Essays for parents raising children in the faith without fear, formula, or guilt — discipline, teenagers, prodigals, and handing on a faith worth keeping.",
+      "pillar": "Integrated Life",
+      "chapters": 41
+    },
+    {
+      "slug": "essays-pastoring-and-the-church",
+      "title": "On Pastoring & the Church",
+      "subtitle": "The weight of leading the people of God",
+      "blurb": "Essays for pastors and lay leaders — burnout and health, preaching, staff and elders, church revitalization, and the loneliness of the job up front.",
+      "pillar": "Leadership Formation",
+      "chapters": 20
+    },
+    {
+      "slug": "essays-rhythms-rest-prayer",
+      "title": "On Rhythms, Rest & Prayer",
+      "subtitle": "Sabbath, silence, and a life that can be sustained",
+      "blurb": "Essays on the practices that hold a life together — sabbath, rest, prayer, silence, and the spiritual disciplines that form a soul over time.",
+      "pillar": "Integrated Life",
+      "chapters": 33
+    },
+    {
+      "slug": "essays-womanhood",
+      "title": "On Womanhood",
+      "subtitle": "Identity, calling, and worth beyond the roles",
+      "blurb": "Essays on womanhood — identity, calling, motherhood, singleness, and worth that does not depend on a role or a season.",
+      "pillar": "Integrated Life",
+      "chapters": 13
     },
     {
       "slug": "one-body-many-churches",
