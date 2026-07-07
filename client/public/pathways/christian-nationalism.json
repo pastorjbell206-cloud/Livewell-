@@ -1,0 +1,64 @@
+{
+  "slug": "christian-nationalism",
+  "title": "Faith and the Flag",
+  "subtitle": "When the cross gets conscripted — four essays, a study, and a book.",
+  "forWhom": "For the reader in a church that has started to sound like a campaign, and for the one who suspects their own side is not innocent either.",
+  "movements": [
+    {
+      "kind": "read",
+      "heading": "Read these first",
+      "note": "Start where the fusion is easiest to see, then trace it back — the flag in the sanctuary, the persecution we invented, the pledge we forgot we could not make twice.",
+      "items": [
+        {
+          "label": "When God Bless America Replaces Thy Kingdom Come",
+          "href": "/writing/when-god-bless-america-replaces-thy-kingdom-come",
+          "blurb": "How patriotism became the practical savior of American Christianity."
+        },
+        {
+          "label": "Why Is There a Flag in the Sanctuary?",
+          "href": "/writing/the-flag-in-the-sanctuary",
+          "blurb": "It did not arrive by accident, and it does not stay there by accident."
+        },
+        {
+          "label": "Is the American Church Really Being Persecuted?",
+          "href": "/writing/the-persecution-we-invented",
+          "blurb": "How comfort learned to call itself a cross."
+        },
+        {
+          "label": "Can You Pledge Allegiance to Two Kingdoms?",
+          "href": "/writing/two-kingdoms-one-pledge",
+          "blurb": "What allegiance to a crucified King costs when the nation asks first."
+        }
+      ]
+    },
+    {
+      "kind": "study",
+      "heading": "Then work the study",
+      "note": "Christian Nationalism is a five-session study that names what it is and is not, indicts every tribe by the same cross, and refuses to hand the sanctuary to a flag.",
+      "items": [
+        {
+          "label": "Christian Nationalism — a study",
+          "href": "/studyguides/christian-nationalism",
+          "blurb": "Five even-handed sessions for a room that will hear politics in every line."
+        }
+      ]
+    },
+    {
+      "kind": "book",
+      "heading": "Then read the book, free",
+      "note": "The Captive Church follows the one temptation Jesus refused in the wilderness through Constantine, the denarius, and the flag on the platform. Read it free.",
+      "items": [
+        {
+          "label": "The Captive Church — read free",
+          "href": "/read/the-captive-church",
+          "blurb": "Ten chapters on nationalism, empire, and the cost of cultural Christianity. The complete book, free."
+        },
+        {
+          "label": "Find James's books in the bookstore",
+          "href": "/books",
+          "blurb": "Print and ebook editions of the full library."
+        }
+      ]
+    }
+  ]
+}

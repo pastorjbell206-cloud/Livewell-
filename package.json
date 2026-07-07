@@ -28,7 +28,8 @@
     "publish:all": "node scripts/publish-from-plan.mjs",
     "publish:articles": "node scripts/publish-articles-build.mjs",
     "survey": "node scripts/survey-manuscripts.mjs",
-    "seed:paths": "node scripts/seed-reading-paths.mjs"
+    "seed:paths": "node scripts/seed-reading-paths.mjs",
+    "validate:pathways": "node scripts/validate-pathways.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
