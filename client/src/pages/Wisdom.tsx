@@ -7,6 +7,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { PullQuote, StatementBand } from "@/components/EditorialBlocks";
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
 
@@ -139,6 +140,7 @@ export default function Wisdom() {
           <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "var(--s-4)" }}>
             Pick the part of life you are standing in. Each opens what Scripture actually says, the verses worth knowing by heart, and points you to a deeper guide where one exists.
           </p>
+          <PullQuote>Most of your life is lived in the place no single command reaches.</PullQuote>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px, 100%), 1fr))", gap: "var(--s-2)" }}>
             {ARENAS.map((a) => (
               <div key={a.topic} style={{ background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)" }}>
@@ -158,6 +160,10 @@ export default function Wisdom() {
           </div>
         </div>
       </section>
+
+      <StatementBand tone="dark" width="30ch">
+        Wisdom is not more rules — it is the skill of living well where no rule reaches.
+      </StatementBand>
 
       {/* The three ways in */}
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>

@@ -4,6 +4,7 @@ import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { CrisisHelp } from "@/components/CrisisHelp";
+import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
 
 export default function Marriage() {
 
@@ -119,6 +120,10 @@ export default function Marriage() {
         </div>
       </section>
 
+      <StatementBand tone="dark" eyebrow="Covenant, not contract">
+        A covenant is kept on the days the feeling is gone.
+      </StatementBand>
+
       {/* READING PATHS */}
       <section style={{ background: "var(--paper2)", padding: "80px 20px" }}>
         <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
@@ -128,6 +133,7 @@ export default function Marriage() {
           <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "48px" }}>
             Thematic collections to go deeper on specific areas of your marriage.
           </p>
+          <SectionArt seed="marriage-paths" />
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "32px" }}>
             {READING_PATHS.map((path, i) => (
               <div key={i} style={{ background: "var(--card)", borderRadius: "8px", overflow: "hidden", border: "1px solid var(--bone-muted)", borderLeft: "3px solid var(--gold)", padding: "28px", cursor: "pointer" }}>

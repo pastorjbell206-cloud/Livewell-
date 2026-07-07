@@ -14,6 +14,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import LoadFailed from "@/components/LoadFailed";
 import { fetchJson } from "@/lib/fetch-json";
+import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -123,6 +124,10 @@ export default function Table() {
         </div>
       </section>
 
+      <StatementBand tone="dark" eyebrow="The table" width="34ch">
+        No stage, no expert, no license to buy — only an open Bible and someone willing to go first.
+      </StatementBand>
+
       {/* The curriculum */}
       <section style={{ background: "var(--cream)", padding: "var(--s-5) var(--s-4)" }}>
         <div style={wrap}>
@@ -200,6 +205,7 @@ export default function Table() {
       {/* Use it freely */}
       <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)" }}>
         <div style={wrap}>
+          <SectionArt seed="table-freely" tone="dark" />
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "12px" }}>No license, no gate</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.12, marginBottom: "14px", maxWidth: "22ch" }}>
             Use it freely

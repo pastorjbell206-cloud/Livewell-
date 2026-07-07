@@ -10,6 +10,7 @@ import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Prose } from "@/lib/prose";
+import { StatementBand } from "@/components/EditorialBlocks";
 
 interface Tradition {
   name: string; family: string; born: string; treasures: string;
@@ -81,6 +82,10 @@ export default function TheologyTraditions() {
               <Prose text={data.sharedCore} />
             </div>
           </section>
+
+          <StatementBand tone="dark" eyebrow="One faith, many rooms" width="32ch">
+            What they hold in common is older than what divides them.
+          </StatementBand>
 
           {/* TRADITIONS */}
           <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>

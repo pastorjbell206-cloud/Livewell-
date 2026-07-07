@@ -3,6 +3,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { PullQuote, StatementBand } from "@/components/EditorialBlocks";
 
 export default function Parenting() {
 
@@ -110,6 +111,10 @@ export default function Parenting() {
         </div>
       </section>
 
+      <StatementBand tone="dark" eyebrow="Formation, not performance">
+        You are not raising a performance; you are raising a person who will believe, or not, on their own.
+      </StatementBand>
+
       {/* CONVERSATION STARTERS BY AGE */}
       <section style={{ background: "var(--paper2)", padding: "80px 20px" }}>
         <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
@@ -135,6 +140,7 @@ export default function Parenting() {
               </div>
             ))}
           </div>
+          <PullQuote>Faith is not argued into a child. It is lived in front of one.</PullQuote>
         </div>
       </section>
 

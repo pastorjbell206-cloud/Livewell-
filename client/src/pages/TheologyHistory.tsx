@@ -12,6 +12,7 @@ import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Prose } from "@/lib/prose";
+import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
 
 interface EraEvent { year: string; title: string; note: string; }
 interface Era { id: string; name: string; range: string; summary: string; events: EraEvent[]; }
@@ -99,6 +100,10 @@ export default function TheologyHistory() {
           </div>
         </section>
       )}
+
+      <StatementBand tone="dark" eyebrow="The long memory" width="24ch">
+        You did not start the faith. You were handed it.
+      </StatementBand>
 
       {/* TABS */}
       <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) 0" }}>
@@ -215,6 +220,7 @@ export default function TheologyHistory() {
         <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
           <div style={{ ...wrap }}>
             {figures.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+            {figures.length > 0 && <SectionArt seed="history-figures" />}
             {figuresByEra.map(({ era, items }) => (
               <div key={era} style={{ marginBottom: "var(--s-5)" }}>
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 400, color: "var(--ink)", marginBottom: "var(--s-3)", paddingBottom: "8px", borderBottom: "2px solid var(--mustard)" }}>{era}</h2>

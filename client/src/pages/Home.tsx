@@ -11,6 +11,7 @@
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 
+import { PullQuote, SectionArt, StatementBand } from "@/components/EditorialBlocks";
 import Footer from "@/components/Footer";
 import MinimalNav from "@/components/MinimalNav";
 import { SegmentedSignup } from "@/components/SegmentedSignup";
@@ -381,6 +382,9 @@ export default function Home() {
             Wherever you are, there is a way through. Pick the one that fits, and
             the rest of the site opens from there.
           </p>
+          <PullQuote>
+            Theology that can carry the weight of a Tuesday afternoon.
+          </PullQuote>
           <div
             style={{
               display: "grid",
@@ -464,6 +468,7 @@ export default function Home() {
         }}
       >
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <SectionArt seed="home-recent-essays" />
           <div
             style={{
               display: "flex",
@@ -607,6 +612,11 @@ export default function Home() {
           />
         </div>
       </section>
+
+      <StatementBand tone="light" eyebrow="The mission" width="34ch">
+        Christianity is deeper than your politics. Older than your culture. Wiser
+        than your assumptions.
+      </StatementBand>
 
       {/* THE FIVE PILLARS — the deeper writing taxonomy spine */}
       <section

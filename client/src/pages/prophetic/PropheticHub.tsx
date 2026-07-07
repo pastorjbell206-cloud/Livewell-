@@ -6,6 +6,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
 import type { SectionConfig, TopicIndexEntry } from "@/lib/prophetic";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
@@ -84,6 +85,10 @@ export default function PropheticHub({ config }: { config: SectionConfig }) {
         </section>
       )}
 
+      <StatementBand tone="dark" eyebrow="The prophets" width="36ch">
+        We wanted a chaplain to bless our side; the prophets came to indict the throne itself.
+      </StatementBand>
+
       {/* TOPICS */}
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
         <div style={wrap}>
@@ -92,6 +97,7 @@ export default function PropheticHub({ config }: { config: SectionConfig }) {
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "var(--s-5)" }}>
             {`${config.topicsIntro} ${readyCount} written so far. The rest are coming.`}
           </p>
+          <SectionArt seed={`prophetic-topics-${config.key}`} />
           {config.groups.map((group) => {
             const items = byGroup(group);
             if (items.length === 0) return null;

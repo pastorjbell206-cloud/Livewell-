@@ -12,6 +12,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Prose } from "@/lib/prose";
 import { DOCTRINE_INDEX } from "@/lib/theology";
+import { StatementBand } from "@/components/EditorialBlocks";
 
 interface Q {
   id: string; question: string; category: string; shortAnswer: string; answer: string;
@@ -72,6 +73,10 @@ export default function TheologyQuestions() {
           </p>
         </div>
       </section>
+
+      <StatementBand tone="light" eyebrow="Before you begin" width="32ch">
+        A question held honestly has never been the enemy of faith.
+      </StatementBand>
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>
         <div style={wrap}>
