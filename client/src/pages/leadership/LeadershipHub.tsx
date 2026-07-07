@@ -8,6 +8,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { LEADERSHIP_GROUPS, LEADERSHIP_ARTICLES, LEADERSHIP_TOOLS } from "@/lib/leadership";
+import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const card = { background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)", textDecoration: "none", color: "inherit", display: "block" } as const;
@@ -76,6 +77,10 @@ export default function LeadershipHub() {
         </div>
       </section>
 
+      <StatementBand tone="dark" eyebrow="The measure" width="34ch">
+        Character before competence — a church is carried by the faithful, not the gifted.
+      </StatementBand>
+
       {/* ARTICLES BY GROUP */}
       {LEADERSHIP_GROUPS.map((group, gi) => {
         const items = LEADERSHIP_ARTICLES.filter((a) => a.group === group);
@@ -99,6 +104,7 @@ export default function LeadershipHub() {
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--bone)" }}>
         <div style={wrap}>
+          <SectionArt seed="leadership-close" tone="dark" />
           <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, lineHeight: 1.5, color: "var(--bone)", maxWidth: "60ch", marginBottom: "14px" }}>
             The work is long and local and mostly unseen. It was always going to be. The question is not whether you can build a crowd. It is whether you can be faithful in a place over time.
           </p>

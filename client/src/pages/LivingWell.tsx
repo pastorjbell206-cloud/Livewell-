@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
 import { trpc } from "@/lib/trpc";
 import {
   PILLAR_BY_ID,
@@ -68,6 +69,10 @@ export default function LivingWell() {
         </div>
       </section>
 
+      <StatementBand tone="light" eyebrow="Why this pillar" width="34ch">
+        Formation was never neutral, and it was never automatic — a life is built now, or it is not built at all.
+      </StatementBand>
+
       {/* SUB-THEMES */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={wrap}>
@@ -103,6 +108,8 @@ export default function LivingWell() {
               </Link>
             ))}
           </div>
+
+          <SectionArt seed="living-well-pillar-six" />
 
           {/* CTA */}
           <div style={{ textAlign: "center", marginTop: "var(--s-5)" }}>

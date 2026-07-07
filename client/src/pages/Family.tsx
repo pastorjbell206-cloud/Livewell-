@@ -12,6 +12,7 @@ import { Link } from "wouter";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBlocks";
 import { trpc } from "@/lib/trpc";
 
 interface Devotion {
@@ -176,6 +177,10 @@ export default function Family() {
         </div>
       </section>
 
+      <StatementBand tone="dark" eyebrow="The oldest classroom">
+        The faith is handed down on purpose, at the table, or it is not handed down at all.
+      </StatementBand>
+
       {/* READING PLANS */}
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) 0" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
@@ -228,6 +233,8 @@ export default function Family() {
         </section>
       )}
 
+      <PullQuote>The household is the first church a child ever attends.</PullQuote>
+
       {/* PARENTING */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
@@ -261,6 +268,7 @@ export default function Family() {
       {/* TOOLS */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <SectionArt seed="family-tools" />
           <SectionHead kicker="For the home" title="Tools" blurb="Practical tools to use around the table and through the week." />
           <div style={grid}>
             <LinkCard href="/tools/verse-finder" title="Bible verse finder" desc="Find Scripture for any season — anxiety, grief, hope, courage — and share it." />

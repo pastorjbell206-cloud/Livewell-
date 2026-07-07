@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { PullQuote, SectionArt } from "@/components/EditorialBlocks";
 import { SITE_URL } from "@/lib/site";
 import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
@@ -60,6 +61,8 @@ export default function Pillars() {
             </p>
           </div>
 
+          <SectionArt seed="pillars-intro" />
+
           {/* Pillars */}
           <div style={{ display: "grid", gap: "20px", marginBottom: "var(--s-6)" }}>
             {PILLARS.map(pillar => (
@@ -111,6 +114,11 @@ export default function Pillars() {
               </Link>
             ))}
           </div>
+
+          <PullQuote>
+            The five pillars are not five subjects. They are one faith, pressed
+            at five points.
+          </PullQuote>
 
           {/* CTA */}
           <div style={{ textAlign: "center", marginTop: "var(--s-5)" }}>

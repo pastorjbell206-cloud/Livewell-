@@ -3,6 +3,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { SITE_STATS } from "@/config/siteStats";
+import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBlocks";
 
 const PORTRAIT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg";
 
@@ -55,6 +56,10 @@ export default function About() {
         </div>
       </section>
 
+      <StatementBand tone="light" width="38ch">
+        The unbelief I came out of, and the father I never had, sit underneath everything on this site.
+      </StatementBand>
+
       {/* THE CHURCH AND THE NETWORK */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
@@ -72,6 +77,10 @@ export default function About() {
               <Link href="/books">The books are here</Link>.
             </p>
           </div>
+
+          <PullQuote>
+            Taking the depth of theology and putting it back in contact with the weight of an ordinary life.
+          </PullQuote>
         </div>
       </section>
 
@@ -97,6 +106,8 @@ export default function About() {
               <p style={{ fontSize: "0.9rem", lineHeight: 1.7, color: "var(--ink-muted)" }}>{v.def}</p>
             </div>
           ))}
+
+          <SectionArt seed="about-the-work" />
         </div>
       </section>
 

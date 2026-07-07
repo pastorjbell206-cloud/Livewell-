@@ -15,6 +15,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Prose } from "@/lib/prose";
 import { DOCTRINE_INDEX } from "@/lib/theology";
+import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
 
 interface Act { id: string; act: string; title: string; range: string; summary: string; turning: string; pointsForward: string; }
 interface Theme { name: string; oneLine: string; trace: string; fulfillment: string; keyTexts: string[]; }
@@ -117,6 +118,10 @@ export default function TheologyBiblical() {
           ) : null}
         </div>
       </section>
+
+      <StatementBand tone="dark" eyebrow="One story" width="34ch">
+        The frameworks divide over the seams. They are reading the same one story.
+      </StatementBand>
 
       {/* TABS */}
       <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) 0" }}>
@@ -231,6 +236,7 @@ export default function TheologyBiblical() {
         <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
           <div style={{ ...wrap }}>
             {booksOt.length + booksNt.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+            {booksOt.length + booksNt.length > 0 && <SectionArt seed="biblical-books" />}
             {[{ label: "The Old Testament", items: booksOt }, { label: "The New Testament", items: booksNt }].map(({ label, items }) => items.length > 0 && (
               <div key={label} style={{ marginBottom: "var(--s-5)" }}>
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 400, color: "var(--ink)", marginBottom: "var(--s-3)", paddingBottom: "8px", borderBottom: "2px solid var(--mustard)" }}>{label}</h2>

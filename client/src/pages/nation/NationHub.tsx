@@ -10,6 +10,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const card = { background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)", textDecoration: "none", color: "inherit", display: "block" } as const;
@@ -43,8 +44,13 @@ export default function NationHub() {
           <p style={{ fontFamily: "var(--B)", fontSize: "19px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch" }}>
             America is not the new Israel. Israel's theocracy was a one-time thing that pointed to Christ and cannot be rebuilt, and a biblical government coerced onto a free people would itself betray the gospel. And yet Scripture's vision still judges every party and leaves both the left and the right homeless. This is the most careful, least tribal look this site can offer at the Bible, the nation, and power.
           </p>
+          <SectionArt seed="nation-hero" tone="dark" />
         </div>
       </section>
+
+      <StatementBand tone="light" width="34ch">
+        No party is the kingdom, and the danger is never only the other side — it is how badly we want our own to be.
+      </StatementBand>
 
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
         <div style={{ ...wrap, display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "16px" }}>

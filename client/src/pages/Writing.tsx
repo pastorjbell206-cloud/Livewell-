@@ -15,6 +15,7 @@ import { Search, SlidersHorizontal, X } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { StatementBand } from "@/components/EditorialBlocks";
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
 import { pillarToTrack, resolveTrack, pillarForPost, PILLAR_BY_SLUG, subThemesForPost, SUBTHEMES, PILLARS_V2, MOVEMENTS } from "@/lib/taxonomy";
@@ -719,6 +720,10 @@ export default function Writing() {
           )}
         </div>
       </section>
+
+      <StatementBand eyebrow="Keep reading" width="26ch">
+        Every essay here was written to be finished, not skimmed.
+      </StatementBand>
     </Layout>
   );
 }

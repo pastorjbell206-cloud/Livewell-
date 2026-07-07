@@ -10,6 +10,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { TriageBadge } from "@/components/TriageBadge";
 import { DOCTRINE_INDEX, type DoctrineIndexEntry } from "@/lib/theology";
+import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const card = {
@@ -121,6 +122,10 @@ export default function Theology() {
         </div>
       </section>
 
+      <StatementBand tone="dark" eyebrow="The posture" width="30ch">
+        Every position here is stated in the voice its own defenders would own.
+      </StatementBand>
+
       {/* STUDY TOOLS */}
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4) 0" }}>
         <div style={wrap}>
@@ -175,6 +180,8 @@ export default function Theology() {
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "var(--s-5)" }}>
             {`The full section, laid out from the start. ${readyCount === 1 ? "One doctrine is" : `${readyCount} doctrines are`} written end to end in the six-step method. The rest show where the section is going, and arrive one at a time.`}
           </p>
+
+          <SectionArt seed="doctrine-map" />
 
           {["Systematic", "History", "Biblical"].map((pillar) => {
             const items = byPillar(pillar);
