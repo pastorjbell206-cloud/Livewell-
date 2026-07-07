@@ -138,9 +138,67 @@ export default function AdminPublishContent() {
     }
   };
 
+  // Ebook checkout: create (idempotently) a $9.99 Stripe price for every ebook
+  // that lacks one, and store the id so the Buy buttons go live. Books already
+  // configured are left untouched. Uses the server's own Stripe key.
+  const [stripeBusy, setStripeBusy] = useState(false);
+  const [stripeResult, setStripeResult] = useState<
+    { created: number; reused: number; envConfigured: number; total: number } | null
+  >(null);
+
+  const publishStripePrices = async () => {
+    if (!window.confirm("Create the missing Stripe prices and turn on checkout for every ebook that has a file to deliver? Safe to run more than once — it only fills what's missing and never touches books that already sell.")) {
+      return;
+    }
+    setStripeBusy(true);
+    setStripeResult(null);
+    try {
+      const resp = await fetch("/api/admin/create-stripe-prices", { method: "POST", credentials: "include" });
+      const data = await resp.json();
+      if (!resp.ok || !data.ok) throw new Error(data.error || `Stripe setup failed (${resp.status})`);
+      setStripeResult(data);
+      toast.success(`${data.created} ebook(s) turned on. ${data.created + data.reused + data.envConfigured} of ${data.total} now sell.`);
+    } catch (e: any) {
+      toast.error(e?.message || "Couldn't set up checkout — it's safe to try again.");
+    } finally {
+      setStripeBusy(false);
+    }
+  };
+
   return (
     <AdminLayout>
       <div className="max-w-2xl">
+        <div className="rounded p-6 mb-10" style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}>
+          <h2 className="font-display text-2xl font-bold mb-2" style={{ color: "#1A1A1A" }}>
+            Turn on ebook checkout
+          </h2>
+          <p className="font-body mb-5" style={{ color: "#5A5448", lineHeight: 1.7 }}>
+            One click creates a $9.99 Stripe price for every ebook that has a file to deliver and
+            turns its Buy button into real checkout. It uses your connected Stripe account, never
+            touches a book that already sells, and is safe to run as many times as you like.
+          </p>
+          <button
+            type="button"
+            onClick={publishStripePrices}
+            disabled={stripeBusy}
+            className="flex items-center gap-2 px-6 py-3 rounded font-ui font-medium disabled:opacity-50"
+            style={{ backgroundColor: "#1A1A1A", color: "#F5F0E6" }}
+          >
+            {stripeBusy ? <Loader2 size={16} className="animate-spin" /> : <UploadCloud size={16} />}
+            Turn on checkout for all ebooks
+          </button>
+          {stripeResult && (
+            <div className="mt-5 font-body" style={{ color: "#1A1A1A" }}>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 size={18} style={{ color: "#2E7D32" }} />
+                <span className="font-ui font-semibold">
+                  {stripeResult.created} newly turned on · {stripeResult.reused + stripeResult.envConfigured} already selling · {stripeResult.total} total
+                </span>
+              </div>
+            </div>
+          )}
+        </div>
+
         <div className="rounded p-6 mb-10" style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}>
           <h2 className="font-display text-2xl font-bold mb-2" style={{ color: "#1A1A1A" }}>
             Publish the new article libraries
