@@ -33,20 +33,33 @@ export function PullQuote({
       style={{
         ...proseWrap,
         textAlign: "center",
-        padding: "1.4em 0",
+        padding: "0.2em 0",
         margin: "var(--s-5) auto",
-        borderTop: "1px solid var(--mustard)",
-        borderBottom: "1px solid var(--mustard)",
       }}
     >
+      {/* Hanging quotation mark — the quarterly move: no box, the glyph carries it */}
+      <div
+        aria-hidden="true"
+        style={{
+          fontFamily: "var(--F)",
+          fontSize: "clamp(64px, 8vw, 96px)",
+          lineHeight: 0.4,
+          color: "var(--mustard)",
+          opacity: 0.85,
+          userSelect: "none",
+          marginBottom: "0.18em",
+        }}
+      >
+        “
+      </div>
       <blockquote
         style={{
           fontFamily: "var(--F)",
-          fontSize: "clamp(24px, 3.4vw, 32px)",
+          fontSize: "clamp(26px, 3.8vw, 38px)",
           fontStyle: "italic",
           fontWeight: 400,
-          lineHeight: 1.3,
-          letterSpacing: "-0.01em",
+          lineHeight: 1.28,
+          letterSpacing: "-0.012em",
           color: dark ? "var(--bone)" : "var(--ink)",
           margin: 0,
         }}

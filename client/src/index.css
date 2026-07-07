@@ -405,3 +405,9 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
   --s-9:12rem             Section padding (desktop)
   --w-prose:680px         Reading column max width
 */
+
+/* Duotone image lock (docs/IMAGE-AND-DESIGN-DIRECTION.md) — wrap any photograph
+   in .toned and it grades to the palette: grayscale, blended luminosity over
+   charcoal, so every image on the site reads as authored by one hand. */
+.toned{background:var(--charcoal)}
+.toned img{display:block;filter:grayscale(1) contrast(1.05);mix-blend-mode:luminosity;opacity:.92}
