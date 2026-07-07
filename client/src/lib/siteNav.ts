@@ -66,6 +66,7 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
   {
     title: "Libraries & Tools",
     links: [
+      { label: "Explore Everything", href: "/explore", primary: true },
       { label: "The Resource Hub", href: "/resources", primary: true },
       { label: "Study Guides", href: "/studyguides", primary: true },
       { label: "Make Disciples", href: "/disciple-making", primary: true },

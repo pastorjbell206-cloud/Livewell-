@@ -6,7 +6,11 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
 import { ArrowLeft, Search as SearchIcon } from "lucide-react";
 
+import { LibrarySource, LIBRARY_SOURCES, pickString } from "@/lib/catalog";
+
 // --- Library manifest search (static JSON content libraries) ---
+// The source registry lives in @/lib/catalog so search and the unified
+// /explore browse page read one list and never drift apart.
 
 interface LibraryEntry {
   slug: string;
@@ -18,45 +22,6 @@ interface LibraryEntry {
   href: string;
   indexHref: string;
 }
-
-interface LibrarySource {
-  url: string;
-  listKey: string;
-  label: string;
-  buildHref: (slug: string) => string;
-  indexHref: string;
-}
-
-const LIBRARY_SOURCES: LibrarySource[] = [
-  {
-    url: "/leadership/articles-index.json",
-    listKey: "articles",
-    label: "Leadership Library",
-    buildHref: (slug) => `/leadership/article/${slug}`,
-    indexHref: "/leadership/library",
-  },
-  {
-    url: "/context/guides-index.json",
-    listKey: "guides",
-    label: "Reading Scripture in Context",
-    buildHref: (slug) => `/resources/context/${slug}`,
-    indexHref: "/resources/context",
-  },
-  {
-    url: "/life/domains-index.json",
-    listKey: "domains",
-    label: "Integrated Life",
-    buildHref: (slug) => `/life/${slug}`,
-    indexHref: "/life",
-  },
-  {
-    url: "/leadership/formation-index.json",
-    listKey: "topics",
-    label: "Deep Formation",
-    buildHref: (slug) => `/leadership/formation/${slug}`,
-    indexHref: "/leadership/formation",
-  },
-];
 
 const LIBRARY_RESULT_CAP = 12;
 
@@ -72,13 +37,10 @@ async function fetchLibrarySource(source: LibrarySource): Promise<LibraryEntry[]
       .map((item: any) => ({
         slug: item.slug,
         title: item.title,
-        blurb: typeof item.blurb === "string" ? item.blurb : "",
-        facet:
-          typeof item.group === "string"
-            ? item.group
-            : typeof item.pillar === "string"
-              ? item.pillar
-              : "",
+        // Each library names its summary/facet fields differently — take the
+        // first present so every source searches on its real text.
+        blurb: pickString(item.blurb, item.excerpt, item.summary, item.subtitle),
+        facet: pickString(item.group, item.pillar, item.topic, item.era, item.audience),
         sourceLabel: source.label,
         href: source.buildHref(item.slug),
         indexHref: source.indexHref,

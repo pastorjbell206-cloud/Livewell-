@@ -4,7 +4,7 @@ import { Link } from "wouter";
 import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby, Brain, Mic, BookMarked, MessageCircle, Shield, Target, Church } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
 
-const TOOLS = [
+export const TOOLS = [
   {
     title: "Deep Bible Study Companion",
     description: "Seminary-level depth in kitchen-table language. 12 books of the Bible with 6 layers of analysis: text, historical context, literary structure, scholarly views, modern application, and deeper resources.",
