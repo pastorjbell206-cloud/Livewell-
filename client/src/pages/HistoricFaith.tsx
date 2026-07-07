@@ -9,6 +9,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { PullQuote, ScriptureBlock, StatementBand, SectionArt } from "@/components/EditorialBlocks";
 import { Link } from "wouter";
 
 const wrap = { maxWidth: "var(--w-content)", margin: "0 auto" } as const;
@@ -172,6 +173,10 @@ export default function HistoricFaith() {
             them feel like the faith itself.
           </p>
           <Cards items={LENSES} />
+          <ScriptureBlock reference="1 Corinthians 13:12" version="ESV">
+            For now we see in a mirror dimly, but then face to face. Now I know in part; then I
+            shall know fully, even as I have been fully known.
+          </ScriptureBlock>
         </div>
       </section>
 
@@ -188,12 +193,17 @@ export default function HistoricFaith() {
             one connected story that runs through all of it.
           </p>
           <Cards items={UNDERNEATH} dark />
+          <PullQuote tone="dark">
+            Take the lenses off, and what is left is not less than what you had. It is the oldest,
+            deepest thing there is.
+          </PullQuote>
         </div>
       </section>
 
       {/* GO DEEPER */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={wrap}>
+          <SectionArt seed="historic-faith-go-deeper" />
           <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>Go deeper</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.6vw, 38px)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.12, color: "var(--ink)", marginBottom: "10px", maxWidth: "24ch" }}>
             Where the argument is made in full.
@@ -205,15 +215,11 @@ export default function HistoricFaith() {
         </div>
       </section>
 
-      {/* CLOSING */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
-        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 30px)", fontStyle: "italic", lineHeight: 1.4, color: "rgba(245,240,230,0.92)" }}>
-            Christianity is deeper than your politics. Older than your culture. Wiser than your assumptions. And more
-            demanding, and more beautiful, than you realized.
-          </p>
-        </div>
-      </section>
+      {/* CLOSING — the constitution's final impression, set as a statement band */}
+      <StatementBand tone="dark" eyebrow="The whole point" width="38ch">
+        Christianity is deeper than your politics. Older than your culture. Wiser than your
+        assumptions. And more demanding, and more beautiful, than you realized.
+      </StatementBand>
     </Layout>
   );
 }
