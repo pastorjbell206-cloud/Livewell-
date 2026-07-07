@@ -12,6 +12,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useLocation, useParams } from "wouter";
 import { Markdown } from "@/components/Markdown";
+import ReadDepthBeacon from "@/components/ReadDepthBeacon";
 import { ArrowLeft, Bookmark, Share2, User } from "lucide-react";
 
 import Layout from "@/components/Layout";
@@ -719,6 +720,9 @@ export default function ArticleDetail() {
               </p>
             )}
           </div>
+
+          {/* Records "finished the essay" for the admin dashboard; invisible. */}
+          {post.body && <ReadDepthBeacon path={`/writing/${post.slug}`} />}
 
           {/* Reader actions */}
           <div
