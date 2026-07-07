@@ -57,7 +57,7 @@ export default function BookLibrary() {
                       loading="lazy"
                       width={800}
                       height={1200}
-                      style={{ width: "100%", aspectRatio: "2 / 3", objectFit: "cover", objectPosition: "center", display: "block", background: "var(--charcoal)" }}
+                      style={{ width: "100%", height: "auto", aspectRatio: "2 / 3", display: "block", background: "var(--charcoal)" }}
                     />
                   ) : (
                     <div style={{ aspectRatio: "2 / 3", background: "var(--charcoal)", display: "flex", flexDirection: "column", justifyContent: "center", padding: "var(--s-4)" }}>
