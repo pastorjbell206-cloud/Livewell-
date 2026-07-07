@@ -31,62 +31,134 @@ const WRITE = process.argv.includes("--write");
 // ── Themed volumes: slug, title, subtitle, blurb, pillar, and the keywords that
 //    pull an essay in. Order matters — first strong match wins within a pillar. ──
 const VOLUMES = [
-  { slug: "essays-marriage-and-family", title: "On Marriage & Family", pillar: "Integrated Life",
-    subtitle: "Covenant, conflict, and the long work of staying",
-    blurb: "Essays on marriage as covenant rather than contract — communication, conflict, intimacy, forgiveness, and the slow, unglamorous faithfulness of two people keeping a promise they are still learning to understand.",
-    kw: ["marriage","spouse","husband","wife","covenant","divorce","in-law","intimacy","romance","one flesh","adultery","affair","newlywed","wedding"] },
-  { slug: "essays-parenting", title: "On Parenting", pillar: "Integrated Life",
-    subtitle: "Raising children in a faith you are still learning",
-    blurb: "Essays for parents raising children in the faith without fear, formula, or guilt — discipline, teenagers, prodigals, and handing on a faith worth keeping.",
-    kw: ["parenting","parent","children","child","kids","raising","teenager","teen","toddler","discipline","prodigal","son and","daughter and","raise your"] },
+  // ── Integrated Life → marriage, split fine ──
+  { slug: "essays-marriage-covenant-roles", title: "Marriage: Covenant & Roles", pillar: "Integrated Life",
+    subtitle: "What marriage actually is, and how two people lead and serve",
+    blurb: "Essays on the shape of marriage — covenant rather than contract, one flesh, headship and submission read honestly, and two people learning to lead and serve each other.",
+    kw: ["covenant vs","covenant marriage","one flesh","submission","ephesians 5","servant leadership vs","leading and serving","what marriage actually is","theology of covenant"] },
+  { slug: "essays-marriage-communication-conflict", title: "Marriage: Communication & Conflict", pillar: "Integrated Life",
+    subtitle: "Fighting well, forgiving, and repairing what broke",
+    blurb: "Essays on the daily work of staying married — communication that works, fighting fair, forgiveness and repair, rebuilding trust, and the friendship a marriage can quietly lose.",
+    kw: ["communication","fighting fair","fighting well","conflict","forgiveness and repair","forgiveness in marriage","trust has been broken","lost its friendship","gratitude when","emotionally absent","one spouse grows","five-year"] },
+  { slug: "essays-marriage-sex-intimacy", title: "Marriage: Sex & Intimacy", pillar: "Integrated Life",
+    subtitle: "Intimacy as theology, honestly",
+    blurb: "Essays on sex and intimacy in a Christian marriage — intimacy as theology, and the honest conversation about the sexless marriage nobody names.",
+    kw: ["intimacy","sexual intimacy","sexless marriage","sex and","song of solomon","about desire"] },
+  { slug: "essays-marriage-crisis-repair", title: "Marriage: Crisis & Rebuilding", pillar: "Integrated Life",
+    subtitle: "Affairs, addiction, divorce, and starting again",
+    blurb: "Essays for marriages in the hardest places — affair recovery, addiction, mental health and depression, when divorce is faithful, second marriages, blended families, and a spouse who has lost faith.",
+    kw: ["affair","addiction","marriage and mental health","through depression","when divorce","second marriage","blended families","married doubter","spouse doesn't share","spouse doesn't","interfaith marriage","when your spouse"] },
+  { slug: "essays-marriage-money-seasons", title: "Marriage: Money, Work & Seasons", pillar: "Integrated Life",
+    subtitle: "In-laws, work, kids, and the long seasons",
+    blurb: "Essays on the pressures that test a marriage over time — money, in-laws, the demands of work, the years after children, the empty nest, ministry, distance, and the men who quietly check out.",
+    kw: ["money and marriage","in-laws","protecting your marriage","after children","after the kids","empty nest","survives ministry","military marriage","long-distance","across cultural","men and marriage","husbands check"] },
+  // ── Integrated Life → parenting, split fine ──
+  { slug: "essays-parenting-ages-stages", title: "Parenting: Ages & Stages", pillar: "Integrated Life",
+    subtitle: "What each season of childhood actually needs",
+    blurb: "Essays on raising children stage by stage — toddlers, the elementary years, the middle-school wilderness, teenagers, and the young adult who leaves, with the spiritual milestones to aim for at each age.",
+    kw: ["toddler","elementary years","middle school","faith formation by age","what to aim for at each age","spiritual milestones","young adults","by age","high school","autonomy, doubt"] },
+  { slug: "essays-parenting-discipline-character", title: "Parenting: Discipline & Character", pillar: "Integrated Life",
+    subtitle: "Forming the heart, not just the behavior",
+    blurb: "Essays on discipline and character — forming the heart rather than the behavior, letting children fail, raising the resilient and the unimpressive, and resisting the idol of the well-rounded child.",
+    kw: ["discipline that","discipline without","letting them fail","resilient","being unimpressive","ordinary tuesday","sports","well-rounded"] },
+  { slug: "essays-raising-kids-in-faith", title: "Raising Kids in the Faith", pillar: "Integrated Life",
+    subtitle: "Handing on a faith worth keeping",
+    blurb: "Essays on forming faith at home — teaching children to pray and read the Bible, raising kids who question rather than perform, family rhythms, and finding a church that will not wound them.",
+    kw: ["raise children in the faith","raise kids","raising kids","teaching kids to pray","teaching your kids","read the bible","kids who question","the word made flesh in your kitchen","family rhythms","find a church","the question god asks first"] },
+  { slug: "essays-parenting-hard-places", title: "Parenting the Hard Places", pillar: "Integrated Life",
+    subtitle: "Prodigals, doubt, screens, and the crises nobody prepped you for",
+    blurb: "Essays for the hardest parts of parenting — the prodigal, the child who doubts or walks away or comes out, special needs, single parenting, screens and phones, sex and identity, and grief.",
+    kw: ["prodigal","child doubts","doubts or walks","comes out","calls you a hypocrite","special needs","single parenting","digital age","screen and phone","screens","sex and identity","daughters","death, grief","adoption theology","parenting through divorce","youth pastor who stopped","homeschool","education decision"] },
   { slug: "essays-manhood", title: "On Manhood", pillar: "Integrated Life",
-    subtitle: "Fatherhood, work, and being a man who stays",
-    blurb: "Essays on manhood from a man raised without a father and raising five sons — fatherhood, provision, anger, presence, and the men the church forgot to form.",
-    kw: ["manhood","masculin","fatherhood","father","fathers","the father","sons","brotherhood","a man ","men who","being a man","male"] },
+    subtitle: "Anger, provision, and being a man who stays",
+    blurb: "Essays on manhood from a man raised without a father and raising five sons — anger, provision, presence, crisis, and the men the church forgot to form.",
+    kw: ["manhood","masculin","men and anger","men in crisis","the provider","fatherhood","raising sons","being a man","a man who","father wound","pornography","male friendship","the man who doesn't","man who doesn't go"] },
   { slug: "essays-womanhood", title: "On Womanhood", pillar: "Integrated Life",
     subtitle: "Identity, calling, and worth beyond the roles",
-    blurb: "Essays on womanhood — identity, calling, motherhood, singleness, and worth that does not depend on a role or a season.",
-    kw: ["womanhood","woman","women","feminin","motherhood","mother","daughter","wife and","single woman","sisterhood","her worth"] },
-  { slug: "essays-money-work-vocation", title: "On Money, Work & Vocation", pillar: "Integrated Life",
-    subtitle: "Calling, provision, and the God of the ordinary job",
-    blurb: "Essays on money, work, and calling — debt, generosity, ambition, rest from hustle, and the sacredness of an ordinary Tuesday's labor.",
-    kw: ["money","finance","financial","debt","generosity","giving","wealth","rich","poor budget","work","vocation","calling","career","job","ambition","hustle","retirement","provision","tithe"] },
-  { slug: "essays-rhythms-rest-prayer", title: "On Rhythms, Rest & Prayer", pillar: "Integrated Life",
-    subtitle: "Sabbath, silence, and a life that can be sustained",
-    blurb: "Essays on the practices that hold a life together — sabbath, rest, prayer, silence, and the spiritual disciplines that form a soul over time.",
-    kw: ["sabbath","rest","rhythm","prayer","pray","fasting","silence","solitude","meditation","spiritual discipline","spiritual formation","habit","practice","liturgy","anxiety","burnout of the soul","attention","technolog","phone"] },
+    blurb: "Essays on womanhood — identity, calling, motherhood, and worth that does not depend on a role or a season.",
+    kw: ["womanhood","a woman","women","feminin","motherhood","stay-at-home parent","her worth","daughter"] },
+  // ── Integrated Life → money/work ──
+  { slug: "essays-money-stewardship", title: "On Money & Stewardship", pillar: "Integrated Life",
+    subtitle: "Debt, generosity, and what Jesus meant by mammon",
+    blurb: "Essays on money — debt, generosity, wealth, tithing, contentment, and what Jesus actually meant when he said you cannot serve God and mammon.",
+    kw: ["money","finance","debt","generosity","giving","wealth","tithing","mammon","treasures in heaven","budget","contentment vs","serve god and money","stewardship"] },
+  { slug: "essays-work-and-vocation", title: "On Work & Vocation", pillar: "Integrated Life",
+    subtitle: "Calling and the God of the ordinary job",
+    blurb: "Essays on work as calling — vocation, career, ambition, entrepreneurship, faith at a job nobody shares, and the sacredness of ordinary labor.",
+    kw: ["theology of work","vocation","work as calling","god's will for your career","career","when you hate your job","faith at work","entrepreneurship","provider trap","ambition"] },
+  // ── Integrated Life → interior life ──
+  { slug: "essays-on-prayer", title: "On Prayer", pillar: "Integrated Life",
+    subtitle: "How to pray when you do not feel like it",
+    blurb: "Essays on prayer — praying when the feeling does not come, the Lord's Prayer, confession, the tired person's prayer, and the prayer you cannot finish.",
+    kw: ["prayer","pray","lord's prayer","amen is not","confession out loud","the bread you ask","the last prayer","cannot finish","do not know what to pray","praying with your body"] },
+  { slug: "essays-rest-and-sabbath", title: "On Rest & Sabbath", pillar: "Integrated Life",
+    subtitle: "Silence, waiting, and a life that can be sustained",
+    blurb: "Essays on rest — the sabbath you keep skipping, resting in a culture of exhaustion, silence, solitude, waiting, and the long obedience of ordinary faithfulness.",
+    kw: ["sabbath","rest is not","rest in a culture","how to rest","silence","solitude","what waiting","long obedience","morning is a theology","the practice of beginning","habit that outlasts","anxiety","the body knows before","stillness is not","fast you did not choose","when the feeling does not come","nothing to bring","when god feels absent"] },
   { slug: "essays-faith-and-doubt", title: "On Faith & Doubt", pillar: "Integrated Life",
-    subtitle: "Honest questions and a faith worth keeping",
-    blurb: "Essays for the doubting and the deconstructing — honest questions taken seriously, the faith the church poorly defended, and a way to keep the question inside the faith instead of leaving to keep it.",
-    kw: ["doubt","deconstruct","questioning","skeptic","unbelief","faith after","is god real","why believe","suffering and god","reconstruct","apologetic","evidence for"] },
+    subtitle: "Living honestly with the questions",
+    blurb: "Essays for the doubting — doubt as a spiritual practice, living with permanent uncertainty, the dark night, and keeping the question inside the faith instead of leaving to keep it.",
+    kw: ["doubt","dark night","permanent uncertainty","when the feeling does not come","when your family thinks","the grief that prays","when abuse hides"] },
   { slug: "essays-daily-devotionals", title: "Daily Devotionals", pillar: "Integrated Life",
     subtitle: "Short readings for an ordinary morning",
-    blurb: "Short devotional readings — a passage, a thought, and a prayer — for the ordinary mornings that make up most of a life with God.",
-    kw: ["devotional","devotion","daily reading","morning prayer","a meditation on","reflection on psalm","day ","advent","lent","holy week"] },
-  { slug: "essays-doctrine-and-scripture", title: "On Doctrine & Scripture", pillar: "Theological Depth",
+    blurb: "Short devotional readings for the ordinary mornings that make up most of a life with God.",
+    kw: ["devotional","devotion","daily reading","advent","lent","holy week","a meditation on"] },
+  // ── Theological Depth ──
+  { slug: "essays-hard-questions", title: "Hard Questions", pillar: "Theological Depth",
+    subtitle: "Honest answers for a skeptical age",
+    blurb: "Essays answering the questions people actually ask — suffering and evil, hell, miracles, science, the reliability of the Bible, the hiddenness of God, and whether faith is reasonable at all.",
+    kw: ["can a reasonable","can you trust the bible","can you actually trust","resurrection actually","science disprove","loving god send","so much suffering","why is there so much","feel so hidden","without evidence","one way among","okay to doubt","the problem with certainty","never heard","right and wrong even","why christianity","is god real","allow suffering","allow so much evil","historical jesus","hasn't the church done","miracles"] },
+  { slug: "essays-core-doctrine", title: "On Core Doctrine", pillar: "Theological Depth",
     subtitle: "The great truths, explained without condescension",
-    blurb: "Essays on the doctrines the church confesses and the Scripture it reads — the Trinity, the gospel, grace, atonement, the reliability of the Bible, and how to read it without making it say what we want.",
-    kw: ["doctrine","trinity","gospel","grace","atonement","incarnation","resurrection","justification","sanctification","inerrancy","scripture","the bible","hermeneutic","exegesis","read the bible","holy spirit","salvation","sin ","imputation"] },
-  { slug: "essays-church-history", title: "On Church History & the Creeds", pillar: "Theological Depth",
+    blurb: "Essays on the doctrines the church confesses — the Trinity, the gospel, grace, the reliability of Scripture, hell, and what Calvinists and Arminians are actually arguing about.",
+    kw: ["trinity","the gospel actually","grace is not","inerrancy","calvinism and arminianism","about hell","what christians actually believe","doctrine"] },
+  { slug: "essays-reading-scripture", title: "Reading Scripture Well", pillar: "Theological Depth",
+    subtitle: "How to read the Bible without bending it",
+    blurb: "Essays on reading the Bible — as one story rather than sixty-six books, without making it say what you want, and how individualism quietly changed the way we read.",
+    kw: ["how to read the bible","one story, not","individualism changed the way we read","read the bible without","when scripture reads you"] },
+  { slug: "essays-church-history", title: "On Church History & Traditions", pillar: "Theological Depth",
     subtitle: "The story you were born into",
-    blurb: "Essays on the church's long memory — the councils, the creeds, the Reformation, the awakenings, and the people who carried the faith to us.",
-    kw: ["church history","reformation","nicaea","council","creed","crusade","awakening","luther","augustine","athanasius","church father","heresy","denomination","tradition","history of the church","early church","monastic"] },
+    blurb: "Essays on the church's long memory — the councils and creeds, how Christianity became an empire and then became American, the mystics, and what the great traditions can teach each other.",
+    kw: ["church history","reformation","nicaea","council","creed","crusade","awakening","the mystics","evangelicalism was","evangelicalism became","american christianity became american","christianity became an empire","indigenous","liturgical vs","what evangelicalism"] },
   { slug: "essays-biblical-theology", title: "On Biblical Theology", pillar: "Theological Depth",
     subtitle: "The whole Bible as one story that ends in Christ",
-    blurb: "Essays tracing the Bible as one story climaxing in Christ — the kingdom of God, exodus, covenant, the image of God, and living between the already and the not yet.",
-    kw: ["kingdom of god","biblical theology","exodus","the whole bible","one story","image of god","already and not yet","typolog","covenant of","the storyline","genesis","revelation and","eschatolog","new creation"] },
-  { slug: "essays-after-christendom", title: "After Christendom & the Captive Church", pillar: "Prophetic Disruption",
-    subtitle: "Faith after the flag, the tribe, and the empire",
-    blurb: "Essays on the church's captivity to nation, tribe, and culture — Christian nationalism, the end of cultural Christianity, and what a faithful, exiled church looks like on the other side.",
-    kw: ["nationalism","nationalist","patriot","flag","empire","constantine","render unto","caesar","christendom","post-christian","exile","secular","cultural christianity","civil religion","political idol","two kingdoms","captive church","decline of the church","the religious right"] },
-  { slug: "essays-justice-and-the-vulnerable", title: "On Justice & the Vulnerable", pillar: "Prophetic Justice",
+    blurb: "Essays tracing the Bible as one story climaxing in Christ — the kingdom of God, exodus, the image of God, and living between the already and the not yet.",
+    kw: ["kingdom of god","biblical theology","exodus","one story","image of god","already and not yet","new creation"] },
+  // ── Prophetic Disruption ──
+  { slug: "essays-after-christendom", title: "After Christendom", pillar: "Prophetic Disruption",
+    subtitle: "Faith after the church lost its cultural power",
+    blurb: "Essays on the end of cultural Christianity — the death of Christendom, the rise of the nones, the early church under Rome, and what a faithful, exiled church looks like now.",
+    kw: ["christendom is ending","death of christendom","the church after cultural power","rise of the nones","early church under rome","post-christian","why people are leaving","why young adults aren't","the church held captive"] },
+  { slug: "essays-christian-nationalism", title: "The Church & the Nation", pillar: "Prophetic Disruption",
+    subtitle: "Faith after the flag",
+    blurb: "Essays on the church's captivity to the nation — Christian nationalism, flags in the sanctuary, render unto Caesar, the religious right, and loving a country without worshiping it.",
+    kw: ["christian nationalism","flags in the sanctuary","render unto caesar","whose kingdom","religious right","politics replaced theology","loving and worshiping your country","culture war","two kingdoms","political power"] },
+  { slug: "essays-deconstruction-church-hurt", title: "Deconstruction & Church Hurt", pillar: "Prophetic Disruption",
+    subtitle: "Leaving, staying, and the wreckage in between",
+    blurb: "Essays for the wounded and the deconstructing — exvangelicals, purity culture, religious trauma, spiritual abuse, the prosperity gospel, and how consumerism and screens quietly form us.",
+    kw: ["deconstruction is not","exvangelical","purity culture","religious trauma","spiritual abuse","prosperity gospel","consumerism is a spiritual","formed by screens","outrage is not"] },
+  // ── Prophetic Justice ──
+  { slug: "essays-justice-and-the-poor", title: "Justice & the Poor", pillar: "Prophetic Justice",
     subtitle: "Mishpat, the poor at the gate, and the church's silence",
-    blurb: "Essays on biblical justice — mishpat and tsedaqah, the poor and the stranger, race and reconciliation, and the church's long silence where it should have spoken.",
-    kw: ["justice","mishpat","tsedaqah","poor","poverty","widow","orphan","stranger","immigrant","refugee","race","racial","reconciliation","vulnerable","incarceration","prison","disability","jubilee","oppress","the least of these","housing","solidarity"] },
-  { slug: "essays-pastoring-and-the-church", title: "On Pastoring & the Church", pillar: "Leadership Formation",
-    subtitle: "The weight of leading the people of God",
-    blurb: "Essays for pastors and lay leaders — burnout and health, preaching, staff and elders, church revitalization, and the loneliness of the job up front.",
-    kw: ["pastor","pastoral","ministry","minister","preaching","preach","sermon","elder","deacon","burnout","church health","revitaliz","church plant","staff","congregation","shepherd","leadership","discipleship","the pulpit","bivocational"] },
+    blurb: "Essays on biblical justice — mishpat and tsedaqah, the poor and the stranger, the immigrant and the refugee, jubilee and debt, and the eye of the needle.",
+    kw: ["biblical justice","mishpat","charity is not justice","is poverty political","jubilee","eye of the needle","wealth gap","poor and the stranger","immigrants and refugees","immigrant","the poor","individual sin and systemic","principalities and powers","complicity","consistent pro-life","disability","poverty tourism"] },
+  { slug: "essays-race-and-the-church", title: "Race & the Church", pillar: "Prophetic Justice",
+    subtitle: "The most segregated hour, honestly examined",
+    blurb: "Essays on race and the church — the image of God against the lie of race, the black church, white evangelicalism, the most segregated hour, and what reconciliation actually requires.",
+    kw: ["multiethnic church","image of god and the lie of race","the black church","most segregated","white evangelicalism and race","reconciliation","colonialism"] },
+  { slug: "essays-church-reckonings", title: "The Church's Reckonings", pillar: "Prophetic Justice",
+    subtitle: "Abuse, mental health, and the questions the church avoids",
+    blurb: "Essays on the reckonings the church cannot avoid — the sexual abuse crisis, mental health handled badly, women in ministry, lament, and the prophets who made everyone uncomfortable.",
+    kw: ["sexual abuse crisis","mental health and the church","how the church handles mental health","women in ministry","lament","prophets made everyone","megachurch model","toxic masculinity","why the church lost the culture"] },
+  // ── Leadership Formation ──
+  { slug: "essays-pastoral-health", title: "The Pastor's Own Soul", pillar: "Leadership Formation",
+    subtitle: "Burnout, loneliness, and staying",
+    blurb: "Essays for the pastor's own soul — burnout, loneliness, depression, the interior life, and the health that has to come before the work.",
+    kw: ["burnout","pastoral health","loneliness","depression","interior life","shepherd needs","when the shepherd","the hidden life","bivocational"] },
+  { slug: "essays-preaching-and-leading", title: "Preaching & Leading the Church", pillar: "Leadership Formation",
+    subtitle: "The pulpit, the staff, and the revitalized church",
+    blurb: "Essays on leading the church — preaching, staff and elders and deacons, church revitalization and planting, and the budget as a theology.",
+    kw: ["preaching","preach","sermon","the pulpit","elder","deacon","staff","revitaliz","church plant","church budget","leadership team","discipleship"] },
 ];
 const VOLUME_SLUGS = new Set(VOLUMES.map((v) => v.slug));
 
@@ -96,10 +168,10 @@ for (const v of VOLUMES) { (byPillar[v.pillar] = byPillar[v.pillar] || []).push(
 // Fallback volume per pillar (when no keyword matches within the pillar)
 const PILLAR_FALLBACK = {
   "Integrated Life": "essays-faith-and-doubt",
-  "Theological Depth": "essays-doctrine-and-scripture",
+  "Theological Depth": "essays-core-doctrine",
   "Prophetic Disruption": "essays-after-christendom",
-  "Prophetic Justice": "essays-justice-and-the-vulnerable",
-  "Leadership Formation": "essays-pastoring-and-the-church",
+  "Prophetic Justice": "essays-justice-and-the-poor",
+  "Leadership Formation": "essays-preaching-and-leading",
 };
 const LEGACY_TO_FALLBACKPILLAR = { // normalize odd pillar labels
   "Pastoral Ministry": "Leadership Formation",
@@ -152,6 +224,15 @@ for (const a of W.values()) {
   buckets[classify(a)].push(a);
 }
 
+// Merge any too-small bucket into its pillar's fallback volume, so there are no
+// 1-2 chapter "books" and no essay is dropped.
+const MIN = 4;
+for (const v of VOLUMES) {
+  const b = buckets[v.slug];
+  const fb = PILLAR_FALLBACK[v.pillar];
+  if (b.length && b.length < MIN && fb && fb !== v.slug) { buckets[fb].push(...b); buckets[v.slug] = []; }
+}
+
 console.log(`Writings: ${W.size} unique | already in a book: ${alreadyInBook} | held back for [cite]: ${skippedCite}`);
 console.log(`\nThemed volumes (${WRITE ? "WRITING" : "dry-run"}):`);
 let totalCh = 0;
@@ -164,7 +245,7 @@ console.log(`  ${String(totalCh).padStart(3)}  TOTAL chapters across ${VOLUMES.l
 if (!WRITE) {
   console.log("\n(dry-run — pass --write to generate the book files. Sample of the biggest volume:)");
   const biggest = VOLUMES.map((v) => [v, buckets[v.slug]]).sort((a, b) => b[1].length - a[1].length)[0];
-  console.log(`  ${biggest[0].title}:`); for (const a of biggest[1].slice(0, 8)) console.log(`    - ${a.title}`);
+  console.log(`  ${biggest[0].title} (sample):`); for (const a of biggest[1].slice(0, 6)) console.log(`    - ${a.title}`);
   process.exit(0);
 }
 
