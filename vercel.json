@@ -1,5 +1,5 @@
 {
-    "buildCommand": "rm -rf node_modules/.vite .vite dist && pnpm run pdfs && pnpm run manuals && pnpm run og && pnpm run howtos && pnpm run wisdom && pnpm run sitemap && pnpm run build && pnpm run prerender",
+    "buildCommand": "rm -rf node_modules/.vite .vite dist && pnpm run pdfs && pnpm run manuals && pnpm run og && pnpm run howtos && pnpm run wisdom && pnpm run sitemap && pnpm run publish:articles && pnpm run build && pnpm run prerender",
     "outputDirectory": "dist/public",
     "trailingSlash": false,
     "installCommand": "pnpm install --frozen-lockfile",
