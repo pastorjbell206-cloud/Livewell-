@@ -9,19 +9,42 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
+import { fetchLibraryBooks, groupBooksByPillar, type LibraryBook } from "@/lib/libraryBooks";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
-interface Entry { slug: string; title: string; subtitle?: string; blurb?: string; pillar?: string; chapters: number; cover?: string | null }
+function BookCard({ b }: { b: LibraryBook }) {
+  return (
+    <Link href={`/read/${b.slug}`} style={{ display: "flex", flexDirection: "column", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", textDecoration: "none", overflow: "hidden" }}>
+      {b.cover ? (
+        <img
+          src={b.cover}
+          alt={`${b.title} — book cover`}
+          loading="lazy"
+          width={800}
+          height={1200}
+          style={{ width: "100%", height: "auto", aspectRatio: "2 / 3", display: "block", background: "var(--charcoal)" }}
+        />
+      ) : (
+        <div style={{ aspectRatio: "2 / 3", background: "var(--charcoal)", display: "flex", flexDirection: "column", justifyContent: "center", padding: "var(--s-4)" }}>
+          {b.pillar && <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>{b.pillar}</div>}
+          <div style={{ fontFamily: "var(--F)", fontSize: "26px", lineHeight: 1.12, color: "var(--bone)" }}>{b.title}</div>
+        </div>
+      )}
+      <div style={{ padding: "12px 14px 14px" }}>
+        <div style={{ fontFamily: "var(--F)", fontSize: "17px", lineHeight: 1.18, color: "var(--ink)", marginBottom: "5px" }}>{b.title}</div>
+        <div style={{ fontFamily: "var(--U)", fontSize: "11.5px", fontWeight: 600, letterSpacing: "0.02em", color: "var(--mustard-text)" }}>{b.chapters} chapters · Read →</div>
+      </div>
+    </Link>
+  );
+}
 
 export default function BookLibrary() {
-  const [books, setBooks] = useState<Entry[]>([]);
+  const [books, setBooks] = useState<LibraryBook[]>([]);
   useEffect(() => {
-    fetch("/books/index.json")
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d) => d?.books && setBooks(d.books))
-      .catch(() => {});
+    fetchLibraryBooks().then(setBooks);
   }, []);
+  const groups = groupBooksByPillar(books);
 
   return (
     <Layout>
@@ -47,31 +70,17 @@ export default function BookLibrary() {
           {books.length === 0 ? (
             <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>The first books are being written. Check back soon.</p>
           ) : (
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(210px, 100%), 1fr))", gap: "var(--s-3)" }}>
-              {books.map((b) => (
-                <Link key={b.slug} href={`/read/${b.slug}`} style={{ display: "flex", flexDirection: "column", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", textDecoration: "none", overflow: "hidden" }}>
-                  {b.cover ? (
-                    <img
-                      src={b.cover}
-                      alt={`${b.title} — book cover`}
-                      loading="lazy"
-                      width={800}
-                      height={1200}
-                      style={{ width: "100%", height: "auto", aspectRatio: "2 / 3", display: "block", background: "var(--charcoal)" }}
-                    />
-                  ) : (
-                    <div style={{ aspectRatio: "2 / 3", background: "var(--charcoal)", display: "flex", flexDirection: "column", justifyContent: "center", padding: "var(--s-4)" }}>
-                      {b.pillar && <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>{b.pillar}</div>}
-                      <div style={{ fontFamily: "var(--F)", fontSize: "26px", lineHeight: 1.12, color: "var(--bone)" }}>{b.title}</div>
-                    </div>
-                  )}
-                  <div style={{ padding: "12px 14px 14px" }}>
-                    <div style={{ fontFamily: "var(--F)", fontSize: "17px", lineHeight: 1.18, color: "var(--ink)", marginBottom: "5px" }}>{b.title}</div>
-                    <div style={{ fontFamily: "var(--U)", fontSize: "11.5px", fontWeight: 600, letterSpacing: "0.02em", color: "var(--mustard-text)" }}>{b.chapters} chapters · Read →</div>
-                  </div>
-                </Link>
-              ))}
-            </div>
+            groups.map((g) => (
+              <section key={g.pillar} style={{ marginBottom: "var(--s-6)" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "12px", marginBottom: "var(--s-3)", borderBottom: "1px solid rgba(20,17,12,0.1)", paddingBottom: "10px" }}>
+                  <h2 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 400, letterSpacing: "-0.01em", color: "var(--ink)" }}>{g.pillar}</h2>
+                  <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--ink-muted)", whiteSpace: "nowrap" }}>{g.books.length} {g.books.length === 1 ? "book" : "books"}</span>
+                </div>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(210px, 100%), 1fr))", gap: "var(--s-3)" }}>
+                  {g.books.map((b) => <BookCard key={b.slug} b={b} />)}
+                </div>
+              </section>
+            ))
           )}
         </div>
       </section>

@@ -13,6 +13,7 @@ import { ArrowRight } from "lucide-react";
 
 import { PullQuote, SectionArt, StatementBand } from "@/components/EditorialBlocks";
 import Footer from "@/components/Footer";
+import { LibraryStrip } from "@/components/LibraryStrip";
 import MinimalNav from "@/components/MinimalNav";
 import { SegmentedSignup } from "@/components/SegmentedSignup";
 import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
@@ -596,6 +597,9 @@ export default function Home() {
           )}
         </div>
       </section>
+
+      {/* FROM THE LIBRARY — pull readers into the free full-length books */}
+      <LibraryStrip />
 
       {/* SEGMENTED SUBSCRIBE — the single most important conversion surface */}
       <section
