@@ -415,6 +415,26 @@ async function seedPostChristianArticles(req: VercelRequest, res: VercelResponse
   }
 }
 
+// Publish every draft resource in a single UPDATE. The admin "Publish all
+// drafts" button previously fired one write per resource from the browser, all
+// at once; a large flush exhausted the serverless DB connections and the whole
+// batch failed. One statement is atomic, fast, and cannot overrun the pool.
+async function publishAllResources(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  try {
+    const out = await withConn(async (c) => {
+      const [r]: any = await c.execute(
+        "UPDATE resources SET published = true, updatedAt = NOW() WHERE published = false"
+      );
+      const [rows]: any = await c.query("SELECT COUNT(*) as n FROM resources WHERE published = true");
+      return { published: r.affectedRows || 0, totalPublished: (rows as any)[0].n };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
 // One-shot "publish everything": inserts every code-shipped article set (the
 // post-Christian series, the Integrated Life expansion, and the womanhood/doubt/
 // devotional set) in a single admin action. Idempotent — INSERT IGNORE on the
@@ -3137,6 +3157,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/seed-integrated-life") return seedArticleSet(req, res, integratedLifeArticles as any[]);
     if (url === "/api/admin/seed-womanhood-doubt-devotionals") return seedArticleSet(req, res, womanhoodDoubtDevotionalArticles as any[]);
     if (url === "/api/admin/seed-all") return seedAllArticles(req, res);
+    if (url === "/api/admin/publish-all-resources") return publishAllResources(req, res);
     if (url === "/api/admin/seed-ebooks") return seedEbooks(req, res);
     if (url === "/api/admin/create-stripe-prices") return createStripePrices(req, res);
     if (url === "/api/admin/fix-apostrophes") return adminFixApostrophes(req, res);

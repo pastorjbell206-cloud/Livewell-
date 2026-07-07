@@ -121,6 +121,7 @@ const STATIC_PAGES = [
   { url: "/family/catechism", priority: "0.7", changefreq: "monthly" },
   { url: "/family/reading-plans", priority: "0.7", changefreq: "monthly" },
   { url: "/framework", priority: "0.85", changefreq: "monthly" },
+  { url: "/historic-faith", priority: "0.85", changefreq: "monthly" },
   { url: "/theology", priority: "0.8", changefreq: "monthly" },
   { url: "/theology/biblical", priority: "0.75", changefreq: "monthly" },
   { url: "/theology/history", priority: "0.75", changefreq: "monthly" },

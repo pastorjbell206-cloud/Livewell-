@@ -67,27 +67,38 @@ export default function BookReader() {
       />
 
       <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
-        <div style={prose}>
-          <div style={{ ...eyebrow, color: "var(--mustard)" }}>
-            <Link href="/read" style={{ color: "inherit", textDecoration: "none" }}>The Library</Link>{book?.pillar ? ` · ${book.pillar}` : ""}
+        <div style={{ ...prose, display: "flex", gap: "var(--s-5)", alignItems: "flex-start", flexWrap: "wrap" }}>
+          <div style={{ flex: "1 1 340px", minWidth: 0 }}>
+            <div style={{ ...eyebrow, color: "var(--mustard)" }}>
+              <Link href="/read" style={{ color: "inherit", textDecoration: "none" }}>The Library</Link>{book?.pillar ? ` · ${book.pillar}` : ""}
+            </div>
+            <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "16px 0 14px", maxWidth: "18ch" }}>
+              {book?.title ?? "Loading…"}
+            </h1>
+            {book?.subtitle && <p style={{ fontFamily: "var(--F)", fontSize: "21px", fontStyle: "italic", color: "rgba(245,240,230,.82)", margin: "0 0 18px", maxWidth: "40ch" }}>{book.subtitle}</p>}
+            {book?.blurb && <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,.82)", maxWidth: "60ch" }}>{book.blurb}</p>}
+            {book && slug && !PAID_BOOK_SLUGS.has(slug) && (
+              <a
+                href={`/downloads/books/${slug}.pdf`}
+                style={{
+                  display: "inline-block", marginTop: "22px", padding: "12px 22px",
+                  background: "var(--mustard)", color: "var(--ink)", textDecoration: "none",
+                  fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600,
+                  borderRadius: "var(--radius-sm)",
+                }}
+              >
+                Download the PDF
+              </a>
+            )}
           </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "16px 0 14px", maxWidth: "18ch" }}>
-            {book?.title ?? "Loading…"}
-          </h1>
-          {book?.subtitle && <p style={{ fontFamily: "var(--F)", fontSize: "21px", fontStyle: "italic", color: "rgba(245,240,230,.82)", margin: "0 0 18px", maxWidth: "40ch" }}>{book.subtitle}</p>}
-          {book?.blurb && <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,.82)", maxWidth: "60ch" }}>{book.blurb}</p>}
-          {book && slug && !PAID_BOOK_SLUGS.has(slug) && (
-            <a
-              href={`/downloads/books/${slug}.pdf`}
-              style={{
-                display: "inline-block", marginTop: "22px", padding: "12px 22px",
-                background: "var(--mustard)", color: "var(--ink)", textDecoration: "none",
-                fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600,
-                borderRadius: "var(--radius-sm)",
-              }}
-            >
-              Download the PDF
-            </a>
+          {book && slug && (
+            <img
+              src={`/books/${slug}.svg`}
+              alt={`${book.title} cover`}
+              width={180}
+              height={270}
+              style={{ flex: "0 0 auto", width: "180px", height: "270px", objectFit: "cover", border: "1px solid rgba(245,240,230,0.15)", boxShadow: "0 8px 30px rgba(0,0,0,0.35)" }}
+            />
           )}
         </div>
       </section>

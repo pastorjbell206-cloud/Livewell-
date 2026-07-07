@@ -168,11 +168,29 @@ export default function AdminResources() {
     );
   };
 
-  const publishAllDrafts = () => {
+  const publishAllDrafts = async () => {
     const ids = all.filter((r) => !r.published).map((r) => r.id);
     if (ids.length === 0) return;
     if (!confirm(`Publish all ${ids.length} draft(s)? They will become visible to readers.`)) return;
-    bulkSetPublished(ids, true);
+    // Publish every draft in one server call (a single UPDATE) instead of firing
+    // one write per resource from the browser — a large flush overwhelmed the
+    // serverless DB connections and the whole batch failed.
+    setBulkBusy(true);
+    try {
+      const resp = await fetch("/api/admin/publish-all-resources", {
+        method: "POST",
+        credentials: "include",
+      });
+      const data = await resp.json().catch(() => ({}));
+      if (!resp.ok || !data.ok) throw new Error(data.error || `Publish failed (${resp.status})`);
+      toast.success(`Published ${data.published} resource(s).`);
+      setSelected(new Set());
+      await resourcesQuery.refetch();
+    } catch (e: any) {
+      toast.error(e?.message || "Couldn't publish the resources — it's safe to try again.");
+    } finally {
+      setBulkBusy(false);
+    }
   };
 
   const selectedIds = Array.from(selected);
