@@ -1,19 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200" role="img" aria-label="Parenting: Discipline &amp; Character by James Bell">
   <rect width="800" height="1200" fill="#1A1A1A"/>
-
   <circle cx="764" cy="1140" r="300" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.26"/>
   <circle cx="764" cy="1140" r="212" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.16"/>
-
   <text x="80" y="150" font-family="Helvetica, Arial, sans-serif" font-size="19" letter-spacing="5.5" font-weight="700" fill="#D4A017">LIVING WELL</text>
   <text x="720" y="152" text-anchor="end" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="22" fill="#D4A017">33</text>
   <line x1="80" y1="178" x2="720" y2="178" stroke="#D4A017" stroke-width="1.5" opacity="0.5"/>
-
-  <text x="76" y="485" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="96" font-weight="400" fill="#F5F0E6">Parenting:</text>
-  <text x="76" y="586" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="96" font-weight="400" fill="#F5F0E6">Discipline &amp;</text>
-  <text x="76" y="687" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="96" font-weight="400" fill="#F5F0E6">Character</text>
-
+  <text x="76" y="485" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="96" fill="#F5F0E6">Parenting:</text>
+  <text x="76" y="586" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="96" fill="#F5F0E6">Discipline &amp;</text>
+  <text x="76" y="687" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="96" fill="#F5F0E6">Character</text>
   <text x="80" y="757" font-family="Helvetica, Arial, sans-serif" font-size="23" fill="#C9C1AE">Forming the heart, not just the behavior</text>
-
   <line x1="80" y1="1052" x2="176" y2="1052" stroke="#D4A017" stroke-width="3"/>
   <text x="80" y="1110" font-family="Helvetica, Arial, sans-serif" font-size="28" letter-spacing="4" font-weight="700" fill="#F5F0E6">JAMES BELL</text>
 </svg>
