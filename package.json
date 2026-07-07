@@ -26,6 +26,7 @@
     "publish:md": "tsx scripts/publish-md.ts",
     "publish:drafts": "node scripts/publish-all-drafts.mjs",
     "publish:all": "node scripts/publish-from-plan.mjs",
+    "publish:articles": "node scripts/publish-articles-build.mjs",
     "survey": "node scripts/survey-manuscripts.mjs",
     "seed:paths": "node scripts/seed-reading-paths.mjs"
   },

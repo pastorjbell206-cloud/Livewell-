@@ -135,6 +135,14 @@ export default function Table() {
             Each study is built for a home: open the night, read the passage, talk it through, take a practice into the week, and name the person you will pass it to. They are numbered in the order a reader naturally walks them — but any table can start where it stands.
           </p>
 
+          <div style={{ background: "var(--bone-warm)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "14px 18px", maxWidth: "62ch", marginBottom: "var(--s-4)" }}>
+            <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, color: "var(--ink-muted)", margin: 0 }}>
+              Never discipled anyone, and sure you are not qualified? Start with{" "}
+              <Link href="/table/who-me-at-the-table" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Who, Me? At the Table</Link>
+              . It was written for exactly that fear. You do not need to be an expert. You only need to be one step ahead and willing to bring one person along.
+            </p>
+          </div>
+
           {failed ? (
             <LoadFailed what="The curriculum" onRetry={() => setNonce((n) => n + 1)} backHref="/resources" backLabel="Browse the resource library" />
           ) : studies === null ? (

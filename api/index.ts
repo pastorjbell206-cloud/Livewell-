@@ -415,6 +415,48 @@ async function seedPostChristianArticles(req: VercelRequest, res: VercelResponse
   }
 }
 
+// One-shot "publish everything": inserts every code-shipped article set (the
+// post-Christian series, the Integrated Life expansion, and the womanhood/doubt/
+// devotional set) in a single admin action. Idempotent — INSERT IGNORE on the
+// unique slug means re-running only fills gaps and never duplicates. Returns a
+// per-set breakdown so the admin sees exactly what landed.
+async function seedAllArticles(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  const SETS: Array<{ name: string; set: any[] }> = [
+    { name: "post-christian", set: postChristianArticles as any[] },
+    { name: "integrated-life", set: integratedLifeArticles as any[] },
+    { name: "womanhood-doubt-devotionals", set: womanhoodDoubtDevotionalArticles as any[] },
+  ];
+  try {
+    const out = await withConn(async (c) => {
+      const breakdown: Record<string, { inserted: number; total: number }> = {};
+      let inserted = 0;
+      let total = 0;
+      for (const { name, set } of SETS) {
+        let n = 0;
+        for (const a of set) {
+          try {
+            const [r]: any = await c.execute(
+              `INSERT IGNORE INTO posts (title, slug, body, excerpt, pillar, readTime, published, createdAt, updatedAt)
+               VALUES (?, ?, ?, ?, ?, ?, true, NOW(), NOW())`,
+              [a.title, a.slug, a.body, a.excerpt, a.pillar, a.readTime]
+            );
+            if (r.affectedRows) n++;
+          } catch {}
+        }
+        breakdown[name] = { inserted: n, total: set.length };
+        inserted += n;
+        total += set.length;
+      }
+      const [rows] = await c.query("SELECT COUNT(*) as n FROM posts");
+      return { inserted, total, breakdown, totalPosts: (rows as any)[0].n };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
 // The standalone ebooks (code-driven funnel pages + gated PDFs) that should also
 // have a row in the `books` table so they appear in the DB-driven catalog and
 // the roadmap "Published" count. purchaseUrl points at the funnel page; the
@@ -3094,6 +3136,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/seed-post-christian") return seedPostChristianArticles(req, res);
     if (url === "/api/admin/seed-integrated-life") return seedArticleSet(req, res, integratedLifeArticles as any[]);
     if (url === "/api/admin/seed-womanhood-doubt-devotionals") return seedArticleSet(req, res, womanhoodDoubtDevotionalArticles as any[]);
+    if (url === "/api/admin/seed-all") return seedAllArticles(req, res);
     if (url === "/api/admin/seed-ebooks") return seedEbooks(req, res);
     if (url === "/api/admin/create-stripe-prices") return createStripePrices(req, res);
     if (url === "/api/admin/fix-apostrophes") return adminFixApostrophes(req, res);

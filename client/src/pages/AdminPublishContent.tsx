@@ -111,9 +111,75 @@ export default function AdminPublishContent() {
 
   const busy = mode !== null;
 
+  // "Publish everything" — inserts the code-shipped article libraries (the
+  // post-Christian series, the Integrated Life expansion, and the womanhood/
+  // doubt/devotional set) as new posts in one call. Idempotent on the server.
+  const [seedBusy, setSeedBusy] = useState(false);
+  const [seedResult, setSeedResult] = useState<
+    { inserted: number; total: number; totalPosts: number; breakdown: Record<string, { inserted: number; total: number }> } | null
+  >(null);
+
+  const publishLibraries = async () => {
+    if (!window.confirm("Publish all new article libraries (post-Christian, Integrated Life, and womanhood/doubt/devotionals) to the site? Safe to run more than once — it only adds what's missing.")) {
+      return;
+    }
+    setSeedBusy(true);
+    setSeedResult(null);
+    try {
+      const resp = await fetch("/api/admin/seed-all", { method: "POST", credentials: "include" });
+      const data = await resp.json();
+      if (!resp.ok || !data.ok) throw new Error(data.error || `seed failed (${resp.status})`);
+      setSeedResult(data);
+      toast.success(`Published ${data.inserted} new article(s). Your site now has ${data.totalPosts} posts.`);
+    } catch (e: any) {
+      toast.error(e?.message || "Couldn't publish the libraries — it's safe to try again.");
+    } finally {
+      setSeedBusy(false);
+    }
+  };
+
   return (
     <AdminLayout>
       <div className="max-w-2xl">
+        <div className="rounded p-6 mb-10" style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}>
+          <h2 className="font-display text-2xl font-bold mb-2" style={{ color: "#1A1A1A" }}>
+            Publish the new article libraries
+          </h2>
+          <p className="font-body mb-5" style={{ color: "#5A5448", lineHeight: 1.7 }}>
+            One click adds the 220 essays written for the site — the 60-part post-Christian series,
+            the 90 Integrated Life essays (marriage, parenting, money, manhood), and the 70 womanhood,
+            doubt, and devotional pieces — as published posts. It never overwrites or duplicates; run
+            it as many times as you like and it only fills what's missing.
+          </p>
+          <button
+            type="button"
+            onClick={publishLibraries}
+            disabled={seedBusy}
+            className="flex items-center gap-2 px-6 py-3 rounded font-ui font-medium disabled:opacity-50"
+            style={{ backgroundColor: "#D4A017", color: "#1A1A1A" }}
+          >
+            {seedBusy ? <Loader2 size={16} className="animate-spin" /> : <UploadCloud size={16} />}
+            Publish everything now
+          </button>
+          {seedResult && (
+            <div className="mt-5 font-body" style={{ color: "#1A1A1A" }}>
+              <div className="flex items-center gap-2 mb-2">
+                <CheckCircle2 size={18} style={{ color: "#2E7D32" }} />
+                <span className="font-ui font-semibold">
+                  {seedResult.inserted} new article(s) published · {seedResult.totalPosts} posts total
+                </span>
+              </div>
+              <ul className="text-sm space-y-1" style={{ color: "#5A5448" }}>
+                {Object.entries(seedResult.breakdown).map(([name, b]) => (
+                  <li key={name}>
+                    {name}: <strong>{b.inserted}</strong> new of {b.total}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+
         <h1 className="font-display text-4xl font-bold mb-3" style={{ color: "#1A1A1A" }}>
           Publish Article Content
         </h1>
