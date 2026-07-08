@@ -603,7 +603,7 @@ export const MARRIAGE_ARTICLES = [
 
 <p>Forgiveness in marriage is rarely a single event. It is a process — sometimes a long one — that involves multiple decisions, multiple returns to the same wound, multiple acts of release that must be renewed as the pain resurfaces.</p>
 
-<p>Lewis Smedes, in his essential work "Forgive and Forget" (a title that, ironically, contains the very confusion he works to dismantle), described forgiveness as a journey through four stages: hurt, hate, healing, and coming together. The journey is not linear. You do not pass through the stages once and arrive at resolution. You cycle through them — sometimes moving forward, sometimes falling back, sometimes stuck in a stage you thought you had left behind.</p>
+<p>Lewis Smedes, in his essential work "Forgive and Forget" (a title that, ironically, contains the very confusion he works to dismantle), described forgiveness as a movement through four stages: hurt, hate, healing, and coming together. The movement is not linear. You do not pass through the stages once and arrive at resolution. You cycle through them — sometimes moving forward, sometimes falling back, sometimes stuck in a stage you thought you had left behind.</p>
 
 <p>The first stage is the honest acknowledgment of the hurt. This sounds simple. It is not. Many couples skip this stage entirely, moving straight from the offense to the expected resolution. The husband says, "I am sorry." The wife says, "I forgive you." And nothing has actually happened, because the wife has not yet allowed herself to feel the full weight of the wound. She has performed forgiveness without processing the injury, and the performance will not hold.</p>
 

@@ -656,7 +656,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     articleTitle: "Is God Real? An Honest Assessment",
     personalReflection: [
       "The article says 'a faith that cannot survive doubt was never faith to begin with.' Where are you currently with doubt — afraid of it, in the middle of it, or on the other side of it?",
-      "Paul Ricoeur described the journey from 'first naivete' through 'critical distance' to 'second naivete.' Where are you on that journey, and what would the next step look like?",
+      "Paul Ricoeur described the movement from 'first naivete' through 'critical distance' to 'second naivete.' Where are you on that journey, and what would the next step look like?",
       "The article admits the evidence is not all on one side. Which arguments for God's existence do you find most compelling — and which objections do you find most difficult to answer?"
     ],
     groupDiscussion: [
@@ -1057,7 +1057,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     groupDiscussion: [
       "The rise of the nones does not primarily represent deconversion — it represents the departure of the nominally committed. If that is true, is the shrinking church a loss or a clarification?",
       "Newbigin said post-Christian England was harder mission territory than pre-Christian India because England 'had heard the gospel and was bored.' How do you share the gospel with people who think they already know what it says?",
-      "The article ends by saying the post-Christendom church may be 'small, hidden, transformative — not the empire's religion, but the empire's conscience.' What would your church need to change to become that?"
+      "The article ends by saying the post-Christendom church may be 'small, hidden, leavening — not the empire's religion, but the empire's conscience.' What would your church need to change to become that?"
     ],
     actionStep: "Ask yourself this week: if every external support for my faith disappeared tomorrow — cultural prestige, tax exemptions, political influence, social expectation — would my faith survive? If so, what sustains it? If not, what was I really relying on?",
     openingPrayer: "God of the mustard seed and the leaven in the dough, we live in a world where Christianity is no longer the default. We do not know how to be small. Teach us. And show us that small is not the same as insignificant.",
