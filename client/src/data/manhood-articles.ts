@@ -489,7 +489,7 @@ export const MANHOOD_ARTICLES = [
 
 <p>There is the answer of grievance, which tells the struggling man that his suffering is entirely someone else's fault, that he is the victim of a war against men, and that the solution is resentment. This one is seductive because it contains a grain of truth, the culture has at times been contemptuous of men, but it converts a real observation into a total identity, and a man built on grievance is a man who has outsourced his agency to his enemies and will never build anything.</p>
 
-<p>And there is the answer of retreat, the quietest and perhaps the most common, in which the man simply withdraws. He gives up on ambition, on relationship, on responsibility, and disappears into the endless anesthetics available to him, the screens and the games and the substances, a slow soft surrender that looks like nothing much from the outside and is in fact a man dying by inches. This is the one that ends, too often, in the statistics I did not want to lead with.</p>
+<p>And there is the answer of retreat, the quietest and perhaps the most common, in which the man simply withdraws. He gives up on ambition, on relationship, on responsibility, and disappears into the endless anesthetics available to him, the screens and the games and the substances, a slow soft surrender that looks like nothing much from the outside and is in fact a man dying by inches. This is the one that ends, too often, in the statistics I did not want to lead with. If that is where you are, or where a man you love is, treat it as the emergency it is. In the United States, call or text 988 tonight, and tell one person who loves you. That is not weakness. It is the first honest act of strength.</p>
 
 <h2>What the false answers have in common</h2>
 
