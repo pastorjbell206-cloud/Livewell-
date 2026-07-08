@@ -39,6 +39,8 @@
   --bone-warm:#EDE8DC;
   --bone-muted:#D9D3C4;
   --card:#FFFFFF;
+  --nav-bg:rgba(245,240,230,0.97); /* sticky nav scrim — flips with theme */
+  --charcoal-fg:#F5F0E6; /* text on FIXED-dark surfaces (charcoal heroes, footer) — stays light in both themes; --bone flips dark and becomes unreadable there */
 
   /*  Text  */
   --ink:#14110C;
@@ -93,6 +95,7 @@ html.dark{
   --charcoal:#0F0F0F;--charcoal-deep:#070707;--charcoal-soft:#1A1A1A;
   --bone:#14110C;--bone-warm:#1A1608;--bone-muted:#2A2418;
   --card:#1A1A1A;
+  --nav-bg:rgba(20,17,12,0.97);
   /* Text */
   --ink:#F4F1EA;--ink-muted:#9A968E;
   /* Mustard — slightly desaturated for dark mode to keep WCAG AA */
@@ -120,6 +123,7 @@ html.dark{
 .admin-scope, html.dark .admin-scope{
   --charcoal:#1A1A1A;--charcoal-deep:#0F0F0F;--charcoal-soft:#2A2A2A;
   --bone:#F5F0E6;--bone-warm:#EDE8DC;--bone-muted:#D9D3C4;--card:#FFFFFF;
+  --nav-bg:rgba(245,240,230,0.97);
   --ink:#14110C;--ink-muted:#5A5448;
   --mustard:#D4A017;--mustard-deep:#B08A12;--mustard-text:#7A6010;
   --paper:#F5F0E6;--paper2:#EDE8DC;--cream:#EDE8DC;

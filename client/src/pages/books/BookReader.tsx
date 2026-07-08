@@ -66,7 +66,7 @@ export default function BookReader() {
         structuredData={book ? { "@context": "https://schema.org", "@type": "Book", name: book.title, author: { "@type": "Person", name: "James Bell" }, url: `${SITE_URL}/read/${slug}`, bookFormat: "https://schema.org/EBook", inLanguage: "en" } : undefined}
       />
 
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
         <div style={{ ...prose, display: "flex", gap: "var(--s-5)", alignItems: "flex-start", flexWrap: "wrap" }}>
           <div style={{ flex: "1 1 340px", minWidth: 0 }}>
             <div style={{ ...eyebrow, color: "var(--mustard)" }}>
