@@ -14,6 +14,7 @@ import { TriageBadge } from "@/components/TriageBadge";
 import type { Doctrine } from "@/lib/theology";
 import { Prose } from "@/lib/prose";
 import PageEndNav from "@/components/PageEndNav";
+import { ScriptureRef } from "@/components/ScriptureRef";
 
 function StepHeading({ n, kicker, title }: { n: number; kicker: string; title: string }) {
   return (
@@ -130,7 +131,14 @@ export default function TheologyDoctrine() {
                   </div>
                   <div style={{ flex: "1 1 220px" }}>
                     <div className="eyebrow" style={{ marginBottom: "6px" }}>Texts it leans on</div>
-                    <p style={{ fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.7, color: "var(--ink-muted)" }}>{pos.keyTexts.join(" · ")}</p>
+                    <p style={{ fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.7, color: "var(--ink-muted)" }}>
+                      {pos.keyTexts.map((t, i) => (
+                        <span key={t}>
+                          {i > 0 && " · "}
+                          <ScriptureRef reference={t} />
+                        </span>
+                      ))}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -150,7 +158,7 @@ export default function TheologyDoctrine() {
             {doc.biblicalEvidence.map((e, i) => (
               <div key={i} style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)" }}>
                 <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "8px", alignItems: "baseline", marginBottom: "10px" }}>
-                  <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)" }}>{e.passage}</span>
+                  <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)" }}><ScriptureRef reference={e.passage} /></span>
                   <span style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--mustard-text)" }}>Leans {e.leansToward}</span>
                 </div>
                 <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", marginBottom: "12px" }}>{e.summary}</p>
