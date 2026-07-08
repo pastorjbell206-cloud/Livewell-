@@ -194,7 +194,7 @@ export default function TheologyBiblical() {
                       <div style={{ paddingTop: "16px" }}><Prose text={t.trace} /></div>
                       <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", background: "var(--bone-warm)", borderRadius: "var(--radius-sm)", padding: "12px 14px", marginTop: "8px" }}><strong>In Christ.</strong> {t.fulfillment}</p>
                       <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginTop: "12px" }}>
-                        {t.keyTexts.map((k) => <span key={k} style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)", border: "1px solid var(--border)", borderRadius: "999px", padding: "4px 10px" }}>{k}</span>)}
+                        {t.keyTexts.map((k) => <Link key={k} href={`/theology/passage?ref=${encodeURIComponent(k)}`} title={`Read ${k} in context`} style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)", border: "1px solid var(--border)", borderRadius: "999px", padding: "4px 10px", textDecoration: "none" }}>{k}</Link>)}
                       </div>
                     </div>
                   )}
