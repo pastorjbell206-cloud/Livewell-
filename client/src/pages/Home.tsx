@@ -158,9 +158,9 @@ export default function Home() {
             <h1
               style={{
                 fontFamily: "var(--F)",
-                fontSize: "clamp(40px, 6vw, 76px)",
+                fontSize: "clamp(42px, 7vw, 96px)",
                 fontWeight: 400,
-                lineHeight: 1.05,
+                lineHeight: 1.03,
                 letterSpacing: "-0.025em",
                 color: "var(--bone)",
                 marginBottom: "24px",

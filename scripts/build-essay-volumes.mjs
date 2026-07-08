@@ -181,6 +181,46 @@ const LEGACY_TO_FALLBACKPILLAR = { // normalize odd pillar labels
 
 function score(text, kws) { let s = 0; for (const k of kws) { if (text.includes(k)) s++; } return s; }
 
+// ── HTML → markdown ─────────────────────────────────────────────────────────
+// The article-library bodies are simple HTML (p, h2, blockquote, em, strong).
+// The BookReader renders chapters through the markdown component, which
+// escapes raw HTML — so convert at build time. Anything already markdown
+// (no tags) passes through untouched.
+function htmlToMarkdown(html) {
+  let s = String(html || "");
+  if (!/<\/?[a-z][a-z0-9]*\b/i.test(s)) return s; // already markdown/plain
+  const inline = (t) =>
+    t
+      .replace(/<(?:em|i)>([\s\S]*?)<\/(?:em|i)>/gi, "*$1*")
+      .replace(/<(?:strong|b)>([\s\S]*?)<\/(?:strong|b)>/gi, "**$1**")
+      .replace(/<br\s*\/?>/gi, "\n")
+      .replace(/<a\b[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi, "[$2]($1)")
+      .replace(/<\/?[a-z][^>]*>/gi, "") // any straggler tag
+      .replace(/\s+\n/g, "\n")
+      .trim();
+  const blocks = [];
+  const re = /<(p|h2|h3|blockquote|ul|ol)\b[^>]*>([\s\S]*?)<\/\1>/gi;
+  let m, last = 0;
+  while ((m = re.exec(s)) !== null) {
+    const loose = s.slice(last, m.index).trim();
+    if (loose) blocks.push(inline(loose)); // text between blocks
+    last = re.lastIndex;
+    const tag = m[1].toLowerCase(), body = m[2];
+    if (tag === "p") blocks.push(inline(body));
+    else if (tag === "h2") blocks.push("## " + inline(body));
+    else if (tag === "h3") blocks.push("### " + inline(body));
+    else if (tag === "blockquote")
+      blocks.push(inline(body.replace(/<\/?p[^>]*>/gi, "\n")).split("\n").filter(Boolean).map((l) => "> " + l.trim()).join("\n"));
+    else if (tag === "ul" || tag === "ol") {
+      const items = [...body.matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/gi)].map((x) => inline(x[1]));
+      blocks.push(items.map((it, i) => (tag === "ul" ? "- " : `${i + 1}. `) + it).join("\n"));
+    }
+  }
+  const tail = s.slice(last).trim();
+  if (tail) blocks.push(inline(tail));
+  return blocks.filter(Boolean).join("\n\n");
+}
+
 function classify(essay) {
   let pillar = (essay.pillar || "").trim();
   if (LEGACY_TO_FALLBACKPILLAR[pillar]) pillar = LEGACY_TO_FALLBACKPILLAR[pillar];
@@ -213,7 +253,10 @@ for (const s of sources) for (const a of load(s)) { if (a && a.slug && a.body &&
 const idx = JSON.parse(fs.readFileSync(INDEX, "utf8"));
 const existingBooks = idx.books || idx;
 const bookChapterSlugs = new Set();
-for (const b of existingBooks) { try { const bf = JSON.parse(fs.readFileSync(join(BOOKS_DIR, b.slug + ".json"), "utf8")); for (const ch of (bf.chapters || [])) if (ch.slug) bookChapterSlugs.add(ch.slug); } catch { /**/ } }
+for (const b of existingBooks) {
+  if (b.slug.startsWith("essays-")) continue; // our own volumes — regenerating them is the point
+  try { const bf = JSON.parse(fs.readFileSync(join(BOOKS_DIR, b.slug + ".json"), "utf8")); for (const ch of (bf.chapters || [])) if (ch.slug) bookChapterSlugs.add(ch.slug); } catch { /**/ }
+}
 
 const hasCite = (b) => /\[cite/i.test(b || "");
 let skippedCite = 0, alreadyInBook = 0;
@@ -258,7 +301,7 @@ for (const v of VOLUMES) {
   list.sort((a, b) => (a.title || "").localeCompare(b.title || ""));
   const chapters = list.map((a, i) => ({
     n: i + 1, slug: a.slug, title: a.title || a.slug,
-    summary: a.excerpt || null, body: a.body,
+    summary: a.excerpt || null, body: htmlToMarkdown(a.body),
   }));
   const book = { title: v.title, subtitle: v.subtitle, blurb: v.blurb, pillar: v.pillar, chapters };
   fs.writeFileSync(join(BOOKS_DIR, v.slug + ".json"), JSON.stringify(book, null, 2) + "\n");
