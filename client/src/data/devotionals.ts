@@ -119,7 +119,7 @@ export const DEVOTIONALS = [
       "We fill silence because it frightens us. But there is a silence God commands, and it is not empty. It is where you finally stop managing him.",
     pillar: "Integrated Life",
     readTime: "4 min",
-    body: `<blockquote>"Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth." (Psalm 46:10)</blockquote>
+    body: `<blockquote>"Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!" (Psalm 46:10)</blockquote>
 <p>We are afraid of silence, and we have built a world to make sure we never have to sit in it. There is a screen for the elevator and a screen for the gas pump and a screen in your pocket for the thirty seconds between anything and anything else. The moment a gap opens, we fill it. We have confused stillness with emptiness, and we treat empty like a threat.</p>
 <p>So when the psalm says be still, we file it under nice sentiment and keep moving. We put it on a canvas over the mantel and never once obey it. But the verse is not a decoration. It is a command, and it was spoken into chaos. The whole psalm is about the earth giving way, the mountains falling into the sea, the nations raging. And into that roar God says, stop. Be still. Know that I am God.</p>
 <p>I resisted silence for a long time because of what it exposes. When I fill every moment with noise, I never have to face the low hum underneath, the anxiety I keep drowned out, the questions I keep just beneath the surface. Silence lifts the noise and there they all are, waiting. It is not restful at first. It is confronting. And that is precisely why God commands it.</p>
