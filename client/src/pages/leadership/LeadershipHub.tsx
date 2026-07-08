@@ -9,6 +9,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { LEADERSHIP_GROUPS, LEADERSHIP_ARTICLES, LEADERSHIP_TOOLS } from "@/lib/leadership";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
+import { PillarBookshelf } from "@/components/PillarBookshelf";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const card = { background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)", textDecoration: "none", color: "inherit", display: "block" } as const;
@@ -101,6 +102,8 @@ export default function LeadershipHub() {
           </section>
         );
       })}
+
+      <PillarBookshelf pillars={["Leadership Formation", "Pastoral Ministry"]} />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--bone)" }}>
         <div style={wrap}>

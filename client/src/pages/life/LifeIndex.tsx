@@ -7,6 +7,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { PillarBookshelf } from "@/components/PillarBookshelf";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -102,6 +103,8 @@ export default function LifeIndex() {
           </div>
         </div>
       </section>
+      <PillarBookshelf pillars={["Integrated Life"]} />
+
     </Layout>
   );
 }

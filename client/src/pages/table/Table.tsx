@@ -15,6 +15,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import LoadFailed from "@/components/LoadFailed";
 import { fetchJson } from "@/lib/fetch-json";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
+import { PillarBookshelf } from "@/components/PillarBookshelf";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -252,6 +253,8 @@ export default function Table() {
           </div>
         </div>
       </section>
+      <PillarBookshelf pillars={["The Table"]} title="Read at the table, free" />
+
     </Layout>
   );
 }

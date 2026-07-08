@@ -7,6 +7,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
+import { PillarBookshelf } from "@/components/PillarBookshelf";
 import type { SectionConfig, TopicIndexEntry } from "@/lib/prophetic";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
@@ -112,6 +113,8 @@ export default function PropheticHub({ config }: { config: SectionConfig }) {
           })}
         </div>
       </section>
+      <PillarBookshelf pillars={config.key === "justice" ? ["Prophetic Justice"] : ["Prophetic Disruption", "After Christendom"]} />
+
     </Layout>
   );
 }

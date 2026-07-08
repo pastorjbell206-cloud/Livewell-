@@ -17,6 +17,7 @@
     "sitemap": "node scripts/generate-sitemap.mjs",
     "howtos": "node scripts/build-howtos-index.mjs",
     "wisdom": "node scripts/build-wisdom-index.mjs",
+    "books:index": "node scripts/build-books-index.mjs && node scripts/build-chapters-index.mjs",
     "pdfs": "node scripts/build-pdfs.mjs",
     "manuals": "node scripts/build-leadership-manuals.mjs",
     "og": "node scripts/build-og-images.mjs",
