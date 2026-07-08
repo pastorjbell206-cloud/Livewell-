@@ -435,6 +435,53 @@ async function publishAllResources(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+// Refresh already-published articles from the shipped JSON sets. The seed
+// endpoints use INSERT IGNORE (idempotent, never duplicate), which also means
+// they never UPDATE a row that already exists — so a correction shipped in the
+// JSON (a fixed citation, a voice edit) would never reach rows seeded earlier.
+// This endpoint closes that gap: for every shipped article it UPDATEs the
+// matching slug's title/body/excerpt/pillar/readTime, and inserts any slug not
+// yet present. Content-only refresh: published/featured flags and timestamps
+// of existing rows are left alone (except updatedAt).
+async function refreshArticles(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  const SETS: Array<{ name: string; set: any[] }> = [
+    { name: "post-christian", set: postChristianArticles as any[] },
+    { name: "integrated-life", set: integratedLifeArticles as any[] },
+    { name: "womanhood-doubt-devotionals", set: womanhoodDoubtDevotionalArticles as any[] },
+  ];
+  try {
+    const out = await withConn(async (c) => {
+      const breakdown: Record<string, { updated: number; inserted: number; total: number }> = {};
+      let updated = 0, inserted = 0;
+      for (const { name, set } of SETS) {
+        let u = 0, i = 0;
+        for (const a of set) {
+          try {
+            const [r]: any = await c.execute(
+              `UPDATE posts SET title = ?, body = ?, excerpt = ?, pillar = ?, readTime = ?, updatedAt = NOW() WHERE slug = ?`,
+              [a.title, a.body, a.excerpt, a.pillar, a.readTime, a.slug]
+            );
+            if (r.affectedRows) { u++; continue; }
+            const [ins]: any = await c.execute(
+              `INSERT IGNORE INTO posts (title, slug, body, excerpt, pillar, readTime, published, createdAt, updatedAt)
+               VALUES (?, ?, ?, ?, ?, ?, true, NOW(), NOW())`,
+              [a.title, a.slug, a.body, a.excerpt, a.pillar, a.readTime]
+            );
+            if (ins.affectedRows) i++;
+          } catch {}
+        }
+        breakdown[name] = { updated: u, inserted: i, total: set.length };
+        updated += u; inserted += i;
+      }
+      return { updated, inserted, breakdown };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
 // One-shot "publish everything": inserts every code-shipped article set (the
 // post-Christian series, the Integrated Life expansion, and the womanhood/doubt/
 // devotional set) in a single admin action. Idempotent — INSERT IGNORE on the
@@ -3315,6 +3362,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/seed-integrated-life") return seedArticleSet(req, res, integratedLifeArticles as any[]);
     if (url === "/api/admin/seed-womanhood-doubt-devotionals") return seedArticleSet(req, res, womanhoodDoubtDevotionalArticles as any[]);
     if (url === "/api/admin/seed-all") return seedAllArticles(req, res);
+    if (url === "/api/admin/refresh-articles") return refreshArticles(req, res);
     if (url === "/api/admin/publish-all-resources") return publishAllResources(req, res);
     if (url === "/api/admin/seed-ebooks") return seedEbooks(req, res);
     if (url === "/api/admin/create-stripe-prices") return createStripePrices(req, res);

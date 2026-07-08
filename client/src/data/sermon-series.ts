@@ -757,7 +757,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           "The most dangerous thing you can do for your children's faith is protect them from doubt — because doubt that is suppressed does not disappear; it detonates.",
         outline: {
           point1:
-            "Why doubt is not the enemy: faith that has never been tested is not faith — it is assumption. The psalms are full of honest wrestling. The father in Mark 9 said 'I believe; help my unbelief' — and Jesus did not rebuke him. He healed his son.",
+            "Why doubt is not the enemy: faith that has never been tested is not faith — it is assumption. The psalms are full of honest wrestling. The father in Mark 9 said 'I believe; help my unbelief!' — and Jesus did not rebuke him. He healed his son.",
           point2:
             "The deconstruction wave and what it means for parents: many young adults who 'lose their faith' in college are actually losing an unexamined faith that was never built to carry adult weight. The best prevention is not more certainty — it is earlier, safer, more honest engagement with hard questions.",
           point3:

@@ -7,7 +7,7 @@ import { useFavorites } from "@/hooks/useFavorites";
 export const TOOLS = [
   {
     title: "Deep Bible Study Companion",
-    description: "Seminary-level depth in kitchen-table language. 12 books of the Bible with 6 layers of analysis: text, historical context, literary structure, scholarly views, modern application, and deeper resources.",
+    description: "Seminary-level depth in kitchen-table language. 20 books of the Bible with 6 layers of analysis: text, historical context, literary structure, scholarly views, modern application, and deeper resources.",
     href: "/tools/deep-bible",
     icon: Search,
     color: "var(--ink)",

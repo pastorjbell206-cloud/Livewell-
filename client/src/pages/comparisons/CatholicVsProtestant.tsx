@@ -149,7 +149,7 @@ export default function CatholicVsProtestant() {
           {/* Desktop table */}
           <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
             {/* Header row */}
-            <div style={{ display: "grid", gridTemplateColumns: "180px 1fr 1fr", gap: "0", borderBottom: "2px solid var(--mustard)" }}>
+            <div className="compare-row-desktop" style={{ display: "grid", gridTemplateColumns: "180px 1fr 1fr", gap: "0", borderBottom: "2px solid var(--mustard)" }}>
               <div style={{ padding: "16px 16px 16px 0", fontFamily: "var(--U)", fontSize: "10px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--ink-muted)", fontWeight: 600 }}></div>
               <div style={{ padding: "16px", fontFamily: "var(--U)", fontSize: "10px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--ink-muted)", fontWeight: 600 }}>Catholic</div>
               <div style={{ padding: "16px", fontFamily: "var(--U)", fontSize: "10px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--ink-muted)", fontWeight: 600 }}>Protestant</div>
