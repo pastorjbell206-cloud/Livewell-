@@ -105,6 +105,9 @@ export default function Home() {
       />
       <MinimalNav />
 
+      {/* Home doesn't use Layout, so it declares its own main landmark. */}
+      <main id="main">
+
       {/* HERO — Substack-shaped lede */}
       <section
         style={{
@@ -700,6 +703,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>
