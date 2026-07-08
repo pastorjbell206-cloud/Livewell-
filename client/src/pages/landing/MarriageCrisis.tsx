@@ -70,6 +70,36 @@ export default function MarriageCrisis() {
         </div>
       </section>
 
+      {/* Real help (the care standard requires a visible path — a marriage in
+          crisis can include abuse, which is a safety question, not a conflict
+          to resolve). */}
+      <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
+        <div style={{ maxWidth: "720px", margin: "0 auto" }}>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>IF YOU NEED MORE THAN AN ESSAY</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "68ch" }}>Writing can keep you company. It cannot sit in the room with you and your spouse. These are external organizations we are not affiliated with, whose work we trust. And if what is happening at home is not conflict but abuse, that is not a marriage problem to work through. It is a safety question, and it is a today conversation.</p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+            <a href="tel:18007997233" style={{ textDecoration: "none" }}>
+              <div style={{ background: "var(--card)", padding: "20px 24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
+                <p style={{ fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, color: "var(--ink)", margin: "0 0 4px" }}>National Domestic Violence Hotline</p>
+                <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6, margin: 0 }}>Call 1-800-799-7233, or text START to 88788, any hour. Confidential, and for you even if you are only wondering whether it counts.</p>
+              </div>
+            </a>
+            <a href="tel:988" style={{ textDecoration: "none" }}>
+              <div style={{ background: "var(--card)", padding: "20px 24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
+                <p style={{ fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, color: "var(--ink)", margin: "0 0 4px" }}>988 Suicide & Crisis Lifeline</p>
+                <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6, margin: 0 }}>If the weight has turned into not wanting to be here, call or text 988. A real person answers.</p>
+              </div>
+            </a>
+            <a href="https://www.psychologytoday.com/us/therapists/marriage-counseling" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+              <div style={{ background: "var(--card)", padding: "20px 24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
+                <p style={{ fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, color: "var(--ink)", margin: "0 0 4px" }}>Find a marriage counselor</p>
+                <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6, margin: 0 }}>Licensed counselors near you, searchable by specialty and faith.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Email Signup */}
       <section style={{ background: "var(--charcoal)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
