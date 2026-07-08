@@ -355,7 +355,7 @@ export const DOUBT_ARTICLES_2 = [
 
 <p>I know this territory because I was raised without a father. When I first encountered the Christian claim that God is a father, my instinct was not a logical objection. It was a flinch. The word father meant absence to me, meant the man who was not there, and no amount of Trinitarian theology was going to fix that by argument. What fixed it, slowly, was not a better argument about fatherhood. It was the experience, over years, of being fathered by God in the ways my own father never fathered me. The wound was healed in the register where it was made, which was relationship, not logic. An argument could not have done it. Only a Father could, and he did.</p>
 
-<blockquote>"I believe; help my unbelief." (Mark 9:24)</blockquote>
+<blockquote>"I believe; help my unbelief!" (Mark 9:24)</blockquote>
 
 <p>That is the truest sentence a doubter ever prayed, and notice what it is not. It is not a request for more evidence. It is a cry for help addressed to the very person the man was not sure he believed in. He does not say prove yourself to me. He says help me, and he says it to Jesus. The apologetic move would have been to ask for a sign. The faith move, the thing that actually reaches through the doubt, is to address the person you are doubting and ask him to do something no argument can do, which is to change you. Jesus healed the man's son. He did not first win the debate about his own reliability. He acted, and the acting was the answer the argument could never be.</p>
 
