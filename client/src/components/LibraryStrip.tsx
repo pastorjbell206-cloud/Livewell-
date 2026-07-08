@@ -36,7 +36,7 @@ export function LibraryStrip() {
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(160px, 45%), 1fr))", gap: "var(--s-3)" }}>
           {featured.map((b) => (
-            <Link key={b.slug} href={`/read/${b.slug}`} style={{ display: "flex", flexDirection: "column", background: "#FFFFFF", border: "1px solid var(--border)", textDecoration: "none", overflow: "hidden" }}>
+            <Link key={b.slug} href={`/read/${b.slug}`} style={{ display: "flex", flexDirection: "column", background: "var(--card)", border: "1px solid var(--border)", textDecoration: "none", overflow: "hidden" }}>
               {b.cover ? (
                 <img
                   src={b.cover}

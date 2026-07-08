@@ -105,11 +105,14 @@ export default function Home() {
       />
       <MinimalNav />
 
+      {/* Home doesn't use Layout, so it declares its own main landmark. */}
+      <main id="main">
+
       {/* HERO — Substack-shaped lede */}
       <section
         style={{
           background: "var(--charcoal)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
           padding: "var(--s-7) var(--s-4) var(--s-6)",
           position: "relative",
           overflow: "hidden",
@@ -162,7 +165,7 @@ export default function Home() {
                 fontWeight: 400,
                 lineHeight: 1.03,
                 letterSpacing: "-0.025em",
-                color: "var(--bone)",
+                color: "var(--charcoal-fg)",
                 marginBottom: "24px",
               }}
             >
@@ -176,7 +179,7 @@ export default function Home() {
                 fontStyle: "italic",
                 fontWeight: 400,
                 lineHeight: 1.3,
-                color: "var(--bone)",
+                color: "var(--charcoal-fg)",
                 maxWidth: "32ch",
                 marginBottom: "24px",
               }}
@@ -209,8 +212,8 @@ export default function Home() {
                 <button
                   type="button"
                   style={{
-                    background: "var(--bone)",
-                    color: "var(--ink)",
+                    background: "var(--charcoal-fg)",
+                    color: "var(--charcoal)",
                     border: "none",
                     borderBottom: "2px solid var(--mustard)",
                     padding: "14px 28px",
@@ -230,7 +233,7 @@ export default function Home() {
                   type="button"
                   style={{
                     background: "transparent",
-                    color: "var(--bone)",
+                    color: "var(--charcoal-fg)",
                     border: "1px solid rgba(245,240,230,0.25)",
                     padding: "14px 28px",
                     fontFamily: "var(--U)",
@@ -249,7 +252,7 @@ export default function Home() {
                   type="button"
                   style={{
                     background: "transparent",
-                    color: "var(--bone)",
+                    color: "var(--charcoal-fg)",
                     border: "1px solid rgba(245,240,230,0.25)",
                     padding: "14px 28px",
                     fontFamily: "var(--U)",
@@ -309,7 +312,7 @@ export default function Home() {
                   fontWeight: 500,
                   lineHeight: 1.2,
                   letterSpacing: "-0.01em",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   marginBottom: "12px",
                 }}
               >
@@ -700,6 +703,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>
