@@ -129,7 +129,7 @@ export function NewsletterSignup({
         {handoffUrl ? (
           confirmLink(true)
         ) : (
-          <div style={{ display: "flex", gap: "8px" }}>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
             <input
               type="email"
               required
@@ -138,7 +138,8 @@ export function NewsletterSignup({
               onChange={e => setEmail(e.target.value)}
               aria-label="Email address"
               style={{
-                flex: 1,
+                flex: "1 1 140px",
+                minWidth: 0,
                 padding: "10px 12px",
                 background: "var(--charcoal-soft)",
                 border: "1px solid var(--charcoal-soft)",
@@ -177,7 +178,7 @@ export function NewsletterSignup({
     return (
       <form
         onSubmit={handleSubmit}
-        style={{ display: "flex", gap: "8px", maxWidth: "420px" }}
+        style={{ display: "flex", flexWrap: "wrap", gap: "8px", maxWidth: "420px" }}
       >
         <input
           type="email"
@@ -187,7 +188,8 @@ export function NewsletterSignup({
           onChange={e => setEmail(e.target.value)}
           aria-label="Email address"
           style={{
-            flex: 1,
+            flex: "1 1 180px",
+            minWidth: 0,
             padding: "12px 14px",
             background: "var(--card)",
             border: "1px solid var(--border)",
@@ -256,7 +258,7 @@ export function NewsletterSignup({
       {handoffUrl ? (
         confirmLink(false)
       ) : (
-      <form onSubmit={handleSubmit} style={{ display: "flex", gap: "8px" }}>
+      <form onSubmit={handleSubmit} style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
         <input
           type="email"
           required
@@ -265,7 +267,8 @@ export function NewsletterSignup({
           onChange={e => setEmail(e.target.value)}
           aria-label="Email address"
           style={{
-            flex: 1,
+            flex: "1 1 180px",
+            minWidth: 0,
             padding: "12px 14px",
             background: "var(--bone)",
             border: "1px solid var(--border)",

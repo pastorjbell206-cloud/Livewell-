@@ -115,7 +115,7 @@ export const READING_PATHS: ReadingPath[] = [
     title: "Know Your Tradition",
     slug: "know-your-tradition",
     introduction:
-      "Every church has a theology, a history, and a set of assumptions — whether it names them or not. These seven essays map the landscape of Christian denominations, worship styles, and confessional traditions so you can understand where your church comes from, what it carries, and what it may be missing.",
+      "Every church has a theology, a history, and a set of assumptions — whether it names them or not. These seven essays map the terrain of Christian denominations, worship styles, and confessional traditions so you can understand where your church comes from, what it carries, and what it may be missing.",
     estimatedTime: "84 minutes across the denominational map",
     icon: "map",
     audience: "Someone exploring denominations and traditions",
@@ -176,7 +176,7 @@ export const READING_PATHS: ReadingPath[] = [
     title: "When Faith Falls Apart",
     slug: "when-faith-falls-apart",
     introduction:
-      "You are not losing your faith. You may be losing a version of it that could no longer hold the weight of your actual life. These seven essays trace the landscape of deconstruction, disaffiliation, and the long walk between the faith you inherited and the faith — if there is one — that can survive what you now know.",
+      "You are not losing your faith. You may be losing a version of it that could no longer hold the weight of your actual life. These seven essays trace the terrain of deconstruction, disaffiliation, and the long walk between the faith you inherited and the faith — if there is one — that can survive what you now know.",
     estimatedTime: "83 minutes for the person in the middle of it",
     icon: "compass",
     audience: "Someone deconstructing or questioning inherited beliefs",
