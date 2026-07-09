@@ -11,6 +11,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { TriageBadge } from "@/components/TriageBadge";
 import { DOCTRINE_INDEX, type DoctrineIndexEntry } from "@/lib/theology";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
+import { PillarBookshelf } from "@/components/PillarBookshelf";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const card = {
@@ -198,6 +199,8 @@ export default function Theology() {
           })}
         </div>
       </section>
+      <PillarBookshelf pillars={["Theological Depth"]} />
+
     </Layout>
   );
 }

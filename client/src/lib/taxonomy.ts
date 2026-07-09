@@ -287,6 +287,11 @@ const LEGACY_TO_V2: Record<string, number> = {
   "Theological Depth": 3,
   "Leadership Formation": 5,
   "Integrated Life": 6,
+  // Pillar strings carried by the /read book manifests (client/public/books/*)
+  // that aren't in the legacy five — mapped so nothing silently defaults.
+  "After Christendom": 4,
+  "Pastoral Ministry": 5,
+  "The Table": 6,
 };
 
 interface PostLike { slug?: string | null; pillar?: string | null }

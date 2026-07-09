@@ -12,6 +12,8 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageEndNav from "@/components/PageEndNav";
 import { SITE_URL } from "@/lib/site";
+import { SegmentedSignup } from "@/components/SegmentedSignup";
+import { BookEndDoor } from "@/components/BookEndDoor";
 
 const prose = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
 const eyebrow: React.CSSProperties = {
@@ -152,6 +154,21 @@ export default function BookReader() {
                   )}
                 </article>
               ))}
+            </div>
+          </section>
+
+          {/* END-OF-BOOK DOOR — the reader finishes formed, not stranded:
+              the next book in this pillar, the pillar's home, then the letter. */}
+          {slug && <BookEndDoor currentSlug={slug} pillar={book.pillar} />}
+
+          <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)" }}>
+            <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+              <SegmentedSignup
+                variant="panel"
+                source="book-reader"
+                title="One essay a week, in this voice."
+                description="If the book carried weight, the letter carries it weekly. Pick your track."
+              />
             </div>
           </section>
 

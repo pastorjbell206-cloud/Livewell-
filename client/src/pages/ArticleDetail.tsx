@@ -28,6 +28,7 @@ import { TrackChip } from "@/components/TrackChip";
 import { KeepReadingBook } from "@/components/KeepReadingBook";
 import ArticleNextSteps from "@/components/ArticleNextSteps";
 import { GeneratedHero } from "@/components/GeneratedHero";
+import { ReadTheBook } from "@/components/ReadTheBook";
 import { trpc } from "@/lib/trpc";
 import { pillarForPost } from "@/lib/taxonomy";
 import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
@@ -785,6 +786,10 @@ export default function ArticleDetail() {
         {/* NEXT STEPS — the matched tool and reading path for this essay
             (built long ago, never imported; revived by QW-16) */}
         <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
+
+        {/* READ THE BOOK — if this essay is a chapter of a free library book,
+            the door into /read (generated map; see build-chapters-index.mjs) */}
+        <ReadTheBook slug={post.slug ?? ""} />
 
         {/* KEEP READING — the book that carries this essay's argument to full length */}
         <KeepReadingBook post={post} />
