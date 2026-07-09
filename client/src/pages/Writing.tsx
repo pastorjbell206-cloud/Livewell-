@@ -27,6 +27,7 @@ import {
 } from "@/lib/subPathways";
 import { SUBPATHWAY_BY_SLUG } from "@/lib/subpathwayMap.generated";
 import { HIDDEN_SLUGS } from "@/lib/hiddenSlugs";
+import { isFullEssay } from "@/lib/essayQuality";
 
 /** A post's sub-pathway: the DB value if set, else the static slug map. */
 function resolveSub(p: any): string | null {
@@ -93,6 +94,9 @@ export default function Writing() {
     return posts.filter(p => {
       // Hidden duplicate stubs never appear in the listing.
       if (HIDDEN_SLUGS.has(p.slug)) return false;
+      // Catalog stubs (a title over a 40-word abstract, no essay behind it)
+      // stay out of the index — see docs/audit-corpus/. Real short posts pass.
+      if (!isFullEssay(p)) return false;
       // Track
       if (activeTrack) {
         const track = pillarToTrack(p.pillar);

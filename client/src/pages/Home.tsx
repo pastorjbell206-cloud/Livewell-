@@ -19,6 +19,7 @@ import { SegmentedSignup } from "@/components/SegmentedSignup";
 import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
+import { isFullEssay } from "@/lib/essayQuality";
 import {
   META_DESCRIPTION,
   PRIMARY_HEADLINE,
@@ -90,9 +91,11 @@ export default function Home() {
   const all = articlesQuery.data ?? [];
 
   // Lead with the strongest essays; fall back to latest if a slug is absent.
+  // The fallback skips catalog stubs (see docs/audit-corpus/) so a short abstract
+  // never leads the front page.
   const bySlug = new Map(all.map(a => [a.slug, a] as const));
   const curated = FLAGSHIP_SLUGS.map(s => bySlug.get(s)).filter((a): a is (typeof all)[number] => !!a);
-  const flagship = curated.length ? curated : all.slice(0, 6);
+  const flagship = curated.length ? curated : all.filter(isFullEssay).slice(0, 6);
 
   return (
     <div>
