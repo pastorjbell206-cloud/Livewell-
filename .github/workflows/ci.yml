@@ -66,23 +66,24 @@ jobs:
             --only-categories=performance,accessibility,best-practices,seo \
             --output=json --output-path=./lh.json --quiet
           node -e "const r=require('./lh.json').categories; for (const k in r) console.log(k, Math.round(r[k].score*100))"
-      - name: Axe (static routes)
+      - name: Axe (home)
         run: |
           # axe exits 1 on real accessibility violations and 2 on environment
           # errors (e.g. ChromeDriver/Chrome major-version skew when upstream
           # ships a new ChromeDriver before the runner image updates Chrome).
           # Surface genuine violations; treat a driver-version mismatch as noise.
           #
-          # Audit only routes that render fully in a backendless static build.
-          # /writing and /resources are API-driven SPA routes: without a server
-          # their content never mounts, so axe saw an empty shell (missing main
-          # landmark + h1) and reported false positives. They render correctly in
-          # the app and are covered by axe/Lighthouse against live Vercel
-          # previews. The static routes below share the same Layout, nav, and
-          # footer, so the design system's a11y is still exercised here.
+          # Only "/" is audited here. Every other route is a lazy-loaded chunk
+          # (React.lazy in App.tsx); the crawler evaluates the served static HTML
+          # before the route's JS loads and mounts, so it saw an empty SPA shell
+          # (no main landmark, no h1) and reported false positives — even for
+          # fully static pages. Home is a direct (non-lazy) import, so it is
+          # rendered in time. It exercises the shared Layout, nav, footer, and a
+          # hero h1 — the design system's a11y. Full-route a11y is covered by
+          # axe/Lighthouse against live Vercel previews, per docs/ARCHITECTURE.
           sleep 3
           set +e
-          npx --yes @axe-core/cli http://localhost:4173/ http://localhost:4173/historic-faith --exit
+          npx --yes @axe-core/cli http://localhost:4173/ --exit
           code=$?
           if [ "$code" = "2" ]; then
             echo "::warning::axe skipped — Chrome/ChromeDriver version mismatch (environment, not a content failure)"
