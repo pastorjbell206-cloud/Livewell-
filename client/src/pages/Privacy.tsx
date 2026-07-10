@@ -19,6 +19,10 @@ export default function Privacy() {
           <p style={{ marginBottom: "16px" }}>We use essential cookies for site functionality (such as keeping you logged in to the admin panel). We do not use tracking cookies or third-party advertising cookies.</p>
           <h2 style={{ fontSize: "22px", fontFamily: "var(--F)", fontWeight: 600, margin: "32px 0 12px", color: "var(--ink)" }}>Third-Party Services</h2>
           <p style={{ marginBottom: "16px" }}>Our site is hosted on Vercel. Email services may be provided through Mailchimp or similar platforms. Payment processing for book purchases is handled by Stripe. Each of these services has its own privacy policy.</p>
+          <h2 style={{ fontSize: "22px", fontFamily: "var(--F)", fontWeight: 600, margin: "32px 0 12px", color: "var(--ink)" }}>Analytics</h2>
+          <p style={{ marginBottom: "16px" }}>We use privacy-light usage analytics (through Vercel) to understand which writing is read and finished, so we can make it better. These measure pages and events, not people: no advertising trackers, no cross-site profiles, no selling of your activity.</p>
+          <h2 style={{ fontSize: "22px", fontFamily: "var(--F)", fontWeight: 600, margin: "32px 0 12px", color: "var(--ink)" }}>Kept On Your Device</h2>
+          <p style={{ marginBottom: "16px" }}>Some tools remember your place for you — reading progress, saved answers on the assessments and reading plans — by storing it in your own browser. That data stays on your device and is not sent to us. Clearing your browser storage removes it.</p>
           <h2 style={{ fontSize: "22px", fontFamily: "var(--F)", fontWeight: 600, margin: "32px 0 12px", color: "var(--ink)" }}>Contact</h2>
           <p style={{ marginBottom: "16px" }}>If you have questions about this privacy policy, please contact us at{" "}<a href="mailto:pastorjbell206@gmail.com" style={{ color: "var(--gold)", textDecoration: "underline" }}>pastorjbell206@gmail.com</a>.</p>
         </div>
