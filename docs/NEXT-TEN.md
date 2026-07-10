@@ -14,11 +14,12 @@ Status legend: ☐ not started · ◐ in progress · ☑ shipped · ⛔ owner-bl
 ### 1. Fill or bury the 156 stubs ◐
 The length guard hides stubs from listings and the sitemap; it did not fix the
 underlying holes (live URLs, no essay). Sub-steps:
-- ◐ Triage all 156 → COMMISSION / MERGE / RETIRE with redirect targets.
-- ☐ Add 301 redirects (vercel.json) for the MERGE + RETIRE piles so direct and
-  external hits land somewhere real.
-- ☐ Commission the ~20–30 COMMISSION essays in the voice, through the rubric,
-  skeptic- and seeker-facing first.
+- ☑ Triage all 156 → 27 COMMISSION / 44 MERGE / 85 RETIRE
+  (`docs/audit-corpus/STUB-TRIAGE.md`).
+- ☑ 301 redirects (vercel.json) for the 129 MERGE + RETIRE stubs → the full
+  essay that covers the topic, or the pillar hub.
+- ☐ Commission the 27 COMMISSION essays in the voice, through the rubric,
+  skeptic- and seeker-facing first (the writing queue in STUB-TRIAGE.md).
 
 ### 2. Close the 139 citation flags ☐
 A verification sweep over the flagged essays: normalize Scripture to ESV with
