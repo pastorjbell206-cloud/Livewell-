@@ -18,8 +18,13 @@ underlying holes (live URLs, no essay). Sub-steps:
   (`docs/audit-corpus/STUB-TRIAGE.md`).
 - ☑ 301 redirects (vercel.json) for the 129 MERGE + RETIRE stubs → the full
   essay that covers the topic, or the pillar hub.
-- ☐ Commission the 27 COMMISSION essays in the voice, through the rubric,
+- ◐ Commission the 27 COMMISSION essays in the voice, through the rubric,
   skeptic- and seeker-facing first (the writing queue in STUB-TRIAGE.md).
+  **6 of 27 written** (tranche 1, the skeptic-facing justice cluster):
+  where-church-was-silent, justice-not-political-theological,
+  racial-reconciliation-without-repentance, symptoms-without-causes-charity,
+  church-incarceration-silence, white-churches-diversity — each 2,200–2,600
+  words, every citation verified, replacing its stub in place.
 
 ### 2. Close the 139 citation flags ☐
 A verification sweep over the flagged essays: normalize Scripture to ESV with
