@@ -3,7 +3,10 @@ import { Link } from "wouter";
 import { trpc } from "@/lib/trpc";
 import { PenLine, FolderOpen, BookOpen, Loader2, Upload, Wand2, Copy, FilePlus2, Download, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
-import contentData from "@/data/content-data.json";
+// content-data.json is ~2.3MB (the full seed corpus). It is imported LAZILY —
+// only when an admin actually clicks "Load all content" — so it never sits in
+// the AdminDashboard chunk. Keeps the admin bundle small; see handleSeedContent.
+const loadSeedCorpus = () => import("@/data/content-data.json").then((m) => m.default);
 
 export default function AdminDashboard() {
   const postsQuery = trpc.posts.listAll.useQuery();
@@ -97,8 +100,21 @@ export default function AdminDashboard() {
   ];
 
   const handleSeedContent = async () => {
-    if (!confirm(`This will import ${contentData.posts.length} articles and ${contentData.books.length} books. Duplicates will be skipped. Continue?`)) return;
     setSeeding(true);
+    setSeedStatus("Loading the content corpus…");
+    let contentData;
+    try {
+      contentData = await loadSeedCorpus();
+    } catch {
+      setSeedStatus("Failed to load the content file.");
+      setSeeding(false);
+      return;
+    }
+    if (!confirm(`This will import ${contentData.posts.length} articles and ${contentData.books.length} books. Duplicates will be skipped. Continue?`)) {
+      setSeeding(false);
+      setSeedStatus("");
+      return;
+    }
     setSeedStatus("Seeding content…");
     try {
       const res = await fetch("/api/admin/seed-content", {
@@ -491,7 +507,7 @@ export default function AdminDashboard() {
                 Import Content
               </h2>
               <p className="font-body text-sm" style={{ color: "#6B7280" }}>
-                Load {contentData.posts.length} articles, {contentData.books.length} books, and site settings. Duplicates are skipped.
+                Load the full seed corpus — every article, book, and site setting. Exact counts are shown for confirmation once the file loads. Duplicates are skipped.
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
