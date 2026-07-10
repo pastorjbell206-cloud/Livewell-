@@ -131,6 +131,37 @@ export function getOrganizationSchema() {
   };
 }
 
+/**
+ * The authoritative author entity for James Bell — the E-E-A-T signal search
+ * engines use to trust the writing. Facts only, all verifiable from the About
+ * page: Lead Pastor of FBC Fenton, founder of the Pastors Connection Network,
+ * author. `sameAs` ties the social profiles to one identity. Render on /about.
+ */
+export function getPersonSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: AUTHOR_NAME,
+    url: `${SITE_URL}/about`,
+    jobTitle: "Lead Pastor",
+    description:
+      "Lead Pastor of First Baptist Church of Fenton, Michigan, founder of the Pastors Connection Network, and author. He came to faith from atheism and writes theology for the weight of everyday life.",
+    worksFor: [
+      { "@type": "Organization", name: "First Baptist Church of Fenton" },
+      { "@type": "Organization", name: "Pastors Connection Network", url: "https://pastorsconnectionnetwork.com" },
+    ],
+    knowsAbout: [
+      "Theology", "Christian apologetics", "Pastoral ministry", "Church history",
+      "Biblical studies", "Marriage and family", "Christian ethics",
+    ],
+    sameAs: [
+      "https://www.facebook.com/james.bell.609252",
+      "https://pastorsconnectionnetwork.com",
+      "https://substack.com/@jamesbell333289",
+    ],
+  };
+}
+
 export function getWebSiteSchema() {
   return {
     "@context": "https://schema.org",
