@@ -137,7 +137,7 @@ export default function PropheticTopic({ config }: { config: SectionConfig }) {
             <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "66ch", marginBottom: "var(--s-4)", fontStyle: "italic" }}>
               The same sin, named on each side with equal candor. Movements and documented record, not private accusation.
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "16px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "16px" }}>
               {[t.captureDetail.right, t.captureDetail.left].map((s, i) => (
                 <div key={i} style={{ ...card, padding: "var(--s-4)", borderTop: "3px solid var(--mustard)" }}>
                   <div style={{ fontFamily: "var(--F)", fontSize: "21px", fontWeight: 500, color: "var(--ink)", marginBottom: "10px" }}>{s.label}</div>

@@ -67,7 +67,7 @@ export default function PropheticLament() {
               <div key={g.type} style={{ marginBottom: "var(--s-5)" }}>
                 <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "6px" }}>{g.label}</div>
                 <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "rgba(245,240,230,0.6)", fontStyle: "italic", marginBottom: "var(--s-3)" }}>{g.note}</p>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "14px" }}>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "14px" }}>
                   {byType[g.type].map((p, i) => (
                     <div key={i} style={{ background: "rgba(245,240,230,0.05)", border: "1px solid rgba(245,240,230,0.14)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)" }}>
                       <div style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, color: "var(--mustard)", marginBottom: "8px" }}>{p.title}</div>

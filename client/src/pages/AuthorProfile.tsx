@@ -319,7 +319,7 @@ export function AuthorProfile() {
               style={{
                 display: "grid",
                 gap: "1.5rem",
-                gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+                gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))",
               }}
             >
               {author.articles.map((article) => (

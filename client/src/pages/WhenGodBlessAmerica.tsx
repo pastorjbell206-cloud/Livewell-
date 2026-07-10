@@ -67,7 +67,7 @@ export default function WhenGodBlessAmerica() {
 
       {/* HERO */}
       <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
-        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "grid", gridTemplateColumns: "minmax(220px, 320px) 1fr", gap: "var(--s-5)", alignItems: "center" }}>
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "grid", gridTemplateColumns: "minmax(min(220px, 100%), 320px) 1fr", gap: "var(--s-5)", alignItems: "center" }}>
           <img
             src={COVER}
             alt="When God Bless America Replaces Thy Kingdom Come — cover"

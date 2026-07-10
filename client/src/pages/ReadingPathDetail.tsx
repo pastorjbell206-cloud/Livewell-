@@ -149,7 +149,7 @@ export function ReadingPathDetail() {
                 <p style={{ fontSize: "14px", marginTop: "8px", opacity: 0.7 }}>More essays are on the way. Check back soon.</p>
               </div>
             ) : (
-              <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "24px" }}>
+              <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(min(320px, 100%), 1fr))", gap: "24px" }}>
                 {filteredArticles.map((article: any, index: number) => (
                   <div key={article.id} style={{ position: "relative" }}>
                     {/* Article number badge */}

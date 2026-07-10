@@ -269,7 +269,7 @@ export default function ToolsHub() {
       {/* Tools Grid */}
       <section style={{ padding: "60px 32px", background: "var(--paper)" }}>
         <div className="wrap" style={{ maxWidth: "1000px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "32px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
             {TOOLS.map((tool) => {
               const Icon = tool.icon;
               return (
