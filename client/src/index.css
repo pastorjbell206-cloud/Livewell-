@@ -421,3 +421,14 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
   --s-9:12rem             Section padding (desktop)
   --w-prose:680px         Reading column max width
 */
+
+/*
+  Reading-focus mode (board rec #10) — a page-level calm applied to the article
+  container when the reader turns Focus on. The base measure and body size are
+  set inline on .article-body (68ch / 20px); this bumps the body's own children
+  a notch so headings and rhythm scale with it. The global nav/footer are
+  deliberately untouched — this is a page-level focus, not a chrome takeover.
+*/
+.lw-reading-focus .article-body{letter-spacing:.003em}
+.lw-reading-focus .article-body > * + *{margin-top:1.5em}
+.lw-reading-focus .article-body h2{font-size:34px}
