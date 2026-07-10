@@ -31,6 +31,14 @@ const DIST_DIR = path.join(REPO_ROOT, "dist/public");
 const SITE_URL = "https://www.livewellbyjamesbell.co";
 const SITE_NAME = "LiveWell by James Bell";
 const AUTHOR_NAME = "James Bell";
+// Search-engine ownership verification. Set these in the Vercel build env
+// (VITE_ prefix so they travel with the rest of the build config). Each is the
+// bare token Search Console / Bing hands you for the "HTML tag" method; when
+// empty the meta tag is simply omitted. See docs/SEO-LAUNCH.md.
+const GOOGLE_VERIFICATION =
+  process.env.VITE_GOOGLE_SITE_VERIFICATION || process.env.GOOGLE_SITE_VERIFICATION || "";
+const BING_VERIFICATION =
+  process.env.VITE_BING_SITE_VERIFICATION || process.env.BING_SITE_VERIFICATION || "";
 // Branded default card rendered by the dynamic OG Edge function (api/og.tsx).
 // There is no static og-default.png in the repo; this endpoint always renders.
 const OG_DEFAULT = ogImageUrl("LiveWell by James Bell", "Theology for everyday life");
@@ -232,6 +240,114 @@ function countWords(text) {
   return t ? t.split(/\s+/).length : 0;
 }
 
+// ── Crawlable body content ────────────────────────────────────────────────
+// The SPA ships an empty <div id="root">; Google can render the JS, but for a
+// new site it does so slowly and shallowly. Injecting the real prose into the
+// initial HTML gets every essay indexed at full depth, and gives no-JS and AI
+// crawlers the actual text. The client mounts with createRoot (a fresh render,
+// not hydration), so React clears #root on mount — the injected content is
+// crawler-only and never double-renders for humans.
+
+/** Light, safe Markdown → HTML: headings, paragraphs, blockquotes, emphasis.
+ *  Links collapse to their text. Everything is escaped first, so no raw HTML
+ *  from content can inject into the page. */
+function mdToHtml(md) {
+  const src = String(md ?? "").replace(/\r\n/g, "\n").trim();
+  if (!src) return "";
+  const blocks = src.split(/\n{2,}/);
+  const out = [];
+  for (let raw of blocks) {
+    let b = raw.trim();
+    if (!b) continue;
+    // strip image syntax before escaping
+    b = b.replace(/!\[[^\]]*\]\([^)]*\)/g, "");
+    const heading = b.match(/^(#{1,6})\s+(.*)$/);
+    if (heading) {
+      const level = Math.min(heading[1].length + 1, 6); // h1 reserved for the title
+      out.push(`<h${level}>${inline(heading[2])}</h${level}>`);
+      continue;
+    }
+    if (/^\s{0,3}>\s?/.test(b)) {
+      const quote = b.replace(/^\s{0,3}>\s?/gm, "").trim();
+      out.push(`<blockquote>${inline(quote)}</blockquote>`);
+      continue;
+    }
+    if (/^\s{0,3}([-*_])\s*(\1\s*){2,}$/.test(b)) continue; // hr
+    out.push(`<p>${inline(b.replace(/\n/g, " "))}</p>`);
+  }
+  return out.join("\n");
+}
+
+/** Inline formatting on already-block-split text: bold/italic kept, links →
+ *  text, then HTML-escaped. */
+function inline(text) {
+  let t = String(text ?? "")
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")     // links → text
+    .replace(/`([^`]+)`/g, "$1");                 // inline code
+  t = escapeHtml(t);
+  t = t
+    .replace(/(\*\*|__)(.+?)\1/g, "<strong>$2</strong>")
+    .replace(/(\*|_)(.+?)\1/g, "<em>$2</em>");
+  return t;
+}
+
+/** Recursively collect prose from an arbitrary content-JSON object, in order.
+ *  Handles the varied library shapes (single `body`, `sections[].body`,
+ *  `chapters[].body`, etc.) without per-type logic. Returns Markdown-ish text. */
+function extractReadableText(obj, acc = [], depth = 0) {
+  if (depth > 6 || acc.join(" ").length > 60000) return acc;
+  if (typeof obj === "string") {
+    const s = obj.trim();
+    if (s.length > 40 && /\s/.test(s)) acc.push(s);
+    return acc;
+  }
+  if (Array.isArray(obj)) {
+    for (const v of obj) extractReadableText(v, acc, depth + 1);
+    return acc;
+  }
+  if (obj && typeof obj === "object") {
+    // Prefer the fields most likely to be prose, in a sensible reading order.
+    const ordered = ["heading", "title", "kicker", "subtitle", "summary", "body", "content", "text", "sections", "chapters", "parts"];
+    const keys = [...ordered.filter((k) => k in obj), ...Object.keys(obj).filter((k) => !ordered.includes(k))];
+    for (const k of keys) {
+      if (["slug", "id", "url", "href", "image", "coverImage", "author", "date", "readTime", "group", "topic", "pillar"].includes(k)) continue;
+      extractReadableText(obj[k], acc, depth + 1);
+    }
+  }
+  return acc;
+}
+
+/** Build the crawlable <article> body block for #root. */
+function renderArticleBody({ title, subtitle, contentHtml, sectionLabel }) {
+  const parts = [
+    `<article itemscope itemtype="https://schema.org/Article">`,
+    sectionLabel ? `<p class="pre-eyebrow">${escapeHtml(sectionLabel)}</p>` : "",
+    `<h1 itemprop="headline">${escapeHtml(title)}</h1>`,
+    subtitle ? `<p class="pre-subtitle">${escapeHtml(subtitle)}</p>` : "",
+    `<p class="pre-byline">By <span itemprop="author">${escapeHtml(AUTHOR_NAME)}</span></p>`,
+    `<div itemprop="articleBody">`,
+    contentHtml,
+    `</div>`,
+    `</article>`,
+  ];
+  // A tiny style keeps the crawler-only content readable if JS ever fails to
+  // boot, without shifting the real SPA paint (React replaces #root on mount).
+  return `<div class="prerender-content" style="max-width:68ch;margin:0 auto;padding:2rem 1.25rem;font-family:Georgia,serif;line-height:1.7">${parts.filter(Boolean).join("\n")}</div>`;
+}
+
+/** Turn a content object (or raw markdown) into the injected body HTML. */
+function bodyFromContent({ title, subtitle, sectionLabel, markdown, contentObj }) {
+  let contentHtml = "";
+  if (markdown) {
+    contentHtml = mdToHtml(markdown);
+  } else if (contentObj) {
+    const paras = extractReadableText(contentObj);
+    contentHtml = paras.map((p) => mdToHtml(p)).filter(Boolean).join("\n");
+  }
+  if (!contentHtml) return "";
+  return renderArticleBody({ title, subtitle, contentHtml, sectionLabel });
+}
+
 function articleSchema(post, url, image) {
   const bodyText = markdownToPlainText(post.body);
   return {
@@ -298,6 +414,11 @@ function buildHead({ title, description, url, image, type, publishedDate, modifi
     `<title>${escapeHtml(fullTitle)}</title>`,
     `<meta name="description" content="${escapeHtml(description)}" />`,
     `<meta name="author" content="${escapeHtml(AUTHOR_NAME)}" />`,
+    `<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />`,
+  ];
+  if (GOOGLE_VERIFICATION) lines.push(`<meta name="google-site-verification" content="${escapeHtml(GOOGLE_VERIFICATION)}" />`);
+  if (BING_VERIFICATION) lines.push(`<meta name="msvalidate.01" content="${escapeHtml(BING_VERIFICATION)}" />`);
+  lines.push(
     `<link rel="canonical" href="${escapeHtml(url)}" />`,
     `<meta property="og:type" content="${type}" />`,
     `<meta property="og:url" content="${escapeHtml(url)}" />`,
@@ -310,8 +431,8 @@ function buildHead({ title, description, url, image, type, publishedDate, modifi
     `<meta name="twitter:card" content="summary_large_image" />`,
     `<meta name="twitter:title" content="${escapeHtml(title)}" />`,
     `<meta name="twitter:description" content="${escapeHtml(description)}" />`,
-    `<meta name="twitter:image" content="${escapeHtml(image || OG_DEFAULT)}" />`,
-  ];
+    `<meta name="twitter:image" content="${escapeHtml(image || OG_DEFAULT)}" />`
+  );
   if (publishedDate) lines.push(`<meta property="article:published_time" content="${escapeHtml(publishedDate)}" />`);
   if (modifiedDate) lines.push(`<meta property="article:modified_time" content="${escapeHtml(modifiedDate)}" />`);
   if (type === "article") lines.push(`<meta property="article:author" content="${escapeHtml(AUTHOR_NAME)}" />`);
@@ -343,13 +464,18 @@ function rewriteIndexHtml(template, routeHead) {
   return html;
 }
 
-function writeRoute(template, route, head) {
+function writeRoute(template, route, head, bodyHtml = "") {
   const target =
     route.path === ""
       ? path.join(DIST_DIR, "index.html")
       : path.join(DIST_DIR, route.path.replace(/^\//, ""), "index.html");
   fs.mkdirSync(path.dirname(target), { recursive: true });
-  const html = rewriteIndexHtml(template, head);
+  let html = rewriteIndexHtml(template, head);
+  // Inject crawlable article content at the top of #root. The client mounts
+  // with createRoot, which replaces #root entirely, so this is crawler-only.
+  if (bodyHtml) {
+    html = html.replace('<div id="root">', `<div id="root">\n${bodyHtml}`);
+  }
   fs.writeFileSync(target, html);
   return target;
 }
@@ -400,20 +526,21 @@ async function main() {
   // articles, context guides, life domains, formation topics, creeds, history
   // essays, and toolkits unfurl and index with their own title and image.
   const LIBRARY_SOURCES = [
-    { file: "client/public/leadership/articles-index.json", key: "articles", route: "/leadership/article/", ogPrefix: "leadership-article" },
-    { file: "client/public/context/guides-index.json", key: "guides", route: "/resources/context/", ogPrefix: "resources-context" },
-    { file: "client/public/leadership/formation-index.json", key: "topics", route: "/leadership/formation/", ogPrefix: "leadership-formation" },
-    { file: "client/public/life/domains-index.json", key: "domains", route: "/life/", ogPrefix: "life" },
-    { file: "client/public/creeds/documents-index.json", key: "documents", route: "/resources/creeds/", ogPrefix: "resources-creeds" },
-    { file: "client/public/history/essays-index.json", key: "essays", route: "/theology/history/", ogPrefix: "theology-history" },
+    { file: "client/public/leadership/articles-index.json", key: "articles", route: "/leadership/article/", ogPrefix: "leadership-article", contentDir: "client/public/leadership/articles" },
+    { file: "client/public/context/guides-index.json", key: "guides", route: "/resources/context/", ogPrefix: "resources-context", contentDir: "client/public/context/guides" },
+    { file: "client/public/leadership/formation-index.json", key: "topics", route: "/leadership/formation/", ogPrefix: "leadership-formation", contentDir: "client/public/leadership/formation" },
+    { file: "client/public/life/domains-index.json", key: "domains", route: "/life/", ogPrefix: "life", contentDir: "client/public/life/domains" },
+    { file: "client/public/creeds/documents-index.json", key: "documents", route: "/resources/creeds/", ogPrefix: "resources-creeds", contentDir: "client/public/creeds/documents" },
+    { file: "client/public/history/essays-index.json", key: "essays", route: "/theology/history/", ogPrefix: "theology-history", contentDir: "client/public/history/essays" },
     // The four families the sitemap already lists but the prerender didn't
     // (audit 02 #4): study-guide toolkits, Table studies, the How-To library,
     // and the read-online books.
-    { file: "client/public/studyguides/index.json", key: "guides", route: "/studyguides/", ogPrefix: "studyguides", desc: "blurb" },
-    { file: "client/public/table/studies-index.json", key: "studies", route: "/table/", ogPrefix: "table", desc: "summary" },
-    { file: "client/public/howtos/index.json", key: "articles", route: "/how-tos/", ogPrefix: "howtos", desc: "excerpt" },
-    { file: "client/public/books/index.json", key: "books", route: "/read/", ogPrefix: "read", desc: "blurb", type: "book" },
+    { file: "client/public/studyguides/index.json", key: "guides", route: "/studyguides/", ogPrefix: "studyguides", desc: "blurb", contentDir: "client/public/studyguides" },
+    { file: "client/public/table/studies-index.json", key: "studies", route: "/table/", ogPrefix: "table", desc: "summary", contentDir: "client/public/table/studies" },
+    { file: "client/public/howtos/index.json", key: "articles", route: "/how-tos/", ogPrefix: "howtos", desc: "excerpt", contentDir: "client/public/howtos/a" },
+    { file: "client/public/books/index.json", key: "books", route: "/read/", ogPrefix: "read", desc: "blurb", type: "book", contentDir: "client/public/books" },
   ];
+  let withBody = 0;
   for (const src of LIBRARY_SOURCES) {
     let data;
     try {
@@ -428,10 +555,24 @@ async function main() {
         : OG_DEFAULT;
       const description = e[src.desc || "blurb"] || e.blurb || e.subtitle || e.title;
       const head = buildHead({ title: e.title, description, url, image, type: src.type || "article" });
-      writeRoute(template, { path: `${src.route}${e.slug}` }, head);
+      // Read the entry's full content file (when present) and inject its prose
+      // into #root so the page indexes at full depth, not as an empty shell.
+      let bodyHtml = "";
+      if (src.contentDir) {
+        const cf = path.join(REPO_ROOT, src.contentDir, `${e.slug}.json`);
+        if (fs.existsSync(cf)) {
+          try {
+            const obj = JSON.parse(fs.readFileSync(cf, "utf8"));
+            bodyHtml = bodyFromContent({ title: e.title, subtitle: e.subtitle || description, sectionLabel: e.group || e.kicker, contentObj: obj });
+            if (bodyHtml) withBody++;
+          } catch { /* leave head-only */ }
+        }
+      }
+      writeRoute(template, { path: `${src.route}${e.slug}` }, head, bodyHtml);
       wrote++;
     }
   }
+  console.log(`[prerender] injected crawlable body content into ${withBody} library pages`);
 
   // Route-table extraction: every static route whose component declares
   // <SEOMeta title="..." description="..." /> as string literals gets a real
@@ -551,7 +692,13 @@ async function main() {
           modifiedDate: modifiedIso,
           schemas: [articleSchema(post, url, image)],
         });
-        writeRoute(template, { path: `/writing/${post.slug}` }, head);
+        const bodyHtml = bodyFromContent({
+          title: post.title,
+          subtitle: post.excerpt || "",
+          sectionLabel: post.pillar || "",
+          markdown: post.body || "",
+        });
+        writeRoute(template, { path: `/writing/${post.slug}` }, head, bodyHtml);
         wrote++;
       }
 
