@@ -6,6 +6,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { fetchLibraryBooks, featuredAcrossPillars, type LibraryBook } from "@/lib/libraryBooks";
+import { trackBookCTA } from "@/lib/telemetry";
 
 export function LibraryStrip() {
   const [books, setBooks] = useState<LibraryBook[]>([]);
@@ -36,7 +37,7 @@ export function LibraryStrip() {
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(160px, 45%), 1fr))", gap: "var(--s-3)" }}>
           {featured.map((b) => (
-            <Link key={b.slug} href={`/read/${b.slug}`} style={{ display: "flex", flexDirection: "column", background: "var(--card)", border: "1px solid var(--border)", textDecoration: "none", overflow: "hidden" }}>
+            <Link key={b.slug} href={`/read/${b.slug}`} onClick={() => trackBookCTA(b.slug, "home-strip")} style={{ display: "flex", flexDirection: "column", background: "var(--card)", border: "1px solid var(--border)", textDecoration: "none", overflow: "hidden" }}>
               {b.cover ? (
                 <img
                   src={b.cover}

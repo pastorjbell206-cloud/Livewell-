@@ -14,6 +14,7 @@ import { useState } from "react";
 import { trpc } from "@/lib/trpc";
 import { useToast } from "@/contexts/ToastContext";
 import { substackSubscribeUrl } from "@/lib/site";
+import { trackSubscribe } from "@/lib/telemetry";
 
 type Audience = "skeptic" | "christian" | "pastor" | "exploring";
 
@@ -79,6 +80,7 @@ export function SegmentedSignup({
 
     // 1. Best-effort: record the email + segment in our own table.
     subscribe.mutate({ email, source, audienceType: audience });
+    trackSubscribe(source ?? "unknown", audience);
 
     // 2. Analytics: capture the segment client-side.
     if (typeof window !== "undefined") {

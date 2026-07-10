@@ -19,6 +19,16 @@
  *   - "essay_read_complete" — a reader reached the end of an essay body.
  *   - "path_step_complete"  — a reader finished a step of a reading pathway.
  *   - "return_reader"       — a returning reader was seen.
+ *
+ * The reader's-journey funnel (essay → book → subscribe → purchase) — the
+ * events that show where readers advance and where they drop:
+ *   - "book_open"       — a full book was opened in the reader (/read/:slug).
+ *   - "book_cta_click"  — a reader clicked a "read the book" door, with the
+ *                         surface it fired from (essay band, pillar shelf,
+ *                         end-of-book door, home strip, library).
+ *   - "subscribe_start" — a reader submitted the newsletter form (segment +
+ *                         source), the top of the retention funnel.
+ *   - "purchase_intent" — a reader clicked buy/download on a paid book.
  */
 import { track as vercelTrack } from "@vercel/analytics";
 
@@ -52,4 +62,28 @@ export function trackPathStep(pathway: string, step: string): void {
 /** A returning reader was seen (a count only — no identity, no PII). */
 export function trackReturnReader(): void {
   track("return_reader");
+}
+
+/** A full book was opened in the reader — the essay→book conversion landed. */
+export function trackBookOpen(slug: string): void {
+  track("book_open", { slug });
+}
+
+/**
+ * A reader clicked a door into a book. `source` names the surface so the funnel
+ * shows which door works: "essay-band" | "pillar-shelf" | "end-of-book" |
+ * "home-strip" | "library".
+ */
+export function trackBookCTA(slug: string, source: string): void {
+  track("book_cta_click", { slug, source });
+}
+
+/** A reader submitted the newsletter form — top of the retention funnel. */
+export function trackSubscribe(source: string, segment?: string): void {
+  track("subscribe_start", segment ? { source, segment } : { source });
+}
+
+/** A reader clicked buy/download on a paid book. */
+export function trackPurchaseIntent(slug: string): void {
+  track("purchase_intent", { slug });
 }

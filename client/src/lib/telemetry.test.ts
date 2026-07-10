@@ -5,6 +5,10 @@ import {
   trackEssayComplete,
   trackPathStep,
   trackReturnReader,
+  trackBookOpen,
+  trackBookCTA,
+  trackSubscribe,
+  trackPurchaseIntent,
 } from "./telemetry";
 
 // Replace the real Vercel Web Analytics module with a spy: tests observe
@@ -67,5 +71,32 @@ describe("depth helpers emit stable event names with slugs/counts only", () => {
   it("trackReturnReader emits return_reader with no props", () => {
     trackReturnReader();
     expect(mockedTrack).toHaveBeenCalledWith("return_reader", undefined);
+  });
+});
+
+describe("reader's-journey funnel events", () => {
+  it("trackBookOpen emits book_open with the slug", () => {
+    trackBookOpen("essays-on-prayer");
+    expect(mockedTrack).toHaveBeenCalledWith("book_open", { slug: "essays-on-prayer" });
+  });
+
+  it("trackBookCTA emits book_cta_click with slug and the door it fired from", () => {
+    trackBookCTA("essays-on-prayer", "essay-band");
+    expect(mockedTrack).toHaveBeenCalledWith("book_cta_click", { slug: "essays-on-prayer", source: "essay-band" });
+  });
+
+  it("trackSubscribe carries the source and segment when present", () => {
+    trackSubscribe("book-reader", "pastor");
+    expect(mockedTrack).toHaveBeenCalledWith("subscribe_start", { source: "book-reader", segment: "pastor" });
+  });
+
+  it("trackSubscribe omits the segment when not given", () => {
+    trackSubscribe("footer");
+    expect(mockedTrack).toHaveBeenCalledWith("subscribe_start", { source: "footer" });
+  });
+
+  it("trackPurchaseIntent emits purchase_intent with the slug", () => {
+    trackPurchaseIntent("born-again-from-atheism");
+    expect(mockedTrack).toHaveBeenCalledWith("purchase_intent", { slug: "born-again-from-atheism" });
   });
 });
