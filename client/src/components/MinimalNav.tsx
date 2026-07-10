@@ -218,7 +218,7 @@ export default function MinimalNav() {
           position: "sticky",
           top: 0,
           zIndex: 200,
-          background: "rgba(245,240,230,0.97)",
+          background: "var(--nav-bg)",
           backdropFilter: "blur(16px)",
           borderBottom: "1px solid var(--border)",
           width: "100%",

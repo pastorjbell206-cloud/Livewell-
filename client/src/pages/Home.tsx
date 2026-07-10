@@ -19,6 +19,7 @@ import { SegmentedSignup } from "@/components/SegmentedSignup";
 import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
+import { isFullEssay } from "@/lib/essayQuality";
 import {
   META_DESCRIPTION,
   PRIMARY_HEADLINE,
@@ -90,9 +91,11 @@ export default function Home() {
   const all = articlesQuery.data ?? [];
 
   // Lead with the strongest essays; fall back to latest if a slug is absent.
+  // The fallback skips catalog stubs (see docs/audit-corpus/) so a short abstract
+  // never leads the front page.
   const bySlug = new Map(all.map(a => [a.slug, a] as const));
   const curated = FLAGSHIP_SLUGS.map(s => bySlug.get(s)).filter((a): a is (typeof all)[number] => !!a);
-  const flagship = curated.length ? curated : all.slice(0, 6);
+  const flagship = curated.length ? curated : all.filter(isFullEssay).slice(0, 6);
 
   return (
     <div>
@@ -105,11 +108,14 @@ export default function Home() {
       />
       <MinimalNav />
 
+      {/* Home doesn't use Layout, so it declares its own main landmark. */}
+      <main id="main">
+
       {/* HERO — Substack-shaped lede */}
       <section
         style={{
           background: "var(--charcoal)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
           padding: "var(--s-7) var(--s-4) var(--s-6)",
           position: "relative",
           overflow: "hidden",
@@ -162,7 +168,7 @@ export default function Home() {
                 fontWeight: 400,
                 lineHeight: 1.03,
                 letterSpacing: "-0.025em",
-                color: "var(--bone)",
+                color: "var(--charcoal-fg)",
                 marginBottom: "24px",
               }}
             >
@@ -176,7 +182,7 @@ export default function Home() {
                 fontStyle: "italic",
                 fontWeight: 400,
                 lineHeight: 1.3,
-                color: "var(--bone)",
+                color: "var(--charcoal-fg)",
                 maxWidth: "32ch",
                 marginBottom: "24px",
               }}
@@ -209,8 +215,8 @@ export default function Home() {
                 <button
                   type="button"
                   style={{
-                    background: "var(--bone)",
-                    color: "var(--ink)",
+                    background: "var(--charcoal-fg)",
+                    color: "var(--charcoal)",
                     border: "none",
                     borderBottom: "2px solid var(--mustard)",
                     padding: "14px 28px",
@@ -230,7 +236,7 @@ export default function Home() {
                   type="button"
                   style={{
                     background: "transparent",
-                    color: "var(--bone)",
+                    color: "var(--charcoal-fg)",
                     border: "1px solid rgba(245,240,230,0.25)",
                     padding: "14px 28px",
                     fontFamily: "var(--U)",
@@ -249,7 +255,7 @@ export default function Home() {
                   type="button"
                   style={{
                     background: "transparent",
-                    color: "var(--bone)",
+                    color: "var(--charcoal-fg)",
                     border: "1px solid rgba(245,240,230,0.25)",
                     padding: "14px 28px",
                     fontFamily: "var(--U)",
@@ -309,7 +315,7 @@ export default function Home() {
                   fontWeight: 500,
                   lineHeight: 1.2,
                   letterSpacing: "-0.01em",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   marginBottom: "12px",
                 }}
               >
@@ -700,6 +706,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

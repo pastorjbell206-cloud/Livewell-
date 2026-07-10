@@ -51,6 +51,8 @@
   --bone-warm:#EDE8DC;
   --bone-muted:#D9D3C4;
   --card:#FFFFFF;
+  --nav-bg:rgba(245,240,230,0.97); /* sticky nav scrim — flips with theme */
+  --charcoal-fg:#F5F0E6; /* text on FIXED-dark surfaces (charcoal heroes, footer) — stays light in both themes; --bone flips dark and becomes unreadable there */
 
   /*  Text  */
   --ink:#14110C;
@@ -105,6 +107,7 @@ html.dark{
   --charcoal:#0F0F0F;--charcoal-deep:#070707;--charcoal-soft:#1A1A1A;
   --bone:#14110C;--bone-warm:#1A1608;--bone-muted:#2A2418;
   --card:#1A1A1A;
+  --nav-bg:rgba(20,17,12,0.97);
   /* Text */
   --ink:#F4F1EA;--ink-muted:#9A968E;
   /* Mustard — slightly desaturated for dark mode to keep WCAG AA */
@@ -132,6 +135,7 @@ html.dark{
 .admin-scope, html.dark .admin-scope{
   --charcoal:#1A1A1A;--charcoal-deep:#0F0F0F;--charcoal-soft:#2A2A2A;
   --bone:#F5F0E6;--bone-warm:#EDE8DC;--bone-muted:#D9D3C4;--card:#FFFFFF;
+  --nav-bg:rgba(245,240,230,0.97);
   --ink:#14110C;--ink-muted:#5A5448;
   --mustard:#D4A017;--mustard-deep:#B08A12;--mustard-text:#7A6010;
   --paper:#F5F0E6;--paper2:#EDE8DC;--cream:#EDE8DC;
@@ -418,3 +422,14 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
   --s-9:12rem             Section padding (desktop)
   --w-prose:680px         Reading column max width
 */
+
+/*
+  Reading-focus mode (board rec #10) — a page-level calm applied to the article
+  container when the reader turns Focus on. The base measure and body size are
+  set inline on .article-body (68ch / 20px); this bumps the body's own children
+  a notch so headings and rhythm scale with it. The global nav/footer are
+  deliberately untouched — this is a page-level focus, not a chrome takeover.
+*/
+.lw-reading-focus .article-body{letter-spacing:.003em}
+.lw-reading-focus .article-body > * + *{margin-top:1.5em}
+.lw-reading-focus .article-body h2{font-size:34px}

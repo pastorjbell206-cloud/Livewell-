@@ -15,7 +15,7 @@ const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 function BookCard({ b }: { b: LibraryBook }) {
   return (
-    <Link href={`/read/${b.slug}`} style={{ display: "flex", flexDirection: "column", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", textDecoration: "none", overflow: "hidden" }}>
+    <Link href={`/read/${b.slug}`} style={{ display: "flex", flexDirection: "column", background: "var(--card)", border: "1px solid var(--border)", textDecoration: "none", overflow: "hidden" }}>
       {b.cover ? (
         <img
           src={b.cover}
@@ -28,7 +28,7 @@ function BookCard({ b }: { b: LibraryBook }) {
       ) : (
         <div style={{ aspectRatio: "2 / 3", background: "var(--charcoal)", display: "flex", flexDirection: "column", justifyContent: "center", padding: "var(--s-4)" }}>
           {b.pillar && <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>{b.pillar}</div>}
-          <div style={{ fontFamily: "var(--F)", fontSize: "26px", lineHeight: 1.12, color: "var(--bone)" }}>{b.title}</div>
+          <div style={{ fontFamily: "var(--F)", fontSize: "26px", lineHeight: 1.12, color: "var(--charcoal-fg)" }}>{b.title}</div>
         </div>
       )}
       <div style={{ padding: "12px 14px 14px" }}>
@@ -53,7 +53,7 @@ export default function BookLibrary() {
         description="Full-length books by James Bell, free online: the deep things of doctrine, the captive church, the cause of the poor, and the undivided life."
         url={`${SITE_URL}/read`}
       />
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>The Library</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 60px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "18ch" }}>
@@ -72,7 +72,7 @@ export default function BookLibrary() {
           ) : (
             groups.map((g) => (
               <section key={g.pillar} style={{ marginBottom: "var(--s-6)" }}>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "12px", marginBottom: "var(--s-3)", borderBottom: "1px solid rgba(20,17,12,0.1)", paddingBottom: "10px" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "12px", marginBottom: "var(--s-3)", borderBottom: "1px solid var(--border)", paddingBottom: "10px" }}>
                   <h2 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 400, letterSpacing: "-0.01em", color: "var(--ink)" }}>{g.pillar}</h2>
                   <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--ink-muted)", whiteSpace: "nowrap" }}>{g.books.length} {g.books.length === 1 ? "book" : "books"}</span>
                 </div>
