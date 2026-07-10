@@ -369,7 +369,10 @@ async function main() {
 
   try {
     const [articles] = await conn.query(
-      "SELECT slug, updatedAt FROM posts WHERE published = true ORDER BY updatedAt DESC"
+      // CHAR_LENGTH guard keeps catalog stubs (a title over a ~40-word abstract,
+      // no essay behind it) out of the sitemap so search engines never index
+      // them — see docs/audit-corpus/. Real essays clear 600 chars easily.
+      "SELECT slug, updatedAt FROM posts WHERE published = true AND CHAR_LENGTH(body) >= 600 ORDER BY updatedAt DESC"
     );
     const [books] = await conn.query(
       "SELECT slug, updatedAt FROM books WHERE published = true AND slug IS NOT NULL ORDER BY updatedAt DESC"
