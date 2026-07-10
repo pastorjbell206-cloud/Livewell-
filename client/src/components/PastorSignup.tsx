@@ -72,14 +72,30 @@ export function PastorSignup({ source, networkUrl }: PastorSignupProps) {
             fontSize: "15px",
             lineHeight: 1.7,
             color: "var(--ink-muted)",
-            marginBottom: "18px",
+            marginBottom: "14px",
             maxWidth: "55ch",
           }}
         >
-          The pastoral letter will come to that address. The second step is
-          the network itself — other pastors, monthly calls, a room where you
-          do not have to perform.
+          The pastoral letter will come to that address. In the meantime, here
+          is something you can put in your people&rsquo;s hands this week — a
+          study guide with a leader&rsquo;s copy and a participant handout, free
+          to use in your church.
         </p>
+        <a
+          href="/studyguides"
+          style={{
+            display: "inline-block",
+            marginBottom: "18px",
+            fontFamily: "var(--U)",
+            fontSize: "13px",
+            fontWeight: 600,
+            color: "var(--mustard-text)",
+            textDecoration: "none",
+          }}
+        >
+          Open the study-guide library &rarr;
+        </a>
+        <div />
         {networkUrl ? (
           <a
             href={networkUrl}

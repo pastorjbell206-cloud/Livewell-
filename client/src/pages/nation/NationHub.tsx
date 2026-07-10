@@ -53,7 +53,7 @@ export default function NationHub() {
       </StatementBand>
 
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
-        <div style={{ ...wrap, display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "16px" }}>
+        <div style={{ ...wrap, display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "16px" }}>
           {ITEMS.map((it) => (
             <Link key={it.href} href={it.href} style={{ ...card, borderTop: "3px solid var(--mustard)" }}>
               <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>{it.kind}</div>

@@ -8,6 +8,7 @@
  * fully-typed solution is to add an `audience` enum column to resources;
  * until that migration, the heuristic is good enough.
  */
+import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { trpc } from "@/lib/trpc";
@@ -250,25 +251,35 @@ export default function ResourcesForPastors() {
                   fontWeight: 500,
                   color: "var(--ink)",
                   letterSpacing: "-0.01em",
-                  marginBottom: "24px",
+                  marginBottom: "6px",
                 }}
               >
-                Coming soon
+                Ready to hand your people this week
               </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", marginBottom: "24px", maxWidth: "60ch" }}>
+                Finished curriculum you can print or forward today — each with a leader&rsquo;s guide and a participant handout, or a full preaching arc, free to use in your church.
+              </p>
               <div
                 style={{
                   display: "grid",
-                  gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+                  gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))",
                   gap: "24px",
                 }}
               >
-                <ComingSoonCard
-                  title="Sermon Study Guides"
-                  description="Companion guides for teaching through key passages with your congregation."
+                <ResourceCard
+                  href="/studyguides"
+                  title="Small-group study guides"
+                  description="Teach through anxiety, doubt, deconstruction, Christian nationalism, and more — a leader's guide and participant handout for each, as printable PDFs."
                 />
-                <ComingSoonCard
-                  title="Leadership Curriculum"
-                  description="Multi-week curriculum for developing elders, deacons, and lay leaders in your church."
+                <ResourceCard
+                  href="/leadership/sermon-series"
+                  title="Ready-to-preach sermon series"
+                  description="Twelve complete series — Jonah, Ruth, James, Philippians, Mark, the Sermon on the Mount, and more — each a downloadable arc you can carry into the pulpit."
+                />
+                <ResourceCard
+                  href="/table"
+                  title="The Table: disciple-making at home"
+                  description="A full small-group, disciple-making curriculum built for ordinary Christians to use around a table. Yours to run freely."
                 />
               </div>
             </div>
@@ -279,20 +290,26 @@ export default function ResourcesForPastors() {
   );
 }
 
-function ComingSoonCard({
+function ResourceCard({
+  href,
   title,
   description,
 }: {
+  href: string;
   title: string;
   description: string;
 }) {
   return (
-    <div
+    <Link
+      href={href}
       style={{
+        display: "block",
         background: "var(--card)",
         border: "1px solid var(--border)",
+        borderLeft: "3px solid var(--mustard)",
         borderRadius: "var(--radius-sm)",
         padding: "24px",
+        textDecoration: "none",
       }}
     >
       <h3
@@ -313,10 +330,14 @@ function ComingSoonCard({
           fontSize: "14px",
           color: "var(--ink-muted)",
           lineHeight: 1.65,
+          marginBottom: "12px",
         }}
       >
         {description}
       </p>
-    </div>
+      <span style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)" }}>
+        Open the library &rarr;
+      </span>
+    </Link>
   );
 }

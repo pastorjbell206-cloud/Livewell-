@@ -35,7 +35,7 @@ export default function LeadershipHub() {
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>The tools</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", lineHeight: 1.1, marginBottom: "var(--s-4)" }}>Built for the work, not the bookshelf</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "16px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "16px" }}>
             {LEADERSHIP_TOOLS.map((t) => (
               <Link key={t.href} href={t.href} style={{ ...card, borderTop: "3px solid var(--mustard)" }}>
                 <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>{t.kicker}</div>
@@ -57,7 +57,7 @@ export default function LeadershipHub() {
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "var(--s-4)" }}>
             Ten free booklets for the men who carry a church — five on the office of elder, five on leading and governing. Pair them with the readiness assessments above: train the team, then take an honest measure of where it stands. Free PDF and EPUB; a gift to PCN is optional.
           </p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "16px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "16px" }}>
             <Link href="/resources/hard-issues-series" style={{ ...card, borderLeft: "2px solid var(--mustard)" }}>
               <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>Part One · Eldership</div>
               <div style={{ fontFamily: "var(--F)", fontSize: "22px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px", lineHeight: 1.2 }}>What elders are for, and how to find them</div>

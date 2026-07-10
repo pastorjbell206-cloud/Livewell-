@@ -222,6 +222,11 @@ export default function MinimalNav() {
           backdropFilter: "blur(16px)",
           borderBottom: "1px solid var(--border)",
           width: "100%",
+          // The universal box-sizing reset is stripped by the CSS build, so
+          // this nav defaulted to content-box: width:100% + its 16px padding
+          // pushed 32px past a phone viewport (horizontal scroll on every page).
+          // Pinned border-box here so 100% includes the padding.
+          boxSizing: "border-box",
         }}
       >
         <div

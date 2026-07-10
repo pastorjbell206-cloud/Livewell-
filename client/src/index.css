@@ -276,11 +276,12 @@ nav{display:flex;align-items:center;justify-content:space-between;height:70px;ma
 .section-title{font-family:var(--F);font-size:clamp(36px,5vw,52px);font-weight:300;line-height:1.1;letter-spacing:-.015em;color:var(--ink);margin-bottom:12px}
 .section-sub{font-size:17px;color:var(--ink3);max-width:600px;line-height:1.8;margin-bottom:48px}
 
-/* GRID */
+/* GRID — the min() wrap keeps a track from ever exceeding the viewport, so a
+ * fixed px minimum can't force horizontal scroll on a narrow phone. */
 .grid{display:grid;gap:32px}
-.grid-2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
-.grid-3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-.grid-4{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr))}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr))}
+.grid-4{grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr))}
 
 /* CARD */
 .card{background:var(--card);border:1px solid var(--border);border-radius:2px;overflow:hidden;transition:all 240ms cubic-bezier(0.22,1,0.36,1)}

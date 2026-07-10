@@ -234,7 +234,7 @@ export default function Explore() {
           </p>
 
           {/* Results */}
-          <div style={{ display: "grid", gap: "12px", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))" }}>
+          <div style={{ display: "grid", gap: "12px", gridTemplateColumns: "repeat(auto-fill, minmax(min(320px, 100%), 1fr))" }}>
             {visible.map((it) => (
               <Link
                 key={`${it.type}:${it.href}`}
