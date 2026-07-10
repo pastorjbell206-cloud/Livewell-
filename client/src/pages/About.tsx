@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { SEOMeta } from "@/components/SEOMeta";
+import { SEOMeta, getPersonSchema } from "@/components/SEOMeta";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { SITE_STATS } from "@/config/siteStats";
@@ -24,6 +24,7 @@ export default function About() {
         title="About James Bell — Pastor, Author, Writer"
         description={`From atheism to the pulpit. Raised without a father. Five sons. ${SITE_STATS.bookCount} books. ${SITE_STATS.yearsInMinistry} years in ministry. The story behind the writing.`}
         type="website"
+        structuredData={getPersonSchema()}
       />
 
       {/* ORIGIN */}
