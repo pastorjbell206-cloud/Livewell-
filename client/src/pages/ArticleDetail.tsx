@@ -8,12 +8,12 @@
  * - Body width is 680px (var(--w-prose)) per CLAUDE.md
  * - Bookmark + reading progress persist in localStorage
  */
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useLocation, useParams } from "wouter";
 import { Markdown } from "@/components/Markdown";
 import { recordReadEvent } from "@/components/ReadDepthBeacon";
-import { ArrowLeft, Bookmark, Share2, User } from "lucide-react";
+import { ArrowLeft, BookOpen, Bookmark, Share2, User } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import PageEndNav from "@/components/PageEndNav";
@@ -26,12 +26,14 @@ import { AudienceShare } from "@/components/AudienceShare";
 import { AudienceLabel } from "@/components/AudienceLabel";
 import { TrackChip } from "@/components/TrackChip";
 import { KeepReadingBook } from "@/components/KeepReadingBook";
+import { RelatedEssays } from "@/components/RelatedEssays";
 import ArticleNextSteps from "@/components/ArticleNextSteps";
 import { GeneratedHero } from "@/components/GeneratedHero";
 import { trpc } from "@/lib/trpc";
 import { pillarForPost } from "@/lib/taxonomy";
 import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
 import { trackEssayComplete } from "@/lib/telemetry";
+import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 /**
  * Per-slug byline overrides. Every essay not listed here is authored by
@@ -418,17 +420,25 @@ export default function ArticleDetail() {
     { enabled: Boolean(slug) }
   );
   const post = postQuery.data ?? null;
-  // Related essays grouped by the NEW pillar taxonomy, resolved client-side
-  // from the slim index so it tracks pillarForPost without a backend change.
-  const indexQuery = trpc.posts.listForIndex.useQuery();
-  const related = useMemo(() => {
-    if (!post) return [];
-    const myPillar = pillarForPost(post);
-    if (!myPillar) return [];
-    return (indexQuery.data ?? [])
-      .filter(p => p.slug !== post.slug && pillarForPost(p)?.id === myPillar.id)
-      .slice(0, 3);
-  }, [indexQuery.data, post]);
+
+  // Reading-focus mode (board rec #10): a page-level calm that reduces the
+  // article to title + body, persisted so the preference survives a reload.
+  // Related essays now come from the static RelatedEssays component (board
+  // rec #9) — no backend index fetch here.
+  const [focus, setFocus] = useState<boolean>(() =>
+    readStoredJSON(
+      "livewell-reading-focus",
+      (x): x is boolean => typeof x === "boolean",
+      false
+    )
+  );
+  const toggleFocus = () => {
+    setFocus(prev => {
+      const next = !prev;
+      writeStoredJSON("livewell-reading-focus", next);
+      return next;
+    });
+  };
 
   // Depth telemetry (board rec #17): emit "essay_read_complete" once, when a
   // zero-chrome sentinel at the foot of the body scrolls into view — a real
@@ -543,8 +553,9 @@ export default function ArticleDetail() {
           ]),
         ]}
       />
-      <article>
-        {/* BACK BUTTON */}
+      <article className={focus ? "lw-reading-focus" : undefined}>
+        {/* BACK BUTTON — hidden in reading-focus mode (breadcrumb chrome) */}
+        {!focus && (
         <div
           style={{
             padding: "20px var(--s-4)",
@@ -577,6 +588,7 @@ export default function ArticleDetail() {
             Back to Writing
           </button>
         </div>
+        )}
 
         {/* HEADER — centered editorial */}
         <section
@@ -717,17 +729,66 @@ export default function ArticleDetail() {
 
         {/* BODY */}
         <section style={{ padding: "var(--s-6) var(--s-4)" }}>
+          {/* Focus toggle — quiet reading-mode control (board rec #10). Sits
+              above the measure so it is reachable in both modes; the body is
+              never hidden, so this doubles as the "Exit focus" control. */}
+          <div
+            style={{
+              maxWidth: focus ? "68ch" : "var(--w-prose)",
+              margin: "0 auto var(--s-3)",
+              display: "flex",
+              justifyContent: "flex-end",
+            }}
+          >
+            <button
+              type="button"
+              onClick={toggleFocus}
+              aria-pressed={focus}
+              aria-label={
+                focus
+                  ? "Exit distraction-free reading"
+                  : "Enter distraction-free reading"
+              }
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "8px",
+                background: "transparent",
+                border: "1px solid var(--border)",
+                borderRadius: "var(--radius-sm)",
+                padding: "8px 14px",
+                fontFamily: "var(--U)",
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.04em",
+                color: "var(--ink-muted)",
+                cursor: "pointer",
+                transition: "color 0.2s, border-color 0.2s",
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.color = "var(--ink)";
+                e.currentTarget.style.borderColor = "var(--mustard)";
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.color = "var(--ink-muted)";
+                e.currentTarget.style.borderColor = "var(--border)";
+              }}
+            >
+              <BookOpen size={14} aria-hidden />
+              {focus ? "Exit focus" : "Focus"}
+            </button>
+          </div>
           <QuoteSelectionShare title={post.title} url={canonical} bodyRef={bodyRef} />
-          <TableOfContents bodyRef={bodyRef} contentKey={post.slug} />
+          {!focus && <TableOfContents bodyRef={bodyRef} contentKey={post.slug} />}
           <div
             className="article-body"
             ref={bodyRef}
             style={{
-              maxWidth: "var(--w-prose)",
+              maxWidth: focus ? "68ch" : "var(--w-prose)",
               margin: "0 auto",
               fontFamily: "var(--B)",
-              fontSize: "18px",
-              lineHeight: 1.75,
+              fontSize: focus ? "20px" : "18px",
+              lineHeight: focus ? 1.9 : 1.75,
               color: "var(--ink)",
             }}
           >
@@ -757,7 +818,8 @@ export default function ArticleDetail() {
               admin dashboard's "Essays finished" tile. */}
           <div ref={bodyEndRef} aria-hidden style={{ height: 1 }} />
 
-          {/* Reader actions */}
+          {/* Reader actions — hidden in reading-focus mode (share row) */}
+          {!focus && (
           <div
             style={{
               maxWidth: "var(--w-prose)",
@@ -780,127 +842,40 @@ export default function ArticleDetail() {
             {/* Three-audience share replaces the single SendToPastor button */}
             <AudienceShare title={post.title} url={canonical} />
           </div>
+          )}
         </section>
 
-        {/* NEXT STEPS — the matched tool and reading path for this essay
-            (built long ago, never imported; revived by QW-16) */}
-        <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
+        {/* POST-BODY CHROME — hidden in reading-focus mode. The book that
+            carries this essay's argument, then a quiet list of other essays
+            (board rec #9), then the newsletter CTA, author bio, and end nav. */}
+        {!focus && (
+          <>
+            {/* NEXT STEPS — the matched tool and reading path for this essay
+                (built long ago, never imported; revived by QW-16) */}
+            <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
 
-        {/* KEEP READING — the book that carries this essay's argument to full length */}
-        <KeepReadingBook post={post} />
+            {/* KEEP READING — the book, then another essay */}
+            <KeepReadingBook post={post} />
+            <RelatedEssays post={post} />
 
-        {/* NEWSLETTER (single CTA — no fake form) */}
-        <section
-          style={{
-            background: "var(--bone-warm)",
-            padding: "var(--s-6) var(--s-4)",
-          }}
-        >
-          <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-            <NewsletterSignup variant="inline" source="article" />
-          </div>
-        </section>
-
-        {/* RELATED */}
-        {related.length > 0 && (
-          <section
-            style={{
-              background: "var(--card)",
-              padding: "var(--s-6) var(--s-4)",
-              borderTop: "1px solid var(--border)",
-            }}
-          >
-            <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
-              <h2
-                style={{
-                  fontFamily: "var(--F)",
-                  fontSize: "28px",
-                  fontWeight: 500,
-                  color: "var(--ink)",
-                  marginBottom: "32px",
-                  letterSpacing: "-0.01em",
-                }}
-              >
-                Related essays
-              </h2>
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-                  gap: "24px",
-                }}
-              >
-                {related.map(item => (
-                  <button
-                    key={item.id}
-                    type="button"
-                    onClick={() => navigate(`/writing/${item.slug}`)}
-                    style={{
-                      textAlign: "left",
-                      padding: "20px",
-                      background: "var(--bone)",
-                      border: "1px solid var(--border)",
-                      borderRadius: "var(--radius-sm)",
-                      cursor: "pointer",
-                      transition: "all 0.2s",
-                    }}
-                    onMouseEnter={e => {
-                      e.currentTarget.style.borderColor = "var(--mustard)";
-                    }}
-                    onMouseLeave={e => {
-                      e.currentTarget.style.borderColor = "var(--border)";
-                    }}
-                  >
-                    {pillarForPost(item) && (
-                      <div
-                        style={{
-                          fontFamily: "var(--U)",
-                          fontSize: "10px",
-                          fontWeight: 600,
-                          color: "var(--mustard-text)",
-                          textTransform: "uppercase",
-                          letterSpacing: "0.18em",
-                          marginBottom: "10px",
-                        }}
-                      >
-                        {pillarForPost(item)?.name}
-                      </div>
-                    )}
-                    <h3
-                      style={{
-                        fontFamily: "var(--F)",
-                        fontSize: "20px",
-                        fontWeight: 500,
-                        color: "var(--ink)",
-                        marginBottom: "12px",
-                        lineHeight: 1.25,
-                        letterSpacing: "-0.01em",
-                      }}
-                    >
-                      {item.title}
-                    </h3>
-                    {item.readingTimeMinutes && (
-                      <div
-                        style={{
-                          fontFamily: "var(--U)",
-                          fontSize: "12px",
-                          color: "var(--ink-muted)",
-                        }}
-                      >
-                        {item.readingTimeMinutes} min read
-                      </div>
-                    )}
-                  </button>
-                ))}
+            {/* NEWSLETTER (single CTA — no fake form) */}
+            <section
+              style={{
+                background: "var(--bone-warm)",
+                padding: "var(--s-6) var(--s-4)",
+              }}
+            >
+              <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+                <NewsletterSignup variant="inline" source="article" />
               </div>
-            </div>
-          </section>
+            </section>
+
+            {/* AUTHOR BIO */}
+            <AuthorBio author={author} />
+
+            <PageEndNav back={{ href: "/writing", label: "All essays" }} />
+          </>
         )}
-
-        {/* AUTHOR BIO */}
-        <AuthorBio author={author} />
-
-        <PageEndNav back={{ href: "/writing", label: "All essays" }} />
       </article>
     </Layout>
   );
