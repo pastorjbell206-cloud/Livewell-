@@ -3302,6 +3302,46 @@ async function adminAnalytics(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+// Signups by source: which pages and segments actually grow the list. Reads the
+// subscribers.source column, where the client packs "<page>:<segment>" at
+// signup (e.g. "for-pastors:pastor"). Splits it back into page and segment and
+// aggregates each — so the dashboard can show what converts, not just a total.
+async function adminSignups(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  const SEGMENTS = new Set(["skeptic", "christian", "pastor", "exploring"]);
+  try {
+    const out = await withConn(async (c) => {
+      const has = async (t: string): Promise<boolean> => {
+        try { const [r]: any = await c.query("SHOW TABLES LIKE ?", [t]); return Array.isArray(r) && r.length > 0; } catch { return false; }
+      };
+      if (!(await has("subscribers"))) return { total: 0, last30: 0, byPage: [], bySegment: [] };
+      const total = await (async () => { try { const [r]: any = await c.query("SELECT COUNT(*) AS n FROM subscribers"); return Number(r?.[0]?.n ?? 0); } catch { return 0; } })();
+      const last30 = await (async () => { try { const [r]: any = await c.query("SELECT COUNT(*) AS n FROM subscribers WHERE createdAt >= DATE_SUB(NOW(), INTERVAL 30 DAY)"); return Number(r?.[0]?.n ?? 0); } catch { return 0; } })();
+      let rows: { source: string; n: number }[] = [];
+      try {
+        const [r]: any = await c.query("SELECT COALESCE(NULLIF(source,''),'(direct)') AS source, COUNT(*) AS n FROM subscribers GROUP BY source");
+        rows = (r as any[]).map((x) => ({ source: String(x.source), n: Number(x.n) }));
+      } catch { /* source column may not exist on an older table */ }
+      const pageMap = new Map<string, number>();
+      const segMap = new Map<string, number>();
+      for (const { source, n } of rows) {
+        const parts = source.split(":");
+        const tail = parts[parts.length - 1];
+        const seg = SEGMENTS.has(tail) ? tail : "unspecified";
+        const page = SEGMENTS.has(tail) ? (parts.slice(0, -1).join(":") || "(direct)") : source;
+        pageMap.set(page, (pageMap.get(page) || 0) + n);
+        segMap.set(seg, (segMap.get(seg) || 0) + n);
+      }
+      const byPage = [...pageMap.entries()].map(([page, n]) => ({ page, signups: n })).sort((a, b) => b.signups - a.signups).slice(0, 15);
+      const bySegment = [...segMap.entries()].map(([segment, n]) => ({ segment, signups: n })).sort((a, b) => b.signups - a.signups);
+      return { total, last30, byPage, bySegment };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
 // Commerce status: the per-ebook truth of what is actually sellable right now.
 // For each book in the catalog: does it have a Stripe price (env var or the
 // stored site_settings id), and therefore a live Buy button? Read-only.
@@ -3354,6 +3394,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/db-inventory") return dbInventory(req, res);
     if (url === "/api/admin/metrics") return adminMetrics(req, res);
     if (url === "/api/admin/analytics") return adminAnalytics(req, res);
+    if (url === "/api/admin/signups") return adminSignups(req, res);
     if (url === "/api/admin/commerce-status") return adminCommerceStatus(req, res);
     if (url === "/api/track") return recordPageView(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);

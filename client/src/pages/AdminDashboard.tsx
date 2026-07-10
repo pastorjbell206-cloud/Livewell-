@@ -38,6 +38,13 @@ export default function AdminDashboard() {
   const [analytics, setAnalytics] = useState<Analytics | null>(null);
   const [analyticsError, setAnalyticsError] = useState(false);
   const [noPriceCount, setNoPriceCount] = useState<number | null>(null);
+  type Signups = {
+    total: number; last30: number;
+    byPage: { page: string; signups: number }[];
+    bySegment: { segment: string; signups: number }[];
+  };
+  const [signups, setSignups] = useState<Signups | null>(null);
+  const [signupsError, setSignupsError] = useState(false);
   const money = (cents: number, cur = "usd") =>
     new Intl.NumberFormat("en-US", { style: "currency", currency: (cur || "usd").toUpperCase() }).format((cents || 0) / 100);
   useEffect(() => {
@@ -68,6 +75,10 @@ export default function AdminDashboard() {
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
       .then((d) => active && d?.ok && setNoPriceCount((d.books || []).filter((b: { status: string }) => b.status === "no-price").length))
       .catch(() => { /* the strip simply omits what it cannot know */ });
+    fetch("/api/admin/signups", { credentials: "include" })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((d) => active && d?.ok && setSignups(d))
+      .catch(() => active && setSignupsError(true));
     return () => { active = false; };
   }, []);
 
@@ -324,6 +335,67 @@ export default function AdminDashboard() {
                       <div key={r.host} className="flex items-center justify-between py-1" style={{ fontFamily: "var(--U)", fontSize: "13px", gap: "12px" }}>
                         <span style={{ color: "#1A1A1A", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{r.host}</span>
                         <span style={{ color: "#6B7280", flexShrink: 0 }}>{r.views.toLocaleString()}</span>
+                      </div>
+                    ))
+                  )}
+                </div>
+              </div>
+            </>
+          )}
+        </div>
+
+        {/* Where subscribers come from — the conversion side of traffic, from
+            /api/admin/signups (subscribers.source split into page + segment). */}
+        <div className="mb-12">
+          <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "#1A1A1A" }}>Where subscribers come from</h2>
+          <p className="font-body text-sm mb-4" style={{ color: "#6B7280" }}>
+            Which pages turn readers into subscribers, and who they say they are. Traffic tells you who visits; this tells you what converts.
+          </p>
+          {signupsError && (
+            <p className="font-body text-sm" style={{ color: "#9B2C2C" }}>
+              Couldn&rsquo;t load signups (needs the production API and an admin session).
+            </p>
+          )}
+          {!signups && !signupsError && (
+            <p className="font-body text-sm" style={{ color: "#6B7280" }}><Loader2 size={16} className="animate-spin inline" /> Loading…</p>
+          )}
+          {signups && (
+            <>
+              <div className="grid grid-cols-2 gap-6 mb-6" style={{ maxWidth: 460 }}>
+                {[
+                  { label: "Total subscribers", value: signups.total.toLocaleString(), sub: "all sources", color: "#2D4A3E" },
+                  { label: "New · 30 days", value: signups.last30.toLocaleString(), sub: "added this month", color: "#B8963E" },
+                ].map((m) => (
+                  <div key={m.label} className="flex flex-col p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF", borderTop: `5px solid ${m.color}`, boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
+                    <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>{m.label}</div>
+                    <div className="font-display font-bold" style={{ color: m.color, fontSize: "2.4rem", lineHeight: 1 }}>{m.value}</div>
+                    <div className="font-ui text-xs mt-2" style={{ color: "#9CA3AF" }}>{m.sub}</div>
+                  </div>
+                ))}
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div style={{ background: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: "8px", padding: "16px 18px" }}>
+                  <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>Top converting pages</div>
+                  {signups.byPage.length === 0 ? (
+                    <div className="font-body text-sm" style={{ color: "#9CA3AF" }}>No signups recorded yet.</div>
+                  ) : (
+                    signups.byPage.slice(0, 8).map((p) => (
+                      <div key={p.page} className="flex items-center justify-between py-1" style={{ fontFamily: "var(--U)", fontSize: "13px", gap: "12px" }}>
+                        <span style={{ color: "#1A1A1A", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{p.page}</span>
+                        <span style={{ color: "#6B7280", flexShrink: 0 }}>{p.signups.toLocaleString()}</span>
+                      </div>
+                    ))
+                  )}
+                </div>
+                <div style={{ background: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: "8px", padding: "16px 18px" }}>
+                  <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>By audience segment</div>
+                  {signups.bySegment.length === 0 ? (
+                    <div className="font-body text-sm" style={{ color: "#9CA3AF" }}>No signups recorded yet.</div>
+                  ) : (
+                    signups.bySegment.map((s) => (
+                      <div key={s.segment} className="flex items-center justify-between py-1" style={{ fontFamily: "var(--U)", fontSize: "13px", gap: "12px" }}>
+                        <span style={{ color: "#1A1A1A", textTransform: "capitalize" }}>{s.segment}</span>
+                        <span style={{ color: "#6B7280", flexShrink: 0 }}>{s.signups.toLocaleString()}</span>
                       </div>
                     ))
                   )}
