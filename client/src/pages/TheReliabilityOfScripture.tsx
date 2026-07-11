@@ -8,6 +8,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { BookNextSteps } from "@/components/BookNextSteps";
 import { StripeBuyButton } from "@/components/StripeBuyButton";
 import { SITE_URL } from "@/lib/site";
 
@@ -85,6 +86,15 @@ export default function TheReliabilityOfScripture() {
           </p>
         </div>
       </section>
+
+      <BookNextSteps
+        slug="the-reliability-of-scripture"
+        related={[
+          { href: "/books/believe", title: "Believe: The Rational Case for Christian Faith" },
+          { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
+          { href: "/books/deconstruction-of-faith", title: "The Deconstruction of Faith" },
+        ]}
+      />
     </Layout>
   );
 }

@@ -1,56 +1,121 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { AlertCircle, Home } from "lucide-react";
-import { useLocation } from "wouter";
+import { Link } from "wouter";
 import { SEOMeta } from "@/components/SEOMeta";
 
+/**
+ * 404 — the one page a lost reader lands on. It keeps the room: cream,
+ * Cormorant, quiet. No alarm icons; a wrong turn is not an emergency.
+ * Three real paths forward instead of a single "Go Home" dead end.
+ */
 export default function NotFound() {
-  const [, setLocation] = useLocation();
-
-  const handleGoHome = () => {
-    setLocation("/");
-  };
-
   return (
     <>
-    <SEOMeta title="Page Not Found" description="The page you're looking for doesn't exist." />
-    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100">
-      <Card className="w-full max-w-lg mx-4 shadow-lg border-0 bg-white/80 backdrop-blur-sm">
-        <CardContent className="pt-8 pb-8 text-center">
-          <div className="flex justify-center mb-6">
-            <div className="relative">
-              <div className="absolute inset-0 bg-red-100 rounded-full animate-pulse" />
-              <AlertCircle className="relative h-16 w-16 text-red-500" />
-            </div>
-          </div>
-
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">404</h1>
-
-          <h2 className="text-xl font-semibold text-slate-700 mb-4">
-            Page Not Found
-          </h2>
-
-          <p className="text-slate-600 mb-8 leading-relaxed">
-            Sorry, the page you are looking for doesn't exist.
-            <br />
-            It may have been moved or deleted.
-          </p>
-
+      <SEOMeta title="Page Not Found" description="This page doesn't exist. The writing, the books, and the tools are still where they were." />
+      <div
+        style={{
+          minHeight: "100vh",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          background: "var(--bone)",
+          padding: "48px 24px",
+        }}
+      >
+        <div style={{ maxWidth: "560px", textAlign: "center" }}>
           <div
-            id="not-found-button-group"
-            className="flex flex-col sm:flex-row gap-3 justify-center"
+            style={{
+              fontFamily: "var(--U)",
+              fontSize: "12px",
+              fontWeight: 500,
+              letterSpacing: "0.18em",
+              textTransform: "uppercase",
+              color: "var(--mustard-text)",
+              marginBottom: "20px",
+            }}
           >
-            <Button
-              onClick={handleGoHome}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
-            >
-              <Home className="w-4 h-4 mr-2" />
-              Go Home
-            </Button>
+            404
           </div>
-        </CardContent>
-      </Card>
-    </div>
+          <h1
+            style={{
+              fontFamily: "var(--F)",
+              fontWeight: 400,
+              fontSize: "clamp(34px, 6vw, 52px)",
+              lineHeight: 1.1,
+              letterSpacing: "-0.02em",
+              color: "var(--ink)",
+              margin: "0 0 20px",
+            }}
+          >
+            There is no page here.
+          </h1>
+          <p
+            style={{
+              fontFamily: "var(--B)",
+              fontSize: "17px",
+              lineHeight: 1.7,
+              color: "var(--ink-muted)",
+              margin: "0 0 36px",
+            }}
+          >
+            The address may have changed, or the link was wrong. Nothing is
+            lost — the writing, the books, and the tools are all still where
+            they were.
+          </p>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "12px",
+              justifyContent: "center",
+            }}
+          >
+            <Link
+              href="/"
+              style={{
+                fontFamily: "var(--U)",
+                fontSize: "14px",
+                fontWeight: 500,
+                background: "var(--mustard)",
+                color: "var(--ink)",
+                padding: "12px 24px",
+                borderRadius: "3px",
+                textDecoration: "none",
+              }}
+            >
+              Back to the front page
+            </Link>
+            <Link
+              href="/explore"
+              style={{
+                fontFamily: "var(--U)",
+                fontSize: "14px",
+                fontWeight: 500,
+                border: "1px solid var(--border)",
+                color: "var(--ink)",
+                padding: "12px 24px",
+                borderRadius: "3px",
+                textDecoration: "none",
+              }}
+            >
+              Browse everything
+            </Link>
+            <Link
+              href="/writing"
+              style={{
+                fontFamily: "var(--U)",
+                fontSize: "14px",
+                fontWeight: 500,
+                border: "1px solid var(--border)",
+                color: "var(--ink)",
+                padding: "12px 24px",
+                borderRadius: "3px",
+                textDecoration: "none",
+              }}
+            >
+              The essays
+            </Link>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

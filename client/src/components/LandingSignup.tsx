@@ -15,7 +15,18 @@ export function LandingSignup({ source }: { source: string }) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !email.includes("@") || subscribe.isPending) return;
-    subscribe.mutate({ email });
+    // Attribution: the page the form sat on, plus the audience the reader
+    // self-selected earlier (SegmentedSignup persists it) if we have one.
+    let audienceType: "skeptic" | "christian" | "pastor" | "exploring" | undefined;
+    try {
+      const stored = window.localStorage.getItem("livewell:audience");
+      if (stored === "skeptic" || stored === "christian" || stored === "pastor" || stored === "exploring") {
+        audienceType = stored;
+      }
+    } catch {
+      /* private mode — attribution stays page-only */
+    }
+    subscribe.mutate({ email, source, audienceType });
     if (typeof window !== "undefined") {
       try {
         window.dispatchEvent(new CustomEvent("newsletter_signup", { detail: { source } }));

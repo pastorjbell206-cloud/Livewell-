@@ -142,7 +142,10 @@
       "wouter@3.7.1": "patches/wouter@3.7.1.patch"
     },
     "overrides": {
-      "tailwindcss>nanoid": "3.3.7"
+      "tailwindcss>nanoid": "3.3.7",
+      "qs@<6.15.2": ">=6.15.2",
+      "path-to-regexp@<0.1.13": ">=0.1.13",
+      "mdast-util-to-hast@<13.2.1": ">=13.2.1"
     },
     "onlyBuiltDependencies": [
       "esbuild",

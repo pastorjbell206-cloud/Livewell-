@@ -7,6 +7,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { BookNextSteps } from "@/components/BookNextSteps";
 import { StripeBuyButton } from "@/components/StripeBuyButton";
 import { SITE_URL } from "@/lib/site";
 
@@ -120,6 +121,15 @@ export default function RaisingBelievers() {
           </p>
         </div>
       </section>
+
+      <BookNextSteps
+        slug="raising-believers"
+        related={[
+          { href: "/books/believe", title: "Believe: The Rational Case for Christian Faith" },
+          { href: "/books/deconstruction-of-faith", title: "The Deconstruction of Faith" },
+          { href: "/consider-the-birds", title: "Consider the Birds" },
+        ]}
+      />
     </Layout>
   );
 }
