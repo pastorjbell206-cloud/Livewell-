@@ -8,6 +8,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { BookNextSteps } from "@/components/BookNextSteps";
 import { StripeBuyButton } from "@/components/StripeBuyButton";
 import { SITE_URL } from "@/lib/site";
 
@@ -85,6 +86,15 @@ export default function IsCriticalRaceTheoryBiblical() {
           </p>
         </div>
       </section>
+
+      <BookNextSteps
+        slug="critical-race-theory-biblical"
+        related={[
+          { href: "/books/when-god-bless-america", title: "When God Bless America Replaces Thy Kingdom Come" },
+          { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
+          { href: "/books/bible-and-homosexuality", title: "What Does the Bible Really Say About Homosexuality?" },
+        ]}
+      />
     </Layout>
   );
 }

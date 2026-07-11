@@ -9,13 +9,18 @@
 import { createElement, useEffect } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { BookNextSteps } from "@/components/BookNextSteps";
 import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
+import { STRIPE_PUBLISHABLE_KEY } from "@/lib/stripe";
 
 const COVER = "/books/when-god-bless-america.jpg";
 
-/** Stripe's hosted Buy Button web component. Loads the script once, then renders
- *  the <stripe-buy-button> custom element (created via createElement so it needs
- *  no JSX intrinsic-element declaration). The publishable key is public by design. */
+/** Stripe's hosted Buy Button web component — this book predates the Payment
+ *  Link pattern the sibling pages use (components/StripeBuyButton), and the
+ *  embedded button is what its Stripe product is wired to. Loads the script
+ *  once, then renders the <stripe-buy-button> custom element (created via
+ *  createElement so it needs no JSX intrinsic-element declaration). The
+ *  publishable key is public by design and lives in lib/stripe. */
 function StripeBuyButton() {
   useEffect(() => {
     if (!document.getElementById("stripe-buy-button-js")) {
@@ -28,8 +33,7 @@ function StripeBuyButton() {
   }, []);
   return createElement("stripe-buy-button", {
     "buy-button-id": "buy_btn_1ThiwSG7Y8x20otNSD1wDhtI",
-    "publishable-key":
-      "pk_live_51RYCqAG7Y8x20otN6Qm3UgBaVDYFC00eaEXlrVT1hShuTW7qg3ylfcX3UHGOc0oyX75k6c4DhsKyz4NFSU4aZkOx00HzSLA7FH",
+    "publishable-key": STRIPE_PUBLISHABLE_KEY,
   });
 }
 
@@ -152,6 +156,15 @@ export default function WhenGodBlessAmerica() {
           </p>
         </div>
       </section>
+
+      <BookNextSteps
+        slug="when-god-bless-america"
+        related={[
+          { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
+          { href: "/books/critical-race-theory-biblical", title: "Is Critical Race Theory Biblical?" },
+          { href: "/books/deconstruction-of-faith", title: "The Deconstruction of Faith" },
+        ]}
+      />
     </Layout>
   );
 }

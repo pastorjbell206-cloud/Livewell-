@@ -9,6 +9,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { BookNextSteps } from "@/components/BookNextSteps";
 import { StripeBuyButton } from "@/components/StripeBuyButton";
 import { SITE_URL } from "@/lib/site";
 
@@ -86,6 +87,15 @@ export default function BibleAndTransgenderIdentity() {
           </p>
         </div>
       </section>
+
+      <BookNextSteps
+        slug="bible-and-transgender-identity"
+        related={[
+          { href: "/books/bible-and-homosexuality", title: "What Does the Bible Really Say About Homosexuality?" },
+          { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
+          { href: "/books/raising-believers", title: "Raising Believers" },
+        ]}
+      />
     </Layout>
   );
 }

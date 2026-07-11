@@ -7,6 +7,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { BookNextSteps } from "@/components/BookNextSteps";
 import { StripeBuyButton } from "@/components/StripeBuyButton";
 import { SITE_URL } from "@/lib/site";
 
@@ -119,6 +120,15 @@ export default function Believe() {
           </p>
         </div>
       </section>
+
+      <BookNextSteps
+        slug="believe"
+        related={[
+          { href: "/books/the-reliability-of-scripture", title: "The Reliability of Scripture" },
+          { href: "/books/deconstruction-of-faith", title: "The Deconstruction of Faith" },
+          { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
+        ]}
+      />
     </Layout>
   );
 }

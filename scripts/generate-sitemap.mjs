@@ -134,6 +134,7 @@ const STATIC_PAGES = [
   // ── Added by site-elevation QW-10: every indexable static route belongs here.
   // (Thank-you pages, redirect sources, /search, and device-local pages excluded.)
   // FAQ landing pages (built to win search)
+  { url: "/faq", priority: "0.8", changefreq: "monthly" },
   { url: "/faq/can-science-and-faith-coexist", priority: "0.8", changefreq: "monthly" },
   { url: "/faq/catholic-vs-protestant", priority: "0.8", changefreq: "monthly" },
   { url: "/faq/does-god-exist", priority: "0.8", changefreq: "monthly" },
@@ -196,6 +197,11 @@ const STATIC_PAGES = [
   { url: "/nation/scorecard", priority: "0.7", changefreq: "monthly" },
   { url: "/nation/theocracy", priority: "0.8", changefreq: "monthly" },
   { url: "/nation/which-party", priority: "0.8", changefreq: "monthly" },
+  { url: "/nation/christian-nationalism", priority: "0.8", changefreq: "monthly" },
+  { url: "/nation/nationalism-history", priority: "0.8", changefreq: "monthly" },
+  { url: "/nation/power-and-church", priority: "0.8", changefreq: "monthly" },
+  { url: "/nation/progressive-captivity", priority: "0.8", changefreq: "monthly" },
+  { url: "/nation/compassion-and-coercion", priority: "0.8", changefreq: "monthly" },
   // Theology section pages previously missing
   { url: "/theology/compare", priority: "0.75", changefreq: "monthly" },
   { url: "/theology/creeds", priority: "0.75", changefreq: "monthly" },
@@ -239,6 +245,9 @@ const STATIC_PAGES = [
   { url: "/leadership/visitation", priority: "0.6", changefreq: "monthly" },
   // Entry points, hubs, and misc previously missing
   { url: "/start-here", priority: "0.85", changefreq: "monthly" },
+  { url: "/read", priority: "0.8", changefreq: "monthly" },
+  { url: "/pathways", priority: "0.75", changefreq: "monthly" },
+  { url: "/explore", priority: "0.75", changefreq: "monthly" },
   { url: "/pillars", priority: "0.8", changefreq: "monthly" },
   { url: "/exile", priority: "0.7", changefreq: "monthly" },
   { url: "/living-well", priority: "0.75", changefreq: "monthly" },

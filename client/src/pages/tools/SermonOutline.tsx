@@ -304,19 +304,20 @@ const OUTLINES: SermonOutline[] = [
 
 /* ── Helpers ────────────────────────────────────────────────────── */
 
-function findOutline(topic: string, audience: string): SermonOutline {
+// Topics that have a fully worked outline in the library (vs. scaffold-only).
+const TOPICS_WITH_OUTLINES = Array.from(new Set(OUTLINES.map((o) => o.topic)));
+
+function findOutline(topic: string, audience: string): SermonOutline | null {
   // Try exact match first
   const exact = OUTLINES.find(
     (o) => o.topic === topic && o.audience === audience
   );
   if (exact) return exact;
 
-  // Fall back to closest topic match
-  const topicMatch = OUTLINES.find((o) => o.topic === topic);
-  if (topicMatch) return topicMatch;
-
-  // Absolute fallback
-  return OUTLINES[0];
+  // Fall back to closest topic match (the display labels the audience it
+  // was written for). Never substitute a different topic: a pastor who
+  // asked for Family must not silently receive Grace.
+  return OUTLINES.find((o) => o.topic === topic) ?? null;
 }
 
 /* ── Christ-centered homiletics engine ──────────────────────────────
@@ -333,6 +334,9 @@ const FCF: Record<string, string> = {
   Hope: "the quiet conclusion that it will not get better",
   Faith: "trusting our trust instead of the One we trust",
   Love: "the love that waits to be deserved",
+  Mission: "outsourcing the sending to professionals so the ordinary life stays undisturbed",
+  Wisdom: "collecting information while starving for someone to tell us how to live",
+  Family: "asking the people closest to us to be the god who finally completes us",
 };
 const FCF_DEFAULT = "the human refusal to live as a dependent creature";
 const CHRIST_CONN: Record<string, string> = {
@@ -340,6 +344,12 @@ const CHRIST_CONN: Record<string, string> = {
   Justice: "The just Judge took the sentence Himself so mercy would not become injustice.",
   Suffering: "The God who suffered does not explain your pain from a distance; He entered it.",
   Hope: "Hope is not optimism; it is a tomb that could not hold Him.",
+  Faith: "Faith is not the strength of your believing; it is the faithfulness of the One believed in.",
+  Love: "Love is not a feeling Jesus recommended; it is a cross He climbed while you were still His enemy.",
+  Identity: "Identity is not something you build and defend; it is a name given by the Father who already calls you His.",
+  Mission: "Mission is not a program the church runs; it is the sending of a Son the Father would not keep home.",
+  Wisdom: "Wisdom is not information you accumulate; it is a Person in whom all the treasures of knowledge are hidden.",
+  Family: "Family is not the love that finally completes you; it is the shadow of a Father who adopted you at the cost of His own Son.",
 };
 const CHRIST_DEFAULT =
   "Trace this text forward to the one it anticipates: every command exposes our need for the Christ who kept it for us.";
@@ -463,7 +473,7 @@ export default function SermonOutline() {
       {/* Content */}
       <section style={{ padding: "48px 32px", background: "var(--bone)" }}>
         <div className="wrap" style={{ maxWidth: "900px" }}>
-          {!outline ? (
+          {!scaffold ? (
             /* ── Input Form ── */
             <div
               style={{
@@ -704,6 +714,29 @@ export default function SermonOutline() {
                 </div>
               )}
 
+              {/* Library outline — or an honest account of why there isn't one */}
+              {!outline && (
+                <div style={{ background: "var(--card)", borderRadius: "8px", padding: "32px 30px", borderLeft: "3px solid var(--border)" }}>
+                  <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--ink-muted)", marginBottom: "12px" }}>
+                    Worked outline
+                  </div>
+                  <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", margin: "0 0 10px" }}>
+                    The library does not yet hold a fully worked outline on {topic ? topic.toLowerCase() : "this topic"} — and this tool will not hand you one written for a different subject and pretend it fits. The scaffold above is built for your topic and your text; it is the load-bearing part.
+                  </p>
+                  <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.7, color: "var(--ink-muted)", margin: 0 }}>
+                    Fully worked outlines are available for: {TOPICS_WITH_OUTLINES.join(", ")}.
+                  </p>
+                </div>
+              )}
+
+              {outline && outline.audience !== audience && (
+                <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", margin: 0, padding: "0 4px" }}>
+                  This worked outline was written for a {outline.audience.toLowerCase()}. The structure holds — adapt the illustrations and application questions for your {audience.toLowerCase()}.
+                </p>
+              )}
+
+              {outline && (
+              <>
               {/* Header card */}
               <div
                 style={{
@@ -1078,6 +1111,8 @@ export default function SermonOutline() {
                 <Clock size={16} />
                 Estimated delivery time: {outline.estimatedMinutes} minutes
               </div>
+              </>
+              )}
             </div>
           )}
         </div>
