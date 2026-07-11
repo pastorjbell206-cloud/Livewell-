@@ -28,6 +28,7 @@ import {
 import { SUBPATHWAY_BY_SLUG } from "@/lib/subpathwayMap.generated";
 import { HIDDEN_SLUGS } from "@/lib/hiddenSlugs";
 import { isFullEssay } from "@/lib/essayQuality";
+import { StartHereRow } from "@/components/StartHereRow";
 
 /** A post's sub-pathway: the DB value if set, else the static slug map. */
 function resolveSub(p: any): string | null {
@@ -319,6 +320,31 @@ export default function Writing() {
           )}
         </div>
       </section>
+
+      {/* THE SPINE — only on the unfiltered index, where the wall is tallest.
+          A reader who came with a filter or a search already knows their way. */}
+      {!activeTrack && !activePillar && !activeSub && !activeSeries && !activeSubTheme && !effectiveSearch && (
+        <StartHereRow
+          eyebrow="First time here? Start with these"
+          items={[
+            {
+              title: "The Atheist in the Pulpit",
+              blurb: "The honest account of an unbeliever who became a pastor — and the reader the whole site is written toward.",
+              href: "/writing/the-atheist-in-the-pulpit",
+            },
+            {
+              title: "What the End of Christian America Actually Means",
+              blurb: "The platform's thesis: what is dying is not the faith but Christendom, and the difference changes everything.",
+              href: "/writing/christendom-is-ending",
+            },
+            {
+              title: "When the Church Is the Thing That Hurt You",
+              blurb: "For the reader with a face in their mind — what happened was real, and God is angrier about it than you are.",
+              href: "/writing/when-the-church-is-what-hurt-you",
+            },
+          ]}
+        />
+      )}
 
       {/* PILLAR CHIPS — the two-movement / six-pillar taxonomy */}
       <section
