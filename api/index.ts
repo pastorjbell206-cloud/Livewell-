@@ -1205,16 +1205,21 @@ async function listSlimPosts(): Promise<any[]> {
   try {
     dbRows = await withConn(async (c) => {
       const base = "id, slug, title, excerpt, pillar, readTime, published, featured, publishedAt, createdAt";
+      // CHAR_LENGTH guard: catalog stubs (a title over a ~40-word abstract, no
+      // essay behind it) never reach listing pages — see docs/audit-corpus/.
+      // It must live in SQL: slim rows carry body:null, so the client-side
+      // isFullEssay check has nothing to measure in production.
+      const where = "WHERE published = true AND CHAR_LENGTH(body) >= 600";
       // Try the two-level taxonomy columns; fall back if the migration hasn't run.
       let rows: any = null;
       try {
         [rows] = await c.execute(
-          `SELECT ${base}, subPathway, isSeries FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 2000`
+          `SELECT ${base}, subPathway, isSeries FROM posts ${where} ORDER BY createdAt DESC LIMIT 2000`
         );
       } catch {
         try {
           [rows] = await c.execute(
-            `SELECT ${base} FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 2000`
+            `SELECT ${base} FROM posts ${where} ORDER BY createdAt DESC LIMIT 2000`
           );
         } catch { rows = null; }
       }
