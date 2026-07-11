@@ -12,6 +12,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageEndNav from "@/components/PageEndNav";
 import { SITE_URL } from "@/lib/site";
+import { trackBookOpen, trackPurchaseIntent } from "@/lib/telemetry";
 
 const prose = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
 const eyebrow: React.CSSProperties = {
@@ -38,7 +39,7 @@ export default function BookReader() {
     setBook(null); setMissing(false);
     fetch(`/books/${slug}.json`)
       .then((r) => (r.ok ? r.json() : Promise.reject()))
-      .then((d) => (d?.chapters ? setBook(d) : setMissing(true)))
+      .then((d) => { if (d?.chapters) { setBook(d); trackBookOpen(slug); } else setMissing(true); })
       .catch(() => setMissing(true));
   }, [slug]);
 
@@ -80,6 +81,7 @@ export default function BookReader() {
             {book && slug && !PAID_BOOK_SLUGS.has(slug) && (
               <a
                 href={`/downloads/books/${slug}.pdf`}
+                onClick={() => trackPurchaseIntent(slug)}
                 style={{
                   display: "inline-block", marginTop: "22px", padding: "12px 22px",
                   background: "var(--mustard)", color: "var(--ink)", textDecoration: "none",
