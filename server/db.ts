@@ -110,11 +110,17 @@ export async function createPost(data: InsertPost) {
   return rows[0];
 }
 
+// Catalog stubs (a title over a ~40-word abstract, no essay behind it) never
+// reach public listings — see docs/audit-corpus/. Mirrored in api/index.ts's
+// listSlimPosts; keep the two in step (the parity rule). Admin listAll
+// (onlyPublished=false) still sees everything.
+const fullEssayOnly = sql`CHAR_LENGTH(${posts.body}) >= 600`;
+
 export async function listPosts(onlyPublished = false) {
   const db = await getDb();
   if (!db) throw new Error("Database not available");
   if (onlyPublished) {
-    return db.select().from(posts).where(eq(posts.published, true)).orderBy(desc(posts.publishedAt));
+    return db.select().from(posts).where(and(eq(posts.published, true), fullEssayOnly)).orderBy(desc(posts.publishedAt));
   }
   return db.select().from(posts).orderBy(desc(posts.createdAt));
 }
@@ -149,7 +155,7 @@ export async function listPostsForIndex() {
       updatedAt: posts.updatedAt,
     })
     .from(posts)
-    .where(eq(posts.published, true))
+    .where(and(eq(posts.published, true), fullEssayOnly))
     .orderBy(desc(posts.publishedAt));
 }
 
