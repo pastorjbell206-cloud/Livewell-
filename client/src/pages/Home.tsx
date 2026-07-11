@@ -92,7 +92,7 @@ const DOORS = [
     title: "I have a hard question",
     blurb:
       "Politics, justice, sexuality, hell, hypocrisy — the questions people actually ask, taken seriously enough to answer.",
-    href: "/faq",
+    href: "/answers",
     cta: "Find your question",
   },
 ];
