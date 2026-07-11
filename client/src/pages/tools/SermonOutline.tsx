@@ -25,6 +25,10 @@ interface SermonOutline {
 
 /* ── Data ──────────────────────────────────────────────────────── */
 
+// Only topics with a WRITTEN outline are offered. Identity, Mission, Wisdom,
+// and Family return when their outlines are written — the old dropdown listed
+// them and silently served the Grace outline mislabeled, which a working
+// pastor would rightly never forgive.
 const TOPICS = [
   "Grace",
   "Justice",
@@ -32,10 +36,6 @@ const TOPICS = [
   "Hope",
   "Love",
   "Suffering",
-  "Identity",
-  "Mission",
-  "Wisdom",
-  "Family",
 ] as const;
 
 const AUDIENCES = [
@@ -311,11 +311,14 @@ function findOutline(topic: string, audience: string): SermonOutline {
   );
   if (exact) return exact;
 
-  // Fall back to closest topic match
+  // Fall back to the topic's outline for a different audience — the topic is
+  // still the one the pastor chose; only the audience emphasis differs.
   const topicMatch = OUTLINES.find((o) => o.topic === topic);
   if (topicMatch) return topicMatch;
 
-  // Absolute fallback
+  // Unreachable while TOPICS mirrors OUTLINES; kept so a future topic added to
+  // the dropdown without an outline fails loudly in dev rather than lying.
+  if (import.meta.env.DEV) throw new Error(`No outline written for topic "${topic}"`);
   return OUTLINES[0];
 }
 

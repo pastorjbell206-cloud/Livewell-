@@ -78,7 +78,7 @@ const THEMES: Record<string, ThemeData> = {
       teens: {
         teaching: [
           "Psalm 100 is a processional psalm. Israel sang it while walking into the temple courts. Notice the order. Thanksgiving comes first, at the gate, before the worship, before the requests, before anything. The psalm does not say enter His gates when you feel grateful. It says enter with thanksgiving. Gratitude is the admission price you pay with your attention.",
-          "There is research on this now, and it confirms what the psalm assumed three thousand years ago. People who practice thanks, who name specific good things on purpose, are measurably less anxious and less envious. But the psalm goes further than self-help does. It tells you who to thank. Gratitude that floats free, thankful to no one in particular, eventually starves. The psalm anchors it. The Lord is good. His mercy is everlasting. His truth endures to all generations.",
+          "People who practice thanks, who name specific good things on purpose, tend to notice more good things to name — the psalm assumed as much three thousand years ago. But the psalm goes further than self-help does. It tells you who to thank. Gratitude that floats free, thankful to no one in particular, eventually starves. The psalm anchors it. The Lord is good. His mercy is everlasting. His truth endures to all generations.",
           "Envy is the opposite discipline, and your phone runs on it. Every feed is built to show you a life slightly better than yours. The psalm is the counter-practice. You cannot scroll and give thanks at the same moment. One of them will form you.",
         ],
         questions: [
@@ -1103,7 +1103,7 @@ export default function FamilyDevotionBuilder() {
             <div style={{ background: "#FFFFFF", border: "1px solid var(--border)", borderTop: "4px solid var(--mustard)", borderRadius: "10px", padding: "28px 20px" }}>
               <div style={SECTION_LABEL}>Build a series</div>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", margin: "0 0 24px", maxWidth: "62ch" }}>
-                One age band for the whole term. Then add themes in the order your family will take them, one per week. Four to twelve weeks makes a term, and a theme may repeat once.
+                One age band for the whole term. Then add themes in the order your family will take them, one per week. Two weeks is the shortest term; four to twelve is the sweet spot, and a theme may repeat once.
               </p>
 
               <div style={{ marginBottom: "24px" }}>

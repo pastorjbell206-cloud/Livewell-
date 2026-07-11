@@ -680,7 +680,7 @@ function isStoredProgress(x: unknown): x is StoredProgress {
 
 export default function PastorBurnout() {
   const [savedProgress] = useState(() =>
-    readStoredJSON<StoredProgress | null>(STORAGE_KEY, isStoredProgress, null),
+    readStoredJSON<StoredProgress | null>(PROGRESS_KEY, isStoredProgress, null),
   );
   const [currentCategory, setCurrentCategory] = useState(() =>
     savedProgress
