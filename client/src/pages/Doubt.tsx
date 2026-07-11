@@ -15,7 +15,7 @@ export default function Doubt() {
     },
     {
       title: "When the Church Married Empire",
-      slug: "when-church-married-empire",
+      slug: "when-the-church-married-empire",
       topic: "Faith & Doubt",
       readTime: "12 min read"
     },

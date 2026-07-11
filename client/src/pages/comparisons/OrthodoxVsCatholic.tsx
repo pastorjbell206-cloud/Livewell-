@@ -61,7 +61,7 @@ const RELATED_ARTICLES = [
   { title: "The Orthodox Way", slug: "the-orthodox-way" },
   { title: "The Catholic Intellectual Tradition", slug: "the-catholic-intellectual-tradition" },
   { title: "The Rise and Fall of Christendom", slug: "the-rise-and-fall-of-christendom" },
-  { title: "When the Church Married Empire", slug: "when-church-married-empire" },
+  { title: "When the Church Married Empire", slug: "when-the-church-married-empire" },
 ];
 
 const FAQ_ITEMS = [

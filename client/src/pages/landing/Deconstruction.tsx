@@ -7,8 +7,8 @@ import { LandingSignup } from "@/components/LandingSignup";
 const ARTICLES = [
   { title: "Deconstruction Is Not Destruction", slug: "deconstruction-is-not-destruction" },
   { title: "The Rise of the Nones", slug: "the-rise-of-the-nones" },
-  { title: "The Exvangelical Movement", slug: "the-exvangelical-movement" },
-  { title: "Reconstructing Faith After Deconstruction", slug: "reconstructing-faith-after-deconstruction" },
+  { title: "The Exvangelical Movement", slug: "exvangelical-when-leaving-isnt-losing-faith" },
+  { title: "Reconstructing Faith After Deconstruction", slug: "reconstructing-faith" },
   { title: "The Spirituality of Doubt", slug: "the-spirituality-of-doubt" },
   { title: "The Problem with Certainty", slug: "the-problem-with-certainty" },
 ];
@@ -123,7 +123,7 @@ export default function Deconstruction() {
                 <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6 }}>For the person in the middle of it. The thing that feels like falling apart might be the thing that puts you back together.</p>
               </div>
             </Link>
-            <Link href="/writing/reconstructing-faith-after-deconstruction" style={{ textDecoration: "none" }}>
+            <Link href="/writing/reconstructing-faith" style={{ textDecoration: "none" }}>
               <div style={{ background: "var(--card)", padding: "24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
                 <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "8px" }}>I AM REBUILDING</p>
                 <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)", marginBottom: "8px" }}>Reconstructing Faith After Deconstruction</p>

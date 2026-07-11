@@ -10,7 +10,7 @@ const TIER_1 = {
   articles: [
     { title: "The Rise and Fall of Christendom", slug: "the-rise-and-fall-of-christendom" },
     { title: "Constantine's Bargain", slug: "constantines-bargain" },
-    { title: "When the Church Married Empire", slug: "when-church-married-empire" },
+    { title: "When the Church Married Empire", slug: "when-the-church-married-empire" },
     { title: "The Great Schism", slug: "the-great-schism" },
     { title: "The Reformation and Its Consequences", slug: "the-reformation-and-its-consequences" },
     { title: "The Enlightenment and the Crisis of Authority", slug: "the-enlightenment-and-the-crisis-of-authority" },
@@ -44,9 +44,9 @@ const TIER_3 = {
     { title: "Performative Faith", slug: "performative-faith" },
     { title: "The Celebrity Pastor Problem", slug: "the-celebrity-pastor-problem" },
     { title: "When the Church Became a Brand", slug: "when-the-church-became-a-brand" },
-    { title: "The Wreckage of Purity Culture", slug: "the-wreckage-of-purity-culture" },
+    { title: "The Wreckage of Purity Culture", slug: "purity-culture-and-its-wreckage" },
     { title: "The Church and Race", slug: "the-church-and-race" },
-    { title: "The Sexual Abuse Crisis in the Church", slug: "the-sexual-abuse-crisis-in-the-church" },
+    { title: "The Sexual Abuse Crisis in the Church", slug: "sexual-abuse-crisis-in-the-church" },
   ],
 };
 
@@ -73,14 +73,14 @@ const TIER_5 = {
   articles: [
     { title: "Deconstruction Is Not Destruction", slug: "deconstruction-is-not-destruction" },
     { title: "The Rise of the Nones", slug: "the-rise-of-the-nones" },
-    { title: "The Exvangelical Movement", slug: "the-exvangelical-movement" },
-    { title: "Reconstructing Faith After Deconstruction", slug: "reconstructing-faith-after-deconstruction" },
+    { title: "The Exvangelical Movement", slug: "exvangelical-when-leaving-isnt-losing-faith" },
+    { title: "Reconstructing Faith After Deconstruction", slug: "reconstructing-faith" },
     { title: "The Spirituality of Doubt", slug: "the-spirituality-of-doubt" },
     { title: "The Problem with Certainty", slug: "the-problem-with-certainty" },
     { title: "Religious Trauma Is Real", slug: "religious-trauma-is-real" },
-    { title: "Spiritual Abuse in the Church", slug: "spiritual-abuse-in-the-church" },
-    { title: "The Church and Mental Health", slug: "the-church-and-mental-health" },
-    { title: "How to Find a Church That Won't Hurt You", slug: "how-to-find-a-church-that-wont-hurt-you" },
+    { title: "Spiritual Abuse in the Church", slug: "spiritual-abuse-how-good-theology-gets-weaponized" },
+    { title: "The Church and Mental Health", slug: "church-and-mental-health" },
+    { title: "How to Find a Church That Won't Hurt You", slug: "finding-a-good-church" },
   ],
 };
 
