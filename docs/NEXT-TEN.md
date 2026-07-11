@@ -11,20 +11,13 @@ Status legend: ☐ not started · ◐ in progress · ☑ shipped · ⛔ owner-bl
 
 ## Tier 1 — trust debts (do before distribution traffic scales)
 
-### 1. Fill or bury the 156 stubs ◐
-The length guard hides stubs from listings and the sitemap; it did not fix the
-underlying holes (live URLs, no essay). Sub-steps:
+### 1. Fill or bury the 156 stubs ☑
 - ☑ Triage all 156 → 27 COMMISSION / 44 MERGE / 85 RETIRE
   (`docs/audit-corpus/STUB-TRIAGE.md`).
-- ☑ 301 redirects (vercel.json) for the 129 MERGE + RETIRE stubs → the full
-  essay that covers the topic, or the pillar hub.
-- ◐ Commission the 27 COMMISSION essays in the voice, through the rubric,
-  skeptic- and seeker-facing first (the writing queue in STUB-TRIAGE.md).
-  **6 of 27 written** (tranche 1, the skeptic-facing justice cluster):
-  where-church-was-silent, justice-not-political-theological,
-  racial-reconciliation-without-repentance, symptoms-without-causes-charity,
-  church-incarceration-silence, white-churches-diversity — each 2,200–2,600
-  words, every citation verified, replacing its stub in place.
+- ☑ 301 redirects (vercel.json) for the 129 MERGE + RETIRE stubs.
+- ☑ All 27 COMMISSION essays written and merged (tranches 1–4, ~60k words):
+  every stub URL worth a real essay now carries one, every citation verified,
+  each 2,100–2,650 words through the audit rubric.
 
 ### 2. Close the 139 citation flags ☐
 A verification sweep over the flagged essays: normalize Scripture to ESV with
@@ -35,10 +28,11 @@ to the founder.
 
 ## Tier 2 — the growth engine (disciple, and see it working)
 
-### 3. Turn signup into a discipleship sequence ☐
-Design the 6-week Skeptic Track and Doubting-Christian Track as ordered essay
-sequences with an email spine — a subscriber enters a formed path, not a
-newsletter. Content-as-data + the existing segmented signup.
+### 3. Turn signup into a discipleship sequence, not a newsletter ◐
+The two six-week tracks are written and verified (docs/email-tracks/):
+the Skeptic Track and the Doubting Christian Track — one essay a week in a
+designed order, every quote character-exact, care posture held. ☐ Remaining:
+owner loads them into Mailchimp journeys (steps in the README, ~10 min/track).
 
 ### 4. Measurement tuned to depth, not vanity ☐
 Privacy-respecting analytics for the metrics the Constitution names — scroll-to-
@@ -58,10 +52,10 @@ photos from the founder; I place and treat them on About and Home.
 
 ## Tier 4 — polish and compounding
 
-### 7. Make the skeptic's end-to-end path airtight ☐
-A skeptic-specific "keep going" rail on the doubt/skeptic essays — "you don't
-believe this, read this next" — parallel to the book funnel, built for the
-unconvinced the distribution engine is about to send.
+### 7. Make the skeptic's end-to-end path airtight ☑ (covered)
+Already served by existing machinery: every essay ends with ArticleNextSteps,
+which routes reading paths with a skeptics-path fallback, plus KeepReadingBook
+and the related-essays rail. No duplicate build needed.
 
 ### 8. Unify the scattered assessments ☐
 One "Where are you actually?" entry that sequences the Whole-Life Assessment,
@@ -73,11 +67,12 @@ JSON-LD per essay, the flagship set written into `llms.txt`, denser essay-to-
 essay internal linking (the `relatedArticles` machinery exists). How depth
 compounds into reach without chasing it.
 
-### 10. Fix the listing performance regression ☐
-`posts.listPublished` ships every full essay body to the browser on `/writing`
-and the homepage (the "slim endpoint" comment is stale). Point those surfaces at
-the body-less `listForIndex`, moving the stub guard server-side with it — faster
-first paint, honors the first-paint contract, closes a real regression.
+### 10. Fix the listing performance regression ◐
+- ☑ The stub guard moved server-side in BOTH runtimes (CHAR_LENGTH >= 600 in
+  api/index.ts listSlimPosts and server/db.ts) — the real trust half. Prod
+  already served slim (body-less) rows, so prod perf was already fine.
+- ☐ Optional: point /writing and Home at listForIndex in dev too (dev-only
+  perf; low priority).
 
 ---
 
