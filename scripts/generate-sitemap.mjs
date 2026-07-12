@@ -302,6 +302,17 @@ function manifestPages() {
       console.warn(`[sitemap] could not read ${s.file}: ${err.message}`);
     }
   }
+  // Whole-Bible sermon library: one indexable page per book (id-keyed, not slug).
+  try {
+    const wb = JSON.parse(fs.readFileSync("client/public/leadership/whole-bible-sermons.json", "utf8"));
+    for (const b of wb.books || []) {
+      if (wb.series && wb.series[b.id] && fs.existsSync(`client/public/leadership/sermons/${b.id}.json`)) {
+        pages.push({ url: `/leadership/bible-sermons/${b.id}`, priority: "0.8", changefreq: "monthly" });
+      }
+    }
+  } catch (err) {
+    console.warn(`[sitemap] could not read whole-bible-sermons: ${err.message}`);
+  }
   return pages;
 }
 
