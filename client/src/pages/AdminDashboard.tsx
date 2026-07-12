@@ -3,7 +3,6 @@ import { Link } from "wouter";
 import { trpc } from "@/lib/trpc";
 import { PenLine, FolderOpen, BookOpen, Loader2, Upload, Wand2, Copy, FilePlus2, Download, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
-import contentData from "@/data/content-data.json";
 
 export default function AdminDashboard() {
   const postsQuery = trpc.posts.listAll.useQuery();
@@ -97,6 +96,9 @@ export default function AdminDashboard() {
   ];
 
   const handleSeedContent = async () => {
+    // The seed library is 2.3 MB; load it only when this action is invoked so
+    // it never rides in the dashboard's JS chunk.
+    const contentData = (await import("@/data/content-data.json")).default;
     if (!confirm(`This will import ${contentData.posts.length} articles and ${contentData.books.length} books. Duplicates will be skipped. Continue?`)) return;
     setSeeding(true);
     setSeedStatus("Seeding content…");
