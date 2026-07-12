@@ -66,11 +66,15 @@ export default function Writing() {
   const [search, setSearch] = useState("");
   const [showFilters, setShowFilters] = useState(false);
 
-  // URL-driven filter state. Reads ?track=, ?audience=, ?format=, ?q=
+  // URL-driven filter state. Reads ?track=, ?audience=, ?format=, ?q=.
+  // Re-read on route change during render (the documented "state from
+  // previous renders" pattern) so filters update in the same pass.
   const [params, setParams] = useState(() => parseSearchParams());
-  useEffect(() => {
+  const [prevLocation, setPrevLocation] = useState(location);
+  if (prevLocation !== location) {
+    setPrevLocation(location);
     setParams(parseSearchParams());
-  }, [location]);
+  }
 
   const activeTrack = params.get("track");
   const activePillar = params.get("pillar");
