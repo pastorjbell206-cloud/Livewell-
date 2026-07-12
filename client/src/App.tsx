@@ -230,6 +230,7 @@ const Deconstruction = lazy(() => import("./pages/landing/Deconstruction"));
 const ChurchHistory = lazy(() => import("./pages/landing/ChurchHistory"));
 const HistoricFaith = lazy(() => import("./pages/HistoricFaith"));
 const Answers = lazy(() => import("./pages/Answers"));
+const Assessments = lazy(() => import("./pages/Assessments"));
 const ChurchHurt = lazy(() => import("./pages/landing/ChurchHurt"));
 const HonestQuestions = lazy(() => import("./pages/landing/HonestQuestions"));
 const PostChristianLanding = lazy(() => import("./pages/landing/PostChristian"));
@@ -611,6 +612,7 @@ function Router() {
         <Route path="/church-history" component={ChurchHistory} />
         <Route path="/historic-faith" component={HistoricFaith} />
         <Route path="/answers" component={Answers} />
+        <Route path="/assessments" component={Assessments} />
         <Route path="/church-hurt" component={ChurchHurt} />
         <Route path="/honest-questions" component={HonestQuestions} />
         <Route path="/compare/catholic-vs-protestant" component={CatholicVsProtestant} />

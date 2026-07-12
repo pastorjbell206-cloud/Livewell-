@@ -123,6 +123,7 @@ const STATIC_PAGES = [
   { url: "/framework", priority: "0.85", changefreq: "monthly" },
   { url: "/historic-faith", priority: "0.85", changefreq: "monthly" },
   { url: "/answers", priority: "0.9", changefreq: "weekly" },
+  { url: "/assessments", priority: "0.85", changefreq: "monthly" },
   { url: "/theology", priority: "0.8", changefreq: "monthly" },
   { url: "/theology/biblical", priority: "0.75", changefreq: "monthly" },
   { url: "/theology/history", priority: "0.75", changefreq: "monthly" },
