@@ -55,10 +55,10 @@ export default function AdminSubscribers() {
       <div className="max-w-4xl">
         <div className="flex items-start justify-between mb-6">
           <div>
-            <h1 className="font-display text-2xl font-bold" style={{ color: "#1A1A1A" }}>
+            <h1 className="font-display text-2xl font-bold" style={{ color: "var(--charcoal)" }}>
               Subscribers
             </h1>
-            <p className="font-ui text-sm mt-1" style={{ color: "#6B7280" }}>
+            <p className="font-ui text-sm mt-1" style={{ color: "var(--adm-gray)" }}>
               {subscribers.length} active newsletter subscriber{subscribers.length === 1 ? "" : "s"}
             </p>
           </div>
@@ -66,50 +66,50 @@ export default function AdminSubscribers() {
             onClick={handleExport}
             disabled={subscribers.length === 0}
             className="flex items-center gap-2 px-4 py-2 rounded-sm font-ui text-sm transition-colors"
-            style={{ backgroundColor: "#1A1A1A", color: "#F7F5F0", opacity: subscribers.length === 0 ? 0.5 : 1 }}
+            style={{ backgroundColor: "var(--charcoal)", color: "var(--adm-bg)", opacity: subscribers.length === 0 ? 0.5 : 1 }}
           >
             <Download size={15} /> Export CSV
           </button>
         </div>
 
         <div className="relative mb-4">
-          <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2" style={{ color: "#6B7280" }} />
+          <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2" style={{ color: "var(--adm-gray)" }} />
           <input
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search by email"
             className="w-full pl-9 pr-3 py-2 rounded-sm font-ui text-sm border outline-none"
-            style={{ backgroundColor: "#FFFFFF", borderColor: "#E5E1D8", color: "#1A1A1A" }}
+            style={{ backgroundColor: "var(--card)", borderColor: "var(--adm-line-soft)", color: "var(--charcoal)" }}
           />
         </div>
 
         {subscribersQuery.isLoading ? (
-          <div className="flex items-center gap-2 py-12 justify-center font-ui text-sm" style={{ color: "#6B7280" }}>
+          <div className="flex items-center gap-2 py-12 justify-center font-ui text-sm" style={{ color: "var(--adm-gray)" }}>
             <Loader2 size={16} className="animate-spin" /> Loading subscribers
           </div>
         ) : filtered.length === 0 ? (
-          <div className="py-12 text-center font-ui text-sm" style={{ color: "#6B7280" }}>
+          <div className="py-12 text-center font-ui text-sm" style={{ color: "var(--adm-gray)" }}>
             {search ? "No subscribers match that search." : "No subscribers yet. The signup form on the site feeds this list."}
           </div>
         ) : (
-          <div className="rounded-sm border" style={{ backgroundColor: "#FFFFFF", borderColor: "#E5E1D8" }}>
+          <div className="rounded-sm border" style={{ backgroundColor: "var(--card)", borderColor: "var(--adm-line-soft)" }}>
             {filtered.map((s, i) => (
               <div
                 key={s.id}
                 className="flex items-center justify-between px-4 py-3"
-                style={{ borderTop: i === 0 ? "none" : "1px solid #E5E1D8" }}
+                style={{ borderTop: i === 0 ? "none" : "1px solid var(--adm-line-soft)" }}
               >
                 <div className="flex items-center gap-3 min-w-0">
-                  <Mail size={15} style={{ color: "#B8963E", flexShrink: 0 }} />
-                  <span className="font-ui text-sm truncate" style={{ color: "#1A1A1A" }}>{s.email}</span>
+                  <Mail size={15} style={{ color: "var(--adm-gold)", flexShrink: 0 }} />
+                  <span className="font-ui text-sm truncate" style={{ color: "var(--charcoal)" }}>{s.email}</span>
                   {segmentOf(s) && (
-                    <span className="font-ui text-[11px] px-2 py-0.5 rounded-full flex-shrink-0" style={{ background: "#F5F0E6", color: "#1A1A1A", border: "1px solid #E5E1D8" }}>
+                    <span className="font-ui text-[11px] px-2 py-0.5 rounded-full flex-shrink-0" style={{ background: "var(--bone)", color: "var(--charcoal)", border: "1px solid var(--adm-line-soft)" }}>
                       {segmentOf(s)}
                     </span>
                   )}
                 </div>
                 <div className="flex items-center gap-4 flex-shrink-0">
-                  <span className="font-ui text-xs" style={{ color: "#6B7280" }}>
+                  <span className="font-ui text-xs" style={{ color: "var(--adm-gray)" }}>
                     {new Date(s.subscribedAt).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
                   </span>
                   <button
@@ -117,7 +117,7 @@ export default function AdminSubscribers() {
                     disabled={removeMutation.isPending}
                     title="Remove subscriber"
                     className="p-1.5 rounded-sm transition-colors hover:bg-red-50"
-                    style={{ color: "#9B1C1C", background: "none", border: "none", cursor: "pointer" }}
+                    style={{ color: "var(--adm-danger-deep)", background: "none", border: "none", cursor: "pointer" }}
                   >
                     <Trash2 size={15} />
                   </button>

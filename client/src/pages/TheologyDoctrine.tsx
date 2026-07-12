@@ -32,17 +32,21 @@ const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 export default function TheologyDoctrine() {
   const [, params] = useRoute("/theology/doctrine/:slug");
   const slug = params?.slug;
-  const [doc, setDoc] = useState<Doctrine | null>(null);
-  const [missing, setMissing] = useState(false);
+  // The fetch result is tagged with the slug it answered; doc/missing are
+  // derived per render, so navigating to a new slug resets the view without a
+  // synchronous setState in the effect.
+  const [result, setResult] = useState<{ slug: string; doc: Doctrine | null } | null>(null);
 
   useEffect(() => {
     if (!slug) return;
-    setDoc(null); setMissing(false);
     fetch(`/theology/${slug}.json`)
       .then((r) => (r.ok ? r.json() : Promise.reject()))
-      .then((d) => setDoc(d))
-      .catch(() => setMissing(true));
+      .then((d) => setResult({ slug, doc: d }))
+      .catch(() => setResult({ slug, doc: null }));
   }, [slug]);
+
+  const doc = result && result.slug === slug ? result.doc : null;
+  const missing = !!result && result.slug === slug && result.doc === null;
 
   if (missing) {
     return (

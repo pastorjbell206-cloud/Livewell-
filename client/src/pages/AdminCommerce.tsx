@@ -77,9 +77,9 @@ export default function AdminCommerce() {
         {commerce && (
           <>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8">
-              <StatTile label="Selling now" value={String(commerce.live)} sub={`of ${commerce.total} ebooks`} color="#2D4A3E" />
-              <StatTile label="Missing a price" value={String(noPrice.length)} sub={noPrice.length ? "fix with one click below" : "nothing to fix"} color={noPrice.length ? "#9B2C2C" : "#2C3E50"} />
-              <StatTile label="Revenue" value={sales ? money(sales.revenueCents, sales.currency) : "—"} sub={sales ? `${sales.orders} orders, all time` : "loading"} color="#B8963E" />
+              <StatTile label="Selling now" value={String(commerce.live)} sub={`of ${commerce.total} ebooks`} color="var(--adm-forest)" />
+              <StatTile label="Missing a price" value={String(noPrice.length)} sub={noPrice.length ? "fix with one click below" : "nothing to fix"} color={noPrice.length ? "var(--alert)" : "var(--adm-slate)"} />
+              <StatTile label="Revenue" value={sales ? money(sales.revenueCents, sales.currency) : "—"} sub={sales ? `${sales.orders} orders, all time` : "loading"} color="var(--adm-gold)" />
             </div>
 
             {!commerce.stripeConfigured && (
@@ -109,7 +109,7 @@ export default function AdminCommerce() {
                     onClick={turnOnAll}
                     disabled={busy}
                     className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-ui font-semibold text-sm disabled:opacity-50"
-                    style={{ backgroundColor: A.ink, color: "#F5F0E6", cursor: busy ? "default" : "pointer" }}
+                    style={{ backgroundColor: A.ink, color: "var(--bone)", cursor: busy ? "default" : "pointer" }}
                   >
                     {busy ? <Loader2 size={16} className="animate-spin" /> : <Zap size={16} />}
                     Turn on checkout for all

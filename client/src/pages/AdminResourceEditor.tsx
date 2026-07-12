@@ -1,7 +1,7 @@
 import AdminLayout from "@/components/AdminLayout";
 import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Loader2, Save } from "lucide-react";
 import { toast } from "sonner";
 
@@ -27,18 +27,20 @@ export default function AdminResourceEditor() {
   const createResourceMutation = trpc.resources.create.useMutation();
   const updateResourceMutation = trpc.resources.update.useMutation();
 
-  useEffect(() => {
-    if (getResourceQuery.data) {
-      setForm({
-        title: getResourceQuery.data.title,
-        description: getResourceQuery.data.description || "",
-        category: getResourceQuery.data.category || "",
-        url: getResourceQuery.data.url || "",
-        fileType: getResourceQuery.data.fileType || "",
-        published: getResourceQuery.data.published,
-      });
-    }
-  }, [getResourceQuery.data]);
+  // Hydrate the form from the loaded resource (guarded state adjustment
+  // during render — see react.dev "You Might Not Need an Effect").
+  const [hydratedFrom, setHydratedFrom] = useState<typeof getResourceQuery.data | null>(null);
+  if (getResourceQuery.data && getResourceQuery.data !== hydratedFrom) {
+    setHydratedFrom(getResourceQuery.data);
+    setForm({
+      title: getResourceQuery.data.title,
+      description: getResourceQuery.data.description || "",
+      category: getResourceQuery.data.category || "",
+      url: getResourceQuery.data.url || "",
+      fileType: getResourceQuery.data.fileType || "",
+      published: getResourceQuery.data.published,
+    });
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -81,7 +83,7 @@ export default function AdminResourceEditor() {
               value={form.title}
               onChange={(e) => setForm({ ...form, title: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
               placeholder="Resource title"
             />
           </div>
@@ -95,7 +97,7 @@ export default function AdminResourceEditor() {
               value={form.description}
               onChange={(e) => setForm({ ...form, description: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
               rows={4}
               placeholder="What is this resource about?"
             />
@@ -110,7 +112,7 @@ export default function AdminResourceEditor() {
               value={form.category}
               onChange={(e) => setForm({ ...form, category: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
             >
               <option value="">Select a category…</option>
               <option value="Study Guides">Study Guides</option>
@@ -131,7 +133,7 @@ export default function AdminResourceEditor() {
               value={form.fileType}
               onChange={(e) => setForm({ ...form, fileType: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
             >
               <option value="">Select a type…</option>
               <option value="PDF">PDF</option>
@@ -152,7 +154,7 @@ export default function AdminResourceEditor() {
               value={form.url}
               onChange={(e) => setForm({ ...form, url: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
               placeholder="https://..."
             />
           </div>
@@ -176,7 +178,7 @@ export default function AdminResourceEditor() {
               type="submit"
               disabled={isLoading}
               className="flex items-center gap-2 px-6 py-3 rounded font-ui font-medium transition-opacity disabled:opacity-50"
-              style={{ backgroundColor: "#2D4A3E", color: "var(--bone)" }}
+              style={{ backgroundColor: "var(--adm-forest)", color: "var(--bone)" }}
             >
               {isLoading ? <Loader2 size={16} className="animate-spin" /> : <Save size={16} />}
               {resourceId ? "Update Resource" : "Create Resource"}

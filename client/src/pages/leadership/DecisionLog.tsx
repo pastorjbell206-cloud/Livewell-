@@ -34,12 +34,12 @@ const STATUS: { id: Status; label: string }[] = [
 const uid = () => Math.random().toString(36).slice(2, 9);
 
 export default function DecisionLog() {
-  const [items, setItems] = useState<Entry[]>([]);
+  // Saved entries are restored in the lazy initializer (readStoredJSON is safe
+  // to call at render time), not in a mount effect.
+  const [items, setItems] = useState<Entry[]>(() => readStoredJSON(KEY, Array.isArray, []).filter(isEntry));
   const [draft, setDraft] = useState<{ title: string; kind: string; amount: string; note: string }>({ title: "", kind: "Benevolence", amount: "", note: "" });
   const [filter, setFilter] = useState<string | null>(null);
   const [persistFailed, setPersistFailed] = useState(false);
-
-  useEffect(() => { setItems(readStoredJSON(KEY, Array.isArray, []).filter(isEntry)); }, []);
   useEffect(() => {
     const t = setTimeout(() => setPersistFailed(!writeStoredJSON(KEY, items)), 0);
     return () => clearTimeout(t);

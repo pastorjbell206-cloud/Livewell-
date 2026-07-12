@@ -23,7 +23,7 @@ export function ModerationAdmin() {
     <AdminLayout>
       <div className="space-y-8">
         {/* Tabs */}
-        <div className="flex gap-4 border-b" style={{ borderColor: "#D1C9BB" }}>
+        <div className="flex gap-4 border-b" style={{ borderColor: "var(--adm-line)" }}>
           {tabs.map((tab) => {
             const isActive = activeTab === tab.id;
             return (
@@ -32,24 +32,24 @@ export function ModerationAdmin() {
                 onClick={() => setActiveTab(tab.id)}
                 className="flex items-center gap-2 px-4 py-2 font-medium transition-colors"
                 style={{
-                  borderBottom: isActive ? "2px solid #B8963E" : "2px solid transparent",
-                  color: isActive ? "#1A1A1A" : "#6B7280",
+                  borderBottom: isActive ? "2px solid var(--adm-gold)" : "2px solid transparent",
+                  color: isActive ? "var(--charcoal)" : "var(--adm-gray)",
                 }}
               >
                 {tab.label}
                 {tab.loading ? (
-                  <Loader2 size={14} className="animate-spin" style={{ color: "#6B7280" }} />
+                  <Loader2 size={14} className="animate-spin" style={{ color: "var(--adm-gray)" }} />
                 ) : tab.count > 0 ? (
                   <span
                     className="inline-flex items-center justify-center min-w-[1.25rem] h-5 px-1.5 rounded-full text-xs font-semibold"
-                    style={{ backgroundColor: "#B8963E", color: "#F7F5F0" }}
+                    style={{ backgroundColor: "var(--adm-gold)", color: "var(--adm-bg)" }}
                   >
                     {tab.count}
                   </span>
                 ) : (
                   <span
                     className="inline-flex items-center justify-center min-w-[1.25rem] h-5 px-1.5 rounded-full text-xs font-semibold"
-                    style={{ backgroundColor: "#E8E2D5", color: "#6B7280" }}
+                    style={{ backgroundColor: "var(--adm-line-soft)", color: "var(--adm-gray)" }}
                   >
                     0
                   </span>

@@ -23,18 +23,21 @@ const TOPIC_LABEL: Record<string, string> = {
 export default function HowToArticle() {
   const [, params] = useRoute("/how-tos/:slug");
   const slug = params?.slug;
-  const [article, setArticle] = useState<Article | null>(null);
-  const [missing, setMissing] = useState(false);
+  // The fetch result is tagged with the slug it answered; article/missing are
+  // derived per render, so navigating to a new slug resets the view without a
+  // synchronous setState in the effect.
+  const [result, setResult] = useState<{ slug: string; article: Article | null } | null>(null);
 
   useEffect(() => {
     if (!slug) return;
-    setArticle(null);
-    setMissing(false);
     fetch(`/howtos/a/${slug}.json`)
       .then((r) => (r.ok ? r.json() : null))
-      .then((d) => (d ? setArticle(d) : setMissing(true)))
-      .catch(() => setMissing(true));
+      .then((d) => setResult({ slug, article: d || null }))
+      .catch(() => setResult({ slug, article: null }));
   }, [slug]);
+
+  const article = result && result.slug === slug ? result.article : null;
+  const missing = !!result && result.slug === slug && result.article === null;
 
   return (
     <Layout>

@@ -34,24 +34,25 @@ const isString = (x: unknown): x is string => typeof x === "string";
 
 export default function IllustrationLibrary() {
   // null = not loaded yet. Loading, failed, and loaded-but-empty are three
-  // different truths; [] used to stand for two of them.
-  const [items, setItems] = useState<Illustration[] | null>(null);
+  // different truths; [] used to stand for two of them. The load is tagged
+  // with the retry nonce that fetched it, so `items` derives back to the
+  // loading state on retry without a synchronous setState in the effect.
+  const [loaded, setLoaded] = useState<{ nonce: number; items: Illustration[] } | null>(null);
   const [q, setQ] = useState("");
   const [theme, setTheme] = useState<string | null>(null);
   const [savedOnly, setSavedOnly] = useState(false);
-  const [saved, setSaved] = useState<string[]>([]);
+  const [saved, setSaved] = useState<string[]>(() => readStoredJSON(KEY, isArrayOf(isString), []));
   const [nonce, setNonce] = useState(0);
   const [failedAt, setFailedAt] = useState<number | null>(null);
   const error = failedAt === nonce;
+  const items = loaded && loaded.nonce === nonce ? loaded.items : null;
   const [persistFailed, setPersistFailed] = useState(false);
 
   useEffect(() => {
-    setItems(null);
     let stale = false;
     fetchJson<Payload>("/leadership/illustrations.json", isPayload)
-      .then((d) => { if (!stale) setItems(Array.isArray(d) ? d : d.illustrations); })
+      .then((d) => { if (!stale) setLoaded({ nonce, items: Array.isArray(d) ? d : d.illustrations }); })
       .catch(() => { if (!stale) setFailedAt(nonce); });
-    setSaved(readStoredJSON(KEY, isArrayOf(isString), []));
     return () => { stale = true; };
   }, [nonce]);
 

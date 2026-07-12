@@ -65,8 +65,8 @@ export default function AdminResources() {
     });
 
     rows = [...rows].sort((a, b) => {
-      let av: string | number = "";
-      let bv: string | number = "";
+      let av: string | number;
+      let bv: string | number;
       if (sortKey === "published") {
         av = a.published ? 1 : 0;
         bv = b.published ? 1 : 0;
@@ -200,17 +200,17 @@ export default function AdminResources() {
       <div>
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h1 className="font-display text-4xl font-bold mb-2" style={{ color: "#1A1A1A" }}>
+            <h1 className="font-display text-4xl font-bold mb-2" style={{ color: "var(--charcoal)" }}>
               Resources
             </h1>
-            <p className="font-body" style={{ color: "#6B7280" }}>
+            <p className="font-body" style={{ color: "var(--adm-gray)" }}>
               Manage downloadable resources and study materials
             </p>
           </div>
           <Link
             href="/admin/resources/new"
             className="flex items-center gap-2 px-4 py-2 rounded font-ui font-medium no-underline"
-            style={{ backgroundColor: "#2D4A3E", color: "#F7F5F0" }}
+            style={{ backgroundColor: "var(--adm-forest)", color: "var(--adm-bg)" }}
           >
             <Plus size={16} /> New Resource
           </Link>
@@ -220,11 +220,11 @@ export default function AdminResources() {
         {draftCount > 0 && (
           <div
             className="flex items-center justify-between gap-4 p-4 rounded-lg mb-6"
-            style={{ backgroundColor: "#FEF3C7", border: "1px solid #F0D58A" }}
+            style={{ backgroundColor: "var(--adm-warn-bg)", border: "1px solid var(--adm-warn-line)" }}
           >
             <div className="flex items-center gap-3">
-              <AlertTriangle size={20} style={{ color: "#92700A" }} />
-              <p className="font-ui font-medium" style={{ color: "#7A5C08" }}>
+              <AlertTriangle size={20} style={{ color: "var(--adm-gold-deep)" }} />
+              <p className="font-ui font-medium" style={{ color: "var(--mustard-text)" }}>
                 {draftCount} draft{draftCount === 1 ? " is" : "s are"} not visible to readers
               </p>
             </div>
@@ -232,7 +232,7 @@ export default function AdminResources() {
               onClick={publishAllDrafts}
               disabled={bulkBusy}
               className="flex items-center gap-2 px-4 py-2 rounded font-ui font-medium whitespace-nowrap"
-              style={{ backgroundColor: "#B8963E", color: "#1A1A1A", opacity: bulkBusy ? 0.6 : 1 }}
+              style={{ backgroundColor: "var(--adm-gold)", color: "var(--charcoal)", opacity: bulkBusy ? 0.6 : 1 }}
             >
               {bulkBusy ? <Loader2 size={16} className="animate-spin" /> : <Eye size={16} />}
               Publish all drafts
@@ -243,19 +243,19 @@ export default function AdminResources() {
         {/* Toolkit */}
         <div className="mb-6 space-y-3">
           <div className="relative">
-            <Search size={16} style={{ color: "#9CA3AF" }} className="absolute left-3 top-1/2 -translate-y-1/2" />
+            <Search size={16} style={{ color: "var(--adm-gray-soft)" }} className="absolute left-3 top-1/2 -translate-y-1/2" />
             <input
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search title or description…"
               className="w-full pl-9 pr-3 py-2 rounded font-ui text-sm"
-              style={{ backgroundColor: "#FFFFFF", border: "1px solid #E2DDD2", color: "#1A1A1A" }}
+              style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line-soft)", color: "var(--charcoal)" }}
             />
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
-            <span className="font-ui text-xs uppercase tracking-wider" style={{ color: "#9CA3AF" }}>
+            <span className="font-ui text-xs uppercase tracking-wider" style={{ color: "var(--adm-gray-soft)" }}>
               Category
             </span>
             <FilterChip active={categoryFilter === "all"} onClick={() => setCategoryFilter("all")}>
@@ -269,7 +269,7 @@ export default function AdminResources() {
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
-            <span className="font-ui text-xs uppercase tracking-wider" style={{ color: "#9CA3AF" }}>
+            <span className="font-ui text-xs uppercase tracking-wider" style={{ color: "var(--adm-gray-soft)" }}>
               Status
             </span>
             <FilterChip active={statusFilter === "all"} onClick={() => setStatusFilter("all")}>
@@ -288,7 +288,7 @@ export default function AdminResources() {
         {selectedIds.length > 0 && (
           <div
             className="flex items-center gap-3 p-3 rounded-lg mb-4"
-            style={{ backgroundColor: "#1A1A1A", color: "#F7F5F0" }}
+            style={{ backgroundColor: "var(--charcoal)", color: "var(--adm-bg)" }}
           >
             <span className="font-ui text-sm font-medium">{selectedIds.length} selected</span>
             <div className="flex-1" />
@@ -296,7 +296,7 @@ export default function AdminResources() {
               onClick={() => bulkSetPublished(selectedIds, true)}
               disabled={bulkBusy}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded font-ui text-sm font-medium"
-              style={{ backgroundColor: "#2D4A3E", color: "#F7F5F0", opacity: bulkBusy ? 0.6 : 1 }}
+              style={{ backgroundColor: "var(--adm-forest)", color: "var(--adm-bg)", opacity: bulkBusy ? 0.6 : 1 }}
             >
               <Eye size={14} /> Publish
             </button>
@@ -304,7 +304,7 @@ export default function AdminResources() {
               onClick={() => bulkSetPublished(selectedIds, false)}
               disabled={bulkBusy}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded font-ui text-sm font-medium"
-              style={{ backgroundColor: "#3A3A3A", color: "#F7F5F0", opacity: bulkBusy ? 0.6 : 1 }}
+              style={{ backgroundColor: "var(--adm-gray-dark)", color: "var(--adm-bg)", opacity: bulkBusy ? 0.6 : 1 }}
             >
               <EyeOff size={14} /> Unpublish
             </button>
@@ -312,7 +312,7 @@ export default function AdminResources() {
               onClick={() => bulkDelete(selectedIds)}
               disabled={bulkBusy}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded font-ui text-sm font-medium"
-              style={{ backgroundColor: "#7F1D1D", color: "#F7F5F0", opacity: bulkBusy ? 0.6 : 1 }}
+              style={{ backgroundColor: "var(--adm-danger-dark)", color: "var(--adm-bg)", opacity: bulkBusy ? 0.6 : 1 }}
             >
               <Trash2 size={14} /> Delete
             </button>
@@ -323,13 +323,13 @@ export default function AdminResources() {
         {!resourcesQuery.isLoading && !resourcesQuery.isError && filtered.length > 0 && (
           <div
             className="flex items-center gap-3 px-4 py-2 mb-2 font-ui text-xs uppercase tracking-wider"
-            style={{ color: "#6B7280" }}
+            style={{ color: "var(--adm-gray)" }}
           >
             <button onClick={toggleSelectAll} className="flex items-center" title="Select all">
               {allVisibleSelected ? (
-                <CheckSquare size={16} style={{ color: "#2D4A3E" }} />
+                <CheckSquare size={16} style={{ color: "var(--adm-forest)" }} />
               ) : (
-                <Square size={16} style={{ color: "#9CA3AF" }} />
+                <Square size={16} style={{ color: "var(--adm-gray-soft)" }} />
               )}
             </button>
             <SortHeader label="Title" k="title" sortKey={sortKey} sortDir={sortDir} onClick={toggleSort} className="flex-1" />
@@ -346,42 +346,42 @@ export default function AdminResources() {
               <div
                 key={i}
                 className="p-4 rounded-lg animate-pulse"
-                style={{ backgroundColor: "#FFFFFF", height: "72px" }}
+                style={{ backgroundColor: "var(--card)", height: "72px" }}
               >
-                <div className="h-4 w-1/3 rounded mb-2" style={{ backgroundColor: "#ECE7DC" }} />
-                <div className="h-3 w-1/4 rounded" style={{ backgroundColor: "#F0ECE3" }} />
+                <div className="h-4 w-1/3 rounded mb-2" style={{ backgroundColor: "var(--bone-warm)" }} />
+                <div className="h-3 w-1/4 rounded" style={{ backgroundColor: "var(--adm-fill-soft)" }} />
               </div>
             ))}
           </div>
         ) : resourcesQuery.isError ? (
-          <div className="text-center py-12" style={{ backgroundColor: "#FFFFFF", borderRadius: "8px" }}>
-            <p className="font-body mb-4" style={{ color: "#DC2626" }}>
+          <div className="text-center py-12" style={{ backgroundColor: "var(--card)", borderRadius: "8px" }}>
+            <p className="font-body mb-4" style={{ color: "var(--adm-danger)" }}>
               Failed to load resources.
             </p>
             <button
               onClick={() => resourcesQuery.refetch()}
               className="inline-flex items-center gap-2 px-4 py-2 rounded font-ui font-medium"
-              style={{ backgroundColor: "#2D4A3E", color: "#F7F5F0" }}
+              style={{ backgroundColor: "var(--adm-forest)", color: "var(--adm-bg)" }}
             >
               Retry
             </button>
           </div>
         ) : all.length === 0 ? (
-          <div className="text-center py-12" style={{ backgroundColor: "#FFFFFF", borderRadius: "8px" }}>
-            <p className="font-body mb-4" style={{ color: "#6B7280" }}>
+          <div className="text-center py-12" style={{ backgroundColor: "var(--card)", borderRadius: "8px" }}>
+            <p className="font-body mb-4" style={{ color: "var(--adm-gray)" }}>
               No resources yet. Create your first resource.
             </p>
             <Link
               href="/admin/resources/new"
               className="inline-flex items-center gap-2 px-4 py-2 rounded font-ui font-medium no-underline"
-              style={{ backgroundColor: "#2D4A3E", color: "#F7F5F0" }}
+              style={{ backgroundColor: "var(--adm-forest)", color: "var(--adm-bg)" }}
             >
               <Plus size={16} /> Create Resource
             </Link>
           </div>
         ) : filtered.length === 0 ? (
-          <div className="text-center py-12" style={{ backgroundColor: "#FFFFFF", borderRadius: "8px" }}>
-            <p className="font-body" style={{ color: "#6B7280" }}>
+          <div className="text-center py-12" style={{ backgroundColor: "var(--card)", borderRadius: "8px" }}>
+            <p className="font-body" style={{ color: "var(--adm-gray)" }}>
               No resources match your filters.
             </p>
           </div>
@@ -392,20 +392,20 @@ export default function AdminResources() {
                 key={resource.id}
                 className="flex items-center gap-3 p-4 rounded-lg"
                 style={{
-                  backgroundColor: "#FFFFFF",
-                  borderLeft: `4px solid ${resource.published ? "#2D4A3E" : "#D1C9BB"}`,
+                  backgroundColor: "var(--card)",
+                  borderLeft: `4px solid ${resource.published ? "var(--adm-forest)" : "var(--adm-line)"}`,
                 }}
               >
                 <button onClick={() => toggleSelect(resource.id)} className="flex items-center" title="Select">
                   {selected.has(resource.id) ? (
-                    <CheckSquare size={18} style={{ color: "#2D4A3E" }} />
+                    <CheckSquare size={18} style={{ color: "var(--adm-forest)" }} />
                   ) : (
-                    <Square size={18} style={{ color: "#9CA3AF" }} />
+                    <Square size={18} style={{ color: "var(--adm-gray-soft)" }} />
                   )}
                 </button>
 
                 <div className="flex-1 min-w-0">
-                  <h3 className="font-display text-lg font-bold mb-1 truncate" style={{ color: "#1A1A1A" }}>
+                  <h3 className="font-display text-lg font-bold mb-1 truncate" style={{ color: "var(--charcoal)" }}>
                     {resource.title}
                   </h3>
                   {resource.url && (
@@ -414,7 +414,7 @@ export default function AdminResources() {
                       target="_blank"
                       rel="noreferrer"
                       className="inline-flex items-center gap-1.5 font-ui text-xs"
-                      style={{ color: "#2D4A3E" }}
+                      style={{ color: "var(--adm-forest)" }}
                     >
                       <Download size={12} /> Download / open link
                     </a>
@@ -422,24 +422,24 @@ export default function AdminResources() {
                 </div>
 
                 <div className="w-40">
-                  <Badge bg="#EDE8DC" color="#5A5448">
+                  <Badge bg="var(--bone-warm)" color="var(--ink-muted)">
                     {resource.category || "Uncategorized"}
                   </Badge>
                 </div>
 
                 <div className="w-24">
-                  <Badge bg="#E8EEF0" color="#2C3E50">
+                  <Badge bg="var(--adm-slate-bg)" color="var(--adm-slate)">
                     {resource.fileType || "—"}
                   </Badge>
                 </div>
 
                 <div className="w-24">
                   {resource.published ? (
-                    <Badge bg="#DCFCE7" color="#166534">
+                    <Badge bg="var(--adm-ok-badge-bg)" color="var(--adm-ok-badge)">
                       Published
                     </Badge>
                   ) : (
-                    <Badge bg="#FEF3C7" color="#92700A">
+                    <Badge bg="var(--adm-warn-bg)" color="var(--adm-gold-deep)">
                       Draft
                     </Badge>
                   )}
@@ -449,7 +449,7 @@ export default function AdminResources() {
                   <button
                     onClick={() => handleTogglePublish(resource)}
                     className="p-2 rounded transition-colors"
-                    style={{ backgroundColor: "#F0F0F0", color: "#6B7280" }}
+                    style={{ backgroundColor: "var(--adm-gray-bg)", color: "var(--adm-gray)" }}
                     title={resource.published ? "Unpublish" : "Publish"}
                   >
                     {resource.published ? <Eye size={16} /> : <EyeOff size={16} />}
@@ -458,7 +458,7 @@ export default function AdminResources() {
                   <Link
                     href={`/admin/resources/${resource.id}/edit`}
                     className="p-2 rounded transition-colors no-underline"
-                    style={{ backgroundColor: "#F0F0F0", color: "#6B7280" }}
+                    style={{ backgroundColor: "var(--adm-gray-bg)", color: "var(--adm-gray)" }}
                   >
                     <Edit2 size={16} />
                   </Link>
@@ -466,7 +466,7 @@ export default function AdminResources() {
                   <button
                     onClick={() => handleDelete(resource.id)}
                     className="p-2 rounded transition-colors"
-                    style={{ backgroundColor: "#F0F0F0", color: "#DC2626" }}
+                    style={{ backgroundColor: "var(--adm-gray-bg)", color: "var(--adm-danger)" }}
                   >
                     <Trash2 size={16} />
                   </button>
@@ -494,9 +494,9 @@ function FilterChip({
       onClick={onClick}
       className="px-3 py-1 rounded-full font-ui text-sm font-medium transition-colors"
       style={{
-        backgroundColor: active ? "#1A1A1A" : "#FFFFFF",
-        color: active ? "#F7F5F0" : "#5A5448",
-        border: `1px solid ${active ? "#1A1A1A" : "#E2DDD2"}`,
+        backgroundColor: active ? "var(--charcoal)" : "var(--card)",
+        color: active ? "var(--adm-bg)" : "var(--ink-muted)",
+        border: `1px solid ${active ? "var(--charcoal)" : "var(--adm-line-soft)"}`,
       }}
     >
       {children}
@@ -536,7 +536,7 @@ function SortHeader({
     <button
       onClick={() => onClick(k)}
       className={`flex items-center gap-1 uppercase tracking-wider ${className ?? ""}`}
-      style={{ color: active ? "#1A1A1A" : "#6B7280" }}
+      style={{ color: active ? "var(--charcoal)" : "var(--adm-gray)" }}
     >
       {label}
       {active && (sortDir === "asc" ? <ArrowUp size={12} /> : <ArrowDown size={12} />)}
