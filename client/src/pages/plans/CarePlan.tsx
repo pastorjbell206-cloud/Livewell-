@@ -43,19 +43,22 @@ const body = { fontFamily: "var(--B)", fontSize: "15.5px", lineHeight: 1.7, colo
 export default function CarePlan() {
   const [, params] = useRoute("/plans/:slug");
   const slug = params?.slug;
-  const [data, setData] = useState<Plan | null>(null);
-  const [missing, setMissing] = useState(false);
-  const [progress, setProgress] = useState<Progress | null>(null);
+  // Keyed by slug at the route, so this remounts per plan. Saved progress is
+  // restored in a lazy initializer; the fetch result is tagged with the slug it
+  // answered and data/missing derive per render — no synchronous reset effect.
+  const [progress, setProgress] = useState<Progress | null>(() => (slug ? loadProgress(slug) : null));
+  const [result, setResult] = useState<{ slug: string; data: Plan | null } | null>(null);
 
   useEffect(() => {
     if (!slug) return;
-    setData(null); setMissing(false);
-    setProgress(loadProgress(slug));
     fetch(`/plans/${slug}.json`)
       .then((r) => (r.ok ? r.json() : null))
-      .then((d) => (d ? setData(d) : setMissing(true)))
-      .catch(() => setMissing(true));
+      .then((d) => setResult({ slug, data: d || null }))
+      .catch(() => setResult({ slug, data: null }));
   }, [slug]);
+
+  const data = result && result.slug === slug ? result.data : null;
+  const missing = !!result && result.slug === slug && result.data === null;
 
   const start = () => {
     if (!slug) return;
