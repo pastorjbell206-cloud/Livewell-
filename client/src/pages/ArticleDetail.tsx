@@ -90,19 +90,22 @@ function ShareButton({ title, url }: { title: string; url: string }) {
   );
 }
 
-function BookmarkButton({ slug }: { slug: string }) {
-  const [bookmarked, setBookmarked] = useState(false);
+function readBookmarked(slug: string): boolean {
+  try {
+    const stored = JSON.parse(
+      localStorage.getItem("livewell:bookmarks") || "[]"
+    ) as string[];
+    return stored.includes(slug);
+  } catch {
+    // localStorage may be unavailable (private mode, sandbox)
+    return false;
+  }
+}
 
-  useEffect(() => {
-    try {
-      const stored = JSON.parse(
-        localStorage.getItem("livewell:bookmarks") || "[]"
-      ) as string[];
-      setBookmarked(stored.includes(slug));
-    } catch {
-      // localStorage may be unavailable (private mode, sandbox)
-    }
-  }, [slug]);
+// Rendered with key={slug} so navigating between articles remounts it and
+// re-reads the stored bookmarks for the new slug.
+function BookmarkButton({ slug }: { slug: string }) {
+  const [bookmarked, setBookmarked] = useState(() => readBookmarked(slug));
 
   const toggle = () => {
     setBookmarked(prev => {
@@ -832,7 +835,7 @@ export default function ArticleDetail() {
               gap: "12px",
             }}
           >
-            <BookmarkButton slug={post.slug} />
+            <BookmarkButton key={post.slug} slug={post.slug} />
             <ShareButton title={post.title} url={canonical} />
             <CitationCopy
               title={post.title}

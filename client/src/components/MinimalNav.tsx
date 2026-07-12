@@ -72,11 +72,15 @@ export default function MinimalNav() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Mobile menu hygiene: close on any route change.
-  useEffect(() => {
+  // Mobile menu hygiene: close on any route change. Adjusted during render
+  // (the documented "state from previous renders" pattern) instead of an
+  // effect, so the closed menu paints in the same pass as the new route.
+  const [prevLocation, setPrevLocation] = useState(location);
+  if (prevLocation !== location) {
+    setPrevLocation(location);
     setMobileOpen(false);
     setSearchOpen(false);
-  }, [location]);
+  }
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {

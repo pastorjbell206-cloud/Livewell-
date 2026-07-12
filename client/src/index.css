@@ -142,7 +142,57 @@ html.dark{
   --line:#D9D3C4;--border:#D9D3C4;--borderdk:#C0B9A8;
   --gold:#D4A017;--goldlt:#7A6010;--goldpale:#F5F0E6;
   --ink2:#5A5448;--ink3:#5A5448;--stone:#5A5448;--stone2:#9A968E;
-  background-color:#F7F5F0;color:#1A1A1A;
+
+  /* ADMIN WORKSPACE TOKENS (--adm-*) — the admin's own palette, light-only.
+   * Admin components reference either a brand token above or one of these;
+   * no bare hex in admin components. */
+  /* Surfaces + hairlines (warm) */
+  --adm-bg:#F7F5F0;          /* workspace paper */
+  --adm-bg-soft:#FAF8F3;     /* lifted panels, login backdrop */
+  --adm-fill-soft:#F0ECE3;   /* skeleton shimmer line */
+  --adm-line:#D1C9BB;        /* standard border */
+  --adm-line-soft:#E2DDD2;   /* hairline border */
+  /* Warm grays (rail text, breadcrumbs, placeholder glyphs) */
+  --adm-taupe-deep:#6E6759;
+  --adm-taupe:#9A9384;
+  --adm-taupe-soft:#A8A296;
+  --adm-taupe-mist:#A89F8C;
+  --adm-taupe-faint:#B8B2A4;
+  /* Cool grays (secondary text, chips, neutral chrome) */
+  --adm-gray-strong:#374151;
+  --adm-gray-dark:#3A3A3A;
+  --adm-gray-mid:#555555;
+  --adm-gray:#6B7280;
+  --adm-gray-dim:#888888;
+  --adm-gray-soft:#9CA3AF;
+  --adm-gray-pale:#DDDDDD;
+  --adm-gray-line:#E5E7EB;
+  --adm-gray-bg:#F3F4F6;
+  /* Accents (stat tiles, category badges) */
+  --adm-slate:#2C3E50;--adm-slate-bg:#E8EDF2;
+  --adm-forest:#2D4A3E;
+  --adm-violet:#6B4E9E;--adm-violet-deep:#4B3F8A;--adm-violet-bg:#E6E4F0;
+  --adm-rust:#9A3B2E;--adm-rust-bg:#F4E2DD;
+  /* Gold (print-safe mustard for admin accents) */
+  --adm-gold:#B8963E;--adm-gold-deep:#92700A;
+  --adm-gold-wash:#F3E9D7;--adm-gold-tint:#FFF7E6;
+  /* Status: success */
+  --adm-ok:#2E7D32;--adm-ok-soft:#EAF3EA;
+  --adm-ok-badge:#166534;--adm-ok-badge-bg:#DCFCE7;
+  --adm-ok-icon:#10B981;--adm-ok-strong:#059669;
+  --adm-ok-text:#065F46;--adm-ok-bg:#D1FAE5;--adm-ok-tint:#ECFDF5;
+  /* Status: warning */
+  --adm-warn:#D97706;--adm-warn-bright:#F59E0B;--adm-warn-deep:#B45309;
+  --adm-warn-text:#92400E;--adm-warn-ink:#664D03;
+  --adm-warn-bg:#FEF3C7;--adm-warn-line:#F0D58A;--adm-warn-border:#FFECB5;
+  /* Status: danger */
+  --adm-danger:#DC2626;--adm-danger-bright:#EF4444;
+  --adm-danger-deep:#991B1B;--adm-danger-dark:#7F1D1D;
+  --adm-danger-bg:#FEE2E2;--adm-error:#B00020;
+  /* Status: info */
+  --adm-info:#1E40AF;--adm-info-bg:#DBEAFE;
+
+  background-color:var(--adm-bg);color:var(--charcoal);
 }
 :focus-visible{outline:2px solid var(--ink);outline-offset:2px;box-shadow:0 0 0 5px var(--bone);transition:none}.skip-link{position:absolute;top:-100%;left:16px;z-index:9999;background:var(--gold);color:var(--ink);padding:8px 16px;font-family:var(--U);font-size:14px;font-weight:600;border-radius:0 0 4px 4px;text-decoration:none;transition:top .2s}
 .skip-link:focus{top:0}

@@ -30,17 +30,21 @@ const PAID_BOOK_SLUGS = new Set(["born-again-from-atheism", "the-god-who-is-not-
 export default function BookReader() {
   const [, params] = useRoute("/read/:slug");
   const slug = params?.slug;
-  const [book, setBook] = useState<Book | null>(null);
-  const [missing, setMissing] = useState(false);
+  // The fetch result is tagged with the slug it answered; book/missing are
+  // derived per render, so navigating to a new slug resets the view without a
+  // synchronous setState in the effect.
+  const [result, setResult] = useState<{ slug: string; book: Book | null } | null>(null);
 
   useEffect(() => {
     if (!slug) return;
-    setBook(null); setMissing(false);
     fetch(`/books/${slug}.json`)
       .then((r) => (r.ok ? r.json() : Promise.reject()))
-      .then((d) => (d?.chapters ? setBook(d) : setMissing(true)))
-      .catch(() => setMissing(true));
+      .then((d) => setResult({ slug, book: d?.chapters ? d : null }))
+      .catch(() => setResult({ slug, book: null }));
   }, [slug]);
+
+  const book = result && result.slug === slug ? result.book : null;
+  const missing = !!result && result.slug === slug && result.book === null;
 
   if (missing) {
     return (

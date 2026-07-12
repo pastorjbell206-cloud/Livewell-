@@ -90,9 +90,9 @@ export default function AdminDashboard() {
   ];
 
   const stats = [
-    { label: "Writing Posts", value: postsQuery.data?.length ?? 0, icon: PenLine, href: "/admin/posts", color: "#2C3E50" },
-    { label: "Resources", value: resourcesQuery.data?.length ?? 0, icon: FolderOpen, href: "/admin/resources", color: "#2D4A3E" },
-    { label: "Books", value: booksQuery.data?.length ?? 0, icon: BookOpen, href: "/admin/books", color: "#B8963E" },
+    { label: "Writing Posts", value: postsQuery.data?.length ?? 0, icon: PenLine, href: "/admin/posts", color: "var(--adm-slate)" },
+    { label: "Resources", value: resourcesQuery.data?.length ?? 0, icon: FolderOpen, href: "/admin/resources", color: "var(--adm-forest)" },
+    { label: "Books", value: booksQuery.data?.length ?? 0, icon: BookOpen, href: "/admin/books", color: "var(--adm-gold)" },
   ];
 
   const handleSeedContent = async () => {
@@ -152,21 +152,21 @@ export default function AdminDashboard() {
   return (
     <AdminLayout>
       <div>
-        <h1 className="font-display text-4xl font-bold mb-2" style={{ color: "#1A1A1A" }}>
+        <h1 className="font-display text-4xl font-bold mb-2" style={{ color: "var(--charcoal)" }}>
           Dashboard
         </h1>
-        <p className="font-body text-lg mb-8" style={{ color: "#6B7280" }}>
+        <p className="font-body text-lg mb-8" style={{ color: "var(--adm-gray)" }}>
           Welcome to the Livewell admin panel. Manage your content below.
         </p>
 
         {/* Needs attention — what to do next, before the numbers. */}
         {attention.length > 0 && (
-          <div className="mb-10 p-4 rounded-lg" style={{ background: "#FFFFFF", border: "1px solid #D1C9BB", borderLeft: "3px solid #B8963E" }}>
-            <div className="font-ui text-xs uppercase tracking-wider mb-2" style={{ color: "#6B7280" }}>Needs attention</div>
+          <div className="mb-10 p-4 rounded-lg" style={{ background: "var(--card)", border: "1px solid var(--adm-line)", borderLeft: "3px solid var(--adm-gold)" }}>
+            <div className="font-ui text-xs uppercase tracking-wider mb-2" style={{ color: "var(--adm-gray)" }}>Needs attention</div>
             <div className="flex flex-wrap gap-x-6 gap-y-1">
               {attention.map((a) => (
-                <Link key={a.label} href={a.href} className="font-ui text-sm no-underline" style={{ color: "#1A1A1A" }}>
-                  {a.label} <span style={{ color: "#B8963E" }}>→</span>
+                <Link key={a.label} href={a.href} className="font-ui text-sm no-underline" style={{ color: "var(--charcoal)" }}>
+                  {a.label} <span style={{ color: "var(--adm-gold)" }}>→</span>
                 </Link>
               ))}
             </div>
@@ -183,10 +183,10 @@ export default function AdminDashboard() {
                 key={stat.label}
                 href={stat.href}
                 className="group flex flex-col p-8 rounded-lg no-underline transition-transform hover:scale-[1.03]"
-                style={{ backgroundColor: "#FFFFFF", borderTop: `5px solid ${stat.color}`, boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}
+                style={{ backgroundColor: "var(--card)", borderTop: `5px solid ${stat.color}`, boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}
               >
                 <div className="flex items-start justify-between mb-4">
-                  <div className="font-ui text-xs uppercase tracking-wider" style={{ color: "#6B7280" }}>
+                  <div className="font-ui text-xs uppercase tracking-wider" style={{ color: "var(--adm-gray)" }}>
                     {stat.label}
                   </div>
                   <Icon size={32} style={{ color: stat.color, opacity: 0.35 }} />
@@ -206,53 +206,53 @@ export default function AdminDashboard() {
         {/* Business at a glance — audience, sales, and catalog in plain numbers.
             Reads /api/admin/metrics (subscribers + purchases tables). */}
         <div className="mb-12">
-          <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "#1A1A1A" }}>Business at a glance</h2>
-          <p className="font-body text-sm mb-4" style={{ color: "#6B7280" }}>
+          <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "var(--charcoal)" }}>Business at a glance</h2>
+          <p className="font-body text-sm mb-4" style={{ color: "var(--adm-gray)" }}>
             The numbers that matter: who is on the list, what has sold, and how much is published.
             Essays finished lives under Traffic below.
           </p>
           {metricsError && (
-            <p className="font-body text-sm" style={{ color: "#9B2C2C" }}>
+            <p className="font-body text-sm" style={{ color: "var(--alert)" }}>
               Couldn&rsquo;t load metrics (needs the production API and an admin session).
             </p>
           )}
           {!metrics && !metricsError && (
-            <p className="font-body text-sm" style={{ color: "#6B7280" }}><Loader2 size={16} className="animate-spin inline" /> Loading…</p>
+            <p className="font-body text-sm" style={{ color: "var(--adm-gray)" }}><Loader2 size={16} className="animate-spin inline" /> Loading…</p>
           )}
           {metrics && (
             <>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
                 {[
-                  { label: "Subscribers", value: String(metrics.audience.subscribers), sub: `${metrics.audience.members} members · +${metrics.audience.newThisMonth} in 30d`, color: "#2D4A3E" },
-                  { label: "Ebooks sold", value: String(metrics.sales.orders), sub: "paid orders", color: "#B8963E" },
-                  { label: "Revenue", value: money(metrics.sales.revenueCents, metrics.sales.currency), sub: "gross, all ebooks", color: "#2C3E50" },
-                  { label: "Published", value: String(metrics.catalog.publishedPosts + metrics.catalog.publishedBooks), sub: `${metrics.catalog.publishedPosts} essays · ${metrics.catalog.publishedBooks} books`, color: "#6B4E9E" },
+                  { label: "Subscribers", value: String(metrics.audience.subscribers), sub: `${metrics.audience.members} members · +${metrics.audience.newThisMonth} in 30d`, color: "var(--adm-forest)" },
+                  { label: "Ebooks sold", value: String(metrics.sales.orders), sub: "paid orders", color: "var(--adm-gold)" },
+                  { label: "Revenue", value: money(metrics.sales.revenueCents, metrics.sales.currency), sub: "gross, all ebooks", color: "var(--adm-slate)" },
+                  { label: "Published", value: String(metrics.catalog.publishedPosts + metrics.catalog.publishedBooks), sub: `${metrics.catalog.publishedPosts} essays · ${metrics.catalog.publishedBooks} books`, color: "var(--adm-violet)" },
                 ].map((m) => (
-                  <div key={m.label} className="flex flex-col p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF", borderTop: `5px solid ${m.color}`, boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
-                    <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>{m.label}</div>
+                  <div key={m.label} className="flex flex-col p-6 rounded-lg" style={{ backgroundColor: "var(--card)", borderTop: `5px solid ${m.color}`, boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
+                    <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "var(--adm-gray)" }}>{m.label}</div>
                     <div className="font-display font-bold" style={{ color: m.color, fontSize: "2.4rem", lineHeight: 1 }}>{m.value}</div>
-                    <div className="font-ui text-xs mt-2" style={{ color: "#9CA3AF" }}>{m.sub}</div>
+                    <div className="font-ui text-xs mt-2" style={{ color: "var(--adm-gray-soft)" }}>{m.sub}</div>
                   </div>
                 ))}
               </div>
               {metrics.sales.byBook.length > 0 && (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div style={{ background: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: "8px", padding: "16px 18px" }}>
-                    <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>Top sellers</div>
+                  <div style={{ background: "var(--card)", border: "1px solid var(--adm-gray-line)", borderRadius: "8px", padding: "16px 18px" }}>
+                    <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "var(--adm-gray)" }}>Top sellers</div>
                     {metrics.sales.byBook.slice(0, 6).map((b) => (
                       <div key={b.slug} className="flex items-center justify-between py-1" style={{ fontFamily: "var(--U)", fontSize: "14px" }}>
-                        <span style={{ color: "#1A1A1A" }}>{b.title}</span>
-                        <span style={{ color: "#6B7280" }}>{b.orders} · {money(b.revenueCents, metrics.sales.currency)}</span>
+                        <span style={{ color: "var(--charcoal)" }}>{b.title}</span>
+                        <span style={{ color: "var(--adm-gray)" }}>{b.orders} · {money(b.revenueCents, metrics.sales.currency)}</span>
                       </div>
                     ))}
                   </div>
-                  <div style={{ background: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: "8px", padding: "16px 18px" }}>
-                    <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>Recent orders</div>
-                    {metrics.sales.recent.length === 0 && <div className="font-body text-sm" style={{ color: "#9CA3AF" }}>No orders yet.</div>}
+                  <div style={{ background: "var(--card)", border: "1px solid var(--adm-gray-line)", borderRadius: "8px", padding: "16px 18px" }}>
+                    <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "var(--adm-gray)" }}>Recent orders</div>
+                    {metrics.sales.recent.length === 0 && <div className="font-body text-sm" style={{ color: "var(--adm-gray-soft)" }}>No orders yet.</div>}
                     {metrics.sales.recent.slice(0, 6).map((r, i) => (
                       <div key={i} className="flex items-center justify-between py-1" style={{ fontFamily: "var(--U)", fontSize: "13px" }}>
-                        <span style={{ color: "#1A1A1A" }}>{r.title}</span>
-                        <span style={{ color: "#6B7280" }}>{r.email || "—"} · {new Date(r.createdAt).toLocaleDateString()}</span>
+                        <span style={{ color: "var(--charcoal)" }}>{r.title}</span>
+                        <span style={{ color: "var(--adm-gray)" }}>{r.email || "—"} · {new Date(r.createdAt).toLocaleDateString()}</span>
                       </div>
                     ))}
                   </div>
@@ -265,48 +265,48 @@ export default function AdminDashboard() {
         {/* Traffic — page views and unique visitors, from /api/admin/analytics
             (the page_views table, filled by the site-wide PageTracker beacon). */}
         <div className="mb-12">
-          <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "#1A1A1A" }}>Traffic</h2>
-          <p className="font-body text-sm mb-4" style={{ color: "#6B7280" }}>
+          <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "var(--charcoal)" }}>Traffic</h2>
+          <p className="font-body text-sm mb-4" style={{ color: "var(--adm-gray)" }}>
             How many people are visiting, and what they read. Counting begins the moment this ships; your own admin visits are never counted.
           </p>
           {analyticsError && (
-            <p className="font-body text-sm" style={{ color: "#9B2C2C" }}>
+            <p className="font-body text-sm" style={{ color: "var(--alert)" }}>
               Couldn&rsquo;t load traffic (needs the production API and an admin session).
             </p>
           )}
           {!analytics && !analyticsError && (
-            <p className="font-body text-sm" style={{ color: "#6B7280" }}><Loader2 size={16} className="animate-spin inline" /> Loading…</p>
+            <p className="font-body text-sm" style={{ color: "var(--adm-gray)" }}><Loader2 size={16} className="animate-spin inline" /> Loading…</p>
           )}
           {analytics && (
             <>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
                 {[
-                  { label: "Visits today", value: analytics.views.today.toLocaleString(), sub: "page views since midnight", color: "#2C3E50" },
-                  { label: "Visits · 7 days", value: analytics.views.last7.toLocaleString(), sub: `${analytics.visitors.last7.toLocaleString()} unique visitors`, color: "#2D4A3E" },
-                  { label: "Visits · 30 days", value: analytics.views.last30.toLocaleString(), sub: `${analytics.visitors.last30.toLocaleString()} unique visitors`, color: "#B8963E" },
-                  { label: "All-time views", value: analytics.views.allTime.toLocaleString(), sub: "since tracking began", color: "#6B4E9E" },
-                  ...(analytics.reads ? [{ label: "Essays finished", value: analytics.reads.last30.toLocaleString(), sub: `read to the end · 30d (${analytics.reads.allTime.toLocaleString()} all-time)`, color: "#2D4A3E" }] : []),
+                  { label: "Visits today", value: analytics.views.today.toLocaleString(), sub: "page views since midnight", color: "var(--adm-slate)" },
+                  { label: "Visits · 7 days", value: analytics.views.last7.toLocaleString(), sub: `${analytics.visitors.last7.toLocaleString()} unique visitors`, color: "var(--adm-forest)" },
+                  { label: "Visits · 30 days", value: analytics.views.last30.toLocaleString(), sub: `${analytics.visitors.last30.toLocaleString()} unique visitors`, color: "var(--adm-gold)" },
+                  { label: "All-time views", value: analytics.views.allTime.toLocaleString(), sub: "since tracking began", color: "var(--adm-violet)" },
+                  ...(analytics.reads ? [{ label: "Essays finished", value: analytics.reads.last30.toLocaleString(), sub: `read to the end · 30d (${analytics.reads.allTime.toLocaleString()} all-time)`, color: "var(--adm-forest)" }] : []),
                 ].map((m) => (
-                  <div key={m.label} className="flex flex-col p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF", borderTop: `5px solid ${m.color}`, boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
-                    <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>{m.label}</div>
+                  <div key={m.label} className="flex flex-col p-6 rounded-lg" style={{ backgroundColor: "var(--card)", borderTop: `5px solid ${m.color}`, boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
+                    <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "var(--adm-gray)" }}>{m.label}</div>
                     <div className="font-display font-bold" style={{ color: m.color, fontSize: "2.4rem", lineHeight: 1 }}>{m.value}</div>
-                    <div className="font-ui text-xs mt-2" style={{ color: "#9CA3AF" }}>{m.sub}</div>
+                    <div className="font-ui text-xs mt-2" style={{ color: "var(--adm-gray-soft)" }}>{m.sub}</div>
                   </div>
                 ))}
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {/* Last 14 days — simple CSS bar chart */}
-                <div style={{ background: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: "8px", padding: "16px 18px" }}>
-                  <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>Last 14 days</div>
+                <div style={{ background: "var(--card)", border: "1px solid var(--adm-gray-line)", borderRadius: "8px", padding: "16px 18px" }}>
+                  <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "var(--adm-gray)" }}>Last 14 days</div>
                   {analytics.daily.length === 0 ? (
-                    <div className="font-body text-sm" style={{ color: "#9CA3AF" }}>No visits recorded yet.</div>
+                    <div className="font-body text-sm" style={{ color: "var(--adm-gray-soft)" }}>No visits recorded yet.</div>
                   ) : (
                     <div style={{ display: "flex", alignItems: "flex-end", gap: "4px", height: "120px" }}>
                       {(() => {
                         const max = Math.max(...analytics.daily.map((d) => d.views), 1);
                         return analytics.daily.map((d) => (
                           <div key={d.date} title={`${d.date}: ${d.views} views`} style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-end", height: "100%" }}>
-                            <div style={{ height: `${Math.max(3, (d.views / max) * 100)}%`, background: "#B8963E", borderRadius: "2px 2px 0 0" }} />
+                            <div style={{ height: `${Math.max(3, (d.views / max) * 100)}%`, background: "var(--adm-gold)", borderRadius: "2px 2px 0 0" }} />
                           </div>
                         ));
                       })()}
@@ -314,29 +314,29 @@ export default function AdminDashboard() {
                   )}
                 </div>
                 {/* Most-read pages, 30 days */}
-                <div style={{ background: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: "8px", padding: "16px 18px" }}>
-                  <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>Most-read pages · 30 days</div>
+                <div style={{ background: "var(--card)", border: "1px solid var(--adm-gray-line)", borderRadius: "8px", padding: "16px 18px" }}>
+                  <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "var(--adm-gray)" }}>Most-read pages · 30 days</div>
                   {analytics.topPaths.length === 0 ? (
-                    <div className="font-body text-sm" style={{ color: "#9CA3AF" }}>No visits recorded yet.</div>
+                    <div className="font-body text-sm" style={{ color: "var(--adm-gray-soft)" }}>No visits recorded yet.</div>
                   ) : (
                     analytics.topPaths.slice(0, 8).map((p) => (
                       <div key={p.path} className="flex items-center justify-between py-1" style={{ fontFamily: "var(--U)", fontSize: "13px", gap: "12px" }}>
-                        <a href={p.path} target="_blank" rel="noreferrer" style={{ color: "#1A1A1A", textDecoration: "none", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{p.path}</a>
-                        <span style={{ color: "#6B7280", flexShrink: 0 }}>{p.views.toLocaleString()}</span>
+                        <a href={p.path} target="_blank" rel="noreferrer" style={{ color: "var(--charcoal)", textDecoration: "none", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{p.path}</a>
+                        <span style={{ color: "var(--adm-gray)", flexShrink: 0 }}>{p.views.toLocaleString()}</span>
                       </div>
                     ))
                   )}
                 </div>
                 {/* Where visitors come from, 30 days */}
-                <div style={{ background: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: "8px", padding: "16px 18px" }}>
-                  <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>Visitors come from · 30 days</div>
+                <div style={{ background: "var(--card)", border: "1px solid var(--adm-gray-line)", borderRadius: "8px", padding: "16px 18px" }}>
+                  <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "var(--adm-gray)" }}>Visitors come from · 30 days</div>
                   {!analytics.referrers || analytics.referrers.length === 0 ? (
-                    <div className="font-body text-sm" style={{ color: "#9CA3AF" }}>No outside referrers recorded yet — direct visits and searches with no referrer don&rsquo;t show here.</div>
+                    <div className="font-body text-sm" style={{ color: "var(--adm-gray-soft)" }}>No outside referrers recorded yet — direct visits and searches with no referrer don&rsquo;t show here.</div>
                   ) : (
                     analytics.referrers.slice(0, 8).map((r) => (
                       <div key={r.host} className="flex items-center justify-between py-1" style={{ fontFamily: "var(--U)", fontSize: "13px", gap: "12px" }}>
-                        <span style={{ color: "#1A1A1A", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{r.host}</span>
-                        <span style={{ color: "#6B7280", flexShrink: 0 }}>{r.views.toLocaleString()}</span>
+                        <span style={{ color: "var(--charcoal)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{r.host}</span>
+                        <span style={{ color: "var(--adm-gray)", flexShrink: 0 }}>{r.views.toLocaleString()}</span>
                       </div>
                     ))
                   )}
@@ -349,55 +349,55 @@ export default function AdminDashboard() {
         {/* Where subscribers come from — the conversion side of traffic, from
             /api/admin/signups (subscribers.source split into page + segment). */}
         <div className="mb-12">
-          <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "#1A1A1A" }}>Where subscribers come from</h2>
-          <p className="font-body text-sm mb-4" style={{ color: "#6B7280" }}>
+          <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "var(--charcoal)" }}>Where subscribers come from</h2>
+          <p className="font-body text-sm mb-4" style={{ color: "var(--adm-gray)" }}>
             Which pages turn readers into subscribers, and who they say they are. Traffic tells you who visits; this tells you what converts.
           </p>
           {signupsError && (
-            <p className="font-body text-sm" style={{ color: "#9B2C2C" }}>
+            <p className="font-body text-sm" style={{ color: "var(--alert)" }}>
               Couldn&rsquo;t load signups (needs the production API and an admin session).
             </p>
           )}
           {!signups && !signupsError && (
-            <p className="font-body text-sm" style={{ color: "#6B7280" }}><Loader2 size={16} className="animate-spin inline" /> Loading…</p>
+            <p className="font-body text-sm" style={{ color: "var(--adm-gray)" }}><Loader2 size={16} className="animate-spin inline" /> Loading…</p>
           )}
           {signups && (
             <>
               <div className="grid grid-cols-2 gap-6 mb-6" style={{ maxWidth: 460 }}>
                 {[
-                  { label: "Total subscribers", value: signups.total.toLocaleString(), sub: "all sources", color: "#2D4A3E" },
-                  { label: "New · 30 days", value: signups.last30.toLocaleString(), sub: "added this month", color: "#B8963E" },
+                  { label: "Total subscribers", value: signups.total.toLocaleString(), sub: "all sources", color: "var(--adm-forest)" },
+                  { label: "New · 30 days", value: signups.last30.toLocaleString(), sub: "added this month", color: "var(--adm-gold)" },
                 ].map((m) => (
-                  <div key={m.label} className="flex flex-col p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF", borderTop: `5px solid ${m.color}`, boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
-                    <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>{m.label}</div>
+                  <div key={m.label} className="flex flex-col p-6 rounded-lg" style={{ backgroundColor: "var(--card)", borderTop: `5px solid ${m.color}`, boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
+                    <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "var(--adm-gray)" }}>{m.label}</div>
                     <div className="font-display font-bold" style={{ color: m.color, fontSize: "2.4rem", lineHeight: 1 }}>{m.value}</div>
-                    <div className="font-ui text-xs mt-2" style={{ color: "#9CA3AF" }}>{m.sub}</div>
+                    <div className="font-ui text-xs mt-2" style={{ color: "var(--adm-gray-soft)" }}>{m.sub}</div>
                   </div>
                 ))}
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div style={{ background: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: "8px", padding: "16px 18px" }}>
-                  <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>Top converting pages</div>
+                <div style={{ background: "var(--card)", border: "1px solid var(--adm-gray-line)", borderRadius: "8px", padding: "16px 18px" }}>
+                  <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "var(--adm-gray)" }}>Top converting pages</div>
                   {signups.byPage.length === 0 ? (
-                    <div className="font-body text-sm" style={{ color: "#9CA3AF" }}>No signups recorded yet.</div>
+                    <div className="font-body text-sm" style={{ color: "var(--adm-gray-soft)" }}>No signups recorded yet.</div>
                   ) : (
                     signups.byPage.slice(0, 8).map((p) => (
                       <div key={p.page} className="flex items-center justify-between py-1" style={{ fontFamily: "var(--U)", fontSize: "13px", gap: "12px" }}>
-                        <span style={{ color: "#1A1A1A", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{p.page}</span>
-                        <span style={{ color: "#6B7280", flexShrink: 0 }}>{p.signups.toLocaleString()}</span>
+                        <span style={{ color: "var(--charcoal)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{p.page}</span>
+                        <span style={{ color: "var(--adm-gray)", flexShrink: 0 }}>{p.signups.toLocaleString()}</span>
                       </div>
                     ))
                   )}
                 </div>
-                <div style={{ background: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: "8px", padding: "16px 18px" }}>
-                  <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "#6B7280" }}>By audience segment</div>
+                <div style={{ background: "var(--card)", border: "1px solid var(--adm-gray-line)", borderRadius: "8px", padding: "16px 18px" }}>
+                  <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "var(--adm-gray)" }}>By audience segment</div>
                   {signups.bySegment.length === 0 ? (
-                    <div className="font-body text-sm" style={{ color: "#9CA3AF" }}>No signups recorded yet.</div>
+                    <div className="font-body text-sm" style={{ color: "var(--adm-gray-soft)" }}>No signups recorded yet.</div>
                   ) : (
                     signups.bySegment.map((s) => (
                       <div key={s.segment} className="flex items-center justify-between py-1" style={{ fontFamily: "var(--U)", fontSize: "13px", gap: "12px" }}>
-                        <span style={{ color: "#1A1A1A", textTransform: "capitalize" }}>{s.segment}</span>
-                        <span style={{ color: "#6B7280", flexShrink: 0 }}>{s.signups.toLocaleString()}</span>
+                        <span style={{ color: "var(--charcoal)", textTransform: "capitalize" }}>{s.segment}</span>
+                        <span style={{ color: "var(--adm-gray)", flexShrink: 0 }}>{s.signups.toLocaleString()}</span>
                       </div>
                     ))
                   )}
@@ -410,29 +410,29 @@ export default function AdminDashboard() {
         {/* Contact inbox — messages people sent through /api/contact.
             Until this card existed, nothing anywhere read that table. */}
         <div className="mb-12">
-          <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "#1A1A1A" }}>Messages</h2>
-          <p className="font-body text-sm mb-4" style={{ color: "#6B7280" }}>
+          <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "var(--charcoal)" }}>Messages</h2>
+          <p className="font-body text-sm mb-4" style={{ color: "var(--adm-gray)" }}>
             Contact-form submissions and assessment results people asked to keep on file. Reply by email.
           </p>
           {messagesError && (
-            <p className="font-body text-sm" style={{ color: "#9B2C2C" }}>
+            <p className="font-body text-sm" style={{ color: "var(--alert)" }}>
               Couldn't load messages (this reader needs the production API and an admin session).
             </p>
           )}
           {messages && messages.length === 0 && (
-            <p className="font-body text-sm" style={{ color: "#6B7280" }}>No messages yet.</p>
+            <p className="font-body text-sm" style={{ color: "var(--adm-gray)" }}>No messages yet.</p>
           )}
           {messages && messages.length > 0 && (
             <div style={{ display: "flex", flexDirection: "column", gap: "10px", maxHeight: "420px", overflowY: "auto" }}>
               {messages.slice(0, 20).map((m) => (
-                <details key={m.id} style={{ background: "#FFFFFF", border: "1px solid #E5E7EB", borderRadius: "6px", padding: "12px 16px" }}>
-                  <summary style={{ cursor: "pointer", fontFamily: "var(--U)", fontSize: "14px", color: "#1A1A1A" }}>
+                <details key={m.id} style={{ background: "var(--card)", border: "1px solid var(--adm-gray-line)", borderRadius: "6px", padding: "12px 16px" }}>
+                  <summary style={{ cursor: "pointer", fontFamily: "var(--U)", fontSize: "14px", color: "var(--charcoal)" }}>
                     <strong>{m.subject || "(no subject)"}</strong>
                     {" — "}{m.name ? `${m.name} · ` : ""}{m.email}
-                    <span style={{ color: "#6B7280" }}>{" · "}{new Date(m.createdAt).toLocaleString()}</span>
+                    <span style={{ color: "var(--adm-gray)" }}>{" · "}{new Date(m.createdAt).toLocaleString()}</span>
                   </summary>
-                  <p style={{ whiteSpace: "pre-wrap", fontFamily: "var(--B)", fontSize: "14px", color: "#1A1A1A", margin: "10px 0" }}>{m.message}</p>
-                  <a href={`mailto:${m.email}?subject=${encodeURIComponent("Re: " + (m.subject || "your message"))}`} style={{ fontFamily: "var(--U)", fontSize: "13px", color: "#1A1A1A", textDecoration: "underline" }}>
+                  <p style={{ whiteSpace: "pre-wrap", fontFamily: "var(--B)", fontSize: "14px", color: "var(--charcoal)", margin: "10px 0" }}>{m.message}</p>
+                  <a href={`mailto:${m.email}?subject=${encodeURIComponent("Re: " + (m.subject || "your message"))}`} style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--charcoal)", textDecoration: "underline" }}>
                     Reply to {m.email}
                   </a>
                 </details>
@@ -445,9 +445,9 @@ export default function AdminDashboard() {
         <Link
           href="/admin/publish-content"
           className="flex items-center gap-4 p-6 mb-8 rounded-lg no-underline transition-transform hover:scale-[1.01]"
-          style={{ backgroundColor: "#1A1A1A", color: "#F5F0E6" }}
+          style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)" }}
         >
-          <Upload size={28} style={{ color: "#D4A017" }} />
+          <Upload size={28} style={{ color: "var(--mustard)" }} />
           <div>
             <div className="font-display text-xl font-bold">Publish &amp; sell</div>
             <div className="font-body text-sm" style={{ color: "rgba(245,240,230,0.75)" }}>
@@ -458,7 +458,7 @@ export default function AdminDashboard() {
 
         {/* Tools — the occasional-use utilities, compact instead of five banners. */}
         <div className="mb-12">
-          <h2 className="font-display text-2xl font-bold mb-4" style={{ color: "#1A1A1A" }}>Tools</h2>
+          <h2 className="font-display text-2xl font-bold mb-4" style={{ color: "var(--charcoal)" }}>Tools</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { href: "/admin/setup-navigation", icon: Wand2, title: "Set up navigation", desc: "File articles into the pillar and sub-pathway menus." },
@@ -472,12 +472,12 @@ export default function AdminDashboard() {
                   key={t.href}
                   href={t.href}
                   className="flex items-start gap-3 p-4 rounded-lg no-underline transition-transform hover:scale-[1.01]"
-                  style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}
+                  style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}
                 >
-                  <Icon size={20} style={{ color: "#D4A017", flexShrink: 0, marginTop: 2 }} />
+                  <Icon size={20} style={{ color: "var(--mustard)", flexShrink: 0, marginTop: 2 }} />
                   <div style={{ minWidth: 0 }}>
-                    <div className="font-ui font-semibold text-sm" style={{ color: "#1A1A1A" }}>{t.title}</div>
-                    <div className="font-body text-xs mt-0.5" style={{ color: "#5A5448", lineHeight: 1.5 }}>{t.desc}</div>
+                    <div className="font-ui font-semibold text-sm" style={{ color: "var(--charcoal)" }}>{t.title}</div>
+                    <div className="font-body text-xs mt-0.5" style={{ color: "var(--ink-muted)", lineHeight: 1.5 }}>{t.desc}</div>
                   </div>
                 </Link>
               );
@@ -486,13 +486,13 @@ export default function AdminDashboard() {
         </div>
 
         {/* Seed Content */}
-        <div className="mb-12 p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB" }}>
+        <div className="mb-12 p-6 rounded-lg" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-gray-line)" }}>
           <div className="flex flex-wrap items-start justify-between gap-4 mb-2">
             <div style={{ minWidth: 0, flex: "1 1 260px" }}>
-              <h2 className="font-display text-xl font-bold" style={{ color: "#1A1A1A" }}>
+              <h2 className="font-display text-xl font-bold" style={{ color: "var(--charcoal)" }}>
                 Import Content
               </h2>
-              <p className="font-body text-sm" style={{ color: "#6B7280" }}>
+              <p className="font-body text-sm" style={{ color: "var(--adm-gray)" }}>
                 Load all bundled articles, books, and site settings. Exact counts are shown before you confirm. Duplicates are skipped.
               </p>
             </div>
@@ -501,7 +501,7 @@ export default function AdminDashboard() {
                 onClick={handleSeedContent}
                 disabled={seeding}
                 className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-ui font-semibold text-sm transition-colors"
-                style={{ backgroundColor: seeding ? "#9CA3AF" : "#2D4A3E", color: "#F7F5F0", cursor: seeding ? "default" : "pointer" }}
+                style={{ backgroundColor: seeding ? "var(--adm-gray-soft)" : "var(--adm-forest)", color: "var(--adm-bg)", cursor: seeding ? "default" : "pointer" }}
               >
                 {seeding ? <Loader2 size={16} className="animate-spin" /> : <Upload size={16} />}
                 {seeding ? "Importing…" : "Import All Content"}
@@ -527,8 +527,8 @@ export default function AdminDashboard() {
           </div>
           {seedStatus && (
             <div className="mt-3 p-3 rounded text-sm font-ui" style={{
-              backgroundColor: seedStatus.startsWith("Done") ? "#D1FAE5" : seedStatus.startsWith("Error") || seedStatus.startsWith("Failed") ? "#FEE2E2" : "#F3F4F6",
-              color: seedStatus.startsWith("Done") ? "#065F46" : seedStatus.startsWith("Error") || seedStatus.startsWith("Failed") ? "#991B1B" : "#374151",
+              backgroundColor: seedStatus.startsWith("Done") ? "var(--adm-ok-bg)" : seedStatus.startsWith("Error") || seedStatus.startsWith("Failed") ? "var(--adm-danger-bg)" : "var(--adm-gray-bg)",
+              color: seedStatus.startsWith("Done") ? "var(--adm-ok-text)" : seedStatus.startsWith("Error") || seedStatus.startsWith("Failed") ? "var(--adm-danger-deep)" : "var(--adm-gray-strong)",
             }}>
               {seedStatus}
             </div>
@@ -536,13 +536,13 @@ export default function AdminDashboard() {
         </div>
 
         {/* Repair apostrophes */}
-        <div className="mb-12 p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB" }}>
+        <div className="mb-12 p-6 rounded-lg" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-gray-line)" }}>
           <div className="flex items-center justify-between mb-2">
             <div>
-              <h2 className="font-display text-xl font-bold" style={{ color: "#1A1A1A" }}>
+              <h2 className="font-display text-xl font-bold" style={{ color: "var(--charcoal)" }}>
                 Repair Apostrophes
               </h2>
-              <p className="font-body text-sm" style={{ color: "#6B7280" }}>
+              <p className="font-body text-sm" style={{ color: "var(--adm-gray)" }}>
                 Fix imported text that lost its apostrophes (Gods, churchs, dont, youre). Checks every post and book, fixes only what needs it, never touches URLs.
               </p>
             </div>
@@ -550,7 +550,7 @@ export default function AdminDashboard() {
               onClick={handleFixApostrophes}
               disabled={fixing}
               className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-ui font-semibold text-sm transition-colors"
-              style={{ backgroundColor: fixing ? "#9CA3AF" : "#1A1A1A", color: "#F7F5F0", cursor: fixing ? "default" : "pointer" }}
+              style={{ backgroundColor: fixing ? "var(--adm-gray-soft)" : "var(--charcoal)", color: "var(--adm-bg)", cursor: fixing ? "default" : "pointer" }}
             >
               {fixing ? <Loader2 size={16} className="animate-spin" /> : <Wand2 size={16} />}
               {fixing ? "Repairing…" : "Repair Text"}
@@ -558,8 +558,8 @@ export default function AdminDashboard() {
           </div>
           {fixStatus && (
             <div className="mt-3 p-3 rounded text-sm font-ui" style={{
-              backgroundColor: fixStatus.startsWith("Done") ? "#D1FAE5" : fixStatus.startsWith("Error") || fixStatus.startsWith("Failed") ? "#FEE2E2" : "#F3F4F6",
-              color: fixStatus.startsWith("Done") ? "#065F46" : fixStatus.startsWith("Error") || fixStatus.startsWith("Failed") ? "#991B1B" : "#374151",
+              backgroundColor: fixStatus.startsWith("Done") ? "var(--adm-ok-bg)" : fixStatus.startsWith("Error") || fixStatus.startsWith("Failed") ? "var(--adm-danger-bg)" : "var(--adm-gray-bg)",
+              color: fixStatus.startsWith("Done") ? "var(--adm-ok-text)" : fixStatus.startsWith("Error") || fixStatus.startsWith("Failed") ? "var(--adm-danger-deep)" : "var(--adm-gray-strong)",
             }}>
               {fixStatus}
             </div>
@@ -568,20 +568,20 @@ export default function AdminDashboard() {
 
         {/* Quick Actions */}
         <div>
-          <h2 className="font-display text-2xl font-bold mb-4" style={{ color: "#1A1A1A" }}>
+          <h2 className="font-display text-2xl font-bold mb-4" style={{ color: "var(--charcoal)" }}>
             Quick Actions
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/admin/posts/new" className="p-4 rounded-lg font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "#1A1A1A", color: "#F7F5F0" }}>
+            <Link href="/admin/posts/new" className="p-4 rounded-lg font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "var(--charcoal)", color: "var(--adm-bg)" }}>
               + New Writing Post
             </Link>
-            <Link href="/admin/resources/new" className="p-4 rounded-lg font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "#2D4A3E", color: "#F7F5F0" }}>
+            <Link href="/admin/resources/new" className="p-4 rounded-lg font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "var(--adm-forest)", color: "var(--adm-bg)" }}>
               + New Resource
             </Link>
-            <Link href="/admin/books/new" className="p-4 rounded-lg font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "#B8963E", color: "#1A1A1A" }}>
+            <Link href="/admin/books/new" className="p-4 rounded-lg font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "var(--adm-gold)", color: "var(--charcoal)" }}>
               + New Book
             </Link>
-            <Link href="/admin/settings" className="p-4 rounded-lg font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "#2C3E50", color: "#F7F5F0" }}>
+            <Link href="/admin/settings" className="p-4 rounded-lg font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "var(--adm-slate)", color: "var(--adm-bg)" }}>
               Site Settings
             </Link>
           </div>

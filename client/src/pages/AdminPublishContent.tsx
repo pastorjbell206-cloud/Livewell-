@@ -168,11 +168,11 @@ export default function AdminPublishContent() {
   return (
     <AdminLayout>
       <div className="max-w-2xl">
-        <div className="rounded p-6 mb-10" style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}>
-          <h2 className="font-display text-2xl font-bold mb-2" style={{ color: "#1A1A1A" }}>
+        <div className="rounded p-6 mb-10" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}>
+          <h2 className="font-display text-2xl font-bold mb-2" style={{ color: "var(--charcoal)" }}>
             Turn on ebook checkout
           </h2>
-          <p className="font-body mb-5" style={{ color: "#5A5448", lineHeight: 1.7 }}>
+          <p className="font-body mb-5" style={{ color: "var(--ink-muted)", lineHeight: 1.7 }}>
             One click creates a $9.99 Stripe price for every ebook that has a file to deliver and
             turns its Buy button into real checkout. It uses your connected Stripe account, never
             touches a book that already sells, and is safe to run as many times as you like.
@@ -182,15 +182,15 @@ export default function AdminPublishContent() {
             onClick={publishStripePrices}
             disabled={stripeBusy}
             className="flex items-center gap-2 px-6 py-3 rounded font-ui font-medium disabled:opacity-50"
-            style={{ backgroundColor: "#1A1A1A", color: "#F5F0E6" }}
+            style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)" }}
           >
             {stripeBusy ? <Loader2 size={16} className="animate-spin" /> : <UploadCloud size={16} />}
             Turn on checkout for all ebooks
           </button>
           {stripeResult && (
-            <div className="mt-5 font-body" style={{ color: "#1A1A1A" }}>
+            <div className="mt-5 font-body" style={{ color: "var(--charcoal)" }}>
               <div className="flex items-center gap-2">
-                <CheckCircle2 size={18} style={{ color: "#2E7D32" }} />
+                <CheckCircle2 size={18} style={{ color: "var(--adm-ok)" }} />
                 <span className="font-ui font-semibold">
                   {stripeResult.created} newly turned on · {stripeResult.reused + stripeResult.envConfigured} already selling · {stripeResult.total} total
                 </span>
@@ -199,11 +199,11 @@ export default function AdminPublishContent() {
           )}
         </div>
 
-        <div className="rounded p-6 mb-10" style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}>
-          <h2 className="font-display text-2xl font-bold mb-2" style={{ color: "#1A1A1A" }}>
+        <div className="rounded p-6 mb-10" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}>
+          <h2 className="font-display text-2xl font-bold mb-2" style={{ color: "var(--charcoal)" }}>
             Publish the new article libraries
           </h2>
-          <p className="font-body mb-5" style={{ color: "#5A5448", lineHeight: 1.7 }}>
+          <p className="font-body mb-5" style={{ color: "var(--ink-muted)", lineHeight: 1.7 }}>
             One click adds the 220 essays written for the site — the 60-part post-Christian series,
             the 90 Integrated Life essays (marriage, parenting, money, manhood), and the 70 womanhood,
             doubt, and devotional pieces — as published posts. It never overwrites or duplicates; run
@@ -214,20 +214,20 @@ export default function AdminPublishContent() {
             onClick={publishLibraries}
             disabled={seedBusy}
             className="flex items-center gap-2 px-6 py-3 rounded font-ui font-medium disabled:opacity-50"
-            style={{ backgroundColor: "#D4A017", color: "#1A1A1A" }}
+            style={{ backgroundColor: "var(--mustard)", color: "var(--charcoal)" }}
           >
             {seedBusy ? <Loader2 size={16} className="animate-spin" /> : <UploadCloud size={16} />}
             Publish everything now
           </button>
           {seedResult && (
-            <div className="mt-5 font-body" style={{ color: "#1A1A1A" }}>
+            <div className="mt-5 font-body" style={{ color: "var(--charcoal)" }}>
               <div className="flex items-center gap-2 mb-2">
-                <CheckCircle2 size={18} style={{ color: "#2E7D32" }} />
+                <CheckCircle2 size={18} style={{ color: "var(--adm-ok)" }} />
                 <span className="font-ui font-semibold">
                   {seedResult.inserted} new article(s) published · {seedResult.totalPosts} posts total
                 </span>
               </div>
-              <ul className="text-sm space-y-1" style={{ color: "#5A5448" }}>
+              <ul className="text-sm space-y-1" style={{ color: "var(--ink-muted)" }}>
                 {Object.entries(seedResult.breakdown).map(([name, b]) => (
                   <li key={name}>
                     {name}: <strong>{b.inserted}</strong> new of {b.total}
@@ -238,10 +238,10 @@ export default function AdminPublishContent() {
           )}
         </div>
 
-        <h1 className="font-display text-4xl font-bold mb-3" style={{ color: "#1A1A1A" }}>
+        <h1 className="font-display text-4xl font-bold mb-3" style={{ color: "var(--charcoal)" }}>
           Publish Article Content
         </h1>
-        <p className="font-body mb-8" style={{ color: "#5A5448", lineHeight: 1.7 }}>
+        <p className="font-body mb-8" style={{ color: "var(--ink-muted)", lineHeight: 1.7 }}>
           This fills your articles with their finished, fully-formatted versions — all 421 of them,
           including the marriage, parenting, apologetics, church history, justice, and preaching essays,
           each with its section headings and pull-quotes. It updates only the article text and reading
@@ -255,7 +255,7 @@ export default function AdminPublishContent() {
             onClick={() => run(true)}
             disabled={busy}
             className="flex items-center gap-2 px-6 py-3 rounded font-ui font-medium disabled:opacity-50"
-            style={{ backgroundColor: "#EDE8DC", color: "#1A1A1A", border: "1px solid #D1C9BB" }}
+            style={{ backgroundColor: "var(--bone-warm)", color: "var(--charcoal)", border: "1px solid var(--adm-line)" }}
           >
             {busy && mode === "test" ? <Loader2 size={16} className="animate-spin" /> : <FlaskConical size={16} />}
             Run safe test (no changes)
@@ -269,7 +269,7 @@ export default function AdminPublishContent() {
             }}
             disabled={busy}
             className="flex items-center gap-2 px-6 py-3 rounded font-ui font-medium disabled:opacity-50"
-            style={{ backgroundColor: "#1A1A1A", color: "#F5F0E6" }}
+            style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)" }}
           >
             {busy && mode === "publish" ? <Loader2 size={16} className="animate-spin" /> : <UploadCloud size={16} />}
             Publish all article content
@@ -277,13 +277,13 @@ export default function AdminPublishContent() {
         </div>
 
         {busy && progress && (
-          <div className="mb-8 font-body" style={{ color: "#5A5448" }}>
+          <div className="mb-8 font-body" style={{ color: "var(--ink-muted)" }}>
             <div className="flex items-center gap-2">
               <Loader2 size={16} className="animate-spin" />
               {mode === "publish" ? "Publishing" : "Checking"} — {progress.processed} of {progress.total}…
             </div>
-            <div style={{ height: 8, background: "#EDE8DC", borderRadius: 999, marginTop: 8, overflow: "hidden" }}>
-              <div style={{ height: "100%", width: `${Math.round((progress.processed / Math.max(1, progress.total)) * 100)}%`, background: "#D4A017", transition: "width .2s" }} />
+            <div style={{ height: 8, background: "var(--bone-warm)", borderRadius: 999, marginTop: 8, overflow: "hidden" }}>
+              <div style={{ height: "100%", width: `${Math.round((progress.processed / Math.max(1, progress.total)) * 100)}%`, background: "var(--mustard)", transition: "width .2s" }} />
             </div>
             <p className="text-sm mt-2">Please keep this page open until it finishes.</p>
           </div>
@@ -292,19 +292,19 @@ export default function AdminPublishContent() {
         {result && (
           <div
             className="rounded p-6"
-            style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}
+            style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}
           >
             <div className="flex items-center gap-2 mb-4">
               {result.missing.length === 0 ? (
-                <CheckCircle2 size={20} style={{ color: "#2E7D32" }} />
+                <CheckCircle2 size={20} style={{ color: "var(--adm-ok)" }} />
               ) : (
-                <AlertTriangle size={20} style={{ color: "#D4A017" }} />
+                <AlertTriangle size={20} style={{ color: "var(--mustard)" }} />
               )}
-              <span className="font-ui font-semibold" style={{ color: "#1A1A1A" }}>
+              <span className="font-ui font-semibold" style={{ color: "var(--charcoal)" }}>
                 {result.dryRun ? "Test result (nothing changed)" : "Published"}
               </span>
             </div>
-            <ul className="font-body space-y-1" style={{ color: "#1A1A1A" }}>
+            <ul className="font-body space-y-1" style={{ color: "var(--charcoal)" }}>
               <li>Articles in the content set: <strong>{result.total}</strong></li>
               <li>Matched to a post on your site: <strong>{result.matched}</strong></li>
               {!result.dryRun && <li>Updated just now: <strong>{result.updated}</strong></li>}
@@ -315,36 +315,36 @@ export default function AdminPublishContent() {
             </ul>
             {result.missing.length > 0 && (
               <details className="mt-3">
-                <summary className="cursor-pointer font-ui text-sm" style={{ color: "#5A5448" }}>
+                <summary className="cursor-pointer font-ui text-sm" style={{ color: "var(--ink-muted)" }}>
                   Show the {result.missing.length} slugs that didn't match
                 </summary>
-                <div className="mt-2 text-sm font-mono" style={{ color: "#5A5448" }}>
+                <div className="mt-2 text-sm font-mono" style={{ color: "var(--ink-muted)" }}>
                   {result.missing.join(", ")}
                 </div>
               </details>
             )}
             {result.blocked.length > 0 && (
-              <div className="mt-4 rounded p-4" style={{ backgroundColor: "#FBF5E6", border: "1px solid #D4A017" }}>
-                <div className="flex items-center gap-2 font-ui font-semibold" style={{ color: "#1A1A1A" }}>
-                  <AlertTriangle size={16} style={{ color: "#D4A017" }} />
+              <div className="mt-4 rounded p-4" style={{ backgroundColor: "var(--adm-gold-tint)", border: "1px solid var(--mustard)" }}>
+                <div className="flex items-center gap-2 font-ui font-semibold" style={{ color: "var(--charcoal)" }}>
+                  <AlertTriangle size={16} style={{ color: "var(--mustard)" }} />
                   {result.blocked.length} held back — unverified citations
                 </div>
-                <p className="font-body text-sm mt-2" style={{ color: "#5A5448" }}>
+                <p className="font-body text-sm mt-2" style={{ color: "var(--ink-muted)" }}>
                   These articles still contain <code>[cite — confirm]</code> placeholders and were not
                   published. Resolve or remove the citations, then publish again.
                 </p>
                 <details className="mt-2">
-                  <summary className="cursor-pointer font-ui text-sm" style={{ color: "#5A5448" }}>
+                  <summary className="cursor-pointer font-ui text-sm" style={{ color: "var(--ink-muted)" }}>
                     Show the {result.blocked.length} held-back slugs
                   </summary>
-                  <div className="mt-2 text-sm font-mono" style={{ color: "#5A5448" }}>
+                  <div className="mt-2 text-sm font-mono" style={{ color: "var(--ink-muted)" }}>
                     {result.blocked.join(", ")}
                   </div>
                 </details>
               </div>
             )}
             {result.dryRun && result.matched > 0 && (
-              <p className="mt-4 font-body text-sm" style={{ color: "#5A5448" }}>
+              <p className="mt-4 font-body text-sm" style={{ color: "var(--ink-muted)" }}>
                 Looks good. Click <strong>Publish all article content</strong> above to fill them for real.
               </p>
             )}
