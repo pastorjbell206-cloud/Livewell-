@@ -193,7 +193,9 @@ function TopicPanel({
   }
 
   async function copyVerse(v: Verse) {
-    const ok = await copyToClipboard(`"${v.text}" — ${v.ref}`);
+    // Not wrapped in quotation marks: v.text is shortened to the line in view,
+    // not the verbatim verse — copying it as a quotation would misrepresent it.
+    const ok = await copyToClipboard(`${v.ref} — ${v.text} (shortened; read the full passage)`);
     if (!ok) {
       setCopyFailed(true);
       return;
@@ -230,15 +232,20 @@ function TopicPanel({
       <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "var(--ink)", marginBottom: "var(--s-4)" }}>{topic.framing}</p>
 
       {/* verses */}
-      <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "6px" }}>
         <BookOpen size={16} style={{ color: "var(--mustard)" }} />
         <span style={{ ...eyebrow, color: "var(--ink)" }}>What Scripture says</span>
       </div>
+      {/* Integrity: these texts are shortened to the line in view, not verbatim.
+          Say so plainly and send the reader to the full passage. */}
+      <p style={{ fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 12px", maxWidth: "60ch" }}>
+        The verse text below is shortened to the line in view. Tap any reference to read the whole passage.
+      </p>
       <div style={{ display: "grid", gap: "8px", marginBottom: "var(--s-4)" }}>
         {topic.verses.map((v) => (
           <div key={v.ref} style={{ background: "var(--card)", borderLeft: "3px solid var(--mustard)", padding: "var(--s-3)" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "10px", marginBottom: "6px" }}>
-              <div style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, letterSpacing: "0.06em", color: "var(--mustard-text)" }}>{v.ref}</div>
+              <Link href={`/theology/passage?ref=${encodeURIComponent(v.ref)}`} style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, letterSpacing: "0.06em", color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--line)" }}>{v.ref} →</Link>
               <button
                 onClick={() => copyVerse(v)}
                 aria-label={`Copy ${v.ref}`}
