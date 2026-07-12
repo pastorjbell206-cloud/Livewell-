@@ -78,3 +78,53 @@
 6. **TheologyGlossary + FamilyDevotionBuilder**: the two factual corrections.
 7. **Linking pass**: deep-links + essay cross-links for BibleReference,
    DeepBibleCompanion, BibleStudy.
+
+---
+
+## Full scores (all 48 surfaces read) — sweep 1 complete
+
+### Libraries (the strongest layer — mostly elite already)
+| Library | Min axis | Note |
+|---|--|---|
+| studyguides (62) | **5** | Crown jewel — leader-ready workbooks, real bibliographies, published-curriculum depth |
+| context (31) | 4 | Published-workbook grade; only gap is prerender coverage |
+| history (14) | 4 | Strongest library per its size; whole church-history arc |
+| leadership (131 + 66 sermon books) | 4 | The deepest asset in the repo — a working pastor's shelf |
+| justice (10 + timeline/glossary) | 4 | Both-sides steelman built into the JSON schema |
+| disruption (12) | 4 | Same instrument aimed at both tribes |
+| creeds (10) | 4 | Two catechisms are Q1-only stubs; rest full |
+| plans (7) | 3 | Pastoral 8-week companions; half-hidden (no index, prerender gap) |
+| howtos (132) | 4 | Practical without going merely practical |
+| family (5 libs) | 3 | Real curriculum; unnamed translation is the one gap |
+| wisdom (208) | 3 | Best formation instrument; the verse-integrity issue (now fixed in the tool) |
+| prophetic | 3 | One excellent page, not a library (single 8KB file) |
+
+### Hubs
+| Hub | Min | Verdict |
+|---|--|---|
+| PostChristian | **1** | 50 of 60 article links dead; regenerate from api/post-christian-articles.json |
+| ChurchHurt | **1** → fixed | 6 of 7 links were dead (survivor page) — **remapped this sweep** |
+| Doubt | **1** → part | Link grid, no teaching; dead slug **fixed**; still needs prose + real destinations |
+| Marriage | 2 | Best-wired pillar hub; "reading paths" cards go nowhere; needs prose |
+| Parenting | 2 | "Conversation starters" are empty chips; off-palette hex |
+| Deconstruction | 2 → fixed | Deep page; 2 dead doors **remapped** incl. the rebuild persona |
+| FaithCrisis | 2 | Honest but teaches nothing on-page |
+| LifeIndex | 2 | Infinite-loading bug (no LoadFailed); hardcoded hex |
+| Grief / MarriageCrisis / PastoralBurnout | 3 | Competent-deep; best crisis-care copy on the site |
+| Theology / Table / HardIssuesSeries | 3–4 | Deep hubs that teach their own posture |
+| Exile | **5** | Cornerstone — a page that is itself an essay |
+
+### Fixed this sweep (branch claude/depth-sweep-1)
+- 9 dead essay links across 6 pages (ChurchHurt worst) → real corpus slugs
+- WisdomFinder Scripture integrity (1,040 verses marked + linked to full passage)
+- PastorBurnout resume bug; SermonOutline honest coverage; SavedItems full aggregation
+- TheologyGlossary 2 misattributions; FamilyDevotionBuilder uncited claim + copy mismatch; typo
+
+### Sweep 2 queue (ranked)
+1. **PostChristian** tier lists — regenerate from the real 60-article corpus; fix numberOfItems.
+2. **Pillar-hub teaching** — Doubt/Marriage/Parenting get real orientation prose + specific destinations; kill the empty "reading paths"/"conversation starters" shells.
+3. **LifeIndex** — port the Table.tsx fetchJson + LoadFailed pattern; detokenize hex.
+4. **Scripture-integrity, remaining tools** — VerseFinder, BibleOnTopic, ParentingVerses, Proverbs31, the assessments, family libs: name the translation or mark paraphrase.
+5. **Prerender coverage** — /plans, /resources/context, /resources/creeds, /theology/history, per-book sermons, wisdom per-topic routes (100+ pages invisible to search).
+6. **Structured data** — ItemList/Book on HardIssuesSeries, Table, Theology; per-topic routes for wisdom.
+7. **Depth top-ups** — creeds catechisms beyond Q1; DiscipleshipTable real multi-week arcs; PrayerGenerator voice pass.
