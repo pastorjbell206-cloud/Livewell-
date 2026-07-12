@@ -50,9 +50,17 @@ export default function LeaderAssessment() {
   const [, params] = useRoute("/leadership/assessment/:slug");
   const slug = params?.slug;
   const [data, setData] = useState<Data | null>(null);
-  const [answers, setAnswers] = useState<Record<string, number>>({});
-  const [submitted, setSubmitted] = useState(false);
-  const [resumed, setResumed] = useState(false);
+  // This component is keyed by slug at the route, so it remounts per assessment.
+  // Saved progress is restored in lazy initializers (once, at mount), which
+  // keeps one instrument's answers from ever leaking into another's and needs
+  // no synchronous reset in an effect.
+  const readProgress = () => (slug ? readStoredJSON<Progress | null>(progressKey(slug), (x): x is Progress | null => isProgress(x), null) : null);
+  const [answers, setAnswers] = useState<Record<string, number>>(() => readProgress()?.answers ?? {});
+  const [submitted, setSubmitted] = useState(() => {
+    const p = readProgress();
+    return p?.step === 1 && Object.keys(p?.answers ?? {}).length > 0;
+  });
+  const [resumed, setResumed] = useState(() => Object.keys(readProgress()?.answers ?? {}).length > 0);
   const [persistFailed, setPersistFailed] = useState(false);
   const [nonce, setNonce] = useState(0);
   // The attempt (slug + retry nonce) that failed. Deriving `error` from it means
@@ -62,14 +70,6 @@ export default function LeaderAssessment() {
 
   useEffect(() => {
     if (!slug) return;
-    // Reset, then restore THIS slug's saved progress — the key carries the slug,
-    // so switching assessments never leaks answers across instruments.
-    setData(null);
-    const stored = readStoredJSON<Progress | null>(progressKey(slug), (x): x is Progress | null => isProgress(x), null);
-    const restored = stored?.answers ?? {};
-    setAnswers(restored);
-    setSubmitted(stored?.step === 1 && Object.keys(restored).length > 0);
-    setResumed(Object.keys(restored).length > 0);
     let stale = false;
     fetchJson<Data>(`/leadership/assessments/${slug}.json`, isData)
       .then((d) => { if (!stale) setData(d); })

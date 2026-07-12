@@ -95,14 +95,15 @@ export default function PrayerGenerator() {
     ? `prayer-${selected}-${index % PRAYERS[selected].length}`
     : null;
 
-  // Prayer of the Day — cycles through all prayers based on day of year
-  const dailyPrayer = useMemo(() => {
+  // Prayer of the Day — cycles through all prayers by day of year. Read the
+  // clock once in a lazy initializer (not during render) to stay pure.
+  const [dailyPrayer] = useState(() => {
     const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000);
     const allPrayers = Object.entries(PRAYERS).flatMap(([type, prayers]) =>
       prayers.map((text) => ({ type, text }))
     );
     return allPrayers[dayOfYear % allPrayers.length];
-  }, []);
+  });
 
   // Pray Along: split prayer into phrases and auto-advance
   const startPrayAlong = useCallback(() => {
@@ -161,9 +162,10 @@ export default function PrayerGenerator() {
     };
   }, [prayAlongActive, prayAlongPaused, phrases.length]);
 
-  // Reset pray-along when prayer changes
+  // Reset pray-along when the prayer changes: run stopPrayAlong as cleanup on
+  // the next change (not synchronously in the effect body).
   useEffect(() => {
-    stopPrayAlong();
+    return () => stopPrayAlong();
   }, [selected, index, stopPrayAlong]);
 
   const handleToggleSavePrayer = () => {

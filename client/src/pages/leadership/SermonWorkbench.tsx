@@ -69,19 +69,22 @@ const STAGES: Stage[] = [
 ];
 
 export default function SermonWorkbench() {
-  const [title, setTitle] = useState("");
-  const [answers, setAnswers] = useState<Record<string, string>>({});
+  // Restore saved work in lazy initializers (once, at mount) rather than a
+  // synchronous setState in an effect.
+  const [title, setTitle] = useState(() => {
+    const o = readStoredJSON(KEY, isSaved, {});
+    return typeof o.title === "string" ? o.title : "";
+  });
+  const [answers, setAnswers] = useState<Record<string, string>>(() => {
+    const o = readStoredJSON(KEY, isSaved, {});
+    return isAnswers(o.answers) ? o.answers : {};
+  });
   const [saved, setSaved] = useState(false);
   const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "failed">("idle");
   const [persistFailed, setPersistFailed] = useState(false);
   const [copies, setCopies] = useState<SaveRec[]>(() => readStoredJSON(SAVES_KEY, isSaveList, []));
   const [saveName, setSaveName] = useState("");
 
-  useEffect(() => {
-    const o = readStoredJSON(KEY, isSaved, {});
-    if (typeof o.title === "string") setTitle(o.title);
-    if (isAnswers(o.answers)) setAnswers(o.answers);
-  }, []);
 
   useEffect(() => {
     const t = setTimeout(() => {

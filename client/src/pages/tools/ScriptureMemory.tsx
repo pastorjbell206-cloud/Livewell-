@@ -238,21 +238,17 @@ export default function ScriptureMemory() {
   const [recallResults, setRecallResults] = useState<
     Record<string, boolean | null>
   >({});
-  const [memorized, setMemorized] = useState<Set<string>>(new Set());
-  const [showAnswer, setShowAnswer] = useState<Record<string, boolean>>({});
-  const [saveFailed, setSaveFailed] = useState(false);
-
-  // Load memorized state from localStorage (shape-guarded: refs only)
-  useEffect(() => {
-    const stored = readStoredJSON<string[]>(
+  // Load memorized state from localStorage in a lazy initializer (once, at
+  // mount, shape-guarded: refs only) rather than a synchronous setState effect.
+  const [memorized, setMemorized] = useState<Set<string>>(
+    () => new Set(readStoredJSON<string[]>(
       STORAGE_KEY,
       isArrayOf((x): x is string => typeof x === "string"),
       []
-    );
-    if (stored.length > 0) {
-      setMemorized(new Set(stored));
-    }
-  }, []);
+    ))
+  );
+  const [showAnswer, setShowAnswer] = useState<Record<string, boolean>>({});
+  const [saveFailed, setSaveFailed] = useState(false);
 
   // Save memorized state to localStorage
   const persistMemorized = useCallback((next: Set<string>) => {

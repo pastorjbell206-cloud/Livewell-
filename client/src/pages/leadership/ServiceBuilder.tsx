@@ -75,21 +75,16 @@ export default function ServiceBuilder() {
   const error = failedAt === `${slug}|${nonce}`;
   const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "failed">("idle");
   const [persistFailed, setPersistFailed] = useState(false);
-  const [copies, setCopies] = useState<SaveRec[]>([]);
+  // Keyed by slug at the route, so this remounts per service (wedding, funeral,
+  // …). Saved copies restore in a lazy initializer; the fetch sets data/st
+  // asynchronously — no synchronous reset effect that could overwrite one
+  // service's saved work with another's.
+  const [copies, setCopies] = useState<SaveRec[]>(() => (slug ? readStoredJSON(savesKey(slug), isSaveList, []) : []));
   const [saveName, setSaveName] = useState("");
   const KEY = slug ? `livewell-service-${slug}` : "";
 
   useEffect(() => {
     if (!slug) return;
-    // Reset FIRST. Without this, switching services (wedding -> funeral) left
-    // the previous service's state live while KEY had already flipped, and the
-    // save effect below immediately overwrote the new slug's saved work with
-    // the old slug's state — permanently, if the fetch then failed.
-    setData(null);
-    setSt({ include: {}, pick: {}, text: {} });
-    setCopyStatus("idle");
-    setCopies(readStoredJSON(savesKey(slug), isSaveList, []));
-    setSaveName("");
     let stale = false;
     const saved = readStoredJSON<State | null>(
       `livewell-service-${slug}`,
