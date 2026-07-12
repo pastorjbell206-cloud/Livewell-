@@ -11,11 +11,11 @@ export type TrpcContext = {
 export async function createContext(
   opts: CreateExpressContextOptions
 ): Promise<TrpcContext> {
-  let user: User | null = null;
+  let user: User | null;
 
   try {
     user = await sdk.authenticateRequest(opts.req);
-  } catch (error) {
+  } catch {
     // Authentication is optional for public procedures.
     user = null;
   }

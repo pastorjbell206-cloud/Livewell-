@@ -380,7 +380,7 @@ async function seedArticleSet(req: VercelRequest, res: VercelResponse, set: any[
             [a.title, a.slug, a.body, a.excerpt, a.pillar, a.readTime]
           );
           if (r.affectedRows) inserted++;
-        } catch {}
+        } catch { /* row-level insert failure — skip and continue */ }
       }
       const [rows] = await c.query("SELECT COUNT(*) as n FROM posts");
       return { inserted, totalArticles: set.length, totalPosts: (rows as any)[0].n };
@@ -404,7 +404,7 @@ async function seedPostChristianArticles(req: VercelRequest, res: VercelResponse
             [a.title, a.slug, a.body, a.excerpt, a.pillar, a.readTime]
           );
           if (r.affectedRows) inserted++;
-        } catch {}
+        } catch { /* row-level insert failure — skip and continue */ }
       }
       const [rows] = await c.query("SELECT COUNT(*) as n FROM posts");
       return { inserted, totalArticles: postChristianArticles.length, totalPosts: (rows as any)[0].n };
@@ -469,7 +469,7 @@ async function refreshArticles(req: VercelRequest, res: VercelResponse) {
               [a.title, a.slug, a.body, a.excerpt, a.pillar, a.readTime]
             );
             if (ins.affectedRows) i++;
-          } catch {}
+          } catch { /* row-level insert failure — skip and continue */ }
         }
         breakdown[name] = { updated: u, inserted: i, total: set.length };
         updated += u; inserted += i;
@@ -509,7 +509,7 @@ async function seedAllArticles(req: VercelRequest, res: VercelResponse) {
               [a.title, a.slug, a.body, a.excerpt, a.pillar, a.readTime]
             );
             if (r.affectedRows) n++;
-          } catch {}
+          } catch { /* row-level insert failure — skip and continue */ }
         }
         breakdown[name] = { inserted: n, total: set.length };
         inserted += n;
@@ -1216,7 +1216,7 @@ async function listSlimPosts(): Promise<any[]> {
           [rows] = await c.execute(
             `SELECT ${base} FROM posts WHERE published = true ORDER BY createdAt DESC LIMIT 2000`
           );
-        } catch { rows = null; }
+        } catch { /* legacy schema also missing — rows stays null, fall through to articles */ }
       }
       if (Array.isArray(rows) && rows.length > 0) {
         return (rows as any[]).map((r) => ({
@@ -1233,7 +1233,7 @@ async function listSlimPosts(): Promise<any[]> {
       );
       return (arows as any[]).map(toPostCard);
     });
-  } catch { dbRows = []; /* no DB / unreachable: serve the static library alone */ }
+  } catch { /* no DB / unreachable: keep the empty default and serve the static library alone */ }
   return mergeWithStatic(dbRows, true);
 }
 
@@ -3427,9 +3427,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/sitemap.xml" || url === "/api/sitemap") return sitemap(req, res);
     if (url === "/api/robots.txt" || url === "/api/robots") return robotsTxt(req, res);
     if (url === "/api/articles") return listArticles(req, res);
-    const ma = url.match(/^\/api\/articles\/([^\/]+)/);
+    const ma = url.match(/^\/api\/articles\/([^/]+)/);
     if (ma) return getArticle(req, res, decodeURIComponent(ma[1]));
-    const mt = url.match(/^\/api\/trpc\/([^\/]+)/);
+    const mt = url.match(/^\/api\/trpc\/([^/]+)/);
     if (mt) {
       const procNames = decodeURIComponent(mt[1]).split(",");
       if (procNames.length === 1) {
