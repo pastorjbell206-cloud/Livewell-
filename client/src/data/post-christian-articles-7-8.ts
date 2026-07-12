@@ -1,4 +1,4 @@
-[
+export const ARTICLES_BATCH_7_8 = [
   {
     title: "When Politics Replaced Theology",
     slug: "when-politics-replaced-theology",
