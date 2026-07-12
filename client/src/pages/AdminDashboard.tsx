@@ -493,7 +493,7 @@ export default function AdminDashboard() {
                 Import Content
               </h2>
               <p className="font-body text-sm" style={{ color: "#6B7280" }}>
-                Load {contentData.posts.length} articles, {contentData.books.length} books, and site settings. Duplicates are skipped.
+                Load all bundled articles, books, and site settings. Exact counts are shown before you confirm. Duplicates are skipped.
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
