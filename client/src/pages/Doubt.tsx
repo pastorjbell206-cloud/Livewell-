@@ -103,7 +103,7 @@ export default function Doubt() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
             {START_HERE_PATHS.map((path, i) => (
-              <Link key={i} href="/writing?topic=theology" style={{ textDecoration: "none" }}>
+              <Link key={i} href="/writing?track=doubt" style={{ textDecoration: "none" }}>
                 <div style={{ background: "var(--card)", padding: "40px", borderRadius: "8px", border: "1px solid #E0D9CC", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column" }}>
                   <div style={{ fontSize: "32px", marginBottom: "16px" }}>
                     {path.icon}
@@ -161,7 +161,7 @@ export default function Doubt() {
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "24px" }}>
             {HARD_QUESTIONS.map((question, i) => (
-              <Link key={i} href="/writing?topic=theology" style={{ textDecoration: "none" }}>
+              <Link key={i} href="/writing?track=doubt" style={{ textDecoration: "none" }}>
                 <div style={{ background: "var(--ink)", color: "var(--paper)", padding: "32px", borderRadius: "8px", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "space-between", minHeight: "100px" }}>
                   <h3 style={{ fontSize: "16px", fontWeight: "bold", margin: 0 }}>
                     {question}
@@ -211,9 +211,9 @@ export default function Doubt() {
           <p style={{ fontSize: "16px", lineHeight: "1.8", marginBottom: "32px", color: "var(--ink3)" }}>
             It might be the beginning of the truest faith you'll ever have. Not faith that requires you to stop thinking. Faith that holds up under real questions.
           </p>
-          <Link href="/writing?topic=theology" style={{ textDecoration: "none" }}>
+          <Link href="/writing?track=doubt" style={{ textDecoration: "none" }}>
             <button style={{ background: "var(--ink)", color: "var(--paper)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
-              Browse All Theological Articles
+              Browse All Doubt & Faith Essays
             </button>
           </Link>
         </div>

@@ -53,6 +53,7 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
     title: "Write & Read",
     links: [
       { label: "The Writing", href: "/writing", primary: true },
+      { label: "Doubt & Faith", href: "/writing?track=doubt", primary: true },
       { label: "Books", href: "/books", primary: true },
       { label: "The Library (read online)", href: "/read", primary: true },
       { label: "Reading Paths", href: "/reading-paths", primary: true },
