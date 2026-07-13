@@ -30,7 +30,7 @@ export default function BeTrueToYourself() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description="Be true to yourself is the one commandment no one questions. This book argues it is the most destructive lie of the age, the worship of the self with no name. How the self became sovereign, what it cost us, and the older freedom on the other side: you are not your own. A PDF ebook by James Bell."
+        description="Be true to yourself is the one commandment no one questions. A case that it is the most destructive lie of the age, and the freedom on the other side."
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

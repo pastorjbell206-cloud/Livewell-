@@ -30,7 +30,7 @@ export default function WhyNotWhat() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description="A short book on the order of the questions. Why a faith built on what to do before why it is true fails exactly when you need it, what the catechism and Romans and Sinai all knew about putting the why first, and how to begin the whole of faith again with the right question. PDF ebook by James Bell."
+        description="Why theology built on what to do before why it's true collapses under pressure, and how to begin the whole of faith again with the right question."
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

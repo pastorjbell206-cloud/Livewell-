@@ -30,7 +30,7 @@ export default function Babylon() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description="The part of Jeremiah's letter to the exiles we never read, worked into an ordinary life. How to build, plant, raise a family, and seek the welfare of the city in Christian exile, without taking the culture back by force or giving the faith away. A PDF ebook by James Bell."
+        description="Jeremiah's letter to the exiles, worked into an ordinary life: how to build, plant, and raise a family in a nation that stopped being Christian."
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

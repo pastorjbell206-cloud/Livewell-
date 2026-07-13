@@ -156,6 +156,8 @@ export default function Books() {
         <Link href="/covenant" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
+              loading="lazy"
+              decoding="async"
               src="/books/covenant.svg"
               alt="Covenant book cover"
               width={120}
@@ -186,6 +188,8 @@ export default function Books() {
         <Link href="/how-to-read-the-bible" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
+              loading="lazy"
+              decoding="async"
               src="/books/how-to-read-the-bible.svg"
               alt="How to Read the Bible book cover"
               width={120}
@@ -217,6 +221,8 @@ export default function Books() {
         <Link href="/be-true-to-yourself" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
+              loading="lazy"
+              decoding="async"
               src="/books/be-true-to-yourself.svg"
               alt="Be True to Yourself book cover"
               width={120}
@@ -248,6 +254,8 @@ export default function Books() {
         <Link href="/what-belongs-to-the-poor" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
+              loading="lazy"
+              decoding="async"
               src="/books/what-belongs-to-the-poor.svg"
               alt="What Belongs to the Poor book cover"
               width={120}
@@ -279,6 +287,8 @@ export default function Books() {
         <Link href="/rule-of-life" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
+              loading="lazy"
+              decoding="async"
               src="/books/rule-of-life.svg"
               alt="Rule of Life book cover"
               width={120}
@@ -310,6 +320,8 @@ export default function Books() {
         <Link href="/why-not-what" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
+              loading="lazy"
+              decoding="async"
               src="/books/why-not-what.svg"
               alt="Why Not What book cover"
               width={120}
@@ -339,7 +351,9 @@ export default function Books() {
       <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/sermon-on-the-mount-as-politics" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
-            <img src="/books/sermon-on-the-mount-as-politics.svg" alt="The Sermon on the Mount as Politics book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
+            <img
+              loading="lazy"
+              decoding="async" src="/books/sermon-on-the-mount-as-politics.svg" alt="The Sermon on the Mount as Politics book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Ebook · $9.99 · On the Kingdom
@@ -363,7 +377,9 @@ export default function Books() {
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/prophetic-justice-101" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
-            <img src="/books/prophetic-justice-101.svg" alt="Prophetic Justice 101 book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
+            <img
+              loading="lazy"
+              decoding="async" src="/books/prophetic-justice-101.svg" alt="Prophetic Justice 101 book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
                 New Ebook · $9.99 · On Justice
@@ -387,7 +403,9 @@ export default function Books() {
       <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/marriage-in-ministry" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
-            <img src="/books/marriage-in-ministry.svg" alt="Marriage in Ministry book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
+            <img
+              loading="lazy"
+              decoding="async" src="/books/marriage-in-ministry.svg" alt="Marriage in Ministry book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Ebook · $9.99 · On Marriage &amp; Ministry
@@ -411,7 +429,9 @@ export default function Books() {
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/the-loneliness-of-the-pastor" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
-            <img src="/books/the-loneliness-of-the-pastor.svg" alt="The Loneliness of the Pastor book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
+            <img
+              loading="lazy"
+              decoding="async" src="/books/the-loneliness-of-the-pastor.svg" alt="The Loneliness of the Pastor book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
                 New Ebook · $9.99 · For Pastors
@@ -435,7 +455,9 @@ export default function Books() {
       <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/healwell" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
-            <img src="/books/healwell.svg" alt="HealWell book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
+            <img
+              loading="lazy"
+              decoding="async" src="/books/healwell.svg" alt="HealWell book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Devotional · $9.99 · 52 Weeks
@@ -459,7 +481,9 @@ export default function Books() {
       <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/born-again-from-atheism" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
-            <img src="/books/born-again-from-atheism.svg" alt="Born Again From Atheism book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
+            <img
+              loading="lazy"
+              decoding="async" src="/books/born-again-from-atheism.svg" alt="Born Again From Atheism book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Ebook · $9.99 · For Skeptics
@@ -483,7 +507,9 @@ export default function Books() {
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/the-god-who-is-not-nice" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
-            <img src="/books/the-god-who-is-not-nice.svg" alt="The God Who Is Not Nice book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
+            <img
+              loading="lazy"
+              decoding="async" src="/books/the-god-who-is-not-nice.svg" alt="The God Who Is Not Nice book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
                 New Ebook · $9.99 · On the Character of God
@@ -507,7 +533,9 @@ export default function Books() {
       <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/faith-after-deconstruction" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
-            <img src="/books/faith-after-deconstruction.svg" alt="Faith After Deconstruction book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
+            <img
+              loading="lazy"
+              decoding="async" src="/books/faith-after-deconstruction.svg" alt="Faith After Deconstruction book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Ebook · $9.99 · For the Deconstructing
@@ -531,7 +559,9 @@ export default function Books() {
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/ordinary-holiness" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
-            <img src="/books/ordinary-holiness.svg" alt="Ordinary Holiness book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
+            <img
+              loading="lazy"
+              decoding="async" src="/books/ordinary-holiness.svg" alt="Ordinary Holiness book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
                 New Ebook · $9.99 · On Everyday Faith
@@ -555,7 +585,9 @@ export default function Books() {
       <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/the-scandal-of-the-cross" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
-            <img src="/books/the-scandal-of-the-cross.svg" alt="The Scandal of the Cross book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
+            <img
+              loading="lazy"
+              decoding="async" src="/books/the-scandal-of-the-cross.svg" alt="The Scandal of the Cross book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Ebook · $9.99 · On the Cross
@@ -579,7 +611,9 @@ export default function Books() {
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/heaven-is-not-your-reward" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
-            <img src="/books/heaven-is-not-your-reward.svg" alt="Heaven Is Not Your Reward book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
+            <img
+              loading="lazy"
+              decoding="async" src="/books/heaven-is-not-your-reward.svg" alt="Heaven Is Not Your Reward book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
                 New Ebook · $9.99 · On the Last Things
@@ -603,7 +637,9 @@ export default function Books() {
       <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/prayer-in-the-dark" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
-            <img src="/books/prayer-in-the-dark.svg" alt="Prayer in the Dark book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
+            <img
+              loading="lazy"
+              decoding="async" src="/books/prayer-in-the-dark.svg" alt="Prayer in the Dark book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Ebook · $9.99 · On Prayer
@@ -627,7 +663,9 @@ export default function Books() {
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/the-body-you-left" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
-            <img src="/books/the-body-you-left.svg" alt="The Body You Left book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
+            <img
+              loading="lazy"
+              decoding="async" src="/books/the-body-you-left.svg" alt="The Body You Left book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
                 New Ebook · $9.99 · On the Church
@@ -652,6 +690,8 @@ export default function Books() {
         <Link href="/books/when-god-bless-america" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
+              loading="lazy"
+              decoding="async"
               src="/books/when-god-bless-america.jpg"
               alt="When God Bless America Replaces Thy Kingdom Come"
               width={120} height={181}
@@ -680,6 +720,8 @@ export default function Books() {
         <Link href="/alone-in-a-crowded-church" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
+              loading="lazy"
+              decoding="async"
               src="/books/alone-in-a-crowded-church.svg"
               alt="Alone in a Crowded Church book cover"
               width={120}
@@ -722,7 +764,9 @@ export default function Books() {
               { slug: "where-your-treasure-is", cover: "/books/where-your-treasure-is.jpg", title: "Where Your Treasure Is", sub: "What the Bible Says About Money, and the Heart It Means to Free" },
             ].map((b) => (
               <Link key={b.slug} href={`/${b.slug}`} style={{ textDecoration: "none", color: "inherit", display: "block" }}>
-                <img src={b.cover} alt={`${b.title} — cover`} width={1600} height={2560}
+                <img
+              loading="lazy"
+              decoding="async" src={b.cover} alt={`${b.title} — cover`} width={1600} height={2560}
                   style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 12px 32px rgba(0,0,0,.25)" }} />
                 <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", margin: "14px 0 4px", lineHeight: 1.2 }}>{b.title}</h3>
                 <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 8px", lineHeight: 1.4 }}>{b.sub}</p>
@@ -749,7 +793,9 @@ export default function Books() {
               { slug: "raising-believers", cover: "/books/raising-believers.jpg", title: "Raising Believers", sub: "Christian Parenting in a Post-Christian World" },
             ].map((b) => (
               <Link key={b.slug} href={`/books/${b.slug}`} style={{ textDecoration: "none", color: "inherit", display: "block" }}>
-                <img src={b.cover} alt={`${b.title} — cover`} width={1600} height={2560}
+                <img
+              loading="lazy"
+              decoding="async" src={b.cover} alt={`${b.title} — cover`} width={1600} height={2560}
                   style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 12px 32px rgba(0,0,0,.4)" }} />
                 <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--bone)", margin: "14px 0 4px", lineHeight: 1.2 }}>{b.title}</h3>
                 <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "rgba(245,240,230,.7)", margin: "0 0 8px", lineHeight: 1.4 }}>{b.sub}</p>
@@ -778,7 +824,9 @@ export default function Books() {
               { slug: "critical-race-theory-biblical", cover: "/books/critical-race-theory-biblical.jpg", title: "Is Critical Race Theory Biblical?", sub: "Race, Justice, and What the Church Actually Owes the World" },
             ].map((b) => (
               <Link key={b.slug} href={`/books/${b.slug}`} style={{ textDecoration: "none", color: "inherit", display: "block" }}>
-                <img src={b.cover} alt={`${b.title} — cover`} width={1600} height={2560}
+                <img
+              loading="lazy"
+              decoding="async" src={b.cover} alt={`${b.title} — cover`} width={1600} height={2560}
                   style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 12px 32px rgba(0,0,0,.25)" }} />
                 <h3 style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, color: "var(--ink)", margin: "14px 0 4px", lineHeight: 1.2 }}>{b.title}</h3>
                 <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 8px", lineHeight: 1.4 }}>{b.sub}</p>

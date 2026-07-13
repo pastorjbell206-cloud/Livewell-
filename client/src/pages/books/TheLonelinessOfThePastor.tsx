@@ -30,7 +30,7 @@ export default function TheLonelinessOfThePastor() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description={"On the structural loneliness that drives pastors to quit, why a pastor cannot be a normal member of his own church, and the case for brotherhood and a pastors' network as the thing that lets them stay. PDF ebook by James Bell."}
+        description={"Why pastors quit: the structural loneliness of a job with no peers inside the building, and the brotherhood that could let a pastor stay."}
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

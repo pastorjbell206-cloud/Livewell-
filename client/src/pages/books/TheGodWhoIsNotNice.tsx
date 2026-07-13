@@ -30,7 +30,7 @@ export default function TheGodWhoIsNotNice() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description={"A recovery of the holiness and weight of God against the sentimental, therapeutic deity of a comfortable age. Holiness, wrath as love, the fear of the Lord, and why the heavier God is the only one who can save. PDF ebook by James Bell."}
+        description={"Recovering the holiness and weight of God against the sentimental deity of a comfortable age — wrath as love, and why the heavier God alone saves."}
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

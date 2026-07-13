@@ -30,7 +30,7 @@ export default function OrdinaryHoliness() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description={"A theology of the ordinary: work as worship, the body and its rhythms, the table, the neighbor, and the long faithfulness no one applauds. Finding God in everyday life instead of the spectacular. PDF ebook by James Bell."}
+        description={"A theology of the ordinary — work as worship, the table, the neighbor — finding God in the life you actually have, not the spectacular one."}
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

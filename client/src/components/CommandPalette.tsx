@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Command } from "cmdk";
 import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
@@ -46,6 +46,17 @@ export default function CommandPalette({ defaultOpen = false }: { defaultOpen?: 
   // that mounted it (this component's own listener attaches too late for
   // that first press).
   const [open, setOpen] = useState(defaultOpen);
+  // Focus restoration: remember what had focus when the palette opened and hand
+  // it back on close (dialog pattern; the Input autofocuses on open).
+  const lastFocused = useRef<HTMLElement | null>(null);
+  useEffect(() => {
+    if (open) {
+      lastFocused.current = document.activeElement as HTMLElement | null;
+    } else {
+      lastFocused.current?.focus?.();
+      lastFocused.current = null;
+    }
+  }, [open]);
   const [input, setInput] = useState("");
   const [query, setQuery] = useState("");
   const [, navigate] = useLocation();
@@ -112,6 +123,14 @@ export default function CommandPalette({ defaultOpen = false }: { defaultOpen?: 
     >
       <div
         onClick={(e) => e.stopPropagation()}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Search the site"
+        onKeyDown={(e) => {
+          // The input is the palette's only tabbable element (results are
+          // arrow-key driven), so containing Tab completes the focus trap.
+          if (e.key === "Tab") e.preventDefault();
+        }}
         style={{
           width: "100%",
           maxWidth: 560,
