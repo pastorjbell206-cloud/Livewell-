@@ -30,7 +30,7 @@ export default function HowToReadTheBible() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description="Everyone reads the Bible through a lens and calls it just reading. How to read Scripture without conscripting it: proof-texting, the one story, genre, authorial intent, reading with the church, Christ as the center, and the passages we skip. A PDF ebook by James Bell."
+        description="Everyone reads the Bible through a lens and calls it just reading. A guide to proof-texting, genre, authorial intent, and Christ as the center."
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

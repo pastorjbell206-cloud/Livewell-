@@ -24,6 +24,9 @@ export default function BookPreview({
       <div
         className="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto animate-in zoom-in-95 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
+        role="dialog"
+        aria-modal="true"
+        aria-label={`Sample chapter: ${title}`}
       >
         {/* Modal Header */}
         <div className="sticky top-0 flex items-center justify-between p-6 border-b" style={{ borderColor: "var(--bone-muted)" }}>
@@ -33,8 +36,9 @@ export default function BookPreview({
           <button
             onClick={onClose}
             className="p-2 hover:bg-gray-100 rounded transition-colors"
+            aria-label="Close sample chapter"
           >
-            <X size={24} style={{ color: "var(--ink)" }} />
+            <X size={24} style={{ color: "var(--ink)" }} aria-hidden="true" />
           </button>
         </div>
 

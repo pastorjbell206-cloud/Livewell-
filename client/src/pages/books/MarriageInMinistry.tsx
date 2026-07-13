@@ -30,7 +30,7 @@ export default function MarriageInMinistry() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description={"An honest book on the pressures the parsonage puts on a marriage, the church as the rival that takes the pastor's best energy, and how the covenant is protected and restored when ministry demands everything. PDF ebook by James Bell."}
+        description={"The pressures the parsonage puts on a marriage, the church as the rival for a pastor's best energy, and how the covenant survives ministry."}
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

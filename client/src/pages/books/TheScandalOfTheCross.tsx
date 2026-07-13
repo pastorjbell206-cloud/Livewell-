@@ -29,7 +29,7 @@ export default function TheScandalOfTheCross() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description={"A recovery of the cross as the scandalous center of the Christian faith: why a good God would die, what the atonement accomplishes across its major models, and why the crucified God is the deepest answer to guilt, shame, suffering, and death. PDF ebook by James Bell."}
+        description={"Why a good God would die: the cross as the scandalous center of the faith, the atonement's major models, and the deepest answer to guilt and shame."}
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

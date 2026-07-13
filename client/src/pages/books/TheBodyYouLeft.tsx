@@ -29,7 +29,7 @@ export default function TheBodyYouLeft() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description={"For the dechurched and the disillusioned: an honest reckoning with what the church did to lose people, and the hard case for why the body of Christ still matters and was never meant to be practiced alone. PDF ebook by James Bell."}
+        description={"For the dechurched and disillusioned: an honest reckoning with what the church did to lose people, and the case for why the body still matters."}
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

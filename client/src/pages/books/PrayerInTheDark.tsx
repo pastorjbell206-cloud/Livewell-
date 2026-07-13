@@ -29,7 +29,7 @@ export default function PrayerInTheDark() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description={"An honest book on prayer for people whose prayers seem to hit the ceiling: unanswered prayer, the silence of God, praying when numb or angry or doubting, and the recovery of prayer as honesty before God rather than a technique that works. PDF ebook by James Bell."}
+        description={"An honest book on prayer for people whose prayers hit the ceiling — unanswered prayer, God's silence, and prayer as honesty instead of technique."}
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

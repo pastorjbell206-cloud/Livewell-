@@ -30,7 +30,7 @@ export default function HealWell() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description={"A year-long devotional of fifty-two honest weekly readings for tired believers and people in pain. Grief, doubt, exhaustion, and the silence of God, met without denial and pointed toward a costly, durable hope. PDF ebook by James Bell."}
+        description={"Fifty-two weekly readings for tired believers and people in pain — grief, doubt, and exhaustion met without denial, pointed toward costly hope."}
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

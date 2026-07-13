@@ -30,7 +30,7 @@ export default function BornAgainFromAtheism() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description={"A first-person account of coming to faith from atheism as an adult, braided with a serious apologetic that takes the strongest atheist objections seriously: suffering, science, the hiddenness of God, and the harms of religion. PDF ebook by James Bell."}
+        description={"A first-person account of coming to faith from atheism as an adult, braided with a serious answer to suffering, science, and God's hiddenness."}
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

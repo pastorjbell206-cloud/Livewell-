@@ -30,7 +30,7 @@ export default function SermonOnTheMountAsPolitics() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description={"A reading of the Sermon on the Mount as the political constitution of the kingdom of God, not a guide to private inner life. The Beatitudes, salt and light, the antitheses, love of enemies, money and anxiety, and the call to come down the mountain and live it. PDF ebook by James Bell."}
+        description={"The Sermon on the Mount read as the kingdom's actual constitution, not a guide to private feeling: the Beatitudes, enemy love, money, anxiety."}
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

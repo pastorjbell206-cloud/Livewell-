@@ -30,7 +30,7 @@ export default function WhatBelongsToThePoor() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description="Basil and the Church Fathers taught that giving to the poor is justice, not charity, returning what was already theirs. This book recovers what the ancient church knew about wealth and the poor, from the Exodus and the prophets to the early church that shamed an empire, and what it asks of a hoarding modern church. A PDF ebook by James Bell."
+        description="What the ancient church knew about wealth and the poor, from Exodus and the prophets to an empire-shaming church — and what it asks of us now."
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",
