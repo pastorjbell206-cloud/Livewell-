@@ -116,7 +116,7 @@ export default function CanScienceAndFaithCoexist() {
           <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "48ch", marginLeft: "auto", marginRight: "auto" }}>
             The full article traces the history of science and Christianity, dismantles the warfare myth, and examines what the real relationship looks like.
           </p>
-          <Link href="/writing/has-science-disproved-god" style={{ textDecoration: "none" }}>
+          <Link href="/answers" style={{ textDecoration: "none" }}>
             <span style={{ display: "inline-block", background: "var(--bone)", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.06em", padding: "15px 32px", borderRadius: "2px", borderBottom: "2px solid var(--mustard)" }}>
               Read the full article
             </span>
