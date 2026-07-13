@@ -35,15 +35,17 @@ export default function AdminSettings() {
     return () => { active = false; };
   }, []);
 
-  useEffect(() => {
-    if (getAllSettingsQuery.data) {
-      setForm({
-        substackUrl: getAllSettingsQuery.data.substackUrl || "",
-        pastorsConnectionUrl: getAllSettingsQuery.data.pastorsConnectionUrl || "",
-        stripeMembershipPriceId: getAllSettingsQuery.data.stripeMembershipPriceId || "",
-      });
-    }
-  }, [getAllSettingsQuery.data]);
+  // Hydrate the form from the loaded settings (guarded state adjustment
+  // during render — see react.dev "You Might Not Need an Effect").
+  const [hydratedFrom, setHydratedFrom] = useState<typeof getAllSettingsQuery.data | null>(null);
+  if (getAllSettingsQuery.data && getAllSettingsQuery.data !== hydratedFrom) {
+    setHydratedFrom(getAllSettingsQuery.data);
+    setForm({
+      substackUrl: getAllSettingsQuery.data.substackUrl || "",
+      pastorsConnectionUrl: getAllSettingsQuery.data.pastorsConnectionUrl || "",
+      stripeMembershipPriceId: getAllSettingsQuery.data.stripeMembershipPriceId || "",
+    });
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -75,22 +77,22 @@ export default function AdminSettings() {
         </p>
 
         {/* Integrations at a glance — which services are actually connected. */}
-        <div className="max-w-2xl mb-10 rounded-lg" style={{ background: "#FFFFFF", border: "1px solid #E5E7EB" }}>
+        <div className="max-w-2xl mb-10 rounded-lg" style={{ background: "var(--card)", border: "1px solid var(--adm-gray-line)" }}>
           <div className="px-5 pt-4 pb-2">
-            <h2 className="font-display text-xl font-bold" style={{ color: "#1A1A1A" }}>Integrations</h2>
-            <p className="font-body text-sm" style={{ color: "#6B7280" }}>
+            <h2 className="font-display text-xl font-bold" style={{ color: "var(--charcoal)" }}>Integrations</h2>
+            <p className="font-body text-sm" style={{ color: "var(--adm-gray)" }}>
               {configured ? "What is connected on the live server right now." : "Loading connection status… (needs the production API and an admin session)"}
             </p>
           </div>
           {configured && INTEGRATIONS.map((i, idx) => (
-            <div key={i.key} className="flex flex-wrap items-center justify-between gap-2 px-5 py-2.5" style={{ borderTop: idx === 0 ? "1px solid #E5E7EB" : "1px solid #F3F4F6" }}>
-              <span className="font-ui text-sm" style={{ color: "#1A1A1A" }}>{i.label}</span>
+            <div key={i.key} className="flex flex-wrap items-center justify-between gap-2 px-5 py-2.5" style={{ borderTop: idx === 0 ? "1px solid var(--adm-gray-line)" : "1px solid var(--adm-gray-bg)" }}>
+              <span className="font-ui text-sm" style={{ color: "var(--charcoal)" }}>{i.label}</span>
               {configured[i.key] ? (
-                <span className="flex items-center gap-1 font-ui text-xs font-semibold" style={{ color: "#2E7D32" }}>
+                <span className="flex items-center gap-1 font-ui text-xs font-semibold" style={{ color: "var(--adm-ok)" }}>
                   <CheckCircle2 size={14} /> Connected
                 </span>
               ) : (
-                <span className="flex items-center gap-1 font-ui text-xs" style={{ color: "#9B2C2C" }} title={i.whenOff}>
+                <span className="flex items-center gap-1 font-ui text-xs" style={{ color: "var(--alert)" }} title={i.whenOff}>
                   <XCircle size={14} /> Not connected — {i.whenOff}
                 </span>
               )}
@@ -113,7 +115,7 @@ export default function AdminSettings() {
                 value={form.substackUrl}
                 onChange={(e) => setForm({ ...form, substackUrl: e.target.value })}
                 className="w-full px-4 py-2 rounded border font-body"
-                style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+                style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
                 placeholder="https://substack.com/@yourname"
               />
               <p className="font-ui text-xs mt-2" style={{ color: "var(--ink-muted)" }}>
@@ -136,7 +138,7 @@ export default function AdminSettings() {
                 value={form.pastorsConnectionUrl}
                 onChange={(e) => setForm({ ...form, pastorsConnectionUrl: e.target.value })}
                 className="w-full px-4 py-2 rounded border font-body"
-                style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+                style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
                 placeholder="https://pastorsconnection.example.com"
               />
               <p className="font-ui text-xs mt-2" style={{ color: "var(--ink-muted)" }}>
@@ -147,11 +149,11 @@ export default function AdminSettings() {
 
           {/* Membership (Stripe) */}
           <div>
-            <h2 className="font-display text-xl font-bold mb-4" style={{ color: "#1A1A1A" }}>
+            <h2 className="font-display text-xl font-bold mb-4" style={{ color: "var(--charcoal)" }}>
               Membership (Stripe)
             </h2>
             <div>
-              <label className="block font-ui text-sm font-medium mb-2" style={{ color: "#1A1A1A" }}>
+              <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--charcoal)" }}>
                 Stripe Price ID for the membership plan
               </label>
               <input
@@ -159,10 +161,10 @@ export default function AdminSettings() {
                 value={form.stripeMembershipPriceId}
                 onChange={(e) => setForm({ ...form, stripeMembershipPriceId: e.target.value })}
                 className="w-full px-4 py-2 rounded border font-body"
-                style={{ borderColor: "#D1C9BB", backgroundColor: "#FFFFFF" }}
+                style={{ borderColor: "var(--adm-line)", backgroundColor: "var(--card)" }}
                 placeholder="price_..."
               />
-              <p className="font-ui text-xs mt-2" style={{ color: "#6B7280" }}>
+              <p className="font-ui text-xs mt-2" style={{ color: "var(--adm-gray)" }}>
                 Two steps to open membership checkout: 1) add STRIPE_SECRET_KEY as an environment variable in Vercel, 2) create a recurring product in your Stripe dashboard and paste its Price ID (starts with price_) here. While either is missing, the membership page shows the waitlist instead. Clear this field to close checkout again.
               </p>
             </div>

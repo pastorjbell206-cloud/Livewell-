@@ -23,19 +23,19 @@ import { toast } from "sonner";
 /* Palette (light admin workspace)                                     */
 /* ------------------------------------------------------------------ */
 const C = {
-  ink: "#1A1A1A",
-  charcoal: "#2C3E50",
-  bone: "#F7F5F0",
-  cream: "#EDE8DC",
-  white: "#FFFFFF",
-  border: "#D1C9BB",
-  muted: "#6B7280",
-  mustard: "#B8963E",
-  green: "#2E7D32",
-  greenBg: "#EAF3EA",
-  amber: "#B45309",
-  amberBg: "#FDF3E3",
-  red: "#DC2626",
+  ink: "var(--charcoal)",
+  charcoal: "var(--adm-slate)",
+  bone: "var(--adm-bg)",
+  cream: "var(--bone-warm)",
+  white: "var(--card)",
+  border: "var(--adm-line)",
+  muted: "var(--adm-gray)",
+  mustard: "var(--adm-gold)",
+  green: "var(--adm-ok)",
+  greenBg: "var(--adm-ok-soft)",
+  amber: "var(--adm-warn-deep)",
+  amberBg: "var(--adm-gold-tint)",
+  red: "var(--adm-danger)",
 };
 
 /* The five content pillars used as filter chips. */
@@ -55,11 +55,11 @@ const PAGE_SIZE = 25;
 
 /* A stable color per category badge. */
 const CATEGORY_COLORS: Record<string, { bg: string; fg: string }> = {
-  "Theological Depth": { bg: "#E8EDF2", fg: "#2C3E50" },
-  "Prophetic Justice": { bg: "#F3E9D7", fg: "#8A6A12" },
-  "Prophetic Disruption": { bg: "#F4E2DD", fg: "#9A3B2E" },
-  "Integrated Life": { bg: "#E5EFE6", fg: "#2E7D32" },
-  "Leadership Formation": { bg: "#E6E4F0", fg: "#4B3F8A" },
+  "Theological Depth": { bg: "var(--adm-slate-bg)", fg: "var(--adm-slate)" },
+  "Prophetic Justice": { bg: "var(--adm-gold-wash)", fg: "var(--adm-gold-deep)" },
+  "Prophetic Disruption": { bg: "var(--adm-rust-bg)", fg: "var(--adm-rust)" },
+  "Integrated Life": { bg: "var(--adm-ok-soft)", fg: "var(--adm-ok)" },
+  "Leadership Formation": { bg: "var(--adm-violet-bg)", fg: "var(--adm-violet-deep)" },
 };
 
 function categoryColor(pillar: string | null | undefined) {
@@ -188,10 +188,14 @@ export default function AdminPosts() {
     return () => clearTimeout(t);
   }, [searchInput]);
 
-  // Reset page when the result set changes.
-  useEffect(() => {
+  // Reset page when the result set changes (guarded state adjustment during
+  // render — see react.dev "You Might Not Need an Effect").
+  const filterKey = `${search}|${category}|${status}|${sortKey}|${sortDir}`;
+  const [prevFilterKey, setPrevFilterKey] = useState(filterKey);
+  if (filterKey !== prevFilterKey) {
+    setPrevFilterKey(filterKey);
     setPage(1);
-  }, [search, category, status, sortKey, sortDir]);
+  }
 
   const allPosts = postsQuery.data ?? [];
 
@@ -453,11 +457,11 @@ export default function AdminPosts() {
         {!dupesDismissed && dupeGroups.length > 0 && (
           <div
             className="rounded-sm mb-6"
-            style={{ backgroundColor: "#FFF7E6", border: `1px solid ${C.mustard}` }}
+            style={{ backgroundColor: "var(--adm-gold-tint)", border: `1px solid ${C.mustard}` }}
           >
             <div className="flex items-center gap-3 p-4">
               <AlertTriangle size={18} style={{ color: C.mustard, flexShrink: 0 }} />
-              <div className="flex-1 font-body text-sm" style={{ color: "#5A5448" }}>
+              <div className="flex-1 font-body text-sm" style={{ color: "var(--ink-muted)" }}>
                 <strong>
                   {dupeGroups.length} set{dupeGroups.length === 1 ? "" : "s"} of
                   duplicate titles found.
@@ -524,7 +528,7 @@ export default function AdminPosts() {
                               key={c.id}
                               className="flex items-center gap-3 p-2 rounded-sm cursor-pointer"
                               style={{
-                                border: `1px solid ${isKeep ? C.green : "#E5E0D5"}`,
+                                border: `1px solid ${isKeep ? C.green : "var(--adm-line-soft)"}`,
                                 backgroundColor: isKeep ? C.greenBg : C.bone,
                               }}
                             >

@@ -34,11 +34,12 @@ const TOPIC_ORDER = [
 
 export default function HowTos() {
   const [items, setItems] = useState<Entry[]>([]);
-  const [active, setActive] = useState<string>("all");
+  const [active, setActive] = useState<string>(() => {
+    const q = typeof window !== "undefined" ? new URLSearchParams(window.location.search).get("topic") : null;
+    return q || "all";
+  });
 
   useEffect(() => {
-    const q = typeof window !== "undefined" ? new URLSearchParams(window.location.search).get("topic") : null;
-    if (q) setActive(q);
     fetch("/howtos/index.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setItems(d.articles || []))

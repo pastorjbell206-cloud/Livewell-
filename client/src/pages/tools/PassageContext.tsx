@@ -159,9 +159,13 @@ export default function PassageContext() {
 
   // Deep link: /theology/passage?ref=John 3:16 resolves automatically once the
   // book metadata has loaded, so search results and other pages can link in.
+  // This is a genuine one-shot sync from an external source (the URL) after the
+  // async book data arrives — it runs at most once (guarded by `parsed`), so the
+  // synchronous setState is intentional, not a cascading-render risk.
   useEffect(() => {
     if (books.length === 0 || parsed) return;
     const ref = new URLSearchParams(window.location.search).get("ref");
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (ref) { setInput(ref); resolve(parseReference(ref, books), ref); }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [books.length]);

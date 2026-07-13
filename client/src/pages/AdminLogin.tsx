@@ -49,7 +49,7 @@ export default function AdminLogin() {
   }
 
   return (
-    <div className="admin-scope" style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#fafaf7" }}>
+    <div className="admin-scope" style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--adm-bg-soft)" }}>
       <div style={{ width: "100%", maxWidth: 440, padding: 32 }}>
         <form
           onSubmit={handleSubmit}
@@ -63,18 +63,18 @@ export default function AdminLogin() {
           }}
         >
           <h1 style={{ fontSize: 24, fontWeight: 700, marginBottom: 8, color: "var(--ink)" }}>Admin Login</h1>
-          <p style={{ fontSize: 14, color: "#555", marginBottom: 24 }}>Enter your admin password to continue.</p>
+          <p style={{ fontSize: 14, color: "var(--adm-gray-mid)", marginBottom: 24 }}>Enter your admin password to continue.</p>
 
           {setupNeeded && (
             <div style={{
               padding: "16px",
               marginBottom: 20,
-              background: "#FFF3CD",
-              border: "1px solid #FFECB5",
+              background: "var(--adm-warn-bg)",
+              border: "1px solid var(--adm-warn-border)",
               borderRadius: 6,
               fontSize: 13,
               lineHeight: 1.5,
-              color: "#664D03",
+              color: "var(--adm-warn-ink)",
             }}>
               <strong>Setup required:</strong> Admin environment variables are not configured.
               <br /><br />
@@ -86,7 +86,7 @@ export default function AdminLogin() {
               <br />
               Generate the hash by running locally:
               <br />
-              <code style={{ display: "block", background: "#f5f0e0", padding: "8px", marginTop: 6, borderRadius: 4, wordBreak: "break-all" }}>
+              <code style={{ display: "block", background: "var(--bone)", padding: "8px", marginTop: 6, borderRadius: 4, wordBreak: "break-all" }}>
                 node scripts/generate-admin-hash.mjs YourPassword
               </code>
               <br />
@@ -104,10 +104,10 @@ export default function AdminLogin() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            style={{ width: "100%", padding: "10px 12px", fontSize: 16, border: "1px solid #ddd", borderRadius: 6, marginBottom: 16, boxSizing: "border-box" }}
+            style={{ width: "100%", padding: "10px 12px", fontSize: 16, border: "1px solid var(--adm-gray-pale)", borderRadius: 6, marginBottom: 16, boxSizing: "border-box" }}
           />
           {error && (
-            <div style={{ color: "#b00020", fontSize: 14, marginBottom: 12 }}>{error}</div>
+            <div style={{ color: "var(--adm-error)", fontSize: 14, marginBottom: 12 }}>{error}</div>
           )}
           <button
             type="submit"
@@ -118,7 +118,7 @@ export default function AdminLogin() {
               fontSize: 16,
               fontWeight: 600,
               color: "white",
-              background: loading ? "#888" : "var(--ink)",
+              background: loading ? "var(--adm-gray-dim)" : "var(--ink)",
               border: "none",
               borderRadius: 6,
               cursor: loading ? "default" : "pointer",

@@ -4,7 +4,7 @@
  * welcomes the new member; also adds them to the newsletter list so the
  * member letter reaches them.
  */
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
@@ -16,20 +16,22 @@ export default function MembershipSuccess() {
     { sessionId },
     { enabled: !!sessionId, retry: 1 }
   );
-  const [subscribed, setSubscribed] = useState(false);
+  // Fire-once guard: never rendered, so a ref (not state) keeps the effect
+  // from re-posting without a synchronous setState.
+  const subscribedRef = useRef(false);
 
   const paid = sessionQuery.data?.session?.status === "paid";
   const memberEmail = sessionQuery.data?.session?.customerEmail;
 
   useEffect(() => {
-    if (!paid || !memberEmail || subscribed) return;
-    setSubscribed(true);
+    if (!paid || !memberEmail || subscribedRef.current) return;
+    subscribedRef.current = true;
     fetch("/api/subscribe", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email: memberEmail, source: "membership" }),
     }).catch(() => {});
-  }, [paid, memberEmail, subscribed]);
+  }, [paid, memberEmail]);
 
   return (
     <Layout>

@@ -88,16 +88,22 @@ function Carousel({
 
   React.useEffect(() => {
     if (!api || !setApi) return;
-    setApi(api);
+    // Hand the embla api up outside the commit so exposing it can never
+    // trigger a cascading synchronous re-render of the parent.
+    const frame = requestAnimationFrame(() => setApi(api));
+    return () => cancelAnimationFrame(frame);
   }, [api, setApi]);
 
   React.useEffect(() => {
     if (!api) return;
-    onSelect(api);
+    // Seed the scroll-button state outside the commit (same discipline as
+    // setApi above); embla's events keep it current from then on.
+    const frame = requestAnimationFrame(() => onSelect(api));
     api.on("reInit", onSelect);
     api.on("select", onSelect);
 
     return () => {
+      cancelAnimationFrame(frame);
       api?.off("select", onSelect);
     };
   }, [api, onSelect]);

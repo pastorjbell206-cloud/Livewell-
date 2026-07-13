@@ -61,10 +61,10 @@ export default function AdminDeduplicate() {
   return (
     <AdminLayout>
       <div className="max-w-3xl">
-        <h1 className="font-display text-4xl font-bold mb-3" style={{ color: "#1A1A1A" }}>
+        <h1 className="font-display text-4xl font-bold mb-3" style={{ color: "var(--charcoal)" }}>
           Find duplicate articles
         </h1>
-        <p className="font-body mb-6" style={{ color: "#5A5448", lineHeight: 1.7 }}>
+        <p className="font-body mb-6" style={{ color: "var(--ink-muted)", lineHeight: 1.7 }}>
           Articles that share the same title are grouped below. For each group, keep the best copy
           (the longest, published one is pre-selected) and retire the rest. Retiring only{" "}
           <strong>unpublishes</strong> a copy — nothing is deleted, and you can republish from the
@@ -77,7 +77,7 @@ export default function AdminDeduplicate() {
             onClick={run}
             disabled={busy || retireIds.length === 0}
             className="flex items-center gap-2 px-6 py-3 rounded font-ui font-medium disabled:opacity-50"
-            style={{ backgroundColor: "#1A1A1A", color: "#F5F0E6" }}
+            style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)" }}
           >
             {busy ? <Loader2 size={16} className="animate-spin" /> : <Copy size={16} />}
             {retireIds.length > 0 ? `Retire ${retireIds.length} duplicate${retireIds.length === 1 ? "" : "s"}` : "Nothing to retire"}
@@ -87,7 +87,7 @@ export default function AdminDeduplicate() {
             onClick={() => dupes.refetch()}
             disabled={dupes.isFetching}
             className="flex items-center gap-2 px-4 py-3 rounded font-ui font-medium disabled:opacity-50"
-            style={{ backgroundColor: "#EDE8DC", color: "#1A1A1A", border: "1px solid #D1C9BB" }}
+            style={{ backgroundColor: "var(--bone-warm)", color: "var(--charcoal)", border: "1px solid var(--adm-line)" }}
           >
             {dupes.isFetching ? <Loader2 size={16} className="animate-spin" /> : <RefreshCw size={16} />}
             Refresh
@@ -95,35 +95,35 @@ export default function AdminDeduplicate() {
         </div>
 
         {dupes.isLoading && (
-          <div className="flex items-center gap-2 font-body" style={{ color: "#5A5448" }}>
+          <div className="flex items-center gap-2 font-body" style={{ color: "var(--ink-muted)" }}>
             <Loader2 size={16} className="animate-spin" /> Scanning your articles…
           </div>
         )}
 
         {dupes.data?.error && (
-          <div className="rounded p-4 font-body" style={{ backgroundColor: "#FFF7E6", border: "1px solid #D4A017", color: "#5A5448" }}>
+          <div className="rounded p-4 font-body" style={{ backgroundColor: "var(--adm-gold-tint)", border: "1px solid var(--mustard)", color: "var(--ink-muted)" }}>
             Couldn't scan: {dupes.data.error}
           </div>
         )}
 
         {!dupes.isLoading && groups.length === 0 && (
-          <div className="rounded p-6 flex items-center gap-2" style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}>
-            <CheckCircle2 size={20} style={{ color: "#2E7D32" }} />
-            <span className="font-ui font-semibold" style={{ color: "#1A1A1A" }}>No duplicate titles found.</span>
+          <div className="rounded p-6 flex items-center gap-2" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}>
+            <CheckCircle2 size={20} style={{ color: "var(--adm-ok)" }} />
+            <span className="font-ui font-semibold" style={{ color: "var(--charcoal)" }}>No duplicate titles found.</span>
           </div>
         )}
 
         {done && (
-          <div className="rounded p-4 mb-6 flex items-center gap-2 font-body" style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB", color: "#1A1A1A" }}>
-            <CheckCircle2 size={18} style={{ color: "#2E7D32" }} />
+          <div className="rounded p-4 mb-6 flex items-center gap-2 font-body" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)", color: "var(--charcoal)" }}>
+            <CheckCircle2 size={18} style={{ color: "var(--adm-ok)" }} />
             Retired {done.updated} {done.updated === 1 ? "copy" : "copies"}. The list below is refreshed.
           </div>
         )}
 
         {groups.length > 0 && (
           <>
-            <div className="font-body text-sm mb-4 flex items-center gap-2" style={{ color: "#5A5448" }}>
-              <AlertTriangle size={16} style={{ color: "#D4A017" }} />
+            <div className="font-body text-sm mb-4 flex items-center gap-2" style={{ color: "var(--ink-muted)" }}>
+              <AlertTriangle size={16} style={{ color: "var(--mustard)" }} />
               {groups.length} duplicated {groups.length === 1 ? "title" : "titles"} · {totalExtraPublished} extra published {totalExtraPublished === 1 ? "copy" : "copies"}
             </div>
 
@@ -131,11 +131,11 @@ export default function AdminDeduplicate() {
               {groups.map((g: any, gi: number) => {
                 const keep = keepFor(gi, g.keepId);
                 return (
-                  <div key={gi} className="rounded p-5" style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}>
-                    <div className="font-display text-lg font-bold mb-1" style={{ color: "#1A1A1A" }}>
+                  <div key={gi} className="rounded p-5" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}>
+                    <div className="font-display text-lg font-bold mb-1" style={{ color: "var(--charcoal)" }}>
                       {g.title}
                     </div>
-                    <div className="font-ui text-xs uppercase tracking-wider mb-4" style={{ color: "#5A5448" }}>
+                    <div className="font-ui text-xs uppercase tracking-wider mb-4" style={{ color: "var(--ink-muted)" }}>
                       {g.copies.length} copies
                     </div>
                     <div className="space-y-2">
@@ -146,8 +146,8 @@ export default function AdminDeduplicate() {
                             key={c.id}
                             className="flex items-center gap-3 p-3 rounded cursor-pointer"
                             style={{
-                              border: `1px solid ${isKeep ? "#2E7D32" : "#E5E0D5"}`,
-                              backgroundColor: isKeep ? "#F1F7F1" : "#FAF8F3",
+                              border: `1px solid ${isKeep ? "var(--adm-ok)" : "var(--adm-line-soft)"}`,
+                              backgroundColor: isKeep ? "var(--adm-ok-soft)" : "var(--adm-bg-soft)",
                             }}
                           >
                             <input
@@ -157,8 +157,8 @@ export default function AdminDeduplicate() {
                               onChange={() => setKeepByGroup((m) => ({ ...m, [gi]: c.id }))}
                             />
                             <div className="flex-1 min-w-0">
-                              <div className="font-mono text-xs truncate" style={{ color: "#1A1A1A" }}>{c.slug}</div>
-                              <div className="font-ui text-xs" style={{ color: "#5A5448" }}>
+                              <div className="font-mono text-xs truncate" style={{ color: "var(--charcoal)" }}>{c.slug}</div>
+                              <div className="font-ui text-xs" style={{ color: "var(--ink-muted)" }}>
                                 {c.pillar ?? "—"} · {c.bodyLen.toLocaleString()} chars
                                 {c.featured ? " · featured" : ""}
                                 {!c.published ? " · already unpublished" : ""}
@@ -168,10 +168,10 @@ export default function AdminDeduplicate() {
                               className="font-ui text-xs font-semibold px-2 py-1 rounded"
                               style={
                                 isKeep
-                                  ? { backgroundColor: "#2E7D32", color: "#FFFFFF" }
+                                  ? { backgroundColor: "var(--adm-ok)", color: "var(--card)" }
                                   : c.published
-                                    ? { backgroundColor: "#EDE8DC", color: "#5A5448" }
-                                    : { backgroundColor: "#F5F0E6", color: "#9A9384" }
+                                    ? { backgroundColor: "var(--bone-warm)", color: "var(--ink-muted)" }
+                                    : { backgroundColor: "var(--bone)", color: "var(--adm-taupe)" }
                               }
                             >
                               {isKeep ? "KEEP" : c.published ? "will retire" : "unpublished"}

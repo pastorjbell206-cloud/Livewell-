@@ -68,6 +68,7 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
     links: [
       { label: "Explore Everything", href: "/explore", primary: true },
       { label: "Answers to Hard Questions", href: "/answers", primary: true },
+      { label: "Assessments (where are you?)", href: "/assessments", primary: true },
       { label: "The Resource Hub", href: "/resources", primary: true },
       { label: "Topic Pathways", href: "/pathways", primary: true },
       { label: "Study Guides", href: "/studyguides", primary: true },

@@ -84,18 +84,20 @@ const TEMPLATES: Record<string, { label: string; note: string; items: Omit<Item,
 const uid = () => Math.random().toString(36).slice(2, 9);
 
 export default function MeetingBuilder() {
-  const [title, setTitle] = useState("");
-  const [items, setItems] = useState<Item[]>([]);
+  // Restore saved work in lazy initializers (once, at mount) rather than a
+  // synchronous setState in an effect.
+  const [title, setTitle] = useState(() => {
+    const o = readStoredJSON(KEY, isSaved, {});
+    return typeof o.title === "string" ? o.title : "";
+  });
+  const [items, setItems] = useState<Item[]>(() => {
+    const o = readStoredJSON(KEY, isSaved, {});
+    return Array.isArray(o.items) ? o.items.filter(isItem) : [];
+  });
   const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "failed">("idle");
   const [persistFailed, setPersistFailed] = useState(false);
   const [copies, setCopies] = useState<SaveRec[]>(() => readStoredJSON(SAVES_KEY, isSaveList, []));
   const [saveName, setSaveName] = useState("");
-
-  useEffect(() => {
-    const o = readStoredJSON(KEY, isSaved, {});
-    if (typeof o.title === "string") setTitle(o.title);
-    if (Array.isArray(o.items)) setItems(o.items.filter(isItem));
-  }, []);
   useEffect(() => {
     const t = setTimeout(() => setPersistFailed(!writeStoredJSON(KEY, { title, items })), 500);
     return () => clearTimeout(t);

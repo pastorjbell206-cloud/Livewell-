@@ -33,12 +33,12 @@ const STATUS: { id: Status; label: string }[] = [
 const uid = () => Math.random().toString(36).slice(2, 9);
 
 export default function VisitationTracker() {
-  const [people, setPeople] = useState<Person[]>([]);
+  // Restore in a lazy initializer (once, at mount) rather than a synchronous
+  // setState in an effect.
+  const [people, setPeople] = useState<Person[]>(() => readStoredJSON(KEY, Array.isArray, []).filter(isPerson));
   const [name, setName] = useState("");
   const [reason, setReason] = useState("");
   const [persistFailed, setPersistFailed] = useState(false);
-
-  useEffect(() => { setPeople(readStoredJSON(KEY, Array.isArray, []).filter(isPerson)); }, []);
   useEffect(() => {
     const t = setTimeout(() => setPersistFailed(!writeStoredJSON(KEY, people)), 0);
     return () => clearTimeout(t);

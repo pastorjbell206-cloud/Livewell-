@@ -230,6 +230,7 @@ const Deconstruction = lazy(() => import("./pages/landing/Deconstruction"));
 const ChurchHistory = lazy(() => import("./pages/landing/ChurchHistory"));
 const HistoricFaith = lazy(() => import("./pages/HistoricFaith"));
 const Answers = lazy(() => import("./pages/Answers"));
+const Assessments = lazy(() => import("./pages/Assessments"));
 const ChurchHurt = lazy(() => import("./pages/landing/ChurchHurt"));
 const HonestQuestions = lazy(() => import("./pages/landing/HonestQuestions"));
 const PostChristianLanding = lazy(() => import("./pages/landing/PostChristian"));
@@ -427,10 +428,12 @@ function Router() {
         <Route path="/leadership/illustrations"><IllustrationLibrary /></Route>
         <Route path="/leadership/meeting"><MeetingBuilder /></Route>
         <Route path="/leadership/visitation"><VisitationTracker /></Route>
-        <Route path="/leadership/assessment/:slug"><LeaderAssessment /></Route>
-        <Route path="/leadership/survey/:slug"><ProfileSurvey /></Route>
+        {/* Keyed by slug so each instrument remounts fresh — saved progress
+            restores from that slug's own storage, never another's. */}
+        <Route path="/leadership/assessment/:slug">{(p) => <LeaderAssessment key={p.slug} />}</Route>
+        <Route path="/leadership/survey/:slug">{(p) => <ProfileSurvey key={p.slug} />}</Route>
         <Route path="/leadership/workflow/:slug"><GuidedWorkflow /></Route>
-        <Route path="/leadership/service/:slug"><ServiceBuilder /></Route>
+        <Route path="/leadership/service/:slug">{(p) => <ServiceBuilder key={p.slug} />}</Route>
         <Route path="/leadership/governance"><GovernanceLibrary /></Route>
         <Route path="/leadership/library"><LeadershipLibrary /></Route>
         <Route path="/leadership/bible-sermons/:bookId"><WholeBibleSermons /></Route>
@@ -455,7 +458,7 @@ function Router() {
         <Route path="/theology" component={Theology} />
         <Route path="/doubt" component={Doubt} />
         <Route path="/help" component={Help} />
-        <Route path="/plans/:slug" component={CarePlan} />
+        <Route path="/plans/:slug">{(p) => <CarePlan key={p.slug} />}</Route>
         <Route path="/start" component={StartHereQuiz} />
         <Route path="/start-here" component={StartHereDiagnostic} />
         <Route path="/for-families" component={ForFamiliesRedirect} />
@@ -611,6 +614,7 @@ function Router() {
         <Route path="/church-history" component={ChurchHistory} />
         <Route path="/historic-faith" component={HistoricFaith} />
         <Route path="/answers" component={Answers} />
+        <Route path="/assessments" component={Assessments} />
         <Route path="/church-hurt" component={ChurchHurt} />
         <Route path="/honest-questions" component={HonestQuestions} />
         <Route path="/compare/catholic-vs-protestant" component={CatholicVsProtestant} />

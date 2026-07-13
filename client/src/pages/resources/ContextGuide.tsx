@@ -23,31 +23,35 @@ interface IndexEntry { slug: string; title: string; blurb: string; group: string
 export default function ContextGuide() {
   const [, params] = useRoute("/resources/context/:slug");
   const slug = params?.slug;
-  const [data, setData] = useState<Guide | null>(null);
-  const [missing, setMissing] = useState(false);
-  const [related, setRelated] = useState<IndexEntry[]>([]);
+  // Results are tagged with the slug they answered; data/missing/related are
+  // derived per render, so a new slug resets the view without a synchronous
+  // setState in the effect.
+  const [result, setResult] = useState<{ slug: string; data: Guide | null } | null>(null);
+  const [relatedResult, setRelatedResult] = useState<{ slug: string; items: IndexEntry[] } | null>(null);
 
   useEffect(() => {
     if (!slug) return;
-    setData(null);
-    setMissing(false);
-    setRelated([]);
     fetch(`/context/guides/${slug}.json`)
       .then((r) => (r.ok ? r.json() : null))
-      .then((d) => (d ? setData(d) : setMissing(true)))
-      .catch(() => setMissing(true));
+      .then((d) => setResult({ slug, data: d || null }))
+      .catch(() => setResult({ slug, data: null }));
   }, [slug]);
 
+  const data = result && result.slug === slug ? result.data : null;
+  const missing = !!result && result.slug === slug && result.data === null;
+  const related = relatedResult && relatedResult.slug === slug ? relatedResult.items : [];
+
   useEffect(() => {
-    if (!data) return;
+    if (!data || !slug) return;
+    const group = data.group;
     fetch("/context/guides-index.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((idx: { guides: IndexEntry[] } | null) => {
         if (!idx) return;
         const others = idx.guides.filter((g) => g.slug !== slug);
-        const sameGroup = others.filter((g) => g.group === data.group);
-        const rest = others.filter((g) => g.group !== data.group);
-        setRelated([...sameGroup, ...rest].slice(0, 4));
+        const sameGroup = others.filter((g) => g.group === group);
+        const rest = others.filter((g) => g.group !== group);
+        setRelatedResult({ slug, items: [...sameGroup, ...rest].slice(0, 4) });
       })
       .catch(() => {});
   }, [data, slug]);

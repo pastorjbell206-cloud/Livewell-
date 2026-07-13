@@ -43,17 +43,19 @@ const DEFAULTS: Cat[] = [
 const money = (n: number) => "$" + Math.round(n).toLocaleString();
 
 export default function BudgetCalculator() {
-  const [income, setIncome] = useState(300000);
-  const [cats, setCats] = useState<Cat[]>(DEFAULTS);
-  const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "failed">("idle");
-  const [persistFailed, setPersistFailed] = useState(false);
-
-  useEffect(() => {
+  // Saved work is restored in the lazy initializers (readStoredJSON is safe to
+  // call at render time), not in a mount effect.
+  const [income, setIncome] = useState(() => {
     const o = readStoredJSON(KEY, isSaved, {});
     // != null, not truthy: a saved income of 0 is a real value, not an absence.
-    if (o.income != null) setIncome(clampIncome(o.income));
-    if (isArrayOf(isCat)(o.cats) && o.cats.length > 0) setCats(o.cats);
-  }, []);
+    return o.income != null ? clampIncome(o.income) : 300000;
+  });
+  const [cats, setCats] = useState<Cat[]>(() => {
+    const o = readStoredJSON(KEY, isSaved, {});
+    return isArrayOf(isCat)(o.cats) && o.cats.length > 0 ? o.cats : DEFAULTS;
+  });
+  const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "failed">("idle");
+  const [persistFailed, setPersistFailed] = useState(false);
   useEffect(() => { const t = setTimeout(() => setPersistFailed(!writeStoredJSON(KEY, { income, cats })), 400); return () => clearTimeout(t); }, [income, cats]);
 
   const totalPct = useMemo(() => cats.reduce((s, c) => s + (Number(c.pct) || 0), 0), [cats]);

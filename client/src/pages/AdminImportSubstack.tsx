@@ -121,10 +121,10 @@ export default function AdminImportSubstack() {
   return (
     <AdminLayout>
       <div className="max-w-3xl">
-        <h1 className="font-display text-4xl font-bold mb-3" style={{ color: "#1A1A1A" }}>
+        <h1 className="font-display text-4xl font-bold mb-3" style={{ color: "var(--charcoal)" }}>
           Import from Substack
         </h1>
-        <p className="font-body mb-6" style={{ color: "#5A5448", lineHeight: 1.7 }}>
+        <p className="font-body mb-6" style={{ color: "var(--ink-muted)", lineHeight: 1.7 }}>
           Pulls your Substack posts and brings each in as an <strong>unpublished draft</strong>,
           pre-filed under its pillar and sub-pathway. Standalone essays import in full; the serialized
           “End of Christian America” comes in as short teasers that link back to Substack. Nothing is
@@ -134,14 +134,14 @@ export default function AdminImportSubstack() {
         <div className="flex flex-wrap gap-3 mb-8">
           <button type="button" onClick={load} disabled={loading || busy}
             className="flex items-center gap-2 px-5 py-3 rounded font-ui font-medium disabled:opacity-50"
-            style={{ backgroundColor: "#EDE8DC", color: "#1A1A1A", border: "1px solid #D1C9BB" }}>
+            style={{ backgroundColor: "var(--bone-warm)", color: "var(--charcoal)", border: "1px solid var(--adm-line)" }}>
             {loading ? <Loader2 size={16} className="animate-spin" /> : <Download size={16} />}
             {drafts.length ? "Reload from Substack" : "Read my Substack"}
           </button>
           {drafts.length > 0 && (
             <button type="button" onClick={run} disabled={busy}
               className="flex items-center gap-2 px-6 py-3 rounded font-ui font-medium disabled:opacity-50"
-              style={{ backgroundColor: "#1A1A1A", color: "#F5F0E6" }}>
+              style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)" }}>
               {busy ? <Loader2 size={16} className="animate-spin" /> : <Download size={16} />}
               Import {drafts.length} as drafts
             </button>
@@ -149,8 +149,8 @@ export default function AdminImportSubstack() {
         </div>
 
         {result && (
-          <div className="rounded p-4 mb-6 flex items-center gap-2 font-body" style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB", color: "#1A1A1A" }}>
-            <CheckCircle2 size={18} style={{ color: "#2E7D32" }} />
+          <div className="rounded p-4 mb-6 flex items-center gap-2 font-body" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)", color: "var(--charcoal)" }}>
+            <CheckCircle2 size={18} style={{ color: "var(--adm-ok)" }} />
             Imported {result.inserted} as drafts{result.skipped.length ? `, skipped ${result.skipped.length} already present` : ""}. Find them under Writing Posts to review and publish.
           </div>
         )}
@@ -158,27 +158,27 @@ export default function AdminImportSubstack() {
         {drafts.length > 0 && (
           <div className="space-y-3">
             {drafts.map((d) => (
-              <div key={d.slug} className="rounded p-4" style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}>
+              <div key={d.slug} className="rounded p-4" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}>
                 <div className="flex items-center justify-between gap-3">
-                  <div className="font-ui text-xs uppercase tracking-wider" style={{ color: "#D4A017" }}>
+                  <div className="font-ui text-xs uppercase tracking-wider" style={{ color: "var(--mustard)" }}>
                     {d.pillar} · {d.subPathway}
                   </div>
                   <span className="font-ui text-xs font-semibold px-2 py-1 rounded"
-                    style={d.mode === "full" ? { backgroundColor: "#EDE8DC", color: "#5A5448" } : { backgroundColor: "#F1F7F1", color: "#2E7D32" }}>
+                    style={d.mode === "full" ? { backgroundColor: "var(--bone-warm)", color: "var(--ink-muted)" } : { backgroundColor: "var(--adm-ok-soft)", color: "var(--adm-ok)" }}>
                     {d.mode === "full" ? "full essay" : "teaser → Substack"}
                   </span>
                 </div>
-                <div className="font-display text-xl font-bold mt-1" style={{ color: "#1A1A1A" }}>{d.title}</div>
-                <div className="font-body text-sm mt-1" style={{ color: "#5A5448" }}>
+                <div className="font-display text-xl font-bold mt-1" style={{ color: "var(--charcoal)" }}>{d.title}</div>
+                <div className="font-body text-sm mt-1" style={{ color: "var(--ink-muted)" }}>
                   {d.readTime} · {d.body.split(/\s+/).length.toLocaleString()} words
-                  <a href={d.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 ml-2" style={{ color: "#1A1A1A" }}>
+                  <a href={d.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 ml-2" style={{ color: "var(--charcoal)" }}>
                     <ExternalLink size={12} /> source
                   </a>
                 </div>
               </div>
             ))}
-            <p className="font-body text-sm flex items-center gap-2 mt-2" style={{ color: "#5A5448" }}>
-              <AlertTriangle size={14} style={{ color: "#D4A017" }} />
+            <p className="font-body text-sm flex items-center gap-2 mt-2" style={{ color: "var(--ink-muted)" }}>
+              <AlertTriangle size={14} style={{ color: "var(--mustard)" }} />
               Imported essays are auto-converted from Substack — skim each in the editor before publishing.
             </p>
           </div>

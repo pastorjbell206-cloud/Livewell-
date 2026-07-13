@@ -159,12 +159,13 @@ export default function VerseFinder() {
   const [searchFilter, setSearchFilter] = useState("");
   const { favorites, addFavorite, removeFavorite, isFavorite } = useFavorites("livewell-saved-verses");
 
-  // Daily Verse — cycles through all verses based on day of year
-  const dailyVerse = useMemo(() => {
+  // Daily Verse — cycles through all verses by day of year. Read the clock once
+  // in a lazy initializer (not during render) so it stays a pure component.
+  const [dailyVerse] = useState(() => {
     const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000);
     const allVerses = Object.values(VERSES).flat();
     return allVerses[dayOfYear % allVerses.length];
-  }, []);
+  });
 
   // Filter topics by search input
   const filteredTopics = useMemo(() => {

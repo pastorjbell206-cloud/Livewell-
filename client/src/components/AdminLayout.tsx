@@ -21,16 +21,16 @@ import { ADMIN_NAV } from "@/components/admin/nav";
 const ALL_ITEMS = ADMIN_NAV.flatMap((g) => g.items);
 
 // The shell's own palette (admin is a light workspace; see docs/ADMIN.md).
-const RAIL_BG = "#1A1A1A";
+const RAIL_BG = "var(--charcoal)";
 const RAIL_LINE = "rgba(245,240,230,0.10)";
-const RAIL_TEXT = "#A8A296";
-const RAIL_TEXT_ACTIVE = "#F5F0E6";
-const RAIL_LABEL = "#6E6759";
-const MUSTARD = "#D4A017";
-const PAPER = "#F7F5F0";
-const HAIRLINE = "#E5E1D8";
-const INK = "#1A1A1A";
-const MUTED = "#6B7280";
+const RAIL_TEXT = "var(--adm-taupe-soft)";
+const RAIL_TEXT_ACTIVE = "var(--bone)";
+const RAIL_LABEL = "var(--adm-taupe-deep)";
+const MUSTARD = "var(--mustard)";
+const PAPER = "var(--adm-bg)";
+const HAIRLINE = "var(--adm-line-soft)";
+const INK = "var(--charcoal)";
+const MUTED = "var(--adm-gray)";
 
 /** Resolve the breadcrumb trail for the current path. */
 function crumbsFor(location: string): { label: string; href?: string }[] {
@@ -225,7 +225,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             gap: 10,
             padding: "0 18px",
             minHeight: 56,
-            background: "#FFFFFF",
+            background: "var(--card)",
             borderBottom: `1px solid ${HAIRLINE}`,
             position: "sticky",
             top: 0,
@@ -252,7 +252,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           <nav aria-label="Breadcrumb" style={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: 7, height: "auto", maxWidth: "none", margin: 0, padding: 0, minWidth: 0, fontFamily: U, fontSize: 13.5 }}>
             {crumbs.map((c, i) => (
               <span key={i} style={{ display: "flex", alignItems: "center", gap: 7, minWidth: 0 }}>
-                {i > 0 && <ChevronRight size={13} style={{ color: "#B8B2A4", flexShrink: 0 }} />}
+                {i > 0 && <ChevronRight size={13} style={{ color: "var(--adm-taupe-faint)", flexShrink: 0 }} />}
                 {c.href ? (
                   <Link href={c.href} style={{ color: MUTED, textDecoration: "none", whiteSpace: "nowrap" }}>{c.label}</Link>
                 ) : (

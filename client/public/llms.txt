@@ -1,6 +1,9 @@
 # LiveWell by James Bell
 
 > Connecting the depth of theology to the weight of everyday life.
+>
+> Full machine-readable index of every essay, book, and guide (830+ entries):
+> https://www.livewellbyjamesbell.co/llms-full.txt
 
 LiveWell by James Bell (https://www.livewellbyjamesbell.co) is the writing and
 discipleship platform of James Bell: Lead Pastor of First Baptist Church of

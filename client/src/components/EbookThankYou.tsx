@@ -38,10 +38,11 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
   const [downloading, setDownloading] = useState(false);
   const [downloadError, setDownloadError] = useState(false);
 
+  // The "verifying" state is set at mount (initial state) and by the
+  // try-again buttons; the effect itself only reports the async result.
   useEffect(() => {
     if (!sessionId) return;
     let active = true;
-    setStatus("verifying");
     fetch(`/api/download?session_id=${encodeURIComponent(sessionId)}&check=1`)
       .then((r) => {
         if (!r.ok) throw new Error(`verify ${r.status}`);
@@ -53,6 +54,12 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
       active = false;
     };
   }, [sessionId, attempt]);
+
+  const retryVerification = useCallback(() => {
+    // Without a session id there is nothing to re-check; stay on "missing".
+    if (sessionId) setStatus("verifying");
+    setAttempt((n) => n + 1);
+  }, [sessionId]);
 
   const handleDownload = useCallback(async () => {
     if (downloading) return;
@@ -147,7 +154,7 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
                 Your payment stands. Try again below.
               </p>
               <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
-                <button type="button" onClick={() => setAttempt((n) => n + 1)} style={{ ...btn, background: "var(--mustard)", color: "var(--ink)" }}>
+                <button type="button" onClick={retryVerification} style={{ ...btn, background: "var(--mustard)", color: "var(--ink)" }}>
                   Try again
                 </button>
               </div>
@@ -163,7 +170,7 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
                 This download unlocks only after a completed checkout. If you just paid and are seeing this, give it a moment and try again — or email us and we'll send your file directly.
               </p>
               <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
-                <button type="button" onClick={() => setAttempt((n) => n + 1)} style={{ ...btn, background: "var(--mustard)", color: "var(--ink)" }}>
+                <button type="button" onClick={retryVerification} style={{ ...btn, background: "var(--mustard)", color: "var(--ink)" }}>
                   Check again
                 </button>
                 <Link href={`/${slug}`} style={{ ...btn, background: "var(--ink)", color: "var(--bone)" }}>

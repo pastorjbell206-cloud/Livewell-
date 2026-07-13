@@ -4,9 +4,12 @@ import { Sun, Moon } from "lucide-react";
 import { SITE_NAV_GROUPS } from "@/lib/siteNav";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 
-const footerLink = { color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "14px", display: "inline-block", padding: "5px 0" } as const;
+// Vertical padding brings each footer link to a ~44px tap target (Apple/Google
+// minimum) so the dense footer is easy to hit on a phone; the padding provides
+// the row separation, so the column gap below is trimmed to compensate.
+const footerLink = { color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "14px", display: "flex", alignItems: "center", minHeight: "44px" } as const;
 const colTitle = { fontSize: "13px", fontWeight: "bold", marginBottom: "16px", color: "#ffffff", textTransform: "uppercase", letterSpacing: "1px" } as const;
-const col = { display: "flex", flexDirection: "column", gap: "10px" } as const;
+const col = { display: "flex", flexDirection: "column", gap: "0" } as const;
 
 /**
  * Footer mirrors the header's mental model. The six-pillar V2 set is the spine
