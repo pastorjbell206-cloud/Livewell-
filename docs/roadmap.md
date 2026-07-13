@@ -28,9 +28,10 @@ Ordered by leverage. No P0s surfaced.
 - ☐ **Routing: resolve the orphaned pages** — `/books-store` and
   `/resources-for-pastors` render live components but are 301-shadowed. Redirect
   **or** keep, not both.
-- ☐ **SEO: prerender the dynamic-meta routes** — give `/nation/*` (10 essays),
-  the `/justice` + `/disruption` hubs, and `/theology/doctrine/:slug` literal /
-  prerender-resolvable `SEOMeta` so they stop unfurling as the homepage.
+- ~~SEO: prerender the dynamic-meta routes~~ — **rejected on verification.**
+  Running `prerender-heads.mjs` reports **0 uncovered routes**; `/nation/*`, the
+  prophetic hubs, etc. are already covered by the curated `STATIC_PAGES` block.
+  Only `:slug` param routes remain client-rendered, by design.
 - ◐ **Brand: tokenize the four drift files** — ☑ `ArticleCard.tsx`
   (`bg-[#2D4A3E]` → `var(--pillar-justice)`). ☐ `StartHereQuiz.tsx` +
   `tools/QuoteLibrary.tsx` off-palette category hues (design call: keep + token,
@@ -55,5 +56,5 @@ Ordered by leverage. No P0s surfaced.
 
 ## If you do only three things
 1. Split `content-data` (the one big, measurable perf win).
-2. Resolve the orphaned pages + prerender the dynamic-meta routes (SEO integrity).
+2. Resolve the orphaned pages (redirect-or-keep) + settle the canonical host.
 3. Greenlight #4 depth analytics — so you can *see* the corpus working.

@@ -38,6 +38,11 @@ URL and are marked *unverified (needs browser/deploy)* wherever they arise.
    PR #102 era], `docs/audit/ROADMAP.md` [elevation era], `NEXT-TEN.md` [live]).
    Only one is current. Fixed here: `docs/roadmap.md` rewritten to point at the
    live program.
+4. **Two findings were rejected on verification** (the pack's Stage-2 pass).
+   Running the actual tools showed the "dynamic-`SEOMeta` uncovered" P1 is
+   already covered (`prerender-heads.mjs` → 0 uncovered) and `/about` already
+   has a `Person` schema. Verifying beat inferring — patching either would have
+   done harm. The findings below are the survivors.
 
 ## Findings by dimension
 
@@ -96,16 +101,26 @@ tap targets, Escape-to-close, `aria-expanded` on disclosures. **No P0/P1.**
   `www.livewellbyjamesbell.co` everywhere (`lib/site.ts:4`, sitemap, robots,
   llms.txt); CLAUDE.md writes the bare apex. Code is internally consistent;
   confirm which host Vercel serves as primary, then align code + doc.
-- **P1** [hi] Dynamic `SEOMeta` on `/nation/*` (10 essays), `/justice` +
-  `/disruption` hubs, `/theology/doctrine/:slug` isn't prerender-covered →
-  generic head fallback. Give these routes literal/prerender-resolvable meta.
-- **P2** [high] No top-level `Person` schema for James Bell on `/about` (only
-  nested as author/founder). Highest-value missing schema type for a personal brand.
+- **~~P1~~ → REJECTED on verification.** The reviewer read the *component*
+  (dynamic template literal) and inferred "uncovered," but `prerender-heads.mjs`
+  carries a curated `STATIC_PAGES` block that mirrors exactly these routes
+  (`/nation` + all 10 `/nation/*` essays, `/justice`, `/disruption`, and their
+  sub-hubs — lines 136–282). Running the script against `dist` reports **0
+  uncovered routes** (162 heads extracted, 722 files written). No fix needed;
+  patching the components would have created duplicate heads. Only genuinely
+  uncovered surfaces are `:slug` param routes (doctrine/topic), which rely on
+  client render + the DB-driven `/writing` prerender by design.
+- **~~P2~~ → REJECTED on verification.** `/about` already carries an inline
+  `Person` schema (name, url, jobTitle, worksFor, sameAs) *and* the prerender
+  emits a `personSchema()` head for `/about`. The "missing" claim was wrong;
+  enrichment is optional and must avoid fabricated fields.
 - **P2** [med] ⛔ `generate-sitemap.mjs` ships a DB-less fallback (drops ~200
   essays) with only a log line if `DATABASE_URL` is absent at build. Confirm it's
   exposed to the Vercel build env.
-- **P2** [low] OG coverage gaps: `/how-tos/:slug`, `/table/:slug`, wisdom,
-  `/read/:slug` fall back to the default card.
+- **P2** [low] OG *image* fallback (not a head gap): `prerender-heads.mjs`
+  `LIBRARY_SOURCES` already emits real heads for `table`, `howtos`, `read`, and
+  `studyguides`; they only fall back to the default OG *card* when no per-page
+  PNG exists in `client/public/og/`. Minor — generate those PNGs if desired.
 - **P2** [low] Hardcoded `www` `/about` URL in `comparisons/OrthodoxVsCatholic.tsx:106`
   and `CatholicVsProtestant.tsx:97` (drift risk if the host changes).
 
