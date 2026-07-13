@@ -326,7 +326,7 @@ export default function AdminPublishContent() {
             {result.blocked.length > 0 && (
               <div className="mt-4 rounded p-4" style={{ backgroundColor: "var(--adm-gold-tint)", border: "1px solid var(--mustard)" }}>
                 <div className="flex items-center gap-2 font-ui font-semibold" style={{ color: "var(--charcoal)" }}>
-                  <AlertTriangle size={16} style={{ color: "var(--mustard)" }} />
+                  <AlertTriangle size={16} style={{ color: "var(--mustard-text)" }} />
                   {result.blocked.length} held back — unverified citations
                 </div>
                 <p className="font-body text-sm mt-2" style={{ color: "var(--ink-muted)" }}>

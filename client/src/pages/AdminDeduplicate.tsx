@@ -123,7 +123,7 @@ export default function AdminDeduplicate() {
         {groups.length > 0 && (
           <>
             <div className="font-body text-sm mb-4 flex items-center gap-2" style={{ color: "var(--ink-muted)" }}>
-              <AlertTriangle size={16} style={{ color: "var(--mustard)" }} />
+              <AlertTriangle size={16} style={{ color: "var(--mustard-text)" }} />
               {groups.length} duplicated {groups.length === 1 ? "title" : "titles"} · {totalExtraPublished} extra published {totalExtraPublished === 1 ? "copy" : "copies"}
             </div>
 
