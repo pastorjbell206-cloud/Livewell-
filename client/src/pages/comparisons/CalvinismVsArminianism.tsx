@@ -57,10 +57,10 @@ const SHARED_GROUND = [
 ];
 
 const RELATED_ARTICLES = [
-  { title: "The Reformation and Its Consequences", slug: "the-reformation-and-its-consequences" },
-  { title: "The Age of Revivals", slug: "the-age-of-revivals" },
-  { title: "The Evangelical Movement", slug: "the-evangelical-movement" },
-  { title: "The Enlightenment and the Crisis of Authority", slug: "the-enlightenment-and-the-crisis-of-authority" },
+  { title: "The Reformation and Its Consequences", href: "/theology/history/the-reformation" },
+  { title: "The Age of Revivals", href: "/theology/history/the-awakenings" },
+  { title: "The Evangelical Movement", href: "/theology/history/the-awakenings" },
+  { title: "The Enlightenment and the Crisis of Authority", href: "/writing/authority-we-traded-for-authenticity" },
 ];
 
 const FAQ_ITEMS = [
@@ -280,7 +280,7 @@ export default function CalvinismVsArminianism() {
           <h2 style={S.h2}>Go deeper</h2>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {RELATED_ARTICLES.map((a) => (
-              <Link key={a.slug} href={`/writing/${a.slug}`} style={{ textDecoration: "none" }}>
+              <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
                 <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
                   <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>

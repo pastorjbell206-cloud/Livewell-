@@ -1,5 +1,13 @@
 # Dead-Link Audit — hub pages linking to unpublished essays
 
+> **Status (this PR): 60 of the 64 truly-dead links repointed to verified-real
+> destinations across 9 pages.** Every new target was checked against the corpus,
+> the route table, or the history library. Remaining: the Post-Christian series
+> (Class A — a seed decision, below) and the SkepticTrack flagship (degrades to
+> the `/writing` index today, not a 404 — needs its own essays written). See
+> "Fixed in this PR" at the bottom.
+
+
 > Produced by a codebase-wide scan of every hardcoded `/writing/:slug` link
 > (literal and slug-array) in `client/src`, checked against the authoritative
 > corpus: `content/static-library.generated.json` (the static essay library that
@@ -97,3 +105,44 @@ Prior "verification" of PostChristian in the depth sweep confirmed the *page
 matched its data file* — not that the data file's articles were published posts.
 That gap is exactly Class A. The literal-link scan is clean; the exposure is
 entirely in slug arrays authored ahead of the content.
+
+## Fixed in this PR
+
+60 dead links repointed to verified-real destinations. Card labels kept; only
+the destinations changed. Every target confirmed present in `sitemap.xml`, the
+`/faq` route table, or the `/theology/history` index.
+
+- **HonestQuestions (10):** apologetics questions → the real `/faq/*` pages and
+  the `apologetics-*` essay series (`does-god-exist`, `apologetics-why-does-god-allow-evil`,
+  `is-the-bible-historically-accurate`, `apologetics-what-about-those-who-never-heard`,
+  `can-science-and-faith-coexist`, `apologetics-hasnt-the-church-done-terrible-things`,
+  `what-do-christians-believe-about-hell`, `/doubt`, `/skeptic-track`,
+  `the-womanhood-they-preached-was-small`).
+- **ChurchHistory (17) + 6 comparison pages (29):** the church-history topic set
+  → the real `/theology/history` essays where they exist (`the-east-west-schism`,
+  `the-reformation`, `the-constantinian-turn`, `the-awakenings`, `the-medieval-west`,
+  `the-church-that-outlived-rome`, `the-global-church`) and real `/writing` essays
+  otherwise (`christendom-is-ending`, `authority-we-traded-for-authenticity`,
+  `when-justice-becomes-a-gospel`, `the-numbers-behind-the-decline`,
+  `black-church-prophetic-justice`, `the-church-after-cultural-power`); one LOW
+  match (`the-fundamentalist-modernist-controversy`) routes to the
+  `/theology/history` hub.
+- **StartHereQuiz (6):** quiz-result essays → real thematic matches, with the
+  card titles updated to the destination essay so the recommendation is honest
+  (`strongman-theology`, `rest-ambition-and-the-idol-of-success`,
+  `what-we-owe-generations`, `the-monster-in-the-mirror`,
+  `can-you-be-a-christian-alone`, `when-romance-left-covenant-remains`).
+
+Verified: `pnpm check` clean, 288 tests pass, all 31 distinct destinations
+confirmed real.
+
+## Still needs your decision
+
+- **Post-Christian series (60, Class A):** run the prod seed to publish them, or
+  repoint the grid. Not touched here — the content exists and may be intended to
+  go live.
+- **SkepticTrack (7):** the flagship "seven essays in argument order" don't
+  exist. Today the page degrades each stop to the `/writing` index (no 404), and
+  its JSON-LD still emits the unbuilt slugs. The right fix is writing the seven
+  essays or restructuring the track around what exists — a content decision, not
+  a link swap.
