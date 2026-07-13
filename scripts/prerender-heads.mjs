@@ -539,6 +539,7 @@ async function main() {
     { file: "client/public/table/studies-index.json", key: "studies", route: "/table/", ogPrefix: "table", desc: "summary", contentDir: "client/public/table/studies" },
     { file: "client/public/howtos/index.json", key: "articles", route: "/how-tos/", ogPrefix: "howtos", desc: "excerpt", contentDir: "client/public/howtos/a" },
     { file: "client/public/books/index.json", key: "books", route: "/read/", ogPrefix: "read", desc: "blurb", type: "book", contentDir: "client/public/books" },
+    { file: "client/public/plans/plans-index.json", key: "plans", route: "/plans/", ogPrefix: "plans", desc: "blurb", contentDir: "client/public/plans" },
   ];
   let withBody = 0;
   for (const src of LIBRARY_SOURCES) {
