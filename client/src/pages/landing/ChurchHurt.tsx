@@ -196,7 +196,7 @@ export default function ChurchHurt() {
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
             Not everyone will go back to church. That is okay. But if you want to, this essay names what to look for and what to avoid.
           </p>
-          <Link href="/writing/finding-a-good-church" style={{ textDecoration: "none" }}>
+          <Link href="/writing/how-to-find-a-church-worth-joining" style={{ textDecoration: "none" }}>
             <button style={{ background: "var(--charcoal)", color: "white", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Read the Essay</button>
           </Link>
         </div>

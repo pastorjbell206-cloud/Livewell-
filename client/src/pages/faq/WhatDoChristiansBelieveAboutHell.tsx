@@ -116,7 +116,7 @@ export default function WhatDoChristiansBelieveAboutHell() {
           <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "48ch", marginLeft: "auto", marginRight: "auto" }}>
             The full article traces the doctrine through Scripture, church history, and contemporary theology with the care this question demands.
           </p>
-          <Link href="/writing/is-hell-real" style={{ textDecoration: "none" }}>
+          <Link href="/writing/does-hell-exist" style={{ textDecoration: "none" }}>
             <span style={{ display: "inline-block", background: "var(--bone)", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.06em", padding: "15px 32px", borderRadius: "2px", borderBottom: "2px solid var(--mustard)" }}>
               Read the full article
             </span>

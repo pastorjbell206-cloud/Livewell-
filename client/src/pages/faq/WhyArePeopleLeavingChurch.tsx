@@ -262,7 +262,7 @@ export default function WhyArePeopleLeavingChurch() {
             names the institutional failures, and asks what the church owes the
             people it lost.
           </p>
-          <Link href="/writing/why-is-the-church-so-hypocritical" style={{ textDecoration: "none" }}>
+          <Link href="/answers" style={{ textDecoration: "none" }}>
             <span
               style={{
                 display: "inline-block",
