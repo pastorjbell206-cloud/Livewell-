@@ -50,10 +50,11 @@ Severity: **P0** blocking · **P1** high-impact · **P2** polish. Confidence in
 brackets. Owner-gated items marked ⛔.
 
 ### Routing & IA
-- **P1** [hi] `/books-store` and `/resources-for-pastors` render live page
-  components but are 301-shadowed to `/books` / `/for-pastors` — orphaned dead
-  pages in prod. Decide redirect-or-keep. (`App.tsx:566,607`;
-  `vercel.json:731,741`)
+- ~~P1~~ **RESOLVED (retired).** `/books-store` + `/resources-for-pastors` were
+  live components 301-shadowed to `/books` / `/for-pastors`. The consolidation
+  was intentional, so the two routes + lazy imports were removed from `App.tsx`
+  and the orphaned component files deleted; the 301s stay. Nothing else imported
+  them (verified).
 - **P2** [hi] Dead SPA redirect components behind server 301s: `/articles`,
   `/for-families`, `/quiz`. The server redirect always wins.
 - **P2** [hi] Duplicate `vercel.json` redirect object for
@@ -97,10 +98,11 @@ tap targets, Escape-to-close, `aria-expanded` on disclosures. **No P0/P1.**
   (`AdminLayout.tsx:211`); admin-only.
 
 ### SEO & discoverability
-- **P1** [med] ⛔ **Canonical host mismatch**: code canonicalizes to
-  `www.livewellbyjamesbell.co` everywhere (`lib/site.ts:4`, sitemap, robots,
-  llms.txt); CLAUDE.md writes the bare apex. Code is internally consistent;
-  confirm which host Vercel serves as primary, then align code + doc.
+- ~~P1~~ **RESOLVED (www confirmed).** Code canonicalizes to
+  `www.livewellbyjamesbell.co` everywhere; CLAUDE.md wrote the bare apex.
+  Verified against the Vercel project + `vercel.json:757` host redirect: the
+  apex 301s to `www`, so `www` is canonical and the code is correct. CLAUDE.md
+  aligned; no code change needed.
 - **~~P1~~ → REJECTED on verification.** The reviewer read the *component*
   (dynamic template literal) and inferred "uncovered," but `prerender-heads.mjs`
   carries a curated `STATIC_PAGES` block that mirrors exactly these routes

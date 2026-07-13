@@ -25,9 +25,9 @@ Ordered by leverage. No P0s surfaced.
 ### P1
 - ☐ **Perf: split `content-data`** (2.7 MB / 934 kB gz single chunk). Load only
   the essays a page needs, or move listing/detail behind the API. Measure LCP.
-- ☐ **Routing: resolve the orphaned pages** — `/books-store` and
-  `/resources-for-pastors` render live components but are 301-shadowed. Redirect
-  **or** keep, not both.
+- ☑ **Routing: orphaned pages retired** — removed the `/books-store` +
+  `/resources-for-pastors` routes/imports and deleted the orphaned components;
+  the 301s to `/books` / `/for-pastors` stay.
 - ~~SEO: prerender the dynamic-meta routes~~ — **rejected on verification.**
   Running `prerender-heads.mjs` reports **0 uncovered routes**; `/nation/*`, the
   prophetic hubs, etc. are already covered by the curated `STATIC_PAGES` block.
@@ -37,8 +37,9 @@ Ordered by leverage. No P0s surfaced.
   `tools/QuoteLibrary.tsx` off-palette category hues (design call: keep + token,
   or re-treat on-brand). ☐ `tools/FamilyDevotionBuilder.tsx` `#FFFFFF` cards →
   `var(--card)` (a dark-mode fix — needs browser verification before shipping).
-- ⛔ **SEO: settle the canonical host** — code is all `www.`; CLAUDE.md writes
-  the apex. Confirm Vercel's primary host, then align code + doc.
+- ☑ **SEO: canonical host settled** — `www` confirmed canonical (apex 301s to
+  it, per `vercel.json` + the Vercel project); code was already correct, CLAUDE.md
+  aligned.
 
 ### P2
 - ◐ ☑ Deduped `vercel.json` (`complicity-not-innocence` was listed twice).

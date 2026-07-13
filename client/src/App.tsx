@@ -102,10 +102,8 @@ const HardIssuesSeries = lazy(() => import("./pages/HardIssuesSeries"));
 const RoadMap = lazy(() => import("./pages/RoadMap"));
 const Library = lazy(() => import("./pages/Library"));
 const Diagnostic = lazy(() => import("./pages/Diagnostic"));
-const BooksStore = lazy(() => import("./pages/BooksStore"));
 const SearchPage = lazy(() => import("./pages/Search"));
 const TheologyQuiz = lazy(() => import("./pages/TheologyQuiz"));
-const ResourcesForPastors = lazy(() => import("./pages/ResourcesForPastors"));
 const ReadingPaths = lazy(() => import("./pages/ReadingPaths"));
 const Pathways = lazy(() => import("./pages/Pathways"));
 const TopicPathway = lazy(() => import("./pages/TopicPathway"));
@@ -563,7 +561,6 @@ function Router() {
         <Route path="/substack" component={SubstackPage} />
         <Route path="/pastors" component={Pastors} />
         <Route path="/about" component={About} />
-        <Route path="/books-store" component={BooksStore} />
         <Route path="/search" component={SearchPage} />
         <Route path="/tools/theology-quiz" component={TheologyQuiz} />
         {/* Legacy alias; vercel.json 301s /quiz to /tools/theology-quiz */}
@@ -604,7 +601,6 @@ function Router() {
         <Route path="/privacy" component={Privacy} />
         <Route path="/accessibility" component={Accessibility} />
         <Route path="/terms" component={Terms} />
-        <Route path="/resources-for-pastors" component={ResourcesForPastors} />
         <Route path="/pastoral-burnout" component={PastoralBurnout} />
         <Route path="/faith-crisis" component={FaithCrisis} />
         <Route path="/marriage-crisis" component={MarriageCrisis} />
