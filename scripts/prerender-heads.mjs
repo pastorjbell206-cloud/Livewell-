@@ -791,6 +791,10 @@ async function main() {
     for (const u of uncovered) console.log(`  - ${u}`);
   }
 
+  // Track which /writing/:slug essays already got prerendered from the DB, so
+  // the static-library pass below doesn't double-write them.
+  const writtenEssaySlugs = new Set();
+
   // DB-driven pages
   const conn = await loadDb();
   if (conn) {
@@ -829,6 +833,7 @@ async function main() {
         });
         writeRoute(template, { path: `/writing/${post.slug}` }, head, bodyHtml);
         wrote++;
+        writtenEssaySlugs.add(post.slug);
       }
 
       const [books] = await conn.query(
@@ -871,6 +876,52 @@ async function main() {
     } finally {
       await conn.end();
     }
+  }
+
+  // Static-library essays. These are served by api/index.ts behind the live DB
+  // (no DB row of their own), so without this pass they appear in the sitemap
+  // but get the generic SPA shell head and an empty crawlable body. Prerender
+  // every static essay not already written from the DB. Runs with or without a
+  // DB connection, since the generated file is a committed build artifact.
+  try {
+    const staticLib = JSON.parse(
+      fs.readFileSync(path.join(REPO_ROOT, "content/static-library.generated.json"), "utf8")
+    );
+    let staticWrote = 0;
+    for (const rec of staticLib) {
+      if (!rec || !rec.slug || rec.published === false) continue;
+      if (writtenEssaySlugs.has(rec.slug)) continue;
+      const url = `${SITE_URL}/writing/${rec.slug}`;
+      const image = rec.coverImage || ogImageUrl(rec.title, rec.pillar || undefined);
+      const description = rec.excerpt || rec.title;
+      const publishedIso = rec.publishedAt
+        ? new Date(rec.publishedAt).toISOString()
+        : new Date(rec.createdAt || Date.parse("2026-01-01")).toISOString();
+      const modifiedIso = rec.updatedAt ? new Date(rec.updatedAt).toISOString() : publishedIso;
+      const head = buildHead({
+        title: rec.title,
+        description,
+        url,
+        image,
+        type: "article",
+        publishedDate: publishedIso,
+        modifiedDate: modifiedIso,
+        schemas: [articleSchema(rec, url, image)],
+      });
+      const bodyHtml = bodyFromContent({
+        title: rec.title,
+        subtitle: rec.excerpt || "",
+        sectionLabel: rec.pillar || "",
+        markdown: rec.body || "",
+      });
+      writeRoute(template, { path: `/writing/${rec.slug}` }, head, bodyHtml);
+      wrote++;
+      staticWrote++;
+      writtenEssaySlugs.add(rec.slug);
+    }
+    console.log(`[prerender] static library: ${staticWrote} essays prerendered (of ${staticLib.length})`);
+  } catch (e) {
+    console.warn(`[prerender] static library skipped: ${e.message}`);
   }
 
   console.log(`[prerender] wrote ${wrote} per-route HTML files into ${DIST_DIR}`);
