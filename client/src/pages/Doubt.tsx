@@ -54,21 +54,21 @@ export default function Doubt() {
     {
       title: "Someone I love is questioning their faith",
       description: "For parents, friends, and pastors watching someone you care about walk away. How to stay present without defending.",
-      href: "/writing/how-to-talk-about-faith"
+      href: "/writing/parenting-when-your-child-doubts-or-walks-away"
     },
     {
       title: "I've never believed but I'm curious",
       description: "For seekers, skeptics, and the genuinely undecided. What the Christian story actually claims and why it matters.",
-      href: "/writing/why-christianity"
+      href: "/skeptic-track"
     }
   ];
 
   const HARD_QUESTIONS = [
-    { q: "Is God real?", href: "/writing/is-god-real" },
-    { q: "Why does God allow suffering?", href: "/writing/why-does-god-allow-suffering" },
-    { q: "Is the Bible reliable?", href: "/writing/can-you-trust-the-bible" },
-    { q: "What about hell?", href: "/writing/what-christians-believe-about-hell" },
-    { q: "Can I doubt and still have faith?", href: "/writing/the-problem-with-certainty" },
+    { q: "Is God real?", href: "/faq/does-god-exist" },
+    { q: "Why does God allow suffering?", href: "/writing/if-god-is-good-why-suffering" },
+    { q: "Is the Bible reliable?", href: "/faq/is-the-bible-historically-accurate" },
+    { q: "What about hell?", href: "/faq/what-do-christians-believe-about-hell" },
+    { q: "Can I doubt and still have faith?", href: "/faq/what-is-deconstruction" },
   ];
 
   return (
