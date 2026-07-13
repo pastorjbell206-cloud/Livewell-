@@ -32,17 +32,19 @@ URL and are marked *unverified (needs browser/deploy)* wherever they arise.
    prod-handled). The estate is in genuinely good shape — this is polish, not
    rescue.
 2. **The single largest client asset is `content-data-*.js` at 2,715 kB
-   (934 kB gzip)** — the entire content corpus bundled into one chunk, dwarfing
-   every other asset (next largest ~310 kB). This is the top performance item.
+   (934 kB gzip)** — but verification showed it is a *lazy, admin-only* chunk
+   (a dynamic import in `AdminDashboard` only); regular readers never load it, so
+   it is **not** a public perf problem. Public content comes via tRPC.
 3. **Three roadmap docs of different vintages exist** (`docs/roadmap.md` [stale,
    PR #102 era], `docs/audit/ROADMAP.md` [elevation era], `NEXT-TEN.md` [live]).
    Only one is current. Fixed here: `docs/roadmap.md` rewritten to point at the
    live program.
-4. **Two findings were rejected on verification** (the pack's Stage-2 pass).
-   Running the actual tools showed the "dynamic-`SEOMeta` uncovered" P1 is
-   already covered (`prerender-heads.mjs` → 0 uncovered) and `/about` already
-   has a `Person` schema. Verifying beat inferring — patching either would have
-   done harm. The findings below are the survivors.
+4. **Three findings were rejected on verification** (the pack's Stage-2 pass).
+   Running the actual tools showed: the "dynamic-`SEOMeta` uncovered" P1 is
+   already covered (`prerender-heads.mjs` → 0 uncovered); `/about` already has a
+   `Person` schema; and the `content-data` chunk is lazy + admin-only, not a
+   public perf issue. Verifying beat inferring — patching any of the three would
+   have done harm. The findings below are the survivors.
 
 ## Findings by dimension
 
@@ -63,13 +65,18 @@ brackets. Owner-gated items marked ⛔.
   one intent. Confirm canonical (⛔ owner decision; also open in ELEVATION-SUMMARY).
 
 ### Performance
-- **P1** [hi] `content-data-*.js` = 2,715 kB (934 kB gz), one monolithic chunk
-  loaded broadly. Candidate: split the corpus so a page pulls only the essays it
-  needs, or move listing/detail data behind the API (prod already serves slim,
-  body-less rows — see NEXT-TEN #10). Measure before/after. *Live LCP impact
-  unverified (needs deploy).*
-- **P2** [low] Vite emits the >500 kB chunk-size warning on build; driven by the
-  above.
+- ~~P1~~ **REJECTED on verification.** `content-data-*.js` (2,715 kB) looked
+  like a broad-loaded monolith, but it is imported in exactly one place —
+  `AdminDashboard.tsx:101`, via a **dynamic** `await import(...)`. Vite splits it
+  into a lazy chunk fetched **only when an authenticated admin opens the
+  dashboard**. There is **no static import** anywhere; public pages
+  (`Writing.tsx`, `ArticleDetail.tsx`) load content via tRPC
+  (`posts.listPublished` / `getBySlug`), not this bundle. So **regular readers
+  never download it** — no refactor warranted. A split would only touch the
+  admin path for no public gain.
+- **P2** [low] Vite emits the >500 kB chunk-size warning on build, driven by the
+  admin-only chunk. Cosmetic (a lazy chunk); silence via `chunkSizeWarningLimit`
+  if the log noise bothers, or leave it.
 
 ### Brand fidelity (tokens)
 Clean on the big risks: **no mustard-creep**, **no white page backgrounds**,

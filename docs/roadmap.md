@@ -23,8 +23,9 @@ Status: ☐ not started · ◐ in progress · ☑ shipped · ⛔ owner-gated
 Ordered by leverage. No P0s surfaced.
 
 ### P1
-- ☐ **Perf: split `content-data`** (2.7 MB / 934 kB gz single chunk). Load only
-  the essays a page needs, or move listing/detail behind the API. Measure LCP.
+- ~~Perf: split `content-data`~~ — **rejected on verification.** The 2.7 MB
+  chunk is a *lazy, admin-only* dynamic import (`AdminDashboard` only); public
+  readers never load it (they use tRPC). No refactor warranted.
 - ☑ **Routing: orphaned pages retired** — removed the `/books-store` +
   `/resources-for-pastors` routes/imports and deleted the orphaned components;
   the 301s to `/books` / `/for-pastors` stay.
@@ -56,6 +57,9 @@ Ordered by leverage. No P0s surfaced.
   prerender heads); confirm `/start` vs `/start-here` canonical.
 
 ## If you do only three things
-1. Split `content-data` (the one big, measurable perf win).
-2. Resolve the orphaned pages (redirect-or-keep) + settle the canonical host.
-3. Greenlight #4 depth analytics — so you can *see* the corpus working.
+1. Greenlight #4 depth analytics — so you can *see* the corpus working.
+2. Load the two email tracks into Mailchimp (written + verified; ~10 min each).
+3. The owner keys: activate Stripe, send 3–4 founder photos.
+
+(The audit's headline perf/SEO items were rejected on verification — the site is
+in better shape than the first-pass findings implied.)
