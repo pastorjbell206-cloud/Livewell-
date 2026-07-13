@@ -7,6 +7,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { BookNextSteps } from "@/components/BookNextSteps";
 import { StripeBuyButton } from "@/components/StripeBuyButton";
 import { SITE_URL } from "@/lib/site";
 
@@ -125,6 +126,15 @@ export default function DeconstructionOfFaith() {
           </p>
         </div>
       </section>
+
+      <BookNextSteps
+        slug="deconstruction-of-faith"
+        related={[
+          { href: "/books/believe", title: "Believe: The Rational Case for Christian Faith" },
+          { href: "/books/the-reliability-of-scripture", title: "The Reliability of Scripture" },
+          { href: "/books/raising-believers", title: "Raising Believers" },
+        ]}
+      />
     </Layout>
   );
 }

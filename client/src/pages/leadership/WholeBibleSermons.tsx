@@ -28,9 +28,11 @@ const GROUP_ORDER = ["Pentateuch", "History", "Wisdom", "Major Prophets", "Minor
 
 export default function WholeBibleSermons() {
   const [data, setData] = useState<Data | null>(null);
-  const [fullSermons, setFullSermons] = useState<Record<string, string>>({});
   const [, params] = useRoute("/leadership/bible-sermons/:bookId");
   const bookId = params?.bookId;
+  // Tagged with the bookId it answered; fullSermons derived per render, so a new
+  // book resets the manuscripts without a synchronous setState in the effect.
+  const [sermonResult, setSermonResult] = useState<{ bookId: string; map: Record<string, string> } | null>(null);
 
   useEffect(() => {
     fetch("/leadership/whole-bible-sermons.json")
@@ -41,18 +43,20 @@ export default function WholeBibleSermons() {
 
   // The full sermon manuscripts live in a per-book file so the index stays light.
   useEffect(() => {
-    setFullSermons({});
     if (!bookId) return;
     fetch(`/leadership/sermons/${bookId}.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((arr) => {
-        if (!Array.isArray(arr)) return;
         const m: Record<string, string> = {};
-        for (const x of arr) if (x && x.n != null && x.sermon) m[String(x.n)] = x.sermon;
-        setFullSermons(m);
+        if (Array.isArray(arr)) {
+          for (const x of arr) if (x && x.n != null && x.sermon) m[String(x.n)] = x.sermon;
+        }
+        setSermonResult({ bookId, map: m });
       })
       .catch(() => {});
   }, [bookId]);
+
+  const fullSermons = sermonResult && sermonResult.bookId === bookId ? sermonResult.map : {};
 
   if (!data) {
     return (

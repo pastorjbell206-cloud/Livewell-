@@ -9,6 +9,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta, getBreadcrumbSchema } from "@/components/SEOMeta";
+import { BookNextSteps } from "@/components/BookNextSteps";
 import { BuyEbookButton } from "@/components/BuyEbookButton";
 import { SITE_URL } from "@/lib/site";
 import { Link } from "wouter";
@@ -205,6 +206,15 @@ export default function WhereYourTreasureIs() {
           </p>
         </div>
       </section>
+
+      <BookNextSteps
+        slug={SLUG}
+        related={[
+          { href: "/consider-the-birds", title: "Consider the Birds" },
+          { href: "/books/when-god-bless-america", title: "When God Bless America Replaces Thy Kingdom Come" },
+          { href: "/books/raising-believers", title: "Raising Believers" },
+        ]}
+      />
     </Layout>
   );
 }

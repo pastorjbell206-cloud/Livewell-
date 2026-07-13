@@ -1,4 +1,4 @@
-[
+export const ARTICLES_BATCH_9_10 = [
   {
     title: "Spiritual Abuse: How Good Theology Gets Weaponized",
     slug: "spiritual-abuse-how-good-theology-gets-weaponized",

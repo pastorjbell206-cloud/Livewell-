@@ -124,10 +124,10 @@ export function AdminSyncPanel() {
         </div>
 
         {lastSync ? (
-          <div className="flex items-center gap-2 p-3 rounded" style={{ backgroundColor: "#ECFDF5" }}>
-            <CheckCircle size={20} style={{ color: "#10B981" }} />
+          <div className="flex items-center gap-2 p-3 rounded" style={{ backgroundColor: "var(--adm-ok-tint)" }}>
+            <CheckCircle size={20} style={{ color: "var(--adm-ok-icon)" }} />
             <div>
-              <p style={{ color: "#059669", fontWeight: 500 }}>
+              <p style={{ color: "var(--adm-ok-strong)", fontWeight: 500 }}>
                 Last run: {lastSync.time}
               </p>
               <p style={{ color: "var(--ink-muted)", fontSize: "0.875rem" }}>
@@ -136,9 +136,9 @@ export function AdminSyncPanel() {
             </div>
           </div>
         ) : (
-          <div className="flex items-center gap-2 p-3 rounded" style={{ backgroundColor: "#F3F4F6" }}>
-            <Clock size={20} style={{ color: "#6B7280" }} />
-            <p style={{ color: "#6B7280", fontSize: "0.875rem" }}>
+          <div className="flex items-center gap-2 p-3 rounded" style={{ backgroundColor: "var(--adm-gray-bg)" }}>
+            <Clock size={20} style={{ color: "var(--adm-gray)" }} />
+            <p style={{ color: "var(--adm-gray)", fontSize: "0.875rem" }}>
               No syncs run this session yet. Trigger one below to see results.
             </p>
           </div>
@@ -149,9 +149,9 @@ export function AdminSyncPanel() {
       {history.length > 0 && (
         <div
           className="p-6 rounded-lg border"
-          style={{ backgroundColor: "#FFFFFF", borderColor: "#D1C9BB" }}
+          style={{ backgroundColor: "var(--card)", borderColor: "var(--adm-line)" }}
         >
-          <h3 className="font-semibold mb-4" style={{ color: "#1A1A1A" }}>
+          <h3 className="font-semibold mb-4" style={{ color: "var(--charcoal)" }}>
             Sync History
           </h3>
           <div className="space-y-2">
@@ -159,23 +159,23 @@ export function AdminSyncPanel() {
               <div
                 key={i}
                 className="flex items-start gap-3 p-3 rounded text-sm"
-                style={{ backgroundColor: "#F7F5F0" }}
+                style={{ backgroundColor: "var(--adm-bg)" }}
               >
                 {entry.ok ? (
-                  <CheckCircle size={18} style={{ color: "#10B981", flexShrink: 0, marginTop: 1 }} />
+                  <CheckCircle size={18} style={{ color: "var(--adm-ok-icon)", flexShrink: 0, marginTop: 1 }} />
                 ) : (
-                  <XCircle size={18} style={{ color: "#EF4444", flexShrink: 0, marginTop: 1 }} />
+                  <XCircle size={18} style={{ color: "var(--adm-danger-bright)", flexShrink: 0, marginTop: 1 }} />
                 )}
                 <div className="flex-1">
                   <div className="flex items-center justify-between gap-2">
-                    <span style={{ color: "#1A1A1A", fontWeight: 500 }}>{entry.feed}</span>
-                    <span style={{ color: "#6B7280" }}>{entry.time}</span>
+                    <span style={{ color: "var(--charcoal)", fontWeight: 500 }}>{entry.feed}</span>
+                    <span style={{ color: "var(--adm-gray)" }}>{entry.time}</span>
                   </div>
-                  <p style={{ color: "#6B7280" }}>
+                  <p style={{ color: "var(--adm-gray)" }}>
                     {entry.added} added, {entry.skipped} skipped
                   </p>
                   {entry.errors && entry.errors.length > 0 && (
-                    <p style={{ color: "#991B1B", fontSize: "0.8125rem", marginTop: 2 }}>
+                    <p style={{ color: "var(--adm-danger-deep)", fontSize: "0.8125rem", marginTop: 2 }}>
                       {entry.errors.join("; ")}
                     </p>
                   )}
@@ -211,7 +211,7 @@ export function AdminSyncPanel() {
             </div>
             <div
               className="px-3 py-1 rounded-full text-sm font-medium"
-              style={{ backgroundColor: "#DBEAFE", color: "#1E40AF" }}
+              style={{ backgroundColor: "var(--adm-info-bg)", color: "var(--adm-info)" }}
             >
               Active
             </div>
@@ -259,7 +259,7 @@ export function AdminSyncPanel() {
             </div>
             <div
               className="px-3 py-1 rounded-full text-sm font-medium"
-              style={{ backgroundColor: "#DBEAFE", color: "#1E40AF" }}
+              style={{ backgroundColor: "var(--adm-info-bg)", color: "var(--adm-info)" }}
             >
               Active
             </div>
@@ -295,7 +295,7 @@ export function AdminSyncPanel() {
         disabled={syncing !== null}
         className="w-full flex items-center justify-center gap-2 py-3"
         style={{
-          backgroundColor: syncing === "all" ? "var(--mustard)" : "#2D4A3E",
+          backgroundColor: syncing === "all" ? "var(--mustard)" : "var(--adm-forest)",
           color: "var(--bone)",
           fontSize: "1rem",
         }}
@@ -317,12 +317,12 @@ export function AdminSyncPanel() {
       <div
         className="p-4 rounded-lg flex gap-3"
         style={{
-          backgroundColor: "#FEF3C7",
-          borderLeft: "4px solid #F59E0B",
+          backgroundColor: "var(--adm-warn-bg)",
+          borderLeft: "4px solid var(--adm-warn-bright)",
         }}
       >
-        <AlertCircle size={20} style={{ color: "#D97706", flexShrink: 0 }} />
-        <div style={{ color: "#92400E" }}>
+        <AlertCircle size={20} style={{ color: "var(--adm-warn)", flexShrink: 0 }} />
+        <div style={{ color: "var(--adm-warn-text)" }}>
           <p className="font-semibold mb-1">Automatic Syncing Enabled</p>
           <p style={{ fontSize: "0.875rem" }}>
             Feeds are automatically synced daily at 6:00 AM. You can also manually trigger syncs anytime using the buttons above.

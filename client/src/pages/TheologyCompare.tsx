@@ -17,15 +17,19 @@ const wrap = { maxWidth: "var(--w-wide)", margin: "0 auto" } as const;
 export default function TheologyCompare() {
   const ready = useMemo(() => DOCTRINE_INDEX.filter((d) => d.ready), []);
   const [slug, setSlug] = useState<string>(ready[0]?.slug ?? "soteriology");
-  const [doc, setDoc] = useState<Doctrine | null>(null);
+  // The fetched doctrine is tagged with the slug it answered; `doc` is derived
+  // per render, so switching doctrines resets the view without a synchronous
+  // setState in the effect.
+  const [result, setResult] = useState<{ slug: string; doc: Doctrine | null } | null>(null);
 
   useEffect(() => {
-    setDoc(null);
     fetch(`/theology/${slug}.json`)
       .then((r) => (r.ok ? r.json() : Promise.reject()))
-      .then(setDoc)
-      .catch(() => setDoc(null));
+      .then((d) => setResult({ slug, doc: d }))
+      .catch(() => setResult({ slug, doc: null }));
   }, [slug]);
+
+  const doc = result && result.slug === slug ? result.doc : null;
 
   const col = `minmax(220px, 1fr)`;
 

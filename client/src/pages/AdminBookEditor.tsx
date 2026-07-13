@@ -1,7 +1,7 @@
 import AdminLayout from "@/components/AdminLayout";
 import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Loader2, Save } from "lucide-react";
 import { toast } from "sonner";
 
@@ -29,20 +29,22 @@ export default function AdminBookEditor() {
   const createBookMutation = trpc.books.create.useMutation();
   const updateBookMutation = trpc.books.update.useMutation();
 
-  useEffect(() => {
-    if (getBookQuery.data) {
-      setForm({
-        title: getBookQuery.data.title,
-        author: getBookQuery.data.author || "",
-        description: getBookQuery.data.description || "",
-        coverImage: getBookQuery.data.coverImage || "",
-        purchaseUrl: getBookQuery.data.purchaseUrl || "",
-        bookType: getBookQuery.data.bookType,
-        sortOrder: getBookQuery.data.sortOrder,
-        published: getBookQuery.data.published,
-      });
-    }
-  }, [getBookQuery.data]);
+  // Hydrate the form from the loaded book (guarded state adjustment during
+  // render — see react.dev "You Might Not Need an Effect").
+  const [hydratedFrom, setHydratedFrom] = useState<typeof getBookQuery.data | null>(null);
+  if (getBookQuery.data && getBookQuery.data !== hydratedFrom) {
+    setHydratedFrom(getBookQuery.data);
+    setForm({
+      title: getBookQuery.data.title,
+      author: getBookQuery.data.author || "",
+      description: getBookQuery.data.description || "",
+      coverImage: getBookQuery.data.coverImage || "",
+      purchaseUrl: getBookQuery.data.purchaseUrl || "",
+      bookType: getBookQuery.data.bookType,
+      sortOrder: getBookQuery.data.sortOrder,
+      published: getBookQuery.data.published,
+    });
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -85,7 +87,7 @@ export default function AdminBookEditor() {
               value={form.title}
               onChange={(e) => setForm({ ...form, title: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
               placeholder="Book title"
             />
           </div>
@@ -100,7 +102,7 @@ export default function AdminBookEditor() {
               value={form.author}
               onChange={(e) => setForm({ ...form, author: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
               placeholder="Author name"
             />
           </div>
@@ -114,7 +116,7 @@ export default function AdminBookEditor() {
               value={form.description}
               onChange={(e) => setForm({ ...form, description: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
               rows={4}
               placeholder="Book summary"
             />
@@ -130,7 +132,7 @@ export default function AdminBookEditor() {
               value={form.coverImage}
               onChange={(e) => setForm({ ...form, coverImage: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
               placeholder="https://..."
             />
           </div>
@@ -145,7 +147,7 @@ export default function AdminBookEditor() {
               value={form.purchaseUrl}
               onChange={(e) => setForm({ ...form, purchaseUrl: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
               placeholder="https://amazon.com/..."
             />
           </div>
@@ -159,7 +161,7 @@ export default function AdminBookEditor() {
               value={form.bookType}
               onChange={(e) => setForm({ ...form, bookType: e.target.value as "authored" | "recommended" })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
             >
               <option value="authored">My Book (Authored)</option>
               <option value="recommended">Recommendation</option>
@@ -176,7 +178,7 @@ export default function AdminBookEditor() {
               value={form.sortOrder}
               onChange={(e) => setForm({ ...form, sortOrder: parseInt(e.target.value) || 0 })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
               placeholder="0"
             />
             <p className="font-ui text-xs mt-1" style={{ color: "var(--ink-muted)" }}>

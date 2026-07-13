@@ -17,28 +17,28 @@ interface ArticleProgressProps {
   readTime: string;
 }
 
+function readScrollProgress(): number {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  if (docHeight <= 0) return 0;
+  return Math.min(100, Math.max(0, (scrollTop / docHeight) * 100));
+}
+
 export default function ArticleProgress({ readTime }: ArticleProgressProps) {
-  const [progress, setProgress] = useState(0);
-  const [visible, setVisible] = useState(false);
+  // Initialized from the live scroll position so a page loaded mid-scroll
+  // (back navigation, etc.) starts correct without a synchronous effect.
+  const [progress, setProgress] = useState(readScrollProgress);
+  const [visible, setVisible] = useState(() => window.scrollY > 200);
 
   const handleScroll = useCallback(() => {
-    const scrollTop = window.scrollY;
-    const docHeight =
-      document.documentElement.scrollHeight - window.innerHeight;
-
-    if (docHeight <= 0) return;
-
-    const pct = Math.min(100, Math.max(0, (scrollTop / docHeight) * 100));
-    setProgress(pct);
+    setProgress(readScrollProgress());
 
     // Show after scrolling past the hero area (~200px)
-    setVisible(scrollTop > 200);
+    setVisible(window.scrollY > 200);
   }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
-    // Initial check in case the page loads mid-scroll (back navigation, etc.)
-    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 

@@ -109,10 +109,10 @@ export default function AdminSetupNavigation() {
   return (
     <AdminLayout>
       <div className="max-w-2xl">
-        <h1 className="font-display text-4xl font-bold mb-3" style={{ color: "#1A1A1A" }}>
+        <h1 className="font-display text-4xl font-bold mb-3" style={{ color: "var(--charcoal)" }}>
           Set up navigation
         </h1>
-        <p className="font-body mb-8" style={{ color: "#5A5448", lineHeight: 1.7 }}>
+        <p className="font-body mb-8" style={{ color: "var(--ink-muted)", lineHeight: 1.7 }}>
           This organizes your articles into the new two-level menu — the five pillars and their
           sub-pathways, plus the Study Guides &amp; Series section. It only adds the menu labels to
           each article. It never changes a post's title, text, pillar, or published status. Safe to
@@ -124,24 +124,24 @@ export default function AdminSetupNavigation() {
           onClick={run}
           disabled={running}
           className="flex items-center gap-2 px-6 py-3 rounded font-ui font-medium disabled:opacity-50"
-          style={{ backgroundColor: "#1A1A1A", color: "#F5F0E6" }}
+          style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)" }}
         >
           {running ? <Loader2 size={16} className="animate-spin" /> : <Wand2 size={16} />}
           Set up the new navigation
         </button>
 
         {running && progress && (
-          <div className="mt-8 font-body" style={{ color: "#5A5448" }}>
+          <div className="mt-8 font-body" style={{ color: "var(--ink-muted)" }}>
             <div className="flex items-center gap-2">
               <Loader2 size={16} className="animate-spin" />
               Tagging articles — {progress.processed} of {progress.total}…
             </div>
-            <div style={{ height: 8, background: "#EDE8DC", borderRadius: 999, marginTop: 8, overflow: "hidden" }}>
+            <div style={{ height: 8, background: "var(--bone-warm)", borderRadius: 999, marginTop: 8, overflow: "hidden" }}>
               <div
                 style={{
                   height: "100%",
                   width: `${Math.round((progress.processed / Math.max(1, progress.total)) * 100)}%`,
-                  background: "#D4A017",
+                  background: "var(--mustard)",
                   transition: "width .2s",
                 }}
               />
@@ -151,18 +151,18 @@ export default function AdminSetupNavigation() {
         )}
 
         {result && (
-          <div className="mt-8 rounded p-6" style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}>
+          <div className="mt-8 rounded p-6" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}>
             <div className="flex items-center gap-2 mb-4">
               {result.stragglers === 0 ? (
-                <CheckCircle2 size={20} style={{ color: "#2E7D32" }} />
+                <CheckCircle2 size={20} style={{ color: "var(--adm-ok)" }} />
               ) : (
-                <AlertTriangle size={20} style={{ color: "#D4A017" }} />
+                <AlertTriangle size={20} style={{ color: "var(--mustard)" }} />
               )}
-              <span className="font-ui font-semibold" style={{ color: "#1A1A1A" }}>
+              <span className="font-ui font-semibold" style={{ color: "var(--charcoal)" }}>
                 {result.stragglers === 0 ? "Navigation is set up" : "Almost done"}
               </span>
             </div>
-            <ul className="font-body space-y-1" style={{ color: "#1A1A1A" }}>
+            <ul className="font-body space-y-1" style={{ color: "var(--charcoal)" }}>
               <li>Articles in the mapping: <strong>{result.total}</strong></li>
               <li>Tagged just now: <strong>{result.updated}</strong></li>
               {result.stragglers > 0 && (
@@ -170,7 +170,7 @@ export default function AdminSetupNavigation() {
               )}
             </ul>
             {result.stragglers === 0 && (
-              <p className="mt-4 font-body text-sm" style={{ color: "#5A5448" }}>
+              <p className="mt-4 font-body text-sm" style={{ color: "var(--ink-muted)" }}>
                 The new menus will now fill in. Visit the site and hover the nav to check.
               </p>
             )}

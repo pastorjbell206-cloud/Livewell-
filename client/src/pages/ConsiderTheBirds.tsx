@@ -9,6 +9,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta, getBreadcrumbSchema } from "@/components/SEOMeta";
+import { BookNextSteps } from "@/components/BookNextSteps";
 import { BuyEbookButton } from "@/components/BuyEbookButton";
 import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
 import { Link } from "wouter";
@@ -205,6 +206,15 @@ export default function ConsiderTheBirds() {
           </p>
         </div>
       </section>
+
+      <BookNextSteps
+        slug={SLUG}
+        related={[
+          { href: "/where-your-treasure-is", title: "Where Your Treasure Is" },
+          { href: "/books/raising-believers", title: "Raising Believers" },
+          { href: "/books/believe", title: "Believe: The Rational Case for Christian Faith" },
+        ]}
+      />
     </Layout>
   );
 }

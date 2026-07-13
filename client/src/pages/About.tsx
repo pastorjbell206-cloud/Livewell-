@@ -3,6 +3,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { SITE_STATS } from "@/config/siteStats";
+import { SITE_URL } from "@/lib/site";
 import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBlocks";
 import { Figure } from "@/components/Figure";
 
@@ -24,6 +25,23 @@ export default function About() {
         title="About James Bell — Pastor, Author, Writer"
         description={`From atheism to the pulpit. Raised without a father. Five sons. ${SITE_STATS.bookCount} books. ${SITE_STATS.yearsInMinistry} years in ministry. The story behind the writing.`}
         type="website"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "James Bell",
+          url: `${SITE_URL}/about`,
+          jobTitle: "Lead Pastor, Author, Founder",
+          description: `Lead Pastor at First Baptist Church of Fenton, author of ${SITE_STATS.bookCountWord} books, and founder of the Pastors Connection Network.`,
+          worksFor: {
+            "@type": "Organization",
+            name: "First Baptist Church of Fenton",
+          },
+          sameAs: [
+            "https://pastorsconnectionnetwork.com",
+            "https://substack.com/@jamesbell333289",
+            "https://www.facebook.com/james.bell.609252",
+          ],
+        }}
       />
 
       {/* ORIGIN */}

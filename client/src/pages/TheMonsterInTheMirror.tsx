@@ -8,6 +8,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { BookNextSteps } from "@/components/BookNextSteps";
 import { StripeBuyButton } from "@/components/StripeBuyButton";
 import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
 
@@ -85,6 +86,15 @@ export default function TheMonsterInTheMirror() {
           </p>
         </div>
       </section>
+
+      <BookNextSteps
+        slug="the-monster-in-the-mirror"
+        related={[
+          { href: "/books/the-reliability-of-scripture", title: "The Reliability of Scripture" },
+          { href: "/books/when-god-bless-america", title: "When God Bless America Replaces Thy Kingdom Come" },
+          { href: "/books/critical-race-theory-biblical", title: "Is Critical Race Theory Biblical?" },
+        ]}
+      />
     </Layout>
   );
 }

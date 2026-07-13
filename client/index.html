@@ -44,6 +44,18 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Mobile / PWA appearance: match the browser chrome to the masthead
+         (cream in light, charcoal in dark), enable a clean add-to-home-screen
+         experience on iOS, and stop the phone from auto-linking numbers in
+         essays as if they were dial-able. -->
+    <meta name="theme-color" content="#F5F0E6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1A1A1A" media="(prefers-color-scheme: dark)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="LiveWell" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="apple-touch-icon" href="/pwa-192x192.png" />
   </head>
   <body>
     <div id="root">

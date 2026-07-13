@@ -143,10 +143,10 @@ export default function AdminLoadDrafts() {
   return (
     <AdminLayout>
       <div className="max-w-2xl">
-        <h1 className="font-display text-4xl font-bold mb-3" style={{ color: "#1A1A1A" }}>
+        <h1 className="font-display text-4xl font-bold mb-3" style={{ color: "var(--charcoal)" }}>
           Load draft essays
         </h1>
-        <p className="font-body mb-6" style={{ color: "#5A5448", lineHeight: 1.7 }}>
+        <p className="font-body mb-6" style={{ color: "var(--ink-muted)", lineHeight: 1.7 }}>
           Adds the new flagship essays for your thinner pillars as{" "}
           <strong>unpublished drafts</strong>. They go in hidden from the public — read each one in
           the real layout, edit the wording, and publish from the post editor only when you're happy.
@@ -159,7 +159,7 @@ export default function AdminLoadDrafts() {
             onClick={preview}
             disabled={busy}
             className="flex items-center gap-2 px-5 py-3 rounded font-ui font-medium disabled:opacity-50"
-            style={{ backgroundColor: "#EDE8DC", color: "#1A1A1A", border: "1px solid #D1C9BB" }}
+            style={{ backgroundColor: "var(--bone-warm)", color: "var(--charcoal)", border: "1px solid var(--adm-line)" }}
           >
             Preview the essays
           </button>
@@ -168,15 +168,15 @@ export default function AdminLoadDrafts() {
             onClick={run}
             disabled={busy}
             className="flex items-center gap-2 px-6 py-3 rounded font-ui font-medium disabled:opacity-50"
-            style={{ backgroundColor: "#1A1A1A", color: "#F5F0E6" }}
+            style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)" }}
           >
             {busy ? <Loader2 size={16} className="animate-spin" /> : <FilePlus2 size={16} />}
             Load as unpublished drafts
           </button>
         </div>
 
-        <div className="rounded p-5 mb-8" style={{ backgroundColor: "#F1F7F1", border: "1px solid #2E7D32" }}>
-          <p className="font-body text-sm mb-3" style={{ color: "#1A1A1A", lineHeight: 1.6 }}>
+        <div className="rounded p-5 mb-8" style={{ backgroundColor: "var(--adm-ok-soft)", border: "1px solid var(--adm-ok)" }}>
+          <p className="font-body text-sm mb-3" style={{ color: "var(--charcoal)", lineHeight: 1.6 }}>
             Done previewing? Take every loaded essay and article <strong>live in one click</strong>.
             This sets all of them to published. You can undo it here too.
           </p>
@@ -186,7 +186,7 @@ export default function AdminLoadDrafts() {
               onClick={() => setPublishedAll(true)}
               disabled={busy}
               className="flex items-center gap-2 px-6 py-3 rounded font-ui font-medium disabled:opacity-50"
-              style={{ backgroundColor: "#2E7D32", color: "#FFFFFF" }}
+              style={{ backgroundColor: "var(--adm-ok)", color: "var(--card)" }}
             >
               {busy ? <Loader2 size={16} className="animate-spin" /> : <CheckCircle2 size={16} />}
               Publish all now
@@ -196,13 +196,13 @@ export default function AdminLoadDrafts() {
               onClick={() => setPublishedAll(false)}
               disabled={busy}
               className="flex items-center gap-2 px-5 py-3 rounded font-ui font-medium disabled:opacity-50"
-              style={{ backgroundColor: "#EDE8DC", color: "#1A1A1A", border: "1px solid #D1C9BB" }}
+              style={{ backgroundColor: "var(--bone-warm)", color: "var(--charcoal)", border: "1px solid var(--adm-line)" }}
             >
               Unpublish all
             </button>
           </div>
           {pubResult && (
-            <p className="font-body text-sm mt-3" style={{ color: "#2E7D32" }}>
+            <p className="font-body text-sm mt-3" style={{ color: "var(--adm-ok)" }}>
               {pubResult.published ? "Published" : "Unpublished"} {pubResult.updated} {pubResult.updated === 1 ? "post" : "posts"}. Refresh your site to see them.
             </p>
           )}
@@ -211,17 +211,17 @@ export default function AdminLoadDrafts() {
         {items.length > 0 && !result && (
           <div className="space-y-4 mb-8">
             {items.map((it) => (
-              <div key={it.slug} className="rounded p-5" style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}>
-                <div className="font-ui text-xs uppercase tracking-wider mb-1" style={{ color: "#D4A017" }}>
+              <div key={it.slug} className="rounded p-5" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}>
+                <div className="font-ui text-xs uppercase tracking-wider mb-1" style={{ color: "var(--mustard)" }}>
                   {it.pillar}{it.subPathway ? ` · ${it.subPathway}` : ""}
                 </div>
-                <div className="font-display text-2xl font-bold mb-2" style={{ color: "#1A1A1A" }}>
+                <div className="font-display text-2xl font-bold mb-2" style={{ color: "var(--charcoal)" }}>
                   {it.title}
                 </div>
-                <p className="font-body text-sm" style={{ color: "#5A5448", lineHeight: 1.6 }}>
+                <p className="font-body text-sm" style={{ color: "var(--ink-muted)", lineHeight: 1.6 }}>
                   {it.excerpt}
                 </p>
-                <p className="font-body text-sm mt-3" style={{ color: "#1A1A1A", lineHeight: 1.7 }}>
+                <p className="font-body text-sm mt-3" style={{ color: "var(--charcoal)", lineHeight: 1.7 }}>
                   {it.body.slice(0, 280)}…
                 </p>
               </div>
@@ -230,20 +230,20 @@ export default function AdminLoadDrafts() {
         )}
 
         {result && (
-          <div className="rounded p-6" style={{ backgroundColor: "#FFFFFF", border: "1px solid #D1C9BB" }}>
+          <div className="rounded p-6" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}>
             <div className="flex items-center gap-2 mb-4">
-              <CheckCircle2 size={20} style={{ color: "#2E7D32" }} />
-              <span className="font-ui font-semibold" style={{ color: "#1A1A1A" }}>
+              <CheckCircle2 size={20} style={{ color: "var(--adm-ok)" }} />
+              <span className="font-ui font-semibold" style={{ color: "var(--charcoal)" }}>
                 {result.inserted > 0 ? "Drafts loaded" : "Already loaded"}
               </span>
             </div>
-            <ul className="font-body space-y-1 mb-4" style={{ color: "#1A1A1A" }}>
+            <ul className="font-body space-y-1 mb-4" style={{ color: "var(--charcoal)" }}>
               <li>Added as drafts just now: <strong>{result.inserted}</strong></li>
               {result.skipped.length > 0 && (
                 <li>Already present (skipped): <strong>{result.skipped.length}</strong></li>
               )}
             </ul>
-            <p className="font-body text-sm mb-3" style={{ color: "#5A5448" }}>
+            <p className="font-body text-sm mb-3" style={{ color: "var(--ink-muted)" }}>
               Preview each draft, then publish it from the post editor when ready:
             </p>
             <div className="flex flex-col gap-2">
@@ -254,11 +254,11 @@ export default function AdminLoadDrafts() {
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-1 font-ui text-sm"
-                    style={{ color: "#1A1A1A" }}
+                    style={{ color: "var(--charcoal)" }}
                   >
                     <ExternalLink size={14} /> Preview “{it.title}”
                   </a>
-                  <Link href="/admin/posts" className="font-ui text-sm" style={{ color: "#5A5448" }}>
+                  <Link href="/admin/posts" className="font-ui text-sm" style={{ color: "var(--ink-muted)" }}>
                     open in editor →
                   </Link>
                 </div>

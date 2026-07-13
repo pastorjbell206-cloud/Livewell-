@@ -62,31 +62,48 @@ const fmtSavedAt = (iso: string) => {
 export default function GuidedWorkflow() {
   const [, params] = useRoute("/leadership/workflow/:slug");
   const slug = params?.slug;
-  const [data, setData] = useState<Data | null>(null);
-  const [answers, setAnswers] = useState<Record<string, string>>({});
+  // The loaded workflow is tagged with the attempt (slug + retry nonce) that
+  // fetched it; `data` is derived per render, so a slug change or retry shows
+  // the loading state again without a synchronous setState in the effect.
+  const [loaded, setLoaded] = useState<{ attempt: string; data: Data } | null>(null);
+  const [answers, setAnswers] = useState<Record<string, string>>(() =>
+    slug ? readStoredJSON(`livewell-workflow-${slug}`, isAnswers, {}) : {}
+  );
   const [open, setOpen] = useState<string | null>(null);
   const [saved, setSaved] = useState(false);
   const [nonce, setNonce] = useState(0);
-  // The attempt (slug + retry nonce) that failed. Deriving `error` from it means
-  // a slug change or a retry clears the panel without extra state writes.
+  // The attempt that failed. Deriving `error` from it means a slug change or a
+  // retry clears the panel without extra state writes.
   const [failedAt, setFailedAt] = useState<string | null>(null);
-  const error = failedAt === `${slug}|${nonce}`;
+  const attempt = `${slug}|${nonce}`;
+  const error = failedAt === attempt;
+  const data = loaded && loaded.attempt === attempt ? loaded.data : null;
   const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "failed">("idle");
   const [persistFailed, setPersistFailed] = useState(false);
-  const [copies, setCopies] = useState<SaveRec[]>([]);
+  const [copies, setCopies] = useState<SaveRec[]>(() =>
+    slug ? readStoredJSON(savesKey(slug), isSaveList, []) : []
+  );
   const [saveName, setSaveName] = useState("");
 
   const KEY = slug ? `livewell-workflow-${slug}` : "";
 
-  useEffect(() => {
-    if (!slug) return;
-    setData(null); setCopyStatus("idle");
+  // On a new attempt (slug change or retry), re-read the browser saves and
+  // reset the per-workflow chrome during render — the documented "state from
+  // previous renders" pattern — so the effect below only fetches.
+  const [prevAttempt, setPrevAttempt] = useState(attempt);
+  if (slug && prevAttempt !== attempt) {
+    setPrevAttempt(attempt);
+    setCopyStatus("idle");
     setAnswers(readStoredJSON(`livewell-workflow-${slug}`, isAnswers, {}));
     setCopies(readStoredJSON(savesKey(slug), isSaveList, []));
     setSaveName("");
+  }
+
+  useEffect(() => {
+    if (!slug) return;
     let stale = false;
     fetchJson<Data>(`/leadership/workflows/${slug}.json`, isData)
-      .then((d) => { if (!stale) { setData(d); setOpen(d.stages[0]?.id ?? null); } })
+      .then((d) => { if (!stale) { setLoaded({ attempt: `${slug}|${nonce}`, data: d }); setOpen(d.stages[0]?.id ?? null); } })
       .catch(() => { if (!stale) setFailedAt(`${slug}|${nonce}`); });
     return () => { stale = true; };
   }, [slug, nonce]);

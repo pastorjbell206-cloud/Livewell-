@@ -1,7 +1,7 @@
 import AdminLayout from "@/components/AdminLayout";
 import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Loader2, Save } from "lucide-react";
 import { toast } from "sonner";
 
@@ -30,21 +30,23 @@ export default function AdminPostEditor() {
   const createPostMutation = trpc.posts.create.useMutation();
   const updatePostMutation = trpc.posts.update.useMutation();
 
-  useEffect(() => {
-    if (getPostQuery.data) {
-      setForm({
-        title: getPostQuery.data.title,
-        slug: getPostQuery.data.slug,
-        body: getPostQuery.data.body,
-        excerpt: getPostQuery.data.excerpt || "",
-        pillar: getPostQuery.data.pillar || "",
-        readTime: getPostQuery.data.readTime || "",
-        coverImage: getPostQuery.data.coverImage || "",
-        published: getPostQuery.data.published,
-        featured: getPostQuery.data.featured,
-      });
-    }
-  }, [getPostQuery.data]);
+  // Hydrate the form from the loaded post (guarded state adjustment during
+  // render — see react.dev "You Might Not Need an Effect").
+  const [hydratedFrom, setHydratedFrom] = useState<typeof getPostQuery.data | null>(null);
+  if (getPostQuery.data && getPostQuery.data !== hydratedFrom) {
+    setHydratedFrom(getPostQuery.data);
+    setForm({
+      title: getPostQuery.data.title,
+      slug: getPostQuery.data.slug,
+      body: getPostQuery.data.body,
+      excerpt: getPostQuery.data.excerpt || "",
+      pillar: getPostQuery.data.pillar || "",
+      readTime: getPostQuery.data.readTime || "",
+      coverImage: getPostQuery.data.coverImage || "",
+      published: getPostQuery.data.published,
+      featured: getPostQuery.data.featured,
+    });
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -87,7 +89,7 @@ export default function AdminPostEditor() {
               value={form.title}
               onChange={(e) => setForm({ ...form, title: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
               placeholder="Post title"
             />
           </div>
@@ -102,7 +104,7 @@ export default function AdminPostEditor() {
               value={form.slug}
               onChange={(e) => setForm({ ...form, slug: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
               placeholder="url-friendly-slug"
             />
           </div>
@@ -116,7 +118,7 @@ export default function AdminPostEditor() {
               value={form.excerpt}
               onChange={(e) => setForm({ ...form, excerpt: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
               rows={3}
               placeholder="Short summary for cards"
             />
@@ -131,7 +133,7 @@ export default function AdminPostEditor() {
               value={form.body}
               onChange={(e) => setForm({ ...form, body: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
               rows={12}
               placeholder="Write your post in Markdown…"
             />
@@ -146,7 +148,7 @@ export default function AdminPostEditor() {
               value={form.pillar}
               onChange={(e) => setForm({ ...form, pillar: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
             >
               <option value="">Select a pillar…</option>
               <option value="Prophetic Disruption">Prophetic Disruption</option>
@@ -167,7 +169,7 @@ export default function AdminPostEditor() {
               value={form.readTime}
               onChange={(e) => setForm({ ...form, readTime: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
               placeholder="e.g., 8 min read"
             />
           </div>
@@ -182,7 +184,7 @@ export default function AdminPostEditor() {
               value={form.coverImage}
               onChange={(e) => setForm({ ...form, coverImage: e.target.value })}
               className="w-full px-4 py-2 rounded border font-body"
-              style={{ borderColor: "var(--line)", backgroundColor: "#FFFFFF" }}
+              style={{ borderColor: "var(--line)", backgroundColor: "var(--card)" }}
               placeholder="https://..."
             />
           </div>

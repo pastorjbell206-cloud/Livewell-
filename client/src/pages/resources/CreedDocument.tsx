@@ -21,18 +21,20 @@ interface Doc {
 export default function CreedDocument() {
   const [, params] = useRoute("/resources/creeds/:slug");
   const slug = params?.slug;
-  const [data, setData] = useState<Doc | null>(null);
-  const [missing, setMissing] = useState(false);
+  // Result tagged with the slug it answered; data/missing derived per render,
+  // so a new slug resets the view without a synchronous setState in the effect.
+  const [result, setResult] = useState<{ slug: string; data: Doc | null } | null>(null);
 
   useEffect(() => {
     if (!slug) return;
-    setData(null);
-    setMissing(false);
     fetch(`/creeds/documents/${slug}.json`)
       .then((r) => (r.ok ? r.json() : null))
-      .then((d) => (d ? setData(d) : setMissing(true)))
-      .catch(() => setMissing(true));
+      .then((d) => setResult({ slug, data: d || null }))
+      .catch(() => setResult({ slug, data: null }));
   }, [slug]);
+
+  const data = result && result.slug === slug ? result.data : null;
+  const missing = !!result && result.slug === slug && result.data === null;
 
   return (
     <Layout>

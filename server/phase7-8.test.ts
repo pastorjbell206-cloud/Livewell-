@@ -133,6 +133,7 @@ describe("Phase 7 & 8: Mobile Optimization & Author Attribution", () => {
 
     it("should close menu when item is clicked", () => {
       let menuOpen = true;
+      expect(menuOpen).toBe(true);
       menuOpen = false;
       expect(menuOpen).toBe(false);
     });

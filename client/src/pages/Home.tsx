@@ -33,36 +33,67 @@ import {
 // Flip this one constant to switch variants without touching markup.
 const HERO_VARIANT: "A" | "B" = "A";
 
-// The four mission doors — the primary way into the site. Each routes by the
-// reader's intent into an existing hub. Edit copy/destinations here only.
+// The intent doors — the primary way into the site. Written in the reader's
+// own words (recognition beats recall: a first-time visitor knows their
+// problem, not our taxonomy), each routing to an existing surface. The pillar
+// taxonomy stays below and in the nav; this layer meets people at the door.
+// Edit copy/destinations here only.
 const DOORS = [
   {
-    title: "Become a Disciple",
+    title: "I'm new here",
     blurb:
-      "New to following Jesus, or finding your way back. A path that takes your questions seriously and meets you where you actually are.",
-    href: "/discipleship",
-    cta: "Start the path",
+      "Two minutes of honest questions, and the site hands you a starting place that fits where you actually are.",
+    href: "/start",
+    cta: "Start here",
   },
   {
-    title: "Make Disciples",
+    title: "I'm doubting my faith",
     blurb:
-      "You are teaching others to follow Christ. Study guides, family devotions, and tools to put real weight behind what you pass on.",
-    href: "/tools",
-    cta: "Find the tools",
+      "The questions you have been lowering your voice to ask — suffering, Scripture, silence, death — answered without flinching.",
+    href: "/theology/questions",
+    cta: "See the questions",
   },
   {
-    title: "Leadership Training",
+    title: "I don't believe any of this",
     blurb:
-      "For pastors, elders, and deacons. The work of leading a church, and the training to carry what the work costs.",
-    href: "/leadership",
-    cta: "Enter the hub",
+      "Written by a pastor who was an atheist far longer than he has been this. No setup, no pressure, no altar call.",
+    href: "/skeptic-track",
+    cta: "Read the skeptic track",
   },
   {
-    title: "Prophetic Justice",
+    title: "My marriage is struggling",
     blurb:
-      "What Scripture says about the poor, the outsider, the systems we inherit. This is not about left or right. It is about the cross.",
-    href: "/justice",
-    cta: "Read the call",
+      "Past the tips and into the covenant — the slow drifts, the resentment, the silence, and what staying actually takes.",
+    href: "/marriage",
+    cta: "Go here first",
+  },
+  {
+    title: "I'm raising kids in the faith",
+    blurb:
+      "Devotions, doubt-proofing, and parenting without fear or formula — from a father of five sons.",
+    href: "/family",
+    cta: "Enter the family room",
+  },
+  {
+    title: "I'm a pastor, and I'm tired",
+    blurb:
+      "The loneliness, the burnout, the weight nobody checks on. Written from inside the room, and a network that has your back.",
+    href: "/pastors",
+    cta: "Find the brotherhood",
+  },
+  {
+    title: "I want to disciple someone",
+    blurb:
+      "Eighteen table-ready studies that make you confident to walk with one person — no program, no stage, no seminary required.",
+    href: "/table",
+    cta: "Sit at the Table",
+  },
+  {
+    title: "I have a hard question",
+    blurb:
+      "Politics, justice, sexuality, hell, hypocrisy — the questions people actually ask, taken seriously enough to answer.",
+    href: "/answers",
+    cta: "Find your question",
   },
 ];
 
@@ -374,7 +405,7 @@ export default function Home() {
               maxWidth: "32ch",
             }}
           >
-            Four doors in.
+            What brings you here?
           </h2>
           <p
             style={{
@@ -386,8 +417,8 @@ export default function Home() {
               marginBottom: "var(--s-4)",
             }}
           >
-            Wherever you are, there is a way through. Pick the one that fits, and
-            the rest of the site opens from there.
+            Pick the door that sounds like you. Each one leads somewhere built
+            for exactly that, and the rest of the site opens from there.
           </p>
           <PullQuote>
             Theology that can carry the weight of a Tuesday afternoon.

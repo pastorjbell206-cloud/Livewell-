@@ -31,17 +31,20 @@ function Head({ kicker, title }: { kicker: string; title: string }) {
 export default function PropheticTopic({ config }: { config: SectionConfig }) {
   const [, params] = useRoute(`${config.base}/topic/:slug`);
   const slug = params?.slug;
-  const [t, setT] = useState<Topic | null>(null);
-  const [missing, setMissing] = useState(false);
+  // Result tagged with the slug it answered; t/missing derived per render, so a
+  // new slug resets the view without a synchronous setState in the effect.
+  const [result, setResult] = useState<{ slug: string; data: Topic | null } | null>(null);
 
   useEffect(() => {
     if (!slug) return;
-    setT(null); setMissing(false);
     fetch(`${config.base}/topics/${slug}.json`)
       .then((r) => (r.ok ? r.json() : Promise.reject()))
-      .then(setT)
-      .catch(() => setMissing(true));
+      .then((d: Topic) => setResult({ slug, data: d }))
+      .catch(() => setResult({ slug, data: null }));
   }, [slug, config.base]);
+
+  const t = result && result.slug === slug ? result.data : null;
+  const missing = !!result && result.slug === slug && result.data === null;
 
   if (missing) {
     return (

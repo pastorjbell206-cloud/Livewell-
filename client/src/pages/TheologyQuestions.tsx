@@ -28,19 +28,19 @@ export default function TheologyQuestions() {
   useEffect(() => {
     fetch("/theology/questions.json")
       .then((r) => (r.ok ? r.json() : null))
-      .then((d) => d?.questions && setQuestions(d.questions))
+      .then((d) => {
+        if (!d?.questions) return;
+        setQuestions(d.questions);
+        // Open and scroll to a question if the URL carries its id as a hash —
+        // handled here, once the data arrives, rather than in a second effect.
+        const hash = window.location.hash.replace("#", "");
+        if (hash && (d.questions as Q[]).some((q) => q.id === hash)) {
+          setOpen(hash);
+          setTimeout(() => document.getElementById(hash)?.scrollIntoView({ behavior: "smooth", block: "start" }), 80);
+        }
+      })
       .catch(() => {});
   }, []);
-
-  // Open and scroll to a question if the URL carries its id as a hash.
-  useEffect(() => {
-    if (questions.length === 0) return;
-    const hash = window.location.hash.replace("#", "");
-    if (hash && questions.some((q) => q.id === hash)) {
-      setOpen(hash);
-      setTimeout(() => document.getElementById(hash)?.scrollIntoView({ behavior: "smooth", block: "start" }), 80);
-    }
-  }, [questions]);
 
   const groups = useMemo(() => {
     const order: string[] = [];

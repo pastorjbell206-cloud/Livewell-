@@ -15,6 +15,7 @@
     "db:push": "drizzle-kit generate && drizzle-kit migrate",
     "db:seed": "node scripts/seed-all-content.mjs",
     "sitemap": "node scripts/generate-sitemap.mjs",
+    "scan:citations": "node scripts/scan-citations.mjs",
     "howtos": "node scripts/build-howtos-index.mjs",
     "wisdom": "node scripts/build-wisdom-index.mjs",
     "plans:index": "node scripts/build-plans-index.mjs",
@@ -30,7 +31,8 @@
     "publish:articles": "node scripts/publish-articles-build.mjs",
     "survey": "node scripts/survey-manuscripts.mjs",
     "seed:paths": "node scripts/seed-reading-paths.mjs",
-    "validate:pathways": "node scripts/validate-pathways.mjs"
+    "validate:pathways": "node scripts/validate-pathways.mjs",
+    "llms:full": "node scripts/build-llms-full.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -143,7 +145,10 @@
       "wouter@3.7.1": "patches/wouter@3.7.1.patch"
     },
     "overrides": {
-      "tailwindcss>nanoid": "3.3.7"
+      "tailwindcss>nanoid": "3.3.7",
+      "qs@<6.15.2": ">=6.15.2",
+      "path-to-regexp@<0.1.13": ">=0.1.13",
+      "mdast-util-to-hast@<13.2.1": ">=13.2.1"
     },
     "onlyBuiltDependencies": [
       "esbuild",

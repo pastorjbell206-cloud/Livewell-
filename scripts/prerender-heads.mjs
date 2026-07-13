@@ -156,6 +156,130 @@ const STATIC_PAGES = [
     description: "Eight questions across four dimensions. Honest answers. A specific essay, a book, and an email track for what to do next.",
     type: "website",
   },
+  // ── Shared-component routes (NationEssay slug=…, Prophetic* config=…,
+  // FormationGuides, WholeBibleSermons). Their SEOMeta is computed from props
+  // or fetched JSON, so the route-table extraction below cannot read it; the
+  // copy here mirrors each page's actual title/subtitle content.
+  {
+    path: "/leadership/guides",
+    title: "Free Church Leadership Training Guides — Elders & Deacons",
+    description: "Free, session-by-session training guides for the church: a Servant Leadership Bible study, an Elder Training Manual, a Deacon Training Manual, and more.",
+    type: "website",
+  },
+  {
+    path: "/leadership/bible-sermons",
+    title: "Sermon Series for Every Book of the Bible — Free Outlines",
+    description: "Free, Christ-centered sermon series for all 66 books of the Bible — the big idea, the Christ connection, and a ready-to-preach arc, Genesis to Revelation.",
+    type: "website",
+  },
+  {
+    path: "/disruption/posture",
+    title: "The Posture — Prophetic Disruption",
+    description: "Before any argument about justice, the ground rules first: biblical justice defined from the text up, and the binding command versus prudential policy.",
+    type: "website",
+  },
+  {
+    path: "/disruption/consistency",
+    title: "The Consistency Check — Prophetic Disruption",
+    description: "A searching self-examination of whether you defend truth selectively, one standard for your side and another for your opponents. A mirror, not a weapon.",
+    type: "website",
+  },
+  {
+    path: "/disruption/glossary",
+    title: "Glossary — Prophetic Disruption",
+    description: "The words of biblical justice, from mishpat and tsedaqah to jubilee and Christian nationalism — politically loaded ones included, defined even-handedly.",
+    type: "website",
+  },
+  {
+    path: "/disruption/questions",
+    title: "Hard Questions — Prophetic Disruption",
+    description: "Is the gospel political? Is Christianity left or right? What even is social justice? Honest answers that take the suspicion seriously from every direction.",
+    type: "website",
+  },
+  {
+    path: "/disruption/witnesses",
+    title: "The Witnesses — Prophetic Disruption",
+    description: "The people across history who told the church and the powers costly truth and refused to be captured — hopeful, concrete, and honest about their flaws.",
+    type: "website",
+  },
+  {
+    path: "/justice/posture",
+    title: "The Call — Prophetic Justice",
+    description: "Justice is not the margin of the faith but near its middle: biblical justice defined from the text up, and God's lean toward the poor and the foreigner.",
+    type: "website",
+  },
+  {
+    path: "/justice/glossary",
+    title: "Glossary — Prophetic Justice",
+    description: "The words of biblical justice, from mishpat and tsedaqah to shalom and jubilee — including the politically loaded ones, defined even-handedly, text first.",
+    type: "website",
+  },
+  {
+    path: "/justice/witnesses",
+    title: "The Witnesses — Prophetic Justice",
+    description: "The people who did justice at real cost across history, from the abolitionists to the rescuers of the trafficked — hopeful, and honest about their flaws.",
+    type: "website",
+  },
+  {
+    path: "/nation/christian-nation",
+    title: "Was America Founded as a Christian Nation?",
+    description: "The strongest case for yes, the strongest case for no, the Baptists who built the wall of separation, and the deeper question both sides forget to ask.",
+    type: "website",
+  },
+  {
+    path: "/nation/theocracy",
+    title: "What an Old Testament Theocracy Actually Was",
+    description: "A covenant, not a constitution: a people God ruled directly, the prophets as the check on kings, and why no one can rebuild ancient Israel's arrangement.",
+    type: "website",
+  },
+  {
+    path: "/nation/empire",
+    title: "The Danger of Empire",
+    description: "From Babel to Babylon to Rome, every kingdom that asks you to kneel is asking for something that was never theirs. What empire always wants of the church.",
+    type: "website",
+  },
+  {
+    path: "/nation/which-party",
+    title: "Which Party Fits the Bible More?",
+    description: "A straight answer to a loaded question: where the right sits nearer the Bible, where the left does, why neither party fits, and the test it sets for you.",
+    type: "website",
+  },
+  {
+    path: "/nation/render",
+    title: "Render to Caesar — What a Christian Owes the State",
+    description: "The coin, the image, and dual citizenship: what a Christian owes the state, what a Christian owes God, and the difference that orders a whole life ahead.",
+    type: "website",
+  },
+  {
+    path: "/nation/christian-nationalism",
+    title: "What Christian Nationalism Actually Is",
+    description: "A definition built on the research, the spectrum instead of the cartoon, where sincere belief turns into idolatry, and the same idol across the aisle.",
+    type: "website",
+  },
+  {
+    path: "/nation/nationalism-history",
+    title: "How We Got Here: A History of Christian Nationalism in America",
+    description: "From a Puritan sermon to a modern rallying cry: how the faith kept getting recruited to bless the nation, and what finally tells worship from idolatry.",
+    type: "website",
+  },
+  {
+    path: "/nation/power-and-church",
+    title: "When Power Takes the Church: What History Keeps Showing Us",
+    description: "From Constantine to apartheid, the recurring bargain in which the church trades its independent voice for a place beside power — and the few who refused.",
+    type: "website",
+  },
+  {
+    path: "/nation/progressive-captivity",
+    title: "The Other Captivity: When the Faith Dissolves Into a Cause",
+    description: "The right makes Christianity the conservative platform at prayer. The left makes it the progressive one. By opposite doors, both hand over the same thing.",
+    type: "website",
+  },
+  {
+    path: "/nation/compassion-and-coercion",
+    title: "When Compassion Hardens Into Coercion",
+    description: "A real virtue turns dangerous when it fuses with power to compel — the mirror the left holds up to the right's will to power, taken with equal seriousness.",
+    type: "website",
+  },
 ];
 
 // Dynamic per-essay Open Graph card via the /api/og Edge function (api/og.tsx).
