@@ -3221,6 +3221,25 @@ async function ensureReadEventsTable(c: any) {
   readEventsReady = true;
 }
 
+// Core Web Vitals from real visitors (web-vitals lib): one row per settled
+// metric. value is ms for LCP/INP and the unitless score for CLS; rating is
+// the library's good/needs-improvement/poor bucket. Same lazy-create discipline.
+let webVitalsReady = false;
+async function ensureWebVitalsTable(c: any) {
+  if (webVitalsReady) return;
+  await c.execute(`CREATE TABLE IF NOT EXISTS web_vitals (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    metric VARCHAR(8) NOT NULL,
+    value DOUBLE NOT NULL,
+    rating VARCHAR(20),
+    path VARCHAR(512),
+    visitorId VARCHAR(64),
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+    INDEX idx_wv_metric_created (metric, createdAt)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`);
+  webVitalsReady = true;
+}
+
 async function recordPageView(req: VercelRequest, res: VercelResponse) {
   if (req.method !== "POST") return json(res, 405, { ok: false });
   // Generous limit: a reader clicking through the site should never be blocked.
@@ -3232,6 +3251,22 @@ async function recordPageView(req: VercelRequest, res: VercelResponse) {
     if (path.startsWith("/admin")) return json(res, 200, { ok: true }); // do not count your own admin visits
     const referrer = body?.referrer ? String(body.referrer).slice(0, 512) : null;
     const visitorId = body?.visitorId ? String(body.visitorId).slice(0, 64) : null;
+    // WebVitalsBeacon: one settled Core Web Vital. Stored in its own table.
+    if (body?.event === "vital") {
+      const ALLOWED = new Set(["LCP", "INP", "CLS", "FCP", "TTFB"]);
+      const metric = String(body?.metric || "");
+      const value = Number(body?.value);
+      const rating = body?.rating ? String(body.rating).slice(0, 20) : null;
+      if (!ALLOWED.has(metric) || !Number.isFinite(value) || value < 0) return json(res, 200, { ok: true });
+      await withConn(async (c) => {
+        await ensureWebVitalsTable(c);
+        await c.execute(
+          "INSERT INTO web_vitals (metric, value, rating, path, visitorId) VALUES (?, ?, ?, ?, ?)",
+          [metric, value, rating, path, visitorId]
+        );
+      });
+      return json(res, 200, { ok: true });
+    }
     const isRead = body?.event === "read"; // the ReadDepthBeacon: reader reached the end
     await withConn(async (c) => {
       if (isRead) {
@@ -3347,6 +3382,49 @@ async function adminSignups(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+// Core Web Vitals from real visitors (the WebVitalsBeacon's web_vitals rows).
+// For each of LCP/INP/CLS over the last 30 days: the p75 value Google reports
+// on, the good/needs-improvement/poor split, and the sample count. Read-only.
+async function adminWebVitals(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  const METRICS = ["LCP", "INP", "CLS"]; // fixed whitelist — safe to interpolate
+  const WINDOW = "createdAt >= DATE_SUB(NOW(), INTERVAL 30 DAY)";
+  try {
+    const out = await withConn(async (c) => {
+      await ensureWebVitalsTable(c);
+      const num = async (sql: string, params: any[] = []): Promise<number> => {
+        try { const [r]: any = await c.query(sql, params); return Number(r?.[0]?.n ?? 0); } catch { return 0; }
+      };
+      const metrics: Record<string, { p75: number | null; good: number; needsImprovement: number; poor: number; count: number }> = {};
+      for (const m of METRICS) {
+        const count = await num(`SELECT COUNT(*) AS n FROM web_vitals WHERE metric = ? AND ${WINDOW}`, [m]);
+        let p75: number | null = null;
+        if (count > 0) {
+          const offset = Math.min(count - 1, Math.floor(count * 0.75));
+          try {
+            const [r]: any = await c.query(
+              `SELECT value AS n FROM web_vitals WHERE metric = ? AND ${WINDOW} ORDER BY value ASC LIMIT 1 OFFSET ${offset}`,
+              [m]
+            );
+            p75 = r?.[0]?.n != null ? Number(r[0].n) : null;
+          } catch { p75 = null; }
+        }
+        metrics[m] = {
+          p75,
+          good: await num(`SELECT COUNT(*) AS n FROM web_vitals WHERE metric = ? AND rating = 'good' AND ${WINDOW}`, [m]),
+          needsImprovement: await num(`SELECT COUNT(*) AS n FROM web_vitals WHERE metric = ? AND rating = 'needs-improvement' AND ${WINDOW}`, [m]),
+          poor: await num(`SELECT COUNT(*) AS n FROM web_vitals WHERE metric = ? AND rating = 'poor' AND ${WINDOW}`, [m]),
+          count,
+        };
+      }
+      return { metrics };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
 // Commerce status: the per-ebook truth of what is actually sellable right now.
 // For each book in the catalog: does it have a Stripe price (env var or the
 // stored site_settings id), and therefore a live Buy button? Read-only.
@@ -3400,6 +3478,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/metrics") return adminMetrics(req, res);
     if (url === "/api/admin/analytics") return adminAnalytics(req, res);
     if (url === "/api/admin/signups") return adminSignups(req, res);
+    if (url === "/api/admin/web-vitals") return adminWebVitals(req, res);
     if (url === "/api/admin/commerce-status") return adminCommerceStatus(req, res);
     if (url === "/api/track") return recordPageView(req, res);
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
