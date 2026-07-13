@@ -249,6 +249,14 @@ const STATIC_PAGES = [
   { url: "/start-here", priority: "0.85", changefreq: "monthly" },
   { url: "/read", priority: "0.8", changefreq: "monthly" },
   { url: "/pathways", priority: "0.75", changefreq: "monthly" },
+  { url: "/map", priority: "0.8", changefreq: "monthly" },
+  { url: "/capture-by-the-right", priority: "0.8", changefreq: "monthly" },
+  { url: "/capture-by-the-left", priority: "0.8", changefreq: "monthly" },
+  { url: "/reading-scripture-past-our-politics", priority: "0.8", changefreq: "monthly" },
+  { url: "/after-christendom", priority: "0.8", changefreq: "monthly" },
+  { url: "/the-pastoral-angle", priority: "0.8", changefreq: "monthly" },
+  { url: "/theology/explorer", priority: "0.8", changefreq: "monthly" },
+  { url: "/tools/which-lens", priority: "0.8", changefreq: "monthly" },
   { url: "/explore", priority: "0.75", changefreq: "monthly" },
   { url: "/pillars", priority: "0.8", changefreq: "monthly" },
   { url: "/exile", priority: "0.7", changefreq: "monthly" },
@@ -292,6 +300,9 @@ function manifestPages() {
     { file: "client/public/table/studies-index.json", key: "studies", prefix: "/table/" },
     { file: "client/public/howtos/index.json", key: "articles", prefix: "/how-tos/" },
     { file: "client/public/books/index.json", key: "books", prefix: "/read/" },
+    // The contested-doctrine library (/theology/doctrine/:slug), manifest
+    // from scripts/build-theology-index.mjs.
+    { file: "client/public/theology/index.json", key: "docs", prefix: "/theology/doctrine/" },
   ];
   for (const s of sources) {
     try {

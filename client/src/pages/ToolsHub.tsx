@@ -6,6 +6,13 @@ import { useFavorites } from "@/hooks/useFavorites";
 
 export const TOOLS = [
   {
+    title: "Which Lens Has You?",
+    description: "Thirteen honest choices. Five lenses that do a reader's thinking before the reader does — the flag, the cause, the highlighter, the rearview, the marketplace. It ends not in a score but in the pillar built to dismantle the lens it found.",
+    href: "/tools/which-lens",
+    icon: Search,
+    color: "var(--mustard)",
+  },
+  {
     title: "Deep Bible Study Companion",
     description: "Seminary-level depth in kitchen-table language. 20 books of the Bible with 6 layers of analysis: text, historical context, literary structure, scholarly views, modern application, and deeper resources.",
     href: "/tools/deep-bible",

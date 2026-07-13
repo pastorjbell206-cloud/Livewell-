@@ -32,7 +32,8 @@
     "seed:paths": "node scripts/seed-reading-paths.mjs",
     "validate:pathways": "node scripts/validate-pathways.mjs",
     "validate:integrity": "node scripts/validate-content-integrity.mjs",
-    "llms:full": "node scripts/build-llms-full.mjs"
+    "llms:full": "node scripts/build-llms-full.mjs",
+    "theology-index": "node scripts/build-theology-index.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
