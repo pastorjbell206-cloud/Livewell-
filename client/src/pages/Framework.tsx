@@ -53,8 +53,8 @@ export default function Framework() {
   return (
     <Layout>
       <SEOMeta
-        title="The Framework — How It All Fits Together"
-        description="The one arc behind the five pillars: know the truth, trace it through Scripture, renounce the idols, do justice, and live and lead it as one undivided life."
+        title="The Framework — How the Library Fits Together"
+        description="The one arc through the library's five reference wings: know the truth, trace it through Scripture, renounce the idols, do justice, and live it as one life."
         url="https://www.livewellbyjamesbell.co/framework"
       />
 
@@ -62,13 +62,16 @@ export default function Framework() {
         <div style={prose}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>The Framework</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 6vw, 60px)", fontWeight: 400, lineHeight: 1.03, letterSpacing: "-0.025em", marginBottom: "22px" }}>
-            Five pillars. One arc.
+            Five wings. One arc.
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.75, color: "rgba(245,240,230,0.85)", marginBottom: "16px" }}>
-            This is not a website with five departments. It is one argument with five movements, and they go in an order. You know the truth. You watch it move through the whole of Scripture. You let it kill your idols. You let it reach the poor. And then you let it become an actual life.
+            The library's five reference wings are not five departments. They are one argument with five movements, and they go in an order. You know the truth. You watch it move through the whole of Scripture. You let it kill your idols. You let it reach the poor. And then you let it become an actual life.
           </p>
           <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontStyle: "italic", lineHeight: 1.5, color: "var(--mustard)" }}>
             Theology that does not end in a life was never theology. It was a hobby.
+          </p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.7, color: "rgba(245,240,230,0.55)", marginTop: "16px" }}>
+            (This is the arc through the reference shelves. The site's spine — the six pillars, two movements — lives at <Link href="/map" style={{ color: "var(--mustard)" }}>the map</Link>.)
           </p>
         </div>
       </section>
@@ -87,7 +90,7 @@ export default function Framework() {
                 <span style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-muted)" }}>{m.pillar ?? m.pillars}</span>
               </div>
               <p style={{ fontFamily: "var(--B)", fontSize: "16.5px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "68ch", margin: 0 }}>{m.body}</p>
-              <span style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)" }}>Enter this pillar →</span>
+              <span style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)" }}>Enter this wing →</span>
             </Link>
           ))}
         </div>

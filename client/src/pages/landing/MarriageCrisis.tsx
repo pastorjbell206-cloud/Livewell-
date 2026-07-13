@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import CrisisFaq, { faqPageSchema } from "@/components/CrisisFaq";
 import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
@@ -11,6 +12,29 @@ const ARTICLES = [
   { title: "Forgiveness Without Pretending", slug: "forgiveness-without-pretending" },
 ];
 
+const FAQ_ITEMS = [
+  {
+    question: "Can this marriage actually be saved?",
+    answer:
+      "No one can promise you that from a distance, and this page will not pretend to. What can be said honestly: many marriages that felt finished were not \u2014 the feeling of being done is usually a symptom of exhaustion, not a verdict on the covenant. The couples who rebuilt did it the unglamorous way: they stopped performing, told the truth with a third person in the room, and repaired one small pattern at a time. Whether that is your story is not decided yet. That is the point \u2014 it is not decided.",
+  },
+  {
+    question: "Should we stay together for the kids?",
+    answer:
+      "The honest version of this question is harder than either answer: children are not protected by a marriage that stays and keeps wounding, and they are not served by an easy exit either \u2014 they are formed by what they watch. What serves them most is not two people enduring each other but two people repairing, because watching repair happen teaches a child more about covenant than years of quiet tension. If your home has become unsafe, that is a different question with a clear answer: safety comes first.",
+  },
+  {
+    question: "My spouse won't work on it. What can I do alone?",
+    answer:
+      "You cannot make another person willing, and trying usually deepens the standoff. But a marriage is a pattern, and one person changing their side of the pattern changes the pattern. Get honest about your own contribution first \u2014 not because the drift is all yours, but because your side is the only part you hold. Then invite, plainly, without an ultimatum. Some spouses come to the table late. Some come after watching a change they did not believe was possible.",
+  },
+  {
+    question: "When do we need more than we can do ourselves?",
+    answer:
+      "Earlier than you think \u2014 most couples wait years too long, until the wound has scar tissue. A good marriage counselor is not an admission of failure; it is a third set of hands on something heavy. And one line that has to be said plainly: if there is violence in your home, that is not a marriage problem to work harder at \u2014 call the National Domestic Violence Hotline at 800-799-7233, today. This page is writing, not counseling. The people behind those doors are the actual help.",
+  },
+];
+
 export default function MarriageCrisis() {
   return (
     <Layout>
@@ -18,6 +42,7 @@ export default function MarriageCrisis() {
         title="Marriage Crisis"
         description="The silence between you is louder than the fighting ever was. Essays on marriage, conflict, and the cost of covenant love."
         keywords="marriage crisis, marriage help, marriage conflict, covenant marriage, Christian marriage"
+        structuredData={[faqPageSchema(FAQ_ITEMS)]}
       />
 
       {/* Hero */}
@@ -69,6 +94,8 @@ export default function MarriageCrisis() {
           </Link>
         </div>
       </section>
+
+      <CrisisFaq items={FAQ_ITEMS} />
 
       {/* Real help (the care standard requires a visible path — a marriage in
           crisis can include abuse, which is a safety question, not a conflict

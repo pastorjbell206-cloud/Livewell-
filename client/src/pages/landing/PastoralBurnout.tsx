@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import CrisisFaq, { faqPageSchema } from "@/components/CrisisFaq";
 import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
@@ -11,6 +12,29 @@ const ARTICLES = [
   { title: "Why Pastors Quit", slug: "why-pastors-quit" },
 ];
 
+const FAQ_ITEMS = [
+  {
+    question: "Is it a sin to want to quit?",
+    answer:
+      "No. Elijah wanted to die under the broom tree, and God's response was food and sleep, not a rebuke. Wanting out is usually the soul reporting that the load is wrong \u2014 not that the call was false. The question underneath deserves to be slowed down: is it the ministry you need to leave, or the way you have been carrying it? Do not answer that alone, and do not answer it this week.",
+  },
+  {
+    question: "How do I know if I'm burned out or just tired?",
+    answer:
+      "Tired lifts. A real Sabbath, a vacation, a stretch of sleep \u2014 tired responds to rest. Burnout does not lift with a day off: the dread is waiting on the other side of it, the sermons go through the motions, and the people you love start to feel like appointments. If rest has stopped working, that is the line. The burnout assessment on this site will put honest language on where you are \u2014 scored in your browser, seen by no one but you.",
+  },
+  {
+    question: "Who can I even talk to?",
+    answer:
+      "The loneliness is structural: you are the one person in the building who cannot use the building. So the help has to come from outside it \u2014 a counselor who has sat with pastors before, a friend in ministry who owes you nothing, a network of others who know the weight; the Pastors Connection Network exists for exactly this. What does not work is the thing most of us do instead: carrying it alone and calling it faithfulness.",
+  },
+  {
+    question: "What do I tell my church?",
+    answer:
+      "Less than your fear wants to confess, and more than your pride wants to show. Your elders or your board should hear the truth \u2014 not every tremor, but the real state of things \u2014 because leading people while hiding from them is a second job stacked on the first. A church that punishes a pastor for being human is telling you something you need to know. Most churches, told honestly and early, respond better than the fear predicted.",
+  },
+];
+
 export default function PastoralBurnout() {
   return (
     <Layout>
@@ -18,6 +42,7 @@ export default function PastoralBurnout() {
         title="Pastoral Burnout"
         description="Ministry was never supposed to feel like this. Resources for pastors carrying more than they were trained to hold."
         keywords="pastoral burnout, ministry exhaustion, pastor mental health, clergy burnout"
+        structuredData={[faqPageSchema(FAQ_ITEMS)]}
       />
 
       {/* Hero */}
@@ -69,6 +94,8 @@ export default function PastoralBurnout() {
           </Link>
         </div>
       </section>
+
+      <CrisisFaq items={FAQ_ITEMS} />
 
       {/* Real help (QW-6: the care standard requires a visible path) */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
