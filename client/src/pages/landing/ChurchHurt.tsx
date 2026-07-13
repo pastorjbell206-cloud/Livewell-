@@ -6,12 +6,12 @@ import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
   { title: "Religious Trauma Is Real", slug: "religious-trauma-is-real" },
-  { title: "Spiritual Abuse in the Church", slug: "spiritual-abuse-in-the-church" },
-  { title: "The Church and Mental Health", slug: "the-church-and-mental-health" },
-  { title: "The Wreckage of Purity Culture", slug: "the-wreckage-of-purity-culture" },
-  { title: "The Sexual Abuse Crisis in the Church", slug: "the-sexual-abuse-crisis-in-the-church" },
-  { title: "How to Find a Church That Won't Hurt You", slug: "how-to-find-a-church-that-wont-hurt-you" },
-  { title: "Reconstructing Faith After Deconstruction", slug: "reconstructing-faith-after-deconstruction" },
+  { title: "Spiritual Abuse in the Church", slug: "spiritual-abuse-how-good-theology-gets-weaponized" },
+  { title: "The Church and Mental Health", slug: "church-and-mental-health" },
+  { title: "The Wreckage of Purity Culture", slug: "purity-culture-and-its-wreckage" },
+  { title: "The Sexual Abuse Crisis in the Church", slug: "sexual-abuse-crisis-in-the-church" },
+  { title: "How to Find a Church That Won't Hurt You", slug: "finding-a-good-church" },
+  { title: "Reconstructing Faith After Deconstruction", slug: "reconstructing-faith" },
 ];
 
 const EXTERNAL_RESOURCES = [

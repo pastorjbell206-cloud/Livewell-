@@ -2,6 +2,9 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { useFavorites } from "@/hooks/useFavorites";
 import { copyToClipboard } from "@/lib/clipboard";
+import { readStoredJSON, isArrayOf } from "@/lib/storage";
+
+const isString = (x: unknown): x is string => typeof x === "string";
 import { Link } from "wouter";
 import { Trash2, Copy, Check, BookOpen, Heart } from "lucide-react";
 import { useState } from "react";
@@ -14,10 +17,15 @@ function formatDate(iso: string): string {
 export default function SavedItems() {
   const verses = useFavorites("livewell-saved-verses");
   const prayers = useFavorites("livewell-saved-prayers");
+  // The other two save stores on the site (string-id arrays kept by their own
+  // tools). Counted here so this page is honestly "everything you saved";
+  // their full views live in the tools that own them.
+  const savedQuotes = readStoredJSON("livewell-quotes-saved-v1", isArrayOf(isString), []);
+  const savedWisdom = readStoredJSON("livewell-wisdom-saved-v1", isArrayOf(isString), []);
   const [exportCopied, setExportCopied] = useState(false);
   const [exportFailed, setExportFailed] = useState(false);
 
-  const totalCount = verses.favorites.length + prayers.favorites.length;
+  const totalCount = verses.favorites.length + prayers.favorites.length + savedQuotes.length + savedWisdom.length;
 
   const handleExportAll = async () => {
     const lines: string[] = [];
@@ -50,7 +58,7 @@ export default function SavedItems() {
     <Layout>
       <SEOMeta
         title="Saved Items — LiveWell Tools"
-        description="Your saved verses and prayers from LiveWell tools."
+        description="Everything you saved across the LiveWell tools — verses, prayers, quotes, and wisdom entries — in one place."
       />
 
       <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "80px 32px 60px", textAlign: "center" }}>
@@ -205,6 +213,37 @@ export default function SavedItems() {
                     </p>
                   </div>
                 ))}
+              </div>
+            </div>
+          )}
+
+          {/* Saved elsewhere — the stores owned by other tools, linked to their home views */}
+          {(savedQuotes.length > 0 || savedWisdom.length > 0) && (
+            <div style={{ marginBottom: "48px" }}>
+              <h2 style={{ fontSize: "22px", fontWeight: 600, fontFamily: "var(--F)", color: "var(--charcoal)", marginBottom: "20px" }}>
+                Saved in your libraries
+              </h2>
+              <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                {savedQuotes.length > 0 && (
+                  <Link href="/tools/quotes" style={{ display: "block", padding: "20px 24px", background: "white", border: "1px solid var(--bone-muted)", borderRadius: "8px", borderLeft: "4px solid var(--mustard)", textDecoration: "none" }}>
+                    <span style={{ fontSize: "15px", fontFamily: "var(--U)", color: "var(--charcoal)", fontWeight: 600 }}>
+                      {savedQuotes.length} saved {savedQuotes.length === 1 ? "quote" : "quotes"}
+                    </span>
+                    <span style={{ display: "block", fontSize: "13px", fontFamily: "var(--U)", color: "var(--ink-muted)", marginTop: "4px" }}>
+                      Kept in the Quote Library — open it to read, copy, or unsave them →
+                    </span>
+                  </Link>
+                )}
+                {savedWisdom.length > 0 && (
+                  <Link href="/tools/wisdom-finder" style={{ display: "block", padding: "20px 24px", background: "white", border: "1px solid var(--bone-muted)", borderRadius: "8px", borderLeft: "4px solid var(--mustard)", textDecoration: "none" }}>
+                    <span style={{ fontSize: "15px", fontFamily: "var(--U)", color: "var(--charcoal)", fontWeight: 600 }}>
+                      {savedWisdom.length} saved wisdom {savedWisdom.length === 1 ? "entry" : "entries"}
+                    </span>
+                    <span style={{ display: "block", fontSize: "13px", fontFamily: "var(--U)", color: "var(--ink-muted)", marginTop: "4px" }}>
+                      Kept in Wisdom for All of Life — open it to revisit them →
+                    </span>
+                  </Link>
+                )}
               </div>
             </div>
           )}

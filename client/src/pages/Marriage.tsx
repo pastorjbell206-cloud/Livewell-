@@ -49,19 +49,19 @@ export default function Marriage() {
 
   const READING_PATHS = [
     {
-      title: "Marriage Covenant",
-      description: "What covenant means, what you promised, and how to keep vows when love feels impossible.",
-      articles: 5
+      title: "Marriage: Covenant & Roles",
+      description: "What covenant means, what you promised, and how two people lead and serve when love feels impossible.",
+      href: "/read/essays-marriage-covenant-roles"
     },
     {
-      title: "Communication & Conflict",
+      title: "Marriage: Communication & Conflict",
       description: "How to fight fair, have the conversations you've been avoiding, and repair after rupture.",
-      articles: 8
+      href: "/read/essays-marriage-communication-conflict"
     },
     {
-      title: "Marriage in Ministry",
-      description: "The unique pressures pastors' marriages face and how to protect your partnership.",
-      articles: 4
+      title: "Marriage: Crisis & Rebuilding",
+      description: "Affairs, addiction, divorce, and the long work of starting again when the marriage nearly ended.",
+      href: "/read/essays-marriage-crisis-repair"
     }
   ];
 
@@ -78,7 +78,7 @@ export default function Marriage() {
       <MinimalNav />
 
       {/* HERO SECTION */}
-      <section style={{ background: "var(--ink)", color: "#ffffff", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
+      <section style={{ background: "var(--ink)", color: "var(--charcoal-fg)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <h1 style={{ fontSize: "clamp(36px, 5vw, 56px)", fontWeight: "bold", lineHeight: "1.2", marginBottom: "24px", fontFamily: "var(--F)" }}>
             When Your Marriage Needs More Than Advice
@@ -92,6 +92,16 @@ export default function Marriage() {
             </button>
           </Link>
         </div>
+      </section>
+
+
+      {/* TEACHING — care/orientation before the link grid (depth sweep) */}
+      <section style={{ background: "var(--bone-warm)", padding: "72px 20px" }}>
+        <div style={{ maxWidth: "760px", margin: "0 auto" }}>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.8, color: "var(--ink)", maxWidth: "68ch", marginBottom: "22px" }}>A wedding is a party. A marriage is a promise kept on the days the party is over.</p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.8, color: "var(--ink)", maxWidth: "68ch", marginBottom: "22px" }}>Somewhere the culture taught us that love is a feeling you fall into and, when it cools, fall out of — and then acted surprised when the promises did not hold. Scripture calls it a covenant, an older and harder word: a bond you keep because you gave your word, until the keeping teaches you a love the feeling never could.</p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.8, color: "var(--ink)", maxWidth: "68ch", marginBottom: "0" }}>This is not advice for a better marriage. It is a different account of what a marriage is for.</p>
+          </div>
       </section>
 
       {/* FEATURED ARTICLES */}
@@ -136,17 +146,19 @@ export default function Marriage() {
           <SectionArt seed="marriage-paths" />
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
             {READING_PATHS.map((path, i) => (
-              <div key={i} style={{ background: "var(--card)", borderRadius: "8px", overflow: "hidden", border: "1px solid var(--bone-muted)", borderLeft: "3px solid var(--gold)", padding: "28px", cursor: "pointer" }}>
-                <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "12px", color: "var(--ink)" }}>
-                  {path.title}
-                </h3>
-                <p style={{ fontSize: "14px", lineHeight: "1.6", color: "var(--ink3)", marginBottom: "16px" }}>
-                  {path.description}
-                </p>
-                <div style={{ fontSize: "12px", fontWeight: "bold", color: "var(--gold)" }}>
-                  {path.articles} articles in this path
+              <Link key={i} href={path.href} style={{ textDecoration: "none" }}>
+                <div style={{ background: "var(--card)", borderRadius: "8px", overflow: "hidden", border: "1px solid var(--bone-muted)", borderLeft: "3px solid var(--gold)", padding: "28px", height: "100%", cursor: "pointer" }}>
+                  <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "12px", color: "var(--ink)" }}>
+                    {path.title}
+                  </h3>
+                  <p style={{ fontSize: "14px", lineHeight: "1.6", color: "var(--ink3)", marginBottom: "16px" }}>
+                    {path.description}
+                  </p>
+                  <div style={{ fontSize: "12px", fontWeight: "bold", color: "var(--gold)" }}>
+                    Read the book, free →
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -174,7 +186,7 @@ export default function Marriage() {
             Start with the Marriage Health Assessment. It takes 10 minutes and will show you exactly where your marriage is strongest and where repair work begins.
           </p>
           <Link href="/tools/marriage-assessment" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--ink)", color: "#ffffff", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
+            <button style={{ background: "var(--ink)", color: "var(--charcoal-fg)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
               Take the Assessment
             </button>
           </Link>

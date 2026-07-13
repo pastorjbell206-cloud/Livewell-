@@ -7,7 +7,7 @@ import { LandingSignup } from "@/components/LandingSignup";
 const TIER_1_ARTICLES = [
   { title: "The Rise and Fall of Christendom", slug: "the-rise-and-fall-of-christendom" },
   { title: "Constantine's Bargain", slug: "constantines-bargain" },
-  { title: "When the Church Married Empire", slug: "when-church-married-empire" },
+  { title: "When the Church Married Empire", slug: "when-the-church-married-empire" },
   { title: "The Great Schism", slug: "the-great-schism" },
   { title: "The Reformation and Its Consequences", slug: "the-reformation-and-its-consequences" },
   { title: "The Enlightenment and the Crisis of Authority", slug: "the-enlightenment-and-the-crisis-of-authority" },

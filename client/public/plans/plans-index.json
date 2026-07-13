@@ -1,0 +1,39 @@
+{
+  "plans": [
+    {
+      "slug": "new-believer",
+      "title": "Eight Weeks of Beginnings",
+      "blurb": "An eight week plan from James Bell for the brand new Christian. What just happened, how to read, how to pray, how to find your people, all in plain words with every old term defined."
+    },
+    {
+      "slug": "skeptic",
+      "title": "Eight Weeks of Reading Like an Adult",
+      "blurb": "An eight week reading plan from James Bell for the curious nonbeliever. The Bible read as literature and history, the hard objections on the table, and no tricks anywhere in it."
+    },
+    {
+      "slug": "deconstruction",
+      "title": "Eight Weeks of Taking Your Questions Seriously",
+      "blurb": "An eight week plan from James Bell for the person pulling an inherited faith apart. Careful examination instead of a quiet exit, with honest readings, no panic, and no ambush."
+    },
+    {
+      "slug": "grief",
+      "title": "Eight Weeks of Walking With Loss",
+      "blurb": "An eight week companion for grief from James Bell. Permission to mourn, lament as language, and a way to live forward without leaving them behind."
+    },
+    {
+      "slug": "anxiety",
+      "title": "Eight Weeks Toward a Quieter Mind",
+      "blurb": "An eight week guided plan for the anxious mind from James Bell. Small daily practices, honest readings, and prayer for the nights when fear will not lift."
+    },
+    {
+      "slug": "marriage",
+      "title": "Eight Weeks Toward Each Other",
+      "blurb": "An eight week guided plan for marriage from James Bell. One focus, one small daily practice, one reading, one tool, and one honest question each week."
+    },
+    {
+      "slug": "whole-life",
+      "title": "Eight Weeks Toward One Undivided Life",
+      "blurb": "An eight week plan from James Bell toward one undivided life. Prayer, rest, friendship, work, money, church, and justice gathered into a rule you can keep."
+    }
+  ]
+}

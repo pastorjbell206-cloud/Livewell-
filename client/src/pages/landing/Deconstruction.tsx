@@ -7,8 +7,8 @@ import { LandingSignup } from "@/components/LandingSignup";
 const ARTICLES = [
   { title: "Deconstruction Is Not Destruction", slug: "deconstruction-is-not-destruction" },
   { title: "The Rise of the Nones", slug: "the-rise-of-the-nones" },
-  { title: "The Exvangelical Movement", slug: "the-exvangelical-movement" },
-  { title: "Reconstructing Faith After Deconstruction", slug: "reconstructing-faith-after-deconstruction" },
+  { title: "The Exvangelical Movement", slug: "exvangelical-when-leaving-isnt-losing-faith" },
+  { title: "Reconstructing Faith After Deconstruction", slug: "reconstructing-faith" },
   { title: "The Spirituality of Doubt", slug: "the-spirituality-of-doubt" },
   { title: "The Problem with Certainty", slug: "the-problem-with-certainty" },
 ];
