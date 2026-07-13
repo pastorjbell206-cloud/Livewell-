@@ -40,6 +40,7 @@ jobs:
           node scripts/validate-content-integrity.mjs
           node scripts/validate-skeptic-track.mjs
           node scripts/validate-books.mjs
+          node scripts/validate-answers.mjs
 
       - name: Test
         run: pnpm test
