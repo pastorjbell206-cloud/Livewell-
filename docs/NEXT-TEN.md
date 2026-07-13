@@ -19,12 +19,17 @@ Status legend: ☐ not started · ◐ in progress · ☑ shipped · ⛔ owner-bl
   every stub URL worth a real essay now carries one, every citation verified,
   each 2,100–2,650 words through the audit rubric.
 
-### 2. Close the 139 citation flags ☐
-A verification sweep over the flagged essays: normalize Scripture to ESV with
-references traveling, name or cut every vague "study/survey," verify dates and
-attributions, remove anything unverifiable (never invent). Produces a fix
-ledger; the mechanical normalizations get applied, the judgment calls surfaced
-to the founder.
+### 2. Close the citation flags ◐
+- ☑ Tier-1 lead flags closed (#391): Peterson's 1962, the Elijah quotes, John 6:67.
+- ☑ A reusable scanner (`pnpm scan:citations` → docs/audit-corpus/CITATION-SCAN.md)
+  flags the audit's top risk patterns — unsourced empirical claims and bare
+  statistics — corpus-wide. It cut the noisy "139 flags" to a precise **10
+  essays**, most already sound (Pew, the military-lending cap, Carson are all
+  real and sourced). The genuine open item is the pastor-quitting statistic in
+  the-pastor-nobody-checks-on: source it from a primary study or soften to a
+  non-numeric claim (owner/primary-source call — never invent a citation).
+- ☐ A deep per-essay ESV-wording verification still wants live Bible-text
+  access (blocked at build); best run when that is available.
 
 ## Tier 2 — the growth engine (disciple, and see it working)
 
