@@ -44,6 +44,10 @@ export default function AdminDashboard() {
   };
   const [signups, setSignups] = useState<Signups | null>(null);
   const [signupsError, setSignupsError] = useState(false);
+  type VitalStat = { p75: number | null; good: number; needsImprovement: number; poor: number; count: number };
+  type Vitals = { metrics: Record<"LCP" | "INP" | "CLS", VitalStat> };
+  const [vitals, setVitals] = useState<Vitals | null>(null);
+  const [vitalsError, setVitalsError] = useState(false);
   const money = (cents: number, cur = "usd") =>
     new Intl.NumberFormat("en-US", { style: "currency", currency: (cur || "usd").toUpperCase() }).format((cents || 0) / 100);
   useEffect(() => {
@@ -78,6 +82,10 @@ export default function AdminDashboard() {
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
       .then((d) => active && d?.ok && setSignups(d))
       .catch(() => active && setSignupsError(true));
+    fetch("/api/admin/web-vitals", { credentials: "include" })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((d) => active && d?.ok && setVitals(d))
+      .catch(() => active && setVitalsError(true));
     return () => { active = false; };
   }, []);
 
@@ -343,6 +351,47 @@ export default function AdminDashboard() {
                 </div>
               </div>
             </>
+          )}
+        </div>
+
+        {/* Core Web Vitals — real-visitor performance from /api/admin/web-vitals
+            (the web_vitals table, filled by the site-wide WebVitalsBeacon). */}
+        <div className="mb-12">
+          <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "var(--charcoal)" }}>Core Web Vitals</h2>
+          <p className="font-body text-sm mb-4" style={{ color: "var(--adm-gray)" }}>
+            How fast the site feels to real visitors — Google&rsquo;s field metrics, the p75 over the last 30 days. Green is Google&rsquo;s &ldquo;good&rdquo; bar.
+          </p>
+          {vitalsError && (
+            <p className="font-body text-sm" style={{ color: "var(--alert)" }}>
+              Couldn&rsquo;t load Web Vitals (needs the production API and an admin session).
+            </p>
+          )}
+          {!vitals && !vitalsError && (
+            <p className="font-body text-sm" style={{ color: "var(--adm-gray)" }}><Loader2 size={16} className="animate-spin inline" /> Loading…</p>
+          )}
+          {vitals && (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {([
+                { key: "LCP" as const, blurb: "loading", good: 2500, poor: 4000 },
+                { key: "INP" as const, blurb: "responsiveness", good: 200, poor: 500 },
+                { key: "CLS" as const, blurb: "visual stability", good: 0.1, poor: 0.25 },
+              ]).map((cfg) => {
+                const s = vitals.metrics[cfg.key];
+                const v = s?.p75 ?? null;
+                const color = v == null ? "var(--adm-gray)" : v <= cfg.good ? "var(--ok)" : v <= cfg.poor ? "var(--strain)" : "var(--alert)";
+                const shown = v == null ? "—" : cfg.key === "CLS" ? v.toFixed(2) : `${Math.round(v)} ms`;
+                const pctGood = s && s.count ? Math.round((s.good / s.count) * 100) : null;
+                return (
+                  <div key={cfg.key} className="flex flex-col p-6 rounded-lg" style={{ backgroundColor: "var(--card)", borderTop: `5px solid ${color}`, boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
+                    <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "var(--adm-gray)" }}>{cfg.key} · {cfg.blurb}</div>
+                    <div className="font-display font-bold" style={{ color, fontSize: "2.4rem", lineHeight: 1 }}>{shown}</div>
+                    <div className="font-ui text-xs mt-2" style={{ color: "var(--adm-gray-soft)" }}>
+                      {s && s.count ? `p75 · ${pctGood}% of visits good · ${s.count.toLocaleString()} samples` : "No data yet — counting begins when this ships"}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           )}
         </div>
 
