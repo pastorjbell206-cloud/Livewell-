@@ -1,4 +1,5 @@
 import { Component, ReactNode } from "react";
+import { reportClientError } from "@/lib/report-error";
 
 interface Props {
   children: ReactNode;
@@ -20,8 +21,10 @@ class ErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error) {
-    // The reader gets a calm line; the console keeps the real error.
+    // The reader gets a calm line; the console keeps the real error; and the
+    // owner gets a record in the admin Errors panel so a broken page is visible.
     console.error(error);
+    reportClientError({ message: error?.message || "React render error", stack: error?.stack ?? null, kind: "react" });
   }
 
   render() {

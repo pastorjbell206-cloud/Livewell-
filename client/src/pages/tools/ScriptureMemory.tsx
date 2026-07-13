@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { Link } from "wouter";
 import { useState, useEffect, useCallback } from "react";
 import { BookOpen, Check, ChevronRight, Eye, EyeOff } from "lucide-react";
 import { readStoredJSON, writeStoredJSON, isArrayOf } from "@/lib/storage";
@@ -482,7 +483,7 @@ export default function ScriptureMemory() {
                     <BookOpen
                       size={20}
                       style={{
-                        color: "var(--mustard)",
+                        color: "var(--mustard-text)",
                         marginBottom: "12px",
                         opacity: 0.7,
                       }}
@@ -636,16 +637,18 @@ export default function ScriptureMemory() {
                           gap: "12px",
                         }}
                       >
-                        <span
+                        <Link
+                          href={`/theology/passage?ref=${encodeURIComponent(verse.ref)}`}
                           style={{
                             fontSize: "15px",
                             fontWeight: 700,
-                            color: "var(--mustard)",
+                            color: "var(--mustard-text)",
                             fontFamily: "var(--U)",
+                            textDecoration: "none",
                           }}
                         >
-                          {verse.ref}
-                        </span>
+                          {verse.ref} →
+                        </Link>
 
                         {/* Mark as memorized */}
                         <button
@@ -732,7 +735,7 @@ export default function ScriptureMemory() {
                             margin: 0,
                           }}
                         >
-                          "{verse.text}"
+                          {verse.text}
                         </p>
                       )}
 
@@ -797,7 +800,7 @@ export default function ScriptureMemory() {
                                   borderRadius: "6px",
                                 }}
                               >
-                                "{verse.text}"
+                                {verse.text}
                               </p>
                             )}
                           </div>
@@ -817,7 +820,7 @@ export default function ScriptureMemory() {
                               margin: 0,
                             }}
                           >
-                            "{toFillBlanks(verse.text)}"
+                            {toFillBlanks(verse.text)}
                           </p>
                           <div style={{ marginTop: "16px" }}>
                             <button
@@ -865,7 +868,7 @@ export default function ScriptureMemory() {
                                   borderRadius: "6px",
                                 }}
                               >
-                                "{verse.text}"
+                                {verse.text}
                               </p>
                             )}
                           </div>
@@ -973,7 +976,7 @@ export default function ScriptureMemory() {
                                     fontWeight: 700,
                                     fontFamily: "var(--U)",
                                     color: recallResult
-                                      ? "var(--mustard)"
+                                      ? "var(--mustard-text)"
                                       : "var(--alert)",
                                   }}
                                 >
@@ -999,7 +1002,7 @@ export default function ScriptureMemory() {
                                 borderRadius: "6px",
                               }}
                             >
-                              "{verse.text}"
+                              {verse.text}
                             </p>
                           )}
                         </div>

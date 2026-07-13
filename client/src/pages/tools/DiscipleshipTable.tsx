@@ -86,7 +86,9 @@ const AUDIENCES: Audience[] = [
 
 type Cadence = "weekly" | "fortnightly";
 
-const eyebrow = { fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--mustard)" } as const;
+// Default color is the AA-passing mustard-text (for eyebrows on light
+// sections). Dark-hero usages override back to bright var(--mustard).
+const eyebrow = { fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--mustard-text)" } as const;
 
 const THREE_QUESTIONS = [
   "What does this show us about God, and what he is like.",
@@ -257,7 +259,7 @@ export default function DiscipleshipTable() {
               {/* Invitation */}
               <div style={{ marginBottom: "var(--s-4)" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
-                  <Mail size={16} style={{ color: "var(--mustard)" }} />
+                  <Mail size={16} style={{ color: "var(--mustard-text)" }} />
                   <span style={{ ...eyebrow, color: "var(--ink)" }}>The invitation</span>
                 </div>
                 <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", background: "#FFFFFF", borderLeft: "3px solid var(--mustard)", padding: "var(--s-3)", fontStyle: "italic" }}>
@@ -277,7 +279,7 @@ export default function DiscipleshipTable() {
                 <div style={{ display: "grid", gap: "var(--s-2)" }}>
                   {FLOW.map((f) => (
                     <div key={f.label} style={{ display: "flex", gap: "12px", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", padding: "var(--s-3)" }}>
-                      <f.icon size={18} style={{ color: "var(--mustard)", flexShrink: 0, marginTop: "2px" }} />
+                      <f.icon size={18} style={{ color: "var(--mustard-text)", flexShrink: 0, marginTop: "2px" }} />
                       <div>
                         <div style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", marginBottom: "4px" }}>{f.label}</div>
                         <div style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{f.text}</div>
@@ -311,7 +313,7 @@ export default function DiscipleshipTable() {
               <div style={{ background: "var(--charcoal)", padding: "var(--s-4)", color: "var(--bone)" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
                   <Sprout size={16} style={{ color: "var(--mustard)" }} />
-                  <span style={{ ...eyebrow }}>How to multiply</span>
+                  <span style={{ ...eyebrow, color: "var(--mustard)" }}>How to multiply</span>
                 </div>
                 <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "rgba(245,240,230,0.85)" }}>
                   From the beginning, tell your people that one day they will do this for someone else. When someone is ready, help them start their own table, with their own people, on their own street. The goal is not a bigger table but more tables, each one reproducing.

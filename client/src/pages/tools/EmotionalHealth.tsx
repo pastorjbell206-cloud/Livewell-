@@ -482,7 +482,7 @@ export default function EmotionalHealth() {
                         fontSize: "13px",
                         fontWeight: 700,
                         letterSpacing: "0.15em",
-                        color: "var(--mustard)",
+                        color: "var(--mustard-text)",
                         fontFamily: "var(--U)",
                         marginBottom: "24px",
                       }}
@@ -666,7 +666,7 @@ export default function EmotionalHealth() {
                     fontSize: "11px",
                     fontWeight: 700,
                     letterSpacing: "0.18em",
-                    color: "var(--mustard)",
+                    color: "var(--mustard-text)",
                     fontFamily: "var(--U)",
                     marginBottom: "12px",
                   }}
@@ -800,7 +800,7 @@ export default function EmotionalHealth() {
                     fontSize: "11px",
                     fontWeight: 700,
                     letterSpacing: "0.18em",
-                    color: "var(--mustard)",
+                    color: "var(--mustard-text)",
                     fontFamily: "var(--U)",
                     marginBottom: "12px",
                   }}
@@ -875,7 +875,7 @@ export default function EmotionalHealth() {
                           fontSize: "13px",
                           fontWeight: 700,
                           letterSpacing: "0.15em",
-                          color: "var(--mustard)",
+                          color: "var(--mustard-text)",
                           fontFamily: "var(--U)",
                           margin: 0,
                         }}
@@ -975,18 +975,22 @@ export default function EmotionalHealth() {
                           margin: "0 0 8px",
                         }}
                       >
-                        "{cat.scripture.text}"
+                        {cat.scripture.text}
                       </p>
-                      <span
+                      <Link
+                        href={`/theology/passage?ref=${encodeURIComponent(cat.scripture.ref)}`}
                         style={{
                           fontSize: "13px",
                           fontWeight: 600,
                           fontFamily: "var(--U)",
-                          color: "var(--ink-muted)",
+                          color: "var(--mustard-text)",
+                          textDecoration: "none",
+                          borderBottom: "1px solid var(--mustard)",
+                          paddingBottom: "1px",
                         }}
                       >
-                        {cat.scripture.ref}
-                      </span>
+                        {cat.scripture.ref} — read the full passage
+                      </Link>
                     </div>
 
                     {/* Practical steps */}
@@ -1017,7 +1021,7 @@ export default function EmotionalHealth() {
                               fontFamily: "var(--F)",
                               fontSize: "22px",
                               fontWeight: 400,
-                              color: "var(--mustard)",
+                              color: "var(--mustard-text)",
                               lineHeight: 1.2,
                               flexShrink: 0,
                               width: "24px",
@@ -1067,7 +1071,7 @@ export default function EmotionalHealth() {
                             fontSize: "10px",
                             fontWeight: 700,
                             letterSpacing: "0.15em",
-                            color: "var(--mustard)",
+                            color: "var(--mustard-text)",
                             fontFamily: "var(--U)",
                             display: "block",
                             marginBottom: "4px",

@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import CrisisFaq, { faqPageSchema } from "@/components/CrisisFaq";
 import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
@@ -11,6 +12,29 @@ const ARTICLES = [
   { title: "Constantine's Bargain", slug: "constantines-bargain" },
 ];
 
+const FAQ_ITEMS = [
+  {
+    question: "Am I losing my faith?",
+    answer:
+      "Maybe. Or maybe what is coming down is scaffolding \u2014 the cultural additions, the easy answers, the version of God you were handed at twelve \u2014 and the falling feels like everything is falling. Deconstruction and destruction are not the same word. You will not know which this is for a while, and you do not have to know today. What you believe at the bottom of the question is allowed to take longer than the people around you find comfortable.",
+  },
+  {
+    question: "Can I ask these questions and still belong?",
+    answer:
+      "Here, yes \u2014 that is most of the reason this site exists. And in the wider church, longer than you have been told: Thomas asked for evidence and was given wounds to touch, not a lecture. Find the people who do not flinch when you say the true thing out loud; they exist in more congregations than the loud voices suggest. A faith that cannot be questioned was never going to hold you anyway.",
+  },
+  {
+    question: "What if I stop believing?",
+    answer:
+      "Some people do walk away, and pretending otherwise would be the kind of dishonesty that put you in this room. But notice what you are doing right now: reading, asking, refusing the cheap version of both belief and unbelief. Keep doing that with both hands open \u2014 read the strongest skeptics and the strongest believers, never the strawmen of either. You are not required to decide under a deadline. The truth is not going anywhere.",
+  },
+  {
+    question: "Where do I start rebuilding?",
+    answer:
+      "Smaller and older. Not the culture war, not the personalities \u2014 the Gospels read slowly, the creed the church has confessed for seventeen centuries, one community where honesty is safe. This site keeps a road for exactly this walk: the skeptic track, and the reading paths, built to be taken in order. Rebuild on what has carried weight for two thousand years, not on whatever collapsed last year.",
+  },
+];
+
 export default function FaithCrisis() {
   return (
     <Layout>
@@ -18,6 +42,7 @@ export default function FaithCrisis() {
         title="Faith Crisis"
         description="When the faith you were given stops holding weight. Essays for the honest, the doubting, and the ones who refuse to stop asking."
         keywords="faith crisis, doubt, deconstruction, theology, questioning faith"
+        structuredData={[faqPageSchema(FAQ_ITEMS)]}
       />
 
       {/* Hero */}
@@ -31,7 +56,7 @@ export default function FaithCrisis() {
       {/* Stats */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>YOU ARE NOT ALONE</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>YOU ARE NOT ALONE</p>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink)", lineHeight: 1.7, maxWidth: "68ch" }}>
             Doubt is not the opposite of faith. It is the immune system of a faith that refuses to be shallow. These essays do not offer easy resolution. They offer company for the long road.
           </p>
@@ -41,14 +66,14 @@ export default function FaithCrisis() {
       {/* Featured Articles */}
       <section style={{ background: "var(--bone-warm)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>START READING</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>START READING</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "32px" }}>Essays for the questions you were told not to ask</h2>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {ARTICLES.map((a) => (
               <Link key={a.slug} href={`/writing/${a.slug}`} style={{ textDecoration: "none" }}>
                 <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard)" }}>Read</span>
+                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
                 </div>
               </Link>
             ))}
@@ -59,7 +84,7 @@ export default function FaithCrisis() {
       {/* Book */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>RECOMMENDED READING</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>RECOMMENDED READING</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>The Monster in the Mirror</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
             A book about what you find when you stop running from your own reflection. For anyone whose faith has become a mirror they are afraid to look into.
@@ -70,10 +95,12 @@ export default function FaithCrisis() {
         </div>
       </section>
 
+      <CrisisFaq items={FAQ_ITEMS} />
+
       {/* Real help (QW-6: the care standard requires a visible path) */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>IF YOU NEED MORE THAN AN ESSAY</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>IF YOU NEED MORE THAN AN ESSAY</p>
           <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "68ch" }}>Doubt is not an emergency. But it rarely travels alone — and if what came with it is despair, or a darkness you cannot think your way out of, that part deserves a real person, not just a reading list. These are external organizations we are not affiliated with, whose work we trust.</p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <a href="tel:988" style={{ textDecoration: "none" }}>
@@ -104,7 +131,7 @@ export default function FaithCrisis() {
       {/* Next Step */}
       <section style={{ background: "var(--bone-warm)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>NEXT STEP</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>NEXT STEP</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>Find out where your questions actually sit</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
             The Theology Quiz is not a test you can fail. It maps where your foundations are solid and where the gaps are, and hands you the reading that meets you there.

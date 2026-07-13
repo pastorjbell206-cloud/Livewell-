@@ -118,14 +118,14 @@ export default function ChurchHistory() {
       {/* Timeline */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>THE ARC</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>THE ARC</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "40px" }}>Two thousand years in eight turning points</h2>
           <div style={{ position: "relative", paddingLeft: "32px" }}>
             <div style={{ position: "absolute", left: "7px", top: "8px", bottom: "8px", width: "2px", background: "var(--bone-muted)" }} />
             {TIMELINE_EVENTS.map((event, i) => (
               <div key={i} style={{ position: "relative", marginBottom: i < TIMELINE_EVENTS.length - 1 ? "32px" : "0" }}>
                 <div style={{ position: "absolute", left: "-32px", top: "6px", width: "16px", height: "16px", borderRadius: "50%", background: i === TIMELINE_EVENTS.length - 1 ? "var(--mustard)" : "var(--bone-muted)", border: "3px solid var(--bone)" }} />
-                <p style={{ fontFamily: "var(--U)", fontSize: "12px", letterSpacing: "0.1em", color: "var(--mustard)", marginBottom: "4px", fontWeight: 500 }}>{event.year}</p>
+                <p style={{ fontFamily: "var(--U)", fontSize: "12px", letterSpacing: "0.1em", color: "var(--mustard-text)", marginBottom: "4px", fontWeight: 500 }}>{event.year}</p>
                 <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)", marginBottom: "4px" }}>{event.label}</p>
                 <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6 }}>{event.desc}</p>
               </div>
@@ -137,7 +137,7 @@ export default function ChurchHistory() {
       {/* Tier 1 Articles */}
       <section style={{ background: "var(--bone-warm)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>THE MAIN NARRATIVE</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>THE MAIN NARRATIVE</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>Ten essays that tell the whole story</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px" }}>Start here. These ten essays trace the full arc of Christianity from its origin to the present crisis. Read in order or follow your questions.</p>
           <div style={{ display: "flex", flexDirection: "column" }}>
@@ -148,7 +148,7 @@ export default function ChurchHistory() {
                     <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted, #5A5448)", minWidth: "20px" }}>{i + 1}</span>
                     <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
                   </div>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard)" }}>Read</span>
+                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
                 </div>
               </Link>
             ))}
@@ -159,7 +159,7 @@ export default function ChurchHistory() {
       {/* Tier 2 Articles */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>THE TRADITIONS</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>THE TRADITIONS</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>Seven essays on the branches that grew from the same root</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px" }}>Christianity is not one thing. It is many traditions, each carrying real wisdom and real failures. These essays take each one seriously on its own terms.</p>
           <div style={{ display: "flex", flexDirection: "column" }}>
@@ -167,7 +167,7 @@ export default function ChurchHistory() {
               <Link key={a.slug} href={`/writing/${a.slug}`} style={{ textDecoration: "none" }}>
                 <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard)" }}>Read</span>
+                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
                 </div>
               </Link>
             ))}
@@ -178,7 +178,7 @@ export default function ChurchHistory() {
       {/* FAQ */}
       <section style={{ background: "var(--bone-warm)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>QUESTIONS</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>QUESTIONS</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "32px" }}>What people ask about church history</h2>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {FAQ_ITEMS.map((item, i) => (
@@ -214,7 +214,7 @@ export default function ChurchHistory() {
       {/* Next Step */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>KEEP READING</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>KEEP READING</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>The full post-Christian series</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
             Church history is the foundation. The full series covers sixty essays across seven tiers -- from the collapse of Christendom to the questions that will define the next century of faith.

@@ -90,7 +90,7 @@ export default function WhatIsTheDifferenceBetweenCatholicAndProtestant() {
 
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>8 QUESTIONS ANSWERED</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>8 QUESTIONS ANSWERED</p>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {FAQ_ITEMS.map((item, i) => (
               <div key={i} style={{ borderBottom: "1px solid rgba(0,0,0,0.08)" }}>
@@ -126,7 +126,7 @@ export default function WhatIsTheDifferenceBetweenCatholicAndProtestant() {
 
       <section style={{ background: "var(--bone-warm)", padding: "64px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>RELATED QUESTIONS</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>RELATED QUESTIONS</p>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {[
               { label: "What denomination should I join?", href: "/faq/what-denomination-should-i-join" },
@@ -136,7 +136,7 @@ export default function WhatIsTheDifferenceBetweenCatholicAndProtestant() {
               <Link key={link.href} href={link.href} style={{ textDecoration: "none" }}>
                 <div style={{ padding: "16px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 400, color: "var(--ink)" }}>{link.label}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard)" }}>Read</span>
+                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
                 </div>
               </Link>
             ))}

@@ -167,7 +167,7 @@ export default function PostChristian() {
       {/* Reading Paths */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>WHERE TO START</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>WHERE TO START</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "32px" }}>Four paths into sixty essays</h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "16px" }}>
             {READING_PATHS.map((p) => (
@@ -175,7 +175,7 @@ export default function PostChristian() {
                 <div style={{ background: "var(--card)", padding: "24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
                   <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)", marginBottom: "8px" }}>{p.label}</p>
                   <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6, marginBottom: "12px" }}>{p.desc}</p>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard)" }}>Start here</span>
+                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Start here</span>
                 </div>
               </Link>
             ))}
@@ -187,13 +187,13 @@ export default function PostChristian() {
       {ALL_TIERS.map((tier, tierIndex) => (
         <section key={tierIndex} style={{ background: tierIndex % 2 === 0 ? "var(--bone-warm)" : "var(--bone)", padding: "80px 24px" }}>
           <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-            <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "16px" }}>{tier.label.toUpperCase()}</p>
+            <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "16px" }}>{tier.label.toUpperCase()}</p>
             <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "8px" }}>{tier.label.split(": ")[1]}</h2>
             <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "24px" }}>{tier.desc}</p>
 
             <button
               onClick={() => setExpandedTier(expandedTier === tierIndex ? null : tierIndex)}
-              style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard)", background: "none", border: "none", cursor: "pointer", padding: "0", marginBottom: expandedTier === tierIndex ? "16px" : "0" }}
+              style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)", background: "none", border: "none", cursor: "pointer", padding: "0", marginBottom: expandedTier === tierIndex ? "16px" : "0" }}
               aria-expanded={expandedTier === tierIndex}
             >
               {expandedTier === tierIndex ? "Collapse" : `Show ${tier.articles.length} essays`}
@@ -205,7 +205,7 @@ export default function PostChristian() {
                   <Link key={a.slug} href={`/writing/${a.slug}`} style={{ textDecoration: "none" }}>
                     <div style={{ padding: "16px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                       <span style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
-                      <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard)" }}>Read</span>
+                      <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
                     </div>
                   </Link>
                 ))}
@@ -232,7 +232,7 @@ export default function PostChristian() {
       {/* Newsletter Signup */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>STAY WITH THE SERIES</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>STAY WITH THE SERIES</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>Get new essays as they publish</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", marginBottom: "32px", lineHeight: 1.7 }}>One essay a week from the post-Christian series. No spam. No guilt. Theology that takes both faith and doubt seriously.</p>
           <LandingSignup source="landing-post-christian" />
@@ -242,7 +242,7 @@ export default function PostChristian() {
       {/* Book CTA */}
       <section style={{ background: "var(--bone-warm)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>FROM THE AUTHOR</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>FROM THE AUTHOR</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>The Deconstruction of Faith</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
             The book-length treatment of the ideas in this series. For anyone who wants to go deeper than an essay can take you.

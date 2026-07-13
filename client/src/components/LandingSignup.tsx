@@ -7,10 +7,14 @@
  */
 import { useState } from "react";
 import { trpc } from "@/lib/trpc";
+import { trackNewsletterSignup } from "@/lib/telemetry";
 
 export function LandingSignup({ source }: { source: string }) {
   const [email, setEmail] = useState("");
-  const subscribe = trpc.subscribers.subscribe.useMutation();
+  // Count the conversion when the backend accepts it, not on submit.
+  const subscribe = trpc.subscribers.subscribe.useMutation({
+    onSuccess: (_data, variables) => trackNewsletterSignup(variables.source, variables.audienceType),
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,13 +31,6 @@ export function LandingSignup({ source }: { source: string }) {
       /* private mode — attribution stays page-only */
     }
     subscribe.mutate({ email, source, audienceType });
-    if (typeof window !== "undefined") {
-      try {
-        window.dispatchEvent(new CustomEvent("newsletter_signup", { detail: { source } }));
-      } catch {
-        /* attribution is best-effort */
-      }
-    }
   };
 
   if (subscribe.isSuccess) {

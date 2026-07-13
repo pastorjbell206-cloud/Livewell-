@@ -119,7 +119,7 @@ export default function TopicPathway() {
               <div key={i} style={{ marginBottom: i === data.movements.length - 1 ? 0 : "var(--s-6)" }}>
                 {/* Movement header — a numbered step */}
                 <div style={{ display: "flex", gap: "16px", alignItems: "baseline", marginBottom: "6px" }}>
-                  <span aria-hidden style={{ fontFamily: "var(--F)", fontSize: "40px", fontWeight: 400, color: "var(--mustard)", lineHeight: 1, flexShrink: 0 }}>{i + 1}</span>
+                  <span aria-hidden style={{ fontFamily: "var(--F)", fontSize: "40px", fontWeight: 400, color: "var(--mustard-text)", lineHeight: 1, flexShrink: 0 }}>{i + 1}</span>
                   <div>
                     <div style={{ ...eyebrow, marginBottom: "6px" }}>{KIND_LABEL[m.kind]}</div>
                     <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.2vw, 32px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", lineHeight: 1.12 }}>{m.heading}</h2>

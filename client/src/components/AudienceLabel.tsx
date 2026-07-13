@@ -42,7 +42,7 @@ export function AudienceLabel({
       {readingTimeMinutes && (
         <>
           <span>{readingTimeMinutes} min read</span>
-          <span aria-hidden style={{ color: "var(--mustard)" }}>·</span>
+          <span aria-hidden style={{ color: "var(--mustard-text)" }}>·</span>
         </>
       )}
       <span>{audienceText}</span>

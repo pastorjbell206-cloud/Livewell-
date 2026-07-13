@@ -1,6 +1,8 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import PageTracker from "@/components/PageTracker";
+import WebVitalsBeacon from "@/components/WebVitalsBeacon";
+import ClientErrorReporter from "@/components/ClientErrorReporter";
 import NotFound from "@/pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { Route, Router as WouterRouter, Switch, useLocation } from "wouter";
@@ -113,6 +115,14 @@ const EmailSignup = lazy(() => import("./pages/EmailSignup"));
 const Pillars = lazy(() => import("./pages/Pillars"));
 const Explore = lazy(() => import("./pages/Explore"));
 const LivingWell = lazy(() => import("./pages/LivingWell"));
+const SiteMapPage = lazy(() => import("./pages/Map"));
+const TheologyExplorer = lazy(() => import("./pages/TheologyExplorer"));
+const WhichLens = lazy(() => import("./pages/tools/WhichLens"));
+const CaptureByTheRight = lazy(() => import("./pages/pillars/CaptureByTheRight"));
+const CaptureByTheLeft = lazy(() => import("./pages/pillars/CaptureByTheLeft"));
+const ReadingScripturePastOurPolitics = lazy(() => import("./pages/pillars/ReadingScripturePastOurPolitics"));
+const AfterChristendomPillar = lazy(() => import("./pages/pillars/AfterChristendomPillar"));
+const ThePastoralAngle = lazy(() => import("./pages/pillars/ThePastoralAngle"));
 const ForPastors = lazy(() => import("./pages/ForPastors"));
 const ForLeaders = lazy(() => import("./pages/ForLeaders"));
 const Membership = lazy(() => import("./pages/Membership"));
@@ -464,6 +474,13 @@ function Router() {
         <Route path="/for-families" component={ForFamiliesRedirect} />
         <Route path="/pillars" component={Pillars} />
         <Route path="/living-well" component={LivingWell} />
+        <Route path="/map" component={SiteMapPage} />
+        <Route path="/theology/explorer" component={TheologyExplorer} />
+        <Route path="/capture-by-the-right" component={CaptureByTheRight} />
+        <Route path="/capture-by-the-left" component={CaptureByTheLeft} />
+        <Route path="/reading-scripture-past-our-politics" component={ReadingScripturePastOurPolitics} />
+        <Route path="/after-christendom" component={AfterChristendomPillar} />
+        <Route path="/the-pastoral-angle" component={ThePastoralAngle} />
         <Route path="/for-pastors" component={ForPastors} />
         <Route path="/for-leaders" component={ForLeaders} />
         <Route path="/membership" component={Membership} />
@@ -566,6 +583,7 @@ function Router() {
         <Route path="/books-store" component={BooksStore} />
         <Route path="/search" component={SearchPage} />
         <Route path="/tools/theology-quiz" component={TheologyQuiz} />
+        <Route path="/tools/which-lens" component={WhichLens} />
         {/* Legacy alias; vercel.json 301s /quiz to /tools/theology-quiz */}
         <Route path="/quiz" component={TheologyQuiz} />
         <Route path="/skeptic-track" component={SkepticTrack} />
@@ -694,6 +712,8 @@ function App() {
             <ToastContainer />
             <WouterRouter hook={useTransitionLocation}>
               <PageTracker />
+              <WebVitalsBeacon />
+              <ClientErrorReporter />
               <Router />
             </WouterRouter>
           </TooltipProvider>

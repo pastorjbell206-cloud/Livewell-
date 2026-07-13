@@ -249,6 +249,14 @@ const STATIC_PAGES = [
   { url: "/start-here", priority: "0.85", changefreq: "monthly" },
   { url: "/read", priority: "0.8", changefreq: "monthly" },
   { url: "/pathways", priority: "0.75", changefreq: "monthly" },
+  { url: "/map", priority: "0.8", changefreq: "monthly" },
+  { url: "/capture-by-the-right", priority: "0.8", changefreq: "monthly" },
+  { url: "/capture-by-the-left", priority: "0.8", changefreq: "monthly" },
+  { url: "/reading-scripture-past-our-politics", priority: "0.8", changefreq: "monthly" },
+  { url: "/after-christendom", priority: "0.8", changefreq: "monthly" },
+  { url: "/the-pastoral-angle", priority: "0.8", changefreq: "monthly" },
+  { url: "/theology/explorer", priority: "0.8", changefreq: "monthly" },
+  { url: "/tools/which-lens", priority: "0.8", changefreq: "monthly" },
   { url: "/explore", priority: "0.75", changefreq: "monthly" },
   { url: "/pillars", priority: "0.8", changefreq: "monthly" },
   { url: "/exile", priority: "0.7", changefreq: "monthly" },
@@ -292,12 +300,23 @@ function manifestPages() {
     { file: "client/public/table/studies-index.json", key: "studies", prefix: "/table/" },
     { file: "client/public/howtos/index.json", key: "articles", prefix: "/how-tos/" },
     { file: "client/public/books/index.json", key: "books", prefix: "/read/" },
+    // The contested-doctrine library (/theology/doctrine/:slug), manifest
+    // from scripts/build-theology-index.mjs.
+    { file: "client/public/theology/index.json", key: "docs", prefix: "/theology/doctrine/" },
+    // Sermon series for all 66 books of the Bible (/leadership/bible-sermons/:id),
+    // and the Prophetic Justice / Disruption per-topic pages
+    // (/justice/topic/:slug, /disruption/topic/:slug). The sermons manifest keys
+    // by `id`, so map it with slugField.
+    { file: "client/public/leadership/whole-bible-sermons.json", key: "books", slugField: "id", prefix: "/leadership/bible-sermons/" },
+    { file: "client/public/justice/topics-index.json", key: "topics", prefix: "/justice/topic/" },
+    { file: "client/public/disruption/topics-index.json", key: "topics", prefix: "/disruption/topic/" },
   ];
   for (const s of sources) {
     try {
       const data = JSON.parse(fs.readFileSync(s.file, "utf8"));
       for (const entry of data[s.key] || []) {
-        if (entry.slug) pages.push({ url: `${s.prefix}${entry.slug}`, priority: "0.75", changefreq: "monthly" });
+        const slug = entry.slug || (s.slugField ? entry[s.slugField] : undefined);
+        if (slug) pages.push({ url: `${s.prefix}${slug}`, priority: "0.75", changefreq: "monthly" });
       }
     } catch (err) {
       console.warn(`[sitemap] could not read ${s.file}: ${err.message}`);

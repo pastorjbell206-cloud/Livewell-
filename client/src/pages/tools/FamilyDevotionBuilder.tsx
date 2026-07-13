@@ -1258,7 +1258,7 @@ export default function FamilyDevotionBuilder() {
               {/* READ */}
               <div style={{ marginBottom: "28px" }}>
                 <div style={{ ...SECTION_LABEL, display: "flex", alignItems: "center", gap: "8px" }}>
-                  <BookOpen size={14} aria-hidden style={{ color: "var(--mustard)" }} /> Read
+                  <BookOpen size={14} aria-hidden style={{ color: "var(--mustard-text)" }} /> Read
                 </div>
                 <p style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)", margin: "0 0 6px" }}>{themeData.passage}</p>
                 <p style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.6, color: "var(--ink)", fontStyle: "italic", margin: 0 }}>
@@ -1275,7 +1275,7 @@ export default function FamilyDevotionBuilder() {
               {/* TEACH */}
               <div style={{ marginBottom: "28px" }}>
                 <div style={{ ...SECTION_LABEL, display: "flex", alignItems: "center", gap: "8px" }}>
-                  <Users size={14} aria-hidden style={{ color: "var(--mustard)" }} /> Teach
+                  <Users size={14} aria-hidden style={{ color: "var(--mustard-text)" }} /> Teach
                 </div>
                 {bandContent.teaching.map((p, i) => (
                   <p key={i} style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", margin: i === 0 ? 0 : "14px 0 0", maxWidth: "68ch" }}>
@@ -1287,7 +1287,7 @@ export default function FamilyDevotionBuilder() {
               {/* ASK */}
               <div style={{ marginBottom: "28px" }}>
                 <div style={{ ...SECTION_LABEL, display: "flex", alignItems: "center", gap: "8px" }}>
-                  <MessageCircle size={14} aria-hidden style={{ color: "var(--mustard)" }} /> Ask
+                  <MessageCircle size={14} aria-hidden style={{ color: "var(--mustard-text)" }} /> Ask
                 </div>
                 <ol style={{ margin: 0, paddingLeft: "20px" }}>
                   {bandContent.questions.map((q, i) => (
@@ -1301,7 +1301,7 @@ export default function FamilyDevotionBuilder() {
               {/* DO */}
               <div style={{ marginBottom: "28px" }}>
                 <div style={{ ...SECTION_LABEL, display: "flex", alignItems: "center", gap: "8px" }}>
-                  <Hand size={14} aria-hidden style={{ color: "var(--mustard)" }} /> Do
+                  <Hand size={14} aria-hidden style={{ color: "var(--mustard-text)" }} /> Do
                 </div>
                 <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", margin: 0, maxWidth: "68ch" }}>
                   {bandContent.activity}
@@ -1311,7 +1311,7 @@ export default function FamilyDevotionBuilder() {
               {/* PRAY */}
               <div style={{ marginBottom: "32px" }}>
                 <div style={{ ...SECTION_LABEL, display: "flex", alignItems: "center", gap: "8px" }}>
-                  <HeartHandshake size={14} aria-hidden style={{ color: "var(--mustard)" }} /> Pray
+                  <HeartHandshake size={14} aria-hidden style={{ color: "var(--mustard-text)" }} /> Pray
                 </div>
                 <p style={{ fontFamily: "var(--F)", fontSize: "16px", fontStyle: "italic", lineHeight: 1.7, color: "var(--ink-muted)", borderLeft: "2px solid var(--mustard)", paddingLeft: "16px", margin: 0, maxWidth: "68ch" }}>
                   {themeData.prayer}

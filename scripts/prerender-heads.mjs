@@ -533,7 +533,9 @@ function escapeJson(s) {
 
 // Build the head block for one route. Returns string of <meta>/<link>/<script>.
 function buildHead({ title, description, url, image, type, publishedDate, modifiedDate, schemas = [] }) {
-  const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
+  // Brand-once, mirroring SEOMeta.tsx.
+  const fullTitle =
+    title.includes("James Bell") || title.includes("LiveWell") ? title : `${title} | ${SITE_NAME}`;
   const lines = [
     `<title>${escapeHtml(fullTitle)}</title>`,
     `<meta name="description" content="${escapeHtml(description)}" />`,
@@ -664,6 +666,17 @@ async function main() {
     { file: "client/public/howtos/index.json", key: "articles", route: "/how-tos/", ogPrefix: "howtos", desc: "excerpt", contentDir: "client/public/howtos/a" },
     { file: "client/public/books/index.json", key: "books", route: "/read/", ogPrefix: "read", desc: "blurb", type: "book", contentDir: "client/public/books" },
     { file: "client/public/plans/plans-index.json", key: "plans", route: "/plans/", ogPrefix: "plans", desc: "blurb", contentDir: "client/public/plans" },
+    // The 50 contested-doctrine pages (/theology/doctrine/:slug) — manifest
+    // from scripts/build-theology-index.mjs; subtitle is the description.
+    { file: "client/public/theology/index.json", key: "docs", route: "/theology/doctrine/", ogPrefix: "theology-doctrine", desc: "subtitle" },
+    // Sermon series for all 66 books of the Bible. The manifest keys the entry
+    // by `id`/`name` (not slug/title), so map them; content files are arrays of
+    // markdown sermons, so the body injects at full depth.
+    { file: "client/public/leadership/whole-bible-sermons.json", key: "books", route: "/leadership/bible-sermons/", ogPrefix: "leadership-bible-sermons", slugField: "id", titleField: "name", contentDir: "client/public/leadership/sermons", descTemplate: "A free, Christ-centered sermon series for the book of {title} — the big idea, the Christ connection, and a ready-to-preach arc, chapter by chapter." },
+    // Prophetic Justice / Disruption per-topic pages. Indexes are generated from
+    // client/src/lib/prophetic.ts (ready topics only) by build-prophetic-indexes.mjs.
+    { file: "client/public/justice/topics-index.json", key: "topics", route: "/justice/topic/", ogPrefix: "justice-topic", contentDir: "client/public/justice/topics" },
+    { file: "client/public/disruption/topics-index.json", key: "topics", route: "/disruption/topic/", ogPrefix: "disruption-topic", contentDir: "client/public/disruption/topics" },
   ];
   let withBody = 0;
   for (const src of LIBRARY_SOURCES) {
@@ -672,28 +685,33 @@ async function main() {
       data = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, src.file), "utf8"));
     } catch { continue; }
     for (const e of data[src.key] || []) {
-      if (!e.slug || !e.title) continue;
-      const url = `${SITE_URL}${src.route}${e.slug}`;
-      const ogRel = `client/public/og/${src.ogPrefix}-${e.slug}.png`;
+      // Most manifests key by slug/title; a few (e.g. the whole-Bible sermons)
+      // key by id/name, so allow a per-source field alias.
+      const slug = e.slug || (src.slugField ? e[src.slugField] : undefined);
+      const title = e.title || (src.titleField ? e[src.titleField] : undefined);
+      if (!slug || !title) continue;
+      const url = `${SITE_URL}${src.route}${slug}`;
+      const ogRel = `client/public/og/${src.ogPrefix}-${slug}.png`;
       const image = fs.existsSync(path.join(REPO_ROOT, ogRel))
-        ? `${SITE_URL}/og/${src.ogPrefix}-${e.slug}.png`
+        ? `${SITE_URL}/og/${src.ogPrefix}-${slug}.png`
         : OG_DEFAULT;
-      const description = e[src.desc || "blurb"] || e.blurb || e.subtitle || e.title;
-      const head = buildHead({ title: e.title, description, url, image, type: src.type || "article" });
+      const description = e[src.desc || "blurb"] || e.blurb || e.subtitle
+        || (src.descTemplate ? src.descTemplate.replace(/\{title\}/g, title) : title);
+      const head = buildHead({ title, description, url, image, type: src.type || "article" });
       // Read the entry's full content file (when present) and inject its prose
       // into #root so the page indexes at full depth, not as an empty shell.
       let bodyHtml = "";
       if (src.contentDir) {
-        const cf = path.join(REPO_ROOT, src.contentDir, `${e.slug}.json`);
+        const cf = path.join(REPO_ROOT, src.contentDir, `${slug}.json`);
         if (fs.existsSync(cf)) {
           try {
             const obj = JSON.parse(fs.readFileSync(cf, "utf8"));
-            bodyHtml = bodyFromContent({ title: e.title, subtitle: e.subtitle || description, sectionLabel: e.group || e.kicker, contentObj: obj });
+            bodyHtml = bodyFromContent({ title, subtitle: e.subtitle || description, sectionLabel: e.group || e.kicker, contentObj: obj });
             if (bodyHtml) withBody++;
           } catch { /* leave head-only */ }
         }
       }
-      writeRoute(template, { path: `${src.route}${e.slug}` }, head, bodyHtml);
+      writeRoute(template, { path: `${src.route}${slug}` }, head, bodyHtml);
       wrote++;
     }
   }

@@ -138,7 +138,7 @@ export default function Explore() {
         <div style={{ maxWidth: "var(--w-content, 1100px)", margin: "0 auto" }}>
           {/* Header */}
           <div style={{ textAlign: "center", marginBottom: "36px" }}>
-            <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "14px" }}>
+            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "14px" }}>
               The Whole Library
             </div>
             <h1

@@ -176,9 +176,9 @@ export default function BaptistVsMethodist() {
                 <div className="compare-card-mobile" style={{ display: "none" }}>
                   <div style={{ background: "var(--card)", border: "1px solid var(--bone-muted)", marginBottom: "16px", padding: "24px" }}>
                     <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", marginBottom: "16px", borderBottom: "2px solid var(--mustard)", paddingBottom: "12px" }}>{row.category}</p>
-                    <p style={{ fontFamily: "var(--U)", fontSize: "10px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard)", fontWeight: 600, marginBottom: "8px" }}>Baptist</p>
+                    <p style={{ fontFamily: "var(--U)", fontSize: "10px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard-text)", fontWeight: 600, marginBottom: "8px" }}>Baptist</p>
                     <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", lineHeight: 1.65, marginBottom: "20px" }}>{row.baptist}</p>
-                    <p style={{ fontFamily: "var(--U)", fontSize: "10px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard)", fontWeight: 600, marginBottom: "8px" }}>Methodist</p>
+                    <p style={{ fontFamily: "var(--U)", fontSize: "10px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard-text)", fontWeight: 600, marginBottom: "8px" }}>Methodist</p>
                     <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", lineHeight: 1.65 }}>{row.methodist}</p>
                   </div>
                 </div>
@@ -205,7 +205,7 @@ export default function BaptistVsMethodist() {
               <h3 style={{ fontFamily: "var(--F)", fontSize: "22px", fontWeight: 500, color: "var(--ink)", marginBottom: "16px" }}>{split.tradition}</h3>
               {split.items.map((item, j) => (
                 <div key={j} style={{ padding: "12px 0", borderBottom: "1px solid rgba(0,0,0,0.06)", display: "flex", gap: "12px", alignItems: "baseline" }}>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "11px", color: "var(--mustard)", fontWeight: 600, flexShrink: 0 }}>{"•"}</span>
+                  <span style={{ fontFamily: "var(--U)", fontSize: "11px", color: "var(--mustard-text)", fontWeight: 600, flexShrink: 0 }}>{"•"}</span>
                   <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", lineHeight: 1.65 }}>{item}</p>
                 </div>
               ))}
@@ -222,7 +222,7 @@ export default function BaptistVsMethodist() {
           <div style={{ display: "flex", flexDirection: "column" }}>
             {SHARED_GROUND.map((item, i) => (
               <div key={i} style={{ padding: "16px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", gap: "16px", alignItems: "baseline" }}>
-                <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--mustard)", fontWeight: 600, flexShrink: 0 }}>{String(i + 1).padStart(2, "0")}</span>
+                <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--mustard-text)", fontWeight: 600, flexShrink: 0 }}>{String(i + 1).padStart(2, "0")}</span>
                 <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted)", lineHeight: 1.65 }}>{item}</p>
               </div>
             ))}
@@ -281,7 +281,7 @@ export default function BaptistVsMethodist() {
               <Link key={a.slug} href={`/writing/${a.slug}`} style={{ textDecoration: "none" }}>
                 <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard)" }}>Read</span>
+                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
                 </div>
               </Link>
             ))}

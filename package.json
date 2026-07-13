@@ -19,6 +19,7 @@
     "howtos": "node scripts/build-howtos-index.mjs",
     "wisdom": "node scripts/build-wisdom-index.mjs",
     "plans:index": "node scripts/build-plans-index.mjs",
+    "prophetic": "node scripts/build-prophetic-indexes.mjs",
     "pdfs": "node scripts/build-pdfs.mjs",
     "manuals": "node scripts/build-leadership-manuals.mjs",
     "og": "node scripts/build-og-images.mjs",
@@ -32,7 +33,9 @@
     "survey": "node scripts/survey-manuscripts.mjs",
     "seed:paths": "node scripts/seed-reading-paths.mjs",
     "validate:pathways": "node scripts/validate-pathways.mjs",
-    "llms:full": "node scripts/build-llms-full.mjs"
+    "validate:integrity": "node scripts/validate-content-integrity.mjs",
+    "llms:full": "node scripts/build-llms-full.mjs",
+    "theology-index": "node scripts/build-theology-index.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -96,6 +99,7 @@
     "tailwind-merge": "^3.3.1",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^1.1.2",
+    "web-vitals": "^5.3.0",
     "wouter": "^3.3.5",
     "xml2js": "^0.6.2",
     "zod": "^4.1.12"

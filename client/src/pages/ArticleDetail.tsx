@@ -33,6 +33,7 @@ import { trpc } from "@/lib/trpc";
 import { pillarForPost } from "@/lib/taxonomy";
 import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
 import { trackEssayComplete } from "@/lib/telemetry";
+import { markEssayRead } from "@/lib/readProgress";
 import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 /**
@@ -462,6 +463,9 @@ export default function ArticleDetail() {
           readCompleteRef.current = true;
           trackEssayComplete(postSlug);
           recordReadEvent(`/writing/${postSlug}`);
+          // Depth's memory (P13): a finished essay joins the device-local read
+          // set the reading paths use for "pick up here."
+          markEssayRead(postSlug);
           observer.disconnect();
         }
       },

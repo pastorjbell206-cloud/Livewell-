@@ -37,7 +37,9 @@ import { readStoredJSON, writeStoredJSON, isArrayOf } from "@/lib/storage";
 import { SOCIAL_QUOTES, type SocialQuote } from "@/data/social-quotes";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
-const eyebrow = { fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--mustard)" } as const;
+// Default is AA-passing mustard-text (eyebrows on light sections); the one
+// dark-section usage ("Go deeper") overrides back to bright var(--mustard).
+const eyebrow = { fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--mustard-text)" } as const;
 const chipStyle = (on: boolean) =>
   ({
     cursor: "pointer",
@@ -232,8 +234,8 @@ function TopicPanel({
       <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "var(--ink)", marginBottom: "var(--s-4)" }}>{topic.framing}</p>
 
       {/* verses */}
-      <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "6px" }}>
-        <BookOpen size={16} style={{ color: "var(--mustard)" }} />
+      <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
+        <BookOpen size={16} style={{ color: "var(--mustard-text)" }} />
         <span style={{ ...eyebrow, color: "var(--ink)" }}>What Scripture says</span>
       </div>
       {/* Integrity: these texts are shortened to the line in view, not verbatim.
@@ -267,7 +269,7 @@ function TopicPanel({
       ].map((lens) => (
         <div key={lens.label} style={{ background: "var(--card)", border: "1px solid var(--line)", padding: "var(--s-3)", marginBottom: "10px" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
-            <lens.icon size={16} style={{ color: "var(--mustard)" }} />
+            <lens.icon size={16} style={{ color: "var(--mustard-text)" }} />
             <span style={{ ...eyebrow, color: "var(--ink)" }}>{lens.label}</span>
           </div>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink)" }}>{lens.body}</p>
@@ -278,7 +280,7 @@ function TopicPanel({
       {quotes.length > 0 && (
         <div style={{ background: "var(--card)", border: "1px solid var(--line)", padding: "var(--s-3)", marginBottom: "10px" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
-            <Quote size={16} style={{ color: "var(--mustard)" }} />
+            <Quote size={16} style={{ color: "var(--mustard-text)" }} />
             <span style={{ ...eyebrow, color: "var(--ink)" }}>From the writing</span>
           </div>
           <div style={{ display: "grid", gap: "14px" }}>
