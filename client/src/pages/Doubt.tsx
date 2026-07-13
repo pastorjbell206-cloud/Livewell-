@@ -49,26 +49,26 @@ export default function Doubt() {
     {
       title: "I used to believe, but now I'm not sure",
       description: "For those who had faith and are now questioning. You're not alone. And this might be the most honest part of what you are walking through.",
-      icon: "←"
+      href: "/writing/dark-night-god-feels-absent"
     },
     {
       title: "Someone I love is questioning their faith",
       description: "For parents, friends, and pastors watching someone you care about walk away. How to stay present without defending.",
-      icon: "🤝"
+      href: "/writing/how-to-talk-about-faith"
     },
     {
       title: "I've never believed but I'm curious",
       description: "For seekers, skeptics, and the genuinely undecided. What the Christian story actually claims and why it matters.",
-      icon: "?"
+      href: "/writing/why-christianity"
     }
   ];
 
   const HARD_QUESTIONS = [
-    "Is God real?",
-    "Why does God allow suffering?",
-    "Is the Bible reliable?",
-    "What about other religions?",
-    "Can I doubt and still have faith?"
+    { q: "Is God real?", href: "/writing/is-god-real" },
+    { q: "Why does God allow suffering?", href: "/writing/why-does-god-allow-suffering" },
+    { q: "Is the Bible reliable?", href: "/writing/can-you-trust-the-bible" },
+    { q: "What about hell?", href: "/writing/what-christians-believe-about-hell" },
+    { q: "Can I doubt and still have faith?", href: "/writing/the-problem-with-certainty" },
   ];
 
   return (
@@ -103,11 +103,8 @@ export default function Doubt() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
             {START_HERE_PATHS.map((path, i) => (
-              <Link key={i} href="/writing?topic=theology" style={{ textDecoration: "none" }}>
-                <div style={{ background: "var(--card)", padding: "40px", borderRadius: "8px", border: "1px solid #E0D9CC", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column" }}>
-                  <div style={{ fontSize: "32px", marginBottom: "16px" }}>
-                    {path.icon}
-                  </div>
+              <Link key={i} href={path.href} style={{ textDecoration: "none" }}>
+                <div style={{ background: "var(--card)", padding: "40px", borderRadius: "8px", border: "1px solid var(--border)", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column" }}>
                   <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "12px", color: "var(--ink)" }}>
                     {path.title}
                   </h3>
@@ -133,7 +130,7 @@ export default function Doubt() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
             {FEATURED_ARTICLES.map((article, i) => (
               <Link key={i} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
-                <div style={{ background: "var(--card)", padding: "32px", borderRadius: "8px", border: "1px solid #E0D9CC", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column" }}>
+                <div style={{ background: "var(--card)", padding: "32px", borderRadius: "8px", border: "1px solid var(--border)", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column" }}>
                   <div style={{ fontSize: "11px", fontWeight: "bold", color: "var(--gold)", marginBottom: "12px", textTransform: "uppercase" }}>
                     {article.topic}
                   </div>
@@ -157,14 +154,14 @@ export default function Doubt() {
             Hard Questions, Honest Answers
           </h2>
           <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "48px" }}>
-            The questions that keep people up at night. We have articles on all of them.
+            The questions that keep people up at night. Each one opens the essay that takes it seriously.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "24px" }}>
-            {HARD_QUESTIONS.map((question, i) => (
-              <Link key={i} href="/writing?topic=theology" style={{ textDecoration: "none" }}>
+            {HARD_QUESTIONS.map((item, i) => (
+              <Link key={i} href={item.href} style={{ textDecoration: "none" }}>
                 <div style={{ background: "var(--ink)", color: "var(--paper)", padding: "32px", borderRadius: "8px", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "space-between", minHeight: "100px" }}>
                   <h3 style={{ fontSize: "16px", fontWeight: "bold", margin: 0 }}>
-                    {question}
+                    {item.q}
                   </h3>
                   <span style={{ fontSize: "20px", marginLeft: "16px" }}>→</span>
                 </div>
