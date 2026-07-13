@@ -3,6 +3,7 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { LandingSignup } from "@/components/LandingSignup";
+import { CrisisHelp } from "@/components/CrisisHelp";
 
 const ARTICLES = [
   { title: "Deconstruction Is Not Destruction", slug: "deconstruction-is-not-destruction" },
@@ -89,6 +90,10 @@ export default function Deconstruction() {
           Written by a pastor who came to faith from atheism -- and who believes the questions that scare the church are the same ones that make faith real.
         </p>
       </section>
+
+      {/* Care before content: deconstruction often arrives with real grief and
+          isolation — a quiet path to help before the argument. */}
+      <CrisisHelp />
 
       {/* The Landscape */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>

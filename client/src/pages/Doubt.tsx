@@ -3,6 +3,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { CrisisHelp } from "@/components/CrisisHelp";
 
 export default function Doubt() {
 
@@ -94,6 +95,10 @@ export default function Doubt() {
           </p>
         </div>
       </section>
+
+      {/* Care before content: a quiet path to real help for the reader whose
+          doubt is arriving with genuine distress. */}
+      <CrisisHelp />
 
       {/* START HERE CARDS */}
       <section style={{ background: "var(--paper)", padding: "80px 20px" }}>

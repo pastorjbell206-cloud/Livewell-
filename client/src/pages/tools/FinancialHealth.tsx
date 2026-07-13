@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { ToolActions } from "@/components/ToolActions";
+import { AdviceDisclaimer } from "@/components/AdviceDisclaimer";
 import { useState, useRef } from "react";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer } from "lucide-react";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
@@ -1319,6 +1320,7 @@ export default function FinancialHealth() {
           </div>
         </section>
       )}
+      <AdviceDisclaimer kind="financial" />
     </Layout>
   );
 }
