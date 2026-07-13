@@ -94,6 +94,16 @@ export default function Marriage() {
         </div>
       </section>
 
+
+      {/* TEACHING — care/orientation before the link grid (depth sweep) */}
+      <section style={{ background: "var(--bone-warm)", padding: "72px 20px" }}>
+        <div style={{ maxWidth: "760px", margin: "0 auto" }}>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.8, color: "var(--ink)", maxWidth: "68ch", marginBottom: "22px" }}>A wedding is a party. A marriage is a promise kept on the days the party is over.</p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.8, color: "var(--ink)", maxWidth: "68ch", marginBottom: "22px" }}>Somewhere the culture taught us that love is a feeling you fall into and, when it cools, fall out of — and then acted surprised when the promises did not hold. Scripture calls it a covenant, an older and harder word: a bond you keep because you gave your word, until the keeping teaches you a love the feeling never could.</p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.8, color: "var(--ink)", maxWidth: "68ch", marginBottom: "0" }}>This is not advice for a better marriage. It is a different account of what a marriage is for.</p>
+          </div>
+      </section>
+
       {/* FEATURED ARTICLES */}
       <section style={{ background: "var(--bone)", padding: "80px 20px" }}>
         <div style={{ maxWidth: "1400px", margin: "0 auto" }}>

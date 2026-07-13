@@ -85,6 +85,16 @@ export default function Parenting() {
         </div>
       </section>
 
+
+      {/* TEACHING — care/orientation before the link grid (depth sweep) */}
+      <section style={{ background: "var(--bone-warm)", padding: "72px 20px" }}>
+        <div style={{ maxWidth: "760px", margin: "0 auto" }}>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.8, color: "var(--ink)", maxWidth: "68ch", marginBottom: "22px" }}>You hand your children your faith the way you handed them your accent — not by teaching it, but by living where they can hear it.</p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.8, color: "var(--ink)", maxWidth: "68ch", marginBottom: "22px" }}>Most parenting advice aims at behavior, because behavior is what shows. But children inherit the thing underneath it: whether the God they heard about on Sunday is the God they watched you trust on Thursday. That is heavier than any technique, and it is also freeing. You do not have to have the answers. You have to be found honest.</p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.8, color: "var(--ink)", maxWidth: "68ch", marginBottom: "0" }}>Formation is caught before it is taught.</p>
+          </div>
+      </section>
+
       {/* FEATURED ARTICLES */}
       <section style={{ background: "var(--paper)", padding: "80px 20px" }}>
         <div style={{ maxWidth: "1400px", margin: "0 auto" }}>

@@ -95,6 +95,16 @@ export default function Doubt() {
         </div>
       </section>
 
+
+      {/* TEACHING — care/orientation before the link grid (depth sweep) */}
+      <section style={{ background: "var(--paper2)", padding: "72px 20px" }}>
+        <div style={{ maxWidth: "760px", margin: "0 auto" }}>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.8, color: "var(--ink)", maxWidth: "68ch", marginBottom: "22px" }}>Doubt is not the opposite of faith. It is the sound faith makes when it refuses to stay shallow.</p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.8, color: "var(--ink)", maxWidth: "68ch", marginBottom: "22px" }}>The church has too often treated a hard question as a threat to be managed, and so it taught a generation to choose between honesty and belonging. That was a false choice, and it cost us. The people who kept asking were not the weak ones. They were the ones who took God seriously enough to want him to be real.</p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.8, color: "var(--ink)", maxWidth: "68ch", marginBottom: "0" }}>Bring the question. It is safer inside the faith than outside it.</p>
+          </div>
+      </section>
+
       {/* START HERE CARDS */}
       <section style={{ background: "var(--paper)", padding: "80px 20px" }}>
         <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
