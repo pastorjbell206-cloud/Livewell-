@@ -1165,19 +1165,28 @@ function byDateDesc(a: any, b: any): number {
   const tb = new Date(b?.publishedAt || b?.createdAt || 0).getTime();
   return tb - ta;
 }
+// Emergency takedown for static-library essays. A DB essay is pulled with the
+// admin "Unpublish" (published=false, honored at the URL and in listings). A
+// static-only essay has no DB row to unpublish, so this is its hard-pull lever:
+// add its slug here, deploy, and it is gone everywhere the static library serves
+// it (the direct URL and the listings). Code-level, auditable, only ever
+// removes content. Keep empty until a piece must come down.
+const TAKEN_DOWN = new Set<string>([]);
+
 // Append the static essays the DB doesn't already have (DB wins on slug), then
 // order the whole set newest-first so the index reads as one library.
 function mergeWithStatic(dbRows: any[], slim: boolean): any[] {
   const have = new Set((dbRows || []).map((r) => r.slug));
   const extra = (STATIC_LIBRARY as any[])
-    .filter((r) => !have.has(r.slug))
+    .filter((r) => !have.has(r.slug) && !TAKEN_DOWN.has(r.slug))
     .map(slim ? staticSlimCard : staticFullCard);
   return [...(dbRows || []), ...extra].sort(byDateDesc);
 }
 function staticBySlugOrId(id: number | string): any | null {
   const s = String(id);
   const rec = (STATIC_LIBRARY as any[]).find((r) => r.slug === s || String(r.id) === s);
-  return rec ? staticFullCard(rec) : null;
+  if (!rec || TAKEN_DOWN.has(rec.slug)) return null;
+  return staticFullCard(rec);
 }
 
 // Card shape for `posts` rows (camelCase columns) — distinct from toPostCard,

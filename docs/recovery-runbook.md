@@ -20,24 +20,26 @@ URL, and prod no longer falls through to the static library for a taken-down
 slug (which would have resurfaced the copy). Verified: tsc clean both runtimes,
 api-parity 2/2, server suite 232 passed.
 
-**Residual, documented not yet built (the honest boundary):**
-1. A DB+static essay set unpublished still has its *title* re-added to listings by
-   `mergeWithStatic` (the link now 404s, so the content is gone, but the dead
-   link is untidy). Fix: exclude unpublished-DB slugs from the static merge.
-2. A **static-only** essay (no DB row) has no `published` flag to set, so it
-   cannot be pulled by the admin action. Fix: a committed `TAKEN_DOWN` slug
-   blocklist honored by `trpcGetPost` + `mergeWithStatic` + search — a code-level
-   takedown that works for all 584 essays, defaults empty (no-op), and can only
-   remove content. Recommended as the next focused, tested change.
+**The takedown is now complete** (both levers shipped):
+- **DB essays** — the admin `published=false` (above), honored at the URL and in
+  listings/search.
+- **Static-only essays** — a committed `TAKEN_DOWN` slug blocklist in
+  `api/index.ts`, honored by `mergeWithStatic` (drops it from listings) and
+  `staticBySlugOrId` (404s the URL). Empty by default (no-op); it only ever
+  removes content, and the static library is prod-only so there is no dev
+  parity to mirror.
 
-### Emergency-unpublish procedure (now that it works)
-1. Admin → Content → the essay → **Unpublish**. It 404s at its URL and drops from
-   listings/search within a deploy/cache cycle.
-2. Purge the CDN cache for that path if immediacy matters.
-3. For a **static-only** essay until the blocklist ships: set the piece's DB row
-   unpublished if one exists; if none does, the fastest lever is to add the slug
-   to a redirect in `vercel.json` pointing at a takedown notice, and open the
-   blocklist change.
+### Emergency-unpublish procedure (both levers)
+To hard-pull an essay, belt and suspenders:
+1. If it has a DB row: Admin → Content → the essay → **Unpublish** (404s the URL,
+   drops from listings/search).
+2. Add its slug to the `TAKEN_DOWN` set in `api/index.ts` and deploy — this pulls
+   it from the static-served listings and URL regardless of DB state, and is the
+   *only* lever for a static-only essay.
+3. Purge the CDN cache for that path if immediacy matters.
+
+For a safety/legal emergency, do step 2 first (one commit + deploy pulls it
+everywhere the static library serves it) and review after.
 
 ## Backup surfaces
 
