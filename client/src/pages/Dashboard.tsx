@@ -231,7 +231,8 @@ export default function Dashboard() {
     fontWeight: 500,
     letterSpacing: "0.18em",
     textTransform: "uppercase",
-    color: "var(--mustard)",
+    // AA-passing on the light sections; the dark hero overrides to var(--mustard).
+    color: "var(--mustard-text)",
     marginBottom: "1rem",
   };
 
@@ -275,7 +276,7 @@ export default function Dashboard() {
         }}
       >
         <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <div style={eyebrow}>YOUR FORMATION</div>
+          <div style={{ ...eyebrow, color: "var(--mustard)" }}>YOUR FORMATION</div>
           <h1
             style={{
               fontFamily: "var(--F)",
