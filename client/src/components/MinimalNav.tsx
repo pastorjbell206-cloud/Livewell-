@@ -482,6 +482,7 @@ export default function MinimalNav() {
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileOpen}
+              aria-controls="mobile-nav-panel"
               style={{
                 background: "none",
                 border: "none",
@@ -502,6 +503,7 @@ export default function MinimalNav() {
 
         {mobileOpen && (
           <div
+            id="mobile-nav-panel"
             style={{
               position: "absolute",
               top: "100%",

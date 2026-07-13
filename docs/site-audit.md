@@ -107,8 +107,10 @@ Clean on the big risks: **no mustard-creep**, **no white page backgrounds**,
 Shared shell is strong: single `<main>`, working skip link, global
 `:focus-visible` ring, `prefers-reduced-motion` block, alt text throughout, 44px
 tap targets, Escape-to-close, `aria-expanded` on disclosures. **No P0/P1.**
-- **P2** [hi] Mobile drawer (`MinimalNav.tsx`): no focus trap, no move-focus-in on
-  open / restore-on-close, missing `aria-controls` + panel `id`.
+- **P2** [hi] Mobile drawer (`MinimalNav.tsx`): ☑ `aria-controls` + panel `id`
+  now added (static, done). ☐ Remaining: focus trap + move-focus-in on open +
+  restore-on-close — behavioral, wants a real browser to verify (deliberately not
+  shipped blind, since a focus bug in the global nav hits every page).
 - **P2** [med] Full-screen search overlay: de-facto modal without
   `role="dialog"`/`aria-modal`, no focus trap/restore.
 - **P2** [low] Admin drawer backdrop is a clickable `<div>` without role/keyboard
