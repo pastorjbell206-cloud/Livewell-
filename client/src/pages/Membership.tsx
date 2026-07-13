@@ -10,13 +10,16 @@ export default function Membership() {
   const [email, setEmail] = useState("");
   const [joined, setJoined] = useState(false);
   const [checkoutError, setCheckoutError] = useState<string | null>(null);
+  const [plan, setPlan] = useState<"monthly" | "annual">("monthly");
   const essays = useArticleCount();
 
   // Checkout goes live the moment STRIPE_SECRET_KEY (env) and the
   // stripeMembershipPriceId site setting both exist. Until then: waitlist.
+  // The annual choice appears only when a second (annual) price id is set.
   const enabledQuery = trpc.stripe.membershipEnabled.useQuery();
   const checkoutMutation = trpc.stripe.createMembershipCheckout.useMutation();
   const checkoutLive = enabledQuery.data?.enabled === true;
+  const annualAvailable = checkoutLive && enabledQuery.data?.annual === true;
 
   const handleWaitlist = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -40,6 +43,7 @@ export default function Membership() {
       const res = await checkoutMutation.mutateAsync({
         customerEmail: email,
         origin: window.location.origin,
+        plan: annualAvailable ? plan : "monthly",
       });
       if (res.sessionUrl) {
         window.location.href = res.sessionUrl;
@@ -96,8 +100,24 @@ export default function Membership() {
       <section style={{ background: "var(--bone-warm)", padding: "5rem 1.5rem" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
           <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard-text)", fontFamily: "var(--U)", marginBottom: "1rem" }}>Pricing</div>
-          <div style={{ fontFamily: "var(--F)", fontSize: "3rem", fontWeight: 400, color: "var(--ink)", marginBottom: "0.25rem" }}>$9<span style={{ fontSize: "1.25rem", color: "var(--ink-muted)" }}> / month</span></div>
-          <div style={{ fontSize: "0.875rem", color: "var(--ink-muted)", marginBottom: "2rem" }}>or $89 / year (save two months)</div>
+          {annualAvailable && (
+            // Monthly/annual choice — only shown when an annual price is configured.
+            <div role="group" aria-label="Billing period" style={{ display: "inline-flex", gap: "0", marginBottom: "1.25rem", border: "1px solid var(--bone-muted)", borderRadius: "2px", overflow: "hidden" }}>
+              {(["monthly", "annual"] as const).map((p) => (
+                <button
+                  key={p}
+                  type="button"
+                  onClick={() => setPlan(p)}
+                  aria-pressed={plan === p}
+                  style={{ padding: "0.5rem 1.25rem", fontFamily: "var(--U)", fontSize: "0.8125rem", fontWeight: 500, cursor: "pointer", border: "none", background: plan === p ? "var(--charcoal)" : "transparent", color: plan === p ? "var(--bone)" : "var(--ink-muted)" }}
+                >
+                  {p === "monthly" ? "Monthly" : "Annual"}
+                </button>
+              ))}
+            </div>
+          )}
+          <div style={{ fontFamily: "var(--F)", fontSize: "3rem", fontWeight: 400, color: "var(--ink)", marginBottom: "0.25rem" }}>{plan === "annual" ? "$89" : "$9"}<span style={{ fontSize: "1.25rem", color: "var(--ink-muted)" }}> / {plan === "annual" ? "year" : "month"}</span></div>
+          <div style={{ fontSize: "0.875rem", color: "var(--ink-muted)", marginBottom: "2rem" }}>{plan === "annual" ? "billed yearly — two months free" : "or $89 / year (save two months)"}</div>
 
           <div style={{ background: "var(--card)", border: "1px solid var(--mustard)", borderRadius: "2px", padding: "2rem", marginBottom: "2rem" }}>
             <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard-text)", fontFamily: "var(--U)", marginBottom: "1rem" }}>Founding member offer</div>

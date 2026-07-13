@@ -17,19 +17,31 @@ export const stripeRouter = router({
    * The membership page falls back to the waitlist when this is false.
    */
   membershipEnabled: publicProcedure.query(async () => {
-    if (!isStripeConfigured()) return { enabled: false };
+    if (!isStripeConfigured()) return { enabled: false, annual: false };
     const priceId = await getSetting("stripeMembershipPriceId");
-    return { enabled: !!priceId?.trim() };
+    const annualPriceId = await getSetting("stripeMembershipPriceIdAnnual");
+    // Annual is offered only when its own price is set; otherwise the page
+    // shows monthly only, exactly as before.
+    return { enabled: !!priceId?.trim(), annual: !!annualPriceId?.trim() };
   }),
 
   /**
    * Start a membership subscription checkout. Returns the Stripe-hosted
-   * checkout URL to redirect the browser to.
+   * checkout URL to redirect the browser to. `plan` selects monthly (default)
+   * or annual; annual requires stripeMembershipPriceIdAnnual to be set.
    */
   createMembershipCheckout: publicProcedure
-    .input(z.object({ customerEmail: z.string().email(), origin: z.string().url() }))
+    .input(
+      z.object({
+        customerEmail: z.string().email(),
+        origin: z.string().url(),
+        plan: z.enum(["monthly", "annual"]).optional(),
+      })
+    )
     .mutation(async ({ input }) => {
-      const priceId = await getSetting("stripeMembershipPriceId");
+      const key =
+        input.plan === "annual" ? "stripeMembershipPriceIdAnnual" : "stripeMembershipPriceId";
+      const priceId = await getSetting(key);
       if (!priceId?.trim()) throw new Error("Membership is not open yet.");
       const { sessionUrl, sessionId } = await createMembershipCheckoutSession(
         input.customerEmail,
