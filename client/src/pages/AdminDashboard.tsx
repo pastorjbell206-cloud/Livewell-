@@ -48,6 +48,10 @@ export default function AdminDashboard() {
   type Vitals = { metrics: Record<"LCP" | "INP" | "CLS", VitalStat> };
   const [vitals, setVitals] = useState<Vitals | null>(null);
   const [vitalsError, setVitalsError] = useState(false);
+  type ErrGroup = { message: string; kind: string | null; count: number; lastSeen: string; samplePath: string | null };
+  type Errors = { total: number; groups: ErrGroup[] };
+  const [errors, setErrors] = useState<Errors | null>(null);
+  const [errorsError, setErrorsError] = useState(false);
   const money = (cents: number, cur = "usd") =>
     new Intl.NumberFormat("en-US", { style: "currency", currency: (cur || "usd").toUpperCase() }).format((cents || 0) / 100);
   useEffect(() => {
@@ -86,6 +90,10 @@ export default function AdminDashboard() {
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
       .then((d) => active && d?.ok && setVitals(d))
       .catch(() => active && setVitalsError(true));
+    fetch("/api/admin/errors", { credentials: "include" })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((d) => active && d?.ok && setErrors(d))
+      .catch(() => active && setErrorsError(true));
     return () => { active = false; };
   }, []);
 
@@ -391,6 +399,46 @@ export default function AdminDashboard() {
                   </div>
                 );
               })}
+            </div>
+          )}
+        </div>
+
+        {/* Errors real visitors hit — from /api/admin/errors (the client_errors
+            table, filled by ClientErrorReporter + ErrorBoundary). */}
+        <div className="mb-12">
+          <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "var(--charcoal)" }}>Errors real visitors hit</h2>
+          <p className="font-body text-sm mb-4" style={{ color: "var(--adm-gray)" }}>
+            When a page breaks for someone, it shows up here — the last 7 days, most frequent first. An empty list is the good outcome.
+          </p>
+          {errorsError && (
+            <p className="font-body text-sm" style={{ color: "var(--alert)" }}>
+              Couldn&rsquo;t load errors (needs the production API and an admin session).
+            </p>
+          )}
+          {!errors && !errorsError && (
+            <p className="font-body text-sm" style={{ color: "var(--adm-gray)" }}><Loader2 size={16} className="animate-spin inline" /> Loading…</p>
+          )}
+          {errors && errors.groups.length === 0 && (
+            <div className="p-6 rounded-lg" style={{ backgroundColor: "var(--card)", borderTop: "5px solid var(--ok)", boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
+              <div className="font-display font-bold" style={{ color: "var(--ok)", fontSize: "1.4rem", lineHeight: 1.1 }}>No errors in the last 7 days</div>
+              <div className="font-ui text-xs mt-2" style={{ color: "var(--adm-gray-soft)" }}>The site is running clean for your visitors.</div>
+            </div>
+          )}
+          {errors && errors.groups.length > 0 && (
+            <div className="rounded-lg overflow-hidden" style={{ backgroundColor: "var(--card)", borderTop: "5px solid var(--alert)", boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
+              {errors.groups.map((g, i) => (
+                <div key={i} className="px-6 py-4" style={{ borderTop: i === 0 ? "none" : "1px solid var(--adm-line)" }}>
+                  <div className="flex items-start justify-between gap-4">
+                    <div style={{ minWidth: 0 }}>
+                      <div className="font-ui text-sm font-semibold" style={{ color: "var(--charcoal)", wordBreak: "break-word" }}>{g.message}</div>
+                      <div className="font-ui text-xs mt-1" style={{ color: "var(--adm-gray-soft)" }}>
+                        {g.kind ? `${g.kind} · ` : ""}{g.samplePath || "—"}
+                      </div>
+                    </div>
+                    <div className="font-display font-bold flex-shrink-0" style={{ color: "var(--alert)", fontSize: "1.5rem", lineHeight: 1 }}>{g.count.toLocaleString()}</div>
+                  </div>
+                </div>
+              ))}
             </div>
           )}
         </div>

@@ -3285,6 +3285,26 @@ async function ensureWebVitalsTable(c: any) {
   webVitalsReady = true;
 }
 
+// Client-side errors real visitors hit (the ClientErrorReporter + ErrorBoundary).
+// A tiny first-party error log so a broken page is visible to the owner. kind is
+// react | window | promise. Same lazy-create discipline.
+let clientErrorsReady = false;
+async function ensureClientErrorsTable(c: any) {
+  if (clientErrorsReady) return;
+  await c.execute(`CREATE TABLE IF NOT EXISTS client_errors (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    message VARCHAR(512) NOT NULL,
+    stack TEXT,
+    kind VARCHAR(16),
+    path VARCHAR(512),
+    visitorId VARCHAR(64),
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+    INDEX idx_ce_created (createdAt),
+    INDEX idx_ce_message (message)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`);
+  clientErrorsReady = true;
+}
+
 async function recordPageView(req: VercelRequest, res: VercelResponse) {
   if (req.method !== "POST") return json(res, 405, { ok: false });
   // Generous limit: a reader clicking through the site should never be blocked.
@@ -3308,6 +3328,21 @@ async function recordPageView(req: VercelRequest, res: VercelResponse) {
         await c.execute(
           "INSERT INTO web_vitals (metric, value, rating, path, visitorId) VALUES (?, ?, ?, ?, ?)",
           [metric, value, rating, path, visitorId]
+        );
+      });
+      return json(res, 200, { ok: true });
+    }
+    // ClientErrorReporter / ErrorBoundary: a client-side error a visitor hit.
+    if (body?.event === "error") {
+      const message = String(body?.message || "").slice(0, 512);
+      if (!message) return json(res, 200, { ok: true });
+      const stack = body?.stack ? String(body.stack).slice(0, 4000) : null;
+      const kind = body?.kind ? String(body.kind).slice(0, 16) : null;
+      await withConn(async (c) => {
+        await ensureClientErrorsTable(c);
+        await c.execute(
+          "INSERT INTO client_errors (message, stack, kind, path, visitorId) VALUES (?, ?, ?, ?, ?)",
+          [message, stack, kind, path, visitorId]
         );
       });
       return json(res, 200, { ok: true });
@@ -3470,6 +3505,44 @@ async function adminWebVitals(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+// Client errors real visitors hit (the client_errors table). Groups the last 7
+// days by message so a recurring break rises to the top: count, last seen, a
+// sample path and kind. Read-only.
+async function adminErrors(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  try {
+    const out = await withConn(async (c) => {
+      await ensureClientErrorsTable(c);
+      const total = await (async () => {
+        try { const [r]: any = await c.query("SELECT COUNT(*) AS n FROM client_errors WHERE createdAt >= DATE_SUB(NOW(), INTERVAL 7 DAY)"); return Number(r?.[0]?.n ?? 0); } catch { return 0; }
+      })();
+      let groups: { message: string; kind: string | null; count: number; lastSeen: string; samplePath: string | null }[] = [];
+      try {
+        const [rows]: any = await c.query(
+          "SELECT message, COUNT(*) AS n, MAX(createdAt) AS last, " +
+          "SUBSTRING_INDEX(MAX(CONCAT(createdAt,'|',COALESCE(kind,''),'|',COALESCE(path,''))),'|',-2) AS kp " +
+          "FROM client_errors WHERE createdAt >= DATE_SUB(NOW(), INTERVAL 7 DAY) " +
+          "GROUP BY message ORDER BY n DESC, last DESC LIMIT 15"
+        );
+        groups = (rows as any[]).map((x) => {
+          const kp = String(x.kp || "").split("|");
+          return {
+            message: String(x.message),
+            kind: kp[0] || null,
+            count: Number(x.n),
+            lastSeen: String(x.last),
+            samplePath: kp[1] || null,
+          };
+        });
+      } catch { /* noop */ }
+      return { total, groups };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
 // Commerce status: the per-ebook truth of what is actually sellable right now.
 // For each book in the catalog: does it have a Stripe price (env var or the
 // stored site_settings id), and therefore a live Buy button? Read-only.
@@ -3524,6 +3597,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/analytics") return adminAnalytics(req, res);
     if (url === "/api/admin/signups") return adminSignups(req, res);
     if (url === "/api/admin/web-vitals") return adminWebVitals(req, res);
+    if (url === "/api/admin/errors") return adminErrors(req, res);
     if (url === "/api/admin/commerce-status") return adminCommerceStatus(req, res);
     if (url === "/api/track") return recordPageView(req, res);
     // CSRF hardening: every state-changing admin one-shot requires POST, so a

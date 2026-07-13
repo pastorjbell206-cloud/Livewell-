@@ -2,6 +2,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import PageTracker from "@/components/PageTracker";
 import WebVitalsBeacon from "@/components/WebVitalsBeacon";
+import ClientErrorReporter from "@/components/ClientErrorReporter";
 import NotFound from "@/pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { Route, Router as WouterRouter, Switch, useLocation } from "wouter";
@@ -712,6 +713,7 @@ function App() {
             <WouterRouter hook={useTransitionLocation}>
               <PageTracker />
               <WebVitalsBeacon />
+              <ClientErrorReporter />
               <Router />
             </WouterRouter>
           </TooltipProvider>
