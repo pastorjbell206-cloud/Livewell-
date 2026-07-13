@@ -39,10 +39,17 @@ the Skeptic Track and the Doubting Christian Track — one essay a week in a
 designed order, every quote character-exact, care posture held. ☐ Remaining:
 owner loads them into Mailchimp journeys (steps in the README, ~10 min/track).
 
-### 4. Measurement tuned to depth, not vanity ☐
-Privacy-respecting analytics for the metrics the Constitution names — scroll-to-
-finish, reading-path completion, return visits, essay→book clickthrough — and an
-owner dashboard reading those four numbers.
+### 4. Measurement tuned to depth, not vanity ◐
+The depth-telemetry seam (`lib/telemetry.ts`) forwards privacy-light custom
+events to Vercel Web Analytics — the tracker already loaded, so **Vercel
+Analytics is the owner dashboard** (no bespoke DB/endpoint needed; that would
+duplicate it). Of the four Constitution metrics: ☑ scroll-to-finish
+(`essay_read_complete`, wired in ArticleDetail), ☑ return visits
+(`return_reader`, now fired once per load via `trackReturnReaderOnce` in App),
+☑ essay→book clickthrough (`essay_book_click`, now on the KeepReadingBook CTA).
+☐ Reading-path completion (`path_step_complete`) is defined but unwired: the
+reading-path UX has no per-step "done" signal yet, so emitting it honestly needs
+a small progress mechanism in ReadingPathDetail first. No PII, no cookie.
 
 ## Tier 3 — owner-gated
 

@@ -12,8 +12,10 @@ Status: ☐ not started · ◐ in progress · ☑ shipped · ⛔ owner-gated
 
 - ☑ 27 commission essays; stub triage + 129 redirects; citation scan tool.
 - ◐ Email discipleship tracks written — ⛔ owner loads into Mailchimp.
-- ☐ **#4 Depth analytics** — scroll-to-finish, reading-path completion, return
-  visits, essay→book clickthrough + owner dashboard (biggest open machine item).
+- ◐ **#4 Depth analytics** — the telemetry seam forwards to Vercel Analytics
+  (= the dashboard). ☑ scroll-to-finish, ☑ return visits, ☑ essay→book
+  clickthrough now wired; ☐ reading-path completion needs a per-step signal
+  first. No new DB/endpoint — Vercel Analytics already holds the custom events.
 - ☐ #8 Unify assessments into one "Where are you actually?" spine.
 - ☐ #9 Answer-engine surface — JSON-LD per essay, denser internal linking.
 - ⛔ #5 Stripe activation (`docs/GO-LIVE-PAYMENTS.md`) · #6 founder photos.

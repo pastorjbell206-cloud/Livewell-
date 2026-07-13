@@ -6,6 +6,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import { Route, Router as WouterRouter, Switch, useLocation } from "wouter";
 import { useBrowserLocation } from "wouter/use-browser-location";
 import { Suspense, lazy, startTransition, useCallback, useEffect } from "react";
+import { trackReturnReaderOnce } from "@/lib/telemetry";
 import { JUSTICE, DISRUPTION } from "./lib/prophetic";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -681,6 +682,11 @@ function useTransitionLocation(): ReturnType<typeof useBrowserLocation> {
 }
 
 function App() {
+  // Depth telemetry (board rec #17 / Next-Ten #4): count returning readers once
+  // per load. Best-effort, no PII, no cookie — forwards to Vercel Analytics.
+  useEffect(() => {
+    trackReturnReaderOnce();
+  }, []);
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light" switchable>
