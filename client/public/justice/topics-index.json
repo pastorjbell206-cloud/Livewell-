@@ -1,0 +1,54 @@
+{
+  "topics": [
+    {
+      "slug": "the-poor",
+      "title": "The Poor at the Gate",
+      "blurb": "Justice for the poor, from the law of gleaning to Lazarus at the rich man's door."
+    },
+    {
+      "slug": "the-wage",
+      "title": "The Wage and the Worker",
+      "blurb": "Work, wages, debt, and the dignity of the laborer, where Scripture is loud and policy is contested."
+    },
+    {
+      "slug": "the-vulnerable",
+      "title": "The Least of These",
+      "blurb": "The orphan, the widow, the disabled, the trafficked, and the consistency both tribes tend to fail."
+    },
+    {
+      "slug": "unborn-and-edges",
+      "title": "Life at Its Edges",
+      "blurb": "The unborn, the aged, the disabled, and the dying. A consistent ethic of life at the thresholds."
+    },
+    {
+      "slug": "abuse-and-vulnerable",
+      "title": "The Abused and the Silence",
+      "blurb": "Abuse, the vulnerable, and the church's failures to protect rather than to cover."
+    },
+    {
+      "slug": "the-immigrant",
+      "title": "The Foreigner Among You",
+      "blurb": "The command to love the sojourner, and the genuinely contested question of policy."
+    },
+    {
+      "slug": "the-prisoner",
+      "title": "The Prisoner and the Gate",
+      "blurb": "Crime, punishment, prison, the death penalty, and the meeting of justice and mercy."
+    },
+    {
+      "slug": "race-and-image",
+      "title": "Race and the Image of God",
+      "blurb": "Human dignity grounded in the image of God, and the church's mixed and painful record."
+    },
+    {
+      "slug": "creation-care",
+      "title": "The Groaning Creation",
+      "blurb": "Stewardship of the earth we were given, between worship of the creation and contempt for it."
+    },
+    {
+      "slug": "systemic-sin",
+      "title": "The Sin We Build Together",
+      "blurb": "The biblical category of corporate and structural sin, and the limits and uses of the idea."
+    }
+  ]
+}

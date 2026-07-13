@@ -1,0 +1,64 @@
+{
+  "topics": [
+    {
+      "slug": "truth-and-tribe",
+      "title": "When Truth Becomes Negotiable",
+      "blurb": "Truth held consistently, even when it costs your own side. The thesis the whole section rests on."
+    },
+    {
+      "slug": "outrage-machine",
+      "title": "The Outrage Machine",
+      "blurb": "How the attention economy and the rage cycle have captured the church and deformed us into combatants."
+    },
+    {
+      "slug": "consumer-comfort",
+      "title": "The Comfortable Captivity",
+      "blurb": "Consumerism, comfort, and a faith shaped more by the mall than the cross."
+    },
+    {
+      "slug": "therapeutic-gospel",
+      "title": "The Therapeutic Gospel",
+      "blurb": "A faith quietly reduced to self-help and feeling good, a God who exists to make me happy."
+    },
+    {
+      "slug": "moralistic-therapeutic-deism",
+      "title": "Moralistic Therapeutic Deism",
+      "blurb": "The actual folk faith of much of the American church, right and left alike, from Christian Smith's landmark study. A God who wants us nice and happy and otherwise stays out of the way."
+    },
+    {
+      "slug": "sexuality-and-body",
+      "title": "The Body and the Sexual Revolution",
+      "blurb": "Faithfulness on sex and the body in a culture that rethought all of it, holding a historic view while indicting the church's own cruelty."
+    },
+    {
+      "slug": "power-and-nation",
+      "title": "The Cross and the Flag",
+      "blurb": "The idolatry of fusing the gospel with political power, on the right and the left alike."
+    },
+    {
+      "slug": "christian-nation-myth",
+      "title": "The Myth of a Christian Nation",
+      "blurb": "What was true, what was never true, and why the story matters so much to so many."
+    },
+    {
+      "slug": "church-and-empire",
+      "title": "When the Church Married the Power",
+      "blurb": "What happens when the church trades prophetic distance for a seat at the table, from Constantine to now."
+    },
+    {
+      "slug": "prosperity-success",
+      "title": "The Gospel of Success",
+      "blurb": "The prosperity and platform gospels, and the empire of the self they serve."
+    },
+    {
+      "slug": "celebrity-platform",
+      "title": "The Platform and the Pedestal",
+      "blurb": "Celebrity pastor culture, the abuse of spiritual authority, and why so many leaders fall."
+    },
+    {
+      "slug": "war-and-peace",
+      "title": "The Sword and the Plowshare",
+      "blurb": "The church's long argument with itself about violence, just war and pacifism, and the baptizing of the nation's wars."
+    }
+  ]
+}
