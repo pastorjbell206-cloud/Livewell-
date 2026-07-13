@@ -7,11 +7,13 @@
 >   DB seed required. All 60 verified live.
 > - **Class B truly-dead (60 of 64) — REPOINTED** to verified-real destinations
 >   across 9 pages (corpus / route table / history library checked).
-> - **Remaining: SkepticTrack (7)** — the flagship's own essays don't exist;
->   the page degrades to the `/writing` index today (not a 404) and still needs
->   the essays written. That is the only open item.
+> - **SkepticTrack (7) — WRITTEN.** The flagship's seven essays now exist:
+>   drafted in Bell's skeptic-facing voice (steelman-first, verbatim-ESV
+>   Scripture, no fabricated citations), served from the static library, so
+>   every stop on the track resolves to its own essay.
 >
-> See "Fixed in this PR" at the bottom.
+> **Every dead link in the audit is now resolved.** See "Fixed in this PR" at
+> the bottom.
 
 
 > Produced by a codebase-wide scan of every hardcoded `/writing/:slug` link

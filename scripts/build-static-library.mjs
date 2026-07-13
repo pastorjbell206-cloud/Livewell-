@@ -34,6 +34,7 @@ const DIRS = {
   "content/drafts/sacraments":           { pillar: "theology",           audience: "individuals", pastoral: false },
   "content/drafts/disciplines":          { pillar: "devotionals",        audience: "individuals", pastoral: false },
   "content/drafts/why-believe":          { pillar: "doubt",              audience: "individuals", pastoral: false },
+  "content/drafts/skeptic-track":        { pillar: "doubt",              audience: "individuals", pastoral: false },
   "content/drafts/who-is-god":           { pillar: "theology",           audience: "individuals", pastoral: false },
   "content/drafts/the-story":            { pillar: "theology",           audience: "individuals", pastoral: false },
   "content/drafts/church-history":       { pillar: "theology",           audience: "individuals", pastoral: false },
