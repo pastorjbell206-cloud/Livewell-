@@ -403,7 +403,7 @@ publication.
 
 TypeScript end to end. **React 19 + Vite 7** SPA with **wouter** routing,
 **TanStack Query + tRPC v11** client, **Tailwind v4 + Radix** (shadcn-style)
-primitives, **Framer Motion**. **Drizzle ORM + mysql2** over **MySQL**.
+primitives. **Drizzle ORM + mysql2** over **MySQL**.
 **Stripe** (config-driven). Deployed on **Vercel**. Package manager is **pnpm**
 (`pnpm@10`) — do not use npm/yarn.
 

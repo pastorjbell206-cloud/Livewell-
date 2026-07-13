@@ -31,20 +31,25 @@ Ordered by leverage. No P0s surfaced.
 - ☐ **SEO: prerender the dynamic-meta routes** — give `/nation/*` (10 essays),
   the `/justice` + `/disruption` hubs, and `/theology/doctrine/:slug` literal /
   prerender-resolvable `SEOMeta` so they stop unfurling as the homepage.
-- ☐ **Brand: tokenize the four drift files** — `StartHereQuiz.tsx`,
-  `tools/QuoteLibrary.tsx`, `tools/FamilyDevotionBuilder.tsx`, `ArticleCard.tsx`
-  (`bg-[#2D4A3E]` → token).
+- ◐ **Brand: tokenize the four drift files** — ☑ `ArticleCard.tsx`
+  (`bg-[#2D4A3E]` → `var(--pillar-justice)`). ☐ `StartHereQuiz.tsx` +
+  `tools/QuoteLibrary.tsx` off-palette category hues (design call: keep + token,
+  or re-treat on-brand). ☐ `tools/FamilyDevotionBuilder.tsx` `#FFFFFF` cards →
+  `var(--card)` (a dark-mode fix — needs browser verification before shipping).
 - ⛔ **SEO: settle the canonical host** — code is all `www.`; CLAUDE.md writes
   the apex. Confirm Vercel's primary host, then align code + doc.
 
 ### P2
-- ☐ Dedupe `vercel.json` (`complicity-not-innocence` listed twice); remove the
-  dead SPA redirect components (`/articles`, `/for-families`, `/quiz`).
+- ◐ ☑ Deduped `vercel.json` (`complicity-not-innocence` was listed twice).
+  ☐ Remove the dead SPA redirect components (`/articles`, `/for-families`,
+  `/quiz`) — deletes components, so left for the owner's redirect-or-keep call.
 - ☐ A11y focus management: mobile drawer + search overlay (focus trap,
   move-in/restore, `aria-controls`/`role="dialog"`).
-- ☐ Add a top-level `Person` schema on `/about`.
+- ☑ `Person` schema on `/about` — already present inline (the audit finding was
+  overstated); enrichment optional, no fabrication.
+- ☑ Derived the two hardcoded `www` `/about` URLs from `SITE_URL` (comparison pages).
 - ☐ OG coverage for `/how-tos/:slug`, `/table/:slug`, wisdom, `/read/:slug`.
-- ☐ Doc fix: CLAUDE.md lists Framer Motion but it's not used in `client/src`.
+- ☑ Doc fix: removed Framer Motion from CLAUDE.md stack (0 imports in `client/src`).
 - ⛔ Confirm `DATABASE_URL` is exposed to the Vercel **build** (sitemap + DB
   prerender heads); confirm `/start` vs `/start-here` canonical.
 

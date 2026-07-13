@@ -28,7 +28,7 @@ const PILLAR_COLORS: Record<string, { bg: string; text: string; icon: string }> 
     icon: "",
   },
   "Prophetic Justice": {
-    bg: "bg-[#2D4A3E]",
+    bg: "bg-[var(--pillar-justice)]",
     text: "text-white",
     icon: "⚖️",
   },
