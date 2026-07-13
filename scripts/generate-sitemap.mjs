@@ -310,6 +310,9 @@ function manifestPages() {
     { file: "client/public/leadership/whole-bible-sermons.json", key: "books", slugField: "id", prefix: "/leadership/bible-sermons/" },
     { file: "client/public/justice/topics-index.json", key: "topics", prefix: "/justice/topic/" },
     { file: "client/public/disruption/topics-index.json", key: "topics", prefix: "/disruption/topic/" },
+    // The 208 wisdom topics (/wisdom/:id) — "what the Bible says about X" pages,
+    // rendered from client/public/wisdom/topics.json which keys by `id`.
+    { file: "client/public/wisdom/topics.json", key: "topics", slugField: "id", prefix: "/wisdom/" },
   ];
   for (const s of sources) {
     try {

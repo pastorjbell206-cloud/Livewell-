@@ -677,6 +677,10 @@ async function main() {
     // client/src/lib/prophetic.ts (ready topics only) by build-prophetic-indexes.mjs.
     { file: "client/public/justice/topics-index.json", key: "topics", route: "/justice/topic/", ogPrefix: "justice-topic", contentDir: "client/public/justice/topics" },
     { file: "client/public/disruption/topics-index.json", key: "topics", route: "/disruption/topic/", ogPrefix: "disruption-topic", contentDir: "client/public/disruption/topics" },
+    // The 208 wisdom topics (/wisdom/:id). Manifest keys by id/label; the
+    // framing is the description, and the title matches the page's own
+    // "{label} — What the Bible Says" so scrapers see the same head.
+    { file: "client/public/wisdom/topics.json", key: "topics", route: "/wisdom/", ogPrefix: "wisdom", slugField: "id", titleField: "label", desc: "framing", titleTemplate: "{title} — What the Bible Says" },
   ];
   let withBody = 0;
   for (const src of LIBRARY_SOURCES) {
@@ -688,8 +692,9 @@ async function main() {
       // Most manifests key by slug/title; a few (e.g. the whole-Bible sermons)
       // key by id/name, so allow a per-source field alias.
       const slug = e.slug || (src.slugField ? e[src.slugField] : undefined);
-      const title = e.title || (src.titleField ? e[src.titleField] : undefined);
-      if (!slug || !title) continue;
+      const rawTitle = e.title || (src.titleField ? e[src.titleField] : undefined);
+      if (!slug || !rawTitle) continue;
+      const title = src.titleTemplate ? src.titleTemplate.replace(/\{title\}/g, rawTitle) : rawTitle;
       const url = `${SITE_URL}${src.route}${slug}`;
       const ogRel = `client/public/og/${src.ogPrefix}-${slug}.png`;
       const image = fs.existsSync(path.join(REPO_ROOT, ogRel))
