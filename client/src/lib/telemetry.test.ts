@@ -5,6 +5,8 @@ import {
   trackEssayComplete,
   trackPathStep,
   trackReturnReader,
+  trackBookClick,
+  trackReturnReaderOnce,
 } from "./telemetry";
 
 // Replace the real Vercel Web Analytics module with a spy: tests observe
@@ -67,5 +69,49 @@ describe("depth helpers emit stable event names with slugs/counts only", () => {
   it("trackReturnReader emits return_reader with no props", () => {
     trackReturnReader();
     expect(mockedTrack).toHaveBeenCalledWith("return_reader", undefined);
+  });
+
+  it("trackBookClick emits essay_book_click with the source and book slugs", () => {
+    trackBookClick("the-body-you-left", "babylon");
+    expect(mockedTrack).toHaveBeenCalledWith("essay_book_click", {
+      from: "the-body-you-left",
+      book: "babylon",
+    });
+  });
+});
+
+describe("trackReturnReaderOnce records first-ever, counts every later load", () => {
+  function fakeWindow() {
+    const store: Record<string, string> = {};
+    return {
+      localStorage: {
+        getItem: (k: string) => (k in store ? store[k] : null),
+        setItem: (k: string, v: string) => {
+          store[k] = String(v);
+        },
+      },
+    };
+  }
+
+  it("does not count a first-ever visitor, but flags them", () => {
+    const win = fakeWindow();
+    vi.stubGlobal("window", win);
+    trackReturnReaderOnce();
+    expect(mockedTrack).not.toHaveBeenCalled();
+    expect(win.localStorage.getItem("lw-seen")).toBe("1");
+  });
+
+  it("counts a return_reader once the flag is already set", () => {
+    const win = fakeWindow();
+    win.localStorage.setItem("lw-seen", "1");
+    vi.stubGlobal("window", win);
+    trackReturnReaderOnce();
+    expect(mockedTrack).toHaveBeenCalledWith("return_reader", undefined);
+  });
+
+  it("no-ops under SSR (no window)", () => {
+    vi.stubGlobal("window", undefined);
+    expect(() => trackReturnReaderOnce()).not.toThrow();
+    expect(mockedTrack).not.toHaveBeenCalled();
   });
 });

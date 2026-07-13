@@ -68,6 +68,11 @@
   --alert:#9B2C2C;--alert-bg:rgba(155,44,44,0.08);
   --strain:#B5651D;--strain-bg:rgba(181,101,29,0.08);
 
+  /* Pillar badge accent — Prophetic Justice (ArticleCard). Promotes the value
+     that shipped hardcoded; the hue itself is off the core palette and is
+     flagged for an on-brand review (docs/site-audit.md). */
+  --pillar-justice:#2D4A3E;
+
   /* Aliases */
   --paper:#F5F0E6;--paper2:#EDE8DC;--cream:#EDE8DC;
   --line:#D9D3C4;--border:#D9D3C4;--borderdk:#C0B9A8;

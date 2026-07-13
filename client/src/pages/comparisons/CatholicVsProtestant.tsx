@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { SITE_URL } from "@/lib/site";
 
 /* ── data ─────────────────────────────────────────────────────────── */
 
@@ -94,7 +95,7 @@ const webPageSchema = {
   name: "Catholic vs. Protestant: What's the Difference?",
   description: "An honest, detailed comparison of Catholic and Protestant Christianity — authority, salvation, sacraments, worship, and the ground they share.",
   url: "https://www.livewellbyjamesbell.co/compare/catholic-vs-protestant",
-  author: { "@type": "Person", name: "James Bell", url: "https://www.livewellbyjamesbell.co/about" },
+  author: { "@type": "Person", name: "James Bell", url: `${SITE_URL}/about` },
   publisher: { "@type": "Organization", name: "LiveWell by James Bell" },
 };
 

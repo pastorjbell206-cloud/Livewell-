@@ -403,7 +403,7 @@ publication.
 
 TypeScript end to end. **React 19 + Vite 7** SPA with **wouter** routing,
 **TanStack Query + tRPC v11** client, **Tailwind v4 + Radix** (shadcn-style)
-primitives, **Framer Motion**. **Drizzle ORM + mysql2** over **MySQL**.
+primitives. **Drizzle ORM + mysql2** over **MySQL**.
 **Stripe** (config-driven). Deployed on **Vercel**. Package manager is **pnpm**
 (`pnpm@10`) — do not use npm/yarn.
 
@@ -633,8 +633,11 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
 
 - **Stack stays React + Vite + tRPC + Drizzle + MySQL on Vercel.** Not migrated
   to Next.js: the platform is working, deployed, and content-heavy; rewrite
-  risk outweighs framework preference. Canonical domain is
-  **livewellbyjamesbell.co** (the .com in older briefs is incorrect).
+  risk outweighs framework preference. Canonical host is
+  **`https://www.livewellbyjamesbell.co`** — the `www` subdomain. The bare apex
+  `livewellbyjamesbell.co` 301s to it (`vercel.json` host redirect, verified
+  against the Vercel project), and all code emits `www` canonicals (`SITE_URL`,
+  sitemap, robots, `llms.txt`). The `.com` in older briefs is incorrect.
 - **Tokens**: all brand values live in `:root` of `client/src/index.css`
   (light) and `html.dark` (dark). Components use inline styles referencing the
   CSS variables. The admin area is intentionally a light workspace and opts out

@@ -54,6 +54,33 @@ export function trackReturnReader(): void {
   track("return_reader");
 }
 
+/** A reader clicked through from an essay to its recommended book — the
+ *  article-to-book funnel, the platform's primary book-discovery path. Slugs
+ *  only, never PII. Event: "essay_book_click". */
+export function trackBookClick(fromSlug: string, bookSlug: string): void {
+  track("essay_book_click", { from: fromSlug, book: bookSlug });
+}
+
+/**
+ * Fire `return_reader` once for a reader who has been seen before. A first-ever
+ * visitor is recorded but not counted; every later page load counts as a return
+ * visit. One localStorage flag, no PII, no cookie. Best-effort and silent: safe
+ * under SSR and when storage is blocked (private mode, quota) — it never throws.
+ */
+export function trackReturnReaderOnce(): void {
+  if (typeof window === "undefined") return;
+  try {
+    const KEY = "lw-seen";
+    if (window.localStorage.getItem(KEY)) {
+      trackReturnReader();
+    } else {
+      window.localStorage.setItem(KEY, "1");
+    }
+  } catch {
+    // Storage unavailable — return-reader is best-effort; swallow.
+  }
+}
+
 /**
  * A newsletter subscription the backend accepted. Fire this in the subscribe
  * mutation's onSuccess — not on submit — so it counts confirmed requests, not
