@@ -109,7 +109,7 @@ export default function Membership() {
             ) : (
               <form onSubmit={checkoutLive ? handleCheckout : handleWaitlist} style={{ display: "flex", gap: "0", maxWidth: "380px", margin: "0 auto" }}>
                 <input type="email" aria-label="Email address" placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} required
-                  style={{ flex: 1, padding: "0.75rem 1rem", border: "1px solid var(--bone-muted)", borderRight: "none", borderRadius: "2px 0 0 2px", fontSize: "0.875rem", fontFamily: "var(--U)", background: "var(--bone)", outline: "none" }}
+                  style={{ flex: 1, minWidth: 0, padding: "0.75rem 1rem", border: "1px solid var(--bone-muted)", borderRight: "none", borderRadius: "2px 0 0 2px", fontSize: "0.875rem", fontFamily: "var(--U)", background: "var(--bone)", outline: "none" }}
                 />
                 <button type="submit" disabled={checkoutMutation.isPending} style={{ padding: "0.75rem 1.25rem", background: "var(--charcoal)", color: "var(--bone)", border: "1px solid var(--charcoal)", fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, cursor: checkoutMutation.isPending ? "default" : "pointer", opacity: checkoutMutation.isPending ? 0.7 : 1, borderRadius: "0 2px 2px 0", display: "flex", alignItems: "center", gap: "0.5rem" }}>
                   {checkoutLive
@@ -188,7 +188,7 @@ export default function Membership() {
           ) : (
             <form onSubmit={handleWaitlist} style={{ display: "flex", gap: "0", justifyContent: "center", maxWidth: "380px", margin: "0 auto" }}>
               <input type="email" aria-label="Email address" placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} required
-                style={{ flex: 1, padding: "0.75rem 1rem", background: "transparent", border: "1px solid rgba(244,241,234,0.2)", borderRight: "none", color: "var(--bone)", fontSize: "0.875rem", fontFamily: "var(--U)", borderRadius: "2px 0 0 2px", outline: "none" }}
+                style={{ flex: 1, minWidth: 0, padding: "0.75rem 1rem", background: "transparent", border: "1px solid rgba(244,241,234,0.2)", borderRight: "none", color: "var(--bone)", fontSize: "0.875rem", fontFamily: "var(--U)", borderRadius: "2px 0 0 2px", outline: "none" }}
               />
               <button type="submit" style={{ padding: "0.75rem 1.25rem", background: "var(--bone)", color: "var(--charcoal)", border: "1px solid var(--bone)", fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, cursor: "pointer", borderRadius: "0 2px 2px 0" }}>
                 Join the waitlist
