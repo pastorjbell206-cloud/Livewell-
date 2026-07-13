@@ -6,6 +6,7 @@ import { SITE_STATS } from "@/config/siteStats";
 import { SITE_URL } from "@/lib/site";
 import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBlocks";
 import { Figure } from "@/components/Figure";
+import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 
 const PORTRAIT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg";
 
@@ -138,7 +139,7 @@ export default function About() {
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.5rem" }}>Where to begin</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "1.75rem", fontWeight: 400, color: "var(--bone)", marginBottom: "2.5rem" }}>Begin where you actually are</h2>
 
-          {PATHWAYS.map((p) => (
+          {PATHWAYS.filter((p) => SKEPTIC_TRACK_LIVE || p.href !== "/skeptic-track").map((p) => (
             <Link key={p.href} href={p.href} style={{ display: "block", textDecoration: "none", padding: "1.5rem 0", borderBottom: "1px solid rgba(244,241,234,0.12)" }}>
               <div style={{ fontFamily: "var(--F)", fontSize: "1.2rem", fontWeight: 400, color: "var(--bone)", marginBottom: "0.4rem" }}>
                 {p.label} <ArrowRight size={15} style={{ display: "inline", verticalAlign: "middle", color: "var(--mustard)" }} />
