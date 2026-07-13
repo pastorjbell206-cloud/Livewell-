@@ -53,3 +53,15 @@ export function trackPathStep(pathway: string, step: string): void {
 export function trackReturnReader(): void {
   track("return_reader");
 }
+
+/**
+ * A newsletter subscription the backend accepted. Fire this in the subscribe
+ * mutation's onSuccess — not on submit — so it counts confirmed requests, not
+ * mere intent. Carries the source and (if the reader self-selected one) the
+ * audience, never the email. Full double-opt-in confirmation is a provider
+ * concern; this is the truthful client-side success boundary.
+ */
+export function trackNewsletterSignup(source?: string, audienceType?: string): void {
+  const src = source || "unknown";
+  track("newsletter_signup", audienceType ? { source: src, audienceType } : { source: src });
+}

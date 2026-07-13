@@ -11,6 +11,7 @@ import { Mail } from "lucide-react";
 import { trpc } from "@/lib/trpc";
 import { useToast } from "@/contexts/ToastContext";
 import { substackSubscribeUrl } from "@/lib/site";
+import { trackNewsletterSignup } from "@/lib/telemetry";
 
 interface NewsletterSignupProps {
   variant?: "inline" | "footer" | "minimal";
@@ -41,6 +42,7 @@ export function NewsletterSignup({
   const addToast = toastCtx?.addToast;
   const subscribe = trpc.subscribers.subscribe.useMutation({
     onSuccess: (_data, variables) => {
+      trackNewsletterSignup(variables.source, variables.audienceType);
       setHandoffUrl(substackSubscribeUrl(variables.email, source));
       addToast?.({
         type: "success",
@@ -63,16 +65,6 @@ export function NewsletterSignup({
     e.preventDefault();
     if (!email) return;
     subscribe.mutate({ email, source, audienceType });
-    if (source && typeof window !== "undefined") {
-      // best-effort attribution; safe to ignore failures
-      try {
-        window.dispatchEvent(
-          new CustomEvent("newsletter_signup", { detail: { source } })
-        );
-      } catch {
-        /* noop */
-      }
-    }
   };
 
   // Shared post-signup state: the local record is saved; the Substack

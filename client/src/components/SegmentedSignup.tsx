@@ -14,6 +14,7 @@ import { useState } from "react";
 import { trpc } from "@/lib/trpc";
 import { useToast } from "@/contexts/ToastContext";
 import { substackSubscribeUrl } from "@/lib/site";
+import { trackNewsletterSignup } from "@/lib/telemetry";
 
 type Audience = "skeptic" | "christian" | "pastor" | "exploring";
 
@@ -65,6 +66,7 @@ export function SegmentedSignup({
   // subscription is completed by the handoff below — this just keeps a local
   // record so the segment is ours too.
   const subscribe = trpc.subscribers.subscribe.useMutation({
+    onSuccess: (_data, variables) => trackNewsletterSignup(variables.source, variables.audienceType),
     onError: err => {
       // The DB record is best-effort; the Substack handoff is what subscribes
       // them. Don't block the reader on our own write failing.
@@ -80,14 +82,11 @@ export function SegmentedSignup({
     // 1. Best-effort: record the email + segment in our own table.
     subscribe.mutate({ email, source, audienceType: audience });
 
-    // 2. Analytics: capture the segment client-side.
+    // 2. Persist the self-selected segment so a later signup can attribute it.
+    //    (The conversion event fires server-confirmed, in the mutation's
+    //    onSuccess — not here on submit, and never with the email.)
     if (typeof window !== "undefined") {
       try {
-        window.dispatchEvent(
-          new CustomEvent("newsletter_signup", {
-            detail: { audience, email },
-          })
-        );
         window.localStorage.setItem("livewell:audience", audience);
       } catch {
         /* noop */
