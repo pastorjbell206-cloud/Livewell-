@@ -1,11 +1,17 @@
 # Dead-Link Audit — hub pages linking to unpublished essays
 
-> **Status (this PR): 60 of the 64 truly-dead links repointed to verified-real
-> destinations across 9 pages.** Every new target was checked against the corpus,
-> the route table, or the history library. Remaining: the Post-Christian series
-> (Class A — a seed decision, below) and the SkepticTrack flagship (degrades to
-> the `/writing` index today, not a 404 — needs its own essays written). See
-> "Fixed in this PR" at the bottom.
+> **Status (this PR):**
+> - **Class A (Post-Christian, 60) — PUBLISHED.** The sixty essays now ship in
+>   the static library (Stage 4 of `build-static-library.mjs`), so every
+>   `/writing/:slug` in the PostChristian hub resolves at build time — no admin
+>   DB seed required. All 60 verified live.
+> - **Class B truly-dead (60 of 64) — REPOINTED** to verified-real destinations
+>   across 9 pages (corpus / route table / history library checked).
+> - **Remaining: SkepticTrack (7)** — the flagship's own essays don't exist;
+>   the page degrades to the `/writing` index today (not a 404) and still needs
+>   the essays written. That is the only open item.
+>
+> See "Fixed in this PR" at the bottom.
 
 
 > Produced by a codebase-wide scan of every hardcoded `/writing/:slug` link
