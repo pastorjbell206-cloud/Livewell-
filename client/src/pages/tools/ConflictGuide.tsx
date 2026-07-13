@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { Link } from "wouter";
 import { useState } from "react";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer, AlertTriangle } from "lucide-react";
 
@@ -1277,18 +1278,22 @@ export default function ConflictGuide() {
                     margin: "0 0 8px",
                   }}
                 >
-                  "{step.scripture.text}"
+                  {step.scripture.text}
                 </p>
-                <span
+                <Link
+                  href={`/theology/passage?ref=${encodeURIComponent(step.scripture.reference)}`}
                   style={{
                     fontSize: "13px",
                     fontWeight: 600,
                     fontFamily: "var(--U)",
-                    color: "var(--ink-muted)",
+                    color: "var(--mustard-text)",
+                    textDecoration: "none",
+                    borderBottom: "1px solid var(--mustard)",
+                    paddingBottom: "1px",
                   }}
                 >
-                  {step.scripture.reference}
-                </span>
+                  {step.scripture.reference} — read the full passage
+                </Link>
               </div>
 
               {/* Warning */}

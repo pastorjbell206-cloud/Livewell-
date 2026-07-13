@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { Link } from "wouter";
 import { useState, useMemo } from "react";
 import { Copy, Check, Search } from "lucide-react";
 import { copyToClipboard } from "@/lib/clipboard";
@@ -211,7 +212,7 @@ export default function ParentingVerses() {
                 <div key={v.ref} style={{ borderTop: "1px solid var(--border)", paddingTop: "16px" }}>
                   <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", marginBottom: "8px" }}>{v.text}</p>
                   <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px" }}>
-                    <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)" }}>{v.ref}</span>
+                    <Link href={`/theology/passage?ref=${encodeURIComponent(v.ref)}`} style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>{v.ref} →</Link>
                     <button type="button" onClick={() => copy(v)} aria-label={`Copy ${v.ref}`} style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "none", border: "none", cursor: "pointer", color: "var(--ink-muted)", fontFamily: "var(--U)", fontSize: "12px" }}>
                       {copied === v.ref ? <><Check size={14} /> Copied</> : <><Copy size={14} /> Copy</>}
                     </button>

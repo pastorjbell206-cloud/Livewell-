@@ -975,18 +975,22 @@ export default function EmotionalHealth() {
                           margin: "0 0 8px",
                         }}
                       >
-                        "{cat.scripture.text}"
+                        {cat.scripture.text}
                       </p>
-                      <span
+                      <Link
+                        href={`/theology/passage?ref=${encodeURIComponent(cat.scripture.ref)}`}
                         style={{
                           fontSize: "13px",
                           fontWeight: 600,
                           fontFamily: "var(--U)",
-                          color: "var(--ink-muted)",
+                          color: "var(--mustard-text)",
+                          textDecoration: "none",
+                          borderBottom: "1px solid var(--mustard)",
+                          paddingBottom: "1px",
                         }}
                       >
-                        {cat.scripture.ref}
-                      </span>
+                        {cat.scripture.ref} — read the full passage
+                      </Link>
                     </div>
 
                     {/* Practical steps */}
