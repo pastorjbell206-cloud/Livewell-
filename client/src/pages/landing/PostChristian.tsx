@@ -6,32 +6,32 @@ import { LandingSignup } from "@/components/LandingSignup";
 
 const TIER_1 = {
   label: "Tier 1: The Collapse of Christendom",
-  desc: "The historical arc from Constantine to the post-Christian present.",
+  desc: "The historical arc from empire to the post-Christian present.",
   articles: [
-    { title: "The Rise and Fall of Christendom", slug: "the-rise-and-fall-of-christendom" },
-    { title: "Constantine's Bargain", slug: "constantines-bargain" },
-    { title: "When the Church Married Empire", slug: "when-the-church-married-empire" },
-    { title: "The Great Schism", slug: "the-great-schism" },
-    { title: "The Reformation and Its Consequences", slug: "the-reformation-and-its-consequences" },
-    { title: "The Enlightenment and the Crisis of Authority", slug: "the-enlightenment-and-the-crisis-of-authority" },
-    { title: "The Age of Revivals", slug: "the-age-of-revivals" },
-    { title: "The Social Gospel and Its Critics", slug: "the-social-gospel-and-its-critics" },
-    { title: "The Fundamentalist-Modernist Controversy", slug: "the-fundamentalist-modernist-controversy" },
-    { title: "Christianity in a Post-Christian Age", slug: "christianity-in-a-post-christian-age" },
+    { title: "How Christianity Became an Empire", slug: "how-christianity-became-an-empire" },
+    { title: "The Great Schism: When One Church Became Two", slug: "the-great-schism" },
+    { title: "What the Reformation Actually Changed", slug: "what-the-reformation-actually-changed" },
+    { title: "The Anabaptist Option", slug: "the-anabaptist-option" },
+    { title: "How American Christianity Became American", slug: "how-american-christianity-became-american" },
+    { title: "The Rise and Fall of Mainline Protestantism", slug: "the-rise-and-fall-of-mainline-protestantism" },
+    { title: "What Evangelicalism Was Supposed to Be", slug: "what-evangelicalism-was-supposed-to-be" },
+    { title: "The Death of Christendom", slug: "the-death-of-christendom" },
   ],
 };
 
 const TIER_2 = {
   label: "Tier 2: The Denominations",
-  desc: "Seven traditions. Each carrying real wisdom and real blind spots.",
+  desc: "The traditions and their branches — each carrying real wisdom and real blind spots.",
   articles: [
-    { title: "The Catholic Intellectual Tradition", slug: "the-catholic-intellectual-tradition" },
-    { title: "The Orthodox Way", slug: "the-orthodox-way" },
-    { title: "The Mainline Protestant Collapse", slug: "the-mainline-protestant-collapse" },
-    { title: "The Evangelical Movement", slug: "the-evangelical-movement" },
-    { title: "The Pentecostal Explosion", slug: "the-pentecostal-explosion" },
-    { title: "The Black Church Tradition", slug: "the-black-church-tradition" },
-    { title: "Christianity in the Global South", slug: "christianity-in-the-global-south" },
+    { title: "Catholic, Orthodox, Protestant: The Three Families of Christianity", slug: "three-families-of-christianity" },
+    { title: "A Guide to Every Major Denomination", slug: "guide-to-every-major-denomination" },
+    { title: "Non-Denominational Doesn't Mean No Tradition", slug: "non-denominational-doesnt-mean-no-tradition" },
+    { title: "What Calvinism and Arminianism Actually Argue About", slug: "calvinism-and-arminianism" },
+    { title: "Liturgical vs. Contemporary Worship: What We Gained and What We Lost", slug: "liturgical-vs-contemporary-worship" },
+    { title: "Creeds, Confessions, and Statements of Faith: Why the Church Wrote Them Down", slug: "creeds-confessions-statements-of-faith" },
+    { title: "The Charismatic Movement Inside Every Denomination", slug: "charismatic-movement-inside-every-denomination" },
+    { title: "The Black Church: The Most Important Institution in American Christianity", slug: "the-black-church-in-america" },
+    { title: "Pentecostalism and the Global South", slug: "pentecostalism-and-the-global-south" },
   ],
 };
 
@@ -39,14 +39,14 @@ const TIER_3 = {
   label: "Tier 3: The Cultural Christ",
   desc: "How Christianity became a brand, a weapon, and a voting bloc.",
   articles: [
-    { title: "Christian Nationalism", slug: "christian-nationalism" },
-    { title: "The Prosperity Gospel", slug: "the-prosperity-gospel" },
-    { title: "Performative Faith", slug: "performative-faith" },
-    { title: "The Celebrity Pastor Problem", slug: "the-celebrity-pastor-problem" },
-    { title: "When the Church Became a Brand", slug: "when-the-church-became-a-brand" },
-    { title: "The Wreckage of Purity Culture", slug: "purity-culture-and-its-wreckage" },
-    { title: "The Church and Race", slug: "the-church-and-race" },
-    { title: "The Sexual Abuse Crisis in the Church", slug: "sexual-abuse-crisis-in-the-church" },
+    { title: "When Politics Replaced Theology", slug: "when-politics-replaced-theology" },
+    { title: "The Prosperity Gospel Is Not the Gospel", slug: "prosperity-gospel-is-not-the-gospel" },
+    { title: "Purity Culture and Its Wreckage", slug: "purity-culture-and-its-wreckage" },
+    { title: "White Evangelicalism and Race", slug: "white-evangelicalism-and-race" },
+    { title: "The Megachurch Model: What Worked, What Didn't, What's Next", slug: "megachurch-model" },
+    { title: "Toxic Masculinity in the Pulpit", slug: "toxic-masculinity-in-the-pulpit" },
+    { title: "Why the Church Lost the Culture War", slug: "why-the-church-lost-the-culture-war" },
+    { title: "Colonialism and Missions", slug: "colonialism-and-missions" },
   ],
 };
 
@@ -54,62 +54,62 @@ const TIER_4 = {
   label: "Tier 4: The Skeptic's Questions",
   desc: "The hardest objections to Christianity, taken seriously.",
   articles: [
-    { title: "Is God Real?", slug: "is-god-real" },
+    { title: "Is God Real? An Honest Assessment", slug: "is-god-real" },
     { title: "Why Does God Allow Suffering?", slug: "why-does-god-allow-suffering" },
-    { title: "Is the Bible Reliable?", slug: "is-the-bible-reliable" },
-    { title: "What About Other Religions?", slug: "what-about-other-religions" },
-    { title: "Has Science Disproved God?", slug: "has-science-disproved-god" },
-    { title: "Why Is the Church So Hypocritical?", slug: "why-is-the-church-so-hypocritical" },
-    { title: "Is Hell Real?", slug: "is-hell-real" },
-    { title: "Can I Doubt and Still Have Faith?", slug: "can-i-doubt-and-still-have-faith" },
-    { title: "What About the Violence in the Old Testament?", slug: "what-about-the-violence-in-the-old-testament" },
-    { title: "Does Christianity Oppress Women?", slug: "does-christianity-oppress-women" },
+    { title: "Can You Trust the Bible?", slug: "can-you-trust-the-bible" },
+    { title: "What Christians Actually Believe About Hell", slug: "what-christians-believe-about-hell" },
+    { title: "Science and Faith Are Not at War", slug: "science-and-faith-are-not-at-war" },
+    { title: "Evolution and Genesis: A Pastor's Guide", slug: "evolution-and-genesis" },
+    { title: "What Happened to the Historical Jesus", slug: "the-historical-jesus" },
+    { title: "Miracles: Do They Still Happen?", slug: "do-miracles-still-happen" },
+    { title: "Why Christianity and Not Something Else?", slug: "why-christianity" },
   ],
 };
 
 const TIER_5 = {
   label: "Tier 5: The Deconstruction",
-  desc: "For anyone taking their faith apart to see what holds.",
+  desc: "For anyone taking their faith apart to see what holds — and anyone the church has hurt.",
   articles: [
+    { title: "Why People Are Leaving the Church", slug: "why-people-are-leaving-the-church" },
     { title: "Deconstruction Is Not Destruction", slug: "deconstruction-is-not-destruction" },
     { title: "The Rise of the Nones", slug: "the-rise-of-the-nones" },
-    { title: "The Exvangelical Movement", slug: "exvangelical-when-leaving-isnt-losing-faith" },
-    { title: "Reconstructing Faith After Deconstruction", slug: "reconstructing-faith" },
-    { title: "The Spirituality of Doubt", slug: "the-spirituality-of-doubt" },
+    { title: "Exvangelical: When Leaving Isn't Losing Faith", slug: "exvangelical-when-leaving-isnt-losing-faith" },
     { title: "The Problem with Certainty", slug: "the-problem-with-certainty" },
+    { title: "The Spirituality of Doubt", slug: "the-spirituality-of-doubt" },
     { title: "Religious Trauma Is Real", slug: "religious-trauma-is-real" },
-    { title: "Spiritual Abuse in the Church", slug: "spiritual-abuse-how-good-theology-gets-weaponized" },
-    { title: "The Church and Mental Health", slug: "church-and-mental-health" },
-    { title: "How to Find a Church That Won't Hurt You", slug: "finding-a-good-church" },
+    { title: "Spiritual Abuse: How Good Theology Gets Weaponized", slug: "spiritual-abuse-how-good-theology-gets-weaponized" },
+    { title: "The Sexual Abuse Crisis: A Reckoning the Church Cannot Avoid", slug: "sexual-abuse-crisis-in-the-church" },
+    { title: "How the Church Handles Mental Health (Badly)", slug: "church-and-mental-health" },
+    { title: "Why Young Adults Aren't Coming Back", slug: "why-young-adults-arent-coming-back" },
   ],
 };
 
 const TIER_6 = {
-  label: "Tier 6: The World After Christendom",
-  desc: "What fills the vacuum when Christianity loses cultural authority.",
+  label: "Tier 6: Living After Christendom",
+  desc: "Faith worked out in the ordinary rooms once the culture stopped assuming it.",
   articles: [
-    { title: "Morality Without God", slug: "morality-without-god" },
-    { title: "The Meaning Crisis", slug: "the-meaning-crisis" },
-    { title: "The Loneliness Epidemic and the Loss of Community", slug: "the-loneliness-epidemic-and-the-loss-of-community" },
-    { title: "Politics as Religion", slug: "politics-as-religion" },
-    { title: "The Rise of Secular Spirituality", slug: "the-rise-of-secular-spirituality" },
-    { title: "Technology as Salvation", slug: "technology-as-salvation" },
-    { title: "The Death of Institutions", slug: "the-death-of-institutions" },
-    { title: "Identity Without Transcendence", slug: "identity-without-transcendence" },
+    { title: "How to Talk About Faith Without Being Weird", slug: "how-to-talk-about-faith" },
+    { title: "Raising Kids in a Post-Christian Culture", slug: "raising-kids-post-christian" },
+    { title: "Faith at Work When Nobody Shares It", slug: "faith-at-work" },
+    { title: "Interfaith Marriage: When You Love Someone Who Doesn't Believe", slug: "interfaith-marriage" },
+    { title: "Digital Discipleship: Spiritual Formation in the Age of Algorithms", slug: "digital-discipleship" },
+    { title: "How to Find a Church That Won't Hurt You", slug: "finding-a-good-church" },
+    { title: "When Your Family Thinks You've Lost Your Mind", slug: "family-and-faith-transitions" },
+    { title: "Women in Ministry: The Biblical Case the Church Keeps Ignoring", slug: "women-in-ministry" },
   ],
 };
 
 const TIER_7 = {
   label: "Tier 7: What Remains",
-  desc: "After the collapse, what is left standing.",
+  desc: "After the collapse, what is left standing — and what the other traditions can teach.",
   articles: [
-    { title: "The Case for the Resurrection", slug: "the-case-for-the-resurrection" },
-    { title: "What Christianity Actually Claims", slug: "what-christianity-actually-claims" },
-    { title: "The Sermon on the Mount and the Good Life", slug: "the-sermon-on-the-mount-and-the-good-life" },
-    { title: "The Church the World Needs Now", slug: "the-church-the-world-needs-now" },
-    { title: "A Faith for Grown-Ups", slug: "a-faith-for-grown-ups" },
     { title: "Christianity After Christendom", slug: "christianity-after-christendom" },
-    { title: "An Invitation to the Skeptic", slug: "an-invitation-to-the-skeptic" },
+    { title: "Reconstructing Faith: What Comes After Deconstruction", slug: "reconstructing-faith" },
+    { title: "What Christians Can Learn From Judaism", slug: "what-christians-can-learn-from-judaism" },
+    { title: "What Christians Can Learn From Islam", slug: "what-christians-can-learn-from-islam" },
+    { title: "What Christians Can Learn From Buddhism", slug: "what-christians-can-learn-from-buddhism" },
+    { title: "What Christians Can Learn From Indigenous Spirituality", slug: "what-christians-can-learn-from-indigenous-spirituality" },
+    { title: "The Mystics: Christianity's Best-Kept Secret", slug: "the-christian-mystics" },
   ],
 };
 
@@ -160,7 +160,7 @@ export default function PostChristian() {
           The end of cultural Christianity might be the beginning of actual Christianity.
         </h1>
         <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.6)", marginTop: "32px", maxWidth: "600px", marginLeft: "auto", marginRight: "auto", lineHeight: 1.7 }}>
-          Sixty essays. Seven tiers. The full story of how the most powerful religious movement in Western history is losing its grip -- and what, if anything, remains when the scaffolding falls.
+          Sixty essays. Seven tiers. The full story of how the most powerful religious movement in Western history is losing its grip — and what, if anything, remains when the scaffolding falls.
         </p>
       </section>
 
@@ -221,7 +221,7 @@ export default function PostChristian() {
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>THE ARGUMENT</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "white", marginBottom: "24px" }}>Why this series exists</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.75)", lineHeight: 1.7, marginBottom: "20px", maxWidth: "68ch" }}>
-            Christianity is not dying. Something is dying. The version of Christianity that required cultural power, political alignment, and social respectability to survive -- that version is over. What is emerging on the other side may be closer to the original thing than anything Christendom ever produced.
+            Christianity is not dying. Something is dying. The version of Christianity that required cultural power, political alignment, and social respectability to survive — that version is over. What is emerging on the other side may be closer to the original thing than anything Christendom ever produced.
           </p>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.75)", lineHeight: 1.7, maxWidth: "68ch" }}>
             These sixty essays trace the full arc: how Christianity gained the world, what it lost in the process, why people are leaving, what legitimate grievances they carry, and whether anything on the other side of this collapse is worth building on. Written by a pastor. Written from inside the room. Written for anyone who refuses to settle for easy answers in either direction.
