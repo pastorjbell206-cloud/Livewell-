@@ -1,0 +1,54 @@
+{
+  "slug": "rest-and-rhythm",
+  "title": "Rest, Sabbath, and the Cure for Hurry",
+  "subtitle": "You do not have a time problem. Three essays, a study, and a book on the rhythm the church forgot.",
+  "forWhom": "For the tired — and for the one who cannot tell the difference between tired and done.",
+  "movements": [
+    {
+      "kind": "read",
+      "heading": "Read these first",
+      "note": "Start here, in order.",
+      "items": [
+        {
+          "label": "Sabbath Is Resistance",
+          "href": "/writing/sabbath-is-resistance",
+          "blurb": "Rest as the oldest protest against a world that measures you by output."
+        },
+        {
+          "label": "The Difference Between Being Tired and Being Done",
+          "href": "/writing/difference-tired-and-done",
+          "blurb": "The line most people cross without noticing, and how to walk back from it."
+        },
+        {
+          "label": "The Restless Man: Augustine on the Ache You Cannot Fix",
+          "href": "/writing/augustine-the-restless-man",
+          "blurb": "Sixteen centuries ago someone named the exhaustion underneath the exhaustion."
+        }
+      ]
+    },
+    {
+      "kind": "study",
+      "heading": "Then take it deeper together",
+      "note": "A free, ready-to-run study you can lead with no preparation.",
+      "items": [
+        {
+          "label": "Sabbath — the study",
+          "href": "/studyguides/sabbath",
+          "blurb": "A full facilitator toolkit — the answer behind every question."
+        }
+      ]
+    },
+    {
+      "kind": "book",
+      "heading": "Then read the book — free, then buy",
+      "note": "Read it cover to cover on the site before you ever buy it.",
+      "items": [
+        {
+          "label": "Essays on Rest &amp; Sabbath",
+          "href": "/read/essays-rest-and-sabbath",
+          "blurb": "The whole case for the hour that reorders the other hundred and sixty-seven."
+        }
+      ]
+    }
+  ]
+}

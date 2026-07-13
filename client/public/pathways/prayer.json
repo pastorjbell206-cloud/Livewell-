@@ -1,0 +1,59 @@
+{
+  "slug": "prayer",
+  "title": "Learning to Pray Again",
+  "subtitle": "How do you actually pray? Four essays, a study, and a book for the reader whose prayers have gone quiet.",
+  "forWhom": "For the one who believes prayer matters and cannot remember the last time it felt like anything.",
+  "movements": [
+    {
+      "kind": "read",
+      "heading": "Read these first",
+      "note": "Start here, in order.",
+      "items": [
+        {
+          "label": "How Do You Actually Pray?",
+          "href": "/writing/how-do-you-actually-pray",
+          "blurb": "Past the technique and the guilt, to the thing prayer is actually for."
+        },
+        {
+          "label": "The Only Prayer Jesus Taught",
+          "href": "/writing/the-only-prayer-jesus-taught",
+          "blurb": "Line by line through the words he handed us when the disciples asked."
+        },
+        {
+          "label": "Praying the Words When You Have None",
+          "href": "/writing/praying-the-words-when-you-have-none",
+          "blurb": "On borrowed prayers, the Psalms, and the mercy of a script."
+        },
+        {
+          "label": "When Prayer Goes Unanswered",
+          "href": "/writing/when-prayer-goes-unanswered",
+          "blurb": "The hardest room, entered honestly — no formula, no blame."
+        }
+      ]
+    },
+    {
+      "kind": "study",
+      "heading": "Then take it deeper together",
+      "note": "A free, ready-to-run study you can lead with no preparation.",
+      "items": [
+        {
+          "label": "Prayer — the study",
+          "href": "/studyguides/prayer",
+          "blurb": "A full facilitator toolkit — the answer behind every question."
+        }
+      ]
+    },
+    {
+      "kind": "book",
+      "heading": "Then read the book — free, then buy",
+      "note": "Read it cover to cover on the site before you ever buy it.",
+      "items": [
+        {
+          "label": "Essays on Prayer",
+          "href": "/read/essays-on-prayer",
+          "blurb": "A gathered volume for the reader rebuilding a prayer life from the ground up."
+        }
+      ]
+    }
+  ]
+}
