@@ -479,11 +479,13 @@ export default function WisdomFinder() {
         <section style={{ background: "var(--bone-warm)", padding: "var(--s-4) var(--s-4)" }}>
           <div style={wrap}>
             <div style={{ ...eyebrow, marginBottom: "10px" }}>An entry for today</div>
-            <blockquote style={{ fontFamily: "var(--F)", fontSize: "clamp(19px, 2.6vw, 24px)", lineHeight: 1.5, fontStyle: "italic", color: "var(--ink)", margin: "0 0 10px", maxWidth: "68ch" }}>
-              &ldquo;{today.verses[0].text}&rdquo;
-            </blockquote>
+            {/* No quotation marks: the text is shortened to the line in view, not the
+                verbatim verse — the reference links to the whole passage to check it. */}
+            <p style={{ fontFamily: "var(--F)", fontSize: "clamp(19px, 2.6vw, 24px)", lineHeight: 1.5, fontStyle: "italic", color: "var(--ink)", margin: "0 0 10px", maxWidth: "68ch" }}>
+              {today.verses[0].text}
+            </p>
             <p style={{ fontFamily: "var(--U)", fontSize: "13.5px", color: "var(--ink-muted)", margin: "0 0 14px" }}>
-              {today.verses[0].ref} · {today.label}
+              <Link href={`/theology/passage?ref=${encodeURIComponent(today.verses[0].ref)}`} style={{ color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--line)" }}>{today.verses[0].ref} →</Link> · {today.label} · shortened; read the full passage
             </p>
             <button onClick={() => openTopic(today.id, "browse")} style={{ ...smallActionStyle }}>
               Read the whole entry
