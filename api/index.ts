@@ -1262,6 +1262,11 @@ async function trpcGetPost(id: number | string): Promise<any | null> {
         const [rows]: any = await c.execute(sql, [id]);
         if (rows[0]) {
           const r = rows[0];
+          // Unpublished = taken down. Never serve it at the direct URL, and do
+          // NOT fall through to the static library below (a DB row exists, so
+          // this slug is DB-owned) — otherwise the static copy resurfaces and
+          // the admin takedown is defeated.
+          if (!r.published) return { __takenDown: true };
           return {
             id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
             body: r.body || null, content: r.body || null,
@@ -1279,6 +1284,7 @@ async function trpcGetPost(id: number | string): Promise<any | null> {
       const row = rows[0];
       return { ...toPostCard(row), body: row.body || null, content: row.body || null };
     });
+    if (dbRow && (dbRow as any).__takenDown) return null; // 404, and no static fallback
     if (dbRow) return dbRow;
   } catch { /* no DB / unreachable: fall through to the static library */ }
   // Not in the DB (or DB down): serve from the static essay library.
