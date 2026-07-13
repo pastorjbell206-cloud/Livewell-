@@ -482,7 +482,7 @@ export default function ScriptureMemory() {
                     <BookOpen
                       size={20}
                       style={{
-                        color: "var(--mustard)",
+                        color: "var(--mustard-text)",
                         marginBottom: "12px",
                         opacity: 0.7,
                       }}
@@ -640,7 +640,7 @@ export default function ScriptureMemory() {
                           style={{
                             fontSize: "15px",
                             fontWeight: 700,
-                            color: "var(--mustard)",
+                            color: "var(--mustard-text)",
                             fontFamily: "var(--U)",
                           }}
                         >
@@ -973,7 +973,7 @@ export default function ScriptureMemory() {
                                     fontWeight: 700,
                                     fontFamily: "var(--U)",
                                     color: recallResult
-                                      ? "var(--mustard)"
+                                      ? "var(--mustard-text)"
                                       : "var(--alert)",
                                   }}
                                 >

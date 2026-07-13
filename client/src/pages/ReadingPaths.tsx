@@ -410,7 +410,7 @@ export default function ReadingPaths() {
                       fontWeight: 500,
                       letterSpacing: "0.18em",
                       textTransform: "uppercase",
-                      color: "var(--mustard)",
+                      color: "var(--mustard-text)",
                     }}
                   >
                     PATH {path.id}
@@ -469,7 +469,7 @@ export default function ReadingPaths() {
                   fontWeight: 500,
                   letterSpacing: "0.18em",
                   textTransform: "uppercase",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   marginBottom: "1rem",
                 }}
               >
@@ -567,7 +567,7 @@ export default function ReadingPaths() {
                           fontFamily: "var(--F)",
                           fontSize: "1.5rem",
                           fontWeight: 400,
-                          color: "var(--mustard)",
+                          color: "var(--mustard-text)",
                           lineHeight: 1,
                           minWidth: "1.75rem",
                           paddingTop: "0.15rem",

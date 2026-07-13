@@ -30,7 +30,7 @@ export default function Pillars() {
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           {/* Header */}
           <div style={{ textAlign: "center", marginBottom: "var(--s-6)" }}>
-            <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>
+            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "16px" }}>
               The Library
             </div>
             <h1

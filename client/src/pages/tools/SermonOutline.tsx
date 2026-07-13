@@ -488,7 +488,7 @@ export default function SermonOutline() {
                   fontSize: "13px",
                   fontWeight: 700,
                   letterSpacing: "0.15em",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   fontFamily: "var(--U)",
                   marginBottom: "28px",
                 }}
@@ -759,7 +759,7 @@ export default function SermonOutline() {
                       fontSize: "11px",
                       fontWeight: 700,
                       letterSpacing: "0.18em",
-                      color: "var(--mustard)",
+                      color: "var(--mustard-text)",
                       fontFamily: "var(--U)",
                       padding: "4px 12px",
                       background: "var(--bone)",
@@ -806,7 +806,7 @@ export default function SermonOutline() {
                     fontSize: "13px",
                     fontWeight: 700,
                     letterSpacing: "0.15em",
-                    color: "var(--mustard)",
+                    color: "var(--mustard-text)",
                     fontFamily: "var(--U)",
                     marginBottom: "16px",
                   }}
@@ -834,7 +834,7 @@ export default function SermonOutline() {
                         style={{
                           fontFamily: "var(--F)",
                           fontSize: "20px",
-                          color: "var(--mustard)",
+                          color: "var(--mustard-text)",
                           flexShrink: 0,
                           width: "24px",
                           textAlign: "center",
@@ -864,7 +864,7 @@ export default function SermonOutline() {
                     fontSize: "13px",
                     fontWeight: 700,
                     letterSpacing: "0.15em",
-                    color: "var(--mustard)",
+                    color: "var(--mustard-text)",
                     fontFamily: "var(--U)",
                     marginBottom: "12px",
                   }}
@@ -901,7 +901,7 @@ export default function SermonOutline() {
                     fontSize: "13px",
                     fontWeight: 700,
                     letterSpacing: "0.15em",
-                    color: "var(--mustard)",
+                    color: "var(--mustard-text)",
                     fontFamily: "var(--U)",
                     marginBottom: "16px",
                   }}
@@ -945,7 +945,7 @@ export default function SermonOutline() {
                         fontFamily: "var(--F)",
                         fontSize: "36px",
                         fontWeight: 300,
-                        color: "var(--mustard)",
+                        color: "var(--mustard-text)",
                         lineHeight: 1,
                         flexShrink: 0,
                       }}
@@ -978,14 +978,14 @@ export default function SermonOutline() {
                   >
                     <FileText
                       size={14}
-                      style={{ color: "var(--mustard)", flexShrink: 0 }}
+                      style={{ color: "var(--mustard-text)", flexShrink: 0 }}
                     />
                     <span
                       style={{
                         fontSize: "13px",
                         fontWeight: 700,
                         fontFamily: "var(--U)",
-                        color: "var(--mustard)",
+                        color: "var(--mustard-text)",
                         letterSpacing: "0.08em",
                       }}
                     >
@@ -1035,7 +1035,7 @@ export default function SermonOutline() {
                         fontSize: "11px",
                         fontWeight: 700,
                         letterSpacing: "0.15em",
-                        color: "var(--mustard)",
+                        color: "var(--mustard-text)",
                         fontFamily: "var(--U)",
                         marginBottom: "8px",
                       }}

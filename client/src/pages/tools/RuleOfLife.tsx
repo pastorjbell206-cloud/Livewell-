@@ -238,7 +238,7 @@ export default function RuleOfLife() {
           {CATEGORIES.map((cat) => (
             <div key={cat.id} style={{ marginBottom: "var(--s-4)" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "4px" }}>
-                <cat.icon size={18} style={{ color: "var(--mustard)" }} />
+                <cat.icon size={18} style={{ color: "var(--mustard-text)" }} />
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.6vw, 26px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)" }}>{cat.title}</h2>
               </div>
               <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--ink-muted)", marginBottom: "var(--s-2)", maxWidth: "60ch" }}>{cat.intro}</p>

@@ -172,7 +172,7 @@ export default function ResourcesForPastors() {
                       <BookOpen
                         size={28}
                         aria-hidden
-                        style={{ color: "var(--mustard)", flexShrink: 0 }}
+                        style={{ color: "var(--mustard-text)", flexShrink: 0 }}
                       />
                       <div style={{ flex: 1, minWidth: 0 }}>
                         {resource.category && (

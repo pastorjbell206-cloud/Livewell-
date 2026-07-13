@@ -482,7 +482,7 @@ export default function EmotionalHealth() {
                         fontSize: "13px",
                         fontWeight: 700,
                         letterSpacing: "0.15em",
-                        color: "var(--mustard)",
+                        color: "var(--mustard-text)",
                         fontFamily: "var(--U)",
                         marginBottom: "24px",
                       }}
@@ -666,7 +666,7 @@ export default function EmotionalHealth() {
                     fontSize: "11px",
                     fontWeight: 700,
                     letterSpacing: "0.18em",
-                    color: "var(--mustard)",
+                    color: "var(--mustard-text)",
                     fontFamily: "var(--U)",
                     marginBottom: "12px",
                   }}
@@ -800,7 +800,7 @@ export default function EmotionalHealth() {
                     fontSize: "11px",
                     fontWeight: 700,
                     letterSpacing: "0.18em",
-                    color: "var(--mustard)",
+                    color: "var(--mustard-text)",
                     fontFamily: "var(--U)",
                     marginBottom: "12px",
                   }}
@@ -875,7 +875,7 @@ export default function EmotionalHealth() {
                           fontSize: "13px",
                           fontWeight: 700,
                           letterSpacing: "0.15em",
-                          color: "var(--mustard)",
+                          color: "var(--mustard-text)",
                           fontFamily: "var(--U)",
                           margin: 0,
                         }}
@@ -1017,7 +1017,7 @@ export default function EmotionalHealth() {
                               fontFamily: "var(--F)",
                               fontSize: "22px",
                               fontWeight: 400,
-                              color: "var(--mustard)",
+                              color: "var(--mustard-text)",
                               lineHeight: 1.2,
                               flexShrink: 0,
                               width: "24px",
@@ -1067,7 +1067,7 @@ export default function EmotionalHealth() {
                             fontSize: "10px",
                             fontWeight: 700,
                             letterSpacing: "0.15em",
-                            color: "var(--mustard)",
+                            color: "var(--mustard-text)",
                             fontFamily: "var(--U)",
                             display: "block",
                             marginBottom: "4px",

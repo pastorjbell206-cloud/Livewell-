@@ -39,7 +39,7 @@ export function StartHereRow({
                 textDecoration: "none",
               }}
             >
-              <span aria-hidden style={{ fontFamily: "var(--F)", fontSize: "28px", lineHeight: 1, color: "var(--mustard)", fontStyle: "italic", flex: "0 0 auto" }}>
+              <span aria-hidden style={{ fontFamily: "var(--F)", fontSize: "28px", lineHeight: 1, color: "var(--mustard-text)", fontStyle: "italic", flex: "0 0 auto" }}>
                 {i + 1}
               </span>
               <span>

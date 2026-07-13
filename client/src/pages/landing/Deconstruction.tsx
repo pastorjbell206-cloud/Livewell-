@@ -93,7 +93,7 @@ export default function Deconstruction() {
       {/* The Landscape */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>WHAT IS HAPPENING</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>WHAT IS HAPPENING</p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "40px", marginBottom: "32px" }}>
             <div>
               <p style={{ fontFamily: "var(--F)", fontSize: "48px", fontWeight: 400, color: "var(--ink)", lineHeight: 1 }}>40M</p>
@@ -113,26 +113,26 @@ export default function Deconstruction() {
       {/* Three Starting Points */}
       <section style={{ background: "var(--bone-warm)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>WHERE ARE YOU</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>WHERE ARE YOU</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "32px" }}>Start where you actually are</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <Link href="/writing/deconstruction-is-not-destruction" style={{ textDecoration: "none" }}>
               <div style={{ background: "var(--card)", padding: "24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
-                <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "8px" }}>I AM DECONSTRUCTING</p>
+                <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "8px" }}>I AM DECONSTRUCTING</p>
                 <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)", marginBottom: "8px" }}>Deconstruction Is Not Destruction</p>
                 <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6 }}>For the person in the middle of it. The thing that feels like falling apart might be the thing that puts you back together.</p>
               </div>
             </Link>
             <Link href="/writing/reconstructing-faith-after-deconstruction" style={{ textDecoration: "none" }}>
               <div style={{ background: "var(--card)", padding: "24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
-                <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "8px" }}>I AM REBUILDING</p>
+                <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "8px" }}>I AM REBUILDING</p>
                 <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)", marginBottom: "8px" }}>Reconstructing Faith After Deconstruction</p>
                 <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6 }}>For the person who has taken the old structure down and wants to know if anything worth building remains.</p>
               </div>
             </Link>
             <Link href="/writing/the-rise-of-the-nones" style={{ textDecoration: "none" }}>
               <div style={{ background: "var(--card)", padding: "24px", borderRadius: "3px", border: "1px solid rgba(0,0,0,0.06)" }}>
-                <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "8px" }}>I LEFT AND I AM NOT GOING BACK</p>
+                <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "8px" }}>I LEFT AND I AM NOT GOING BACK</p>
                 <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)", marginBottom: "8px" }}>The Rise of the Nones</p>
                 <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.6 }}>For the person who walked away. This is not a guilt trip. It is an honest look at what you left and why millions are doing the same.</p>
               </div>
@@ -144,14 +144,14 @@ export default function Deconstruction() {
       {/* Featured Articles */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>THE ESSAYS</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>THE ESSAYS</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "32px" }}>Writing that takes your questions seriously</h2>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {ARTICLES.map((a) => (
               <Link key={a.slug} href={`/writing/${a.slug}`} style={{ textDecoration: "none" }}>
                 <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard)" }}>Read</span>
+                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
                 </div>
               </Link>
             ))}
@@ -162,7 +162,7 @@ export default function Deconstruction() {
       {/* FAQ */}
       <section style={{ background: "var(--bone-warm)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>COMMON QUESTIONS</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>COMMON QUESTIONS</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "32px" }}>What people ask about deconstruction</h2>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {FAQ_ITEMS.map((item, i) => (
@@ -198,7 +198,7 @@ export default function Deconstruction() {
       {/* Next Step */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>KEEP READING</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>KEEP READING</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>The full post-Christian series</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
             Deconstruction is one piece of a larger story. Sixty essays tracing what happens when a culture built on Christianity starts to move past it.

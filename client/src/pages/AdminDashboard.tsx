@@ -474,7 +474,7 @@ export default function AdminDashboard() {
                   className="flex items-start gap-3 p-4 rounded-lg no-underline transition-transform hover:scale-[1.01]"
                   style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}
                 >
-                  <Icon size={20} style={{ color: "var(--mustard)", flexShrink: 0, marginTop: 2 }} />
+                  <Icon size={20} style={{ color: "var(--mustard-text)", flexShrink: 0, marginTop: 2 }} />
                   <div style={{ minWidth: 0 }}>
                     <div className="font-ui font-semibold text-sm" style={{ color: "var(--charcoal)" }}>{t.title}</div>
                     <div className="font-body text-xs mt-0.5" style={{ color: "var(--ink-muted)", lineHeight: 1.5 }}>{t.desc}</div>
