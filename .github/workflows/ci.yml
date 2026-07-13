@@ -39,6 +39,7 @@ jobs:
           node scripts/validate-no-emdash.mjs
           node scripts/validate-content-integrity.mjs
           node scripts/validate-skeptic-track.mjs
+          node scripts/validate-books.mjs
 
       - name: Test
         run: pnpm test

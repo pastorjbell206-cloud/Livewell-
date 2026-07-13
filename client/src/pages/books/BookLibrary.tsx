@@ -40,11 +40,20 @@ function BookCard({ b }: { b: LibraryBook }) {
 }
 
 export default function BookLibrary() {
-  const [books, setBooks] = useState<LibraryBook[]>([]);
+  // null = still loading; [] after load = the manifest failed to serve (the
+  // library ships with dozens of books, so an empty result is a load error,
+  // never "nothing written yet").
+  const [books, setBooks] = useState<LibraryBook[] | null>(null);
   useEffect(() => {
-    fetchLibraryBooks().then(setBooks);
+    let alive = true;
+    fetchLibraryBooks().then((b) => {
+      if (alive) setBooks(b);
+    });
+    return () => {
+      alive = false;
+    };
   }, []);
-  const groups = groupBooksByPillar(books);
+  const groups = groupBooksByPillar(books ?? []);
 
   return (
     <Layout>
@@ -67,8 +76,10 @@ export default function BookLibrary() {
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={wrap}>
-          {books.length === 0 ? (
-            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>The first books are being written. Check back soon.</p>
+          {books === null ? (
+            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the library…</p>
+          ) : books.length === 0 ? (
+            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>The library could not load right now. Please refresh the page.</p>
           ) : (
             groups.map((g) => (
               <section key={g.pillar} style={{ marginBottom: "var(--s-6)" }}>
