@@ -751,6 +751,7 @@ export default function PastorBurnout() {
       setShowResults(true);
       persist(answers, currentCategory);
       setTimeout(() => {
+        resultsRef.current?.focus({ preventScroll: true });
         resultsRef.current?.scrollIntoView({ behavior: "smooth" });
       }, 100);
     } else if (!isLastCategory) {
@@ -1334,8 +1335,11 @@ export default function PastorBurnout() {
         <>
         <section
           ref={resultsRef}
+          tabIndex={-1}
+          role="region"
+          aria-label="Your burnout assessment results"
           className="pb-screen"
-          style={{ padding: "48px 32px 80px", background: "var(--bone)" }}
+          style={{ padding: "48px 32px 80px", background: "var(--bone)", outline: "none" }}
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
             <ToolActions toolName="Pastor Burnout Diagnostic" />

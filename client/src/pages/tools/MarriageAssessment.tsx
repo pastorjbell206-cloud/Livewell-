@@ -361,6 +361,7 @@ export default function MarriageAssessment() {
       setShowResults(true);
       persist(answers, currentCategory);
       setTimeout(() => {
+        resultsRef.current?.focus({ preventScroll: true });
         resultsRef.current?.scrollIntoView({ behavior: "smooth" });
       }, 100);
     } else if (!isLastCategory) {
@@ -825,7 +826,10 @@ export default function MarriageAssessment() {
       {showResults && (
         <section
           ref={resultsRef}
-          style={{ padding: "48px 32px 80px", background: "var(--bone)" }}
+          tabIndex={-1}
+          role="region"
+          aria-label="Your marriage health results"
+          style={{ padding: "48px 32px 80px", background: "var(--bone)", outline: "none" }}
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
             <ToolActions toolName="Marriage Health Assessment" />
