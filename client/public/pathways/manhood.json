@@ -1,0 +1,49 @@
+{
+  "slug": "manhood",
+  "title": "Manhood, the Father Wound, and Raising Sons",
+  "subtitle": "Two essays, a study, and a book — from a man raised without a father, raising five sons.",
+  "forWhom": "For the man carrying a wound he never named, and for anyone raising a boy toward a manhood the culture keeps counterfeiting.",
+  "movements": [
+    {
+      "kind": "read",
+      "heading": "Read these first",
+      "note": "Start with the wound underneath, then the work of handing something better forward.",
+      "items": [
+        {
+          "label": "The Father Wound and the God Question",
+          "href": "/writing/the-father-wound-and-the-god-question",
+          "blurb": "How the father you had — or did not have — quietly shapes the God you can imagine."
+        },
+        {
+          "label": "Raising Sons Toward a Manhood Worth Having",
+          "href": "/writing/raising-sons-manhood",
+          "blurb": "What it takes to form a boy when every easy model of manhood on offer is a counterfeit."
+        }
+      ]
+    },
+    {
+      "kind": "study",
+      "heading": "Then take it deeper together",
+      "note": "A free, ready-to-run study you can lead with no preparation.",
+      "items": [
+        {
+          "label": "Manhood — the study",
+          "href": "/studyguides/manhood",
+          "blurb": "A full facilitator toolkit — the answer behind every question."
+        }
+      ]
+    },
+    {
+      "kind": "book",
+      "heading": "Then read the book — free, then buy",
+      "note": "Read it cover to cover on the site before you ever buy it.",
+      "items": [
+        {
+          "label": "Essays on Manhood",
+          "href": "/read/essays-manhood",
+          "blurb": "The gathered volume, for the man doing the long work of becoming one."
+        }
+      ]
+    }
+  ]
+}
