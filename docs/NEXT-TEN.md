@@ -47,9 +47,13 @@ duplicate it). Of the four Constitution metrics: ☑ scroll-to-finish
 (`essay_read_complete`, wired in ArticleDetail), ☑ return visits
 (`return_reader`, now fired once per load via `trackReturnReaderOnce` in App),
 ☑ essay→book clickthrough (`essay_book_click`, now on the KeepReadingBook CTA).
-☐ Reading-path completion (`path_step_complete`) is defined but unwired: the
-reading-path UX has no per-step "done" signal yet, so emitting it honestly needs
-a small progress mechanism in ReadingPathDetail first. No PII, no cookie.
+☐ Reading-path completion (`path_step_complete`) is defined but unwired, and
+that is blocked upstream: there are **three** overlapping reading-path systems
+(`/reading-paths` → `ReadingPathDetail`, `/pathways` → `TopicPathway` reading
+`public/pathways/*.json`, and an orphaned `lib/readingPaths.ts`). Until one is
+made canonical (see `docs/site-audit.md`), there is no single clean per-step
+"done" signal to emit. Consolidate first, then wire this one event. No PII,
+no cookie.
 
 ## Tier 3 — owner-gated
 

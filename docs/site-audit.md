@@ -63,6 +63,14 @@ brackets. Owner-gated items marked ⛔.
   `/writing/complicity-not-innocence` → `/justice` (~lines 81 & 221).
 - **P2** [med] Competing onboarding: `/start` vs `/start-here` — two experiences,
   one intent. Confirm canonical (⛔ owner decision; also open in ELEVATION-SUMMARY).
+- **P2** [med] **Three reading-path systems** (found while wiring depth metric #4):
+  `/reading-paths/:slug` → `ReadingPathDetail` (topic-filtered tRPC posts);
+  `/pathways/:slug` → `TopicPathway` (renders `public/pathways/*.json`,
+  arbitrary `href` items); and `lib/readingPaths.ts` (a documented "single source
+  of truth" — but **imported nowhere**, orphaned). Pick one canonical system and
+  consolidate. This tangle is *why* the `path_step_complete` depth metric is not
+  wired: there is no single, clean per-step "done" signal to emit from. ⛔ product
+  decision.
 
 ### Performance
 - ~~P1~~ **REJECTED on verification.** `content-data-*.js` (2,715 kB) looked
