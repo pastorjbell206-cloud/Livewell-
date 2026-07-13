@@ -6,6 +6,7 @@
  */
 import { Link } from "wouter";
 import { pillarForPost, resolveTrack } from "@/lib/taxonomy";
+import { trackBookClick } from "@/lib/telemetry";
 
 interface PostLike {
   slug?: string | null;
@@ -306,7 +307,7 @@ export function KeepReadingBook({ post }: { post: PostLike }) {
           <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "rgba(245,240,230,.8)", margin: "0 0 18px", maxWidth: "54ch" }}>
             {book.blurb}
           </p>
-          <Link href={book.href ?? `/${book.slug}`} style={{ display: "inline-block", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 26px", borderRadius: "var(--radius-sm)", textDecoration: "none" }}>
+          <Link href={book.href ?? `/${book.slug}`} onClick={() => trackBookClick(post.slug ?? "", book.slug)} style={{ display: "inline-block", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 26px", borderRadius: "var(--radius-sm)", textDecoration: "none" }}>
             Read the book →
           </Link>
         </div>
