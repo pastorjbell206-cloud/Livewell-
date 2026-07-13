@@ -115,7 +115,7 @@ export default function Table() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: "var(--s-3)" }}>
             {PATH.map((p, i) => (
               <div key={p.step} style={{ background: "var(--card)", border: "1px solid var(--line)", padding: "var(--s-4)" }}>
-                <div style={{ fontFamily: "var(--F)", fontSize: "40px", color: "var(--mustard)", lineHeight: 1, marginBottom: "10px" }}>{i + 1}</div>
+                <div style={{ fontFamily: "var(--F)", fontSize: "40px", color: "var(--mustard-text)", lineHeight: 1, marginBottom: "10px" }}>{i + 1}</div>
                 <div style={{ fontFamily: "var(--F)", fontSize: "21px", color: "var(--ink)", marginBottom: "8px" }}>{p.step}</div>
                 <div style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{p.body}</div>
               </div>

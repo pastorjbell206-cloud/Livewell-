@@ -866,7 +866,7 @@ export default function LifeAudit() {
                         fontFamily: "var(--F)",
                         fontSize: "24px",
                         fontWeight: 400,
-                        color: "var(--mustard)",
+                        color: "var(--mustard-text)",
                         lineHeight: 1.2,
                         flexShrink: 0,
                         width: "28px",
@@ -1043,7 +1043,7 @@ export default function LifeAudit() {
                   fontSize: "11px",
                   fontWeight: 700,
                   letterSpacing: "0.2em",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   fontFamily: "var(--U)",
                   marginBottom: "20px",
                 }}
@@ -1113,7 +1113,7 @@ export default function LifeAudit() {
                   fontSize: "13px",
                   fontWeight: 700,
                   letterSpacing: "0.15em",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   fontFamily: "var(--U)",
                   marginBottom: "28px",
                 }}
@@ -1453,7 +1453,7 @@ export default function LifeAudit() {
                       fontSize: "14px",
                       fontFamily: "var(--U)",
                       fontWeight: 600,
-                      color: "var(--mustard)",
+                      color: "var(--mustard-text)",
                       borderBottom: "1px solid rgba(212,160,23,0.35)",
                       paddingBottom: "2px",
                     }}

@@ -1190,7 +1190,7 @@ export default function PastorBurnout() {
                         fontFamily: "var(--F)",
                         fontSize: "24px",
                         fontWeight: 400,
-                        color: "var(--mustard)",
+                        color: "var(--mustard-text)",
                         lineHeight: 1.2,
                         flexShrink: 0,
                         width: "28px",
@@ -1369,7 +1369,7 @@ export default function PastorBurnout() {
                   fontSize: "11px",
                   fontWeight: 700,
                   letterSpacing: "0.2em",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   fontFamily: "var(--U)",
                   marginBottom: "20px",
                 }}
@@ -1585,7 +1585,7 @@ export default function PastorBurnout() {
                   fontSize: "13px",
                   fontWeight: 700,
                   letterSpacing: "0.15em",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   fontFamily: "var(--U)",
                   marginBottom: "28px",
                 }}
@@ -1676,7 +1676,7 @@ export default function PastorBurnout() {
                   fontSize: "13px",
                   fontWeight: 700,
                   letterSpacing: "0.15em",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   fontFamily: "var(--U)",
                   marginBottom: "20px",
                 }}
@@ -1918,14 +1918,14 @@ export default function PastorBurnout() {
               >
                 <Phone
                   size={18}
-                  style={{ color: "var(--mustard)", flexShrink: 0 }}
+                  style={{ color: "var(--mustard-text)", flexShrink: 0 }}
                 />
                 <h3
                   style={{
                     fontSize: "13px",
                     fontWeight: 700,
                     letterSpacing: "0.15em",
-                    color: "var(--mustard)",
+                    color: "var(--mustard-text)",
                     fontFamily: "var(--U)",
                     margin: 0,
                   }}
@@ -2383,7 +2383,7 @@ export default function PastorBurnout() {
                       fontSize: "11px",
                       fontWeight: 700,
                       letterSpacing: "0.18em",
-                      color: "var(--mustard)",
+                      color: "var(--mustard-text)",
                       fontFamily: "var(--U)",
                       marginBottom: "6px",
                     }}

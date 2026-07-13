@@ -31,7 +31,7 @@ export default function MarriageCrisis() {
       {/* Stats */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>YOU ARE NOT ALONE</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>YOU ARE NOT ALONE</p>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink)", lineHeight: 1.7, maxWidth: "68ch" }}>
             Marriage does not fail because two people are incompatible. It fails because two people stop doing the costly work of seeing each other. These essays are not tips. They are theology pressed into the hardest room in the house.
           </p>
@@ -41,14 +41,14 @@ export default function MarriageCrisis() {
       {/* Featured Articles */}
       <section style={{ background: "var(--bone-warm)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>START READING</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>START READING</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "32px" }}>Essays for the marriage nobody posts about</h2>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {ARTICLES.map((a) => (
               <Link key={a.slug} href={`/writing/${a.slug}`} style={{ textDecoration: "none" }}>
                 <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard)" }}>Read</span>
+                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
                 </div>
               </Link>
             ))}
@@ -59,7 +59,7 @@ export default function MarriageCrisis() {
       {/* Book */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>RECOMMENDED READING</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>RECOMMENDED READING</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>The First Flock</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
             Before you lead a church, you lead a family. A book about what it costs to pastor the people under your own roof first.
@@ -75,7 +75,7 @@ export default function MarriageCrisis() {
           to resolve). */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>IF YOU NEED MORE THAN AN ESSAY</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>IF YOU NEED MORE THAN AN ESSAY</p>
           <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "68ch" }}>Writing can keep you company. It cannot sit in the room with you and your spouse. These are external organizations we are not affiliated with, whose work we trust. And if what is happening at home is not conflict but abuse, that is not a marriage problem to work through. It is a safety question, and it is a today conversation.</p>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             <a href="tel:18007997233" style={{ textDecoration: "none" }}>
@@ -112,7 +112,7 @@ export default function MarriageCrisis() {
       {/* Next Step */}
       <section style={{ background: "var(--bone-warm)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>NEXT STEP</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>NEXT STEP</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>Assess where your marriage actually is</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
             The Marriage Assessment is not a quiz. It is a structured conversation starter. Honest questions. No score. Just a clearer picture.

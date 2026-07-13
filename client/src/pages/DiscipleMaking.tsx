@@ -121,7 +121,7 @@ export default function DiscipleMaking() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "var(--s-3)" }}>
             {PATH.map((item, i) => (
               <Link key={item.slug} href={item.href} style={{ display: "block", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
-                <div style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", color: "var(--mustard)", marginBottom: "8px" }}>{String(i + 1).padStart(2, "0")}</div>
+                <div style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", color: "var(--mustard-text)", marginBottom: "8px" }}>{String(i + 1).padStart(2, "0")}</div>
                 <div style={{ fontFamily: "var(--F)", fontSize: "20px", lineHeight: 1.25, color: "var(--ink)", marginBottom: "8px" }}>{item.title}</div>
                 <div style={{ fontFamily: "var(--B)", fontSize: "13.5px", lineHeight: 1.55, color: "var(--ink-muted)" }}>{item.blurb}</div>
               </Link>

@@ -80,7 +80,7 @@ export default function ParentingStruggles() {
       {/* What the writing here actually is */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>YOU ARE NOT ALONE</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>YOU ARE NOT ALONE</p>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink)", lineHeight: 1.7, maxWidth: "68ch", marginBottom: "40px" }}>
             Most parenting advice is built on fear. Fear that you will ruin them. Fear that they will leave the faith. Fear that you are not enough. These essays start somewhere different. They start with the truth that your children do not need a perfect parent. They need an honest one.
           </p>
@@ -98,14 +98,14 @@ export default function ParentingStruggles() {
       {/* Featured Articles */}
       <section style={{ background: "var(--bone-warm)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>START READING</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>START READING</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "32px" }}>Essays for parents who are done pretending they have it figured out</h2>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {ARTICLES.map((a) => (
               <Link key={a.slug} href={`/writing/${a.slug}`} style={{ textDecoration: "none" }}>
                 <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard)" }}>Read</span>
+                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
                 </div>
               </Link>
             ))}
@@ -116,7 +116,7 @@ export default function ParentingStruggles() {
       {/* Book */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>RECOMMENDED READING</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>RECOMMENDED READING</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>The First Flock</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
             Written by a father of five sons. A book about what it means to pastor the people under your own roof before you lead anyone else.
@@ -130,7 +130,7 @@ export default function ParentingStruggles() {
       {/* FAQ */}
       <section style={{ background: "var(--bone-warm)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>THE QUESTIONS YOU CAME HERE WITH</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>THE QUESTIONS YOU CAME HERE WITH</p>
           <div style={{ display: "flex", flexDirection: "column", gap: "36px" }}>
             {FAQ_ITEMS.map((item) => (
               <div key={item.question}>
@@ -145,7 +145,7 @@ export default function ParentingStruggles() {
       {/* Real help (the care standard requires a visible path) */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>IF YOU NEED MORE THAN AN ESSAY</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>IF YOU NEED MORE THAN AN ESSAY</p>
           <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "68ch" }}>
             Some nights are past what any writing can carry. If your child is in real danger, or your home is at a place these words cannot reach, please do not stay here alone with it. A licensed family counselor can sit in the specifics of your house in a way an essay never will. If you have a pastor, call them tonight. These essays are meant to walk beside you. They were never meant to stand in for the help a real person can give.
           </p>
@@ -178,7 +178,7 @@ export default function ParentingStruggles() {
       {/* Next Step */}
       <section style={{ background: "var(--bone-warm)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>NEXT STEP</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>NEXT STEP</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>Get a framework that actually helps</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "52ch", marginLeft: "auto", marginRight: "auto" }}>
             The Parenting Guide tool gives you age-specific, theology-informed questions and practices. Not rules. Not shame. Just honest direction.

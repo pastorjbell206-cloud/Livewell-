@@ -257,7 +257,7 @@ export default function DiscipleshipTable() {
               {/* Invitation */}
               <div style={{ marginBottom: "var(--s-4)" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
-                  <Mail size={16} style={{ color: "var(--mustard)" }} />
+                  <Mail size={16} style={{ color: "var(--mustard-text)" }} />
                   <span style={{ ...eyebrow, color: "var(--ink)" }}>The invitation</span>
                 </div>
                 <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", background: "#FFFFFF", borderLeft: "3px solid var(--mustard)", padding: "var(--s-3)", fontStyle: "italic" }}>
@@ -277,7 +277,7 @@ export default function DiscipleshipTable() {
                 <div style={{ display: "grid", gap: "var(--s-2)" }}>
                   {FLOW.map((f) => (
                     <div key={f.label} style={{ display: "flex", gap: "12px", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", padding: "var(--s-3)" }}>
-                      <f.icon size={18} style={{ color: "var(--mustard)", flexShrink: 0, marginTop: "2px" }} />
+                      <f.icon size={18} style={{ color: "var(--mustard-text)", flexShrink: 0, marginTop: "2px" }} />
                       <div>
                         <div style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", marginBottom: "4px" }}>{f.label}</div>
                         <div style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{f.text}</div>

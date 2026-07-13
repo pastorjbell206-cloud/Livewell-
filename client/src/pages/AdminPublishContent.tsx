@@ -298,7 +298,7 @@ export default function AdminPublishContent() {
               {result.missing.length === 0 ? (
                 <CheckCircle2 size={20} style={{ color: "var(--adm-ok)" }} />
               ) : (
-                <AlertTriangle size={20} style={{ color: "var(--mustard)" }} />
+                <AlertTriangle size={20} style={{ color: "var(--mustard-text)" }} />
               )}
               <span className="font-ui font-semibold" style={{ color: "var(--charcoal)" }}>
                 {result.dryRun ? "Test result (nothing changed)" : "Published"}

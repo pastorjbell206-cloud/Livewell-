@@ -156,7 +156,7 @@ export default function AdminSetupNavigation() {
               {result.stragglers === 0 ? (
                 <CheckCircle2 size={20} style={{ color: "var(--adm-ok)" }} />
               ) : (
-                <AlertTriangle size={20} style={{ color: "var(--mustard)" }} />
+                <AlertTriangle size={20} style={{ color: "var(--mustard-text)" }} />
               )}
               <span className="font-ui font-semibold" style={{ color: "var(--charcoal)" }}>
                 {result.stragglers === 0 ? "Navigation is set up" : "Almost done"}

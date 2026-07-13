@@ -1175,14 +1175,14 @@ function PassageCard({ passage }: { passage: Passage }) {
                 marginBottom: "8px",
               }}
             >
-              <BookOpen size={14} style={{ color: "var(--mustard)" }} />
+              <BookOpen size={14} style={{ color: "var(--mustard-text)" }} />
               <span
                 style={{
                   fontSize: "11px",
                   fontWeight: 600,
                   letterSpacing: "0.18em",
                   textTransform: "uppercase",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   fontFamily: "var(--sans)",
                 }}
               >
@@ -1583,7 +1583,7 @@ export default function BibleReference() {
                     marginBottom: "14px",
                   }}
                 >
-                  <Scale size={18} style={{ color: "var(--mustard)" }} />
+                  <Scale size={18} style={{ color: "var(--mustard-text)" }} />
                   <h3
                     style={{
                       fontFamily: "var(--display)",
