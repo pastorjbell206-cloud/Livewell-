@@ -24,9 +24,22 @@ interface Quote {
   author: string;
   source?: string;
   tags: string[];
+  /**
+   * How faithful the wording is to the source. Omitted means a verbatim
+   * quotation. "paraphrase" is our wording of the author's idea; "adapted"
+   * is a phrase the author themselves borrowed and reshaped. The archive
+   * labels these so an idea we restated is never mistaken for the author's
+   * exact words — the one line a commonplace book cannot blur.
+   */
+  kind?: "paraphrase" | "adapted";
   /** Optional Bell commentary that appears below the quote. */
   note?: string;
 }
+
+const KIND_LABEL: Record<NonNullable<Quote["kind"]>, string> = {
+  paraphrase: "Paraphrase",
+  adapted: "Adapted",
+};
 
 // Seed quotes. Bell edits / expands these in code for v1.
 const QUOTES: Quote[] = [
@@ -56,6 +69,7 @@ const QUOTES: Quote[] = [
     text: "A long obedience in the same direction.",
     author: "Eugene Peterson",
     source: "borrowing Nietzsche",
+    kind: "adapted",
     tags: ["pastoring", "formation"],
     note:
       "Peterson borrowed this from Nietzsche on purpose. The shape of faithful pastoring lives in the borrowed clause, not in the original target.",
@@ -78,7 +92,8 @@ const QUOTES: Quote[] = [
     id: 7,
     text: "A secular age is not an age without religion; it is an age where belief is contested, optional, and increasingly improbable.",
     author: "Charles Taylor",
-    source: "A Secular Age (paraphrase)",
+    source: "A Secular Age",
+    kind: "paraphrase",
     tags: ["after-christendom", "skeptic"],
   },
   {
@@ -319,6 +334,28 @@ export default function Library() {
                   — {q.author}
                 </span>
                 {q.source && <span>{q.source}</span>}
+                {q.kind && (
+                  <span
+                    title={
+                      q.kind === "paraphrase"
+                        ? "Our wording of the author's idea, not a verbatim quotation."
+                        : "A phrase the author borrowed and reshaped, not original to them."
+                    }
+                    style={{
+                      fontFamily: "var(--U)",
+                      fontSize: "10px",
+                      fontWeight: 600,
+                      letterSpacing: "0.08em",
+                      textTransform: "uppercase",
+                      color: "var(--mustard-text)",
+                      border: "1px solid var(--mustard)",
+                      borderRadius: "999px",
+                      padding: "1px 8px",
+                    }}
+                  >
+                    {KIND_LABEL[q.kind]}
+                  </span>
+                )}
                 <Link
                   href={`/library#q${q.id}`}
                   style={{

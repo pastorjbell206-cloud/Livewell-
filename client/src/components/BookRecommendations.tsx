@@ -35,7 +35,7 @@ export default function BookRecommendations({
   return (
     <section className="py-12 border-t" style={{ borderColor: "#E5E7EB" }}>
       <div className="mb-8">
-        <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-2" style={{ color: "var(--mustard)" }}>
+        <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-2" style={{ color: "var(--mustard-text)" }}>
           Explore More
         </div>
         <h3 className="font-display text-2xl font-bold" style={{ color: "var(--ink)" }}>

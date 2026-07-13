@@ -172,9 +172,9 @@ export default function OrthodoxVsCatholic() {
                 <div className="compare-card-mobile" style={{ display: "none" }}>
                   <div style={{ background: "var(--card)", border: "1px solid var(--bone-muted)", marginBottom: "16px", padding: "24px" }}>
                     <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", marginBottom: "16px", borderBottom: "2px solid var(--mustard)", paddingBottom: "12px" }}>{row.category}</p>
-                    <p style={{ fontFamily: "var(--U)", fontSize: "10px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard)", fontWeight: 600, marginBottom: "8px" }}>Orthodox</p>
+                    <p style={{ fontFamily: "var(--U)", fontSize: "10px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard-text)", fontWeight: 600, marginBottom: "8px" }}>Orthodox</p>
                     <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", lineHeight: 1.65, marginBottom: "20px" }}>{row.orthodox}</p>
-                    <p style={{ fontFamily: "var(--U)", fontSize: "10px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard)", fontWeight: 600, marginBottom: "8px" }}>Catholic</p>
+                    <p style={{ fontFamily: "var(--U)", fontSize: "10px", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--mustard-text)", fontWeight: 600, marginBottom: "8px" }}>Catholic</p>
                     <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", lineHeight: 1.65 }}>{row.catholic}</p>
                   </div>
                 </div>
@@ -201,7 +201,7 @@ export default function OrthodoxVsCatholic() {
             {HISTORICAL_TIMELINE.map((event, i) => (
               <div key={i} style={{ position: "relative", marginBottom: i < HISTORICAL_TIMELINE.length - 1 ? "28px" : "0" }}>
                 <div style={{ position: "absolute", left: "-32px", top: "6px", width: "16px", height: "16px", borderRadius: "50%", background: event.year === "1054" || event.year === "1204" ? "var(--mustard)" : "var(--bone-muted)", border: "3px solid var(--bone-warm)" }} />
-                <p style={{ fontFamily: "var(--U)", fontSize: "12px", letterSpacing: "0.1em", color: "var(--mustard)", marginBottom: "4px", fontWeight: 500 }}>{event.year}</p>
+                <p style={{ fontFamily: "var(--U)", fontSize: "12px", letterSpacing: "0.1em", color: "var(--mustard-text)", marginBottom: "4px", fontWeight: 500 }}>{event.year}</p>
                 <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)", marginBottom: "4px" }}>{event.label}</p>
                 <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", lineHeight: 1.6 }}>{event.desc}</p>
               </div>
@@ -219,7 +219,7 @@ export default function OrthodoxVsCatholic() {
           <div style={{ display: "flex", flexDirection: "column" }}>
             {SHARED_GROUND.map((item, i) => (
               <div key={i} style={{ padding: "16px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", gap: "16px", alignItems: "baseline" }}>
-                <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--mustard)", fontWeight: 600, flexShrink: 0 }}>{String(i + 1).padStart(2, "0")}</span>
+                <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--mustard-text)", fontWeight: 600, flexShrink: 0 }}>{String(i + 1).padStart(2, "0")}</span>
                 <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted)", lineHeight: 1.65 }}>{item}</p>
               </div>
             ))}
@@ -278,7 +278,7 @@ export default function OrthodoxVsCatholic() {
               <Link key={a.slug} href={`/writing/${a.slug}`} style={{ textDecoration: "none" }}>
                 <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard)" }}>Read</span>
+                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
                 </div>
               </Link>
             ))}

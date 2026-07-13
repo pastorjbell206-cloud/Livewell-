@@ -160,7 +160,7 @@ export default function AdminImportSubstack() {
             {drafts.map((d) => (
               <div key={d.slug} className="rounded p-4" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}>
                 <div className="flex items-center justify-between gap-3">
-                  <div className="font-ui text-xs uppercase tracking-wider" style={{ color: "var(--mustard)" }}>
+                  <div className="font-ui text-xs uppercase tracking-wider" style={{ color: "var(--mustard-text)" }}>
                     {d.pillar} · {d.subPathway}
                   </div>
                   <span className="font-ui text-xs font-semibold px-2 py-1 rounded"
@@ -178,7 +178,7 @@ export default function AdminImportSubstack() {
               </div>
             ))}
             <p className="font-body text-sm flex items-center gap-2 mt-2" style={{ color: "var(--ink-muted)" }}>
-              <AlertTriangle size={14} style={{ color: "var(--mustard)" }} />
+              <AlertTriangle size={14} style={{ color: "var(--mustard-text)" }} />
               Imported essays are auto-converted from Substack — skim each in the editor before publishing.
             </p>
           </div>

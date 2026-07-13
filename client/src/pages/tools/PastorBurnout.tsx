@@ -751,6 +751,7 @@ export default function PastorBurnout() {
       setShowResults(true);
       persist(answers, currentCategory);
       setTimeout(() => {
+        resultsRef.current?.focus({ preventScroll: true });
         resultsRef.current?.scrollIntoView({ behavior: "smooth" });
       }, 100);
     } else if (!isLastCategory) {
@@ -1190,7 +1191,7 @@ export default function PastorBurnout() {
                         fontFamily: "var(--F)",
                         fontSize: "24px",
                         fontWeight: 400,
-                        color: "var(--mustard)",
+                        color: "var(--mustard-text)",
                         lineHeight: 1.2,
                         flexShrink: 0,
                         width: "28px",
@@ -1334,8 +1335,11 @@ export default function PastorBurnout() {
         <>
         <section
           ref={resultsRef}
+          tabIndex={-1}
+          role="region"
+          aria-label="Your burnout assessment results"
           className="pb-screen"
-          style={{ padding: "48px 32px 80px", background: "var(--bone)" }}
+          style={{ padding: "48px 32px 80px", background: "var(--bone)", outline: "none" }}
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
             <ToolActions toolName="Pastor Burnout Diagnostic" />
@@ -1369,7 +1373,7 @@ export default function PastorBurnout() {
                   fontSize: "11px",
                   fontWeight: 700,
                   letterSpacing: "0.2em",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   fontFamily: "var(--U)",
                   marginBottom: "20px",
                 }}
@@ -1585,7 +1589,7 @@ export default function PastorBurnout() {
                   fontSize: "13px",
                   fontWeight: 700,
                   letterSpacing: "0.15em",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   fontFamily: "var(--U)",
                   marginBottom: "28px",
                 }}
@@ -1676,7 +1680,7 @@ export default function PastorBurnout() {
                   fontSize: "13px",
                   fontWeight: 700,
                   letterSpacing: "0.15em",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   fontFamily: "var(--U)",
                   marginBottom: "20px",
                 }}
@@ -1918,14 +1922,14 @@ export default function PastorBurnout() {
               >
                 <Phone
                   size={18}
-                  style={{ color: "var(--mustard)", flexShrink: 0 }}
+                  style={{ color: "var(--mustard-text)", flexShrink: 0 }}
                 />
                 <h3
                   style={{
                     fontSize: "13px",
                     fontWeight: 700,
                     letterSpacing: "0.15em",
-                    color: "var(--mustard)",
+                    color: "var(--mustard-text)",
                     fontFamily: "var(--U)",
                     margin: 0,
                   }}
@@ -2383,7 +2387,7 @@ export default function PastorBurnout() {
                       fontSize: "11px",
                       fontWeight: 700,
                       letterSpacing: "0.18em",
-                      color: "var(--mustard)",
+                      color: "var(--mustard-text)",
                       fontFamily: "var(--U)",
                       marginBottom: "6px",
                     }}

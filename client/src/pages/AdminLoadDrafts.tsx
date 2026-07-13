@@ -212,7 +212,7 @@ export default function AdminLoadDrafts() {
           <div className="space-y-4 mb-8">
             {items.map((it) => (
               <div key={it.slug} className="rounded p-5" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}>
-                <div className="font-ui text-xs uppercase tracking-wider mb-1" style={{ color: "var(--mustard)" }}>
+                <div className="font-ui text-xs uppercase tracking-wider mb-1" style={{ color: "var(--mustard-text)" }}>
                   {it.pillar}{it.subPathway ? ` · ${it.subPathway}` : ""}
                 </div>
                 <div className="font-display text-2xl font-bold mb-2" style={{ color: "var(--charcoal)" }}>

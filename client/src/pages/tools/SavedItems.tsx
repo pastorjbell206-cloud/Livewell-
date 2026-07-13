@@ -117,7 +117,7 @@ export default function SavedItems() {
           {verses.favorites.length > 0 && (
             <div style={{ marginBottom: "48px" }}>
               <h2 style={{ fontSize: "22px", fontWeight: 600, fontFamily: "var(--F)", color: "var(--charcoal)", marginBottom: "20px", display: "flex", alignItems: "center", gap: "10px" }}>
-                <BookOpen size={20} style={{ color: "var(--mustard)" }} />
+                <BookOpen size={20} style={{ color: "var(--mustard-text)" }} />
                 Saved Verses ({verses.favorites.length})
               </h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -131,7 +131,7 @@ export default function SavedItems() {
                     }}
                   >
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "10px" }}>
-                      <span style={{ fontSize: "14px", fontWeight: 700, color: "var(--mustard)", fontFamily: "var(--U)" }}>
+                      <span style={{ fontSize: "14px", fontWeight: 700, color: "var(--mustard-text)", fontFamily: "var(--U)" }}>
                         {v.content?.ref}
                       </span>
                       <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
@@ -165,7 +165,7 @@ export default function SavedItems() {
           {prayers.favorites.length > 0 && (
             <div style={{ marginBottom: "48px" }}>
               <h2 style={{ fontSize: "22px", fontWeight: 600, fontFamily: "var(--F)", color: "var(--charcoal)", marginBottom: "20px", display: "flex", alignItems: "center", gap: "10px" }}>
-                <Heart size={20} style={{ color: "var(--mustard)" }} />
+                <Heart size={20} style={{ color: "var(--mustard-text)" }} />
                 Saved Prayers ({prayers.favorites.length})
               </h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -179,7 +179,7 @@ export default function SavedItems() {
                     }}
                   >
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "10px" }}>
-                      <span style={{ fontSize: "13px", fontWeight: 700, color: "var(--mustard)", fontFamily: "var(--U)", letterSpacing: "0.1em" }}>
+                      <span style={{ fontSize: "13px", fontWeight: 700, color: "var(--mustard-text)", fontFamily: "var(--U)", letterSpacing: "0.1em" }}>
                         {p.content?.type?.toUpperCase()}
                       </span>
                       <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>

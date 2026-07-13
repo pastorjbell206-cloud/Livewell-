@@ -53,28 +53,28 @@ export default function SubstackPage() {
             <div className="space-y-6 mb-12">
               <div className="p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF" }}>
                 <h3 className="font-display text-lg font-bold mb-2" style={{ color: "var(--ink)" }}>
-                  Essays that go deeper
+                  One serious essay a week
                 </h3>
                 <p className="font-body" style={{ color: "var(--ink-muted)" }}>
-                  Pieces that explore theology, justice, leadership, and faith in ways that require more space than a blog post allows.
+                  The same writing this site is built on — the church and the flag, Scripture read past the tribe, marriage after the tips run out, doubt taken seriously. Written slow, sent once.
                 </p>
               </div>
 
               <div className="p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF" }}>
                 <h3 className="font-display text-lg font-bold mb-2" style={{ color: "var(--ink)" }}>
-                  Personal reflections
+                  From inside the room
                 </h3>
                 <p className="font-body" style={{ color: "var(--ink-muted)" }}>
-                  Stories from inside the work — the kind of honesty that is harder to share publicly, but carries weight.
+                  Not commentary from a safe distance. A working pastor writing around hospital visits and funerals, from a church in Fenton, Michigan — with five sons at the table.
                 </p>
               </div>
 
               <div className="p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF" }}>
                 <h3 className="font-display text-lg font-bold mb-2" style={{ color: "var(--ink)" }}>
-                  Early access
+                  No noise
                 </h3>
                 <p className="font-body" style={{ color: "var(--ink-muted)" }}>
-                  Subscribers see new essays first, before they appear anywhere else.
+                  No hot takes, no outrage cycle, no daily drip. One email a week that assumes you are an adult, and nothing else in your inbox.
                 </p>
               </div>
             </div>

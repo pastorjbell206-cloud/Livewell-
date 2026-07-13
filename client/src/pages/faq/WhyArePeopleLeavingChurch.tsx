@@ -150,7 +150,7 @@ export default function WhyArePeopleLeavingChurch() {
               fontSize: "11px",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
-              color: "var(--mustard)",
+              color: "var(--mustard-text)",
               marginBottom: "24px",
             }}
           >
@@ -292,7 +292,7 @@ export default function WhyArePeopleLeavingChurch() {
               fontSize: "11px",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
-              color: "var(--mustard)",
+              color: "var(--mustard-text)",
               marginBottom: "24px",
             }}
           >
@@ -328,7 +328,7 @@ export default function WhyArePeopleLeavingChurch() {
                     style={{
                       fontFamily: "var(--U)",
                       fontSize: "13px",
-                      color: "var(--mustard)",
+                      color: "var(--mustard-text)",
                     }}
                   >
                     Read

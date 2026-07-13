@@ -1165,19 +1165,28 @@ function byDateDesc(a: any, b: any): number {
   const tb = new Date(b?.publishedAt || b?.createdAt || 0).getTime();
   return tb - ta;
 }
+// Emergency takedown for static-library essays. A DB essay is pulled with the
+// admin "Unpublish" (published=false, honored at the URL and in listings). A
+// static-only essay has no DB row to unpublish, so this is its hard-pull lever:
+// add its slug here, deploy, and it is gone everywhere the static library serves
+// it (the direct URL and the listings). Code-level, auditable, only ever
+// removes content. Keep empty until a piece must come down.
+const TAKEN_DOWN = new Set<string>([]);
+
 // Append the static essays the DB doesn't already have (DB wins on slug), then
 // order the whole set newest-first so the index reads as one library.
 function mergeWithStatic(dbRows: any[], slim: boolean): any[] {
   const have = new Set((dbRows || []).map((r) => r.slug));
   const extra = (STATIC_LIBRARY as any[])
-    .filter((r) => !have.has(r.slug))
+    .filter((r) => !have.has(r.slug) && !TAKEN_DOWN.has(r.slug))
     .map(slim ? staticSlimCard : staticFullCard);
   return [...(dbRows || []), ...extra].sort(byDateDesc);
 }
 function staticBySlugOrId(id: number | string): any | null {
   const s = String(id);
   const rec = (STATIC_LIBRARY as any[]).find((r) => r.slug === s || String(r.id) === s);
-  return rec ? staticFullCard(rec) : null;
+  if (!rec || TAKEN_DOWN.has(rec.slug)) return null;
+  return staticFullCard(rec);
 }
 
 // Card shape for `posts` rows (camelCase columns) — distinct from toPostCard,
@@ -1262,6 +1271,11 @@ async function trpcGetPost(id: number | string): Promise<any | null> {
         const [rows]: any = await c.execute(sql, [id]);
         if (rows[0]) {
           const r = rows[0];
+          // Unpublished = taken down. Never serve it at the direct URL, and do
+          // NOT fall through to the static library below (a DB row exists, so
+          // this slug is DB-owned) — otherwise the static copy resurfaces and
+          // the admin takedown is defeated.
+          if (!r.published) return { __takenDown: true };
           return {
             id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
             body: r.body || null, content: r.body || null,
@@ -1279,6 +1293,7 @@ async function trpcGetPost(id: number | string): Promise<any | null> {
       const row = rows[0];
       return { ...toPostCard(row), body: row.body || null, content: row.body || null };
     });
+    if (dbRow && (dbRow as any).__takenDown) return null; // 404, and no static fallback
     if (dbRow) return dbRow;
   } catch { /* no DB / unreachable: fall through to the static library */ }
   // Not in the DB (or DB down): serve from the static essay library.
@@ -1498,8 +1513,32 @@ async function searchBooksProd(c: mysql.PoolConnection, query: string, limit: nu
   }
 }
 
+// CSRF hardening: every state-changing tRPC procedure requires POST, so a bare
+// link/<img> GET clicked by a logged-in admin (auth is a SameSite=Lax cookie,
+// sent on top-level GET) can never fire a mutation. Keep in sync with the switch.
+const MUTATION_PROCS = new Set<string>([
+  "auth.logout",
+  "subscribe", "subscribe.subscribe", "subscribers.subscribe", "subscribers.remove",
+  "posts.create", "posts.update", "posts.delete", "posts.publishFullBodies",
+  "posts.migrateTaxonomy", "posts.backfillSubPathways", "posts.retirePosts",
+  "posts.createDrafts", "posts.publishBySlugs",
+  "books.create", "books.update", "books.delete",
+  "resources.create", "resources.update", "resources.delete",
+  "settings.set", "settings.setMultiple",
+  "notifications.create", "notifications.delete",
+  "community.testimonials.approve", "community.testimonials.delete", "community.testimonials.toggleFeatured",
+  "community.comments.approve", "community.comments.delete",
+  "feedSync.syncAll", "feedSync.syncSource",
+  "adminNotifications.markAsRead",
+  "stripe.createMembershipCheckout", "stripe.createCheckoutSession",
+  "files.upload", "files.updateDescription", "files.delete",
+]);
+
 async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string) {
   try {
+    if (MUTATION_PROCS.has(proc) && req.method !== "POST") {
+      return trpcErr(res, "METHOD_NOT_SUPPORTED", `${proc} changes state and requires POST`, 405);
+    }
     // Parse input from query string (GET batch). POST mutations carry body.
     let input: any = null;
     if (req.method === "GET") {
@@ -2324,7 +2363,9 @@ function verifySession(token: string | undefined): { user: string } | null {
   if (parts.length !== 2) return null;
   const [b64, sig] = parts;
   const expected = crypto.createHmac("sha256", getJwtSecret()).update(b64).digest("base64url");
-  if (sig !== expected) return null;
+  // Constant-time compare (the helper already used elsewhere), so signature
+  // verification never leaks timing information.
+  if (!constantTimeEqual(sig, expected)) return null;
   try {
     const payload = JSON.parse(Buffer.from(b64, "base64url").toString());
     if (typeof payload.e !== "number" || payload.e < Date.now()) return null;
@@ -2605,6 +2646,10 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
 
 async function trpcBatchHandler(req: VercelRequest, res: VercelResponse, procs: string[]) {
   try {
+    const blocked = req.method !== "POST" ? procs.find((p) => MUTATION_PROCS.has(p)) : undefined;
+    if (blocked) {
+      return trpcErr(res, "METHOD_NOT_SUPPORTED", `${blocked} changes state and requires POST`, 405);
+    }
     let parsedInputs: Record<string, any> = {};
     if (req.method === "GET") {
       const raw = (req.query.input as string) || "";
@@ -3221,6 +3266,45 @@ async function ensureReadEventsTable(c: any) {
   readEventsReady = true;
 }
 
+// Core Web Vitals from real visitors (web-vitals lib): one row per settled
+// metric. value is ms for LCP/INP and the unitless score for CLS; rating is
+// the library's good/needs-improvement/poor bucket. Same lazy-create discipline.
+let webVitalsReady = false;
+async function ensureWebVitalsTable(c: any) {
+  if (webVitalsReady) return;
+  await c.execute(`CREATE TABLE IF NOT EXISTS web_vitals (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    metric VARCHAR(8) NOT NULL,
+    value DOUBLE NOT NULL,
+    rating VARCHAR(20),
+    path VARCHAR(512),
+    visitorId VARCHAR(64),
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+    INDEX idx_wv_metric_created (metric, createdAt)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`);
+  webVitalsReady = true;
+}
+
+// Client-side errors real visitors hit (the ClientErrorReporter + ErrorBoundary).
+// A tiny first-party error log so a broken page is visible to the owner. kind is
+// react | window | promise. Same lazy-create discipline.
+let clientErrorsReady = false;
+async function ensureClientErrorsTable(c: any) {
+  if (clientErrorsReady) return;
+  await c.execute(`CREATE TABLE IF NOT EXISTS client_errors (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    message VARCHAR(512) NOT NULL,
+    stack TEXT,
+    kind VARCHAR(16),
+    path VARCHAR(512),
+    visitorId VARCHAR(64),
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+    INDEX idx_ce_created (createdAt),
+    INDEX idx_ce_message (message)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4`);
+  clientErrorsReady = true;
+}
+
 async function recordPageView(req: VercelRequest, res: VercelResponse) {
   if (req.method !== "POST") return json(res, 405, { ok: false });
   // Generous limit: a reader clicking through the site should never be blocked.
@@ -3232,6 +3316,37 @@ async function recordPageView(req: VercelRequest, res: VercelResponse) {
     if (path.startsWith("/admin")) return json(res, 200, { ok: true }); // do not count your own admin visits
     const referrer = body?.referrer ? String(body.referrer).slice(0, 512) : null;
     const visitorId = body?.visitorId ? String(body.visitorId).slice(0, 64) : null;
+    // WebVitalsBeacon: one settled Core Web Vital. Stored in its own table.
+    if (body?.event === "vital") {
+      const ALLOWED = new Set(["LCP", "INP", "CLS", "FCP", "TTFB"]);
+      const metric = String(body?.metric || "");
+      const value = Number(body?.value);
+      const rating = body?.rating ? String(body.rating).slice(0, 20) : null;
+      if (!ALLOWED.has(metric) || !Number.isFinite(value) || value < 0) return json(res, 200, { ok: true });
+      await withConn(async (c) => {
+        await ensureWebVitalsTable(c);
+        await c.execute(
+          "INSERT INTO web_vitals (metric, value, rating, path, visitorId) VALUES (?, ?, ?, ?, ?)",
+          [metric, value, rating, path, visitorId]
+        );
+      });
+      return json(res, 200, { ok: true });
+    }
+    // ClientErrorReporter / ErrorBoundary: a client-side error a visitor hit.
+    if (body?.event === "error") {
+      const message = String(body?.message || "").slice(0, 512);
+      if (!message) return json(res, 200, { ok: true });
+      const stack = body?.stack ? String(body.stack).slice(0, 4000) : null;
+      const kind = body?.kind ? String(body.kind).slice(0, 16) : null;
+      await withConn(async (c) => {
+        await ensureClientErrorsTable(c);
+        await c.execute(
+          "INSERT INTO client_errors (message, stack, kind, path, visitorId) VALUES (?, ?, ?, ?, ?)",
+          [message, stack, kind, path, visitorId]
+        );
+      });
+      return json(res, 200, { ok: true });
+    }
     const isRead = body?.event === "read"; // the ReadDepthBeacon: reader reached the end
     await withConn(async (c) => {
       if (isRead) {
@@ -3347,6 +3462,87 @@ async function adminSignups(req: VercelRequest, res: VercelResponse) {
   }
 }
 
+// Core Web Vitals from real visitors (the WebVitalsBeacon's web_vitals rows).
+// For each of LCP/INP/CLS over the last 30 days: the p75 value Google reports
+// on, the good/needs-improvement/poor split, and the sample count. Read-only.
+async function adminWebVitals(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  const METRICS = ["LCP", "INP", "CLS"]; // fixed whitelist — safe to interpolate
+  const WINDOW = "createdAt >= DATE_SUB(NOW(), INTERVAL 30 DAY)";
+  try {
+    const out = await withConn(async (c) => {
+      await ensureWebVitalsTable(c);
+      const num = async (sql: string, params: any[] = []): Promise<number> => {
+        try { const [r]: any = await c.query(sql, params); return Number(r?.[0]?.n ?? 0); } catch { return 0; }
+      };
+      const metrics: Record<string, { p75: number | null; good: number; needsImprovement: number; poor: number; count: number }> = {};
+      for (const m of METRICS) {
+        const count = await num(`SELECT COUNT(*) AS n FROM web_vitals WHERE metric = ? AND ${WINDOW}`, [m]);
+        let p75: number | null = null;
+        if (count > 0) {
+          const offset = Math.min(count - 1, Math.floor(count * 0.75));
+          try {
+            const [r]: any = await c.query(
+              `SELECT value AS n FROM web_vitals WHERE metric = ? AND ${WINDOW} ORDER BY value ASC LIMIT 1 OFFSET ${offset}`,
+              [m]
+            );
+            p75 = r?.[0]?.n != null ? Number(r[0].n) : null;
+          } catch { p75 = null; }
+        }
+        metrics[m] = {
+          p75,
+          good: await num(`SELECT COUNT(*) AS n FROM web_vitals WHERE metric = ? AND rating = 'good' AND ${WINDOW}`, [m]),
+          needsImprovement: await num(`SELECT COUNT(*) AS n FROM web_vitals WHERE metric = ? AND rating = 'needs-improvement' AND ${WINDOW}`, [m]),
+          poor: await num(`SELECT COUNT(*) AS n FROM web_vitals WHERE metric = ? AND rating = 'poor' AND ${WINDOW}`, [m]),
+          count,
+        };
+      }
+      return { metrics };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
+// Client errors real visitors hit (the client_errors table). Groups the last 7
+// days by message so a recurring break rises to the top: count, last seen, a
+// sample path and kind. Read-only.
+async function adminErrors(req: VercelRequest, res: VercelResponse) {
+  if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
+  try {
+    const out = await withConn(async (c) => {
+      await ensureClientErrorsTable(c);
+      const total = await (async () => {
+        try { const [r]: any = await c.query("SELECT COUNT(*) AS n FROM client_errors WHERE createdAt >= DATE_SUB(NOW(), INTERVAL 7 DAY)"); return Number(r?.[0]?.n ?? 0); } catch { return 0; }
+      })();
+      let groups: { message: string; kind: string | null; count: number; lastSeen: string; samplePath: string | null }[] = [];
+      try {
+        const [rows]: any = await c.query(
+          "SELECT message, COUNT(*) AS n, MAX(createdAt) AS last, " +
+          "SUBSTRING_INDEX(MAX(CONCAT(createdAt,'|',COALESCE(kind,''),'|',COALESCE(path,''))),'|',-2) AS kp " +
+          "FROM client_errors WHERE createdAt >= DATE_SUB(NOW(), INTERVAL 7 DAY) " +
+          "GROUP BY message ORDER BY n DESC, last DESC LIMIT 15"
+        );
+        groups = (rows as any[]).map((x) => {
+          const kp = String(x.kp || "").split("|");
+          return {
+            message: String(x.message),
+            kind: kp[0] || null,
+            count: Number(x.n),
+            lastSeen: String(x.last),
+            samplePath: kp[1] || null,
+          };
+        });
+      } catch { /* noop */ }
+      return { total, groups };
+    });
+    json(res, 200, { ok: true, ...out });
+  } catch (e: any) {
+    json(res, 500, { ok: false, error: String(e?.message || e) });
+  }
+}
+
 // Commerce status: the per-ebook truth of what is actually sellable right now.
 // For each book in the catalog: does it have a Stripe price (env var or the
 // stored site_settings id), and therefore a live Buy button? Read-only.
@@ -3400,8 +3596,22 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/metrics") return adminMetrics(req, res);
     if (url === "/api/admin/analytics") return adminAnalytics(req, res);
     if (url === "/api/admin/signups") return adminSignups(req, res);
+    if (url === "/api/admin/web-vitals") return adminWebVitals(req, res);
+    if (url === "/api/admin/errors") return adminErrors(req, res);
     if (url === "/api/admin/commerce-status") return adminCommerceStatus(req, res);
     if (url === "/api/track") return recordPageView(req, res);
+    // CSRF hardening: every state-changing admin one-shot requires POST, so a
+    // bare link/img GET clicked by a logged-in admin can never fire one. The
+    // read-only admin endpoints (status, metrics, datasets, …) stay on GET.
+    if (
+      req.method !== "POST" &&
+      (url.startsWith("/api/admin/seed") ||
+        ["/api/admin/organize-articles", "/api/admin/refresh-articles",
+         "/api/admin/publish-all-resources", "/api/admin/create-stripe-prices",
+         "/api/admin/fix-apostrophes"].includes(url))
+    ) {
+      return json(res, 405, { error: "This endpoint changes state and requires POST (use the matching button in /admin)" });
+    }
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
     if (url === "/api/admin/seed-content") return adminSeedContent(req, res);
     if (url === "/api/admin/seed-post-christian") return seedPostChristianArticles(req, res);

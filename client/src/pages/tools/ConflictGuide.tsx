@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { Link } from "wouter";
 import { useState } from "react";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer, AlertTriangle } from "lucide-react";
 
@@ -920,7 +921,7 @@ export default function ConflictGuide() {
                   fontSize: "11px",
                   fontWeight: 700,
                   letterSpacing: "0.2em",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   fontFamily: "var(--U)",
                   marginBottom: "12px",
                 }}
@@ -1047,7 +1048,7 @@ export default function ConflictGuide() {
                       fontSize: "12px",
                       fontFamily: "var(--U)",
                       fontWeight: 600,
-                      color: "var(--mustard)",
+                      color: "var(--mustard-text)",
                       display: "flex",
                       alignItems: "center",
                       gap: "4px",
@@ -1162,7 +1163,7 @@ export default function ConflictGuide() {
                   fontSize: "11px",
                   fontWeight: 700,
                   letterSpacing: "0.2em",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   fontFamily: "var(--U)",
                   marginBottom: "8px",
                 }}
@@ -1211,7 +1212,7 @@ export default function ConflictGuide() {
                     fontSize: "13px",
                     fontWeight: 700,
                     letterSpacing: "0.15em",
-                    color: "var(--mustard)",
+                    color: "var(--mustard-text)",
                     fontFamily: "var(--U)",
                     marginBottom: "24px",
                   }}
@@ -1232,7 +1233,7 @@ export default function ConflictGuide() {
                           fontFamily: "var(--F)",
                           fontSize: "22px",
                           fontWeight: 400,
-                          color: "var(--mustard)",
+                          color: "var(--mustard-text)",
                           lineHeight: 1.2,
                           flexShrink: 0,
                           width: "24px",
@@ -1277,18 +1278,22 @@ export default function ConflictGuide() {
                     margin: "0 0 8px",
                   }}
                 >
-                  "{step.scripture.text}"
+                  {step.scripture.text}
                 </p>
-                <span
+                <Link
+                  href={`/theology/passage?ref=${encodeURIComponent(step.scripture.reference)}`}
                   style={{
                     fontSize: "13px",
                     fontWeight: 600,
                     fontFamily: "var(--U)",
-                    color: "var(--ink-muted)",
+                    color: "var(--mustard-text)",
+                    textDecoration: "none",
+                    borderBottom: "1px solid var(--mustard)",
+                    paddingBottom: "1px",
                   }}
                 >
-                  {step.scripture.reference}
-                </span>
+                  {step.scripture.reference} — read the full passage
+                </Link>
               </div>
 
               {/* Warning */}

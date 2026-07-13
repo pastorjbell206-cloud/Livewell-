@@ -1,225 +1,171 @@
+/**
+ * ReadingPathDetail — renders one curated reading path from
+ * lib/readingPaths.ts (the single source of truth the old version of this
+ * page predated: it filtered live posts by `post.topic`, a field most essays
+ * lack, so every list rendered empty).
+ *
+ * Each path is an ordered arc: numbered entries, each either an existing
+ * essay (links to /writing/:slug) or a planned one ("Coming soon", never a
+ * broken link). The "Start Here — Blind Spots" path lives at /start and
+ * redirects there.
+ */
+import { useState } from "react";
+import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { ArticleCard } from "@/components/ArticleCard";
-import { Button } from "@/components/ui/button";
-import { Loader2, ArrowLeft, BookOpen } from "lucide-react";
-import { Link, useRoute } from "wouter";
-import { trpc } from "@/lib/trpc";
-
-// Define reading paths with their topic filters
-const READING_PATH_CONFIGS: Record<string, { title: string; description: string; topics: string[] }> = {
-  "pastors-guide": {
-    title: "A Pastor's Guide to Thriving",
-    description: "Essential reading for ministry, leadership challenges, and personal spiritual health",
-    topics: ["leadership", "spiritual-formation"],
-  },
-  "church-leadership": {
-    title: "Church Leadership Essentials",
-    description: "Governance, vision, organizational health, and building healthy leadership teams",
-    topics: ["leadership", "church-health"],
-  },
-  "marriage-family": {
-    title: "Marriage & Family in Ministry",
-    description: "Protecting your marriage, raising healthy kids, and maintaining family boundaries in ministry",
-    topics: ["personal-growth"],
-  },
-  "spiritual-formation": {
-    title: "Spiritual Formation & Prayer",
-    description: "Deepening your own faith, spiritual disciplines, and inner transformation",
-    topics: ["spiritual-formation"],
-  },
-  "new-to-ministry": {
-    title: "New to Ministry",
-    description: "Foundational teaching for those entering pastoral work",
-    topics: ["leadership", "pastoral-care"],
-  },
-  "cultural-engagement": {
-    title: "Cultural Engagement & Justice",
-    description: "Reading the cultural moment biblically: justice, prophetic witness, and the church's posture in a divided world",
-    topics: ["justice"],
-  },
-  "editors-picks": {
-    title: "Editor's Picks",
-    description: "Hand-selected essays that carry the most weight — the writing that has shaped how readers think",
-    topics: [], // Will show featured articles
-  },
-};
+import { Link, Redirect, useRoute } from "wouter";
+import { ArrowRight } from "lucide-react";
+import { getReadingPathBySlug, availableCount } from "@/lib/readingPaths";
+import { getReadEssays } from "@/lib/readProgress";
 
 export function ReadingPathDetail() {
-  const [match, params] = useRoute("/reading-paths/:slug");
-  const { data: allPosts, isLoading } = trpc.posts.listPublished.useQuery();
+  const [, params] = useRoute("/reading-paths/:slug");
+  const path = getReadingPathBySlug(params?.slug);
 
-  if (!match) {
+  // Depth's memory (P13): the device-local read set. Hook must run before
+  // any early return (rules of hooks).
+  const [readSet] = useState(getReadEssays);
+
+  // The book-guide path is a pointer to /start, not a detail page of its own.
+  if (path?.externalHref) return <Redirect to={path.externalHref} />;
+
+  if (!path) {
     return (
-      <div className="container py-12 text-center">
-        <p className="text-muted-foreground">Reading path not found</p>
-      </div>
+      <Layout>
+        <SEOMeta
+          title="Reading Path Not Found"
+          description="This reading path does not exist. Browse the six curated reading paths through the LiveWell essay library."
+        />
+        <section style={{ background: "var(--bone)", padding: "var(--s-7) var(--s-3)", textAlign: "center" }}>
+          <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+            <h1 style={{ fontFamily: "var(--F)", fontSize: "2rem", fontWeight: 400, color: "var(--ink)", marginBottom: "1rem" }}>
+              That path isn't here
+            </h1>
+            <p style={{ color: "var(--ink-muted)", marginBottom: "2rem" }}>
+              The reading path you followed doesn't exist — it may have moved when the paths were reorganized.
+            </p>
+            <Link href="/reading-paths" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
+              All reading paths <ArrowRight size={14} style={{ display: "inline", verticalAlign: "middle" }} />
+            </Link>
+          </div>
+        </section>
+      </Layout>
     );
   }
 
-  const pathConfig = READING_PATH_CONFIGS[params?.slug as string];
+  const done = availableCount(path);
+  const planned = path.entries.length - done;
 
-  if (!pathConfig) {
-    return (
-      <div className="container py-12">
-        <Link href="/reading-paths">
-          <Button variant="outline" className="mb-6">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Reading Paths
-          </Button>
-        </Link>
-        <p className="text-muted-foreground">Reading path not found</p>
-      </div>
-    );
-  }
-
-  if (isLoading) {
-    return (
-      <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--paper)" }}>
-        <Loader2 size={32} style={{ color: "var(--gold)", animation: "spin 1s linear infinite" }} />
-      </div>
-    );
-  }
-
-  // Filter articles based on reading path topics
-  let filteredArticles = allPosts || [];
-  
-  if (params?.slug !== "editors-picks") {
-    filteredArticles = filteredArticles.filter((post: any) =>
-      pathConfig.topics.length === 0 || pathConfig.topics.some(topic => 
-        post.topic?.toLowerCase() === topic.toLowerCase()
-      )
-    );
-  } else {
-    // For editor's picks, show featured/popular articles
-    filteredArticles = filteredArticles.slice(0, 12);
-  }
-
-  const totalReadTime = filteredArticles.reduce((sum: number, article: any) => sum + (article.readTime || 5), 0);
+  // Mark finished essays, offer "pick up here" at the first unread available
+  // entry.
+  const readHere = path.entries.filter((e) => e.available && e.slug && readSet.has(e.slug)).length;
+  const resumeIndex = path.entries.findIndex((e) => e.available && e.slug && !readSet.has(e.slug));
+  const resume = resumeIndex >= 0 && readHere > 0 ? path.entries[resumeIndex] : null;
 
   return (
-    <>
+    <Layout>
       <SEOMeta
-        title={pathConfig.title}
-        description={pathConfig.description}
-        keywords={`reading path, ${pathConfig.topics.join(", ")}, articles, theological formation`}
+        title={`${path.title} — A Reading Path`}
+        description={path.description.length > 155 ? path.description.slice(0, 152) + "…" : path.description}
+        type="website"
       />
-      <div>
-        {/* HERO SECTION */}
-        <section className="hero" style={{ background: "linear-gradient(135deg, var(--forest) 0%, var(--ink) 100%)" }}>
-          <div className="wrap">
-            <Link href="/reading-paths">
-              <button style={{ 
-                background: "none", 
-                border: "none", 
-                color: "var(--gold)", 
-                cursor: "pointer", 
-                fontSize: "14px",
-                fontFamily: "var(--U)",
-                letterSpacing: ".1em",
-                marginBottom: "16px",
-                textTransform: "uppercase",
-                display: "flex",
-                alignItems: "center",
-                gap: "8px"
-              }}>
-                ← Back to Reading Paths
-              </button>
-            </Link>
-            <h1 className="hero-title" style={{ color: "white", marginBottom: "16px" }}>
-              {pathConfig.title}
-            </h1>
-            <p style={{ color: "rgba(255,255,255,0.9)", fontSize: "18px", lineHeight: "1.6", marginBottom: "24px", maxWidth: "600px" }}>
-              {pathConfig.description}
-            </p>
-            <div style={{ color: "var(--gold)", fontSize: "14px", fontFamily: "var(--U)", letterSpacing: ".1em" }}>
-              {filteredArticles.length} articles · {Math.round(totalReadTime / 5)} hours to complete
-            </div>
-          </div>
-        </section>
 
-        {/* ARTICLES SECTION */}
-        <section className="section">
-          <div className="wrap">
-            <h2 className="section-title">Reading Path Articles</h2>
-            
-            {filteredArticles.length === 0 ? (
-              <div style={{ textAlign: "center", padding: "60px 20px", color: "var(--gray)" }}>
-                <BookOpen size={48} style={{ margin: "0 auto 16px", opacity: 0.5 }} />
-                <p style={{ fontSize: "18px" }}>No articles found for this reading path yet.</p>
-                <p style={{ fontSize: "14px", marginTop: "8px", opacity: 0.7 }}>More essays are on the way. Check back soon.</p>
-              </div>
-            ) : (
-              <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(min(320px, 100%), 1fr))", gap: "24px" }}>
-                {filteredArticles.map((article: any, index: number) => (
-                  <div key={article.id} style={{ position: "relative" }}>
-                    {/* Article number badge */}
-                    <div style={{
-                      position: "absolute",
-                      left: "-12px",
-                      top: "16px",
-                      width: "32px",
-                      height: "32px",
-                      borderRadius: "50%",
-                      background: "var(--gold)",
-                      color: "var(--ink)",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      fontWeight: "bold",
-                      fontSize: "12px",
-                      zIndex: 10
-                    }}>
-                      {index + 1}
+      {/* HEADER */}
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-3) var(--s-5)" }}>
+        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.5rem" }}>Reading path</div>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.1rem, 4.5vw, 3rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1.2rem" }}>
+            {path.title}
+          </h1>
+          <p style={{ color: "var(--bone)", opacity: 0.8, fontSize: "1.05rem", lineHeight: 1.7, marginBottom: "1.5rem" }}>
+            {path.description}
+          </p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "0.8rem", letterSpacing: "0.08em", color: "var(--bone)", opacity: 0.55 }}>
+            {done} essay{done === 1 ? "" : "s"} to read in order
+            {planned > 0 ? ` · ${planned} more coming` : ""}
+          </p>
+          {resume && resume.slug && (
+            <p style={{ marginTop: "1.1rem", fontFamily: "var(--U)", fontSize: "0.85rem", color: "var(--bone)", opacity: 0.85 }}>
+              You have read {readHere} of {done}.{" "}
+              <Link href={`/writing/${resume.slug}`} style={{ color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.15rem" }}>
+                Pick up at {String(resumeIndex + 1).padStart(2, "0")} — {resume.title}
+              </Link>
+            </p>
+          )}
+        </div>
+      </section>
+
+      {/* THE ARC — order carries meaning, so the entries are numbered */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3)" }}>
+        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+          <ol style={{ listStyle: "none", margin: 0, padding: 0 }}>
+            {path.entries.map((entry, i) => {
+              const number = (
+                <span aria-hidden="true" style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.08em", color: entry.available ? "var(--mustard)" : "var(--ink-muted)", minWidth: "2rem", paddingTop: "0.35rem" }}>
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+              );
+              const body = (
+                <span style={{ flex: 1, minWidth: 0 }}>
+                  <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "1.25rem", fontWeight: 400, lineHeight: 1.25, color: "var(--ink)", opacity: entry.available ? 1 : 0.55 }}>
+                    {entry.title}
+                    {entry.available && (
+                      <ArrowRight size={15} style={{ display: "inline", verticalAlign: "middle", marginLeft: "0.5rem", color: "var(--mustard)" }} />
+                    )}
+                    {entry.available && entry.slug && readSet.has(entry.slug) && (
+                      <span style={{ marginLeft: "0.6rem", fontFamily: "var(--U)", fontSize: "0.62rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink-muted)", border: "1px solid rgba(20,17,12,0.25)", borderRadius: "3px", padding: "0.08rem 0.4rem", verticalAlign: "middle" }}>
+                        Read
+                      </span>
+                    )}
+                  </span>
+                  {entry.blurb && (
+                    <span style={{ display: "block", fontSize: "0.9rem", lineHeight: 1.6, color: "var(--ink-muted)", marginTop: "0.3rem", opacity: entry.available ? 1 : 0.75 }}>
+                      {entry.blurb}
+                    </span>
+                  )}
+                  {!entry.available && (
+                    <span style={{ display: "inline-block", marginTop: "0.5rem", fontFamily: "var(--U)", fontSize: "0.68rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink-muted)", border: "1px solid var(--ink-muted)", borderRadius: "3px", padding: "0.1rem 0.5rem", opacity: 0.7 }}>
+                      Coming soon
+                    </span>
+                  )}
+                </span>
+              );
+              return (
+                <li key={`${entry.title}-${i}`} style={{ borderBottom: "1px solid rgba(20,17,12,0.1)" }}>
+                  {entry.available && entry.slug ? (
+                    <Link href={`/writing/${entry.slug}`} style={{ display: "flex", gap: "1.1rem", padding: "1.4rem 0", textDecoration: "none" }}>
+                      {number}
+                      {body}
+                    </Link>
+                  ) : (
+                    <div style={{ display: "flex", gap: "1.1rem", padding: "1.4rem 0" }}>
+                      {number}
+                      {body}
                     </div>
-                    
-                    <ArticleCard
-                      id={article.id}
-                      slug={article.slug}
-                      title={article.title}
-                      excerpt={article.excerpt}
-                      pillar={article.pillar || article.topic}
-                      readTime={article.readTime}
-                      author={article.author || "James Bell"}
-                      date={article.createdAt ? new Date(article.createdAt).toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "short",
-                        day: "numeric",
-                      }) : ""}
-                    />
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-        </section>
+                  )}
+                </li>
+              );
+            })}
+          </ol>
+        </div>
+      </section>
 
-        {/* CTA SECTION */}
-        <section className="section" style={{ background: "var(--forest)", color: "white", textAlign: "center" }}>
-          <div className="wrap">
-            <h2 className="section-title" style={{ color: "white", marginBottom: "16px" }}>
-              Ready to Go Deeper?
-            </h2>
-            <p style={{ fontSize: "18px", marginBottom: "24px", color: "rgba(255,255,255,0.9)", maxWidth: "500px", margin: "0 auto 24px" }}>
-              Join our community of pastoral leaders and get exclusive access to all reading paths, bonus content, and live Q&A sessions.
-            </p>
-            <Link href="/membership">
-              <button style={{
-                padding: "12px 32px",
-                background: "var(--gold)",
-                color: "var(--ink)",
-                border: "none",
-                borderRadius: "2px",
-                fontWeight: "600",
-                fontSize: "14px",
-                cursor: "pointer",
-                transition: "all 0.2s ease"
-              }}>
-                Explore Membership →
-              </button>
+      {/* ONWARD — never a dead end */}
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-3)", textAlign: "center" }}>
+        <div style={{ maxWidth: "560px", margin: "0 auto" }}>
+          <div style={{ width: "40px", height: "2px", background: "var(--mustard)", margin: "0 auto 2rem" }} />
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.1rem", lineHeight: 1.6, color: "var(--bone)", fontStyle: "italic", marginBottom: "2rem" }}>
+            Read it in order if you can. Each essay assumes the ground the one before it cleared.
+          </p>
+          <div style={{ display: "flex", gap: "2rem", justifyContent: "center", flexWrap: "wrap" }}>
+            <Link href="/reading-paths" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
+              All reading paths
+            </Link>
+            <Link href="/writing" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
+              The full library
             </Link>
           </div>
-        </section>
-      </div>
-    </>
+        </div>
+      </section>
+    </Layout>
   );
 }

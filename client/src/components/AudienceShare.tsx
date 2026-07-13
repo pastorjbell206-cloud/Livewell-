@@ -118,7 +118,7 @@ export function AudienceShare({ title, url }: AudienceShareProps) {
                   (e.currentTarget.style.background = "transparent")
                 }
               >
-                <Icon size={14} aria-hidden style={{ color: "var(--mustard)" }} />
+                <Icon size={14} aria-hidden style={{ color: "var(--mustard-text)" }} />
                 {NOTES[recipient].label}
               </a>
             );

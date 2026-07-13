@@ -44,6 +44,14 @@ export default function AdminDashboard() {
   };
   const [signups, setSignups] = useState<Signups | null>(null);
   const [signupsError, setSignupsError] = useState(false);
+  type VitalStat = { p75: number | null; good: number; needsImprovement: number; poor: number; count: number };
+  type Vitals = { metrics: Record<"LCP" | "INP" | "CLS", VitalStat> };
+  const [vitals, setVitals] = useState<Vitals | null>(null);
+  const [vitalsError, setVitalsError] = useState(false);
+  type ErrGroup = { message: string; kind: string | null; count: number; lastSeen: string; samplePath: string | null };
+  type Errors = { total: number; groups: ErrGroup[] };
+  const [errors, setErrors] = useState<Errors | null>(null);
+  const [errorsError, setErrorsError] = useState(false);
   const money = (cents: number, cur = "usd") =>
     new Intl.NumberFormat("en-US", { style: "currency", currency: (cur || "usd").toUpperCase() }).format((cents || 0) / 100);
   useEffect(() => {
@@ -78,6 +86,14 @@ export default function AdminDashboard() {
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
       .then((d) => active && d?.ok && setSignups(d))
       .catch(() => active && setSignupsError(true));
+    fetch("/api/admin/web-vitals", { credentials: "include" })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((d) => active && d?.ok && setVitals(d))
+      .catch(() => active && setVitalsError(true));
+    fetch("/api/admin/errors", { credentials: "include" })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((d) => active && d?.ok && setErrors(d))
+      .catch(() => active && setErrorsError(true));
     return () => { active = false; };
   }, []);
 
@@ -346,6 +362,87 @@ export default function AdminDashboard() {
           )}
         </div>
 
+        {/* Core Web Vitals — real-visitor performance from /api/admin/web-vitals
+            (the web_vitals table, filled by the site-wide WebVitalsBeacon). */}
+        <div className="mb-12">
+          <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "var(--charcoal)" }}>Core Web Vitals</h2>
+          <p className="font-body text-sm mb-4" style={{ color: "var(--adm-gray)" }}>
+            How fast the site feels to real visitors — Google&rsquo;s field metrics, the p75 over the last 30 days. Green is Google&rsquo;s &ldquo;good&rdquo; bar.
+          </p>
+          {vitalsError && (
+            <p className="font-body text-sm" style={{ color: "var(--alert)" }}>
+              Couldn&rsquo;t load Web Vitals (needs the production API and an admin session).
+            </p>
+          )}
+          {!vitals && !vitalsError && (
+            <p className="font-body text-sm" style={{ color: "var(--adm-gray)" }}><Loader2 size={16} className="animate-spin inline" /> Loading…</p>
+          )}
+          {vitals && (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {([
+                { key: "LCP" as const, blurb: "loading", good: 2500, poor: 4000 },
+                { key: "INP" as const, blurb: "responsiveness", good: 200, poor: 500 },
+                { key: "CLS" as const, blurb: "visual stability", good: 0.1, poor: 0.25 },
+              ]).map((cfg) => {
+                const s = vitals.metrics[cfg.key];
+                const v = s?.p75 ?? null;
+                const color = v == null ? "var(--adm-gray)" : v <= cfg.good ? "var(--ok)" : v <= cfg.poor ? "var(--strain)" : "var(--alert)";
+                const shown = v == null ? "—" : cfg.key === "CLS" ? v.toFixed(2) : `${Math.round(v)} ms`;
+                const pctGood = s && s.count ? Math.round((s.good / s.count) * 100) : null;
+                return (
+                  <div key={cfg.key} className="flex flex-col p-6 rounded-lg" style={{ backgroundColor: "var(--card)", borderTop: `5px solid ${color}`, boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
+                    <div className="font-ui text-xs uppercase tracking-wider mb-3" style={{ color: "var(--adm-gray)" }}>{cfg.key} · {cfg.blurb}</div>
+                    <div className="font-display font-bold" style={{ color, fontSize: "2.4rem", lineHeight: 1 }}>{shown}</div>
+                    <div className="font-ui text-xs mt-2" style={{ color: "var(--adm-gray-soft)" }}>
+                      {s && s.count ? `p75 · ${pctGood}% of visits good · ${s.count.toLocaleString()} samples` : "No data yet — counting begins when this ships"}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+
+        {/* Errors real visitors hit — from /api/admin/errors (the client_errors
+            table, filled by ClientErrorReporter + ErrorBoundary). */}
+        <div className="mb-12">
+          <h2 className="font-display text-2xl font-bold mb-1" style={{ color: "var(--charcoal)" }}>Errors real visitors hit</h2>
+          <p className="font-body text-sm mb-4" style={{ color: "var(--adm-gray)" }}>
+            When a page breaks for someone, it shows up here — the last 7 days, most frequent first. An empty list is the good outcome.
+          </p>
+          {errorsError && (
+            <p className="font-body text-sm" style={{ color: "var(--alert)" }}>
+              Couldn&rsquo;t load errors (needs the production API and an admin session).
+            </p>
+          )}
+          {!errors && !errorsError && (
+            <p className="font-body text-sm" style={{ color: "var(--adm-gray)" }}><Loader2 size={16} className="animate-spin inline" /> Loading…</p>
+          )}
+          {errors && errors.groups.length === 0 && (
+            <div className="p-6 rounded-lg" style={{ backgroundColor: "var(--card)", borderTop: "5px solid var(--ok)", boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
+              <div className="font-display font-bold" style={{ color: "var(--ok)", fontSize: "1.4rem", lineHeight: 1.1 }}>No errors in the last 7 days</div>
+              <div className="font-ui text-xs mt-2" style={{ color: "var(--adm-gray-soft)" }}>The site is running clean for your visitors.</div>
+            </div>
+          )}
+          {errors && errors.groups.length > 0 && (
+            <div className="rounded-lg overflow-hidden" style={{ backgroundColor: "var(--card)", borderTop: "5px solid var(--alert)", boxShadow: "0 1px 3px rgba(26,26,26,0.08)" }}>
+              {errors.groups.map((g, i) => (
+                <div key={i} className="px-6 py-4" style={{ borderTop: i === 0 ? "none" : "1px solid var(--adm-line)" }}>
+                  <div className="flex items-start justify-between gap-4">
+                    <div style={{ minWidth: 0 }}>
+                      <div className="font-ui text-sm font-semibold" style={{ color: "var(--charcoal)", wordBreak: "break-word" }}>{g.message}</div>
+                      <div className="font-ui text-xs mt-1" style={{ color: "var(--adm-gray-soft)" }}>
+                        {g.kind ? `${g.kind} · ` : ""}{g.samplePath || "—"}
+                      </div>
+                    </div>
+                    <div className="font-display font-bold flex-shrink-0" style={{ color: "var(--alert)", fontSize: "1.5rem", lineHeight: 1 }}>{g.count.toLocaleString()}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
         {/* Where subscribers come from — the conversion side of traffic, from
             /api/admin/signups (subscribers.source split into page + segment). */}
         <div className="mb-12">
@@ -474,7 +571,7 @@ export default function AdminDashboard() {
                   className="flex items-start gap-3 p-4 rounded-lg no-underline transition-transform hover:scale-[1.01]"
                   style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}
                 >
-                  <Icon size={20} style={{ color: "var(--mustard)", flexShrink: 0, marginTop: 2 }} />
+                  <Icon size={20} style={{ color: "var(--mustard-text)", flexShrink: 0, marginTop: 2 }} />
                   <div style={{ minWidth: 0 }}>
                     <div className="font-ui font-semibold text-sm" style={{ color: "var(--charcoal)" }}>{t.title}</div>
                     <div className="font-body text-xs mt-0.5" style={{ color: "var(--ink-muted)", lineHeight: 1.5 }}>{t.desc}</div>
@@ -510,7 +607,7 @@ export default function AdminDashboard() {
                 onClick={async () => {
                   setSeedStatus("Organizing articles into pillars…");
                   try {
-                    const r = await fetch("/api/admin/organize-articles", { credentials: "include" });
+                    const r = await fetch("/api/admin/organize-articles", { method: "POST", credentials: "include" });
                     const d = await r.json();
                     if (d.ok) {
                       setSeedStatus(`Organized! ${d.updated} articles updated. Distribution: ${d.distribution?.map((x: any) => `${x.pillar}: ${x.n}`).join(", ")}`);

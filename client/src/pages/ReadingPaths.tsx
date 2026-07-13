@@ -1,6 +1,8 @@
-import { useLocation } from "wouter";
+import { Link, useLocation } from "wouter";
+import { ArrowRight } from "lucide-react";
 import { SEOMeta } from "@/components/SEOMeta";
 import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
+import { READING_PATHS as CANONICAL_PATHS, availableCount } from "@/lib/readingPaths";
 
 interface PathArticle {
   title: string;
@@ -318,7 +320,7 @@ export default function ReadingPaths() {
               margin: "0 auto",
             }}
           >
-            Five curated sequences of essays — each one built for a specific
+            Curated sequences of essays — each one built for a specific
             season, a specific question, a specific kind of reader. Choose the
             path that names your situation. Read in order.
           </p>
@@ -410,7 +412,7 @@ export default function ReadingPaths() {
                       fontWeight: 500,
                       letterSpacing: "0.18em",
                       textTransform: "uppercase",
-                      color: "var(--mustard)",
+                      color: "var(--mustard-text)",
                     }}
                   >
                     PATH {path.id}
@@ -445,6 +447,65 @@ export default function ReadingPaths() {
         </div>
       </section>
 
+      {/* THE SIX PILLAR PATHS — the canonical ordered arcs through the library
+          (lib/readingPaths.ts). Each links to its own page at
+          /reading-paths/:slug; the themed collections below remain as they are. */}
+      <section style={{ background: "var(--charcoal)", padding: "4rem 1.5rem" }}>
+        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+          <div
+            style={{
+              fontFamily: "var(--U)",
+              fontSize: "0.75rem",
+              fontWeight: 500,
+              letterSpacing: "0.18em",
+              textTransform: "uppercase",
+              color: "var(--mustard)",
+              marginBottom: "1rem",
+            }}
+          >
+            The pillar paths
+          </div>
+          <h2
+            style={{
+              fontFamily: "var(--F)",
+              fontSize: "clamp(1.6rem, 3.5vw, 2.2rem)",
+              fontWeight: 400,
+              lineHeight: 1.15,
+              letterSpacing: "-0.02em",
+              color: "var(--bone)",
+              marginBottom: "0.9rem",
+            }}
+          >
+            Six ordered arcs through the whole argument
+          </h2>
+          <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--bone)", opacity: 0.7, maxWidth: "62ch", marginBottom: "2rem" }}>
+            The themed collections below gather essays by subject. These six are different — each is a sequence, built to be read in order, tracing one pillar of the site's spine from diagnosis to formation.
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "0.75rem" }}>
+            {CANONICAL_PATHS.map((p) => (
+              <Link
+                key={p.slug}
+                href={p.externalHref || `/reading-paths/${p.slug}`}
+                style={{
+                  display: "block",
+                  padding: "1.1rem 1.2rem",
+                  border: "1px solid rgba(244,241,234,0.16)",
+                  textDecoration: "none",
+                }}
+              >
+                <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "1.1rem", fontWeight: 400, color: "var(--bone)", marginBottom: "0.3rem" }}>
+                  {p.title}
+                  <ArrowRight size={14} style={{ display: "inline", verticalAlign: "middle", marginLeft: "0.45rem", color: "var(--mustard)" }} />
+                </span>
+                <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "0.75rem", letterSpacing: "0.06em", color: "var(--bone)", opacity: 0.55 }}>
+                  {p.externalHref ? "The book, in order" : `${availableCount(p)} essays in order`}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* INDIVIDUAL PATH SECTIONS */}
       {READING_PATHS.map((path, index) => {
         const isAlternate = index % 2 === 1;
@@ -469,7 +530,7 @@ export default function ReadingPaths() {
                   fontWeight: 500,
                   letterSpacing: "0.18em",
                   textTransform: "uppercase",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   marginBottom: "1rem",
                 }}
               >
@@ -567,7 +628,7 @@ export default function ReadingPaths() {
                           fontFamily: "var(--F)",
                           fontSize: "1.5rem",
                           fontWeight: 400,
-                          color: "var(--mustard)",
+                          color: "var(--mustard-text)",
                           lineHeight: 1,
                           minWidth: "1.75rem",
                           paddingTop: "0.15rem",

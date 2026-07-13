@@ -36,6 +36,8 @@ jobs:
           node scripts/validate-pathways.mjs
           node scripts/validate-theology.mjs
           node scripts/validate-politics.mjs
+          node scripts/validate-no-emdash.mjs
+          node scripts/validate-content-integrity.mjs
 
       - name: Test
         run: pnpm test

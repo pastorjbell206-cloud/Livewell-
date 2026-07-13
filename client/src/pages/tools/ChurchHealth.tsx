@@ -431,6 +431,7 @@ export default function ChurchHealth() {
       setShowResults(true);
       persist(answers, currentCategory);
       setTimeout(() => {
+        resultsRef.current?.focus({ preventScroll: true });
         resultsRef.current?.scrollIntoView({ behavior: "smooth" });
       }, 100);
     } else if (!isLastCategory) {
@@ -711,7 +712,7 @@ export default function ChurchHealth() {
                   fontSize: "11px",
                   fontWeight: 700,
                   letterSpacing: "0.2em",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   fontFamily: "var(--U)",
                   marginBottom: "12px",
                 }}
@@ -774,7 +775,7 @@ export default function ChurchHealth() {
                         fontFamily: "var(--F)",
                         fontSize: "24px",
                         fontWeight: 400,
-                        color: "var(--mustard)",
+                        color: "var(--mustard-text)",
                         lineHeight: 1.2,
                         flexShrink: 0,
                         width: "28px",
@@ -917,7 +918,10 @@ export default function ChurchHealth() {
       {showResults && (
         <section
           ref={resultsRef}
-          style={{ padding: "48px 32px 80px", background: "var(--bone)" }}
+          tabIndex={-1}
+          role="region"
+          aria-label="Your church health results"
+          style={{ padding: "48px 32px 80px", background: "var(--bone)", outline: "none" }}
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
             <ToolActions toolName="Church Health Check" />
@@ -951,7 +955,7 @@ export default function ChurchHealth() {
                   fontSize: "11px",
                   fontWeight: 700,
                   letterSpacing: "0.2em",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   fontFamily: "var(--U)",
                   marginBottom: "20px",
                 }}
@@ -1021,7 +1025,7 @@ export default function ChurchHealth() {
                   fontSize: "13px",
                   fontWeight: 700,
                   letterSpacing: "0.15em",
-                  color: "var(--mustard)",
+                  color: "var(--mustard-text)",
                   fontFamily: "var(--U)",
                   marginBottom: "28px",
                 }}
@@ -1396,7 +1400,7 @@ export default function ChurchHealth() {
                       fontSize: "14px",
                       fontFamily: "var(--U)",
                       fontWeight: 600,
-                      color: "var(--mustard)",
+                      color: "var(--mustard-text)",
                       borderBottom: "1px solid rgba(212,160,23,0.35)",
                       paddingBottom: "2px",
                     }}
@@ -1579,7 +1583,7 @@ export default function ChurchHealth() {
                       fontSize: "11px",
                       fontWeight: 700,
                       letterSpacing: "0.18em",
-                      color: "var(--mustard)",
+                      color: "var(--mustard-text)",
                       fontFamily: "var(--U)",
                       marginBottom: "6px",
                     }}

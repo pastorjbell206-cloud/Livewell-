@@ -79,7 +79,7 @@ export function AdminCommentsPanel() {
           className="text-center py-12 rounded-lg"
           style={{ backgroundColor: "var(--bone)" }}
         >
-          <AlertCircle size={48} style={{ color: "var(--mustard)", margin: "0 auto 1rem" }} />
+          <AlertCircle size={48} style={{ color: "var(--mustard-text)", margin: "0 auto 1rem" }} />
           <p style={{ color: "var(--ink-muted)" }}>
             {activeTab === "pending"
               ? "No pending comments"

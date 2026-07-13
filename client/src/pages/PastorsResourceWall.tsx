@@ -128,7 +128,7 @@ function ResourceCard({ r }: { r: ResourceLink }) {
         e.currentTarget.style.background = "var(--card)";
       }}
     >
-      <Icon size={22} aria-hidden style={{ color: "var(--mustard)" }} />
+      <Icon size={22} aria-hidden style={{ color: "var(--mustard-text)" }} />
       <h3
         style={{
           fontFamily: "var(--F)",
@@ -301,7 +301,7 @@ export default function PastorsResourceWall() {
                     padding: "20px",
                   }}
                 >
-                  <Quote size={22} aria-hidden style={{ color: "var(--mustard)", marginBottom: "10px" }} />
+                  <Quote size={22} aria-hidden style={{ color: "var(--mustard-text)", marginBottom: "10px" }} />
                   {d.category && (
                     <div className="eyebrow" style={{ marginBottom: "10px" }}>
                       {d.category}

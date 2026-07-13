@@ -381,7 +381,7 @@ export function ArticleCollections() {
                       >
                         <span
                           style={{
-                            color: "var(--mustard)",
+                            color: "var(--mustard-text)",
                             fontWeight: 600,
                             flexShrink: 0,
                           }}
@@ -548,7 +548,7 @@ export function ArticleCollections() {
               >
                 <Check
                   size={18}
-                  style={{ color: "var(--mustard)", flexShrink: 0, marginTop: "3px" }}
+                  style={{ color: "var(--mustard-text)", flexShrink: 0, marginTop: "3px" }}
                   aria-hidden="true"
                 />
                 <span>{item}</span>

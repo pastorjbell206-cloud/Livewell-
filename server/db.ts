@@ -170,7 +170,13 @@ export async function getPostBySlug(slug: string) {
   const db = await getDb();
   if (!db) throw new Error("Database not available");
   const rows = await db.select().from(posts).where(eq(posts.slug, slug)).limit(1);
-  return rows.length > 0 ? rows[0] : null;
+  const row = rows.length > 0 ? rows[0] : null;
+  // Unpublished = taken down. The admin "Unpublish (never delete)" action sets
+  // published=false so a piece can be pulled for legal/pastoral/factual reasons;
+  // honor it at the direct URL too, not only in listings — otherwise the essay
+  // stays fully readable at /writing/:slug and the takedown is a false comfort.
+  if (row && !row.published) return null;
+  return row;
 }
 
 export async function getFeaturedPost() {
