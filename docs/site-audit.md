@@ -63,14 +63,16 @@ brackets. Owner-gated items marked ⛔.
   `/writing/complicity-not-innocence` → `/justice` (~lines 81 & 221).
 - **P2** [med] Competing onboarding: `/start` vs `/start-here` — two experiences,
   one intent. Confirm canonical (⛔ owner decision; also open in ELEVATION-SUMMARY).
-- **P2** [med] **Three reading-path systems** (found while wiring depth metric #4):
-  `/reading-paths/:slug` → `ReadingPathDetail` (topic-filtered tRPC posts);
-  `/pathways/:slug` → `TopicPathway` (renders `public/pathways/*.json`,
-  arbitrary `href` items); and `lib/readingPaths.ts` (a documented "single source
-  of truth" — but **imported nowhere**, orphaned). Pick one canonical system and
-  consolidate. This tangle is *why* the `path_step_complete` depth metric is not
-  wired: there is no single, clean per-step "done" signal to emit from. ⛔ product
-  decision.
+- **P2** [low] Reading-path surface, clarified on investigation: `/reading-paths`
+  (`ReadingPathDetail`) and `/pathways` (`TopicPathway`, from `public/pathways/*.json`)
+  are **both intentional** — both sit in the canonical nav (`siteNav.ts:58,73`) as
+  distinct "Reading Paths" vs "Topic Pathways", and `/reading-paths` is linked from
+  ~12 places. **Not** duplicates to consolidate (an earlier note here was wrong).
+  The one genuinely dead artifact is `lib/readingPaths.ts` — a documented "single
+  source of truth" that is imported nowhere and has no test. Left in place (it may
+  be intended for future wiring); flagged, not deleted. Depth metric #4's
+  `path_step_complete` is now wired into the `/pathways` system (clean ordered
+  items), so no consolidation was needed.
 
 ### Performance
 - ~~P1~~ **REJECTED on verification.** `content-data-*.js` (2,715 kB) looked

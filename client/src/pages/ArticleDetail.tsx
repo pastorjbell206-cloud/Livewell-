@@ -32,7 +32,7 @@ import { GeneratedHero } from "@/components/GeneratedHero";
 import { trpc } from "@/lib/trpc";
 import { pillarForPost } from "@/lib/taxonomy";
 import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
-import { trackEssayComplete } from "@/lib/telemetry";
+import { trackEssayComplete, trackPathStep } from "@/lib/telemetry";
 import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 /**
@@ -461,6 +461,10 @@ export default function ArticleDetail() {
         if (entries.some(entry => entry.isIntersecting) && !readCompleteRef.current) {
           readCompleteRef.current = true;
           trackEssayComplete(postSlug);
+          // If the reader reached this essay from a topic pathway (?path=<slug>),
+          // finishing it completes that step — depth metric #4 (path_step_complete).
+          const pathSlug = new URLSearchParams(window.location.search).get("path");
+          if (pathSlug) trackPathStep(pathSlug, postSlug);
           recordReadEvent(`/writing/${postSlug}`);
           observer.disconnect();
         }

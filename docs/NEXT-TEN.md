@@ -39,21 +39,19 @@ the Skeptic Track and the Doubting Christian Track — one essay a week in a
 designed order, every quote character-exact, care posture held. ☐ Remaining:
 owner loads them into Mailchimp journeys (steps in the README, ~10 min/track).
 
-### 4. Measurement tuned to depth, not vanity ◐
+### 4. Measurement tuned to depth, not vanity ☑
 The depth-telemetry seam (`lib/telemetry.ts`) forwards privacy-light custom
 events to Vercel Web Analytics — the tracker already loaded, so **Vercel
 Analytics is the owner dashboard** (no bespoke DB/endpoint needed; that would
-duplicate it). Of the four Constitution metrics: ☑ scroll-to-finish
-(`essay_read_complete`, wired in ArticleDetail), ☑ return visits
-(`return_reader`, now fired once per load via `trackReturnReaderOnce` in App),
-☑ essay→book clickthrough (`essay_book_click`, now on the KeepReadingBook CTA).
-☐ Reading-path completion (`path_step_complete`) is defined but unwired, and
-that is blocked upstream: there are **three** overlapping reading-path systems
-(`/reading-paths` → `ReadingPathDetail`, `/pathways` → `TopicPathway` reading
-`public/pathways/*.json`, and an orphaned `lib/readingPaths.ts`). Until one is
-made canonical (see `docs/site-audit.md`), there is no single clean per-step
-"done" signal to emit. Consolidate first, then wire this one event. No PII,
-no cookie.
+duplicate it). All four Constitution metrics now emit: ☑ scroll-to-finish
+(`essay_read_complete`, ArticleDetail), ☑ return visits (`return_reader`, once
+per load via `trackReturnReaderOnce` in App), ☑ essay→book clickthrough
+(`essay_book_click`, on the KeepReadingBook CTA), ☑ reading-path completion
+(`path_step_complete`) — `/pathways` (`TopicPathway`) tags its essay links with
+`?path=<slug>` and `ArticleDetail` fires the event when the reader finishes that
+step. (`/reading-paths` and `/pathways` turned out to be two intentional nav
+features, not duplicates to consolidate; only `lib/readingPaths.ts` is orphaned.)
+No PII, no cookie.
 
 ## Tier 3 — owner-gated
 

@@ -132,7 +132,15 @@ export default function TopicPathway() {
                   {m.items.map((it, j) => (
                     <Link
                       key={j}
-                      href={it.href}
+                      // Tag essay links with the pathway slug so ArticleDetail can
+                      // emit path_step_complete when the reader finishes the step
+                      // (depth metric #4). Non-essay items (tools, etc.) are left
+                      // untouched. See client/src/lib/telemetry.ts.
+                      href={
+                        slug && it.href.startsWith("/writing/")
+                          ? `${it.href}${it.href.includes("?") ? "&" : "?"}path=${encodeURIComponent(slug)}`
+                          : it.href
+                      }
                       style={{ display: "block", textDecoration: "none", color: "inherit", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "16px 18px" }}
                     >
                       <div style={{ display: "flex", justifyContent: "space-between", gap: "14px", alignItems: "baseline" }}>
