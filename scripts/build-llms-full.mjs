@@ -73,7 +73,7 @@ function pickDesc(item, keys) {
   return item.blurb || item.subtitle || item.summary || "";
 }
 
-let out = `# LiveWell by James Bell — Full Content Index
+let out = `# LiveWell by James Bell: Full Content Index
 
 > The complete, machine-readable index of LiveWell by James Bell
 > (${SITE}). The short summary lives at ${SITE}/llms.txt; this file lists every
