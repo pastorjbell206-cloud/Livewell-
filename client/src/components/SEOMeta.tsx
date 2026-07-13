@@ -42,7 +42,11 @@ export function SEOMeta({
   noindex,
   structuredData,
 }: SEOMetaProps) {
-  const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
+  // Brand-once: append the site name only when the title doesn't already carry
+  // the brand. Matching the full SITE_NAME missed titles ending "| LiveWell" or
+  // "— by James Bell", which then shipped doubled.
+  const fullTitle =
+    title.includes("James Bell") || title.includes("LiveWell") ? title : `${title} | ${SITE_NAME}`;
   // Canonical: an explicit `url` always wins. Otherwise derive it from the
   // current route so each page self-canonicalizes — without this, every page
   // that omits `url` would canonicalize to the homepage (SITE_URL), telling
@@ -100,8 +104,10 @@ export function SEOMeta({
         <script
           key={i}
           type="application/ld+json"
-          // React renders this verbatim
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }}
+          // Escape "<" so a literal "</script>" inside any field (article
+          // bodies travel through here) can never close the tag early; it is
+          // valid JSON and parses identically.
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(s).replace(/</g, "\\u003c") }}
         />
       ))}
     </>

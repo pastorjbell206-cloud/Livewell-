@@ -559,7 +559,7 @@ export default function AdminDashboard() {
                 onClick={async () => {
                   setSeedStatus("Organizing articles into pillars…");
                   try {
-                    const r = await fetch("/api/admin/organize-articles", { credentials: "include" });
+                    const r = await fetch("/api/admin/organize-articles", { method: "POST", credentials: "include" });
                     const d = await r.json();
                     if (d.ok) {
                       setSeedStatus(`Organized! ${d.updated} articles updated. Distribution: ${d.distribution?.map((x: any) => `${x.pillar}: ${x.n}`).join(", ")}`);

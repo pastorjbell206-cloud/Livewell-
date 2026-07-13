@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import CrisisFaq, { faqPageSchema } from "@/components/CrisisFaq";
 import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
@@ -11,6 +12,29 @@ const ARTICLES = [
   { title: "The Weight That Stays", slug: "the-weight-that-stays" },
 ];
 
+const FAQ_ITEMS = [
+  {
+    question: "How long is grief supposed to last?",
+    answer:
+      "There is no supposed to. Grief does not run on a schedule and it does not end on one \u2014 it changes shape. The early weight that makes breathing hard usually softens into something that can be carried, but carried is the honest word: you do not get over a person you loved. You learn to walk with the weight of them. Anyone who hands you a timeline is telling you about their own discomfort, not about your grief.",
+  },
+  {
+    question: "Is it wrong to be angry at God?",
+    answer:
+      "Read the Psalms before you answer that. Nearly half of them are complaint \u2014 grief and anger prayed at full volume, and kept in Scripture on purpose. God is not fragile, and anger carried to God is still prayer; it is anger carried away from him that curdles. Say the true thing. He has heard worse from his saints, and he kept their words in his book.",
+  },
+  {
+    question: "Why can't I feel God right now?",
+    answer:
+      "Numbness is part of grief, not evidence of apostasy. The church's saints have a name for this dark, and it has never disqualified anyone. Do not measure your faith by what you can feel this month. Keep the habits small and honest \u2014 a psalm, a table, one person who checks on you \u2014 and let feeling return on its own clock. It usually does, and it rarely announces itself.",
+  },
+  {
+    question: "When should I be worried about myself?",
+    answer:
+      "Grief is heavy, but it should not take everything. If you have stopped eating or sleeping for weeks, if the basic things have become impossible, or if the grief has turned into not wanting to be here \u2014 that is not a stage to wait out. It is a today conversation. Call or text 988, tell your doctor, tell one person who loves you. Getting help with grief this heavy is not weak faith. It is what the body of Christ is for.",
+  },
+];
+
 export default function Grief() {
   return (
     <Layout>
@@ -18,6 +42,7 @@ export default function Grief() {
         title="Grief"
         description="Grief does not need to be fixed. It needs to be carried. Essays on loss, suffering, and the God who sits in the wreckage with you."
         keywords="grief, loss, suffering, theology of suffering, Christian grief"
+        structuredData={[faqPageSchema(FAQ_ITEMS)]}
       />
 
       {/* Hero */}
@@ -69,6 +94,8 @@ export default function Grief() {
           </Link>
         </div>
       </section>
+
+      <CrisisFaq items={FAQ_ITEMS} />
 
       {/* Real help (QW-6: the care standard requires a visible path) */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>

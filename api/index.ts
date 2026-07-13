@@ -1504,8 +1504,32 @@ async function searchBooksProd(c: mysql.PoolConnection, query: string, limit: nu
   }
 }
 
+// CSRF hardening: every state-changing tRPC procedure requires POST, so a bare
+// link/<img> GET clicked by a logged-in admin (auth is a SameSite=Lax cookie,
+// sent on top-level GET) can never fire a mutation. Keep in sync with the switch.
+const MUTATION_PROCS = new Set<string>([
+  "auth.logout",
+  "subscribe", "subscribe.subscribe", "subscribers.subscribe", "subscribers.remove",
+  "posts.create", "posts.update", "posts.delete", "posts.publishFullBodies",
+  "posts.migrateTaxonomy", "posts.backfillSubPathways", "posts.retirePosts",
+  "posts.createDrafts", "posts.publishBySlugs",
+  "books.create", "books.update", "books.delete",
+  "resources.create", "resources.update", "resources.delete",
+  "settings.set", "settings.setMultiple",
+  "notifications.create", "notifications.delete",
+  "community.testimonials.approve", "community.testimonials.delete", "community.testimonials.toggleFeatured",
+  "community.comments.approve", "community.comments.delete",
+  "feedSync.syncAll", "feedSync.syncSource",
+  "adminNotifications.markAsRead",
+  "stripe.createMembershipCheckout", "stripe.createCheckoutSession",
+  "files.upload", "files.updateDescription", "files.delete",
+]);
+
 async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string) {
   try {
+    if (MUTATION_PROCS.has(proc) && req.method !== "POST") {
+      return trpcErr(res, "METHOD_NOT_SUPPORTED", `${proc} changes state and requires POST`, 405);
+    }
     // Parse input from query string (GET batch). POST mutations carry body.
     let input: any = null;
     if (req.method === "GET") {
@@ -2330,7 +2354,9 @@ function verifySession(token: string | undefined): { user: string } | null {
   if (parts.length !== 2) return null;
   const [b64, sig] = parts;
   const expected = crypto.createHmac("sha256", getJwtSecret()).update(b64).digest("base64url");
-  if (sig !== expected) return null;
+  // Constant-time compare (the helper already used elsewhere), so signature
+  // verification never leaks timing information.
+  if (!constantTimeEqual(sig, expected)) return null;
   try {
     const payload = JSON.parse(Buffer.from(b64, "base64url").toString());
     if (typeof payload.e !== "number" || payload.e < Date.now()) return null;
@@ -2611,6 +2637,10 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
 
 async function trpcBatchHandler(req: VercelRequest, res: VercelResponse, procs: string[]) {
   try {
+    const blocked = req.method !== "POST" ? procs.find((p) => MUTATION_PROCS.has(p)) : undefined;
+    if (blocked) {
+      return trpcErr(res, "METHOD_NOT_SUPPORTED", `${blocked} changes state and requires POST`, 405);
+    }
     let parsedInputs: Record<string, any> = {};
     if (req.method === "GET") {
       const raw = (req.query.input as string) || "";
@@ -3487,6 +3517,18 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (url === "/api/admin/web-vitals") return adminWebVitals(req, res);
     if (url === "/api/admin/commerce-status") return adminCommerceStatus(req, res);
     if (url === "/api/track") return recordPageView(req, res);
+    // CSRF hardening: every state-changing admin one-shot requires POST, so a
+    // bare link/img GET clicked by a logged-in admin can never fire one. The
+    // read-only admin endpoints (status, metrics, datasets, …) stay on GET.
+    if (
+      req.method !== "POST" &&
+      (url.startsWith("/api/admin/seed") ||
+        ["/api/admin/organize-articles", "/api/admin/refresh-articles",
+         "/api/admin/publish-all-resources", "/api/admin/create-stripe-prices",
+         "/api/admin/fix-apostrophes"].includes(url))
+    ) {
+      return json(res, 405, { error: "This endpoint changes state and requires POST (use the matching button in /admin)" });
+    }
     if (url.startsWith("/api/admin/seed-articles")) return adminSeedArticles(req, res);
     if (url === "/api/admin/seed-content") return adminSeedContent(req, res);
     if (url === "/api/admin/seed-post-christian") return seedPostChristianArticles(req, res);

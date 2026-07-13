@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
+import ToolStrip from "@/components/ToolStrip";
 import { trpc } from "@/lib/trpc";
 import {
   PILLAR_BY_ID,
@@ -130,6 +131,21 @@ export default function LivingWell() {
               Read every essay in this pillar{total ? ` (${total})` : ""}
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* THE INSTRUMENTS — formation is practiced, not only read */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+          <ToolStrip
+            intro="Formation is practiced, not only read. These four do the practicing — each one runs in your browser and answers to no one but you."
+            tools={[
+              { href: "/tools/rule-of-life", label: "Rule of Life Builder", blurb: "The old practice of ordering a week on purpose, rebuilt for a life nothing orders by default." },
+              { href: "/life/assessment", label: "Whole-Life Audit", blurb: "Thirty honest statements across the inner life, the body, the home, the work, the world." },
+              { href: "/tools/family-devotions", label: "Family Devotion Builder", blurb: "A complete fifteen-minute devotion, built for your kids' actual ages." },
+              { href: "/tools/financial-health", label: "Financial Health Check", blurb: "Where the money actually goes, measured against what you say matters." },
+            ]}
+          />
         </div>
       </section>
     </Layout>

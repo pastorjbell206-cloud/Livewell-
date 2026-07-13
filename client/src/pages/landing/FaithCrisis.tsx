@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import CrisisFaq, { faqPageSchema } from "@/components/CrisisFaq";
 import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
@@ -11,6 +12,29 @@ const ARTICLES = [
   { title: "Constantine's Bargain", slug: "constantines-bargain" },
 ];
 
+const FAQ_ITEMS = [
+  {
+    question: "Am I losing my faith?",
+    answer:
+      "Maybe. Or maybe what is coming down is scaffolding \u2014 the cultural additions, the easy answers, the version of God you were handed at twelve \u2014 and the falling feels like everything is falling. Deconstruction and destruction are not the same word. You will not know which this is for a while, and you do not have to know today. What you believe at the bottom of the question is allowed to take longer than the people around you find comfortable.",
+  },
+  {
+    question: "Can I ask these questions and still belong?",
+    answer:
+      "Here, yes \u2014 that is most of the reason this site exists. And in the wider church, longer than you have been told: Thomas asked for evidence and was given wounds to touch, not a lecture. Find the people who do not flinch when you say the true thing out loud; they exist in more congregations than the loud voices suggest. A faith that cannot be questioned was never going to hold you anyway.",
+  },
+  {
+    question: "What if I stop believing?",
+    answer:
+      "Some people do walk away, and pretending otherwise would be the kind of dishonesty that put you in this room. But notice what you are doing right now: reading, asking, refusing the cheap version of both belief and unbelief. Keep doing that with both hands open \u2014 read the strongest skeptics and the strongest believers, never the strawmen of either. You are not required to decide under a deadline. The truth is not going anywhere.",
+  },
+  {
+    question: "Where do I start rebuilding?",
+    answer:
+      "Smaller and older. Not the culture war, not the personalities \u2014 the Gospels read slowly, the creed the church has confessed for seventeen centuries, one community where honesty is safe. This site keeps a road for exactly this walk: the skeptic track, and the reading paths, built to be taken in order. Rebuild on what has carried weight for two thousand years, not on whatever collapsed last year.",
+  },
+];
+
 export default function FaithCrisis() {
   return (
     <Layout>
@@ -18,6 +42,7 @@ export default function FaithCrisis() {
         title="Faith Crisis"
         description="When the faith you were given stops holding weight. Essays for the honest, the doubting, and the ones who refuse to stop asking."
         keywords="faith crisis, doubt, deconstruction, theology, questioning faith"
+        structuredData={[faqPageSchema(FAQ_ITEMS)]}
       />
 
       {/* Hero */}
@@ -69,6 +94,8 @@ export default function FaithCrisis() {
           </Link>
         </div>
       </section>
+
+      <CrisisFaq items={FAQ_ITEMS} />
 
       {/* Real help (QW-6: the care standard requires a visible path) */}
       <section style={{ background: "var(--bone)", padding: "80px 24px" }}>

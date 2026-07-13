@@ -533,7 +533,9 @@ function escapeJson(s) {
 
 // Build the head block for one route. Returns string of <meta>/<link>/<script>.
 function buildHead({ title, description, url, image, type, publishedDate, modifiedDate, schemas = [] }) {
-  const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
+  // Brand-once, mirroring SEOMeta.tsx.
+  const fullTitle =
+    title.includes("James Bell") || title.includes("LiveWell") ? title : `${title} | ${SITE_NAME}`;
   const lines = [
     `<title>${escapeHtml(fullTitle)}</title>`,
     `<meta name="description" content="${escapeHtml(description)}" />`,
@@ -663,6 +665,9 @@ async function main() {
     { file: "client/public/table/studies-index.json", key: "studies", route: "/table/", ogPrefix: "table", desc: "summary", contentDir: "client/public/table/studies" },
     { file: "client/public/howtos/index.json", key: "articles", route: "/how-tos/", ogPrefix: "howtos", desc: "excerpt", contentDir: "client/public/howtos/a" },
     { file: "client/public/books/index.json", key: "books", route: "/read/", ogPrefix: "read", desc: "blurb", type: "book", contentDir: "client/public/books" },
+    // The 50 contested-doctrine pages (/theology/doctrine/:slug) — manifest
+    // from scripts/build-theology-index.mjs; subtitle is the description.
+    { file: "client/public/theology/index.json", key: "docs", route: "/theology/doctrine/", ogPrefix: "theology-doctrine", desc: "subtitle" },
   ];
   let withBody = 0;
   for (const src of LIBRARY_SOURCES) {

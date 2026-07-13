@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import ToolStrip from "@/components/ToolStrip";
 import { PastorSignup } from "@/components/PastorSignup";
 import { trpc } from "@/lib/trpc";
 import { ExternalLink, Loader2 } from "lucide-react";
@@ -108,6 +109,18 @@ export default function Pastors() {
                   Join a private community of pastors where you can ask questions, share struggles, and find resources from leaders who've walked similar paths.
                 </p>
               </div>
+            </div>
+
+            {/* THE INSTRUMENTS — built for this room, surfaced in it */}
+            <div className="mt-16">
+              <ToolStrip
+                intro="Built for the person carrying a congregation. Each one runs in your browser — no account, and no one sees your answers but you."
+                tools={[
+                  { href: "/tools/pastor-burnout", label: "Pastor Burnout Assessment", blurb: "Name where you actually are before the congregation finds out the hard way." },
+                  { href: "/tools/sermon-outline", label: "Sermon Outline Builder", blurb: "Structure for the week the well is dry and Sunday is still coming." },
+                  { href: "/tools/church-health", label: "Church Health Assessment", blurb: "An honest reading of the congregation — not the attendance number, the body." },
+                ]}
+              />
             </div>
 
             {/* CTA — capture the email on-site first, then the external handoff */}

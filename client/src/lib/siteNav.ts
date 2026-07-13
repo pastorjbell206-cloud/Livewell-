@@ -1,4 +1,3 @@
-import { pillarUrl } from "@/lib/taxonomy";
 
 /**
  * The site's grouped navigation — one source of truth for the footer and the
@@ -47,6 +46,7 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Leadership Formation", href: "/leadership", primary: true },
       { label: "Living Well", href: "/living-well", primary: true },
       { label: "All six pillars", href: "/pillars", primary: true },
+      { label: "The Map", href: "/map", primary: true },
     ],
   },
   {
@@ -93,7 +93,7 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "The Leadership Hub", href: "/leadership", primary: true },
       { label: "The Hard Issues Series", href: "/resources/hard-issues-series", primary: true },
       { label: "Church Leadership", href: "/for-leaders", primary: true },
-      { label: "The Pastoral Angle", href: pillarUrl("the-pastoral-angle") },
+      { label: "The Pastoral Angle", href: "/the-pastoral-angle" },
       { label: "Deep Formation", href: "/leadership/formation" },
       { label: "Downloads & Study Guides", href: "/resources" },
     ],
