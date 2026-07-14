@@ -19,6 +19,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
 import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { bookProgressKey, isBookProgress, type BookProgress } from "@/lib/libraryBooks";
 
 const prose = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
 const eyebrow: React.CSSProperties = {
@@ -37,10 +38,9 @@ const FONT_SCALE: Record<FontSize, number> = { sm: 0.94, md: 1, lg: 1.12 };
 const FONT_KEY = "livewell-reader-fontsize";
 const isFontSize = (x: unknown): x is FontSize => x === "sm" || x === "md" || x === "lg";
 
-const progressKey = (slug: string) => `livewell-book-progress-${slug}`;
-interface Progress { chapter: number }
-const isProgress = (x: unknown): x is Progress =>
-  !!x && typeof x === "object" && typeof (x as Progress).chapter === "number";
+const progressKey = bookProgressKey;
+const isProgress = isBookProgress;
+type Progress = BookProgress;
 
 const readingMinutes = (body: string) => Math.max(1, Math.round(body.trim().split(/\s+/).length / 220));
 const wordCount = (body: string) => body.trim().split(/\s+/).length;
