@@ -62,11 +62,13 @@ export default function StudyGuidesIndex() {
                   <GeneratedCover title={g.title} {...coverThemeFor(`${g.title} ${g.eyebrow}`)} style={{ width: "100%", height: "100%" }} />
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", flex: 1, minWidth: 0, padding: "var(--s-4) var(--s-4) var(--s-4) 0" }}>
-                  <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>{g.eyebrow}</div>
+                  {/* Simplified card: cover, title, the sessions/audience line, and
+                      the link. The eyebrow descriptor and full blurb live on the
+                      toolkit page (both fields stay in the data, just not rendered
+                      here). g.eyebrow still feeds the cover theme above. */}
                   <div style={{ fontFamily: "var(--F)", fontSize: "23px", fontWeight: 500, color: "var(--ink)", lineHeight: 1.18, marginBottom: "10px" }}>{g.title}</div>
-                  <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", marginBottom: "14px", flex: 1 }}>{g.blurb}</p>
                   <div style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", marginBottom: "12px" }}>{g.audience} · {g.sessionsLabel}</div>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink)", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px", alignSelf: "flex-start" }}>
+                  <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink)", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px", alignSelf: "flex-start", marginTop: "auto" }}>
                     Open the toolkit →
                   </span>
                 </div>
