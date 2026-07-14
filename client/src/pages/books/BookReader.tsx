@@ -295,6 +295,11 @@ export default function BookReader() {
                     <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>{readingMinutes(ch.body)} min · {wordCount(ch.body).toLocaleString()} words</span>
                     <button onClick={shareChapter} style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", padding: 0 }}>{copied ? "Link copied" : "Share this chapter"}</button>
                   </div>
+                  {ch.summary && (
+                    <p style={{ fontFamily: "var(--B)", fontSize: "calc(1.18rem * var(--reader-scale, 1))", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 var(--s-4)", paddingBottom: "var(--s-4)", borderBottom: "1px solid var(--border)" }}>
+                      {ch.summary}
+                    </p>
+                  )}
                   <div className="article-body" style={{ fontSize: "calc(1rem * var(--reader-scale, 1))" }}>
                     <Markdown>{ch.body}</Markdown>
                   </div>
