@@ -1,0 +1,54 @@
+{
+  "slug": "work-and-vocation",
+  "title": "Work and the Weight of Monday",
+  "subtitle": "Is your job just a paycheck? Three essays, a study, and a book on the work God actually sees.",
+  "forWhom": "For the reader whose Monday feels like a different world than their Sunday — and suspects it should not.",
+  "movements": [
+    {
+      "kind": "read",
+      "heading": "Read these first",
+      "note": "Start here, in order.",
+      "items": [
+        {
+          "label": "Is Your Job Just a Paycheck?",
+          "href": "/writing/is-your-job-just-a-paycheck",
+          "blurb": "The question underneath the commute, asked without a motivational answer."
+        },
+        {
+          "label": "The Work Nobody Watches",
+          "href": "/writing/the-work-nobody-watches",
+          "blurb": "On faithfulness in the hours no one applauds — the truest test of a calling."
+        },
+        {
+          "label": "When the Calling Costs More Than Anyone Told You",
+          "href": "/writing/when-the-calling-costs-more",
+          "blurb": "The bill that comes due on vocation, and why it is not a sign you chose wrong."
+        }
+      ]
+    },
+    {
+      "kind": "study",
+      "heading": "Then take it deeper together",
+      "note": "A free, ready-to-run study you can lead with no preparation.",
+      "items": [
+        {
+          "label": "Work &amp; Vocation — the study",
+          "href": "/studyguides/work-and-vocation",
+          "blurb": "A full facilitator toolkit — the answer behind every question."
+        }
+      ]
+    },
+    {
+      "kind": "book",
+      "heading": "Then read the book — free, then buy",
+      "note": "Read it cover to cover on the site before you ever buy it.",
+      "items": [
+        {
+          "label": "The Undivided Life",
+          "href": "/read/the-undivided-life",
+          "blurb": "The case against a faith that lives in the religious corner while the job runs on its own logic."
+        }
+      ]
+    }
+  ]
+}

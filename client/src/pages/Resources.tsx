@@ -192,7 +192,7 @@ export default function Resources() {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Search downloads"
                 aria-label="Search downloads"
-                style={{ width: "100%", padding: "10px 12px 10px 36px", fontFamily: "var(--U)", fontSize: "14px", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.15)", borderRadius: "2px", color: "var(--ink)", outline: "none" }}
+                style={{ width: "100%", boxSizing: "border-box", padding: "10px 12px 10px 36px", fontFamily: "var(--U)", fontSize: "14px", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.15)", borderRadius: "2px", color: "var(--ink)", outline: "none" }}
               />
             </div>
             {categories.length > 1 && (

@@ -338,6 +338,14 @@ nav{display:flex;align-items:center;justify-content:space-between;height:70px;ma
 .grid-3{grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr))}
 .grid-4{grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr))}
 
+/* Book-detail hero: cover beside text on desktop, stacked on phones (the
+   fixed-width buy button can't share a row with the cover under ~640px). */
+.book-detail-hero{grid-template-columns:minmax(min(220px,100%),320px) 1fr}
+@media (max-width:640px){
+  .book-detail-hero{grid-template-columns:1fr;justify-items:start}
+  .book-detail-hero>img{max-width:260px}
+}
+
 /* CARD */
 .card{background:var(--card);border:1px solid var(--border);border-radius:2px;overflow:hidden;transition:all 240ms cubic-bezier(0.22,1,0.36,1)}
 .card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08);transform:translateY(-2px)}

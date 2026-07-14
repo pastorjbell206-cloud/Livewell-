@@ -10,6 +10,12 @@
 - `skeptic-track.md` — for the "skeptic" segment. Arc: the table-setter →
   the wager → the resurrection → the Bible → suffering → faith & science.
   Ends at *Born Again From Atheism* and /answers.
+- `welcome-sequence.md` — the DEFAULT on-ramp for any new subscriber (before
+  they pick a segment). Five weekly emails: the thesis (a whole life) → the
+  diagnosis (what forms you) → the wisdom (the hour that forms the week) → doubt
+  (excavation, not demolition) → release into the library. Framing emails, not
+  verbatim quotation, so no character-exact check needed; James approves before
+  sending.
 - `doubter-track.md` — for the "Christian with questions" segment. Arc:
   permission → anger → the silence → the church wound → the coal → the
   rebuild. Ends at *Faith After Deconstruction* and /answers. Care posture:

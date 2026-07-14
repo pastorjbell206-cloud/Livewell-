@@ -51,7 +51,7 @@ export function LandingSignup({ source }: { source: string }) {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@example.com"
-          style={{ flex: 1, padding: "12px 16px", border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.05)", color: "white", fontFamily: "var(--U)", fontSize: "16px", borderRadius: "3px", outline: "none" }}
+          style={{ flex: 1, minWidth: 0, padding: "12px 16px", border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.05)", color: "white", fontFamily: "var(--U)", fontSize: "16px", borderRadius: "3px", outline: "none" }}
         />
         <button
           type="submit"
