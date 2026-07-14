@@ -67,9 +67,16 @@ added to the content-gates step of `.github/workflows/ci.yml`.
    ethic, gender identity, abortion, women in ministry) are written held-open;
    each has a slot for a personal "where I land" coda the author must supply.
 
-## Not started (backlog, section 4)
+## Backlog (section 4) — BUILT
 
-The **"Test the Case" interactive skeptic tool** (step-through argument with
-"I'm not convinced" branching) is a new build gated on WI-1..8 passing. It is
-scoped but not started — recommend a fresh focused pass with the author's
-sign-off, reusing `hooks/useProgress.ts`.
+The **"Test the Case" interactive skeptic tool** is built and live at
+`/tools/test-the-case`. It works a case one move at a time; at every move the
+reader raises the objection they actually hold and gets the honest answer plus
+what the move does not prove, and it closes on a verdict with no altar call.
+The complete flow is the resurrection (5 moves, 11 objection/response pairs);
+two further cases (hell, meaning) ship as honest `published: false` stubs shown
+as "In progress." Content lives in `client/src/data/argumentCases.ts`; the
+engine reuses `hooks/useProgress.ts` to resume where a reader stopped and to
+start a case over. Registered in `/tools`, the route table, and the sitemap.
+Author action: write the two stub cases (or new ones) in `argumentCases.ts`;
+they light up automatically when `published` flips true.

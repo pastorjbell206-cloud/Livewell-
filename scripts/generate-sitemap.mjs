@@ -257,6 +257,7 @@ const STATIC_PAGES = [
   { url: "/the-pastoral-angle", priority: "0.8", changefreq: "monthly" },
   { url: "/theology/explorer", priority: "0.8", changefreq: "monthly" },
   { url: "/tools/which-lens", priority: "0.8", changefreq: "monthly" },
+  { url: "/tools/test-the-case", priority: "0.8", changefreq: "monthly" },
   { url: "/explore", priority: "0.75", changefreq: "monthly" },
   { url: "/pillars", priority: "0.8", changefreq: "monthly" },
   { url: "/exile", priority: "0.7", changefreq: "monthly" },
