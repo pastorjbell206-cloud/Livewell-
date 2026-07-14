@@ -155,12 +155,32 @@ export default function BookReader() {
   return (
     <Layout>
       <SEOMeta
-        title={book ? `${book.title} — Read Free Online` : "Reading…"}
+        title={book ? (book.subtitle ? `${book.title} — ${book.subtitle}` : `${book.title} — Read Free Online`) : "Reading…"}
         description={book?.blurb || book?.subtitle || "A full-length book by James Bell, free to read online."}
         url={`${SITE_URL}/read/${slug}`}
         type="article"
         author="James Bell"
-        structuredData={book ? { "@context": "https://schema.org", "@type": "Book", name: book.title, author: { "@type": "Person", name: "James Bell" }, url: `${SITE_URL}/read/${slug}`, bookFormat: "https://schema.org/EBook", inLanguage: "en", numberOfPages: book.chapters.length } : undefined}
+        structuredData={book ? {
+          "@context": "https://schema.org",
+          "@type": "Book",
+          name: book.title,
+          ...(book.subtitle ? { alternativeHeadline: book.subtitle } : {}),
+          ...(book.blurb ? { description: book.blurb } : {}),
+          author: { "@type": "Person", name: "James Bell" },
+          url: `${SITE_URL}/read/${slug}`,
+          bookFormat: "https://schema.org/EBook",
+          inLanguage: "en",
+          isAccessibleForFree: true,
+          numberOfPages: book.chapters.length,
+          // Every chapter, so search understands the book's structure and can
+          // deep-link the exact chapter that answers a question.
+          hasPart: book.chapters.map((c) => ({
+            "@type": "Chapter",
+            position: c.n,
+            name: c.title,
+            url: `${SITE_URL}/read/${slug}#ch-${c.n}`,
+          })),
+        } : undefined}
       />
 
       {/* BOOK FRONT */}
