@@ -675,8 +675,10 @@ export default function MinimalNav() {
       </nav>
 
       <style>{
-        "@media (max-width: 900px) { .desktop-nav { display: none !important; } .mobile-nav { display: flex !important; } }" +
-        "@media (min-width: 901px) { .mobile-nav { display: none !important; } .desktop-nav { display: flex !important; } }"
+        // The full desktop nav needs ~1080px to fit; below that it overflowed
+        // (40px at 1024, 64px at 1000), so the hamburger takes over up to 1080.
+        "@media (max-width: 1080px) { .desktop-nav { display: none !important; } .mobile-nav { display: flex !important; } }" +
+        "@media (min-width: 1081px) { .mobile-nav { display: none !important; } .desktop-nav { display: flex !important; } }"
       }</style>
     </>
   );
