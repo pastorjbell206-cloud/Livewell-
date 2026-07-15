@@ -164,9 +164,9 @@ export default function Table() {
                   <li key={s.slug} style={{ display: "flex" }}>
                     <Link
                       href={`/table/${s.slug}`}
-                      style={{ display: "flex", flexDirection: "column", flex: 1, background: "var(--card)", border: "1px solid var(--line)", borderTop: "2px solid var(--mustard)", padding: "var(--s-4)", textDecoration: "none" }}
+                      style={{ display: "flex", flexDirection: "column", flex: 1, minWidth: 0, background: "var(--card)", border: "1px solid var(--line)", borderTop: "2px solid var(--mustard)", padding: "var(--s-4)", textDecoration: "none" }}
                     >
-                      <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: "12px", marginBottom: "12px" }}>
+                      <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: "12px", marginBottom: "12px", flexWrap: "wrap" }}>
                         <span className="eyebrow" style={{ color: "var(--ink-muted)" }}>
                           {String(i + 1).padStart(2, "0")}
                           {i === 0 && (

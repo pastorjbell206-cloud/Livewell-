@@ -2179,25 +2179,32 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         return trpcOk(res, { success: true });
       }
       case "stripe.membershipEnabled": {
-        if (!stripeConfigured()) return trpcOk(res, { enabled: false });
-        const priceId = await withConn(async (c) => {
+        if (!stripeConfigured()) return trpcOk(res, { enabled: false, annual: false });
+        const [priceId, annualPriceId] = await withConn(async (c) => {
           const [rows]: any = await c.execute(
-            "SELECT settingValue FROM site_settings WHERE settingKey = ?",
-            ["stripeMembershipPriceId"],
+            "SELECT settingKey, settingValue FROM site_settings WHERE settingKey IN (?, ?)",
+            ["stripeMembershipPriceId", "stripeMembershipPriceIdAnnual"],
           );
-          return rows[0]?.settingValue ?? null;
+          const byKey = Object.fromEntries((rows as any[]).map((r) => [r.settingKey, r.settingValue]));
+          return [byKey["stripeMembershipPriceId"] ?? null, byKey["stripeMembershipPriceIdAnnual"] ?? null];
         });
-        return trpcOk(res, { enabled: !!(priceId && String(priceId).trim()) });
+        return trpcOk(res, {
+          enabled: !!(priceId && String(priceId).trim()),
+          annual: !!(annualPriceId && String(annualPriceId).trim()),
+        });
       }
       case "stripe.createMembershipCheckout": {
         const stripe = getStripe();
         if (!stripe || !stripeConfigured()) return trpcErr(res, "BAD_REQUEST", "Membership is not open yet.", 400);
         const email = typeof input?.customerEmail === "string" ? input.customerEmail : "";
         if (!email) return trpcErr(res, "BAD_REQUEST", "A valid email is required.", 400);
+        // plan selects monthly (default) or annual; annual uses its own price id.
+        const settingKey =
+          input?.plan === "annual" ? "stripeMembershipPriceIdAnnual" : "stripeMembershipPriceId";
         const priceId = await withConn(async (c) => {
           const [rows]: any = await c.execute(
             "SELECT settingValue FROM site_settings WHERE settingKey = ?",
-            ["stripeMembershipPriceId"],
+            [settingKey],
           );
           return String(rows[0]?.settingValue ?? "").trim();
         });

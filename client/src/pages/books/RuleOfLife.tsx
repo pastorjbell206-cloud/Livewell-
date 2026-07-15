@@ -30,7 +30,7 @@ export default function RuleOfLife() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description="You are being formed every hour, by the feed and the screen, into someone you did not choose. This book recovers the ancient rule of life — the hours, the fast, the Sabbath, the silence of the desert fathers, the Christian calendar — the practices the church used to form durable souls against an age built to deform us. A PDF ebook by James Bell."
+        description="The ancient rule of life recovered for a distracted age: the hours, the fast, Sabbath, and the desert fathers' practice of forming a durable soul."
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

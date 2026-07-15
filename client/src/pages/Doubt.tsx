@@ -15,7 +15,7 @@ export default function Doubt() {
     },
     {
       title: "When the Church Married Empire",
-      slug: "when-church-married-empire",
+      slug: "when-the-church-married-empire",
       topic: "Faith & Doubt",
       readTime: "12 min read"
     },
@@ -49,26 +49,26 @@ export default function Doubt() {
     {
       title: "I used to believe, but now I'm not sure",
       description: "For those who had faith and are now questioning. You're not alone. And this might be the most honest part of what you are walking through.",
-      icon: "←"
+      href: "/writing/dark-night-god-feels-absent"
     },
     {
       title: "Someone I love is questioning their faith",
       description: "For parents, friends, and pastors watching someone you care about walk away. How to stay present without defending.",
-      icon: "🤝"
+      href: "/writing/parenting-when-your-child-doubts-or-walks-away"
     },
     {
       title: "I've never believed but I'm curious",
       description: "For seekers, skeptics, and the genuinely undecided. What the Christian story actually claims and why it matters.",
-      icon: "?"
+      href: "/skeptic-track"
     }
   ];
 
   const HARD_QUESTIONS = [
-    "Is God real?",
-    "Why does God allow suffering?",
-    "Is the Bible reliable?",
-    "What about other religions?",
-    "Can I doubt and still have faith?"
+    { q: "Is God real?", href: "/faq/does-god-exist" },
+    { q: "Why does God allow suffering?", href: "/writing/if-god-is-good-why-suffering" },
+    { q: "Is the Bible reliable?", href: "/faq/is-the-bible-historically-accurate" },
+    { q: "What about hell?", href: "/faq/what-do-christians-believe-about-hell" },
+    { q: "Can I doubt and still have faith?", href: "/faq/what-is-deconstruction" },
   ];
 
   return (
@@ -95,6 +95,16 @@ export default function Doubt() {
         </div>
       </section>
 
+
+      {/* TEACHING — care/orientation before the link grid (depth sweep) */}
+      <section style={{ background: "var(--paper2)", padding: "72px 20px" }}>
+        <div style={{ maxWidth: "760px", margin: "0 auto" }}>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.8, color: "var(--ink)", maxWidth: "68ch", marginBottom: "22px" }}>Doubt is not the opposite of faith. It is the sound faith makes when it refuses to stay shallow.</p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.8, color: "var(--ink)", maxWidth: "68ch", marginBottom: "22px" }}>The church has too often treated a hard question as a threat to be managed, and so it taught a generation to choose between honesty and belonging. That was a false choice, and it cost us. The people who kept asking were not the weak ones. They were the ones who took God seriously enough to want him to be real.</p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.8, color: "var(--ink)", maxWidth: "68ch", marginBottom: "0" }}>Bring the question. It is safer inside the faith than outside it.</p>
+          </div>
+      </section>
+
       {/* START HERE CARDS */}
       <section style={{ background: "var(--paper)", padding: "80px 20px" }}>
         <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
@@ -103,11 +113,8 @@ export default function Doubt() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
             {START_HERE_PATHS.map((path, i) => (
-              <Link key={i} href="/writing?track=doubt" style={{ textDecoration: "none" }}>
-                <div style={{ background: "var(--card)", padding: "40px", borderRadius: "8px", border: "1px solid #E0D9CC", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column" }}>
-                  <div style={{ fontSize: "32px", marginBottom: "16px" }}>
-                    {path.icon}
-                  </div>
+              <Link key={i} href={path.href} style={{ textDecoration: "none" }}>
+                <div style={{ background: "var(--card)", padding: "40px", borderRadius: "8px", border: "1px solid var(--border)", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column" }}>
                   <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "12px", color: "var(--ink)" }}>
                     {path.title}
                   </h3>
@@ -133,7 +140,7 @@ export default function Doubt() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
             {FEATURED_ARTICLES.map((article, i) => (
               <Link key={i} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
-                <div style={{ background: "var(--card)", padding: "32px", borderRadius: "8px", border: "1px solid #E0D9CC", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column" }}>
+                <div style={{ background: "var(--card)", padding: "32px", borderRadius: "8px", border: "1px solid var(--border)", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column" }}>
                   <div style={{ fontSize: "11px", fontWeight: "bold", color: "var(--gold)", marginBottom: "12px", textTransform: "uppercase" }}>
                     {article.topic}
                   </div>
@@ -157,14 +164,14 @@ export default function Doubt() {
             Hard Questions, Honest Answers
           </h2>
           <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "48px" }}>
-            The questions that keep people up at night. We have articles on all of them.
+            The questions that keep people up at night. Each one opens the essay that takes it seriously.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "24px" }}>
-            {HARD_QUESTIONS.map((question, i) => (
-              <Link key={i} href="/writing?track=doubt" style={{ textDecoration: "none" }}>
+            {HARD_QUESTIONS.map((item, i) => (
+              <Link key={i} href={item.href} style={{ textDecoration: "none" }}>
                 <div style={{ background: "var(--ink)", color: "var(--paper)", padding: "32px", borderRadius: "8px", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "space-between", minHeight: "100px" }}>
                   <h3 style={{ fontSize: "16px", fontWeight: "bold", margin: 0 }}>
-                    {question}
+                    {item.q}
                   </h3>
                   <span style={{ fontSize: "20px", marginLeft: "16px" }}>→</span>
                 </div>
@@ -211,9 +218,9 @@ export default function Doubt() {
           <p style={{ fontSize: "16px", lineHeight: "1.8", marginBottom: "32px", color: "var(--ink3)" }}>
             It might be the beginning of the truest faith you'll ever have. Not faith that requires you to stop thinking. Faith that holds up under real questions.
           </p>
-          <Link href="/writing?track=doubt" style={{ textDecoration: "none" }}>
+          <Link href="/writing?topic=theology" style={{ textDecoration: "none" }}>
             <button style={{ background: "var(--ink)", color: "var(--paper)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
-              Browse All Doubt & Faith Essays
+              Browse All Theological Articles
             </button>
           </Link>
         </div>

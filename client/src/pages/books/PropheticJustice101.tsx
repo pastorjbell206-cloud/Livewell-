@@ -30,7 +30,7 @@ export default function PropheticJustice101() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description={"A recovery of biblical justice (mishpat) and righteousness (tsedaqah) as central to the character of God, from the Exodus and the Jubilee through the prophets to Jesus. Charity versus justice, systemic sin, and what the church owes its neighborhood. PDF ebook by James Bell."}
+        description={"Biblical justice and righteousness, from Exodus and Jubilee through the prophets to Jesus — charity versus justice, and what the church owes its neighbors."}
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

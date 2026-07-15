@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { SITE_URL } from "@/lib/site";
 
 /* ── data ─────────────────────────────────────────────────────────── */
 
@@ -61,7 +62,7 @@ const RELATED_ARTICLES = [
   { title: "The Orthodox Way", slug: "the-orthodox-way" },
   { title: "The Catholic Intellectual Tradition", slug: "the-catholic-intellectual-tradition" },
   { title: "The Rise and Fall of Christendom", slug: "the-rise-and-fall-of-christendom" },
-  { title: "When the Church Married Empire", slug: "when-church-married-empire" },
+  { title: "When the Church Married Empire", slug: "when-the-church-married-empire" },
 ];
 
 const FAQ_ITEMS = [
@@ -103,7 +104,7 @@ const webPageSchema = {
   name: "Orthodox vs. Catholic: What's the Difference?",
   description: "A detailed comparison of Eastern Orthodox and Roman Catholic Christianity — the Filioque, papal authority, theosis, icons, and the 1054 schism that divided the Christian world.",
   url: "https://www.livewellbyjamesbell.co/compare/orthodox-vs-catholic",
-  author: { "@type": "Person", name: "James Bell", url: "https://www.livewellbyjamesbell.co/about" },
+  author: { "@type": "Person", name: "James Bell", url: `${SITE_URL}/about` },
   publisher: { "@type": "Organization", name: "LiveWell by James Bell" },
 };
 

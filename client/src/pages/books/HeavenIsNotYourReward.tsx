@@ -29,7 +29,7 @@ export default function HeavenIsNotYourReward() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description={"Recovering the Bible's actual hope, the bodily resurrection and the renewal of all creation, against the escapist picture of souls floating off to the clouds, and what that changes about grief, justice, the earth, and death. PDF ebook by James Bell."}
+        description={"Recovering the Bible's actual hope: bodily resurrection and a renewed creation, against souls floating off to the clouds, and what that changes."}
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

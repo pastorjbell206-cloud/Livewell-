@@ -30,7 +30,7 @@ export default function FaithAfterDeconstruction() {
     <Layout>
       <SEOMeta
         title={`${TITLE} — An Ebook by James Bell`}
-        description={"For Christians whose inherited faith is coming apart: how to tell faithful deconstruction from faithless, what should be torn down and what must not be, and how to rebuild a load-bearing faith through the wilderness. PDF ebook by James Bell."}
+        description={"For Christians whose inherited faith is coming apart: telling faithful deconstruction from faithless, and rebuilding a load-bearing faith after it."}
         url={`${SITE_URL}/${SLUG}`}
         structuredData={{
           "@context": "https://schema.org",

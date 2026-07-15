@@ -195,7 +195,9 @@ function TopicPanel({
   }
 
   async function copyVerse(v: Verse) {
-    const ok = await copyToClipboard(`"${v.text}" — ${v.ref}`);
+    // Not wrapped in quotation marks: v.text is shortened to the line in view,
+    // not the verbatim verse — copying it as a quotation would misrepresent it.
+    const ok = await copyToClipboard(`${v.ref} — ${v.text} (shortened; read the full passage)`);
     if (!ok) {
       setCopyFailed(true);
       return;
@@ -236,11 +238,16 @@ function TopicPanel({
         <BookOpen size={16} style={{ color: "var(--mustard-text)" }} />
         <span style={{ ...eyebrow, color: "var(--ink)" }}>What Scripture says</span>
       </div>
+      {/* Integrity: these texts are shortened to the line in view, not verbatim.
+          Say so plainly and send the reader to the full passage. */}
+      <p style={{ fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 12px", maxWidth: "60ch" }}>
+        The verse text below is shortened to the line in view. Tap any reference to read the whole passage.
+      </p>
       <div style={{ display: "grid", gap: "8px", marginBottom: "var(--s-4)" }}>
         {topic.verses.map((v) => (
           <div key={v.ref} style={{ background: "var(--card)", borderLeft: "3px solid var(--mustard)", padding: "var(--s-3)" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "10px", marginBottom: "6px" }}>
-              <div style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, letterSpacing: "0.06em", color: "var(--mustard-text)" }}>{v.ref}</div>
+              <Link href={`/theology/passage?ref=${encodeURIComponent(v.ref)}`} style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, letterSpacing: "0.06em", color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--line)" }}>{v.ref} →</Link>
               <button
                 onClick={() => copyVerse(v)}
                 aria-label={`Copy ${v.ref}`}
@@ -474,11 +481,13 @@ export default function WisdomFinder() {
         <section style={{ background: "var(--bone-warm)", padding: "var(--s-4) var(--s-4)" }}>
           <div style={wrap}>
             <div style={{ ...eyebrow, marginBottom: "10px" }}>An entry for today</div>
-            <blockquote style={{ fontFamily: "var(--F)", fontSize: "clamp(19px, 2.6vw, 24px)", lineHeight: 1.5, fontStyle: "italic", color: "var(--ink)", margin: "0 0 10px", maxWidth: "68ch" }}>
-              &ldquo;{today.verses[0].text}&rdquo;
-            </blockquote>
+            {/* No quotation marks: the text is shortened to the line in view, not the
+                verbatim verse — the reference links to the whole passage to check it. */}
+            <p style={{ fontFamily: "var(--F)", fontSize: "clamp(19px, 2.6vw, 24px)", lineHeight: 1.5, fontStyle: "italic", color: "var(--ink)", margin: "0 0 10px", maxWidth: "68ch" }}>
+              {today.verses[0].text}
+            </p>
             <p style={{ fontFamily: "var(--U)", fontSize: "13.5px", color: "var(--ink-muted)", margin: "0 0 14px" }}>
-              {today.verses[0].ref} · {today.label}
+              <Link href={`/theology/passage?ref=${encodeURIComponent(today.verses[0].ref)}`} style={{ color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--line)" }}>{today.verses[0].ref} →</Link> · {today.label} · shortened; read the full passage
             </p>
             <button onClick={() => openTopic(today.id, "browse")} style={{ ...smallActionStyle }}>
               Read the whole entry

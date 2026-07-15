@@ -7,10 +7,15 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import LoadFailed from "@/components/LoadFailed";
+import { fetchJson } from "@/lib/fetch-json";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 interface Entry { slug: string; title: string; blurb: string; pillar: string }
+function isIndex(x: unknown): x is { domains: Entry[] } {
+  return !!x && typeof x === "object" && Array.isArray((x as { domains?: unknown }).domains);
+}
 
 const PILLAR_ORDER = [
   "The Integrated Vision",
@@ -23,16 +28,25 @@ const PILLAR_ORDER = [
 ];
 
 export default function LifeIndex() {
-  const [items, setItems] = useState<Entry[]>([]);
+  // Loading, failed, and loaded-but-empty are three different truths, keyed to
+  // a retry nonce so "Try again" resets cleanly. The old version swallowed the
+  // error and left the reader on "Loading the domains…" forever.
+  const [loaded, setLoaded] = useState<{ nonce: number; domains: Entry[] } | null>(null);
+  const [failedAt, setFailedAt] = useState<number | null>(null);
+  const [nonce, setNonce] = useState(0);
+  const failed = failedAt === nonce;
+  const items = loaded && loaded.nonce === nonce ? loaded.domains : null;
 
   useEffect(() => {
-    fetch("/life/domains-index.json")
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d) => d && setItems(d.domains || []))
-      .catch(() => {});
-  }, []);
+    let stale = false;
+    fetchJson("/life/domains-index.json", isIndex)
+      .then((d) => { if (!stale) setLoaded({ nonce, domains: d.domains }); })
+      .catch(() => { if (!stale) setFailedAt(nonce); });
+    return () => { stale = true; };
+  }, [nonce]);
 
   const grouped = useMemo(() => {
+    if (!items) return [];
     const present = Array.from(new Set(items.map((i) => i.pillar)));
     const order = PILLAR_ORDER.filter((p) => present.includes(p)).concat(present.filter((p) => !PILLAR_ORDER.includes(p)).sort());
     return order.map((p) => [p, items.filter((i) => i.pillar === p)] as const);
@@ -63,8 +77,12 @@ export default function LifeIndex() {
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={wrap}>
-          {items.length === 0 ? (
+          {failed ? (
+            <LoadFailed what="The life domains" onRetry={() => setNonce((n) => n + 1)} backHref="/" backLabel="Back home" />
+          ) : items === null ? (
             <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the domains…</p>
+          ) : items.length === 0 ? (
+            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>The domains are being written. Check back soon.</p>
           ) : (
             grouped.map(([pillar, entries]) => (
               <div key={pillar} style={{ marginBottom: "var(--s-5)" }}>
@@ -72,7 +90,7 @@ export default function LifeIndex() {
                 <div style={{ width: "36px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-3)" }} />
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "var(--s-3)" }}>
                   {entries.map((e) => (
-                    <Link key={e.slug} href={`/life/${e.slug}`} style={{ display: "block", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
+                    <Link key={e.slug} href={`/life/${e.slug}`} style={{ display: "block", background: "var(--card)", border: "1px solid var(--border)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
                       <div style={{ fontFamily: "var(--F)", fontSize: "20px", lineHeight: 1.25, color: "var(--ink)", marginBottom: "8px" }}>{e.title}</div>
                       <div style={{ fontFamily: "var(--B)", fontSize: "13.5px", lineHeight: 1.55, color: "var(--ink-muted)" }}>{e.blurb}</div>
                     </Link>

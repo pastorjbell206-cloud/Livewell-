@@ -231,7 +231,7 @@ export default function VerseFinder() {
             Bible Verse <em style={{ fontStyle: "italic", color: "var(--gold)" }}>Finder</em>
           </h1>
           <p style={{ fontSize: "17px", lineHeight: 1.7, opacity: 0.85, fontFamily: "var(--B)" }}>
-            Select a topic and find curated Scripture for every season of life.
+            Select a topic and find Scripture for the season you are in. The line shown is the part that bears on the topic — tap any reference to read the whole passage in context. For the fuller treatment — the world a verse was written in and how the church has read it — see <Link href="/tools/wisdom-finder" style={{ color: "var(--gold)", textDecoration: "underline" }}>Wisdom for All of Life</Link>.
           </p>
           {favorites.length > 0 && (
             <Link
@@ -265,11 +265,11 @@ export default function VerseFinder() {
                 Verse of the Day
               </span>
             </div>
-            <span style={{ fontSize: "14px", fontWeight: 700, color: "var(--gold)", fontFamily: "var(--U)", display: "block", marginBottom: "8px" }}>
-              {dailyVerse.ref}
-            </span>
+            <Link href={`/theology/passage?ref=${encodeURIComponent(dailyVerse.ref)}`} style={{ fontSize: "14px", fontWeight: 700, color: "var(--gold)", fontFamily: "var(--U)", display: "block", marginBottom: "8px", textDecoration: "none" }}>
+              {dailyVerse.ref} →
+            </Link>
             <p style={{ fontSize: "16px", lineHeight: 1.8, color: "var(--ink)", fontFamily: "var(--B)", fontStyle: "italic", margin: 0 }}>
-              "{dailyVerse.text}"
+              {dailyVerse.text}
             </p>
             <div style={{ display: "flex", gap: "8px", marginTop: "16px" }}>
               <button
@@ -352,7 +352,7 @@ export default function VerseFinder() {
                 {VERSES[selected].map((v) => (
                   <div key={v.ref} style={{ padding: "24px", background: "white", border: "1px solid var(--border)", borderRadius: "8px", borderLeft: "4px solid var(--gold)" }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "12px" }}>
-                      <span style={{ fontSize: "14px", fontWeight: 700, color: "var(--gold)", fontFamily: "var(--U)" }}>{v.ref}</span>
+                      <Link href={`/theology/passage?ref=${encodeURIComponent(v.ref)}`} style={{ fontSize: "14px", fontWeight: 700, color: "var(--gold)", fontFamily: "var(--U)", textDecoration: "none" }}>{v.ref} →</Link>
                       <div style={{ display: "flex", gap: "6px" }}>
                         <button
                           onClick={() => handleCopy(v.ref, v.text)}
@@ -390,7 +390,7 @@ export default function VerseFinder() {
                       </p>
                     )}
                     <p style={{ fontSize: "16px", lineHeight: 1.8, color: "var(--ink)", fontFamily: "var(--B)", fontStyle: "italic" }}>
-                      "{v.text}"
+                      {v.text}
                     </p>
                   </div>
                 ))}

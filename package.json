@@ -18,6 +18,8 @@
     "scan:citations": "node scripts/scan-citations.mjs",
     "howtos": "node scripts/build-howtos-index.mjs",
     "wisdom": "node scripts/build-wisdom-index.mjs",
+    "plans:index": "node scripts/build-plans-index.mjs",
+    "prophetic": "node scripts/build-prophetic-indexes.mjs",
     "pdfs": "node scripts/build-pdfs.mjs",
     "manuals": "node scripts/build-leadership-manuals.mjs",
     "og": "node scripts/build-og-images.mjs",
@@ -32,6 +34,7 @@
     "seed:paths": "node scripts/seed-reading-paths.mjs",
     "validate:pathways": "node scripts/validate-pathways.mjs",
     "validate:integrity": "node scripts/validate-content-integrity.mjs",
+    "validate:links": "node scripts/validate-links.mjs",
     "llms:full": "node scripts/build-llms-full.mjs",
     "theology-index": "node scripts/build-theology-index.mjs"
   },

@@ -116,7 +116,7 @@ export default function WhatIsReligiousTrauma() {
           <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "48ch", marginLeft: "auto", marginRight: "auto" }}>
             The full article examines what the church did, why it happened, and what repair looks like -- without minimizing the damage or letting the institution off the hook.
           </p>
-          <Link href="/writing/religious-trauma-is-real" style={{ textDecoration: "none" }}>
+          <Link href="/writing/silence-abuse-church" style={{ textDecoration: "none" }}>
             <span style={{ display: "inline-block", background: "var(--bone)", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.06em", padding: "15px 32px", borderRadius: "2px", borderBottom: "2px solid var(--mustard)" }}>
               Read the full article
             </span>

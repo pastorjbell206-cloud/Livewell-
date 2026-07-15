@@ -219,11 +219,6 @@
             "permanent": true
         },
         {
-            "source": "/writing/complicity-not-innocence",
-            "destination": "/justice",
-            "permanent": true
-        },
-        {
             "source": "/writing/where-church-was-silent",
             "destination": "/justice",
             "permanent": true

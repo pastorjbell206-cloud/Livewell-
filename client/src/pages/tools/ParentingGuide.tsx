@@ -69,7 +69,7 @@ const AGE_GROUPS: AgeGroup[] = [
     practice: {
       title: "The Bedtime Benediction",
       description:
-        "Every night this week, after the last story and before you turn out the light, place your hand on your child's head and say the same three sentences: 'God made you. God loves you. God is with you tonight.' Do not vary it. Do not explain it. The repetition becomes a anchor they will carry in their body long after they leave your house. You are not teaching them theology. You are giving them a blessing -- the same one Aaron spoke over Israel in Numbers 6. And a blessing, unlike a lesson, does not require understanding to do its work.",
+        "Every night this week, after the last story and before you turn out the light, place your hand on your child's head and say the same three sentences: 'God made you. God loves you. God is with you tonight.' Do not vary it. Do not explain it. The repetition becomes an anchor they will carry in their body long after they leave your house. You are not teaching them theology. You are giving them a blessing -- the same one Aaron spoke over Israel in Numbers 6. And a blessing, unlike a lesson, does not require understanding to do its work.",
     },
   },
   {

@@ -68,6 +68,11 @@
   --alert:#9B2C2C;--alert-bg:rgba(155,44,44,0.08);
   --strain:#B5651D;--strain-bg:rgba(181,101,29,0.08);
 
+  /* Pillar badge accent — Prophetic Justice (ArticleCard). Promotes the value
+     that shipped hardcoded; the hue itself is off the core palette and is
+     flagged for an on-brand review (docs/site-audit.md). */
+  --pillar-justice:#2D4A3E;
+
   /* Aliases */
   --paper:#F5F0E6;--paper2:#EDE8DC;--cream:#EDE8DC;
   --line:#D9D3C4;--border:#D9D3C4;--borderdk:#C0B9A8;
@@ -332,6 +337,14 @@ nav{display:flex;align-items:center;justify-content:space-between;height:70px;ma
 .grid-2{grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr))}
 .grid-3{grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr))}
 .grid-4{grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr))}
+
+/* Book-detail hero: cover beside text on desktop, stacked on phones (the
+   fixed-width buy button can't share a row with the cover under ~640px). */
+.book-detail-hero{grid-template-columns:minmax(min(220px,100%),320px) 1fr}
+@media (max-width:640px){
+  .book-detail-hero{grid-template-columns:1fr;justify-items:start}
+  .book-detail-hero>img{max-width:260px}
+}
 
 /* CARD */
 .card{background:var(--card);border:1px solid var(--border);border-radius:2px;overflow:hidden;transition:all 240ms cubic-bezier(0.22,1,0.36,1)}

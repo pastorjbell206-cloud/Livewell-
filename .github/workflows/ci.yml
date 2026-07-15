@@ -41,6 +41,7 @@ jobs:
           node scripts/validate-skeptic-track.mjs
           node scripts/validate-books.mjs
           node scripts/validate-answers.mjs
+          node scripts/validate-links.mjs
 
       - name: Test
         run: pnpm test

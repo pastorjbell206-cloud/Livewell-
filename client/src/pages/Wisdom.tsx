@@ -56,7 +56,7 @@ function WisdomToday() {
           )}
           <p style={{ fontFamily: "var(--B)", fontSize: "15.5px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "16px" }}>{topic.framing}</p>
           <div style={{ display: "flex", gap: "18px", flexWrap: "wrap" }}>
-            <Link href={`/tools/wisdom-finder?q=${encodeURIComponent(topic.label)}`} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
+            <Link href={`/wisdom/${topic.id}`} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
               Read the full wisdom
             </Link>
             {topic.related && topic.related[0] && (

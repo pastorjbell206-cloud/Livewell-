@@ -8,6 +8,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import { Route, Router as WouterRouter, Switch, useLocation } from "wouter";
 import { useBrowserLocation } from "wouter/use-browser-location";
 import { Suspense, lazy, startTransition, useCallback, useEffect } from "react";
+import { trackReturnReaderOnce } from "@/lib/telemetry";
 import { JUSTICE, DISRUPTION } from "./lib/prophetic";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -104,10 +105,8 @@ const HardIssuesSeries = lazy(() => import("./pages/HardIssuesSeries"));
 const RoadMap = lazy(() => import("./pages/RoadMap"));
 const Library = lazy(() => import("./pages/Library"));
 const Diagnostic = lazy(() => import("./pages/Diagnostic"));
-const BooksStore = lazy(() => import("./pages/BooksStore"));
 const SearchPage = lazy(() => import("./pages/Search"));
 const TheologyQuiz = lazy(() => import("./pages/TheologyQuiz"));
-const ResourcesForPastors = lazy(() => import("./pages/ResourcesForPastors"));
 const ReadingPaths = lazy(() => import("./pages/ReadingPaths"));
 const Pathways = lazy(() => import("./pages/Pathways"));
 const TopicPathway = lazy(() => import("./pages/TopicPathway"));
@@ -131,6 +130,7 @@ const MembershipSuccess = lazy(() => import("./pages/MembershipSuccess"));
 const Discipleship = lazy(() => import("./pages/Discipleship"));
 const DiscipleMaking = lazy(() => import("./pages/DiscipleMaking"));
 const Wisdom = lazy(() => import("./pages/Wisdom"));
+const WisdomTopic = lazy(() => import("./pages/WisdomTopic"));
 const HowTos = lazy(() => import("./pages/HowTos"));
 const HowToArticle = lazy(() => import("./pages/HowToArticle"));
 const LifeIndex = lazy(() => import("./pages/life/LifeIndex"));
@@ -489,6 +489,7 @@ function Router() {
         <Route path="/discipleship" component={Discipleship} />
         <Route path="/disciple-making" component={DiscipleMaking} />
         <Route path="/wisdom" component={Wisdom} />
+        <Route path="/wisdom/:id" component={WisdomTopic} />
         <Route path="/how-tos" component={HowTos} />
         <Route path="/how-tos/:slug" component={HowToArticle} />
         <Route path="/studyguides" component={StudyGuidesIndex} />
@@ -581,7 +582,6 @@ function Router() {
         <Route path="/substack" component={SubstackPage} />
         <Route path="/pastors" component={Pastors} />
         <Route path="/about" component={About} />
-        <Route path="/books-store" component={BooksStore} />
         <Route path="/search" component={SearchPage} />
         <Route path="/tools/theology-quiz" component={TheologyQuiz} />
         <Route path="/tools/which-lens" component={WhichLens} />
@@ -624,7 +624,6 @@ function Router() {
         <Route path="/privacy" component={Privacy} />
         <Route path="/accessibility" component={Accessibility} />
         <Route path="/terms" component={Terms} />
-        <Route path="/resources-for-pastors" component={ResourcesForPastors} />
         <Route path="/pastoral-burnout" component={PastoralBurnout} />
         <Route path="/faith-crisis" component={FaithCrisis} />
         <Route path="/marriage-crisis" component={MarriageCrisis} />
@@ -705,6 +704,11 @@ function useTransitionLocation(): ReturnType<typeof useBrowserLocation> {
 }
 
 function App() {
+  // Depth telemetry (board rec #17 / Next-Ten #4): count returning readers once
+  // per load. Best-effort, no PII, no cookie — forwards to Vercel Analytics.
+  useEffect(() => {
+    trackReturnReaderOnce();
+  }, []);
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light" switchable>
