@@ -73,10 +73,12 @@ The **"Test the Case" interactive skeptic tool** is built and live at
 `/tools/test-the-case`. It works a case one move at a time; at every move the
 reader raises the objection they actually hold and gets the honest answer plus
 what the move does not prove, and it closes on a verdict with no altar call.
-The complete flow is the resurrection (5 moves, 11 objection/response pairs);
-two further cases (hell, meaning) ship as honest `published: false` stubs shown
-as "In progress." Content lives in `client/src/data/argumentCases.ts`; the
-engine reuses `hooks/useProgress.ts` to resume where a reader stopped and to
-start a case over. Registered in `/tools`, the route table, and the sitemap.
-Author action: write the two stub cases (or new ones) in `argumentCases.ts`;
-they light up automatically when `published` flips true.
+Three complete flows now ship: the resurrection (5 moves, 11 objection/response
+pairs), hell (could a good God send anyone to hell), and meaning (can a life
+mean anything without God), each built from the matching essay in the same
+objection-and-answer form, em-dash-free, with Scripture verbatim. Content lives
+in `client/src/data/argumentCases.ts`; the engine reuses `hooks/useProgress.ts`
+to resume where a reader stopped and to start a case over. Registered in
+`/tools`, the route table, and the sitemap. Author action: add further cases in
+`argumentCases.ts`; a case with `published: false` shows honestly as "In
+progress" and lights up automatically when the flag flips true.
