@@ -1171,6 +1171,9 @@ function byDateDesc(a: any, b: any): number {
 // add its slug here, deploy, and it is gone everywhere the static library serves
 // it (the direct URL and the listings). Code-level, auditable, only ever
 // removes content. Keep empty until a piece must come down.
+// NOTE: scripts/generate-sitemap.mjs parses this exact single-line declaration
+// at build time to drop taken-down slugs from the sitemap — keep the
+// `const TAKEN_DOWN = new Set<string>([...])` shape if you edit it.
 const TAKEN_DOWN = new Set<string>([]);
 
 // Append the static essays the DB doesn't already have (DB wins on slug), then
