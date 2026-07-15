@@ -19,6 +19,7 @@ export default function AdminSettings() {
     substackUrl: "",
     pastorsConnectionUrl: "",
     stripeMembershipPriceId: "",
+    stripeMembershipPriceIdAnnual: "",
   });
   const [isLoading, setIsLoading] = useState(false);
   const [configured, setConfigured] = useState<Record<string, boolean> | null>(null);
@@ -44,6 +45,7 @@ export default function AdminSettings() {
       substackUrl: getAllSettingsQuery.data.substackUrl || "",
       pastorsConnectionUrl: getAllSettingsQuery.data.pastorsConnectionUrl || "",
       stripeMembershipPriceId: getAllSettingsQuery.data.stripeMembershipPriceId || "",
+      stripeMembershipPriceIdAnnual: getAllSettingsQuery.data.stripeMembershipPriceIdAnnual || "",
     });
   }
 
@@ -56,6 +58,7 @@ export default function AdminSettings() {
           substackUrl: form.substackUrl,
           pastorsConnectionUrl: form.pastorsConnectionUrl,
           stripeMembershipPriceId: form.stripeMembershipPriceId,
+          stripeMembershipPriceIdAnnual: form.stripeMembershipPriceIdAnnual,
         },
       });
       toast.success("Settings saved");
@@ -166,6 +169,22 @@ export default function AdminSettings() {
               />
               <p className="font-ui text-xs mt-2" style={{ color: "var(--adm-gray)" }}>
                 Two steps to open membership checkout: 1) add STRIPE_SECRET_KEY as an environment variable in Vercel, 2) create a recurring product in your Stripe dashboard and paste its Price ID (starts with price_) here. While either is missing, the membership page shows the waitlist instead. Clear this field to close checkout again.
+              </p>
+            </div>
+            <div className="mt-4">
+              <label className="block font-ui text-sm font-medium mb-2" style={{ color: "var(--charcoal)" }}>
+                Stripe Price ID for the annual plan (optional)
+              </label>
+              <input
+                type="text"
+                value={form.stripeMembershipPriceIdAnnual}
+                onChange={(e) => setForm({ ...form, stripeMembershipPriceIdAnnual: e.target.value })}
+                className="w-full px-4 py-2 rounded border font-body"
+                style={{ borderColor: "var(--adm-line)", backgroundColor: "var(--card)" }}
+                placeholder="price_..."
+              />
+              <p className="font-ui text-xs mt-2" style={{ color: "var(--adm-gray)" }}>
+                Optional. Paste a second recurring Price ID (e.g. a yearly plan) to offer a monthly/annual choice on the membership page. Leave blank to sell the monthly plan only — the page then behaves exactly as it does today.
               </p>
             </div>
           </div>
