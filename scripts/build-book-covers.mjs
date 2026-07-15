@@ -30,13 +30,19 @@ const SERIF = "Palatino, 'Palatino Linotype', Georgia, serif";
 const SANS = "Helvetica, Arial, sans-serif";
 const MONO = "'JetBrains Mono', 'Courier New', monospace";
 
-// Short mustard kicker per pillar.
+// Short mustard kicker per pillar — one for each of the eight, so no cover
+// falls back to the generic label. (Previously "After Christendom" as a pillar
+// went unlabeled while "Prophetic Disruption" wore its name; each now carries
+// its own.)
 const KICKER = {
   "Integrated Life": "LIVING WELL",
   "Theological Depth": "THEOLOGY",
-  "Prophetic Disruption": "AFTER CHRISTENDOM",
+  "Prophetic Disruption": "PROPHETIC WITNESS",
+  "After Christendom": "AFTER CHRISTENDOM",
   "Prophetic Justice": "JUSTICE",
   "Leadership Formation": "FOR PASTORS & LEADERS",
+  "Pastoral Ministry": "PASTORAL MINISTRY",
+  "The Table": "AT THE TABLE",
 };
 
 const esc = (s) => String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");

@@ -2,7 +2,7 @@
   <rect width="800" height="1200" fill="#EDE8DC"/>
   <circle cx="764" cy="40" r="300" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.26"/>
   <circle cx="764" cy="40" r="212" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.16"/>
-  <text x="80" y="150" font-family="Helvetica, Arial, sans-serif" font-size="19" letter-spacing="5.5" font-weight="700" fill="#D4A017">COLLECTED ESSAYS</text>
+  <text x="80" y="150" font-family="Helvetica, Arial, sans-serif" font-size="19" letter-spacing="5.5" font-weight="700" fill="#D4A017">AFTER CHRISTENDOM</text>
   <text x="720" y="152" text-anchor="end" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="22" fill="#D4A017">10</text>
   <line x1="80" y1="716" x2="176" y2="716" stroke="#D4A017" stroke-width="3"/>
   <text x="76" y="838" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="88" fill="#1A1A1A">Faithful in</text>
