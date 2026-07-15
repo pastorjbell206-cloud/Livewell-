@@ -136,6 +136,12 @@ for (const [dir, meta] of Object.entries(DIRS)) {
       contentType: meta.pastoral ? "pastoral" : "general",
       audience_type: meta.pastoral ? "pastors" : "general",
       topic: null,
+      // These are all full-length essays. The "devotionals" pillar is the
+      // site's label for the formation/living-well essays (all 12-16 min), not
+      // short daily readings, so tagging them "devotional" would mislabel
+      // essays. Everything in this library is a full essay; format stays
+      // "article" and the archive's format badge/filter (WI-5) light up only
+      // for genuinely non-essay content published with another format.
       format: "article",
       audience: meta.audience,
       difficulty: "intermediate",

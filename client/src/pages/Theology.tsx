@@ -46,7 +46,9 @@ function DoctrineCard({ d }: { d: DoctrineIndexEntry }) {
 }
 
 export default function Theology() {
-  const byPillar = (p: string) => DOCTRINE_INDEX.filter((d) => d.pillar === p);
+  // Render only published doctrines, so an unpublished one is simply absent,
+  // never a greyed-out "worked page coming" teaser.
+  const byPillar = (p: string) => DOCTRINE_INDEX.filter((d) => d.pillar === p && d.ready);
   const readyCount = DOCTRINE_INDEX.filter((d) => d.ready).length;
 
   return (
@@ -178,7 +180,7 @@ export default function Theology() {
           <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>The map</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.5vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "10px" }}>Every doctrine, sorted by weight</h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "var(--s-5)" }}>
-            {`The full section, laid out from the start. ${readyCount === 1 ? "One doctrine is" : `${readyCount} doctrines are`} written end to end in the six-step method. The rest show where the section is going, and arrive one at a time.`}
+            {`The full section, laid out from the start. ${readyCount === 1 ? "One doctrine is" : `${readyCount} doctrines are`} worked end to end in the six-step method.`}
           </p>
 
           <SectionArt seed="doctrine-map" />

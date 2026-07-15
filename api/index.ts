@@ -1150,6 +1150,7 @@ function staticFullCard(r: any): any {
     body: r.body || null, content: r.body || null,
     pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
     readingTimeMinutes: r.readingTimeMinutes || readTime(null),
+    format: r.format || "article",
     published: true, featured: false, topic: r.topic || null,
     audience: r.audience || null, contentType: r.contentType || null,
     subPathway: null, isSeries: false,
@@ -1219,11 +1220,17 @@ async function listSlimPosts(): Promise<any[]> {
       // It must live in SQL: slim rows carry body:null, so the client-side
       // isFullEssay check has nothing to measure in production.
       const where = "WHERE published = true AND CHAR_LENGTH(body) >= 600";
+      // The dev runtime (server/db.ts listPostsForIndex) already returns
+      // readingTimeMinutes, format, audience and topic; prod must match so the
+      // archive shows real read times and a format badge, and the Format/
+      // Audience filters work. bodyChars lets us derive an accurate read time
+      // without shipping the body when the stored minutes are missing.
+      const rich = `${base}, readingTimeMinutes, format, audience, topic, subPathway, isSeries, CHAR_LENGTH(body) AS bodyChars`;
       // Try the two-level taxonomy columns; fall back if the migration hasn't run.
       let rows: any = null;
       try {
         [rows] = await c.execute(
-          `SELECT ${base}, subPathway, isSeries FROM posts ${where} ORDER BY createdAt DESC LIMIT 2000`
+          `SELECT ${rich} FROM posts ${where} ORDER BY createdAt DESC LIMIT 2000`
         );
       } catch {
         try {
@@ -1237,6 +1244,10 @@ async function listSlimPosts(): Promise<any[]> {
           id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
           body: null, content: null,
           pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
+          readingTimeMinutes:
+            r.readingTimeMinutes ||
+            (r.bodyChars ? Math.max(1, Math.round(Number(r.bodyChars) / 5.5 / 225)) : undefined),
+          format: r.format ?? null, audience: r.audience ?? null,
           published: r.published, featured: r.featured, topic: r.topic || null,
           subPathway: r.subPathway ?? null, isSeries: !!r.isSeries,
           createdAt: r.createdAt || r.publishedAt, publishedAt: r.publishedAt || r.createdAt,
@@ -1280,6 +1291,10 @@ async function trpcGetPost(id: number | string): Promise<any | null> {
             id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
             body: r.body || null, content: r.body || null,
             pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
+            readingTimeMinutes:
+              r.readingTimeMinutes ||
+              readTime(r.body ? String(r.body).split(/\s+/).filter(Boolean).length : null),
+            format: r.format ?? null, audience: r.audience ?? null,
             published: r.published, featured: r.featured,
             createdAt: r.createdAt, publishedAt: r.publishedAt || r.createdAt,
           };

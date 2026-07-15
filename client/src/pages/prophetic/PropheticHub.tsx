@@ -17,7 +17,9 @@ const card = {
 } as const;
 
 export default function PropheticHub({ config }: { config: SectionConfig }) {
-  const byGroup = (g: string) => config.topics.filter((t) => t.group === g);
+  // Render only published topics, so an unpublished one is simply absent, never
+  // a greyed-out "coming" teaser that advertises the section's incompleteness.
+  const byGroup = (g: string) => config.topics.filter((t) => t.group === g && t.ready);
   const readyCount = config.topics.filter((t) => t.ready).length;
 
   const TopicCard = ({ t }: { t: TopicIndexEntry }) => {
@@ -95,7 +97,7 @@ export default function PropheticHub({ config }: { config: SectionConfig }) {
           <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>The questions</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.5vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "10px" }}>Worked one at a time</h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "var(--s-5)" }}>
-            {`${config.topicsIntro} ${readyCount} written so far. The rest are coming.`}
+            {`${config.topicsIntro} ${readyCount} ${readyCount === 1 ? "question" : "questions"}, each worked in full.`}
           </p>
           <SectionArt seed={`prophetic-topics-${config.key}`} />
           {config.groups.map((group) => {

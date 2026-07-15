@@ -10,6 +10,7 @@
  */
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
+import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 
 import { PullQuote, SectionArt, StatementBand } from "@/components/EditorialBlocks";
 import Footer from "@/components/Footer";
@@ -301,7 +302,7 @@ export default function Home() {
                 </button>
               </Link>
             </div>
-            {HERO_VARIANT === "A" && (
+            {HERO_VARIANT === "A" && SKEPTIC_TRACK_LIVE && (
               <div style={{ marginTop: "16px" }}>
                 <Link
                   href="/skeptic-track"
@@ -430,7 +431,7 @@ export default function Home() {
               gap: "24px",
             }}
           >
-            {DOORS.map(door => (
+            {DOORS.filter(door => SKEPTIC_TRACK_LIVE || door.href !== "/skeptic-track").map(door => (
               <Link key={door.href} href={door.href} style={{ textDecoration: "none" }}>
                 <article
                   style={{
