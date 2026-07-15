@@ -106,7 +106,7 @@ export default function FamilyDevotions() {
       <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) 0" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto", display: "flex", flexWrap: "wrap", gap: "8px" }}>
           {tabs.map((t) => (
-            <button key={t.id} type="button" onClick={() => { setTab(t.id); setOpen(null); }}
+            <button key={t.id} type="button" aria-pressed={tab === t.id} onClick={() => { setTab(t.id); setOpen(null); }}
               style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, padding: "10px 16px", borderRadius: "999px", cursor: "pointer",
                 border: `1px solid ${tab === t.id ? "var(--mustard)" : "var(--border)"}`, background: tab === t.id ? "var(--bone-warm)" : "transparent", color: "var(--ink)" }}>
               {t.label}{t.count ? ` · ${t.count}` : ""}

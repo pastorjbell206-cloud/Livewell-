@@ -107,7 +107,7 @@ export default function IllustrationLibrary() {
               <div key={i.id} style={{ background: "var(--card)", border: "1px solid var(--border)", borderTop: "2px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "8px" }}>
                   <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "6px" }}>{i.theme}</div>
-                  <button onClick={() => toggle(i.id)} aria-label="Save" style={{ background: "none", border: "none", cursor: "pointer", color: saved.includes(i.id) ? "var(--mustard-text)" : "var(--ink-muted)", padding: 0 }}>
+                  <button onClick={() => toggle(i.id)} aria-label="Save" aria-pressed={saved.includes(i.id)} style={{ background: "none", border: "none", cursor: "pointer", color: saved.includes(i.id) ? "var(--mustard-text)" : "var(--ink-muted)", padding: 0 }}>
                     <Bookmark size={18} fill={saved.includes(i.id) ? "currentColor" : "none"} />
                   </button>
                 </div>
@@ -129,6 +129,6 @@ export default function IllustrationLibrary() {
 
 function Chip({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
   return (
-    <button onClick={onClick} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", padding: "7px 14px", borderRadius: "999px", cursor: "pointer", border: "1px solid " + (active ? "var(--mustard)" : "var(--border)"), background: active ? "var(--mustard)" : "var(--card)", color: active ? "var(--charcoal)" : "var(--ink-muted)" }}>{children}</button>
+    <button onClick={onClick} aria-pressed={active} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", padding: "7px 14px", borderRadius: "999px", cursor: "pointer", border: "1px solid " + (active ? "var(--mustard)" : "var(--border)"), background: active ? "var(--mustard)" : "var(--card)", color: active ? "var(--charcoal)" : "var(--ink-muted)" }}>{children}</button>
   );
 }

@@ -288,7 +288,7 @@ export default function VerseFinder() {
               </button>
             </div>
             {copyFailed === dailyVerse.ref && (
-              <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink3)", margin: "10px 0 0" }}>
+              <p role="status" style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink3)", margin: "10px 0 0" }}>
                 Copy failed — select and copy manually.
               </p>
             )}
@@ -373,6 +373,7 @@ export default function VerseFinder() {
                         </button>
                         <button
                           onClick={() => handleToggleSave(v.ref, v.text)}
+                          aria-pressed={isFavorite(`verse-${v.ref}`)}
                           style={{
                             display: "flex", alignItems: "center", gap: "4px",
                             padding: "4px 10px", background: isFavorite(`verse-${v.ref}`) ? "var(--gold)" : "var(--cream)",
@@ -390,7 +391,7 @@ export default function VerseFinder() {
                       </div>
                     </div>
                     {copyFailed === v.ref && (
-                      <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink3)", margin: "0 0 10px" }}>
+                      <p role="status" style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink3)", margin: "0 0 10px" }}>
                         Copy failed — select and copy manually.
                       </p>
                     )}

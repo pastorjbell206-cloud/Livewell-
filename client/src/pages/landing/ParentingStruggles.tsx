@@ -72,7 +72,7 @@ export default function ParentingStruggles() {
       {/* Hero */}
       <section style={{ background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px", textAlign: "center" }}>
         <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>PARENTING</p>
-        <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px,5vw,56px)", fontWeight: 400, color: "white", maxWidth: "800px", margin: "0 auto", lineHeight: 1.15, letterSpacing: "-0.02em" }}>
+        <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px,5vw,56px)", fontWeight: 400, color: "var(--charcoal-fg)", maxWidth: "800px", margin: "0 auto", lineHeight: 1.15, letterSpacing: "-0.02em" }}>
           You are not ruining your children. But you need better tools than you were given.
         </h1>
       </section>
@@ -169,7 +169,7 @@ export default function ParentingStruggles() {
       {/* Email Signup */}
       <section style={{ background: "var(--charcoal)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "white", marginBottom: "16px" }}>Writing for parents who take the work seriously</h2>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" }}>Writing for parents who take the work seriously</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "rgba(255,255,255,0.6)", marginBottom: "32px", lineHeight: 1.7 }}>Weekly essays on parenting, family, and what it looks like to raise children with theology instead of guilt.</p>
           <LandingSignup source="landing-parenting-struggles" />
         </div>
@@ -184,7 +184,7 @@ export default function ParentingStruggles() {
             The Parenting Guide tool gives you age-specific, theology-informed questions and practices. Not rules. Not shame. Just honest direction.
           </p>
           <Link href="/tools/parenting-guide" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--charcoal)", color: "white", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Open Parenting Guide</button>
+            <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Open Parenting Guide</button>
           </Link>
         </div>
       </section>

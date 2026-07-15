@@ -73,9 +73,9 @@ export default function GovernanceLibrary() {
                             <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", margin: "14px 0" }}><strong style={{ color: "var(--mustard-text)" }}>Why it matters. </strong>{p.why}</p>
                             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "6px" }}>
                               <div className="eyebrow" style={{ color: "var(--ink-muted)" }}>Starter template</div>
-                              <button onClick={() => copySample(p)} style={{ display: "inline-flex", alignItems: "center", gap: "5px", fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px", padding: "5px 10px", background: "none", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", color: "var(--ink-muted)", cursor: "pointer" }}><Copy size={13} /> {copyState?.id === p.id && copyState.ok ? "Copied" : "Copy"}</button>
+                              <button onClick={() => copySample(p)} aria-live="polite" style={{ display: "inline-flex", alignItems: "center", gap: "5px", fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px", padding: "5px 10px", background: "none", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", color: "var(--ink-muted)", cursor: "pointer" }}><Copy size={13} /> {copyState?.id === p.id && copyState.ok ? "Copied" : "Copy"}</button>
                             </div>
-                            {copyState?.id === p.id && !copyState.ok && <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", margin: "0 0 6px" }}>Copy failed — select and copy manually.</p>}
+                            {copyState?.id === p.id && !copyState.ok && <p role="status" style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", margin: "0 0 6px" }}>Copy failed — select and copy manually.</p>}
                             <pre style={{ fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.7, color: "var(--ink)", background: "var(--bone-warm)", padding: "14px", borderRadius: "var(--radius-sm)", whiteSpace: "pre-wrap", margin: 0 }}>{p.sample}</pre>
                           </div>
                         )}

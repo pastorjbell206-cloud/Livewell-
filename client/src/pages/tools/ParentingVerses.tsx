@@ -219,7 +219,7 @@ export default function ParentingVerses() {
                     </button>
                   </div>
                   {copyFailed === v.ref && (
-                    <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "8px 0 0" }}>
+                    <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "8px 0 0" }}>
                       Copy failed — select and copy manually.
                     </p>
                   )}

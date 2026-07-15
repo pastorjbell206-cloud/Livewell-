@@ -66,7 +66,7 @@ export default function TheologyHermeneutics() {
           <section style={{ background: "var(--bone)", padding: "0 var(--s-4)" }}>
             <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "8px" }}>
               {([["principles", `The principles · ${data.principles.length}`], ["errors", `The errors to avoid · ${data.errors.length}`]] as const).map(([id, label]) => (
-                <button key={id} type="button" onClick={() => setTab(id)}
+                <button key={id} type="button" onClick={() => setTab(id)} aria-pressed={tab === id}
                   style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, padding: "10px 16px", borderRadius: "999px", cursor: "pointer",
                     border: `1px solid ${tab === id ? "var(--mustard)" : "var(--border)"}`, background: tab === id ? "var(--bone-warm)" : "transparent", color: "var(--ink)" }}>
                   {label}

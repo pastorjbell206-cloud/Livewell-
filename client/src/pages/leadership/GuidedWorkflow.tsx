@@ -186,8 +186,8 @@ export default function GuidedWorkflow() {
                 The answers you wrote here are still saved on this device. You can take a copy with you now.
               </p>
               <button onClick={copyRescue} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "10px 18px", background: "var(--mustard)", color: "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>Copy everything you wrote</button>
-              {copyStatus === "copied" && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "10px 0 0" }}>Copied</p>}
-              {copyStatus === "failed" && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "10px 0 0" }}>Copy failed — select and copy manually.</p>}
+              {copyStatus === "copied" && <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "10px 0 0" }}>Copied</p>}
+              {copyStatus === "failed" && <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "10px 0 0" }}>Copy failed — select and copy manually.</p>}
             </div>
           )}
         </section>
@@ -210,7 +210,7 @@ export default function GuidedWorkflow() {
               const stageDone = s.prompts.filter((p) => (answers[p.id] || "").trim()).length;
               return (
                 <div key={s.id} style={{ background: "var(--card)", border: "1px solid var(--border)", borderTop: "2px solid var(--mustard)", borderRadius: "var(--radius-sm)", marginBottom: "10px", overflow: "hidden" }}>
-                  <button onClick={() => setOpen(isOpen ? null : s.id)} style={{ width: "100%", textAlign: "left", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "12px", padding: "14px var(--s-4)", background: "none", border: "none", cursor: "pointer" }}>
+                  <button onClick={() => setOpen(isOpen ? null : s.id)} aria-expanded={isOpen} style={{ width: "100%", textAlign: "left", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "12px", padding: "14px var(--s-4)", background: "none", border: "none", cursor: "pointer" }}>
                     <span>
                       <span className="eyebrow" style={{ color: "var(--mustard-text)" }}>{s.kicker}</span>
                       <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "21px", fontWeight: 500, color: "var(--ink)", marginTop: "2px" }}>{s.title}</span>
@@ -236,9 +236,9 @@ export default function GuidedWorkflow() {
 
             <div style={{ display: "flex", gap: "12px", alignItems: "center", flexWrap: "wrap", marginTop: "var(--s-3)" }}>
               <button onClick={copy} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "10px 18px", background: "var(--mustard)", color: "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>Copy everything</button>
-              {copyStatus === "copied" && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Copied</span>}
-              {copyStatus === "failed" && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Copy failed — select and copy manually.</span>}
-              {copyStatus === "idle" && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", opacity: saved ? 1 : 0, transition: "opacity .3s" }}>Saved to this browser</span>}
+              {copyStatus === "copied" && <span role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Copied</span>}
+              {copyStatus === "failed" && <span role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Copy failed — select and copy manually.</span>}
+              {copyStatus === "idle" && <span role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", opacity: saved ? 1 : 0, transition: "opacity .3s" }}>Saved to this browser</span>}
             </div>
             {persistFailed && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", marginTop: "8px" }}>Couldn't save to this browser — your work here will not survive a reload.</p>}
 

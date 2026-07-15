@@ -42,7 +42,7 @@ const CATEGORIES = [
 
 const CATEGORY_COLORS: Record<string, string> = {
   conviction: "var(--c-mustard, #D4A017)",
-  comfort: "#6B8E6B",
+  comfort: "var(--ok)",
   challenge: "#B85C3A",
   history: "#5A7B9A",
   wisdom: "var(--c-ink-muted, #5A5448)",
@@ -111,10 +111,10 @@ const actionButtonStyle = (active: boolean) =>
     fontFamily: "'Inter', sans-serif",
     fontSize: "0.8rem",
     fontWeight: 500,
-    color: active ? "#6B8E6B" : "var(--c-ink-muted, #5A5448)",
+    color: active ? "var(--ok)" : "var(--c-ink-muted, #5A5448)",
     background: "none",
     border: "1px solid",
-    borderColor: active ? "#6B8E6B" : "var(--c-ink-muted, #5A5448)",
+    borderColor: active ? "var(--ok)" : "var(--c-ink-muted, #5A5448)",
     borderRadius: "4px",
     padding: "0.35rem 0.75rem",
     cursor: "pointer",
@@ -274,6 +274,7 @@ function QuoteCard({
         <button
           onClick={handleCopy}
           style={actionButtonStyle(copied)}
+          aria-live="polite"
           aria-label={`Copy quote from ${quote.articleTitle}`}
         >
           {copied ? <Check size={14} /> : <Copy size={14} />}
@@ -282,6 +283,7 @@ function QuoteCard({
         <button
           onClick={handleShare}
           style={actionButtonStyle(shared)}
+          aria-live="polite"
           aria-label={`Share quote from ${quote.articleTitle}`}
         >
           {shared ? <Check size={14} /> : <Share2 size={14} />}
@@ -299,6 +301,7 @@ function QuoteCard({
       </div>
       {copyFailed && (
         <p
+          role="status"
           style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: "0.8rem",
@@ -756,6 +759,7 @@ export default function QuoteLibrary() {
               <button
                 onClick={handleCopyAll}
                 style={actionButtonStyle(allCopied)}
+                aria-live="polite"
                 aria-label="Copy all saved quotes with their sources"
               >
                 {allCopied ? <Check size={14} /> : <Copy size={14} />}
@@ -764,6 +768,7 @@ export default function QuoteLibrary() {
             )}
             {allCopyFailed && view === "saved" && (
               <span
+                role="status"
                 style={{
                   fontFamily: "'Inter', sans-serif",
                   fontSize: "0.8rem",

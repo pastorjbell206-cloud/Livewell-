@@ -220,13 +220,13 @@ function TopicPanel({
           >
             {saved ? <BookmarkCheck size={15} /> : <Bookmark size={15} />} {saved ? "Saved" : "Save"}
           </button>
-          <button onClick={copyWhole} aria-label={`Copy the whole entry on ${topic.label}`} style={smallActionStyle}>
+          <button onClick={copyWhole} aria-live="polite" aria-label={`Copy the whole entry on ${topic.label}`} style={smallActionStyle}>
             {copied ? <Check size={15} /> : <Copy size={15} />} {copied ? "Copied" : "Copy"}
           </button>
         </div>
       </div>
       {copyFailed && (
-        <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
+        <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
           Copy failed — select and copy manually.
         </p>
       )}
@@ -250,6 +250,7 @@ function TopicPanel({
               <Link href={`/theology/passage?ref=${encodeURIComponent(v.ref)}`} style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, letterSpacing: "0.06em", color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--line)" }}>{v.ref} →</Link>
               <button
                 onClick={() => copyVerse(v)}
+                aria-live="polite"
                 aria-label={`Copy ${v.ref}`}
                 style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "5px", padding: "4px 10px", background: "none", color: "var(--ink-muted)", border: "1px solid var(--line)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px" }}
               >

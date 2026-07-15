@@ -201,6 +201,7 @@ export default function Resources() {
                   <button
                     key={cat}
                     onClick={() => setSelectedCategory(cat)}
+                    aria-pressed={selectedCategory === cat}
                     style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, padding: "7px 12px", borderRadius: "2px", cursor: "pointer", border: "1px solid rgba(20,17,12,0.18)", background: selectedCategory === cat ? "var(--charcoal)" : "transparent", color: selectedCategory === cat ? "var(--bone)" : "var(--ink)" }}
                   >
                     {cat === "all" ? "All" : cat}
@@ -214,6 +215,7 @@ export default function Resources() {
                   <button
                     key={f}
                     onClick={() => toggleFormat(f)}
+                    aria-pressed={selectedFormats.includes(f)}
                     style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, padding: "7px 12px", borderRadius: "2px", cursor: "pointer", border: "1px dashed rgba(20,17,12,0.25)", background: selectedFormats.includes(f) ? "var(--charcoal)" : "transparent", color: selectedFormats.includes(f) ? "var(--bone)" : "var(--ink-muted)" }}
                   >
                     {FORMAT_LABELS[f] || f.toUpperCase()}

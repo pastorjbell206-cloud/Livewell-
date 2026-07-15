@@ -83,6 +83,7 @@ export function ToolActions({ toolName, shareText }: ToolActionsProps) {
       </button>
       <button
         onClick={handleShare}
+        aria-live="polite"
         style={buttonStyle}
         onMouseEnter={(e) => {
           if (!copied) e.currentTarget.style.color = "var(--mustard)";

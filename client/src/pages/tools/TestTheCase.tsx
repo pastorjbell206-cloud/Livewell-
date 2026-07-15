@@ -118,7 +118,7 @@ export default function TestTheCase() {
           <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--ink-muted)", marginRight: "4px" }}>The cases</span>
           {ARGUMENT_CASES.map((c) =>
             c.published ? (
-              <button key={c.slug} type="button" onClick={() => switchCase(c)}
+              <button key={c.slug} type="button" onClick={() => switchCase(c)} aria-pressed={c.slug === active.slug}
                 style={{ ...btn, background: c.slug === active.slug ? "var(--ink)" : "var(--card)", color: c.slug === active.slug ? "var(--bone)" : "var(--ink)", border: "1px solid var(--border)" }}>
                 {c.title}
               </button>
@@ -149,7 +149,7 @@ export default function TestTheCase() {
           ) : (
             <div>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "16px" }}>
-                <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--mustard-text)" }}>
+                <span aria-live="polite" style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--mustard-text)" }}>
                   Move {stepIdx + 1} of {active.steps.length}
                 </span>
                 {completed > 0 && (

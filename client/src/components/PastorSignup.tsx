@@ -46,6 +46,7 @@ export function PastorSignup({ source, networkUrl }: PastorSignupProps) {
   if (done) {
     return (
       <div
+        role="status"
         style={{
           background: "var(--card)",
           border: "1px solid var(--border)",

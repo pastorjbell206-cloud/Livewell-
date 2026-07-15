@@ -84,7 +84,7 @@ export default function HowTos() {
               const on = t === active;
               const label = t === "all" ? "All" : (TOPIC_LABEL[t] || t);
               return (
-                <button key={t} onClick={() => setActive(t)} style={{ cursor: "pointer", padding: "8px 14px", background: on ? "var(--mustard)" : "#FFFFFF", color: on ? "var(--charcoal)" : "var(--ink)", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13.5px" }}>
+                <button key={t} onClick={() => setActive(t)} aria-pressed={on} style={{ cursor: "pointer", padding: "8px 14px", background: on ? "var(--mustard)" : "#FFFFFF", color: on ? "var(--charcoal)" : "var(--ink)", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13.5px" }}>
                   {label}
                 </button>
               );

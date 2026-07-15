@@ -1190,6 +1190,7 @@ export default function TheologyGlossary() {
           </div>
 
           <p
+            role="status"
             style={{
               fontFamily: "var(--U)",
               fontSize: "13px",
@@ -1236,6 +1237,7 @@ export default function TheologyGlossary() {
                 <button
                   key={value}
                   onClick={() => setActiveCategory(value)}
+                  aria-pressed={isActive}
                   style={{
                     ...categoryBtnBase,
                     background: isActive ? "var(--charcoal)" : "transparent",

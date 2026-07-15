@@ -249,7 +249,7 @@ export default function DiscipleshipTable() {
                 </div>
               </div>
               {copyFailed && (
-                <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
+                <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
                   Copy failed — select and copy manually.
                 </p>
               )}
