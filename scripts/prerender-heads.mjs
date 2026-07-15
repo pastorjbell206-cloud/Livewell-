@@ -516,6 +516,43 @@ function bookSchema(book, url, image) {
   };
 }
 
+// BreadcrumbList so a search result shows the trail (Home › Section › Title)
+// and the page's place in the site. crumbs: [{ name, path }] — path is relative
+// to SITE_URL (empty string = the home page).
+function breadcrumbSchema(crumbs) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: crumbs.map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: c.name,
+      item: `${SITE_URL}${c.path}`,
+    })),
+  };
+}
+
+// Route prefix → the section hub the item sits under (all verified real routes).
+// The middle crumb of each library page's breadcrumb. Absent → a 2-level trail.
+const SECTION_BY_ROUTE = {
+  "/leadership/article/": { name: "Leadership Library", path: "/leadership/library" },
+  "/resources/context/": { name: "Context Guides", path: "/resources/context" },
+  "/leadership/formation/": { name: "Leadership Formation", path: "/leadership/formation" },
+  "/life/": { name: "The Integrated Life", path: "/life" },
+  "/resources/creeds/": { name: "Creeds & Confessions", path: "/resources/creeds" },
+  "/theology/history/": { name: "Church History", path: "/theology/history" },
+  "/studyguides/": { name: "Study Guides", path: "/studyguides" },
+  "/table/": { name: "The Table", path: "/table" },
+  "/how-tos/": { name: "How-To Library", path: "/how-tos" },
+  "/read/": { name: "Books", path: "/read" },
+  "/plans/": { name: "Care Plans", path: "/plans" },
+  "/theology/doctrine/": { name: "Theology", path: "/theology" },
+  "/leadership/bible-sermons/": { name: "Sermon Series", path: "/leadership/bible-sermons" },
+  "/justice/topic/": { name: "Prophetic Justice", path: "/justice" },
+  "/disruption/topic/": { name: "Prophetic Disruption", path: "/disruption" },
+  "/wisdom/": { name: "Wisdom", path: "/wisdom" },
+};
+
 function escapeHtml(s) {
   return String(s ?? "")
     .replace(/&/g, "&amp;")
@@ -717,7 +754,12 @@ async function main() {
       // a Book JSON-LD carrying every chapter as a hasPart node, so search can
       // deep-link the exact chapter that answers a reader's question.
       const headTitle = src.type === "book" && e.subtitle ? `${title} — ${e.subtitle}` : title;
-      const schemas = [];
+      // BreadcrumbList (Home › Section › Title) on every library page.
+      const section = SECTION_BY_ROUTE[src.route];
+      const crumbs = [{ name: "Home", path: "" }];
+      if (section) crumbs.push(section);
+      crumbs.push({ name: title, path: `${src.route}${slug}` });
+      const schemas = [breadcrumbSchema(crumbs)];
       if (src.type === "book") {
         const chapters = Array.isArray(contentObj?.chapters) ? contentObj.chapters : [];
         schemas.push({
@@ -876,7 +918,14 @@ async function main() {
           type: "article",
           publishedDate: publishedIso,
           modifiedDate: modifiedIso,
-          schemas: [articleSchema(post, url, image)],
+          schemas: [
+            articleSchema(post, url, image),
+            breadcrumbSchema([
+              { name: "Home", path: "" },
+              { name: "Writing", path: "/writing" },
+              { name: post.title, path: `/writing/${post.slug}` },
+            ]),
+          ],
         });
         const bodyHtml = bodyFromContent({
           title: post.title,
@@ -902,7 +951,14 @@ async function main() {
           url,
           image,
           type: "book",
-          schemas: [bookSchema(book, url, image)],
+          schemas: [
+            bookSchema(book, url, image),
+            breadcrumbSchema([
+              { name: "Home", path: "" },
+              { name: "Books", path: "/books" },
+              { name: book.title, path: `/books/${book.slug}` },
+            ]),
+          ],
         });
         writeRoute(template, { path: `/books/${book.slug}` }, head);
         wrote++;
