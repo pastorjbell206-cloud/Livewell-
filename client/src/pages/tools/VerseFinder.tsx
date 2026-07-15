@@ -274,12 +274,14 @@ export default function VerseFinder() {
             <div style={{ display: "flex", gap: "8px", marginTop: "16px" }}>
               <button
                 onClick={() => handleCopy(dailyVerse.ref, dailyVerse.text)}
+                aria-live="polite"
                 style={{ display: "flex", alignItems: "center", gap: "4px", padding: "6px 14px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
               >
                 {copied === dailyVerse.ref ? <><Check size={12} /> Copied</> : <><Copy size={12} /> Copy</>}
               </button>
               <button
                 onClick={() => handleShare(dailyVerse.ref, dailyVerse.text)}
+                aria-live="polite"
                 style={{ display: "flex", alignItems: "center", gap: "4px", padding: "6px 14px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
               >
                 {shared === dailyVerse.ref ? <><Check size={12} /> Copied</> : <><Share2 size={12} /> Share</>}
@@ -324,6 +326,7 @@ export default function VerseFinder() {
               <button
                 key={topic}
                 onClick={() => setSelected(topic)}
+                aria-pressed={selected === topic}
                 style={{
                   padding: "14px 16px",
                   background: selected === topic ? "var(--gold)" : "white",
@@ -356,12 +359,14 @@ export default function VerseFinder() {
                       <div style={{ display: "flex", gap: "6px" }}>
                         <button
                           onClick={() => handleCopy(v.ref, v.text)}
+                          aria-live="polite"
                           style={{ display: "flex", alignItems: "center", gap: "4px", padding: "4px 10px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
                         >
                           {copied === v.ref ? <><Check size={12} /> Copied</> : <><Copy size={12} /> Copy</>}
                         </button>
                         <button
                           onClick={() => handleShare(v.ref, v.text)}
+                          aria-live="polite"
                           style={{ display: "flex", alignItems: "center", gap: "4px", padding: "4px 10px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
                         >
                           {shared === v.ref ? <><Check size={12} /> Copied</> : <><Share2 size={12} /> Share</>}
