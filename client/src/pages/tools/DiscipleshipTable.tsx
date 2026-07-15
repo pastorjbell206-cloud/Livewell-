@@ -189,6 +189,7 @@ export default function DiscipleshipTable() {
                 <button
                   key={a.id}
                   onClick={() => { setAudienceId(a.id); setCopied(false); setCopyFailed(false); }}
+                  aria-pressed={on}
                   style={{
                     textAlign: "left", cursor: "pointer", padding: "var(--s-3)",
                     background: on ? "var(--charcoal)" : "#FFFFFF",
@@ -214,6 +215,7 @@ export default function DiscipleshipTable() {
                 <button
                   key={c}
                   onClick={() => { setCadence(c); setCopied(false); }}
+                  aria-pressed={on}
                   style={{
                     cursor: "pointer", padding: "10px 18px",
                     background: on ? "var(--mustard)" : "#FFFFFF",
@@ -238,7 +240,7 @@ export default function DiscipleshipTable() {
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", marginBottom: "var(--s-3)" }}>
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)" }}>Your table plan</h2>
                 <div style={{ display: "flex", gap: "10px" }}>
-                  <button onClick={copyPlan} style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "9px 16px", background: "var(--charcoal)", color: "var(--bone)", border: "none", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px" }}>
+                  <button onClick={copyPlan} aria-live="polite" style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "9px 16px", background: "var(--charcoal)", color: "var(--bone)", border: "none", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px" }}>
                     {copied ? <Check size={15} /> : <Copy size={15} />} {copied ? "Copied" : "Copy plan"}
                   </button>
                   <button onClick={reset} style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "9px 16px", background: "transparent", color: "var(--ink-muted)", border: "1px solid rgba(20,17,12,0.15)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px" }}>

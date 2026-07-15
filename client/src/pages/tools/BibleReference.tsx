@@ -1095,6 +1095,7 @@ function TopicIcon({ icon, size = 32 }: { icon: string; size?: number }) {
 
 function PassageCard({ passage }: { passage: Passage }) {
   const [open, setOpen] = useState(false);
+  const panelId = `passage-panel-${passage.reference.replace(/\W+/g, "-")}`;
 
   return (
     <div
@@ -1108,6 +1109,8 @@ function PassageCard({ passage }: { passage: Passage }) {
     >
       <button
         onClick={() => setOpen(!open)}
+        aria-expanded={open}
+        aria-controls={panelId}
         style={{
           width: "100%",
           padding: "20px 24px",
@@ -1140,7 +1143,7 @@ function PassageCard({ passage }: { passage: Passage }) {
       </button>
 
       {open && (
-        <div style={{ padding: "0 24px 24px" }}>
+        <div id={panelId} style={{ padding: "0 24px 24px" }}>
           {/* Scripture text */}
           <div
             style={{

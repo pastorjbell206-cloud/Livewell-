@@ -520,6 +520,7 @@ export default function EmotionalHealth() {
                               <button
                                 key={val}
                                 onClick={() => handleRate(s.index, val)}
+                                aria-pressed={answers[s.index] === val}
                                 style={{
                                   padding: "8px 14px",
                                   background:

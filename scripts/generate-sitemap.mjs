@@ -30,9 +30,26 @@ function loadStaticLibrary() {
 }
 const STATIC_ARTICLES = loadStaticLibrary();
 
+// Honor the emergency-takedown blocklist (launch-gate P2): a slug in
+// api/index.ts's TAKEN_DOWN set 404s in prod, so it must not stay advertised
+// in the sitemap. The set lives in prod-only TypeScript this build script
+// can't import, so parse the single-line declaration; fail soft to [] — the
+// worst case is today's behavior (a 404ing URL listed), never a broken build.
+function loadTakenDown() {
+  try {
+    const src = fs.readFileSync("api/index.ts", "utf8");
+    const m = src.match(/const TAKEN_DOWN = new Set<string>\(\[([\s\S]*?)\]\)/);
+    if (!m) return new Set();
+    return new Set([...m[1].matchAll(/["']([^"']+)["']/g)].map(x => x[1]));
+  } catch {
+    return new Set();
+  }
+}
+const TAKEN_DOWN = loadTakenDown();
+
 function mergeArticles(dbArticles) {
   const have = new Set((dbArticles || []).map(a => a.slug));
-  const extra = STATIC_ARTICLES.filter(a => !have.has(a.slug));
+  const extra = STATIC_ARTICLES.filter(a => !have.has(a.slug) && !TAKEN_DOWN.has(a.slug));
   return [...(dbArticles || []), ...extra];
 }
 

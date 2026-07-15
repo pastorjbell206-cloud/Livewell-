@@ -35,7 +35,7 @@ export function LandingSignup({ source }: { source: string }) {
 
   if (subscribe.isSuccess) {
     return (
-      <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--mustard)" }}>
+      <p role="status" style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--mustard)" }}>
         You're on the list. One essay a week, written slow.
       </p>
     );
@@ -62,7 +62,7 @@ export function LandingSignup({ source }: { source: string }) {
         </button>
       </form>
       {subscribe.isError && (
-        <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(255,255,255,0.75)", marginTop: "10px" }}>
+        <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(255,255,255,0.75)", marginTop: "10px" }}>
           That didn't go through. Try again in a moment.
         </p>
       )}
