@@ -702,19 +702,53 @@ async function main() {
         : OG_DEFAULT;
       const description = e[src.desc || "blurb"] || e.blurb || e.subtitle
         || (src.descTemplate ? src.descTemplate.replace(/\{title\}/g, title) : title);
-      const head = buildHead({ title, description, url, image, type: src.type || "article" });
-      // Read the entry's full content file (when present) and inject its prose
-      // into #root so the page indexes at full depth, not as an empty shell.
-      let bodyHtml = "";
+      // Read the entry's full content file (when present) up front: the prose
+      // injects into #root at full depth, and for books its chapter list also
+      // feeds the Book schema below.
+      let contentObj;
       if (src.contentDir) {
         const cf = path.join(REPO_ROOT, src.contentDir, `${slug}.json`);
         if (fs.existsSync(cf)) {
-          try {
-            const obj = JSON.parse(fs.readFileSync(cf, "utf8"));
-            bodyHtml = bodyFromContent({ title, subtitle: e.subtitle || description, sectionLabel: e.group || e.kicker, contentObj: obj });
-            if (bodyHtml) withBody++;
-          } catch { /* leave head-only */ }
+          try { contentObj = JSON.parse(fs.readFileSync(cf, "utf8")); }
+          catch { /* leave head-only */ }
         }
+      }
+      // Books get a subtitle-enriched <title> (matching the client SEOMeta) and
+      // a Book JSON-LD carrying every chapter as a hasPart node, so search can
+      // deep-link the exact chapter that answers a reader's question.
+      const headTitle = src.type === "book" && e.subtitle ? `${title} — ${e.subtitle}` : title;
+      const schemas = [];
+      if (src.type === "book") {
+        const chapters = Array.isArray(contentObj?.chapters) ? contentObj.chapters : [];
+        schemas.push({
+          "@context": "https://schema.org",
+          "@type": "Book",
+          name: title,
+          ...(e.subtitle ? { alternativeHeadline: e.subtitle } : {}),
+          ...(e.blurb ? { description: e.blurb } : {}),
+          author: { "@type": "Person", name: AUTHOR_NAME },
+          url,
+          bookFormat: "https://schema.org/EBook",
+          inLanguage: "en",
+          isAccessibleForFree: true,
+          ...(chapters.length ? { numberOfPages: chapters.length } : {}),
+          ...(chapters.length ? {
+            hasPart: chapters.map((c) => ({
+              "@type": "Chapter",
+              position: c.n,
+              name: c.title,
+              url: `${url}#ch-${c.n}`,
+            })),
+          } : {}),
+        });
+      }
+      const head = buildHead({ title: headTitle, description, url, image, type: src.type || "article", schemas });
+      let bodyHtml = "";
+      if (contentObj) {
+        try {
+          bodyHtml = bodyFromContent({ title, subtitle: e.subtitle || description, sectionLabel: e.group || e.kicker, contentObj });
+          if (bodyHtml) withBody++;
+        } catch { /* leave head-only */ }
       }
       writeRoute(template, { path: `${src.route}${slug}` }, head, bodyHtml);
       wrote++;
