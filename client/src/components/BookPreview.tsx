@@ -1,4 +1,5 @@
 import { X } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 interface BookPreviewProps {
   title: string;
@@ -13,6 +14,26 @@ export default function BookPreview({
   isOpen,
   onClose,
 }: BookPreviewProps) {
+  const closeRef = useRef<HTMLButtonElement>(null);
+
+  // Dialog keyboard contract (house pattern, see CommandPalette): Escape
+  // closes; focus moves to the close button on open and returns to the
+  // opener on close (the browser restores it to the previously focused
+  // element once the dialog unmounts and we blurred into it).
+  useEffect(() => {
+    if (!isOpen) return;
+    const opener = document.activeElement as HTMLElement | null;
+    closeRef.current?.focus();
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      opener?.focus?.();
+    };
+  }, [isOpen, onClose]);
+
   if (!isOpen) return null;
 
   return (
@@ -34,6 +55,7 @@ export default function BookPreview({
             Sample Chapter
           </h2>
           <button
+            ref={closeRef}
             onClick={onClose}
             className="p-2 hover:bg-gray-100 rounded transition-colors"
             aria-label="Close sample chapter"

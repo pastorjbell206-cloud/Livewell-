@@ -265,7 +265,7 @@ export default function BookReader() {
             {/* MOBILE chapter bar */}
             <div className="reader-mobilebar" style={{ display: "none", position: "sticky", top: "3px", zIndex: 20, background: "var(--bone)", borderBottom: "1px solid var(--border)", padding: "10px 0", marginBottom: "8px" }}>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "10px" }}>
-                <button onClick={() => setMenuOpen((v) => !v)} aria-expanded={menuOpen} style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "7px 12px", fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--ink)", cursor: "pointer" }}>
+                <button onClick={() => setMenuOpen((v) => !v)} aria-expanded={menuOpen} aria-controls="reader-chapter-menu" style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "7px 12px", fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--ink)", cursor: "pointer" }}>
                   ☰ Ch {current}/{chapters.length}
                 </button>
                 <div style={{ display: "flex", gap: "5px" }}>
@@ -275,9 +275,9 @@ export default function BookReader() {
                 </div>
               </div>
               {menuOpen && (
-                <div role="navigation" aria-label="Chapters" style={{ marginTop: "8px", maxHeight: "50vh", overflowY: "auto", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "6px 12px" }}>
+                <div id="reader-chapter-menu" role="navigation" aria-label="Chapters" style={{ marginTop: "8px", maxHeight: "50vh", overflowY: "auto", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "6px 12px" }}>
                   {chapters.map((c) => (
-                    <button key={c.n} onClick={() => goTo(c.n)} style={{ ...railBtn, color: c.n === current ? "var(--ink)" : "var(--ink-muted)", fontWeight: c.n === current ? 600 : 400 }}>
+                    <button key={c.n} onClick={() => goTo(c.n)} aria-current={c.n === current ? "true" : undefined} style={{ ...railBtn, color: c.n === current ? "var(--ink)" : "var(--ink-muted)", fontWeight: c.n === current ? 600 : 400 }}>
                       {String(c.n).padStart(2, "0")} · {c.title}
                     </button>
                   ))}
@@ -293,7 +293,7 @@ export default function BookReader() {
                   <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(28px, 4vw, 42px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", margin: "8px 0 6px", lineHeight: 1.08 }}>{ch.title}</h2>
                   <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "var(--s-4)", flexWrap: "wrap" }}>
                     <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>{readingMinutes(ch.body)} min · {wordCount(ch.body).toLocaleString()} words</span>
-                    <button onClick={shareChapter} style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", padding: 0 }}>{copied ? "Link copied" : "Share this chapter"}</button>
+                    <button onClick={shareChapter} aria-live="polite" style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", padding: 0 }}>{copied ? "Link copied" : "Share this chapter"}</button>
                   </div>
                   {ch.summary && (
                     <p style={{ fontFamily: "var(--B)", fontSize: "calc(1.18rem * var(--reader-scale, 1))", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 var(--s-4)", paddingBottom: "var(--s-4)", borderBottom: "1px solid var(--border)" }}>
