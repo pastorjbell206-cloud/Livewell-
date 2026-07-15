@@ -23,6 +23,7 @@
 | `essay_read_complete` | reader reaches the foot of an essay body | `slug` | true completion (IntersectionObserver sentinel) |
 | `path_step_complete` | a reading-path step is finished | `pathway`, `step` | true |
 | `return_reader` | a returning reader is seen | — | count only |
+| `essay_book_click` | reader clicks an essay's "Read the book" CTA (KeepReadingBook) | `from` (essay slug), `book` (book slug) | click intent — the article→book funnel |
 | `newsletter_signup` | the subscribe mutation succeeds | `source`, `audienceType?` | server-accepted (see below) |
 
 No PII ever — slugs, sources, segment labels, and counts only. The test-only
