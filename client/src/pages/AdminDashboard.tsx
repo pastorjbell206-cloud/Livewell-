@@ -127,7 +127,7 @@ export default function AdminDashboard() {
       });
       const data = await res.json();
       if (data.ok) {
-        setSeedStatus(`Done! Imported ${data.postsInserted} posts, ${data.booksInserted} books, ${data.settingsSet} settings.`);
+        setSeedStatus(`Done. Imported ${data.postsInserted} posts, ${data.booksInserted} books, ${data.settingsSet} settings.`);
         postsQuery.refetch();
         booksQuery.refetch();
       } else {
@@ -152,7 +152,7 @@ export default function AdminDashboard() {
       });
       const data = await res.json();
       if (data.ok) {
-        setFixStatus(`Done! Repaired ${data.postsFixed} posts and ${data.booksFixed} books.`);
+        setFixStatus(`Done. Repaired ${data.postsFixed} posts and ${data.booksFixed} books.`);
         postsQuery.refetch();
         booksQuery.refetch();
       } else {
@@ -610,7 +610,7 @@ export default function AdminDashboard() {
                     const r = await fetch("/api/admin/organize-articles", { method: "POST", credentials: "include" });
                     const d = await r.json();
                     if (d.ok) {
-                      setSeedStatus(`Organized! ${d.updated} articles updated. Distribution: ${d.distribution?.map((x: any) => `${x.pillar}: ${x.n}`).join(", ")}`);
+                      setSeedStatus(`Organized. ${d.updated} articles updated. Distribution: ${d.distribution?.map((x: any) => `${x.pillar}: ${x.n}`).join(", ")}`);
                       postsQuery.refetch();
                     } else { setSeedStatus(`Error: ${d.error}`); }
                   } catch (e: any) { setSeedStatus(`Failed: ${e.message}`); }

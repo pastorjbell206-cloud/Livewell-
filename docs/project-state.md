@@ -6,12 +6,14 @@
 
 ## Current phase
 
-**Roadmap executed.** The 2026-07 audit's P0/P1 set is closed (fixed, decided,
-or rejected on verification — see `docs/site-audit.md`); Next-Ten #4 depth
-analytics is complete (all four metrics emit); PR #396 merged to main. PR #421
-(monthly/annual membership checkout, config-safe) carries the follow-on work
-plus this brief. `docs/site-brief.md` now exists (the pack's one missing
-durable doc).
+**Launch gate complete (Prompt 14).** PRs #395/#396/#421 merged; the final
+adversarial review ran against the full parallel-merge wave (five fresh-context
+reviewers + all gates) — no P0s; verified P1s fixed (BookPreview dialog
+keyboard contract, SR-invisible selection state in WhichLens/RuleOfLife, the
+emergency-unpublish redeploy requirement now mandatory in the runbook); the P2
+punch list is recorded in `docs/final-qa-report.md`. One reviewer P1 was
+rejected on verification (ShoppingCart is dead code). Gates on the final tree:
+check clean, build exit 0, 288 passed / 0 failed.
 
 ## Verified commands (this repo, this session)
 

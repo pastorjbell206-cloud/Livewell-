@@ -169,11 +169,11 @@ export default function BookLibrary() {
                   style={{ width: "100%", maxWidth: "520px", fontFamily: "var(--B)", fontSize: "16px", color: "var(--ink)", background: "var(--card)", border: "1px solid var(--border)", padding: "12px 16px", borderRadius: "6px", marginBottom: "var(--s-3)" }}
                 />
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }} role="group" aria-label="Filter by pillar">
-                  <button type="button" onClick={() => setPillar(null)} style={{ ...chipBase, ...(pillar === null ? chipActive : {}) }}>
+                  <button type="button" onClick={() => setPillar(null)} aria-pressed={pillar === null} style={{ ...chipBase, ...(pillar === null ? chipActive : {}) }}>
                     All books
                   </button>
                   {pillars.map((p) => (
-                    <button key={p} type="button" onClick={() => setPillar(p)} style={{ ...chipBase, ...(pillar === p ? chipActive : {}) }}>
+                    <button key={p} type="button" onClick={() => setPillar(p)} aria-pressed={pillar === p} style={{ ...chipBase, ...(pillar === p ? chipActive : {}) }}>
                       {p}
                     </button>
                   ))}
@@ -181,7 +181,7 @@ export default function BookLibrary() {
               </div>
 
               {searching && (
-                <p style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink-muted)", marginBottom: "var(--s-4)" }}>
+                <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink-muted)", marginBottom: "var(--s-4)" }}>
                   {filtered.length} {filtered.length === 1 ? "book" : "books"}
                   {pillar ? ` in ${pillar}` : ""}
                   {query.trim() ? ` matching “${query.trim()}”` : ""}

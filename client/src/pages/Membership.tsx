@@ -139,7 +139,7 @@ export default function Membership() {
               </form>
             )}
             {checkoutError && (
-              <p style={{ fontSize: "0.8rem", color: "#9B1C1C", marginTop: "0.75rem", fontFamily: "var(--U)" }}>{checkoutError}</p>
+              <p style={{ fontSize: "0.8rem", color: "var(--alert)", marginTop: "0.75rem", fontFamily: "var(--U)" }}>{checkoutError}</p>
             )}
             <p style={{ fontSize: "0.75rem", color: "var(--ink-muted)", marginTop: "0.75rem" }}>
               {checkoutLive

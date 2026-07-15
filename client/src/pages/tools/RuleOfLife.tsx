@@ -249,6 +249,7 @@ export default function RuleOfLife() {
                     <button
                       key={p.id}
                       onClick={() => toggle(p.id)}
+                      aria-pressed={on}
                       style={{
                         textAlign: "left", cursor: "pointer", display: "flex", gap: "10px", alignItems: "flex-start",
                         padding: "12px 14px",
@@ -258,7 +259,7 @@ export default function RuleOfLife() {
                         fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.4,
                       }}
                     >
-                      <span style={{ flexShrink: 0, width: "16px", height: "16px", marginTop: "2px", border: `1.5px solid ${on ? "var(--mustard)" : "rgba(20,17,12,0.3)"}`, background: on ? "var(--mustard)" : "transparent", display: "inline-flex", alignItems: "center", justifyContent: "center" }}>
+                      <span aria-hidden style={{ flexShrink: 0, width: "16px", height: "16px", marginTop: "2px", border: `1.5px solid ${on ? "var(--mustard)" : "rgba(20,17,12,0.3)"}`, background: on ? "var(--mustard)" : "transparent", display: "inline-flex", alignItems: "center", justifyContent: "center" }}>
                         {on && <Check size={12} style={{ color: "var(--charcoal)" }} />}
                       </span>
                       {p.label}

@@ -297,6 +297,7 @@ export default function WhichLens() {
                     <button
                       key={key}
                       onClick={() => setAnswers((prev) => ({ ...prev, [i]: key }))}
+                      aria-pressed={answers[i] === key}
                       style={{
                         display: "block", width: "100%", textAlign: "left", cursor: "pointer",
                         background: answers[i] === key ? "var(--charcoal)" : "#FFFFFF",
