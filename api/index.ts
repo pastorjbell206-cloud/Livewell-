@@ -3369,6 +3369,16 @@ async function recordPageView(req: VercelRequest, res: VercelResponse) {
           "INSERT INTO client_errors (message, stack, kind, path, visitorId) VALUES (?, ?, ?, ?, ?)",
           [message, stack, kind, path, visitorId]
         );
+        // Retention (launch-gate P2): the ingest is unauthenticated, so the
+        // table must not grow without bound. Piggyback an occasional bounded
+        // purge on ~2% of inserts — idx_ce_created makes it cheap, LIMIT keeps
+        // it short, and 30 days comfortably covers the admin panel's 7-day
+        // window. Best-effort like everything else in this handler.
+        if (Math.random() < 0.02) {
+          await c.execute(
+            "DELETE FROM client_errors WHERE createdAt < NOW() - INTERVAL 30 DAY LIMIT 500"
+          );
+        }
       });
       return json(res, 200, { ok: true });
     }

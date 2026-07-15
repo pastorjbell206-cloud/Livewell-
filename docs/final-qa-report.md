@@ -83,10 +83,11 @@ Closed in the post-gate P2 pass:
 Still open (browser- or owner-dependent):
 - **MinimalNav search overlay**: works (Escape, labels) but lacks
   `role="dialog"` + focus trap — browser-verify before changing the global nav.
-- **Error-log growth**: `client_errors` has no retention purge; in-memory rate
-  limit resets per serverless instance.
-- Admin panels (`AdminCommentsPanel`, `AdminTestimonialsPanel`) inline raw hex
-  instead of `admin/primitives` palette (sanctioned `.admin-scope`, low).
+- In-memory rate limit resets per serverless instance (documented tradeoff).
+
+Closed since: ☑ `client_errors` retention — a bounded 30-day purge now
+piggybacks on ~2% of inserts (`api/index.ts`, uses `idx_ce_created`).
+☑ Admin panels' raw hex — tokenized in the estate sweep (#439).
 
 ## Unverified (needs a live browser — not claimed)
 
