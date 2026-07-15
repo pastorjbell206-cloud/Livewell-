@@ -1313,7 +1313,7 @@ export default function BibleReference() {
       <section
         style={{
           background: "var(--charcoal)",
-          color: "#F5F0E6",
+          color: "var(--charcoal-fg)",
           padding: "80px 32px 60px",
           textAlign: "center",
         }}
@@ -1635,7 +1635,7 @@ export default function BibleReference() {
                       fontFamily: "var(--display)",
                       fontSize: "22px",
                       fontWeight: 400,
-                      color: "#F5F0E6",
+                      color: "var(--charcoal-fg)",
                       margin: 0,
                     }}
                   >

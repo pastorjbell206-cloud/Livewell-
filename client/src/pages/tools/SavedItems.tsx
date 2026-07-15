@@ -82,6 +82,7 @@ export default function SavedItems() {
             <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "8px", marginBottom: "32px" }}>
               <button
                 onClick={handleExportAll}
+                aria-live="polite"
                 style={{
                   display: "flex", alignItems: "center", gap: "6px",
                   padding: "10px 20px", background: "var(--mustard)", border: "none",
@@ -92,7 +93,7 @@ export default function SavedItems() {
                 {exportCopied ? <><Check size={14} /> Copied to Clipboard</> : <><Copy size={14} /> Export All</>}
               </button>
               {exportFailed && (
-                <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: 0 }}>
+                <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: 0 }}>
                   Copy failed — select and copy manually.
                 </p>
               )}

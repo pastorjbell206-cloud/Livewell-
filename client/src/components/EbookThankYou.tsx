@@ -88,7 +88,7 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
     <Layout>
       <SEOMeta title={`Thank you — your download of ${title}`} description={`Download your copy of ${title}.`} noindex />
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)", minHeight: "60vh" }}>
-        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
+        <div aria-live="polite" style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
           <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
             Thank you
           </div>
@@ -116,7 +116,7 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
                 </button>
               </div>
               {downloadError && (
-                <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink)", marginTop: "18px" }}>
+                <p role="alert" style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink)", marginTop: "18px" }}>
                   The download didn't start. Try again in a moment — your purchase is confirmed and this page keeps working. If it keeps failing, email us and a person will send the file directly.
                 </p>
               )}
@@ -167,7 +167,7 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
                 We couldn't confirm a purchase
               </h1>
               <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "54ch", margin: "0 auto 36px" }}>
-                This download unlocks only after a completed checkout. If you just paid and are seeing this, give it a moment and try again — or email us and we'll send your file directly.
+                This download is available only after a completed checkout. If you just paid and are seeing this, give it a moment and try again — or email us and we'll send your file directly.
               </p>
               <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
                 <button type="button" onClick={retryVerification} style={{ ...btn, background: "var(--mustard)", color: "var(--ink)" }}>

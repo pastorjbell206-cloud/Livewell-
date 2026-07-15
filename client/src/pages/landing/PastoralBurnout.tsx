@@ -48,7 +48,7 @@ export default function PastoralBurnout() {
       {/* Hero */}
       <section style={{ background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px", textAlign: "center" }}>
         <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>FOR PASTORS</p>
-        <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px,5vw,60px)", fontWeight: 400, color: "white", maxWidth: "780px", margin: "0 auto", lineHeight: 1.15, letterSpacing: "-0.02em" }}>
+        <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px,5vw,60px)", fontWeight: 400, color: "var(--charcoal-fg)", maxWidth: "780px", margin: "0 auto", lineHeight: 1.15, letterSpacing: "-0.02em" }}>
           Ministry was never supposed to feel like this.
         </h1>
       </section>
@@ -128,7 +128,7 @@ export default function PastoralBurnout() {
       {/* Email Signup */}
       <section style={{ background: "var(--charcoal)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "white", marginBottom: "16px" }}>Get essays for pastors delivered weekly</h2>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" }}>Get essays for pastors delivered weekly</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "rgba(255,255,255,0.6)", marginBottom: "32px", lineHeight: 1.7 }}>No spam. No guilt. Just writing that takes the weight of your calling seriously.</p>
           <LandingSignup source="landing-pastoral-burnout" />
         </div>
@@ -143,7 +143,7 @@ export default function PastoralBurnout() {
             The Pastor Burnout Diagnostic was built for exactly this page: twenty-four honest questions across calling, isolation, marriage, and the board room, and a recovery roadmap that names your specific pattern. Private. No one sees your answers.
           </p>
           <Link href="/tools/pastor-burnout" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--charcoal)", color: "white", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Take the Burnout Diagnostic</button>
+            <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Take the Burnout Diagnostic</button>
           </Link>
         </div>
       </section>

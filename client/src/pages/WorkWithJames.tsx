@@ -95,10 +95,10 @@ export default function WorkWithJames() {
               </h2>
 
               {status === "sent" ? (
-                <div style={{ padding: "40px 24px", textAlign: "center", background: "#D1FAE5", borderRadius: "8px" }}>
-                  <CheckCircle size={48} style={{ color: "#065F46", margin: "0 auto 16px" }} />
-                  <h3 style={{ fontSize: "20px", fontWeight: 600, color: "#065F46", fontFamily: "var(--F)", marginBottom: "8px" }}>Message Sent</h3>
-                  <p style={{ fontSize: "15px", color: "#065F46", fontFamily: "var(--B)" }}>Thank you for reaching out. I'll respond within 48 hours.</p>
+                <div role="status" style={{ padding: "40px 24px", textAlign: "center", background: "var(--ok-bg)", borderRadius: "8px" }}>
+                  <CheckCircle size={48} style={{ color: "var(--ok)", margin: "0 auto 16px" }} />
+                  <h3 style={{ fontSize: "20px", fontWeight: 600, color: "var(--ok)", fontFamily: "var(--F)", marginBottom: "8px" }}>Message Sent</h3>
+                  <p style={{ fontSize: "15px", color: "var(--ok)", fontFamily: "var(--B)" }}>Thank you for reaching out. I'll respond within 48 hours.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -131,7 +131,7 @@ export default function WorkWithJames() {
                     {status === "sending" ? "Sending…" : "Send Message"}
                   </button>
                   {status === "error" && (
-                    <p style={{ color: "#b00020", fontSize: "14px", fontFamily: "var(--U)" }}>Something went wrong. Please try again or email directly.</p>
+                    <p role="alert" style={{ color: "var(--alert)", fontSize: "14px", fontFamily: "var(--U)" }}>Something went wrong. Please try again or email directly.</p>
                   )}
                 </form>
               )}

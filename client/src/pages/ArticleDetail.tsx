@@ -69,6 +69,7 @@ function ShareButton({ title, url }: { title: string; url: string }) {
         }
       }}
       aria-label="Share this article"
+      aria-live="polite"
       style={{
         display: "inline-flex",
         alignItems: "center",
@@ -207,6 +208,7 @@ function ShareableQuote({
         className="quote-share__btn"
         onClick={onShare}
         aria-label="Share this quote"
+        aria-live="polite"
       >
         <Share2 size={13} aria-hidden />
         {copied ? "Copied" : "Share this quote"}
@@ -284,6 +286,7 @@ function QuoteSelectionShare({
         type="button"
         onMouseDown={(e) => e.preventDefault()}
         onClick={share}
+        aria-live="polite"
         style={{ display: "inline-flex", alignItems: "center", gap: "7px", background: "var(--charcoal)", color: "var(--bone)", border: "none", borderRadius: "var(--radius-sm)", padding: "8px 14px", fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.04em", cursor: "pointer", boxShadow: "var(--shadow-modal)", whiteSpace: "nowrap" }}
       >
         <Share2 size={13} aria-hidden /> {copied ? "Copied" : "Share quote"}

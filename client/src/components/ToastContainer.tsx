@@ -26,7 +26,7 @@ export function ToastContainer() {
   const { toasts, removeToast } = useToast();
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 space-y-2 max-w-md">
+    <div role="status" aria-live="polite" className="fixed bottom-4 right-4 z-50 space-y-2 max-w-md">
       {toasts.map(toast => (
         <div
           key={toast.id}
@@ -47,6 +47,7 @@ export function ToastContainer() {
           </div>
           <button
             onClick={() => removeToast(toast.id)}
+            aria-label="Dismiss notification"
             className="flex-shrink-0 text-gray-400 hover:text-gray-600"
           >
             <X className="w-5 h-5" />

@@ -764,6 +764,7 @@ export default function ScriptureMemory() {
                                   [verse.ref]: !prev[verse.ref],
                                 }))
                               }
+                              aria-expanded={answerVisible}
                               style={{
                                 display: "flex",
                                 alignItems: "center",
@@ -832,6 +833,7 @@ export default function ScriptureMemory() {
                                   [verse.ref]: !prev[verse.ref],
                                 }))
                               }
+                              aria-expanded={answerVisible}
                               style={{
                                 display: "flex",
                                 alignItems: "center",
@@ -947,6 +949,7 @@ export default function ScriptureMemory() {
                                   [verse.ref]: !prev[verse.ref],
                                 }))
                               }
+                              aria-expanded={answerVisible}
                               style={{
                                 display: "flex",
                                 alignItems: "center",

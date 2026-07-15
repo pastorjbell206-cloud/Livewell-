@@ -79,6 +79,7 @@ export function SampleChapterForm({
   if (revealed && (sampleUrl || sampleText)) {
     return (
       <div
+        role="status"
         style={{
           background: "var(--bone-warm)",
           border: "1px solid var(--border)",

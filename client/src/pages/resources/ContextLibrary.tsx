@@ -97,11 +97,11 @@ export default function ContextLibrary() {
               />
             </div>
             <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
-              <button onClick={() => setGroup(null)} style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, padding: "7px 12px", borderRadius: "2px", cursor: "pointer", border: "1px solid rgba(20,17,12,0.18)", background: group === null ? "var(--charcoal)" : "transparent", color: group === null ? "var(--bone)" : "var(--ink)" }}>
+              <button onClick={() => setGroup(null)} aria-pressed={group === null} style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, padding: "7px 12px", borderRadius: "2px", cursor: "pointer", border: "1px solid rgba(20,17,12,0.18)", background: group === null ? "var(--charcoal)" : "transparent", color: group === null ? "var(--bone)" : "var(--ink)" }}>
                 All
               </button>
               {groups.map((g) => (
-                <button key={g} onClick={() => setGroup(group === g ? null : g)} style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, padding: "7px 12px", borderRadius: "2px", cursor: "pointer", border: "1px solid rgba(20,17,12,0.18)", background: group === g ? "var(--charcoal)" : "transparent", color: group === g ? "var(--bone)" : "var(--ink)" }}>
+                <button key={g} onClick={() => setGroup(group === g ? null : g)} aria-pressed={group === g} style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, padding: "7px 12px", borderRadius: "2px", cursor: "pointer", border: "1px solid rgba(20,17,12,0.18)", background: group === g ? "var(--charcoal)" : "transparent", color: group === g ? "var(--bone)" : "var(--ink)" }}>
                   {g}
                 </button>
               ))}

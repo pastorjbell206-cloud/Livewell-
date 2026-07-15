@@ -1110,7 +1110,7 @@ export default function FamilyDevotionBuilder() {
                 <div style={SECTION_LABEL}>Who is at the table?</div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
                   {AGE_BANDS.map((b) => (
-                    <button key={b.id} type="button" onClick={() => setDraftBand(b.id)} style={pillStyle(draftBand === b.id)}>
+                    <button key={b.id} type="button" onClick={() => setDraftBand(b.id)} aria-pressed={draftBand === b.id} style={pillStyle(draftBand === b.id)}>
                       {b.label}
                     </button>
                   ))}
@@ -1207,6 +1207,7 @@ export default function FamilyDevotionBuilder() {
                   key={b.id}
                   type="button"
                   onClick={() => { setBand(b.id); setCopied(false); setCopyFailed(false); }}
+                  aria-pressed={band === b.id}
                   style={pillStyle(band === b.id)}
                 >
                   {b.label}
@@ -1225,6 +1226,7 @@ export default function FamilyDevotionBuilder() {
                   type="button"
                   disabled={!band}
                   onClick={() => { setTheme(t); setCopied(false); setCopyFailed(false); }}
+                  aria-pressed={theme === t}
                   style={{
                     fontFamily: "var(--U)",
                     fontSize: "14px",
@@ -1323,6 +1325,7 @@ export default function FamilyDevotionBuilder() {
                 <button
                   type="button"
                   onClick={handleCopy}
+                  aria-live="polite"
                   style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--mustard)", border: "none", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--charcoal)", cursor: "pointer" }}
                 >
                   {copied ? <><Check size={14} /> Copied</> : <><Copy size={14} /> Copy Devotion</>}
@@ -1336,7 +1339,7 @@ export default function FamilyDevotionBuilder() {
                 </button>
               </div>
               {copyFailed && (
-                <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "12px 0 0" }}>
+                <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "12px 0 0" }}>
                   Copy failed — select and copy manually.
                 </p>
               )}

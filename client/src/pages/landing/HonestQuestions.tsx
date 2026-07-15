@@ -86,7 +86,7 @@ export default function HonestQuestions() {
       {/* Hero */}
       <section style={{ background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px", textAlign: "center" }}>
         <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>FOR THE HONEST</p>
-        <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px,5vw,60px)", fontWeight: 400, color: "white", maxWidth: "780px", margin: "0 auto", lineHeight: 1.15, letterSpacing: "-0.02em" }}>
+        <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px,5vw,60px)", fontWeight: 400, color: "var(--charcoal-fg)", maxWidth: "780px", margin: "0 auto", lineHeight: 1.15, letterSpacing: "-0.02em" }}>
           The Bible was written by people who argued with God. You are allowed to ask questions.
         </h1>
         <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.6)", marginTop: "32px", maxWidth: "560px", marginLeft: "auto", marginRight: "auto", lineHeight: 1.7 }}>
@@ -168,7 +168,7 @@ export default function HonestQuestions() {
             The Deep Bible Companion walks you through any passage with historical context, original language, and the scholarly debates most preachers skip. No pre-packaged answers.
           </p>
           <Link href="/tools/deep-bible" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--charcoal)", color: "white", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Open the Deep Bible Companion</button>
+            <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Open the Deep Bible Companion</button>
           </Link>
         </div>
       </section>
@@ -176,7 +176,7 @@ export default function HonestQuestions() {
       {/* Email Signup */}
       <section style={{ background: "var(--charcoal)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "white", marginBottom: "16px" }}>One hard question. One honest answer. Every week.</h2>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" }}>One hard question. One honest answer. Every week.</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "rgba(255,255,255,0.6)", marginBottom: "32px", lineHeight: 1.7 }}>Essays for skeptics, seekers, and anyone who refuses to believe something they have not examined. No guilt. No pressure. Just theology that takes your intelligence seriously.</p>
           <LandingSignup source="landing-honest-questions" />
         </div>
@@ -191,7 +191,7 @@ export default function HonestQuestions() {
             The post-Christian series traces sixty essays on what happens when a culture built on Christianity starts asking whether any of it is true.
           </p>
           <Link href="/post-christian" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--charcoal)", color: "white", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Explore the Full Series</button>
+            <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Explore the Full Series</button>
           </Link>
         </div>
       </section>

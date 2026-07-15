@@ -216,6 +216,7 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
                       <button
                         key={index}
                         onClick={() => handleAnswer(index)}
+                        aria-pressed={answers[currentQuestion] === index}
                         onMouseEnter={() => setHoveredOption(index)}
                         onMouseLeave={() => setHoveredOption(null)}
                         style={{

@@ -123,7 +123,7 @@ export function BuyEbookButton({
         {loading ? "Redirecting to checkout…" : label}
       </button>
       {error && (
-        <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--alert)" }}>
+        <span role="alert" style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--alert)" }}>
           {error}{" "}
           <a href={requestHref} style={{ color: "inherit", textDecoration: "underline" }}>
             Email us

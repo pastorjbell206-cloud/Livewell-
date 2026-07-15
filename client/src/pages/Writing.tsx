@@ -260,6 +260,7 @@ export default function Writing() {
                     : "Theology, politics, the American church after Christendom. Pastoring, marriage, parenting, prophetic justice, doubt. Sorted newest first."}
           </p>
           <div
+            role="status"
             style={{
               marginTop: "20px",
               fontFamily: "var(--U)",

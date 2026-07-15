@@ -51,7 +51,7 @@ export default function BeforeYouPost() {
               <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--ink-muted)", lineHeight: 1.6, marginBottom: "10px" }}>{q.help}</p>
               <div style={{ display: "flex", gap: "8px" }}>
                 {[true, false].map((v) => (
-                  <button key={String(v)} onClick={() => setAns((a) => ({ ...a, [q.id]: v }))} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "8px 22px", borderRadius: "var(--radius-sm)", cursor: "pointer", border: "1px solid " + (ans[q.id] === v ? "var(--mustard)" : "var(--border)"), background: ans[q.id] === v ? "var(--mustard)" : "var(--card)", color: ans[q.id] === v ? "var(--charcoal)" : "var(--ink-muted)" }}>{v ? "Yes" : "No"}</button>
+                  <button key={String(v)} onClick={() => setAns((a) => ({ ...a, [q.id]: v }))} aria-pressed={ans[q.id] === v} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "8px 22px", borderRadius: "var(--radius-sm)", cursor: "pointer", border: "1px solid " + (ans[q.id] === v ? "var(--mustard)" : "var(--border)"), background: ans[q.id] === v ? "var(--mustard)" : "var(--card)", color: ans[q.id] === v ? "var(--charcoal)" : "var(--ink-muted)" }}>{v ? "Yes" : "No"}</button>
                 ))}
               </div>
             </div>
@@ -62,7 +62,7 @@ export default function BeforeYouPost() {
           </button>
 
           {done && (
-            <div style={{ marginTop: "var(--s-5)", background: "var(--charcoal)", color: "var(--bone)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: `3px solid ${flags.length ? "#b4541f" : "var(--mustard)"}` }}>
+            <div role="status" style={{ marginTop: "var(--s-5)", background: "var(--charcoal)", color: "var(--bone)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: `3px solid ${flags.length ? "var(--strain)" : "var(--mustard)"}` }}>
               {flags.length === 0 ? (
                 <>
                   <h2 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 500, color: "var(--mustard)", marginBottom: "12px" }}>It may be worth saying.</h2>

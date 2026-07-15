@@ -1223,7 +1223,7 @@ export default function WholeLifeAssessment() {
                       </div>
                     ))
                   )}
-                  <button onClick={copyRule} style={{ ...primaryBtn, marginTop: "var(--s-3)" }}>{copied ? "Copied" : "Copy this rule"}</button>
+                  <button onClick={copyRule} aria-live="polite" style={{ ...primaryBtn, marginTop: "var(--s-3)" }}>{copied ? "Copied" : "Copy this rule"}</button>
                 </div>
 
                 <p style={{ ...mutedText, fontStyle: "italic", marginTop: "var(--s-4)", borderTop: "1px solid var(--border)", paddingTop: "var(--s-3)" }}>

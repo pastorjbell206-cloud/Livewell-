@@ -74,12 +74,12 @@ export default function PropheticTimeline() {
       {/* FILTERS */}
       <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) 0" }}>
         <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "8px" }}>
-          <button type="button" onClick={() => setFilter("all")}
+          <button type="button" onClick={() => setFilter("all")} aria-pressed={filter === "all"}
             style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, padding: "8px 14px", borderRadius: "999px", cursor: "pointer", border: `1px solid ${filter === "all" ? "var(--mustard)" : "var(--border)"}`, background: filter === "all" ? "var(--bone-warm)" : "transparent", color: "var(--ink)" }}>
             All{data ? ` · ${data.events.length}` : ""}
           </button>
           {Object.entries(CATEGORIES).map(([id, c]) => counts[id] ? (
-            <button key={id} type="button" onClick={() => setFilter(id)}
+            <button key={id} type="button" onClick={() => setFilter(id)} aria-pressed={filter === id}
               style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, padding: "8px 14px", borderRadius: "999px", cursor: "pointer", border: `1px solid ${filter === id ? c.color : "var(--border)"}`, background: filter === id ? c.color : "transparent", color: filter === id ? "var(--bone)" : "var(--ink)" }}>
               {c.label} · {counts[id]}
             </button>

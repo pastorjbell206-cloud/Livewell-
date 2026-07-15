@@ -190,7 +190,7 @@ export default function ServiceBuilder() {
                         {el.samples.length > 1 && (
                           <div style={{ display: "flex", gap: "6px", flexWrap: "wrap", marginBottom: "8px" }}>
                             {el.samples.map((sm, i) => (
-                              <button key={i} onClick={() => choose(el, i)} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px", padding: "5px 11px", borderRadius: "999px", cursor: "pointer", border: "1px solid " + (st.pick[el.id] === i ? "var(--mustard)" : "var(--border)"), background: st.pick[el.id] === i ? "var(--mustard)" : "var(--bone)", color: st.pick[el.id] === i ? "var(--charcoal)" : "var(--ink-muted)" }}>{sm.label}</button>
+                              <button key={i} onClick={() => choose(el, i)} aria-pressed={st.pick[el.id] === i} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px", padding: "5px 11px", borderRadius: "999px", cursor: "pointer", border: "1px solid " + (st.pick[el.id] === i ? "var(--mustard)" : "var(--border)"), background: st.pick[el.id] === i ? "var(--mustard)" : "var(--bone)", color: st.pick[el.id] === i ? "var(--charcoal)" : "var(--ink-muted)" }}>{sm.label}</button>
                             ))}
                           </div>
                         )}
@@ -205,8 +205,8 @@ export default function ServiceBuilder() {
 
             <div style={{ display: "flex", gap: "12px", alignItems: "center", flexWrap: "wrap", marginTop: "var(--s-3)" }}>
               <button onClick={copyOrder} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "10px 18px", background: "var(--mustard)", color: "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>Copy the order of service</button>
-              {copyStatus === "copied" && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Copied</span>}
-              {copyStatus === "failed" && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Copy failed — select and copy manually.</span>}
+              {copyStatus === "copied" && <span role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Copied</span>}
+              {copyStatus === "failed" && <span role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Copy failed — select and copy manually.</span>}
             </div>
             {persistFailed && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", marginTop: "8px" }}>Couldn't save to this browser — your work here will not survive a reload.</p>}
 

@@ -315,6 +315,7 @@ function FilterChip({
   return (
     <button
       onClick={onClick}
+      aria-pressed={active}
       className="px-3 py-1 rounded-full font-ui text-sm font-medium transition-colors"
       style={{
         backgroundColor: active ? "var(--charcoal)" : "var(--card)",

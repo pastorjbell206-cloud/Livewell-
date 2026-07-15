@@ -124,7 +124,7 @@ export function AdminSyncPanel() {
         </div>
 
         {lastSync ? (
-          <div className="flex items-center gap-2 p-3 rounded" style={{ backgroundColor: "var(--adm-ok-tint)" }}>
+          <div role="status" className="flex items-center gap-2 p-3 rounded" style={{ backgroundColor: "var(--adm-ok-tint)" }}>
             <CheckCircle size={20} style={{ color: "var(--adm-ok-icon)" }} />
             <div>
               <p style={{ color: "var(--adm-ok-strong)", fontWeight: 500 }}>

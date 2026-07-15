@@ -291,6 +291,7 @@ export default function AdminPublishContent() {
 
         {result && (
           <div
+            role="status"
             className="rounded p-6"
             style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}
           >

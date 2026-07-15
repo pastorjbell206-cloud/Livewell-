@@ -8,7 +8,7 @@ import { NewsletterSignup } from "@/components/NewsletterSignup";
 // minimum) so the dense footer is easy to hit on a phone; the padding provides
 // the row separation, so the column gap below is trimmed to compensate.
 const footerLink = { color: "rgba(255,255,255,0.75)", textDecoration: "none", fontSize: "14px", display: "flex", alignItems: "center", minHeight: "44px" } as const;
-const colTitle = { fontSize: "13px", fontWeight: "bold", marginBottom: "16px", color: "#ffffff", textTransform: "uppercase", letterSpacing: "1px" } as const;
+const colTitle = { fontSize: "13px", fontWeight: "bold", marginBottom: "16px", color: "var(--charcoal-fg)", textTransform: "uppercase", letterSpacing: "1px" } as const;
 const col = { display: "flex", flexDirection: "column", gap: "0" } as const;
 
 /**
@@ -21,7 +21,7 @@ export default function Footer() {
   const { theme, toggleTheme } = useTheme();
   return (
     // charcoal, not --ink: the footer stays a dark surface in BOTH themes (--ink flips light in dark mode)
-    <footer style={{ background: "var(--charcoal)", color: "#F5F0E6", padding: "clamp(36px, 7vw, 60px) clamp(16px, 4vw, 20px) 20px", marginTop: "60px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+    <footer style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "clamp(36px, 7vw, 60px) clamp(16px, 4vw, 20px) 20px", marginTop: "60px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(150px, 100%), 1fr))", gap: "clamp(20px, 4vw, 40px)", marginBottom: "40px" }}>
           {/* Brand */}

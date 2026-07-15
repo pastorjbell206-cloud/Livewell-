@@ -35,7 +35,7 @@ export default function EmailSignup() {
             <span style={{ width: 32, height: 1, background: "var(--mustard)", display: "inline-block" }} />
           </div>
 
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 5vw, 64px)", fontWeight: 300, lineHeight: 1.1, letterSpacing: "-0.02em", color: "#fff", marginBottom: 24 }}>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 5vw, 64px)", fontWeight: 300, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: 24 }}>
             One serious essay
             <br />
             a week. Written slow,

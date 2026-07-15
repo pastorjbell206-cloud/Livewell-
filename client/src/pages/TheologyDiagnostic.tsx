@@ -132,7 +132,7 @@ export default function TheologyDiagnostic() {
                       {question.options.map((opt, oi) => {
                         const chosen = answers[qi] === oi;
                         return (
-                          <button key={oi} type="button" onClick={() => setAnswers((a) => ({ ...a, [qi]: oi }))}
+                          <button key={oi} type="button" onClick={() => setAnswers((a) => ({ ...a, [qi]: oi }))} aria-pressed={chosen}
                             style={{ textAlign: "left", cursor: "pointer", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.5, color: "var(--ink)", padding: "12px 14px", borderRadius: "var(--radius-sm)",
                               border: `1px solid ${chosen ? "var(--mustard)" : "var(--border)"}`, background: chosen ? "rgba(212,160,23,0.12)" : "var(--bone)" }}>
                             {opt.label}
@@ -146,7 +146,7 @@ export default function TheologyDiagnostic() {
 
               {/* RESULT */}
               {!complete && (
-                <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", textAlign: "center", marginTop: "var(--s-4)" }}>
+                <p role="status" style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", textAlign: "center", marginTop: "var(--s-4)" }}>
                   {answeredCount} of {quiz.questions.length} answered. Finish to see where you lean.
                 </p>
               )}

@@ -204,6 +204,7 @@ export default function SearchPage() {
               <button
                 key={type}
                 onClick={() => setSearchType(type)}
+                aria-pressed={searchType === type}
                 className="px-4 py-2 rounded-full font-ui text-sm font-medium uppercase tracking-wider transition-all"
                 style={{
                   backgroundColor: searchType === type ? "var(--gold)" : "var(--bone-muted)",
@@ -322,7 +323,7 @@ export default function SearchPage() {
                 ) : null
               ) : (
             <div>
-              <p className="text-sm font-ui mb-6" style={{ color: "var(--ink-muted)" }}>
+              <p role="status" className="text-sm font-ui mb-6" style={{ color: "var(--ink-muted)" }}>
                 Found {results.length} result{results.length !== 1 ? "s" : ""}
               </p>
 

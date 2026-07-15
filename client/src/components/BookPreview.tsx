@@ -38,6 +38,7 @@ export default function BookPreview({
 
   return (
     <div
+      role="presentation"
       className="fixed inset-0 z-50 flex items-center justify-center p-4 animate-in fade-in"
       style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
       onClick={onClose}
