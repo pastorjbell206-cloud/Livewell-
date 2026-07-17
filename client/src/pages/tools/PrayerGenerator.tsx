@@ -280,7 +280,7 @@ export default function PrayerGenerator() {
         <div className="wrap" style={{ maxWidth: "800px" }}>
           <div style={{
             padding: "28px 32px",
-            background: "white",
+            background: "var(--card)",
             border: "1px solid var(--border)",
             borderRadius: "10px",
             borderTop: "4px solid var(--gold)",
@@ -332,7 +332,7 @@ export default function PrayerGenerator() {
                 aria-pressed={selected === type}
                 style={{
                   padding: "18px 16px",
-                  background: selected === type ? "var(--gold)" : "white",
+                  background: selected === type ? "var(--gold)" : "var(--card)",
                   color: selected === type ? "var(--ink)" : "var(--ink2)",
                   border: `1px solid ${selected === type ? "var(--gold)" : "var(--border)"}`,
                   borderRadius: "6px",
@@ -351,7 +351,7 @@ export default function PrayerGenerator() {
           </div>
 
           {prayer && (
-            <div style={{ background: "white", border: "1px solid var(--border)", borderRadius: "12px", padding: "40px 32px", borderTop: "4px solid var(--gold)" }}>
+            <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "12px", padding: "40px 32px", borderTop: "4px solid var(--gold)" }}>
               <div style={{ fontSize: "13px", fontWeight: 700, color: "var(--gold)", fontFamily: "var(--U)", marginBottom: "20px", letterSpacing: "0.1em" }}>
                 {selected?.toUpperCase()}
               </div>

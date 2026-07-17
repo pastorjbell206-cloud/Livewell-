@@ -234,7 +234,7 @@ export default function WhichLens() {
                     setAnswers((prev) => ({ ...prev, [step]: key }));
                     setStep((s) => Math.min(s + 1, QUESTIONS.length));
                   }}
-                  style={{ display: "block", width: "100%", textAlign: "left", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.15)", padding: "1.2rem 1.4rem", marginBottom: "0.75rem", cursor: "pointer", fontFamily: "var(--F)", fontSize: "1.12rem", lineHeight: 1.5, color: "var(--ink)" }}
+                  style={{ display: "block", width: "100%", textAlign: "left", background: "var(--card)", border: "1px solid rgba(20,17,12,0.15)", padding: "1.2rem 1.4rem", marginBottom: "0.75rem", cursor: "pointer", fontFamily: "var(--F)", fontSize: "1.12rem", lineHeight: 1.5, color: "var(--ink)" }}
                 >
                   {q[key].text}
                 </button>
@@ -300,7 +300,7 @@ export default function WhichLens() {
                       aria-pressed={answers[i] === key}
                       style={{
                         display: "block", width: "100%", textAlign: "left", cursor: "pointer",
-                        background: answers[i] === key ? "var(--charcoal)" : "#FFFFFF",
+                        background: answers[i] === key ? "var(--charcoal)" : "var(--card)",
                         color: answers[i] === key ? "var(--bone)" : "var(--ink)",
                         border: "1px solid rgba(20,17,12,0.15)", padding: "0.6rem 0.9rem", marginBottom: "0.4rem",
                         fontFamily: "var(--F)", fontSize: "0.98rem", lineHeight: 1.45,

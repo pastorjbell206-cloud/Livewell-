@@ -253,7 +253,7 @@ export default function RuleOfLife() {
                       style={{
                         textAlign: "left", cursor: "pointer", display: "flex", gap: "10px", alignItems: "flex-start",
                         padding: "12px 14px",
-                        background: on ? "var(--charcoal)" : "#FFFFFF",
+                        background: on ? "var(--charcoal)" : "var(--card)",
                         color: on ? "var(--bone)" : "var(--ink)",
                         border: "1px solid rgba(20,17,12,0.1)",
                         fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.4,
@@ -296,7 +296,7 @@ export default function RuleOfLife() {
                 Choose a few practices above, the ones you can actually keep, and your rule will appear here. A short rule kept beats a long rule abandoned.
               </p>
             ) : (
-              <div style={{ background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", padding: "var(--s-4)" }}>
+              <div style={{ background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", padding: "var(--s-4)" }}>
                 <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--ink-muted)", fontStyle: "italic", marginBottom: "var(--s-3)", maxWidth: "60ch" }}>
                   A few rhythms I will return to, so that grace can reach me. Not a scorecard. A trellis.
                 </p>

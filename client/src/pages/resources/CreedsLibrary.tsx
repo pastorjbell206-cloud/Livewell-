@@ -70,7 +70,7 @@ export default function CreedsLibrary() {
                 <div style={{ width: "36px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-3)" }} />
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px, 100%), 1fr))", gap: "var(--s-3)" }}>
                   {entries.map((e) => (
-                    <Link key={e.slug} href={`/resources/creeds/${e.slug}`} style={{ display: "flex", gap: "14px", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderRadius: "var(--radius-sm)", overflow: "hidden", textDecoration: "none" }}>
+                    <Link key={e.slug} href={`/resources/creeds/${e.slug}`} style={{ display: "flex", gap: "14px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderRadius: "var(--radius-sm)", overflow: "hidden", textDecoration: "none" }}>
                       <div style={{ width: "78px", flexShrink: 0, alignSelf: "flex-start", aspectRatio: "3 / 4", overflow: "hidden" }}><GeneratedCover title={e.title} eyebrow="The Creeds" variant="dark" style={{ width: "100%", height: "100%" }} /></div>
                       <div style={{ padding: "var(--s-3) var(--s-3) var(--s-3) 0" }}>
                         <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-muted)", marginBottom: "8px" }}>{e.date}</div>

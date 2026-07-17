@@ -64,7 +64,7 @@ export default function Map() {
                   <Link
                     key={p.slug}
                     href={ROUTE_FOR_PILLAR[p.slug]}
-                    style={{ display: "block", textDecoration: "none", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.12)", padding: "1rem 1.2rem" }}
+                    style={{ display: "block", textDecoration: "none", background: "var(--card)", border: "1px solid rgba(20,17,12,0.12)", padding: "1rem 1.2rem" }}
                   >
                     <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "1.12rem", fontWeight: 400, color: "var(--ink)", marginBottom: "0.25rem" }}>
                       {p.name} <ArrowRight size={14} style={{ display: "inline", verticalAlign: "middle", color: "var(--mustard)" }} />
@@ -97,7 +97,7 @@ export default function Map() {
                 <Link
                   key={p.slug}
                   href={ROUTE_FOR_PILLAR[p.slug]}
-                  style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", textDecoration: "none", background: "#FFFFFF", border: "1px solid var(--mustard)", padding: "1.4rem 1.4rem" }}
+                  style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", textDecoration: "none", background: "var(--card)", border: "1px solid var(--mustard)", padding: "1.4rem 1.4rem" }}
                 >
                   <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "1.3rem", fontWeight: 400, color: "var(--ink)", marginBottom: "0.4rem" }}>
                     {p.name} <ArrowRight size={15} style={{ display: "inline", verticalAlign: "middle", color: "var(--mustard)" }} />

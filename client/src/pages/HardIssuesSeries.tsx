@@ -192,7 +192,7 @@ function BookletCard({ b }: { b: Booklet }) {
         gridTemplateColumns: "minmax(min(120px, 100%), 180px) 1fr",
         gap: "var(--s-4)",
         alignItems: "start",
-        background: "#FFFFFF",
+        background: "var(--card)",
         border: "1px solid rgba(20,17,12,0.08)",
         borderLeft: "2px solid var(--mustard)",
         borderRadius: "var(--radius-sm)",

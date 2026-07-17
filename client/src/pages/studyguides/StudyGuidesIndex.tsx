@@ -56,7 +56,7 @@ export default function StudyGuidesIndex() {
               <Link
                 key={g.slug}
                 href={`/studyguides/${g.slug}`}
-                style={{ display: "flex", gap: "16px", textDecoration: "none", color: "inherit", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderRadius: "var(--radius-sm)", overflow: "hidden", height: "100%" }}
+                style={{ display: "flex", gap: "16px", textDecoration: "none", color: "inherit", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderRadius: "var(--radius-sm)", overflow: "hidden", height: "100%" }}
               >
                 <div style={{ width: "104px", flexShrink: 0, alignSelf: "flex-start", aspectRatio: "3 / 4", overflow: "hidden" }}>
                   <GeneratedCover title={g.title} {...coverThemeFor(`${g.title} ${g.eyebrow}`)} style={{ width: "100%", height: "100%" }} />

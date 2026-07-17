@@ -51,7 +51,7 @@ export default function SubstackPage() {
             </h2>
 
             <div className="space-y-6 mb-12">
-              <div className="p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF" }}>
+              <div className="p-6 rounded-lg" style={{ backgroundColor: "var(--card)" }}>
                 <h3 className="font-display text-lg font-bold mb-2" style={{ color: "var(--ink)" }}>
                   One serious essay a week
                 </h3>
@@ -60,7 +60,7 @@ export default function SubstackPage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF" }}>
+              <div className="p-6 rounded-lg" style={{ backgroundColor: "var(--card)" }}>
                 <h3 className="font-display text-lg font-bold mb-2" style={{ color: "var(--ink)" }}>
                   From inside the room
                 </h3>
@@ -69,7 +69,7 @@ export default function SubstackPage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-lg" style={{ backgroundColor: "#FFFFFF" }}>
+              <div className="p-6 rounded-lg" style={{ backgroundColor: "var(--card)" }}>
                 <h3 className="font-display text-lg font-bold mb-2" style={{ color: "var(--ink)" }}>
                   No noise
                 </h3>

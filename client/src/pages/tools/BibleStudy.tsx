@@ -423,7 +423,7 @@ export default function BibleStudy() {
                       onClick={() => setSelectedBook(b.name)}
                       style={{
                         padding: "24px 16px",
-                        background: "white",
+                        background: "var(--card)",
                         border: "1px solid var(--border)",
                         borderRadius: "6px",
                         fontSize: "18px",
@@ -487,7 +487,7 @@ export default function BibleStudy() {
                       onClick={() => setSelectedBook(b.name)}
                       style={{
                         padding: "24px 16px",
-                        background: "white",
+                        background: "var(--card)",
                         border: "1px solid var(--border)",
                         borderRadius: "6px",
                         fontSize: "18px",
@@ -532,7 +532,7 @@ export default function BibleStudy() {
               {/* Title card */}
               <div
                 style={{
-                  background: "white",
+                  background: "var(--card)",
                   borderRadius: "8px",
                   padding: "40px 36px",
                   borderTop: "4px solid var(--mustard)",
@@ -578,7 +578,7 @@ export default function BibleStudy() {
               {/* Key Themes */}
               <div
                 style={{
-                  background: "white",
+                  background: "var(--card)",
                   borderRadius: "8px",
                   padding: "36px",
                 }}
@@ -639,7 +639,7 @@ export default function BibleStudy() {
               {/* Study Questions */}
               <div
                 style={{
-                  background: "white",
+                  background: "var(--card)",
                   borderRadius: "8px",
                   padding: "36px",
                 }}
@@ -698,7 +698,7 @@ export default function BibleStudy() {
               {/* How to Read */}
               <div
                 style={{
-                  background: "white",
+                  background: "var(--card)",
                   borderRadius: "8px",
                   padding: "36px",
                   borderLeft: "4px solid var(--mustard)",

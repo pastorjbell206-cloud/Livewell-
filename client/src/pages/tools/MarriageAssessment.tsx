@@ -670,7 +670,7 @@ export default function MarriageAssessment() {
                 <div
                   key={q.id}
                   style={{
-                    background: "white",
+                    background: "var(--card)",
                     borderRadius: "2px",
                     padding: "32px",
                     border: "1px solid var(--border)",
@@ -852,7 +852,7 @@ export default function MarriageAssessment() {
             {/* Overall Score */}
             <div
               style={{
-                background: "white",
+                background: "var(--card)",
                 borderRadius: "2px",
                 padding: "48px 40px",
                 borderTop: "4px solid " + overall.color,
@@ -923,7 +923,7 @@ export default function MarriageAssessment() {
             {/* Eight-Week Plan CTA */}
             <div
               style={{
-                background: "white",
+                background: "var(--card)",
                 borderRadius: "2px",
                 padding: "36px 40px",
                 border: "1px solid var(--border)",
@@ -981,7 +981,7 @@ export default function MarriageAssessment() {
             {/* Score Bar Overview */}
             <div
               style={{
-                background: "white",
+                background: "var(--card)",
                 borderRadius: "2px",
                 padding: "36px 40px",
                 border: "1px solid var(--border)",
@@ -1096,7 +1096,7 @@ export default function MarriageAssessment() {
                 <div
                   key={cat.slug}
                   style={{
-                    background: "white",
+                    background: "var(--card)",
                     borderRadius: "2px",
                     padding: "36px 40px",
                     border: "1px solid var(--border)",

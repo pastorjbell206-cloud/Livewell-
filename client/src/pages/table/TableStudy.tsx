@@ -120,7 +120,7 @@ export default function TableStudy() {
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={wrap}>
           {study.sessions.map((s) => (
-            <article key={s.n} style={{ background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "3px solid var(--mustard)", padding: "var(--s-4)", marginBottom: "var(--s-4)" }}>
+            <article key={s.n} style={{ background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "3px solid var(--mustard)", padding: "var(--s-4)", marginBottom: "var(--s-4)" }}>
               <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>Session {s.n} · {s.scripture}</div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 32px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", lineHeight: 1.15, marginBottom: "10px" }}>{s.title}</h2>
               <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.6, color: "var(--ink)", fontStyle: "italic", marginBottom: "var(--s-3)", paddingBottom: "var(--s-3)", borderBottom: "1px solid rgba(20,17,12,0.08)" }}>{s.bigIdea}</p>
