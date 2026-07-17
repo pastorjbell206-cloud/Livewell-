@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200" role="img" aria-label="Parenting the Hard Places by James Bell">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200" role="img" aria-label="When Parenting Gets Hard by James Bell">
   <rect width="800" height="1200" fill="#1A1A1A"/>
   <circle cx="764" cy="40" r="300" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.26"/>
   <circle cx="764" cy="40" r="212" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.16"/>
   <text x="80" y="150" font-family="Helvetica, Arial, sans-serif" font-size="19" letter-spacing="5.5" font-weight="700" fill="#D4A017">LIVING WELL</text>
-  <text x="720" y="152" text-anchor="end" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="22" fill="#D4A017">31</text>
-  <line x1="80" y1="716" x2="176" y2="716" stroke="#D4A017" stroke-width="3"/>
-  <text x="76" y="838" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="88" fill="#F5F0E6">Parenting the</text>
-  <text x="76" y="930" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="88" fill="#F5F0E6">Hard Places</text>
-  <text x="80" y="988" font-family="Helvetica, Arial, sans-serif" font-size="23" fill="#C9C1AE">Prodigals, doubt, screens, and the crises nobody prepped</text>
-  <text x="80" y="1021" font-family="Helvetica, Arial, sans-serif" font-size="23" fill="#C9C1AE">you for</text>
+  <text x="720" y="152" text-anchor="end" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="22" fill="#D4A017">49</text>
+  <line x1="80" y1="624" x2="176" y2="624" stroke="#D4A017" stroke-width="3"/>
+  <text x="76" y="746" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="88" fill="#F5F0E6">When</text>
+  <text x="76" y="838" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="88" fill="#F5F0E6">Parenting</text>
+  <text x="76" y="930" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="88" fill="#F5F0E6">Gets Hard</text>
+  <text x="80" y="988" font-family="Helvetica, Arial, sans-serif" font-size="23" fill="#C9C1AE">Prodigals, Doubt, Screens, and the Crises No One Prepped</text>
+  <text x="80" y="1021" font-family="Helvetica, Arial, sans-serif" font-size="23" fill="#C9C1AE">You For</text>
   <text x="80" y="1120" font-family="Helvetica, Arial, sans-serif" font-size="26" letter-spacing="4" font-weight="700" fill="#F5F0E6">JAMES BELL</text>
 </svg>

@@ -1,12 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200" role="img" aria-label="On Faith &amp; Doubt by James Bell">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200" role="img" aria-label="Honest Doubt by James Bell">
   <rect width="800" height="1200" fill="#1A1A1A"/>
   <rect x="30" y="30" width="740" height="1140" fill="none" stroke="#F5F0E6" stroke-width="1.5" opacity="0.16"/>
   <text x="400" y="176" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="19" letter-spacing="5.5" font-weight="700" fill="#D4A017">LIVING WELL</text>
   <line x1="366" y1="206" x2="434" y2="206" stroke="#D4A017" stroke-width="2"/>
-  <text x="400" y="555" text-anchor="middle" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="84" fill="#F5F0E6">On Faith &amp;</text>
-  <text x="400" y="644" text-anchor="middle" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="84" fill="#F5F0E6">Doubt</text>
-  <text x="400" y="710" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#C9C1AE">Living honestly with the questions</text>
+  <text x="400" y="600" text-anchor="middle" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="84" fill="#F5F0E6">Honest Doubt</text>
+  <text x="400" y="666" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#C9C1AE">How to Keep the Faith When You Have Questions</text>
   <line x1="370" y1="1028" x2="430" y2="1028" stroke="#D4A017" stroke-width="2"/>
   <text x="400" y="1086" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" letter-spacing="4" font-weight="700" fill="#F5F0E6">JAMES BELL</text>
-  <text x="400" y="1118" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="15" fill="#D4A017">23</text>
+  <text x="400" y="1118" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="15" fill="#D4A017">17</text>
 </svg>

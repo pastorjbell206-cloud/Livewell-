@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200" role="img" aria-label="Marriage: Covenant &amp; Roles by James Bell">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200" role="img" aria-label="What Marriage Actually Is by James Bell">
   <rect width="800" height="1200" fill="#1A1A1A"/>
-  <rect x="30" y="30" width="740" height="1140" fill="none" stroke="#F5F0E6" stroke-width="1.5" opacity="0.16"/>
-  <text x="400" y="176" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="19" letter-spacing="5.5" font-weight="700" fill="#D4A017">LIVING WELL</text>
-  <line x1="366" y1="206" x2="434" y2="206" stroke="#D4A017" stroke-width="2"/>
-  <text x="400" y="511" text-anchor="middle" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="84" fill="#F5F0E6">Marriage:</text>
-  <text x="400" y="600" text-anchor="middle" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="84" fill="#F5F0E6">Covenant &amp;</text>
-  <text x="400" y="689" text-anchor="middle" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="84" fill="#F5F0E6">Roles</text>
-  <text x="400" y="755" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#C9C1AE">What marriage actually is, and how two people lead</text>
-  <text x="400" y="787" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#C9C1AE">and serve</text>
-  <line x1="370" y1="1028" x2="430" y2="1028" stroke="#D4A017" stroke-width="2"/>
-  <text x="400" y="1086" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" letter-spacing="4" font-weight="700" fill="#F5F0E6">JAMES BELL</text>
-  <text x="400" y="1118" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="15" fill="#D4A017">14</text>
+  <circle cx="764" cy="1140" r="300" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.26"/>
+  <circle cx="764" cy="1140" r="212" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.16"/>
+  <text x="80" y="150" font-family="Helvetica, Arial, sans-serif" font-size="19" letter-spacing="5.5" font-weight="700" fill="#D4A017">LIVING WELL</text>
+  <text x="720" y="152" text-anchor="end" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="22" fill="#D4A017">45</text>
+  <line x1="80" y1="178" x2="720" y2="178" stroke="#D4A017" stroke-width="1.5" opacity="0.5"/>
+  <text x="76" y="485" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="96" fill="#F5F0E6">What</text>
+  <text x="76" y="586" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="96" fill="#F5F0E6">Marriage</text>
+  <text x="76" y="687" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="96" fill="#F5F0E6">Actually Is</text>
+  <text x="80" y="757" font-family="Helvetica, Arial, sans-serif" font-size="23" fill="#C9C1AE">Covenant, Roles, and the Two-Become-One</text>
+  <line x1="80" y1="1052" x2="176" y2="1052" stroke="#D4A017" stroke-width="3"/>
+  <text x="80" y="1110" font-family="Helvetica, Arial, sans-serif" font-size="28" letter-spacing="4" font-weight="700" fill="#F5F0E6">JAMES BELL</text>
 </svg>

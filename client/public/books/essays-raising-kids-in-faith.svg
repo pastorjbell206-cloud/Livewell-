@@ -1,12 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200" role="img" aria-label="Raising Kids in the Faith by James Bell">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200" role="img" aria-label="Handing On the Faith by James Bell">
   <rect width="800" height="1200" fill="#EDE8DC"/>
-  <circle cx="764" cy="40" r="300" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.26"/>
-  <circle cx="764" cy="40" r="212" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.16"/>
+  <circle cx="764" cy="1140" r="300" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.26"/>
+  <circle cx="764" cy="1140" r="212" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.16"/>
   <text x="80" y="150" font-family="Helvetica, Arial, sans-serif" font-size="19" letter-spacing="5.5" font-weight="700" fill="#D4A017">LIVING WELL</text>
-  <text x="720" y="152" text-anchor="end" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="22" fill="#D4A017">37</text>
-  <line x1="80" y1="716" x2="176" y2="716" stroke="#D4A017" stroke-width="3"/>
-  <text x="76" y="838" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="88" fill="#1A1A1A">Raising Kids</text>
-  <text x="76" y="930" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="88" fill="#1A1A1A">in the Faith</text>
-  <text x="80" y="988" font-family="Helvetica, Arial, sans-serif" font-size="23" fill="#5A5448">Handing on a faith worth keeping</text>
-  <text x="80" y="1120" font-family="Helvetica, Arial, sans-serif" font-size="26" letter-spacing="4" font-weight="700" fill="#1A1A1A">JAMES BELL</text>
+  <text x="720" y="152" text-anchor="end" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="22" fill="#D4A017">15</text>
+  <line x1="80" y1="178" x2="720" y2="178" stroke="#D4A017" stroke-width="1.5" opacity="0.5"/>
+  <text x="76" y="535" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="96" fill="#1A1A1A">Handing On</text>
+  <text x="76" y="636" font-family="Palatino, 'Palatino Linotype', Georgia, serif" font-size="96" fill="#1A1A1A">the Faith</text>
+  <text x="80" y="706" font-family="Helvetica, Arial, sans-serif" font-size="23" fill="#5A5448">Raising Kids Who Still Believe as Adults</text>
+  <line x1="80" y1="1052" x2="176" y2="1052" stroke="#D4A017" stroke-width="3"/>
+  <text x="80" y="1110" font-family="Helvetica, Arial, sans-serif" font-size="28" letter-spacing="4" font-weight="700" fill="#1A1A1A">JAMES BELL</text>
 </svg>
