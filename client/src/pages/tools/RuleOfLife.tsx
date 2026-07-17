@@ -26,6 +26,9 @@ interface Category {
   title: string;
   icon: typeof Sunrise;
   intro: string;
+  /** The passage this rhythm grows from. Rendered as a reference that links to
+   *  the full text — not an embedded quotation. */
+  scripture: { ref: string };
   practices: Practice[];
 }
 
@@ -35,6 +38,7 @@ const CATEGORIES: Category[] = [
     title: "Prayer",
     icon: Sunrise,
     intro: "How you will keep company with God through the day.",
+    scripture: { ref: "1 Thessalonians 5:17" },
     practices: [
       { id: "p-morning", label: "A fixed time of prayer each morning" },
       { id: "p-lords", label: "Pray the Lord's Prayer daily" },
@@ -48,6 +52,7 @@ const CATEGORIES: Category[] = [
     title: "Scripture",
     icon: BookOpen,
     intro: "How the Word will get into you.",
+    scripture: { ref: "Psalm 1:2" },
     practices: [
       { id: "s-daily", label: "Read Scripture a little each day" },
       { id: "s-plan", label: "Follow a reading plan through a book or the Gospels" },
@@ -61,6 +66,7 @@ const CATEGORIES: Category[] = [
     title: "Worship and Rest",
     icon: Moon,
     intro: "The rhythms that remind you that you are a creature, not the keeper of the world.",
+    scripture: { ref: "Exodus 20:8" },
     practices: [
       { id: "r-worship", label: "Weekly worship with a gathered church" },
       { id: "r-sabbath", label: "A weekly day of rest you actually keep" },
@@ -74,6 +80,7 @@ const CATEGORIES: Category[] = [
     title: "Community",
     icon: Users,
     intro: "You cannot follow Jesus alone. Who will walk with you.",
+    scripture: { ref: "Hebrews 10:24-25" },
     practices: [
       { id: "c-member", label: "Committed membership in a local church" },
       { id: "c-table", label: "A regular discipleship table or small group" },
@@ -86,6 +93,7 @@ const CATEGORIES: Category[] = [
     title: "Generosity and Mission",
     icon: HandHeart,
     intro: "The life that turns outward.",
+    scripture: { ref: "2 Corinthians 9:7" },
     practices: [
       { id: "m-give", label: "Give a set portion, first, before other spending" },
       { id: "m-hospitality", label: "Open your home in hospitality on a rhythm" },
@@ -98,6 +106,7 @@ const CATEGORIES: Category[] = [
     title: "The Body",
     icon: HeartPulse,
     intro: "You are not a soul that happens to have a body. Honor the limits God gave.",
+    scripture: { ref: "1 Corinthians 6:19-20" },
     practices: [
       { id: "b-sleep", label: "A regular bedtime that honors your need for sleep" },
       { id: "b-move", label: "Move your body most days, walking or otherwise" },
@@ -241,7 +250,13 @@ export default function RuleOfLife() {
                 <cat.icon size={18} style={{ color: "var(--mustard-text)" }} />
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.6vw, 26px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)" }}>{cat.title}</h2>
               </div>
-              <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--ink-muted)", marginBottom: "var(--s-2)", maxWidth: "60ch" }}>{cat.intro}</p>
+              <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--ink-muted)", marginBottom: "8px", maxWidth: "60ch" }}>{cat.intro}</p>
+              <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", marginBottom: "var(--s-2)" }}>
+                Anchored in{" "}
+                <Link href={`/theology/passage?ref=${encodeURIComponent(cat.scripture.ref)}`} style={{ color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>
+                  {cat.scripture.ref}
+                </Link>
+              </p>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(340px, 100%), 1fr))", gap: "8px" }}>
                 {cat.practices.map((p) => {
                   const on = chosen.has(p.id);
