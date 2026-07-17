@@ -995,7 +995,7 @@ export default function FamilyDevotionBuilder() {
 
           {/* YOUR SERIES — the term in progress, first thing a returning family sees. */}
           {series && !building && (
-            <div style={{ marginBottom: "44px", background: "#FFFFFF", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "10px", padding: "24px 20px" }}>
+            <div style={{ marginBottom: "44px", background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "10px", padding: "24px 20px" }}>
               <div style={SECTION_LABEL}>Your series</div>
               <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 6px" }}>
                 {bandLabelOf(series.ageBand)} · {series.weeks.length} weeks · started {fmtDate(series.created)}
@@ -1054,7 +1054,7 @@ export default function FamilyDevotionBuilder() {
                           alignItems: "baseline",
                           gap: "2px 12px",
                           padding: "10px 14px",
-                          background: w.done ? "var(--bone)" : "#FFFFFF",
+                          background: w.done ? "var(--bone)" : "var(--card)",
                           border: "1px solid var(--border)",
                           borderLeft: isCurrent ? "3px solid var(--mustard)" : "1px solid var(--border)",
                           borderRadius: "6px",
@@ -1100,7 +1100,7 @@ export default function FamilyDevotionBuilder() {
 
           {building ? (
             /* SERIES BUILDER — one age band, themes in order, one per week. */
-            <div style={{ background: "#FFFFFF", border: "1px solid var(--border)", borderTop: "4px solid var(--mustard)", borderRadius: "10px", padding: "28px 20px" }}>
+            <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderTop: "4px solid var(--mustard)", borderRadius: "10px", padding: "28px 20px" }}>
               <div style={SECTION_LABEL}>Build a series</div>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", margin: "0 0 24px", maxWidth: "62ch" }}>
                 One age band for the whole term. Then add themes in the order your family will take them, one per week. Two weeks is the shortest term; four to twelve is the sweet spot, and a theme may repeat once.
@@ -1110,7 +1110,7 @@ export default function FamilyDevotionBuilder() {
                 <div style={SECTION_LABEL}>Who is at the table?</div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
                   {AGE_BANDS.map((b) => (
-                    <button key={b.id} type="button" onClick={() => setDraftBand(b.id)} style={pillStyle(draftBand === b.id)}>
+                    <button key={b.id} type="button" onClick={() => setDraftBand(b.id)} aria-pressed={draftBand === b.id} style={pillStyle(draftBand === b.id)}>
                       {b.label}
                     </button>
                   ))}
@@ -1140,7 +1140,7 @@ export default function FamilyDevotionBuilder() {
                           cursor: full ? "default" : "pointer",
                           opacity: full && draftBand ? 0.5 : 1,
                           border: `1px solid ${count > 0 ? "var(--mustard)" : "var(--border)"}`,
-                          background: count > 0 ? "var(--bone-warm)" : "#FFFFFF",
+                          background: count > 0 ? "var(--bone-warm)" : "var(--card)",
                           color: "var(--ink)",
                           textAlign: "center",
                           transition: "all 0.2s",
@@ -1207,6 +1207,7 @@ export default function FamilyDevotionBuilder() {
                   key={b.id}
                   type="button"
                   onClick={() => { setBand(b.id); setCopied(false); setCopyFailed(false); }}
+                  aria-pressed={band === b.id}
                   style={pillStyle(band === b.id)}
                 >
                   {b.label}
@@ -1225,6 +1226,7 @@ export default function FamilyDevotionBuilder() {
                   type="button"
                   disabled={!band}
                   onClick={() => { setTheme(t); setCopied(false); setCopyFailed(false); }}
+                  aria-pressed={theme === t}
                   style={{
                     fontFamily: "var(--U)",
                     fontSize: "14px",
@@ -1247,7 +1249,7 @@ export default function FamilyDevotionBuilder() {
 
           {/* OUTPUT */}
           {themeData && bandContent && theme ? (
-            <div ref={outputRef} style={{ background: "#FFFFFF", border: "1px solid var(--border)", borderTop: "4px solid var(--mustard)", borderRadius: "10px", padding: "40px 36px" }}>
+            <div ref={outputRef} style={{ background: "var(--card)", border: "1px solid var(--border)", borderTop: "4px solid var(--mustard)", borderRadius: "10px", padding: "40px 36px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "6px" }}>
                 {bandLabel} · About 15 minutes
               </div>
@@ -1323,6 +1325,7 @@ export default function FamilyDevotionBuilder() {
                 <button
                   type="button"
                   onClick={handleCopy}
+                  aria-live="polite"
                   style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--mustard)", border: "none", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--charcoal)", cursor: "pointer" }}
                 >
                   {copied ? <><Check size={14} /> Copied</> : <><Copy size={14} /> Copy Devotion</>}
@@ -1336,7 +1339,7 @@ export default function FamilyDevotionBuilder() {
                 </button>
               </div>
               {copyFailed && (
-                <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "12px 0 0" }}>
+                <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "12px 0 0" }}>
                   Copy failed — select and copy manually.
                 </p>
               )}

@@ -62,6 +62,7 @@ export default function GatedDownload({
     return (
       <button
         onClick={() => setOpen(true)}
+        aria-expanded={open}
         style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "11px 18px", border: "none", borderRadius: "2px", cursor: "pointer" }}
       >
         <Download size={15} /> {label}

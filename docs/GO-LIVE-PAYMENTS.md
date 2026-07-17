@@ -50,10 +50,20 @@
    re-run step 3 (test-mode price ids will not exist in live mode; the
    endpoint recreates them).
 
-7. **Membership (optional).** Create a recurring price in Stripe and store
-   its id in the `stripeMembershipPriceId` site setting. With the secret key
-   present, the membership page flips from waitlist to live checkout on its
-   own.
+7. **Membership (optional).** Create a recurring **monthly** price in Stripe
+   ($9/mo per the page copy) and paste its id into **Admin → Site Settings →
+   `stripeMembershipPriceId`**. With the secret key present, the membership
+   page flips from waitlist to live checkout on its own — no redeploy.
+
+   **To also offer the annual plan** (the page advertises "$89/year"): create a
+   second recurring **yearly** price in Stripe and paste its id into
+   **`stripeMembershipPriceIdAnnual`**. That, and only that, makes the
+   Monthly/Annual toggle appear (`stripe.membershipEnabled` returns
+   `annual: true`); leave it blank to sell monthly only. ⚠️ The annual checkout
+   path could not be exercised against live Stripe from the build environment —
+   do one real annual test purchase (test-mode card, step 6) before trusting
+   it. The price *amounts* live in Stripe; the page's "$9 / $89" copy is
+   display only, so keep the two in sync.
 
 ## How the pieces fit (for future reference)
 

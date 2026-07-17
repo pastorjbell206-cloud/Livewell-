@@ -127,7 +127,7 @@ export default function TheologyBiblical() {
       <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) 0" }}>
         <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "8px" }}>
           {tabs.map((t) => (
-            <button key={t.id} type="button" onClick={() => setTab(t.id)}
+            <button key={t.id} type="button" onClick={() => setTab(t.id)} aria-pressed={tab === t.id}
               style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, padding: "10px 16px", borderRadius: "999px", cursor: "pointer",
                 border: `1px solid ${tab === t.id ? "var(--mustard)" : "var(--border)"}`, background: tab === t.id ? "var(--bone-warm)" : "transparent", color: "var(--ink)" }}>
               {t.label}{t.count ? ` · ${t.count}` : ""}

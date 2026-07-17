@@ -244,6 +244,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             data-admin-burger
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
+            aria-expanded={mobileOpen}
             style={{ display: "flex", alignItems: "center", justifyContent: "center", width: 42, height: 42, border: "none", background: "none", cursor: "pointer", color: INK }}
           >
             <PanelLeft size={21} />

@@ -113,13 +113,13 @@ export function EmailResults({ toolName, resultsSummary }: EmailResultsProps) {
         <button type="button" onClick={() => window.print()} style={actionButton}>
           <Printer size={15} aria-hidden /> Print
         </button>
-        <button type="button" onClick={handleCopy} style={actionButton}>
+        <button type="button" onClick={handleCopy} aria-live="polite" style={actionButton}>
           <Copy size={15} aria-hidden /> {copied ? "Copied" : "Copy results"}
         </button>
       </div>
 
       {status === "sent" ? (
-        <div style={{ display: "flex", alignItems: "center", gap: "10px", padding: "8px 0 0" }}>
+        <div role="status" style={{ display: "flex", alignItems: "center", gap: "10px", padding: "8px 0 0" }}>
           <CheckCircle size={18} style={{ color: "var(--ok)", flexShrink: 0 }} />
           <p style={{ fontSize: "15px", fontFamily: "var(--U)", color: "var(--ok)", fontWeight: 500, margin: 0 }}>
             On file with us. Keep the printed or copied version for yourself.
@@ -154,7 +154,7 @@ export function EmailResults({ toolName, resultsSummary }: EmailResultsProps) {
                 fontFamily: "var(--U)",
                 border: "1px solid var(--border)",
                 borderRadius: "2px",
-                background: "#FFFFFF",
+                background: "var(--card)",
                 color: "var(--ink)",
                 outline: "none",
               }}
@@ -180,7 +180,7 @@ export function EmailResults({ toolName, resultsSummary }: EmailResultsProps) {
             </button>
           </form>
           {status === "error" && (
-            <p style={{ fontSize: "13px", fontFamily: "var(--U)", color: "var(--alert)", marginTop: "10px" }}>
+            <p role="alert" style={{ fontSize: "13px", fontFamily: "var(--U)", color: "var(--alert)", marginTop: "10px" }}>
               That didn't save. Print or copy your results above so you don't lose them.
             </p>
           )}

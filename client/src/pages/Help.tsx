@@ -13,6 +13,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { BookOpen, ClipboardCheck, Hand, Heart } from "lucide-react";
+import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -195,7 +196,7 @@ export default function Help() {
             {NEEDS.map((n) => {
               const isOpen = open === n.id;
               return (
-                <div key={n.id} style={{ background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: `2px solid var(--mustard)`, padding: "var(--s-3)" }}>
+                <div key={n.id} style={{ background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: `2px solid var(--mustard)`, padding: "var(--s-3)" }}>
                   <button
                     onClick={() => setOpen(isOpen ? null : n.id)}
                     aria-expanded={isOpen}
@@ -209,7 +210,7 @@ export default function Help() {
                   </button>
                   {isOpen && (
                     <div style={{ marginTop: "var(--s-3)", borderTop: "1px solid rgba(20,17,12,0.08)", paddingTop: "var(--s-3)", display: "grid", gap: "10px" }}>
-                      {n.helps.map((h) => {
+                      {n.helps.filter((h) => SKEPTIC_TRACK_LIVE || h.href !== "/skeptic-track").map((h) => {
                         const meta = KIND_META[h.kind];
                         const Icon = meta.Icon;
                         return (

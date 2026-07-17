@@ -66,11 +66,11 @@ const SHARED_GROUND = [
 ];
 
 const RELATED_ARTICLES = [
-  { title: "The Age of Revivals", slug: "the-age-of-revivals" },
-  { title: "The Evangelical Movement", slug: "the-evangelical-movement" },
-  { title: "The Mainline Protestant Collapse", slug: "the-mainline-protestant-collapse" },
-  { title: "The Black Church Tradition", slug: "the-black-church-tradition" },
-  { title: "Christianity in a Post-Christian Age", slug: "christianity-in-a-post-christian-age" },
+  { title: "The Age of Revivals", href: "/theology/history/the-awakenings" },
+  { title: "The Evangelical Movement", href: "/theology/history/the-awakenings" },
+  { title: "The Mainline Protestant Collapse", href: "/writing/the-numbers-behind-the-decline" },
+  { title: "The Black Church Tradition", href: "/writing/black-church-prophetic-justice" },
+  { title: "Christianity in a Post-Christian Age", href: "/writing/the-church-after-cultural-power" },
 ];
 
 const FAQ_ITEMS = [
@@ -117,7 +117,7 @@ const webPageSchema = {
 const S = {
   hero: { background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px", textAlign: "center" as const },
   eyebrow: { fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase" as const, color: "var(--mustard)", marginBottom: "24px" },
-  h1: { fontFamily: "var(--F)", fontSize: "clamp(32px,5vw,60px)", fontWeight: 400, color: "white", maxWidth: "780px", margin: "0 auto", lineHeight: 1.15, letterSpacing: "-0.02em" },
+  h1: { fontFamily: "var(--F)", fontSize: "clamp(32px,5vw,60px)", fontWeight: 400, color: "var(--charcoal-fg)", maxWidth: "780px", margin: "0 auto", lineHeight: 1.15, letterSpacing: "-0.02em" },
   heroSub: { fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.6)", marginTop: "32px", maxWidth: "600px", marginLeft: "auto", marginRight: "auto", lineHeight: 1.7 },
   sectionBone: { background: "var(--bone)", padding: "80px 24px" },
   sectionWarm: { background: "var(--bone-warm)", padding: "80px 24px" },
@@ -125,7 +125,7 @@ const S = {
   wrap: { maxWidth: "880px", margin: "0 auto" },
   wrapNarrow: { maxWidth: "720px", margin: "0 auto" },
   h2: { fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" },
-  h2White: { fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "white", marginBottom: "16px" },
+  h2White: { fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" },
   bodyText: { fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "64ch" },
   bodyTextWhite: { fontFamily: "var(--U)", fontSize: "14px", color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: "32px" },
 };
@@ -278,7 +278,7 @@ export default function BaptistVsMethodist() {
           <h2 style={S.h2}>Go deeper</h2>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {RELATED_ARTICLES.map((a) => (
-              <Link key={a.slug} href={`/writing/${a.slug}`} style={{ textDecoration: "none" }}>
+              <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
                 <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
                   <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>

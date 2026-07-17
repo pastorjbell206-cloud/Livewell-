@@ -114,6 +114,7 @@ export default function AdminAbout() {
               Save About Page
             </button>
             <span
+              role="status"
               className="flex items-center gap-2 px-3 py-1.5 rounded font-ui text-sm font-medium"
               style={{ backgroundColor: indicator.bg, color: indicator.color }}
             >

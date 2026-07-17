@@ -2266,7 +2266,7 @@ export default function DeepBibleCompanion() {
 
             <div style={{ display: "flex", gap: "0", borderBottom: "1px solid #e5e0d5", marginBottom: "2rem", overflowX: "auto" }}>
               {TABS.map((tab, i) => (
-                <button key={tab} onClick={() => setActiveTab(i)} style={{
+                <button key={tab} onClick={() => setActiveTab(i)} aria-current={activeTab === i ? "true" : undefined} style={{
                   padding: "0.75rem 1rem", background: "none", border: "none", borderBottom: activeTab === i ? "2px solid var(--mustard, #D4A017)" : "2px solid transparent",
                   color: activeTab === i ? "var(--ink, #14110C)" : "#999", fontSize: "0.8rem", fontFamily: "var(--U, Inter, sans-serif)", fontWeight: 500, cursor: "pointer", whiteSpace: "nowrap",
                 }}>{tab}</button>

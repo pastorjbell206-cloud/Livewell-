@@ -497,7 +497,7 @@ export default function StartHereDiagnostic() {
                   fontWeight: 300,
                   lineHeight: 1.15,
                   letterSpacing: "-0.02em",
-                  color: "white",
+                  color: "var(--charcoal-fg)",
                   marginBottom: step === 0 ? "14px" : "48px",
                 }}
               >
@@ -526,6 +526,7 @@ export default function StartHereDiagnostic() {
                     <button
                       key={opt.value}
                       onClick={() => handleSelect(opt.value)}
+                      aria-pressed={isSelected}
                       style={{
                         width: "100%",
                         textAlign: "left",
@@ -623,7 +624,7 @@ export default function StartHereDiagnostic() {
                     fontWeight: 300,
                     lineHeight: 1.1,
                     letterSpacing: "-0.02em",
-                    color: "white",
+                    color: "var(--charcoal-fg)",
                     marginBottom: "16px",
                   }}
                 >

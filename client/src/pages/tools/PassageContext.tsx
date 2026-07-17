@@ -468,7 +468,7 @@ export default function PassageContext() {
               {/* 7c. CURATED PROMPTS (if noted) — now you do the work */}
               {note?.prompts && note.prompts.length > 0 && (
                 <div style={{ ...cardStyle, background: "var(--bone-warm)", borderLeft: "3px solid var(--mustard)", padding: "var(--s-4)" }}>
-                  <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>Now you do the work</div>
+                  <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>Take it from here</div>
                   <h3 style={{ fontFamily: "var(--F)", fontSize: "21px", fontWeight: 500, color: "var(--ink)", marginBottom: "12px" }}>Questions to sit with</h3>
                   <ol style={{ margin: 0, paddingLeft: "22px", fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.9, color: "var(--ink)" }}>
                     {note.prompts.map((p, i) => <li key={i}>{p}</li>)}

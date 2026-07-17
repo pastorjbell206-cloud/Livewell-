@@ -168,7 +168,7 @@ export default function ProfileSurvey() {
                     <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
                       {data.scale.map((label, si) => {
                         const val = si + 1; const on = answers[q.id] === val;
-                        return <button key={val} onClick={() => setAnswers((a) => ({ ...a, [q.id]: val }))} style={{ flex: "1 1 0", minWidth: "84px", fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px", lineHeight: 1.3, padding: "7px 5px", borderRadius: "var(--radius-sm)", cursor: "pointer", border: "1px solid " + (on ? "var(--mustard)" : "var(--border)"), background: on ? "var(--mustard)" : "var(--card)", color: on ? "var(--charcoal)" : "var(--ink-muted)" }}>{label}</button>;
+                        return <button key={val} onClick={() => setAnswers((a) => ({ ...a, [q.id]: val }))} aria-pressed={on} style={{ flex: "1 1 0", minWidth: "84px", fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px", lineHeight: 1.3, padding: "7px 5px", borderRadius: "var(--radius-sm)", cursor: "pointer", border: "1px solid " + (on ? "var(--mustard)" : "var(--border)"), background: on ? "var(--mustard)" : "var(--card)", color: on ? "var(--charcoal)" : "var(--ink-muted)" }}>{label}</button>;
                       })}
                     </div>
                   </div>
@@ -183,7 +183,7 @@ export default function ProfileSurvey() {
             {persistFailed && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", marginTop: "8px" }}>Couldn't save to this browser — your work here will not survive a reload.</p>}
 
             {submitted && (
-              <div style={{ marginTop: "var(--s-5)" }}>
+              <div role="status" style={{ marginTop: "var(--s-5)" }}>
                 {data.resultMode === "ranked" ? (
                   <RankedResult ranked={ranked} topN={data.rankedTopN ?? 5} closing={data.closing} />
                 ) : (

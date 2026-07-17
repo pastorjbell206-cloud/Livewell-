@@ -64,28 +64,30 @@ green on the final tree.
 - 4 a11y P1-class fixes + 6 flagship-surface P2 attributes (this commit)
 - Recovery-runbook takedown amendment (this commit)
 
-## Recorded P2 punch list (not fixed — small, non-blocking)
+## P2 punch list — status after the follow-up pass
 
-- **A11y attributes** on older tools (the a11y review's full list): Likert
-  buttons missing `aria-pressed` (6 assessment tools), category progress dots
-  missing `aria-current` (5 tools), filter chips missing `aria-pressed`
-  (5 tools), "Copied" status swaps without live regions (~8 sites), FAQ
-  accordion glyphs not `aria-hidden` (2 landing pages), `ScriptureMemory`
-  textarea labeled by placeholder only. Reference implementations to copy:
-  `CommandPalette`, `WisdomFinder`, `FamilyDevotionBuilder`.
+Closed in the post-gate P2 pass:
+- ☑ **A11y attribute batch** on the older tools (Likert `aria-pressed` across
+  6 assessments, category-dot `aria-current` across 5, filter-chip
+  `aria-pressed` across 5, "Copied" live regions, FAQ glyphs `aria-hidden`,
+  `ScriptureMemory` textarea label, `LandingSignup`/`LifeIndex` status roles).
+  Attribute-only; zero behavior change.
+- ☑ **Dead component removed**: `components/ShoppingCart.tsx` (verified
+  unreferenced — only the lucide icon of that name is used anywhere).
+- ☑ **Sitemap honors TAKEN_DOWN**: `generate-sitemap.mjs` now parses the
+  blocklist declaration fail-soft (verified against empty + populated forms)
+  and excludes those slugs; a shape-guard comment sits on the declaration.
+- ☑ **Parity-net scope note** added to `api-parity.test.ts` (REST endpoints
+  are outside its tRPC-walking net, some deliberately prod-only).
+
+Still open (browser- or owner-dependent):
 - **MinimalNav search overlay**: works (Escape, labels) but lacks
   `role="dialog"` + focus trap — browser-verify before changing the global nav.
-- **Dead component**: `components/ShoppingCart.tsx` unreferenced; remove or
-  wire deliberately.
-- **Sitemap vs TAKEN_DOWN**: taken-down static slugs stay listed (URL 404s);
-  extract the blocklist to a shared file both consume.
-- **Error-log growth**: `client_errors` has no retention purge; in-memory rate
-  limit resets per serverless instance.
-- **REST endpoints outside the parity net**: `/api/track`, `/api/admin/errors`,
-  `/api/checkout` are prod-only by design and invisible to
-  `api-parity.test.ts` (it walks tRPC call sites only) — add a comment there.
-- Admin panels (`AdminCommentsPanel`, `AdminTestimonialsPanel`) inline raw hex
-  instead of `admin/primitives` palette (sanctioned `.admin-scope`, low).
+- In-memory rate limit resets per serverless instance (documented tradeoff).
+
+Closed since: ☑ `client_errors` retention — a bounded 30-day purge now
+piggybacks on ~2% of inserts (`api/index.ts`, uses `idx_ce_created`).
+☑ Admin panels' raw hex — tokenized in the estate sweep (#439).
 
 ## Unverified (needs a live browser — not claimed)
 

@@ -95,7 +95,7 @@ export default function BudgetCalculator() {
             const dollars = income * c.pct / 100;
             const inRange = c.pct >= c.lo && c.pct <= c.hi;
             return (
-              <div key={c.id} style={{ background: "var(--card)", border: "1px solid var(--border)", borderLeft: `3px solid ${inRange ? "var(--mustard)" : "#b4541f"}`, borderRadius: "var(--radius-sm)", padding: "var(--s-3) var(--s-4)", marginBottom: "10px" }}>
+              <div key={c.id} style={{ background: "var(--card)", border: "1px solid var(--border)", borderLeft: `3px solid ${inRange ? "var(--mustard)" : "var(--strain)"}`, borderRadius: "var(--radius-sm)", padding: "var(--s-3) var(--s-4)", marginBottom: "10px" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "10px", flexWrap: "wrap" }}>
                   <strong style={{ fontFamily: "var(--F)", fontSize: "18px", color: "var(--ink)" }}>{c.name}</strong>
                   <span style={{ fontFamily: "var(--F)", fontSize: "20px", color: "var(--mustard-text)" }}>{money(dollars)}</span>
@@ -105,7 +105,7 @@ export default function BudgetCalculator() {
                   <input type="number" min={0} max={70} value={c.pct} onChange={(e) => setPct(c.id, clampPct(e.target.value))} aria-label={`${c.name} percent`} style={{ width: "60px", fontFamily: "var(--U)", fontSize: "14px", padding: "6px 8px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--ink)" }} />
                   <span style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)" }}>%</span>
                 </div>
-                <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: inRange ? "var(--ink-muted)" : "#b4541f", marginBottom: "4px" }}>Healthy range {c.lo} to {c.hi}%{inRange ? "" : c.pct < c.lo ? " · below the range" : " · above the range"}</p>
+                <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: inRange ? "var(--ink-muted)" : "var(--strain)", marginBottom: "4px" }}>Healthy range {c.lo} to {c.hi}%{inRange ? "" : c.pct < c.lo ? " · below the range" : " · above the range"}</p>
                 <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", lineHeight: 1.6 }}>{c.note}</p>
               </div>
             );
@@ -113,13 +113,13 @@ export default function BudgetCalculator() {
 
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "var(--s-3) var(--s-4)", background: totalPct === 100 ? "var(--bone-warm)" : "rgba(180,84,31,0.1)", borderRadius: "var(--radius-sm)", marginTop: "var(--s-3)" }}>
             <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "15px", color: "var(--ink)" }}>Allocated</span>
-            <span style={{ fontFamily: "var(--F)", fontSize: "22px", color: totalPct === 100 ? "var(--mustard-text)" : "#b4541f" }}>{totalPct}%{totalPct !== 100 ? ` (${totalPct < 100 ? "+" : ""}${100 - totalPct} to place)` : ""}</span>
+            <span style={{ fontFamily: "var(--F)", fontSize: "22px", color: totalPct === 100 ? "var(--mustard-text)" : "var(--strain)" }}>{totalPct}%{totalPct !== 100 ? ` (${totalPct < 100 ? "+" : ""}${100 - totalPct} to place)` : ""}</span>
           </div>
 
           <div style={{ display: "flex", gap: "12px", alignItems: "center", flexWrap: "wrap", marginTop: "var(--s-3)" }}>
             <button onClick={copy} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "10px 18px", background: "var(--mustard)", color: "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>Copy the budget</button>
-            {copyStatus === "copied" && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Copied</span>}
-            {copyStatus === "failed" && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Copy failed — select and copy manually.</span>}
+            {copyStatus === "copied" && <span role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Copied</span>}
+            {copyStatus === "failed" && <span role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>Copy failed — select and copy manually.</span>}
           </div>
           {persistFailed && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", marginTop: "8px" }}>Couldn't save to this browser — your work here will not survive a reload.</p>}
         </div>

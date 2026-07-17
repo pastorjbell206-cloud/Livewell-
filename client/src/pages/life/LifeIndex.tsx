@@ -80,7 +80,7 @@ export default function LifeIndex() {
           {failed ? (
             <LoadFailed what="The life domains" onRetry={() => setNonce((n) => n + 1)} backHref="/" backLabel="Back home" />
           ) : items === null ? (
-            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the domains…</p>
+            <p role="status" style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the domains…</p>
           ) : items.length === 0 ? (
             <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>The domains are being written. Check back soon.</p>
           ) : (

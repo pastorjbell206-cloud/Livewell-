@@ -81,11 +81,18 @@ const norm = (s: string) => s.toLowerCase();
 
 export default function BookLibrary() {
   const [books, setBooks] = useState<LibraryBook[]>([]);
+  // Distinguishes "still loading" from "loaded and empty". The library ships
+  // with dozens of books, so an empty result after load is a manifest load
+  // failure, never "nothing written yet".
+  const [loaded, setLoaded] = useState(false);
   const [query, setQuery] = useState("");
   const [pillar, setPillar] = useState<string | null>(null);
 
   useEffect(() => {
-    fetchLibraryBooks().then(setBooks);
+    fetchLibraryBooks().then((b) => {
+      setBooks(b);
+      setLoaded(true);
+    });
   }, []);
 
   // Books opened past chapter one, read from the same storage key the reader
@@ -154,8 +161,10 @@ export default function BookLibrary() {
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={wrap}>
-          {books.length === 0 ? (
-            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>The first books are being written. Check back soon.</p>
+          {!loaded ? (
+            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the library…</p>
+          ) : books.length === 0 ? (
+            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>The library could not load right now. Please refresh the page.</p>
           ) : (
             <>
               {/* Find a book: free-text search + pillar chips. */}

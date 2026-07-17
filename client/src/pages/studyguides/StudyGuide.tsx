@@ -51,7 +51,7 @@ interface Guide {
 const ALL_TABS = ["Leader", "Participant", "Devotional", "Facilitator", "Reference", "Promo"] as const;
 type Tab = typeof ALL_TABS[number];
 
-const card = { background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-5) var(--s-4)", marginBottom: "var(--s-4)", boxShadow: "0 1px 3px rgba(20,17,12,0.05)" } as const;
+const card = { background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-5) var(--s-4)", marginBottom: "var(--s-4)", boxShadow: "0 1px 3px rgba(20,17,12,0.05)" } as const;
 const h3 = { fontFamily: "var(--F)", fontSize: "clamp(23px, 3vw, 29px)", fontWeight: 400, letterSpacing: "-0.015em", lineHeight: 1.2, color: "var(--ink)", marginBottom: "14px" } as const;
 const lbl = { fontFamily: "var(--U)", fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" as const, color: "var(--mustard-text)", marginBottom: "10px" };
 const body = { fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.8, color: "var(--ink)" } as const;

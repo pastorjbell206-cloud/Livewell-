@@ -119,7 +119,7 @@ export default function DecisionLog() {
                 </div>
                 {e.note && <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--ink)", lineHeight: 1.6, margin: "8px 0" }}>{e.note}</p>}
                 <div style={{ display: "flex", gap: "6px", flexWrap: "wrap", marginTop: "6px" }}>
-                  {STATUS.map((s) => <button key={s.id} onClick={() => setStatus(e.id, s.id)} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "11px", padding: "4px 10px", borderRadius: "999px", cursor: "pointer", border: "1px solid " + (e.status === s.id ? "var(--mustard)" : "var(--border)"), background: e.status === s.id ? "var(--mustard)" : "var(--bone)", color: e.status === s.id ? "var(--charcoal)" : "var(--ink-muted)" }}>{s.label}</button>)}
+                  {STATUS.map((s) => <button key={s.id} onClick={() => setStatus(e.id, s.id)} aria-pressed={e.status === s.id} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "11px", padding: "4px 10px", borderRadius: "999px", cursor: "pointer", border: "1px solid " + (e.status === s.id ? "var(--mustard)" : "var(--border)"), background: e.status === s.id ? "var(--mustard)" : "var(--bone)", color: e.status === s.id ? "var(--charcoal)" : "var(--ink-muted)" }}>{s.label}</button>)}
                 </div>
               </div>
             ))}
@@ -131,5 +131,5 @@ export default function DecisionLog() {
 }
 
 function Chip({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
-  return <button onClick={onClick} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", padding: "7px 14px", borderRadius: "999px", cursor: "pointer", border: "1px solid " + (active ? "var(--mustard)" : "var(--border)"), background: active ? "var(--mustard)" : "var(--card)", color: active ? "var(--charcoal)" : "var(--ink-muted)" }}>{children}</button>;
+  return <button onClick={onClick} aria-pressed={active} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", padding: "7px 14px", borderRadius: "999px", cursor: "pointer", border: "1px solid " + (active ? "var(--mustard)" : "var(--border)"), background: active ? "var(--mustard)" : "var(--card)", color: active ? "var(--charcoal)" : "var(--ink-muted)" }}>{children}</button>;
 }

@@ -472,6 +472,7 @@ export default function AdminPosts() {
               <button
                 type="button"
                 onClick={() => setDupesExpanded((v) => !v)}
+                aria-expanded={dupesExpanded}
                 className="font-ui text-xs font-semibold px-3 py-2 rounded-sm"
                 style={{
                   backgroundColor: C.cream,
@@ -634,7 +635,7 @@ export default function AdminPosts() {
 
         {/* Filter chips */}
         <div className="flex flex-wrap items-center gap-2 mb-3">
-          <button type="button" onClick={() => setCategory(null)} className="font-ui text-sm" style={chipStyle(category === null)}>
+          <button type="button" onClick={() => setCategory(null)} aria-pressed={category === null} className="font-ui text-sm" style={chipStyle(category === null)}>
             All categories
           </button>
           {CATEGORIES.map((cat) => (
@@ -642,6 +643,7 @@ export default function AdminPosts() {
               key={cat}
               type="button"
               onClick={() => setCategory((c) => (c === cat ? null : cat))}
+              aria-pressed={category === cat}
               className="font-ui text-sm"
               style={chipStyle(category === cat)}
             >
@@ -655,6 +657,7 @@ export default function AdminPosts() {
               key={s}
               type="button"
               onClick={() => setStatus(s)}
+              aria-pressed={status === s}
               className="font-ui text-sm capitalize"
               style={chipStyle(status === s)}
             >

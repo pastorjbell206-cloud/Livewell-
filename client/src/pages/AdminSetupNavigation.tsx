@@ -131,7 +131,7 @@ export default function AdminSetupNavigation() {
         </button>
 
         {running && progress && (
-          <div className="mt-8 font-body" style={{ color: "var(--ink-muted)" }}>
+          <div role="status" className="mt-8 font-body" style={{ color: "var(--ink-muted)" }}>
             <div className="flex items-center gap-2">
               <Loader2 size={16} className="animate-spin" />
               Tagging articles — {progress.processed} of {progress.total}…
@@ -151,7 +151,7 @@ export default function AdminSetupNavigation() {
         )}
 
         {result && (
-          <div className="mt-8 rounded p-6" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}>
+          <div role="status" className="mt-8 rounded p-6" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}>
             <div className="flex items-center gap-2 mb-4">
               {result.stragglers === 0 ? (
                 <CheckCircle2 size={20} style={{ color: "var(--adm-ok)" }} />

@@ -217,6 +217,7 @@ export default function Explore() {
 
           {/* Result count */}
           <p
+            role="status"
             style={{
               fontFamily: "var(--U)",
               fontSize: "12px",

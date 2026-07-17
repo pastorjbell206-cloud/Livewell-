@@ -108,7 +108,7 @@ export default function FormationTopic() {
               {part.views && part.views.length > 0 && (
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "var(--s-3)", marginTop: "var(--s-3)" }}>
                   {part.views.map((v) => (
-                    <div key={v.name} style={{ background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)" }}>
+                    <div key={v.name} style={{ background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)" }}>
                       <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", marginBottom: "10px" }}>{v.name}</h3>
                       {toParagraphs(v.body).map((p, j) => (
                         <p key={j} style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.72, color: "var(--ink)", marginBottom: "12px" }}>{p}</p>
@@ -134,7 +134,7 @@ export default function FormationTopic() {
                   <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>The secular shelf, tested</div>
                   <div style={{ display: "grid", gap: "var(--s-2)" }}>
                     {part.secular.map((s) => (
-                      <div key={s.source} style={{ background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", padding: "var(--s-3)" }}>
+                      <div key={s.source} style={{ background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", padding: "var(--s-3)" }}>
                         <div style={{ fontFamily: "var(--F)", fontSize: "18px", color: "var(--ink)", marginBottom: "8px" }}><span style={{ fontStyle: "italic" }}>{s.source}</span>, {s.author}</div>
                         <p style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.65, color: "var(--ink)", marginBottom: "8px" }}>
                           <strong style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--ink-muted)", display: "block", marginBottom: "4px" }}>What it gets right</strong>
@@ -154,7 +154,7 @@ export default function FormationTopic() {
               {part.stages && part.stages.length > 0 && (
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: "var(--s-3)", marginTop: "var(--s-3)" }}>
                   {part.stages.map((st) => (
-                    <div key={st.stage} style={{ background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)" }}>
+                    <div key={st.stage} style={{ background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)" }}>
                       <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-muted)", marginBottom: "10px" }}>{st.stage}</div>
                       {st.steps.map((s, j) => (
                         <p key={j} style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.65, color: "var(--ink)", marginBottom: "10px", paddingLeft: "14px", borderLeft: "2px solid rgba(20,17,12,0.12)" }}>{s}</p>

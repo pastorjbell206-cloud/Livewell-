@@ -5,26 +5,26 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { LandingSignup } from "@/components/LandingSignup";
 
 const TIER_1_ARTICLES = [
-  { title: "The Rise and Fall of Christendom", slug: "the-rise-and-fall-of-christendom" },
-  { title: "Constantine's Bargain", slug: "constantines-bargain" },
-  { title: "When the Church Married Empire", slug: "when-the-church-married-empire" },
-  { title: "The Great Schism", slug: "the-great-schism" },
-  { title: "The Reformation and Its Consequences", slug: "the-reformation-and-its-consequences" },
-  { title: "The Enlightenment and the Crisis of Authority", slug: "the-enlightenment-and-the-crisis-of-authority" },
-  { title: "The Age of Revivals", slug: "the-age-of-revivals" },
-  { title: "The Social Gospel and Its Critics", slug: "the-social-gospel-and-its-critics" },
-  { title: "The Fundamentalist-Modernist Controversy", slug: "the-fundamentalist-modernist-controversy" },
-  { title: "Christianity in a Post-Christian Age", slug: "christianity-in-a-post-christian-age" },
+  { title: "The Rise and Fall of Christendom", href: "/writing/christendom-is-ending" },
+  { title: "Constantine's Bargain", href: "/writing/constantines-bargain" },
+  { title: "When the Church Married Empire", href: "/theology/history/the-constantinian-turn" },
+  { title: "The Great Schism", href: "/theology/history/the-east-west-schism" },
+  { title: "The Reformation and Its Consequences", href: "/theology/history/the-reformation" },
+  { title: "The Enlightenment and the Crisis of Authority", href: "/writing/authority-we-traded-for-authenticity" },
+  { title: "The Age of Revivals", href: "/theology/history/the-awakenings" },
+  { title: "The Social Gospel and Its Critics", href: "/writing/when-justice-becomes-a-gospel" },
+  { title: "The Fundamentalist-Modernist Controversy", href: "/theology/history" },
+  { title: "Christianity in a Post-Christian Age", href: "/writing/the-church-after-cultural-power" },
 ];
 
 const TIER_2_ARTICLES = [
-  { title: "The Catholic Intellectual Tradition", slug: "the-catholic-intellectual-tradition" },
-  { title: "The Orthodox Way", slug: "the-orthodox-way" },
-  { title: "The Mainline Protestant Collapse", slug: "the-mainline-protestant-collapse" },
-  { title: "The Evangelical Movement", slug: "the-evangelical-movement" },
-  { title: "The Pentecostal Explosion", slug: "the-pentecostal-explosion" },
-  { title: "The Black Church Tradition", slug: "the-black-church-tradition" },
-  { title: "Christianity in the Global South", slug: "christianity-in-the-global-south" },
+  { title: "The Catholic Intellectual Tradition", href: "/theology/history/the-medieval-west" },
+  { title: "The Orthodox Way", href: "/theology/history/the-church-that-outlived-rome" },
+  { title: "The Mainline Protestant Collapse", href: "/writing/the-numbers-behind-the-decline" },
+  { title: "The Evangelical Movement", href: "/theology/history/the-awakenings" },
+  { title: "The Pentecostal Explosion", href: "/theology/history/the-global-church" },
+  { title: "The Black Church Tradition", href: "/writing/black-church-prophetic-justice" },
+  { title: "Christianity in the Global South", href: "/theology/history/the-global-church" },
 ];
 
 const TIMELINE_EVENTS = [
@@ -107,7 +107,7 @@ export default function ChurchHistory() {
       {/* Hero */}
       <section style={{ background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px", textAlign: "center" }}>
         <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>CHURCH HISTORY</p>
-        <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px,5vw,60px)", fontWeight: 400, color: "white", maxWidth: "780px", margin: "0 auto", lineHeight: 1.15, letterSpacing: "-0.02em" }}>
+        <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px,5vw,60px)", fontWeight: 400, color: "var(--charcoal-fg)", maxWidth: "780px", margin: "0 auto", lineHeight: 1.15, letterSpacing: "-0.02em" }}>
           You cannot understand where Christianity is going until you understand where it has been.
         </h1>
         <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.6)", marginTop: "32px", maxWidth: "560px", marginLeft: "auto", marginRight: "auto", lineHeight: 1.7 }}>
@@ -142,7 +142,7 @@ export default function ChurchHistory() {
           <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px" }}>Start here. These ten essays trace the full arc of Christianity from its origin to the present crisis. Read in order or follow your questions.</p>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {TIER_1_ARTICLES.map((a, i) => (
-              <Link key={a.slug} href={`/writing/${a.slug}`} style={{ textDecoration: "none" }}>
+              <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
                 <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <div style={{ display: "flex", alignItems: "baseline", gap: "12px" }}>
                     <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted, #5A5448)", minWidth: "20px" }}>{i + 1}</span>
@@ -164,7 +164,7 @@ export default function ChurchHistory() {
           <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted, #5A5448)", lineHeight: 1.7, marginBottom: "32px" }}>Christianity is not one thing. It is many traditions, each carrying real wisdom and real failures. These essays take each one seriously on its own terms.</p>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {TIER_2_ARTICLES.map((a) => (
-              <Link key={a.slug} href={`/writing/${a.slug}`} style={{ textDecoration: "none" }}>
+              <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
                 <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
                   <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
@@ -205,7 +205,7 @@ export default function ChurchHistory() {
       {/* Email Signup */}
       <section style={{ background: "var(--charcoal)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "white", marginBottom: "16px" }}>History that reads like theology</h2>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" }}>History that reads like theology</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "rgba(255,255,255,0.6)", marginBottom: "32px", lineHeight: 1.7 }}>Weekly essays on the full arc of Christianity. Where it came from. What went wrong. What still holds.</p>
           <LandingSignup source="landing-church-history" />
         </div>
@@ -220,7 +220,7 @@ export default function ChurchHistory() {
             Church history is the foundation. The full series covers sixty essays across seven tiers -- from the collapse of Christendom to the questions that will define the next century of faith.
           </p>
           <Link href="/post-christian" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--charcoal)", color: "white", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Explore the Full Series</button>
+            <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Explore the Full Series</button>
           </Link>
         </div>
       </section>

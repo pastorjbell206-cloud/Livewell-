@@ -156,7 +156,7 @@ export default function Resources() {
                   textDecoration: "none",
                   padding: lib.flagship ? "var(--s-4)" : "0",
                   overflow: "hidden",
-                  background: lib.flagship ? "var(--charcoal)" : "#FFFFFF",
+                  background: lib.flagship ? "var(--charcoal)" : "var(--card)",
                   border: "1px solid rgba(20,17,12,0.08)",
                   borderTop: lib.flagship ? "2px solid var(--mustard)" : undefined,
                   gridColumn: lib.flagship ? "1 / -1" : undefined,
@@ -192,7 +192,7 @@ export default function Resources() {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Search downloads"
                 aria-label="Search downloads"
-                style={{ width: "100%", boxSizing: "border-box", padding: "10px 12px 10px 36px", fontFamily: "var(--U)", fontSize: "14px", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.15)", borderRadius: "2px", color: "var(--ink)", outline: "none" }}
+                style={{ width: "100%", boxSizing: "border-box", padding: "10px 12px 10px 36px", fontFamily: "var(--U)", fontSize: "14px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.15)", borderRadius: "2px", color: "var(--ink)", outline: "none" }}
               />
             </div>
             {categories.length > 1 && (
@@ -201,6 +201,7 @@ export default function Resources() {
                   <button
                     key={cat}
                     onClick={() => setSelectedCategory(cat)}
+                    aria-pressed={selectedCategory === cat}
                     style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, padding: "7px 12px", borderRadius: "2px", cursor: "pointer", border: "1px solid rgba(20,17,12,0.18)", background: selectedCategory === cat ? "var(--charcoal)" : "transparent", color: selectedCategory === cat ? "var(--bone)" : "var(--ink)" }}
                   >
                     {cat === "all" ? "All" : cat}
@@ -214,6 +215,7 @@ export default function Resources() {
                   <button
                     key={f}
                     onClick={() => toggleFormat(f)}
+                    aria-pressed={selectedFormats.includes(f)}
                     style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, padding: "7px 12px", borderRadius: "2px", cursor: "pointer", border: "1px dashed rgba(20,17,12,0.25)", background: selectedFormats.includes(f) ? "var(--charcoal)" : "transparent", color: selectedFormats.includes(f) ? "var(--bone)" : "var(--ink-muted)" }}
                   >
                     {FORMAT_LABELS[f] || f.toUpperCase()}
@@ -242,7 +244,7 @@ export default function Resources() {
           ) : (
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "var(--s-3)" }}>
               {filteredResources.map((r) => (
-                <div key={r.id} style={{ background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", overflow: "hidden", display: "flex", flexDirection: "column" }}>
+                <div key={r.id} style={{ background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", overflow: "hidden", display: "flex", flexDirection: "column" }}>
                   <div style={{ aspectRatio: "3 / 2", overflow: "hidden", borderBottom: "1px solid rgba(20,17,12,0.06)" }}>
                     <GeneratedCover title={r.title} {...coverThemeFor(`${r.title} ${r.category ?? ""}`)} style={{ width: "100%", height: "100%" }} />
                   </div>

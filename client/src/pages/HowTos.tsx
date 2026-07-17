@@ -84,7 +84,7 @@ export default function HowTos() {
               const on = t === active;
               const label = t === "all" ? "All" : (TOPIC_LABEL[t] || t);
               return (
-                <button key={t} onClick={() => setActive(t)} style={{ cursor: "pointer", padding: "8px 14px", background: on ? "var(--mustard)" : "#FFFFFF", color: on ? "var(--charcoal)" : "var(--ink)", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13.5px" }}>
+                <button key={t} onClick={() => setActive(t)} aria-pressed={on} style={{ cursor: "pointer", padding: "8px 14px", background: on ? "var(--mustard)" : "var(--card)", color: on ? "var(--charcoal)" : "var(--ink)", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13.5px" }}>
                   {label}
                 </button>
               );
@@ -96,7 +96,7 @@ export default function HowTos() {
           ) : (
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(320px, 100%), 1fr))", gap: "var(--s-3)" }}>
               {shown.map((e) => (
-                <Link key={e.slug} href={`/how-tos/${e.slug}`} style={{ display: "block", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
+                <Link key={e.slug} href={`/how-tos/${e.slug}`} style={{ display: "block", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
                   <div style={{ fontFamily: "var(--U)", fontSize: "11.5px", fontWeight: 600, letterSpacing: "0.07em", color: "var(--mustard-text)", marginBottom: "8px" }}>
                     {(TOPIC_LABEL[e.topic] || e.topic).toUpperCase()} · {e.readTime}
                   </div>

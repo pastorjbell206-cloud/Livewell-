@@ -6,6 +6,13 @@ import { useFavorites } from "@/hooks/useFavorites";
 
 export const TOOLS = [
   {
+    title: "Test the Case",
+    description: "The case for the resurrection, worked one move at a time. At every step you can push back with the objection you actually hold and get the honest answer, including what it does not prove. Argued with, not preached at. No altar call.",
+    href: "/tools/test-the-case",
+    icon: Shield,
+    color: "var(--mustard)",
+  },
+  {
     title: "Which Lens Has You?",
     description: "Thirteen honest choices. Five lenses that do a reader's thinking before the reader does — the flag, the cause, the highlighter, the rearview, the marketplace. It ends not in a score but in the pillar built to dismantle the lens it found.",
     href: "/tools/which-lens",
@@ -286,7 +293,7 @@ export default function ToolsHub() {
                   style={{
                     display: "block",
                     padding: "40px 32px",
-                    background: "white",
+                    background: "var(--card)",
                     borderRadius: "8px",
                     borderLeft: `4px solid ${tool.color}`,
                     textDecoration: "none",

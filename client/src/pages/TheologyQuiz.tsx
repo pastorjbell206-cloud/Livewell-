@@ -207,7 +207,7 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
 
               {/* Question Card */}
               {questions[currentQuestion] && (
-                <div style={{ background: "white", borderRadius: "8px", border: "1px solid var(--bone-muted)", padding: "40px", boxShadow: "0 4px 24px rgba(26,51,40,0.06)" }}>
+                <div style={{ background: "var(--card)", borderRadius: "8px", border: "1px solid var(--bone-muted)", padding: "40px", boxShadow: "0 4px 24px rgba(26,51,40,0.06)" }}>
                   <h2 style={{ fontSize: "22px", fontWeight: "bold", color: "var(--ink)", fontFamily: "var(--F)", marginBottom: "32px", lineHeight: "1.4" }}>
                     {questions[currentQuestion].question}
                   </h2>
@@ -216,6 +216,7 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
                       <button
                         key={index}
                         onClick={() => handleAnswer(index)}
+                        aria-pressed={answers[currentQuestion] === index}
                         onMouseEnter={() => setHoveredOption(index)}
                         onMouseLeave={() => setHoveredOption(null)}
                         style={{
@@ -225,7 +226,7 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
                           border: "2px solid",
                           borderColor: answers[currentQuestion] === index ? "var(--gold)" : hoveredOption === index ? "var(--gold)" : "var(--line)",
                           borderRadius: "6px",
-                          background: answers[currentQuestion] === index ? "#FDF5E6" : hoveredOption === index ? "#FDFAF5" : "white",
+                          background: answers[currentQuestion] === index ? "var(--bone-warm)" : hoveredOption === index ? "var(--bone)" : "var(--card)",
                           cursor: "pointer",
                           transition: "all 0.2s",
                           fontSize: "15px",
@@ -280,7 +281,7 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
                   </p>
                   <button
                     onClick={() => recommendationsQuery.refetch()}
-                    style={{ padding: "12px 24px", border: "2px solid var(--mustard)", background: "white", color: "var(--gold)", borderRadius: "4px", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}
+                    style={{ padding: "12px 24px", border: "2px solid var(--mustard)", background: "var(--card)", color: "var(--gold)", borderRadius: "4px", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}
                   >
                     Try again
                   </button>
@@ -290,7 +291,7 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
               {recommendationsQuery.data && (
                 <>
                   {/* Top Pillar */}
-                  <div style={{ background: "white", borderRadius: "8px", border: "2px solid var(--mustard)", padding: "32px", marginBottom: "32px" }}>
+                  <div style={{ background: "var(--card)", borderRadius: "8px", border: "2px solid var(--mustard)", padding: "32px", marginBottom: "32px" }}>
                     <div style={{ fontSize: "12px", letterSpacing: "2px", color: "var(--gold)", fontWeight: "bold", marginBottom: "8px", textTransform: "uppercase" }}>Your Primary Pillar</div>
                     <h3 style={{ fontSize: "24px", fontWeight: "bold", color: "var(--gold)", fontFamily: "var(--F)", marginBottom: "12px" }}>
                       {recommendationsQuery.data.topPillar}
@@ -319,7 +320,7 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
                       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "20px" }}>
                         {recommendationsQuery.data.recommendedArticles.slice(0, 4).map((article: any) => (
                           <Link key={article.slug} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
-                            <div style={{ background: "white", borderRadius: "8px", border: "1px solid var(--bone-muted)", padding: "24px", cursor: "pointer", height: "100%" }}>
+                            <div style={{ background: "var(--card)", borderRadius: "8px", border: "1px solid var(--bone-muted)", padding: "24px", cursor: "pointer", height: "100%" }}>
                               <div style={{ fontSize: "11px", fontWeight: "bold", color: "var(--gold)", marginBottom: "8px", textTransform: "uppercase" }}>{article.pillar}</div>
                               <h4 style={{ fontSize: "15px", fontWeight: "bold", color: "var(--ink)", marginBottom: "8px", lineHeight: "1.4" }}>{article.title}</h4>
                               <p style={{ fontSize: "13px", color: "var(--ink3)", lineHeight: "1.6", marginBottom: "12px" }}>{article.excerpt}</p>
@@ -340,13 +341,13 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
                     setShowResults(false);
                     setCurrentQuestion(0);
                   }}
-                  style={{ padding: "12px 24px", border: "2px solid var(--mustard)", background: "white", color: "var(--gold)", borderRadius: "4px", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}
+                  style={{ padding: "12px 24px", border: "2px solid var(--mustard)", background: "var(--card)", color: "var(--gold)", borderRadius: "4px", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}
                 >
                   Change my answers
                 </button>
                 <button
                   onClick={handleReset}
-                  style={{ padding: "12px 24px", border: "2px solid var(--mustard)", background: "white", color: "var(--gold)", borderRadius: "4px", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}
+                  style={{ padding: "12px 24px", border: "2px solid var(--mustard)", background: "var(--card)", color: "var(--gold)", borderRadius: "4px", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}
                 >
                   Retake Quiz
                 </button>

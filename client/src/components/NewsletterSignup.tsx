@@ -72,6 +72,7 @@ export function NewsletterSignup({
   const confirmLink = (onDark: boolean) =>
     handoffUrl ? (
       <p
+        role="status"
         style={{
           fontFamily: "var(--B)",
           fontSize: "14px",

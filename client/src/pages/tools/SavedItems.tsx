@@ -82,17 +82,18 @@ export default function SavedItems() {
             <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "8px", marginBottom: "32px" }}>
               <button
                 onClick={handleExportAll}
+                aria-live="polite"
                 style={{
                   display: "flex", alignItems: "center", gap: "6px",
                   padding: "10px 20px", background: "var(--mustard)", border: "none",
                   borderRadius: "4px", fontSize: "13px", fontWeight: 600,
-                  fontFamily: "var(--U)", color: "var(--charcoal)", cursor: "pointer",
+                  fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer",
                 }}
               >
                 {exportCopied ? <><Check size={14} /> Copied to Clipboard</> : <><Copy size={14} /> Export All</>}
               </button>
               {exportFailed && (
-                <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: 0 }}>
+                <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: 0 }}>
                   Copy failed — select and copy manually.
                 </p>
               )}
@@ -102,7 +103,7 @@ export default function SavedItems() {
           {totalCount === 0 && (
             <div style={{ textAlign: "center", padding: "60px 20px", color: "var(--ink-muted)" }}>
               <Heart size={48} style={{ margin: "0 auto 16px", opacity: 0.25 }} />
-              <p style={{ fontFamily: "var(--F)", fontSize: "20px", marginBottom: "8px", color: "var(--charcoal)" }}>
+              <p style={{ fontFamily: "var(--F)", fontSize: "20px", marginBottom: "8px", color: "var(--ink)" }}>
                 Nothing saved yet.
               </p>
               <p style={{ fontFamily: "var(--U)", fontSize: "15px", lineHeight: 1.7 }}>
@@ -124,7 +125,7 @@ export default function SavedItems() {
           {/* Saved Verses */}
           {verses.favorites.length > 0 && (
             <div style={{ marginBottom: "48px" }}>
-              <h2 style={{ fontSize: "22px", fontWeight: 600, fontFamily: "var(--F)", color: "var(--charcoal)", marginBottom: "20px", display: "flex", alignItems: "center", gap: "10px" }}>
+              <h2 style={{ fontSize: "22px", fontWeight: 600, fontFamily: "var(--F)", color: "var(--ink)", marginBottom: "20px", display: "flex", alignItems: "center", gap: "10px" }}>
                 <BookOpen size={20} style={{ color: "var(--mustard-text)" }} />
                 Saved Verses ({verses.favorites.length})
               </h2>
@@ -133,7 +134,7 @@ export default function SavedItems() {
                   <div
                     key={v.id}
                     style={{
-                      padding: "20px 24px", background: "white",
+                      padding: "20px 24px", background: "var(--card)",
                       border: "1px solid var(--bone-muted)", borderRadius: "8px",
                       borderLeft: "4px solid var(--mustard)",
                     }}
@@ -160,7 +161,7 @@ export default function SavedItems() {
                         </button>
                       </div>
                     </div>
-                    <p style={{ fontSize: "15px", lineHeight: 1.8, color: "var(--charcoal)", fontFamily: "var(--U)", fontStyle: "italic" }}>
+                    <p style={{ fontSize: "15px", lineHeight: 1.8, color: "var(--ink)", fontFamily: "var(--U)", fontStyle: "italic" }}>
                       "{v.content?.text}"
                     </p>
                   </div>
@@ -172,7 +173,7 @@ export default function SavedItems() {
           {/* Saved Prayers */}
           {prayers.favorites.length > 0 && (
             <div style={{ marginBottom: "48px" }}>
-              <h2 style={{ fontSize: "22px", fontWeight: 600, fontFamily: "var(--F)", color: "var(--charcoal)", marginBottom: "20px", display: "flex", alignItems: "center", gap: "10px" }}>
+              <h2 style={{ fontSize: "22px", fontWeight: 600, fontFamily: "var(--F)", color: "var(--ink)", marginBottom: "20px", display: "flex", alignItems: "center", gap: "10px" }}>
                 <Heart size={20} style={{ color: "var(--mustard-text)" }} />
                 Saved Prayers ({prayers.favorites.length})
               </h2>
@@ -181,7 +182,7 @@ export default function SavedItems() {
                   <div
                     key={p.id}
                     style={{
-                      padding: "20px 24px", background: "white",
+                      padding: "20px 24px", background: "var(--card)",
                       border: "1px solid var(--bone-muted)", borderRadius: "8px",
                       borderTop: "4px solid var(--mustard)",
                     }}
@@ -208,7 +209,7 @@ export default function SavedItems() {
                         </button>
                       </div>
                     </div>
-                    <p style={{ fontSize: "15px", lineHeight: 1.8, color: "var(--charcoal)", fontFamily: "var(--U)", fontStyle: "italic" }}>
+                    <p style={{ fontSize: "15px", lineHeight: 1.8, color: "var(--ink)", fontFamily: "var(--U)", fontStyle: "italic" }}>
                       {p.content?.text}
                     </p>
                   </div>
@@ -220,13 +221,13 @@ export default function SavedItems() {
           {/* Saved elsewhere — the stores owned by other tools, linked to their home views */}
           {(savedQuotes.length > 0 || savedWisdom.length > 0) && (
             <div style={{ marginBottom: "48px" }}>
-              <h2 style={{ fontSize: "22px", fontWeight: 600, fontFamily: "var(--F)", color: "var(--charcoal)", marginBottom: "20px" }}>
+              <h2 style={{ fontSize: "22px", fontWeight: 600, fontFamily: "var(--F)", color: "var(--ink)", marginBottom: "20px" }}>
                 Saved in your libraries
               </h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                 {savedQuotes.length > 0 && (
-                  <Link href="/tools/quotes" style={{ display: "block", padding: "20px 24px", background: "white", border: "1px solid var(--bone-muted)", borderRadius: "8px", borderLeft: "4px solid var(--mustard)", textDecoration: "none" }}>
-                    <span style={{ fontSize: "15px", fontFamily: "var(--U)", color: "var(--charcoal)", fontWeight: 600 }}>
+                  <Link href="/tools/quotes" style={{ display: "block", padding: "20px 24px", background: "var(--card)", border: "1px solid var(--bone-muted)", borderRadius: "8px", borderLeft: "4px solid var(--mustard)", textDecoration: "none" }}>
+                    <span style={{ fontSize: "15px", fontFamily: "var(--U)", color: "var(--ink)", fontWeight: 600 }}>
                       {savedQuotes.length} saved {savedQuotes.length === 1 ? "quote" : "quotes"}
                     </span>
                     <span style={{ display: "block", fontSize: "13px", fontFamily: "var(--U)", color: "var(--ink-muted)", marginTop: "4px" }}>
@@ -235,8 +236,8 @@ export default function SavedItems() {
                   </Link>
                 )}
                 {savedWisdom.length > 0 && (
-                  <Link href="/tools/wisdom-finder" style={{ display: "block", padding: "20px 24px", background: "white", border: "1px solid var(--bone-muted)", borderRadius: "8px", borderLeft: "4px solid var(--mustard)", textDecoration: "none" }}>
-                    <span style={{ fontSize: "15px", fontFamily: "var(--U)", color: "var(--charcoal)", fontWeight: 600 }}>
+                  <Link href="/tools/wisdom-finder" style={{ display: "block", padding: "20px 24px", background: "var(--card)", border: "1px solid var(--bone-muted)", borderRadius: "8px", borderLeft: "4px solid var(--mustard)", textDecoration: "none" }}>
+                    <span style={{ fontSize: "15px", fontFamily: "var(--U)", color: "var(--ink)", fontWeight: 600 }}>
                       {savedWisdom.length} saved wisdom {savedWisdom.length === 1 ? "entry" : "entries"}
                     </span>
                     <span style={{ display: "block", fontSize: "13px", fontFamily: "var(--U)", color: "var(--ink-muted)", marginTop: "4px" }}>

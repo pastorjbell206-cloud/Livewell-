@@ -16,6 +16,7 @@ const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const card = { background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)", textDecoration: "none", color: "inherit", display: "block" } as const;
 
 const ITEMS = [
+  { href: "/nation/state-of-the-american-church", kind: "The reckoning", title: "The State of the American Church", desc: "The flagship. Two captivities, right and left, keep trading a crucified God for the things that can be weaponized. What is left when the counterfeits are named, and the older faith underneath them both." },
   { href: "/nation/christian-nation", kind: "The question", title: "Was America Founded as a Christian Nation?", desc: "The strongest case for yes, the strongest case for no, and an honest verdict that refuses the cheap answer on every side." },
   { href: "/nation/scorecard", kind: "A tool", title: "How Close Is Each Party to the Bible?", desc: "An even-handed scorecard, theme by theme. The tally is meant to come out split. No column adds up to the kingdom." },
   { href: "/nation/which-party", kind: "The verdict", title: "Which Party Fits the Bible More?", desc: "The straight answer, from a kingdom perspective: it depends on which issues you weight, and Scripture weights them all. The real test is whether you can name where your own side is wrong." },

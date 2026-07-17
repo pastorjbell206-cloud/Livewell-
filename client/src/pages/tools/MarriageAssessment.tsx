@@ -18,6 +18,9 @@ interface Category {
   name: string;
   slug: string;
   description: string;
+  /** The passage this area of marriage grows from. Rendered as a reference
+   *  that links to the full text — not an embedded quotation. */
+  scripture: { ref: string };
   questions: Question[];
   recommendations: Record<string, string[]>;
   articleLink: { title: string; href: string };
@@ -37,6 +40,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Communication",
     slug: "communication",
+    scripture: { ref: "James 1:19" },
     description:
       "How well you and your spouse actually hear each other -- not just the words, but what lives beneath them.",
     questions: [
@@ -78,6 +82,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Intimacy & Connection",
     slug: "intimacy",
+    scripture: { ref: "Genesis 2:24" },
     description:
       "The distance between two people who share a house and two people who share a life.",
     questions: [
@@ -119,6 +124,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Trust & Security",
     slug: "trust",
+    scripture: { ref: "Proverbs 31:11" },
     description:
       "Whether your marriage is a place where it is safe to be known -- fully, without editing.",
     questions: [
@@ -160,6 +166,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Shared Vision",
     slug: "vision",
+    scripture: { ref: "Amos 3:3" },
     description:
       "Whether you are building the same life or merely living parallel ones under the same roof.",
     questions: [
@@ -201,6 +208,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Conflict Resolution",
     slug: "conflict",
+    scripture: { ref: "Ephesians 4:26" },
     description:
       "Not whether you fight -- every marriage does. Whether you fight in a way that leaves the marriage stronger or weaker.",
     questions: [
@@ -555,6 +563,7 @@ export default function MarriageAssessment() {
                     backgroundClip: "content-box",
                   }}
                   aria-label={`Go to ${cat.name}`}
+                  aria-current={i === currentCategory ? "step" : undefined}
                 />
               ))}
             </div>
@@ -654,6 +663,26 @@ export default function MarriageAssessment() {
               >
                 {category.description}
               </p>
+              <p
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "13px",
+                  color: "var(--ink-muted)",
+                  marginTop: "12px",
+                }}
+              >
+                Anchored in{" "}
+                <Link
+                  href={`/theology/passage?ref=${encodeURIComponent(category.scripture.ref)}`}
+                  style={{
+                    color: "var(--mustard-text)",
+                    textDecoration: "none",
+                    borderBottom: "1px solid var(--mustard)",
+                  }}
+                >
+                  {category.scripture.ref}
+                </Link>
+              </p>
             </div>
 
             {/* Questions */}
@@ -669,7 +698,7 @@ export default function MarriageAssessment() {
                 <div
                   key={q.id}
                   style={{
-                    background: "white",
+                    background: "var(--card)",
                     borderRadius: "2px",
                     padding: "32px",
                     border: "1px solid var(--border)",
@@ -725,6 +754,7 @@ export default function MarriageAssessment() {
                         <button
                           key={value}
                           onClick={() => handleRate(q.id, value)}
+                          aria-pressed={isSelected}
                           style={{
                             padding: "10px 16px",
                             borderRadius: "2px",
@@ -850,7 +880,7 @@ export default function MarriageAssessment() {
             {/* Overall Score */}
             <div
               style={{
-                background: "white",
+                background: "var(--card)",
                 borderRadius: "2px",
                 padding: "48px 40px",
                 borderTop: "4px solid " + overall.color,
@@ -921,7 +951,7 @@ export default function MarriageAssessment() {
             {/* Eight-Week Plan CTA */}
             <div
               style={{
-                background: "white",
+                background: "var(--card)",
                 borderRadius: "2px",
                 padding: "36px 40px",
                 border: "1px solid var(--border)",
@@ -979,7 +1009,7 @@ export default function MarriageAssessment() {
             {/* Score Bar Overview */}
             <div
               style={{
-                background: "white",
+                background: "var(--card)",
                 borderRadius: "2px",
                 padding: "36px 40px",
                 border: "1px solid var(--border)",
@@ -1094,7 +1124,7 @@ export default function MarriageAssessment() {
                 <div
                   key={cat.slug}
                   style={{
-                    background: "white",
+                    background: "var(--card)",
                     borderRadius: "2px",
                     padding: "36px 40px",
                     border: "1px solid var(--border)",

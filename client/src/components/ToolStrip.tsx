@@ -35,7 +35,7 @@ export default function ToolStrip({
           <Link
             key={t.href}
             href={t.href}
-            style={{ display: "block", textDecoration: "none", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.12)", padding: "1.1rem 1.2rem" }}
+            style={{ display: "block", textDecoration: "none", background: "var(--card)", border: "1px solid rgba(20,17,12,0.12)", padding: "1.1rem 1.2rem" }}
           >
             <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "1.08rem", fontWeight: 400, color: "var(--ink)", marginBottom: "0.3rem" }}>
               {t.label} <ArrowRight size={14} style={{ display: "inline", verticalAlign: "middle", color: "var(--mustard)" }} />

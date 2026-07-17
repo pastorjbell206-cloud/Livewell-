@@ -189,9 +189,10 @@ export default function DiscipleshipTable() {
                 <button
                   key={a.id}
                   onClick={() => { setAudienceId(a.id); setCopied(false); setCopyFailed(false); }}
+                  aria-pressed={on}
                   style={{
                     textAlign: "left", cursor: "pointer", padding: "var(--s-3)",
-                    background: on ? "var(--charcoal)" : "#FFFFFF",
+                    background: on ? "var(--charcoal)" : "var(--card)",
                     color: on ? "var(--bone)" : "var(--ink)",
                     border: "1px solid rgba(20,17,12,0.1)",
                     borderTop: `2px solid var(--mustard)`,
@@ -214,9 +215,10 @@ export default function DiscipleshipTable() {
                 <button
                   key={c}
                   onClick={() => { setCadence(c); setCopied(false); }}
+                  aria-pressed={on}
                   style={{
                     cursor: "pointer", padding: "10px 18px",
-                    background: on ? "var(--mustard)" : "#FFFFFF",
+                    background: on ? "var(--mustard)" : "var(--card)",
                     color: on ? "var(--charcoal)" : "var(--ink)",
                     border: "1px solid rgba(20,17,12,0.12)",
                     fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px",
@@ -238,7 +240,7 @@ export default function DiscipleshipTable() {
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", marginBottom: "var(--s-3)" }}>
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)" }}>Your table plan</h2>
                 <div style={{ display: "flex", gap: "10px" }}>
-                  <button onClick={copyPlan} style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "9px 16px", background: "var(--charcoal)", color: "var(--bone)", border: "none", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px" }}>
+                  <button onClick={copyPlan} aria-live="polite" style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "9px 16px", background: "var(--charcoal)", color: "var(--bone)", border: "none", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px" }}>
                     {copied ? <Check size={15} /> : <Copy size={15} />} {copied ? "Copied" : "Copy plan"}
                   </button>
                   <button onClick={reset} style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "9px 16px", background: "transparent", color: "var(--ink-muted)", border: "1px solid rgba(20,17,12,0.15)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px" }}>
@@ -247,7 +249,7 @@ export default function DiscipleshipTable() {
                 </div>
               </div>
               {copyFailed && (
-                <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
+                <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
                   Copy failed — select and copy manually.
                 </p>
               )}
@@ -262,7 +264,7 @@ export default function DiscipleshipTable() {
                   <Mail size={16} style={{ color: "var(--mustard-text)" }} />
                   <span style={{ ...eyebrow, color: "var(--ink)" }}>The invitation</span>
                 </div>
-                <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", background: "#FFFFFF", borderLeft: "3px solid var(--mustard)", padding: "var(--s-3)", fontStyle: "italic" }}>
+                <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", background: "var(--card)", borderLeft: "3px solid var(--mustard)", padding: "var(--s-3)", fontStyle: "italic" }}>
                   {audience.invite}
                 </p>
               </div>
@@ -278,7 +280,7 @@ export default function DiscipleshipTable() {
                 <div style={{ ...eyebrow, color: "var(--ink)", marginBottom: "var(--s-2)" }}>The rhythm, {cadenceWord}</div>
                 <div style={{ display: "grid", gap: "var(--s-2)" }}>
                   {FLOW.map((f) => (
-                    <div key={f.label} style={{ display: "flex", gap: "12px", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", padding: "var(--s-3)" }}>
+                    <div key={f.label} style={{ display: "flex", gap: "12px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", padding: "var(--s-3)" }}>
                       <f.icon size={18} style={{ color: "var(--mustard-text)", flexShrink: 0, marginTop: "2px" }} />
                       <div>
                         <div style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", marginBottom: "4px" }}>{f.label}</div>

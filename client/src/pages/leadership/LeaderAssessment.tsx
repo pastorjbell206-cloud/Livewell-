@@ -150,7 +150,7 @@ export default function LeaderAssessment() {
                       const val = si + 1;
                       const on = answers[q.id] === val;
                       return (
-                        <button key={val} onClick={() => setAnswers((a) => ({ ...a, [q.id]: val }))}
+                        <button key={val} onClick={() => setAnswers((a) => ({ ...a, [q.id]: val }))} aria-pressed={on}
                           style={{ flex: "1 1 0", minWidth: "92px", fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px", lineHeight: 1.3, padding: "8px 6px", borderRadius: "var(--radius-sm)", cursor: "pointer", border: "1px solid " + (on ? "var(--mustard)" : "var(--border)"), background: on ? "var(--mustard)" : "var(--card)", color: on ? "var(--charcoal)" : "var(--ink-muted)" }}>{label}</button>
                       );
                     })}
@@ -166,7 +166,7 @@ export default function LeaderAssessment() {
             {persistFailed && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", marginTop: "8px" }}>Couldn't save to this browser — your work here will not survive a reload.</p>}
 
             {submitted && result && (
-              <div style={{ marginTop: "var(--s-5)", background: "var(--charcoal)", color: "var(--bone)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: "3px solid var(--mustard)" }}>
+              <div role="status" style={{ marginTop: "var(--s-5)", background: "var(--charcoal)", color: "var(--bone)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: "3px solid var(--mustard)" }}>
                 <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "8px" }}>What this suggests</div>
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", marginBottom: "12px" }}>{result.label}</h2>
                 {result.body.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "rgba(245,240,230,0.9)", marginBottom: "12px" }}>{p}</p>)}

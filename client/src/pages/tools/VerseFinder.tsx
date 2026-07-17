@@ -254,7 +254,7 @@ export default function VerseFinder() {
         <div className="wrap" style={{ maxWidth: "900px" }}>
           <div style={{
             padding: "28px 32px",
-            background: "white",
+            background: "var(--card)",
             border: "1px solid var(--border)",
             borderRadius: "10px",
             borderLeft: "4px solid var(--gold)",
@@ -274,19 +274,21 @@ export default function VerseFinder() {
             <div style={{ display: "flex", gap: "8px", marginTop: "16px" }}>
               <button
                 onClick={() => handleCopy(dailyVerse.ref, dailyVerse.text)}
+                aria-live="polite"
                 style={{ display: "flex", alignItems: "center", gap: "4px", padding: "6px 14px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
               >
                 {copied === dailyVerse.ref ? <><Check size={12} /> Copied</> : <><Copy size={12} /> Copy</>}
               </button>
               <button
                 onClick={() => handleShare(dailyVerse.ref, dailyVerse.text)}
+                aria-live="polite"
                 style={{ display: "flex", alignItems: "center", gap: "4px", padding: "6px 14px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
               >
                 {shared === dailyVerse.ref ? <><Check size={12} /> Copied</> : <><Share2 size={12} /> Share</>}
               </button>
             </div>
             {copyFailed === dailyVerse.ref && (
-              <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink3)", margin: "10px 0 0" }}>
+              <p role="status" style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink3)", margin: "10px 0 0" }}>
                 Copy failed — select and copy manually.
               </p>
             )}
@@ -308,7 +310,7 @@ export default function VerseFinder() {
               style={{
                 width: "100%",
                 padding: "12px 16px 12px 40px",
-                background: "white",
+                background: "var(--card)",
                 border: "1px solid var(--border)",
                 borderRadius: "6px",
                 fontSize: "14px",
@@ -324,9 +326,10 @@ export default function VerseFinder() {
               <button
                 key={topic}
                 onClick={() => setSelected(topic)}
+                aria-pressed={selected === topic}
                 style={{
                   padding: "14px 16px",
-                  background: selected === topic ? "var(--gold)" : "white",
+                  background: selected === topic ? "var(--gold)" : "var(--card)",
                   color: selected === topic ? "var(--ink)" : "var(--ink2)",
                   border: `1px solid ${selected === topic ? "var(--gold)" : "var(--border)"}`,
                   borderRadius: "6px",
@@ -350,24 +353,27 @@ export default function VerseFinder() {
               </h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                 {VERSES[selected].map((v) => (
-                  <div key={v.ref} style={{ padding: "24px", background: "white", border: "1px solid var(--border)", borderRadius: "8px", borderLeft: "4px solid var(--gold)" }}>
+                  <div key={v.ref} style={{ padding: "24px", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "8px", borderLeft: "4px solid var(--gold)" }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "12px" }}>
                       <Link href={`/theology/passage?ref=${encodeURIComponent(v.ref)}`} style={{ fontSize: "14px", fontWeight: 700, color: "var(--gold)", fontFamily: "var(--U)", textDecoration: "none" }}>{v.ref} →</Link>
                       <div style={{ display: "flex", gap: "6px" }}>
                         <button
                           onClick={() => handleCopy(v.ref, v.text)}
+                          aria-live="polite"
                           style={{ display: "flex", alignItems: "center", gap: "4px", padding: "4px 10px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
                         >
                           {copied === v.ref ? <><Check size={12} /> Copied</> : <><Copy size={12} /> Copy</>}
                         </button>
                         <button
                           onClick={() => handleShare(v.ref, v.text)}
+                          aria-live="polite"
                           style={{ display: "flex", alignItems: "center", gap: "4px", padding: "4px 10px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
                         >
                           {shared === v.ref ? <><Check size={12} /> Copied</> : <><Share2 size={12} /> Share</>}
                         </button>
                         <button
                           onClick={() => handleToggleSave(v.ref, v.text)}
+                          aria-pressed={isFavorite(`verse-${v.ref}`)}
                           style={{
                             display: "flex", alignItems: "center", gap: "4px",
                             padding: "4px 10px", background: isFavorite(`verse-${v.ref}`) ? "var(--gold)" : "var(--cream)",
@@ -385,7 +391,7 @@ export default function VerseFinder() {
                       </div>
                     </div>
                     {copyFailed === v.ref && (
-                      <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink3)", margin: "0 0 10px" }}>
+                      <p role="status" style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink3)", margin: "0 0 10px" }}>
                         Copy failed — select and copy manually.
                       </p>
                     )}

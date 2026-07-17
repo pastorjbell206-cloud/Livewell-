@@ -5,16 +5,16 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
-  { title: "Is God Real?", slug: "is-god-real" },
-  { title: "Why Does God Allow Suffering?", slug: "why-does-god-allow-suffering" },
-  { title: "Is the Bible Reliable?", slug: "is-the-bible-reliable" },
-  { title: "What About Other Religions?", slug: "what-about-other-religions" },
-  { title: "Has Science Disproved God?", slug: "has-science-disproved-god" },
-  { title: "Why Is the Church So Hypocritical?", slug: "why-is-the-church-so-hypocritical" },
-  { title: "Is Hell Real?", slug: "is-hell-real" },
-  { title: "Can I Doubt and Still Have Faith?", slug: "can-i-doubt-and-still-have-faith" },
-  { title: "What About the Violence in the Old Testament?", slug: "what-about-the-violence-in-the-old-testament" },
-  { title: "Does Christianity Oppress Women?", slug: "does-christianity-oppress-women" },
+  { title: "Is God Real?", href: "/faq/does-god-exist" },
+  { title: "Why Does God Allow Suffering?", href: "/writing/apologetics-why-does-god-allow-evil" },
+  { title: "Is the Bible Reliable?", href: "/faq/is-the-bible-historically-accurate" },
+  { title: "What About Other Religions?", href: "/writing/apologetics-what-about-those-who-never-heard" },
+  { title: "Has Science Disproved God?", href: "/faq/can-science-and-faith-coexist" },
+  { title: "Why Is the Church So Hypocritical?", href: "/writing/apologetics-hasnt-the-church-done-terrible-things" },
+  { title: "Is Hell Real?", href: "/faq/what-do-christians-believe-about-hell" },
+  { title: "Can I Doubt and Still Have Faith?", href: "/doubt" },
+  { title: "What About the Violence in the Old Testament?", href: "/skeptic-track" },
+  { title: "Does Christianity Oppress Women?", href: "/writing/the-womanhood-they-preached-was-small" },
 ];
 
 const FAQ_ITEMS = [
@@ -86,7 +86,7 @@ export default function HonestQuestions() {
       {/* Hero */}
       <section style={{ background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px", textAlign: "center" }}>
         <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>FOR THE HONEST</p>
-        <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px,5vw,60px)", fontWeight: 400, color: "white", maxWidth: "780px", margin: "0 auto", lineHeight: 1.15, letterSpacing: "-0.02em" }}>
+        <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px,5vw,60px)", fontWeight: 400, color: "var(--charcoal-fg)", maxWidth: "780px", margin: "0 auto", lineHeight: 1.15, letterSpacing: "-0.02em" }}>
           The Bible was written by people who argued with God. You are allowed to ask questions.
         </h1>
         <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.6)", marginTop: "32px", maxWidth: "560px", marginLeft: "auto", marginRight: "auto", lineHeight: 1.7 }}>
@@ -121,7 +121,7 @@ export default function HonestQuestions() {
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "32px" }}>Pick the question that keeps you up at night</h2>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {ARTICLES.map((a) => (
-              <Link key={a.slug} href={`/writing/${a.slug}`} style={{ textDecoration: "none" }}>
+              <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
                 <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
                   <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
@@ -168,7 +168,7 @@ export default function HonestQuestions() {
             The Deep Bible Companion walks you through any passage with historical context, original language, and the scholarly debates most preachers skip. No pre-packaged answers.
           </p>
           <Link href="/tools/deep-bible" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--charcoal)", color: "white", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Open the Deep Bible Companion</button>
+            <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Open the Deep Bible Companion</button>
           </Link>
         </div>
       </section>
@@ -176,7 +176,7 @@ export default function HonestQuestions() {
       {/* Email Signup */}
       <section style={{ background: "var(--charcoal)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "white", marginBottom: "16px" }}>One hard question. One honest answer. Every week.</h2>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" }}>One hard question. One honest answer. Every week.</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "rgba(255,255,255,0.6)", marginBottom: "32px", lineHeight: 1.7 }}>Essays for skeptics, seekers, and anyone who refuses to believe something they have not examined. No guilt. No pressure. Just theology that takes your intelligence seriously.</p>
           <LandingSignup source="landing-honest-questions" />
         </div>
@@ -191,7 +191,7 @@ export default function HonestQuestions() {
             The post-Christian series traces sixty essays on what happens when a culture built on Christianity starts asking whether any of it is true.
           </p>
           <Link href="/post-christian" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--charcoal)", color: "white", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Explore the Full Series</button>
+            <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "12px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>Explore the Full Series</button>
           </Link>
         </div>
       </section>

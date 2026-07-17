@@ -280,7 +280,7 @@ export default function PrayerGenerator() {
         <div className="wrap" style={{ maxWidth: "800px" }}>
           <div style={{
             padding: "28px 32px",
-            background: "white",
+            background: "var(--card)",
             border: "1px solid var(--border)",
             borderRadius: "10px",
             borderTop: "4px solid var(--gold)",
@@ -300,19 +300,21 @@ export default function PrayerGenerator() {
             <div style={{ display: "flex", gap: "8px", marginTop: "16px" }}>
               <button
                 onClick={handleDailyCopy}
+                aria-live="polite"
                 style={{ display: "flex", alignItems: "center", gap: "4px", padding: "6px 14px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
               >
                 {dailyCopied ? <><Check size={12} /> Copied</> : <><Copy size={12} /> Copy</>}
               </button>
               <button
                 onClick={handleDailyShare}
+                aria-live="polite"
                 style={{ display: "flex", alignItems: "center", gap: "4px", padding: "6px 14px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
               >
                 {dailyShared ? <><Check size={12} /> Copied</> : <><Share2 size={12} /> Share</>}
               </button>
             </div>
             {dailyCopyFailed && (
-              <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink3)", margin: "10px 0 0" }}>
+              <p role="status" style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink3)", margin: "10px 0 0" }}>
                 Copy failed — select and copy manually.
               </p>
             )}
@@ -327,9 +329,10 @@ export default function PrayerGenerator() {
               <button
                 key={type}
                 onClick={() => { setSelected(type); setIndex(0); setCopied(false); setCopyFailed(false); }}
+                aria-pressed={selected === type}
                 style={{
                   padding: "18px 16px",
-                  background: selected === type ? "var(--gold)" : "white",
+                  background: selected === type ? "var(--gold)" : "var(--card)",
                   color: selected === type ? "var(--ink)" : "var(--ink2)",
                   border: `1px solid ${selected === type ? "var(--gold)" : "var(--border)"}`,
                   borderRadius: "6px",
@@ -348,7 +351,7 @@ export default function PrayerGenerator() {
           </div>
 
           {prayer && (
-            <div style={{ background: "white", border: "1px solid var(--border)", borderRadius: "12px", padding: "40px 32px", borderTop: "4px solid var(--gold)" }}>
+            <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "12px", padding: "40px 32px", borderTop: "4px solid var(--gold)" }}>
               <div style={{ fontSize: "13px", fontWeight: 700, color: "var(--gold)", fontFamily: "var(--U)", marginBottom: "20px", letterSpacing: "0.1em" }}>
                 {selected?.toUpperCase()}
               </div>
@@ -389,17 +392,19 @@ export default function PrayerGenerator() {
               )}
 
               <div style={{ display: "flex", gap: "12px", marginTop: "28px", flexWrap: "wrap" }}>
-                <button onClick={handleCopy} style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}>
+                <button onClick={handleCopy} aria-live="polite" style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}>
                   {copied ? <><Check size={14} /> Copied</> : <><Copy size={14} /> Copy Prayer</>}
                 </button>
                 <button
                   onClick={handleShare}
+                  aria-live="polite"
                   style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}
                 >
                   {shared ? <><Check size={14} /> Copied</> : <><Share2 size={14} /> Share Prayer</>}
                 </button>
                 <button
                   onClick={handleToggleSavePrayer}
+                  aria-pressed={!!(currentPrayerId && isFavorite(currentPrayerId))}
                   style={{
                     display: "flex", alignItems: "center", gap: "6px",
                     padding: "10px 20px",
@@ -427,7 +432,7 @@ export default function PrayerGenerator() {
                 </button>
               </div>
               {copyFailed && (
-                <p style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink3)", margin: "12px 0 0" }}>
+                <p role="status" style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink3)", margin: "12px 0 0" }}>
                   Copy failed — select and copy manually.
                 </p>
               )}

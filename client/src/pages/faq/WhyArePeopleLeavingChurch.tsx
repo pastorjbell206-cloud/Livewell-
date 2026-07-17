@@ -114,7 +114,7 @@ export default function WhyArePeopleLeavingChurch() {
             fontFamily: "var(--F)",
             fontSize: "clamp(32px, 5vw, 60px)",
             fontWeight: 400,
-            color: "white",
+            color: "var(--charcoal-fg)",
             maxWidth: "780px",
             margin: "0 auto",
             lineHeight: 1.15,
@@ -240,7 +240,7 @@ export default function WhyArePeopleLeavingChurch() {
               fontFamily: "var(--F)",
               fontSize: "clamp(24px, 3vw, 36px)",
               fontWeight: 400,
-              color: "white",
+              color: "var(--charcoal-fg)",
               marginBottom: "16px",
             }}
           >

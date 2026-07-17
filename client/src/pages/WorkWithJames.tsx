@@ -95,24 +95,24 @@ export default function WorkWithJames() {
               </h2>
 
               {status === "sent" ? (
-                <div style={{ padding: "40px 24px", textAlign: "center", background: "#D1FAE5", borderRadius: "8px" }}>
-                  <CheckCircle size={48} style={{ color: "#065F46", margin: "0 auto 16px" }} />
-                  <h3 style={{ fontSize: "20px", fontWeight: 600, color: "#065F46", fontFamily: "var(--F)", marginBottom: "8px" }}>Message Sent</h3>
-                  <p style={{ fontSize: "15px", color: "#065F46", fontFamily: "var(--B)" }}>Thank you for reaching out. I'll respond within 48 hours.</p>
+                <div role="status" style={{ padding: "40px 24px", textAlign: "center", background: "var(--ok-bg)", borderRadius: "8px" }}>
+                  <CheckCircle size={48} style={{ color: "var(--ok)", margin: "0 auto 16px" }} />
+                  <h3 style={{ fontSize: "20px", fontWeight: 600, color: "var(--ok)", fontFamily: "var(--F)", marginBottom: "8px" }}>Message Sent</h3>
+                  <p style={{ fontSize: "15px", color: "var(--ok)", fontFamily: "var(--B)" }}>Thank you for reaching out. I'll respond within 48 hours.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                   <div>
                     <label htmlFor="name" style={{ display: "block", fontSize: "13px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--U)", marginBottom: "6px" }}>Name</label>
-                    <input id="name" type="text" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} style={{ width: "100%", padding: "10px 14px", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "15px", fontFamily: "var(--B)", background: "white", boxSizing: "border-box" }} />
+                    <input id="name" type="text" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} style={{ width: "100%", padding: "10px 14px", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "15px", fontFamily: "var(--B)", background: "var(--card)", boxSizing: "border-box" }} />
                   </div>
                   <div>
                     <label htmlFor="email" style={{ display: "block", fontSize: "13px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--U)", marginBottom: "6px" }}>Email *</label>
-                    <input id="email" type="email" required value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} style={{ width: "100%", padding: "10px 14px", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "15px", fontFamily: "var(--B)", background: "white", boxSizing: "border-box" }} />
+                    <input id="email" type="email" required value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} style={{ width: "100%", padding: "10px 14px", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "15px", fontFamily: "var(--B)", background: "var(--card)", boxSizing: "border-box" }} />
                   </div>
                   <div>
                     <label htmlFor="subject" style={{ display: "block", fontSize: "13px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--U)", marginBottom: "6px" }}>Subject</label>
-                    <select id="subject" value={form.subject} onChange={(e) => setForm({ ...form, subject: e.target.value })} style={{ width: "100%", padding: "10px 14px", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "15px", fontFamily: "var(--B)", background: "white", boxSizing: "border-box" }}>
+                    <select id="subject" value={form.subject} onChange={(e) => setForm({ ...form, subject: e.target.value })} style={{ width: "100%", padding: "10px 14px", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "15px", fontFamily: "var(--B)", background: "var(--card)", boxSizing: "border-box" }}>
                       <option value="">Select a topic…</option>
                       <option value="Speaking">Speaking & Preaching</option>
                       <option value="Coaching">Pastoral Coaching</option>
@@ -124,14 +124,14 @@ export default function WorkWithJames() {
                   </div>
                   <div>
                     <label htmlFor="message" style={{ display: "block", fontSize: "13px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--U)", marginBottom: "6px" }}>Message *</label>
-                    <textarea id="message" required rows={5} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} style={{ width: "100%", padding: "10px 14px", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "15px", fontFamily: "var(--B)", background: "white", resize: "vertical", boxSizing: "border-box" }} />
+                    <textarea id="message" required rows={5} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} style={{ width: "100%", padding: "10px 14px", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "15px", fontFamily: "var(--B)", background: "var(--card)", resize: "vertical", boxSizing: "border-box" }} />
                   </div>
                   <button type="submit" disabled={status === "sending"} style={{ padding: "12px 24px", background: status === "sending" ? "var(--ink3)" : "var(--gold)", color: "var(--ink)", border: "none", borderRadius: "4px", fontSize: "15px", fontWeight: 600, fontFamily: "var(--U)", cursor: status === "sending" ? "default" : "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px" }}>
                     <Send size={16} />
                     {status === "sending" ? "Sending…" : "Send Message"}
                   </button>
                   {status === "error" && (
-                    <p style={{ color: "#b00020", fontSize: "14px", fontFamily: "var(--U)" }}>Something went wrong. Please try again or email directly.</p>
+                    <p role="alert" style={{ color: "var(--alert)", fontSize: "14px", fontFamily: "var(--U)" }}>Something went wrong. Please try again or email directly.</p>
                   )}
                 </form>
               )}
