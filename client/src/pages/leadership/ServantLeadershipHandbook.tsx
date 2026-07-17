@@ -39,7 +39,7 @@ export default function ServantLeadershipHandbook() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
         <div style={prose}>
           <div style={{ ...eyebrow, color: "var(--mustard)" }}>
             <Link href="/leadership/servant-leadership" style={{ color: "inherit", textDecoration: "none" }}>Servant Leadership</Link> · The Handbook

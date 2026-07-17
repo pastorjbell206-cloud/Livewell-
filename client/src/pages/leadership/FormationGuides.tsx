@@ -65,7 +65,7 @@ export default function FormationGuides() {
           url={`${SITE_URL}/leadership/guides/${g.slug}`}
           structuredData={{ "@context": "https://schema.org", "@type": "Course", name: g.title, description: g.intro, provider: { "@type": "Organization", name: "LiveWell by James Bell" } }}
         />
-        <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
+        <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
           <div style={prose}>
             <Link href="/leadership/guides" style={{ ...eyebrow, color: "var(--mustard)", textDecoration: "none" }}>← Leadership Formation · Training guides</Link>
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 4.6vw, 52px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.02em", margin: "16px 0 10px" }}>{g.title}</h1>
@@ -147,7 +147,7 @@ export default function FormationGuides() {
         description="Free, session-by-session training guides for the church: a Servant Leadership Bible study, an Elder Training Manual, a Deacon Training Manual, and more."
         url={`${SITE_URL}/leadership/guides`}
       />
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={wrap}>
           <div style={{ ...eyebrow, color: "var(--mustard)" }}>
             <Link href="/leadership" style={{ color: "inherit", textDecoration: "none" }}>Leadership Formation</Link> · Training guides

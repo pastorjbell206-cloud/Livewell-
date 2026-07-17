@@ -137,7 +137,7 @@ export default function SermonWorkbench() {
     <Layout>
       <SEOMeta title="The Sermon Prep Workbench — From the Text to the Pulpit" description="A guided workflow for preparing a sermon that honors the text and lands on a Tuesday. The questions worth answering at each stage. Saves to your browser." url="https://www.livewellbyjamesbell.co/leadership/sermon-prep" />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}><Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · The sermon workbench</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px" }}>From the text to the pulpit.</h1>

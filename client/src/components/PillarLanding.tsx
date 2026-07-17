@@ -69,7 +69,7 @@ export default function PillarLanding({
   return (
     <Layout>
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--charcoal-fg)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             Diagnosis · Pillar {NUMBER_WORD[pillar.id]}
@@ -136,16 +136,16 @@ export default function PillarLanding({
           <div>
             {prev && ROUTE_FOR_PILLAR[prev.slug] && (
               <Link href={ROUTE_FOR_PILLAR[prev.slug]} style={{ textDecoration: "none" }}>
-                <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "0.7rem", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--bone)", opacity: 0.5, marginBottom: "0.3rem" }}>← Previous pillar</span>
-                <span style={{ fontFamily: "var(--F)", fontSize: "1.05rem", color: "var(--bone)" }}>{prev.name}</span>
+                <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "0.7rem", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--charcoal-fg)", opacity: 0.5, marginBottom: "0.3rem" }}>← Previous pillar</span>
+                <span style={{ fontFamily: "var(--F)", fontSize: "1.05rem", color: "var(--charcoal-fg)" }}>{prev.name}</span>
               </Link>
             )}
           </div>
           <div style={{ textAlign: "right" }}>
             {next && ROUTE_FOR_PILLAR[next.slug] && (
               <Link href={ROUTE_FOR_PILLAR[next.slug]} style={{ textDecoration: "none" }}>
-                <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "0.7rem", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--bone)", opacity: 0.5, marginBottom: "0.3rem" }}>Next pillar →</span>
-                <span style={{ fontFamily: "var(--F)", fontSize: "1.05rem", color: "var(--bone)" }}>{next.name}</span>
+                <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "0.7rem", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--charcoal-fg)", opacity: 0.5, marginBottom: "0.3rem" }}>Next pillar →</span>
+                <span style={{ fontFamily: "var(--F)", fontSize: "1.05rem", color: "var(--charcoal-fg)" }}>{next.name}</span>
               </Link>
             )}
           </div>

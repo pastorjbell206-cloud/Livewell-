@@ -74,7 +74,7 @@ export default function DecisionLog() {
     <Layout>
       <SEOMeta title="The Benevolence and Decision Log — A Private Record" description="A private record of benevolence requests and board decisions: what was asked, what was decided, and why. Everything stays on the device." url="https://www.livewellbyjamesbell.co/leadership/decision-log" />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}><Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · The decision log</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 4.6vw, 48px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px" }}>Remember what you decided, and why.</h1>

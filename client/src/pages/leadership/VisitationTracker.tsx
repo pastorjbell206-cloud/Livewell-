@@ -78,7 +78,7 @@ export default function VisitationTracker() {
     <Layout>
       <SEOMeta title="The Visitation Tracker — Who You Have Seen, Who Is Waiting" description="Keep track of who you have visited, who is scheduled, and who is about to fall through the cracks. Everything stays on your device." url="https://www.livewellbyjamesbell.co/leadership/visitation" />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}><Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · The visitation tracker</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px" }}>Nobody falls through.</h1>

@@ -619,7 +619,7 @@ export default function LifeAudit() {
       <section
         style={{
           background: "var(--charcoal)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
           padding: "80px 32px 60px",
           textAlign: "center",
         }}
@@ -1614,7 +1614,7 @@ export default function LifeAudit() {
                 alignItems: "center",
                 justifyContent: "space-between",
                 background: "var(--charcoal)",
-                color: "var(--bone)",
+                color: "var(--charcoal-fg)",
                 borderRadius: "2px",
                 padding: "28px 36px",
                 textDecoration: "none",

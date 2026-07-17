@@ -60,7 +60,7 @@ export default function ServantLeadership() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
         <div style={prose}>
           <div style={{ ...eyebrow, color: "var(--mustard)" }}>
             <Link href="/leadership" style={{ color: "inherit", textDecoration: "none" }}>Leadership Formation</Link> · Servant leadership
@@ -87,10 +87,10 @@ export default function ServantLeadership() {
       </section>
 
       {/* THE CURRICULUM */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           <div style={{ ...eyebrow, color: "var(--mustard)" }}>The curriculum</div>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.4vw, 34px)", fontWeight: 400, color: "var(--bone)", margin: "10px 0 8px" }}>A whole course on leading the church</h2>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.4vw, 34px)", fontWeight: 400, color: "var(--charcoal-fg)", margin: "10px 0 8px" }}>A whole course on leading the church</h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,.8)", maxWidth: "62ch", margin: "0 0 var(--s-4)" }}>
             Read the book, run the guides, measure yourself against the marks. Free, and built to be used.
           </p>
@@ -102,7 +102,7 @@ export default function ServantLeadership() {
             ].map((c) => (
               <a key={c.href} href={c.href} style={{ display: "block", background: "var(--panel, #1d1b15)", border: "1px solid rgba(245,240,230,0.12)", padding: "var(--s-3)", textDecoration: "none" }}>
                 <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "8px" }}>{c.k}</div>
-                <div style={{ fontFamily: "var(--F)", fontSize: "21px", color: "var(--bone)", lineHeight: 1.2, marginBottom: "6px" }}>{c.t}</div>
+                <div style={{ fontFamily: "var(--F)", fontSize: "21px", color: "var(--charcoal-fg)", lineHeight: 1.2, marginBottom: "6px" }}>{c.t}</div>
                 <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.55, color: "rgba(245,240,230,0.7)" }}>{c.d}</div>
               </a>
             ))}
@@ -156,19 +156,19 @@ export default function ServantLeadership() {
       </section>
 
       {/* QUOTES + NEXT STEP */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={prose}>
           <div style={{ display: "grid", gap: "22px", marginBottom: "var(--s-5)" }}>
             {QUOTES.map((q, i) => (
-              <p key={i} style={{ fontFamily: "var(--F)", fontSize: "23px", fontStyle: "italic", lineHeight: 1.4, color: "var(--bone)", margin: 0, paddingLeft: "20px", borderLeft: "3px solid var(--mustard)" }}>{q}</p>
+              <p key={i} style={{ fontFamily: "var(--F)", fontSize: "23px", fontStyle: "italic", lineHeight: 1.4, color: "var(--charcoal-fg)", margin: 0, paddingLeft: "20px", borderLeft: "3px solid var(--mustard)" }}>{q}</p>
             ))}
           </div>
           <p style={{ fontFamily: "var(--F)", fontSize: "24px", color: "var(--mustard)", margin: "0 0 24px" }}>Character is the only competence that lasts.</p>
           <div style={{ display: "flex", gap: "28px", flexWrap: "wrap" }}>
-            <Link href="/leadership/guides" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "3px" }}>
+            <Link href="/leadership/guides" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal-fg)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "3px" }}>
               Train your leaders → the free guides
             </Link>
-            <Link href="/leadership" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "3px" }}>
+            <Link href="/leadership" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal-fg)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "3px" }}>
               More for pastors → the Leadership Hub
             </Link>
           </div>

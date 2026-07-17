@@ -246,7 +246,7 @@ export default function BookDetail() {
                 fontSize: "clamp(28px, 4vw, 38px)",
                 fontWeight: 400,
                 letterSpacing: "-0.015em",
-                color: "var(--bone)",
+                color: "var(--charcoal-fg)",
                 marginBottom: "16px",
               }}
             >

@@ -77,7 +77,7 @@ export default function IllustrationLibrary() {
     <Layout>
       <SEOMeta title="The Illustration Library — Sermon Illustrations by Theme and Text" description="A searchable bank of sermon illustrations, sorted by theme and text, each with the point it actually serves. Save the ones you want for later." url="https://www.livewellbyjamesbell.co/leadership/illustrations" />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}><Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · The illustration library</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px" }}>The window, not the wall.</h1>

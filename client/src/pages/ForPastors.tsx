@@ -79,7 +79,7 @@ export default function ForPastors() {
               fontWeight: 400,
               lineHeight: 1.1,
               letterSpacing: "-0.02em",
-              color: "var(--bone)",
+              color: "var(--charcoal-fg)",
               marginBottom: "20px",
             }}
           >

@@ -39,7 +39,7 @@ export default function LeadershipLibrary() {
     <Layout>
       <SEOMeta title="The Leadership Library — Articles for Pastors and Church Leaders" description="A searchable library on leadership formation, church leadership, preaching, and exegesis, for the working pastor and the lay leader. Plain, serious, useful." url="https://www.livewellbyjamesbell.co/leadership/library" />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}><Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · The library</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.5vw, 58px)", fontWeight: 400, lineHeight: 1.03, letterSpacing: "-0.03em", marginBottom: "16px", maxWidth: "20ch" }}>The whole library, in one place.</h1>

@@ -152,7 +152,7 @@ export default function Library() {
         style={{
           background: "var(--charcoal)",
           padding: "var(--s-7) var(--s-4) var(--s-6)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
         }}
       >
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>

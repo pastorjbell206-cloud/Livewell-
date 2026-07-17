@@ -207,10 +207,10 @@ export default function WhichLens() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-3) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.2rem" }}>A diagnostic</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4.4vw, 2.9rem)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1rem" }}>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4.4vw, 2.9rem)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: "1rem" }}>
             Which lens has you?
           </h1>
-          <p style={{ color: "var(--bone)", opacity: 0.75, fontSize: "1rem", lineHeight: 1.7, maxWidth: "58ch" }}>
+          <p style={{ color: "var(--charcoal-fg)", opacity: 0.75, fontSize: "1rem", lineHeight: 1.7, maxWidth: "58ch" }}>
             Everyone reads the faith through something. Thirteen choices — none of them comfortable, most of them unfair, all of them honest. Pick the answer that is truer of you, not the one you approve of. Your answers stay in this browser tab and are seen by no one.
           </p>
         </div>

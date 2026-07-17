@@ -64,7 +64,7 @@ export default function PropheticTopic({ config }: { config: SectionConfig }) {
     <Layout>
       <SEOMeta title={`${t.title} — ${config.label}`} description={t.subtitle} url={`https://www.livewellbyjamesbell.co${config.base}/topic/${t.slug}`} />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href={config.base} style={{ color: "inherit" }}>{config.label}</Link> · A worked question
@@ -171,10 +171,10 @@ export default function PropheticTopic({ config }: { config: SectionConfig }) {
         </div>
       </section>
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>The charge</div>
-          {t.charge.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, lineHeight: 1.5, color: "var(--bone)", maxWidth: "60ch", marginBottom: "14px" }}>{p}</p>)}
+          {t.charge.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, lineHeight: 1.5, color: "var(--charcoal-fg)", maxWidth: "60ch", marginBottom: "14px" }}>{p}</p>)}
         </div>
       </section>
 
@@ -194,7 +194,7 @@ export default function PropheticTopic({ config }: { config: SectionConfig }) {
         </section>
       )}
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)", borderTop: "1px solid rgba(245,240,230,0.12)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--charcoal-fg)", borderTop: "1px solid rgba(245,240,230,0.12)" }}>
         <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "16px", justifyContent: "space-between", alignItems: "center" }}>
           <Link href={`${config.base}/posture`} style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>Read the {config.key === "justice" ? "call" : "posture"} first</Link>
           <Link href={config.base} style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>All of {config.label} →</Link>

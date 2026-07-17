@@ -70,7 +70,7 @@ export default function FormationTopic() {
     <Layout>
       {data && <SEOMeta title={`${data.title} — Leadership Formation`} description={data.subtitle} url={`https://www.livewellbyjamesbell.co/leadership/formation/${slug}`} />}
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/leadership/formation" style={{ color: "inherit" }}>Leadership Formation</Link>
@@ -96,7 +96,7 @@ export default function FormationTopic() {
       {data?.parts.map((part, i) => {
         const dark = part.id === "formation";
         const bg = dark ? "var(--charcoal)" : i % 2 ? "var(--bone-warm)" : "var(--bone)";
-        const ink = dark ? "var(--bone)" : "var(--ink)";
+        const ink = dark ? "var(--charcoal-fg)" : "var(--ink)";
         return (
           <section key={part.id} style={{ background: bg, padding: "var(--s-5) var(--s-4)", color: ink }}>
             <div style={wrap}>

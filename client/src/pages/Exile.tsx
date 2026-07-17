@@ -60,7 +60,7 @@ export default function Exile() {
       />
 
       {/* Hero */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>The Vision</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 68px)", fontWeight: 400, lineHeight: 1.03, letterSpacing: "-0.025em", marginBottom: "22px", maxWidth: "16ch" }}>
@@ -96,7 +96,7 @@ export default function Exile() {
       </section>
 
       {/* The four movements */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4) var(--s-6)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4) var(--s-6)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(320px, 100%), 1fr))", gap: "var(--s-3)" }}>
             {MOVEMENTS.map((m) => (
@@ -114,7 +114,7 @@ export default function Exile() {
                 }}
               >
                 <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "12px" }}>{m.kicker}</div>
-                <div style={{ fontFamily: "var(--F)", fontSize: "26px", lineHeight: 1.15, color: "var(--bone)", marginBottom: "12px" }}>{m.title}</div>
+                <div style={{ fontFamily: "var(--F)", fontSize: "26px", lineHeight: 1.15, color: "var(--charcoal-fg)", marginBottom: "12px" }}>{m.title}</div>
                 <div style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, color: "rgba(245,240,230,0.78)", marginBottom: "18px", flexGrow: 1 }}>{m.body}</div>
                 <div style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard)", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px", alignSelf: "flex-start" }}>{m.cta} →</div>
               </Link>

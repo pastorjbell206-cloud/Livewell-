@@ -56,7 +56,7 @@ export default function LeadershipArticle() {
     <Layout>
       {data && <SEOMeta title={`${data.title} — Leadership Formation`} description={data.subtitle} url={`https://www.livewellbyjamesbell.co/leadership/article/${slug}`} />}
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link>
@@ -84,7 +84,7 @@ export default function LeadershipArticle() {
       ))}
 
       {data && (data.keyTexts?.length || data.furtherReading?.length) ? (
-        <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--bone)" }}>
+        <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--charcoal-fg)" }}>
           <div style={{ ...wrap, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--s-5)" }}>
             {data.keyTexts?.length ? (
               <div>

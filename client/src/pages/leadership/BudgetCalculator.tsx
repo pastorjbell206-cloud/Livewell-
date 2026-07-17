@@ -75,7 +75,7 @@ export default function BudgetCalculator() {
     <Layout>
       <SEOMeta title="The Giving and Budget Calculator — Allocate a Church Budget" description="Think through a church budget: enter annual giving, allocate across categories, and see how each line compares to a healthy range. The ranges are guides." url="https://www.livewellbyjamesbell.co/leadership/budget" />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}><Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · The budget calculator</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 4.6vw, 48px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px" }}>A budget is a theology in numbers.</h1>

@@ -899,7 +899,7 @@ export default function PastorBurnout() {
         className="pb-screen"
         style={{
           background: "var(--charcoal)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
           padding: "80px 32px 60px",
           textAlign: "center",
         }}
@@ -1891,7 +1891,7 @@ export default function PastorBurnout() {
                       style={{
                         fontSize: "15px",
                         lineHeight: 1.8,
-                        color: "var(--bone)",
+                        color: "var(--charcoal-fg)",
                         fontFamily: "var(--B)",
                         margin: 0,
                         opacity: 0.9,
@@ -2320,7 +2320,7 @@ export default function PastorBurnout() {
                   alignItems: "center",
                   justifyContent: "space-between",
                   background: "var(--charcoal)",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   borderRadius: "2px",
                   padding: "28px 36px",
                   textDecoration: "none",

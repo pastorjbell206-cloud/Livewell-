@@ -423,7 +423,7 @@ export default function SermonOutline() {
       <section
         style={{
           background: "var(--charcoal)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
           padding: "80px 32px 60px",
           textAlign: "center",
         }}
@@ -1065,7 +1065,7 @@ export default function SermonOutline() {
                   background: "var(--charcoal)",
                   borderRadius: "8px",
                   padding: "40px 36px",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                 }}
               >
                 <h3

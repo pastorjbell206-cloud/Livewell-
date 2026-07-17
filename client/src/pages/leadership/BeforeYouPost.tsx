@@ -35,7 +35,7 @@ export default function BeforeYouPost() {
     <Layout>
       <SEOMeta title="Before You Post — An Examen for Leaders" description="A short examen for a leader with his thumb over the share button. Not a content filter, a heart filter. The questions are searching on purpose." url="https://www.livewellbyjamesbell.co/leadership/before-you-post" />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}><Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · Before you post</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 4.6vw, 48px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px" }}>Before your thumb hits share.</h1>
@@ -62,7 +62,7 @@ export default function BeforeYouPost() {
           </button>
 
           {done && (
-            <div role="status" style={{ marginTop: "var(--s-5)", background: "var(--charcoal)", color: "var(--bone)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: `3px solid ${flags.length ? "var(--strain)" : "var(--mustard)"}` }}>
+            <div role="status" style={{ marginTop: "var(--s-5)", background: "var(--charcoal)", color: "var(--charcoal-fg)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: `3px solid ${flags.length ? "var(--strain)" : "var(--mustard)"}` }}>
               {flags.length === 0 ? (
                 <>
                   <h2 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 500, color: "var(--mustard)", marginBottom: "12px" }}>It may be worth saying.</h2>

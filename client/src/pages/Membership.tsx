@@ -67,10 +67,10 @@ export default function Membership() {
       <section style={{ background: "var(--charcoal)", padding: "6rem 1.5rem 5rem" }}>
         <div style={{ maxWidth: "680px", margin: "0 auto" }}>
           <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", fontFamily: "var(--U)", marginBottom: "1.5rem" }}>Membership</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "2rem" }}>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: "2rem" }}>
             The deeper room
           </h1>
-          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.7, color: "var(--bone)", opacity: 0.75 }}>
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.7, color: "var(--charcoal-fg)", opacity: 0.75 }}>
             This is not a paywall. It is a room behind the room — for readers who have moved past browsing and want the full weight of the work. The membership exists because writing this kind of theology takes time, and time costs something. If the free writing has been useful to you, the membership is where the deeper work lives.
           </p>
         </div>
@@ -166,7 +166,7 @@ export default function Membership() {
           <div className="eyebrow" style={{ marginBottom: "20px", color: "var(--mustard)" }}>
             The Founding Cohort
           </div>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 400, color: "var(--bone)", letterSpacing: "-0.015em", marginBottom: "20px", maxWidth: "20ch", margin: "0 auto 20px" }}>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 400, color: "var(--charcoal-fg)", letterSpacing: "-0.015em", marginBottom: "20px", maxWidth: "20ch", margin: "0 auto 20px" }}>
             The first members shape what membership becomes.
           </h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,0.7)", maxWidth: "55ch", margin: "0 auto" }}>
@@ -200,7 +200,7 @@ export default function Membership() {
       <section style={{ background: "var(--charcoal)", padding: "5rem 1.5rem", textAlign: "center" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <div style={{ width: "40px", height: "2px", background: "var(--mustard)", margin: "0 auto 2rem" }} />
-          <p style={{ fontFamily: "var(--F)", fontSize: "1.25rem", fontStyle: "italic", lineHeight: 1.55, color: "var(--bone)", marginBottom: "2rem" }}>
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.25rem", fontStyle: "italic", lineHeight: 1.55, color: "var(--charcoal-fg)", marginBottom: "2rem" }}>
             You have read this far. The writing has either carried weight for you or it has not. If it has, the membership is the room where the deeper work lives. The door is open.
           </p>
           {joined ? (

@@ -657,7 +657,7 @@ export default function FormationInventory() {
       `}</style>
 
       {/* Hero */}
-      <section className="fi-screen" style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section className="fi-screen" style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={heroWrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · The flagship inventory
@@ -814,9 +814,9 @@ export default function FormationInventory() {
             {/* Verdict */}
             <section className="fi-screen" style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
               <div style={wrap}>
-                <div style={{ background: "var(--charcoal)", color: "var(--bone)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: "3px solid var(--mustard)" }}>
+                <div style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: "3px solid var(--mustard)" }}>
                   <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>The verdict</div>
-                  <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 500, lineHeight: 1.45, color: "var(--bone)" }}>
+                  <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 500, lineHeight: 1.45, color: "var(--charcoal-fg)" }}>
                     {verdictFor(scores)}
                   </p>
                 </div>

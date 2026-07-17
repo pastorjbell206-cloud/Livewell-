@@ -115,7 +115,7 @@ export default function LeaderAssessment() {
     <Layout>
       {data && <SEOMeta title={`${data.title} — A Leadership Self-Examination`} description={data.subtitle} url={`https://www.livewellbyjamesbell.co/leadership/assessment/${slug}`} />}
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}><Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · Self-examination</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 4.6vw, 48px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>{data?.title ?? (error ? "The assessment" : "Loading…")}</h1>
@@ -166,9 +166,9 @@ export default function LeaderAssessment() {
             {persistFailed && <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", marginTop: "8px" }}>Couldn't save to this browser — your work here will not survive a reload.</p>}
 
             {submitted && result && (
-              <div role="status" style={{ marginTop: "var(--s-5)", background: "var(--charcoal)", color: "var(--bone)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: "3px solid var(--mustard)" }}>
+              <div role="status" style={{ marginTop: "var(--s-5)", background: "var(--charcoal)", color: "var(--charcoal-fg)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: "3px solid var(--mustard)" }}>
                 <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "8px" }}>What this suggests</div>
-                <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", marginBottom: "12px" }}>{result.label}</h2>
+                <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--charcoal-fg)", marginBottom: "12px" }}>{result.label}</h2>
                 {result.body.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "rgba(245,240,230,0.9)", marginBottom: "12px" }}>{p}</p>)}
                 <p style={{ fontFamily: "var(--B)", fontSize: "14px", fontStyle: "italic", color: "rgba(245,240,230,0.6)", marginTop: "var(--s-3)", borderTop: "1px solid rgba(245,240,230,0.15)", paddingTop: "12px" }}>{data.closing}</p>
               </div>

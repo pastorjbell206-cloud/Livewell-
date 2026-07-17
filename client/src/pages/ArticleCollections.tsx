@@ -235,7 +235,7 @@ export function ArticleCollections() {
       <section
         style={{
           background: "var(--charcoal)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
           padding: "var(--s-6) var(--s-4) var(--s-5)",
         }}
       >

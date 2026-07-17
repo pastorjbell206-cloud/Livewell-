@@ -38,7 +38,7 @@ export default function GovernanceLibrary() {
     <Layout>
       <SEOMeta title="The Board Governance and Policy Library — Templates for a Healthy Church" description="The policies a healthy church needs, each with why it matters and a plain starter template you can copy and adapt. Starting points, not legal advice." url="https://www.livewellbyjamesbell.co/leadership/governance" />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}><Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · Governance and policy</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 4.6vw, 48px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>{data?.title ?? "The policies a church hopes it never needs."}</h1>
@@ -88,7 +88,7 @@ export default function GovernanceLibrary() {
           ))}
 
           {data.closing && (
-            <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)" }}>
+            <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--charcoal-fg)" }}>
               <div style={{ ...wrap, maxWidth: "760px" }}>
                 <p style={{ fontFamily: "var(--B)", fontSize: "15px", fontStyle: "italic", color: "rgba(245,240,230,0.7)", lineHeight: 1.7 }}>{data.closing}</p>
               </div>

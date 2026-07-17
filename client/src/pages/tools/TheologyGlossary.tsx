@@ -1086,7 +1086,7 @@ export default function TheologyGlossary() {
         style={{
           background: "var(--charcoal)",
           padding: "var(--s-7) 0 var(--s-6)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
         }}
       >
         <div style={wrap}>
@@ -1581,7 +1581,7 @@ export default function TheologyGlossary() {
       </section>
 
       {/* ============ FOOTER CTA ============ */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) 0", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) 0", color: "var(--charcoal-fg)" }}>
         <div style={{ ...wrap, textAlign: "center", maxWidth: "640px" }}>
           <h2
             style={{

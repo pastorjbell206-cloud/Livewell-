@@ -32,7 +32,7 @@ export default function SermonSeries() {
     <Layout>
       <SEOMeta title="The Sermon Series Library — Outlines for Preaching" description="Sermon series outlines for preaching, book by book and topical, each with the series arc and a per-sermon breakdown of text, big idea, and aim." url="https://www.livewellbyjamesbell.co/leadership/sermon-series" />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}><Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · Sermon series</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.5vw, 58px)", fontWeight: 400, lineHeight: 1.03, letterSpacing: "-0.03em", marginBottom: "16px", maxWidth: "20ch" }}>A year of preaching, mapped.</h1>

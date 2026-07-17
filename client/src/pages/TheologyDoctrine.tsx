@@ -81,7 +81,7 @@ export default function TheologyDoctrine() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/theology" style={{ color: "inherit" }}>Theological Depth</Link> · Doctrine
@@ -242,7 +242,7 @@ export default function TheologyDoctrine() {
       )}
 
       {/* FOOTER NAV */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--charcoal-fg)" }}>
         <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "16px", justifyContent: "space-between", alignItems: "center" }}>
           <Link href="/theology/how-to-use" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>How to read this fairly</Link>
           <Link href="/theology" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>All doctrines</Link>

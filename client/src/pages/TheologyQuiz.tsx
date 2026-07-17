@@ -173,10 +173,10 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
       <MinimalNav />
 
       {/* Hero */}
-      <section style={{ background: "var(--ink)", padding: "60px 20px 40px", textAlign: "center" }}>
+      <section style={{ background: "var(--charcoal)", padding: "60px 20px 40px", textAlign: "center" }}>
         <div style={{ maxWidth: "700px", margin: "0 auto" }}>
           <div style={{ fontSize: "12px", letterSpacing: "2px", color: "var(--gold)", fontWeight: "bold", marginBottom: "12px", textTransform: "uppercase" }}>FREE ASSESSMENT</div>
-          <h1 style={{ fontSize: "clamp(32px, 5vw, 48px)", fontWeight: "bold", color: "var(--paper)", fontFamily: "var(--F)", marginBottom: "16px" }}>
+          <h1 style={{ fontSize: "clamp(32px, 5vw, 48px)", fontWeight: "bold", color: "var(--charcoal-fg)", fontFamily: "var(--F)", marginBottom: "16px" }}>
             Where Do You Stand Theologically?
           </h1>
           <p style={{ fontSize: "16px", color: "rgba(255,255,255,0.75)", lineHeight: "1.7", margin: "0 0 12px" }}>

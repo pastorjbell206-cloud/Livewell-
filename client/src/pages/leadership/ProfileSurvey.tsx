@@ -132,7 +132,7 @@ export default function ProfileSurvey() {
     <Layout>
       {data && <SEOMeta title={`${data.title} — A Survey for Leaders`} description={data.subtitle} url={`https://www.livewellbyjamesbell.co/leadership/survey/${slug}`} />}
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}><Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · Survey</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 4.6vw, 48px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>{data?.title ?? (error ? "The survey" : "Loading…")}</h1>
@@ -210,13 +210,13 @@ function Bar({ pct }: { pct: number }) {
 function ProfileResult({ scored, closing }: { scored: { dim: Dimension; pct: number; level: Level | null }[]; overallPct: number; closing: string }) {
   const sorted = [...scored].sort((a, b) => a.pct - b.pct);
   return (
-    <div style={{ background: "var(--charcoal)", color: "var(--bone)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: "3px solid var(--mustard)" }}>
+    <div style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: "3px solid var(--mustard)" }}>
       <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "8px" }}>The profile</div>
       <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,0.75)", marginBottom: "var(--s-4)" }}>Weakest areas first. The point is not a grade. It is to show you where the work is.</p>
       {sorted.map((s) => (
         <div key={s.dim.id} style={{ marginBottom: "var(--s-4)" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
-            <strong style={{ fontFamily: "var(--F)", fontSize: "20px", color: "var(--bone)" }}>{s.dim.name}</strong>
+            <strong style={{ fontFamily: "var(--F)", fontSize: "20px", color: "var(--charcoal-fg)" }}>{s.dim.name}</strong>
             <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard)" }}>{Math.round(s.pct * 100)}</span>
           </div>
           <Bar pct={s.pct} />
@@ -232,7 +232,7 @@ function RankedResult({ ranked, topN, closing }: { ranked: { dim: Dimension; avg
   const top = ranked.slice(0, topN);
   const rest = ranked.slice(topN);
   return (
-    <div style={{ background: "var(--charcoal)", color: "var(--bone)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: "3px solid var(--mustard)" }}>
+    <div style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: "3px solid var(--mustard)" }}>
       <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "8px" }}>Your strongest areas</div>
       <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,0.75)", marginBottom: "var(--s-4)" }}>A test like this points, it does not pronounce. The body confirms a gift over time, in the using of it.</p>
       {top.map((s, i) => (

@@ -19,7 +19,7 @@ export default function LeadershipHub() {
     <Layout>
       <SEOMeta title="Leadership Formation — Tools and Writing for Pastors and Leaders" description="A working library for the pastor and lay leader: the inner life, leading people, preaching, administration, and the building of churches. Plus a team workspace." url="https://www.livewellbyjamesbell.co/leadership" />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>Leadership Formation</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 400, lineHeight: 1.02, letterSpacing: "-0.03em", marginBottom: "20px", maxWidth: "20ch" }}>
@@ -124,10 +124,10 @@ export default function LeadershipHub() {
         );
       })}
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <SectionArt seed="leadership-close" tone="dark" />
-          <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, lineHeight: 1.5, color: "var(--bone)", maxWidth: "60ch", marginBottom: "14px" }}>
+          <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, lineHeight: 1.5, color: "var(--charcoal-fg)", maxWidth: "60ch", marginBottom: "14px" }}>
             The work is long and local and mostly unseen. It was always going to be. The question is not whether you can build a crowd. It is whether you can be faithful in a place over time.
           </p>
         </div>

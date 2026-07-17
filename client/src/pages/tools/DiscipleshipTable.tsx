@@ -166,7 +166,7 @@ export default function DiscipleshipTable() {
         url="https://www.livewellbyjamesbell.co/tools/discipleship-table"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>A tool · Make disciples</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 50px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "16ch" }}>
@@ -312,7 +312,7 @@ export default function DiscipleshipTable() {
               </div>
 
               {/* Multiply */}
-              <div style={{ background: "var(--charcoal)", padding: "var(--s-4)", color: "var(--bone)" }}>
+              <div style={{ background: "var(--charcoal)", padding: "var(--s-4)", color: "var(--charcoal-fg)" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
                   <Sprout size={16} style={{ color: "var(--mustard)" }} />
                   <span style={{ ...eyebrow, color: "var(--mustard)" }}>How to multiply</span>

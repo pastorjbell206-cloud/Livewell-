@@ -73,18 +73,18 @@ export function ReadingPathDetail() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-3) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.5rem" }}>Reading path</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.1rem, 4.5vw, 3rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1.2rem" }}>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.1rem, 4.5vw, 3rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: "1.2rem" }}>
             {path.title}
           </h1>
-          <p style={{ color: "var(--bone)", opacity: 0.8, fontSize: "1.05rem", lineHeight: 1.7, marginBottom: "1.5rem" }}>
+          <p style={{ color: "var(--charcoal-fg)", opacity: 0.8, fontSize: "1.05rem", lineHeight: 1.7, marginBottom: "1.5rem" }}>
             {path.description}
           </p>
-          <p style={{ fontFamily: "var(--U)", fontSize: "0.8rem", letterSpacing: "0.08em", color: "var(--bone)", opacity: 0.55 }}>
+          <p style={{ fontFamily: "var(--U)", fontSize: "0.8rem", letterSpacing: "0.08em", color: "var(--charcoal-fg)", opacity: 0.55 }}>
             {done} essay{done === 1 ? "" : "s"} to read in order
             {planned > 0 ? ` · ${planned} more coming` : ""}
           </p>
           {resume && resume.slug && (
-            <p style={{ marginTop: "1.1rem", fontFamily: "var(--U)", fontSize: "0.85rem", color: "var(--bone)", opacity: 0.85 }}>
+            <p style={{ marginTop: "1.1rem", fontFamily: "var(--U)", fontSize: "0.85rem", color: "var(--charcoal-fg)", opacity: 0.85 }}>
               You have read {readHere} of {done}.{" "}
               <Link href={`/writing/${resume.slug}`} style={{ color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.15rem" }}>
                 Pick up at {String(resumeIndex + 1).padStart(2, "0")} — {resume.title}

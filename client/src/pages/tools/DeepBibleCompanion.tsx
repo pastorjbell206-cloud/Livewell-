@@ -2123,10 +2123,10 @@ export default function DeepBibleCompanion() {
       <section className="db-screen" style={{ background: "var(--charcoal, #1a1a1a)", padding: "5rem 1.5rem 4rem" }}>
         <div style={{ maxWidth: "780px", margin: "0 auto" }}>
           <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", fontFamily: "var(--U, Inter, sans-serif)", marginBottom: "1.5rem" }}>FLAGSHIP TOOL</div>
-          <h1 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--bone, #F5F0E6)", marginBottom: "1rem" }}>
+          <h1 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--charcoal-fg, #F5F0E6)", marginBottom: "1rem" }}>
             Deep Bible Study Companion
           </h1>
-          <p style={{ fontSize: "1rem", lineHeight: 1.7, color: "var(--bone, #F5F0E6)", opacity: 0.6, maxWidth: "560px" }}>
+          <p style={{ fontSize: "1rem", lineHeight: 1.7, color: "var(--charcoal-fg, #F5F0E6)", opacity: 0.6, maxWidth: "560px" }}>
             Seminary-level depth. Kitchen-table language. Six layers of analysis for every passage. No pastor required. No seminary required. Just you, the text, and the tools to understand it.
           </p>
         </div>
@@ -2406,7 +2406,7 @@ export default function DeepBibleCompanion() {
                   </div>
                   <div style={{ padding: "1.25rem", background: "var(--charcoal, #1a1a1a)", borderRadius: "2px" }}>
                     <h4 style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", marginBottom: "0.75rem" }}>A Prayer From This Passage</h4>
-                    <p style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1rem", fontStyle: "italic", lineHeight: 1.7, color: "var(--bone, #F5F0E6)" }}>{selectedPassage.deeper.prayer}</p>
+                    <p style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1rem", fontStyle: "italic", lineHeight: 1.7, color: "var(--charcoal-fg, #F5F0E6)" }}>{selectedPassage.deeper.prayer}</p>
                   </div>
                 </div>
               )}

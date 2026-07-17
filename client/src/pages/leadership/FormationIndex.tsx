@@ -52,7 +52,7 @@ export default function FormationIndex() {
         url="https://www.livewellbyjamesbell.co/leadership/formation"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Leadership Formation · Deep topics</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.2vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
@@ -89,7 +89,7 @@ export default function FormationIndex() {
             ))
           )}
 
-          <div style={{ marginTop: "var(--s-4)", background: "var(--charcoal)", padding: "var(--s-4)", color: "var(--bone)" }}>
+          <div style={{ marginTop: "var(--s-4)", background: "var(--charcoal)", padding: "var(--s-4)", color: "var(--charcoal-fg)" }}>
             <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>Start with yourself</div>
             <p style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.5, marginBottom: "16px", maxWidth: "56ch" }}>
               The first person a leader must learn to lead is himself. The Formation Inventory is a character-first diagnostic. It asks the questions you answer at midnight, not the ones you answer in interviews.

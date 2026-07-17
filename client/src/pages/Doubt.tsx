@@ -85,7 +85,7 @@ export default function Doubt() {
       <MinimalNav />
 
       {/* HERO SECTION */}
-      <section style={{ background: "var(--ink)", color: "var(--paper)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <h1 style={{ fontSize: "clamp(36px, 5vw, 56px)", fontWeight: "bold", lineHeight: "1.2", marginBottom: "24px", fontFamily: "var(--F)" }}>
             When the Questions Won't Stop
@@ -170,7 +170,7 @@ export default function Doubt() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "24px" }}>
             {HARD_QUESTIONS.map((item, i) => (
               <Link key={i} href={item.href} style={{ textDecoration: "none" }}>
-                <div style={{ background: "var(--ink)", color: "var(--paper)", padding: "32px", borderRadius: "8px", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "space-between", minHeight: "100px" }}>
+                <div style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "32px", borderRadius: "8px", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "space-between", minHeight: "100px" }}>
                   <h3 style={{ fontSize: "16px", fontWeight: "bold", margin: 0 }}>
                     {item.q}
                   </h3>

@@ -96,7 +96,7 @@ export default function WholeBibleSermons() {
             { "@type": "ListItem", position: 3, name: book.name, item: `${SITE_URL}/leadership/bible-sermons/${book.id}` },
           ] }}
         />
-        <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+        <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
           <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
             <Link href="/leadership/bible-sermons" style={{ ...eyebrow, color: "var(--mustard)", textDecoration: "none" }}>← Whole-Bible Library · {book.group}</Link>
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 4.6vw, 50px)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", margin: "14px 0 12px" }}>
@@ -184,7 +184,7 @@ export default function WholeBibleSermons() {
         description="Free, Christ-centered sermon series for all 66 books of the Bible: the big idea, the Christ connection, and a ready-to-preach arc for each."
         url={`${SITE_URL}/leadership/bible-sermons`}
       />
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={wrap}>
           <div style={{ ...eyebrow, color: "var(--mustard)" }}>Leadership Formation · For preachers</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "16px 0 16px", maxWidth: "18ch" }}>
@@ -215,16 +215,16 @@ export default function WholeBibleSermons() {
         </section>
       ))}
 
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={wrap}>
           <div style={{ ...eyebrow, color: "var(--mustard)" }}>Beyond the books</div>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3vw, 32px)", fontWeight: 400, color: "var(--bone)", margin: "10px 0 var(--s-4)" }}>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3vw, 32px)", fontWeight: 400, color: "var(--charcoal-fg)", margin: "10px 0 var(--s-4)" }}>
             Topical &amp; seasonal series
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "var(--s-3)" }}>
             {data.topical.map((s) => (
               <div key={s.id} style={{ background: "var(--panel, #1d1b15)", border: "1px solid rgba(245,240,230,0.12)", padding: "var(--s-3)" }}>
-                <div style={{ fontFamily: "var(--F)", fontSize: "20px", color: "var(--bone)", lineHeight: 1.2, marginBottom: "6px" }}>{s.title}</div>
+                <div style={{ fontFamily: "var(--F)", fontSize: "20px", color: "var(--charcoal-fg)", lineHeight: 1.2, marginBottom: "6px" }}>{s.title}</div>
                 <div style={{ fontFamily: "var(--F)", fontSize: "15px", fontStyle: "italic", color: "rgba(245,240,230,0.7)", marginBottom: "10px" }}>{s.headline}</div>
                 <div style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.06em", color: "var(--mustard)" }}>{s.parts} parts</div>
               </div>

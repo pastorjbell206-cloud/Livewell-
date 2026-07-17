@@ -95,7 +95,7 @@ function SeriesIndex({ onSelect }: { onSelect: (s: SermonSeriesData) => void }) 
         style={{
           background: "var(--charcoal)",
           padding: "96px 32px 72px",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
           position: "relative",
           overflow: "hidden",
         }}
@@ -381,7 +381,7 @@ function SeriesDetail({
         style={{
           background: "var(--charcoal)",
           padding: "56px 32px 48px",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
         }}
       >
         <div style={WRAP_NARROW}>
