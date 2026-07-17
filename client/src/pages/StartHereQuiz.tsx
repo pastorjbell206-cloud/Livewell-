@@ -107,54 +107,54 @@ export default function StartHereQuiz() {
     "marriage-crisis-articles": {
       title: "Marriage Under Strain",
       articles: [
-        { title: "Zanah: When You Keep the Vows and Give Away the Heart", slug: "zanah-when-you-keep-the-vows" },
-        { title: "The Mirror Doesn't Lie", slug: "the-mirror-doesnt-lie" },
-        { title: "Hustle Culture Is Idolatry", slug: "hustle-culture-is-idolatry" }
+        { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
+        { title: "The Monster in the Mirror", slug: "the-monster-in-the-mirror" },
+        { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
       ],
       book: "What If We're Wrong?"
     },
     "marriage-searching-articles": {
       title: "Building Covenant Strength",
       articles: [
-        { title: "Zanah: When You Keep the Vows and Give Away the Heart", slug: "zanah-when-you-keep-the-vows" },
-        { title: "The Mirror Doesn't Lie", slug: "the-mirror-doesnt-lie" },
-        { title: "The Generational Cost", slug: "the-generational-cost" }
+        { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
+        { title: "The Monster in the Mirror", slug: "the-monster-in-the-mirror" },
+        { title: "What We Owe Generations", slug: "what-we-owe-generations" }
       ],
       book: "The Monster in the Mirror"
     },
     "parenting-crisis-articles": {
       title: "Parenting Through Uncertainty",
       articles: [
-        { title: "The Generational Cost", slug: "the-generational-cost" },
-        { title: "The Mirror Doesn't Lie", slug: "the-mirror-doesnt-lie" },
-        { title: "Hustle Culture Is Idolatry", slug: "hustle-culture-is-idolatry" }
+        { title: "What We Owe Generations", slug: "what-we-owe-generations" },
+        { title: "The Monster in the Mirror", slug: "the-monster-in-the-mirror" },
+        { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
       ],
       book: "When God Bless America Replaces Thy Kingdom Come"
     },
     "doubt-crisis-articles": {
       title: "Finding Faith in the Questions",
       articles: [
-        { title: "The Mirror Doesn't Lie", slug: "the-mirror-doesnt-lie" },
+        { title: "The Monster in the Mirror", slug: "the-monster-in-the-mirror" },
         { title: "Constantine's Bargain", slug: "constantines-bargain" },
-        { title: "Germany's Warning", slug: "germanys-warning" }
+        { title: "Why a Frightened Church Wants a King", slug: "strongman-theology" }
       ],
       book: "What If We're Wrong?"
     },
     "pastoral-articles": {
       title: "Pastoral Leadership & Burnout",
       articles: [
-        { title: "Why We Need Each Other", slug: "why-we-need-each-other" },
-        { title: "Hustle Culture Is Idolatry", slug: "hustle-culture-is-idolatry" },
-        { title: "The Generational Cost", slug: "the-generational-cost" }
+        { title: "Can You Be a Christian on Your Own?", slug: "can-you-be-a-christian-alone" },
+        { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" },
+        { title: "What We Owe Generations", slug: "what-we-owe-generations" }
       ],
       book: "The Monster in the Mirror"
     },
     "default": {
       title: "Essential LiveWell Collection",
       articles: [
-        { title: "The Mirror Doesn't Lie", slug: "the-mirror-doesnt-lie" },
-        { title: "Zanah: When You Keep the Vows and Give Away the Heart", slug: "zanah-when-you-keep-the-vows" },
-        { title: "Germany's Warning", slug: "germanys-warning" }
+        { title: "The Monster in the Mirror", slug: "the-monster-in-the-mirror" },
+        { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
+        { title: "Why a Frightened Church Wants a King", slug: "strongman-theology" }
       ],
       book: "The Monster in the Mirror"
     }
