@@ -332,11 +332,15 @@ function manifestPages() {
     // The 208 wisdom topics (/wisdom/:id) — "what the Bible says about X" pages,
     // rendered from client/public/wisdom/topics.json which keys by `id`.
     { file: "client/public/wisdom/topics.json", key: "topics", slugField: "id", prefix: "/wisdom/" },
+    // The Topic Pathways (/pathways/:slug) — guided reading routes. Their
+    // manifest is a bare array, handled by the Array.isArray fallback below.
+    { file: "client/public/pathways/index.json", prefix: "/pathways/" },
   ];
   for (const s of sources) {
     try {
       const data = JSON.parse(fs.readFileSync(s.file, "utf8"));
-      for (const entry of data[s.key] || []) {
+      const items = Array.isArray(data) ? data : data[s.key] || [];
+      for (const entry of items) {
         const slug = entry.slug || (s.slugField ? entry[s.slugField] : undefined);
         if (slug) pages.push({ url: `${s.prefix}${slug}`, priority: "0.75", changefreq: "monthly" });
       }
