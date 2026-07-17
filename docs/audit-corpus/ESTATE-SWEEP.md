@@ -8,12 +8,23 @@
 > rendering (needs a browser to confirm), requires a design decision, or would
 > break code (string-concatenated hex). Work top-down with a preview open.
 
-## Class 1 — `#FFFFFF` / `"white"` card & input surfaces → `var(--card)` (~90 sites)
+## Class 1 — `#FFFFFF` / `"white"` card & input surfaces → `var(--card)`
 
-The house pattern is `var(--card)` (flips dark in dark mode). These hardcoded
-whites stay white in dark mode. Swapping is *probably* the fix — but if any
-card's inner text is also hardcoded dark, the swap creates dark-on-dark.
-Verify each page once in dark mode after swapping.
+**STATUS: mostly CLOSED.** ~113 sites across 47 files were swapped to
+`var(--card)` after a per-card verification that every descendant text color is
+a token (provably correct in both themes — the swap *fixes* the prior
+white-card-on-dark-page defect). Only the dark-on-dark risk cases were held back
+(see below). The list of sites that follows is the historical map; the
+tokenized-content subset is done.
+
+**Still open — cards whose text is `var(--charcoal)`** (a *fixed-dark* token
+that flips darker, so `var(--card)` bg would be dark-on-dark in dark mode).
+Fix = retoken the card's text (`--charcoal` → `--ink`) *and* swap the bg,
+confirmed in a browser: `pages/ReadingPaths.tsx:357`, `pages/tools/SavedItems.tsx`
+(4 cards: 137/185/229/239). Plus `pages/tools/DeepBibleCompanion.tsx` (hardcoded
+`#666`/`#999` text on white cards — retoken text + surfaces together, in a
+browser). `BookDetail.tsx:129` is a white *section* (not a card) — decide
+`--bone` vs a lifted band.
 
 - pages root: ArticleCollections 308 · BookBundles 202 · BookDetail 121, 129
   (129 is a white *section* — decide `--bone` vs a lifted `--card` band) ·

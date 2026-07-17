@@ -481,7 +481,7 @@ export default function ParentingGuide() {
                   onClick={() => setSelectedId(g.id)}
                   style={{
                     padding: "28px 16px",
-                    background: "white",
+                    background: "var(--card)",
                     border: "1px solid var(--border)",
                     borderRadius: "6px",
                     fontSize: "18px",
@@ -542,7 +542,7 @@ export default function ParentingGuide() {
               {/* Title card */}
               <div
                 style={{
-                  background: "white",
+                  background: "var(--card)",
                   borderRadius: "8px",
                   padding: "40px 36px",
                   borderTop: "4px solid var(--mustard)",
@@ -577,7 +577,7 @@ export default function ParentingGuide() {
               {/* What your child needs */}
               <div
                 style={{
-                  background: "white",
+                  background: "var(--card)",
                   borderRadius: "8px",
                   padding: "36px",
                 }}
@@ -639,7 +639,7 @@ export default function ParentingGuide() {
               {/* How to talk about God */}
               <div
                 style={{
-                  background: "white",
+                  background: "var(--card)",
                   borderRadius: "8px",
                   padding: "36px",
                 }}
@@ -698,7 +698,7 @@ export default function ParentingGuide() {
               {/* Common mistakes */}
               <div
                 style={{
-                  background: "white",
+                  background: "var(--card)",
                   borderRadius: "8px",
                   padding: "36px",
                 }}
@@ -790,7 +790,7 @@ export default function ParentingGuide() {
               {/* One practice */}
               <div
                 style={{
-                  background: "white",
+                  background: "var(--card)",
                   borderRadius: "8px",
                   padding: "36px",
                   borderLeft: "4px solid var(--mustard)",

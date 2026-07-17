@@ -254,7 +254,7 @@ export default function VerseFinder() {
         <div className="wrap" style={{ maxWidth: "900px" }}>
           <div style={{
             padding: "28px 32px",
-            background: "white",
+            background: "var(--card)",
             border: "1px solid var(--border)",
             borderRadius: "10px",
             borderLeft: "4px solid var(--gold)",
@@ -310,7 +310,7 @@ export default function VerseFinder() {
               style={{
                 width: "100%",
                 padding: "12px 16px 12px 40px",
-                background: "white",
+                background: "var(--card)",
                 border: "1px solid var(--border)",
                 borderRadius: "6px",
                 fontSize: "14px",
@@ -329,7 +329,7 @@ export default function VerseFinder() {
                 aria-pressed={selected === topic}
                 style={{
                   padding: "14px 16px",
-                  background: selected === topic ? "var(--gold)" : "white",
+                  background: selected === topic ? "var(--gold)" : "var(--card)",
                   color: selected === topic ? "var(--ink)" : "var(--ink2)",
                   border: `1px solid ${selected === topic ? "var(--gold)" : "var(--border)"}`,
                   borderRadius: "6px",
@@ -353,7 +353,7 @@ export default function VerseFinder() {
               </h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                 {VERSES[selected].map((v) => (
-                  <div key={v.ref} style={{ padding: "24px", background: "white", border: "1px solid var(--border)", borderRadius: "8px", borderLeft: "4px solid var(--gold)" }}>
+                  <div key={v.ref} style={{ padding: "24px", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "8px", borderLeft: "4px solid var(--gold)" }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "12px" }}>
                       <Link href={`/theology/passage?ref=${encodeURIComponent(v.ref)}`} style={{ fontSize: "14px", fontWeight: 700, color: "var(--gold)", fontFamily: "var(--U)", textDecoration: "none" }}>{v.ref} →</Link>
                       <div style={{ display: "flex", gap: "6px" }}>

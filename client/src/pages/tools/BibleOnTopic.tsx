@@ -261,7 +261,7 @@ export default function BibleOnTopic() {
                   aria-pressed={on}
                   style={{
                     cursor: "pointer", padding: "8px 14px",
-                    background: on ? "var(--mustard)" : "#FFFFFF",
+                    background: on ? "var(--mustard)" : "var(--card)",
                     color: on ? "var(--charcoal)" : "var(--ink)",
                     border: "1px solid rgba(20,17,12,0.12)",
                     fontFamily: "var(--U)", fontWeight: 600, fontSize: "13.5px",
@@ -290,7 +290,7 @@ export default function BibleOnTopic() {
 
             <div style={{ display: "grid", gap: "10px" }}>
               {topic.verses.map((v) => (
-                <div key={v.ref} style={{ background: "#FFFFFF", borderLeft: "3px solid var(--mustard)", padding: "var(--s-3)" }}>
+                <div key={v.ref} style={{ background: "var(--card)", borderLeft: "3px solid var(--mustard)", padding: "var(--s-3)" }}>
                   <Link href={`/theology/passage?ref=${encodeURIComponent(v.ref)}`} style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, letterSpacing: "0.06em", color: "var(--mustard-text)", marginBottom: "6px", textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>{v.ref} →</Link>
                   <div style={{ fontFamily: "var(--B)", fontSize: "16.5px", lineHeight: 1.65, color: "var(--ink)" }}>{v.text}</div>
                 </div>

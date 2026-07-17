@@ -168,7 +168,7 @@ export default function WholeBibleSermons() {
   const BookCard = ({ b }: { b: Book }) => {
     const authored = Boolean(data.series[b.id]);
     return (
-      <Link href={`/leadership/bible-sermons/${b.id}`} style={{ display: "block", background: "#FFFFFF", border: "1px solid var(--border)", borderTop: `2px solid ${authored ? "var(--mustard)" : "var(--border)"}`, padding: "12px 14px", textDecoration: "none" }}>
+      <Link href={`/leadership/bible-sermons/${b.id}`} style={{ display: "block", background: "var(--card)", border: "1px solid var(--border)", borderTop: `2px solid ${authored ? "var(--mustard)" : "var(--border)"}`, padding: "12px 14px", textDecoration: "none" }}>
         <div style={{ fontFamily: "var(--F)", fontSize: "18px", color: "var(--ink)", lineHeight: 1.2 }}>{b.name}</div>
         <div style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.04em", color: authored ? "var(--mustard-text)" : "var(--ink-muted)", marginTop: "6px" }}>
           {authored ? "Full series" : `${b.chapters} ch · outline`}

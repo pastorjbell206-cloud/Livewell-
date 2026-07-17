@@ -154,7 +154,7 @@ export function EmailResults({ toolName, resultsSummary }: EmailResultsProps) {
                 fontFamily: "var(--U)",
                 border: "1px solid var(--border)",
                 borderRadius: "2px",
-                background: "#FFFFFF",
+                background: "var(--card)",
                 color: "var(--ink)",
                 outline: "none",
               }}

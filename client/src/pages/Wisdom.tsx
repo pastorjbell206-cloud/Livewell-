@@ -47,7 +47,7 @@ function WisdomToday() {
     <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
       <div style={wrap}>
         <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>Wisdom for today</div>
-        <div style={{ background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-4)" }}>
+        <div style={{ background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-4)" }}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "10px" }}>{topic.label}</h2>
           {verse && (
             <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "var(--ink)", borderLeft: "3px solid var(--mustard)", paddingLeft: "16px", marginBottom: "14px" }}>
@@ -143,7 +143,7 @@ export default function Wisdom() {
           <PullQuote>Most of your life is lived in the place no single command reaches.</PullQuote>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(260px, 100%), 1fr))", gap: "var(--s-2)" }}>
             {ARENAS.map((a) => (
-              <div key={a.topic} style={{ background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)" }}>
+              <div key={a.topic} style={{ background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)" }}>
                 <div style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.2, color: "var(--ink)", marginBottom: "10px" }}>{a.label}</div>
                 <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
                   <Link href={`/tools/bible-on?topic=${a.topic}`} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none" }}>
@@ -171,15 +171,15 @@ export default function Wisdom() {
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "6px" }}>Three ways in</h2>
           <div style={{ width: "36px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-3)" }} />
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "var(--s-3)" }}>
-            <Link href="/life/wisdom-for-all-of-life" style={{ display: "block", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
+            <Link href="/life/wisdom-for-all-of-life" style={{ display: "block", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
               <div style={{ fontFamily: "var(--F)", fontSize: "21px", lineHeight: 1.2, color: "var(--ink)", marginBottom: "8px" }}>The deep guide</div>
               <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.55, color: "var(--ink-muted)" }}>An extensive walk through Proverbs, Ecclesiastes, and Job: the fear of the Lord, proverbs as patterns not promises, the honesty of vapor and gift, and Christ as the wisdom of God.</div>
             </Link>
-            <Link href="/tools/bible-on" style={{ display: "block", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
+            <Link href="/tools/bible-on" style={{ display: "block", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
               <div style={{ fontFamily: "var(--F)", fontSize: "21px", lineHeight: 1.2, color: "var(--ink)", marginBottom: "8px" }}>What the Bible says about</div>
               <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.55, color: "var(--ink-muted)" }}>A topical guide for the arenas of ordinary life, with the heart of the passages worth knowing by heart, ready to copy and carry.</div>
             </Link>
-            <Link href="/tools/proverbs-31" style={{ display: "block", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
+            <Link href="/tools/proverbs-31" style={{ display: "block", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
               <div style={{ fontFamily: "var(--F)", fontSize: "21px", lineHeight: 1.2, color: "var(--ink)", marginBottom: "8px" }}>Proverbs in 31 days</div>
               <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.55, color: "var(--ink-muted)" }}>A chapter of Proverbs a day, matched to the date, with the theme and the lines worth carrying into the day's decisions.</div>
             </Link>

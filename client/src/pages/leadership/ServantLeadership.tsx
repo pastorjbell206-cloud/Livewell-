@@ -117,7 +117,7 @@ export default function ServantLeadership() {
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.4vw, 34px)", fontWeight: 400, color: "var(--ink)", margin: "10px 0 var(--s-4)" }}>Five principles underneath the marks</h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--s-3)" }}>
             {PRINCIPLES.map(([n, name, line]) => (
-              <div key={n} style={{ background: "#FFFFFF", border: "1px solid var(--border)", borderTop: "2px solid var(--mustard)", padding: "18px 20px" }}>
+              <div key={n} style={{ background: "var(--card)", border: "1px solid var(--border)", borderTop: "2px solid var(--mustard)", padding: "18px 20px" }}>
                 <div style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 700, color: "var(--mustard-text)", letterSpacing: "0.1em" }}>{n}</div>
                 <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 8px", lineHeight: 1.2 }}>{name}</h3>
                 <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)", margin: 0 }}>{line}</p>
@@ -136,7 +136,7 @@ export default function ServantLeadership() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "var(--s-4)" }}>
             {MARKS.map((m) => (
-              <article key={m.n} style={{ background: "#FFFFFF", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)" }}>
+              <article key={m.n} style={{ background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)" }}>
                 <div style={{ display: "flex", gap: "16px", alignItems: "baseline", marginBottom: "10px" }}>
                   <span style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 700, color: "var(--mustard-text)" }}>{String(m.n).padStart(2, "0")}</span>
                   <h3 style={{ fontFamily: "var(--F)", fontSize: "25px", fontWeight: 500, color: "var(--ink)", margin: 0, lineHeight: 1.15 }}>{m.title}</h3>

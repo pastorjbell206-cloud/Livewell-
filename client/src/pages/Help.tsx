@@ -196,7 +196,7 @@ export default function Help() {
             {NEEDS.map((n) => {
               const isOpen = open === n.id;
               return (
-                <div key={n.id} style={{ background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderTop: `2px solid var(--mustard)`, padding: "var(--s-3)" }}>
+                <div key={n.id} style={{ background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: `2px solid var(--mustard)`, padding: "var(--s-3)" }}>
                   <button
                     onClick={() => setOpen(isOpen ? null : n.id)}
                     aria-expanded={isOpen}
