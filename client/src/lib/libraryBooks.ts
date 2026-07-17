@@ -7,6 +7,8 @@
  * reads as a browsable spine. Unknown pillar values sort to the end.
  */
 
+import { readStoredJSON } from "./storage";
+
 export interface LibraryBook {
   slug: string;
   title: string;
@@ -71,4 +73,18 @@ export function featuredAcrossPillars(books: LibraryBook[], limit = 6): LibraryB
     .map((g) => g.books[0])
     .filter(Boolean)
     .slice(0, limit);
+}
+
+// Reader progress — the single source of truth for the per-book progress key,
+// shared by BookReader (writes) and BookLibrary (reads "continue reading").
+export interface BookProgress {
+  chapter: number;
+}
+export const bookProgressKey = (slug: string) => `livewell-book-progress-${slug}`;
+export const isBookProgress = (x: unknown): x is BookProgress =>
+  !!x && typeof x === "object" && typeof (x as BookProgress).chapter === "number";
+
+/** The chapter the reader last had open for a book (1 if never opened). */
+export function readBookChapter(slug: string): number {
+  return readStoredJSON<BookProgress>(bookProgressKey(slug), isBookProgress, { chapter: 1 }).chapter;
 }

@@ -6,8 +6,14 @@
 
 ## Current phase
 
-**Forensic audit complete (Prompt 1).** The site is post-elevation and healthy;
-this was a fresh current-state pass, not a rescue. No public code changed yet.
+**Launch gate complete (Prompt 14).** PRs #395/#396/#421 merged; the final
+adversarial review ran against the full parallel-merge wave (five fresh-context
+reviewers + all gates) — no P0s; verified P1s fixed (BookPreview dialog
+keyboard contract, SR-invisible selection state in WhichLens/RuleOfLife, the
+emergency-unpublish redeploy requirement now mandatory in the runbook); the P2
+punch list is recorded in `docs/final-qa-report.md`. One reviewer P1 was
+rejected on verification (ShoppingCart is dead code). Gates on the final tree:
+check clean, build exit 0, 288 passed / 0 failed.
 
 ## Verified commands (this repo, this session)
 
@@ -34,24 +40,34 @@ citation rules; report what was run and what was **not** verified.
 - Two six-week email tracks written + verified (`docs/email-tracks/`), awaiting
   owner load into Mailchimp.
 
-## Current state (2026-07 audit findings)
+## Current state (post-execution, 2026-07)
 
-Gate-green. No P0s. No dead routes. Parity clean. Real actionable items, ranked
-in `docs/site-audit.md` and distilled in `docs/roadmap.md`. Highlights:
-- **P1** perf: `content-data-*.js` is a 2.7 MB (934 kB gz) monolithic chunk.
-- **P1** routing: `/books-store` + `/resources-for-pastors` orphaned behind 301s.
-- **P1** SEO: dynamic `SEOMeta` on `/nation/*`, prophetic hubs, doctrine slugs
-  isn't prerender-covered; canonical host (www vs apex) mismatch vs CLAUDE.md.
-- **P1** brand: token-drift in `StartHereQuiz`, `QuoteLibrary`,
-  `FamilyDevotionBuilder`, `ArticleCard`.
-- **P2** a11y: mobile-drawer + search-overlay focus management.
+Gate-green (285 tests, 0 failed). No P0s. No dead routes. Parity clean. The
+audit's P1 set is **closed**, each line resolved one of three ways (full detail
+in `docs/site-audit.md`):
+- **Fixed:** ArticleCard token-drift (`--pillar-justice`); JSON-LD `/about`
+  URLs derive from `SITE_URL`; `vercel.json` redirect dedupe; mobile-nav
+  `aria-controls`; orphaned `/books-store` + `/resources-for-pastors` retired.
+- **Decided with evidence:** canonical host is `www` (apex 301s to it, verified
+  against the Vercel project); CLAUDE.md aligned.
+- **Rejected on verification (do not "fix"):** the 2.7 MB `content-data` chunk
+  (lazy, admin-only — readers never load it); the "uncovered SEOMeta" routes
+  (prerender reports 0 uncovered); the "missing" `/about` Person schema
+  (present); the reading-path "consolidation" (`/reading-paths` and
+  `/pathways` are two intentional features).
+
+Next-Ten #4 (depth analytics) is **complete** — all four metrics emit to
+Vercel Analytics. PR #421 adds config-safe monthly/annual membership checkout.
 
 ## Next task
 
-Owner to greenlight the Prompt-2 execution pass (P1 fixes above), and/or the
-still-open Next-Ten machine item (#4 depth analytics). Owner-gated (⛔): Stripe
-activation, founder photos, canonical-host decision, `/start` vs `/start-here`,
-`DATABASE_URL` in the Vercel build.
+Merge PR #421 when green (standing owner directive: publish). After that, the
+open work is owner-gated or browser-dependent: Stripe activation (paste the
+Price ID(s) in Admin → Site Settings, then one live annual test purchase),
+founder photos, Mailchimp tracks (owner-deferred), `/start` vs `/start-here`
+canonical choice, `DATABASE_URL` in the Vercel build, and the two
+browser-verified P2s (mobile-drawer focus trap, FamilyDevotionBuilder
+dark-mode cards).
 
 ## Decisions / lessons for future sessions
 

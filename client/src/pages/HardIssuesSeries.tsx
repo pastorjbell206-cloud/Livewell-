@@ -124,6 +124,24 @@ const BOOKLETS: Booklet[] = [
 const ELDERSHIP = BOOKLETS.filter((b) => b.group === "eldership");
 const GOVERNING = BOOKLETS.filter((b) => b.group === "governing");
 
+// ItemList so the ten free booklets are indexed as one named series (each item
+// points at its downloadable PDF, which is the actual resource).
+const hardIssuesSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "The Hard Issues Series",
+  description:
+    "Ten free booklets for church leaders on eldership and church governance, from the Pastors Connection Network.",
+  url: `${SITE_URL}/resources/hard-issues-series`,
+  numberOfItems: BOOKLETS.length,
+  itemListElement: BOOKLETS.map((b, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: b.title,
+    url: `${SITE_URL}${b.pdf}`,
+  })),
+};
+
 const eyebrow: React.CSSProperties = {
   fontFamily: "var(--U)",
   fontSize: "0.75rem",
@@ -248,6 +266,7 @@ export default function HardIssuesSeries() {
         description="Ten free booklets for the men who lead the church: five on eldership and five on governing the local church. Free PDF and EPUB from the PCN."
         image={`${SITE_URL}/books/${BOOKLETS[0].slug}.jpg`}
         url={`${SITE_URL}/resources/hard-issues-series`}
+        structuredData={hardIssuesSchema}
       />
 
       {/* HERO */}

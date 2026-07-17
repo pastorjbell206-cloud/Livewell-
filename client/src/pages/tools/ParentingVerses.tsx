@@ -192,6 +192,7 @@ export default function ParentingVerses() {
                 key={t.id}
                 type="button"
                 onClick={() => { setActive(t.id); setQuery(""); }}
+                aria-pressed={active === t.id}
                 style={{
                   fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.04em",
                   padding: "8px 14px", borderRadius: "999px", cursor: "pointer",
@@ -213,12 +214,12 @@ export default function ParentingVerses() {
                   <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", marginBottom: "8px" }}>{v.text}</p>
                   <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px" }}>
                     <Link href={`/theology/passage?ref=${encodeURIComponent(v.ref)}`} style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>{v.ref} →</Link>
-                    <button type="button" onClick={() => copy(v)} aria-label={`Copy ${v.ref}`} style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "none", border: "none", cursor: "pointer", color: "var(--ink-muted)", fontFamily: "var(--U)", fontSize: "12px" }}>
+                    <button type="button" onClick={() => copy(v)} aria-label={`Copy ${v.ref}`} aria-live="polite" style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "none", border: "none", cursor: "pointer", color: "var(--ink-muted)", fontFamily: "var(--U)", fontSize: "12px" }}>
                       {copied === v.ref ? <><Check size={14} /> Copied</> : <><Copy size={14} /> Copy</>}
                     </button>
                   </div>
                   {copyFailed === v.ref && (
-                    <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "8px 0 0" }}>
+                    <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "8px 0 0" }}>
                       Copy failed — select and copy manually.
                     </p>
                   )}

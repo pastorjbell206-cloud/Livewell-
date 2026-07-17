@@ -17,61 +17,7 @@ import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { trpc } from "@/lib/trpc";
 import { SITE_URL } from "@/lib/site";
 import { NEWSLETTER_PITCH_SKEPTIC } from "@/lib/positioning";
-
-interface Stop {
-  /** Suggested article slug to fill this stop. */
-  slug?: string;
-  title: string;
-  pitch: string;
-}
-
-// The argument arc. Bell will hand-pick the actual essays; until then the
-// page renders the arc with a "coming soon" affordance for slugs not yet
-// in the DB. The page itself ships now.
-const STOPS: Stop[] = [
-  {
-    slug: "the-questions-that-actually-matter",
-    title: "1. The questions that actually matter.",
-    pitch:
-      "Most defenses of Christianity answer questions skeptics aren't asking. Here are the ones that actually land.",
-  },
-  {
-    slug: "what-secular-explanations-still-have-to-explain",
-    title: "2. What secular explanations still have to explain.",
-    pitch:
-      "The case for atheism is stronger than the church admits. It also leaves real things uncovered. Both can be true.",
-  },
-  {
-    slug: "the-problem-of-suffering-honestly",
-    title: "3. The problem of suffering, honestly.",
-    pitch:
-      "The standard apologetic responses are too clean. The biblical responses are messier — and more livable.",
-  },
-  {
-    slug: "the-historical-jesus-without-the-shortcuts",
-    title: "4. The historical Jesus, without the shortcuts.",
-    pitch:
-      "What you can defend historically. What you can't. What changes if the resurrection happened.",
-  },
-  {
-    slug: "the-bible-without-the-marketing",
-    title: "5. The Bible without the marketing.",
-    pitch:
-      "Inerrancy is a fairly recent dogma. Inspiration is older. Read scripture the way Christians have actually read it.",
-  },
-  {
-    slug: "morality-without-god-and-with-him",
-    title: "6. Morality without God — and with him.",
-    pitch:
-      "The argument that you can't be moral without God is bad and embarrassing. The argument that morality points somewhere is better.",
-  },
-  {
-    slug: "what-following-this-actually-costs",
-    title: "7. What following this actually costs.",
-    pitch:
-      "If you take Christianity seriously, here's what changes. Not your weekend. Your money, your marriage, your politics.",
-  },
-];
+import { SKEPTIC_STOPS } from "@/lib/skepticTrack";
 
 export default function SkepticTrack() {
   const { data: articles } = trpc.posts.listForIndex.useQuery();
@@ -85,7 +31,7 @@ export default function SkepticTrack() {
     description:
       "Seven essays in argument order — written for skeptics first, by a pastor who came to faith from atheism.",
     url: trackUrl,
-    itemListElement: STOPS.map((s, i) => ({
+    itemListElement: SKEPTIC_STOPS.map((s, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: s.title,
@@ -160,64 +106,68 @@ export default function SkepticTrack() {
       {/* THE STOPS */}
       <section style={{ background: "var(--bone)", padding: "var(--s-7) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-          {STOPS.map(stop => {
+          {SKEPTIC_STOPS.map(stop => {
             const post = stop.slug ? bySlug.get(stop.slug) : undefined;
-            const href = post ? `/writing/${post.slug}` : "/writing";
+            // The body of a stop: the title, pitch, and status line. Rendered
+            // inside a <Link> when the essay is live, and inside a plain <div>
+            // (no href, not clickable) when it is still in progress, so an
+            // unwritten stop is never an active promise.
+            const body = (
+              <div style={{ cursor: post ? "pointer" : "default" }}>
+                <h2
+                  style={{
+                    fontFamily: "var(--F)",
+                    fontSize: "28px",
+                    fontWeight: 400,
+                    letterSpacing: "-0.015em",
+                    color: post ? "var(--ink)" : "var(--ink-muted)",
+                    lineHeight: 1.2,
+                    marginBottom: "12px",
+                  }}
+                >
+                  {stop.title}
+                </h2>
+                <p
+                  style={{
+                    fontFamily: "var(--B)",
+                    fontSize: "16px",
+                    lineHeight: 1.7,
+                    color: "var(--ink-muted)",
+                    marginBottom: "14px",
+                    maxWidth: "62ch",
+                  }}
+                >
+                  {stop.pitch}
+                </p>
+                <div
+                  style={{
+                    fontFamily: "var(--U)",
+                    fontSize: "12px",
+                    fontWeight: 600,
+                    letterSpacing: "0.08em",
+                    textTransform: "uppercase",
+                    color: post ? "var(--mustard-text)" : "var(--ink-muted)",
+                  }}
+                >
+                  {post ? `Read · ${post.readingTimeMinutes ?? 8} min` : "Essay in progress"}
+                </div>
+              </div>
+            );
             return (
               <article
                 key={stop.title}
-                style={{
-                  borderTop: "1px solid var(--border)",
-                  padding: "var(--s-4) 0",
-                }}
+                style={{ borderTop: "1px solid var(--border)", padding: "var(--s-4) 0" }}
               >
-                <Link href={href} style={{ textDecoration: "none", color: "inherit" }}>
-                  <div
-                    style={{
-                      cursor: post ? "pointer" : "default",
-                    }}
+                {post ? (
+                  <Link
+                    href={`/writing/${post.slug}`}
+                    style={{ textDecoration: "none", color: "inherit" }}
                   >
-                    <h2
-                      style={{
-                        fontFamily: "var(--F)",
-                        fontSize: "28px",
-                        fontWeight: 400,
-                        letterSpacing: "-0.015em",
-                        color: "var(--ink)",
-                        lineHeight: 1.2,
-                        marginBottom: "12px",
-                      }}
-                    >
-                      {stop.title}
-                    </h2>
-                    <p
-                      style={{
-                        fontFamily: "var(--B)",
-                        fontSize: "16px",
-                        lineHeight: 1.7,
-                        color: "var(--ink-muted)",
-                        marginBottom: "14px",
-                        maxWidth: "62ch",
-                      }}
-                    >
-                      {stop.pitch}
-                    </p>
-                    <div
-                      style={{
-                        fontFamily: "var(--U)",
-                        fontSize: "12px",
-                        fontWeight: 600,
-                        letterSpacing: "0.08em",
-                        textTransform: "uppercase",
-                        color: post ? "var(--mustard-text)" : "var(--ink-muted)",
-                      }}
-                    >
-                      {post
-                        ? `Read · ${post.readingTimeMinutes ?? 8} min`
-                        : "Essay landing soon"}
-                    </div>
-                  </div>
-                </Link>
+                    {body}
+                  </Link>
+                ) : (
+                  body
+                )}
               </article>
             );
           })}

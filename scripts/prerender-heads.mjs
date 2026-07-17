@@ -516,6 +516,43 @@ function bookSchema(book, url, image) {
   };
 }
 
+// BreadcrumbList so a search result shows the trail (Home › Section › Title)
+// and the page's place in the site. crumbs: [{ name, path }] — path is relative
+// to SITE_URL (empty string = the home page).
+function breadcrumbSchema(crumbs) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: crumbs.map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: c.name,
+      item: `${SITE_URL}${c.path}`,
+    })),
+  };
+}
+
+// Route prefix → the section hub the item sits under (all verified real routes).
+// The middle crumb of each library page's breadcrumb. Absent → a 2-level trail.
+const SECTION_BY_ROUTE = {
+  "/leadership/article/": { name: "Leadership Library", path: "/leadership/library" },
+  "/resources/context/": { name: "Context Guides", path: "/resources/context" },
+  "/leadership/formation/": { name: "Leadership Formation", path: "/leadership/formation" },
+  "/life/": { name: "The Integrated Life", path: "/life" },
+  "/resources/creeds/": { name: "Creeds & Confessions", path: "/resources/creeds" },
+  "/theology/history/": { name: "Church History", path: "/theology/history" },
+  "/studyguides/": { name: "Study Guides", path: "/studyguides" },
+  "/table/": { name: "The Table", path: "/table" },
+  "/how-tos/": { name: "How-To Library", path: "/how-tos" },
+  "/read/": { name: "Books", path: "/read" },
+  "/plans/": { name: "Care Plans", path: "/plans" },
+  "/theology/doctrine/": { name: "Theology", path: "/theology" },
+  "/leadership/bible-sermons/": { name: "Sermon Series", path: "/leadership/bible-sermons" },
+  "/justice/topic/": { name: "Prophetic Justice", path: "/justice" },
+  "/disruption/topic/": { name: "Prophetic Disruption", path: "/disruption" },
+  "/wisdom/": { name: "Wisdom", path: "/wisdom" },
+};
+
 function escapeHtml(s) {
   return String(s ?? "")
     .replace(/&/g, "&amp;")
@@ -702,19 +739,58 @@ async function main() {
         : OG_DEFAULT;
       const description = e[src.desc || "blurb"] || e.blurb || e.subtitle
         || (src.descTemplate ? src.descTemplate.replace(/\{title\}/g, title) : title);
-      const head = buildHead({ title, description, url, image, type: src.type || "article" });
-      // Read the entry's full content file (when present) and inject its prose
-      // into #root so the page indexes at full depth, not as an empty shell.
-      let bodyHtml = "";
+      // Read the entry's full content file (when present) up front: the prose
+      // injects into #root at full depth, and for books its chapter list also
+      // feeds the Book schema below.
+      let contentObj;
       if (src.contentDir) {
         const cf = path.join(REPO_ROOT, src.contentDir, `${slug}.json`);
         if (fs.existsSync(cf)) {
-          try {
-            const obj = JSON.parse(fs.readFileSync(cf, "utf8"));
-            bodyHtml = bodyFromContent({ title, subtitle: e.subtitle || description, sectionLabel: e.group || e.kicker, contentObj: obj });
-            if (bodyHtml) withBody++;
-          } catch { /* leave head-only */ }
+          try { contentObj = JSON.parse(fs.readFileSync(cf, "utf8")); }
+          catch { /* leave head-only */ }
         }
+      }
+      // Books get a subtitle-enriched <title> (matching the client SEOMeta) and
+      // a Book JSON-LD carrying every chapter as a hasPart node, so search can
+      // deep-link the exact chapter that answers a reader's question.
+      const headTitle = src.type === "book" && e.subtitle ? `${title} — ${e.subtitle}` : title;
+      // BreadcrumbList (Home › Section › Title) on every library page.
+      const section = SECTION_BY_ROUTE[src.route];
+      const crumbs = [{ name: "Home", path: "" }];
+      if (section) crumbs.push(section);
+      crumbs.push({ name: title, path: `${src.route}${slug}` });
+      const schemas = [breadcrumbSchema(crumbs)];
+      if (src.type === "book") {
+        const chapters = Array.isArray(contentObj?.chapters) ? contentObj.chapters : [];
+        schemas.push({
+          "@context": "https://schema.org",
+          "@type": "Book",
+          name: title,
+          ...(e.subtitle ? { alternativeHeadline: e.subtitle } : {}),
+          ...(e.blurb ? { description: e.blurb } : {}),
+          author: { "@type": "Person", name: AUTHOR_NAME },
+          url,
+          bookFormat: "https://schema.org/EBook",
+          inLanguage: "en",
+          isAccessibleForFree: true,
+          ...(chapters.length ? { numberOfPages: chapters.length } : {}),
+          ...(chapters.length ? {
+            hasPart: chapters.map((c) => ({
+              "@type": "Chapter",
+              position: c.n,
+              name: c.title,
+              url: `${url}#ch-${c.n}`,
+            })),
+          } : {}),
+        });
+      }
+      const head = buildHead({ title: headTitle, description, url, image, type: src.type || "article", schemas });
+      let bodyHtml = "";
+      if (contentObj) {
+        try {
+          bodyHtml = bodyFromContent({ title, subtitle: e.subtitle || description, sectionLabel: e.group || e.kicker, contentObj });
+          if (bodyHtml) withBody++;
+        } catch { /* leave head-only */ }
       }
       writeRoute(template, { path: `${src.route}${slug}` }, head, bodyHtml);
       wrote++;
@@ -810,6 +886,10 @@ async function main() {
     for (const u of uncovered) console.log(`  - ${u}`);
   }
 
+  // Track which /writing/:slug essays already got prerendered from the DB, so
+  // the static-library pass below doesn't double-write them.
+  const writtenEssaySlugs = new Set();
+
   // DB-driven pages
   const conn = await loadDb();
   if (conn) {
@@ -838,7 +918,14 @@ async function main() {
           type: "article",
           publishedDate: publishedIso,
           modifiedDate: modifiedIso,
-          schemas: [articleSchema(post, url, image)],
+          schemas: [
+            articleSchema(post, url, image),
+            breadcrumbSchema([
+              { name: "Home", path: "" },
+              { name: "Writing", path: "/writing" },
+              { name: post.title, path: `/writing/${post.slug}` },
+            ]),
+          ],
         });
         const bodyHtml = bodyFromContent({
           title: post.title,
@@ -848,6 +935,7 @@ async function main() {
         });
         writeRoute(template, { path: `/writing/${post.slug}` }, head, bodyHtml);
         wrote++;
+        writtenEssaySlugs.add(post.slug);
       }
 
       const [books] = await conn.query(
@@ -863,7 +951,14 @@ async function main() {
           url,
           image,
           type: "book",
-          schemas: [bookSchema(book, url, image)],
+          schemas: [
+            bookSchema(book, url, image),
+            breadcrumbSchema([
+              { name: "Home", path: "" },
+              { name: "Books", path: "/books" },
+              { name: book.title, path: `/books/${book.slug}` },
+            ]),
+          ],
         });
         writeRoute(template, { path: `/books/${book.slug}` }, head);
         wrote++;
@@ -890,6 +985,52 @@ async function main() {
     } finally {
       await conn.end();
     }
+  }
+
+  // Static-library essays. These are served by api/index.ts behind the live DB
+  // (no DB row of their own), so without this pass they appear in the sitemap
+  // but get the generic SPA shell head and an empty crawlable body. Prerender
+  // every static essay not already written from the DB. Runs with or without a
+  // DB connection, since the generated file is a committed build artifact.
+  try {
+    const staticLib = JSON.parse(
+      fs.readFileSync(path.join(REPO_ROOT, "content/static-library.generated.json"), "utf8")
+    );
+    let staticWrote = 0;
+    for (const rec of staticLib) {
+      if (!rec || !rec.slug || rec.published === false) continue;
+      if (writtenEssaySlugs.has(rec.slug)) continue;
+      const url = `${SITE_URL}/writing/${rec.slug}`;
+      const image = rec.coverImage || ogImageUrl(rec.title, rec.pillar || undefined);
+      const description = rec.excerpt || rec.title;
+      const publishedIso = rec.publishedAt
+        ? new Date(rec.publishedAt).toISOString()
+        : new Date(rec.createdAt || Date.parse("2026-01-01")).toISOString();
+      const modifiedIso = rec.updatedAt ? new Date(rec.updatedAt).toISOString() : publishedIso;
+      const head = buildHead({
+        title: rec.title,
+        description,
+        url,
+        image,
+        type: "article",
+        publishedDate: publishedIso,
+        modifiedDate: modifiedIso,
+        schemas: [articleSchema(rec, url, image)],
+      });
+      const bodyHtml = bodyFromContent({
+        title: rec.title,
+        subtitle: rec.excerpt || "",
+        sectionLabel: rec.pillar || "",
+        markdown: rec.body || "",
+      });
+      writeRoute(template, { path: `/writing/${rec.slug}` }, head, bodyHtml);
+      wrote++;
+      staticWrote++;
+      writtenEssaySlugs.add(rec.slug);
+    }
+    console.log(`[prerender] static library: ${staticWrote} essays prerendered (of ${staticLib.length})`);
+  } catch (e) {
+    console.warn(`[prerender] static library skipped: ${e.message}`);
   }
 
   console.log(`[prerender] wrote ${wrote} per-route HTML files into ${DIST_DIR}`);

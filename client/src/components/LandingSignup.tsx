@@ -35,7 +35,7 @@ export function LandingSignup({ source }: { source: string }) {
 
   if (subscribe.isSuccess) {
     return (
-      <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--mustard)" }}>
+      <p role="status" style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--mustard)" }}>
         You're on the list. One essay a week, written slow.
       </p>
     );
@@ -51,7 +51,7 @@ export function LandingSignup({ source }: { source: string }) {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@example.com"
-          style={{ flex: 1, minWidth: 0, padding: "12px 16px", border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.05)", color: "white", fontFamily: "var(--U)", fontSize: "16px", borderRadius: "3px", outline: "none" }}
+          style={{ flex: 1, minWidth: 0, padding: "12px 16px", border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.05)", color: "var(--charcoal-fg)", fontFamily: "var(--U)", fontSize: "16px", borderRadius: "3px", outline: "none" }}
         />
         <button
           type="submit"
@@ -62,7 +62,7 @@ export function LandingSignup({ source }: { source: string }) {
         </button>
       </form>
       {subscribe.isError && (
-        <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(255,255,255,0.75)", marginTop: "10px" }}>
+        <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(255,255,255,0.75)", marginTop: "10px" }}>
           That didn't go through. Try again in a moment.
         </p>
       )}

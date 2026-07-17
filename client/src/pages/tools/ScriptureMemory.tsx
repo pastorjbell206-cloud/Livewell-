@@ -653,6 +653,7 @@ export default function ScriptureMemory() {
                         {/* Mark as memorized */}
                         <button
                           onClick={() => toggleMemorized(verse.ref)}
+                          aria-pressed={isMemorized}
                           style={{
                             display: "flex",
                             alignItems: "center",
@@ -698,6 +699,7 @@ export default function ScriptureMemory() {
                           <button
                             key={m}
                             onClick={() => setMode(verse.ref, m)}
+                            aria-pressed={mode === m}
                             style={{
                               padding: "6px 14px",
                               background:
@@ -762,6 +764,7 @@ export default function ScriptureMemory() {
                                   [verse.ref]: !prev[verse.ref],
                                 }))
                               }
+                              aria-expanded={answerVisible}
                               style={{
                                 display: "flex",
                                 alignItems: "center",
@@ -830,6 +833,7 @@ export default function ScriptureMemory() {
                                   [verse.ref]: !prev[verse.ref],
                                 }))
                               }
+                              aria-expanded={answerVisible}
                               style={{
                                 display: "flex",
                                 alignItems: "center",
@@ -894,6 +898,7 @@ export default function ScriptureMemory() {
                               handleRecallInput(verse.ref, e.target.value)
                             }
                             placeholder="Type the verse here…"
+                            aria-label="Type the verse from memory"
                             rows={4}
                             style={{
                               width: "100%",
@@ -944,6 +949,7 @@ export default function ScriptureMemory() {
                                   [verse.ref]: !prev[verse.ref],
                                 }))
                               }
+                              aria-expanded={answerVisible}
                               style={{
                                 display: "flex",
                                 alignItems: "center",
@@ -971,6 +977,7 @@ export default function ScriptureMemory() {
                             {recallResult !== null &&
                               recallResult !== undefined && (
                                 <span
+                                  aria-live="polite"
                                   style={{
                                     fontSize: "13px",
                                     fontWeight: 700,

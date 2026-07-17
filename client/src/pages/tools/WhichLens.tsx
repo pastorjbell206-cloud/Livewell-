@@ -221,7 +221,7 @@ export default function WhichLens() {
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           {!done && q && !reviewing && (
             <div>
-              <p style={{ fontFamily: "var(--U)", fontSize: "0.72rem", fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-muted)", marginBottom: "1.4rem" }}>
+              <p aria-live="polite" style={{ fontFamily: "var(--U)", fontSize: "0.72rem", fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-muted)", marginBottom: "1.4rem" }}>
                 {step + 1} of {QUESTIONS.length}
               </p>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.4rem, 3vw, 1.85rem)", fontWeight: 400, lineHeight: 1.25, color: "var(--ink)", marginBottom: "2rem", maxWidth: "34ch" }}>
@@ -297,6 +297,7 @@ export default function WhichLens() {
                     <button
                       key={key}
                       onClick={() => setAnswers((prev) => ({ ...prev, [i]: key }))}
+                      aria-pressed={answers[i] === key}
                       style={{
                         display: "block", width: "100%", textAlign: "left", cursor: "pointer",
                         background: answers[i] === key ? "var(--charcoal)" : "#FFFFFF",

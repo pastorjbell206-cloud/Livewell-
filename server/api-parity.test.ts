@@ -41,6 +41,13 @@ const KNOWN_PROD_GAPS = new Set<string>([
   // will flag any new drift.
 ]);
 
+// SCOPE NOTE (launch-gate finding): this test walks `trpc.` call sites only.
+// Plain REST endpoints (/api/track, /api/admin/errors, /api/checkout,
+// /api/subscribe) sit outside its net — some are deliberately prod-only
+// (error ingest) and their clients fail soft in dev. If you add a REST
+// endpoint the client depends on for core behavior, mirror it in the dev
+// Express server or extend this test to cover fetch("/api/...") call sites.
+
 function walk(dir: string): string[] {
   const out: string[] = [];
   for (const entry of readdirSync(dir)) {

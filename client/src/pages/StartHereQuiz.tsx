@@ -274,6 +274,7 @@ export default function StartHereQuiz() {
                   <button
                     key={i}
                     onClick={() => handleSelect(option.value)}
+                    aria-pressed={answers[QUESTIONS[currentStep].id] === option.value}
                     style={{
                       background: answers[QUESTIONS[currentStep].id] === option.value ? option.color : "#FFF",
                       color: answers[QUESTIONS[currentStep].id] === option.value ? "#FFF" : "var(--ink)",

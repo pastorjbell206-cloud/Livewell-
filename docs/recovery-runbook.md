@@ -18,7 +18,10 @@ still one link away.
 **Fixed this wave (both runtimes):** an unpublished post now 404s at its direct
 URL, and prod no longer falls through to the static library for a taken-down
 slug (which would have resurfaced the copy). Verified: tsc clean both runtimes,
-api-parity 2/2, server suite 232 passed.
+api-parity 2/2, server suite 232 passed. **Caveat (launch-gate finding):** the
+404 covers the *dynamic* resolver; the build-time prerendered static HTML for
+the slug keeps serving the full text until the next deploy — see step 3 of the
+procedure below.
 
 **The takedown is now complete** (both levers shipped):
 - **DB essays** — the admin `published=false` (above), honored at the URL and in
@@ -31,15 +34,29 @@ api-parity 2/2, server suite 232 passed.
 
 ### Emergency-unpublish procedure (both levers)
 To hard-pull an essay, belt and suspenders:
-1. If it has a DB row: Admin → Content → the essay → **Unpublish** (404s the URL,
-   drops from listings/search).
+1. If it has a DB row: Admin → Content → the essay → **Unpublish** (404s the
+   dynamic URL, drops from listings/search).
 2. Add its slug to the `TAKEN_DOWN` set in `api/index.ts` and deploy — this pulls
    it from the static-served listings and URL regardless of DB state, and is the
    *only* lever for a static-only essay.
-3. Purge the CDN cache for that path if immediacy matters.
+3. **Redeploy — not optional.** The build bakes each essay's FULL TEXT into a
+   prerendered static file (`scripts/prerender-heads.mjs` →
+   `dist/public/writing/<slug>/index.html`), and Vercel serves that static file
+   until the next deploy. A DB unpublish alone leaves the complete essay
+   readable in the raw HTML (and to crawlers). Step 2's deploy covers this; if
+   you only did step 1, trigger a redeploy anyway (an empty commit or the
+   Vercel "Redeploy" button both work — the DB-driven prerender skips
+   unpublished rows at build time).
+4. Purge the CDN cache for that path if immediacy matters.
 
 For a safety/legal emergency, do step 2 first (one commit + deploy pulls it
-everywhere the static library serves it) and review after.
+everywhere, including the prerendered file) and review after. **No takedown is
+complete until a deploy has run after it.**
+
+Known P2 residue: `scripts/generate-sitemap.mjs` merges the static library
+without consulting `TAKEN_DOWN`, so a taken-down static slug stays listed in
+sitemap.xml (the URL 404s once deployed). Fix path: extract the blocklist to a
+shared file both consume.
 
 ## Backup surfaces
 

@@ -117,6 +117,7 @@ const LivingWell = lazy(() => import("./pages/LivingWell"));
 const SiteMapPage = lazy(() => import("./pages/Map"));
 const TheologyExplorer = lazy(() => import("./pages/TheologyExplorer"));
 const WhichLens = lazy(() => import("./pages/tools/WhichLens"));
+const TestTheCase = lazy(() => import("./pages/tools/TestTheCase"));
 const CaptureByTheRight = lazy(() => import("./pages/pillars/CaptureByTheRight"));
 const CaptureByTheLeft = lazy(() => import("./pages/pillars/CaptureByTheLeft"));
 const ReadingScripturePastOurPolitics = lazy(() => import("./pages/pillars/ReadingScripturePastOurPolitics"));
@@ -584,6 +585,7 @@ function Router() {
         <Route path="/search" component={SearchPage} />
         <Route path="/tools/theology-quiz" component={TheologyQuiz} />
         <Route path="/tools/which-lens" component={WhichLens} />
+        <Route path="/tools/test-the-case" component={TestTheCase} />
         {/* Legacy alias; vercel.json 301s /quiz to /tools/theology-quiz */}
         <Route path="/quiz" component={TheologyQuiz} />
         <Route path="/skeptic-track" component={SkepticTrack} />

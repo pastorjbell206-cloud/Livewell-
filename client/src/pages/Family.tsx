@@ -10,6 +10,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { ArrowRight, ChevronDown } from "lucide-react";
+import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBlocks";
@@ -214,7 +215,9 @@ export default function Family() {
             </div>
           ) : (
             <div style={grid}>
-              <LinkCard href="/skeptic-track" title="Start here if you're a skeptic" desc="Seven essays in argument order, for anyone working out whether this is true." />
+              {SKEPTIC_TRACK_LIVE && (
+                <LinkCard href="/skeptic-track" title="Start here if you're a skeptic" desc="Seven essays in argument order, for anyone working out whether this is true." />
+              )}
               <LinkCard href="/doubt" title="On doubt" desc="Doubt is not the enemy of faith. What to do with the questions." />
             </div>
           )}

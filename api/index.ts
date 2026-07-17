@@ -1150,6 +1150,7 @@ function staticFullCard(r: any): any {
     body: r.body || null, content: r.body || null,
     pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
     readingTimeMinutes: r.readingTimeMinutes || readTime(null),
+    format: r.format || "article",
     published: true, featured: false, topic: r.topic || null,
     audience: r.audience || null, contentType: r.contentType || null,
     subPathway: null, isSeries: false,
@@ -1171,6 +1172,9 @@ function byDateDesc(a: any, b: any): number {
 // add its slug here, deploy, and it is gone everywhere the static library serves
 // it (the direct URL and the listings). Code-level, auditable, only ever
 // removes content. Keep empty until a piece must come down.
+// NOTE: scripts/generate-sitemap.mjs parses this exact single-line declaration
+// at build time to drop taken-down slugs from the sitemap — keep the
+// `const TAKEN_DOWN = new Set<string>([...])` shape if you edit it.
 const TAKEN_DOWN = new Set<string>([]);
 
 // Append the static essays the DB doesn't already have (DB wins on slug), then
@@ -1219,11 +1223,17 @@ async function listSlimPosts(): Promise<any[]> {
       // It must live in SQL: slim rows carry body:null, so the client-side
       // isFullEssay check has nothing to measure in production.
       const where = "WHERE published = true AND CHAR_LENGTH(body) >= 600";
+      // The dev runtime (server/db.ts listPostsForIndex) already returns
+      // readingTimeMinutes, format, audience and topic; prod must match so the
+      // archive shows real read times and a format badge, and the Format/
+      // Audience filters work. bodyChars lets us derive an accurate read time
+      // without shipping the body when the stored minutes are missing.
+      const rich = `${base}, readingTimeMinutes, format, audience, topic, subPathway, isSeries, CHAR_LENGTH(body) AS bodyChars`;
       // Try the two-level taxonomy columns; fall back if the migration hasn't run.
       let rows: any = null;
       try {
         [rows] = await c.execute(
-          `SELECT ${base}, subPathway, isSeries FROM posts ${where} ORDER BY createdAt DESC LIMIT 2000`
+          `SELECT ${rich} FROM posts ${where} ORDER BY createdAt DESC LIMIT 2000`
         );
       } catch {
         try {
@@ -1237,6 +1247,10 @@ async function listSlimPosts(): Promise<any[]> {
           id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
           body: null, content: null,
           pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
+          readingTimeMinutes:
+            r.readingTimeMinutes ||
+            (r.bodyChars ? Math.max(1, Math.round(Number(r.bodyChars) / 5.5 / 225)) : undefined),
+          format: r.format ?? null, audience: r.audience ?? null,
           published: r.published, featured: r.featured, topic: r.topic || null,
           subPathway: r.subPathway ?? null, isSeries: !!r.isSeries,
           createdAt: r.createdAt || r.publishedAt, publishedAt: r.publishedAt || r.createdAt,
@@ -1280,6 +1294,10 @@ async function trpcGetPost(id: number | string): Promise<any | null> {
             id: r.id, slug: r.slug, title: r.title, excerpt: r.excerpt || "",
             body: r.body || null, content: r.body || null,
             pillar: r.pillar || "Theological Depth", readTime: r.readTime || "5 min",
+            readingTimeMinutes:
+              r.readingTimeMinutes ||
+              readTime(r.body ? String(r.body).split(/\s+/).filter(Boolean).length : null),
+            format: r.format ?? null, audience: r.audience ?? null,
             published: r.published, featured: r.featured,
             createdAt: r.createdAt, publishedAt: r.publishedAt || r.createdAt,
           };
@@ -2164,25 +2182,32 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         return trpcOk(res, { success: true });
       }
       case "stripe.membershipEnabled": {
-        if (!stripeConfigured()) return trpcOk(res, { enabled: false });
-        const priceId = await withConn(async (c) => {
+        if (!stripeConfigured()) return trpcOk(res, { enabled: false, annual: false });
+        const [priceId, annualPriceId] = await withConn(async (c) => {
           const [rows]: any = await c.execute(
-            "SELECT settingValue FROM site_settings WHERE settingKey = ?",
-            ["stripeMembershipPriceId"],
+            "SELECT settingKey, settingValue FROM site_settings WHERE settingKey IN (?, ?)",
+            ["stripeMembershipPriceId", "stripeMembershipPriceIdAnnual"],
           );
-          return rows[0]?.settingValue ?? null;
+          const byKey = Object.fromEntries((rows as any[]).map((r) => [r.settingKey, r.settingValue]));
+          return [byKey["stripeMembershipPriceId"] ?? null, byKey["stripeMembershipPriceIdAnnual"] ?? null];
         });
-        return trpcOk(res, { enabled: !!(priceId && String(priceId).trim()) });
+        return trpcOk(res, {
+          enabled: !!(priceId && String(priceId).trim()),
+          annual: !!(annualPriceId && String(annualPriceId).trim()),
+        });
       }
       case "stripe.createMembershipCheckout": {
         const stripe = getStripe();
         if (!stripe || !stripeConfigured()) return trpcErr(res, "BAD_REQUEST", "Membership is not open yet.", 400);
         const email = typeof input?.customerEmail === "string" ? input.customerEmail : "";
         if (!email) return trpcErr(res, "BAD_REQUEST", "A valid email is required.", 400);
+        // plan selects monthly (default) or annual; annual uses its own price id.
+        const settingKey =
+          input?.plan === "annual" ? "stripeMembershipPriceIdAnnual" : "stripeMembershipPriceId";
         const priceId = await withConn(async (c) => {
           const [rows]: any = await c.execute(
             "SELECT settingValue FROM site_settings WHERE settingKey = ?",
-            ["stripeMembershipPriceId"],
+            [settingKey],
           );
           return String(rows[0]?.settingValue ?? "").trim();
         });
@@ -3344,6 +3369,16 @@ async function recordPageView(req: VercelRequest, res: VercelResponse) {
           "INSERT INTO client_errors (message, stack, kind, path, visitorId) VALUES (?, ?, ?, ?, ?)",
           [message, stack, kind, path, visitorId]
         );
+        // Retention (launch-gate P2): the ingest is unauthenticated, so the
+        // table must not grow without bound. Piggyback an occasional bounded
+        // purge on ~2% of inserts — idx_ce_created makes it cheap, LIMIT keeps
+        // it short, and 30 days comfortably covers the admin panel's 7-day
+        // window. Best-effort like everything else in this handler.
+        if (Math.random() < 0.02) {
+          await c.execute(
+            "DELETE FROM client_errors WHERE createdAt < NOW() - INTERVAL 30 DAY LIMIT 500"
+          );
+        }
       });
       return json(res, 200, { ok: true });
     }

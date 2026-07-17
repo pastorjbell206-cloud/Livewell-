@@ -555,6 +555,7 @@ export default function MarriageAssessment() {
                     backgroundClip: "content-box",
                   }}
                   aria-label={`Go to ${cat.name}`}
+                  aria-current={i === currentCategory ? "step" : undefined}
                 />
               ))}
             </div>
@@ -725,6 +726,7 @@ export default function MarriageAssessment() {
                         <button
                           key={value}
                           onClick={() => handleRate(q.id, value)}
+                          aria-pressed={isSelected}
                           style={{
                             padding: "10px 16px",
                             borderRadius: "2px",

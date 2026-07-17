@@ -822,7 +822,7 @@ export default function FormationInventory() {
                 </div>
 
                 <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "var(--s-3)" }}>
-                  <button onClick={copyResults} style={primaryBtn}>{copied ? "Copied" : "Copy results"}</button>
+                  <button onClick={copyResults} aria-live="polite" style={primaryBtn}>{copied ? "Copied" : "Copy results"}</button>
                   <button onClick={() => window.print()} style={quietBtn}>Print your results</button>
                   <button onClick={retake} style={quietBtn}>Retake the inventory</button>
                   {history.length > 0 && <button onClick={clearHistory} style={quietBtn}>Clear history</button>}

@@ -114,7 +114,7 @@ export default function AdminDeduplicate() {
         )}
 
         {done && (
-          <div className="rounded p-4 mb-6 flex items-center gap-2 font-body" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)", color: "var(--charcoal)" }}>
+          <div role="status" className="rounded p-4 mb-6 flex items-center gap-2 font-body" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)", color: "var(--charcoal)" }}>
             <CheckCircle2 size={18} style={{ color: "var(--adm-ok)" }} />
             Retired {done.updated} {done.updated === 1 ? "copy" : "copies"}. The list below is refreshed.
           </div>

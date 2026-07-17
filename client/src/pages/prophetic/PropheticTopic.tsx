@@ -93,12 +93,12 @@ export default function PropheticTopic({ config }: { config: SectionConfig }) {
         <div style={wrap}>
           <Head kicker="The church's record" title="Where it led, and where it failed" />
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "16px" }}>
-            <div style={{ ...card, padding: "var(--s-4)", borderTop: "3px solid #3E5C3A" }}>
-              <div className="eyebrow" style={{ color: "#3E5C3A", marginBottom: "8px" }}>Where it led</div>
+            <div style={{ ...card, padding: "var(--s-4)", borderTop: "3px solid var(--ok)" }}>
+              <div className="eyebrow" style={{ color: "var(--ok)", marginBottom: "8px" }}>Where it led</div>
               <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)" }}>{t.churchRecord.led}</p>
             </div>
-            <div style={{ ...card, padding: "var(--s-4)", borderTop: "3px solid #7A1F1F" }}>
-              <div className="eyebrow" style={{ color: "#7A1F1F", marginBottom: "8px" }}>Where it failed</div>
+            <div style={{ ...card, padding: "var(--s-4)", borderTop: "3px solid var(--alert)" }}>
+              <div className="eyebrow" style={{ color: "var(--alert)", marginBottom: "8px" }}>Where it failed</div>
               <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)" }}>{t.churchRecord.failed}</p>
             </div>
           </div>

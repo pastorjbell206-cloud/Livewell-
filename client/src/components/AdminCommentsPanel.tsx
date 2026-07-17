@@ -34,6 +34,7 @@ export function AdminCommentsPanel() {
       <div className="flex gap-4 border-b" style={{ borderColor: "var(--line)" }}>
         <button
           onClick={() => setActiveTab("pending")}
+          aria-pressed={activeTab === "pending"}
           className={`px-4 py-2 font-medium transition-colors ${
             activeTab === "pending"
               ? "border-b-2"
@@ -48,6 +49,7 @@ export function AdminCommentsPanel() {
         </button>
         <button
           onClick={() => setActiveTab("approved")}
+          aria-pressed={activeTab === "approved"}
           className={`px-4 py-2 font-medium transition-colors ${
             activeTab === "approved"
               ? "border-b-2"
@@ -66,10 +68,10 @@ export function AdminCommentsPanel() {
       {isLoading && (
         <div
           className="flex items-center justify-center gap-3 py-12 rounded-lg"
-          style={{ backgroundColor: "#F7F5F0" }}
+          style={{ backgroundColor: "var(--bone)" }}
         >
-          <Loader2 size={24} className="animate-spin" style={{ color: "#B8963E" }} />
-          <span style={{ color: "#6B7280" }}>Loading comments…</span>
+          <Loader2 size={24} className="animate-spin" style={{ color: "var(--mustard)" }} />
+          <span style={{ color: "var(--ink-muted)" }}>Loading comments…</span>
         </div>
       )}
 
@@ -117,7 +119,7 @@ export function AdminCommentsPanel() {
             {/* Content */}
             <p
               className="mb-4 leading-relaxed"
-              style={{ color: "#2C3E50" }}
+              style={{ color: "var(--ink)" }}
             >
               {comment.content}
             </p>
@@ -130,7 +132,7 @@ export function AdminCommentsPanel() {
                   disabled={approveMutation.isPending}
                   className="flex items-center gap-2"
                   style={{
-                    backgroundColor: "#10B981",
+                    backgroundColor: "var(--ok)",
                     color: "var(--bone)",
                   }}
                 >
@@ -144,7 +146,7 @@ export function AdminCommentsPanel() {
                 disabled={deleteMutation.isPending}
                 className="flex items-center gap-2"
                 style={{
-                  backgroundColor: "#EF4444",
+                  backgroundColor: "var(--alert)",
                   color: "var(--bone)",
                 }}
               >

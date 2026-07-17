@@ -258,6 +258,7 @@ export default function BibleOnTopic() {
                 <button
                   key={t.id}
                   onClick={() => { setTopicId(t.id); setCopied(false); setCopyFailed(false); }}
+                  aria-pressed={on}
                   style={{
                     cursor: "pointer", padding: "8px 14px",
                     background: on ? "var(--mustard)" : "#FFFFFF",
@@ -275,12 +276,12 @@ export default function BibleOnTopic() {
           <div style={{ maxWidth: "720px", borderTop: "2px solid var(--mustard)", paddingTop: "var(--s-4)" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", marginBottom: "var(--s-3)" }}>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 32px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)" }}>{topic.label}</h2>
-              <button onClick={copyTopic} style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "9px 16px", background: "var(--charcoal)", color: "var(--bone)", border: "none", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px" }}>
+              <button onClick={copyTopic} aria-live="polite" style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "9px 16px", background: "var(--charcoal)", color: "var(--bone)", border: "none", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px" }}>
                 {copied ? <Check size={15} /> : <Copy size={15} />} {copied ? "Copied" : "Copy"}
               </button>
             </div>
             {copyFailed && (
-              <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
+              <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
                 Copy failed — select and copy manually.
               </p>
             )}

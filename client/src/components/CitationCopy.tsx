@@ -149,6 +149,19 @@ export function CitationCopy({ title, url, publishedDate }: CitationCopyProps) {
           ))}
         </div>
       )}
+      <span
+        role="status"
+        style={{
+          position: "absolute",
+          width: "1px",
+          height: "1px",
+          overflow: "hidden",
+          clip: "rect(0 0 0 0)",
+          whiteSpace: "nowrap",
+        }}
+      >
+        {copiedFormat ? "Citation copied" : ""}
+      </span>
     </div>
   );
 }

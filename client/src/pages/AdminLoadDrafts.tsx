@@ -202,7 +202,7 @@ export default function AdminLoadDrafts() {
             </button>
           </div>
           {pubResult && (
-            <p className="font-body text-sm mt-3" style={{ color: "var(--adm-ok)" }}>
+            <p role="status" className="font-body text-sm mt-3" style={{ color: "var(--adm-ok)" }}>
               {pubResult.published ? "Published" : "Unpublished"} {pubResult.updated} {pubResult.updated === 1 ? "post" : "posts"}. Refresh your site to see them.
             </p>
           )}
@@ -230,7 +230,7 @@ export default function AdminLoadDrafts() {
         )}
 
         {result && (
-          <div className="rounded p-6" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}>
+          <div role="status" className="rounded p-6" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)" }}>
             <div className="flex items-center gap-2 mb-4">
               <CheckCircle2 size={20} style={{ color: "var(--adm-ok)" }} />
               <span className="font-ui font-semibold" style={{ color: "var(--charcoal)" }}>

@@ -249,6 +249,7 @@ export default function RuleOfLife() {
                     <button
                       key={p.id}
                       onClick={() => toggle(p.id)}
+                      aria-pressed={on}
                       style={{
                         textAlign: "left", cursor: "pointer", display: "flex", gap: "10px", alignItems: "flex-start",
                         padding: "12px 14px",
@@ -258,7 +259,7 @@ export default function RuleOfLife() {
                         fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.4,
                       }}
                     >
-                      <span style={{ flexShrink: 0, width: "16px", height: "16px", marginTop: "2px", border: `1.5px solid ${on ? "var(--mustard)" : "rgba(20,17,12,0.3)"}`, background: on ? "var(--mustard)" : "transparent", display: "inline-flex", alignItems: "center", justifyContent: "center" }}>
+                      <span aria-hidden style={{ flexShrink: 0, width: "16px", height: "16px", marginTop: "2px", border: `1.5px solid ${on ? "var(--mustard)" : "rgba(20,17,12,0.3)"}`, background: on ? "var(--mustard)" : "transparent", display: "inline-flex", alignItems: "center", justifyContent: "center" }}>
                         {on && <Check size={12} style={{ color: "var(--charcoal)" }} />}
                       </span>
                       {p.label}
@@ -275,7 +276,7 @@ export default function RuleOfLife() {
               <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)" }}>Your rule of life</h2>
               {chosen.size > 0 && (
                 <div style={{ display: "flex", gap: "10px" }}>
-                  <button onClick={copyRule} style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "9px 16px", background: "var(--charcoal)", color: "var(--bone)", border: "none", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px" }}>
+                  <button onClick={copyRule} aria-live="polite" style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "9px 16px", background: "var(--charcoal)", color: "var(--bone)", border: "none", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px" }}>
                     {copied ? <Check size={15} /> : <Copy size={15} />} {copied ? "Copied" : "Copy rule"}
                   </button>
                   <button onClick={reset} style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "9px 16px", background: "transparent", color: "var(--ink-muted)", border: "1px solid rgba(20,17,12,0.15)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px" }}>
@@ -285,7 +286,7 @@ export default function RuleOfLife() {
               )}
             </div>
             {copyFailed && (
-              <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
+              <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
                 Copy failed — select and copy manually.
               </p>
             )}

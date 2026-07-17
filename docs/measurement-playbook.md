@@ -2,7 +2,7 @@
 
 > Recommendation #2, the buildable half. The platform is now instrumented
 > (`essay_read_complete`, `path_step_complete`, `return_reader`,
-> `newsletter_signup` — see `docs/measurement-strategy.md`), but data without a
+> `essay_book_click`, `newsletter_signup` — see `docs/measurement-strategy.md`), but data without a
 > decision loop is exhaust. These are the reusable templates that make it steer:
 > a monthly review, a 30/60/90 arc, and an experiment register. Copy the template,
 > fill only with real data, and file the result.

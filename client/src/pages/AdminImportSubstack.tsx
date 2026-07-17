@@ -149,7 +149,7 @@ export default function AdminImportSubstack() {
         </div>
 
         {result && (
-          <div className="rounded p-4 mb-6 flex items-center gap-2 font-body" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)", color: "var(--charcoal)" }}>
+          <div role="status" className="rounded p-4 mb-6 flex items-center gap-2 font-body" style={{ backgroundColor: "var(--card)", border: "1px solid var(--adm-line)", color: "var(--charcoal)" }}>
             <CheckCircle2 size={18} style={{ color: "var(--adm-ok)" }} />
             Imported {result.inserted} as drafts{result.skipped.length ? `, skipped ${result.skipped.length} already present` : ""}. Find them under Writing Posts to review and publish.
           </div>

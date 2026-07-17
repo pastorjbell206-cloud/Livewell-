@@ -5,8 +5,8 @@
  * "lw-discipleship-v1". No account. No server. The page remembers where you
  * stopped, and that is all it does.
  */
-import { useState } from "react";
 import { Link } from "wouter";
+import { useProgress } from "@/hooks/useProgress";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { GeneratedCover } from "@/components/GeneratedCover";
@@ -282,28 +282,6 @@ const STAGES: Stage[] = [
 
 const ALL_STEPS: Step[] = STAGES.flatMap((s) => s.steps);
 
-function loadProgress(): Record<string, boolean> {
-  try {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
-    if (!raw) return {};
-    const parsed = JSON.parse(raw);
-    if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
-      return parsed as Record<string, boolean>;
-    }
-    return {};
-  } catch {
-    return {};
-  }
-}
-
-function saveProgress(progress: Record<string, boolean>) {
-  try {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
-  } catch {
-    // localStorage unavailable; the page still works, it just forgets.
-  }
-}
-
 const wrap = { maxWidth: "var(--w-content)", margin: "0 auto" } as const;
 
 const srOnly = {
@@ -399,26 +377,11 @@ function StepRow({ step, checked, onToggle }: { step: Step; checked: boolean; on
 }
 
 export default function Discipleship() {
-  const [done, setDone] = useState<Record<string, boolean>>(() => loadProgress());
-
-  const toggle = (id: string) => {
-    setDone((prev) => {
-      const next = { ...prev };
-      if (next[id]) delete next[id];
-      else next[id] = true;
-      saveProgress(next);
-      return next;
-    });
-  };
+  const { done, toggle, reset: clearProgress } = useProgress(STORAGE_KEY);
 
   const reset = () => {
     if (!window.confirm("Clear every checked step and start the pathway over?")) return;
-    setDone({});
-    try {
-      window.localStorage.removeItem(STORAGE_KEY);
-    } catch {
-      // Nothing to clear if storage is unavailable.
-    }
+    clearProgress();
   };
 
   const totalDone = ALL_STEPS.filter((s) => done[s.id]).length;

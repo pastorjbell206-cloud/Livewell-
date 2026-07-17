@@ -4,6 +4,7 @@
  * /family-reading-plans.json.
  */
 import { useEffect, useState } from "react";
+import { useProgress } from "@/hooks/useProgress";
 import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
@@ -15,6 +16,7 @@ interface Plan { id: string; title: string; description: string; audience: strin
 export default function FamilyReadingPlans() {
   const [plans, setPlans] = useState<Plan[]>([]);
   const [open, setOpen] = useState<string | null>(null);
+  const { isDone, toggle, count, reset, persisted } = useProgress("lw-family-reading-plans-v1");
 
   useEffect(() => {
     fetch("/family-reading-plans.json")
@@ -50,6 +52,17 @@ export default function FamilyReadingPlans() {
           {plans.length === 0 && (
             <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading plans…</p>
           )}
+          {plans.length > 0 && count > 0 && (
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "12px", marginBottom: "var(--s-3)" }}>
+              <span style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.04em", color: "var(--ink-muted)" }}>
+                {count} day{count === 1 ? "" : "s"} read{!persisted && " — couldn't save to this browser, your progress here will not survive a reload"}
+              </span>
+              <button type="button" onClick={reset}
+                style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink-muted)", background: "none", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "7px 13px", cursor: "pointer" }}>
+                Reset progress
+              </button>
+            </div>
+          )}
           {plans.map((plan) => {
             const isOpen = open === plan.id;
             return (
@@ -66,8 +79,11 @@ export default function FamilyReadingPlans() {
                 {isOpen && (
                   <div style={{ borderTop: "1px solid var(--border)" }}>
                     {plan.days.map((d) => (
-                      <div key={d.day} style={{ display: "flex", gap: "14px", padding: "12px var(--s-4)", borderBottom: "1px solid var(--border)" }}>
-                        <span style={{ fontFamily: "var(--F)", fontSize: "16px", color: "var(--mustard-text)", fontWeight: 500, minWidth: "52px" }}>Day {d.day}</span>
+                      <div key={d.day} style={{ display: "flex", gap: "14px", padding: "12px var(--s-4)", borderBottom: "1px solid var(--border)", alignItems: "flex-start" }}>
+                        <button type="button" onClick={() => toggle(`${plan.id}:${d.day}`)} aria-pressed={isDone(`${plan.id}:${d.day}`)} title="Mark this day read"
+                          style={{ fontFamily: "var(--F)", fontSize: "16px", color: "var(--mustard-text)", fontWeight: 500, minWidth: "62px", background: "none", border: "none", cursor: "pointer", textAlign: "left", padding: 0 }}>
+                          {isDone(`${plan.id}:${d.day}`) ? `✓ Day ${d.day}` : `Day ${d.day}`}
+                        </button>
                         <span>
                           <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)" }}>{d.passage}</span>
                           <span style={{ display: "block", fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", marginTop: "2px" }}>{d.prompt}</span>
