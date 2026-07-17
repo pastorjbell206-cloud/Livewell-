@@ -3,16 +3,25 @@
     {
       "slug": "essays-after-christendom",
       "title": "After Christendom",
-      "subtitle": "Faith after the church lost its cultural power",
+      "subtitle": "How to Follow Jesus When the Church Has Lost Its Power",
       "blurb": "Essays on the end of cultural Christianity, the death of Christendom, the rise of the nones, the early church under Rome, and what a faithful, exiled church looks like now.",
       "pillar": "Prophetic Disruption",
       "chapters": 9,
       "cover": "/books/essays-after-christendom.svg"
     },
     {
+      "slug": "essays-marriage-crisis-repair",
+      "title": "After the Affair",
+      "subtitle": "Rebuilding a Christian Marriage From Betrayal, Addiction, and Divorce",
+      "blurb": "Essays for marriages in the hardest places, affair recovery, addiction, mental health and depression, when divorce is faithful, second marriages, blended families, and a spouse who has lost faith.",
+      "pillar": "Integrated Life",
+      "chapters": 11,
+      "cover": "/books/essays-marriage-crisis-repair.svg"
+    },
+    {
       "slug": "born-again-from-atheism",
       "title": "Born Again From Atheism",
-      "subtitle": "How an Unbeliever Came to Faith, and What He Found There",
+      "subtitle": "How a Skeptic Came to Faith, and What He Found There",
       "blurb": "James Bell was not a lapsed churchgoer who wandered back. He was an atheist with reasons, raised without a father, formed by Russell and the company of the clear-eyed, and he still respects the man who held those arguments. This is the whole account of what moved, slowly, against his preference, and what it cost. It takes the case for unbelief at full strength, keeps the wound and the argument distinct, and follows the erosion through Otto and Lewis and a night with no lightning in it, to a pulpit in Fenton, Michigan, and a table with five sons at it. Written toward the reader still on the other side, who should finish able to disagree, and unable to say he was handled.",
       "pillar": "After Christendom",
       "chapters": 12,
@@ -21,7 +30,7 @@
     {
       "slug": "character-before-competence",
       "title": "Character Before Competence",
-      "subtitle": "Leading the Church Without Losing Your Soul",
+      "subtitle": "How to Lead the Church Without Losing Your Soul",
       "blurb": "The church keeps falling for the same lie, that a man who can do the work has therefore become the kind of man the work requires. This is a book about the difference, written by a working pastor who has stood on the wrong side of it. It traces the inner life of the leader from the qualifications God actually screens for to the day he hands the work to someone else, and it refuses, all the way through, to let the writer stand outside the indictment.",
       "pillar": "Leadership Formation",
       "chapters": 11,
@@ -30,7 +39,7 @@
     {
       "slug": "come-to-the-table",
       "title": "Come to the Table",
-      "subtitle": "Disciple Making in Homes for Ordinary Christians",
+      "subtitle": "How to Make Disciples at Home",
       "blurb": "Jesus taught crowds, but he made disciples at tables. This book recovers his method for people with no title and no training: the meal, the text, the question, and the sending. By the last chapter you will have set your first table.",
       "pillar": "The Table",
       "chapters": 12,
@@ -39,29 +48,11 @@
     {
       "slug": "common-grace",
       "title": "Common Grace",
-      "subtitle": "What Pastors Learn When They Listen to the World",
+      "subtitle": "What the Church Can Learn From the World Without Losing the Gospel",
       "blurb": "God did not lock his goodness inside the church. He scattered it across the whole field of human life, into the laboratory, the studio, the courtroom, the mouth of the honest unbeliever, and called it good before any of us got there. This is a book about the grace that is common: the kindness of God to people who do not yet know his name, and the slow, costly discipline of learning to recognize it without ever surrendering to it.",
       "pillar": "Theological Depth",
       "chapters": 17,
       "cover": "/books/common-grace.svg"
-    },
-    {
-      "slug": "dangerous-calling",
-      "title": "Dangerous Calling",
-      "subtitle": "Why the Office of Pastor Is Not for Everyone",
-      "blurb": "The office of pastor is not a career, a platform, or a reward for being good with words. It is a weight God lays on a particular kind of person and refuses to lay on most. This book argues, without softening the edge, that some should not enter the office, that the qualifications God screens for are matters of character before competence, and that the calling, when it is real, costs more than anyone tells you and is worth more than anything you gave up.",
-      "pillar": "Pastoral Ministry",
-      "chapters": 18,
-      "cover": "/books/dangerous-calling.svg"
-    },
-    {
-      "slug": "essays-deconstruction-church-hurt",
-      "title": "Deconstruction & Church Hurt",
-      "subtitle": "Leaving, staying, and the wreckage in between",
-      "blurb": "Essays for the wounded and the deconstructing, exvangelicals, purity culture, religious trauma, spiritual abuse, the prosperity gospel, and how consumerism and screens quietly form us.",
-      "pillar": "Prophetic Disruption",
-      "chapters": 9,
-      "cover": "/books/essays-deconstruction-church-hurt.svg"
     },
     {
       "slug": "deep-roots",
@@ -73,234 +64,171 @@
       "cover": "/books/deep-roots.svg"
     },
     {
-      "slug": "earthen-vessels",
-      "title": "Earthen Vessels",
-      "subtitle": "Why Our Bodies Matter to Our Faith",
-      "blurb": "The church inherited a lie it never examined: that the soul is the real you and the body is the cage you carry it in. This book argues the opposite from the center of the faith, that God made matter, entered it, died in it, rose in it, and intends to redeem it. Your body is not the obstacle to your discipleship. It is the place your discipleship happens or does not happen at all.",
-      "pillar": "Theological Depth",
-      "chapters": 18,
-      "cover": "/books/earthen-vessels.svg"
-    },
-    {
-      "slug": "faithful-in-exile",
-      "title": "Faithful in Exile",
-      "subtitle": "Pastoral Leadership and the Church's Witness in a Post-Christian Age",
-      "blurb": "The church in the West has lost the cultural power it held for sixteen centuries, and most of us are treating the loss like a catastrophe to be reversed. It isn't a catastrophe. It's a homecoming, a return to the church's oldest and most faithful condition, the condition of exile, where the people of God have always done their truest work. This book traces how Christendom rose and how it fell, and it argues that the long stretch of years in front of us is not a sentence. It's an assignment.",
-      "pillar": "After Christendom",
-      "chapters": 17,
-      "cover": "/books/faithful-in-exile.svg"
-    },
-    {
-      "slug": "essays-hard-questions",
-      "title": "Hard Questions",
-      "subtitle": "Honest answers for a skeptical age",
-      "blurb": "Essays answering the questions people actually ask, suffering and evil, hell, miracles, science, the reliability of the Bible, the hiddenness of God, and whether faith is reasonable at all.",
-      "pillar": "Theological Depth",
-      "chapters": 22,
-      "cover": "/books/essays-hard-questions.svg"
-    },
-    {
-      "slug": "essays-justice-and-the-poor",
-      "title": "Justice & the Poor",
-      "subtitle": "Mishpat, the poor at the gate, and the church's silence",
-      "blurb": "Essays on biblical justice, mishpat and tsedaqah, the poor and the stranger, the immigrant and the refugee, jubilee and debt, and the eye of the needle.",
-      "pillar": "Prophetic Justice",
-      "chapters": 13,
-      "cover": "/books/essays-justice-and-the-poor.svg"
-    },
-    {
-      "slug": "essays-marriage-communication-conflict",
-      "title": "Marriage: Communication & Conflict",
-      "subtitle": "Fighting well, forgiving, and repairing what broke",
-      "blurb": "Essays on the daily work of staying married, communication that works, fighting fair, forgiveness and repair, rebuilding trust, and the friendship a marriage can quietly lose.",
-      "pillar": "Integrated Life",
-      "chapters": 13,
-      "cover": "/books/essays-marriage-communication-conflict.svg"
-    },
-    {
-      "slug": "essays-marriage-covenant-roles",
-      "title": "Marriage: Covenant & Roles",
-      "subtitle": "What marriage actually is, and how two people lead and serve",
-      "blurb": "Essays on the shape of marriage, covenant rather than contract, one flesh, headship and submission read honestly, and two people learning to lead and serve each other.",
-      "pillar": "Integrated Life",
-      "chapters": 7,
-      "cover": "/books/essays-marriage-covenant-roles.svg"
-    },
-    {
-      "slug": "essays-marriage-crisis-repair",
-      "title": "Marriage: Crisis & Rebuilding",
-      "subtitle": "Affairs, addiction, divorce, and starting again",
-      "blurb": "Essays for marriages in the hardest places, affair recovery, addiction, mental health and depression, when divorce is faithful, second marriages, blended families, and a spouse who has lost faith.",
-      "pillar": "Integrated Life",
-      "chapters": 11,
-      "cover": "/books/essays-marriage-crisis-repair.svg"
-    },
-    {
-      "slug": "essays-marriage-money-seasons",
-      "title": "Marriage: Money, Work & Seasons",
-      "subtitle": "In-laws, work, kids, and the long seasons",
-      "blurb": "Essays on the pressures that test a marriage over time, money, in-laws, the demands of work, the years after children, the empty nest, ministry, distance, and the men who quietly check out.",
-      "pillar": "Integrated Life",
-      "chapters": 12,
-      "cover": "/books/essays-marriage-money-seasons.svg"
-    },
-    {
-      "slug": "essays-marriage-sex-intimacy",
-      "title": "Marriage: Sex & Intimacy",
-      "subtitle": "Intimacy as theology, honestly",
-      "blurb": "Essays on sex and intimacy in a Christian marriage, intimacy as theology, and the honest conversation about the sexless marriage nobody names.",
-      "pillar": "Integrated Life",
-      "chapters": 5,
-      "cover": "/books/essays-marriage-sex-intimacy.svg"
-    },
-    {
-      "slug": "mishpat",
-      "title": "Mishpat",
-      "subtitle": "God, the Poor, and the Justice the Church Forgot",
-      "blurb": "Justice is not a partisan word smuggled into Scripture. It is one of the oldest words in Scripture, and the church has spent a long time learning not to hear it. This book recovers what the Bible means by mishpat and tsedaqah, traces God's relentless lean toward the poor and the foreigner, and refuses both the gospel that blesses your portfolio and the politics that swallows the gospel whole.",
-      "pillar": "Prophetic Justice",
-      "chapters": 11,
-      "cover": "/books/mishpat.svg"
-    },
-    {
-      "slug": "necessary-words",
-      "title": "Necessary Words",
-      "subtitle": "A Pastoral Theology of Courage and Difficult Conversations",
-      "blurb": "The church has confused niceness with love and silence with peace, and the people who pay for it are the ones we refused to tell the truth. This is a book about the necessary word, the courage to confront sin, walk into conflict, and say the thing that wounds in order to heal. Speaking the truth in love is not a personality you were born with. It is an obedience, and most of us have spent our whole lives finding ways around it.",
-      "pillar": "Pastoral Ministry",
-      "chapters": 17,
-      "cover": "/books/necessary-words.svg"
-    },
-    {
-      "slug": "essays-biblical-theology",
-      "title": "On Biblical Theology",
-      "subtitle": "The whole Bible as one story that ends in Christ",
-      "blurb": "Essays tracing the Bible as one story climaxing in Christ, the kingdom of God, exodus, the image of God, and living between the already and the not yet.",
-      "pillar": "Theological Depth",
-      "chapters": 4,
-      "cover": "/books/essays-biblical-theology.svg"
-    },
-    {
-      "slug": "essays-church-history",
-      "title": "On Church History & Traditions",
-      "subtitle": "The story you were born into",
-      "blurb": "Essays on the church's long memory, the councils and creeds, how Christianity became an empire and then became American, the mystics, and what the great traditions can teach each other.",
-      "pillar": "Theological Depth",
-      "chapters": 18,
-      "cover": "/books/essays-church-history.svg"
-    },
-    {
-      "slug": "essays-core-doctrine",
-      "title": "On Core Doctrine",
-      "subtitle": "The great truths, explained without condescension",
-      "blurb": "Essays on the doctrines the church confesses, the Trinity, the gospel, grace, the reliability of Scripture, hell, and what Calvinists and Arminians are actually arguing about.",
-      "pillar": "Theological Depth",
-      "chapters": 15,
-      "cover": "/books/essays-core-doctrine.svg"
-    },
-    {
-      "slug": "essays-faith-and-doubt",
-      "title": "On Faith & Doubt",
-      "subtitle": "Living honestly with the questions",
-      "blurb": "Essays for the doubting, doubt as a spiritual practice, living with permanent uncertainty, the dark night, and keeping the question inside the faith instead of leaving to keep it.",
-      "pillar": "Integrated Life",
-      "chapters": 25,
-      "cover": "/books/essays-faith-and-doubt.svg"
-    },
-    {
-      "slug": "essays-manhood",
-      "title": "On Manhood",
-      "subtitle": "Anger, provision, and being a man who stays",
-      "blurb": "Essays on manhood from a man raised without a father and raising five sons, anger, provision, presence, crisis, and the men the church forgot to form.",
-      "pillar": "Integrated Life",
-      "chapters": 18,
-      "cover": "/books/essays-manhood.svg"
-    },
-    {
-      "slug": "essays-money-stewardship",
-      "title": "On Money & Stewardship",
-      "subtitle": "Debt, generosity, and what Jesus meant by mammon",
-      "blurb": "Essays on money, debt, generosity, wealth, tithing, contentment, and what Jesus actually meant when he said you cannot serve God and mammon.",
-      "pillar": "Integrated Life",
-      "chapters": 16,
-      "cover": "/books/essays-money-stewardship.svg"
-    },
-    {
-      "slug": "essays-on-prayer",
-      "title": "On Prayer",
-      "subtitle": "How to pray when you do not feel like it",
-      "blurb": "Essays on prayer, praying when the feeling does not come, the Lord's Prayer, confession, the tired person's prayer, and the prayer you cannot finish.",
-      "pillar": "Integrated Life",
-      "chapters": 17,
-      "cover": "/books/essays-on-prayer.svg"
-    },
-    {
-      "slug": "essays-rest-and-sabbath",
-      "title": "On Rest & Sabbath",
-      "subtitle": "Silence, waiting, and a life that can be sustained",
-      "blurb": "Essays on rest, the sabbath you keep skipping, resting in a culture of exhaustion, silence, solitude, waiting, and the long obedience of ordinary faithfulness.",
-      "pillar": "Integrated Life",
-      "chapters": 20,
-      "cover": "/books/essays-rest-and-sabbath.svg"
-    },
-    {
-      "slug": "essays-womanhood",
-      "title": "On Womanhood",
-      "subtitle": "Identity, calling, and worth beyond the roles",
-      "blurb": "Essays on womanhood, identity, calling, motherhood, and worth that does not depend on a role or a season.",
-      "pillar": "Integrated Life",
-      "chapters": 12,
-      "cover": "/books/essays-womanhood.svg"
-    },
-    {
-      "slug": "essays-work-and-vocation",
-      "title": "On Work & Vocation",
-      "subtitle": "Calling and the God of the ordinary job",
-      "blurb": "Essays on work as calling, vocation, career, ambition, entrepreneurship, faith at a job nobody shares, and the sacredness of ordinary labor.",
-      "pillar": "Integrated Life",
-      "chapters": 10,
-      "cover": "/books/essays-work-and-vocation.svg"
-    },
-    {
-      "slug": "one-body-many-churches",
-      "title": "One Body, Many Churches",
-      "subtitle": "A Theology of Unity for a Fractured Church",
-      "blurb": "The church Jesus prayed for is one. The church the world sees is splintered into thousands of pieces, each certain it holds the center. This book holds two truths the modern church keeps tearing apart: that the body of Christ is genuinely one, and that the differences between churches are genuinely real. It refuses the two cheap exits of sectarian pride and mushy relativism, and it asks the harder question instead: what would it cost you to give the dying Christ the one thing He asked for?",
-      "pillar": "Theological Depth",
-      "chapters": 18,
-      "cover": "/books/one-body-many-churches.svg"
-    },
-    {
-      "slug": "essays-parenting-hard-places",
-      "title": "Parenting the Hard Places",
-      "subtitle": "Prodigals, doubt, screens, and the crises nobody prepped you for",
-      "blurb": "Essays for the hardest parts of parenting, the prodigal, the child who doubts or walks away or comes out, special needs, single parenting, screens and phones, sex and identity, and grief.",
-      "pillar": "Integrated Life",
-      "chapters": 14,
-      "cover": "/books/essays-parenting-hard-places.svg"
-    },
-    {
-      "slug": "essays-parenting-ages-stages",
-      "title": "Parenting: Ages & Stages",
-      "subtitle": "What each season of childhood actually needs",
-      "blurb": "Essays on raising children stage by stage, toddlers, the elementary years, the middle-school wilderness, teenagers, and the young adult who leaves, with the spiritual milestones to aim for at each age.",
-      "pillar": "Integrated Life",
-      "chapters": 7,
-      "cover": "/books/essays-parenting-ages-stages.svg"
-    },
-    {
       "slug": "essays-parenting-discipline-character",
-      "title": "Parenting: Discipline & Character",
-      "subtitle": "Forming the heart, not just the behavior",
+      "title": "Discipline That Forms the Heart",
+      "subtitle": "Christian Character in Your Kids",
       "blurb": "Essays on discipline and character, forming the heart rather than the behavior, letting children fail, raising the resilient and the unimpressive, and resisting the idol of the well-rounded child.",
       "pillar": "Integrated Life",
       "chapters": 6,
       "cover": "/books/essays-parenting-discipline-character.svg"
     },
     {
+      "slug": "essays-work-and-vocation",
+      "title": "Faith at Work",
+      "subtitle": "Calling and the God of the Ordinary Job",
+      "blurb": "Essays on work as calling, vocation, career, ambition, entrepreneurship, faith at a job nobody shares, and the sacredness of ordinary labor.",
+      "pillar": "Integrated Life",
+      "chapters": 10,
+      "cover": "/books/essays-work-and-vocation.svg"
+    },
+    {
+      "slug": "faithful-in-exile",
+      "title": "Faithful in Exile",
+      "subtitle": "Leading the Church in a Post-Christian World",
+      "blurb": "The church in the West has lost the cultural power it held for sixteen centuries, and most of us are treating the loss like a catastrophe to be reversed. It isn't a catastrophe. It's a homecoming, a return to the church's oldest and most faithful condition, the condition of exile, where the people of God have always done their truest work. This book traces how Christendom rose and how it fell, and it argues that the long stretch of years in front of us is not a sentence. It's an assignment.",
+      "pillar": "After Christendom",
+      "chapters": 17,
+      "cover": "/books/faithful-in-exile.svg"
+    },
+    {
+      "slug": "earthen-vessels",
+      "title": "Fearfully Made",
+      "subtitle": "Why Your Body Matters to Your Faith",
+      "blurb": "The church inherited a lie it never examined: that the soul is the real you and the body is the cage you carry it in. This book argues the opposite from the center of the faith, that God made matter, entered it, died in it, rose in it, and intends to redeem it. Your body is not the obstacle to your discipleship. It is the place your discipleship happens or does not happen at all.",
+      "pillar": "Theological Depth",
+      "chapters": 18,
+      "cover": "/books/earthen-vessels.svg"
+    },
+    {
+      "slug": "essays-marriage-communication-conflict",
+      "title": "Fighting Fair",
+      "subtitle": "Christian Marriage, Conflict, and How to Repair What Broke",
+      "blurb": "Essays on the daily work of staying married, communication that works, fighting fair, forgiveness and repair, rebuilding trust, and the friendship a marriage can quietly lose.",
+      "pillar": "Integrated Life",
+      "chapters": 13,
+      "cover": "/books/essays-marriage-communication-conflict.svg"
+    },
+    {
+      "slug": "essays-christian-nationalism",
+      "title": "God and Country",
+      "subtitle": "Was America a Christian Nation, and What Comes After the Flag",
+      "blurb": "Essays on the church's captivity to the nation, Christian nationalism, flags in the sanctuary, render unto Caesar, the religious right, and loving a country without worshiping it.",
+      "pillar": "Prophetic Disruption",
+      "chapters": 8,
+      "cover": "/books/essays-christian-nationalism.svg"
+    },
+    {
+      "slug": "essays-money-stewardship",
+      "title": "God and Money",
+      "subtitle": "What Jesus Meant by Mammon, Debt, and Generosity",
+      "blurb": "Essays on money, debt, generosity, wealth, tithing, contentment, and what Jesus actually meant when he said you cannot serve God and mammon.",
+      "pillar": "Integrated Life",
+      "chapters": 16,
+      "cover": "/books/essays-money-stewardship.svg"
+    },
+    {
+      "slug": "essays-raising-kids-in-faith",
+      "title": "Handing On the Faith",
+      "subtitle": "Raising Kids Who Still Believe as Adults",
+      "blurb": "Essays on forming faith at home, teaching children to pray and read the Bible, raising kids who question rather than perform, family rhythms, and finding a church that will not wound them.",
+      "pillar": "Integrated Life",
+      "chapters": 11,
+      "cover": "/books/essays-raising-kids-in-faith.svg"
+    },
+    {
+      "slug": "essays-hard-questions",
+      "title": "Hard Questions About God",
+      "subtitle": "Honest Answers on Suffering, Science, Hell, and Doubt",
+      "blurb": "Essays answering the questions people actually ask, suffering and evil, hell, miracles, science, the reliability of the Bible, the hiddenness of God, and whether faith is reasonable at all.",
+      "pillar": "Theological Depth",
+      "chapters": 22,
+      "cover": "/books/essays-hard-questions.svg"
+    },
+    {
+      "slug": "essays-faith-and-doubt",
+      "title": "Honest Doubt",
+      "subtitle": "How to Keep the Faith When You Have Questions",
+      "blurb": "Essays for the doubting, doubt as a spiritual practice, living with permanent uncertainty, the dark night, and keeping the question inside the faith instead of leaving to keep it.",
+      "pillar": "Integrated Life",
+      "chapters": 25,
+      "cover": "/books/essays-faith-and-doubt.svg"
+    },
+    {
+      "slug": "essays-on-prayer",
+      "title": "How to Pray When You Don't Feel Like It",
+      "subtitle": "Prayer for the Reluctant, the Dry, and the Distracted",
+      "blurb": "Essays on prayer, praying when the feeling does not come, the Lord's Prayer, confession, the tired person's prayer, and the prayer you cannot finish.",
+      "pillar": "Integrated Life",
+      "chapters": 17,
+      "cover": "/books/essays-on-prayer.svg"
+    },
+    {
+      "slug": "mishpat",
+      "title": "Mishpat",
+      "subtitle": "What the Bible Says About God, the Poor, and the Justice the Church Forgot",
+      "blurb": "Justice is not a partisan word smuggled into Scripture. It is one of the oldest words in Scripture, and the church has spent a long time learning not to hear it. This book recovers what the Bible means by mishpat and tsedaqah, traces God's relentless lean toward the poor and the foreigner, and refuses both the gospel that blesses your portfolio and the politics that swallows the gospel whole.",
+      "pillar": "Prophetic Justice",
+      "chapters": 11,
+      "cover": "/books/mishpat.svg"
+    },
+    {
+      "slug": "essays-womanhood",
+      "title": "More Than a Role",
+      "subtitle": "A Woman's Identity, Calling, and Worth Beyond Proverbs 31",
+      "blurb": "Essays on womanhood, identity, calling, motherhood, and worth that does not depend on a role or a season.",
+      "pillar": "Integrated Life",
+      "chapters": 12,
+      "cover": "/books/essays-womanhood.svg"
+    },
+    {
+      "slug": "essays-marriage-sex-intimacy",
+      "title": "Naked and Unashamed",
+      "subtitle": "A Christian Theology of Sex and Intimacy",
+      "blurb": "Essays on sex and intimacy in a Christian marriage, intimacy as theology, and the honest conversation about the sexless marriage nobody names.",
+      "pillar": "Integrated Life",
+      "chapters": 5,
+      "cover": "/books/essays-marriage-sex-intimacy.svg"
+    },
+    {
+      "slug": "necessary-words",
+      "title": "Necessary Words",
+      "subtitle": "A Pastor's Courage for the Conversations Everyone Avoids",
+      "blurb": "The church has confused niceness with love and silence with peace, and the people who pay for it are the ones we refused to tell the truth. This is a book about the necessary word, the courage to confront sin, walk into conflict, and say the thing that wounds in order to heal. Speaking the truth in love is not a personality you were born with. It is an obedience, and most of us have spent our whole lives finding ways around it.",
+      "pillar": "Pastoral Ministry",
+      "chapters": 17,
+      "cover": "/books/necessary-words.svg"
+    },
+    {
+      "slug": "essays-rest-and-sabbath",
+      "title": "On Sabbath",
+      "subtitle": "Rest, Silence, and a Life That Isn't Burning Out",
+      "blurb": "Essays on rest, the sabbath you keep skipping, resting in a culture of exhaustion, silence, solitude, waiting, and the long obedience of ordinary faithfulness.",
+      "pillar": "Integrated Life",
+      "chapters": 20,
+      "cover": "/books/essays-rest-and-sabbath.svg"
+    },
+    {
+      "slug": "one-body-many-churches",
+      "title": "One Body, Many Churches",
+      "subtitle": "A Theology of Unity for a Divided Church",
+      "blurb": "The church Jesus prayed for is one. The church the world sees is splintered into thousands of pieces, each certain it holds the center. This book holds two truths the modern church keeps tearing apart: that the body of Christ is genuinely one, and that the differences between churches are genuinely real. It refuses the two cheap exits of sectarian pride and mushy relativism, and it asks the harder question instead: what would it cost you to give the dying Christ the one thing He asked for?",
+      "pillar": "Theological Depth",
+      "chapters": 18,
+      "cover": "/books/one-body-many-churches.svg"
+    },
+    {
+      "slug": "essays-parenting-ages-stages",
+      "title": "Parenting by Season",
+      "subtitle": "What Each Age of Childhood Actually Needs",
+      "blurb": "Essays on raising children stage by stage, toddlers, the elementary years, the middle-school wilderness, teenagers, and the young adult who leaves, with the spiritual milestones to aim for at each age.",
+      "pillar": "Integrated Life",
+      "chapters": 7,
+      "cover": "/books/essays-parenting-ages-stages.svg"
+    },
+    {
       "slug": "preach-the-word",
       "title": "Preach the Word",
-      "subtitle": "The Primacy of Expository Preaching in the Local Church",
+      "subtitle": "Why Expository Preaching Still Builds the Church",
       "blurb": "The pulpit has become a stage, and the sermon a performance measured by how well it moves a room. This book argues that the preacher's only authority is the text in front of him, that exposition is not a method among methods but the recovery of a church that has stopped expecting God to speak. It is written for the pastor who is tired of being interesting and wants, again, to be faithful.",
       "pillar": "Pastoral Ministry",
       "chapters": 17,
@@ -308,35 +236,17 @@
     },
     {
       "slug": "essays-preaching-and-leading",
-      "title": "Preaching & Leading the Church",
-      "subtitle": "The pulpit, the staff, and the revitalized church",
+      "title": "Preaching and Leading",
+      "subtitle": "Revitalizing the Church From the Pulpit Out",
       "blurb": "Essays on leading the church, preaching, staff and elders and deacons, church revitalization and planting, and the budget as a theology.",
       "pillar": "Leadership Formation",
       "chapters": 20,
       "cover": "/books/essays-preaching-and-leading.svg"
     },
     {
-      "slug": "essays-race-and-the-church",
-      "title": "Race & the Church",
-      "subtitle": "The most segregated hour, honestly examined",
-      "blurb": "Essays on race and the church, the image of God against the lie of race, the black church, white evangelicalism, the most segregated hour, and what reconciliation actually requires.",
-      "pillar": "Prophetic Justice",
-      "chapters": 7,
-      "cover": "/books/essays-race-and-the-church.svg"
-    },
-    {
-      "slug": "essays-raising-kids-in-faith",
-      "title": "Raising Kids in the Faith",
-      "subtitle": "Handing on a faith worth keeping",
-      "blurb": "Essays on forming faith at home, teaching children to pray and read the Bible, raising kids who question rather than perform, family rhythms, and finding a church that will not wound them.",
-      "pillar": "Integrated Life",
-      "chapters": 11,
-      "cover": "/books/essays-raising-kids-in-faith.svg"
-    },
-    {
       "slug": "sent-into-the-city",
       "title": "Sent Into the City",
-      "subtitle": "The Church's Calling to Its Neighborhood and World",
+      "subtitle": "How the Church Loves the Neighborhood It Was Planted In",
       "blurb": "The church was never gathered to be hidden. It was gathered to be sent into the actual street, the actual block, the actual city where God has placed it. This is a book about trading the machinery of programs for the slow obedience of presence, about loving the people you did not choose, and about what it costs to seek the welfare of a place you might rather leave.",
       "pillar": "Prophetic Justice",
       "chapters": 23,
@@ -345,34 +255,16 @@
     {
       "slug": "the-captive-church",
       "title": "The Captive Church",
-      "subtitle": "Nationalism, Empire, and the Cost of Cultural Christianity",
+      "subtitle": "How Nationalism and Empire Took the American Church Hostage",
       "blurb": "The church keeps reaching for the kingdoms of the world on the terms the world offers them, and keeps calling the reach faithfulness. This book follows the one temptation Jesus refused in the wilderness through Constantine, the denarius, the flag on the platform, and the water we no longer see, and it indicts every tribe by the same cross. It is not a book about politics. It is a book about who the church belongs to.",
       "pillar": "Prophetic Disruption",
       "chapters": 10,
       "cover": "/books/the-captive-church.svg"
     },
     {
-      "slug": "essays-christian-nationalism",
-      "title": "The Church & the Nation",
-      "subtitle": "Faith after the flag",
-      "blurb": "Essays on the church's captivity to the nation, Christian nationalism, flags in the sanctuary, render unto Caesar, the religious right, and loving a country without worshiping it.",
-      "pillar": "Prophetic Disruption",
-      "chapters": 8,
-      "cover": "/books/essays-christian-nationalism.svg"
-    },
-    {
-      "slug": "essays-church-reckonings",
-      "title": "The Church's Reckonings",
-      "subtitle": "Abuse, mental health, and the questions the church avoids",
-      "blurb": "Essays on the reckonings the church cannot avoid, the sexual abuse crisis, mental health handled badly, women in ministry, lament, and the prophets who made everyone uncomfortable.",
-      "pillar": "Prophetic Justice",
-      "chapters": 9,
-      "cover": "/books/essays-church-reckonings.svg"
-    },
-    {
       "slug": "the-first-flock",
       "title": "The First Flock",
-      "subtitle": "The Church's Calling to Care for Pastors and Their Families",
+      "subtitle": "How a Church Should Care for Its Pastor and His Family",
       "blurb": "The man you call to feed you is starving, and you have not noticed. This is a book about the duty a congregation owes the shepherd it ordained to shepherd it, and about the first flock no one counts, the family inside the parsonage who absorb the cost of a ministry they never chose. It is written to the church as much as to the pastor, because the pastor cannot fix this alone, and the church has been pretending it is not the one holding the knife.",
       "pillar": "Pastoral Ministry",
       "chapters": 17,
@@ -388,27 +280,72 @@
       "cover": "/books/the-god-who-is-not-nice.svg"
     },
     {
+      "slug": "essays-core-doctrine",
+      "title": "The Great Truths",
+      "subtitle": "Christian Doctrine Explained Without Condescension",
+      "blurb": "Essays on the doctrines the church confesses, the Trinity, the gospel, grace, the reliability of Scripture, hell, and what Calvinists and Arminians are actually arguing about.",
+      "pillar": "Theological Depth",
+      "chapters": 15,
+      "cover": "/books/essays-core-doctrine.svg"
+    },
+    {
       "slug": "the-hidden-life-of-a-pastor",
       "title": "The Hidden Life of a Pastor",
-      "subtitle": "Tending Your Soul While Tending the Flock",
+      "subtitle": "Tending Your Own Soul While You Tend the Flock",
       "blurb": "The most dangerous thing in ministry is not failure. It is a public life that has quietly outrun the private communion that was supposed to feed it. This is a book about the hidden life with God, the only thing that finally sustains the visible one, written for the shepherd who has not yet admitted how thirsty he has become.",
       "pillar": "Pastoral Ministry",
       "chapters": 17,
       "cover": "/books/the-hidden-life-of-a-pastor.svg"
     },
     {
+      "slug": "essays-marriage-money-seasons",
+      "title": "The Long Marriage",
+      "subtitle": "Money, In-Laws, Kids, and the Seasons That Test You",
+      "blurb": "Essays on the pressures that test a marriage over time, money, in-laws, the demands of work, the years after children, the empty nest, ministry, distance, and the men who quietly check out.",
+      "pillar": "Integrated Life",
+      "chapters": 12,
+      "cover": "/books/essays-marriage-money-seasons.svg"
+    },
+    {
+      "slug": "essays-manhood",
+      "title": "The Man Who Stays",
+      "subtitle": "What the Bible Says About Anger, Provision, and Presence",
+      "blurb": "Essays on manhood from a man raised without a father and raising five sons, anger, provision, presence, crisis, and the men the church forgot to form.",
+      "pillar": "Integrated Life",
+      "chapters": 18,
+      "cover": "/books/essays-manhood.svg"
+    },
+    {
+      "slug": "essays-race-and-the-church",
+      "title": "The Most Segregated Hour",
+      "subtitle": "Race, the Church, and the Wound We Learned to Live With",
+      "blurb": "Essays on race and the church, the image of God against the lie of race, the black church, white evangelicalism, the most segregated hour, and what reconciliation actually requires.",
+      "pillar": "Prophetic Justice",
+      "chapters": 7,
+      "cover": "/books/essays-race-and-the-church.svg"
+    },
+    {
       "slug": "the-pruning",
       "title": "The Pruning",
-      "subtitle": "Church Decline, Faithful Endurance, and the Promise of Renewal",
+      "subtitle": "Why the Church Is Shrinking, and the Renewal on the Other Side",
       "blurb": "The numbers are real, and they are not lying to us. But the question the church keeps asking, are we dying?, is the wrong question, because it assumes the only two states are health and death. There is a third thing, and the Vinedresser has done it before. This is a book about the difference between the church being killed and the church being cut, and why the second one looks almost exactly like the first while it is happening.",
       "pillar": "After Christendom",
       "chapters": 17,
       "cover": "/books/the-pruning.svg"
     },
     {
+      "slug": "essays-church-history",
+      "title": "The Story You Were Born Into",
+      "subtitle": "A Short Christian History for the Rest of Us",
+      "blurb": "Essays on the church's long memory, the councils and creeds, how Christianity became an empire and then became American, the mystics, and what the great traditions can teach each other.",
+      "pillar": "Theological Depth",
+      "chapters": 18,
+      "cover": "/books/essays-church-history.svg"
+    },
+    {
       "slug": "the-undershepherd",
       "title": "The Undershepherd",
-      "subtitle": "Pastoral Leadership, Authority, and the Care of God's People",
+      "subtitle": "Pastoral Authority and the Care of God's People",
       "blurb": "The pastor is not the shepherd. He is an under-shepherd, holding a borrowed staff over a flock that was never his, answerable to the One whose blood bought them. This book refuses the two cheap roads of domination and abandonment, and argues that the only authority worth having in the church is the kind that bleeds for the sheep instead of feeding on them.",
       "pillar": "Pastoral Ministry",
       "chapters": 19,
@@ -426,20 +363,83 @@
     {
       "slug": "the-unfinished-church",
       "title": "The Unfinished Church",
-      "subtitle": "Calling, Vision, and the Future God Is Building",
+      "subtitle": "Calling, Vision, and the Future God Is Still Building",
       "blurb": "The church is not a monument to defend or a method to chase. It is a building still rising, founded on a promise older than any of us and aimed at a city we have not yet seen. This book is about what it means to belong to something God is building and we are not finishing.",
       "pillar": "After Christendom",
       "chapters": 17,
       "cover": "/books/the-unfinished-church.svg"
     },
     {
+      "slug": "dangerous-calling",
+      "title": "The Weight of the Collar",
+      "subtitle": "Why Pastoral Ministry Breaks So Many, and How to Last",
+      "blurb": "The office of pastor is not a career, a platform, or a reward for being good with words. It is a weight God lays on a particular kind of person and refuses to lay on most. This book argues, without softening the edge, that some should not enter the office, that the qualifications God screens for are matters of character before competence, and that the calling, when it is real, costs more than anyone tells you and is worth more than anything you gave up.",
+      "pillar": "Pastoral Ministry",
+      "chapters": 18,
+      "cover": "/books/dangerous-calling.svg"
+    },
+    {
+      "slug": "essays-biblical-theology",
+      "title": "The Whole Story",
+      "subtitle": "How to Read the Bible as One Story That Ends in Christ",
+      "blurb": "Essays tracing the Bible as one story climaxing in Christ, the kingdom of God, exodus, the image of God, and living between the already and the not yet.",
+      "pillar": "Theological Depth",
+      "chapters": 4,
+      "cover": "/books/essays-biblical-theology.svg"
+    },
+    {
       "slug": "to-the-ends-of-the-earth",
       "title": "To the Ends of the Earth",
-      "subtitle": "Global Mission, National Partnership, and the Sent Church",
+      "subtitle": "The Great Commission and the End of the American Missionary Model",
       "blurb": "The center of Christianity no longer sits where the maps of our missionary fathers drew it; it has moved south and east, and most Western churches never noticed they were left holding a parochialism they mistook for the faith itself. This book argues that the Great Commission is non-negotiable and that the way we have often carried it out is indictable, and that the only path forward is partnership that surrenders control to the very churches the West once condescended to. It is a call to become again what the church has always been underneath its committees and budgets: a sent people, going to the ends of the earth and paying for it.",
       "pillar": "Prophetic Justice",
       "chapters": 19,
       "cover": "/books/to-the-ends-of-the-earth.svg"
+    },
+    {
+      "slug": "essays-marriage-covenant-roles",
+      "title": "What Marriage Actually Is",
+      "subtitle": "Covenant, Roles, and the Two-Become-One",
+      "blurb": "Essays on the shape of marriage, covenant rather than contract, one flesh, headship and submission read honestly, and two people learning to lead and serve each other.",
+      "pillar": "Integrated Life",
+      "chapters": 7,
+      "cover": "/books/essays-marriage-covenant-roles.svg"
+    },
+    {
+      "slug": "essays-church-reckonings",
+      "title": "What the Church Won't Say",
+      "subtitle": "Abuse, Mental Health, and the Silence We Called Peace",
+      "blurb": "Essays on the reckonings the church cannot avoid, the sexual abuse crisis, mental health handled badly, women in ministry, lament, and the prophets who made everyone uncomfortable.",
+      "pillar": "Prophetic Justice",
+      "chapters": 9,
+      "cover": "/books/essays-church-reckonings.svg"
+    },
+    {
+      "slug": "essays-deconstruction-church-hurt",
+      "title": "When Faith Falls Apart",
+      "subtitle": "Deconstruction, Church Hurt, and the Way Back to Belief",
+      "blurb": "Essays for the wounded and the deconstructing, exvangelicals, purity culture, religious trauma, spiritual abuse, the prosperity gospel, and how consumerism and screens quietly form us.",
+      "pillar": "Prophetic Disruption",
+      "chapters": 9,
+      "cover": "/books/essays-deconstruction-church-hurt.svg"
+    },
+    {
+      "slug": "essays-justice-and-the-poor",
+      "title": "When Justice Sleeps",
+      "subtitle": "What the Bible Means by Mishpat and the Poor at the Gate",
+      "blurb": "Essays on biblical justice, mishpat and tsedaqah, the poor and the stranger, the immigrant and the refugee, jubilee and debt, and the eye of the needle.",
+      "pillar": "Prophetic Justice",
+      "chapters": 13,
+      "cover": "/books/essays-justice-and-the-poor.svg"
+    },
+    {
+      "slug": "essays-parenting-hard-places",
+      "title": "When Parenting Gets Hard",
+      "subtitle": "Prodigals, Doubt, Screens, and the Crises No One Prepped You For",
+      "blurb": "Essays for the hardest parts of parenting, the prodigal, the child who doubts or walks away or comes out, special needs, single parenting, screens and phones, sex and identity, and grief.",
+      "pillar": "Integrated Life",
+      "chapters": 14,
+      "cover": "/books/essays-parenting-hard-places.svg"
     }
   ]
 }
