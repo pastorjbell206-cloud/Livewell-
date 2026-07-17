@@ -7,8 +7,13 @@
     {
       "kind": "read",
       "heading": "Read these first",
-      "note": "Start where the fusion is easiest to see, then trace it back — the flag in the sanctuary, the persecution we invented, the pledge we forgot we could not make twice.",
+      "note": "Start with the whole diagnosis, then trace the fusion back through its parts — the flag in the sanctuary, the persecution we invented, the pledge we forgot we could not make twice.",
       "items": [
+        {
+          "label": "The State of the American Church",
+          "href": "/nation/state-of-the-american-church",
+          "blurb": "The whole diagnosis first: two captivities, right and left, and the older faith underneath both."
+        },
         {
           "label": "When God Bless America Replaces Thy Kingdom Come",
           "href": "/writing/when-god-bless-america-replaces-thy-kingdom-come",
