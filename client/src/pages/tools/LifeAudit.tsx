@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { ToolActions } from "@/components/ToolActions";
 import { useState, useRef } from "react";
+import { Link } from "wouter";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer } from "lucide-react";
 import { EmailResults } from "@/components/EmailResults";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
@@ -21,6 +22,9 @@ interface Category {
   name: string;
   slug: string;
   description: string;
+  /** The passage this life-domain grows from. Rendered as a reference that
+   *  links to the full text — not an embedded quotation. */
+  scripture: { ref: string };
   questions: Question[];
   interpretation: Record<string, string>;
   nextSteps: Record<string, NextStep[]>;
@@ -41,6 +45,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Spiritual Health",
     slug: "spiritual",
+    scripture: { ref: "Psalm 42:1" },
     description:
       "The life beneath the life. Not whether you attend church, but whether your soul is attended to.",
     questions: [
@@ -84,6 +89,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Marriage & Relationships",
     slug: "relationships",
+    scripture: { ref: "Ecclesiastes 4:9-10" },
     description:
       "The closest human relationship you have -- and the one most likely to be neglected because proximity creates the illusion of presence.",
     questions: [
@@ -127,6 +133,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Parenting",
     slug: "parenting",
+    scripture: { ref: "Proverbs 22:6" },
     description:
       "The most important work you will do and the one for which no one hands you a manual. Not whether your children are performing. Whether you are present.",
     questions: [
@@ -170,6 +177,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Physical Health",
     slug: "physical",
+    scripture: { ref: "1 Timothy 4:8" },
     description:
       "Your body is not a vehicle for your mind. It is the instrument through which you love, serve, work, and worship. Neglecting it is not humility. It is poor stewardship.",
     questions: [
@@ -213,6 +221,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Financial Health",
     slug: "financial",
+    scripture: { ref: "Matthew 6:24" },
     description:
       "Not how much you have, but how you hold it. Whether money serves your life or runs it.",
     questions: [
@@ -256,6 +265,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Emotional Health",
     slug: "emotional",
+    scripture: { ref: "Philippians 4:6-7" },
     description:
       "The inner life that shapes the outer one. Whether you know yourself well enough to be honest, bounded enough to be safe, and rested enough to be present.",
     questions: [
@@ -299,6 +309,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Vocational Purpose",
     slug: "vocation",
+    scripture: { ref: "Colossians 3:23" },
     description:
       "Not whether you have a job, but whether your work has a meaning that outlasts the paycheck. Whether you know why you do what you do.",
     questions: [
@@ -342,6 +353,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Community & Friendship",
     slug: "community",
+    scripture: { ref: "Proverbs 27:17" },
     description:
       "Whether you are known or merely recognized. Whether you have people who will tell you the truth, sit with you in silence, and come when you call at 2 a.m.",
     questions: [
@@ -834,6 +846,26 @@ export default function LifeAudit() {
                 }}
               >
                 {category.description}
+              </p>
+              <p
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "13px",
+                  color: "var(--ink-muted)",
+                  marginTop: "12px",
+                }}
+              >
+                Anchored in{" "}
+                <Link
+                  href={`/theology/passage?ref=${encodeURIComponent(category.scripture.ref)}`}
+                  style={{
+                    color: "var(--mustard-text)",
+                    textDecoration: "none",
+                    borderBottom: "1px solid var(--mustard)",
+                  }}
+                >
+                  {category.scripture.ref}
+                </Link>
               </p>
             </div>
 
