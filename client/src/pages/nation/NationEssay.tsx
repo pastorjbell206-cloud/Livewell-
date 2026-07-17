@@ -8,13 +8,14 @@ import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { Prose } from "@/lib/prose";
-import { SEOMeta } from "@/components/SEOMeta";
+import { SEOMeta, getArticleSchema, getBreadcrumbSchema } from "@/components/SEOMeta";
 
 interface Section { id: string; kicker: string; title: string; body: string; }
 interface Reading { title: string; author: string; }
-interface Essay { title: string; subtitle: string; sections: Section[]; furtherReading: Reading[]; }
+interface Essay { title: string; subtitle: string; sections: Section[]; furtherReading: Reading[]; datePublished?: string; }
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+const SITE = "https://www.livewellbyjamesbell.co";
 
 export default function NationEssay({ slug }: { slug: string }) {
   const [e, setE] = useState<Essay | null>(null);
@@ -25,9 +26,26 @@ export default function NationEssay({ slug }: { slug: string }) {
       .catch(() => {});
   }, [slug]);
 
+  // Structured data so answer engines can place and cite the essay: a
+  // BreadcrumbList (Home › Christ and the Nation › Title) on every essay, plus
+  // an Article schema wherever the essay carries an honest publish date.
+  const url = `${SITE}/nation/${slug}`;
+  const structuredData = e
+    ? [
+        getBreadcrumbSchema([
+          { name: "Home", url: `${SITE}/` },
+          { name: "Christ and the Nation", url: `${SITE}/nation` },
+          { name: e.title, url },
+        ]),
+        ...(e.datePublished
+          ? [getArticleSchema(e.title, e.subtitle, e.datePublished, e.datePublished, undefined, url, undefined, undefined, "Christ and the Nation")]
+          : []),
+      ]
+    : undefined;
+
   return (
     <Layout>
-      <SEOMeta title={`${e?.title ?? "Christ and the Nation"} — LiveWell by James Bell`} description={e?.subtitle ?? ""} url={`https://www.livewellbyjamesbell.co/nation/${slug}`} />
+      <SEOMeta title={`${e?.title ?? "Christ and the Nation"} — LiveWell by James Bell`} description={e?.subtitle ?? ""} url={url} structuredData={structuredData} />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
