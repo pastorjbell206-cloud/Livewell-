@@ -203,6 +203,7 @@ export default function Doubt() {
           <NewsletterSignup
             variant="inline"
             source="doubt"
+            audienceType="skeptic"
             title="Theology for the honest."
             description="When the questions outgrow the answers. One essay a week. Written without conversion bait."
           />
