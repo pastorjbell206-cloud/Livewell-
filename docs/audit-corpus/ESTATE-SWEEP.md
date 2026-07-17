@@ -17,14 +17,19 @@ white-card-on-dark-page defect). Only the dark-on-dark risk cases were held back
 (see below). The list of sites that follows is the historical map; the
 tokenized-content subset is done.
 
-**Still open — cards whose text is `var(--charcoal)`** (a *fixed-dark* token
-that flips darker, so `var(--card)` bg would be dark-on-dark in dark mode).
-Fix = retoken the card's text (`--charcoal` → `--ink`) *and* swap the bg,
-confirmed in a browser: `pages/ReadingPaths.tsx:357`, `pages/tools/SavedItems.tsx`
-(4 cards: 137/185/229/239). Plus `pages/tools/DeepBibleCompanion.tsx` (hardcoded
-`#666`/`#999` text on white cards — retoken text + surfaces together, in a
-browser). `BookDetail.tsx:129` is a white *section* (not a card) — decide
-`--bone` vs a lifted band.
+**`var(--charcoal)`-as-text cards** (a *fixed-dark* token that flips darker, so
+a `var(--card)` bg alone would be dark-on-dark). The fix is the *paired* one:
+retoken the card's text `--charcoal`→`--ink` **and** swap the bg — provably
+correct both modes (near-identical in light, correct in dark).
+- ☑ `pages/tools/SavedItems.tsx` — DONE (4 cards + the file's section headings /
+  empty-state text, all charcoal-on-bone → `--ink`; hero bg + mustard badge left).
+- ☐ `pages/ReadingPaths.tsx:357` — held: the file interleaves ~10
+  `var(--charcoal)` uses across heroes, backgrounds, and text; pairing them
+  needs a rendered check, not a blind grep.
+- ☐ `pages/tools/DeepBibleCompanion.tsx` — held: ~25 hardcoded `#666`/`#999`
+  text on white cards; retoken text + surfaces together, in a browser.
+- ☐ `BookDetail.tsx:129` — a white *section* (not a card); decide `--bone` vs a
+  lifted band.
 
 - pages root: ArticleCollections 308 · BookBundles 202 · BookDetail 121, 129
   (129 is a white *section* — decide `--bone` vs a lifted `--card` band) ·
