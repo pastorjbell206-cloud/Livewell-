@@ -2,7 +2,7 @@
 
 > Connecting the depth of theology to the weight of everyday life.
 >
-> Full machine-readable index of every essay, book, and guide (830+ entries):
+> Full machine-readable index of every essay, book, and guide (870+ entries):
 > https://www.livewellbyjamesbell.co/llms-full.txt
 
 LiveWell by James Bell (https://www.livewellbyjamesbell.co) is the writing and
@@ -35,6 +35,25 @@ lived experience.
   https://www.livewellbyjamesbell.co/tools
 - For pastors (Pastors Connection Network):
   https://www.livewellbyjamesbell.co/pastors
+
+## Christ and the Nation
+
+The platform's political theology, written to be the most careful and least
+tribal treatment on the site: the church and power, criticized on the right and
+the left with the same instrument. The flagship names the two captivities that
+keep trading a crucified God for what can be weaponized; two guided reading
+paths trace the twin.
+
+- The State of the American Church (the flagship: the two captivities, right and
+  left, and the older creedal faith underneath both):
+  https://www.livewellbyjamesbell.co/nation/state-of-the-american-church
+- Christ and the Nation (the hub: was America a Christian nation, how close each
+  party is to the Bible, what a biblical government would mean, the danger of
+  empire): https://www.livewellbyjamesbell.co/nation
+- Faith and the Flag (a guided path through the right's captivity):
+  https://www.livewellbyjamesbell.co/pathways/christian-nationalism
+- Faith and the Cause (a guided path through the left's captivity):
+  https://www.livewellbyjamesbell.co/pathways/progressive-captivity
 
 ## Free study-guide curriculum library
 
