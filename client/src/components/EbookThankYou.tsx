@@ -133,7 +133,7 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
                   Every book on the site can be read free, cover to cover, before you ever buy it. And one serious essay goes out a week, in the same vein as what you just bought.
                 </p>
                 <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
-                  <Link href="/read" style={{ ...btn, background: "var(--ink)", color: "var(--bone)", minWidth: 0, padding: "12px 22px", fontSize: "14px" }}>
+                  <Link href="/read" style={{ ...btn, background: "var(--charcoal)", color: "var(--charcoal-fg)", minWidth: 0, padding: "12px 22px", fontSize: "14px" }}>
                     Read the library free
                   </Link>
                   <Link href="/subscribe" style={{ ...btn, background: "transparent", color: "var(--ink)", border: "1px solid var(--border)", minWidth: 0, padding: "12px 22px", fontSize: "14px" }}>
@@ -173,7 +173,7 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
                 <button type="button" onClick={retryVerification} style={{ ...btn, background: "var(--mustard)", color: "var(--ink)" }}>
                   Check again
                 </button>
-                <Link href={`/${slug}`} style={{ ...btn, background: "var(--ink)", color: "var(--bone)" }}>
+                <Link href={`/${slug}`} style={{ ...btn, background: "var(--charcoal)", color: "var(--charcoal-fg)" }}>
                   Back to the book
                 </Link>
               </div>

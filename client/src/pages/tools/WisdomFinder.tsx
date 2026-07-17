@@ -58,7 +58,7 @@ const smallActionStyle = {
   gap: "6px",
   padding: "9px 16px",
   background: "var(--charcoal)",
-  color: "var(--bone)",
+  color: "var(--charcoal-fg)",
   border: "none",
   fontFamily: "var(--U)",
   fontWeight: 600,

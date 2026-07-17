@@ -392,7 +392,7 @@ export default function Dashboard() {
                   display: "inline-block",
                   padding: "0.75rem 1.5rem",
                   background: "var(--charcoal)",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   fontFamily: "var(--U)",
                   fontSize: "0.8rem",
                   fontWeight: 500,

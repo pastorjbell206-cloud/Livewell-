@@ -133,7 +133,7 @@ export default function ForPastors() {
                 type="button"
                 style={{
                   background: "transparent",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   border: "1px solid rgba(245,240,230,0.25)",
                   padding: "14px 28px",
                   fontFamily: "var(--U)",

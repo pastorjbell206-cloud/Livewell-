@@ -160,7 +160,7 @@ export default function MinimalNav() {
                   border: "none",
                   borderBottom: "2px solid var(--mustard)",
                   fontSize: "clamp(28px, 4vw, 48px)",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   outline: "none",
                   padding: "8px 0 16px",
                   caretColor: "var(--mustard)",
@@ -435,8 +435,8 @@ export default function MinimalNav() {
               <button
                 type="button"
                 style={{
-                  background: "var(--ink)",
-                  color: "var(--bone)",
+                  background: "var(--charcoal)",
+                  color: "var(--charcoal-fg)",
                   border: "none",
                   borderBottom: "2px solid var(--mustard)",
                   padding: "9px 20px",
@@ -638,8 +638,8 @@ export default function MinimalNav() {
                   flex: 1,
                   textDecoration: "none",
                   textAlign: "center",
-                  background: "var(--ink)",
-                  color: "var(--bone)",
+                  background: "var(--charcoal)",
+                  color: "var(--charcoal-fg)",
                   borderBottom: "2px solid var(--mustard)",
                   padding: "14px 24px",
                   fontFamily: "var(--U)",

@@ -311,7 +311,7 @@ export default function WhichLens() {
                   ))}
                 </div>
               ))}
-              <button onClick={() => setReviewing(false)} style={{ marginTop: "1.6rem", background: "var(--charcoal)", color: "var(--bone)", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontWeight: 500, fontSize: "0.875rem", padding: "0.85rem 1.6rem" }}>
+              <button onClick={() => setReviewing(false)} style={{ marginTop: "1.6rem", background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontWeight: 500, fontSize: "0.875rem", padding: "0.85rem 1.6rem" }}>
                 See my lens
               </button>
             </div>

@@ -264,7 +264,7 @@ export default function Resources() {
                       href={r.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--bone)", background: "var(--charcoal)", padding: "9px 14px", textDecoration: "none", alignSelf: "flex-start" }}
+                      style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "9px 14px", textDecoration: "none", alignSelf: "flex-start" }}
                     >
                       <Download size={14} /> Download
                     </a>

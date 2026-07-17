@@ -31,7 +31,7 @@ export default function Pastors() {
             <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-4" style={{ color: "var(--gold)" }}>
               Pastors Connection Network
             </div>
-            <h1 className="font-display font-bold mb-4" style={{ color: "var(--bone)", fontSize: "clamp(2.25rem, 4vw, 3rem)" }}>
+            <h1 className="font-display font-bold mb-4" style={{ color: "var(--charcoal-fg)", fontSize: "clamp(2.25rem, 4vw, 3rem)" }}>
               You weren't meant to lead alone
             </h1>
             <p className="font-body text-lg" style={{ color: "rgba(244,241,234,0.7)", lineHeight: 1.8 }}>
@@ -145,7 +145,7 @@ export default function Pastors() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded font-ui font-medium no-underline transition-colors"
-                      style={{ backgroundColor: "var(--charcoal)", color: "var(--bone)" }}
+                      style={{ backgroundColor: "var(--charcoal)", color: "var(--charcoal-fg)" }}
                     >
                       <ExternalLink size={18} /> Join the Network
                     </a>

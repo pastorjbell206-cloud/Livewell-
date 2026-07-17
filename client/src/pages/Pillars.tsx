@@ -60,10 +60,10 @@ export default function Pillars() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-3) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.5rem" }}>The spine of the site</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.2rem, 4.8vw, 3.2rem)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1.2rem" }}>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.2rem, 4.8vw, 3.2rem)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: "1.2rem" }}>
             Six pillars, two movements
           </h1>
-          <p style={{ color: "var(--bone)", opacity: 0.8, fontSize: "1.05rem", lineHeight: 1.7, marginBottom: "1.4rem" }}>
+          <p style={{ color: "var(--charcoal-fg)", opacity: 0.8, fontSize: "1.05rem", lineHeight: 1.7, marginBottom: "1.4rem" }}>
             Everything on this site hangs on one arc. First the diagnosis — naming what captured the American church and how it happened. Then the formation — how to live well on the other side of it. Five pillars do the naming. The sixth does the building.
           </p>
           <Link href="/tools/which-lens" style={linkStyle}>
@@ -136,15 +136,15 @@ export default function Pillars() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-3)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1rem" }}>The reference wings</div>
-          <p style={{ color: "var(--bone)", opacity: 0.75, fontSize: "0.95rem", lineHeight: 1.7, maxWidth: "62ch", marginBottom: "2rem" }}>
+          <p style={{ color: "var(--charcoal-fg)", opacity: 0.75, fontSize: "0.95rem", lineHeight: 1.7, maxWidth: "62ch", marginBottom: "2rem" }}>
             Alongside the pillars, five standing library sections hold the reference collections — the working shelves the essays draw on.
           </p>
           {WINGS.map((w) => (
             <Link key={w.href} href={w.href} style={{ display: "block", textDecoration: "none", padding: "1.1rem 0", borderBottom: "1px solid rgba(244,241,234,0.12)" }}>
-              <span style={{ fontFamily: "var(--F)", fontSize: "1.15rem", fontWeight: 400, color: "var(--bone)" }}>
+              <span style={{ fontFamily: "var(--F)", fontSize: "1.15rem", fontWeight: 400, color: "var(--charcoal-fg)" }}>
                 {w.name} <ArrowRight size={14} style={{ display: "inline", verticalAlign: "middle", color: "var(--mustard)" }} />
               </span>
-              <span style={{ display: "block", fontSize: "0.85rem", lineHeight: 1.6, color: "var(--bone)", opacity: 0.55, marginTop: "0.25rem" }}>
+              <span style={{ display: "block", fontSize: "0.85rem", lineHeight: 1.6, color: "var(--charcoal-fg)", opacity: 0.55, marginTop: "0.25rem" }}>
                 {w.blurb}
               </span>
             </Link>

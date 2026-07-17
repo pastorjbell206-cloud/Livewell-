@@ -192,7 +192,7 @@ export default function Doubt() {
             your foundations are solid and where the gaps are, then hands you the
             reading that meets you there instead of a verdict.
           </p>
-          <Link href="/tools/theology-quiz" style={{ display: "inline-block", background: "var(--ink)", color: "var(--bone)", padding: "13px 28px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, borderRadius: "3px", textDecoration: "none" }}>
+          <Link href="/tools/theology-quiz" style={{ display: "inline-block", background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "13px 28px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, borderRadius: "3px", textDecoration: "none" }}>
             Take the quiz
           </Link>
         </div>

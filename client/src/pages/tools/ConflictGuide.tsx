@@ -1414,7 +1414,7 @@ export default function ConflictGuide() {
                       cursor: "pointer",
                       transition: "all 0.2s",
                       background: "var(--charcoal)",
-                      color: "var(--bone)",
+                      color: "var(--charcoal-fg)",
                       border: "none",
                     }}
                     onMouseEnter={(e) => {

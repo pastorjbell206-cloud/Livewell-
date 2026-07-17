@@ -104,8 +104,8 @@ class ErrorBoundary extends Component<Props, State> {
               <button
                 onClick={() => window.location.reload()}
                 style={{
-                  background: "var(--ink)",
-                  color: "var(--bone)",
+                  background: "var(--charcoal)",
+                  color: "var(--charcoal-fg)",
                   border: "none",
                   borderBottom: "2px solid var(--mustard)",
                   borderRadius: "var(--radius-sm)",

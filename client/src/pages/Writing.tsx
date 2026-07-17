@@ -295,7 +295,7 @@ export default function Writing() {
                   padding: "6px 12px",
                   borderRadius: "999px",
                   border: `1px solid ${!activeSubTheme ? "var(--mustard)" : "rgba(245,240,230,0.25)"}`,
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   textDecoration: "none",
                 }}
               >
@@ -314,7 +314,7 @@ export default function Writing() {
                     padding: "6px 12px",
                     borderRadius: "999px",
                     border: `1px solid ${activeSubTheme === st ? "var(--mustard)" : "rgba(245,240,230,0.25)"}`,
-                    color: "var(--bone)",
+                    color: "var(--charcoal-fg)",
                     textDecoration: "none",
                   }}
                 >

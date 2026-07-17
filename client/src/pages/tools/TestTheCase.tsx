@@ -193,7 +193,7 @@ export default function TestTheCase() {
                 {stepIdx > 0 && (
                   <button type="button" onClick={back} style={{ ...btn, background: "var(--card)", color: "var(--ink)", border: "1px solid var(--border)" }}>Back</button>
                 )}
-                <button type="button" onClick={advance} style={{ ...btn, background: "var(--ink)", color: "var(--bone)", border: "1px solid var(--ink)" }}>
+                <button type="button" onClick={advance} style={{ ...btn, background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "1px solid var(--ink)" }}>
                   {isLast ? "See where it lands" : "That's fair, keep going"}
                 </button>
               </div>

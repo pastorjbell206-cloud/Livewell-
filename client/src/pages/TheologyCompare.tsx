@@ -77,7 +77,7 @@ export default function TheologyCompare() {
                   {/* Header row */}
                   <div style={{ background: "var(--charcoal)" }} />
                   {doc.positions.map((p) => (
-                    <div key={p.name} style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "14px", fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, borderTop: "3px solid var(--mustard)" }}>{p.name}</div>
+                    <div key={p.name} style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "14px", fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, borderTop: "3px solid var(--mustard)" }}>{p.name}</div>
                   ))}
 
                   {/* In one line */}

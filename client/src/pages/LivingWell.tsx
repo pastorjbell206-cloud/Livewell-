@@ -119,8 +119,8 @@ export default function LivingWell() {
               style={{
                 display: "inline-block",
                 padding: "14px 28px",
-                background: "var(--ink)",
-                color: "var(--bone)",
+                background: "var(--charcoal)",
+                color: "var(--charcoal-fg)",
                 borderRadius: "var(--radius-sm)",
                 fontFamily: "var(--U)",
                 fontWeight: 600,

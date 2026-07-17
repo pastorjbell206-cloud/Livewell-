@@ -443,7 +443,7 @@ export function ArticleCollections() {
                       gap: "8px",
                       padding: "0.8rem 1rem",
                       background: "var(--charcoal)",
-                      color: "var(--bone)",
+                      color: "var(--charcoal-fg)",
                       fontFamily: "var(--U)",
                       fontSize: "13px",
                       fontWeight: 500,

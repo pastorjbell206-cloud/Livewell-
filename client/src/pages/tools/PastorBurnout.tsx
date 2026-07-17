@@ -2224,7 +2224,7 @@ export default function PastorBurnout() {
                   borderRadius: "2px",
                   cursor: "pointer",
                   background: "var(--charcoal)",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   border: "none",
                   transition: "opacity 0.2s",
                 }}
@@ -2527,8 +2527,8 @@ export default function PastorBurnout() {
             You did not burn out alone, and you will not recover alone. <em>The Loneliness of the Pastor</em> is the book underneath this diagnostic, and <em>HealWell</em> is a year of short readings for the climb back.
           </p>
           <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="/the-loneliness-of-the-pastor" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>The Loneliness of the Pastor</a>
-            <a href="/healwell" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>HealWell</a>
+            <a href="/the-loneliness-of-the-pastor" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>The Loneliness of the Pastor</a>
+            <a href="/healwell" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>HealWell</a>
           </div>
         </div>
       </section>

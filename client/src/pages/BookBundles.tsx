@@ -307,7 +307,7 @@ export function BookBundles() {
                       fontSize: "14px",
                       fontWeight: 500,
                       letterSpacing: "0.02em",
-                      color: "var(--bone)",
+                      color: "var(--charcoal-fg)",
                       background: "var(--charcoal)",
                       border: "none",
                       borderRadius: "var(--radius-sm)",

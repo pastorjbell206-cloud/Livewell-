@@ -412,7 +412,7 @@ export default function Discipleship() {
       <section style={{ background: "var(--charcoal)", padding: "6rem 1.5rem 5rem" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.5rem" }}>The Discipleship Pathway</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.25rem, 5.5vw, 4rem)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1.5rem", maxWidth: "18ch" }}>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.25rem, 5.5vw, 4rem)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: "1.5rem", maxWidth: "18ch" }}>
             The long obedience, in order.
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "1.125rem", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch", marginBottom: "1.5rem" }}>
@@ -480,7 +480,7 @@ export default function Discipleship() {
       <section style={{ background: "var(--charcoal)", padding: "5rem 1.5rem", textAlign: "center" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <div style={{ width: "40px", height: "2px", background: "var(--mustard)", margin: "0 auto 2rem" }} />
-          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.65, color: "var(--bone)", fontStyle: "italic", margin: 0 }}>
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.65, color: "var(--charcoal-fg)", fontStyle: "italic", margin: 0 }}>
             Thirty steps fit on a page. The life they point to does not. When the last box is checked, you will not be finished. You will be equipped, which is a different thing, and a heavier one.
           </p>
           <div style={{ marginTop: "2rem" }}>

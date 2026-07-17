@@ -352,7 +352,7 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
                   Retake Quiz
                 </button>
                 <Link href="/writing" style={{ textDecoration: "none" }}>
-                  <button style={{ padding: "12px 24px", border: "none", background: "var(--ink)", color: "white", borderRadius: "4px", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}>
+                  <button style={{ padding: "12px 24px", border: "none", background: "var(--charcoal)", color: "white", borderRadius: "4px", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}>
                     Browse All Essays
                   </button>
                 </Link>

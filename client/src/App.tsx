@@ -713,16 +713,14 @@ function App() {
   return (
     <ErrorBoundary>
       {/*
-        Dark mode is intentionally not `switchable` for now. The site-wide dark
-        palette is unfinished — many section heroes mix theme-flipping tokens
-        (--ink / --bone) with non-flipping ones (--charcoal / --charcoal-fg),
-        so under html.dark their text renders invisible (dark-on-dark or
-        light-on-light). Until those heroes are standardized on the correct
-        pairing, dark mode stays off: every visitor gets light mode, the Footer
-        toggle is hidden (toggleTheme is undefined when not switchable), and any
-        visitor whose localStorage still says "dark" is reset to light.
+        Dark mode is switchable via the Footer toggle. Every dark hero/section/
+        card is standardized on the always-dark pairing — background
+        var(--charcoal) (holds dark in both themes) with text var(--charcoal-fg)
+        (holds light in both themes) — so headings stay readable under
+        html.dark. Inverting controls (buttons with var(--ink) bg + var(--paper)
+        text) flip in lockstep and remain legible. Default stays light.
       */}
-      <ThemeProvider defaultTheme="light">
+      <ThemeProvider defaultTheme="light" switchable>
         <ToastProvider>
           <TooltipProvider>
             <Toaster />

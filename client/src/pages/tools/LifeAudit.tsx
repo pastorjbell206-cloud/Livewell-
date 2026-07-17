@@ -1527,7 +1527,7 @@ export default function LifeAudit() {
                   borderRadius: "2px",
                   cursor: "pointer",
                   background: "var(--charcoal)",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   border: "none",
                   transition: "opacity 0.2s",
                 }}

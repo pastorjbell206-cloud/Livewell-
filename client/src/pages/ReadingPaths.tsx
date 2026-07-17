@@ -693,7 +693,7 @@ export default function ReadingPaths() {
                     display: "inline-block",
                     padding: "0.85rem 2rem",
                     background: "var(--charcoal)",
-                    color: "var(--bone)",
+                    color: "var(--charcoal-fg)",
                     fontFamily: "var(--U)",
                     fontSize: "0.85rem",
                     fontWeight: 500,

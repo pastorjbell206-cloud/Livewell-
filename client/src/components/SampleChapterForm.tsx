@@ -119,8 +119,8 @@ export function SampleChapterForm({
               display: "inline-flex",
               alignItems: "center",
               gap: "8px",
-              background: "var(--ink)",
-              color: "var(--bone)",
+              background: "var(--charcoal)",
+              color: "var(--charcoal-fg)",
               padding: "12px 22px",
               fontFamily: "var(--U)",
               fontSize: "13px",
@@ -215,8 +215,8 @@ export function SampleChapterForm({
             disabled={subscribe.isPending}
             style={{
               padding: "12px 22px",
-              background: "var(--ink)",
-              color: "var(--bone)",
+              background: "var(--charcoal)",
+              color: "var(--charcoal-fg)",
               border: "none",
               borderRadius: "var(--radius-sm)",
               fontFamily: "var(--U)",

@@ -146,7 +146,7 @@ export default function BookDetail() {
                     <Link href={`/read/${readSlug}`}>
                       <a
                         className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded font-ui font-medium no-underline transition-colors"
-                        style={{ backgroundColor: "var(--ink)", color: "var(--bone)", borderBottom: "2px solid var(--mustard)" }}
+                        style={{ backgroundColor: "var(--charcoal)", color: "var(--charcoal-fg)", borderBottom: "2px solid var(--mustard)" }}
                       >
                         <BookOpen size={18} /> Read the full book free
                       </a>
@@ -167,7 +167,7 @@ export default function BookDetail() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded font-ui font-medium no-underline transition-colors"
-                      style={{ backgroundColor: "var(--ink)", color: "var(--bone)" }}
+                      style={{ backgroundColor: "var(--charcoal)", color: "var(--charcoal-fg)" }}
                     >
                       <ExternalLink size={18} /> Purchase Now
                     </a>

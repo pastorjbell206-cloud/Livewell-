@@ -287,7 +287,7 @@ function QuoteSelectionShare({
         onMouseDown={(e) => e.preventDefault()}
         onClick={share}
         aria-live="polite"
-        style={{ display: "inline-flex", alignItems: "center", gap: "7px", background: "var(--charcoal)", color: "var(--bone)", border: "none", borderRadius: "var(--radius-sm)", padding: "8px 14px", fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.04em", cursor: "pointer", boxShadow: "var(--shadow-modal)", whiteSpace: "nowrap" }}
+        style={{ display: "inline-flex", alignItems: "center", gap: "7px", background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", borderRadius: "var(--radius-sm)", padding: "8px 14px", fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.04em", cursor: "pointer", boxShadow: "var(--shadow-modal)", whiteSpace: "nowrap" }}
       >
         <Share2 size={13} aria-hidden /> {copied ? "Copied" : "Share quote"}
       </button>
@@ -512,8 +512,8 @@ export default function ArticleDetail() {
             onClick={() => navigate("/writing")}
             style={{
               padding: "12px 24px",
-              background: "var(--ink)",
-              color: "var(--bone)",
+              background: "var(--charcoal)",
+              color: "var(--charcoal-fg)",
               border: "none",
               borderRadius: "var(--radius-sm)",
               cursor: "pointer",

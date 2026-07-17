@@ -1633,7 +1633,7 @@ export default function TheologyGlossary() {
                 borderRadius: "var(--radius-sm)",
                 border: "1px solid rgba(245,240,230,0.3)",
                 background: "transparent",
-                color: "var(--bone)",
+                color: "var(--charcoal-fg)",
                 textDecoration: "none",
                 transition: "opacity var(--dur) var(--ease)",
               }}

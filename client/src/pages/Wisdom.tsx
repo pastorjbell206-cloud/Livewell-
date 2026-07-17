@@ -123,7 +123,7 @@ export default function Wisdom() {
             <Link href="/tools/wisdom-finder" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal)", background: "var(--mustard)", padding: "13px 22px", textDecoration: "none" }}>
               Tell us what you are facing
             </Link>
-            <Link href="/life/wisdom-for-all-of-life" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "transparent", border: "1px solid rgba(245,240,230,0.4)", padding: "13px 22px", textDecoration: "none" }}>
+            <Link href="/life/wisdom-for-all-of-life" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal-fg)", background: "transparent", border: "1px solid rgba(245,240,230,0.4)", padding: "13px 22px", textDecoration: "none" }}>
               Read the guide
             </Link>
           </div>

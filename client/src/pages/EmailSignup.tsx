@@ -76,7 +76,7 @@ export default function EmailSignup() {
             they can actually be delivered, subscribers hear first.
           </p>
           <Link href="/reading-paths" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--ink)", color: "var(--bone)", border: "none", padding: "13px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>
+            <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "13px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>
               Browse the Reading Paths
             </button>
           </Link>

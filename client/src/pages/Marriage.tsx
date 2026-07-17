@@ -197,7 +197,7 @@ export default function Marriage() {
             Start with the Marriage Health Assessment. It takes 10 minutes and will show you exactly where your marriage is strongest and where repair work begins.
           </p>
           <Link href="/tools/marriage-assessment" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--ink)", color: "var(--charcoal-fg)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
+            <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
               Take the Assessment
             </button>
           </Link>

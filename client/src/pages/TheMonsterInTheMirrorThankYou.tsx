@@ -33,7 +33,7 @@ export default function TheMonsterInTheMirrorThankYou() {
             Thank you for buying <em>The Monster in the Mirror</em>. Download both formats below — the EPUB for your e-reader or phone, the PDF for everything else. The links stay on this page, so bookmark it.
           </p>
           <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
-            <a href={EPUB} download style={{ ...btn, background: "var(--ink)", color: "var(--bone)" }}>Download EPUB</a>
+            <a href={EPUB} download style={{ ...btn, background: "var(--charcoal)", color: "var(--charcoal-fg)" }}>Download EPUB</a>
             <a href={PDF} download style={{ ...btn, background: "var(--mustard)", color: "var(--ink)" }}>Download PDF</a>
           </div>
           <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--ink-muted)", marginTop: "40px" }}>

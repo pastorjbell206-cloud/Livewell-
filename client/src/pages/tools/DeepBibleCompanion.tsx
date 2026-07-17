@@ -2473,7 +2473,7 @@ export default function DeepBibleCompanion() {
             If this companion is your kind of study, the book behind it is <em>How to Read the Bible — Without Making It Say What You Already Believe</em>.
           </p>
           <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="/how-to-read-the-bible" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Read about the book</a>
+            <a href="/how-to-read-the-bible" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Read about the book</a>
           </div>
         </div>
       </section>

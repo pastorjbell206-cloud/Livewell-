@@ -1260,7 +1260,7 @@ export default function MarriageAssessment() {
                   borderRadius: "2px",
                   cursor: "pointer",
                   background: "var(--charcoal)",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   border: "none",
                   transition: "opacity 0.2s",
                 }}
@@ -1397,7 +1397,7 @@ export default function MarriageAssessment() {
             If this assessment named something you already knew was there, the book goes further. <em>Covenant</em> is the long form of everything this tool measures — why marriage is a promise, not a deal.
           </p>
           <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="/covenant" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Read about Covenant</a>
+            <a href="/covenant" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Read about Covenant</a>
           </div>
         </div>
       </section>

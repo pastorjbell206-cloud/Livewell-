@@ -98,7 +98,7 @@ export default function Books() {
               fontWeight: 400,
               lineHeight: 1.1,
               letterSpacing: "-0.02em",
-              color: "var(--bone)",
+              color: "var(--charcoal-fg)",
               marginBottom: "20px",
             }}
           >
@@ -144,7 +144,7 @@ export default function Books() {
                 opening free, then buy the ebook.
               </p>
             </div>
-            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
               Get the ebook →
             </span>
           </div>
@@ -176,7 +176,7 @@ export default function Books() {
                 the opening free, then buy the ebook.
               </p>
             </div>
-            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
               Get the ebook →
             </span>
           </div>
@@ -184,7 +184,7 @@ export default function Books() {
       </section>
 
       {/* NEW EBOOK — How to Read the Bible (standalone funnel page) */}
-      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/how-to-read-the-bible" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
@@ -200,7 +200,7 @@ export default function Books() {
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Ebook · $9.99 · On Reading Scripture
               </div>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--charcoal-fg)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 How to Read the Bible
               </h2>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
@@ -242,7 +242,7 @@ export default function Books() {
                 free, then buy the ebook.
               </p>
             </div>
-            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
               Get the ebook →
             </span>
           </div>
@@ -250,7 +250,7 @@ export default function Books() {
       </section>
 
       {/* NEW EBOOK — What Belongs to the Poor (standalone funnel page) */}
-      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/what-belongs-to-the-poor" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
@@ -266,7 +266,7 @@ export default function Books() {
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Ebook · $9.99 · What the Fathers Knew
               </div>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--charcoal-fg)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 What Belongs to the Poor
               </h2>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
@@ -308,7 +308,7 @@ export default function Books() {
                 the opening free, then buy the ebook.
               </p>
             </div>
-            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
               Get the ebook →
             </span>
           </div>
@@ -316,7 +316,7 @@ export default function Books() {
       </section>
 
       {/* NEW EBOOK — Why Not What (theology, standalone funnel page) */}
-      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/why-not-what" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
@@ -332,7 +332,7 @@ export default function Books() {
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Ebook · $9.99 · On Theology
               </div>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--charcoal-fg)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Why Not What
               </h2>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
@@ -348,7 +348,7 @@ export default function Books() {
       </section>
 
       {/* NEW EBOOK — The Sermon on the Mount as Politics */}
-      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/sermon-on-the-mount-as-politics" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
@@ -358,7 +358,7 @@ export default function Books() {
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Ebook · $9.99 · On the Kingdom
               </div>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--charcoal-fg)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 The Sermon on the Mount as Politics
               </h2>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
@@ -392,7 +392,7 @@ export default function Books() {
                 recovered, biblical and never partisan. Read the opening free, then buy the ebook.
               </p>
             </div>
-            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
               Get the ebook →
             </span>
           </div>
@@ -400,7 +400,7 @@ export default function Books() {
       </section>
 
       {/* NEW EBOOK — Marriage in Ministry */}
-      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/marriage-in-ministry" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
@@ -410,7 +410,7 @@ export default function Books() {
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Ebook · $9.99 · On Marriage &amp; Ministry
               </div>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--charcoal-fg)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Marriage in Ministry
               </h2>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
@@ -444,7 +444,7 @@ export default function Books() {
                 was built around. Read the opening free, then buy the ebook.
               </p>
             </div>
-            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
               Get the ebook →
             </span>
           </div>
@@ -452,7 +452,7 @@ export default function Books() {
       </section>
 
       {/* NEW DEVOTIONAL — HealWell */}
-      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/healwell" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
@@ -462,7 +462,7 @@ export default function Books() {
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Devotional · $9.99 · 52 Weeks
               </div>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--charcoal-fg)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 HealWell: 52 Weeks in Costly Hope
               </h2>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
@@ -478,7 +478,7 @@ export default function Books() {
       </section>
 
       {/* NEW EBOOK — Born Again From Atheism */}
-      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/born-again-from-atheism" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
@@ -488,7 +488,7 @@ export default function Books() {
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Ebook · $9.99 · For Skeptics
               </div>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--charcoal-fg)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Born Again From Atheism
               </h2>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
@@ -522,7 +522,7 @@ export default function Books() {
                 carry yours. Read the opening free, then buy the ebook.
               </p>
             </div>
-            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
               Get the ebook →
             </span>
           </div>
@@ -530,7 +530,7 @@ export default function Books() {
       </section>
 
       {/* NEW EBOOK — Faith After Deconstruction */}
-      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/faith-after-deconstruction" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
@@ -540,7 +540,7 @@ export default function Books() {
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Ebook · $9.99 · For the Deconstructing
               </div>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--charcoal-fg)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Faith After Deconstruction
               </h2>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
@@ -574,7 +574,7 @@ export default function Books() {
                 no one sees. Read the opening free, then buy the ebook.
               </p>
             </div>
-            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
               Get the ebook →
             </span>
           </div>
@@ -582,7 +582,7 @@ export default function Books() {
       </section>
 
       {/* NEW EBOOK — The Scandal of the Cross */}
-      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/the-scandal-of-the-cross" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
@@ -592,7 +592,7 @@ export default function Books() {
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Ebook · $9.99 · On the Cross
               </div>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--charcoal-fg)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 The Scandal of the Cross
               </h2>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
@@ -626,7 +626,7 @@ export default function Books() {
                 harps, and what that changes. Read the opening free, then buy the ebook.
               </p>
             </div>
-            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
               Get the ebook →
             </span>
           </div>
@@ -634,7 +634,7 @@ export default function Books() {
       </section>
 
       {/* NEW EBOOK — Prayer in the Dark */}
-      <section style={{ background: "var(--ink)", padding: "var(--s-5) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)" }}>
         <Link href="/prayer-in-the-dark" style={{ textDecoration: "none", color: "inherit" }}>
           <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "24px", alignItems: "center", flexWrap: "wrap" }}>
             <img
@@ -644,7 +644,7 @@ export default function Books() {
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Ebook · $9.99 · On Prayer
               </div>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--charcoal-fg)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Prayer in the Dark
               </h2>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
@@ -678,7 +678,7 @@ export default function Books() {
                 body of Christ still matters. Read the opening free, then buy the ebook.
               </p>
             </div>
-            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--bone)", background: "var(--ink)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
+            <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
               Get the ebook →
             </span>
           </div>
@@ -701,7 +701,7 @@ export default function Books() {
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
                 New Release · Ebook
               </div>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 500, color: "var(--charcoal-fg)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 When God Bless America Replaces Thy Kingdom Come
               </h2>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
@@ -778,12 +778,12 @@ export default function Books() {
       </section>
 
       {/* NEW RELEASES — three new ebooks */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)", marginBottom: "8px" }}>
             New Releases · Ebooks
           </div>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 400, margin: "0 0 28px", color: "var(--bone)" }}>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 400, margin: "0 0 28px", color: "var(--charcoal-fg)" }}>
             Three new books, available now
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "var(--s-4)" }}>
@@ -797,7 +797,7 @@ export default function Books() {
               loading="lazy"
               decoding="async" src={b.cover} alt={`${b.title} — cover`} width={1600} height={2560}
                   style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 12px 32px rgba(0,0,0,.4)" }} />
-                <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--bone)", margin: "14px 0 4px", lineHeight: 1.2 }}>{b.title}</h3>
+                <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--charcoal-fg)", margin: "14px 0 4px", lineHeight: 1.2 }}>{b.title}</h3>
                 <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "rgba(245,240,230,.7)", margin: "0 0 8px", lineHeight: 1.4 }}>{b.sub}</p>
                 <span style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--mustard)", letterSpacing: "0.04em" }}>Get the ebook →</span>
               </Link>
@@ -1151,7 +1151,7 @@ export default function Books() {
               fontSize: "20px",
               fontStyle: "italic",
               lineHeight: 1.55,
-              color: "var(--bone)",
+              color: "var(--charcoal-fg)",
               marginBottom: "20px",
             }}
           >

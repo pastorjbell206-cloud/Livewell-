@@ -113,7 +113,7 @@ export function NewsletterSignup({
               fontFamily: "var(--F)",
               fontWeight: 500,
               fontSize: "16px",
-              color: "var(--bone)",
+              color: "var(--charcoal-fg)",
             }}
           >
             {title}
@@ -139,7 +139,7 @@ export function NewsletterSignup({
                 borderRadius: "var(--radius-sm)",
                 fontFamily: "var(--B)",
                 fontSize: "16px",
-                color: "var(--bone)",
+                color: "var(--charcoal-fg)",
                 outline: "none",
               }}
             />
@@ -198,8 +198,8 @@ export function NewsletterSignup({
           disabled={subscribe.isPending}
           style={{
             padding: "12px 22px",
-            background: "var(--ink)",
-            color: "var(--bone)",
+            background: "var(--charcoal)",
+            color: "var(--charcoal-fg)",
             border: "none",
             borderRadius: "var(--radius-sm)",
             fontFamily: "var(--U)",
@@ -277,8 +277,8 @@ export function NewsletterSignup({
           disabled={subscribe.isPending}
           style={{
             padding: "12px 22px",
-            background: "var(--ink)",
-            color: "var(--bone)",
+            background: "var(--charcoal)",
+            color: "var(--charcoal-fg)",
             border: "none",
             borderRadius: "var(--radius-sm)",
             fontFamily: "var(--U)",

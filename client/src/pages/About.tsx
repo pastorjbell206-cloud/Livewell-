@@ -55,8 +55,8 @@ export default function About() {
               <Figure src={PORTRAIT} alt="James Bell" aspect="4 / 5" priority />
             </div>
             <div style={{ flex: 1, minWidth: "260px" }}>
-              <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1rem" }}>James Bell</h1>
-              <p style={{ fontSize: "0.875rem", color: "var(--bone)", opacity: 0.5, fontFamily: "var(--U)", lineHeight: 1.5 }}>
+              <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: "1rem" }}>James Bell</h1>
+              <p style={{ fontSize: "0.875rem", color: "var(--charcoal-fg)", opacity: 0.5, fontFamily: "var(--U)", lineHeight: 1.5 }}>
                 Lead Pastor, First Baptist Church of Fenton<br />
                 Founder, Pastors Connection Network<br />
                 Author of {SITE_STATS.bookCount} books
@@ -64,7 +64,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="article-body prose-section" style={{ color: "var(--bone)", opacity: 0.85 }}>
+          <div className="article-body prose-section" style={{ color: "var(--charcoal-fg)", opacity: 0.85 }}>
             <p>
               I came to faith from atheism, and I did not come quietly. For a long time I was certain that belief was something people reached for when they could not sit with how little the universe owed them. I had my arguments, and I thought they were good ones. What I never had was a good answer for why those arguments kept feeling thinner the longer I held onto them. There was no lightning, no single night I can point to. I just slowly ran out of room to keep saying no, and one day I stopped saying it.
             </p>
@@ -137,14 +137,14 @@ export default function About() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-3)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.5rem" }}>Where to begin</div>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "1.75rem", fontWeight: 400, color: "var(--bone)", marginBottom: "2.5rem" }}>Begin where you actually are</h2>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "1.75rem", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "2.5rem" }}>Begin where you actually are</h2>
 
           {PATHWAYS.filter((p) => SKEPTIC_TRACK_LIVE || p.href !== "/skeptic-track").map((p) => (
             <Link key={p.href} href={p.href} style={{ display: "block", textDecoration: "none", padding: "1.5rem 0", borderBottom: "1px solid rgba(244,241,234,0.12)" }}>
-              <div style={{ fontFamily: "var(--F)", fontSize: "1.2rem", fontWeight: 400, color: "var(--bone)", marginBottom: "0.4rem" }}>
+              <div style={{ fontFamily: "var(--F)", fontSize: "1.2rem", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "0.4rem" }}>
                 {p.label} <ArrowRight size={15} style={{ display: "inline", verticalAlign: "middle", color: "var(--mustard)" }} />
               </div>
-              <div style={{ fontSize: "0.9rem", lineHeight: 1.6, color: "var(--bone)", opacity: 0.55 }}>{p.desc}</div>
+              <div style={{ fontSize: "0.9rem", lineHeight: 1.6, color: "var(--charcoal-fg)", opacity: 0.55 }}>{p.desc}</div>
             </Link>
           ))}
         </div>
@@ -163,7 +163,7 @@ export default function About() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-3)", textAlign: "center" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <div style={{ width: "40px", height: "2px", background: "var(--mustard)", margin: "0 auto 2rem" }} />
-          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.65, color: "var(--bone)", fontStyle: "italic", marginBottom: "2rem" }}>
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.65, color: "var(--charcoal-fg)", fontStyle: "italic", marginBottom: "2rem" }}>
             You may still be deciding whether to trust the voice. That is the right instinct, and you should keep it. The writing will either carry weight for you or it will not, and I would rather you find that out for yourself than be talked into it. Begin where you actually are.
           </p>
           <Link href="/writing" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>

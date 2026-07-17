@@ -153,7 +153,7 @@ export function ReadingPathDetail() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-3)", textAlign: "center" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <div style={{ width: "40px", height: "2px", background: "var(--mustard)", margin: "0 auto 2rem" }} />
-          <p style={{ fontFamily: "var(--F)", fontSize: "1.1rem", lineHeight: 1.6, color: "var(--bone)", fontStyle: "italic", marginBottom: "2rem" }}>
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.1rem", lineHeight: 1.6, color: "var(--charcoal-fg)", fontStyle: "italic", marginBottom: "2rem" }}>
             Read it in order if you can. Each essay assumes the ground the one before it cleared.
           </p>
           <div style={{ display: "flex", gap: "2rem", justifyContent: "center", flexWrap: "wrap" }}>

@@ -285,7 +285,7 @@ function bookFor(post: PostLike): BookRef {
 export function KeepReadingBook({ post }: { post: PostLike }) {
   const book = bookFor(post);
   return (
-    <section style={{ background: "var(--ink)", padding: "var(--s-6) var(--s-4)" }}>
+    <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)" }}>
       <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "28px", alignItems: "center", flexWrap: "wrap" }}>
         <img
           src={book.cover ?? `/books/${book.slug}.svg`}
@@ -298,7 +298,7 @@ export function KeepReadingBook({ post }: { post: PostLike }) {
           <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
             Keep reading · The book
           </div>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.4vw, 34px)", fontWeight: 400, color: "var(--bone)", margin: "8px 0 4px", lineHeight: 1.1, letterSpacing: "-0.02em" }}>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.4vw, 34px)", fontWeight: 400, color: "var(--charcoal-fg)", margin: "8px 0 4px", lineHeight: 1.1, letterSpacing: "-0.02em" }}>
             {book.title}
           </h2>
           <p style={{ fontFamily: "var(--F)", fontStyle: "italic", fontSize: "17px", color: "rgba(245,240,230,.72)", margin: "0 0 12px" }}>
