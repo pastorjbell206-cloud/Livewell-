@@ -12,9 +12,11 @@ import { SEOMeta, getArticleSchema, getBreadcrumbSchema } from "@/components/SEO
 
 interface Section { id: string; kicker: string; title: string; body: string; }
 interface Reading { title: string; author: string; }
-interface Essay { title: string; subtitle: string; sections: Section[]; furtherReading: Reading[]; datePublished?: string; }
+interface NextRead { label: string; href: string; blurb: string; }
+interface Essay { title: string; subtitle: string; sections: Section[]; furtherReading: Reading[]; datePublished?: string; readNext?: NextRead[]; }
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+const card = { background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)", textDecoration: "none", color: "inherit", display: "block", borderTop: "3px solid var(--mustard)" } as const;
 const SITE = "https://www.livewellbyjamesbell.co";
 
 export default function NationEssay({ slug }: { slug: string }) {
@@ -66,6 +68,22 @@ export default function NationEssay({ slug }: { slug: string }) {
           </div>
         </section>
       ))}
+
+      {e?.readNext && e.readNext.length > 0 && (
+        <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+          <div style={wrap}>
+            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "var(--s-3)" }}>Keep reading</div>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px, 100%), 1fr))", gap: "16px" }}>
+              {e.readNext.map((r) => (
+                <Link key={r.href} href={r.href} style={card}>
+                  <div style={{ fontFamily: "var(--F)", fontSize: "19px", fontWeight: 500, color: "var(--ink)", marginBottom: "6px", lineHeight: 1.2 }}>{r.label}</div>
+                  <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{r.blurb}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {e && e.furtherReading?.length > 0 && (
         <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--bone)" }}>
