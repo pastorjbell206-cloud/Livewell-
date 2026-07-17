@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { ToolActions } from "@/components/ToolActions";
+import { Link } from "wouter";
 import { useState, useRef } from "react";
 import {
   ArrowLeft,
@@ -23,6 +24,9 @@ interface Category {
   name: string;
   slug: string;
   description: string;
+  /** The passage this dimension of church health answers to. Rendered as a
+   *  reference that links to the full text — not an embedded quotation. */
+  scripture: { ref: string };
   questions: Question[];
   actionSteps: Record<string, string[]>;
   articleLink: { title: string; href: string };
@@ -42,6 +46,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Worship & Teaching",
     slug: "worship",
+    scripture: { ref: "Colossians 3:16" },
     description:
       "Whether the gathered life of your church is forming people or merely entertaining them.",
     questions: [
@@ -83,6 +88,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Community & Discipleship",
     slug: "community",
+    scripture: { ref: "Acts 2:42" },
     description:
       "The difference between a church that has members and a church that makes disciples.",
     questions: [
@@ -124,6 +130,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Outreach & Mission",
     slug: "outreach",
+    scripture: { ref: "Matthew 28:19-20" },
     description:
       "Whether your church exists for itself or for the neighborhood it was planted to serve.",
     questions: [
@@ -165,6 +172,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Leadership Development",
     slug: "leadership",
+    scripture: { ref: "Ephesians 4:11-12" },
     description:
       "Whether your church is building leaders or depending on one.",
     questions: [
@@ -206,6 +214,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Financial Stewardship",
     slug: "financial",
+    scripture: { ref: "1 Corinthians 4:2" },
     description:
       "Whether your church handles money with the transparency and intentionality the Gospel demands.",
     questions: [
@@ -247,6 +256,7 @@ const CATEGORIES: Category[] = [
   {
     name: "Congregational Care",
     slug: "care",
+    scripture: { ref: "Acts 20:28" },
     description:
       "Whether people in your church are genuinely cared for or simply counted.",
     questions: [
@@ -742,6 +752,15 @@ export default function ChurchHealth() {
                 }}
               >
                 {category.description}
+              </p>
+              <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", marginTop: "12px" }}>
+                Anchored in{" "}
+                <Link
+                  href={`/theology/passage?ref=${encodeURIComponent(category.scripture.ref)}`}
+                  style={{ color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}
+                >
+                  {category.scripture.ref}
+                </Link>
               </p>
             </div>
 
