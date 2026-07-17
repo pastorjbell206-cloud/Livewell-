@@ -23,11 +23,22 @@ retoken the card's text `--charcoal`→`--ink` **and** swap the bg — provably
 correct both modes (near-identical in light, correct in dark).
 - ☑ `pages/tools/SavedItems.tsx` — DONE (4 cards + the file's section headings /
   empty-state text, all charcoal-on-bone → `--ink`; hero bg + mustard badge left).
-- ☐ `pages/ReadingPaths.tsx:357` — held: the file interleaves ~10
-  `var(--charcoal)` uses across heroes, backgrounds, and text; pairing them
-  needs a rendered check, not a blind grep.
-- ☐ `pages/tools/DeepBibleCompanion.tsx` — held: ~25 hardcoded `#666`/`#999`
-  text on white cards; retoken text + surfaces together, in a browser.
+- ☑ `pages/ReadingPaths.tsx` — DONE, **browser-verified both themes**. It had
+  three bugs: white path cards, `color: var(--charcoal)` text invisible on the
+  bone sections, and `color: var(--bone)` text invisible on the charcoal
+  hero/sections (the documented fixed-dark trap — `--bone` flips dark). Fix:
+  cards → `--card`; charcoal-text → `--ink`; bone-text-on-dark → `--charcoal-fg`.
+- ☑ `pages/tools/DeepBibleCompanion.tsx` — DONE, **browser-verified both
+  themes**. 6 white book-cards → `--card`; 10 `#666` + inactive-tab `#999` text
+  → `--ink-muted`; hero `var(--bone,…)` h1/subtitle → `--charcoal-fg`. Left the
+  self-consistent bone-on-ink CTA button, the `var(--bone)` section backgrounds
+  (flip correctly), the print block, and the disabled `#ccc` nuance.
+
+**Method (now proven):** the sandbox has Chromium + Playwright — build the site,
+serve `dist/public` with SPA fallback, force `localStorage.theme`, and
+screenshot each page in **both** themes (`scratchpad/verify.js`). The
+"needs a browser" items above are no longer blocked — they need this harness,
+which works.
 - ☐ `BookDetail.tsx:129` — a white *section* (not a card); decide `--bone` vs a
   lifted band.
 
