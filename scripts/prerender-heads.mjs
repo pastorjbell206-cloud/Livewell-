@@ -221,6 +221,12 @@ const STATIC_PAGES = [
     type: "website",
   },
   {
+    path: "/nation/state-of-the-american-church",
+    title: "The State of the American Church",
+    description: "Captive, and not finished. The two captivities, right and left, that keep trading a crucified God for what can be weaponized, and the older faith beneath both.",
+    type: "website",
+  },
+  {
     path: "/nation/christian-nation",
     title: "Was America Founded as a Christian Nation?",
     description: "The strongest case for yes, the strongest case for no, the Baptists who built the wall of separation, and the deeper question both sides forget to ask.",

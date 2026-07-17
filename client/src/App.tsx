@@ -421,6 +421,7 @@ function Router() {
         <Route path="/justice/glossary"><PropheticGlossary config={JUSTICE} /></Route>
         <Route path="/justice/witnesses"><PropheticWitnesses config={JUSTICE} /></Route>
         <Route path="/justice/timeline"><PropheticTimeline /></Route>
+        <Route path="/nation/state-of-the-american-church"><NationEssay slug="state-of-the-american-church" /></Route>
         <Route path="/nation/christian-nation"><NationEssay slug="christian-nation" /></Route>
         <Route path="/nation/theocracy"><NationEssay slug="theocracy" /></Route>
         <Route path="/nation/empire"><NationEssay slug="empire" /></Route>
