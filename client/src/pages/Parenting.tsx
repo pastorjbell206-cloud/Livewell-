@@ -3,6 +3,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import PillarLeadMagnet from "@/components/PillarLeadMagnet";
 import { PullQuote, StatementBand } from "@/components/EditorialBlocks";
 
 export default function Parenting() {
@@ -158,6 +159,16 @@ export default function Parenting() {
           <PullQuote>Faith is not argued into a child. It is lived in front of one.</PullQuote>
         </div>
       </section>
+
+      {/* LEAD MAGNET — email-gated reading path */}
+      <PillarLeadMagnet
+        kicker="Free Reading Path"
+        title="The Parenting Reading Path"
+        blurb="Three studies from a father of five — formation over performance, presence over advice. From the long work of raising believers to the particular weight a father carries. A short PDF to read alone or with the other parent in the house."
+        slug="parenting"
+        downloadLabel="Get the reading path (PDF)"
+        source="reading-path-parenting"
+      />
 
       {/* NEWSLETTER STRIP — real form, no silent failures */}
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)" }}>

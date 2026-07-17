@@ -712,7 +712,17 @@ function App() {
   }, []);
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="light" switchable>
+      {/*
+        Dark mode is intentionally not `switchable` for now. The site-wide dark
+        palette is unfinished — many section heroes mix theme-flipping tokens
+        (--ink / --bone) with non-flipping ones (--charcoal / --charcoal-fg),
+        so under html.dark their text renders invisible (dark-on-dark or
+        light-on-light). Until those heroes are standardized on the correct
+        pairing, dark mode stays off: every visitor gets light mode, the Footer
+        toggle is hidden (toggleTheme is undefined when not switchable), and any
+        visitor whose localStorage still says "dark" is reset to light.
+      */}
+      <ThemeProvider defaultTheme="light">
         <ToastProvider>
           <TooltipProvider>
             <Toaster />

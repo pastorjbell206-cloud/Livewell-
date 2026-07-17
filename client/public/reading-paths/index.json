@@ -1,0 +1,59 @@
+{
+  "note": "Curated reading paths used as email-gated lead magnets on the pillar pages. Each stop points to a real study guide that already ships in client/public/studyguides. No content is invented here — this is curation and connective prose only. Rerun `node scripts/build-pdfs.mjs` after editing so the PDFs in client/public/downloads/reading-paths/ regenerate.",
+  "paths": [
+    {
+      "slug": "skeptic",
+      "kicker": "A Reading Path",
+      "title": "The Skeptic's Reading Path",
+      "subtitle": "Four studies, in the order I'd hand them to the version of me that didn't believe any of it.",
+      "intro": "I came to faith from atheism at twenty-four. Not because someone won an argument. Because the questions I thought ended the conversation turned out to be the beginning of one. This is the path I'd walk with you — not to close the case, but to make the case honest.\n\nTake them in order, or take the one that names your question. Each is a study you can do alone or hand to a group. No conversion bait. No bad apologetics. The questions worth asking, and the answers I actually have for them.",
+      "stops": [
+        { "n": 1, "guide": "Questions Worth Asking", "why": "Start where the objections are strongest. The case for unbelief stated the way an unbeliever would state it, before any answer is offered.", "url": "livewellbyjamesbell.co/studyguides/skeptic" },
+        { "n": 2, "guide": "Did It Happen: The Case for the Resurrection", "why": "Everything turns on one claim in history. What you can defend, what you cannot, and what changes if it happened.", "url": "livewellbyjamesbell.co/studyguides/resurrection" },
+        { "n": 3, "guide": "One Story", "why": "Read the Bible the way Christians have actually read it — as one story, not a book of rules or a shelf of proof texts.", "url": "livewellbyjamesbell.co/studyguides/the-story-of-the-bible" },
+        { "n": 4, "guide": "The Faith Once Delivered", "why": "What Christians have confessed for two thousand years, before the tribes and the marketing. The floor beneath the arguments.", "url": "livewellbyjamesbell.co/studyguides/the-creeds" }
+      ],
+      "closing": "If you finish these and still do not believe, you will at least know you turned down the real thing and not a cartoon of it. That is the only win I am after."
+    },
+    {
+      "slug": "doubt",
+      "kicker": "A Reading Path",
+      "title": "When Faith Has Questions",
+      "subtitle": "Four studies for keeping the question inside the faith instead of leaving to keep it.",
+      "intro": "Doubt is not the opposite of faith. It is often the most honest thing in the room. The church has sat in this dark before, and it left us the prayers to pray from inside it.\n\nThese four move from the questions to the ground underneath them. Do them alone, or with people who will not flinch when you say the true thing.",
+      "stops": [
+        { "n": 1, "guide": "When Faith Has Questions", "why": "Name the question more honestly than you have heard it named, including from a pulpit. Then sit with it long enough to hear what it is actually asking.", "url": "livewellbyjamesbell.co/studyguides/doubt" },
+        { "n": 2, "guide": "When It All Comes Apart", "why": "For the faith that is coming apart. How to take the inherited lenses off without throwing away the thing underneath them.", "url": "livewellbyjamesbell.co/studyguides/deconstruction" },
+        { "n": 3, "guide": "The Prayers We Were Never Taught", "why": "A third of the Psalms are complaints. The Bible hands you words for the days God seems absent. Most of us were never given them.", "url": "livewellbyjamesbell.co/studyguides/lament" },
+        { "n": 4, "guide": "Praying the Honest Prayers", "why": "Learning to pray the Psalms as they are — the anger, the ache, and the trust that comes after them, not instead of them.", "url": "livewellbyjamesbell.co/studyguides/the-psalms" }
+      ],
+      "closing": "The goal is not to end the question this week. It is to keep it where it belongs — inside the faith, where the church has always carried its hardest ones."
+    },
+    {
+      "slug": "marriage",
+      "kicker": "A Reading Path",
+      "title": "The Marriage Reading Path",
+      "subtitle": "Three studies from inside the room where marriages fall apart and come back together.",
+      "intro": "Marriage does not need more tips. It needs a bigger frame than the one the culture handed you — the one that says the point is your happiness and the exit is always open.\n\nThese three move from the covenant under the marriage to the daily work of repair. Read them with your spouse, or read them alone and start where the honesty has to start.",
+      "stops": [
+        { "n": 1, "guide": "Covenant", "why": "What marriage is before it is anything you feel — a promise that holds when the feeling does not. The frame everything else hangs on.", "url": "livewellbyjamesbell.co/studyguides/marriage" },
+        { "n": 2, "guide": "The Hardest Word", "why": "No marriage survives without forgiveness, and no one finds it easy. What it is, what it is not, and how it actually gets done.", "url": "livewellbyjamesbell.co/studyguides/forgiveness" },
+        { "n": 3, "guide": "Fatherhood in a Fatherless Age", "why": "For the marriage that is also raising children — and for the father carrying a wound of his own into it.", "url": "livewellbyjamesbell.co/studyguides/fatherhood" }
+      ],
+      "closing": "Repair is not a technique. It is two people deciding the covenant outranks the argument, again, on an ordinary Tuesday. Start there."
+    },
+    {
+      "slug": "parenting",
+      "kicker": "A Reading Path",
+      "title": "The Parenting Reading Path",
+      "subtitle": "Three studies from a father of five — formation over performance, presence over advice.",
+      "intro": "Your children will inherit your doubts before they inherit your certainty, and your presence before either. Parenting is not a set of techniques to run. It is a life they are watching.\n\nThese three move from the long work of formation to the particular weight a father carries. Read them alone, or with the other parent in the house.",
+      "stops": [
+        { "n": 1, "guide": "Raising Believers", "why": "How faith actually passes from one generation to the next — not by pressure, and not by accident.", "url": "livewellbyjamesbell.co/studyguides/raising-believers" },
+        { "n": 2, "guide": "The Long Obedience of Parenting", "why": "Formation is slow. This is the study for the years that do not show results, which are most of them.", "url": "livewellbyjamesbell.co/studyguides/parenting-formation" },
+        { "n": 3, "guide": "Fatherhood in a Fatherless Age", "why": "What it means to father when many of us were not fathered well. Written from inside that particular gap.", "url": "livewellbyjamesbell.co/studyguides/fatherhood" }
+      ],
+      "closing": "You will not do this perfectly. Neither did I, and I have five witnesses. The good news is that presence, not performance, is what forms them. Stay in the room."
+    }
+  ]
+}

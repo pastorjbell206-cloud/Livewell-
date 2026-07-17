@@ -30,6 +30,8 @@ const STUDYGUIDES_DIR = path.join(ROOT, "client/public/studyguides");
 const OUT_STUDYGUIDES = path.join(ROOT, "client/public/downloads/studyguides");
 const BOOKS_DIR = path.join(ROOT, "client/public/books");
 const OUT_BOOKS = path.join(ROOT, "client/public/downloads/books");
+const READING_PATHS_FILE = path.join(ROOT, "client/public/reading-paths/index.json");
+const OUT_READING_PATHS = path.join(ROOT, "client/public/downloads/reading-paths");
 
 // Palette (print-safe subset of the brand tokens)
 const INK = "#14110C";
@@ -394,6 +396,46 @@ async function buildBook(book) {
 }
 
 // ---------------------------------------------------------------------------
+// Reading paths — email-gated lead magnets that curate existing study guides
+// ---------------------------------------------------------------------------
+
+async function buildReadingPath(path_) {
+  const outPath = path.join(OUT_READING_PATHS, `${path_.slug}.pdf`);
+  await writePdf(outPath, (doc) => {
+    coverPage(doc, {
+      kicker: path_.kicker || "A Reading Path",
+      title: path_.title,
+      subtitle: path_.subtitle,
+    });
+
+    bodyParagraphs(doc, path_.intro);
+    doc.moveDown(0.4);
+    thinRule(doc, RULE, 0.5);
+    doc.moveDown(1.2);
+
+    for (const stop of path_.stops || []) {
+      ensureRoom(doc, 120);
+      kickerLine(doc, `Stop ${stop.n}`);
+      doc.moveDown(0.4);
+      doc.font("Times-Bold").fontSize(15).fillColor(INK).text(stop.guide, { lineGap: 2 });
+      doc.moveDown(0.4);
+      doc.font("Times-Roman").fontSize(11).fillColor(INK).text(stop.why, { lineGap: 4 });
+      doc.moveDown(0.3);
+      doc.font("Times-Italic").fontSize(10).fillColor(MUSTARD).text(stop.url, { lineGap: 3 });
+      doc.moveDown(1);
+    }
+
+    if (path_.closing) {
+      ensureRoom(doc, 90);
+      thinRule(doc, RULE, 0.5);
+      doc.moveDown(1);
+      doc.font("Times-Italic").fontSize(12).fillColor(INK).text(path_.closing, { lineGap: 4.5 });
+    }
+  }, { title: path_.title + " — A Reading Path" });
+  return outPath;
+}
+
+// ---------------------------------------------------------------------------
 // Context guides
 // ---------------------------------------------------------------------------
 
@@ -508,8 +550,17 @@ async function main() {
   fs.mkdirSync(OUT_SERIES, { recursive: true });
   fs.mkdirSync(OUT_STUDYGUIDES, { recursive: true });
   fs.mkdirSync(OUT_BOOKS, { recursive: true });
+  fs.mkdirSync(OUT_READING_PATHS, { recursive: true });
 
   const written = [];
+
+  // Reading-path lead magnets (curated study-guide paths, email-gated)
+  if (fs.existsSync(READING_PATHS_FILE)) {
+    const rp = JSON.parse(fs.readFileSync(READING_PATHS_FILE, "utf8"));
+    for (const p of rp.paths || []) {
+      written.push(await buildReadingPath(p));
+    }
+  }
 
   // Free reading-library books (chapter files referenced by books/index.json)
   const bookIndex = JSON.parse(fs.readFileSync(path.join(BOOKS_DIR, "index.json"), "utf8"));

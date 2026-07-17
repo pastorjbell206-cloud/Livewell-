@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200" role="img" aria-label="The Whole Story by James Bell">
   <rect width="800" height="1200" fill="#EDE8DC"/>
-  <circle cx="764" cy="40" r="300" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.26"/>
-  <circle cx="764" cy="40" r="212" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.16"/>
+  <circle cx="764" cy="40" r="300" fill="none" stroke="#D4A017" stroke-width="2.25" opacity="0.55"/>
+  <circle cx="764" cy="40" r="212" fill="none" stroke="#D4A017" stroke-width="2.25" opacity="0.34"/>
   <text x="80" y="150" font-family="Helvetica, Arial, sans-serif" font-size="19" letter-spacing="5.5" font-weight="700" fill="#D4A017">THEOLOGY</text>
   <text x="720" y="152" text-anchor="end" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="22" fill="#D4A017">43</text>
   <line x1="80" y1="716" x2="176" y2="716" stroke="#D4A017" stroke-width="3"/>

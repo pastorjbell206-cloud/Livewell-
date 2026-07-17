@@ -82,12 +82,19 @@ const svgOpen = (bg, extra = "") =>
   `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${extra}">
   <rect width="${W}" height="${H}" fill="${bg}"/>`;
 
-const arc = (cx, cy) =>
-  `<circle cx="${cx}" cy="${cy}" r="300" fill="none" stroke="${MUSTARD}" stroke-width="2" opacity="0.26"/>
-  <circle cx="${cx}" cy="${cy}" r="212" fill="none" stroke="${MUSTARD}" stroke-width="2" opacity="0.16"/>`;
+// The unifying motif: two concentric mustard arcs. Opacity is ground-aware —
+// mustard on cream needs more weight to register than mustard on charcoal, or
+// the curve vanishes and the cover's negative space reads as empty rather than
+// composed. Kept well under the "mustard is punctuation" threshold either way.
+const arc = (cx, cy, dark) => {
+  const o1 = dark ? 0.32 : 0.55;
+  const o2 = dark ? 0.2 : 0.34;
+  return `<circle cx="${cx}" cy="${cy}" r="300" fill="none" stroke="${MUSTARD}" stroke-width="2.25" opacity="${o1}"/>
+  <circle cx="${cx}" cy="${cy}" r="212" fill="none" stroke="${MUSTARD}" stroke-width="2.25" opacity="${o2}"/>`;
+};
 
 // --- Layout 0: series — header top, title centered, arc bottom-right --------
-function layoutSeries({ title, subtitle, kicker, num, fg, sub }) {
+function layoutSeries({ title, subtitle, kicker, num, fg, sub, dark }) {
   const { fs, lines } = fitTitle(title, [96, 84, 74, 64, 56, 48, 42]);
   const lh = Math.round(fs * 1.05);
   const ty = Math.round(540 - (lines.length * lh) / 2 + fs);
@@ -95,7 +102,7 @@ function layoutSeries({ title, subtitle, kicker, num, fg, sub }) {
   const subY = ty + (lines.length - 1) * lh + 70;
   const st = wrap(subtitle || "", 23, MAXW, 0.5).slice(0, 2).map((l, i) => `<text x="${LEFT}" y="${subY + i * 33}" font-family="${SANS}" font-size="23" fill="${sub}">${esc(l)}</text>`).join("\n  ");
   return `
-  ${arc(W - 36, H - 60)}
+  ${arc(W - 36, H - 60, dark)}
   <text x="${LEFT}" y="150" font-family="${SANS}" font-size="19" letter-spacing="5.5" font-weight="700" fill="${MUSTARD}">${esc(kicker)}</text>
   <text x="${W - LEFT}" y="152" text-anchor="end" font-family="${MONO}" font-size="22" fill="${MUSTARD}">${num}</text>
   <line x1="${LEFT}" y1="178" x2="${W - LEFT}" y2="178" stroke="${MUSTARD}" stroke-width="1.5" opacity="0.5"/>
@@ -106,7 +113,7 @@ function layoutSeries({ title, subtitle, kicker, num, fg, sub }) {
 }
 
 // --- Layout 1: lower-third — arc top-right, title anchored low --------------
-function layoutLower({ title, subtitle, kicker, num, fg, sub }) {
+function layoutLower({ title, subtitle, kicker, num, fg, sub, dark }) {
   const { fs, lines } = fitTitle(title, [88, 78, 68, 60, 52, 46, 40]);
   const lh = Math.round(fs * 1.05);
   // Anchor the last line near y=930, build upward.
@@ -115,7 +122,7 @@ function layoutLower({ title, subtitle, kicker, num, fg, sub }) {
   const subY = 930 + 58;
   const st = wrap(subtitle || "", 23, MAXW, 0.5).slice(0, 2).map((l, i) => `<text x="${LEFT}" y="${subY + i * 33}" font-family="${SANS}" font-size="23" fill="${sub}">${esc(l)}</text>`).join("\n  ");
   return `
-  ${arc(W - 36, 40)}
+  ${arc(W - 36, 40, dark)}
   <text x="${LEFT}" y="150" font-family="${SANS}" font-size="19" letter-spacing="5.5" font-weight="700" fill="${MUSTARD}">${esc(kicker)}</text>
   <text x="${W - LEFT}" y="152" text-anchor="end" font-family="${MONO}" font-size="22" fill="${MUSTARD}">${num}</text>
   <line x1="${LEFT}" y1="${firstY - fs - 34}" x2="176" y2="${firstY - fs - 34}" stroke="${MUSTARD}" stroke-width="3"/>
@@ -155,7 +162,7 @@ function coverSvg({ title, subtitle, pillar }, seq) {
   const num = String(seq.n).padStart(2, "0");
   // Rotate layout by shelf position so the mix is even and stable.
   const layout = LAYOUTS[seq.n % LAYOUTS.length];
-  return `${svgOpen(bg, `${esc(title)} by James Bell`)}${layout({ title, subtitle, kicker, num, fg, sub })}
+  return `${svgOpen(bg, `${esc(title)} by James Bell`)}${layout({ title, subtitle, kicker, num, fg, sub, dark })}
 </svg>
 `;
 }
