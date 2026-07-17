@@ -107,6 +107,23 @@ const GROUPS: Group[] = [
   },
 ];
 
+// ItemList so the assessments hub is indexed as one collection of instruments,
+// each pointing at its own page.
+const assessmentsSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Assessments",
+  description:
+    "Honest instruments for spiritual, whole-life, marriage, burnout, theology, and consistency self-examination.",
+  url: "https://www.livewellbyjamesbell.co/assessments",
+  itemListElement: GROUPS.flatMap((g) => g.items).map((item, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: item.title,
+    url: `https://www.livewellbyjamesbell.co${item.href}`,
+  })),
+};
+
 export default function Assessments() {
   return (
     <Layout>
@@ -114,6 +131,7 @@ export default function Assessments() {
         title="Assessments — Where Are You, Actually?"
         description="Nine honest instruments in one place: the spiritual check-in, the whole-life map, marriage, burnout, theology, and consistency. A mirror, not a verdict — and the writing to meet what it shows you."
         url="https://www.livewellbyjamesbell.co/assessments"
+        structuredData={assessmentsSchema}
       />
 
       {/* HERO */}
