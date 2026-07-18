@@ -9,6 +9,9 @@ import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
 import { toParagraphs } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
+import ArticleProgress from "@/components/ArticleProgress";
+import { AudienceShare } from "@/components/AudienceShare";
+import { useEssayCompletion } from "@/lib/useEssayCompletion";
 import type { SectionConfig, PropheticTopicData as Topic } from "@/lib/prophetic";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
@@ -46,6 +49,15 @@ export default function PropheticTopic({ config }: { config: SectionConfig }) {
   const t = result && result.slug === slug ? result.data : null;
   const missing = !!result && result.slug === slug && result.data === null;
 
+  // Reading aids, shared with the /writing essays: a read-time estimate for the
+  // progress bar, and the foot-sentinel ref that records a true completion.
+  const words = t
+    ? [t.question, t.whyItMatters, t.biblicalFoundation, t.churchRecord?.led, t.churchRecord?.failed, t.whereWeAgree, t.captureLeft, t.captureRight, t.whereWeDiffer, t.theCost, t.charge]
+        .filter(Boolean).join(" ").trim().split(/\s+/).filter(Boolean).length
+    : 0;
+  const readTime = `${Math.max(1, Math.round(words / 200))} min read`;
+  const bodyEndRef = useEssayCompletion(slug, `${config.base}/topic/${slug}`, !!t);
+
   if (missing) {
     return (
       <Layout>
@@ -63,6 +75,7 @@ export default function PropheticTopic({ config }: { config: SectionConfig }) {
   return (
     <Layout>
       <SEOMeta title={`${t.title} — ${config.label}`} description={t.subtitle} url={`https://www.livewellbyjamesbell.co${config.base}/topic/${t.slug}`} />
+      <ArticleProgress readTime={readTime} />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
@@ -175,6 +188,16 @@ export default function PropheticTopic({ config }: { config: SectionConfig }) {
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>The charge</div>
           {t.charge.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, lineHeight: 1.5, color: "var(--bone)", maxWidth: "60ch", marginBottom: "14px" }}>{p}</p>)}
+        </div>
+      </section>
+
+      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)", borderTop: "1px solid var(--border)" }}>
+        <div style={{ ...wrap, textAlign: "center" }}>
+          <div ref={bodyEndRef} aria-hidden="true" style={{ height: 1 }} />
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>Send this to someone who needs it</div>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <AudienceShare title={t.title} url={`https://www.livewellbyjamesbell.co${config.base}/topic/${t.slug}`} />
+          </div>
         </div>
       </section>
 

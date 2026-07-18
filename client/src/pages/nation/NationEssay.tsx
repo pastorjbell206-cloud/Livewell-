@@ -4,16 +4,14 @@
  * renders it as a serious, readable essay. Used for the Christian-nation
  * question, the Old Testament theocracy, and the danger of empire.
  */
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { Prose } from "@/lib/prose";
 import { SEOMeta, getArticleSchema, getBreadcrumbSchema } from "@/components/SEOMeta";
 import ArticleProgress from "@/components/ArticleProgress";
 import { AudienceShare } from "@/components/AudienceShare";
-import { trackEssayComplete, trackPathStep } from "@/lib/telemetry";
-import { recordReadEvent } from "@/components/ReadDepthBeacon";
-import { markEssayRead } from "@/lib/readProgress";
+import { useEssayCompletion } from "@/lib/useEssayCompletion";
 
 interface Section { id: string; kicker: string; title: string; body: string; }
 interface Reading { title: string; author: string; }
@@ -64,37 +62,11 @@ export default function NationEssay({ slug }: { slug: string }) {
     ? (e.readNext ?? DEFAULT_READNEXT).filter((r) => r.href !== `/nation/${slug}`)
     : [];
 
-  // World-class reading aids, reusing the platform's essay machinery. A reading
-  // estimate for the progress bar, and a zero-chrome foot sentinel that records
-  // a TRUE completion (not an open): essay_read_complete, path_step_complete
-  // when the reader arrived via a pathway (?path=), the read-events log, and the
-  // device's "pick up here" memory — exactly as the /writing essays do.
+  // Reading aids, shared with the /writing essays: a read-time estimate for the
+  // progress bar, and the foot-sentinel ref that records a true completion.
   const words = e ? e.sections.reduce((n, s) => n + s.body.trim().split(/\s+/).filter(Boolean).length, 0) : 0;
   const readTime = `${Math.max(1, Math.round(words / 200))} min read`;
-
-  const bodyEndRef = useRef<HTMLDivElement>(null);
-  const readCompleteRef = useRef(false);
-  useEffect(() => {
-    readCompleteRef.current = false;
-    const sentinel = bodyEndRef.current;
-    if (!sentinel || !e || typeof IntersectionObserver === "undefined") return;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((en) => en.isIntersecting) && !readCompleteRef.current) {
-          readCompleteRef.current = true;
-          trackEssayComplete(slug);
-          const pathSlug = new URLSearchParams(window.location.search).get("path");
-          if (pathSlug) trackPathStep(pathSlug, slug);
-          recordReadEvent(`/nation/${slug}`);
-          markEssayRead(slug);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0 }
-    );
-    observer.observe(sentinel);
-    return () => observer.disconnect();
-  }, [slug, e]);
+  const bodyEndRef = useEssayCompletion(slug, `/nation/${slug}`, !!e);
 
   return (
     <Layout>
