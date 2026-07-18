@@ -19,6 +19,14 @@ const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const card = { background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)", textDecoration: "none", color: "inherit", display: "block", borderTop: "3px solid var(--mustard)" } as const;
 const SITE = "https://www.livewellbyjamesbell.co";
 
+// When an essay does not curate its own "read next," every Christ-and-the-Nation
+// essay still carries the reader onward: to the flagship (the whole diagnosis)
+// and the guided pathway. Self-links are filtered at render.
+const DEFAULT_READNEXT: NextRead[] = [
+  { label: "The State of the American Church", href: "/nation/state-of-the-american-church", blurb: "The flagship. The whole diagnosis: two captivities, right and left, and the older faith underneath both." },
+  { label: "Faith and the Flag", href: "/pathways/christian-nationalism", blurb: "The guided path through the whole topic. Essays, a study, and the free book, in order." },
+];
+
 export default function NationEssay({ slug }: { slug: string }) {
   const [e, setE] = useState<Essay | null>(null);
   useEffect(() => {
@@ -45,6 +53,12 @@ export default function NationEssay({ slug }: { slug: string }) {
       ]
     : undefined;
 
+  // Every essay carries the reader onward: its own curated next reads when it
+  // has them, otherwise the section default. An essay never links to itself.
+  const readNext = e
+    ? (e.readNext ?? DEFAULT_READNEXT).filter((r) => r.href !== `/nation/${slug}`)
+    : [];
+
   return (
     <Layout>
       <SEOMeta title={`${e?.title ?? "Christ and the Nation"} — LiveWell by James Bell`} description={e?.subtitle ?? ""} url={url} structuredData={structuredData} />
@@ -69,12 +83,12 @@ export default function NationEssay({ slug }: { slug: string }) {
         </section>
       ))}
 
-      {e?.readNext && e.readNext.length > 0 && (
+      {readNext.length > 0 && (
         <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
           <div style={wrap}>
             <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "var(--s-3)" }}>Keep reading</div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px, 100%), 1fr))", gap: "16px" }}>
-              {e.readNext.map((r) => (
+              {readNext.map((r) => (
                 <Link key={r.href} href={r.href} style={card}>
                   <div style={{ fontFamily: "var(--F)", fontSize: "19px", fontWeight: 500, color: "var(--ink)", marginBottom: "6px", lineHeight: 1.2 }}>{r.label}</div>
                   <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{r.blurb}</p>

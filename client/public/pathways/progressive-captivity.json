@@ -1,0 +1,69 @@
+{
+  "slug": "progressive-captivity",
+  "title": "Faith and the Cause",
+  "subtitle": "When the gospel gets recruited to a cause — five essays, a study, and a book.",
+  "forWhom": "For the reader in a church that has started to sound like a movement, and for the one honest enough to ask whether their own side has a captivity too.",
+  "movements": [
+    {
+      "kind": "read",
+      "heading": "Read these first",
+      "note": "Start where the trade is easiest to feel. A real conviction that grows its own gospel, the sin the church stopped naming, the conscience handed to a party, the deconstruction that never rebuilt, and the worked case underneath them all.",
+      "items": [
+        {
+          "label": "When Justice Becomes a Gospel",
+          "href": "/writing/when-justice-becomes-a-gospel",
+          "blurb": "Social justice is biblical, which is exactly why it makes such a convincing god. How a real conviction grows its own gospel and quietly loses grace."
+        },
+        {
+          "label": "Why the Church Stopped Talking About Sin",
+          "href": "/writing/the-sin-we-stopped-naming",
+          "blurb": "Progressive Christianity recovered structural sin and called it justice. Then it lost the sin with a name and a face, and the recovered doctrine curdled."
+        },
+        {
+          "label": "Should a Christian Follow a Political Party?",
+          "href": "/writing/conscience-outsourced-to-party",
+          "blurb": "The left's version of the capture is harder to see, because the left believes it is the side that thinks for itself."
+        },
+        {
+          "label": "What Happens After You Deconstruct Your Faith?",
+          "href": "/writing/deconstruction-without-reconstruction",
+          "blurb": "The exvangelical wave got the diagnosis right. But taking the faith apart and never rebuilding is not freedom. It is an empty house."
+        },
+        {
+          "label": "When the Faith Dissolves Into a Cause",
+          "href": "/nation/progressive-captivity",
+          "blurb": "The worked case. The Social Gospel, the subtraction of the offense, and a Christianity with nothing the culture is not already saying."
+        }
+      ]
+    },
+    {
+      "kind": "study",
+      "heading": "Then work the study",
+      "note": "The doubt-and-deconstruction study, for the thread where the cause most often begins. A church that could not hold a person's honest questions taught them to look for a home in a movement instead.",
+      "items": [
+        {
+          "label": "When Faith Has Questions — a study",
+          "href": "/studyguides/doubt",
+          "blurb": "Sessions for the reader taking the faith apart, so deconstruction can become reconstruction instead of an empty house."
+        }
+      ]
+    },
+    {
+      "kind": "book",
+      "heading": "Then read the book, free",
+      "note": "The Captive Church follows the one temptation Jesus refused in the wilderness, and it names the trade on both sides. The flag and the cause are the same exchange, wearing different clothes. Read it free.",
+      "items": [
+        {
+          "label": "The Captive Church — read free",
+          "href": "/read/the-captive-church",
+          "blurb": "Ten chapters on the church's captivity to power, on the left and the right alike. The complete book, free."
+        },
+        {
+          "label": "Find James's books in the bookstore",
+          "href": "/books",
+          "blurb": "Print and ebook editions of the full library."
+        }
+      ]
+    }
+  ]
+}
