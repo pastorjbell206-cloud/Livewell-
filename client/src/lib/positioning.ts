@@ -22,7 +22,7 @@ export const PRIMARY_SUBHEAD =
 // Shortened two-sentence hero subhead (variant A). Same claims as the long
 // version above, compressed. The long version is kept for variant B.
 export const PRIMARY_SUBHEAD_SHORT =
-  "For believers trying to follow Jesus in a culture that no longer shares Christian assumptions. Essays on theology, culture, family, and the American church, helping readers reconstruct a deeper historical faith and learn to live well in post-Christian America.";
+  "For the reader whose faith has outgrown the answers they were given — and the skeptic who suspects the answers were the problem. Essays on theology, culture, family, and the American church, digging past the borrowed certainties to an older, sturdier faith underneath.";
 
 export const META_DESCRIPTION =
   "Deep theology for everyday life. Essays on theology, politics, and the American church after Christendom — plus marriage, money, parenting, manhood, womanhood, and the long work of pastoring. By James Bell. New essays weekly.";

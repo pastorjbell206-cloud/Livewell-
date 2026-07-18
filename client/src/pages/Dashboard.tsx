@@ -659,6 +659,7 @@ export default function Dashboard() {
             <textarea
               value={noteText}
               onChange={(e) => setNoteText(e.target.value)}
+              aria-label="Write a note"
               placeholder="Write a note — a thought from your reading, a question you are sitting with, a conviction that will not let you go."
               rows={3}
               style={{
@@ -695,6 +696,7 @@ export default function Dashboard() {
                 type="text"
                 value={noteSlug}
                 onChange={(e) => setNoteSlug(e.target.value)}
+                aria-label="Article slug (optional)"
                 placeholder="Article slug (optional)"
                 style={{
                   flex: 1,

@@ -98,7 +98,10 @@ const DOORS = [
   },
 ];
 
-// The five pillars — the deeper writing taxonomy, kept visible below the doors.
+// Five reading areas — the deeper writing taxonomy, kept visible below the
+// doors. These are the reference wings, not the six-pillar / two-movement spine
+// (that lives at /pillars and in taxonomy.ts); the heading below says "ways in"
+// so the homepage never claims a pillar count that contradicts /pillars.
 const PILLARS = [
   { name: "Theological Depth", href: "/theology", blurb: "Doctrine, church history, the whole biblical story." },
   { name: "Prophetic Justice", href: "/justice", blurb: "The poor, the outsider, the systems we inherit." },
@@ -682,7 +685,7 @@ export default function Home() {
               maxWidth: "32ch",
             }}
           >
-            Five pillars. One argument.
+            Five ways in. One argument.
           </h2>
           <div
             style={{

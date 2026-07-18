@@ -104,6 +104,9 @@ export default function MinimalNav() {
 
   return (
     <>
+      {/* Skip link — first focusable element on every page (the nav renders on
+          all of them, including the pages that bypass Layout). Targets #main. */}
+      <a href="#main" className="skip-link">Skip to content</a>
       {/* Search Overlay */}
       {searchOpen && (
         <div
