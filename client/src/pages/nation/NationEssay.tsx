@@ -4,11 +4,16 @@
  * renders it as a serious, readable essay. Used for the Christian-nation
  * question, the Old Testament theocracy, and the danger of empire.
  */
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { Prose } from "@/lib/prose";
 import { SEOMeta, getArticleSchema, getBreadcrumbSchema } from "@/components/SEOMeta";
+import ArticleProgress from "@/components/ArticleProgress";
+import { AudienceShare } from "@/components/AudienceShare";
+import { trackEssayComplete, trackPathStep } from "@/lib/telemetry";
+import { recordReadEvent } from "@/components/ReadDepthBeacon";
+import { markEssayRead } from "@/lib/readProgress";
 
 interface Section { id: string; kicker: string; title: string; body: string; }
 interface Reading { title: string; author: string; }
@@ -59,9 +64,42 @@ export default function NationEssay({ slug }: { slug: string }) {
     ? (e.readNext ?? DEFAULT_READNEXT).filter((r) => r.href !== `/nation/${slug}`)
     : [];
 
+  // World-class reading aids, reusing the platform's essay machinery. A reading
+  // estimate for the progress bar, and a zero-chrome foot sentinel that records
+  // a TRUE completion (not an open): essay_read_complete, path_step_complete
+  // when the reader arrived via a pathway (?path=), the read-events log, and the
+  // device's "pick up here" memory — exactly as the /writing essays do.
+  const words = e ? e.sections.reduce((n, s) => n + s.body.trim().split(/\s+/).filter(Boolean).length, 0) : 0;
+  const readTime = `${Math.max(1, Math.round(words / 200))} min read`;
+
+  const bodyEndRef = useRef<HTMLDivElement>(null);
+  const readCompleteRef = useRef(false);
+  useEffect(() => {
+    readCompleteRef.current = false;
+    const sentinel = bodyEndRef.current;
+    if (!sentinel || !e || typeof IntersectionObserver === "undefined") return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((en) => en.isIntersecting) && !readCompleteRef.current) {
+          readCompleteRef.current = true;
+          trackEssayComplete(slug);
+          const pathSlug = new URLSearchParams(window.location.search).get("path");
+          if (pathSlug) trackPathStep(pathSlug, slug);
+          recordReadEvent(`/nation/${slug}`);
+          markEssayRead(slug);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0 }
+    );
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [slug, e]);
+
   return (
     <Layout>
       <SEOMeta title={`${e?.title ?? "Christ and the Nation"} — LiveWell by James Bell`} description={e?.subtitle ?? ""} url={url} structuredData={structuredData} />
+      {e && <ArticleProgress readTime={readTime} />}
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
@@ -83,8 +121,20 @@ export default function NationEssay({ slug }: { slug: string }) {
         </section>
       ))}
 
+      {e && (
+        <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)", borderTop: "1px solid var(--border)" }}>
+          <div style={{ ...wrap, textAlign: "center" }}>
+            <div ref={bodyEndRef} aria-hidden="true" style={{ height: 1 }} />
+            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>Send this to someone who needs it</div>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <AudienceShare title={e.title} url={url} />
+            </div>
+          </div>
+        </section>
+      )}
+
       {readNext.length > 0 && (
-        <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+        <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
           <div style={wrap}>
             <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "var(--s-3)" }}>Keep reading</div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px, 100%), 1fr))", gap: "16px" }}>
