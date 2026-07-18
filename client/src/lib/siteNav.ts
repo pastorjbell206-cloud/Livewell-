@@ -62,6 +62,9 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "The Framework", href: "/framework" },
       { label: "Marriage", href: "/marriage" },
       { label: "Parenting", href: "/parenting" },
+      { label: "Article Collections", href: "/article-collections" },
+      { label: "Book Bundles", href: "/book-bundles" },
+      { label: "The Book Roadmap", href: "/roadmap" },
     ],
   },
   {
