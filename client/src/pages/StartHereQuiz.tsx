@@ -107,54 +107,54 @@ export default function StartHereQuiz() {
     "marriage-crisis-articles": {
       title: "Marriage Under Strain",
       articles: [
-        { title: "Zanah: When You Keep the Vows and Give Away the Heart", slug: "zanah-when-you-keep-the-vows" },
-        { title: "The Mirror Doesn't Lie", slug: "the-mirror-doesnt-lie" },
-        { title: "Hustle Culture Is Idolatry", slug: "hustle-culture-is-idolatry" }
+        { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
+        { title: "The Monster in the Mirror", slug: "the-monster-in-the-mirror" },
+        { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
       ],
       book: "What If We're Wrong?"
     },
     "marriage-searching-articles": {
       title: "Building Covenant Strength",
       articles: [
-        { title: "Zanah: When You Keep the Vows and Give Away the Heart", slug: "zanah-when-you-keep-the-vows" },
-        { title: "The Mirror Doesn't Lie", slug: "the-mirror-doesnt-lie" },
-        { title: "The Generational Cost", slug: "the-generational-cost" }
+        { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
+        { title: "The Monster in the Mirror", slug: "the-monster-in-the-mirror" },
+        { title: "What We Owe Generations", slug: "what-we-owe-generations" }
       ],
       book: "The Monster in the Mirror"
     },
     "parenting-crisis-articles": {
       title: "Parenting Through Uncertainty",
       articles: [
-        { title: "The Generational Cost", slug: "the-generational-cost" },
-        { title: "The Mirror Doesn't Lie", slug: "the-mirror-doesnt-lie" },
-        { title: "Hustle Culture Is Idolatry", slug: "hustle-culture-is-idolatry" }
+        { title: "What We Owe Generations", slug: "what-we-owe-generations" },
+        { title: "The Monster in the Mirror", slug: "the-monster-in-the-mirror" },
+        { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
       ],
       book: "When God Bless America Replaces Thy Kingdom Come"
     },
     "doubt-crisis-articles": {
       title: "Finding Faith in the Questions",
       articles: [
-        { title: "The Mirror Doesn't Lie", slug: "the-mirror-doesnt-lie" },
+        { title: "The Monster in the Mirror", slug: "the-monster-in-the-mirror" },
         { title: "Constantine's Bargain", slug: "constantines-bargain" },
-        { title: "Germany's Warning", slug: "germanys-warning" }
+        { title: "Why a Frightened Church Wants a King", slug: "strongman-theology" }
       ],
       book: "What If We're Wrong?"
     },
     "pastoral-articles": {
       title: "Pastoral Leadership & Burnout",
       articles: [
-        { title: "Why We Need Each Other", slug: "why-we-need-each-other" },
-        { title: "Hustle Culture Is Idolatry", slug: "hustle-culture-is-idolatry" },
-        { title: "The Generational Cost", slug: "the-generational-cost" }
+        { title: "Can You Be a Christian on Your Own?", slug: "can-you-be-a-christian-alone" },
+        { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" },
+        { title: "What We Owe Generations", slug: "what-we-owe-generations" }
       ],
       book: "The Monster in the Mirror"
     },
     "default": {
       title: "Essential LiveWell Collection",
       articles: [
-        { title: "The Mirror Doesn't Lie", slug: "the-mirror-doesnt-lie" },
-        { title: "Zanah: When You Keep the Vows and Give Away the Heart", slug: "zanah-when-you-keep-the-vows" },
-        { title: "Germany's Warning", slug: "germanys-warning" }
+        { title: "The Monster in the Mirror", slug: "the-monster-in-the-mirror" },
+        { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
+        { title: "Why a Frightened Church Wants a King", slug: "strongman-theology" }
       ],
       book: "The Monster in the Mirror"
     }
@@ -231,7 +231,7 @@ export default function StartHereQuiz() {
                   { label: "Pastoring", href: "/for-pastors" },
                   { label: "The essays", href: "/writing" },
                 ].map((c) => (
-                  <Link key={c.href} href={c.href} style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink)", textDecoration: "none", background: "#FFF", border: "1px solid #E0D9CC", borderRadius: "999px", padding: "8px 16px" }}>
+                  <Link key={c.href} href={c.href} style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink)", textDecoration: "none", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "999px", padding: "8px 16px" }}>
                     {c.label}
                   </Link>
                 ))}
@@ -276,9 +276,9 @@ export default function StartHereQuiz() {
                     onClick={() => handleSelect(option.value)}
                     aria-pressed={answers[QUESTIONS[currentStep].id] === option.value}
                     style={{
-                      background: answers[QUESTIONS[currentStep].id] === option.value ? option.color : "#FFF",
+                      background: answers[QUESTIONS[currentStep].id] === option.value ? option.color : "var(--card)",
                       color: answers[QUESTIONS[currentStep].id] === option.value ? "#FFF" : "var(--ink)",
-                      border: answers[QUESTIONS[currentStep].id] === option.value ? "none" : "1px solid #E0D9CC",
+                      border: answers[QUESTIONS[currentStep].id] === option.value ? "none" : "1px solid var(--border)",
                       borderLeft: answers[QUESTIONS[currentStep].id] === option.value ? "none" : `6px solid ${option.color}`,
                       padding: "24px",
                       borderRadius: "8px",
@@ -359,7 +359,7 @@ export default function StartHereQuiz() {
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                 {readingPath.articles.map((article, i) => (
                   <Link key={i} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
-                    <div style={{ background: "#FFF", padding: "24px", borderRadius: "8px", border: "1px solid #E0D9CC", cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "start" }}>
+                    <div style={{ background: "var(--card)", padding: "24px", borderRadius: "8px", border: "1px solid var(--border)", cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "start" }}>
                       <div style={{ textAlign: "left" }}>
                         <h4 style={{ fontSize: "16px", fontWeight: "bold", color: "var(--ink)", margin: "0 0 8px 0" }}>
                           {article.title}
@@ -422,7 +422,7 @@ export default function StartHereQuiz() {
                   setSubmitted(false);
                   removeStoredJSON(SESSION_KEY, window.sessionStorage);
                 }}
-                style={{ background: "#FFF", color: "var(--ink)", border: "1px solid #E0D9CC", padding: "14px 24px", minHeight: "44px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}
+                style={{ background: "var(--card)", color: "var(--ink)", border: "1px solid var(--border)", padding: "14px 24px", minHeight: "44px", fontSize: "14px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}
               >
                 Start Over
               </button>

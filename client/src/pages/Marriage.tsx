@@ -3,6 +3,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import PillarLeadMagnet from "@/components/PillarLeadMagnet";
 import { CrisisHelp } from "@/components/CrisisHelp";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
 
@@ -163,6 +164,16 @@ export default function Marriage() {
           </div>
         </div>
       </section>
+
+      {/* LEAD MAGNET — email-gated reading path */}
+      <PillarLeadMagnet
+        kicker="Free Reading Path"
+        title="The Marriage Reading Path"
+        blurb="Three studies from inside the room where marriages fall apart and come back together — the covenant under the marriage, the hardest word, and the wounds carried in. A short PDF to read with your spouse or alone."
+        slug="marriage"
+        downloadLabel="Get the reading path (PDF)"
+        source="reading-path-marriage"
+      />
 
       {/* NEWSLETTER STRIP — real form, no silent failures */}
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)" }}>

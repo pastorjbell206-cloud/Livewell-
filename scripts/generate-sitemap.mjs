@@ -209,6 +209,7 @@ const STATIC_PAGES = [
   { url: "/disruption/questions", priority: "0.7", changefreq: "monthly" },
   { url: "/disruption/witnesses", priority: "0.7", changefreq: "monthly" },
   { url: "/nation", priority: "0.85", changefreq: "monthly" },
+  { url: "/nation/state-of-the-american-church", priority: "0.9", changefreq: "monthly" },
   { url: "/nation/christian-nation", priority: "0.8", changefreq: "monthly" },
   { url: "/nation/empire", priority: "0.8", changefreq: "monthly" },
   { url: "/nation/policy", priority: "0.7", changefreq: "monthly" },

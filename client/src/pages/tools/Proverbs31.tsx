@@ -90,7 +90,7 @@ export default function Proverbs31() {
             <button
               onClick={() => setDay((d) => (d > 1 ? d - 1 : 31))}
               aria-label="Previous day"
-              style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "10px 14px", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)" }}
+              style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "10px 14px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)" }}
             >
               <ChevronLeft size={16} /> Prev
             </button>
@@ -101,7 +101,7 @@ export default function Proverbs31() {
             <button
               onClick={() => setDay((d) => (d < 31 ? d + 1 : 1))}
               aria-label="Next day"
-              style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "10px 14px", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)" }}
+              style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "10px 14px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)" }}
             >
               Next <ChevronRight size={16} />
             </button>
@@ -114,7 +114,7 @@ export default function Proverbs31() {
 
             <div style={{ display: "grid", gap: "10px", marginBottom: "var(--s-4)" }}>
               {entry.verses.map((v) => (
-                <div key={v.ref} style={{ background: "#FFFFFF", borderLeft: "3px solid var(--mustard)", padding: "var(--s-3)" }}>
+                <div key={v.ref} style={{ background: "var(--card)", borderLeft: "3px solid var(--mustard)", padding: "var(--s-3)" }}>
                   <div style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, letterSpacing: "0.06em", color: "var(--mustard-text)", marginBottom: "6px" }}>{v.ref}</div>
                   <div style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.65, color: "var(--ink)" }}>{v.text}</div>
                 </div>

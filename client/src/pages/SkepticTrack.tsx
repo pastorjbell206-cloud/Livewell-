@@ -14,6 +14,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import PillarLeadMagnet from "@/components/PillarLeadMagnet";
 import { trpc } from "@/lib/trpc";
 import { SITE_URL } from "@/lib/site";
 import { NEWSLETTER_PITCH_SKEPTIC } from "@/lib/positioning";
@@ -189,6 +190,15 @@ export default function SkepticTrack() {
           </Link>
         </div>
       </section>
+      {/* LEAD MAGNET — email-gated reading path */}
+      <PillarLeadMagnet
+        kicker="Free Reading Path"
+        title="The Skeptic's Reading Path"
+        blurb="Four studies, in the order I'd hand them to the version of me that was an atheist — the questions worth asking, the resurrection, the whole story, the ancient creed underneath it. A short PDF, no conversion bait."
+        slug="skeptic"
+        downloadLabel="Get the reading path (PDF)"
+        source="reading-path-skeptic"
+      />
 
       {/* NEWSLETTER — skeptic-specific */}
       <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4)" }}>

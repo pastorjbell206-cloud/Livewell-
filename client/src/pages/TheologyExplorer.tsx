@@ -96,7 +96,7 @@ export default function TheologyExplorer() {
                 );
               })}
             </div>
-            <label style={{ display: "flex", alignItems: "center", gap: "8px", border: "1px solid rgba(20,17,12,0.18)", padding: "8px 12px", background: "#FFFFFF", borderRadius: "2px" }}>
+            <label style={{ display: "flex", alignItems: "center", gap: "8px", border: "1px solid rgba(20,17,12,0.18)", padding: "8px 12px", background: "var(--card)", borderRadius: "2px" }}>
               <Search size={15} aria-hidden style={{ color: "var(--ink-muted)" }} />
               <input
                 value={q}
@@ -169,7 +169,7 @@ function DoctrineCard({ d }: { d: DoctrineIndexEntry }) {
 
   const cardStyle = {
     display: "block", textDecoration: "none",
-    background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.1)",
+    background: "var(--card)", border: "1px solid rgba(20,17,12,0.1)",
     borderTop: `3px solid ${TRIAGE[d.triage].color}`,
     padding: "var(--s-3)",
     opacity: d.ready ? 1 : 0.72,

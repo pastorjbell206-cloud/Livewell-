@@ -293,7 +293,7 @@ export default function ToolsHub() {
                   style={{
                     display: "block",
                     padding: "40px 32px",
-                    background: "white",
+                    background: "var(--card)",
                     borderRadius: "8px",
                     borderLeft: `4px solid ${tool.color}`,
                     textDecoration: "none",

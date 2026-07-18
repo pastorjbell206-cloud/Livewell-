@@ -303,7 +303,7 @@ export default function ReadingPaths() {
               fontWeight: 400,
               lineHeight: 1.1,
               letterSpacing: "-0.02em",
-              color: "var(--bone)",
+              color: "var(--charcoal-fg)",
               marginBottom: "1.5rem",
             }}
           >
@@ -314,7 +314,7 @@ export default function ReadingPaths() {
               fontFamily: "var(--U)",
               fontSize: "1.05rem",
               lineHeight: 1.7,
-              color: "var(--bone)",
+              color: "var(--charcoal-fg)",
               opacity: 0.6,
               maxWidth: "520px",
               margin: "0 auto",
@@ -335,7 +335,7 @@ export default function ReadingPaths() {
               fontFamily: "var(--F)",
               fontSize: "1.75rem",
               fontWeight: 400,
-              color: "var(--charcoal)",
+              color: "var(--ink)",
               marginBottom: "2.5rem",
               textAlign: "center",
             }}
@@ -354,7 +354,7 @@ export default function ReadingPaths() {
                 key={path.id}
                 onClick={() => scrollToPath(path.id)}
                 style={{
-                  background: "#FFFFFF",
+                  background: "var(--card)",
                   border: "1px solid rgba(26, 26, 26, 0.08)",
                   borderRadius: "2px",
                   overflow: "hidden",
@@ -422,7 +422,7 @@ export default function ReadingPaths() {
                       fontFamily: "var(--F)",
                       fontSize: "1.25rem",
                       fontWeight: 400,
-                      color: "var(--charcoal)",
+                      color: "var(--ink)",
                       lineHeight: 1.25,
                       margin: 0,
                     }}
@@ -472,13 +472,13 @@ export default function ReadingPaths() {
               fontWeight: 400,
               lineHeight: 1.15,
               letterSpacing: "-0.02em",
-              color: "var(--bone)",
+              color: "var(--charcoal-fg)",
               marginBottom: "0.9rem",
             }}
           >
             Six ordered arcs through the whole argument
           </h2>
-          <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--bone)", opacity: 0.7, maxWidth: "62ch", marginBottom: "2rem" }}>
+          <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--charcoal-fg)", opacity: 0.7, maxWidth: "62ch", marginBottom: "2rem" }}>
             The themed collections below gather essays by subject. These six are different — each is a sequence, built to be read in order, tracing one pillar of the site's spine from diagnosis to formation.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "0.75rem" }}>
@@ -493,11 +493,11 @@ export default function ReadingPaths() {
                   textDecoration: "none",
                 }}
               >
-                <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "1.1rem", fontWeight: 400, color: "var(--bone)", marginBottom: "0.3rem" }}>
+                <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "1.1rem", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "0.3rem" }}>
                   {p.title}
                   <ArrowRight size={14} style={{ display: "inline", verticalAlign: "middle", marginLeft: "0.45rem", color: "var(--mustard)" }} />
                 </span>
-                <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "0.75rem", letterSpacing: "0.06em", color: "var(--bone)", opacity: 0.55 }}>
+                <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "0.75rem", letterSpacing: "0.06em", color: "var(--charcoal-fg)", opacity: 0.55 }}>
                   {p.externalHref ? "The book, in order" : `${availableCount(p)} essays in order`}
                 </span>
               </Link>
@@ -545,7 +545,7 @@ export default function ReadingPaths() {
                   fontWeight: 400,
                   lineHeight: 1.15,
                   letterSpacing: "-0.02em",
-                  color: "var(--charcoal)",
+                  color: "var(--ink)",
                   marginBottom: "1.25rem",
                 }}
               >
@@ -644,7 +644,7 @@ export default function ReadingPaths() {
                             fontFamily: "var(--F)",
                             fontSize: "1.1rem",
                             fontWeight: 400,
-                            color: "var(--charcoal)",
+                            color: "var(--ink)",
                             lineHeight: 1.3,
                             margin: "0 0 0.35rem 0",
                           }}
@@ -693,7 +693,7 @@ export default function ReadingPaths() {
                     display: "inline-block",
                     padding: "0.85rem 2rem",
                     background: "var(--charcoal)",
-                    color: "var(--bone)",
+                    color: "var(--charcoal-fg)",
                     fontFamily: "var(--U)",
                     fontSize: "0.85rem",
                     fontWeight: 500,
@@ -735,7 +735,7 @@ export default function ReadingPaths() {
               fontFamily: "var(--F)",
               fontSize: "1.5rem",
               fontWeight: 400,
-              color: "var(--bone)",
+              color: "var(--charcoal-fg)",
               marginBottom: "1rem",
             }}
           >
@@ -745,7 +745,7 @@ export default function ReadingPaths() {
             style={{
               fontFamily: "var(--U)",
               fontSize: "0.875rem",
-              color: "var(--bone)",
+              color: "var(--charcoal-fg)",
               opacity: 0.5,
               marginBottom: "2rem",
               lineHeight: 1.7,
@@ -764,7 +764,7 @@ export default function ReadingPaths() {
               display: "inline-block",
               padding: "0.85rem 2rem",
               background: "var(--bone)",
-              color: "var(--charcoal)",
+              color: "var(--ink)",
               fontFamily: "var(--U)",
               fontSize: "0.85rem",
               fontWeight: 500,

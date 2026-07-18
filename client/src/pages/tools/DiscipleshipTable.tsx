@@ -192,7 +192,7 @@ export default function DiscipleshipTable() {
                   aria-pressed={on}
                   style={{
                     textAlign: "left", cursor: "pointer", padding: "var(--s-3)",
-                    background: on ? "var(--charcoal)" : "#FFFFFF",
+                    background: on ? "var(--charcoal)" : "var(--card)",
                     color: on ? "var(--bone)" : "var(--ink)",
                     border: "1px solid rgba(20,17,12,0.1)",
                     borderTop: `2px solid var(--mustard)`,
@@ -218,7 +218,7 @@ export default function DiscipleshipTable() {
                   aria-pressed={on}
                   style={{
                     cursor: "pointer", padding: "10px 18px",
-                    background: on ? "var(--mustard)" : "#FFFFFF",
+                    background: on ? "var(--mustard)" : "var(--card)",
                     color: on ? "var(--charcoal)" : "var(--ink)",
                     border: "1px solid rgba(20,17,12,0.12)",
                     fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px",
@@ -264,7 +264,7 @@ export default function DiscipleshipTable() {
                   <Mail size={16} style={{ color: "var(--mustard-text)" }} />
                   <span style={{ ...eyebrow, color: "var(--ink)" }}>The invitation</span>
                 </div>
-                <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", background: "#FFFFFF", borderLeft: "3px solid var(--mustard)", padding: "var(--s-3)", fontStyle: "italic" }}>
+                <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", background: "var(--card)", borderLeft: "3px solid var(--mustard)", padding: "var(--s-3)", fontStyle: "italic" }}>
                   {audience.invite}
                 </p>
               </div>
@@ -280,7 +280,7 @@ export default function DiscipleshipTable() {
                 <div style={{ ...eyebrow, color: "var(--ink)", marginBottom: "var(--s-2)" }}>The rhythm, {cadenceWord}</div>
                 <div style={{ display: "grid", gap: "var(--s-2)" }}>
                   {FLOW.map((f) => (
-                    <div key={f.label} style={{ display: "flex", gap: "12px", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", padding: "var(--s-3)" }}>
+                    <div key={f.label} style={{ display: "flex", gap: "12px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", padding: "var(--s-3)" }}>
                       <f.icon size={18} style={{ color: "var(--mustard-text)", flexShrink: 0, marginTop: "2px" }} />
                       <div>
                         <div style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", marginBottom: "4px" }}>{f.label}</div>

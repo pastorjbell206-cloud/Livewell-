@@ -3,6 +3,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import PillarLeadMagnet from "@/components/PillarLeadMagnet";
 
 export default function Doubt() {
 
@@ -196,6 +197,16 @@ export default function Doubt() {
           </Link>
         </div>
       </section>
+
+      {/* LEAD MAGNET — email-gated reading path */}
+      <PillarLeadMagnet
+        kicker="Free Reading Path"
+        title="When Faith Has Questions"
+        blurb="Four studies for keeping the question inside the faith instead of leaving to keep it — from the doubt itself down to the ground underneath it. A short PDF you can read alone or hand to a group."
+        slug="doubt"
+        downloadLabel="Get the reading path (PDF)"
+        source="reading-path-doubt"
+      />
 
       {/* NEWSLETTER STRIP — real form */}
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)" }}>

@@ -104,15 +104,15 @@ export default function WorkWithJames() {
                 <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                   <div>
                     <label htmlFor="name" style={{ display: "block", fontSize: "13px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--U)", marginBottom: "6px" }}>Name</label>
-                    <input id="name" type="text" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} style={{ width: "100%", padding: "10px 14px", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "15px", fontFamily: "var(--B)", background: "white", boxSizing: "border-box" }} />
+                    <input id="name" type="text" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} style={{ width: "100%", padding: "10px 14px", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "15px", fontFamily: "var(--B)", background: "var(--card)", boxSizing: "border-box" }} />
                   </div>
                   <div>
                     <label htmlFor="email" style={{ display: "block", fontSize: "13px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--U)", marginBottom: "6px" }}>Email *</label>
-                    <input id="email" type="email" required value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} style={{ width: "100%", padding: "10px 14px", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "15px", fontFamily: "var(--B)", background: "white", boxSizing: "border-box" }} />
+                    <input id="email" type="email" required value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} style={{ width: "100%", padding: "10px 14px", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "15px", fontFamily: "var(--B)", background: "var(--card)", boxSizing: "border-box" }} />
                   </div>
                   <div>
                     <label htmlFor="subject" style={{ display: "block", fontSize: "13px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--U)", marginBottom: "6px" }}>Subject</label>
-                    <select id="subject" value={form.subject} onChange={(e) => setForm({ ...form, subject: e.target.value })} style={{ width: "100%", padding: "10px 14px", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "15px", fontFamily: "var(--B)", background: "white", boxSizing: "border-box" }}>
+                    <select id="subject" value={form.subject} onChange={(e) => setForm({ ...form, subject: e.target.value })} style={{ width: "100%", padding: "10px 14px", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "15px", fontFamily: "var(--B)", background: "var(--card)", boxSizing: "border-box" }}>
                       <option value="">Select a topic…</option>
                       <option value="Speaking">Speaking & Preaching</option>
                       <option value="Coaching">Pastoral Coaching</option>
@@ -124,7 +124,7 @@ export default function WorkWithJames() {
                   </div>
                   <div>
                     <label htmlFor="message" style={{ display: "block", fontSize: "13px", fontWeight: 600, color: "var(--ink)", fontFamily: "var(--U)", marginBottom: "6px" }}>Message *</label>
-                    <textarea id="message" required rows={5} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} style={{ width: "100%", padding: "10px 14px", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "15px", fontFamily: "var(--B)", background: "white", resize: "vertical", boxSizing: "border-box" }} />
+                    <textarea id="message" required rows={5} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} style={{ width: "100%", padding: "10px 14px", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "15px", fontFamily: "var(--B)", background: "var(--card)", resize: "vertical", boxSizing: "border-box" }} />
                   </div>
                   <button type="submit" disabled={status === "sending"} style={{ padding: "12px 24px", background: status === "sending" ? "var(--ink3)" : "var(--gold)", color: "var(--ink)", border: "none", borderRadius: "4px", fontSize: "15px", fontWeight: 600, fontFamily: "var(--U)", cursor: status === "sending" ? "default" : "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px" }}>
                     <Send size={16} />

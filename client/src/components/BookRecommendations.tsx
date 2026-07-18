@@ -58,7 +58,7 @@ export default function BookRecommendations({
                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300" />
                   </div>
                 )}
-                <div className="p-4" style={{ backgroundColor: "#FFFFFF" }}>
+                <div className="p-4" style={{ backgroundColor: "var(--card)" }}>
                   <h4 className="font-display text-base font-bold mb-1 line-clamp-2" style={{ color: "var(--ink)" }}>
                     {book.title}
                   </h4>

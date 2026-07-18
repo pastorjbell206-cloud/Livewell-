@@ -636,7 +636,7 @@ export default function FinancialHealth() {
                 style={{
                   borderLeft: "3px solid var(--mustard)",
                   padding: "16px 20px",
-                  background: "white",
+                  background: "var(--card)",
                   borderRadius: "0 2px 2px 0",
                 }}
               >
@@ -680,7 +680,7 @@ export default function FinancialHealth() {
                 <div
                   key={q.id}
                   style={{
-                    background: "white",
+                    background: "var(--card)",
                     borderRadius: "2px",
                     padding: "32px",
                     border: "1px solid var(--border)",
@@ -862,7 +862,7 @@ export default function FinancialHealth() {
             {/* Overall Score */}
             <div
               style={{
-                background: "white",
+                background: "var(--card)",
                 borderRadius: "2px",
                 padding: "48px 40px",
                 borderTop: "4px solid " + overall.color,
@@ -933,7 +933,7 @@ export default function FinancialHealth() {
             {/* Score Bar Overview */}
             <div
               style={{
-                background: "white",
+                background: "var(--card)",
                 borderRadius: "2px",
                 padding: "36px 40px",
                 border: "1px solid var(--border)",
@@ -1048,7 +1048,7 @@ export default function FinancialHealth() {
                 <div
                   key={cat.slug}
                   style={{
-                    background: "white",
+                    background: "var(--card)",
                     borderRadius: "2px",
                     padding: "36px 40px",
                     border: "1px solid var(--border)",

@@ -5,16 +5,16 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { LandingSignup } from "@/components/LandingSignup";
 
 const ARTICLES = [
-  { title: "Is God Real?", slug: "is-god-real" },
-  { title: "Why Does God Allow Suffering?", slug: "why-does-god-allow-suffering" },
-  { title: "Is the Bible Reliable?", slug: "is-the-bible-reliable" },
-  { title: "What About Other Religions?", slug: "what-about-other-religions" },
-  { title: "Has Science Disproved God?", slug: "has-science-disproved-god" },
-  { title: "Why Is the Church So Hypocritical?", slug: "why-is-the-church-so-hypocritical" },
-  { title: "Is Hell Real?", slug: "is-hell-real" },
-  { title: "Can I Doubt and Still Have Faith?", slug: "can-i-doubt-and-still-have-faith" },
-  { title: "What About the Violence in the Old Testament?", slug: "what-about-the-violence-in-the-old-testament" },
-  { title: "Does Christianity Oppress Women?", slug: "does-christianity-oppress-women" },
+  { title: "Is God Real?", href: "/faq/does-god-exist" },
+  { title: "Why Does God Allow Suffering?", href: "/writing/apologetics-why-does-god-allow-evil" },
+  { title: "Is the Bible Reliable?", href: "/faq/is-the-bible-historically-accurate" },
+  { title: "What About Other Religions?", href: "/writing/apologetics-what-about-those-who-never-heard" },
+  { title: "Has Science Disproved God?", href: "/faq/can-science-and-faith-coexist" },
+  { title: "Why Is the Church So Hypocritical?", href: "/writing/apologetics-hasnt-the-church-done-terrible-things" },
+  { title: "Is Hell Real?", href: "/faq/what-do-christians-believe-about-hell" },
+  { title: "Can I Doubt and Still Have Faith?", href: "/doubt" },
+  { title: "What About the Violence in the Old Testament?", href: "/skeptic-track" },
+  { title: "Does Christianity Oppress Women?", href: "/writing/the-womanhood-they-preached-was-small" },
 ];
 
 const FAQ_ITEMS = [
@@ -121,7 +121,7 @@ export default function HonestQuestions() {
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "32px" }}>Pick the question that keeps you up at night</h2>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {ARTICLES.map((a) => (
-              <Link key={a.slug} href={`/writing/${a.slug}`} style={{ textDecoration: "none" }}>
+              <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
                 <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
                   <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>

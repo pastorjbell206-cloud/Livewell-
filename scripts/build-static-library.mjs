@@ -34,6 +34,7 @@ const DIRS = {
   "content/drafts/sacraments":           { pillar: "theology",           audience: "individuals", pastoral: false },
   "content/drafts/disciplines":          { pillar: "devotionals",        audience: "individuals", pastoral: false },
   "content/drafts/why-believe":          { pillar: "doubt",              audience: "individuals", pastoral: false },
+  "content/drafts/skeptic-track":        { pillar: "doubt",              audience: "individuals", pastoral: false },
   "content/drafts/who-is-god":           { pillar: "theology",           audience: "individuals", pastoral: false },
   "content/drafts/the-story":            { pillar: "theology",           audience: "individuals", pastoral: false },
   "content/drafts/church-history":       { pillar: "theology",           audience: "individuals", pastoral: false },
@@ -327,7 +328,55 @@ function allRecordsSlugs() {
   return records.map((r) => r.slug).concat(bridgeRecords.map((r) => r.slug));
 }
 
-const allRecords = records.concat(bridgeRecords, draftRecords);
+// ---------------------------------------------------------------------------
+// Stage 4 — the Post-Christian series (2026-07). The sixty finished essays in
+// api/post-christian-articles.json were publishable only through the one-shot
+// admin seed (/api/admin/seed-post-christian), so every /writing/:slug in the
+// PostChristian hub 404'd until an admin ran it. Served from the static library
+// like the other stages, they go live on build — no database write — and a live
+// DB row of the same slug still overrides them.
+const PC_PATH = "api/post-christian-articles.json";
+const pcRecords = [];
+if (existsSync(PC_PATH)) {
+  const pc = JSON.parse(readFileSync(PC_PATH, "utf8"));
+  const list = Array.isArray(pc) ? pc : Object.values(pc);
+  const seen = new Set(allRecordsSlugs().concat(draftRecords.map((r) => r.slug)));
+  const BASE4 = Date.parse("2026-07-05T12:00:00Z");
+  let k = 0;
+  for (const p of list) {
+    if (!p || !p.slug || seen.has(p.slug)) continue;
+    const track = LIB_PILLAR_TO_TRACK[p.pillar] || "theology";
+    const pastoral = track === "pastoral-ministry";
+    const minutes = parseInt(String(p.readTime), 10) || Math.max(3, Math.round(String(p.body).split(/\s+/).length / 220));
+    const when = new Date(BASE4 - k * DAY).toISOString();
+    pcRecords.push({
+      id: 4_000_000 + k,
+      title: p.title || titleFromSlug(p.slug),
+      slug: p.slug,
+      body: p.body,
+      excerpt: p.excerpt || excerptFromBody(p.body),
+      pillar: track,
+      readTime: `${minutes} min read`,
+      coverImage: null,
+      published: true,
+      featured: false,
+      contentType: pastoral ? "pastoral" : "general",
+      audience_type: pastoral ? "pastors" : "general",
+      topic: null,
+      format: "article",
+      audience: pastoral ? "pastors" : "individuals",
+      difficulty: "intermediate",
+      readingTimeMinutes: minutes,
+      publishedAt: when,
+      createdAt: when,
+      updatedAt: when,
+    });
+    seen.add(p.slug);
+    k++;
+  }
+}
+
+const allRecords = records.concat(bridgeRecords, draftRecords, pcRecords);
 
 const outPath = "api/static-library.generated.ts";
 const banner =
@@ -372,7 +421,7 @@ for (const r of records) {
 }
 writeFileSync(contentDataPath, JSON.stringify(contentData, null, 2) + "\n");
 console.log(`content-data.json: appended ${appended} essays (now ${contentData.posts.length} posts)`);
-console.log(`Wrote ${records.length} markdown essays + ${bridgeRecords.length} bridged articles + ${draftRecords.length} flagship drafts = ${allRecords.length} to ${outPath}`);
+console.log(`Wrote ${records.length} markdown essays + ${bridgeRecords.length} bridged articles + ${draftRecords.length} flagship drafts + ${pcRecords.length} post-Christian essays = ${allRecords.length} to ${outPath}`);
 console.log(`Stripped placeholders from ${stripped} source files`);
 // slug collision sanity-check within the static set
 const seen = new Map();

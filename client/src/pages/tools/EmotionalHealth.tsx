@@ -469,7 +469,7 @@ export default function EmotionalHealth() {
                   <div
                     key={cat}
                     style={{
-                      background: "white",
+                      background: "var(--card)",
                       borderRadius: "8px",
                       padding: "36px",
                       marginBottom: "20px",
@@ -655,7 +655,7 @@ export default function EmotionalHealth() {
               {/* Overall Score */}
               <div
                 style={{
-                  background: "white",
+                  background: "var(--card)",
                   borderRadius: "8px",
                   padding: "40px 36px",
                   marginBottom: "28px",
@@ -789,7 +789,7 @@ export default function EmotionalHealth() {
               {/* Eight-Week Plan CTA */}
               <div
                 style={{
-                  background: "white",
+                  background: "var(--card)",
                   borderRadius: "8px",
                   padding: "36px",
                   marginBottom: "28px",
@@ -856,7 +856,7 @@ export default function EmotionalHealth() {
                   <div
                     key={cat.name}
                     style={{
-                      background: "white",
+                      background: "var(--card)",
                       borderRadius: "8px",
                       padding: "36px",
                     }}

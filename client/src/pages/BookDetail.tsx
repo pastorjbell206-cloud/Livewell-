@@ -118,7 +118,7 @@ export default function BookDetail() {
         <section className="py-8" style={{ backgroundColor: "var(--bone)" }}>
           <div className="container">
             <Link href="/books">
-              <a className="inline-flex items-center gap-2 px-4 py-2 rounded font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "#FFFFFF", color: "var(--ink)" }}>
+              <a className="inline-flex items-center gap-2 px-4 py-2 rounded font-ui font-medium no-underline transition-colors" style={{ backgroundColor: "var(--card)", color: "var(--ink)" }}>
                 <ArrowLeft size={16} /> Back to Books
               </a>
             </Link>

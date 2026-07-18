@@ -164,7 +164,7 @@ export default function FormationGuides() {
         <div style={wrap}>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "var(--s-4)" }}>
             {guides.map((g) => (
-              <Link key={g.slug} href={`/leadership/guides/${g.slug}`} style={{ display: "block", background: "#FFFFFF", border: "1px solid var(--border)", borderTop: "2px solid var(--mustard)", padding: "var(--s-4)", textDecoration: "none" }}>
+              <Link key={g.slug} href={`/leadership/guides/${g.slug}`} style={{ display: "block", background: "var(--card)", border: "1px solid var(--border)", borderTop: "2px solid var(--mustard)", padding: "var(--s-4)", textDecoration: "none" }}>
                 <div style={{ ...eyebrow, marginBottom: "10px" }}>{g.sessions.length} sessions{g.partial ? "+" : ""}</div>
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "24px", fontWeight: 500, color: "var(--ink)", margin: "0 0 4px", lineHeight: 1.2 }}>{g.title}</h2>
                 <p style={{ fontFamily: "var(--F)", fontSize: "16px", fontStyle: "italic", color: "var(--ink-muted)", margin: "0 0 10px" }}>{g.subtitle}</p>

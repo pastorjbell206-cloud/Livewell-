@@ -92,7 +92,7 @@ export default function Pathways() {
                 <Link
                   key={p.slug}
                   href={`/pathways/${p.slug}`}
-                  style={{ display: "flex", gap: "16px", textDecoration: "none", color: "inherit", background: "#FFFFFF", border: "1px solid rgba(20,17,12,0.08)", borderRadius: "var(--radius-sm)", overflow: "hidden", height: "100%" }}
+                  style={{ display: "flex", gap: "16px", textDecoration: "none", color: "inherit", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderRadius: "var(--radius-sm)", overflow: "hidden", height: "100%" }}
                 >
                   <div style={{ width: "104px", flexShrink: 0, alignSelf: "flex-start", aspectRatio: "3 / 4", overflow: "hidden" }}>
                     <GeneratedCover title={p.title} {...coverThemeFor(`${p.title} ${p.subtitle}`)} style={{ width: "100%", height: "100%" }} />

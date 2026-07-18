@@ -305,7 +305,7 @@ export function ArticleCollections() {
                 style={{
                   display: "flex",
                   flexDirection: "column",
-                  background: "#FFFFFF",
+                  background: "var(--card)",
                   border: "1px solid rgba(20,17,12,0.08)",
                   borderTop: "3px solid var(--mustard)",
                   borderRadius: "var(--radius-sm)",
