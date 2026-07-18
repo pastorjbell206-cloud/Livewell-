@@ -58,10 +58,10 @@ export const SKEPTIC_STOPS: SkepticStop[] = [
       "The argument that you can't be moral without God is bad and embarrassing. The argument that morality points somewhere is better.",
   },
   {
-    slug: "is-jesus-really-the-only-way",
-    title: "7. The claim you can't stay neutral about.",
+    slug: "the-cost-of-following",
+    title: "7. What following this actually costs.",
     pitch:
-      "If Jesus is who he said he was, indifference stops being an option. What the exclusive claim actually asks of the person who takes it seriously.",
+      "If you take this seriously, here is what changes. Not your weekend. Your money, your final say over your own life, your right to define yourself.",
   },
 ];
 

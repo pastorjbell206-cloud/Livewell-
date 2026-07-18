@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
+import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { useProgress } from "@/hooks/useProgress";
 import { ARGUMENT_CASES, caseBySlug, type ArgumentCase } from "@/data/argumentCases";
 
@@ -144,6 +146,17 @@ export default function TestTheCase() {
               <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
                 <button type="button" onClick={back} style={{ ...btn, background: "var(--card)", color: "var(--ink)", border: "1px solid var(--border)" }}>Back to the last step</button>
                 <button type="button" onClick={startOver} style={{ ...btn, background: "transparent", color: "var(--ink-muted)", border: "1px solid var(--border)" }}>Start this case over</button>
+              </div>
+              <div style={{ marginTop: "40px", paddingTop: "28px", borderTop: "1px solid var(--border)" }}>
+                <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "60ch", marginBottom: "16px" }}>
+                  No decision is required here, and none is being asked. If you want to keep going at your own pace, the Doubt and Faith essays take these questions apart one move at a time.
+                </p>
+                <Link href="/writing?track=doubt" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+                  Read the Doubt and Faith essays
+                </Link>
+                <div style={{ marginTop: "28px" }}>
+                  <NewsletterSignup variant="inline" source="test-the-case" audienceType="skeptic" title="One honest essay a week." description="For the questions that do not fit on a web page. No conversion bait, no altar call." />
+                </div>
               </div>
             </div>
           ) : (

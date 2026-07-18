@@ -25,6 +25,7 @@
     "manuals": "node scripts/build-leadership-manuals.mjs",
     "og": "node scripts/build-og-images.mjs",
     "prerender": "node scripts/prerender-heads.mjs",
+    "verify:seo": "node scripts/verify-seo.mjs",
     "prerender:sermons": "node scripts/prerender-sermons.mjs",
     "publish:docx": "tsx scripts/publish-docx.ts",
     "publish:book": "tsx scripts/publish-book.ts",

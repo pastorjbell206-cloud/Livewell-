@@ -175,6 +175,21 @@ export default function SkepticTrack() {
         </div>
       </section>
 
+      {/* TEST THE CASE — the interactive companion to the seven essays */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>Or argue instead of read</div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.5vw, 34px)", fontWeight: 400, letterSpacing: "-0.015em", color: "var(--ink)", lineHeight: 1.2, marginBottom: "14px", maxWidth: "26ch" }}>
+            Work a case yourself, one objection at a time.
+          </h2>
+          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "60ch", marginBottom: "22px" }}>
+            The same promise as the essays, made interactive. Pick a question, and at every step raise the objection you actually hold and get the honest answer, including what it does not prove. No altar call, no pressure to decide.
+          </p>
+          <Link href="/tools/test-the-case" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "13px 26px", borderRadius: "3px", textDecoration: "none" }}>
+            Test the case
+          </Link>
+        </div>
+      </section>
       {/* LEAD MAGNET — email-gated reading path */}
       <PillarLeadMagnet
         kicker="Free Reading Path"

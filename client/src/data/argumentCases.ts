@@ -334,7 +334,215 @@ const MEANING: ArgumentCase = {
     "So here is the whole of it. You can make your own meaning, and it can be beautiful, and it will hold right up until the day you can no longer believe in it, because you were the one holding it. The Christian claim is not that your life is empty. It is that your life is full of a weight you did not manufacture and cannot finally account for, and that the weight has a source. You can close this unconvinced and go on living well. I only wanted you to notice that the meaning you trusted was leaning on something, and to wonder, on the hard night, what.",
 };
 
-export const ARGUMENT_CASES: ArgumentCase[] = [RESURRECTION, HELL, MEANING];
+const EVIL: ArgumentCase = {
+  slug: "evil",
+  title: "If God is good, why is there so much suffering?",
+  kicker: "The case, one move at a time",
+  intro:
+    "This is the best argument against God, and I am not going to pretend otherwise. It is the one that cost me the most, and it is not solved in a paragraph. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what it does not settle. You can walk away unconvinced at any point.",
+  published: true,
+  steps: [
+    {
+      id: "concede",
+      move: "Start by granting the whole weight of it, because a defense that hurries past the horror has not earned the right to speak. A child dies slowly in a cancer ward. A wave takes a quarter of a million people in a morning. If there is a God who is both good and able, that is a real problem, not a debating point, and the person who feels it in their body is seeing clearly. I felt it for years. I still feel its edge.",
+      objections: [
+        {
+          label: "A good, all-powerful God would simply prevent it.",
+          response:
+            "That is the logical form of the problem, and for a long time it was thought to be a knockout. It is not anymore, and the person who moved it was a philosopher, Alvin Plantinga, with the free-will defense. If God wanted creatures who could actually love, he had to make creatures who could actually refuse, and a world of genuine freedom is a world where that freedom can be turned to harm. That does not make the suffering good. It shows that an all-good God and real evil are not a flat contradiction, which is what the objection first claimed.",
+        },
+      ],
+      grants: "This step shows the logical version does not disprove God outright. It does nothing yet for the suffering that no one's freedom caused.",
+    },
+    {
+      id: "natural",
+      move: "So push exactly there, because it is the hardest ground. Free will explains the torturer. It explains nothing about the earthquake, the childhood leukemia, the millions of years of animals tearing each other apart long before any human could sin. This is the evidential problem, and its sharpest form is the philosopher William Rowe's, a fawn burned in a forest fire no one set, dying in agony over days with no human to witness or learn from it. That suffering looks simply pointless.",
+      objections: [
+        {
+          label: "There is no free-will excuse for a fawn's agony.",
+          response:
+            "There is not, and I will not reach for one. The most honest thing I can say is smaller and harder. A world stable enough for embodied creatures to live and act and love at all may be a world that runs on fixed laws, and the same physics that lets bone grow lets it break, and the same tectonics that recycle the carbon also quake. Scripture does not call the present arrangement the intended one. It says the whole creation was subjected to futility and groans (Romans 8:20-22), which is a strange thing for a book to admit if its job were to make you comfortable.",
+        },
+        {
+          label: "That still sounds like an excuse dressed up as physics.",
+          response:
+            "It might be, and I am not going to tell you it closes the fawn, because it does not. What I will say is that the Christian claim was never that the suffering makes sense right now. It is that the present state of things is not the last word and not the intended word. You can find that insufficient. It is different from the claim you started with, that the suffering proves there is no God, because the account has room for the suffering to be real, wrong, and temporary all at once.",
+        },
+      ],
+      grants: "This step offers no tidy theodicy and admits the hardest case remains hard. It only narrows what the suffering can be made to prove.",
+    },
+    {
+      id: "floor",
+      move: "Now turn the argument over, gently, because there is a cost hidden inside the objection itself. When you call the child's suffering not just sad but evil, wrong, an outrage that ought not to be, you are standing on something. You are appealing to a way things are supposed to be, a real moral floor under the world. Where does a silent, indifferent universe get one of those.",
+      objections: [
+        {
+          label: "I do not need God to know that a child's suffering is wrong.",
+          response:
+            "You do not need God to know it, and I am not saying atheists cannot feel it fiercely. The question is not knowing, it is grounding. If the universe is only matter and energy with no author and no purpose, then the child's agony is a rearrangement of particles, unfortunate to you, neutral to the cosmos. Your outrage is reporting something you cannot quite account for, a wrongness that would still be wrong if everyone shrugged. That intuition fits a made and moral world far better than a blind one. The problem of evil quietly assumes the very thing it is trying to disprove.",
+        },
+      ],
+      grants: "This step shows the outrage the objection runs on is easier to ground with God than without. It does not explain any particular suffering.",
+    },
+    {
+      id: "verdict",
+      move: "So here is the honest limit. None of this makes the ward or the wave make sense, and I will not insult you by pretending it does. What the Christian claim finally offers is not an explanation delivered from a safe distance. When Job demanded his answer, God did not hand him a theodicy. He handed him himself. And the center of the faith is not a God who stayed outside the suffering explaining it, but one who came into it, and was tortured to death under an empire, and called out from inside the dark.",
+      objections: [
+        {
+          label: "A God who suffers too still has not fixed anything.",
+          response:
+            "Not yet, and the people who met him in their worst hour do not come back saying they now understand. They come back saying they were not alone in it, and that the one who made the promise had a wound of his own to show. That is not a proof, and I am not offering it as one. It is the difference between a God who owes you an explanation and a God who entered the thing you needed explained. You can decide that is not enough. It was more than I expected to find.",
+        },
+        {
+          label: "I still cannot reconcile the suffering with a loving God.",
+          response:
+            "Then you are in good company, because neither could Job, and neither, on the cross, did the Son sound like a man for whom it all added up. What I would only ask is that you notice which you are refusing. If it is a God who watches the ward from a distance and does nothing, refuse him, because that God is not the one at the center of this faith. The one at the center is in the ward. You can still say no to him. But say no to the real one.",
+        },
+      ],
+      grants: "This is where the case ends and the choosing begins. It does not resolve the suffering. It changes what kind of God is on the table.",
+    },
+  ],
+  close:
+    "So here is the whole of it, and no less than it. The suffering is real, it is the best reason not to believe, and I have not made it small. What I have said is only that it does not prove as much as it feels like it proves, that the outrage it runs on is hard to ground in a universe with no author, and that the God it is aimed at is not a distant manager but the one who was killed and who called out from the middle of the dark. You can weigh all of that and still walk away. I only wanted the God you refuse to be the real one, not the one who was never there.",
+};
+
+const GOSPELS: ArgumentCase = {
+  slug: "gospels",
+  title: "Can you trust the Gospels?",
+  kicker: "The case, one move at a time",
+  intro:
+    "There is a confident version of this that everyone knows and almost no one has checked. Written centuries late, changed like a game of telephone, voted into being by an emperor. I believed all three when I was an unbeliever, and I had checked none of them. We will go one move at a time. Raise the objection you actually hold, and I will give you the real answer.",
+  published: true,
+  steps: [
+    {
+      id: "concede",
+      move: "Start by granting the honest part, because the skeptical case is not weak. We do have a great many differences among the surviving manuscripts, more variants than there are words in the New Testament. The Gospels were not written by neutral court reporters. They were written by believers who wanted you to believe, and they differ from one another in details a modern witness would be cross-examined over, the hour, the words on the sign, who reached the tomb first. If you have felt the force of all that, good.",
+      objections: [
+        {
+          label: "Hundreds of thousands of variants means the text is unreliable.",
+          response:
+            "That number is real, and it should stop you, but ask what the variants are. The scholar who popularized the figure, Bart Ehrman, also grants what his followers do not, that the overwhelming majority are trivial, spelling and word order and obvious slips, and that no core teaching hangs on a contested line. The reason we can even count the differences is that we have so many manuscripts to compare, from so many places. Abundance is what lets scholars triangulate back toward the original. It is the friend of accuracy here, not the enemy.",
+        },
+      ],
+      grants: "This step concedes the real differences and shows they are mostly trivial. It does not yet show the accounts are early or true.",
+    },
+    {
+      id: "telephone",
+      move: "So take the telephone image head on, because it is the most persuasive and the most wrong. Telephone works as a party game precisely because there is one chain and no original to check against. Each person hears only the previous whisper. That is the opposite of how a manuscript tradition behaves.",
+      objections: [
+        {
+          label: "It was copied by hand for centuries, so of course it drifted.",
+          response:
+            "It was copied by hand, but not in a single line. The texts spread out fast, to Egypt and Syria and Rome and North Africa, in branches that quickly lost contact with each other. A scribe in Alexandria and a scribe in Carthage do not make the same slip, so when their descendants disagree you can usually see exactly where each one wandered and reconstruct the reading they were both copying. The many branches are not the corruption. They are the correction. The telephone game has one chain. The manuscripts have hundreds, cross-checking each other.",
+        },
+      ],
+      grants: "This step dismantles the telephone picture. It does not by itself date the Gospels early.",
+    },
+    {
+      id: "early",
+      move: "So the dating, which is the thing that turned me. Even the critical consensus puts the four Gospels inside the first century, within living memory. But you do not need the Gospels for the earliest evidence. Paul's first letter to Corinth is dated by nearly everyone to about twenty-five years after the crucifixion, and in its fifteenth chapter he quotes something older than his own letter.",
+      objections: [
+        {
+          label: "Twenty-five years is still plenty of time for a legend.",
+          response:
+            "It is not, and this is the point. Paul says he delivered what he also received, the technical language for handing on a fixed tradition, a creed he was taught after his conversion, which pushes the core claim back to within a very few years of the events, into the hands of the named men who said they were there. Legends need generations, room to grow up after the eyewitnesses are safely dead. This is a summary already hardening into a creed while the witnesses were still walking around to be contradicted. That is not legend's timescale.",
+        },
+        {
+          label: "The emperor and the council at Nicaea decided all this later.",
+          response:
+            "This may be the most confident falsehood of them all. The Council of Nicaea, in 325, did not select which books to keep, and it did not invent the divinity of Jesus. Its records are about the relation of the Son to the Father, the fight with Arius. The four Gospels were already being read as Scripture more than a century before Constantine was born, sorted out by use across the churches, not by a vote. And the divinity of Jesus is sitting in that Corinthian creed, decades before any emperor took an interest.",
+        },
+      ],
+      grants: "This step shows the claim is early and tied to named witnesses, and that the Nicaea story is a myth. It does not prove the witnesses were right.",
+    },
+    {
+      id: "verdict",
+      move: "So the honest limit. None of this is proof, and I am not offering it as proof. The tell, for me, was the embarrassment. Legends flatter their heroes and their authors. The Gospels record the leaders as cowards who ran, and they make women the first witnesses to the empty tomb, in a culture where a woman's testimony was worth so little it was often inadmissible.",
+      objections: [
+        {
+          label: "The women being first could just be how it happened.",
+          response:
+            "That is exactly the point, and it is the strongest reading. If you were inventing a resurrection story to persuade first-century people, you would not build its foundation on witnesses no one was required to believe. You would put men there. The historian N. T. Wright has pressed this as hard as it can be pressed: the women are in the account because the women were there, and no one fabricating it for effect would have chosen them. The Gospels keep details that cost them credibility in their own day. Invented legends do not pay costs they could have avoided.",
+        },
+        {
+          label: "I still think the witnesses were sincerely mistaken.",
+          response:
+            "That is a coherent place to stand, and the evidence does not drag you out of it by force. Honest witnesses can be honestly wrong. But it is a different place from the one most people think they occupy. Most people believe the documents are late, corrupted, and politically manufactured, and so they never have to weigh what the documents say. They have not earned that dismissal. The Gospels are early, they are the best-attested texts of the ancient world, and no emperor handed them to you. So the choice is the honest one, between believing an unlikely thing on good testimony and disbelieving it because you already know such things do not happen.",
+        },
+      ],
+      grants: "This is where the case ends and the choosing begins. It cannot make the last step for you.",
+    },
+  ],
+  close:
+    "So here is the whole of it. The Gospels are not late, they are not a telephone game, and no council voted them into being, and once those three excuses are gone you are left with the honest and uncomfortable question the excuses were hiding. Early, well-attested, awkwardly truthful accounts of the one thing that does not happen. You can weigh all of that and still conclude it did not happen, and be welcome to keep reading here. I only wanted you to see that the dismissal you inherited was doing your thinking for you, and that the real question was always still open.",
+};
+
+const JESUS: ArgumentCase = {
+  slug: "jesus",
+  title: "Was Jesus just a good teacher?",
+  kicker: "The case, one move at a time",
+  intro:
+    "The most respectable thing you can say about Jesus in polite company is that he was a great moral teacher, nothing more. It costs nothing and offends no one, and for years it was my verdict too. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what it does not settle.",
+  published: true,
+  steps: [
+    {
+      id: "same-mouth",
+      move: "Start with the thing that makes the comfortable verdict so hard to hold. The teaching you admire and the claims you want to discard come out of the same mouth, in the same sources, with no seam between them. He told a paralyzed man his sins were forgiven (Mark 2:5), and the scribes asked the obvious question, who can forgive sins but God alone. He said, before Abraham was, I am (John 8:58), taking the divine name onto his own lips, and they picked up stones. You do not get the Sermon on the Mount without the man who talked like that.",
+      objections: [
+        {
+          label: "Maybe he never said the divine-sounding parts.",
+          response:
+            "That is the real move, and it is worth taking seriously. Perhaps a later church put the high claims in the mouth of a humble rabbi. But you cannot keep only the parts you like and call the method history. The same documents carry the ethics and the claims together, and if the sources are unreliable enough to have invented the divinity, you have lost your grounds for trusting the moral teaching too. You cannot saw off the branch and keep sitting on it.",
+        },
+      ],
+      grants: "This step shows the admirable teaching and the divine claims come as a package. It does not yet show the claims are true.",
+    },
+    {
+      id: "trilemma",
+      move: "So take the old, blunt instrument for this, C. S. Lewis's trilemma. A man who was merely human and said the things Jesus said would not be a great moral teacher. He would be a liar, or a lunatic, or something worse. The one thing he could not be, Lewis said, is the reasonable option everyone reaches for first, a wise teacher who was simply mistaken about being God.",
+      objections: [
+        {
+          label: "The trilemma ignores a fourth option: legend.",
+          response:
+            "That is the trilemma's real weakness, and I will not hide it. There is a fourth L, legend, the possibility that the divine claims grew up long after a humble teacher was gone. For a long time that was the scholarly default. But it runs into the dating. The claims are not late. Which is why the strongest form of this argument does not lean on the trilemma alone.",
+        },
+      ],
+      grants: "This step names the trilemma's genuine hole, legend, rather than pretending it is airtight. It hands the weight to the next move.",
+    },
+    {
+      id: "devotion",
+      move: "So the move that actually carries it, and it is a matter of history, not logic. If the divinity were a legend, it would need generations to grow. Instead the historian Larry Hurtado spent a career showing that the worship of Jesus as divine appears in the very first years after his death, among Jewish monotheists, the last people on earth who would casually add a second figure to God. They would die before bowing to an idol. And they bowed to a crucified man.",
+      objections: [
+        {
+          label: "Early followers exaggerate their founders all the time.",
+          response:
+            "Followers do inflate their teachers, but not like this and not this fast, and not against everything their own religion trained into them. These were Jews for whom the worship of anyone but the one God was the unforgivable line, and within a few years they were praying to Jesus, singing to him, being baptized into his name. Devotion that high, that early, among those particular people does not behave like the slow drift of a legend. It behaves like a response to something that had already happened.",
+        },
+      ],
+      grants: "This step shows the divine claim is early and costly, not a late embellishment. It does not force you to accept it.",
+    },
+    {
+      id: "verdict",
+      move: "So the honest limit. None of this proves he was who he said he was, and I am not going to pretend it does. What it does is take away the one verdict most people reach for, the safe one. The Sermon on the Mount is not the work of a disordered mind, and a con man does not die for the con when recanting would save him.",
+      objections: [
+        {
+          label: "I can still admire his ethics without the metaphysics.",
+          response:
+            "You can admire them, and you should, but notice what you are doing. You are honoring the teaching of a man while setting aside his own account of who was teaching it, which is a strange way to respect anyone. The comfortable view, the one I held, turns out to be a file and not a conclusion, a way of keeping the parts of Jesus that cost nothing and shelving the man himself. The historical Jesus does not leave that shelf empty. He talked his way off it.",
+        },
+        {
+          label: "I still just think he was a remarkable man.",
+          response:
+            "That is allowed, and he was remarkable, and I am not going to press you toward a decision at the bottom of a web page. I would only ask you to see the size of the thing you are declining. Not a set of nice sayings you can keep, but a man who forgave sins that were not committed against him, accepted the worship a faithful Jew would have died rather than give, and let his friends call him Lord and God. Good teacher is the one verdict he made almost impossible. Refuse the rest if you must, but refuse it with your eyes open.",
+        },
+      ],
+      grants: "This is where the case ends and the choosing begins. It removes the easy verdict. It does not compel the hard one.",
+    },
+  ],
+  close:
+    "So here is the whole of it. The great-teacher verdict is the one the historical Jesus makes hardest to hold, because the wisdom you admire and the claims you want to skip come from the same mouth, early and unembellished, and were worshiped as divine by the very people least likely to invent it. You can still conclude he was a remarkable, mistaken man, and be welcome to keep reading here. I only wanted you to notice that the safe verdict is the one option he took off the table himself.",
+};
+
+export const ARGUMENT_CASES: ArgumentCase[] = [RESURRECTION, EVIL, GOSPELS, JESUS, HELL, MEANING];
 
 export function caseBySlug(slug: string): ArgumentCase | undefined {
   return ARGUMENT_CASES.find((c) => c.slug === slug);
