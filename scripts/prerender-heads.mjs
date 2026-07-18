@@ -679,10 +679,17 @@ async function main() {
   // Static pages
   for (const page of STATIC_PAGES) {
     const url = `${SITE_URL}${page.path}`;
+    // The Christ-and-the-Nation pages (the flagship and the nation essays) get a
+    // branded per-title Open Graph card, so a shared link unfurls as itself
+    // rather than the generic default. Other static pages keep the default.
+    const image =
+      page.image ||
+      (page.path.startsWith("/nation/") ? ogImageUrl(page.title, "Christ and the Nation") : undefined);
     const head = buildHead({
       title: page.title,
       description: page.description,
       url,
+      image,
       type: page.type,
       schemas: page.schemas || [],
     });
