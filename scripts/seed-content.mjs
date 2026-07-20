@@ -24,12 +24,12 @@ await db.insert(siteSettings).values({
 // Add Pastors Connection URL
 await db.insert(siteSettings).values({
   key: 'pastorsConnectionUrl',
-  value: 'https://www.pastorsconnection.network',
+  value: 'https://pastorsconnectionnetwork.com',
   createdAt: new Date(),
   updatedAt: new Date(),
 }).onDuplicateKeyUpdate({
   set: {
-    value: 'https://www.pastorsconnection.network',
+    value: 'https://pastorsconnectionnetwork.com',
     updatedAt: new Date(),
   },
 });

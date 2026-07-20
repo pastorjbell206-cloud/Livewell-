@@ -40,7 +40,7 @@ export const feedSyncRouter = router({
 
         const feedUrls = {
           substack: "https://jamesbell333289.substack.com/feed",
-          "pastors-connection": "https://www.pastorsconnection.com/feed",
+          "pastors-connection": "https://pastorsconnectionnetwork.com/feed/",
         };
 
         const result = await syncFeed(feedUrls[input.source], input.source);
@@ -78,7 +78,7 @@ export const feedSyncRouter = router({
           {
             name: "Pastors Connection",
             id: "pastors-connection",
-            url: "https://www.pastorsconnection.com/feed",
+            url: "https://pastorsconnectionnetwork.com/feed/",
             status: "active",
           },
         ],
