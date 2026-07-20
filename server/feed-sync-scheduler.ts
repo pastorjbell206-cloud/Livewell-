@@ -3,7 +3,7 @@ import { createSyndicatedArticle } from "./db-syndication";
 
 const FEED_URLS = {
   substack: "https://jamesbell333289.substack.com/feed",
-  pastorsConnection: "https://pastorsconnectionnetwork.com/feed/",
+  pastorsConnection: "https://www.pastorsconnection.com/feed", // Replace with actual Pastors Connection feed URL
 };
 
 /**
