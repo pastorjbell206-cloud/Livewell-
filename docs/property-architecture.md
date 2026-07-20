@@ -73,15 +73,16 @@ and `rel="noopener noreferrer"` on `target="_blank"`. Current state:
 
 1. **PCN nav prominence:** keep the PCN as a contextual "For Pastors" link (current,
    recommended), or give it top-level prominence as the strategic channel?
-2. **Canonical PCN domain is `pastorsconnectionnetwork.com`** — the admin sync
-   panel and backend feed sync should use `https://pastorsconnectionnetwork.com/feed/`.
+2. **Confirm the canonical PCN domain is `pastorsconnectionnetwork.com`** — the
+   admin sync panel references `pastorsconnection.com/feed`; confirm that feed URL
+   is correct or update it (admin-only, no reader impact).
 3. **Church relationship:** should First Baptist Church of Fenton get any nav or
    footer link, or remain a bio mention only (current)?
 4. **Headshot:** name the authoritative image and its permitted uses.
 
 ## Low-priority follow-ups (no decision needed)
 - The `noopener` mechanical pass (above).
-- Keep the admin-panel PCN feed URL aligned with the backend sync URL.
+- Confirm the admin-panel PCN feed URL.
 
 Neither is reader-facing; both can wait behind the L0 P0 decisions (canonical
 publishing, the send, the backup).

@@ -11,7 +11,7 @@ INSERT IGNORE INTO posts (title, slug, body, excerpt, pillar, published, publish
 -- db-query-1774098845545.json
 INSERT INTO site_settings (settingKey, settingValue, updatedAt) VALUES 
 ('substackUrl', 'https://substack.com/@jamesbell333289?r=6hl3j&utm_medium=ios&utm_source=stories&shareImageVariant=blur', NOW()),
-('pastorsConnectionUrl', 'https://pastorsconnectionnetwork.com', NOW());
+('pastorsConnectionUrl', 'https://www.pastorsconnection.network', NOW());
 
 -- db-query-1774100622734.json
 UPDATE site_settings SET settingValue = 'https://pastorsconnectionnetwork.com/' WHERE settingKey = 'pastorsConnectionUrl';
@@ -554,7 +554,7 @@ UPDATE posts SET audience = 'pastors' WHERE title LIKE '%pastor%' OR title LIKE 
 -- db-query-error-1774041138048.json
 INSERT INTO siteSettings (key, value, createdAt, updatedAt) VALUES 
 ('substackUrl', 'https://substack.com/@jamesbell333289?r=6hl3j&utm_medium=ios&utm_source=stories&shareImageVariant=blur', NOW(), NOW()),
-('pastorsConnectionUrl', 'https://pastorsconnectionnetwork.com', NOW(), NOW())
+('pastorsConnectionUrl', 'https://www.pastorsconnection.network', NOW(), NOW())
 ON DUPLICATE KEY UPDATE 
 value = VALUES(value),
 updatedAt = NOW();

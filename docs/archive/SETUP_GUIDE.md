@@ -62,8 +62,8 @@ This guide walks you through activating Mailchimp, configuring feed syncing, and
 ### Step 2: Get Your Pastors Connection Feed URL
 1. Go to **Pastors Connection Network** website
 2. Look for an **RSS feed link** or **feed URL**
-3. Use the official feed URL: `https://pastorsconnectionnetwork.com/feed/`
-4. If the feed changes, update the backend sync configuration and admin panel display together
+3. If you can't find it, ask the Pastors Connection team for the feed URL
+4. It typically looks like: `https://pastorsconnection.com/feed` or similar
 5. **Copy this URL**
 
 ### Step 3: Add Feed URLs to Livewell

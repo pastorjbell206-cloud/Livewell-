@@ -16,7 +16,8 @@ async function testFeedParser() {
 
   try {
     console.log("\n2. Testing Pastors Connection feed...");
-    const pastorsFeed = await fetchPastorsConnectionFeed("https://pastorsconnectionnetwork.com/feed/");
+    // You'll need to provide the actual Pastors Connection feed URL
+    const pastorsFeed = await fetchPastorsConnectionFeed("https://www.thepastorsconnection.com/feed");
     console.log(`✅ Pastors Connection: ${pastorsFeed.length} articles found`);
     if (pastorsFeed.length > 0) {
       console.log(`   First article: "${pastorsFeed[0].title}"`);

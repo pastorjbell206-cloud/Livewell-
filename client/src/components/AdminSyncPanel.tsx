@@ -254,7 +254,7 @@ export function AdminSyncPanel() {
                 Pastors Connection
               </h4>
               <p style={{ color: "var(--ink-muted)", fontSize: "0.875rem" }}>
-                https://pastorsconnectionnetwork.com/feed/
+                https://www.pastorsconnection.com/feed
               </p>
             </div>
             <div
