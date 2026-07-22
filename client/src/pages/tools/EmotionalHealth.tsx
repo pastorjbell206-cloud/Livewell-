@@ -477,7 +477,7 @@ export default function EmotionalHealth() {
                         ci === 0 ? "4px solid var(--mustard)" : undefined,
                     }}
                   >
-                    <h3
+                    <h2
                       style={{
                         fontSize: "13px",
                         fontWeight: 700,
@@ -488,7 +488,7 @@ export default function EmotionalHealth() {
                       }}
                     >
                       {cat.toUpperCase()}
-                    </h3>
+                    </h2>
                     <div
                       style={{
                         display: "flex",
