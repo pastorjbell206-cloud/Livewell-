@@ -66,6 +66,16 @@ const webPageSchema = {
   publisher: { "@type": "Organization", name: "LiveWell by James Bell" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.livewellbyjamesbell.co/" },
+    { "@type": "ListItem", position: 2, name: "Questions People Ask", item: "https://www.livewellbyjamesbell.co/faq" },
+    { "@type": "ListItem", position: 3, name: "What is religious trauma?", item: "https://www.livewellbyjamesbell.co/faq/what-is-religious-trauma" },
+  ],
+};
+
 export default function WhatIsReligiousTrauma() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -75,7 +85,7 @@ export default function WhatIsReligiousTrauma() {
         title="What Is Religious Trauma? 8 Questions Answered Honestly"
         description="What is religious trauma? Symptoms, causes, healing, and how churches can prevent it. Honest answers from a pastor willing to name what the church has done."
         keywords="religious trauma, religious trauma syndrome, spiritual abuse, healing from religious trauma, church abuse, purity culture trauma, leaving church trauma"
-        structuredData={[faqSchema, webPageSchema]}
+        structuredData={[faqSchema, webPageSchema, breadcrumbSchema]}
       />
 
       <section style={{ background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px 64px", textAlign: "center" }}>

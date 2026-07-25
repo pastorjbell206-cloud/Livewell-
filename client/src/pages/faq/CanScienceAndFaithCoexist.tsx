@@ -66,6 +66,16 @@ const webPageSchema = {
   publisher: { "@type": "Organization", name: "LiveWell by James Bell" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.livewellbyjamesbell.co/" },
+    { "@type": "ListItem", position: 2, name: "Questions People Ask", item: "https://www.livewellbyjamesbell.co/faq" },
+    { "@type": "ListItem", position: 3, name: "Can science and faith coexist?", item: "https://www.livewellbyjamesbell.co/faq/can-science-and-faith-coexist" },
+  ],
+};
+
 export default function CanScienceAndFaithCoexist() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -75,7 +85,7 @@ export default function CanScienceAndFaithCoexist() {
         title="Can Science and Faith Coexist? 8 Questions Answered"
         description="Can science and religion coexist? Evolution, the Big Bang, miracles, the age of the earth, and famous believing scientists. Honest answers that refuse the false dilemma."
         keywords="can science and faith coexist, science vs religion, can Christians believe in evolution, Big Bang God, miracles science, age of earth Bible, scientists who believe in God"
-        structuredData={[faqSchema, webPageSchema]}
+        structuredData={[faqSchema, webPageSchema, breadcrumbSchema]}
       />
 
       <section style={{ background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px 64px", textAlign: "center" }}>

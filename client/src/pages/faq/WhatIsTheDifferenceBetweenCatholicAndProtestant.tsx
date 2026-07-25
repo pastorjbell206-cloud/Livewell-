@@ -66,6 +66,16 @@ const webPageSchema = {
   publisher: { "@type": "Organization", name: "LiveWell by James Bell" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.livewellbyjamesbell.co/" },
+    { "@type": "ListItem", position: 2, name: "Questions People Ask", item: "https://www.livewellbyjamesbell.co/faq" },
+    { "@type": "ListItem", position: 3, name: "What divides Catholics and Protestants?", item: "https://www.livewellbyjamesbell.co/faq/catholic-vs-protestant" },
+  ],
+};
+
 export default function WhatIsTheDifferenceBetweenCatholicAndProtestant() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -75,7 +85,7 @@ export default function WhatIsTheDifferenceBetweenCatholicAndProtestant() {
         title="Catholic vs. Protestant: 8 Key Differences Explained"
         description="What is the difference between Catholic and Protestant Christianity? Main differences, the Pope, Mary, saints, salvation, and which is older."
         keywords="Catholic vs Protestant, difference between Catholic and Protestant, can Catholics be saved, Pope, Mary in Christianity, saints, Catholic Protestant split"
-        structuredData={[faqSchema, webPageSchema]}
+        structuredData={[faqSchema, webPageSchema, breadcrumbSchema]}
       />
 
       <section style={{ background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px 64px", textAlign: "center" }}>

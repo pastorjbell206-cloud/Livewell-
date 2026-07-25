@@ -66,6 +66,16 @@ const webPageSchema = {
   publisher: { "@type": "Organization", name: "LiveWell by James Bell" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.livewellbyjamesbell.co/" },
+    { "@type": "ListItem", position: 2, name: "Questions People Ask", item: "https://www.livewellbyjamesbell.co/faq" },
+    { "@type": "ListItem", position: 3, name: "Does God exist?", item: "https://www.livewellbyjamesbell.co/faq/does-god-exist" },
+  ],
+};
+
 export default function DoesGodExist() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -75,7 +85,7 @@ export default function DoesGodExist() {
         title="Does God Exist? 8 Honest Answers to the Hardest Question"
         description="Does God exist? The best arguments for and against, the role of suffering, the difference between faith and proof, and where to start if you are not sure."
         keywords="does God exist, proof God exists, arguments for God, arguments against God, problem of suffering, faith vs proof, can scientists believe in God"
-        structuredData={[faqSchema, webPageSchema]}
+        structuredData={[faqSchema, webPageSchema, breadcrumbSchema]}
       />
 
       <section style={{ background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px 64px", textAlign: "center" }}>
