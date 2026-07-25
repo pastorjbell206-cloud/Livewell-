@@ -112,7 +112,7 @@ export default function Resources() {
   return (
     <Layout>
       <SEOMeta
-        title="Resources — Study Guides, Libraries, and Ministry Tools"
+        title="The Resource Hub — Study Guides, Guides, and Downloads"
         description="Free resources for disciples, group leaders, and households: the Reading Scripture in Context library, study guides, the creeds and confessions, family devotions, and downloads."
         url="https://www.livewellbyjamesbell.co/resources"
       />

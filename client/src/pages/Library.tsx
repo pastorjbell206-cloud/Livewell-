@@ -142,7 +142,7 @@ export default function Library() {
   return (
     <Layout>
       <SEOMeta
-        title="The Library — A commonplace book"
+        title="The Commonplace — A quote book of what is worth keeping"
         description="A working commonplace book — quotes from Keller, Brueggemann, Peterson, Bonhoeffer, Newbigin, Bellah, Taylor, Haidt and others, curated by James Bell."
         url="https://www.livewellbyjamesbell.co/library"
       />

@@ -80,13 +80,13 @@ const STATIC_PAGES = [
   },
   {
     path: "/marriage",
-    title: "Marriage — Essays for Couples",
+    title: "Christian Marriage Help — Covenant, Conflict, and Repair",
     description: "Marriage essays for couples in ministry, midlife, and beyond. Honest, theologically grounded, never tip-shaped.",
     type: "website",
   },
   {
     path: "/parenting",
-    title: "Parenting — From a Father of Five",
+    title: "Christian Parenting Help — From a Father of Five",
     description: "Essays on parenting from a pastor and father of five sons. Formation over performance, presence over advice.",
     type: "website",
   },
@@ -116,7 +116,7 @@ const STATIC_PAGES = [
   },
   {
     path: "/library",
-    title: "The Library — A commonplace book",
+    title: "The Commonplace — A quote book of what is worth keeping",
     description: "Curated quotes from Keller, Brueggemann, Peterson, Bonhoeffer, Newbigin, Taylor, Bellah, Haidt.",
     type: "website",
   },
@@ -140,7 +140,7 @@ const STATIC_PAGES = [
   },
   {
     path: "/nation",
-    title: "Christ and the Nation",
+    title: "Christ and the Nation — The Bible, America, and Power",
     description: "Was America a Christian nation? How close is each party to the Bible? What a biblical government would actually mean.",
     type: "website",
   },

@@ -65,7 +65,7 @@ export default function Parenting() {
   return (
     <div style={{ background: "var(--paper)" }}>
       <SEOMeta
-        title="Christian Parenting Help | LiveWell by James Bell"
+        title="Christian Parenting Help — From a Father of Five"
         description="Raising kids who think, question, and believe. Christian parenting on faith formation, doubt, and technology, for every season."
         keywords="Christian parenting, raising kids in faith, how to talk to kids about God, faith and teenagers, parenting resources, Christian family"
         url="https://www.livewellbyjamesbell.co/parenting"
