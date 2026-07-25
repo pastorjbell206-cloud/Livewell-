@@ -112,8 +112,10 @@ Both had been found before, in PRs that never merged.
 
 ## 4. Waiting on you
 
-1. **Merge #459** — and note it now reports `dirty`; main has moved past its base, so it
-   needs an update-from-main first. Everything else is downstream.
+1. **Merge #459.** It has been brought current with main (43 commits merged, five
+   conflicts resolved) and re-verified: check clean, 308 tests, all 15 validators,
+   `build:vercel` exits 0. Everything else is downstream of it — and main moved 43 commits
+   while it sat, so the cost of leaving it is not hypothetical.
 2. **Close five PRs in one sitting**: #374, #110, #108, #376, #106. All superseded.
 3. **Batch the 12 dependabot PRs.**
 4. **The 93 pastor essays** are still published. `archive/pcn-handoff/pastor-essays-in-database.md`
@@ -129,7 +131,7 @@ first, because it has never been enforced and may not be green.
 
 ## 5. The order I would work in
 
-1. Update #459 from main, then **merge it**.
+1. **Merge #459** — already updated from main and re-verified.
 2. **Close the five superseded PRs** and batch the dependabot ones. That is 17 of 30 gone
    in an afternoon, and the list becomes readable.
 3. **Merge #486 and #377** — both clean and additive.
