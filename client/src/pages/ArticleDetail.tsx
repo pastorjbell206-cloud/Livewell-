@@ -17,6 +17,7 @@ import { recordReadEvent } from "@/components/ReadDepthBeacon";
 import { ArrowLeft, BookOpen, Bookmark, Share2, User } from "lucide-react";
 
 import Layout from "@/components/Layout";
+import { LoadFailed } from "@/components/LoadFailed";
 import PageEndNav from "@/components/PageEndNav";
 import ReadingProgressBar from "@/components/ReadingProgressBar";
 import { SEOMeta, getArticleSchema, getBreadcrumbSchema } from "@/components/SEOMeta";
@@ -488,6 +489,24 @@ export default function ArticleDetail() {
       <Layout>
         <div style={{ padding: "var(--s-6) var(--s-4)", textAlign: "center" }}>
           <div style={{ color: "var(--ink-muted)" }}>Loading article…</div>
+        </div>
+      </Layout>
+    );
+  }
+
+  // A request that failed is not an article that does not exist. Telling a
+  // reader the piece is gone when the server simply did not answer is a lie
+  // the reader has no way to check, and it loses them for good.
+  if (postQuery.isError) {
+    return (
+      <Layout>
+        <div style={{ padding: "var(--s-6) var(--s-4)" }}>
+          <LoadFailed
+            what="This essay"
+            onRetry={() => void postQuery.refetch()}
+            backHref="/writing"
+            backLabel="Back to the writing"
+          />
         </div>
       </Layout>
     );

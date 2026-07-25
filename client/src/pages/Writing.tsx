@@ -18,6 +18,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { StatementBand } from "@/components/EditorialBlocks";
 import { TrackChip } from "@/components/TrackChip";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { LoadFailed } from "@/components/LoadFailed";
 import { trpc } from "@/lib/trpc";
 import { pillarToTrack, resolveTrack, pillarForPost, PILLAR_BY_SLUG, subThemesForPost, SUBTHEMES, PILLARS_V2, MOVEMENTS } from "@/lib/taxonomy";
 import {
@@ -658,7 +659,19 @@ export default function Writing() {
             </div>
           )}
 
-          {!postsQuery.isLoading && rest.length === 0 && (
+          {/* A failed request is not an empty result. Telling a reader to
+              change their filter when the server never answered sends them
+              hunting for a mistake they did not make. */}
+          {postsQuery.isError && (
+            <LoadFailed
+              what="The writing"
+              onRetry={() => void postsQuery.refetch()}
+              backHref="/"
+              backLabel="Back to the home page"
+            />
+          )}
+
+          {!postsQuery.isLoading && !postsQuery.isError && rest.length === 0 && (
             <p
               style={{
                 fontFamily: "var(--B)",
