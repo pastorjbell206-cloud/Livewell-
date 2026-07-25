@@ -1,9 +1,8 @@
 {
   "slug": "alone-in-a-crowded-church",
-  "title": "Alone in a Crowded Church",
+  "title": "Alone in a Crowded Church: A Study on Church Loneliness",
   "subtitle": "A five-session study on loneliness, belonging, and the community Christ actually promised.",
-  "summary": "This study is for anyone who has stood in a full sanctuary, sung every word, shaken every hand at the door, and driven home knowing that not one person in that building could have told you what was wrong. It is for small groups, adult classes, and the church leaders who built the program and cannot understand why the people inside it are still so alone. It walks slowly through five movements drawn from James Bell's book Alone in a Crowded Church, on the difference between attendance and belonging, on the koinonia the first believers actually practiced in Acts, on the friendship the modern church has quietly let die, on the hospitality and the burden-bearing the New Testament commands of us toward one another, and on the long, unglamorous work of being known. It is built to be run by a busy volunteer with no preparation. Every question carries the answer behind it, every silence has a backup, and every session ends in prayer rather than a program.\n\nThis is not a study that scolds lonely people for not trying harder to plug in. It will not do that, and the leader must never let it. The hard truth this study refuses to soften is that the church itself often manufactures the very loneliness it laments. We built buildings you can hide in. We mistook a crowd for a body and attendance for love. We made the coffee hour a performance where everyone reports that they are fine. Bell does not stand outside this indictment. He has pastored a church of hundreds and felt unknown inside his own congregation. He has asked how are you and not waited for the answer. He has let a member drift out the back door and told himself they were busy. He writes from inside the loneliness, as one of the people who helped build the room where it grows. So will you."
-  ,
+  "summary": "This study is for anyone who has stood in a full sanctuary, sung every word, shaken every hand at the door, and driven home knowing that not one person in that building could have told you what was wrong. It is for small groups, adult classes, and the church leaders who built the program and cannot understand why the people inside it are still so alone. It walks slowly through five movements drawn from James Bell's book Alone in a Crowded Church, on the difference between attendance and belonging, on the koinonia the first believers actually practiced in Acts, on the friendship the modern church has quietly let die, on the hospitality and the burden-bearing the New Testament commands of us toward one another, and on the long, unglamorous work of being known. It is built to be run by a busy volunteer with no preparation. Every question carries the answer behind it, every silence has a backup, and every session ends in prayer rather than a program.\n\nThis is not a study that scolds lonely people for not trying harder to plug in. It will not do that, and the leader must never let it. The hard truth this study refuses to soften is that the church itself often manufactures the very loneliness it laments. We built buildings you can hide in. We mistook a crowd for a body and attendance for love. We made the coffee hour a performance where everyone reports that they are fine. Bell does not stand outside this indictment. He has pastored a church of hundreds and felt unknown inside his own congregation. He has asked how are you and not waited for the answer. He has let a member drift out the back door and told himself they were busy. He writes from inside the loneliness, as one of the people who helped build the room where it grows. So will you.",
   "audience": "Anyone who has felt alone in church, small groups, and church leaders",
   "sessionsLabel": "5 sessions (run as 5, 8, or 4 weeks)",
   "sessions": [
@@ -13,18 +12,55 @@
       "title": "Alone in the Crowd",
       "aim": "To name the loneliness honestly, neither as the lonely person's failure to try nor as a problem that better programming would fix, and to admit that a full church can be one of the loneliest rooms a person ever enters.",
       "summary": "A man told Bell after twelve years of faithful attendance that if he stopped coming, it might be three weeks before anyone noticed, and he was not bitter when he said it, only tired. He was not doing anything wrong. He had done everything the church asked, joined and served and shown up, and he was still a stranger in a building full of familiar faces. The first question is not how to get people to plug in. It is why a person can be surrounded and still unknown. Bell takes the strong form of two answers that want to silence each other. The first says the lonely are responsible, that they keep to themselves, refuse the small groups, leave before the coffee, and reap the isolation they sow, and it is right that some loneliness is a wall a person builds and refuses to lower. The second says the church has done nothing wrong, that it offers groups and events and ministries, and the lonely simply will not use them, and it is right that means of connection exist and go unused. Bell will not let either win cleanly. The loneliness is not only the lonely person's fault, which refutes the first, because we built a place a person can disappear inside. And it is not solved by one more program, which refutes the second, because you cannot schedule your way into being known. It is sometimes a wall the lonely build, sometimes a room the church designed, often both. And the church begins not by adding an event but by telling the truth about the crowd it mistook for a body.",
-      "keyScripture": { "ref": "Genesis 2:18", "why": "Before sin enters the world, before anything is called bad, God looks at the one man and says it is not good for him to be alone, naming aloneness as the first thing in a perfect creation that was not yet right, and treating human isolation as a problem older than the fall." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Genesis 2:18",
+        "why": "Before sin enters the world, before anything is called bad, God looks at the one man and says it is not good for him to be alone, naming aloneness as the first thing in a perfect creation that was not yet right, and treating human isolation as a problem older than the fall."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Before tonight, when you felt alone at church, who did you privately blame, yourself for not trying, or the church for not seeing you?", "behind": "Surface the default before defining anything. Most people in the room carry an unspoken verdict on their own loneliness, and it usually points inward as shame or outward as resentment. The point is not to settle it yet but to expose the assumption. Land it on honesty, not consensus, and go first if the room is slow." },
-        { "q": "God says it is not good for the man to be alone before anything has gone wrong in the world. Why does it matter that loneliness is named as a problem in a perfect creation, not a result of the fall?", "behind": "Move the room off the idea that needing people is a weakness to be outgrown. Aloneness was the first not-good in a world God called good. The aim is to let people feel that the ache to be known is built into them by God, not a flaw to repent of, so they stop apologizing for needing community." },
-        { "q": "Bell says a full church can be the loneliest room a person enters, and that the crowd itself can hide us. Where have you felt most alone in the most crowded place?", "behind": "This is the hinge of the whole study. Do not let it become a complaint session about your particular church. Keep it on the personal recognition that proximity is not the same as being known, that a crowd can be a place to hide. The honesty here protects everyone who comes after." },
-        { "q": "Bell grants that some loneliness is a wall the lonely person builds and will not lower, leaving before the coffee, declining the invitation. Where might that be partly true of you?", "behind": "Protect the even-handedness from the start. Not all loneliness is done to us. Some of it we guard, because being known is frightening and a wall feels safer. Make sure the room does not leave thinking they bear no part. The error is not naming the wall. It is pretending the wall is the whole story." },
-        { "q": "Bell confesses he has pastored hundreds and still felt unknown, and has asked how are you without waiting for the answer. Where have you done the asking that does not want a real answer?", "behind": "Move from diagnosis to self-implication. You are not hunting for confession to shame anyone. You want each person, the leader first, inside the indictment, because we are all both the lonely and the ones who keep others lonely. Go first." }
+        {
+          "q": "Before tonight, when you felt alone at church, who did you privately blame, yourself for not trying, or the church for not seeing you?",
+          "behind": "Surface the default before defining anything. Most people in the room carry an unspoken verdict on their own loneliness, and it usually points inward as shame or outward as resentment. The point is not to settle it yet but to expose the assumption. Land it on honesty, not consensus, and go first if the room is slow."
+        },
+        {
+          "q": "God says it is not good for the man to be alone before anything has gone wrong in the world. Why does it matter that loneliness is named as a problem in a perfect creation, not a result of the fall?",
+          "behind": "Move the room off the idea that needing people is a weakness to be outgrown. Aloneness was the first not-good in a world God called good. The aim is to let people feel that the ache to be known is built into them by God, not a flaw to repent of, so they stop apologizing for needing community."
+        },
+        {
+          "q": "Bell says a full church can be the loneliest room a person enters, and that the crowd itself can hide us. Where have you felt most alone in the most crowded place?",
+          "behind": "This is the hinge of the whole study. Do not let it become a complaint session about your particular church. Keep it on the personal recognition that proximity is not the same as being known, that a crowd can be a place to hide. The honesty here protects everyone who comes after."
+        },
+        {
+          "q": "Bell grants that some loneliness is a wall the lonely person builds and will not lower, leaving before the coffee, declining the invitation. Where might that be partly true of you?",
+          "behind": "Protect the even-handedness from the start. Not all loneliness is done to us. Some of it we guard, because being known is frightening and a wall feels safer. Make sure the room does not leave thinking they bear no part. The error is not naming the wall. It is pretending the wall is the whole story."
+        },
+        {
+          "q": "Bell confesses he has pastored hundreds and still felt unknown, and has asked how are you without waiting for the answer. Where have you done the asking that does not want a real answer?",
+          "behind": "Move from diagnosis to self-implication. You are not hunting for confession to shame anyone. You want each person, the leader first, inside the indictment, because we are all both the lonely and the ones who keep others lonely. Go first."
+        }
       ],
       "objections": [
-        { "objection": "If people are lonely at church, that is on them. We have small groups, we have ministries, we have a coffee hour and a sign-up sheet. The lonely ones just will not put themselves out there. You cannot make someone be known if they refuse to show up.", "response": "Sit with the half that is true, because Bell grants it. Means of connection do exist, and some people decline every one of them and then grieve the isolation they chose, and there is a wall some build that no program can lower for them. Then make the distinction with care. A sign-up sheet is not the same as being known, and a roomful of activities can still be a place to hide in plain sight. The man who said it would be three weeks before anyone noticed had joined and served and shown up. He used the means, and was still a stranger. To answer his loneliness with one more event is to hand a thirsty man a brochure about water. The church did not fail to schedule enough. It failed to see him, and seeing is not a program." },
-        { "objection": "Loneliness is not the church's job to fix. People are responsible for their own friendships and their own emotional lives. The church exists to preach the gospel and administer the sacraments, not to be everyone's social worker.", "response": "Grant what is right, because there is something to it. The church is not a therapy clinic, and it cannot be reduced to meeting felt needs, and a person who treats the church as merely a friendship service has misunderstood it. Then press the other edge. The New Testament does not treat belonging as optional or extra. It commands us, dozens of times, to do things to one another, to bear, to welcome, to confess, to weep with, to carry. The community is not the by-product of the gospel. It is part of what the gospel makes. To preach the message of reconciliation while presiding over a congregation of strangers is to deny with the building what we proclaim from the pulpit." }
+        {
+          "objection": "If people are lonely at church, that is on them. We have small groups, we have ministries, we have a coffee hour and a sign-up sheet. The lonely ones just will not put themselves out there. You cannot make someone be known if they refuse to show up.",
+          "response": "Sit with the half that is true, because Bell grants it. Means of connection do exist, and some people decline every one of them and then grieve the isolation they chose, and there is a wall some build that no program can lower for them. Then make the distinction with care. A sign-up sheet is not the same as being known, and a roomful of activities can still be a place to hide in plain sight. The man who said it would be three weeks before anyone noticed had joined and served and shown up. He used the means, and was still a stranger. To answer his loneliness with one more event is to hand a thirsty man a brochure about water. The church did not fail to schedule enough. It failed to see him, and seeing is not a program."
+        },
+        {
+          "objection": "Loneliness is not the church's job to fix. People are responsible for their own friendships and their own emotional lives. The church exists to preach the gospel and administer the sacraments, not to be everyone's social worker.",
+          "response": "Grant what is right, because there is something to it. The church is not a therapy clinic, and it cannot be reduced to meeting felt needs, and a person who treats the church as merely a friendship service has misunderstood it. Then press the other edge. The New Testament does not treat belonging as optional or extra. It commands us, dozens of times, to do things to one another, to bear, to welcome, to confess, to weep with, to carry. The community is not the by-product of the gospel. It is part of what the gospel makes. To preach the message of reconciliation while presiding over a congregation of strangers is to deny with the building what we proclaim from the pulpit."
+        }
       ],
       "quietRoomQuestion": "What is the thing about your life right now that no one at your church knows, the thing you keep behind the answer fine when they ask how you are?",
       "practice": "This week, ask one person at your church how they are, and then do the one thing almost no one does. Wait. Do not fill the silence, do not move on after the first answer, ask a second question, and stay long enough that they could tell you the truth if they wanted to. Write down what happened, including whether you were the one who got uncomfortable first.",
@@ -36,17 +72,41 @@
       ],
       "teaching": "Start where Bell starts, with a man after a service. Twelve years he had come, faithfully, every week, and he told Bell, without bitterness, that if he simply stopped showing up it would probably be three weeks before anyone noticed he was gone. He was not angry. He was tired. And he was not doing anything wrong. He had done everything the church ever asked of him. He had joined. He had served. He had shown up in the rain. And he was still, after twelve years, a stranger among familiar faces. So we begin not with the question everyone wants to begin with, which is how do we get people to plug in, but with the harder and more honest one. Why can a person be surrounded by hundreds and still be utterly unknown. Until we answer that, every solution we reach for will land on the wrong wound. Take the two answers that want to silence each other, and take them at their strongest. The first says the loneliness is the lonely person's own fault. They keep to themselves. They decline the small group. They slip out before the coffee hour. They will not put themselves out there, and they reap the isolation they sowed. And this answer is not entirely wrong. Some loneliness really is a wall a person builds and refuses to lower, because being known is frightening and a wall feels safer than the risk of being seen and found wanting. The second answer says the church has done nothing wrong at all. Look at the bulletin. There are groups, classes, ministries, events, a sign-up sheet for everything. The means of connection are everywhere, and if people will not use them, that is hardly the church's failure. And this answer is not wrong either. The means do exist, and they do go unused, and you cannot force a person into fellowship they keep declining. Now watch what happens when you refuse to let either answer take the whole field. The loneliness is not only the lonely person's fault, which destroys the first position, because we built the room. We constructed buildings and services and programs in which a human being can come and go for a decade and never once be required to be known by anyone. We made it possible to belong to a crowd and to no one. But the loneliness is also not solved by one more program, which destroys the second position, because you cannot schedule your way into being known. A sign-up sheet produces attendance. It does not produce love. You can add an event to every empty square on the calendar and still send people home strangers. So here is the verdict, and the leader must hold it cleanly all the way through. The loneliness in our churches is sometimes a wall the lonely person guards, sometimes a room the church carefully designed, and very often both at once, tangled so tightly that no one can fully say where the fault begins. Some of you in this room have built a wall, and need to risk lowering one stone of it. Some of you have been failed by a community that never tried to see you, and need to hear that the failure was real and was not yours. And I have to stand inside this, in both directions, because I have been both the unknown and the one who kept others unknown. I have pastored a church of hundreds and driven home from my own building feeling like a stranger in it. And I have stood at the door and asked a hundred people how they were and not once stopped long enough to want the real answer. The how are you that does not wait is its own small cruelty, and I have practiced it for years. So before we reach for a single solution, notice where God puts this. Before sin enters the world, before anything in creation is called bad, God looks at the one man in a perfect garden and says the first not-good in the Bible. It is not good for the man to be alone. The ache to be known is not a symptom of the fall. It was built into us by God, before the fall, in a world he otherwise called good. Which means your loneliness is not a flaw in you to be repented of. It is the image of a relational God in you, telling the truth about what you were made for. That is where we begin, and it is mercy, and it is where we will go next.",
       "scriptureStudy": [
-        { "ref": "Genesis 2:18", "note": "It is not good that the man should be alone. God names aloneness as the first not-good thing in a creation he keeps calling good, before any sin, so the need to be known is woven into us by design and is not a defect to apologize for." },
-        { "ref": "Psalm 68:6", "note": "God settles the solitary in a home, he leads out the prisoners to prosperity. The God of Scripture takes the isolated and places them in family, which means a church that leaves people alone is working against the very heart of God." },
-        { "ref": "Psalm 142:4", "note": "Look to the right and see, there is none who takes notice of me, no refuge remains to me, no one cares for my soul. The psalmist names the precise ache of being surrounded and uncared for, and Scripture gives the lonely words for it rather than shaming them out of it." },
-        { "ref": "Ecclesiastes 4:9-10", "note": "Two are better than one, for if they fall, one will lift up his fellow, but woe to him who is alone when he falls. The Preacher names the practical danger of isolation, the one who falls with no one to lift him, the exact peril of the unknown member." },
-        { "ref": "1 Corinthians 12:21", "note": "The eye cannot say to the hand, I have no need of you. Paul forbids the very independence the lonely church quietly assumes, insisting that no member is dispensable and no member can opt out of being needed and needing." },
-        { "ref": "John 13:35", "note": "By this all people will know that you are my disciples, if you have love for one another. Jesus stakes the credibility of the whole church not on its preaching or its size but on whether its members actually love one another, which a crowd of strangers cannot." },
-        { "ref": "Mark 14:32-34", "note": "He took with him Peter and James and John, and said, remain here and watch with me. On the worst night of his life, the Son of God did not want to be alone, and asked his friends to stay near, which tells you the need for company is no weakness." }
+        {
+          "ref": "Genesis 2:18",
+          "note": "It is not good that the man should be alone. God names aloneness as the first not-good thing in a creation he keeps calling good, before any sin, so the need to be known is woven into us by design and is not a defect to apologize for."
+        },
+        {
+          "ref": "Psalm 68:6",
+          "note": "God settles the solitary in a home, he leads out the prisoners to prosperity. The God of Scripture takes the isolated and places them in family, which means a church that leaves people alone is working against the very heart of God."
+        },
+        {
+          "ref": "Psalm 142:4",
+          "note": "Look to the right and see, there is none who takes notice of me, no refuge remains to me, no one cares for my soul. The psalmist names the precise ache of being surrounded and uncared for, and Scripture gives the lonely words for it rather than shaming them out of it."
+        },
+        {
+          "ref": "Ecclesiastes 4:9-10",
+          "note": "Two are better than one, for if they fall, one will lift up his fellow, but woe to him who is alone when he falls. The Preacher names the practical danger of isolation, the one who falls with no one to lift him, the exact peril of the unknown member."
+        },
+        {
+          "ref": "1 Corinthians 12:21",
+          "note": "The eye cannot say to the hand, I have no need of you. Paul forbids the very independence the lonely church quietly assumes, insisting that no member is dispensable and no member can opt out of being needed and needing."
+        },
+        {
+          "ref": "John 13:35",
+          "note": "By this all people will know that you are my disciples, if you have love for one another. Jesus stakes the credibility of the whole church not on its preaching or its size but on whether its members actually love one another, which a crowd of strangers cannot."
+        },
+        {
+          "ref": "Mark 14:32-34",
+          "note": "He took with him Peter and James and John, and said, remain here and watch with me. On the worst night of his life, the Son of God did not want to be alone, and asked his friends to stay near, which tells you the need for company is no weakness."
+        }
       ],
       "goingDeeper": "Press into the history the church would rather forget, because the loneliness in our buildings has a shape that did not appear from nowhere. For most of human history a person was born into a web of relationships they did not choose and could not easily leave, a village, an extended family, a parish, a guild, and the church inherited and assumed that web. The thinkers who study modern life, from sociologists of community to writers on the loss of social capital, have traced how the last two centuries dissolved that web in the name of mobility and freedom, until the modern person stands more independent and more alone than any generation before. Set this beside what happened inside the church as it adapted to that culture. We grew larger, more professional, more programmed, and in many places we quietly traded the small and demanding fellowship of people who could not avoid one another for the comfortable anonymity of a congregation a person can attend without being known. There was a real gain in it, the freedom to come without obligation, but the cost was the very thing the New Testament assumes, a body whose members are not strangers. A serious group should weigh both, the genuine good of a church anyone can walk into and the genuine loss of a church no one is required to belong to, and should ask the uncomfortable question Bell keeps returning to, whether the modern epidemic of loneliness that doctors now name a public health crisis has walked straight through the church doors and made itself at home in the very place that was supposed to be its cure. The discipline this study requires is to stop blaming the lonely and start examining the room.",
       "caseStudy": "Consider a woman in her fifties, a member of the same congregation for nine years, who teaches a children's class, brings a dish to every potluck, and stands near the doors greeting people every Sunday. By every visible measure she belongs. Then her husband leaves, quietly, and for four months she keeps coming, keeps teaching, keeps greeting, and tells no one, because she has never once been in a room at that church where the truth would have been welcome rather than awkward. When she finally breaks down in a hallway, the response is warm and immediate, a flood of people who say they had no idea and wish they had known. They are not lying. They did not know. But notice what the warmth cannot undo, that she carried it alone for four months inside a building she attended three times a week, because the church had given her a hundred roles and not one relationship in which she could have said I am not okay. Use this with the group not to assign blame but to test the study's central claim. Was her isolation a wall she built, a refusal to reach out, or a room the church designed, a place full of tasks and empty of the kind of knowing that would have caught her in the first week. The honest answer is some of both, and the discomfort of not being able to cleanly separate them is exactly where this study means to leave the room.",
-      "memoryVerse": { "ref": "Genesis 2:18", "text": "Then the Lord God said, it is not good that the man should be alone." }
+      "memoryVerse": {
+        "ref": "Genesis 2:18",
+        "text": "Then the Lord God said, it is not good that the man should be alone."
+      }
     },
     {
       "n": 2,
@@ -54,18 +114,55 @@
       "title": "What the First Church Actually Did",
       "aim": "To take seriously what the believers in Acts actually shared, to recover the word koinonia as a common life and not a coffee hour, and to refuse both the nostalgia that idolizes the early church and the cynicism that dismisses it as impossible.",
       "summary": "We talk about fellowship as though we know what it means, and we have shrunk it to a half hour of weak coffee and weather talk in a tiled hall. The first question is what the believers in Acts actually did when Luke says they devoted themselves to the fellowship, because the word he uses, koinonia, means something far heavier than sociability. It means a shared common life, a holding of things in common, a partnership so real it reached their houses and their money and their bread. Bell takes the strong form of two objections. The first is nostalgia, the longing to copy Acts exactly, sell everything, hold all things in common, and treat the early church as a blueprint we have betrayed, and it is right that we have lost something they had. The second is cynicism, that the Acts community was a brief, miraculous, impossible moment that fell apart almost immediately and cannot be reproduced, and it is right that it was not a permanent utopia. Bell will not let either win. We cannot simply copy their economics, which checks the nostalgia, because the text describes what love did, not a law it laid down. But we cannot dismiss it as impossible either, which checks the cynicism, because what made them a community was not a program but a devotion, and devotion is available to us. They were together. They were in homes. They were known down to their needs. The turn is that koinonia is not an event the church holds. It is a life the church shares, and we have settled for the event because the life costs more.",
-      "keyScripture": { "ref": "Acts 2:42", "why": "They devoted themselves to the apostles teaching and the fellowship, to the breaking of bread and the prayers, listing koinonia alongside doctrine and the table and prayer as one of the four things the first church gave itself to, not an optional extra but a central devotion of the new community." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Acts 2:42",
+        "why": "They devoted themselves to the apostles teaching and the fellowship, to the breaking of bread and the prayers, listing koinonia alongside doctrine and the table and prayer as one of the four things the first church gave itself to, not an optional extra but a central devotion of the new community."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "When someone says fellowship at church, what picture comes to your mind, and how far is that picture from a shared common life?", "behind": "Open by exposing the shrunken word before the exegesis. Most will picture coffee and small talk, and that gap is exactly what Bell wants to examine. The aim is to feel how small we have made a word that once meant holding life in common, so the rest of the session can fill it back up." },
-        { "q": "Luke lists the fellowship right alongside the apostles teaching, the breaking of bread, and the prayers. Why does it matter that being known by one another sits next to sound doctrine as a core devotion, not an extra?", "behind": "Move the room off treating community as the soft, optional part of church life. Luke ranks it with teaching and prayer. The aim is to let people see that a church can be doctrinally sound and still disobedient if its members are strangers, because the fellowship is commanded, not suggested." },
-        { "q": "The first believers were in one another's homes, sharing meals and needs. Why do you think so much of their common life happened around tables in houses rather than in a public hall?", "behind": "Press on the location of belonging. Real knowing tends to happen at a table in a home, not in a lobby. The aim is to surface the practical truth that the church grew close where it ate together in small spaces, and to make the room wonder where that has gone in their own life." },
-        { "q": "Bell takes the cynic's view that the Acts community was a brief, impossible moment we cannot copy. What is true in that, and what does it miss about what actually made them a community?", "behind": "Hold both halves. The cynic is right that we cannot legislate their economics or pretend it was permanent. The miss is that what bound them was a devotion, not a program, and devotion is open to anyone. Help the room separate the copyable heart from the unrepeatable details." },
-        { "q": "Bell admits his own church has a fellowship hall and almost no fellowship, a building for the thing it does not actually do. Where have you settled for the event because the shared life costs more?", "behind": "Close with self-implication. Many of us attend the gathering and avoid the actual knowing, because the gathering is safe and the knowing is costly. Go first, name where you have chosen the easy version. The point is honest recognition, not a plan to fix it tonight." }
+        {
+          "q": "When someone says fellowship at church, what picture comes to your mind, and how far is that picture from a shared common life?",
+          "behind": "Open by exposing the shrunken word before the exegesis. Most will picture coffee and small talk, and that gap is exactly what Bell wants to examine. The aim is to feel how small we have made a word that once meant holding life in common, so the rest of the session can fill it back up."
+        },
+        {
+          "q": "Luke lists the fellowship right alongside the apostles teaching, the breaking of bread, and the prayers. Why does it matter that being known by one another sits next to sound doctrine as a core devotion, not an extra?",
+          "behind": "Move the room off treating community as the soft, optional part of church life. Luke ranks it with teaching and prayer. The aim is to let people see that a church can be doctrinally sound and still disobedient if its members are strangers, because the fellowship is commanded, not suggested."
+        },
+        {
+          "q": "The first believers were in one another's homes, sharing meals and needs. Why do you think so much of their common life happened around tables in houses rather than in a public hall?",
+          "behind": "Press on the location of belonging. Real knowing tends to happen at a table in a home, not in a lobby. The aim is to surface the practical truth that the church grew close where it ate together in small spaces, and to make the room wonder where that has gone in their own life."
+        },
+        {
+          "q": "Bell takes the cynic's view that the Acts community was a brief, impossible moment we cannot copy. What is true in that, and what does it miss about what actually made them a community?",
+          "behind": "Hold both halves. The cynic is right that we cannot legislate their economics or pretend it was permanent. The miss is that what bound them was a devotion, not a program, and devotion is open to anyone. Help the room separate the copyable heart from the unrepeatable details."
+        },
+        {
+          "q": "Bell admits his own church has a fellowship hall and almost no fellowship, a building for the thing it does not actually do. Where have you settled for the event because the shared life costs more?",
+          "behind": "Close with self-implication. Many of us attend the gathering and avoid the actual knowing, because the gathering is safe and the knowing is costly. Go first, name where you have chosen the easy version. The point is honest recognition, not a plan to fix it tonight."
+        }
       ],
       "objections": [
-        { "objection": "The Acts church sold everything and held all things in common. If we were serious, we would do the same, and anything less is a betrayal of the real church. We should copy them exactly.", "response": "Bell honors the longing under this, because something real has been lost and the nostalgia is grief for it. Then he refuses the literalism. Luke is describing what love spontaneously did, not laying down a law the church must replicate, and even in Acts the sharing was voluntary, not commanded, since Peter tells Ananias the property and the proceeds were his to do with as he chose. The point was never the economics as a rule. The point was a love so real it reached people's possessions. To turn that into a mandatory blueprint is to copy the outward form and miss the heart, which was that no one among them was in need because they actually saw one another. Reproduce the seeing. The generosity will follow from it, as it did for them, rather than the other way around." },
-        { "objection": "That was a unique, Spirit-filled, honeymoon moment in the very first days of the church, and it fell apart almost immediately, with complaints and divisions within a few chapters. You cannot reproduce it. It is naive to try.", "response": "Grant the realism, because it is partly right. The Acts community was not a permanent utopia, the cracks show up quickly, and anyone who promises to recreate a flawless early church is selling a fantasy. Then mark what the cynic misses. What made them a community in the first place was not a momentary feeling or a one-time miracle. Luke says they devoted themselves, a word of sustained, deliberate commitment, to teaching and table and prayer and one another. Devotion is not a honeymoon. It is a discipline, and it is available to any church willing to pay for it. The early church was not magic. It was committed. We have plenty of feeling and very little devotion, and that, not some lost miracle, is the actual gap between us and them." }
+        {
+          "objection": "The Acts church sold everything and held all things in common. If we were serious, we would do the same, and anything less is a betrayal of the real church. We should copy them exactly.",
+          "response": "Bell honors the longing under this, because something real has been lost and the nostalgia is grief for it. Then he refuses the literalism. Luke is describing what love spontaneously did, not laying down a law the church must replicate, and even in Acts the sharing was voluntary, not commanded, since Peter tells Ananias the property and the proceeds were his to do with as he chose. The point was never the economics as a rule. The point was a love so real it reached people's possessions. To turn that into a mandatory blueprint is to copy the outward form and miss the heart, which was that no one among them was in need because they actually saw one another. Reproduce the seeing. The generosity will follow from it, as it did for them, rather than the other way around."
+        },
+        {
+          "objection": "That was a unique, Spirit-filled, honeymoon moment in the very first days of the church, and it fell apart almost immediately, with complaints and divisions within a few chapters. You cannot reproduce it. It is naive to try.",
+          "response": "Grant the realism, because it is partly right. The Acts community was not a permanent utopia, the cracks show up quickly, and anyone who promises to recreate a flawless early church is selling a fantasy. Then mark what the cynic misses. What made them a community in the first place was not a momentary feeling or a one-time miracle. Luke says they devoted themselves, a word of sustained, deliberate commitment, to teaching and table and prayer and one another. Devotion is not a honeymoon. It is a discipline, and it is available to any church willing to pay for it. The early church was not magic. It was committed. We have plenty of feeling and very little devotion, and that, not some lost miracle, is the actual gap between us and them."
+        }
       ],
       "quietRoomQuestion": "If your real needs, the financial one, the marriage one, the fear you carry alone, were actually known by your church the way the first believers knew one another, which need would you most want them to see, and which would you most dread them seeing?",
       "practice": "This week, do the most ordinary and most lost thing the first church did. Share a meal in a home, yours or someone else's, with at least one person from your church, with no agenda but to be together and to ask real questions. No event, no program, just a table. Write down what was said at that table that would never have been said in a church lobby.",
@@ -77,17 +174,41 @@
       ],
       "teaching": "We use the word fellowship constantly, and we have almost no idea what it once meant, because we have shrunk it down to a half hour of weak coffee and talk about the weather in a tiled hall we actually named the fellowship hall, as though the building could do the thing the people will not. So the question for this session is simple and unsettling. What did the first believers actually do when Luke says they devoted themselves to the fellowship, because whatever it was, it was not what happens between our services. The word Luke uses is koinonia, and it does not mean sociability. It means a common life, a holding of things in common, a partnership so deep and so real that it reached into people's houses and their meals and their money. Luke spells it out. They were together. They had all things in common. They were selling their possessions and distributing to anyone who had need. They broke bread in their homes, day by day, and ate with glad and generous hearts. This is not a coffee hour. This is people whose lives had become genuinely intertwined, who knew one another down to the level of need and met it, who ate together so often and so openly that no one among them went hungry or unseen. Now take the two objections at full strength, because both are honest. The first is nostalgia. It reads Acts and aches, and it concludes that the only faithful response is to copy them exactly, sell everything, hold all things in common, and treat any church that does not as a betrayal of the real thing. And there is truth here. We have lost something they had, and the longing is grief, and the grief is right. But the literalism misreads the text. Luke is describing what love did, freely, spontaneously, not a law the apostles imposed, and Scripture itself makes this plain when Peter tells Ananias that his property and his money were his own to keep or to give. The sharing was voluntary. It flowed from a love that had first learned to see. To turn it into a mandatory economic blueprint is to grab the outward form and drop the heart, which was never the common purse but the common life that made the purse natural. The second objection is cynicism. It says this was a brief, Spirit-drunk honeymoon in the first weeks of the church, that it fell apart almost immediately, complaints about the daily distribution by chapter six, division not long after, and that it is naive to think we could ever reproduce it. And there is truth here too. The Acts church was not a flawless utopia, the cracks appear fast, and anyone promising to recreate a perfect early church is selling you something. But watch what the cynic misses, because it is the whole point. What made them a community was not a feeling and not a one-time miracle. Luke says they devoted themselves. That is a word of sustained, costly, deliberate commitment, the same devotion they gave to the apostles teaching and to the breaking of bread and to the prayers. Notice that list, because it is the verdict of this session. Koinonia stands right next to sound doctrine and the Lord's table and prayer as one of the four pillars the first church gave itself to. Not an extra. Not the soft part. A core devotion, ranked with teaching and prayer. Which means a church can have flawless doctrine and faithful prayer and still be disobedient, still be failing, if its members remain strangers to one another, because being known together is not the garnish on the gospel. It is part of what the gospel makes. And here I have to confess the gap in my own house, because my church has a fellowship hall and almost no fellowship. We built a room and named it for a thing we do not actually do in it. We have the gathering. We have lost the shared life, and I have let us lose it, because the gathering is cheap and the life is expensive. It costs an open home, an open calendar, an open admission of need, a willingness to be seen at the table where you cannot keep performing fine. Devotion is not a honeymoon feeling we lost. It is a discipline we have refused to pay for. So the recovery does not begin with copying their economics or manufacturing their emotion. It begins where they began, in homes, around tables, in small enough spaces that a person cannot stay hidden, with people who decide that being known by one another is as non-negotiable as being taught and praying. They were together. They were seen. No one among them was in need, because no one among them was unknown. We have settled for the event because the life costs more. That is the gap, and it is the only gap, and it is one we could close if we were willing.",
       "scriptureStudy": [
-        { "ref": "Acts 2:42", "note": "They devoted themselves to the apostles teaching and the fellowship, to the breaking of bread and the prayers. The fellowship is listed beside teaching and prayer as a core devotion, which means a church of strangers is not merely less warm but is actually disobeying one of the four things the first church gave itself to." },
-        { "ref": "Acts 2:44-45", "note": "All who believed were together and had all things in common, selling their possessions and distributing to all, as any had need. Their common life reached all the way to their money, which is the proof that they actually knew one another down to the level of need." },
-        { "ref": "Acts 2:46", "note": "Day by day, breaking bread in their homes, they received their food with glad and generous hearts. The center of their fellowship was the table in the house, not the public assembly, which tells you where being known is most likely to happen." },
-        { "ref": "Acts 4:32", "note": "The full number of those who believed were of one heart and soul. Luke describes a unity so deep it touches heart and soul, a oneness no program produces, the fruit of a love that had learned to see." },
-        { "ref": "Acts 4:34-35", "note": "There was not a needy person among them, for distribution was made to each as any had need. The result of real knowing is that need does not go unmet, the exact opposite of a church where a person can quietly struggle for years unseen." },
-        { "ref": "Acts 6:1", "note": "A complaint arose because their widows were being neglected in the daily distribution. Even the first church had cracks and overlooked people, which guards us against an impossible nostalgia and proves that community is maintained by attention, not magic." },
-        { "ref": "1 John 1:7", "note": "If we walk in the light, we have fellowship with one another. John ties koinonia to walking in the light, to honesty rather than performance, which means fellowship grows where people stop hiding and not where they stay polished." }
+        {
+          "ref": "Acts 2:42",
+          "note": "They devoted themselves to the apostles teaching and the fellowship, to the breaking of bread and the prayers. The fellowship is listed beside teaching and prayer as a core devotion, which means a church of strangers is not merely less warm but is actually disobeying one of the four things the first church gave itself to."
+        },
+        {
+          "ref": "Acts 2:44-45",
+          "note": "All who believed were together and had all things in common, selling their possessions and distributing to all, as any had need. Their common life reached all the way to their money, which is the proof that they actually knew one another down to the level of need."
+        },
+        {
+          "ref": "Acts 2:46",
+          "note": "Day by day, breaking bread in their homes, they received their food with glad and generous hearts. The center of their fellowship was the table in the house, not the public assembly, which tells you where being known is most likely to happen."
+        },
+        {
+          "ref": "Acts 4:32",
+          "note": "The full number of those who believed were of one heart and soul. Luke describes a unity so deep it touches heart and soul, a oneness no program produces, the fruit of a love that had learned to see."
+        },
+        {
+          "ref": "Acts 4:34-35",
+          "note": "There was not a needy person among them, for distribution was made to each as any had need. The result of real knowing is that need does not go unmet, the exact opposite of a church where a person can quietly struggle for years unseen."
+        },
+        {
+          "ref": "Acts 6:1",
+          "note": "A complaint arose because their widows were being neglected in the daily distribution. Even the first church had cracks and overlooked people, which guards us against an impossible nostalgia and proves that community is maintained by attention, not magic."
+        },
+        {
+          "ref": "1 John 1:7",
+          "note": "If we walk in the light, we have fellowship with one another. John ties koinonia to walking in the light, to honesty rather than performance, which means fellowship grows where people stop hiding and not where they stay polished."
+        }
       ],
       "goingDeeper": "Take up the rich layers of the word koinonia, because the New Testament uses it for far more than friendly gathering and recovering its range exposes how thin our version has become. The word carries the sense of partnership, of a share held jointly, of participation in something common. Paul uses it for the believers shared participation in the body and blood of Christ at the table, for the partnership of churches in the work of the gospel, even for the sharing of money he gathers for the poor in Jerusalem and calls a koinonia. So fellowship in Scripture is not first a feeling of warmth among people who like one another. It is a shared participation in Christ that necessarily binds his people to one another, vertical and horizontal at once, communion with God producing communion among the communed. Set this beside the modern Western instinct, shaped by centuries of rising individualism, to treat faith as a private transaction between the soul and God with the church as an optional support service, and you can see why our fellowship has thinned to coffee. We have kept the vertical and amputated the horizontal, as though a person could share in Christ without sharing in his body. A serious group should weigh the older voices who refused that split, who insisted that there is no such thing as a solitary Christian, that the New Testament has no category for the believer who belongs to Jesus but not to a people, and should ask honestly whether our private faith and our public loneliness are two symptoms of the same disease. The discipline here is to recover koinonia as a participation that has hands and a table, not a sentiment that has a name tag.",
       "caseStudy": "Consider a young couple, new to the city and new to the church, who attend faithfully for half a year and then stop, and no one can quite say why. They came to the services, smiled at the right moments, signed up for a newcomers event that was pleasant and forgettable, and were invited, once, to a small group that met in a fellowship hall and consisted of an hour of structured discussion followed by everyone going home. What they were starving for, without the words to name it, was a table in a home, a meal that ran long, a relationship that did not end when the program did. They never got one, not because anyone was unkind, but because the church's entire apparatus of connection happened in the building and on the calendar, and the building closes and the calendar empties. Compare this to a second couple in the same church who were, in their first month, simply invited to dinner at an older member's house, with no agenda, and then invited again, and who six years later are deeply rooted. The difference was not a better program. It was a table in a home. Use this with the group to press the session's claim, that koinonia is a shared life and not an event, and to ask honestly where in their own church the life actually happens, in the public hall or in private homes, and what it would cost them to open a table of their own.",
-      "memoryVerse": { "ref": "Acts 2:42", "text": "And they devoted themselves to the apostles teaching and the fellowship, to the breaking of bread and the prayers." }
+      "memoryVerse": {
+        "ref": "Acts 2:42",
+        "text": "And they devoted themselves to the apostles teaching and the fellowship, to the breaking of bread and the prayers."
+      }
     },
     {
       "n": 3,
@@ -95,18 +216,55 @@
       "title": "The Friendship We Let Die",
       "aim": "To recover friendship as a serious spiritual good the church has quietly abandoned, and to see in the friendships of Scripture, and in Christ calling his disciples friends, a kind of being known that programs cannot manufacture and busyness has all but killed.",
       "summary": "Somewhere along the way the church decided that friendship was a private matter, a nice extra, not really its business, and the result is congregations full of acquaintances and almost empty of friends. The first question is whether friendship is actually a spiritual good or just a pleasant human accident, because we treat it as the latter. Scripture treats it as the former. It gives us Jonathan loving David as his own soul, Ruth refusing to leave Naomi, and most staggering of all, Jesus telling his disciples he no longer calls them servants but friends. Bell takes the strong form of two objections. The first is that friendship is too thin a thing for the church to concern itself with, sentimental, optional, beneath the weight of doctrine and mission, and it is right that friendship is not the gospel. The second is that we are simply too busy now, that adult friendship is a luxury the modern schedule cannot afford, and it is right that the calendar is brutal and friendship takes time we do not seem to have. Bell will not let either win. Friendship is not too small for the church, which refutes the first, because Christ himself chose the word to describe what he came to make of us. And it is not killed by busyness so much as by our priorities, which refutes the second, because we are not too busy for what we actually treasure. The turn is that friendship is not built by events but by time, by repetition, by showing up across years for no reason but the person. We let it die because it could not be scheduled, and the church, of all places, should have known better.",
-      "keyScripture": { "ref": "John 15:15", "why": "Jesus says no longer do I call you servants, for I have called you friends, the Lord of glory choosing the word friend to name what he is making of his disciples, which lifts friendship out of the category of pleasant accident and places it at the center of how Christ relates to his people." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "John 15:15",
+        "why": "Jesus says no longer do I call you servants, for I have called you friends, the Lord of glory choosing the word friend to name what he is making of his disciples, which lifts friendship out of the category of pleasant accident and places it at the center of how Christ relates to his people."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Be honest about your own life. Do you have a real friend at your church, someone who knows the worst of you and stays, or do you have a circle of pleasant acquaintances?", "behind": "Open on the honest inventory before any teaching. Many will realize, naming it for the first time, that they have warmth and activity but no actual friend. The aim is not to shame but to surface the gap quietly, because you cannot recover what you will not admit is missing. Go first." },
-        { "q": "Jesus tells his disciples he no longer calls them servants but friends. Why does it matter that the Lord of glory chose the word friend, and what does it do to our sense that friendship is just a nice extra?", "behind": "Move the room off treating friendship as spiritually trivial. Christ used the word for what he is making of us. The aim is to let people feel that friendship is dignified by Jesus himself, lifted from accident to calling, so they stop apologizing for needing or wanting it." },
-        { "q": "Scripture shows us Jonathan loving David as his own soul and Ruth refusing to leave Naomi. What do those bonds have that our church acquaintances usually do not?", "behind": "Press on the depth of the biblical friendships, the loyalty, the cost, the refusal to leave. The aim is to contrast covenant friendship with the disposable connection we settle for, and to make the room hungry for the deeper thing rather than content with the shallow." },
-        { "q": "Bell takes the objection that we are simply too busy now for real friendship. What is true in that, and where is busyness actually a cover for the fact that we have not made friendship a priority?", "behind": "Hold both halves. The schedule really is brutal and time really is scarce. But we find time for what we treasure, and busyness is often the respectable name we give to misplaced priorities. Help the room own the choosing under the busyness without piling on guilt." },
-        { "q": "Bell admits that as a pastor he has been surrounded by people and starved of friends, and has let friendships lapse because they could not be scheduled. Where have you let a friendship quietly die because it was not urgent?", "behind": "Close with self-implication. Friendship dies not by decision but by neglect, the slow failure to show up. Go first, name a friendship you let lapse. The point is honest grief over what we let slip, and a small resolve to show up again, not a guilt trip." }
+        {
+          "q": "Be honest about your own life. Do you have a real friend at your church, someone who knows the worst of you and stays, or do you have a circle of pleasant acquaintances?",
+          "behind": "Open on the honest inventory before any teaching. Many will realize, naming it for the first time, that they have warmth and activity but no actual friend. The aim is not to shame but to surface the gap quietly, because you cannot recover what you will not admit is missing. Go first."
+        },
+        {
+          "q": "Jesus tells his disciples he no longer calls them servants but friends. Why does it matter that the Lord of glory chose the word friend, and what does it do to our sense that friendship is just a nice extra?",
+          "behind": "Move the room off treating friendship as spiritually trivial. Christ used the word for what he is making of us. The aim is to let people feel that friendship is dignified by Jesus himself, lifted from accident to calling, so they stop apologizing for needing or wanting it."
+        },
+        {
+          "q": "Scripture shows us Jonathan loving David as his own soul and Ruth refusing to leave Naomi. What do those bonds have that our church acquaintances usually do not?",
+          "behind": "Press on the depth of the biblical friendships, the loyalty, the cost, the refusal to leave. The aim is to contrast covenant friendship with the disposable connection we settle for, and to make the room hungry for the deeper thing rather than content with the shallow."
+        },
+        {
+          "q": "Bell takes the objection that we are simply too busy now for real friendship. What is true in that, and where is busyness actually a cover for the fact that we have not made friendship a priority?",
+          "behind": "Hold both halves. The schedule really is brutal and time really is scarce. But we find time for what we treasure, and busyness is often the respectable name we give to misplaced priorities. Help the room own the choosing under the busyness without piling on guilt."
+        },
+        {
+          "q": "Bell admits that as a pastor he has been surrounded by people and starved of friends, and has let friendships lapse because they could not be scheduled. Where have you let a friendship quietly die because it was not urgent?",
+          "behind": "Close with self-implication. Friendship dies not by decision but by neglect, the slow failure to show up. Go first, name a friendship you let lapse. The point is honest grief over what we let slip, and a small resolve to show up again, not a guilt trip."
+        }
       ],
       "objections": [
-        { "objection": "Friendship is a private, personal thing, and frankly a bit sentimental. The church has more serious work to do, preaching, mission, discipleship. Making friends is nice but it is not the church's job and not a spiritual priority.", "response": "Grant the real concern, because the church is not a friendship club and a congregation that exists only to meet social needs has lost the plot. Friendship is not the gospel. Then weigh what Scripture actually does with the word. Jesus, on the last night of his life, does not call his disciples his students, his subjects, or his staff. He calls them his friends, and stakes the word on the cross, since no one has greater love than to lay down his life for his friends. David and Jonathan, Ruth and Naomi, Paul and his named companions, the Bible treats deep friendship as a serious good and a form of covenant loyalty, not a sentimental extra. A church that has decided friendship is beneath its dignity has decided something Jesus did not. The mission is not served by a body of strangers. It is carried by friends." },
-        { "objection": "People are just too busy now. Between work and kids and everything else, nobody has time for the kind of slow friendship you are describing. It is a luxury of a slower age, and it is unrealistic to expect it from modern adults.", "response": "Bell grants that the modern schedule is genuinely brutal and that time for friendship is scarce in a way it was not for our grandparents. The pressure is real and the leader should not wave it away. Then he presses the gentle, uncomfortable truth. We are almost never too busy for what we actually treasure. We find the hours for the things we have decided matter, the screen, the side project, the second job, the hobby, and we plead no time only for the things we have quietly demoted. Busyness is often the respectable name we give to a priority we are unwilling to name out loud. Friendship did not die because the calendar killed it. It died because we stopped choosing it, and the calendar gave us a blameless story to tell about the choosing." }
+        {
+          "objection": "Friendship is a private, personal thing, and frankly a bit sentimental. The church has more serious work to do, preaching, mission, discipleship. Making friends is nice but it is not the church's job and not a spiritual priority.",
+          "response": "Grant the real concern, because the church is not a friendship club and a congregation that exists only to meet social needs has lost the plot. Friendship is not the gospel. Then weigh what Scripture actually does with the word. Jesus, on the last night of his life, does not call his disciples his students, his subjects, or his staff. He calls them his friends, and stakes the word on the cross, since no one has greater love than to lay down his life for his friends. David and Jonathan, Ruth and Naomi, Paul and his named companions, the Bible treats deep friendship as a serious good and a form of covenant loyalty, not a sentimental extra. A church that has decided friendship is beneath its dignity has decided something Jesus did not. The mission is not served by a body of strangers. It is carried by friends."
+        },
+        {
+          "objection": "People are just too busy now. Between work and kids and everything else, nobody has time for the kind of slow friendship you are describing. It is a luxury of a slower age, and it is unrealistic to expect it from modern adults.",
+          "response": "Bell grants that the modern schedule is genuinely brutal and that time for friendship is scarce in a way it was not for our grandparents. The pressure is real and the leader should not wave it away. Then he presses the gentle, uncomfortable truth. We are almost never too busy for what we actually treasure. We find the hours for the things we have decided matter, the screen, the side project, the second job, the hobby, and we plead no time only for the things we have quietly demoted. Busyness is often the respectable name we give to a priority we are unwilling to name out loud. Friendship did not die because the calendar killed it. It died because we stopped choosing it, and the calendar gave us a blameless story to tell about the choosing."
+        }
       ],
       "quietRoomQuestion": "Who is the friend you have let drift, the one you keep meaning to call, and what would it cost you, really, to pick up the phone this week and not let it die?",
       "practice": "This week, reach out to one person with no agenda other than the friendship itself, no event to invite them to, no favor to ask, no business to transact. Call them, or better, sit with them, and stay long enough to get past the update into the actual person. Do it again next week with the same person, because friendship is built by repetition, not by a single gesture. Write down what it cost you to make the time, and whether it was worth it.",
@@ -118,17 +276,41 @@
       ],
       "teaching": "Somewhere along the way, without ever quite deciding it out loud, the church concluded that friendship was a private matter, a pleasant personal accident, not really part of its serious work, and we have lived with the result long enough to stop noticing it. Our congregations are full of acquaintances and nearly empty of friends. People who have sat three pews apart for fifteen years and could not tell you the name of each other's children. Warmth without depth. Activity without intimacy. So the question for this session cuts close. Is friendship actually a spiritual good, something the church should care about and cultivate, or is it just a nice thing that happens to some people and not others, beneath the dignity of doctrine and mission. We treat it as the second. Scripture treats it as the first, and emphatically. It gives us Jonathan, the king's son, loving David, the man who would take his throne, as his own soul, stripping off his own robe and sword and giving them away in a covenant of loyalty that cost Jonathan everything and gained him nothing but the friend. It gives us Ruth, refusing to leave Naomi, a widow with nothing to offer, with words so weighty we read them at weddings though they were spoken between two grieving women. And it gives us the staggering scene in the upper room, where Jesus, on the last night of his life, looks at the men who will abandon him before dawn and says he no longer calls them servants. He calls them friends. The Lord of glory, choosing that word. Now take the two objections at full strength. The first says friendship is too thin a thing for the church to bother with, sentimental, soft, optional, a distraction from the weighty business of preaching and discipleship and mission. And there is truth in it. Friendship is not the gospel. A church that becomes merely a club for lonely people to find companionship has lost its center and forgotten its Lord. Grant that. But then weigh what Jesus actually did with the word. He did not call his disciples his students, though he taught them. He did not call them his servants, though they served him. He did not call them his staff. On the last night, he called them his friends, and he immediately defined the word at the highest possible cost, that no one has greater love than to lay down his life for his friends, and then he went and did exactly that. Friendship is not beneath the dignity of the church, because Christ chose it to describe what he came to make of us, and he proved the word on a cross. The second objection is more modern and more sympathetic. It says we are simply too busy now. Between work and children and the relentless schedule of modern life, nobody has the hours for the slow, unhurried friendship you are describing. It is a luxury of a slower age. And the leader must grant that the pressure is real, that our grandparents had a leisure and a rootedness we do not, that time really is scarce. But then comes the uncomfortable truth, and it has to be said gently because it implicates all of us. We are almost never too busy for what we actually treasure. We find the hours. We find them for the screen and the hobby and the side hustle and the thing we have decided matters. We plead no time only for the things we have quietly demoted in our hearts. Busyness is usually not the cause of our friendlessness. It is the respectable, blameless story we tell about a choice we did not want to admit we were making. Friendship did not die because the calendar killed it. It died because we stopped choosing it. And I have to stand inside this one with particular shame, because I am a pastor, which means I am surrounded by people every single day and have been starved for actual friends for years. I know hundreds of people. I am known by almost none of them, and a good deal of that is my own doing, because I have let friendship after friendship lapse, not by any decision, never by a decision, but by the slow neglect of the thing that was never urgent enough to make the calendar. That is how friendship dies. Not in a fight. In a series of weeks where you meant to call and did not. So how is it actually built, if not by events and not by programs. The hard and unglamorous answer is time. Repetition. Showing up, again and again, across months and years, for no reason and no agenda but the person. Friendship is the one thing the church cannot manufacture with a sign-up sheet, because it is not produced by a gathering. It is produced by the accumulation of ordinary, unhurried, unscheduled presence, the same faces at the same tables long enough that the performance wears off and the real person finally appears. We let that die because it could not be scheduled and could not be measured and did not show up in any attendance report. And the church, of all places, the body of the Friend who laid down his life for his friends, should have known better. It is not too late to choose it again. But choosing is exactly what it will take.",
       "scriptureStudy": [
-        { "ref": "John 15:13-15", "note": "Greater love has no one than this, that someone lay down his life for his friends, no longer do I call you servants but friends. Jesus defines friendship at the cost of his own life and then claims the word for his disciples, dignifying friendship as a thing worth dying for." },
-        { "ref": "1 Samuel 18:1-3", "note": "The soul of Jonathan was knit to the soul of David, and he loved him as his own soul, and made a covenant with him. Friendship in Scripture is covenantal and costly, Jonathan binding himself to the very man who threatens his throne, loyalty over self-interest." },
-        { "ref": "1 Samuel 23:16", "note": "Jonathan went to David and strengthened his hand in God. The work of a friend is named plainly, to come to the discouraged and strengthen his hand in God, the precise ministry the lonely church member never receives." },
-        { "ref": "Ruth 1:16-17", "note": "Where you go I will go, where you lodge I will lodge, your people shall be my people. A vow of covenant loyalty between two grieving widows, friendship that refuses to leave when there is nothing left to gain, the opposite of disposable connection." },
-        { "ref": "Proverbs 17:17", "note": "A friend loves at all times, and a brother is born for adversity. The test of friendship is not the easy season but the hard one, the friend who is present precisely when a person falls, which Ecclesiastes warned the lonely would lack." },
-        { "ref": "Proverbs 27:6", "note": "Faithful are the wounds of a friend, profuse are the kisses of an enemy. Real friendship is willing to wound, to tell the truth, which acquaintance never risks, marking the difference between the friend who knows you and the crowd that flatters you." },
-        { "ref": "Ecclesiastes 4:12", "note": "A threefold cord is not quickly broken. The Preacher commends the strength of bound lives, the friendship and partnership that holds under pressure a single strand never could, the practical case for refusing to live alone." }
+        {
+          "ref": "John 15:13-15",
+          "note": "Greater love has no one than this, that someone lay down his life for his friends, no longer do I call you servants but friends. Jesus defines friendship at the cost of his own life and then claims the word for his disciples, dignifying friendship as a thing worth dying for."
+        },
+        {
+          "ref": "1 Samuel 18:1-3",
+          "note": "The soul of Jonathan was knit to the soul of David, and he loved him as his own soul, and made a covenant with him. Friendship in Scripture is covenantal and costly, Jonathan binding himself to the very man who threatens his throne, loyalty over self-interest."
+        },
+        {
+          "ref": "1 Samuel 23:16",
+          "note": "Jonathan went to David and strengthened his hand in God. The work of a friend is named plainly, to come to the discouraged and strengthen his hand in God, the precise ministry the lonely church member never receives."
+        },
+        {
+          "ref": "Ruth 1:16-17",
+          "note": "Where you go I will go, where you lodge I will lodge, your people shall be my people. A vow of covenant loyalty between two grieving widows, friendship that refuses to leave when there is nothing left to gain, the opposite of disposable connection."
+        },
+        {
+          "ref": "Proverbs 17:17",
+          "note": "A friend loves at all times, and a brother is born for adversity. The test of friendship is not the easy season but the hard one, the friend who is present precisely when a person falls, which Ecclesiastes warned the lonely would lack."
+        },
+        {
+          "ref": "Proverbs 27:6",
+          "note": "Faithful are the wounds of a friend, profuse are the kisses of an enemy. Real friendship is willing to wound, to tell the truth, which acquaintance never risks, marking the difference between the friend who knows you and the crowd that flatters you."
+        },
+        {
+          "ref": "Ecclesiastes 4:12",
+          "note": "A threefold cord is not quickly broken. The Preacher commends the strength of bound lives, the friendship and partnership that holds under pressure a single strand never could, the practical case for refusing to live alone."
+        }
       ],
       "goingDeeper": "Take up the long Christian and classical tradition that took friendship with a seriousness we have entirely lost, because the modern demotion of friendship is a recent and strange thing. The ancient world ranked friendship among the highest goods of a human life, and the philosophers wrote whole treatises distinguishing the friendship of mere utility, which lasts only as long as it is useful, and the friendship of pleasure, which lasts only as long as it is fun, from the true friendship of shared virtue, in which two people are bound by a common love of the good and a genuine care for each other's souls. The church did not discard this. It baptized it. The medieval monk Aelred of Rievaulx wrote a famous treatise on spiritual friendship, daring to read the line that God is love as a warrant for saying, with care, that God is friendship, and treating the deep bond between Christian friends as a school of love that trains the soul for the love of God. Set this against the modern condition, in which friendship has been pushed to the margins, ranked below romance and family and career, treated as the relationship you get to only after the important obligations are met, the first thing cut when life gets full. A serious group should weigh what we lost when we demoted friendship from a central good to a leftover, and should ask whether the church, which once produced and prized deep spiritual friendship, has simply absorbed the culture's ranking without noticing. The discipline is to recover friendship as a serious calling and a means of grace, worth the time and the cost that every previous Christian century assumed it deserved.",
       "caseStudy": "Consider two men who met in a church small group at thirty and clicked, the kind of easy friendship that seems like it will last. For a few years it did. They got coffee, talked honestly, prayed together, knew each other's marriages and fears. Then one changed jobs, the other had a third child, both got busier, and the coffees thinned from weekly to monthly to a text on a birthday. Neither ever decided to end it. There was no falling out, no offense, nothing to forgive. It simply died of neglect, the way nearly all adult friendships die, in a long series of weeks where each of them meant to reach out and the week filled up first. Twelve years later they greet each other warmly across the lobby, two men who were once truly known to each other and are now, functionally, acquaintances who share a history. Ask the group to sit with how ordinary and how avoidable this is, and to test the session's claim that friendship is not killed by busyness so much as by the quiet failure to prioritize it. Then ask the harder, more personal question. Which friendship of their own is currently dying this exact death, and what single, unscheduled act of showing up this week could begin to reverse it.",
-      "memoryVerse": { "ref": "John 15:15", "text": "No longer do I call you servants, for the servant does not know what his master is doing, but I have called you friends." }
+      "memoryVerse": {
+        "ref": "John 15:15",
+        "text": "No longer do I call you servants, for the servant does not know what his master is doing, but I have called you friends."
+      }
     },
     {
       "n": 4,
@@ -136,18 +318,55 @@
       "title": "One Another",
       "aim": "To take the dozens of one another commands as the New Testament's actual job description for the church, and to see that hospitality and the bearing of one another's burdens are not optional kindnesses but the commanded shape of belonging.",
       "summary": "The New Testament gives the church a long list of instructions it almost never preaches, the one another commands. Love one another, bear one another's burdens, confess your sins to one another, welcome one another, weep with those who weep. There are dozens of them, and together they are the actual job description for the body of Christ. The first question is why a church that prides itself on biblical fidelity so consistently ignores the most repeated practical commands in its own Scriptures. Bell takes the strong form of two objections. The first is that these are general ideals, attitudes of love, not literal obligations, that we cannot possibly do all of them for everyone, and it is right that they are not a checklist to perform mechanically. The second is that this is the job of the professionals, the pastors and the staff, who are paid to bear burdens and offer care, and it is right that leaders carry a particular responsibility. Bell will not let either win. The commands are not vague ideals, which refutes the first, because they describe specific actions, opening a home, carrying a weight, confessing a sin, things you do, not merely feel. And they are not the staff's job, which refutes the second, because every one of them is addressed to the whole church, one another, not to a class of professionals. The turn is that two of them, hospitality, the opening of your actual home, and burden-bearing, the carrying of a weight that is not yours, are the precise antidotes to the loneliness this study has named. We are lonely because we have outsourced to a paid staff and a public building the one another that was always meant to be ours.",
-      "keyScripture": { "ref": "Galatians 6:2", "why": "Bear one another's burdens, and so fulfill the law of Christ, naming the carrying of each other's weights not as a kindness but as the very fulfillment of Christ's law, which makes the lonely church, where everyone carries alone, a place that is breaking the law of Christ." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Galatians 6:2",
+        "why": "Bear one another's burdens, and so fulfill the law of Christ, naming the carrying of each other's weights not as a kindness but as the very fulfillment of Christ's law, which makes the lonely church, where everyone carries alone, a place that is breaking the law of Christ."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "The New Testament gives dozens of one another commands. Why do you think a church that prides itself on taking the Bible seriously so rarely actually preaches or practices them?", "behind": "Open on the strange gap before the content. We will obey commands about belief and morality and skip the ones about one another. The aim is to surface the inconsistency honestly, so the room feels the weight of having quietly ignored some of the most repeated commands in the New Testament." },
-        { "q": "Paul says bearing one another's burdens fulfills the law of Christ. What does it do to your sense of community to hear that carrying each other is not a nice extra but a command we are breaking when we leave people alone?", "behind": "Move the room from sentiment to obligation. We treat burden-bearing as optional generosity. Paul treats it as law. The aim is to let people feel that the lonely church is not merely cold but disobedient, which raises the stakes past good intentions into actual command." },
-        { "q": "Hospitality in the New Testament means opening your actual home, not hosting a church event. What is the difference, and why have we replaced the home with the building?", "behind": "Press on the location again, as in session two. The command is to open your house, and we have substituted a public hall and a paid staff. The aim is to recover hospitality as a personal, costly opening of your own space, and to notice what we lost when we delegated it to the building." },
-        { "q": "Bell takes the objection that bearing burdens and offering care is the pastors job, what we pay the staff for. What is true in that, and where have you used it to excuse yourself from the one another commands?", "behind": "Hold both halves. Leaders do carry particular responsibility. But the commands are addressed to one another, the whole church, not a professional class. Help the room see where they have quietly outsourced their own obedience to the staff, and own it without crushing the leaders in the room." },
-        { "q": "Bell confesses he has let his congregation believe that care is the staff's department, building a machine that let everyone else off the hook. Where have you waited for someone official to notice a need you could have met yourself?", "behind": "Close with self-implication, and aim it at leaders and members alike. We have all assumed someone else would carry it. Go first, name a need you saw and left for the professionals. The point is to reclaim the one another as personally yours, gently, not to assign blame." }
+        {
+          "q": "The New Testament gives dozens of one another commands. Why do you think a church that prides itself on taking the Bible seriously so rarely actually preaches or practices them?",
+          "behind": "Open on the strange gap before the content. We will obey commands about belief and morality and skip the ones about one another. The aim is to surface the inconsistency honestly, so the room feels the weight of having quietly ignored some of the most repeated commands in the New Testament."
+        },
+        {
+          "q": "Paul says bearing one another's burdens fulfills the law of Christ. What does it do to your sense of community to hear that carrying each other is not a nice extra but a command we are breaking when we leave people alone?",
+          "behind": "Move the room from sentiment to obligation. We treat burden-bearing as optional generosity. Paul treats it as law. The aim is to let people feel that the lonely church is not merely cold but disobedient, which raises the stakes past good intentions into actual command."
+        },
+        {
+          "q": "Hospitality in the New Testament means opening your actual home, not hosting a church event. What is the difference, and why have we replaced the home with the building?",
+          "behind": "Press on the location again, as in session two. The command is to open your house, and we have substituted a public hall and a paid staff. The aim is to recover hospitality as a personal, costly opening of your own space, and to notice what we lost when we delegated it to the building."
+        },
+        {
+          "q": "Bell takes the objection that bearing burdens and offering care is the pastors job, what we pay the staff for. What is true in that, and where have you used it to excuse yourself from the one another commands?",
+          "behind": "Hold both halves. Leaders do carry particular responsibility. But the commands are addressed to one another, the whole church, not a professional class. Help the room see where they have quietly outsourced their own obedience to the staff, and own it without crushing the leaders in the room."
+        },
+        {
+          "q": "Bell confesses he has let his congregation believe that care is the staff's department, building a machine that let everyone else off the hook. Where have you waited for someone official to notice a need you could have met yourself?",
+          "behind": "Close with self-implication, and aim it at leaders and members alike. We have all assumed someone else would carry it. Go first, name a need you saw and left for the professionals. The point is to reclaim the one another as personally yours, gently, not to assign blame."
+        }
       ],
       "objections": [
-        { "objection": "The one another commands are general ideals, a spirit of love we are supposed to have. You cannot literally bear everyone's burdens or open your home to the whole church. Treating them as a checklist is legalism and is impossible anyway.", "response": "Grant the real point, because these are not a mechanical checklist and no one can do all of them for all people, and a person who tried would collapse. The commands assume a body where the load is distributed, not a hero who carries everyone. Then refuse the dodge hidden in the word ideal. Bear one another's burdens is not a vague attitude, it is a specific action, the carrying of a particular weight for a particular person. Open your home is not a feeling, it is a door you open and a table you set. Confess your sins to one another is not a disposition, it is words you say to a face. When we call these ideals, we usually mean we intend to feel warmly toward people in general while doing none of the concrete things the commands actually name. The generality is the escape hatch. Scripture closes it by being specific." },
-        { "objection": "Caring for people, bearing burdens, visiting the struggling, that is what we pay the pastors and the staff for. It is their job. They are trained and they have the time. The rest of us have our own lives to manage.", "response": "Bell grants that leaders carry a particular and real responsibility, that pastors are called to shepherd and that some burdens genuinely require a trained and available shepherd. The objection is not all wrong. Then he names the fatal flaw in it. Every single one of the one another commands is addressed to one another, to the whole body of believers, not to a class of professionals. Paul does not write bear one another's burdens, staff. He writes it to the church. The moment a congregation decides that care is the paid staff's department, it has unscripturally created a small group of people who do the loving and a large group of people who receive it, which is not a body but a service. And it guarantees loneliness, because no staff of any size can know and carry a whole congregation. The one another was always meant to be done by one another. We outsourced it, and then wondered why we felt alone." }
+        {
+          "objection": "The one another commands are general ideals, a spirit of love we are supposed to have. You cannot literally bear everyone's burdens or open your home to the whole church. Treating them as a checklist is legalism and is impossible anyway.",
+          "response": "Grant the real point, because these are not a mechanical checklist and no one can do all of them for all people, and a person who tried would collapse. The commands assume a body where the load is distributed, not a hero who carries everyone. Then refuse the dodge hidden in the word ideal. Bear one another's burdens is not a vague attitude, it is a specific action, the carrying of a particular weight for a particular person. Open your home is not a feeling, it is a door you open and a table you set. Confess your sins to one another is not a disposition, it is words you say to a face. When we call these ideals, we usually mean we intend to feel warmly toward people in general while doing none of the concrete things the commands actually name. The generality is the escape hatch. Scripture closes it by being specific."
+        },
+        {
+          "objection": "Caring for people, bearing burdens, visiting the struggling, that is what we pay the pastors and the staff for. It is their job. They are trained and they have the time. The rest of us have our own lives to manage.",
+          "response": "Bell grants that leaders carry a particular and real responsibility, that pastors are called to shepherd and that some burdens genuinely require a trained and available shepherd. The objection is not all wrong. Then he names the fatal flaw in it. Every single one of the one another commands is addressed to one another, to the whole body of believers, not to a class of professionals. Paul does not write bear one another's burdens, staff. He writes it to the church. The moment a congregation decides that care is the paid staff's department, it has unscripturally created a small group of people who do the loving and a large group of people who receive it, which is not a body but a service. And it guarantees loneliness, because no staff of any size can know and carry a whole congregation. The one another was always meant to be done by one another. We outsourced it, and then wondered why we felt alone."
+        }
       ],
       "quietRoomQuestion": "Whose burden in your church do you already know about, the struggle you have heard of and quietly hoped someone official would handle, that God might actually be asking you to help carry?",
       "practice": "This week, do one concrete one another, not in general but for one specific person. Carry an actual burden, a meal cooked, a debt of time paid, a hard conversation sat through, or open your actual home to someone who would otherwise be alone. Choose a real person and a real action, not a warm feeling. Then write down what it cost you and whether the person seemed, even slightly, less alone for it.",
@@ -159,17 +378,41 @@
       ],
       "teaching": "The New Testament hands the church a long list of instructions that we, for all our talk of biblical fidelity, almost never preach and even more rarely obey. They are the one another commands. Love one another. Bear one another's burdens. Confess your sins to one another. Welcome one another as Christ welcomed you. Weep with those who weep, rejoice with those who rejoice. Encourage one another, build one another up, be patient with one another, forgive one another, serve one another, show hospitality to one another. There are dozens of them scattered across the letters, and they are not throwaway lines. Taken together, they are the actual job description for the body of Christ, the specific shape that love is supposed to take among the people of God. So the first question is an uncomfortable one for a church that prides itself on Scripture. Why do we so consistently ignore some of the most frequently repeated practical commands in the entire New Testament. We will preach hard on doctrine and morality and faithfully obey commands about belief and sexual ethics and tithing, and then treat bear one another's burdens as a nice sentiment we are free to take or leave. Take the two objections that defend the neglect, at full strength. The first says these are general ideals, an attitude of love we are meant to carry, not literal obligations, and besides, no one could possibly do all of them for everyone, so treating them as a checklist would be exhausting legalism. And there is real truth here. They are not a mechanical checklist, and no single person can bear every burden in a congregation, and the commands clearly assume a body in which the load is spread across many shoulders, not piled on one. A person who tried to personally carry everyone would break. Grant all of that. But then notice the escape hatch hiding inside the word ideal, because it is where most of us live. Bear one another's burdens is not a vague disposition. It is a specific action, the literal carrying of a particular weight for a particular person, sitting in the hospital, paying the bill, taking the kids, absorbing the cost. Show hospitality is not a warm feeling toward humanity. It is a door you open and a meal you set in your own home. Confess your sins to one another is not a general attitude of humility. It is words you say out loud to an actual face. When we call these commands ideals, what we almost always mean is that we intend to feel kindly toward people in the abstract while doing none of the concrete things the commands actually name. The generality is the dodge, and Scripture closes the dodge by being relentlessly specific. The second objection is the one that runs our churches whether we say it or not. It says that caring for people, bearing burdens, visiting the struggling, noticing the lonely, is what we pay the pastors and the staff to do. It is their job. They are trained, they have the time, that is what the salary is for. And the leader must grant a real piece of this, because pastors do carry a particular responsibility to shepherd, and some burdens genuinely require a trained, available, accountable shepherd, and it is right that leaders bear more here. But the objection has a fatal flaw, and it is the engine of the loneliness this whole study has been naming. Every single one of the one another commands is addressed to one another, to the whole body, to the ordinary members, not to a professional class. Paul does not write bear one another's burdens, pastoral staff. He writes it to the entire church at Galatia. The moment a congregation decides that the care is the staff's department, it has invented something the New Testament knows nothing of, a small group of professional lovers and a large group of paying recipients, which is not a body at all but a service you consume. And it guarantees loneliness mathematically, because no staff of any size, however gifted and however tireless, can possibly know and carry a whole congregation. Five people cannot bear the burdens of five hundred. The one another was always meant to be done by one another. And here I have to confess my own part as a pastor, because I have helped build exactly this machine. I have, by what I emphasized and what I let slide, allowed my congregation to believe that care is what the church staff does, that if someone is struggling they will call the office, that noticing and carrying and welcoming is a service we provide rather than a command we all obey. I built a system efficient enough to let everyone else off the hook for one another, myself included, and then I stood in my own lonely building and wondered why no one knew anyone. So bring it down to the two commands that are the precise antidote to everything we have named. Hospitality, the opening of your own actual home, not the hosting of a church event in a rented hall, but the opening of your door and the setting of your table for someone who would otherwise eat alone. And burden-bearing, the carrying of a weight that is not yours, the deliberate taking onto your own shoulders of a load God never asked you to carry alone but did ask the body to share. Paul says that this, the bearing of one another's burdens, fulfills the law of Christ. Sit with the weight of that. It means the lonely church, the church where everyone carries everything alone and no one's home is ever open and care is a department, is not merely a cold church or an awkward church. It is a church breaking the law of Christ. We are lonely because we outsourced to a paid staff and a public building the one another that was always, from the beginning, meant to be ours.",
       "scriptureStudy": [
-        { "ref": "Galatians 6:2", "note": "Bear one another's burdens, and so fulfill the law of Christ. Carrying each other is not optional generosity, it is the fulfilling of Christ's own law, which makes a church of people carrying alone a place that is disobeying him, not merely lacking warmth." },
-        { "ref": "Romans 12:15", "note": "Rejoice with those who rejoice, weep with those who weep. The command requires knowing people well enough to know what they are weeping about, which a congregation of strangers cannot do, so the command itself demands the very intimacy we avoid." },
-        { "ref": "James 5:16", "note": "Confess your sins to one another and pray for one another, that you may be healed. Confession is commanded toward one another, not only toward God or a priest, and healing is tied to being known in our sin by another person, the opposite of performing fine." },
-        { "ref": "1 Peter 4:9", "note": "Show hospitality to one another without grumbling. Hospitality is commanded of every believer toward every believer, the opening of homes, and the warning against grumbling shows Peter knew it would cost us something real." },
-        { "ref": "Hebrews 10:24-25", "note": "Consider how to stir up one another to love and good works, not neglecting to meet together. The meeting together is for the stirring up of one another, which means attendance without mutual stirring misses the very point of gathering." },
-        { "ref": "Romans 15:7", "note": "Welcome one another as Christ has welcomed you. The measure of our welcome is the welcome of Christ, who received us when we were strangers and enemies, which sets the bar for hospitality impossibly high and gloriously personal." },
-        { "ref": "Ephesians 4:16", "note": "When each part is working properly, the body grows and builds itself up in love. Paul says the body builds itself up only when each part works, not when a few professionals do the work, which is the death sentence on outsourced care." }
+        {
+          "ref": "Galatians 6:2",
+          "note": "Bear one another's burdens, and so fulfill the law of Christ. Carrying each other is not optional generosity, it is the fulfilling of Christ's own law, which makes a church of people carrying alone a place that is disobeying him, not merely lacking warmth."
+        },
+        {
+          "ref": "Romans 12:15",
+          "note": "Rejoice with those who rejoice, weep with those who weep. The command requires knowing people well enough to know what they are weeping about, which a congregation of strangers cannot do, so the command itself demands the very intimacy we avoid."
+        },
+        {
+          "ref": "James 5:16",
+          "note": "Confess your sins to one another and pray for one another, that you may be healed. Confession is commanded toward one another, not only toward God or a priest, and healing is tied to being known in our sin by another person, the opposite of performing fine."
+        },
+        {
+          "ref": "1 Peter 4:9",
+          "note": "Show hospitality to one another without grumbling. Hospitality is commanded of every believer toward every believer, the opening of homes, and the warning against grumbling shows Peter knew it would cost us something real."
+        },
+        {
+          "ref": "Hebrews 10:24-25",
+          "note": "Consider how to stir up one another to love and good works, not neglecting to meet together. The meeting together is for the stirring up of one another, which means attendance without mutual stirring misses the very point of gathering."
+        },
+        {
+          "ref": "Romans 15:7",
+          "note": "Welcome one another as Christ has welcomed you. The measure of our welcome is the welcome of Christ, who received us when we were strangers and enemies, which sets the bar for hospitality impossibly high and gloriously personal."
+        },
+        {
+          "ref": "Ephesians 4:16",
+          "note": "When each part is working properly, the body grows and builds itself up in love. Paul says the body builds itself up only when each part works, not when a few professionals do the work, which is the death sentence on outsourced care."
+        }
       ],
       "goingDeeper": "Take up Dietrich Bonhoeffer's Life Together, written out of his experience leading an illegal seminary community under the shadow of the Nazi regime, because no modern voice has thought more searchingly about the one another than Bonhoeffer did when Christian community was a costly and endangered thing. Bonhoeffer warned against what he called the wish dream of community, the idealized picture of fellowship we carry in our heads, and argued that the person who loves their dream of community more than the actual flawed people in front of them will destroy the real community every time, demanding from it a perfection it can never deliver. He insisted instead that Christian community is not an ideal we achieve but a reality created by Christ that we receive, that we are bound to one another only through and in Jesus, never directly on the basis of liking one another. Set beside this his treatment of confession and of bearing the burden of the other, where he argued that to be in genuine community is to bear the very real burden of another person, their freedom, their weakness, their otherness, and that a fellowship that cannot bear this is not Christian fellowship at all. A serious group should weigh Bonhoeffer's hardest claim, that we must let the other person be a burden to us and not resent it, against our own preference for a community that is pleasant and undemanding, and should ask whether our loneliness is partly the bill come due for wanting the fellowship without its weight. The discipline is to receive the actual people God has given us, with their burdens, as the gift and the obedience, rather than holding out for an ideal community that would never require anything of us.",
       "caseStudy": "Consider an older widower in a large, well-run church who falls and breaks a hip and spends six weeks largely housebound. The church has a care system. There is a form to fill out, a coordinator who assigns meals, a deacon who makes a visit, and all of it functions, technically. He gets a casserole from a roster of people he does not know, dropped at the door by someone in a hurry, and a fifteen minute pastoral visit that is kind and a little formal. The machine works. And he is desperately lonely the entire time, because what he needed was not a delivered meal from a stranger on a schedule but a friend who would sit with him for an evening, and the very efficiency of the care system had taught the whole congregation that caring for him was a department's job and not theirs. No individual did anything wrong. The system did exactly what it was built to do, and that was the problem. Contrast a smaller church with no care system at all, where the man's actual neighbors in the pew simply showed up, repeatedly, because they knew him and no committee was going to do it for them. Use this to press the session's hard claim, that outsourcing the one another to a professional staff and a smooth process guarantees loneliness, and to ask the group where their own church's competence has quietly let the members off the hook for one another, and where they have personally waited for someone official to carry a burden they could have carried themselves.",
-      "memoryVerse": { "ref": "Galatians 6:2", "text": "Bear one another's burdens, and so fulfill the law of Christ." }
+      "memoryVerse": {
+        "ref": "Galatians 6:2",
+        "text": "Bear one another's burdens, and so fulfill the law of Christ."
+      }
     },
     {
       "n": 5,
@@ -177,18 +420,55 @@
       "title": "From Attendance to Belonging",
       "aim": "To bring the whole study to the long, unglamorous work of moving from being present to being known, and to ground that work not in a technique we master but in the God who knows us fully and binds us into one body in Christ.",
       "summary": "Everything in this study comes down to one distance, the distance between attending a church and belonging to it. The first is easy and the second is costly, and most of us have settled for the first because the second asks for the one thing we are most afraid to give, which is to be known. The first question is what belonging actually requires, because we keep hoping it can be arranged for us, and it cannot. Bell takes the strong form of two objections. The first is that this is just asking lonely people to risk rejection, that being known sounds lovely until you have been known and abandoned, and it is right that to be known is to be vulnerable to being hurt. The second is that belonging cannot be commanded or manufactured, that you cannot make people a family by trying, and it is right that no program produces it and willpower cannot force it. Bell will not let either win. The risk is real, which honors the first, but the alternative to the risk of being known is the certainty of being alone, and that is the worse wound. And belonging is not manufactured, which honors the second, but it is the fruit of a thing already true, that in Christ we have been made one body, members of one another, whether we feel it or not. The turn, and the end of the study, is that we do not finally build belonging by our effort. We receive it. We are already members of one another in Christ. The work is not to construct the body but to start living as the body we have already been made, and to stop performing fine long enough to be known.",
-      "keyScripture": { "ref": "Romans 12:5", "why": "So we, though many, are one body in Christ, and individually members one of another, naming belonging not as something we achieve by effort but as a status already conferred in Christ, so that the lonely Christian is living against a reality that is already true of them." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Romans 12:5",
+        "why": "So we, though many, are one body in Christ, and individually members one of another, naming belonging not as something we achieve by effort but as a status already conferred in Christ, so that the lonely Christian is living against a reality that is already true of them."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "This whole study has circled the distance between attending a church and belonging to it. In your own words, what is the difference, and which one have you mostly settled for?", "behind": "Open by gathering the whole study into one distinction. Attendance is presence, belonging is being known. The aim is to let people name honestly where they have lived, usually in attendance, and to feel the cost of the gap without being shamed for it. Go first." },
-        { "q": "Bell says the one thing belonging asks for is the thing we are most afraid to give, which is to be known. Why is being known so frightening, even to people who are desperately lonely?", "behind": "Press on the fear under the loneliness. We want to be known and we are terrified of it at the same time, because to be known is to risk being known and rejected. The aim is to name that fear out loud, so the room sees the wall they build is made of fear, not indifference." },
-        { "q": "Paul says we are already one body in Christ, members one of another. How does it change the work of belonging to hear that it is not something you build from nothing but something already true that you start living into?", "behind": "Land the central reframe of the session. We try to manufacture belonging by effort. Paul says it is already conferred in Christ. The aim is to move the room from constructing the body to inhabiting it, from earning a place to occupying the one already given, which is rest, not pressure." },
-        { "q": "Bell takes the objection that being known just sets you up to be hurt. What is true in that, and why does he say the certainty of being alone is the worse wound than the risk of being known?", "behind": "Hold both halves. The risk of rejection is real and some in the room have lived it. But the safety of never being known is its own deeper wound, a slow one. Help the room weigh the two honestly, without dismissing anyone's scar, toward the choice to risk again." },
-        { "q": "Looking back over all five sessions, what is the one step toward being known you most need to take, and what has kept you, until now, from taking it?", "behind": "Close the whole study with self-implication and invitation. Do not resolve it. Invite each person, the leader first, to name the step and the fear behind it. The point is to send the room out toward being known, having counted the cost, not to tie a tidy bow on loneliness." }
+        {
+          "q": "This whole study has circled the distance between attending a church and belonging to it. In your own words, what is the difference, and which one have you mostly settled for?",
+          "behind": "Open by gathering the whole study into one distinction. Attendance is presence, belonging is being known. The aim is to let people name honestly where they have lived, usually in attendance, and to feel the cost of the gap without being shamed for it. Go first."
+        },
+        {
+          "q": "Bell says the one thing belonging asks for is the thing we are most afraid to give, which is to be known. Why is being known so frightening, even to people who are desperately lonely?",
+          "behind": "Press on the fear under the loneliness. We want to be known and we are terrified of it at the same time, because to be known is to risk being known and rejected. The aim is to name that fear out loud, so the room sees the wall they build is made of fear, not indifference."
+        },
+        {
+          "q": "Paul says we are already one body in Christ, members one of another. How does it change the work of belonging to hear that it is not something you build from nothing but something already true that you start living into?",
+          "behind": "Land the central reframe of the session. We try to manufacture belonging by effort. Paul says it is already conferred in Christ. The aim is to move the room from constructing the body to inhabiting it, from earning a place to occupying the one already given, which is rest, not pressure."
+        },
+        {
+          "q": "Bell takes the objection that being known just sets you up to be hurt. What is true in that, and why does he say the certainty of being alone is the worse wound than the risk of being known?",
+          "behind": "Hold both halves. The risk of rejection is real and some in the room have lived it. But the safety of never being known is its own deeper wound, a slow one. Help the room weigh the two honestly, without dismissing anyone's scar, toward the choice to risk again."
+        },
+        {
+          "q": "Looking back over all five sessions, what is the one step toward being known you most need to take, and what has kept you, until now, from taking it?",
+          "behind": "Close the whole study with self-implication and invitation. Do not resolve it. Invite each person, the leader first, to name the step and the fear behind it. The point is to send the room out toward being known, having counted the cost, not to tie a tidy bow on loneliness."
+        }
       ],
       "objections": [
-        { "objection": "All of this just amounts to telling lonely people to make themselves vulnerable and risk getting hurt again. Being known sounds wonderful until you have actually opened up and been rejected or betrayed. Maybe the wall is wisdom, not cowardice.", "response": "Bell honors this fully, because it is often the voice of someone who has been wounded and the leader must not bulldoze it. The risk is real. To be known is to hand someone the power to hurt you, and some people have used that power, and the scar is not imaginary. The wall was built for a reason. Then he weighs the two wounds against each other, gently. The risk of being known is the possibility of being hurt. The refusal to be known is the certainty of being alone, and aloneness is not a safe place, it is a slow wound that God himself called not good in a perfect garden. The wall does keep out the pain of rejection. It also keeps out every good thing, every friend, every burden shared, every moment of being truly seen and not abandoned. The question is not whether being known is safe. It is not. The question is whether the alternative is worse, and it is." },
-        { "objection": "You cannot manufacture belonging. You cannot make a group of people into a family by willpower or by trying hard, and all this talk of doing the work just turns community into one more thing to achieve and fail at. Either it happens or it does not.", "response": "Bell grants the real truth here, because belonging genuinely cannot be forced, no program produces it, and a community pursued as a project to complete usually dies of the pursuit. You are right that you cannot will a family into being. But notice what Paul actually says, because it changes the whole frame. He does not tell us to build a body from nothing by our effort. He tells us we already are one body in Christ, members one of another, a status conferred by our union with Jesus and not by our striving. The belonging is not something you manufacture. It is something already true of you that you have been failing to live as though it were true. The work is not construction, it is occupancy, the slow practice of actually inhabiting a togetherness Christ already created, which is a very different and much lighter thing than building belonging out of your own willpower." }
+        {
+          "objection": "All of this just amounts to telling lonely people to make themselves vulnerable and risk getting hurt again. Being known sounds wonderful until you have actually opened up and been rejected or betrayed. Maybe the wall is wisdom, not cowardice.",
+          "response": "Bell honors this fully, because it is often the voice of someone who has been wounded and the leader must not bulldoze it. The risk is real. To be known is to hand someone the power to hurt you, and some people have used that power, and the scar is not imaginary. The wall was built for a reason. Then he weighs the two wounds against each other, gently. The risk of being known is the possibility of being hurt. The refusal to be known is the certainty of being alone, and aloneness is not a safe place, it is a slow wound that God himself called not good in a perfect garden. The wall does keep out the pain of rejection. It also keeps out every good thing, every friend, every burden shared, every moment of being truly seen and not abandoned. The question is not whether being known is safe. It is not. The question is whether the alternative is worse, and it is."
+        },
+        {
+          "objection": "You cannot manufacture belonging. You cannot make a group of people into a family by willpower or by trying hard, and all this talk of doing the work just turns community into one more thing to achieve and fail at. Either it happens or it does not.",
+          "response": "Bell grants the real truth here, because belonging genuinely cannot be forced, no program produces it, and a community pursued as a project to complete usually dies of the pursuit. You are right that you cannot will a family into being. But notice what Paul actually says, because it changes the whole frame. He does not tell us to build a body from nothing by our effort. He tells us we already are one body in Christ, members one of another, a status conferred by our union with Jesus and not by our striving. The belonging is not something you manufacture. It is something already true of you that you have been failing to live as though it were true. The work is not construction, it is occupancy, the slow practice of actually inhabiting a togetherness Christ already created, which is a very different and much lighter thing than building belonging out of your own willpower."
+        }
       ],
       "quietRoomQuestion": "If you truly believed you were already a member of this body, already belonging in Christ before you earned it, what is the one true thing about your life you would finally let someone here know?",
       "practice": "This week, take one deliberate step from attendance toward belonging, and make it a step toward being known rather than toward knowing, because that is the harder direction. Tell one trustworthy person at your church one true thing you have been hiding behind the word fine, a fear, a struggle, a need. Do not over-explain it or apologize for it. Just let yourself be known by one person, once. Write down what you were afraid would happen, and what actually did.",
@@ -200,47 +480,143 @@
       ],
       "teaching": "Everything we have walked through in this study comes down, in the end, to a single distance, and it is the distance between two words we use as though they were the same and are not. Attending a church, and belonging to one. You can do the first for forty years without ever doing the second. Attendance is presence. You are in the room. You are counted. Belonging is something else entirely, and it is costly, and most of us have quietly settled for attendance precisely because belonging asks us for the one thing we are most afraid to give, which is to be known. So the question for this last session, the one all the others have been building toward, is what belonging actually requires, because we keep hoping, against all evidence, that it can be arranged for us, handed to us, programmed into existence by a sufficiently well-run church. It cannot. It never could. Take the two objections at full strength, because they are the honest fears that keep people in attendance and out of belonging. The first says that all of this finally amounts to telling lonely people to make themselves vulnerable and risk getting hurt again, that being known sounds beautiful in a study but feels very different after you have actually opened yourself to people and been rejected or betrayed by them. Maybe, this objection says, the wall is not cowardice. Maybe it is wisdom, hard-won. And the leader must honor this completely, because it is very often the voice of someone genuinely wounded, and to bulldoze it would be to wound them again. The risk is real. To be known is to hand another human being the power to hurt you, and some people have taken that power and used it, and the scar is not imaginary, and the wall was built for a reason that made sense at the time. Grant every bit of that. But then weigh the two wounds against each other, slowly, because this is the choice the whole study has been driving toward. The risk of being known is the possibility of being hurt. The refusal to be known is the certainty of being alone. And aloneness, we said in the very first session, is the one thing God called not good in a world he otherwise called good, before sin, before any pain. The wall does work. It does keep out the rejection. But it keeps out everything else too, every friend, every shared burden, every moment of being truly seen by someone who does not then leave. The question was never whether being known is safe, because it is not, and pretending otherwise would be a lie. The question is whether the alternative, the slow, certain, sanctioned wound of a life lived unknown, is worse. And it is. The second objection is subtler and almost the opposite. It says you cannot manufacture belonging, that no amount of willpower or trying or doing the work turns a group of strangers into a family, that all this talk just makes community into one more achievement to fail at, and that either it happens or it does not. And there is real truth here too. Belonging genuinely cannot be forced. No program produces it. A community chased as a project to complete usually collapses under the chasing, and the harder people try to manufacture intimacy the more it recedes. You cannot will a family into being. Grant it. But now hear what Paul actually says, because it dissolves the objection from underneath and it is the deepest word in this entire study. He does not tell us to build a body out of nothing by our own effort. He tells us we already are one. So we, though many, are one body in Christ, and individually members one of another. That is not a goal. It is a fact. It is a status already conferred on you the moment you were united to Christ, not earned by your striving, not contingent on your feeling it, not waiting on your success at community. If you belong to Jesus, you already belong to his body, and you already are a member of every other person who belongs to him, whether you have ever felt it or not. Which means the lonely Christian is in a strange and almost absurd position. You are living against a reality that is already true of you. You are sitting in a room full of people to whom you are, in Christ, already joined, members of one another, and behaving like a stranger. And this changes the whole nature of the work, and it is the rest at the end of all the labor. The work of belonging is not construction. You are not being asked to build a body from raw materials by the sweat of your own will, which would be exhausting and would fail. The work is occupancy. It is the slow, ordinary practice of actually inhabiting a togetherness that Christ has already created and handed to you as a gift. You do not have to earn your place. You have a place. You do not have to manufacture the family. You were adopted into one. The only thing left, and it is not small, but it is lighter than building, is to start living as the thing you already are, which means, finally, to stop performing fine long enough to be known. And I have to end inside this with you, not above it, because I am as practiced as anyone at attendance and as frightened as anyone of belonging. I have hidden behind my role, behind the busyness, behind the word fine, in the very building I pastor, surrounded by people I am, in Christ, already a member of, and let myself stay unknown because being known frightened me more than being alone. So this study does not end with a technique I have mastered and can hand you, and it does not end resolved, because loneliness this side of heaven does not get tied off with a bow. It ends with a fact and an invitation. The fact is that you already belong, that you are known all the way down by a God who sees what you hide and has not left, and that in Christ you have been made a member of a body, already, before you did anything to deserve it. The invitation is to lower one stone of the wall this week, to tell one true thing to one person, to take a single step from the safety of attending into the costly, glorious, terrifying reality of being known. You do not have to build the body. He built it on a cross. You only have to stop standing in it as a stranger.",
       "scriptureStudy": [
-        { "ref": "Romans 12:5", "note": "We, though many, are one body in Christ, and individually members one of another. Belonging is a status already conferred in Christ, not an achievement, which means the lonely believer is living against a reality already true of them rather than failing to construct one." },
-        { "ref": "1 Corinthians 12:26", "note": "If one member suffers, all suffer together, if one is honored, all rejoice together. Paul describes a body so joined that one member's pain is felt by all, the precise opposite of a congregation where a person can suffer for years entirely unnoticed." },
-        { "ref": "Psalm 139:1-4", "note": "O Lord, you have searched me and known me, you discern my thoughts from afar. Before any human knows us, God knows us fully, all the way down, which is the ground of courage for being known by people, since we are already known by the One who matters most." },
-        { "ref": "1 Corinthians 13:12", "note": "Now I know in part, then I shall know fully, even as I have been fully known. Paul names the deepest human longing, to be fully known, and locates its fulfillment in God who already knows us fully, the security from which we can risk being known by others." },
-        { "ref": "Ephesians 2:19", "note": "You are no longer strangers and aliens, but fellow citizens with the saints and members of the household of God. The gospel itself ends our estrangement, making the lonely believer a member of a household by Christ's work, not by their own belonging effort." },
-        { "ref": "John 17:21", "note": "That they may all be one, just as you, Father, are in me and I in you. Jesus prays for a oneness among his people that mirrors the oneness of the Trinity, which means our belonging to one another is meant to display the very life of God." },
-        { "ref": "1 John 4:19", "note": "We love because he first loved us. The capacity to risk being known and to know others flows from being first known and loved by God, so belonging is received before it is given, grace before effort." }
+        {
+          "ref": "Romans 12:5",
+          "note": "We, though many, are one body in Christ, and individually members one of another. Belonging is a status already conferred in Christ, not an achievement, which means the lonely believer is living against a reality already true of them rather than failing to construct one."
+        },
+        {
+          "ref": "1 Corinthians 12:26",
+          "note": "If one member suffers, all suffer together, if one is honored, all rejoice together. Paul describes a body so joined that one member's pain is felt by all, the precise opposite of a congregation where a person can suffer for years entirely unnoticed."
+        },
+        {
+          "ref": "Psalm 139:1-4",
+          "note": "O Lord, you have searched me and known me, you discern my thoughts from afar. Before any human knows us, God knows us fully, all the way down, which is the ground of courage for being known by people, since we are already known by the One who matters most."
+        },
+        {
+          "ref": "1 Corinthians 13:12",
+          "note": "Now I know in part, then I shall know fully, even as I have been fully known. Paul names the deepest human longing, to be fully known, and locates its fulfillment in God who already knows us fully, the security from which we can risk being known by others."
+        },
+        {
+          "ref": "Ephesians 2:19",
+          "note": "You are no longer strangers and aliens, but fellow citizens with the saints and members of the household of God. The gospel itself ends our estrangement, making the lonely believer a member of a household by Christ's work, not by their own belonging effort."
+        },
+        {
+          "ref": "John 17:21",
+          "note": "That they may all be one, just as you, Father, are in me and I in you. Jesus prays for a oneness among his people that mirrors the oneness of the Trinity, which means our belonging to one another is meant to display the very life of God."
+        },
+        {
+          "ref": "1 John 4:19",
+          "note": "We love because he first loved us. The capacity to risk being known and to know others flows from being first known and loved by God, so belonging is received before it is given, grace before effort."
+        }
       ],
       "goingDeeper": "Take up the theme of being fully known as it runs through Scripture and meets the modern epidemic of loneliness that public health voices now name a genuine crisis, because the gospel speaks to this ache at a depth no policy or program reaches. The Bible's storyline can be read as the long answer to the not-good of aloneness named in the garden, moving from a single estranged pair, through a people called out to belong to God and to one another, to a church described as a body and a household and a family, and finally to a city in which God dwells with his people and every form of estrangement is healed. Set against this the findings of the researchers and physicians who have measured modern isolation, who report that chronic loneliness damages the body as severely as long-term smoking, that more people than ever live alone and report having no one to confide in, that we are, by the numbers, the most connected and least known generation in history. The church should feel the weight of this twice over, first because it holds the deepest answer to the human longing to be known, and second because, as this study has confessed throughout, it has too often reproduced the very isolation the culture suffers rather than curing it. A serious group should weigh the staggering claim at the heart of the faith, that we are fully known by God, every hidden thing seen, and fully loved anyway, and should ask how a people who have received that knowing could possibly justify leaving one another unknown. The discipline is to let the vertical reality, that God knows us completely and has not turned away, become the courage and the pattern for the horizontal one, until the church becomes in fact what it already is in Christ, a place where no one has to be alone in the crowd.",
       "caseStudy": "Consider a man who has attended the same church for fifteen years and decides, finally, after a study much like this one, to do the one thing he has avoided the whole time, to tell another member a true thing. He stays after a gathering, and to a man he respects but does not know well, he says, plainly, that his marriage is failing and he has told no one and he is frightened. It is the most exposed he has been in that building in fifteen years, and his whole body braces for the awkwardness, the platitude, the quick verse, the change of subject. Instead the other man is quiet for a moment and then says, thank you for telling me, and sits back down, and they talk for an hour, and at the end the other man says, can I check on you Thursday. Nothing was solved. The marriage is still failing. But something fundamental shifted, because for the first time in fifteen years he was, in that building, actually known, and the thing he had been certain would cost him everything cost him almost nothing and gave him the only thing he had been missing the whole time. Use this with the group to land the study's final claim, that belonging is not built from nothing but is the fruit of a single risk repeated, the choice to stop performing fine and be known by one person. Then ask each person, gently, the leader first, what true thing they have been hiding, and who the one person might be, and what, exactly, they are afraid it would cost.",
-      "memoryVerse": { "ref": "Romans 12:5", "text": "So we, though many, are one body in Christ, and individually members one of another." }
+      "memoryVerse": {
+        "ref": "Romans 12:5",
+        "text": "So we, though many, are one body in Christ, and individually members one of another."
+      }
     }
   ],
   "leaderPrimer": "This study will be attended by the people it describes, and it will meet in the building that failed them. Hold that fact all five weeks. The woman who drives home from a full sanctuary unknown is not reading about the room. She is sitting in it, watching to see whether this group becomes one more place to report that she is fine. That is the hazard, and it is sharper here than in any other study, because a loneliness group can replicate the loneliness it laments in a single evening. Keep the polite machinery running, the brisk check-in, the coffee, the questions answered at the level of weather, and you will have proven the book's whole diagnosis while discussing it. The material is not the medicine. The room is. So slow everything down. When you ask how someone is, wait, and let the wait get uncomfortable, because the discomfort is where the true answer lives. Do not rescue silences. Do not summarize a confession back into tidiness. When someone finally says the lonely thing out loud, the group's next thirty seconds will teach them more about koinonia than the Acts session will. Bell leads a church of hundreds and has stood unknown in his own lobby. He has asked the question and not waited for the answer, watched a member drift out the back door and told himself they were busy. He built programs and called them belonging. If you have led anything in a church, so have you, and the group should hear you say so before they risk anything themselves. Watch the edges. The person who jokes constantly is often the loneliest one at the table, and the leader who plans the study can be the loneliest person in the building. Do not let five weeks end in a program proposal, a new committee to fix what only friendship can carry. The first believers shared a life, not an initiative (Acts 2:42-47). Your group cannot vote community into the whole church, but it can become one small room where somebody is finally known. Be that room first. The rest can wait.",
   "faq": [
-    { "q": "Is this study going to tell lonely people it is their own fault for not plugging in?", "a": "No, and it works hard to prevent exactly that. The first session takes the strong form of the view that the lonely are responsible, that they decline the groups and leave before the coffee and reap the isolation they sowed, and it grants that some loneliness really is a wall a person guards. But it refuses to let that become the whole story or a club. The study insists, repeatedly, that the church itself often builds the very loneliness it laments, that we constructed buildings a person can disappear inside and mistook a crowd for a body. If you came braced to be told you simply have not tried hard enough, you will find instead a study that names the church's own complicity first, and a leader primer that tells the facilitator to say plainly that a lonely person's isolation is often not their failure but the failure of a community that never tried to see them." },
-    { "q": "Does the study blame the church for everyone's loneliness, then?", "a": "Not entirely, and refusing to flatten it is the point. The study holds two things at once. The church really does manufacture loneliness, through buildings you can hide in, programs that produce attendance without knowing, and a culture of performing fine. And some loneliness really is a wall the lonely person has built out of fear or old wounds, a wall no program can lower for them. The honest answer, which the study admits cannot always be sorted with certainty, is that it is usually both, tangled together. The posture the study urges on every leader is compassion plus honesty, never assuming a lonely person is simply at fault, and never pretending the community bears no responsibility either." },
-    { "q": "I have tried small groups and church events and still feel alone. Is something wrong with me?", "a": "No, and the study takes your experience seriously rather than waving it off with another invitation. One of its central claims is that you cannot schedule your way into being known, that a sign-up sheet produces attendance but not belonging, and that a person can use every means the church offers and still be a stranger. The man whose story opens the study had joined and served and shown up for twelve years and still felt that no one would notice if he vanished. The problem is usually not that you have not attended enough things. It is that attending is not the same as being known, and being known requires a kind of slow, costly, mutual honesty that most of our programs are not built to produce. The study points you toward that deeper thing, not toward one more event." },
-    { "q": "What is the difference between attending church and belonging to it?", "a": "Attendance is presence. You are in the room, you are counted, you participate. Belonging is being known, having people who could tell someone what is actually wrong in your life, who would notice if you disappeared, who carry your burdens and let you carry theirs. The whole study circles this distance, because most of us have settled for attendance, since belonging asks for the one thing we are most afraid to give, which is to be known. The fifth session lands the surprising turn, that belonging is not finally something you manufacture by effort but something already true of you in Christ, since Scripture says we are already one body, members of one another. The work is not to build belonging from nothing but to start living as the body you have already been made." },
-    { "q": "Is the study just asking me to be vulnerable and risk getting hurt?", "a": "It is asking for that, and it does not pretend the risk is not real. The final session takes seriously the objection that being known sets you up to be hurt, and grants that to be known is to hand someone the power to wound you, that some people have used that power, and that a wall built after a real betrayal is not simple cowardice. Then it weighs the two wounds honestly. The risk of being known is the possibility of being hurt. The refusal to be known is the certainty of being alone, which God himself called not good. The study does not promise that opening up is safe. It claims that the alternative, a life lived unknown behind a wall, is the worse wound, a slow one, and it invites you to take one small step, not to throw the whole wall down at once." },
-    { "q": "What does the Bible actually say about loneliness and community?", "a": "More, and more pointedly, than most of us realize. It opens with God naming aloneness as the first not-good thing in a perfect creation, before any sin. It shows the first church devoting itself to koinonia, a shared common life that reached their homes and meals and money, listed right alongside sound teaching and prayer. It gives us covenant friendships like Jonathan and David and Ruth and Naomi, and Jesus himself calling his disciples friends and laying down his life for them. It fills the letters with dozens of one another commands, to bear, welcome, confess, weep with, carry. And it declares that in Christ we are already one body, members of one another. The study walks through all of this, arguing that community is not the soft optional part of the faith but commanded, central, and part of what the gospel itself creates." },
-    { "q": "What is koinonia, and how is it different from a coffee hour?", "a": "Koinonia is the New Testament word usually translated fellowship, and it means far more than sociability. It carries the sense of a shared common life, a partnership, a holding of things in common, even a participation together in Christ himself. In Acts the first believers practiced it by being in one another's homes, sharing meals, and meeting one another's actual needs so that no one among them went without. We have shrunk that word down to a half hour of weak coffee and talk about the weather in a hall we named for it. The second session works to fill the word back up to its real size, arguing that we settled for the event because the shared life costs more, an open home, an open calendar, an open admission of need." },
-    { "q": "Why does the study spend a whole session on friendship?", "a": "Because the church has quietly let friendship die, treating it as a private, sentimental extra rather than the serious spiritual good Scripture makes it. The study argues that friendship is dignified by Jesus himself, who on the last night of his life called his disciples not servants but friends and then laid down his life for them, and by the covenant bonds of Jonathan and David and Ruth and Naomi. It takes seriously the objection that we are simply too busy now, and grants the schedule is brutal, but presses the uncomfortable truth that we are rarely too busy for what we actually treasure, and that busyness is often the respectable name we give to a priority we will not admit we have demoted. Friendship is not built by events but by time and repetition, the one thing a church cannot manufacture with a sign-up sheet." },
-    { "q": "Are the one another commands really that important, or are they just nice ideals?", "a": "The study argues they are the actual job description of the church, not vague ideals. There are dozens of them, love one another, bear one another's burdens, confess to one another, welcome one another, weep with those who weep, and Paul says that bearing one another's burdens fulfills the law of Christ, which makes a church where everyone carries alone not merely cold but disobedient. The study refuses two dodges. The first calls them general ideals so it never has to do anything specific, when in fact they name concrete actions, an opened home, a carried weight, a confessed sin. The second hands them to the paid staff, when every one of them is addressed to one another, the whole body, not to a professional class. The study argues we are lonely precisely because we outsourced the one another to a staff and a building." },
-    { "q": "Who is this study for? I am not sure I count as lonely.", "a": "It is for anyone who has ever felt unknown at church, which is a far wider group than the people who would call themselves lonely. It is for the person who has no friends in the building and the person who has plenty of acquaintances but no one who knows the worst of them. It is for church leaders trying to understand why the people inside their programs are still isolated. And it is for the person who has always had a full table and quietly thinks the lonely should just try harder, because the leader primer specifically names that person and invites them to grow in compassion. Understanding belonging, and our failures at it, is good for the whole body, not only for those who feel the ache most sharply. If you have ever performed the word fine when it was not true, this study is for you." },
-    { "q": "Why does the study keep implicating the writer and the church leaders instead of just helping the lonely?", "a": "Because that is the method, and the method is the mercy. Bell does not stand outside this as the well-connected pastor explaining belonging to the isolated. He has pastored hundreds and felt like a stranger in his own building. He has asked how are you without waiting for the answer. He has let friendships die of neglect and members drift out the back. He writes from inside the loneliness as one who helped build the room where it grows, and the study asks every leader to do the same, because you cannot help a lonely person from above without your help curdling into either shame or distance. A study that pointed only at other people's isolation would let everyone keep performing fine and change no one. The honesty of the leader, admitting I have felt this too and I have done this to others, is the very thing that makes the room safe enough for anyone else to be honest." },
-    { "q": "Does the study promise that if I follow it I will not feel alone anymore?", "a": "No, and it deliberately refuses to. The study ends without resolution, on purpose, because loneliness this side of heaven does not get tied off with a bow, and a study that promised it would be lying. The point is not that everyone leaves with new friends but that everyone takes one honest step out of hiding and toward being known. The final session grounds this not in a technique you master but in a fact you receive, that in Christ you already belong, already are a member of his body, before you do anything to earn it, and that you are already fully known and not abandoned by God. The promise is not a cure for loneliness you achieve. It is a belonging already given in Christ, which you are invited to begin, slowly and at real cost, to live as though it were true." }
+    {
+      "q": "Is this study going to tell lonely people it is their own fault for not plugging in?",
+      "a": "No, and it works hard to prevent exactly that. The first session takes the strong form of the view that the lonely are responsible, that they decline the groups and leave before the coffee and reap the isolation they sowed, and it grants that some loneliness really is a wall a person guards. But it refuses to let that become the whole story or a club. The study insists, repeatedly, that the church itself often builds the very loneliness it laments, that we constructed buildings a person can disappear inside and mistook a crowd for a body. If you came braced to be told you simply have not tried hard enough, you will find instead a study that names the church's own complicity first, and a leader primer that tells the facilitator to say plainly that a lonely person's isolation is often not their failure but the failure of a community that never tried to see them."
+    },
+    {
+      "q": "Does the study blame the church for everyone's loneliness, then?",
+      "a": "Not entirely, and refusing to flatten it is the point. The study holds two things at once. The church really does manufacture loneliness, through buildings you can hide in, programs that produce attendance without knowing, and a culture of performing fine. And some loneliness really is a wall the lonely person has built out of fear or old wounds, a wall no program can lower for them. The honest answer, which the study admits cannot always be sorted with certainty, is that it is usually both, tangled together. The posture the study urges on every leader is compassion plus honesty, never assuming a lonely person is simply at fault, and never pretending the community bears no responsibility either."
+    },
+    {
+      "q": "I have tried small groups and church events and still feel alone. Is something wrong with me?",
+      "a": "No, and the study takes your experience seriously rather than waving it off with another invitation. One of its central claims is that you cannot schedule your way into being known, that a sign-up sheet produces attendance but not belonging, and that a person can use every means the church offers and still be a stranger. The man whose story opens the study had joined and served and shown up for twelve years and still felt that no one would notice if he vanished. The problem is usually not that you have not attended enough things. It is that attending is not the same as being known, and being known requires a kind of slow, costly, mutual honesty that most of our programs are not built to produce. The study points you toward that deeper thing, not toward one more event."
+    },
+    {
+      "q": "What is the difference between attending church and belonging to it?",
+      "a": "Attendance is presence. You are in the room, you are counted, you participate. Belonging is being known, having people who could tell someone what is actually wrong in your life, who would notice if you disappeared, who carry your burdens and let you carry theirs. The whole study circles this distance, because most of us have settled for attendance, since belonging asks for the one thing we are most afraid to give, which is to be known. The fifth session lands the surprising turn, that belonging is not finally something you manufacture by effort but something already true of you in Christ, since Scripture says we are already one body, members of one another. The work is not to build belonging from nothing but to start living as the body you have already been made."
+    },
+    {
+      "q": "Is the study just asking me to be vulnerable and risk getting hurt?",
+      "a": "It is asking for that, and it does not pretend the risk is not real. The final session takes seriously the objection that being known sets you up to be hurt, and grants that to be known is to hand someone the power to wound you, that some people have used that power, and that a wall built after a real betrayal is not simple cowardice. Then it weighs the two wounds honestly. The risk of being known is the possibility of being hurt. The refusal to be known is the certainty of being alone, which God himself called not good. The study does not promise that opening up is safe. It claims that the alternative, a life lived unknown behind a wall, is the worse wound, a slow one, and it invites you to take one small step, not to throw the whole wall down at once."
+    },
+    {
+      "q": "What does the Bible actually say about loneliness and community?",
+      "a": "More, and more pointedly, than most of us realize. It opens with God naming aloneness as the first not-good thing in a perfect creation, before any sin. It shows the first church devoting itself to koinonia, a shared common life that reached their homes and meals and money, listed right alongside sound teaching and prayer. It gives us covenant friendships like Jonathan and David and Ruth and Naomi, and Jesus himself calling his disciples friends and laying down his life for them. It fills the letters with dozens of one another commands, to bear, welcome, confess, weep with, carry. And it declares that in Christ we are already one body, members of one another. The study walks through all of this, arguing that community is not the soft optional part of the faith but commanded, central, and part of what the gospel itself creates."
+    },
+    {
+      "q": "What is koinonia, and how is it different from a coffee hour?",
+      "a": "Koinonia is the New Testament word usually translated fellowship, and it means far more than sociability. It carries the sense of a shared common life, a partnership, a holding of things in common, even a participation together in Christ himself. In Acts the first believers practiced it by being in one another's homes, sharing meals, and meeting one another's actual needs so that no one among them went without. We have shrunk that word down to a half hour of weak coffee and talk about the weather in a hall we named for it. The second session works to fill the word back up to its real size, arguing that we settled for the event because the shared life costs more, an open home, an open calendar, an open admission of need."
+    },
+    {
+      "q": "Why does the study spend a whole session on friendship?",
+      "a": "Because the church has quietly let friendship die, treating it as a private, sentimental extra rather than the serious spiritual good Scripture makes it. The study argues that friendship is dignified by Jesus himself, who on the last night of his life called his disciples not servants but friends and then laid down his life for them, and by the covenant bonds of Jonathan and David and Ruth and Naomi. It takes seriously the objection that we are simply too busy now, and grants the schedule is brutal, but presses the uncomfortable truth that we are rarely too busy for what we actually treasure, and that busyness is often the respectable name we give to a priority we will not admit we have demoted. Friendship is not built by events but by time and repetition, the one thing a church cannot manufacture with a sign-up sheet."
+    },
+    {
+      "q": "Are the one another commands really that important, or are they just nice ideals?",
+      "a": "The study argues they are the actual job description of the church, not vague ideals. There are dozens of them, love one another, bear one another's burdens, confess to one another, welcome one another, weep with those who weep, and Paul says that bearing one another's burdens fulfills the law of Christ, which makes a church where everyone carries alone not merely cold but disobedient. The study refuses two dodges. The first calls them general ideals so it never has to do anything specific, when in fact they name concrete actions, an opened home, a carried weight, a confessed sin. The second hands them to the paid staff, when every one of them is addressed to one another, the whole body, not to a professional class. The study argues we are lonely precisely because we outsourced the one another to a staff and a building."
+    },
+    {
+      "q": "Who is this study for? I am not sure I count as lonely.",
+      "a": "It is for anyone who has ever felt unknown at church, which is a far wider group than the people who would call themselves lonely. It is for the person who has no friends in the building and the person who has plenty of acquaintances but no one who knows the worst of them. It is for church leaders trying to understand why the people inside their programs are still isolated. And it is for the person who has always had a full table and quietly thinks the lonely should just try harder, because the leader primer specifically names that person and invites them to grow in compassion. Understanding belonging, and our failures at it, is good for the whole body, not only for those who feel the ache most sharply. If you have ever performed the word fine when it was not true, this study is for you."
+    },
+    {
+      "q": "Why does the study keep implicating the writer and the church leaders instead of just helping the lonely?",
+      "a": "Because that is the method, and the method is the mercy. Bell does not stand outside this as the well-connected pastor explaining belonging to the isolated. He has pastored hundreds and felt like a stranger in his own building. He has asked how are you without waiting for the answer. He has let friendships die of neglect and members drift out the back. He writes from inside the loneliness as one who helped build the room where it grows, and the study asks every leader to do the same, because you cannot help a lonely person from above without your help curdling into either shame or distance. A study that pointed only at other people's isolation would let everyone keep performing fine and change no one. The honesty of the leader, admitting I have felt this too and I have done this to others, is the very thing that makes the room safe enough for anyone else to be honest."
+    },
+    {
+      "q": "Does the study promise that if I follow it I will not feel alone anymore?",
+      "a": "No, and it deliberately refuses to. The study ends without resolution, on purpose, because loneliness this side of heaven does not get tied off with a bow, and a study that promised it would be lying. The point is not that everyone leaves with new friends but that everyone takes one honest step out of hiding and toward being known. The final session grounds this not in a technique you master but in a fact you receive, that in Christ you already belong, already are a member of his body, before you do anything to earn it, and that you are already fully known and not abandoned by God. The promise is not a cure for loneliness you achieve. It is a belonging already given in Christ, which you are invited to begin, slowly and at real cost, to live as though it were true."
+    }
   ],
   "timeline": [
-    { "date": "in the beginning", "event": "In the garden, before sin enters the world, God looks at the one man and declares the first not-good thing in a creation he otherwise calls good, that it is not good for the man to be alone, naming human isolation as a problem older than the fall and woven into our design as a need." },
-    { "date": "circa 1000 BC", "event": "The covenant friendship of Jonathan and David is recorded, Jonathan loving David as his own soul and binding himself in loyalty to the very man who will take his throne, and the psalmists give Israel honest language for the ache of being unseen, crying that no one cares for my soul." },
-    { "date": "circa AD 30", "event": "On the night before his death, Jesus tells his disciples that he no longer calls them servants but friends, defining friendship at the cost of his own life, and in the upper room and the garden he wants his friends near, asking them to watch with him in his distress." },
-    { "date": "circa AD 33", "event": "After Pentecost the first believers in Jerusalem devote themselves to the apostles teaching and the fellowship, the breaking of bread and the prayers, living a koinonia so real it reaches their homes and possessions, so that there is not a needy person among them." },
-    { "date": "circa AD 50 to 64", "event": "The apostolic letters fill the young churches with the one another commands, to bear one another's burdens and so fulfill the law of Christ, to welcome one another, to confess to one another, to weep with those who weep, the practical job description of the body." },
-    { "date": "circa 400", "event": "Augustine writes in his Confessions that the human heart is restless until it rests in God, and reflects on the deep human need for friendship and the grief of losing a friend, locating the longing for communion at the center of the soul's search for God." },
-    { "date": "circa 1160", "event": "Aelred of Rievaulx, an English monk, writes Spiritual Friendship, daring to treat deep friendship between Christians as a school of love that trains the soul for the love of God, and reflecting on the line that God is love as a warrant for taking friendship with the highest seriousness." },
-    { "date": "1938", "event": "Dietrich Bonhoeffer writes Life Together out of his experience leading an illegal seminary community under the Nazi regime, warning against the wish dream of an idealized community and insisting that Christian fellowship is a reality created by Christ that we receive, not an ideal we achieve, and that real community means bearing the burden of the other." },
-    { "date": "1954", "event": "Bonhoeffer's Life Together is published in English, carrying to the wider church its hard wisdom on confession, on bearing one another, and on the difference between the community we dream of and the actual flawed people God has joined us to, a text that anchors the study's session on the one another." },
-    { "date": "2000", "event": "The sociologist Robert Putnam publishes Bowling Alone, documenting the long decline of community and social connection in modern life, the fraying of the webs of relationship that earlier generations were born into, naming a loss the church absorbed along with the surrounding culture." },
-    { "date": "circa 2010s", "event": "Researchers and physicians begin to describe loneliness as a public health crisis, reporting that chronic isolation damages the body as severely as long-term smoking and that more people than ever live alone and report having no one to confide in, even as digital connection multiplies." },
-    { "date": "2023", "event": "Public health voices formally name an epidemic of loneliness and isolation, calling for community and belonging as a matter of human health, a secular confirmation of the not-good God named in the garden, and a summons the church holds the deepest answer to and has too often failed to meet." }
+    {
+      "date": "in the beginning",
+      "event": "In the garden, before sin enters the world, God looks at the one man and declares the first not-good thing in a creation he otherwise calls good, that it is not good for the man to be alone, naming human isolation as a problem older than the fall and woven into our design as a need."
+    },
+    {
+      "date": "circa 1000 BC",
+      "event": "The covenant friendship of Jonathan and David is recorded, Jonathan loving David as his own soul and binding himself in loyalty to the very man who will take his throne, and the psalmists give Israel honest language for the ache of being unseen, crying that no one cares for my soul."
+    },
+    {
+      "date": "circa AD 30",
+      "event": "On the night before his death, Jesus tells his disciples that he no longer calls them servants but friends, defining friendship at the cost of his own life, and in the upper room and the garden he wants his friends near, asking them to watch with him in his distress."
+    },
+    {
+      "date": "circa AD 33",
+      "event": "After Pentecost the first believers in Jerusalem devote themselves to the apostles teaching and the fellowship, the breaking of bread and the prayers, living a koinonia so real it reaches their homes and possessions, so that there is not a needy person among them."
+    },
+    {
+      "date": "circa AD 50 to 64",
+      "event": "The apostolic letters fill the young churches with the one another commands, to bear one another's burdens and so fulfill the law of Christ, to welcome one another, to confess to one another, to weep with those who weep, the practical job description of the body."
+    },
+    {
+      "date": "circa 400",
+      "event": "Augustine writes in his Confessions that the human heart is restless until it rests in God, and reflects on the deep human need for friendship and the grief of losing a friend, locating the longing for communion at the center of the soul's search for God."
+    },
+    {
+      "date": "circa 1160",
+      "event": "Aelred of Rievaulx, an English monk, writes Spiritual Friendship, daring to treat deep friendship between Christians as a school of love that trains the soul for the love of God, and reflecting on the line that God is love as a warrant for taking friendship with the highest seriousness."
+    },
+    {
+      "date": "1938",
+      "event": "Dietrich Bonhoeffer writes Life Together out of his experience leading an illegal seminary community under the Nazi regime, warning against the wish dream of an idealized community and insisting that Christian fellowship is a reality created by Christ that we receive, not an ideal we achieve, and that real community means bearing the burden of the other."
+    },
+    {
+      "date": "1954",
+      "event": "Bonhoeffer's Life Together is published in English, carrying to the wider church its hard wisdom on confession, on bearing one another, and on the difference between the community we dream of and the actual flawed people God has joined us to, a text that anchors the study's session on the one another."
+    },
+    {
+      "date": "2000",
+      "event": "The sociologist Robert Putnam publishes Bowling Alone, documenting the long decline of community and social connection in modern life, the fraying of the webs of relationship that earlier generations were born into, naming a loss the church absorbed along with the surrounding culture."
+    },
+    {
+      "date": "circa 2010s",
+      "event": "Researchers and physicians begin to describe loneliness as a public health crisis, reporting that chronic isolation damages the body as severely as long-term smoking and that more people than ever live alone and report having no one to confide in, even as digital connection multiplies."
+    },
+    {
+      "date": "2023",
+      "event": "Public health voices formally name an epidemic of loneliness and isolation, calling for community and belonging as a matter of human health, a secular confirmation of the not-good God named in the garden, and a summons the church holds the deepest answer to and has too often failed to meet."
+    }
   ],
   "facilitatorScript": {
     "open": "Welcome. Thank you for being here, and thank you for the courage it took, because loneliness is one of the hardest things to admit out loud in a room full of people. Before we start, three things. First, this is a safe room. You can say I have been coming here for years and no one really knows me here. You can say I feel alone here. Nobody is going to fix you, sign you up for something, or quote a verse to make the feeling stop. Second, this study takes loneliness seriously, and it does not blame you for it. It is honest that the church itself often builds the very isolation it laments, that we made buildings you can hide in and called a crowd a body. It will never tell you that you simply have not tried hard enough. Third, the writer puts himself inside all of this, and so will I. I have felt alone in a full room. I have asked people how they were without waiting for the answer. We are not pointing at the lonely from a safe distance. We are the lonely, and we are also the ones who have kept others unknown. Tonight we are looking at this together: ________. Let me read our key passage, and then we will sit with it before we say anything else. There are no wrong answers in the first five minutes, only honest ones.",
@@ -282,18 +658,66 @@
     }
   ],
   "bibliography": [
-    { "title": "Life Together: The Classic Exploration of Christian Community", "author": "Dietrich Bonhoeffer", "note": "Written from an illegal seminary community under the Nazi regime, the indispensable modern treatment of the one another, the wish dream of community, and bearing the burden of the other. The spine of session 4." },
-    { "title": "Spiritual Friendship", "author": "Aelred of Rievaulx", "note": "The medieval monk's treatise treating deep friendship between Christians as a school of love that trains the soul for God, recovering friendship as a serious calling. Anchors session 3." },
-    { "title": "The Meaning of Marriage, and broader writing on community", "author": "Timothy Keller", "note": "Keller's work on covenant relationships and the gospel basis of community informs the study's argument that belonging is created by Christ before it is built by us. Leader to confirm specific claims before attributing them to Bell." },
-    { "title": "The Confessions", "author": "Augustine of Hippo", "note": "The source of the line that the heart is restless until it rests in God, and a searching reflection on friendship and the grief of losing a friend. Background for sessions 1 and 5 on the longing to be known." },
-    { "title": "Bowling Alone: The Collapse and Revival of American Community", "author": "Robert Putnam", "note": "The landmark study documenting the long decline of community and social connection in modern life, useful for understanding the cultural loneliness the church absorbed. Background for the going deeper sections, with the leader confirming specifics before pressing them." },
-    { "title": "The Lost Art of Dwelling Together, and broader writing on belonging", "author": "Various contemporary pastoral writers", "note": "A representative pointer to recent pastoral writing on church belonging and the recovery of fellowship. Leader to confirm specific titles and claims before attributing them to Bell or to a named author." },
-    { "title": "Together: The Healing Power of Human Connection in a Sometimes Lonely World", "author": "Vivek Murthy", "note": "A physician's account of the modern loneliness crisis and the health costs of isolation, a secular voice the study tests against Scripture rather than adopting. Offered as a balancing voice for the going deeper sections, with the leader confirming specifics." },
-    { "title": "The Body: A Study of the Local Church", "author": "Charles Colson", "note": "A treatment of the church as a body rather than a collection of attenders, useful for the study's argument that we are already members of one another. Leader to confirm specific claims before stating them as the study's position." },
-    { "title": "Made for People: Why We Drift into Loneliness and How to Fight for a Life of Friendship", "author": "Justin Whitmel Earley", "note": "A practical Christian treatment of the drift into loneliness and the disciplines of friendship, paralleling the study's session 3. Not cited by Bell directly. Leader to confirm before attributing specific claims." },
-    { "title": "The Gospel Comes with a House Key: Practicing Radically Ordinary Hospitality", "author": "Rosaria Butterfield", "note": "A vivid argument for ordinary hospitality, the opening of the actual home, as a central Christian practice, directly supporting the hospitality strand of session 4. Leader to confirm specifics before pressing them as Bell's own argument." },
-    { "title": "Life Together and Prayerbook of the Bible (Dietrich Bonhoeffer Works, Volume 5)", "author": "Dietrich Bonhoeffer", "note": "The critical edition of Life Together for groups wanting the fuller scholarly text and Bonhoeffer's own context. Useful background across sessions 2 and 4 on confession and community." },
-    { "title": "Community: The Structure of Belonging", "author": "Peter Block", "note": "A secular treatment of how genuine belonging is built and how isolation forms in modern institutions, offered as a voice to test against the biblical vision rather than to adopt. Leader to confirm before stating its arguments as the study's position." }
+    {
+      "title": "Life Together: The Classic Exploration of Christian Community",
+      "author": "Dietrich Bonhoeffer",
+      "note": "Written from an illegal seminary community under the Nazi regime, the indispensable modern treatment of the one another, the wish dream of community, and bearing the burden of the other. The spine of session 4."
+    },
+    {
+      "title": "Spiritual Friendship",
+      "author": "Aelred of Rievaulx",
+      "note": "The medieval monk's treatise treating deep friendship between Christians as a school of love that trains the soul for God, recovering friendship as a serious calling. Anchors session 3."
+    },
+    {
+      "title": "The Meaning of Marriage, and broader writing on community",
+      "author": "Timothy Keller",
+      "note": "Keller's work on covenant relationships and the gospel basis of community informs the study's argument that belonging is created by Christ before it is built by us. Leader to confirm specific claims before attributing them to Bell."
+    },
+    {
+      "title": "The Confessions",
+      "author": "Augustine of Hippo",
+      "note": "The source of the line that the heart is restless until it rests in God, and a searching reflection on friendship and the grief of losing a friend. Background for sessions 1 and 5 on the longing to be known."
+    },
+    {
+      "title": "Bowling Alone: The Collapse and Revival of American Community",
+      "author": "Robert Putnam",
+      "note": "The landmark study documenting the long decline of community and social connection in modern life, useful for understanding the cultural loneliness the church absorbed. Background for the going deeper sections, with the leader confirming specifics before pressing them."
+    },
+    {
+      "title": "The Lost Art of Dwelling Together, and broader writing on belonging",
+      "author": "Various contemporary pastoral writers",
+      "note": "A representative pointer to recent pastoral writing on church belonging and the recovery of fellowship. Leader to confirm specific titles and claims before attributing them to Bell or to a named author."
+    },
+    {
+      "title": "Together: The Healing Power of Human Connection in a Sometimes Lonely World",
+      "author": "Vivek Murthy",
+      "note": "A physician's account of the modern loneliness crisis and the health costs of isolation, a secular voice the study tests against Scripture rather than adopting. Offered as a balancing voice for the going deeper sections, with the leader confirming specifics."
+    },
+    {
+      "title": "The Body: A Study of the Local Church",
+      "author": "Charles Colson",
+      "note": "A treatment of the church as a body rather than a collection of attenders, useful for the study's argument that we are already members of one another. Leader to confirm specific claims before stating them as the study's position."
+    },
+    {
+      "title": "Made for People: Why We Drift into Loneliness and How to Fight for a Life of Friendship",
+      "author": "Justin Whitmel Earley",
+      "note": "A practical Christian treatment of the drift into loneliness and the disciplines of friendship, paralleling the study's session 3. Not cited by Bell directly. Leader to confirm before attributing specific claims."
+    },
+    {
+      "title": "The Gospel Comes with a House Key: Practicing Radically Ordinary Hospitality",
+      "author": "Rosaria Butterfield",
+      "note": "A vivid argument for ordinary hospitality, the opening of the actual home, as a central Christian practice, directly supporting the hospitality strand of session 4. Leader to confirm specifics before pressing them as Bell's own argument."
+    },
+    {
+      "title": "Life Together and Prayerbook of the Bible (Dietrich Bonhoeffer Works, Volume 5)",
+      "author": "Dietrich Bonhoeffer",
+      "note": "The critical edition of Life Together for groups wanting the fuller scholarly text and Bonhoeffer's own context. Useful background across sessions 2 and 4 on confession and community."
+    },
+    {
+      "title": "Community: The Structure of Belonging",
+      "author": "Peter Block",
+      "note": "A secular treatment of how genuine belonging is built and how isolation forms in modern institutions, offered as a voice to test against the biblical vision rather than to adopt. Leader to confirm before stating its arguments as the study's position."
+    }
   ],
   "furtherReading": [
     "Life Together, Dietrich Bonhoeffer, for readers who want to sit longer with the wish dream of community and the hard grace of bearing one another that anchors session 4.",
@@ -303,33 +727,134 @@
     "Spiritual Friendship, Aelred of Rievaulx, for those who want to think with an older voice about friendship as a serious calling and a means of grace, read alongside session 3."
   ],
   "glossary": [
-    { "term": "Loneliness", "definition": "The ache of being unknown, of having no one who could tell what is actually wrong in your life or would notice if you disappeared. The study treats it not as a single thing but as sometimes a wall the lonely build and sometimes a room the church designed, often both, and refuses to flatten it into only one." },
-    { "term": "Koinonia", "definition": "The New Testament word usually translated fellowship, meaning a shared common life, a partnership, a holding of things in common, and a participation together in Christ. In Acts it reached into homes and meals and money, far heavier than the coffee hour we have shrunk it down to." },
-    { "term": "Belonging", "definition": "Being known and held within a body, as distinct from merely attending it. The study argues belonging is not finally manufactured by effort but received in Christ, who has already made us one body and members of one another before we earn a place." },
-    { "term": "Attendance", "definition": "Presence in the room, being counted and participating, which a person can do for decades without ever being known. The study names the distance between attendance and belonging as the central problem it exists to address." },
-    { "term": "The one another commands", "definition": "The dozens of New Testament instructions addressed to one another, to love, bear, welcome, confess, weep with, encourage, and serve, which together form the practical job description of the church and which it most consistently ignores." },
-    { "term": "Hospitality", "definition": "The biblical command to open your own actual home and table to others, especially those who would otherwise be alone, not the hosting of a church event in a public hall. The study treats it as one of the two precise antidotes to loneliness." },
-    { "term": "Bearing burdens", "definition": "The deliberate carrying of a weight that is not yours for the sake of another, which Paul says fulfills the law of Christ, making a church where everyone carries alone a place that is breaking that law rather than merely lacking warmth." },
-    { "term": "The wish dream", "definition": "Bonhoeffer's name for the idealized picture of community we carry in our heads, which destroys real fellowship by demanding from actual flawed people a perfection they can never deliver. The cure is to receive the people God has actually given." },
-    { "term": "Body of Christ", "definition": "Paul's image for the church as a single living organism whose members are joined to one another, so that if one suffers all suffer, the opposite of a congregation where a person can suffer for years unnoticed. The status we already hold in Christ." },
-    { "term": "Covenant friendship", "definition": "The deep, loyal, costly friendship Scripture honors in Jonathan and David and in Ruth and Naomi, a bond that refuses to leave and will tell the truth, distinct from the disposable acquaintance the modern church too often settles for." },
-    { "term": "Performing fine", "definition": "The habitual practice, especially common in church, of answering the question how are you with the word fine when it is not true, the small daily refusal to be known that keeps the lonely lonely even in a warm room." },
-    { "term": "The epidemic of loneliness", "definition": "The modern public health crisis of isolation, in which chronic loneliness damages the body as severely as heavy smoking and more people than ever report having no one to confide in, a secular confirmation of the not-good God named in the garden." },
-    { "term": "Being fully known", "definition": "The deepest human longing, named by Paul, to be seen all the way down and not abandoned, fulfilled first in God who already knows us completely and loves us anyway, which becomes the security from which we can risk being known by people." }
+    {
+      "term": "Loneliness",
+      "definition": "The ache of being unknown, of having no one who could tell what is actually wrong in your life or would notice if you disappeared. The study treats it not as a single thing but as sometimes a wall the lonely build and sometimes a room the church designed, often both, and refuses to flatten it into only one."
+    },
+    {
+      "term": "Koinonia",
+      "definition": "The New Testament word usually translated fellowship, meaning a shared common life, a partnership, a holding of things in common, and a participation together in Christ. In Acts it reached into homes and meals and money, far heavier than the coffee hour we have shrunk it down to."
+    },
+    {
+      "term": "Belonging",
+      "definition": "Being known and held within a body, as distinct from merely attending it. The study argues belonging is not finally manufactured by effort but received in Christ, who has already made us one body and members of one another before we earn a place."
+    },
+    {
+      "term": "Attendance",
+      "definition": "Presence in the room, being counted and participating, which a person can do for decades without ever being known. The study names the distance between attendance and belonging as the central problem it exists to address."
+    },
+    {
+      "term": "The one another commands",
+      "definition": "The dozens of New Testament instructions addressed to one another, to love, bear, welcome, confess, weep with, encourage, and serve, which together form the practical job description of the church and which it most consistently ignores."
+    },
+    {
+      "term": "Hospitality",
+      "definition": "The biblical command to open your own actual home and table to others, especially those who would otherwise be alone, not the hosting of a church event in a public hall. The study treats it as one of the two precise antidotes to loneliness."
+    },
+    {
+      "term": "Bearing burdens",
+      "definition": "The deliberate carrying of a weight that is not yours for the sake of another, which Paul says fulfills the law of Christ, making a church where everyone carries alone a place that is breaking that law rather than merely lacking warmth."
+    },
+    {
+      "term": "The wish dream",
+      "definition": "Bonhoeffer's name for the idealized picture of community we carry in our heads, which destroys real fellowship by demanding from actual flawed people a perfection they can never deliver. The cure is to receive the people God has actually given."
+    },
+    {
+      "term": "Body of Christ",
+      "definition": "Paul's image for the church as a single living organism whose members are joined to one another, so that if one suffers all suffer, the opposite of a congregation where a person can suffer for years unnoticed. The status we already hold in Christ."
+    },
+    {
+      "term": "Covenant friendship",
+      "definition": "The deep, loyal, costly friendship Scripture honors in Jonathan and David and in Ruth and Naomi, a bond that refuses to leave and will tell the truth, distinct from the disposable acquaintance the modern church too often settles for."
+    },
+    {
+      "term": "Performing fine",
+      "definition": "The habitual practice, especially common in church, of answering the question how are you with the word fine when it is not true, the small daily refusal to be known that keeps the lonely lonely even in a warm room."
+    },
+    {
+      "term": "The epidemic of loneliness",
+      "definition": "The modern public health crisis of isolation, in which chronic loneliness damages the body as severely as heavy smoking and more people than ever report having no one to confide in, a secular confirmation of the not-good God named in the garden."
+    },
+    {
+      "term": "Being fully known",
+      "definition": "The deepest human longing, named by Paul, to be seen all the way down and not abandoned, fulfilled first in God who already knows us completely and loves us anyway, which becomes the security from which we can risk being known by people."
+    }
   ],
   "scriptureIndex": [
-    { "ref": "Genesis 2:18", "sessions": [1] },
-    { "ref": "Psalm 68:6", "sessions": [1] },
-    { "ref": "Psalm 139:1-4", "sessions": [5] },
-    { "ref": "Ecclesiastes 4:9-12", "sessions": [1, 3] },
-    { "ref": "Ruth 1:16-17", "sessions": [3] },
-    { "ref": "1 Samuel 18:1-3", "sessions": [3] },
-    { "ref": "John 13:34-35", "sessions": [1] },
-    { "ref": "John 15:13-15", "sessions": [3] },
-    { "ref": "Acts 2:42-47", "sessions": [2] },
-    { "ref": "Romans 12:5", "sessions": [5] },
-    { "ref": "Galatians 6:2", "sessions": [4] },
-    { "ref": "1 Corinthians 12:21-26", "sessions": [1, 5] }
+    {
+      "ref": "Genesis 2:18",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "Psalm 68:6",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "Psalm 139:1-4",
+      "sessions": [
+        5
+      ]
+    },
+    {
+      "ref": "Ecclesiastes 4:9-12",
+      "sessions": [
+        1,
+        3
+      ]
+    },
+    {
+      "ref": "Ruth 1:16-17",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "1 Samuel 18:1-3",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "John 13:34-35",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "John 15:13-15",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "Acts 2:42-47",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "Romans 12:5",
+      "sessions": [
+        5
+      ]
+    },
+    {
+      "ref": "Galatians 6:2",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "1 Corinthians 12:21-26",
+      "sessions": [
+        1,
+        5
+      ]
+    }
   ],
   "promoKit": {
     "bulletinBlurb": "You can stand in a full sanctuary, sing every word, shake every hand at the door, and drive home knowing that not one person in that building could have told you what was wrong. This five-session study, drawn from James Bell's Alone in a Crowded Church, walks slowly through why so many feel unknown at church, the koinonia the first believers actually practiced, the friendship we have let die, the one another commands we skip, and the long work of moving from attendance to belonging. It is honest that the church itself often builds the loneliness it laments, and it never blames you for feeling alone. Built so any volunteer can lead it with no prep. Come honest, not finished.",

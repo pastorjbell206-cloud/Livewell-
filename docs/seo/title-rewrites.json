@@ -3157,5 +3157,491 @@
   "query": "just war vs pacifism christian views",
   "kicker": "The Sword and the Plowshare",
   "keep": false
+ },
+ {
+  "slug": "sermon-on-the-mount",
+  "route": "/studyguides/",
+  "old": "A Harder Righteousness",
+  "new": "The Sermon on the Mount: A Bible Study",
+  "query": "sermon on the mount bible study",
+  "kicker": "A Harder Righteousness",
+  "keep": false
+ },
+ {
+  "slug": "after-christendom",
+  "route": "/studyguides/",
+  "old": "After Christendom",
+  "new": "After Christendom: A Study on Post-Christian Faith",
+  "query": "post christian culture study",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "alone-in-a-crowded-church",
+  "route": "/studyguides/",
+  "old": "Alone in a Crowded Church",
+  "new": "Alone in a Crowded Church: A Study on Church Loneliness",
+  "query": "loneliness in church study",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "believe",
+  "route": "/studyguides/",
+  "old": "Believe",
+  "new": "Believe: A Bible Study for New Believers and Seekers",
+  "query": "bible study for new believers",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "character-before-competence",
+  "route": "/studyguides/",
+  "old": "Character Before Competence",
+  "new": "Character Before Competence: A Church Leadership Study",
+  "query": "church leadership character study",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "christian-nationalism",
+  "route": "/studyguides/",
+  "old": "Christian Nationalism: An 8-Week Study",
+  "new": "Christian Nationalism: An 8-Week Study",
+  "query": "christian nationalism study guide",
+  "kicker": "",
+  "keep": true
+ },
+ {
+  "slug": "church-and-empire",
+  "route": "/studyguides/",
+  "old": "Church and Empire: An 8-Week Study",
+  "new": "Church and Empire: An 8-Week Study",
+  "query": "church and empire study guide",
+  "kicker": "",
+  "keep": true
+ },
+ {
+  "slug": "anxiety",
+  "route": "/studyguides/",
+  "old": "Consider the Birds",
+  "new": "Anxiety: A Bible Study on Worry and the Peace of Christ",
+  "query": "bible study on anxiety",
+  "kicker": "Consider the Birds",
+  "keep": false
+ },
+ {
+  "slug": "marriage",
+  "route": "/studyguides/",
+  "old": "Covenant",
+  "new": "Marriage: A Bible Study on Covenant Love",
+  "query": "marriage bible study",
+  "kicker": "Covenant",
+  "keep": false
+ },
+ {
+  "slug": "deep-roots",
+  "route": "/studyguides/",
+  "old": "Deep Roots",
+  "new": "Deep Roots: A Bible Study for Faith Beyond Slogans",
+  "query": "deeper faith bible study",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "resurrection",
+  "route": "/studyguides/",
+  "old": "Did It Happen: The Case for the Resurrection",
+  "new": "The Resurrection: A Bible Study on the Evidence",
+  "query": "evidence for the resurrection study",
+  "kicker": "Did It Happen",
+  "keep": false
+ },
+ {
+  "slug": "economic-justice",
+  "route": "/studyguides/",
+  "old": "Economic Justice: An 8-Week Study",
+  "new": "Economic Justice: An 8-Week Study",
+  "query": "economic justice bible study",
+  "kicker": "",
+  "keep": true
+ },
+ {
+  "slug": "contentment",
+  "route": "/studyguides/",
+  "old": "Enough",
+  "new": "Contentment: A Bible Study on Wanting Less",
+  "query": "bible study on contentment",
+  "kicker": "Enough",
+  "keep": false
+ },
+ {
+  "slug": "fatherhood",
+  "route": "/studyguides/",
+  "old": "Fatherhood in a Fatherless Age",
+  "new": "Fatherhood: A Bible Study for Men Without a Blueprint",
+  "query": "bible study on fatherhood",
+  "kicker": "Fatherhood in a Fatherless Age",
+  "keep": false
+ },
+ {
+  "slug": "aging-and-legacy",
+  "route": "/studyguides/",
+  "old": "Finishing Well",
+  "new": "Aging and Legacy: A Bible Study on Finishing Well",
+  "query": "bible study on aging and legacy",
+  "kicker": "Finishing Well",
+  "keep": false
+ },
+ {
+  "slug": "grief",
+  "route": "/studyguides/",
+  "old": "Grief and the God Who Wept",
+  "new": "Grief: A Bible Study on Loss and the God Who Wept",
+  "query": "bible study on grief",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "knowing-god",
+  "route": "/studyguides/",
+  "old": "Knowing God: The Trinity and the Life It Makes Possible",
+  "new": "The Trinity: A Bible Study on Knowing God",
+  "query": "bible study on the trinity",
+  "kicker": "Knowing God",
+  "keep": false
+ },
+ {
+  "slug": "the-image-of-god",
+  "route": "/studyguides/",
+  "old": "Made in His Image",
+  "new": "The Image of God: A Bible Study on Human Worth",
+  "query": "image of god bible study",
+  "kicker": "Made in His Image",
+  "keep": false
+ },
+ {
+  "slug": "mishpat",
+  "route": "/studyguides/",
+  "old": "Mishpat",
+  "new": "Mishpat: A Bible Study on Biblical Justice",
+  "query": "biblical justice bible study",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "singleness",
+  "route": "/studyguides/",
+  "old": "Not a Waiting Room",
+  "new": "Singleness: A Bible Study for the Unmarried",
+  "query": "bible study on singleness",
+  "kicker": "Not a Waiting Room",
+  "keep": false
+ },
+ {
+  "slug": "the-story-of-the-bible",
+  "route": "/studyguides/",
+  "old": "One Story",
+  "new": "The Story of the Bible: A Study of the Whole Canon",
+  "query": "overview of the whole bible study",
+  "kicker": "One Story",
+  "keep": false
+ },
+ {
+  "slug": "witness",
+  "route": "/studyguides/",
+  "old": "Ordinary Witness: Speaking of Jesus Without the Script",
+  "new": "Evangelism: A Bible Study on Sharing Your Faith",
+  "query": "bible study on evangelism",
+  "kicker": "Ordinary Witness",
+  "keep": false
+ },
+ {
+  "slug": "the-psalms",
+  "route": "/studyguides/",
+  "old": "Praying the Honest Prayers",
+  "new": "The Psalms: A Bible Study on Honest Prayer",
+  "query": "bible study on the psalms",
+  "kicker": "Praying the Honest Prayers",
+  "keep": false
+ },
+ {
+  "slug": "skeptic",
+  "route": "/studyguides/",
+  "old": "Questions Worth Asking",
+  "new": "Questions Skeptics Ask: A Study for Doubters",
+  "query": "bible study for skeptics",
+  "kicker": "Questions Worth Asking",
+  "keep": false
+ },
+ {
+  "slug": "raising-believers",
+  "route": "/studyguides/",
+  "old": "Raising Believers",
+  "new": "Raising Believers: A Bible Study for Christian Parents",
+  "query": "bible study for christian parents",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "prayer",
+  "route": "/studyguides/",
+  "old": "Teach Us to Pray",
+  "new": "Prayer: A Bible Study on Learning to Pray",
+  "query": "bible study on prayer",
+  "kicker": "Teach Us to Pray",
+  "keep": false
+ },
+ {
+  "slug": "the-captive-church",
+  "route": "/studyguides/",
+  "old": "The Captive Church",
+  "new": "The Captive Church: A Study on Faith and Political Power",
+  "query": "church and political power study",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "heaven-and-hell",
+  "route": "/studyguides/",
+  "old": "The Country We Have Not Seen",
+  "new": "Heaven and Hell: A Bible Study on the Life to Come",
+  "query": "bible study on heaven and hell",
+  "kicker": "The Country We Have Not Seen",
+  "keep": false
+ },
+ {
+  "slug": "attention",
+  "route": "/studyguides/",
+  "old": "The Distracted Soul: Attention, Technology, and the Life You Actually Have",
+  "new": "Attention: A Bible Study on Technology and Distraction",
+  "query": "christian study on technology and attention",
+  "kicker": "The Distracted Soul",
+  "keep": false
+ },
+ {
+  "slug": "anger",
+  "route": "/studyguides/",
+  "old": "The Emotion We Baptized",
+  "new": "Anger: A Bible Study on Temper and Righteous Anger",
+  "query": "bible study on anger",
+  "kicker": "The Emotion We Baptized",
+  "keep": false
+ },
+ {
+  "slug": "the-creeds",
+  "route": "/studyguides/",
+  "old": "The Faith Once Delivered",
+  "new": "The Creeds: A Bible Study on What Christians Believe",
+  "query": "study on the apostles creed",
+  "kicker": "The Faith Once Delivered",
+  "keep": false
+ },
+ {
+  "slug": "new-believer",
+  "route": "/studyguides/",
+  "old": "The First Steps",
+  "new": "New Believers: A Study on Your First Steps of Faith",
+  "query": "bible study for new christians",
+  "kicker": "The First Steps",
+  "keep": false
+ },
+ {
+  "slug": "holy-spirit",
+  "route": "/studyguides/",
+  "old": "The Forgotten God",
+  "new": "The Holy Spirit: A Bible Study on the Forgotten God",
+  "query": "bible study on the holy spirit",
+  "kicker": "The Forgotten God",
+  "keep": false
+ },
+ {
+  "slug": "fruit-of-the-spirit",
+  "route": "/studyguides/",
+  "old": "The Garden the Spirit Grows",
+  "new": "The Fruit of the Spirit: A Bible Study on Growth",
+  "query": "fruit of the spirit bible study",
+  "kicker": "The Garden the Spirit Grows",
+  "keep": false
+ },
+ {
+  "slug": "gratitude",
+  "route": "/studyguides/",
+  "old": "The Grace of Thanks",
+  "new": "Gratitude: A Bible Study on Thanksgiving and Grace",
+  "query": "bible study on gratitude",
+  "kicker": "The Grace of Thanks",
+  "keep": false
+ },
+ {
+  "slug": "forgiveness",
+  "route": "/studyguides/",
+  "old": "The Hardest Word",
+  "new": "Forgiveness: A Bible Study on the Hardest Word",
+  "query": "bible study on forgiveness",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "pastoral-health",
+  "route": "/studyguides/",
+  "old": "The Health of the Pastor: A Study for Leaders and Those Who Love Them",
+  "new": "Pastoral Health: A Study for Leaders and Those Who Love Them",
+  "query": "pastor burnout study for leaders",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-beatitudes",
+  "route": "/studyguides/",
+  "old": "The Kingdom Turned Upside Down",
+  "new": "The Beatitudes: A Bible Study on the Kingdom of God",
+  "query": "beatitudes bible study",
+  "kicker": "The Kingdom Turned Upside Down",
+  "keep": false
+ },
+ {
+  "slug": "parenting-formation",
+  "route": "/studyguides/",
+  "old": "The Long Obedience of Parenting",
+  "new": "Parenting: A Bible Study on Forming a Child's Faith",
+  "query": "christian parenting bible study",
+  "kicker": "The Long Obedience of Parenting",
+  "keep": false
+ },
+ {
+  "slug": "friendship",
+  "route": "/studyguides/",
+  "old": "The Love We Forgot",
+  "new": "Friendship: A Bible Study on the Love We Forgot",
+  "query": "bible study on friendship",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-lords-prayer",
+  "route": "/studyguides/",
+  "old": "The Only Prayer Jesus Taught",
+  "new": "The Lord's Prayer: A Bible Study Line by Line",
+  "query": "lords prayer bible study",
+  "kicker": "The Only Prayer Jesus Taught",
+  "keep": false
+ },
+ {
+  "slug": "hospitality",
+  "route": "/studyguides/",
+  "old": "The Open Door",
+  "new": "Hospitality: A Bible Study on the Open Door",
+  "query": "bible study on hospitality",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "generosity",
+  "route": "/studyguides/",
+  "old": "The Open Hand",
+  "new": "Generosity: A Bible Study on Giving",
+  "query": "bible study on generosity and giving",
+  "kicker": "The Open Hand",
+  "keep": false
+ },
+ {
+  "slug": "lament",
+  "route": "/studyguides/",
+  "old": "The Prayers We Were Never Taught",
+  "new": "Lament: A Bible Study on Praying Your Pain",
+  "query": "bible study on lament",
+  "kicker": "The Prayers We Were Never Taught",
+  "keep": false
+ },
+ {
+  "slug": "sabbath",
+  "route": "/studyguides/",
+  "old": "The Rest We Refuse",
+  "new": "Sabbath: A Bible Study on Rest and Hurry",
+  "query": "bible study on sabbath rest",
+  "kicker": "The Rest We Refuse",
+  "keep": false
+ },
+ {
+  "slug": "identity",
+  "route": "/studyguides/",
+  "old": "The Self You Were Sold: Identity in a Self-Made Age",
+  "new": "Identity: A Bible Study on Who You Actually Are",
+  "query": "bible study on identity in christ",
+  "kicker": "The Self You Were Sold",
+  "keep": false
+ },
+ {
+  "slug": "the-parables",
+  "route": "/studyguides/",
+  "old": "The Stories That Undo You",
+  "new": "The Parables: A Bible Study on the Stories of Jesus",
+  "query": "parables of jesus bible study",
+  "kicker": "The Stories That Undo You",
+  "keep": false
+ },
+ {
+  "slug": "the-undivided-life",
+  "route": "/studyguides/",
+  "old": "The Undivided Life",
+  "new": "The Undivided Life: A Study on Faith Beyond Sunday",
+  "query": "integrating faith and daily life study",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "spiritual-warfare",
+  "route": "/studyguides/",
+  "old": "The Unseen Battle",
+  "new": "Spiritual Warfare: A Bible Study on the Unseen Battle",
+  "query": "bible study on spiritual warfare",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "baptism-and-communion",
+  "route": "/studyguides/",
+  "old": "The Water and the Table",
+  "new": "Baptism and Communion: A Bible Study on the Sacraments",
+  "query": "bible study on baptism and communion",
+  "kicker": "The Water and the Table",
+  "keep": false
+ },
+ {
+  "slug": "mental-health",
+  "route": "/studyguides/",
+  "old": "The Weight You Carry",
+  "new": "Mental Health: A Bible Study on the Weight You Carry",
+  "query": "christian bible study on mental health",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "work-and-vocation",
+  "route": "/studyguides/",
+  "old": "The Work of Our Hands",
+  "new": "Work and Vocation: A Bible Study on Faith and Your Job",
+  "query": "bible study on work and vocation",
+  "kicker": "The Work of Our Hands",
+  "keep": false
+ },
+ {
+  "slug": "womanhood",
+  "route": "/studyguides/",
+  "old": "Women of Valor",
+  "new": "Biblical Womanhood: A Bible Study on Women of Valor",
+  "query": "bible study on biblical womanhood",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "habits-and-formation",
+  "route": "/studyguides/",
+  "old": "You Become What You Repeat",
+  "new": "Spiritual Habits: A Bible Study on Formation",
+  "query": "bible study on spiritual habits",
+  "kicker": "You Become What You Repeat",
+  "keep": false
  }
 ]

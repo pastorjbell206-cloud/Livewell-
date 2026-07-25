@@ -1,6 +1,6 @@
 {
   "slug": "marriage",
-  "title": "Covenant",
+  "title": "Marriage: A Bible Study on Covenant Love",
   "subtitle": "A five-session study on marriage as covenant, past the tips, into the cross.",
   "summary": "This study is for married couples, engaged couples, and the small groups that carry them, who are tired of marriage taught as a list of techniques and want to know what the thing actually is. It walks slowly through five sessions on covenant against contract, on conflict and the long obedience of forgiveness, on headship and submission handled as mutual self-giving and never as a license to rule, on sex and faithfulness, on money and in-laws as the real pressure points where the vows get tested, and on the gospel shape of staying. It is built so a busy couple or a volunteer can lead it with no preparation. Every question carries the answer behind it. Every silence has a backup. Every session ends in prayer rather than in the argument the couple drove to group already having.\n\nThis is not a study that stands above marriage and dispenses advice. The writer is married, has five sons, and writes from inside the room where two people who love each other still wound each other on a Tuesday over nothing. He does not point from a safe distance. He has been the husband who kept a record he swore he had forgiven, who confused leading with getting his way, who let a screen become the easier thing to turn toward. He writes from inside the indictment. So will you. And the one place this study will not go, ever, is to tell anyone that the covenant is a command to endure being harmed. Where there is abuse there is no covenant to keep, only a person to protect and a sin to name, and the study says so plainly and points toward safety and help. The covenant images Christ laying his life down. It was never a permission for one spouse to take another's.",
   "audience": "Married couples, engaged couples, and small groups",
@@ -12,18 +12,55 @@
       "title": "Covenant, Not Contract",
       "aim": "To name marriage as a covenant that images Christ and the church, not a contract for mutual benefit, and to refuse both the romanticism that expects the spouse to complete you and the cynicism that treats the vow as a deal you keep while it pays.",
       "summary": "A man sat across from Bell after fourteen years of marriage and said, with the calm of someone reporting weather, that he and his wife had simply grown apart, that the arrangement no longer worked for either of them. He was not cruel. He was honest about a thing he had assumed all along, that marriage is a contract, and a contract is kept while it delivers and dissolved when it does not. The real question is not whether marriage is hard but what kind of thing it is, because you keep a contract and a contract for as long as it serves you, and you keep a covenant and a covenant for as long as you both shall live. Scripture never calls marriage a contract. It calls it a covenant, and it grounds it in the strangest place, in two becoming one flesh, and then it does something stranger, it makes the whole thing an image of Christ and the church. Bell takes the strong case for the contract view, that adults should be free to leave an arrangement that has stopped making them happy, that to bind two people past the point of love is cruelty dressed as virtue. There is truth in it. A marriage can become a place of harm, and the covenant is never a command to endure that. But the contract view cannot survive the vow it asks people to make, which promises love precisely for the seasons when love does not feel like delivering. The covenant is not a contract with better branding. It is a different thing entirely, a promise that holds the person when the feeling has left the building, the way God held Israel when Israel was unlovely. He set my love on you, the Lord says, not because you were worth it but because I am the kind of God who keeps his word.",
-      "keyScripture": { "ref": "Genesis 2:24", "why": "Therefore a man shall leave his father and his mother and hold fast to his wife, and they shall become one flesh, naming marriage not as a partnership of two who stay separate but as a covenant union, one flesh, that you do not dissolve without tearing." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Genesis 2:24",
+        "why": "Therefore a man shall leave his father and his mother and hold fast to his wife, and they shall become one flesh, naming marriage not as a partnership of two who stay separate but as a covenant union, one flesh, that you do not dissolve without tearing."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Bell says most of us got married believing it was a covenant and have lived it as a contract, kept while it delivers. Before tonight, which one were you actually running your marriage on?", "behind": "Surface the default before defining anything. Most couples will say covenant with their mouths and run a contract with their hands, keeping score, measuring whether the arrangement still serves them. The point is not to settle it yet but to expose the gap between the word said at the altar and the thing lived in the kitchen. Land it on honesty, not on the right answer." },
-        { "q": "A contract is kept as long as it serves you. A covenant is kept for as long as you both shall live. Where in your marriage have you quietly been keeping it only while it served you, and how would you know?", "behind": "Push past the abstract. You want each person to find the actual place the contract logic lives, the withdrawn affection used as a lever, the kindness rationed to match the kindness received. If they cannot find it, that itself is worth noticing, because the contract usually hides as fairness, and the most respectable contract never calls itself one." },
-        { "q": "Bell takes the strong case for the contract view, that adults should be free to leave what no longer makes them happy. What is true in that you do not want to lose?", "behind": "Protect the even-handedness from the start, and protect the vulnerable too. The contract view is right that no one should be chained inside harm, that a marriage can become a place of real danger, and the covenant is never a command to endure that. Make sure no one hears the session as binding a person to cruelty. The covenant honors the person. It does not erase her safety." },
-        { "q": "Scripture grounds marriage in one flesh and then makes it an image of Christ and the church. What changes when you hear that your ordinary marriage is meant to show something true about how God loves?", "behind": "This is the theological center. The marriage is not the point in itself, it is a sign pointing past itself to a covenant love that holds the unlovely. Do not let it drift into pressure or performance. The point is relief, not a higher bar. The same love that holds your spouse on a bad week is the love that holds you before God on your worst one." },
-        { "q": "Bell confesses he has kept his own marriage as a contract more often than he wants to admit, measuring, withdrawing, keeping a quiet ledger. Where have you done the same?", "behind": "Move from diagnosis to self-implication. You are not hunting for confession to shame anyone, and never in front of a spouse in a way that wounds. You want each person inside the indictment, including the leader, because grace means nothing until the law has named you. Go first if the room is slow, and confess your own ledger." }
+        {
+          "q": "Bell says most of us got married believing it was a covenant and have lived it as a contract, kept while it delivers. Before tonight, which one were you actually running your marriage on?",
+          "behind": "Surface the default before defining anything. Most couples will say covenant with their mouths and run a contract with their hands, keeping score, measuring whether the arrangement still serves them. The point is not to settle it yet but to expose the gap between the word said at the altar and the thing lived in the kitchen. Land it on honesty, not on the right answer."
+        },
+        {
+          "q": "A contract is kept as long as it serves you. A covenant is kept for as long as you both shall live. Where in your marriage have you quietly been keeping it only while it served you, and how would you know?",
+          "behind": "Push past the abstract. You want each person to find the actual place the contract logic lives, the withdrawn affection used as a lever, the kindness rationed to match the kindness received. If they cannot find it, that itself is worth noticing, because the contract usually hides as fairness, and the most respectable contract never calls itself one."
+        },
+        {
+          "q": "Bell takes the strong case for the contract view, that adults should be free to leave what no longer makes them happy. What is true in that you do not want to lose?",
+          "behind": "Protect the even-handedness from the start, and protect the vulnerable too. The contract view is right that no one should be chained inside harm, that a marriage can become a place of real danger, and the covenant is never a command to endure that. Make sure no one hears the session as binding a person to cruelty. The covenant honors the person. It does not erase her safety."
+        },
+        {
+          "q": "Scripture grounds marriage in one flesh and then makes it an image of Christ and the church. What changes when you hear that your ordinary marriage is meant to show something true about how God loves?",
+          "behind": "This is the theological center. The marriage is not the point in itself, it is a sign pointing past itself to a covenant love that holds the unlovely. Do not let it drift into pressure or performance. The point is relief, not a higher bar. The same love that holds your spouse on a bad week is the love that holds you before God on your worst one."
+        },
+        {
+          "q": "Bell confesses he has kept his own marriage as a contract more often than he wants to admit, measuring, withdrawing, keeping a quiet ledger. Where have you done the same?",
+          "behind": "Move from diagnosis to self-implication. You are not hunting for confession to shame anyone, and never in front of a spouse in a way that wounds. You want each person inside the indictment, including the leader, because grace means nothing until the law has named you. Go first if the room is slow, and confess your own ledger."
+        }
       ],
       "objections": [
-        { "objection": "Two adults who no longer love each other and have honestly grown apart should be free to part as friends. Forcing people to stay in a dead marriage is cruelty dressed up as faithfulness, and God is not glorified by two miserable people.", "response": "Sit with what is true, because there is real truth here. No one should be chained inside a marriage that has become a place of harm, and the covenant is never a command to endure abuse, contempt, or danger. God is not honored by a person destroyed in the name of staying. Grant all of that without hedging. Then name the gentler error. The contract view assumes the feeling is the marriage, so when the feeling leaves, the marriage is over, and the vow becomes a lie you keep until it costs you. But the vow you actually made promised love for the seasons love does not feel like giving. Covenant love is not the reward for compatibility. It is the thing that outlasts its absence, the way God held Israel when Israel had grown cold, and very often the feeling that was declared dead turns out only to have been waiting for the covenant to act first." },
-        { "objection": "Marriage is just a piece of paper, a social contract the state and the church use to manage property and children. Strip the religion off it and it is a legal arrangement between two consenting adults, nothing more.", "response": "Grant what the cynic sees clearly, because he is not entirely wrong. Marriage does carry legal weight, it does order property and protect children, and the church has at times treated it as little more than a transaction to be regulated. But the cynic cannot account for what the vow actually says. No contract asks you to promise for worse, for poorer, in sickness, until death. Contracts are written precisely to be escaped when the terms turn bad. The marriage vow runs the opposite direction, binding you exactly where a contract would release you, which means it is not a contract at all but a covenant, and the only thing that explains a promise built to survive its own disappointment is that it images a God who made one." }
+        {
+          "objection": "Two adults who no longer love each other and have honestly grown apart should be free to part as friends. Forcing people to stay in a dead marriage is cruelty dressed up as faithfulness, and God is not glorified by two miserable people.",
+          "response": "Sit with what is true, because there is real truth here. No one should be chained inside a marriage that has become a place of harm, and the covenant is never a command to endure abuse, contempt, or danger. God is not honored by a person destroyed in the name of staying. Grant all of that without hedging. Then name the gentler error. The contract view assumes the feeling is the marriage, so when the feeling leaves, the marriage is over, and the vow becomes a lie you keep until it costs you. But the vow you actually made promised love for the seasons love does not feel like giving. Covenant love is not the reward for compatibility. It is the thing that outlasts its absence, the way God held Israel when Israel had grown cold, and very often the feeling that was declared dead turns out only to have been waiting for the covenant to act first."
+        },
+        {
+          "objection": "Marriage is just a piece of paper, a social contract the state and the church use to manage property and children. Strip the religion off it and it is a legal arrangement between two consenting adults, nothing more.",
+          "response": "Grant what the cynic sees clearly, because he is not entirely wrong. Marriage does carry legal weight, it does order property and protect children, and the church has at times treated it as little more than a transaction to be regulated. But the cynic cannot account for what the vow actually says. No contract asks you to promise for worse, for poorer, in sickness, until death. Contracts are written precisely to be escaped when the terms turn bad. The marriage vow runs the opposite direction, binding you exactly where a contract would release you, which means it is not a contract at all but a covenant, and the only thing that explains a promise built to survive its own disappointment is that it images a God who made one."
+        }
       ],
       "quietRoomQuestion": "What is the one promise you made at your wedding that you have quietly stopped keeping, and what excuse have you given yourself for stopping?",
       "practice": "This week, notice once when you treat your spouse on contract terms, withholding kindness because you did not receive it, keeping the ledger even. Do not announce it. Just name the temperature to yourself, and then do the covenant thing instead, the kindness that is not earned, and write down what happened in you when you gave it without being paid first.",
@@ -35,17 +72,41 @@
       ],
       "teaching": "A man sat across from Bell after fourteen years of marriage and said, with the flat calm of someone reporting the weather, that he and his wife had simply grown apart, that the arrangement no longer worked for either of them. He was not cruel and he was not lying. He was telling the truth about a thing he had assumed from the day he said his vows, that marriage is a contract, and a contract is a sensible thing you keep while it delivers and dissolve when it stops. We begin there, because the real question is not whether marriage is hard. Everyone knows it is hard. The real question is what kind of thing it is, because the kind of thing it is decides everything about what you do when it gets hard. A contract you keep as long as it serves you. A covenant you keep as long as you both shall live. Scripture never once calls marriage a contract. It calls it a covenant, and it grounds it in the oldest text, in a man and a woman becoming one flesh, and then it does something that should stop us cold. It makes the whole ordinary, exhausting business of marriage an image of Christ and the church. Take the strong case for the other view, because thoughtful people make it and it deserves an honest hearing. The contract view says that two adults who no longer love each other should be free to part, that binding people past the point of love is cruelty dressed as virtue, that God is not glorified by two miserable people locked in a dead house. Grant what is true, and a great deal is. No one should be chained inside a marriage that has become a place of harm. The covenant is never, on any reading, a command to endure abuse or contempt or danger, and any teaching that uses the word covenant to trap a person in that is not teaching Scripture, it is committing a sin with a Bible in its hand. Hold that clearly, because the rest of the session means nothing if the vulnerable do not hear it. But now watch what the contract view cannot survive. It cannot survive the vow it asks people to make. No contract on earth asks you to promise for better or worse, for richer or poorer, in sickness and in health. Contracts are written to be escaped the moment the terms turn against you. The marriage vow is written to bind you precisely where a contract would let you go, which means the vow is not a contract at all. It is a covenant, and a covenant is a promise that holds the person when the feeling has left the building. Here is where I have to stand inside it, because the law names the writer before the reader. I have kept my own marriage as a contract more often than I want to put in print. I have measured, withdrawn affection and called it being busy, rationed kindness to match what I felt I had received, kept a quiet ledger I would have denied keeping. I have five sons watching how their father treats their mother, learning what a covenant looks like from a man who keeps forgetting it is one. The contract logic is not the obvious villain's sin. It hides inside fairness, inside reasonableness, inside the perfectly defensible feeling that I will give what I get. Only after that lands does the gospel mean anything, and then it means everything, because the model for the marriage covenant is not a happy couple. It is the cross. He loved the church and gave himself up for her, and he set his love on Israel not because Israel was lovely but because he is the kind of God who keeps his word to people who do not keep theirs. That is the love the vow was always reaching for, and the only love strong enough to keep it.",
       "scriptureStudy": [
-        { "ref": "Genesis 2:18", "note": "It is not good that the man should be alone. The covenant begins not as a contract two parties negotiate but as a gift God gives to answer a loneliness he names before the human does. Marriage is God's idea before it is ours." },
-        { "ref": "Genesis 2:23", "note": "This at last is bone of my bones and flesh of my flesh. The first words spoken by a human being are a poem of recognition, not a list of terms. The covenant is built on belonging, not on benefit." },
-        { "ref": "Genesis 2:24", "note": "They shall become one flesh. One flesh is not a metaphor for a good partnership. It names a union so real that to end it is to tear something, which is why divorce is described everywhere in Scripture as a wound and never as a clean exit." },
-        { "ref": "Malachi 2:14", "note": "The Lord was witness between you and the wife of your youth, your companion and your wife by covenant. God calls himself the witness to the vow, which means the marriage was never a private deal between two people. A third party was standing there, and he remembers." },
-        { "ref": "Ephesians 5:31-32", "note": "The two shall become one flesh. This mystery is profound, and I am saying that it refers to Christ and the church. Paul says the one-flesh union was always pointing past itself to a larger covenant, so your marriage is a sign of something it did not invent." },
-        { "ref": "Hosea 2:19-20", "note": "I will betroth you to me forever in righteousness and in steadfast love and in mercy, and you shall know the Lord. God describes his covenant with an unfaithful people in the language of a wedding, which tells you what kind of love the marriage vow was always imitating." },
-        { "ref": "Deuteronomy 7:7-8", "note": "It was not because you were more in number that the Lord set his love on you, but because the Lord loves you and is keeping the oath he swore. Covenant love is not the reward for being lovely. It is the cause of the loveliness, and it acts first." }
+        {
+          "ref": "Genesis 2:18",
+          "note": "It is not good that the man should be alone. The covenant begins not as a contract two parties negotiate but as a gift God gives to answer a loneliness he names before the human does. Marriage is God's idea before it is ours."
+        },
+        {
+          "ref": "Genesis 2:23",
+          "note": "This at last is bone of my bones and flesh of my flesh. The first words spoken by a human being are a poem of recognition, not a list of terms. The covenant is built on belonging, not on benefit."
+        },
+        {
+          "ref": "Genesis 2:24",
+          "note": "They shall become one flesh. One flesh is not a metaphor for a good partnership. It names a union so real that to end it is to tear something, which is why divorce is described everywhere in Scripture as a wound and never as a clean exit."
+        },
+        {
+          "ref": "Malachi 2:14",
+          "note": "The Lord was witness between you and the wife of your youth, your companion and your wife by covenant. God calls himself the witness to the vow, which means the marriage was never a private deal between two people. A third party was standing there, and he remembers."
+        },
+        {
+          "ref": "Ephesians 5:31-32",
+          "note": "The two shall become one flesh. This mystery is profound, and I am saying that it refers to Christ and the church. Paul says the one-flesh union was always pointing past itself to a larger covenant, so your marriage is a sign of something it did not invent."
+        },
+        {
+          "ref": "Hosea 2:19-20",
+          "note": "I will betroth you to me forever in righteousness and in steadfast love and in mercy, and you shall know the Lord. God describes his covenant with an unfaithful people in the language of a wedding, which tells you what kind of love the marriage vow was always imitating."
+        },
+        {
+          "ref": "Deuteronomy 7:7-8",
+          "note": "It was not because you were more in number that the Lord set his love on you, but because the Lord loves you and is keeping the oath he swore. Covenant love is not the reward for being lovely. It is the cause of the loveliness, and it acts first."
+        }
       ],
       "goingDeeper": "Press into the history the session only gestures at, because the West did not always think of marriage the way it now does, and the drift is worth tracing. For most of Christian history marriage was understood as a covenant before God and the community, a public and binding thing that ordered far more than the happiness of the two people inside it. The shift that produced the contract instinct came slowly, and it came partly through the rise of what scholars have called the companionate marriage and then the soulmate ideal, the conviction that the purpose of marriage is the emotional fulfillment of the spouses, so that when the fulfillment fades the purpose is gone. A group can weigh this carefully against the genuine good the modern ideal recovered, which is that marriage should be a place of love and not only of duty, and that the older arrangements often hid real cruelty under permanence. Set that beside Stanley Hauerwas, who put the matter with a hard clarity worth sitting with, that we always marry the wrong person, because the person we marry is not the person we wake up next to a decade later, and the covenant is precisely the promise to learn to love the stranger our spouse keeps becoming. Then take the harder turn. Charles Taylor traced how the modern self came to treat all commitments as instrumental to personal self-expression, kept while they express the self and discarded when they constrain it, and the marriage covenant is exactly the kind of binding that self cannot abide, because it asks you to be held by a promise rather than to hold the promise yourself. The aim is not to despise the longing for a happy marriage, which is good, but to see how a culture taught itself to read the deepest covenant as the most disposable contract, and to ask where that teaching has gotten into your own marriage without your permission.",
       "caseStudy": "A husband in your group is faithful, present, and quietly proud of how much he provides and how little he asks for in return. When the conversation turns to the contract logic hiding inside fairness, he stiffens. He says he does not see the problem, that he gives more than he gets, that he has held up his end and would appreciate a little recognition rather than a lecture about ledgers. Here is the work for the leader, and it must honor him before it presses him. He is not wrong that he gives, and you should say so plainly and mean it. Sacrifice in a marriage is real and good and too rarely seen. But notice the phrase, more than he gets, because it is the ledger speaking out loud, the contract keeping its books inside the language of generosity. The danger of his position is not that he gives too much. It is that the giving has become a debt the marriage owes him, a tally he is waiting to have acknowledged, which is the opposite of covenant love, the love that gives itself up the way Christ did and keeps no record of what it spent. Do not let him reduce the whole matter to whether he is appreciated. Honor the giving fully, and still ask him, gently, whether he is loving his wife or invoicing her.",
-      "memoryVerse": { "ref": "Genesis 2:24", "text": "Therefore a man shall leave his father and his mother and hold fast to his wife, and they shall become one flesh." }
+      "memoryVerse": {
+        "ref": "Genesis 2:24",
+        "text": "Therefore a man shall leave his father and his mother and hold fast to his wife, and they shall become one flesh."
+      }
     },
     {
       "n": 2,
@@ -53,18 +114,55 @@
       "title": "Conflict, Forgiveness, and the Long Obedience",
       "aim": "To see conflict as the normal weather of two sinners in one covenant and forgiveness as the daily work that keeps the covenant alive, refusing both the avoidance that calls silence peace and the score-keeping that calls memory honesty.",
       "summary": "Bell once went three days without a real word to his wife over something so small that by day two he could no longer remember what it was, only that he was right and she had not yet admitted it. He calls it the small war, the kind no one outside the house ever sees, fought in clipped sentences and careful distance, and he says most marriages do not die in a single blow but bleed out slowly through a thousand of these. The real question is not how to avoid conflict, because two sinners sharing a bathroom will have conflict, but what conflict is for and what closes it. Scripture is unsentimental about it. It assumes you will be angry and commands you not to let the sun go down on it, assumes you will be wronged and commands you to forgive as you have been forgiven. Bell takes the strong case for honesty, that bottling resentment to keep a false peace is its own kind of lie, that the couple who never fights is often the couple who has stopped telling each other the truth. There is real wisdom in it. But the honesty case curdles when honesty becomes the permission to wound, when telling my truth means firing every grievance I have stored. The deeper problem is the ledger. We say we forgive and then keep the receipt, and a forgiveness with a receipt is not forgiveness, it is a loan. Then the reversal. The reason we cannot forgive the small wound is that we have never reckoned with the size of our own, the debt the cross paid that we keep trying to make our spouse repay in installments. Forgive as the Lord forgave you. Not because the wound was small. Because yours was canceled.",
-      "keyScripture": { "ref": "Ephesians 4:26-27", "why": "Be angry and do not sin, do not let the sun go down on your anger, and give no opportunity to the devil, naming anger as something to be closed daily and the slow nursing of it as the doorway through which the marriage is undone." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Ephesians 4:26-27",
+        "why": "Be angry and do not sin, do not let the sun go down on your anger, and give no opportunity to the devil, naming anger as something to be closed daily and the slow nursing of it as the doorway through which the marriage is undone."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Bell says most marriages do not die in one blow but bleed out through a thousand small wars no one outside the house ever sees. What does the small war look like in your house, and how do you fight it?", "behind": "Open on the actual texture, not the theory. The small war is clipped sentences, the cold shoulder, the chore done loudly to make a point. You want the room to recognize its own particular weapons, the silence or the sarcasm or the sudden busyness, before anyone talks about resolution. Name the weather honestly first." },
-        { "q": "Scripture commands not to let the sun go down on your anger. Why is the timing the command, and what happens in you on the nights you let the sun go all the way down on it?", "behind": "Press on the overnight cost. The command is not do not be angry, it is do not nurse it past dark, because anger held overnight hardens into a position and gives the devil, Paul says, an opportunity. Help the room feel that the unclosed conflict is not neutral while it waits. It is working, building a case, recruiting old grievances." },
-        { "q": "Bell takes the strong case for honesty, that the couple who never fights has often just stopped telling the truth. What is true in that, and where does honesty cross over into permission to wound?", "behind": "Hold both halves. False peace is a real lie, and avoidance is not virtue. But the line is real, and crossing it is common, when honesty becomes the cover for cruelty, for emptying the stored arsenal in the name of finally being real. Help them locate the line in their own fighting without shaming the spouse who tends toward silence." },
-        { "q": "Bell says we claim to forgive and then keep the receipt, and a forgiveness with a receipt is a loan. Where are you holding a receipt on your spouse, and what does keeping it let you do?", "behind": "This is the heart of the session. The receipt is the remembered offense kept ready to produce in the next fight. It feels like honesty, like just remembering what happened, but it functions as a weapon held in reserve. Press gently on what the receipt buys, usually the upper hand, the moral high ground, the right to be the wronged one. Go first and name your own." },
-        { "q": "Bell says we cannot forgive the small wound because we have never reckoned with the size of our own. How does the cross change the math of forgiving your spouse?", "behind": "Close on the reversal and the gospel. The parable of the unforgiving servant is exact here, the man forgiven a fortune who throttles a neighbor over pocket change. The point is not that the spouse's wound is nothing, it is that ours was everything and was canceled. Invite the room to feel the disproportion, and let it loosen the grip on the receipt." }
+        {
+          "q": "Bell says most marriages do not die in one blow but bleed out through a thousand small wars no one outside the house ever sees. What does the small war look like in your house, and how do you fight it?",
+          "behind": "Open on the actual texture, not the theory. The small war is clipped sentences, the cold shoulder, the chore done loudly to make a point. You want the room to recognize its own particular weapons, the silence or the sarcasm or the sudden busyness, before anyone talks about resolution. Name the weather honestly first."
+        },
+        {
+          "q": "Scripture commands not to let the sun go down on your anger. Why is the timing the command, and what happens in you on the nights you let the sun go all the way down on it?",
+          "behind": "Press on the overnight cost. The command is not do not be angry, it is do not nurse it past dark, because anger held overnight hardens into a position and gives the devil, Paul says, an opportunity. Help the room feel that the unclosed conflict is not neutral while it waits. It is working, building a case, recruiting old grievances."
+        },
+        {
+          "q": "Bell takes the strong case for honesty, that the couple who never fights has often just stopped telling the truth. What is true in that, and where does honesty cross over into permission to wound?",
+          "behind": "Hold both halves. False peace is a real lie, and avoidance is not virtue. But the line is real, and crossing it is common, when honesty becomes the cover for cruelty, for emptying the stored arsenal in the name of finally being real. Help them locate the line in their own fighting without shaming the spouse who tends toward silence."
+        },
+        {
+          "q": "Bell says we claim to forgive and then keep the receipt, and a forgiveness with a receipt is a loan. Where are you holding a receipt on your spouse, and what does keeping it let you do?",
+          "behind": "This is the heart of the session. The receipt is the remembered offense kept ready to produce in the next fight. It feels like honesty, like just remembering what happened, but it functions as a weapon held in reserve. Press gently on what the receipt buys, usually the upper hand, the moral high ground, the right to be the wronged one. Go first and name your own."
+        },
+        {
+          "q": "Bell says we cannot forgive the small wound because we have never reckoned with the size of our own. How does the cross change the math of forgiving your spouse?",
+          "behind": "Close on the reversal and the gospel. The parable of the unforgiving servant is exact here, the man forgiven a fortune who throttles a neighbor over pocket change. The point is not that the spouse's wound is nothing, it is that ours was everything and was canceled. Invite the room to feel the disproportion, and let it loosen the grip on the receipt."
+        }
       ],
       "objections": [
-        { "objection": "Forgiving every time just teaches my spouse there are no consequences. Real love holds people accountable, and constant forgiveness is how people get walked on for years and call it being a good Christian.", "response": "Grant the real fear, because it is pointing at something true. Forgiveness is not pretending nothing happened, it is not the erasing of consequences, and it is certainly not the doormat theology that has kept people inside harm for years in the name of grace. Where there is a pattern of abuse, forgiveness does not mean staying in reach of it, and the study will say that plainly. Accountability and forgiveness are not enemies. But hear the distinction. Forgiveness is the release of your right to make the other person pay, and you can release that right while still naming the wrong, still asking for change, still setting a boundary that protects. What forgiveness refuses is the receipt, the stored debt produced again and again to win. You can forgive fully and still expect your spouse to grow. What you cannot do is forgive and keep collecting, because that was never forgiveness, only a debt restructured." },
-        { "objection": "I have tried to forgive, but I cannot just decide to feel differently about what was done to me. Telling me to forgive when the hurt is still there is asking me to fake it.", "response": "Honor the honesty, because the confusion underneath it is common and worth clearing. Forgiveness is not a feeling you manufacture, and anyone who tells you to summon warm emotion toward someone who wounded you is asking for a lie. Forgiveness is first a decision, a release of the claim, made before the feeling has caught up and often long before it does. You forgive the way you take medicine, not the way you feel a mood, choosing again each morning to cancel the debt you keep finding back on the books. The feeling, when it comes, comes as fruit and not as the price of entry. And you do not do it on your own steam. You do it as a person who has been forgiven a debt you could never feel your way into deserving to have canceled, which is why the order in Scripture is always grace first, then the command, forgive as you have been forgiven." }
+        {
+          "objection": "Forgiving every time just teaches my spouse there are no consequences. Real love holds people accountable, and constant forgiveness is how people get walked on for years and call it being a good Christian.",
+          "response": "Grant the real fear, because it is pointing at something true. Forgiveness is not pretending nothing happened, it is not the erasing of consequences, and it is certainly not the doormat theology that has kept people inside harm for years in the name of grace. Where there is a pattern of abuse, forgiveness does not mean staying in reach of it, and the study will say that plainly. Accountability and forgiveness are not enemies. But hear the distinction. Forgiveness is the release of your right to make the other person pay, and you can release that right while still naming the wrong, still asking for change, still setting a boundary that protects. What forgiveness refuses is the receipt, the stored debt produced again and again to win. You can forgive fully and still expect your spouse to grow. What you cannot do is forgive and keep collecting, because that was never forgiveness, only a debt restructured."
+        },
+        {
+          "objection": "I have tried to forgive, but I cannot just decide to feel differently about what was done to me. Telling me to forgive when the hurt is still there is asking me to fake it.",
+          "response": "Honor the honesty, because the confusion underneath it is common and worth clearing. Forgiveness is not a feeling you manufacture, and anyone who tells you to summon warm emotion toward someone who wounded you is asking for a lie. Forgiveness is first a decision, a release of the claim, made before the feeling has caught up and often long before it does. You forgive the way you take medicine, not the way you feel a mood, choosing again each morning to cancel the debt you keep finding back on the books. The feeling, when it comes, comes as fruit and not as the price of entry. And you do not do it on your own steam. You do it as a person who has been forgiven a debt you could never feel your way into deserving to have canceled, which is why the order in Scripture is always grace first, then the command, forgive as you have been forgiven."
+        }
       ],
       "quietRoomQuestion": "What is the one offense you have told yourself you forgave but still reach for in the heat of an argument, and what would it cost you to actually let it go?",
       "practice": "This week, when the small war starts, do not let the sun go down on it. Before sleep, name the thing out loud to your spouse and close it, even badly, even if you are still partly right. And privately, find the one receipt you have been keeping, the offense you produce in fights, and tell God you are tearing it up. Write down what rises in you when you imagine the next argument without that receipt in your hand.",
@@ -76,17 +174,41 @@
       ],
       "teaching": "Bell once went three days without a real word to his wife over something so small that by the second day he could no longer remember what had started it, only that he was right and she had not yet admitted it. He calls it the small war. It is the kind of fighting no one outside the house ever sees, conducted in clipped sentences and careful distances, in chores performed a little too loudly and questions answered a little too briefly, and he is convinced that most marriages do not die in a single dramatic blow. They bleed out slowly through a thousand of these. So we begin not with the rare catastrophe but with the ordinary weather, because the real question is not how to avoid conflict. Two sinners sharing a bathroom and a budget and a bed will have conflict, and a marriage with none is usually not peaceful but anesthetized. The real question is what conflict is for and what actually closes it. Scripture is bracingly unsentimental about this. It does not command you never to be angry. It assumes you will be, and commands instead that you not let the sun go down on it, that you not give the slow nursing of a grievance the opening it is looking for. Take the strong case for honesty first, because it is wise and it corrects a real error. The honesty case says that bottling resentment to keep a false peace is its own kind of lie, that the couple who never fights has very often simply stopped telling each other the truth, that the silence is not maturity but surrender. This is true, and the spouse who avoids every conflict to keep the temperature down is not keeping peace, only keeping quiet, and the unspoken thing does not die, it goes underground and grows. But watch where the honesty case curdles. It curdles the moment honesty becomes the permission to wound, when telling the truth means emptying the whole stored arsenal, when finally being real is the cover story for saying the cruelest accurate thing I have been saving. Honesty that exists to hurt is not honesty. It is cruelty that has found a respectable name. Underneath both the silence and the cruelty sits the deeper problem, and it is the one I know best in myself, the ledger. We say the words, I forgive you, and then we keep the receipt. We file the offense, date it, and hold it ready to produce in the next argument, and a forgiveness that keeps the receipt is not forgiveness at all. It is a loan, extended at interest, called in whenever we need the upper hand. I have done this in my own marriage more times than I can count. I have said I let something go and then watched myself reach for it three fights later, perfectly preserved, because I never actually released it, I only stopped mentioning it. Now the reversal, which is the whole gospel pressed into a marriage. The reason we cannot forgive the small wound is that we have never honestly reckoned with the size of our own. Jesus told the story exactly, the servant forgiven a debt he could never have repaid in ten lifetimes, who walks straight out and seizes a man by the throat over a sum you could find in a couch cushion. We are the first servant. We have been forgiven a debt against God that beggars description, the whole weight of it absorbed at the cross, and we walk out of that mercy and throttle our spouse over who was supposed to call the plumber. Forgive, Paul says, as the Lord forgave you. Not because what your spouse did was small, sometimes it was not. Forgive because what you did was enormous and it was canceled, and a person who has truly felt the cancellation cannot keep collecting from anyone else. That is the long obedience, the daily tearing up of the receipt, the closing of the day before the sun closes it for you, the choosing again each morning to release a claim you will find back on the books by noon. It is not romantic and it does not photograph well. It is just the work, done over decades, that keeps the covenant alive.",
       "scriptureStudy": [
-        { "ref": "Ephesians 4:26", "note": "Be angry and do not sin. Scripture does not forbid the anger, it disciplines it. Anger is not the failure, it is the energy that exposes that something matters, and the command is to handle it without letting it cross into sin." },
-        { "ref": "Ephesians 4:27", "note": "Give no opportunity to the devil. The unclosed conflict is not neutral while it waits overnight. Paul says it is an open door, and something walks through it, hardening a disagreement into a grudge and a grudge into a wall." },
-        { "ref": "Colossians 3:13", "note": "Forgiving each other, as the Lord has forgiven you, so you also must forgive. The measure of the forgiveness you owe is the forgiveness you received, which is bottomless, so the obligation has no ceiling you can reach and then stop." },
-        { "ref": "Matthew 18:21-22", "note": "Not seven times but seventy-seven times. Peter wants a number, a point past which he is allowed to keep the receipt. Jesus refuses to give him one, because a forgiveness with a final tally was never forgiveness, only a longer loan." },
-        { "ref": "Matthew 18:32-33", "note": "Should not you have had mercy on your fellow servant, as I had mercy on you? The unforgiving servant is condemned not for the original debt but for collecting from another after his own fortune was canceled. This is the math of every marriage fight." },
-        { "ref": "1 Peter 4:8", "note": "Love covers a multitude of sins. To cover is not to deny or to suppress, but to refuse to expose and exploit, to choose not to make a public exhibit of the wound you could so easily use. Covenant love guards the other even from your own grievance." },
-        { "ref": "James 1:19", "note": "Quick to hear, slow to speak, slow to anger. The order is the wisdom. The small war is almost always lost in the reversal of it, slow to hear, quick to speak, fast to anger, and the marriage that learns the right order survives the bad nights." }
+        {
+          "ref": "Ephesians 4:26",
+          "note": "Be angry and do not sin. Scripture does not forbid the anger, it disciplines it. Anger is not the failure, it is the energy that exposes that something matters, and the command is to handle it without letting it cross into sin."
+        },
+        {
+          "ref": "Ephesians 4:27",
+          "note": "Give no opportunity to the devil. The unclosed conflict is not neutral while it waits overnight. Paul says it is an open door, and something walks through it, hardening a disagreement into a grudge and a grudge into a wall."
+        },
+        {
+          "ref": "Colossians 3:13",
+          "note": "Forgiving each other, as the Lord has forgiven you, so you also must forgive. The measure of the forgiveness you owe is the forgiveness you received, which is bottomless, so the obligation has no ceiling you can reach and then stop."
+        },
+        {
+          "ref": "Matthew 18:21-22",
+          "note": "Not seven times but seventy-seven times. Peter wants a number, a point past which he is allowed to keep the receipt. Jesus refuses to give him one, because a forgiveness with a final tally was never forgiveness, only a longer loan."
+        },
+        {
+          "ref": "Matthew 18:32-33",
+          "note": "Should not you have had mercy on your fellow servant, as I had mercy on you? The unforgiving servant is condemned not for the original debt but for collecting from another after his own fortune was canceled. This is the math of every marriage fight."
+        },
+        {
+          "ref": "1 Peter 4:8",
+          "note": "Love covers a multitude of sins. To cover is not to deny or to suppress, but to refuse to expose and exploit, to choose not to make a public exhibit of the wound you could so easily use. Covenant love guards the other even from your own grievance."
+        },
+        {
+          "ref": "James 1:19",
+          "note": "Quick to hear, slow to speak, slow to anger. The order is the wisdom. The small war is almost always lost in the reversal of it, slow to hear, quick to speak, fast to anger, and the marriage that learns the right order survives the bad nights."
+        }
       ],
       "goingDeeper": "Take up the research the church too rarely lets inform it, and test it against Scripture rather than swallowing it whole. The marriage researcher John Gottman, after decades of watching couples in a lab, identified four behaviors that predict the end of a marriage with unsettling accuracy, contempt, criticism, defensiveness, and stonewalling, and named contempt the most corrosive of the four, the slow poison of looking down on the person you vowed to honor. A group should notice how exactly this confirms what Scripture already said, that the small war is fought in precisely these weapons, and that contempt, the sneer behind the silence, is the spirit Paul forbids when he tells husbands and wives to honor one another. The secular finding is real common grace, true as far as it goes, and it goes only so far, because it can describe the disease and cannot supply the cure, which is a forgiveness the lab cannot manufacture. Set this beside Eugene Peterson, who borrowed the phrase a long obedience in the same direction to describe the whole Christian life, and apply it to marriage, where the long obedience is not the grand gesture but the ten thousand small repetitions of closing the day, releasing the claim, choosing the person again. Then press the hard theological question. If forgiveness in marriage is grounded in the cross, then the deepest threat to a marriage is not incompatibility but a failure to believe the gospel, a heart that has never truly felt the size of its own forgiven debt and therefore cannot stop billing its spouse. The aim is to hold the useful research and the deeper truth together, letting Gottman name the symptoms and letting the cross supply the only thing that actually heals them.",
       "caseStudy": "A wife in your group is the peacemaker, the one who smooths every conflict over, who cannot bear the cold distance and will apologize first even when she is not the one who erred, just to make the tension stop. When the session names false peace as a kind of lie, she is unsettled, because she has always believed her quickness to make peace was her best virtue. Here is the gentle work for the leader, and it must honor her before it presses her. Her instinct for peace is not nothing, it is a real grace, and a marriage needs the one who refuses to let the sun go down. But notice what her peacemaking may be costing, because the apology offered only to stop the tension does not close the conflict, it buries it, and the thing buried alive keeps growing underground. She is not forgiving, she is avoiding, and the resentment she swallows to keep things smooth is building a quiet account she may not even admit she keeps. Do not let her hear an attack on her kindness. Help her see the difference between the peace that closes a thing honestly and the quiet that only postpones it, and ask, gently, whether her fast apologies are love or fear, the covenant work of reconciliation or the management of her own discomfort.",
-      "memoryVerse": { "ref": "Colossians 3:13", "text": "Bearing with one another and, if one has a complaint against another, forgiving each other, as the Lord has forgiven you, so you also must forgive." }
+      "memoryVerse": {
+        "ref": "Colossians 3:13",
+        "text": "Bearing with one another and, if one has a complaint against another, forgiving each other, as the Lord has forgiven you, so you also must forgive."
+      }
     },
     {
       "n": 3,
@@ -94,18 +216,55 @@
       "title": "Headship and Submission Without Domination",
       "aim": "To read Ephesians 5 the way Paul wrote it, beginning with mutual submission and a husband commanded to die, refusing both the distortion that hears headship as a license to rule and the dismissal that throws the whole passage out, and to name abuse plainly as the violation of everything the text commands.",
       "summary": "No passage in the marriage texts has been more abused than Ephesians 5, and Bell means abused in both senses, misread and weaponized, used by men to demand a submission Paul never authorized and used by others to dismiss the whole thing as a relic of patriarchy. The real question is what Paul actually wrote, read in order, with the first verse left attached to the rest. Because the passage does not begin where the bad sermons begin. It begins, submit to one another out of reverence for Christ, and only then turns to wives and husbands, so that whatever submission means it is a species of a mutual self-giving already commanded of everyone. Then Paul does the thing that should have ended the domination reading forever. He spends three verses on the wife and nearly nine on the husband, and the husband's command is not rule, it is die. Love your wife as Christ loved the church and gave himself up for her. Headship in this text is cruciform, the headship of the one who washes feet and bleeds, the opposite of the boss and the tyrant. Bell takes the strong case for the egalitarian reading, that any language of headship has been used to cage and silence women, that the safest course is to drop it. He grants the history fully and grants that much harm has been done. But dropping the text loses the very thing that disarms the tyrant, the redefinition of headship as sacrifice. Then the hard, necessary verdict. A man who uses this passage to control, demean, or harm his wife has not obeyed it, he has violated it at its core, because the head Paul describes lays his life down and never takes hers. Marriage is never a command to endure abuse. The text that men have used to trap women is, read honestly, the text that frees them.",
-      "keyScripture": { "ref": "Ephesians 5:21", "why": "Submitting to one another out of reverence for Christ, the verse that governs everything after it, making all the marriage instructions a form of mutual self-giving and ruling out from the first word any reading of headship as one-way domination." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Ephesians 5:21",
+        "why": "Submitting to one another out of reverence for Christ, the verse that governs everything after it, making all the marriage instructions a form of mutual self-giving and ruling out from the first word any reading of headship as one-way domination."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Bell says Ephesians 5 begins with submit to one another, before it ever mentions wives or husbands. How does it change the passage to read that verse as the heading over everything that follows?", "behind": "Open by repairing the text most people received in fragments. The bad sermon starts at wives submit and never mentions the verse above it. Help the room feel that mutual submission is the frame, so that whatever follows is a particular shape of a self-giving asked of both. Do not resolve the harder questions yet, just restore the order Paul wrote." },
-        { "q": "Paul gives the wife three verses and the husband nearly nine, and the husband's command is to die, not to rule. Why do you think the heavier word, by far, falls on the man?", "behind": "Press on the asymmetry that cuts against the domination reading. If this were a charter for male control, Paul spent it strangely, lavishing the hard command on the husband and making it self-sacrifice unto death. Help the room see that the cruciform weight is on the head, which is exactly what the tyrant cannot abide and the servant willingly carries." },
-        { "q": "Bell takes the strong case for dropping the language of headship entirely, given how it has been used to cage women. What is true in that case, and what does dropping it cost?", "behind": "Hold both halves with real care, and protect the women in the room. The egalitarian reading is right about the history, the harm is real and vast, and no one should be made to defend abuse. But dropping the text also loses the redefinition that disarms the abuser, the headship that means die. Honor the concern fully before showing what the honest reading actually does to the tyrant." },
-        { "q": "What is the difference between a husband leading by laying his life down, as Christ did, and a husband who uses headship to get his way, and how would each one feel to live with?", "behind": "This is the concrete center, and it must be lived, not abstract. Cruciform headship looks like the husband who serves first, absorbs cost, considers his wife's good above his own. The counterfeit looks like demand and decision and final say. Ask the room what each actually feels like from the inside, because the lived difference is unmistakable even when the theology gets argued." },
-        { "q": "Bell says plainly that a man who uses this passage to control or harm his wife has not obeyed it but violated it, and that marriage is never a command to endure abuse. Why does naming this so directly matter, and what should it open the door to?", "behind": "Close with the necessary, protective verdict. This is not optional in this session. Some women have been taught that submission means enduring harm, and the leader must say clearly that it does not, that the covenant is never a cage, and that there is no shame in seeking safety and help. Have a resource ready. Make the room a place where the trapped person knows the door is open." }
+        {
+          "q": "Bell says Ephesians 5 begins with submit to one another, before it ever mentions wives or husbands. How does it change the passage to read that verse as the heading over everything that follows?",
+          "behind": "Open by repairing the text most people received in fragments. The bad sermon starts at wives submit and never mentions the verse above it. Help the room feel that mutual submission is the frame, so that whatever follows is a particular shape of a self-giving asked of both. Do not resolve the harder questions yet, just restore the order Paul wrote."
+        },
+        {
+          "q": "Paul gives the wife three verses and the husband nearly nine, and the husband's command is to die, not to rule. Why do you think the heavier word, by far, falls on the man?",
+          "behind": "Press on the asymmetry that cuts against the domination reading. If this were a charter for male control, Paul spent it strangely, lavishing the hard command on the husband and making it self-sacrifice unto death. Help the room see that the cruciform weight is on the head, which is exactly what the tyrant cannot abide and the servant willingly carries."
+        },
+        {
+          "q": "Bell takes the strong case for dropping the language of headship entirely, given how it has been used to cage women. What is true in that case, and what does dropping it cost?",
+          "behind": "Hold both halves with real care, and protect the women in the room. The egalitarian reading is right about the history, the harm is real and vast, and no one should be made to defend abuse. But dropping the text also loses the redefinition that disarms the abuser, the headship that means die. Honor the concern fully before showing what the honest reading actually does to the tyrant."
+        },
+        {
+          "q": "What is the difference between a husband leading by laying his life down, as Christ did, and a husband who uses headship to get his way, and how would each one feel to live with?",
+          "behind": "This is the concrete center, and it must be lived, not abstract. Cruciform headship looks like the husband who serves first, absorbs cost, considers his wife's good above his own. The counterfeit looks like demand and decision and final say. Ask the room what each actually feels like from the inside, because the lived difference is unmistakable even when the theology gets argued."
+        },
+        {
+          "q": "Bell says plainly that a man who uses this passage to control or harm his wife has not obeyed it but violated it, and that marriage is never a command to endure abuse. Why does naming this so directly matter, and what should it open the door to?",
+          "behind": "Close with the necessary, protective verdict. This is not optional in this session. Some women have been taught that submission means enduring harm, and the leader must say clearly that it does not, that the covenant is never a cage, and that there is no shame in seeking safety and help. Have a resource ready. Make the room a place where the trapped person knows the door is open."
+        }
       ],
       "objections": [
-        { "objection": "Headship and submission are just patriarchy with a Bible verse stapled on. The whole framework has been used to silence women and keep them under male control for centuries, and the only safe thing is to throw it out entirely.", "response": "Grant the history without flinching, because it is largely true. This passage has been weaponized to cage and silence women, and a great deal of real harm has been done in its name by men who should have known better, and the anger at that history is righteous. Where you must press is not on the harm but on the diagnosis, because the cure for a text that has been abused is to read it rightly, not to lose it. Read in order, the passage begins with mutual submission, spends its heaviest command on the husband, and defines his headship as dying for his wife the way Christ died for the church. That is not patriarchy, it is the opposite of it, the dismantling of male privilege at the foot of the cross. Throwing the text out loses the very thing that strips the tyrant of his cover, the redefinition that says the head is the one who bleeds and never the one who rules." },
-        { "objection": "But men have used this exact passage to justify controlling, demeaning, and even abusing their wives, telling them God commands them to submit no matter what. How can you defend a text with that track record?", "response": "Do not defend the abuse for one second, and say so first. A man who uses this passage to control, demean, or harm his wife has not obeyed it. He has violated it at its very heart, because Paul's husband lays down his life and never takes his wife's, serves and never seizes, and the demand for submission no matter what is the precise inversion of the text. Submission in Ephesians is the free self-giving of one person to a spouse who is busy dying for her, never the forced compliance of a person to one who harms her. So the marriage covenant is never, on any honest reading, a command to endure abuse. Where there is abuse, there is no covenant being kept, only one being broken, and the loving thing, the biblical thing, is to get to safety and to get help. Name it to the abuser as the sin it is, and tell the one in danger plainly that God is not asking her to stay in reach of harm." }
+        {
+          "objection": "Headship and submission are just patriarchy with a Bible verse stapled on. The whole framework has been used to silence women and keep them under male control for centuries, and the only safe thing is to throw it out entirely.",
+          "response": "Grant the history without flinching, because it is largely true. This passage has been weaponized to cage and silence women, and a great deal of real harm has been done in its name by men who should have known better, and the anger at that history is righteous. Where you must press is not on the harm but on the diagnosis, because the cure for a text that has been abused is to read it rightly, not to lose it. Read in order, the passage begins with mutual submission, spends its heaviest command on the husband, and defines his headship as dying for his wife the way Christ died for the church. That is not patriarchy, it is the opposite of it, the dismantling of male privilege at the foot of the cross. Throwing the text out loses the very thing that strips the tyrant of his cover, the redefinition that says the head is the one who bleeds and never the one who rules."
+        },
+        {
+          "objection": "But men have used this exact passage to justify controlling, demeaning, and even abusing their wives, telling them God commands them to submit no matter what. How can you defend a text with that track record?",
+          "response": "Do not defend the abuse for one second, and say so first. A man who uses this passage to control, demean, or harm his wife has not obeyed it. He has violated it at its very heart, because Paul's husband lays down his life and never takes his wife's, serves and never seizes, and the demand for submission no matter what is the precise inversion of the text. Submission in Ephesians is the free self-giving of one person to a spouse who is busy dying for her, never the forced compliance of a person to one who harms her. So the marriage covenant is never, on any honest reading, a command to endure abuse. Where there is abuse, there is no covenant being kept, only one being broken, and the loving thing, the biblical thing, is to get to safety and to get help. Name it to the abuser as the sin it is, and tell the one in danger plainly that God is not asking her to stay in reach of harm."
+        }
       ],
       "quietRoomQuestion": "If your spouse described, honestly, what it feels like to be led or to be loved by you, would the word that came to mind be sacrifice, or would it be something closer to control?",
       "practice": "Husbands, this week, find one decision you would normally make for your comfort or your way, and instead lay it down for your wife's good, quietly, without announcing it as a sacrifice. Wives, find one place you have been bracing against your husband out of old wounds, and offer trust where it is safe and earned. And both of you, before God, ask whether your marriage runs on mutual self-giving or on one person getting his way, and write down what you find. If what you find is harm, talk to the leader, and do not carry it alone.",
@@ -117,17 +276,41 @@
       ],
       "teaching": "No passage in all the marriage texts has been more abused than Ephesians 5, and Bell means abused in both directions at once. It has been misread, lifted out of its order and made to say what it does not, and it has been weaponized, used by men to demand a submission Paul never authorized and used by others, understandably, to throw the whole thing on the fire as a relic of patriarchy. So we have to do the slow work the bad sermons skip. We have to read what Paul actually wrote, in order, with the first verse left attached to the rest, because almost everything that has gone wrong with this passage went wrong by starting it one verse too late. The famous bad sermon begins, wives submit to your husbands, and builds a whole hierarchy on it. But that is not where Paul begins. He begins, submitting to one another out of reverence for Christ, and only then does he turn to wives and husbands. The mutual submission is the heading over the whole household, which means whatever the wife's submission is, it is a particular shape of a self-giving Paul has already commanded of every Christian to every other. Pull that first verse off and you get tyranny. Leave it on and you get something the tyrant cannot use. Then Paul does the thing that should have ended the domination reading two thousand years ago. He gives the wife three verses. He gives the husband nearly nine. And the husband's command is not rule, is not lead, is not decide, is not have the final say. The husband's command is die. Love your wife as Christ loved the church and gave himself up for her. The headship in this text is cruciform, modeled on the One who knelt with a towel and a basin and then climbed a cross, which makes it the exact opposite of the boss, the patriarch, the man who gets his way and calls it leadership. If this passage were a charter for male control, Paul spent it in the strangest possible way, lavishing the crushing command on the husband and making it self-sacrifice unto death. Take the strong case for dropping the language altogether, because it deserves a real hearing and the people who make it are often the wounded. The egalitarian reading says that any language of headship, however carefully defined, has been used to cage women, to silence them, to keep them small, and that the only safe course, given that history, is to drop it. Grant the history fully. The harm is real and it is vast, and I have watched it up close, women taught that submission meant swallowing cruelty, that God required them to stay in reach of a man who was destroying them. The anger at that is not sin, it is closer to the anger of the prophets. But here is what dropping the text costs, and it costs the wrong people. The thing that actually disarms the tyrant is not the deletion of the passage, it is the redefinition inside it, the sentence that says the head is the one who bleeds. Lose the text and you lose the only weapon strong enough to take the club out of the abuser's hand, which is the word from God himself that headship means death, his own, for her. And now the verdict, the hard and necessary one, and I will not soften it. A man who uses this passage to control, to demean, to frighten, or to harm his wife has not obeyed it. He has violated it at its very heart, because Paul's husband lays his life down and never once takes his wife's. The demand for submission no matter what is the precise inversion of what Paul wrote. So let it be said as plainly as it can be said. The marriage covenant is never a command to endure abuse. Where there is abuse there is no covenant being kept, there is only one being broken, and the faithful thing, the Christlike thing, is to get to safety and to get help, and there is no shame in it, only the courage the gospel honors. I say this as a husband who has felt the pull to confuse leading with getting my way, who has caught himself wanting the last word and dressing the wanting as headship. The cross does not let me keep that costume. The head Paul describes is not served. He serves. He is not first. He goes last and lowest. And the marvel of it is that the text men have used for centuries to trap women is, read honestly, in order, with the cross at the center, the text that frees them.",
       "scriptureStudy": [
-        { "ref": "Ephesians 5:21", "note": "Submitting to one another out of reverence for Christ. This is the governing verse, the heading over the whole passage. Mutual submission comes first, so everything after it is a shape of a self-giving already asked of both, never a one-way command." },
-        { "ref": "Ephesians 5:23", "note": "The husband is the head of the wife even as Christ is the head of the church, his body, and is himself its Savior. The model for head is Savior, the one who saves by dying. Strip Christ out of the analogy and you have stripped out everything that makes it safe." },
-        { "ref": "Ephesians 5:25", "note": "Husbands, love your wives, as Christ loved the church and gave himself up for her. The command to the husband is the heaviest in the passage, and it is sacrifice unto death. No husband who grasps this verse has any room left to demand his own way." },
-        { "ref": "Ephesians 5:26-27", "note": "That he might sanctify her, that he might present the church to himself in splendor. The husband's aim is his wife's flourishing, her becoming fully herself, the opposite of the diminishment that abuse and control produce. Headship exists for her glory, not his." },
-        { "ref": "Ephesians 5:28-29", "note": "He who loves his wife loves himself, for no one ever hated his own flesh, but nourishes and cherishes it. Because they are one flesh, harming her is harming himself. The man who damages his wife has not exercised authority, he has wounded his own body." },
-        { "ref": "Ephesians 5:33", "note": "Let each one of you love his wife as himself, and let the wife see that she respects her husband. Paul lands on love and respect, the two things each spouse most needs and most fails to give, not on rank and obedience. The summary is mutual, not hierarchical." },
-        { "ref": "1 Peter 3:7", "note": "Live with your wives in an understanding way, showing honor, so that your prayers may not be hindered. Peter says a husband who fails to honor his wife has his very prayers blocked. God takes the dishonoring of a wife so seriously that it interrupts the man's access to him." }
+        {
+          "ref": "Ephesians 5:21",
+          "note": "Submitting to one another out of reverence for Christ. This is the governing verse, the heading over the whole passage. Mutual submission comes first, so everything after it is a shape of a self-giving already asked of both, never a one-way command."
+        },
+        {
+          "ref": "Ephesians 5:23",
+          "note": "The husband is the head of the wife even as Christ is the head of the church, his body, and is himself its Savior. The model for head is Savior, the one who saves by dying. Strip Christ out of the analogy and you have stripped out everything that makes it safe."
+        },
+        {
+          "ref": "Ephesians 5:25",
+          "note": "Husbands, love your wives, as Christ loved the church and gave himself up for her. The command to the husband is the heaviest in the passage, and it is sacrifice unto death. No husband who grasps this verse has any room left to demand his own way."
+        },
+        {
+          "ref": "Ephesians 5:26-27",
+          "note": "That he might sanctify her, that he might present the church to himself in splendor. The husband's aim is his wife's flourishing, her becoming fully herself, the opposite of the diminishment that abuse and control produce. Headship exists for her glory, not his."
+        },
+        {
+          "ref": "Ephesians 5:28-29",
+          "note": "He who loves his wife loves himself, for no one ever hated his own flesh, but nourishes and cherishes it. Because they are one flesh, harming her is harming himself. The man who damages his wife has not exercised authority, he has wounded his own body."
+        },
+        {
+          "ref": "Ephesians 5:33",
+          "note": "Let each one of you love his wife as himself, and let the wife see that she respects her husband. Paul lands on love and respect, the two things each spouse most needs and most fails to give, not on rank and obedience. The summary is mutual, not hierarchical."
+        },
+        {
+          "ref": "1 Peter 3:7",
+          "note": "Live with your wives in an understanding way, showing honor, so that your prayers may not be hindered. Peter says a husband who fails to honor his wife has his very prayers blocked. God takes the dishonoring of a wife so seriously that it interrupts the man's access to him."
+        }
       ],
       "goingDeeper": "Press into the word Paul chose and the world he wrote into, because the cultural distance is where both the distortion and the dismissal usually hide. The Greek word kephale, head, has been argued over for decades, some scholars hearing authority and others hearing source, as the head is the source of the body, and a group should weigh the debate honestly rather than pretending it is settled, while noticing that on either reading the husband's command does not change, because it is to die for her, and a source that pours itself out is no more a tyrant than a savior who bleeds. Set this beside the Roman household codes that Paul's first readers knew, the rigid structures in which the male head held nearly absolute power over wife, children, and slaves, and notice what Paul does with the form. He borrows the shape of the household code and then detonates it from inside by addressing the wife as a moral agent, by spending his heaviest command on the husband, and by grounding everything in a Christ who emptied himself. To a first-century ear, the radical and even scandalous thing in this passage was never the call to the wife, which the culture assumed, but the call to the husband, which the culture had never heard. A group should hold this against the modern reading that hears only oppression, and ask whether the passage is more subversive than either the patriarchs or their critics have allowed. Then take the hardest and most pastoral turn, naming honestly that the church has a long and grievous record of using these texts to keep women in harm, and that repentance for that is owed, and that a right reading of the passage is itself part of the repair, because the same Paul who is quoted by abusers is the one who said the husband must love his wife as his own body and never hate his own flesh. The aim is to recover the text as the abused woman's ally, not her warden.",
       "caseStudy": "A husband in your group speaks warmly about being the spiritual leader of his home, about having the final say when he and his wife disagree, about how she has learned to trust his decisions. He is not harsh, and he clearly loves his family, and he believes he is simply obeying the passage. His wife, sitting beside him, says less and less as he talks. Here is the careful work for the leader, and it requires both honesty and gentleness, and a watchful eye on the wife. He is not an abuser, and you must not treat him as one, and his desire to lead his home toward God is a good desire. But the language of final say is not Paul's language, it is the household code Paul was busy detonating, and the question to put to him, kindly, is where in Ephesians 5 the husband is told he gets the final say, because the verses give him only the command to die. Ask him what his leadership has cost him lately, because cruciform headship is measured in what the husband lays down, not in what he decides. And watch the wife, because the quietness beside a confident husband can be peace and can be something else. Make a private moment available to her if she needs it. Honor his love for his family fully, and still move him off the throne the text never gave him and onto the cross the text actually commands.",
-      "memoryVerse": { "ref": "Ephesians 5:25", "text": "Husbands, love your wives, as Christ loved the church and gave himself up for her." }
+      "memoryVerse": {
+        "ref": "Ephesians 5:25",
+        "text": "Husbands, love your wives, as Christ loved the church and gave himself up for her."
+      }
     },
     {
       "n": 4,
@@ -135,18 +318,55 @@
       "title": "Sex, Faithfulness, and the Body That Belongs to Another",
       "aim": "To recover sex as a covenant sign and not a contract clause or a private appetite, to take faithfulness past the technicality of not committing adultery into the daily turning toward, and to name the quiet betrayals of attention that erode a covenant long before any line is crossed.",
       "summary": "Bell says the most dangerous lie about sex is not that it does not matter but that it is only physical, a need to be met like hunger, separable from the soul, because the moment you believe that you have made your body a thing you own rather than a thing you gave. The real question is what sex is, because the culture says it is recreation and a previous generation of the church said it was mainly a duty, and Scripture says something both of them miss, that it is a covenant sign, the renewal in the body of the one-flesh vow the whole marriage is. That is why Paul says the astonishing thing, that the wife does not have authority over her own body but the husband does, and the husband does not over his but the wife does, a mutual handing over that no contract could produce. Bell takes the strong case for the modern view, that the church has carried enormous shame about sex, that the body is good and pleasure is a gift and the old silence did real harm. He grants every bit of it. But the modern view, freeing sex from shame, also freed it from covenant, and a sign cut loose from the thing it signifies becomes a lie the body tells. Then he turns to faithfulness, and turns it past the line everyone watches. Adultery is not only the act. It begins in the slow turning away, the attention given elsewhere, the screen that is easier than the spouse, the emotional intimacy outsourced to someone who is not the one you vowed. Then the reversal and the self-implication. We guard the obvious line and lose the marriage by inches behind it, faithful in the body and absent in every other room. Faithfulness is not mainly the line you did not cross. It is the ten thousand small turnings toward the person you promised, on the days you would rather turn away.",
-      "keyScripture": { "ref": "1 Corinthians 7:3-4", "why": "The husband should give to his wife her conjugal rights, and likewise the wife to her husband, for the wife does not have authority over her own body, but the husband does, and likewise the husband does not have authority over his own body, but the wife does, naming sex as a mutual self-giving in which each has handed the body to the other, a covenant thing no contract could create." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "1 Corinthians 7:3-4",
+        "why": "The husband should give to his wife her conjugal rights, and likewise the wife to her husband, for the wife does not have authority over her own body, but the husband does, and likewise the husband does not have authority over his own body, but the wife does, naming sex as a mutual self-giving in which each has handed the body to the other, a covenant thing no contract could create."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Bell says the most dangerous lie about sex is that it is only physical, separable from the soul. Where have you absorbed that lie, and what does believing it do to a marriage over time?", "behind": "Open on the assumption, gently, because this is tender ground. The only physical lie is everywhere in the culture, and it quietly turns the body into a thing one owns rather than a thing one gave. Keep the room safe and unembarrassed, and do not let it become crude or clinical. The aim is to surface the assumption before naming what Scripture says instead." },
-        { "q": "Paul says each spouse no longer has sole authority over his or her own body, but has handed it to the other. What is your honest reaction to that, and what would it look like to live it as mutual gift rather than obligation?", "behind": "Press on the mutuality and guard against distortion. This verse can be twisted into a club, a husband demanding what he is owed, and the leader must rule that out, because Paul's point is mutual self-giving, not a right to coerce. Real consent and tenderness live inside covenant, never against it. Help the room hear the verse as gift exchanged, not duty extracted." },
-        { "q": "Bell takes the strong case that the church has carried real shame about sex and done harm with its silence. What is true in that, and what was lost when the culture freed sex from shame and from covenant at the same time?", "behind": "Hold both halves with care, and honor those carrying old shame. The church's shame was real and damaging, and the goodness of the body and of pleasure should be affirmed without flinching. But the modern freedom cut sex loose from covenant too, and a sign severed from the thing it signifies becomes a lie. Let people feel both the church's failure and the cost of the cure that overshot." },
-        { "q": "Bell says adultery begins long before the act, in the slow turning away, the screen easier than the spouse, the intimacy outsourced. Where is the quiet turning away in your own marriage, and what are you turning toward instead?", "behind": "This is the convicting center, and it must be handled so no spouse is exposed or shamed in front of the other. The turning away is usually not dramatic, it is the phone, the work, the friendship that gets the emotional energy the marriage should. Invite private honesty, let people examine their own attention, and go first by naming your own easier thing." },
-        { "q": "Bell says we guard the obvious line and lose the marriage by inches behind it. How does seeing faithfulness as ten thousand small turnings toward, rather than one line not crossed, change what faithfulness asks of you this week?", "behind": "Close on the reframe. Faithfulness as a line is a low bar that can be technically cleared while the marriage starves. Faithfulness as daily turning toward is harder and truer and never finished. The aim is to move the room from relief at not having crossed the line to honest attention to the slow drift, and toward the practice that turns it around." }
+        {
+          "q": "Bell says the most dangerous lie about sex is that it is only physical, separable from the soul. Where have you absorbed that lie, and what does believing it do to a marriage over time?",
+          "behind": "Open on the assumption, gently, because this is tender ground. The only physical lie is everywhere in the culture, and it quietly turns the body into a thing one owns rather than a thing one gave. Keep the room safe and unembarrassed, and do not let it become crude or clinical. The aim is to surface the assumption before naming what Scripture says instead."
+        },
+        {
+          "q": "Paul says each spouse no longer has sole authority over his or her own body, but has handed it to the other. What is your honest reaction to that, and what would it look like to live it as mutual gift rather than obligation?",
+          "behind": "Press on the mutuality and guard against distortion. This verse can be twisted into a club, a husband demanding what he is owed, and the leader must rule that out, because Paul's point is mutual self-giving, not a right to coerce. Real consent and tenderness live inside covenant, never against it. Help the room hear the verse as gift exchanged, not duty extracted."
+        },
+        {
+          "q": "Bell takes the strong case that the church has carried real shame about sex and done harm with its silence. What is true in that, and what was lost when the culture freed sex from shame and from covenant at the same time?",
+          "behind": "Hold both halves with care, and honor those carrying old shame. The church's shame was real and damaging, and the goodness of the body and of pleasure should be affirmed without flinching. But the modern freedom cut sex loose from covenant too, and a sign severed from the thing it signifies becomes a lie. Let people feel both the church's failure and the cost of the cure that overshot."
+        },
+        {
+          "q": "Bell says adultery begins long before the act, in the slow turning away, the screen easier than the spouse, the intimacy outsourced. Where is the quiet turning away in your own marriage, and what are you turning toward instead?",
+          "behind": "This is the convicting center, and it must be handled so no spouse is exposed or shamed in front of the other. The turning away is usually not dramatic, it is the phone, the work, the friendship that gets the emotional energy the marriage should. Invite private honesty, let people examine their own attention, and go first by naming your own easier thing."
+        },
+        {
+          "q": "Bell says we guard the obvious line and lose the marriage by inches behind it. How does seeing faithfulness as ten thousand small turnings toward, rather than one line not crossed, change what faithfulness asks of you this week?",
+          "behind": "Close on the reframe. Faithfulness as a line is a low bar that can be technically cleared while the marriage starves. Faithfulness as daily turning toward is harder and truer and never finished. The aim is to move the room from relief at not having crossed the line to honest attention to the slow drift, and toward the practice that turns it around."
+        }
       ],
       "objections": [
-        { "objection": "Sex is a natural human need, and treating it as some sacred covenant thing just loads it with religious pressure and guilt. The healthiest thing is to see it as a normal appetite, not a spiritual transaction.", "response": "Grant the part that is reacting against a real failure, because the church did load sex with shame and guilt and silence, and that did genuine harm, and the goodness of the body and of pleasure should be said out loud and often. Where the objection goes wrong is in the cure, because reducing sex to an appetite does not free it, it empties it. Hunger is satisfied by any food, but the one-flesh union is not satisfied by any body, because it was never only an appetite, it was a sign, the renewal in the flesh of a covenant vow. Cut the sign loose from the covenant and the body starts telling a lie, saying with the most intimate act available that two people belong wholly to each other while the rest of life says they do not. The covenant does not add pressure to sex. It is the only thing that lets sex mean what the body already knows it means." },
-        { "objection": "Looking at a screen, or having a close friendship with someone, is not the same as cheating. As long as I have not actually been unfaithful, you cannot call ordinary attention wandering a betrayal.", "response": "Hear the fairness in it, because there is a real difference between a thought and an act, and no one should be made to feel that every glance or every friendship is adultery, which would be its own cruelty. But Jesus refused to let faithfulness shrink to the technicality of the line not crossed, locating it in the heart and its attention long before the body acts. The question is not only have you crossed the line, it is where is your attention going, your energy, your delight, your first instinct to be known. When the screen is easier than the spouse, when the emotional intimacy you owe your marriage is quietly being paid to someone else, the covenant is being drained even though the line stands intact. That is not the same as the act, and it is not nothing either. It is the slow turning away that the act only finishes." }
+        {
+          "objection": "Sex is a natural human need, and treating it as some sacred covenant thing just loads it with religious pressure and guilt. The healthiest thing is to see it as a normal appetite, not a spiritual transaction.",
+          "response": "Grant the part that is reacting against a real failure, because the church did load sex with shame and guilt and silence, and that did genuine harm, and the goodness of the body and of pleasure should be said out loud and often. Where the objection goes wrong is in the cure, because reducing sex to an appetite does not free it, it empties it. Hunger is satisfied by any food, but the one-flesh union is not satisfied by any body, because it was never only an appetite, it was a sign, the renewal in the flesh of a covenant vow. Cut the sign loose from the covenant and the body starts telling a lie, saying with the most intimate act available that two people belong wholly to each other while the rest of life says they do not. The covenant does not add pressure to sex. It is the only thing that lets sex mean what the body already knows it means."
+        },
+        {
+          "objection": "Looking at a screen, or having a close friendship with someone, is not the same as cheating. As long as I have not actually been unfaithful, you cannot call ordinary attention wandering a betrayal.",
+          "response": "Hear the fairness in it, because there is a real difference between a thought and an act, and no one should be made to feel that every glance or every friendship is adultery, which would be its own cruelty. But Jesus refused to let faithfulness shrink to the technicality of the line not crossed, locating it in the heart and its attention long before the body acts. The question is not only have you crossed the line, it is where is your attention going, your energy, your delight, your first instinct to be known. When the screen is easier than the spouse, when the emotional intimacy you owe your marriage is quietly being paid to someone else, the covenant is being drained even though the line stands intact. That is not the same as the act, and it is not nothing either. It is the slow turning away that the act only finishes."
+        }
       ],
       "quietRoomQuestion": "What is the thing you have been turning toward instead of your spouse, the screen or the work or the friendship, and what is it giving you that you have stopped letting your marriage give?",
       "practice": "This week, identify the one thing that has become easier than your spouse, the place your attention drifts when you are tired, and for one week turn toward your spouse instead at least once where you would have drifted. Not perfectly. Once. And privately, examine your own faithfulness past the line, the slow turnings away no one but God has seen, and bring them to him honestly. Write down what you notice about where your attention has actually been living.",
@@ -158,17 +378,41 @@
       ],
       "teaching": "Bell says the most dangerous lie our culture tells about sex is not that it does not matter. It is the gentler, more reasonable-sounding lie that it is only physical, a need like hunger, an appetite to be managed, separable from the soul, because the moment you believe that lie you have already done the damage, you have made your body a thing you own rather than a thing you gave away. So we start with the question underneath, which is simply what sex is, because nearly everyone is running on an answer they never examined. The culture says it is recreation, a pleasure to be optimized and shared and withdrawn at will. A previous generation of the church, in its anxiety, said it was mainly a duty and a danger, something to be permitted and contained. And Scripture says a third thing that both of them miss entirely. It says sex is a covenant sign, the renewal in the body of the one-flesh vow that the whole marriage already is, the wedding promise spoken again without words. That is why Paul says the thing that should astonish us every time we read it, that the wife does not have authority over her own body but the husband does, and, just as remarkably for the first century, that the husband does not have authority over his own body but the wife does. Each has handed the body to the other. That is not a clause any contract could contain. It is a mutual self-giving so total that the only category for it is covenant. Take the strong case for the modern view, because it is reacting to a real and grievous failure. The church carried enormous shame about sex, taught it in silence and in fear, made generations feel that the body was dirty and desire was suspect, and did real and lasting harm to real people, many of them women. Grant all of it. The body is good. Pleasure is a gift from the God who designed it. The old silence wounded people and we should say so plainly and repent of it. But watch what happened when the culture set out to free sex from shame, because it freed it from one more thing at the same time. It freed it from covenant. And a sign cut loose from the thing it signifies does not become neutral. It becomes a lie the body tells, the most intimate act available saying with the whole self that two people belong wholly to each other, while everything around the act says they do not and need not. The freedom that was supposed to lift the shame ended by emptying the meaning. Now Bell turns to faithfulness, and he turns it past the line everyone is watching. We treat faithfulness as a wall with one gate, and as long as we do not walk through the gate marked adultery, we count ourselves faithful. But Jesus refused that arithmetic. He located faithfulness in the heart and its attention, long before the body acts, because adultery does not begin in the act. It begins in the slow turning away, weeks and months and years before, in the attention given elsewhere, the screen that is easier than the spouse at the end of a hard day, the emotional intimacy quietly outsourced to someone who is not the one you vowed, the delight in being known that you have started seeking somewhere other than home. And here is where I have to stand inside it, because this is the betrayal that does not feel like one. I have been the husband faithful in the body and absent in every other room, present at the table and gone behind my own eyes, turning toward the easier thing because the marriage in that season asked more than I wanted to give. We guard the one obvious line and we lose the marriage by inches behind it, congratulating ourselves on the wall while the house empties out. So hear the reversal that is the whole point. Faithfulness is not mainly the line you did not cross. Anyone can clear a line. Faithfulness is the ten thousand small turnings toward the person you promised, performed most of all on the days you would rather turn away, the daily choosing of this face, this body, this covenant, over the easier thing your tired heart keeps drifting toward. That is the faithfulness the vow meant, and it is the faithfulness Christ shows the church, who turns toward us forever, on every single one of the days we have turned away.",
       "scriptureStudy": [
-        { "ref": "Genesis 2:25", "note": "The man and his wife were both naked and were not ashamed. Before the fall, total exposure met total safety. The covenant is the only place that nakedness, of body and of soul, can be known again without shame, which is what sex was made to sign." },
-        { "ref": "1 Corinthians 6:16", "note": "He who is joined to a prostitute becomes one body with her, for it is written, the two will become one flesh. Paul says even casual sex enacts the one-flesh union, which proves it was never only physical. The body keeps making the covenant sign whether the heart means it or not." },
-        { "ref": "1 Corinthians 7:3-4", "note": "The wife does not have authority over her own body, but the husband does, and likewise the husband. The mutuality is the point and the safeguard. This is a handing over of the self to the other, not a right to take, and it works only inside the self-giving covenant." },
-        { "ref": "1 Corinthians 7:5", "note": "Do not deprive one another, except perhaps by agreement for a limited time. Paul treats sexual withdrawal as a covenant matter, not a private right, something to be worked out together rather than used as a weapon, because the body was given to the other." },
-        { "ref": "Matthew 5:27-28", "note": "Everyone who looks at a woman with lustful intent has already committed adultery with her in his heart. Jesus moves faithfulness from the act to the attention, refusing the technicality of the uncrossed line and locating the betrayal where it actually begins." },
-        { "ref": "Proverbs 5:18-19", "note": "Rejoice in the wife of your youth, be intoxicated always in her love. Scripture commands not grim duty but delight, a desire deliberately kept turning toward the spouse, which is the positive face of faithfulness, not only the line refused but the joy pursued." },
-        { "ref": "Hebrews 13:4", "note": "Let marriage be held in honor among all, and let the marriage bed be undefiled. The bed is to be honored, neither shamed as dirty nor cheapened as casual, held as the holy and exclusive sign of a covenant, good and guarded at once." }
+        {
+          "ref": "Genesis 2:25",
+          "note": "The man and his wife were both naked and were not ashamed. Before the fall, total exposure met total safety. The covenant is the only place that nakedness, of body and of soul, can be known again without shame, which is what sex was made to sign."
+        },
+        {
+          "ref": "1 Corinthians 6:16",
+          "note": "He who is joined to a prostitute becomes one body with her, for it is written, the two will become one flesh. Paul says even casual sex enacts the one-flesh union, which proves it was never only physical. The body keeps making the covenant sign whether the heart means it or not."
+        },
+        {
+          "ref": "1 Corinthians 7:3-4",
+          "note": "The wife does not have authority over her own body, but the husband does, and likewise the husband. The mutuality is the point and the safeguard. This is a handing over of the self to the other, not a right to take, and it works only inside the self-giving covenant."
+        },
+        {
+          "ref": "1 Corinthians 7:5",
+          "note": "Do not deprive one another, except perhaps by agreement for a limited time. Paul treats sexual withdrawal as a covenant matter, not a private right, something to be worked out together rather than used as a weapon, because the body was given to the other."
+        },
+        {
+          "ref": "Matthew 5:27-28",
+          "note": "Everyone who looks at a woman with lustful intent has already committed adultery with her in his heart. Jesus moves faithfulness from the act to the attention, refusing the technicality of the uncrossed line and locating the betrayal where it actually begins."
+        },
+        {
+          "ref": "Proverbs 5:18-19",
+          "note": "Rejoice in the wife of your youth, be intoxicated always in her love. Scripture commands not grim duty but delight, a desire deliberately kept turning toward the spouse, which is the positive face of faithfulness, not only the line refused but the joy pursued."
+        },
+        {
+          "ref": "Hebrews 13:4",
+          "note": "Let marriage be held in honor among all, and let the marriage bed be undefiled. The bed is to be honored, neither shamed as dirty nor cheapened as casual, held as the holy and exclusive sign of a covenant, good and guarded at once."
+        }
       ],
       "goingDeeper": "Take up the cultural history honestly, because the modern severing of sex from covenant did not happen by accident and a group should understand the forces that produced the water it swims in. The sexual revolution of the twentieth century, enabled by reliable contraception and carried by a philosophy of personal liberation, did real good in lifting some of the church's crushing shame, and a careful group should grant that good rather than pretending the prior era was golden. But it also completed a long detachment, sex from procreation, then sex from marriage, then sex from relationship altogether, until the dominant story made the body a site of individual expression owned wholly by the self. Set this against the older Christian conviction, articulated by thinkers from Augustine onward and recovered in our time by writers on the theology of the body, that the body is not a possession the self uses but a gift the self is, and that sexual union speaks a language the whole person either tells the truth in or lies in. Augustine is worth weighing carefully here, because he gets blamed for much of the church's sexual shame and the blame is partly fair, yet his deeper insight, that disordered desire is the self curved in on itself, names something the revolution never answered. Then press the hard question this session most needs. If faithfulness is attention and not only abstinence, then the modern attention economy, the screens engineered to capture and hold the very focus a marriage runs on, is a spiritual threat to covenant that the older categories of adultery barely reach. A group should ask what it means to be faithful with one's attention in a world built to divide it, and whether the slow outsourcing of intimacy to a glowing rectangle is a betrayal the marriage vows never named but always meant to exclude. The aim is to honor the goodness of the body, refuse both the old shame and the new emptiness, and recover faithfulness as the disciplined turning of the whole self, attention included, toward the covenant partner.",
       "caseStudy": "A husband in your group admits, with some defensiveness, that he spends most evenings on his phone after the kids are down, scrolling, gaming, watching, and that his wife has complained about it, and he does not see why it is a marriage issue since he has never so much as looked at another woman. He is genuinely faithful by the line he is watching, and he is irritated that anyone would suggest otherwise. Here is the work for the leader, and it must affirm before it presses. He is right that scrolling is not adultery, and you should say so, because to equate them would cheapen the word and wound him unfairly. But the session is about faithfulness past the line, and his nightly turning toward the screen is the textbook shape of the slow turning away, the attention and energy and presence that he vowed to his wife being paid, evening after evening, to a device. The covenant is not being broken by an act, it is being drained by an absence. Do not let him hide behind the technicality that he has never cheated. Honor his bodily faithfulness fully, and still ask him, gently, where his attention has actually been living, and what his wife has learned about her worth from watching him choose the glowing rectangle over her face, night after night, for years.",
-      "memoryVerse": { "ref": "Matthew 5:28", "text": "But I say to you that everyone who looks at a woman with lustful intent has already committed adultery with her in his heart." }
+      "memoryVerse": {
+        "ref": "Matthew 5:28",
+        "text": "But I say to you that everyone who looks at a woman with lustful intent has already committed adultery with her in his heart."
+      }
     },
     {
       "n": 5,
@@ -176,18 +420,55 @@
       "title": "Money, In-Laws, and the Gospel Shape of Staying",
       "aim": "To take money and in-laws as the real pressure points where the covenant gets tested rather than as practical footnotes, to expose the idolatries and loyalties hiding inside both, and to name staying not as grim endurance but as the gospel enacted, the steadfast love that holds the way Christ holds the church.",
       "summary": "Bell says that when a marriage is in trouble the surface complaint is almost never the real one, and the two places the trouble most often hides are the two no one teaches couples to handle, money and in-laws. The real question is why these two, of all things, can crack a covenant, and the answer is that neither is ever really about what it appears to be. Money fights are never finally about money. They are about fear and control and what each person secretly trusts to keep them safe, two competing idolatries meeting at a bank account. And in-law conflict is rarely about the in-laws. It is about a man or a woman who never truly left, who held fast to father and mother when the covenant called them to hold fast to a spouse. Bell takes the strong case for keeping the peace, that you should honor your parents, that family is family and you do not just cut people off, that a spouse who demands distance from in-laws is the problem. He grants the command to honor. But honoring your parents was never the same as obeying them over your spouse, and Scripture is blunt that a man leaves father and mother and holds fast to his wife, in that order, a reordering of loyalty the covenant requires. Then the turn to staying. Past the pressure points and the seasons that do not feel like love sits the deepest question, why stay, and the contract has no answer for the years that do not pay. Then the reversal. Staying is not endurance gritting its teeth. It is the gospel made visible, the steadfast love that holds the unworthy because it has been held, the God of Hosea who buys back the spouse who left. We stay because we were stayed for. The cross is the shape of the covenant that keeps.",
-      "keyScripture": { "ref": "Genesis 2:24", "why": "A man shall leave his father and his mother and hold fast to his wife, naming the reordering of loyalty the covenant requires, the leaving that must happen before the holding fast can, which is the root issue under most in-law conflict and much of the money fight too." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Genesis 2:24",
+        "why": "A man shall leave his father and his mother and hold fast to his wife, naming the reordering of loyalty the covenant requires, the leaving that must happen before the holding fast can, which is the root issue under most in-law conflict and much of the money fight too."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Bell says money fights are never finally about money, but about fear and control and what each person secretly trusts to keep them safe. When you and your spouse fight about money, what are you actually fighting about underneath?", "behind": "Open by getting under the surface complaint. The argument is about the budget, the purchase, the saving, but the engine is two different relationships to security, often two different idolatries. Help the room name what money means to each of them, safety or freedom or worth, before trying to resolve any actual dollar dispute. The real fight is rarely the stated one." },
-        { "q": "Bell says in-law conflict is rarely about the in-laws and usually about a spouse who never truly left. Where has leaving father and mother been incomplete in your marriage, and how does the unfinished leaving show up?", "behind": "Press gently on the leaving, because it cuts close. The unfinished leaving looks like the spouse who sides with a parent, who runs decisions past mom first, who lets a parent's opinion outweigh the partner's. Honor the love of parents while naming the reordering the covenant requires. Watch for defensiveness, because this is where loyalties are tender." },
-        { "q": "Bell takes the strong case that you should honor your parents and not just cut family off. What is true in that, and where is the line between honoring parents and obeying them over your spouse?", "behind": "Hold both halves. The command to honor parents is real and lifelong, and a spouse who demands a clean cut from family may be the problem. But honoring is not obeying, and the covenant reorders the loyalty so the spouse comes first. Help the room hold honor and priority together without collapsing one into the other, and protect the parent-honoring instinct from being shamed." },
-        { "q": "Bell asks the deepest question under all of it, why stay, and says the contract has no answer for the years that do not pay. Have you hit a season that did not pay, and what kept you, or what made you want to leave?", "behind": "Move toward the center of the session, carefully, because some in the room are in or near such a season. Do not rush to the triumphant answer. Let people be honest about the years that were hard, and let the room hold that honesty without panic. The question why stay is real, and the gospel answer only lands if the difficulty is taken seriously first." },
-        { "q": "Bell says staying is not endurance gritting its teeth but the gospel made visible, that we stay because we were stayed for. How does the God of Hosea, who buys back the spouse who left, change what staying means to you?", "behind": "Close on the reversal and the gospel. Staying reframed as grace, not grit, is the whole point. Hosea pursuing and buying back the unfaithful spouse is the picture, the steadfast love that holds the unworthy because it was first held. Let the room feel that their staying images God's, and that they can only do it because he did it first. End in weight, not resolution." }
+        {
+          "q": "Bell says money fights are never finally about money, but about fear and control and what each person secretly trusts to keep them safe. When you and your spouse fight about money, what are you actually fighting about underneath?",
+          "behind": "Open by getting under the surface complaint. The argument is about the budget, the purchase, the saving, but the engine is two different relationships to security, often two different idolatries. Help the room name what money means to each of them, safety or freedom or worth, before trying to resolve any actual dollar dispute. The real fight is rarely the stated one."
+        },
+        {
+          "q": "Bell says in-law conflict is rarely about the in-laws and usually about a spouse who never truly left. Where has leaving father and mother been incomplete in your marriage, and how does the unfinished leaving show up?",
+          "behind": "Press gently on the leaving, because it cuts close. The unfinished leaving looks like the spouse who sides with a parent, who runs decisions past mom first, who lets a parent's opinion outweigh the partner's. Honor the love of parents while naming the reordering the covenant requires. Watch for defensiveness, because this is where loyalties are tender."
+        },
+        {
+          "q": "Bell takes the strong case that you should honor your parents and not just cut family off. What is true in that, and where is the line between honoring parents and obeying them over your spouse?",
+          "behind": "Hold both halves. The command to honor parents is real and lifelong, and a spouse who demands a clean cut from family may be the problem. But honoring is not obeying, and the covenant reorders the loyalty so the spouse comes first. Help the room hold honor and priority together without collapsing one into the other, and protect the parent-honoring instinct from being shamed."
+        },
+        {
+          "q": "Bell asks the deepest question under all of it, why stay, and says the contract has no answer for the years that do not pay. Have you hit a season that did not pay, and what kept you, or what made you want to leave?",
+          "behind": "Move toward the center of the session, carefully, because some in the room are in or near such a season. Do not rush to the triumphant answer. Let people be honest about the years that were hard, and let the room hold that honesty without panic. The question why stay is real, and the gospel answer only lands if the difficulty is taken seriously first."
+        },
+        {
+          "q": "Bell says staying is not endurance gritting its teeth but the gospel made visible, that we stay because we were stayed for. How does the God of Hosea, who buys back the spouse who left, change what staying means to you?",
+          "behind": "Close on the reversal and the gospel. Staying reframed as grace, not grit, is the whole point. Hosea pursuing and buying back the unfaithful spouse is the picture, the steadfast love that holds the unworthy because it was first held. Let the room feel that their staying images God's, and that they can only do it because he did it first. End in weight, not resolution."
+        }
       ],
       "objections": [
-        { "objection": "You should honor your parents, and a spouse who tries to cut you off from your own family, who is always making you choose, is the real problem in the marriage. Family is family, and you do not just abandon the people who raised you.", "response": "Grant the command, because it is genuinely from God and lifelong, and the honoring of parents does not end at the wedding, and a spouse who demands a cold and total break from a healthy family is asking for something Scripture does not. Where the objection slips is in confusing honor with obedience, because honoring your parents was never the same as obeying them over your spouse. Genesis is blunt about the order, a man leaves father and mother and holds fast to his wife, and the leaving has to be real for the holding fast to be possible. You can honor your parents lavishly, love them, care for them in age, and still have left, still have made your spouse the first loyalty, the new primary family. The problem in most in-law conflict is not a controlling spouse. It is an unfinished leaving, a heart still primarily bound to the home it came from rather than the home it made." },
-        { "objection": "Telling people to just stay no matter what is exactly how people get trapped in miserable or even dangerous marriages. Sometimes staying is the unhealthy choice, and the gospel does not require anyone to martyr themselves.", "response": "Take the danger seriously first, because the warning is right where it matters most. The call to staying is never a call to remain in harm, and where there is abuse the covenant is already being broken by the one doing the harm, and the faithful thing is safety and help, not endurance, and this study has said so plainly and says it again here. The gospel does not require anyone to be destroyed. But hear the distinction, because most of the time the question why stay is not asked from inside danger, it is asked from inside disappointment, from the season that no longer pays, the years that feel flat and costly and unrewarded. To that, and only to that, the answer is not grit your teeth but remember you were stayed for. The God of Hosea pursued and bought back a spouse who had every disappointment to offer and more, and we stay in the dry seasons not because we are strong but because we are held, and the staying becomes a sign of the love that held us." }
+        {
+          "objection": "You should honor your parents, and a spouse who tries to cut you off from your own family, who is always making you choose, is the real problem in the marriage. Family is family, and you do not just abandon the people who raised you.",
+          "response": "Grant the command, because it is genuinely from God and lifelong, and the honoring of parents does not end at the wedding, and a spouse who demands a cold and total break from a healthy family is asking for something Scripture does not. Where the objection slips is in confusing honor with obedience, because honoring your parents was never the same as obeying them over your spouse. Genesis is blunt about the order, a man leaves father and mother and holds fast to his wife, and the leaving has to be real for the holding fast to be possible. You can honor your parents lavishly, love them, care for them in age, and still have left, still have made your spouse the first loyalty, the new primary family. The problem in most in-law conflict is not a controlling spouse. It is an unfinished leaving, a heart still primarily bound to the home it came from rather than the home it made."
+        },
+        {
+          "objection": "Telling people to just stay no matter what is exactly how people get trapped in miserable or even dangerous marriages. Sometimes staying is the unhealthy choice, and the gospel does not require anyone to martyr themselves.",
+          "response": "Take the danger seriously first, because the warning is right where it matters most. The call to staying is never a call to remain in harm, and where there is abuse the covenant is already being broken by the one doing the harm, and the faithful thing is safety and help, not endurance, and this study has said so plainly and says it again here. The gospel does not require anyone to be destroyed. But hear the distinction, because most of the time the question why stay is not asked from inside danger, it is asked from inside disappointment, from the season that no longer pays, the years that feel flat and costly and unrewarded. To that, and only to that, the answer is not grit your teeth but remember you were stayed for. The God of Hosea pursued and bought back a spouse who had every disappointment to offer and more, and we stay in the dry seasons not because we are strong but because we are held, and the staying becomes a sign of the love that held us."
+        }
       ],
       "quietRoomQuestion": "When you imagine the hardest season of your marriage, the years that did not pay, what would actually keep you, and is it strong enough to hold?",
       "practice": "This week, take the recurring money fight and, instead of fighting it, ask your spouse what money means to them, what it protects against, what fear sits under it, and listen without defending your own. And if there is an unfinished leaving, name it honestly to yourself and to God, the parent whose voice still outranks your spouse's, and take one step toward holding fast to the one you married first. Write down what you learn about the fear under the money and the loyalty under the conflict.",
@@ -199,46 +480,139 @@
       ],
       "teaching": "Bell says that when a marriage comes to him in trouble, the surface complaint is almost never the real one, and that the two places the trouble most reliably hides are the two places no one ever teaches a couple to handle, money and in-laws. We treat both as practical footnotes, the budgeting tips at the back of the marriage book, the holiday-scheduling logistics, when in fact they are the proving ground where the covenant is most often tested and most often cracked. So the real question is why these two, of all the things in a shared life, carry the weight to break a covenant, and the answer is that neither one is ever about what it appears to be. Start with money, because the money fight is the great liar of married life. It presents itself as a disagreement about a purchase, a budget, a level of saving, and it is never finally about any of those. It is about fear, and control, and what each person secretly trusts to keep them safe. One spouse hears every dollar saved as security and every dollar spent as danger. The other hears every dollar saved as a cage and every dollar spent as freedom. What meets at the bank account is not two opinions about finance. It is two idolatries, two different things each person has quietly asked money to be that only God can be, and until that is named the couple will keep fighting the surface fight forever, settling the budget and never touching the fear. Now the in-laws, and the same pattern, the conflict that is never about the thing it is about. In-law trouble is rarely about the in-laws. It is about a husband or a wife who never truly left. Take the strong case for the other side first, because it is half right and the half it is right about is a command of God. You should honor your parents. That command does not expire at the wedding, family is family, you do not coldly cut off the people who raised you, and a spouse who demands a total and bitter break from a healthy family is asking for something Scripture never asks. Grant all of it. But here is the line the objection walks right past. Honoring your parents was never the same as obeying them over your spouse. Genesis could not be more blunt about the order. A man leaves his father and his mother and holds fast to his wife, and the leaving comes first, on purpose, because the holding fast is not fully possible until the leaving is real. You can honor your parents extravagantly, love them, care for them into their old age, and have genuinely left, having made your spouse the first loyalty, the new primary family whose claim now outranks the old home's. Most in-law conflict is not caused by a jealous, controlling spouse. It is caused by an unfinished leaving, a heart still bound first to the house it came from instead of the house it built. And I know the pull of that in myself, the old loyalty that surfaces in a hard moment and wants to run home rather than hold fast. Now strip away the pressure points and the difficult seasons and you reach the deepest question of all, the one that sits under everything this whole study has touched. Why stay. Past the conflict you learned to close and the money idol you learned to name and the leaving you finally finished, there will still come seasons that do not feel like love, years that are flat and costly and do not pay, and the contract logic we all carry will rise up and ask, honestly, why am I still here. And the contract has no answer for the years that do not pay, because the contract was only ever kept while it delivered. Here is the reversal, and it is the whole gospel and the whole point of every session before it. Staying is not endurance gritting its teeth. It is not the grim martyrdom the objector rightly fears, and let it be said once more that staying is never a command to remain in harm, that where there is abuse the covenant is already broken and the faithful path is safety and help. But for the seasons of disappointment rather than danger, staying is something far better than endurance. It is the gospel made visible, the steadfast love that holds the unworthy precisely because it has itself been held. Read Hosea, the prophet God commanded to marry a woman who would leave him, and then to go and buy her back out of the slavery her leaving sold her into, because that is what God was doing with Israel, and that is what Christ did with the church, and us. We do not stay because we are strong. We stay because we were stayed for, pursued down into the far country and bought back at a price we could not pay, by a God who keeps covenant with people who break it. So the marriage that stays, through the years that do not pay, preaches a sermon nothing else can preach. It says to a watching world that there is a love that holds the unlovely, that keeps its word past the point of profit, that buys back what walked away. The cross is the shape of the covenant that keeps. We love because he first loved us. We stay because he first stayed.",
       "scriptureStudy": [
-        { "ref": "Genesis 2:24", "note": "A man shall leave his father and his mother and hold fast to his wife. The order is the teaching. The leaving comes before the holding fast, and an unfinished leaving makes a full holding fast impossible, which is the root of most in-law conflict." },
-        { "ref": "Exodus 20:12", "note": "Honor your father and your mother. The command is lifelong and does not end at the wedding, but to honor is not to obey, and a married child can honor parents fully while having reordered the first loyalty toward a spouse." },
-        { "ref": "Matthew 6:21", "note": "Where your treasure is, there your heart will be also. Money fights expose the heart's real trust, because what you do with money reveals what you are counting on to keep you safe, which is why the budget argument is never only about the budget." },
-        { "ref": "Luke 12:15", "note": "Take care, and be on your guard against all covetousness, for one's life does not consist in the abundance of possessions. The idol under the money fight is the lie that security can be stockpiled, and the warning is take care, because this idol hides as prudence." },
-        { "ref": "Hosea 3:1-2", "note": "Go again, love a woman who is an adulteress, even as the Lord loves the children of Israel. God commands the prophet to buy back the wife who left, an enacted parable of covenant love that pursues and redeems the unfaithful, the picture of why we stay." },
-        { "ref": "1 Corinthians 13:7", "note": "Love bears all things, believes all things, hopes all things, endures all things. This is not a contract clause. It is the steadfast love that holds through the seasons that do not pay, and it is possible only for those who have first been loved this way." },
-        { "ref": "1 John 4:19", "note": "We love because he first loved us. The whole engine of staying is here. We do not generate covenant love from our own strength, we return the love we were first given, and the marriage that stays is the overflow of a heart that knows it was stayed for." }
+        {
+          "ref": "Genesis 2:24",
+          "note": "A man shall leave his father and his mother and hold fast to his wife. The order is the teaching. The leaving comes before the holding fast, and an unfinished leaving makes a full holding fast impossible, which is the root of most in-law conflict."
+        },
+        {
+          "ref": "Exodus 20:12",
+          "note": "Honor your father and your mother. The command is lifelong and does not end at the wedding, but to honor is not to obey, and a married child can honor parents fully while having reordered the first loyalty toward a spouse."
+        },
+        {
+          "ref": "Matthew 6:21",
+          "note": "Where your treasure is, there your heart will be also. Money fights expose the heart's real trust, because what you do with money reveals what you are counting on to keep you safe, which is why the budget argument is never only about the budget."
+        },
+        {
+          "ref": "Luke 12:15",
+          "note": "Take care, and be on your guard against all covetousness, for one's life does not consist in the abundance of possessions. The idol under the money fight is the lie that security can be stockpiled, and the warning is take care, because this idol hides as prudence."
+        },
+        {
+          "ref": "Hosea 3:1-2",
+          "note": "Go again, love a woman who is an adulteress, even as the Lord loves the children of Israel. God commands the prophet to buy back the wife who left, an enacted parable of covenant love that pursues and redeems the unfaithful, the picture of why we stay."
+        },
+        {
+          "ref": "1 Corinthians 13:7",
+          "note": "Love bears all things, believes all things, hopes all things, endures all things. This is not a contract clause. It is the steadfast love that holds through the seasons that do not pay, and it is possible only for those who have first been loved this way."
+        },
+        {
+          "ref": "1 John 4:19",
+          "note": "We love because he first loved us. The whole engine of staying is here. We do not generate covenant love from our own strength, we return the love we were first given, and the marriage that stays is the overflow of a heart that knows it was stayed for."
+        }
       ],
       "goingDeeper": "Press into the deeper structures under both pressure points, because money and in-laws are not random trouble spots but the two clearest places where competing covenants and competing trusts surface. On money, take up the long biblical theme the first thing this platform's economic study traces, that money is not a neutral tool but a power that wants you, and notice that in marriage this power does its work by splitting two people along the fault line of what each one trusts for safety. A group can weigh the research on financial conflict, which consistently finds that money disputes are among the strongest predictors of divorce and that the disputes are rarely resolved by more income, because the issue was never the amount but the meaning, the fear and control loaded onto the number. The secular finding confirms the biblical diagnosis, that the heart's treasure, not the household's balance, is what is actually in play. On in-laws, take up the family-systems insight, tested against Scripture, that an individual who has not differentiated from the family of origin will reproduce its patterns and grant it a veto it should no longer hold, which is the clinical description of the unfinished leaving Genesis named millennia earlier. Then press the hardest and most pastoral question, the one the whole study has been building toward, the theology of staying. A group should sit with the difference between staying as endurance and staying as enacted gospel, and should be careful to hold, in the same hand, the truth that staying images Christ's covenant faithfulness and the truth that the covenant is never a mandate to remain in abuse. The book of Hosea is the text to dwell in, the most uncomfortable and most beautiful marriage in Scripture, where God uses a broken marriage to show a faithful love, and a group should ask what it means that God was willing to picture his own steadfast love through the costly, scandalous staying of a wronged spouse, and what it does not mean, namely that any human being is asked to endure being destroyed. The aim is to let staying be recovered as grace rather than grit, grounded entirely in having been stayed for, and never twisted into a chain.",
       "caseStudy": "A wife in your group describes ongoing tension over her husband's mother, who calls daily, weighs in on their parenting, and expects holidays on her terms, and she is hurt that when she raises it, her husband tells her to stop making him choose and to be more understanding because that is just how his family is. He is not cruel, and he genuinely loves both his wife and his mother, and he believes he is honoring his parent. Here is the work for the leader, and it must honor the command to honor parents while naming the unfinished leaving. He is right to love and honor his mother, and you should affirm that warmly, because a son who discards his mother is not the goal. But notice the phrase, stop making me choose, because it reveals that he has not in fact left, that the first loyalty has never been decisively reordered, and that his wife is not asking him to dishonor his mother but to hold fast to the one he married first. The covenant requires a leaving he has not completed. Do not let him frame his wife's reasonable request as an attack on his family. Honor his love for his mother fully, and still ask him, gently, what leaving father and mother was supposed to mean if his wife's voice does not yet outrank his mother's in the home they are building together.",
-      "memoryVerse": { "ref": "1 John 4:19", "text": "We love because he first loved us." }
+      "memoryVerse": {
+        "ref": "1 John 4:19",
+        "text": "We love because he first loved us."
+      }
     }
   ],
   "leaderPrimer": "The particular danger of a marriage study is that everyone arrives with a witness for the prosecution sitting beside them. A man hears the session on covenant against contract and nods at his wife. A wife hears the session on turning toward the easier thing and files it for the car ride home. If you let it, this study becomes five weeks of people agreeing loudly with every point that convicts the person in the next chair, and a room like that is not being formed. It is being armed. So set the rule the first night and hold it every night after. The only marriage anyone is responsible for in this room is their own, and the honest question is never what my spouse needed to hear but what I could not stop hearing. Never let one spouse correct or expose the other in front of the group. Some of the truest movement in these sessions, the ledger kept after the receipt was supposedly torn up, the headship confused with getting your way, the faithfulness shrunk to merely not crossing the line, the loyalty to parents that never moved to the marriage, will happen in silence, privately, between a person and God. Make room for that silence instead of demanding confession across the circle. One more thing, and it is not optional. In almost any group of couples there is a real chance that someone is being controlled or harmed by the person beside them, and has been taught the covenant requires endurance. It does not. Where there is abuse the covenant is already being broken, and the faithful word is safety and help, not staying. Know a counselor, know the number, watch the quiet spouse next to the confident one, and make a private way to reach you. Bell leads this from inside it. He is a husband raising five sons, and these sessions are built from his own kept receipts and his own three cold days over a grievance he could no longer name. If you present your marriage as the model, the room will perform right back at you and nothing will move. Go in as a spouse under the same covenant, still being kept more than keeping. Five weeks will not fix a marriage. It can show a room what marriage was for, and send two people home in the same car, quieter, carrying the same weight for once instead of handing it to each other.",
   "faq": [
-    { "q": "Is this study just going to tell women to submit and put up with whatever their husbands do?", "a": "No, and the study works hard against exactly that distortion. Session three reads Ephesians 5 the way Paul actually wrote it, beginning with the verse the bad sermons skip, submit to one another, and showing that the husband's command is not to rule but to die, to love his wife as Christ loved the church and gave himself up for her. Paul spends three verses on the wife and nearly nine on the husband, and the heavy command falls on the man. The study says as plainly as it can be said that a husband who uses this passage to control, demean, or harm his wife has not obeyed it but violated it at its very heart, and that the marriage covenant is never a command to endure abuse. Where there is harm, the study points toward safety and help, not endurance. The text men have used to trap women is, read honestly, the text that frees them." },
-    { "q": "What if someone in the group is being abused?", "a": "Take it with complete seriousness, because in almost any group of couples it is a real possibility, and the study is built to make room for it rather than to paper over it. The covenant is never a command to endure abuse. Where there is abuse, the covenant is already being broken by the one doing the harm, and the faithful, loving, biblical thing is safety and help, not staying in reach of danger. Leaders are urged in the primer to know their resources before they begin, a counselor, a domestic violence hotline, a pastor trained to handle it, and to have them ready. Watch the room, especially the quiet spouse beside the confident one, make a private avenue available, and if anyone discloses harm, believe them, do not coach them back toward the danger in the name of staying, and connect them to real help. The gospel does not require anyone to be destroyed." },
-    { "q": "Is this just old-fashioned teaching that will make my marriage feel like a duty instead of a love?", "a": "It is the opposite. The study refuses both the romanticism that expects your spouse to complete you and the cynicism that treats marriage as a contract you keep while it pays, and it lands on something richer than either, covenant love, the steadfast love that holds the person when the feeling has gone quiet and very often calls the feeling back. The point is not to grind a love down into duty. It is to discover that what looked like duty, the daily turning toward, the tearing up of the receipt, the staying through the season that does not pay, is the very shape love takes when it grows up, and that this is the love God has for us. The covenant does not replace the romance. It is the thing strong enough to outlast romance's bad seasons and carry it home." },
-    { "q": "What is the difference between a covenant and a contract, and why does it matter so much?", "a": "A contract is kept as long as it serves you. A covenant is kept for as long as you both shall live. A contract is built to be escaped the moment the terms turn against you, which is why no contract on earth asks you to promise for worse, for poorer, in sickness, until death. The marriage vow runs the opposite direction, binding you exactly where a contract would release you, which means it was never a contract at all. It matters because the kind of thing you believe marriage is decides everything about what you do when it gets hard. If it is a contract, you leave when it stops delivering. If it is a covenant, you hold the person through the seasons the feeling has left, the way God held a people who kept breaking faith with him, because he is the kind of God who keeps his word." },
-    { "q": "Does the study really say sex is more than physical, and is it going to make people uncomfortable?", "a": "It says sex is a covenant sign, the renewal in the body of the one-flesh vow the whole marriage is, which is why Paul can say each spouse has handed authority over the body to the other, a mutual self-giving no contract could produce. The study handles it without crudeness and without shame, affirming plainly that the body is good and pleasure is a gift, and naming the real harm the church has done with its silence and its shame. It also refuses the modern lie that sex is only an appetite, because a sign cut loose from the covenant it signifies becomes a lie the body tells. Leaders are urged to keep the room safe and unembarrassed, to make space for private reflection rather than forced public confession, and to never let the verses about mutual self-giving be twisted into a demand or a club, because Paul's point is gift exchanged, never a right to coerce." },
-    { "q": "What does the study mean that faithfulness is more than not committing adultery?", "a": "Jesus refused to let faithfulness shrink to the technicality of the line not crossed, locating it in the heart and its attention long before the body acts. The study takes this seriously and names the quiet betrayals that erode a covenant by inches, the screen that is easier than the spouse at the end of a hard day, the emotional intimacy outsourced to someone who is not the one you vowed, the delight in being known sought somewhere other than home. We guard the obvious line and lose the marriage in the rooms behind it, faithful in the body and absent everywhere else. So faithfulness is reframed not mainly as the line you did not cross, which anyone can clear, but as the ten thousand small turnings toward the person you promised, made most of all on the days you would rather turn away, which is the faithfulness Christ shows the church." },
-    { "q": "Why does the study spend a whole session on money and in-laws? Those seem like practical issues, not spiritual ones.", "a": "Because they are the two places marriage trouble most often hides, and neither is ever really about what it appears to be. Money fights are never finally about money, they are about fear and control and what each person secretly trusts to keep them safe, two competing idolatries meeting at a bank account. In-law conflict is rarely about the in-laws, it is about a husband or wife who never truly left, who held fast to father and mother when the covenant called them to hold fast first to a spouse. Genesis is blunt about the order, a man leaves father and mother and holds fast to his wife, and the leaving must be real before the holding fast is possible. Far from being practical footnotes, these are the proving ground where the covenant is tested, which is exactly why the study refuses to treat them as logistics and treats them as the spiritual matters they are." },
-    { "q": "Is the study telling people to just stay no matter what, even in a miserable marriage?", "a": "It draws a careful line. The call to staying is never a call to remain in harm, and where there is abuse the covenant is already broken and the faithful path is safety and help, not endurance, and the study says so plainly. But most of the time the question why stay is not asked from inside danger, it is asked from inside disappointment, from the flat and costly season that no longer pays. To that, and only to that, the study answers not grit your teeth but remember you were stayed for. Staying is reframed not as grim endurance but as the gospel made visible, the steadfast love that holds the unworthy because it has itself been held, the God of Hosea who pursues and buys back the spouse who left. We stay because we were stayed for, never because anyone is required to be destroyed." },
-    { "q": "How do I lead this if my own marriage is not perfect and I am struggling too?", "a": "That is not a disqualification, it is your qualification. The study was written to be led by ordinary husbands and wives, not by experts, and every discussion question carries the answer behind it, every silence has a backup, and every session ends in prayer rather than argument. The real qualification is not having a perfect marriage, which no one has, but being willing to go first, to be honest about your own ledger and your own turning away and your own unfinished leaving, and to keep the room safe for people carrying real hurt. If you walk in as the couple who has it figured out, you will lead from above the room instead of inside it, and the study will become a quiet weapon. Your own struggle, honestly named, is the very thing that lets you stand inside the covenant alongside everyone else rather than above them. Read the leader primer, settle your own heart, and go first." },
-    { "q": "Why does the study keep implicating the writer instead of just teaching the lesson?", "a": "Because that is the method, and the method is the message. The writer is married, has five sons, and does not stand outside the struggles he describes. He has kept his own marriage as a contract, kept the receipt he swore he had torn up, confused leading with getting his way, turned toward the easier thing on the hard nights. He writes from inside the room, not from a safe distance, and the study asks every leader and every couple to do the same. The reason is not false modesty. It is that you cannot repent of a thing you are still calling virtue, and you cannot call others to grow in marriage from a height without turning the call into contempt. A study that pointed only at the bad husbands or the difficult wives who are not present would let everyone in the room off the hook and change no marriage. By keeping the writer inside the indictment, it makes repentance possible for the people actually in the room, which is the only place a marriage ever actually changes." },
-    { "q": "I am a skeptic. Is not this just religion telling people to stay in marriages for the sake of the institution?", "a": "It is a fair suspicion, and the study earns the right to answer it by refusing exactly that move. It does not ask anyone to be sacrificed to preserve an institution, and it says flatly that the covenant is never a command to endure harm and that where there is abuse the faithful path is safety, not staying. What it offers instead is a particular claim, that the deepest human longing, to be fully known and fully held without being abandoned, is real, and that marriage at its best is a sign pointing to a love that actually does that. The study locates the strength to keep a hard promise not in willpower or institutional loyalty but in having first been loved that way by God, the God of Hosea who buys back the spouse who left. You do not have to share that belief to notice that a love which stays through the seasons that do not pay is rarer and better than the contract the culture offers, and to wonder what could possibly hold it." },
-    { "q": "Does taking marriage this seriously mean the study looks down on people who are divorced?", "a": "No, and it is careful here. Scripture treats divorce everywhere as a wound and never as a clean exit precisely because the one-flesh union is real and tearing it tears something, but naming divorce as a wound is not the same as condemning the wounded. Many people are divorced because a covenant was broken against them, by abuse, by abandonment, by betrayal, and the study has no interest in adding shame to that. The same gospel that grounds the call to staying is the gospel of a God who restores what was broken and meets people exactly where they are, not where they wish they had been. The point of taking marriage seriously is never to look down on those whose marriages did not survive. It is to recover for everyone, married, engaged, remarried, or single, what the covenant actually is, so that it can be honored, healed, and where God allows, kept." }
+    {
+      "q": "Is this study just going to tell women to submit and put up with whatever their husbands do?",
+      "a": "No, and the study works hard against exactly that distortion. Session three reads Ephesians 5 the way Paul actually wrote it, beginning with the verse the bad sermons skip, submit to one another, and showing that the husband's command is not to rule but to die, to love his wife as Christ loved the church and gave himself up for her. Paul spends three verses on the wife and nearly nine on the husband, and the heavy command falls on the man. The study says as plainly as it can be said that a husband who uses this passage to control, demean, or harm his wife has not obeyed it but violated it at its very heart, and that the marriage covenant is never a command to endure abuse. Where there is harm, the study points toward safety and help, not endurance. The text men have used to trap women is, read honestly, the text that frees them."
+    },
+    {
+      "q": "What if someone in the group is being abused?",
+      "a": "Take it with complete seriousness, because in almost any group of couples it is a real possibility, and the study is built to make room for it rather than to paper over it. The covenant is never a command to endure abuse. Where there is abuse, the covenant is already being broken by the one doing the harm, and the faithful, loving, biblical thing is safety and help, not staying in reach of danger. Leaders are urged in the primer to know their resources before they begin, a counselor, a domestic violence hotline, a pastor trained to handle it, and to have them ready. Watch the room, especially the quiet spouse beside the confident one, make a private avenue available, and if anyone discloses harm, believe them, do not coach them back toward the danger in the name of staying, and connect them to real help. The gospel does not require anyone to be destroyed."
+    },
+    {
+      "q": "Is this just old-fashioned teaching that will make my marriage feel like a duty instead of a love?",
+      "a": "It is the opposite. The study refuses both the romanticism that expects your spouse to complete you and the cynicism that treats marriage as a contract you keep while it pays, and it lands on something richer than either, covenant love, the steadfast love that holds the person when the feeling has gone quiet and very often calls the feeling back. The point is not to grind a love down into duty. It is to discover that what looked like duty, the daily turning toward, the tearing up of the receipt, the staying through the season that does not pay, is the very shape love takes when it grows up, and that this is the love God has for us. The covenant does not replace the romance. It is the thing strong enough to outlast romance's bad seasons and carry it home."
+    },
+    {
+      "q": "What is the difference between a covenant and a contract, and why does it matter so much?",
+      "a": "A contract is kept as long as it serves you. A covenant is kept for as long as you both shall live. A contract is built to be escaped the moment the terms turn against you, which is why no contract on earth asks you to promise for worse, for poorer, in sickness, until death. The marriage vow runs the opposite direction, binding you exactly where a contract would release you, which means it was never a contract at all. It matters because the kind of thing you believe marriage is decides everything about what you do when it gets hard. If it is a contract, you leave when it stops delivering. If it is a covenant, you hold the person through the seasons the feeling has left, the way God held a people who kept breaking faith with him, because he is the kind of God who keeps his word."
+    },
+    {
+      "q": "Does the study really say sex is more than physical, and is it going to make people uncomfortable?",
+      "a": "It says sex is a covenant sign, the renewal in the body of the one-flesh vow the whole marriage is, which is why Paul can say each spouse has handed authority over the body to the other, a mutual self-giving no contract could produce. The study handles it without crudeness and without shame, affirming plainly that the body is good and pleasure is a gift, and naming the real harm the church has done with its silence and its shame. It also refuses the modern lie that sex is only an appetite, because a sign cut loose from the covenant it signifies becomes a lie the body tells. Leaders are urged to keep the room safe and unembarrassed, to make space for private reflection rather than forced public confession, and to never let the verses about mutual self-giving be twisted into a demand or a club, because Paul's point is gift exchanged, never a right to coerce."
+    },
+    {
+      "q": "What does the study mean that faithfulness is more than not committing adultery?",
+      "a": "Jesus refused to let faithfulness shrink to the technicality of the line not crossed, locating it in the heart and its attention long before the body acts. The study takes this seriously and names the quiet betrayals that erode a covenant by inches, the screen that is easier than the spouse at the end of a hard day, the emotional intimacy outsourced to someone who is not the one you vowed, the delight in being known sought somewhere other than home. We guard the obvious line and lose the marriage in the rooms behind it, faithful in the body and absent everywhere else. So faithfulness is reframed not mainly as the line you did not cross, which anyone can clear, but as the ten thousand small turnings toward the person you promised, made most of all on the days you would rather turn away, which is the faithfulness Christ shows the church."
+    },
+    {
+      "q": "Why does the study spend a whole session on money and in-laws? Those seem like practical issues, not spiritual ones.",
+      "a": "Because they are the two places marriage trouble most often hides, and neither is ever really about what it appears to be. Money fights are never finally about money, they are about fear and control and what each person secretly trusts to keep them safe, two competing idolatries meeting at a bank account. In-law conflict is rarely about the in-laws, it is about a husband or wife who never truly left, who held fast to father and mother when the covenant called them to hold fast first to a spouse. Genesis is blunt about the order, a man leaves father and mother and holds fast to his wife, and the leaving must be real before the holding fast is possible. Far from being practical footnotes, these are the proving ground where the covenant is tested, which is exactly why the study refuses to treat them as logistics and treats them as the spiritual matters they are."
+    },
+    {
+      "q": "Is the study telling people to just stay no matter what, even in a miserable marriage?",
+      "a": "It draws a careful line. The call to staying is never a call to remain in harm, and where there is abuse the covenant is already broken and the faithful path is safety and help, not endurance, and the study says so plainly. But most of the time the question why stay is not asked from inside danger, it is asked from inside disappointment, from the flat and costly season that no longer pays. To that, and only to that, the study answers not grit your teeth but remember you were stayed for. Staying is reframed not as grim endurance but as the gospel made visible, the steadfast love that holds the unworthy because it has itself been held, the God of Hosea who pursues and buys back the spouse who left. We stay because we were stayed for, never because anyone is required to be destroyed."
+    },
+    {
+      "q": "How do I lead this if my own marriage is not perfect and I am struggling too?",
+      "a": "That is not a disqualification, it is your qualification. The study was written to be led by ordinary husbands and wives, not by experts, and every discussion question carries the answer behind it, every silence has a backup, and every session ends in prayer rather than argument. The real qualification is not having a perfect marriage, which no one has, but being willing to go first, to be honest about your own ledger and your own turning away and your own unfinished leaving, and to keep the room safe for people carrying real hurt. If you walk in as the couple who has it figured out, you will lead from above the room instead of inside it, and the study will become a quiet weapon. Your own struggle, honestly named, is the very thing that lets you stand inside the covenant alongside everyone else rather than above them. Read the leader primer, settle your own heart, and go first."
+    },
+    {
+      "q": "Why does the study keep implicating the writer instead of just teaching the lesson?",
+      "a": "Because that is the method, and the method is the message. The writer is married, has five sons, and does not stand outside the struggles he describes. He has kept his own marriage as a contract, kept the receipt he swore he had torn up, confused leading with getting his way, turned toward the easier thing on the hard nights. He writes from inside the room, not from a safe distance, and the study asks every leader and every couple to do the same. The reason is not false modesty. It is that you cannot repent of a thing you are still calling virtue, and you cannot call others to grow in marriage from a height without turning the call into contempt. A study that pointed only at the bad husbands or the difficult wives who are not present would let everyone in the room off the hook and change no marriage. By keeping the writer inside the indictment, it makes repentance possible for the people actually in the room, which is the only place a marriage ever actually changes."
+    },
+    {
+      "q": "I am a skeptic. Is not this just religion telling people to stay in marriages for the sake of the institution?",
+      "a": "It is a fair suspicion, and the study earns the right to answer it by refusing exactly that move. It does not ask anyone to be sacrificed to preserve an institution, and it says flatly that the covenant is never a command to endure harm and that where there is abuse the faithful path is safety, not staying. What it offers instead is a particular claim, that the deepest human longing, to be fully known and fully held without being abandoned, is real, and that marriage at its best is a sign pointing to a love that actually does that. The study locates the strength to keep a hard promise not in willpower or institutional loyalty but in having first been loved that way by God, the God of Hosea who buys back the spouse who left. You do not have to share that belief to notice that a love which stays through the seasons that do not pay is rarer and better than the contract the culture offers, and to wonder what could possibly hold it."
+    },
+    {
+      "q": "Does taking marriage this seriously mean the study looks down on people who are divorced?",
+      "a": "No, and it is careful here. Scripture treats divorce everywhere as a wound and never as a clean exit precisely because the one-flesh union is real and tearing it tears something, but naming divorce as a wound is not the same as condemning the wounded. Many people are divorced because a covenant was broken against them, by abuse, by abandonment, by betrayal, and the study has no interest in adding shame to that. The same gospel that grounds the call to staying is the gospel of a God who restores what was broken and meets people exactly where they are, not where they wish they had been. The point of taking marriage seriously is never to look down on those whose marriages did not survive. It is to recover for everyone, married, engaged, remarried, or single, what the covenant actually is, so that it can be honored, healed, and where God allows, kept."
+    }
   ],
   "timeline": [
-    { "date": "the beginning", "event": "Genesis 2 grounds marriage in creation itself, God declaring that it is not good for the man to be alone, forming the woman, and naming the union one flesh, so that marriage is God's idea and a covenant before it is ever a human institution." },
-    { "date": "circa 750 BC", "event": "The prophet Hosea is commanded to marry an unfaithful wife and then to buy her back out of slavery, an enacted parable of God's covenant love pursuing and redeeming an unfaithful Israel, the most uncomfortable and most beautiful picture of steadfast love in Scripture." },
-    { "date": "circa 430 BC", "event": "Malachi rebukes Israel for faithless dealing with the wife of one's youth, declaring that God was the witness to the marriage covenant and that he hates the breaking of it, binding marriage explicitly to covenant language and to God's own faithfulness." },
-    { "date": "circa AD 30", "event": "Jesus, asked about divorce, points back past Moses to creation, declaring that what God has joined together, let not man separate, and grounding the permanence of marriage in the one-flesh union of Genesis rather than in the law's later concessions." },
-    { "date": "circa AD 60", "event": "Paul, writing to the Ephesians, sets marriage under mutual submission, commands husbands to love their wives as Christ loved the church and gave himself up for her, and names the one-flesh union a profound mystery referring to Christ and the church." },
-    { "date": "circa AD 400", "event": "Augustine articulates an influential theology of marriage built on the goods of children, fidelity, and the sacramental bond, shaping the Western church's understanding of marriage as a permanent covenant for more than a millennium, for both better and worse." },
-    { "date": "1215", "event": "The Fourth Lateran Council and the developing medieval church formalize marriage as one of the sacraments, regulating it within the church and reinforcing its permanence, while also at times reducing it to a matter of property and canon law." },
-    { "date": "1522", "event": "Martin Luther, rejecting the sacramental view, recovers marriage as a high and holy calling rather than a second-best estate, honoring the ordinary married life of pastor and parent against the medieval elevation of celibacy, and marries Katharina von Bora." },
-    { "date": "1948", "event": "The rise of the companionate and then the soulmate ideal of marriage accelerates across the twentieth century, redefining marriage's purpose as the emotional fulfillment of the spouses, which quietly converts the covenant into a contract kept only while it satisfies." },
-    { "date": "1969", "event": "The first no-fault divorce law in the United States is signed in California, accelerating a legal and cultural shift toward marriage as a dissoluble arrangement, the contract instinct written into law, kept while it serves and ended when it does not." },
-    { "date": "2011", "event": "Timothy Keller publishes The Meaning of Marriage, recovering for a wide readership the understanding of marriage as a covenant grounded in the gospel, in which spouses love not the person they wish they had married but the person they actually did." }
+    {
+      "date": "the beginning",
+      "event": "Genesis 2 grounds marriage in creation itself, God declaring that it is not good for the man to be alone, forming the woman, and naming the union one flesh, so that marriage is God's idea and a covenant before it is ever a human institution."
+    },
+    {
+      "date": "circa 750 BC",
+      "event": "The prophet Hosea is commanded to marry an unfaithful wife and then to buy her back out of slavery, an enacted parable of God's covenant love pursuing and redeeming an unfaithful Israel, the most uncomfortable and most beautiful picture of steadfast love in Scripture."
+    },
+    {
+      "date": "circa 430 BC",
+      "event": "Malachi rebukes Israel for faithless dealing with the wife of one's youth, declaring that God was the witness to the marriage covenant and that he hates the breaking of it, binding marriage explicitly to covenant language and to God's own faithfulness."
+    },
+    {
+      "date": "circa AD 30",
+      "event": "Jesus, asked about divorce, points back past Moses to creation, declaring that what God has joined together, let not man separate, and grounding the permanence of marriage in the one-flesh union of Genesis rather than in the law's later concessions."
+    },
+    {
+      "date": "circa AD 60",
+      "event": "Paul, writing to the Ephesians, sets marriage under mutual submission, commands husbands to love their wives as Christ loved the church and gave himself up for her, and names the one-flesh union a profound mystery referring to Christ and the church."
+    },
+    {
+      "date": "circa AD 400",
+      "event": "Augustine articulates an influential theology of marriage built on the goods of children, fidelity, and the sacramental bond, shaping the Western church's understanding of marriage as a permanent covenant for more than a millennium, for both better and worse."
+    },
+    {
+      "date": "1215",
+      "event": "The Fourth Lateran Council and the developing medieval church formalize marriage as one of the sacraments, regulating it within the church and reinforcing its permanence, while also at times reducing it to a matter of property and canon law."
+    },
+    {
+      "date": "1522",
+      "event": "Martin Luther, rejecting the sacramental view, recovers marriage as a high and holy calling rather than a second-best estate, honoring the ordinary married life of pastor and parent against the medieval elevation of celibacy, and marries Katharina von Bora."
+    },
+    {
+      "date": "1948",
+      "event": "The rise of the companionate and then the soulmate ideal of marriage accelerates across the twentieth century, redefining marriage's purpose as the emotional fulfillment of the spouses, which quietly converts the covenant into a contract kept only while it satisfies."
+    },
+    {
+      "date": "1969",
+      "event": "The first no-fault divorce law in the United States is signed in California, accelerating a legal and cultural shift toward marriage as a dissoluble arrangement, the contract instinct written into law, kept while it serves and ended when it does not."
+    },
+    {
+      "date": "2011",
+      "event": "Timothy Keller publishes The Meaning of Marriage, recovering for a wide readership the understanding of marriage as a covenant grounded in the gospel, in which spouses love not the person they wish they had married but the person they actually did."
+    }
   ],
   "facilitatorScript": {
     "open": "Welcome, and thank you for being here, because it takes courage to talk honestly about marriage in a room. Before we start, three things. First, the only marriage any of us is responsible for in this room is our own, so we are here to be convicted, not to convict, and nobody is on trial except in front of God and gently. Second, you do not have to perform a perfect marriage. You can be honest about a struggle, you can be unsure, and what is said in honesty stays in this room and is never used in the car on the way home. Third, the writer puts himself inside everything he says, married, five sons, and still getting it wrong on a Tuesday, and so will we. We are not pointing from a safe distance. We are standing in it. One more thing that matters, and I mean it. If anyone here is being harmed, controlled, or frightened in their marriage, the covenant is never a command to endure that, and I am available to talk privately and to help. Tonight we are looking at this together: ________. Let me read our key passage, and then we will sit with it before we say anything else. There are no wrong answers in the first five minutes, only honest ones.",
@@ -280,18 +654,66 @@
     }
   ],
   "bibliography": [
-    { "title": "The Meaning of Marriage: Facing the Complexities of Commitment with the Wisdom of God", "author": "Timothy Keller with Kathy Keller", "note": "The pastoral spine of the whole study, where Keller frames marriage as a gospel covenant in which you love not the person you wish you had married but the one you actually did. Anchors sessions 1 and 5." },
-    { "title": "Sacred Marriage: What If God Designed Marriage to Make Us Holy More Than to Make Us Happy?", "author": "Gary Thomas", "note": "Presses the case that marriage is given as much for our sanctification as our satisfaction, recovering the costly seasons as the place God does his deepest work. Supports sessions 2 and 5. Leader to confirm specific claims before attributing them." },
-    { "title": "A Severe Mercy", "author": "Sheldon Vanauken", "note": "A memoir of a marriage and a faith, holding together great love and great loss, useful for the gospel shape of staying and the costliness of covenant love. Background for session 5. Not cited directly, offered as a moving witness." },
-    { "title": "The Mystery of Marriage", "author": "Mike Mason", "note": "A meditative theology of marriage as covenant and mystery, treating the one-flesh union and the daily dying to self with unusual depth. Supports sessions 1 and 4. Leader to confirm before pressing any specific argument as the study's own." },
-    { "title": "His Needs, Her Needs", "author": "Willard F. Harley", "note": "A practical account of how affairs begin in the slow erosion of attention and met needs rather than in a single act, useful background for the faithfulness material. Supports session 4. A practical voice, leader to weigh against the study's deeper covenant frame." },
-    { "title": "The Seven Principles for Making Marriage Work", "author": "John M. Gottman and Nan Silver", "note": "The marriage researcher's account of the behaviors that predict divorce, contempt, criticism, defensiveness, and stonewalling, and the habits that protect a marriage. Common grace confirming the small war of session 2, true as far as it goes and unable to supply the cure." },
-    { "title": "Boundaries in Marriage", "author": "Henry Cloud and John Townsend", "note": "On the difference between sinful control and healthy limits, useful for handling in-laws, the unfinished leaving, and the line between honoring parents and obeying them. Supports session 5. Leader to confirm specific claims." },
-    { "title": "When Anger Hurts Your Relationship", "author": "Counseling and care literature on conflict", "note": "Representative of the body of pastoral counseling work on conflict and forgiveness in marriage. Offered as a category for leaders to draw on locally rather than a single endorsed text. Leader to select a trusted resource and confirm its claims." },
-    { "title": "Why Does He Do That? Inside the Minds of Angry and Controlling Men", "author": "Lundy Bancroft", "note": "An important secular resource on the patterns of abuse and control, named so leaders can recognize harm and distinguish it from ordinary conflict. Essential background for handling session 3 responsibly. Leader to pair with local domestic violence resources." },
-    { "title": "On the Good of Marriage", "author": "Augustine of Hippo", "note": "The fourth-century treatise that shaped the Western theology of marriage around the goods of fidelity, children, and the bond. Cited in the timeline as historical anchor. Leader to handle with care, honoring the insight and naming the shame the tradition also carried." },
-    { "title": "The Estate of Marriage", "author": "Martin Luther", "note": "Luther's recovery of marriage as a high and holy calling against the medieval elevation of celibacy, dignifying the ordinary married life. Historical background for the timeline. Leader to confirm before attributing specific claims." },
-    { "title": "Hosea", "author": "the prophet Hosea", "note": "The biblical book at the heart of session 5, where God commands a prophet to love and buy back an unfaithful wife as a living parable of covenant love. The primary text for the gospel shape of staying, to be read and not only cited." }
+    {
+      "title": "The Meaning of Marriage: Facing the Complexities of Commitment with the Wisdom of God",
+      "author": "Timothy Keller with Kathy Keller",
+      "note": "The pastoral spine of the whole study, where Keller frames marriage as a gospel covenant in which you love not the person you wish you had married but the one you actually did. Anchors sessions 1 and 5."
+    },
+    {
+      "title": "Sacred Marriage: What If God Designed Marriage to Make Us Holy More Than to Make Us Happy?",
+      "author": "Gary Thomas",
+      "note": "Presses the case that marriage is given as much for our sanctification as our satisfaction, recovering the costly seasons as the place God does his deepest work. Supports sessions 2 and 5. Leader to confirm specific claims before attributing them."
+    },
+    {
+      "title": "A Severe Mercy",
+      "author": "Sheldon Vanauken",
+      "note": "A memoir of a marriage and a faith, holding together great love and great loss, useful for the gospel shape of staying and the costliness of covenant love. Background for session 5. Not cited directly, offered as a moving witness."
+    },
+    {
+      "title": "The Mystery of Marriage",
+      "author": "Mike Mason",
+      "note": "A meditative theology of marriage as covenant and mystery, treating the one-flesh union and the daily dying to self with unusual depth. Supports sessions 1 and 4. Leader to confirm before pressing any specific argument as the study's own."
+    },
+    {
+      "title": "His Needs, Her Needs",
+      "author": "Willard F. Harley",
+      "note": "A practical account of how affairs begin in the slow erosion of attention and met needs rather than in a single act, useful background for the faithfulness material. Supports session 4. A practical voice, leader to weigh against the study's deeper covenant frame."
+    },
+    {
+      "title": "The Seven Principles for Making Marriage Work",
+      "author": "John M. Gottman and Nan Silver",
+      "note": "The marriage researcher's account of the behaviors that predict divorce, contempt, criticism, defensiveness, and stonewalling, and the habits that protect a marriage. Common grace confirming the small war of session 2, true as far as it goes and unable to supply the cure."
+    },
+    {
+      "title": "Boundaries in Marriage",
+      "author": "Henry Cloud and John Townsend",
+      "note": "On the difference between sinful control and healthy limits, useful for handling in-laws, the unfinished leaving, and the line between honoring parents and obeying them. Supports session 5. Leader to confirm specific claims."
+    },
+    {
+      "title": "When Anger Hurts Your Relationship",
+      "author": "Counseling and care literature on conflict",
+      "note": "Representative of the body of pastoral counseling work on conflict and forgiveness in marriage. Offered as a category for leaders to draw on locally rather than a single endorsed text. Leader to select a trusted resource and confirm its claims."
+    },
+    {
+      "title": "Why Does He Do That? Inside the Minds of Angry and Controlling Men",
+      "author": "Lundy Bancroft",
+      "note": "An important secular resource on the patterns of abuse and control, named so leaders can recognize harm and distinguish it from ordinary conflict. Essential background for handling session 3 responsibly. Leader to pair with local domestic violence resources."
+    },
+    {
+      "title": "On the Good of Marriage",
+      "author": "Augustine of Hippo",
+      "note": "The fourth-century treatise that shaped the Western theology of marriage around the goods of fidelity, children, and the bond. Cited in the timeline as historical anchor. Leader to handle with care, honoring the insight and naming the shame the tradition also carried."
+    },
+    {
+      "title": "The Estate of Marriage",
+      "author": "Martin Luther",
+      "note": "Luther's recovery of marriage as a high and holy calling against the medieval elevation of celibacy, dignifying the ordinary married life. Historical background for the timeline. Leader to confirm before attributing specific claims."
+    },
+    {
+      "title": "Hosea",
+      "author": "the prophet Hosea",
+      "note": "The biblical book at the heart of session 5, where God commands a prophet to love and buy back an unfaithful wife as a living parable of covenant love. The primary text for the gospel shape of staying, to be read and not only cited."
+    }
   ],
   "furtherReading": [
     "The Meaning of Marriage, Timothy and Kathy Keller, for couples who want the fuller pastoral case behind the covenant frame of sessions 1 and 5.",
@@ -301,38 +723,165 @@
     "Hosea, read straight through, for those willing to sit with the most uncomfortable and most beautiful marriage in Scripture and what it shows about the love that stays."
   ],
   "glossary": [
-    { "term": "Covenant", "definition": "A binding promise that holds the person it is made to regardless of whether the arrangement still pays, kept for as long as you both shall live. The category Scripture uses for marriage, modeled on God's own covenant faithfulness to a people who keep breaking it." },
-    { "term": "Contract", "definition": "An agreement kept as long as it serves the parties and built to be escaped when the terms turn bad. The thing marriage is not, though most of us run our marriages on contract logic while reciting covenant vows." },
-    { "term": "One flesh", "definition": "The Genesis description of the marriage union, a joining so real that to end it is to tear something, which is why Scripture treats divorce as a wound and not a clean exit. The bodily sign of the covenant bond, renewed in sex." },
-    { "term": "Headship", "definition": "In Ephesians 5, not the authority to rule but the call to die, modeled on Christ who loved the church and gave himself up for her. Cruciform, sacrificial, the opposite of domination, and violated, not obeyed, by any man who uses it to control or harm." },
-    { "term": "Submission", "definition": "Not forced compliance to a spouse who harms, but the free self-giving of one person to a spouse who is busy laying his life down, a particular shape of the mutual submission Paul commands of every Christian to every other in the verse that governs the whole passage." },
-    { "term": "Mutual submission", "definition": "The governing principle of Ephesians 5, submitting to one another out of reverence for Christ, the heading over all the marriage instructions, ruling out from the first word any reading of marriage as one-way domination." },
-    { "term": "Chesed", "definition": "Hebrew for steadfast, covenant love, the faithful loving-kindness God shows a people who do not deserve it. The love the marriage vow imitates and the only love strong enough to keep a covenant through the seasons that do not pay." },
-    { "term": "Faithfulness", "definition": "Not mainly the line you did not cross, which anyone can clear, but the ten thousand small turnings toward the person you promised, made most of all on the days you would rather turn away. Located by Jesus in the heart and its attention, not only the body's acts." },
-    { "term": "The receipt", "definition": "The remembered offense kept on file and produced in the next argument to win, the proof that a stated forgiveness was never real but only a loan. A forgiveness that keeps the receipt was never forgiveness, only a debt restructured." },
-    { "term": "The leaving", "definition": "The reordering of loyalty Genesis requires, a man leaving father and mother before he can hold fast to his wife. An unfinished leaving, a heart still bound first to the home it came from, is the root of most in-law conflict." },
-    { "term": "Abuse", "definition": "A pattern of harm, control, contempt, or fear inflicted by one spouse on another, which is not covenant tested but covenant broken. The study names it plainly and insists the marriage covenant is never a command to endure it, pointing toward safety and help." },
-    { "term": "The gospel shape of staying", "definition": "Staying through the seasons of disappointment not as grim endurance but as the gospel made visible, the steadfast love that holds the unworthy because it was first held, the God of Hosea who buys back the spouse who left. We stay because we were stayed for." },
-    { "term": "Companionate ideal", "definition": "The modern conviction that the purpose of marriage is the emotional fulfillment of the spouses, recovering the good that marriage should be loving while quietly converting the covenant into a contract kept only while it satisfies." },
-    { "term": "Differentiation", "definition": "The family-systems term for the healthy separation from one's family of origin that lets a person form a primary loyalty to a spouse, the clinical description of the leaving Genesis named millennia before the psychology existed." }
+    {
+      "term": "Covenant",
+      "definition": "A binding promise that holds the person it is made to regardless of whether the arrangement still pays, kept for as long as you both shall live. The category Scripture uses for marriage, modeled on God's own covenant faithfulness to a people who keep breaking it."
+    },
+    {
+      "term": "Contract",
+      "definition": "An agreement kept as long as it serves the parties and built to be escaped when the terms turn bad. The thing marriage is not, though most of us run our marriages on contract logic while reciting covenant vows."
+    },
+    {
+      "term": "One flesh",
+      "definition": "The Genesis description of the marriage union, a joining so real that to end it is to tear something, which is why Scripture treats divorce as a wound and not a clean exit. The bodily sign of the covenant bond, renewed in sex."
+    },
+    {
+      "term": "Headship",
+      "definition": "In Ephesians 5, not the authority to rule but the call to die, modeled on Christ who loved the church and gave himself up for her. Cruciform, sacrificial, the opposite of domination, and violated, not obeyed, by any man who uses it to control or harm."
+    },
+    {
+      "term": "Submission",
+      "definition": "Not forced compliance to a spouse who harms, but the free self-giving of one person to a spouse who is busy laying his life down, a particular shape of the mutual submission Paul commands of every Christian to every other in the verse that governs the whole passage."
+    },
+    {
+      "term": "Mutual submission",
+      "definition": "The governing principle of Ephesians 5, submitting to one another out of reverence for Christ, the heading over all the marriage instructions, ruling out from the first word any reading of marriage as one-way domination."
+    },
+    {
+      "term": "Chesed",
+      "definition": "Hebrew for steadfast, covenant love, the faithful loving-kindness God shows a people who do not deserve it. The love the marriage vow imitates and the only love strong enough to keep a covenant through the seasons that do not pay."
+    },
+    {
+      "term": "Faithfulness",
+      "definition": "Not mainly the line you did not cross, which anyone can clear, but the ten thousand small turnings toward the person you promised, made most of all on the days you would rather turn away. Located by Jesus in the heart and its attention, not only the body's acts."
+    },
+    {
+      "term": "The receipt",
+      "definition": "The remembered offense kept on file and produced in the next argument to win, the proof that a stated forgiveness was never real but only a loan. A forgiveness that keeps the receipt was never forgiveness, only a debt restructured."
+    },
+    {
+      "term": "The leaving",
+      "definition": "The reordering of loyalty Genesis requires, a man leaving father and mother before he can hold fast to his wife. An unfinished leaving, a heart still bound first to the home it came from, is the root of most in-law conflict."
+    },
+    {
+      "term": "Abuse",
+      "definition": "A pattern of harm, control, contempt, or fear inflicted by one spouse on another, which is not covenant tested but covenant broken. The study names it plainly and insists the marriage covenant is never a command to endure it, pointing toward safety and help."
+    },
+    {
+      "term": "The gospel shape of staying",
+      "definition": "Staying through the seasons of disappointment not as grim endurance but as the gospel made visible, the steadfast love that holds the unworthy because it was first held, the God of Hosea who buys back the spouse who left. We stay because we were stayed for."
+    },
+    {
+      "term": "Companionate ideal",
+      "definition": "The modern conviction that the purpose of marriage is the emotional fulfillment of the spouses, recovering the good that marriage should be loving while quietly converting the covenant into a contract kept only while it satisfies."
+    },
+    {
+      "term": "Differentiation",
+      "definition": "The family-systems term for the healthy separation from one's family of origin that lets a person form a primary loyalty to a spouse, the clinical description of the leaving Genesis named millennia before the psychology existed."
+    }
   ],
   "scriptureIndex": [
-    { "ref": "Genesis 2:18", "sessions": [1] },
-    { "ref": "Genesis 2:24", "sessions": [1, 5] },
-    { "ref": "Genesis 2:25", "sessions": [1, 4] },
-    { "ref": "Malachi 2:14", "sessions": [1] },
-    { "ref": "Matthew 5:27-28", "sessions": [4] },
-    { "ref": "Matthew 18:21-22", "sessions": [2] },
-    { "ref": "Matthew 19:6", "sessions": [1, 5] },
-    { "ref": "1 Corinthians 7:3-4", "sessions": [4] },
-    { "ref": "1 Corinthians 13:7", "sessions": [2, 5] },
-    { "ref": "Ephesians 4:26-27", "sessions": [2] },
-    { "ref": "Ephesians 5:21", "sessions": [3] },
-    { "ref": "Ephesians 5:25", "sessions": [3] },
-    { "ref": "Colossians 3:13", "sessions": [2] },
-    { "ref": "Hosea 2:19-20", "sessions": [1, 5] },
-    { "ref": "Hosea 3:1-2", "sessions": [5] },
-    { "ref": "1 John 4:19", "sessions": [5] }
+    {
+      "ref": "Genesis 2:18",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "Genesis 2:24",
+      "sessions": [
+        1,
+        5
+      ]
+    },
+    {
+      "ref": "Genesis 2:25",
+      "sessions": [
+        1,
+        4
+      ]
+    },
+    {
+      "ref": "Malachi 2:14",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "Matthew 5:27-28",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "Matthew 18:21-22",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "Matthew 19:6",
+      "sessions": [
+        1,
+        5
+      ]
+    },
+    {
+      "ref": "1 Corinthians 7:3-4",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "1 Corinthians 13:7",
+      "sessions": [
+        2,
+        5
+      ]
+    },
+    {
+      "ref": "Ephesians 4:26-27",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "Ephesians 5:21",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "Ephesians 5:25",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "Colossians 3:13",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "Hosea 2:19-20",
+      "sessions": [
+        1,
+        5
+      ]
+    },
+    {
+      "ref": "Hosea 3:1-2",
+      "sessions": [
+        5
+      ]
+    },
+    {
+      "ref": "1 John 4:19",
+      "sessions": [
+        5
+      ]
+    }
   ],
   "promoKit": {
     "bulletinBlurb": "Marriage gets taught as a list of tips, and almost nobody stops to ask what the thing actually is. This five-session study walks slowly past the techniques and into the cross, where marriage is named for what Scripture says it is, a covenant that images Christ and the church. It covers covenant against contract, conflict and forgiveness, headship and submission handled carefully and biblically and never as a license to control, sex and faithfulness, money and in-laws as the real pressure points, and the gospel shape of staying. It is honest about the hard parts, plain that the covenant is never a command to endure harm, and written from inside marriage, not above it. Built so any couple can lead it with no prep. Come honest, not finished.",
@@ -348,5 +897,6 @@
       "In-law conflict is rarely about the in-laws. It is about a spouse who never truly left.",
       "We do not stay because we are strong. We stay because we were stayed for."
     ]
-  }
+  },
+  "kicker": "Covenant"
 }

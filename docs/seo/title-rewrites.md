@@ -17,10 +17,10 @@ visible title and its search/social meta, never the address.
 | :--- | ---: |
 | Titled items across the site | 925 |
 | Already search-facing (left alone) | 436 |
-| **Rewritten here** | **351** |
+| **Rewritten here** | **405** |
 | Protected from renaming (below) | 83 |
-| Of the rewrites, titles actually changing | 346 |
-| Old literary titles preserved as kickers | 192 |
+| Of the rewrites, titles actually changing | 397 |
+| Old literary titles preserved as kickers | 226 |
 
 ## What must never be renamed
 
@@ -274,6 +274,65 @@ saw, so a hand-edit made in the meantime is never silently clobbered.
 | `the-slavery-texts` | **What Does the Bible Actually Say About Slavery?** | what does the bible say about slavery |  |
 | `the-violence-of-the-old-testament` | **Why Is the Old Testament So Violent? An Honest Look** | why is the old testament so violent |  |
 | `women-in-the-ancient-world` | **How Did the Bible Treat Women Compared to Its World?** | how the bible treated women in the ancient world |  |
+
+## /studyguides/ (54)
+
+| Slug (unchanged) | New title | Target query | Kicker |
+| :--- | :--- | :--- | :--- |
+| `sermon-on-the-mount` | **The Sermon on the Mount: A Bible Study** | sermon on the mount bible study | A Harder Righteousness |
+| `after-christendom` | **After Christendom: A Study on Post-Christian Faith** | post christian culture study |  |
+| `alone-in-a-crowded-church` | **Alone in a Crowded Church: A Study on Church Loneliness** | loneliness in church study |  |
+| `believe` | **Believe: A Bible Study for New Believers and Seekers** | bible study for new believers |  |
+| `character-before-competence` | **Character Before Competence: A Church Leadership Study** | church leadership character study |  |
+| `christian-nationalism` | *(kept)* Christian Nationalism: An 8-Week Study | christian nationalism study guide |  |
+| `church-and-empire` | *(kept)* Church and Empire: An 8-Week Study | church and empire study guide |  |
+| `anxiety` | **Anxiety: A Bible Study on Worry and the Peace of Christ** | bible study on anxiety | Consider the Birds |
+| `marriage` | **Marriage: A Bible Study on Covenant Love** | marriage bible study | Covenant |
+| `deep-roots` | **Deep Roots: A Bible Study for Faith Beyond Slogans** | deeper faith bible study |  |
+| `resurrection` | **The Resurrection: A Bible Study on the Evidence** | evidence for the resurrection study | Did It Happen |
+| `economic-justice` | *(kept)* Economic Justice: An 8-Week Study | economic justice bible study |  |
+| `contentment` | **Contentment: A Bible Study on Wanting Less** | bible study on contentment | Enough |
+| `fatherhood` | **Fatherhood: A Bible Study for Men Without a Blueprint** | bible study on fatherhood | Fatherhood in a Fatherless Age |
+| `aging-and-legacy` | **Aging and Legacy: A Bible Study on Finishing Well** | bible study on aging and legacy | Finishing Well |
+| `grief` | **Grief: A Bible Study on Loss and the God Who Wept** | bible study on grief |  |
+| `knowing-god` | **The Trinity: A Bible Study on Knowing God** | bible study on the trinity | Knowing God |
+| `the-image-of-god` | **The Image of God: A Bible Study on Human Worth** | image of god bible study | Made in His Image |
+| `mishpat` | **Mishpat: A Bible Study on Biblical Justice** | biblical justice bible study |  |
+| `singleness` | **Singleness: A Bible Study for the Unmarried** | bible study on singleness | Not a Waiting Room |
+| `the-story-of-the-bible` | **The Story of the Bible: A Study of the Whole Canon** | overview of the whole bible study | One Story |
+| `witness` | **Evangelism: A Bible Study on Sharing Your Faith** | bible study on evangelism | Ordinary Witness |
+| `the-psalms` | **The Psalms: A Bible Study on Honest Prayer** | bible study on the psalms | Praying the Honest Prayers |
+| `skeptic` | **Questions Skeptics Ask: A Study for Doubters** | bible study for skeptics | Questions Worth Asking |
+| `raising-believers` | **Raising Believers: A Bible Study for Christian Parents** | bible study for christian parents |  |
+| `prayer` | **Prayer: A Bible Study on Learning to Pray** | bible study on prayer | Teach Us to Pray |
+| `the-captive-church` | **The Captive Church: A Study on Faith and Political Power** | church and political power study |  |
+| `heaven-and-hell` | **Heaven and Hell: A Bible Study on the Life to Come** | bible study on heaven and hell | The Country We Have Not Seen |
+| `attention` | **Attention: A Bible Study on Technology and Distraction** | christian study on technology and attention | The Distracted Soul |
+| `anger` | **Anger: A Bible Study on Temper and Righteous Anger** | bible study on anger | The Emotion We Baptized |
+| `the-creeds` | **The Creeds: A Bible Study on What Christians Believe** | study on the apostles creed | The Faith Once Delivered |
+| `new-believer` | **New Believers: A Study on Your First Steps of Faith** | bible study for new christians | The First Steps |
+| `holy-spirit` | **The Holy Spirit: A Bible Study on the Forgotten God** | bible study on the holy spirit | The Forgotten God |
+| `fruit-of-the-spirit` | **The Fruit of the Spirit: A Bible Study on Growth** | fruit of the spirit bible study | The Garden the Spirit Grows |
+| `gratitude` | **Gratitude: A Bible Study on Thanksgiving and Grace** | bible study on gratitude | The Grace of Thanks |
+| `forgiveness` | **Forgiveness: A Bible Study on the Hardest Word** | bible study on forgiveness |  |
+| `pastoral-health` | **Pastoral Health: A Study for Leaders and Those Who Love Them** | pastor burnout study for leaders |  |
+| `the-beatitudes` | **The Beatitudes: A Bible Study on the Kingdom of God** | beatitudes bible study | The Kingdom Turned Upside Down |
+| `parenting-formation` | **Parenting: A Bible Study on Forming a Child's Faith** | christian parenting bible study | The Long Obedience of Parenting |
+| `friendship` | **Friendship: A Bible Study on the Love We Forgot** | bible study on friendship |  |
+| `the-lords-prayer` | **The Lord's Prayer: A Bible Study Line by Line** | lords prayer bible study | The Only Prayer Jesus Taught |
+| `hospitality` | **Hospitality: A Bible Study on the Open Door** | bible study on hospitality |  |
+| `generosity` | **Generosity: A Bible Study on Giving** | bible study on generosity and giving | The Open Hand |
+| `lament` | **Lament: A Bible Study on Praying Your Pain** | bible study on lament | The Prayers We Were Never Taught |
+| `sabbath` | **Sabbath: A Bible Study on Rest and Hurry** | bible study on sabbath rest | The Rest We Refuse |
+| `identity` | **Identity: A Bible Study on Who You Actually Are** | bible study on identity in christ | The Self You Were Sold |
+| `the-parables` | **The Parables: A Bible Study on the Stories of Jesus** | parables of jesus bible study | The Stories That Undo You |
+| `the-undivided-life` | **The Undivided Life: A Study on Faith Beyond Sunday** | integrating faith and daily life study |  |
+| `spiritual-warfare` | **Spiritual Warfare: A Bible Study on the Unseen Battle** | bible study on spiritual warfare |  |
+| `baptism-and-communion` | **Baptism and Communion: A Bible Study on the Sacraments** | bible study on baptism and communion | The Water and the Table |
+| `mental-health` | **Mental Health: A Bible Study on the Weight You Carry** | christian bible study on mental health |  |
+| `work-and-vocation` | **Work and Vocation: A Bible Study on Faith and Your Job** | bible study on work and vocation | The Work of Our Hands |
+| `womanhood` | **Biblical Womanhood: A Bible Study on Women of Valor** | bible study on biblical womanhood |  |
+| `habits-and-formation` | **Spiritual Habits: A Bible Study on Formation** | bible study on spiritual habits | You Become What You Repeat |
 
 ## /theology/doctrine/ (13)
 

@@ -43,6 +43,7 @@ const LIBRARIES = {
   "/justice/topic/": { dir: "client/public/justice/topics", builder: "build-prophetic-indexes.mjs" },
   "/disruption/topic/": { dir: "client/public/disruption/topics", builder: "build-prophetic-indexes.mjs" },
   "/nation/": { dir: "client/public/nation", builder: null },
+  "/studyguides/": { dir: "client/public/studyguides", builder: "build-studyguides-index.mjs" },
 };
 
 const args = new Set(process.argv.slice(2));

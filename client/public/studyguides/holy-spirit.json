@@ -1,9 +1,8 @@
 {
   "slug": "holy-spirit",
-  "title": "The Forgotten God",
+  "title": "The Holy Spirit: A Bible Study on the Forgotten God",
   "subtitle": "A five-session study on the Holy Spirit, the personal presence of God who gives life.",
-  "summary": "This study is for small groups, adult Sunday school classes, and individuals who have spent years in church and somehow ended up with two persons of the Trinity they could describe and a third they could not. The Father they picture. The Son they love. The Spirit has been left a kind of holy vapor, a power source, an influence, the part of God you mention at the end of a prayer and then forget. This is not a small mistake. It is the loss of God himself, present, personal, indwelling, the very breath by which the dead are made alive. The study walks slowly through five movements. Who the Spirit is and why the church treats him as an afterthought. The new birth, regeneration, the Spirit who raises the spiritually dead, including the writer, who was an atheist until the Spirit did the one thing argument never could. The slow work of the fruit and the difference between being changed and merely performing. The contested question of the gifts, where continuationist and cessationist are both given their strongest case and the group is held together across the divide. And the Spirit in our weakness, the One who prays in us when we have no words, the down payment of a world being made new.\n\nThis is not a study that will pick the group's side in the old fights over tongues and prophecy and healing. It will not do that, and the leader must never let it. The continuationist case will be put at full strength and so will the cessationist, and the aim is a room that can disagree about gifts while worshiping the same Spirit. Most of all the study implicates the leader and the writer. Bell does not stand outside this. He spent years certain there was no God and no soul and no Spirit, and the thing that finally undid him was not a better argument. It was a presence he had no category for. He writes from inside the new birth he did not author and cannot explain. So will you."
-  ,
+  "summary": "This study is for small groups, adult Sunday school classes, and individuals who have spent years in church and somehow ended up with two persons of the Trinity they could describe and a third they could not. The Father they picture. The Son they love. The Spirit has been left a kind of holy vapor, a power source, an influence, the part of God you mention at the end of a prayer and then forget. This is not a small mistake. It is the loss of God himself, present, personal, indwelling, the very breath by which the dead are made alive. The study walks slowly through five movements. Who the Spirit is and why the church treats him as an afterthought. The new birth, regeneration, the Spirit who raises the spiritually dead, including the writer, who was an atheist until the Spirit did the one thing argument never could. The slow work of the fruit and the difference between being changed and merely performing. The contested question of the gifts, where continuationist and cessationist are both given their strongest case and the group is held together across the divide. And the Spirit in our weakness, the One who prays in us when we have no words, the down payment of a world being made new.\n\nThis is not a study that will pick the group's side in the old fights over tongues and prophecy and healing. It will not do that, and the leader must never let it. The continuationist case will be put at full strength and so will the cessationist, and the aim is a room that can disagree about gifts while worshiping the same Spirit. Most of all the study implicates the leader and the writer. Bell does not stand outside this. He spent years certain there was no God and no soul and no Spirit, and the thing that finally undid him was not a better argument. It was a presence he had no category for. He writes from inside the new birth he did not author and cannot explain. So will you.",
   "audience": "Small groups, adult Sunday school, and individuals",
   "sessionsLabel": "5 sessions (run as 5, 8, or 4 weeks)",
   "sessions": [
@@ -13,18 +12,55 @@
       "title": "The Spirit We Ignore",
       "aim": "To recover the Holy Spirit as fully God and fully personal, not a force the church switches on for emotional moments and a power source it forgets the rest of the time, and to face honestly why we have made the third person of the Trinity an afterthought.",
       "summary": "Ask most Christians who the Holy Spirit is and you will get a long pause, then something about a feeling, a power, an influence. The Father and the Son they can describe. The Spirit they cannot, and that loss is not academic. Francis Chan called him the forgotten God, and he was right, because we have functionally reduced God himself to a vapor. The first question is not what the Spirit does. It is who the Spirit is. Bell takes the strong form of two errors that pull against each other. The first treats the Spirit as a force, an it, a divine electricity that fills you and makes you feel things, and there is a true instinct under it, that the Spirit really is power, really does fill, really is felt. The second overcorrects so hard against emotionalism that the Spirit becomes a footnote in a doctrine of God, true on paper and dead in practice, and there is a true instinct there too, a proper fear of making faith a search for feelings. Bell will not let either win. The Spirit is not a force, which refutes the first, because Scripture says he can be grieved, lied to, resisted, and only a person can be grieved. And the Spirit is not a footnote, which refutes the second, because he is the very presence of God now living inside the people of God. He is God, of one being with the Father and the Son. He is personal, he speaks and wills and loves. And he is here, not an influence sent from a distance but God himself indwelling. The reason we forget him is not that he is unimportant. It is that he is humble. He does not point to himself. He points to Christ. We mistook his self-effacement for absence.",
-      "keyScripture": { "ref": "John 14:16-17", "why": "Jesus promises another Helper, of the same kind as himself, to be with the disciples forever, and says the Spirit dwells with them and will be in them, naming the Spirit not as a force dispatched from far off but as a personal presence, God himself, who comes to live inside the people of God." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "John 14:16-17",
+        "why": "Jesus promises another Helper, of the same kind as himself, to be with the disciples forever, and says the Spirit dwells with them and will be in them, naming the Spirit not as a force dispatched from far off but as a personal presence, God himself, who comes to live inside the people of God."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Before tonight, if someone had asked you who the Holy Spirit is, what would you honestly have said, and how does that compare to how you would describe the Father and the Son?", "behind": "Surface the gap before correcting it. Most people can describe the Father and the Son and go vague on the Spirit, and naming that out loud is the whole point of the opening. Do not rush to fix it. Let the room feel the size of what has been missing, and go first if it is slow." },
-        { "q": "Bell says we treat the Spirit as a force, an it, a kind of divine power we switch on. Where have you caught yourself thinking of the Spirit as a thing God uses rather than as God himself?", "behind": "Move the room off the it. We say things like the Spirit fell or I felt the Spirit in a way we would never say of the Father. The aim is to notice the grammar of our own forgetting, gently, so people see they have been worshiping a vapor without meaning to." },
-        { "q": "Scripture says the Spirit can be grieved, lied to, and resisted. What does it change to know that only a person can be grieved, that you can wound the Spirit the way you wound someone who loves you?", "behind": "This is the hinge of the session. The personhood of the Spirit is not a doctrine for its own sake, it is a relationship. Help the room feel that grieving the Spirit is not tripping a circuit but hurting Someone, which is both more sobering and more tender than the force model allows." },
-        { "q": "Bell says the reason we forget the Spirit is not that he is unimportant but that he is humble, that he points away from himself to Christ. How does that reframe his apparent quietness?", "behind": "Protect against the overcorrection. The Spirit's self-effacement is not absence, it is character. The aim is to help the room stop reading the Spirit's lack of self-promotion as a reason to ignore him and start reading it as the very thing it is, a person who delights to glorify another." },
-        { "q": "Bell admits he can preach the Trinity and then pray and live as though the Spirit were not in the room. Where have you held the doctrine on paper while functionally living as though God were distant?", "behind": "Move from teaching to self-implication. You are not hunting confession. You want each person, the leader first, to admit the gap between the creed they affirm and the absence they live. Go first. The honesty here opens the rest of the study." }
+        {
+          "q": "Before tonight, if someone had asked you who the Holy Spirit is, what would you honestly have said, and how does that compare to how you would describe the Father and the Son?",
+          "behind": "Surface the gap before correcting it. Most people can describe the Father and the Son and go vague on the Spirit, and naming that out loud is the whole point of the opening. Do not rush to fix it. Let the room feel the size of what has been missing, and go first if it is slow."
+        },
+        {
+          "q": "Bell says we treat the Spirit as a force, an it, a kind of divine power we switch on. Where have you caught yourself thinking of the Spirit as a thing God uses rather than as God himself?",
+          "behind": "Move the room off the it. We say things like the Spirit fell or I felt the Spirit in a way we would never say of the Father. The aim is to notice the grammar of our own forgetting, gently, so people see they have been worshiping a vapor without meaning to."
+        },
+        {
+          "q": "Scripture says the Spirit can be grieved, lied to, and resisted. What does it change to know that only a person can be grieved, that you can wound the Spirit the way you wound someone who loves you?",
+          "behind": "This is the hinge of the session. The personhood of the Spirit is not a doctrine for its own sake, it is a relationship. Help the room feel that grieving the Spirit is not tripping a circuit but hurting Someone, which is both more sobering and more tender than the force model allows."
+        },
+        {
+          "q": "Bell says the reason we forget the Spirit is not that he is unimportant but that he is humble, that he points away from himself to Christ. How does that reframe his apparent quietness?",
+          "behind": "Protect against the overcorrection. The Spirit's self-effacement is not absence, it is character. The aim is to help the room stop reading the Spirit's lack of self-promotion as a reason to ignore him and start reading it as the very thing it is, a person who delights to glorify another."
+        },
+        {
+          "q": "Bell admits he can preach the Trinity and then pray and live as though the Spirit were not in the room. Where have you held the doctrine on paper while functionally living as though God were distant?",
+          "behind": "Move from teaching to self-implication. You are not hunting confession. You want each person, the leader first, to admit the gap between the creed they affirm and the absence they live. Go first. The honesty here opens the rest of the study."
+        }
       ],
       "objections": [
-        { "objection": "The Spirit is the power of God, plainly, the energy that fills believers and makes things happen. Calling him a person is reading too much into poetic language about wind and fire and breath.", "response": "Sit with the half that is true, because Bell grants it. The Spirit is power, Scripture says so, and the images of wind and fire and living water are not nothing, they tell us he fills and moves and gives life. Then make the distinction with care. The same Scripture that uses those images also says Ananias lied to the Spirit, that the Ephesians could grieve the Spirit, that Stephen's hearers always resisted the Spirit. You cannot lie to electricity. You cannot grieve the wind. You can only lie to and grieve and resist a someone. The Spirit is called the Helper, he teaches, he intercedes, he wills, he speaks, he can be blasphemed in a way that is unforgivable. A force does none of that. The power is real, but the power belongs to a person, and to keep the power while losing the person is to keep the gift and lose the Giver." },
-        { "objection": "All this talk of the Spirit as a personal presence inside you is exactly what leads to the emotionalism and the chaos I have seen, people chasing feelings and calling every impulse the Spirit. Better to keep him safely in the doctrine of God and not let it get strange.", "response": "Grant what is right, because much of it is. Real harm has been done in the Spirit's name, impulses baptized as guidance, manipulation dressed as anointing, a hunger for experience that left people exhausted and deceived. A proper fear of that is healthy. Then press the other edge gently. To wall the Spirit off in the doctrine of God so he never touches your actual life is its own deep error, because the Spirit Jesus promised was not a clause in a creed but a presence to be with us and in us forever. The answer to bad experience is not no experience. It is the Spirit tested by the Word, the same Spirit who inspired Scripture never contradicting it. Do not chase every feeling. But do not exile the living God to a footnote because some have abused his name. Honor the Word. Do not erase the presence." }
+        {
+          "objection": "The Spirit is the power of God, plainly, the energy that fills believers and makes things happen. Calling him a person is reading too much into poetic language about wind and fire and breath.",
+          "response": "Sit with the half that is true, because Bell grants it. The Spirit is power, Scripture says so, and the images of wind and fire and living water are not nothing, they tell us he fills and moves and gives life. Then make the distinction with care. The same Scripture that uses those images also says Ananias lied to the Spirit, that the Ephesians could grieve the Spirit, that Stephen's hearers always resisted the Spirit. You cannot lie to electricity. You cannot grieve the wind. You can only lie to and grieve and resist a someone. The Spirit is called the Helper, he teaches, he intercedes, he wills, he speaks, he can be blasphemed in a way that is unforgivable. A force does none of that. The power is real, but the power belongs to a person, and to keep the power while losing the person is to keep the gift and lose the Giver."
+        },
+        {
+          "objection": "All this talk of the Spirit as a personal presence inside you is exactly what leads to the emotionalism and the chaos I have seen, people chasing feelings and calling every impulse the Spirit. Better to keep him safely in the doctrine of God and not let it get strange.",
+          "response": "Grant what is right, because much of it is. Real harm has been done in the Spirit's name, impulses baptized as guidance, manipulation dressed as anointing, a hunger for experience that left people exhausted and deceived. A proper fear of that is healthy. Then press the other edge gently. To wall the Spirit off in the doctrine of God so he never touches your actual life is its own deep error, because the Spirit Jesus promised was not a clause in a creed but a presence to be with us and in us forever. The answer to bad experience is not no experience. It is the Spirit tested by the Word, the same Spirit who inspired Scripture never contradicting it. Do not chase every feeling. But do not exile the living God to a footnote because some have abused his name. Honor the Word. Do not erase the presence."
+        }
       ],
       "quietRoomQuestion": "If the Holy Spirit is a person who can be grieved, when did you last consider that the way you have lived might have wounded Someone who loves you, rather than merely broken a rule?",
       "practice": "This week, change one word in how you pray. When you would normally end a prayer by mentioning the Spirit at the close, or skip him entirely, instead begin once a day by speaking to the Spirit directly and simply, as a person who is present. Holy Spirit, you are here. Help me. Do not perform anything. Just practice addressing the God who indwells you as the someone he is, and write down whether speaking to him rather than about him changed anything.",
@@ -36,16 +72,40 @@
       ],
       "teaching": "Start with the test most of us would fail. Ask a roomful of lifelong Christians to describe the Father, and they will manage it. Ask them to describe the Son, and they will do better still, because they have a face, a life, a cross. Then ask them who the Holy Spirit is, and watch the pause. Something about a power. A feeling. An influence. A force that comes over you in worship. Francis Chan named a whole book after this, the forgotten God, and the title is an accusation we have earned, because what we have done is not lose a doctrine. We have lost a person of the Godhead. We have reduced God himself to a vapor, and we did it so quietly we never noticed the room had gone empty. So we do not begin with what the Spirit does, which is where everyone wants to begin, hungry for power or gifts or guidance. We begin with the harder question. Who is he. Take the two errors that pull against each other, and take them at full strength. The first treats the Spirit as a force, an it, a divine electricity that fills you and lights you up and makes you feel the presence of God. And there is a true instinct buried in it. The Spirit really is power. He really does fill. The images Scripture gives are not decoration, the rushing wind at Pentecost, the tongues of fire, the living water, the breath of God. To strip all of that out and leave a bloodless abstraction is to miss something true. The second error runs the other way, so frightened of emotionalism and chaos that it files the Spirit safely under the doctrine of God, affirmed in the creed, absent from the week, true on paper and functionally dead. And there is a true instinct there too, a proper fear of a faith that becomes a hunt for sensations and calls every impulse divine guidance. Now watch what happens when neither error is allowed to win the whole field. The Spirit is not a force, which destroys the first position, and the proof is devastatingly simple. Scripture says the Spirit can be grieved. Do not grieve the Holy Spirit of God, Paul writes. It says Ananias lied to the Spirit and fell down dead. It says Stephen's accusers always resisted the Spirit, as their fathers did. Now think about what those verbs require. You cannot grieve electricity. You cannot lie to the wind. You cannot resist a feeling in the way you resist a someone pressing on your conscience. To grieve, to lie to, to resist, these are things you can only do to a person. The Spirit teaches. He intercedes. He wills, distributing gifts as he wills. He speaks, set apart Barnabas and Saul for the work to which I have called them. He can be blasphemed, and that blasphemy alone Jesus calls unforgivable, which makes no sense at all if the Spirit is an impersonal power. Think for a moment about what it means to grieve someone, because we have flattened that word too. You do not grieve a stranger. You grieve someone who loves you, someone whose face changes when you wound them, someone close enough that what you do reaches them. Paul is telling us that the God who indwells us is near enough and personal enough to be hurt by how we live, not as a rule is broken but as a relationship is bruised, and the moment you feel the difference between tripping a wire and wounding a friend, the whole force model of the Spirit collapses in your hands. But the Spirit is also not a footnote, which destroys the second position, because the presence Jesus actually promised was not a clause in a doctrine of God. He said he would ask the Father, and the Father would give them another Helper, to be with them forever. That word another matters. It means another of the same kind as Jesus himself, a personal presence, not a downgrade to an influence. And he says this Helper, who has been with you, will be in you. With and in. Not an energy dispatched from a safe distance but God himself coming to live inside the people of God. So here is the verdict, and the leader must hold it cleanly. The Spirit is God, of one being with the Father and the Son, not a created power but the third person of the one God. He is personal, he speaks and wills and loves and grieves. And he is here, indwelling, nearer to you than your own breath, because the word for Spirit is the word for breath. Then the question that should trouble us. If he is God, present, personal, indwelling, why on earth do we forget him. And the answer is not that he is unimportant. The answer is that he is humble. The Spirit does not point to himself. When the Spirit of truth comes, Jesus said, he will not speak on his own authority, he will glorify me. The Spirit's whole delight is to turn the spotlight onto Christ and stay in the shadows himself, and we, trained to notice only what promotes itself, mistook his self-effacement for absence. We thought the quiet one was the unimportant one. That is the world's logic, where the one who promotes himself loudest is judged to matter most, and we carried that logic straight into our reading of God and concluded that the person who never demands the spotlight must be the lesser one. We could not have been more wrong. And I have to stand inside this, because I can preach the Trinity on a Sunday, all three persons, fully God, and then pray that same afternoon as though I were shouting up at a distant sky, and live the whole week as though the house were empty, as though the God who raised Jesus from the dead were not at that moment dwelling in me. The forgetting is not only theirs. It is mine. The Spirit has been in the room the entire time, the humble person of the Godhead, glorifying Christ and waiting, with a patience that itself should break us, to be known.",
       "scriptureStudy": [
-        { "ref": "John 14:16-17", "note": "Jesus promises another Helper to be with them forever, the Spirit of truth who dwells with them and will be in them. Another means another of the same kind, a person like Jesus, not an influence, and with and in name a presence, not a distant power." },
-        { "ref": "Ephesians 4:30", "note": "Do not grieve the Holy Spirit of God, by whom you were sealed. You cannot grieve a force. The command assumes a person who feels, who can be wounded by how his people live, which is the death of the it model of the Spirit." },
-        { "ref": "Acts 5:3-4", "note": "Peter tells Ananias he has lied to the Holy Spirit, and then that he has not lied to men but to God. In one breath the Spirit is named as the one lied to and as God, settling both the personhood and the deity at once." },
-        { "ref": "1 Corinthians 12:11", "note": "All these are empowered by one and the same Spirit, who apportions to each one individually as he wills. The Spirit wills and chooses and distributes, the action of a person with a mind, not the discharge of an impersonal power." },
-        { "ref": "Acts 13:2", "note": "The Holy Spirit said, set apart for me Barnabas and Saul for the work to which I have called them. The Spirit speaks, calls, and claims a work as his own, the speech of a person, not the hum of a current." },
-        { "ref": "Genesis 1:2", "note": "The Spirit of God was hovering over the face of the waters. From the first page the Spirit is present and active in creation itself, no latecomer to the story but God at work before there was anyone to feel him." },
-        { "ref": "Romans 8:9", "note": "Anyone who does not have the Spirit of Christ does not belong to him. The Spirit is the mark of belonging to God, his indwelling the very thing that makes you Christ's, which is impossible if he is merely an optional power for special believers." }
+        {
+          "ref": "John 14:16-17",
+          "note": "Jesus promises another Helper to be with them forever, the Spirit of truth who dwells with them and will be in them. Another means another of the same kind, a person like Jesus, not an influence, and with and in name a presence, not a distant power."
+        },
+        {
+          "ref": "Ephesians 4:30",
+          "note": "Do not grieve the Holy Spirit of God, by whom you were sealed. You cannot grieve a force. The command assumes a person who feels, who can be wounded by how his people live, which is the death of the it model of the Spirit."
+        },
+        {
+          "ref": "Acts 5:3-4",
+          "note": "Peter tells Ananias he has lied to the Holy Spirit, and then that he has not lied to men but to God. In one breath the Spirit is named as the one lied to and as God, settling both the personhood and the deity at once."
+        },
+        {
+          "ref": "1 Corinthians 12:11",
+          "note": "All these are empowered by one and the same Spirit, who apportions to each one individually as he wills. The Spirit wills and chooses and distributes, the action of a person with a mind, not the discharge of an impersonal power."
+        },
+        {
+          "ref": "Acts 13:2",
+          "note": "The Holy Spirit said, set apart for me Barnabas and Saul for the work to which I have called them. The Spirit speaks, calls, and claims a work as his own, the speech of a person, not the hum of a current."
+        },
+        {
+          "ref": "Genesis 1:2",
+          "note": "The Spirit of God was hovering over the face of the waters. From the first page the Spirit is present and active in creation itself, no latecomer to the story but God at work before there was anyone to feel him."
+        },
+        {
+          "ref": "Romans 8:9",
+          "note": "Anyone who does not have the Spirit of Christ does not belong to him. The Spirit is the mark of belonging to God, his indwelling the very thing that makes you Christ's, which is impossible if he is merely an optional power for special believers."
+        }
       ],
       "goingDeeper": "Take up the long fight the church had to have to say what it finally said about the Spirit, because we did not arrive at the personhood and the deity of the Spirit by reflex. In the centuries after the apostles, the church wrestled hard, and a party arose, the ones Athanasius and others called the Spirit-fighters, who were willing to grant that the Spirit was something more than a creature but balked at calling him fully God. Read against that backdrop the work of Athanasius and the Cappadocian fathers, especially Basil of Caesarea, whose treatise on the Holy Spirit argued that the Spirit must be worshiped and glorified together with the Father and the Son, which only makes sense if the Spirit is God. The Council of Constantinople in 381 settled it, expanding the creed to confess the Spirit as the Lord and giver of life, who together with the Father and the Son is worshiped and glorified. A serious group should weigh why this mattered so much that the church would not let it go. If the Spirit who indwells you is not fully God, then God does not actually live in you, only a creature does, and your salvation is mediated by something less than God himself. The deity of the Spirit is not a technicality. It is the difference between God present and a messenger sent. Set this beside the modern habit of vague spirituality, the talk of energy and presence and the universe, and ask what is lost when the Spirit becomes a feeling again rather than the Lord and giver of life the church bled to confess. The discipline of this whole study is to refuse to relax that confession, to hold that the One who lives in us is God, personal, and worthy of the same worship we give the Father and the Son.",
-      "memoryVerse": { "ref": "John 14:16-17", "text": "And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth. You know him, for he dwells with you and will be in you." }
+      "memoryVerse": {
+        "ref": "John 14:16-17",
+        "text": "And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth. You know him, for he dwells with you and will be in you."
+      }
     },
     {
       "n": 2,
@@ -53,18 +113,55 @@
       "title": "Born of the Spirit",
       "aim": "To take the new birth as the Spirit's work and not ours, to see regeneration as God raising the spiritually dead rather than coaching the spiritually struggling, and to let the writer's own conversion from atheism stand as evidence that the Spirit does what argument never could.",
       "summary": "Jesus tells a religious expert, a man who had done everything right, that none of it counts, that he must be born again, born of the Spirit, or he will never even see the kingdom. The first question is why Jesus aims the hardest words about regeneration not at the worst sinner in the room but at the most respectable man in Israel. The answer is that the new birth is not improvement. It is resurrection. You do not contribute to your own birth, the first one or the second, and Nicodemus, who can do many things, cannot do this. Bell takes the strong form of the objection, that conversion is just a decision a person makes, that you choose to believe and the choosing is yours, and he grants the real thing under it, that we do believe, do repent, do come, really and responsibly. But he will not let the human decision swallow the divine act. The Spirit is the wind, Jesus says, blowing where it wills, and you hear it but cannot command it. Bell stands inside this with his own story, because he was an atheist, certain, intelligent, unmoved by the arguments he had heard and answered. What changed him was not a better syllogism. He was made alive by a presence he had no category for, and he knows, all the way down, that he did not author it. Then the turn. If the new birth is the Spirit's work, then no one is beyond it, not the hardest skeptic, not the most cynical heart, because the same Spirit who hovered over the waters and raised Christ from the tomb is in the business of making the dead alive, and the dead do not improve their way to life. They are raised.",
-      "keyScripture": { "ref": "John 3:5-8", "why": "Jesus tells Nicodemus that unless one is born of water and the Spirit he cannot enter the kingdom of God, that flesh gives birth to flesh but the Spirit gives birth to spirit, and that the Spirit is like the wind that blows where it wishes, naming the new birth as the sovereign work of God and not the achievement of the one being born." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "John 3:5-8",
+        "why": "Jesus tells Nicodemus that unless one is born of water and the Spirit he cannot enter the kingdom of God, that flesh gives birth to flesh but the Spirit gives birth to spirit, and that the Spirit is like the wind that blows where it wishes, naming the new birth as the sovereign work of God and not the achievement of the one being born."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Jesus tells the most respectable, religious man in Israel that he must be born again. Why do you think the hardest words about needing a new birth land on the good man and not the obvious sinner?", "behind": "Open on the surprise. We expect the call to be born again to go to the prostitute and the tax collector. Jesus aims it at the Pharisee. The aim is to expose the assumption that respectability is a head start toward God, and to feel that the new birth levels everyone, the moral and the immoral alike." },
-        { "q": "Bell says the new birth is not improvement but resurrection, that you contribute to your second birth exactly as much as you contributed to your first, which is nothing. How does that sit with you?", "behind": "Press on the image. We are deeply committed to the idea that we did something to get saved. The aim is to feel the offense and the relief of the birth metaphor together, that a baby does not assist in being born, and to let that reframe what conversion actually is." },
-        { "q": "Bell takes the objection that conversion is simply a decision we make. What is true in that, and what does it miss about the Spirit being the wind that blows where it wills?", "behind": "Hold both halves carefully. We really do decide, believe, repent, and the leader must not deny human responsibility. The miss is treating the decision as the whole cause. Help the room hold the mystery, that we truly choose and the Spirit truly raises, without flattening either side." },
-        { "q": "Bell was an atheist who had heard the arguments and answered them, and what finally changed him was not a better argument but a presence. If conversion were only about being persuaded, what would be missing?", "behind": "Get the room to feel the limit of argument. Many think the unconverted just need the right case made. The aim is to recognize that information does not raise the dead, that the writer was not out-argued but made alive, which changes how we pray for the people we love." },
-        { "q": "If the new birth is the Spirit's work and not the sinner's achievement, how should that change the way you pray for the hardest, most cynical person you know?", "behind": "Close on hope and self-implication. We give up on people we judge too far gone, which secretly assumes their salvation depends on their openness rather than the Spirit's power. Invite the room to name that person and to pray differently. Go first." }
+        {
+          "q": "Jesus tells the most respectable, religious man in Israel that he must be born again. Why do you think the hardest words about needing a new birth land on the good man and not the obvious sinner?",
+          "behind": "Open on the surprise. We expect the call to be born again to go to the prostitute and the tax collector. Jesus aims it at the Pharisee. The aim is to expose the assumption that respectability is a head start toward God, and to feel that the new birth levels everyone, the moral and the immoral alike."
+        },
+        {
+          "q": "Bell says the new birth is not improvement but resurrection, that you contribute to your second birth exactly as much as you contributed to your first, which is nothing. How does that sit with you?",
+          "behind": "Press on the image. We are deeply committed to the idea that we did something to get saved. The aim is to feel the offense and the relief of the birth metaphor together, that a baby does not assist in being born, and to let that reframe what conversion actually is."
+        },
+        {
+          "q": "Bell takes the objection that conversion is simply a decision we make. What is true in that, and what does it miss about the Spirit being the wind that blows where it wills?",
+          "behind": "Hold both halves carefully. We really do decide, believe, repent, and the leader must not deny human responsibility. The miss is treating the decision as the whole cause. Help the room hold the mystery, that we truly choose and the Spirit truly raises, without flattening either side."
+        },
+        {
+          "q": "Bell was an atheist who had heard the arguments and answered them, and what finally changed him was not a better argument but a presence. If conversion were only about being persuaded, what would be missing?",
+          "behind": "Get the room to feel the limit of argument. Many think the unconverted just need the right case made. The aim is to recognize that information does not raise the dead, that the writer was not out-argued but made alive, which changes how we pray for the people we love."
+        },
+        {
+          "q": "If the new birth is the Spirit's work and not the sinner's achievement, how should that change the way you pray for the hardest, most cynical person you know?",
+          "behind": "Close on hope and self-implication. We give up on people we judge too far gone, which secretly assumes their salvation depends on their openness rather than the Spirit's power. Invite the room to name that person and to pray differently. Go first."
+        }
       ],
       "objections": [
-        { "objection": "Conversion is just a decision a person makes. You weigh the evidence, you choose to believe, and the choosing is yours. All this talk of the Spirit raising the dead takes away human freedom and makes us puppets.", "response": "Bell grants the real thing under this. We do decide. The gospel says believe, and repent, and come, and means it, and the one who comes is genuinely responsible for coming and the one who refuses is genuinely responsible for refusing. None of that is denied. Then mark what the decision cannot account for. Jesus does not tell Nicodemus to decide harder, he tells him he must be born again, born of the Spirit, and births are not things you perform on yourself. The dead do not choose to rise, they are raised, and Paul says we were dead in our trespasses before God made us alive. The mystery the church has always held is that the same act is fully the Spirit's work and truly your response, the wind that blows where it wills and the sail that genuinely catches it. To collapse it into only your decision is to make yourself the author of your own resurrection, which no one who has actually been raised believes for a moment." },
-        { "objection": "If the new birth is entirely the Spirit's sovereign work and blows where it wills, then why evangelize at all, and why is it the sinner's fault if he is not chosen to be born again?", "response": "Hold this honestly, because it is the oldest hard question and the leader should not pretend it away. First, on evangelism, notice that the Spirit ordinarily works through the Word being spoken, faith comes by hearing, so the sovereignty of the Spirit is not a reason for silence but the only reason our words have any power at all, since we cannot raise the dead and he can. We speak because he works through speaking. Second, on fault, Scripture refuses to let the sinner off the hook, no one resists God because he was forbidden to come, every refusal is a real and willing refusal, and every person who comes finds they are welcomed. The Bible holds the Spirit's freedom and the sinner's responsibility together without resolving the tension into a system, and a study that respects the text will resist the urge to relieve the discomfort by denying one side." }
+        {
+          "objection": "Conversion is just a decision a person makes. You weigh the evidence, you choose to believe, and the choosing is yours. All this talk of the Spirit raising the dead takes away human freedom and makes us puppets.",
+          "response": "Bell grants the real thing under this. We do decide. The gospel says believe, and repent, and come, and means it, and the one who comes is genuinely responsible for coming and the one who refuses is genuinely responsible for refusing. None of that is denied. Then mark what the decision cannot account for. Jesus does not tell Nicodemus to decide harder, he tells him he must be born again, born of the Spirit, and births are not things you perform on yourself. The dead do not choose to rise, they are raised, and Paul says we were dead in our trespasses before God made us alive. The mystery the church has always held is that the same act is fully the Spirit's work and truly your response, the wind that blows where it wills and the sail that genuinely catches it. To collapse it into only your decision is to make yourself the author of your own resurrection, which no one who has actually been raised believes for a moment."
+        },
+        {
+          "objection": "If the new birth is entirely the Spirit's sovereign work and blows where it wills, then why evangelize at all, and why is it the sinner's fault if he is not chosen to be born again?",
+          "response": "Hold this honestly, because it is the oldest hard question and the leader should not pretend it away. First, on evangelism, notice that the Spirit ordinarily works through the Word being spoken, faith comes by hearing, so the sovereignty of the Spirit is not a reason for silence but the only reason our words have any power at all, since we cannot raise the dead and he can. We speak because he works through speaking. Second, on fault, Scripture refuses to let the sinner off the hook, no one resists God because he was forbidden to come, every refusal is a real and willing refusal, and every person who comes finds they are welcomed. The Bible holds the Spirit's freedom and the sinner's responsibility together without resolving the tension into a system, and a study that respects the text will resist the urge to relieve the discomfort by denying one side."
+        }
       ],
       "quietRoomQuestion": "If you are honest, do you believe you contributed something decisive to your own salvation, or have you ever once stood before the fact that you were dead and Someone made you alive without your permission?",
       "practice": "This week, write down the story of how you came to faith, or how you are still coming, in plain words, and as you write, mark every place where you can see Someone working on you before you ever moved toward God. The conversation you did not seek. The verse that would not leave you. The grief that softened you. Do not credit yourself with the parts that were the wind. If you cannot find your own story yet, write the name of the person whose conversion you most long for, and pray for the wind to blow there.",
@@ -76,16 +173,40 @@
       ],
       "teaching": "Jesus has a night conversation with a man named Nicodemus, and everything about the setup tells you to expect a gentle word. Nicodemus is a Pharisee, a ruler of the Jews, a teacher of Israel, a man who has kept the law and studied the Scriptures and done, by every visible measure, everything right. He comes respectfully, calling Jesus a teacher come from God. And Jesus, instead of commending him, says the hardest thing he ever says to anyone about salvation. Truly, truly, unless one is born again he cannot see the kingdom of God. Sit with where that lands. The demand for a new birth is aimed not at the worst sinner in the city but at the best man in the room, and that is the first thing we have to feel, because it dismantles the lie we all carry, that respectability is a head start with God, that the moral man is closer to the kingdom than the immoral one. Jesus says no. The good man and the bad man need the identical thing, and it is not improvement. It is birth. And if anything, the respectable man is in greater danger, because his decency is a better disguise. The obvious sinner at least knows he is in trouble. The good man has spent his whole life building a case that he is fine, and the harder that case is to argue against, the harder it is for him to hear that he must be born again, that everything he has stacked up counts for nothing in the one matter that decides everything. Nicodemus hears it and is baffled in exactly the right way. How can a man be born when he is old. Can he enter a second time into his mother's womb. He has stumbled onto the offense without understanding it, because the offense is real. Birth is the one thing in the universe you absolutely cannot do for yourself. You did not assist in your first birth. You did not decide it, plan it, cooperate with it, or contribute to it in the smallest degree. You were not consulted. You were brought into being by another, entirely. And Jesus is saying the second birth is exactly like the first in this respect. Flesh gives birth to flesh, but the Spirit gives birth to spirit. The new birth is not the old self improved, educated, or persuaded. It is a dead thing made alive, and the dead contribute nothing to their own resurrection. Now take the objection at full strength, because it is the honest one and most of us feel it. Surely conversion is a decision. You hear the gospel, you weigh it, you choose to believe, and the choice is yours. And Bell grants the real thing under this, fully. We do decide. The gospel commands belief and repentance and means them, and the man who comes really comes and the man who refuses really refuses, and no one is dragged kicking into the kingdom against a will that wanted nothing to do with it. The Scriptures hold human responsibility everywhere and never apologize for it. But watch the thing the decision cannot explain, because Jesus puts it right in front of us. The wind blows where it wishes, he says, and you hear its sound, but you do not know where it comes from or where it goes. So it is with everyone born of the Spirit. The Spirit is the wind. You do not summon the wind. You do not command it, schedule it, or manufacture it. You feel it when it comes, you see what it does, but it blows on its own authority, where it wills, and the new birth is like that. Truly your response, and truly his work, the sail that genuinely catches the wind and the wind that was never yours to produce. And here I have to put my own story on the table, because this is not abstract for me. I was an atheist. Not a casual one, a convinced one. I had heard the arguments for God and I had answers for them, and the answers were not stupid, and the people making the arguments rarely moved me, because you do not argue a dead man into breathing. I was not waiting for better evidence. I was, in the language of Scripture, dead in my trespasses, and a dead man does not know he is dead, and cannot want to be otherwise. What changed me was not a syllogism. It was not a debate I lost. It was a presence I had no category for, a wind that began to blow on a man who had not asked for it and could not have produced it, and when I came to faith I knew, all the way down in a place arguments do not reach, that I had not done this. I had been done unto. I was raised. I still cannot fully explain it, and the inability to explain it is itself part of the evidence, because you cannot explain a wind you did not call. So here is the turn, and it is the most hopeful thing in this whole session. If the new birth is the Spirit's work and not the sinner's achievement, then no one you love is beyond it. Not the hardest skeptic. Not the cynic who has heard it all. Not the one who has answers for every argument you could make, because the answer was never an argument. The same Spirit who hovered over the dark waters at the beginning, the same Spirit who raised Jesus from the dead, is in the business of making dead things alive, and the dead do not improve their way to life across some gradual slope of persuasion. They are raised, suddenly, by a power outside themselves, the way I was raised, the way you were raised if you have been. So we do not give up on people because they seem too far gone, because too far gone is the only condition the Spirit has ever worked with. We were all that. And we pray for the wind, and we speak the Word the wind blows through, and we wait for the God who calls the dead by name.",
       "scriptureStudy": [
-        { "ref": "John 3:3", "note": "Unless one is born again he cannot see the kingdom of God. Not improved, not reformed, born. And the demand is aimed at the most religious man in Israel, leveling the respectable and the ruined at a stroke." },
-        { "ref": "John 3:6-8", "note": "That which is born of the flesh is flesh, and the Spirit is like the wind blowing where it wishes. The new birth is the Spirit's sovereign work, felt and seen in its effects but never summoned or controlled by the one being born." },
-        { "ref": "Ezekiel 36:26-27", "note": "I will give you a new heart and put a new spirit within you, and I will put my Spirit within you. Centuries before Nicodemus, God promised regeneration as his own act, removing the heart of stone, the new birth as a divine transplant, not a human effort." },
-        { "ref": "Ephesians 2:4-5", "note": "Even when we were dead in our trespasses, God made us alive together with Christ. The starting condition is death, and the dead do not cooperate. Made us alive names the new birth as resurrection, accomplished by God on the spiritually dead." },
-        { "ref": "Titus 3:5", "note": "He saved us by the washing of regeneration and renewal of the Holy Spirit. Salvation is tied directly to the Spirit's renewing work, not to our righteous deeds, which Paul explicitly excludes as the cause." },
-        { "ref": "1 Peter 1:3", "note": "He has caused us to be born again to a living hope through the resurrection of Jesus Christ. The new birth is something he caused, the cause lying in God's mercy and Christ's resurrection, not in the merit of the one born again." },
-        { "ref": "John 1:12-13", "note": "Children of God, born not of blood nor of the will of the flesh nor of the will of man, but of God. John rules out every human source of the new birth in a single line, leaving God alone as its author." }
+        {
+          "ref": "John 3:3",
+          "note": "Unless one is born again he cannot see the kingdom of God. Not improved, not reformed, born. And the demand is aimed at the most religious man in Israel, leveling the respectable and the ruined at a stroke."
+        },
+        {
+          "ref": "John 3:6-8",
+          "note": "That which is born of the flesh is flesh, and the Spirit is like the wind blowing where it wishes. The new birth is the Spirit's sovereign work, felt and seen in its effects but never summoned or controlled by the one being born."
+        },
+        {
+          "ref": "Ezekiel 36:26-27",
+          "note": "I will give you a new heart and put a new spirit within you, and I will put my Spirit within you. Centuries before Nicodemus, God promised regeneration as his own act, removing the heart of stone, the new birth as a divine transplant, not a human effort."
+        },
+        {
+          "ref": "Ephesians 2:4-5",
+          "note": "Even when we were dead in our trespasses, God made us alive together with Christ. The starting condition is death, and the dead do not cooperate. Made us alive names the new birth as resurrection, accomplished by God on the spiritually dead."
+        },
+        {
+          "ref": "Titus 3:5",
+          "note": "He saved us by the washing of regeneration and renewal of the Holy Spirit. Salvation is tied directly to the Spirit's renewing work, not to our righteous deeds, which Paul explicitly excludes as the cause."
+        },
+        {
+          "ref": "1 Peter 1:3",
+          "note": "He has caused us to be born again to a living hope through the resurrection of Jesus Christ. The new birth is something he caused, the cause lying in God's mercy and Christ's resurrection, not in the merit of the one born again."
+        },
+        {
+          "ref": "John 1:12-13",
+          "note": "Children of God, born not of blood nor of the will of the flesh nor of the will of man, but of God. John rules out every human source of the new birth in a single line, leaving God alone as its author."
+        }
       ],
       "goingDeeper": "Take up the old and unresolved conversation about the order of salvation, because the new birth raises a question the church has never stopped debating, namely whether regeneration precedes faith or faith precedes regeneration, whether the Spirit makes you alive so that you can believe or your believing is the occasion of being made alive. Read the Reformed tradition, with Augustine behind it, arguing that the dead cannot believe until they are first made alive, so the Spirit's regenerating work comes first and faith is its fruit, and set it honestly beside the traditions that stress the genuine and decisive responsibility of the human will to respond, fearing that to make regeneration entirely prior is to reduce the sinner to a passive object. A serious group should resist the urge to score the debate quickly, and should instead notice what every side affirms, that salvation is finally of the Lord, that no one boasts before God, that the new birth is grace and not wage. The discipline is to hold the mystery the way Scripture holds it, refusing both the error that makes God a spectator waiting on human permission and the error that makes the human being a puppet with no real response. Weigh as well the pastoral stakes, because how you answer shapes how you evangelize and how you pray, and consider why the writer, an atheist made alive, found in his own experience a stronger witness to the priority of grace than any argument supplied, since he knows he did not begin the thing that saved him. The aim is not to win the old fight in one session but to come away certain of the one thing all sides confess, that the One who began a good work in you will bring it to completion, because he began it.",
-      "memoryVerse": { "ref": "John 3:6-7", "text": "That which is born of the flesh is flesh, and that which is born of the Spirit is spirit. Do not marvel that I said to you, you must be born again." }
+      "memoryVerse": {
+        "ref": "John 3:6-7",
+        "text": "That which is born of the flesh is flesh, and that which is born of the Spirit is spirit. Do not marvel that I said to you, you must be born again."
+      }
     },
     {
       "n": 3,
@@ -93,18 +214,55 @@
       "title": "The Fruit and the Walk",
       "aim": "To take the fruit of the Spirit as the slow growth of a real change worked from the inside, not a list of behaviors to manufacture, and to draw the hard line between fruit that the Spirit produces and performance that we produce to be seen.",
       "summary": "Paul lists nine things and calls them the fruit of the Spirit, and the first thing to notice is the word fruit, singular, and the word Spirit. Not the works of the believer. The fruit of the Spirit. The first question is the difference between fruit and performance, because both can look identical from the outside, and the church is full of people exhausted from manufacturing what was only ever meant to grow. Bell takes the strong form of two errors. The first says sanctification is all effort, grit your teeth, try harder, white-knuckle your way to holiness, and there is a true thing under it, that Scripture really does command us to put sin to death and to walk by the Spirit, that passivity is not the answer. The second says it is all passive, let go and let God, and there is a true thing there too, that we cannot produce fruit by straining, that a branch does not grunt to grow apples. Bell refuses both. The fruit is not manufactured, which refutes the first, because a tree does not perform fruit, it bears it out of what it is. And the fruit is not automatic, which refutes the second, because Paul commands a walk, a daily keeping in step, an active putting to death of the flesh. The resolution is the branch and the vine. You do not produce the fruit and you do not produce it by doing nothing. You abide, you stay connected, you keep walking in step with the Spirit, and the fruit comes slowly, unevenly, more like a season than a switch. Then the turn. Bell names his own decades, the sins he assumed grace would have removed by now and has not, and tells the truth the church hides, that sanctification is slow, that the impatience to be done with it is itself a refusal to walk. The fruit grows at the speed of a tree. We wanted it at the speed of a purchase.",
-      "keyScripture": { "ref": "Galatians 5:22-25", "why": "Paul calls love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control the fruit of the Spirit, and then says if we live by the Spirit let us also keep in step with the Spirit, naming the change as the Spirit's produce and our part as a daily walking in step rather than a manufacturing of results." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Galatians 5:22-25",
+        "why": "Paul calls love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control the fruit of the Spirit, and then says if we live by the Spirit let us also keep in step with the Spirit, naming the change as the Spirit's produce and our part as a daily walking in step rather than a manufacturing of results."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Paul calls it the fruit of the Spirit, not the works of the believer. What changes when you hear your growth in love or patience as something grown in you rather than something achieved by you?", "behind": "Open on the grammar. We instinctively hear the list as a to-do list and grind ourselves against it. The aim is to relocate the source from our effort to the Spirit's work, so the room can begin to tell the difference between bearing fruit and manufacturing it." },
-        { "q": "Bell says fruit and performance can look identical from the outside. Where have you produced the appearance of a virtue, kindness or patience, while inside it was effort to be seen and not the Spirit's work?", "behind": "Press gently into self-examination, not shame. We all perform virtues we do not possess. The aim is honest recognition that polished behavior can be empty, and that the Spirit grows the real thing slowly while performance produces the fake thing fast." },
-        { "q": "Bell takes both errors, that sanctification is all gritted effort and that it is all let go and let God. Which one are you more tempted by, and what is true in the one you resist?", "behind": "Hold both halves. Strivers need to hear about abiding, passives need to hear about the walk and the putting to death. The aim is for each person to find their own imbalance and to receive the true thing in the error they are tempted to despise." },
-        { "q": "Bell admits there are sins he assumed grace would have removed by now and has not. Where has the slowness of your own change tempted you to give up or to fake it?", "behind": "This is the tender center. The slowness of sanctification disillusions people and drives them to performance or despair. The aim is to normalize the slowness, to feel that fruit grows at the speed of a tree, and to keep walking. Go first and be specific." },
-        { "q": "Jesus says apart from him you can do nothing, and Paul says keep in step with the Spirit. How do you hold abiding and walking together without collapsing into either pure passivity or pure effort?", "behind": "Close on the both-and. The branch image holds it, you stay connected and you keep walking, neither straining to produce nor drifting in neutral. Help the room name one concrete way they will both abide and walk this week, rather than choosing one." }
+        {
+          "q": "Paul calls it the fruit of the Spirit, not the works of the believer. What changes when you hear your growth in love or patience as something grown in you rather than something achieved by you?",
+          "behind": "Open on the grammar. We instinctively hear the list as a to-do list and grind ourselves against it. The aim is to relocate the source from our effort to the Spirit's work, so the room can begin to tell the difference between bearing fruit and manufacturing it."
+        },
+        {
+          "q": "Bell says fruit and performance can look identical from the outside. Where have you produced the appearance of a virtue, kindness or patience, while inside it was effort to be seen and not the Spirit's work?",
+          "behind": "Press gently into self-examination, not shame. We all perform virtues we do not possess. The aim is honest recognition that polished behavior can be empty, and that the Spirit grows the real thing slowly while performance produces the fake thing fast."
+        },
+        {
+          "q": "Bell takes both errors, that sanctification is all gritted effort and that it is all let go and let God. Which one are you more tempted by, and what is true in the one you resist?",
+          "behind": "Hold both halves. Strivers need to hear about abiding, passives need to hear about the walk and the putting to death. The aim is for each person to find their own imbalance and to receive the true thing in the error they are tempted to despise."
+        },
+        {
+          "q": "Bell admits there are sins he assumed grace would have removed by now and has not. Where has the slowness of your own change tempted you to give up or to fake it?",
+          "behind": "This is the tender center. The slowness of sanctification disillusions people and drives them to performance or despair. The aim is to normalize the slowness, to feel that fruit grows at the speed of a tree, and to keep walking. Go first and be specific."
+        },
+        {
+          "q": "Jesus says apart from him you can do nothing, and Paul says keep in step with the Spirit. How do you hold abiding and walking together without collapsing into either pure passivity or pure effort?",
+          "behind": "Close on the both-and. The branch image holds it, you stay connected and you keep walking, neither straining to produce nor drifting in neutral. Help the room name one concrete way they will both abide and walk this week, rather than choosing one."
+        }
       ],
       "objections": [
-        { "objection": "This fruit language is just a softer way of saying try harder. At the end of the day I still have to produce love and patience and self-control, so calling it fruit is a comforting word for the same exhausting demand.", "response": "Bell grants the part that is true, that Scripture really does command effort, that Paul says put to death what is earthly in you and walk by the Spirit, and that anyone waiting passively for holiness to arrive will wait forever. The demand is real. Then mark the difference the word fruit makes. A branch does work in a sense, it stays on the vine, it does not break itself off, but it does not strain to produce the apple, the apple is the natural overflow of being connected to the life of the vine. Your effort is not the effort of manufacturing the virtue by willpower. It is the effort of staying connected, of keeping in step, of putting yourself in the way of the Spirit's work through prayer and the Word and obedience. You labor at abiding. The fruit itself grows from the life you are joined to, and that is why two people can do the identical good deed and one bears fruit while the other only performs, because one is connected to the vine and the other is straining alone." },
-        { "objection": "If the fruit is the Spirit's work and grows slowly on its own, then I can stop trying and just wait for it. Let go and let God. My job is to relax and let the Spirit do everything.", "response": "No, and Paul closes the door on this in the same passage, so we should too. Right after listing the fruit he says those who belong to Christ have crucified the flesh with its passions and desires, and then commands, let us keep in step with the Spirit. Keep in step is a walking word, an active, deliberate, daily matching of your pace to another's. There is nothing passive about it. The let go and let God instinct is right that you cannot manufacture fruit by gritting your teeth, but it is wrong that you therefore do nothing, because abiding is not idleness. The branch that abides is doing the most active thing it can do, refusing to detach, staying in the place where life flows. You put sin to death actively, you walk actively, and you trust the fruit to the Spirit. Effort, yes. Effort to abide and to walk, not effort to produce by force what only the Spirit can grow." }
+        {
+          "objection": "This fruit language is just a softer way of saying try harder. At the end of the day I still have to produce love and patience and self-control, so calling it fruit is a comforting word for the same exhausting demand.",
+          "response": "Bell grants the part that is true, that Scripture really does command effort, that Paul says put to death what is earthly in you and walk by the Spirit, and that anyone waiting passively for holiness to arrive will wait forever. The demand is real. Then mark the difference the word fruit makes. A branch does work in a sense, it stays on the vine, it does not break itself off, but it does not strain to produce the apple, the apple is the natural overflow of being connected to the life of the vine. Your effort is not the effort of manufacturing the virtue by willpower. It is the effort of staying connected, of keeping in step, of putting yourself in the way of the Spirit's work through prayer and the Word and obedience. You labor at abiding. The fruit itself grows from the life you are joined to, and that is why two people can do the identical good deed and one bears fruit while the other only performs, because one is connected to the vine and the other is straining alone."
+        },
+        {
+          "objection": "If the fruit is the Spirit's work and grows slowly on its own, then I can stop trying and just wait for it. Let go and let God. My job is to relax and let the Spirit do everything.",
+          "response": "No, and Paul closes the door on this in the same passage, so we should too. Right after listing the fruit he says those who belong to Christ have crucified the flesh with its passions and desires, and then commands, let us keep in step with the Spirit. Keep in step is a walking word, an active, deliberate, daily matching of your pace to another's. There is nothing passive about it. The let go and let God instinct is right that you cannot manufacture fruit by gritting your teeth, but it is wrong that you therefore do nothing, because abiding is not idleness. The branch that abides is doing the most active thing it can do, refusing to detach, staying in the place where life flows. You put sin to death actively, you walk actively, and you trust the fruit to the Spirit. Effort, yes. Effort to abide and to walk, not effort to produce by force what only the Spirit can grow."
+        }
       ],
       "quietRoomQuestion": "What virtue have you been performing for others while knowing, in the quiet, that the inside does not match the outside, and what would it mean to stop performing it and ask the Spirit to grow the real thing?",
       "practice": "This week, pick the one piece of the fruit you most lack, the one that is hardest for you, patience maybe, or self-control, or kindness. Do not try to manufacture it by willpower. Instead, each day name it to the Spirit honestly, I do not have this, please grow it in me, and then put yourself in the way of the work, in prayer, in Scripture, in the next ordinary chance to practice it. At the end of the week, write down not how much you produced but where you saw the smallest green shoot you did not force.",
@@ -116,16 +274,40 @@
       ],
       "teaching": "Paul gives us a list we have all heard so often it has gone smooth, love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control, and we read it as a checklist of behaviors to muster. But look at what he calls it before he lists a single item. The fruit of the Spirit. Not the works of the believer. Not the achievements of the disciplined Christian. The fruit of the Spirit, and every word in that phrase matters. Fruit, not product. And of the Spirit, not of you. Because the great confusion of the Christian life is that fruit and performance look identical from the outside, and the church is packed with people worn down to the bone from manufacturing what was only ever meant to grow. So the question for this session is the difference between the two, between fruit that is borne and performance that is produced, because if you cannot tell them apart in your own life you will spend your years exhausted and faking it and wondering why holiness feels like a treadmill. Take the two errors at full strength, because most of us live in one of them. The first says sanctification is effort, plain and hard. Grit your teeth. Try harder. White-knuckle your way toward holiness by sheer determination, and if you are not growing it is because you are not trying enough. And there is a true thing buried in it that we dare not lose, because Scripture really does command effort. Paul says put to death what is earthly in you. He says walk by the Spirit. He says work out your salvation. The man waiting passively for holiness to descend on him like weather will wait until he dies. Passivity is a lie. But the second error runs the other way and says it is all passive, let go and let God, stop trying, just relax and let the Spirit do everything while you rest. And there is a true thing in that one too, because you genuinely cannot manufacture the fruit by straining. A branch does not grunt and strain to produce an apple. No amount of willpower has ever squeezed real patience out of an impatient heart. So both errors hold a truth and both, alone, are deadly. Now watch the resolution, because Jesus gave it before Paul ever wrote the list, in the image of the vine and the branches. I am the vine, he said, you are the branches. Abide in me, and I in you. As the branch cannot bear fruit by itself unless it abides in the vine, neither can you, unless you abide in me. Apart from me you can do nothing. There it is. The fruit is not manufactured, which kills the first error, because a branch does not perform fruit by effort, it bears fruit as the natural overflow of being joined to the life of the vine. And the fruit is not automatic, which kills the second error, because the branch has one urgent, active, ceaseless task, to abide, to stay connected, to refuse to detach. And Paul says the same thing at the end of his list in the plainest terms. If we live by the Spirit, let us also keep in step with the Spirit. Keep in step. That is a walking word, a marching word, the deliberate matching of your stride to someone else's pace, and there is nothing passive in it. Notice the order Paul gives, because it guards both errors at once. If we live by the Spirit, that is the first thing, the life is already given, you do not generate it, you were made alive by the Spirit and you live by him. And then, let us also keep in step. The walking does not produce the life. The life produces the walking. You do not march in order to be made alive. You were made alive, and so now you march, matching your pace to the Spirit who is already moving. The man who tries to keep in step before he has the life is just performing, and the man who has the life and refuses to keep in step is just drifting, and Paul will allow neither. You do not produce the fruit, and you do not produce it by doing nothing. You abide and you walk. You stay connected to the Vine through prayer and the Word and the fellowship of the saints, and you keep deliberately in step with the Spirit through obedience and the active putting to death of the flesh, and out of that connected, walking life the fruit grows, slowly, unevenly, in seasons, the way fruit has always grown. And here is where I have to tell the truth the church works hard to hide, because I am decades into this now and there are sins in me I genuinely assumed grace would have removed by this point, and it has not, not yet, not all the way. There are patterns I have brought to God a thousand times that are smaller than they were and not gone. And the temptation, when the change is that slow, is one of two things, either to give up and conclude the whole thing does not work, or to start faking it, to perform the patience I do not have and hang plastic fruit on a branch that is not bearing, so that at least it looks alive. Both are a refusal to walk. Because there is something about fruit that our whole impatient age cannot stand. It grows at the speed of a tree. You plant, you water, you wait through seasons that look like nothing is happening, and the growth is real but it is slow, and you cannot rush it any more than you can pull a seedling taller with your hands. We wanted sanctification at the speed of a purchase, instant, complete, paid for and delivered. God gives it at the speed of a harvest. And the patience to keep walking while the fruit comes slowly is itself, you will notice, one of the nine. The Spirit grows the very thing the slow growing requires. So do not give up, and do not fake it. Stay on the Vine. Keep in step. And trust the Gardener, who has never once abandoned a tree he planted, to bring the fruit in its season.",
       "scriptureStudy": [
-        { "ref": "Galatians 5:16", "note": "Walk by the Spirit, and you will not gratify the desires of the flesh. The command is a walk, active and ongoing, and the promise is that the way to defeat the flesh is not direct combat alone but a positive walking with the Spirit." },
-        { "ref": "Galatians 5:22-23", "note": "The fruit of the Spirit is love, joy, peace, and the rest. Fruit, singular, and of the Spirit, so the nine are one cluster grown by one source, not nine separate achievements of the disciplined will." },
-        { "ref": "Galatians 5:24-25", "note": "Those who belong to Christ have crucified the flesh, so let us keep in step with the Spirit. Paul joins an active putting to death of sin to a deliberate keeping in step, closing the door on the passivity that hears fruit and stops trying." },
-        { "ref": "John 15:4-5", "note": "Abide in me, for apart from me you can do nothing. The branch bears fruit only by staying joined to the vine, which holds together the two truths, that you cannot produce it yourself and that you must actively remain connected." },
-        { "ref": "Philippians 1:6", "note": "He who began a good work in you will bring it to completion at the day of Jesus Christ. The slowness is not abandonment. The same God who started the change guarantees its finish, on his timetable, not ours." },
-        { "ref": "2 Corinthians 3:18", "note": "We are being transformed into the same image from one degree of glory to another. The change is gradual, degree by degree, and it is done to us by the Spirit, named here as the Lord who does the transforming." },
-        { "ref": "Romans 8:13", "note": "If by the Spirit you put to death the deeds of the body, you will live. Notice the joining, by the Spirit you put to death, neither pure effort nor pure passivity but your action carried by his power." }
+        {
+          "ref": "Galatians 5:16",
+          "note": "Walk by the Spirit, and you will not gratify the desires of the flesh. The command is a walk, active and ongoing, and the promise is that the way to defeat the flesh is not direct combat alone but a positive walking with the Spirit."
+        },
+        {
+          "ref": "Galatians 5:22-23",
+          "note": "The fruit of the Spirit is love, joy, peace, and the rest. Fruit, singular, and of the Spirit, so the nine are one cluster grown by one source, not nine separate achievements of the disciplined will."
+        },
+        {
+          "ref": "Galatians 5:24-25",
+          "note": "Those who belong to Christ have crucified the flesh, so let us keep in step with the Spirit. Paul joins an active putting to death of sin to a deliberate keeping in step, closing the door on the passivity that hears fruit and stops trying."
+        },
+        {
+          "ref": "John 15:4-5",
+          "note": "Abide in me, for apart from me you can do nothing. The branch bears fruit only by staying joined to the vine, which holds together the two truths, that you cannot produce it yourself and that you must actively remain connected."
+        },
+        {
+          "ref": "Philippians 1:6",
+          "note": "He who began a good work in you will bring it to completion at the day of Jesus Christ. The slowness is not abandonment. The same God who started the change guarantees its finish, on his timetable, not ours."
+        },
+        {
+          "ref": "2 Corinthians 3:18",
+          "note": "We are being transformed into the same image from one degree of glory to another. The change is gradual, degree by degree, and it is done to us by the Spirit, named here as the Lord who does the transforming."
+        },
+        {
+          "ref": "Romans 8:13",
+          "note": "If by the Spirit you put to death the deeds of the body, you will live. Notice the joining, by the Spirit you put to death, neither pure effort nor pure passivity but your action carried by his power."
+        }
       ],
       "goingDeeper": "Take up the long Christian wisdom on the means of grace, because the abiding and the walking that this session calls for are not vague spiritual moods but have always had concrete shape, and recovering that shape protects the fruit from both errors. The tradition has spoken of ordinary means through which the Spirit ordinarily works, the reading and hearing of the Word, prayer, the Lord's Supper, the gathered worship of the church, and has insisted that while the Spirit is free, he has bound himself to work most often through these, so that to neglect them is to walk away from the very places the life flows. Read J. I. Packer, whose Keep in Step with the Spirit takes its title from this passage and argues for a sanctification that is neither the gritted self-effort of the moralist nor the passive let go and let God of a certain holiness teaching, but an active dependence, a strenuous trusting, that holds effort and grace together. Set this beside the modern hunger for instant change, the expectation shaped by a culture of quick results that healing and growth should be fast and felt, and ask what damage that expectation does to believers whose real but slow change leaves them feeling like failures. A serious group should weigh the older language of mortification and vivification, the putting to death of sin and the bringing to life of righteousness, as two sides of one Spirit-worked process, and should consider how the patience to endure slow growth is itself a fruit the Spirit grows, so that the waiting is not wasted time but part of the work. The discipline is to refuse the treadmill of performance and the hammock of passivity alike, and to take up instead the means of grace as the place where the branch stays joined to the Vine.",
-      "memoryVerse": { "ref": "Galatians 5:25", "text": "If we live by the Spirit, let us also keep in step with the Spirit." }
+      "memoryVerse": {
+        "ref": "Galatians 5:25",
+        "text": "If we live by the Spirit, let us also keep in step with the Spirit."
+      }
     },
     {
       "n": 4,
@@ -133,18 +315,55 @@
       "title": "Gifts and the Contested Question",
       "aim": "To put the continuationist and the cessationist cases at full and equal strength, to refuse to tell the group which is right, and to hold a room together in worship of the same Spirit across a divide that has split better Christians than us.",
       "summary": "The Spirit gives gifts, and the church has fought bitterly over which ones still operate. Do tongues, prophecy, and miraculous healing continue today, or did those sign gifts cease when the apostolic age closed and the Scriptures were completed. This session does the hard and unusual thing of refusing to settle it for the group, and instead puts both serious positions at their strongest, because both are held by faithful, careful, Christ-loving believers, and the divide does not run between the godly and the worldly. It runs through the middle of the godly. Bell presents the cessationist case at full strength, the argument that certain gifts authenticated the apostles and the giving of Scripture, that with the foundation laid and the canon closed those sign gifts had served their purpose, an argument carried by serious theologians like B. B. Warfield and Richard Gaffin, an argument that takes the sufficiency of Scripture with deadly seriousness and has watched real abuses with grief. Then he presents the continuationist case at full strength, the argument that the New Testament nowhere announces the gifts will cease before Christ returns, that Paul tells the Corinthians to eagerly desire them, that the burden of proof lies on the one claiming God stopped, an argument carried by serious theologians like Sam Storms and Gordon Fee, an argument that takes the present activity of the Spirit with deadly seriousness and has watched real cessationist deadness with grief. Bell will not break the tie. The first question is not who is right. It is whether the body of Christ can disagree about this without fracturing, whether we can hold the gifts loosely and the Spirit tightly. Then the turn. Paul, in the very chapter most quoted in this fight, interrupts the argument about gifts to write the greatest description of love ever penned, as if to say the gifts are real and the gifts are not the point, that a church right about cessation or continuation and wrong about love is a clanging gong. The verdict is not a position. It is a posture.",
-      "keyScripture": { "ref": "1 Corinthians 12:4-7", "why": "Paul says there are varieties of gifts but the same Spirit, varieties of service but the same Lord, and that to each is given the manifestation of the Spirit for the common good, grounding every gift in one Giver and one purpose, the building up of the body, which is the common ground beneath the contested question of which gifts continue." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "1 Corinthians 12:4-7",
+        "why": "Paul says there are varieties of gifts but the same Spirit, varieties of service but the same Lord, and that to each is given the manifestation of the Spirit for the common good, grounding every gift in one Giver and one purpose, the building up of the body, which is the common ground beneath the contested question of which gifts continue."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Before tonight, where did you land on whether gifts like tongues and prophecy and healing continue today, and where did that conviction come from, study, experience, or the tradition you were raised in?", "behind": "Surface the room's starting positions and their sources honestly. Many hold a view they inherited rather than examined. The aim is not to change minds yet but to expose that our convictions here often come from background and experience, which builds humility before the arguments arrive." },
-        { "q": "The cessationist argues that certain gifts authenticated the apostles and the closing of Scripture, and so served their purpose and ceased. Stated at its strongest, what is genuinely compelling in that case?", "behind": "Make the room build the cessationist case fairly, including the continuationists in the room. The aim is the discipline of steelmanning, that you must be able to state the other side so well its holders would agree. Do not let it be caricatured as mere unbelief." },
-        { "q": "The continuationist argues that the New Testament never announces the gifts will cease before Christ returns and tells us to eagerly desire them. Stated at its strongest, what is genuinely compelling in that case?", "behind": "Now make the room build the continuationist case just as fairly, including the cessationists. The aim is the same discipline in the other direction. Hold the two strong cases side by side so the room feels the weight of both and the ease of neither." },
-        { "q": "Bell refuses to break the tie and tell us who is right. Does that frustrate you, and what does it reveal about how tightly we want to hold a position the Bible itself leaves more open than we do?", "behind": "Press on the discomfort of unsettledness. We want a verdict. The aim is to examine our own need to be certain where Scripture permits range, and to ask whether our certainty serves the body or our pride. Handle the strong feelings gently." },
-        { "q": "Paul interrupts the gifts chapters to write that without love the gifts are a clanging gong. If your group split over this question, what would it look like to be right about gifts and wrong about love?", "behind": "Close on the posture, which is the whole point. The aim is for the room to feel that fracturing over this would itself be the deeper failure, and to commit, out loud, to holding the Spirit tightly and the disputed question loosely. Go first, and name your own temptation to contempt." }
+        {
+          "q": "Before tonight, where did you land on whether gifts like tongues and prophecy and healing continue today, and where did that conviction come from, study, experience, or the tradition you were raised in?",
+          "behind": "Surface the room's starting positions and their sources honestly. Many hold a view they inherited rather than examined. The aim is not to change minds yet but to expose that our convictions here often come from background and experience, which builds humility before the arguments arrive."
+        },
+        {
+          "q": "The cessationist argues that certain gifts authenticated the apostles and the closing of Scripture, and so served their purpose and ceased. Stated at its strongest, what is genuinely compelling in that case?",
+          "behind": "Make the room build the cessationist case fairly, including the continuationists in the room. The aim is the discipline of steelmanning, that you must be able to state the other side so well its holders would agree. Do not let it be caricatured as mere unbelief."
+        },
+        {
+          "q": "The continuationist argues that the New Testament never announces the gifts will cease before Christ returns and tells us to eagerly desire them. Stated at its strongest, what is genuinely compelling in that case?",
+          "behind": "Now make the room build the continuationist case just as fairly, including the cessationists. The aim is the same discipline in the other direction. Hold the two strong cases side by side so the room feels the weight of both and the ease of neither."
+        },
+        {
+          "q": "Bell refuses to break the tie and tell us who is right. Does that frustrate you, and what does it reveal about how tightly we want to hold a position the Bible itself leaves more open than we do?",
+          "behind": "Press on the discomfort of unsettledness. We want a verdict. The aim is to examine our own need to be certain where Scripture permits range, and to ask whether our certainty serves the body or our pride. Handle the strong feelings gently."
+        },
+        {
+          "q": "Paul interrupts the gifts chapters to write that without love the gifts are a clanging gong. If your group split over this question, what would it look like to be right about gifts and wrong about love?",
+          "behind": "Close on the posture, which is the whole point. The aim is for the room to feel that fracturing over this would itself be the deeper failure, and to commit, out loud, to holding the Spirit tightly and the disputed question loosely. Go first, and name your own temptation to contempt."
+        }
       ],
       "objections": [
-        { "objection": "The sign gifts have obviously ceased. Tongues and prophecy and miraculous healing belonged to the apostles, authenticating the foundation of the church and the giving of Scripture, and now that the foundation is laid and the canon is complete, we no longer need them. What passes for these gifts today is either psychological or counterfeit.", "response": "Put this at full strength, because serious believers hold it for serious reasons. The cessationist case, carried by theologians like B. B. Warfield and Richard Gaffin, rests on real biblical observation. Certain gifts did cluster around the apostles and authenticate their unique role, miracles are tied in Scripture to confirming the message and its messengers, and the foundation, Paul says, was laid once by the apostles and prophets, not relaid in every generation. Beneath it is a precious commitment, the sufficiency of Scripture, a refusal to add fresh revelation to a closed and complete Word, and a grief over real abuses, the manipulation and the fakery done in the Spirit's name. A continuationist must grant all of this weight before answering it, must admit the abuses are real, must take the sufficiency of Scripture as seriously as the cessationist does, and must concede that nothing claimed today can stand alongside Scripture as new revelation. The cessationist is not an unbeliever afraid of the Spirit. He is often a careful exegete guarding something true." },
-        { "objection": "The gifts obviously continue. Nowhere does the New Testament say they will stop before Christ returns, Paul plainly commands the Corinthians to earnestly desire the gifts including prophecy, and the same Spirit who gave them has not changed. To say God switched them off is to read a theory into a silence and to quench the Spirit the church is told never to quench.", "response": "Put this at full strength too, because serious believers hold it for serious reasons. The continuationist case, carried by theologians like Sam Storms and Gordon Fee, rests on real biblical observation. Paul tells the Corinthians to earnestly desire the spiritual gifts, especially that they may prophesy, and gives the church detailed instructions for ordering tongues and prophecy in worship, instructions that would be strange to leave in Scripture if they expired within a generation. The one passage often cited for cessation says the gifts will pass when the perfect comes, and continuationists argue the perfect is the return of Christ and the face to face seeing, not the closing of the canon. A cessationist must grant all of this weight before answering, must admit the New Testament contains no clear expiration date, must take the command to desire the gifts as seriously as the continuationist does, and must concede that to forbid what Scripture commands desiring is a heavy thing. The continuationist is not a thrill-seeker chasing experience. He is often a careful exegete refusing to silence a text." }
+        {
+          "objection": "The sign gifts have obviously ceased. Tongues and prophecy and miraculous healing belonged to the apostles, authenticating the foundation of the church and the giving of Scripture, and now that the foundation is laid and the canon is complete, we no longer need them. What passes for these gifts today is either psychological or counterfeit.",
+          "response": "Put this at full strength, because serious believers hold it for serious reasons. The cessationist case, carried by theologians like B. B. Warfield and Richard Gaffin, rests on real biblical observation. Certain gifts did cluster around the apostles and authenticate their unique role, miracles are tied in Scripture to confirming the message and its messengers, and the foundation, Paul says, was laid once by the apostles and prophets, not relaid in every generation. Beneath it is a precious commitment, the sufficiency of Scripture, a refusal to add fresh revelation to a closed and complete Word, and a grief over real abuses, the manipulation and the fakery done in the Spirit's name. A continuationist must grant all of this weight before answering it, must admit the abuses are real, must take the sufficiency of Scripture as seriously as the cessationist does, and must concede that nothing claimed today can stand alongside Scripture as new revelation. The cessationist is not an unbeliever afraid of the Spirit. He is often a careful exegete guarding something true."
+        },
+        {
+          "objection": "The gifts obviously continue. Nowhere does the New Testament say they will stop before Christ returns, Paul plainly commands the Corinthians to earnestly desire the gifts including prophecy, and the same Spirit who gave them has not changed. To say God switched them off is to read a theory into a silence and to quench the Spirit the church is told never to quench.",
+          "response": "Put this at full strength too, because serious believers hold it for serious reasons. The continuationist case, carried by theologians like Sam Storms and Gordon Fee, rests on real biblical observation. Paul tells the Corinthians to earnestly desire the spiritual gifts, especially that they may prophesy, and gives the church detailed instructions for ordering tongues and prophecy in worship, instructions that would be strange to leave in Scripture if they expired within a generation. The one passage often cited for cessation says the gifts will pass when the perfect comes, and continuationists argue the perfect is the return of Christ and the face to face seeing, not the closing of the canon. A cessationist must grant all of this weight before answering, must admit the New Testament contains no clear expiration date, must take the command to desire the gifts as seriously as the continuationist does, and must concede that to forbid what Scripture commands desiring is a heavy thing. The continuationist is not a thrill-seeker chasing experience. He is often a careful exegete refusing to silence a text."
+        }
       ],
       "quietRoomQuestion": "On this question where faithful Christians have long disagreed, is your certainty serving the unity of Christ's body, or is it serving your need to be right and to look down on those who differ?",
       "practice": "This week, do the harder of two things, depending on where you stand. If you are a settled cessationist, read one careful continuationist arguing the case at its best, and pray, Spirit, show me what is true in this that I have dismissed. If you are a settled continuationist, read one careful cessationist arguing the case at its best, and pray the same prayer. Whichever you are, write down one thing the other side sees that you had been too quick to wave away, and one place where your certainty has carried contempt.",
@@ -156,16 +375,40 @@
       ],
       "teaching": "We come now to the session most likely to make a room tense, and that is exactly why it must be handled with the most care, because the Spirit gives gifts and the church has spent a long time fighting over which of them still operate. The question is plain even if the answer is not. Do the gifts the New Testament calls tongues, prophecy, and miraculous healing continue in the church today, or did those particular sign gifts cease when the age of the apostles closed and the Scriptures were finished. And I am going to do something in this session that may frustrate you, because I am not going to tell you which side is right. That is not a dodge. It is a conviction, because this divide does not run between the faithful and the faithless, between the people who honor Scripture and the people who chase experience. It runs straight through the middle of the godly, and some of the most careful, Christ-loving, Bible-saturated believers I know land on opposite sides of it, and a study that pretended otherwise would be lying to you about the body of Christ. So I am going to do the harder thing. I am going to build both cases at full strength, the way each side would build it, and then I am going to refuse to break the tie, and then I am going to tell you what Paul does in the middle of the very chapters we fight over, which matters more than the tie ever did. Take the cessationist case first, and take it at its strongest, because it is strong. The argument runs like this. Certain gifts in the New Testament functioned to authenticate, to confirm that a true message was coming from a true messenger, and Scripture itself ties miracles to the confirming of the word, the signs of a true apostle. Those gifts clustered around the apostles in a way they did not cluster around ordinary believers, and the apostles had a unique, unrepeatable role, laying the foundation of the church and receiving and delivering the Scriptures. Paul says the household of God was built on the foundation of the apostles and prophets, and a foundation is laid once. So the cessationist concludes that when the foundation was finished and the canon of Scripture was complete, the sign gifts that had served to authenticate the founders and the giving of revelation had done their work and ceased. Beneath the argument is something precious, a fierce commitment to the sufficiency of Scripture, a refusal to let anyone add fresh words from God to a finished Word, and behind that, real grief, because cessationists have watched manipulation and fakery and spiritual abuse done in the Spirit's name and have wanted to guard the flock from it. B. B. Warfield made this case with great force, and Richard Gaffin has made it carefully in our own time, and neither man is an unbeliever afraid of God. They are exegetes guarding something true. Now take the continuationist case, and take it at exactly the same strength, because it is just as strong. The argument runs like this. Nowhere, not in a single verse, does the New Testament announce that the gifts will switch off at some point before Christ returns. That is a striking silence, because the Scriptures speak often about the last days and the present age, and never once say the gifts belong only to a closing era. To the contrary, Paul commands the Corinthians to earnestly desire the spiritual gifts, and especially that they may prophesy, and he gives the church detailed, practical instructions for how to order tongues and prophecy in public worship, which is a strange thing to leave permanently in Scripture if those gifts were going to expire within a generation. The one text most often cited for cessation says that prophecies and tongues will pass away when the perfect comes, and continuationists argue, with real force, that the perfect is plainly the return of Christ, the moment we see face to face and know fully, not the closing of the canon, which the passage never mentions. So the burden of proof, they say, lies on the one claiming God turned something off, not on the one expecting him to keep doing what he never said he would stop. Beneath this argument is also something precious, a refusal to quench the Spirit the church is explicitly told never to quench, and behind it, also grief, because continuationists have watched a cold and mechanical Christianity that has functionally retired the living God and reduced him to a doctrine, and they have wanted the church to expect him to act. Sam Storms has made this case carefully, and Gordon Fee built a massive and serious study of the Spirit in Paul that presses it, and neither man is a thrill-seeker chasing sensation. They are exegetes refusing to silence a text. So there are the two cases, and I will not break the tie, and I want you to sit in the discomfort of that, because the discomfort is teaching you something. It is teaching you how tightly you want to hold a position that better Christians than you have disagreed about for centuries, and it is asking whether your certainty is serving the body of Christ or serving your need to be right. And here is the turn, and it is the thing that matters more than the verdict. In the middle of these very chapters, between the chapter that lists the gifts and the chapter that orders their use, Paul stops the argument cold and writes the greatest description of love ever set to paper. If I speak in the tongues of men and of angels but have not love, I am a clanging gong. If I have prophetic powers and understand all mysteries and all knowledge, but have not love, I am nothing. Read where he placed that. Not in a letter about marriage or friendship. Right here, in the heart of the fight about gifts, as if to grab the Corinthians and us by the collar and say, you are about to make this the whole thing, and it is not the whole thing. The gifts are real. The gifts are not the point. A church that gets cessation exactly right and treats the continuationists down the road with contempt is a clanging gong. A church that gets continuation exactly right and despises the cautious cessationist is a clanging gong. The verdict of this session, then, is not a position. I am not handing you one. The verdict is a posture. Hold the disputed question with open hands, and hold the Spirit, and his church, and the love that outlasts every gift, with everything you have. Because when the perfect does come, however you read that phrase, the tongues will cease and the prophecies will pass and the knowledge we fought over will be swallowed up in seeing him face to face, and the only thing that will still be standing in that light is love.",
       "scriptureStudy": [
-        { "ref": "1 Corinthians 12:4-7", "note": "Varieties of gifts but the same Spirit, and to each is given the manifestation for the common good. Whatever one believes about which gifts continue, the gifts are never for display or status but for building up the body, the common ground beneath the fight." },
-        { "ref": "1 Corinthians 12:11", "note": "One and the same Spirit apportions to each one individually as he wills. The Spirit chooses the distribution, which rebukes both the pride of the gifted and the envy of the ungifted, since no gift is earned and none is a measure of standing." },
-        { "ref": "1 Corinthians 13:1-3", "note": "If I have all the gifts but have not love, I am nothing. Paul plants the love chapter in the middle of the gifts chapters deliberately, relativizing the whole dispute under the one thing that outlasts every gift." },
-        { "ref": "1 Corinthians 13:8-10", "note": "Tongues will cease, prophecies will pass away, when the perfect comes. This is the central contested verse, the cessationist reading the perfect as the completed canon and the continuationist as the return of Christ, and the group should see why the phrase carries the weight it does." },
-        { "ref": "1 Corinthians 14:1", "note": "Pursue love, and earnestly desire the spiritual gifts, especially that you may prophesy. Paul commands both the pursuit of love and the desire for gifts in one breath, which the continuationist presses and which the cessationist must reckon with honestly." },
-        { "ref": "Ephesians 2:20", "note": "Built on the foundation of the apostles and prophets, Christ Jesus himself being the cornerstone. The cessationist leans on the once-laid foundation, the unrepeatable apostolic role that certain gifts served to authenticate." },
-        { "ref": "Hebrews 2:3-4", "note": "God bore witness by signs and wonders and gifts of the Holy Spirit. The text ties the signs to confirming the message, which the cessationist reads as their purpose now fulfilled and the continuationist reads as ongoing witness, a single verse both sides claim." }
+        {
+          "ref": "1 Corinthians 12:4-7",
+          "note": "Varieties of gifts but the same Spirit, and to each is given the manifestation for the common good. Whatever one believes about which gifts continue, the gifts are never for display or status but for building up the body, the common ground beneath the fight."
+        },
+        {
+          "ref": "1 Corinthians 12:11",
+          "note": "One and the same Spirit apportions to each one individually as he wills. The Spirit chooses the distribution, which rebukes both the pride of the gifted and the envy of the ungifted, since no gift is earned and none is a measure of standing."
+        },
+        {
+          "ref": "1 Corinthians 13:1-3",
+          "note": "If I have all the gifts but have not love, I am nothing. Paul plants the love chapter in the middle of the gifts chapters deliberately, relativizing the whole dispute under the one thing that outlasts every gift."
+        },
+        {
+          "ref": "1 Corinthians 13:8-10",
+          "note": "Tongues will cease, prophecies will pass away, when the perfect comes. This is the central contested verse, the cessationist reading the perfect as the completed canon and the continuationist as the return of Christ, and the group should see why the phrase carries the weight it does."
+        },
+        {
+          "ref": "1 Corinthians 14:1",
+          "note": "Pursue love, and earnestly desire the spiritual gifts, especially that you may prophesy. Paul commands both the pursuit of love and the desire for gifts in one breath, which the continuationist presses and which the cessationist must reckon with honestly."
+        },
+        {
+          "ref": "Ephesians 2:20",
+          "note": "Built on the foundation of the apostles and prophets, Christ Jesus himself being the cornerstone. The cessationist leans on the once-laid foundation, the unrepeatable apostolic role that certain gifts served to authenticate."
+        },
+        {
+          "ref": "Hebrews 2:3-4",
+          "note": "God bore witness by signs and wonders and gifts of the Holy Spirit. The text ties the signs to confirming the message, which the cessationist reads as their purpose now fulfilled and the continuationist reads as ongoing witness, a single verse both sides claim."
+        }
       ],
       "goingDeeper": "Take up the actual history of this question, because the debate is older and more textured than the modern shouting suggests, and knowing the history lowers the temperature. The view that the most spectacular gifts had largely ceased after the apostolic age was held in various forms across much of church history, and B. B. Warfield gave it a famous and forceful statement in his work on miracles, arguing that the gifts were bound to the apostles and their authenticating function. Then the twentieth century brought the Pentecostal revivals and later the broader charismatic renewal across nearly every denomination, and a generation of careful scholars, among them Gordon Fee in his major study of the Spirit in the letters of Paul and Sam Storms and others, argued the continuationist case with exegetical seriousness rather than mere enthusiasm. A serious group should read at least one strong representative of each, ideally the side they instinctively oppose, and should weigh the genuinely difficult middle positions, the cautious or open-but-careful stance associated with figures who desire the gifts while insisting they never rival or add to Scripture. Weigh also the pastoral fruit and the pastoral danger on each side honestly, the deadness that can settle on a church that no longer expects God to act, and the chaos and manipulation that can overtake a church with no order and no test. The discipline this session requires, and the constitution of this whole platform requires, is the equal-weight steelman, the refusal to caricature, the ability to state the position you reject so faithfully that its best defenders would recognize themselves in your words. The aim is not to manufacture a false agreement but to produce a room that can disagree about a real and difficult question while remaining, unmistakably, one body, holding the same Lord, indwelt by the same Spirit, bound by the love Paul said would outlast every gift in the room.",
-      "memoryVerse": { "ref": "1 Corinthians 12:7", "text": "To each is given the manifestation of the Spirit for the common good." }
+      "memoryVerse": {
+        "ref": "1 Corinthians 12:7",
+        "text": "To each is given the manifestation of the Spirit for the common good."
+      }
     },
     {
       "n": 5,
@@ -173,18 +416,55 @@
       "title": "The Spirit and the Groaning",
       "aim": "To meet the Spirit at the place of our weakness, where we do not know how to pray and he intercedes in us with groanings too deep for words, and to receive his indwelling as the down payment of a whole new creation God has guaranteed.",
       "summary": "Paul says something staggering and easy to miss, that we do not know what to pray for as we ought, and that the Spirit himself intercedes for us with groanings too deep for words. The first question is what kind of God this is, who not only hears our prayers from above but prays inside us when we have run out of words. Bell brings the whole study here, because the Spirit who is fully God, who raises the dead and grows the fruit and gives the contested gifts, meets us finally not at the height of our strength but at the bottom of our weakness. Romans 8 sets the groaning in three layers. The creation groans, subjected to futility, waiting to be set free. We ourselves groan, having the firstfruits of the Spirit, waiting for the redemption of our bodies. And the Spirit groans within us, interceding when we cannot find the words. Bell takes the strong form of the objection, that this is just a religious name for inarticulate emotion, that calling your wordless ache an intercession of God is wishful labeling. He grants the ache is real and often wordless. But Paul says more, that the very inability to pray is the place the Spirit takes up the praying, that your groan is not the failure of prayer but the floor where God prays through you. Then the turn, and the end of the whole study. The Spirit is called the guarantee, the down payment, the firstfruits, the first installment of an inheritance God has bound himself to pay in full. The groaning is not despair. It is the labor pain of a creation being born again, and the Spirit in you is the proof that the birth is coming, God's own deposit, his pledge that he will finish what he started. The study does not resolve into ease. It leaves you groaning, with the Spirit groaning in you, toward a morning that is certain because God has put down the deposit himself.",
-      "keyScripture": { "ref": "Romans 8:26-27", "why": "Paul says the Spirit helps us in our weakness, that we do not know what to pray for as we ought, but the Spirit himself intercedes for us with groanings too deep for words, and the One who searches hearts knows the mind of the Spirit, naming the Spirit as the One who prays inside us precisely when we cannot pray for ourselves." },
-      "timing": [ { "segment": "Open", "minutes": 5 }, { "segment": "Discuss", "minutes": 35 }, { "segment": "Close", "minutes": 10 } ],
+      "keyScripture": {
+        "ref": "Romans 8:26-27",
+        "why": "Paul says the Spirit helps us in our weakness, that we do not know what to pray for as we ought, but the Spirit himself intercedes for us with groanings too deep for words, and the One who searches hearts knows the mind of the Spirit, naming the Spirit as the One who prays inside us precisely when we cannot pray for ourselves."
+      },
+      "timing": [
+        {
+          "segment": "Open",
+          "minutes": 5
+        },
+        {
+          "segment": "Discuss",
+          "minutes": 35
+        },
+        {
+          "segment": "Close",
+          "minutes": 10
+        }
+      ],
       "discussion": [
-        { "q": "Paul says we do not know what to pray for as we ought. Where have you sat down to pray and found you had no words, and what did you assume that wordlessness meant about you?", "behind": "Open on the common experience of not knowing how to pray. Most assume their wordlessness is a failure. The aim is to surface that assumption so the passage can overturn it, revealing the empty place not as the end of prayer but as where the Spirit takes it up." },
-        { "q": "The Spirit intercedes in us with groanings too deep for words. What changes when you hear that your wordless ache is not the failure of prayer but the floor where God begins to pray through you?", "behind": "This is the hinge. We treat the groan as the breakdown of prayer. Paul treats it as the place the Spirit's prayer begins. The aim is to relocate the groan from evidence of weak faith to evidence of the indwelling God praying, which is enormous comfort to the worn out." },
-        { "q": "Bell takes the objection that calling our wordless ache an intercession of God is just wishful labeling. What is true in that caution, and how is Paul saying more than that?", "behind": "Hold both halves. The caution against baptizing every feeling as God is healthy. The more is that Paul, by inspiration, names the Spirit as the actual one interceding, not merely our emotion renamed. Help the room hold reverent honesty without explaining the mystery away." },
-        { "q": "Romans 8 says the whole creation groans like a woman in labor, that the groaning is birth pain and not death rattle. How does naming your own groaning as labor rather than dying change how you carry it?", "behind": "Press on the image of labor. Birth pain is real agony but it points toward life, not death. The aim is for the room to feel that their groaning, and creation's, is the ache of something being born, which reframes suffering without minimizing it." },
-        { "q": "The Spirit is called the guarantee, the down payment on an inheritance God has promised to pay in full. As we close the whole study, what does it mean to you that God has put down a deposit of himself in you?", "behind": "Close the whole study on the indwelling Spirit as God's pledge. The aim is to gather all five sessions, the Spirit forgotten, the Spirit who births, who grows fruit, who gives gifts, and to land on him as God's own guarantee. Invite the room to name what the deposit assures them of. Go first." }
+        {
+          "q": "Paul says we do not know what to pray for as we ought. Where have you sat down to pray and found you had no words, and what did you assume that wordlessness meant about you?",
+          "behind": "Open on the common experience of not knowing how to pray. Most assume their wordlessness is a failure. The aim is to surface that assumption so the passage can overturn it, revealing the empty place not as the end of prayer but as where the Spirit takes it up."
+        },
+        {
+          "q": "The Spirit intercedes in us with groanings too deep for words. What changes when you hear that your wordless ache is not the failure of prayer but the floor where God begins to pray through you?",
+          "behind": "This is the hinge. We treat the groan as the breakdown of prayer. Paul treats it as the place the Spirit's prayer begins. The aim is to relocate the groan from evidence of weak faith to evidence of the indwelling God praying, which is enormous comfort to the worn out."
+        },
+        {
+          "q": "Bell takes the objection that calling our wordless ache an intercession of God is just wishful labeling. What is true in that caution, and how is Paul saying more than that?",
+          "behind": "Hold both halves. The caution against baptizing every feeling as God is healthy. The more is that Paul, by inspiration, names the Spirit as the actual one interceding, not merely our emotion renamed. Help the room hold reverent honesty without explaining the mystery away."
+        },
+        {
+          "q": "Romans 8 says the whole creation groans like a woman in labor, that the groaning is birth pain and not death rattle. How does naming your own groaning as labor rather than dying change how you carry it?",
+          "behind": "Press on the image of labor. Birth pain is real agony but it points toward life, not death. The aim is for the room to feel that their groaning, and creation's, is the ache of something being born, which reframes suffering without minimizing it."
+        },
+        {
+          "q": "The Spirit is called the guarantee, the down payment on an inheritance God has promised to pay in full. As we close the whole study, what does it mean to you that God has put down a deposit of himself in you?",
+          "behind": "Close the whole study on the indwelling Spirit as God's pledge. The aim is to gather all five sessions, the Spirit forgotten, the Spirit who births, who grows fruit, who gives gifts, and to land on him as God's own guarantee. Invite the room to name what the deposit assures them of. Go first."
+        }
       ],
       "objections": [
-        { "objection": "Calling my wordless ache the intercession of the Holy Spirit is just wishful labeling. Sometimes I cannot pray because I am exhausted or empty or grieving, and dressing that up as God praying inside me is a comforting story I tell to feel less alone.", "response": "Bell grants the caution, because it is healthy. Not every feeling is the voice of God, and the habit of baptizing every emotion as the Spirit has done real harm, and a wordless ache can indeed be only exhaustion or grief with nothing divine attached. So hold the honesty. But notice that Paul, writing by inspiration, says more than you are giving him room to say. He does not say your groaning feels meaningful. He says the Spirit himself intercedes for us, that the Spirit, a person, God, takes up the praying in the very place your words run out, and that the Father who searches hearts knows the mind of the Spirit and answers accordingly. This is not you relabeling your sadness. This is the claim that the God who lives in you prays through your weakness when you cannot pray at all, so that the emptiness you feared was the end of prayer is exactly where the truest praying is happening, under and beyond your words, by Someone who knows the will of God perfectly." },
-        { "objection": "If the Spirit is the down payment and guarantees the inheritance, why is there still so much groaning, mine and the whole creation's? A guarantee that leaves everything still broken does not feel like much of a guarantee.", "response": "Hold this gently, because it is the ache of everyone still waiting, and Paul does not pretend the waiting is light. He says the creation was subjected to futility, that it groans in the pains of childbirth, that we ourselves groan inwardly while we wait. The guarantee does not remove the groaning, and here is why that is not a contradiction. A down payment is precisely not the full payment, it is the binding pledge that the full payment is coming, money the giver would forfeit if he did not pay the rest. So the Spirit in you is not the absence of the brokenness, he is God's deposit inside the brokenness, his bound and costly promise that he will finish. And Paul gives the groaning a name, not death but birth, labor pains, which means the groaning is not the world running down toward nothing but a creation straining toward a life that is certainly coming, because the One who started the labor has put down a deposit of himself that he will not lose." }
+        {
+          "objection": "Calling my wordless ache the intercession of the Holy Spirit is just wishful labeling. Sometimes I cannot pray because I am exhausted or empty or grieving, and dressing that up as God praying inside me is a comforting story I tell to feel less alone.",
+          "response": "Bell grants the caution, because it is healthy. Not every feeling is the voice of God, and the habit of baptizing every emotion as the Spirit has done real harm, and a wordless ache can indeed be only exhaustion or grief with nothing divine attached. So hold the honesty. But notice that Paul, writing by inspiration, says more than you are giving him room to say. He does not say your groaning feels meaningful. He says the Spirit himself intercedes for us, that the Spirit, a person, God, takes up the praying in the very place your words run out, and that the Father who searches hearts knows the mind of the Spirit and answers accordingly. This is not you relabeling your sadness. This is the claim that the God who lives in you prays through your weakness when you cannot pray at all, so that the emptiness you feared was the end of prayer is exactly where the truest praying is happening, under and beyond your words, by Someone who knows the will of God perfectly."
+        },
+        {
+          "objection": "If the Spirit is the down payment and guarantees the inheritance, why is there still so much groaning, mine and the whole creation's? A guarantee that leaves everything still broken does not feel like much of a guarantee.",
+          "response": "Hold this gently, because it is the ache of everyone still waiting, and Paul does not pretend the waiting is light. He says the creation was subjected to futility, that it groans in the pains of childbirth, that we ourselves groan inwardly while we wait. The guarantee does not remove the groaning, and here is why that is not a contradiction. A down payment is precisely not the full payment, it is the binding pledge that the full payment is coming, money the giver would forfeit if he did not pay the rest. So the Spirit in you is not the absence of the brokenness, he is God's deposit inside the brokenness, his bound and costly promise that he will finish. And Paul gives the groaning a name, not death but birth, labor pains, which means the groaning is not the world running down toward nothing but a creation straining toward a life that is certainly coming, because the One who started the labor has put down a deposit of himself that he will not lose."
+        }
       ],
       "quietRoomQuestion": "When you have had no words to pray, did you carry it as your failure and your distance from God, when all along the Spirit may have been praying in you in a place deeper than language could reach?",
       "practice": "This week, on a day you cannot find words to pray, do not force them and do not give up. Instead sit quietly and say only this, Spirit, pray in me what I cannot say, and then stop talking and let the groan be the prayer. Do not fill the silence. Trust that the One who searches hearts knows the mind of the Spirit, and that the wordless ache is being carried to the Father by Someone who knows exactly what to ask. Write down what it was like to let your weakness be the place of prayer rather than its end.",
@@ -196,49 +476,154 @@
       ],
       "teaching": "We end the study where the Christian life is actually lived, which is not at the summit of our strength but at the bottom of our weakness, because that is exactly where Paul places the Spirit in the eighth chapter of Romans. He says something so staggering we tend to read past it. We do not know what to pray for as we ought, but the Spirit himself intercedes for us with groanings too deep for words. Stop on that. Paul, the apostle, the man who wrote half the New Testament, includes himself in the we who do not know how to pray. Not the immature believer, not the new convert, but all of us, the whole church, confessing that there are places we sit down to pray and have no idea what to ask, no words, only an ache. And here is the gospel buried in our incompetence. The God we have been studying for five sessions, the Spirit who is fully God, who raised us from spiritual death, who grows the slow fruit, who distributes the contested gifts, this same Spirit does not stand back and wait for us to compose ourselves. He intercedes. He takes up the praying we cannot do, inside us, with groanings too deep for words. What kind of God is this. Not only a God who hears prayer from his throne above, but a God who has come to live inside us and prays from there when we have run out of language. Romans 8 sets this groaning in three layers, and you have to see all three to feel the weight of it. First, the creation groans. Paul says the whole created order was subjected to futility, that it has been groaning together in the pains of childbirth right up to now, the whole world straining and aching under its brokenness, waiting to be set free. Second, we ourselves groan. We who have the firstfruits of the Spirit, Paul says, groan inwardly as we wait for the redemption of our bodies, which means the groaning is not a sign you lack the Spirit, it is a sign you have him, the firstfruits, and so feel the gap between what is and what is coming. And third, underneath and within our groaning, the Spirit groans, interceding for us when we cannot find the words. Three groans, the creation's, ours, and God's own Spirit's, woven together in one labor. Now take the objection at full strength, because it is fair. Someone says, calling my wordless ache the intercession of the Holy Spirit is just wishful labeling. Sometimes I cannot pray because I am exhausted or grieving or empty, and dressing that emptiness up as God praying inside me is a comforting story I tell so I feel less alone. And grant the caution, because it is healthy. Not every feeling is the voice of God, and the church has done real damage baptizing every emotion as the Spirit, and a wordless ache can be only tiredness with nothing divine attached. Hold the honesty. But notice that Paul says more than you are giving him room to say. He does not say your groaning feels meaningful. He says the Spirit himself intercedes, that a person, God, takes up the praying precisely in the place your words give out, and that the Father who searches hearts knows the mind of the Spirit and answers what the Spirit asks. This is not you relabeling your sadness as holy. This is the claim that the God who lives in you is praying through your weakness when you cannot pray at all, so that the empty place you feared was the end of prayer turns out to be where the truest prayer in your life is happening, beneath your words, by Someone who knows the will of God perfectly and asks for exactly the right thing. And then comes the turn that ends the whole study, and it is the most hopeful word the Spirit's whole work contains. Throughout the New Testament the Spirit is given a particular name. He is called the guarantee of our inheritance, the down payment, the firstfruits, the first installment, the deposit. These are commercial words, on purpose. A down payment is money a buyer puts down that binds him to pay the rest, a pledge he would forfeit if he failed to complete the purchase, the part that guarantees the whole. And Paul says the Spirit in you is that, God's own deposit, the firstfruits of a harvest that is certainly coming, the binding pledge that he will finish the thing he started. Which means the groaning is not despair. Name it correctly. Paul does not call it a death rattle. He calls it the pains of childbirth, labor, and labor is agony that points not toward death but toward life, toward a child about to be born. The creation is not winding down toward nothing. It is groaning toward a new creation God has guaranteed, and the Spirit in you is the proof, the deposit, the down payment God himself has put down and will not lose. So this study does not end in resolution, and it should not, because we are not home yet, and a study that tied a bow on the Spirit would be lying about the age we live in. It ends in groaning, but it is the groaning of labor, not of dying, and you do not groan alone, because the God who is fully God, the forgotten God, the One who raised you and grows you and gives the gifts the church still argues over, is groaning inside you, praying what you cannot pray, the firstfruits of a morning that is coming as surely as God keeps his word, because he has put down the deposit himself. Carry the groaning out of this room. But carry it knowing whose groan joins yours, and toward what it is straining, and who has guaranteed the end. And here is the last word of the whole study, the thing all five sessions have been walking toward. The God we said we had forgotten, the one we reduced to a force and left a footnote, has not for one moment forgotten us. He has been here the entire time, in the room, in us, raising the dead, growing the fruit, distributing the gifts we argue over, and now praying in us when we cannot pray, the down payment God himself put down and will not lose. We were the ones who went absent. He never did. Go out groaning, then, but never again alone.",
       "scriptureStudy": [
-        { "ref": "Romans 8:26", "note": "The Spirit helps us in our weakness, for we do not know what to pray for as we ought. Paul locates the Spirit's help precisely at the point of our incompetence, so weakness in prayer is not disqualification but the very place the Spirit goes to work." },
-        { "ref": "Romans 8:27", "note": "He who searches hearts knows the mind of the Spirit, who intercedes according to the will of God. The Spirit's wordless intercession is not vague feeling but prayer aligned perfectly with God's will, which is why it is the surest praying we ever do." },
-        { "ref": "Romans 8:22-23", "note": "The whole creation groans in the pains of childbirth, and we ourselves groan inwardly. The groaning is named as labor, agony that points toward birth and not toward death, the creation and the believer alike straining toward redemption." },
-        { "ref": "Romans 8:15-16", "note": "You received the Spirit of adoption, by whom we cry Abba, Father, the Spirit bearing witness that we are children of God. The same Spirit who groans in our weakness also assures us of our place in the family, the ground of all the praying." },
-        { "ref": "Ephesians 1:13-14", "note": "You were sealed with the promised Holy Spirit, who is the guarantee of our inheritance. The Spirit is God's deposit, the binding pledge that the full inheritance is coming, his presence in us the proof that he will finish." },
-        { "ref": "2 Corinthians 1:22", "note": "He has put his seal on us and given us his Spirit in our hearts as a guarantee. The Spirit is the down payment God has placed inside the believer, a commercial word for a binding first installment of what is promised in full." },
-        { "ref": "Romans 8:28", "note": "For those who love God all things work together for good. Set right after the groaning and the Spirit's intercession, this promise is not a denial of the groaning but its outcome, the assurance under which the labor is endured." }
+        {
+          "ref": "Romans 8:26",
+          "note": "The Spirit helps us in our weakness, for we do not know what to pray for as we ought. Paul locates the Spirit's help precisely at the point of our incompetence, so weakness in prayer is not disqualification but the very place the Spirit goes to work."
+        },
+        {
+          "ref": "Romans 8:27",
+          "note": "He who searches hearts knows the mind of the Spirit, who intercedes according to the will of God. The Spirit's wordless intercession is not vague feeling but prayer aligned perfectly with God's will, which is why it is the surest praying we ever do."
+        },
+        {
+          "ref": "Romans 8:22-23",
+          "note": "The whole creation groans in the pains of childbirth, and we ourselves groan inwardly. The groaning is named as labor, agony that points toward birth and not toward death, the creation and the believer alike straining toward redemption."
+        },
+        {
+          "ref": "Romans 8:15-16",
+          "note": "You received the Spirit of adoption, by whom we cry Abba, Father, the Spirit bearing witness that we are children of God. The same Spirit who groans in our weakness also assures us of our place in the family, the ground of all the praying."
+        },
+        {
+          "ref": "Ephesians 1:13-14",
+          "note": "You were sealed with the promised Holy Spirit, who is the guarantee of our inheritance. The Spirit is God's deposit, the binding pledge that the full inheritance is coming, his presence in us the proof that he will finish."
+        },
+        {
+          "ref": "2 Corinthians 1:22",
+          "note": "He has put his seal on us and given us his Spirit in our hearts as a guarantee. The Spirit is the down payment God has placed inside the believer, a commercial word for a binding first installment of what is promised in full."
+        },
+        {
+          "ref": "Romans 8:28",
+          "note": "For those who love God all things work together for good. Set right after the groaning and the Spirit's intercession, this promise is not a denial of the groaning but its outcome, the assurance under which the labor is endured."
+        }
       ],
       "goingDeeper": "Take up the theme of the Spirit as firstfruits and guarantee across the whole sweep of redemption, because Paul's commercial language in Romans 8 and Ephesians 1 gathers up a vision of the future the modern church has often lost. The New Testament does not picture the Christian hope as souls escaping to a disembodied heaven but as the redemption of the body and the renewal of the whole creation, a new heavens and a new earth, and N. T. Wright has labored to recover this for a church that had quietly reduced its hope to going to heaven when we die. Read the groaning of Romans 8 against this larger hope and it comes into focus, the creation in labor is not waiting to be discarded but to be set free from its bondage to decay, and the believer's groaning body is not a prison to flee but a thing to be raised. A serious group should weigh how the Spirit functions as the link between this present age and the age to come, the firstfruits being the first sheaf of a harvest that guarantees the rest, the down payment being the first installment that binds the giver to pay in full, so that the Spirit in us now is a genuine foretaste of the life of the world to come, not merely a promise about it but the first installment of it already given. Set this against the despair that watches the world groan and concludes it is simply running down, and against the false optimism that expects the groaning to end by human progress, and hold instead the Christian shape of hope, that the groaning is real and the renewal is certain because God has put down a deposit of himself. The discipline is to let this reframe both our prayer and our endurance, praying in the Spirit through our weakness and enduring the groaning as labor, because the One who began the work, who hovered over the first creation and raised Christ as the firstfruits of the new one, has guaranteed its completion with the gift of his own indwelling Spirit.",
-      "memoryVerse": { "ref": "Romans 8:26", "text": "Likewise the Spirit helps us in our weakness. For we do not know what to pray for as we ought, but the Spirit himself intercedes for us with groanings too deep for words." }
+      "memoryVerse": {
+        "ref": "Romans 8:26",
+        "text": "Likewise the Spirit helps us in our weakness. For we do not know what to pray for as we ought, but the Spirit himself intercedes for us with groanings too deep for words."
+      }
     }
   ],
   "leaderPrimer": "Most of your group can describe two persons of the Trinity and will go quiet on the third, which is why this study exists, but the vagueness is not the leader's hazard. The wound is. Somewhere at your table sits a person who was told a healing failed because their faith was small, or who watched a church chase manifestations until Scripture got lost, or who was taught in the other direction that expecting the Spirit to do anything today is error, and every one of them will walk into session four, on the gifts, carrying that history. That session is the live wire of the five, so know your own position and your own scars before you arrive at it, because a leader surprised by his own reactions cannot steady anyone else's. The study handles the contested question by giving each side its strongest case first and naming what order of question it is, cessationist and continuationist both treated as family, and your job is to enforce that generosity in the room even if your own church has settled the matter. Especially then. But do not let the controversy eat the study, because the controversy is one session and the Spirit is all five. The quieter hazard is a group that discusses the Spirit for five weeks the way it would discuss glaciers, accurately and from a great distance. The writer of these essays came out of atheism into a faith he could not have argued himself into, and what he found waiting was not a force or an influence but a person, the one Jesus promised would not leave us as orphans (John 14:18), and a man raised without a father does not use the word orphan carelessly. Keep the study that personal. Let session two sit heavy, since being born of the Spirit offends every self-made instinct in the room. Let session five land gently on the Spirit who intercedes for us when we cannot form the prayer ourselves (Romans 8:26), because somebody present is in a season where that is the only prayer they have. Ask for expectancy without staging it. You cannot schedule the wind, and the worst outcome of five weeks would be a room that learned to perform the Spirit's presence for one another. The best outcome needs no performance at all, a group that leaves less afraid of the third person of the Trinity, and quietly hungrier for him.",
   "faq": [
-    { "q": "Is this study going to push my group toward speaking in tongues, or away from it?", "a": "Neither, and it works hard to do neither. The fourth session takes the question of whether gifts like tongues, prophecy, and healing continue today and refuses to settle it for the group, putting the continuationist case and the cessationist case at full and equal strength, because both are held by faithful, careful, Christ-loving believers and the divide runs through the middle of the godly rather than between the faithful and the faithless. The study deliberately does not break the tie. Its concern is not to win the old argument but to hold a room together across it, so that a group can disagree about which gifts continue while worshiping the same Spirit. If you came hoping the study would arm you for the fight, you will find instead a study that asks whether your certainty is serving the body of Christ or your need to be right." },
-    { "q": "If I cannot describe the Holy Spirit very well, am I a bad Christian?", "a": "No, and the first session opens by admitting that this is most of us. Ask a roomful of lifelong believers to describe the Father and the Son and they manage it, then ask them who the Spirit is and watch the pause. Francis Chan named him the forgotten God for a reason. The study treats this not as a private failure to scold but as a widespread loss to recover together, and it argues the reason we forget the Spirit is not that he is unimportant but that he is humble, because he does not point to himself, he points to Christ. We mistook his self-effacement for absence. So if the Spirit has been the vague one for you, you are exactly who this study is for, and the aim is to help you come to know him as the person of God he is, not to make you feel ignorant for not having known him sooner." },
-    { "q": "The study says conversion is the Spirit's work. Does that mean my decision to follow Christ did not matter?", "a": "No. The second session is careful to hold both truths at once. We really do decide, believe, repent, and come, and Scripture commands all of that and means it, and the one who comes is genuinely responsible for coming. But the study will not let the human decision swallow the divine act, because Jesus does not tell Nicodemus to decide harder, he tells him he must be born again, born of the Spirit, and a birth is the one thing you cannot perform on yourself. The mystery the church has always held is that the same event is fully the Spirit's work and truly your response, the wind that blows where it wills and the sail that genuinely catches it. The writer, an atheist made alive, found in his own experience a strong witness to the priority of grace, because he knows he did not begin the thing that saved him, and yet he truly came." },
-    { "q": "Why does the writer keep bringing up his own atheism?", "a": "Because it is the clearest evidence he has for what the second session claims, that the new birth is the Spirit's work and not the sinner's achievement. Bell was not a casual skeptic but a convinced atheist who had heard the arguments for God and had answers for them, and what finally changed him was not a syllogism he lost but a presence he had no category for, a wind that blew on a man who had not asked for it and could not have produced it. He brings it up because it guards the study from a lie we are all prone to, that the unconverted just need the right argument made, when in fact you do not argue a dead man into breathing. His story is not there to impress anyone. It is there to give every reader hope for the hardest skeptic they love, because too far gone is the only condition the Spirit has ever worked with." },
-    { "q": "Why will the study not just tell me whether the miraculous gifts have ceased?", "a": "Because the divide on that question does not run between faithful and faithless Christians, it runs through the middle of the godly, and a study that handed you a verdict would be misrepresenting the body of Christ. The cessationist case, carried by serious theologians like B. B. Warfield and Richard Gaffin, takes the sufficiency of Scripture and the unique foundational role of the apostles with deadly seriousness. The continuationist case, carried by serious theologians like Sam Storms and Gordon Fee, takes the absence of any biblical expiration date and Paul's command to desire the gifts just as seriously. The study puts both at full strength and then asks the harder question, whether you can hold the disputed point with open hands and the Spirit with everything you have, because Paul planted the greatest chapter on love in the middle of the gifts chapters on purpose, as if to say a church right about gifts and wrong about love is a clanging gong." },
-    { "q": "I have been a Christian for years and I am not much more loving or patient than I was. Is something wrong with me?", "a": "Not necessarily, and the third session is built to tell you the truth the church often hides, that sanctification is slow. Paul calls love and patience and the rest the fruit of the Spirit, and fruit grows at the speed of a tree, not the speed of a purchase, through seasons that can look like nothing is happening. The writer admits there are sins in him he assumed grace would have removed by now and has not, and names the two temptations the slowness produces, to give up and conclude the gospel does not work, or to fake it and hang plastic fruit on a branch that is not bearing. The study refuses both. The slowness is not proof of failure, it is the ordinary pace of real change, and the patience to keep walking while the fruit comes is itself one of the nine pieces of fruit the Spirit grows." },
-    { "q": "Is the fruit of the Spirit just a nicer way of telling me to try harder?", "a": "No, though the third session is careful to say that effort is real and Scripture does command it, since Paul says put sin to death and walk by the Spirit and no one drifts passively into holiness. The difference the word fruit makes is the difference between manufacturing a virtue by willpower and bearing it as the overflow of a connected life. Jesus gave the picture before Paul gave the list, the vine and the branches. A branch does the most active thing it can do, it refuses to detach, it stays joined to the vine, and out of that connection the fruit grows on its own. So your effort is not the effort of producing love by gritting your teeth, it is the effort of abiding, of keeping in step with the Spirit through prayer and the Word and obedience, while the fruit itself grows from the life you are joined to." },
-    { "q": "What does it mean that the Spirit prays for me when I cannot pray?", "a": "The fifth session takes this from Romans 8, where Paul says we do not know what to pray for as we ought, but the Spirit himself intercedes for us with groanings too deep for words. It means your wordlessness in prayer, the times you sit down and have nothing to say, is not the failure of prayer but the floor where the Spirit takes up the praying. The God who lives in you prays through your weakness when you cannot pray at all, and the Father who searches hearts knows the mind of the Spirit and answers what the Spirit asks according to his will. The study is honest that not every feeling is the voice of God and warns against baptizing every emotion. But Paul says more than that our groaning feels meaningful. He says God himself is interceding in us, so the empty place we feared was the end of prayer turns out to be where the truest praying happens." },
-    { "q": "The study keeps talking about groaning. Is it just telling me to expect suffering?", "a": "It is telling you the truth about the age we live in, but it names the groaning carefully, and the name changes everything. Paul says the whole creation groans in the pains of childbirth, that we ourselves groan inwardly, and that the Spirit groans within us, and the key word is childbirth, labor. Labor is real agony, but it points toward life, not death, toward a child about to be born. So the groaning is not the world running down toward nothing, it is a creation straining toward a new creation God has guaranteed. And the Spirit in you is called the down payment, the guarantee, the firstfruits, God's own deposit and binding pledge that he will finish what he started. The study does not promise the groaning ends now. It promises the One who began the labor has put down a deposit of himself that he will not lose." },
-    { "q": "Does the study expect me to have some dramatic experience of the Spirit?", "a": "No, and it deliberately refuses to engineer one. The leader primer warns the facilitator that the aim is not to manufacture an emotional experience so people feel they have met the Spirit, because the Spirit is God and not a feeling we summon. The study recovers the Spirit as a person to be known, grieved, welcomed, and walked with over a lifetime, not as a sensation to be chased on a given night. It honors the truth in the instinct that the Spirit is felt and fills and moves, while refusing the error that reduces him to the feelings, and it warns against a faith that becomes a hunt for sensations and calls every impulse divine guidance. What it asks of you is not an experience but a relationship, tested by the Word, with the God who already lives in you whether or not the room feels charged." },
-    { "q": "Why does the study keep implicating the writer and the leader instead of just teaching about the Spirit?", "a": "Because the method is the message. Bell does not stand outside this as the expert dispensing doctrine about a God he has mastered. He admits he can preach the Trinity and then pray as though shouting at an empty sky, that he has lived whole weeks as though the indwelling God were not in the room, and that he came to faith from atheism by a wind he did not summon and cannot fully explain. The study asks every leader to bring the same honesty, because you cannot lead people toward a God you have functionally forgotten, and a leader who pretends to a settled mastery of the Spirit will ring hollow even where the doctrine is sound. A leader who says I am only beginning to know this person of God myself can lead the room without pretense, and pretense is the one thing that would kill a study about the living presence of God." },
-    { "q": "I am a skeptic. Is not this just Christians describing their feelings and calling it God?", "a": "It is a fair suspicion, and the study tries to earn the right to answer it. It does not ask you to relabel your emotions as divine, in fact it warns Christians against doing exactly that, against baptizing every feeling as the Spirit. It grounds the personhood and deity of the Spirit in specific claims that can be examined, that he can be lied to and grieved and resisted, things you can only do to a someone, and it tells the story of a convinced atheist who was not argued into faith but changed by a presence he had no category for and did not want. You can weigh that story and find it insufficient, and the study does not pretend it is a proof. But it is not the soft thing you may expect, a believer dressing up a mood. It is a claim that there is a personal God who makes the dead alive, and you are invited to examine the claim, not to manufacture a feeling." },
-    { "q": "How do I lead the session on spiritual gifts without my group falling into an argument?", "a": "Carefully, and the leader primer treats this as the single greatest danger in the study. The discipline is the equal-weight steelman, stating the position you disagree with so faithfully that its best defenders would recognize themselves in your words. If you are a settled cessationist, you must make the continuationist case so well the continuationists feel honored, and if you are a settled continuationist, you must do the same for the cessationist. Do not break the tie for the group, because the divide runs through the middle of the godly and a leader who makes it a referendum will lose half the room and teach the other half contempt. When someone begins arguing to win rather than to understand, slow it down gently and turn the room back toward listening, and back toward the love Paul planted in the center of the gifts chapters. The goal is a room that can disagree about a real question while remaining, unmistakably, one body." }
+    {
+      "q": "Is this study going to push my group toward speaking in tongues, or away from it?",
+      "a": "Neither, and it works hard to do neither. The fourth session takes the question of whether gifts like tongues, prophecy, and healing continue today and refuses to settle it for the group, putting the continuationist case and the cessationist case at full and equal strength, because both are held by faithful, careful, Christ-loving believers and the divide runs through the middle of the godly rather than between the faithful and the faithless. The study deliberately does not break the tie. Its concern is not to win the old argument but to hold a room together across it, so that a group can disagree about which gifts continue while worshiping the same Spirit. If you came hoping the study would arm you for the fight, you will find instead a study that asks whether your certainty is serving the body of Christ or your need to be right."
+    },
+    {
+      "q": "If I cannot describe the Holy Spirit very well, am I a bad Christian?",
+      "a": "No, and the first session opens by admitting that this is most of us. Ask a roomful of lifelong believers to describe the Father and the Son and they manage it, then ask them who the Spirit is and watch the pause. Francis Chan named him the forgotten God for a reason. The study treats this not as a private failure to scold but as a widespread loss to recover together, and it argues the reason we forget the Spirit is not that he is unimportant but that he is humble, because he does not point to himself, he points to Christ. We mistook his self-effacement for absence. So if the Spirit has been the vague one for you, you are exactly who this study is for, and the aim is to help you come to know him as the person of God he is, not to make you feel ignorant for not having known him sooner."
+    },
+    {
+      "q": "The study says conversion is the Spirit's work. Does that mean my decision to follow Christ did not matter?",
+      "a": "No. The second session is careful to hold both truths at once. We really do decide, believe, repent, and come, and Scripture commands all of that and means it, and the one who comes is genuinely responsible for coming. But the study will not let the human decision swallow the divine act, because Jesus does not tell Nicodemus to decide harder, he tells him he must be born again, born of the Spirit, and a birth is the one thing you cannot perform on yourself. The mystery the church has always held is that the same event is fully the Spirit's work and truly your response, the wind that blows where it wills and the sail that genuinely catches it. The writer, an atheist made alive, found in his own experience a strong witness to the priority of grace, because he knows he did not begin the thing that saved him, and yet he truly came."
+    },
+    {
+      "q": "Why does the writer keep bringing up his own atheism?",
+      "a": "Because it is the clearest evidence he has for what the second session claims, that the new birth is the Spirit's work and not the sinner's achievement. Bell was not a casual skeptic but a convinced atheist who had heard the arguments for God and had answers for them, and what finally changed him was not a syllogism he lost but a presence he had no category for, a wind that blew on a man who had not asked for it and could not have produced it. He brings it up because it guards the study from a lie we are all prone to, that the unconverted just need the right argument made, when in fact you do not argue a dead man into breathing. His story is not there to impress anyone. It is there to give every reader hope for the hardest skeptic they love, because too far gone is the only condition the Spirit has ever worked with."
+    },
+    {
+      "q": "Why will the study not just tell me whether the miraculous gifts have ceased?",
+      "a": "Because the divide on that question does not run between faithful and faithless Christians, it runs through the middle of the godly, and a study that handed you a verdict would be misrepresenting the body of Christ. The cessationist case, carried by serious theologians like B. B. Warfield and Richard Gaffin, takes the sufficiency of Scripture and the unique foundational role of the apostles with deadly seriousness. The continuationist case, carried by serious theologians like Sam Storms and Gordon Fee, takes the absence of any biblical expiration date and Paul's command to desire the gifts just as seriously. The study puts both at full strength and then asks the harder question, whether you can hold the disputed point with open hands and the Spirit with everything you have, because Paul planted the greatest chapter on love in the middle of the gifts chapters on purpose, as if to say a church right about gifts and wrong about love is a clanging gong."
+    },
+    {
+      "q": "I have been a Christian for years and I am not much more loving or patient than I was. Is something wrong with me?",
+      "a": "Not necessarily, and the third session is built to tell you the truth the church often hides, that sanctification is slow. Paul calls love and patience and the rest the fruit of the Spirit, and fruit grows at the speed of a tree, not the speed of a purchase, through seasons that can look like nothing is happening. The writer admits there are sins in him he assumed grace would have removed by now and has not, and names the two temptations the slowness produces, to give up and conclude the gospel does not work, or to fake it and hang plastic fruit on a branch that is not bearing. The study refuses both. The slowness is not proof of failure, it is the ordinary pace of real change, and the patience to keep walking while the fruit comes is itself one of the nine pieces of fruit the Spirit grows."
+    },
+    {
+      "q": "Is the fruit of the Spirit just a nicer way of telling me to try harder?",
+      "a": "No, though the third session is careful to say that effort is real and Scripture does command it, since Paul says put sin to death and walk by the Spirit and no one drifts passively into holiness. The difference the word fruit makes is the difference between manufacturing a virtue by willpower and bearing it as the overflow of a connected life. Jesus gave the picture before Paul gave the list, the vine and the branches. A branch does the most active thing it can do, it refuses to detach, it stays joined to the vine, and out of that connection the fruit grows on its own. So your effort is not the effort of producing love by gritting your teeth, it is the effort of abiding, of keeping in step with the Spirit through prayer and the Word and obedience, while the fruit itself grows from the life you are joined to."
+    },
+    {
+      "q": "What does it mean that the Spirit prays for me when I cannot pray?",
+      "a": "The fifth session takes this from Romans 8, where Paul says we do not know what to pray for as we ought, but the Spirit himself intercedes for us with groanings too deep for words. It means your wordlessness in prayer, the times you sit down and have nothing to say, is not the failure of prayer but the floor where the Spirit takes up the praying. The God who lives in you prays through your weakness when you cannot pray at all, and the Father who searches hearts knows the mind of the Spirit and answers what the Spirit asks according to his will. The study is honest that not every feeling is the voice of God and warns against baptizing every emotion. But Paul says more than that our groaning feels meaningful. He says God himself is interceding in us, so the empty place we feared was the end of prayer turns out to be where the truest praying happens."
+    },
+    {
+      "q": "The study keeps talking about groaning. Is it just telling me to expect suffering?",
+      "a": "It is telling you the truth about the age we live in, but it names the groaning carefully, and the name changes everything. Paul says the whole creation groans in the pains of childbirth, that we ourselves groan inwardly, and that the Spirit groans within us, and the key word is childbirth, labor. Labor is real agony, but it points toward life, not death, toward a child about to be born. So the groaning is not the world running down toward nothing, it is a creation straining toward a new creation God has guaranteed. And the Spirit in you is called the down payment, the guarantee, the firstfruits, God's own deposit and binding pledge that he will finish what he started. The study does not promise the groaning ends now. It promises the One who began the labor has put down a deposit of himself that he will not lose."
+    },
+    {
+      "q": "Does the study expect me to have some dramatic experience of the Spirit?",
+      "a": "No, and it deliberately refuses to engineer one. The leader primer warns the facilitator that the aim is not to manufacture an emotional experience so people feel they have met the Spirit, because the Spirit is God and not a feeling we summon. The study recovers the Spirit as a person to be known, grieved, welcomed, and walked with over a lifetime, not as a sensation to be chased on a given night. It honors the truth in the instinct that the Spirit is felt and fills and moves, while refusing the error that reduces him to the feelings, and it warns against a faith that becomes a hunt for sensations and calls every impulse divine guidance. What it asks of you is not an experience but a relationship, tested by the Word, with the God who already lives in you whether or not the room feels charged."
+    },
+    {
+      "q": "Why does the study keep implicating the writer and the leader instead of just teaching about the Spirit?",
+      "a": "Because the method is the message. Bell does not stand outside this as the expert dispensing doctrine about a God he has mastered. He admits he can preach the Trinity and then pray as though shouting at an empty sky, that he has lived whole weeks as though the indwelling God were not in the room, and that he came to faith from atheism by a wind he did not summon and cannot fully explain. The study asks every leader to bring the same honesty, because you cannot lead people toward a God you have functionally forgotten, and a leader who pretends to a settled mastery of the Spirit will ring hollow even where the doctrine is sound. A leader who says I am only beginning to know this person of God myself can lead the room without pretense, and pretense is the one thing that would kill a study about the living presence of God."
+    },
+    {
+      "q": "I am a skeptic. Is not this just Christians describing their feelings and calling it God?",
+      "a": "It is a fair suspicion, and the study tries to earn the right to answer it. It does not ask you to relabel your emotions as divine, in fact it warns Christians against doing exactly that, against baptizing every feeling as the Spirit. It grounds the personhood and deity of the Spirit in specific claims that can be examined, that he can be lied to and grieved and resisted, things you can only do to a someone, and it tells the story of a convinced atheist who was not argued into faith but changed by a presence he had no category for and did not want. You can weigh that story and find it insufficient, and the study does not pretend it is a proof. But it is not the soft thing you may expect, a believer dressing up a mood. It is a claim that there is a personal God who makes the dead alive, and you are invited to examine the claim, not to manufacture a feeling."
+    },
+    {
+      "q": "How do I lead the session on spiritual gifts without my group falling into an argument?",
+      "a": "Carefully, and the leader primer treats this as the single greatest danger in the study. The discipline is the equal-weight steelman, stating the position you disagree with so faithfully that its best defenders would recognize themselves in your words. If you are a settled cessationist, you must make the continuationist case so well the continuationists feel honored, and if you are a settled continuationist, you must do the same for the cessationist. Do not break the tie for the group, because the divide runs through the middle of the godly and a leader who makes it a referendum will lose half the room and teach the other half contempt. When someone begins arguing to win rather than to understand, slow it down gently and turn the room back toward listening, and back toward the love Paul planted in the center of the gifts chapters. The goal is a room that can disagree about a real question while remaining, unmistakably, one body."
+    }
   ],
   "timeline": [
-    { "date": "in the beginning", "event": "The Spirit of God hovers over the face of the waters at creation, present and active before there was anyone to feel him, so that the Spirit is no latecomer to the story of God but the breath of God at work from the first page." },
-    { "date": "circa 590 BC", "event": "Ezekiel prophesies that God will give his people a new heart and put a new spirit within them, removing the heart of stone, promising regeneration as God's own act centuries before Jesus tells Nicodemus he must be born of the Spirit." },
-    { "date": "circa AD 30", "event": "On the night before the cross Jesus promises the disciples another Helper, the Spirit of truth, to be with them forever and to dwell in them, naming the Spirit as a personal presence of the same kind as himself rather than a force sent from a distance." },
-    { "date": "circa AD 30", "event": "After the resurrection and ascension the Spirit is poured out at Pentecost with the sound of a rushing wind and tongues of fire, and the church that had been waiting in an upper room is launched into the world by the presence of God." },
-    { "date": "circa AD 55", "event": "Paul writes to the Corinthians on the spiritual gifts, naming their variety and their one Giver and one purpose, and plants in the middle of the discussion the greatest description of love ever written, relativizing every gift under the love that outlasts them." },
-    { "date": "circa AD 57", "event": "Paul writes to the Romans that the Spirit helps us in our weakness, interceding with groanings too deep for words, and that the whole creation groans in the pains of childbirth, naming the Spirit as the One who prays in us and the firstfruits of a new creation." },
-    { "date": "circa 360", "event": "A party arises denying the full deity of the Spirit, granting he is more than a creature but refusing to call him God, the controversy that forces the church to say clearly what it believes about the third person of the Trinity." },
-    { "date": "circa 375", "event": "Basil of Caesarea writes his treatise on the Holy Spirit, arguing that the Spirit must be worshiped and glorified together with the Father and the Son, which is intelligible only if the Spirit is fully God." },
-    { "date": "381", "event": "The Council of Constantinople expands the creed to confess the Holy Spirit as the Lord and giver of life, who proceeds from the Father and together with the Father and the Son is worshiped and glorified, settling the deity of the Spirit for the church." },
-    { "date": "1546", "event": "Martin Luther dies, having taught that the Spirit works faith through the Word and not apart from it, anchoring the experience of the Spirit to Scripture against both a dead formalism and an untethered enthusiasm." },
-    { "date": "1906", "event": "The Azusa Street revival in Los Angeles ignites the modern Pentecostal movement, reopening across the worldwide church the question of whether the miraculous gifts continue, a question that will shape much of the next century of debate." },
-    { "date": "1918", "event": "B. B. Warfield publishes his influential argument that the miraculous gifts were bound to the apostles and their authenticating work and ceased with the apostolic age, giving the modern cessationist position its most forceful statement." },
-    { "date": "1994", "event": "Gordon Fee publishes his major study of the Spirit in the letters of Paul, a serious exegetical case for the continuing presence and gifting of the Spirit, marking the maturing of careful continuationist scholarship." },
-    { "date": "2009", "event": "Francis Chan publishes Forgotten God, calling the church to reckon with how thoroughly it has neglected the Holy Spirit, the title that names the wound this whole study sets out to address." }
+    {
+      "date": "in the beginning",
+      "event": "The Spirit of God hovers over the face of the waters at creation, present and active before there was anyone to feel him, so that the Spirit is no latecomer to the story of God but the breath of God at work from the first page."
+    },
+    {
+      "date": "circa 590 BC",
+      "event": "Ezekiel prophesies that God will give his people a new heart and put a new spirit within them, removing the heart of stone, promising regeneration as God's own act centuries before Jesus tells Nicodemus he must be born of the Spirit."
+    },
+    {
+      "date": "circa AD 30",
+      "event": "On the night before the cross Jesus promises the disciples another Helper, the Spirit of truth, to be with them forever and to dwell in them, naming the Spirit as a personal presence of the same kind as himself rather than a force sent from a distance."
+    },
+    {
+      "date": "circa AD 30",
+      "event": "After the resurrection and ascension the Spirit is poured out at Pentecost with the sound of a rushing wind and tongues of fire, and the church that had been waiting in an upper room is launched into the world by the presence of God."
+    },
+    {
+      "date": "circa AD 55",
+      "event": "Paul writes to the Corinthians on the spiritual gifts, naming their variety and their one Giver and one purpose, and plants in the middle of the discussion the greatest description of love ever written, relativizing every gift under the love that outlasts them."
+    },
+    {
+      "date": "circa AD 57",
+      "event": "Paul writes to the Romans that the Spirit helps us in our weakness, interceding with groanings too deep for words, and that the whole creation groans in the pains of childbirth, naming the Spirit as the One who prays in us and the firstfruits of a new creation."
+    },
+    {
+      "date": "circa 360",
+      "event": "A party arises denying the full deity of the Spirit, granting he is more than a creature but refusing to call him God, the controversy that forces the church to say clearly what it believes about the third person of the Trinity."
+    },
+    {
+      "date": "circa 375",
+      "event": "Basil of Caesarea writes his treatise on the Holy Spirit, arguing that the Spirit must be worshiped and glorified together with the Father and the Son, which is intelligible only if the Spirit is fully God."
+    },
+    {
+      "date": "381",
+      "event": "The Council of Constantinople expands the creed to confess the Holy Spirit as the Lord and giver of life, who proceeds from the Father and together with the Father and the Son is worshiped and glorified, settling the deity of the Spirit for the church."
+    },
+    {
+      "date": "1546",
+      "event": "Martin Luther dies, having taught that the Spirit works faith through the Word and not apart from it, anchoring the experience of the Spirit to Scripture against both a dead formalism and an untethered enthusiasm."
+    },
+    {
+      "date": "1906",
+      "event": "The Azusa Street revival in Los Angeles ignites the modern Pentecostal movement, reopening across the worldwide church the question of whether the miraculous gifts continue, a question that will shape much of the next century of debate."
+    },
+    {
+      "date": "1918",
+      "event": "B. B. Warfield publishes his influential argument that the miraculous gifts were bound to the apostles and their authenticating work and ceased with the apostolic age, giving the modern cessationist position its most forceful statement."
+    },
+    {
+      "date": "1994",
+      "event": "Gordon Fee publishes his major study of the Spirit in the letters of Paul, a serious exegetical case for the continuing presence and gifting of the Spirit, marking the maturing of careful continuationist scholarship."
+    },
+    {
+      "date": "2009",
+      "event": "Francis Chan publishes Forgotten God, calling the church to reckon with how thoroughly it has neglected the Holy Spirit, the title that names the wound this whole study sets out to address."
+    }
   ],
   "facilitatorScript": {
     "open": "Welcome. Thank you for being here, and thank you for being willing to spend five weeks on the member of the Trinity most of us know the least. Before we start, three things. First, this is a safe room. You can admit here that you have never really known the Holy Spirit, that he has been the vague one for you, and no one is going to make you feel foolish for it, because that is most of us. Second, this study is not going to push you toward speaking in tongues or away from it, and when we reach the session on the gifts, we are going to put both sides at their strongest and refuse to settle the fight, because faithful Christians who love the same Lord land on opposite sides of it. Third, the writer puts himself inside all of this, and so will I. He came to faith from atheism by a presence he could not explain, and he admits he can know the doctrine and still live as though God were far off. We are not experts standing over the Spirit. We are people only beginning to know the God who has been living in us the whole time. Tonight we are looking at this together: ________. Let me read our key passage, and then we will sit with it before we say anything else. There are no wrong answers in the first five minutes, only honest ones.",
@@ -280,18 +665,66 @@
     }
   ],
   "bibliography": [
-    { "title": "Forgotten God: Reversing Our Tragic Neglect of the Holy Spirit", "author": "Francis Chan", "note": "The book that names the wound this whole study addresses, calling the church to reckon with how thoroughly it has neglected the Spirit. The pastoral spine of session 1." },
-    { "title": "Keep in Step with the Spirit: Finding Fullness in Our Walk with God", "author": "J. I. Packer", "note": "Takes its title from Galatians 5 and argues for a sanctification that is neither gritted self-effort nor passive let go and let God, but an active dependence. Anchors session 3." },
-    { "title": "God's Empowering Presence: The Holy Spirit in the Letters of Paul", "author": "Gordon Fee", "note": "A major exegetical study of the Spirit in Paul that presses the continuationist case with seriousness rather than enthusiasm. A primary witness for the continuationist side in session 4. Leader to confirm specific claims before attributing them to Bell." },
-    { "title": "The Cessation of the Charismata, and broader writing on the miraculous gifts", "author": "B. B. Warfield", "note": "The most forceful modern statement of the cessationist case, arguing the miraculous gifts were bound to the apostles and their authenticating work. A primary witness for the cessationist side in session 4. Leader to confirm specifics before pressing them as settled." },
-    { "title": "Perspectives on Pentecost, and writing on the gifts and the apostolic foundation", "author": "Richard Gaffin", "note": "A careful Reformed presentation of the cessationist case centered on the unique, unrepeatable foundational role of the apostles. Supports the cessationist steelman in session 4. Leader to confirm the specifics before stating them as the study's position." },
-    { "title": "Practicing the Power, and broader writing for the continuationist position", "author": "Sam Storms", "note": "A careful continuationist who argues the New Testament names no expiration date for the gifts and that Paul commands believers to desire them. Supports the continuationist steelman in session 4. Leader to confirm before attributing claims to Bell." },
-    { "title": "On the Holy Spirit", "author": "Basil of Caesarea", "note": "The fourth-century treatise arguing that the Spirit must be worshiped and glorified with the Father and the Son, foundational to the church's confession of the Spirit's deity. Background for session 1." },
-    { "title": "Surprised by the Spirit, and broader writing on new creation and the Spirit", "author": "N. T. Wright", "note": "Recovers the Christian hope as the renewal of creation and the redemption of the body rather than escape to a disembodied heaven, framing the Spirit as the firstfruits of that hope. Supports session 5. Leader to confirm specifics before pressing them as Bell's own argument." },
-    { "title": "Gentle and Lowly: The Heart of Christ for Sinners and Sufferers", "author": "Dane Ortlund", "note": "On the tenderness of Christ toward the weary, a useful companion to the Spirit who meets us at the bottom of our weakness in session 5, where the Spirit prays what we cannot." },
-    { "title": "The Holy Spirit", "author": "Sinclair Ferguson", "note": "A careful theological treatment of the person and work of the Spirit across the whole sweep of Scripture, balanced and pastoral. Useful across all five sessions. Leader to confirm before stating its arguments as the study's position." },
-    { "title": "The Mystery of the Holy Spirit", "author": "R. C. Sproul", "note": "An accessible introduction to the deity and personhood of the Spirit and his work in regeneration and sanctification. Supports sessions 1 through 3. Offered as a balancing Reformed voice." },
-    { "title": "Confessions", "author": "Augustine of Hippo", "note": "The account of a mind that resisted God and was finally drawn by grace it did not summon, a companion to the writer's own conversion from unbelief in session 2. Background for the priority of grace in the new birth." }
+    {
+      "title": "Forgotten God: Reversing Our Tragic Neglect of the Holy Spirit",
+      "author": "Francis Chan",
+      "note": "The book that names the wound this whole study addresses, calling the church to reckon with how thoroughly it has neglected the Spirit. The pastoral spine of session 1."
+    },
+    {
+      "title": "Keep in Step with the Spirit: Finding Fullness in Our Walk with God",
+      "author": "J. I. Packer",
+      "note": "Takes its title from Galatians 5 and argues for a sanctification that is neither gritted self-effort nor passive let go and let God, but an active dependence. Anchors session 3."
+    },
+    {
+      "title": "God's Empowering Presence: The Holy Spirit in the Letters of Paul",
+      "author": "Gordon Fee",
+      "note": "A major exegetical study of the Spirit in Paul that presses the continuationist case with seriousness rather than enthusiasm. A primary witness for the continuationist side in session 4. Leader to confirm specific claims before attributing them to Bell."
+    },
+    {
+      "title": "The Cessation of the Charismata, and broader writing on the miraculous gifts",
+      "author": "B. B. Warfield",
+      "note": "The most forceful modern statement of the cessationist case, arguing the miraculous gifts were bound to the apostles and their authenticating work. A primary witness for the cessationist side in session 4. Leader to confirm specifics before pressing them as settled."
+    },
+    {
+      "title": "Perspectives on Pentecost, and writing on the gifts and the apostolic foundation",
+      "author": "Richard Gaffin",
+      "note": "A careful Reformed presentation of the cessationist case centered on the unique, unrepeatable foundational role of the apostles. Supports the cessationist steelman in session 4. Leader to confirm the specifics before stating them as the study's position."
+    },
+    {
+      "title": "Practicing the Power, and broader writing for the continuationist position",
+      "author": "Sam Storms",
+      "note": "A careful continuationist who argues the New Testament names no expiration date for the gifts and that Paul commands believers to desire them. Supports the continuationist steelman in session 4. Leader to confirm before attributing claims to Bell."
+    },
+    {
+      "title": "On the Holy Spirit",
+      "author": "Basil of Caesarea",
+      "note": "The fourth-century treatise arguing that the Spirit must be worshiped and glorified with the Father and the Son, foundational to the church's confession of the Spirit's deity. Background for session 1."
+    },
+    {
+      "title": "Surprised by the Spirit, and broader writing on new creation and the Spirit",
+      "author": "N. T. Wright",
+      "note": "Recovers the Christian hope as the renewal of creation and the redemption of the body rather than escape to a disembodied heaven, framing the Spirit as the firstfruits of that hope. Supports session 5. Leader to confirm specifics before pressing them as Bell's own argument."
+    },
+    {
+      "title": "Gentle and Lowly: The Heart of Christ for Sinners and Sufferers",
+      "author": "Dane Ortlund",
+      "note": "On the tenderness of Christ toward the weary, a useful companion to the Spirit who meets us at the bottom of our weakness in session 5, where the Spirit prays what we cannot."
+    },
+    {
+      "title": "The Holy Spirit",
+      "author": "Sinclair Ferguson",
+      "note": "A careful theological treatment of the person and work of the Spirit across the whole sweep of Scripture, balanced and pastoral. Useful across all five sessions. Leader to confirm before stating its arguments as the study's position."
+    },
+    {
+      "title": "The Mystery of the Holy Spirit",
+      "author": "R. C. Sproul",
+      "note": "An accessible introduction to the deity and personhood of the Spirit and his work in regeneration and sanctification. Supports sessions 1 through 3. Offered as a balancing Reformed voice."
+    },
+    {
+      "title": "Confessions",
+      "author": "Augustine of Hippo",
+      "note": "The account of a mind that resisted God and was finally drawn by grace it did not summon, a companion to the writer's own conversion from unbelief in session 2. Background for the priority of grace in the new birth."
+    }
   ],
   "furtherReading": [
     "Forgotten God, Francis Chan, for readers who want to sit longer with the church's neglect of the Spirit and the call to know him as a person, which anchors session 1.",
@@ -301,33 +734,133 @@
     "The Holy Spirit, Sinclair Ferguson, for those who want a balanced, full study of the person and work of the Spirit across the whole of Scripture, read alongside the study's recovery of the forgotten God."
   ],
   "glossary": [
-    { "term": "The Holy Spirit", "definition": "The third person of the one God, of one being with the Father and the Son, fully divine and fully personal, who can be grieved, lied to, and resisted, and who has come to live inside the people of God. Not a force or an influence but God himself, present and indwelling." },
-    { "term": "Regeneration", "definition": "The new birth, the Spirit's act of making the spiritually dead alive, named by Jesus as being born again or born of the Spirit. Not the improvement of the old self but a resurrection, a thing done to us by God and not accomplished by us." },
-    { "term": "Indwelling", "definition": "The Spirit's living presence inside the believer, the with you and in you that Jesus promised, so that the Christian is not visited by God from a distance but inhabited by him, the body of the believer a temple of the Holy Spirit." },
-    { "term": "The fruit of the Spirit", "definition": "The cluster of love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control that the Spirit grows in the believer, named as fruit rather than works to mark it as the overflow of a connected life rather than the product of willpower." },
-    { "term": "Sanctification", "definition": "The slow, lifelong process by which the Spirit makes the believer actually holy, growing the fruit at the speed of a tree rather than a purchase, held between the errors of gritted self-effort and passive waiting, lived as abiding in the Vine and keeping in step with the Spirit." },
-    { "term": "Spiritual gifts", "definition": "The varieties of grace the Spirit distributes among believers as he wills, for the common good and the building up of the body, never for status or display, the subject of the long-disputed question of which gifts continue today." },
-    { "term": "Cessationism", "definition": "The position that certain miraculous gifts, such as tongues, prophecy, and healing, served to authenticate the apostles and the giving of Scripture and ceased when the apostolic foundation was laid and the canon completed. Held by serious believers for serious reasons, and put at full strength in session 4." },
-    { "term": "Continuationism", "definition": "The position that the New Testament names no expiration date for the gifts before Christ returns, that Paul commands believers to desire them, and that they continue in the church today. Held by serious believers for serious reasons, and put at full strength in session 4." },
-    { "term": "The equal-weight steelman", "definition": "The discipline this study requires on contested questions, the practice of stating the position you disagree with so faithfully that its best defenders would recognize themselves in your words, refusing to caricature the other side in order to win." },
-    { "term": "Intercession of the Spirit", "definition": "The Spirit's praying within the believer, taking up the praying we cannot do, interceding with groanings too deep for words at the very point where our own words run out, according to the will of God." },
-    { "term": "The groaning", "definition": "The ache of the creation, the believer, and the Spirit named in Romans 8, called the pains of childbirth, agony that points toward birth and not death, the labor of a creation straining toward the redemption God has guaranteed." },
-    { "term": "The guarantee", "definition": "The Spirit named as the down payment, deposit, and firstfruits of the believer's inheritance, a commercial term for the binding first installment that pledges the giver to pay in full, so that the Spirit in us is God's own deposit guaranteeing he will finish what he started." },
-    { "term": "The procession of the Spirit", "definition": "The historic confession, settled at Constantinople, that the Spirit proceeds from the Father, eternally and not as a creature, the language by which the church guarded the full deity of the Spirit within the one God." }
+    {
+      "term": "The Holy Spirit",
+      "definition": "The third person of the one God, of one being with the Father and the Son, fully divine and fully personal, who can be grieved, lied to, and resisted, and who has come to live inside the people of God. Not a force or an influence but God himself, present and indwelling."
+    },
+    {
+      "term": "Regeneration",
+      "definition": "The new birth, the Spirit's act of making the spiritually dead alive, named by Jesus as being born again or born of the Spirit. Not the improvement of the old self but a resurrection, a thing done to us by God and not accomplished by us."
+    },
+    {
+      "term": "Indwelling",
+      "definition": "The Spirit's living presence inside the believer, the with you and in you that Jesus promised, so that the Christian is not visited by God from a distance but inhabited by him, the body of the believer a temple of the Holy Spirit."
+    },
+    {
+      "term": "The fruit of the Spirit",
+      "definition": "The cluster of love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control that the Spirit grows in the believer, named as fruit rather than works to mark it as the overflow of a connected life rather than the product of willpower."
+    },
+    {
+      "term": "Sanctification",
+      "definition": "The slow, lifelong process by which the Spirit makes the believer actually holy, growing the fruit at the speed of a tree rather than a purchase, held between the errors of gritted self-effort and passive waiting, lived as abiding in the Vine and keeping in step with the Spirit."
+    },
+    {
+      "term": "Spiritual gifts",
+      "definition": "The varieties of grace the Spirit distributes among believers as he wills, for the common good and the building up of the body, never for status or display, the subject of the long-disputed question of which gifts continue today."
+    },
+    {
+      "term": "Cessationism",
+      "definition": "The position that certain miraculous gifts, such as tongues, prophecy, and healing, served to authenticate the apostles and the giving of Scripture and ceased when the apostolic foundation was laid and the canon completed. Held by serious believers for serious reasons, and put at full strength in session 4."
+    },
+    {
+      "term": "Continuationism",
+      "definition": "The position that the New Testament names no expiration date for the gifts before Christ returns, that Paul commands believers to desire them, and that they continue in the church today. Held by serious believers for serious reasons, and put at full strength in session 4."
+    },
+    {
+      "term": "The equal-weight steelman",
+      "definition": "The discipline this study requires on contested questions, the practice of stating the position you disagree with so faithfully that its best defenders would recognize themselves in your words, refusing to caricature the other side in order to win."
+    },
+    {
+      "term": "Intercession of the Spirit",
+      "definition": "The Spirit's praying within the believer, taking up the praying we cannot do, interceding with groanings too deep for words at the very point where our own words run out, according to the will of God."
+    },
+    {
+      "term": "The groaning",
+      "definition": "The ache of the creation, the believer, and the Spirit named in Romans 8, called the pains of childbirth, agony that points toward birth and not death, the labor of a creation straining toward the redemption God has guaranteed."
+    },
+    {
+      "term": "The guarantee",
+      "definition": "The Spirit named as the down payment, deposit, and firstfruits of the believer's inheritance, a commercial term for the binding first installment that pledges the giver to pay in full, so that the Spirit in us is God's own deposit guaranteeing he will finish what he started."
+    },
+    {
+      "term": "The procession of the Spirit",
+      "definition": "The historic confession, settled at Constantinople, that the Spirit proceeds from the Father, eternally and not as a creature, the language by which the church guarded the full deity of the Spirit within the one God."
+    }
   ],
   "scriptureIndex": [
-    { "ref": "Genesis 1:2", "sessions": [1] },
-    { "ref": "Ezekiel 36:26-27", "sessions": [2] },
-    { "ref": "John 3:1-8", "sessions": [2] },
-    { "ref": "John 14:16-17", "sessions": [1] },
-    { "ref": "John 15:1-5", "sessions": [3] },
-    { "ref": "Acts 5:3-4", "sessions": [1] },
-    { "ref": "Romans 8:9-16", "sessions": [1, 5] },
-    { "ref": "Romans 8:22-28", "sessions": [5] },
-    { "ref": "Galatians 5:16-25", "sessions": [3] },
-    { "ref": "1 Corinthians 12:1-11", "sessions": [4] },
-    { "ref": "1 Corinthians 13:1-13", "sessions": [4] },
-    { "ref": "Ephesians 1:13-14", "sessions": [5] }
+    {
+      "ref": "Genesis 1:2",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "Ezekiel 36:26-27",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "John 3:1-8",
+      "sessions": [
+        2
+      ]
+    },
+    {
+      "ref": "John 14:16-17",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "John 15:1-5",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "Acts 5:3-4",
+      "sessions": [
+        1
+      ]
+    },
+    {
+      "ref": "Romans 8:9-16",
+      "sessions": [
+        1,
+        5
+      ]
+    },
+    {
+      "ref": "Romans 8:22-28",
+      "sessions": [
+        5
+      ]
+    },
+    {
+      "ref": "Galatians 5:16-25",
+      "sessions": [
+        3
+      ]
+    },
+    {
+      "ref": "1 Corinthians 12:1-11",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "1 Corinthians 13:1-13",
+      "sessions": [
+        4
+      ]
+    },
+    {
+      "ref": "Ephesians 1:13-14",
+      "sessions": [
+        5
+      ]
+    }
   ],
   "promoKit": {
     "bulletinBlurb": "Most of us could describe the Father and the Son and go quiet on the Holy Spirit, the forgotten member of the Trinity we treat as a power source and an afterthought. This five-session study recovers the Spirit as fully God and fully personal, walking slowly through who he is, the new birth he alone accomplishes, the slow growth of his fruit, the contested question of the gifts where both sides are given their strongest case, and the Spirit who prays in us when we have no words. It refuses to break the gifts debate for you and works to hold the room together across it. Built so any volunteer can lead it with no prep. Come to meet the God who has been in the room the whole time.",
@@ -343,5 +876,6 @@
       "Your wordless ache is not the failure of prayer. It is the floor where God begins to pray through you.",
       "The groaning is not the world running down. It is the labor pain of a creation being born again."
     ]
-  }
+  },
+  "kicker": "The Forgotten God"
 }
