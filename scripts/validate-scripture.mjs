@@ -25,7 +25,13 @@ const SCAN_DIR = join(ROOT, "client/src");
 const VERSE_REF = /\b(?:ref|reference):\s*"[1-3]?\s?[A-Z][a-zA-Z]+\.?\s+\d+:\d+/;
 /** Renders the verse text of a record into the page. */
 const RENDERS_TEXT = /\{\s*[A-Za-z_$][\w$]*(?:\.[A-Za-z_$][\w$]*)*\.text\s*\}/;
-const HAS_NOTE = /ScriptureNote/;
+/**
+ * Must be *rendered*, not merely imported. Matching the bare identifier would
+ * let a leftover import satisfy the gate on a file that no longer shows the
+ * note — which is exactly how this check first passed when it should have
+ * failed.
+ */
+const HAS_NOTE = /<ScriptureNote\b/;
 
 /**
  * Files that legitimately carry verse records and render a `.text` that is not
