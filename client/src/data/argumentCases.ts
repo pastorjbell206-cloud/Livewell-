@@ -37,10 +37,18 @@ export interface ArgumentCase {
   steps: CaseStep[];
   /** The verdict that leaves weight. No decision is pressed. */
   close: string;
+  /**
+   * The essays this case was built from. A reader who finishes one of them is
+   * offered the interactive version at the foot of the essay, so the tool and
+   * the writing point at each other. Kept here so the mapping lives with the
+   * case rather than drifting in a parallel table.
+   */
+  essaySlugs: string[];
 }
 
 const RESURRECTION: ArgumentCase = {
   slug: "resurrection",
+  essaySlugs: ["did-the-resurrection-happen"],
   title: "Did the resurrection happen?",
   kicker: "The case, one move at a time",
   intro:
@@ -149,6 +157,7 @@ const RESURRECTION: ArgumentCase = {
 
 const HELL: ArgumentCase = {
   slug: "hell",
+  essaySlugs: ["does-hell-exist","is-hell-eternal"],
   title: "Could a good God send anyone to hell?",
   kicker: "The case, one move at a time",
   intro:
@@ -248,6 +257,7 @@ const HELL: ArgumentCase = {
 
 const MEANING: ArgumentCase = {
   slug: "meaning",
+  essaySlugs: ["meaning-without-god"],
   title: "Can a life mean anything without God?",
   kicker: "The case, one move at a time",
   intro:
@@ -336,6 +346,7 @@ const MEANING: ArgumentCase = {
 
 const EVIL: ArgumentCase = {
   slug: "evil",
+  essaySlugs: ["if-god-is-good-why-suffering","natural-evil-and-animal-suffering"],
   title: "If God is good, why is there so much suffering?",
   kicker: "The case, one move at a time",
   intro:
@@ -407,6 +418,7 @@ const EVIL: ArgumentCase = {
 
 const GOSPELS: ArgumentCase = {
   slug: "gospels",
+  essaySlugs: ["why-trust-the-bible"],
   title: "Can you trust the Gospels?",
   kicker: "The case, one move at a time",
   intro:
@@ -478,6 +490,7 @@ const GOSPELS: ArgumentCase = {
 
 const JESUS: ArgumentCase = {
   slug: "jesus",
+  essaySlugs: ["was-jesus-just-a-good-teacher","who-did-jesus-claim-to-be"],
   title: "Was Jesus just a good teacher?",
   kicker: "The case, one move at a time",
   intro:
@@ -544,6 +557,7 @@ const JESUS: ArgumentCase = {
 
 const WISHFUL: ArgumentCase = {
   slug: "wishful",
+  essaySlugs: ["is-faith-just-wishful-thinking"],
   title: "Is faith just wishful thinking?",
   kicker: "The case, one move at a time",
   intro:
@@ -605,6 +619,7 @@ const WISHFUL: ArgumentCase = {
 
 const PLURALISM: ArgumentCase = {
   slug: "pluralism",
+  essaySlugs: ["is-jesus-really-the-only-way"],
   title: "Don't all religions lead to the same God?",
   kicker: "The case, one move at a time",
   intro:
@@ -666,6 +681,7 @@ const PLURALISM: ArgumentCase = {
 
 const FAITH: ArgumentCase = {
   slug: "faith",
+  essaySlugs: ["is-faith-irrational"],
   title: "Is believing anything on faith irrational?",
   kicker: "The case, one move at a time",
   intro:
@@ -729,4 +745,14 @@ export const ARGUMENT_CASES: ArgumentCase[] = [RESURRECTION, EVIL, GOSPELS, JESU
 
 export function caseBySlug(slug: string): ArgumentCase | undefined {
   return ARGUMENT_CASES.find((c) => c.slug === slug);
+}
+
+/**
+ * The published case built from a given essay, if there is one. Used at the
+ * foot of an essay to offer the reader the interactive version of the argument
+ * they just read.
+ */
+export function caseForEssay(essaySlug: string): ArgumentCase | undefined {
+  if (!essaySlug) return undefined;
+  return ARGUMENT_CASES.find((c) => c.published && c.essaySlugs.includes(essaySlug));
 }
