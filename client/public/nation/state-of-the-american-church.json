@@ -48,5 +48,11 @@
     { "title": "The Kingdom of God in America", "author": "H. Richard Niebuhr" },
     { "title": "The Civil War as a Theological Crisis", "author": "Mark A. Noll" },
     { "title": "Soul Searching: The Religious and Spiritual Lives of American Teenagers", "author": "Christian Smith and Melinda Lundquist Denton" }
+  ],
+  "readNext": [
+    { "label": "Faith and the Flag", "href": "/pathways/christian-nationalism", "blurb": "The guided path through the right's captivity. Four essays, a study, and the free book, in order." },
+    { "label": "Faith and the Cause", "href": "/pathways/progressive-captivity", "blurb": "The guided path through the left's captivity. Five essays, a study, and the same free book." },
+    { "label": "What Christian Nationalism Actually Is", "href": "/nation/christian-nationalism", "blurb": "The first captivity up close. The research, the spectrum, and where sincere belief turns into idolatry." },
+    { "label": "When the Faith Dissolves Into a Cause", "href": "/nation/progressive-captivity", "blurb": "The second captivity up close. The left's version of the same trade, named with the same grief." }
   ]
 }

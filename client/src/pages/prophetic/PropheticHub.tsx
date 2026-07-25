@@ -7,6 +7,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
+import { getReadEssays } from "@/lib/readProgress";
 import type { SectionConfig, TopicIndexEntry } from "@/lib/prophetic";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
@@ -21,6 +22,9 @@ export default function PropheticHub({ config }: { config: SectionConfig }) {
   // a greyed-out "coming" teaser that advertises the section's incompleteness.
   const byGroup = (g: string) => config.topics.filter((t) => t.group === g && t.ready);
   const readyCount = config.topics.filter((t) => t.ready).length;
+  // The reader's device-local read memory, so a question they have finished
+  // shows it (each topic marks its own slug read via useEssayCompletion).
+  const readSet = getReadEssays();
 
   const TopicCard = ({ t }: { t: TopicIndexEntry }) => {
     const inner = (
@@ -28,7 +32,7 @@ export default function PropheticHub({ config }: { config: SectionConfig }) {
         <div style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px", lineHeight: 1.25 }}>{t.title}</div>
         <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{t.blurb}</div>
         {t.ready
-          ? <div style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", marginTop: "12px" }}>Read it →</div>
+          ? <div style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", marginTop: "12px" }}>{readSet.has(t.slug) ? "✓ Read again →" : "Read it →"}</div>
           : <div style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.04em", textTransform: "uppercase", color: "var(--ink-muted)", marginTop: "12px" }}>In the writing</div>}
       </>
     );

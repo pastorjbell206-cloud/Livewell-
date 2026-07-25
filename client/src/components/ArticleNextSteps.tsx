@@ -17,6 +17,7 @@ import { Link } from "wouter";
 import { READING_PATHS } from "@/data/reading-paths-post-christian";
 import { pillarForPost, PILLARS_V2 } from "@/lib/taxonomy";
 import { trpc } from "@/lib/trpc";
+import { caseForEssay } from "@/data/argumentCases";
 
 // ─── Tool mapping ────────────────────────────────────────────────────
 
@@ -245,6 +246,9 @@ export default function ArticleNextSteps({
   const pillar = pillarForPost({ slug: articleSlug, pillar: articlePillar });
   const pillarSlug = pillar?.slug;
 
+  // The Test the Case flow built from this essay, when there is one.
+  const argumentCase = useMemo(() => caseForEssay(articleSlug), [articleSlug]);
+
   const tool = useMemo(
     () => getToolForArticle(articleSlug, pillarSlug),
     [articleSlug, pillarSlug]
@@ -279,6 +283,29 @@ export default function ArticleNextSteps({
       }}
     >
       <div style={sectionStyle}>
+        {/* ── Section 0: the interactive version of this argument ──
+            Only for the essays a Test the Case flow was built from, so the
+            writing and the tool point at each other. */}
+        {argumentCase && (
+          <div style={{ marginBottom: "var(--s-5)" }}>
+            <div style={eyebrowStyle}>Argue it yourself</div>
+            <div style={cardStyle}>
+              <h3 style={headingStyle}>{argumentCase.title}</h3>
+              <p style={bodyTextStyle}>
+                Work this same case one move at a time, raising the objection you actually
+                hold at every step and getting the honest answer, including what it does
+                not prove.
+              </p>
+              <Link href={`/tools/test-the-case?case=${argumentCase.slug}`} style={ctaButtonStyle}>
+                Test the case
+                <span aria-hidden style={{ fontSize: "14px" }}>
+                  &rarr;
+                </span>
+              </Link>
+            </div>
+          </div>
+        )}
+
         {/* ── Section 1: Related Tool ── */}
         <div style={{ marginBottom: "var(--s-5)" }}>
           <div style={eyebrowStyle}>Related Tool</div>

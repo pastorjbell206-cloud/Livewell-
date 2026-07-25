@@ -11,6 +11,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
+import { getReadEssays } from "@/lib/readProgress";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const card = { background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)", textDecoration: "none", color: "inherit", display: "block" } as const;
@@ -32,6 +33,10 @@ const ITEMS = [
 ];
 
 export default function NationHub() {
+  // The reader's device-local read memory, so a browsing reader sees which
+  // essays they have already finished. Tools (scorecard/policy) never match.
+  const readSet = getReadEssays();
+  const itemSlug = (href: string) => href.split("/").filter(Boolean).pop() ?? "";
   return (
     <Layout>
       <SEOMeta title="Christ and the Nation — The Bible, America, and Power" description="Was America founded as a Christian nation? How close is each party to the Bible? What would a biblical government mean? An even-handed look at the body politic." url="https://www.livewellbyjamesbell.co/nation" />
@@ -57,7 +62,10 @@ export default function NationHub() {
         <div style={{ ...wrap, display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "16px" }}>
           {ITEMS.map((it) => (
             <Link key={it.href} href={it.href} style={{ ...card, borderTop: "3px solid var(--mustard)" }}>
-              <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>{it.kind}</div>
+              <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "8px" }}>
+                <span>{it.kind}</span>
+                {readSet.has(itemSlug(it.href)) && <span title="You have read this" style={{ fontWeight: 700, whiteSpace: "nowrap" }}>✓ READ</span>}
+              </div>
               <div style={{ fontFamily: "var(--F)", fontSize: "22px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px", lineHeight: 1.2 }}>{it.title}</div>
               <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{it.desc}</p>
             </Link>

@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { Link } from "wouter";
 import { useState } from "react";
 import { BookOpen, ArrowLeft, ChevronRight } from "lucide-react";
 
@@ -730,8 +731,10 @@ export default function BibleStudy() {
                 </p>
               </div>
 
-              {/* Companion Essay Link */}
-              <a
+              {/* Companion Essay Link — wouter Link, not a raw anchor: this is an
+                  internal route, and an <a> reloads the whole SPA and drops the
+                  reader's place in the study. */}
+              <Link
                 href={book.companionEssay.href}
                 style={{
                   display: "flex",
@@ -776,7 +779,7 @@ export default function BibleStudy() {
                   </span>
                 </div>
                 <ChevronRight size={20} style={{ opacity: 0.5, flexShrink: 0 }} />
-              </a>
+              </Link>
             </div>
           )}
         </div>

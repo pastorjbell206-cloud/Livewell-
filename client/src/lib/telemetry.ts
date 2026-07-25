@@ -19,6 +19,10 @@
  *   - "essay_read_complete" — a reader reached the end of an essay body.
  *   - "path_step_complete"  — a reader finished a step of a reading pathway.
  *   - "return_reader"       — a returning reader was seen.
+ *   - "argument_case_start"        — a Test the Case flow was opened.
+ *   - "argument_objection_raised"  — which pushback a reader actually holds.
+ *   - "argument_case_complete"     — a reader reached a case verdict.
+ *   - "group_guide_view"           — a discussion guide was opened.
  */
 import { track as vercelTrack } from "@vercel/analytics";
 
@@ -47,6 +51,36 @@ export function trackEssayComplete(slug: string): void {
 /** A reader completed one step of a named reading pathway. */
 export function trackPathStep(pathway: string, step: string): void {
   track("path_step_complete", { pathway, step });
+}
+
+/** A reader opened a Test the Case flow. Event: "argument_case_start". */
+export function trackCaseStart(caseSlug: string): void {
+  track("argument_case_start", { case: caseSlug });
+}
+
+/**
+ * A reader raised a specific objection inside a case. This is the most
+ * editorially useful signal the site produces: it says which pushbacks readers
+ * actually hold, in their own order of interest, rather than which ones we
+ * assumed they would. The objection is identified by its index within the step,
+ * never by its text, so nothing free-form is ever transmitted.
+ * Event: "argument_objection_raised".
+ */
+export function trackObjection(caseSlug: string, stepId: string, index: number): void {
+  track("argument_objection_raised", { case: caseSlug, step: stepId, index });
+}
+
+/** A reader reached the closing verdict of a case. Event: "argument_case_complete". */
+export function trackCaseComplete(caseSlug: string): void {
+  track("argument_case_complete", { case: caseSlug });
+}
+
+/**
+ * A group discussion guide was opened. The PCN distribution signal: which
+ * essays pastors actually take to a group. Event: "group_guide_view".
+ */
+export function trackGroupGuideView(slug: string): void {
+  track("group_guide_view", { slug });
 }
 
 /** A returning reader was seen (a count only — no identity, no PII). */

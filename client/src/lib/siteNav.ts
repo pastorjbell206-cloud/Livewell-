@@ -59,6 +59,9 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Start Here", href: "/start", primary: true },
       { label: "The Commonplace", href: "/library" },
       { label: "The Framework", href: "/framework" },
+      { label: "Article Collections", href: "/article-collections" },
+      { label: "Book Bundles", href: "/book-bundles" },
+      { label: "The Book Roadmap", href: "/roadmap" },
     ],
   },
   {

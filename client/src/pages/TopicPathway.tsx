@@ -16,6 +16,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import LoadFailed from "@/components/LoadFailed";
 import { fetchJson } from "@/lib/fetch-json";
 import { SITE_URL } from "@/lib/site";
+import { getReadEssays } from "@/lib/readProgress";
 
 const wrap = { maxWidth: "var(--w-content)", margin: "0 auto" } as const;
 
@@ -66,6 +67,18 @@ export default function TopicPathway() {
 
   const data = loaded && loaded.slug === slug && loaded.nonce === nonce ? loaded.data : null;
   const err = errored && errored.slug === slug && errored.nonce === nonce ? errored.kind : null;
+
+  // The reader's device-local read memory, now fed by every essay (the /writing
+  // surface AND the nation essays), so the route can show what is already done.
+  const readSet = getReadEssays();
+  // Essay links whose renderers emit path_step_complete get tagged with the
+  // pathway slug, so finishing the step completes it — /writing AND /nation
+  // (NationEssay reads ?path= via useEssayCompletion). Other items are untouched.
+  const stepHref = (href: string) =>
+    slug && (href.startsWith("/writing/") || href.startsWith("/nation/"))
+      ? `${href}${href.includes("?") ? "&" : "?"}path=${encodeURIComponent(slug)}`
+      : href;
+  const itemSlug = (href: string) => href.split("?")[0].split("/").filter(Boolean).pop() ?? "";
 
   return (
     <Layout>
@@ -132,20 +145,17 @@ export default function TopicPathway() {
                   {m.items.map((it, j) => (
                     <Link
                       key={j}
-                      // Tag essay links with the pathway slug so ArticleDetail can
-                      // emit path_step_complete when the reader finishes the step
-                      // (depth metric #4). Non-essay items (tools, etc.) are left
-                      // untouched. See client/src/lib/telemetry.ts.
-                      href={
-                        slug && it.href.startsWith("/writing/")
-                          ? `${it.href}${it.href.includes("?") ? "&" : "?"}path=${encodeURIComponent(slug)}`
-                          : it.href
-                      }
+                      href={stepHref(it.href)}
                       style={{ display: "block", textDecoration: "none", color: "inherit", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "16px 18px" }}
                     >
                       <div style={{ display: "flex", justifyContent: "space-between", gap: "14px", alignItems: "baseline" }}>
                         <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", lineHeight: 1.25 }}>{it.label}</span>
-                        <span aria-hidden style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--mustard-text)", flexShrink: 0 }}>→</span>
+                        <span style={{ display: "flex", alignItems: "baseline", gap: "8px", flexShrink: 0 }}>
+                          {readSet.has(itemSlug(it.href)) && (
+                            <span title="You have read this" style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 700, color: "var(--mustard-text)", letterSpacing: "0.1em", whiteSpace: "nowrap" }}>✓ READ</span>
+                          )}
+                          <span aria-hidden style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--mustard-text)" }}>→</span>
+                        </span>
                       </div>
                       <p style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "6px 0 0" }}>{it.blurb}</p>
                     </Link>

@@ -57,6 +57,29 @@ const SECTIONS = [
         .map((p) => entryLine(p.title, `${SITE}/writing/${p.slug}`, p.excerpt || p.summary || p.subtitle));
     },
   },
+  {
+    heading: "Christ and the Nation",
+    intro: "The platform's political theology: the church and power, Christian nationalism and its progressive mirror, and the flagship on the state of the American church. The most careful, least tribal treatment on the site, criticizing right and left with the same instrument.",
+    build() {
+      const dir = path.join(ROOT, "client/public/nation");
+      const SPECIAL = new Set(["scorecard.json", "policy.json", "index.json"]);
+      let files;
+      try {
+        files = fs.readdirSync(dir).filter((f) => f.endsWith(".json") && !SPECIAL.has(f));
+      } catch {
+        return [];
+      }
+      const FLAGSHIP = "state-of-the-american-church.json";
+      files.sort((a, b) => (a === FLAGSHIP ? -1 : b === FLAGSHIP ? 1 : a.localeCompare(b)));
+      return files
+        .map((f) => {
+          const e = readJson(`client/public/nation/${f}`);
+          if (!e || !e.title) return null;
+          return entryLine(e.title, `${SITE}/nation/${f.replace(/\.json$/, "")}`, e.subtitle);
+        })
+        .filter(Boolean);
+    },
+  },
   { heading: "Read-Online Books", intro: "Full-length books, readable free online.", file: "client/public/books/index.json", key: "books", route: "/read/", desc: ["blurb", "subtitle"] },
   { heading: "The Integrated Life", intro: "One undivided life before God: the inner life, the body, the home, work and money.", file: "client/public/life/domains-index.json", key: "domains", route: "/life/", desc: ["blurb", "pillar"] },
   { heading: "How-To Guides", intro: "Practical, honest guides for the ordinary work of following Jesus.", file: "client/public/howtos/index.json", key: "articles", route: "/how-tos/", desc: ["excerpt"] },

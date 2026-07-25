@@ -335,7 +335,7 @@ export default function ReadingPaths() {
               fontFamily: "var(--F)",
               fontSize: "1.75rem",
               fontWeight: 400,
-              color: "var(--charcoal)",
+              color: "var(--ink)",
               marginBottom: "2.5rem",
               textAlign: "center",
             }}
@@ -422,7 +422,7 @@ export default function ReadingPaths() {
                       fontFamily: "var(--F)",
                       fontSize: "1.25rem",
                       fontWeight: 400,
-                      color: "var(--charcoal)",
+                      color: "var(--ink)",
                       lineHeight: 1.25,
                       margin: 0,
                     }}
@@ -545,7 +545,7 @@ export default function ReadingPaths() {
                   fontWeight: 400,
                   lineHeight: 1.15,
                   letterSpacing: "-0.02em",
-                  color: "var(--charcoal)",
+                  color: "var(--ink)",
                   marginBottom: "1.25rem",
                 }}
               >
@@ -644,7 +644,7 @@ export default function ReadingPaths() {
                             fontFamily: "var(--F)",
                             fontSize: "1.1rem",
                             fontWeight: 400,
-                            color: "var(--charcoal)",
+                            color: "var(--ink)",
                             lineHeight: 1.3,
                             margin: "0 0 0.35rem 0",
                           }}
@@ -764,7 +764,7 @@ export default function ReadingPaths() {
               display: "inline-block",
               padding: "0.85rem 2rem",
               background: "var(--bone)",
-              color: "var(--charcoal)",
+              color: "var(--ink)",
               fontFamily: "var(--U)",
               fontSize: "0.85rem",
               fontWeight: 500,

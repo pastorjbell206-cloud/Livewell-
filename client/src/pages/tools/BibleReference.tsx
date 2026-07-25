@@ -1,5 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import ScriptureNote from "@/components/ScriptureNote";
+import { Link } from "wouter";
 import { useState } from "react";
 import { ArrowLeft, BookOpen, AlertTriangle, Scale, Lightbulb, ChevronDown, ChevronUp } from "lucide-react";
 
@@ -1093,6 +1095,25 @@ function TopicIcon({ icon, size = 32 }: { icon: string; size?: number }) {
 
 /* ──────────────────────────────────────── passage accordion ── */
 
+/**
+ * "Proverbs 10:4; 13:11; 22:7" -> ["Proverbs 10:4", "Proverbs 13:11", "Proverbs 22:7"]
+ *
+ * Compound references carry the book name only on the first part, so the later
+ * parts need it restored before they can be linked. Without this, two thirds of
+ * a citation like the one above would be unreachable.
+ */
+function splitReference(reference: string): string[] {
+  const parts = reference
+    .split(";")
+    .map((p) => p.trim())
+    .filter(Boolean);
+  if (parts.length < 2) return parts;
+  const book = parts[0].match(/^([1-3]?\s?[A-Za-z]+)/)?.[1]?.trim() ?? "";
+  return parts.map((p, i) =>
+    i === 0 || !book || /^[1-3]?\s?[A-Za-z]/.test(p) ? p : `${book} ${p}`
+  );
+}
+
 function PassageCard({ passage }: { passage: Passage }) {
   const [open, setOpen] = useState(false);
   const panelId = `passage-panel-${passage.reference.replace(/\W+/g, "-")}`;
@@ -1166,6 +1187,29 @@ function PassageCard({ passage }: { passage: Passage }) {
             >
               {passage.text}
             </p>
+            <ScriptureNote rendering="abridged" />
+            {/* The note above tells the reader to follow a reference. Until this
+                existed, there was nothing on the page to follow — the deepest
+                reference tool on the site linked out nowhere at all. */}
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginTop: "4px" }}>
+              {splitReference(passage.reference).map((ref) => (
+                <Link
+                  key={ref}
+                  href={`/theology/passage?ref=${encodeURIComponent(ref)}`}
+                  style={{
+                    fontFamily: "var(--U)",
+                    fontSize: "12.5px",
+                    fontWeight: 600,
+                    color: "var(--mustard-text)",
+                    textDecoration: "none",
+                    borderBottom: "1px solid var(--mustard)",
+                    paddingBottom: "1px",
+                  }}
+                >
+                  {ref} →
+                </Link>
+              ))}
+            </div>
           </div>
 
           {/* Context */}

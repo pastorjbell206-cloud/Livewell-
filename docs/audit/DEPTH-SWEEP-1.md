@@ -128,3 +128,124 @@
 5. **Prerender coverage** — /plans, /resources/context, /resources/creeds, /theology/history, per-book sermons, wisdom per-topic routes (100+ pages invisible to search).
 6. **Structured data** — ItemList/Book on HardIssuesSeries, Table, Theology; per-topic routes for wisdom.
 7. **Depth top-ups** — creeds catechisms beyond Q1; DiscipleshipTable real multi-week arcs; PrayerGenerator voice pass.
+
+---
+
+## Sweep 2 verification pass (2026-07-25)
+
+> Every item in the queue above was re-checked against the working tree at
+> `main` — not from memory, and not from the PR titles that claimed to close
+> them. Method is recorded per row so the next reader can re-run it. Four of
+> seven are genuinely closed. The one the board called **the single
+> highest-priority depth fix** is still fully open.
+
+| # | Item | Status | Evidence |
+|---|---|---|---|
+| 1 | PostChristian tier lists | **Closed** | All 60 page slugs now match `api/post-christian-articles.json` 1:1 (0 missing); `numberOfItems: 60` is accurate |
+| 2 | Pillar-hub teaching | **Partial** | `/doubt` deepened to 6 prose blocks (symptom→cause→wisdom). Marriage + Parenting carry 1 orientation paragraph each; their card grids now resolve (all 3 Marriage `/read/essays-marriage-*` targets exist) and both pages are fully tokenized — zero hardcoded hex |
+| 3 | LifeIndex | **Closed** | `fetchJson` + `LoadFailed` present (4 refs); zero hardcoded hex |
+| 4 | Scripture integrity, remaining tools | **Open** | VerseFinder, BibleOnTopic, ParentingVerses, Proverbs31, ScriptureMemory, BibleReference: **zero** name a translation. Worse than the sweep-1 finding — the corpus is *mixed*, unlabeled (see below) |
+| 5 | Prerender coverage | **Closed** | `prerender-heads.mjs` reports **0 uncovered routes**: 169 route heads from SEOMeta literals, 681/681 essays, 617 library pages, 1,746 per-route HTML files |
+| 6 | Structured data | **Partial** | HardIssuesSeries has `ItemList`. Table and Theology still emit **no** `structuredData` at all. FAQ answer pages gained `BreadcrumbList` (PR #483) |
+| 7 | Depth top-ups | **Partly struck** | The catechism half of this row was a misread — both documents are complete for the scope their titles claim (see sweep 3, item 2). DiscipleshipTable arcs and the PrayerGenerator voice pass remain open |
+
+### The finding that got worse on inspection
+
+Sweep 1 called the unnamed translations "mostly reading as NIV." That was too
+generous. The verse corpus across the tools is **mixed translations, none
+labeled**:
+
+- `VerseFinder` — Philippians 4:6-7 renders "in every situation… which
+  transcends all understanding": **NIV**.
+- `ParentingVerses` — Psalm 139:13-14 renders "you knitted me together in my
+  mother's womb": **ESV**.
+- `Proverbs31` — Proverbs 1:7 renders "the beginning of knowledge": **ESV**.
+
+Two rules are broken at once. `CLAUDE.md` sets ESV as the default and requires
+the translation be named when the choice is doing work; it also requires that
+quotation be verbatim or marked as paraphrase. A reader memorizing from
+`ScriptureMemory` cannot tell which text they are committing, and a pastor
+handing a sheet to a congregation cannot cite it. This is the
+fabricated-authority class of problem — the one trap `CLAUDE.md` says ends
+trust rather than merely breaking a build — and it is the oldest open item on
+the board.
+
+### Sweep 3 queue (re-ranked, with the reasoning)
+
+1. ~~**The Scripture integrity pass.**~~ **Disclosure shipped; sourcing still
+   owed.** `client/src/components/ScriptureNote.tsx` is now the one place a page
+   says what its verse text is, with a **required** `rendering` prop — the
+   compiler, not a reviewer, refuses unlabeled Scripture — and
+   `scripts/validate-scripture.mjs` runs in the CI content gates as the second
+   lock. Eleven tools now declare their rendering and link every reference to
+   the whole passage.
+
+   Two defects surfaced in the doing. `FinancialHealth` (twice) and
+   `PastorBurnout` wrapped unverified text in literal quotation marks,
+   presenting it as quotation — those marks are gone. `Proverbs31`,
+   `PastorBurnout` and `FinancialHealth` printed references as dead text with
+   no way to check them; all now link to `/theology/passage`. The validator
+   also caught `ConflictGuide` and `FinancialHealth`, which a manual read of
+   the corpus had missed — the argument for a gate over a checklist.
+
+   **What is still owed:** this labels the problem honestly, it does not solve
+   it. Most corpora are marked `unverified` because the texts have not been
+   checked word for word against one translation, and `BibleOnTopic` is marked
+   `paraphrase` on the evidence of its own file header. The finishing work is to
+   source each corpus against verbatim ESV and change the rendering to `esv` —
+   a content task needing a real ESV text, not a code task.
+2. ~~**Catechism stubs.**~~ **Struck — the finding was wrong.** Sweep 1 read the
+   `-q1` slugs as Q1-only stubs. They are not. `westminster-shorter-catechism-q1`
+   carries Questions 1–10 in full and `heidelberg-catechism-q1` carries all of
+   Lord's Day 1, each with an intro and eight annotations, and both the document
+   titles and the library index blurbs scope themselves precisely ("Q. 1–10",
+   "the full text of Lord's Day 1"). Nothing over-promises; nothing to fix. A
+   slug is not evidence — read the document.
+3. ~~**Table + Theology structured data.**~~ **Done.** Theology emits a
+   `CollectionPage` whose `ItemList` is built from the same `ready` filter the
+   page renders from, so the schema cannot advertise a doctrine the reader
+   cannot open (31 at the time of writing). Table takes a `CollectionPage`
+   without an `ItemList` on purpose: its studies arrive from a fetch, so a list
+   built from them would describe an empty page at prerender time. Both gained
+   breadcrumbs.
+4. **Marriage and Parenting, to the `/doubt` standard.** Both have a real
+   opening paragraph and working destinations — the shells are gone. What is
+   missing is the middle: the cause beneath the symptom before the links begin.
+   One prose movement each, not a rewrite.
+5. ~~**The linking pass**~~ **Done for the two named tools.** BibleReference had
+   **zero** links out across 1,697 lines; every one of its 82 passages now links
+   to `/theology/passage`, with compound citations split so all three parts of
+   "Proverbs 10:4; 13:11; 22:7" are reachable rather than only the first.
+   DeepBibleCompanion's flagship passage view gained the same. Both had a
+   `ScriptureNote` telling the reader to "follow any reference" on a page with
+   no reference to follow — the note shipped in PR #488 wrote a cheque those two
+   pages could not cash, and this is what makes it good.
+
+   Also fixed here: a `<ScriptureNote>` (a `<p>`) nested **inside** a `<p>` in
+   BibleReference — invalid HTML, introduced by #488. A scan confirmed it was
+   the only such instance. DeepBibleCompanion's "more books coming soon" copy
+   was genuinely stale (all 20 listed books have worked passages) and is now
+   counted from the data rather than asserted, so it cannot drift again.
+
+   **BibleStudy, partly struck.** Sweep 1 recorded "all 12 companion essay links
+   are the same generic URL". The URL repetition is real, but the reader is not
+   misled: the card reads "COMPANION READING — Essays on reading Scripture well"
+   and delivers exactly that, a theology-track listing. No false promise, so no
+   invented mapping. The real defect there was different — a raw `<a>` on an
+   internal route, forcing a full SPA reload — now a wouter `<Link>`.
+
+6. **Raw internal anchors, site-wide (new).** 29 `<a href="/…">` across 20 files
+   bypass client-side routing, reloading the whole app and dropping reader state.
+   Fixed in the two files this pass touched. **Do not sweep this blindly** — some
+   are deliberate: `ErrorBoundary` wants a hard reload to recover, and the admin
+   shell may too. Needs a per-file judgement, not a regex.
+7. **DiscipleshipTable multi-week arcs; PrayerGenerator voice pass.** The two
+   remaining "static generator" tools.
+
+### Standing note for whoever runs sweep 3
+
+The four closed items were closed by work that did not always announce itself
+as closing them — LifeIndex and prerender coverage came in under other PRs.
+Verify before scheduling. Conversely, do not read a merged PR title as a closed
+audit row: item 4 has been listed as the top priority since sweep 1 and has
+never been touched.

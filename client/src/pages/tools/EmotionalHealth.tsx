@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import ScriptureNote from "@/components/ScriptureNote";
 import { ToolActions } from "@/components/ToolActions";
 import { useState } from "react";
 import { Link } from "wouter";
@@ -992,6 +993,7 @@ export default function EmotionalHealth() {
                       >
                         {cat.scripture.ref} — read the full passage
                       </Link>
+                      <ScriptureNote rendering="unverified" />
                     </div>
 
                     {/* Practical steps */}

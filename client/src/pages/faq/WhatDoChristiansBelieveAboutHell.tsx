@@ -66,6 +66,16 @@ const webPageSchema = {
   publisher: { "@type": "Organization", name: "LiveWell by James Bell" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.livewellbyjamesbell.co/" },
+    { "@type": "ListItem", position: 2, name: "Questions People Ask", item: "https://www.livewellbyjamesbell.co/faq" },
+    { "@type": "ListItem", position: 3, name: "What do Christians believe about hell?", item: "https://www.livewellbyjamesbell.co/faq/what-do-christians-believe-about-hell" },
+  ],
+};
+
 export default function WhatDoChristiansBelieveAboutHell() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -75,7 +85,7 @@ export default function WhatDoChristiansBelieveAboutHell() {
         title="What Do Christians Believe About Hell? 8 Questions Answered"
         description="What does the Bible say about hell? Eternal torment vs. annihilation vs. universalism, who goes there, and whether a loving God sends people to hell."
         keywords="what do Christians believe about hell, is hell real, eternal torment, annihilationism, universalism, does a loving God send people to hell, Bible hell"
-        structuredData={[faqSchema, webPageSchema]}
+        structuredData={[faqSchema, webPageSchema, breadcrumbSchema]}
       />
 
       <section style={{ background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px 64px", textAlign: "center" }}>

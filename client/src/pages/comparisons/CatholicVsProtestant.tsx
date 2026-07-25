@@ -103,7 +103,7 @@ const webPageSchema = {
 
 const S = {
   hero: { background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px", textAlign: "center" as const },
-  eyebrow: { fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase" as const, color: "var(--mustard)", marginBottom: "24px" },
+  eyebrow: { fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase" as const, color: "var(--mustard-text)", marginBottom: "24px" },
   h1: { fontFamily: "var(--F)", fontSize: "clamp(32px,5vw,60px)", fontWeight: 400, color: "var(--charcoal-fg)", maxWidth: "780px", margin: "0 auto", lineHeight: 1.15, letterSpacing: "-0.02em" },
   heroSub: { fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.6)", marginTop: "32px", maxWidth: "600px", marginLeft: "auto", marginRight: "auto", lineHeight: 1.7 },
   sectionBone: { background: "var(--bone)", padding: "80px 24px" },
@@ -133,7 +133,7 @@ export default function CatholicVsProtestant() {
 
       {/* Hero */}
       <section style={S.hero}>
-        <p style={S.eyebrow}>COMPARISON</p>
+        <p style={{ ...S.eyebrow, color: "var(--mustard)" }}>COMPARISON</p>
         <h1 style={S.h1}>Catholic vs. Protestant</h1>
         <p style={S.heroSub}>
           The division that split Western Christianity in 1517 and never healed. Not because the differences are trivial — because they are not. And not because reconciliation is impossible — because the shared ground runs deeper than most people on either side admit.

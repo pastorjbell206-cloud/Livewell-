@@ -77,6 +77,16 @@ const webPageSchema = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.livewellbyjamesbell.co/" },
+    { "@type": "ListItem", position: 2, name: "Questions People Ask", item: "https://www.livewellbyjamesbell.co/faq" },
+    { "@type": "ListItem", position: 3, name: "Why are people leaving church?", item: "https://www.livewellbyjamesbell.co/faq/why-are-people-leaving-church" },
+  ],
+};
+
 export default function WhyArePeopleLeavingChurch() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -86,7 +96,7 @@ export default function WhyArePeopleLeavingChurch() {
         title="Why Are People Leaving Church? 8 Questions Answered Honestly"
         description="Why are people leaving the church? Statistics, reasons by age group, denominational losses, and what congregations can do. Honest answers from a working pastor."
         keywords="why are people leaving church, church decline statistics, church membership dropping, leaving church but not God, church exodus, dechurched, nones"
-        structuredData={[faqSchema, webPageSchema]}
+        structuredData={[faqSchema, webPageSchema, breadcrumbSchema]}
       />
 
       {/* Hero */}

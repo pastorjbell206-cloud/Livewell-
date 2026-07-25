@@ -37,10 +37,18 @@ export interface ArgumentCase {
   steps: CaseStep[];
   /** The verdict that leaves weight. No decision is pressed. */
   close: string;
+  /**
+   * The essays this case was built from. A reader who finishes one of them is
+   * offered the interactive version at the foot of the essay, so the tool and
+   * the writing point at each other. Kept here so the mapping lives with the
+   * case rather than drifting in a parallel table.
+   */
+  essaySlugs: string[];
 }
 
 const RESURRECTION: ArgumentCase = {
   slug: "resurrection",
+  essaySlugs: ["did-the-resurrection-happen"],
   title: "Did the resurrection happen?",
   kicker: "The case, one move at a time",
   intro:
@@ -149,6 +157,7 @@ const RESURRECTION: ArgumentCase = {
 
 const HELL: ArgumentCase = {
   slug: "hell",
+  essaySlugs: ["does-hell-exist","is-hell-eternal"],
   title: "Could a good God send anyone to hell?",
   kicker: "The case, one move at a time",
   intro:
@@ -248,6 +257,7 @@ const HELL: ArgumentCase = {
 
 const MEANING: ArgumentCase = {
   slug: "meaning",
+  essaySlugs: ["meaning-without-god"],
   title: "Can a life mean anything without God?",
   kicker: "The case, one move at a time",
   intro:
@@ -334,8 +344,415 @@ const MEANING: ArgumentCase = {
     "So here is the whole of it. You can make your own meaning, and it can be beautiful, and it will hold right up until the day you can no longer believe in it, because you were the one holding it. The Christian claim is not that your life is empty. It is that your life is full of a weight you did not manufacture and cannot finally account for, and that the weight has a source. You can close this unconvinced and go on living well. I only wanted you to notice that the meaning you trusted was leaning on something, and to wonder, on the hard night, what.",
 };
 
-export const ARGUMENT_CASES: ArgumentCase[] = [RESURRECTION, HELL, MEANING];
+const EVIL: ArgumentCase = {
+  slug: "evil",
+  essaySlugs: ["if-god-is-good-why-suffering","natural-evil-and-animal-suffering"],
+  title: "If God is good, why is there so much suffering?",
+  kicker: "The case, one move at a time",
+  intro:
+    "This is the best argument against God, and I am not going to pretend otherwise. It is the one that cost me the most, and it is not solved in a paragraph. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what it does not settle. You can walk away unconvinced at any point.",
+  published: true,
+  steps: [
+    {
+      id: "concede",
+      move: "Start by granting the whole weight of it, because a defense that hurries past the horror has not earned the right to speak. A child dies slowly in a cancer ward. A wave takes a quarter of a million people in a morning. If there is a God who is both good and able, that is a real problem, not a debating point, and the person who feels it in their body is seeing clearly. I felt it for years. I still feel its edge.",
+      objections: [
+        {
+          label: "A good, all-powerful God would simply prevent it.",
+          response:
+            "That is the logical form of the problem, and for a long time it was thought to be a knockout. It is not anymore, and the person who moved it was a philosopher, Alvin Plantinga, with the free-will defense. If God wanted creatures who could actually love, he had to make creatures who could actually refuse, and a world of genuine freedom is a world where that freedom can be turned to harm. That does not make the suffering good. It shows that an all-good God and real evil are not a flat contradiction, which is what the objection first claimed.",
+        },
+      ],
+      grants: "This step shows the logical version does not disprove God outright. It does nothing yet for the suffering that no one's freedom caused.",
+    },
+    {
+      id: "natural",
+      move: "So push exactly there, because it is the hardest ground. Free will explains the torturer. It explains nothing about the earthquake, the childhood leukemia, the millions of years of animals tearing each other apart long before any human could sin. This is the evidential problem, and its sharpest form is the philosopher William Rowe's, a fawn burned in a forest fire no one set, dying in agony over days with no human to witness or learn from it. That suffering looks simply pointless.",
+      objections: [
+        {
+          label: "There is no free-will excuse for a fawn's agony.",
+          response:
+            "There is not, and I will not reach for one. The most honest thing I can say is smaller and harder. A world stable enough for embodied creatures to live and act and love at all may be a world that runs on fixed laws, and the same physics that lets bone grow lets it break, and the same tectonics that recycle the carbon also quake. Scripture does not call the present arrangement the intended one. It says the whole creation was subjected to futility and groans (Romans 8:20-22), which is a strange thing for a book to admit if its job were to make you comfortable.",
+        },
+        {
+          label: "That still sounds like an excuse dressed up as physics.",
+          response:
+            "It might be, and I am not going to tell you it closes the fawn, because it does not. What I will say is that the Christian claim was never that the suffering makes sense right now. It is that the present state of things is not the last word and not the intended word. You can find that insufficient. It is different from the claim you started with, that the suffering proves there is no God, because the account has room for the suffering to be real, wrong, and temporary all at once.",
+        },
+      ],
+      grants: "This step offers no tidy theodicy and admits the hardest case remains hard. It only narrows what the suffering can be made to prove.",
+    },
+    {
+      id: "floor",
+      move: "Now turn the argument over, gently, because there is a cost hidden inside the objection itself. When you call the child's suffering not just sad but evil, wrong, an outrage that ought not to be, you are standing on something. You are appealing to a way things are supposed to be, a real moral floor under the world. Where does a silent, indifferent universe get one of those.",
+      objections: [
+        {
+          label: "I do not need God to know that a child's suffering is wrong.",
+          response:
+            "You do not need God to know it, and I am not saying atheists cannot feel it fiercely. The question is not knowing, it is grounding. If the universe is only matter and energy with no author and no purpose, then the child's agony is a rearrangement of particles, unfortunate to you, neutral to the cosmos. Your outrage is reporting something you cannot quite account for, a wrongness that would still be wrong if everyone shrugged. That intuition fits a made and moral world far better than a blind one. The problem of evil quietly assumes the very thing it is trying to disprove.",
+        },
+      ],
+      grants: "This step shows the outrage the objection runs on is easier to ground with God than without. It does not explain any particular suffering.",
+    },
+    {
+      id: "verdict",
+      move: "So here is the honest limit. None of this makes the ward or the wave make sense, and I will not insult you by pretending it does. What the Christian claim finally offers is not an explanation delivered from a safe distance. When Job demanded his answer, God did not hand him a theodicy. He handed him himself. And the center of the faith is not a God who stayed outside the suffering explaining it, but one who came into it, and was tortured to death under an empire, and called out from inside the dark.",
+      objections: [
+        {
+          label: "A God who suffers too still has not fixed anything.",
+          response:
+            "Not yet, and the people who met him in their worst hour do not come back saying they now understand. They come back saying they were not alone in it, and that the one who made the promise had a wound of his own to show. That is not a proof, and I am not offering it as one. It is the difference between a God who owes you an explanation and a God who entered the thing you needed explained. You can decide that is not enough. It was more than I expected to find.",
+        },
+        {
+          label: "I still cannot reconcile the suffering with a loving God.",
+          response:
+            "Then you are in good company, because neither could Job, and neither, on the cross, did the Son sound like a man for whom it all added up. What I would only ask is that you notice which you are refusing. If it is a God who watches the ward from a distance and does nothing, refuse him, because that God is not the one at the center of this faith. The one at the center is in the ward. You can still say no to him. But say no to the real one.",
+        },
+      ],
+      grants: "This is where the case ends and the choosing begins. It does not resolve the suffering. It changes what kind of God is on the table.",
+    },
+  ],
+  close:
+    "So here is the whole of it, and no less than it. The suffering is real, it is the best reason not to believe, and I have not made it small. What I have said is only that it does not prove as much as it feels like it proves, that the outrage it runs on is hard to ground in a universe with no author, and that the God it is aimed at is not a distant manager but the one who was killed and who called out from the middle of the dark. You can weigh all of that and still walk away. I only wanted the God you refuse to be the real one, not the one who was never there.",
+};
+
+const GOSPELS: ArgumentCase = {
+  slug: "gospels",
+  essaySlugs: ["why-trust-the-bible"],
+  title: "Can you trust the Gospels?",
+  kicker: "The case, one move at a time",
+  intro:
+    "There is a confident version of this that everyone knows and almost no one has checked. Written centuries late, changed like a game of telephone, voted into being by an emperor. I believed all three when I was an unbeliever, and I had checked none of them. We will go one move at a time. Raise the objection you actually hold, and I will give you the real answer.",
+  published: true,
+  steps: [
+    {
+      id: "concede",
+      move: "Start by granting the honest part, because the skeptical case is not weak. We do have a great many differences among the surviving manuscripts, more variants than there are words in the New Testament. The Gospels were not written by neutral court reporters. They were written by believers who wanted you to believe, and they differ from one another in details a modern witness would be cross-examined over, the hour, the words on the sign, who reached the tomb first. If you have felt the force of all that, good.",
+      objections: [
+        {
+          label: "Hundreds of thousands of variants means the text is unreliable.",
+          response:
+            "That number is real, and it should stop you, but ask what the variants are. The scholar who popularized the figure, Bart Ehrman, also grants what his followers do not, that the overwhelming majority are trivial, spelling and word order and obvious slips, and that no core teaching hangs on a contested line. The reason we can even count the differences is that we have so many manuscripts to compare, from so many places. Abundance is what lets scholars triangulate back toward the original. It is the friend of accuracy here, not the enemy.",
+        },
+      ],
+      grants: "This step concedes the real differences and shows they are mostly trivial. It does not yet show the accounts are early or true.",
+    },
+    {
+      id: "telephone",
+      move: "So take the telephone image head on, because it is the most persuasive and the most wrong. Telephone works as a party game precisely because there is one chain and no original to check against. Each person hears only the previous whisper. That is the opposite of how a manuscript tradition behaves.",
+      objections: [
+        {
+          label: "It was copied by hand for centuries, so of course it drifted.",
+          response:
+            "It was copied by hand, but not in a single line. The texts spread out fast, to Egypt and Syria and Rome and North Africa, in branches that quickly lost contact with each other. A scribe in Alexandria and a scribe in Carthage do not make the same slip, so when their descendants disagree you can usually see exactly where each one wandered and reconstruct the reading they were both copying. The many branches are not the corruption. They are the correction. The telephone game has one chain. The manuscripts have hundreds, cross-checking each other.",
+        },
+      ],
+      grants: "This step dismantles the telephone picture. It does not by itself date the Gospels early.",
+    },
+    {
+      id: "early",
+      move: "So the dating, which is the thing that turned me. Even the critical consensus puts the four Gospels inside the first century, within living memory. But you do not need the Gospels for the earliest evidence. Paul's first letter to Corinth is dated by nearly everyone to about twenty-five years after the crucifixion, and in its fifteenth chapter he quotes something older than his own letter.",
+      objections: [
+        {
+          label: "Twenty-five years is still plenty of time for a legend.",
+          response:
+            "It is not, and this is the point. Paul says he delivered what he also received, the technical language for handing on a fixed tradition, a creed he was taught after his conversion, which pushes the core claim back to within a very few years of the events, into the hands of the named men who said they were there. Legends need generations, room to grow up after the eyewitnesses are safely dead. This is a summary already hardening into a creed while the witnesses were still walking around to be contradicted. That is not legend's timescale.",
+        },
+        {
+          label: "The emperor and the council at Nicaea decided all this later.",
+          response:
+            "This may be the most confident falsehood of them all. The Council of Nicaea, in 325, did not select which books to keep, and it did not invent the divinity of Jesus. Its records are about the relation of the Son to the Father, the fight with Arius. The four Gospels were already being read as Scripture more than a century before Constantine was born, sorted out by use across the churches, not by a vote. And the divinity of Jesus is sitting in that Corinthian creed, decades before any emperor took an interest.",
+        },
+      ],
+      grants: "This step shows the claim is early and tied to named witnesses, and that the Nicaea story is a myth. It does not prove the witnesses were right.",
+    },
+    {
+      id: "verdict",
+      move: "So the honest limit. None of this is proof, and I am not offering it as proof. The tell, for me, was the embarrassment. Legends flatter their heroes and their authors. The Gospels record the leaders as cowards who ran, and they make women the first witnesses to the empty tomb, in a culture where a woman's testimony was worth so little it was often inadmissible.",
+      objections: [
+        {
+          label: "The women being first could just be how it happened.",
+          response:
+            "That is exactly the point, and it is the strongest reading. If you were inventing a resurrection story to persuade first-century people, you would not build its foundation on witnesses no one was required to believe. You would put men there. The historian N. T. Wright has pressed this as hard as it can be pressed: the women are in the account because the women were there, and no one fabricating it for effect would have chosen them. The Gospels keep details that cost them credibility in their own day. Invented legends do not pay costs they could have avoided.",
+        },
+        {
+          label: "I still think the witnesses were sincerely mistaken.",
+          response:
+            "That is a coherent place to stand, and the evidence does not drag you out of it by force. Honest witnesses can be honestly wrong. But it is a different place from the one most people think they occupy. Most people believe the documents are late, corrupted, and politically manufactured, and so they never have to weigh what the documents say. They have not earned that dismissal. The Gospels are early, they are the best-attested texts of the ancient world, and no emperor handed them to you. So the choice is the honest one, between believing an unlikely thing on good testimony and disbelieving it because you already know such things do not happen.",
+        },
+      ],
+      grants: "This is where the case ends and the choosing begins. It cannot make the last step for you.",
+    },
+  ],
+  close:
+    "So here is the whole of it. The Gospels are not late, they are not a telephone game, and no council voted them into being, and once those three excuses are gone you are left with the honest and uncomfortable question the excuses were hiding. Early, well-attested, awkwardly truthful accounts of the one thing that does not happen. You can weigh all of that and still conclude it did not happen, and be welcome to keep reading here. I only wanted you to see that the dismissal you inherited was doing your thinking for you, and that the real question was always still open.",
+};
+
+const JESUS: ArgumentCase = {
+  slug: "jesus",
+  essaySlugs: ["was-jesus-just-a-good-teacher","who-did-jesus-claim-to-be"],
+  title: "Was Jesus just a good teacher?",
+  kicker: "The case, one move at a time",
+  intro:
+    "The most respectable thing you can say about Jesus in polite company is that he was a great moral teacher, nothing more. It costs nothing and offends no one, and for years it was my verdict too. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what it does not settle.",
+  published: true,
+  steps: [
+    {
+      id: "same-mouth",
+      move: "Start with the thing that makes the comfortable verdict so hard to hold. The teaching you admire and the claims you want to discard come out of the same mouth, in the same sources, with no seam between them. He told a paralyzed man his sins were forgiven (Mark 2:5), and the scribes asked the obvious question, who can forgive sins but God alone. He said, before Abraham was, I am (John 8:58), taking the divine name onto his own lips, and they picked up stones. You do not get the Sermon on the Mount without the man who talked like that.",
+      objections: [
+        {
+          label: "Maybe he never said the divine-sounding parts.",
+          response:
+            "That is the real move, and it is worth taking seriously. Perhaps a later church put the high claims in the mouth of a humble rabbi. But you cannot keep only the parts you like and call the method history. The same documents carry the ethics and the claims together, and if the sources are unreliable enough to have invented the divinity, you have lost your grounds for trusting the moral teaching too. You cannot saw off the branch and keep sitting on it.",
+        },
+      ],
+      grants: "This step shows the admirable teaching and the divine claims come as a package. It does not yet show the claims are true.",
+    },
+    {
+      id: "trilemma",
+      move: "So take the old, blunt instrument for this, C. S. Lewis's trilemma. A man who was merely human and said the things Jesus said would not be a great moral teacher. He would be a liar, or a lunatic, or something worse. The one thing he could not be, Lewis said, is the reasonable option everyone reaches for first, a wise teacher who was simply mistaken about being God.",
+      objections: [
+        {
+          label: "The trilemma ignores a fourth option: legend.",
+          response:
+            "That is the trilemma's real weakness, and I will not hide it. There is a fourth L, legend, the possibility that the divine claims grew up long after a humble teacher was gone. For a long time that was the scholarly default. But it runs into the dating. The claims are not late. Which is why the strongest form of this argument does not lean on the trilemma alone.",
+        },
+      ],
+      grants: "This step names the trilemma's genuine hole, legend, rather than pretending it is airtight. It hands the weight to the next move.",
+    },
+    {
+      id: "devotion",
+      move: "So the move that actually carries it, and it is a matter of history, not logic. If the divinity were a legend, it would need generations to grow. Instead the historian Larry Hurtado spent a career showing that the worship of Jesus as divine appears in the very first years after his death, among Jewish monotheists, the last people on earth who would casually add a second figure to God. They would die before bowing to an idol. And they bowed to a crucified man.",
+      objections: [
+        {
+          label: "Early followers exaggerate their founders all the time.",
+          response:
+            "Followers do inflate their teachers, but not like this and not this fast, and not against everything their own religion trained into them. These were Jews for whom the worship of anyone but the one God was the unforgivable line, and within a few years they were praying to Jesus, singing to him, being baptized into his name. Devotion that high, that early, among those particular people does not behave like the slow drift of a legend. It behaves like a response to something that had already happened.",
+        },
+      ],
+      grants: "This step shows the divine claim is early and costly, not a late embellishment. It does not force you to accept it.",
+    },
+    {
+      id: "verdict",
+      move: "So the honest limit. None of this proves he was who he said he was, and I am not going to pretend it does. What it does is take away the one verdict most people reach for, the safe one. The Sermon on the Mount is not the work of a disordered mind, and a con man does not die for the con when recanting would save him.",
+      objections: [
+        {
+          label: "I can still admire his ethics without the metaphysics.",
+          response:
+            "You can admire them, and you should, but notice what you are doing. You are honoring the teaching of a man while setting aside his own account of who was teaching it, which is a strange way to respect anyone. The comfortable view, the one I held, turns out to be a file and not a conclusion, a way of keeping the parts of Jesus that cost nothing and shelving the man himself. The historical Jesus does not leave that shelf empty. He talked his way off it.",
+        },
+        {
+          label: "I still just think he was a remarkable man.",
+          response:
+            "That is allowed, and he was remarkable, and I am not going to press you toward a decision at the bottom of a web page. I would only ask you to see the size of the thing you are declining. Not a set of nice sayings you can keep, but a man who forgave sins that were not committed against him, accepted the worship a faithful Jew would have died rather than give, and let his friends call him Lord and God. Good teacher is the one verdict he made almost impossible. Refuse the rest if you must, but refuse it with your eyes open.",
+        },
+      ],
+      grants: "This is where the case ends and the choosing begins. It removes the easy verdict. It does not compel the hard one.",
+    },
+  ],
+  close:
+    "So here is the whole of it. The great-teacher verdict is the one the historical Jesus makes hardest to hold, because the wisdom you admire and the claims you want to skip come from the same mouth, early and unembellished, and were worshiped as divine by the very people least likely to invent it. You can still conclude he was a remarkable, mistaken man, and be welcome to keep reading here. I only wanted you to notice that the safe verdict is the one option he took off the table himself.",
+};
+
+const WISHFUL: ArgumentCase = {
+  slug: "wishful",
+  essaySlugs: ["is-faith-just-wishful-thinking"],
+  title: "Is faith just wishful thinking?",
+  kicker: "The case, one move at a time",
+  intro:
+    "This one I have to answer against myself, because for years I made it, and I made it well. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what it does not settle. You can walk away unconvinced at any point.",
+  published: true,
+  steps: [
+    {
+      id: "concede",
+      move: "Start by granting it, because a great deal of faith is exactly what the objection says. Religion can be a crutch, and it constantly is for people who make it one. Much of what passes for belief is a god assembled out of a person's fears and preferences, warm where they want warmth and silent where they want silence. If your argument is that some faith is wish-fulfillment, you are not wrong. You are describing my inbox.",
+      objections: [
+        {
+          label: "Feuerbach and Freud already explained the whole thing.",
+          response:
+            "They gave the suspicion its spine, and they are worth taking seriously. Feuerbach in 1841 said God is the best of human nature projected onto the sky. Freud in 1927 said God is the exalted cosmic father the frightened child never stopped wanting. Grant both at full strength. The trouble is what comes next, because the argument quietly slides from where a belief came from to whether it is true, and those are not the same question at all.",
+        },
+      ],
+      grants: "This step concedes that projection is real and common. It has not yet shown that belief in God is only projection.",
+    },
+    {
+      id: "genetic",
+      move: "So name the move under the objection, because it is a known fault. It is the genetic fallacy: explaining why someone holds a belief tells you nothing about whether the belief is true. A frightened man believes the shore is close because he needs it to be, and the shore may also be close. His fear does not move the coastline.",
+      objections: [
+        {
+          label: "But the emotional need is obvious, so the belief is suspect.",
+          response:
+            "Then apply the tool evenly, because it cuts both ways. The wish that there be no God, no final accounting, no gaze you cannot escape, is also a wish, and it can manufacture unbelief as easily as need manufactures belief. The philosopher Thomas Nagel, no friend of religion, admitted it plainly: I do not want there to be a God. I do not want the universe to be like that. The wanting is on both sides of the table. It settles nothing on either.",
+        },
+      ],
+      grants: "This step shows the projection charge, applied honestly, disqualifies the atheist's motive as much as the believer's. It proves neither view true.",
+    },
+    {
+      id: "unwished",
+      move: "Now the part that broke the objection for me. If faith were wish-fulfillment, you would expect the God on offer to be the one a frightened person would order. Comfortable, undemanding, agreeable. That is not the God of Scripture. He opens by requiring a perfection no one can meet, he calls people to lose their lives to find them, and at the center of the whole thing is not a warm affirmation but a crucified man.",
+      objections: [
+        {
+          label: "People still find that God comforting, so it is still a crutch.",
+          response:
+            "Some do, and some have sanded him down until he is one. But the God actually described is the last god a wish would build. When a man in the Bible comes into his presence he does not feel affirmed, he comes apart. A wish-god does not make demands you cannot satisfy, and a wish-god does not bleed. You have to work to make this God into a comfort object, and the working is the tell that he was not one to begin with.",
+        },
+      ],
+      grants: "This step shows the Christian God is strikingly un-wished-for. It does not prove he is real, only that he is a strange thing to have invented for comfort.",
+    },
+    {
+      id: "verdict",
+      move: "So the honest limit. None of this proves God exists, and I am not going to pretend it does. What it does is take the objection off the table as a shortcut. You cannot dismiss the claim by naming the need, because the need runs both ways and the God in question is not the one need would design.",
+      objections: [
+        {
+          label: "I still think believers just want it to be true.",
+          response:
+            "Some do, and you should say so, and I was a believer's mirror image who wanted it not to be true. So here is the only fair test. Ask the believer what they want to be true, and you will find plenty of faith that is a wish with a steeple. Then have the nerve to ask it of yourself. I ran the projection test on everyone but me for years, and underneath, where I did not look, was a man who found a Godless universe not a grief but a relief. The crutch was real. It was just in my other hand.",
+        },
+      ],
+      grants: "This is where the case ends and the choosing begins. It removes a shortcut. It does not make the decision for you.",
+    },
+  ],
+  close:
+    "So here is the whole of it. Some faith is a wish with a steeple, and I will not defend it, but the objection cannot do the work people ask of it, because the projection charge disqualifies the atheist's motive as fully as the believer's, and the God at the center is the last one a frightened person would invent. You can weigh all of that and still walk away, and be welcome to keep reading here. I only wanted you to notice that naming the need was never the same as answering the question.",
+};
+
+const PLURALISM: ArgumentCase = {
+  slug: "pluralism",
+  essaySlugs: ["is-jesus-really-the-only-way"],
+  title: "Don't all religions lead to the same God?",
+  kicker: "The case, one move at a time",
+  intro:
+    "I used to think this was the humble, obvious position, and that the people who denied it were arrogant. It turned out to be almost the reverse, and it took me years to see it. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer.",
+  published: true,
+  steps: [
+    {
+      id: "concede",
+      move: "Start by granting what is true and painful in it. The exclusive claim has often been held like a weapon, used to bless conquest and to say unspeakable things to grieving people about their dead. And the intuition underneath is real: if you had been born in a different place, you would almost certainly hold a different faith with the same confidence you hold this one. That should unsettle anyone. It unsettled me for years.",
+      objections: [
+        {
+          label: "Your beliefs just track your birthplace, so none of them can be the truth.",
+          response:
+            "That where-you-were-born point is real, and it should keep everyone humble, but look at what it proves, because it proves too much. Your atheism, or your pluralism, also tracks your time and place. A person raised in a secular Western university is about as likely to land there as a person raised in Riyadh is to land in Islam. If the geography argument discredits a belief, it discredits the belief that all religions are the same just as fully. It is a reason for humility, not a verdict on truth.",
+        },
+      ],
+      grants: "This step concedes the real arrogance and the birthplace worry. It does not yet show whether any one faith is true.",
+    },
+    {
+      id: "elephant",
+      move: "So take the strongest version of the pluralist case, the one the philosopher John Hick spent a career on. He loved the old parable of the blind men and the elephant. One grabs the trunk and says snake, one the leg and says tree, one the ear and says fan. Each has a piece, none has the whole, and how foolish for any of them to insist his part is the animal. It is a devastating little story, and it has been used against religious confidence for a century.",
+      objections: [
+        {
+          label: "Exactly. Every religion has a piece of the truth, none has all of it.",
+          response:
+            "Now ask the one question the parable cannot survive. Who is telling it. The man narrating the story is not one of the blind men. He is standing above the whole scene with his eyes open, describing the entire elephant that everyone else is too limited to see. To tell the parable at all, he has to claim the very thing he is denying to everyone else, a view of the whole. The pluralist is not standing nowhere. He is standing somewhere, and from it he is making the largest claim in the room.",
+        },
+      ],
+      grants: "This step shows the pluralist parable quietly assumes a God's-eye view it denies to the religions. It does not yet show any religion is right.",
+    },
+    {
+      id: "claims",
+      move: "So the real shape of the thing, once the parable is set down. The religions do not describe the same elephant from different angles. They say incompatible things about what is finally real. One says the self is an illusion to be escaped. Another says the self is loved by name and will be raised. One says God is a single undivided will. Another says God is one being in three persons and came in the flesh. These cannot all be true at once, and the pluralist who says they are partial glimpses has not risen above the disagreement. He has joined it, on a third side.",
+      objections: [
+        {
+          label: "The differences are just cultural clothing on the same core.",
+          response:
+            "That sounds generous, but it is the one claim no adherent of those faiths would accept, which makes it the least respectful move of all. It tells the devout Muslim, the devout Buddhist, the devout Christian that the thing they would die for is surface decoration, and that you, from outside all of them, can see the real core they missed. That is not humility about religion. It is a new religion of its own, with its own dogma, insisting the others are too limited to see what it sees.",
+        },
+      ],
+      grants: "This step shows the faiths make genuinely rival claims, so they cannot all be true. It does not settle which one is.",
+    },
+    {
+      id: "verdict",
+      move: "So the honest limit. Nothing here proves Christianity is the true one. What it removes is the idea that you can float above the question. Everyone at the table is making a claim about the whole. The atheist, the pluralist, the believer. The real question was never whether to make an exclusive claim, because no one avoids one. It is which one is true, and that is a harder and more honest question than the one the elephant was hiding.",
+      objections: [
+        {
+          label: "This still feels arrogant, picking one and calling it true.",
+          response:
+            "It would be, if the claim were that your side is smarter or your people are better. But the scandal of the Christian version is the opposite. It does not say the way is narrow because God is stingy with the map. It says the way is a person, one you cannot earn or reason or be born into, only receive, which is the one door that stays open to the person who got everything else wrong. Refuse it if you must. But do not refuse it for arrogance. Refuse it, if you do, for being too particular.",
+        },
+      ],
+      grants: "This is where the case ends and the choosing begins. It shows there is no view from nowhere. It does not make the choice for you.",
+    },
+  ],
+  close:
+    "So here is the whole of it. All religions leading to the same God sounds like the humble view and turns out to be the most sweeping claim in the room, a God's-eye verdict that the faiths themselves are too limited to see straight. Set the parable down and the honest question returns, the harder one about which account of the world is actually true. You can weigh all of that and still walk away unconvinced, and be welcome here. I only wanted you to see that floating above the question was never one of the options.",
+};
+
+const FAITH: ArgumentCase = {
+  slug: "faith",
+  essaySlugs: ["is-faith-irrational"],
+  title: "Is believing anything on faith irrational?",
+  kicker: "The case, one move at a time",
+  intro:
+    "I called my old position pure reason, and I was wrong about it in a way that took me a long time to see. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what it does not settle.",
+  published: true,
+  steps: [
+    {
+      id: "concede",
+      move: "Start by granting it, because a great deal of what gets called faith is exactly the credulous thing the charge names. The church has too often praised not-thinking as a virtue and used just have faith as a lid on a pot it did not want boiling. If your objection is to belief held against the evidence, or with no evidence at all, then you and I are on the same side, and I will not defend the thing you are attacking.",
+      objections: [
+        {
+          label: "Faith means believing what you have no evidence for.",
+          response:
+            "That is the popular definition, and it is a caricature, but I understand why you hold it, because plenty of religious people have earned it. The trouble is that it does not match what the word actually means in the tradition that uses it most. The Greek word behind it, pistis, means trust, the kind you place in a person with a track record, not a leap into the dark. Hebrews 11:1 calls faith the assurance of things hoped for, the conviction of things not seen. That is trust about the unseen, not belief against the evidence.",
+        },
+      ],
+      grants: "This step concedes that credulous faith is real and indefensible. It does not yet show that faith and reason are not opposites.",
+    },
+    {
+      id: "commitments",
+      move: "So take the strongest form of the objection, the philosopher W. K. Clifford's, who wrote in 1877 that it is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence. Try to actually live by that rule for one morning. You will not last.",
+      objections: [
+        {
+          label: "That seems like a reasonable rule to me.",
+          response:
+            "Then notice everything you already believe that it forbids. You trust that your own reasoning is reliable, which you cannot prove without using the very reasoning in question. You trust that other minds exist, that the past was real, that the future will resemble the past. David Hume saw in 1748 that this last one cannot be justified by argument without going in a circle, and no one has closed the gap since. You are not standing on pure evidence. You are standing on a floor of commitments that outrun your proof, and so is everyone.",
+        },
+      ],
+      grants: "This step shows that everyone lives by trust beyond what they can prove. It does not yet show which trust is warranted.",
+    },
+    {
+      id: "warrant",
+      move: "So the real question comes into focus, and it is not faith against reason. The chemist and philosopher Michael Polanyi spent a career showing that all knowing, science included, rests on commitments the knower cannot fully justify from the outside, a floor beneath the floor. Reason does not run without trust. The honest question was never whether to have faith. It is which faith is warranted.",
+      objections: [
+        {
+          label: "Scientific trust is earned by evidence. Religious faith is not.",
+          response:
+            "Scientific trust is earned by a track record, and that is exactly the right standard, so apply it here too. Biblical faith is not asked in a vacuum. It is asked on the basis of a claimed track record: a people's history, a set of witnesses, an event they said they saw and died refusing to recant. You can judge that record weak. That is a fair fight about evidence. But it is a different accusation from the one you started with, that faith means believing with no reasons at all. It has reasons. You are free to weigh them and find them wanting.",
+        },
+      ],
+      grants: "This step reframes the question from faith-versus-reason to which commitments are warranted. It does not settle whether the Christian ones are.",
+    },
+    {
+      id: "verdict",
+      move: "So the honest limit. None of this proves the Christian faith is the warranted one. What it removes is the clean high ground, the idea that you hold only what the evidence forces while the believer leaps in the dark. You do not, and neither does anyone. We are all trusting past our proof, and the real work is arguing about which trust the evidence best supports.",
+      objections: [
+        {
+          label: "Fine, but I would still rather trust as little as possible.",
+          response:
+            "That is a fair instinct, and I share it more than you might guess. I do not ask you to believe on no evidence, and I would not have, because the demand would have insulted the man I was. I ask only that you count the faith you already live by, the trust under the reason you are so sure is unmixed, and then weigh whether the object of the Christian faith could bear that kind of weight. That is not a leap into the dark. It is the same thing you already do with everything you know, turned toward a harder question.",
+        },
+      ],
+      grants: "This is where the case ends and the choosing begins. It levels the ground. It does not decide for you.",
+    },
+  ],
+  close:
+    "So here is the whole of it. Faith is not the enemy of reason, and reason is not the pure alternative to faith, because both of them run on trust that outstrips proof, and the honest question is only which trust is earned. I called my own position pure reason for years and had never counted the enormous faith underneath it, invisible the way water is invisible to the fish. You can weigh all of this and still find the Christian claim unwarranted, and be welcome to keep reading here. I only wanted the fight to be a fair one, over evidence, and not over a caricature of the word faith.",
+};
+
+export const ARGUMENT_CASES: ArgumentCase[] = [RESURRECTION, EVIL, GOSPELS, JESUS, PLURALISM, WISHFUL, FAITH, HELL, MEANING];
 
 export function caseBySlug(slug: string): ArgumentCase | undefined {
   return ARGUMENT_CASES.find((c) => c.slug === slug);
+}
+
+/**
+ * The published case built from a given essay, if there is one. Used at the
+ * foot of an essay to offer the reader the interactive version of the argument
+ * they just read.
+ */
+export function caseForEssay(essaySlug: string): ArgumentCase | undefined {
+  if (!essaySlug) return undefined;
+  return ARGUMENT_CASES.find((c) => c.published && c.essaySlugs.includes(essaySlug));
 }

@@ -66,6 +66,16 @@ const webPageSchema = {
   publisher: { "@type": "Organization", name: "LiveWell by James Bell" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.livewellbyjamesbell.co/" },
+    { "@type": "ListItem", position: 2, name: "Questions People Ask", item: "https://www.livewellbyjamesbell.co/faq" },
+    { "@type": "ListItem", position: 3, name: "Why do young people leave church?", item: "https://www.livewellbyjamesbell.co/faq/why-do-young-people-leave-church" },
+  ],
+};
+
 export default function WhyDoYoungPeopleLeaveChurch() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -75,7 +85,7 @@ export default function WhyDoYoungPeopleLeaveChurch() {
         title="Why Do Young People Leave Church? 8 Questions Answered"
         description="Why do young people leave church? Top reasons, the age most leave, whether they come back, and what actually works to keep them. Research-based answers from a working pastor."
         keywords="why young people leave church, youth leaving church, Gen Z leaving church, millennials leaving church, church attendance decline youth, keeping young people in church"
-        structuredData={[faqSchema, webPageSchema]}
+        structuredData={[faqSchema, webPageSchema, breadcrumbSchema]}
       />
 
       <section style={{ background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px 64px", textAlign: "center" }}>

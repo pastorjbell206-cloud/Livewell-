@@ -1,5 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import ScriptureNote from "@/components/ScriptureNote";
+import { Link } from "wouter";
 import { ToolActions } from "@/components/ToolActions";
 import { useState, useRef } from "react";
 import {
@@ -2140,18 +2142,23 @@ export default function PastorBurnout() {
                         margin: "0 0 8px",
                       }}
                     >
-                      "{cat.scripture.text}"
+                      {cat.scripture.text}
                     </p>
-                    <span
+                    <Link
+                      href={`/theology/passage?ref=${encodeURIComponent(cat.scripture.ref)}`}
                       style={{
                         fontSize: "13px",
                         fontWeight: 600,
                         fontFamily: "var(--U)",
-                        color: "var(--ink-muted)",
+                        color: "var(--mustard-text)",
+                        textDecoration: "none",
+                        borderBottom: "1px solid var(--mustard)",
+                        paddingBottom: "1px",
                       }}
                     >
-                      {cat.scripture.ref}
-                    </span>
+                      {cat.scripture.ref} — read the full passage
+                    </Link>
+                    <ScriptureNote rendering="unverified" />
                   </div>
 
                   {/* Recovery Recommendations */}

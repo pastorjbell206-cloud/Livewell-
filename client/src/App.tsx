@@ -116,6 +116,7 @@ const SiteMapPage = lazy(() => import("./pages/Map"));
 const TheologyExplorer = lazy(() => import("./pages/TheologyExplorer"));
 const WhichLens = lazy(() => import("./pages/tools/WhichLens"));
 const TestTheCase = lazy(() => import("./pages/tools/TestTheCase"));
+const GroupGuide = lazy(() => import("./pages/GroupGuide"));
 const CaptureByTheRight = lazy(() => import("./pages/pillars/CaptureByTheRight"));
 const CaptureByTheLeft = lazy(() => import("./pages/pillars/CaptureByTheLeft"));
 const ReadingScripturePastOurPolitics = lazy(() => import("./pages/pillars/ReadingScripturePastOurPolitics"));
@@ -437,6 +438,7 @@ function Router() {
         <Route path="/studyguides/:slug" component={StudyGuide} />
         <Route path="/writing" component={Writing} />
         <Route path="/writing/:slug" component={ArticleDetail} />
+        <Route path="/group-guide/:slug" component={GroupGuide} />
         <Route path="/articles" component={ArticlesRedirect} />
         <Route path="/reading-paths" component={ReadingPaths} />
         <Route path="/reading-paths/:slug" component={ReadingPathDetail} />

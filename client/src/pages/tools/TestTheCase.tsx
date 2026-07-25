@@ -1,8 +1,11 @@
 import { useMemo, useState } from "react";
+import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { useProgress } from "@/hooks/useProgress";
 import { ARGUMENT_CASES, caseBySlug, type ArgumentCase } from "@/data/argumentCases";
+import { trackCaseStart, trackObjection, trackCaseComplete } from "@/lib/telemetry";
 
 /**
  * Test the Case (/tools/test-the-case) is the "argued with, not preached at"
@@ -50,9 +53,18 @@ export default function TestTheCase() {
   function switchCase(next: ArgumentCase) {
     if (!next.published) return;
     setSlug(next.slug);
+    trackCaseStart(next.slug);
     const passed = next.steps.filter((s) => done[`${next.slug}:${s.id}`]).length;
     setStepIdx(Math.min(passed, Math.max(0, next.steps.length - 1)));
     setOpenObjection(null);
+  }
+
+  /** Opening an objection is the signal worth having: which pushback a reader
+   *  actually holds. Recorded by index, never by text. */
+  function toggleObjection(i: number) {
+    const opening = openObjection !== i;
+    setOpenObjection(opening ? i : null);
+    if (opening) trackObjection(active.slug, step.id, i);
   }
 
   function advance() {
@@ -60,6 +72,7 @@ export default function TestTheCase() {
     setOpenObjection(null);
     if (isLast) {
       if (!done[finishedKey]) toggle(finishedKey);
+      trackCaseComplete(active.slug);
     } else {
       setStepIdx((i) => i + 1);
     }
@@ -82,6 +95,9 @@ export default function TestTheCase() {
     setOpenObjection(null);
   }
 
+  // minHeight keeps every control at the 44px tap target Apple and Google both
+  // specify; inline-flex centring keeps the label optically centred once the
+  // button is taller than its text.
   const btn = {
     fontFamily: "var(--U)",
     fontSize: "13px",
@@ -89,6 +105,10 @@ export default function TestTheCase() {
     borderRadius: "var(--radius-sm)",
     cursor: "pointer",
     padding: "10px 18px",
+    minHeight: "44px",
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
   } as const;
 
   return (
@@ -145,6 +165,17 @@ export default function TestTheCase() {
                 <button type="button" onClick={back} style={{ ...btn, background: "var(--card)", color: "var(--ink)", border: "1px solid var(--border)" }}>Back to the last step</button>
                 <button type="button" onClick={startOver} style={{ ...btn, background: "transparent", color: "var(--ink-muted)", border: "1px solid var(--border)" }}>Start this case over</button>
               </div>
+              <div style={{ marginTop: "40px", paddingTop: "28px", borderTop: "1px solid var(--border)" }}>
+                <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "60ch", marginBottom: "16px" }}>
+                  No decision is required here, and none is being asked. If you want to keep going at your own pace, the Doubt and Faith essays take these questions apart one move at a time.
+                </p>
+                <Link href="/writing?track=doubt" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+                  Read the Doubt and Faith essays
+                </Link>
+                <div style={{ marginTop: "28px" }}>
+                  <NewsletterSignup variant="inline" source="test-the-case" audienceType="skeptic" title="One honest essay a week." description="For the questions that do not fit on a web page. No conversion bait, no altar call." />
+                </div>
+              </div>
             </div>
           ) : (
             <div>
@@ -171,7 +202,7 @@ export default function TestTheCase() {
                   const isOpen = openObjection === i;
                   return (
                     <div key={i} style={{ border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", overflow: "hidden", background: "var(--card)" }}>
-                      <button type="button" onClick={() => setOpenObjection(isOpen ? null : i)} aria-expanded={isOpen}
+                      <button type="button" onClick={() => toggleObjection(i)} aria-expanded={isOpen}
                         style={{ width: "100%", textAlign: "left", padding: "14px var(--s-4)", background: "none", border: "none", cursor: "pointer", fontFamily: "var(--F)", fontSize: "17px", fontWeight: 500, color: isOpen ? "var(--mustard-text)" : "var(--ink)", lineHeight: 1.35 }}>
                         {o.label}
                       </button>

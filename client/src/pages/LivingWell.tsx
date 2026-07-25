@@ -18,8 +18,9 @@ const PILLAR = PILLAR_BY_ID.get(6)!; // Living Well After Christendom (formation
 /**
  * The front door for Pillar 6 — the formation pillar, and the family priority
  * named in the Editorial Constitution. Surfaces the seven sub-themes as
- * sub-doors into the filtered /writing views. Copy here is restrained on
- * purpose; James supplies the final on-voice intro.
+ * sub-doors into the filtered /writing views. Carries a draft on-voice intro at
+ * parity with the five sibling pillar landings (PillarLanding children); James
+ * can replace it with his own final text.
  */
 const SUBTHEMES: { slug: string; label: string; blurb: string }[] = [
   { slug: "marriage-covenant", label: "Marriage & Covenant", blurb: "Marriage after individualism, when the culture only knows contract." },
@@ -67,6 +68,23 @@ export default function LivingWell() {
           <p style={{ fontFamily: "var(--B)", fontSize: "19px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "60ch" }}>
             {PILLAR.blurb}
           </p>
+        </div>
+      </section>
+
+      {/* THE INTRO — the pillar's own voice (draft; James can replace) */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3)" }}>
+        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+          <div className="article-body prose-section">
+            <p>
+              For most of Western history you did not have to build a life. Christendom built it for you — the marriage your parents modeled and the church assumed, the children half-raised by the neighborhood, the work that came with a place and the place that came with a people. You inherited a shape. That inheritance is gone, and what replaced it is not a different shape but the absence of one: a market that will sell you a wedding and a therapist to survive it, a phone to raise your children, a career that asks for everything and calls the asking freedom. Formation did not stop when the scaffolding came down. It only stopped happening on purpose.
+            </p>
+            <p>
+              I did not come to this with a pattern to copy. I came to faith out of atheism, and I was raised without a father, which means I have been learning how to be one with no memory to work from and five sons watching me learn. Nobody is formed by default anymore, and I feel the weight of that on the ordinary evenings, the ones no one counts. The culture is not waiting politely for me to get around to forming my boys. It is forming them tonight, in what happens and does not happen at our table. Everything filed under this pillar I am trying to live before I would dare write it down.
+            </p>
+            <p>
+              So this is the pillar where the diagnosis has to become a life. The other five take apart the lenses — political, national, therapeutic, consumer — that have been doing our formation while we thought we were only living. This one asks the harder question: formed into what, and by what instead? The answers are older than the crisis. Covenant, not contract. The household as a school of love and not a lifestyle brand. Friendship that costs something. Work as a calling and not a cage. None of it arrives automatically and none of it survives on sentiment. A life is built now, deliberately, in the small repeated things — or it is built for you, by whoever is still willing to do the forming.
+            </p>
+          </div>
         </div>
       </section>
 

@@ -89,7 +89,7 @@ export default function Pillars() {
               </p>
               <div style={{ display: "flex", gap: "1.6rem", flexWrap: "wrap" }}>
                 {PATH_FOR_PILLAR[p.slug] && (
-                  <Link href={`/reading-paths/${PATH_FOR_PILLAR[p.slug]}`} style={linkStyle}>
+                  <Link href={`/reading-paths/${PATH_FOR_PILLAR[p.slug]}`} style={{ ...linkStyle, color: "var(--mustard-text)", borderBottomColor: "var(--mustard-text)" }}>
                     Read the path, in order <ArrowRight size={13} style={{ display: "inline", verticalAlign: "middle" }} />
                   </Link>
                 )}
@@ -118,7 +118,7 @@ export default function Pillars() {
                 {p.blurb}
               </p>
               <div style={{ display: "flex", gap: "1.6rem", flexWrap: "wrap" }}>
-                <Link href="/living-well" style={linkStyle}>
+                <Link href="/living-well" style={{ ...linkStyle, color: "var(--mustard-text)", borderBottomColor: "var(--mustard-text)" }}>
                   Enter the formation hub <ArrowRight size={13} style={{ display: "inline", verticalAlign: "middle" }} />
                 </Link>
                 <Link href={pillarUrl(p.slug)} style={{ ...linkStyle, color: "var(--ink-muted)", borderBottomColor: "var(--ink-muted)" }}>

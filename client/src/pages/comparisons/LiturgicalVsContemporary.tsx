@@ -112,7 +112,7 @@ const webPageSchema = {
 
 const S = {
   hero: { background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px", textAlign: "center" as const },
-  eyebrow: { fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase" as const, color: "var(--mustard)", marginBottom: "24px" },
+  eyebrow: { fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase" as const, color: "var(--mustard-text)", marginBottom: "24px" },
   h1: { fontFamily: "var(--F)", fontSize: "clamp(32px,5vw,60px)", fontWeight: 400, color: "var(--charcoal-fg)", maxWidth: "780px", margin: "0 auto", lineHeight: 1.15, letterSpacing: "-0.02em" },
   heroSub: { fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.6)", marginTop: "32px", maxWidth: "620px", marginLeft: "auto", marginRight: "auto", lineHeight: 1.7 },
   sectionBone: { background: "var(--bone)", padding: "80px 24px" },
@@ -142,7 +142,7 @@ export default function LiturgicalVsContemporary() {
 
       {/* Hero */}
       <section style={S.hero}>
-        <p style={S.eyebrow}>COMPARISON</p>
+        <p style={{ ...S.eyebrow, color: "var(--mustard)" }}>COMPARISON</p>
         <h1 style={S.h1}>Liturgical vs. Contemporary Worship</h1>
         <p style={S.heroSub}>
           One tradition hands you a prayer book. The other hands you a setlist. The question is not which one you prefer. The question is what kind of Christian each one produces over thirty years.

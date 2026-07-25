@@ -150,11 +150,11 @@ export default function Home() {
         }}
       >
         <div
+          className="home-hero-grid"
           style={{
             maxWidth: "var(--w-default)",
             margin: "0 auto",
             display: "grid",
-            gridTemplateColumns: "minmax(0, 1fr)",
             gap: "var(--s-6)",
           }}
         >
@@ -190,6 +190,7 @@ export default function Home() {
             </div>
 
             <h1
+              className="lede-rise"
               style={{
                 fontFamily: "var(--F)",
                 fontSize: "clamp(42px, 7vw, 96px)",
@@ -204,6 +205,7 @@ export default function Home() {
             </h1>
 
             <p
+              className="lede-rise-2"
               style={{
                 fontFamily: "var(--F)",
                 fontSize: "clamp(20px, 2.6vw, 30px)",
@@ -495,10 +497,14 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FROM THE LIBRARY — the free full-length books, the strongest asset on
+          the site, so they sit above the essay river rather than under it. */}
+      <LibraryStrip />
+
       {/* RECENT ESSAYS */}
       <section
         style={{
-          background: "var(--bone-warm)",
+          background: "var(--bone)",
           padding: "var(--s-6) var(--s-4)",
         }}
       >
@@ -631,9 +637,6 @@ export default function Home() {
           )}
         </div>
       </section>
-
-      {/* FROM THE LIBRARY — pull readers into the free full-length books */}
-      <LibraryStrip />
 
       {/* SEGMENTED SUBSCRIBE — the single most important conversion surface */}
       <section

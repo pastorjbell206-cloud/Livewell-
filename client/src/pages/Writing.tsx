@@ -17,6 +17,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { StatementBand } from "@/components/EditorialBlocks";
 import { TrackChip } from "@/components/TrackChip";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { trpc } from "@/lib/trpc";
 import { pillarToTrack, resolveTrack, pillarForPost, PILLAR_BY_SLUG, subThemesForPost, SUBTHEMES, PILLARS_V2, MOVEMENTS } from "@/lib/taxonomy";
 import {
@@ -759,6 +760,17 @@ export default function Writing() {
       <StatementBand eyebrow="Keep reading" width="26ch">
         Every essay here was written to be finished, not skimmed.
       </StatementBand>
+
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
+          <NewsletterSignup
+            variant="inline"
+            source="writing-index"
+            title="One essay a week, for the ones who finish."
+            description="The writing that starts at the root instead of the symptom, in your inbox. No conversion bait."
+          />
+        </div>
+      </section>
     </Layout>
   );
 }

@@ -10,7 +10,8 @@
  */
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { useLocation, useParams } from "wouter";
+import { Link, useLocation, useParams } from "wouter";
+import { DISCUSSION_GUIDES } from "@/data/discussion-guides";
 import { Markdown } from "@/components/Markdown";
 import { recordReadEvent } from "@/components/ReadDepthBeacon";
 import { ArrowLeft, BookOpen, Bookmark, Share2, User } from "lucide-react";
@@ -855,6 +856,15 @@ export default function ArticleDetail() {
             />
             {/* Three-audience share replaces the single SendToPastor button */}
             <AudienceShare title={post.title} url={canonical} />
+            {/* Pastor distribution: hand this essay to a whole small group */}
+            {post.slug && DISCUSSION_GUIDES[post.slug] && (
+              <Link
+                href={`/group-guide/${post.slug}`}
+                style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", border: "1px solid var(--border)", borderRadius: "999px", padding: "7px 14px", whiteSpace: "nowrap" }}
+              >
+                Use this with your small group
+              </Link>
+            )}
           </div>
           )}
         </section>
