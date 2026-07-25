@@ -1529,7 +1529,9 @@ export default function ChurchHealth() {
               }}
             >
               <a
-                href="/pastors"
+                href="https://pastorsconnectionnetwork.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   display: "flex",
                   alignItems: "center",

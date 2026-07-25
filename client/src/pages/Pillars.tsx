@@ -13,7 +13,7 @@ import { ROUTE_FOR_PILLAR } from "@/components/PillarLanding";
  * "all six" — the one page that should never drift from the taxonomy did.)
  *
  * Each Diagnosis pillar links to its ordered reading path; every pillar links
- * to its filtered essay list. The five standing library sections are kept
+ * to its filtered essay list. The four standing library sections are kept
  * below as what they are — reference wings, not a competing pillar scheme.
  */
 
@@ -30,7 +30,6 @@ const WINGS = [
   { name: "Theological Depth", href: "/theology", blurb: "Doctrine, church history, the whole biblical story." },
   { name: "Prophetic Justice", href: "/justice", blurb: "The poor, the outsider, the systems we inherit." },
   { name: "Prophetic Disruption", href: "/disruption", blurb: "The church, empire, and the politics that capture it." },
-  { name: "Leadership Formation", href: "/leadership", blurb: "Character before competence, for those who lead." },
   { name: "Integrated Life", href: "/life", blurb: "Marriage, parenting, vocation, and rest." },
 ];
 
@@ -137,7 +136,7 @@ export default function Pillars() {
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1rem" }}>The reference wings</div>
           <p style={{ color: "var(--charcoal-fg)", opacity: 0.75, fontSize: "0.95rem", lineHeight: 1.7, maxWidth: "62ch", marginBottom: "2rem" }}>
-            Alongside the pillars, five standing library sections hold the reference collections — the working shelves the essays draw on.
+            Alongside the pillars, four standing library sections hold the reference collections — the working shelves the essays draw on.
           </p>
           {WINGS.map((w) => (
             <Link key={w.href} href={w.href} style={{ display: "block", textDecoration: "none", padding: "1.1rem 0", borderBottom: "1px solid rgba(244,241,234,0.12)" }}>

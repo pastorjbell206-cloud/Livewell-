@@ -18,9 +18,9 @@ export default function ThePastoralAngle() {
         statement="No stagecraft survives this close to the ground."
         toolsIntro="Instruments for the people carrying the weight — honest ones, scored in your browser, seen by no one but you."
         tools={[
-          { href: "/tools/pastor-burnout", label: "Pastor Burnout Assessment", blurb: "Name where you actually are before the congregation finds out the hard way." },
           { href: "/tools/emotional-health", label: "Emotional Health Check", blurb: "The interior audit most of us postpone until something breaks." },
-          { href: "/tools/sermon-outline", label: "Sermon Outline Builder", blurb: "Structure for the week the well is dry and Sunday is still coming." },
+          { href: "/tools/life-audit", label: "The Life Audit", blurb: "Where the life you are living and the life you meant to live have quietly parted." },
+          { href: "/tools/rule-of-life", label: "A Rule of Life", blurb: "Ordinary practices, kept on the ordinary weeks, so there is something to stand on when it is not ordinary." },
         ]}
       >
         <p>

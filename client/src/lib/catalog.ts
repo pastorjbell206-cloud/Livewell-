@@ -35,22 +35,6 @@ export interface LibrarySource {
  */
 export const LIBRARY_SOURCES: LibrarySource[] = [
   {
-    url: "/leadership/articles-index.json",
-    listKey: "articles",
-    label: "Leadership Library",
-    type: "Leadership",
-    buildHref: (slug) => `/leadership/article/${slug}`,
-    indexHref: "/leadership/library",
-  },
-  {
-    url: "/leadership/formation-index.json",
-    listKey: "topics",
-    label: "Deep Formation",
-    type: "Leadership",
-    buildHref: (slug) => `/leadership/formation/${slug}`,
-    indexHref: "/leadership/formation",
-  },
-  {
     url: "/context/guides-index.json",
     listKey: "guides",
     label: "Reading Scripture in Context",

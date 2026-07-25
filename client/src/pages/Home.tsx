@@ -6,7 +6,7 @@
  * so a visitor is routed by what they came for, not by the political/cultural
  * essay arcs (those live under Writing and the nav, not the front page). Below
  * the doors: the latest essays, the segmented signup (the conversion surface),
- * and the five pillars as the deeper taxonomy spine.
+ * and the pillars as the deeper taxonomy spine.
  */
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
@@ -76,13 +76,6 @@ const DOORS = [
     cta: "Enter the family room",
   },
   {
-    title: "I'm a pastor, and I'm tired",
-    blurb:
-      "The loneliness, the burnout, the weight nobody checks on. Written from inside the room, and a network that has your back.",
-    href: "/pastors",
-    cta: "Find the brotherhood",
-  },
-  {
     title: "I want to disciple someone",
     blurb:
       "Eighteen table-ready studies that make you confident to walk with one person — no program, no stage, no seminary required.",
@@ -98,7 +91,7 @@ const DOORS = [
   },
 ];
 
-// Five reading areas — the deeper writing taxonomy, kept visible below the
+// Four reading areas — the deeper writing taxonomy, kept visible below the
 // doors. These are the reference wings, not the six-pillar / two-movement spine
 // (that lives at /pillars and in taxonomy.ts); the heading below says "ways in"
 // so the homepage never claims a pillar count that contradicts /pillars.
@@ -106,7 +99,6 @@ const PILLARS = [
   { name: "Theological Depth", href: "/theology", blurb: "Doctrine, church history, the whole biblical story." },
   { name: "Prophetic Justice", href: "/justice", blurb: "The poor, the outsider, the systems we inherit." },
   { name: "Prophetic Disruption", href: "/disruption", blurb: "The church, empire, and the politics that capture it." },
-  { name: "Leadership Formation", href: "/leadership", blurb: "Character before competence, for those who lead." },
   { name: "Integrated Life", href: "/life", blurb: "Marriage, parenting, vocation, and rest." },
 ];
 
@@ -663,7 +655,7 @@ export default function Home() {
         than your assumptions.
       </StatementBand>
 
-      {/* THE FIVE PILLARS — the deeper writing taxonomy spine */}
+      {/* THE PILLARS — the deeper writing taxonomy spine */}
       <section
         style={{
           background: "var(--bone)",
@@ -685,7 +677,7 @@ export default function Home() {
               maxWidth: "32ch",
             }}
           >
-            Five ways in. One argument.
+            Four ways in. One argument.
           </h2>
           <div
             style={{

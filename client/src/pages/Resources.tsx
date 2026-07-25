@@ -54,18 +54,6 @@ const LIBRARIES = [
     desc: "Five free booklets for elder teams: what elders are for, the biblical qualifications, finding and installing elders, handling disagreement, and removing an elder. Free PDF and EPUB.",
   },
   {
-    href: "/leadership/library",
-    eyebrow: "For leaders and teachers",
-    title: "The Leadership Library",
-    desc: "Over a hundred articles on preaching, exegesis, formation, church leadership, and pastoral care. Searchable by category.",
-  },
-  {
-    href: "/leadership/sermon-series",
-    eyebrow: "For preachers",
-    title: "The Sermon Series Library",
-    desc: "Complete series plans, book by book and topic by topic, with the arc of each series and every sermon's text, idea, and aim.",
-  },
-  {
     href: "/family/devotions",
     eyebrow: "For the household",
     title: "Family Devotions",
@@ -125,7 +113,7 @@ export default function Resources() {
     <Layout>
       <SEOMeta
         title="Resources — Study Guides, Libraries, and Ministry Tools"
-        description="Free resources for disciples, pastors, and leaders: the Reading Scripture in Context library, leadership and sermon series, family devotions, and downloads."
+        description="Free resources for disciples, group leaders, and households: the Reading Scripture in Context library, study guides, the creeds and confessions, family devotions, and downloads."
         url="https://www.livewellbyjamesbell.co/resources"
       />
 

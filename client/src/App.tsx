@@ -98,9 +98,7 @@ const ContextGuide = lazy(() => import("./pages/resources/ContextGuide"));
 const StudyGuide = lazy(() => import("./pages/studyguides/StudyGuide"));
 const StudyGuidesIndex = lazy(() => import("./pages/studyguides/StudyGuidesIndex"));
 const SubstackPage = lazy(() => import("./pages/Substack"));
-const Pastors = lazy(() => import("./pages/Pastors"));
 const SkepticTrack = lazy(() => import("./pages/SkepticTrack"));
-const PastorsResourceWall = lazy(() => import("./pages/PastorsResourceWall"));
 const HardIssuesSeries = lazy(() => import("./pages/HardIssuesSeries"));
 const RoadMap = lazy(() => import("./pages/RoadMap"));
 const Library = lazy(() => import("./pages/Library"));
@@ -123,8 +121,6 @@ const CaptureByTheLeft = lazy(() => import("./pages/pillars/CaptureByTheLeft"));
 const ReadingScripturePastOurPolitics = lazy(() => import("./pages/pillars/ReadingScripturePastOurPolitics"));
 const AfterChristendomPillar = lazy(() => import("./pages/pillars/AfterChristendomPillar"));
 const ThePastoralAngle = lazy(() => import("./pages/pillars/ThePastoralAngle"));
-const ForPastors = lazy(() => import("./pages/ForPastors"));
-const ForLeaders = lazy(() => import("./pages/ForLeaders"));
 const Membership = lazy(() => import("./pages/Membership"));
 const MembershipSuccess = lazy(() => import("./pages/MembershipSuccess"));
 const Discipleship = lazy(() => import("./pages/Discipleship"));
@@ -187,36 +183,11 @@ const NationHub = lazy(() => import("./pages/nation/NationHub"));
 const NationEssay = lazy(() => import("./pages/nation/NationEssay"));
 const NationScorecard = lazy(() => import("./pages/nation/NationScorecard"));
 const NationPolicy = lazy(() => import("./pages/nation/NationPolicy"));
-const LeadershipHub = lazy(() => import("./pages/leadership/LeadershipHub"));
-const LeadershipArticle = lazy(() => import("./pages/leadership/LeadershipArticle"));
-const SermonWorkbench = lazy(() => import("./pages/leadership/SermonWorkbench"));
-const IllustrationLibrary = lazy(() => import("./pages/leadership/IllustrationLibrary"));
-const MeetingBuilder = lazy(() => import("./pages/leadership/MeetingBuilder"));
-const VisitationTracker = lazy(() => import("./pages/leadership/VisitationTracker"));
-const LeaderAssessment = lazy(() => import("./pages/leadership/LeaderAssessment"));
-const ProfileSurvey = lazy(() => import("./pages/leadership/ProfileSurvey"));
-const GuidedWorkflow = lazy(() => import("./pages/leadership/GuidedWorkflow"));
-const ServiceBuilder = lazy(() => import("./pages/leadership/ServiceBuilder"));
-const DecisionLog = lazy(() => import("./pages/leadership/DecisionLog"));
-const BudgetCalculator = lazy(() => import("./pages/leadership/BudgetCalculator"));
-const BeforeYouPost = lazy(() => import("./pages/leadership/BeforeYouPost"));
-const GovernanceLibrary = lazy(() => import("./pages/leadership/GovernanceLibrary"));
-const LeadershipLibrary = lazy(() => import("./pages/leadership/LeadershipLibrary"));
-const SermonSeries = lazy(() => import("./pages/leadership/SermonSeries"));
-const WholeBibleSermons = lazy(() => import("./pages/leadership/WholeBibleSermons"));
-const FormationIndex = lazy(() => import("./pages/leadership/FormationIndex"));
-const ServantLeadership = lazy(() => import("./pages/leadership/ServantLeadership"));
-const FormationGuides = lazy(() => import("./pages/leadership/FormationGuides"));
-const ServantLeadershipHandbook = lazy(() => import("./pages/leadership/ServantLeadershipHandbook"));
-const FormationTopic = lazy(() => import("./pages/leadership/FormationTopic"));
-const FormationInventory = lazy(() => import("./pages/leadership/FormationInventory"));
 const PropheticLament = lazy(() => import("./pages/prophetic/PropheticLament"));
 const EmotionalHealth = lazy(() => import("./pages/tools/EmotionalHealth"));
 const SavedItems = lazy(() => import("./pages/tools/SavedItems"));
-const SermonOutline = lazy(() => import("./pages/tools/SermonOutline"));
 const ScriptureMemory = lazy(() => import("./pages/tools/ScriptureMemory"));
 const ConflictGuide = lazy(() => import("./pages/tools/ConflictGuide"));
-const PastorBurnoutTool = lazy(() => import("./pages/tools/PastorBurnout"));
 const LifeAudit = lazy(() => import("./pages/tools/LifeAudit"));
 const ChurchHealth = lazy(() => import("./pages/tools/ChurchHealth"));
 const DeepBibleCompanion = lazy(() => import("./pages/tools/DeepBibleCompanion"));
@@ -229,10 +200,8 @@ const Proverbs31 = lazy(() => import("./pages/tools/Proverbs31"));
 const BibleReference = lazy(() => import("./pages/tools/BibleReference"));
 const ToolsGlossary = lazy(() => import("./pages/tools/TheologyGlossary"));
 const QuoteLibrary = lazy(() => import("./pages/tools/QuoteLibrary"));
-const PostChristianSermonSeries = lazy(() => import("./pages/SermonSeries"));
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const WorkWithJames = lazy(() => import("./pages/WorkWithJames"));
-const PastoralBurnout = lazy(() => import("./pages/landing/PastoralBurnout"));
 const FaithCrisis = lazy(() => import("./pages/landing/FaithCrisis"));
 const MarriageCrisis = lazy(() => import("./pages/landing/MarriageCrisis"));
 const GriefLanding = lazy(() => import("./pages/landing/Grief"));
@@ -436,33 +405,8 @@ function Router() {
         <Route path="/nation/scorecard"><NationScorecard /></Route>
         <Route path="/nation/policy"><NationPolicy /></Route>
         <Route path="/nation"><NationHub /></Route>
-        <Route path="/leadership/sermon-prep"><SermonWorkbench /></Route>
-        <Route path="/leadership/illustrations"><IllustrationLibrary /></Route>
-        <Route path="/leadership/meeting"><MeetingBuilder /></Route>
-        <Route path="/leadership/visitation"><VisitationTracker /></Route>
         {/* Keyed by slug so each instrument remounts fresh — saved progress
             restores from that slug's own storage, never another's. */}
-        <Route path="/leadership/assessment/:slug">{(p) => <LeaderAssessment key={p.slug} />}</Route>
-        <Route path="/leadership/survey/:slug">{(p) => <ProfileSurvey key={p.slug} />}</Route>
-        <Route path="/leadership/workflow/:slug"><GuidedWorkflow /></Route>
-        <Route path="/leadership/service/:slug">{(p) => <ServiceBuilder key={p.slug} />}</Route>
-        <Route path="/leadership/governance"><GovernanceLibrary /></Route>
-        <Route path="/leadership/library"><LeadershipLibrary /></Route>
-        <Route path="/leadership/bible-sermons/:bookId"><WholeBibleSermons /></Route>
-        <Route path="/leadership/bible-sermons"><WholeBibleSermons /></Route>
-        <Route path="/leadership/sermon-series"><SermonSeries /></Route>
-        <Route path="/leadership/budget"><BudgetCalculator /></Route>
-        <Route path="/leadership/decision-log"><DecisionLog /></Route>
-        <Route path="/leadership/before-you-post"><BeforeYouPost /></Route>
-        <Route path="/leadership/article/:slug"><LeadershipArticle /></Route>
-        <Route path="/leadership/formation/:slug" component={FormationTopic} />
-        <Route path="/leadership/handbook" component={ServantLeadershipHandbook} />
-        <Route path="/leadership/servant-leadership" component={ServantLeadership} />
-        <Route path="/leadership/guides/:slug" component={FormationGuides} />
-        <Route path="/leadership/guides" component={FormationGuides} />
-        <Route path="/leadership/formation" component={FormationIndex} />
-        <Route path="/leadership/inventory" component={FormationInventory} />
-        <Route path="/leadership"><LeadershipHub /></Route>
         <Route path="/justice/topic/:slug"><PropheticTopic config={JUSTICE} /></Route>
         <Route path="/justice"><PropheticHub config={JUSTICE} /></Route>
         <Route path="/theology/how-to-use" component={TheologyMethodology} />
@@ -483,8 +427,6 @@ function Router() {
         <Route path="/reading-scripture-past-our-politics" component={ReadingScripturePastOurPolitics} />
         <Route path="/after-christendom" component={AfterChristendomPillar} />
         <Route path="/the-pastoral-angle" component={ThePastoralAngle} />
-        <Route path="/for-pastors" component={ForPastors} />
-        <Route path="/for-leaders" component={ForLeaders} />
         <Route path="/membership" component={Membership} />
         <Route path="/membership/success" component={MembershipSuccess} />
         <Route path="/discipleship" component={Discipleship} />
@@ -553,7 +495,6 @@ function Router() {
         <Route path="/rule-of-life" component={RuleOfLifeBook} />
         <Route path="/why-not-what/thank-you" component={WhyNotWhatThankYou} />
         <Route path="/why-not-what" component={WhyNotWhat} />
-        <Route path="/sermon-series" component={PostChristianSermonSeries} />
         <Route path="/sermon-on-the-mount-as-politics/thank-you" component={SermonOnTheMountAsPoliticsThankYou} />
         <Route path="/sermon-on-the-mount-as-politics" component={SermonOnTheMountAsPolitics} />
         <Route path="/prophetic-justice-101/thank-you" component={PropheticJustice101ThankYou} />
@@ -581,7 +522,6 @@ function Router() {
         <Route path="/the-body-you-left/thank-you" component={TheBodyYouLeftThankYou} />
         <Route path="/the-body-you-left" component={TheBodyYouLeft} />
         <Route path="/substack" component={SubstackPage} />
-        <Route path="/pastors" component={Pastors} />
         <Route path="/about" component={About} />
         <Route path="/search" component={SearchPage} />
         <Route path="/tools/theology-quiz" component={TheologyQuiz} />
@@ -590,7 +530,6 @@ function Router() {
         {/* Legacy alias; vercel.json 301s /quiz to /tools/theology-quiz */}
         <Route path="/quiz" component={TheologyQuiz} />
         <Route path="/skeptic-track" component={SkepticTrack} />
-        <Route path="/pastors-resource-wall" component={PastorsResourceWall} />
         <Route path="/roadmap" component={RoadMap} />
         <Route path="/explore" component={Explore} />
         <Route path="/library" component={Library} />
@@ -605,10 +544,8 @@ function Router() {
         <Route path="/tools/parenting-guide" component={ParentingGuide} />
         <Route path="/tools/emotional-health" component={EmotionalHealth} />
         <Route path="/tools/saved" component={SavedItems} />
-        <Route path="/tools/sermon-outline" component={SermonOutline} />
         <Route path="/tools/scripture-memory" component={ScriptureMemory} />
         <Route path="/tools/conflict-guide" component={ConflictGuide} />
-        <Route path="/tools/pastor-burnout" component={PastorBurnoutTool} />
         <Route path="/tools/life-audit" component={LifeAudit} />
         <Route path="/tools/church-health" component={ChurchHealth} />
         <Route path="/tools/deep-bible" component={DeepBibleCompanion} />
@@ -625,7 +562,6 @@ function Router() {
         <Route path="/privacy" component={Privacy} />
         <Route path="/accessibility" component={Accessibility} />
         <Route path="/terms" component={Terms} />
-        <Route path="/pastoral-burnout" component={PastoralBurnout} />
         <Route path="/faith-crisis" component={FaithCrisis} />
         <Route path="/marriage-crisis" component={MarriageCrisis} />
         <Route path="/grief" component={GriefLanding} />

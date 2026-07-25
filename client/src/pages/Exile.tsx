@@ -122,7 +122,7 @@ export default function Exile() {
           </div>
 
           <p style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.65, color: "rgba(245,240,230,0.6)", maxWidth: "60ch", marginTop: "var(--s-4)" }}>
-            The same exile is also called to seek the welfare of the city — its poor at the gate, its workers, its forgotten. That work has its own room: <Link href="/justice" style={{ color: "var(--mustard)", fontWeight: 600 }}>Justice &amp; the Vulnerable</Link>. And those who lead the scattered church carry a particular weight: <Link href="/leadership" style={{ color: "var(--mustard)", fontWeight: 600 }}>Leadership</Link>.
+            The same exile is also called to seek the welfare of the city — its poor at the gate, its workers, its forgotten. That work has its own room: <Link href="/justice" style={{ color: "var(--mustard)", fontWeight: 600 }}>Justice &amp; the Vulnerable</Link>. And it begins at the kitchen table, in the house you are already responsible for: <Link href="/family" style={{ color: "var(--mustard)", fontWeight: 600 }}>the household</Link>.
           </p>
         </div>
       </section>

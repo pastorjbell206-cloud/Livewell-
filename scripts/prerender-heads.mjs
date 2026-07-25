@@ -109,12 +109,6 @@ const STATIC_PAGES = [
     type: "website",
   },
   {
-    path: "/pastors-resource-wall",
-    title: "Pastor's Resource Wall",
-    description: "Sermon prep, citation tools, discussion guides, and the Pastors Connection Network. Tools for the work that does not finish.",
-    type: "website",
-  },
-  {
     path: "/roadmap",
     title: "The Roadmap — 48 books",
     description: "What James Bell has shipped, what's in development, and the planned roadmap of the next ten years.",
@@ -160,18 +154,6 @@ const STATIC_PAGES = [
   // FormationGuides, WholeBibleSermons). Their SEOMeta is computed from props
   // or fetched JSON, so the route-table extraction below cannot read it; the
   // copy here mirrors each page's actual title/subtitle content.
-  {
-    path: "/leadership/guides",
-    title: "Free Church Leadership Training Guides — Elders & Deacons",
-    description: "Free, session-by-session training guides for the church: a Servant Leadership Bible study, an Elder Training Manual, a Deacon Training Manual, and more.",
-    type: "website",
-  },
-  {
-    path: "/leadership/bible-sermons",
-    title: "Sermon Series for Every Book of the Bible — Free Outlines",
-    description: "Free, Christ-centered sermon series for all 66 books of the Bible — the big idea, the Christ connection, and a ready-to-preach arc, Genesis to Revelation.",
-    type: "website",
-  },
   {
     path: "/disruption/posture",
     title: "The Posture — Prophetic Disruption",
@@ -541,9 +523,7 @@ function breadcrumbSchema(crumbs) {
 // Route prefix → the section hub the item sits under (all verified real routes).
 // The middle crumb of each library page's breadcrumb. Absent → a 2-level trail.
 const SECTION_BY_ROUTE = {
-  "/leadership/article/": { name: "Leadership Library", path: "/leadership/library" },
   "/resources/context/": { name: "Context Guides", path: "/resources/context" },
-  "/leadership/formation/": { name: "Leadership Formation", path: "/leadership/formation" },
   "/life/": { name: "The Integrated Life", path: "/life" },
   "/resources/creeds/": { name: "Creeds & Confessions", path: "/resources/creeds" },
   "/theology/history/": { name: "Church History", path: "/theology/history" },
@@ -553,7 +533,6 @@ const SECTION_BY_ROUTE = {
   "/read/": { name: "Books", path: "/read" },
   "/plans/": { name: "Care Plans", path: "/plans" },
   "/theology/doctrine/": { name: "Theology", path: "/theology" },
-  "/leadership/bible-sermons/": { name: "Sermon Series", path: "/leadership/bible-sermons" },
   "/justice/topic/": { name: "Prophetic Justice", path: "/justice" },
   "/disruption/topic/": { name: "Prophetic Disruption", path: "/disruption" },
   "/wisdom/": { name: "Wisdom", path: "/wisdom" },
@@ -695,9 +674,7 @@ async function main() {
   // articles, context guides, life domains, formation topics, creeds, history
   // essays, and toolkits unfurl and index with their own title and image.
   const LIBRARY_SOURCES = [
-    { file: "client/public/leadership/articles-index.json", key: "articles", route: "/leadership/article/", ogPrefix: "leadership-article", contentDir: "client/public/leadership/articles" },
     { file: "client/public/context/guides-index.json", key: "guides", route: "/resources/context/", ogPrefix: "resources-context", contentDir: "client/public/context/guides" },
-    { file: "client/public/leadership/formation-index.json", key: "topics", route: "/leadership/formation/", ogPrefix: "leadership-formation", contentDir: "client/public/leadership/formation" },
     { file: "client/public/life/domains-index.json", key: "domains", route: "/life/", ogPrefix: "life", contentDir: "client/public/life/domains" },
     { file: "client/public/creeds/documents-index.json", key: "documents", route: "/resources/creeds/", ogPrefix: "resources-creeds", contentDir: "client/public/creeds/documents" },
     { file: "client/public/history/essays-index.json", key: "essays", route: "/theology/history/", ogPrefix: "theology-history", contentDir: "client/public/history/essays" },
@@ -715,7 +692,6 @@ async function main() {
     // Sermon series for all 66 books of the Bible. The manifest keys the entry
     // by `id`/`name` (not slug/title), so map them; content files are arrays of
     // markdown sermons, so the body injects at full depth.
-    { file: "client/public/leadership/whole-bible-sermons.json", key: "books", route: "/leadership/bible-sermons/", ogPrefix: "leadership-bible-sermons", slugField: "id", titleField: "name", contentDir: "client/public/leadership/sermons", descTemplate: "A free, Christ-centered sermon series for the book of {title} — the big idea, the Christ connection, and a ready-to-preach arc, chapter by chapter." },
     // Prophetic Justice / Disruption per-topic pages. Indexes are generated from
     // client/src/lib/prophetic.ts (ready topics only) by build-prophetic-indexes.mjs.
     { file: "client/public/justice/topics-index.json", key: "topics", route: "/justice/topic/", ogPrefix: "justice-topic", contentDir: "client/public/justice/topics" },

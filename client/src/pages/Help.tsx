@@ -135,17 +135,6 @@ const NEEDS: Need[] = [
     ],
   },
   {
-    id: "burnout",
-    title: "I am a leader running on empty",
-    opener: "The loneliest job in the room. If you are a pastor near the end of yourself, start here. Seeking help is faith, not failure.",
-    helps: [
-      { href: "/pastoral-burnout", label: "Read: why pastors leave, and how to stay whole", kind: "read" },
-      { href: "/tools/pastor-burnout", label: "Assess: a burnout and rest self-check", kind: "assess" },
-      { href: "/leadership/inventory", label: "Assess: the character-first leadership inventory", kind: "assess" },
-      { href: "/leadership/formation/burnout-and-the-theology-of-rest", label: "Read: the theology of rest", kind: "read" },
-    ],
-  },
-  {
     id: "grow",
     title: "I just want to grow, and follow well",
     opener: "Not in crisis. You want the whole of life to come under one Lord, on an ordinary Tuesday. Here is the path.",

@@ -34,13 +34,6 @@ export const TOOLS = [
     color: "var(--goldlt)",
   },
   {
-    title: "The Leadership Formation Inventory",
-    description: "A character-first diagnostic for leaders: identity, ego, rest, the hidden life, and emotional health before any question of skill. Retakeable, with your history kept in the browser. Part of Leadership Formation.",
-    href: "/leadership/inventory",
-    icon: Shield,
-    color: "var(--ink2)",
-  },
-  {
     title: "The Whole-Life Assessment",
     description: "Thirty honest statements across the inner life, the body, relationships, work and money, and the world. Maps where life is flourishing and hands you a rule of life for the season. Part of Integrated Life.",
     href: "/life/assessment",
@@ -160,13 +153,6 @@ export const TOOLS = [
     color: "var(--goldlt)",
   },
   {
-    title: "Sermon Outline Generator",
-    description: "Enter a topic and audience, get a structured 3-point sermon outline with Scripture, illustrations, and application questions.",
-    href: "/tools/sermon-outline",
-    icon: Mic,
-    color: "var(--ink2)",
-  },
-  {
     title: "Scripture Memory System",
     description: "Memorize 40 key verses across 8 categories. First-letter mode, fill-in-the-blank, and full recall practice with progress tracking.",
     href: "/tools/scripture-memory",
@@ -179,13 +165,6 @@ export const TOOLS = [
     href: "/tools/conflict-guide",
     icon: MessageCircle,
     color: "var(--goldlt)",
-  },
-  {
-    title: "Pastor Burnout Diagnostic",
-    description: "Twenty-four questions across calling, isolation, marriage, and the board. It names the shape of your exhaustion and the way back.",
-    href: "/tools/pastor-burnout",
-    icon: Shield,
-    color: "var(--ink2)",
   },
   {
     title: "Life Audit",

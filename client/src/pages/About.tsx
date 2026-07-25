@@ -13,8 +13,6 @@ const PORTRAIT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED
 const PATHWAYS = [
   { href: "/skeptic-track", label: "If you are not sure you believe any of this", desc: "Start with the track written for skeptics, by someone who used to be one. No tricks, no altar call at the end. Just your questions taken seriously." },
   { href: "/writing", label: "If your faith has outgrown the answers you were given", desc: "Read the essays. They start at the root instead of the symptom, and they leave open the things that should stay open." },
-  { href: "/pastors", label: "If you carry a church", desc: "The pastors section and the Pastors Connection Network exist because the loneliest job in the building is the one standing up front." },
-  { href: "/leadership", label: "If you lead and teach", desc: "A working library on preaching, reading Scripture, and forming leaders. Built to be used, not admired." },
   { href: "/marriage", label: "If your marriage needs more than tips", desc: "Writing on covenant for two people still keeping a promise they are no longer sure they understand." },
   { href: "/parenting", label: "If you are raising children without a map", desc: "From a father of five sons who was raised without one. Being a little scared turns out to be part of the qualification." },
 ];

@@ -45,12 +45,6 @@ const TOOL_MAP: Record<string, ToolRec> = {
       "A serious diagnostic for the covenant relationship — not tips, but an honest read of where you are.",
     href: "/tools/marriage-assessment",
   },
-  "pastor-burnout": {
-    name: "Pastor Burnout Diagnostic",
-    description:
-      "An honest assessment of the cost you are carrying — and whether it is sustainable.",
-    href: "/tools/pastor-burnout",
-  },
   "life-audit": {
     name: "Life Audit",
     description:
@@ -88,7 +82,7 @@ const SLUG_TOOL_RULES: Array<{ keywords: string[]; toolKey: string }> = [
   { keywords: ["deconstruction", "leaving", "exvangelical", "nones", "reconstructing"], toolKey: "start-here" },
   { keywords: ["marriage", "interfaith-marriage", "covenant"], toolKey: "marriage-assessment" },
   { keywords: ["parenting", "raising-kids", "family"], toolKey: "parenting-guide" },
-  { keywords: ["burnout", "pastor-burnout"], toolKey: "pastor-burnout" },
+  { keywords: ["burnout"], toolKey: "emotional-health" },
   { keywords: ["leadership", "megachurch", "church-health", "toxic-masculinity"], toolKey: "church-health" },
   { keywords: ["suffering", "doubt", "bible", "genesis", "miracles", "scripture", "god-real", "historical-jesus"], toolKey: "deep-bible" },
   { keywords: ["denomination", "calvinism", "arminianism", "liturgical", "creeds", "charismatic", "schism", "reformation"], toolKey: "theology-quiz" },
@@ -101,7 +95,7 @@ const PILLAR_TOOL_FALLBACK: Record<string, string> = {
   "capture-by-the-left": "bible-on-topic",
   "reading-scripture-past-our-politics": "deep-bible",
   "after-christendom-pillar": "theology-quiz",
-  "the-pastoral-angle": "pastor-burnout",
+  "the-pastoral-angle": "emotional-health",
   "living-well-after-christendom": "life-audit",
 };
 

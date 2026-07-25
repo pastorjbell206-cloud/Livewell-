@@ -226,9 +226,8 @@ export default function Table() {
                 Leading a table is a skill anyone can learn. Start with how to host, how to ask a question and wait, and how to raise the next leader instead of keeping the seat.
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <Link href="/leadership/guides" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Training guides for leaders</Link>
                 <Link href="/discipleship" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>The discipleship pathway</Link>
-                <Link href="/leadership" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>The leadership library</Link>
+                <Link href="/studyguides" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Study guides for groups</Link>
               </div>
             </div>
             <div>

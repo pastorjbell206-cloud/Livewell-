@@ -2,7 +2,7 @@
 /**
  * The site's grouped navigation — one source of truth for the footer and the
  * header. The footer's five-column layout is the mental model the whole site
- * navigates by (The Pillars / Write & Read / Libraries & Tools / For Pastors /
+ * navigates by (The Pillars / Write & Read / Libraries & Tools / Family /
  * Connect); the header renders these same groups so the two agree. Edit a link
  * once here and both surfaces update together.
  */
@@ -43,7 +43,6 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Theological Depth", href: "/theology", primary: true },
       { label: "Prophetic Justice", href: "/justice", primary: true },
       { label: "Prophetic Disruption", href: "/disruption", primary: true },
-      { label: "Leadership Formation", href: "/leadership", primary: true },
       { label: "Living Well", href: "/living-well", primary: true },
       { label: "All six pillars", href: "/pillars", primary: true },
       { label: "The Map", href: "/map", primary: true },
@@ -60,8 +59,6 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Start Here", href: "/start", primary: true },
       { label: "The Commonplace", href: "/library" },
       { label: "The Framework", href: "/framework" },
-      { label: "Marriage", href: "/marriage" },
-      { label: "Parenting", href: "/parenting" },
     ],
   },
   {
@@ -83,20 +80,25 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Wisdom Finder", href: "/tools/wisdom-finder" },
       { label: "How-To Guides", href: "/how-tos" },
       { label: "Questions people ask", href: "/faq" },
-      { label: "Leadership Library", href: "/leadership/library" },
-      { label: "Sermon Series Library", href: "/leadership/sermon-series" },
     ],
   },
   {
-    title: "For Pastors",
+    // Replaces the former "For Pastors" group. The pastoring and leadership
+    // material now lives with the Pastors Connection Network; this tab gathers
+    // the household work that was scattered across the other groups.
+    title: "Family",
     links: [
-      { label: "Pastors Connection Network", href: "/pastors", primary: true },
-      { label: "The Leadership Hub", href: "/leadership", primary: true },
-      { label: "The Hard Issues Series", href: "/resources/hard-issues-series", primary: true },
-      { label: "Church Leadership", href: "/for-leaders", primary: true },
-      { label: "The Pastoral Angle", href: "/the-pastoral-angle" },
-      { label: "Deep Formation", href: "/leadership/formation" },
-      { label: "Downloads & Study Guides", href: "/resources" },
+      { label: "Marriage", href: "/marriage", primary: true },
+      { label: "Parenting", href: "/parenting", primary: true },
+      { label: "Family Devotions", href: "/family/devotions", primary: true },
+      { label: "The Family Catechism", href: "/family/catechism", primary: true },
+      { label: "Family Reading Plans", href: "/family/reading-plans", primary: true },
+      { label: "Marriage Health Assessment", href: "/tools/marriage-assessment", primary: true },
+      { label: "Family Devotion Builder", href: "/tools/family-devotions" },
+      { label: "Parenting Stage Guide", href: "/tools/parenting-guide" },
+      { label: "Scripture for Parents", href: "/tools/parenting-verses" },
+      { label: "Raising Believers", href: "/raising-believers" },
+      { label: "Everything for the household", href: "/family" },
     ],
   },
   {
