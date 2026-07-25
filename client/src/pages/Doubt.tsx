@@ -84,8 +84,12 @@ export default function Doubt() {
 
       <MinimalNav />
 
+      {/* This page renders the nav directly rather than through Layout, so it
+          declares its own main landmark — the skip link in MinimalNav targets it. */}
+      <main id="main">
+
       {/* HERO SECTION */}
-      <section style={{ background: "var(--ink)", color: "var(--paper)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <h1 style={{ fontSize: "clamp(36px, 5vw, 56px)", fontWeight: "bold", lineHeight: "1.2", marginBottom: "24px", fontFamily: "var(--F)" }}>
             When the Questions Won't Stop
@@ -173,7 +177,7 @@ export default function Doubt() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "24px" }}>
             {HARD_QUESTIONS.map((item, i) => (
               <Link key={i} href={item.href} style={{ textDecoration: "none" }}>
-                <div style={{ background: "var(--ink)", color: "var(--paper)", padding: "32px", borderRadius: "8px", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "space-between", minHeight: "100px" }}>
+                <div style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "32px", borderRadius: "8px", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "space-between", minHeight: "100px" }}>
                   <h3 style={{ fontSize: "16px", fontWeight: "bold", margin: 0 }}>
                     {item.q}
                   </h3>
@@ -195,7 +199,7 @@ export default function Doubt() {
             your foundations are solid and where the gaps are, then hands you the
             reading that meets you there instead of a verdict.
           </p>
-          <Link href="/tools/theology-quiz" style={{ display: "inline-block", background: "var(--ink)", color: "var(--bone)", padding: "13px 28px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, borderRadius: "3px", textDecoration: "none" }}>
+          <Link href="/tools/theology-quiz" style={{ display: "inline-block", background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "13px 28px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, borderRadius: "3px", textDecoration: "none" }}>
             Take the quiz
           </Link>
         </div>
@@ -240,6 +244,8 @@ export default function Doubt() {
           </Link>
         </div>
       </section>
+
+      </main>
 
       <Footer />
     </div>

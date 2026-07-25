@@ -6,7 +6,7 @@
  * essay verified against client/src/lib/pillar-assignments.ts (the filing
  * registry) — this component fetches nothing, so every link resolves and the
  * card never depends on the network settling. We resolve the current post to
- * its six-pillar id via pillarForPost, offer that pillar's cornerstones (minus
+ * its pillar id via pillarForPost, offer that pillar's cornerstones (minus
  * the current essay, de-duplicated), and top up from a cross-pillar cornerstone
  * set when a pillar is thin — so the reader always gets three to four.
  */

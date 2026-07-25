@@ -32,7 +32,7 @@ export default function SubstackPage() {
             <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-4" style={{ color: "var(--gold)" }}>
               Substack
             </div>
-            <h1 className="font-display font-bold mb-4" style={{ color: "var(--bone)", fontSize: "clamp(2.25rem, 4vw, 3rem)" }}>
+            <h1 className="font-display font-bold mb-4" style={{ color: "var(--charcoal-fg)", fontSize: "clamp(2.25rem, 4vw, 3rem)" }}>
               The thinking behind the thinking
             </h1>
             <p className="font-body text-lg" style={{ color: "rgba(244,241,234,0.7)", lineHeight: 1.8 }}>

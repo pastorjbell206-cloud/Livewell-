@@ -41,7 +41,7 @@ export default function NationHub() {
     <Layout>
       <SEOMeta title="Christ and the Nation — The Bible, America, and Power" description="Was America founded as a Christian nation? How close is each party to the Bible? What would a biblical government mean? An even-handed look at the body politic." url="https://www.livewellbyjamesbell.co/nation" />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>Christ and the Nation</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 400, lineHeight: 1.02, letterSpacing: "-0.03em", marginBottom: "20px", maxWidth: "18ch" }}>
@@ -70,8 +70,8 @@ export default function NationHub() {
               <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{it.desc}</p>
             </Link>
           ))}
-          <div style={{ ...card, background: "var(--charcoal)", borderTop: "3px solid var(--mustard)", color: "var(--bone)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-            <p style={{ fontFamily: "var(--F)", fontSize: "20px", lineHeight: 1.4, color: "var(--bone)", marginBottom: "12px" }}>Render to Caesar what is Caesar's. And to God what is God's.</p>
+          <div style={{ ...card, background: "var(--charcoal)", borderTop: "3px solid var(--mustard)", color: "var(--charcoal-fg)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+            <p style={{ fontFamily: "var(--F)", fontSize: "20px", lineHeight: 1.4, color: "var(--charcoal-fg)", marginBottom: "12px" }}>Render to Caesar what is Caesar's. And to God what is God's.</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "14px" }}>
               <Link href="/disruption" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)", fontSize: "13px" }}>Prophetic Disruption →</Link>
               <Link href="/justice" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)", fontSize: "13px" }}>Prophetic Justice →</Link>

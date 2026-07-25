@@ -9,7 +9,11 @@ import { LIBRARY_SOURCES, pickString } from "./catalog";
  */
 describe("content catalog registry", () => {
   it("registers every static library with a well-formed source", () => {
-    expect(LIBRARY_SOURCES.length).toBeGreaterThanOrEqual(10);
+    // Was 10 until the Leadership Library and Deep Formation sources moved to
+    // the Pastors Connection Network with the rest of the pastoring material
+    // (see archive/pcn-handoff/). The floor guards against a library silently
+    // dropping out of search and browse; it is not a target to grow.
+    expect(LIBRARY_SOURCES.length).toBeGreaterThanOrEqual(8);
     for (const s of LIBRARY_SOURCES) {
       expect(s.url.startsWith("/")).toBe(true);
       expect(s.url.endsWith(".json")).toBe(true);

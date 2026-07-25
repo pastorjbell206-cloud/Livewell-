@@ -330,7 +330,7 @@ export default function ScriptureMemory() {
       <section
         style={{
           background: "var(--charcoal)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
           padding: "80px 32px 60px",
           textAlign: "center",
         }}

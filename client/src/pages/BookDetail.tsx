@@ -126,7 +126,7 @@ export default function BookDetail() {
         </section>
 
         {/* Book Hero */}
-        <section className="py-16" style={{ backgroundColor: "#FFFFFF" }}>
+        <section className="py-16" style={{ backgroundColor: "var(--card)" }}>
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
               {/* Book Cover */}
@@ -146,7 +146,7 @@ export default function BookDetail() {
                     <Link href={`/read/${readSlug}`}>
                       <a
                         className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded font-ui font-medium no-underline transition-colors"
-                        style={{ backgroundColor: "var(--ink)", color: "var(--bone)", borderBottom: "2px solid var(--mustard)" }}
+                        style={{ backgroundColor: "var(--charcoal)", color: "var(--charcoal-fg)", borderBottom: "2px solid var(--mustard)" }}
                       >
                         <BookOpen size={18} /> Read the full book free
                       </a>
@@ -167,7 +167,7 @@ export default function BookDetail() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded font-ui font-medium no-underline transition-colors"
-                      style={{ backgroundColor: "var(--ink)", color: "var(--bone)" }}
+                      style={{ backgroundColor: "var(--charcoal)", color: "var(--charcoal-fg)" }}
                     >
                       <ExternalLink size={18} /> Purchase Now
                     </a>
@@ -246,7 +246,7 @@ export default function BookDetail() {
                 fontSize: "clamp(28px, 4vw, 38px)",
                 fontWeight: 400,
                 letterSpacing: "-0.015em",
-                color: "var(--bone)",
+                color: "var(--charcoal-fg)",
                 marginBottom: "16px",
               }}
             >

@@ -66,12 +66,6 @@ const GROUPS: Group[] = [
         href: "/tools/marriage-assessment",
       },
       {
-        title: "The Pastor Burnout Diagnostic",
-        takeIf: "you lead a church and you are tired in a way a day off does not fix.",
-        gives: "An honest measure of the cost you are carrying, and whether it is sustainable.",
-        href: "/tools/pastor-burnout",
-      },
-      {
         title: "The Life Audit",
         takeIf: "the life you are living and the life you say you want have quietly diverged.",
         gives: "A structured look at the gap, without shame.",
@@ -83,7 +77,7 @@ const GROUPS: Group[] = [
     eyebrow: "For what you believe",
     heading: "The convictions under the surface.",
     blurb:
-      "What you actually believe — and whether you hold it evenly — is measurable. These three are the mirror for the mind.",
+      "What you actually believe — and whether you hold it evenly — is measurable. These two are the mirror for the mind.",
     items: [
       {
         title: "The Theology Quiz",
@@ -96,12 +90,6 @@ const GROUPS: Group[] = [
         takeIf: "you suspect you defend truth selectively — one standard for your side, another for theirs.",
         gives: "A mirror, not a scorecard.",
         href: "/disruption/consistency",
-      },
-      {
-        title: "The Formation Inventory",
-        takeIf: "you lead, and you want character measured before competence.",
-        gives: "A leader's honest reading of the inner life that holds the work up.",
-        href: "/leadership/inventory",
       },
     ],
   },
@@ -129,13 +117,13 @@ export default function Assessments() {
     <Layout>
       <SEOMeta
         title="Assessments — Where Are You, Actually?"
-        description="Nine honest instruments in one place: the spiritual check-in, the whole-life map, marriage, burnout, theology, and consistency. A mirror, not a verdict — and the writing to meet what it shows you."
+        description="Eight honest instruments in one place: the spiritual check-in, the whole-life map, marriage, burnout, theology, and consistency. A mirror, not a verdict — and the writing to meet what it shows you."
         url="https://www.livewellbyjamesbell.co/assessments"
         structuredData={assessmentsSchema}
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Assessments</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 60px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "20px", maxWidth: "20ch" }}>
@@ -197,7 +185,7 @@ export default function Assessments() {
       ))}
 
       {/* CLOSING */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 28px)", fontStyle: "italic", lineHeight: 1.4, color: "rgba(245,240,230,0.92)", marginBottom: "18px" }}>
             The mirror is not the point. What you do the day after you look is.

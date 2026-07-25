@@ -161,7 +161,7 @@ export default function ParentingVerses() {
         description="Bible verses for the real moments of parenting — fear, anger, identity, obedience, screens, doubt — each with a short, honest note for the parent."
         url="https://www.livewellbyjamesbell.co/tools/parenting-verses"
       />
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>For the home</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 48px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px" }}>

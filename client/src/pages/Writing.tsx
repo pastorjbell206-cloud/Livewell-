@@ -108,7 +108,7 @@ export default function Writing() {
         const track = pillarToTrack(p.pillar);
         if (track !== activeTrack) return false;
       }
-      // Pillar (legacy two-movement / six-pillar taxonomy)
+      // Pillar (two-movement pillar taxonomy)
       if (activePillar && !isNewPillar) {
         const pl = pillarForPost(p);
         if (!pl || pl.slug !== activePillar) return false;
@@ -212,7 +212,7 @@ export default function Writing() {
         style={{
           background: "var(--charcoal)",
           padding: "var(--s-6) var(--s-4) var(--s-5)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
         }}
       >
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
@@ -296,7 +296,7 @@ export default function Writing() {
                   padding: "6px 12px",
                   borderRadius: "999px",
                   border: `1px solid ${!activeSubTheme ? "var(--mustard)" : "rgba(245,240,230,0.25)"}`,
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   textDecoration: "none",
                 }}
               >
@@ -315,7 +315,7 @@ export default function Writing() {
                     padding: "6px 12px",
                     borderRadius: "999px",
                     border: `1px solid ${activeSubTheme === st ? "var(--mustard)" : "rgba(245,240,230,0.25)"}`,
-                    color: "var(--bone)",
+                    color: "var(--charcoal-fg)",
                     textDecoration: "none",
                   }}
                 >
@@ -352,7 +352,7 @@ export default function Writing() {
         />
       )}
 
-      {/* PILLAR CHIPS — the two-movement / six-pillar taxonomy */}
+      {/* PILLAR CHIPS — the two-movement pillar taxonomy */}
       <section
         style={{
           background: "var(--bone)",

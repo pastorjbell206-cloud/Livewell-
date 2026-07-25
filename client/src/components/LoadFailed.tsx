@@ -64,8 +64,8 @@ export function LoadFailed({
           type="button"
           onClick={onRetry}
           style={{
-            background: "var(--ink)",
-            color: "var(--bone)",
+            background: "var(--charcoal)",
+            color: "var(--charcoal-fg)",
             border: "none",
             borderBottom: "2px solid var(--mustard)",
             borderRadius: "var(--radius-sm)",

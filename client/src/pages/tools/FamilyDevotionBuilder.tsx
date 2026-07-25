@@ -967,7 +967,7 @@ export default function FamilyDevotionBuilder() {
       )}
 
       {/* HERO */}
-      <section className="fdb-screen" style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "80px 32px 60px", textAlign: "center" }}>
+      <section className="fdb-screen" style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "80px 32px 60px", textAlign: "center" }}>
         <div className="wrap" style={{ maxWidth: "700px", margin: "0 auto" }}>
           <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.2em", color: "var(--mustard)", marginBottom: "16px", textTransform: "uppercase" }}>
             Free Tool

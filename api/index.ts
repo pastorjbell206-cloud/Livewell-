@@ -1674,9 +1674,9 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         const slug = input?.slug || input?.title?.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
         return await withConn(async (c) => {
           const [r]: any = await c.execute(
-            `INSERT INTO posts (title, slug, body, excerpt, pillar, readTime, published, createdAt, updatedAt)
-             VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())`,
-            [input?.title || "", slug, input?.body || "", input?.excerpt || "", input?.pillar || "Theological Depth", input?.readTime || "5 min", input?.published ?? false]
+            `INSERT INTO posts (title, slug, body, excerpt, pillar, readTime, coverImage, published, createdAt, updatedAt)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, NOW(), NOW())`,
+            [input?.title || "", slug, input?.body || "", input?.excerpt || "", input?.pillar || "Theological Depth", input?.readTime || "5 min", input?.coverImage || null, input?.published ?? false]
           );
           const created = await trpcGetPost(r.insertId);
           return trpcOk(res, created);
@@ -1689,7 +1689,7 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         return await withConn(async (c) => {
           const sets: string[] = [];
           const params: any[] = [];
-          for (const field of ["title", "slug", "body", "excerpt", "pillar", "readTime", "published", "featured"]) {
+          for (const field of ["title", "slug", "body", "excerpt", "pillar", "readTime", "coverImage", "published", "featured"]) {
             if (input?.[field] !== undefined) {
               sets.push(`${field} = ?`);
               params.push(input[field]);

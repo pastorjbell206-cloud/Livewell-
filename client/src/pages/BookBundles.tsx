@@ -144,7 +144,7 @@ export function BookBundles() {
       />
 
       {/* Hero — dark section */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={wrap}>
           <Breadcrumb items={[{ label: "Books" }, { label: "Bundles" }]} className="mb-6" />
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>The Bundles</div>
@@ -307,7 +307,7 @@ export function BookBundles() {
                       fontSize: "14px",
                       fontWeight: 500,
                       letterSpacing: "0.02em",
-                      color: "var(--bone)",
+                      color: "var(--charcoal-fg)",
                       background: "var(--charcoal)",
                       border: "none",
                       borderRadius: "var(--radius-sm)",

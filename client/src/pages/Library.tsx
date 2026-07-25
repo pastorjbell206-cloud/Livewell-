@@ -142,7 +142,7 @@ export default function Library() {
   return (
     <Layout>
       <SEOMeta
-        title="The Library — A commonplace book"
+        title="The Commonplace — A quote book of what is worth keeping"
         description="A working commonplace book — quotes from Keller, Brueggemann, Peterson, Bonhoeffer, Newbigin, Bellah, Taylor, Haidt and others, curated by James Bell."
         url="https://www.livewellbyjamesbell.co/library"
       />
@@ -152,7 +152,7 @@ export default function Library() {
         style={{
           background: "var(--charcoal)",
           padding: "var(--s-7) var(--s-4) var(--s-6)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
         }}
       >
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>

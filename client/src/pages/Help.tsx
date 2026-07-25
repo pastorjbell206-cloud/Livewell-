@@ -52,6 +52,22 @@ const NEEDS: Need[] = [
     ],
   },
   {
+    // Replaced the former "I am a leader running on empty" need, whose four
+    // links all pointed at pastor material that moved to PCN. Exhaustion was
+    // never only a pastor's problem, and /help should not lose the door.
+    id: "empty",
+    title: "I am running on empty",
+    opener: "Not a bad week. The kind of tired sleep does not touch, in a life that quietly stopped having any room in it.",
+    helps: [
+      { href: "/life/ambition-and-rest", label: "Read: why the work never feels finished, and what rest is actually for", kind: "read" },
+      { href: "/tools/life-audit", label: "Assess: where the life you are living and the life you meant to live have parted", kind: "assess" },
+      { href: "/life/rest-and-the-sabbath", label: "Read: rest as something commanded, not earned", kind: "read" },
+      { href: "/tools/rule-of-life", label: "Do: build a rule of life — ordinary practices, kept on ordinary weeks", kind: "do" },
+      { href: "/tools/emotional-health", label: "Assess: an honest read on where you actually are", kind: "assess" },
+      { href: "/tools/prayer-generator", label: "Pray: words for a week with nothing left", kind: "pray" },
+    ],
+  },
+  {
     id: "doubt",
     title: "I believe, but I am full of doubt",
     opener: "Doubt is not the opposite of faith. It is often part of a living one. You do not have to hide it here.",
@@ -135,17 +151,6 @@ const NEEDS: Need[] = [
     ],
   },
   {
-    id: "burnout",
-    title: "I am a leader running on empty",
-    opener: "The loneliest job in the room. If you are a pastor near the end of yourself, start here. Seeking help is faith, not failure.",
-    helps: [
-      { href: "/pastoral-burnout", label: "Read: why pastors leave, and how to stay whole", kind: "read" },
-      { href: "/tools/pastor-burnout", label: "Assess: a burnout and rest self-check", kind: "assess" },
-      { href: "/leadership/inventory", label: "Assess: the character-first leadership inventory", kind: "assess" },
-      { href: "/leadership/formation/burnout-and-the-theology-of-rest", label: "Read: the theology of rest", kind: "read" },
-    ],
-  },
-  {
     id: "grow",
     title: "I just want to grow, and follow well",
     opener: "Not in crisis. You want the whole of life to come under one Lord, on an ordinary Tuesday. Here is the path.",
@@ -178,7 +183,7 @@ export default function Help() {
         url="https://www.livewellbyjamesbell.co/help"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Start here</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.4vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "18ch" }}>

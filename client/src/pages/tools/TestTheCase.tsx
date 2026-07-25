@@ -120,7 +120,7 @@ export default function TestTheCase() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>Test the Case</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.5vw, 56px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
@@ -224,7 +224,7 @@ export default function TestTheCase() {
                 {stepIdx > 0 && (
                   <button type="button" onClick={back} style={{ ...btn, background: "var(--card)", color: "var(--ink)", border: "1px solid var(--border)" }}>Back</button>
                 )}
-                <button type="button" onClick={advance} style={{ ...btn, background: "var(--ink)", color: "var(--bone)", border: "1px solid var(--ink)" }}>
+                <button type="button" onClick={advance} style={{ ...btn, background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "1px solid var(--ink)" }}>
                   {isLast ? "See where it lands" : "That's fair, keep going"}
                 </button>
               </div>

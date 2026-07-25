@@ -98,7 +98,7 @@ export default function CarePlan() {
     <Layout>
       {data && <SEOMeta title={`${data.title} — An Eight-Week Guided Plan`} description={data.subtitle} url={`https://www.livewellbyjamesbell.co/plans/${slug}`} />}
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>
             <Link href="/help" style={{ color: "inherit" }}>Find Help</Link> · An eight-week guided plan
@@ -146,7 +146,7 @@ export default function CarePlan() {
                 <div
                   key={w.n}
                   style={{
-                    background: "#FFFFFF",
+                    background: "var(--card)",
                     border: isCurrent ? "1px solid var(--mustard)" : "1px solid rgba(20,17,12,0.08)",
                     borderTop: "2px solid var(--mustard)",
                     padding: "var(--s-3)",

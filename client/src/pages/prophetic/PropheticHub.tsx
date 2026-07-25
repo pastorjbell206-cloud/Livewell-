@@ -46,7 +46,7 @@ export default function PropheticHub({ config }: { config: SectionConfig }) {
       <SEOMeta title={`${config.label} — ${config.hero.title}`} description={config.hero.text.slice(0, 180)} url={`https://www.livewellbyjamesbell.co${config.base}`} />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>{config.hero.eyebrow}</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 66px)", fontWeight: 400, lineHeight: 1.02, letterSpacing: "-0.03em", marginBottom: "20px", maxWidth: "17ch" }}>{config.hero.title}</h1>

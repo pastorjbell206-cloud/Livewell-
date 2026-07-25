@@ -51,7 +51,7 @@ export default function GatedDownload({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "11px 18px", textDecoration: "none", borderRadius: "2px" }}
+        style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "11px 18px", textDecoration: "none", borderRadius: "2px" }}
       >
         <Download size={15} /> {label}
       </a>
@@ -63,7 +63,7 @@ export default function GatedDownload({
       <button
         onClick={() => setOpen(true)}
         aria-expanded={open}
-        style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "11px 18px", border: "none", borderRadius: "2px", cursor: "pointer" }}
+        style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "11px 18px", border: "none", borderRadius: "2px", cursor: "pointer" }}
       >
         <Download size={15} /> {label}
       </button>
@@ -85,7 +85,7 @@ export default function GatedDownload({
       <button
         type="submit"
         disabled={busy}
-        style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "11px 16px", border: "none", borderRadius: "2px", cursor: busy ? "default" : "pointer" }}
+        style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal-fg)", background: "var(--charcoal)", padding: "11px 16px", border: "none", borderRadius: "2px", cursor: busy ? "default" : "pointer" }}
       >
         {busy ? <Loader2 size={15} className="animate-spin" /> : <Check size={15} />} Get the download
       </button>

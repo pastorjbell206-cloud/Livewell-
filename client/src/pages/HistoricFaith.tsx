@@ -142,7 +142,7 @@ export default function HistoricFaith() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>The Historic Faith</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "20px", maxWidth: "20ch" }}>
@@ -181,7 +181,7 @@ export default function HistoricFaith() {
       </section>
 
       {/* THE FAITH UNDERNEATH */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "12px" }}>The faith underneath</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.6vw, 38px)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.12, marginBottom: "10px", maxWidth: "24ch" }}>

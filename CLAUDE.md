@@ -350,7 +350,7 @@ Not warm in the coffee-shop sense. Not dark in the luxury-brand sense. The feeli
 
 ## Strategic Reminders
 
-- The PCN network (thousands of pastors) is the highest-yield growth channel. Every feature that serves pastors has distribution built in.
+- The PCN network (thousands of pastors) is the highest-yield growth channel, but it is now a **separate platform**. The pastoring and leadership material was moved off this site to `archive/pcn-handoff/` (see its README) and the pastor URLs redirect to pastorsconnectionnetwork.com. Do not rebuild pastor-facing features here; the audience for this site is skeptics, doubting Christians, and households. Pastors remain a distribution channel — a pastor who trusts this writing hands it to their people — not an on-site audience to serve.
 - Stripe integration is pending for membership/book purchases.
 - The homepage is strong; inner pages need the same design system applied.
 - Facebook following (facebook.com/james.bell.609252) is the existing audience. Substack is the newsletter channel.
@@ -655,8 +655,8 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   is served at the site root for answer engines. JSON-LD renders via SEOMeta.
 - **IA (approved blueprint, implemented)**: the six pillars (`PILLARS_V2` in
   `taxonomy.ts`, under the two movements) are the only taxonomy spine; footer
-  mirrors the header (The Pillars / Write & Read / Libraries & Tools / For
-  Pastors / Connect); "Resources" names exactly one
+  mirrors the header (The Pillars / Write & Read / Libraries & Tools / Family /
+  Connect); "Resources" names exactly one
   thing (the hub at /resources); all tools are registered in /tools; /quiz
   301s to /tools/theology-quiz (vercel.json).
 - **Payments**: Stripe checkout is config-driven — live only when

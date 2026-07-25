@@ -69,7 +69,7 @@ export default function Marriage() {
   return (
     <div style={{ background: "var(--bone)" }}>
       <SEOMeta
-        title="Christian Marriage Help | LiveWell by James Bell"
+        title="Christian Marriage Help — Covenant, Conflict, and Repair"
         description="Covenant theology applied to marriage: articles on communication, conflict, and emotional labor, for couples who want more than advice."
         keywords="Christian marriage help, biblical marriage, marriage counseling, marriage conflict, marriage communication, keeping marriage vows"
         url="https://www.livewellbyjamesbell.co/marriage"
@@ -78,8 +78,12 @@ export default function Marriage() {
 
       <MinimalNav />
 
+      {/* This page renders the nav directly rather than through Layout, so it
+          declares its own main landmark — the skip link in MinimalNav targets it. */}
+      <main id="main">
+
       {/* HERO SECTION */}
-      <section style={{ background: "var(--ink)", color: "var(--charcoal-fg)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <h1 style={{ fontSize: "clamp(36px, 5vw, 56px)", fontWeight: "bold", lineHeight: "1.2", marginBottom: "24px", fontFamily: "var(--F)" }}>
             When Your Marriage Needs More Than Advice
@@ -197,7 +201,7 @@ export default function Marriage() {
             Start with the Marriage Health Assessment. It takes 10 minutes and will show you exactly where your marriage is strongest and where repair work begins.
           </p>
           <Link href="/tools/marriage-assessment" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--ink)", color: "var(--charcoal-fg)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
+            <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
               Take the Assessment
             </button>
           </Link>
@@ -211,6 +215,8 @@ export default function Marriage() {
       </section>
 
       <CrisisHelp />
+      </main>
+
       <Footer />
     </div>
   );

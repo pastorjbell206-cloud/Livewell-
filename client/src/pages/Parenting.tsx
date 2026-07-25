@@ -65,7 +65,7 @@ export default function Parenting() {
   return (
     <div style={{ background: "var(--paper)" }}>
       <SEOMeta
-        title="Christian Parenting Help | LiveWell by James Bell"
+        title="Christian Parenting Help — From a Father of Five"
         description="Raising kids who think, question, and believe. Christian parenting on faith formation, doubt, and technology, for every season."
         keywords="Christian parenting, raising kids in faith, how to talk to kids about God, faith and teenagers, parenting resources, Christian family"
         url="https://www.livewellbyjamesbell.co/parenting"
@@ -74,8 +74,12 @@ export default function Parenting() {
 
       <MinimalNav />
 
+      {/* This page renders the nav directly rather than through Layout, so it
+          declares its own main landmark — the skip link in MinimalNav targets it. */}
+      <main id="main">
+
       {/* HERO SECTION */}
-      <section style={{ background: "var(--ink)", color: "var(--paper)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <h1 style={{ fontSize: "clamp(36px, 5vw, 56px)", fontWeight: "bold", lineHeight: "1.2", marginBottom: "24px", fontFamily: "var(--F)" }}>
             Raising Kids Who Think, Question, and Believe
@@ -224,6 +228,8 @@ export default function Parenting() {
           </div>
         </div>
       </section>
+
+      </main>
 
       <Footer />
     </div>

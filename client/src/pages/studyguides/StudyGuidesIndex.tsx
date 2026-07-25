@@ -10,8 +10,43 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { STUDY_GUIDES, type StudyGuideEntry } from "@/lib/studyguides-index";
 import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
+import { StatementBand } from "@/components/EditorialBlocks";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+
+/** How many guides run before the statement band breaks the grid. */
+const FIRST_RUN = 12;
+
+/** One run of guide cards. Extracted so the grid can be rendered twice — once
+ *  either side of the band — without duplicating the card markup. */
+function Grid({ guides }: { guides: StudyGuideEntry[] }) {
+  return (
+    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(380px, 100%), 1fr))", gap: "16px" }}>
+      {guides.map((g) => (
+        <Link
+          key={g.slug}
+          href={`/studyguides/${g.slug}`}
+          style={{ display: "flex", gap: "16px", textDecoration: "none", color: "inherit", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderRadius: "var(--radius-sm)", overflow: "hidden", height: "100%" }}
+        >
+          <div style={{ width: "104px", flexShrink: 0, alignSelf: "flex-start", aspectRatio: "3 / 4", overflow: "hidden" }}>
+            <GeneratedCover title={g.title} {...coverThemeFor(`${g.title} ${g.eyebrow}`)} style={{ width: "100%", height: "100%" }} />
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", flex: 1, minWidth: 0, padding: "var(--s-4) var(--s-4) var(--s-4) 0" }}>
+            {/* Simplified card: cover, title, the sessions/audience line, and
+                the link. The eyebrow descriptor and full blurb live on the
+                toolkit page (both fields stay in the data, just not rendered
+                here). g.eyebrow still feeds the cover theme above. */}
+            <div style={{ fontFamily: "var(--F)", fontSize: "23px", fontWeight: 500, color: "var(--ink)", lineHeight: 1.18, marginBottom: "10px" }}>{g.title}</div>
+            <div style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", marginBottom: "12px" }}>{g.audience} · {g.sessionsLabel}</div>
+            <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink)", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px", alignSelf: "flex-start", marginTop: "auto" }}>
+              Open the toolkit →
+            </span>
+          </div>
+        </Link>
+      ))}
+    </div>
+  );
+}
 
 export default function StudyGuidesIndex() {
   // Load the generated manifest so new guides appear automatically; fall back
@@ -32,7 +67,7 @@ export default function StudyGuidesIndex() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Study Guides · Leader's Toolkits</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.4vw, 58px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
@@ -51,35 +86,26 @@ export default function StudyGuidesIndex() {
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "var(--s-4)" }}>
             Free guides for groups, classes, and teams
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(380px, 100%), 1fr))", gap: "16px" }}>
-            {guides.map((g) => (
-              <Link
-                key={g.slug}
-                href={`/studyguides/${g.slug}`}
-                style={{ display: "flex", gap: "16px", textDecoration: "none", color: "inherit", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderRadius: "var(--radius-sm)", overflow: "hidden", height: "100%" }}
-              >
-                <div style={{ width: "104px", flexShrink: 0, alignSelf: "flex-start", aspectRatio: "3 / 4", overflow: "hidden" }}>
-                  <GeneratedCover title={g.title} {...coverThemeFor(`${g.title} ${g.eyebrow}`)} style={{ width: "100%", height: "100%" }} />
-                </div>
-                <div style={{ display: "flex", flexDirection: "column", flex: 1, minWidth: 0, padding: "var(--s-4) var(--s-4) var(--s-4) 0" }}>
-                  {/* Simplified card: cover, title, the sessions/audience line, and
-                      the link. The eyebrow descriptor and full blurb live on the
-                      toolkit page (both fields stay in the data, just not rendered
-                      here). g.eyebrow still feeds the cover theme above. */}
-                  <div style={{ fontFamily: "var(--F)", fontSize: "23px", fontWeight: 500, color: "var(--ink)", lineHeight: 1.18, marginBottom: "10px" }}>{g.title}</div>
-                  <div style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", marginBottom: "12px" }}>{g.audience} · {g.sessionsLabel}</div>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink)", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px", alignSelf: "flex-start", marginTop: "auto" }}>
-                    Open the toolkit →
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <Grid guides={guides.slice(0, FIRST_RUN)} />
+        </div>
+      </section>
+
+      {/* A beat between the shelves. Sixty cards in one unbroken run reads as a
+          directory; the band gives the eye somewhere to rest and says why the
+          collection exists before the second half of it. */}
+      <StatementBand eyebrow="Why these exist" width="30ch">
+        A room does not need a scholar at the front. It needs someone who read the hard thing first and did not flinch.
+      </StatementBand>
+
+      {/* THE GUIDES, CONTINUED */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={wrap}>
+          <Grid guides={guides.slice(FIRST_RUN)} />
         </div>
       </section>
 
       {/* CLOSING */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)", textAlign: "center" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--charcoal-fg)", textAlign: "center" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "17px", fontStyle: "italic", lineHeight: 1.6, color: "rgba(245,240,230,0.85)", marginBottom: "20px" }}>
             More guides are on the way. The booklets, libraries, and tools for leaders live in the wider resource hub.

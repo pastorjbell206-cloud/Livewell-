@@ -211,6 +211,10 @@ export default function StartHereQuiz() {
 
       <MinimalNav />
 
+      {/* This page renders the nav directly rather than through Layout, so it
+          declares its own main landmark — the skip link in MinimalNav targets it. */}
+      <main id="main">
+
       <section style={{ flex: 1, padding: "40px 20px", maxWidth: "900px", margin: "0 auto", width: "100%" }}>
         {!isComplete ? (
           <>
@@ -228,7 +232,6 @@ export default function StartHereQuiz() {
                   { label: "Doubt", href: "/doubt" },
                   { label: "Disciple someone", href: "/table" },
                   { label: "Grief", href: "/plans/grief" },
-                  { label: "Pastoring", href: "/for-pastors" },
                   { label: "The essays", href: "/writing" },
                 ].map((c) => (
                   <Link key={c.href} href={c.href} style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink)", textDecoration: "none", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "999px", padding: "8px 16px" }}>
@@ -430,6 +433,8 @@ export default function StartHereQuiz() {
           </>
         )}
       </section>
+
+      </main>
 
       <Footer />
     </div>

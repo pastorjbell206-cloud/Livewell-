@@ -10,16 +10,28 @@ import { PILLAR_ASSIGNMENTS } from "@/lib/pillar-assignments";
 
 /**
  * Taxonomy spine integrity (Option B — see docs/TAXONOMY-PROPOSAL.md).
- * Six-pillar PILLARS_V2 is the single public/code spine. This guards it: every
- * per-essay assignment must resolve to a real pillar and real sub-themes, so an
- * essay can't silently rot into a bad filing or fall through to the default.
+ * PILLARS_V2 is the single public/code spine. This guards it: every per-essay
+ * assignment must resolve to a real pillar and real sub-themes, so an essay
+ * can't silently rot into a bad filing or fall through to the default.
+ *
+ * Five pillars since 2026: id 4 (After Christendom) was merged into id 6
+ * (Living Well After Christendom) — the two named the same arc, one asking what
+ * ended and the other what to build once it had. The ids are deliberately NOT
+ * renumbered: they are the keys in PILLAR_ASSIGNMENTS, so closing the gap would
+ * silently re-file every essay on the site. A gap is the safe state; the
+ * assertion below pins it so the next edit is a decision, not an accident.
  */
 describe("taxonomy spine (PILLARS_V2)", () => {
-  it("has exactly six pillars with unique ids 1..6 and unique slugs", () => {
-    expect(PILLARS_V2).toHaveLength(6);
+  it("has five pillars with unique ids [1,2,3,5,6] and unique slugs", () => {
+    expect(PILLARS_V2).toHaveLength(5);
     const ids = PILLARS_V2.map((p) => p.id).sort((a, b) => a - b);
-    expect(ids).toEqual([1, 2, 3, 4, 5, 6]);
-    expect(new Set(PILLARS_V2.map((p) => p.slug)).size).toBe(6);
+    expect(ids).toEqual([1, 2, 3, 5, 6]);
+    expect(new Set(PILLARS_V2.map((p) => p.slug)).size).toBe(5);
+  });
+
+  it("has no essay still filed under the merged pillar 4", () => {
+    const orphans = Object.entries(PILLAR_ASSIGNMENTS).filter(([, a]) => a.pillar === 4);
+    expect(orphans, `essays still on the merged pillar: ${orphans.map(([s]) => s).join(", ")}`).toHaveLength(0);
   });
 
   it("keeps Pillar 6 as the formation door (Living Well After Christendom)", () => {

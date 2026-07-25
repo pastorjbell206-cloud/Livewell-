@@ -63,6 +63,17 @@
   --mustard-deep:#B08A12;
   --mustard-text:#7A6010;
 
+  /*  Category hues for the prophetic timeline. Decorative identifiers, not
+      brand colour — deep enough to read as text on a light card. They are
+      lightened under html.dark, where --card goes near-black and these deep
+      values would otherwise disappear.  */
+  --cat-church:#7A1F1F;
+  --cat-empire:#5A4A2A;
+  --cat-capitalism:#8A5A00;
+  --cat-communism:#5A2A6A;
+  --cat-nation:#2A4A6A;
+  --cat-affirm:#3E5C3A;
+
   /*  Semantic score tokens (warm/earthy, brand-harmonized)  */
   --ok:#3D5A40;--ok-bg:rgba(61,90,64,0.08);
   --alert:#9B2C2C;--alert-bg:rgba(155,44,44,0.08);
@@ -117,6 +128,9 @@ html.dark{
   --ink:#F4F1EA;--ink-muted:#9A968E;
   /* Mustard — slightly desaturated for dark mode to keep WCAG AA */
   --mustard:#D4A017;--mustard-deep:#B08A12;--mustard-text:#E0B945;
+  /* Category hues — lightened so they stay legible on the near-black card */
+  --cat-church:#E09A9A;--cat-empire:#C9B98A;--cat-capitalism:#E0A93F;
+  --cat-communism:#C49AD8;--cat-nation:#8FB4D9;--cat-affirm:#8FBF8A;
   /* Semantic score tokens — foregrounds lightened for dark contrast */
   --ok:#7FA486;--ok-bg:rgba(61,90,64,0.12);
   --alert:#D98C8C;--alert-bg:rgba(155,44,44,0.12);

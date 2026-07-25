@@ -81,7 +81,6 @@ const STATIC_PAGES = [
   { url: "/prayer-in-the-dark", priority: "0.85", changefreq: "monthly" },
   { url: "/the-body-you-left", priority: "0.85", changefreq: "monthly" },
   { url: "/skeptic-track", priority: "0.9", changefreq: "monthly" },
-  { url: "/pastors-resource-wall", priority: "0.85", changefreq: "weekly" },
   { url: "/roadmap", priority: "0.8", changefreq: "monthly" },
   { url: "/library", priority: "0.8", changefreq: "weekly" },
   { url: "/diagnostic", priority: "0.8", changefreq: "monthly" },
@@ -93,8 +92,6 @@ const STATIC_PAGES = [
   { url: "/writing?track=manhood", priority: "0.7", changefreq: "weekly" },
   { url: "/writing?track=womanhood", priority: "0.7", changefreq: "weekly" },
   { url: "/writing?track=finances", priority: "0.7", changefreq: "weekly" },
-  { url: "/for-pastors", priority: "0.75", changefreq: "weekly" },
-  { url: "/pastors", priority: "0.7", changefreq: "monthly" },
   { url: "/tools", priority: "0.6", changefreq: "monthly" },
   { url: "/work-with-james", priority: "0.6", changefreq: "monthly" },
   { url: "/membership", priority: "0.7", changefreq: "monthly" },
@@ -103,23 +100,9 @@ const STATIC_PAGES = [
   { url: "/writing?pillar=theological-depth", priority: "0.85", changefreq: "weekly" },
   { url: "/writing?pillar=prophetic-justice", priority: "0.85", changefreq: "weekly" },
   { url: "/writing?pillar=prophetic-disruption", priority: "0.85", changefreq: "weekly" },
-  { url: "/writing?pillar=leadership-formation", priority: "0.85", changefreq: "weekly" },
   { url: "/writing?pillar=integrated-life", priority: "0.85", changefreq: "weekly" },
   { url: "/writing?series=true", priority: "0.8", changefreq: "weekly" },
   // Static content libraries (file-driven, no DB needed).
-  { url: "/leadership", priority: "0.85", changefreq: "weekly" },
-  { url: "/leadership/library", priority: "0.85", changefreq: "weekly" },
-  { url: "/leadership/sermon-series", priority: "0.8", changefreq: "monthly" },
-  { url: "/leadership/bible-sermons", priority: "0.85", changefreq: "monthly" },
-  { url: "/leadership/formation", priority: "0.85", changefreq: "weekly" },
-  { url: "/leadership/servant-leadership", priority: "0.85", changefreq: "monthly" },
-  { url: "/leadership/handbook", priority: "0.9", changefreq: "monthly" },
-  { url: "/leadership/guides", priority: "0.85", changefreq: "monthly" },
-  { url: "/leadership/guides/servant-leadership-bible-study", priority: "0.8", changefreq: "monthly" },
-  { url: "/leadership/guides/elder-training-manual", priority: "0.8", changefreq: "monthly" },
-  { url: "/leadership/guides/deacon-training-manual", priority: "0.8", changefreq: "monthly" },
-  { url: "/leadership/guides/how-to-develop-leaders", priority: "0.8", changefreq: "monthly" },
-  { url: "/leadership/inventory", priority: "0.8", changefreq: "monthly" },
   { url: "/resources/context", priority: "0.9", changefreq: "weekly" },
   { url: "/resources/creeds", priority: "0.8", changefreq: "monthly" },
   { url: "/discipleship", priority: "0.85", changefreq: "monthly" },
@@ -255,14 +238,6 @@ const STATIC_PAGES = [
   { url: "/tools/sermon-outline", priority: "0.65", changefreq: "monthly" },
   { url: "/tools/wisdom-finder", priority: "0.7", changefreq: "monthly" },
   // Leadership instruments previously missing
-  { url: "/leadership/before-you-post", priority: "0.65", changefreq: "monthly" },
-  { url: "/leadership/budget", priority: "0.65", changefreq: "monthly" },
-  { url: "/leadership/decision-log", priority: "0.6", changefreq: "monthly" },
-  { url: "/leadership/governance", priority: "0.75", changefreq: "monthly" },
-  { url: "/leadership/illustrations", priority: "0.7", changefreq: "monthly" },
-  { url: "/leadership/meeting", priority: "0.65", changefreq: "monthly" },
-  { url: "/leadership/sermon-prep", priority: "0.7", changefreq: "monthly" },
-  { url: "/leadership/visitation", priority: "0.6", changefreq: "monthly" },
   // Entry points, hubs, and misc previously missing
   { url: "/start-here", priority: "0.85", changefreq: "monthly" },
   { url: "/read", priority: "0.8", changefreq: "monthly" },
@@ -271,7 +246,6 @@ const STATIC_PAGES = [
   { url: "/capture-by-the-right", priority: "0.8", changefreq: "monthly" },
   { url: "/capture-by-the-left", priority: "0.8", changefreq: "monthly" },
   { url: "/reading-scripture-past-our-politics", priority: "0.8", changefreq: "monthly" },
-  { url: "/after-christendom", priority: "0.8", changefreq: "monthly" },
   { url: "/the-pastoral-angle", priority: "0.8", changefreq: "monthly" },
   { url: "/theology/explorer", priority: "0.8", changefreq: "monthly" },
   { url: "/tools/which-lens", priority: "0.8", changefreq: "monthly" },
@@ -304,9 +278,7 @@ const STATIC_PAGES = [
 function manifestPages() {
   const pages = [];
   const sources = [
-    { file: "client/public/leadership/articles-index.json", key: "articles", prefix: "/leadership/article/" },
     { file: "client/public/context/guides-index.json", key: "guides", prefix: "/resources/context/" },
-    { file: "client/public/leadership/formation-index.json", key: "topics", prefix: "/leadership/formation/" },
     { file: "client/public/life/domains-index.json", key: "domains", prefix: "/life/" },
     { file: "client/public/creeds/documents-index.json", key: "documents", prefix: "/resources/creeds/" },
     { file: "client/public/history/essays-index.json", key: "essays", prefix: "/theology/history/" },
@@ -322,11 +294,6 @@ function manifestPages() {
     // The contested-doctrine library (/theology/doctrine/:slug), manifest
     // from scripts/build-theology-index.mjs.
     { file: "client/public/theology/index.json", key: "docs", prefix: "/theology/doctrine/" },
-    // Sermon series for all 66 books of the Bible (/leadership/bible-sermons/:id),
-    // and the Prophetic Justice / Disruption per-topic pages
-    // (/justice/topic/:slug, /disruption/topic/:slug). The sermons manifest keys
-    // by `id`, so map it with slugField.
-    { file: "client/public/leadership/whole-bible-sermons.json", key: "books", slugField: "id", prefix: "/leadership/bible-sermons/" },
     { file: "client/public/justice/topics-index.json", key: "topics", prefix: "/justice/topic/" },
     { file: "client/public/disruption/topics-index.json", key: "topics", prefix: "/disruption/topic/" },
     // The 208 wisdom topics (/wisdom/:id) — "what the Bible says about X" pages,
@@ -347,17 +314,6 @@ function manifestPages() {
     } catch (err) {
       console.warn(`[sitemap] could not read ${s.file}: ${err.message}`);
     }
-  }
-  // Whole-Bible sermon library: one indexable page per book (id-keyed, not slug).
-  try {
-    const wb = JSON.parse(fs.readFileSync("client/public/leadership/whole-bible-sermons.json", "utf8"));
-    for (const b of wb.books || []) {
-      if (wb.series && wb.series[b.id] && fs.existsSync(`client/public/leadership/sermons/${b.id}.json`)) {
-        pages.push({ url: `/leadership/bible-sermons/${b.id}`, priority: "0.8", changefreq: "monthly" });
-      }
-    }
-  } catch (err) {
-    console.warn(`[sitemap] could not read whole-bible-sermons: ${err.message}`);
   }
   return pages;
 }

@@ -32,7 +32,7 @@ export default function WhenGodBlessAmericaThankYou() {
             Thank you for buying <em>When God Bless America Replaces Thy Kingdom Come</em>. Download both formats below — the EPUB for your e-reader or phone, the PDF for everything else. The links stay on this page, so bookmark it.
           </p>
           <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
-            <a href={EPUB} download style={{ ...btn, background: "var(--ink)", color: "var(--bone)" }}>
+            <a href={EPUB} download style={{ ...btn, background: "var(--charcoal)", color: "var(--charcoal-fg)" }}>
               Download EPUB
             </a>
             <a href={PDF} download style={{ ...btn, background: "var(--mustard)", color: "var(--ink)" }}>

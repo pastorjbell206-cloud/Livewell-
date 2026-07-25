@@ -229,7 +229,8 @@ export const PRIMARY_TRACKS = TRACKS.filter(t => t.navPrimary);
 export const FEATURED_TRACKS = TRACKS.filter(t => t.featured);
 
 // ─────────────────────────────────────────────────────────────────────────
-// Two-movement / six-pillar model (2026 library restructure)
+// Two-movement pillar model (2026 library restructure; After Christendom
+// merged into Living Well After Christendom, so ids run 1,2,3,5,6)
 //
 // This is the new canonical taxonomy. Like the track layer above, it resolves
 // per-essay in CODE — PILLAR_ASSIGNMENTS first, then a coarse legacy fallback —
@@ -261,9 +262,14 @@ export const PILLARS_V2: Pillar[] = [
   { id: 1, slug: "capture-by-the-right", name: "The Capture by the Right", short: "The Right", movement: "diagnosis", blurb: "The faith conscripted into a flag — Christian nationalism, the gospel of patriotism, and the promise that the right party will do what only the cross can. We let it happen." },
   { id: 2, slug: "capture-by-the-left", name: "The Capture by the Left", short: "The Left", movement: "diagnosis", blurb: "The faith dissolved into a cause — progressive orthodoxy, compassion hardened into coercion, and the sins we stopped naming because they flattered our side." },
   { id: 3, slug: "reading-scripture-past-our-politics", name: "Reading Scripture Past Our Politics", short: "Scripture & Politics", movement: "diagnosis", blurb: "Tribe, translation, and tradition edit the text before we ever reach it. How to hear Scripture again on its own terms, not our politics'." },
-  { id: 4, slug: "after-christendom-pillar", name: "After Christendom", short: "After Christendom", movement: "diagnosis", blurb: "The old arrangement is over. Cultural Christianity is dying, and this asks the honest question underneath the panic — what comes after, and whether it is loss or freedom." },
+  // id 4 (After Christendom) was merged into id 6 in 2026. The two named the
+  // same arc — one asked what ended, the other what to build once it had — and
+  // splitting them across the movements meant a reader met the diagnosis and
+  // the answer in different rooms. The ids are deliberately left
+  // non-contiguous: they are keys into PILLAR_ASSIGNMENTS, and renumbering
+  // would silently re-file every essay on the site.
   { id: 5, slug: "the-pastoral-angle", name: "The Pastoral Angle", short: "Pastoral", movement: "diagnosis", blurb: "How an ordinary believer, and an ordinary pastor, actually lives inside all of this — the weight of it on a Tuesday, not from a stage." },
-  { id: 6, slug: "living-well-after-christendom", name: "Living Well After Christendom", short: "Living Well", movement: "formation", blurb: "Faithful life now that the old scaffolding is gone — prayer, marriage, work, and rest, built on the kingdom of God instead of the culture that used to carry us." },
+  { id: 6, slug: "living-well-after-christendom", name: "Living Well After Christendom", short: "Living Well", movement: "formation", blurb: "The old arrangement is over — cultural Christianity is dying, and the honest question is whether that is loss or freedom. This is the answer in practice: prayer, marriage, work, and rest, built on the kingdom of God instead of the culture that used to carry us." },
 ];
 
 export const SUBTHEMES = [

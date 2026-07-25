@@ -74,7 +74,7 @@ export default function NationEssay({ slug }: { slug: string }) {
       <SEOMeta title={`${e?.title ?? "Christ and the Nation"} — LiveWell by James Bell`} description={e?.subtitle ?? ""} url={url} image={e ? ogImageUrl(e.title, "Christ and the Nation") : undefined} structuredData={structuredData} />
       {e && <ArticleProgress readTime={readTime} />}
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/nation" style={{ color: "inherit" }}>Christ and the Nation</Link>
@@ -123,13 +123,13 @@ export default function NationEssay({ slug }: { slug: string }) {
       )}
 
       {e && e.furtherReading?.length > 0 && (
-        <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--bone)" }}>
+        <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--charcoal-fg)" }}>
           <div style={wrap}>
             <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "var(--s-3)" }}>Further reading</div>
             <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginBottom: "var(--s-4)" }}>
               {e.furtherReading.map((b, i) => (
                 <div key={i}>
-                  <span style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, color: "var(--bone)", fontStyle: "italic" }}>{b.title}</span>
+                  <span style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, color: "var(--charcoal-fg)", fontStyle: "italic" }}>{b.title}</span>
                   <span style={{ fontFamily: "var(--B)", fontSize: "14px", color: "rgba(245,240,230,0.7)" }}>{`  ·  ${b.author}`}</span>
                 </div>
               ))}

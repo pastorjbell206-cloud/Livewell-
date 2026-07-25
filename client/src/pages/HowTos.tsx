@@ -6,6 +6,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { StatementBand } from "@/components/EditorialBlocks";
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 
@@ -64,7 +65,7 @@ export default function HowTos() {
         url="https://www.livewellbyjamesbell.co/how-tos"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>How-to guides</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.2vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "18ch" }}>
@@ -114,6 +115,16 @@ export default function HowTos() {
           </div>
         </div>
       </section>
+
+      {/* The page had no close — it ended mid-shelf. The band gives it one, says
+          why a theology site keeps practical guides at all, and puts the
+          charcoal back after a long run of bone. It sits after the grid rather
+          than splitting it: the grid is filtered, so its length changes with
+          the topic chips and a mid-grid break would land in a different place
+          every time. */}
+      <StatementBand eyebrow="Why practical is not shallow" width="32ch">
+        Nobody is formed by the sermon they heard once. They are formed by the week they repeated.
+      </StatementBand>
     </Layout>
   );
 }

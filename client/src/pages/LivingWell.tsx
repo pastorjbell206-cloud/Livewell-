@@ -57,7 +57,7 @@ export default function LivingWell() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             Formation · Pillar Six
@@ -137,8 +137,8 @@ export default function LivingWell() {
               style={{
                 display: "inline-block",
                 padding: "14px 28px",
-                background: "var(--ink)",
-                color: "var(--bone)",
+                background: "var(--charcoal)",
+                color: "var(--charcoal-fg)",
                 borderRadius: "var(--radius-sm)",
                 fontFamily: "var(--U)",
                 fontWeight: 600,

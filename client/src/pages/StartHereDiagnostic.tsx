@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef, useEffect } from "react";
+import { useState, useCallback, useRef, useEffect, type ReactNode } from "react";
 import { Link } from "wouter";
 import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
@@ -170,12 +170,8 @@ const RESULTS: Record<ResultKey, ResultProfile> = {
     tagline: "You cannot pour from a dry well",
     description:
       "You preach rest and practice exhaustion. You carry confessions you cannot repeat and doubts you cannot voice. This path is built for pastors who need someone to minister to them for once — not with platitudes, but with the honesty you give everyone else and rarely receive.",
-    primaryCta: { label: "Access Pastor Resources", href: "/pastoral-burnout" },
-    secondarySuggestions: [
-      { label: "Sermon Preparation Workbench", href: "/leadership/sermon-prep", note: "Tools to lighten the weekly load" },
-      { label: "Leadership Formation", href: "/leadership/formation", note: "Character before competence, depth before strategy" },
-      { label: "Pastors Connection Network", href: "/pastors", note: "You were not meant to carry this alone" },
-    ],
+    primaryCta: { label: "Visit the Pastors Connection Network", href: "https://pastorsconnectionnetwork.com" },
+    secondarySuggestions: [],
   },
   "deep-study": {
     key: "deep-study",
@@ -303,6 +299,21 @@ function ensureKeyframes() {
   document.head.appendChild(style);
 }
 
+/* ── Path link ───────────────────────────────────────────────────── */
+/* Most paths live on this site; the pastor's path lives on the Pastors
+ * Connection Network, so an absolute URL leaves in a new tab. */
+
+function PathLink({ href, children }: { href: string; children: ReactNode }) {
+  if (/^https?:\/\//.test(href)) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+        {children}
+      </a>
+    );
+  }
+  return <Link href={href}>{children}</Link>;
+}
+
 /* ── Component ───────────────────────────────────────────────────── */
 
 export default function StartHereDiagnostic() {
@@ -427,6 +438,10 @@ export default function StartHereDiagnostic() {
       />
 
       <MinimalNav />
+
+      {/* This page renders the nav directly rather than through Layout, so it
+          declares its own main landmark — the skip link in MinimalNav targets it. */}
+      <main id="main">
 
       {/* ── Progress bar ─────────────────────────────────────────── */}
       <div
@@ -667,14 +682,14 @@ export default function StartHereDiagnostic() {
                   {result.description}
                 </p>
 
-                <Link href={result.primaryCta.href}>
+                <PathLink href={result.primaryCta.href}>
                   <span
                     style={{
                       display: "inline-flex",
                       alignItems: "center",
                       gap: "10px",
-                      background: "var(--ink)",
-                      color: "var(--bone)",
+                      background: "var(--charcoal)",
+                      color: "var(--charcoal-fg)",
                       fontFamily: "var(--U)",
                       fontSize: "13px",
                       fontWeight: 600,
@@ -697,11 +712,12 @@ export default function StartHereDiagnostic() {
                     {result.primaryCta.label}
                     <span aria-hidden="true" style={{ fontSize: "16px" }}>&rarr;</span>
                   </span>
-                </Link>
+                </PathLink>
               </div>
             </section>
 
             {/* Secondary suggestions */}
+            {result.secondarySuggestions.length > 0 && (
             <section
               style={{
                 background: "var(--bone-warm)",
@@ -772,6 +788,7 @@ export default function StartHereDiagnostic() {
                 </div>
               </div>
             </section>
+            )}
 
             {/* "Not quite right?" — all paths */}
             <section
@@ -815,7 +832,7 @@ export default function StartHereDiagnostic() {
                   {ALL_RESULT_KEYS.filter((k) => k !== resultKey).map((k) => {
                     const r = RESULTS[k];
                     return (
-                      <Link key={k} href={r.primaryCta.href}>
+                      <PathLink key={k} href={r.primaryCta.href}>
                         <div
                           style={{
                             padding: "20px",
@@ -851,7 +868,7 @@ export default function StartHereDiagnostic() {
                             {r.tagline}
                           </p>
                         </div>
-                      </Link>
+                      </PathLink>
                     );
                   })}
                 </div>
@@ -912,6 +929,8 @@ export default function StartHereDiagnostic() {
           </>
         ) : null}
       </div>
+
+      </main>
 
       <Footer />
     </div>

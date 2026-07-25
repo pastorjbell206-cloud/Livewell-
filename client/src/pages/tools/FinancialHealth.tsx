@@ -406,7 +406,7 @@ export default function FinancialHealth() {
       <section
         style={{
           background: "var(--charcoal)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
           padding: "80px 32px 60px",
           textAlign: "center",
         }}
@@ -1219,7 +1219,7 @@ export default function FinancialHealth() {
                   borderRadius: "2px",
                   cursor: "pointer",
                   background: "var(--charcoal)",
-                  color: "var(--bone)",
+                  color: "var(--charcoal-fg)",
                   border: "none",
                   transition: "opacity 0.2s",
                 }}
@@ -1289,7 +1289,7 @@ export default function FinancialHealth() {
                 alignItems: "center",
                 justifyContent: "space-between",
                 background: "var(--charcoal)",
-                color: "var(--bone)",
+                color: "var(--charcoal-fg)",
                 borderRadius: "2px",
                 padding: "28px 36px",
                 textDecoration: "none",

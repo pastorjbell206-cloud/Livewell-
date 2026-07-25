@@ -67,10 +67,10 @@ export default function Membership() {
       <section style={{ background: "var(--charcoal)", padding: "6rem 1.5rem 5rem" }}>
         <div style={{ maxWidth: "680px", margin: "0 auto" }}>
           <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard)", fontFamily: "var(--U)", marginBottom: "1.5rem" }}>Membership</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "2rem" }}>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: "2rem" }}>
             The deeper room
           </h1>
-          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.7, color: "var(--bone)", opacity: 0.75 }}>
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.7, color: "var(--charcoal-fg)", opacity: 0.75 }}>
             This is not a paywall. It is a room behind the room — for readers who have moved past browsing and want the full weight of the work. The membership exists because writing this kind of theology takes time, and time costs something. If the free writing has been useful to you, the membership is where the deeper work lives.
           </p>
         </div>
@@ -131,7 +131,7 @@ export default function Membership() {
                 <input type="email" aria-label="Email address" placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} required
                   style={{ flex: 1, minWidth: 0, padding: "0.75rem 1rem", border: "1px solid var(--bone-muted)", borderRight: "none", borderRadius: "2px 0 0 2px", fontSize: "0.875rem", fontFamily: "var(--U)", background: "var(--bone)", outline: "none" }}
                 />
-                <button type="submit" disabled={checkoutMutation.isPending} style={{ padding: "0.75rem 1.25rem", background: "var(--charcoal)", color: "var(--bone)", border: "1px solid var(--charcoal)", fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, cursor: checkoutMutation.isPending ? "default" : "pointer", opacity: checkoutMutation.isPending ? 0.7 : 1, borderRadius: "0 2px 2px 0", display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                <button type="submit" disabled={checkoutMutation.isPending} style={{ padding: "0.75rem 1.25rem", background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "1px solid var(--charcoal)", fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, cursor: checkoutMutation.isPending ? "default" : "pointer", opacity: checkoutMutation.isPending ? 0.7 : 1, borderRadius: "0 2px 2px 0", display: "flex", alignItems: "center", gap: "0.5rem" }}>
                   {checkoutLive
                     ? (checkoutMutation.isPending ? "Starting checkout…" : "Become a member")
                     : "Join the waitlist"} <ArrowRight size={14} />
@@ -166,7 +166,7 @@ export default function Membership() {
           <div className="eyebrow" style={{ marginBottom: "20px", color: "var(--mustard)" }}>
             The Founding Cohort
           </div>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 400, color: "var(--bone)", letterSpacing: "-0.015em", marginBottom: "20px", maxWidth: "20ch", margin: "0 auto 20px" }}>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 400, color: "var(--charcoal-fg)", letterSpacing: "-0.015em", marginBottom: "20px", maxWidth: "20ch", margin: "0 auto 20px" }}>
             The first members shape what membership becomes.
           </h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,0.7)", maxWidth: "55ch", margin: "0 auto" }}>
@@ -200,7 +200,7 @@ export default function Membership() {
       <section style={{ background: "var(--charcoal)", padding: "5rem 1.5rem", textAlign: "center" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <div style={{ width: "40px", height: "2px", background: "var(--mustard)", margin: "0 auto 2rem" }} />
-          <p style={{ fontFamily: "var(--F)", fontSize: "1.25rem", fontStyle: "italic", lineHeight: 1.55, color: "var(--bone)", marginBottom: "2rem" }}>
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.25rem", fontStyle: "italic", lineHeight: 1.55, color: "var(--charcoal-fg)", marginBottom: "2rem" }}>
             You have read this far. The writing has either carried weight for you or it has not. If it has, the membership is the room where the deeper work lives. The door is open.
           </p>
           {joined ? (
@@ -208,7 +208,7 @@ export default function Membership() {
           ) : (
             <form onSubmit={checkoutLive ? handleCheckout : handleWaitlist} style={{ display: "flex", gap: "0", justifyContent: "center", maxWidth: "380px", margin: "0 auto" }}>
               <input type="email" aria-label="Email address" placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} required
-                style={{ flex: 1, minWidth: 0, padding: "0.75rem 1rem", background: "transparent", border: "1px solid rgba(244,241,234,0.2)", borderRight: "none", color: "var(--bone)", fontSize: "0.875rem", fontFamily: "var(--U)", borderRadius: "2px 0 0 2px", outline: "none" }}
+                style={{ flex: 1, minWidth: 0, padding: "0.75rem 1rem", background: "transparent", border: "1px solid rgba(244,241,234,0.2)", borderRight: "none", color: "var(--charcoal-fg)", fontSize: "0.875rem", fontFamily: "var(--U)", borderRadius: "2px 0 0 2px", outline: "none" }}
               />
               <button type="submit" style={{ padding: "0.75rem 1.25rem", background: "var(--bone)", color: "var(--charcoal)", border: "1px solid var(--bone)", fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, cursor: "pointer", borderRadius: "0 2px 2px 0" }}>
                 {checkoutLive ? "Become a member" : "Join the waitlist"}
