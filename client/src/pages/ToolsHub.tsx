@@ -253,14 +253,14 @@ export default function ToolsHub() {
   return (
     <Layout>
       <SEOMeta
-        title="Free Ministry Tools"
-        description="Free tools for pastors, parents, and Christians. Bible verse finder, prayer generator, and family devotion builder — built for real ministry needs."
-        keywords="Bible verse finder, prayer generator, family devotions, Christian tools, pastoral tools"
+        title="Free Christian Tools for Families"
+        description="Free tools for families and anyone practicing the faith: Bible verse finder, prayer generator, and family devotion builder, built for the week you are actually living."
+        keywords="Bible verse finder, prayer generator, family devotions, Christian tools, marriage tools, parenting tools"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          name: "Free Ministry Tools",
-          description: "Free tools for pastors, parents, and Christians.",
+          name: "Free Christian Tools for Families",
+          description: "Free tools for families and anyone practicing the faith.",
           url: "https://www.livewellbyjamesbell.co/tools",
         }}
       />
@@ -272,10 +272,10 @@ export default function ToolsHub() {
             FREE TOOLS
           </div>
           <h1 style={{ fontSize: "clamp(36px, 5vw, 52px)", fontWeight: 300, fontFamily: "var(--F)", lineHeight: 1.15, marginBottom: "20px" }}>
-            Tools for the <em style={{ fontStyle: "italic", color: "var(--gold)" }}>Work</em> of Ministry
+            Tools for the Life You Are <em style={{ fontStyle: "italic", color: "var(--gold)" }}>Actually</em> Living
           </h1>
           <p style={{ fontSize: "18px", lineHeight: 1.7, opacity: 0.85, fontFamily: "var(--B)" }}>
-            Built for pastors, parents, and anyone who takes faith seriously enough to practice it.
+            Built for marriages, for households, for anyone who takes the faith seriously enough to practice it on a Tuesday.
           </p>
         </div>
       </section>
