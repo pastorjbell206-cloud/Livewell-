@@ -1,16 +1,37 @@
 {
   "slug": "marriage-the-long-covenant",
-  "title": "Marriage: The Long Covenant",
+  "title": "Why Do Marriages Drift Apart, and How Do You Stop It?",
   "subtitle": "Most marriages do not end in a blowup. They end in a slow drift no one decided on. What Scripture, church history, and honest research say about covenant, conflict, money, desire, in-laws, the dry seasons, and the daily work of staying married well.",
   "pillar": "The Home and Relationships",
   "connections": [
-    { "label": "Raising Children in Grace", "href": "/life/raising-children-in-grace" },
-    { "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" },
-    { "label": "Money and the Heart", "href": "/life/money-and-the-heart" },
-    { "label": "Wisdom for All of Life", "href": "/life/wisdom-for-all-of-life" },
-    { "label": "The Anxious Mind", "href": "/life/the-anxious-mind" },
-    { "label": "The Marriage Assessment", "href": "/tools/marriage-assessment" },
-    { "label": "The Marriage Pages", "href": "/marriage" }
+    {
+      "label": "Raising Children in Grace",
+      "href": "/life/raising-children-in-grace"
+    },
+    {
+      "label": "Friendship Against Isolation",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "Money and the Heart",
+      "href": "/life/money-and-the-heart"
+    },
+    {
+      "label": "Wisdom for All of Life",
+      "href": "/life/wisdom-for-all-of-life"
+    },
+    {
+      "label": "The Anxious Mind",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "The Marriage Assessment",
+      "href": "/tools/marriage-assessment"
+    },
+    {
+      "label": "The Marriage Pages",
+      "href": "/marriage"
+    }
   ],
   "parts": [
     {
@@ -139,5 +160,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Marriage: The Long Covenant"
 }

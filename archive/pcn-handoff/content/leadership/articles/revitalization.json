@@ -1,6 +1,6 @@
 {
   "slug": "revitalization",
-  "title": "Revitalizing a Dying Church",
+  "title": "How Do You Revitalize a Church That Is Dying?",
   "subtitle": "The honest odds, the slow work, and the reason a man might give his best years to a building most people have already written off",
   "kicker": "Building and Rebuilding",
   "group": "Building and Rebuilding",
@@ -42,8 +42,17 @@
     "Galatians 6:9"
   ],
   "furtherReading": [
-    { "title": "Autopsy of a Deceased Church", "author": "Thom S. Rainer" },
-    { "title": "Canoeing the Mountains", "author": "Tod Bolsinger" },
-    { "title": "Reappearing Church", "author": "Mark Sayers" }
+    {
+      "title": "Autopsy of a Deceased Church",
+      "author": "Thom S. Rainer"
+    },
+    {
+      "title": "Canoeing the Mountains",
+      "author": "Tod Bolsinger"
+    },
+    {
+      "title": "Reappearing Church",
+      "author": "Mark Sayers"
+    }
   ]
 }

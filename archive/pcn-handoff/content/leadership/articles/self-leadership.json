@@ -1,6 +1,6 @@
 {
   "slug": "self-leadership",
-  "title": "Leading Yourself Before You Lead Anyone Else",
+  "title": "What Is Self-Leadership and Why Does It Come First?",
   "subtitle": "The disciplines of self leadership for pastors, why the inner life governs the public ministry, and how a leader who cannot govern his own soul will eventually wreck the people he leads.",
   "kicker": "Formation",
   "group": "Leadership Formation",
@@ -36,9 +36,19 @@
       "body": "There is a ceiling on every ministry, and the ceiling is the leader's own soul. The church will not grow past the man's character for long. The cracks he ignores in himself become the cracks that bring the whole thing down, usually years later, usually in public, usually after everyone said he seemed so strong.\n\nSo do the unseen work. Govern the appetites. Keep the disciplines. Examine the heart. Lead the one man God has given you total responsibility for before you presume to lead anyone else.\n\nNot a leader who has it all together. A leader honest enough to lead himself toward the One who does."
     }
   ],
-  "keyTexts": ["1 Corinthians 9:27", "Proverbs 25:28", "1 Timothy 4:16"],
+  "keyTexts": [
+    "1 Corinthians 9:27",
+    "Proverbs 25:28",
+    "1 Timothy 4:16"
+  ],
   "furtherReading": [
-    {"title": "The Life You've Always Wanted", "author": "John Ortberg"},
-    {"title": "Ordering Your Private World", "author": "Gordon MacDonald"}
+    {
+      "title": "The Life You've Always Wanted",
+      "author": "John Ortberg"
+    },
+    {
+      "title": "Ordering Your Private World",
+      "author": "Gordon MacDonald"
+    }
   ]
 }

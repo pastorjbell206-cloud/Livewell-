@@ -1,14 +1,29 @@
 {
   "slug": "pride-and-humility",
-  "title": "Pride and Humility: The Root and Its Undoing",
+  "title": "Why Is Pride the Root of Every Other Sin?",
   "subtitle": "Underneath every sin you can name there is one older than the rest, the original lie that you would be your own god. Pride is not one vice among many. It is the root from which the others grow, and it is the hardest to see precisely because it is the eye through which you do the seeing. What Augustine and Lewis saw about the great sin, why humility is self-forgetfulness and not self-hatred, and how the descent of Christ undoes the thing that undoes us.",
   "pillar": "The Inner Life",
   "connections": [
-    { "label": "Identity and Worth", "href": "/life/identity-and-worth" },
-    { "label": "Shame and the Hiding Self", "href": "/life/shame-and-the-hiding-self" },
-    { "label": "Anger and the Hot Heart", "href": "/life/anger-and-the-hot-heart" },
-    { "label": "Contentment Against Envy", "href": "/life/contentment-against-envy" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "Identity and Worth",
+      "href": "/life/identity-and-worth"
+    },
+    {
+      "label": "Shame and the Hiding Self",
+      "href": "/life/shame-and-the-hiding-self"
+    },
+    {
+      "label": "Anger and the Hot Heart",
+      "href": "/life/anger-and-the-hot-heart"
+    },
+    {
+      "label": "Contentment Against Envy",
+      "href": "/life/contentment-against-envy"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Pride and Humility: The Root and Its Undoing"
 }

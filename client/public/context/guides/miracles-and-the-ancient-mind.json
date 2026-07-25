@@ -1,6 +1,6 @@
 {
   "slug": "miracles-and-the-ancient-mind",
-  "title": "Miracles and the Ancient Mind",
+  "title": "Were Ancient People Gullible About Miracles?",
   "subtitle": "The claim that ancient people would believe anything is itself a belief, held against the evidence. They knew exactly what death was. That is why the resurrection startled them first.",
   "kicker": "Hard Questions",
   "group": "The Hard Questions",
@@ -36,11 +36,27 @@
       "body": "None of this proves a miracle happened. Context never proves. What it does is clear away the lazy verdict so the real question can stand up.\n\nNotice what kind of claims the Gospels make. Their miracles are not set once upon a time. They are tied to named officials, datable rulers, specific towns, and named beneficiaries, the kind of detail that invites checking. Luke opens his Gospel by claiming careful investigation of eyewitness sources. Paul tells the Corinthians that the risen Jesus appeared to more than five hundred people at once, most of whom are still alive, which in a first-century letter functions as an invitation to go ask them. Whatever this is, it is not the grammar of legend. It is the grammar of testimony, offered in the generation that could have contradicted it.\n\nSo the question was never whether ancient people were gullible. Some were, as some of us are. The question is whether God exists and has acted, and that cannot be settled by chronology, by flattering ourselves about the past, or by an argument that rules out the evidence before hearing it. The witnesses are on the record, closer to the events than we will ever be. Dismissing them was supposed to be the easy part. It is not, and that may be why we wanted it to be."
     }
   ],
-  "keyTexts": ["Matthew 28:16-17", "Acts 17:30-32", "1 Corinthians 15:3-8"],
+  "keyTexts": [
+    "Matthew 28:16-17",
+    "Acts 17:30-32",
+    "1 Corinthians 15:3-8"
+  ],
   "sources": [
-    { "title": "Miracles: The Credibility of the New Testament Accounts", "author": "Craig S. Keener" },
-    { "title": "Hume's Abject Failure: The Argument Against Miracles", "author": "John Earman" },
-    { "title": "The Resurrection of the Son of God", "author": "N. T. Wright" },
-    { "title": "Miracles: A Preliminary Study", "author": "C. S. Lewis" }
+    {
+      "title": "Miracles: The Credibility of the New Testament Accounts",
+      "author": "Craig S. Keener"
+    },
+    {
+      "title": "Hume's Abject Failure: The Argument Against Miracles",
+      "author": "John Earman"
+    },
+    {
+      "title": "The Resurrection of the Son of God",
+      "author": "N. T. Wright"
+    },
+    {
+      "title": "Miracles: A Preliminary Study",
+      "author": "C. S. Lewis"
+    }
   ]
 }

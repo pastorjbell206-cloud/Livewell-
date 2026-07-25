@@ -1,6 +1,6 @@
 {
   "slug": "left-lens-right-lens",
-  "title": "The Left Lens and the Right Lens",
+  "title": "Does Your Politics Decide How You Read the Bible?",
   "subtitle": "Each tribe has a canon within the canon. The verses we underline and the verses we explain away tell the truth about who is actually holding the pen.",
   "kicker": "Past Our Politics",
   "group": "Reading Past Our Politics",
@@ -36,11 +36,27 @@
       "body": "So here is the test, and I ask it of myself before I ask it of you. When did a passage of Scripture last change your politics? Not confirm them. Change them. Cost you a position, an alliance, an applause line. If the honest answer is never, then the Bible is not functioning as your authority. It is functioning as your wardrobe, and you dress your prior commitments in it every morning.\n\nThe correction is not a better lens. There is no lensless reading, and pretending to one is how we got here. The correction is a willing one: reading with your own tribe's canon set aside for a season, sitting under the verses your side explains away, asking God to make the text strange again. James Davison Hunter is right that Christians left and right have collapsed faith into political idiom until the church speaks nothing the culture has not already said. The way back is not centrism, which is just a third lens. It is submission, the old word, to the whole counsel of God.\n\nI keep a list now of texts that have defeated me, verses that took something from me I wanted to keep. The list is short. It should be longer. The same is almost certainly true of yours."
     }
   ],
-  "keyTexts": ["Romans 13:1-7", "Matthew 25:31-46", "Psalm 119:18"],
+  "keyTexts": [
+    "Romans 13:1-7",
+    "Matthew 25:31-46",
+    "Psalm 119:18"
+  ],
   "sources": [
-    { "title": "The Righteous Mind: Why Good People Are Divided by Politics and Religion", "author": "Jonathan Haidt" },
-    { "title": "The Civil War as a Theological Crisis", "author": "Mark A. Noll" },
-    { "title": "To Change the World: The Irony, Tragedy, and Possibility of Christianity in the Late Modern World", "author": "James Davison Hunter" },
-    { "title": "The Bible in Politics: How to Read the Bible Politically", "author": "Richard Bauckham" }
+    {
+      "title": "The Righteous Mind: Why Good People Are Divided by Politics and Religion",
+      "author": "Jonathan Haidt"
+    },
+    {
+      "title": "The Civil War as a Theological Crisis",
+      "author": "Mark A. Noll"
+    },
+    {
+      "title": "To Change the World: The Irony, Tragedy, and Possibility of Christianity in the Late Modern World",
+      "author": "James Davison Hunter"
+    },
+    {
+      "title": "The Bible in Politics: How to Read the Bible Politically",
+      "author": "Richard Bauckham"
+    }
   ]
 }

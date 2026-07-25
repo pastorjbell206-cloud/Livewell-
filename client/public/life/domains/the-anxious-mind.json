@@ -1,14 +1,29 @@
 {
   "slug": "the-anxious-mind",
-  "title": "The Anxious Mind: Faith and Mental Health",
+  "title": "Is Anxiety a Sin? Faith and Mental Health",
   "subtitle": "Anxiety is not a faith failure. What Scripture, church history, and honest science say about the fearful mind, and why seeing a doctor can be an act of faith.",
   "pillar": "The Inner Life",
   "connections": [
-    { "label": "When Faith Itself Is the Question", "href": "/doubt" },
-    { "label": "The Practice of Lament", "href": "/lament" },
-    { "label": "Emotional Health Check", "href": "/tools/emotional-health" },
-    { "label": "Grief and the Long Goodbye", "href": "/grief" },
-    { "label": "For Pastors Running on Empty", "href": "/pastoral-burnout" }
+    {
+      "label": "When Faith Itself Is the Question",
+      "href": "/doubt"
+    },
+    {
+      "label": "The Practice of Lament",
+      "href": "/lament"
+    },
+    {
+      "label": "Emotional Health Check",
+      "href": "/tools/emotional-health"
+    },
+    {
+      "label": "Grief and the Long Goodbye",
+      "href": "/grief"
+    },
+    {
+      "label": "For Pastors Running on Empty",
+      "href": "/pastoral-burnout"
+    }
   ],
   "parts": [
     {

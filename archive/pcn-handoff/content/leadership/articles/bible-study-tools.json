@@ -1,6 +1,6 @@
 {
   "slug": "bible-study-tools",
-  "title": "The Bible Study Tools Worth Owning",
+  "title": "The Best Bible Study Tools for Serious Students",
   "subtitle": "A guide to the best Bible study tools for serious students and preachers, including lexicons, concordances, and commentaries, and how to use each one well",
   "kicker": "Exegesis",
   "group": "Exegesis and Bible Study",
@@ -43,8 +43,17 @@
     "Proverbs 2:1-5"
   ],
   "furtherReading": [
-    { "title": "Introducing Biblical Interpretation", "author": "Michael J. Gorman" },
-    { "title": "The Strongest Strong's Exhaustive Concordance", "author": "James Strong" },
-    { "title": "Commentary and Reference Survey", "author": "John Glynn" }
+    {
+      "title": "Introducing Biblical Interpretation",
+      "author": "Michael J. Gorman"
+    },
+    {
+      "title": "The Strongest Strong's Exhaustive Concordance",
+      "author": "James Strong"
+    },
+    {
+      "title": "Commentary and Reference Survey",
+      "author": "John Glynn"
+    }
   ]
 }

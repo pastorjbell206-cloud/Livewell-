@@ -1,17 +1,41 @@
 {
   "slug": "wisdom-for-all-of-life",
-  "title": "Wisdom for All of Life: Proverbs, Ecclesiastes, and the Skill of Living",
+  "title": "What Do Proverbs and Ecclesiastes Teach About Wisdom?",
   "subtitle": "The Bible has more than commands. It has wisdom, the hard-won skill of living well in a world that rarely comes with instructions. What Proverbs, Ecclesiastes, and Job teach about money, words, work, anger, sex, friendship, drink, and death, and how a whole life is built along the grain of the world God made.",
   "pillar": "The Integrated Vision",
   "connections": [
-    { "label": "Money and the Heart", "href": "/life/money-and-the-heart" },
-    { "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" },
-    { "label": "The Anxious Mind", "href": "/life/the-anxious-mind" },
-    { "label": "Marriage: The Long Covenant", "href": "/life/marriage-the-long-covenant" },
-    { "label": "Raising Children in Grace", "href": "/life/raising-children-in-grace" },
-    { "label": "The Body and the Rhythms", "href": "/life/the-body-and-the-rhythms" },
-    { "label": "Grief and Loss", "href": "/life/grief-and-loss" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "Money and the Heart",
+      "href": "/life/money-and-the-heart"
+    },
+    {
+      "label": "Friendship Against Isolation",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "The Anxious Mind",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "Marriage: The Long Covenant",
+      "href": "/life/marriage-the-long-covenant"
+    },
+    {
+      "label": "Raising Children in Grace",
+      "href": "/life/raising-children-in-grace"
+    },
+    {
+      "label": "The Body and the Rhythms",
+      "href": "/life/the-body-and-the-rhythms"
+    },
+    {
+      "label": "Grief and Loss",
+      "href": "/life/grief-and-loss"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {

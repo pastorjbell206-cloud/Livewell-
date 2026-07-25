@@ -1,14 +1,29 @@
 {
   "slug": "waiting-and-unanswered-prayer",
-  "title": "Waiting and Unanswered Prayer: The Closed Door",
+  "title": "What Do You Do When God Does Not Answer Prayer?",
   "subtitle": "Hope deferred and the long wait. The no and the not-yet of God, and what to do with a faith when heaven has gone quiet. Habakkuk standing on the watchtower, the Psalms that cry how long, and the difference between a God who is silent and a God who is absent.",
   "pillar": "The Seasons and the Crises",
   "connections": [
-    { "label": "Suffering and the Silence of God", "href": "/life/suffering-and-the-silence-of-god" },
-    { "label": "The Anxious Mind", "href": "/life/the-anxious-mind" },
-    { "label": "Grief and Loss", "href": "/life/grief-and-loss" },
-    { "label": "Singleness and the Full Life", "href": "/life/singleness-and-the-full-life" },
-    { "label": "Identity and Worth", "href": "/life/identity-and-worth" }
+    {
+      "label": "Suffering and the Silence of God",
+      "href": "/life/suffering-and-the-silence-of-god"
+    },
+    {
+      "label": "The Anxious Mind",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "Grief and Loss",
+      "href": "/life/grief-and-loss"
+    },
+    {
+      "label": "Singleness and the Full Life",
+      "href": "/life/singleness-and-the-full-life"
+    },
+    {
+      "label": "Identity and Worth",
+      "href": "/life/identity-and-worth"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Waiting and Unanswered Prayer: The Closed Door"
 }

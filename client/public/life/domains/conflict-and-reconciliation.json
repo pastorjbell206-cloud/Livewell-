@@ -1,14 +1,29 @@
 {
   "slug": "conflict-and-reconciliation",
-  "title": "Conflict and Reconciliation: The Ministry of Repair",
+  "title": "How Do You Handle Conflict and Truly Reconcile?",
   "subtitle": "Two sinners cannot share a life without wounding each other. What Scripture, church history, and honest research say about fighting fair, the difference between peacemaking and peacekeeping, the discipline of Matthew 18, and the long ministry of repair that holds families and churches together.",
   "pillar": "The Home and Relationships",
   "connections": [
-    { "label": "Forgiveness: The Hardest Grace", "href": "/life/forgiveness-the-hardest-grace" },
-    { "label": "Anger and the Hot Heart", "href": "/life/anger-and-the-hot-heart" },
-    { "label": "Marriage: The Long Covenant", "href": "/life/marriage-the-long-covenant" },
-    { "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" },
-    { "label": "The Home and the Family", "href": "/life/the-home-and-the-family" }
+    {
+      "label": "Forgiveness: The Hardest Grace",
+      "href": "/life/forgiveness-the-hardest-grace"
+    },
+    {
+      "label": "Anger and the Hot Heart",
+      "href": "/life/anger-and-the-hot-heart"
+    },
+    {
+      "label": "Marriage: The Long Covenant",
+      "href": "/life/marriage-the-long-covenant"
+    },
+    {
+      "label": "Friendship Against Isolation",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "The Home and the Family",
+      "href": "/life/the-home-and-the-family"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Conflict and Reconciliation: The Ministry of Repair"
 }

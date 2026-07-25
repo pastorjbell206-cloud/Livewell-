@@ -1,14 +1,29 @@
 {
   "slug": "the-living-room-and-the-ordinary-disciple",
-  "title": "The Living Room and the Ordinary Disciple: Making Disciples Without a Program",
+  "title": "Can an Ordinary Christian Make Disciples?",
   "subtitle": "The regular, untrained believer is not a spectator in the work of making disciples. He is the worker Jesus chose. What Scripture, church history, and honest research say about why disciple-making happens in living rooms and over coffee rather than in classrooms and programs, and how an ordinary person with no degree and no special gift can begin this week with a life, a couch, and a few people over time.",
   "pillar": "The Integrated Vision",
   "connections": [
-    { "label": "Making Disciples at the Table", "href": "/life/making-disciples-at-the-table" },
-    { "label": "Discipleship: Following Jesus", "href": "/life/discipleship-following-jesus" },
-    { "label": "The Home and the Family", "href": "/life/the-home-and-the-family" },
-    { "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" },
-    { "label": "The Discipleship Pathway", "href": "/discipleship" }
+    {
+      "label": "Making Disciples at the Table",
+      "href": "/life/making-disciples-at-the-table"
+    },
+    {
+      "label": "Discipleship: Following Jesus",
+      "href": "/life/discipleship-following-jesus"
+    },
+    {
+      "label": "The Home and the Family",
+      "href": "/life/the-home-and-the-family"
+    },
+    {
+      "label": "Friendship Against Isolation",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "The Discipleship Pathway",
+      "href": "/discipleship"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "The Living Room and the Ordinary Disciple"
 }

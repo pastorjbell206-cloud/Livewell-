@@ -1,6 +1,6 @@
 {
   "slug": "women-in-the-ancient-world",
-  "title": "Women in the Ancient World",
+  "title": "How Did the Bible Treat Women Compared to Its World?",
   "subtitle": "Set the biblical texts about women beside Athens, Rome, and Babylon, and something unexpected happens. The book so often accused of diminishing women keeps lifting them past their world. Not past every question. Past their world.",
   "kicker": "Hard Questions",
   "group": "The Hard Questions",
@@ -36,11 +36,27 @@
       "body": "Now the honesty this site owes you. None of this dissolves every hard text. 1 Timothy 2 and 1 Corinthians 14 are still in the book, and serious readers who love both Scripture and the women in their churches divide over what those passages required then and require now. Some conclude every office is open to women. Some conclude the office of elder is ordered differently. Both camps include scholars of the first rank and churches full of grace. That debate deserves its own fair hearing, with each position at full strength, and we try to give it one elsewhere on this site. This guide will not settle it by ambush, and you should distrust any guide that tries.\n\nThis guide has a smaller claim, and it holds. Measured against its own world, the biblical record keeps moving in one direction, toward the daughters of Zelophehad, the women at the tomb, the deacon carrying Romans.\n\nThe church has not always moved with it. Texts written into a hard world to protect women have been quoted to demean them, and I have sat in rooms where it happened and said nothing. The book was ahead of its world. Its readers are not always ahead of theirs."
     }
   ],
-  "keyTexts": ["Genesis 1:27", "Luke 8:1-3", "Romans 16:1-7"],
+  "keyTexts": [
+    "Genesis 1:27",
+    "Luke 8:1-3",
+    "Romans 16:1-7"
+  ],
   "sources": [
-    { "title": "Women in the World of the Earliest Christians", "author": "Lynn H. Cohick" },
-    { "title": "Gospel Women: Studies of the Named Women in the Gospels", "author": "Richard Bauckham" },
-    { "title": "Is God a Moral Monster? Making Sense of the Old Testament God", "author": "Paul Copan" },
-    { "title": "Women in the Ministry of Jesus", "author": "Ben Witherington III" }
+    {
+      "title": "Women in the World of the Earliest Christians",
+      "author": "Lynn H. Cohick"
+    },
+    {
+      "title": "Gospel Women: Studies of the Named Women in the Gospels",
+      "author": "Richard Bauckham"
+    },
+    {
+      "title": "Is God a Moral Monster? Making Sense of the Old Testament God",
+      "author": "Paul Copan"
+    },
+    {
+      "title": "Women in the Ministry of Jesus",
+      "author": "Ben Witherington III"
+    }
   ]
 }

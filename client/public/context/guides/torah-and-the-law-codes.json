@@ -1,6 +1,6 @@
 {
   "slug": "torah-and-the-law-codes",
-  "title": "The Law of Moses Next to the Laws of Babylon",
+  "title": "How Is the Law of Moses Different From Hammurabi?",
   "subtitle": "Hammurabi's stele and the Torah speak the same legal language. What they say in that language could not be more different.",
   "kicker": "Ancient Near East",
   "group": "Ancient Near East",
@@ -42,9 +42,21 @@
     "Deuteronomy 10:17-19"
   ],
   "sources": [
-    { "title": "Law Collections from Mesopotamia and Asia Minor", "author": "Martha T. Roth" },
-    { "title": "Old Testament Ethics for the People of God", "author": "Christopher J. H. Wright" },
-    { "title": "Ancient Near Eastern Thought and the Old Testament", "author": "John H. Walton" },
-    { "title": "Created Equal: How the Bible Broke with Ancient Political Thought", "author": "Joshua A. Berman" }
+    {
+      "title": "Law Collections from Mesopotamia and Asia Minor",
+      "author": "Martha T. Roth"
+    },
+    {
+      "title": "Old Testament Ethics for the People of God",
+      "author": "Christopher J. H. Wright"
+    },
+    {
+      "title": "Ancient Near Eastern Thought and the Old Testament",
+      "author": "John H. Walton"
+    },
+    {
+      "title": "Created Equal: How the Bible Broke with Ancient Political Thought",
+      "author": "Joshua A. Berman"
+    }
   ]
 }

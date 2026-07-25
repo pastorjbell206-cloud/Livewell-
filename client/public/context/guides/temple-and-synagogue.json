@@ -1,6 +1,6 @@
 {
   "slug": "temple-and-synagogue",
-  "title": "Temple, Synagogue, and the Shape of Jewish Life",
+  "title": "What Was the Difference Between Temple and Synagogue?",
   "subtitle": "One building held the presence of God, the national economy, and the politics of an occupied people. Another held the week. You cannot read the Gospels without both.",
   "kicker": "Second Temple",
   "group": "Second Temple Judaism",
@@ -42,9 +42,21 @@
     "Mark 11:15-18"
   ],
   "sources": [
-    { "title": "Judaism: Practice and Belief, 63 BCE-66 CE", "author": "E.P. Sanders" },
-    { "title": "Backgrounds of Early Christianity", "author": "Everett Ferguson" },
-    { "title": "The IVP Bible Background Commentary: New Testament", "author": "Craig S. Keener" },
-    { "title": "The New Testament and the People of God", "author": "N.T. Wright" }
+    {
+      "title": "Judaism: Practice and Belief, 63 BCE-66 CE",
+      "author": "E.P. Sanders"
+    },
+    {
+      "title": "Backgrounds of Early Christianity",
+      "author": "Everett Ferguson"
+    },
+    {
+      "title": "The IVP Bible Background Commentary: New Testament",
+      "author": "Craig S. Keener"
+    },
+    {
+      "title": "The New Testament and the People of God",
+      "author": "N.T. Wright"
+    }
   ]
 }

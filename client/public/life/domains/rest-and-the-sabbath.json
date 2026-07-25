@@ -1,14 +1,29 @@
 {
   "slug": "rest-and-the-sabbath",
-  "title": "Rest and the Sabbath: The Unforced Rhythms of Grace",
+  "title": "What Is Sabbath Rest, and How Do You Keep It?",
   "subtitle": "Hurry is the great enemy of the soul, and Sabbath is the weekly rebellion against it. What Scripture, the long tradition, and honest research say about rest as gift, rest as resistance, and the trust it takes to stop.",
   "pillar": "The Body and the Rhythms",
   "connections": [
-    { "label": "The Body and the Rhythms", "href": "/life/the-body-and-the-rhythms" },
-    { "label": "Work as Worship", "href": "/life/work-as-worship" },
-    { "label": "The Anxious Mind", "href": "/life/the-anxious-mind" },
-    { "label": "Money and the Heart", "href": "/life/money-and-the-heart" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "The Body and the Rhythms",
+      "href": "/life/the-body-and-the-rhythms"
+    },
+    {
+      "label": "Work as Worship",
+      "href": "/life/work-as-worship"
+    },
+    {
+      "label": "The Anxious Mind",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "Money and the Heart",
+      "href": "/life/money-and-the-heart"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Rest and the Sabbath: The Unforced Rhythms of Grace"
 }

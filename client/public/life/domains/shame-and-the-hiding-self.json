@@ -1,14 +1,29 @@
 {
   "slug": "shame-and-the-hiding-self",
-  "title": "Shame and the Hiding Self",
+  "title": "What Is the Difference Between Guilt and Shame?",
   "subtitle": "Guilt says you did a bad thing. Shame says you are a bad thing. One of them the gospel answers with forgiveness, the other with being fully known and still loved. What Scripture, the long tradition, and honest psychology say about the self that has been hiding since Eden.",
   "pillar": "The Inner Life",
   "connections": [
-    { "label": "Identity and Worth", "href": "/life/identity-and-worth" },
-    { "label": "Anger and the Hot Heart", "href": "/life/anger-and-the-hot-heart" },
-    { "label": "The Heavy Mind", "href": "/life/the-heavy-mind" },
-    { "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" },
-    { "label": "Emotional Health Check", "href": "/tools/emotional-health" }
+    {
+      "label": "Identity and Worth",
+      "href": "/life/identity-and-worth"
+    },
+    {
+      "label": "Anger and the Hot Heart",
+      "href": "/life/anger-and-the-hot-heart"
+    },
+    {
+      "label": "The Heavy Mind",
+      "href": "/life/the-heavy-mind"
+    },
+    {
+      "label": "Friendship Against Isolation",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "Emotional Health Check",
+      "href": "/tools/emotional-health"
+    }
   ],
   "parts": [
     {
@@ -125,5 +140,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Shame and the Hiding Self"
 }

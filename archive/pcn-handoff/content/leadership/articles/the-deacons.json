@@ -1,6 +1,6 @@
 {
   "slug": "the-deacons",
-  "title": "The Office of Deacon",
+  "title": "What Does the Bible Say About Deacons in the Church?",
   "subtitle": "The ministry of service exists so the ministry of the word can go forward unhindered, and both extremes that distort it cripple the church.",
   "kicker": "Service and Word",
   "group": "Leading People",
@@ -36,10 +36,23 @@
       "body": "On the last night, the one with all authority in heaven and earth took off his outer garment, wrapped a towel around his waist, and washed the feet of men who would abandon him before morning. The deacon is the office that remembers that night. The office that insists, in a church always tempted to chase the platform, that the kingdom is built on service that no one sees.\n\nGet this office right and the church holds together. The word goes forward because the practical load is carried by people who count it an honor to carry it. The poor are fed, the grieving are held, the building stands, and the elders are free to give themselves to prayer and the word without the whole weight of the practical crushing them.\n\nGet it wrong in either direction and the church breaks. Let the deacons rule and the word is chained to a budget. Let the service be despised and the widow goes hungry while the church congratulates itself on its preaching. Both are failures. Both contradict the towel and the basin.\n\nThe one who washed feet is still Lord. A church that forgets that will produce leaders who cannot remember it either."
     }
   ],
-  "keyTexts": ["Acts 6:1-7", "1 Timothy 3:8-13", "John 13:12-15"],
+  "keyTexts": [
+    "Acts 6:1-7",
+    "1 Timothy 3:8-13",
+    "John 13:12-15"
+  ],
   "furtherReading": [
-    {"title": "The Deacon", "author": "Matt Smethurst"},
-    {"title": "Finding Faithful Elders and Deacons", "author": "Thabiti Anyabwile"},
-    {"title": "The Cross and Christian Ministry", "author": "D. A. Carson"}
+    {
+      "title": "The Deacon",
+      "author": "Matt Smethurst"
+    },
+    {
+      "title": "Finding Faithful Elders and Deacons",
+      "author": "Thabiti Anyabwile"
+    },
+    {
+      "title": "The Cross and Christian Ministry",
+      "author": "D. A. Carson"
+    }
   ]
 }

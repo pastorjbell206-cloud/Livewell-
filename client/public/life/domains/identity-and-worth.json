@@ -1,14 +1,29 @@
 {
   "slug": "identity-and-worth",
-  "title": "Identity and Worth: Who You Actually Are",
+  "title": "Where Does Your Identity and Worth Come From?",
   "subtitle": "You have been building a case for yourself your whole life, brick by brick, and it never holds. What Scripture, the long tradition, and honest psychology say about the exhausting project of self-justification, and the difference between a worth you achieve and a worth you receive.",
   "pillar": "The Inner Life",
   "connections": [
-    { "label": "Shame and the Hiding Self", "href": "/life/shame-and-the-hiding-self" },
-    { "label": "The Heavy Mind", "href": "/life/the-heavy-mind" },
-    { "label": "Anger and the Hot Heart", "href": "/life/anger-and-the-hot-heart" },
-    { "label": "Money and the Heart", "href": "/life/money-and-the-heart" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "Shame and the Hiding Self",
+      "href": "/life/shame-and-the-hiding-self"
+    },
+    {
+      "label": "The Heavy Mind",
+      "href": "/life/the-heavy-mind"
+    },
+    {
+      "label": "Anger and the Hot Heart",
+      "href": "/life/anger-and-the-hot-heart"
+    },
+    {
+      "label": "Money and the Heart",
+      "href": "/life/money-and-the-heart"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {

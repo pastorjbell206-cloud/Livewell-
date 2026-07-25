@@ -1,6 +1,6 @@
 {
   "slug": "the-gods-of-the-nations",
-  "title": "Idolatry Made Sense: The Gods of Israel's Neighbors",
+  "title": "Why Did Israel's Neighbors Worship Idols?",
   "subtitle": "Idols were not stupidity. They were a sophisticated technology of presence and control, and the pull they answered has not gone anywhere.",
   "kicker": "Ancient Near East",
   "group": "Ancient Near East",
@@ -42,9 +42,21 @@
     "1 Kings 18:20-39"
   ],
   "sources": [
-    { "title": "Ancient Near Eastern Thought and the Old Testament", "author": "John H. Walton" },
-    { "title": "The Unseen Realm", "author": "Michael S. Heiser" },
-    { "title": "The Bible Among the Myths", "author": "John N. Oswalt" },
-    { "title": "The Early History of God: Yahweh and the Other Deities in Ancient Israel", "author": "Mark S. Smith" }
+    {
+      "title": "Ancient Near Eastern Thought and the Old Testament",
+      "author": "John H. Walton"
+    },
+    {
+      "title": "The Unseen Realm",
+      "author": "Michael S. Heiser"
+    },
+    {
+      "title": "The Bible Among the Myths",
+      "author": "John N. Oswalt"
+    },
+    {
+      "title": "The Early History of God: Yahweh and the Other Deities in Ancient Israel",
+      "author": "Mark S. Smith"
+    }
   ]
 }

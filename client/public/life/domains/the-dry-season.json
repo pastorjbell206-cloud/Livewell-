@@ -1,14 +1,29 @@
 {
   "slug": "the-dry-season",
-  "title": "The Dry Season: When God Feels Absent",
+  "title": "Why Does God Feel So Far Away When You Pray?",
   "subtitle": "There is a kind of suffering the church almost never names, the slow draining away of the felt presence of God, the prayers that hit the ceiling, the Scriptures that have gone flat, the worship you go through while feeling nothing. What John of the Cross, Ignatius, and the long Christian tradition saw about spiritual dryness, why the silence is often not absence, and how faith learns to stand when feeling has gone.",
   "pillar": "The Inner Life",
   "connections": [
-    { "label": "The Anxious Mind: Faith and Mental Health", "href": "/life/the-anxious-mind" },
-    { "label": "Suffering and the Silence of God", "href": "/life/suffering-and-the-silence-of-god" },
-    { "label": "Grief and Loss", "href": "/life/grief-and-loss" },
-    { "label": "Rest and the Sabbath", "href": "/life/rest-and-the-sabbath" },
-    { "label": "Identity and Worth: Who You Actually Are", "href": "/life/identity-and-worth" }
+    {
+      "label": "The Anxious Mind: Faith and Mental Health",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "Suffering and the Silence of God",
+      "href": "/life/suffering-and-the-silence-of-god"
+    },
+    {
+      "label": "Grief and Loss",
+      "href": "/life/grief-and-loss"
+    },
+    {
+      "label": "Rest and the Sabbath",
+      "href": "/life/rest-and-the-sabbath"
+    },
+    {
+      "label": "Identity and Worth: Who You Actually Are",
+      "href": "/life/identity-and-worth"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "The Dry Season: When God Feels Absent"
 }

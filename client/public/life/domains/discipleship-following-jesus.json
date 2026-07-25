@@ -1,15 +1,33 @@
 {
   "slug": "discipleship-following-jesus",
-  "title": "Discipleship: The Long Apprenticeship to Jesus",
+  "title": "What Does It Mean to Be a Disciple of Jesus?",
   "subtitle": "Jesus did not call converts. He called disciples, apprentices who learn to live his life. What Scripture, church history, and honest research say about how a person is actually changed, why so many believers stall, and the slow work of becoming like the one you follow.",
   "pillar": "The Integrated Vision",
   "connections": [
-    { "label": "Wisdom for All of Life", "href": "/life/wisdom-for-all-of-life" },
-    { "label": "The Body and the Rhythms", "href": "/life/the-body-and-the-rhythms" },
-    { "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" },
-    { "label": "The Anxious Mind", "href": "/life/the-anxious-mind" },
-    { "label": "Raising Children in Grace", "href": "/life/raising-children-in-grace" },
-    { "label": "The Discipleship Pathway", "href": "/discipleship" }
+    {
+      "label": "Wisdom for All of Life",
+      "href": "/life/wisdom-for-all-of-life"
+    },
+    {
+      "label": "The Body and the Rhythms",
+      "href": "/life/the-body-and-the-rhythms"
+    },
+    {
+      "label": "Friendship Against Isolation",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "The Anxious Mind",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "Raising Children in Grace",
+      "href": "/life/raising-children-in-grace"
+    },
+    {
+      "label": "The Discipleship Pathway",
+      "href": "/discipleship"
+    }
   ],
   "parts": [
     {
@@ -132,5 +150,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Discipleship: The Long Apprenticeship to Jesus"
 }

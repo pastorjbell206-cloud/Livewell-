@@ -1,15 +1,33 @@
 {
   "slug": "making-disciples-at-the-table",
-  "title": "Making Disciples at the Table: Discipleship the Way Jesus Did It",
+  "title": "How Did Jesus Make Disciples Without a Program?",
   "subtitle": "Jesus made disciples over meals, in homes, around tables. He did not run a program. What Scripture, church history, and honest research say about the table as the most natural place on earth to form a person in Christ, and how ordinary people, with no training and no curriculum, can begin making disciples this week around a table of their own.",
   "pillar": "The Integrated Vision",
   "connections": [
-    { "label": "Discipleship: Following Jesus", "href": "/life/discipleship-following-jesus" },
-    { "label": "The Home and the Family", "href": "/life/the-home-and-the-family" },
-    { "label": "The Neighbor and the Stranger", "href": "/life/the-neighbor-and-the-stranger" },
-    { "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" },
-    { "label": "Witness Without Weirdness", "href": "/life/witness-without-weirdness" },
-    { "label": "The Discipleship Pathway", "href": "/discipleship" }
+    {
+      "label": "Discipleship: Following Jesus",
+      "href": "/life/discipleship-following-jesus"
+    },
+    {
+      "label": "The Home and the Family",
+      "href": "/life/the-home-and-the-family"
+    },
+    {
+      "label": "The Neighbor and the Stranger",
+      "href": "/life/the-neighbor-and-the-stranger"
+    },
+    {
+      "label": "Friendship Against Isolation",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "Witness Without Weirdness",
+      "href": "/life/witness-without-weirdness"
+    },
+    {
+      "label": "The Discipleship Pathway",
+      "href": "/discipleship"
+    }
   ],
   "parts": [
     {
@@ -132,5 +150,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Making Disciples at the Table"
 }

@@ -1,6 +1,6 @@
 {
   "slug": "church-administration",
-  "title": "The Systems Under the Soul",
+  "title": "Why Does Church Administration Matter for Ministry?",
   "subtitle": "Nobody is ordained to love policy. But the structures you ignore will quietly decide what your ministry is allowed to become",
   "kicker": "Administration and Rhythm",
   "group": "Administration and Rhythm",
@@ -42,8 +42,17 @@
     "1 Corinthians 14:40"
   ],
   "furtherReading": [
-    { "title": "Canoeing the Mountains", "author": "Tod Bolsinger" },
-    { "title": "The Equipping Church", "author": "Sue Mallory" },
-    { "title": "Leading Change", "author": "John P. Kotter" }
+    {
+      "title": "Canoeing the Mountains",
+      "author": "Tod Bolsinger"
+    },
+    {
+      "title": "The Equipping Church",
+      "author": "Sue Mallory"
+    },
+    {
+      "title": "Leading Change",
+      "author": "John P. Kotter"
+    }
   ]
 }

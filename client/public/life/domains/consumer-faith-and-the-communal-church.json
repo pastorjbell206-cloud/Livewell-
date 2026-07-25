@@ -1,14 +1,29 @@
 {
   "slug": "consumer-faith-and-the-communal-church",
-  "title": "Consumer Faith and the Communal Church: How We Forgot to Make Disciples",
+  "title": "Consumer Christianity: How Did We Stop Making Disciples?",
   "subtitle": "Somewhere along the way the church stopped being a body and started being a vendor, and the Christian stopped being a disciple and started being a customer. This is the story of how American individualism and consumerism gutted disciple-making, why the ancient church that turned an empire upside down knew nothing of attending without belonging, and how the recovery of the table-shaped, one-another, ordinary-believer church is the recovery of disciple-making itself.",
   "pillar": "The Life in the World",
   "connections": [
-    { "label": "Making Disciples at the Table", "href": "/life/making-disciples-at-the-table" },
-    { "label": "Discipleship: Following Jesus", "href": "/life/discipleship-following-jesus" },
-    { "label": "The Church as Family", "href": "/life/the-church-as-family" },
-    { "label": "The Home and the Family", "href": "/life/the-home-and-the-family" },
-    { "label": "The Neighbor and the Stranger", "href": "/life/the-neighbor-and-the-stranger" }
+    {
+      "label": "Making Disciples at the Table",
+      "href": "/life/making-disciples-at-the-table"
+    },
+    {
+      "label": "Discipleship: Following Jesus",
+      "href": "/life/discipleship-following-jesus"
+    },
+    {
+      "label": "The Church as Family",
+      "href": "/life/the-church-as-family"
+    },
+    {
+      "label": "The Home and the Family",
+      "href": "/life/the-home-and-the-family"
+    },
+    {
+      "label": "The Neighbor and the Stranger",
+      "href": "/life/the-neighbor-and-the-stranger"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Consumer Faith and the Communal Church"
 }

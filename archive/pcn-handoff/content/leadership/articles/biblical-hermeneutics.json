@@ -1,6 +1,6 @@
 {
   "slug": "biblical-hermeneutics",
-  "title": "The Basic Rules of Biblical Interpretation",
+  "title": "How Do You Interpret the Bible Faithfully?",
   "subtitle": "A plain introduction to hermeneutics for the ordinary reader who wants to interpret the Bible faithfully and avoid the common errors",
   "kicker": "Exegesis",
   "group": "Exegesis and Bible Study",
@@ -43,8 +43,17 @@
     "Luke 24:27"
   ],
   "furtherReading": [
-    { "title": "Knowing Scripture", "author": "R. C. Sproul" },
-    { "title": "Exegetical Fallacies", "author": "D. A. Carson" },
-    { "title": "How to Read the Bible for All Its Worth", "author": "Gordon D. Fee and Douglas Stuart" }
+    {
+      "title": "Knowing Scripture",
+      "author": "R. C. Sproul"
+    },
+    {
+      "title": "Exegetical Fallacies",
+      "author": "D. A. Carson"
+    },
+    {
+      "title": "How to Read the Bible for All Its Worth",
+      "author": "Gordon D. Fee and Douglas Stuart"
+    }
   ]
 }

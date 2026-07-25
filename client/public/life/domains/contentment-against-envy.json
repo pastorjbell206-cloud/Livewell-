@@ -1,14 +1,29 @@
 {
   "slug": "contentment-against-envy",
-  "title": "Contentment Against Envy",
+  "title": "How Do You Stop Envy and Learn Contentment?",
   "subtitle": "There is a quiet sickness in the heart that no amount of getting can cure. You have enough and it does not feel like enough, because someone else has more, and the having of others has become a wound in you. What Scripture, the long tradition, and honest observation say about the discontented heart, the green eye of envy, and the strange secret Paul claimed to have learned, the secret of enough.",
   "pillar": "The Inner Life",
   "connections": [
-    { "label": "Money and the Heart", "href": "/life/money-and-the-heart" },
-    { "label": "Identity and Worth", "href": "/life/identity-and-worth" },
-    { "label": "Generosity and the Open Hand", "href": "/life/generosity-and-the-open-hand" },
-    { "label": "Technology and Attention", "href": "/life/technology-and-attention" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "Money and the Heart",
+      "href": "/life/money-and-the-heart"
+    },
+    {
+      "label": "Identity and Worth",
+      "href": "/life/identity-and-worth"
+    },
+    {
+      "label": "Generosity and the Open Hand",
+      "href": "/life/generosity-and-the-open-hand"
+    },
+    {
+      "label": "Technology and Attention",
+      "href": "/life/technology-and-attention"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {

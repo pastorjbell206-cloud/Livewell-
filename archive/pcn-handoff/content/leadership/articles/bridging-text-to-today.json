@@ -1,6 +1,6 @@
 {
   "slug": "bridging-text-to-today",
-  "title": "From the Original Meaning to Today: Bridging the Gap",
+  "title": "How Do You Apply a Bible Passage to Today?",
   "subtitle": "A practical guide to the principlizing bridge in biblical interpretation, how to move from what a text meant to its first readers to what it means for us, crossing the gap between the ancient world and today without distorting either",
   "kicker": "Exegesis",
   "group": "Exegesis and Bible Study",
@@ -49,8 +49,17 @@
     "James 1:22"
   ],
   "furtherReading": [
-    { "title": "Grasping God's Word", "author": "J. Scott Duvall and J. Daniel Hays" },
-    { "title": "How to Read the Bible for All Its Worth", "author": "Gordon D. Fee and Douglas Stuart" },
-    { "title": "Biblical Interpretation", "author": "William W. Klein, Craig L. Blomberg, and Robert L. Hubbard Jr." }
+    {
+      "title": "Grasping God's Word",
+      "author": "J. Scott Duvall and J. Daniel Hays"
+    },
+    {
+      "title": "How to Read the Bible for All Its Worth",
+      "author": "Gordon D. Fee and Douglas Stuart"
+    },
+    {
+      "title": "Biblical Interpretation",
+      "author": "William W. Klein, Craig L. Blomberg, and Robert L. Hubbard Jr."
+    }
   ]
 }

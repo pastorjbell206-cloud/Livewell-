@@ -1,14 +1,29 @@
 {
   "slug": "dating-and-discernment",
-  "title": "Dating and Discernment: Wisdom Before the Covenant",
+  "title": "How Do You Date Wisely and Choose a Spouse?",
   "subtitle": "Choosing a spouse is among the largest decisions a person ever makes, and the culture has handed us almost no wisdom for it. What Scripture, church history, and honest research say about character over chemistry, courtship and modern dating, and the discernment to marry well or to wait.",
   "pillar": "The Home and Relationships",
   "connections": [
-    { "label": "Marriage: The Long Covenant", "href": "/life/marriage-the-long-covenant" },
-    { "label": "Singleness and the Full Life", "href": "/life/singleness-and-the-full-life" },
-    { "label": "Wisdom for All of Life", "href": "/life/wisdom-for-all-of-life" },
-    { "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" },
-    { "label": "The Marriage Assessment", "href": "/tools/marriage-assessment" }
+    {
+      "label": "Marriage: The Long Covenant",
+      "href": "/life/marriage-the-long-covenant"
+    },
+    {
+      "label": "Singleness and the Full Life",
+      "href": "/life/singleness-and-the-full-life"
+    },
+    {
+      "label": "Wisdom for All of Life",
+      "href": "/life/wisdom-for-all-of-life"
+    },
+    {
+      "label": "Friendship Against Isolation",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "The Marriage Assessment",
+      "href": "/tools/marriage-assessment"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Dating and Discernment: Wisdom Before the Covenant"
 }

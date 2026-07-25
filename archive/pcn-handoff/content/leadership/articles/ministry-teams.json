@@ -1,6 +1,6 @@
 {
   "slug": "ministry-teams",
-  "title": "Recruiting and Releasing Volunteers",
+  "title": "How Do You Recruit and Equip Church Volunteers?",
   "subtitle": "The whole church is the ministry, and the pastor's job is to equip the saints for the work, not to do the work while the saints applaud.",
   "kicker": "Equip and Release",
   "group": "Leading People",
@@ -36,10 +36,23 @@
       "body": "The measure of a pastor is not how much ministry he does. It is how much ministry happens that he does not do. The church where everything runs through one man is a monument to that man and a failure of his calling, however impressive it looks, because it has trained a congregation to watch instead of work.\n\nThe church Paul describes builds itself up. Every part works. The body grows because the parts are doing what God made them to do, and the pastor's joy is not to be the one doing it all but to watch the saints he equipped doing the work of ministry without him, some of it better than he ever did it. That requires a death in the pastor, the death of being needed, the death of being the one everyone depends on.\n\nI have not fully died to it. I still like being needed. I still catch myself keeping the task I should give away, because giving it away means I matter a little less, and the self does not want to matter less. That is the work, and it is never finished.\n\nThe goal is a church that would keep ministering if you disappeared tomorrow. Build that, and you will have built the thing Ephesians four describes. Refuse to build it, and you will have built a crowd around yourself and called it a church."
     }
   ],
-  "keyTexts": ["Ephesians 4:11-12", "Exodus 18:17-23", "Romans 12:4-8"],
+  "keyTexts": [
+    "Ephesians 4:11-12",
+    "Exodus 18:17-23",
+    "Romans 12:4-8"
+  ],
   "furtherReading": [
-    {"title": "The Trellis and the Vine", "author": "Colin Marshall"},
-    {"title": "Gospel Eldership", "author": "Robert Thune"},
-    {"title": "The Master Plan of Evangelism", "author": "Robert Coleman"}
+    {
+      "title": "The Trellis and the Vine",
+      "author": "Colin Marshall"
+    },
+    {
+      "title": "Gospel Eldership",
+      "author": "Robert Thune"
+    },
+    {
+      "title": "The Master Plan of Evangelism",
+      "author": "Robert Coleman"
+    }
   ]
 }

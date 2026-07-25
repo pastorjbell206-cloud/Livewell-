@@ -1,14 +1,29 @@
 {
   "slug": "spiritual-friendship-and-the-long-walk",
-  "title": "Spiritual Friendship and the Long Walk: Discipleship One to One",
+  "title": "How Do You Disciple One Person at a Time?",
   "subtitle": "The recovery of one-to-one disciple-making through ordinary spiritual friendship, over coffee, on a walk, in unhurried conversation across years. Not a program and not mere friendship, but a friend who intentionally walks one other person toward Christ. What Scripture, the old soul-friend traditions, and honest research say about the slow work of forming a person, and how an ordinary believer with no title can begin to walk someone toward Jesus this week.",
   "pillar": "The Home and Relationships",
   "connections": [
-    { "label": "Friendship is the ground this grows in. Before you walk someone toward Jesus, you have to be a friend who stays.", "href": "/life/friendship-against-isolation" },
-    { "label": "The table is the other room where one-to-one discipleship happens. Coffee and a meal are the same instinct.", "href": "/life/making-disciples-at-the-table" },
-    { "label": "You cannot walk someone toward a Jesus you are not following yourself. The walk starts with your own.", "href": "/life/discipleship-following-jesus" },
-    { "label": "The first people you will ever disciple one to one are likely under your own roof. The home is the first classroom.", "href": "/life/the-home-and-the-family" },
-    { "label": "Where the church's whole vision of forming people gets its shape. The pathway every spiritual friendship plugs into.", "href": "/discipleship" }
+    {
+      "label": "Friendship is the ground this grows in. Before you walk someone toward Jesus, you have to be a friend who stays.",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "The table is the other room where one-to-one discipleship happens. Coffee and a meal are the same instinct.",
+      "href": "/life/making-disciples-at-the-table"
+    },
+    {
+      "label": "You cannot walk someone toward a Jesus you are not following yourself. The walk starts with your own.",
+      "href": "/life/discipleship-following-jesus"
+    },
+    {
+      "label": "The first people you will ever disciple one to one are likely under your own roof. The home is the first classroom.",
+      "href": "/life/the-home-and-the-family"
+    },
+    {
+      "label": "Where the church's whole vision of forming people gets its shape. The pathway every spiritual friendship plugs into.",
+      "href": "/discipleship"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Spiritual Friendship and the Long Walk"
 }

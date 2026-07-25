@@ -1,6 +1,6 @@
 {
   "slug": "leading-staff",
-  "title": "Leading Paid Staff",
+  "title": "How Do You Lead Church Staff You Also Pastor?",
   "subtitle": "When you sign a person's paycheck and shepherd their soul at the same time, grace and accountability are bound to meet, and sometimes to collide.",
   "kicker": "Grace and Accountability",
   "group": "Leading People",
@@ -36,10 +36,23 @@
       "body": "There will come a day when grace and accountability genuinely collide, when what is best for the church and what is kindest to the person are not the same thing, and you have to choose. That day is the test of whether you are a leader or only a nice man.\n\nThe nice man chooses the person and lets the church suffer, and calls it love. The harsh man chooses the church and discards the person, and calls it leadership. Neither is right. The faithful man chooses what the church needs, because the church is his trust and the staff member is one person among many he is charged to protect, and then he does the hard thing with as much tenderness as the hard thing allows. He tells the truth and weeps while he tells it.\n\nThat is the calling. To hold the budget and the soul at once. To be the boss who never stops being the pastor, even in the firing, even in the conflict, even when the two roles tear at each other and there is no clean way through.\n\nIt does not resolve. You sign the check and you shepherd the man, and some days those are the same act, and some days they are at war, and you have to choose, and you will lose sleep over the choice. Good. The day you stop losing sleep is the day you have stopped loving one of them."
     }
   ],
-  "keyTexts": ["Colossians 4:1", "1 Timothy 5:17-18", "Ephesians 6:9"],
+  "keyTexts": [
+    "Colossians 4:1",
+    "1 Timothy 5:17-18",
+    "Ephesians 6:9"
+  ],
   "furtherReading": [
-    {"title": "Lead", "author": "Paul David Tripp"},
-    {"title": "The Five Dysfunctions of a Team", "author": "Patrick Lencioni"},
-    {"title": "Deep Work", "author": "Cal Newport"}
+    {
+      "title": "Lead",
+      "author": "Paul David Tripp"
+    },
+    {
+      "title": "The Five Dysfunctions of a Team",
+      "author": "Patrick Lencioni"
+    },
+    {
+      "title": "Deep Work",
+      "author": "Cal Newport"
+    }
   ]
 }

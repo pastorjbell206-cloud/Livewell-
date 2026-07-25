@@ -1,14 +1,29 @@
 {
   "slug": "the-neighbor-and-the-stranger",
-  "title": "The Neighbor and the Stranger: Loving the People God Puts in Your Path",
+  "title": "Who Is My Neighbor? What Jesus Actually Meant",
   "subtitle": "Who counts as my neighbor, and who gets to be a stranger I owe nothing. The Good Samaritan, the command to love the outsider, and what it means to love across the lines that are tearing a country apart, when the person God puts in your path is exactly the one your tribe has taught you to despise.",
   "pillar": "The Life in the World",
   "connections": [
-    { "label": "Justice and the Poor", "href": "/life/justice-and-the-poor" },
-    { "label": "Faith and Politics", "href": "/life/faith-and-politics" },
-    { "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" },
-    { "label": "Wisdom for All of Life", "href": "/life/wisdom-for-all-of-life" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "Justice and the Poor",
+      "href": "/life/justice-and-the-poor"
+    },
+    {
+      "label": "Faith and Politics",
+      "href": "/life/faith-and-politics"
+    },
+    {
+      "label": "Friendship Against Isolation",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "Wisdom for All of Life",
+      "href": "/life/wisdom-for-all-of-life"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "The Neighbor and the Stranger"
 }

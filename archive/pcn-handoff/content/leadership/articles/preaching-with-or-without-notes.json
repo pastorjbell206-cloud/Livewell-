@@ -1,6 +1,6 @@
 {
   "slug": "preaching-with-or-without-notes",
-  "title": "Notes, Manuscript, or Nothing: How to Carry a Sermon",
+  "title": "Should You Preach From a Manuscript, Notes, or Nothing?",
   "subtitle": "An honest comparison of preaching from a full manuscript, an outline, or no notes at all, with the tradeoffs of each method and how to choose what fits you.",
   "kicker": "Preaching",
   "group": "Preaching",
@@ -43,8 +43,17 @@
     "Colossians 4:4"
   ],
   "furtherReading": [
-    { "title": "Between Two Worlds", "author": "John Stott" },
-    { "title": "Preaching", "author": "Timothy Keller" },
-    { "title": "Lectures to My Students", "author": "Charles Spurgeon" }
+    {
+      "title": "Between Two Worlds",
+      "author": "John Stott"
+    },
+    {
+      "title": "Preaching",
+      "author": "Timothy Keller"
+    },
+    {
+      "title": "Lectures to My Students",
+      "author": "Charles Spurgeon"
+    }
   ]
 }

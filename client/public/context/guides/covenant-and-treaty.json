@@ -1,6 +1,6 @@
 {
   "slug": "covenant-and-treaty",
-  "title": "Covenant: The Treaty Form Behind the Bible",
+  "title": "What Is a Biblical Covenant? The Ancient Treaty Form",
   "subtitle": "Sinai follows the shape of an ancient treaty between a great king and a rescued people. That shape settles an old argument about law and grace.",
   "kicker": "Ancient Near East",
   "group": "Ancient Near East",
@@ -42,9 +42,21 @@
     "Joshua 24:1-28"
   ],
   "sources": [
-    { "title": "On the Reliability of the Old Testament", "author": "Kenneth A. Kitchen" },
-    { "title": "Treaty of the Great King", "author": "Meredith G. Kline" },
-    { "title": "Old Testament Ethics for the People of God", "author": "Christopher J. H. Wright" },
-    { "title": "Ancient Near Eastern Thought and the Old Testament", "author": "John H. Walton" }
+    {
+      "title": "On the Reliability of the Old Testament",
+      "author": "Kenneth A. Kitchen"
+    },
+    {
+      "title": "Treaty of the Great King",
+      "author": "Meredith G. Kline"
+    },
+    {
+      "title": "Old Testament Ethics for the People of God",
+      "author": "Christopher J. H. Wright"
+    },
+    {
+      "title": "Ancient Near Eastern Thought and the Old Testament",
+      "author": "John H. Walton"
+    }
   ]
 }

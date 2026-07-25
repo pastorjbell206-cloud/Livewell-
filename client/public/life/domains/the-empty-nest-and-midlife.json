@@ -1,14 +1,29 @@
 {
   "slug": "the-empty-nest-and-midlife",
-  "title": "The Empty Nest and Midlife: The Second Half",
+  "title": "Empty Nest and Midlife: What Do You Do Now?",
   "subtitle": "The children gone, the house quiet, and the reckoning that arrives in the middle of a life. The dark wood Dante woke in at the midpoint, the reorientation of purpose when the old purposes are spent, and the difference between finishing well and chasing a youth that is not coming back.",
   "pillar": "The Seasons and the Crises",
   "connections": [
-    { "label": "Raising Children in Grace", "href": "/life/raising-children-in-grace" },
-    { "label": "Work as Worship", "href": "/life/work-as-worship" },
-    { "label": "Identity and Worth", "href": "/life/identity-and-worth" },
-    { "label": "Marriage: The Long Covenant", "href": "/life/marriage-the-long-covenant" },
-    { "label": "Facing Death", "href": "/life/facing-death" }
+    {
+      "label": "Raising Children in Grace",
+      "href": "/life/raising-children-in-grace"
+    },
+    {
+      "label": "Work as Worship",
+      "href": "/life/work-as-worship"
+    },
+    {
+      "label": "Identity and Worth",
+      "href": "/life/identity-and-worth"
+    },
+    {
+      "label": "Marriage: The Long Covenant",
+      "href": "/life/marriage-the-long-covenant"
+    },
+    {
+      "label": "Facing Death",
+      "href": "/life/facing-death"
+    }
   ],
   "parts": [
     {

@@ -1,6 +1,6 @@
 {
   "slug": "wisdom-and-the-nations",
-  "title": "Israel's Wisdom Among Its Neighbors",
+  "title": "Did Proverbs Borrow From Egyptian Wisdom Writing?",
   "subtitle": "Proverbs sits beside Egyptian instruction. Job and Ecclesiastes answer Babylonian despair. Borrowed forms, and a different God inside them.",
   "kicker": "Ancient Near East",
   "group": "Ancient Near East",
@@ -42,9 +42,21 @@
     "Ecclesiastes 9:7-10"
   ],
   "sources": [
-    { "title": "The Fear of the Lord Is Wisdom", "author": "Tremper Longman III" },
-    { "title": "Ancient Near Eastern Thought and the Old Testament", "author": "John H. Walton" },
-    { "title": "The Wisdom of Proverbs, Job and Ecclesiastes", "author": "Derek Kidner" },
-    { "title": "The Bible Among the Myths", "author": "John N. Oswalt" }
+    {
+      "title": "The Fear of the Lord Is Wisdom",
+      "author": "Tremper Longman III"
+    },
+    {
+      "title": "Ancient Near Eastern Thought and the Old Testament",
+      "author": "John H. Walton"
+    },
+    {
+      "title": "The Wisdom of Proverbs, Job and Ecclesiastes",
+      "author": "Derek Kidner"
+    },
+    {
+      "title": "The Bible Among the Myths",
+      "author": "John N. Oswalt"
+    }
   ]
 }

@@ -1,14 +1,29 @@
 {
   "slug": "the-marriage-bed",
-  "title": "The Marriage Bed: Intimacy Within the Covenant",
+  "title": "What Does the Bible Say About Sex in Marriage?",
   "subtitle": "Sex within marriage is a gift and a language, and like every language it can be neglected until it falls silent. A frank and serious reckoning with desire and its mismatches, with the Song of Songs, and with the long work of guarding and tending intimacy across a whole married life.",
   "pillar": "The Home and Relationships",
   "connections": [
-    { "label": "Marriage: The Long Covenant", "href": "/life/marriage-the-long-covenant" },
-    { "label": "Sex and the Body", "href": "/life/sex-and-the-body" },
-    { "label": "The Body and the Rhythms", "href": "/life/the-body-and-the-rhythms" },
-    { "label": "Wisdom for All of Life", "href": "/life/wisdom-for-all-of-life" },
-    { "label": "The Marriage Pages", "href": "/marriage" }
+    {
+      "label": "Marriage: The Long Covenant",
+      "href": "/life/marriage-the-long-covenant"
+    },
+    {
+      "label": "Sex and the Body",
+      "href": "/life/sex-and-the-body"
+    },
+    {
+      "label": "The Body and the Rhythms",
+      "href": "/life/the-body-and-the-rhythms"
+    },
+    {
+      "label": "Wisdom for All of Life",
+      "href": "/life/wisdom-for-all-of-life"
+    },
+    {
+      "label": "The Marriage Pages",
+      "href": "/marriage"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "The Marriage Bed"
 }

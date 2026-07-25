@@ -1,6 +1,6 @@
 {
   "slug": "evangelism-for-ordinary-christians",
-  "title": "Evangelism for Ordinary Christians",
+  "title": "How Do You Share Your Faith With a Skeptical Neighbor?",
   "subtitle": "How to share your faith and witness to a skeptical neighbor without a script, a sales pitch, or the fear that has silenced the church",
   "kicker": "Pastoral Ministry",
   "group": "Pastoral Ministry",
@@ -43,8 +43,17 @@
     "Colossians 4:5-6"
   ],
   "furtherReading": [
-    { "title": "The Reason for God", "author": "Timothy Keller" },
-    { "title": "Out of the Saltshaker and Into the World", "author": "Rebecca Manley Pippert" },
-    { "title": "Mere Christianity", "author": "C. S. Lewis" }
+    {
+      "title": "The Reason for God",
+      "author": "Timothy Keller"
+    },
+    {
+      "title": "Out of the Saltshaker and Into the World",
+      "author": "Rebecca Manley Pippert"
+    },
+    {
+      "title": "Mere Christianity",
+      "author": "C. S. Lewis"
+    }
   ]
 }

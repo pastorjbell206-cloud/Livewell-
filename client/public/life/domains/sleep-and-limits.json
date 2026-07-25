@@ -1,14 +1,29 @@
 {
   "slug": "sleep-and-limits",
-  "title": "Sleep and the Gift of Limits",
+  "title": "What Does Sleep Teach Us About Trusting God?",
   "subtitle": "Every night you lie down and stop. For seven or eight hours you do nothing, produce nothing, defend nothing, and the world keeps turning without you. Sleep is the daily confession that you are a creature and not God, that finitude is not a flaw to be engineered away but a gift to be received, and that the One who holds the world does not need you awake to keep it spinning.",
   "pillar": "The Body and the Rhythms",
   "connections": [
-    { "label": "Rest and the Sabbath: the weekly version of what sleep does nightly", "href": "/life/rest-and-the-sabbath" },
-    { "label": "The Anxious Mind: most sleeplessness is fear refusing to lie down", "href": "/life/the-anxious-mind" },
-    { "label": "The Body and the Rhythms: sleep is one rhythm among the body's gifts", "href": "/life/the-body-and-the-rhythms" },
-    { "label": "Ambition and Rest: the drive that will not let you stop", "href": "/life/ambition-and-rest" },
-    { "label": "Audit your week and your limits with the life audit tool", "href": "/tools/life-audit" }
+    {
+      "label": "Rest and the Sabbath: the weekly version of what sleep does nightly",
+      "href": "/life/rest-and-the-sabbath"
+    },
+    {
+      "label": "The Anxious Mind: most sleeplessness is fear refusing to lie down",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "The Body and the Rhythms: sleep is one rhythm among the body's gifts",
+      "href": "/life/the-body-and-the-rhythms"
+    },
+    {
+      "label": "Ambition and Rest: the drive that will not let you stop",
+      "href": "/life/ambition-and-rest"
+    },
+    {
+      "label": "Audit your week and your limits with the life audit tool",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Sleep and the Gift of Limits"
 }

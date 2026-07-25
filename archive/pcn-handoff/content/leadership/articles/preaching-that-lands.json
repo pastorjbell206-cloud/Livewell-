@@ -1,6 +1,6 @@
 {
   "slug": "preaching-that-lands",
-  "title": "Preaching That Lands",
+  "title": "How Do You Preach a Sermon That Actually Lands?",
   "subtitle": "On delivery, application, and the difference between a lecture about the Bible and a word from God to this room",
   "kicker": "Preaching and Teaching",
   "group": "Preaching and Teaching",
@@ -43,8 +43,17 @@
     "1 Thessalonians 1:5"
   ],
   "furtherReading": [
-    { "title": "Preaching", "author": "Timothy Keller" },
-    { "title": "Lectures to My Students", "author": "Charles H. Spurgeon" },
-    { "title": "Preaching and Preachers", "author": "D. Martyn Lloyd-Jones" }
+    {
+      "title": "Preaching",
+      "author": "Timothy Keller"
+    },
+    {
+      "title": "Lectures to My Students",
+      "author": "Charles H. Spurgeon"
+    },
+    {
+      "title": "Preaching and Preachers",
+      "author": "D. Martyn Lloyd-Jones"
+    }
   ]
 }

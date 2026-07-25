@@ -1,14 +1,29 @@
 {
   "slug": "infertility-and-childlessness",
-  "title": "Infertility and Childlessness: The Ache of Empty Arms",
+  "title": "Where Is God in Infertility and Childlessness?",
   "subtitle": "The grief that arrives monthly and announces nothing, the friends whose pregnancies become small funerals, the church that does not know what to say. A Christian reckoning with the longing for a child that goes unanswered, the women of Scripture who waited, and the hope and identity that must be found when children do not come.",
   "pillar": "The Home and Relationships",
   "connections": [
-    { "label": "This is grief, even when there is no body to bury. The loss that has no funeral has its own page.", "href": "/life/grief-and-loss" },
-    { "label": "When children do not come, the question of who you are without them grows loud. Identity has its own page.", "href": "/life/identity-and-worth" },
-    { "label": "The monthly ache feeds an anxiety that hope deferred makes worse. The anxious mind has its own page.", "href": "/life/the-anxious-mind" },
-    { "label": "Infertility strains a marriage in ways nothing else does. The long covenant has its own page.", "href": "/life/marriage-the-long-covenant" },
-    { "label": "A full life without biological children is not a lesser life. Singleness and fruitfulness without children share a page.", "href": "/life/singleness-and-the-full-life" }
+    {
+      "label": "This is grief, even when there is no body to bury. The loss that has no funeral has its own page.",
+      "href": "/life/grief-and-loss"
+    },
+    {
+      "label": "When children do not come, the question of who you are without them grows loud. Identity has its own page.",
+      "href": "/life/identity-and-worth"
+    },
+    {
+      "label": "The monthly ache feeds an anxiety that hope deferred makes worse. The anxious mind has its own page.",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "Infertility strains a marriage in ways nothing else does. The long covenant has its own page.",
+      "href": "/life/marriage-the-long-covenant"
+    },
+    {
+      "label": "A full life without biological children is not a lesser life. Singleness and fruitfulness without children share a page.",
+      "href": "/life/singleness-and-the-full-life"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Infertility and Childlessness: The Ache of Empty Arms"
 }

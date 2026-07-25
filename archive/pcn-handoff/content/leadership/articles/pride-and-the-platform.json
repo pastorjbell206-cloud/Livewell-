@@ -1,6 +1,6 @@
 {
   "slug": "pride-and-the-platform",
-  "title": "Pride and the Platform",
+  "title": "How Does the Pulpit Feed a Pastor's Pride?",
   "subtitle": "The man who is praised for a living is being slowly poisoned by his own job, and the only question is whether he knows it.",
   "kicker": "Praise and Poison",
   "group": "The Inner Life of the Leader",
@@ -36,10 +36,23 @@
       "body": "The platform can give you almost everything a man wants. Significance. Influence. A voice. The sense that your life counts. It can give you all of it, and it cannot give you the one thing you actually need, which is to be loved when you are nothing.\n\nThat is the test God keeps returning the proud man to. Strip the platform away, the gift, the title, the applause, and ask whether the man underneath is still glad to be alive, still glad to be a child of God, still able to worship from the back row where no one knows his name. If he is not, the platform has become his self, and the day it goes, the self goes with it.\n\nSo build a life that does not need the platform to stand. A marriage that knows the unimpressive you. A prayer life that happens in the dark. A few friends who would love you exactly the same if you were fired tomorrow. These are the things that hold a man up when the praise stops, and the praise will stop, because every platform empties in the end.\n\nThe swelling self does not survive that emptying. Only the small one does. Stay small while you still can choose it."
     }
   ],
-  "keyTexts": ["Proverbs 27:21", "Galatians 6:14", "1 Peter 5:5-6"],
+  "keyTexts": [
+    "Proverbs 27:21",
+    "Galatians 6:14",
+    "1 Peter 5:5-6"
+  ],
   "furtherReading": [
-    {"title": "Humility", "author": "Andrew Murray"},
-    {"title": "Dangerous Calling", "author": "Paul David Tripp"},
-    {"title": "The Pursuit of God", "author": "A. W. Tozer"}
+    {
+      "title": "Humility",
+      "author": "Andrew Murray"
+    },
+    {
+      "title": "Dangerous Calling",
+      "author": "Paul David Tripp"
+    },
+    {
+      "title": "The Pursuit of God",
+      "author": "A. W. Tozer"
+    }
   ]
 }

@@ -1,14 +1,29 @@
 {
   "slug": "creation-and-our-keeping",
-  "title": "Creation and Our Keeping: Tending the Garden",
+  "title": "What Does the Bible Say About Caring for Creation?",
   "subtitle": "The first job God ever gave a human being was to tend a garden, and we have spent most of history forgetting it. What Scripture says about the keeping of the earth, why creation care is neither nature worship nor a partisan slogan, and how the body and the soil bear witness to the same Maker.",
   "pillar": "The Life in the World",
   "connections": [
-    { "label": "Work as Worship", "href": "/life/work-as-worship" },
-    { "label": "Justice and the Poor", "href": "/life/justice-and-the-poor" },
-    { "label": "The Body and the Rhythms", "href": "/life/the-body-and-the-rhythms" },
-    { "label": "Rest and the Sabbath", "href": "/life/rest-and-the-sabbath" },
-    { "label": "Faith and Politics", "href": "/life/faith-and-politics" }
+    {
+      "label": "Work as Worship",
+      "href": "/life/work-as-worship"
+    },
+    {
+      "label": "Justice and the Poor",
+      "href": "/life/justice-and-the-poor"
+    },
+    {
+      "label": "The Body and the Rhythms",
+      "href": "/life/the-body-and-the-rhythms"
+    },
+    {
+      "label": "Rest and the Sabbath",
+      "href": "/life/rest-and-the-sabbath"
+    },
+    {
+      "label": "Faith and Politics",
+      "href": "/life/faith-and-politics"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Creation and Our Keeping: Tending the Garden"
 }

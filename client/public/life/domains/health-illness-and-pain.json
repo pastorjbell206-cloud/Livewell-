@@ -1,14 +1,29 @@
 {
   "slug": "health-illness-and-pain",
-  "title": "Health, Illness, and the Suffering Body",
+  "title": "How Should Christians Think About Sickness and Health?",
   "subtitle": "The body is a gift and the body breaks. What Scripture, church history, and honest medicine say about stewarding health without worshiping it, about the body that betrays, about chronic pain and the limits of healing, and about a church learning again how to stay near the sick.",
   "pillar": "The Body and the Rhythms",
   "connections": [
-    { "label": "The Body and the Rhythms", "href": "/life/the-body-and-the-rhythms" },
-    { "label": "Suffering and the Silence of God", "href": "/life/suffering-and-the-silence-of-god" },
-    { "label": "Facing Death", "href": "/life/facing-death" },
-    { "label": "Rest and the Sabbath", "href": "/life/rest-and-the-sabbath" },
-    { "label": "Grief and Loss", "href": "/life/grief-and-loss" }
+    {
+      "label": "The Body and the Rhythms",
+      "href": "/life/the-body-and-the-rhythms"
+    },
+    {
+      "label": "Suffering and the Silence of God",
+      "href": "/life/suffering-and-the-silence-of-god"
+    },
+    {
+      "label": "Facing Death",
+      "href": "/life/facing-death"
+    },
+    {
+      "label": "Rest and the Sabbath",
+      "href": "/life/rest-and-the-sabbath"
+    },
+    {
+      "label": "Grief and Loss",
+      "href": "/life/grief-and-loss"
+    }
   ],
   "parts": [
     {

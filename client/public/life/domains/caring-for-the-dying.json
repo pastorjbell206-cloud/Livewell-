@@ -1,14 +1,29 @@
 {
   "slug": "caring-for-the-dying",
-  "title": "Caring for the Dying: The Ministry of Presence",
+  "title": "How Do You Sit With Someone Who Is Dying?",
   "subtitle": "What it means to accompany someone all the way to the end. Hospice and palliative care, the ancient art of dying well, the ministry of simple presence when there is nothing left to fix, and the determination that no one God loves should have to die alone.",
   "pillar": "The Seasons and the Crises",
   "connections": [
-    { "label": "Facing Death", "href": "/life/facing-death" },
-    { "label": "Grief and Loss", "href": "/life/grief-and-loss" },
-    { "label": "Caring for Aging Parents", "href": "/life/caring-for-aging-parents" },
-    { "label": "Health, Illness, and the Suffering Body", "href": "/life/health-illness-and-pain" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "Facing Death",
+      "href": "/life/facing-death"
+    },
+    {
+      "label": "Grief and Loss",
+      "href": "/life/grief-and-loss"
+    },
+    {
+      "label": "Caring for Aging Parents",
+      "href": "/life/caring-for-aging-parents"
+    },
+    {
+      "label": "Health, Illness, and the Suffering Body",
+      "href": "/life/health-illness-and-pain"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Caring for the Dying: The Ministry of Presence"
 }

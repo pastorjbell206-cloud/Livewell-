@@ -1,14 +1,29 @@
 {
   "slug": "anger-and-the-hot-heart",
-  "title": "Anger and the Hot Heart",
+  "title": "Is Anger a Sin? What Scripture Actually Says",
   "subtitle": "Anger is not always a sin, and it is not always righteous. It is a fire that tells the truth about what you love. What Scripture, the long tradition, and honest psychology say about the quick fuse and the slow one, and how the hot heart can be governed rather than obeyed.",
   "pillar": "The Inner Life",
   "connections": [
-    { "label": "Shame and the Hiding Self", "href": "/life/shame-and-the-hiding-self" },
-    { "label": "Identity and Worth", "href": "/life/identity-and-worth" },
-    { "label": "Marriage: The Long Covenant", "href": "/life/marriage-the-long-covenant" },
-    { "label": "Raising Children in Grace", "href": "/life/raising-children-in-grace" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "Shame and the Hiding Self",
+      "href": "/life/shame-and-the-hiding-self"
+    },
+    {
+      "label": "Identity and Worth",
+      "href": "/life/identity-and-worth"
+    },
+    {
+      "label": "Marriage: The Long Covenant",
+      "href": "/life/marriage-the-long-covenant"
+    },
+    {
+      "label": "Raising Children in Grace",
+      "href": "/life/raising-children-in-grace"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {
@@ -125,5 +140,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Anger and the Hot Heart"
 }
