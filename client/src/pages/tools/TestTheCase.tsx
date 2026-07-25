@@ -95,6 +95,9 @@ export default function TestTheCase() {
     setOpenObjection(null);
   }
 
+  // minHeight keeps every control at the 44px tap target Apple and Google both
+  // specify; inline-flex centring keeps the label optically centred once the
+  // button is taller than its text.
   const btn = {
     fontFamily: "var(--U)",
     fontSize: "13px",
@@ -102,6 +105,10 @@ export default function TestTheCase() {
     borderRadius: "var(--radius-sm)",
     cursor: "pointer",
     padding: "10px 18px",
+    minHeight: "44px",
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
   } as const;
 
   return (

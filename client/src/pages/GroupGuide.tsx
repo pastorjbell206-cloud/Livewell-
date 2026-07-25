@@ -124,14 +124,14 @@ export default function GroupGuide() {
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
             <Link
               href={`/writing/${guide.slug}`}
-              style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--charcoal)", background: "var(--bone)", padding: "10px 16px", borderRadius: "3px", textDecoration: "none" }}
+              style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--charcoal)", background: "var(--bone)", padding: "10px 16px", borderRadius: "3px", textDecoration: "none", minHeight: "44px", display: "inline-flex", alignItems: "center" }}
             >
               Read the essay
             </Link>
             <button
               type="button"
               onClick={() => window.print()}
-              style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--bone)", background: "transparent", border: "1px solid rgba(245,240,230,0.3)", padding: "10px 16px", borderRadius: "3px", cursor: "pointer" }}
+              style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--bone)", background: "transparent", border: "1px solid rgba(245,240,230,0.3)", padding: "10px 16px", borderRadius: "3px", cursor: "pointer", minHeight: "44px" }}
             >
               Print this guide
             </button>
@@ -167,7 +167,12 @@ export default function GroupGuide() {
                 {guide.suggestedReading.map((r, i) => (
                   <li key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.6, color: "var(--ink)" }}>
                     {isSlug(r) ? (
-                      <Link href={`/writing/${r}`} style={{ color: "var(--ink)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+                      // A tappable list row, so give it the 44px target rather
+                      // than leaving it at inline-text height on a phone.
+                      <Link
+                        href={`/writing/${r}`}
+                        style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", color: "var(--ink)", textDecoration: "underline", textUnderlineOffset: "3px" }}
+                      >
                         {r.replace(/-/g, " ")}
                       </Link>
                     ) : (

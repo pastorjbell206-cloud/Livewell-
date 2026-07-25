@@ -148,6 +148,7 @@ export function NewsletterSignup({
               disabled={subscribe.isPending}
               style={{
                 padding: "13px 18px",
+                minHeight: "44px",
                 background: "var(--mustard)",
                 color: "var(--ink)",
                 border: "none",
@@ -198,6 +199,7 @@ export function NewsletterSignup({
           disabled={subscribe.isPending}
           style={{
             padding: "12px 22px",
+                minHeight: "44px",
             background: "var(--ink)",
             color: "var(--bone)",
             border: "none",
@@ -277,6 +279,7 @@ export function NewsletterSignup({
           disabled={subscribe.isPending}
           style={{
             padding: "12px 22px",
+                minHeight: "44px",
             background: "var(--ink)",
             color: "var(--bone)",
             border: "none",
