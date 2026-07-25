@@ -17,7 +17,7 @@ export function LibraryStrip() {
   if (featured.length === 0) return null;
 
   return (
-    <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+    <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
       <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "var(--s-4)", flexWrap: "wrap", gap: "12px" }}>
           <div>
