@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { BookOpen, Copy, Check, Heart, Search, Share2, Sun } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
 import { copyToClipboard } from "@/lib/clipboard";
+import ScriptureNote from "@/components/ScriptureNote";
 import { Link } from "wouter";
 
 const VERSES: Record<string, { ref: string; text: string }[]> = {
@@ -268,9 +269,10 @@ export default function VerseFinder() {
             <Link href={`/theology/passage?ref=${encodeURIComponent(dailyVerse.ref)}`} style={{ fontSize: "14px", fontWeight: 700, color: "var(--gold)", fontFamily: "var(--U)", display: "block", marginBottom: "8px", textDecoration: "none" }}>
               {dailyVerse.ref} →
             </Link>
-            <p style={{ fontSize: "16px", lineHeight: 1.8, color: "var(--ink)", fontFamily: "var(--B)", fontStyle: "italic", margin: 0 }}>
+            <p style={{ fontSize: "16px", lineHeight: 1.8, color: "var(--ink)", fontFamily: "var(--B)", fontStyle: "italic", margin: "0 0 12px" }}>
               {dailyVerse.text}
             </p>
+            <ScriptureNote rendering="unverified" />
             <div style={{ display: "flex", gap: "8px", marginTop: "16px" }}>
               <button
                 onClick={() => handleCopy(dailyVerse.ref, dailyVerse.text)}
@@ -351,6 +353,7 @@ export default function VerseFinder() {
                 <BookOpen size={20} style={{ display: "inline", marginRight: "8px", color: "var(--gold)" }} />
                 Verses on {selected}
               </h2>
+              <ScriptureNote rendering="unverified" />
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                 {VERSES[selected].map((v) => (
                   <div key={v.ref} style={{ padding: "24px", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "8px", borderLeft: "4px solid var(--gold)" }}>

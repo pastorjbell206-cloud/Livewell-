@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import ScriptureNote from "@/components/ScriptureNote";
 import { ArrowLeft } from "lucide-react";
 
 interface KeyWord { word: string; original: string; meaning: string; }
@@ -2287,6 +2288,7 @@ export default function DeepBibleCompanion() {
                   <blockquote style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.1rem", fontStyle: "italic", lineHeight: 1.7, color: "var(--ink, #14110C)", borderLeft: "2px solid var(--mustard, #D4A017)", paddingLeft: "1.5rem", margin: "0 0 2rem" }}>
                     {selectedPassage.text}
                   </blockquote>
+                  <ScriptureNote rendering="unverified" />
                   <h4 style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", marginBottom: "0.75rem" }}>Plain-English Paraphrase</h4>
                   <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--ink, #14110C)", marginBottom: "2rem" }}>{selectedPassage.paraphrase}</p>
                   <h4 style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", marginBottom: "0.75rem" }}>Key Words</h4>

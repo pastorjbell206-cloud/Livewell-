@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import { useState, useMemo } from "react";
 import { Copy, Check, Search } from "lucide-react";
 import { copyToClipboard } from "@/lib/clipboard";
+import ScriptureNote from "@/components/ScriptureNote";
 
 /**
  * Parenting Bible Verses — a topical lookup of Scripture for the real moments
@@ -208,6 +209,7 @@ export default function ParentingVerses() {
           <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderTop: "2px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)" }}>
             <h2 style={{ fontFamily: "var(--F)", fontSize: "24px", fontWeight: 500, color: "var(--ink)", marginBottom: "8px" }}>{topic.label}</h2>
             <p style={{ fontFamily: "var(--F)", fontSize: "17px", fontStyle: "italic", lineHeight: 1.6, color: "var(--ink-muted)", marginBottom: "24px", maxWidth: "62ch" }}>{topic.note}</p>
+            <ScriptureNote rendering="unverified" />
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               {topic.verses.map((v) => (
                 <div key={v.ref} style={{ borderTop: "1px solid var(--border)", paddingTop: "16px" }}>

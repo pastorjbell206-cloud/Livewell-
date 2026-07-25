@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import { useState, useEffect, useCallback } from "react";
 import { BookOpen, Check, ChevronRight, Eye, EyeOff } from "lucide-react";
 import { readStoredJSON, writeStoredJSON, isArrayOf } from "@/lib/storage";
+import ScriptureNote from "@/components/ScriptureNote";
 
 /* ── Types ─────────────────────────────────────────────────────── */
 
@@ -740,6 +741,8 @@ export default function ScriptureMemory() {
                           {verse.text}
                         </p>
                       )}
+
+                      <ScriptureNote rendering="unverified" />
 
                       {mode === "firstLetter" && (
                         <div>
