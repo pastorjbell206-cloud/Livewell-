@@ -126,7 +126,7 @@ export default function BookDetail() {
         </section>
 
         {/* Book Hero */}
-        <section className="py-16" style={{ backgroundColor: "#FFFFFF" }}>
+        <section className="py-16" style={{ backgroundColor: "var(--card)" }}>
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
               {/* Book Cover */}

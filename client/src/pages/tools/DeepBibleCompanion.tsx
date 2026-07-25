@@ -2165,7 +2165,7 @@ export default function DeepBibleCompanion() {
               </div>
             )}
             <h2 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.5rem", fontWeight: 400, color: "var(--ink, #14110C)", marginBottom: "0.5rem" }}>Choose a book</h2>
-            <p style={{ fontSize: "0.85rem", color: "#666", marginBottom: "2rem" }}>Books with full study content are highlighted. More books coming soon.</p>
+            <p style={{ fontSize: "0.85rem", color: "var(--ink-muted)", marginBottom: "2rem" }}>Books with full study content are highlighted. More books coming soon.</p>
 
             {["OT", "NT"].map(testament => (
               <div key={testament} style={{ marginBottom: "2rem" }}>
@@ -2182,7 +2182,7 @@ export default function DeepBibleCompanion() {
                         opacity: hasContent ? 1 : 0.5, transition: "all 240ms ease",
                       }}>
                         <div style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.1rem", fontWeight: 400, color: "var(--ink, #14110C)", marginBottom: "0.25rem" }}>{book.name}</div>
-                        <div style={{ fontSize: "0.75rem", color: "#666", lineHeight: 1.4 }}>{book.hook}</div>
+                        <div style={{ fontSize: "0.75rem", color: "var(--ink-muted)", lineHeight: 1.4 }}>{book.hook}</div>
                         {!hasContent && <div style={{ fontSize: "0.65rem", color: "var(--mustard, #D4A017)", marginTop: "0.5rem", fontFamily: "var(--U, Inter, sans-serif)" }}>Coming soon</div>}
                       </button>
                     );
@@ -2195,11 +2195,11 @@ export default function DeepBibleCompanion() {
       ) : !selectedPassage ? (
         <section className="db-screen" style={{ background: "var(--bone, #F5F0E6)", padding: "4rem 1.5rem" }}>
           <div style={{ maxWidth: "780px", margin: "0 auto" }}>
-            <button onClick={() => setSelectedBook(null)} style={{ display: "flex", alignItems: "center", gap: "0.5rem", background: "none", border: "none", color: "#666", fontSize: "0.85rem", fontFamily: "var(--U, Inter, sans-serif)", cursor: "pointer", marginBottom: "2rem" }}>
+            <button onClick={() => setSelectedBook(null)} style={{ display: "flex", alignItems: "center", gap: "0.5rem", background: "none", border: "none", color: "var(--ink-muted)", fontSize: "0.85rem", fontFamily: "var(--U, Inter, sans-serif)", cursor: "pointer", marginBottom: "2rem" }}>
               <ArrowLeft size={14} /> All books
             </button>
             <h2 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.75rem", fontWeight: 400, color: "var(--ink, #14110C)", marginBottom: "0.5rem" }}>{selectedBook.name}</h2>
-            <p style={{ fontSize: "0.85rem", color: "#666", marginBottom: "2rem" }}>{selectedBook.hook}</p>
+            <p style={{ fontSize: "0.85rem", color: "var(--ink-muted)", marginBottom: "2rem" }}>{selectedBook.hook}</p>
             {bookAct !== null && bookAct.noteCount + bookAct.markCount > 0 && (
               <div style={{ marginBottom: "2rem", padding: "1.5rem", background: "white", border: "1px solid var(--border, #e5e0d5)", borderLeft: "3px solid var(--mustard, #D4A017)", borderRadius: "2px" }}>
                 <div style={panelEyebrow}>Your marks and notes</div>
@@ -2249,7 +2249,7 @@ export default function DeepBibleCompanion() {
                   borderRadius: "2px", cursor: "pointer", textAlign: "left", transition: "all 240ms ease",
                 }}>
                   <div style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.1rem", fontWeight: 400, color: "var(--ink, #14110C)", marginBottom: "0.25rem" }}>{p.ref}</div>
-                  <div style={{ fontSize: "0.85rem", color: "#666" }}>{p.summary}</div>
+                  <div style={{ fontSize: "0.85rem", color: "var(--ink-muted)" }}>{p.summary}</div>
                 </button>
               ))}
             </div>
@@ -2258,7 +2258,7 @@ export default function DeepBibleCompanion() {
       ) : (
         <section className="db-screen" style={{ background: "var(--bone, #F5F0E6)", padding: "3rem 1.5rem" }}>
           <div style={{ maxWidth: "780px", margin: "0 auto" }}>
-            <button onClick={() => setSelectedPassage(null)} style={{ display: "flex", alignItems: "center", gap: "0.5rem", background: "none", border: "none", color: "#666", fontSize: "0.85rem", fontFamily: "var(--U, Inter, sans-serif)", cursor: "pointer", marginBottom: "1.5rem" }}>
+            <button onClick={() => setSelectedPassage(null)} style={{ display: "flex", alignItems: "center", gap: "0.5rem", background: "none", border: "none", color: "var(--ink-muted)", fontSize: "0.85rem", fontFamily: "var(--U, Inter, sans-serif)", cursor: "pointer", marginBottom: "1.5rem" }}>
               <ArrowLeft size={14} /> {selectedBook.name}
             </button>
             <h2 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.75rem", fontWeight: 400, color: "var(--ink, #14110C)", marginBottom: "2rem" }}>{selectedPassage.ref}</h2>
@@ -2293,7 +2293,7 @@ export default function DeepBibleCompanion() {
                   {selectedPassage.keyWords.map((kw, i) => (
                     <div key={i} style={{ marginBottom: "1.25rem", paddingLeft: "1rem", borderLeft: "2px solid #e5e0d5" }}>
                       <div style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1rem", fontWeight: 500, color: "var(--ink, #14110C)", marginBottom: "0.25rem" }}>"{kw.word}" — <span style={{ fontStyle: "italic", color: "var(--mustard, #D4A017)" }}>{kw.original}</span></div>
-                      <p style={{ fontSize: "0.85rem", lineHeight: 1.65, color: "#666" }}>{kw.meaning}</p>
+                      <p style={{ fontSize: "0.85rem", lineHeight: 1.65, color: "var(--ink-muted)" }}>{kw.meaning}</p>
                     </div>
                   ))}
                 </div>
@@ -2302,7 +2302,7 @@ export default function DeepBibleCompanion() {
               {activeTab === 1 && (
                 <div>
                   <h3 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.25rem", color: "var(--ink, #14110C)", marginBottom: "1.5rem" }}>Historical Context</h3>
-                  <p style={{ fontSize: "0.85rem", color: "#666", marginBottom: "1.5rem" }}>What the original audience heard that we miss.</p>
+                  <p style={{ fontSize: "0.85rem", color: "var(--ink-muted)", marginBottom: "1.5rem" }}>What the original audience heard that we miss.</p>
                   {selectedPassage.historical.map((h, i) => (
                     <div key={i} style={{ marginBottom: "1.25rem", padding: "1.25rem", background: "var(--bone, #F5F0E6)", borderRadius: "2px" }}>
                       <p style={{ fontSize: "0.9rem", lineHeight: 1.7, color: "var(--ink, #14110C)" }}>{h}</p>
@@ -2327,7 +2327,7 @@ export default function DeepBibleCompanion() {
                     {selectedPassage.literary.keyTerms.map((kt, i) => (
                       <div key={i} style={{ marginBottom: "1rem", paddingLeft: "1rem", borderLeft: "2px solid #e5e0d5" }}>
                         <div style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1rem", fontWeight: 500, color: "var(--ink, #14110C)" }}>{kt.term} <span style={{ fontStyle: "italic", fontSize: "0.85rem", color: "var(--mustard, #D4A017)" }}>({kt.language})</span></div>
-                        <p style={{ fontSize: "0.85rem", lineHeight: 1.65, color: "#666" }}>{kt.meaning}</p>
+                        <p style={{ fontSize: "0.85rem", lineHeight: 1.65, color: "var(--ink-muted)" }}>{kt.meaning}</p>
                       </div>
                     ))}
                   </div>
@@ -2341,7 +2341,7 @@ export default function DeepBibleCompanion() {
               {activeTab === 3 && (
                 <div>
                   <h3 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.25rem", color: "var(--ink, #14110C)", marginBottom: "1.5rem" }}>What Scholars Say</h3>
-                  <p style={{ fontSize: "0.85rem", color: "#666", marginBottom: "1.5rem" }}>Honest disagreement exists. Here are the major views.</p>
+                  <p style={{ fontSize: "0.85rem", color: "var(--ink-muted)", marginBottom: "1.5rem" }}>Honest disagreement exists. Here are the major views.</p>
                   {selectedPassage.scholars.map((s, i) => (
                     <div key={i} style={{ marginBottom: "1.5rem", padding: "1.25rem", background: "var(--bone, #F5F0E6)", borderRadius: "2px", borderLeft: "2px solid var(--mustard, #D4A017)" }}>
                       <h4 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1rem", fontWeight: 500, color: "var(--ink, #14110C)", marginBottom: "0.5rem" }}>{s.view}</h4>

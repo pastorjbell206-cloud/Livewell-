@@ -16,11 +16,11 @@ interface Event { year: string; sortYear: number; era: string; title: string; ca
 interface Data { intro: string; events: Event[]; closing: string; }
 
 const CATEGORIES: Record<string, { label: string; color: string }> = {
-  church: { label: "In the Name of Christ", color: "#7A1F1F" },
-  empire: { label: "Empire and Colonialism", color: "#5A4A2A" },
-  capitalism: { label: "Markets and Greed", color: "#8A5A00" },
-  communism: { label: "Communism and Forced Utopia", color: "#5A2A6A" },
-  nation: { label: "Nation and Ideology", color: "#2A4A6A" },
+  church: { label: "In the Name of Christ", color: "var(--cat-church)" },
+  empire: { label: "Empire and Colonialism", color: "var(--cat-empire)" },
+  capitalism: { label: "Markets and Greed", color: "var(--cat-capitalism)" },
+  communism: { label: "Communism and Forced Utopia", color: "var(--cat-communism)" },
+  nation: { label: "Nation and Ideology", color: "var(--cat-nation)" },
 };
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
@@ -102,7 +102,7 @@ export default function PropheticTimeline() {
                       <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)" }}>{e.title}</span>
                       <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 700, letterSpacing: "0.06em", color: cat.color }}>{e.year}</span>
                     </div>
-                    <span style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "10px", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: cat.color, background: `${cat.color}1A`, borderRadius: "999px", padding: "3px 10px", marginBottom: "10px" }}>{cat.label}</span>
+                    <span style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "10px", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: cat.color, background: `color-mix(in srgb, ${cat.color} 12%, transparent)`, borderRadius: "999px", padding: "3px 10px", marginBottom: "10px" }}>{cat.label}</span>
                     <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", marginBottom: e.scale ? "8px" : "10px" }}>{e.summary}</p>
                     {e.scale && <p style={{ fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.6, color: "var(--ink-muted)", marginBottom: "10px" }}><strong style={{ color: "var(--ink)" }}>Scale. </strong>{e.scale}</p>}
                     <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.65, color: "var(--ink-muted)", fontStyle: "italic", borderTop: "1px solid var(--border)", paddingTop: "10px" }}>{e.theReckoning}</p>

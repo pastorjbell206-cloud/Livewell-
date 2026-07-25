@@ -47,18 +47,29 @@ hard to name as a reader, easy to feel.
 
 **Fix:** same treatment. Map the raw values to the nearest scale step and replace.
 
-## 3. Thirty hardcoded hex values now break a shipped feature
+## 3. Hardcoded hex values now break a shipped feature — FIXED
 
-**Evidence:** 30 hardcoded colours outside the admin area (`CarePlan`,
-`PropheticTimeline`, `DeepBibleCompanion`, `StartHereQuiz`, `ReadingPaths`, others).
+**Evidence:** 32 hardcoded colours outside the admin area — 29 across `pages/` and
+`components/`, plus 3 in `lib/theology.ts` that a first pass missed by scanning only the
+component directories.
 
 This mattered less when the site was light-only. **Dark mode now ships**, and a hardcoded
-hex cannot flip — so each of these is a patch of the wrong colour in dark mode, and a
-place a future brand change will silently miss. This was already the codebase's stated
-anti-pattern; it is now a live bug rather than a tidiness rule.
+hex cannot flip — so each of these was a patch of the wrong colour in dark mode, and a
+place a future brand change would silently miss.
 
-**Fix:** replace with the nearest `:root` token; where no token fits, add one. Verify in
-both themes.
+Twenty-one were genuine bugs and are now fixed: three `#FFFFFF` card backgrounds that
+stayed white on a near-black page, ten `#666` muted-text values, the five prophetic
+timeline category hues (deep colours used as *text* on a card that flips near-black), and
+the three doctrinal-triage hues. All are now theme-aware tokens with lightened dark-mode
+variants.
+
+Two related traps were fixed with them: `` `${color}1A` `` string concatenation built an
+8-digit hex from a raw value, which silently produces invalid CSS the moment the value
+becomes `var(…)`. Both sites now use `color-mix(in srgb, … , transparent)`.
+
+The remaining eleven — the quiz option accents in `StartHereQuiz` — are **not** bugs.
+They paint a fixed mid-tone background under fixed white text, so both themes read
+correctly; the same principle as `--charcoal-fg`.
 
 ## 4. The site looks the same all the way down
 
@@ -105,7 +116,7 @@ and use those names everywhere. This is a copy change, not a build.
 1. **Editorial variety on the top twenty pages** (#4). Highest visible payoff, lowest
    risk, uses components that already exist.
 2. **Type scale tokens** (#1). Mechanical, and it stops the drift recurring.
-3. **Hardcoded hex** (#3). Now a dark-mode correctness issue, not housekeeping.
+3. ~~**Hardcoded hex** (#3)~~ — done.
 4. **Spacing tokens** (#2). Same pass as #1.
 5. **Nav trim and the naming pass** (#5, #6). Both are decisions about words, so they want
    the author's hand more than mine.

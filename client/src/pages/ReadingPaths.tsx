@@ -354,7 +354,7 @@ export default function ReadingPaths() {
                 key={path.id}
                 onClick={() => scrollToPath(path.id)}
                 style={{
-                  background: "#FFFFFF",
+                  background: "var(--card)",
                   border: "1px solid rgba(26, 26, 26, 0.08)",
                   borderRadius: "2px",
                   overflow: "hidden",
