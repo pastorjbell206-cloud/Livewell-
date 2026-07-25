@@ -32,7 +32,7 @@ export default function CrisisFaq({ items }: { items: CrisisFaqItem[] }) {
   return (
     <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-        <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>QUESTIONS PEOPLE CARRY</p>
+        <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>QUESTIONS PEOPLE CARRY</p>
         <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "32px" }}>You are not the only one asking this</h2>
         <div style={{ display: "flex", flexDirection: "column" }}>
           {items.map((item, i) => (
