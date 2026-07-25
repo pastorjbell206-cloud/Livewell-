@@ -1,14 +1,29 @@
 {
   "slug": "work-as-worship",
-  "title": "Work as Worship: Vocation, Calling, and the Daily Grind",
+  "title": "What Does the Bible Say About Work and Calling?",
   "subtitle": "The dignity and the idolatry of work held together. What Scripture, the Reformers, and honest research say about calling, the curse on labor, and the long faithfulness that outlasts success.",
   "pillar": "Work, Money, and Calling",
   "connections": [
-    { "label": "Money and the Heart", "href": "/life/money-and-the-heart" },
-    { "label": "Generosity and the Open Hand", "href": "/life/generosity-and-the-open-hand" },
-    { "label": "Rest and the Sabbath", "href": "/life/rest-and-the-sabbath" },
-    { "label": "The Anxious Mind", "href": "/life/the-anxious-mind" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "Money and the Heart",
+      "href": "/life/money-and-the-heart"
+    },
+    {
+      "label": "Generosity and the Open Hand",
+      "href": "/life/generosity-and-the-open-hand"
+    },
+    {
+      "label": "Rest and the Sabbath",
+      "href": "/life/rest-and-the-sabbath"
+    },
+    {
+      "label": "The Anxious Mind",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Work as Worship"
 }

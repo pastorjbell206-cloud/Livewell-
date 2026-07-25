@@ -1,14 +1,29 @@
 {
   "slug": "retirement-and-the-last-third",
-  "title": "Retirement and the Last Third of Life",
+  "title": "What Does the Bible Say About Retirement?",
   "subtitle": "A whole generation is being handed twenty or thirty years past the career and told the goal is endless leisure, a permanent vacation earned by forty years of work. Scripture has a different word for the last third of life. Not retirement from usefulness but a change of assignment. Not the idol of the endless vacation but fruitfulness in age, a finishing that is also a sowing, a legacy of faith handed forward before the hands let go.",
   "pillar": "Work, Money, and Calling",
   "connections": [
-    { "label": "Work as Worship: calling does not end when the paycheck does", "href": "/life/work-as-worship" },
-    { "label": "Aging and the Body: the last third lived in a weakening frame", "href": "/life/aging-and-the-body" },
-    { "label": "Facing Death: the horizon the last third can no longer ignore", "href": "/life/facing-death" },
-    { "label": "Generosity and the Open Hand: the legacy of what you release", "href": "/life/generosity-and-the-open-hand" },
-    { "label": "Take stock of the whole shape of your life with the life audit", "href": "/tools/life-audit" }
+    {
+      "label": "Work as Worship: calling does not end when the paycheck does",
+      "href": "/life/work-as-worship"
+    },
+    {
+      "label": "Aging and the Body: the last third lived in a weakening frame",
+      "href": "/life/aging-and-the-body"
+    },
+    {
+      "label": "Facing Death: the horizon the last third can no longer ignore",
+      "href": "/life/facing-death"
+    },
+    {
+      "label": "Generosity and the Open Hand: the legacy of what you release",
+      "href": "/life/generosity-and-the-open-hand"
+    },
+    {
+      "label": "Take stock of the whole shape of your life with the life audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Retirement and the Last Third of Life"
 }

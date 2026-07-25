@@ -1,14 +1,29 @@
 {
   "slug": "suffering-and-the-silence-of-god",
-  "title": "Suffering and the Silence of God",
+  "title": "Why Does God Allow Suffering and Stay Silent?",
   "subtitle": "The problem of pain without the easy answers. Lament as the language faith speaks in the dark, the book of Job as God's refusal to explain, and how to hold on when heaven seems to have gone quiet.",
   "pillar": "The Seasons and the Crises",
   "connections": [
-    { "label": "Grief and Loss", "href": "/life/grief-and-loss" },
-    { "label": "The Anxious Mind: Faith and Mental Health", "href": "/life/the-anxious-mind" },
-    { "label": "Facing Death: The Last Enemy and the Sure Hope", "href": "/life/facing-death" },
-    { "label": "Wisdom for All of Life", "href": "/life/wisdom-for-all-of-life" },
-    { "label": "An Emotional Health Check-In", "href": "/tools/emotional-health" }
+    {
+      "label": "Grief and Loss",
+      "href": "/life/grief-and-loss"
+    },
+    {
+      "label": "The Anxious Mind: Faith and Mental Health",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "Facing Death: The Last Enemy and the Sure Hope",
+      "href": "/life/facing-death"
+    },
+    {
+      "label": "Wisdom for All of Life",
+      "href": "/life/wisdom-for-all-of-life"
+    },
+    {
+      "label": "An Emotional Health Check-In",
+      "href": "/tools/emotional-health"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Suffering and the Silence of God"
 }

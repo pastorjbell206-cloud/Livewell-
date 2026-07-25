@@ -1,14 +1,29 @@
 {
   "slug": "caring-for-aging-parents",
-  "title": "Caring for Aging Parents: Honor at the End",
+  "title": "How Do You Honor Aging Parents Who Need Care?",
   "subtitle": "The fifth commandment does not expire when a parent grows old. What Scripture, church history, and honest research say about the sandwich generation, the role reversal, the long goodbye, and the hard grace of honoring a father and mother in their decline.",
   "pillar": "The Home and Relationships",
   "connections": [
-    { "label": "Facing Death", "href": "/life/facing-death" },
-    { "label": "Grief and Loss", "href": "/life/grief-and-loss" },
-    { "label": "The Home and the Family", "href": "/life/the-home-and-the-family" },
-    { "label": "Health, Illness, and the Suffering Body", "href": "/life/health-illness-and-pain" },
-    { "label": "Forgiveness: The Hardest Grace", "href": "/life/forgiveness-the-hardest-grace" }
+    {
+      "label": "Facing Death",
+      "href": "/life/facing-death"
+    },
+    {
+      "label": "Grief and Loss",
+      "href": "/life/grief-and-loss"
+    },
+    {
+      "label": "The Home and the Family",
+      "href": "/life/the-home-and-the-family"
+    },
+    {
+      "label": "Health, Illness, and the Suffering Body",
+      "href": "/life/health-illness-and-pain"
+    },
+    {
+      "label": "Forgiveness: The Hardest Grace",
+      "href": "/life/forgiveness-the-hardest-grace"
+    }
   ],
   "parts": [
     {

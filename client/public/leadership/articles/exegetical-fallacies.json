@@ -1,6 +1,6 @@
 {
   "slug": "exegetical-fallacies",
-  "title": "The Exegetical Fallacies That Wreck Sermons",
+  "title": "What Are the Exegetical Fallacies That Ruin Sermons?",
   "subtitle": "A working pastor's guide to the common interpretation errors that ruin preaching, from the root fallacy to anachronism to illegitimate totality transfer, and how to stop making them",
   "kicker": "Exegesis",
   "group": "Exegesis and Bible Study",
@@ -49,8 +49,17 @@
     "James 3:1"
   ],
   "furtherReading": [
-    { "title": "Exegetical Fallacies", "author": "D. A. Carson" },
-    { "title": "Linguistics and Biblical Interpretation", "author": "Peter Cotterell and Max Turner" },
-    { "title": "How to Read the Bible for All Its Worth", "author": "Gordon D. Fee and Douglas Stuart" }
+    {
+      "title": "Exegetical Fallacies",
+      "author": "D. A. Carson"
+    },
+    {
+      "title": "Linguistics and Biblical Interpretation",
+      "author": "Peter Cotterell and Max Turner"
+    },
+    {
+      "title": "How to Read the Bible for All Its Worth",
+      "author": "Gordon D. Fee and Douglas Stuart"
+    }
   ]
 }

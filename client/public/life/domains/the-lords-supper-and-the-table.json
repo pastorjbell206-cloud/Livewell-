@@ -1,14 +1,29 @@
 {
   "slug": "the-lords-supper-and-the-table",
-  "title": "The Lord's Supper and the Table of Grace",
+  "title": "What Does the Lord's Supper Actually Mean?",
   "subtitle": "Jesus left his church not a theory but a meal. Bread broken, a cup poured, a command to keep eating until he comes. What Scripture, the ancient church, and the range of faithful Christian views say about the meaning of communion, the gospel you can taste, the presence of Christ at the table, and the meal that has been forming a people for two thousand years.",
   "pillar": "The Integrated Vision",
   "connections": [
-    { "label": "Making Disciples at the Table", "href": "/life/making-disciples-at-the-table" },
-    { "label": "Baptism and the New Life", "href": "/life/baptism-and-the-new-life" },
-    { "label": "The Church as Family", "href": "/life/the-church-as-family" },
-    { "label": "Food and the Table", "href": "/life/food-and-the-table" },
-    { "label": "Consumer Faith and the Communal Church", "href": "/life/consumer-faith-and-the-communal-church" }
+    {
+      "label": "Making Disciples at the Table",
+      "href": "/life/making-disciples-at-the-table"
+    },
+    {
+      "label": "Baptism and the New Life",
+      "href": "/life/baptism-and-the-new-life"
+    },
+    {
+      "label": "The Church as Family",
+      "href": "/life/the-church-as-family"
+    },
+    {
+      "label": "Food and the Table",
+      "href": "/life/food-and-the-table"
+    },
+    {
+      "label": "Consumer Faith and the Communal Church",
+      "href": "/life/consumer-faith-and-the-communal-church"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "The Lord's Supper and the Table of Grace"
 }

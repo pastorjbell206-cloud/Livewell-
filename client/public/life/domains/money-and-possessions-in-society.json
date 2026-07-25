@@ -1,14 +1,29 @@
 {
   "slug": "money-and-possessions-in-society",
-  "title": "Money and Possessions in a Consumer Society",
+  "title": "How Do You Follow Jesus With Your Money?",
   "subtitle": "What it means to follow Jesus with your wallet in an affluent culture that has organized your whole life around acquiring and discarding. Wealth, consumerism, the question of enough, the global neighbor, and a way of holding possessions that refuses to be captured by either side of the American argument about money.",
   "pillar": "The Life in the World",
   "connections": [
-    { "label": "Money and the Heart", "href": "/life/money-and-the-heart" },
-    { "label": "Generosity and the Open Hand", "href": "/life/generosity-and-the-open-hand" },
-    { "label": "Contentment Against Envy", "href": "/life/contentment-against-envy" },
-    { "label": "Justice and the Poor", "href": "/life/justice-and-the-poor" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "Money and the Heart",
+      "href": "/life/money-and-the-heart"
+    },
+    {
+      "label": "Generosity and the Open Hand",
+      "href": "/life/generosity-and-the-open-hand"
+    },
+    {
+      "label": "Contentment Against Envy",
+      "href": "/life/contentment-against-envy"
+    },
+    {
+      "label": "Justice and the Poor",
+      "href": "/life/justice-and-the-poor"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {

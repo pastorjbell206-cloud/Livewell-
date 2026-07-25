@@ -1,14 +1,29 @@
 {
   "slug": "faith-and-politics",
-  "title": "Faith and Politics: The Christian in the Public Square",
+  "title": "How Should a Christian Think About Politics?",
   "subtitle": "How a Christian belongs to two kingdoms at once, the idolatry of the nation, the ancient church that worshiped a crucified Lord under a hostile empire, and what it means to engage as a citizen without selling your soul to a party. Refusing the captivity of the faith to either tribe while still loving your country and your neighbor.",
   "pillar": "The Life in the World",
   "connections": [
-    { "label": "The Neighbor and the Stranger", "href": "/life/the-neighbor-and-the-stranger" },
-    { "label": "Justice and the Poor", "href": "/life/justice-and-the-poor" },
-    { "label": "Technology and Attention", "href": "/life/technology-and-attention" },
-    { "label": "Discipleship: Following Jesus", "href": "/life/discipleship-following-jesus" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "The Neighbor and the Stranger",
+      "href": "/life/the-neighbor-and-the-stranger"
+    },
+    {
+      "label": "Justice and the Poor",
+      "href": "/life/justice-and-the-poor"
+    },
+    {
+      "label": "Technology and Attention",
+      "href": "/life/technology-and-attention"
+    },
+    {
+      "label": "Discipleship: Following Jesus",
+      "href": "/life/discipleship-following-jesus"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {

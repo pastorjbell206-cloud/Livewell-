@@ -1,16 +1,37 @@
 {
   "slug": "the-home-and-the-family",
-  "title": "The Home and the Family: Building a Household of Faith",
+  "title": "How Do You Build a Christian Home and Family?",
   "subtitle": "A home is not only where a family sleeps. It is the first church a child ever attends and the first picture of God they ever see. What Scripture, church history, and honest research say about the table, family worship, hospitality, and building a household whose ordinary life forms souls.",
   "pillar": "The Home and Relationships",
   "connections": [
-    { "label": "Marriage: The Long Covenant", "href": "/life/marriage-the-long-covenant" },
-    { "label": "Raising Children in Grace", "href": "/life/raising-children-in-grace" },
-    { "label": "Discipleship: Following Jesus", "href": "/life/discipleship-following-jesus" },
-    { "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" },
-    { "label": "Family Devotions", "href": "/family/devotions" },
-    { "label": "Family Catechism", "href": "/family/catechism" },
-    { "label": "The Family Pages", "href": "/family" }
+    {
+      "label": "Marriage: The Long Covenant",
+      "href": "/life/marriage-the-long-covenant"
+    },
+    {
+      "label": "Raising Children in Grace",
+      "href": "/life/raising-children-in-grace"
+    },
+    {
+      "label": "Discipleship: Following Jesus",
+      "href": "/life/discipleship-following-jesus"
+    },
+    {
+      "label": "Friendship Against Isolation",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "Family Devotions",
+      "href": "/family/devotions"
+    },
+    {
+      "label": "Family Catechism",
+      "href": "/family/catechism"
+    },
+    {
+      "label": "The Family Pages",
+      "href": "/family"
+    }
   ],
   "parts": [
     {

@@ -1,14 +1,29 @@
 {
   "slug": "the-story-we-live-in",
-  "title": "The Story We Live In: Creation, Fall, Redemption, Restoration",
+  "title": "Creation, Fall, Redemption, Restoration: The Bible's Story",
   "subtitle": "Not a set of doctrines to affirm, but a story to live inside. A Christian reckoning with the whole biblical drama in four acts, with why a person cannot live well without a true story to inhabit, and with how creation, fall, redemption, and restoration become the frame that holds an integrated life together.",
   "pillar": "The Integrated Vision",
   "connections": [
-    { "label": "The four-act story is the frame the whole integrated vision hangs on. The integrated life has its own page.", "href": "/life/the-integrated-life" },
-    { "label": "The first act, creation, is where our work and our keeping of the world begin. Creation and our keeping has its own page.", "href": "/life/creation-and-our-keeping" },
-    { "label": "Living rightly inside the story is the heart of what it means to follow Jesus. Discipleship has its own page.", "href": "/life/discipleship-following-jesus" },
-    { "label": "The fall and the not-yet are why we still wait in a world not yet made right. Waiting and unanswered prayer has its own page.", "href": "/life/waiting-and-unanswered-prayer" },
-    { "label": "The story locates our suffering inside an act that is not the last one. Suffering and the silence of God has its own page.", "href": "/life/suffering-and-the-silence-of-god" }
+    {
+      "label": "The four-act story is the frame the whole integrated vision hangs on. The integrated life has its own page.",
+      "href": "/life/the-integrated-life"
+    },
+    {
+      "label": "The first act, creation, is where our work and our keeping of the world begin. Creation and our keeping has its own page.",
+      "href": "/life/creation-and-our-keeping"
+    },
+    {
+      "label": "Living rightly inside the story is the heart of what it means to follow Jesus. Discipleship has its own page.",
+      "href": "/life/discipleship-following-jesus"
+    },
+    {
+      "label": "The fall and the not-yet are why we still wait in a world not yet made right. Waiting and unanswered prayer has its own page.",
+      "href": "/life/waiting-and-unanswered-prayer"
+    },
+    {
+      "label": "The story locates our suffering inside an act that is not the last one. Suffering and the silence of God has its own page.",
+      "href": "/life/suffering-and-the-silence-of-god"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "The Story We Live In"
 }

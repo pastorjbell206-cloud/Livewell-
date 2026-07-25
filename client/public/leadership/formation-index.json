@@ -1,44 +1,44 @@
 {
   "topics": [
     {
-      "slug": "church-government",
-      "title": "Church Government: Who Decides, and By What Right",
-      "blurb": "Episcopal, presbyterian, congregational, and elder-led polity examined fairly: the texts, the history, the failure modes, and what each protects.",
-      "pillar": "Leading the Institution",
-      "triage": "conviction"
-    },
-    {
       "slug": "men-women-and-the-office",
-      "title": "Men, Women, and the Office: The Debate the Church Cannot Shout Past",
+      "title": "Can Women Be Pastors? Complementarian vs. Egalitarian",
       "blurb": "The complementarian and egalitarian cases for women and church office, each at full strength, passage by passage, so leaders can study rather than shout.",
       "pillar": "Leading the Institution",
       "triage": "conviction"
     },
     {
+      "slug": "church-government",
+      "title": "What Are the Four Types of Church Government?",
+      "blurb": "Episcopal, presbyterian, congregational, and elder-led polity examined fairly: the texts, the history, the failure modes, and what each protects.",
+      "pillar": "Leading the Institution",
+      "triage": "conviction"
+    },
+    {
       "slug": "the-call-and-its-testing",
-      "title": "The Call and Its Testing",
+      "title": "How Do You Know If You Are Called to Ministry?",
       "blurb": "How to discern a call to ministry without presumption and without false humility, what Scripture requires, how the church confirms, and how to wait well.",
       "pillar": "The Arc of a Leadership Life",
       "triage": "wisdom"
     },
     {
-      "slug": "burnout-and-the-theology-of-rest",
-      "title": "Burnout and the Theology of Rest",
-      "blurb": "The anatomy of pastoral burnout, what Sabbath actually is, how God treated Elijah under the broom tree, and why rest is trust before it is recovery.",
+      "slug": "the-leaders-marriage-and-family",
+      "title": "How Do You Pastor a Church Without Losing Your Family?",
+      "blurb": "The family as the first congregation, the spouse who shares you with the church, the children of the manse, and the safeguards that keep ministry from becoming a mistress.",
       "pillar": "The Interior Life",
       "triage": "command"
     },
     {
       "slug": "the-hidden-temptations-of-power",
-      "title": "The Hidden Temptations of Power",
+      "title": "How Does Power Corrupt Pastors and Christian Leaders?",
       "blurb": "How power quietly corrupts pastors and Christian leaders, what Scripture and church history teach, and the practices that form servant leadership.",
       "pillar": "The Interior Life",
       "triage": "command"
     },
     {
-      "slug": "the-leaders-marriage-and-family",
-      "title": "The Leader's Marriage and Family",
-      "blurb": "The family as the first congregation, the spouse who shares you with the church, the children of the manse, and the safeguards that keep ministry from becoming a mistress.",
+      "slug": "burnout-and-the-theology-of-rest",
+      "title": "What Does Scripture Say About Burnout and Sabbath?",
+      "blurb": "The anatomy of pastoral burnout, what Sabbath actually is, how God treated Elijah under the broom tree, and why rest is trust before it is recovery.",
       "pillar": "The Interior Life",
       "triage": "command"
     }

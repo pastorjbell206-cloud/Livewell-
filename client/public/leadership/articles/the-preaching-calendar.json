@@ -1,6 +1,6 @@
 {
   "slug": "the-preaching-calendar",
-  "title": "Planning a Year of Preaching",
+  "title": "How Do You Plan a Year of Preaching and Sermon Series?",
   "subtitle": "On series, seasons, and the long diet you are feeding a congregation, and why planning is not the enemy of the Spirit",
   "kicker": "Preaching and Teaching",
   "group": "Preaching and Teaching",
@@ -43,8 +43,17 @@
     "Psalm 19:7-10"
   ],
   "furtherReading": [
-    { "title": "Christ-Centered Preaching", "author": "Bryan Chapell" },
-    { "title": "Ancient-Future Time", "author": "Robert E. Webber" },
-    { "title": "Preaching the Whole Bible as Christian Scripture", "author": "Graeme Goldsworthy" }
+    {
+      "title": "Christ-Centered Preaching",
+      "author": "Bryan Chapell"
+    },
+    {
+      "title": "Ancient-Future Time",
+      "author": "Robert E. Webber"
+    },
+    {
+      "title": "Preaching the Whole Bible as Christian Scripture",
+      "author": "Graeme Goldsworthy"
+    }
   ]
 }

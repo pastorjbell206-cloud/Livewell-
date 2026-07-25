@@ -1,14 +1,29 @@
 {
   "slug": "food-and-the-table",
-  "title": "Food and the Table: Feasting, Fasting, and the Hungry Heart",
+  "title": "What Does the Bible Say About Food, Feasting, and Fasting?",
   "subtitle": "We eat three times a day and almost never ask what we are doing. But the table is one of the most spiritual places in human life, the hunger of the body points to a deeper hunger, and the way a culture eats reveals the way it worships. What Scripture and the church teach about gluttony and diet culture, the lost rhythm of fasting and feasting, and how the shared table becomes communion.",
   "pillar": "The Body and the Rhythms",
   "connections": [
-    { "label": "The Body and the Rhythms", "href": "/life/the-body-and-the-rhythms" },
-    { "label": "Rest and the Sabbath", "href": "/life/rest-and-the-sabbath" },
-    { "label": "Generosity and the Open Hand", "href": "/life/generosity-and-the-open-hand" },
-    { "label": "Desire and Temptation: The Disordered Want", "href": "/life/desire-and-temptation" },
-    { "label": "The Neighbor and the Stranger", "href": "/life/the-neighbor-and-the-stranger" }
+    {
+      "label": "The Body and the Rhythms",
+      "href": "/life/the-body-and-the-rhythms"
+    },
+    {
+      "label": "Rest and the Sabbath",
+      "href": "/life/rest-and-the-sabbath"
+    },
+    {
+      "label": "Generosity and the Open Hand",
+      "href": "/life/generosity-and-the-open-hand"
+    },
+    {
+      "label": "Desire and Temptation: The Disordered Want",
+      "href": "/life/desire-and-temptation"
+    },
+    {
+      "label": "The Neighbor and the Stranger",
+      "href": "/life/the-neighbor-and-the-stranger"
+    }
   ],
   "parts": [
     {

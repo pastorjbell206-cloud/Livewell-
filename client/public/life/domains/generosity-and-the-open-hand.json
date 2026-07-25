@@ -1,14 +1,29 @@
 {
   "slug": "generosity-and-the-open-hand",
-  "title": "Generosity and the Open Hand",
+  "title": "Why Should Christians Give Their Money Away?",
   "subtitle": "Giving is not a tax the church levies on the faithful. It is the medicine that breaks greed's grip and the practice that moves treasure where moth and rust cannot reach. A Christian reckoning with the tithe, the open hand, and the joy of letting go.",
   "pillar": "Work, Money, and Calling",
   "connections": [
-    { "label": "Money and the Heart", "href": "/life/money-and-the-heart" },
-    { "label": "Work as Worship", "href": "/life/work-as-worship" },
-    { "label": "Rest and the Sabbath", "href": "/life/rest-and-the-sabbath" },
-    { "label": "Wisdom for All of Life", "href": "/life/wisdom-for-all-of-life" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "Money and the Heart",
+      "href": "/life/money-and-the-heart"
+    },
+    {
+      "label": "Work as Worship",
+      "href": "/life/work-as-worship"
+    },
+    {
+      "label": "Rest and the Sabbath",
+      "href": "/life/rest-and-the-sabbath"
+    },
+    {
+      "label": "Wisdom for All of Life",
+      "href": "/life/wisdom-for-all-of-life"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Generosity and the Open Hand"
 }

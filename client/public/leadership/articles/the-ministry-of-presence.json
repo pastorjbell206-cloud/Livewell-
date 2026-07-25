@@ -1,6 +1,6 @@
 {
   "slug": "the-ministry-of-presence",
-  "title": "The Ministry of Presence",
+  "title": "Why Does Pastoral Visitation Still Matter?",
   "subtitle": "On visitation, the hospital room, and the unscalable work that is most of the job",
   "kicker": "The Work of Ministry",
   "group": "The Work of Ministry",
@@ -43,8 +43,17 @@
     "Luke 15:4-7"
   ],
   "furtherReading": [
-    { "title": "The Contemplative Pastor", "author": "Eugene H. Peterson" },
-    { "title": "The Art of Dying", "author": "Rob Moll" },
-    { "title": "Being Mortal", "author": "Atul Gawande" }
+    {
+      "title": "The Contemplative Pastor",
+      "author": "Eugene H. Peterson"
+    },
+    {
+      "title": "The Art of Dying",
+      "author": "Rob Moll"
+    },
+    {
+      "title": "Being Mortal",
+      "author": "Atul Gawande"
+    }
   ]
 }

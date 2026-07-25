@@ -1,6 +1,6 @@
 {
   "slug": "the-leaders-prayer-life",
-  "title": "The Leader Who Does Not Pray",
+  "title": "Why Does a Pastor's Prayer Life Disappear First?",
   "subtitle": "Prayer is the first thing to go in a busy ministry and the last thing anyone notices is gone, which is exactly why it is the truest measure of a leader's soul.",
   "kicker": "Formation",
   "group": "Leadership Formation",
@@ -36,10 +36,23 @@
       "body": "If you have lost it, you have not lost Him. The throne is not crowded. There is no line.\n\nDo not begin by repenting of the last three years, though you may. Begin by showing up tomorrow morning, late and ashamed and out of practice, and saying the truest thing you have said in months, which is that you cannot do this and you forgot it and you need Him. He is not waiting to scold the prodigal. He is watching the road.\n\nStart small and start real. Ten honest minutes beat an hour of performed devotion, and the goal is not to impress God with your discipline but to be with Him until you are changed by it. The prayer life does not return by resolution. It returns by repetition, one kept morning at a time, until the morning you cannot imagine leading without it.\n\nThe leader who prays leads from a place no crisis can reach. The leader who does not is one bad week from collapse and does not know it. Choose tomorrow morning. It is the only morning you get to choose."
     }
   ],
-  "keyTexts": ["Mark 1:35", "Luke 18:1", "Colossians 4:2"],
+  "keyTexts": [
+    "Mark 1:35",
+    "Luke 18:1",
+    "Colossians 4:2"
+  ],
   "furtherReading": [
-    {"title": "A Praying Life", "author": "Paul E. Miller"},
-    {"title": "Prayer", "author": "Timothy Keller"},
-    {"title": "The Reformed Pastor", "author": "Richard Baxter"}
+    {
+      "title": "A Praying Life",
+      "author": "Paul E. Miller"
+    },
+    {
+      "title": "Prayer",
+      "author": "Timothy Keller"
+    },
+    {
+      "title": "The Reformed Pastor",
+      "author": "Richard Baxter"
+    }
   ]
 }

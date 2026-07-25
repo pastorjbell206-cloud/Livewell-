@@ -1,14 +1,29 @@
 {
   "slug": "baptism-and-the-new-life",
-  "title": "Baptism and the New Life",
+  "title": "What Does Baptism Mean, and Why Does It Matter?",
   "subtitle": "Before the church was anything else, it was a people who had gone down into the water. What Scripture, the ancient church, and the range of faithful Christian views say about baptism as union with Christ in death and resurrection, the sign of belonging, the washing that marks a new humanity, and why a wet body has stood at the door of the Christian life for two thousand years.",
   "pillar": "The Integrated Vision",
   "connections": [
-    { "label": "The Lord's Supper and the Table of Grace", "href": "/life/the-lords-supper-and-the-table" },
-    { "label": "Identity and Worth", "href": "/life/identity-and-worth" },
-    { "label": "Discipleship: Following Jesus", "href": "/life/discipleship-following-jesus" },
-    { "label": "The Church as Family", "href": "/life/the-church-as-family" },
-    { "label": "Raising Children in Grace", "href": "/life/raising-children-in-grace" }
+    {
+      "label": "The Lord's Supper and the Table of Grace",
+      "href": "/life/the-lords-supper-and-the-table"
+    },
+    {
+      "label": "Identity and Worth",
+      "href": "/life/identity-and-worth"
+    },
+    {
+      "label": "Discipleship: Following Jesus",
+      "href": "/life/discipleship-following-jesus"
+    },
+    {
+      "label": "The Church as Family",
+      "href": "/life/the-church-as-family"
+    },
+    {
+      "label": "Raising Children in Grace",
+      "href": "/life/raising-children-in-grace"
+    }
   ],
   "parts": [
     {

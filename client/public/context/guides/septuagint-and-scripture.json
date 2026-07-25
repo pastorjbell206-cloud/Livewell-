@@ -1,6 +1,6 @@
 {
   "slug": "septuagint-and-scripture",
-  "title": "The Bible the Apostles Carried",
+  "title": "What Is the Septuagint, and Why Does It Matter?",
   "subtitle": "The first churches read their Scriptures in Greek translation, and the New Testament quotes it on nearly every page. Knowing that should steady you, not shake you.",
   "kicker": "Second Temple",
   "group": "Second Temple Judaism",
@@ -42,9 +42,21 @@
     "Hebrews 10:5-7"
   ],
   "sources": [
-    { "title": "Backgrounds of Early Christianity", "author": "Everett Ferguson" },
-    { "title": "The IVP Bible Background Commentary: New Testament", "author": "Craig S. Keener" },
-    { "title": "Jesus and the Eyewitnesses: The Gospels as Eyewitness Testimony", "author": "Richard Bauckham" },
-    { "title": "The Earliest Christian Artifacts: Manuscripts and Christian Origins", "author": "Larry W. Hurtado" }
+    {
+      "title": "Backgrounds of Early Christianity",
+      "author": "Everett Ferguson"
+    },
+    {
+      "title": "The IVP Bible Background Commentary: New Testament",
+      "author": "Craig S. Keener"
+    },
+    {
+      "title": "Jesus and the Eyewitnesses: The Gospels as Eyewitness Testimony",
+      "author": "Richard Bauckham"
+    },
+    {
+      "title": "The Earliest Christian Artifacts: Manuscripts and Christian Origins",
+      "author": "Larry W. Hurtado"
+    }
   ]
 }

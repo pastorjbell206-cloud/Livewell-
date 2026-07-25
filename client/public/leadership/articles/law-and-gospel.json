@@ -1,6 +1,6 @@
 {
   "slug": "law-and-gospel",
-  "title": "Reading the Bible With Law and Gospel",
+  "title": "What Is the Difference Between Law and Gospel?",
   "subtitle": "A guide to the distinction between law and gospel in Scripture, why command and promise must not be confused, how the law drives us to Christ, and how rightly dividing the word keeps preaching from moralism",
   "kicker": "Exegesis",
   "group": "Exegesis and Bible Study",
@@ -50,8 +50,17 @@
     "2 Timothy 2:15"
   ],
   "furtherReading": [
-    { "title": "The Whole Christ", "author": "Sinclair B. Ferguson" },
-    { "title": "Five Views on Law and Gospel", "author": "Stanley N. Gundry" },
-    { "title": "Preaching Christ in All of Scripture", "author": "Edmund P. Clowney" }
+    {
+      "title": "The Whole Christ",
+      "author": "Sinclair B. Ferguson"
+    },
+    {
+      "title": "Five Views on Law and Gospel",
+      "author": "Stanley N. Gundry"
+    },
+    {
+      "title": "Preaching Christ in All of Scripture",
+      "author": "Edmund P. Clowney"
+    }
   ]
 }

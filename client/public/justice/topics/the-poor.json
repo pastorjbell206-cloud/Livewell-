@@ -1,6 +1,6 @@
 {
   "slug": "the-poor",
-  "title": "The Poor at the Gate",
+  "title": "What Does the Bible Say About the Poor and Poverty?",
   "subtitle": "Scripture treats the treatment of the poor as the test of whether a people knows God at all. We have learned to fail that test in two languages.",
   "question": "If the Bible measures a nation by how it treats the poorest person inside its gate, why does the modern church keep handing that measurement to a political party to take instead?",
   "whyItMatters": "You are skeptical of the church, and on this subject your skepticism has earned its keep. You have watched Christians argue about the poor as though the poor were a debating point, a wedge, a line in a fundraising letter. You have heard the word compassion spoken in the same breath as contempt. That dissonance is not a reason to dismiss the question. It is the reason the question still has teeth.",
@@ -56,9 +56,22 @@
   "theCost": "To take this seriously costs you the comfort of a tribe. The left will call you naive for trusting the church to do what only government can scale. The right will call you a radical for insisting that personal generosity was never meant to be a substitute for justice. You will be homeless in the argument, which is roughly where the prophets lived. The deeper cost is nearer than politics. It is the gate outside your own door, the person you have trained yourself not to see.",
   "charge": "Stop arguing about the poor and go find one. Learn a name. Let the abstraction become a face that interrupts you, because that is the only version of this God has ever asked for. The verdict was never about your opinions. It was always about your gate.",
   "furtherReading": [
-    { "title": "Generous Justice", "author": "Timothy Keller" },
-    { "title": "The Prophetic Imagination", "author": "Walter Brueggemann" },
-    { "title": "Life Together", "author": "Dietrich Bonhoeffer" },
-    { "title": "Ministries of Mercy", "author": "Timothy Keller" }
-  ]
+    {
+      "title": "Generous Justice",
+      "author": "Timothy Keller"
+    },
+    {
+      "title": "The Prophetic Imagination",
+      "author": "Walter Brueggemann"
+    },
+    {
+      "title": "Life Together",
+      "author": "Dietrich Bonhoeffer"
+    },
+    {
+      "title": "Ministries of Mercy",
+      "author": "Timothy Keller"
+    }
+  ],
+  "kicker": "The Poor at the Gate"
 }

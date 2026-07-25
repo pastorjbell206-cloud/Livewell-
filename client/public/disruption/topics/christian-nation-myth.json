@@ -1,6 +1,6 @@
 {
   "slug": "christian-nation-myth",
-  "title": "The Myth of a Christian Nation",
+  "title": "Was America Founded as a Christian Nation?",
   "subtitle": "What was true, what was never true, and why the story holds so many of us so tightly",
   "question": "Was there ever a Christian nation, and what happens to our faith when we believe there was?",
   "whyItMatters": "A myth is not a lie. A myth is a story a people tells to explain itself, and the most dangerous myths are the ones with real history underneath them. The claim that this was once a Christian nation grips so many because it is not entirely false. Believers built hospitals, ended a slave trade, wrote charters that assumed a moral order they did not invent. To dismiss all of that as fantasy is its own kind of dishonesty. But a half-truth held too tightly becomes an idol, and an idol always asks for blood.",
@@ -26,10 +26,22 @@
   "theCost": "Naming this myth will cost you on every side. Say the nation is not the kingdom and one camp will call you faithless to your heritage. Say the church's influence was real and good and the other camp will call you a partisan. The prophets knew this loneliness. Brueggemann called it the work of refusing the royal consciousness, the story the empire tells to make itself feel eternal. Bonhoeffer paid for that refusal with a rope. To love a country and still tell it the truth about its idols is to stand where almost no one will stand with you, and to lose the comfort of belonging to either tribe.",
   "charge": "So love your country. Bury your dead in its soil and teach your sons its better stories. But when it asks you to call it holy, when it wants the seat that belongs to God alone, you must have already decided whose you are. The myth promises that if the nation is saved, you are safe. The gospel promises something harder and truer, that you were never citizens of a kingdom that could fall. The multitude before the throne carries no flag. It only carries the name of the Lamb, and it has room for every nation precisely because it belongs to none of them.",
   "furtherReading": [
-    { "title": "The Prophetic Imagination", "author": "Walter Brueggemann" },
-    { "title": "The Cost of Discipleship", "author": "Dietrich Bonhoeffer" },
-    { "title": "The Myth of a Christian Nation", "author": "Gregory Boyd" },
-    { "title": "Resident Aliens", "author": "Stanley Hauerwas and William Willimon" }
+    {
+      "title": "The Prophetic Imagination",
+      "author": "Walter Brueggemann"
+    },
+    {
+      "title": "The Cost of Discipleship",
+      "author": "Dietrich Bonhoeffer"
+    },
+    {
+      "title": "The Myth of a Christian Nation",
+      "author": "Gregory Boyd"
+    },
+    {
+      "title": "Resident Aliens",
+      "author": "Stanley Hauerwas and William Willimon"
+    }
   ],
   "captureDetail": {
     "right": {
@@ -60,5 +72,6 @@
         "Single-story tellings that reduce a complicated history to guilt alone"
       ]
     }
-  }
+  },
+  "kicker": "The Myth of a Christian Nation"
 }

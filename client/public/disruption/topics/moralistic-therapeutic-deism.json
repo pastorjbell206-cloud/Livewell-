@@ -1,6 +1,6 @@
 {
   "slug": "moralistic-therapeutic-deism",
-  "title": "Moralistic Therapeutic Deism",
+  "title": "What Is Moralistic Therapeutic Deism? America's Folk Faith",
   "subtitle": "The unofficial creed of the American church, left and right, and the five quiet beliefs that replaced the gospel while everyone kept saying the word God.",
   "question": "Have we traded the God who died and rose for a distant, agreeable deity who wants us to be nice, exists to make us feel good about ourselves, and stays out of the way until we need him?",
   "whyItMatters": "Christian Smith and Melinda Lundquist Denton did not set out to name a heresy. Directing the National Study of Youth and Religion, they listened to thousands of American teenagers describe what they actually believed about God, and found that most of them, churched and unchurched, Catholic and Protestant, red state and blue, held the same unspoken creed. In Soul Searching in 2005 they called it moralistic therapeutic deism. It was not printed in any statement of faith. It was what the church had taught by accident, in its songs and its silences, and the young had learned it perfectly. Smith's most unsettling finding was that the teenagers were not rebels. They were echoes. They believed what their parents and their congregations actually believed underneath the official words, and they repeated it back with devastating accuracy. I have preached the official confession from the front and taught the folk religion in everything around it.",
@@ -52,9 +52,21 @@
     }
   },
   "furtherReading": [
-    { "title": "Soul Searching: The Religious and Spiritual Lives of American Teenagers", "author": "Christian Smith and Melinda Lundquist Denton" },
-    { "title": "Bad Religion: How We Became a Nation of Heretics", "author": "Ross Douthat" },
-    { "title": "Habits of the Heart: Individualism and Commitment in American Life", "author": "Robert N. Bellah" },
-    { "title": "The Cost of Discipleship", "author": "Dietrich Bonhoeffer" }
+    {
+      "title": "Soul Searching: The Religious and Spiritual Lives of American Teenagers",
+      "author": "Christian Smith and Melinda Lundquist Denton"
+    },
+    {
+      "title": "Bad Religion: How We Became a Nation of Heretics",
+      "author": "Ross Douthat"
+    },
+    {
+      "title": "Habits of the Heart: Individualism and Commitment in American Life",
+      "author": "Robert N. Bellah"
+    },
+    {
+      "title": "The Cost of Discipleship",
+      "author": "Dietrich Bonhoeffer"
+    }
   ]
 }

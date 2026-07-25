@@ -1,16 +1,37 @@
 {
   "slug": "raising-children-in-grace",
-  "title": "Raising Children in Grace",
+  "title": "How Do You Discipline Children With Grace?",
   "subtitle": "You cannot save your children, and you were never meant to. What Scripture, church history, and honest research say about discipline, faith, anger, screens, the teen years, and the slow work of raising a soul you do not control.",
   "pillar": "The Home and Relationships",
   "connections": [
-    { "label": "Marriage: The Long Covenant", "href": "/life/marriage-the-long-covenant" },
-    { "label": "Wisdom for All of Life", "href": "/life/wisdom-for-all-of-life" },
-    { "label": "The Anxious Mind", "href": "/life/the-anxious-mind" },
-    { "label": "The Parenting Pages", "href": "/parenting" },
-    { "label": "Family Catechism", "href": "/family/catechism" },
-    { "label": "Family Devotions", "href": "/family/devotions" },
-    { "label": "Family Reading Plans", "href": "/family/reading-plans" }
+    {
+      "label": "Marriage: The Long Covenant",
+      "href": "/life/marriage-the-long-covenant"
+    },
+    {
+      "label": "Wisdom for All of Life",
+      "href": "/life/wisdom-for-all-of-life"
+    },
+    {
+      "label": "The Anxious Mind",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "The Parenting Pages",
+      "href": "/parenting"
+    },
+    {
+      "label": "Family Catechism",
+      "href": "/family/catechism"
+    },
+    {
+      "label": "Family Devotions",
+      "href": "/family/devotions"
+    },
+    {
+      "label": "Family Reading Plans",
+      "href": "/family/reading-plans"
+    }
   ],
   "parts": [
     {

@@ -1,14 +1,29 @@
 {
   "slug": "singleness-and-the-full-life",
-  "title": "Singleness and the Full Life",
+  "title": "Is Singleness a Calling or a Waiting Room?",
   "subtitle": "Singleness is not a waiting room. It is a calling Jesus and Paul both kept, a full and fruitful life that the church too often treats as a problem to be solved. What Scripture, church history, and honest research say about the unmarried life, the idol of marriage, and the family that does not run on blood.",
   "pillar": "The Home and Relationships",
   "connections": [
-    { "label": "Marriage: The Long Covenant", "href": "/life/marriage-the-long-covenant" },
-    { "label": "Dating and Discernment", "href": "/life/dating-and-discernment" },
-    { "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" },
-    { "label": "The Home and the Family", "href": "/life/the-home-and-the-family" },
-    { "label": "Wisdom for All of Life", "href": "/life/wisdom-for-all-of-life" }
+    {
+      "label": "Marriage: The Long Covenant",
+      "href": "/life/marriage-the-long-covenant"
+    },
+    {
+      "label": "Dating and Discernment",
+      "href": "/life/dating-and-discernment"
+    },
+    {
+      "label": "Friendship Against Isolation",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "The Home and the Family",
+      "href": "/life/the-home-and-the-family"
+    },
+    {
+      "label": "Wisdom for All of Life",
+      "href": "/life/wisdom-for-all-of-life"
+    }
   ],
   "parts": [
     {

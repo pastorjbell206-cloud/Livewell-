@@ -1,14 +1,29 @@
 {
   "slug": "betrayal-and-broken-trust",
-  "title": "Betrayal and Broken Trust",
+  "title": "How Do You Heal After Betrayal by Someone Close?",
   "subtitle": "Being deeply wronged by someone close. The particular wound of treachery, where the knife was held by a hand you trusted. Psalm 55 and the friend who became an enemy, and the hard untangling of forgiveness, reconciliation, and rebuilt trust, which are three different things and not one.",
   "pillar": "The Seasons and the Crises",
   "connections": [
-    { "label": "Forgiveness: The Hardest Grace", "href": "/life/forgiveness-the-hardest-grace" },
-    { "label": "Anger and the Hot Heart", "href": "/life/anger-and-the-hot-heart" },
-    { "label": "Marriage: The Long Covenant", "href": "/life/marriage-the-long-covenant" },
-    { "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" },
-    { "label": "Identity and Worth", "href": "/life/identity-and-worth" }
+    {
+      "label": "Forgiveness: The Hardest Grace",
+      "href": "/life/forgiveness-the-hardest-grace"
+    },
+    {
+      "label": "Anger and the Hot Heart",
+      "href": "/life/anger-and-the-hot-heart"
+    },
+    {
+      "label": "Marriage: The Long Covenant",
+      "href": "/life/marriage-the-long-covenant"
+    },
+    {
+      "label": "Friendship Against Isolation",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "Identity and Worth",
+      "href": "/life/identity-and-worth"
+    }
   ],
   "parts": [
     {

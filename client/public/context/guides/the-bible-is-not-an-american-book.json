@@ -1,6 +1,6 @@
 {
   "slug": "the-bible-is-not-an-american-book",
-  "title": "The Bible Is Not an American Book",
+  "title": "Is the Bible an American Book? What Its History Shows",
   "subtitle": "Three languages, a dozen empires, a millennium of authors, and not one of them ever saw a ballot. The text resists every flag we drape over it, including ours.",
   "kicker": "Past Our Politics",
   "group": "Reading Past Our Politics",
@@ -36,11 +36,27 @@
       "body": "So how do we read a book that is not ours?\n\nSlowly, and from somewhere else. Read Exodus as a freed slave, not as Pharaoh's countryman. Read Daniel as a deportee. Read Revelation as it was written, from a penal island, to churches deciding weekly whether to burn the pinch of incense. Ask of every passage: who held the power in this scene, and where do I actually stand in it? American readers reflexively cast ourselves as Israel, as David, as the persecuted church. Sometimes we are Babylon. Sometimes we are the rich young ruler, and the text watches us walk away sad.\n\nThen let the strangeness stand. Do not rush the text into relevance. A Bible that never offends your politics has already been edited, whoever you are and however you vote.\n\nThe Bible is not an American book. It is older than our arguments, larger than our elections, and addressed to a people scattered across every nation and at home in none. When we finally read it that way, it stops flattering us. That is the moment it can start saving us. Most of us have not yet let it be foreign enough to do either."
     }
   ],
-  "keyTexts": ["Exodus 19:4-6", "Philippians 3:20-21", "1 Peter 1:1-2"],
+  "keyTexts": [
+    "Exodus 19:4-6",
+    "Philippians 3:20-21",
+    "1 Peter 1:1-2"
+  ],
   "sources": [
-    { "title": "The Bible in Politics: How to Read the Bible Politically", "author": "Richard Bauckham" },
-    { "title": "America's God: From Jonathan Edwards to Abraham Lincoln", "author": "Mark A. Noll" },
-    { "title": "Foolishness to the Greeks: The Gospel and Western Culture", "author": "Lesslie Newbigin" },
-    { "title": "Jesus Through Middle Eastern Eyes", "author": "Kenneth E. Bailey" }
+    {
+      "title": "The Bible in Politics: How to Read the Bible Politically",
+      "author": "Richard Bauckham"
+    },
+    {
+      "title": "America's God: From Jonathan Edwards to Abraham Lincoln",
+      "author": "Mark A. Noll"
+    },
+    {
+      "title": "Foolishness to the Greeks: The Gospel and Western Culture",
+      "author": "Lesslie Newbigin"
+    },
+    {
+      "title": "Jesus Through Middle Eastern Eyes",
+      "author": "Kenneth E. Bailey"
+    }
   ]
 }

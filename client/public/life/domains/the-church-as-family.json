@@ -1,14 +1,29 @@
 {
   "slug": "the-church-as-family",
-  "title": "The Church as Family: Belonging to the Body",
+  "title": "Why Does the Bible Call the Church a Family?",
   "subtitle": "Not a building you attend, not a service you consume, but a household you belong to. A Christian reckoning with the church as the family of God, with membership and belonging against the loneliness of the consumer pew, and with what it means to have brothers and sisters who are not optional.",
   "pillar": "The Home and Relationships",
   "connections": [
-    { "label": "The church is meant to be the cure for the isolation the age sells as freedom. Friendship has its own page.", "href": "/life/friendship-against-isolation" },
-    { "label": "Belonging to the body is the heart of following Jesus, not an add-on to it. Discipleship has its own page.", "href": "/life/discipleship-following-jesus" },
-    { "label": "For those without a spouse or children, the church is family in the fullest sense. The full life has its own page.", "href": "/life/singleness-and-the-full-life" },
-    { "label": "The household of God is where the lonely are set in families. The home and the family has its own page.", "href": "/life/the-home-and-the-family" },
-    { "label": "When the church becomes family, the stranger and the outsider are taken in. The neighbor has its own page.", "href": "/life/the-neighbor-and-the-stranger" }
+    {
+      "label": "The church is meant to be the cure for the isolation the age sells as freedom. Friendship has its own page.",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "Belonging to the body is the heart of following Jesus, not an add-on to it. Discipleship has its own page.",
+      "href": "/life/discipleship-following-jesus"
+    },
+    {
+      "label": "For those without a spouse or children, the church is family in the fullest sense. The full life has its own page.",
+      "href": "/life/singleness-and-the-full-life"
+    },
+    {
+      "label": "The household of God is where the lonely are set in families. The home and the family has its own page.",
+      "href": "/life/the-home-and-the-family"
+    },
+    {
+      "label": "When the church becomes family, the stranger and the outsider are taken in. The neighbor has its own page.",
+      "href": "/life/the-neighbor-and-the-stranger"
+    }
   ],
   "parts": [
     {

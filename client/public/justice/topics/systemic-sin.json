@@ -1,6 +1,6 @@
 {
   "slug": "systemic-sin",
-  "title": "The Sin We Build Together",
+  "title": "Is Systemic Sin Biblical? Corporate and Structural Sin",
   "subtitle": "Corporate and structural sin, and the line we cannot let it cross",
   "question": "Can a law, a market, or a court carry sin the way a heart does, and if it can, who exactly is guilty?",
   "whyItMatters": "Most of us were taught that sin is what a person does in a private moment, counted one soul at a time. That is true, and it is not the whole truth. Some of the worst harm done in human history was legal, ordinary, and signed off by people who went home and loved their children. The slave ship had a manifest. The redlined map had a key. The factory that ground men down had quarterly numbers that everyone admired. If sin only ever lived in individual hearts, none of that could happen, and yet it happened, written into statute and balance sheet and the unspoken rules of who gets to belong.",
@@ -55,9 +55,22 @@
     }
   },
   "furtherReading": [
-    { "title": "Generous Justice", "author": "Timothy Keller" },
-    { "title": "The Prophetic Imagination", "author": "Walter Brueggemann" },
-    { "title": "Ethics", "author": "Dietrich Bonhoeffer" },
-    { "title": "Bury the Chains", "author": "Adam Hochschild" }
-  ]
+    {
+      "title": "Generous Justice",
+      "author": "Timothy Keller"
+    },
+    {
+      "title": "The Prophetic Imagination",
+      "author": "Walter Brueggemann"
+    },
+    {
+      "title": "Ethics",
+      "author": "Dietrich Bonhoeffer"
+    },
+    {
+      "title": "Bury the Chains",
+      "author": "Adam Hochschild"
+    }
+  ],
+  "kicker": "The Sin We Build Together"
 }

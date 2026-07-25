@@ -1,14 +1,29 @@
 {
   "slug": "forgiveness-the-hardest-grace",
-  "title": "Forgiveness: The Hardest Grace",
+  "title": "How Do You Forgive Someone Who Really Hurt You?",
   "subtitle": "Forgiveness is not pretending it did not hurt, and it is not the same as trust restored. What Scripture, church history, and honest research say about the cost and the mechanics of forgiving, how it differs from reconciliation, what to do when you have been deeply wronged, and the freedom that waits on the far side.",
   "pillar": "The Home and Relationships",
   "connections": [
-    { "label": "Marriage: The Long Covenant", "href": "/life/marriage-the-long-covenant" },
-    { "label": "Grief and Loss", "href": "/life/grief-and-loss" },
-    { "label": "The Wayward Child", "href": "/life/the-wayward-child" },
-    { "label": "The Anxious Mind", "href": "/life/the-anxious-mind" },
-    { "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" }
+    {
+      "label": "Marriage: The Long Covenant",
+      "href": "/life/marriage-the-long-covenant"
+    },
+    {
+      "label": "Grief and Loss",
+      "href": "/life/grief-and-loss"
+    },
+    {
+      "label": "The Wayward Child",
+      "href": "/life/the-wayward-child"
+    },
+    {
+      "label": "The Anxious Mind",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "Friendship Against Isolation",
+      "href": "/life/friendship-against-isolation"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Forgiveness: The Hardest Grace"
 }

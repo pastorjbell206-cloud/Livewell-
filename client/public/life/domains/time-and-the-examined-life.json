@@ -1,14 +1,29 @@
 {
   "slug": "time-and-the-examined-life",
-  "title": "Time and the Examined Life",
+  "title": "How Should a Christian Spend the Time They Have?",
   "subtitle": "You have a fixed number of days and you do not know the number. You spend them as though they were endless and resent them when they run short. Hurry has become the water you swim in, and the unexamined life keeps spilling out of you one rushed hour at a time. What it means to number your days, to read your calendar as a moral document, and to slow down enough to live the life you are actually living.",
   "pillar": "The Integrated Vision",
   "connections": [
-    { "label": "Rest and the Sabbath", "href": "/life/rest-and-the-sabbath" },
-    { "label": "The Body and the Rhythms", "href": "/life/the-body-and-the-rhythms" },
-    { "label": "Technology and Attention", "href": "/life/technology-and-attention" },
-    { "label": "Wisdom for All of Life", "href": "/life/wisdom-for-all-of-life" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "Rest and the Sabbath",
+      "href": "/life/rest-and-the-sabbath"
+    },
+    {
+      "label": "The Body and the Rhythms",
+      "href": "/life/the-body-and-the-rhythms"
+    },
+    {
+      "label": "Technology and Attention",
+      "href": "/life/technology-and-attention"
+    },
+    {
+      "label": "Wisdom for All of Life",
+      "href": "/life/wisdom-for-all-of-life"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Time and the Examined Life"
 }

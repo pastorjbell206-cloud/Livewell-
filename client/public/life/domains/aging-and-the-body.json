@@ -1,14 +1,29 @@
 {
   "slug": "aging-and-the-body",
-  "title": "Aging and the Body: Finitude and Dignity",
+  "title": "What Is the Christian View of Aging and the Body?",
   "subtitle": "The body declines, and we have built a culture that hides this fact, that fears the old, that treats finitude as a problem to be defeated rather than a truth to be received. What Scripture teaches about the dignity of the aged, why the limits of the body are a gift and not only a curse, and how learning to number our days becomes the beginning of wisdom rather than the end of hope.",
   "pillar": "The Body and the Rhythms",
   "connections": [
-    { "label": "The Body and the Rhythms", "href": "/life/the-body-and-the-rhythms" },
-    { "label": "Facing Death: The Last Enemy and the Sure Hope", "href": "/life/facing-death" },
-    { "label": "Identity and Worth: Who You Actually Are", "href": "/life/identity-and-worth" },
-    { "label": "Grief and Loss", "href": "/life/grief-and-loss" },
-    { "label": "Wisdom for All of Life", "href": "/life/wisdom-for-all-of-life" }
+    {
+      "label": "The Body and the Rhythms",
+      "href": "/life/the-body-and-the-rhythms"
+    },
+    {
+      "label": "Facing Death: The Last Enemy and the Sure Hope",
+      "href": "/life/facing-death"
+    },
+    {
+      "label": "Identity and Worth: Who You Actually Are",
+      "href": "/life/identity-and-worth"
+    },
+    {
+      "label": "Grief and Loss",
+      "href": "/life/grief-and-loss"
+    },
+    {
+      "label": "Wisdom for All of Life",
+      "href": "/life/wisdom-for-all-of-life"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Aging and the Body: Finitude and Dignity"
 }
