@@ -52,6 +52,22 @@ const NEEDS: Need[] = [
     ],
   },
   {
+    // Replaced the former "I am a leader running on empty" need, whose four
+    // links all pointed at pastor material that moved to PCN. Exhaustion was
+    // never only a pastor's problem, and /help should not lose the door.
+    id: "empty",
+    title: "I am running on empty",
+    opener: "Not a bad week. The kind of tired sleep does not touch, in a life that quietly stopped having any room in it.",
+    helps: [
+      { href: "/life/ambition-and-rest", label: "Read: why the work never feels finished, and what rest is actually for", kind: "read" },
+      { href: "/tools/life-audit", label: "Assess: where the life you are living and the life you meant to live have parted", kind: "assess" },
+      { href: "/life/rest-and-the-sabbath", label: "Read: rest as something commanded, not earned", kind: "read" },
+      { href: "/tools/rule-of-life", label: "Do: build a rule of life — ordinary practices, kept on ordinary weeks", kind: "do" },
+      { href: "/tools/emotional-health", label: "Assess: an honest read on where you actually are", kind: "assess" },
+      { href: "/tools/prayer-generator", label: "Pray: words for a week with nothing left", kind: "pray" },
+    ],
+  },
+  {
     id: "doubt",
     title: "I believe, but I am full of doubt",
     opener: "Doubt is not the opposite of faith. It is often part of a living one. You do not have to hide it here.",
