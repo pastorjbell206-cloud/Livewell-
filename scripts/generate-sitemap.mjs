@@ -246,7 +246,6 @@ const STATIC_PAGES = [
   { url: "/capture-by-the-right", priority: "0.8", changefreq: "monthly" },
   { url: "/capture-by-the-left", priority: "0.8", changefreq: "monthly" },
   { url: "/reading-scripture-past-our-politics", priority: "0.8", changefreq: "monthly" },
-  { url: "/after-christendom", priority: "0.8", changefreq: "monthly" },
   { url: "/the-pastoral-angle", priority: "0.8", changefreq: "monthly" },
   { url: "/theology/explorer", priority: "0.8", changefreq: "monthly" },
   { url: "/tools/which-lens", priority: "0.8", changefreq: "monthly" },

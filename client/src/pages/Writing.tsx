@@ -107,7 +107,7 @@ export default function Writing() {
         const track = pillarToTrack(p.pillar);
         if (track !== activeTrack) return false;
       }
-      // Pillar (legacy two-movement / six-pillar taxonomy)
+      // Pillar (two-movement pillar taxonomy)
       if (activePillar && !isNewPillar) {
         const pl = pillarForPost(p);
         if (!pl || pl.slug !== activePillar) return false;
@@ -351,7 +351,7 @@ export default function Writing() {
         />
       )}
 
-      {/* PILLAR CHIPS — the two-movement / six-pillar taxonomy */}
+      {/* PILLAR CHIPS — the two-movement pillar taxonomy */}
       <section
         style={{
           background: "var(--bone)",

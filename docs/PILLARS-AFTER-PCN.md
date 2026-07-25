@@ -5,7 +5,8 @@ Network. You asked whether Prophetic Justice and the pillars are still right. Sh
 answer: the pillars need to change, and the reason is not taste — it is that two of the
 six no longer describe the site that is left.
 
-This is a recommendation, not a change. Nothing here has been applied.
+**Status: partly applied.** After Christendom has been merged into Living Well After
+Christendom (see the last section). The rest below remains a recommendation.
 
 ---
 
@@ -109,10 +110,25 @@ written.
   `archive/pcn-handoff/pastor-essays-in-database.md`. Retiring the pillar does not retire
   them; they would need re-filing or unpublishing either way.
 
-## The one call I would not make for you
+## What was applied: After Christendom merged
 
-Whether **After Christendom** survives as its own pillar. It has only 16 essays, but it is
-the frame the whole platform is named against, and thin is not the same as unimportant.
-The proposal above dissolves it into pillars 1 and 3. Keeping it would mean dropping
-Justice back to a wing, or going to seven. That is a judgment about what the site is
-*for*, and it is yours.
+James chose to merge it. It now lives inside **Living Well After Christendom** rather than
+dissolving into the political pillars — the natural home, since the two named the same arc:
+one asked what ended, the other what to build once it had. Splitting them across the
+movements meant a reader met the diagnosis and the answer in separate rooms.
+
+- The 16 essays re-filed to pillar 6, which now holds 76.
+- `/after-christendom` 301s to `/living-well` — a permanent redirect, since unlike the PCN
+  move this destination is settled.
+- The landing page is in `archive/retired-pages/`, not deleted.
+- The ids in `PILLARS_V2` deliberately run 1, 2, 3, 5, 6. They are the keys in
+  `PILLAR_ASSIGNMENTS`; closing the gap would silently re-file all 283 essays. A test now
+  pins both the gap and the absence of orphans on pillar 4.
+- Every "six pillars" claim in the nav, the SEO titles, `/pillars`, and `/map` now says
+  five.
+
+**What is left of the proposal.** The remaining moves — merging Right into Left, promoting
+Justice, and adding The Household and Faith Under Question — each need a hand-written
+landing page (statement, tools, prose in Bell's voice), and Justice would collide with the
+existing `/justice` prophetic hub. That is editorial work, not a refactor, and it should be
+written rather than generated.

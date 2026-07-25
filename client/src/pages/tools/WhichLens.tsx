@@ -128,7 +128,7 @@ const LENSES: Record<LensId, {
     verdict: "Some of what you are defending is not the faith. It is the memory of its furniture.",
     body: "This lens grieves — and the grief is real, and nothing here mocks it. A world where the culture did half the church's work is gone, and it took the hymns, the assumptions, and the full pews with it. But Christendom and Christianity were never the same thing, and a faith spent guarding the arrangement cannot spend itself on the kingdom. The church has been small before, strange before, unofficial before — and those were not its worst centuries. The pillar below starts with the grief and refuses to stay there.",
     ctaLabel: "Enter the pillar: After Christendom",
-    ctaHref: "/after-christendom",
+    ctaHref: "/living-well",
     pathHref: "/reading-paths/the-church-after-christendom",
   },
   marketplace: {

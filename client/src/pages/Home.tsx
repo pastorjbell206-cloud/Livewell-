@@ -1,10 +1,11 @@
 /**
  * Home — mission-forward landing page.
  *
- * The homepage leads with the founder's headline and four mission doors —
- * Become a Disciple, Make Disciples, Leadership Training, Prophetic Justice —
- * so a visitor is routed by what they came for, not by the political/cultural
- * essay arcs (those live under Writing and the nav, not the front page). Below
+ * The homepage leads with the founder's headline and the intent doors — written
+ * in the reader's own words ("I'm doubting my faith", "My marriage is
+ * struggling") — so a visitor is routed by what they came for, not by the
+ * political/cultural essay arcs (those live under Writing and the nav, not the
+ * front page). The doors are the DOORS array below; edit them there. Below
  * the doors: the latest essays, the segmented signup (the conversion surface),
  * and the pillars as the deeper taxonomy spine.
  */
@@ -92,7 +93,7 @@ const DOORS = [
 ];
 
 // Four reading areas — the deeper writing taxonomy, kept visible below the
-// doors. These are the reference wings, not the six-pillar / two-movement spine
+// doors. These are the reference wings, not the two-movement pillar spine
 // (that lives at /pillars and in taxonomy.ts); the heading below says "ways in"
 // so the homepage never claims a pillar count that contradicts /pillars.
 const PILLARS = [

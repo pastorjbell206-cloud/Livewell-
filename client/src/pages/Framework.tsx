@@ -71,7 +71,7 @@ export default function Framework() {
             Theology that does not end in a life was never theology. It was a hobby.
           </p>
           <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.7, color: "rgba(245,240,230,0.55)", marginTop: "16px" }}>
-            (This is the arc through the reference shelves. The site's spine — the six pillars, two movements — lives at <Link href="/map" style={{ color: "var(--mustard)" }}>the map</Link>.)
+            (This is the arc through the reference shelves. The site's spine — the five pillars, two movements — lives at <Link href="/map" style={{ color: "var(--mustard)" }}>the map</Link>.)
           </p>
         </div>
       </section>

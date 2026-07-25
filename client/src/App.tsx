@@ -119,7 +119,6 @@ const TestTheCase = lazy(() => import("./pages/tools/TestTheCase"));
 const CaptureByTheRight = lazy(() => import("./pages/pillars/CaptureByTheRight"));
 const CaptureByTheLeft = lazy(() => import("./pages/pillars/CaptureByTheLeft"));
 const ReadingScripturePastOurPolitics = lazy(() => import("./pages/pillars/ReadingScripturePastOurPolitics"));
-const AfterChristendomPillar = lazy(() => import("./pages/pillars/AfterChristendomPillar"));
 const ThePastoralAngle = lazy(() => import("./pages/pillars/ThePastoralAngle"));
 const Membership = lazy(() => import("./pages/Membership"));
 const MembershipSuccess = lazy(() => import("./pages/MembershipSuccess"));
@@ -425,7 +424,6 @@ function Router() {
         <Route path="/capture-by-the-right" component={CaptureByTheRight} />
         <Route path="/capture-by-the-left" component={CaptureByTheLeft} />
         <Route path="/reading-scripture-past-our-politics" component={ReadingScripturePastOurPolitics} />
-        <Route path="/after-christendom" component={AfterChristendomPillar} />
         <Route path="/the-pastoral-angle" component={ThePastoralAngle} />
         <Route path="/membership" component={Membership} />
         <Route path="/membership/success" component={MembershipSuccess} />

@@ -44,7 +44,7 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Prophetic Justice", href: "/justice", primary: true },
       { label: "Prophetic Disruption", href: "/disruption", primary: true },
       { label: "Living Well", href: "/living-well", primary: true },
-      { label: "All six pillars", href: "/pillars", primary: true },
+      { label: "All five pillars", href: "/pillars", primary: true },
       { label: "The Map", href: "/map", primary: true },
     ],
   },

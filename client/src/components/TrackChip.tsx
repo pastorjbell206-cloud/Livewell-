@@ -1,7 +1,7 @@
 /**
  * Eyebrow chip showing which pillar an article belongs to. Used in cards,
  * article headers, and hero strips. Renders the canonical two-movement /
- * six-pillar taxonomy (short label), in the brand palette (mustard rule +
+ * pillar taxonomy (short label), in the brand palette (mustard rule +
  * mustard text + Inter all-caps).
  */
 import { Link } from "wouter";

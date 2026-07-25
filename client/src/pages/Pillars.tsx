@@ -7,7 +7,7 @@ import { MOVEMENTS, PILLARS_V2, pillarUrl } from "@/lib/taxonomy";
 import { ROUTE_FOR_PILLAR } from "@/components/PillarLanding";
 
 /**
- * The six pillars — rendered straight from PILLARS_V2/MOVEMENTS in
+ * The pillars — rendered straight from PILLARS_V2/MOVEMENTS in
  * lib/taxonomy.ts, the canonical two-movement spine. (This page previously
  * hardcoded five legacy-named pillars while the sitewide footer promised
  * "all six" — the one page that should never drift from the taxonomy did.)
@@ -22,7 +22,6 @@ const PATH_FOR_PILLAR: Record<string, string> = {
   "capture-by-the-right": "capture-by-the-right",
   "capture-by-the-left": "capture-by-the-left",
   "reading-scripture-past-our-politics": "reading-scripture-past-our-politics",
-  "after-christendom-pillar": "the-church-after-christendom",
   "the-pastoral-angle": "the-pastoral-angle",
 };
 
@@ -50,8 +49,8 @@ export default function Pillars() {
   return (
     <Layout>
       <SEOMeta
-        title="The Six Pillars — Diagnosis and Formation | LiveWell"
-        description="Two movements, six pillars: the capture by the right and by the left, Scripture past our politics, after Christendom, the pastoral angle, living well."
+        title="The Five Pillars — Diagnosis and Formation | LiveWell"
+        description="Two movements, five pillars: the capture by the right and by the left, Scripture past our politics, the pastoral angle, and living well after Christendom."
         url={`${SITE_URL}/pillars`}
       />
 
@@ -60,10 +59,10 @@ export default function Pillars() {
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.5rem" }}>The spine of the site</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.2rem, 4.8vw, 3.2rem)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: "1.2rem" }}>
-            Six pillars, two movements
+            Five pillars, two movements
           </h1>
           <p style={{ color: "var(--charcoal-fg)", opacity: 0.8, fontSize: "1.05rem", lineHeight: 1.7, marginBottom: "1.4rem" }}>
-            Everything on this site hangs on one arc. First the diagnosis — naming what captured the American church and how it happened. Then the formation — how to live well on the other side of it. Five pillars do the naming. The sixth does the building.
+            Everything on this site hangs on one arc. First the diagnosis — naming what captured the American church and how it happened. Then the formation — how to live well on the other side of it. Four pillars do the naming. The fifth does the building.
           </p>
           <Link href="/tools/which-lens" style={linkStyle}>
             Not sure which pillar is yours? Take the diagnostic <ArrowRight size={13} style={{ display: "inline", verticalAlign: "middle" }} />

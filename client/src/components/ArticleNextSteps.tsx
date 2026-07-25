@@ -94,7 +94,6 @@ const PILLAR_TOOL_FALLBACK: Record<string, string> = {
   "capture-by-the-right": "bible-on-topic",
   "capture-by-the-left": "bible-on-topic",
   "reading-scripture-past-our-politics": "deep-bible",
-  "after-christendom-pillar": "theology-quiz",
   "the-pastoral-angle": "emotional-health",
   "living-well-after-christendom": "life-audit",
 };
@@ -148,7 +147,6 @@ function suggestPath(pillarSlug: string | undefined): typeof READING_PATHS[numbe
     "capture-by-the-right": "church-reckoning",
     "capture-by-the-left": "faith-in-secular-world",
     "reading-scripture-past-our-politics": "know-your-tradition",
-    "after-christendom-pillar": "story-of-christianity",
     "the-pastoral-angle": "when-the-church-hurts",
     "living-well-after-christendom": "faith-in-secular-world",
   };

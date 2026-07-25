@@ -18,7 +18,6 @@ const PATH_FOR_PILLAR: Record<string, string> = {
   "capture-by-the-right": "capture-by-the-right",
   "capture-by-the-left": "capture-by-the-left",
   "reading-scripture-past-our-politics": "reading-scripture-past-our-politics",
-  "after-christendom-pillar": "the-church-after-christendom",
   "the-pastoral-angle": "the-pastoral-angle",
 };
 
@@ -29,7 +28,7 @@ export default function Map() {
   return (
     <Layout>
       <SEOMeta
-        title="The Map — Two Movements, Six Pillars | LiveWell"
+        title="The Map — Two Movements, Five Pillars | LiveWell"
         description="The whole site in one screen: five pillars of diagnosis — the captures, Scripture, Christendom, the pastoral weight — flowing into one pillar of formation."
         url="https://www.livewellbyjamesbell.co/map"
       />
@@ -131,7 +130,7 @@ export default function Map() {
               All reading paths
             </Link>
             <Link href="/pillars" style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
-              The six pillars
+              The five pillars
             </Link>
           </div>
         </div>

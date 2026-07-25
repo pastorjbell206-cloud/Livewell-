@@ -16,12 +16,11 @@ import ToolStrip, { type ToolStripItem } from "@/components/ToolStrip";
  * where the pillar sits in the arc. Copy lives in the pages, not here.
  */
 
-/** Pillar slug → its landing route (the sixth lives at /living-well). */
+/** Pillar slug → its landing route (the formation pillar lives at /living-well). */
 export const ROUTE_FOR_PILLAR: Record<string, string> = {
   "capture-by-the-right": "/capture-by-the-right",
   "capture-by-the-left": "/capture-by-the-left",
   "reading-scripture-past-our-politics": "/reading-scripture-past-our-politics",
-  "after-christendom-pillar": "/after-christendom",
   "the-pastoral-angle": "/the-pastoral-angle",
   "living-well-after-christendom": "/living-well",
 };
@@ -150,7 +149,7 @@ export default function PillarLanding({
             )}
           </div>
           <div style={{ flexBasis: "100%", marginTop: "1.2rem" }}>
-            <Link href="/pillars" style={goldLink}>All six pillars</Link>
+            <Link href="/pillars" style={goldLink}>All five pillars</Link>
           </div>
         </div>
       </section>
