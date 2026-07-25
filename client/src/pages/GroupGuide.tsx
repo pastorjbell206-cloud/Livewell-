@@ -9,11 +9,13 @@
  * A capture at the foot grows the pastoral list the same way the study-guide
  * library does, without gating the share.
  */
+import { useEffect } from "react";
 import { Link, useParams } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { DISCUSSION_GUIDES } from "@/data/discussion-guides";
+import { trackGroupGuideView } from "@/lib/telemetry";
 
 const wrap = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
 const isSlug = (s: string) => /^[a-z0-9]+(?:-[a-z0-9]+)+$/.test(s.trim());
@@ -75,6 +77,12 @@ function Prayer({ text }: { text: string }) {
 export default function GroupGuide() {
   const { slug = "" } = useParams();
   const guide = DISCUSSION_GUIDES[slug];
+
+  // Which essays pastors actually take to a group: the PCN distribution signal.
+  // Declared before the not-found early return so the hook order stays stable.
+  useEffect(() => {
+    if (guide) trackGroupGuideView(slug);
+  }, [slug, guide]);
 
   if (!guide) {
     return (

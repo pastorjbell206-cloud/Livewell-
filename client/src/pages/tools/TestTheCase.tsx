@@ -5,6 +5,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { useProgress } from "@/hooks/useProgress";
 import { ARGUMENT_CASES, caseBySlug, type ArgumentCase } from "@/data/argumentCases";
+import { trackCaseStart, trackObjection, trackCaseComplete } from "@/lib/telemetry";
 
 /**
  * Test the Case (/tools/test-the-case) is the "argued with, not preached at"
@@ -52,9 +53,18 @@ export default function TestTheCase() {
   function switchCase(next: ArgumentCase) {
     if (!next.published) return;
     setSlug(next.slug);
+    trackCaseStart(next.slug);
     const passed = next.steps.filter((s) => done[`${next.slug}:${s.id}`]).length;
     setStepIdx(Math.min(passed, Math.max(0, next.steps.length - 1)));
     setOpenObjection(null);
+  }
+
+  /** Opening an objection is the signal worth having: which pushback a reader
+   *  actually holds. Recorded by index, never by text. */
+  function toggleObjection(i: number) {
+    const opening = openObjection !== i;
+    setOpenObjection(opening ? i : null);
+    if (opening) trackObjection(active.slug, step.id, i);
   }
 
   function advance() {
@@ -62,6 +72,7 @@ export default function TestTheCase() {
     setOpenObjection(null);
     if (isLast) {
       if (!done[finishedKey]) toggle(finishedKey);
+      trackCaseComplete(active.slug);
     } else {
       setStepIdx((i) => i + 1);
     }
@@ -184,7 +195,7 @@ export default function TestTheCase() {
                   const isOpen = openObjection === i;
                   return (
                     <div key={i} style={{ border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", overflow: "hidden", background: "var(--card)" }}>
-                      <button type="button" onClick={() => setOpenObjection(isOpen ? null : i)} aria-expanded={isOpen}
+                      <button type="button" onClick={() => toggleObjection(i)} aria-expanded={isOpen}
                         style={{ width: "100%", textAlign: "left", padding: "14px var(--s-4)", background: "none", border: "none", cursor: "pointer", fontFamily: "var(--F)", fontSize: "17px", fontWeight: 500, color: isOpen ? "var(--mustard-text)" : "var(--ink)", lineHeight: 1.35 }}>
                         {o.label}
                       </button>
