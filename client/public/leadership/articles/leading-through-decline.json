@@ -1,6 +1,6 @@
 {
   "slug": "leading-through-decline",
-  "title": "Leading a Church Through Decline",
+  "title": "How Do You Lead a Church That Is Shrinking?",
   "subtitle": "How a pastor leads faithfully when the church is shrinking, why honesty about decline matters more than optimism, and what it takes to lead a dying or struggling congregation toward renewal or a faithful ending.",
   "kicker": "Church Leadership",
   "group": "Church Leadership",
@@ -36,9 +36,19 @@
       "body": "In a declining church, the congregation stops listening to your words about faith and starts watching your life for evidence of it. How you lead through the loss becomes the loudest sermon you will ever preach, and you will preach it whether you mean to or not.\n\nIf you lead through decline with panic, with bitterness, with desperate gimmicks and visible despair, you teach your people that the gospel works only when the numbers do, that God is real when things grow and absent when they shrink. But if you lead through decline with peace, with honesty, with a hope anchored in something the attendance count cannot touch, you preach the most powerful sermon of your ministry. You show them a faith that does not depend on success, a shepherd who does not abandon the flock when the flock gets small, a man whose joy is rooted somewhere the decline cannot reach.\n\nHabakkuk stood in the wreckage and said it as well as it can be said. Though the fig tree does not blossom and there is no fruit on the vines, though the flock is cut off from the fold and there is no herd in the stalls, yet I will rejoice in the Lord. That is a man whose hope was never in the harvest.\n\nLead here with that. The church may shrink. The doors may even close. But the way a faithful shepherd carries his people through the valley will be remembered by everyone who watched it, and it will preach the truth of Christ long after the last light in the building goes dark."
     }
   ],
-  "keyTexts": ["Ezekiel 37:3", "John 12:24", "Habakkuk 3:17-18"],
+  "keyTexts": [
+    "Ezekiel 37:3",
+    "John 12:24",
+    "Habakkuk 3:17-18"
+  ],
   "furtherReading": [
-    { "title": "Canoeing the Mountains", "author": "Tod Bolsinger" },
-    { "title": "Autopsy of a Deceased Church", "author": "Thom S. Rainer" }
+    {
+      "title": "Canoeing the Mountains",
+      "author": "Tod Bolsinger"
+    },
+    {
+      "title": "Autopsy of a Deceased Church",
+      "author": "Thom S. Rainer"
+    }
   ]
 }

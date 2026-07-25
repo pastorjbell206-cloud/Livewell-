@@ -1,14 +1,29 @@
 {
   "slug": "life-together-the-one-anothers",
-  "title": "Life Together: The One Anothers and the Communal Faith",
+  "title": "What Are the One Another Commands in the Bible?",
   "subtitle": "The New Testament knows nothing of a private, solo Christianity. The faith is irreducibly communal, written in roughly fifty-nine commands to do something to one another, love, bear, confess, forgive, spur on, none of which a person can obey alone. What Scripture, church history, and honest research say about the body of Christ, the danger of the just-me-and-Jesus faith, and why you cannot become a disciple by yourself.",
   "pillar": "The Home and Relationships",
   "connections": [
-    { "label": "Making Disciples at the Table", "href": "/life/making-disciples-at-the-table" },
-    { "label": "The Home and the Family", "href": "/life/the-home-and-the-family" },
-    { "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" },
-    { "label": "Discipleship: Following Jesus", "href": "/life/discipleship-following-jesus" },
-    { "label": "The Church as Family", "href": "/life/the-church-as-family" }
+    {
+      "label": "Making Disciples at the Table",
+      "href": "/life/making-disciples-at-the-table"
+    },
+    {
+      "label": "The Home and the Family",
+      "href": "/life/the-home-and-the-family"
+    },
+    {
+      "label": "Friendship Against Isolation",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "Discipleship: Following Jesus",
+      "href": "/life/discipleship-following-jesus"
+    },
+    {
+      "label": "The Church as Family",
+      "href": "/life/the-church-as-family"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Life Together: The One Anothers and the Communal Faith"
 }

@@ -1,14 +1,29 @@
 {
   "slug": "debt-and-provision",
-  "title": "Debt and Provision: Daily Bread and the Anxious Heart",
+  "title": "What Does the Bible Say About Debt and Daily Bread?",
   "subtitle": "Most of us do not own our money. We rent it from people we will never meet, and the rent comes due in fear. What Scripture says about debt and its slavery, about the One who feeds the birds, and about learning to pray for bread one day at a time in a country built on credit.",
   "pillar": "Work, Money, and Calling",
   "connections": [
-    { "label": "Money and the Heart", "href": "/life/money-and-the-heart" },
-    { "label": "Generosity and the Open Hand", "href": "/life/generosity-and-the-open-hand" },
-    { "label": "The Anxious Mind", "href": "/life/the-anxious-mind" },
-    { "label": "Work as Worship", "href": "/life/work-as-worship" },
-    { "label": "Justice and the Poor", "href": "/life/justice-and-the-poor" }
+    {
+      "label": "Money and the Heart",
+      "href": "/life/money-and-the-heart"
+    },
+    {
+      "label": "Generosity and the Open Hand",
+      "href": "/life/generosity-and-the-open-hand"
+    },
+    {
+      "label": "The Anxious Mind",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "Work as Worship",
+      "href": "/life/work-as-worship"
+    },
+    {
+      "label": "Justice and the Poor",
+      "href": "/life/justice-and-the-poor"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Debt and Provision: Daily Bread and the Anxious Heart"
 }

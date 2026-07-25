@@ -1,14 +1,29 @@
 {
   "slug": "witness-without-weirdness",
-  "title": "Witness Without Weirdness: The Ordinary Christian Among Neighbors",
+  "title": "How Do You Share Your Faith Without Being Pushy?",
   "subtitle": "Evangelism for the person who is not a salesman. The gospel carried in ordinary friendship, presence, and a life that holds together. Lesslie Newbigin on the congregation as the only argument the watching world cannot dismiss, and what witness looks like in a land that has already heard the pitch and stopped listening.",
   "pillar": "The Life in the World",
   "connections": [
-    { "label": "The Neighbor and the Stranger", "href": "/life/the-neighbor-and-the-stranger" },
-    { "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" },
-    { "label": "Discipleship: Following Jesus", "href": "/life/discipleship-following-jesus" },
-    { "label": "Work as Worship", "href": "/life/work-as-worship" },
-    { "label": "Identity and Worth", "href": "/life/identity-and-worth" }
+    {
+      "label": "The Neighbor and the Stranger",
+      "href": "/life/the-neighbor-and-the-stranger"
+    },
+    {
+      "label": "Friendship Against Isolation",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "Discipleship: Following Jesus",
+      "href": "/life/discipleship-following-jesus"
+    },
+    {
+      "label": "Work as Worship",
+      "href": "/life/work-as-worship"
+    },
+    {
+      "label": "Identity and Worth",
+      "href": "/life/identity-and-worth"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Witness Without Weirdness"
 }

@@ -1,6 +1,6 @@
 {
   "slug": "sermon-application",
-  "title": "Moving From the Text to Real Application",
+  "title": "How Do You Move From the Text to Sermon Application?",
   "subtitle": "How to move from the biblical text to sermon application that is specific, costly, and gospel-driven rather than moralism, with practical steps for preachers.",
   "kicker": "Preaching",
   "group": "Preaching",
@@ -43,8 +43,17 @@
     "Ephesians 4:32"
   ],
   "furtherReading": [
-    { "title": "Christ-Centered Preaching", "author": "Bryan Chapell" },
-    { "title": "Preaching", "author": "Timothy Keller" },
-    { "title": "The Supremacy of God in Preaching", "author": "John Piper" }
+    {
+      "title": "Christ-Centered Preaching",
+      "author": "Bryan Chapell"
+    },
+    {
+      "title": "Preaching",
+      "author": "Timothy Keller"
+    },
+    {
+      "title": "The Supremacy of God in Preaching",
+      "author": "John Piper"
+    }
   ]
 }

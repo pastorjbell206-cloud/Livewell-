@@ -1,14 +1,29 @@
 {
   "slug": "addiction-and-the-long-road-back",
-  "title": "Addiction and the Long Road Back",
+  "title": "Why Can't Willpower Alone Break an Addiction?",
   "subtitle": "The enslaved will without the easy moralism. What addiction actually is, why willpower alone has never freed anyone, where the gospel of grace meets the Twelve Steps, and the long, crooked, possible road of recovery for the body and the soul together.",
   "pillar": "The Seasons and the Crises",
   "connections": [
-    { "label": "The Anxious Mind: Faith and Mental Health", "href": "/life/the-anxious-mind" },
-    { "label": "The Body and the Rhythms", "href": "/life/the-body-and-the-rhythms" },
-    { "label": "Suffering and the Silence of God", "href": "/life/suffering-and-the-silence-of-god" },
-    { "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" },
-    { "label": "An Emotional Health Check-In", "href": "/tools/emotional-health" }
+    {
+      "label": "The Anxious Mind: Faith and Mental Health",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "The Body and the Rhythms",
+      "href": "/life/the-body-and-the-rhythms"
+    },
+    {
+      "label": "Suffering and the Silence of God",
+      "href": "/life/suffering-and-the-silence-of-god"
+    },
+    {
+      "label": "Friendship Against Isolation",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "An Emotional Health Check-In",
+      "href": "/tools/emotional-health"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Addiction and the Long Road Back"
 }

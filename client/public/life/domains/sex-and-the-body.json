@@ -1,14 +1,29 @@
 {
   "slug": "sex-and-the-body",
-  "title": "Sex and the Body: A Theology of Desire",
+  "title": "What Does Christianity Actually Teach About Sex?",
   "subtitle": "The body is good, desire is good, and both were made to mean something. A frank and serious Christian reckoning with sex, chastity, and longing, against both the prudery that fears the body and the license that wastes it.",
   "pillar": "The Body and the Rhythms",
   "connections": [
-    { "label": "The Body and the Rhythms", "href": "/life/the-body-and-the-rhythms" },
-    { "label": "Marriage: The Long Covenant", "href": "/life/marriage-the-long-covenant" },
-    { "label": "Rest and the Sabbath", "href": "/life/rest-and-the-sabbath" },
-    { "label": "Wisdom for All of Life", "href": "/life/wisdom-for-all-of-life" },
-    { "label": "Marriage", "href": "/marriage" }
+    {
+      "label": "The Body and the Rhythms",
+      "href": "/life/the-body-and-the-rhythms"
+    },
+    {
+      "label": "Marriage: The Long Covenant",
+      "href": "/life/marriage-the-long-covenant"
+    },
+    {
+      "label": "Rest and the Sabbath",
+      "href": "/life/rest-and-the-sabbath"
+    },
+    {
+      "label": "Wisdom for All of Life",
+      "href": "/life/wisdom-for-all-of-life"
+    },
+    {
+      "label": "Marriage",
+      "href": "/marriage"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Sex and the Body: A Theology of Desire"
 }

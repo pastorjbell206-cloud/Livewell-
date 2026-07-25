@@ -1,14 +1,29 @@
 {
   "slug": "justice-and-the-poor",
-  "title": "Justice and the Poor: What the Whole Bible Says",
+  "title": "What Does the Bible Say About Justice and the Poor?",
   "subtitle": "The Bible's relentless concern for the poor and the vulnerable, from the law of Moses to the prophets to Jesus to the early church. Mercy and justice held together, not torn apart, and a witness to the poor that refuses to be captured by either side of the American argument about who deserves what.",
   "pillar": "The Life in the World",
   "connections": [
-    { "label": "The Neighbor and the Stranger", "href": "/life/the-neighbor-and-the-stranger" },
-    { "label": "Faith and Politics", "href": "/life/faith-and-politics" },
-    { "label": "Money and the Heart", "href": "/life/money-and-the-heart" },
-    { "label": "Wisdom for All of Life", "href": "/life/wisdom-for-all-of-life" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "The Neighbor and the Stranger",
+      "href": "/life/the-neighbor-and-the-stranger"
+    },
+    {
+      "label": "Faith and Politics",
+      "href": "/life/faith-and-politics"
+    },
+    {
+      "label": "Money and the Heart",
+      "href": "/life/money-and-the-heart"
+    },
+    {
+      "label": "Wisdom for All of Life",
+      "href": "/life/wisdom-for-all-of-life"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {

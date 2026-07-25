@@ -1,14 +1,29 @@
 {
   "slug": "the-heavy-mind",
-  "title": "The Heavy Mind: Faith and Depression",
+  "title": "What Does the Bible Say About Depression?",
   "subtitle": "Depression is not the same as a bad day, and it is not the same as anxiety. It is the going out of the lights. What Scripture, the dark night of the soul, and honest medicine say to the sunk soul, and why getting help can be an act of faith.",
   "pillar": "The Inner Life",
   "connections": [
-    { "label": "The Anxious Mind", "href": "/life/the-anxious-mind" },
-    { "label": "Shame and the Hiding Self", "href": "/life/shame-and-the-hiding-self" },
-    { "label": "Grief and Loss", "href": "/life/grief-and-loss" },
-    { "label": "Identity and Worth", "href": "/life/identity-and-worth" },
-    { "label": "Emotional Health Check", "href": "/tools/emotional-health" }
+    {
+      "label": "The Anxious Mind",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "Shame and the Hiding Self",
+      "href": "/life/shame-and-the-hiding-self"
+    },
+    {
+      "label": "Grief and Loss",
+      "href": "/life/grief-and-loss"
+    },
+    {
+      "label": "Identity and Worth",
+      "href": "/life/identity-and-worth"
+    },
+    {
+      "label": "Emotional Health Check",
+      "href": "/tools/emotional-health"
+    }
   ],
   "parts": [
     {
@@ -125,5 +140,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "The Heavy Mind"
 }

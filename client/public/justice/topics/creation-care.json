@@ -1,6 +1,6 @@
 {
   "slug": "creation-care",
-  "title": "The Groaning Creation",
+  "title": "What Does the Bible Say About Caring for the Earth?",
   "subtitle": "The earth is the Lord's, and we were set in a garden to tend it, not to strip it.",
   "question": "If the world belongs to God and was handed to us to keep, what does our use of it say about whether we believe that?",
   "whyItMatters": "We did not make the world, and we will not get another one. It was spoken into being before us, declared good before we existed, and then placed into our hands with a single instruction that we have spent most of human history ignoring. To tend it. To keep it. The question of how we treat the soil and the water and the air is not a side issue for sentimental people who like trees. It is a question about whether we believe the earth is ours to do with as we please or God's to answer for.",
@@ -24,10 +24,22 @@
   "theCost": "To take this seriously costs something, and the cost is why we avoid it. It costs the right its alliance with an economics that would rather not be asked questions. It costs the left its tidy story in which humanity is the villain and the planet the saint. It costs all of us the comfort of the escape hatch, the quiet relief of believing none of this finally matters because we are leaving anyway. And it costs me personally, because I drive what I drive and buy what I buy and have rarely let the doctrine of creation touch a single decision I made on a Tuesday. The indictment is not out there. It is in my own garage.",
   "charge": "Go back to the garden and read the instruction again. Work it and keep it. Then look at the small piece of the world that is actually in your hands, the yard, the street, the habits, the appetite, the vote, the waste, and ask what keeping it would look like if you believed it belonged to God. Not the planet in the abstract. The patch of it you touch. Tend that, as a tenant who knows the landlord is coming home.",
   "furtherReading": [
-    { "title": "Pollution and the Death of Man", "author": "Francis A. Schaeffer" },
-    { "title": "The Unsettling of America", "author": "Wendell Berry" },
-    { "title": "Surprised by Hope", "author": "N. T. Wright" },
-    { "title": "Laudato Si", "author": "Pope Francis" }
+    {
+      "title": "Pollution and the Death of Man",
+      "author": "Francis A. Schaeffer"
+    },
+    {
+      "title": "The Unsettling of America",
+      "author": "Wendell Berry"
+    },
+    {
+      "title": "Surprised by Hope",
+      "author": "N. T. Wright"
+    },
+    {
+      "title": "Laudato Si",
+      "author": "Pope Francis"
+    }
   ],
   "captureDetail": {
     "right": {
@@ -59,5 +71,6 @@
         "The displacement of the Creator by the crisis, so that the emergency itself becomes the object of ultimate fear"
       ]
     }
-  }
+  },
+  "kicker": "The Groaning Creation"
 }

@@ -1,6 +1,6 @@
 {
   "slug": "meetings-that-matter",
-  "title": "Meetings That Are Not a Waste",
+  "title": "How Do You Run a Church Meeting Worth Having?",
   "subtitle": "Most church meetings are where decisions go to die. A good one is rarer than a good sermon, and harder",
   "kicker": "Administration and Rhythm",
   "group": "Administration and Rhythm",
@@ -42,8 +42,17 @@
     "1 Corinthians 14:40"
   ],
   "furtherReading": [
-    { "title": "Death by Meeting", "author": "Patrick Lencioni" },
-    { "title": "Canoeing the Mountains", "author": "Tod Bolsinger" },
-    { "title": "The Five Dysfunctions of a Team", "author": "Patrick Lencioni" }
+    {
+      "title": "Death by Meeting",
+      "author": "Patrick Lencioni"
+    },
+    {
+      "title": "Canoeing the Mountains",
+      "author": "Tod Bolsinger"
+    },
+    {
+      "title": "The Five Dysfunctions of a Team",
+      "author": "Patrick Lencioni"
+    }
   ]
 }

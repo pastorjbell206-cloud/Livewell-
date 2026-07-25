@@ -1,6 +1,6 @@
 {
   "slug": "sermon-prep",
-  "title": "From the Text to the Sermon",
+  "title": "How Do You Prepare a Sermon, Step by Step?",
   "subtitle": "A working method for preparing a sermon that honors the text and lands on a Tuesday afternoon",
   "kicker": "Preaching and Teaching",
   "group": "Preaching and Teaching",
@@ -43,8 +43,17 @@
     "1 Corinthians 2:1-5"
   ],
   "furtherReading": [
-    { "title": "Preaching and Preachers", "author": "D. Martyn Lloyd-Jones" },
-    { "title": "Biblical Preaching", "author": "Haddon W. Robinson" },
-    { "title": "Between Two Worlds", "author": "John R. W. Stott" }
+    {
+      "title": "Preaching and Preachers",
+      "author": "D. Martyn Lloyd-Jones"
+    },
+    {
+      "title": "Biblical Preaching",
+      "author": "Haddon W. Robinson"
+    },
+    {
+      "title": "Between Two Worlds",
+      "author": "John R. W. Stott"
+    }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "slug": "outrage-machine",
-  "title": "The Outrage Machine",
+  "title": "Why Are Christians So Angry Online, and Who Profits?",
   "subtitle": "How the attention economy captured the church and taught Christians to fight like everyone else.",
   "question": "What happens to a people commanded to be quick to listen when their days are spent inside a machine that pays them to be quick to rage?",
   "whyItMatters": "The feed is not neutral. It is engineered to surface whatever provokes, and provocation has become the air the church breathes online. We told ourselves we were contending for truth. We were being farmed for engagement. The soul that seethes for an hour every morning before prayer is being formed, and not by the Spirit.",
@@ -61,9 +61,22 @@
     }
   },
   "furtherReading": [
-    { "title": "The Shallows: What the Internet Is Doing to Our Brains", "author": "Nicholas Carr" },
-    { "title": "Stolen Focus: Why You Can't Pay Attention", "author": "Johann Hari" },
-    { "title": "A Praying Life", "author": "Paul E. Miller" },
-    { "title": "The Prophetic Imagination", "author": "Walter Brueggemann" }
-  ]
+    {
+      "title": "The Shallows: What the Internet Is Doing to Our Brains",
+      "author": "Nicholas Carr"
+    },
+    {
+      "title": "Stolen Focus: Why You Can't Pay Attention",
+      "author": "Johann Hari"
+    },
+    {
+      "title": "A Praying Life",
+      "author": "Paul E. Miller"
+    },
+    {
+      "title": "The Prophetic Imagination",
+      "author": "Walter Brueggemann"
+    }
+  ],
+  "kicker": "The Outrage Machine"
 }

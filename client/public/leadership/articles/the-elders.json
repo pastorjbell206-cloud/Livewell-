@@ -1,6 +1,6 @@
 {
   "slug": "the-elders",
-  "title": "The Office of Elder",
+  "title": "What Is a Church Elder, and Why More Than One?",
   "subtitle": "The New Testament gives the church a plurality of shepherds for a reason, and the reason protects everyone, the pastor most of all.",
   "kicker": "Office and Plurality",
   "group": "Leading People",
@@ -36,10 +36,23 @@
       "body": "Peter, writing to elders, calls himself a fellow elder, and then he says shepherd the flock of God that is among you, not under compulsion but willingly, not for shameful gain but eagerly, not domineering but being examples. And then the line that should sober every man who takes the office. You will give an account.\n\nThe flock is not yours. The sheep belong to the Chief Shepherd, and you are an under-shepherd, holding them in trust, and one day you will stand before the owner and account for how you handled what was his. That is the weight of the office, and it is why the office cannot be given to the merely impressive. The impressive man will give an account of his impressiveness. The faithful man will give an account of his faithfulness. Only one of those accounts will stand.\n\nSo if you are an elder, or asked to be one, do not measure yourself by the size of the church or the success of the programs. Measure yourself by the sheep. Are they known. Are they fed. Are they guarded. Did you go after the one that wandered, or did you let it go because it was inconvenient.\n\nThe Chief Shepherd is coming. He will ask about the sheep, not the org chart. Lead like a man who believes that."
     }
   ],
-  "keyTexts": ["1 Timothy 3:1-7", "Titus 1:5-9", "1 Peter 5:1-4"],
+  "keyTexts": [
+    "1 Timothy 3:1-7",
+    "Titus 1:5-9",
+    "1 Peter 5:1-4"
+  ],
   "furtherReading": [
-    {"title": "Biblical Eldership", "author": "Alexander Strauch"},
-    {"title": "The Shepherd Leader", "author": "Timothy Witmer"},
-    {"title": "Finding Faithful Elders and Deacons", "author": "Thabiti Anyabwile"}
+    {
+      "title": "Biblical Eldership",
+      "author": "Alexander Strauch"
+    },
+    {
+      "title": "The Shepherd Leader",
+      "author": "Timothy Witmer"
+    },
+    {
+      "title": "Finding Faithful Elders and Deacons",
+      "author": "Thabiti Anyabwile"
+    }
   ]
 }

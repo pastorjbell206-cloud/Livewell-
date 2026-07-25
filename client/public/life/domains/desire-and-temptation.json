@@ -1,14 +1,29 @@
 {
   "slug": "desire-and-temptation",
-  "title": "Desire and Temptation: The Disordered Want",
+  "title": "How Do You Fight Temptation and Disordered Desire?",
   "subtitle": "You are not finally undone by what you do. You are ruled by what you want, and the want underneath the want is the thing no rule reaches. What Augustine, James, and the desert fathers saw about disordered love, how temptation actually works before it ever shows you a sin, and why the cure is not less desire but desire reordered toward the only thing large enough to hold it.",
   "pillar": "The Inner Life",
   "connections": [
-    { "label": "Sex and the Body: A Theology of Desire", "href": "/life/sex-and-the-body" },
-    { "label": "Money and the Heart", "href": "/life/money-and-the-heart" },
-    { "label": "Shame and the Hiding Self", "href": "/life/shame-and-the-hiding-self" },
-    { "label": "Addiction and the Long Road Back", "href": "/life/addiction-and-the-long-road-back" },
-    { "label": "Wisdom for All of Life", "href": "/life/wisdom-for-all-of-life" }
+    {
+      "label": "Sex and the Body: A Theology of Desire",
+      "href": "/life/sex-and-the-body"
+    },
+    {
+      "label": "Money and the Heart",
+      "href": "/life/money-and-the-heart"
+    },
+    {
+      "label": "Shame and the Hiding Self",
+      "href": "/life/shame-and-the-hiding-self"
+    },
+    {
+      "label": "Addiction and the Long Road Back",
+      "href": "/life/addiction-and-the-long-road-back"
+    },
+    {
+      "label": "Wisdom for All of Life",
+      "href": "/life/wisdom-for-all-of-life"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Desire and Temptation: The Disordered Want"
 }

@@ -1,14 +1,29 @@
 {
   "slug": "church-membership-and-commitment",
-  "title": "Church Membership and the Vow to Stay",
+  "title": "Why Does Church Membership Still Matter?",
   "subtitle": "Not a building you sample, not a service you rate, but a body you bind yourself to. A Christian reckoning with committed membership in a local church against the consumer church-hopping of the age, with covenant and accountability, and with the cost and the gift of belonging to imperfect people you did not choose.",
   "pillar": "The Integrated Vision",
   "connections": [
-    { "label": "Membership is belonging to the family of God made concrete and accountable. The church as family has its own page.", "href": "/life/the-church-as-family" },
-    { "label": "The vow to stay is the cure for the consumer faith that shops and leaves. Consumer faith and the communal church has its own page.", "href": "/life/consumer-faith-and-the-communal-church" },
-    { "label": "Committed belonging is the soil where the one-anothers can actually be obeyed. Life together has its own page.", "href": "/life/life-together-the-one-anothers" },
-    { "label": "Membership is not an add-on to following Jesus but part of what it means. Discipleship has its own page.", "href": "/life/discipleship-following-jesus" },
-    { "label": "Staying in a flawed body is where reconciliation is learned and practiced. Conflict and reconciliation has its own page.", "href": "/life/conflict-and-reconciliation" }
+    {
+      "label": "Membership is belonging to the family of God made concrete and accountable. The church as family has its own page.",
+      "href": "/life/the-church-as-family"
+    },
+    {
+      "label": "The vow to stay is the cure for the consumer faith that shops and leaves. Consumer faith and the communal church has its own page.",
+      "href": "/life/consumer-faith-and-the-communal-church"
+    },
+    {
+      "label": "Committed belonging is the soil where the one-anothers can actually be obeyed. Life together has its own page.",
+      "href": "/life/life-together-the-one-anothers"
+    },
+    {
+      "label": "Membership is not an add-on to following Jesus but part of what it means. Discipleship has its own page.",
+      "href": "/life/discipleship-following-jesus"
+    },
+    {
+      "label": "Staying in a flawed body is where reconciliation is learned and practiced. Conflict and reconciliation has its own page.",
+      "href": "/life/conflict-and-reconciliation"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Church Membership and the Vow to Stay"
 }

@@ -1,6 +1,6 @@
 {
   "slug": "counseling-and-when-to-refer",
-  "title": "Pastoral Counseling and Knowing When to Refer",
+  "title": "When Should a Pastor Refer Someone to a Counselor?",
   "subtitle": "Soul care, the limits of the pastor's office, mental health, and the wisdom to send someone to a licensed counselor before harm is done",
   "kicker": "Pastoral Ministry",
   "group": "Pastoral Ministry",
@@ -43,8 +43,17 @@
     "Romans 12:3"
   ],
   "furtherReading": [
-    { "title": "Grace for the Afflicted", "author": "Matthew S. Stanford" },
-    { "title": "Side by Side", "author": "Edward T. Welch" },
-    { "title": "The Body Keeps the Score", "author": "Bessel van der Kolk" }
+    {
+      "title": "Grace for the Afflicted",
+      "author": "Matthew S. Stanford"
+    },
+    {
+      "title": "Side by Side",
+      "author": "Edward T. Welch"
+    },
+    {
+      "title": "The Body Keeps the Score",
+      "author": "Bessel van der Kolk"
+    }
   ]
 }

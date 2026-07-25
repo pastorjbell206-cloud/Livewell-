@@ -1,14 +1,29 @@
 {
   "slug": "ambition-and-rest",
-  "title": "Ambition and Rest: Drive, Success, and the Hustle",
+  "title": "Is Ambition a Sin? Drive, Hustle, and Rest",
   "subtitle": "The drive that builds and the drive that devours, the grind sold as virtue, the success that never arrives. A Christian reckoning with holy and hollow ambition, with the idolatry of the hustle, and with the deep rest of a soul that has handed the outcome back to God.",
   "pillar": "Work, Money, and Calling",
   "connections": [
-    { "label": "Ambition unbounded swallows the day God set aside. Rest and the Sabbath has its own page.", "href": "/life/rest-and-the-sabbath" },
-    { "label": "Work was meant to be worship, not a verdict on your worth. Work as worship has its own page.", "href": "/life/work-as-worship" },
-    { "label": "The hustle is often money-anxiety wearing a productivity costume. Money and the heart has its own page.", "href": "/life/money-and-the-heart" },
-    { "label": "When success becomes the proof of your value, identity has gone wrong. Identity and worth has its own page.", "href": "/life/identity-and-worth" },
-    { "label": "The drive that never rests is often an anxious mind that cannot trust. The anxious mind has its own page.", "href": "/life/the-anxious-mind" }
+    {
+      "label": "Ambition unbounded swallows the day God set aside. Rest and the Sabbath has its own page.",
+      "href": "/life/rest-and-the-sabbath"
+    },
+    {
+      "label": "Work was meant to be worship, not a verdict on your worth. Work as worship has its own page.",
+      "href": "/life/work-as-worship"
+    },
+    {
+      "label": "The hustle is often money-anxiety wearing a productivity costume. Money and the heart has its own page.",
+      "href": "/life/money-and-the-heart"
+    },
+    {
+      "label": "When success becomes the proof of your value, identity has gone wrong. Identity and worth has its own page.",
+      "href": "/life/identity-and-worth"
+    },
+    {
+      "label": "The drive that never rests is often an anxious mind that cannot trust. The anxious mind has its own page.",
+      "href": "/life/the-anxious-mind"
+    }
   ],
   "parts": [
     {

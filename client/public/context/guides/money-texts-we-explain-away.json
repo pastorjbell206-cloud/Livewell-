@@ -1,6 +1,6 @@
 {
   "slug": "money-texts-we-explain-away",
-  "title": "The Money Texts We Have Learned Not to See",
+  "title": "What Does the Bible Say About Wealth and the Poor?",
   "subtitle": "Scripture speaks about wealth and the poor with a frequency our preaching has never matched. Both parties found a way to keep the texts and lose the cost.",
   "kicker": "Past Our Politics",
   "group": "Reading Past Our Politics",
@@ -36,11 +36,27 @@
       "body": "What do the money texts actually ask?\n\nOf a person: that giving be proportionate, planned, and felt. Zacchaeus set a number out loud. The Macedonian churches gave beyond their means and Paul praised them for it rather than correcting them. Tim Keller argues from these texts that generosity in Scripture is not a tip added to a comfortable life but a structural feature of a converted one. So the honest question is not whether I give. It is whether my giving has ever altered how I live, and for most of my ministry the answer was no.\n\nOf a congregation: that the church be the first economy where Jubilee is visible. Acts reports that there was no needy person among them, an echo of Deuteronomy 15 that Luke surely intended. A church budget is a confession of faith. So is a personal one. Mine confessed, for years, that I believed in Jesus and trusted the mortgage.\n\nThe texts will not be argued away. They can only be obeyed or avoided, and we have grown skilled at avoidance, left and right, each tribe watching the other's hypocrisy with perfect vision. Somewhere in your city tonight is a Lazarus whose name God knows. The text is waiting to find out whether you do."
     }
   ],
-  "keyTexts": ["Leviticus 25:8-17", "Luke 6:20-26", "James 5:1-6"],
+  "keyTexts": [
+    "Leviticus 25:8-17",
+    "Luke 6:20-26",
+    "James 5:1-6"
+  ],
   "sources": [
-    { "title": "Generous Justice: How God's Grace Makes Us Just", "author": "Timothy Keller" },
-    { "title": "Neither Poverty nor Riches: A Biblical Theology of Possessions", "author": "Craig L. Blomberg" },
-    { "title": "Old Testament Ethics for the People of God", "author": "Christopher J.H. Wright" },
-    { "title": "Rich Christians in an Age of Hunger", "author": "Ronald J. Sider" }
+    {
+      "title": "Generous Justice: How God's Grace Makes Us Just",
+      "author": "Timothy Keller"
+    },
+    {
+      "title": "Neither Poverty nor Riches: A Biblical Theology of Possessions",
+      "author": "Craig L. Blomberg"
+    },
+    {
+      "title": "Old Testament Ethics for the People of God",
+      "author": "Christopher J.H. Wright"
+    },
+    {
+      "title": "Rich Christians in an Age of Hunger",
+      "author": "Ronald J. Sider"
+    }
   ]
 }

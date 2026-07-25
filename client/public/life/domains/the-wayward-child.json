@@ -1,14 +1,29 @@
 {
   "slug": "the-wayward-child",
-  "title": "The Wayward Child: When They Walk Away",
+  "title": "What Do You Do When Your Child Leaves the Faith?",
   "subtitle": "The child you raised in the faith has left it, or left you, and you are watching a road they have not come back down. What Scripture, church history, and honest research say about the prodigal, the agony of the parent, the limits of your control, and the Father who waits where you cannot.",
   "pillar": "The Home and Relationships",
   "connections": [
-    { "label": "Raising Children in Grace", "href": "/life/raising-children-in-grace" },
-    { "label": "Forgiveness: The Hardest Grace", "href": "/life/forgiveness-the-hardest-grace" },
-    { "label": "Grief and Loss", "href": "/life/grief-and-loss" },
-    { "label": "The Anxious Mind", "href": "/life/the-anxious-mind" },
-    { "label": "The Parenting Pages", "href": "/parenting" }
+    {
+      "label": "Raising Children in Grace",
+      "href": "/life/raising-children-in-grace"
+    },
+    {
+      "label": "Forgiveness: The Hardest Grace",
+      "href": "/life/forgiveness-the-hardest-grace"
+    },
+    {
+      "label": "Grief and Loss",
+      "href": "/life/grief-and-loss"
+    },
+    {
+      "label": "The Anxious Mind",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "The Parenting Pages",
+      "href": "/parenting"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "The Wayward Child: When They Walk Away"
 }

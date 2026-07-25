@@ -1,6 +1,6 @@
 {
   "slug": "what-justice-meant",
-  "title": "Justice Before Our Debates: Mishpat and Tsedaqah",
+  "title": "What Does Justice Mean in the Bible? Mishpat and Tsedaqah",
   "subtitle": "Two Hebrew words were doing their work twenty-five centuries before our culture wars. Neither American tribe gets to keep the definition it brought.",
   "kicker": "Past Our Politics",
   "group": "Reading Past Our Politics",
@@ -36,11 +36,27 @@
       "body": "Micah 6:8 may be the most quoted justice text in America, printed on banners by churches that agree on nothing else. He has told you, O man, what is good: do mishpat, love hesed, walk humbly with your God.\n\nRestore its teeth. The verse is the closing word of a covenant lawsuit. God has taken Israel to court, recited his saving acts, and rejected their escalating liturgical offers, thousands of rams, rivers of oil, even a firstborn child. The verse is not an inspirational triad for the lobby wall. It is what remains when religious performance has been thrown out of the courtroom. Do justice in the gate, where your actual decisions touch the quartet. Love covenant loyalty, the stubborn faithfulness God has shown you. Walk humbly, a clause that silences the activist's pride and the traditionalist's pride in the same breath.\n\nBrueggemann calls the prophetic task the nurturing of an alternative imagination, a way of seeing that the dominant culture cannot supply. Here is the alternative: a people who do not ask what justice means this election cycle, because they learned the word somewhere older than the election.\n\nThe word was never ours to define. It defines us. It has been defining us all along, in the gate, where the widow is still waiting for the verdict we keep postponing."
     }
   ],
-  "keyTexts": ["Micah 6:8", "Jeremiah 22:13-16", "Amos 5:21-24"],
+  "keyTexts": [
+    "Micah 6:8",
+    "Jeremiah 22:13-16",
+    "Amos 5:21-24"
+  ],
   "sources": [
-    { "title": "Generous Justice: How God's Grace Makes Us Just", "author": "Timothy Keller" },
-    { "title": "Old Testament Ethics for the People of God", "author": "Christopher J.H. Wright" },
-    { "title": "Justice: Rights and Wrongs", "author": "Nicholas Wolterstorff" },
-    { "title": "The Prophetic Imagination", "author": "Walter Brueggemann" }
+    {
+      "title": "Generous Justice: How God's Grace Makes Us Just",
+      "author": "Timothy Keller"
+    },
+    {
+      "title": "Old Testament Ethics for the People of God",
+      "author": "Christopher J.H. Wright"
+    },
+    {
+      "title": "Justice: Rights and Wrongs",
+      "author": "Nicholas Wolterstorff"
+    },
+    {
+      "title": "The Prophetic Imagination",
+      "author": "Walter Brueggemann"
+    }
   ]
 }

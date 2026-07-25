@@ -1,6 +1,6 @@
 {
   "slug": "exile-not-empire",
-  "title": "Exile, Not Empire: The Posture of God's People",
+  "title": "What Does It Mean That Christians Are Exiles?",
   "subtitle": "Elect exiles, a letter to Babylon, and a refusal in front of a furnace. What changes when the church stops reading like a landlord.",
   "kicker": "Past Our Politics",
   "group": "Reading Past Our Politics",
@@ -36,11 +36,27 @@
       "body": "What actually changes when you read Scripture as a guest rather than an owner?\n\nRomans 13 changes. It becomes what it was, counsel to a powerless minority on surviving an empire honorably, not a chaplain's blessing on whoever currently governs. The prophets change. Their indictments land on me and my church before they land on Washington, because the courtroom of the prophets was always God's own people first. Even the Great Commission changes. Guests make disciples by witness, by suffering, by washing feet. Owners make them by statute, and the record of that method is written across centuries of baptized unbelief.\n\nAnd prayer changes. The exile prays for the city differently than the owner does. The owner prays to win. The guest prays for a shalom he may never personally collect, for a welfare that includes his opponents, because Jeremiah told him his own peace is bound up in theirs.\n\nWe are not owners here. We never were. The deed we keep fighting over belongs to a kingdom that does not hold elections, and the sooner we grieve the throne we never had, the sooner we will be of use to the city we actually live in."
     }
   ],
-  "keyTexts": ["1 Peter 2:11-12", "Jeremiah 29:4-7", "Daniel 3:16-18"],
+  "keyTexts": [
+    "1 Peter 2:11-12",
+    "Jeremiah 29:4-7",
+    "Daniel 3:16-18"
+  ],
   "sources": [
-    { "title": "A Home for the Homeless: A Social-Scientific Criticism of 1 Peter", "author": "John H. Elliott" },
-    { "title": "Resident Aliens: Life in the Christian Colony", "author": "Stanley Hauerwas and William H. Willimon" },
-    { "title": "Cadences of Home: Preaching Among Exiles", "author": "Walter Brueggemann" },
-    { "title": "Foolishness to the Greeks: The Gospel and Western Culture", "author": "Lesslie Newbigin" }
+    {
+      "title": "A Home for the Homeless: A Social-Scientific Criticism of 1 Peter",
+      "author": "John H. Elliott"
+    },
+    {
+      "title": "Resident Aliens: Life in the Christian Colony",
+      "author": "Stanley Hauerwas and William H. Willimon"
+    },
+    {
+      "title": "Cadences of Home: Preaching Among Exiles",
+      "author": "Walter Brueggemann"
+    },
+    {
+      "title": "Foolishness to the Greeks: The Gospel and Western Culture",
+      "author": "Lesslie Newbigin"
+    }
   ]
 }

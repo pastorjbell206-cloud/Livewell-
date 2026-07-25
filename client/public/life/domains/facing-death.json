@@ -1,14 +1,29 @@
 {
   "slug": "facing-death",
-  "title": "Facing Death: The Last Enemy and the Sure Hope",
+  "title": "How Do Christians Face Death and the Fear of Dying?",
   "subtitle": "The one appointment none of us will miss, and a faith honest enough to face it. The ancient art of dying well, the fear under the fear, and the Christian hope that is not a vague afterlife but a raised body in a remade world.",
   "pillar": "The Seasons and the Crises",
   "connections": [
-    { "label": "Grief and Loss", "href": "/life/grief-and-loss" },
-    { "label": "Suffering and the Silence of God", "href": "/life/suffering-and-the-silence-of-god" },
-    { "label": "The Anxious Mind: Faith and Mental Health", "href": "/life/the-anxious-mind" },
-    { "label": "Wisdom for All of Life", "href": "/life/wisdom-for-all-of-life" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "Grief and Loss",
+      "href": "/life/grief-and-loss"
+    },
+    {
+      "label": "Suffering and the Silence of God",
+      "href": "/life/suffering-and-the-silence-of-god"
+    },
+    {
+      "label": "The Anxious Mind: Faith and Mental Health",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "Wisdom for All of Life",
+      "href": "/life/wisdom-for-all-of-life"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Facing Death: The Last Enemy and the Sure Hope"
 }

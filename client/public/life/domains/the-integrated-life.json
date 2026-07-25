@@ -1,14 +1,29 @@
 {
   "slug": "the-integrated-life",
-  "title": "The Integrated Life: Refusing the Sacred and Secular Divide",
+  "title": "How Do You Live Your Faith on Monday, Not Just Sunday?",
   "subtitle": "Somewhere you learned that faith belongs to a part of your life and the rest belongs to you. Sunday is God's. Monday is yours. This is the capstone lie of a divided age, and it is a lie. There is one life, under one Lord, and not a single square inch of it is exempt. What it means to refuse the sacred and secular divide, and to live whole.",
   "pillar": "The Integrated Vision",
   "connections": [
-    { "label": "Wisdom for All of Life", "href": "/life/wisdom-for-all-of-life" },
-    { "label": "Work as Worship", "href": "/life/work-as-worship" },
-    { "label": "Time and the Examined Life", "href": "/life/time-and-the-examined-life" },
-    { "label": "Money and the Heart", "href": "/life/money-and-the-heart" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "Wisdom for All of Life",
+      "href": "/life/wisdom-for-all-of-life"
+    },
+    {
+      "label": "Work as Worship",
+      "href": "/life/work-as-worship"
+    },
+    {
+      "label": "Time and the Examined Life",
+      "href": "/life/time-and-the-examined-life"
+    },
+    {
+      "label": "Money and the Heart",
+      "href": "/life/money-and-the-heart"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "The Integrated Life"
 }

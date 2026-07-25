@@ -1,6 +1,6 @@
 {
   "slug": "using-illustrations",
-  "title": "The Window and the Wall",
+  "title": "How Do You Find and Use Sermon Illustrations?",
   "subtitle": "An illustration is a window, not decoration: how to find them, how to use them, and the kinds that betray the text",
   "kicker": "Preaching and Teaching",
   "group": "Preaching and Teaching",
@@ -43,8 +43,17 @@
     "2 Samuel 12:1-7"
   ],
   "furtherReading": [
-    { "title": "Imagining the Kingdom", "author": "James K. A. Smith" },
-    { "title": "Preaching", "author": "Timothy Keller" },
-    { "title": "The Parables of Jesus", "author": "Joachim Jeremias" }
+    {
+      "title": "Imagining the Kingdom",
+      "author": "James K. A. Smith"
+    },
+    {
+      "title": "Preaching",
+      "author": "Timothy Keller"
+    },
+    {
+      "title": "The Parables of Jesus",
+      "author": "Joachim Jeremias"
+    }
   ]
 }

@@ -1,14 +1,29 @@
 {
   "slug": "divorce-and-its-aftermath",
-  "title": "Divorce and Its Aftermath",
+  "title": "How Do You Live as a Christian After Divorce?",
   "subtitle": "The broken covenant without the cheap verdict. The particular grief and shame of a marriage that ended, the church's long failure to know what to do with the divorced, and the slow road of being rebuilt by grace.",
   "pillar": "The Seasons and the Crises",
   "connections": [
-    { "label": "Marriage: The Long Covenant", "href": "/life/marriage-the-long-covenant" },
-    { "label": "Grief and Loss", "href": "/life/grief-and-loss" },
-    { "label": "Raising Children in Grace", "href": "/life/raising-children-in-grace" },
-    { "label": "Suffering and the Silence of God", "href": "/life/suffering-and-the-silence-of-god" },
-    { "label": "The Marriage Pillar", "href": "/marriage" }
+    {
+      "label": "Marriage: The Long Covenant",
+      "href": "/life/marriage-the-long-covenant"
+    },
+    {
+      "label": "Grief and Loss",
+      "href": "/life/grief-and-loss"
+    },
+    {
+      "label": "Raising Children in Grace",
+      "href": "/life/raising-children-in-grace"
+    },
+    {
+      "label": "Suffering and the Silence of God",
+      "href": "/life/suffering-and-the-silence-of-god"
+    },
+    {
+      "label": "The Marriage Pillar",
+      "href": "/marriage"
+    }
   ],
   "parts": [
     {

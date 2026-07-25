@@ -1,14 +1,29 @@
 {
   "slug": "disability-and-the-different-body",
-  "title": "Disability and the Different Body",
+  "title": "What Does the Church Owe People With Disabilities?",
   "subtitle": "A culture that measures human worth by usefulness, independence, and the flawless body has no honest place for the disabled, and too often the church has quietly agreed. Scripture says something the world cannot say. That the image of God is borne fully by every body, that strength is made perfect in weakness, that the parts we think weaker are indispensable, and that a community which has no room for the different body is not yet the body of Christ.",
   "pillar": "The Seasons and the Crises",
   "connections": [
-    { "label": "Health, Illness, and Pain: the long endurance of a body that does not work as hoped", "href": "/life/health-illness-and-pain" },
-    { "label": "Identity and Worth: where dignity comes from when the body cannot earn it", "href": "/life/identity-and-worth" },
-    { "label": "The Church as Family: belonging that does not depend on ability", "href": "/life/the-church-as-family" },
-    { "label": "Suffering and the Silence of God: the hard questions a different body raises", "href": "/life/suffering-and-the-silence-of-god" },
-    { "label": "Take stock of how your community includes the whole body with the life audit", "href": "/tools/life-audit" }
+    {
+      "label": "Health, Illness, and Pain: the long endurance of a body that does not work as hoped",
+      "href": "/life/health-illness-and-pain"
+    },
+    {
+      "label": "Identity and Worth: where dignity comes from when the body cannot earn it",
+      "href": "/life/identity-and-worth"
+    },
+    {
+      "label": "The Church as Family: belonging that does not depend on ability",
+      "href": "/life/the-church-as-family"
+    },
+    {
+      "label": "Suffering and the Silence of God: the hard questions a different body raises",
+      "href": "/life/suffering-and-the-silence-of-god"
+    },
+    {
+      "label": "Take stock of how your community includes the whole body with the life audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Disability and the Different Body"
 }

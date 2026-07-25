@@ -1,6 +1,6 @@
 {
   "slug": "expository-vs-topical",
-  "title": "Expository or Topical: Which Should You Preach",
+  "title": "Expository vs. Topical Preaching: Which Should You Preach?",
   "subtitle": "An honest comparison of expository and topical preaching, the strengths and dangers of each, and how to decide which approach serves your congregation and the text.",
   "kicker": "Preaching",
   "group": "Preaching",
@@ -36,9 +36,19 @@
       "body": "Strip away the labels and one test remains for any sermon you preach.\n\nDid the people meet God in his Word, or did they meet you in your opinions. That is the whole of it. An expository sermon can fail that test, a long performance of study that left the text unopened and the heart untouched. A topical sermon can pass it, a clear and burning word from the whole of Scripture that left people on their knees. The form is not the faithfulness. The form is the vehicle. The faithfulness is whether the living God spoke through his own Word to the people he loves.\n\nSo stop asking which camp is right. Ask the only question that matters on Sunday. Did they leave having heard from God. If they did, you preached. If they did not, no method will save you."
     }
   ],
-  "keyTexts": ["Nehemiah 8:8", "2 Timothy 4:2", "Acts 20:27"],
+  "keyTexts": [
+    "Nehemiah 8:8",
+    "2 Timothy 4:2",
+    "Acts 20:27"
+  ],
   "furtherReading": [
-    { "title": "Christ-Centered Preaching", "author": "Bryan Chapell" },
-    { "title": "Biblical Preaching", "author": "Haddon Robinson" }
+    {
+      "title": "Christ-Centered Preaching",
+      "author": "Bryan Chapell"
+    },
+    {
+      "title": "Biblical Preaching",
+      "author": "Haddon Robinson"
+    }
   ]
 }

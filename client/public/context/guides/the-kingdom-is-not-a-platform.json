@@ -1,6 +1,6 @@
 {
   "slug": "the-kingdom-is-not-a-platform",
-  "title": "The Kingdom Is Not a Party Platform",
+  "title": "Does the Kingdom of God Belong to a Political Party?",
   "subtitle": "Jesus refused the Zealots and the Herodians both. Every generation since has tried to draft him anyway, and ours is no exception.",
   "kicker": "Past Our Politics",
   "group": "Reading Past Our Politics",
@@ -36,11 +36,27 @@
       "body": "Here is a test for whether the kingdom or the platform is doing your thinking. Can you name a position your own party holds that your King condemns? Name it out loud, in front of your own side, where it costs you something. If you cannot think of one, your discipleship has been outsourced. If you can think of one but have never said it where it counts, then mine has been too, more often than I want to write down.\n\nThe kingdom is not the Republican platform with communion added. It is not the Democratic platform with liturgy added. It is not a centrist compromise between them, as though Jesus were waiting patiently at the midpoint of American opinion. It is a throne. Thrones do not negotiate for our votes. They ask whether we will bow.\n\nEvery four years this country tells the church that this election, finally, is the one that justifies full capture. Every four years some of us believe it. The kingdom we actually serve was not on the last ballot and will not be on the next one. It is the only one still standing when the counting ends, and it remembers how its servants behaved while the polls were open."
     }
   ],
-  "keyTexts": ["John 18:33-37", "Mark 12:13-17", "Philippians 2:9-11"],
+  "keyTexts": [
+    "John 18:33-37",
+    "Mark 12:13-17",
+    "Philippians 2:9-11"
+  ],
   "sources": [
-    { "title": "How God Became King: The Forgotten Story of the Gospels", "author": "N.T. Wright" },
-    { "title": "The Desire of the Nations: Rediscovering the Roots of Political Theology", "author": "Oliver O'Donovan" },
-    { "title": "To Change the World: The Irony, Tragedy, and Possibility of Christianity in the Late Modern World", "author": "James Davison Hunter" },
-    { "title": "The Politics of Jesus", "author": "John Howard Yoder" }
+    {
+      "title": "How God Became King: The Forgotten Story of the Gospels",
+      "author": "N.T. Wright"
+    },
+    {
+      "title": "The Desire of the Nations: Rediscovering the Roots of Political Theology",
+      "author": "Oliver O'Donovan"
+    },
+    {
+      "title": "To Change the World: The Irony, Tragedy, and Possibility of Christianity in the Late Modern World",
+      "author": "James Davison Hunter"
+    },
+    {
+      "title": "The Politics of Jesus",
+      "author": "John Howard Yoder"
+    }
   ]
 }

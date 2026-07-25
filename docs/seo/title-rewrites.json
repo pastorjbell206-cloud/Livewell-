@@ -1,0 +1,3161 @@
+[
+ {
+  "slug": "the-monster-in-the-mirror",
+  "route": "/writing/",
+  "old": "The Monster in the Mirror",
+  "new": "Why Does Every Generation Get the Bible Wrong?",
+  "query": "why every generation gets the bible wrong",
+  "kicker": "The Monster in the Mirror",
+  "keep": false
+ },
+ {
+  "slug": "not-persecuted-seduced-crisis-american-christianity",
+  "route": "/writing/",
+  "old": "Not Persecuted, Seduced: The Crisis of American Christianity",
+  "new": "Is the American Church Persecuted or Seduced?",
+  "query": "is american christianity being persecuted",
+  "kicker": "Not Persecuted, Seduced",
+  "keep": false
+ },
+ {
+  "slug": "you-are-not-the-exception",
+  "route": "/writing/",
+  "old": "You Are Not the Exception: Understanding Biblical Interpretation",
+  "new": "Why Do We Get Biblical Interpretation Wrong?",
+  "query": "how to interpret the bible correctly",
+  "kicker": "You Are Not the Exception",
+  "keep": false
+ },
+ {
+  "slug": "the-theology-of-time",
+  "route": "/writing/",
+  "old": "The Theology of Time",
+  "new": "What Does the Bible Say About Time Management?",
+  "query": "what does the bible say about time management",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "hidden-pain-successful-pastor",
+  "route": "/writing/",
+  "old": "The Hidden Pain of the Successful Pastor",
+  "new": "Why Do Successful Pastors Suffer in Silence?",
+  "query": "why do successful pastors suffer in silence",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "church-needs-you-healthy-not-busy",
+  "route": "/writing/",
+  "old": "Your Church Needs You Healthy More Than It Needs You Busy",
+  "new": "How Do Pastors Stay Healthy in Ministry?",
+  "query": "how do pastors stay healthy in ministry",
+  "kicker": "Your Church Needs You Healthy More Than It Needs You Busy",
+  "keep": false
+ },
+ {
+  "slug": "personal-board-accountability",
+  "route": "/writing/",
+  "old": "Building a Personal Board of Accountability",
+  "new": "How Do You Build a Personal Accountability Board?",
+  "query": "personal board of accountability",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "five-biggest-mistakes-new-pastors",
+  "route": "/writing/",
+  "old": "The 5 Biggest Mistakes New Pastors Make",
+  "new": "The 5 Biggest Mistakes New Pastors Make",
+  "query": "biggest mistakes new pastors make",
+  "kicker": "",
+  "keep": true
+ },
+ {
+  "slug": "art-of-saying-no-without-guilt",
+  "route": "/writing/",
+  "old": "The Art of Saying No Without Guilt",
+  "new": "How Do You Say No Without Feeling Guilty?",
+  "query": "how to say no without feeling guilty",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "slow-burn-ministry-exhaustion",
+  "route": "/writing/",
+  "old": "The Slow Burn: How Ministry Exhaustion Sneaks Up on You",
+  "new": "How Does Ministry Exhaustion Sneak Up on You?",
+  "query": "signs of ministry exhaustion",
+  "kicker": "The Slow Burn",
+  "keep": false
+ },
+ {
+  "slug": "return-ministry-after-burnout",
+  "route": "/writing/",
+  "old": "The Second Commission",
+  "new": "How Do You Return to Ministry After Burnout?",
+  "query": "returning to ministry after burnout",
+  "kicker": "The Second Commission",
+  "keep": false
+ },
+ {
+  "slug": "difference-tired-and-done",
+  "route": "/writing/",
+  "old": "The Difference Between Being Tired and Being Done",
+  "new": "Am I Just Tired, or Am I Done With Ministry?",
+  "query": "difference between being tired and being done",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "protecting-marriage-ministry-demands",
+  "route": "/writing/",
+  "old": "Protecting Your Marriage When Ministry Demands Everything",
+  "new": "How Do You Protect Your Marriage in Ministry?",
+  "query": "protecting your marriage in ministry",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "okay-to-see-counselor",
+  "route": "/writing/",
+  "old": "It\\'s Okay to See a Counselor, Why Pastors Resist and Why They Shouldn\\'t",
+  "new": "Should Pastors See a Counselor? Why Many Resist",
+  "query": "should pastors see a counselor",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "pastors-depression-not-faith-problem",
+  "route": "/writing/",
+  "old": "A Pastor's Depression Is Not a Faith Problem",
+  "new": "Is a Pastor's Depression a Faith Problem?",
+  "query": "is depression a faith problem for pastors",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "anxiety-perfectionism-pastor-breaking-cycle",
+  "route": "/writing/",
+  "old": "Anxiety, Perfectionism, and the Pastor: Breaking the Cycle",
+  "new": "How Do Pastors Break the Anxiety and Perfectionism Cycle?",
+  "query": "pastor anxiety and perfectionism",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "not-your-churchs-attendance-numbers",
+  "route": "/writing/",
+  "old": "You Are Not Your Church\\'s Attendance Numbers",
+  "new": "Why Do Pastors Tie Their Worth to Attendance Numbers?",
+  "query": "pastor identity and church attendance numbers",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "five-sermon-habits-shrinking-faith",
+  "route": "/writing/",
+  "old": "Five Sermon Habits That Are Slowly Shrinking Your Congregation\\'s Faith",
+  "new": "5 Sermon Habits That Shrink a Congregation's Faith",
+  "query": "sermon habits that hurt a congregation",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "preaching-to-room-not-there-yet",
+  "route": "/writing/",
+  "old": "Preaching to the Room That\\'s Not There Yet, How to Reach the Unchurched",
+  "new": "Preaching to the Unchurched: How Do You Reach Them?",
+  "query": "how to preach to the unchurched",
+  "kicker": "The Room That's Not There Yet",
+  "keep": false
+ },
+ {
+  "slug": "metrics-tell-church-healthy",
+  "route": "/writing/",
+  "old": "The Metrics That Actually Tell You if Your Church Is Healthy",
+  "new": "What Metrics Actually Show That a Church Is Healthy?",
+  "query": "how to measure church health",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "most-dangerous-person-church-staff",
+  "route": "/writing/",
+  "old": "The Most Dangerous Person on a Church Staff (It Might Surprise You)",
+  "new": "Who Is the Most Dangerous Person on a Church Staff?",
+  "query": "most dangerous person on a church staff",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "staff-culture-no-burnout",
+  "route": "/writing/",
+  "old": "Building a Staff Culture Where People Don\\'t Burn Out and Leave",
+  "new": "How Do You Build a Church Staff Culture Without Burnout?",
+  "query": "church staff culture without burnout",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "gen-z-wants-from-church",
+  "route": "/writing/",
+  "old": "The Smoke Machine Is Not the Problem",
+  "new": "What Does Gen Z Actually Want From Church?",
+  "query": "what does gen z want from church",
+  "kicker": "The Smoke Machine Is Not the Problem",
+  "keep": false
+ },
+ {
+  "slug": "reformed-charismatic-pastors-same-table",
+  "route": "/writing/",
+  "old": "The Same Table",
+  "new": "Can Reformed and Charismatic Pastors Work Together?",
+  "query": "reformed and charismatic pastors together",
+  "kicker": "The Same Table",
+  "keep": false
+ },
+ {
+  "slug": "city-wide-church-together",
+  "route": "/writing/",
+  "old": "The Case for Doing City-Wide Church Together at Least Once a Year",
+  "new": "Why Should Churches in One City Worship Together?",
+  "query": "city wide church worship service",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "before-launch-ministry-ask-other-church",
+  "route": "/writing/",
+  "old": "Before You Launch That Ministry, Ask If Another Church in Town Is Already Doing It",
+  "new": "Should You Start a Ministry Another Church Already Runs?",
+  "query": "should our church start a new ministry",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "church-closures-outpacing-plants",
+  "route": "/writing/",
+  "old": "Church Closures Are Outpacing Church Plants 3 to 1, What That Means for the Mission",
+  "new": "Why Are Churches Closing Faster Than They Are Planted?",
+  "query": "church closures vs church plants",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "short-term-mission-trips-help-hurt",
+  "route": "/writing/",
+  "old": "The Trip Is Not the Work",
+  "new": "Do Short-Term Mission Trips Help or Hurt?",
+  "query": "do short term mission trips help or hurt",
+  "kicker": "The Trip Is Not the Work",
+  "keep": false
+ },
+ {
+  "slug": "unreached-people-groups-closest-to-you",
+  "route": "/writing/",
+  "old": "The Unreached People Groups Closest to You That You\\'ve Never Considered",
+  "new": "Which Unreached People Groups Live Nearest to You?",
+  "query": "unreached people groups near me",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "global-south-church-teach-suffering",
+  "route": "/writing/",
+  "old": "The Church That Cannot Promise Safety",
+  "new": "What Does the Global Church Know About Suffering?",
+  "query": "what the global church teaches about suffering",
+  "kicker": "The Church That Cannot Promise Safety",
+  "keep": false
+ },
+ {
+  "slug": "mission-sending-culture-never-sent",
+  "route": "/writing/",
+  "old": "Building a Mission-Sending Culture in a Church That\\'s Never Sent Anyone",
+  "new": "How Do You Start a Missions Culture From Scratch?",
+  "query": "how to build a missions sending culture",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "engaging-nones-religiously-unaffiliated",
+  "route": "/writing/",
+  "old": "None of the Above",
+  "new": "How Do You Reach the Religiously Unaffiliated?",
+  "query": "how to reach the religiously unaffiliated",
+  "kicker": "None of the Above",
+  "keep": false
+ },
+ {
+  "slug": "ai-authenticity-pastor-artificial-intelligence",
+  "route": "/writing/",
+  "old": "The Pastor and the Machine",
+  "new": "If AI Can Write a Sermon, What Is a Pastor For?",
+  "query": "can ai write a sermon",
+  "kicker": "The Pastor and the Machine",
+  "keep": false
+ },
+ {
+  "slug": "17-mobilizing-your-church-for-world-missions-without-a-big-budget",
+  "route": "/writing/",
+  "old": "Mobilizing Your Church for World Missions Without a Big Budget",
+  "new": "How Can a Church Do World Missions on a Small Budget?",
+  "query": "world missions on a small church budget",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "justice-not-political-theological",
+  "route": "/writing/",
+  "old": "Justice Is Theological Before It Is Political",
+  "new": "Is Justice a Political Issue or a Theological One?",
+  "query": "is justice political or biblical",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "complicity-not-innocence",
+  "route": "/writing/",
+  "old": "Complicity Is Not Innocence: What Silence Costs the Witness",
+  "new": "Is Silence About Injustice the Same as Neutrality?",
+  "query": "is silence complicity",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "poor-not-ministry-category",
+  "route": "/writing/",
+  "old": "Filed Under Mercy",
+  "new": "What Does the Bible Say About the Church and the Poor?",
+  "query": "what the bible says about the church and the poor",
+  "kicker": "Filed Under Mercy",
+  "keep": false
+ },
+ {
+  "slug": "creation-care-not-optional",
+  "route": "/writing/",
+  "old": "Work It and Keep It",
+  "new": "What Does Genesis Say About Caring for Creation?",
+  "query": "what does the bible say about creation care",
+  "kicker": "Work It and Keep It",
+  "keep": false
+ },
+ {
+  "slug": "widow-orphan-stranger",
+  "route": "/writing/",
+  "old": "The Widow, the Orphan, the Stranger",
+  "new": "Why Does the Bible Name the Widow, Orphan, and Stranger?",
+  "query": "widow orphan and stranger in the bible",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "mishpat-tsedaqah",
+  "route": "/writing/",
+  "old": "Mishpat and Tsedaqah",
+  "new": "What Do Mishpat and Tsedaqah Mean in the Bible?",
+  "query": "mishpat and tsedaqah meaning",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "church-credibility-problem",
+  "route": "/writing/",
+  "old": "The Church Has a Credibility Problem",
+  "new": "Why Has the Church Lost Its Credibility on Justice?",
+  "query": "why the church lost its credibility",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "racial-reconciliation-without-repentance",
+  "route": "/writing/",
+  "old": "Reconciliation Without Repentance Is Branding",
+  "new": "Can Racial Reconciliation Happen Without Repentance?",
+  "query": "racial reconciliation and repentance",
+  "kicker": "Reconciliation Without Repentance Is Branding",
+  "keep": false
+ },
+ {
+  "slug": "prophetic-tradition-economic-justice",
+  "route": "/writing/",
+  "old": "The Prophetic Tradition on Economic Justice",
+  "new": "What Do the Prophets Say About Economic Justice?",
+  "query": "prophets on economic justice",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "stranger-at-gate",
+  "route": "/writing/",
+  "old": "The Stranger at the Gate",
+  "new": "What Does the Bible Say About Welcoming the Stranger?",
+  "query": "what the bible says about welcoming the stranger",
+  "kicker": "The Stranger at the Gate",
+  "keep": false
+ },
+ {
+  "slug": "church-wealth-world-poverty",
+  "route": "/writing/",
+  "old": "The Church's Wealth and the World's Poverty",
+  "new": "What Does the Church Owe a World in Poverty?",
+  "query": "church wealth and world poverty",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "payday-lending-christians",
+  "route": "/writing/",
+  "old": "Before the Sun Goes Down",
+  "new": "What Does the Bible Say About Payday Lending?",
+  "query": "what does the bible say about payday loans",
+  "kicker": "Before the Sun Goes Down",
+  "keep": false
+ },
+ {
+  "slug": "silence-abuse-church",
+  "route": "/writing/",
+  "old": "Hold Your Peace, My Sister",
+  "new": "Why Do Churches Stay Silent About Abuse?",
+  "query": "why churches cover up abuse",
+  "kicker": "Hold Your Peace, My Sister",
+  "keep": false
+ },
+ {
+  "slug": "imago-dei-means-more",
+  "route": "/writing/",
+  "old": "Imago Dei Means More Than You Think",
+  "new": "What Does Imago Dei Mean for Human Dignity?",
+  "query": "what does imago dei mean",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "most-prophetic-live-differently",
+  "route": "/writing/",
+  "old": "The Most Prophetic Thing You Can Do Is Live Differently",
+  "new": "What Does Prophetic Witness Look Like in Daily Life?",
+  "query": "what is prophetic witness",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "symptoms-without-causes-charity",
+  "route": "/writing/",
+  "old": "The Corner of the Field",
+  "new": "Why Does Charity Treat Symptoms and Not Causes?",
+  "query": "why charity treats symptoms not causes",
+  "kicker": "The Corner of the Field",
+  "keep": false
+ },
+ {
+  "slug": "church-mental-health-justice",
+  "route": "/writing/",
+  "old": "The Church and Mental Health Justice",
+  "new": "Is Mental Health a Justice Issue for the Church?",
+  "query": "the church and mental health",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "church-megaproject-widows-mite",
+  "route": "/writing/",
+  "old": "Church Megaproject Budgets and the Widows Mite",
+  "new": "What Do Church Budgets Say Next to the Widow's Mite?",
+  "query": "church building budgets and the widow's mite",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "white-churches-diversity",
+  "route": "/writing/",
+  "old": "The Dividing Wall We Learned to Decorate",
+  "new": "Is Church Diversity Real or Just Decoration?",
+  "query": "church diversity vs real integration",
+  "kicker": "The Dividing Wall We Learned to Decorate",
+  "keep": false
+ },
+ {
+  "slug": "theology-of-repair",
+  "route": "/writing/",
+  "old": "The Theology of Repair",
+  "new": "What Does Biblical Justice Say About Repairing Harm?",
+  "query": "theology of repair and restitution",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "hospitality-not-optional",
+  "route": "/writing/",
+  "old": "Hospitality Is Not Optional",
+  "new": "What Does the Bible Say About Hospitality?",
+  "query": "what does the bible say about hospitality",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "disability-justice-theological",
+  "route": "/writing/",
+  "old": "The House Is Not Full",
+  "new": "Why Is the Church Behind the World on Accessibility?",
+  "query": "church accessibility and disability",
+  "kicker": "The House Is Not Full",
+  "keep": false
+ },
+ {
+  "slug": "earth-is-lords",
+  "route": "/writing/",
+  "old": "The Earth Is the Lord's",
+  "new": "Why Is Creation Care a Christian Responsibility?",
+  "query": "is creation care a christian responsibility",
+  "kicker": "The Earth Is the Lord's",
+  "keep": false
+ },
+ {
+  "slug": "prophetic-pastor",
+  "route": "/writing/",
+  "old": "The Prophetic Pastor",
+  "new": "Should a Pastor Name Injustice From the Pulpit?",
+  "query": "should pastors preach about injustice",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "justice-without-love-ideology",
+  "route": "/writing/",
+  "old": "Justice Without Love Is Ideology",
+  "new": "What Happens When Justice Is Pursued Without Love?",
+  "query": "justice without love becomes ideology",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "vulnerable-people-not-in-pews",
+  "route": "/writing/",
+  "old": "The Most Vulnerable People in Your City Are Not in Your Pews",
+  "new": "Why Are the Most Vulnerable People Not in Your Church?",
+  "query": "reaching the most vulnerable in your city",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "sabbath-is-resistance",
+  "route": "/writing/",
+  "old": "Sabbath Is Resistance",
+  "new": "Why Is Keeping the Sabbath an Act of Resistance?",
+  "query": "why is sabbath an act of resistance",
+  "kicker": "Sabbath Is Resistance",
+  "keep": false
+ },
+ {
+  "slug": "pastoral-care-wealthy-congregant",
+  "route": "/writing/",
+  "old": "The Pastoral Care of the Wealthy Congregant",
+  "new": "How Do You Pastor a Wealthy Person in Your Church?",
+  "query": "how to pastor wealthy congregants",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "leviticus-19-border-crisis",
+  "route": "/writing/",
+  "old": "The Stranger and the Sword",
+  "new": "What Does the Bible Say About Immigration and Borders?",
+  "query": "what does the bible say about immigration",
+  "kicker": "The Stranger and the Sword",
+  "keep": false
+ },
+ {
+  "slug": "church-incarceration-silence",
+  "route": "/writing/",
+  "old": "The Door We Did Not Walk Through",
+  "new": "Why Does the Church Avoid Prison Ministry?",
+  "query": "why the church ignores prison ministry",
+  "kicker": "The Door We Did Not Walk Through",
+  "keep": false
+ },
+ {
+  "slug": "the-long-arc",
+  "route": "/writing/",
+  "old": "The Long Arc",
+  "new": "Does the Arc of History Really Bend Toward Justice?",
+  "query": "does the arc of history bend toward justice",
+  "kicker": "The Long Arc",
+  "keep": false
+ },
+ {
+  "slug": "church-fathers-not-boring",
+  "route": "/writing/",
+  "old": "The Church Fathers Were Not Boring: Why Early Christian Thinking Still Matters",
+  "new": "Why Do the Early Church Fathers Still Matter Today?",
+  "query": "why do the church fathers still matter",
+  "kicker": "The Church Fathers Were Not Boring",
+  "keep": false
+ },
+ {
+  "slug": "atonement-more-than-one-model",
+  "route": "/writing/",
+  "old": "Atonement: More Than One Model, Why the Cross Is Bigger Than Any Single Theory",
+  "new": "What Are the Different Theories of the Atonement?",
+  "query": "theories of the atonement",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "kingdom-of-god-not-what-you-think",
+  "route": "/writing/",
+  "old": "The Kingdom of God Is Not What You Think It Is",
+  "new": "What Is the Kingdom of God, and Is It Here Now?",
+  "query": "what is the kingdom of god",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "psalms-as-prayer-not-poetry",
+  "route": "/writing/",
+  "old": "The Psalms as Prayer, Not Just Poetry",
+  "new": "How Do You Pray the Psalms Instead of Just Reading Them?",
+  "query": "how to pray the psalms",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "holy-spirit-not-feeling",
+  "route": "/writing/",
+  "old": "The Holy Spirit Is Not a Feeling",
+  "new": "Who Is the Holy Spirit, and What Does He Actually Do?",
+  "query": "who is the holy spirit",
+  "kicker": "The Holy Spirit Is Not a Feeling",
+  "keep": false
+ },
+ {
+  "slug": "sin-not-just-what-you-do",
+  "route": "/writing/",
+  "old": "Sin Is Not Just What You Do, Its What You Are",
+  "new": "Is Sin Something You Do or Something You Are?",
+  "query": "what is sin in christianity",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "eschatology-matters-end-shapes-now",
+  "route": "/writing/",
+  "old": "Eschatology Matters, Why the End Shapes How We Live Now",
+  "new": "What Is Eschatology, and Why Does It Matter Now?",
+  "query": "what is eschatology and why does it matter",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "incarnation-changes-everything",
+  "route": "/writing/",
+  "old": "The Incarnation Changes Everything, Why God Became Human",
+  "new": "Why Did God Become Human, and Why Does It Matter?",
+  "query": "why did god become human",
+  "kicker": "The Incarnation Changes Everything",
+  "keep": false
+ },
+ {
+  "slug": "burnout-nobody-talks-about",
+  "route": "/writing/",
+  "old": "The Burnout Nobody Talks About",
+  "new": "What Are the Early Signs of Pastoral Burnout?",
+  "query": "signs of pastoral burnout",
+  "kicker": "The Burnout Nobody Talks About",
+  "keep": false
+ },
+ {
+  "slug": "sabbath-isnt-optional",
+  "route": "/writing/",
+  "old": "Sabbath Isn't Optional",
+  "new": "Do Christians Still Have to Keep the Sabbath?",
+  "query": "do christians have to keep the sabbath",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "your-marriage-is-ministry-too",
+  "route": "/writing/",
+  "old": "Your Marriage Is a Ministry Too",
+  "new": "How Do You Keep Ministry From Costing Your Marriage?",
+  "query": "when ministry is hurting my marriage",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "weight-of-what-you-cant-say",
+  "route": "/writing/",
+  "old": "The Weight of What You Can't Say",
+  "new": "How Do Pastors Carry Confidences They Cannot Share?",
+  "query": "pastors carrying confidences they cannot share",
+  "kicker": "The Weight of What You Can't Say",
+  "keep": false
+ },
+ {
+  "slug": "finding-your-barnabas",
+  "route": "/writing/",
+  "old": "Finding Your Barnabas",
+  "new": "Why Does Every Pastor Need a Barnabas in Ministry?",
+  "query": "every pastor needs a barnabas",
+  "kicker": "Finding Your Barnabas",
+  "keep": false
+ },
+ {
+  "slug": "loneliness-of-leadership",
+  "route": "/writing/",
+  "old": "The Loneliness of Leadership",
+  "new": "Why Is Leadership So Lonely, and What Helps?",
+  "query": "why is leadership so lonely",
+  "kicker": "The Loneliness of Leadership",
+  "keep": false
+ },
+ {
+  "slug": "delegation-is-not-weakness",
+  "route": "/writing/",
+  "old": "Delegation Is Not Weakness",
+  "new": "Why Do Pastors Struggle to Delegate Ministry Work?",
+  "query": "why pastors struggle to delegate",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "vision-without-community-fantasy",
+  "route": "/writing/",
+  "old": "Vision Without Community Is Just Fantasy",
+  "new": "How Do You Build a Vision the Church Will Own?",
+  "query": "building shared vision in a church",
+  "kicker": "Vision Without Community Is Just Fantasy",
+  "keep": false
+ },
+ {
+  "slug": "pastors-authority-relational",
+  "route": "/writing/",
+  "old": "The Pastors Authority Is Relational",
+  "new": "Where Does a Pastor's Authority Actually Come From?",
+  "query": "where does pastoral authority come from",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "conflict-is-not-failure",
+  "route": "/writing/",
+  "old": "Conflict Is Not Failure",
+  "new": "How Should a Pastor Handle Conflict in the Church?",
+  "query": "how to handle conflict in the church",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "building-leadership-team",
+  "route": "/writing/",
+  "old": "Building a Leadership Team",
+  "new": "How Do You Build a Church Leadership Team?",
+  "query": "how to build a church leadership team",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "danger-pastoral-isolation",
+  "route": "/writing/",
+  "old": "The Danger of Pastoral Isolation",
+  "new": "Why Is Pastoral Isolation So Dangerous for Ministry?",
+  "query": "dangers of pastoral isolation",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "unity-without-uniformity",
+  "route": "/writing/",
+  "old": "Unity Without Uniformity",
+  "new": "Can the Church Have Unity Without Uniformity?",
+  "query": "unity without uniformity in the church",
+  "kicker": "Unity Without Uniformity",
+  "keep": false
+ },
+ {
+  "slug": "courage-to-be-different",
+  "route": "/writing/",
+  "old": "The Courage to Be Different",
+  "new": "How Should the Church Be Different From the World?",
+  "query": "how should the church be different from the world",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "collaboration-across-denominations",
+  "route": "/writing/",
+  "old": "Collaboration Across Denominations",
+  "new": "Can Churches Work Together Across Denominations?",
+  "query": "churches working together across denominations",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "global-church-is-your-church",
+  "route": "/writing/",
+  "old": "The Global Church Is Your Church",
+  "new": "What Does It Mean to Belong to the Global Church?",
+  "query": "what is the global church",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "mission-is-not-optional",
+  "route": "/writing/",
+  "old": "Mission Is Not Optional",
+  "new": "What Is the Mission of the Church, and Who Does It?",
+  "query": "what is the mission of the church",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "your-city-is-mission-field",
+  "route": "/writing/",
+  "old": "Your City Is Your Mission Field",
+  "new": "Why Is Your Own City Your Real Mission Field?",
+  "query": "your city is your mission field",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "church-response-to-culture",
+  "route": "/writing/",
+  "old": "The Church's Response to Culture",
+  "new": "How Should the Church Engage the Culture?",
+  "query": "how should the church engage culture",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "truth-in-post-truth-world",
+  "route": "/writing/",
+  "old": "Telling the Truth in a Post-Truth World",
+  "new": "How Does the Church Tell the Truth in a Post-Truth Age?",
+  "query": "telling the truth in a post-truth world",
+  "kicker": "Telling the Truth in a Post-Truth World",
+  "keep": false
+ },
+ {
+  "slug": "interior-life-of-pastor",
+  "route": "/writing/",
+  "old": "The Interior Life of the Pastor",
+  "new": "Why Does a Pastor's Inner Life Shape His Ministry?",
+  "query": "pastor inner life and ministry health",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "prayer-is-not-optional",
+  "route": "/writing/",
+  "old": "Prayer Is Not Optional",
+  "new": "Why Is Prayer the Foundation of a Pastor's Ministry?",
+  "query": "why is prayer essential for pastors",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "scripture-meditation",
+  "route": "/writing/",
+  "old": "Scripture Meditation",
+  "new": "What Does It Mean to Meditate on Scripture?",
+  "query": "how to meditate on scripture",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "spiritual-disciplines-for-pastors",
+  "route": "/writing/",
+  "old": "Spiritual Disciplines for Pastors",
+  "new": "Spiritual Disciplines for Pastors",
+  "query": "spiritual disciplines for pastors",
+  "kicker": "",
+  "keep": true
+ },
+ {
+  "slug": "the-examined-life",
+  "route": "/writing/",
+  "old": "The Examined Life",
+  "new": "How Do You Examine Your Own Life and Ministry?",
+  "query": "self-examination for pastors",
+  "kicker": "The Examined Life",
+  "keep": false
+ },
+ {
+  "slug": "repentance-and-renewal",
+  "route": "/writing/",
+  "old": "Repentance and Renewal",
+  "new": "What Does Repentance Look Like for a Pastor?",
+  "query": "repentance and renewal for pastors",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "hope-of-resurrection",
+  "route": "/writing/",
+  "old": "The Hope of Resurrection",
+  "new": "How Does the Resurrection Shape Christian Hope?",
+  "query": "what is the hope of the resurrection",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "justice-not-political",
+  "route": "/writing/",
+  "old": "Justice Is Not a Political Category",
+  "new": "What Does the Bible Actually Mean by Justice?",
+  "query": "what does the bible mean by justice",
+  "kicker": "Justice Is Not a Political Category",
+  "keep": false
+ },
+ {
+  "slug": "poor-not-ministry",
+  "route": "/writing/",
+  "old": "The Poor Are Not a Ministry Category",
+  "new": "What Does Matthew 25 Teach About the Poor?",
+  "query": "what does matthew 25 say about the poor",
+  "kicker": "The Poor Are Not a Ministry Category",
+  "keep": false
+ },
+ {
+  "slug": "six-verses-we-memorized",
+  "route": "/writing/",
+  "old": "The Bible Verses We Quote, and the Ones We Skip",
+  "new": "Why Do Christians Quote Some Verses and Skip Others?",
+  "query": "why christians ignore certain bible verses",
+  "kicker": "The Bible Verses We Quote, and the Ones We Skip",
+  "keep": false
+ },
+ {
+  "slug": "the-third-temptation",
+  "route": "/writing/",
+  "old": "The Temptation Jesus Refused in the Desert",
+  "new": "Why Did Jesus Refuse the Offer of Political Power?",
+  "query": "jesus refused political power in the wilderness",
+  "kicker": "The Temptation Jesus Refused in the Desert",
+  "keep": false
+ },
+ {
+  "slug": "reading-in-community",
+  "route": "/writing/",
+  "old": "You Were Never Meant to Read the Bible Alone",
+  "new": "Why Should You Read the Bible in Community?",
+  "query": "why read the bible in community",
+  "kicker": "You Were Never Meant to Read the Bible Alone",
+  "keep": false
+ },
+ {
+  "slug": "six-lenses-that-distort-the-bible",
+  "route": "/writing/",
+  "old": "You've Never Read the Bible Without a Lens",
+  "new": "How Does Your Culture Shape the Way You Read the Bible?",
+  "query": "how culture shapes the way we read the bible",
+  "kicker": "You've Never Read the Bible Without a Lens",
+  "keep": false
+ },
+ {
+  "slug": "exile-is-not-the-end",
+  "route": "/writing/",
+  "old": "The Church Has Been an Exile Before",
+  "new": "How Should the Church Think About Losing Cultural Power?",
+  "query": "church losing cultural power exile",
+  "kicker": "The Church Has Been an Exile Before",
+  "keep": false
+ },
+ {
+  "slug": "witness-without-power",
+  "route": "/writing/",
+  "old": "The Church Grew Fastest When It Had No Power",
+  "new": "How Did the Early Church Grow Without Political Power?",
+  "query": "how did the early church grow without power",
+  "kicker": "The Church Grew Fastest When It Had No Power",
+  "keep": false
+ },
+ {
+  "slug": "the-last-nonpartisan-in-the-room",
+  "route": "/writing/",
+  "old": "The Pastor Who Won't Pick a Side",
+  "new": "Should Pastors Stay Politically Neutral?",
+  "query": "should pastors be politically neutral",
+  "kicker": "The Pastor Who Won't Pick a Side",
+  "keep": false
+ },
+ {
+  "slug": "burnout-is-not-a-badge",
+  "route": "/writing/",
+  "old": "Burnout Is Not a Badge of Honor",
+  "new": "Why Do Pastors Treat Exhaustion as Faithfulness?",
+  "query": "pastors treating burnout as a badge of honor",
+  "kicker": "Burnout Is Not a Badge of Honor",
+  "keep": false
+ },
+ {
+  "slug": "the-loneliest-room-in-the-church",
+  "route": "/writing/",
+  "old": "The Loneliest Room in the Church",
+  "new": "Why Are Pastors So Lonely in a Full Church?",
+  "query": "why are pastors so lonely",
+  "kicker": "The Loneliest Room in the Church",
+  "keep": false
+ },
+ {
+  "slug": "the-pastor-nobody-checks-on",
+  "route": "/writing/",
+  "old": "The Pastor Nobody Checks On",
+  "new": "Who Pastors the Pastor When No One Checks In?",
+  "query": "who pastors the pastor",
+  "kicker": "The Pastor Nobody Checks On",
+  "keep": false
+ },
+ {
+  "slug": "the-covenant-you-didnt-understand",
+  "route": "/writing/",
+  "old": "The Vow You Didn't Understand When You Made It",
+  "new": "What Are You Really Promising in Your Marriage Vows?",
+  "query": "what do marriage vows actually mean",
+  "kicker": "The Vow You Didn't Understand When You Made It",
+  "keep": false
+ },
+ {
+  "slug": "the-slow-drift-that-ends-marriages",
+  "route": "/writing/",
+  "old": "The Slow Drift That Ends More Marriages Than Affairs Do",
+  "new": "Why Do Married Couples Slowly Drift Apart?",
+  "query": "why do marriages drift apart",
+  "kicker": "The Slow Drift That Ends More Marriages Than Affairs Do",
+  "keep": false
+ },
+ {
+  "slug": "family-devotions-authentic",
+  "route": "/writing/",
+  "old": "Family Devotions That Don't Feel Forced",
+  "new": "How Do You Do Family Devotions Without Forcing It?",
+  "query": "how to do family devotions",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "raising-kids-who-think",
+  "route": "/writing/",
+  "old": "Raising Kids Who Think Instead of Just Performing Faith",
+  "new": "How Do You Raise Kids Who Think About Their Faith?",
+  "query": "raising kids who own their faith",
+  "kicker": "Raising Kids Who Think Instead of Just Performing Faith",
+  "keep": false
+ },
+ {
+  "slug": "raising-sons-manhood",
+  "route": "/writing/",
+  "old": "Raising Sons in a World Confused About Manhood",
+  "new": "How Do You Teach a Son What Manhood Actually Is?",
+  "query": "how to raise sons biblical manhood",
+  "kicker": "Raising Sons in a World Confused About Manhood",
+  "keep": false
+ },
+ {
+  "slug": "teaching-kids-about-doubt",
+  "route": "/writing/",
+  "old": "Teach Your Kids About Doubt Before the Internet Does",
+  "new": "How Do You Talk to Your Kids About Doubt?",
+  "query": "how to talk to your kids about doubt",
+  "kicker": "Teach Your Kids About Doubt Before the Internet Does",
+  "keep": false
+ },
+ {
+  "slug": "the-weight-of-what-you-model",
+  "route": "/writing/",
+  "old": "Your Kids Learn Faith From What You Do, Not What You Say",
+  "new": "How Do Kids Actually Learn Faith From Their Parents?",
+  "query": "how do children learn faith from parents",
+  "kicker": "Your Kids Learn Faith From What You Do, Not What You Say",
+  "keep": false
+ },
+ {
+  "slug": "the-faith-once-delivered",
+  "route": "/writing/",
+  "old": "The Faith That Was Settled Before America Existed",
+  "new": "What Did Christians Believe Before America Existed?",
+  "query": "what did christians believe before america",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "easter-is-not-a-day",
+  "route": "/writing/",
+  "old": "Easter Was Never Meant to Be One Sunday",
+  "new": "Why Is Easter Fifty Days and Not One Sunday?",
+  "query": "how long is the easter season",
+  "kicker": "Easter Was Never Meant to Be One Sunday",
+  "keep": false
+ },
+ {
+  "slug": "the-table-that-divides",
+  "route": "/writing/",
+  "old": "The Meal That Was Supposed to Make Us One",
+  "new": "Why Does Communion Divide Churches Instead of Uniting?",
+  "query": "why does communion divide churches",
+  "kicker": "The Meal That Was Supposed to Make Us One",
+  "keep": false
+ },
+ {
+  "slug": "praying-at-fixed-hours",
+  "route": "/writing/",
+  "old": "Praying at the Same Times Every Day, Like Christians Always Did",
+  "new": "What Is Fixed-Hour Prayer and Why Did the Church Keep It?",
+  "query": "what is fixed hour prayer",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-bible-is-one-story",
+  "route": "/writing/",
+  "old": "The Bible Is One Story, Not a Rulebook",
+  "new": "Is the Bible One Story or a Book of Rules?",
+  "query": "is the bible one story",
+  "kicker": "The Bible Is One Story, Not a Rulebook",
+  "keep": false
+ },
+ {
+  "slug": "the-moment-the-story-turns",
+  "route": "/writing/",
+  "old": "The Moment the Whole Story Turns",
+  "new": "What Is the Turning Point of the Bible's Story?",
+  "query": "what is the turning point of the bible story",
+  "kicker": "The Moment the Whole Story Turns",
+  "keep": false
+ },
+ {
+  "slug": "augustine-the-restless-man",
+  "route": "/writing/",
+  "old": "The Restless Man Who Couldn't Outrun God",
+  "new": "Who Was Augustine and Why Does He Still Matter?",
+  "query": "who was augustine and why does he matter",
+  "kicker": "The Restless Man Who Couldn't Outrun God",
+  "keep": false
+ },
+ {
+  "slug": "christianity-was-never-western",
+  "route": "/writing/",
+  "old": "Christianity Was Never a Western Religion",
+  "new": "Is Christianity a Western Religion?",
+  "query": "is christianity a western religion",
+  "kicker": "Christianity Was Never a Western Religion",
+  "keep": false
+ },
+ {
+  "slug": "the-fight-to-put-the-bible-in-your-hands",
+  "route": "/writing/",
+  "old": "The Fight to Put the Bible in Your Hands",
+  "new": "Who Died to Translate the Bible Into English?",
+  "query": "who died to translate the bible into english",
+  "kicker": "The Fight to Put the Bible in Your Hands",
+  "keep": false
+ },
+ {
+  "slug": "the-first-christians-died-for-this",
+  "route": "/writing/",
+  "old": "The First Christians Died for This",
+  "new": "Why Were the Early Christians Persecuted and Killed?",
+  "query": "why were the early christians persecuted",
+  "kicker": "The First Christians Died for This",
+  "keep": false
+ },
+ {
+  "slug": "praying-the-words-when-you-have-none",
+  "route": "/writing/",
+  "old": "Praying the Words When You Have None",
+  "new": "How Do You Pray When You Have No Words Left?",
+  "query": "what to pray when you have no words",
+  "kicker": "Praying the Words When You Have None",
+  "keep": false
+ },
+ {
+  "slug": "praying-when-you-dont-feel-it",
+  "route": "/writing/",
+  "old": "Praying When You Don't Feel Anything",
+  "new": "Why Does Prayer Feel Dry, and What Do You Do?",
+  "query": "why does prayer feel dry",
+  "kicker": "Praying When You Don't Feel Anything",
+  "keep": false
+ },
+ {
+  "slug": "the-only-prayer-jesus-taught",
+  "route": "/writing/",
+  "old": "The Only Prayer Jesus Taught",
+  "new": "What Does the Lord's Prayer Actually Mean?",
+  "query": "what does the lord's prayer mean",
+  "kicker": "The Only Prayer Jesus Taught",
+  "keep": false
+ },
+ {
+  "slug": "friendship-the-love-we-forgot",
+  "route": "/writing/",
+  "old": "Friendship Is the Love We Forgot",
+  "new": "Why Is Friendship the Love We Take Least Seriously?",
+  "query": "why is friendship not taken seriously",
+  "kicker": "Friendship Is the Love We Forgot",
+  "keep": false
+ },
+ {
+  "slug": "your-body-is-not-a-cage",
+  "route": "/writing/",
+  "old": "Your Body Is Not a Cage",
+  "new": "What Does Christianity Teach About the Body?",
+  "query": "what does christianity teach about the body",
+  "kicker": "Your Body Is Not a Cage",
+  "keep": false
+ },
+ {
+  "slug": "its-not-just-what-you-do",
+  "route": "/writing/",
+  "old": "Jesus Cared About More Than Your Behavior",
+  "new": "Why Does Jesus Care About the Heart, Not Just Behavior?",
+  "query": "why does jesus care about the heart not just actions",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-hardest-thing-jesus-asked",
+  "route": "/writing/",
+  "old": "The Hardest Thing Jesus Ever Asked",
+  "new": "What Did Jesus Mean by Love Your Enemies?",
+  "query": "what did jesus mean by love your enemies",
+  "kicker": "The Hardest Thing Jesus Ever Asked",
+  "keep": false
+ },
+ {
+  "slug": "the-atheist-in-the-pulpit",
+  "route": "/writing/",
+  "old": "The Atheist in the Pulpit",
+  "new": "How Does an Atheist Become a Christian, and a Pastor?",
+  "query": "how does an atheist become a christian",
+  "kicker": "The Atheist in the Pulpit",
+  "keep": false
+ },
+ {
+  "slug": "the-machine-that-forms-you",
+  "route": "/writing/",
+  "old": "The Machine That Forms You",
+  "new": "What Is AI Doing to the Kind of People We Become?",
+  "query": "what is ai doing to us",
+  "kicker": "The Machine That Forms You",
+  "keep": false
+ },
+ {
+  "slug": "the-hour-that-forms-the-week",
+  "route": "/writing/",
+  "old": "The Hour That Forms the Week",
+  "new": "What Does Your Church's Order of Service Teach You?",
+  "query": "what does the order of worship teach",
+  "kicker": "The Hour That Forms the Week",
+  "keep": false
+ },
+ {
+  "slug": "the-end-of-home-field-advantage",
+  "route": "/writing/",
+  "old": "The End of Home-Field Advantage",
+  "new": "How Do You Share the Gospel in a Post-Christian Culture?",
+  "query": "how to evangelize in a post-christian culture",
+  "kicker": "The End of Home-Field Advantage",
+  "keep": false
+ },
+ {
+  "slug": "excavation-not-demolition",
+  "route": "/writing/",
+  "old": "Excavation, Not Demolition",
+  "new": "What Comes After Deconstruction of Your Faith?",
+  "query": "what comes after deconstruction",
+  "kicker": "Excavation, Not Demolition",
+  "keep": false
+ },
+ {
+  "slug": "depression-or-the-dark-night",
+  "route": "/writing/",
+  "old": "Not Every Darkness Is a Doctrine Problem",
+  "new": "Is It Depression or a Spiritual Dark Night?",
+  "query": "is it depression or spiritual dryness",
+  "kicker": "Not Every Darkness Is a Doctrine Problem",
+  "keep": false
+ },
+ {
+  "slug": "a-whole-life",
+  "route": "/writing/",
+  "old": "A Whole Life",
+  "new": "Is Singleness a Whole Life or a Waiting Room?",
+  "query": "what does the bible say about singleness",
+  "kicker": "A Whole Life",
+  "keep": false
+ },
+ {
+  "slug": "the-work-nobody-watches",
+  "route": "/writing/",
+  "old": "The Work Nobody Watches",
+  "new": "Why Is Motherhood Treated as Wasted Work?",
+  "query": "why is motherhood undervalued",
+  "kicker": "The Work Nobody Watches",
+  "keep": false
+ },
+ {
+  "slug": "the-womanhood-they-preached-was-small",
+  "route": "/writing/",
+  "old": "The Womanhood They Preached Was Small",
+  "new": "What Does Biblical Womanhood Actually Mean?",
+  "query": "what does biblical womanhood mean",
+  "kicker": "The Womanhood They Preached Was Small",
+  "keep": false
+ },
+ {
+  "slug": "natural-evil-and-animal-suffering",
+  "route": "/writing/",
+  "old": "The Suffering God Never Ordered",
+  "new": "Why Does God Allow Natural Disasters and Animal Suffering?",
+  "query": "why does god allow natural disasters and animal suffering",
+  "kicker": "The Suffering God Never Ordered",
+  "keep": false
+ },
+ {
+  "slug": "morality-without-god-and-with-him",
+  "route": "/writing/",
+  "old": "Morality Without God, and With Him",
+  "new": "Can You Be a Good Person Without Believing in God?",
+  "query": "can you be good without god",
+  "kicker": "Morality Without God, and With Him",
+  "keep": false
+ },
+ {
+  "slug": "the-bible-without-the-marketing",
+  "route": "/writing/",
+  "old": "The Bible Without the Marketing",
+  "new": "Do You Have to Believe the Bible Is Inerrant?",
+  "query": "do you have to believe the bible is inerrant",
+  "kicker": "The Bible Without the Marketing",
+  "keep": false
+ },
+ {
+  "slug": "the-historical-jesus-without-the-shortcuts",
+  "route": "/writing/",
+  "old": "The Historical Jesus, Without the Shortcuts",
+  "new": "What Can History Actually Prove About Jesus?",
+  "query": "what can we know about the historical jesus",
+  "kicker": "The Historical Jesus, Without the Shortcuts",
+  "keep": false
+ },
+ {
+  "slug": "the-problem-of-suffering-honestly",
+  "route": "/writing/",
+  "old": "The Problem of Suffering, Honestly",
+  "new": "Why Does God Allow Suffering If He Is Good?",
+  "query": "why does god allow suffering",
+  "kicker": "The Problem of Suffering, Honestly",
+  "keep": false
+ },
+ {
+  "slug": "the-questions-that-actually-matter",
+  "route": "/writing/",
+  "old": "The Questions That Actually Matter",
+  "new": "What Do Skeptics Actually Ask About Christianity?",
+  "query": "what questions do skeptics ask about christianity",
+  "kicker": "The Questions That Actually Matter",
+  "keep": false
+ },
+ {
+  "slug": "money-and-the-church",
+  "route": "/leadership/article/",
+  "old": "Leading a Church With Money",
+  "new": "How Should a Pastor Talk About Money in Church?",
+  "query": "how should a pastor talk about money",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "meetings-that-matter",
+  "route": "/leadership/article/",
+  "old": "Meetings That Are Not a Waste",
+  "new": "How Do You Run a Church Meeting Worth Having?",
+  "query": "how to run a good church meeting",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "church-administration",
+  "route": "/leadership/article/",
+  "old": "The Systems Under the Soul",
+  "new": "Why Does Church Administration Matter for Ministry?",
+  "query": "why does church administration matter",
+  "kicker": "The Systems Under the Soul",
+  "keep": false
+ },
+ {
+  "slug": "the-leaders-calendar",
+  "route": "/leadership/article/",
+  "old": "The Tyranny of the Urgent",
+  "new": "How Should a Pastor Manage His Calendar and Time?",
+  "query": "pastor time management calendar",
+  "kicker": "The Tyranny of the Urgent",
+  "keep": false
+ },
+ {
+  "slug": "leading-change",
+  "route": "/leadership/article/",
+  "old": "Leading Change Without Splitting the Church",
+  "new": "Leading Change Without Splitting the Church",
+  "query": "leading change in a church without splitting it",
+  "kicker": "",
+  "keep": true
+ },
+ {
+  "slug": "church-planting",
+  "route": "/leadership/article/",
+  "old": "Planting a Church",
+  "new": "How Do You Plant a Church That Survives?",
+  "query": "how to plant a church",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "revitalization",
+  "route": "/leadership/article/",
+  "old": "Revitalizing a Dying Church",
+  "new": "How Do You Revitalize a Church That Is Dying?",
+  "query": "how to revitalize a dying church",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "healthy-staff-culture",
+  "route": "/leadership/article/",
+  "old": "Building a Healthy Church Staff Culture",
+  "new": "Building a Healthy Church Staff Culture",
+  "query": "building a healthy church staff culture",
+  "kicker": "",
+  "keep": true
+ },
+ {
+  "slug": "leading-through-decline",
+  "route": "/leadership/article/",
+  "old": "Leading a Church Through Decline",
+  "new": "How Do You Lead a Church That Is Shrinking?",
+  "query": "how to lead a church in decline",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "leading-difficult-people",
+  "route": "/leadership/article/",
+  "old": "Leading the Difficult People in Your Church",
+  "new": "How Do You Handle Difficult People in the Church?",
+  "query": "how to deal with difficult people in church",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "accountability-for-church-leaders",
+  "route": "/leadership/article/",
+  "old": "Real Accountability for Church Leaders",
+  "new": "What Does Real Accountability for Pastors Look Like?",
+  "query": "accountability for pastors",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "setting-direction-without-controlling",
+  "route": "/leadership/article/",
+  "old": "Setting the Direction Without Controlling Everything",
+  "new": "How Do You Cast Vision Without Micromanaging?",
+  "query": "how to lead with vision without micromanaging",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "succession-planning-church",
+  "route": "/leadership/article/",
+  "old": "Succession Planning for the Church You Will Leave",
+  "new": "How Do You Plan a Pastoral Succession in a Church?",
+  "query": "pastoral succession planning",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "first-ninety-days-new-church",
+  "route": "/leadership/article/",
+  "old": "The First Ninety Days in a New Church",
+  "new": "What Should a Pastor Do in the First Ninety Days?",
+  "query": "first 90 days as a new pastor",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "learning-to-delegate",
+  "route": "/leadership/article/",
+  "old": "The Leader Who Cannot Delegate",
+  "new": "How Does a Pastor Learn to Delegate Real Authority?",
+  "query": "how do pastors learn to delegate",
+  "kicker": "The Leader Who Cannot Delegate",
+  "keep": false
+ },
+ {
+  "slug": "the-power-of-saying-no",
+  "route": "/leadership/article/",
+  "old": "The Leadership Power of Saying No",
+  "new": "How Does a Pastor Say No and Protect His Calling?",
+  "query": "how do pastors learn to say no",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "bridging-text-to-today",
+  "route": "/leadership/article/",
+  "old": "From the Original Meaning to Today: Bridging the Gap",
+  "new": "How Do You Apply a Bible Passage to Today?",
+  "query": "how to apply a bible passage to today",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "law-and-gospel",
+  "route": "/leadership/article/",
+  "old": "Reading the Bible With Law and Gospel",
+  "new": "What Is the Difference Between Law and Gospel?",
+  "query": "difference between law and gospel",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "biblical-hermeneutics",
+  "route": "/leadership/article/",
+  "old": "The Basic Rules of Biblical Interpretation",
+  "new": "How Do You Interpret the Bible Faithfully?",
+  "query": "how to interpret the bible",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "bible-study-tools",
+  "route": "/leadership/article/",
+  "old": "The Bible Study Tools Worth Owning",
+  "new": "The Best Bible Study Tools for Serious Students",
+  "query": "best bible study tools",
+  "kicker": "The Bible Study Tools Worth Owning",
+  "keep": false
+ },
+ {
+  "slug": "the-biblical-covenants",
+  "route": "/leadership/article/",
+  "old": "The Covenants That Hold the Bible Together",
+  "new": "What Are the Biblical Covenants and How Do They Connect?",
+  "query": "what are the covenants in the bible",
+  "kicker": "The Covenants That Hold the Bible Together",
+  "keep": false
+ },
+ {
+  "slug": "exegetical-fallacies",
+  "route": "/leadership/article/",
+  "old": "The Exegetical Fallacies That Wreck Sermons",
+  "new": "What Are the Exegetical Fallacies That Ruin Sermons?",
+  "query": "what are exegetical fallacies",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "reading-in-context",
+  "route": "/leadership/article/",
+  "old": "The First Rule of Bible Study Is Context",
+  "new": "Why Does Context Matter When Reading the Bible?",
+  "query": "how to read bible verses in context",
+  "kicker": "The First Rule of Bible Study Is Context",
+  "keep": false
+ },
+ {
+  "slug": "resilience-in-ministry",
+  "route": "/leadership/article/",
+  "old": "Building Resilience for the Long Haul",
+  "new": "How Does a Pastor Last for Decades in Ministry?",
+  "query": "how to build resilience in ministry",
+  "kicker": "Building Resilience for the Long Haul",
+  "keep": false
+ },
+ {
+  "slug": "holy-ambition",
+  "route": "/leadership/article/",
+  "old": "Holy Ambition and the Other Kind",
+  "new": "Is Ambition in Ministry Holy or Just Pride?",
+  "query": "is ambition in ministry a sin",
+  "kicker": "Holy Ambition and the Other Kind",
+  "keep": false
+ },
+ {
+  "slug": "integrity-when-no-one-is-watching",
+  "route": "/leadership/article/",
+  "old": "Integrity When No One Is Watching",
+  "new": "Integrity When No One Is Watching",
+  "query": "integrity when no one is watching",
+  "kicker": "",
+  "keep": true
+ },
+ {
+  "slug": "keeping-your-soul-in-ministry",
+  "route": "/leadership/article/",
+  "old": "Keeping Your Own Soul While Feeding Others",
+  "new": "How Does a Pastor Keep His Own Faith Alive?",
+  "query": "how do pastors keep their own faith alive",
+  "kicker": "Keeping Your Own Soul While Feeding Others",
+  "keep": false
+ },
+ {
+  "slug": "leading-from-rest",
+  "route": "/leadership/article/",
+  "old": "Leading From Rest Instead of Anxiety",
+  "new": "How Do You Lead From Rest Instead of Anxiety?",
+  "query": "how to lead without anxiety",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "self-leadership",
+  "route": "/leadership/article/",
+  "old": "Leading Yourself Before You Lead Anyone Else",
+  "new": "What Is Self-Leadership and Why Does It Come First?",
+  "query": "what is self leadership for pastors",
+  "kicker": "Leading Yourself Before You Lead Anyone Else",
+  "keep": false
+ },
+ {
+  "slug": "protecting-your-marriage-in-ministry",
+  "route": "/leadership/article/",
+  "old": "Protecting the Marriage Ministry Tries to Eat",
+  "new": "How Do Pastors Keep Ministry From Eating a Marriage?",
+  "query": "pastor marriage ministry burnout",
+  "kicker": "Protecting the Marriage Ministry Tries to Eat",
+  "keep": false
+ },
+ {
+  "slug": "comparison-and-envy-in-ministry",
+  "route": "/leadership/article/",
+  "old": "The Comparison That Kills Ministry Joy",
+  "new": "How Do Pastors Fight Comparison and Envy in Ministry?",
+  "query": "comparison and envy in ministry",
+  "kicker": "The Comparison That Kills Ministry Joy",
+  "keep": false
+ },
+ {
+  "slug": "courage-in-leadership",
+  "route": "/leadership/article/",
+  "old": "The Courage to Say the Hard Thing",
+  "new": "How Does a Pastor Find Courage to Say Hard Things?",
+  "query": "courage in pastoral leadership",
+  "kicker": "The Courage to Say the Hard Thing",
+  "keep": false
+ },
+ {
+  "slug": "emotionally-healthy-leadership",
+  "route": "/leadership/article/",
+  "old": "The Emotionally Healthy Leader",
+  "new": "What Is Emotionally Healthy Leadership in Ministry?",
+  "query": "emotionally healthy leadership",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "humility-in-leadership",
+  "route": "/leadership/article/",
+  "old": "The Humility That Leadership Requires",
+  "new": "What Does Real Humility in Christian Leadership Look Like?",
+  "query": "humility in christian leadership",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-leaders-prayer-life",
+  "route": "/leadership/article/",
+  "old": "The Leader Who Does Not Pray",
+  "new": "Why Does a Pastor's Prayer Life Disappear First?",
+  "query": "pastor prayer life",
+  "kicker": "The Leader Who Does Not Pray",
+  "keep": false
+ },
+ {
+  "slug": "the-loneliness-of-leadership",
+  "route": "/leadership/article/",
+  "old": "The Loneliness of Leadership and What to Do With It",
+  "new": "Why Are Pastors So Lonely, and What Actually Helps?",
+  "query": "pastoral loneliness and ministry isolation",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "raising-leaders",
+  "route": "/leadership/article/",
+  "old": "Doing Yourself Out of a Job",
+  "new": "How Do You Raise Up Leaders Who Replace You?",
+  "query": "raising leaders in the church",
+  "kicker": "Doing Yourself Out of a Job",
+  "keep": false
+ },
+ {
+  "slug": "leading-staff",
+  "route": "/leadership/article/",
+  "old": "Leading Paid Staff",
+  "new": "How Do You Lead Church Staff You Also Pastor?",
+  "query": "leading church staff",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "ministry-teams",
+  "route": "/leadership/article/",
+  "old": "Recruiting and Releasing Volunteers",
+  "new": "How Do You Recruit and Equip Church Volunteers?",
+  "query": "recruiting church volunteers",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-deacons",
+  "route": "/leadership/article/",
+  "old": "The Office of Deacon",
+  "new": "What Does the Bible Say About Deacons in the Church?",
+  "query": "office of deacon in the bible",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-elders",
+  "route": "/leadership/article/",
+  "old": "The Office of Elder",
+  "new": "What Is a Church Elder, and Why More Than One?",
+  "query": "office of elder plurality of elders",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "evangelism-for-ordinary-christians",
+  "route": "/leadership/article/",
+  "old": "Evangelism for Ordinary Christians",
+  "new": "How Do You Share Your Faith With a Skeptical Neighbor?",
+  "query": "how to share your faith with a skeptic",
+  "kicker": "Evangelism for Ordinary Christians",
+  "keep": false
+ },
+ {
+  "slug": "shepherding-as-protection",
+  "route": "/leadership/article/",
+  "old": "Guarding the Flock: The Pastor as Protector",
+  "new": "How Does a Pastor Guard the Church From False Teaching?",
+  "query": "protecting the church from false teaching",
+  "kicker": "Guarding the Flock: The Pastor as Protector",
+  "keep": false
+ },
+ {
+  "slug": "ministry-with-women",
+  "route": "/leadership/article/",
+  "old": "Ministry With and For the Women of the Church",
+  "new": "How Should a Male Pastor Minister to Women Well?",
+  "query": "male pastor ministering to women",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "counseling-and-when-to-refer",
+  "route": "/leadership/article/",
+  "old": "Pastoral Counseling and Knowing When to Refer",
+  "new": "When Should a Pastor Refer Someone to a Counselor?",
+  "query": "when should a pastor refer to a counselor",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "discipling-men",
+  "route": "/leadership/article/",
+  "old": "Reaching and Discipling Men in the Church",
+  "new": "Why Do Men Leave the Church, and How Do You Reach Them?",
+  "query": "why men leave the church",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "recovering-hospitality",
+  "route": "/leadership/article/",
+  "old": "Recovering the Lost Art of Hospitality",
+  "new": "What Does Biblical Hospitality Actually Require?",
+  "query": "biblical hospitality",
+  "kicker": "Recovering the Lost Art of Hospitality",
+  "keep": false
+ },
+ {
+  "slug": "the-church-and-the-poor",
+  "route": "/leadership/article/",
+  "old": "The Church and the Poor at the Door",
+  "new": "How Should a Church Serve the Poor With Dignity?",
+  "query": "how should the church help the poor",
+  "kicker": "The Church and the Poor at the Door",
+  "keep": false
+ },
+ {
+  "slug": "lasting-youth-ministry",
+  "route": "/leadership/article/",
+  "old": "Youth Ministry That Produces Lasting Faith",
+  "new": "How Does Youth Ministry Form Faith That Survives College?",
+  "query": "youth ministry faith that lasts",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "sermon-prep",
+  "route": "/leadership/article/",
+  "old": "From the Text to the Sermon",
+  "new": "How Do You Prepare a Sermon, Step by Step?",
+  "query": "how to prepare a sermon",
+  "kicker": "From the Text to the Sermon",
+  "keep": false
+ },
+ {
+  "slug": "the-preaching-calendar",
+  "route": "/leadership/article/",
+  "old": "Planning a Year of Preaching",
+  "new": "How Do You Plan a Year of Preaching and Sermon Series?",
+  "query": "planning a preaching calendar",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "preaching-that-lands",
+  "route": "/leadership/article/",
+  "old": "Preaching That Lands",
+  "new": "How Do You Preach a Sermon That Actually Lands?",
+  "query": "sermon delivery and application",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "using-illustrations",
+  "route": "/leadership/article/",
+  "old": "The Window and the Wall",
+  "new": "How Do You Find and Use Sermon Illustrations?",
+  "query": "how to use sermon illustrations",
+  "kicker": "The Window and the Wall",
+  "keep": false
+ },
+ {
+  "slug": "expository-vs-topical",
+  "route": "/leadership/article/",
+  "old": "Expository or Topical: Which Should You Preach",
+  "new": "Expository vs. Topical Preaching: Which Should You Preach?",
+  "query": "expository vs topical preaching",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "sermon-application",
+  "route": "/leadership/article/",
+  "old": "Moving From the Text to Real Application",
+  "new": "How Do You Move From the Text to Sermon Application?",
+  "query": "sermon application",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "preaching-with-or-without-notes",
+  "route": "/leadership/article/",
+  "old": "Notes, Manuscript, or Nothing: How to Carry a Sermon",
+  "new": "Should You Preach From a Manuscript, Notes, or Nothing?",
+  "query": "preaching with or without notes",
+  "kicker": "Notes, Manuscript, or Nothing: How to Carry a Sermon",
+  "keep": false
+ },
+ {
+  "slug": "preaching-and-prayer",
+  "route": "/leadership/article/",
+  "old": "The Praying That Has to Happen Before the Preaching",
+  "new": "How Does Prayer Belong in Sermon Preparation?",
+  "query": "prayer and sermon preparation",
+  "kicker": "The Praying That Has to Happen Before the Preaching",
+  "keep": false
+ },
+ {
+  "slug": "character-over-gifting",
+  "route": "/leadership/article/",
+  "old": "Character Outlasts Gifting",
+  "new": "Why Does Character Matter More Than Gifting in Ministry?",
+  "query": "character over gifting in ministry",
+  "kicker": "Character Outlasts Gifting",
+  "keep": false
+ },
+ {
+  "slug": "pride-and-the-platform",
+  "route": "/leadership/article/",
+  "old": "Pride and the Platform",
+  "new": "How Does the Pulpit Feed a Pastor's Pride?",
+  "query": "pride in ministry and the platform",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-call",
+  "route": "/leadership/article/",
+  "old": "The Call and the Ambition",
+  "new": "Is It a Call to Ministry or Just Ambition?",
+  "query": "call to ministry or ambition",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-secret-life",
+  "route": "/leadership/article/",
+  "old": "The Life No One Sees",
+  "new": "Why Does a Pastor's Private Life Decide His Public One?",
+  "query": "pastor private life and integrity",
+  "kicker": "The Life No One Sees",
+  "keep": false
+ },
+ {
+  "slug": "the-leaders-burnout",
+  "route": "/leadership/article/",
+  "old": "The Tired Shepherd",
+  "new": "What Causes Pastor Burnout, and How Do You Recover?",
+  "query": "pastor burnout causes and recovery",
+  "kicker": "The Tired Shepherd",
+  "keep": false
+ },
+ {
+  "slug": "pastoral-counseling",
+  "route": "/leadership/article/",
+  "old": "Counseling and Its Limits",
+  "new": "What Is the Difference Between a Pastor and a Therapist?",
+  "query": "pastoral counseling vs therapy",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-wedding",
+  "route": "/leadership/article/",
+  "old": "Marrying People Well",
+  "new": "How Should a Pastor Prepare a Couple for Marriage?",
+  "query": "premarital counseling before a wedding",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-funeral",
+  "route": "/leadership/article/",
+  "old": "Standing at the Grave",
+  "new": "How Do You Officiate a Funeral and Preach to Grief?",
+  "query": "how to officiate a funeral",
+  "kicker": "Standing at the Grave",
+  "keep": false
+ },
+ {
+  "slug": "the-ministry-of-presence",
+  "route": "/leadership/article/",
+  "old": "The Ministry of Presence",
+  "new": "Why Does Pastoral Visitation Still Matter?",
+  "query": "pastoral visitation and hospital visits",
+  "kicker": "The Ministry of Presence",
+  "keep": false
+ },
+ {
+  "slug": "church-government",
+  "route": "/leadership/formation/",
+  "old": "Church Government: Who Decides, and By What Right",
+  "new": "What Are the Four Types of Church Government?",
+  "query": "types of church government polity",
+  "kicker": "Church Government: Who Decides, and By What Right",
+  "keep": false
+ },
+ {
+  "slug": "men-women-and-the-office",
+  "route": "/leadership/formation/",
+  "old": "Men, Women, and the Office: The Debate the Church Cannot Shout Past",
+  "new": "Can Women Be Pastors? Complementarian vs. Egalitarian",
+  "query": "can women be pastors complementarian vs egalitarian",
+  "kicker": "Men, Women, and the Office: The Debate the Church Cannot Shout Past",
+  "keep": false
+ },
+ {
+  "slug": "the-call-and-its-testing",
+  "route": "/leadership/formation/",
+  "old": "The Call and Its Testing",
+  "new": "How Do You Know If You Are Called to Ministry?",
+  "query": "how to know if you are called to ministry",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "burnout-and-the-theology-of-rest",
+  "route": "/leadership/formation/",
+  "old": "Burnout and the Theology of Rest",
+  "new": "What Does Scripture Say About Burnout and Sabbath?",
+  "query": "theology of rest and pastoral burnout",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-hidden-temptations-of-power",
+  "route": "/leadership/formation/",
+  "old": "The Hidden Temptations of Power",
+  "new": "How Does Power Corrupt Pastors and Christian Leaders?",
+  "query": "how power corrupts pastors",
+  "kicker": "The Hidden Temptations of Power",
+  "keep": false
+ },
+ {
+  "slug": "the-leaders-marriage-and-family",
+  "route": "/leadership/formation/",
+  "old": "The Leader's Marriage and Family",
+  "new": "How Do You Pastor a Church Without Losing Your Family?",
+  "query": "pastor's family and ministry",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "aging-and-the-body",
+  "route": "/life/",
+  "old": "Aging and the Body: Finitude and Dignity",
+  "new": "What Is the Christian View of Aging and the Body?",
+  "query": "christian view of aging",
+  "kicker": "Aging and the Body: Finitude and Dignity",
+  "keep": false
+ },
+ {
+  "slug": "food-and-the-table",
+  "route": "/life/",
+  "old": "Food and the Table: Feasting, Fasting, and the Hungry Heart",
+  "new": "What Does the Bible Say About Food, Feasting, and Fasting?",
+  "query": "bible on food feasting and fasting",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "health-illness-and-pain",
+  "route": "/life/",
+  "old": "Health, Illness, and the Suffering Body",
+  "new": "How Should Christians Think About Sickness and Health?",
+  "query": "christian view of sickness and health",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "rest-and-the-sabbath",
+  "route": "/life/",
+  "old": "Rest and the Sabbath: The Unforced Rhythms of Grace",
+  "new": "What Is Sabbath Rest, and How Do You Keep It?",
+  "query": "what is sabbath rest",
+  "kicker": "Rest and the Sabbath: The Unforced Rhythms of Grace",
+  "keep": false
+ },
+ {
+  "slug": "sex-and-the-body",
+  "route": "/life/",
+  "old": "Sex and the Body: A Theology of Desire",
+  "new": "What Does Christianity Actually Teach About Sex?",
+  "query": "christian theology of sex and desire",
+  "kicker": "Sex and the Body: A Theology of Desire",
+  "keep": false
+ },
+ {
+  "slug": "sleep-and-limits",
+  "route": "/life/",
+  "old": "Sleep and the Gift of Limits",
+  "new": "What Does Sleep Teach Us About Trusting God?",
+  "query": "christian view of sleep and limits",
+  "kicker": "Sleep and the Gift of Limits",
+  "keep": false
+ },
+ {
+  "slug": "the-body-and-the-rhythms",
+  "route": "/life/",
+  "old": "The Body and the Rhythms",
+  "new": "What Is a Christian View of Sleep, Food, and Rest?",
+  "query": "christian view of the body and daily rhythms",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "caring-for-aging-parents",
+  "route": "/life/",
+  "old": "Caring for Aging Parents: Honor at the End",
+  "new": "How Do You Honor Aging Parents Who Need Care?",
+  "query": "caring for aging parents",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "conflict-and-reconciliation",
+  "route": "/life/",
+  "old": "Conflict and Reconciliation: The Ministry of Repair",
+  "new": "How Do You Handle Conflict and Truly Reconcile?",
+  "query": "conflict and reconciliation in relationships",
+  "kicker": "Conflict and Reconciliation: The Ministry of Repair",
+  "keep": false
+ },
+ {
+  "slug": "dating-and-discernment",
+  "route": "/life/",
+  "old": "Dating and Discernment: Wisdom Before the Covenant",
+  "new": "How Do You Date Wisely and Choose a Spouse?",
+  "query": "christian dating and choosing a spouse",
+  "kicker": "Dating and Discernment: Wisdom Before the Covenant",
+  "keep": false
+ },
+ {
+  "slug": "forgiveness-the-hardest-grace",
+  "route": "/life/",
+  "old": "Forgiveness: The Hardest Grace",
+  "new": "How Do You Forgive Someone Who Really Hurt You?",
+  "query": "how to forgive someone who hurt you",
+  "kicker": "Forgiveness: The Hardest Grace",
+  "keep": false
+ },
+ {
+  "slug": "friendship-against-isolation",
+  "route": "/life/",
+  "old": "Friendship Against Isolation",
+  "new": "Why Is It So Hard to Make Real Friends as an Adult?",
+  "query": "how to make real friends as an adult",
+  "kicker": "Friendship Against Isolation",
+  "keep": false
+ },
+ {
+  "slug": "infertility-and-childlessness",
+  "route": "/life/",
+  "old": "Infertility and Childlessness: The Ache of Empty Arms",
+  "new": "Where Is God in Infertility and Childlessness?",
+  "query": "infertility childlessness and faith",
+  "kicker": "Infertility and Childlessness: The Ache of Empty Arms",
+  "keep": false
+ },
+ {
+  "slug": "life-together-the-one-anothers",
+  "route": "/life/",
+  "old": "Life Together: The One Anothers and the Communal Faith",
+  "new": "What Are the One Another Commands in the Bible?",
+  "query": "one another commands in the new testament",
+  "kicker": "Life Together: The One Anothers and the Communal Faith",
+  "keep": false
+ },
+ {
+  "slug": "marriage-the-long-covenant",
+  "route": "/life/",
+  "old": "Marriage: The Long Covenant",
+  "new": "Why Do Marriages Drift Apart, and How Do You Stop It?",
+  "query": "why marriages drift apart",
+  "kicker": "Marriage: The Long Covenant",
+  "keep": false
+ },
+ {
+  "slug": "raising-children-in-grace",
+  "route": "/life/",
+  "old": "Raising Children in Grace",
+  "new": "How Do You Discipline Children With Grace?",
+  "query": "christian parenting discipline and grace",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "singleness-and-the-full-life",
+  "route": "/life/",
+  "old": "Singleness and the Full Life",
+  "new": "Is Singleness a Calling or a Waiting Room?",
+  "query": "is singleness a calling",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "spiritual-friendship-and-the-long-walk",
+  "route": "/life/",
+  "old": "Spiritual Friendship and the Long Walk: Discipleship One to One",
+  "new": "How Do You Disciple One Person at a Time?",
+  "query": "how to disciple someone one on one",
+  "kicker": "Spiritual Friendship and the Long Walk",
+  "keep": false
+ },
+ {
+  "slug": "the-blended-family",
+  "route": "/life/",
+  "old": "The Blended Family: Grace in the Complex Household",
+  "new": "Blended Family Struggles: How Do You Make It Work?",
+  "query": "blended family struggles",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-church-as-family",
+  "route": "/life/",
+  "old": "The Church as Family: Belonging to the Body",
+  "new": "Why Does the Bible Call the Church a Family?",
+  "query": "why is the church called a family",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-home-and-the-family",
+  "route": "/life/",
+  "old": "The Home and the Family: Building a Household of Faith",
+  "new": "How Do You Build a Christian Home and Family?",
+  "query": "how to build a christian home",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-marriage-bed",
+  "route": "/life/",
+  "old": "The Marriage Bed: Intimacy Within the Covenant",
+  "new": "What Does the Bible Say About Sex in Marriage?",
+  "query": "what does the bible say about sex in marriage",
+  "kicker": "The Marriage Bed",
+  "keep": false
+ },
+ {
+  "slug": "the-wayward-child",
+  "route": "/life/",
+  "old": "The Wayward Child: When They Walk Away",
+  "new": "What Do You Do When Your Child Leaves the Faith?",
+  "query": "when your child leaves the faith",
+  "kicker": "The Wayward Child: When They Walk Away",
+  "keep": false
+ },
+ {
+  "slug": "anger-and-the-hot-heart",
+  "route": "/life/",
+  "old": "Anger and the Hot Heart",
+  "new": "Is Anger a Sin? What Scripture Actually Says",
+  "query": "is anger a sin",
+  "kicker": "Anger and the Hot Heart",
+  "keep": false
+ },
+ {
+  "slug": "contentment-against-envy",
+  "route": "/life/",
+  "old": "Contentment Against Envy",
+  "new": "How Do You Stop Envy and Learn Contentment?",
+  "query": "how to stop being envious and be content",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "desire-and-temptation",
+  "route": "/life/",
+  "old": "Desire and Temptation: The Disordered Want",
+  "new": "How Do You Fight Temptation and Disordered Desire?",
+  "query": "how to fight temptation and desire",
+  "kicker": "Desire and Temptation: The Disordered Want",
+  "keep": false
+ },
+ {
+  "slug": "identity-and-worth",
+  "route": "/life/",
+  "old": "Identity and Worth: Who You Actually Are",
+  "new": "Where Does Your Identity and Worth Come From?",
+  "query": "where does my identity and worth come from",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "pride-and-humility",
+  "route": "/life/",
+  "old": "Pride and Humility: The Root and Its Undoing",
+  "new": "Why Is Pride the Root of Every Other Sin?",
+  "query": "why is pride the root of all sin",
+  "kicker": "Pride and Humility: The Root and Its Undoing",
+  "keep": false
+ },
+ {
+  "slug": "shame-and-the-hiding-self",
+  "route": "/life/",
+  "old": "Shame and the Hiding Self",
+  "new": "What Is the Difference Between Guilt and Shame?",
+  "query": "difference between guilt and shame",
+  "kicker": "Shame and the Hiding Self",
+  "keep": false
+ },
+ {
+  "slug": "the-anxious-mind",
+  "route": "/life/",
+  "old": "The Anxious Mind: Faith and Mental Health",
+  "new": "Is Anxiety a Sin? Faith and Mental Health",
+  "query": "is anxiety a sin christian",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-dry-season",
+  "route": "/life/",
+  "old": "The Dry Season: When God Feels Absent",
+  "new": "Why Does God Feel So Far Away When You Pray?",
+  "query": "why does god feel so far away",
+  "kicker": "The Dry Season: When God Feels Absent",
+  "keep": false
+ },
+ {
+  "slug": "the-heavy-mind",
+  "route": "/life/",
+  "old": "The Heavy Mind: Faith and Depression",
+  "new": "What Does the Bible Say About Depression?",
+  "query": "what does the bible say about depression",
+  "kicker": "The Heavy Mind",
+  "keep": false
+ },
+ {
+  "slug": "baptism-and-the-new-life",
+  "route": "/life/",
+  "old": "Baptism and the New Life",
+  "new": "What Does Baptism Mean, and Why Does It Matter?",
+  "query": "what does baptism mean",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "church-membership-and-commitment",
+  "route": "/life/",
+  "old": "Church Membership and the Vow to Stay",
+  "new": "Why Does Church Membership Still Matter?",
+  "query": "why is church membership important",
+  "kicker": "Church Membership and the Vow to Stay",
+  "keep": false
+ },
+ {
+  "slug": "discipleship-following-jesus",
+  "route": "/life/",
+  "old": "Discipleship: The Long Apprenticeship to Jesus",
+  "new": "What Does It Mean to Be a Disciple of Jesus?",
+  "query": "what does it mean to be a disciple of jesus",
+  "kicker": "Discipleship: The Long Apprenticeship to Jesus",
+  "keep": false
+ },
+ {
+  "slug": "making-disciples-at-the-table",
+  "route": "/life/",
+  "old": "Making Disciples at the Table: Discipleship the Way Jesus Did It",
+  "new": "How Did Jesus Make Disciples Without a Program?",
+  "query": "how did jesus make disciples",
+  "kicker": "Making Disciples at the Table",
+  "keep": false
+ },
+ {
+  "slug": "the-integrated-life",
+  "route": "/life/",
+  "old": "The Integrated Life: Refusing the Sacred and Secular Divide",
+  "new": "How Do You Live Your Faith on Monday, Not Just Sunday?",
+  "query": "how to live your faith in everyday life",
+  "kicker": "The Integrated Life",
+  "keep": false
+ },
+ {
+  "slug": "the-living-room-and-the-ordinary-disciple",
+  "route": "/life/",
+  "old": "The Living Room and the Ordinary Disciple: Making Disciples Without a Program",
+  "new": "Can an Ordinary Christian Make Disciples?",
+  "query": "can an ordinary christian make disciples",
+  "kicker": "The Living Room and the Ordinary Disciple",
+  "keep": false
+ },
+ {
+  "slug": "the-lords-supper-and-the-table",
+  "route": "/life/",
+  "old": "The Lord's Supper and the Table of Grace",
+  "new": "What Does the Lord's Supper Actually Mean?",
+  "query": "what does the lord's supper mean",
+  "kicker": "The Lord's Supper and the Table of Grace",
+  "keep": false
+ },
+ {
+  "slug": "the-story-we-live-in",
+  "route": "/life/",
+  "old": "The Story We Live In: Creation, Fall, Redemption, Restoration",
+  "new": "Creation, Fall, Redemption, Restoration: The Bible's Story",
+  "query": "creation fall redemption restoration",
+  "kicker": "The Story We Live In",
+  "keep": false
+ },
+ {
+  "slug": "time-and-the-examined-life",
+  "route": "/life/",
+  "old": "Time and the Examined Life",
+  "new": "How Should a Christian Spend the Time They Have?",
+  "query": "how should christians use their time",
+  "kicker": "Time and the Examined Life",
+  "keep": false
+ },
+ {
+  "slug": "wisdom-for-all-of-life",
+  "route": "/life/",
+  "old": "Wisdom for All of Life: Proverbs, Ecclesiastes, and the Skill of Living",
+  "new": "What Do Proverbs and Ecclesiastes Teach About Wisdom?",
+  "query": "what does proverbs teach about wisdom",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "consumer-faith-and-the-communal-church",
+  "route": "/life/",
+  "old": "Consumer Faith and the Communal Church: How We Forgot to Make Disciples",
+  "new": "Consumer Christianity: How Did We Stop Making Disciples?",
+  "query": "consumer christianity church",
+  "kicker": "Consumer Faith and the Communal Church",
+  "keep": false
+ },
+ {
+  "slug": "creation-and-our-keeping",
+  "route": "/life/",
+  "old": "Creation and Our Keeping: Tending the Garden",
+  "new": "What Does the Bible Say About Caring for Creation?",
+  "query": "what does the bible say about caring for creation",
+  "kicker": "Creation and Our Keeping: Tending the Garden",
+  "keep": false
+ },
+ {
+  "slug": "faith-and-politics",
+  "route": "/life/",
+  "old": "Faith and Politics: The Christian in the Public Square",
+  "new": "How Should a Christian Think About Politics?",
+  "query": "how should christians think about politics",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "justice-and-the-poor",
+  "route": "/life/",
+  "old": "Justice and the Poor: What the Whole Bible Says",
+  "new": "What Does the Bible Say About Justice and the Poor?",
+  "query": "what does the bible say about the poor",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "money-and-possessions-in-society",
+  "route": "/life/",
+  "old": "Money and Possessions in a Consumer Society",
+  "new": "How Do You Follow Jesus With Your Money?",
+  "query": "how to follow jesus with your money",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "technology-and-attention",
+  "route": "/life/",
+  "old": "Technology and Attention: The Formation of the Phone",
+  "new": "How Does Your Phone Shape Your Attention and Soul?",
+  "query": "how does your phone shape your soul",
+  "kicker": "Technology and Attention: The Formation of the Phone",
+  "keep": false
+ },
+ {
+  "slug": "the-common-good-and-citizenship",
+  "route": "/life/",
+  "old": "The Common Good and the Christian Citizen",
+  "new": "What Do Christians Owe the City They Live In?",
+  "query": "christians and the common good",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-neighbor-and-the-stranger",
+  "route": "/life/",
+  "old": "The Neighbor and the Stranger: Loving the People God Puts in Your Path",
+  "new": "Who Is My Neighbor? What Jesus Actually Meant",
+  "query": "who is my neighbor good samaritan",
+  "kicker": "The Neighbor and the Stranger",
+  "keep": false
+ },
+ {
+  "slug": "witness-without-weirdness",
+  "route": "/life/",
+  "old": "Witness Without Weirdness: The Ordinary Christian Among Neighbors",
+  "new": "How Do You Share Your Faith Without Being Pushy?",
+  "query": "how to share your faith without being pushy",
+  "kicker": "Witness Without Weirdness",
+  "keep": false
+ },
+ {
+  "slug": "addiction-and-the-long-road-back",
+  "route": "/life/",
+  "old": "Addiction and the Long Road Back",
+  "new": "Why Can't Willpower Alone Break an Addiction?",
+  "query": "why willpower does not break addiction",
+  "kicker": "Addiction and the Long Road Back",
+  "keep": false
+ },
+ {
+  "slug": "betrayal-and-broken-trust",
+  "route": "/life/",
+  "old": "Betrayal and Broken Trust",
+  "new": "How Do You Heal After Betrayal by Someone Close?",
+  "query": "how to deal with betrayal by someone you trusted",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "caring-for-the-dying",
+  "route": "/life/",
+  "old": "Caring for the Dying: The Ministry of Presence",
+  "new": "How Do You Sit With Someone Who Is Dying?",
+  "query": "how to be with someone who is dying",
+  "kicker": "Caring for the Dying: The Ministry of Presence",
+  "keep": false
+ },
+ {
+  "slug": "disability-and-the-different-body",
+  "route": "/life/",
+  "old": "Disability and the Different Body",
+  "new": "What Does the Church Owe People With Disabilities?",
+  "query": "christian view of disability and worth",
+  "kicker": "Disability and the Different Body",
+  "keep": false
+ },
+ {
+  "slug": "divorce-and-its-aftermath",
+  "route": "/life/",
+  "old": "Divorce and Its Aftermath",
+  "new": "How Do You Live as a Christian After Divorce?",
+  "query": "life after divorce as a christian",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "facing-death",
+  "route": "/life/",
+  "old": "Facing Death: The Last Enemy and the Sure Hope",
+  "new": "How Do Christians Face Death and the Fear of Dying?",
+  "query": "how to face death as a christian",
+  "kicker": "Facing Death: The Last Enemy and the Sure Hope",
+  "keep": false
+ },
+ {
+  "slug": "grief-and-loss",
+  "route": "/life/",
+  "old": "Grief and Loss",
+  "new": "What Does the Bible Say About Grief and Loss?",
+  "query": "what does the bible say about grief",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "suffering-and-the-silence-of-god",
+  "route": "/life/",
+  "old": "Suffering and the Silence of God",
+  "new": "Why Does God Allow Suffering and Stay Silent?",
+  "query": "why does god allow suffering",
+  "kicker": "Suffering and the Silence of God",
+  "keep": false
+ },
+ {
+  "slug": "the-empty-nest-and-midlife",
+  "route": "/life/",
+  "old": "The Empty Nest and Midlife: The Second Half",
+  "new": "Empty Nest and Midlife: What Do You Do Now?",
+  "query": "empty nest and midlife",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "waiting-and-unanswered-prayer",
+  "route": "/life/",
+  "old": "Waiting and Unanswered Prayer: The Closed Door",
+  "new": "What Do You Do When God Does Not Answer Prayer?",
+  "query": "what to do when god does not answer prayer",
+  "kicker": "Waiting and Unanswered Prayer: The Closed Door",
+  "keep": false
+ },
+ {
+  "slug": "ambition-and-rest",
+  "route": "/life/",
+  "old": "Ambition and Rest: Drive, Success, and the Hustle",
+  "new": "Is Ambition a Sin? Drive, Hustle, and Rest",
+  "query": "is ambition a sin",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "debt-and-provision",
+  "route": "/life/",
+  "old": "Debt and Provision: Daily Bread and the Anxious Heart",
+  "new": "What Does the Bible Say About Debt and Daily Bread?",
+  "query": "what does the bible say about debt",
+  "kicker": "Debt and Provision: Daily Bread and the Anxious Heart",
+  "keep": false
+ },
+ {
+  "slug": "generosity-and-the-open-hand",
+  "route": "/life/",
+  "old": "Generosity and the Open Hand",
+  "new": "Why Should Christians Give Their Money Away?",
+  "query": "why should christians give generously",
+  "kicker": "Generosity and the Open Hand",
+  "keep": false
+ },
+ {
+  "slug": "money-and-the-heart",
+  "route": "/life/",
+  "old": "Money and the Heart",
+  "new": "Why Did Jesus Treat Money as a Rival God?",
+  "query": "what did jesus say about money and mammon",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "retirement-and-the-last-third",
+  "route": "/life/",
+  "old": "Retirement and the Last Third of Life",
+  "new": "What Does the Bible Say About Retirement?",
+  "query": "what does the bible say about retirement",
+  "kicker": "Retirement and the Last Third of Life",
+  "keep": false
+ },
+ {
+  "slug": "success-and-failure",
+  "route": "/life/",
+  "old": "Success and Failure: Identity Beyond the Outcome",
+  "new": "Why Do We Measure Ourselves by Success and Failure?",
+  "query": "identity beyond success and failure",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "work-as-worship",
+  "route": "/life/",
+  "old": "Work as Worship: Vocation, Calling, and the Daily Grind",
+  "new": "What Does the Bible Say About Work and Calling?",
+  "query": "what does the bible say about work and calling",
+  "kicker": "Work as Worship",
+  "keep": false
+ },
+ {
+  "slug": "covenant-and-treaty",
+  "route": "/resources/context/",
+  "old": "Covenant: The Treaty Form Behind the Bible",
+  "new": "What Is a Biblical Covenant? The Ancient Treaty Form",
+  "query": "what is a biblical covenant",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-gods-of-the-nations",
+  "route": "/resources/context/",
+  "old": "Idolatry Made Sense: The Gods of Israel's Neighbors",
+  "new": "Why Did Israel's Neighbors Worship Idols?",
+  "query": "why did ancient people worship idols",
+  "kicker": "Idolatry Made Sense",
+  "keep": false
+ },
+ {
+  "slug": "wisdom-and-the-nations",
+  "route": "/resources/context/",
+  "old": "Israel's Wisdom Among Its Neighbors",
+  "new": "Did Proverbs Borrow From Egyptian Wisdom Writing?",
+  "query": "did proverbs borrow from egyptian wisdom",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "genesis-one-in-its-world",
+  "route": "/resources/context/",
+  "old": "Reading Genesis 1 in Its Ancient World",
+  "new": "Was Genesis 1 Answering Babylon, Not Modern Science?",
+  "query": "genesis 1 ancient near east context",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "torah-and-the-law-codes",
+  "route": "/resources/context/",
+  "old": "The Law of Moses Next to the Laws of Babylon",
+  "new": "How Is the Law of Moses Different From Hammurabi?",
+  "query": "law of moses vs code of hammurabi",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "purity-and-contagion",
+  "route": "/resources/context/",
+  "old": "Clean and Unclean: The Logic of Purity",
+  "new": "What Does Clean and Unclean Mean in Leviticus?",
+  "query": "what does clean and unclean mean in the bible",
+  "kicker": "Clean and Unclean: The Logic of Purity",
+  "keep": false
+ },
+ {
+  "slug": "honor-shame-vs-guilt",
+  "route": "/resources/context/",
+  "old": "Honor and Shame: The Operating System of the Biblical World",
+  "new": "What Is Honor and Shame Culture in the Bible?",
+  "query": "honor and shame culture in the bible",
+  "kicker": "Honor and Shame: The Operating System of the Biblical World",
+  "keep": false
+ },
+ {
+  "slug": "hospitality-and-the-stranger",
+  "route": "/resources/context/",
+  "old": "Hospitality: A Survival Institution, Not a Dinner Party",
+  "new": "What Did Hospitality Mean in the Ancient World?",
+  "query": "biblical hospitality in the ancient world",
+  "kicker": "Hospitality: A Survival Institution, Not a Dinner Party",
+  "keep": false
+ },
+ {
+  "slug": "collectivist-world-individualist-readers",
+  "route": "/resources/context/",
+  "old": "You (Plural): Reading a Collectivist Book with Individualist Eyes",
+  "new": "Is 'You' in the New Testament Singular or Plural?",
+  "query": "is you in the bible singular or plural",
+  "kicker": "You (Plural)",
+  "keep": false
+ },
+ {
+  "slug": "exile-not-empire",
+  "route": "/resources/context/",
+  "old": "Exile, Not Empire: The Posture of God's People",
+  "new": "What Does It Mean That Christians Are Exiles?",
+  "query": "what does it mean that christians are exiles",
+  "kicker": "Exile, Not Empire",
+  "keep": false
+ },
+ {
+  "slug": "what-justice-meant",
+  "route": "/resources/context/",
+  "old": "Justice Before Our Debates: Mishpat and Tsedaqah",
+  "new": "What Does Justice Mean in the Bible? Mishpat and Tsedaqah",
+  "query": "what does justice mean in the bible",
+  "kicker": "Justice Before Our Debates",
+  "keep": false
+ },
+ {
+  "slug": "the-bible-is-not-an-american-book",
+  "route": "/resources/context/",
+  "old": "The Bible Is Not an American Book",
+  "new": "Is the Bible an American Book? What Its History Shows",
+  "query": "is the bible an american book",
+  "kicker": "The Bible Is Not an American Book",
+  "keep": false
+ },
+ {
+  "slug": "the-kingdom-is-not-a-platform",
+  "route": "/resources/context/",
+  "old": "The Kingdom Is Not a Party Platform",
+  "new": "Does the Kingdom of God Belong to a Political Party?",
+  "query": "is the kingdom of god political",
+  "kicker": "The Kingdom Is Not a Party Platform",
+  "keep": false
+ },
+ {
+  "slug": "left-lens-right-lens",
+  "route": "/resources/context/",
+  "old": "The Left Lens and the Right Lens",
+  "new": "Does Your Politics Decide How You Read the Bible?",
+  "query": "how politics shapes how we read the bible",
+  "kicker": "The Left Lens and the Right Lens",
+  "keep": false
+ },
+ {
+  "slug": "money-texts-we-explain-away",
+  "route": "/resources/context/",
+  "old": "The Money Texts We Have Learned Not to See",
+  "new": "What Does the Bible Say About Wealth and the Poor?",
+  "query": "what does the bible say about wealth and the poor",
+  "kicker": "The Money Texts We Have Learned Not to See",
+  "keep": false
+ },
+ {
+  "slug": "temple-and-synagogue",
+  "route": "/resources/context/",
+  "old": "Temple, Synagogue, and the Shape of Jewish Life",
+  "new": "What Was the Difference Between Temple and Synagogue?",
+  "query": "difference between the temple and the synagogue",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "septuagint-and-scripture",
+  "route": "/resources/context/",
+  "old": "The Bible the Apostles Carried",
+  "new": "What Is the Septuagint, and Why Does It Matter?",
+  "query": "what is the septuagint",
+  "kicker": "The Bible the Apostles Carried",
+  "keep": false
+ },
+ {
+  "slug": "between-the-testaments",
+  "route": "/resources/context/",
+  "old": "The Four Hundred Years Between the Testaments",
+  "new": "What Happened Between the Old and New Testaments?",
+  "query": "what happened between the old and new testaments",
+  "kicker": "The Four Hundred Years Between the Testaments",
+  "keep": false
+ },
+ {
+  "slug": "honor-status-and-the-cross",
+  "route": "/resources/context/",
+  "old": "Crucifixion: The Word Decent People Did Not Say",
+  "new": "Why Was Crucifixion So Shameful in the Roman World?",
+  "query": "why was crucifixion so shameful",
+  "kicker": "The Word Decent People Did Not Say",
+  "keep": false
+ },
+ {
+  "slug": "gospel-against-empire",
+  "route": "/resources/context/",
+  "old": "Gospel, Lord, Savior: Caesar's Words in Christian Mouths",
+  "new": "What Did Gospel and Lord Mean Under Caesar?",
+  "query": "what did gospel and lord mean in the roman empire",
+  "kicker": "Caesar's Words in Christian Mouths",
+  "keep": false
+ },
+ {
+  "slug": "patronage-and-grace",
+  "route": "/resources/context/",
+  "old": "Patronage: The Economy Behind Grace",
+  "new": "What Did Grace Mean in a World Built on Patronage?",
+  "query": "what did grace mean in the roman world",
+  "kicker": "The Economy Behind Grace",
+  "keep": false
+ },
+ {
+  "slug": "the-cities-of-paul",
+  "route": "/resources/context/",
+  "old": "The Cities Paul Wrote To",
+  "new": "Which Cities Did Paul Write To? Corinth, Ephesus, Rome",
+  "query": "what cities did paul write to",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "household-codes-in-context",
+  "route": "/resources/context/",
+  "old": "The Household Codes in Their World",
+  "new": "What Are the Household Codes in Ephesians and Colossians?",
+  "query": "what are the household codes in the bible",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "miracles-and-the-ancient-mind",
+  "route": "/resources/context/",
+  "old": "Miracles and the Ancient Mind",
+  "new": "Were Ancient People Gullible About Miracles?",
+  "query": "were ancient people gullible about miracles",
+  "kicker": "Miracles and the Ancient Mind",
+  "keep": false
+ },
+ {
+  "slug": "the-slavery-texts",
+  "route": "/resources/context/",
+  "old": "The Slavery Texts",
+  "new": "What Does the Bible Actually Say About Slavery?",
+  "query": "what does the bible say about slavery",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-violence-of-the-old-testament",
+  "route": "/resources/context/",
+  "old": "The Violence of the Old Testament",
+  "new": "Why Is the Old Testament So Violent? An Honest Look",
+  "query": "why is the old testament so violent",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "women-in-the-ancient-world",
+  "route": "/resources/context/",
+  "old": "Women in the Ancient World",
+  "new": "How Did the Bible Treat Women Compared to Its World?",
+  "query": "how the bible treated women in the ancient world",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "church-and-state",
+  "route": "/theology/doctrine/",
+  "old": "The Church and the State",
+  "new": "How Should the Church Relate to the State? Five Views",
+  "query": "christian views on church and state",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "creation",
+  "route": "/theology/doctrine/",
+  "old": "Creation and Providence",
+  "new": "What Do Christians Believe About Creation and Providence?",
+  "query": "what do christians believe about creation",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "divine-attributes",
+  "route": "/theology/doctrine/",
+  "old": "The Attributes of God",
+  "new": "What Are the Attributes of God? Classical Theism Explained",
+  "query": "what are the attributes of god",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "holy-spirit",
+  "route": "/theology/doctrine/",
+  "old": "The Holy Spirit and His Gifts",
+  "new": "Who Is the Holy Spirit, and Do His Gifts Continue?",
+  "query": "do the gifts of the holy spirit continue today",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "inerrancy",
+  "route": "/theology/doctrine/",
+  "old": "Inerrancy and Its Spectrum",
+  "new": "What Is Biblical Inerrancy? The Spectrum of Views",
+  "query": "what is biblical inerrancy",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "origins",
+  "route": "/theology/doctrine/",
+  "old": "The Origins Debate",
+  "new": "How Should Christians Read Genesis 1? Four Views",
+  "query": "how should christians read genesis 1",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "problem-of-evil",
+  "route": "/theology/doctrine/",
+  "old": "The Problem of Evil",
+  "new": "Why Does God Allow Evil and Suffering?",
+  "query": "why does god allow evil and suffering",
+  "kicker": "The Problem of Evil",
+  "keep": false
+ },
+ {
+  "slug": "providence",
+  "route": "/theology/doctrine/",
+  "old": "Providence",
+  "new": "What Is Divine Providence? How God Governs All Things",
+  "query": "what is the doctrine of providence",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "sacraments",
+  "route": "/theology/doctrine/",
+  "old": "The Sacraments: Baptism and the Lord's Supper",
+  "new": "What Are the Sacraments? Baptism and the Lord's Supper",
+  "query": "what are the sacraments",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "sin",
+  "route": "/theology/doctrine/",
+  "old": "Sin and the Fall",
+  "new": "What Is Original Sin? Three Christian Traditions",
+  "query": "what is original sin",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "sovereignty-and-freedom",
+  "route": "/theology/doctrine/",
+  "old": "Sovereignty and Human Freedom",
+  "new": "How Can God Be Sovereign and Humans Still Be Free?",
+  "query": "how can god be sovereign and man free",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "theodicy",
+  "route": "/theology/doctrine/",
+  "old": "Theodicies Steelmanned",
+  "new": "What Is a Theodicy? Five Answers to the Problem of Evil",
+  "query": "what is a theodicy",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "trinity",
+  "route": "/theology/doctrine/",
+  "old": "The Trinity: One God, Three Persons",
+  "new": "What Is the Trinity? One God in Three Persons",
+  "query": "what is the trinity",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-poor",
+  "route": "/justice/topic/",
+  "old": "The Poor at the Gate",
+  "new": "What Does the Bible Say About the Poor and Poverty?",
+  "query": "what does the bible say about the poor",
+  "kicker": "The Poor at the Gate",
+  "keep": false
+ },
+ {
+  "slug": "the-wage",
+  "route": "/justice/topic/",
+  "old": "The Wage and the Worker",
+  "new": "What Does the Bible Say About Wages and Workers?",
+  "query": "what does the bible say about wages and workers",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "the-vulnerable",
+  "route": "/justice/topic/",
+  "old": "The Least of These",
+  "new": "Who Are the Least of These? The Orphan and the Widow",
+  "query": "who are the least of these",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "unborn-and-edges",
+  "route": "/justice/topic/",
+  "old": "Life at Its Edges",
+  "new": "What Does a Consistent Ethic of Life Look Like?",
+  "query": "consistent ethic of life",
+  "kicker": "Life at Its Edges",
+  "keep": false
+ },
+ {
+  "slug": "abuse-and-vulnerable",
+  "route": "/justice/topic/",
+  "old": "The Abused and the Silence",
+  "new": "Why Do Churches Cover Up Abuse Instead of Stopping It?",
+  "query": "why do churches cover up abuse",
+  "kicker": "The Abused and the Silence",
+  "keep": false
+ },
+ {
+  "slug": "the-immigrant",
+  "route": "/justice/topic/",
+  "old": "The Foreigner Among You",
+  "new": "What Does the Bible Say About Immigrants and Strangers?",
+  "query": "what does the bible say about immigrants",
+  "kicker": "The Foreigner Among You",
+  "keep": false
+ },
+ {
+  "slug": "the-prisoner",
+  "route": "/justice/topic/",
+  "old": "The Prisoner and the Gate",
+  "new": "What Does the Bible Say About Prison and Punishment?",
+  "query": "what does the bible say about prison and punishment",
+  "kicker": "The Prisoner and the Gate",
+  "keep": false
+ },
+ {
+  "slug": "race-and-image",
+  "route": "/justice/topic/",
+  "old": "Race and the Image of God",
+  "new": "What Does the Bible Say About Race and Human Dignity?",
+  "query": "what does the bible say about race",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "creation-care",
+  "route": "/justice/topic/",
+  "old": "The Groaning Creation",
+  "new": "What Does the Bible Say About Caring for the Earth?",
+  "query": "what does the bible say about caring for the earth",
+  "kicker": "The Groaning Creation",
+  "keep": false
+ },
+ {
+  "slug": "systemic-sin",
+  "route": "/justice/topic/",
+  "old": "The Sin We Build Together",
+  "new": "Is Systemic Sin Biblical? Corporate and Structural Sin",
+  "query": "is systemic sin biblical",
+  "kicker": "The Sin We Build Together",
+  "keep": false
+ },
+ {
+  "slug": "outrage-machine",
+  "route": "/disruption/topic/",
+  "old": "The Outrage Machine",
+  "new": "Why Are Christians So Angry Online, and Who Profits?",
+  "query": "why are christians so angry online",
+  "kicker": "The Outrage Machine",
+  "keep": false
+ },
+ {
+  "slug": "consumer-comfort",
+  "route": "/disruption/topic/",
+  "old": "The Comfortable Captivity",
+  "new": "How Has Consumerism Shaped American Christianity?",
+  "query": "how consumerism shaped the church",
+  "kicker": "The Comfortable Captivity",
+  "keep": false
+ },
+ {
+  "slug": "therapeutic-gospel",
+  "route": "/disruption/topic/",
+  "old": "The Therapeutic Gospel",
+  "new": "What Is the Therapeutic Gospel? Faith as Self-Help",
+  "query": "what is the therapeutic gospel",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "moralistic-therapeutic-deism",
+  "route": "/disruption/topic/",
+  "old": "Moralistic Therapeutic Deism",
+  "new": "What Is Moralistic Therapeutic Deism? America's Folk Faith",
+  "query": "what is moralistic therapeutic deism",
+  "kicker": "",
+  "keep": false
+ },
+ {
+  "slug": "sexuality-and-body",
+  "route": "/disruption/topic/",
+  "old": "The Body and the Sexual Revolution",
+  "new": "What Does the Bible Say About Sex and the Body?",
+  "query": "what does the bible say about sex and the body",
+  "kicker": "The Body and the Sexual Revolution",
+  "keep": false
+ },
+ {
+  "slug": "power-and-nation",
+  "route": "/disruption/topic/",
+  "old": "The Cross and the Flag",
+  "new": "When Does Politics Become Idolatry for Christians?",
+  "query": "when does politics become idolatry",
+  "kicker": "The Cross and the Flag",
+  "keep": false
+ },
+ {
+  "slug": "christian-nation-myth",
+  "route": "/disruption/topic/",
+  "old": "The Myth of a Christian Nation",
+  "new": "Was America Founded as a Christian Nation?",
+  "query": "was america founded as a christian nation",
+  "kicker": "The Myth of a Christian Nation",
+  "keep": false
+ },
+ {
+  "slug": "prosperity-success",
+  "route": "/disruption/topic/",
+  "old": "The Gospel of Success",
+  "new": "What Is Wrong With the Prosperity Gospel?",
+  "query": "what is wrong with the prosperity gospel",
+  "kicker": "The Gospel of Success",
+  "keep": false
+ },
+ {
+  "slug": "celebrity-platform",
+  "route": "/disruption/topic/",
+  "old": "The Platform and the Pedestal",
+  "new": "Why Do So Many Celebrity Pastors Fall? Power and Platform",
+  "query": "why do celebrity pastors fall",
+  "kicker": "The Platform and the Pedestal",
+  "keep": false
+ },
+ {
+  "slug": "war-and-peace",
+  "route": "/disruption/topic/",
+  "old": "The Sword and the Plowshare",
+  "new": "Just War or Pacifism? What Christians Have Believed",
+  "query": "just war vs pacifism christian views",
+  "kicker": "The Sword and the Plowshare",
+  "keep": false
+ }
+]

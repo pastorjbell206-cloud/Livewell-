@@ -1,14 +1,29 @@
 {
   "slug": "the-blended-family",
-  "title": "The Blended Family: Grace in the Complex Household",
+  "title": "Blended Family Struggles: How Do You Make It Work?",
   "subtitle": "Two histories under one roof, two sets of grief, two ways of loading the dishwasher, and a child caught in the middle of loyalties no one chose. A Christian reckoning with remarriage, step-parenting, the household built from loss, and the slow grace that makes one family out of two.",
   "pillar": "The Home and Relationships",
   "connections": [
-    { "label": "Before the blending there was a breaking, and the wound under the new household has its own page.", "href": "/life/divorce-and-its-aftermath" },
-    { "label": "Marriage is hard enough once. Building one on the rubble of a first asks for the long covenant.", "href": "/life/marriage-the-long-covenant" },
-    { "label": "Step-parenting is parenting with the volume turned up and the trust turned down. Start here.", "href": "/life/raising-children-in-grace" },
-    { "label": "A blended family is grief management before it is anything else. Loss has its own page.", "href": "/life/grief-and-loss" },
-    { "label": "Forgiveness between two households, two exes, and two histories is the work that makes the home possible.", "href": "/life/forgiveness-the-hardest-grace" }
+    {
+      "label": "Before the blending there was a breaking, and the wound under the new household has its own page.",
+      "href": "/life/divorce-and-its-aftermath"
+    },
+    {
+      "label": "Marriage is hard enough once. Building one on the rubble of a first asks for the long covenant.",
+      "href": "/life/marriage-the-long-covenant"
+    },
+    {
+      "label": "Step-parenting is parenting with the volume turned up and the trust turned down. Start here.",
+      "href": "/life/raising-children-in-grace"
+    },
+    {
+      "label": "A blended family is grief management before it is anything else. Loss has its own page.",
+      "href": "/life/grief-and-loss"
+    },
+    {
+      "label": "Forgiveness between two households, two exes, and two histories is the work that makes the home possible.",
+      "href": "/life/forgiveness-the-hardest-grace"
+    }
   ],
   "parts": [
     {

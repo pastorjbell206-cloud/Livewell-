@@ -1,14 +1,29 @@
 {
   "slug": "success-and-failure",
-  "title": "Success and Failure: Identity Beyond the Outcome",
+  "title": "Why Do We Measure Ourselves by Success and Failure?",
   "subtitle": "Most of us are running a quiet audit on ourselves, keeping a private ledger of wins and losses and treating the total as a verdict on our worth. What Scripture says to the one who is winning and the one who is losing, and why the gospel is the only news that can survive both the promotion and the pink slip.",
   "pillar": "Work, Money, and Calling",
   "connections": [
-    { "label": "Identity and Worth", "href": "/life/identity-and-worth" },
-    { "label": "Work as Worship", "href": "/life/work-as-worship" },
-    { "label": "Shame and the Hiding Self", "href": "/life/shame-and-the-hiding-self" },
-    { "label": "When the Work Is Gone", "href": "/life/unemployment-and-the-lost-job" },
-    { "label": "The Anxious Mind", "href": "/life/the-anxious-mind" }
+    {
+      "label": "Identity and Worth",
+      "href": "/life/identity-and-worth"
+    },
+    {
+      "label": "Work as Worship",
+      "href": "/life/work-as-worship"
+    },
+    {
+      "label": "Shame and the Hiding Self",
+      "href": "/life/shame-and-the-hiding-self"
+    },
+    {
+      "label": "When the Work Is Gone",
+      "href": "/life/unemployment-and-the-lost-job"
+    },
+    {
+      "label": "The Anxious Mind",
+      "href": "/life/the-anxious-mind"
+    }
   ],
   "parts": [
     {

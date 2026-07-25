@@ -1,14 +1,29 @@
 {
   "slug": "the-common-good-and-citizenship",
-  "title": "The Common Good and the Christian Citizen",
+  "title": "What Do Christians Owe the City They Live In?",
   "subtitle": "What it means to be a citizen of an earthly city while belonging first to another. Augustine's two cities, the call to seek the welfare of the place where God has put you, the common good above the tribe, and a public faith that refuses to be captured by any party, on the left or the right.",
   "pillar": "The Life in the World",
   "connections": [
-    { "label": "Faith and Politics", "href": "/life/faith-and-politics" },
-    { "label": "Justice and the Poor", "href": "/life/justice-and-the-poor" },
-    { "label": "The Neighbor and the Stranger", "href": "/life/the-neighbor-and-the-stranger" },
-    { "label": "Creation and Our Keeping", "href": "/life/creation-and-our-keeping" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "Faith and Politics",
+      "href": "/life/faith-and-politics"
+    },
+    {
+      "label": "Justice and the Poor",
+      "href": "/life/justice-and-the-poor"
+    },
+    {
+      "label": "The Neighbor and the Stranger",
+      "href": "/life/the-neighbor-and-the-stranger"
+    },
+    {
+      "label": "Creation and Our Keeping",
+      "href": "/life/creation-and-our-keeping"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {

@@ -1,6 +1,6 @@
 {
   "slug": "consumer-comfort",
-  "title": "The Comfortable Captivity",
+  "title": "How Has Consumerism Shaped American Christianity?",
   "subtitle": "How consumerism, comfort, and the market have shaped the church more than the cross",
   "question": "We are quick to name the captivities we can see in other people. The tribe that votes the other way. The nation that flatters itself. The culture that has lost its way. But there is a captivity that does not announce itself, because it feels like rest. It feels like blessing. The question is whether the market has discipled us more deeply than the gospel, and whether we would even know it if it had.",
   "whyItMatters": "Most captivities arrive as force. This one arrives as comfort, which is why it is the hardest to repent of. A persecuted church knows its chains. A comfortable church mistakes its chains for furniture. We have built sanctuaries that function as showrooms, sermons that perform as self-help, and a faith calibrated to the felt needs of the religious consumer who can take his attendance elsewhere if the experience disappoints. We did not decide this in a council. We absorbed it the way a sponge absorbs water, slowly, without resistance, until the shape of the church matched the shape of the mall.",
@@ -24,10 +24,22 @@
   "theCost": "To break this captivity costs the one thing we are least willing to spend, which is comfort itself. It means treasure given away that could have been kept, status risked that could have been protected, a life measured by a cross instead of a balance sheet. The rich man went away grieving for a reason. The price was real.",
   "charge": "We will not be persecuted out of this one. No empire will come for the comfortable church, because the comfortable church threatens no empire. The chains are soft, and they are warm, and they are ours, and I am writing this from inside them. The question Jesus left hanging over the rich young ruler still hangs over us, unanswered, every Sunday, in every padded pew. He let the man walk away sad rather than follow him cheap. The text does not tell us whether the man ever came back. It does not tell us whether we will either.",
   "furtherReading": [
-    { "title": "The Cost of Discipleship", "author": "Dietrich Bonhoeffer" },
-    { "title": "Counterfeit Gods", "author": "Timothy Keller" },
-    { "title": "The Prophetic Imagination", "author": "Walter Brueggemann" },
-    { "title": "Desiring the Kingdom", "author": "James K. A. Smith" }
+    {
+      "title": "The Cost of Discipleship",
+      "author": "Dietrich Bonhoeffer"
+    },
+    {
+      "title": "Counterfeit Gods",
+      "author": "Timothy Keller"
+    },
+    {
+      "title": "The Prophetic Imagination",
+      "author": "Walter Brueggemann"
+    },
+    {
+      "title": "Desiring the Kingdom",
+      "author": "James K. A. Smith"
+    }
   ],
   "captureDetail": {
     "right": {
@@ -60,5 +72,6 @@
         "therapeutic affirmation culture"
       ]
     }
-  }
+  },
+  "kicker": "The Comfortable Captivity"
 }

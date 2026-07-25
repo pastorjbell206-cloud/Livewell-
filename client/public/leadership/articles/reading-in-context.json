@@ -1,6 +1,6 @@
 {
   "slug": "reading-in-context",
-  "title": "The First Rule of Bible Study Is Context",
+  "title": "Why Does Context Matter When Reading the Bible?",
   "subtitle": "Why reading Bible verses in context matters, and how to interpret a verse within its paragraph, its book, and the whole canon of Scripture",
   "kicker": "Exegesis",
   "group": "Exegesis and Bible Study",
@@ -43,8 +43,17 @@
     "2 Timothy 3:16-17"
   ],
   "furtherReading": [
-    { "title": "How to Read the Bible for All Its Worth", "author": "Gordon D. Fee and Douglas Stuart" },
-    { "title": "Knowing Scripture", "author": "R. C. Sproul" },
-    { "title": "Living by the Book", "author": "Howard G. Hendricks" }
+    {
+      "title": "How to Read the Bible for All Its Worth",
+      "author": "Gordon D. Fee and Douglas Stuart"
+    },
+    {
+      "title": "Knowing Scripture",
+      "author": "R. C. Sproul"
+    },
+    {
+      "title": "Living by the Book",
+      "author": "Howard G. Hendricks"
+    }
   ]
 }

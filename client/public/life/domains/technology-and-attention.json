@@ -1,14 +1,29 @@
 {
   "slug": "technology-and-attention",
-  "title": "Technology and Attention: The Formation of the Phone",
+  "title": "How Does Your Phone Shape Your Attention and Soul?",
   "subtitle": "The colonized mind, attention as a spiritual battleground, and the forming of a soul in the age of the feed. What the body, the screen, and the ancient practices of the church have to say about a generation whose deepest formation is happening in its hands, six hours a day, without consent.",
   "pillar": "The Life in the World",
   "connections": [
-    { "label": "The Anxious Mind", "href": "/life/the-anxious-mind" },
-    { "label": "Faith and Politics", "href": "/life/faith-and-politics" },
-    { "label": "The Body and the Rhythms", "href": "/life/the-body-and-the-rhythms" },
-    { "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" },
-    { "label": "The Whole Life Audit", "href": "/tools/life-audit" }
+    {
+      "label": "The Anxious Mind",
+      "href": "/life/the-anxious-mind"
+    },
+    {
+      "label": "Faith and Politics",
+      "href": "/life/faith-and-politics"
+    },
+    {
+      "label": "The Body and the Rhythms",
+      "href": "/life/the-body-and-the-rhythms"
+    },
+    {
+      "label": "Friendship Against Isolation",
+      "href": "/life/friendship-against-isolation"
+    },
+    {
+      "label": "The Whole Life Audit",
+      "href": "/tools/life-audit"
+    }
   ],
   "parts": [
     {
@@ -131,5 +146,6 @@
         }
       ]
     }
-  ]
+  ],
+  "kicker": "Technology and Attention: The Formation of the Phone"
 }

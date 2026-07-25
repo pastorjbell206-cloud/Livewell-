@@ -1,6 +1,6 @@
 {
   "slug": "between-the-testaments",
-  "title": "The Four Hundred Years Between the Testaments",
+  "title": "What Happened Between the Old and New Testaments?",
   "subtitle": "Your Bible has a blank page between Malachi and Matthew. Empires rose and fell on that page, and the world Jesus walked into was built there.",
   "kicker": "Second Temple",
   "group": "Second Temple Judaism",
@@ -42,9 +42,21 @@
     "John 10:22-23"
   ],
   "sources": [
-    { "title": "The New Testament and the People of God", "author": "N.T. Wright" },
-    { "title": "Judaism: Practice and Belief, 63 BCE-66 CE", "author": "E.P. Sanders" },
-    { "title": "Backgrounds of Early Christianity", "author": "Everett Ferguson" },
-    { "title": "The IVP Bible Background Commentary: New Testament", "author": "Craig S. Keener" }
+    {
+      "title": "The New Testament and the People of God",
+      "author": "N.T. Wright"
+    },
+    {
+      "title": "Judaism: Practice and Belief, 63 BCE-66 CE",
+      "author": "E.P. Sanders"
+    },
+    {
+      "title": "Backgrounds of Early Christianity",
+      "author": "Everett Ferguson"
+    },
+    {
+      "title": "The IVP Bible Background Commentary: New Testament",
+      "author": "Craig S. Keener"
+    }
   ]
 }

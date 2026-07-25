@@ -1,6 +1,6 @@
 {
   "slug": "pastoral-counseling",
-  "title": "Counseling and Its Limits",
+  "title": "What Is the Difference Between a Pastor and a Therapist?",
   "subtitle": "On soul care, the difference between a pastor and a therapist, and the wisdom to know when to refer",
   "kicker": "The Work of Ministry",
   "group": "The Work of Ministry",
@@ -43,8 +43,17 @@
     "Psalm 56:8"
   ],
   "furtherReading": [
-    { "title": "Side by Side", "author": "Edward T. Welch" },
-    { "title": "Grace for the Afflicted", "author": "Matthew S. Stanford" },
-    { "title": "The Wounded Healer", "author": "Henri J. M. Nouwen" }
+    {
+      "title": "Side by Side",
+      "author": "Edward T. Welch"
+    },
+    {
+      "title": "Grace for the Afflicted",
+      "author": "Matthew S. Stanford"
+    },
+    {
+      "title": "The Wounded Healer",
+      "author": "Henri J. M. Nouwen"
+    }
   ]
 }

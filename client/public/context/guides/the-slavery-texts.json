@@ -1,6 +1,6 @@
 {
   "slug": "the-slavery-texts",
-  "title": "The Slavery Texts",
+  "title": "What Does the Bible Actually Say About Slavery?",
   "subtitle": "Abolitionists and slaveholders carried the same Bible into the same century, and only one of them read it whole. What the texts regulated, what they outlawed, and how the church chose not to know.",
   "kicker": "Hard Questions",
   "group": "The Hard Questions",
@@ -36,11 +36,27 @@
       "body": "So what does context actually buy here? Not acquittal for the church. Nothing buys that. Centuries of baptized cruelty are part of Christian history, and a skeptic who holds them against us is handling the evidence correctly. I will not ask you to look away, because the prophets never did.\n\nWhat context buys is precision about where the corruption lived. The Atlantic trade was a kidnapping economy, and the Bible's own law calls kidnapping for sale a capital crime. The plantation declared human beings property forever, and the Bible's central letter on the subject calls a slave a brother and makes the word property impossible to keep saying. The men who quoted Scripture over the auction block were not reading it in context. They were reading it against itself, and the abolitionists, many of them former slaves, proved it with the same book in their hands.\n\nA book is fairly judged by what it says read whole, and a church is fairly judged by what it did. Read whole, the book sides with the man in chains. Too often, the church holding it did not. Both of those sentences are true. You will have to carry them together, and so will I."
     }
   ],
-  "keyTexts": ["Exodus 21:16", "Deuteronomy 23:15-16", "Philemon 1:15-16"],
+  "keyTexts": [
+    "Exodus 21:16",
+    "Deuteronomy 23:15-16",
+    "Philemon 1:15-16"
+  ],
   "sources": [
-    { "title": "The Civil War as a Theological Crisis", "author": "Mark A. Noll" },
-    { "title": "Is God a Moral Monster? Making Sense of the Old Testament God", "author": "Paul Copan" },
-    { "title": "The Lost World of the Torah: Law as Covenant and Wisdom in Ancient Context", "author": "John H. Walton and J. Harvey Walton" },
-    { "title": "Narrative of the Life of Frederick Douglass, an American Slave", "author": "Frederick Douglass" }
+    {
+      "title": "The Civil War as a Theological Crisis",
+      "author": "Mark A. Noll"
+    },
+    {
+      "title": "Is God a Moral Monster? Making Sense of the Old Testament God",
+      "author": "Paul Copan"
+    },
+    {
+      "title": "The Lost World of the Torah: Law as Covenant and Wisdom in Ancient Context",
+      "author": "John H. Walton and J. Harvey Walton"
+    },
+    {
+      "title": "Narrative of the Life of Frederick Douglass, an American Slave",
+      "author": "Frederick Douglass"
+    }
   ]
 }
