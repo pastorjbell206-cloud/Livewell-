@@ -23,29 +23,43 @@ The problems are not the design. They are the *consistency* of its application.
 
 ---
 
-## 1. The type scale is enforced in two places at once
+## 1. The type scale — WITHDRAWN, the first reading was wrong
 
-**Evidence:** 284 `h1`/`h2` headings size themselves with `clamp()`; **97 are hardcoded
-px**.
+**What I first claimed:** 284 `h1`/`h2` headings use `clamp()` while 97 are hardcoded px,
+so the scale is enforced in two places and the 97 should be swapped to tokens —
+"mechanical, low risk."
 
-Those 97 do not scale. On a phone they crowd the gutter; on a wide display they look
-undersized against neighbouring sections that grow. A reader moving between pages feels
-the site subtly change register for no reason. This is the single most visible
-inconsistency, because headings are the first thing the eye lands on.
+**What is actually true, after looking at them:** the 97 are almost all *component-level*
+headings, and they are correctly sized. Of the six fixed-size `h1`s, three are empty-state
+messages ("That book is not here yet") that should not render at 56px. The fixed `h2`s are
+card titles (`ToolsHub`), list-item titles (`TheologyExplorer`), quiz prompts
+(`TheologyQuiz`), and legal subsections (`Terms`).
 
-**Fix:** promote the clamp values already in use into named tokens — `--fs-display`,
-`--fs-h2`, `--fs-h3` — and replace the 97 fixed sizes with them. Mechanical, low risk,
-and it makes every future page correct by default.
+So the site's real convention is: **`clamp()` for headings that span the viewport, fixed px
+for headings inside a component.** That is a reasonable rule, not drift. Swapping the 97 to
+a section-heading token would have inflated card titles from 22px to 36px and broken those
+grids.
 
-## 2. Spacing drifts the same way
+**Revised recommendation:** leave the sizes alone. The only defect is that the convention is
+unwritten, so new pages have to guess. Worth naming — a `--fs-card-title` token and a line
+in the brand doc — but this is documentation, not a redesign, and it is not the "single most
+visible inconsistency." That claim was wrong.
 
-**Evidence:** 447 sections pad with `var(--s-*)` tokens; **133 use raw px**.
+## 2. Spacing — the scale is missing a step
 
-The section rhythm is the quiet thing that makes a long essay site feel composed. When a
-third of sections breathe on a different grid, pages feel assembled rather than designed —
-hard to name as a reader, easy to feel.
+**Evidence:** 447 sections pad with `var(--s-*)` tokens; 133 use raw px. But the dominant
+raw value is `80px`, used by **73 sections**, and 80px is exactly `5rem`.
 
-**Fix:** same treatment. Map the raw values to the nearest scale step and replace.
+The scale runs `--s-5:3rem`, `--s-6:4rem`, `--s-7:6rem`. **There is no 5rem step.** Those 73
+sections are not drifting away from the system; they are supplying a value the system does
+not offer. The same is true of `72px` (4.5rem) and `56px` (3.5rem).
+
+So "map to the nearest step" — my original advice — would have resized 73 section paddings
+by 20% and changed the vertical rhythm of a third of the site.
+
+**Revised fix:** add the missing steps (`5rem`, and probably `3.5rem`), then the raw values
+map exactly, with **zero visual change**. That is the genuinely mechanical version of this
+task. Low value, but real, and it stops the next person hardcoding for the same reason.
 
 ## 3. Hardcoded hex values now break a shipped feature — FIXED
 
@@ -113,13 +127,26 @@ and use those names everywhere. This is a copy change, not a build.
 
 ## What I would do, in order
 
-1. **Editorial variety on the top twenty pages** (#4). Highest visible payoff, lowest
-   risk, uses components that already exist.
-2. **Type scale tokens** (#1). Mechanical, and it stops the drift recurring.
-3. ~~**Hardcoded hex** (#3)~~ — done.
-4. **Spacing tokens** (#2). Same pass as #1.
-5. **Nav trim and the naming pass** (#5, #6). Both are decisions about words, so they want
-   the author's hand more than mine.
+1. **Editorial variety on the top twenty pages** (#4). Highest visible payoff, lowest risk,
+   uses components that already exist. This is now the only finding that would visibly
+   change how the site feels.
+2. ~~**Hardcoded hex** (#3)~~ — done. Twenty-one real dark-mode bugs.
+3. **Add the missing spacing steps** (#2). Zero visual change; stops the hardcoding.
+4. **Name the heading convention** (#1). A token and a doc line, not a redesign.
+5. **Nav trim and the naming pass** (#5, #6). Decisions about words, so they want the
+   author's hand more than mine.
 
-Items 1 through 4 are safe to execute and verify. Items 5 and 6 change what things are
-called, which is a voice decision.
+---
+
+## A correction worth recording
+
+Two of the six findings above — the type scale and the spacing — were **wrong on first
+reading**, and both were wrong the same way: I measured a pattern, saw it deviate from the
+tokens, and assumed deviation meant drift. Looking at what the code was actually doing
+showed the opposite. The fixed heading sizes are a sensible convention; the raw 80px
+paddings exist because the scale has no 5rem step.
+
+Acting on either as first written would have damaged the site — inflating ninety card
+titles, or shifting the vertical rhythm of seventy-three sections — while reporting it as
+routine cleanup. A measurement is not yet a finding. The count tells you where to look, not
+what is wrong.
