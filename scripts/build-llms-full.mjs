@@ -58,7 +58,6 @@ const SECTIONS = [
     },
   },
   { heading: "Read-Online Books", intro: "Full-length books, readable free online.", file: "client/public/books/index.json", key: "books", route: "/read/", desc: ["blurb", "subtitle"] },
-  { heading: "The Leadership Library", intro: "A working library for pastors and lay leaders.", file: "client/public/leadership/articles-index.json", key: "articles", route: "/leadership/article/", desc: ["blurb", "subtitle"] },
   { heading: "The Integrated Life", intro: "One undivided life before God: the inner life, the body, the home, work and money.", file: "client/public/life/domains-index.json", key: "domains", route: "/life/", desc: ["blurb", "pillar"] },
   { heading: "How-To Guides", intro: "Practical, honest guides for the ordinary work of following Jesus.", file: "client/public/howtos/index.json", key: "articles", route: "/how-tos/", desc: ["excerpt"] },
   { heading: "Study Guides", intro: "Session-by-session guides for individuals and small groups.", file: "client/public/studyguides/index.json", key: "guides", route: "/studyguides/", desc: ["blurb", "eyebrow"] },

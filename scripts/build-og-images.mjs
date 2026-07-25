@@ -3,7 +3,7 @@
  * build-og-images.mjs
  *
  * Generates a branded 1200x630 PNG share image per file-driven library page,
- * so the leadership articles, context guides, life domains, formation topics,
+ * so the context guides, life domains,
  * creeds, history essays, and study-guide toolkits each unfurl with their own
  * title instead of the single og-default.png. Output: client/public/og/<key>.png
  * where <key> mirrors the route (e.g. resources-context-the-slavery-texts.png).
@@ -29,9 +29,7 @@ const MUTED = "rgba(245,240,230,0.55)";
 
 // Each source maps a manifest to { key prefix, eyebrow, fields }.
 const SOURCES = [
-  { file: "client/public/leadership/articles-index.json", key: "articles", prefix: "leadership-article", eyebrow: "Leadership Formation" },
   { file: "client/public/context/guides-index.json", key: "guides", prefix: "resources-context", eyebrow: "Reading Scripture in Context" },
-  { file: "client/public/leadership/formation-index.json", key: "topics", prefix: "leadership-formation", eyebrow: "Leadership Formation" },
   { file: "client/public/life/domains-index.json", key: "domains", prefix: "life", eyebrow: "Integrated Life" },
   { file: "client/public/creeds/documents-index.json", key: "documents", prefix: "resources-creeds", eyebrow: "Creeds and Confessions" },
   { file: "client/public/history/essays-index.json", key: "essays", prefix: "theology-history", eyebrow: "Church History" },
