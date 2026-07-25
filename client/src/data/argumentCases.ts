@@ -542,7 +542,190 @@ const JESUS: ArgumentCase = {
     "So here is the whole of it. The great-teacher verdict is the one the historical Jesus makes hardest to hold, because the wisdom you admire and the claims you want to skip come from the same mouth, early and unembellished, and were worshiped as divine by the very people least likely to invent it. You can still conclude he was a remarkable, mistaken man, and be welcome to keep reading here. I only wanted you to notice that the safe verdict is the one option he took off the table himself.",
 };
 
-export const ARGUMENT_CASES: ArgumentCase[] = [RESURRECTION, EVIL, GOSPELS, JESUS, HELL, MEANING];
+const WISHFUL: ArgumentCase = {
+  slug: "wishful",
+  title: "Is faith just wishful thinking?",
+  kicker: "The case, one move at a time",
+  intro:
+    "This one I have to answer against myself, because for years I made it, and I made it well. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what it does not settle. You can walk away unconvinced at any point.",
+  published: true,
+  steps: [
+    {
+      id: "concede",
+      move: "Start by granting it, because a great deal of faith is exactly what the objection says. Religion can be a crutch, and it constantly is for people who make it one. Much of what passes for belief is a god assembled out of a person's fears and preferences, warm where they want warmth and silent where they want silence. If your argument is that some faith is wish-fulfillment, you are not wrong. You are describing my inbox.",
+      objections: [
+        {
+          label: "Feuerbach and Freud already explained the whole thing.",
+          response:
+            "They gave the suspicion its spine, and they are worth taking seriously. Feuerbach in 1841 said God is the best of human nature projected onto the sky. Freud in 1927 said God is the exalted cosmic father the frightened child never stopped wanting. Grant both at full strength. The trouble is what comes next, because the argument quietly slides from where a belief came from to whether it is true, and those are not the same question at all.",
+        },
+      ],
+      grants: "This step concedes that projection is real and common. It has not yet shown that belief in God is only projection.",
+    },
+    {
+      id: "genetic",
+      move: "So name the move under the objection, because it is a known fault. It is the genetic fallacy: explaining why someone holds a belief tells you nothing about whether the belief is true. A frightened man believes the shore is close because he needs it to be, and the shore may also be close. His fear does not move the coastline.",
+      objections: [
+        {
+          label: "But the emotional need is obvious, so the belief is suspect.",
+          response:
+            "Then apply the tool evenly, because it cuts both ways. The wish that there be no God, no final accounting, no gaze you cannot escape, is also a wish, and it can manufacture unbelief as easily as need manufactures belief. The philosopher Thomas Nagel, no friend of religion, admitted it plainly: I do not want there to be a God. I do not want the universe to be like that. The wanting is on both sides of the table. It settles nothing on either.",
+        },
+      ],
+      grants: "This step shows the projection charge, applied honestly, disqualifies the atheist's motive as much as the believer's. It proves neither view true.",
+    },
+    {
+      id: "unwished",
+      move: "Now the part that broke the objection for me. If faith were wish-fulfillment, you would expect the God on offer to be the one a frightened person would order. Comfortable, undemanding, agreeable. That is not the God of Scripture. He opens by requiring a perfection no one can meet, he calls people to lose their lives to find them, and at the center of the whole thing is not a warm affirmation but a crucified man.",
+      objections: [
+        {
+          label: "People still find that God comforting, so it is still a crutch.",
+          response:
+            "Some do, and some have sanded him down until he is one. But the God actually described is the last god a wish would build. When a man in the Bible comes into his presence he does not feel affirmed, he comes apart. A wish-god does not make demands you cannot satisfy, and a wish-god does not bleed. You have to work to make this God into a comfort object, and the working is the tell that he was not one to begin with.",
+        },
+      ],
+      grants: "This step shows the Christian God is strikingly un-wished-for. It does not prove he is real, only that he is a strange thing to have invented for comfort.",
+    },
+    {
+      id: "verdict",
+      move: "So the honest limit. None of this proves God exists, and I am not going to pretend it does. What it does is take the objection off the table as a shortcut. You cannot dismiss the claim by naming the need, because the need runs both ways and the God in question is not the one need would design.",
+      objections: [
+        {
+          label: "I still think believers just want it to be true.",
+          response:
+            "Some do, and you should say so, and I was a believer's mirror image who wanted it not to be true. So here is the only fair test. Ask the believer what they want to be true, and you will find plenty of faith that is a wish with a steeple. Then have the nerve to ask it of yourself. I ran the projection test on everyone but me for years, and underneath, where I did not look, was a man who found a Godless universe not a grief but a relief. The crutch was real. It was just in my other hand.",
+        },
+      ],
+      grants: "This is where the case ends and the choosing begins. It removes a shortcut. It does not make the decision for you.",
+    },
+  ],
+  close:
+    "So here is the whole of it. Some faith is a wish with a steeple, and I will not defend it, but the objection cannot do the work people ask of it, because the projection charge disqualifies the atheist's motive as fully as the believer's, and the God at the center is the last one a frightened person would invent. You can weigh all of that and still walk away, and be welcome to keep reading here. I only wanted you to notice that naming the need was never the same as answering the question.",
+};
+
+const PLURALISM: ArgumentCase = {
+  slug: "pluralism",
+  title: "Don't all religions lead to the same God?",
+  kicker: "The case, one move at a time",
+  intro:
+    "I used to think this was the humble, obvious position, and that the people who denied it were arrogant. It turned out to be almost the reverse, and it took me years to see it. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer.",
+  published: true,
+  steps: [
+    {
+      id: "concede",
+      move: "Start by granting what is true and painful in it. The exclusive claim has often been held like a weapon, used to bless conquest and to say unspeakable things to grieving people about their dead. And the intuition underneath is real: if you had been born in a different place, you would almost certainly hold a different faith with the same confidence you hold this one. That should unsettle anyone. It unsettled me for years.",
+      objections: [
+        {
+          label: "Your beliefs just track your birthplace, so none of them can be the truth.",
+          response:
+            "That where-you-were-born point is real, and it should keep everyone humble, but look at what it proves, because it proves too much. Your atheism, or your pluralism, also tracks your time and place. A person raised in a secular Western university is about as likely to land there as a person raised in Riyadh is to land in Islam. If the geography argument discredits a belief, it discredits the belief that all religions are the same just as fully. It is a reason for humility, not a verdict on truth.",
+        },
+      ],
+      grants: "This step concedes the real arrogance and the birthplace worry. It does not yet show whether any one faith is true.",
+    },
+    {
+      id: "elephant",
+      move: "So take the strongest version of the pluralist case, the one the philosopher John Hick spent a career on. He loved the old parable of the blind men and the elephant. One grabs the trunk and says snake, one the leg and says tree, one the ear and says fan. Each has a piece, none has the whole, and how foolish for any of them to insist his part is the animal. It is a devastating little story, and it has been used against religious confidence for a century.",
+      objections: [
+        {
+          label: "Exactly. Every religion has a piece of the truth, none has all of it.",
+          response:
+            "Now ask the one question the parable cannot survive. Who is telling it. The man narrating the story is not one of the blind men. He is standing above the whole scene with his eyes open, describing the entire elephant that everyone else is too limited to see. To tell the parable at all, he has to claim the very thing he is denying to everyone else, a view of the whole. The pluralist is not standing nowhere. He is standing somewhere, and from it he is making the largest claim in the room.",
+        },
+      ],
+      grants: "This step shows the pluralist parable quietly assumes a God's-eye view it denies to the religions. It does not yet show any religion is right.",
+    },
+    {
+      id: "claims",
+      move: "So the real shape of the thing, once the parable is set down. The religions do not describe the same elephant from different angles. They say incompatible things about what is finally real. One says the self is an illusion to be escaped. Another says the self is loved by name and will be raised. One says God is a single undivided will. Another says God is one being in three persons and came in the flesh. These cannot all be true at once, and the pluralist who says they are partial glimpses has not risen above the disagreement. He has joined it, on a third side.",
+      objections: [
+        {
+          label: "The differences are just cultural clothing on the same core.",
+          response:
+            "That sounds generous, but it is the one claim no adherent of those faiths would accept, which makes it the least respectful move of all. It tells the devout Muslim, the devout Buddhist, the devout Christian that the thing they would die for is surface decoration, and that you, from outside all of them, can see the real core they missed. That is not humility about religion. It is a new religion of its own, with its own dogma, insisting the others are too limited to see what it sees.",
+        },
+      ],
+      grants: "This step shows the faiths make genuinely rival claims, so they cannot all be true. It does not settle which one is.",
+    },
+    {
+      id: "verdict",
+      move: "So the honest limit. Nothing here proves Christianity is the true one. What it removes is the idea that you can float above the question. Everyone at the table is making a claim about the whole. The atheist, the pluralist, the believer. The real question was never whether to make an exclusive claim, because no one avoids one. It is which one is true, and that is a harder and more honest question than the one the elephant was hiding.",
+      objections: [
+        {
+          label: "This still feels arrogant, picking one and calling it true.",
+          response:
+            "It would be, if the claim were that your side is smarter or your people are better. But the scandal of the Christian version is the opposite. It does not say the way is narrow because God is stingy with the map. It says the way is a person, one you cannot earn or reason or be born into, only receive, which is the one door that stays open to the person who got everything else wrong. Refuse it if you must. But do not refuse it for arrogance. Refuse it, if you do, for being too particular.",
+        },
+      ],
+      grants: "This is where the case ends and the choosing begins. It shows there is no view from nowhere. It does not make the choice for you.",
+    },
+  ],
+  close:
+    "So here is the whole of it. All religions leading to the same God sounds like the humble view and turns out to be the most sweeping claim in the room, a God's-eye verdict that the faiths themselves are too limited to see straight. Set the parable down and the honest question returns, the harder one about which account of the world is actually true. You can weigh all of that and still walk away unconvinced, and be welcome here. I only wanted you to see that floating above the question was never one of the options.",
+};
+
+const FAITH: ArgumentCase = {
+  slug: "faith",
+  title: "Is believing anything on faith irrational?",
+  kicker: "The case, one move at a time",
+  intro:
+    "I called my old position pure reason, and I was wrong about it in a way that took me a long time to see. We will go one move at a time. Raise the objection you actually hold, and I will give you the honest answer, including what it does not settle.",
+  published: true,
+  steps: [
+    {
+      id: "concede",
+      move: "Start by granting it, because a great deal of what gets called faith is exactly the credulous thing the charge names. The church has too often praised not-thinking as a virtue and used just have faith as a lid on a pot it did not want boiling. If your objection is to belief held against the evidence, or with no evidence at all, then you and I are on the same side, and I will not defend the thing you are attacking.",
+      objections: [
+        {
+          label: "Faith means believing what you have no evidence for.",
+          response:
+            "That is the popular definition, and it is a caricature, but I understand why you hold it, because plenty of religious people have earned it. The trouble is that it does not match what the word actually means in the tradition that uses it most. The Greek word behind it, pistis, means trust, the kind you place in a person with a track record, not a leap into the dark. Hebrews 11:1 calls faith the assurance of things hoped for, the conviction of things not seen. That is trust about the unseen, not belief against the evidence.",
+        },
+      ],
+      grants: "This step concedes that credulous faith is real and indefensible. It does not yet show that faith and reason are not opposites.",
+    },
+    {
+      id: "commitments",
+      move: "So take the strongest form of the objection, the philosopher W. K. Clifford's, who wrote in 1877 that it is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence. Try to actually live by that rule for one morning. You will not last.",
+      objections: [
+        {
+          label: "That seems like a reasonable rule to me.",
+          response:
+            "Then notice everything you already believe that it forbids. You trust that your own reasoning is reliable, which you cannot prove without using the very reasoning in question. You trust that other minds exist, that the past was real, that the future will resemble the past. David Hume saw in 1748 that this last one cannot be justified by argument without going in a circle, and no one has closed the gap since. You are not standing on pure evidence. You are standing on a floor of commitments that outrun your proof, and so is everyone.",
+        },
+      ],
+      grants: "This step shows that everyone lives by trust beyond what they can prove. It does not yet show which trust is warranted.",
+    },
+    {
+      id: "warrant",
+      move: "So the real question comes into focus, and it is not faith against reason. The chemist and philosopher Michael Polanyi spent a career showing that all knowing, science included, rests on commitments the knower cannot fully justify from the outside, a floor beneath the floor. Reason does not run without trust. The honest question was never whether to have faith. It is which faith is warranted.",
+      objections: [
+        {
+          label: "Scientific trust is earned by evidence. Religious faith is not.",
+          response:
+            "Scientific trust is earned by a track record, and that is exactly the right standard, so apply it here too. Biblical faith is not asked in a vacuum. It is asked on the basis of a claimed track record: a people's history, a set of witnesses, an event they said they saw and died refusing to recant. You can judge that record weak. That is a fair fight about evidence. But it is a different accusation from the one you started with, that faith means believing with no reasons at all. It has reasons. You are free to weigh them and find them wanting.",
+        },
+      ],
+      grants: "This step reframes the question from faith-versus-reason to which commitments are warranted. It does not settle whether the Christian ones are.",
+    },
+    {
+      id: "verdict",
+      move: "So the honest limit. None of this proves the Christian faith is the warranted one. What it removes is the clean high ground, the idea that you hold only what the evidence forces while the believer leaps in the dark. You do not, and neither does anyone. We are all trusting past our proof, and the real work is arguing about which trust the evidence best supports.",
+      objections: [
+        {
+          label: "Fine, but I would still rather trust as little as possible.",
+          response:
+            "That is a fair instinct, and I share it more than you might guess. I do not ask you to believe on no evidence, and I would not have, because the demand would have insulted the man I was. I ask only that you count the faith you already live by, the trust under the reason you are so sure is unmixed, and then weigh whether the object of the Christian faith could bear that kind of weight. That is not a leap into the dark. It is the same thing you already do with everything you know, turned toward a harder question.",
+        },
+      ],
+      grants: "This is where the case ends and the choosing begins. It levels the ground. It does not decide for you.",
+    },
+  ],
+  close:
+    "So here is the whole of it. Faith is not the enemy of reason, and reason is not the pure alternative to faith, because both of them run on trust that outstrips proof, and the honest question is only which trust is earned. I called my own position pure reason for years and had never counted the enormous faith underneath it, invisible the way water is invisible to the fish. You can weigh all of this and still find the Christian claim unwarranted, and be welcome to keep reading here. I only wanted the fight to be a fair one, over evidence, and not over a caricature of the word faith.",
+};
+
+export const ARGUMENT_CASES: ArgumentCase[] = [RESURRECTION, EVIL, GOSPELS, JESUS, PLURALISM, WISHFUL, FAITH, HELL, MEANING];
 
 export function caseBySlug(slug: string): ArgumentCase | undefined {
   return ARGUMENT_CASES.find((c) => c.slug === slug);
