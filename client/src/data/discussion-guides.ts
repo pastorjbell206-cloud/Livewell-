@@ -2007,5 +2007,130 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
       "predestination-and-free-will"
     ]
   }
+,
+
+  // ═══════════════════════════════════════════════════════════════════════
+  // THE HARD FIVE
+  // Written to one constraint: the person this is about is in the room.
+  // No question requires anyone to disclose anything. The group is never
+  // invited to discuss a category of person as though none were present.
+  // Where the essay lands, the guide says so; where it holds open, so does
+  // the guide. Every one keeps a path to real help visible.
+  // ═══════════════════════════════════════════════════════════════════════
+
+  "christian-sexual-ethic": {
+    slug: "christian-sexual-ethic",
+    articleTitle: "Is the Historic Christian View of Sex Homophobic?",
+    personalReflection: [
+      "Before anything else: if you are gay and you are in this group, you do not owe this room your story tonight. You are not the topic. You are a member. Nothing below asks you to explain yourself.",
+      "The essay opens with a man who sat in the church for three years and never said he was gay, because he had already learned what the room would do with it. What has your church taught people like him, without ever saying it out loud?",
+      "James writes that we singled out one sin, made it the sin, while the gossip and the greed and the divorces in the third pew got a nod and a casserole. Where have you helped keep that ledger?"
+    ],
+    groupDiscussion: [
+      "Start with the failure, not the doctrine. Name specific ways your congregation has made itself unsafe for a gay person, in tone, in jokes, in silence. Do not move on until the list is honest.",
+      "The essay lands with the historic teaching, and it says plainly what that costs: it asks a gay believer for a lifelong chastity, and the church that asks it has mostly failed to build the friendship and belonging that would make such a life anything but lonely. If your church means to hold this teaching, what would it have to actually build? Be concrete, and count what it would cost you personally.",
+      "Side A and Side B are both trying to follow Jesus and both refuse to leave. What would it take for your group to be a place where someone on the other side of this could stay, and disagree, and still be loved?"
+    ],
+    actionStep: "The teaching in this essay is unlivable without a community that carries it. Pick one thing your group will actually build this month: a standing table, a holiday nobody spends alone, a friendship with weight. Name who does it and when. A conviction with no infrastructure behind it is a burden you handed someone and walked away from. And if this is your own life and tonight was hard, tell one person you trust, or a pastor or counselor who has earned it.",
+    openingPrayer: "God who knows every person in this room better than the room does, we are about to talk about something the church has handled badly for a long time. Guard our mouths. Let nothing be said here that could not be said with love to the face of the person it is about.",
+    closingPrayer: "Lord, we have often required the cross and withheld the body that was meant to carry it. Forgive us. Whatever we hold, make us people who can be trusted with a secret, and make this church a place where no one has to sit for three years with none of their life in the room.",
+    suggestedReading: [
+      "affirmation-is-not-love",
+      "faith-and-gender-identity",
+      "the-cost-of-following"
+    ]
+  },
+
+  "faith-and-gender-identity": {
+    slug: "faith-and-gender-identity",
+    articleTitle: "What Does the Church Owe Transgender People?",
+    personalReflection: [
+      "If you are carrying this yourself, or you are a parent in the middle of it, you do not have to say a word tonight. This guide is not an interrogation. And if you have reached the place where you are not sure you want to be here at all, please tell someone today. In the United States you can call or text 988 right now. That matters more than the rest of this page.",
+      "The essay says the distress is real, not invented, not a trend a kid tried on. Did you believe that before you read it, and if not, where did you learn otherwise?",
+      "James writes that his own side produced a sneer and called the excusing of it courage. Where have you laughed at something you would not defend?"
+    ],
+    groupDiscussion: [
+      "The essay says the church that made this a punchline has a sin to repent of before it has a word to say. What does repentance look like specifically in your congregation, before any position is stated?",
+      "It lands with the historic reading, that the body is a given good rather than a costume, and it names the objection it has not answered: there is no clean, safe, obvious pastoral path for a fifteen-year-old in genuine agony, and anyone claiming one is selling certainty instead of care. Sit with that unanswered part rather than rushing past it. What does it require of you?",
+      "The essay refuses to rule on anyone's medicine from a distance, saying those decisions belong to the person, the family, doctors who can examine them, and a pastor who earned the room by staying in it. Is your church the kind of place that earns that room? What would it take?"
+    ],
+    actionStep: "Decide, as a group, what your church would actually do if a family in genuine crisis walked in this Sunday. Not what you would say. What you would do, who would stay with them, and for how long. Write it down. If you cannot answer, that is the finding.",
+    openingPrayer: "God who formed every body in this room and calls each one good, we are handling something that has been used to wound people. Make us slow. Let us be the kind of people a frightened parent could tell the truth to.",
+    closingPrayer: "Lord, we would rather hold what is true kneeling next to the people it costs than standing over them. Give us presence before position, and keep every one of us near enough to be useful when it is not theoretical anymore.",
+    suggestedReading: [
+      "christian-sexual-ethic",
+      "personhood-in-the-age-of-ai",
+      "anxiety-and-faith"
+    ]
+  },
+
+  "christians-and-abortion": {
+    slug: "christians-and-abortion",
+    articleTitle: "Can a Christian Support Abortion Rights?",
+    personalReflection: [
+      "Read this first, alone, before the group meets. Statistically, someone in your church has had an abortion. She may be in this room. Nothing tonight asks anyone to say so, and no one should be looked at while this is discussed.",
+      "The essay says grace is not the reward for a clean history. If you have carried this, that sentence is for you, and it was true before tonight and will be true after.",
+      "Whichever side you have argued from, ask what your position has cost you personally. If the honest answer is nothing, what does that tell you about it?"
+    ],
+    groupDiscussion: [
+      "The essay criticizes a pro-life politics that loses interest at birth and a pro-choice politics that will not look at the ultrasound, and it puts both criticisms in adjacent paragraphs on purpose. Take the one aimed at your own side first, and do not answer it with the other.",
+      "It lands here: the unborn child is a neighbor, and this is a conviction rather than a ballot. What follows for how your church treats a woman in a crisis pregnancy, in practice, this year?",
+      "Where does the distance sit between what your church says about life and what it spends on mothers, children, and families? Name real numbers or real hours if you can."
+    ],
+    actionStep: "As a group, commit to one concrete thing for mothers in your community that costs you something: money, hours, a spare room, childcare, a standing meal. A conviction about life that has never required anything of your calendar is not yet a conviction. If you are the one carrying this quietly, you do not have to carry it alone; a pastor or a counselor is a good next step, and grace was never the reward for a clean history.",
+    openingPrayer: "God who knits us together in secret, we come to a subject that has produced more shouting than care. There are wounds in this room we cannot see. Let nothing be said tonight that makes anyone smaller.",
+    closingPrayer: "Lord, you have never once dealt with any of us according to our clean history. Make this church safer than the argument. Give us the courage to speak for those who cannot speak, and the tenderness to stay with the ones who are still carrying it.",
+    suggestedReading: [
+      "natural-evil-and-animal-suffering",
+      "the-cost-of-following",
+      "is-jesus-really-the-only-way"
+    ]
+  },
+
+  "divorce-and-remarriage": {
+    slug: "divorce-and-remarriage",
+    articleTitle: "When a Marriage Ends: Divorce, Remarriage, and Grace",
+    personalReflection: [
+      "Someone in this group has been divorced, or is deciding right now. You are not a case study tonight, and nothing here asks you to explain what happened.",
+      "If you are in danger, get safe first and sort the theology after. That is not a compromise. Tell someone tonight.",
+      "The essay says the church has often treated the divorced as a permanent category of failure while tolerating the contempt and neglect that killed the marriage long before the paperwork. Which of those two does your church actually notice?"
+    ],
+    groupDiscussion: [
+      "Jesus begins with permanence, that what God joined together let no one separate. Why does an honest treatment have to start there rather than with the exceptions?",
+      "Scripture names exceptions, and faithful Christians still differ on how far they extend, particularly around abuse and abandonment. The essay does not hand down a verdict on your marriage from a web page. Why is that restraint right, and where do churches get it wrong in both directions?",
+      "What would your congregation have to change for a divorced person to believe they were a full member rather than a tolerated one?"
+    ],
+    actionStep: "Identify one person in your church who went through a divorce and was quietly dropped. Call them this week. Do not counsel them. Ask them to coffee.",
+    openingPrayer: "God who made covenant and hates its breaking, we come with real losses in this room. Keep us from talking about marriages as though no one here had lost one. Give us honesty that does not become cruelty.",
+    closingPrayer: "Lord, you take the permanence of covenant more seriously than we do and you are gentler with the broken than we are. Teach us both at once. Let no one leave here carrying more shame than they came with.",
+    suggestedReading: [
+      "the-slow-drift-that-ends-marriages",
+      "what-silence-costs-a-marriage",
+      "anxiety-and-faith"
+    ]
+  },
+
+  "end-of-life-and-bioethics": {
+    slug: "end-of-life-and-bioethics",
+    articleTitle: "Should We Keep People Alive at Any Cost?",
+    personalReflection: [
+      "Someone here is closer to this than the rest of you know, deciding about a parent, or about themselves. Nothing tonight asks anyone to disclose a diagnosis or a decision.",
+      "Nothing in this guide is medical or legal advice, and it cannot substitute for the doctors and the people who actually know the case. Hold it loosely on the specifics.",
+      "Have you ever said what you would want at the end of your own life, out loud, to the person who would have to decide? If not, why not?"
+    ],
+    groupDiscussion: [
+      "The essay refuses to hand down a rule, because these decisions live in particular bodies and particular families. Why is a rule the wrong shape for this, and what should the church offer instead?",
+      "There is a difference between killing someone and letting someone die, and a difference between refusing a burdensome treatment and abandoning a person. Work those distinctions out loud until the group can state them clearly.",
+      "Our life is not our own, and we are the Lord's whether we live or die. How does that change the way a Christian faces a decision like this, without turning into a slogan you would not say at a bedside?"
+    ],
+    actionStep: "Write down what you would want, and tell the one person who would have to decide for you. Then ask one older member of your church whether anyone has ever asked them that question. If you are in the middle of a decision now, the people to bring it to are the doctors who can examine the case, a pastor who will stay, and the family who loves the person.",
+    openingPrayer: "Lord of the living and the dying, we are talking about the hardest room any family enters. Keep us from confident answers about beds we have never sat beside. Give us wisdom, and the humility to admit where we do not have it.",
+    closingPrayer: "God, whether we live or whether we die, we are yours. Be near the people in this room who are closer to that sentence than the rest of us. Give them doctors who tell the truth, families who stay, and a church that shows up more than once.",
+    suggestedReading: [
+      "how-to-die-well",
+      "is-there-life-after-death",
+      "natural-evil-and-animal-suffering"
+    ]
+  }
 
 };
