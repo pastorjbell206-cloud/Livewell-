@@ -154,11 +154,11 @@ export default function Home() {
         }}
       >
         <div
+          className="home-hero-grid"
           style={{
             maxWidth: "var(--w-default)",
             margin: "0 auto",
             display: "grid",
-            gridTemplateColumns: "minmax(0, 1fr)",
             gap: "var(--s-6)",
           }}
         >
@@ -194,6 +194,7 @@ export default function Home() {
             </div>
 
             <h1
+              className="lede-rise"
               style={{
                 fontFamily: "var(--F)",
                 fontSize: "clamp(42px, 7vw, 96px)",
@@ -208,6 +209,7 @@ export default function Home() {
             </h1>
 
             <p
+              className="lede-rise-2"
               style={{
                 fontFamily: "var(--F)",
                 fontSize: "clamp(20px, 2.6vw, 30px)",
