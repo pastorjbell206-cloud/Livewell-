@@ -17,14 +17,28 @@ It is not a feeling. Both the site and the work on it outgrew their organization
 
 | | Now |
 |---|---|
-| Routes | 262 |
-| Page components | 240 |
+| Routes (239 public, 23 admin) | 262 |
+| Distinct top-level areas | **97** |
 | Links in the header | 33 |
 | Separate "where do I start" flows | **5** |
 | Competing taxonomies | **2** (the pillars, and the homepage/nav "wings") |
+| True orphans — nothing links to them | **9** |
 
 A visitor arriving cold meets five front doors that do not agree with each other, and two
 different names for how the writing is organized depending on which page they land on.
+
+**Ninety-seven top-level areas** is the number that best explains the feeling. That is not
+a site with sections; it is a site where almost every page is its own section.
+
+`node scripts/route-inventory.mjs` regenerates all of this from the code, so the next IA
+attempt starts from what is true today rather than a map that ages the moment it is written
+— which is exactly what happened to #216. The nine orphans:
+
+`/articles` · `/authors/:slug` · `/dashboard` · `/for-families` · `/search` · `/substack` ·
+`/the-pastoral-angle` · `/disruption/posture` · `/justice/posture`
+
+`/the-pastoral-angle` is the one worth noticing: it is a **pillar landing page** that
+nothing links to, left stranded when the "For Pastors" nav group was removed.
 
 **The work — the larger half, and the part nobody was tracking.**
 
