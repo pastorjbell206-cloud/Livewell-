@@ -78,12 +78,12 @@ export default function TheologyQuiz() {
     return (
       <>
         <MinimalNav />
-        <div style={{ minHeight: "60vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--paper)" }}>
+        <main id="main" style={{ minHeight: "60vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--paper)" }}>
           <div style={{ textAlign: "center" }}>
             <div style={{ width: "40px", height: "40px", border: "3px solid var(--bone-muted)", borderTop: "3px solid var(--mustard)", borderRadius: "50%", animation: "spin 1s linear infinite", margin: "0 auto 16px" }} />
             <p style={{ color: "var(--ink3)", fontFamily: "var(--F)" }}>Loading your quiz…</p>
           </div>
-        </div>
+        </main>
         <Footer />
       </>
     );
@@ -93,9 +93,9 @@ export default function TheologyQuiz() {
     return (
       <>
         <MinimalNav />
-        <div style={{ minHeight: "60vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--paper)" }}>
+        <main id="main" style={{ minHeight: "60vh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--paper)" }}>
           <LoadFailed what="The quiz" onRetry={() => questionsQuery.refetch()} backHref="/tools" backLabel="Back to the tools" />
-        </div>
+        </main>
         <Footer />
       </>
     );
@@ -171,6 +171,10 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
         url={`${SITE_URL}/quiz`}
       />
       <MinimalNav />
+
+      {/* This page renders the nav directly rather than through Layout, so it
+          declares its own main landmark — the skip link in MinimalNav targets it. */}
+      <main id="main">
 
       {/* Hero */}
       <section style={{ background: "var(--charcoal)", padding: "60px 20px 40px", textAlign: "center" }}>
@@ -361,6 +365,8 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
           )}
         </div>
       </section>
+
+      </main>
 
       <Footer />
     </>

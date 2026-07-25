@@ -211,6 +211,10 @@ export default function StartHereQuiz() {
 
       <MinimalNav />
 
+      {/* This page renders the nav directly rather than through Layout, so it
+          declares its own main landmark — the skip link in MinimalNav targets it. */}
+      <main id="main">
+
       <section style={{ flex: 1, padding: "40px 20px", maxWidth: "900px", margin: "0 auto", width: "100%" }}>
         {!isComplete ? (
           <>
@@ -429,6 +433,8 @@ export default function StartHereQuiz() {
           </>
         )}
       </section>
+
+      </main>
 
       <Footer />
     </div>

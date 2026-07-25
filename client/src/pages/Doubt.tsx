@@ -84,6 +84,10 @@ export default function Doubt() {
 
       <MinimalNav />
 
+      {/* This page renders the nav directly rather than through Layout, so it
+          declares its own main landmark — the skip link in MinimalNav targets it. */}
+      <main id="main">
+
       {/* HERO SECTION */}
       <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
@@ -236,6 +240,8 @@ export default function Doubt() {
           </Link>
         </div>
       </section>
+
+      </main>
 
       <Footer />
     </div>

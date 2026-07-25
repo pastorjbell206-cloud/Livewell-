@@ -439,6 +439,10 @@ export default function StartHereDiagnostic() {
 
       <MinimalNav />
 
+      {/* This page renders the nav directly rather than through Layout, so it
+          declares its own main landmark — the skip link in MinimalNav targets it. */}
+      <main id="main">
+
       {/* ── Progress bar ─────────────────────────────────────────── */}
       <div
         style={{
@@ -925,6 +929,8 @@ export default function StartHereDiagnostic() {
           </>
         ) : null}
       </div>
+
+      </main>
 
       <Footer />
     </div>
