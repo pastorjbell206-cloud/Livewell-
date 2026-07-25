@@ -51,12 +51,48 @@ export default function Theology() {
   const byPillar = (p: string) => DOCTRINE_INDEX.filter((d) => d.pillar === p && d.ready);
   const readyCount = DOCTRINE_INDEX.filter((d) => d.ready).length;
 
+  // The worked doctrines, as an ItemList. Built from the same `ready` filter the
+  // page renders from, so the schema can never advertise a doctrine the reader
+  // cannot open.
+  const readyDoctrines = DOCTRINE_INDEX.filter((d) => d.ready);
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "Theological Depth — Learn the Faith Fairly",
+      description:
+        "Learn contested Christian doctrines fairly. Every disagreement is sorted by how much it matters and every position is stated in its own strongest voice.",
+      url: "https://www.livewellbyjamesbell.co/theology",
+      author: { "@type": "Person", name: "James Bell", url: "https://www.livewellbyjamesbell.co/about" },
+      publisher: { "@type": "Organization", name: "LiveWell by James Bell" },
+      mainEntity: {
+        "@type": "ItemList",
+        numberOfItems: readyDoctrines.length,
+        itemListElement: readyDoctrines.map((d, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: d.title,
+          url: `https://www.livewellbyjamesbell.co/theology/doctrine/${d.slug}`,
+        })),
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.livewellbyjamesbell.co/" },
+        { "@type": "ListItem", position: 2, name: "Theological Depth", item: "https://www.livewellbyjamesbell.co/theology" },
+      ],
+    },
+  ];
+
   return (
     <Layout>
       <SEOMeta
         title="Theological Depth — Learn the Faith Fairly"
         description="Learn contested Christian doctrines fairly. Every disagreement is sorted by how much it matters and every position is stated in its own strongest voice."
         url="https://www.livewellbyjamesbell.co/theology"
+        structuredData={structuredData}
       />
 
       {/* HERO */}
