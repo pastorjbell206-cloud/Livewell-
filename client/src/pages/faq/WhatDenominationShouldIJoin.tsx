@@ -66,6 +66,16 @@ const webPageSchema = {
   publisher: { "@type": "Organization", name: "LiveWell by James Bell" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.livewellbyjamesbell.co/" },
+    { "@type": "ListItem", position: 2, name: "Questions People Ask", item: "https://www.livewellbyjamesbell.co/faq" },
+    { "@type": "ListItem", position: 3, name: "What denomination should I join?", item: "https://www.livewellbyjamesbell.co/faq/what-denomination-should-i-join" },
+  ],
+};
+
 export default function WhatDenominationShouldIJoin() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -75,7 +85,7 @@ export default function WhatDenominationShouldIJoin() {
         title="What Denomination Should I Join? 8 Questions Answered"
         description="How to choose a church denomination. Main differences, what to look for, non-denominational pros and cons, and questions to ask before joining."
         keywords="what denomination should I join, choosing a church, church denominations differences, non-denominational church, how to find a church, switching denominations"
-        structuredData={[faqSchema, webPageSchema]}
+        structuredData={[faqSchema, webPageSchema, breadcrumbSchema]}
       />
 
       <section style={{ background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px 64px", textAlign: "center" }}>

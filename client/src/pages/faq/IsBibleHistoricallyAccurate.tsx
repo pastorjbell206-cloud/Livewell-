@@ -66,6 +66,16 @@ const webPageSchema = {
   publisher: { "@type": "Organization", name: "LiveWell by James Bell" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.livewellbyjamesbell.co/" },
+    { "@type": "ListItem", position: 2, name: "Questions People Ask", item: "https://www.livewellbyjamesbell.co/faq" },
+    { "@type": "ListItem", position: 3, name: "Is the Bible historically accurate?", item: "https://www.livewellbyjamesbell.co/faq/is-the-bible-historically-accurate" },
+  ],
+};
+
 export default function IsBibleHistoricallyAccurate() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -75,7 +85,7 @@ export default function IsBibleHistoricallyAccurate() {
         title="Is the Bible Historically Accurate? 8 Questions Answered"
         description="Is the Bible historically accurate? Archaeological evidence, manuscript reliability, contradictions, and authorship -- answered honestly by a pastor who takes both the text and the questions seriously."
         keywords="is the Bible historically accurate, Bible archaeology, Bible contradictions, who wrote the Bible, Bible manuscripts, Bible canon, Bible reliability"
-        structuredData={[faqSchema, webPageSchema]}
+        structuredData={[faqSchema, webPageSchema, breadcrumbSchema]}
       />
 
       <section style={{ background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px 64px", textAlign: "center" }}>

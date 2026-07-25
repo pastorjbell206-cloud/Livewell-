@@ -70,6 +70,16 @@ const webPageSchema = {
   publisher: { "@type": "Organization", name: "LiveWell by James Bell" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.livewellbyjamesbell.co/" },
+    { "@type": "ListItem", position: 2, name: "Questions People Ask", item: "https://www.livewellbyjamesbell.co/faq" },
+    { "@type": "ListItem", position: 3, name: "What is deconstruction?", item: "https://www.livewellbyjamesbell.co/faq/what-is-deconstruction" },
+  ],
+};
+
 export default function WhatIsDeconstruction() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -79,7 +89,7 @@ export default function WhatIsDeconstruction() {
         title="What Is Deconstruction? 8 Honest Answers for Christians"
         description="What does faith deconstruction mean? Is it biblical? Can you deconstruct and stay Christian? A pastor answers the questions the church avoids."
         keywords="what is deconstruction, faith deconstruction, deconstruction Christianity, stages of deconstruction, is deconstruction biblical, leaving faith, reconstruction"
-        structuredData={[faqSchema, webPageSchema]}
+        structuredData={[faqSchema, webPageSchema, breadcrumbSchema]}
       />
 
       <section style={{ background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px 64px", textAlign: "center" }}>
