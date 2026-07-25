@@ -147,7 +147,7 @@
 | 4 | Scripture integrity, remaining tools | **Open** | VerseFinder, BibleOnTopic, ParentingVerses, Proverbs31, ScriptureMemory, BibleReference: **zero** name a translation. Worse than the sweep-1 finding — the corpus is *mixed*, unlabeled (see below) |
 | 5 | Prerender coverage | **Closed** | `prerender-heads.mjs` reports **0 uncovered routes**: 169 route heads from SEOMeta literals, 681/681 essays, 617 library pages, 1,746 per-route HTML files |
 | 6 | Structured data | **Partial** | HardIssuesSeries has `ItemList`. Table and Theology still emit **no** `structuredData` at all. FAQ answer pages gained `BreadcrumbList` (PR #483) |
-| 7 | Depth top-ups | **Open** | `heidelberg-catechism-q1.json` and `westminster-shorter-catechism-q1.json` remain Q1-only stubs |
+| 7 | Depth top-ups | **Partly struck** | The catechism half of this row was a misread — both documents are complete for the scope their titles claim (see sweep 3, item 2). DiscipleshipTable arcs and the PrayerGenerator voice pass remain open |
 
 ### The finding that got worse on inspection
 
@@ -194,13 +194,20 @@ the board.
    `paraphrase` on the evidence of its own file header. The finishing work is to
    source each corpus against verbatim ESV and change the rendering to `esv` —
    a content task needing a real ESV text, not a code task.
-2. **Catechism stubs.** Two of ten creed documents are Q1-only. A library that
-   presents itself as the historic confessions and delivers one question is the
-   thin-content pattern the board flagged elsewhere. Either finish them or say
-   on the page that an excerpt is what is on offer.
-3. **Table + Theology structured data.** Two of the deepest hubs emit none.
-   `getBreadcrumbSchema` and an `ItemList` are already in `SEOMeta.tsx`; this is
-   the same edit the FAQ pages just took, at hub scale.
+2. ~~**Catechism stubs.**~~ **Struck — the finding was wrong.** Sweep 1 read the
+   `-q1` slugs as Q1-only stubs. They are not. `westminster-shorter-catechism-q1`
+   carries Questions 1–10 in full and `heidelberg-catechism-q1` carries all of
+   Lord's Day 1, each with an intro and eight annotations, and both the document
+   titles and the library index blurbs scope themselves precisely ("Q. 1–10",
+   "the full text of Lord's Day 1"). Nothing over-promises; nothing to fix. A
+   slug is not evidence — read the document.
+3. ~~**Table + Theology structured data.**~~ **Done.** Theology emits a
+   `CollectionPage` whose `ItemList` is built from the same `ready` filter the
+   page renders from, so the schema cannot advertise a doctrine the reader
+   cannot open (31 at the time of writing). Table takes a `CollectionPage`
+   without an `ItemList` on purpose: its studies arrive from a fetch, so a list
+   built from them would describe an empty page at prerender time. Both gained
+   breadcrumbs.
 4. **Marriage and Parenting, to the `/doubt` standard.** Both have a real
    opening paragraph and working destinations — the shells are gone. What is
    missing is the middle: the cause beneath the symptom before the links begin.

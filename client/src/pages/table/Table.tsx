@@ -81,12 +81,37 @@ export default function Table() {
 
   const leaderStudy = studies?.find((s) => /lead/i.test(s.slug)) ?? null;
 
+  // Static schema only. The studies below arrive from a fetch, so an ItemList
+  // built from them would describe an empty page at prerender time — better to
+  // claim the hub accurately than to advertise a list that is not there yet.
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "The Table — Disciplemaking in Homes",
+      description:
+        "A one-place engine for making disciples where people live: a free home-study curriculum, leader equipping, books, and study guides. The living room, not the classroom.",
+      url: "https://www.livewellbyjamesbell.co/table",
+      author: { "@type": "Person", name: "James Bell", url: "https://www.livewellbyjamesbell.co/about" },
+      publisher: { "@type": "Organization", name: "LiveWell by James Bell" },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.livewellbyjamesbell.co/" },
+        { "@type": "ListItem", position: 2, name: "The Table", item: "https://www.livewellbyjamesbell.co/table" },
+      ],
+    },
+  ];
+
   return (
     <Layout>
       <SEOMeta
         title="The Table — Disciplemaking in Homes"
         description="A one-place engine for making disciples where people live: a free home-study curriculum, leader equipping, books, and study guides. The living room, not the classroom."
         url="https://www.livewellbyjamesbell.co/table"
+        structuredData={structuredData}
       />
 
       {/* Vision — hero */}
