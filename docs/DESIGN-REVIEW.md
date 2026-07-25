@@ -85,22 +85,40 @@ The remaining eleven — the quiz option accents in `StartHereQuiz` — are **no
 They paint a fixed mid-tone background under fixed white text, so both themes read
 correctly; the same principle as `--charcoal-fg`.
 
-## 4. The site looks the same all the way down
+## 4. Card-grid monotony — MOSTLY OVERSTATED, two pages genuinely fixed
 
-**Evidence:** 73 pages build their content out of `auto-fit minmax` card grids. The
-editorial components that exist to break that rhythm — `PullQuote`, `StatementBand`,
-`SectionArt` — appear on **17 of 241 pages**.
+**What I first claimed:** 73 pages are `auto-fit minmax` card grids while the editorial
+components (`PullQuote`, `StatementBand`, `SectionArt`) appear on only 17 of 241 pages — so
+the site "reads like a directory," and twenty pages should be broken up.
 
-This is the biggest *aesthetic* finding, and the cheapest to act on, because the toolkit
-is already built and already on-brand. A theology essay site that renders everything as a
-uniform card grid reads like a directory. The pages that do use the editorial blocks —
-Home, Family, the Prophetic hub — feel markedly more like a publication and less like a
-catalogue.
+**What is actually true.** The component-usage count was the wrong measurement. Pages break
+their rhythm in three different ways, and only one of them greps as a component:
 
-**Fix:** on the twenty highest-traffic pages, break every third or fourth card grid with a
-pull quote from the piece itself, or a statement band carrying the section's claim. No new
-components, no new colours. This is the change that would most alter the impression of
-"unhurried, weighted, grown-up" the brief asks for.
+| Of the 73 card-grid pages | Count |
+|---|---|
+| Use the editorial components | 15 |
+| Hand-roll a voice beat (italic statement on a dark section) | 35 |
+| **Genuinely have no beat** | **23** |
+
+So **50 of 73 already have one.** And most of the remaining 23 are pages where a statement
+band would be wrong: the member dashboard, the quizzes, `/explore` (a search utility), the
+conversion landing pages. Theology looked like a violation — four light sections in a row —
+until I read it and found a `StatementBand` already there, invisible to a background grep
+because the component renders its own `<section>`.
+
+**What was actually fixed — two pages where the problem was real:**
+
+- **`/studyguides`** — roughly sixty cards in one unbroken run between a charcoal hero and
+  the closing, with no claim anywhere about why the collection exists. Split at twelve with
+  a band between the halves, which also restored the cream/charcoal alternation.
+- **`/how-tos`** — ended mid-shelf with no closing section at all. A band gives it a close,
+  says why a theology site keeps practical guides, and puts charcoal back after a long run
+  of bone. Placed after the grid rather than splitting it, because that grid is filtered and
+  a mid-grid break would land somewhere different with every topic chip.
+
+**Not done, deliberately:** Assessments, Resources, and ReadingPaths were on the original
+list and were left alone. Each already closes with its own statement and already alternates.
+Adding a band would have been churn dressed as design work.
 
 ## 5. The nav still asks too much
 
@@ -127,9 +145,8 @@ and use those names everywhere. This is a copy change, not a build.
 
 ## What I would do, in order
 
-1. **Editorial variety on the top twenty pages** (#4). Highest visible payoff, lowest risk,
-   uses components that already exist. This is now the only finding that would visibly
-   change how the site feels.
+1. ~~**Editorial variety** (#4)~~ — done, on the two pages where the problem was real.
+   The other eighteen I had planned did not need it.
 2. ~~**Hardcoded hex** (#3)~~ — done. Twenty-one real dark-mode bugs.
 3. **Add the missing spacing steps** (#2). Zero visual change; stops the hardcoding.
 4. **Name the heading convention** (#1). A token and a doc line, not a redesign.
@@ -140,13 +157,21 @@ and use those names everywhere. This is a copy change, not a build.
 
 ## A correction worth recording
 
-Two of the six findings above — the type scale and the spacing — were **wrong on first
-reading**, and both were wrong the same way: I measured a pattern, saw it deviate from the
-tokens, and assumed deviation meant drift. Looking at what the code was actually doing
-showed the opposite. The fixed heading sizes are a sensible convention; the raw 80px
-paddings exist because the scale has no 5rem step.
+**Three of the six findings above were wrong on first reading** — the type scale, the
+spacing, and the card-grid monotony. Only the hardcoded colours (#3) survived inspection
+intact, and that one turned out to be *worse* than measured once `lib/` was included.
 
-Acting on either as first written would have damaged the site — inflating ninety card
-titles, or shifting the vertical rhythm of seventy-three sections — while reporting it as
-routine cleanup. A measurement is not yet a finding. The count tells you where to look, not
-what is wrong.
+All three failed the same way. I counted a pattern, saw it deviate from the tokens or the
+components, and treated deviation as drift. In every case the code was doing something
+sensible that the count could not see:
+
+- the fixed heading sizes are a component-level convention, not drift;
+- the raw 80px paddings exist because the spacing scale has no 5rem step;
+- pages break their card grids with hand-rolled statements that no component grep finds.
+
+Acting on any of them as first written would have damaged the site — inflating ninety card
+titles, shifting the rhythm of seventy-three sections, or larding fifty pages that already
+had a voice with a second one — and each would have been reported as routine cleanup.
+
+**A measurement is not a finding.** The count tells you which file to open. It does not
+tell you what is wrong, and on this codebase it was wrong more often than it was right.
