@@ -22,23 +22,25 @@ It is not a feeling. Both the site and the work on it outgrew their organization
 | Links in the header | 33 |
 | Separate "where do I start" flows | **5** |
 | Competing taxonomies | **2** (the pillars, and the homepage/nav "wings") |
-| True orphans — nothing links to them | **9** |
+| Routes with no literal inbound link | **6** (to verify, not defects) |
 
 A visitor arriving cold meets five front doors that do not agree with each other, and two
 different names for how the writing is organized depending on which page they land on.
 
 **Ninety-seven top-level areas** is the number that best explains the feeling. That is not
-a site with sections; it is a site where almost every page is its own section.
+a site with sections; it is a site where almost every page is its own section. No
+navigation organizes 97 peers — which is why the header carries 33 links and still does
+not feel like it covers anything.
 
 `node scripts/route-inventory.mjs` regenerates all of this from the code, so the next IA
 attempt starts from what is true today rather than a map that ages the moment it is written
-— which is exactly what happened to #216. The nine orphans:
+— which is exactly what happened to #216.
 
-`/articles` · `/authors/:slug` · `/dashboard` · `/for-families` · `/search` · `/substack` ·
-`/the-pastoral-angle` · `/disruption/posture` · `/justice/posture`
-
-`/the-pastoral-angle` is the one worth noticing: it is a **pillar landing page** that
-nothing links to, left stranded when the "For Pastors" nav group was removed.
+Six routes have no literal inbound link: `/articles`, `/authors/:slug`, `/dashboard`,
+`/for-families`, `/search`, `/substack`. **Worth checking, not assuming.** The tool cannot
+see links built from a variable, and three separate passes at this number produced 52, then
+9, then 6 — each earlier figure wrong because a real link was invisible to a regex. The
+count is a list to check by hand, and the script says so.
 
 **The work — the larger half, and the part nobody was tracking.**
 

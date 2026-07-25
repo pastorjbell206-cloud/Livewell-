@@ -85,6 +85,9 @@ const KNOWN_REACHABLE = new Map([
   ["/disruption/topic/:slug", "linked from PropheticHub via `${config.base}/topic/${slug}` — variable prefix"],
   ["/justice/topic/:slug", "same PropheticHub template, variable prefix"],
   ["/quiz", "a vercel.json redirect source (301 → /tools/theology-quiz), never meant to be linked"],
+  ["/the-pastoral-angle", "linked from /pillars via ROUTE_FOR_PILLAR[p.slug] — variable-indexed lookup"],
+  ["/disruption/posture", "linked from PropheticHub via `${config.base}/posture`"],
+  ["/justice/posture", "same PropheticHub template"],
 ]);
 const orphans = publicRoutes.filter(
   (r) => !isReachable(r, targets) && !TRANSACTIONAL.test(r) && !KNOWN_REACHABLE.has(r),
@@ -105,14 +108,17 @@ console.log(`  admin             ${all.length - publicRoutes.length}`);
 console.log(`  distinct areas    ${byArea.size}`);
 console.log(`  post-transaction  ${transactional.length}  (thank-you / success / 404 — reached by redirect, not link)`);
 console.log(`  known-reachable   ${KNOWN_REACHABLE.size}  (linked via a variable or a redirect — see KNOWN_REACHABLE)`);
-console.log(`  ORPHANS           ${orphans.length}  (nothing links to these)\n`);
+console.log(`  UNRESOLVED        ${orphans.length}  (no literal link found — verify by hand)\n`);
 
 console.log("BY AREA (count — largest first)\n");
 for (const [a, rs] of [...byArea.entries()].sort((x, y) => y[1].length - x[1].length)) {
   console.log(`  ${String(rs.length).padStart(3)}  /${a}`);
 }
 
-console.log("\nORPHANS — reachable only by typing the URL\n");
+console.log("\nUNRESOLVED — no literal link found\n");
+console.log("  A static scan cannot prove a route is unreachable: links built from a");
+console.log("  variable (ROUTE_FOR_PILLAR[slug], `${config.base}/posture`) are invisible");
+console.log("  to it. Treat this as a list to check, not a list of defects.\n");
 for (const r of orphans.sort()) console.log(`  ${r}`);
 
 console.log("\nKNOWN-REACHABLE EXCEPTIONS (not orphans)\n");
