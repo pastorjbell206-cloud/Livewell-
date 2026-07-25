@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import ScriptureNote from "@/components/ScriptureNote";
 import { useState } from "react";
 import { ArrowLeft, BookOpen, AlertTriangle, Scale, Lightbulb, ChevronDown, ChevronUp } from "lucide-react";
 
@@ -1165,6 +1166,7 @@ function PassageCard({ passage }: { passage: Passage }) {
               }}
             >
               {passage.text}
+              <ScriptureNote rendering="abridged" />
             </p>
           </div>
 

@@ -1,5 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import ScriptureNote from "@/components/ScriptureNote";
+import { Link } from "wouter";
 import { ToolActions } from "@/components/ToolActions";
 import { useState, useRef } from "react";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer } from "lucide-react";
@@ -651,19 +653,23 @@ export default function FinancialHealth() {
                     marginBottom: "8px",
                   }}
                 >
-                  "{category.scripture.text}"
+                  {category.scripture.text}
                 </p>
-                <span
+                <Link
+                  href={`/theology/passage?ref=${encodeURIComponent(category.scripture.reference)}`}
                   style={{
                     fontFamily: "var(--U)",
                     fontSize: "12px",
                     fontWeight: 600,
                     color: "var(--mustard-text)",
+                    textDecoration: "none",
+                    borderBottom: "1px solid var(--mustard)",
                     letterSpacing: "0.08em",
                   }}
                 >
-                  {category.scripture.reference}
-                </span>
+                  {category.scripture.reference} — read the full passage
+                </Link>
+                <ScriptureNote rendering="unverified" />
               </div>
             </div>
 
@@ -1118,19 +1124,23 @@ export default function FinancialHealth() {
                         marginBottom: "6px",
                       }}
                     >
-                      "{cat.scripture.text}"
+                      {cat.scripture.text}
                     </p>
-                    <span
+                    <Link
+                      href={`/theology/passage?ref=${encodeURIComponent(cat.scripture.reference)}`}
                       style={{
                         fontFamily: "var(--U)",
                         fontSize: "11px",
                         fontWeight: 600,
                         color: "var(--mustard-text)",
+                        textDecoration: "none",
+                        borderBottom: "1px solid var(--mustard)",
                         letterSpacing: "0.08em",
                       }}
                     >
-                      {cat.scripture.reference}
-                    </span>
+                      {cat.scripture.reference} — read the full passage
+                    </Link>
+                    <ScriptureNote rendering="unverified" />
                   </div>
 
                   <div

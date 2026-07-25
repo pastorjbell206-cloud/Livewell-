@@ -10,6 +10,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { useState } from "react";
 import { Link } from "wouter";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import ScriptureNote from "@/components/ScriptureNote";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -112,10 +113,11 @@ export default function Proverbs31() {
             <div style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", color: "var(--mustard-text)", textTransform: "uppercase", marginBottom: "6px" }}>Proverbs {entry.day}</div>
             <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "var(--s-4)" }}>{entry.theme}</h2>
 
+            <ScriptureNote rendering="unverified" />
             <div style={{ display: "grid", gap: "10px", marginBottom: "var(--s-4)" }}>
               {entry.verses.map((v) => (
                 <div key={v.ref} style={{ background: "var(--card)", borderLeft: "3px solid var(--mustard)", padding: "var(--s-3)" }}>
-                  <div style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, letterSpacing: "0.06em", color: "var(--mustard-text)", marginBottom: "6px" }}>{v.ref}</div>
+                  <Link href={`/theology/passage?ref=${encodeURIComponent(v.ref)}`} style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, letterSpacing: "0.06em", color: "var(--mustard-text)", marginBottom: "6px", textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>{v.ref} →</Link>
                   <div style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.65, color: "var(--ink)" }}>{v.text}</div>
                 </div>
               ))}

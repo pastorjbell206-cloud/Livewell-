@@ -8,6 +8,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import ScriptureNote from "@/components/ScriptureNote";
 import { useState } from "react";
 import { Link } from "wouter";
 import { Copy, Check } from "lucide-react";
@@ -288,6 +289,7 @@ export default function BibleOnTopic() {
 
             <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "var(--ink)", marginBottom: "var(--s-4)" }}>{topic.framing}</p>
 
+            <ScriptureNote rendering="paraphrase" />
             <div style={{ display: "grid", gap: "10px" }}>
               {topic.verses.map((v) => (
                 <div key={v.ref} style={{ background: "var(--card)", borderLeft: "3px solid var(--mustard)", padding: "var(--s-3)" }}>

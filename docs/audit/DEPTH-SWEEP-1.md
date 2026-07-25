@@ -172,13 +172,28 @@ the board.
 
 ### Sweep 3 queue (re-ranked, with the reasoning)
 
-1. **The Scripture integrity pass.** Six tools, one standard, one pass: verbatim
-   ESV with the reference travelling with the quote, or the rendering marked as
-   paraphrase. Ship a shared `<ScriptureQuote>` (or a `translation` field on the
-   verse records) so the label cannot be forgotten by the next tool, and add a
-   validator to `scripts/` in the shape of `validate-formation.mjs` so CI holds
-   the line. Highest rank because it is a trust problem, not a polish problem,
-   and because it has now survived two sweeps.
+1. ~~**The Scripture integrity pass.**~~ **Disclosure shipped; sourcing still
+   owed.** `client/src/components/ScriptureNote.tsx` is now the one place a page
+   says what its verse text is, with a **required** `rendering` prop — the
+   compiler, not a reviewer, refuses unlabeled Scripture — and
+   `scripts/validate-scripture.mjs` runs in the CI content gates as the second
+   lock. Eleven tools now declare their rendering and link every reference to
+   the whole passage.
+
+   Two defects surfaced in the doing. `FinancialHealth` (twice) and
+   `PastorBurnout` wrapped unverified text in literal quotation marks,
+   presenting it as quotation — those marks are gone. `Proverbs31`,
+   `PastorBurnout` and `FinancialHealth` printed references as dead text with
+   no way to check them; all now link to `/theology/passage`. The validator
+   also caught `ConflictGuide` and `FinancialHealth`, which a manual read of
+   the corpus had missed — the argument for a gate over a checklist.
+
+   **What is still owed:** this labels the problem honestly, it does not solve
+   it. Most corpora are marked `unverified` because the texts have not been
+   checked word for word against one translation, and `BibleOnTopic` is marked
+   `paraphrase` on the evidence of its own file header. The finishing work is to
+   source each corpus against verbatim ESV and change the rendering to `esv` —
+   a content task needing a real ESV text, not a code task.
 2. **Catechism stubs.** Two of ten creed documents are Q1-only. A library that
    presents itself as the historic confessions and delivers one question is the
    thin-content pattern the board flagged elsewhere. Either finish them or say

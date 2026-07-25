@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import ScriptureNote from "@/components/ScriptureNote";
 import { Link } from "wouter";
 import { useState } from "react";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer, AlertTriangle } from "lucide-react";
@@ -1294,6 +1295,7 @@ export default function ConflictGuide() {
                 >
                   {step.scripture.reference} — read the full passage
                 </Link>
+                <ScriptureNote rendering="unverified" />
               </div>
 
               {/* Warning */}
