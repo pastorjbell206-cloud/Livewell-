@@ -185,7 +185,7 @@ export default function SkepticTrack() {
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "60ch", marginBottom: "22px" }}>
             The same promise as the essays, made interactive. Pick a question, and at every step raise the objection you actually hold and get the honest answer, including what it does not prove. No altar call, no pressure to decide.
           </p>
-          <Link href="/tools/test-the-case" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "13px 26px", borderRadius: "3px", textDecoration: "none" }}>
+          <Link href="/tools/test-the-case" style={{ display: "inline-flex", alignItems: "center", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "13px 26px", borderRadius: "3px", textDecoration: "none", minHeight: "44px" }}>
             Test the case
           </Link>
         </div>

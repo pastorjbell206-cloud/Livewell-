@@ -1420,5 +1420,286 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
       "what-christians-can-learn-from-buddhism",
       "liturgical-vs-contemporary-worship"
     ]
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════
+  // APOLOGETICS: the questions skeptics and doubting Christians bring
+  // ═══════════════════════════════════════════════════════════════════════
+
+  "is-jesus-really-the-only-way": {
+    slug: "is-jesus-really-the-only-way",
+    articleTitle: "Is Jesus Really the Only Way?",
+    personalReflection: [
+      "The essay says this question rarely arrives as a doctrine. It arrives as a face across the table, someone grieving a person who prayed to another God. Whose face do you see when you think about this question?",
+      "James writes that as an atheist he found this claim not merely improbable but obscene. Which Christian claim do you find hardest to say out loud in mixed company, and what does that reluctance tell you?",
+      "The essay argues that pluralism does not refuse the total claim, it makes one and calls the refusal humility. Where have you mistaken a confident position for a neutral one, in yourself?"
+    ],
+    groupDiscussion: [
+      "Work through the parable of the blind men and the elephant together. Who is telling the story, and what does the teller have to claim in order to tell it? Does that observation change the force of the parable for you?",
+      "Peter said there is no other name under heaven by which we must be saved while standing trial before the council that had just killed his teacher. How does the setting of that sentence change how it should be spoken today?",
+      "The essay ends by asking the reader to refuse Christ for being too particular rather than for being arrogant. Is that a fair place to leave a skeptic? What would you add, and what would you refuse to add?"
+    ],
+    actionStep: "This week, have one conversation with someone who does not share your faith in which you do not defend anything. Ask what they actually believe and why, and listen until you could state their view in a form they would sign.",
+    openingPrayer: "God who came near enough to touch, we come carrying a claim that has been used as a weapon and was first spoken by men on trial. Teach us the difference. Give us the honesty to hold what is true without holding it over anyone.",
+    closingPrayer: "Lord, we do not know what you will do with the ones we love who never called on your name, and we will not pretend to. We know what you were willing to spend. Let that be enough to steady us, and send us back to the people you put in front of us.",
+    suggestedReading: [
+      "what-about-those-who-never-heard",
+      "christianity-and-islam",
+      "did-the-resurrection-happen"
+    ]
+  },
+
+  "does-god-actually-exist": {
+    slug: "does-god-actually-exist",
+    articleTitle: "Does God Actually Exist?",
+    personalReflection: [
+      "The essay says nobody talks themselves out of God the way debates pretend, that unbelief happens the way weather happens. What formed the air you breathed growing up, and how much of your belief or unbelief came from argument at all?",
+      "Charles Taylor's immanent frame names the sense that the world is a closed system with no window in the ceiling. Where do you notice that frame operating in your own instincts, even as a believer?",
+      "James writes that his atheism could be stated but not inhabited. Where is the gap between what you say you believe and how you actually live?"
+    ],
+    groupDiscussion: [
+      "Take the strongest objection in the essay seriously first: Schellenberg's argument that a perfectly loving God would not leave the honest seeker in silence. Has anyone in the group lived that silence? What did you do with it?",
+      "The essay argues that to avoid a set-up universe the naturalist posits an infinity of universes he can never observe, and calls this faith in a lab coat. Is that fair? Where do you see faith operating inside supposedly neutral positions?",
+      "Pascal said God gives enough light for those who desire to see and enough darkness for those who do not. Does that sound like an excuse for a hidden God, or like an accurate description of how people actually come to believe?"
+    ],
+    actionStep: "Write down the strongest argument against your own position, in the form its best defender would sign. Keep it where you will see it. A conviction that has never met its opposition is not yet a conviction.",
+    openingPrayer: "God who is not obvious, we come as people who have believed and doubted in the same week. Meet us in the room where the arguments run out. We are not asking to be overwhelmed. We are asking to be met.",
+    closingPrayer: "Lord, we have all been practiced at not seeing what we did not want to owe. Undo that practice in us. Give us the honesty to follow what is true even when it costs us the comfort of not knowing.",
+    suggestedReading: [
+      "can-you-be-good-without-god",
+      "is-faith-just-wishful-thinking",
+      "the-atheist-in-the-pulpit"
+    ]
+  },
+
+  "what-about-those-who-never-heard": {
+    slug: "what-about-those-who-never-heard",
+    articleTitle: "What About Those Who Never Heard?",
+    personalReflection: [
+      "The essay names this as the question that has emptied more pews than atheism ever did. Who taught you the answer you currently hold, and have you ever tested it against the text?",
+      "James says the people who told you they knew, in either direction, told you something the text withholds. Where else have you accepted a confident answer to a question Scripture leaves open?",
+      "Abraham argued with God about the justice of his judgment and was not rebuked for it. What have you been afraid to say to God about his fairness?"
+    ],
+    groupDiscussion: [
+      "Read Romans 10:14 and Romans 2:14 to 15 side by side. Let one person state the restrictivist case in its strongest form and another state the inclusivist case in its strongest form. Can the group tell which one the essay lands on?",
+      "The essay says the uncertainty cuts toward mission, not away from it. Does that hold? Would a group that adopted this view send more people or fewer?",
+      "God answered Abraham's demand for justice not with a policy but with his own character. Is that a satisfying answer for the person grieving a specific unbeliever? What does it give, and what does it withhold?"
+    ],
+    actionStep: "Name one person you love who died outside the faith, or one people group you have never once prayed for. Pray for the Judge to do what is just, and let the prayer be as honest as Abraham's.",
+    openingPrayer: "Judge of all the earth, we come with a question that has broken people we love. We are not asking you to make it small. We are asking you to be what you have always claimed to be, and to let us see enough of it to stand.",
+    closingPrayer: "Lord, you did not hand us the roster. You handed us yourself, and a cross, and a road to walk. Keep us from the arrogance of certainty and the paralysis of doubt, and send us back to the road.",
+    suggestedReading: [
+      "is-jesus-really-the-only-way",
+      "does-hell-exist",
+      "is-hell-eternal"
+    ]
+  },
+
+  "can-you-be-good-without-god": {
+    slug: "can-you-be-good-without-god",
+    articleTitle: "Can You Be Good Without God?",
+    personalReflection: [
+      "The essay opens by conceding that the best man in the neighborhood was an atheist. Who is the most morally serious unbeliever you know, and has your theology ever had to account for them honestly?",
+      "James distinguishes between behaving well and being able to say what good is. Have you ever confused the two when defending your faith?",
+      "When you call something truly wrong, are you reporting a fact about the world or a fact about your feelings? Sit with the answer before you give it."
+    ],
+    groupDiscussion: [
+      "Work the Euthyphro dilemma together: is a thing good because God commands it, or does God command it because it is good? Then consider the third door the essay proposes, that goodness is what God is. Does that resolve it or relocate it?",
+      "The essay steelmans secular moral realists who ground objective morality without God, and calls it a serious position. What is the strongest version of that view, and what does it cost?",
+      "Paul says the work of the law is written on the hearts of people who never had the law. How should that change the way Christians talk to moral unbelievers?"
+    ],
+    actionStep: "Find one place this week where you treated a moral conviction as obvious rather than grounded. Trace it back. Ask what it would take for that conviction to be true and not merely felt.",
+    openingPrayer: "God whose own character is the good, we come as people who have often been worse than our beliefs and have known unbelievers who were better than theirs. Save us from using this conversation to feel superior. Give us the truth instead.",
+    closingPrayer: "Lord, we have all lived as though some things were simply, permanently wrong, on a floor we could not account for. The floor held. Teach us to ask honestly who laid it, and to treat every person made in your image as though the answer mattered.",
+    suggestedReading: [
+      "does-god-actually-exist",
+      "meaning-without-god",
+      "if-god-is-good-why-suffering"
+    ]
+  },
+
+  "did-god-command-genocide": {
+    slug: "did-god-command-genocide",
+    articleTitle: "Did God Command Genocide?",
+    personalReflection: [
+      "The essay says a person who reads the conquest texts and feels sick is reading them correctly. Have you been taught to move past that feeling quickly? What did that cost you?",
+      "James admits he used these texts to win arguments against Christians. Which parts of Scripture have you avoided rather than faced?",
+      "The essay ends holding a difficulty rather than closing a case. Are you able to trust God with a question you cannot resolve, and what would that require of you?"
+    ],
+    groupDiscussion: [
+      "Read Deuteronomy 20:16 and 1 Samuel 15:3 aloud. Do not rush to defend them. What does the group actually feel, and what does the church usually do with that feeling?",
+      "The ancient Near Eastern war-report convention, argued by scholars like Younger and Kitchen, suggests total-annihilation language was the idiom of decisive victory rather than a literal census, and the same peoples appear alive two chapters later. Does that ease the difficulty, and how much?",
+      "Jesus takes the sword out of Peter's hand. What does that do to any modern attempt to use these texts as warrant for violence, and where have you seen that attempt made?"
+    ],
+    actionStep: "Read Joshua 6 through 11 alongside Judges 1 through 3 this week. Notice what the later text says about the peoples the earlier text says were destroyed. Write down what you find, including what still troubles you.",
+    openingPrayer: "God of the whole book, we come to the pages we would rather skip. We will not pretend they are easy, and we will not pretend you owe us comfort. Give us the courage to read honestly and stay.",
+    closingPrayer: "Lord, we leave still carrying this. Keep us from the false peace of an answer that costs nothing, and from the despair of a question that ends the conversation. Hold us in the difficulty until you are ready to say more.",
+    suggestedReading: [
+      "why-didnt-the-bible-ban-slavery",
+      "why-trust-the-bible",
+      "if-god-is-good-why-suffering"
+    ]
+  },
+
+  "why-didnt-the-bible-ban-slavery": {
+    slug: "why-didnt-the-bible-ban-slavery",
+    articleTitle: "Why Didn't the Bible Just Ban Slavery?",
+    personalReflection: [
+      "The essay says the Bible never manages four words: own no human being. Sit with that absence before you explain it. What does it stir in you?",
+      "Whitefield lobbied to legalize slavery in Georgia and Edwards owned people. How do you hold the good you have received from teachers who were badly wrong?",
+      "Frederick Douglass distinguished the Christianity of Christ from the slaveholding religion of the land. Which of those two would an honest outsider say your church most resembles?"
+    ],
+    groupDiscussion: [
+      "Exodus 21:16 puts a death sentence on manstealing, which condemns the Atlantic trade at its root, and sits three verses from the text slaveholders quoted. What does that tell you about how the Bible gets used?",
+      "The essay argues abolition grew largely from Christian conviction turning the Bible's own logic against the institution. Is that a defense of Scripture or an indictment of the church that took so long?",
+      "Where might our own generation be reading Scripture the way the slaveholders did, taking the verses that serve us and ignoring the ones that judge us?"
+    ],
+    actionStep: "Identify one social arrangement you benefit from that you have never examined theologically. Bring it to Scripture this week, and bring it to someone who is not advantaged by it.",
+    openingPrayer: "God who heard the cry from Egypt, we come as people who have been on both sides of this history, and whose churches sang while others were sold. Do not let us tell this story to our own advantage.",
+    closingPrayer: "Lord, you hid a death sentence in the slaveholder's own law and called the owned man a brother. Give us eyes to see where we are still reading past you, and the courage to be turned by what we find.",
+    suggestedReading: [
+      "did-god-command-genocide",
+      "why-trust-the-bible",
+      "is-jesus-really-the-only-way"
+    ]
+  },
+
+  "is-faith-just-wishful-thinking": {
+    slug: "is-faith-just-wishful-thinking",
+    articleTitle: "Is Faith Just Wishful Thinking?",
+    personalReflection: [
+      "The essay concedes that much of what gets called faith really is projection, a god assembled from a person's fears and preferences. Where has your picture of God been suspiciously convenient?",
+      "James names a boy raised without a father who found relief in a sky with no Father in it. What do you want to be true, and how might that wanting be shaping what you believe?",
+      "A wish-god does not bleed. What does it mean that the God at the center of this faith makes demands you cannot meet and dies a criminal's death?"
+    ],
+    groupDiscussion: [
+      "Feuerbach and Freud argued that God is a projection of human need. State that case at its strongest before answering it. What does it explain well?",
+      "The genetic fallacy says explaining why someone believes a thing tells you nothing about whether it is true. Apply it in both directions. Does it weaken the objection as much as the essay claims?",
+      "Thomas Nagel, no friend of religion, admitted he did not want there to be a God. What would it look like for this group to examine its own wants as honestly as it examines a skeptic's?"
+    ],
+    actionStep: "Write two lists this week: what you want to be true about God, and what you would rather not be true. Then ask which list your theology more closely resembles.",
+    openingPrayer: "Holy God, we have made you in our image more often than we would like to admit. Come as you are and not as we prefer. We would rather be undone by the real than comforted by the invented.",
+    closingPrayer: "Lord, the crutch was real, and it was in our other hand. Give us the nerve to ask of ourselves what we ask of the skeptic, and to want the truth more than we want to be right.",
+    suggestedReading: [
+      "does-god-actually-exist",
+      "is-faith-irrational",
+      "the-atheist-in-the-pulpit"
+    ]
+  },
+
+  "is-faith-irrational": {
+    slug: "is-faith-irrational",
+    articleTitle: "Is Believing Anything on Faith Irrational?",
+    personalReflection: [
+      "The essay grants that the church has often praised not-thinking as a virtue and used just have faith as a lid on a pot it did not want boiling. Where have you seen that, and where have you done it?",
+      "Biblical faith is trust with a track record, not belief without evidence. Whose track record have you actually examined, and whose have you simply inherited?",
+      "The essay says the writer called his own position pure reason and had never counted the trust underneath it. What do you trust without proof, every day, without noticing?"
+    ],
+    groupDiscussion: [
+      "Take Clifford's rule seriously: it is wrong always and everywhere to believe anything on insufficient evidence. Try to live by it for a day in your imagination. What breaks first?",
+      "Hume could not argue his way out of the problem of induction, and Polanyi argued all knowing rests on tacit commitment. If reason itself runs on trust, does the faith-versus-reason framing survive?",
+      "Mark 9:24 is a father saying he believes and asking help for his unbelief in the same breath. Is that a failure of faith or a picture of it? What would it change if your group could say it out loud?"
+    ],
+    actionStep: "Name one belief you hold that you have never examined, religious or not. Spend an hour this week finding out whether the trust you place in it is warranted.",
+    openingPrayer: "God who invited us to come and reason together, we come with minds you made and doubts you are not afraid of. Save us from a faith that cannot bear a question and a reason that will not admit its own trust.",
+    closingPrayer: "Lord, we believe. Help our unbelief. Keep us from pretending to a certainty we do not have, and from using our doubts as a reason to stop reaching.",
+    suggestedReading: [
+      "is-faith-just-wishful-thinking",
+      "does-god-actually-exist",
+      "why-trust-the-bible"
+    ]
+  },
+
+  "what-new-atheists-got-right": {
+    slug: "what-new-atheists-got-right",
+    articleTitle: "What the New Atheists Got Right",
+    personalReflection: [
+      "The essay says a believer who cannot concede what the New Atheists got right has understood neither the men nor the faith. What is the strongest true thing an atheist has ever said to you about the church?",
+      "James admits he cheered these men and would have followed them off a cliff. What did you once believe passionately that you now hold differently, and what changed it?",
+      "Religion has blood on it, and the essay does not soften that. Which failure of the church is hardest for you to look at without flinching?"
+    ],
+    groupDiscussion: [
+      "Take Hitchens's charge that religion poisons everything as a serious indictment rather than a slogan. Where is it true? Be specific about your own tradition before you answer for anyone else's.",
+      "The essay names two overreaches: treating the worst of religion as its essence while treating the worst of secularism as an aberration, and testing God as a hypothesis inside the universe. Are both fair criticisms?",
+      "Jesus said harder things about religious professionals than Hitchens managed. What does it mean that the indictment was already inside the book, in red letters?"
+    ],
+    actionStep: "Read one chapter by a serious critic of Christianity this week, and write down the strongest point they make that you cannot yet answer. Bring it to someone rather than burying it.",
+    openingPrayer: "God who is not defended by our dishonesty, we come ready to hear true things from people who do not believe in you. Take away our defensiveness. We would rather be corrected than comfortable.",
+    closingPrayer: "Lord, they were right about the church we were leaving and wrong about the God we had not met. Make us the kind of people whose lives make the second half of that sentence believable.",
+    suggestedReading: [
+      "is-faith-just-wishful-thinking",
+      "the-atheist-in-the-pulpit",
+      "does-god-actually-exist"
+    ]
+  },
+
+  "meaning-without-god": {
+    slug: "meaning-without-god",
+    articleTitle: "Can a Life Mean Anything Without God?",
+    personalReflection: [
+      "The essay says the church invented a miserable nihilist to feel better, and he does not exist. Have you ever needed unbelievers to be unhappy in order to feel secure?",
+      "Meaning you invent, you can also un-invent. Has there been a night when the meaning you had assigned to your life stopped working?",
+      "Tolstoy had won by every measure and hid a rope from himself. What are you achieving that would not survive that test?"
+    ],
+    groupDiscussion: [
+      "Take Camus seriously: the universe is silent, and the honest response is revolt, imagining Sisyphus happy. What is genuinely admirable in that, and what does it cost?",
+      "The essay distinguishes meaning you hold up from meaning that holds you up, and says on a good day you cannot tell the difference. How would you know which you have?",
+      "Ecclesiastes puts the hardest form of the question inside the canon and no council voted it out. Why do you think the church so rarely preaches it?"
+    ],
+    actionStep: "Ask someone outside the faith what makes their life meaningful, and do not evangelize. Listen for what they are standing on, and afterward ask the same question of yourself.",
+    openingPrayer: "God who made a world we did not invent, we come as people who have built meaning with our own hands and watched it hold and watched it fail. Show us what is actually underneath us.",
+    closingPrayer: "Lord, we have spent good years holding things up. Teach us the difference between what we carry and what carries us, and be the second thing when the first gives out.",
+    suggestedReading: [
+      "can-you-be-good-without-god",
+      "does-god-actually-exist",
+      "the-cost-of-following"
+    ]
+  },
+
+  "are-miracles-believable": {
+    slug: "are-miracles-believable",
+    articleTitle: "Are Miracles Believable?",
+    personalReflection: [
+      "The essay concedes that most miracle claims are false or embellished, and that Christians who believe every viral healing story have earned the skeptic's scorn. Where has your own credulity been a problem?",
+      "James says he did not have an argument against miracles, he had a definition doing an argument's work. Where are you letting a definition settle a question you have not examined?",
+      "If God is even possible, a miracle is not a crack in the machine but a signature. Does that reframing change anything for you, or does it feel like a move?"
+    ],
+    groupDiscussion: [
+      "State Hume's argument at full strength: no testimony suffices unless its falsehood would be more miraculous than the event. Why has it persuaded so many people who have never read him?",
+      "The philosopher John Earman, who is no apologist, called the argument circular because uniform experience against miracles assumes the very case in question. Does that criticism land?",
+      "The essay says the real question is authorship, not frequency. If that is right, what would count as evidence for a miracle, and would this group actually accept it?"
+    ],
+    actionStep: "Notice this week where you dismiss a claim by category rather than by evidence, in any area of life. Write down what it would take to change your mind, and whether anything could.",
+    openingPrayer: "God who made the regularities and is not trapped by them, we come with minds trained to rule you out before we look. Loosen that grip enough for us to weigh what is actually in front of us.",
+    closingPrayer: "Lord, Paul staked everything on an event and not a feeling, and asked to be weighed rather than believed blindly. Give us the honesty to put the question on the scale instead of refusing, in advance, to look.",
+    suggestedReading: [
+      "did-the-resurrection-happen",
+      "is-faith-irrational",
+      "does-god-actually-exist"
+    ]
+  },
+
+  "natural-evil-and-animal-suffering": {
+    slug: "natural-evil-and-animal-suffering",
+    articleTitle: "The Suffering God Never Ordered",
+    personalReflection: [
+      "Free will explains the torturer. It explains nothing about the earthquake or the childhood cancer. Which kind of suffering has actually shaken your faith?",
+      "The essay refuses to hand a grieving person a tidy theodicy. Has anyone ever handed you one? What did it do?",
+      "Romans 8 says creation itself was subjected to futility and groans. Does it help to know that Scripture does not call the present arrangement the intended one?"
+    ],
+    groupDiscussion: [
+      "Sit with William Rowe's example of the fawn dying alone in a forest fire with no one to witness or learn from it. Do not answer it quickly. What does the group want to say, and what should it refuse to say?",
+      "The essay suggests a stable, law-governed world may be the price of any world where embodied creatures can act and love, and immediately admits this does not close the fawn. Is that honesty helpful or unsatisfying?",
+      "God answered Job with his own presence and the wildness of creation rather than an explanation. Why do you think that was the answer, and would it be enough for you?"
+    ],
+    actionStep: "Sit with someone in your church who is suffering and do not explain anything. Bring food or silence. Let presence be the whole of your theology for one visit.",
+    openingPrayer: "God who entered the suffering rather than explaining it from a distance, we come carrying what we cannot make sense of. We are not asking for a theory. We are asking for you.",
+    closingPrayer: "Lord, we leave without the answer and we are not pretending otherwise. Keep us near the people who are hurting, and keep us honest about what we do not know, until the day you make it right.",
+    suggestedReading: [
+      "if-god-is-good-why-suffering",
+      "does-god-actually-exist",
+      "did-god-command-genocide"
+    ]
   }
+
 };
