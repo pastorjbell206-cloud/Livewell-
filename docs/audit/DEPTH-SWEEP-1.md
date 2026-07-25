@@ -128,3 +128,78 @@
 5. **Prerender coverage** — /plans, /resources/context, /resources/creeds, /theology/history, per-book sermons, wisdom per-topic routes (100+ pages invisible to search).
 6. **Structured data** — ItemList/Book on HardIssuesSeries, Table, Theology; per-topic routes for wisdom.
 7. **Depth top-ups** — creeds catechisms beyond Q1; DiscipleshipTable real multi-week arcs; PrayerGenerator voice pass.
+
+---
+
+## Sweep 2 verification pass (2026-07-25)
+
+> Every item in the queue above was re-checked against the working tree at
+> `main` — not from memory, and not from the PR titles that claimed to close
+> them. Method is recorded per row so the next reader can re-run it. Four of
+> seven are genuinely closed. The one the board called **the single
+> highest-priority depth fix** is still fully open.
+
+| # | Item | Status | Evidence |
+|---|---|---|---|
+| 1 | PostChristian tier lists | **Closed** | All 60 page slugs now match `api/post-christian-articles.json` 1:1 (0 missing); `numberOfItems: 60` is accurate |
+| 2 | Pillar-hub teaching | **Partial** | `/doubt` deepened to 6 prose blocks (symptom→cause→wisdom). Marriage + Parenting carry 1 orientation paragraph each; their card grids now resolve (all 3 Marriage `/read/essays-marriage-*` targets exist) and both pages are fully tokenized — zero hardcoded hex |
+| 3 | LifeIndex | **Closed** | `fetchJson` + `LoadFailed` present (4 refs); zero hardcoded hex |
+| 4 | Scripture integrity, remaining tools | **Open** | VerseFinder, BibleOnTopic, ParentingVerses, Proverbs31, ScriptureMemory, BibleReference: **zero** name a translation. Worse than the sweep-1 finding — the corpus is *mixed*, unlabeled (see below) |
+| 5 | Prerender coverage | **Closed** | `prerender-heads.mjs` reports **0 uncovered routes**: 169 route heads from SEOMeta literals, 681/681 essays, 617 library pages, 1,746 per-route HTML files |
+| 6 | Structured data | **Partial** | HardIssuesSeries has `ItemList`. Table and Theology still emit **no** `structuredData` at all. FAQ answer pages gained `BreadcrumbList` (PR #483) |
+| 7 | Depth top-ups | **Open** | `heidelberg-catechism-q1.json` and `westminster-shorter-catechism-q1.json` remain Q1-only stubs |
+
+### The finding that got worse on inspection
+
+Sweep 1 called the unnamed translations "mostly reading as NIV." That was too
+generous. The verse corpus across the tools is **mixed translations, none
+labeled**:
+
+- `VerseFinder` — Philippians 4:6-7 renders "in every situation… which
+  transcends all understanding": **NIV**.
+- `ParentingVerses` — Psalm 139:13-14 renders "you knitted me together in my
+  mother's womb": **ESV**.
+- `Proverbs31` — Proverbs 1:7 renders "the beginning of knowledge": **ESV**.
+
+Two rules are broken at once. `CLAUDE.md` sets ESV as the default and requires
+the translation be named when the choice is doing work; it also requires that
+quotation be verbatim or marked as paraphrase. A reader memorizing from
+`ScriptureMemory` cannot tell which text they are committing, and a pastor
+handing a sheet to a congregation cannot cite it. This is the
+fabricated-authority class of problem — the one trap `CLAUDE.md` says ends
+trust rather than merely breaking a build — and it is the oldest open item on
+the board.
+
+### Sweep 3 queue (re-ranked, with the reasoning)
+
+1. **The Scripture integrity pass.** Six tools, one standard, one pass: verbatim
+   ESV with the reference travelling with the quote, or the rendering marked as
+   paraphrase. Ship a shared `<ScriptureQuote>` (or a `translation` field on the
+   verse records) so the label cannot be forgotten by the next tool, and add a
+   validator to `scripts/` in the shape of `validate-formation.mjs` so CI holds
+   the line. Highest rank because it is a trust problem, not a polish problem,
+   and because it has now survived two sweeps.
+2. **Catechism stubs.** Two of ten creed documents are Q1-only. A library that
+   presents itself as the historic confessions and delivers one question is the
+   thin-content pattern the board flagged elsewhere. Either finish them or say
+   on the page that an excerpt is what is on offer.
+3. **Table + Theology structured data.** Two of the deepest hubs emit none.
+   `getBreadcrumbSchema` and an `ItemList` are already in `SEOMeta.tsx`; this is
+   the same edit the FAQ pages just took, at hub scale.
+4. **Marriage and Parenting, to the `/doubt` standard.** Both have a real
+   opening paragraph and working destinations — the shells are gone. What is
+   missing is the middle: the cause beneath the symptom before the links begin.
+   One prose movement each, not a rewrite.
+5. **The linking pass** (carried from sweep 1, still unstarted). BibleReference
+   and DeepBibleCompanion remain the richest bodies with the fewest ways in or
+   out. Deep-linkable URLs plus essay cross-links.
+6. **DiscipleshipTable multi-week arcs; PrayerGenerator voice pass.** The two
+   remaining "static generator" tools.
+
+### Standing note for whoever runs sweep 3
+
+The four closed items were closed by work that did not always announce itself
+as closing them — LifeIndex and prerender coverage came in under other PRs.
+Verify before scheduling. Conversely, do not read a merged PR title as a closed
+audit row: item 4 has been listed as the top priority since sweep 1 and has
+never been touched.
