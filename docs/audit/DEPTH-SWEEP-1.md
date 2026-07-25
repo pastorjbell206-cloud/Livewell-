@@ -212,10 +212,34 @@ the board.
    opening paragraph and working destinations — the shells are gone. What is
    missing is the middle: the cause beneath the symptom before the links begin.
    One prose movement each, not a rewrite.
-5. **The linking pass** (carried from sweep 1, still unstarted). BibleReference
-   and DeepBibleCompanion remain the richest bodies with the fewest ways in or
-   out. Deep-linkable URLs plus essay cross-links.
-6. **DiscipleshipTable multi-week arcs; PrayerGenerator voice pass.** The two
+5. ~~**The linking pass**~~ **Done for the two named tools.** BibleReference had
+   **zero** links out across 1,697 lines; every one of its 82 passages now links
+   to `/theology/passage`, with compound citations split so all three parts of
+   "Proverbs 10:4; 13:11; 22:7" are reachable rather than only the first.
+   DeepBibleCompanion's flagship passage view gained the same. Both had a
+   `ScriptureNote` telling the reader to "follow any reference" on a page with
+   no reference to follow — the note shipped in PR #488 wrote a cheque those two
+   pages could not cash, and this is what makes it good.
+
+   Also fixed here: a `<ScriptureNote>` (a `<p>`) nested **inside** a `<p>` in
+   BibleReference — invalid HTML, introduced by #488. A scan confirmed it was
+   the only such instance. DeepBibleCompanion's "more books coming soon" copy
+   was genuinely stale (all 20 listed books have worked passages) and is now
+   counted from the data rather than asserted, so it cannot drift again.
+
+   **BibleStudy, partly struck.** Sweep 1 recorded "all 12 companion essay links
+   are the same generic URL". The URL repetition is real, but the reader is not
+   misled: the card reads "COMPANION READING — Essays on reading Scripture well"
+   and delivers exactly that, a theology-track listing. No false promise, so no
+   invented mapping. The real defect there was different — a raw `<a>` on an
+   internal route, forcing a full SPA reload — now a wouter `<Link>`.
+
+6. **Raw internal anchors, site-wide (new).** 29 `<a href="/…">` across 20 files
+   bypass client-side routing, reloading the whole app and dropping reader state.
+   Fixed in the two files this pass touched. **Do not sweep this blindly** — some
+   are deliberate: `ErrorBoundary` wants a hard reload to recover, and the admin
+   shell may too. Needs a per-file judgement, not a regex.
+7. **DiscipleshipTable multi-week arcs; PrayerGenerator voice pass.** The two
    remaining "static generator" tools.
 
 ### Standing note for whoever runs sweep 3

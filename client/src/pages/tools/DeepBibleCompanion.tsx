@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import ScriptureNote from "@/components/ScriptureNote";
+import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 
 interface KeyWord { word: string; original: string; meaning: string; }
@@ -2166,7 +2167,14 @@ export default function DeepBibleCompanion() {
               </div>
             )}
             <h2 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.5rem", fontWeight: 400, color: "var(--ink, #14110C)", marginBottom: "0.5rem" }}>Choose a book</h2>
-            <p style={{ fontSize: "0.85rem", color: "var(--ink-muted)", marginBottom: "2rem" }}>Books with full study content are highlighted. More books coming soon.</p>
+            {/* Counted from the data, not asserted. The old copy promised that
+                some books were placeholders long after every listed book had
+                worked passages, so it described a shelf that no longer existed. */}
+            <p style={{ fontSize: "0.85rem", color: "var(--ink-muted)", marginBottom: "2rem" }}>
+              {BOOKS.every((b) => b.passages.length > 0)
+                ? `All ${BOOKS.length} books below have worked passages. Open one to begin.`
+                : `${BOOKS.filter((b) => b.passages.length > 0).length} of ${BOOKS.length} books have worked passages; the rest are marked.`}
+            </p>
 
             {["OT", "NT"].map(testament => (
               <div key={testament} style={{ marginBottom: "2rem" }}>
@@ -2289,6 +2297,24 @@ export default function DeepBibleCompanion() {
                     {selectedPassage.text}
                   </blockquote>
                   <ScriptureNote rendering="unverified" />
+                  {/* The note tells the reader to follow a reference. The
+                      flagship study tool had no way out to the passage itself. */}
+                  <p style={{ margin: "0 0 2rem" }}>
+                    <Link
+                      href={`/theology/passage?ref=${encodeURIComponent(selectedPassage.ref)}`}
+                      style={{
+                        fontFamily: "var(--U, Inter, sans-serif)",
+                        fontSize: "0.8rem",
+                        fontWeight: 600,
+                        color: "var(--mustard-text)",
+                        textDecoration: "none",
+                        borderBottom: "1px solid var(--mustard, #D4A017)",
+                        paddingBottom: "1px",
+                      }}
+                    >
+                      {selectedPassage.ref} — read the whole passage →
+                    </Link>
+                  </p>
                   <h4 style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", marginBottom: "0.75rem" }}>Plain-English Paraphrase</h4>
                   <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--ink, #14110C)", marginBottom: "2rem" }}>{selectedPassage.paraphrase}</p>
                   <h4 style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", marginBottom: "0.75rem" }}>Key Words</h4>
@@ -2475,7 +2501,7 @@ export default function DeepBibleCompanion() {
             If this companion is your kind of study, the book behind it is <em>How to Read the Bible — Without Making It Say What You Already Believe</em>.
           </p>
           <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="/how-to-read-the-bible" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Read about the book</a>
+            <Link href="/how-to-read-the-bible" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Read about the book</Link>
           </div>
         </div>
       </section>
