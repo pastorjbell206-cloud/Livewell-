@@ -1,16 +1,17 @@
 # State of the site — the one page
 
 The single place to look. If something is being worked on, waiting on a decision, or
-already done, it is on this page. When it changes, change it here rather than starting a
-new document.
+already done, it is here. When it changes, change it here rather than starting a new
+document.
 
-Last updated: 25 July 2026.
+Last updated: 25 July 2026. **All 18 substantive pull requests have now been read** — the
+diffs, not just the titles — and checked against the current tree.
 
 ---
 
 ## 1. Why it feels jumbled
 
-It is not a feeling. Both the site and the work on it have outgrown their organization.
+It is not a feeling. Both the site and the work on it outgrew their organization.
 
 **The site.**
 
@@ -19,121 +20,110 @@ It is not a feeling. Both the site and the work on it have outgrown their organi
 | Routes | 262 |
 | Page components | 240 |
 | Links in the header | 33 |
-| Links in the nav data | 50 |
 | Separate "where do I start" flows | **5** |
-| Competing taxonomies | **2** (the five pillars, and the homepage/nav "wings") |
+| Competing taxonomies | **2** (the pillars, and the homepage/nav "wings") |
 
-A visitor arriving cold meets five different front doors that do not agree with each
-other — `/start`, `/start-here`, `/diagnostic`, `/tools/which-lens`,
-`/theology/which-view` — and two different names for how the writing is organized
-depending on whether they read the homepage or `/pillars`. Nothing here is badly made.
-There is simply more of it than any one person can hold, and no single spine.
+A visitor arriving cold meets five front doors that do not agree with each other, and two
+different names for how the writing is organized depending on which page they land on.
 
-**The work.** This is the larger half of the problem, and it is the part nobody has been
-tracking.
+**The work — the larger half, and the part nobody was tracking.**
 
-- **30 open pull requests.** 12 are automated dependency bumps. **18 are real work.**
-- The oldest has been open **51 days**.
-- Several overlap each other. At least one is now obsolete.
-- They come from many different sessions, none of which could see the others.
+30 open pull requests. 12 are dependency bumps; **18 are real work**, the oldest open 51
+days, from sessions that could not see each other. Work has been started faster than it is
+finished.
 
-That is why it feels scattered: **work is being started faster than it is being finished.**
-Each session opens a branch, does good work, and leaves it in draft. Nothing is wrong with
-any individual piece. The pile is the problem.
+The clearest evidence: **two separate PRs each found a real bug, and both bugs were still
+live weeks later** because the PR was never merged and nobody re-derived the finding.
+Both are now fixed (see §3).
 
 ---
 
-## 2. The 18 real pull requests, triaged
+## 2. The 18 pull requests, triaged
 
-I have read the titles, branches, and ages — **not** the diffs. The verdicts below are a
-starting point for a proper triage, not a substitute for one.
+Read in full. Verdicts are against the current tree, not the PR's own base.
 
-Everything older than about two weeks predates two large changes on
-`claude/sweet-galileo-xykZR` (the pastor removal, which touched ~285 files, and the
-dark-mode standardization, ~150 files). **Most of these will conflict badly.** For older
-branches it is usually cheaper to re-do the work on top of current `main` than to untangle
-the merge.
+### Merge — clean, still wanted
 
-### Merge or close first — they are resolved or obsolete
-
-| PR | Age | What to do |
+| PR | What it is | Note |
 |---|---|---|
-| **#459** dark mode, PCN move, Family tab, audit fixes | 7d | **Merge.** All gates green, preview verified. This is the current work. |
-| **#214** email-gate the pastor Hard Issues booklets | 34d | **Close.** Obsolete — the pastor material moved to PCN, so there is nothing left to gate. |
-| **#107, #108** backend ADRs | 51d | **Merge or close.** Docs only, no conflict risk. If the decisions still hold, merge; if not, close. |
-| **#106** security and CI hardening | 51d | **Review and merge.** Called "low-risk"; security work should not sit for 51 days. |
-| 12 dependabot PRs | — | **Batch them.** Merge in one sitting, oldest first, letting CI gate each. They are noise on the list and a security liability while open. |
+| **#376** a11y main landmarks | **The missing half of this branch's own a11y work.** Superseded — fixed directly here instead. **Close it.** |
+| **#486** group guides batch 3 | Adds 5 guides, 85 → 90, coverage complete. All refs verified live. One file, pure append, `clean`. **Merge.** |
+| **#377** depth-board docs | Single new docs file, no code, no collision. **Merge.** |
 
-### The ones that overlap work already done
+### Close — already landed, or superseded
 
-| PR | Age | Note |
-|---|---|---|
-| **#376** add the `main` landmark to pages rendering nav/footer | 14d | Overlaps #459, which put a skip link in the nav and `<main id="main">` on the pages that bypass Layout. **Check what is left before merging.** |
-| **#375** crisis-help coverage + advice disclaimers | 14d | Overlaps #459's `/help` work. Likely still has real content in it. **Re-check against current `/help`.** |
+| PR | Why |
+|---|---|
+| **#374** perf: 2.3 MB off the admin bundle | **Already shipped in #433.** My earlier guess that this was the biggest win in the pile was wrong — the lazy import is in production. Only a loading/error-state polish remains. |
+| **#110** two-level nav | Its contents reached main another way (`subPathway`, `isSeries`, `?sub=`/`?series=` all present). What is left is a conflicting nav rewrite. **Its `coverImage` bug is now fixed here.** |
+| **#108** ADR parity matrix | A hand-counted snapshot, superseded by `server/api-parity.test.ts`, which cannot go stale. |
+| **#106** security + CI hardening | 3 of 4 fixes already on main in *stronger* form (timing-safe compare, enforcing CSP, frozen lockfile). **One real gap remains — see §4.** |
 
-### The ones that are the answer to this very question
+### Rebuild — the idea is good, the branch is not salvageable
 
-| PR | Age | Note |
-|---|---|---|
-| **#216** IA overhaul Phase 0 — route map + brief | 34d | **This is the "organize the site" work**, drafted and then left. Read this first. |
-| **#110** two-level navigation (pillars → sub-pathways) | 46d | **This is the fix for the 33-link header.** Also left in draft. |
+| PR | What survives |
+|---|---|
+| **#365** reader's journey (essay→book) | **The most valuable engineering in the backlog.** But its resolver sends 8 books to `/leadership`, which now redirects off-site, and it stacks a second funnel above the existing `KeepReadingBook`. Re-do the spine, fix the mapping. |
+| **#216** IA overhaul Phase 0 | **The brief is excellent and should be reused nearly verbatim** — the phases, the never-delete-a-URL rule, the measurable done-criteria. Its 153-route map is a photograph of a site that has since lost a section and gained ~100 routes. Re-run the inventory, keep the method. |
+| **#375** crisis help + advice disclaimers | All four changes are genuinely new and unduplicated. The base is stale and `Doubt.tsx` drifted at the insertion point. Re-apply the same four edits. |
+| **#109** perf | Only one of nine items survives: six surfaces still call `posts.listPublished` (full article bodies) where `listForIndex` would do. ~6 lines. It would also reintroduce a Google Fonts CDN the CSP now blocks. |
+| **#368** analytics funnel | Small and worth having, but main already ships `trackBookClick` and `trackNewsletterSignup` — reconcile rather than add parallel events. |
+| **#370** author SEO entity | `/about` already renders a Person schema. Only the `knowsAbout` enrichment and extract-to-tested-helper remain. |
 
-Both were opened, then work continued around them for over a month. Whatever else happens,
-these two deserve a decision before anything new is started.
+### Needs James — a decision, not an engineering call
 
-### Still live, unreviewed
-
-#486 group guides batch 3 · #480 a draft essay · #377 depth-board docs · #374 admin bundle
-perf · #370 author SEO entity · #368 analytics funnel · #365 reader's-journey links · #310
-Vision Program prompt · #109 hot-path perf.
+| PR | The question |
+|---|---|
+| **#480** two finished essays | *"The Doubt You Did Not Choose"* and a second essay, complete and in your voice, waiting on your read. Its bundled SEO title-rewrite doc targets pastor essays that are leaving — drop that part. |
+| **#214** gate the Hard Issues booklets | The page still exists and is still ungated, but it is PCN-facing by its own copy. **Does `/resources/hard-issues-series` stay on this site at all?** Gate it only if yes. |
+| **#310** Vision Program prompt | Not docs-only: it carries 12 unverified content essays with named figures, dates and sources. That is a citation-integrity call. |
+| **#107** ADR backend architecture | Recommends deleting `api/index.ts`. The codebase has since settled on keeping both runtimes with a parity test. Merging would enshrine a reversed decision. |
 
 ---
 
-## 3. What is already decided and done
+## 3. Two live bugs the backlog was hiding — now fixed
 
-Shipped and verified this session, on #459:
+Both had been found before, in PRs that never merged.
 
-- **Dark mode** standardized across ~150 files and re-enabled; 21 real colour bugs fixed.
-- **The pastor and leadership material** moved to `archive/pcn-handoff/` — 6.6 MB, 224
-  content files, 30 pages, intact and inventoried. Old URLs redirect to PCN. A **Family
-  tab** replaces it in the nav.
-- **After Christendom** merged into Living Well After Christendom. Five pillars now.
-- **The homepage no longer contradicts itself** on the pillar count, and its hero no longer
-  opens "For believers" — which excluded the skeptic, the stated first audience.
-- **A skip link** on every page; member-facing inputs labelled.
-- **`/help`** got its door back for someone running on empty.
-- **One title per page** — four routes were serving a different title to a crawler than to
-  a browser. Now guarded in CI.
-
-Two standing documents: `docs/PILLARS-AFTER-PCN.md` (taxonomy) and `docs/DESIGN-REVIEW.md`
-(design, including the four findings that turned out to be wrong).
+1. **The skip link had no target on six pages.** It points at `#main`; only Home and
+   Layout declared that landmark. On Doubt, Marriage, Parenting, StartHereDiagnostic,
+   StartHereQuiz and TheologyQuiz, "Skip to content" did nothing. I had verified it on the
+   homepage — the one page that worked — and generalized. #376 spotted this two weeks ago.
+2. **Essays silently lost their cover image.** `posts.create`/`posts.update` never accepted
+   `coverImage`, though the admin editor has always had the field and the table has always
+   had the column. Zod stripped it on every save, with no error. #110 reported it 46 days
+   ago. Fixed in both runtimes.
 
 ---
 
 ## 4. Waiting on you
 
-1. **Merge #459.** Everything else is downstream of it, and it grows more expensive to
-   merge each day other branches age.
-2. **The 93 pastor essays** are still published on `/writing`. They are database rows, not
-   code — see `archive/pcn-handoff/pastor-essays-in-database.md` for every slug and the safe
-   order: publish on PCN, redirect, *then* unpublish. Deleting outright forfeits the traffic.
-3. **Read #216 and #110** before commissioning any new organizational work. The plan may
-   already exist.
-4. **The remaining pillars** — Justice, The Household, Faith Under Question — need landing
-   pages written in your voice. This should be written, not generated.
+1. **Merge #459** — and note it now reports `dirty`; main has moved past its base, so it
+   needs an update-from-main first. Everything else is downstream.
+2. **Close five PRs in one sitting**: #374, #110, #108, #376, #106. All superseded.
+3. **Batch the 12 dependabot PRs.**
+4. **The 93 pastor essays** are still published. `archive/pcn-handoff/pastor-essays-in-database.md`
+   has every slug and the safe order: publish on PCN, redirect, *then* unpublish.
+5. **#480** — two finished essays waiting on your read.
+6. **#214** — does the Hard Issues series stay on this site?
+
+**One gap worth closing directly:** ESLint has never run in CI, though `pnpm lint` exists.
+That was #106's one un-landed fix. Adding the step is a few lines — but run `pnpm lint`
+first, because it has never been enforced and may not be green.
 
 ---
 
-## 5. What I would do, in order
+## 5. The order I would work in
 
-1. **Merge #459.** Get the big change in before it rots.
-2. **Clear the dependabot 12** in one sitting.
-3. **Close #214**, and decide #106/#107/#108 — that is five PRs gone in an afternoon.
-4. **Read #216 and #110.** Decide whether to revive, rebuild, or close. This is the actual
-   answer to "the site feels jumbled."
-5. **Then, and only then, pick up the structural work** — the five start-here flows and the
-   two taxonomies. Both are decisions about what the site *is*, and they want you.
+1. Update #459 from main, then **merge it**.
+2. **Close the five superseded PRs** and batch the dependabot ones. That is 17 of 30 gone
+   in an afternoon, and the list becomes readable.
+3. **Merge #486 and #377** — both clean and additive.
+4. **Reconcile the two taxonomies.** The nav spine and `PILLARS_V2` currently disagree, and
+   no route map can be drawn until they do. This blocks the IA work and it is yours.
+5. **Then re-run #216's Phase 0** against the settled tree, reusing its brief.
+6. **Then rebuild #365** — the reader's journey is the best remaining engineering idea.
 
-The discipline worth adopting, whatever else happens: **finish or close before starting.**
+The discipline worth keeping, whatever else happens: **finish or close before starting.**
 Eighteen open branches is not eighteen projects in progress. It is eighteen unfinished
-things, and the cost of each one is paid again every time anybody touches the repo.
+things, and two of them were hiding live bugs for over a month.
