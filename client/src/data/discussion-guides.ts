@@ -1701,5 +1701,311 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
       "did-god-command-genocide"
     ]
   }
+,
+
+  // ═══════════════════════════════════════════════════════════════════════
+  // SEEKER QUESTIONS and CONTESTED DOCTRINES
+  // The contested ones are held open on purpose. A guide for them succeeds
+  // when the group can state the other side fairly, not when it agrees.
+  // ═══════════════════════════════════════════════════════════════════════
+
+  "christianity-and-islam": {
+    slug: "christianity-and-islam",
+    articleTitle: "What Christianity and Islam Actually Dispute",
+    personalReflection: [
+      "The essay refuses two lazy moves: that the two faiths are basically the same, and that they have nothing in common. Which of the two have you been more likely to make, and why was it convenient?",
+      "Islam honors Jesus as prophet and messiah, born of the virgin Mary. Did you know that before reading, and what does it change about the conversation you thought you were having?",
+      "James says that as an atheist he lumped every religion together, and that this kept all of them at arm's length. Where do you use a category to avoid actually engaging something?"
+    ],
+    groupDiscussion: [
+      "State tawhid, the absolute oneness of God, as a devout Muslim would state it, and then say why the Trinity sounds to that person like an assault on God's greatness rather than a puzzle. Can your group do it without caricature?",
+      "The essay names four real disputes: the nature of God, the identity of Jesus, whether the cross happened, and how a person is made right with God. Which of the four would you find hardest to discuss with a Muslim neighbor, and why?",
+      "The essay says a family argument is the bitterest kind because it runs through what both sides hold most holy. How should that change the tone Christians take, without changing the content?"
+    ],
+    actionStep: "If you know a Muslim, ask them this week what they actually believe about Jesus, and listen without correcting. If you do not know one, notice that, and ask what it says about the shape of your life.",
+    openingPrayer: "God who is one, we come to speak about a neighbor's faith in a room where that neighbor is not present. Guard our mouths. Let us say nothing here we would be ashamed to say with them sitting beside us.",
+    closingPrayer: "Lord, we hold what we believe as confession and not as a weapon, and we do not hold it lightly. Give us the honesty to name the real differences and the love to keep the person in front of us more real than the argument.",
+    suggestedReading: [
+      "is-jesus-really-the-only-way",
+      "what-about-those-who-never-heard",
+      "did-the-resurrection-happen"
+    ]
+  },
+
+  "angels-demons-and-the-unseen": {
+    slug: "angels-demons-and-the-unseen",
+    articleTitle: "What the Bible Says About Angels, Demons, and the Unseen",
+    personalReflection: [
+      "The essay concedes that much of what earlier ages blamed on demons we now rightly treat with medicine. Where has the church's supernatural language done real harm to someone who needed a doctor?",
+      "Charles Taylor describes the modern self as buffered, sealed off, in contrast to the porous self of earlier ages. Which do you actually live as, whatever your doctrine says?",
+      "James says this was the easiest thing for him to mock as a materialist and the thing he had understood least. What do you currently mock that you have not examined?"
+    ],
+    groupDiscussion: [
+      "The essay insists there is no dualism here: the devil is a creature, not an anti-God with equal standing. Why does that distinction matter, and what goes wrong in churches that lose it?",
+      "Ephesians 6:12 locates the struggle not against flesh and blood but against rulers and authorities. How often does your church use that verse to describe actual people it dislikes, and what does that misuse cost?",
+      "Colossians 2:15 says these powers were disarmed and publicly shamed. If that is true, what posture follows: fear, sobriety, or indifference? Where does your community actually sit?"
+    ],
+    actionStep: "Notice one place this week where you assign a spiritual cause to something that has a plain physical or relational explanation, or the reverse. Name it honestly to one other person.",
+    openingPrayer: "God who made what we can see and what we cannot, we come with modern instincts and an ancient book. Give us sobriety rather than fear, and keep us from both the credulity that sees a demon everywhere and the blindness that sees nothing at all.",
+    closingPrayer: "Lord, the powers were disarmed and put to open shame, and we are not people who need to be afraid. Make us watchful and unafraid at the same time, and keep our fight aimed at what is actually against us and never at each other.",
+    suggestedReading: [
+      "are-miracles-believable",
+      "does-god-actually-exist",
+      "the-atheist-in-the-pulpit"
+    ]
+  },
+
+  "personhood-in-the-age-of-ai": {
+    slug: "personhood-in-the-age-of-ai",
+    articleTitle: "What Makes Us Human in the Age of AI?",
+    personalReflection: [
+      "The essay concedes that much of what we prized as uniquely human turns out to be reproducible, and says that should humble us. What did you assume a machine could never do that one now does?",
+      "If personhood were a capacity, the infant and the person with advanced dementia would be less than persons. Have you ever, quietly, valued someone by what they could do?",
+      "The essay distinguishes being known from being simulated. Who actually knows you, and how much of your life is arranged to be seen rather than known?"
+    ],
+    groupDiscussion: [
+      "State the functionalist case at full strength: if mind is information processing, a sufficiently advanced machine would be a person, and to deny it is carbon chauvinism. What is genuinely strong in that argument?",
+      "The essay calls mind-uploading an old heresy in new silicon, the gnostic contempt for flesh. Why does the Christian hope of a resurrected body cut against that so sharply?",
+      "Genesis grounds personhood in being made and loved by God rather than in capacity. How would a church that truly believed that treat its most dependent members differently than it does now?"
+    ],
+    actionStep: "Spend one hour this week with a person your culture would call unproductive, an infant, an elderly relative, someone who cannot do anything for you. Do not go to help. Go to be with them.",
+    openingPrayer: "God who formed us from dust and breathed into us, we live surrounded by machines that talk like us. Steady us. Remind us what we are and what we are not, and why it was never our cleverness that made us yours.",
+    closingPrayer: "Lord, you did not save an idea of us. You will raise our bodies. Teach us to honor the flesh you took on and intend to keep, and to love the people around us as those who are known by you rather than measured by anyone.",
+    suggestedReading: [
+      "meaning-without-god",
+      "can-you-be-good-without-god",
+      "does-god-actually-exist"
+    ]
+  },
+
+  "near-death-experiences": {
+    slug: "near-death-experiences",
+    articleTitle: "Does the Evidence for Near-Death Experiences Prove Anything?",
+    personalReflection: [
+      "The essay says these accounts cannot bear the weight some place on them, and also refuses to mock them. Which pull do you feel more strongly, and what does that reveal?",
+      "Has someone told you a story like this? What did you do with it, and would you tell them the same thing now?",
+      "Paul was caught up to the third heaven and said he did not know whether it happened in the body or out of it, then refused to build on it. Why do you think he handled his own experience that way?"
+    ],
+    groupDiscussion: [
+      "Take the skeptical case seriously: the dying brain is a known producer of vivid experience, memory is reconstructive, and a near-death experience is by definition not death. What does that account explain well?",
+      "The reports are shaped by the culture of the one reporting, and they conflict in details. What does that tell you about how much weight they can carry?",
+      "The essay says Christian hope rests on a public event examined in daylight rather than a private tunnel of light. Why does that distinction matter for what your church teaches about dying?"
+    ],
+    actionStep: "Ask an older believer in your church what they actually expect when they die, and listen for whether their hope rests on a story they heard or on something public they can point to.",
+    openingPrayer: "God of the living, we come curious about the door we all walk through. Keep us from building on sand, and from despising what moves people. Give us a hope that would survive the loss of every story but one.",
+    closingPrayer: "Lord, we do not need a flashlight when the sun has come up. Fix our hope on the tomb that was opened in public, and give us gentleness with everyone still holding a smaller light.",
+    suggestedReading: [
+      "did-the-resurrection-happen",
+      "is-there-life-after-death",
+      "are-miracles-believable"
+    ]
+  },
+
+  "anxiety-and-faith": {
+    slug: "anxiety-and-faith",
+    articleTitle: "Is My Anxiety a Spiritual Failure?",
+    personalReflection: [
+      "Before you answer anything else: if you are the anxious one in this group, you do not have to perform being fine tonight. What would it cost you to say the true thing out loud here?",
+      "The essay says anxiety is not a verdict on your faith. Who taught you otherwise, and did you believe them?",
+      "When Elijah wanted to die, God gave him food and sleep before a single word of theology. What does your body actually need this week that you have been treating as a spiritual problem?"
+    ],
+    groupDiscussion: [
+      "Two bad answers get handed out here: the pietist shame that treats anxiety as sin, and the flattening that says it is only chemistry and the soul has nothing to do with it. What does each get right before it goes wrong?",
+      "Philippians 4:6-7 is an invitation into God's presence, not a command to white-knuckle a feeling away. How has your church read it, and what did that reading do to anxious people?",
+      "Roughly a third of the Psalms are laments. What would change in your gatherings if that ratio were true of your singing and praying?"
+    ],
+    actionStep: "If you are carrying this, take one concrete step toward help this week: a doctor, a counselor, or one trusted person told the whole truth. If you are not carrying it, ask someone who is what would actually help, and then do that.",
+    openingPrayer: "God who does not despise a body that will not settle, we come as we are and not as we wish we were. Be gentle with the ones here who are tired of pretending. Give us a room where the truth is safe.",
+    closingPrayer: "Lord, you were sorrowful to the point of death in a garden, and you were not failing. Sit with the anxious among us. Give them rest, and give the rest of us the sense to stop offering verses when what is needed is a meal, a doctor, and a friend who stays.",
+    suggestedReading: [
+      "if-god-is-good-why-suffering",
+      "when-prayer-goes-unanswered",
+      "dark-night-god-feels-absent"
+    ]
+  },
+
+  "the-cost-of-following": {
+    slug: "the-cost-of-following",
+    articleTitle: "What Following This Actually Costs",
+    personalReflection: [
+      "Jesus told people to count the cost before building. Have you ever actually done that arithmetic about your own faith, or did you inherit it and never price it?",
+      "The essay says what changes is not your weekend but your money, your final say over your own life, and your right to define yourself. Which of those three do you most quietly still hold back?",
+      "The rich young man went away sad because he had great possessions. What is the thing you suspect Jesus would name if he named yours?"
+    ],
+    groupDiscussion: [
+      "Bonhoeffer called grace without discipleship cheap grace. Where has your church made following Jesus sound free in a way the New Testament never does?",
+      "If a skeptic asked your group what believing this has actually cost each of you, what could you honestly say? Sit with the silence if there is one.",
+      "The essay argues the cost is not a hidden fee but the point, because what is being asked for is a whole life. How is that different from the way conversion is usually pitched?"
+    ],
+    actionStep: "Name one specific thing your faith has not yet been allowed to touch: a budget line, a relationship, a grudge, a plan. Tell one person in the group what it is. That is the whole assignment.",
+    openingPrayer: "Lord, we have often been sold a version of you that costs nothing and delivers nothing. We would rather have the real one. Tell us the price honestly, and give us the nerve to keep listening.",
+    closingPrayer: "Jesus, you never hid the cost from anyone and you let people walk away. Do not let us mistake enthusiasm for surrender. Take the thing we have been holding back, and be worth it, as you have always been.",
+    suggestedReading: [
+      "is-jesus-really-the-only-way",
+      "meaning-without-god",
+      "can-you-be-good-without-god"
+    ]
+  },
+
+  "how-to-read-genesis-one": {
+    slug: "how-to-read-genesis-one",
+    articleTitle: "How Should a Christian Read Genesis 1?",
+    personalReflection: [
+      "The essay separates what is binding, that God created and that humanity bears his image, from what is open, the age of the earth and the mode of creation. Which of those had you fused together?",
+      "Did anyone ever teach you that a particular reading of Genesis 1 was the test of whether you took the Bible seriously? What did that do to you?",
+      "James says the science was a real barrier for him as an atheist, and that learning the church held several faithful readings mattered. Who might need to hear that from you?"
+    ],
+    groupDiscussion: [
+      "Have three people each state one reading at its strongest: young-earth, old-earth or framework, and evolutionary creation. The rest of the group should not be able to tell which one the speaker actually holds.",
+      "Genesis 1 answers who and why. Is it possible it simply is not pitched at the modern question of how, and what would follow if that were true?",
+      "What would your church lose, and what would it gain, if it treated this as a third-order question where members may faithfully differ?"
+    ],
+    actionStep: "Find one person in your church who holds a different reading than you and ask them to explain it. Do not argue. Come back able to state their view in a way they would sign.",
+    openingPrayer: "Creator of everything that is, we come to the first page of your book carrying arguments we did not start. Give us more interest in what you actually said than in defending what we were told.",
+    closingPrayer: "Lord, you made the heavens and the earth, and you made the people in this room who read the account differently. Hold the confession with a closed hand and the mechanism with an open one, and keep us at one table.",
+    suggestedReading: [
+      "faith-and-science",
+      "does-god-actually-exist",
+      "why-trust-the-bible"
+    ]
+  },
+
+  "predestination-and-free-will": {
+    slug: "predestination-and-free-will",
+    articleTitle: "Does God Choose Us, or Do We Choose Him?",
+    personalReflection: [
+      "Which side were you handed, and had you ever heard the other one stated by someone who actually believed it?",
+      "The Reformed comfort is that your salvation does not rest on the strength of your grip. The Arminian conviction is that a love which cannot be refused is not love. Which of those two does your heart reach for when you are afraid, and why?",
+      "James says that as a convert he could never tell whether he had found God or been found by him. Which does your own story feel like, on the inside?"
+    ],
+    groupDiscussion: [
+      "Read Ephesians 1:4-5 and 1 Timothy 2:3-4 side by side, then Philippians 2:12-13, which holds both in one breath. What is Scripture doing by refusing to tidy this up?",
+      "Name the overreach on each side: a determinism that makes God the author of sin, and a human choice that quietly becomes a work. Which temptation is more live in your tradition?",
+      "This is second-order ground: it divides churches that preach the same gospel. What would it look like for your group to disagree here and still take communion together next Sunday?"
+    ],
+    actionStep: "Write one paragraph defending the view you do not hold, as persuasively as you can. Bring it and read it aloud. Let someone who holds it tell you whether you got it right.",
+    openingPrayer: "Sovereign God who calls and welcomes, we come with a question the church has carried for centuries without resolving. Save us from needing to win it. Give us more love for you than for our position about you.",
+    closingPrayer: "Lord, whichever way we came, we are here. Keep us from boasting and from despairing, since neither belongs to people who were saved by grace. Let us leave holding our conviction and our brother at the same time.",
+    suggestedReading: [
+      "can-you-lose-your-salvation",
+      "what-about-those-who-never-heard",
+      "is-jesus-really-the-only-way"
+    ]
+  },
+
+  "is-hell-eternal": {
+    slug: "is-hell-eternal",
+    articleTitle: "Is Hell Forever, or Does It End?",
+    personalReflection: [
+      "The essay distinguishes the reality of judgment, which is historic teaching, from the nature and duration of hell, where faithful Christians have differed. Had you been treating those as one question?",
+      "Which is harder for you: that hell might be eternal conscious separation, or that a person might finally cease to be? Notice which answer you want, and ask why.",
+      "Have you ever used hell to frighten someone, or been frightened with it? What did it produce in you?"
+    ],
+    groupDiscussion: [
+      "Have someone state eternal conscious torment at its strongest from Matthew 25:46, and someone else state conditional immortality at its strongest from Matthew 10:28 and Romans 6:23. Both are held by serious, Bible-loving Christians.",
+      "The essay refuses both the preacher who relishes the fire and the sentimentalist who empties the warnings. Which error is more common in your circles, and what does it cost?",
+      "If the exact nature of hell is genuinely contested, what is the narrower thing the tradition actually guards? Can your group say it in one sentence?"
+    ],
+    actionStep: "Notice how you speak about hell this month, especially to people outside the faith. If you cannot speak about it with grief, do not speak about it yet.",
+    openingPrayer: "Holy God, we come to a doctrine that has been abused and also cannot be deleted. Keep us from making it smaller than it is or crueler than you are. Give us sober hearts.",
+    closingPrayer: "Lord, we do not enjoy this and we do not want to. Let the weight of it drive us toward people rather than away from them, and let no one ever hear us describe your judgment with anything but grief.",
+    suggestedReading: [
+      "does-hell-exist",
+      "what-about-those-who-never-heard",
+      "is-jesus-really-the-only-way"
+    ]
+  },
+
+  "can-you-lose-your-salvation": {
+    slug: "can-you-lose-your-salvation",
+    articleTitle: "Can You Lose Your Salvation?",
+    personalReflection: [
+      "If you are afraid you have fallen away, say so tonight if you can. The essay notes that the settled apostate does not usually agonize, and the agonizing is often the evidence against the fear.",
+      "Which comforts you more: that God will not let go, or that your yes is real and matters? What does your answer reveal about how you relate to him?",
+      "Have you ever used this doctrine, in either direction, to avoid repentance or to manufacture fear?"
+    ],
+    groupDiscussion: [
+      "Read John 10:28-29 and Philippians 1:6 alongside Hebrews 6:4-6 and John 15:6. Do not resolve them too quickly. What is each set of texts protecting?",
+      "The essay says both traditions, rightly held, produce the same posture: humble clinging to Christ rather than presumption or terror. Is that true of the people you know who hold each view?",
+      "This is second-order ground. How should a church teach it so that the anxious are not terrified and the careless are not comfortable?"
+    ],
+    actionStep: "If this question has been a source of fear, tell one mature believer this week and ask them to pray with you rather than argue with you.",
+    openingPrayer: "Faithful God, some of us are here because we are afraid we have gone too far. Meet them first. Let the doctrine we discuss serve the people in this room rather than the other way around.",
+    closingPrayer: "Lord, you said you would not lose what the Father gave you, and you warned us not to drift. Give us the grip of a child and the seriousness of a disciple, and keep us until the end.",
+    suggestedReading: [
+      "predestination-and-free-will",
+      "anxiety-and-faith",
+      "is-jesus-really-the-only-way"
+    ]
+  },
+
+  "just-war-and-pacifism": {
+    slug: "just-war-and-pacifism",
+    articleTitle: "Can Christians Fight? Just War and the Case for Peace",
+    personalReflection: [
+      "Before the argument: is there anyone you would kill to protect? Answer honestly before you theologize, because that answer is already doing work in you.",
+      "The essay says the early church largely refused military violence for its first centuries. Did you know that, and does it unsettle you?",
+      "Which costs more where you live, taking the pacifist position or the just-war one? Notice whether your conviction happens to be the cheaper one."
+    ],
+    groupDiscussion: [
+      "State Christian pacifism at full strength from Matthew 5:39 and 5:44 and Gethsemane, with Yoder and Hauerwas behind it. Then state the just-war tradition at equal strength from Augustine and Aquinas and Romans 13:4. Neither is the position of a fool.",
+      "Give each side its hardest question: to the pacifist, what about the neighbor being murdered while you keep your hands clean? To the just-war Christian, what does the cross do to your permission?",
+      "Both traditions have paid in blood, the martyr and the soldier. What does that shared cost mean for how your group argues about it?"
+    ],
+    actionStep: "Read one primary source from the side you do not hold this week. Not a summary of it. The thing itself.",
+    openingPrayer: "Prince of Peace who told Peter to put the sword away, we come to a question with bodies on both sides of it. Keep us from easy answers bought with other people's lives.",
+    closingPrayer: "Lord, the martyr and the soldier have both died believing they were following you. Give us humility in a question the church has carried unresolved, and keep our hands and our hearts alike from the wrong kind of confidence.",
+    suggestedReading: [
+      "did-god-command-genocide",
+      "is-jesus-really-the-only-way",
+      "the-cost-of-following"
+    ]
+  },
+
+  "cessationism-or-continuation": {
+    slug: "cessationism-or-continuation",
+    articleTitle: "Do the Gifts Still Happen?",
+    personalReflection: [
+      "What did you actually see growing up, and how much of your doctrine here is a reaction to that rather than a reading of the text?",
+      "If you are cessationist, have you ever been embarrassed by a claimed miracle? If you are continuationist, have you ever seen a claim you knew was false and stayed silent? What did that cost?",
+      "Paul says do not quench the Spirit and also test everything. Which half do you personally find easier?"
+    ],
+    groupDiscussion: [
+      "Have someone make the cessationist case from Ephesians 2:20 and the foundational role of apostles and prophets, and someone else make the continuationist case from 1 Corinthians 14:1 and 14:39. Both are reading the same Paul.",
+      "1 Corinthians 13:8-12 turns on when the perfect comes. Read it together and notice how much weight both sides put on a phrase neither can define with certainty.",
+      "1 Thessalonians 5:19-21 holds both instincts together. What would a church look like that genuinely obeyed the whole verse rather than half of it?"
+    ],
+    actionStep: "Visit or talk with a believer from the other side of this question and ask what they have actually experienced. Come back and report what you heard rather than what you think of it.",
+    openingPrayer: "Spirit of God, you gave gifts to the church and we have argued about them ever since. Keep us from quenching you and from crediting you with things you did not do. Give us discernment rather than a slogan.",
+    closingPrayer: "Lord, we would rather be a people who test everything and hold fast to what is good than a people who are safe by refusing to want anything. Make us both careful and open, and forgive us where we have been only one.",
+    suggestedReading: [
+      "who-is-the-holy-spirit",
+      "what-does-the-holy-spirit-do",
+      "are-miracles-believable"
+    ]
+  },
+
+  "baptism-mode-and-subjects": {
+    slug: "baptism-mode-and-subjects",
+    articleTitle: "Sprinkle or Immerse? Infant or Believer?",
+    personalReflection: [
+      "How were you baptized, and did you choose it or inherit it? Have you ever examined the reasoning behind it?",
+      "The essay notes the shared meaning both sides confess before they divide over recipients and mode. Can you state that shared meaning without reference to the argument?",
+      "James says his own experience is a witness and not a verdict. Where do you treat your experience as though it settled a question for everyone?"
+    ],
+    groupDiscussion: [
+      "Have someone make the paedobaptist case from Colossians 2:11-12 and the covenant sign, including the household baptisms of Acts 16. Then have someone make the credobaptist case from Acts 2:38 and the regenerate church.",
+      "Name the temptation on each side: baptism becoming a work of decision, and baptism becoming presumption apart from faith. Which is more live in your congregation?",
+      "Christians drowned other Christians over this in the 1520s. What does that history demand of the way your group talks about it now?"
+    ],
+    actionStep: "Ask someone baptized differently than you to tell you what their baptism means to them. Listen for worship rather than for the argument.",
+    openingPrayer: "God who marks his people with water, we come to a font the church has argued over for centuries. Remind us what we share before we rehearse where we differ.",
+    closingPrayer: "Lord, we have been arguing about the depth of the water while both of us are already wet. Keep the sign from becoming a wall, and keep our eyes on the cross it points to.",
+    suggestedReading: [
+      "why-baptism",
+      "what-happens-at-communion",
+      "predestination-and-free-will"
+    ]
+  }
 
 };
