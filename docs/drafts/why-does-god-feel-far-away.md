@@ -1,6 +1,9 @@
 ---
 STATUS: DRAFT — publish-ready, awaiting James's review. NOT live.
-Title: The Doubt You Did Not Choose
+Title (SEO): Why Does God Feel So Far Away?
+Optional subtitle / literary kicker: "The Doubt You Did Not Choose"
+Target queries: "why does god feel so far away", "why doesn't god feel real
+  anymore", "why is it so hard to believe in god"
 Pillar: Theological Depth (writes toward the skeptic — audience #1)
 Type: Long-form essay / theological reframe (~1,400 words)
 Preview text: You assume your unbelief, or your thin belief, is something you
@@ -19,7 +22,7 @@ To publish: this becomes a /writing essay (content-as-data). Say the word and I
   will wire it in James's voice exactly as approved, or make any change first.
 ---
 
-# The Doubt You Did Not Choose
+# Why Does God Feel So Far Away?
 
 There is a feeling most people will not admit in church, and most skeptics mistake for proof.
 

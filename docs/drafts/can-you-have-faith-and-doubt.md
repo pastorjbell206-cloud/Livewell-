@@ -1,9 +1,13 @@
-# Faith Was Never Certainty
+# Can You Have Faith and Still Have Doubts?
 
 > **Status:** DRAFT for James's review. Not published, not wired to a route.
+> **Title (SEO):** Can You Have Faith and Still Have Doubts?
+> **Optional literary kicker:** "Faith Was Never Certainty"
+> **Target queries:** "can you have faith and doubt", "is doubt a sin", "can you
+> be a christian and have doubts", "what does the bible say about doubt"
 > **Pillar:** Theological Depth · **Type:** Theological Reframe (~640 words)
-> **Written for:** the doubting Christian (audience #2), as the companion to
-> "The Doubt You Did Not Choose."
+> **Written for:** the doubting Christian (audience #2), the companion to
+> "Why Does God Feel So Far Away?"
 > **Preview text:** You were told a real Christian does not have questions. The
 > word God actually chose says the opposite.
 >
