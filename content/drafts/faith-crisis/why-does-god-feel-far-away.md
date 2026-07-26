@@ -1,28 +1,16 @@
 ---
-STATUS: DRAFT — publish-ready, awaiting James's review. NOT live.
-Title (SEO): Why Does God Feel So Far Away?
-Optional subtitle / literary kicker: "The Doubt You Did Not Choose"
-Target queries: "why does god feel so far away", "why doesn't god feel real
-  anymore", "why is it so hard to believe in god"
-Pillar: Theological Depth (writes toward the skeptic — audience #1)
-Type: Long-form essay / theological reframe (~1,400 words)
-Preview text: You assume your unbelief, or your thin belief, is something you
-  reasoned your way to. Mostly you inherited it. That is not an argument against
-  you. It is the first honest thing anyone has said about the room you are
-  standing in.
-Sources (all verified, verbatim ESV):
-  - Charles Taylor, A Secular Age (2007): the immanent frame, the buffered vs.
-    porous self, the nova effect, the 1500-to-now thesis. All are Taylor's own
-    terms, represented accurately.
-  - Isaiah 45:15; 1 Kings 19:11-12; Psalm 22:1 / Matthew 27:46; Acts 17:23,
-    27-28, 31; John 20:25, 20:29.
-Voice check: no forbidden words; zero em-dashes; zero exclamation points;
-  self-implicating; symptom → cause → wisdom; gospel earned, not tidy.
-To publish: this becomes a /writing essay (content-as-data). Say the word and I
-  will wire it in James's voice exactly as approved, or make any change first.
+title: "Why Does God Feel So Far Away?"
+slug: why-does-god-feel-far-away
+track: doubt
+audience: individuals
+format: essay
+status: draft
+read_time_minutes: 7
+excerpt: "The sense that God is distant is not a conclusion you reasoned your way to. It is the weather of an age. A pastor who came to faith from atheism on disenchantment, the buffered self, and why the thinness you feel is the ceiling of a house rather than the edge of the world."
+seo_keywords: "why does god feel so far away, why doesnt god feel real anymore, why is it so hard to believe in god, god feels distant, spiritual dryness, Charles Taylor A Secular Age immanent frame, buffered self, disenchantment and faith, silence of god"
+meta_description: "Why does God feel so far away? A pastor who came to faith from atheism on the disenchantment you inherited rather than chose, and the God who declines to be a spectacle."
+publish_at: null
 ---
-
-# Why Does God Feel So Far Away?
 
 There is a feeling most people will not admit in church, and most skeptics mistake for proof.
 
