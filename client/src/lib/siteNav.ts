@@ -1,10 +1,18 @@
 
 /**
  * The site's grouped navigation — one source of truth for the footer and the
- * header. The footer's five-column layout is the mental model the whole site
- * navigates by (The Pillars / Write & Read / Libraries & Tools / For Pastors /
- * Connect); the header renders these same groups so the two agree. Edit a link
- * once here and both surfaces update together.
+ * header.
+ *
+ * The groups are named for what a READER came to do, not for how the content is
+ * filed. Somebody arrives thinking "I am new here", "I want to read something",
+ * "I want to actually grow", "I lead a church", or "who is this guy" — so those
+ * are the doors. The six pillars are still the filing spine of the whole site
+ * (taxonomy.ts), but a person in trouble does not think in pillars, so they live
+ * inside Read as topics rather than as a top-level menu.
+ *
+ * Two surfaces, one map: `primary: true` puts a link in the header, and the
+ * footer shows everything. The header stays scannable; nothing is ever lost,
+ * because every link still has a home in the footer.
  */
 export interface SiteNavLink {
   label: string;
@@ -24,6 +32,15 @@ export interface SiteNavGroup {
   links: SiteNavLink[];
 }
 
+/**
+ * The front door. A newcomer should never have to open a menu to find where to
+ * begin, so this gets its own top-level spot beside the menus.
+ */
+export const START_NAV: SiteNavLink = {
+  label: "Start Here",
+  href: "/start",
+};
+
 /** The one destination that gets its own top-level spot in the header. */
 export const TABLE_NAV: SiteNavLink = {
   label: "The Table",
@@ -37,80 +54,85 @@ export function headerLinks(group: SiteNavGroup): SiteNavLink[] {
 
 export const SITE_NAV_GROUPS: SiteNavGroup[] = [
   {
-    title: "The Pillars",
+    // "I want to read something." The writing itself, in every form it takes.
+    title: "Read",
     links: [
-      { label: "The Historic Faith", href: "/historic-faith", primary: true },
-      { label: "Theological Depth", href: "/theology", primary: true },
-      { label: "Prophetic Justice", href: "/justice", primary: true },
-      { label: "Prophetic Disruption", href: "/disruption", primary: true },
-      { label: "Leadership Formation", href: "/leadership", primary: true },
-      { label: "Living Well", href: "/living-well", primary: true },
-      { label: "All six pillars", href: "/pillars", primary: true },
-      { label: "The Map", href: "/map", primary: true },
-    ],
-  },
-  {
-    title: "Write & Read",
-    links: [
-      { label: "The Writing", href: "/writing", primary: true },
-      { label: "Doubt & Faith", href: "/writing?track=doubt", primary: true },
+      { label: "All the writing", href: "/writing", primary: true },
       { label: "Books", href: "/books", primary: true },
-      { label: "The Library (read online)", href: "/read", primary: true },
-      { label: "Reading Paths", href: "/reading-paths", primary: true },
-      { label: "Start Here", href: "/start", primary: true },
-      { label: "The Commonplace", href: "/library" },
-      { label: "The Framework", href: "/framework" },
+      { label: "Read a book free", href: "/read", primary: true },
+      { label: "When faith has questions", href: "/writing?track=doubt", primary: true },
+      { label: "Newsletter (Substack)", href: "https://substack.com/@jamesbell333289", external: true, primary: true },
       { label: "Marriage", href: "/marriage" },
       { label: "Parenting", href: "/parenting" },
-      { label: "Article Collections", href: "/article-collections" },
-      { label: "Book Bundles", href: "/book-bundles" },
-      { label: "The Book Roadmap", href: "/roadmap" },
+      { label: "Article collections", href: "/article-collections" },
+      { label: "Book bundles", href: "/book-bundles" },
+      { label: "The Commonplace", href: "/library" },
+      { label: "The book roadmap", href: "/roadmap" },
     ],
   },
   {
-    title: "Libraries & Tools",
+    // "I want to actually grow." Anything with a sequence, a practice, or a
+    // question to answer — the self-discipleship surface.
+    title: "Grow",
     links: [
-      { label: "Explore Everything", href: "/explore", primary: true },
-      { label: "Answers to Hard Questions", href: "/answers", primary: true },
-      { label: "Assessments (where are you?)", href: "/assessments", primary: true },
-      { label: "The Resource Hub", href: "/resources", primary: true },
-      { label: "Topic Pathways", href: "/pathways", primary: true },
-      { label: "Study Guides", href: "/studyguides", primary: true },
-      { label: "Make Disciples", href: "/disciple-making", primary: true },
-      { label: "The Discipleship Pathway", href: "/discipleship", primary: true },
-      { label: "All Tools", href: "/tools", primary: true },
-      { label: "Theology Quiz", href: "/tools/theology-quiz", primary: true },
-      { label: "The Table (disciple someone)", href: "/table" },
-      { label: "Reading Scripture in Context", href: "/resources/context" },
-      { label: "Wisdom for All of Life", href: "/wisdom" },
-      { label: "Wisdom Finder", href: "/tools/wisdom-finder" },
-      { label: "How-To Guides", href: "/how-tos" },
+      { label: "Guided reading paths", href: "/pathways", primary: true },
+      { label: "Study guides", href: "/studyguides", primary: true },
+      { label: "Where are you? (assessments)", href: "/assessments", primary: true },
+      { label: "Answers to hard questions", href: "/answers", primary: true },
+      { label: "Tools", href: "/tools", primary: true },
+      { label: "The Discipleship Pathway", href: "/discipleship" },
+      { label: "Make disciples", href: "/disciple-making" },
+      { label: "Reading paths", href: "/reading-paths" },
+      { label: "Reading Scripture in context", href: "/resources/context" },
+      { label: "How-to guides", href: "/how-tos" },
+      { label: "Wisdom for all of life", href: "/wisdom" },
+      { label: "Wisdom finder", href: "/tools/wisdom-finder" },
+      { label: "Theology quiz", href: "/tools/theology-quiz" },
       { label: "Questions people ask", href: "/faq" },
-      { label: "Leadership Library", href: "/leadership/library" },
-      { label: "Sermon Series Library", href: "/leadership/sermon-series" },
+      { label: "The Resource Hub", href: "/resources" },
     ],
   },
   {
+    // "What does he write about?" The six pillars are the site's real spine, so
+    // they keep a home — but under a heading a normal person understands.
+    title: "Topics",
+    links: [
+      { label: "Explore everything", href: "/explore", primary: true },
+      { label: "The historic faith", href: "/historic-faith", primary: true },
+      { label: "Theology, in depth", href: "/theology", primary: true },
+      { label: "Justice", href: "/justice", primary: true },
+      { label: "The church and power", href: "/disruption", primary: true },
+      { label: "Living well", href: "/living-well", primary: true },
+      { label: "Leadership formation", href: "/leadership" },
+      { label: "All six pillars", href: "/pillars" },
+      { label: "The map", href: "/map" },
+      { label: "The framework", href: "/framework" },
+    ],
+  },
+  {
+    // Unchanged in substance: this door already worked.
     title: "For Pastors",
     links: [
       { label: "Pastors Connection Network", href: "/pastors", primary: true },
-      { label: "The Leadership Hub", href: "/leadership", primary: true },
+      { label: "The leadership hub", href: "/leadership", primary: true },
       { label: "The Hard Issues Series", href: "/resources/hard-issues-series", primary: true },
-      { label: "Church Leadership", href: "/for-leaders", primary: true },
-      { label: "The Pastoral Angle", href: "/the-pastoral-angle" },
-      { label: "Deep Formation", href: "/leadership/formation" },
-      { label: "Downloads & Study Guides", href: "/resources" },
+      { label: "Church leadership", href: "/for-leaders", primary: true },
+      { label: "Leadership library", href: "/leadership/library" },
+      { label: "Sermon series library", href: "/leadership/sermon-series" },
+      { label: "The pastoral angle", href: "/the-pastoral-angle" },
+      { label: "Deep formation", href: "/leadership/formation" },
+      { label: "Downloads and study guides", href: "/resources" },
     ],
   },
   {
-    title: "Connect",
+    title: "About",
     links: [
       { label: "About James Bell", href: "/about", primary: true },
+      { label: "Newsletter (Substack)", href: "https://substack.com/@jamesbell333289", external: true, primary: true },
       { label: "Membership", href: "/membership", primary: true },
-      { label: "Work With James", href: "/work-with-james", primary: true },
       { label: "Contact", href: "mailto:Pastorjbell206@gmail.com", external: true, primary: true },
+      { label: "Work with James", href: "/work-with-james" },
       { label: "Pastors Network", href: "https://pastorsconnectionnetwork.com", external: true },
-      { label: "Substack Newsletter", href: "https://substack.com/@jamesbell333289", external: true },
     ],
   },
 ];
