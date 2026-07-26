@@ -136,9 +136,19 @@ Both had been found before, in PRs that never merged.
 5. **#480** — two finished essays waiting on your read.
 6. **#214** — does the Hard Issues series stay on this site?
 
-**One gap worth closing directly:** ESLint has never run in CI, though `pnpm lint` exists.
-That was #106's one un-landed fix. Adding the step is a few lines — but run `pnpm lint`
-first, because it has never been enforced and may not be green.
+**On adding ESLint to CI — do not, yet.** This was #106's one genuinely un-landed fix, so
+I ran it. `pnpm lint` is `eslint . --max-warnings 0` and the tree has **538 warnings**,
+so adding the step would break the build on the first commit.
+
+It found exactly **one error**, and it was mine: `WisdomTopic.tsx` called `setState`
+synchronously inside an effect body, forcing an extra render on every mount of the 208
+wisdom pages. Fixed — the error state is now cleared by the retry handler, where it
+belongs. **0 errors** remain.
+
+The 538 warnings are almost entirely `no-explicit-any` and unused-variable notes. Two
+honest options: clear them over time and then add the gate, or add the gate now with a
+non-zero threshold (`--max-warnings 538`) that ratchets down. The second one starts
+catching new errors immediately, which is the point of a gate.
 
 ---
 
