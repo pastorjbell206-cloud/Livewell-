@@ -42,6 +42,8 @@ function linkTargets() {
     for (const m of src.matchAll(/(?:href|to)=["'`](\/[^"'`?#${]*)/g)) targets.add(m[1]);
     for (const m of src.matchAll(/href:\s*["'`](\/[^"'`?#${]*)/g)) targets.add(m[1]);
     for (const m of src.matchAll(/(?:setLocation|navigate)\(["'`](\/[^"'`?#${]*)/g)) targets.add(m[1]);
+    // window.location.href = "/search?q=" — how MinimalNav runs a search.
+    for (const m of src.matchAll(/location\.href\s*=\s*["'`](\/[^"'`?#${]*)/g)) targets.add(m[1]);
     for (const m of src.matchAll(/(?:indexHref|ctaHref|backHref):\s*["'`](\/[^"'`?#${]*)/g)) targets.add(m[1]);
     // Template-literal links — href={`/how-tos/${slug}`} and buildHref: (s) => `/x/${s}`.
     // Without these, every dynamic route looks like an orphan. Record the static
@@ -76,6 +78,15 @@ const admin = (r) => r.startsWith("/admin");
 const publicRoutes = all.filter((r) => !admin(r));
 const TRANSACTIONAL = /\/thank-you$|^\/404$|\/success$/;
 
+/** Routes rendered by a *Redirect component — legacy aliases, deliberately unlinked. */
+function redirectAliases() {
+  const src = readFileSync(path.join(root, "client/src/App.tsx"), "utf8");
+  return new Set(
+    [...src.matchAll(/path="([^"]+)"\s+component=\{(\w*Redirect)\}/g)].map((m) => m[1]),
+  );
+}
+const ALIASES = redirectAliases();
+
 /**
  * Reachable, but not by a literal this script can resolve. Each entry is a
  * limitation of static analysis, not a finding — recorded so the orphan count
@@ -90,7 +101,7 @@ const KNOWN_REACHABLE = new Map([
   ["/justice/posture", "same PropheticHub template"],
 ]);
 const orphans = publicRoutes.filter(
-  (r) => !isReachable(r, targets) && !TRANSACTIONAL.test(r) && !KNOWN_REACHABLE.has(r),
+  (r) => !isReachable(r, targets) && !TRANSACTIONAL.test(r) && !KNOWN_REACHABLE.has(r) && !ALIASES.has(r),
 );
 const transactional = publicRoutes.filter((r) => TRANSACTIONAL.test(r));
 
@@ -107,6 +118,7 @@ console.log(`  public            ${publicRoutes.length}`);
 console.log(`  admin             ${all.length - publicRoutes.length}`);
 console.log(`  distinct areas    ${byArea.size}`);
 console.log(`  post-transaction  ${transactional.length}  (thank-you / success / 404 — reached by redirect, not link)`);
+console.log(`  redirect aliases  ${ALIASES.size}  (legacy URLs handled by a *Redirect component)`);
 console.log(`  known-reachable   ${KNOWN_REACHABLE.size}  (linked via a variable or a redirect — see KNOWN_REACHABLE)`);
 console.log(`  UNRESOLVED        ${orphans.length}  (no literal link found — verify by hand)\n`);
 

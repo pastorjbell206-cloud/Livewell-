@@ -22,7 +22,7 @@ It is not a feeling. Both the site and the work on it outgrew their organization
 | Links in the header | 33 |
 | Separate "where do I start" flows | **5** |
 | Competing taxonomies | **2** (the pillars, and the homepage/nav "wings") |
-| Routes with no literal inbound link | **6** (to verify, not defects) |
+| Routes nothing links to | **3** (verified by hand) |
 
 A visitor arriving cold meets five front doors that do not agree with each other, and two
 different names for how the writing is organized depending on which page they land on.
@@ -36,11 +36,22 @@ not feel like it covers anything.
 attempt starts from what is true today rather than a map that ages the moment it is written
 — which is exactly what happened to #216.
 
-Six routes have no literal inbound link: `/articles`, `/authors/:slug`, `/dashboard`,
-`/for-families`, `/search`, `/substack`. **Worth checking, not assuming.** The tool cannot
-see links built from a variable, and three separate passes at this number produced 52, then
-9, then 6 — each earlier figure wrong because a real link was invisible to a regex. The
-count is a list to check by hand, and the script says so.
+### The three routes nothing links to
+
+Verified by opening each, not inferred from a count:
+
+- **`/dashboard`** — the *member* dashboard (not admin). The site sells membership and a
+  member has no link to their own dashboard. The most likely real defect of the three.
+- **`/authors/:slug`** — the author profile page. Nothing links to an author.
+- **`/substack`** — a real page with no inbound link. May be intentional, if it exists only
+  as a campaign destination.
+
+Getting to three took four passes: 52 → 9 → 6 → 3. Every earlier number was inflated the
+same way — a real link the scan could not see. `/thank-you` pages are reached by redirect;
+dynamic routes are linked by template literal; pillars and prophetic sections are linked
+through a *variable* (`ROUTE_FOR_PILLAR[slug]`); `/search` is reached by
+`window.location.href`; `/articles` and `/for-families` are deliberate redirect aliases.
+Each of those is now classified with its reason, so the number stays honest.
 
 **The work — the larger half, and the part nobody was tracking.**
 
