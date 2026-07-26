@@ -284,7 +284,7 @@ export default function Home() {
                   {HERO_VARIANT === "A" ? "Find your track" : "Start here if you're a skeptic"}
                 </button>
               </Link>
-              <Link href="/table" style={{ textDecoration: "none" }}>
+              <Link href="/read" style={{ textDecoration: "none" }}>
                 <button
                   type="button"
                   style={{
@@ -300,7 +300,7 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  Disciple someone
+                  Read a book free
                 </button>
               </Link>
             </div>

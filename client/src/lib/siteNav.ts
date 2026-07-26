@@ -3,16 +3,22 @@
  * The site's grouped navigation — one source of truth for the footer and the
  * header.
  *
- * The groups are named for what a READER came to do, not for how the content is
- * filed. Somebody arrives thinking "I am new here", "I want to read something",
- * "I want to actually grow", "I lead a church", or "who is this guy" — so those
- * are the doors. The six pillars are still the filing spine of the whole site
- * (taxonomy.ts), but a person in trouble does not think in pillars, so they live
- * inside Read as topics rather than as a top-level menu.
+ * LiveWell is James Bell's writing platform: the essays, the books, the
+ * newsletter, theology, church history, justice, the hard questions — a place
+ * to read, learn, and grow. The header carries only that identity, in four
+ * doors named for what a reader came to do: Read, Topics, Grow, About.
  *
- * Two surfaces, one map: `primary: true` puts a link in the header, and the
- * footer shows everything. The header stays scannable; nothing is ever lost,
- * because every link still has a home in the footer.
+ * The pastors' work (bound for the Pastors Connection Network) and the
+ * disciple-making tools (bound for the discipleship app) are deliberately kept
+ * OUT of the header. Their pages stay live — nothing is deleted and no URL
+ * breaks — but they live in a footer-only group until they move to their own
+ * homes. A group with no `primary` links never appears in the header or the
+ * mobile menu; the footer still shows it.
+ *
+ * Two surfaces, one map: `primary: true` puts a link in the header and renders
+ * it prominently in the footer; everything else renders as the footer column's
+ * compact tail. The header stays scannable and the footer stays short, but no
+ * destination is ever lost.
  */
 export interface SiteNavLink {
   label: string;
@@ -20,9 +26,8 @@ export interface SiteNavLink {
   /** true → render as a plain <a> (external / mailto), not a wouter <Link>. */
   external?: boolean;
   /**
-   * true → also show in the header. The footer is the full site map; the header
-   * shows only the essentials of each group so the menus stay short and easy to
-   * scan. Leave it off and the link lives in the footer only.
+   * true → show in the header, and as a full-size row in the footer. Links
+   * without it render in the footer column's compact tail only.
    */
   primary?: boolean;
 }
@@ -39,12 +44,6 @@ export interface SiteNavGroup {
 export const START_NAV: SiteNavLink = {
   label: "Start Here",
   href: "/start",
-};
-
-/** The one destination that gets its own top-level spot in the header. */
-export const TABLE_NAV: SiteNavLink = {
-  label: "The Table",
-  href: "/table",
 };
 
 /** The header's short list for a group: only its primary links. */
@@ -71,8 +70,25 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
     ],
   },
   {
+    // "What does he write about?" Theology, church history, justice, the
+    // hard questions — the subjects, under headings a normal person uses.
+    title: "Topics",
+    links: [
+      { label: "Explore everything", href: "/explore", primary: true },
+      { label: "Theology, in depth", href: "/theology", primary: true },
+      { label: "Church history", href: "/theology/history", primary: true },
+      { label: "Justice", href: "/justice", primary: true },
+      { label: "The church and power", href: "/disruption", primary: true },
+      { label: "The historic faith", href: "/historic-faith", primary: true },
+      { label: "Living well", href: "/living-well" },
+      { label: "All six pillars", href: "/pillars" },
+      { label: "The map", href: "/map" },
+      { label: "The framework", href: "/framework" },
+    ],
+  },
+  {
     // "I want to actually grow." Anything with a sequence, a practice, or a
-    // question to answer — the self-discipleship surface.
+    // question to answer — the learn-and-grow surface.
     title: "Grow",
     links: [
       { label: "Guided reading paths", href: "/pathways", primary: true },
@@ -80,8 +96,6 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Where are you? (assessments)", href: "/assessments", primary: true },
       { label: "Answers to hard questions", href: "/answers", primary: true },
       { label: "Tools", href: "/tools", primary: true },
-      { label: "The Discipleship Pathway", href: "/discipleship" },
-      { label: "Make disciples", href: "/disciple-making" },
       { label: "Reading paths", href: "/reading-paths" },
       { label: "Reading Scripture in context", href: "/resources/context" },
       { label: "How-to guides", href: "/how-tos" },
@@ -93,38 +107,6 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
     ],
   },
   {
-    // "What does he write about?" The six pillars are the site's real spine, so
-    // they keep a home — but under a heading a normal person understands.
-    title: "Topics",
-    links: [
-      { label: "Explore everything", href: "/explore", primary: true },
-      { label: "The historic faith", href: "/historic-faith", primary: true },
-      { label: "Theology, in depth", href: "/theology", primary: true },
-      { label: "Justice", href: "/justice", primary: true },
-      { label: "The church and power", href: "/disruption", primary: true },
-      { label: "Living well", href: "/living-well", primary: true },
-      { label: "Leadership formation", href: "/leadership" },
-      { label: "All six pillars", href: "/pillars" },
-      { label: "The map", href: "/map" },
-      { label: "The framework", href: "/framework" },
-    ],
-  },
-  {
-    // Unchanged in substance: this door already worked.
-    title: "For Pastors",
-    links: [
-      { label: "Pastors Connection Network", href: "/pastors", primary: true },
-      { label: "The leadership hub", href: "/leadership", primary: true },
-      { label: "The Hard Issues Series", href: "/resources/hard-issues-series", primary: true },
-      { label: "Church leadership", href: "/for-leaders", primary: true },
-      { label: "Leadership library", href: "/leadership/library" },
-      { label: "Sermon series library", href: "/leadership/sermon-series" },
-      { label: "The pastoral angle", href: "/the-pastoral-angle" },
-      { label: "Deep formation", href: "/leadership/formation" },
-      { label: "Downloads and study guides", href: "/resources" },
-    ],
-  },
-  {
     title: "About",
     links: [
       { label: "About James Bell", href: "/about", primary: true },
@@ -132,7 +114,27 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Membership", href: "/membership", primary: true },
       { label: "Contact", href: "mailto:Pastorjbell206@gmail.com", external: true, primary: true },
       { label: "Work with James", href: "/work-with-james" },
-      { label: "Pastors Network", href: "https://pastorsconnectionnetwork.com", external: true },
+    ],
+  },
+  {
+    // Footer-only (no primary links, so the header and mobile menus skip it).
+    // This work is headed to its own homes — the pastors' material to the
+    // Pastors Connection Network, the disciple-making tools to the
+    // discipleship app — and until then every page stays live from here.
+    title: "Pastors & Disciple-Makers",
+    links: [
+      { label: "Pastors Connection Network", href: "https://pastorsconnectionnetwork.com", external: true },
+      { label: "PCN on LiveWell", href: "/pastors" },
+      { label: "The leadership hub", href: "/leadership" },
+      { label: "The Hard Issues Series", href: "/resources/hard-issues-series" },
+      { label: "Church leadership", href: "/for-leaders" },
+      { label: "Leadership library", href: "/leadership/library" },
+      { label: "Sermon series library", href: "/leadership/sermon-series" },
+      { label: "The pastoral angle", href: "/the-pastoral-angle" },
+      { label: "Deep formation", href: "/leadership/formation" },
+      { label: "The Table (disciple someone)", href: "/table" },
+      { label: "Make disciples", href: "/disciple-making" },
+      { label: "The Discipleship Pathway", href: "/discipleship" },
     ],
   },
 ];
