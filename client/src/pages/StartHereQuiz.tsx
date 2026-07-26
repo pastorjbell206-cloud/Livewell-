@@ -210,6 +210,7 @@ export default function StartHereQuiz() {
       />
 
       <MinimalNav />
+      <main id="main">
 
       <section style={{ flex: 1, padding: "40px 20px", maxWidth: "900px", margin: "0 auto", width: "100%" }}>
         {!isComplete ? (
@@ -431,6 +432,7 @@ export default function StartHereQuiz() {
         )}
       </section>
 
+      </main>
       <Footer />
     </div>
   );

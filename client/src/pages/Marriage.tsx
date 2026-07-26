@@ -77,6 +77,7 @@ export default function Marriage() {
       />
 
       <MinimalNav />
+      <main id="main">
 
       {/* HERO SECTION */}
       <section style={{ background: "var(--ink)", color: "var(--charcoal-fg)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
@@ -211,6 +212,7 @@ export default function Marriage() {
       </section>
 
       <CrisisHelp />
+      </main>
       <Footer />
     </div>
   );

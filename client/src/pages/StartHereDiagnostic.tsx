@@ -427,6 +427,7 @@ export default function StartHereDiagnostic() {
       />
 
       <MinimalNav />
+      <main id="main">
 
       {/* ── Progress bar ─────────────────────────────────────────── */}
       <div
@@ -913,6 +914,7 @@ export default function StartHereDiagnostic() {
         ) : null}
       </div>
 
+      </main>
       <Footer />
     </div>
   );
