@@ -45,7 +45,7 @@ It costs money its grip on you. Not necessarily your money, though for the rich 
 
 It costs you the right to define yourself. Deny himself, the sentence said, and the modern ear hears cruelty in it, the erasure of the self we have spent a lifetime being told to discover and express. But the self being denied is the self as sovereign, the one who insists on writing his own moral law and calling it freedom. You do not get to keep that seat. Something else sits there now.
 
-And it can cost you relationships and standing, which is the cost people discover last and feel worst. Jesus was clear that the road runs through a certain kind of loss: "you will be hated by all for my name's sake" (Matthew 10:22). Not by everyone, not always, but by some, and sometimes the some are close. There are dinner tables that go quiet. There are men I once respected who regard a conversion like mine as a failure of nerve, and I understand them perfectly, because I would have said the same and said it well. The clear-eyed company you belong to when you believe nothing does not applaud when you leave it.
+And it can cost you relationships and standing, which is the cost people discover last and feel worst. Jesus was clear that the road runs through a certain kind of loss: "you will be hated by all for my name's sake" (Matthew 10:22). Not by everyone, not always, but by some, and sometimes the some are close. There are dinner tables that go quiet. Plenty of thoughtful people regard a conversion like mine as a failure of nerve, and I understand them perfectly, because I would have said the same and said it well. The clear-eyed company you belong to when you believe nothing does not applaud when you leave it.
 
 ## Cheap grace
 
