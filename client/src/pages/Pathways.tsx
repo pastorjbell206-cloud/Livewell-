@@ -16,6 +16,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import LoadFailed from "@/components/LoadFailed";
 import { fetchJson } from "@/lib/fetch-json";
 import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
+import { getReadEssays } from "@/lib/readProgress";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -24,6 +25,8 @@ interface PathwaySummary {
   title: string;
   subtitle: string;
   forWhom: string;
+  /** Slugs of the readable steps, from scripts/build-pathways-index.mjs. */
+  steps?: string[];
 }
 
 function isSummary(x: unknown): x is PathwaySummary {
@@ -44,6 +47,16 @@ export default function Pathways() {
   const [nonce, setNonce] = useState(0);
   const failed = failedAt === nonce;
   const items = loaded && loaded.nonce === nonce ? loaded.items : null;
+
+  // The reader's own progress, read from this device only and never sent
+  // anywhere. A route the reader has started says so, and says how far.
+  const readSet = getReadEssays();
+  const progressOf = (p: PathwaySummary) => {
+    const steps = p.steps ?? [];
+    if (!steps.length) return null;
+    const done = steps.filter((s) => readSet.has(s)).length;
+    return { done, total: steps.length, pct: Math.round((done / steps.length) * 100) };
+  };
 
   useEffect(() => {
     let stale = false;
@@ -88,7 +101,9 @@ export default function Pathways() {
             <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)" }}>Gathering the routes…</p>
           ) : (
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(380px, 100%), 1fr))", gap: "16px" }}>
-              {items.map((p) => (
+              {items.map((p) => {
+                const prog = progressOf(p);
+                return (
                 <Link
                   key={p.slug}
                   href={`/pathways/${p.slug}`}
@@ -102,12 +117,34 @@ export default function Pathways() {
                     <div style={{ fontFamily: "var(--F)", fontSize: "23px", fontWeight: 500, color: "var(--ink)", lineHeight: 1.18, marginBottom: "10px" }}>{p.title}</div>
                     <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", marginBottom: "12px" }}>{p.subtitle}</p>
                     <p style={{ fontFamily: "var(--B)", fontSize: "13px", fontStyle: "italic", lineHeight: 1.55, color: "var(--ink-muted)", marginBottom: "14px", flex: 1 }}>{p.forWhom}</p>
+                    {prog && prog.done > 0 && (
+                      <div style={{ marginBottom: "12px" }}>
+                        <div
+                          role="progressbar"
+                          aria-valuenow={prog.pct}
+                          aria-valuemin={0}
+                          aria-valuemax={100}
+                          aria-label={`${prog.done} of ${prog.total} read`}
+                          style={{ height: "4px", background: "var(--border)", borderRadius: "999px", overflow: "hidden", marginBottom: "6px" }}
+                        >
+                          <div style={{ width: `${prog.pct}%`, height: "100%", background: "var(--mustard)" }} />
+                        </div>
+                        <span style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--mustard-text)" }}>
+                          {prog.done === prog.total ? "Finished" : `${prog.done} of ${prog.total} read`}
+                        </span>
+                      </div>
+                    )}
                     <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink)", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px", alignSelf: "flex-start" }}>
-                      Begin the pathway →
+                      {prog && prog.done > 0 && prog.done < prog.total
+                        ? "Continue the pathway →"
+                        : prog && prog.done === prog.total
+                          ? "Read it again →"
+                          : "Begin the pathway →"}
                     </span>
                   </div>
                 </Link>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>
