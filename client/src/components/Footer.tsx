@@ -61,7 +61,7 @@ export default function Footer() {
               </div>
               {/* The one real signup form, on all ~200 Layout pages (QW-25).
                   Anchored under Connect, as before. */}
-              {group.title === "Connect" && (
+              {group.title === "About" && (
                 <div style={{ marginTop: "18px" }}>
                   <NewsletterSignup variant="footer" source="footer" />
                 </div>

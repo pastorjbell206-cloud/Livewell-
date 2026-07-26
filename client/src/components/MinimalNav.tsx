@@ -1,16 +1,19 @@
 /**
  * Primary navigation. The header mirrors the footer: the same five grouped
- * columns (The Pillars / Write & Read / Libraries & Tools / For Pastors /
- * Connect), rendered as dropdown menus, with one source of truth in
- * lib/siteNav.ts so the two surfaces never drift. Utility actions — Find Help,
- * search, Subscribe — sit to the right. The menu is static (no API round trip),
- * so it paints in full on first render.
+ * columns (Read / Grow / Topics / For Pastors / About), rendered as dropdown
+ * menus, with one source of truth in lib/siteNav.ts so the two surfaces never
+ * drift. The groups are named for what a reader came to do, not for how the
+ * content is filed. Start Here and The Table sit at the top level rather than
+ * inside a menu, because the front door and "disciple someone" should never be
+ * two clicks deep. Utility actions — Find Help, search, Subscribe — sit to the
+ * right. The menu is static (no API round trip), so it paints in full on first
+ * render.
  */
 import { Link, useLocation } from "wouter";
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown, Menu, Search, X } from "lucide-react";
 
-import { SITE_NAV_GROUPS, TABLE_NAV, headerLinks, type SiteNavLink } from "@/lib/siteNav";
+import { SITE_NAV_GROUPS, START_NAV, TABLE_NAV, headerLinks, type SiteNavLink } from "@/lib/siteNav";
 import { PILLAR_ORDER, pillarListingUrl } from "@/lib/subPathways";
 
 /** A grouped link renders as an external anchor or an internal wouter Link. */
@@ -280,6 +283,23 @@ export default function MinimalNav() {
             style={{ display: "flex", gap: "2px", alignItems: "center" }}
             className="desktop-nav"
           >
+            {/* The front door, at the top level. A newcomer should never have to
+                open a menu to find where to begin. */}
+            <Link
+              href={START_NAV.href}
+              style={{
+                color: isActive(START_NAV.href) ? "var(--mustard-text)" : "var(--ink)",
+                fontFamily: "var(--U)",
+                fontSize: "13px",
+                fontWeight: 600,
+                padding: "8px 12px",
+                borderBottom: "2px solid var(--mustard)",
+                whiteSpace: "nowrap",
+                textDecoration: "none",
+              }}
+            >
+              {START_NAV.label}
+            </Link>
             {SITE_NAV_GROUPS.map(group => (
               <div key={group.title} style={{ display: "contents" }}>
               <div
@@ -376,7 +396,7 @@ export default function MinimalNav() {
               </div>
               {/* The Table sits at the top level, right after the tools group,
                   so "disciple someone" is one glance away — never buried. */}
-              {group.title === "Libraries & Tools" && (
+              {group.title === "Grow" && (
                 <Link
                   href={TABLE_NAV.href}
                   style={{
@@ -534,6 +554,21 @@ export default function MinimalNav() {
               }}
             >
               Find Help for What You Are Facing
+            </Link>
+            <Link
+              href={START_NAV.href}
+              onClick={() => setMobileOpen(false)}
+              style={{
+                display: "block",
+                padding: "12px 0",
+                fontFamily: "var(--U)",
+                fontSize: "15px",
+                fontWeight: 700,
+                color: "var(--mustard-text)",
+                borderBottom: "1px solid var(--border)",
+              }}
+            >
+              {START_NAV.label}
             </Link>
             <Link
               href={TABLE_NAV.href}
