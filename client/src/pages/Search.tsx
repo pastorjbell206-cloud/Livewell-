@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
 import Layout from "@/components/Layout";
+import { LoadFailed } from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
 import { ArrowLeft, Search as SearchIcon } from "lucide-react";
@@ -122,6 +123,17 @@ export default function SearchPage() {
       : searchType === "articles"
         ? articleResults.isLoading
         : resourceResults.isLoading;
+
+  // A search that never reached the server has not "found nothing" — it has
+  // not run. Saying "nothing here" sends the reader off to rephrase a query
+  // that was fine.
+  const activeQuery =
+    searchType === "all"
+      ? allResults
+      : searchType === "articles"
+        ? articleResults
+        : resourceResults;
+  const isError = activeQuery.isError;
 
   const getResultLink = (result: any) => {
     switch (result.type) {
@@ -292,6 +304,14 @@ export default function SearchPage() {
                 </div>
               ) : results.length === 0 ? (
                 visibleLibraryMatches.length === 0 ? (
+                  isError ? (
+                    <LoadFailed
+                      what="The search"
+                      onRetry={() => void activeQuery.refetch()}
+                      backHref="/writing"
+                      backLabel="Browse the essays instead"
+                    />
+                  ) : (
                   <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
                     {libraryLoaded ? (
                       <>
@@ -320,6 +340,7 @@ export default function SearchPage() {
                       <p className="text-lg">Searching…</p>
                     )}
                   </div>
+                  )
                 ) : null
               ) : (
             <div>
