@@ -1499,7 +1499,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
     slug: "can-you-be-good-without-god",
     articleTitle: "Can You Be Good Without God?",
     personalReflection: [
-      "The essay opens by conceding that the best man in the neighborhood was an atheist. Who is the most morally serious unbeliever you know, and has your theology ever had to account for them honestly?",
+      "The essay opens by conceding the whole of it: you do not need God to be good, and the decent unbelievers in your life are people you actually know rather than a category. Who is the most morally serious unbeliever you know, and has your theology ever had to account for them honestly?",
       "James distinguishes between behaving well and being able to say what good is. Have you ever confused the two when defending your faith?",
       "When you call something truly wrong, are you reporting a fact about the world or a fact about your feelings? Sit with the answer before you give it."
     ],
