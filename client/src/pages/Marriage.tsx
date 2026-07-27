@@ -6,6 +6,8 @@ import { NewsletterSignup } from "@/components/NewsletterSignup";
 import PillarLeadMagnet from "@/components/PillarLeadMagnet";
 import { CrisisHelp } from "@/components/CrisisHelp";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
+import SubjectShelf from "@/components/SubjectShelf";
+import { subjectById } from "@/lib/subjects";
 
 export default function Marriage() {
 
@@ -210,6 +212,7 @@ export default function Marriage() {
         </div>
       </section>
 
+      {subjectById("marriage") && <SubjectShelf subject={subjectById("marriage")!} />}
       <CrisisHelp />
       <Footer />
     </div>
