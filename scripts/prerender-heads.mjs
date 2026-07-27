@@ -559,6 +559,54 @@ const SECTION_BY_ROUTE = {
   "/wisdom/": { name: "Wisdom", path: "/wisdom" },
 };
 
+// ---------------------------------------------------------------------------
+// Hub index pages shipped ~5.3KB of shell with no content: the essays are on
+// their own prerendered pages (each carries its full body), but the hub itself
+// listed nothing a crawler could follow or read. This injects a real, linked
+// listing so each hub has substance and passes link equity to its children.
+// Capped per hub: the sitemap carries the complete set, so a hub needs a
+// representative body, not every row.
+const HUB_LISTINGS = {
+  "/writing": { label: "Essays", cap: 150, load: () => {
+    const lib = readJsonSafe("content/static-library.generated.json") || [];
+    return lib.filter((e) => e && e.slug && e.title)
+      .map((e) => ({ title: e.title, href: `/writing/${e.slug}`, blurb: e.excerpt || "" }));
+  } },
+  "/books": { label: "Books", cap: 60, load: () => booksListing() },
+  "/read": { label: "Read free", cap: 60, load: () => booksListing() },
+  "/studyguides": { label: "Study guides", cap: 80, load: () => {
+    const d = readJsonSafe("client/public/studyguides/index.json");
+    return ((d && d.guides) || []).map((g) => ({ title: g.title, href: `/studyguides/${g.slug}`, blurb: g.blurb || "" }));
+  } },
+  "/pathways": { label: "Guided pathways", cap: 40, load: () => {
+    const d = readJsonSafe("client/public/pathways/index.json") || [];
+    return d.map((x) => ({ title: x.title, href: `/pathways/${x.slug}`, blurb: x.subtitle || "" }));
+  } },
+};
+
+function readJsonSafe(rel) {
+  try { return JSON.parse(fs.readFileSync(path.join(process.cwd(), rel), "utf8")); }
+  catch { return null; }
+}
+
+function booksListing() {
+  const d = readJsonSafe("client/public/books/index.json");
+  return ((d && d.books) || []).map((b) => ({ title: b.title, href: `/read/${b.slug}`, blurb: b.blurb || b.subtitle || "" }));
+}
+
+function hubListingHtml(routePath) {
+  const cfg = HUB_LISTINGS[routePath];
+  if (!cfg) return "";
+  let items;
+  try { items = cfg.load(); } catch { return ""; }
+  if (!items || !items.length) return "";
+  const rows = items.slice(0, cfg.cap).map((it) => {
+    const blurb = it.blurb ? `<p>${escapeHtml(String(it.blurb).slice(0, 160))}</p>` : "";
+    return `<li><a href="${escapeHtml(it.href)}">${escapeHtml(it.title)}</a>${blurb}</li>`;
+  }).join("\n");
+  return `<nav aria-label="${escapeHtml(cfg.label)}"><h2>${escapeHtml(cfg.label)}</h2><ul>\n${rows}\n</ul></nav>`;
+}
+
 function escapeHtml(s) {
   return String(s ?? "")
     .replace(/&/g, "&amp;")
@@ -693,7 +741,7 @@ async function main() {
       type: page.type,
       schemas: page.schemas || [],
     });
-    writeRoute(template, page, head);
+    writeRoute(template, page, head, hubListingHtml(page.path));
     wrote++;
   }
 
@@ -888,7 +936,7 @@ async function main() {
       image: ogImageUrl(title),
       type: "website",
     });
-    writeRoute(template, { path: routePath }, head);
+    writeRoute(template, { path: routePath }, head, hubListingHtml(routePath));
     written.add(routePath);
     extracted++;
     wrote++;
