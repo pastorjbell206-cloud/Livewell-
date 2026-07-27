@@ -34,7 +34,15 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "..");
 const DIST_DIR = path.join(REPO_ROOT, "dist/public");
-const SITEMAP = path.join(DIST_DIR, "sitemap.xml");
+// generate-sitemap.mjs writes to client/public/sitemap.xml and `vite build`
+// copies it into dist. Read whichever exists, preferring the source copy, so
+// the audit works whether the sitemap was regenerated before or after the
+// build — running it after leaves dist holding the previous run's file.
+const SITEMAP_CANDIDATES = [
+  path.join(REPO_ROOT, "client/public/sitemap.xml"),
+  path.join(DIST_DIR, "sitemap.xml"),
+];
+const SITEMAP = SITEMAP_CANDIDATES.find((p) => fs.existsSync(p));
 const DEFAULT_ORIGIN = "https://www.livewellbyjamesbell.co";
 
 const argv = process.argv.slice(2);
@@ -44,9 +52,10 @@ const limitIdx = argv.indexOf("--limit");
 const LIMIT = limitIdx >= 0 ? Number(argv[limitIdx + 1]) : Infinity;
 const ORIGIN = argv.find((a) => a.startsWith("http")) || DEFAULT_ORIGIN;
 
-if (!fs.existsSync(SITEMAP)) {
-  console.error(`✗ No sitemap at ${SITEMAP}`);
-  console.error("  Run: pnpm build && node scripts/generate-sitemap.mjs");
+if (!SITEMAP) {
+  console.error("✗ No sitemap.xml found. Looked in:");
+  for (const p of SITEMAP_CANDIDATES) console.error(`    ${path.relative(REPO_ROOT, p)}`);
+  console.error("  Run: pnpm run sitemap");
   process.exit(1);
 }
 
@@ -184,6 +193,7 @@ for (const url of targets) {
 const mode = LIVE ? `live fetch against ${ORIGIN}` : "built output in dist/public";
 console.log("");
 console.log(`Canonical audit — ${mode}`);
+console.log(`  sitemap           ${path.relative(REPO_ROOT, SITEMAP)}`);
 console.log(`  sitemap URLs      ${urls.length}`);
 if (targets.length !== urls.length) console.log(`  audited           ${targets.length} (--limit)`);
 console.log(`  pages checked     ${checked}`);
