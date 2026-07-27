@@ -26,7 +26,7 @@ export default function About() {
     <Layout>
       <SEOMeta
         title="About James Bell — Pastor, Author, Writer"
-        description={`Pastor, author, and founder. Twelve years at First Baptist Church of Fenton, the Pastors Connection Network, and ENDS, equipping national pastors worldwide. ${SITE_STATS.bookCount} books. Came to faith from atheism. Five sons.`}
+        description={`Pastor, author, and founder. Twelve years at First Baptist Church of Fenton, the Pastors Connection Network, and ENDS, equipping pastors in remote regions. ${SITE_STATS.bookCount} books. Came to faith from atheism. Five sons.`}
         type="website"
         structuredData={{
           "@context": "https://schema.org",
@@ -34,7 +34,7 @@ export default function About() {
           name: "James Bell",
           url: `${SITE_URL}/about`,
           jobTitle: "Lead Pastor, Author, Founder",
-          description: `Lead Pastor at First Baptist Church of Fenton for twelve years, author of ${SITE_STATS.bookCountWord} books, founder of the Pastors Connection Network (nearly 18,000 pastors) and of ENDS, which equips national pastors in remote regions worldwide.`,
+          description: `Lead Pastor at First Baptist Church of Fenton for twelve years, author of ${SITE_STATS.bookCountWord} books, founder of the Pastors Connection Network (nearly 18,000 pastors) and of ENDS, which equips pastors in remote regions around the world.`,
           worksFor: {
             "@type": "Organization",
             name: "First Baptist Church of Fenton",
@@ -57,7 +57,7 @@ export default function About() {
               <p style={{ fontSize: "0.875rem", color: "var(--bone)", opacity: 0.5, fontFamily: "var(--U)", lineHeight: 1.5 }}>
                 Lead Pastor, First Baptist Church of Fenton<br />
                 Founder, Pastors Connection Network<br />
-                Founder, ENDS — Equipped Nationals, Disciple and Shepherds<br />
+                Founder, ENDS, equipping pastors in remote regions<br />
                 Host, Following the Way<br />
                 Author of {SITE_STATS.bookCount} books
               </p>
@@ -95,7 +95,7 @@ export default function About() {
               I started the Pastors Connection Network for a fairly simple reason. Pastors are some of the least cared-for people in the church. They hand out grace all week and rarely get handed any back. They carry things people have told them that they can never repeat to anyone. PCN now connects nearly eighteen thousand pastors to each other and to resources built by someone who knows that particular weight from the inside, because when the man up front quietly comes apart on a Saturday night, a whole congregation feels it on Sunday morning.
             </p>
             <p>
-              I also founded ENDS, which stands for Equipped Nationals, Disciple and Shepherds. It exists to equip national pastors in remote regions around the world. Not to send Americans to do their work for them, and not to hand them a translated version of our assumptions. To put real training in the hands of the men already there, who already know the language and the terrain and the cost, and who will still be there long after any visitor has gone home.
+              I also founded ENDS, which equips pastors in remote regions around the world. Not to send Americans to do their work for them, and not to hand them a translated version of our assumptions. To put real training in the hands of the men already there, who already know the language and the terrain and the cost, and who will still be there long after any visitor has gone home.
             </p>
             <p>
               The rest of it is writing. {SITE_STATS.bookCount} books so far, on doubt, marriage, fathers and sons, the church, and the slow unglamorous business of following Jesus over a long stretch of time. The essays here. The <a href="http://followingthewaypodcast.com/" target="_blank" rel="noopener noreferrer">Following the Way</a> podcast, and the notes I write most days for whoever is reading. It is really all one project: taking the depth of theology and putting it back in contact with the weight of an ordinary life.{" "}

@@ -85,7 +85,9 @@ export default function FollowJames({
             gap: "14px",
           }}
         >
-          {/* The site's own two: everything written, and the books. */}
+          {/* The site's own surfaces first: everything written, the books, the
+              things to use, and the way to work with James. A reader should be
+              able to reach all of it from one block rather than hunting. */}
           <Link href="/writing" style={tile}>
             <div style={tileTitle}>All the writing</div>
             <p style={tileBlurb}>Every essay, searchable, filed by subject.</p>
@@ -93,6 +95,18 @@ export default function FollowJames({
           <Link href="/books" style={tile}>
             <div style={tileTitle}>The books</div>
             <p style={tileBlurb}>Twenty-one titles, several readable free in full.</p>
+          </Link>
+          <Link href="/tools" style={tile}>
+            <div style={tileTitle}>The tools</div>
+            <p style={tileBlurb}>Assessments, study guides, guided reading paths, and the rest, in one place.</p>
+          </Link>
+          <Link href="/downloads" style={tile}>
+            <div style={tileTitle}>Downloads and PDFs</div>
+            <p style={tileBlurb}>Every printable: leader guides, participant handouts, sermon series. Free.</p>
+          </Link>
+          <Link href="/work-with-james" style={tile}>
+            <div style={tileTitle}>Work with James</div>
+            <p style={tileBlurb}>Preaching, consulting, and coming alongside a church or a leader.</p>
           </Link>
 
           {channels.map((c) => (
