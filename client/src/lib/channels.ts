@@ -37,6 +37,15 @@ export const CHANNELS: Channel[] = [
     live: true,
   },
   {
+    id: "ends",
+    label: "ENDS",
+    blurb: "The initiative equipping pastors in remote regions around the world.",
+    // Given by James as "ends initiative dot org". Outbound requests are
+    // blocked in this environment, so it could not be opened to confirm.
+    url: "https://endsinitiative.org",
+    live: true,
+  },
+  {
     id: "podcast",
     label: "Following the Way",
     blurb: "The podcast. Conversations on theology and the weight of everyday life.",
