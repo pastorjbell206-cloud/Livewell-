@@ -13,6 +13,7 @@
  */
 import { useLocation } from "wouter";
 import { SITE_URL, SITE_NAME, AUTHOR_NAME, OG_DEFAULT_IMAGE } from "@/lib/site";
+import { SAME_AS } from "@/lib/channels";
 
 interface SEOMetaProps {
   title: string;
@@ -129,11 +130,7 @@ export function getOrganizationSchema() {
       name: AUTHOR_NAME,
       url: `${SITE_URL}/about`,
     },
-    sameAs: [
-      "https://www.facebook.com/james.bell.609252",
-      "https://pastorsconnectionnetwork.com",
-      "https://substack.com/@jamesbell333289",
-    ],
+    sameAs: SAME_AS,
   };
 }
 

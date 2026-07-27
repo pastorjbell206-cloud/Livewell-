@@ -4,6 +4,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
 import { ArticleCard } from "@/components/ArticleCard";
+import { SAME_AS } from "@/lib/channels";
 
 interface Author {
   id: string;
@@ -161,7 +162,7 @@ export function AuthorProfile() {
     url: `${SITE_URL}/authors/${author.slug}`,
     jobTitle: author.role,
     ...(author.email ? { email: author.email } : {}),
-    sameAs: [author.facebook, author.substack, author.website].filter(Boolean),
+    sameAs: SAME_AS.filter(Boolean),
   };
 
   return (

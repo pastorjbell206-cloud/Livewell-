@@ -7,6 +7,8 @@ import { SITE_URL } from "@/lib/site";
 import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBlocks";
 import { Figure } from "@/components/Figure";
 import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
+import FollowJames from "@/components/FollowJames";
+import { SAME_AS } from "@/lib/channels";
 
 const PORTRAIT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg";
 
@@ -37,11 +39,7 @@ export default function About() {
             "@type": "Organization",
             name: "First Baptist Church of Fenton",
           },
-          sameAs: [
-            "https://pastorsconnectionnetwork.com",
-            "https://substack.com/@jamesbell333289",
-            "https://www.facebook.com/james.bell.609252",
-          ],
+          sameAs: SAME_AS,
         }}
       />
 
@@ -171,6 +169,7 @@ export default function About() {
           </Link>
         </div>
       </section>
+      <FollowJames />
     </Layout>
   );
 }
