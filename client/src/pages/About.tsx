@@ -18,7 +18,7 @@ const PATHWAYS = [
   { href: "/pastors", label: "If you carry a church", desc: "The pastors section and the Pastors Connection Network exist because the loneliest job in the building is the one standing up front." },
   { href: "/leadership", label: "If you lead and teach", desc: "A working library on preaching, reading Scripture, and forming leaders. Built to be used, not admired." },
   { href: "/marriage", label: "If your marriage needs more than tips", desc: "Writing on covenant for two people still keeping a promise they are no longer sure they understand." },
-  { href: "/parenting", label: "If you are raising children without a map", desc: "From a father of five sons who was raised without one. Being a little scared turns out to be part of the qualification." },
+  { href: "/parenting", label: "If you are raising children", desc: "Five sons, and none of it theoretical. Formation over performance, and no formulas." },
 ];
 
 export default function About() {
@@ -26,7 +26,7 @@ export default function About() {
     <Layout>
       <SEOMeta
         title="About James Bell — Pastor, Author, Writer"
-        description={`Pastor, author, and founder. Twelve years at First Baptist Church of Fenton, the Pastors Connection Network, and ENDS, equipping pastors in remote regions. ${SITE_STATS.bookCount} books. Came to faith from atheism. Five sons.`}
+        description={`Pastor, author, and founder. Twelve years at First Baptist Church of Fenton, the Pastors Connection Network, and ENDS, equipping pastors in remote regions. ${SITE_STATS.bookCount} books on theology, church history, justice, and ordinary life.`}
         type="website"
         structuredData={{
           "@context": "https://schema.org",
@@ -66,20 +66,20 @@ export default function About() {
 
           <div className="article-body prose-section" style={{ color: "var(--bone)", opacity: 0.85 }}>
             <p>
-              I came to faith from atheism, and I did not come quietly. For a long time I was certain that belief was something people reached for when they could not sit with how little the universe owed them. I had my arguments, and I thought they were good ones. What I never had was a good answer for why those arguments kept feeling thinner the longer I held onto them. There was no lightning, no single night I can point to. I just slowly ran out of room to keep saying no, and one day I stopped saying it.
+              I pastor a church in Fenton, Michigan, and I write. Most weeks that is the whole job description.
             </p>
             <p>
-              I was also raised without a father. I don't mention that for sympathy. I mention it because it explains most of what I write. When Scripture talks about a Father who stays, I hear it the way a man hears it who knows exactly what it costs when one leaves. And when I am raising my own five sons, I am not doing it out of confidence. I am doing it as someone trying to build, in his own house, a thing he never got to watch being built.
+              I was an atheist before I was a Christian. I bring it up because it changed how I write and not because I want to build a personality on it. Mostly it means I know what the objections sound like from the inside, and I am not willing to answer them with something thin. If you do not believe any of this, I am not going to pretend your reasons are stupid.
             </p>
             <p>
-              Those two things — the unbelief I came out of and the father I never had — sit underneath everything on this site. I don't write about doubt from a safe distance, because I was on the far side of it, and I still remember the road back. And I don't write about fathers and sons as a subject I studied. I write about them because they are the ordinary, daily work of my own life.
+              The rest is fairly ordinary. I have five sons. I have been at the same church long enough to have buried people I loved and married their children. Almost everything I write started as something I had to figure out for an actual person sitting across from me, usually on a week when I did not feel qualified to answer.
             </p>
           </div>
         </div>
       </section>
 
       <StatementBand tone="light" width="38ch">
-        The unbelief I came out of, and the father I never had, sit underneath everything on this site.
+        Theology is only worth anything if it holds up on a Tuesday afternoon.
       </StatementBand>
 
       {/* THE CHURCH AND THE NETWORK */}
@@ -98,7 +98,7 @@ export default function About() {
               I also founded ENDS, which equips pastors in remote regions around the world. Not to send Americans to do their work for them, and not to hand them a translated version of our assumptions. To put real training in the hands of the men already there, who already know the language and the terrain and the cost, and who will still be there long after any visitor has gone home.
             </p>
             <p>
-              The rest of it is writing. {SITE_STATS.bookCount} books so far, on doubt, marriage, fathers and sons, the church, and the slow unglamorous business of following Jesus over a long stretch of time. The essays here. The <a href="http://followingthewaypodcast.com/" target="_blank" rel="noopener noreferrer">Following the Way</a> podcast, and the notes I write most days for whoever is reading. It is really all one project: taking the depth of theology and putting it back in contact with the weight of an ordinary life.{" "}
+              The rest of it is writing. {SITE_STATS.bookCount} books so far, on theology, church history, justice, marriage, parenting, and the slow unglamorous business of following Jesus over a long stretch of time. The essays here. The <a href="http://followingthewaypodcast.com/" target="_blank" rel="noopener noreferrer">Following the Way</a> podcast, and the notes I write most days for whoever is reading. It is really all one project: taking the depth of theology and putting it back in contact with the weight of an ordinary life.{" "}
               <Link href="/books">The books are here</Link>.
             </p>
           </div>
