@@ -91,6 +91,7 @@ const BookLibrary = lazy(() => import("./pages/books/BookLibrary"));
 const BookReader = lazy(() => import("./pages/books/BookReader"));
 
 const Resources = lazy(() => import("./pages/Resources"));
+const Downloads = lazy(() => import("./pages/Downloads"));
 const ContextLibrary = lazy(() => import("./pages/resources/ContextLibrary"));
 const CreedsLibrary = lazy(() => import("./pages/resources/CreedsLibrary"));
 const CreedDocument = lazy(() => import("./pages/resources/CreedDocument"));
@@ -514,6 +515,7 @@ function Router() {
         <Route path="/resources/creeds/:slug" component={CreedDocument} />
         <Route path="/resources/creeds" component={CreedsLibrary} />
         <Route path="/resources" component={Resources} />
+        <Route path="/downloads" component={Downloads} />
         <Route path="/books" component={Books} />
         <Route path="/books/when-god-bless-america/thank-you" component={WhenGodBlessAmericaThankYou} />
         <Route path="/books/when-god-bless-america" component={WhenGodBlessAmerica} />
