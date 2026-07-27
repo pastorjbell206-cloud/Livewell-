@@ -23,6 +23,7 @@ import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
 import { isFullEssay } from "@/lib/essayQuality";
 import FollowJames from "@/components/FollowJames";
+import PersistentHelpTab from "@/components/PersistentHelpTab";
 import {
   META_DESCRIPTION,
   PRIMARY_HEADLINE,
@@ -791,6 +792,7 @@ export default function Home() {
 
       <FollowJames heading="Everything James publishes, in one place" blurb="The essays and books live here. The newsletter, the podcast, and the daily notes live elsewhere. Same voice, different rooms." />
 
+      <PersistentHelpTab />
       <Footer />
     </div>
   );

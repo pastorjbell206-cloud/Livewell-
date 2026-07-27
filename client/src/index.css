@@ -511,3 +511,10 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
 .lw-reading-focus .article-body{letter-spacing:.003em}
 .lw-reading-focus .article-body > * + *{margin-top:1.5em}
 .lw-reading-focus .article-body h2{font-size:34px}
+
+/* The persistent Find Help tab rides the right edge on desktop only; on a
+   phone it would sit over the reading column, so it is removed entirely
+   rather than merely shrunk. */
+@media (max-width: 1023px) {
+  .persistent-help-tab { display: none !important; }
+}

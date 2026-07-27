@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useState, type ReactNode } from "react";
 import MinimalNav from "./MinimalNav";
 import Footer from "./Footer";
+import PersistentHelpTab from "@/components/PersistentHelpTab";
 
 // The palette (and the cmdk dependency it drags in) loads on the first ⌘K /
 // Ctrl+K, not on every page. Until then this listener is the only cost.
@@ -27,6 +28,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       <main id="main" style={{ flex: 1 }}>
         {children}
       </main>
+      <PersistentHelpTab />
       <Footer />
       {paletteReady && (
         <Suspense fallback={null}>
