@@ -15,6 +15,8 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBlocks";
 import { trpc } from "@/lib/trpc";
+import SubjectShelf from "@/components/SubjectShelf";
+import { subjectById } from "@/lib/subjects";
 
 interface Devotion {
   id: string;
@@ -283,6 +285,7 @@ export default function Family() {
           </div>
         </div>
       </section>
+      {subjectById("family") && <SubjectShelf subject={subjectById("family")!} />}
     </Layout>
   );
 }

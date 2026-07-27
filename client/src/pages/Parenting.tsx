@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import PillarLeadMagnet from "@/components/PillarLeadMagnet";
 import { PullQuote, StatementBand } from "@/components/EditorialBlocks";
+import SubjectShelf from "@/components/SubjectShelf";
+import { subjectById } from "@/lib/subjects";
 
 export default function Parenting() {
 
@@ -225,6 +227,7 @@ export default function Parenting() {
         </div>
       </section>
 
+      {subjectById("parenting") && <SubjectShelf subject={subjectById("parenting")!} />}
       <Footer />
     </div>
   );
