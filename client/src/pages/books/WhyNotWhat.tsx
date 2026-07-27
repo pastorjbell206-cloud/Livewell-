@@ -40,7 +40,7 @@ export default function WhyNotWhat() {
           url: `${SITE_URL}/${SLUG}`,
           bookFormat: "https://schema.org/EBook",
           inLanguage: "en",
-          offers: { "@type": "Offer", price: "9.99", priceCurrency: "USD" },
+          offers: { "@type": "Offer", price: "8.99", priceCurrency: "USD" },
         }}
       />
 

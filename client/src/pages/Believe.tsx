@@ -110,7 +110,7 @@ export default function Believe() {
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "30px", fontWeight: 400, margin: "0 0 14px" }}>Read it now</h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,.8)", maxWidth: "52ch", margin: "0 auto 28px" }}>
-            $9.99 for the complete ebook — EPUB for your e-reader and PDF for everything else, delivered the moment you check out.
+            $8.99 for the complete ebook — EPUB for your e-reader and PDF for everything else, delivered the moment you check out.
           </p>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <StripeBuyButton paymentLink={PAYMENT_LINK} />

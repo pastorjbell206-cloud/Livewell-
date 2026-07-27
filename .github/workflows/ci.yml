@@ -49,7 +49,17 @@ jobs:
         run: pnpm test
 
       - name: Build
-        run: pnpm run build      
+        run: pnpm run build
+
+      # Every URL the sitemap advertises must be prerendered and must
+      # canonicalise to itself. A page that points its canonical elsewhere asks
+      # Google not to index it; across 1,700+ URLs a single wrong default would
+      # be invisible until traffic disappeared.
+      - name: Canonical audit (sitemap → prerendered head)
+        run: |
+          pnpm run sitemap
+          pnpm run prerender
+          pnpm run audit:canonicals
 
   quality:
     # Lighthouse + axe against the built site, in a runner where Chrome exists.

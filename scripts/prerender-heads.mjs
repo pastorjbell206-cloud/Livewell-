@@ -56,7 +56,7 @@ const STATIC_PAGES = [
   {
     path: "/about",
     title: "About James Bell",
-    description: "Lead Pastor of First Baptist Church of Fenton, founder of the Pastors Connection Network, author of twenty-one books. Came to faith from atheism. Raised without a father. Five sons.",
+    description: "James Bell has pastored First Baptist Church of Fenton, Michigan for twelve years. He founded the Pastors Connection Network and ENDS, hosts the Following the Way podcast, and has written twenty-one books.",
     type: "profile",
     schemas: [personSchema()],
   },
@@ -779,6 +779,12 @@ async function main() {
     // framing is the description, and the title matches the page's own
     // "{label} — What the Bible Says" so scrapers see the same head.
     { file: "client/public/wisdom/topics.json", key: "topics", route: "/wisdom/", ogPrefix: "wisdom", slugField: "id", titleField: "label", desc: "framing", titleTemplate: "{title} — What the Bible Says" },
+    // The 13 guided reading pathways (/pathways/:slug) and the 4 formation
+    // guides (/leadership/guides/:slug). Both are param routes, so the route
+    // table extractor skips them by design and only a manifest pass reaches
+    // them; the sitemap has listed both families all along.
+    { file: "client/public/pathways/index.json", route: "/pathways/", ogPrefix: "pathways", desc: "subtitle" },
+    { file: "client/public/leadership/formation-guides.json", key: "guides", route: "/leadership/guides/", ogPrefix: "leadership-guides", desc: "subtitle" },
   ];
   let withBody = 0;
   for (const src of LIBRARY_SOURCES) {
@@ -786,7 +792,9 @@ async function main() {
     try {
       data = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, src.file), "utf8"));
     } catch { continue; }
-    for (const e of data[src.key] || []) {
+    // Most manifests are `{ key: [...] }`; a couple (pathways) are a bare array.
+    const entries = Array.isArray(data) ? data : data[src.key] || [];
+    for (const e of entries) {
       // Most manifests key by slug/title; a few (e.g. the whole-Bible sermons)
       // key by id/name, so allow a per-source field alias.
       const slug = e.slug || (src.slugField ? e[src.slugField] : undefined);
@@ -867,7 +875,16 @@ async function main() {
   const written = new Set(STATIC_PAGES.map((p) => p.path));
   const appSrc = fs.readFileSync(path.join(REPO_ROOT, "client/src/App.tsx"), "utf8");
   const importMap = {};
-  for (const m of appSrc.matchAll(/const (\w+) = lazy\(\(\) => import\("(\.\/pages\/[^"]+)"\)\)/g)) {
+  // Two lazy forms are in use: the one-liner `lazy(() => import("./pages/X"))`
+  // and the named-export form, which wraps and usually breaks across lines:
+  //   const X = lazy(() =>
+  //     import("./pages/X").then((m) => ({ default: m.X }))
+  //   );
+  // Matching only the first form silently dropped the second from prerendering
+  // — a page could ship a perfect literal <SEOMeta> and still serve the
+  // homepage head. Match up to the closing quote of the import path and let
+  // whatever follows be whatever it is.
+  for (const m of appSrc.matchAll(/const (\w+) = lazy\(\(\) =>\s*import\("(\.\/pages\/[^"]+)"/g)) {
     importMap[m[1]] = m[2];
   }
   for (const m of appSrc.matchAll(/^import (\w+) from "(\.\/pages\/[^"]+)";/gm)) {
@@ -889,7 +906,13 @@ async function main() {
     const normalized = routePath === "/" ? "" : routePath;
     if (routePath === "/404" || written.has(normalized)) continue;
     const rel = importMap[comp];
-    if (!rel) continue;
+    if (!rel) {
+      // Report rather than skip in silence. A component the import scanner
+      // cannot resolve is exactly how /book-bundles and /article-collections
+      // went un-prerendered without anything saying so.
+      uncovered.push(`${routePath} (component ${comp} — import not resolved)`);
+      continue;
+    }
     const compPath = path.join(REPO_ROOT, "client/src", rel.replace(/^\.\//, "")) + ".tsx";
     let compSrc;
     try {

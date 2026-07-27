@@ -73,7 +73,7 @@ export default function ConsiderTheBirds() {
             url: `${SITE_URL}/${SLUG}`,
             offers: {
               "@type": "Offer",
-              price: "9.99",
+              price: "8.99",
               priceCurrency: "USD",
               availability: "https://schema.org/InStock",
               url: `${SITE_URL}/${SLUG}`,
@@ -196,7 +196,7 @@ export default function ConsiderTheBirds() {
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "30px", fontWeight: 400, margin: "0 0 14px" }}>Read it now</h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,.8)", maxWidth: "52ch", margin: "0 auto 28px" }}>
-            $9.99 for the complete ebook — a PDF you can read on any device, delivered the moment you check out.
+            $8.99 for the complete ebook — a PDF you can read on any device, delivered the moment you check out.
           </p>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <BuyEbookButton slug={SLUG} />

@@ -15,7 +15,7 @@ interface AuthorBioProps {
 }
 
 const JAMES_BELL_BIO =
-  `James Bell is Lead Pastor of First Baptist Church of Fenton and founder of the Pastors Connection Network. He came to faith from atheism, was raised without a father, and has five sons. Those last two facts shape everything he writes. He has been in ministry for over ${SITE_STATS.yearsInMinistryWord} years and is the author of ${SITE_STATS.bookCountWord} books.`;
+  `James Bell has pastored First Baptist Church of Fenton, Michigan, for twelve years. He founded the Pastors Connection Network, now close to eighteen thousand pastors, and ENDS, which equips pastors in remote regions around the world. He was an atheist before he was a Christian. He and Susanna have five sons. He hosts the Following the Way podcast and has written ${SITE_STATS.bookCountWord} books.`;
 
 const JAMES_BELL_IMAGE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg";

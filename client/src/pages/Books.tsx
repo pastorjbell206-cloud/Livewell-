@@ -134,7 +134,7 @@ export default function Books() {
             />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
-                New Ebook · $9.99 · Post-Christian America
+                New Ebook · $8.99 · Post-Christian America
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Babylon
@@ -167,7 +167,7 @@ export default function Books() {
             />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
-                New Ebook · $9.99 · On Marriage
+                New Ebook · $8.99 · On Marriage
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Covenant
@@ -199,7 +199,7 @@ export default function Books() {
             />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
-                New Ebook · $9.99 · On Reading Scripture
+                New Ebook · $8.99 · On Reading Scripture
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 How to Read the Bible
@@ -232,7 +232,7 @@ export default function Books() {
             />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
-                New Ebook · $9.99 · The Religion of the Self
+                New Ebook · $8.99 · The Religion of the Self
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Be True to Yourself
@@ -265,7 +265,7 @@ export default function Books() {
             />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
-                New Ebook · $9.99 · What the Fathers Knew
+                New Ebook · $8.99 · What the Fathers Knew
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 What Belongs to the Poor
@@ -298,7 +298,7 @@ export default function Books() {
             />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
-                New Ebook · $9.99 · The Ancient Disciplines
+                New Ebook · $8.99 · The Ancient Disciplines
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Rule of Life
@@ -331,7 +331,7 @@ export default function Books() {
             />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
-                New Ebook · $9.99 · On Theology
+                New Ebook · $8.99 · On Theology
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Why Not What
@@ -357,7 +357,7 @@ export default function Books() {
               decoding="async" src="/books/sermon-on-the-mount-as-politics.svg" alt="The Sermon on the Mount as Politics book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
-                New Ebook · $9.99 · On the Kingdom
+                New Ebook · $8.99 · On the Kingdom
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 The Sermon on the Mount as Politics
@@ -383,7 +383,7 @@ export default function Books() {
               decoding="async" src="/books/prophetic-justice-101.svg" alt="Prophetic Justice 101 book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
-                New Ebook · $9.99 · On Justice
+                New Ebook · $8.99 · On Justice
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Prophetic Justice 101
@@ -409,7 +409,7 @@ export default function Books() {
               decoding="async" src="/books/marriage-in-ministry.svg" alt="Marriage in Ministry book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
-                New Ebook · $9.99 · On Marriage &amp; Ministry
+                New Ebook · $8.99 · On Marriage &amp; Ministry
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Marriage in Ministry
@@ -435,7 +435,7 @@ export default function Books() {
               decoding="async" src="/books/the-loneliness-of-the-pastor.svg" alt="The Loneliness of the Pastor book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
-                New Ebook · $9.99 · For Pastors
+                New Ebook · $8.99 · For Pastors
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 The Loneliness of the Pastor
@@ -461,7 +461,7 @@ export default function Books() {
               decoding="async" src="/books/healwell.svg" alt="HealWell book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
-                New Devotional · $9.99 · 52 Weeks
+                New Devotional · $8.99 · 52 Weeks
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 HealWell: 52 Weeks in Costly Hope
@@ -487,7 +487,7 @@ export default function Books() {
               decoding="async" src="/books/born-again-from-atheism.svg" alt="Born Again From Atheism book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
-                New Ebook · $9.99 · For Skeptics
+                New Ebook · $8.99 · For Skeptics
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Born Again From Atheism
@@ -513,7 +513,7 @@ export default function Books() {
               decoding="async" src="/books/the-god-who-is-not-nice.svg" alt="The God Who Is Not Nice book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
-                New Ebook · $9.99 · On the Character of God
+                New Ebook · $8.99 · On the Character of God
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 The God Who Is Not Nice
@@ -539,7 +539,7 @@ export default function Books() {
               decoding="async" src="/books/faith-after-deconstruction.svg" alt="Faith After Deconstruction book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
-                New Ebook · $9.99 · For the Deconstructing
+                New Ebook · $8.99 · For the Deconstructing
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Faith After Deconstruction
@@ -565,7 +565,7 @@ export default function Books() {
               decoding="async" src="/books/ordinary-holiness.svg" alt="Ordinary Holiness book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
-                New Ebook · $9.99 · On Everyday Faith
+                New Ebook · $8.99 · On Everyday Faith
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Ordinary Holiness
@@ -591,7 +591,7 @@ export default function Books() {
               decoding="async" src="/books/the-scandal-of-the-cross.svg" alt="The Scandal of the Cross book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
-                New Ebook · $9.99 · On the Cross
+                New Ebook · $8.99 · On the Cross
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 The Scandal of the Cross
@@ -617,7 +617,7 @@ export default function Books() {
               decoding="async" src="/books/heaven-is-not-your-reward.svg" alt="Heaven Is Not Your Reward book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
-                New Ebook · $9.99 · On the Last Things
+                New Ebook · $8.99 · On the Last Things
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Heaven Is Not Your Reward
@@ -643,7 +643,7 @@ export default function Books() {
               decoding="async" src="/books/prayer-in-the-dark.svg" alt="Prayer in the Dark book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.45)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard)" }}>
-                New Ebook · $9.99 · On Prayer
+                New Ebook · $8.99 · On Prayer
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--bone)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Prayer in the Dark
@@ -669,7 +669,7 @@ export default function Books() {
               decoding="async" src="/books/the-body-you-left.svg" alt="The Body You Left book cover" width={120} height={181} style={{ width: "104px", height: "auto", borderRadius: "2px", boxShadow: "0 8px 24px rgba(0,0,0,.25)", flex: "0 0 auto" }} />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
-                New Ebook · $9.99 · On the Church
+                New Ebook · $8.99 · On the Church
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 The Body You Left
@@ -706,7 +706,7 @@ export default function Books() {
                 When God Bless America Replaces Thy Kingdom Come
               </h2>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "rgba(245,240,230,.78)", margin: 0 }}>
-                How Patriotism Became Our Practical Savior — available now for $9.99.
+                How Patriotism Became Our Practical Savior — available now for $8.99.
               </p>
             </div>
             <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)", background: "var(--mustard)", padding: "13px 24px", borderRadius: "var(--radius-sm)", flex: "0 0 auto" }}>
@@ -731,7 +731,7 @@ export default function Books() {
             />
             <div style={{ flex: "1 1 320px" }}>
               <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.18em", color: "var(--mustard-text)" }}>
-                New Ebook · $9.99 · For Pastors
+                New Ebook · $8.99 · For Pastors
               </div>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "26px", fontWeight: 500, color: "var(--ink)", margin: "6px 0 4px", lineHeight: 1.15 }}>
                 Alone in a Crowded Church
@@ -771,7 +771,7 @@ export default function Books() {
                   style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 12px 32px rgba(0,0,0,.25)" }} />
                 <h3 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", margin: "14px 0 4px", lineHeight: 1.2 }}>{b.title}</h3>
                 <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 8px", lineHeight: 1.4 }}>{b.sub}</p>
-                <span style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--mustard-text)", letterSpacing: "0.04em" }}>Get the ebook — $9.99 →</span>
+                <span style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--mustard-text)", letterSpacing: "0.04em" }}>Get the ebook — $8.99 →</span>
               </Link>
             ))}
           </div>
