@@ -17,6 +17,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { trpc } from "@/lib/trpc";
 import { bookUrl } from "@/lib/site";
+import { readSlugFor } from "@/lib/readableBooks";
 import { SITE_STATS, bookCountWordCap } from "@/config/siteStats";
 
 interface ReadingPath {
@@ -1034,6 +1035,25 @@ export default function Books() {
                   }}
                 >
                   <BookCover coverImage={book.coverImage} title={book.title} author={book.author} style={{ marginBottom: "12px" }} />
+                  {readSlugFor(book.slug) && (
+                    <div
+                      style={{
+                        display: "inline-block",
+                        fontFamily: "var(--U)",
+                        fontSize: "10.5px",
+                        fontWeight: 700,
+                        letterSpacing: "0.12em",
+                        textTransform: "uppercase",
+                        color: "var(--mustard-text)",
+                        border: "1px solid var(--mustard)",
+                        borderRadius: "999px",
+                        padding: "3px 9px",
+                        marginBottom: "8px",
+                      }}
+                    >
+                      Read free
+                    </div>
+                  )}
                   <h3
                     style={{
                       fontFamily: "var(--F)",
