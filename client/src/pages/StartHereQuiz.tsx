@@ -45,6 +45,65 @@ const QUESTIONS = [
  * the submitted flag survive an accidental refresh via sessionStorage, and
  * nothing outlives the tab. */
 
+// The article titles here are display copies of the real titles; the
+// start-quiz-titles test keeps them from drifting when essays are retitled.
+export const READING_PATHS = {
+  "marriage-crisis-articles": {
+    title: "Marriage Under Strain",
+    articles: [
+      { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
+      { title: "Why Does Every Generation Get the Bible Wrong?", slug: "the-monster-in-the-mirror" },
+      { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
+    ],
+    book: "What If We're Wrong?"
+  },
+  "marriage-searching-articles": {
+    title: "Building Covenant Strength",
+    articles: [
+      { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
+      { title: "Why Does Every Generation Get the Bible Wrong?", slug: "the-monster-in-the-mirror" },
+      { title: "What We Owe the Ones Who Come After", slug: "what-we-owe-generations" }
+    ],
+    book: "The Monster in the Mirror"
+  },
+  "parenting-crisis-articles": {
+    title: "Parenting Through Uncertainty",
+    articles: [
+      { title: "What We Owe the Ones Who Come After", slug: "what-we-owe-generations" },
+      { title: "Why Does Every Generation Get the Bible Wrong?", slug: "the-monster-in-the-mirror" },
+      { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
+    ],
+    book: "When God Bless America Replaces Thy Kingdom Come"
+  },
+  "doubt-crisis-articles": {
+    title: "Finding Faith in the Questions",
+    articles: [
+      { title: "Why Does Every Generation Get the Bible Wrong?", slug: "the-monster-in-the-mirror" },
+      { title: "What You're Really Leaving When You Leave the Faith", slug: "constantines-bargain" },
+      { title: "Why a Frightened Church Wants a King", slug: "strongman-theology" }
+    ],
+    book: "What If We're Wrong?"
+  },
+  "pastoral-articles": {
+    title: "Pastoral Leadership & Burnout",
+    articles: [
+      { title: "Can You Be a Christian on Your Own?", slug: "can-you-be-a-christian-alone" },
+      { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" },
+      { title: "What We Owe the Ones Who Come After", slug: "what-we-owe-generations" }
+    ],
+    book: "The Monster in the Mirror"
+  },
+  "default": {
+    title: "Essential LiveWell Collection",
+    articles: [
+      { title: "Why Does Every Generation Get the Bible Wrong?", slug: "the-monster-in-the-mirror" },
+      { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
+      { title: "Why a Frightened Church Wants a King", slug: "strongman-theology" }
+    ],
+    book: "The Monster in the Mirror"
+  }
+};
+
 const SESSION_KEY = "livewell-session-start-here-quiz";
 
 interface SavedSession {
@@ -103,62 +162,6 @@ export default function StartHereQuiz() {
     );
   }, [answers, currentStep, submitted]);
 
-  const READING_PATHS = {
-    "marriage-crisis-articles": {
-      title: "Marriage Under Strain",
-      articles: [
-        { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
-        { title: "The Monster in the Mirror", slug: "the-monster-in-the-mirror" },
-        { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
-      ],
-      book: "What If We're Wrong?"
-    },
-    "marriage-searching-articles": {
-      title: "Building Covenant Strength",
-      articles: [
-        { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
-        { title: "The Monster in the Mirror", slug: "the-monster-in-the-mirror" },
-        { title: "What We Owe Generations", slug: "what-we-owe-generations" }
-      ],
-      book: "The Monster in the Mirror"
-    },
-    "parenting-crisis-articles": {
-      title: "Parenting Through Uncertainty",
-      articles: [
-        { title: "What We Owe Generations", slug: "what-we-owe-generations" },
-        { title: "The Monster in the Mirror", slug: "the-monster-in-the-mirror" },
-        { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
-      ],
-      book: "When God Bless America Replaces Thy Kingdom Come"
-    },
-    "doubt-crisis-articles": {
-      title: "Finding Faith in the Questions",
-      articles: [
-        { title: "The Monster in the Mirror", slug: "the-monster-in-the-mirror" },
-        { title: "Constantine's Bargain", slug: "constantines-bargain" },
-        { title: "Why a Frightened Church Wants a King", slug: "strongman-theology" }
-      ],
-      book: "What If We're Wrong?"
-    },
-    "pastoral-articles": {
-      title: "Pastoral Leadership & Burnout",
-      articles: [
-        { title: "Can You Be a Christian on Your Own?", slug: "can-you-be-a-christian-alone" },
-        { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" },
-        { title: "What We Owe Generations", slug: "what-we-owe-generations" }
-      ],
-      book: "The Monster in the Mirror"
-    },
-    "default": {
-      title: "Essential LiveWell Collection",
-      articles: [
-        { title: "The Monster in the Mirror", slug: "the-monster-in-the-mirror" },
-        { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
-        { title: "Why a Frightened Church Wants a King", slug: "strongman-theology" }
-      ],
-      book: "The Monster in the Mirror"
-    }
-  };
 
   const getReadingPath = () => {
     const concern = answers.concern || "default";
