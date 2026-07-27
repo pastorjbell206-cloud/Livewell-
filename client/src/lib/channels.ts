@@ -37,18 +37,14 @@ export const CHANNELS: Channel[] = [
     live: true,
   },
   {
-    id: "youtube",
-    label: "YouTube",
-    blurb: "Teaching and talks.",
-    url: "",
-    live: false,
-  },
-  {
     id: "podcast",
-    label: "The podcast",
-    blurb: "Conversations on theology and the weight of everyday life.",
-    url: "",
-    live: false,
+    label: "Following the Way",
+    blurb: "The podcast. Conversations on theology and the weight of everyday life.",
+    // Given by James as http. Left exactly as provided: an http link follows a
+    // redirect to https where the host offers one, whereas guessing https
+    // breaks outright if it does not. Upgrade when the host is confirmed.
+    url: "http://followingthewaypodcast.com/",
+    live: true,
   },
 ];
 
