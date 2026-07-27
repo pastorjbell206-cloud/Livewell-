@@ -96,7 +96,7 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Where are you? (assessments)", href: "/assessments", primary: true },
       { label: "Study guides and curriculum", href: "/studyguides", primary: true },
       { label: "Guided reading paths", href: "/pathways", primary: true },
-      { label: "Downloads and PDFs", href: "/resources", primary: true },
+      { label: "Downloads and PDFs", href: "/downloads", primary: true },
       { label: "Answers to hard questions", href: "/answers", primary: true },
       { label: "The Hard Issues Series", href: "/resources/hard-issues-series" },
       { label: "Wisdom for all of life", href: "/wisdom" },
