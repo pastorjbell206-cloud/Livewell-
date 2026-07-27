@@ -104,6 +104,36 @@ if (DO_SQL) {
   process.exit(0);
 }
 
+// --seed: apply the /writing rewrites to the committed essay seed
+// (client/src/data/content-data.json). The seed feeds the static library that
+// serves every essay the database does not hold, plus dev, search, and the
+// answer-engine feed — so this makes the new titles real everywhere except
+// live DB rows, which converge when --db runs (its drift guard still matches,
+// because the DB itself is untouched here). Rebuild the static library after:
+//   node scripts/build-static-library.mjs && node scripts/build-llms-full.mjs
+if (args.has("--seed")) {
+  const seedPath = path.join(ROOT, "client/src/data/content-data.json");
+  const seed = readJson(seedPath);
+  const posts = Array.isArray(seed) ? seed : seed.posts;
+  const bySlug = new Map(posts.map((p) => [p.slug, p]));
+  let ok = 0;
+  for (const r of report.db) {
+    const p = bySlug.get(r.slug);
+    if (!p) {
+      report.missing.push(`seed: no post with slug ${r.slug}`);
+      continue;
+    }
+    if (r.old && p.title !== r.old && p.title !== r.new) {
+      report.skippedMismatch.push(`seed ${r.slug}: has "${p.title}", expected "${r.old}"`);
+      continue;
+    }
+    p.title = r.new;
+    ok++;
+  }
+  fs.writeFileSync(seedPath, JSON.stringify(seed, null, 2) + "\n");
+  console.log(`[titles] seed: ${ok} of ${report.db.length} /writing titles applied to content-data.json.`);
+}
+
 if (DO_DB) {
   if (!process.env.DATABASE_URL) {
     console.error("[titles] --db needs DATABASE_URL in the environment. Refusing to guess.");
