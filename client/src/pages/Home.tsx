@@ -35,6 +35,23 @@ import {
 // track" secondary CTA that serves everyone (the skeptic entry stays as a
 // tertiary link). "B": the original long subhead + skeptic-first secondary.
 // Flip this one constant to switch variants without touching markup.
+// The wisdom topics surfaced on the front page. Chosen for search intent: these
+// are the things people actually type at midnight. The full 208 live at /wisdom.
+const WISDOM_TOPICS = [
+  { id: "anxiety", label: "Anxiety and worry" },
+  { id: "grief", label: "Grief and loss" },
+  { id: "marriage-conflict", label: "Marriage trouble" },
+  { id: "depression", label: "Depression" },
+  { id: "wayward-child", label: "A child who walked away" },
+  { id: "doubt", label: "Doubt and questions" },
+  { id: "forgiveness", label: "When you cannot forgive" },
+  { id: "addiction", label: "Addiction" },
+  { id: "loneliness", label: "Loneliness" },
+  { id: "anger", label: "Anger and resentment" },
+  { id: "suffering", label: "Suffering" },
+  { id: "singleness", label: "Singleness" },
+];
+
 const HERO_VARIANT: "A" | "B" = "A";
 
 // The intent doors — the primary way into the site. Written in the reader's
@@ -544,6 +561,79 @@ export default function Home() {
                 </article>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WISDOM — 208 topics answering "what does the Bible say about ___".
+          This is the largest single answer library on the site and it was not
+          on the front page at all, which is exactly the kind of thing a reader
+          arrives already looking for. Twelve of the highest-intent topics, then
+          the door to the rest. */}
+      <section id="home-wisdom" style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>
+            Wisdom for all of life
+          </div>
+          <h2
+            style={{
+              fontFamily: "var(--F)",
+              fontSize: "clamp(24px, 3.4vw, 34px)",
+              fontWeight: 400,
+              letterSpacing: "-0.02em",
+              color: "var(--ink)",
+              lineHeight: 1.15,
+              marginBottom: "10px",
+            }}
+          >
+            What does the Bible actually say about what you are facing?
+          </h2>
+          <p
+            style={{
+              fontFamily: "var(--B)",
+              fontSize: "16px",
+              lineHeight: 1.7,
+              color: "var(--ink-muted)",
+              maxWidth: "62ch",
+              marginBottom: "var(--s-5)",
+            }}
+          >
+            Two hundred and eight topics, each one worked through honestly: the passages, the history, what the verse
+            actually meant, and where it lands on an ordinary week. Start where it hurts.
+          </p>
+
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginBottom: "var(--s-5)" }}>
+            {WISDOM_TOPICS.map(t => (
+              <Link
+                key={t.id}
+                href={`/wisdom/${t.id}`}
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "13.5px",
+                  fontWeight: 500,
+                  color: "var(--ink)",
+                  textDecoration: "none",
+                  background: "var(--card)",
+                  border: "1px solid var(--border)",
+                  borderRadius: "999px",
+                  padding: "9px 18px",
+                }}
+              >
+                {t.label}
+              </Link>
+            ))}
+          </div>
+
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
+            <Link href="/wisdom" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
+              All 208 topics
+            </Link>
+            <Link href="/tools" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
+              Every tool and assessment
+            </Link>
+            <Link href="/downloads" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
+              Downloads and PDFs
+            </Link>
           </div>
         </div>
       </section>
