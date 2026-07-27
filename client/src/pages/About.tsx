@@ -26,7 +26,7 @@ export default function About() {
     <Layout>
       <SEOMeta
         title="About James Bell — Pastor, Author, Writer"
-        description={`From atheism to the pulpit. Raised without a father. Five sons. ${SITE_STATS.bookCount} books. ${SITE_STATS.yearsInMinistry} years in ministry. The story behind the writing.`}
+        description={`Pastor, author, and founder. Twelve years at First Baptist Church of Fenton, the Pastors Connection Network, and ENDS, equipping national pastors worldwide. ${SITE_STATS.bookCount} books. Came to faith from atheism. Five sons.`}
         type="website"
         structuredData={{
           "@context": "https://schema.org",
@@ -34,7 +34,7 @@ export default function About() {
           name: "James Bell",
           url: `${SITE_URL}/about`,
           jobTitle: "Lead Pastor, Author, Founder",
-          description: `Lead Pastor at First Baptist Church of Fenton, author of ${SITE_STATS.bookCountWord} books, and founder of the Pastors Connection Network.`,
+          description: `Lead Pastor at First Baptist Church of Fenton for twelve years, author of ${SITE_STATS.bookCountWord} books, founder of the Pastors Connection Network (nearly 18,000 pastors) and of ENDS, which equips national pastors in remote regions worldwide.`,
           worksFor: {
             "@type": "Organization",
             name: "First Baptist Church of Fenton",
@@ -57,6 +57,8 @@ export default function About() {
               <p style={{ fontSize: "0.875rem", color: "var(--bone)", opacity: 0.5, fontFamily: "var(--U)", lineHeight: 1.5 }}>
                 Lead Pastor, First Baptist Church of Fenton<br />
                 Founder, Pastors Connection Network<br />
+                Founder, ENDS — Equipped Nationals, Disciple and Shepherds<br />
+                Host, Following the Way<br />
                 Author of {SITE_STATS.bookCount} books
               </p>
             </div>
@@ -84,16 +86,19 @@ export default function About() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div style={{ width: "40px", height: "2px", background: "var(--mustard)", marginBottom: "2rem" }} />
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "1.75rem", fontWeight: 400, color: "var(--ink)", marginBottom: "1.5rem" }}>The church and the network</h2>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "1.75rem", fontWeight: 400, color: "var(--ink)", marginBottom: "1.5rem" }}>The church, the network, and the nationals</h2>
           <div className="article-body prose-section">
             <p>
-              I serve as the lead pastor of First Baptist Church of Fenton, Michigan. I put that first not as a line on a résumé but because it is the room where everything here gets tested. These essays were not written in a quiet study with the commentaries open and the whole afternoon free. They were written around hospital visits and budget meetings, after funerals, in the days on either side of the counseling appointments where what a person believes about God either holds or it comes apart. {SITE_STATS.yearsInMinistry} years in that room will take the abstraction out of almost anyone.
+              I have pastored First Baptist Church of Fenton, Michigan for twelve years. I put that first not as a line on a resume but because it is the room where everything here gets tested. These essays were not written in a quiet study with the commentaries open and the whole afternoon free. They were written around hospital visits and budget meetings, after funerals, in the days on either side of the counseling appointments where what a person believes about God either holds or it comes apart. Twelve years in that room will take the abstraction out of almost anyone.
             </p>
             <p>
-              I also started the Pastors Connection Network — PCN — for a fairly simple reason. Pastors are some of the least cared-for people in the church. They hand out grace all week and rarely get handed any back. They carry things people have told them that they can never repeat to anyone. The network connects thousands of them to each other, and to resources made by someone who knows that particular weight from the inside, because when the man up front quietly comes apart on a Saturday night, a whole congregation feels it on Sunday morning.
+              I started the Pastors Connection Network for a fairly simple reason. Pastors are some of the least cared-for people in the church. They hand out grace all week and rarely get handed any back. They carry things people have told them that they can never repeat to anyone. PCN now connects nearly eighteen thousand pastors to each other and to resources built by someone who knows that particular weight from the inside, because when the man up front quietly comes apart on a Saturday night, a whole congregation feels it on Sunday morning.
             </p>
             <p>
-              And I write books — {SITE_STATS.bookCount} of them so far — about doubt, marriage, fathers and sons, the church, and the slow, unglamorous business of following Jesus over a long stretch of time. They are really all one project: taking the depth of theology and putting it back in contact with the weight of an ordinary life.{" "}
+              I also founded ENDS, which stands for Equipped Nationals, Disciple and Shepherds. It exists to equip national pastors in remote regions around the world. Not to send Americans to do their work for them, and not to hand them a translated version of our assumptions. To put real training in the hands of the men already there, who already know the language and the terrain and the cost, and who will still be there long after any visitor has gone home.
+            </p>
+            <p>
+              The rest of it is writing. {SITE_STATS.bookCount} books so far, on doubt, marriage, fathers and sons, the church, and the slow unglamorous business of following Jesus over a long stretch of time. The essays here. The <a href="http://followingthewaypodcast.com/" target="_blank" rel="noopener noreferrer">Following the Way</a> podcast, and the notes I write most days for whoever is reading. It is really all one project: taking the depth of theology and putting it back in contact with the weight of an ordinary life.{" "}
               <Link href="/books">The books are here</Link>.
             </p>
           </div>
