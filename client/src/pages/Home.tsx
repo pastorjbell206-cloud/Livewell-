@@ -21,6 +21,7 @@ import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/S
 import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
 import { isFullEssay } from "@/lib/essayQuality";
+import FollowJames from "@/components/FollowJames";
 import {
   META_DESCRIPTION,
   PRIMARY_HEADLINE,
@@ -742,6 +743,8 @@ export default function Home() {
         </div>
       </section>
       </main>
+
+      <FollowJames heading="Everything James publishes, in one place" blurb="The essays and books live here. The newsletter, the podcast, and the daily notes live elsewhere. Same voice, different rooms." />
 
       <Footer />
     </div>
