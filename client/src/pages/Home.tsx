@@ -16,6 +16,7 @@ import { PullQuote, SectionArt, StatementBand } from "@/components/EditorialBloc
 import Footer from "@/components/Footer";
 import { LibraryStrip } from "@/components/LibraryStrip";
 import MinimalNav from "@/components/MinimalNav";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { SegmentedSignup } from "@/components/SegmentedSignup";
 import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
 import { TrackChip } from "@/components/TrackChip";
@@ -383,6 +384,50 @@ export default function Home() {
               </div>
             </article>
           </Link>
+        </div>
+      </section>
+
+      {/* THE ASK, EARLY — a reader who is already convinced by the hero should
+          not have to scroll past eight doors and the whole library to find the
+          subscribe form. The full segmented version still sits further down for
+          the reader who needed convincing; this is the same ask, stated once up
+          front. */}
+      <section
+        id="home-hero-signup"
+        style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}
+      >
+        <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", textAlign: "center" }}>
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>
+            The newsletter
+          </div>
+          <h2
+            style={{
+              fontFamily: "var(--F)",
+              fontSize: "clamp(24px, 3.4vw, 34px)",
+              fontWeight: 400,
+              letterSpacing: "-0.02em",
+              color: "var(--ink)",
+              lineHeight: 1.15,
+              marginBottom: "10px",
+            }}
+          >
+            One serious essay a week.
+          </h2>
+          <p
+            style={{
+              fontFamily: "var(--B)",
+              fontSize: "16px",
+              lineHeight: 1.7,
+              color: "var(--ink-muted)",
+              maxWidth: "52ch",
+              margin: "0 auto var(--s-4)",
+            }}
+          >
+            Theology that carries the weight of a Tuesday. No filler, no funnel, and you can leave whenever you like.
+          </p>
+          <div style={{ maxWidth: "460px", margin: "0 auto" }}>
+            <NewsletterSignup variant="inline" source="home-hero" />
+          </div>
         </div>
       </section>
 
