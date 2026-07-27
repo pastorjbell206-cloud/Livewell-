@@ -98,9 +98,11 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Guided reading paths", href: "/pathways", primary: true },
       { label: "Downloads and PDFs", href: "/downloads", primary: true },
       { label: "Answers to hard questions", href: "/answers", primary: true },
+      // James asked for the wisdom material to be easier to reach, so both of
+      // its doors sit in the header rather than the footer tail.
+      { label: "Wisdom for all of life", href: "/wisdom", primary: true },
+      { label: "Wisdom finder", href: "/tools/wisdom-finder", primary: true },
       { label: "The Hard Issues Series", href: "/resources/hard-issues-series" },
-      { label: "Wisdom for all of life", href: "/wisdom" },
-      { label: "Wisdom finder", href: "/tools/wisdom-finder" },
       { label: "Theology quiz", href: "/tools/theology-quiz" },
       { label: "Reading Scripture in context", href: "/resources/context" },
       { label: "How-to guides", href: "/how-tos" },
