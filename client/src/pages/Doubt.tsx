@@ -4,6 +4,8 @@ import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import PillarLeadMagnet from "@/components/PillarLeadMagnet";
+import SubjectShelf from "@/components/SubjectShelf";
+import { subjectById } from "@/lib/subjects";
 
 export default function Doubt() {
 
@@ -242,6 +244,7 @@ export default function Doubt() {
       </section>
 
       <Footer />
+      {subjectById("doubt") && <SubjectShelf subject={subjectById("doubt")!} />}
     </div>
   );
 }
