@@ -11,6 +11,8 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { TriageBadge } from "@/components/TriageBadge";
 import { DOCTRINE_INDEX, type DoctrineIndexEntry } from "@/lib/theology";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
+import SubjectShelf from "@/components/SubjectShelf";
+import { subjectById } from "@/lib/subjects";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const card = {
@@ -236,6 +238,7 @@ export default function Theology() {
           })}
         </div>
       </section>
+      {subjectById("theology") && <SubjectShelf subject={subjectById("theology")!} />}
     </Layout>
   );
 }

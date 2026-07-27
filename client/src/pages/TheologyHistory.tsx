@@ -13,6 +13,8 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Prose } from "@/lib/prose";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
+import SubjectShelf from "@/components/SubjectShelf";
+import { subjectById } from "@/lib/subjects";
 
 interface EraEvent { year: string; title: string; note: string; }
 interface Era { id: string; name: string; range: string; summary: string; events: EraEvent[]; }
@@ -248,6 +250,7 @@ export default function TheologyHistory() {
           <Link href="/theology/doctrine/god-and-trinity" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>See where the creeds came from →</Link>
         </div>
       </section>
+      {subjectById("church-history") && <SubjectShelf subject={subjectById("church-history")!} />}
     </Layout>
   );
 }
