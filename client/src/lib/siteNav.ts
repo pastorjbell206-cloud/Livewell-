@@ -6,7 +6,9 @@
  * LiveWell is James Bell's writing platform: the essays, the books, the
  * newsletter, theology, church history, justice, the hard questions — a place
  * to read, learn, and grow. The header carries only that identity, in four
- * doors named for what a reader came to do: Read, Topics, Grow, About.
+ * doors named for the KIND of thing a reader wants, which is how James asked
+ * for it: Articles, Books, Tools, About. One door each, so the tools are never
+ * a scavenger hunt and the books are never buried in a general menu.
  *
  * The pastors' work (bound for the Pastors Connection Network) and the
  * disciple-making tools (bound for the discipleship app) are deliberately kept
@@ -53,57 +55,57 @@ export function headerLinks(group: SiteNavGroup): SiteNavLink[] {
 
 export const SITE_NAV_GROUPS: SiteNavGroup[] = [
   {
-    // "I want to read something." The writing itself, in every form it takes.
-    title: "Read",
+    // "I want to read." Everything written, and the subjects it is written on.
+    title: "Articles",
     links: [
       { label: "All the writing", href: "/writing", primary: true },
-      { label: "Books", href: "/books", primary: true },
-      { label: "Read a book free", href: "/read", primary: true },
+      { label: "Explore everything", href: "/explore", primary: true },
+      { label: "Theology", href: "/theology", primary: true },
+      { label: "Church history", href: "/theology/history", primary: true },
+      { label: "Justice", href: "/justice", primary: true },
+      { label: "The church and power", href: "/disruption", primary: true },
       { label: "When faith has questions", href: "/writing?track=doubt", primary: true },
-      { label: "Newsletter (Substack)", href: "https://substack.com/@jamesbell333289", external: true, primary: true },
       { label: "Marriage", href: "/marriage" },
       { label: "Parenting", href: "/parenting" },
+      { label: "Home and family", href: "/family" },
+      { label: "Living well", href: "/living-well" },
+      { label: "The historic faith", href: "/historic-faith" },
+      { label: "All six pillars", href: "/pillars" },
+      { label: "The map", href: "/map" },
+      { label: "The framework", href: "/framework" },
       { label: "Article collections", href: "/article-collections" },
-      { label: "Book bundles", href: "/book-bundles" },
       { label: "The Commonplace", href: "/library" },
+    ],
+  },
+  {
+    // "I want a book." Everything book-shaped, including the free reader.
+    title: "Books",
+    links: [
+      { label: "All books", href: "/books", primary: true },
+      { label: "Read a book free", href: "/read", primary: true },
+      { label: "Book bundles", href: "/book-bundles", primary: true },
       { label: "The book roadmap", href: "/roadmap" },
     ],
   },
   {
-    // "What does he write about?" Theology, church history, justice, the
-    // hard questions — the subjects, under headings a normal person uses.
-    title: "Topics",
+    // "I want something to use." Every tool, assessment, study and download in
+    // one door, which is what James asked for: one place, not a scavenger hunt.
+    title: "Tools",
     links: [
-      { label: "Explore everything", href: "/explore", primary: true },
-      { label: "Theology, in depth", href: "/theology", primary: true },
-      { label: "Church history", href: "/theology/history", primary: true },
-      { label: "Justice", href: "/justice", primary: true },
-      { label: "The church and power", href: "/disruption", primary: true },
-      { label: "The historic faith", href: "/historic-faith", primary: true },
-      { label: "Living well", href: "/living-well" },
-      { label: "All six pillars", href: "/pillars" },
-      { label: "The map", href: "/map" },
-      { label: "The framework", href: "/framework" },
-    ],
-  },
-  {
-    // "I want to actually grow." Anything with a sequence, a practice, or a
-    // question to answer — the learn-and-grow surface.
-    title: "Grow",
-    links: [
-      { label: "Guided reading paths", href: "/pathways", primary: true },
-      { label: "Study guides", href: "/studyguides", primary: true },
+      { label: "All tools", href: "/tools", primary: true },
       { label: "Where are you? (assessments)", href: "/assessments", primary: true },
+      { label: "Study guides and curriculum", href: "/studyguides", primary: true },
+      { label: "Guided reading paths", href: "/pathways", primary: true },
+      { label: "Downloads and PDFs", href: "/resources", primary: true },
       { label: "Answers to hard questions", href: "/answers", primary: true },
-      { label: "Tools", href: "/tools", primary: true },
-      { label: "Reading paths", href: "/reading-paths" },
-      { label: "Reading Scripture in context", href: "/resources/context" },
-      { label: "How-to guides", href: "/how-tos" },
+      { label: "The Hard Issues Series", href: "/resources/hard-issues-series" },
       { label: "Wisdom for all of life", href: "/wisdom" },
       { label: "Wisdom finder", href: "/tools/wisdom-finder" },
       { label: "Theology quiz", href: "/tools/theology-quiz" },
+      { label: "Reading Scripture in context", href: "/resources/context" },
+      { label: "How-to guides", href: "/how-tos" },
+      { label: "Reading paths", href: "/reading-paths" },
       { label: "Questions people ask", href: "/faq" },
-      { label: "The Resource Hub", href: "/resources" },
     ],
   },
   {
@@ -111,22 +113,21 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
     links: [
       { label: "About James Bell", href: "/about", primary: true },
       { label: "Newsletter (Substack)", href: "https://substack.com/@jamesbell333289", external: true, primary: true },
-      { label: "Membership", href: "/membership", primary: true },
+      { label: "Following the Way (podcast)", href: "http://followingthewaypodcast.com/", external: true, primary: true },
       { label: "Contact", href: "mailto:Pastorjbell206@gmail.com", external: true, primary: true },
+      { label: "Membership", href: "/membership" },
       { label: "Work with James", href: "/work-with-james" },
     ],
   },
   {
     // Footer-only (no primary links, so the header and mobile menus skip it).
-    // This work is headed to its own homes — the pastors' material to the
-    // Pastors Connection Network, the disciple-making tools to the
-    // discipleship app — and until then every page stays live from here.
+    // Headed to their own homes: the pastors' material to the Pastors
+    // Connection Network, the disciple-making tools to the discipleship app.
     title: "Pastors & Disciple-Makers",
     links: [
       { label: "Pastors Connection Network", href: "https://pastorsconnectionnetwork.com", external: true },
       { label: "PCN on LiveWell", href: "/pastors" },
       { label: "The leadership hub", href: "/leadership" },
-      { label: "The Hard Issues Series", href: "/resources/hard-issues-series" },
       { label: "Church leadership", href: "/for-leaders" },
       { label: "Leadership library", href: "/leadership/library" },
       { label: "Sermon series library", href: "/leadership/sermon-series" },
