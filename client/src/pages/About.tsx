@@ -86,7 +86,7 @@ export default function About() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div style={{ width: "40px", height: "2px", background: "var(--mustard)", marginBottom: "2rem" }} />
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "1.75rem", fontWeight: 400, color: "var(--ink)", marginBottom: "1.5rem" }}>The church, the network, and the nationals</h2>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "1.75rem", fontWeight: 400, color: "var(--ink)", marginBottom: "1.5rem" }}>The church, the network, and the ends of the earth</h2>
           <div className="article-body prose-section">
             <p>
               I have pastored First Baptist Church of Fenton, Michigan for twelve years. I put that first not as a line on a resume but because it is the room where everything here gets tested. These essays were not written in a quiet study with the commentaries open and the whole afternoon free. They were written around hospital visits and budget meetings, after funerals, in the days on either side of the counseling appointments where what a person believes about God either holds or it comes apart. Twelve years in that room will take the abstraction out of almost anyone.
@@ -115,8 +115,12 @@ export default function About() {
           <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)", marginBottom: "1.5rem" }}>
             LiveWell is for the person whose faith has grown larger than the answers they were handed as a child. For the pastor who is quietly running on empty. For the husband and wife still keeping a promise they are no longer sure they understand. For the skeptic who keeps reading the words of a faith they have not decided to trust.
           </p>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "1.5rem", fontWeight: 400, color: "var(--ink)", margin: "2.5rem 0 1.25rem" }}>The heart behind it</h2>
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)", marginBottom: "1.5rem" }}>
+            America is not the churched country it used to be, and I do not spend much energy grieving that. The old assumptions are gone. Nobody owes Christianity a hearing anymore, which means the faith has to be commended the old way — argued honestly, lived visibly, offered without pressure. That is the world my sons are inheriting, and the world my church opens its doors into every Sunday, and I would rather meet it plainly than pretend it is 1955.
+          </p>
           <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)", marginBottom: "2rem" }}>
-            What I am after is not a Christianity bent to fit American politics, or the self-help shelf, or whatever the culture happens to be anxious about this year. I am after the older thing underneath all of that — the historic, creedal, kingdom-of-God faith the church has confessed for two thousand years — and I want to put it back in the same room as an ordinary Tuesday afternoon. The depth is not decoration here. Keller's architecture, Brueggemann's prophetic imagination, Peterson's pastoral patience, Bonhoeffer's willingness to name the costly thing — all of it is in service of helping an actual person live.
+            What I want is simple to say and long to do. I want the historic faith — the creed, the cross, the resurrection, the kingdom — held out in ordinary language to people who have every cultural permission to ignore it. Not a Christianity bent to fit American politics, or the self-help shelf, or whatever the culture is anxious about this year, but the older thing underneath: what the church has confessed for two thousand years, put back in the same room as a Tuesday afternoon. I want the skeptic to find the argument honest even if they walk away. I want the tired Christian to find something sturdier than the last twenty years of American church life. And I am trying, unevenly, to be the kind of man who can commend it because it is visibly holding him up — not because it is his product.
           </p>
 
           <h2 style={{ fontFamily: "var(--F)", fontSize: "1.5rem", fontWeight: 400, color: "var(--ink)", marginBottom: "2rem" }}>How the writing works</h2>
