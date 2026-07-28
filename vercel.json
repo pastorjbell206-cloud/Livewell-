@@ -968,6 +968,11 @@
             "source": "/the-body-you-left",
             "destination": "/books",
             "permanent": true
+        },
+        {
+            "source": "/writing/young-adults-leaving-faith",
+            "destination": "/parenting",
+            "permanent": true
         }
     ],
     "rewrites": [
