@@ -973,6 +973,21 @@
             "source": "/writing/young-adults-leaving-faith",
             "destination": "/parenting",
             "permanent": true
+        },
+        {
+            "source": "/writing/38-what-i-learned-about-unity-from-pastoring-across-cultural-lines",
+            "destination": "/writing",
+            "permanent": true
+        },
+        {
+            "source": "/writing/parents-marriage-template",
+            "destination": "/writing",
+            "permanent": true
+        },
+        {
+            "source": "/writing/6-what-your-spouse-wishes-you-knew-about-life-in-the-parsonage",
+            "destination": "/writing",
+            "permanent": true
         }
     ],
     "rewrites": [
