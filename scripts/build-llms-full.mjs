@@ -80,15 +80,12 @@ const SECTIONS = [
         .filter(Boolean);
     },
   },
-  { heading: "Read-Online Books", intro: "Full-length books, readable free online.", file: "client/public/books/index.json", key: "books", route: "/read/", desc: ["blurb", "subtitle"] },
-  { heading: "The Leadership Library", intro: "A working library for pastors and lay leaders.", file: "client/public/leadership/articles-index.json", key: "articles", route: "/leadership/article/", desc: ["blurb", "subtitle"] },
   { heading: "The Integrated Life", intro: "One undivided life before God: the inner life, the body, the home, work and money.", file: "client/public/life/domains-index.json", key: "domains", route: "/life/", desc: ["blurb", "pillar"] },
   { heading: "How-To Guides", intro: "Practical, honest guides for the ordinary work of following Jesus.", file: "client/public/howtos/index.json", key: "articles", route: "/how-tos/", desc: ["excerpt"] },
   { heading: "Study Guides", intro: "Session-by-session guides for individuals and small groups.", file: "client/public/studyguides/index.json", key: "guides", route: "/studyguides/", desc: ["blurb", "eyebrow"] },
   { heading: "Reading Scripture in Context", intro: "How to read the Bible in its historical and literary world.", file: "client/public/context/guides-index.json", key: "guides", route: "/resources/context/", desc: ["blurb"] },
   { heading: "Church History", intro: "The councils, the creeds, the schisms, and the people who carried the faith.", file: "client/public/history/essays-index.json", key: "essays", route: "/theology/history/", desc: ["blurb", "era"] },
   { heading: "Creeds & Confessions", intro: "The texts the church has confessed in every age, with plain-language notes.", file: "client/public/creeds/documents-index.json", key: "documents", route: "/resources/creeds/", desc: ["blurb"] },
-  { heading: "The Table", intro: "Short studies for making disciples around a table.", file: "client/public/table/studies-index.json", key: "studies", route: "/table/", desc: ["summary", "subtitle"] },
 ];
 
 function pickDesc(item, keys) {

@@ -763,6 +763,211 @@
             ],
             "destination": "https://www.livewellbyjamesbell.co/$1",
             "permanent": true
+        },
+        {
+            "source": "/read",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/read/:slug*",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/book-bundles",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/books/raising-believers",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/leadership",
+            "destination": "https://pastorsconnectionnetwork.com",
+            "permanent": true
+        },
+        {
+            "source": "/leadership/:path*",
+            "destination": "https://pastorsconnectionnetwork.com",
+            "permanent": true
+        },
+        {
+            "source": "/pastors",
+            "destination": "https://pastorsconnectionnetwork.com",
+            "permanent": true
+        },
+        {
+            "source": "/for-leaders",
+            "destination": "https://pastorsconnectionnetwork.com",
+            "permanent": true
+        },
+        {
+            "source": "/the-pastoral-angle",
+            "destination": "https://pastorsconnectionnetwork.com",
+            "permanent": true
+        },
+        {
+            "source": "/pastors-resource-wall",
+            "destination": "https://pastorsconnectionnetwork.com",
+            "permanent": true
+        },
+        {
+            "source": "/table",
+            "destination": "/tools",
+            "permanent": true
+        },
+        {
+            "source": "/table/:slug*",
+            "destination": "/tools",
+            "permanent": true
+        },
+        {
+            "source": "/discipleship",
+            "destination": "/tools",
+            "permanent": true
+        },
+        {
+            "source": "/disciple-making",
+            "destination": "/tools",
+            "permanent": true
+        },
+        {
+            "source": "/tools/sermon-outline",
+            "destination": "/tools",
+            "permanent": true
+        },
+        {
+            "source": "/tools/pastor-burnout",
+            "destination": "/tools",
+            "permanent": true
+        },
+        {
+            "source": "/tools/church-health",
+            "destination": "/tools",
+            "permanent": true
+        },
+        {
+            "source": "/tools/discipleship-table",
+            "destination": "/tools",
+            "permanent": true
+        },
+        {
+            "source": "/consider-the-birds",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/where-your-treasure-is",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/alone-in-a-crowded-church",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/covenant",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/babylon",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/how-to-read-the-bible",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/be-true-to-yourself",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/what-belongs-to-the-poor",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/rule-of-life",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/why-not-what",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/sermon-on-the-mount-as-politics",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/prophetic-justice-101",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/marriage-in-ministry",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/the-loneliness-of-the-pastor",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/healwell",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/born-again-from-atheism",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/the-god-who-is-not-nice",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/faith-after-deconstruction",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/ordinary-holiness",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/the-scandal-of-the-cross",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/heaven-is-not-your-reward",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/prayer-in-the-dark",
+            "destination": "/books",
+            "permanent": true
+        },
+        {
+            "source": "/the-body-you-left",
+            "destination": "/books",
+            "permanent": true
         }
     ],
     "rewrites": [

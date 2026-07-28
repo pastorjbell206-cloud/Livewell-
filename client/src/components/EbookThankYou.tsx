@@ -130,11 +130,11 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
                   Keep reading
                 </h2>
                 <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", marginBottom: "20px" }}>
-                  Every book on the site can be read free, cover to cover, before you ever buy it. And one serious essay goes out a week, in the same vein as what you just bought.
+                  Every essay on the site is free, and one serious new one goes out each week in the same vein as what you just bought.
                 </p>
                 <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
-                  <Link href="/read" style={{ ...btn, background: "var(--ink)", color: "var(--bone)", minWidth: 0, padding: "12px 22px", fontSize: "14px" }}>
-                    Read the library free
+                  <Link href="/writing" style={{ ...btn, background: "var(--ink)", color: "var(--bone)", minWidth: 0, padding: "12px 22px", fontSize: "14px" }}>
+                    Read the essays free
                   </Link>
                   <Link href="/subscribe" style={{ ...btn, background: "transparent", color: "var(--ink)", border: "1px solid var(--border)", minWidth: 0, padding: "12px 22px", fontSize: "14px" }}>
                     The weekly essay

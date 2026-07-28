@@ -3,7 +3,7 @@
  *
  * The build generates roughly 167 PDFs on every deploy: a leader guide and a
  * participant handout for each study, a printable for each Reading Scripture in
- * Context guide, and one for each whole-book sermon series. Before this page
+ * Context guide. Before this page
  * they were reachable only from deep inside the individual guide pages, so a
  * reader looking for "the curriculum" or "the PDFs" had no way to see that any
  * of it existed.
@@ -49,7 +49,6 @@ const isSeriesIndex = (x: unknown): x is ({ id: string; title: string }[] | { se
 export default function Downloads() {
   const [studies, setStudies] = useState<Row[] | null>(null);
   const [context, setContext] = useState<Row[] | null>(null);
-  const [series, setSeries] = useState<Row[] | null>(null);
 
   useEffect(() => {
     let stale = false;
@@ -82,22 +81,6 @@ export default function Downloads() {
       })
       .catch(() => { if (!stale) setContext([]); });
 
-    fetchJson("/leadership/sermon-series.json", isSeriesIndex)
-      .then((d) => {
-        if (stale) return;
-        const list = Array.isArray(d) ? d : d.series;
-        setSeries(
-          list
-            .filter((s): s is { id: string; title: string } =>
-              typeof s?.id === "string" && typeof s?.title === "string")
-            .map((s) => ({
-              title: s.title,
-              readHref: `/leadership/bible-sermons/${s.id}`,
-              files: [{ label: "Series PDF", href: `/downloads/sermon-series/${s.id}.pdf` }],
-            }))
-        );
-      })
-      .catch(() => { if (!stale) setSeries([]); });
 
     return () => { stale = true; };
   }, []);
@@ -120,25 +103,17 @@ export default function Downloads() {
         rows: context,
       });
     }
-    if (series?.length) {
-      out.push({
-        id: "series",
-        label: "Sermon series",
-        blurb: "A preachable series for whole books of the Bible, with outlines and the arc of the book.",
-        rows: series,
-      });
-    }
     return out;
-  }, [studies, context, series]);
+  }, [studies, context]);
 
-  const loading = studies === null && context === null && series === null;
+  const loading = studies === null && context === null;
   const fileCount = families.reduce((n, f) => n + f.rows.reduce((m, r) => m + r.files.length, 0), 0);
 
   return (
     <Layout>
       <SEOMeta
         title="Free Downloads: Study Guides, Curriculum, and Printable PDFs"
-        description="Every printable file in one place: leader's guides and participant handouts for each study, Reading Scripture in Context printables, and sermon series for whole books of the Bible. All free."
+        description="Every printable file in one place: leader's guides and participant handouts for each study, plus Reading Scripture in Context printables. All free."
         url="https://www.livewellbyjamesbell.co/downloads"
       />
 
@@ -151,7 +126,7 @@ export default function Downloads() {
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch" }}>
             {fileCount > 0
               ? `${fileCount} files, free, nothing gated. Print them, hand them out, teach from them.`
-              : "Study guides, context printables, and sermon series. Free, and nothing is gated."}
+              : "Study guides and context printables. Free, and nothing is gated."}
           </p>
         </div>
       </section>

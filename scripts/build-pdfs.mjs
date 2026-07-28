@@ -562,15 +562,20 @@ async function main() {
     }
   }
 
-  // Free reading-library books (chapter files referenced by books/index.json)
-  const bookIndex = JSON.parse(fs.readFileSync(path.join(BOOKS_DIR, "index.json"), "utf8"));
-  const bookList = Array.isArray(bookIndex) ? bookIndex : bookIndex.books || [];
-  for (const entry of bookList) {
-    if (PAID_BOOK_SLUGS.has(entry.slug)) continue;
-    const file = path.join(BOOKS_DIR, `${entry.slug}.json`);
-    if (!fs.existsSync(file)) continue;
-    const book = { slug: entry.slug, ...JSON.parse(fs.readFileSync(file, "utf8")) };
-    written.push(await buildBook(book));
+  // Free reading-library books — retired July 2026 (catalog reduced to the
+  // three handwritten titles; drafts archived in content/archive/). The block
+  // no-ops when the library manifest is absent so the build stays green.
+  const bookIndexPath = path.join(BOOKS_DIR, "index.json");
+  if (fs.existsSync(bookIndexPath)) {
+    const bookIndex = JSON.parse(fs.readFileSync(bookIndexPath, "utf8"));
+    const bookList = Array.isArray(bookIndex) ? bookIndex : bookIndex.books || [];
+    for (const entry of bookList) {
+      if (PAID_BOOK_SLUGS.has(entry.slug)) continue;
+      const file = path.join(BOOKS_DIR, `${entry.slug}.json`);
+      if (!fs.existsSync(file)) continue;
+      const book = { slug: entry.slug, ...JSON.parse(fs.readFileSync(file, "utf8")) };
+      written.push(await buildBook(book));
+    }
   }
 
   if (fs.existsSync(STUDYGUIDES_DIR)) {
@@ -588,9 +593,13 @@ async function main() {
     written.push(await buildContextGuide(guide));
   }
 
-  const seriesData = JSON.parse(fs.readFileSync(SERIES_FILE, "utf8"));
-  for (const series of seriesData.series || []) {
-    written.push(await buildSermonSeries(series, seriesData.intro));
+  // Whole-Bible sermon series — moved to the Pastors Connection Network;
+  // library archived under content/archive/leadership-lib/.
+  if (fs.existsSync(SERIES_FILE)) {
+    const seriesData = JSON.parse(fs.readFileSync(SERIES_FILE, "utf8"));
+    for (const series of seriesData.series || []) {
+      written.push(await buildSermonSeries(series, seriesData.intro));
+    }
   }
 
   let total = 0;

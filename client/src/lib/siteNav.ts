@@ -78,12 +78,15 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
     ],
   },
   {
-    // "I want a book." Everything book-shaped, including the free reader.
+    // "I want a book." Three titles, each written by hand — James reduced the
+    // shelf to the books that are entirely his. The free reader and the wide
+    // paid catalog are archived (content/archive/), not deleted.
     title: "Books",
     links: [
-      { label: "All books", href: "/books", primary: true },
-      { label: "Read a book free", href: "/read", primary: true },
-      { label: "Book bundles", href: "/book-bundles", primary: true },
+      { label: "The books", href: "/books", primary: true },
+      { label: "When God Bless America Replaces Thy Kingdom Come", href: "/books/when-god-bless-america", primary: true },
+      { label: "The Monster in the Mirror", href: "/books/the-monster-in-the-mirror", primary: true },
+      { label: "Believe", href: "/books/believe", primary: true },
       { label: "The book roadmap", href: "/roadmap" },
     ],
   },
@@ -119,25 +122,9 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Contact", href: "mailto:Pastorjbell206@gmail.com", external: true, primary: true },
       { label: "Membership", href: "/membership" },
       { label: "Work with James", href: "/work-with-james" },
-    ],
-  },
-  {
-    // Footer-only (no primary links, so the header and mobile menus skip it).
-    // Headed to their own homes: the pastors' material to the Pastors
-    // Connection Network, the disciple-making tools to the discipleship app.
-    title: "Pastors & Disciple-Makers",
-    links: [
+      // The pastors' material now lives with the network it belongs to.
       { label: "Pastors Connection Network", href: "https://pastorsconnectionnetwork.com", external: true },
-      { label: "PCN on LiveWell", href: "/pastors" },
-      { label: "The leadership hub", href: "/leadership" },
-      { label: "Church leadership", href: "/for-leaders" },
-      { label: "Leadership library", href: "/leadership/library" },
-      { label: "Sermon series library", href: "/leadership/sermon-series" },
-      { label: "The pastoral angle", href: "/the-pastoral-angle" },
-      { label: "Deep formation", href: "/leadership/formation" },
-      { label: "The Table (disciple someone)", href: "/table" },
-      { label: "Make disciples", href: "/disciple-making" },
-      { label: "The Discipleship Pathway", href: "/discipleship" },
+      { label: "ENDS", href: "https://endsinitiative.org", external: true },
     ],
   },
 ];

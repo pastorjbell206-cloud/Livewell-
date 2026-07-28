@@ -33,28 +33,14 @@ export const TOOLS = [
     icon: Brain,
     color: "var(--goldlt)",
   },
-  {
-    title: "The Leadership Formation Inventory",
-    description: "A character-first diagnostic for leaders: identity, ego, rest, the hidden life, and emotional health before any question of skill. Retakeable, with your history kept in the browser. Part of Leadership Formation.",
-    href: "/leadership/inventory",
-    icon: Shield,
-    color: "var(--ink2)",
-  },
-  {
+    {
     title: "The Whole-Life Assessment",
     description: "Thirty honest statements across the inner life, the body, relationships, work and money, and the world. Maps where life is flourishing and hands you a rule of life for the season. Part of Integrated Life.",
     href: "/life/assessment",
     icon: Heart,
     color: "var(--goldlt)",
   },
-  {
-    title: "Start a Table",
-    description: "Build a complete, reproducing plan for making disciples around a table. Pick who you are gathering and how often, and get the invitation to send, a simple rhythm of meal, Scripture, and prayer, passages to begin with, and how to multiply. Made for the ordinary believer. Part of Integrated Life.",
-    href: "/tools/discipleship-table",
-    icon: HeartHandshake,
-    color: "var(--ink2)",
-  },
-  {
+    {
     title: "Wisdom for All of Life",
     description: "The front door to Scripture's wisdom for the place no rule reaches: the deep Proverbs and Ecclesiastes guide, a topical map for money, words, work, anger, marriage, and more, and a month in Proverbs. Part of Integrated Life.",
     href: "/wisdom",
@@ -159,14 +145,7 @@ export const TOOLS = [
     icon: Brain,
     color: "var(--goldlt)",
   },
-  {
-    title: "Sermon Outline Generator",
-    description: "Enter a topic and audience, get a structured 3-point sermon outline with Scripture, illustrations, and application questions.",
-    href: "/tools/sermon-outline",
-    icon: Mic,
-    color: "var(--ink2)",
-  },
-  {
+    {
     title: "Scripture Memory System",
     description: "Memorize 40 key verses across 8 categories. First-letter mode, fill-in-the-blank, and full recall practice with progress tracking.",
     href: "/tools/scripture-memory",
@@ -180,28 +159,14 @@ export const TOOLS = [
     icon: MessageCircle,
     color: "var(--goldlt)",
   },
-  {
-    title: "Pastor Burnout Diagnostic",
-    description: "Twenty-four questions across calling, isolation, marriage, and the board. It names the shape of your exhaustion and the way back.",
-    href: "/tools/pastor-burnout",
-    icon: Shield,
-    color: "var(--ink2)",
-  },
-  {
+    {
     title: "Life Audit",
     description: "24 questions across 8 life areas: spiritual, marriage, parenting, physical, financial, emotional, vocational, community. It names what is strong and what is slipping.",
     href: "/tools/life-audit",
     icon: Target,
     color: "var(--goldlt)",
   },
-  {
-    title: "Church Health Check",
-    description: "18 questions across worship, discipleship, outreach, leadership, stewardship, and congregational care. For pastors assessing their church.",
-    href: "/tools/church-health",
-    icon: Church,
-    color: "var(--ink)",
-  },
-  {
+    {
     title: "Misused Verses — What the Bible Actually Says",
     description: "The passages we quote most and read least: what each one says in context, how it gets misused, and the fuller teaching underneath. The estate's deepest verse tool.",
     href: "/tools/bible-says",
