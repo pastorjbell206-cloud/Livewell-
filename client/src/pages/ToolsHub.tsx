@@ -98,7 +98,7 @@ export const TOOLS = [
   },
   {
     title: "Family Devotion Builder",
-    description: "Build a 15-minute family devotion in seconds. Pick your kids' age group and a theme, and get a complete devotion with Scripture, teaching, activity, and prayer.",
+    description: "Build a fifteen-minute family devotion for tonight. Pick your kids' age group and a theme, and get a complete devotion with Scripture, teaching, activity, and prayer.",
     href: "/tools/family-devotions",
     icon: Users,
     color: "var(--goldlt)",
@@ -168,14 +168,14 @@ export const TOOLS = [
   },
     {
     title: "Misused Verses — What the Bible Actually Says",
-    description: "The passages we quote most and read least: what each one says in context, how it gets misused, and the fuller teaching underneath. The estate's deepest verse tool.",
+    description: "The passages we quote most and read least: what each one says in context, how it gets misused, and the fuller teaching underneath. The deepest verse tool on the site.",
     href: "/tools/bible-says",
     icon: BookOpen,
     color: "var(--ink)",
   },
   {
     title: "Quote Library",
-    description: "181 lines from the essays, filed by conviction, comfort, challenge, history, and wisdom — each tied to the piece it came from. Copy one, share one, follow one home.",
+    description: "Four hundred lines and counting from the essays and books, filed by conviction, comfort, challenge, history, and wisdom — each tied to the piece it came from. Copy one, share one, follow one home.",
     href: "/tools/quotes",
     icon: MessageCircle,
     color: "var(--ink2)",

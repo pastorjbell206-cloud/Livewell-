@@ -95,7 +95,7 @@ const NEEDS: Need[] = [
     opener: "Welcome. Nobody expects you to know the words yet. Here is how to begin, one small step at a time, with everything explained.",
     helps: [
       { href: "/plans/new-believer", label: "Do: eight weeks of beginnings", kind: "do" },
-      { href: "/discipleship", label: "Read: the pathway from new believer to mature", kind: "read" },
+      { href: "/pathways", label: "Read: the pathway from new believer to mature", kind: "read" },
       { href: "/tools/prayer-generator", label: "Pray: how to pray when you do not know how", kind: "pray" },
       { href: "/start", label: "Assess: find your starting place", kind: "assess" },
     ],
@@ -140,9 +140,6 @@ const NEEDS: Need[] = [
     opener: "The loneliest job in the room. If you are a pastor near the end of yourself, start here. Seeking help is faith, not failure.",
     helps: [
       { href: "/pastoral-burnout", label: "Read: why pastors leave, and how to stay whole", kind: "read" },
-      { href: "/tools/pastor-burnout", label: "Assess: a burnout and rest self-check", kind: "assess" },
-      { href: "/leadership/inventory", label: "Assess: the character-first leadership inventory", kind: "assess" },
-      { href: "/leadership/formation/burnout-and-the-theology-of-rest", label: "Read: the theology of rest", kind: "read" },
     ],
   },
   {
@@ -153,7 +150,7 @@ const NEEDS: Need[] = [
       { href: "/church-history", label: "Read: the church’s long story as a place to stand", kind: "read" },
       { href: "/plans/whole-life", label: "Do: an eight-week plan toward one undivided life", kind: "do" },
       { href: "/life/assessment", label: "Assess: the Whole-Life Assessment, with a rule of life", kind: "assess" },
-      { href: "/discipleship", label: "Do: the discipleship pathway, new believer to mature", kind: "do" },
+      { href: "/pathways", label: "Do: the discipleship pathway, new believer to mature", kind: "do" },
       { href: "/life", label: "Read: the Integrated Life hub", kind: "read" },
       { href: "/start", label: "Assess: find your starting path", kind: "assess" },
     ],

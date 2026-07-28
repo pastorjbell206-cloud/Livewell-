@@ -35,13 +35,7 @@ export default function Parenting() {
       topic: "Parenting",
       readTime: "10 min read"
     },
-    {
-      title: "When Your Child Doubts or Walks Away",
-      slug: "parenting-when-your-child-doubts-or-walks-away",
-      topic: "Parenting",
-      readTime: "10 min read"
-    },
-    {
+        {
       title: "Teaching Your Kids to Pray and Read the Bible",
       slug: "parenting-teaching-kids-to-pray-and-read-scripture",
       topic: "Parenting",
@@ -211,7 +205,7 @@ export default function Parenting() {
             Your children will inherit your doubts before they inherit your certainty.
           </h2>
           <p style={{ fontSize: "16px", lineHeight: "1.8", marginBottom: "32px", color: "var(--ink3)" }}>
-            That's not a problem. That's an opportunity to model what genuine faith actually looks like—honest, tested, and holding on anyway.
+            That is not a failure. It is the one honest thing you can hand them: a faith they watched being tested, and held anyway.
           </p>
           <Link href="/writing?topic=parenting" style={{ textDecoration: "none" }}>
             <button style={{ background: "var(--ink)", color: "var(--paper)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>

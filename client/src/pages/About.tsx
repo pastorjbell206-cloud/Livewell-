@@ -15,8 +15,8 @@ const PORTRAIT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED
 const PATHWAYS = [
   { href: "/skeptic-track", label: "If you are not sure you believe any of this", desc: "Start with the track written for skeptics, by someone who used to be one. No tricks, no altar call at the end. Just your questions taken seriously." },
   { href: "/writing", label: "If your faith has outgrown the answers you were given", desc: "Read the essays. They start at the root instead of the symptom, and they leave open the things that should stay open." },
-  { href: "/pastors", label: "If you carry a church", desc: "The pastors section and the Pastors Connection Network exist because the loneliest job in the building is the one standing up front." },
-  { href: "/leadership", label: "If you lead and teach", desc: "A working library on preaching, reading Scripture, and forming leaders. Built to be used, not admired." },
+  { href: "/pastors", label: "If you carry a church", desc: "The Pastors Connection Network exists because the loneliest job in the building is the one standing up front. It lives at its own address now." },
+  { href: "/resources", label: "If you lead and teach", desc: "The libraries and study guides — built to be used, not admired." },
   { href: "/marriage", label: "If your marriage needs more than tips", desc: "Writing on covenant for two people still keeping a promise they are no longer sure they understand." },
   { href: "/parenting", label: "If you are raising children", desc: "Five sons, and none of it theoretical. Formation over performance, and no formulas." },
 ];
@@ -161,7 +161,7 @@ export default function About() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)" }}>
-            LiveWell is not therapy, and it is not Christian self-help. It is not a place that hands you something to think so you can stop thinking. It is closer to a writing desk — where a pastor with {SITE_STATS.yearsInMinistry} years of mistakes behind him and five sons in front of him tries to think honestly, out loud, about what it actually means to follow Jesus in a country that has mostly forgotten what his kingdom was ever about.
+            LiveWell is not therapy, and it is not Christian self-help. It is not a place that hands you something to think so you can stop thinking. It is closer to a writing desk — where a pastor with {SITE_STATS.yearsInMinistryWord} years of mistakes behind him and five sons in front of him tries to think honestly, out loud, about what it actually means to follow Jesus in a country that has mostly forgotten what his kingdom was ever about.
           </p>
         </div>
       </section>

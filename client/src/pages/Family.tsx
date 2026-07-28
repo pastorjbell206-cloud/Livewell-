@@ -281,7 +281,6 @@ export default function Family() {
             <LinkCard href="/tools/bible-study" title="Bible study guide" desc="Study any book of the Bible with themes, questions, and reading strategies." />
             <LinkCard href="/tools/prayer-generator" title="Prayer generator" desc="Guided prayers for morning, evening, strength, guidance, and gratitude." />
             <LinkCard href="/tools/rule-of-life" title="Rule of life builder" desc="Build a sustainable rhythm of prayer, Scripture, rest, community, and mission you can actually keep." />
-            <LinkCard href="/disciple-making" title="Make disciples" desc="Equip the ordinary believer to make disciples around a table. The path, plus a Start a Table tool." />
           </div>
         </div>
       </section>

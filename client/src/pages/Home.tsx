@@ -76,7 +76,7 @@ const DOORS = [
   {
     title: "I don't believe any of this",
     blurb:
-      "Written by a pastor who was an atheist far longer than he has been this. No setup, no pressure, no altar call.",
+      "Written by a pastor who was an atheist before he was anything else. No setup, no pressure, no altar call.",
     href: "/skeptic-track",
     cta: "Read the skeptic track",
   },
@@ -104,7 +104,7 @@ const DOORS = [
   {
     title: "I want wisdom for a real situation",
     blurb:
-      "Two hundred everyday situations — anger, money, grief, a hard boss, a wandering child — each answered from Scripture.",
+      "Two hundred and eight everyday situations — anger, money, grief, a hard boss, a wandering child — each answered from Scripture.",
     href: "/wisdom",
     cta: "Name the situation",
   },
@@ -820,7 +820,7 @@ export default function Home() {
               maxWidth: "32ch",
             }}
           >
-            Five pillars. One argument.
+            The pillars. One argument.
           </h2>
           <div
             style={{

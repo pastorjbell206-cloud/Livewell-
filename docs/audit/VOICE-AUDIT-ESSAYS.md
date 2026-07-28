@@ -13,20 +13,35 @@ sons; wife Susanna; raised without a father; PCN (~18,000 pastors); ENDS;
 Following the Way. The confirmed-false claim (a child leaving the faith) was
 checked in every essay — **no essay repeats it**.
 
-**Status:** 9 of 10 essay batches complete (615 essays); batch 5 (68 essays) and
-the page-copy audit were cut off by the account usage-credit limit (resets 7pm
-UTC) and resume then. Verdict totals so far —
+**Status:** COMPLETE — all 683 essays audited across ten batches, plus all 26
+hub, tool, and landing pages. Final verdict totals —
 
 | | count |
 |---|---:|
-| Voice PASS | 481 |
-| Voice BORDERLINE | 111 |
-| Voice FAIL | 23 |
-| Truth OK | ~521 |
-| Truth FLAG (needs James's yes/no) | ~73 |
-| Truth CRITICAL | 10 |
+| Voice PASS | 536 |
+| Voice BORDERLINE | 121 |
+| Voice FAIL | 26 |
+| Truth OK | ~580 |
+| Truth FLAG (needs James's yes/no) | ~79 |
+| Truth CRITICAL | 13 |
 
-**Actions already taken under the standing rule** (claims contradicting the
+**Further actions taken under the standing rule (second pass):** pulled
+`parenting-when-your-child-doubts-or-walks-away` — it asserted in the present
+tense that one of James's own children stands in doubt ("I have felt the early
+tremor of it in my own house"; "a person can stand exactly where my child is
+standing"), a softened repeat of the claim James ruled not true — and pulled
+`learned-from-pastor-disagrees` ("I grew up in that world. My theological
+formation was thorough and narrow" — a churched upbringing he did not have).
+Both 301. The page-copy audit's fixes were applied across 20 pages: stale
+promises of retired surfaces removed (the burnout diagnostic, the leadership
+hub, the Table, free full-book reading), the Membership page no longer sells
+what is free, false counts corrected ("a full third of the Old Testament,"
+"181 lines," "Nine instruments," "Seventeen essays," "No score"), the
+unverified Courage Network row removed from the abuse page, the false "7-day
+Deconstruction Guide" promise replaced with what the signup actually does, and
+two church-history date errors fixed (Theodosius 380; 1789 relabeled).
+
+**Actions taken under the standing rule (first pass)** (claims contradicting the
 established biography come out): pulled
 `38-what-i-learned-about-unity-from-pastoring-across-cultural-lines` (claims a
 majority-non-white congregation, "a decade of seminary," a churched upbringing),
@@ -171,3 +186,18 @@ church-closure title contradicted by its own data, Hebrews attributed to Paul,
 the shipped markup artifacts (doubled/dangling headers, orphaned pull quotes),
 forbidden-word scrubs, and the "Three Questions for This Week" application
 boxes.*
+
+### Batch 5 (completed after credit reset)
+
+Batch 5 — 68 essays. Voice: 55 PASS, 10 BORDERLINE, 3 FAIL; truth: 59 OK, 6 FLAG, 3 CRITICAL.
+CRITICAL-PULLED: parenting-when-your-child-doubts-or-walks-away — present-tense assertion that Bell's own child stands in doubt ("I have felt the early tremor of it in my own house"; "a person can stand exactly where my child is standing"; "I will not insult my children by pretending their doubts are smaller") — softened repeat of the claim James ruled "not true." Pulled under standing rule.
+CRITICAL-PULLED: learned-from-pastor-disagrees — "I grew up in that world. My theological formation was thorough and narrow" — churched upbringing contradicts atheist adult conversion. Pulled under standing rule. (Also unnamed formative pastor-friend story.)
+CRITICAL-to-James: 36-before-you-launch-that-ministry — "a pastor named Kevin" with detailed arc and quoted testimony; named person; confirm or recast composite.
+CHURCH-PROFILE CONTRADICTION (James must give the one true story): depression-in-the-pulpit ("three hundred people" + a depressive winter season), eighty-percent-churches-plateaued ("the same forty-seven faces," "I have been the pastor of a plateaued church"), lead-church-decline ("I have led through decline... building that used to be full"), 45-mission-sending ("A family in our congregation spent three years preparing before they were sent" + commissioning video). Incompatible public profiles of FBC Fenton improvised per-essay.
+FLAGS: the-end-of-home-field-advantage (napkin-diagram evangelist + the patient friend who converted him + "I have taught the napkin" — functions as public testimony, confirm); depression-in-the-pulpit (the depressive season itself); 41-short-term-missions (pastor, 12 years, Central America + verbatim dialogue).
+FAIL: why-young-adults-arent-coming-back ("authenticity" x4 incl. section title), faith-at-work ("Navigating Ethical Conflicts" header), creeds-confessions-statements-of-faith.
+MECHANICAL: Lewis "What? You too?" popularized misquote presented as verbatim (friendship-the-love-we-forgot); vague "researchers" attribution.
+
+### Page-copy audit (26 pages) — summary
+
+All 26 hub/tool/landing pages audited with verified counts. The three worst problems: (1) live pages promising retired surfaces (burnout diagnostic, /leadership, /pastors, the Table, free book reading) — worst on the burned-out-pastor page; (2) the Membership page selling what is already free ("The full essay archive," "member-only" tools that are on the FREE tools page) at the exact moment trust becomes money; (3) numbers that do not survive checking ("a full third of the Old Testament," "181 lines" vs 401, "Nine instruments," "Seventeen essays" with duplicate links, "No score" on a scored assessment, a "7-day guide" the form never delivers). All fixes applied in this commit except items requiring James (the church-profile contradiction across essays: "three hundred people" vs "forty-seven faces" vs "led through decline" vs a sent-missionary family — his congregation's story is being improvised per-essay and needs his one true telling).

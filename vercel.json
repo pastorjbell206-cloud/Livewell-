@@ -988,6 +988,11 @@
             "source": "/writing/6-what-your-spouse-wishes-you-knew-about-life-in-the-parsonage",
             "destination": "/writing",
             "permanent": true
+        },
+        {
+            "source": "/writing/parenting-when-your-child-doubts-or-walks-away",
+            "destination": "/parenting",
+            "permanent": true
         }
     ],
     "rewrites": [
