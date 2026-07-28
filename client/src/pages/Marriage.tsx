@@ -54,17 +54,17 @@ export default function Marriage() {
     {
       title: "Marriage: Covenant & Roles",
       description: "What covenant means, what you promised, and how two people lead and serve when love feels impossible.",
-      href: "/read/essays-marriage-covenant-roles"
+      href: "/writing?q=covenant"
     },
     {
       title: "Marriage: Communication & Conflict",
       description: "How to fight fair, have the conversations you've been avoiding, and repair after rupture.",
-      href: "/read/essays-marriage-communication-conflict"
+      href: "/writing?q=conflict"
     },
     {
       title: "Marriage: Crisis & Rebuilding",
       description: "Affairs, addiction, divorce, and the long work of starting again when the marriage nearly ended.",
-      href: "/read/essays-marriage-crisis-repair"
+      href: "/writing?q=marriage"
     }
   ];
 

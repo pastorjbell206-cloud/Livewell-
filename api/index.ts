@@ -611,11 +611,22 @@ async function resolveEbookPriceId(slug: string, priceEnv: string): Promise<stri
   }
 }
 
-// Admin-triggered: create (idempotently) a Stripe product + a one-time $9.99 USD
-// price for every ebook that is not already configured, and store the price id
-// in site_settings so checkout can use it without any Vercel env editing. Uses
-// the server's own STRIPE_SECRET_KEY (already set in production). Books that
-// already have a STRIPE_PRICE_<SLUG> env var are left untouched.
+// The one price every LiveWell ebook sells for, in cents. Every book, not a
+// favoured three. Change it here and re-run POST /api/admin/create-stripe-prices;
+// the handler below reconciles Stripe and the stored price ids to match, so the
+// number on the page and the number on the card can never drift apart.
+const EBOOK_PRICE_CENTS = 899;
+
+// Admin-triggered: create (idempotently) a Stripe product + a one-time price at
+// EBOOK_PRICE_CENTS for every ebook, and store the price id in site_settings so
+// checkout can use it without any Vercel env editing. Uses the server's own
+// STRIPE_SECRET_KEY (already set in production). Books configured through a
+// STRIPE_PRICE_<SLUG> env var are left untouched — the env var wins, and the
+// response reports them so a stale one is visible rather than silent.
+//
+// This is a reconciler, not a one-shot: a stored price whose amount no longer
+// matches EBOOK_PRICE_CENTS is replaced. Without that, dropping the price in the
+// copy would leave the old amount charging at the card.
 async function createStripePrices(req: VercelRequest, res: VercelResponse) {
   if (!authed(req) && !authedSession(req)) return json(res, 401, { error: "unauthorized" });
   const stripe = getStripe();
@@ -636,7 +647,10 @@ async function createStripePrices(req: VercelRequest, res: VercelResponse) {
         results.push({ slug, status: "env", priceId: null });
         continue;
       }
-      // Already created and stored: reuse.
+      // Already created and stored: reuse it only if it still charges the
+      // current price. A stored id at the old amount is worse than none — the
+      // page would advertise one number and the card would take another — so it
+      // falls through and gets replaced below.
       const existing = await withConn(async (c) => {
         const [rows]: any = await c.execute(
           "SELECT settingValue FROM site_settings WHERE settingKey = ?",
@@ -645,8 +659,17 @@ async function createStripePrices(req: VercelRequest, res: VercelResponse) {
         return rows?.[0]?.settingValue?.trim() || null;
       });
       if (existing) {
-        results.push({ slug, status: "exists", priceId: existing });
-        continue;
+        let amount: number | null = null;
+        try {
+          const p = await stripe.prices.retrieve(existing);
+          amount = p.unit_amount ?? null;
+        } catch {
+          // Deleted or from another account: treat as unset and recreate.
+        }
+        if (amount === EBOOK_PRICE_CENTS) {
+          results.push({ slug, status: "exists", priceId: existing });
+          continue;
+        }
       }
       // Find or create the product (matched by metadata.slug so re-runs reuse it).
       let product: Stripe.Product | null = null;
@@ -663,9 +686,15 @@ async function createStripePrices(req: VercelRequest, res: VercelResponse) {
         });
       }
       const prices = await stripe.prices.list({ product: product.id, active: true, limit: 100 });
-      let price = prices.data.find((p) => p.unit_amount === 999 && p.currency === "usd" && !p.recurring);
+      let price = prices.data.find(
+        (p) => p.unit_amount === EBOOK_PRICE_CENTS && p.currency === "usd" && !p.recurring,
+      );
       if (!price) {
-        price = await stripe.prices.create({ product: product.id, unit_amount: 999, currency: "usd" });
+        price = await stripe.prices.create({
+          product: product.id,
+          unit_amount: EBOOK_PRICE_CENTS,
+          currency: "usd",
+        });
       }
       await withConn(async (c) => {
         await c.execute(
@@ -673,12 +702,22 @@ async function createStripePrices(req: VercelRequest, res: VercelResponse) {
           [`stripe_price_${slug}`, price.id],
         );
       });
-      results.push({ slug, status: "created", priceId: price.id });
+      results.push({ slug, status: existing ? "repriced" : "created", priceId: price.id });
     }
     const created = results.filter((r) => r.status === "created").length;
+    const repriced = results.filter((r) => r.status === "repriced").length;
     const reused = results.filter((r) => r.status === "exists").length;
     const envConfigured = results.filter((r) => r.status === "env").length;
-    json(res, 200, { ok: true, created, reused, envConfigured, total: results.length, results });
+    json(res, 200, {
+      ok: true,
+      priceUSD: (EBOOK_PRICE_CENTS / 100).toFixed(2),
+      created,
+      repriced,
+      reused,
+      envConfigured,
+      total: results.length,
+      results,
+    });
   } catch (e: any) {
     json(res, 500, { ok: false, error: String(e?.message || e) });
   }
@@ -2244,17 +2283,19 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
       case "stripe.createCheckoutSession": {
         const stripe = getStripe();
         if (!stripe || !stripeConfigured()) return trpcErr(res, "BAD_REQUEST", "Stripe is not configured.", 400);
-        const BOOK_PRICES: Record<number, { title: string; priceUSD: number }> = {
-          1: { title: "Book One", priceUSD: 14.99 },
-          2: { title: "Book Two", priceUSD: 16.99 },
-          3: { title: "Book Three", priceUSD: 12.99 },
-        };
         const bookId = Number(input?.bookId);
         const email = typeof input?.customerEmail === "string" ? input.customerEmail : "";
         const name = typeof input?.customerName === "string" ? input.customerName : "";
         const origin = typeof input?.origin === "string" && input.origin ? input.origin : siteOrigin(req);
-        const bp = BOOK_PRICES[bookId];
-        if (!bp) return trpcErr(res, "BAD_REQUEST", "Book " + bookId + " not found in pricing", 400);
+        // Title from the books table, amount from EBOOK_PRICE_CENTS. This was a
+        // three-row placeholder ("Book One", $14.99) that would have charged a
+        // real reader an invented price for whatever book held that id.
+        const bookRow = await withConn(async (c) => {
+          const [rows]: any = await c.execute("SELECT title FROM books WHERE id = ? LIMIT 1", [bookId]);
+          return rows?.[0] || null;
+        }).catch(() => null);
+        if (!bookRow?.title) return trpcErr(res, "BAD_REQUEST", "Book " + bookId + " not found", 400);
+        const bp = { title: String(bookRow.title), priceUSD: EBOOK_PRICE_CENTS / 100 };
         const session = await stripe.checkout.sessions.create({
           payment_method_types: ["card"],
           line_items: [{

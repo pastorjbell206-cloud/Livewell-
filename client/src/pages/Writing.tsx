@@ -178,6 +178,29 @@ export default function Writing() {
 
   const activeTrackInfo = activeTrack ? resolveTrack(activeTrack) : null;
 
+  /**
+   * Is the reader narrowing the list right now? The "N of M" count only means
+   * something when they are. Unfiltered it read as "958 of 962 essays shown",
+   * which looks like four went missing; in fact `posts` includes hidden
+   * duplicate stubs and catalog stubs that are excluded on purpose. Show the
+   * plain total when nothing is filtering, and the ratio when something is.
+   */
+  const allCount = useMemo(
+    () => posts.filter(p => !HIDDEN_SLUGS.has(p.slug) && isFullEssay(p)).length,
+    [posts]
+  );
+
+  const isFiltering = Boolean(
+    activeTrack ||
+      activePillar ||
+      activeSub ||
+      activeSeries ||
+      activeSubTheme ||
+      activeAudience ||
+      activeFormat ||
+      effectiveSearch
+  );
+
   return (
     <Layout>
       <SEOMeta
@@ -272,7 +295,9 @@ export default function Writing() {
           >
             {postsQuery.isLoading
               ? "Loading…"
-              : `${filtered.length} of ${posts.length} essays shown`}
+              : isFiltering
+                ? `${filtered.length} of ${allCount} essays shown`
+                : `${filtered.length} essays`}
           </div>
 
           {/* Pillar 6 sub-theme chips */}

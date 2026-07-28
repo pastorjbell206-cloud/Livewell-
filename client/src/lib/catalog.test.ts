@@ -9,7 +9,7 @@ import { LIBRARY_SOURCES, pickString } from "./catalog";
  */
 describe("content catalog registry", () => {
   it("registers every static library with a well-formed source", () => {
-    expect(LIBRARY_SOURCES.length).toBeGreaterThanOrEqual(10);
+    expect(LIBRARY_SOURCES.length).toBeGreaterThanOrEqual(6);
     for (const s of LIBRARY_SOURCES) {
       expect(s.url.startsWith("/")).toBe(true);
       expect(s.url.endsWith(".json")).toBe(true);
@@ -23,7 +23,7 @@ describe("content catalog registry", () => {
 
   it("covers the content types the browse facet expects", () => {
     const types = new Set(LIBRARY_SOURCES.map((s) => s.type));
-    for (const t of ["Book", "Study Guide", "How-To", "Church History", "Creed"]) {
+    for (const t of ["Study Guide", "How-To", "Church History", "Creed"]) {
       expect(types.has(t)).toBe(true);
     }
   });

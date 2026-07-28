@@ -101,7 +101,7 @@ export default function AdminCommerce() {
                       {noPrice.length} ebook{noPrice.length === 1 ? "" : "s"} ready to sell but missing a price
                     </div>
                     <p className="font-body text-xs" style={{ color: A.muted }}>
-                      One click creates a $9.99 Stripe price for each and turns its Buy button into real checkout.
+                      One click creates a $8.99 Stripe price for each and turns its Buy button into real checkout.
                     </p>
                   </div>
                   <button
@@ -129,7 +129,7 @@ export default function AdminCommerce() {
                   <span className="font-ui text-sm" style={{ color: A.ink, minWidth: 0, overflow: "hidden", textOverflow: "ellipsis" }}>{b.title}</span>
                   {b.status === "live" ? (
                     <span className="flex items-center gap-1 font-ui text-xs font-semibold" style={{ color: A.ok }}>
-                      <CheckCircle2 size={14} /> Live · $9.99
+                      <CheckCircle2 size={14} /> Live · $8.99
                     </span>
                   ) : (
                     <span className="flex items-center gap-1 font-ui text-xs font-semibold" style={{ color: A.danger }}>

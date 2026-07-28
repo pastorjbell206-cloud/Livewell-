@@ -14,7 +14,6 @@ import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 
 import { PullQuote, SectionArt, StatementBand } from "@/components/EditorialBlocks";
 import Footer from "@/components/Footer";
-import { LibraryStrip } from "@/components/LibraryStrip";
 import MinimalNav from "@/components/MinimalNav";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { SegmentedSignup } from "@/components/SegmentedSignup";
@@ -96,18 +95,18 @@ const DOORS = [
     cta: "Enter the family room",
   },
   {
-    title: "I'm a pastor, and I'm tired",
+    title: "I want to study, not just read",
     blurb:
-      "The loneliness, the burnout, the weight nobody checks on. Written from inside the room, and a network that has your back.",
-    href: "/pastors",
-    cta: "Find the brotherhood",
+      "Study guides with a leader's guide and a handout, guided reading paths, and printables for the room you'll teach in.",
+    href: "/studyguides",
+    cta: "Pick a study",
   },
   {
-    title: "I want to disciple someone",
+    title: "I want wisdom for a real situation",
     blurb:
-      "Eighteen table-ready studies that make you confident to walk with one person — no program, no stage, no seminary required.",
-    href: "/table",
-    cta: "Sit at the Table",
+      "Two hundred everyday situations — anger, money, grief, a hard boss, a wandering child — each answered from Scripture.",
+    href: "/wisdom",
+    cta: "Name the situation",
   },
   {
     title: "I have a hard question",
@@ -123,7 +122,7 @@ const PILLARS = [
   { name: "Theological Depth", href: "/theology", blurb: "Doctrine, church history, the whole biblical story." },
   { name: "Prophetic Justice", href: "/justice", blurb: "The poor, the outsider, the systems we inherit." },
   { name: "Prophetic Disruption", href: "/disruption", blurb: "The church, empire, and the politics that capture it." },
-  { name: "Leadership Formation", href: "/leadership", blurb: "Character before competence, for those who lead." },
+  { name: "The Historic Faith", href: "/historic-faith", blurb: "Creeds, councils, and the long memory of the church." },
   { name: "Integrated Life", href: "/life", blurb: "Marriage, parenting, vocation, and rest." },
 ];
 
@@ -304,7 +303,7 @@ export default function Home() {
                   {HERO_VARIANT === "A" ? "Find your track" : "Start here if you're a skeptic"}
                 </button>
               </Link>
-              <Link href="/read" style={{ textDecoration: "none" }}>
+              <Link href="/books" style={{ textDecoration: "none" }}>
                 <button
                   type="button"
                   style={{
@@ -320,7 +319,7 @@ export default function Home() {
                     cursor: "pointer",
                   }}
                 >
-                  Read a book free
+                  See the books
                 </button>
               </Link>
             </div>
@@ -640,7 +639,6 @@ export default function Home() {
 
       {/* FROM THE LIBRARY — the free full-length books, the strongest asset on
           the site, so they sit above the essay river rather than under it. */}
-      <LibraryStrip />
 
       {/* RECENT ESSAYS */}
       <section

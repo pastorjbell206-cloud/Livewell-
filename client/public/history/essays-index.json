@@ -97,6 +97,62 @@
       "blurb": "The fundamentalist and modernist split, the churches under the dictators, Barmen and Bonhoeffer, the fire from Azusa Street, and the great reversal that moved the faith's center south.",
       "era": "The Modern and Global Church",
       "dateRange": "AD 1900 to today"
+    },
+    {
+      "slug": "apostolic-and-persecuted",
+      "title": "The Apostolic and Persecuted Church",
+      "blurb": "Three centuries with no buildings, no legal standing, and no cultural power — and the church grew anyway. What the first Christians had that we keep trying to buy.",
+      "era": "Ancient",
+      "dateRange": "AD 30–313"
+    },
+    {
+      "slug": "councils-and-creeds",
+      "title": "Councils and Creeds",
+      "blurb": "The empire stopped killing the church and started smiling at it. What the bishops protected at Nicaea and Chalcedon — and what the favor of Constantine began to cost.",
+      "era": "Ancient",
+      "dateRange": "AD 313–590"
+    },
+    {
+      "slug": "the-long-middle",
+      "title": "The Long Middle",
+      "blurb": "Nine hundred years between the empire's collapse and the Reformation's spark. Neither a dark age nor a golden one — the centuries when the church held everything, and nearly lost itself.",
+      "era": "Medieval",
+      "dateRange": "AD 590–1517"
+    },
+    {
+      "slug": "reformation-and-its-wars",
+      "title": "The Reformation and Its Wars",
+      "blurb": "A monk's protest recovered the gospel and broke the Western church in two — then into pieces. The era that gave Protestants their treasure also taught them their worst habit.",
+      "era": "Reformation",
+      "dateRange": "AD 1517–1648"
+    },
+    {
+      "slug": "awakenings-and-enlightenment",
+      "title": "Awakenings and Enlightenment",
+      "blurb": "From the exhaustion of Westphalia to the first religious free market. Pietism's answer to cold orthodoxy, the Enlightenment's rival account, Edwards and Whitefield and Wesley, and the forging of the tools America would later mistake for the move of God.",
+      "era": "Modern",
+      "dateRange": "AD 1648-1800"
+    },
+    {
+      "slug": "the-american-experiment",
+      "title": "The American Experiment",
+      "blurb": "From Cane Ridge to the fundamentalist and modernist rupture. How the American church learned to engineer revival, married the market and the flag, and split rather than release the enslaved, and the church that kept the faith through all of it.",
+      "era": "Modern",
+      "dateRange": "AD 1800-1950"
+    },
+    {
+      "slug": "the-attractional-era",
+      "title": "The Attractional Era",
+      "blurb": "From a tent in Los Angeles to the megachurch's high noon. How American Christianity learned to produce a crowd, what the production did to the message, and the honest audit that ended the era's confidence.",
+      "era": "Modern",
+      "dateRange": "AD 1950-2010"
+    },
+    {
+      "slug": "after-christendom-era",
+      "title": "After Christendom",
+      "blurb": "The era the reader is standing in. The dechurching, the deconstruction, the reckonings, and the end of the church's home-field advantage in the West, written from inside, with the ending unwritten.",
+      "era": "Modern",
+      "dateRange": "AD 2010-present"
     }
   ]
 }

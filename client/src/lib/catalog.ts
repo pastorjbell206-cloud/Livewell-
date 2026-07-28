@@ -35,22 +35,6 @@ export interface LibrarySource {
  */
 export const LIBRARY_SOURCES: LibrarySource[] = [
   {
-    url: "/leadership/articles-index.json",
-    listKey: "articles",
-    label: "Leadership Library",
-    type: "Leadership",
-    buildHref: (slug) => `/leadership/article/${slug}`,
-    indexHref: "/leadership/library",
-  },
-  {
-    url: "/leadership/formation-index.json",
-    listKey: "topics",
-    label: "Deep Formation",
-    type: "Leadership",
-    buildHref: (slug) => `/leadership/formation/${slug}`,
-    indexHref: "/leadership/formation",
-  },
-  {
     url: "/context/guides-index.json",
     listKey: "guides",
     label: "Reading Scripture in Context",
@@ -97,22 +81,6 @@ export const LIBRARY_SOURCES: LibrarySource[] = [
     type: "Creed",
     buildHref: (slug) => `/resources/creeds/${slug}`,
     indexHref: "/resources/creeds",
-  },
-  {
-    url: "/table/studies-index.json",
-    listKey: "studies",
-    label: "The Table",
-    type: "Table Study",
-    buildHref: (slug) => `/table/${slug}`,
-    indexHref: "/table",
-  },
-  {
-    url: "/books/index.json",
-    listKey: "books",
-    label: "Books",
-    type: "Book",
-    buildHref: (slug) => `/read/${slug}`,
-    indexHref: "/read",
   },
 ];
 

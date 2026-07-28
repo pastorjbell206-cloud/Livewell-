@@ -138,7 +138,7 @@ export default function AdminPublishContent() {
     }
   };
 
-  // Ebook checkout: create (idempotently) a $9.99 Stripe price for every ebook
+  // Ebook checkout: create (idempotently) a $8.99 Stripe price for every ebook
   // that lacks one, and store the id so the Buy buttons go live. Books already
   // configured are left untouched. Uses the server's own Stripe key.
   const [stripeBusy, setStripeBusy] = useState(false);
@@ -173,7 +173,7 @@ export default function AdminPublishContent() {
             Turn on ebook checkout
           </h2>
           <p className="font-body mb-5" style={{ color: "var(--ink-muted)", lineHeight: 1.7 }}>
-            One click creates a $9.99 Stripe price for every ebook that has a file to deliver and
+            One click creates a $8.99 Stripe price for every ebook that has a file to deliver and
             turns its Buy button into real checkout. It uses your connected Stripe account, never
             touches a book that already sells, and is safe to run as many times as you like.
           </p>

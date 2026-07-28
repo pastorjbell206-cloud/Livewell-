@@ -42,28 +42,10 @@ const LIBRARIES = [
     desc: "The full texts of the creeds and confessions with plain-language notes on what the loaded phrases meant to the people who wrote them.",
   },
   {
-    href: "/discipleship",
-    eyebrow: "The guided path",
-    title: "The Discipleship Pathway",
-    desc: "Four stages from new believer to disciple-maker, with concrete steps and a tracker that remembers where you are.",
-  },
-  {
     href: "/resources/hard-issues-series",
     eyebrow: "For elders · Free from PCN",
     title: "The Hard Issues Series",
     desc: "Five free booklets for elder teams: what elders are for, the biblical qualifications, finding and installing elders, handling disagreement, and removing an elder. Free PDF and EPUB.",
-  },
-  {
-    href: "/leadership/library",
-    eyebrow: "For leaders and teachers",
-    title: "The Leadership Library",
-    desc: "Over a hundred articles on preaching, exegesis, formation, church leadership, and pastoral care. Searchable by category.",
-  },
-  {
-    href: "/leadership/sermon-series",
-    eyebrow: "For preachers",
-    title: "The Sermon Series Library",
-    desc: "Complete series plans, book by book and topic by topic, with the arc of each series and every sermon's text, idea, and aim.",
   },
   {
     href: "/family/devotions",

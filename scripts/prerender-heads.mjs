@@ -56,7 +56,7 @@ const STATIC_PAGES = [
   {
     path: "/about",
     title: "About James Bell",
-    description: "Lead Pastor of First Baptist Church of Fenton, founder of the Pastors Connection Network, author of twenty-one books. Came to faith from atheism. Raised without a father. Five sons.",
+    description: "James Bell has pastored First Baptist Church of Fenton, Michigan for twelve years. He founded the Pastors Connection Network and ENDS, hosts the Following the Way podcast, and has written twenty-one books.",
     type: "profile",
     schemas: [personSchema()],
   },
@@ -69,13 +69,7 @@ const STATIC_PAGES = [
   {
     path: "/books",
     title: "Books — by James Bell",
-    description: "Books on theology, ministry, marriage, and the Christian life. Twenty-one titles spanning church leadership, prophetic justice, and the integrated life.",
-    type: "website",
-  },
-  {
-    path: "/reading-paths",
-    title: "Reading Paths — Curated Collections",
-    description: "Curated reading paths: burnout and sabbatical, prophetic justice, new pastors, marriage in ministry. Each path is an argument arc, not a topic list.",
+    description: "The books James Bell wrote by hand: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Read the opening of each free.",
     type: "website",
   },
   {
@@ -93,7 +87,7 @@ const STATIC_PAGES = [
   {
     path: "/tools",
     title: "Tools for Pastors and Readers",
-    description: "Practical tools for pastors and serious readers: verse finder, prayer generator, sermon-prep helpers.",
+    description: "Practical tools for serious readers: assessments, study guides, the wisdom library, verse finder, prayer generator, and more.",
     type: "website",
   },
   {
@@ -106,12 +100,6 @@ const STATIC_PAGES = [
     path: "/skeptic-track",
     title: "The Skeptic's Track — Start here",
     description: "Seven essays in argument order. Written for skeptics first by a pastor who came to faith from atheism. No conversion bait.",
-    type: "website",
-  },
-  {
-    path: "/pastors-resource-wall",
-    title: "Pastor's Resource Wall",
-    description: "Sermon prep, citation tools, discussion guides, and the Pastors Connection Network. Tools for the work that does not finish.",
     type: "website",
   },
   {
@@ -160,18 +148,6 @@ const STATIC_PAGES = [
   // FormationGuides, WholeBibleSermons). Their SEOMeta is computed from props
   // or fetched JSON, so the route-table extraction below cannot read it; the
   // copy here mirrors each page's actual title/subtitle content.
-  {
-    path: "/leadership/guides",
-    title: "Free Church Leadership Training Guides — Elders & Deacons",
-    description: "Free, session-by-session training guides for the church: a Servant Leadership Bible study, an Elder Training Manual, a Deacon Training Manual, and more.",
-    type: "website",
-  },
-  {
-    path: "/leadership/bible-sermons",
-    title: "Sermon Series for Every Book of the Bible — Free Outlines",
-    description: "Free, Christ-centered sermon series for all 66 books of the Bible — the big idea, the Christ connection, and a ready-to-preach arc, Genesis to Revelation.",
-    type: "website",
-  },
   {
     path: "/disruption/posture",
     title: "The Posture — Prophetic Disruption",
@@ -541,19 +517,14 @@ function breadcrumbSchema(crumbs) {
 // Route prefix → the section hub the item sits under (all verified real routes).
 // The middle crumb of each library page's breadcrumb. Absent → a 2-level trail.
 const SECTION_BY_ROUTE = {
-  "/leadership/article/": { name: "Leadership Library", path: "/leadership/library" },
   "/resources/context/": { name: "Context Guides", path: "/resources/context" },
-  "/leadership/formation/": { name: "Leadership Formation", path: "/leadership/formation" },
   "/life/": { name: "The Integrated Life", path: "/life" },
   "/resources/creeds/": { name: "Creeds & Confessions", path: "/resources/creeds" },
   "/theology/history/": { name: "Church History", path: "/theology/history" },
   "/studyguides/": { name: "Study Guides", path: "/studyguides" },
-  "/table/": { name: "The Table", path: "/table" },
   "/how-tos/": { name: "How-To Library", path: "/how-tos" },
-  "/read/": { name: "Books", path: "/read" },
   "/plans/": { name: "Care Plans", path: "/plans" },
   "/theology/doctrine/": { name: "Theology", path: "/theology" },
-  "/leadership/bible-sermons/": { name: "Sermon Series", path: "/leadership/bible-sermons" },
   "/justice/topic/": { name: "Prophetic Justice", path: "/justice" },
   "/disruption/topic/": { name: "Prophetic Disruption", path: "/disruption" },
   "/wisdom/": { name: "Wisdom", path: "/wisdom" },
@@ -572,8 +543,11 @@ const HUB_LISTINGS = {
     return lib.filter((e) => e && e.slug && e.title)
       .map((e) => ({ title: e.title, href: `/writing/${e.slug}`, blurb: e.excerpt || "" }));
   } },
-  "/books": { label: "Books", cap: 60, load: () => booksListing() },
-  "/read": { label: "Read free", cap: 60, load: () => booksListing() },
+  "/books": { label: "Books", cap: 10, load: () => [
+    { title: "When God Bless America Replaces Thy Kingdom Come", href: "/books/when-god-bless-america", blurb: "A pastor's critique of political idolatry in the American church." },
+    { title: "The Monster in the Mirror", href: "/books/the-monster-in-the-mirror", blurb: "Why every generation gets the Bible wrong, and what to do about ours." },
+    { title: "Believe", href: "/books/believe", blurb: "Rational answers to the hardest questions skeptics ask, from a former atheist." },
+  ] },
   "/studyguides": { label: "Study guides", cap: 80, load: () => {
     const d = readJsonSafe("client/public/studyguides/index.json");
     return ((d && d.guides) || []).map((g) => ({ title: g.title, href: `/studyguides/${g.slug}`, blurb: g.blurb || "" }));
@@ -589,10 +563,6 @@ function readJsonSafe(rel) {
   catch { return null; }
 }
 
-function booksListing() {
-  const d = readJsonSafe("client/public/books/index.json");
-  return ((d && d.books) || []).map((b) => ({ title: b.title, href: `/read/${b.slug}`, blurb: b.blurb || b.subtitle || "" }));
-}
 
 function hubListingHtml(routePath) {
   const cfg = HUB_LISTINGS[routePath];
@@ -750,9 +720,7 @@ async function main() {
   // articles, context guides, life domains, formation topics, creeds, history
   // essays, and toolkits unfurl and index with their own title and image.
   const LIBRARY_SOURCES = [
-    { file: "client/public/leadership/articles-index.json", key: "articles", route: "/leadership/article/", ogPrefix: "leadership-article", contentDir: "client/public/leadership/articles" },
     { file: "client/public/context/guides-index.json", key: "guides", route: "/resources/context/", ogPrefix: "resources-context", contentDir: "client/public/context/guides" },
-    { file: "client/public/leadership/formation-index.json", key: "topics", route: "/leadership/formation/", ogPrefix: "leadership-formation", contentDir: "client/public/leadership/formation" },
     { file: "client/public/life/domains-index.json", key: "domains", route: "/life/", ogPrefix: "life", contentDir: "client/public/life/domains" },
     { file: "client/public/creeds/documents-index.json", key: "documents", route: "/resources/creeds/", ogPrefix: "resources-creeds", contentDir: "client/public/creeds/documents" },
     { file: "client/public/history/essays-index.json", key: "essays", route: "/theology/history/", ogPrefix: "theology-history", contentDir: "client/public/history/essays" },
@@ -760,9 +728,7 @@ async function main() {
     // (audit 02 #4): study-guide toolkits, Table studies, the How-To library,
     // and the read-online books.
     { file: "client/public/studyguides/index.json", key: "guides", route: "/studyguides/", ogPrefix: "studyguides", desc: "blurb", contentDir: "client/public/studyguides" },
-    { file: "client/public/table/studies-index.json", key: "studies", route: "/table/", ogPrefix: "table", desc: "summary", contentDir: "client/public/table/studies" },
     { file: "client/public/howtos/index.json", key: "articles", route: "/how-tos/", ogPrefix: "howtos", desc: "excerpt", contentDir: "client/public/howtos/a" },
-    { file: "client/public/books/index.json", key: "books", route: "/read/", ogPrefix: "read", desc: "blurb", type: "book", contentDir: "client/public/books" },
     { file: "client/public/plans/plans-index.json", key: "plans", route: "/plans/", ogPrefix: "plans", desc: "blurb", contentDir: "client/public/plans" },
     // The 50 contested-doctrine pages (/theology/doctrine/:slug) — manifest
     // from scripts/build-theology-index.mjs; subtitle is the description.
@@ -770,7 +736,6 @@ async function main() {
     // Sermon series for all 66 books of the Bible. The manifest keys the entry
     // by `id`/`name` (not slug/title), so map them; content files are arrays of
     // markdown sermons, so the body injects at full depth.
-    { file: "client/public/leadership/whole-bible-sermons.json", key: "books", route: "/leadership/bible-sermons/", ogPrefix: "leadership-bible-sermons", slugField: "id", titleField: "name", contentDir: "client/public/leadership/sermons", descTemplate: "A free, Christ-centered sermon series for the book of {title} — the big idea, the Christ connection, and a ready-to-preach arc, chapter by chapter." },
     // Prophetic Justice / Disruption per-topic pages. Indexes are generated from
     // client/src/lib/prophetic.ts (ready topics only) by build-prophetic-indexes.mjs.
     { file: "client/public/justice/topics-index.json", key: "topics", route: "/justice/topic/", ogPrefix: "justice-topic", contentDir: "client/public/justice/topics" },
@@ -779,6 +744,11 @@ async function main() {
     // framing is the description, and the title matches the page's own
     // "{label} — What the Bible Says" so scrapers see the same head.
     { file: "client/public/wisdom/topics.json", key: "topics", route: "/wisdom/", ogPrefix: "wisdom", slugField: "id", titleField: "label", desc: "framing", titleTemplate: "{title} — What the Bible Says" },
+    // The 13 guided reading pathways (/pathways/:slug) and the 4 formation
+    // guides (/leadership/guides/:slug). Both are param routes, so the route
+    // table extractor skips them by design and only a manifest pass reaches
+    // them; the sitemap has listed both families all along.
+    { file: "client/public/pathways/index.json", route: "/pathways/", ogPrefix: "pathways", desc: "subtitle" },
   ];
   let withBody = 0;
   for (const src of LIBRARY_SOURCES) {
@@ -786,7 +756,9 @@ async function main() {
     try {
       data = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, src.file), "utf8"));
     } catch { continue; }
-    for (const e of data[src.key] || []) {
+    // Most manifests are `{ key: [...] }`; a couple (pathways) are a bare array.
+    const entries = Array.isArray(data) ? data : data[src.key] || [];
+    for (const e of entries) {
       // Most manifests key by slug/title; a few (e.g. the whole-Bible sermons)
       // key by id/name, so allow a per-source field alias.
       const slug = e.slug || (src.slugField ? e[src.slugField] : undefined);
@@ -867,7 +839,16 @@ async function main() {
   const written = new Set(STATIC_PAGES.map((p) => p.path));
   const appSrc = fs.readFileSync(path.join(REPO_ROOT, "client/src/App.tsx"), "utf8");
   const importMap = {};
-  for (const m of appSrc.matchAll(/const (\w+) = lazy\(\(\) => import\("(\.\/pages\/[^"]+)"\)\)/g)) {
+  // Two lazy forms are in use: the one-liner `lazy(() => import("./pages/X"))`
+  // and the named-export form, which wraps and usually breaks across lines:
+  //   const X = lazy(() =>
+  //     import("./pages/X").then((m) => ({ default: m.X }))
+  //   );
+  // Matching only the first form silently dropped the second from prerendering
+  // — a page could ship a perfect literal <SEOMeta> and still serve the
+  // homepage head. Match up to the closing quote of the import path and let
+  // whatever follows be whatever it is.
+  for (const m of appSrc.matchAll(/const (\w+) = lazy\(\(\) =>\s*import\("(\.\/pages\/[^"]+)"/g)) {
     importMap[m[1]] = m[2];
   }
   for (const m of appSrc.matchAll(/^import (\w+) from "(\.\/pages\/[^"]+)";/gm)) {
@@ -889,7 +870,13 @@ async function main() {
     const normalized = routePath === "/" ? "" : routePath;
     if (routePath === "/404" || written.has(normalized)) continue;
     const rel = importMap[comp];
-    if (!rel) continue;
+    if (!rel) {
+      // Report rather than skip in silence. A component the import scanner
+      // cannot resolve is exactly how /book-bundles and /article-collections
+      // went un-prerendered without anything saying so.
+      uncovered.push(`${routePath} (component ${comp} — import not resolved)`);
+      continue;
+    }
     const compPath = path.join(REPO_ROOT, "client/src", rel.replace(/^\.\//, "")) + ".tsx";
     let compSrc;
     try {

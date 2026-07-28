@@ -27,12 +27,10 @@ jobs:
       - name: Typecheck
         run: pnpm run check
 
-      - name: Content gates (formation + life + table + study-guide + pathways + theology + politics + scripture validators)
+      - name: Content gates (life + study-guide + pathways + theology + politics + scripture validators)
         run: |
           node scripts/validate-scripture.mjs
-          node scripts/validate-formation.mjs
           node scripts/validate-life.mjs
-          node scripts/validate-table.mjs
           node scripts/validate-studyguides.mjs
           node scripts/validate-pathways.mjs
           node scripts/validate-theology.mjs
@@ -40,7 +38,6 @@ jobs:
           node scripts/validate-no-emdash.mjs
           node scripts/validate-content-integrity.mjs
           node scripts/validate-skeptic-track.mjs
-          node scripts/validate-books.mjs
           node scripts/validate-answers.mjs
           node scripts/validate-argument-cases.mjs
           node scripts/validate-links.mjs
@@ -49,7 +46,17 @@ jobs:
         run: pnpm test
 
       - name: Build
-        run: pnpm run build      
+        run: pnpm run build
+
+      # Every URL the sitemap advertises must be prerendered and must
+      # canonicalise to itself. A page that points its canonical elsewhere asks
+      # Google not to index it; across 1,700+ URLs a single wrong default would
+      # be invisible until traffic disappeared.
+      - name: Canonical audit (sitemap → prerendered head)
+        run: |
+          pnpm run sitemap
+          pnpm run prerender
+          pnpm run audit:canonicals
 
   quality:
     # Lighthouse + axe against the built site, in a runner where Chrome exists.

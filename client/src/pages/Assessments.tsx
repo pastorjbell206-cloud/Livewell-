@@ -66,12 +66,6 @@ const GROUPS: Group[] = [
         href: "/tools/marriage-assessment",
       },
       {
-        title: "The Pastor Burnout Diagnostic",
-        takeIf: "you lead a church and you are tired in a way a day off does not fix.",
-        gives: "An honest measure of the cost you are carrying, and whether it is sustainable.",
-        href: "/tools/pastor-burnout",
-      },
-      {
         title: "The Life Audit",
         takeIf: "the life you are living and the life you say you want have quietly diverged.",
         gives: "A structured look at the gap, without shame.",
@@ -96,12 +90,6 @@ const GROUPS: Group[] = [
         takeIf: "you suspect you defend truth selectively — one standard for your side, another for theirs.",
         gives: "A mirror, not a scorecard.",
         href: "/disruption/consistency",
-      },
-      {
-        title: "The Formation Inventory",
-        takeIf: "you lead, and you want character measured before competence.",
-        gives: "A leader's honest reading of the inner life that holds the work up.",
-        href: "/leadership/inventory",
       },
     ],
   },
