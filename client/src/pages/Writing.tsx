@@ -757,7 +757,7 @@ export default function Writing() {
                       background: "var(--card)",
                       border: "1px solid var(--border)",
                       borderRadius: "var(--radius-sm)",
-                      padding: "var(--s-4)",
+                      overflow: "hidden",
                       height: "100%",
                       display: "flex",
                       flexDirection: "column",
@@ -771,6 +771,20 @@ export default function Writing() {
                       e.currentTarget.style.borderColor = "var(--border)";
                     }}
                   >
+                    {/* Branded typographic card art — the same generator that
+                        renders every essay's share card, so the archive reads
+                        as a designed library rather than a wall of text. Edge-
+                        cached for a year per title, lazy below the fold. */}
+                    <img
+                      loading="lazy"
+                      decoding="async"
+                      src={`/api/og?title=${encodeURIComponent(post.title)}${post.pillar ? `&pillar=${encodeURIComponent(post.pillar)}` : ""}`}
+                      alt=""
+                      width={1200}
+                      height={630}
+                      style={{ width: "100%", height: "auto", display: "block", borderBottom: "1px solid var(--border)" }}
+                    />
+                    <div style={{ padding: "var(--s-4)", display: "flex", flexDirection: "column", flex: 1 }}>
                     <div style={{ marginBottom: "12px" }}>
                       <TrackChip pillarOrTrack={post.pillar} slug={post.slug} asLink={false} />
                     </div>
@@ -815,6 +829,7 @@ export default function Writing() {
                       {post.format && post.format !== "article" && (
                         <span>{FORMAT_LABELS[post.format] ?? post.format}</span>
                       )}
+                    </div>
                     </div>
                   </article>
                 </Link>
