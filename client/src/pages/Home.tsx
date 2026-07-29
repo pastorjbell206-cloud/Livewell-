@@ -22,6 +22,7 @@ import { TrackChip } from "@/components/TrackChip";
 import { trpc } from "@/lib/trpc";
 import { isFullEssay } from "@/lib/essayQuality";
 import FollowJames from "@/components/FollowJames";
+import AnnouncementBar from "@/components/AnnouncementBar";
 import PersistentHelpTab from "@/components/PersistentHelpTab";
 import {
   META_DESCRIPTION,
@@ -150,6 +151,7 @@ export default function Home() {
 
   return (
     <div>
+      <AnnouncementBar />
       <SEOMeta
         title="LiveWell by James Bell"
         description={META_DESCRIPTION}
