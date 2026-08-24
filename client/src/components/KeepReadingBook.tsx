@@ -282,8 +282,70 @@ function bookFor(post: PostLike): BookRef {
   return BOOKS["babylon"];
 }
 
-export function KeepReadingBook({ post }: { post: PostLike }) {
+export function KeepReadingBook({
+  post,
+  quiet = false,
+}: {
+  post: PostLike;
+  /**
+   * Demote to a compact line. Set when the reader is mid reading path, where
+   * the next essay in that path is the earned next step and the book would
+   * otherwise compete with it.
+   */
+  quiet?: boolean;
+}) {
   const book = bookFor(post);
+
+  if (quiet) {
+    return (
+      <section style={{ background: "var(--bone)", padding: "var(--s-4)" }}>
+        <div
+          style={{
+            maxWidth: "var(--w-content)",
+            margin: "0 auto",
+            display: "flex",
+            gap: "16px",
+            alignItems: "center",
+            flexWrap: "wrap",
+          }}
+        >
+          <img
+            src={book.cover ?? `/books/${book.slug}.svg`}
+            alt=""
+            width={44}
+            height={66}
+            style={{ width: "44px", height: "auto", borderRadius: "2px", flex: "0 0 auto" }}
+          />
+          <p
+            style={{
+              fontFamily: "var(--B)",
+              fontSize: "15px",
+              lineHeight: 1.6,
+              color: "var(--ink-muted)",
+              margin: 0,
+            }}
+          >
+            The argument runs to full length in{" "}
+            <Link
+              href={book.href ?? `/${book.slug}`}
+              onClick={() => trackBookClick(post.slug ?? "", book.slug)}
+              style={{
+                fontFamily: "var(--U)",
+                fontWeight: 600,
+                color: "var(--ink)",
+                textDecoration: "none",
+                borderBottom: "1px solid var(--mustard)",
+              }}
+            >
+              {book.title}
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section style={{ background: "var(--ink)", padding: "var(--s-6) var(--s-4)" }}>
       <div style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "flex", gap: "28px", alignItems: "center", flexWrap: "wrap" }}>

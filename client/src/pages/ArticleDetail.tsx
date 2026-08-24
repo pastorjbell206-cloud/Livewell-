@@ -29,7 +29,7 @@ import { AudienceLabel } from "@/components/AudienceLabel";
 import { TrackChip } from "@/components/TrackChip";
 import { KeepReadingBook } from "@/components/KeepReadingBook";
 import { RelatedEssays } from "@/components/RelatedEssays";
-import ArticleNextSteps from "@/components/ArticleNextSteps";
+import ArticleNextSteps, { isArticleOnPath } from "@/components/ArticleNextSteps";
 import { GeneratedHero } from "@/components/GeneratedHero";
 import { trpc } from "@/lib/trpc";
 import { pillarForPost } from "@/lib/taxonomy";
@@ -895,10 +895,21 @@ export default function ArticleDetail() {
           <>
             {/* NEXT STEPS — the matched tool and reading path for this essay
                 (built long ago, never imported; revived by QW-16) */}
-            <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
-
-            {/* KEEP READING — the book, then another essay */}
-            <KeepReadingBook post={post} />
+            {/* ONE PRIMARY NEXT STEP. A reader at the end of an essay is at
+                peak intent, so exactly one ask leads, chosen by where they
+                are: mid-path, the next essay in that path; otherwise the book
+                that carries the argument. The other demotes to a quiet line. */}
+            {isArticleOnPath(post.slug ?? "") ? (
+              <>
+                <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
+                <KeepReadingBook post={post} quiet />
+              </>
+            ) : (
+              <>
+                <KeepReadingBook post={post} />
+                <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
+              </>
+            )}
             <RelatedEssays post={post} />
 
             {/* NEWSLETTER (single CTA — no fake form) */}
