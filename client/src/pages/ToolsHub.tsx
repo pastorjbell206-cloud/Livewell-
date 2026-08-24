@@ -210,6 +210,16 @@ export const TOOLS = [
   },
 ];
 
+/** Display groups for the hub, ordered by need. Every TOOLS href appears exactly once. */
+export const TOOL_GROUPS = [
+  { title: "Start with an honest reading", tools: TOOLS.filter((t) => ["/diagnostic","/tools/life-audit","/assessments","/tools/emotional-health","/life/assessment"].includes(t.href)) },
+  { title: "Scripture and theology", tools: TOOLS.filter((t) => ["/tools/deep-bible","/tools/bible-study","/resources/context","/theology/passage","/tools/verse-finder","/tools/bible-says","/tools/bible-on","/tools/theology-quiz","/tools/glossary","/tools/test-the-case","/tools/which-lens","/tools/scripture-memory"].includes(t.href)) },
+  { title: "Wisdom for a real situation", tools: TOOLS.filter((t) => ["/wisdom","/tools/wisdom-finder","/tools/proverbs-31","/tools/quotes","/tools/conflict-guide","/tools/prayer-generator"].includes(t.href)) },
+  { title: "Family, marriage, and the household", tools: TOOLS.filter((t) => ["/tools/family-devotions","/tools/marriage-assessment","/tools/parenting-guide","/tools/parenting-verses","/tools/financial-health","/tools/rule-of-life"].includes(t.href)) },
+  { title: "The church and the public square", tools: TOOLS.filter((t) => ["/disruption/consistency","/tools/party-scorecard","/nation/biblical-government","/nation/scorecard","/nation/policy"].includes(t.href)) },
+];
+
+
 export default function ToolsHub() {
   const verses = useFavorites("livewell-saved-verses");
   const prayers = useFavorites("livewell-saved-prayers");
@@ -245,11 +255,17 @@ export default function ToolsHub() {
         </div>
       </section>
 
-      {/* Tools Grid */}
+      {/* Tools, in the order a person actually needs them: an honest reading
+          first, then the Word, then wisdom for the situation, then the
+          household, then the public square. Grouping lives in TOOL_GROUPS. */}
       <section style={{ padding: "60px 32px", background: "var(--paper)" }}>
         <div className="wrap" style={{ maxWidth: "1000px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
-            {TOOLS.map((tool) => {
+          {TOOL_GROUPS.map((group) => (
+            <div key={group.title} style={{ marginBottom: "56px" }}>
+              <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "6px" }}>{group.title}</div>
+              <div style={{ width: "40px", height: "1px", background: "var(--mustard)", marginBottom: "22px" }} />
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
+              {group.tools.map((tool) => {
               const Icon = tool.icon;
               return (
                 <Link
@@ -279,9 +295,10 @@ export default function ToolsHub() {
                   </div>
                 </Link>
               );
-            })}
-          </div>
-
+              })}
+              </div>
+            </div>
+          ))}
           <div style={{ textAlign: "center", marginTop: "32px" }}>
             <Link
               href="/tools/saved"
