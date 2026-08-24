@@ -1,13 +1,24 @@
 /**
- * ArticleNextSteps — contextual next-actions panel rendered at the bottom of
- * every article. Three sections:
+ * ArticleNextSteps — the end-of-essay panel, deliberately holding at most one
+ * prominent ask.
  *
- *   1. Related Tool — a CTA to the most relevant interactive tool based on
- *      the article's pillar/topic.
- *   2. Read Next — the next article in the reading path (or same-pillar
- *      recommendations when the article is not on a path).
- *   3. Start a Path — surfaces the most relevant reading path so a single
- *      article can become an entry point to sustained engagement.
+ * A reader who has just finished three thousand words is at peak intent, and
+ * the old panel spent that intent on nine asks stacked above the book, the
+ * related essays, and the newsletter: an "Argue it yourself" card, a Related
+ * Tool card, a Read Next list, "Start a Path", "Explore More Paths". Four of
+ * them said the same thing in four voices. Nine asks is no ask.
+ *
+ * The lead is now chosen by where the reader actually is:
+ *
+ *   - Mid reading path — the next essay in that path, alone, as the one earned
+ *     next step. The book demotes to a quiet line beneath it.
+ *   - Not on a path — this panel renders only quiet links, ceding the lead to
+ *     KeepReadingBook: the book that carries the essay's argument.
+ *
+ * Everything else survives as a quiet link rather than a card, including the
+ * Test the Case flow, which is genuinely essay-specific but must not compete
+ * with the primary. The matched tool appears only on a real match:
+ * getToolForArticle returns null rather than falling back to a default.
  *
  * All styles are inline, referencing CSS variables from index.css.
  */
@@ -15,8 +26,7 @@
 import { useMemo } from "react";
 import { Link } from "wouter";
 import { READING_PATHS } from "@/data/reading-paths-post-christian";
-import { pillarForPost, PILLARS_V2 } from "@/lib/taxonomy";
-import { trpc } from "@/lib/trpc";
+import { pillarForPost } from "@/lib/taxonomy";
 import { caseForEssay } from "@/data/argumentCases";
 
 // ─── Tool mapping ────────────────────────────────────────────────────
@@ -106,7 +116,15 @@ const PILLAR_TOOL_FALLBACK: Record<string, string> = {
   "living-well-after-christendom": "life-audit",
 };
 
-function getToolForArticle(slug: string, pillarSlug: string | undefined): ToolRec {
+/**
+ * The matched tool for an essay, or null when nothing genuinely matches.
+ * There is deliberately no catch-all default: an unmatched tool at the end of
+ * an essay is a non-sequitur, and a generic CTA costs more than it earns.
+ */
+function getToolForArticle(
+  slug: string,
+  pillarSlug: string | undefined
+): ToolRec | null {
   // 1. Check slug keywords
   for (const rule of SLUG_TOOL_RULES) {
     if (rule.keywords.some((kw) => slug.includes(kw))) {
@@ -117,8 +135,7 @@ function getToolForArticle(slug: string, pillarSlug: string | undefined): ToolRe
   if (pillarSlug && PILLAR_TOOL_FALLBACK[pillarSlug]) {
     return TOOL_MAP[PILLAR_TOOL_FALLBACK[pillarSlug]];
   }
-  // 3. Default
-  return TOOL_MAP["deep-bible"];
+  return null;
 }
 
 // ─── Reading path helpers ────────────────────────────────────────────
@@ -147,6 +164,15 @@ function findPathPositions(articleSlug: string): PathPosition[] {
     });
   }
   return results;
+}
+
+/**
+ * Whether this essay sits inside a reading path. The page uses this to decide
+ * which single ask leads at the end of an essay: mid-path, the next essay in
+ * that path; otherwise, the book that carries the argument.
+ */
+export function isArticleOnPath(articleSlug: string): boolean {
+  return findPathPositions(articleSlug).length > 0;
 }
 
 /** Find the best reading path to suggest based on pillar. */
@@ -203,32 +229,7 @@ const headingStyle: React.CSSProperties = {
   marginBottom: "8px",
 };
 
-const bodyTextStyle: React.CSSProperties = {
-  fontFamily: "var(--B)",
-  fontSize: "15px",
-  lineHeight: 1.7,
-  color: "var(--ink-muted)",
-  marginBottom: "16px",
-};
 
-const ctaButtonStyle: React.CSSProperties = {
-  display: "inline-flex",
-  alignItems: "center",
-  gap: "8px",
-  background: "var(--ink)",
-  color: "var(--bone)",
-  fontFamily: "var(--U)",
-  fontSize: "13px",
-  fontWeight: 600,
-  letterSpacing: "0.04em",
-  padding: "12px 24px",
-  borderRadius: "var(--radius-sm)",
-  border: "none",
-  borderBottom: "2px solid var(--mustard)",
-  textDecoration: "none",
-  cursor: "pointer",
-  transition: "background 0.2s",
-};
 
 const subtleLinkStyle: React.CSSProperties = {
   fontFamily: "var(--U)",
@@ -270,19 +271,54 @@ export default function ArticleNextSteps({
     [isOnPath, pillarSlug]
   );
 
-  // For same-pillar recommendations when not on a path
-  const indexQuery = trpc.posts.listForIndex.useQuery();
-  const samePillarArticles = useMemo(() => {
-    if (isOnPath || !pillar) return [];
-    return (indexQuery.data ?? [])
-      .filter(
-        (p) =>
-          p.slug !== articleSlug &&
-          pillarForPost(p)?.id === pillar.id
-      )
-      .slice(0, 3);
-  }, [indexQuery.data, articleSlug, pillar, isOnPath]);
+  // Off a path, the book that carries this essay's argument leads instead
+  // (KeepReadingBook). This panel drops to quiet links so the two do not
+  // compete at the moment the reader is most ready to act.
+  if (!isOnPath) {
+    if (!suggestedPath && !tool && !argumentCase) return null;
+    return (
+      <section
+        style={{
+          background: "var(--bone-warm)",
+          borderTop: "1px solid var(--border)",
+        }}
+      >
+        <div
+          style={{
+            ...sectionStyle,
+            display: "flex",
+            gap: "var(--s-4)",
+            flexWrap: "wrap",
+          }}
+        >
+          {argumentCase && (
+            <Link
+              href={`/tools/test-the-case?case=${argumentCase.slug}`}
+              style={subtleLinkStyle}
+            >
+              Argue it yourself &rarr;
+            </Link>
+          )}
+          {suggestedPath && (
+            <Link
+              href={`/reading-paths#${suggestedPath.slug}`}
+              style={subtleLinkStyle}
+            >
+              Start the path: {suggestedPath.title} &rarr;
+            </Link>
+          )}
+          {tool && (
+            <Link href={tool.href} style={subtleLinkStyle}>
+              {tool.name} &rarr;
+            </Link>
+          )}
+        </div>
+      </section>
+    );
+  }
 
+  // On a path, the next essay in that path is the one earned next step, so it
+  // carries the section alone.
   return (
     <section
       style={{
@@ -291,240 +327,86 @@ export default function ArticleNextSteps({
       }}
     >
       <div style={sectionStyle}>
-        {/* ── Section 0: the interactive version of this argument ──
-            Only for the essays a Test the Case flow was built from, so the
-            writing and the tool point at each other. */}
-        {argumentCase && (
-          <div style={{ marginBottom: "var(--s-5)" }}>
-            <div style={eyebrowStyle}>Argue it yourself</div>
-            <div style={cardStyle}>
-              <h3 style={headingStyle}>{argumentCase.title}</h3>
-              <p style={bodyTextStyle}>
-                Work this same case one move at a time, raising the objection you actually
-                hold at every step and getting the honest answer, including what it does
-                not prove.
-              </p>
-              <Link href={`/tools/test-the-case?case=${argumentCase.slug}`} style={ctaButtonStyle}>
-                Test the case
-                <span aria-hidden style={{ fontSize: "14px" }}>
-                  &rarr;
-                </span>
-              </Link>
-            </div>
-          </div>
-        )}
-
-        {/* ── Section 1: Related Tool ── */}
-        <div style={{ marginBottom: "var(--s-5)" }}>
-          <div style={eyebrowStyle}>Related Tool</div>
-          <div style={cardStyle}>
-            <h3 style={headingStyle}>{tool.name}</h3>
-            <p style={bodyTextStyle}>{tool.description}</p>
-            <Link href={tool.href} style={ctaButtonStyle}>
-              Open Tool
-              <span aria-hidden style={{ fontSize: "14px" }}>
-                &rarr;
-              </span>
-            </Link>
-          </div>
-        </div>
-
-        {/* ── Section 2: Read Next ── */}
-        <div style={{ marginBottom: "var(--s-5)" }}>
-          <div style={eyebrowStyle}>Read Next</div>
-          {isOnPath ? (
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "16px",
-              }}
-            >
-              {pathPositions.map((pos) => (
-                <div key={pos.pathSlug} style={cardStyle}>
-                  <div
-                    style={{
-                      fontFamily: "var(--U)",
-                      fontSize: "12px",
-                      color: "var(--ink-muted)",
-                      marginBottom: "12px",
-                    }}
-                  >
-                    You are on{" "}
-                    <Link
-                      href={`/reading-paths#${pos.pathSlug}`}
-                      style={{
-                        color: "var(--ink)",
-                        fontWeight: 600,
-                        borderBottom: "1px solid var(--mustard)",
-                        textDecoration: "none",
-                      }}
-                    >
-                      {pos.pathTitle}
-                    </Link>{" "}
-                    &mdash; article {pos.currentIndex + 1} of{" "}
-                    {pos.totalArticles}
-                  </div>
-                  {pos.next ? (
-                    <div>
-                      <div
-                        style={{
-                          fontFamily: "var(--U)",
-                          fontSize: "11px",
-                          fontWeight: 600,
-                          textTransform: "uppercase",
-                          letterSpacing: "0.14em",
-                          color: "var(--mustard-text)",
-                          marginBottom: "6px",
-                        }}
-                      >
-                        Next
-                      </div>
-                      <Link
-                        href={`/writing/${pos.next.slug}`}
-                        style={{
-                          ...headingStyle,
-                          display: "block",
-                          textDecoration: "none",
-                          marginBottom: 0,
-                        }}
-                      >
-                        {pos.next.title}
-                      </Link>
-                    </div>
-                  ) : (
-                    <p
-                      style={{
-                        fontFamily: "var(--B)",
-                        fontSize: "15px",
-                        lineHeight: 1.7,
-                        color: "var(--ink-muted)",
-                        fontStyle: "italic",
-                        margin: 0,
-                      }}
-                    >
-                      You have finished this path. The weight of it stays with
-                      you.
-                    </p>
-                  )}
-                </div>
-              ))}
-            </div>
-          ) : samePillarArticles.length > 0 ? (
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "12px",
-              }}
-            >
-              {samePillarArticles.map((article) => (
-                <Link
-                  key={article.slug}
-                  href={`/writing/${article.slug}`}
-                  style={{
-                    ...cardStyle,
-                    display: "block",
-                    textDecoration: "none",
-                    transition: "border-color 0.2s",
-                  }}
-                >
-                  {pillar && (
-                    <div
-                      style={{
-                        fontFamily: "var(--U)",
-                        fontSize: "10px",
-                        fontWeight: 600,
-                        color: "var(--mustard-text)",
-                        textTransform: "uppercase",
-                        letterSpacing: "0.18em",
-                        marginBottom: "8px",
-                      }}
-                    >
-                      {pillar.short}
-                    </div>
-                  )}
-                  <h3
-                    style={{
-                      ...headingStyle,
-                      marginBottom: 0,
-                    }}
-                  >
-                    {article.title}
-                  </h3>
-                </Link>
-              ))}
-            </div>
-          ) : (
-            <p
-              style={{
-                fontFamily: "var(--B)",
-                fontSize: "15px",
-                color: "var(--ink-muted)",
-                lineHeight: 1.7,
-              }}
-            >
-              More essays in this pillar are coming.
-            </p>
-          )}
-        </div>
-
-        {/* ── Section 3: Start a Path (only if not already on one) ── */}
-        {!isOnPath && suggestedPath && (
-          <div>
-            <div style={eyebrowStyle}>Start a Path</div>
-            <div
-              style={{
-                ...cardStyle,
-                background: "var(--card)",
-                borderLeft: "3px solid var(--mustard)",
-              }}
-            >
-              <h3 style={headingStyle}>{suggestedPath.title}</h3>
-              <p
-                style={{
-                  fontFamily: "var(--B)",
-                  fontSize: "14px",
-                  lineHeight: 1.7,
-                  color: "var(--ink-muted)",
-                  marginBottom: "4px",
-                }}
-              >
-                A {suggestedPath.articles.length}-article guided reading
-                sequence.
-              </p>
-              <p
+        <div style={eyebrowStyle}>Read next</div>
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          {pathPositions.map((pos) => (
+            <div key={pos.pathSlug} style={cardStyle}>
+              <div
                 style={{
                   fontFamily: "var(--U)",
                   fontSize: "12px",
                   color: "var(--ink-muted)",
-                  marginBottom: "16px",
+                  marginBottom: "12px",
                 }}
               >
-                {suggestedPath.estimatedTime}
-              </p>
-              <Link
-                href={`/reading-paths#${suggestedPath.slug}`}
-                style={subtleLinkStyle}
-              >
-                Start from the beginning &rarr;
-              </Link>
+                You are on{" "}
+                <Link
+                  href={`/reading-paths#${pos.pathSlug}`}
+                  style={{
+                    color: "var(--ink)",
+                    fontWeight: 600,
+                    borderBottom: "1px solid var(--mustard)",
+                    textDecoration: "none",
+                  }}
+                >
+                  {pos.pathTitle}
+                </Link>{" "}
+                &mdash; article {pos.currentIndex + 1} of {pos.totalArticles}
+              </div>
+              {pos.next ? (
+                <Link
+                  href={`/writing/${pos.next.slug}`}
+                  style={{
+                    ...headingStyle,
+                    display: "block",
+                    textDecoration: "none",
+                    marginBottom: 0,
+                  }}
+                >
+                  {pos.next.title}
+                </Link>
+              ) : (
+                <p
+                  style={{
+                    fontFamily: "var(--B)",
+                    fontSize: "15px",
+                    lineHeight: 1.7,
+                    color: "var(--ink-muted)",
+                    fontStyle: "italic",
+                    margin: 0,
+                  }}
+                >
+                  You have finished this path. The weight of it stays with you.
+                </p>
+              )}
             </div>
-          </div>
-        )}
-
-        {/* If on a path, suggest exploring other paths */}
-        {isOnPath && (
-          <div>
-            <div style={eyebrowStyle}>Explore More Paths</div>
+          ))}
+        </div>
+        <div
+          style={{
+            marginTop: "var(--s-4)",
+            display: "flex",
+            gap: "var(--s-4)",
+            flexWrap: "wrap",
+          }}
+        >
+          {argumentCase && (
             <Link
-              href="/reading-paths"
+              href={`/tools/test-the-case?case=${argumentCase.slug}`}
               style={subtleLinkStyle}
             >
-              See all {READING_PATHS.length} reading paths &rarr;
+              Argue it yourself &rarr;
             </Link>
-          </div>
-        )}
+          )}
+          <Link href="/reading-paths" style={subtleLinkStyle}>
+            All {READING_PATHS.length} reading paths &rarr;
+          </Link>
+          {tool && (
+            <Link href={tool.href} style={subtleLinkStyle}>
+              {tool.name} &rarr;
+            </Link>
+          )}
+        </div>
       </div>
     </section>
   );
