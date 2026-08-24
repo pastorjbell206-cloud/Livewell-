@@ -15,8 +15,8 @@ const PORTRAIT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED
 const PATHWAYS = [
   { href: "/skeptic-track", label: "If you are not sure you believe any of this", desc: "Start with the track written for skeptics, by someone who used to be one. No tricks, no altar call at the end. Just your questions taken seriously." },
   { href: "/writing", label: "If your faith has outgrown the answers you were given", desc: "Read the essays. They start at the root instead of the symptom, and they leave open the things that should stay open." },
-  { href: "/pastors", label: "If you carry a church", desc: "The pastors section and the Pastors Connection Network exist because the loneliest job in the building is the one standing up front." },
-  { href: "/leadership", label: "If you lead and teach", desc: "A working library on preaching, reading Scripture, and forming leaders. Built to be used, not admired." },
+  { href: "/pastors", label: "If you carry a church", desc: "The Pastors Connection Network exists because the loneliest job in the building is the one standing up front. It lives at its own address now." },
+  { href: "/resources", label: "If you lead and teach", desc: "The libraries and study guides — built to be used, not admired." },
   { href: "/marriage", label: "If your marriage needs more than tips", desc: "Writing on covenant for two people still keeping a promise they are no longer sure they understand." },
   { href: "/parenting", label: "If you are raising children", desc: "Five sons, and none of it theoretical. Formation over performance, and no formulas." },
 ];
@@ -86,7 +86,7 @@ export default function About() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div style={{ width: "40px", height: "2px", background: "var(--mustard)", marginBottom: "2rem" }} />
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "1.75rem", fontWeight: 400, color: "var(--ink)", marginBottom: "1.5rem" }}>The church, the network, and the nationals</h2>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "1.75rem", fontWeight: 400, color: "var(--ink)", marginBottom: "1.5rem" }}>The church, the network, and the ends of the earth</h2>
           <div className="article-body prose-section">
             <p>
               I have pastored First Baptist Church of Fenton, Michigan for twelve years. I put that first not as a line on a resume but because it is the room where everything here gets tested. These essays were not written in a quiet study with the commentaries open and the whole afternoon free. They were written around hospital visits and budget meetings, after funerals, in the days on either side of the counseling appointments where what a person believes about God either holds or it comes apart. Twelve years in that room will take the abstraction out of almost anyone.
@@ -115,8 +115,12 @@ export default function About() {
           <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)", marginBottom: "1.5rem" }}>
             LiveWell is for the person whose faith has grown larger than the answers they were handed as a child. For the pastor who is quietly running on empty. For the husband and wife still keeping a promise they are no longer sure they understand. For the skeptic who keeps reading the words of a faith they have not decided to trust.
           </p>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "1.5rem", fontWeight: 400, color: "var(--ink)", margin: "2.5rem 0 1.25rem" }}>The heart behind it</h2>
+          <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)", marginBottom: "1.5rem" }}>
+            America is not the churched country it used to be, and I do not spend much energy grieving that. The old assumptions are gone. Nobody owes Christianity a hearing anymore, which means the faith has to be commended the old way — argued honestly, lived visibly, offered without pressure. That is the world my sons are inheriting, and the world my church opens its doors into every Sunday, and I would rather meet it plainly than pretend it is 1955.
+          </p>
           <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)", marginBottom: "2rem" }}>
-            What I am after is not a Christianity bent to fit American politics, or the self-help shelf, or whatever the culture happens to be anxious about this year. I am after the older thing underneath all of that — the historic, creedal, kingdom-of-God faith the church has confessed for two thousand years — and I want to put it back in the same room as an ordinary Tuesday afternoon. The depth is not decoration here. Keller's architecture, Brueggemann's prophetic imagination, Peterson's pastoral patience, Bonhoeffer's willingness to name the costly thing — all of it is in service of helping an actual person live.
+            What I want is simple to say and long to do. I want the historic faith — the creed, the cross, the resurrection, the kingdom — held out in ordinary language to people who have every cultural permission to ignore it. Not a Christianity bent to fit American politics, or the self-help shelf, or whatever the culture is anxious about this year, but the older thing underneath: what the church has confessed for two thousand years, put back in the same room as a Tuesday afternoon. I want the skeptic to find the argument honest even if they walk away. I want the tired Christian to find something sturdier than the last twenty years of American church life. And I am trying, unevenly, to be the kind of man who can commend it because it is visibly holding him up — not because it is his product.
           </p>
 
           <h2 style={{ fontFamily: "var(--F)", fontSize: "1.5rem", fontWeight: 400, color: "var(--ink)", marginBottom: "2rem" }}>How the writing works</h2>
@@ -157,7 +161,7 @@ export default function About() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "1.125rem", lineHeight: 1.75, color: "var(--ink)" }}>
-            LiveWell is not therapy, and it is not Christian self-help. It is not a place that hands you something to think so you can stop thinking. It is closer to a writing desk — where a pastor with {SITE_STATS.yearsInMinistry} years of mistakes behind him and five sons in front of him tries to think honestly, out loud, about what it actually means to follow Jesus in a country that has mostly forgotten what his kingdom was ever about.
+            LiveWell is not therapy, and it is not Christian self-help. It is not a place that hands you something to think so you can stop thinking. It is closer to a writing desk — where a pastor with {SITE_STATS.yearsInMinistryWord} years of mistakes behind him and five sons in front of him tries to think honestly, out loud, about what it actually means to follow Jesus in a country that has mostly forgotten what his kingdom was ever about.
           </p>
         </div>
       </section>

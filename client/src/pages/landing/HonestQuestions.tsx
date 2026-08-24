@@ -13,7 +13,7 @@ const ARTICLES = [
   { title: "Why Is the Church So Hypocritical?", href: "/writing/apologetics-hasnt-the-church-done-terrible-things" },
   { title: "Is Hell Real?", href: "/faq/what-do-christians-believe-about-hell" },
   { title: "Can I Doubt and Still Have Faith?", href: "/doubt" },
-  { title: "What About the Violence in the Old Testament?", href: "/skeptic-track" },
+  { title: "Did God Command Genocide?", href: "/writing/did-god-command-genocide" },
   { title: "Does Christianity Oppress Women?", href: "/writing/the-womanhood-they-preached-was-small" },
 ];
 
@@ -24,19 +24,19 @@ const FAQ_ITEMS = [
   },
   {
     question: "Why does God allow suffering?",
-    answer: "This is the hardest question in theology, and anyone who offers a clean answer is not taking it seriously. The Bible does not give a philosophical explanation for suffering. It gives something else -- a God who enters suffering rather than explaining it away. That is not a complete answer. It is the beginning of one."
+    answer: "This is the hardest question in theology, and anyone who offers a clean answer is not taking it seriously. The Bible does not give a philosophical explanation for suffering. It gives something else — a God who enters suffering rather than explaining it away. That is not a complete answer. It is the beginning of one."
   },
   {
     question: "Has science disproved Christianity?",
-    answer: "Science answers how the universe works. Theology asks why it exists at all. The idea that science and faith are at war is a story told by people who need them to be -- on both sides. The actual history of science and Christianity is far more entangled than either fundamentalists or militant atheists want to admit."
+    answer: "Science answers how the universe works. Theology asks why it exists at all. The idea that science and faith are at war is a story told by people who need them to be — on both sides. The actual history of science and Christianity is far more entangled than either fundamentalists or militant atheists want to admit."
   },
   {
     question: "How can you believe the Bible is reliable?",
-    answer: "The Bible is the most scrutinized collection of ancient documents in human history. The manuscript evidence, the archaeological record, and the internal coherence of its claims are worth examining on their own terms -- not dismissed because of what a bad preacher did with them. These essays lay out the evidence and let you decide."
+    answer: "Few collections of ancient documents have been scrutinized harder than the Bible. The manuscript evidence, the archaeological record, and the internal coherence of its claims are worth examining on their own terms — not dismissed because of what a bad preacher did with them. These essays lay out the evidence and let you decide."
   },
   {
     question: "Why are there so many denominations?",
-    answer: "Because Christians disagree. That is either a scandal or a sign that the tradition is big enough to contain serious debate. The real question is not why there are so many denominations, but what the core claims are that hold across all of them -- and whether those claims are true."
+    answer: "Because Christians disagree. That is either a scandal or a sign that the tradition is big enough to contain serious debate. The real question is not why there are so many denominations, but what the core claims are that hold across all of them — and whether those claims are true."
   },
 ];
 
@@ -57,7 +57,7 @@ const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "Honest Questions About Christianity: Essays for Skeptics and Seekers",
-  description: "Ten hard questions about God, the Bible, suffering, and the church -- answered without flinching. Written by a pastor who came to faith from atheism.",
+  description: "Ten hard questions about God, the Bible, suffering, and the church — answered without flinching. Written by a pastor who came to faith from atheism.",
   url: "https://www.livewellbyjamesbell.co/honest-questions",
   author: {
     "@type": "Person",
@@ -78,7 +78,7 @@ export default function HonestQuestions() {
     <Layout>
       <SEOMeta
         title="Honest Questions About Christianity: Essays for Skeptics and Seekers"
-        description="Ten hard questions about God, the Bible, suffering, and the church -- answered without flinching. Written by a pastor who came to faith from atheism."
+        description="Ten hard questions about God, the Bible, suffering, and the church — answered without flinching. Written by a pastor who came to faith from atheism."
         keywords="is God real, why does God allow suffering, is the Bible reliable, questions about Christianity, doubting faith, skeptic, does God exist, hard questions about faith"
         structuredData={[faqSchema, webPageSchema]}
       />

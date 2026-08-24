@@ -31,7 +31,7 @@ const GROUPS: Group[] = [
     eyebrow: "Start here",
     heading: "Where are you, actually?",
     blurb:
-      "Not where you say you are on Sunday. Where you are. These two take an honest reading of the whole picture — one quick, one thorough.",
+      "Not where you say you are on Sunday. Where you are. These take an honest reading of the whole picture — one quick, one thorough, one to hand you a starting place.",
     items: [
       {
         title: "The Diagnostic",
@@ -77,7 +77,7 @@ const GROUPS: Group[] = [
     eyebrow: "For what you believe",
     heading: "The convictions under the surface.",
     blurb:
-      "What you actually believe — and whether you hold it evenly — is measurable. These three are the mirror for the mind.",
+      "What you actually believe — and whether you hold it evenly — is measurable. These are the mirror for the mind.",
     items: [
       {
         title: "The Theology Quiz",
@@ -117,7 +117,7 @@ export default function Assessments() {
     <Layout>
       <SEOMeta
         title="Assessments — Where Are You, Actually?"
-        description="Nine honest instruments in one place: the spiritual check-in, the whole-life map, marriage, burnout, theology, and consistency. A mirror, not a verdict — and the writing to meet what it shows you."
+        description="Every honest instrument on the site in one place: the spiritual check-in, the whole-life map, marriage, the life audit, theology, and consistency. A mirror, not a verdict — and the writing to meet what it shows you."
         url="https://www.livewellbyjamesbell.co/assessments"
         structuredData={assessmentsSchema}
       />

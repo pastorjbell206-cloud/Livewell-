@@ -158,7 +158,7 @@ export default function Marriage() {
                     {path.description}
                   </p>
                   <div style={{ fontSize: "12px", fontWeight: "bold", color: "var(--gold)" }}>
-                    Read the book, free →
+                    Read the essays →
                   </div>
                 </div>
               </Link>
@@ -193,7 +193,7 @@ export default function Marriage() {
       <section style={{ background: "var(--bone)", padding: "80px 20px" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontSize: "32px", fontWeight: "bold", marginBottom: "16px", fontFamily: "var(--F)", color: "var(--ink)" }}>
-            Your marriage can be more than you thought possible.
+            Start with an honest reading of where you are.
           </h2>
           <p style={{ fontSize: "16px", lineHeight: "1.8", marginBottom: "32px", color: "var(--ink3)" }}>
             Start with the Marriage Health Assessment. It takes 10 minutes and will show you exactly where your marriage is strongest and where repair work begins.

@@ -57,7 +57,7 @@ export default function Doubt() {
     {
       title: "Someone I love is questioning their faith",
       description: "For parents, friends, and pastors watching someone you care about walk away. How to stay present without defending.",
-      href: "/writing/parenting-when-your-child-doubts-or-walks-away"
+      href: "/writing/teenager-losing-faith"
     },
     {
       title: "I've never believed but I'm curious",

@@ -16,7 +16,6 @@ const ARTICLES = [
 
 const EXTERNAL_RESOURCES = [
   { name: "GRACE (Godly Response to Abuse in the Christian Environment)", url: "https://www.netgrace.org" },
-  { name: "The Courage Network", url: "https://www.thecouragenetwork.org" },
   { name: "988 Suicide & Crisis Lifeline", url: "https://988lifeline.org" },
   { name: "RAINN (Rape, Abuse & Incest National Network)", url: "https://www.rainn.org" },
 ];
@@ -36,7 +35,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "What is religious trauma?",
-    answer: "Religious trauma is the psychological harm caused by toxic religious environments, teachings, or practices. It can produce symptoms similar to PTSD -- anxiety, shame, difficulty trusting, fear of divine punishment. It is a recognized area of psychological study, and it is more common than most churches are willing to admit."
+    answer: "Religious trauma is the psychological harm caused by toxic religious environments, teachings, or practices. It can produce symptoms similar to PTSD — anxiety, shame, difficulty trusting, fear of divine punishment. It is a recognized area of psychological study, and it is more common than most churches are willing to admit."
   },
 ];
 
@@ -57,7 +56,7 @@ const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "Church Hurt: Resources for Survivors of Spiritual Abuse and Religious Trauma",
-  description: "Honest, trauma-informed writing for anyone who has been hurt by the church. Essays on spiritual abuse, religious trauma, purity culture, and the long road to healing.",
+  description: "Honest writing for anyone the church has hurt — spiritual abuse, religious trauma, purity culture, and the long road back. Essays on spiritual abuse, religious trauma, purity culture, and the long road to healing.",
   url: "https://www.livewellbyjamesbell.co/church-hurt",
   author: {
     "@type": "Person",
@@ -78,7 +77,7 @@ export default function ChurchHurt() {
     <Layout>
       <SEOMeta
         title="Church Hurt: Resources for Survivors of Spiritual Abuse and Religious Trauma"
-        description="Honest, trauma-informed writing for anyone who has been hurt by the church. Essays on spiritual abuse, religious trauma, purity culture, and the long road to healing."
+        description="Honest writing for anyone the church has hurt — spiritual abuse, religious trauma, purity culture, and the long road back. Essays on spiritual abuse, religious trauma, purity culture, and the long road to healing."
         keywords="church hurt, spiritual abuse, religious trauma, toxic church, purity culture, church abuse, healing from church, leaving toxic church, church and mental health"
         structuredData={[faqSchema, webPageSchema]}
       />
@@ -110,7 +109,7 @@ export default function ChurchHurt() {
             The church was supposed to be the safest place. For too many people, it became the most dangerous. Pastors who used their authority as a weapon. Purity culture that taught shame instead of dignity. Congregations that punished honesty and rewarded performance.
           </p>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "var(--ink)", lineHeight: 1.7, maxWidth: "68ch" }}>
-            These essays do not defend the institution. They do not ask you to forgive on someone else's timeline. They name what happened, why it happened, and what healing actually requires. Written by a pastor who believes the church owes more than apologies -- it owes accountability.
+            These essays do not defend the institution. They do not ask you to forgive on someone else's timeline. They name what happened, why it happened, and what healing actually requires. Written by a pastor who believes the church owes more than apologies — it owes accountability.
           </p>
         </div>
       </section>

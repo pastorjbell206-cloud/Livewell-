@@ -68,6 +68,10 @@ export default function Writing() {
   const postsQuery = trpc.posts.listPublished.useQuery();
   const [search, setSearch] = useState("");
   const [showFilters, setShowFilters] = useState(false);
+  // Windowed render: hundreds of cards at once is a scroll of soup and a real
+  // render cost. Start at 24; the button below the grid grows the window, and
+  // any filter change resets it.
+  const [visibleCount, setVisibleCount] = useState(24);
 
   // URL-driven filter state. Reads ?track=, ?audience=, ?format=, ?q=.
   // Re-read on route change during render (the documented "state from
@@ -143,6 +147,9 @@ export default function Writing() {
       return true;
     });
   }, [posts, activeTrack, activePillar, activeSubTheme, activeAudience, activeFormat, effectiveSearch, isNewPillar, newPillarName, activeSub, subLabel, activeSeries]);
+
+
+  useEffect(() => { setVisibleCount(24); }, [activeTrack, activePillar, activeSubTheme, activeAudience, activeFormat, effectiveSearch, activeSub, activeSeries]);
 
   const activePillarInfo = activePillar ? PILLAR_BY_SLUG.get(activePillar) ?? null : null;
 
@@ -348,6 +355,28 @@ export default function Writing() {
                   {st.replace(/-/g, " ")}
                 </Link>
               ))}
+            </div>
+          )}
+
+          {rest.length > visibleCount && (
+            <div style={{ textAlign: "center", marginTop: "var(--s-5)" }}>
+              <button
+                type="button"
+                onClick={() => setVisibleCount(c => c + 48)}
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  color: "var(--ink)",
+                  background: "transparent",
+                  border: "1px solid var(--border)",
+                  borderRadius: "var(--radius-sm)",
+                  padding: "13px 28px",
+                  cursor: "pointer",
+                }}
+              >
+                Show more — {rest.length - visibleCount} remaining
+              </button>
             </div>
           )}
         </div>
@@ -717,7 +746,7 @@ export default function Writing() {
                 gap: "24px",
               }}
             >
-              {rest.map(post => (
+              {rest.slice(0, visibleCount).map(post => (
                 <Link
                   key={post.id}
                   href={`/writing/${post.slug}`}
@@ -728,7 +757,7 @@ export default function Writing() {
                       background: "var(--card)",
                       border: "1px solid var(--border)",
                       borderRadius: "var(--radius-sm)",
-                      padding: "var(--s-4)",
+                      overflow: "hidden",
                       height: "100%",
                       display: "flex",
                       flexDirection: "column",
@@ -742,6 +771,20 @@ export default function Writing() {
                       e.currentTarget.style.borderColor = "var(--border)";
                     }}
                   >
+                    {/* Branded typographic card art — the same generator that
+                        renders every essay's share card, so the archive reads
+                        as a designed library rather than a wall of text. Edge-
+                        cached for a year per title, lazy below the fold. */}
+                    <img
+                      loading="lazy"
+                      decoding="async"
+                      src={`/api/og?title=${encodeURIComponent(post.title)}${post.pillar ? `&pillar=${encodeURIComponent(post.pillar)}` : ""}`}
+                      alt=""
+                      width={1200}
+                      height={630}
+                      style={{ width: "100%", height: "auto", display: "block", borderBottom: "1px solid var(--border)" }}
+                    />
+                    <div style={{ padding: "var(--s-4)", display: "flex", flexDirection: "column", flex: 1 }}>
                     <div style={{ marginBottom: "12px" }}>
                       <TrackChip pillarOrTrack={post.pillar} slug={post.slug} asLink={false} />
                     </div>
@@ -786,6 +829,7 @@ export default function Writing() {
                       {post.format && post.format !== "article" && (
                         <span>{FORMAT_LABELS[post.format] ?? post.format}</span>
                       )}
+                    </div>
                     </div>
                   </article>
                 </Link>

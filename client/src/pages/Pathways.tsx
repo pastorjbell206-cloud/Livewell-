@@ -1,6 +1,6 @@
 /**
  * Topic Pathways index (/pathways). For each major topic, a guided route:
- * read a few essays, do the study, then read the book free. This page gathers
+ * read a few essays, do the study, then finish in the book — the opening free. This page gathers
  * the routes; each pathway's ordered steps live in client/public/pathways/
  * <slug>.json and render on /pathways/:slug (TopicPathway).
  *
@@ -70,7 +70,7 @@ export default function Pathways() {
     <Layout>
       <SEOMeta
         title="Topic Pathways — A Guided Route Through Each Major Topic"
-        description="For each major topic, a guided route: read a few essays, do the study, then read the book free. The deep library, turned into a spine you can follow start to end."
+        description="For each major topic, a guided route: read a few essays, do the study, then finish in the book — the opening free. The deep library, turned into a spine you can follow start to end."
         url="https://www.livewellbyjamesbell.co/pathways"
       />
 
@@ -82,7 +82,7 @@ export default function Pathways() {
             Start somewhere. Follow it through.
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch" }}>
-            The library is deep and it is wide, which is another way of saying it is easy to get lost in. A pathway is the way through one subject: a few essays to read first, a study to work, and a book to finish — free to read, in order, start to end.
+            The library is deep and it is wide, which is another way of saying it is easy to get lost in. A pathway is the way through one subject: a few essays to read first, a study to work, and a book to finish — in order, start to end. The opening of every book is free.
           </p>
         </div>
       </section>

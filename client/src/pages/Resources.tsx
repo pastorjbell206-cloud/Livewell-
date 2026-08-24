@@ -33,7 +33,7 @@ const LIBRARIES = [
     href: "/studyguides",
     eyebrow: "For group leaders",
     title: "Study Guides",
-    desc: "Run a class on Sunday with zero prep: a leader's guide with timing and the answer behind every question, a participant handout, a facilitator script, and printable PDFs delivered free by email. The whole collection in one place.",
+    desc: "Run a class on Sunday without a week of prep: a leader's guide with timing and the answer behind every question, a participant handout, a facilitator script, and free printable PDFs. The whole collection in one place.",
   },
   {
     href: "/resources/creeds",
@@ -107,7 +107,7 @@ export default function Resources() {
     <Layout>
       <SEOMeta
         title="Resources — Study Guides, Libraries, and Ministry Tools"
-        description="Free resources for disciples, pastors, and leaders: the Reading Scripture in Context library, leadership and sermon series, family devotions, and downloads."
+        description="Free resources for disciples, pastors, and leaders: the Reading Scripture in Context library, study guides, creeds and confessions, family devotions, and downloads."
         url="https://www.livewellbyjamesbell.co/resources"
       />
 
