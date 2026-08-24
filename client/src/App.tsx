@@ -94,7 +94,6 @@ const CaptureByTheRight = lazy(() => import("./pages/pillars/CaptureByTheRight")
 const CaptureByTheLeft = lazy(() => import("./pages/pillars/CaptureByTheLeft"));
 const ReadingScripturePastOurPolitics = lazy(() => import("./pages/pillars/ReadingScripturePastOurPolitics"));
 const AfterChristendomPillar = lazy(() => import("./pages/pillars/AfterChristendomPillar"));
-const ForPastors = lazy(() => import("./pages/ForPastors"));
 const Membership = lazy(() => import("./pages/Membership"));
 const MembershipSuccess = lazy(() => import("./pages/MembershipSuccess"));
 const Wisdom = lazy(() => import("./pages/Wisdom"));
@@ -171,10 +170,8 @@ const Proverbs31 = lazy(() => import("./pages/tools/Proverbs31"));
 const BibleReference = lazy(() => import("./pages/tools/BibleReference"));
 const ToolsGlossary = lazy(() => import("./pages/tools/TheologyGlossary"));
 const QuoteLibrary = lazy(() => import("./pages/tools/QuoteLibrary"));
-const PostChristianSermonSeries = lazy(() => import("./pages/SermonSeries"));
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const WorkWithJames = lazy(() => import("./pages/WorkWithJames"));
-const PastoralBurnout = lazy(() => import("./pages/landing/PastoralBurnout"));
 const FaithCrisis = lazy(() => import("./pages/landing/FaithCrisis"));
 const MarriageCrisis = lazy(() => import("./pages/landing/MarriageCrisis"));
 const GriefLanding = lazy(() => import("./pages/landing/Grief"));
@@ -463,7 +460,7 @@ function Router() {
         <Route path="/capture-by-the-left" component={CaptureByTheLeft} />
         <Route path="/reading-scripture-past-our-politics" component={ReadingScripturePastOurPolitics} />
         <Route path="/after-christendom" component={AfterChristendomPillar} />
-        <Route path="/for-pastors" component={ForPastors} />
+        <Route path="/for-pastors" component={PastorsMovedRedirect} />
         <Route path="/membership" component={Membership} />
         <Route path="/membership/success" component={MembershipSuccess} />
         <Route path="/wisdom" component={Wisdom} />
@@ -520,7 +517,7 @@ function Router() {
         <Route path="/what-belongs-to-the-poor/thank-you" component={WhatBelongsToThePoorThankYou} />
         <Route path="/rule-of-life/thank-you" component={RuleOfLifeThankYou} />
         <Route path="/why-not-what/thank-you" component={WhyNotWhatThankYou} />
-        <Route path="/sermon-series" component={PostChristianSermonSeries} />
+        <Route path="/sermon-series" component={PastorsMovedRedirect} />
         <Route path="/sermon-on-the-mount-as-politics/thank-you" component={SermonOnTheMountAsPoliticsThankYou} />
         <Route path="/prophetic-justice-101/thank-you" component={PropheticJustice101ThankYou} />
         <Route path="/marriage-in-ministry/thank-you" component={MarriageInMinistryThankYou} />
@@ -573,7 +570,7 @@ function Router() {
         <Route path="/privacy" component={Privacy} />
         <Route path="/accessibility" component={Accessibility} />
         <Route path="/terms" component={Terms} />
-        <Route path="/pastoral-burnout" component={PastoralBurnout} />
+        <Route path="/pastoral-burnout" component={PastorsMovedRedirect} />
         <Route path="/faith-crisis" component={FaithCrisis} />
         <Route path="/marriage-crisis" component={MarriageCrisis} />
         <Route path="/grief" component={GriefLanding} />

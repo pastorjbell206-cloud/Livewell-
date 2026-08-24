@@ -805,6 +805,21 @@
             "permanent": true
         },
         {
+            "source": "/for-pastors",
+            "destination": "https://pastorsconnectionnetwork.com",
+            "permanent": true
+        },
+        {
+            "source": "/sermon-series",
+            "destination": "https://pastorsconnectionnetwork.com",
+            "permanent": true
+        },
+        {
+            "source": "/pastoral-burnout",
+            "destination": "https://pastorsconnectionnetwork.com",
+            "permanent": true
+        },
+        {
             "source": "/the-pastoral-angle",
             "destination": "https://pastorsconnectionnetwork.com",
             "permanent": true
