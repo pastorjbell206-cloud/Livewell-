@@ -21,8 +21,8 @@ const TIER_2_ARTICLES = [
   { title: "The Catholic Intellectual Tradition", href: "/theology/history/the-medieval-west" },
   { title: "The Orthodox Way", href: "/theology/history/the-church-that-outlived-rome" },
   { title: "The Mainline Protestant Collapse", href: "/writing/the-numbers-behind-the-decline" },
-  { title: "The Evangelical Movement", href: "/theology/history/the-awakenings" },
-  { title: "The Pentecostal Explosion", href: "/theology/history/the-global-church" },
+  { title: "The Missionary Century", href: "/theology/history/the-missionary-century" },
+  { title: "The Attractional Era", href: "/theology/history/the-attractional-era" },
   { title: "The Black Church Tradition", href: "/writing/black-church-prophetic-justice" },
   { title: "Christianity in the Global South", href: "/theology/history/the-global-church" },
 ];
