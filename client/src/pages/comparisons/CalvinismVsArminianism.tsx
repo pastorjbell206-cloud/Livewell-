@@ -59,7 +59,7 @@ const SHARED_GROUND = [
 const RELATED_ARTICLES = [
   { title: "The Reformation and Its Consequences", href: "/theology/history/the-reformation" },
   { title: "The Age of Revivals", href: "/theology/history/the-awakenings" },
-  { title: "The Evangelical Movement", href: "/theology/history/the-awakenings" },
+  { title: "The Missionary Century", href: "/theology/history/the-missionary-century" },
   { title: "The Enlightenment and the Crisis of Authority", href: "/writing/authority-we-traded-for-authenticity" },
 ];
 
