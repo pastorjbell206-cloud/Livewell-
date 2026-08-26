@@ -8,10 +8,10 @@
       "pillar": "Prophetic Justice",
       "words": 47,
       "id": "stub:when-god-bless-america-replaces-thy-kingdom-come",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:the-monster-in-the-mirror": {
       "kind": "stub",
@@ -20,10 +20,10 @@
       "pillar": "Faith & Theology",
       "words": 59,
       "id": "stub:the-monster-in-the-mirror",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:not-persecuted-seduced-crisis-american-christianity": {
       "kind": "stub",
@@ -32,10 +32,10 @@
       "pillar": "Prophetic Disruption",
       "words": 168,
       "id": "stub:not-persecuted-seduced-crisis-american-christianity",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:you-are-not-the-exception": {
       "kind": "stub",
@@ -44,10 +44,10 @@
       "pillar": "Faith & Theology",
       "words": 123,
       "id": "stub:you-are-not-the-exception",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:the-theology-of-time": {
       "kind": "essay",
@@ -68,10 +68,10 @@
       "pillar": "Living Well",
       "words": 30,
       "id": "stub:why-pastors-quit-and-how-to-stay",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:hidden-pain-successful-pastor": {
       "kind": "stub",
@@ -80,10 +80,10 @@
       "pillar": "Pastoral Ministry",
       "words": 22,
       "id": "stub:hidden-pain-successful-pastor",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:church-needs-you-healthy-not-busy": {
       "kind": "stub",
@@ -92,10 +92,10 @@
       "pillar": "Pastoral Ministry",
       "words": 28,
       "id": "stub:church-needs-you-healthy-not-busy",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:stop-performing-start-pastoring": {
       "kind": "stub",
@@ -104,10 +104,10 @@
       "pillar": "Living Well",
       "words": 27,
       "id": "stub:stop-performing-start-pastoring",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:personal-board-accountability": {
       "kind": "stub",
@@ -116,10 +116,10 @@
       "pillar": "Living Well",
       "words": 30,
       "id": "stub:personal-board-accountability",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:five-biggest-mistakes-new-pastors": {
       "kind": "stub",
@@ -128,10 +128,10 @@
       "pillar": "Pastoral Ministry",
       "words": 31,
       "id": "stub:five-biggest-mistakes-new-pastors",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:lead-through-church-crisis": {
       "kind": "stub",
@@ -140,10 +140,10 @@
       "pillar": "Living Well",
       "words": 34,
       "id": "stub:lead-through-church-crisis",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:art-of-saying-no-without-guilt": {
       "kind": "stub",
@@ -152,10 +152,10 @@
       "pillar": "Theological Depth",
       "words": 23,
       "id": "stub:art-of-saying-no-without-guilt",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:culture-discipleship-not-attendance": {
       "kind": "essay",
@@ -188,10 +188,10 @@
       "pillar": "Pastoral Ministry",
       "words": 23,
       "id": "stub:stopped-competing-church-across-town",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:slow-burn-ministry-exhaustion": {
       "kind": "stub",
@@ -200,10 +200,10 @@
       "pillar": "Pastoral Ministry",
       "words": 29,
       "id": "stub:slow-burn-ministry-exhaustion",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:sabbatical-why-church-should-require": {
       "kind": "stub",
@@ -212,10 +212,10 @@
       "pillar": "Leadership Formation",
       "words": 28,
       "id": "stub:sabbatical-why-church-should-require",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:return-ministry-after-burnout": {
       "kind": "essay",
@@ -236,10 +236,10 @@
       "pillar": "Leadership Formation",
       "words": 28,
       "id": "stub:difference-tired-and-done",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:when-man-pulpit-falling-apart": {
       "kind": "stub",
@@ -248,10 +248,10 @@
       "pillar": "Living Well",
       "words": 25,
       "id": "stub:when-man-pulpit-falling-apart",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:spouse-wishes-knew-parsonage": {
       "kind": "stub",
@@ -260,10 +260,10 @@
       "pillar": "Living Well",
       "words": 26,
       "id": "stub:spouse-wishes-knew-parsonage",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:protecting-marriage-ministry-demands": {
       "kind": "stub",
@@ -272,10 +272,10 @@
       "pillar": "Living Well",
       "words": 27,
       "id": "stub:protecting-marriage-ministry-demands",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:pastors-kids-watching-what-seeing": {
       "kind": "stub",
@@ -284,10 +284,10 @@
       "pillar": "Living Well",
       "words": 30,
       "id": "stub:pastors-kids-watching-what-seeing",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:present-at-home-mind-never-leaves": {
       "kind": "stub",
@@ -296,10 +296,10 @@
       "pillar": "Living Well",
       "words": 23,
       "id": "stub:present-at-home-mind-never-leaves",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:okay-to-see-counselor": {
       "kind": "stub",
@@ -308,10 +308,10 @@
       "pillar": "Pastoral Ministry",
       "words": 27,
       "id": "stub:okay-to-see-counselor",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:pastors-depression-not-faith-problem": {
       "kind": "essay",
@@ -332,10 +332,10 @@
       "pillar": "Pastoral Ministry",
       "words": 25,
       "id": "stub:anxiety-perfectionism-pastor-breaking-cycle",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:not-your-churchs-attendance-numbers": {
       "kind": "stub",
@@ -344,10 +344,10 @@
       "pillar": "Pastoral Ministry",
       "words": 24,
       "id": "stub:not-your-churchs-attendance-numbers",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:preach-same-gospel-different-people": {
       "kind": "stub",
@@ -356,10 +356,10 @@
       "pillar": "Theological Depth",
       "words": 26,
       "id": "stub:preach-same-gospel-different-people",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:when-preaching-gets-stale": {
       "kind": "stub",
@@ -368,10 +368,10 @@
       "pillar": "Living Well",
       "words": 31,
       "id": "stub:when-preaching-gets-stale",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:five-sermon-habits-shrinking-faith": {
       "kind": "stub",
@@ -380,10 +380,10 @@
       "pillar": "Pastoral Ministry",
       "words": 26,
       "id": "stub:five-sermon-habits-shrinking-faith",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:preaching-to-room-not-there-yet": {
       "kind": "stub",
@@ -392,10 +392,10 @@
       "pillar": "Pastoral Ministry",
       "words": 27,
       "id": "stub:preaching-to-room-not-there-yet",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:eighty-percent-churches-plateaued": {
       "kind": "stub",
@@ -404,10 +404,10 @@
       "pillar": "Leadership Formation",
       "words": 26,
       "id": "stub:eighty-percent-churches-plateaued",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:small-churches-get-right": {
       "kind": "essay",
@@ -428,10 +428,10 @@
       "pillar": "Pastoral Ministry",
       "words": 22,
       "id": "stub:metrics-tell-church-healthy",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:revitalize-or-replant": {
       "kind": "stub",
@@ -440,10 +440,10 @@
       "pillar": "Leadership Formation",
       "words": 26,
       "id": "stub:revitalize-or-replant",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:lead-church-decline-without-losing-hope": {
       "kind": "stub",
@@ -452,10 +452,10 @@
       "pillar": "Living Well",
       "words": 24,
       "id": "stub:lead-church-decline-without-losing-hope",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:give-feedback-changes-behavior": {
       "kind": "stub",
@@ -464,10 +464,10 @@
       "pillar": "Leadership Formation",
       "words": 27,
       "id": "stub:give-feedback-changes-behavior",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:most-dangerous-person-church-staff": {
       "kind": "stub",
@@ -476,10 +476,10 @@
       "pillar": "Living Well",
       "words": 24,
       "id": "stub:most-dangerous-person-church-staff",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:when-fire-someone-with-integrity": {
       "kind": "stub",
@@ -488,10 +488,10 @@
       "pillar": "Pastoral Ministry",
       "words": 29,
       "id": "stub:when-fire-someone-with-integrity",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:staff-culture-no-burnout": {
       "kind": "stub",
@@ -500,10 +500,10 @@
       "pillar": "Pastoral Ministry",
       "words": 24,
       "id": "stub:staff-culture-no-burnout",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:gen-z-wants-from-church": {
       "kind": "essay",
@@ -524,10 +524,10 @@
       "pillar": "Leadership Formation",
       "words": 27,
       "id": "stub:young-adults-coming-back-church",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:scandals-teaching-accountability": {
       "kind": "stub",
@@ -536,10 +536,10 @@
       "pillar": "Leadership Formation",
       "words": 24,
       "id": "stub:scandals-teaching-accountability",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:talk-politics-pulpit-without-destroying": {
       "kind": "stub",
@@ -548,10 +548,10 @@
       "pillar": "Leadership Formation",
       "words": 26,
       "id": "stub:talk-politics-pulpit-without-destroying",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:church-split-surviving-learning-forward": {
       "kind": "stub",
@@ -560,10 +560,10 @@
       "pillar": "Leadership Formation",
       "words": 23,
       "id": "stub:church-split-surviving-learning-forward",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:reformed-charismatic-pastors-same-table": {
       "kind": "essay",
@@ -584,10 +584,10 @@
       "pillar": "Leadership Formation",
       "words": 28,
       "id": "stub:city-wide-church-together",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:healthy-pastor-referral-network": {
       "kind": "stub",
@@ -596,10 +596,10 @@
       "pillar": "Pastoral Ministry",
       "words": 22,
       "id": "stub:healthy-pastor-referral-network",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:three-small-churches-coplanted": {
       "kind": "stub",
@@ -608,10 +608,10 @@
       "pillar": "Pastoral Ministry",
       "words": 23,
       "id": "stub:three-small-churches-coplanted",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:before-launch-ministry-ask-other-church": {
       "kind": "stub",
@@ -620,10 +620,10 @@
       "pillar": "Pastoral Ministry",
       "words": 21,
       "id": "stub:before-launch-ministry-ask-other-church",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:white-churches-wrong-about-diversity": {
       "kind": "stub",
@@ -632,10 +632,10 @@
       "pillar": "Pastoral Ministry",
       "words": 24,
       "id": "stub:white-churches-wrong-about-diversity",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:learned-unity-pastoring-across-cultures": {
       "kind": "stub",
@@ -644,10 +644,10 @@
       "pillar": "Living Well",
       "words": 20,
       "id": "stub:learned-unity-pastoring-across-cultures",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:church-closures-outpacing-plants": {
       "kind": "stub",
@@ -656,10 +656,10 @@
       "pillar": "Pastoral Ministry",
       "words": 23,
       "id": "stub:church-closures-outpacing-plants",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:talk-global-missions-moves-congregation": {
       "kind": "stub",
@@ -668,10 +668,10 @@
       "pillar": "Pastoral Ministry",
       "words": 25,
       "id": "stub:talk-global-missions-moves-congregation",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:short-term-mission-trips-help-hurt": {
       "kind": "essay",
@@ -692,10 +692,10 @@
       "pillar": "Leadership Formation",
       "words": 21,
       "id": "stub:unreached-people-groups-closest-to-you",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:national-pastors-redefining-missionary": {
       "kind": "stub",
@@ -704,10 +704,10 @@
       "pillar": "Pastoral Ministry",
       "words": 24,
       "id": "stub:national-pastors-redefining-missionary",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:global-south-church-teach-suffering": {
       "kind": "essay",
@@ -728,10 +728,10 @@
       "pillar": "Leadership Formation",
       "words": 27,
       "id": "stub:mission-sending-culture-never-sent",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:pastor-politically-divided-gospel-central": {
       "kind": "stub",
@@ -740,10 +740,10 @@
       "pillar": "Pastoral Ministry",
       "words": 25,
       "id": "stub:pastor-politically-divided-gospel-central",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:engaging-nones-religiously-unaffiliated": {
       "kind": "essay",
@@ -776,10 +776,10 @@
       "pillar": "Prophetic Justice",
       "words": 23,
       "id": "stub:church-political-brand-step-back",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:lead-when-trust-institutions-low": {
       "kind": "stub",
@@ -788,10 +788,10 @@
       "pillar": "Faith & Theology",
       "words": 24,
       "id": "stub:lead-when-trust-institutions-low",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:17-mobilizing-your-church-for-world-missions-without-a-big-budget": {
       "kind": "essay",
@@ -836,10 +836,10 @@
       "pillar": "Prophetic Justice",
       "words": 45,
       "id": "stub:complicity-not-innocence",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:poor-not-ministry-category": {
       "kind": "essay",
@@ -872,10 +872,10 @@
       "pillar": "Theological Depth",
       "words": 37,
       "id": "stub:widow-orphan-stranger",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:mishpat-tsedaqah": {
       "kind": "stub",
@@ -884,10 +884,10 @@
       "pillar": "Prophetic Justice",
       "words": 36,
       "id": "stub:mishpat-tsedaqah",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:micah-6-8-demands": {
       "kind": "stub",
@@ -896,10 +896,10 @@
       "pillar": "Prophetic Justice",
       "words": 44,
       "id": "stub:micah-6-8-demands",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:church-credibility-problem": {
       "kind": "stub",
@@ -908,10 +908,10 @@
       "pillar": "Prophetic Justice",
       "words": 45,
       "id": "stub:church-credibility-problem",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:racial-reconciliation-without-repentance": {
       "kind": "essay",
@@ -932,10 +932,10 @@
       "pillar": "Prophetic Justice",
       "words": 46,
       "id": "stub:prophetic-tradition-economic-justice",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:what-jubilee-means": {
       "kind": "stub",
@@ -944,10 +944,10 @@
       "pillar": "Prophetic Justice",
       "words": 51,
       "id": "stub:what-jubilee-means",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:stranger-at-gate": {
       "kind": "stub",
@@ -956,10 +956,10 @@
       "pillar": "Theological Depth",
       "words": 38,
       "id": "stub:stranger-at-gate",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:individual-sin-systemic-sin-2": {
       "kind": "essay",
@@ -980,10 +980,10 @@
       "pillar": "Living Well",
       "words": 40,
       "id": "stub:why-poverty-political",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:church-wealth-world-poverty": {
       "kind": "stub",
@@ -992,10 +992,10 @@
       "pillar": "Prophetic Justice",
       "words": 39,
       "id": "stub:church-wealth-world-poverty",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:payday-lending-christians": {
       "kind": "essay",
@@ -1028,10 +1028,10 @@
       "pillar": "Living Well",
       "words": 42,
       "id": "stub:imago-dei-means-more",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:good-samaritan-arguing": {
       "kind": "stub",
@@ -1040,10 +1040,10 @@
       "pillar": "Prophetic Justice",
       "words": 42,
       "id": "stub:good-samaritan-arguing",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:solidarity-theological-virtue": {
       "kind": "stub",
@@ -1052,10 +1052,10 @@
       "pillar": "Prophetic Justice",
       "words": 42,
       "id": "stub:solidarity-theological-virtue",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:most-prophetic-live-differently": {
       "kind": "stub",
@@ -1064,10 +1064,10 @@
       "pillar": "Living Well",
       "words": 44,
       "id": "stub:most-prophetic-live-differently",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:children-poverty-prophetic-indictment": {
       "kind": "stub",
@@ -1076,10 +1076,10 @@
       "pillar": "Living Well",
       "words": 38,
       "id": "stub:children-poverty-prophetic-indictment",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:symptoms-without-causes-charity": {
       "kind": "essay",
@@ -1100,10 +1100,10 @@
       "pillar": "Living Well",
       "words": 46,
       "id": "stub:church-mental-health-justice",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:church-megaproject-widows-mite": {
       "kind": "stub",
@@ -1112,10 +1112,10 @@
       "pillar": "Living Well",
       "words": 42,
       "id": "stub:church-megaproject-widows-mite",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:white-churches-diversity": {
       "kind": "essay",
@@ -1136,10 +1136,10 @@
       "pillar": "Prophetic Justice",
       "words": 39,
       "id": "stub:reaching-rich-comfortable",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:theology-of-repair": {
       "kind": "stub",
@@ -1148,10 +1148,10 @@
       "pillar": "Prophetic Justice",
       "words": 39,
       "id": "stub:theology-of-repair",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:hospitality-not-optional": {
       "kind": "stub",
@@ -1160,10 +1160,10 @@
       "pillar": "Prophetic Justice",
       "words": 40,
       "id": "stub:hospitality-not-optional",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:disability-justice-theological": {
       "kind": "essay",
@@ -1184,10 +1184,10 @@
       "pillar": "Prophetic Justice",
       "words": 43,
       "id": "stub:earth-is-lords",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:ruth-gleaning-laws": {
       "kind": "stub",
@@ -1196,10 +1196,10 @@
       "pillar": "Prophetic Justice",
       "words": 38,
       "id": "stub:ruth-gleaning-laws",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:church-comfort-inequality": {
       "kind": "stub",
@@ -1208,10 +1208,10 @@
       "pillar": "Prophetic Justice",
       "words": 31,
       "id": "stub:church-comfort-inequality",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:prophetic-pastor": {
       "kind": "stub",
@@ -1220,10 +1220,10 @@
       "pillar": "Prophetic Justice",
       "words": 44,
       "id": "stub:prophetic-pastor",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:justice-without-love-ideology": {
       "kind": "stub",
@@ -1232,10 +1232,10 @@
       "pillar": "Prophetic Justice",
       "words": 29,
       "id": "stub:justice-without-love-ideology",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:beatitudes-actually-promising": {
       "kind": "stub",
@@ -1244,10 +1244,10 @@
       "pillar": "Prophetic Justice",
       "words": 36,
       "id": "stub:beatitudes-actually-promising",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:black-church-prophetic-justice": {
       "kind": "essay",
@@ -1268,10 +1268,10 @@
       "pillar": "Prophetic Justice",
       "words": 42,
       "id": "stub:color-blindness-not-virtue",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:vulnerable-people-not-in-pews": {
       "kind": "stub",
@@ -1280,10 +1280,10 @@
       "pillar": "Prophetic Justice",
       "words": 43,
       "id": "stub:vulnerable-people-not-in-pews",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:prophets-expelled-sanctuary": {
       "kind": "stub",
@@ -1292,10 +1292,10 @@
       "pillar": "Prophetic Justice",
       "words": 39,
       "id": "stub:prophets-expelled-sanctuary",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:exodus-demands-church-today": {
       "kind": "stub",
@@ -1304,10 +1304,10 @@
       "pillar": "Prophetic Justice",
       "words": 39,
       "id": "stub:exodus-demands-church-today",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:sabbath-is-resistance": {
       "kind": "stub",
@@ -1316,10 +1316,10 @@
       "pillar": "Prophetic Justice",
       "words": 46,
       "id": "stub:sabbath-is-resistance",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:pastoral-care-wealthy-congregant": {
       "kind": "stub",
@@ -1328,10 +1328,10 @@
       "pillar": "Prophetic Justice",
       "words": 45,
       "id": "stub:pastoral-care-wealthy-congregant",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:church-response-poverty-charity": {
       "kind": "stub",
@@ -1340,10 +1340,10 @@
       "pillar": "Prophetic Justice",
       "words": 39,
       "id": "stub:church-response-poverty-charity",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:leviticus-19-border-crisis": {
       "kind": "essay",
@@ -1376,10 +1376,10 @@
       "pillar": "Prophetic Justice",
       "words": 34,
       "id": "stub:church-must-speak-housing",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:what-we-owe-generations": {
       "kind": "stub",
@@ -1388,10 +1388,10 @@
       "pillar": "Living Well",
       "words": 40,
       "id": "stub:what-we-owe-generations",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:the-long-arc": {
       "kind": "stub",
@@ -1400,10 +1400,10 @@
       "pillar": "Prophetic Justice",
       "words": 43,
       "id": "stub:the-long-arc",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:greek-original-language-matters": {
       "kind": "stub",
@@ -1412,10 +1412,10 @@
       "pillar": "Theological Depth",
       "words": 44,
       "id": "stub:greek-original-language-matters",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:church-fathers-not-boring": {
       "kind": "stub",
@@ -1424,10 +1424,10 @@
       "pillar": "Theological Depth",
       "words": 51,
       "id": "stub:church-fathers-not-boring",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:reformation-actually-about": {
       "kind": "essay",
@@ -1448,10 +1448,10 @@
       "pillar": "Theological Depth",
       "words": 63,
       "id": "stub:atonement-more-than-one-model",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:kingdom-of-god-not-what-you-think": {
       "kind": "stub",
@@ -1460,10 +1460,10 @@
       "pillar": "Theological Depth",
       "words": 41,
       "id": "stub:kingdom-of-god-not-what-you-think",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:psalms-as-prayer-not-poetry": {
       "kind": "stub",
@@ -1472,10 +1472,10 @@
       "pillar": "Faith & Theology",
       "words": 40,
       "id": "stub:psalms-as-prayer-not-poetry",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:holy-spirit-not-feeling": {
       "kind": "stub",
@@ -1484,10 +1484,10 @@
       "pillar": "Theological Depth",
       "words": 46,
       "id": "stub:holy-spirit-not-feeling",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:sin-not-just-what-you-do": {
       "kind": "stub",
@@ -1496,10 +1496,10 @@
       "pillar": "Theological Depth",
       "words": 35,
       "id": "stub:sin-not-just-what-you-do",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:eschatology-matters-end-shapes-now": {
       "kind": "stub",
@@ -1508,10 +1508,10 @@
       "pillar": "Faith & Theology",
       "words": 44,
       "id": "stub:eschatology-matters-end-shapes-now",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:incarnation-changes-everything": {
       "kind": "stub",
@@ -1520,10 +1520,10 @@
       "pillar": "Theological Depth",
       "words": 48,
       "id": "stub:incarnation-changes-everything",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:when-shepherd-needs-shepherding": {
       "kind": "stub",
@@ -1532,10 +1532,10 @@
       "pillar": "Pastoral Ministry",
       "words": 53,
       "id": "stub:when-shepherd-needs-shepherding",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:burnout-nobody-talks-about": {
       "kind": "stub",
@@ -1544,10 +1544,10 @@
       "pillar": "Living Well",
       "words": 48,
       "id": "stub:burnout-nobody-talks-about",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:sabbath-isnt-optional": {
       "kind": "stub",
@@ -1556,10 +1556,10 @@
       "pillar": "Living Well",
       "words": 45,
       "id": "stub:sabbath-isnt-optional",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:your-marriage-is-ministry-too": {
       "kind": "stub",
@@ -1568,10 +1568,10 @@
       "pillar": "Living Well",
       "words": 44,
       "id": "stub:your-marriage-is-ministry-too",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:weight-of-what-you-cant-say": {
       "kind": "stub",
@@ -1580,10 +1580,10 @@
       "pillar": "Living Well",
       "words": 48,
       "id": "stub:weight-of-what-you-cant-say",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:finding-your-barnabas": {
       "kind": "stub",
@@ -1592,10 +1592,10 @@
       "pillar": "Living Well",
       "words": 43,
       "id": "stub:finding-your-barnabas",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:loneliness-of-leadership": {
       "kind": "stub",
@@ -1604,10 +1604,10 @@
       "pillar": "Pastoral Ministry",
       "words": 44,
       "id": "stub:loneliness-of-leadership",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:delegation-is-not-weakness": {
       "kind": "stub",
@@ -1616,10 +1616,10 @@
       "pillar": "Pastoral Ministry",
       "words": 38,
       "id": "stub:delegation-is-not-weakness",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:vision-without-community-fantasy": {
       "kind": "stub",
@@ -1628,10 +1628,10 @@
       "pillar": "Pastoral Ministry",
       "words": 46,
       "id": "stub:vision-without-community-fantasy",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:pastors-authority-relational": {
       "kind": "stub",
@@ -1640,10 +1640,10 @@
       "pillar": "Pastoral Ministry",
       "words": 38,
       "id": "stub:pastors-authority-relational",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:conflict-is-not-failure": {
       "kind": "stub",
@@ -1652,10 +1652,10 @@
       "pillar": "Pastoral Ministry",
       "words": 38,
       "id": "stub:conflict-is-not-failure",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:building-leadership-team": {
       "kind": "stub",
@@ -1664,10 +1664,10 @@
       "pillar": "Pastoral Ministry",
       "words": 39,
       "id": "stub:building-leadership-team",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:danger-pastoral-isolation": {
       "kind": "stub",
@@ -1676,10 +1676,10 @@
       "pillar": "Pastoral Ministry",
       "words": 36,
       "id": "stub:danger-pastoral-isolation",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:unity-without-uniformity": {
       "kind": "stub",
@@ -1688,10 +1688,10 @@
       "pillar": "Prophetic Disruption",
       "words": 39,
       "id": "stub:unity-without-uniformity",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:courage-to-be-different": {
       "kind": "stub",
@@ -1700,10 +1700,10 @@
       "pillar": "Pastoral Ministry",
       "words": 43,
       "id": "stub:courage-to-be-different",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:collaboration-across-denominations": {
       "kind": "stub",
@@ -1712,10 +1712,10 @@
       "pillar": "Pastoral Ministry",
       "words": 41,
       "id": "stub:collaboration-across-denominations",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:global-church-is-your-church": {
       "kind": "stub",
@@ -1724,10 +1724,10 @@
       "pillar": "Faith & Theology",
       "words": 37,
       "id": "stub:global-church-is-your-church",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:mission-is-not-optional": {
       "kind": "stub",
@@ -1736,10 +1736,10 @@
       "pillar": "Living Well",
       "words": 38,
       "id": "stub:mission-is-not-optional",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:your-city-is-mission-field": {
       "kind": "stub",
@@ -1748,10 +1748,10 @@
       "pillar": "Prophetic Disruption",
       "words": 46,
       "id": "stub:your-city-is-mission-field",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:church-response-to-culture": {
       "kind": "stub",
@@ -1760,10 +1760,10 @@
       "pillar": "Pastoral Ministry",
       "words": 45,
       "id": "stub:church-response-to-culture",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:truth-in-post-truth-world": {
       "kind": "essay",
@@ -1784,10 +1784,10 @@
       "pillar": "Pastoral Ministry",
       "words": 46,
       "id": "stub:interior-life-of-pastor",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:prayer-is-not-optional": {
       "kind": "stub",
@@ -1796,10 +1796,10 @@
       "pillar": "Theological Depth",
       "words": 39,
       "id": "stub:prayer-is-not-optional",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:scripture-meditation": {
       "kind": "stub",
@@ -1808,10 +1808,10 @@
       "pillar": "Faith & Theology",
       "words": 40,
       "id": "stub:scripture-meditation",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:spiritual-disciplines-for-pastors": {
       "kind": "stub",
@@ -1820,10 +1820,10 @@
       "pillar": "Theological Depth",
       "words": 38,
       "id": "stub:spiritual-disciplines-for-pastors",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:the-examined-life": {
       "kind": "stub",
@@ -1832,10 +1832,10 @@
       "pillar": "Theological Depth",
       "words": 39,
       "id": "stub:the-examined-life",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:repentance-and-renewal": {
       "kind": "stub",
@@ -1844,10 +1844,10 @@
       "pillar": "Theological Depth",
       "words": 35,
       "id": "stub:repentance-and-renewal",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:hope-of-resurrection": {
       "kind": "stub",
@@ -1856,10 +1856,10 @@
       "pillar": "Faith & Theology",
       "words": 44,
       "id": "stub:hope-of-resurrection",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:justice-not-political": {
       "kind": "stub",
@@ -1868,10 +1868,10 @@
       "pillar": "Prophetic Justice",
       "words": 44,
       "id": "stub:justice-not-political",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "stub:poor-not-ministry": {
       "kind": "stub",
@@ -1880,10 +1880,10 @@
       "pillar": "Theological Depth",
       "words": 47,
       "id": "stub:poor-not-ministry",
-      "status": "pending",
-      "verdict": null,
-      "notes": null,
-      "auditedAt": null
+      "status": "removed",
+      "verdict": "removed",
+      "notes": "PCN-import placeholder, not an essay (body under 200 words describing an unwritten article). Unpublished in content-data.json, hidden via HIDDEN_SLUGS, every listing/path/quiz reference removed or flipped to Coming soon. DB apply: scripts/unpublish-stubs.mjs.",
+      "auditedAt": "2026-08-26T18:24:18.680Z"
     },
     "essay:affirmation-is-not-love": {
       "kind": "essay",
