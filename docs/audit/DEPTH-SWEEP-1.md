@@ -208,10 +208,51 @@ the board.
    without an `ItemList` on purpose: its studies arrive from a fetch, so a list
    built from them would describe an empty page at prerender time. Both gained
    breadcrumbs.
-4. **Marriage and Parenting, to the `/doubt` standard.** Both have a real
-   opening paragraph and working destinations — the shells are gone. What is
-   missing is the middle: the cause beneath the symptom before the links begin.
-   One prose movement each, not a rewrite.
+4. ~~**Marriage and Parenting, to the `/doubt` standard.**~~ **Drafted; awaiting
+   the author's read.** Both hubs already ran short-long-short — an opening
+   symptom and a closing verdict — with nothing between them. Each gained one
+   movement of two paragraphs in the `/doubt` shape: the cause with its history,
+   then the tradition's witness, so the existing verdict lands on evidence
+   instead of assertion.
+
+   Marriage: the deinstitutionalization of the institution (Bellah, *Habits of
+   the Heart*, 1985, on the therapeutic account of love; Cherlin's term for the
+   result), then the vow language and Malachi 2:14 / Ephesians 5 on covenant.
+   Parenting: the National Study of Youth and Religion finding that practised
+   parental faith is the strongest predictor of a teenager's, plus Smith's
+   moralistic therapeutic deism named as something children learned *from us*;
+   then Deuteronomy 6's household pattern and Monica's long prayers for
+   Augustine.
+
+   Every citation is verifiable and no Scripture is presented as verbatim
+   quotation — the Malachi and Deuteronomy references are paraphrase framed as
+   paraphrase. **This is prose published under James's name and carries two
+   first-person claims** ("I have stood with couples while they said those
+   words"; "I have five sons, and I have been the inconsistent man in that
+   house"). The second follows the stated biography; the first is a reasonable
+   pastoral claim but is his to confirm or cut.
+
+**The em-dash: `CLAUDE.md` is the stale source, and the author has already
+answered.** `CLAUDE.md` still lists the em-dash as "part of the voice;
+permitted." Everything else says otherwise. `scripts/validate-no-emdash.mjs`
+calls it "an AI tell in James Bell's voice" and fails CI on any occurrence in the
+JSON content stores; PR #515 then swept **11,940 em-dashes out of 527 essays**
+with meaning-preserving substitution, and rewrote page-component prose on
+`/parenting` for the same reason. That is not an ambiguity any more. It is a
+decision, executed at scale, that one rule in `CLAUDE.md` has not caught up with.
+
+Standing guidance until that line is edited: **new reader-facing prose adds no
+em-dashes.** A colon or a hard period carries the same clause, and the hard
+period is what the voice section asks for anyway. Pre-existing em-dashes in page
+components are left alone — removing them is a sweep of its own, not incidental
+churn on an unrelated PR. The prose added to `/marriage` and `/parenting` in this
+pass follows the rule: both files carry exactly the em-dash count they had before
+it.
+
+**Resolved elsewhere: the `/sermon-series` collision.** Carried as an open
+question through several passes. PR #517 closed it by redirecting `/sermon-series`
+(with `/for-pastors` and `/pastoral-burnout`) to `pastorsconnectionnetwork.com` in
+`vercel.json`, as part of moving the pastors' wing to PCN. Nothing to decide.
 5. ~~**The linking pass**~~ **Done for the two named tools.** BibleReference had
    **zero** links out across 1,697 lines; every one of its 82 passages now links
    to `/theology/passage`, with compound citations split so all three parts of
