@@ -60,11 +60,13 @@ export const BLIND_SPOTS_GUIDE: GuideSection[] = [
     chapters: [
       {
         title: "The Monster Is Never the One in the Mirror",
+        // Substack-only: the local copy of this slug is a retired stub, so the
+        // guide routes readers to the real essay on Substack instead.
         slug: "the-monster-in-the-mirror",
         blurb:
           "The mechanism that produces moral catastrophe is not cynicism or cruelty — it is self-deception.",
         date: "Apr 2",
-        available: true,
+        available: false,
       },
       {
         title: "Blind Spots",

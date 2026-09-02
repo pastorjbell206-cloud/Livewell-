@@ -22,46 +22,25 @@ const READING_PATHS: ReadingPath[] = [
     slug: "marriage-drifting",
     title: "When Your Marriage Is Drifting",
     articles: [
-      { title: "Your Marriage Is a Ministry Too", slug: "your-marriage-is-ministry-too" },
-      { title: "Protecting Your Marriage When Ministry Demands Everything", slug: "protecting-marriage-ministry-demands" },
-      { title: "What Your Spouse Wishes You Knew About Life in the Parsonage", slug: "spouse-wishes-knew-parsonage" },
-      { title: "How to Be Present at Home When Your Mind Never Leaves the Church", slug: "present-at-home-mind-never-leaves" },
-      { title: "Conflict Is Not Failure", slug: "conflict-is-not-failure" },
-      { title: "The Examined Life", slug: "the-examined-life" },
     ],
   },
   {
     slug: "faith-crisis",
     title: "Faith in Crisis — A Path Through Doubt",
     articles: [
-      { title: "The Monster in the Mirror", slug: "the-monster-in-the-mirror" },
-      { title: "You Are Not the Exception", slug: "you-are-not-the-exception" },
       { title: "Truth in a Post-Truth World", slug: "truth-in-post-truth-world" },
-      { title: "The Holy Spirit Is Not a Feeling", slug: "holy-spirit-not-feeling" },
-      { title: "The Incarnation Changes Everything", slug: "incarnation-changes-everything" },
-      { title: "The Hope of Resurrection", slug: "hope-of-resurrection" },
     ],
   },
   {
     slug: "pastor-nobody-sees",
     title: "The Pastor Nobody Sees",
     articles: [
-      { title: "Why Pastors Quit (And How to Stay)", slug: "why-pastors-quit-and-how-to-stay" },
-      { title: "The Slow Burn: How Ministry Exhaustion Sneaks Up on You", slug: "slow-burn-ministry-exhaustion" },
-      { title: "The Hidden Pain of the Successful Pastor", slug: "hidden-pain-successful-pastor" },
-      { title: "The Danger of Pastoral Isolation", slug: "danger-pastoral-isolation" },
-      { title: "It’s Okay to See a Counselor", slug: "okay-to-see-counselor" },
     ],
   },
   {
     slug: "raising-children",
     title: "Raising Children Who Think Theologically",
     articles: [
-      { title: "The Pastor’s Kids Are Watching — What Are They Seeing?", slug: "pastors-kids-watching-what-seeing" },
-      { title: "The Kingdom of God Is Not What You Think It Is", slug: "kingdom-of-god-not-what-you-think" },
-      { title: "The Psalms as Prayer — Not Just Poetry", slug: "psalms-as-prayer-not-poetry" },
-      { title: "Eschatology Matters — Why the End Shapes How We Live Now", slug: "eschatology-matters-end-shapes-now" },
-      { title: "Sabbath Is Resistance", slug: "sabbath-is-resistance" },
     ],
   },
   {
@@ -70,9 +49,6 @@ const READING_PATHS: ReadingPath[] = [
     articles: [
       { title: "Where the Church Was Silent", slug: "where-church-was-silent" },
       { title: "Justice Is Not a Political Category: It Is a Theological One", slug: "justice-not-political-theological" },
-      { title: "Complicity Is Not Innocence", slug: "complicity-not-innocence" },
-      { title: "Mishpat and Tsedaqah", slug: "mishpat-tsedaqah" },
-      { title: "The Prophetic Pastor", slug: "prophetic-pastor" },
     ],
   },
 ];
@@ -87,9 +63,11 @@ const SUGGESTED_TOOLS = [
 ];
 
 const SUGGESTED_ARTICLES = [
-  { slug: "the-examined-life", title: "The Examined Life", href: "/writing/the-examined-life" },
-  { slug: "the-monster-in-the-mirror", title: "The Monster in the Mirror", href: "/writing/the-monster-in-the-mirror" },
-  { slug: "incarnation-changes-everything", title: "The Incarnation Changes Everything", href: "/writing/incarnation-changes-everything" },
+  { slug: "excavation-not-demolition", title: "What Comes After Deconstruction of Your Faith?", href: "/writing/excavation-not-demolition" },
+  { slug: "what-if-we-are-wrong", title: "What If Christianity Is Wrong?", href: "/writing/what-if-we-are-wrong" },
+  { slug: "the-slow-drift-that-ends-marriages", title: "Why Do Married Couples Slowly Drift Apart?", href: "/writing/the-slow-drift-that-ends-marriages" },
+  { slug: "the-father-wound-and-the-god-question", title: "How a Father Shapes the Way a Child Sees God", href: "/writing/the-father-wound-and-the-god-question" },
+  { slug: "the-loneliest-room-in-the-church", title: "Why Are Pastors So Lonely in a Full Church?", href: "/writing/the-loneliest-room-in-the-church" },
 ];
 
 /* ── Helpers ── */

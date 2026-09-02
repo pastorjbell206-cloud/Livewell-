@@ -52,7 +52,7 @@ export const READING_PATHS = {
     title: "Marriage Under Strain",
     articles: [
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
-      { title: "Why Does Every Generation Get the Bible Wrong?", slug: "the-monster-in-the-mirror" },
+      { title: "What the Resentment in Your Marriage Is Telling You", slug: "the-resentment-in-your-marriage" },
       { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
     ],
     book: "What If We're Wrong?"
@@ -61,16 +61,16 @@ export const READING_PATHS = {
     title: "Building Covenant Strength",
     articles: [
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
-      { title: "Why Does Every Generation Get the Bible Wrong?", slug: "the-monster-in-the-mirror" },
-      { title: "What We Owe the Ones Who Come After", slug: "what-we-owe-generations" }
+      { title: "What Are You Really Promising in Your Marriage Vows?", slug: "the-covenant-you-didnt-understand" },
+      { title: "Why Do Married Couples Slowly Drift Apart?", slug: "the-slow-drift-that-ends-marriages" }
     ],
     book: "The Monster in the Mirror"
   },
   "parenting-crisis-articles": {
     title: "Parenting Through Uncertainty",
     articles: [
-      { title: "What We Owe the Ones Who Come After", slug: "what-we-owe-generations" },
-      { title: "Why Does Every Generation Get the Bible Wrong?", slug: "the-monster-in-the-mirror" },
+      { title: "When Your Teenager Says They Don't Believe Anymore", slug: "teenager-losing-faith" },
+      { title: "How to Talk to Your Kids About Faith When You're Not Sure Yourself", slug: "how-to-talk-kids-faith-doubt" },
       { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
     ],
     book: "When God Bless America Replaces Thy Kingdom Come"
@@ -78,7 +78,7 @@ export const READING_PATHS = {
   "doubt-crisis-articles": {
     title: "Finding Faith in the Questions",
     articles: [
-      { title: "Why Does Every Generation Get the Bible Wrong?", slug: "the-monster-in-the-mirror" },
+      { title: "What If Christianity Is Wrong?", slug: "what-if-we-are-wrong" },
       { title: "What You're Really Leaving When You Leave the Faith", slug: "constantines-bargain" },
       { title: "Why a Frightened Church Wants a King", slug: "strongman-theology" }
     ],
@@ -89,14 +89,14 @@ export const READING_PATHS = {
     articles: [
       { title: "Can You Be a Christian on Your Own?", slug: "can-you-be-a-christian-alone" },
       { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" },
-      { title: "What We Owe the Ones Who Come After", slug: "what-we-owe-generations" }
+      { title: "Who Pastors the Pastor When No One Checks In?", slug: "the-pastor-nobody-checks-on" }
     ],
     book: "The Monster in the Mirror"
   },
   "default": {
     title: "Essential LiveWell Collection",
     articles: [
-      { title: "Why Does Every Generation Get the Bible Wrong?", slug: "the-monster-in-the-mirror" },
+      { title: "What Comes After Deconstruction of Your Faith?", slug: "excavation-not-demolition" },
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
       { title: "Why a Frightened Church Wants a King", slug: "strongman-theology" }
     ],

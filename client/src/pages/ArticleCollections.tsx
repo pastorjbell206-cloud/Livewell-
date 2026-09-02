@@ -192,15 +192,6 @@ const COLLECTIONS: ArticleCollection[] = [
         author: "James Bell",
       },
       {
-        id: 14,
-        slug: "scripture-meditation",
-        title: "Scripture Meditation: Slow Reading",
-        excerpt: "Encountering God through careful, contemplative reading.",
-        pillar: "Leadership Formation",
-        readTime: 6,
-        author: "PCN",
-      },
-      {
         id: 15,
         slug: "solitude-silence",
         title: "Solitude & Silence: Essential Practices",
