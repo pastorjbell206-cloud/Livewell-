@@ -5115,7 +5115,7 @@
       "id": "page:client/src/pages/BookBundles.tsx",
       "status": "cut",
       "verdict": "cut",
-      "notes": "The page contradicts the catalog. Books.tsx says 'Three books. Every word mine' and 'I took the rest of the shelf down to rewrite it in my own hand,' yet this page sells a 'Complete James Bell Collection' with What Elders Are For, Qualified, The Honest Marriage, Staying, and PCN titles, with 'Add to Cart' buttons. Until those books are back, the page is misleading. The copy itself is retail-hook register ('Buy them together. Pay less.', 'Save up to 40%', 'You save $X') rather than the voice, and 'Curated collections on leadership, pastoral health, marriage, governance, and change' is brochure filler. If the bundles return, the copy needs rebuilding too.",
+      "notes": "The page contradicts the catalog. Books.tsx says 'Three books. Every word mine' and 'I took the rest of the shelf down to rewrite it in my own hand,' yet this page sells a 'Complete James Bell Collection' with What Elders Are For, Qualified, The Honest Marriage, Staying, and PCN titles, with 'Add to Cart' buttons. Until those books are back, the page is misleading. The copy itself is retail-hook register ('Buy them together. Pay less.', 'Save up to 40%', 'You save $X') rather than the voice, and 'Curated collections on leadership, pastoral health, marriage, governance, and change' is brochure filler. If the bundles return, the copy needs rebuilding too. RESOLVED: /book-bundles already redirected to /books in App.tsx; the dead component that contradicted the catalog is deleted.",
       "auditedAt": "2026-09-02T17:28:36.987Z",
       "signals": {
         "stockPhrases": [
