@@ -15,6 +15,7 @@
  * and pages fall back to og-default.png as before.
  */
 import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -65,23 +66,39 @@ function svg(eyebrow, title) {
   const blockH = lines.length * lineGap;
   let y = 315 - blockH / 2 + fontSize * 0.8;
   const tspans = lines.map((l) => {
-    const t = `<text x="90" y="${Math.round(y)}" fill="${BONE}" font-family="Georgia, 'Times New Roman', serif" font-size="${fontSize}" font-weight="400">${esc(l)}</text>`;
+    const t = `<text x="90" y="${Math.round(y)}" fill="${BONE}" font-family="Cormorant Garamond" font-size="${fontSize}" font-weight="400">${esc(l)}</text>`;
     y += lineGap;
     return t;
   }).join("");
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <rect width="1200" height="630" fill="${CHARCOAL}"/>
   <rect x="0" y="0" width="10" height="630" fill="${MUSTARD}"/>
-  <text x="90" y="120" fill="${MUSTARD}" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" letter-spacing="4">${esc(eyebrow.toUpperCase())}</text>
+  <text x="90" y="120" fill="${MUSTARD}" font-family="Inter" font-size="22" font-weight="600" letter-spacing="4">${esc(eyebrow.toUpperCase())}</text>
   <rect x="90" y="140" width="64" height="3" fill="${MUSTARD}"/>
   ${tspans}
-  <text x="90" y="565" fill="${MUTED}" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="1">livewellbyjamesbell.co</text>
+  <text x="90" y="565" fill="${MUTED}" font-family="Inter" font-size="22" font-weight="500" letter-spacing="1">livewellbyjamesbell.co</text>
 </svg>`;
 }
 
 async function main() {
   let sharp;
   try {
+    // Point fontconfig (used by libvips/librsvg inside sharp) at the static brand
+    // fonts in api/_fonts, so font-family="Cormorant Garamond" / "Inter" in the
+    // SVG resolve to the real faces instead of a silent system fallback. Must be
+    // set BEFORE sharp is first imported: fontconfig initialises lazily.
+    {
+      const fontsDir = path.join(ROOT, "api/_fonts");
+      const confDir = fs.mkdtempSync(path.join(os.tmpdir(), "og-fontconfig-"));
+      const cacheDir = path.join(confDir, "cache");
+      fs.mkdirSync(cacheDir, { recursive: true });
+      fs.writeFileSync(
+        path.join(confDir, "fonts.conf"),
+        `<?xml version="1.0"?><!DOCTYPE fontconfig SYSTEM "fonts.dtd"><fontconfig><dir>${fontsDir}</dir><cachedir>${cacheDir}</cachedir><include ignore_missing="yes">/etc/fonts/fonts.conf</include></fontconfig>`
+      );
+      process.env.FONTCONFIG_PATH = confDir;
+      process.env.FONTCONFIG_FILE = path.join(confDir, "fonts.conf");
+    }
     sharp = (await import("sharp")).default;
   } catch (err) {
     console.warn(`[og] sharp unavailable (${err.message}). Skipping OG image generation; pages keep the default image.`);

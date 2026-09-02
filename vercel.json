@@ -20,7 +20,7 @@
       ]
     },
     {
-      "source": "/(books|downloads|og-images|covers)/(.*)",
+      "source": "/(books|downloads|og|covers)/(.*)",
       "headers": [
         {
           "key": "Cache-Control",

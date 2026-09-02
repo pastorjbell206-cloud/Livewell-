@@ -1680,5 +1680,14 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
       "practices"
     ],
     "confidence": "high"
-  }
+  },
+  // Filed 2026-09: unfiled Scripture-reading essays that defaulted to the pastoral
+  // pillar. Each excerpt was read before filing; all six are about how the Bible
+  // is read past the tribe, which is what pillar 3 is.
+  "proof-texting": { "pillar": 3, "subThemes": [], "confidence": "high" },
+  "six-lenses-that-distort-the-bible": { "pillar": 3, "subThemes": [], "confidence": "high" },
+  "the-whole-counsel": { "pillar": 3, "subThemes": [], "confidence": "high" },
+  "six-verses-we-memorized": { "pillar": 3, "subThemes": [], "confidence": "high" },
+  "what-the-original-audience-heard": { "pillar": 3, "subThemes": [], "confidence": "high" },
+  "reading-in-community": { "pillar": 3, "subThemes": [], "confidence": "high" }
 };

@@ -29,6 +29,7 @@ import { TrackChip } from "@/components/TrackChip";
 import { KeepReadingBook } from "@/components/KeepReadingBook";
 import { RelatedEssays } from "@/components/RelatedEssays";
 import ArticleNextSteps from "@/components/ArticleNextSteps";
+import { SubstackSeriesNote } from "@/components/SubstackSeriesNote";
 import { GeneratedHero } from "@/components/GeneratedHero";
 import { trpc } from "@/lib/trpc";
 import { pillarForPost } from "@/lib/taxonomy";
@@ -874,6 +875,10 @@ export default function ArticleDetail() {
             (board rec #9), then the newsletter CTA, author bio, and end nav. */}
         {!focus && (
           <>
+            {/* ON SUBSTACK — one sentence, only on the essays that belong to the
+                argument the Substack is serializing (isSeriesEssay). */}
+            <SubstackSeriesNote post={post} />
+
             {/* NEXT STEPS — the matched tool and reading path for this essay
                 (built long ago, never imported; revived by QW-16) */}
             <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
