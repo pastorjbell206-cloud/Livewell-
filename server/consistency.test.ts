@@ -38,4 +38,14 @@ describe("sitewide consistency", () => {
     }
     expect(offenders, `hardcoded counts found:\n${offenders.join("\n")}`).toEqual([]);
   });
+
+  it("CLAUDE.md's own positioning statement agrees with the book count", () => {
+    // The governing doc said "25 books" in its Positioning Statement while
+    // saying "21 books" twice elsewhere. Markdown cannot import SITE_STATS, so
+    // the guard reads the file. Only the stale author-count patterns are banned:
+    // "27 books" (the New Testament canon) and "22 books" (Augustine) are facts.
+    const claude = readFileSync(path.resolve(import.meta.dirname, "..", "CLAUDE.md"), "utf8");
+    expect(/twenty-five books|\b25 books\b/i.test(claude), "CLAUDE.md still claims 25 books").toBe(false);
+    expect(claude.includes(`${SITE_STATS.bookCount} books`), "CLAUDE.md should state the canonical count").toBe(true);
+  });
 });

@@ -12,6 +12,7 @@ import { trpc } from "@/lib/trpc";
 import { useToast } from "@/contexts/ToastContext";
 import { substackSubscribeUrl } from "@/lib/site";
 import { trackNewsletterSignup } from "@/lib/telemetry";
+import { SUBSTACK_PITCH } from "@/lib/positioning";
 
 interface NewsletterSignupProps {
   variant?: "inline" | "footer" | "minimal";
@@ -28,8 +29,9 @@ interface NewsletterSignupProps {
 
 export function NewsletterSignup({
   variant = "inline",
-  title = "One serious essay a week",
-  description = "Theology that meets the actual Tuesday afternoon of marriage, money, parenting, and doubt. Written slow, sent once a week. No spam, ever.",
+  title = "Subscribe",
+  // The one pitch, verbatim — the same paragraph as /substack and /subscribe.
+  description = SUBSTACK_PITCH,
   source,
   audienceType,
 }: NewsletterSignupProps) {
@@ -43,7 +45,7 @@ export function NewsletterSignup({
   const subscribe = trpc.subscribers.subscribe.useMutation({
     onSuccess: (_data, variables) => {
       trackNewsletterSignup(variables.source, variables.audienceType);
-      setHandoffUrl(substackSubscribeUrl(variables.email, source));
+      setHandoffUrl(substackSubscribeUrl(variables.email, source, variables.audienceType));
       addToast?.({
         type: "success",
         title: "One more step",
@@ -77,7 +79,7 @@ export function NewsletterSignup({
           fontFamily: "var(--B)",
           fontSize: "14px",
           lineHeight: 1.6,
-          color: onDark ? "rgba(245,240,230,0.8)" : "var(--ink-muted)",
+          color: onDark ? "color-mix(in srgb, var(--charcoal-fg) 80%, transparent)" : "var(--ink-muted)",
           margin: 0,
         }}
       >
@@ -119,6 +121,18 @@ export function NewsletterSignup({
             {title}
           </span>
         </div>
+        <p
+          style={{
+            fontFamily: "var(--B)",
+            fontSize: "13px",
+            lineHeight: 1.6,
+            color: "color-mix(in srgb, var(--charcoal-fg) 70%, transparent)",
+            margin: 0,
+            maxWidth: "48ch",
+          }}
+        >
+          {description}
+        </p>
         {handoffUrl ? (
           confirmLink(true)
         ) : (

@@ -1,103 +1,165 @@
+/**
+ * /substack — the handoff page to the Substack.
+ *
+ * One pitch, verbatim from positioning.ts (SUBSTACK_PITCH): the same paragraph
+ * used on /subscribe and in the footer, so a reader is asked once, in one
+ * voice, wherever they meet the form. The page names the serialized book,
+ * which is the reason to subscribe, and makes no cadence or subscriber-count
+ * claim — neither is verifiable from this repo.
+ *
+ * Brand contract: tokens only, display weight 400, no third-party imagery. The
+ * previous version carried bold display type, a hardcoded rgba text colour, a
+ * stock "writing desk" photo from a CDN the site does not control, and a CTA
+ * that sent readers to an iOS share link seeded in the settings table.
+ */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { trpc } from "@/lib/trpc";
-import { ExternalLink, Loader2 } from "lucide-react";
-
-const WRITING_DESK = "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/writing-desk-d9eNkpzhZohiGsNBBgopDv.webp";
+import { ExternalLink } from "lucide-react";
+import { Link } from "wouter";
+import { substackSubscribeUrl } from "@/lib/site";
+import {
+  BRAND_SENTENCE,
+  SUBSTACK_PITCH,
+  SUBSTACK_SERIES_TITLE,
+  SUBSTACK_SERIES_URL,
+} from "@/lib/positioning";
 
 export default function SubstackPage() {
-  const settingQuery = trpc.settings.get.useQuery({ key: "substackUrl" });
-  // Always have a working destination: fall back to James's Substack if the
-  // site setting hasn't been configured, so the button is never a dead end.
-  const substackUrl = settingQuery.data || "https://jamesbell333289.substack.com";
+  const subscribeUrl = substackSubscribeUrl(undefined, "substack-page");
 
   return (
     <>
       <SEOMeta
-        title="Newsletter"
-        description="Subscribe to James Bell's Substack newsletter for longer-form writing, personal reflections, and deep theological insights."
-        keywords="newsletter, Substack, theology, faith, writing"
+        title="The End of Christian America — on Substack"
+        description={BRAND_SENTENCE}
+        url="https://www.livewellbyjamesbell.co/substack"
+        keywords="Substack, The End of Christian America, James Bell, Christian nationalism, serialized book"
       />
       <Layout>
-      {/* Hero */}
-      <section className="relative overflow-hidden" style={{ minHeight: "45vh" }}>
-        <div className="absolute inset-0">
-          <img width={1200}
-          height={800}
-          src={WRITING_DESK} alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(26,26,26,0.9) 0%, rgba(26,26,26,0.7) 50%, rgba(26,26,26,0.4) 100%)" }} />
-        </div>
-        <div className="relative container flex items-center" style={{ minHeight: "45vh" }}>
-          <div className="max-w-2xl py-16">
-            <div className="font-ui text-xs font-medium uppercase tracking-[0.15em] mb-4" style={{ color: "var(--gold)" }}>
-              Substack
+        <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
+          <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+            <div style={{ display: "inline-flex", alignItems: "center", gap: "12px", marginBottom: "20px" }}>
+              <span aria-hidden style={{ width: "32px", height: "1px", background: "var(--mustard)" }} />
+              <span
+                style={{
+                  fontFamily: "var(--U)",
+                  fontSize: "0.75rem",
+                  fontWeight: 500,
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  color: "var(--mustard)",
+                }}
+              >
+                On Substack · a book in parts
+              </span>
             </div>
-            <h1 className="font-display font-bold mb-4" style={{ color: "var(--charcoal-fg)", fontSize: "clamp(2.25rem, 4vw, 3rem)" }}>
-              The thinking behind the thinking
+            <h1
+              style={{
+                fontFamily: "var(--F)",
+                fontSize: "clamp(2.25rem, 5vw, 3.5rem)",
+                fontWeight: 400,
+                lineHeight: 1.1,
+                letterSpacing: "-0.02em",
+                color: "var(--charcoal-fg)",
+                marginBottom: "1rem",
+              }}
+            >
+              {SUBSTACK_SERIES_TITLE}
             </h1>
-            <p className="font-body text-lg" style={{ color: "rgba(244,241,234,0.7)", lineHeight: 1.8 }}>
-              Longer writing. More personal. The pieces that don't fit neatly into a blog post — the ones that require more space, more honesty, and a reader willing to sit with them.
+            <p
+              style={{
+                fontFamily: "var(--F)",
+                fontSize: "clamp(1.125rem, 2vw, 1.375rem)",
+                lineHeight: 1.5,
+                color: "var(--charcoal-fg)",
+                opacity: 0.8,
+                maxWidth: "36em",
+                margin: 0,
+              }}
+            >
+              {BRAND_SENTENCE}
             </p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* What Subscribers Get */}
-      <section className="py-24" style={{ backgroundColor: "var(--bone)" }}>
-        <div className="container">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="font-display font-bold mb-8" style={{ color: "var(--ink)", fontSize: "clamp(1.75rem, 3vw, 2.25rem)" }}>
-              What you get
-            </h2>
+        <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+          <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+            <div style={{ width: "40px", height: "2px", background: "var(--mustard)", marginBottom: "2rem" }} />
+            <p
+              style={{
+                fontFamily: "var(--B)",
+                fontSize: "1.0625rem",
+                lineHeight: 1.7,
+                color: "var(--ink)",
+                maxWidth: "68ch",
+                marginBottom: "2rem",
+              }}
+            >
+              {SUBSTACK_PITCH}
+            </p>
 
-            <div className="space-y-6 mb-12">
-              <div className="p-6 rounded-lg" style={{ backgroundColor: "var(--card)" }}>
-                <h3 className="font-display text-lg font-bold mb-2" style={{ color: "var(--ink)" }}>
-                  One serious essay a week
-                </h3>
-                <p className="font-body" style={{ color: "var(--ink-muted)" }}>
-                  The same writing this site is built on — the church and the flag, Scripture read past the tribe, marriage after the tips run out, doubt taken seriously. Written slow, sent once.
-                </p>
-              </div>
-
-              <div className="p-6 rounded-lg" style={{ backgroundColor: "var(--card)" }}>
-                <h3 className="font-display text-lg font-bold mb-2" style={{ color: "var(--ink)" }}>
-                  From inside the room
-                </h3>
-                <p className="font-body" style={{ color: "var(--ink-muted)" }}>
-                  Not commentary from a safe distance. A working pastor writing around hospital visits and funerals, from a church in Fenton, Michigan — with five sons at the table.
-                </p>
-              </div>
-
-              <div className="p-6 rounded-lg" style={{ backgroundColor: "var(--card)" }}>
-                <h3 className="font-display text-lg font-bold mb-2" style={{ color: "var(--ink)" }}>
-                  No noise
-                </h3>
-                <p className="font-body" style={{ color: "var(--ink-muted)" }}>
-                  No hot takes, no outrage cycle, no daily drip. One email a week that assumes you are an adult, and nothing else in your inbox.
-                </p>
-              </div>
-            </div>
-
-            {settingQuery.isLoading ? (
-              <div className="flex justify-center py-8">
-                <Loader2 size={24} className="animate-spin" style={{ color: "var(--gold)" }} />
-              </div>
-            ) : (
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", alignItems: "center" }}>
               <a
-                href={substackUrl}
+                href={subscribeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded font-ui font-medium no-underline transition-colors"
-                style={{ backgroundColor: "var(--gold)", color: "var(--ink)" }}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  padding: "13px 24px",
+                  minHeight: "44px",
+                  background: "var(--mustard)",
+                  color: "var(--ink)",
+                  textDecoration: "none",
+                  borderRadius: "var(--radius-sm)",
+                  fontFamily: "var(--U)",
+                  fontSize: "14px",
+                  fontWeight: 500,
+                }}
               >
-                <ExternalLink size={18} /> Subscribe on Substack
+                <ExternalLink size={16} aria-hidden /> Subscribe on Substack
               </a>
-            )}
+              <a
+                href={SUBSTACK_SERIES_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  minHeight: "44px",
+                  fontFamily: "var(--U)",
+                  fontSize: "14px",
+                  fontWeight: 500,
+                  color: "var(--ink)",
+                  textDecoration: "underline",
+                  textDecorationColor: "var(--mustard)",
+                  textUnderlineOffset: "4px",
+                }}
+              >
+                Read the first part
+              </a>
+            </div>
+
+            <p
+              style={{
+                fontFamily: "var(--B)",
+                fontSize: "14px",
+                lineHeight: 1.6,
+                color: "var(--ink-muted)",
+                marginTop: "2rem",
+                maxWidth: "60ch",
+              }}
+            >
+              Prefer to leave your address here first?{" "}
+              <Link href="/subscribe" style={{ color: "var(--ink)", textDecorationColor: "var(--mustard)" }}>
+                The subscribe page
+              </Link>{" "}
+              records it on our own list, then hands you to Substack to finish.
+            </p>
           </div>
-        </div>
-      </section>
-    </Layout>
+        </section>
+      </Layout>
     </>
   );
 }

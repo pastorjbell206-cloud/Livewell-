@@ -182,19 +182,20 @@ the `<title>` tag. But nothing stops the on-page heading from carrying the
 verdict as a deck beneath the search title, so the site *reads* like the
 Substack while still ranking.
 
-**Six different book counts.** The single source of truth is
-`client/src/config/siteStats.ts`: **21**, verified against the `books` table.
-Five other places disagree:
+**One stale book count — and a correction to this audit.** The single source
+of truth is `client/src/config/siteStats.ts`: **21**, verified against the
+`books` table. An earlier draft of this section listed five other "wrong"
+counts. Four of them were not about Bell's books at all, and I was wrong to
+list them: "20 books" counts the books of the Bible covered by the Deep Bible
+tool; "twenty-two books" is Augustine's *City of God*; "twenty-seven books" is
+the New Testament canon. Replacing any of those with 21 would have put a
+factual error into reference content and essay bodies, which the brief's own
+rule forbids. The one genuinely stale claim was **"25 books" in `CLAUDE.md`'s
+positioning statement**, now corrected, with the existing consistency test
+extended to scan `CLAUDE.md` so it cannot drift again.
 
-| Claim | Where |
-|---|---|
-| 20 books | `client/src/pages/ToolsHub.tsx:24` |
-| twenty-two books | `client/src/data/content-data.json:1549`, `:1585` |
-| 25 books | `CLAUDE.md:34` (the positioning statement itself) |
-| twenty-seven books | `client/src/pages/tools/TheologyGlossary.tsx:299`, `client/src/data/post-christian-articles-tier2.ts:15` |
-
-A brand that cannot agree with itself on how many books its author wrote
-undercuts every other number it publishes.
+The lesson is the same one this session keeps teaching: a count that looks like
+a finding is not one until you open the file.
 
 ### 2.2 Design
 

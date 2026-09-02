@@ -173,7 +173,7 @@ export default function SearchPage() {
               lineHeight: 1.2,
             }}
           >
-            Search Livewell
+            Search LiveWell
           </h1>
 
           {/* Search input */}

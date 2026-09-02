@@ -11,6 +11,7 @@
  * first paint (and bots that ignore JS) gets something. When this component
  * mounts on a route, it overrides them.
  */
+import { BRAND_SENTENCE } from "@/lib/positioning";
 import { useLocation } from "wouter";
 import { SITE_URL, SITE_NAME, AUTHOR_NAME, OG_DEFAULT_IMAGE } from "@/lib/site";
 
@@ -143,8 +144,7 @@ export function getWebSiteSchema() {
     "@type": "WebSite",
     name: SITE_NAME,
     url: SITE_URL,
-    description:
-      "Theology that carries the weight of everyday life. Essays on faith, justice, marriage, parenting, and pastoral ministry.",
+    description: BRAND_SENTENCE,
     potentialAction: {
       "@type": "SearchAction",
       target: `${SITE_URL}/writing?q={search_term_string}`,

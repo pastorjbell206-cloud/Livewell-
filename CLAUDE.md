@@ -31,7 +31,7 @@
 
 ## Positioning Statement
 
-For the reader whose faith has outgrown the answers they were given — whose marriage needs more than tips, whose doubts deserve more than platitudes, whose calling costs more than anyone told them — LiveWell by James Bell is the theological writing platform that refuses to separate intellectual depth from lived experience, unlike the devotional mills that offer comfort without cost and the academic journals that offer rigor without warmth, because Bell writes from inside the room where people fall apart, not from a safe distance — as a working pastor with 15 years of ministry, five sons, and 25 books that prove theology can carry the weight of a Tuesday afternoon.
+For the reader whose faith has outgrown the answers they were given — whose marriage needs more than tips, whose doubts deserve more than platitudes, whose calling costs more than anyone told them — LiveWell by James Bell is the theological writing platform that refuses to separate intellectual depth from lived experience, unlike the devotional mills that offer comfort without cost and the academic journals that offer rigor without warmth, because Bell writes from inside the room where people fall apart, not from a safe distance — as a working pastor with 15 years of ministry, five sons, and 21 books that prove theology can carry the weight of a Tuesday afternoon.
 
 ---
 

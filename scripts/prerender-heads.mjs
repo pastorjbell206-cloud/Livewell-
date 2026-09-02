@@ -42,8 +42,10 @@ const BING_VERIFICATION =
 // Branded default card rendered by the dynamic OG Edge function (api/og.tsx).
 // There is no static og-default.png in the repo; this endpoint always renders.
 const OG_DEFAULT = ogImageUrl("LiveWell by James Bell", "Theology for everyday life");
+// Hand-mirror of BRAND_SENTENCE in client/src/lib/positioning.ts (this .mjs
+// cannot import it). server/brand-sentence.test.ts fails CI if they drift.
 const FALLBACK_DESC =
-  "Theology that carries the weight of everyday life. Essays on faith, justice, marriage, parenting, and pastoral ministry by James Bell.";
+  "The American church traded the gospel for power; James Bell writes from inside the trade, for readers tired of being told whose side God is on.";
 
 const STATIC_PAGES = [
   {

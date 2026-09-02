@@ -28,6 +28,7 @@ import {
   PRIMARY_KICKER,
   PRIMARY_SUBHEAD,
   PRIMARY_SUBHEAD_SHORT,
+  SUBSTACK_PITCH,
 } from "@/lib/positioning";
 // Hero A/B variant. "A" (default): tighter two-sentence subhead + a "Find your
 // track" secondary CTA that serves everyone (the skeptic entry stays as a
@@ -204,22 +205,8 @@ export default function Home() {
               {PRIMARY_HEADLINE}
             </h1>
 
-            <p
-              className="lede-rise-2"
-              style={{
-                fontFamily: "var(--F)",
-                fontSize: "clamp(20px, 2.6vw, 30px)",
-                fontStyle: "italic",
-                fontWeight: 400,
-                lineHeight: 1.3,
-                color: "var(--charcoal-fg)",
-                maxWidth: "32ch",
-                marginBottom: "24px",
-              }}
-            >
-              Learning to follow Jesus — and live well — in post-Christian America.
-            </p>
-
+            {/* One positioning sentence, from positioning.ts. A second, hardcoded
+                line used to sit here; the hero now says one thing. */}
             <p
               style={{
                 fontFamily: "var(--B)",
@@ -646,11 +633,7 @@ export default function Home() {
         }}
       >
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
-          <SegmentedSignup
-            variant="panel"
-            title="One essay a week. Pick your track."
-            description="New essays Tuesday morning, a different lead by reader. Skeptics get the questions taken seriously. Christians get depth. Pastors get the letter and the work."
-          />
+          <SegmentedSignup variant="panel" title="Subscribe" description={SUBSTACK_PITCH} source="home" />
         </div>
       </section>
 
