@@ -29,9 +29,13 @@ export default function SubstackPage() {
 
   return (
     <>
+      {/* Literal strings, not the constants: scripts/prerender-heads.mjs extracts
+          the head from SEOMeta literals at build time, and a variable here
+          leaves the route serving the homepage head to crawlers.
+          server/brand-sentence.test.ts pins this literal to BRAND_SENTENCE. */}
       <SEOMeta
-        title="The End of Christian America — on Substack"
-        description={BRAND_SENTENCE}
+        title="The End of Christian America, on Substack"
+        description="The American church traded the gospel for power; James Bell writes from inside the trade, for readers tired of being told whose side God is on."
         url="https://www.livewellbyjamesbell.co/substack"
         keywords="Substack, The End of Christian America, James Bell, Christian nationalism, serialized book"
       />

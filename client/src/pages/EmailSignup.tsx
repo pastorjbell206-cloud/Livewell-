@@ -20,9 +20,12 @@ import { BRAND_SENTENCE, SUBSTACK_PITCH, SUBSTACK_SERIES_TITLE } from "@/lib/pos
 export default function EmailSignup() {
   return (
     <Layout>
+      {/* Literal strings, not the constants: the prerender script extracts the
+          head from SEOMeta literals; server/brand-sentence.test.ts pins this
+          description to BRAND_SENTENCE. */}
       <SEOMeta
         title="Subscribe — LiveWell by James Bell"
-        description={BRAND_SENTENCE}
+        description="The American church traded the gospel for power; James Bell writes from inside the trade, for readers tired of being told whose side God is on."
         url="https://www.livewellbyjamesbell.co/subscribe"
         keywords="subscribe, Substack, The End of Christian America, theology essays, reading paths, James Bell"
       />

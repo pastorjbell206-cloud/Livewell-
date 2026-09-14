@@ -82,6 +82,17 @@ describe("brand sentence", () => {
     expect(pick(/<meta name="twitter:description" content="([^"]+)"/)).toBe(BRAND_SENTENCE);
   });
 
+  it("is the literal SEOMeta description on the two subscription pages", () => {
+    // These pages must pass a string LITERAL to SEOMeta (the prerender script
+    // extracts heads from literals; a variable leaves the route serving the
+    // homepage head to crawlers), so the sentence is repeated there by hand.
+    for (const rel of ["client/src/pages/Substack.tsx", "client/src/pages/EmailSignup.tsx"]) {
+      const m = read(rel).match(/<SEOMeta\b[^>]*?description="([^"]+)"/s);
+      expect(m, `${rel}: SEOMeta description must be a string literal`).not.toBeNull();
+      expect(m![1], rel).toBe(BRAND_SENTENCE);
+    }
+  });
+
   it("is not a list of subjects and is within the Substack's length", () => {
     const words = BRAND_SENTENCE.split(/\s+/).filter((w) => w !== "—").length;
     expect(words).toBeLessThanOrEqual(26);
